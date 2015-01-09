@@ -1,0 +1,10 @@
+
+RAchF_DB = {
+	["profileKeys"] = {
+		["Aloraal - Sisters of Elune"] = "Aloraal - Sisters of Elune",
+	},
+	["profiles"] = {
+		["Aloraal - Sisters of Elune"] = {
+		},
+	},
+}

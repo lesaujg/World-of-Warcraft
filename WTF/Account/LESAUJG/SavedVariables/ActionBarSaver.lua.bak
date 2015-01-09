@@ -1,0 +1,110 @@
+
+ActionBarSaverDB = {
+	["restoreRank"] = false,
+	["macro"] = false,
+	["sets"] = {
+		["DEATHKNIGHT"] = {
+		},
+		["WARRIOR"] = {
+		},
+		["SHAMAN"] = {
+		},
+		["MAGE"] = {
+		},
+		["PRIEST"] = {
+		},
+		["WARLOCK"] = {
+		},
+		["ROGUE"] = {
+		},
+		["HUNTER"] = {
+			["hunter"] = {
+				"spell|56641||Steady Shot||", -- [1]
+				"spell|2643||Multi-Shot||", -- [2]
+				"spell|53209||Chimaera Shot||", -- [3]
+				nil, -- [4]
+				nil, -- [5]
+				"spell|148467||Deterrence||", -- [6]
+				nil, -- [7]
+				"spell|53271||Master's Call||", -- [8]
+				nil, -- [9]
+				nil, -- [10]
+				"item|86532||Bag of Shado-Pan Gas Bombs", -- [11]
+				"spell|172106||Aspect of the Fox||", -- [12]
+				"spell|56641||Steady Shot||", -- [13]
+				"spell|19434||Aimed Shot||", -- [14]
+				"spell|53209||Chimaera Shot||", -- [15]
+				"spell|117050||Glaive Toss||", -- [16]
+				nil, -- [17]
+				"spell|148467||Deterrence||", -- [18]
+				nil, -- [19]
+				"spell|53271||Master's Call||", -- [20]
+				nil, -- [21]
+				nil, -- [22]
+				nil, -- [23]
+				nil, -- [24]
+				"spell|19434||Aimed Shot||", -- [25]
+				"spell|121818||Stampede||", -- [26]
+				"spell|117050||Glaive Toss||", -- [27]
+				"spell|53351||Kill Shot||", -- [28]
+				nil, -- [29]
+				"spell|781||Disengage||", -- [30]
+				"spell|19577||Intimidation||", -- [31]
+				"spell|20594||Stoneform|Racial|", -- [32]
+				nil, -- [33]
+				nil, -- [34]
+				nil, -- [35]
+				"spell|5118||Aspect of the Cheetah||", -- [36]
+				"flyout|9||Call Pet|", -- [37]
+				"spell|83968||Mass Resurrection|Guild Perk|", -- [38]
+				"equipmentset|Dps|", -- [39]
+				"equipmentset|Fish|", -- [40]
+				nil, -- [41]
+				"item|92954||Brawler's Healing Potion", -- [42]
+				"item|72986||Heavy Windwool Bandage", -- [43]
+				"spell|104381||Cooking||", -- [44]
+				"spell|818||Cooking Fire||", -- [45]
+				"spell|131474||Fishing||", -- [46]
+				"macro|47||_Pet Attack/Foll|Interface\\Icons\\Ability_Druid_ChallangingRoar|/petfollow [button:2]/n/dismount/n/petattack/n/petassist/n/cast Warp/n/cast Dash/n/cast Serpent String", -- [47]
+				"spell|13262||Disenchant||", -- [48]
+				"spell|1499||Freezing Trap|Frost Trap|", -- [49]
+				"spell|13809||Ice Trap|Frost Trap|", -- [50]
+				nil, -- [51]
+				"spell|3045||Rapid Fire||", -- [52]
+				"spell|1543||Flare||", -- [53]
+				"item|75525||Alchemist's Flask", -- [54]
+				"spell|13813||Explosive Trap|Fire Trap|", -- [55]
+				nil, -- [56]
+				"spell|77769||Trap Launcher||", -- [57]
+				nil, -- [58]
+				"spell|51753||Camouflage||", -- [59]
+				"macro|60||RandomMount|Interface\\Icons\\Ability_Mount_MountainRam|/cast [noswimming,mod:shift] Traveler's Tundra Mammoth/n/cast [swimming,mod:shift] Subdued Seahorse/n/run C_MountJournal.Summon(0)", -- [60]
+				"macro|61||Pet_stuff|Interface\\Icons\\Ability_Hunter_BeastCall|#showtooltip/n/cast [nopet,button:2] Revive Pet/n/cast [nopet] Call Pet 4/n/cast [button:2, pet, nodead] Dismiss Pet/n/cast [@pet, pet, dead] Revive Pet/n/cast [@pet, pet, nodead] Mend Pet", -- [61]
+				"macro|62||BOOM|Interface\\Icons\\Ability_Warrior_EndlessRage|#show Rapid Fire/n/use [button:2] Virmen's Bite/n/de/n/cast Bestial Wrath/n/use Tabard of the Protector/n/cast Call of the Wild/n/use 13/n/use 14/n/castsequence reset=combat/10 Rapid Fire, null/n/ee", -- [62]
+				nil, -- [63]
+				"spell|19801||Tranquilizing Shot||", -- [64]
+				"spell|5116||Concussive Shot||", -- [65]
+				"spell|20736||Distracting Shot||", -- [66]
+				"spell|5384||Feign Death||", -- [67]
+				"macro|68||_Clear Target|Interface\\Icons\\Ability_CheapShot|/stopcasting/n/cleartarget/n/petfollow/n/petdefensive", -- [68]
+				[98] = "item|32539||Skyguard's Drape",
+				[70] = "spell|147362||Counter Shot||",
+				[100] = "macro|100||Major Health|Interface\\ICONS\\INV_Inscription_ArmorScroll01.blp|/click TradeSkillCreateButton/n/use Enchanting Vellum",
+				[116] = "spell|19801||Tranquilizing Shot||",
+				[115] = "item|28237||Medallion of the Alliance",
+				[72] = "macro|72||MD+|Interface\\Icons\\Ability_Hunter_Misdirection|#show Misdirection/n/focus [button:2] target/n/clearfocus [button:2,mod:ctrl]/n/stopmacro [button:2][mod:ctrl]/n/cast [@focus,help][@pet,nodead,exists] Misdirection",
+				[114] = "item|6948||Hearthstone",
+				[117] = "item|58145||Potion of the Tol'vir",
+			},
+		},
+		["DRUID"] = {
+		},
+		["MONK"] = {
+		},
+		["PALADIN"] = {
+		},
+	},
+	["spellSubs"] = {
+	},
+	["checkCount"] = false,
+}

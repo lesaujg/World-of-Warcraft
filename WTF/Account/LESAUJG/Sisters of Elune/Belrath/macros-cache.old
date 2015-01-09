@@ -1,0 +1,14 @@
+MACRO 16777219 "hbCrashProt_0" Ability_Creature_Disease_02
+1:N
+END
+MACRO 16777220 "hbCrashProt_1" Ability_Creature_Disease_02
+Bel:p:06000000028F086C:
+END
+MACRO 16777218 "Mount" INV_Misc_QuestionMark
+/use [flyable, nomounted, button:1] Winged Steed of the Ebon Blade
+/use [nomounted] Acherus Deathcharger
+/dismount [mounted]
+END
+MACRO 16777217 "PetAttack" INV_Misc_QuestionMark
+/petattack
+END

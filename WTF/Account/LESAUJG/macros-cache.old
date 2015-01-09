@@ -1,0 +1,33 @@
+VER 3 000000000000001E "_Clear Target" "Ability_CheapShot"
+/stopcasting
+/cleartarget
+/petfollow
+/petpassive
+END
+VER 3 000000000000008A "Des" "ACHIEVEMENT_GUILDPERK_QUICK AND DEAD"
+/tar Des
+END
+VER 3 000000000000008C "Garrison Report" "GARRISON_BUILDING_LUMBERMILL"
+END
+VER 3 0000000000000089 "Kneel" "INV_MISC_QUESTIONMARK"
+/kneel
+END
+VER 3 000000000000008B "LiteMount" "INV_MISC_QUESTIONMARK"
+/cast [noswimming,mod:shift] Traveler's Tundra Mammoth
+/click [nobtn:2] LiteMount
+/click [btn:2] LiteMount RightButton
+END
+VER 3 0000000000000077 "Major Health" "INV_Misc_QuestionMark"
+/click TradeSkillCreateButton
+/use Enchanting Vellum
+END
+VER 3 0000000000000088 "MD+CS" "INV_MISC_QUESTIONMARK"
+/cast [@focus,help][@pet,nodead,exists] Misdirection
+END
+VER 3 0000000000000087 "RandomMount" "INV_MISC_QUESTIONMARK"
+/cast [mod:ctrl] Azure Water Strider
+/cast [noswimming,mod:shift] Traveler's Tundra Mammoth
+#showtooltip [nomod] White Ram
+/click [nobtn:2] LiteMount
+/click [btn:2] LiteMount RightButton
+END

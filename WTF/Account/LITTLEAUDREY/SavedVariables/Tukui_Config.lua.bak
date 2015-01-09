@@ -1,0 +1,10 @@
+
+TukuiConfigShared = {
+	["Sisters of Elune"] = {
+		["Aloraal"] = {
+		},
+	},
+	["Account"] = {
+	},
+}
+TukuiConfigPerAccount = nil

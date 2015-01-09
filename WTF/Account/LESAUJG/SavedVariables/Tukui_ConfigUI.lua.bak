@@ -1,0 +1,7 @@
+
+TukuiConfigAll = {
+	["Sisters of Elune"] = {
+		["Bracnar"] = false,
+	},
+}
+TukuiConfigPublic = nil

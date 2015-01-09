@@ -1,0 +1,45 @@
+VER 3 010000000000000E "_Pet Attack/Foll" "Ability_Druid_ChallangingRoar"
+#/tar Corrupted Blood
+/petfollow [button:2]
+/dismount
+/petattack
+#/petassist
+#/tar Burning Tendon
+#/tar Hideous Amalgamation
+#/cast Mend Pet
+/cast Warp
+/cast Dash
+END
+VER 3 0100000000000010 "BOOM" "INV_MISC_QUESTIONMARK"
+/use [button:2] Virmen's Bite
+/cast Bestial Wrath
+/use Tabard of the Protector
+/cast Call of the Wild
+/use 13
+/use 14
+/castsequence reset=combat/10 Rapid Fire, null
+END
+VER 3 010000000000004D "MD+" "INV_Misc_QuestionMark"
+#show Misdirection
+/focus [button:2] target
+/clearfocus [button:2,mod:ctrl]
+/stopmacro [button:2][mod:ctrl]
+/cast [@focus,help,nodead][@pet,nodead,exists] Misdirection
+END
+VER 3 0100000000000054 "Pet_stuff" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [nopet,button:2] Revive Pet
+/cast [nopet] Call Pet 4
+/cast [button:2, pet, nodead] Dismiss Pet
+/cast [@pet, pet, dead] Revive Pet
+/cast [@pet, pet, nodead] Mend Pet
+END
+VER 3 0100000000000055 "Rapid Fire" "INV_MISC_QUESTIONMARK"
+/use [button:2] Virmen's Bite
+/cast Rapid Fire
+/use Tabard of the Protector
+/cast Call of the Wild
+/use 13
+/use 14
+/castsequence reset=combat/10 Rapid Fire, null
+END

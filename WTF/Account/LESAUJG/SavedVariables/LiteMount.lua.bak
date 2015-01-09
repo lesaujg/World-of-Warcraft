@@ -1,0 +1,14 @@
+
+LM_UseGlobalOptions = nil
+LM_GlobalOptionsDB = {
+	["useglobal"] = {
+	},
+	["excludedspells"] = {
+	},
+	["flagoverrides"] = {
+	},
+	["combatMacro"] = {
+	},
+	["macro"] = {
+	},
+}

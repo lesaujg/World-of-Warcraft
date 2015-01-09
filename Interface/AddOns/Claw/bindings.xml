@@ -1,0 +1,17 @@
+<Bindings>
+	<Binding name="Toggle Targets +" header="CLAW">
+		Claw_ToggleTargetMode()
+	</Binding>
+	<Binding name="Toggle Targets -" header="CLAW">
+		Claw_ToggleTargetModeReverse()
+	</Binding>
+	<Binding name="Set Targets to 1" header="CLAW">
+		Claw_SetTargetMode(1)
+	</Binding>
+	<Binding name="Set Targets to 2" header="CLAW">
+		Claw_SetTargetMode(2)
+	</Binding>
+	<Binding name="Set Targets to 3+ (cat) or 5+ (bear)" header="CLAW">
+		Claw_SetTargetMode(3)
+	</Binding>
+</Bindings>

@@ -1,0 +1,21 @@
+
+TradeSkillMaster_MailingDB = {
+	["profileKeys"] = {
+		["Bracnar - Sisters of Elune"] = "Default",
+	},
+	["global"] = {
+		["optionsTreeStatus"] = {
+			["groups"] = {
+				["1"] = true,
+				[2] = true,
+				["2Low level enchant mats"] = true,
+				["2"] = true,
+			},
+			["scrollvalue"] = 0,
+			["selected"] = "2Low level enchant mats",
+			["treesizable"] = true,
+			["treewidth"] = 175,
+			["fullwidth"] = 783.000122070313,
+		},
+	},
+}

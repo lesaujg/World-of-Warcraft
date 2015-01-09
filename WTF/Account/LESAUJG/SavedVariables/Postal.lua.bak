@@ -1,0 +1,17 @@
+
+Postal3DB = {
+	["global"] = {
+		["BlackBook"] = {
+			["alts"] = {
+				"Bracnar|Sisters of Elune|Alliance|90|HUNTER", -- [1]
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+	},
+	["profiles"] = {
+		["Bracnar - Sisters of Elune"] = {
+		},
+	},
+}

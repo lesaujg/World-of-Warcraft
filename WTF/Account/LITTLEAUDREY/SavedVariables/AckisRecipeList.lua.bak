@@ -1,0 +1,18 @@
+
+ARLDB2 = {
+	["global"] = {
+		["tradeskill"] = {
+			["Sisters of Elune"] = {
+				["Aloraal"] = {
+				},
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Aloraal - Sisters of Elune"] = "Aloraal - Sisters of Elune",
+	},
+	["profiles"] = {
+		["Aloraal - Sisters of Elune"] = {
+		},
+	},
+}

@@ -1,0 +1,39 @@
+VER 3 0100000000000009 "Cat_Charge" "INV_Misc_QuestionMark"
+/cast [Button:1] Feral Charge(Cat Form)
+/cast [Button:2] Skull Bash(Cat Form)
+END
+VER 3 010000000000000A "Charge" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [stance:1, button:1] Feral Charge(Bear Form)
+/cast [stance:3, button:1] Feral Charge(Cat Form)
+/cast [stance:1, button:2] Skull Bash(Bear Form)
+/cast [stance:3, button:2] Skull Bash(Cat Form)
+END
+VER 3 0100000000000002 "Faerie Fire" "INV_Misc_QuestionMark"
+#showtooltip Faerie Fire
+#show Faerie Fire
+/cast [stance:1/3] Faerie Fire (Feral)(); [nostance] Faerie Fire
+END
+VER 3 0100000000000005 "Gift of the Wild" "INV_Misc_QuestionMark"
+#show Wild Spineleaf
+#showtooltip Mark of the Wild
+/cast [button:1] Mark of the Wild 
+/cast [button:2] Gift of the Wild
+END
+VER 3 0100000000000001 "Mangle/Auto" "INV_Misc_QuestionMark"
+/castrandom [stance:1]Mangle (Bear); [stance:3]Mangle (Cat);
+END
+VER 3 0100000000000008 "Prostpecting" "INV_Misc_QuestionMark"
+/cast Prospecting
+/use Obsidium Ore
+/use Elementium Ore
+END
+VER 3 0100000000000003 "Rez" "INV_Misc_QuestionMark"
+#showtooltip Revive
+/cast [combat] Rebirth; Revive;
+END
+VER 3 0100000000000004 "Stealth" "INV_Misc_QuestionMark"
+/cast [stance:3, button:1] Prowl;
+/stopmacro  [stance:3, button:1];
+/cast Shadowmeld
+END

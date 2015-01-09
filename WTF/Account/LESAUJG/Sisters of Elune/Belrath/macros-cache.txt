@@ -1,0 +1,14 @@
+VER 3 0100000000000003 "hbCrashProt_0" "Ability_Creature_Disease_02"
+1:N
+END
+VER 3 0100000000000004 "hbCrashProt_1" "Ability_Creature_Disease_02"
+Bel:p:06000000028F086C:
+END
+VER 3 0100000000000002 "Mount" "INV_Misc_QuestionMark"
+/use [flyable, nomounted, button:1] Winged Steed of the Ebon Blade
+/use [nomounted] Acherus Deathcharger
+/dismount [mounted]
+END
+VER 3 0100000000000001 "PetAttack" "INV_Misc_QuestionMark"
+/petattack
+END

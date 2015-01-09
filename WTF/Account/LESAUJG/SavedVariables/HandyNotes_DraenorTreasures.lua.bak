@@ -1,0 +1,10 @@
+
+DraenorTreasuresDB = {
+	["profileKeys"] = {
+		["Clothgar - Sisters of Elune"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

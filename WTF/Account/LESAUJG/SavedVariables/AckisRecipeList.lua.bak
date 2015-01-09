@@ -1,0 +1,29 @@
+
+ARLDB2 = {
+	["namespaces"] = {
+		["Alchemy"] = {
+		},
+		["Cooking"] = {
+		},
+		["Enchanting"] = {
+		},
+	},
+	["global"] = {
+		["tradeskill"] = {
+			["Sisters of Elune"] = {
+				["Bracnar"] = {
+					["Alchemy"] = "|cffffd000|Htrade:180000006A1ACBD:105206:171|h[Alchemy]|h|r",
+					["Cooking"] = "|cffffd000|Htrade:180000006A1ACBD:104381:185|h[Cooking]|h|r",
+					["Enchanting"] = "|cffffd000|Htrade:180000006A1ACBD:110400:333|h[Enchanting]|h|r",
+				},
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+	},
+	["profiles"] = {
+		["Bracnar - Sisters of Elune"] = {
+		},
+	},
+}
