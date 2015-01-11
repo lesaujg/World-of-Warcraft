@@ -11,7 +11,7 @@ Postal3DB = {
 				"Ghiaccioli|Sisters of Elune|Alliance|50|MAGE", -- [6]
 				"Herbinator|Andorhal|Alliance|1|PALADIN", -- [7]
 				"Herbinator|Sisters of Elune|Alliance|1|PALADIN", -- [8]
-				"Uldaris|Sisters of Elune|Alliance|90|DRUID", -- [9]
+				"Uldaris|Sisters of Elune|Alliance|91|DRUID", -- [9]
 			},
 		},
 	},

@@ -41,7 +41,7 @@ ARLDB2 = {
 				["Herbinator"] = {
 				},
 				["Uldaris"] = {
-					["Jewelcrafting"] = "|cffffd000|Htrade:Player-1169-06A1AD17:110420:755|h[Jewelcrafting]|h|r",
+					["Jewelcrafting"] = "|cffffd000|Htrade:Player-1169-06A1AD17:158750:755|h[Jewelcrafting]|h|r",
 				},
 			},
 			["Andorhal"] = {

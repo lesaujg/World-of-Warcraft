@@ -14,7 +14,7 @@ Y: -115
 W: 32
 H: 32
 Frame: TSMMainFrame1
-FrameLevel: 68
+FrameLevel: 25
 Anchor: BOTTOMLEFT
 X: -63
 Y: -5

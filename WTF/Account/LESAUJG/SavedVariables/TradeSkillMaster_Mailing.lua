@@ -15,9 +15,9 @@ TradeSkillMaster_MailingDB = {
 			},
 			["scrollvalue"] = 0,
 			["fullwidth"] = 783.000122070313,
-			["selected"] = "2Low level enchant mats",
-			["treewidth"] = 175,
 			["treesizable"] = true,
+			["treewidth"] = 175,
+			["selected"] = "2Low level enchant mats",
 		},
 	},
 }

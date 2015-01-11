@@ -806,13 +806,13 @@ TukuiData = {
 	},
 	["Gold"] = {
 		["Sisters of Elune"] = {
-			["Bracnar"] = 7633698243,
+			["Bracnar"] = 7634412734,
 			["Ghiaccioli"] = 780431507,
 			["Galinar"] = 5045317,
 			["Belrath"] = 98013973,
 			["Clothgar"] = 723976627,
 			["Herbinator"] = 677511,
-			["Uldaris"] = 207241642,
+			["Uldaris"] = 208338937,
 		},
 	},
 }
