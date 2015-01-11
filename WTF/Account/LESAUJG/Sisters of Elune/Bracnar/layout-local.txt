@@ -1,6 +1,6 @@
 Version: 1
 Frame: ARKINV_Rules
-FrameLevel: 18
+FrameLevel: 15
 Anchor: CENTER
 X: -305
 Y: 30
@@ -14,10 +14,10 @@ Y: -115
 W: 32
 H: 32
 Frame: TSMMainFrame1
-FrameLevel: 76
-Anchor: LEFT
-X: -13
-Y: 77
+FrameLevel: 68
+Anchor: BOTTOMLEFT
+X: -63
+Y: -5
 W: 823
 H: 686
 Frame: _NPCScanButton

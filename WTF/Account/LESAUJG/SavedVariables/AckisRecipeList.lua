@@ -62,10 +62,10 @@ ARLDB2 = {
 		["Bracnar - Sisters of Elune"] = {
 			["current_tab"] = 2,
 			["frameopts"] = {
-				["anchorFrom"] = "TOP",
-				["offsetx"] = -250.000122070313,
 				["offsety"] = -116.999885559082,
 				["anchorTo"] = "TOP",
+				["offsetx"] = -250.000122070313,
+				["anchorFrom"] = "TOP",
 			},
 		},
 		["Belrath - Sisters of Elune"] = {
