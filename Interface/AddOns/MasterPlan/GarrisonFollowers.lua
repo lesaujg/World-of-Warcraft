@@ -33,7 +33,8 @@ local CreateMechanicButton do
 			else
 				GameTooltip:AddLine("|n" .. L"You have no followers with this trait.", 1,0.50,0, 1)
 			end
-			if ci.activated and ci.activated ~= true then
+			if not ci then
+			elseif ci.activated and ci.activated ~= true then
 				GameTooltip:AddLine("|n" .. L"Followers activating this trait:", NORMAL_FONT_COLOR.r, NORMAL_FONT_COLOR.g, NORMAL_FONT_COLOR.b)
 				local ci = ci.activated
 				G.sortByFollowerLevels(ci, finfo)

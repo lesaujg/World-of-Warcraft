@@ -1,6 +1,6 @@
 Version: 1
 Frame: ARKINV_Rules
-FrameLevel: 15
+FrameLevel: 13
 Anchor: CENTER
 X: -305
 Y: 30
@@ -14,10 +14,10 @@ Y: -115
 W: 32
 H: 32
 Frame: TSMMainFrame1
-FrameLevel: 25
-Anchor: BOTTOMLEFT
-X: -63
-Y: -5
+FrameLevel: 82
+Anchor: TOP
+X: -266
+Y: -87
 W: 823
 H: 686
 Frame: _NPCScanButton
@@ -27,3 +27,10 @@ X: 0
 Y: 128
 W: 150
 H: 42
+Frame: SkadaBarWindowSkada
+FrameLevel: 5
+Anchor: BOTTOMRIGHT
+X: -10
+Y: 175
+W: 240
+H: 200

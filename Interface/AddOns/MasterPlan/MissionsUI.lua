@@ -2120,7 +2120,7 @@ do -- interestMissionsHandle
 		
 		return b
 	end
-	local missionTypes = {[0]="Generic", [-1]="Trading", [-2]="Generic"}
+	local missionTypes = {[0]="Generic", [-1]="Trading", [-2]="Enchanting", [-3]="Enchanting", [-4]="Generic"}
 	local missionLocations = {
 		[133]="GarrMissionLocation-FrostfireRidge-List", [404]="GarrMissionLocation-FrostfireRidge-List",
 		[361]="GarrMissionLocation-TannanJungle-List", [405]="GarrMissionLocation-TannanJungle-List",
@@ -2132,6 +2132,7 @@ do -- interestMissionsHandle
 		[-1]={0, 5000000},
 		[-2]={115280, 3},
 		[-3]={115510, 18},
+		[-4]={122484, 1},
 	}
 	local GetHighmaulReward do
 		local r = {
@@ -2209,7 +2210,7 @@ do -- interestMissionsHandle
 			self.altBG:Hide()
 		end
 		self.level:SetText(d[2])
-		self.title:SetText((C_Garrison.GetMissionLink(d[1]) or ""):match("|h%[?(.-)%]?|h") or "")
+		self.title:SetText((C_Garrison.GetMissionLink(d[1]) or ""):match("|h%[?(.-)%]?|h") or (L"Future Mission #%d"):format(d[1]))
 		self.mtype:SetAtlas("GarrMission_MissionIcon-" .. (d[5] > 0 and "Provision" or missionTypes[d[5]] or "Combat"))
 		self.loc:SetAtlas(missionLocations[d[1]] or missionLocations[1])
 		self.fc:SetText(("|TInterface\\FriendsFrame\\UI-Toast-FriendOnlineIcon:11:11:3:0:32:32:8:24:8:24:214:170:115|t"):rep(d[3]))
@@ -2295,7 +2296,11 @@ do -- interestMissionsHandle
 		{412, 100, 3, 86000, -3, 24, 2, 2, 3, 3, 7, 9}, -- Beyond the Pale
 		{413, 100, 3, 86000, -3, 27, 1, 2, 4, 6, 7, 8}, -- Pumping Iron
 		{411, 100, 3, 86000, -3, 29, 2, 3, 3, 6, 8, 9}, -- Rocks Fall. Everyone Dies.
-		{409, 100, 3, 86000, -3, 22, 1, 2, 3, 6, 9, 9}, -- The Great Train Ro
+		{409, 100, 3, 86000, -3, 22, 1, 2, 3, 6, 9, 9}, -- The Great Train Robbery
+		{446, 660, 3, 28800, -4, 18, 1, 3, 6, 7, 9, 10}, -- Slagworks
+		{447, 660, 3, 28800, -4, 21, 1, 2, 3, 3, 6, 10}, -- Black Forge
+		{448, 660, 3, 28800, -4, 24, 4, 4, 6, 7, 7, 8}, -- Iron Assembly
+		{449, 660, 3, 28800, -4, 11, 1, 2, 3, 6, 9, 10}, -- Blackhand's Crucible
 	}, {unused={}}
 	interestMissionsHandle = core:CreateHandle(CreateInterestMission, setData, 60)
 	interestUI:SetScript("OnShow", function()
