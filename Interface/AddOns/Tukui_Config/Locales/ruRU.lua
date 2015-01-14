@@ -634,6 +634,11 @@ TukuiConfig["ruRU"] = {
 			["Desc"] = "Отображать на рамке цели только дебаффы, налоденные вами",
 		},
 		
+		["OnlySelfBuffs"] = {
+			["Name"] = "Display My Buffs Only",
+			["Desc"] = "Only display our buffs on the target frame",
+		},
+		
 		["DarkTheme"] = {
 			["Name"] = "Тёмное оформление",
 			["Desc"] = "Если включено, рамки юнитов окрасятся в тёмный цвет, а полоса ресурса в цвет класса",
@@ -680,8 +685,8 @@ TukuiConfig["ruRU"] = {
 		},
 		
 		["AltPowerText"] = {
-			["Name"] = "Boss AltPower Text",
-			["Desc"] = "Display boss altpower text values on altpower bar",
+			["Name"] = "AltPower Text",
+			["Desc"] = "Display altpower text values on altpower bar",
 		},
 		
 		["Font"] = {

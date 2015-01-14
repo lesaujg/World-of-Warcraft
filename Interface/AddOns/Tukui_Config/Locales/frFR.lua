@@ -633,6 +633,11 @@ TukuiConfig["frFR"] = {
 			["Name"] = "Afficher seulement mes affaiblissements",
 			["Desc"] = "Afficher seulement mes affaiblissements sur le cadre cible",
 		},
+
+		["OnlySelfBuffs"] = {
+			["Name"] = "Display My Buffs Only",
+			["Desc"] = "Only display our buffs on the target frame",
+		},
 		
 		["DarkTheme"] = {
 			["Name"] = "Theme sombre",
@@ -680,8 +685,8 @@ TukuiConfig["frFR"] = {
 		},
 		
 		["AltPowerText"] = {
-			["Name"] = "Boss AltPower Text",
-			["Desc"] = "Display boss altpower text values on altpower bar",
+			["Name"] = "AltPower Text",
+			["Desc"] = "Display altpower text values on altpower bar",
 		},
 		
 		["Font"] = {
