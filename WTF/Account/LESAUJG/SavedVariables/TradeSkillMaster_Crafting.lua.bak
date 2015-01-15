@@ -1,0 +1,49 @@
+
+TradeSkillMaster_CraftingDB = {
+	["global"] = {
+		["optionsTreeStatus"] = {
+			["groups"] = {
+				["1"] = true,
+				[2] = true,
+				["2sdfag"] = true,
+				["2"] = true,
+			},
+			["scrollvalue"] = 0,
+			["selected"] = 2,
+			["treesizable"] = true,
+			["treewidth"] = 175,
+			["fullwidth"] = 783.000122070313,
+		},
+	},
+	["profileKeys"] = {
+		["Bracnar - Sisters of Elune"] = "Default",
+	},
+	["factionrealm"] = {
+		["Alliance - Sisters of Elune"] = {
+			["tradeSkills"] = {
+				["Bracnar"] = {
+					["Alchemy"] = {
+						["isSecondary"] = false,
+						["level"] = 700,
+						["maxLevel"] = 700,
+					},
+					["Cooking"] = {
+						["isSecondary"] = true,
+						["level"] = 654,
+						["maxLevel"] = 700,
+					},
+					["First Aid"] = {
+						["isSecondary"] = true,
+						["level"] = 647,
+						["maxLevel"] = 700,
+					},
+					["Enchanting"] = {
+						["isSecondary"] = false,
+						["level"] = 700,
+						["maxLevel"] = 700,
+					},
+				},
+			},
+		},
+	},
+}
