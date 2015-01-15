@@ -10,6 +10,17 @@ ARLDB2 = {
 		["Enchanting"] = {
 		},
 	},
+	["profileKeys"] = {
+		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
+		["Herbinator - Sisters of Elune"] = "Herbinator - Sisters of Elune",
+		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
+		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
+		["Herbinator - Andorhal"] = "Herbinator - Andorhal",
+		["Clothgar - Andorhal"] = "Clothgar - Andorhal",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
+	},
 	["global"] = {
 		["tradeskill"] = {
 			["Sisters of Elune"] = {
@@ -25,60 +36,49 @@ ARLDB2 = {
 				},
 				["Belrath"] = {
 				},
+				["Clothgar"] = {
+				},
+				["Herbinator"] = {
+				},
 				["Uldaris"] = {
 					["Jewelcrafting"] = "|cffffd000|Htrade:Player-1169-06A1AD17:158750:755|h[Jewelcrafting]|h|r",
 				},
-				["Herbinator"] = {
-				},
-				["Clothgar"] = {
-				},
 			},
 			["Andorhal"] = {
-				["Clothgar"] = {
-				},
 				["Herbinator"] = {
+				},
+				["Clothgar"] = {
 				},
 			},
 		},
-	},
-	["profileKeys"] = {
-		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
-		["Herbinator - Sisters of Elune"] = "Herbinator - Sisters of Elune",
-		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
-		["Clothgar - Andorhal"] = "Clothgar - Andorhal",
-		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
-		["Herbinator - Andorhal"] = "Herbinator - Andorhal",
-		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
-		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
-		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
 	},
 	["profiles"] = {
 		["Galinar - Sisters of Elune"] = {
 		},
 		["Herbinator - Sisters of Elune"] = {
 		},
-		["Uldaris - Sisters of Elune"] = {
-			["skill_view"] = true,
-			["sorting"] = "Descending",
-		},
-		["Clothgar - Andorhal"] = {
-		},
-		["Belrath - Sisters of Elune"] = {
-		},
-		["Herbinator - Andorhal"] = {
-		},
-		["Ghiaccioli - Sisters of Elune"] = {
+		["Clothgar - Sisters of Elune"] = {
 		},
 		["Bracnar - Sisters of Elune"] = {
 			["current_tab"] = 2,
 			["frameopts"] = {
+				["anchorFrom"] = "TOP",
+				["offsetx"] = -250.000122070313,
 				["offsety"] = -116.999885559082,
 				["anchorTo"] = "TOP",
-				["offsetx"] = -250.000122070313,
-				["anchorFrom"] = "TOP",
 			},
 		},
-		["Clothgar - Sisters of Elune"] = {
+		["Belrath - Sisters of Elune"] = {
+		},
+		["Ghiaccioli - Sisters of Elune"] = {
+		},
+		["Herbinator - Andorhal"] = {
+		},
+		["Clothgar - Andorhal"] = {
+		},
+		["Uldaris - Sisters of Elune"] = {
+			["skill_view"] = true,
+			["sorting"] = "Descending",
 		},
 	},
 }
