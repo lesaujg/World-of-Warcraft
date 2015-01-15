@@ -28,9 +28,9 @@ Y: 128
 W: 150
 H: 42
 Frame: AuctionFrame
-FrameLevel: 79
+FrameLevel: 27
 Anchor: TOPLEFT
-X: 17
-Y: -116
+X: 18
+Y: -121
 W: 832
 H: 447
