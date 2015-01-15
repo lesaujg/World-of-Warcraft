@@ -26,6 +26,9 @@ RAchF_DB = {
 		["Ghiaccioli - Sisters of Elune"] = {
 		},
 		["Clothgar - Sisters of Elune"] = {
+			["minimap"] = {
+				["hide"] = true,
+			},
 		},
 	},
 }

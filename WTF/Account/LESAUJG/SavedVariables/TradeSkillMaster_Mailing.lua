@@ -11,14 +11,15 @@ TradeSkillMaster_MailingDB = {
 			["groups"] = {
 				["1"] = true,
 				[2] = true,
-				["2Low level enchant mats"] = true,
+				["2Mail enchants"] = true,
 				["2"] = true,
+				["2Low level enchant mats"] = true,
 			},
 			["scrollvalue"] = 0,
-			["selected"] = "2Low level enchant mats",
 			["treesizable"] = true,
+			["selected"] = 1,
 			["treewidth"] = 175,
-			["fullwidth"] = 783.000122070313,
+			["fullwidth"] = 783.000183105469,
 		},
 	},
 }

@@ -159,23 +159,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210316.66401,
 								["amount"] = -6266,
+								["spellid"] = 157357,
 								["srcname"] = "Hurrak-Arthas",
 								["hp"] = 111237,
-								["spellid"] = 157357,
 							}, -- [1]
 							{
 								["ts"] = 1421210316.86902,
 								["amount"] = -5540,
+								["spellid"] = 157353,
 								["srcname"] = "Imperator Mar'gok",
 								["hp"] = 105697,
-								["spellid"] = 157353,
 							}, -- [2]
 							{
 								["ts"] = 1421210316.86903,
 								["amount"] = -6053,
+								["spellid"] = 157357,
 								["srcname"] = "Briis-Aggramar",
 								["hp"] = 99644,
-								["spellid"] = 157357,
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -188,9 +188,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210316.94405,
 								["amount"] = -6241,
+								["spellid"] = 157357,
 								["srcname"] = "Hurrak-Arthas",
 								["hp"] = 95956,
-								["spellid"] = 157357,
 							}, -- [5]
 							{
 								["absorb"] = 0,
@@ -203,51 +203,51 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210317.10607,
 								["amount"] = -5522,
+								["spellid"] = 157353,
 								["srcname"] = "Imperator Mar'gok",
 								["hp"] = 101155,
-								["spellid"] = 157353,
 							}, -- [7]
 							{
 								["ts"] = 1421210317.14908,
 								["amount"] = -5725,
+								["spellid"] = 157357,
 								["srcname"] = "Briis-Aggramar",
 								["hp"] = 95430,
-								["spellid"] = 157357,
 							}, -- [8]
 							{
 								["ts"] = 1421210317.14909,
 								["amount"] = -5749,
+								["spellid"] = 157357,
 								["srcname"] = "Hurrak-Arthas",
 								["hp"] = 89681,
-								["spellid"] = 157357,
 							}, -- [9]
 							{
 								["ts"] = 1421210317.3541,
 								["amount"] = -4362,
+								["spellid"] = 158705,
 								["srcname"] = "Replicating Arcane Aberration",
 								["hp"] = 85319,
-								["spellid"] = 158705,
 							}, -- [10]
 							{
 								["ts"] = 1421210317.35411,
 								["amount"] = -5683,
+								["spellid"] = 157353,
 								["srcname"] = "Imperator Mar'gok",
 								["hp"] = 79636,
-								["spellid"] = 157353,
 							}, -- [11]
 							{
 								["ts"] = 1421210317.40712,
 								["amount"] = -5981,
+								["spellid"] = 157357,
 								["srcname"] = "Hurrak-Arthas",
 								["hp"] = 73655,
-								["spellid"] = 157357,
 							}, -- [12]
 							{
 								["ts"] = 1421210317.62613,
 								["amount"] = -5594,
+								["spellid"] = 157353,
 								["srcname"] = "Imperator Mar'gok",
 								["hp"] = 68061,
-								["spellid"] = 157353,
 							}, -- [13]
 							{
 								["hp"] = 1,
@@ -881,9 +881,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210340.745,
 						["amount"] = -4119,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 173429,
-						["spellid"] = 158705,
 					}, -- [5]
 					{
 						["absorb"] = 0,
@@ -904,16 +904,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210341.715,
 						["amount"] = -4128,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 177483,
-						["spellid"] = 158705,
 					}, -- [8]
 					{
 						["ts"] = 1421210342.188,
 						["amount"] = -32025,
+						["spellid"] = 156239,
 						["srcname"] = "Imperator Mar'gok",
 						["hp"] = 145458,
-						["spellid"] = 156239,
 					}, -- [9]
 					{
 						["absorb"] = 0,
@@ -950,9 +950,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210343.749,
 						["amount"] = -4104,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 145402,
-						["spellid"] = 158705,
 					}, -- [14]
 					{
 						["absorb"] = 0,
@@ -1611,37 +1611,37 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210342.403,
 						["amount"] = -14924,
+						["spellid"] = 88163,
 						["srcname"] = "Arcane Remnant",
 						["hp"] = 348226,
-						["spellid"] = 88163,
 					}, -- [1]
 					{
 						["ts"] = 1421210342.403,
 						["amount"] = -20899,
+						["spellid"] = 88163,
 						["srcname"] = "Arcane Remnant",
 						["hp"] = 348226,
-						["spellid"] = 88163,
 					}, -- [2]
 					{
 						["ts"] = 1421210342.751,
 						["amount"] = -4879,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 307524,
-						["spellid"] = 158705,
 					}, -- [3]
 					{
 						["ts"] = 1421210343.749,
 						["amount"] = -4862,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 302662,
-						["spellid"] = 158705,
 					}, -- [4]
 					{
 						["ts"] = 1421210343.905,
 						["amount"] = -13505,
+						["spellid"] = 88163,
 						["srcname"] = "Arcane Remnant",
 						["hp"] = 302662,
-						["spellid"] = 88163,
 					}, -- [5]
 					{
 						["absorb"] = 0,
@@ -1710,9 +1710,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210341.86,
 						["amount"] = -15807,
+						["spellid"] = 88163,
 						["srcname"] = "Arcane Remnant",
 						["hp"] = 363946,
-						["spellid"] = 88163,
 					}, -- [14]
 					{
 						["absorb"] = 0,
@@ -2378,16 +2378,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210316.34501,
 								["amount"] = -3758,
+								["spellid"] = 158705,
 								["srcname"] = "Replicating Arcane Aberration",
 								["hp"] = 26719,
-								["spellid"] = 158705,
 							}, -- [1]
 							{
 								["ts"] = 1421210317.35502,
 								["amount"] = -4005,
+								["spellid"] = 158705,
 								["srcname"] = "Replicating Arcane Aberration",
 								["hp"] = 22714,
-								["spellid"] = 158705,
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -2400,16 +2400,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210318.35404,
 								["amount"] = -4013,
+								["hp"] = 19086,
 								["srcname"] = "Replicating Arcane Aberration",
 								["spellid"] = 158705,
-								["hp"] = 19086,
 							}, -- [4]
 							{
 								["ts"] = 1421210319.32905,
 								["amount"] = -3788,
+								["spellid"] = 158705,
 								["srcname"] = "Replicating Arcane Aberration",
 								["hp"] = 15298,
-								["spellid"] = 158705,
 							}, -- [5]
 							{
 								["ts"] = 1421210319.47006,
@@ -2434,9 +2434,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210315.36509,
 								["amount"] = -5203,
+								["spellid"] = 157353,
 								["srcname"] = "Imperator Mar'gok",
 								["hp"] = 120846,
-								["spellid"] = 157353,
 							}, -- [9]
 							{
 								["hp"] = 58309,
@@ -2447,37 +2447,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210315.52011,
 								["amount"] = -5733,
+								["spellid"] = 157357,
 								["srcname"] = "Websilon-AzjolNerub",
 								["hp"] = 52576,
-								["spellid"] = 157357,
 							}, -- [11]
 							{
 								["ts"] = 1421210315.58612,
 								["amount"] = -5495,
+								["spellid"] = 157357,
 								["srcname"] = "Rudicarmel-Arathor",
 								["hp"] = 47081,
-								["spellid"] = 157357,
 							}, -- [12]
 							{
 								["ts"] = 1421210315.58613,
 								["amount"] = -5673,
+								["spellid"] = 157357,
 								["srcname"] = "Bloodyclaw-Nemesis",
 								["hp"] = 41408,
-								["spellid"] = 157357,
 							}, -- [13]
 							{
 								["ts"] = 1421210315.79814,
 								["amount"] = -5362,
+								["spellid"] = 157357,
 								["srcname"] = "Rudicarmel-Arathor",
 								["hp"] = 36046,
-								["spellid"] = 157357,
 							}, -- [14]
 							{
 								["ts"] = 1421210315.84415,
 								["amount"] = -5569,
+								["spellid"] = 157357,
 								["srcname"] = "Bloodyclaw-Nemesis",
 								["hp"] = 30477,
-								["spellid"] = 157357,
 							}, -- [15]
 							["pos"] = 9,
 						},
@@ -3081,9 +3081,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210343.749,
 						["amount"] = -3922,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 259118,
-						["spellid"] = 158705,
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -3104,9 +3104,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210336.317,
 						["amount"] = -3774,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 255602,
-						["spellid"] = 158705,
 					}, -- [6]
 					{
 						["absorb"] = 0,
@@ -3127,9 +3127,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210337.342,
 						["amount"] = -3862,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 257146,
-						["spellid"] = 158705,
 					}, -- [9]
 					{
 						["absorb"] = 0,
@@ -3150,16 +3150,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210340.745,
 						["amount"] = -3998,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 259042,
-						["spellid"] = 158705,
 					}, -- [12]
 					{
 						["ts"] = 1421210341.715,
 						["amount"] = -3860,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 255182,
-						["spellid"] = 158705,
 					}, -- [13]
 					{
 						["absorb"] = 0,
@@ -3172,9 +3172,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210342.751,
 						["amount"] = -3933,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 256510,
-						["spellid"] = 158705,
 					}, -- [15]
 					["pos"] = 5,
 				},
@@ -3842,9 +3842,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210340.745,
 						["amount"] = -4569,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 213114,
-						["spellid"] = 158705,
 					}, -- [2]
 					{
 						["absorb"] = 0,
@@ -3857,16 +3857,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210341.715,
 						["amount"] = -4438,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 208690,
-						["spellid"] = 158705,
 					}, -- [4]
 					{
 						["ts"] = 1421210342.143,
 						["amount"] = -32194,
+						["spellid"] = 156239,
 						["srcname"] = "Imperator Mar'gok",
 						["hp"] = 176496,
-						["spellid"] = 156239,
 					}, -- [5]
 					{
 						["absorb"] = 0,
@@ -3879,16 +3879,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210342.751,
 						["amount"] = -4404,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 172106,
-						["spellid"] = 158705,
 					}, -- [7]
 					{
 						["ts"] = 1421210343.749,
 						["amount"] = -4487,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 167619,
-						["spellid"] = 158705,
 					}, -- [8]
 					{
 						["ts"] = 1421210343.905,
@@ -4588,12 +4588,12 @@ SkadaPerCharDB = {
 						["name"] = "Spirit Wolf",
 						["amount"] = 0,
 					},
-					["Creature-0-3137-1228-18649-29264-0000B5F096"] = {
+					["Creature-0-3137-1228-18649-29264-000035F096"] = {
 						["shielding"] = 0,
 						["name"] = "Spirit Wolf",
 						["amount"] = 0,
 					},
-					["Creature-0-3137-1228-18649-29264-000035F056"] = {
+					["Creature-0-3137-1228-18649-29264-0000B5F096"] = {
 						["shielding"] = 0,
 						["name"] = "Spirit Wolf",
 						["amount"] = 0,
@@ -4706,7 +4706,7 @@ SkadaPerCharDB = {
 						["name"] = "Primal Fire Elemental",
 						["amount"] = 0,
 					},
-					["Creature-0-3137-1228-18649-29264-000035F096"] = {
+					["Creature-0-3137-1228-18649-29264-000035F056"] = {
 						["shielding"] = 0,
 						["name"] = "Spirit Wolf",
 						["amount"] = 0,
@@ -5030,30 +5030,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210318.13102,
 								["amount"] = -5732,
+								["spellid"] = 157353,
 								["srcname"] = "Imperator Mar'gok",
 								["hp"] = 14629,
-								["spellid"] = 157353,
 							}, -- [2]
 							{
 								["ts"] = 1421210318.35403,
 								["amount"] = -4252,
+								["spellid"] = 158705,
 								["srcname"] = "Replicating Arcane Aberration",
 								["hp"] = 10377,
-								["spellid"] = 158705,
 							}, -- [3]
 							{
 								["ts"] = 1421210318.46704,
 								["amount"] = -5998,
+								["spellid"] = 157357,
 								["srcname"] = "Scarmutta-Llane",
 								["hp"] = 4379,
-								["spellid"] = 157357,
 							}, -- [4]
 							{
 								["ts"] = 1421210318.73605,
 								["amount"] = -6184,
+								["spellid"] = 157357,
 								["srcname"] = "Scarmutta-Llane",
 								["hp"] = 1,
-								["spellid"] = 157357,
 							}, -- [5]
 							{
 								["spellname"] = "Briis dies",
@@ -5064,37 +5064,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210317.14907,
 								["amount"] = -6404,
+								["spellid"] = 157357,
 								["srcname"] = "Hurrak-Arthas",
 								["hp"] = 123625,
-								["spellid"] = 157357,
 							}, -- [7]
 							{
 								["ts"] = 1421210317.35408,
 								["amount"] = -4464,
+								["spellid"] = 158705,
 								["srcname"] = "Replicating Arcane Aberration",
 								["hp"] = 119161,
-								["spellid"] = 158705,
 							}, -- [8]
 							{
 								["ts"] = 1421210317.35409,
 								["amount"] = -5958,
+								["spellid"] = 157357,
 								["srcname"] = "Heau-Lightning'sBlade",
 								["hp"] = 113203,
-								["spellid"] = 157357,
 							}, -- [9]
 							{
 								["ts"] = 1421210317.4071,
 								["amount"] = -5663,
+								["spellid"] = 157353,
 								["srcname"] = "Imperator Mar'gok",
 								["hp"] = 107540,
-								["spellid"] = 157353,
 							}, -- [10]
 							{
 								["ts"] = 1421210317.40711,
 								["amount"] = -5918,
+								["spellid"] = 157357,
 								["srcname"] = "Hurrak-Arthas",
 								["hp"] = 101622,
-								["spellid"] = 157357,
 							}, -- [11]
 							{
 								["absorb"] = 0,
@@ -5115,16 +5115,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210317.62614,
 								["amount"] = -5777,
+								["spellid"] = 157353,
 								["srcname"] = "Imperator Mar'gok",
 								["hp"] = 98878,
-								["spellid"] = 157353,
 							}, -- [14]
 							{
 								["ts"] = 1421210317.88715,
 								["amount"] = -5579,
+								["spellid"] = 157353,
 								["srcname"] = "Imperator Mar'gok",
 								["hp"] = 93299,
-								["spellid"] = 157353,
 							}, -- [15]
 							["pos"] = 7,
 						},
@@ -5664,11 +5664,10 @@ SkadaPerCharDB = {
 						["name"] = "Alexodus-Exodar",
 						["amount"] = 1275659,
 					},
-					["Player-51-00236509"] = {
+					["Creature-0-3137-1228-18649-86181-000035F1CC"] = {
 						["shielding"] = 0,
-						["class"] = "MAGE",
-						["name"] = "Sasman-Garona",
-						["amount"] = 817623,
+						["name"] = "Beast",
+						["amount"] = 0,
 					},
 					["Player-1169-06A1ACBD"] = {
 						["shielding"] = 0,
@@ -5699,11 +5698,11 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3137-1228-18649-61029-000035F27E"] = {
+					["Player-51-00236509"] = {
 						["shielding"] = 0,
-						["class"] = "PALADIN",
-						["name"] = "Primal Fire Elemental",
-						["amount"] = 0,
+						["class"] = "MAGE",
+						["name"] = "Sasman-Garona",
+						["amount"] = 817623,
 					},
 					["Player-90-046D609F"] = {
 						["shielding"] = 0,
@@ -5717,9 +5716,10 @@ SkadaPerCharDB = {
 						["name"] = "Ahliarin-ArgentDawn",
 						["amount"] = 0,
 					},
-					["Creature-0-3137-1228-18649-86181-000035F1CC"] = {
+					["Creature-0-3137-1228-18649-61029-000035F27E"] = {
 						["shielding"] = 0,
-						["name"] = "Beast",
+						["class"] = "PALADIN",
+						["name"] = "Primal Fire Elemental",
 						["amount"] = 0,
 					},
 					["Creature-0-3137-1228-18649-31216-0000B5F1C9"] = {
@@ -6076,9 +6076,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210336.317,
 						["amount"] = -4287,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 160564,
-						["spellid"] = 158705,
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -6131,9 +6131,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210331.335,
 						["amount"] = -4306,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 82354,
-						["spellid"] = 158705,
 					}, -- [10]
 					{
 						["absorb"] = 0,
@@ -6154,9 +6154,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210332.331,
 						["amount"] = -4184,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 156768,
-						["spellid"] = 158705,
 					}, -- [13]
 					{
 						["absorb"] = 0,
@@ -6636,16 +6636,15 @@ SkadaPerCharDB = {
 						["max"] = 15740,
 						["damage"] = 759953,
 					},
-					["Beast: Attack"] = {
-						["max"] = 6687,
-						["min"] = 2544,
-						["multistrike"] = 22,
-						["critical"] = 38,
-						["hit"] = 96,
-						["totalhits"] = 135,
-						["PARRY"] = 1,
+					["Worm: Attack"] = {
+						["min"] = 2257,
+						["multistrike"] = 62,
+						["critical"] = 185,
+						["hit"] = 257,
+						["totalhits"] = 442,
 						["id"] = 6603,
-						["damage"] = 506774,
+						["max"] = 10158,
+						["damage"] = 1738892,
 					},
 					["Worm: Kill Command"] = {
 						["min"] = 10745,
@@ -6657,15 +6656,16 @@ SkadaPerCharDB = {
 						["max"] = 32235,
 						["damage"] = 934248,
 					},
-					["Worm: Bite"] = {
-						["min"] = 1992,
-						["multistrike"] = 24,
-						["critical"] = 81,
-						["hit"] = 91,
-						["totalhits"] = 172,
-						["id"] = 17253,
-						["max"] = 12702,
-						["damage"] = 928067,
+					["Beast: Attack"] = {
+						["max"] = 6687,
+						["min"] = 2544,
+						["multistrike"] = 22,
+						["critical"] = 38,
+						["hit"] = 96,
+						["totalhits"] = 135,
+						["PARRY"] = 1,
+						["id"] = 6603,
+						["damage"] = 506774,
 					},
 					["Kill Shot"] = {
 						["min"] = 22172,
@@ -6687,15 +6687,15 @@ SkadaPerCharDB = {
 						["max"] = 1182,
 						["damage"] = 44033,
 					},
-					["Worm: Attack"] = {
-						["min"] = 2257,
-						["multistrike"] = 62,
-						["critical"] = 185,
-						["hit"] = 257,
-						["totalhits"] = 442,
-						["id"] = 6603,
-						["max"] = 10158,
-						["damage"] = 1738892,
+					["Worm: Bite"] = {
+						["min"] = 1992,
+						["multistrike"] = 24,
+						["critical"] = 81,
+						["hit"] = 91,
+						["totalhits"] = 172,
+						["id"] = 17253,
+						["max"] = 12702,
+						["damage"] = 928067,
 					},
 					["Worm: Charge"] = {
 						["id"] = 53148,
@@ -6734,9 +6734,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210331.335,
 						["amount"] = -3972,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 71684,
-						["spellid"] = 158705,
 					}, -- [1]
 					{
 						["ts"] = 1421210331.485,
@@ -6749,9 +6749,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210332.331,
 						["amount"] = -4089,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 70267,
-						["spellid"] = 158705,
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -6772,16 +6772,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210336.317,
 						["amount"] = -4105,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 74314,
-						["spellid"] = 158705,
 					}, -- [6]
 					{
 						["ts"] = 1421210337.342,
 						["amount"] = -3996,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 70318,
-						["spellid"] = 158705,
 					}, -- [7]
 					{
 						["absorb"] = 0,
@@ -6794,30 +6794,30 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210340.745,
 						["amount"] = -3966,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 66497,
-						["spellid"] = 158705,
 					}, -- [9]
 					{
 						["ts"] = 1421210341.715,
 						["amount"] = -3832,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 62665,
-						["spellid"] = 158705,
 					}, -- [10]
 					{
 						["ts"] = 1421210342.751,
 						["amount"] = -3749,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 58916,
-						["spellid"] = 158705,
 					}, -- [11]
 					{
 						["ts"] = 1421210343.749,
 						["amount"] = -3969,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 54947,
-						["spellid"] = 158705,
 					}, -- [12]
 					{
 						["absorb"] = 0,
@@ -6838,9 +6838,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210330.363,
 						["amount"] = -3926,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 75656,
-						["spellid"] = 158705,
 					}, -- [15]
 					["pos"] = 15,
 				},
@@ -7376,9 +7376,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210340.745,
 						["amount"] = -4014,
+						["hp"] = 189193,
 						["srcname"] = "Replicating Arcane Aberration",
 						["spellid"] = 158705,
-						["hp"] = 189193,
 					}, -- [6]
 					{
 						["ts"] = 1421210340.745,
@@ -7399,23 +7399,23 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210341.715,
 						["amount"] = -4275,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 201099,
-						["spellid"] = 158705,
 					}, -- [9]
 					{
 						["ts"] = 1421210342.751,
 						["amount"] = -4123,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 196976,
-						["spellid"] = 158705,
 					}, -- [10]
 					{
 						["ts"] = 1421210343.749,
 						["amount"] = -4202,
+						["hp"] = 192774,
 						["srcname"] = "Replicating Arcane Aberration",
 						["spellid"] = 158705,
-						["hp"] = 192774,
 					}, -- [11]
 					{
 						["absorb"] = 0,
@@ -7428,9 +7428,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210333.384,
 						["amount"] = -4129,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 170138,
-						["spellid"] = 158705,
 					}, -- [13]
 					{
 						["absorb"] = 0,
@@ -8091,9 +8091,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210343.749,
 						["amount"] = -4590,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 238170,
-						["spellid"] = 158705,
 					}, -- [10]
 					{
 						["absorb"] = 0,
@@ -9206,9 +9206,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421216814.84,
 						["amount"] = -207,
+						["spellid"] = 36971,
 						["srcname"] = "Grand Astromancer Capernian",
 						["hp"] = 246093,
-						["spellid"] = 36971,
 					}, -- [1]
 					{
 						["absorb"] = 0,
@@ -9221,9 +9221,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421216819.995,
 						["amount"] = -673,
+						["spellid"] = 36805,
 						["srcname"] = "Kael'thas Sunstrider",
 						["hp"] = 245627,
-						["spellid"] = 36805,
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -9236,9 +9236,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421216822.292,
 						["amount"] = -661,
+						["hp"] = 245639,
 						["srcname"] = "Kael'thas Sunstrider",
 						["spellid"] = 36805,
-						["hp"] = 245639,
 					}, -- [5]
 					{
 						["ts"] = 1421216823.78,
@@ -9251,9 +9251,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421216866.895,
 						["amount"] = -76,
+						["hp"] = 246300,
 						["srcname"] = "Kael'thas Sunstrider",
 						["spellid"] = 88163,
-						["hp"] = 246300,
 					}, -- [7]
 					{
 						["absorb"] = 0,
@@ -9266,51 +9266,51 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421217686.524,
 						["amount"] = -342,
+						["spellid"] = 88163,
 						["srcname"] = "Malygos",
 						["hp"] = 226680,
-						["spellid"] = 88163,
 					}, -- [9]
 					{
 						["ts"] = 1421217688.539,
 						["amount"] = -338,
+						["spellid"] = 88163,
 						["srcname"] = "Malygos",
 						["hp"] = 226338,
-						["spellid"] = 88163,
 					}, -- [10]
 					{
 						["ts"] = 1421217688.683,
 						["amount"] = -284,
+						["hp"] = 225716,
 						["srcname"] = "Malygos",
 						["spellid"] = 61694,
-						["hp"] = 225716,
 					}, -- [11]
 					{
 						["ts"] = 1421217736.731,
 						["amount"] = -353,
+						["spellid"] = 63934,
 						["srcname"] = "Scion of Eternity",
 						["hp"] = 225363,
-						["spellid"] = 63934,
 					}, -- [12]
 					{
 						["ts"] = 1421217739.118,
 						["amount"] = -353,
+						["hp"] = 225010,
 						["srcname"] = "Scion of Eternity",
 						["spellid"] = 63934,
-						["hp"] = 225010,
 					}, -- [13]
 					{
 						["ts"] = 1421217747.727,
 						["amount"] = -353,
+						["hp"] = 224657,
 						["srcname"] = "Scion of Eternity",
 						["spellid"] = 63934,
-						["hp"] = 224657,
 					}, -- [14]
 					{
 						["ts"] = 1421217752.61,
 						["amount"] = -353,
+						["spellid"] = 63934,
 						["srcname"] = "Scion of Eternity",
 						["hp"] = 224304,
-						["spellid"] = 63934,
 					}, -- [15]
 					["pos"] = 1,
 				},
@@ -9886,15 +9886,15 @@ SkadaPerCharDB = {
 						["id"] = 53595,
 						["damage"] = 118076,
 					},
-					["Crusader Strike"] = {
-						["min"] = 4597,
-						["multistrike"] = 6,
-						["critical"] = 4,
-						["hit"] = 22,
-						["totalhits"] = 26,
-						["id"] = 35395,
-						["max"] = 10052,
-						["damage"] = 159769,
+					["Final Verdict"] = {
+						["min"] = 7226,
+						["multistrike"] = 16,
+						["critical"] = 9,
+						["hit"] = 76,
+						["totalhits"] = 85,
+						["id"] = 157048,
+						["max"] = 30447,
+						["damage"] = 1464249,
 					},
 					["Execution Sentence"] = {
 						["min"] = 1425,
@@ -9906,6 +9906,16 @@ SkadaPerCharDB = {
 						["max"] = 33279,
 						["damage"] = 352481,
 					},
+					["Crusader Strike"] = {
+						["min"] = 4597,
+						["multistrike"] = 6,
+						["critical"] = 4,
+						["hit"] = 22,
+						["totalhits"] = 26,
+						["id"] = 35395,
+						["max"] = 10052,
+						["damage"] = 159769,
+					},
 					["Hand of Light"] = {
 						["min"] = 83,
 						["hit"] = 401,
@@ -9913,16 +9923,6 @@ SkadaPerCharDB = {
 						["id"] = 96172,
 						["max"] = 12118,
 						["damage"] = 1570070,
-					},
-					["Final Verdict"] = {
-						["min"] = 7226,
-						["multistrike"] = 16,
-						["critical"] = 9,
-						["hit"] = 76,
-						["totalhits"] = 85,
-						["id"] = 157048,
-						["max"] = 30447,
-						["damage"] = 1464249,
 					},
 					["Attack"] = {
 						["max"] = 10722,
@@ -9996,16 +9996,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210340.745,
 						["amount"] = -3913,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 200214,
-						["spellid"] = 158705,
 					}, -- [6]
 					{
 						["ts"] = 1421210341.715,
 						["amount"] = -4058,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 196156,
-						["spellid"] = 158705,
 					}, -- [7]
 					{
 						["ts"] = 1421210341.715,
@@ -10018,9 +10018,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210342.751,
 						["amount"] = -3747,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 198685,
-						["spellid"] = 158705,
 					}, -- [9]
 					{
 						["absorb"] = 0,
@@ -10041,9 +10041,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210343.749,
 						["amount"] = -3801,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 198022,
-						["spellid"] = 158705,
 					}, -- [12]
 					{
 						["absorb"] = 0,
@@ -10707,9 +10707,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210340.745,
 						["amount"] = -4227,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 238318,
-						["spellid"] = 158705,
 					}, -- [4]
 					{
 						["absorb"] = 0,
@@ -10722,9 +10722,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210341.715,
 						["amount"] = -4073,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 234248,
-						["spellid"] = 158705,
 					}, -- [6]
 					{
 						["absorb"] = 0,
@@ -10737,9 +10737,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210342.751,
 						["amount"] = -4348,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 230055,
-						["spellid"] = 158705,
 					}, -- [8]
 					{
 						["ts"] = 1421210343.517,
@@ -10752,9 +10752,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210343.749,
 						["amount"] = -4211,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 225912,
-						["spellid"] = 158705,
 					}, -- [10]
 					{
 						["absorb"] = 0,
@@ -10767,9 +10767,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210335.338,
 						["amount"] = -4030,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 251052,
-						["spellid"] = 158705,
 					}, -- [12]
 					{
 						["absorb"] = 0,
@@ -10782,16 +10782,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210336.361,
 						["amount"] = -4375,
+						["hp"] = 246710,
 						["srcname"] = "Replicating Arcane Aberration",
 						["spellid"] = 158705,
-						["hp"] = 246710,
 					}, -- [14]
 					{
 						["ts"] = 1421210337.342,
 						["amount"] = -4293,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 242417,
-						["spellid"] = 158705,
 					}, -- [15]
 					["pos"] = 12,
 				},
@@ -11436,9 +11436,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210343.749,
 						["amount"] = -4516,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 231667,
-						["spellid"] = 158705,
 					}, -- [5]
 					{
 						["absorb"] = 0,
@@ -11451,23 +11451,23 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210332.331,
 						["amount"] = -4151,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 195889,
-						["spellid"] = 158705,
 					}, -- [7]
 					{
 						["ts"] = 1421210333.384,
 						["amount"] = -4222,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 191667,
-						["spellid"] = 158705,
 					}, -- [8]
 					{
 						["ts"] = 1421210334.332,
 						["amount"] = -4443,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 187224,
-						["spellid"] = 158705,
 					}, -- [9]
 					{
 						["absorb"] = 0,
@@ -11480,16 +11480,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210335.338,
 						["amount"] = -4167,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 186595,
-						["spellid"] = 158705,
 					}, -- [11]
 					{
 						["ts"] = 1421210336.361,
 						["amount"] = -4190,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 182405,
-						["spellid"] = 158705,
 					}, -- [12]
 					{
 						["absorb"] = 0,
@@ -11502,9 +11502,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210337.342,
 						["amount"] = -4501,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 199501,
-						["spellid"] = 158705,
 					}, -- [14]
 					{
 						["ts"] = 1421210337.484,
@@ -12078,9 +12078,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210340.745,
 						["amount"] = -4419,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 235617,
-						["spellid"] = 158705,
 					}, -- [5]
 					{
 						["absorb"] = 0,
@@ -12101,9 +12101,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210341.715,
 						["amount"] = -4291,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 238901,
-						["spellid"] = 158705,
 					}, -- [8]
 					{
 						["absorb"] = 0,
@@ -12116,9 +12116,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210342.751,
 						["amount"] = -4225,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 234776,
-						["spellid"] = 158705,
 					}, -- [10]
 					{
 						["ts"] = 1421210343.123,
@@ -12139,9 +12139,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210343.749,
 						["amount"] = -4490,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 235355,
-						["spellid"] = 158705,
 					}, -- [13]
 					{
 						["absorb"] = 0,
@@ -12389,18 +12389,17 @@ SkadaPerCharDB = {
 				["shielding"] = 0,
 				["healing"] = 1461676,
 				["healed"] = {
+					["Creature-0-3137-1228-18649-86181-000035F00C"] = {
+						["shielding"] = 0,
+						["name"] = "Beast",
+						["amount"] = 81,
+					},
 					["Creature-0-3137-1228-18649-86181-000035F242"] = {
 						["shielding"] = 0,
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Player-3725-09AB5D35"] = {
-						["shielding"] = 0,
-						["class"] = "DEATHKNIGHT",
-						["name"] = "Oblit-Frostmourne",
-						["amount"] = 124384,
-					},
-					["Creature-0-3137-1228-18649-86181-000035F04E"] = {
+					["Creature-0-3137-1228-18649-86181-000035F212"] = {
 						["shielding"] = 0,
 						["name"] = "Beast",
 						["amount"] = 0,
@@ -12416,10 +12415,10 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3137-1228-18649-86181-000035F00C"] = {
+					["Creature-0-3137-1228-18649-86181-000035F04E"] = {
 						["shielding"] = 0,
 						["name"] = "Beast",
-						["amount"] = 81,
+						["amount"] = 0,
 					},
 					["Creature-0-3137-1228-18649-86181-000035F133"] = {
 						["shielding"] = 0,
@@ -12534,10 +12533,11 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3137-1228-18649-86181-000035F212"] = {
+					["Player-3725-09AB5D35"] = {
 						["shielding"] = 0,
-						["name"] = "Beast",
-						["amount"] = 0,
+						["class"] = "DEATHKNIGHT",
+						["name"] = "Oblit-Frostmourne",
+						["amount"] = 124384,
 					},
 					["Player-3694-06BFC20A"] = {
 						["shielding"] = 0,
@@ -12818,9 +12818,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210340.745,
 						["amount"] = -4099,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 277061,
-						["spellid"] = 158705,
 					}, -- [4]
 					{
 						["ts"] = 1421210341.224,
@@ -12841,16 +12841,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210341.715,
 						["amount"] = -4156,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 277004,
-						["spellid"] = 158705,
 					}, -- [7]
 					{
 						["ts"] = 1421210342.751,
 						["amount"] = -4436,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 272568,
-						["spellid"] = 158705,
 					}, -- [8]
 					{
 						["absorb"] = 0,
@@ -12871,9 +12871,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210343.749,
 						["amount"] = -4496,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 254411,
-						["spellid"] = 158705,
 					}, -- [11]
 					{
 						["absorb"] = 0,
@@ -13513,9 +13513,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210340.745,
 						["amount"] = -6240,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 244620,
-						["spellid"] = 158705,
 					}, -- [2]
 					{
 						["ts"] = 1421210340.804,
@@ -13528,9 +13528,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210341.715,
 						["amount"] = -5916,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 243533,
-						["spellid"] = 158705,
 					}, -- [4]
 					{
 						["absorb"] = 0,
@@ -13543,9 +13543,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210342.751,
 						["amount"] = -5902,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 242031,
-						["spellid"] = 158705,
 					}, -- [6]
 					{
 						["ts"] = 1421210343.265,
@@ -13566,9 +13566,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210343.749,
 						["amount"] = -6153,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 244707,
-						["spellid"] = 158705,
 					}, -- [9]
 					{
 						["absorb"] = 0,
@@ -14278,9 +14278,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210327.35401,
 								["amount"] = -6473,
+								["spellid"] = 158705,
 								["srcname"] = "Replicating Arcane Aberration",
 								["hp"] = 82951,
-								["spellid"] = 158705,
 							}, -- [1]
 							{
 								["absorb"] = 0,
@@ -14313,9 +14313,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210322.36606,
 								["amount"] = -4496,
+								["spellid"] = 158705,
 								["srcname"] = "Replicating Arcane Aberration",
 								["hp"] = 181035,
-								["spellid"] = 158705,
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -14328,9 +14328,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210323.33708,
 								["amount"] = -4560,
+								["spellid"] = 158705,
 								["srcname"] = "Replicating Arcane Aberration",
 								["hp"] = 185761,
-								["spellid"] = 158705,
 							}, -- [8]
 							{
 								["hp"] = 86643,
@@ -14349,9 +14349,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210324.33611,
 								["amount"] = -6524,
+								["spellid"] = 158705,
 								["srcname"] = "Replicating Arcane Aberration",
 								["hp"] = 81215,
-								["spellid"] = 158705,
 							}, -- [11]
 							{
 								["absorb"] = 0,
@@ -14364,16 +14364,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210325.32413,
 								["amount"] = -6125,
+								["spellid"] = 158705,
 								["srcname"] = "Replicating Arcane Aberration",
 								["hp"] = 93663,
-								["spellid"] = 158705,
 							}, -- [13]
 							{
 								["ts"] = 1421210326.34814,
 								["amount"] = -6117,
+								["spellid"] = 158705,
 								["srcname"] = "Replicating Arcane Aberration",
 								["hp"] = 87546,
-								["spellid"] = 158705,
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -14832,9 +14832,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210341.715,
 						["amount"] = -4511,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 108074,
-						["spellid"] = 158705,
 					}, -- [2]
 					{
 						["ts"] = 1421210341.715,
@@ -14855,16 +14855,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210342.751,
 						["amount"] = -4309,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 111346,
-						["spellid"] = 158705,
 					}, -- [5]
 					{
 						["ts"] = 1421210343.749,
 						["amount"] = -4526,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 106820,
-						["spellid"] = 158705,
 					}, -- [6]
 					{
 						["ts"] = 1421210344.771,
@@ -14893,16 +14893,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210336.317,
 						["amount"] = -4172,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 106712,
-						["spellid"] = 158705,
 					}, -- [10]
 					{
 						["ts"] = 1421210337.342,
 						["amount"] = -4172,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 102540,
-						["spellid"] = 158705,
 					}, -- [11]
 					{
 						["ts"] = 1421210337.448,
@@ -16061,12 +16061,12 @@ SkadaPerCharDB = {
 					},
 				},
 				["auras"] = {
-					["Dark Soul: Instability"] = {
-						["name"] = "Dark Soul: Instability",
+					["Immolate"] = {
+						["name"] = "Immolate",
 						["active"] = 0,
-						["id"] = 113858,
-						["auratype"] = "BUFF",
-						["uptime"] = 20,
+						["id"] = 157736,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 475,
 					},
 					["Soul Leech"] = {
 						["name"] = "Soul Leech",
@@ -16075,12 +16075,12 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 1304,
 					},
-					["Immolate"] = {
-						["name"] = "Immolate",
+					["Aladreb: Debilitate"] = {
+						["name"] = "Aladreb: Debilitate",
 						["active"] = 0,
-						["id"] = 157736,
+						["id"] = 170996,
 						["auratype"] = "DEBUFF",
-						["uptime"] = 475,
+						["uptime"] = 6,
 					},
 					["Branded: Fortification"] = {
 						["name"] = "Branded: Fortification",
@@ -16103,12 +16103,12 @@ SkadaPerCharDB = {
 						["auratype"] = "DEBUFF",
 						["uptime"] = 548,
 					},
-					["Aladreb: Debilitate"] = {
-						["name"] = "Aladreb: Debilitate",
+					["Dark Soul: Instability"] = {
+						["name"] = "Dark Soul: Instability",
 						["active"] = 0,
-						["id"] = 170996,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 6,
+						["id"] = 113858,
+						["auratype"] = "BUFF",
+						["uptime"] = 20,
 					},
 					["Backdraft"] = {
 						["name"] = "Backdraft",
@@ -16317,9 +16317,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210270.40801,
 								["amount"] = -5785,
+								["spellid"] = 157353,
 								["srcname"] = "Imperator Mar'gok",
 								["hp"] = 4585,
-								["spellid"] = 157353,
 							}, -- [1]
 							{
 								["ts"] = 1421210270.59802,
@@ -16348,23 +16348,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210270.86705,
 								["amount"] = -5927,
+								["spellid"] = 157357,
 								["srcname"] = "Julyal-Lightbringer",
 								["hp"] = 10630,
-								["spellid"] = 157357,
 							}, -- [5]
 							{
 								["ts"] = 1421210270.90606,
 								["amount"] = -5638,
+								["spellid"] = 157353,
 								["srcname"] = "Imperator Mar'gok",
 								["hp"] = 4992,
-								["spellid"] = 157353,
 							}, -- [6]
 							{
 								["ts"] = 1421210271.14807,
 								["amount"] = -5657,
+								["spellid"] = 157353,
 								["srcname"] = "Imperator Mar'gok",
 								["hp"] = 1,
-								["spellid"] = 157353,
 							}, -- [7]
 							{
 								["spellname"] = "Dtuco dies",
@@ -16375,9 +16375,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210268.89609,
 								["amount"] = -5679,
+								["spellid"] = 157353,
 								["srcname"] = "Imperator Mar'gok",
 								["hp"] = 38649,
-								["spellid"] = 157353,
 							}, -- [9]
 							{
 								["absorb"] = 0,
@@ -16390,37 +16390,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210269.16411,
 								["amount"] = -5741,
+								["spellid"] = 157353,
 								["srcname"] = "Imperator Mar'gok",
 								["hp"] = 32979,
-								["spellid"] = 157353,
 							}, -- [11]
 							{
 								["ts"] = 1421210269.39012,
 								["amount"] = -5579,
+								["spellid"] = 157353,
 								["srcname"] = "Imperator Mar'gok",
 								["hp"] = 27400,
-								["spellid"] = 157353,
 							}, -- [12]
 							{
 								["ts"] = 1421210269.64413,
 								["amount"] = -5626,
+								["spellid"] = 157353,
 								["srcname"] = "Imperator Mar'gok",
 								["hp"] = 21774,
-								["spellid"] = 157353,
 							}, -- [13]
 							{
 								["ts"] = 1421210269.91314,
 								["amount"] = -5721,
+								["spellid"] = 157353,
 								["srcname"] = "Imperator Mar'gok",
 								["hp"] = 16053,
-								["spellid"] = 157353,
 							}, -- [14]
 							{
 								["ts"] = 1421210270.14115,
 								["amount"] = -5683,
+								["spellid"] = 157353,
 								["srcname"] = "Imperator Mar'gok",
 								["hp"] = 10370,
-								["spellid"] = 157353,
 							}, -- [15]
 							["pos"] = 9,
 						},
@@ -17070,9 +17070,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210321.371,
 						["amount"] = -3161,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 211891,
-						["spellid"] = 158705,
 					}, -- [2]
 					{
 						["absorb"] = 0,
@@ -17319,20 +17319,6 @@ SkadaPerCharDB = {
 				},
 				["overhealing"] = 5382865,
 				["healingspells"] = {
-					["Penance"] = {
-						["shielding"] = 0,
-						["id"] = 47750,
-						["healing"] = 339982,
-						["absorbed"] = 0,
-						["min"] = 0,
-						["multistrike"] = 6,
-						["name"] = "Penance",
-						["critical"] = 16,
-						["max"] = 25573,
-						["overhealing"] = 808283,
-						["hits"] = 56,
-						["multistrikes"] = 0,
-					},
 					["Prayer of Healing"] = {
 						["shielding"] = 0,
 						["id"] = 596,
@@ -17359,6 +17345,20 @@ SkadaPerCharDB = {
 						["max"] = 32989,
 						["overhealing"] = 0,
 						["hits"] = 729,
+						["multistrikes"] = 0,
+					},
+					["Penance"] = {
+						["shielding"] = 0,
+						["id"] = 47750,
+						["healing"] = 339982,
+						["absorbed"] = 0,
+						["min"] = 0,
+						["multistrike"] = 6,
+						["name"] = "Penance",
+						["critical"] = 16,
+						["max"] = 25573,
+						["overhealing"] = 808283,
+						["hits"] = 56,
 						["multistrikes"] = 0,
 					},
 					["Glyph of Power Word: Shield"] = {
@@ -17831,19 +17831,19 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 682,
 					},
+					["Divine Aegis"] = {
+						["name"] = "Divine Aegis",
+						["active"] = 17,
+						["id"] = 47753,
+						["auratype"] = "BUFF",
+						["uptime"] = 1180,
+					},
 					["Power Word: Shield"] = {
 						["name"] = "Power Word: Shield",
 						["active"] = 2,
 						["id"] = 17,
 						["auratype"] = "BUFF",
 						["uptime"] = 1175,
-					},
-					["Shadowfiend: Shadowcrawl"] = {
-						["name"] = "Shadowfiend: Shadowcrawl",
-						["active"] = 0,
-						["id"] = 63619,
-						["auratype"] = "BUFF",
-						["uptime"] = 30,
 					},
 					["Words of Mending"] = {
 						["name"] = "Words of Mending",
@@ -17859,12 +17859,12 @@ SkadaPerCharDB = {
 						["auratype"] = "DEBUFF",
 						["uptime"] = 812,
 					},
-					["Divine Aegis"] = {
-						["name"] = "Divine Aegis",
-						["active"] = 17,
-						["id"] = 47753,
+					["Shadowfiend: Shadowcrawl"] = {
+						["name"] = "Shadowfiend: Shadowcrawl",
+						["active"] = 0,
+						["id"] = 63619,
 						["auratype"] = "BUFF",
-						["uptime"] = 1180,
+						["uptime"] = 30,
 					},
 					["Body and Soul"] = {
 						["name"] = "Body and Soul",
@@ -18022,9 +18022,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210337.342,
 						["amount"] = -2873,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 229668,
-						["spellid"] = 158705,
 					}, -- [2]
 					{
 						["absorb"] = 0,
@@ -18053,9 +18053,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210340.745,
 						["amount"] = -3015,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 226838,
-						["spellid"] = 158705,
 					}, -- [6]
 					{
 						["absorb"] = 0,
@@ -18068,9 +18068,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210341.715,
 						["amount"] = -2938,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 233915,
-						["spellid"] = 158705,
 					}, -- [8]
 					{
 						["absorb"] = 0,
@@ -18083,9 +18083,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210342.751,
 						["amount"] = -3100,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 230882,
-						["spellid"] = 158705,
 					}, -- [10]
 					{
 						["absorb"] = 0,
@@ -18098,9 +18098,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210343.749,
 						["amount"] = -3016,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 227925,
-						["spellid"] = 158705,
 					}, -- [12]
 					{
 						["absorb"] = 0,
@@ -19110,12 +19110,12 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 1151,
 					},
-					["Divine Hymn"] = {
-						["name"] = "Divine Hymn",
-						["active"] = 6,
-						["id"] = 64843,
+					["Power Word: Shield"] = {
+						["name"] = "Power Word: Shield",
+						["active"] = 0,
+						["id"] = 17,
 						["auratype"] = "BUFF",
-						["uptime"] = 1220,
+						["uptime"] = 42,
 					},
 					["Destructive Resonance"] = {
 						["name"] = "Destructive Resonance",
@@ -19124,12 +19124,12 @@ SkadaPerCharDB = {
 						["auratype"] = "DEBUFF",
 						["uptime"] = 60,
 					},
-					["Power Word: Shield"] = {
-						["name"] = "Power Word: Shield",
+					["Shadowfiend: Shadowcrawl"] = {
+						["name"] = "Shadowfiend: Shadowcrawl",
 						["active"] = 0,
-						["id"] = 17,
+						["id"] = 63619,
 						["auratype"] = "BUFF",
-						["uptime"] = 42,
+						["uptime"] = 20,
 					},
 					["Word of Mending"] = {
 						["name"] = "Word of Mending",
@@ -19138,12 +19138,12 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 1327,
 					},
-					["Shadowfiend: Shadowcrawl"] = {
-						["name"] = "Shadowfiend: Shadowcrawl",
-						["active"] = 0,
-						["id"] = 63619,
+					["Divine Hymn"] = {
+						["name"] = "Divine Hymn",
+						["active"] = 6,
+						["id"] = 64843,
 						["auratype"] = "BUFF",
-						["uptime"] = 20,
+						["uptime"] = 1220,
 					},
 					["Guardian Spirit"] = {
 						["name"] = "Guardian Spirit",
@@ -19388,9 +19388,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210198.97008,
 								["amount"] = -91771,
+								["spellid"] = 88163,
 								["srcname"] = "Gorian Reaver",
 								["hp"] = 116028,
-								["spellid"] = 88163,
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -19427,9 +19427,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1421210199.79813,
 								["amount"] = -79916,
+								["spellid"] = 158547,
 								["srcname"] = "Gorian Reaver",
 								["hp"] = 1,
-								["spellid"] = 158547,
 							}, -- [13]
 							{
 								["spellname"] = "Radix dies",
@@ -19438,10 +19438,10 @@ SkadaPerCharDB = {
 								["spellid"] = 41220,
 							}, -- [14]
 							{
-								["srcname"] = "Briis-Aggramar",
-								["ts"] = 1421210201.616,
-								["hp"] = 0,
 								["spellid"] = 20484,
+								["ts"] = 1421210201.616,
+								["srcname"] = "Briis-Aggramar",
+								["hp"] = 0,
 							}, -- [15]
 							["pos"] = 1,
 						},
@@ -19497,16 +19497,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210341.619,
 						["amount"] = -22325,
+						["spellid"] = 88163,
 						["srcname"] = "Imperator Mar'gok",
 						["hp"] = 258133,
-						["spellid"] = 88163,
 					}, -- [5]
 					{
 						["ts"] = 1421210341.715,
 						["amount"] = -3924,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 254209,
-						["spellid"] = 158705,
 					}, -- [6]
 					{
 						["ts"] = 1421210342.751,
@@ -19519,9 +19519,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210343.517,
 						["amount"] = -24136,
+						["spellid"] = 88163,
 						["srcname"] = "Imperator Mar'gok",
 						["hp"] = 229539,
-						["spellid"] = 88163,
 					}, -- [8]
 					{
 						["absorb"] = 0,
@@ -19550,9 +19550,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1421210343.749,
 						["amount"] = -3753,
+						["spellid"] = 158705,
 						["srcname"] = "Replicating Arcane Aberration",
 						["hp"] = 242704,
-						["spellid"] = 158705,
 					}, -- [12]
 					{
 						["absorb"] = 0,
@@ -20893,15 +20893,15 @@ SkadaPerCharDB = {
 						["done"] = 253799,
 						["class"] = "PALADIN",
 					},
-					["Radix-Terenas"] = {
-						["taken"] = 145872,
-						["done"] = 0,
-						["class"] = "PALADIN",
-					},
 					["Lacyhunter-Lightbringer"] = {
 						["taken"] = 1220888,
 						["done"] = 310587,
 						["class"] = "HUNTER",
+					},
+					["Dtuco-Quel'Thalas"] = {
+						["taken"] = 311032,
+						["done"] = 168537,
+						["class"] = "DEATHKNIGHT",
 					},
 					["Cholito-Drenden"] = {
 						["taken"] = 1810505,
@@ -20948,10 +20948,10 @@ SkadaPerCharDB = {
 						["done"] = 68055,
 						["class"] = "MAGE",
 					},
-					["Dtuco-Quel'Thalas"] = {
-						["taken"] = 311032,
-						["done"] = 168537,
-						["class"] = "DEATHKNIGHT",
+					["Radix-Terenas"] = {
+						["taken"] = 145872,
+						["done"] = 0,
+						["class"] = "PALADIN",
 					},
 					["Kalebtheboss-Korgath"] = {
 						["taken"] = 3794,
@@ -21039,15 +21039,15 @@ SkadaPerCharDB = {
 						["done"] = 0,
 						["class"] = "DEATHKNIGHT",
 					},
-					["Lacyhunter-Lightbringer"] = {
-						["taken"] = 895371,
-						["done"] = 0,
-						["class"] = "HUNTER",
-					},
 					["Radix-Terenas"] = {
 						["taken"] = 467603,
 						["done"] = 1384094,
 						["class"] = "PALADIN",
+					},
+					["Dtuco-Quel'Thalas"] = {
+						["taken"] = 342011,
+						["done"] = 0,
+						["class"] = "DEATHKNIGHT",
 					},
 					["Rudicarmel-Arathor"] = {
 						["taken"] = 49963,
@@ -21074,10 +21074,10 @@ SkadaPerCharDB = {
 						["done"] = 0,
 						["class"] = "MAGE",
 					},
-					["Dtuco-Quel'Thalas"] = {
-						["taken"] = 342011,
+					["Lacyhunter-Lightbringer"] = {
+						["taken"] = 895371,
 						["done"] = 0,
-						["class"] = "DEATHKNIGHT",
+						["class"] = "HUNTER",
 					},
 					["Kalebtheboss-Korgath"] = {
 						["taken"] = 6235,
@@ -21950,17 +21950,17 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 			},
-			["Star Scryer"] = {
+			["Kael'thas Sunstrider"] = {
 				["players"] = {
 					["Bracnar"] = {
-						["taken"] = 562797,
-						["done"] = 0,
+						["taken"] = 2545655,
+						["done"] = 1410,
 						["class"] = "HUNTER",
 					},
 				},
 				["hdone"] = 0,
-				["done"] = 0,
-				["taken"] = 562797,
+				["done"] = 1410,
+				["taken"] = 2545655,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
@@ -22116,17 +22116,17 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 			},
-			["Kael'thas Sunstrider"] = {
+			["Star Scryer"] = {
 				["players"] = {
 					["Bracnar"] = {
-						["taken"] = 2545655,
-						["done"] = 1410,
+						["taken"] = 562797,
+						["done"] = 0,
 						["class"] = "HUNTER",
 					},
 				},
 				["hdone"] = 0,
-				["done"] = 1410,
-				["taken"] = 2545655,
+				["done"] = 0,
+				["taken"] = 562797,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
@@ -23098,7 +23098,7 @@ SkadaPerCharDB = {
 							["damage"] = 680,
 						},
 					},
-					["maxhp"] = 226680,
+					["maxhp"] = 246300,
 					["overhealing"] = 0,
 					["name"] = "Bracnar",
 					["healingspells"] = {
@@ -23278,7 +23278,7 @@ SkadaPerCharDB = {
 					},
 					["damagetakenspells"] = {
 					},
-					["maxhp"] = 237000,
+					["maxhp"] = 246300,
 					["overhealing"] = 0,
 					["name"] = "Bracnar",
 					["healingspells"] = {
@@ -24129,30 +24129,30 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210318.13102,
 									["amount"] = -5732,
+									["spellid"] = 157353,
 									["srcname"] = "Imperator Mar'gok",
 									["hp"] = 14629,
-									["spellid"] = 157353,
 								}, -- [2]
 								{
 									["ts"] = 1421210318.35403,
 									["amount"] = -4252,
+									["spellid"] = 158705,
 									["srcname"] = "Replicating Arcane Aberration",
 									["hp"] = 10377,
-									["spellid"] = 158705,
 								}, -- [3]
 								{
 									["ts"] = 1421210318.46704,
 									["amount"] = -5998,
+									["spellid"] = 157357,
 									["srcname"] = "Scarmutta-Llane",
 									["hp"] = 4379,
-									["spellid"] = 157357,
 								}, -- [4]
 								{
 									["ts"] = 1421210318.73605,
 									["amount"] = -6184,
+									["spellid"] = 157357,
 									["srcname"] = "Scarmutta-Llane",
 									["hp"] = 1,
-									["spellid"] = 157357,
 								}, -- [5]
 								{
 									["spellname"] = "Briis dies",
@@ -24163,37 +24163,37 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210317.14907,
 									["amount"] = -6404,
+									["spellid"] = 157357,
 									["srcname"] = "Hurrak-Arthas",
 									["hp"] = 123625,
-									["spellid"] = 157357,
 								}, -- [7]
 								{
 									["ts"] = 1421210317.35408,
 									["amount"] = -4464,
+									["spellid"] = 158705,
 									["srcname"] = "Replicating Arcane Aberration",
 									["hp"] = 119161,
-									["spellid"] = 158705,
 								}, -- [8]
 								{
 									["ts"] = 1421210317.35409,
 									["amount"] = -5958,
+									["spellid"] = 157357,
 									["srcname"] = "Heau-Lightning'sBlade",
 									["hp"] = 113203,
-									["spellid"] = 157357,
 								}, -- [9]
 								{
 									["ts"] = 1421210317.4071,
 									["amount"] = -5663,
+									["spellid"] = 157353,
 									["srcname"] = "Imperator Mar'gok",
 									["hp"] = 107540,
-									["spellid"] = 157353,
 								}, -- [10]
 								{
 									["ts"] = 1421210317.40711,
 									["amount"] = -5918,
+									["spellid"] = 157357,
 									["srcname"] = "Hurrak-Arthas",
 									["hp"] = 101622,
-									["spellid"] = 157357,
 								}, -- [11]
 								{
 									["absorb"] = 0,
@@ -24214,16 +24214,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210317.62614,
 									["amount"] = -5777,
+									["spellid"] = 157353,
 									["srcname"] = "Imperator Mar'gok",
 									["hp"] = 98878,
-									["spellid"] = 157353,
 								}, -- [14]
 								{
 									["ts"] = 1421210317.88715,
 									["amount"] = -5579,
+									["spellid"] = 157353,
 									["srcname"] = "Imperator Mar'gok",
 									["hp"] = 93299,
-									["spellid"] = 157353,
 								}, -- [15]
 								["pos"] = 7,
 							},
@@ -25445,11 +25445,11 @@ SkadaPerCharDB = {
 							["name"] = "Dtuco-Quel'Thalas",
 							["amount"] = 118744,
 						},
-						["Player-90-046D609F"] = {
+						["Player-1146-06DE65CB"] = {
 							["shielding"] = 0,
 							["class"] = "PALADIN",
-							["name"] = "Radix-Terenas",
-							["amount"] = 1077969,
+							["name"] = "Kalebtheboss-Korgath",
+							["amount"] = 220861,
 						},
 						["Creature-0-3137-1228-18649-61029-000035F27E"] = {
 							["shielding"] = 0,
@@ -25457,11 +25457,11 @@ SkadaPerCharDB = {
 							["name"] = "Primal Fire Elemental",
 							["amount"] = 0,
 						},
-						["Creature-0-3137-1228-18649-31216-000135F1C9"] = {
+						["Player-90-046D609F"] = {
 							["shielding"] = 0,
-							["class"] = "MAGE",
-							["name"] = "Ahliarin-ArgentDawn",
-							["amount"] = 0,
+							["class"] = "PALADIN",
+							["name"] = "Radix-Terenas",
+							["amount"] = 1077969,
 						},
 						["Creature-0-3137-1228-18649-31216-000035F1C9"] = {
 							["shielding"] = 0,
@@ -25493,11 +25493,11 @@ SkadaPerCharDB = {
 							["name"] = "Sheniyilian-Lightbringer",
 							["amount"] = 138614,
 						},
-						["Player-1146-06DE65CB"] = {
+						["Creature-0-3137-1228-18649-31216-000135F1C9"] = {
 							["shielding"] = 0,
-							["class"] = "PALADIN",
-							["name"] = "Kalebtheboss-Korgath",
-							["amount"] = 220861,
+							["class"] = "MAGE",
+							["name"] = "Ahliarin-ArgentDawn",
+							["amount"] = 0,
 						},
 						["Creature-0-3137-1228-18649-86181-000035F1CC"] = {
 							["shielding"] = 0,
@@ -27364,9 +27364,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210198.97008,
 									["amount"] = -91771,
+									["spellid"] = 88163,
 									["srcname"] = "Gorian Reaver",
 									["hp"] = 116028,
-									["spellid"] = 88163,
 								}, -- [8]
 								{
 									["absorb"] = 0,
@@ -27403,9 +27403,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210199.79813,
 									["amount"] = -79916,
+									["spellid"] = 158547,
 									["srcname"] = "Gorian Reaver",
 									["hp"] = 1,
-									["spellid"] = 158547,
 								}, -- [13]
 								{
 									["spellname"] = "Radix dies",
@@ -27414,10 +27414,10 @@ SkadaPerCharDB = {
 									["spellid"] = 41220,
 								}, -- [14]
 								{
-									["srcname"] = "Briis-Aggramar",
-									["ts"] = 1421210201.616,
-									["hp"] = 0,
 									["spellid"] = 20484,
+									["ts"] = 1421210201.616,
+									["srcname"] = "Briis-Aggramar",
+									["hp"] = 0,
 								}, -- [15]
 								["pos"] = 1,
 							},
@@ -28061,12 +28061,12 @@ SkadaPerCharDB = {
 						},
 					},
 					["auras"] = {
-						["Aladreb: Debilitate"] = {
-							["name"] = "Aladreb: Debilitate",
+						["Immolate"] = {
+							["name"] = "Immolate",
 							["active"] = 0,
-							["id"] = 170996,
+							["id"] = 157736,
 							["auratype"] = "DEBUFF",
-							["uptime"] = 6,
+							["uptime"] = 251,
 						},
 						["Exhaustion"] = {
 							["name"] = "Exhaustion",
@@ -28075,12 +28075,12 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["uptime"] = 548,
 						},
-						["Immolate"] = {
-							["name"] = "Immolate",
+						["Dark Soul: Instability"] = {
+							["name"] = "Dark Soul: Instability",
 							["active"] = 0,
-							["id"] = 157736,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 251,
+							["id"] = 113858,
+							["auratype"] = "BUFF",
+							["uptime"] = 20,
 						},
 						["Blood Pact"] = {
 							["name"] = "Blood Pact",
@@ -28103,12 +28103,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 287,
 						},
-						["Dark Soul: Instability"] = {
-							["name"] = "Dark Soul: Instability",
+						["Aladreb: Debilitate"] = {
+							["name"] = "Aladreb: Debilitate",
 							["active"] = 0,
-							["id"] = 113858,
-							["auratype"] = "BUFF",
-							["uptime"] = 20,
+							["id"] = 170996,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 6,
 						},
 						["Backdraft"] = {
 							["name"] = "Backdraft",
@@ -28281,23 +28281,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210316.66401,
 									["amount"] = -6266,
+									["spellid"] = 157357,
 									["srcname"] = "Hurrak-Arthas",
 									["hp"] = 111237,
-									["spellid"] = 157357,
 								}, -- [1]
 								{
 									["ts"] = 1421210316.86902,
 									["amount"] = -5540,
+									["spellid"] = 157353,
 									["srcname"] = "Imperator Mar'gok",
 									["hp"] = 105697,
-									["spellid"] = 157353,
 								}, -- [2]
 								{
 									["ts"] = 1421210316.86903,
 									["amount"] = -6053,
+									["spellid"] = 157357,
 									["srcname"] = "Briis-Aggramar",
 									["hp"] = 99644,
-									["spellid"] = 157357,
 								}, -- [3]
 								{
 									["absorb"] = 0,
@@ -28310,9 +28310,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210316.94405,
 									["amount"] = -6241,
+									["spellid"] = 157357,
 									["srcname"] = "Hurrak-Arthas",
 									["hp"] = 95956,
-									["spellid"] = 157357,
 								}, -- [5]
 								{
 									["absorb"] = 0,
@@ -28325,51 +28325,51 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210317.10607,
 									["amount"] = -5522,
+									["spellid"] = 157353,
 									["srcname"] = "Imperator Mar'gok",
 									["hp"] = 101155,
-									["spellid"] = 157353,
 								}, -- [7]
 								{
 									["ts"] = 1421210317.14908,
 									["amount"] = -5725,
+									["spellid"] = 157357,
 									["srcname"] = "Briis-Aggramar",
 									["hp"] = 95430,
-									["spellid"] = 157357,
 								}, -- [8]
 								{
 									["ts"] = 1421210317.14909,
 									["amount"] = -5749,
+									["spellid"] = 157357,
 									["srcname"] = "Hurrak-Arthas",
 									["hp"] = 89681,
-									["spellid"] = 157357,
 								}, -- [9]
 								{
 									["ts"] = 1421210317.3541,
 									["amount"] = -4362,
+									["spellid"] = 158705,
 									["srcname"] = "Replicating Arcane Aberration",
 									["hp"] = 85319,
-									["spellid"] = 158705,
 								}, -- [10]
 								{
 									["ts"] = 1421210317.35411,
 									["amount"] = -5683,
+									["spellid"] = 157353,
 									["srcname"] = "Imperator Mar'gok",
 									["hp"] = 79636,
-									["spellid"] = 157353,
 								}, -- [11]
 								{
 									["ts"] = 1421210317.40712,
 									["amount"] = -5981,
+									["spellid"] = 157357,
 									["srcname"] = "Hurrak-Arthas",
 									["hp"] = 73655,
-									["spellid"] = 157357,
 								}, -- [12]
 								{
 									["ts"] = 1421210317.62613,
 									["amount"] = -5594,
+									["spellid"] = 157353,
 									["srcname"] = "Imperator Mar'gok",
 									["hp"] = 68061,
-									["spellid"] = 157353,
 								}, -- [13]
 								{
 									["hp"] = 1,
@@ -29285,20 +29285,6 @@ SkadaPerCharDB = {
 					["overhealing"] = 3523670,
 					["name"] = "Exodus",
 					["healingspells"] = {
-						["Power Word: Shield"] = {
-							["shielding"] = 0,
-							["id"] = 17,
-							["healing"] = 1636457,
-							["absorbed"] = 0,
-							["min"] = 7,
-							["multistrike"] = 0,
-							["name"] = "Power Word: Shield",
-							["critical"] = 0,
-							["max"] = 46402,
-							["overhealing"] = 0,
-							["hits"] = 201,
-							["multistrikes"] = 0,
-						},
 						["Divine Aegis"] = {
 							["shielding"] = 0,
 							["id"] = 47753,
@@ -29325,6 +29311,20 @@ SkadaPerCharDB = {
 							["max"] = 24097,
 							["overhealing"] = 1069724,
 							["hits"] = 162,
+							["multistrikes"] = 0,
+						},
+						["Power Word: Shield"] = {
+							["shielding"] = 0,
+							["id"] = 17,
+							["healing"] = 1636457,
+							["absorbed"] = 0,
+							["min"] = 7,
+							["multistrike"] = 0,
+							["name"] = "Power Word: Shield",
+							["critical"] = 0,
+							["max"] = 46402,
+							["overhealing"] = 0,
+							["hits"] = 201,
 							["multistrikes"] = 0,
 						},
 						["Cascade"] = {
@@ -29776,12 +29776,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 38,
 						},
-						["Power Word: Shield"] = {
-							["name"] = "Power Word: Shield",
-							["active"] = 1,
-							["id"] = 17,
+						["Divine Aegis"] = {
+							["name"] = "Divine Aegis",
+							["active"] = 9,
+							["id"] = 47753,
 							["auratype"] = "BUFF",
-							["uptime"] = 198,
+							["uptime"] = 555,
 						},
 						["Evangelism"] = {
 							["name"] = "Evangelism",
@@ -29797,19 +29797,19 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["uptime"] = 280,
 						},
-						["Divine Aegis"] = {
-							["name"] = "Divine Aegis",
-							["active"] = 9,
-							["id"] = 47753,
-							["auratype"] = "BUFF",
-							["uptime"] = 555,
-						},
 						["Shadowfiend: Shadowcrawl"] = {
 							["name"] = "Shadowfiend: Shadowcrawl",
 							["active"] = 0,
 							["id"] = 63619,
 							["auratype"] = "BUFF",
 							["uptime"] = 30,
+						},
+						["Power Word: Shield"] = {
+							["name"] = "Power Word: Shield",
+							["active"] = 1,
+							["id"] = 17,
+							["auratype"] = "BUFF",
+							["uptime"] = 198,
 						},
 						["Borrowed Time"] = {
 							["name"] = "Borrowed Time",
@@ -29913,16 +29913,15 @@ SkadaPerCharDB = {
 							["max"] = 15189,
 							["damage"] = 509065,
 						},
-						["Beast: Attack"] = {
-							["max"] = 6520,
-							["min"] = 2544,
-							["multistrike"] = 15,
-							["critical"] = 28,
-							["hit"] = 83,
-							["totalhits"] = 112,
-							["PARRY"] = 1,
-							["id"] = 6603,
-							["damage"] = 406705,
+						["Worm: Bite"] = {
+							["min"] = 1992,
+							["multistrike"] = 18,
+							["critical"] = 58,
+							["hit"] = 71,
+							["totalhits"] = 129,
+							["id"] = 17253,
+							["max"] = 12702,
+							["damage"] = 646540,
 						},
 						["Worm: Kill Command"] = {
 							["min"] = 10745,
@@ -29934,15 +29933,16 @@ SkadaPerCharDB = {
 							["max"] = 32235,
 							["damage"] = 657920,
 						},
-						["Worm: Attack"] = {
-							["min"] = 2257,
-							["multistrike"] = 50,
-							["critical"] = 144,
-							["hit"] = 205,
-							["totalhits"] = 349,
+						["Beast: Attack"] = {
+							["max"] = 6520,
+							["min"] = 2544,
+							["multistrike"] = 15,
+							["critical"] = 28,
+							["hit"] = 83,
+							["totalhits"] = 112,
+							["PARRY"] = 1,
 							["id"] = 6603,
-							["max"] = 10158,
-							["damage"] = 1380863,
+							["damage"] = 406705,
 						},
 						["Worm: Charge"] = {
 							["id"] = 53148,
@@ -29961,15 +29961,15 @@ SkadaPerCharDB = {
 							["max"] = 1182,
 							["damage"] = 23502,
 						},
-						["Worm: Bite"] = {
-							["min"] = 1992,
-							["multistrike"] = 18,
-							["critical"] = 58,
-							["hit"] = 71,
-							["totalhits"] = 129,
-							["id"] = 17253,
-							["max"] = 12702,
-							["damage"] = 646540,
+						["Worm: Attack"] = {
+							["min"] = 2257,
+							["multistrike"] = 50,
+							["critical"] = 144,
+							["hit"] = 205,
+							["totalhits"] = 349,
+							["id"] = 6603,
+							["max"] = 10158,
+							["damage"] = 1380863,
 						},
 						["Glaive Toss"] = {
 							["min"] = 1217,
@@ -31495,9 +31495,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210270.40801,
 									["amount"] = -5785,
+									["spellid"] = 157353,
 									["srcname"] = "Imperator Mar'gok",
 									["hp"] = 4585,
-									["spellid"] = 157353,
 								}, -- [1]
 								{
 									["ts"] = 1421210270.59802,
@@ -31526,23 +31526,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210270.86705,
 									["amount"] = -5927,
+									["spellid"] = 157357,
 									["srcname"] = "Julyal-Lightbringer",
 									["hp"] = 10630,
-									["spellid"] = 157357,
 								}, -- [5]
 								{
 									["ts"] = 1421210270.90606,
 									["amount"] = -5638,
+									["spellid"] = 157353,
 									["srcname"] = "Imperator Mar'gok",
 									["hp"] = 4992,
-									["spellid"] = 157353,
 								}, -- [6]
 								{
 									["ts"] = 1421210271.14807,
 									["amount"] = -5657,
+									["spellid"] = 157353,
 									["srcname"] = "Imperator Mar'gok",
 									["hp"] = 1,
-									["spellid"] = 157353,
 								}, -- [7]
 								{
 									["spellname"] = "Dtuco dies",
@@ -31553,9 +31553,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210268.89609,
 									["amount"] = -5679,
+									["spellid"] = 157353,
 									["srcname"] = "Imperator Mar'gok",
 									["hp"] = 38649,
-									["spellid"] = 157353,
 								}, -- [9]
 								{
 									["absorb"] = 0,
@@ -31568,37 +31568,37 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210269.16411,
 									["amount"] = -5741,
+									["spellid"] = 157353,
 									["srcname"] = "Imperator Mar'gok",
 									["hp"] = 32979,
-									["spellid"] = 157353,
 								}, -- [11]
 								{
 									["ts"] = 1421210269.39012,
 									["amount"] = -5579,
+									["spellid"] = 157353,
 									["srcname"] = "Imperator Mar'gok",
 									["hp"] = 27400,
-									["spellid"] = 157353,
 								}, -- [12]
 								{
 									["ts"] = 1421210269.64413,
 									["amount"] = -5626,
+									["spellid"] = 157353,
 									["srcname"] = "Imperator Mar'gok",
 									["hp"] = 21774,
-									["spellid"] = 157353,
 								}, -- [13]
 								{
 									["ts"] = 1421210269.91314,
 									["amount"] = -5721,
+									["spellid"] = 157353,
 									["srcname"] = "Imperator Mar'gok",
 									["hp"] = 16053,
-									["spellid"] = 157353,
 								}, -- [14]
 								{
 									["ts"] = 1421210270.14115,
 									["amount"] = -5683,
+									["spellid"] = 157353,
 									["srcname"] = "Imperator Mar'gok",
 									["hp"] = 10370,
-									["spellid"] = 157353,
 								}, -- [15]
 								["pos"] = 9,
 							},
@@ -32219,16 +32219,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210316.34501,
 									["amount"] = -3758,
+									["spellid"] = 158705,
 									["srcname"] = "Replicating Arcane Aberration",
 									["hp"] = 26719,
-									["spellid"] = 158705,
 								}, -- [1]
 								{
 									["ts"] = 1421210317.35502,
 									["amount"] = -4005,
+									["spellid"] = 158705,
 									["srcname"] = "Replicating Arcane Aberration",
 									["hp"] = 22714,
-									["spellid"] = 158705,
 								}, -- [2]
 								{
 									["absorb"] = 0,
@@ -32241,16 +32241,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210318.35404,
 									["amount"] = -4013,
+									["hp"] = 19086,
 									["srcname"] = "Replicating Arcane Aberration",
 									["spellid"] = 158705,
-									["hp"] = 19086,
 								}, -- [4]
 								{
 									["ts"] = 1421210319.32905,
 									["amount"] = -3788,
+									["spellid"] = 158705,
 									["srcname"] = "Replicating Arcane Aberration",
 									["hp"] = 15298,
-									["spellid"] = 158705,
 								}, -- [5]
 								{
 									["ts"] = 1421210319.47006,
@@ -32275,9 +32275,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210315.36509,
 									["amount"] = -5203,
+									["spellid"] = 157353,
 									["srcname"] = "Imperator Mar'gok",
 									["hp"] = 120846,
-									["spellid"] = 157353,
 								}, -- [9]
 								{
 									["hp"] = 58309,
@@ -32288,37 +32288,37 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210315.52011,
 									["amount"] = -5733,
+									["spellid"] = 157357,
 									["srcname"] = "Websilon-AzjolNerub",
 									["hp"] = 52576,
-									["spellid"] = 157357,
 								}, -- [11]
 								{
 									["ts"] = 1421210315.58612,
 									["amount"] = -5495,
+									["spellid"] = 157357,
 									["srcname"] = "Rudicarmel-Arathor",
 									["hp"] = 47081,
-									["spellid"] = 157357,
 								}, -- [12]
 								{
 									["ts"] = 1421210315.58613,
 									["amount"] = -5673,
+									["spellid"] = 157357,
 									["srcname"] = "Bloodyclaw-Nemesis",
 									["hp"] = 41408,
-									["spellid"] = 157357,
 								}, -- [13]
 								{
 									["ts"] = 1421210315.79814,
 									["amount"] = -5362,
+									["spellid"] = 157357,
 									["srcname"] = "Rudicarmel-Arathor",
 									["hp"] = 36046,
-									["spellid"] = 157357,
 								}, -- [14]
 								{
 									["ts"] = 1421210315.84415,
 									["amount"] = -5569,
+									["spellid"] = 157357,
 									["srcname"] = "Bloodyclaw-Nemesis",
 									["hp"] = 30477,
-									["spellid"] = 157357,
 								}, -- [15]
 								["pos"] = 9,
 							},
@@ -33677,19 +33677,19 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 40,
 						},
+						["Grace of Air"] = {
+							["name"] = "Grace of Air",
+							["active"] = 0,
+							["id"] = 116956,
+							["auratype"] = "BUFF",
+							["uptime"] = 67,
+						},
 						["Shamanistic Rage"] = {
 							["name"] = "Shamanistic Rage",
 							["active"] = 0,
 							["id"] = 30823,
 							["auratype"] = "BUFF",
 							["uptime"] = 30,
-						},
-						["Ancestral Guidance"] = {
-							["name"] = "Ancestral Guidance",
-							["active"] = 0,
-							["id"] = 108281,
-							["auratype"] = "BUFF",
-							["uptime"] = 10,
 						},
 						["Maelstrom Weapon"] = {
 							["name"] = "Maelstrom Weapon",
@@ -33796,12 +33796,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 45,
 						},
-						["Grace of Air"] = {
-							["name"] = "Grace of Air",
+						["Ancestral Guidance"] = {
+							["name"] = "Ancestral Guidance",
 							["active"] = 0,
-							["id"] = 116956,
+							["id"] = 108281,
 							["auratype"] = "BUFF",
-							["uptime"] = 67,
+							["uptime"] = 10,
 						},
 						["Enhanced Unleash"] = {
 							["name"] = "Enhanced Unleash",
@@ -34756,12 +34756,12 @@ SkadaPerCharDB = {
 							["name"] = "Oblit-Frostmourne",
 							["amount"] = 94193,
 						},
-						["Creature-0-3137-1228-18649-86181-000035F104"] = {
+						["Creature-0-3137-1228-18649-86181-000035F184"] = {
 							["shielding"] = 0,
 							["name"] = "Beast",
 							["amount"] = 0,
 						},
-						["Creature-0-3137-1228-18649-86181-000035F184"] = {
+						["Creature-0-3137-1228-18649-86181-000035F1F4"] = {
 							["shielding"] = 0,
 							["name"] = "Beast",
 							["amount"] = 0,
@@ -34781,7 +34781,7 @@ SkadaPerCharDB = {
 							["name"] = "Beast",
 							["amount"] = 0,
 						},
-						["Creature-0-3137-1228-18649-86181-000035F1F4"] = {
+						["Creature-0-3137-1228-18649-86181-000035F104"] = {
 							["shielding"] = 0,
 							["name"] = "Beast",
 							["amount"] = 0,
@@ -36286,13 +36286,6 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["uptime"] = 151,
 						},
-						["Power Word: Shield"] = {
-							["name"] = "Power Word: Shield",
-							["active"] = 0,
-							["id"] = 17,
-							["auratype"] = "BUFF",
-							["uptime"] = 18,
-						},
 						["Shadowfiend: Shadowcrawl"] = {
 							["name"] = "Shadowfiend: Shadowcrawl",
 							["active"] = 0,
@@ -36306,6 +36299,13 @@ SkadaPerCharDB = {
 							["id"] = 64843,
 							["auratype"] = "BUFF",
 							["uptime"] = 309,
+						},
+						["Power Word: Shield"] = {
+							["name"] = "Power Word: Shield",
+							["active"] = 0,
+							["id"] = 17,
+							["auratype"] = "BUFF",
+							["uptime"] = 18,
 						},
 						["Destructive Resonance"] = {
 							["name"] = "Destructive Resonance",
@@ -37048,14 +37048,15 @@ SkadaPerCharDB = {
 							["id"] = 53595,
 							["damage"] = 93866,
 						},
-						["Crusader Strike"] = {
-							["min"] = 4597,
-							["multistrike"] = 4,
-							["hit"] = 18,
-							["totalhits"] = 18,
-							["id"] = 35395,
-							["max"] = 6349,
-							["damage"] = 98010,
+						["Final Verdict"] = {
+							["min"] = 7226,
+							["multistrike"] = 10,
+							["critical"] = 3,
+							["hit"] = 53,
+							["totalhits"] = 56,
+							["id"] = 157048,
+							["max"] = 28645,
+							["damage"] = 915024,
 						},
 						["Execution Sentence"] = {
 							["min"] = 1425,
@@ -37067,6 +37068,15 @@ SkadaPerCharDB = {
 							["max"] = 33279,
 							["damage"] = 265708,
 						},
+						["Crusader Strike"] = {
+							["min"] = 4597,
+							["multistrike"] = 4,
+							["hit"] = 18,
+							["totalhits"] = 18,
+							["id"] = 35395,
+							["max"] = 6349,
+							["damage"] = 98010,
+						},
 						["Hand of Light"] = {
 							["min"] = 165,
 							["hit"] = 274,
@@ -37074,16 +37084,6 @@ SkadaPerCharDB = {
 							["id"] = 96172,
 							["max"] = 12118,
 							["damage"] = 1030693,
-						},
-						["Final Verdict"] = {
-							["min"] = 7226,
-							["multistrike"] = 10,
-							["critical"] = 3,
-							["hit"] = 53,
-							["totalhits"] = 56,
-							["id"] = 157048,
-							["max"] = 28645,
-							["damage"] = 915024,
 						},
 						["Seal of Truth"] = {
 							["min"] = 393,
@@ -37542,9 +37542,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210327.35401,
 									["amount"] = -6473,
+									["spellid"] = 158705,
 									["srcname"] = "Replicating Arcane Aberration",
 									["hp"] = 82951,
-									["spellid"] = 158705,
 								}, -- [1]
 								{
 									["absorb"] = 0,
@@ -37577,9 +37577,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210322.36606,
 									["amount"] = -4496,
+									["spellid"] = 158705,
 									["srcname"] = "Replicating Arcane Aberration",
 									["hp"] = 181035,
-									["spellid"] = 158705,
 								}, -- [6]
 								{
 									["absorb"] = 0,
@@ -37592,9 +37592,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210323.33708,
 									["amount"] = -4560,
+									["spellid"] = 158705,
 									["srcname"] = "Replicating Arcane Aberration",
 									["hp"] = 185761,
-									["spellid"] = 158705,
 								}, -- [8]
 								{
 									["hp"] = 86643,
@@ -37613,9 +37613,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210324.33611,
 									["amount"] = -6524,
+									["spellid"] = 158705,
 									["srcname"] = "Replicating Arcane Aberration",
 									["hp"] = 81215,
-									["spellid"] = 158705,
 								}, -- [11]
 								{
 									["absorb"] = 0,
@@ -37628,16 +37628,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1421210325.32413,
 									["amount"] = -6125,
+									["spellid"] = 158705,
 									["srcname"] = "Replicating Arcane Aberration",
 									["hp"] = 93663,
-									["spellid"] = 158705,
 								}, -- [13]
 								{
 									["ts"] = 1421210326.34814,
 									["amount"] = -6117,
+									["spellid"] = 158705,
 									["srcname"] = "Replicating Arcane Aberration",
 									["hp"] = 87546,
-									["spellid"] = 158705,
 								}, -- [14]
 								{
 									["absorb"] = 0,
@@ -39304,15 +39304,15 @@ SkadaPerCharDB = {
 							["done"] = 253799,
 							["class"] = "PALADIN",
 						},
-						["Radix-Terenas"] = {
-							["taken"] = 145872,
-							["done"] = 0,
-							["class"] = "PALADIN",
-						},
 						["Lacyhunter-Lightbringer"] = {
 							["taken"] = 1220888,
 							["done"] = 310587,
 							["class"] = "HUNTER",
+						},
+						["Dtuco-Quel'Thalas"] = {
+							["taken"] = 311032,
+							["done"] = 168537,
+							["class"] = "DEATHKNIGHT",
 						},
 						["Cholito-Drenden"] = {
 							["taken"] = 1810505,
@@ -39359,10 +39359,10 @@ SkadaPerCharDB = {
 							["done"] = 68055,
 							["class"] = "MAGE",
 						},
-						["Dtuco-Quel'Thalas"] = {
-							["taken"] = 311032,
-							["done"] = 168537,
-							["class"] = "DEATHKNIGHT",
+						["Radix-Terenas"] = {
+							["taken"] = 145872,
+							["done"] = 0,
+							["class"] = "PALADIN",
 						},
 						["Kalebtheboss-Korgath"] = {
 							["taken"] = 3794,
@@ -39724,15 +39724,15 @@ SkadaPerCharDB = {
 							["done"] = 0,
 							["class"] = "DEATHKNIGHT",
 						},
-						["Lacyhunter-Lightbringer"] = {
-							["taken"] = 895371,
-							["done"] = 0,
-							["class"] = "HUNTER",
-						},
 						["Radix-Terenas"] = {
 							["taken"] = 467603,
 							["done"] = 1384094,
 							["class"] = "PALADIN",
+						},
+						["Dtuco-Quel'Thalas"] = {
+							["taken"] = 342011,
+							["done"] = 0,
+							["class"] = "DEATHKNIGHT",
 						},
 						["Rudicarmel-Arathor"] = {
 							["taken"] = 49963,
@@ -39759,10 +39759,10 @@ SkadaPerCharDB = {
 							["done"] = 0,
 							["class"] = "MAGE",
 						},
-						["Dtuco-Quel'Thalas"] = {
-							["taken"] = 342011,
+						["Lacyhunter-Lightbringer"] = {
+							["taken"] = 895371,
 							["done"] = 0,
-							["class"] = "DEATHKNIGHT",
+							["class"] = "HUNTER",
 						},
 						["Kalebtheboss-Korgath"] = {
 							["taken"] = 6235,
@@ -44084,15 +44084,15 @@ SkadaPerCharDB = {
 							["max"] = 11497,
 							["damage"] = 226253,
 						},
-						["Water Elemental: Water Jet"] = {
-							["min"] = 1288,
-							["multistrike"] = 12,
-							["critical"] = 2,
-							["hit"] = 20,
-							["totalhits"] = 22,
-							["id"] = 135029,
-							["max"] = 3279,
-							["damage"] = 42777,
+						["Frostfire Bolt"] = {
+							["min"] = 12998,
+							["multistrike"] = 3,
+							["critical"] = 5,
+							["hit"] = 2,
+							["totalhits"] = 7,
+							["id"] = 44614,
+							["max"] = 30922,
+							["damage"] = 186809,
 						},
 						["Frost Bomb"] = {
 							["min"] = 5203,
@@ -44114,15 +44114,15 @@ SkadaPerCharDB = {
 							["max"] = 7669,
 							["damage"] = 176199,
 						},
-						["Ice Lance"] = {
-							["min"] = 5071,
-							["multistrike"] = 19,
-							["critical"] = 19,
-							["hit"] = 11,
-							["totalhits"] = 30,
-							["id"] = 30455,
-							["max"] = 24741,
-							["damage"] = 542794,
+						["Water Elemental: Water Jet"] = {
+							["min"] = 1288,
+							["multistrike"] = 12,
+							["critical"] = 2,
+							["hit"] = 20,
+							["totalhits"] = 22,
+							["id"] = 135029,
+							["max"] = 3279,
+							["damage"] = 42777,
 						},
 						["Frostbolt"] = {
 							["min"] = 8264,
@@ -44134,15 +44134,15 @@ SkadaPerCharDB = {
 							["max"] = 16530,
 							["damage"] = 361163,
 						},
-						["Frostfire Bolt"] = {
-							["min"] = 12998,
-							["multistrike"] = 3,
-							["critical"] = 5,
-							["hit"] = 2,
-							["totalhits"] = 7,
-							["id"] = 44614,
-							["max"] = 30922,
-							["damage"] = 186809,
+						["Ice Lance"] = {
+							["min"] = 5071,
+							["multistrike"] = 19,
+							["critical"] = 19,
+							["hit"] = 11,
+							["totalhits"] = 30,
+							["id"] = 30455,
+							["max"] = 24741,
+							["damage"] = 542794,
 						},
 						["Frozen Orb"] = {
 							["min"] = 2660,
@@ -44316,15 +44316,13 @@ SkadaPerCharDB = {
 							["max"] = 2931,
 							["damage"] = 16157,
 						},
-						["Final Verdict"] = {
-							["min"] = 14084,
-							["multistrike"] = 1,
-							["critical"] = 1,
-							["hit"] = 10,
-							["totalhits"] = 11,
-							["id"] = 157048,
-							["max"] = 30447,
-							["damage"] = 186223,
+						["Hand of Light"] = {
+							["min"] = 168,
+							["hit"] = 57,
+							["totalhits"] = 57,
+							["id"] = 96172,
+							["max"] = 12118,
+							["damage"] = 217236,
 						},
 						["Execution Sentence"] = {
 							["min"] = 1425,
@@ -44335,6 +44333,16 @@ SkadaPerCharDB = {
 							["max"] = 16740,
 							["damage"] = 38273,
 						},
+						["Final Verdict"] = {
+							["min"] = 14084,
+							["multistrike"] = 1,
+							["critical"] = 1,
+							["hit"] = 10,
+							["totalhits"] = 11,
+							["id"] = 157048,
+							["max"] = 30447,
+							["damage"] = 186223,
+						},
 						["Crusader Strike"] = {
 							["min"] = 4762,
 							["multistrike"] = 1,
@@ -44343,14 +44351,6 @@ SkadaPerCharDB = {
 							["id"] = 35395,
 							["max"] = 4844,
 							["damage"] = 11059,
-						},
-						["Hand of Light"] = {
-							["min"] = 168,
-							["hit"] = 57,
-							["totalhits"] = 57,
-							["id"] = 96172,
-							["max"] = 12118,
-							["damage"] = 217236,
 						},
 						["Seal of Truth"] = {
 							["min"] = 758,
@@ -44577,20 +44577,6 @@ SkadaPerCharDB = {
 					["overhealing"] = 1459865,
 					["name"] = "Exodus",
 					["healingspells"] = {
-						["Divine Aegis"] = {
-							["shielding"] = 0,
-							["id"] = 47753,
-							["healing"] = 352114,
-							["absorbed"] = 0,
-							["min"] = 26,
-							["multistrike"] = 0,
-							["name"] = "Divine Aegis",
-							["critical"] = 0,
-							["max"] = 22288,
-							["overhealing"] = 0,
-							["hits"] = 71,
-							["multistrikes"] = 0,
-						},
 						["Power Word: Shield"] = {
 							["shielding"] = 0,
 							["id"] = 17,
@@ -44617,6 +44603,20 @@ SkadaPerCharDB = {
 							["max"] = 20188,
 							["overhealing"] = 81393,
 							["hits"] = 6,
+							["multistrikes"] = 0,
+						},
+						["Divine Aegis"] = {
+							["shielding"] = 0,
+							["id"] = 47753,
+							["healing"] = 352114,
+							["absorbed"] = 0,
+							["min"] = 26,
+							["multistrike"] = 0,
+							["name"] = "Divine Aegis",
+							["critical"] = 0,
+							["max"] = 22288,
+							["overhealing"] = 0,
+							["hits"] = 71,
 							["multistrikes"] = 0,
 						},
 						["Glyph of Power Word: Shield"] = {
@@ -45607,19 +45607,19 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 12,
 						},
+						["Fire Elemental Totem"] = {
+							["name"] = "Fire Elemental Totem",
+							["active"] = 0,
+							["id"] = 118291,
+							["auratype"] = "BUFF",
+							["uptime"] = 30,
+						},
 						["Stormstrike"] = {
 							["name"] = "Stormstrike",
 							["active"] = 0,
 							["id"] = 17364,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 97,
-						},
-						["Ancestral Swiftness"] = {
-							["name"] = "Ancestral Swiftness",
-							["active"] = 0,
-							["id"] = 16188,
-							["auratype"] = "BUFF",
-							["uptime"] = 26,
 						},
 						["Unleash Wind"] = {
 							["name"] = "Unleash Wind",
@@ -45628,12 +45628,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 20,
 						},
-						["Fire Elemental Totem"] = {
-							["name"] = "Fire Elemental Totem",
+						["Ancestral Swiftness"] = {
+							["name"] = "Ancestral Swiftness",
 							["active"] = 0,
-							["id"] = 118291,
+							["id"] = 16188,
 							["auratype"] = "BUFF",
-							["uptime"] = 30,
+							["uptime"] = 26,
 						},
 						["Maelstrom Weapon"] = {
 							["name"] = "Maelstrom Weapon",
@@ -49476,12 +49476,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 15,
 						},
-						["Defile"] = {
-							["name"] = "Defile",
-							["active"] = 1,
-							["id"] = 152280,
+						["Conversion"] = {
+							["name"] = "Conversion",
+							["active"] = 0,
+							["id"] = 119975,
 							["auratype"] = "BUFF",
-							["uptime"] = 14,
+							["uptime"] = 5,
 						},
 						["Killing Machine"] = {
 							["name"] = "Killing Machine",
@@ -49490,19 +49490,19 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 33,
 						},
-						["Soul Reaper"] = {
-							["name"] = "Soul Reaper",
-							["active"] = 1,
-							["id"] = 130735,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 21,
-						},
-						["Conversion"] = {
-							["name"] = "Conversion",
-							["active"] = 0,
-							["id"] = 119975,
+						["Defile: Defile"] = {
+							["name"] = "Defile: Defile",
+							["active"] = 2,
+							["id"] = 166182,
 							["auratype"] = "BUFF",
-							["uptime"] = 5,
+							["uptime"] = 41,
+						},
+						["Defile"] = {
+							["name"] = "Defile",
+							["active"] = 1,
+							["id"] = 152280,
+							["auratype"] = "BUFF",
+							["uptime"] = 14,
 						},
 						["Blood Plague"] = {
 							["name"] = "Blood Plague",
@@ -49532,12 +49532,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 8,
 						},
-						["Defile: Defile"] = {
-							["name"] = "Defile: Defile",
-							["active"] = 2,
-							["id"] = 166182,
-							["auratype"] = "BUFF",
-							["uptime"] = 41,
+						["Soul Reaper"] = {
+							["name"] = "Soul Reaper",
+							["active"] = 1,
+							["id"] = 130735,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 21,
 						},
 						["Freezing Fog"] = {
 							["name"] = "Freezing Fog",
@@ -49801,12 +49801,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 21,
 						},
-						["Defile: Defile"] = {
-							["name"] = "Defile: Defile",
-							["active"] = 2,
-							["id"] = 166182,
+						["Defile"] = {
+							["name"] = "Defile",
+							["active"] = 0,
+							["id"] = 152280,
 							["auratype"] = "BUFF",
-							["uptime"] = 57,
+							["uptime"] = 20,
 						},
 						["Death Pact"] = {
 							["name"] = "Death Pact",
@@ -49815,12 +49815,12 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["uptime"] = 1,
 						},
-						["Soul Reaper"] = {
-							["name"] = "Soul Reaper",
-							["active"] = 1,
-							["id"] = 130735,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 17,
+						["Defile: Defile"] = {
+							["name"] = "Defile: Defile",
+							["active"] = 2,
+							["id"] = 166182,
+							["auratype"] = "BUFF",
+							["uptime"] = 57,
 						},
 						["Blood Plague"] = {
 							["name"] = "Blood Plague",
@@ -49864,12 +49864,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 13,
 						},
-						["Defile"] = {
-							["name"] = "Defile",
-							["active"] = 0,
-							["id"] = 152280,
-							["auratype"] = "BUFF",
-							["uptime"] = 20,
+						["Soul Reaper"] = {
+							["name"] = "Soul Reaper",
+							["active"] = 1,
+							["id"] = 130735,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 17,
 						},
 					},
 					["multistrikes"] = 0,
@@ -53106,15 +53106,15 @@ SkadaPerCharDB = {
 							["max"] = 11480,
 							["damage"] = 223103,
 						},
-						["Ice Lance"] = {
-							["min"] = 9796,
+						["Water Elemental: Water Jet"] = {
+							["min"] = 1320,
 							["multistrike"] = 11,
-							["critical"] = 15,
-							["hit"] = 2,
-							["totalhits"] = 17,
-							["id"] = 30455,
-							["max"] = 24795,
-							["damage"] = 327852,
+							["critical"] = 3,
+							["hit"] = 12,
+							["totalhits"] = 15,
+							["id"] = 135029,
+							["max"] = 3288,
+							["damage"] = 32399,
 						},
 						["Frost Bomb"] = {
 							["min"] = 5203,
@@ -53136,15 +53136,15 @@ SkadaPerCharDB = {
 							["max"] = 7571,
 							["damage"] = 113836,
 						},
-						["Frostfire Bolt"] = {
-							["min"] = 12742,
-							["multistrike"] = 3,
-							["critical"] = 4,
+						["Ice Lance"] = {
+							["min"] = 9796,
+							["multistrike"] = 11,
+							["critical"] = 15,
 							["hit"] = 2,
-							["totalhits"] = 6,
-							["id"] = 44614,
-							["max"] = 30876,
-							["damage"] = 159299,
+							["totalhits"] = 17,
+							["id"] = 30455,
+							["max"] = 24795,
+							["damage"] = 327852,
 						},
 						["Frostbolt"] = {
 							["min"] = 8264,
@@ -53156,15 +53156,15 @@ SkadaPerCharDB = {
 							["max"] = 16530,
 							["damage"] = 282649,
 						},
-						["Water Elemental: Water Jet"] = {
-							["min"] = 1320,
-							["multistrike"] = 11,
-							["critical"] = 3,
-							["hit"] = 12,
-							["totalhits"] = 15,
-							["id"] = 135029,
-							["max"] = 3288,
-							["damage"] = 32399,
+						["Frostfire Bolt"] = {
+							["min"] = 12742,
+							["multistrike"] = 3,
+							["critical"] = 4,
+							["hit"] = 2,
+							["totalhits"] = 6,
+							["id"] = 44614,
+							["max"] = 30876,
+							["damage"] = 159299,
 						},
 						["Frozen Orb"] = {
 							["min"] = 2660,
@@ -55075,15 +55075,13 @@ SkadaPerCharDB = {
 							["max"] = 1737,
 							["damage"] = 8053,
 						},
-						["Final Verdict"] = {
-							["min"] = 14259,
-							["multistrike"] = 4,
-							["critical"] = 1,
-							["hit"] = 7,
-							["totalhits"] = 8,
-							["id"] = 157048,
-							["max"] = 29296,
-							["damage"] = 156838,
+						["Hand of Light"] = {
+							["min"] = 83,
+							["hit"] = 41,
+							["totalhits"] = 41,
+							["id"] = 96172,
+							["max"] = 11199,
+							["damage"] = 164752,
 						},
 						["Execution Sentence"] = {
 							["min"] = 1711,
@@ -55095,6 +55093,16 @@ SkadaPerCharDB = {
 							["max"] = 16807,
 							["damage"] = 48500,
 						},
+						["Final Verdict"] = {
+							["min"] = 14259,
+							["multistrike"] = 4,
+							["critical"] = 1,
+							["hit"] = 7,
+							["totalhits"] = 8,
+							["id"] = 157048,
+							["max"] = 29296,
+							["damage"] = 156838,
+						},
 						["Crusader Strike"] = {
 							["min"] = 9563,
 							["multistrike"] = 1,
@@ -55103,14 +55111,6 @@ SkadaPerCharDB = {
 							["id"] = 35395,
 							["max"] = 10052,
 							["damage"] = 21123,
-						},
-						["Hand of Light"] = {
-							["min"] = 83,
-							["hit"] = 41,
-							["totalhits"] = 41,
-							["id"] = 96172,
-							["max"] = 11199,
-							["damage"] = 164752,
 						},
 						["Seal of Truth"] = {
 							["min"] = 392,
@@ -58745,15 +58745,15 @@ SkadaPerCharDB = {
 							["max"] = 16652,
 							["damage"] = 104283,
 						},
-						["Ice Lance"] = {
-							["min"] = 6209,
-							["multistrike"] = 6,
-							["critical"] = 16,
-							["hit"] = 3,
-							["totalhits"] = 19,
-							["id"] = 30455,
-							["max"] = 24843,
-							["damage"] = 372862,
+						["Frostfire Bolt"] = {
+							["min"] = 12697,
+							["multistrike"] = 3,
+							["critical"] = 2,
+							["hit"] = 2,
+							["totalhits"] = 4,
+							["id"] = 44614,
+							["max"] = 30657,
+							["damage"] = 98423,
 						},
 						["Icicle"] = {
 							["min"] = 461,
@@ -58773,15 +58773,15 @@ SkadaPerCharDB = {
 							["max"] = 7746,
 							["damage"] = 126942,
 						},
-						["Water Elemental: Water Jet"] = {
-							["min"] = 1286,
-							["multistrike"] = 7,
-							["critical"] = 3,
-							["hit"] = 16,
+						["Ice Lance"] = {
+							["min"] = 6209,
+							["multistrike"] = 6,
+							["critical"] = 16,
+							["hit"] = 3,
 							["totalhits"] = 19,
-							["id"] = 135029,
-							["max"] = 3104,
-							["damage"] = 34692,
+							["id"] = 30455,
+							["max"] = 24843,
+							["damage"] = 372862,
 						},
 						["Frostbolt"] = {
 							["min"] = 8264,
@@ -58793,15 +58793,15 @@ SkadaPerCharDB = {
 							["max"] = 16529,
 							["damage"] = 280999,
 						},
-						["Frostfire Bolt"] = {
-							["min"] = 12697,
-							["multistrike"] = 3,
-							["critical"] = 2,
-							["hit"] = 2,
-							["totalhits"] = 4,
-							["id"] = 44614,
-							["max"] = 30657,
-							["damage"] = 98423,
+						["Water Elemental: Water Jet"] = {
+							["min"] = 1286,
+							["multistrike"] = 7,
+							["critical"] = 3,
+							["hit"] = 16,
+							["totalhits"] = 19,
+							["id"] = 135029,
+							["max"] = 3104,
+							["damage"] = 34692,
 						},
 						["Frozen Orb"] = {
 							["min"] = 2660,
@@ -60300,6 +60300,16 @@ SkadaPerCharDB = {
 							["max"] = 9218,
 							["damage"] = 110141,
 						},
+						["Final Verdict"] = {
+							["min"] = 14387,
+							["multistrike"] = 1,
+							["critical"] = 3,
+							["hit"] = 5,
+							["totalhits"] = 8,
+							["id"] = 157048,
+							["max"] = 28607,
+							["damage"] = 162590,
+						},
 						["Hand of Light"] = {
 							["min"] = 1059,
 							["hit"] = 25,
@@ -60316,16 +60326,6 @@ SkadaPerCharDB = {
 							["id"] = 35395,
 							["max"] = 9783,
 							["damage"] = 19861,
-						},
-						["Final Verdict"] = {
-							["min"] = 14387,
-							["multistrike"] = 1,
-							["critical"] = 3,
-							["hit"] = 5,
-							["totalhits"] = 8,
-							["id"] = 157048,
-							["max"] = 28607,
-							["damage"] = 162590,
 						},
 						["Seal of Truth"] = {
 							["min"] = 760,
@@ -61311,12 +61311,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 19,
 						},
-						["Berserker Rage"] = {
-							["name"] = "Berserker Rage",
+						["Mortal Wounds"] = {
+							["name"] = "Mortal Wounds",
 							["active"] = 0,
-							["id"] = 18499,
-							["auratype"] = "BUFF",
-							["uptime"] = 18,
+							["id"] = 115804,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 52,
 						},
 						["Bloodsurge"] = {
 							["name"] = "Bloodsurge",
@@ -61332,12 +61332,12 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["uptime"] = 22,
 						},
-						["Mass Spell Reflection"] = {
-							["name"] = "Mass Spell Reflection",
+						["Berserker Rage"] = {
+							["name"] = "Berserker Rage",
 							["active"] = 0,
-							["id"] = 114028,
+							["id"] = 18499,
 							["auratype"] = "BUFF",
-							["uptime"] = 5,
+							["uptime"] = 18,
 						},
 						["Inspiring Presence"] = {
 							["name"] = "Inspiring Presence",
@@ -61367,12 +61367,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 11,
 						},
-						["Mortal Wounds"] = {
-							["name"] = "Mortal Wounds",
+						["Mass Spell Reflection"] = {
+							["name"] = "Mass Spell Reflection",
 							["active"] = 0,
-							["id"] = 115804,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 52,
+							["id"] = 114028,
+							["auratype"] = "BUFF",
+							["uptime"] = 5,
 						},
 						["Mark of the Thunderlord"] = {
 							["name"] = "Mark of the Thunderlord",
@@ -65943,6 +65943,15 @@ SkadaPerCharDB = {
 							["max"] = 1578,
 							["damage"] = 11938,
 						},
+						["Final Verdict"] = {
+							["min"] = 14677,
+							["critical"] = 1,
+							["hit"] = 1,
+							["totalhits"] = 2,
+							["id"] = 157048,
+							["max"] = 28897,
+							["damage"] = 43574,
+						},
 						["Hand of Light"] = {
 							["min"] = 3714,
 							["hit"] = 4,
@@ -65958,15 +65967,6 @@ SkadaPerCharDB = {
 							["id"] = 35395,
 							["max"] = 9716,
 							["damage"] = 9716,
-						},
-						["Final Verdict"] = {
-							["min"] = 14677,
-							["critical"] = 1,
-							["hit"] = 1,
-							["totalhits"] = 2,
-							["id"] = 157048,
-							["max"] = 28897,
-							["damage"] = 43574,
 						},
 						["Attack"] = {
 							["min"] = 4452,
@@ -66335,14 +66335,14 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["damage"] = 226072,
 					["damagespells"] = {
-						["Water Elemental: Water Jet"] = {
-							["min"] = 1297,
-							["multistrike"] = 3,
-							["hit"] = 5,
-							["totalhits"] = 5,
-							["id"] = 135029,
-							["max"] = 1587,
-							["damage"] = 8741,
+						["Ice Lance"] = {
+							["min"] = 20760,
+							["multistrike"] = 1,
+							["critical"] = 1,
+							["totalhits"] = 1,
+							["id"] = 30455,
+							["max"] = 20760,
+							["damage"] = 23858,
 						},
 						["Frost Bomb"] = {
 							["min"] = 8326,
@@ -66362,15 +66362,14 @@ SkadaPerCharDB = {
 							["max"] = 7559,
 							["damage"] = 32277,
 						},
-						["Frostfire Bolt"] = {
-							["min"] = 15086,
-							["multistrike"] = 2,
-							["critical"] = 1,
-							["hit"] = 1,
-							["totalhits"] = 2,
-							["id"] = 44614,
-							["max"] = 30485,
-							["damage"] = 53210,
+						["Water Elemental: Water Jet"] = {
+							["min"] = 1297,
+							["multistrike"] = 3,
+							["hit"] = 5,
+							["totalhits"] = 5,
+							["id"] = 135029,
+							["max"] = 1587,
+							["damage"] = 8741,
 						},
 						["Frostbolt"] = {
 							["min"] = 8264,
@@ -66389,14 +66388,15 @@ SkadaPerCharDB = {
 							["max"] = 11334,
 							["damage"] = 32716,
 						},
-						["Ice Lance"] = {
-							["min"] = 20760,
-							["multistrike"] = 1,
+						["Frostfire Bolt"] = {
+							["min"] = 15086,
+							["multistrike"] = 2,
 							["critical"] = 1,
-							["totalhits"] = 1,
-							["id"] = 30455,
-							["max"] = 20760,
-							["damage"] = 23858,
+							["hit"] = 1,
+							["totalhits"] = 2,
+							["id"] = 44614,
+							["max"] = 30485,
+							["damage"] = 53210,
 						},
 					},
 					["damagetaken"] = 13456,
