@@ -1,8 +1,18 @@
 
 TradeSkillMaster_AuctioningDB = {
-	["profiles"] = {
-		["Default"] = {
+	["factionrealm"] = {
+		["Alliance - Sisters of Elune"] = {
+			["player"] = {
+				["Bracnar"] = true,
+				["Clothgar"] = true,
+				["Uldaris"] = true,
+			},
 		},
+	},
+	["profileKeys"] = {
+		["Clothgar - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
 	},
 	["global"] = {
 		["optionsTreeStatus"] = {
@@ -13,22 +23,14 @@ TradeSkillMaster_AuctioningDB = {
 				[3] = true,
 			},
 			["scrollvalue"] = 0,
-			["treesizable"] = true,
-			["selected"] = 1,
+			["fullwidth"] = 945.000610351563,
+			["selected"] = "3Sell enchants",
 			["treewidth"] = 175,
-			["fullwidth"] = 782.999938964844,
+			["treesizable"] = true,
 		},
 	},
-	["profileKeys"] = {
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-	},
-	["factionrealm"] = {
-		["Alliance - Sisters of Elune"] = {
-			["player"] = {
-				["Bracnar"] = true,
-				["Clothgar"] = true,
-			},
+	["profiles"] = {
+		["Default"] = {
 		},
 	},
 }

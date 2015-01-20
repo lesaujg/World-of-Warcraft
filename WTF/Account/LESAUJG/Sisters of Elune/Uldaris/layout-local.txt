@@ -6,6 +6,13 @@ X: -136
 Y: -115
 W: 32
 H: 32
+Frame: TSMMainFrame1
+FrameLevel: 56
+Anchor: TOP
+X: -140
+Y: -79
+W: 985
+H: 679
 Frame: _NPCScanButton
 FrameLevel: 1
 Anchor: BOTTOM
@@ -13,3 +20,10 @@ X: 0
 Y: 128
 W: 150
 H: 42
+Frame: TSMCraftingTradeSkillFrame
+FrameLevel: 40
+Anchor: TOP
+X: -296
+Y: -101
+W: 450
+H: 500

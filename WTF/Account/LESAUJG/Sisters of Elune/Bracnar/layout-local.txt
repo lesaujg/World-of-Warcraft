@@ -1,11 +1,4 @@
 Version: 1
-Frame: ARKINV_Rules
-FrameLevel: 13
-Anchor: CENTER
-X: -305
-Y: 30
-W: 600
-H: 600
 Frame: DBMMinimapButton
 FrameLevel: 3
 Anchor: TOPRIGHT
@@ -14,10 +7,10 @@ Y: -115
 W: 32
 H: 32
 Frame: TSMMainFrame1
-FrameLevel: 24
-Anchor: TOPLEFT
-X: -21
-Y: 11
+FrameLevel: 32
+Anchor: CENTER
+X: -3
+Y: 23
 W: 985
 H: 679
 Frame: _NPCScanButton
@@ -27,3 +20,10 @@ X: 0
 Y: 128
 W: 150
 H: 42
+Frame: TSMCraftingTradeSkillFrame
+FrameLevel: 57
+Anchor: TOP
+X: -202
+Y: -86
+W: 450
+H: 500

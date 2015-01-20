@@ -1,8 +1,9 @@
 
 TradeSkillMaster_RestockerDB = {
 	["profileKeys"] = {
-		["Bracnar - Sisters of Elune"] = "Default",
 		["Clothgar - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
 	},
 	["global"] = {
 		["TreeStatusOptions"] = {
@@ -11,10 +12,10 @@ TradeSkillMaster_RestockerDB = {
 				["3Restock enchant mats"] = true,
 			},
 			["scrollvalue"] = 0,
-			["fullwidth"] = 782.999877929688,
 			["treesizable"] = true,
-			["treewidth"] = 175,
 			["selected"] = "3Restock enchant mats",
+			["treewidth"] = 175,
+			["fullwidth"] = 782.999877929688,
 		},
 		["framePosition"] = {
 			229.000045776367, -- [1]
