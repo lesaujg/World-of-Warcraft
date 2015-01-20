@@ -112,10 +112,10 @@ TradeSkillMaster_ShoppingDB = {
 			["item:11174:0:0:0:0:0:0"] = "Lesser Nether Essence",
 			["item:52195:0:0:0:0:0:0"] = "Amberjewel",
 			["item:22445:0:0:0:0:0:0"] = "Arcane Dust",
-			["item:11175:0:0:0:0:0:0"] = "Greater Nether Essence",
+			["item:52194:0:0:0:0:0:0"] = "Demonseye",
 			["item:43116:0:0:0:0:0:0"] = "Lion's Ink",
 			["item:12800:0:0:0:0:0:0"] = "Azerothian Diamond",
-			["item:52194:0:0:0:0:0:0"] = "Demonseye",
+			["item:11175:0:0:0:0:0:0"] = "Greater Nether Essence",
 			["item:20725:0:0:0:0:0:0"] = "Nexus Crystal",
 			["item:76136:0:0:0:0:0:0"] = "Pandarian Garnet",
 			["item:36929:0:0:0:0:0:0"] = "Huge Citrine",
@@ -129,7 +129,7 @@ TradeSkillMaster_ShoppingDB = {
 			["item:115504:0:0:0:0:0:0"] = "Fractured Temporal Crystal",
 			["item:36860:0:0:0:0:0:0"] = "Eternal Fire",
 			["item:11084:0:0:0:0:0:0"] = "Large Glimmering Shard",
-			["item:22452:0:0:0:0:0:0"] = "Primal Earth",
+			["item:52721:0:0:0:0:0:0"] = "Heavenly Shard",
 			["item:61978:0:0:0:0:0:0"] = "Blackfallow Ink",
 			["item:61979:0:0:0:0:0:0"] = "Ashen Pigment",
 			["item:43105:0:0:0:0:0:0"] = "Indigo Pigment",
@@ -140,10 +140,10 @@ TradeSkillMaster_ShoppingDB = {
 			["item:11134:0:0:0:0:0:0"] = "Lesser Mystic Essence",
 			["item:23107:0:0:0:0:0:0"] = "Shadow Draenite",
 			["item:37701:0:0:0:0:0:0"] = "Crystallized Earth",
-			["item:39151:0:0:0:0:0:0"] = "Alabaster Pigment",
+			["item:43122:0:0:0:0:0:0"] = "Shimmering Ink",
 			["item:10938:0:0:0:0:0:0"] = "Lesser Magic Essence",
 			["item:16203:0:0:0:0:0:0"] = "Greater Eternal Essence",
-			["item:37705:0:0:0:0:0:0"] = "Crystallized Water",
+			["item:39151:0:0:0:0:0:0"] = "Alabaster Pigment",
 			["item:36927:0:0:0:0:0:0"] = "Twilight Opal",
 			["item:43126:0:0:0:0:0:0"] = "Ink of the Sea",
 			["item:43121:0:0:0:0:0:0"] = "Fiery Ink",
@@ -154,7 +154,7 @@ TradeSkillMaster_ShoppingDB = {
 			["item:10998:0:0:0:0:0:0"] = "Lesser Astral Essence",
 			["item:61981:0:0:0:0:0:0"] = "Inferno Ink",
 			["item:34055:0:0:0:0:0:0"] = "Greater Cosmic Essence",
-			["item:43122:0:0:0:0:0:0"] = "Shimmering Ink",
+			["item:37705:0:0:0:0:0:0"] = "Crystallized Water",
 			["item:43118:0:0:0:0:0:0"] = "Jadefire Ink",
 			["item:16204:0:0:0:0:0:0"] = "Illusion Dust",
 			["item:76133:0:0:0:0:0:0"] = "Lapis Lazuli",
@@ -164,9 +164,9 @@ TradeSkillMaster_ShoppingDB = {
 			["item:39342:0:0:0:0:0:0"] = "Nether Pigment",
 			["item:74247:0:0:0:0:0:0"] = "Ethereal Shard",
 			["item:76141:0:0:0:0:0:0"] = "Imperial Amethyst",
-			["item:52721:0:0:0:0:0:0"] = "Heavenly Shard",
-			["item:39469:0:0:0:0:0:0"] = "Moonglow Ink",
 			["item:43115:0:0:0:0:0:0"] = "Hunter's Ink",
+			["item:22452:0:0:0:0:0:0"] = "Primal Earth",
+			["item:39469:0:0:0:0:0:0"] = "Moonglow Ink",
 			["item:23117:0:0:0:0:0:0"] = "Azure Moonstone",
 			["item:37703:0:0:0:0:0:0"] = "Crystallized Shadow",
 			["item:43119:0:0:0:0:0:0"] = "Royal Ink",
@@ -195,8 +195,11 @@ TradeSkillMaster_ShoppingDB = {
 			["fullwidth"] = 782.999877929688,
 		},
 		["previousSearches"] = {
-			"Sorcerous Earth/exact", -- [1]
-			"Temporal Crystal/exact", -- [2]
+			"temporal crystal/exact", -- [1]
+			"tem<", -- [2]
+			"Alchemical Catalyst/exact", -- [3]
+			"Luminous Shard/exact", -- [4]
+			"Sorcerous Earth/exact", -- [5]
 		},
 		["sidebarBtn"] = 2,
 	},

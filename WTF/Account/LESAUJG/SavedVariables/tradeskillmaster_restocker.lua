@@ -17,8 +17,8 @@ TradeSkillMaster_RestockerDB = {
 			["selected"] = "3Restock enchant mats",
 		},
 		["framePosition"] = {
-			239, -- [1]
-			177.999893188477, -- [2]
+			229.000045776367, -- [1]
+			178.999877929688, -- [2]
 		},
 	},
 }

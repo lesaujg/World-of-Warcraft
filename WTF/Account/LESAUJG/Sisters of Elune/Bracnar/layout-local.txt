@@ -14,10 +14,10 @@ Y: -115
 W: 32
 H: 32
 Frame: TSMMainFrame1
-FrameLevel: 25
+FrameLevel: 24
 Anchor: TOPLEFT
-X: -13
-Y: 34
+X: -21
+Y: 11
 W: 985
 H: 679
 Frame: _NPCScanButton
