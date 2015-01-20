@@ -1,12 +1,12 @@
 ## Interface: 60000
 ## Title: LiteMount
-## Version: 6.0.11
+## Version: 6.0.12
 ## Author: Xodiv of Proudmoore
 ## Email: mib@post.com
 ## OptionalDeps: Blizzard_PetBattleUI
 ## SavedVariables: LM_UseGlobalOptions, LM_GlobalOptionsDB
 ## SavedVariablesPerCharacter: LM_OptionsDB
-## X-Curse-Packaged-Version: 6.0.11
+## X-Curse-Packaged-Version: 6.0.12
 ## X-Curse-Project-Name: LiteMount
 ## X-Curse-Project-ID: litemount
 ## X-Curse-Repository-ID: wow/litemount/mainline

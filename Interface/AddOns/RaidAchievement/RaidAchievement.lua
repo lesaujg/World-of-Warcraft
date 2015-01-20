@@ -6,7 +6,7 @@ if GetLocale()=="deDE" or GetLocale()=="ruRU" or GetLocale()=="zhTW" or GetLocal
 end
 
 
-	raversion=6.011
+	raversion=6.012
 	local raverstiptext="alpha"
 	if string.len(raversion)==6 then
 		raverstiptext="beta"

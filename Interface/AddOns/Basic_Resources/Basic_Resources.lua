@@ -13,6 +13,8 @@ elseif c == 'MONK' then
 	spellGCD = 100780 -- Jab
 elseif c == 'WARRIOR' then
 	spellGCD = 5308 -- Execute
+elseif c == 'HUNTER' then
+	spellGCD = 3044 -- Arcane Shot
 else
     DisableAddOn('Basic_Resources')
     return
@@ -265,6 +267,9 @@ local function UpdatePowerBar()
 		elseif UnitPowerType('player') == 1 then
 			powerBar:SetBackdropColor(0.7, 0, 0, 1)
 			powerBar:SetBackdropBorderColor(0.8, 0.1, 0.1, 1)
+		elseif UnitPowerType('player') == 2 then
+			powerBar:SetBackdropColor(0.5, 0.2, 0.1, 1)
+			powerBar:SetBackdropBorderColor(0.6, 0.3, 0.2, 1)
 		else
 			powerBar:SetBackdropColor(0, 0, 0.7, 1)
 			powerBar:SetBackdropBorderColor(0.1, 0.1, 0.8, 1)

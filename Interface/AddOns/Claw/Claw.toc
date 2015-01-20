@@ -3,5 +3,5 @@
 ## Notes: Claw is an addon for cat and bear druids that simplifies gameplay and maximizes DPS by doing all the decision making for you
 ## Author: Jpapertowels @ www.wowinterface.com & curse.com or Spy#1955 @ BattleTag
 ## SavedVariablesPerCharacter: Claw
-## Version: 6.0.3-10
+## Version: 6.0.3-11
 Claw.lua

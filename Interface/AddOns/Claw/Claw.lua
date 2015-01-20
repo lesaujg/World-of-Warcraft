@@ -27,6 +27,7 @@ local function InitializeVariables()
 		glow_main = true,
 		glow_cooldown = true,
 		glow_interrupt = false,
+		glow_blizzard = false,
 		boss_only = false,
 		hide_spec = 0,
 		interrupt = false,
@@ -44,8 +45,8 @@ local function InitializeVariables()
 	end
 end
 
-local events, abilities, glows = {}, {}, {}
-local me, abilityTimer, currentTime, currentSpec, targetMode = 0, 0, 0, 0, 0
+local events, var, abilities, ability, glows = {}, {}, {}, {}, {}
+local me, abilityTimer, currentSpec, targetMode = 0, 0, 0, 0
 
 local clawPanel = CreateFrame('Frame', 'clawPanel', UIParent)
 clawPanel:SetPoint('CENTER', 0, -169)
@@ -120,11 +121,6 @@ clawInterruptPanel.border:SetTexture('Interface\\AddOns\\Claw\\border.blp')
 clawInterruptPanel.cast = CreateFrame('Cooldown', nil, clawInterruptPanel, 'CooldownFrameTemplate')
 clawInterruptPanel.cast:SetAllPoints(clawInterruptPanel)
 
-local function GetGCD()
-	local startTime, duration = GetSpellCooldown(768)
-	return duration - (currentTime - startTime)
-end
-
 local Ability = {}
 Ability.__index = Ability
 
@@ -145,7 +141,7 @@ function Ability.add(spellId, buff, playerCast, spellId2)
 end
 
 function Ability:ready(seconds)
-	return self:cooldown() <= max(seconds or 0, GetGCD())
+	return self:cooldown() <= max(seconds or 0, var.gcd)
 end
 
 function Ability:remains()
@@ -153,7 +149,7 @@ function Ability:remains()
 	for i = 1, 40 do
 		_, _, _, _, _, _, expires, _, _, _, id = UnitAura(self.auraTarget, i, self.auraFilter)
 		if id == self.spellId or id == self.spellId2 then
-			return expires - currentTime
+			return expires - var.time
 		end
 	end
 	return 0
@@ -167,7 +163,7 @@ function Ability:up()
 			return true
 		end
 	end
-	if self.removed == currentTime then
+	if self.removed == var.time then
 		return true
 	end
 end
@@ -178,7 +174,7 @@ end
 
 function Ability:cooldown()
 	local startTime, duration = GetSpellCooldown(self.spellId)
-	return duration - (currentTime - startTime)
+	return duration - (var.time - startTime)
 end
 
 function Ability:stack()
@@ -256,30 +252,52 @@ local DraenicAgility = Ability.add(156423, true, true)
 -- Overpowered Racials
 local Shadowmeld = Ability.add(58984, true, true)
 
-local abilityMain, lastAbilityMain, abilityPrevious, abilityCD, abilityInterrupt
-
 Rake.targets, Rip.targets = {}, {}
 
-local function ComboPoints()
-	return UnitPower('player', 4)
+local Target = {
+	boss = false,
+	guid = 0,
+	healthArray = {},
+	hostile = false
+}
+
+local function UpdateVars()
+	local _, start, duration, hp
+	ability.last_main = ability.main
+	ability.last_cd = ability.cd
+	var.time = GetTime()
+	start, duration = GetSpellCooldown(768)
+	var.gcd = start > 0 and duration - (var.time - start) or 0
+	var.combo_points = UnitPower('player', 4)
+	var.energy = UnitPower('player', 3)
+	var.energy_max = UnitPowerMax('player', 3)
+	var.energy_time_to_max = (var.energy_max - var.energy) / GetPowerRegen()
+	var.rage = UnitPower('player', 1)
+	Target.healthArray[#Target.healthArray + 1] = UnitHealth('target')
+	table.remove(Target.healthArray, 1)
+	Target.healthPercentage = Target.guid == 0 and 100 or UnitHealth('target') / UnitHealthMax('target') * 100
+	hp = Target.healthArray[1] - Target.healthArray[#Target.healthArray]
+	Target.timeToDie = hp > 0 and Target.healthArray[#Target.healthArray] / (hp / 3) or 600
 end
 
-local EnergyRegen = GetPowerRegen
+local function ComboPoints()
+	return var.combo_points
+end
 
 local function EnergyMax()
-	return UnitPowerMax('player', 3)
+	return var.energy_max
 end
 
 local function Energy()
-	return UnitPower('player', 3)
+	return var.energy
 end
 
 local function EnergyTimeToMax()
-	return (EnergyMax() - Energy()) / EnergyRegen()
+	return var.energy_time_to_max
 end
 
 local function Rage()
-	return BearForm:up() and UnitPower('player') or 0
+	return var.rage
 end
 
 local function HealthPercentage()
@@ -294,28 +312,6 @@ local function Enemies()
 end
 
 local InCombat = InCombatLockdown
-
-local Target = {
-	boss = false,
-	guid = 0,
-	healthArray = {},
-	hostile = false
-}
-
-Target.healthPercentage = function()
-	if Target.guid == 0 then
-		return 100
-	end
-	return UnitHealth('target') / UnitHealthMax('target') * 100
-end
-
-Target.timeToDie = function()
-	local hp = Target.healthArray[1] - Target.healthArray[#Target.healthArray]
-	if hp > 0 then
-		return UnitHealth('target') / (hp / 3)
-	end
-	return 600
-end
 
 local function BleedMultiplier()
 	local multiplier = 1 + GetMasteryEffect() / 100
@@ -353,7 +349,7 @@ end
 
 function DraenicAgility:cooldown()
 	local startTime, duration = GetItemCooldown(109217)
-	return duration - (currentTime - startTime)
+	return duration - (var.time - startTime)
 end
 
 local function StatsBuffActive()
@@ -361,29 +357,29 @@ local function StatsBuffActive()
 	for i = 1, 40 do
 		_, _, _, _, _, duration, expires, _, _, _, id = UnitBuff('player', i)
 		if id == 1126 or id == 20217 or id == 90363 or id == 117666 or id == 159988 or id == 160017 or id == 160077 then
-			return duration == 0 or expires - currentTime > 10
+			return duration == 0 or expires - var.time > 10
 		end
 	end
 end
 
 local function UseCooldown(overwrite)
-	return Claw.cooldown and (not Claw.boss_only or Target.boss) and (not abilityCD or overwrite)
+	return Claw.cooldown and (not Claw.boss_only or Target.boss) and (not ability.cd or overwrite)
 end
 
 local function DetermineAbilityCat()
 	if UseCooldown() then
-		if ForceOfNature.known and ForceOfNature:ready() and Prowl:down() and (ForceOfNature:charges() == 3 or Target.timeToDie() < 20) then
-			abilityCD = ForceOfNature
+		if ForceOfNature.known and ForceOfNature:ready() and Prowl:down() and (ForceOfNature:charges() == 3 or Target.timeToDie < 20) then
+			ability.cd = ForceOfNature
 		elseif KingOfTheJungle.known and KingOfTheJungle:ready() and ComboPoints() < 5 and Prowl:down() and Shadowmeld:down() and Berserk:ready(2) then
-			abilityCD = KingOfTheJungle
+			ability.cd = KingOfTheJungle
 		elseif TigersFury:ready() and EnergyMax() - Energy() >= (OmenOfClarity:up() and 80 or 60) then
-			abilityCD = Claw.tigersfury_berserk and Berserk:ready() and Berserk or TigersFury
+			ability.cd = Claw.tigersfury_berserk and Berserk:ready() and Berserk or TigersFury
 		elseif Berserk:ready() and TigersFury:up() then
-			abilityCD = Berserk
+			ability.cd = Berserk
 		elseif ImprovedRake.known and Shadowmeld.known and Shadowmeld:ready() and Rake:remains() < 4.5 and (Bloodtalons:up() or not Bloodtalons.known) and (KingOfTheJungle:cooldown() > 15 or not KingOfTheJungle.known) then
-			abilityCD = Shadowmeld
-		elseif Claw.pot and DraenicAgility:ready() and Target.boss and ((Berserk:up() and Target.healthPercentage() < 25) or Target.timeToDie() < 40) then
-			abilityCD = DraenicAgility
+			ability.cd = Shadowmeld
+		elseif Claw.pot and DraenicAgility:ready() and Target.boss and ((Berserk:up() and Target.healthPercentage < 25) or Target.timeToDie < 40) then
+			ability.cd = DraenicAgility
 		end
 	end
 	if Claw.mark_of_the_wild and not StatsBuffActive() then
@@ -401,7 +397,7 @@ local function DetermineAbilityCat()
 	end
 	if Prowl:up() or Shadowmeld:up() then
 		return Rake
-	elseif ComboPoints() > 0 and Rip:up() and Rip:remains() < 3 and Target.healthPercentage() < 25 then
+	elseif ComboPoints() > 0 and Rip:up() and Rip:remains() < 3 and Target.healthPercentage < 25 then
 		return FerociousBite
 	elseif Bloodtalons.known and PredatorySwiftness:up() and (ComboPoints() > 3 or PredatorySwiftness:remains() < 1.7) then
 		return HealingTouch
@@ -409,7 +405,7 @@ local function DetermineAbilityCat()
 		if Bloodtalons.known and PredatorySwiftness:up() and ComboPoints() > 1 then
 			return HealingTouch
 		elseif ComboPoints() < 5 and SavageRoar:up() then
-			if Rake:remains() < 3 and Target.timeToDie() > Rake:remains() + 7 then
+			if Rake:remains() < 3 and Target.timeToDie > Rake:remains() + 7 then
 				return Rake
 			end
 			return Enemies() > 2 and Swipe or Shred
@@ -420,37 +416,37 @@ local function DetermineAbilityCat()
 	elseif ComboPoints() == 5 then
 		if not Bloodtalons.known and Claw.single_thrash and Thrash:remains() < 4.5 and OmenOfClarity:up() and KingOfTheJungle:down() then
 			return Thrash
-		elseif Target.healthPercentage() < 25 and Rip:up() and Energy() >= (Berserk:up() and 37.5 or 50) then
+		elseif Target.healthPercentage < 25 and Rip:up() and Energy() >= (Berserk:up() and 37.5 or 50) then
 			return FerociousBite
-		elseif (Rip:remains() < 3 or (Rip:remains() < 7.2 and (Rip.newMultiplier() > Rip:multiplier() or (Rip.newMultiplier() == Rip:multiplier() and EnergyTimeToMax() < 1.2)))) and Target.timeToDie() > Rip:remains() + 7 then
+		elseif (Rip:remains() < 3 or (Rip:remains() < 7.2 and (Rip.newMultiplier() > Rip:multiplier() or (Rip.newMultiplier() == Rip:multiplier() and EnergyTimeToMax() < 1.2)))) and Target.timeToDie > Rip:remains() + 7 then
 			return Rip
-		elseif not GlyphOfSavagery.known and SavageRoar:remains() < 12.6 and SavageRoar:remains() < Target.timeToDie() and (EnergyTimeToMax() < 1.2 or Berserk:up() or Rake:down() or TigersFury:ready(3)) and (KingOfTheJungle:down() or not GlyphOfSavageRoar.known) then
+		elseif not GlyphOfSavagery.known and SavageRoar:remains() < 12.6 and SavageRoar:remains() < Target.timeToDie and (EnergyTimeToMax() < 1.2 or Berserk:up() or Rake:down() or TigersFury:ready(3)) and (KingOfTheJungle:down() or not GlyphOfSavageRoar.known) then
 			return SavageRoar
 		elseif EnergyTimeToMax() < 1.2 or Berserk:up() or Rake:down() or (TigersFury:ready(3) and Energy() >= 50) then
 			return FerociousBite
 		end
 	end
 	if UseCooldown(true) and KingOfTheJungle.known and KingOfTheJungle:ready() and ComboPoints() < 5 and Berserk:ready(12) and EnergyTimeToMax() < 1.2 then
-		abilityCD = KingOfTheJungle
+		ability.cd = KingOfTheJungle
 	end
-	if ComboPoints() < 5 and Target.timeToDie() > Rake:remains() + 7 then
+	if ComboPoints() < 5 and Target.timeToDie > Rake:remains() + 7 then
 		if Bloodtalons.known and Rake:remains() < 4.5 and (Bloodtalons:up() or PredatorySwiftness:down() or Rake.newMultiplier() > Rake:multiplier()) then
 			return Rake
 		elseif not Bloodtalons.known and (Rake:remains() < 3 or (Rake:remains() < 4.5 and Rake.newMultiplier() > Rake:multiplier())) then
 			return Rake
 		end
 	end
-	if Enemies() > 1 or Target.timeToDie() > Thrash:remains() + 7 then
+	if Enemies() > 2 or Target.timeToDie > Thrash:remains() + 7 then
 		if Bloodtalons.known and Claw.single_thrash and ComboPoints() == 5 and Thrash:remains() < 4.5 and OmenOfClarity:up() and KingOfTheJungle:down() and Rip:remains() > 6 then
 			return Thrash
-		elseif Enemies() > 1 and Thrash:remains() < 4.5 then
+		elseif Enemies() > 2 and Thrash:remains() < 4.5 then
 			return Thrash
 		end
 	end
 	if ComboPoints() < 5 then
-		if LunarInspiration.known and Moonfire:remains() < 4.2 and Target.timeToDie() > Moonfire:remains() + 7 then
+		if LunarInspiration.known and Moonfire:remains() < 4.2 and Target.timeToDie > Moonfire:remains() + 7 then
 			return Moonfire
-		elseif Enemies() == 1 and Rake.newMultiplier() > Rake:multiplier() and Target.timeToDie() > Rake:remains() + 4 then
+		elseif Enemies() == 1 and Rake.newMultiplier() > Rake:multiplier() and Target.timeToDie > Rake:remains() + 4 then
 			return Rake
 		end
 		return Enemies() > 2 and Swipe or Shred
@@ -460,13 +456,13 @@ end
 local function DetermineAbilityBear()
 	if UseCooldown() then
 		if Claw.pot and DraenicAgility:ready() and Target.boss and BerserkBear:up() then
-			abilityCD = DraenicAgility
+			ability.cd = DraenicAgility
 		elseif Rage() >= 20 and Maul:ready() then
-			abilityCD = Maul
+			ability.cd = Maul
 		elseif Enemies() < 5 and BerserkBear:ready() and SonOfUrsoc:down() and ThrashBear:remains() > 10 and (Lacerate:stack() == 3 or Enemies() > 1) and Lacerate:remains() > 10 then
-			abilityCD = BerserkBear
+			ability.cd = BerserkBear
 		elseif Enemies() == 1 and SonOfUrsoc.known and SonOfUrsoc:ready() and BerserkBear:down() and Berserk:cooldown() > 30 and ThrashBear:remains() > 10 and Lacerate:stack() == 3 and Lacerate:remains() > 10 then
-			abilityCD = SonOfUrsoc
+			ability.cd = SonOfUrsoc
 		end
 	end
 	if Claw.mark_of_the_wild and not (InCombat() or StatsBuffActive()) then
@@ -492,27 +488,27 @@ end
 local function DetermineAbilityBearSurvival()
 	if UseCooldown() then
 		if Barkskin:ready() then
-			abilityCD = Barkskin
+			ability.cd = Barkskin
 		elseif HealthPercentage() < 20 and SurvivalInstincts:ready() then
-			abilityCD = SurvivalInstincts
+			ability.cd = SurvivalInstincts
 		elseif Rage() >= 60 and SavageDefense:ready() and SavageDefense:down() then
-			abilityCD = SavageDefense
+			ability.cd = SavageDefense
 		elseif HealthPercentage() < 40 and Rage() >= 30 and FrenziedRegeneration:ready() then
-			abilityCD = FrenziedRegeneration
+			ability.cd = FrenziedRegeneration
 		elseif Rage() >= 20 and Maul:ready() and (Rage() >= 80 or ToothAndClaw:up()) then
-			abilityCD = Maul
+			ability.cd = Maul
 		elseif Enemies() < 5 and BerserkBear:ready() and SonOfUrsoc:down() and ThrashBear:remains() > 10 and (Lacerate:stack() == 3 or Enemies() > 1) and Lacerate:remains() > 10 then
-			abilityCD = BerserkBear
+			ability.cd = BerserkBear
 		elseif Enemies() == 1 and SonOfUrsoc.known and SonOfUrsoc:ready() and BerserkBear:down() and Berserk:cooldown() > 30 and ThrashBear:remains() > 10 and Lacerate:stack() == 3 and Lacerate:remains() > 10 then
-			abilityCD = SonOfUrsoc
+			ability.cd = SonOfUrsoc
 		elseif Renewal.known and Renewal:ready() and HealthPercentage() < 30 then
-			abilityCD = Renewal
+			ability.cd = Renewal
 		elseif HeartOfTheWild.known and HealthPercentage() < 80 and HeartOfTheWild:ready() then
-			abilityCD = HeartOfTheWild
+			ability.cd = HeartOfTheWild
 		elseif NaturesVigil.known and HealthPercentage() < 50 and NaturesVigil:ready() then
-			abilityCD = NaturesVigil
+			ability.cd = NaturesVigil
 		elseif CenarionWard.known and HealthPercentage() < 70 and CenarionWard:ready() then
-			abilityCD = CenarionWard
+			ability.cd = CenarionWard
 		end
 	end
 	if Claw.mark_of_the_wild and not (InCombat() or StatsBuffActive()) then
@@ -542,8 +538,7 @@ local function DetermineAbilityBearSurvival()
 end
 
 local function DetermineAbility()
-	abilityCD = nil
-	currentTime = GetTime()
+	ability.cd = nil
 	if currentSpec == 2 and BearForm:down()then
 		return DetermineAbilityCat()
 	elseif currentSpec == 3 and CatForm:down() then
@@ -568,9 +563,9 @@ local function UpdateInterrupt()
 	else
 		clawInterruptPanel:Show()
 		clawInterruptPanel.cast:SetCooldown(startTime / 1000, (endTime - startTime) / 1000)
-		abilityInterrupt = DetermineInterrupt()
-		if abilityInterrupt then
-			clawInterruptPanel.icon:SetTexture(abilityInterrupt.icon)
+		ability.interrupt = DetermineInterrupt()
+		if ability.interrupt then
+			clawInterruptPanel.icon:SetTexture(ability.interrupt.icon)
 			clawInterruptPanel.icon:Show()
 			clawInterruptPanel.border:Show()
 		else
@@ -581,7 +576,7 @@ local function UpdateInterrupt()
 end
 
 local function DenyOverlayGlow(actionButton)
-	if Claw.glow then
+	if not Claw.glow_blizzard then
 		actionButton.overlay:Hide()
 	end
 end
@@ -634,9 +629,9 @@ local function UpdateGlows()
 		glow = glows[i]
 		icon = glow.button.icon:GetTexture()
 		if icon and glow.button.icon:IsVisible() and (
-			(Claw.glow_main and abilityMain and icon == abilityMain.icon) or
-			(Claw.glow_cooldown and abilityCD and icon == abilityCD.icon) or
-			(Claw.glow_interrupt and abilityInterrupt and icon == abilityInterrupt.icon)
+			(Claw.glow_main and ability.main and icon == ability.main.icon) or
+			(Claw.glow_cooldown and ability.cd and icon == ability.cd.icon) or
+			(Claw.glow_interrupt and ability.interrupt and icon == ability.interrupt.icon)
 			) then
 			if not glow:IsVisible() then
 				glow.animIn:Play()
@@ -658,9 +653,9 @@ function events:PLAYER_LOGIN()
 end
 
 local function Disappear()
-	abilityMain = nil
-	abilityCD = nil
-	abilityInterrupt = nil
+	ability.main = nil
+	ability.cd = nil
+	ability.interrupt = nil
 	UpdateGlows()
 	clawPanel:Hide()
 	clawPanel.border:Hide()
@@ -696,6 +691,9 @@ function events:PLAYER_REGEN_ENABLED()
 end
 
 function events:PLAYER_TARGET_CHANGED()
+	if ElvUI and #glows == 0 then
+		CreateOverlayGlows()
+	end
 	if Claw.hide_spec ~= GetActiveSpecGroup() then
 		local previouslyHostile = Target.hostile
 		Target.hostile = UnitCanAttack('player', 'target')
@@ -792,6 +790,13 @@ local function UpdateAlpha()
 	clawInterruptPanel:SetAlpha(Claw.alpha)
 end
 
+local function UpdateHealthArray()
+	Target.healthArray = {}
+	for i = 1, floor(3 / Claw.frequency) do
+		Target.healthArray[i] = 0
+	end
+end
+
 function events:ADDON_LOADED(name)
 	if name == 'Claw' then
 		if not Claw.frequency then
@@ -802,27 +807,25 @@ function events:ADDON_LOADED(name)
 			print('[|cFFFFD000Warning|r] Claw is not designed for players under level 90, and almost certainly will not operate properly!')
 		end
 		InitializeVariables()
+		UpdateHealthArray()
 		UpdateDraggable()
 		UpdateAlpha()
 		clawPanel:SetScale(Claw.scale_main)
 		clawPreviousPanel:SetScale(Claw.scale_previous)
 		clawCooldownPanel:SetScale(Claw.scale_cooldown)
 		clawInterruptPanel:SetScale(Claw.scale_interrupt)
-		for i = 1, floor(3 / Claw.frequency) do
-			Target.healthArray[i] = 0
-		end
 	end
 end
 
 function events:COMBAT_LOG_EVENT_UNFILTERED(self, eventType, hideCaster, srcGUID, srcName, srcFlags, srcRaidFlags, dstGUID, dstName, dstFlags, dstRaidFlags, spellId)
 	if srcGUID == me then
-		if eventType == 'SPELL_MISSED' and Claw.previous and Claw.miss_effect and abilityPrevious and spellId == abilityPrevious.spellId then
+		if eventType == 'SPELL_MISSED' and Claw.previous and Claw.miss_effect and ability.previous and spellId == ability.previous.spellId then
 			clawPreviousPanel.border:SetTexture('Interface\\AddOns\\Claw\\misseffect.blp')
 		elseif eventType == 'SPELL_CAST_SUCCESS' then
-			if Claw.previous and abilityMain and spellId == abilityMain.spellId then
-				abilityPrevious = abilityMain
+			if Claw.previous and ability.main and spellId == ability.main.spellId then
+				ability.previous = ability.main
 				clawPreviousPanel.border:SetTexture('Interface\\AddOns\\Claw\\border.blp')
-				clawPreviousPanel.icon:SetTexture(abilityPrevious.icon)
+				clawPreviousPanel.icon:SetTexture(ability.previous.icon)
 				clawPreviousPanel:Show()
 			end
 			if spellId == Rake.spellId then
@@ -832,11 +835,11 @@ function events:COMBAT_LOG_EVENT_UNFILTERED(self, eventType, hideCaster, srcGUID
 			end
 		elseif eventType == 'SPELL_AURA_REMOVED' then
 			if spellId == Prowl.spellId then
-				Prowl.removed = currentTime
+				Prowl.removed = var.time
 			elseif spellId == Shadowmeld.spellId then
-				Shadowmeld.removed = currentTime
+				Shadowmeld.removed = var.time
 			elseif spellId == Bloodtalons.spellId2 then
-				Bloodtalons.removed = currentTime
+				Bloodtalons.removed = var.time
 			end
 		end
 	end
@@ -857,14 +860,11 @@ end)
 clawPanel:SetScript('OnUpdate', function(self, elapsed)
 	abilityTimer = abilityTimer + elapsed
 	if abilityTimer >= Claw.frequency then
-		Target.healthArray[#Target.healthArray + 1] = UnitHealth('target')
-		table.remove(Target.healthArray, 1)
-		lastAbilityMain = abilityMain
-		lastAbilityCD = abilityCD
-		abilityMain = DetermineAbility()
-		if abilityMain ~= lastAbilityMain then
-			if abilityMain then
-				clawPanel.icon:SetTexture(abilityMain.icon)
+		UpdateVars()
+		ability.main = DetermineAbility()
+		if ability.main ~= ability.last_main then
+			if ability.main then
+				clawPanel.icon:SetTexture(ability.main.icon)
 				clawPanel.icon:Show()
 				clawPanel.border:Show()
 			else
@@ -872,9 +872,9 @@ clawPanel:SetScript('OnUpdate', function(self, elapsed)
 				clawPanel.border:Hide()
 			end
 		end
-		if abilityCD ~= lastAbilityCD then
-			if abilityCD then
-				clawCooldownPanel.icon:SetTexture(abilityCD.icon)
+		if ability.cd ~= ability.last_cd then
+			if ability.cd then
+				clawCooldownPanel.icon:SetTexture(ability.cd.icon)
 				clawCooldownPanel:Show()
 			else
 				clawCooldownPanel:Hide()
@@ -890,7 +890,7 @@ clawPanel:SetScript('OnUpdate', function(self, elapsed)
 			end
 		end
 		if Claw.dimmer then
-			if not abilityMain or abilityMain:usable() then
+			if not ability.main or ability.main:usable() then
 				clawPanel.dimmer:Hide()
 			else
 				clawPanel.dimmer:Show()
@@ -954,6 +954,7 @@ function SlashCmdList.Claw(msg, editbox)
 	elseif msg[1] == 'frequency' then
 		if msg[2] then
 			Claw.frequency = tonumber(msg[2]) or 0.05
+			UpdateHealthArray()
 		end
 		print('Claw - Calculation frequency: Every |cFFFFD000' .. Claw.frequency .. '|r seconds')
 	elseif msg[1] == 'glow' then
@@ -972,8 +973,13 @@ function SlashCmdList.Claw(msg, editbox)
 				Claw.glow_interrupt = msg[3] == 'on'
 			end
 			print('Claw - Glowing ability buttons (interrupt icon): ' .. (Claw.glow_interrupt and '|cFF00C000On' or '|cFFC00000Off'))
+		elseif msg[2] == 'blizzard' then
+			if msg[3] then
+				Claw.glow_blizzard = msg[3] == 'on'
+			end
+			print('Claw - Blizzard default proc glow: ' .. (Claw.glow_blizzard and '|cFF00C000On' or '|cFFC00000Off'))
 		else
-			print('Claw - Possible glow options are: |cFFFFD000main|r, |cFFFFD000cd|r, and |cFFFFD000interrupt|r')
+			print('Claw - Possible glow options are: |cFFFFD000main|r, |cFFFFD000cd|r, |cFFFFD000interrupt|r, and |cFFFFD000blizzard')
 		end
 		UpdateGlows()
 	elseif msg[1] == 'previous' then
@@ -1091,7 +1097,7 @@ function SlashCmdList.Claw(msg, editbox)
 		print('  /claw scale |cFFFFD000prev|r/|cFFFFD000main|r/|cFFFFD000cd|r/|cFFFFD000interrupt|r |cFFFFD000[number]|r - adjust the scale of the Claw UI icons')
 		print('  /claw alpha |cFFFFD000[percent]|r - adjust the transparency of the Claw UI icons')
 		print('  /claw frequency |cFFFFD000[number]|r - set the calculation frequency (default is every 0.05 seconds)')
-		print('  /claw glow |cFFFFD000main|r/|cFFFFD000cd|r/|cFFFFD000interrupt|r |cFF00C000on|r/|cFFC00000off|r - glowing ability buttons on action bars')
+		print('  /claw glow |cFFFFD000main|r/|cFFFFD000cd|r/|cFFFFD000interrupt|r/|cFFFFD000blizzard|r |cFF00C000on|r/|cFFC00000off|r - glowing ability buttons on action bars')
 		print('  /claw previous |cFF00C000on|r/|cFFC00000off|r - previous ability icon')
 		print('  /claw always |cFF00C000on|r/|cFFC00000off|r - show the Claw UI without a target')
 		print('  /claw cd |cFF00C000on|r/|cFFC00000off|r - use Claw for cooldown management')
