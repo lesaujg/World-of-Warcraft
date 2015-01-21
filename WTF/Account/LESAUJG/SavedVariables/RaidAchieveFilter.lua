@@ -30,6 +30,9 @@ RAchF_DB = {
 			},
 		},
 		["Herbinator - Sisters of Elune"] = {
+			["minimap"] = {
+				["hide"] = true,
+			},
 		},
 		["Uldaris - Sisters of Elune"] = {
 			["minimap"] = {

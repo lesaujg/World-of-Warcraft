@@ -2,6 +2,7 @@
 TradeSkillMaster_MailingDB = {
 	["profileKeys"] = {
 		["Uldaris - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
 		["Ghiaccioli - Sisters of Elune"] = "Default",
 		["Bracnar - Sisters of Elune"] = "Default",
 		["Clothgar - Sisters of Elune"] = "Default",
@@ -18,7 +19,7 @@ TradeSkillMaster_MailingDB = {
 				["2Low level enchant mats"] = true,
 			},
 			["scrollvalue"] = 0,
-			["fullwidth"] = 945.000793457031,
+			["fullwidth"] = 945.000610351563,
 			["treesizable"] = true,
 			["treewidth"] = 175,
 			["selected"] = "2Low level enchant mats",

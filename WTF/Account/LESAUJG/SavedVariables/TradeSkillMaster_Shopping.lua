@@ -2,6 +2,7 @@
 TradeSkillMaster_ShoppingDB = {
 	["profileKeys"] = {
 		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
+		["Herbinator - Sisters of Elune"] = "Herbinator - Sisters of Elune",
 		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
 		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
 		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
@@ -197,36 +198,42 @@ TradeSkillMaster_ShoppingDB = {
 			["fullwidth"] = 782.999877929688,
 		},
 		["previousSearches"] = {
-			"Wildvine/exact/x2", -- [1]
-			"Greater Magic Essence/exact/x1", -- [2]
-			"Large Brilliant Shard/exact/x7", -- [3]
-			"Maelstrom Crystal/exact/x5", -- [4]
-			"temporal crystal/exact", -- [5]
-			"major healing potion/exact/x3", -- [6]
-			"major mana potion/exact/x3", -- [7]
-			"major heal", -- [8]
-			"Abyss Crystal/exact/x6", -- [9]
-			"Mysterious Essence/exact/x30", -- [10]
-			"Lesser Eternal Essence/exact/x2", -- [11]
-			"Large Radiant Shard/exact/x2", -- [12]
-			"Large Prismatic Shard/exact/x4", -- [13]
-			"Arcane Dust/exact/x46", -- [14]
-			"Dragon's Teeth/exact/x2", -- [15]
-			"Volatile Earth/exact/x25", -- [16]
-			"Golden Pearl/exact/x2", -- [17]
-			"Essence of Air/exact/x4", -- [18]
-			"Volatile Air/exact/x12", -- [19]
-			"Volatile Water/exact/x2", -- [20]
-			"Volatile Water/exact/x15", -- [21]
-			"tem<", -- [22]
-			"Alchemical Catalyst/exact", -- [23]
-			"Luminous Shard/exact", -- [24]
-			"Sorcerous Earth/exact", -- [25]
+			"Temporal Crystal/exact/x9", -- [1]
+			"Wildvine/exact/x2", -- [2]
+			"Temporal Crystal/exact/x30", -- [3]
+			"Sorcerous Earth/exact/x5", -- [4]
+			"Sorcerous Air/exact/x2", -- [5]
+			"Greater Magic Essence/exact/x1", -- [6]
+			"Large Brilliant Shard/exact/x7", -- [7]
+			"Maelstrom Crystal/exact/x5", -- [8]
+			"temporal crystal/exact", -- [9]
+			"major healing potion/exact/x3", -- [10]
+			"major mana potion/exact/x3", -- [11]
+			"major heal", -- [12]
+			"Abyss Crystal/exact/x6", -- [13]
+			"Mysterious Essence/exact/x30", -- [14]
+			"Lesser Eternal Essence/exact/x2", -- [15]
+			"Large Radiant Shard/exact/x2", -- [16]
+			"Large Prismatic Shard/exact/x4", -- [17]
+			"Arcane Dust/exact/x46", -- [18]
+			"Dragon's Teeth/exact/x2", -- [19]
+			"Volatile Earth/exact/x25", -- [20]
+			"Golden Pearl/exact/x2", -- [21]
+			"Essence of Air/exact/x4", -- [22]
+			"Volatile Air/exact/x12", -- [23]
+			"Volatile Water/exact/x2", -- [24]
+			"Volatile Water/exact/x15", -- [25]
+			"tem<", -- [26]
+			"Alchemical Catalyst/exact", -- [27]
+			"Luminous Shard/exact", -- [28]
+			"Sorcerous Earth/exact", -- [29]
 		},
 		["sidebarBtn"] = 2,
 	},
 	["profiles"] = {
 		["Uldaris - Sisters of Elune"] = {
+		},
+		["Herbinator - Sisters of Elune"] = {
 		},
 		["Ghiaccioli - Sisters of Elune"] = {
 		},

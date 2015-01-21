@@ -22,6 +22,7 @@ TradeSkillMaster_AuctioningDB = {
 	},
 	["profileKeys"] = {
 		["Uldaris - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
 		["Ghiaccioli - Sisters of Elune"] = "Default",
 		["Bracnar - Sisters of Elune"] = "Default",
 		["Clothgar - Sisters of Elune"] = "Default",
@@ -32,6 +33,7 @@ TradeSkillMaster_AuctioningDB = {
 				["Bracnar"] = true,
 				["Ghiaccioli"] = true,
 				["Uldaris"] = true,
+				["Herbinator"] = true,
 				["Clothgar"] = true,
 			},
 		},
