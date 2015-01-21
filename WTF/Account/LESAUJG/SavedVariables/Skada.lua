@@ -2,20 +2,20 @@
 SkadaDB = {
 	["hasUpgraded"] = true,
 	["profileKeys"] = {
-		["Uldaris - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
 		["Galinar - Sisters of Elune"] = "Default",
 		["Belrath - Sisters of Elune"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
 		["Herbinator - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["windows"] = {
 				{
 					["y"] = 175.000457763672,
-					["x"] = -10.0028076171875,
+					["x"] = -10.0029296875,
 					["point"] = "BOTTOMRIGHT",
 					["mode"] = "Damage",
 				}, -- [1]
