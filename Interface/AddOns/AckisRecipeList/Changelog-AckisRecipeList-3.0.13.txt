@@ -1,0 +1,13 @@
+tag 3.0.13
+db775b256b12e527705cf31b08eba93bfbb3eeb4
+James D. Callahan III <jcallahan@curse.com>
+2015-01-25 01:02:07 -0600
+
+
+
+--------------------
+
+Ressy:
+	- Localization update
+James D. Callahan III:
+	- How the hell did these semicolons get here? Begone!

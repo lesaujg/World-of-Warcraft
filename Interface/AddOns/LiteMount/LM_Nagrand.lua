@@ -4,7 +4,7 @@
 
   Nagrand mounts, Telaari Talbuk and Frostwolf War Wolf.
 
-  Copyright 2011-2014 Mike Battersby
+  Copyright 2011-2015 Mike Battersby
 
 ----------------------------------------------------------------------------]]--
 
@@ -43,5 +43,6 @@ function LM_Nagrand:IsUsable(flags)
     local DraenorZoneAbilityName = GetSpellInfo(DraenorZoneAbilitySpellID)
     local id = select(7, GetSpellInfo(DraenorZoneAbilityName))
     if id ~= self:SpellId() then return false end
+    if not IsUsableSpell(DraenorZoneAbilitySpellID) then return false end
     return LM_Mount.IsUsable(self, flags)
 end

@@ -3115,7 +3115,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(32568, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.RAID, F.DPS, F.HEALER, F.CASTER)
-	recipe:AddWorldDrop(Z.BLACK_TEMPLE, Z.MOUNT_HYJAL)
+	recipe:AddWorldDrop(Z.MOUNT_HYJAL)
 
 	-- Swiftsteel Shoulders -- 41133
 	recipe = AddRecipe(41133, V.TBC, Q.EPIC)
@@ -3142,7 +3142,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(32573, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.RAID, F.DPS, F.HEALER, F.CASTER)
-	recipe:AddWorldDrop(Z.BLACK_TEMPLE, Z.MOUNT_HYJAL)
+	recipe:AddWorldDrop(Z.MOUNT_HYJAL)
 
 	-- Ragesteel Shoulders -- 42662
 	recipe = AddRecipe(42662, V.TBC, Q.RARE)

@@ -6,7 +6,7 @@ enUS localization strings for Ackis Recipe List
 File date: 2012-08-18T04:52:05Z 
 File revision: @file-revision@ 
 Project revision: @project-revision@
-Project version: 3.0.12
+Project version: 3.0.13
 ************************************************************************
 Translation credits: http://www.wowace.com/addons/arl/localization/translators/
 
@@ -378,7 +378,7 @@ L["DISCOVERY_ALCH_PROT"] = "Discovered by crafting Major Protection Potions usin
 L["DISCOVERY_BS_INGOT_PANDARIA"] = "Discovered by crafting Balanced Trillium Ingots, or via the plans for the Balanced Trillium Ingots."
 L["DISCOVERY_BS_PANDARIA"] = "Discovered by crafting Lightning Steel Ingots."
 L["DISCOVERY_BS_WEAP_PANDARIA"] = "Discovered by crafting Pandaria weapons with a similar name."
-L["DISCOVERY_COOK_DRAENOR"] = "Discover recipe item randomly by creating any Warlords of Draenor cooking recipe."
+L["DISCOVERY_COOK_DRAENOR"] = "Discover recipe item randomly by creating any Warlords of Draenor cooking recipe, or by buying the item the recipe creates off Auction House, and eating it."
 L["DISCOVERY_DESC"] = "Recipes obtained through Discovery should be included in the scan."
 L["DISCOVERY_INSC_AUTOLEARN"] = "Automatically learned at the appropriate skill level."
 L["DISCOVERY_INSC_BLACKFALLOW"] = "Obtained randomly via Research: Blackfallow Ink, or from Research: Warbinder's Ink if you have all Glyphs made from Warbinder's Ink."
@@ -451,6 +451,7 @@ L["Enchanter Nalthanis"] = true
 L["Enchantress Andiala"] = true
 L["Enchantress Volali"] = true
 L["ENG_DISC"] = "This is discovered randomly while crafting other Engineering items."
+L["ENG_DISC_ARMY_KNIFE"] = "This is discovered after creating your first Army Knife."
 L["ENG_DISC_FIREWORKS"] = "This is discovered randomly while crafting Pandaria Fireworks."
 L["ENG_FLOOR_ITEM_BRD"] = "The schematic can be found on the floor near Golem Lord Argelmach in Blackrock Depths. Only engineers with 300 skill may learn the schematic after clicking on it."
 L["ENG_GNOMER"] = "Dropped from mobs in Gnomeregan."
@@ -985,6 +986,7 @@ L["Nixx Sprocketspring"] = true
 L["NO_DISPLAY"] = "No recipes to display.  If you get this message please submit a ticket at http://www.wowace.com/addons/arl/tickets listing what filters you have, what is in your exclusion list, which profession, and the number of known/unknown recipes."
 L["NoItemLink"] = "This item does not have an item link or it was not in your cache."
 L["Nonn Theeratchet"] = true
+L["Nonn Threeratchet"] = true
 L["Noodles"] = true
 L["NORMAL"] = "Drops in 25 man Normal version of this raid."
 L["NOTSCANNED"] = "You have not yet scanned this profession. Please open this profession and click on Scan."

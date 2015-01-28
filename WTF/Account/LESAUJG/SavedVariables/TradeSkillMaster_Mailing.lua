@@ -19,10 +19,10 @@ TradeSkillMaster_MailingDB = {
 				["2Low level enchant mats"] = true,
 			},
 			["scrollvalue"] = 0,
-			["fullwidth"] = 945.000610351563,
+			["fullwidth"] = 945.00048828125,
 			["treesizable"] = true,
 			["treewidth"] = 175,
-			["selected"] = "2Low level enchant mats",
+			["selected"] = "2Mail disenchant",
 		},
 	},
 }

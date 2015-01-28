@@ -2227,7 +2227,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 650, 675, 700)
 	recipe:SetRecipeItem(118310, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(111431, "BIND_ON_EQUIP")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
 	recipe:AddDiscovery("DISCOVERY_COOK_DRAENOR")
 
 	-- Blackrock Ham -- 160962

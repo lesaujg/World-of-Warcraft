@@ -14,10 +14,10 @@ TradeSkillMaster_AuctioningDB = {
 				["3Sell old enchants"] = true,
 			},
 			["scrollvalue"] = 0,
-			["selected"] = "3Sell old enchants",
+			["selected"] = "3Sell enchants",
 			["treesizable"] = true,
 			["treewidth"] = 175,
-			["fullwidth"] = 945.000793457031,
+			["fullwidth"] = 945.000366210938,
 		},
 	},
 	["profileKeys"] = {

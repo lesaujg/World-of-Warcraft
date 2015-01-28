@@ -25,8 +25,8 @@ ARLDB2 = {
 		["tradeskill"] = {
 			["Sisters of Elune"] = {
 				["Bracnar"] = {
-					["Alchemy"] = "|cffffd000|Htrade:Player-1169-06A1ACBD:156606:171|h[Alchemy]|h|r",
 					["Cooking"] = "|cffffd000|Htrade:Player-1169-06A1ACBD:158765:185|h[Cooking]|h|r",
+					["Alchemy"] = "|cffffd000|Htrade:Player-1169-06A1ACBD:156606:171|h[Alchemy]|h|r",
 					["First Aid"] = "|cffffd000|Htrade:Player-1169-06A1ACBD:158741:129|h[First Aid]|h|r",
 					["Enchanting"] = "|cffffd000|Htrade:Player-1169-06A1ACBD:158716:333|h[Enchanting]|h|r",
 				},

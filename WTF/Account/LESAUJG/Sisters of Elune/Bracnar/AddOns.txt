@@ -83,3 +83,4 @@ RareCoordinator: enabled
 BagBrother: disabled
 Basic_Resources: disabled
 Claw: disabled
+BittensSpellFlash_Hunter: disabled

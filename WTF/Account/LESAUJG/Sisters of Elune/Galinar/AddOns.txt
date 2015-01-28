@@ -2,3 +2,4 @@ Tukui_ConfigUI: disabled
 Combuctor: disabled
 RareCoordinator: enabled
 BagBrother: disabled
+BittensSpellFlash_Hunter: disabled

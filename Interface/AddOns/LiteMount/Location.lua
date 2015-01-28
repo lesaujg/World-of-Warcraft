@@ -6,7 +6,7 @@
   the mojo is done by IsUsableSpell to know if a mount can be cast, this
   just helps with the prioritization.
 
-  Copyright 2011-2014 Mike Battersby
+  Copyright 2011-2015 Mike Battersby
 
 ----------------------------------------------------------------------------]]--
 
@@ -108,7 +108,6 @@ function LM_Location:IsAQ()
 end
 
 function LM_Location:IsVashjir()
-    if not self:CanSwim() then return nil end
     if self.areaId == 610 then return true end
     if self.areaId == 614 then return true end
     if self.areaId == 615 then return true end

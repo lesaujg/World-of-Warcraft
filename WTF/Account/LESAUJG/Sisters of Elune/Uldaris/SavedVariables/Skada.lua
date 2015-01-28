@@ -175,12 +175,12 @@ SkadaPerCharDB = {
 						["uptime"] = 3654,
 						["auratype"] = "DEBUFF",
 					},
-					["Footman: Shield Slam"] = {
-						["name"] = "Footman: Shield Slam",
+					["Footman: Heroic Leap"] = {
+						["name"] = "Footman: Heroic Leap",
 						["active"] = 0,
-						["id"] = 8242,
+						["id"] = 78622,
 						["auratype"] = "DEBUFF",
-						["uptime"] = 8,
+						["uptime"] = 1,
 					},
 					["Call to Arms"] = {
 						["name"] = "Call to Arms",
@@ -189,19 +189,19 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 28,
 					},
-					["Footman: Heroic Leap"] = {
-						["name"] = "Footman: Heroic Leap",
-						["active"] = 0,
-						["id"] = 78622,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 1,
-					},
 					["Predatory Swiftness"] = {
 						["name"] = "Predatory Swiftness",
 						["active"] = 47,
 						["id"] = 69369,
 						["uptime"] = 5192,
 						["auratype"] = "BUFF",
+					},
+					["Footman: Shield Slam"] = {
+						["name"] = "Footman: Shield Slam",
+						["active"] = 0,
+						["id"] = 8242,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 8,
 					},
 					["Savage Defense"] = {
 						["name"] = "Savage Defense",
@@ -842,16 +842,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1420814765.85202,
 								["amount"] = -4373,
+								["spellid"] = 88163,
 								["hp"] = 6062,
 								["srcname"] = "Ancient Pearltusk",
-								["spellid"] = 88163,
 							}, -- [2]
 							{
 								["ts"] = 1420814767.87203,
 								["amount"] = -2153,
+								["srcname"] = "Ancient Pearltusk",
 								["hp"] = 1689,
 								["spellid"] = 88163,
-								["srcname"] = "Ancient Pearltusk",
 							}, -- [3]
 							{
 								["spellname"] = "Uldaris dies",
@@ -862,16 +862,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1420814752.64205,
 								["amount"] = -1625,
+								["srcname"] = "Shadowmoon Stalker",
 								["hp"] = 13278,
 								["spellid"] = 88163,
-								["srcname"] = "Shadowmoon Stalker",
 							}, -- [5]
 							{
 								["ts"] = 1420814753.10906,
 								["amount"] = -2323,
+								["spellid"] = 88163,
 								["srcname"] = "Ancient Pearltusk",
 								["hp"] = 11653,
-								["spellid"] = 88163,
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -884,16 +884,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1420814754.10808,
 								["amount"] = -1569,
+								["spellid"] = 158252,
 								["hp"] = 9729,
 								["srcname"] = "Ancient Pearltusk",
-								["spellid"] = 158252,
 							}, -- [8]
 							{
 								["ts"] = 1420814756.10709,
 								["amount"] = -1756,
+								["spellid"] = 88163,
 								["hp"] = 9729,
 								["srcname"] = "Ancient Pearltusk",
-								["spellid"] = 88163,
 							}, -- [9]
 							{
 								["ts"] = 1420814756.1071,
@@ -906,16 +906,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1420814758.10111,
 								["amount"] = -2458,
+								["spellid"] = 88163,
 								["hp"] = 9449,
 								["srcname"] = "Ancient Pearltusk",
-								["spellid"] = 88163,
 							}, -- [11]
 							{
 								["ts"] = 1420814758.91312,
 								["amount"] = -4094,
+								["spellid"] = 158207,
 								["hp"] = 2897,
 								["srcname"] = "Ancient Pearltusk",
-								["spellid"] = 158207,
 							}, -- [12]
 							{
 								["ts"] = 1420814758.91313,
@@ -928,9 +928,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1420814760.97014,
 								["amount"] = -2247,
+								["spellid"] = 88163,
 								["hp"] = 4865,
 								["srcname"] = "Ancient Pearltusk",
-								["spellid"] = 88163,
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -966,37 +966,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1415556907.43803,
 								["amount"] = -3107,
+								["srcname"] = "Steelbreaker",
 								["hp"] = 4714,
 								["spellid"] = 63493,
-								["srcname"] = "Steelbreaker",
 							}, -- [3]
 							{
 								["ts"] = 1415556907.85304,
 								["amount"] = -266,
+								["srcname"] = "Steelbreaker",
 								["hp"] = 4448,
 								["spellid"] = 63526,
-								["srcname"] = "Steelbreaker",
 							}, -- [4]
 							{
 								["ts"] = 1415556908.43205,
 								["amount"] = -1776,
+								["srcname"] = "Steelbreaker",
 								["hp"] = 2672,
 								["spellid"] = 63493,
-								["srcname"] = "Steelbreaker",
 							}, -- [5]
 							{
 								["ts"] = 1415556909.43306,
 								["amount"] = -1776,
+								["srcname"] = "Steelbreaker",
 								["hp"] = 896,
 								["spellid"] = 63493,
-								["srcname"] = "Steelbreaker",
 							}, -- [6]
 							{
 								["ts"] = 1415556910.44807,
 								["amount"] = -1776,
+								["srcname"] = "Steelbreaker",
 								["hp"] = 1,
 								["spellid"] = 63493,
-								["srcname"] = "Steelbreaker",
 							}, -- [7]
 							{
 								["spellname"] = "Uldaris dies",
@@ -1023,16 +1023,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1415556901.84411,
 								["amount"] = -133,
+								["srcname"] = "Steelbreaker",
 								["hp"] = 8570,
 								["spellid"] = 63526,
-								["srcname"] = "Steelbreaker",
 							}, -- [11]
 							{
 								["ts"] = 1415556903.01012,
 								["amount"] = -608,
+								["srcname"] = "Runemaster Molgeim",
 								["hp"] = 8570,
 								["spellid"] = 88163,
-								["srcname"] = "Runemaster Molgeim",
 							}, -- [12]
 							{
 								["ts"] = 1415556904.06113,
@@ -1045,9 +1045,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1415556904.84114,
 								["amount"] = -133,
+								["srcname"] = "Steelbreaker",
 								["hp"] = 7531,
 								["spellid"] = 63526,
-								["srcname"] = "Steelbreaker",
 							}, -- [14]
 							{
 								["ts"] = 1415556905.01615,
@@ -1065,16 +1065,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1415464165.48301,
 								["amount"] = -583,
+								["srcname"] = "Steelbreaker",
 								["spellid"] = 63493,
 								["hp"] = 4323,
-								["srcname"] = "Steelbreaker",
 							}, -- [1]
 							{
 								["ts"] = 1415464165.77302,
 								["amount"] = -88,
+								["spellid"] = 63526,
 								["srcname"] = "Steelbreaker",
 								["hp"] = 4235,
-								["spellid"] = 63526,
 							}, -- [2]
 							{
 								["ts"] = 1415464165.88403,
@@ -1087,58 +1087,58 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1415464165.98804,
 								["amount"] = -1308,
+								["srcname"] = "Steelbreaker",
 								["spellid"] = 88163,
 								["hp"] = 5590,
-								["srcname"] = "Steelbreaker",
 							}, -- [4]
 							{
 								["ts"] = 1415464166.50005,
 								["amount"] = -584,
+								["spellid"] = 63493,
 								["srcname"] = "Steelbreaker",
 								["hp"] = 3698,
-								["spellid"] = 63493,
 							}, -- [5]
 							{
 								["ts"] = 1415464166.69806,
 								["amount"] = -195,
+								["srcname"] = "Stormcaller Brundir",
 								["spellid"] = 88163,
 								["hp"] = 3698,
-								["srcname"] = "Stormcaller Brundir",
 							}, -- [6]
 							{
 								["ts"] = 1415464167.57007,
 								["amount"] = -583,
+								["srcname"] = "Steelbreaker",
 								["spellid"] = 63493,
 								["hp"] = 2920,
-								["srcname"] = "Steelbreaker",
 							}, -- [7]
 							{
 								["ts"] = 1415464167.57008,
 								["amount"] = -1674,
+								["spellid"] = 88163,
 								["srcname"] = "Steelbreaker",
 								["hp"] = 2920,
-								["spellid"] = 88163,
 							}, -- [8]
 							{
 								["ts"] = 1415464168.48309,
 								["amount"] = -582,
+								["spellid"] = 63493,
 								["srcname"] = "Steelbreaker",
 								["hp"] = 664,
-								["spellid"] = 63493,
 							}, -- [9]
 							{
 								["ts"] = 1415464168.7741,
 								["amount"] = -87,
+								["spellid"] = 63526,
 								["srcname"] = "Steelbreaker",
 								["hp"] = 577,
-								["spellid"] = 63526,
 							}, -- [10]
 							{
 								["ts"] = 1415464168.99811,
 								["amount"] = -1559,
+								["srcname"] = "Steelbreaker",
 								["spellid"] = 88163,
 								["hp"] = 577,
-								["srcname"] = "Steelbreaker",
 							}, -- [11]
 							{
 								["spellname"] = "Uldaris dies",
@@ -1149,16 +1149,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1415464164.47813,
 								["amount"] = -1020,
+								["srcname"] = "Steelbreaker",
 								["spellid"] = 63493,
 								["hp"] = 3218,
-								["srcname"] = "Steelbreaker",
 							}, -- [13]
 							{
 								["ts"] = 1415464164.69614,
 								["amount"] = -119,
+								["srcname"] = "Stormcaller Brundir",
 								["spellid"] = 63479,
 								["hp"] = 3099,
-								["srcname"] = "Stormcaller Brundir",
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -1178,30 +1178,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1415462588.53301,
 								["amount"] = -36,
+								["spellid"] = 62530,
 								["srcname"] = "Iron Construct",
 								["hp"] = 937,
-								["spellid"] = 62530,
 							}, -- [1]
 							{
 								["ts"] = 1415462588.77902,
 								["amount"] = -35,
+								["spellid"] = 62530,
 								["srcname"] = "Iron Construct",
 								["hp"] = 902,
-								["spellid"] = 62530,
 							}, -- [2]
 							{
 								["ts"] = 1415462589.11303,
 								["amount"] = -35,
+								["spellid"] = 62530,
 								["srcname"] = "Iron Construct",
 								["hp"] = 867,
-								["spellid"] = 62530,
 							}, -- [3]
 							{
 								["ts"] = 1415462589.13304,
 								["amount"] = -57,
+								["spellid"] = 63475,
 								["srcname"] = "Scorch",
 								["hp"] = 810,
-								["spellid"] = 63475,
 							}, -- [4]
 							{
 								["absorb"] = -28,
@@ -1229,16 +1229,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1415462589.96908,
 								["amount"] = -158,
+								["spellid"] = 88163,
 								["srcname"] = "Iron Construct",
 								["hp"] = 7,
-								["spellid"] = 88163,
 							}, -- [8]
 							{
 								["ts"] = 1415462589.96909,
 								["amount"] = -164,
+								["spellid"] = 88163,
 								["srcname"] = "Iron Construct",
 								["hp"] = 7,
-								["spellid"] = 88163,
 							}, -- [9]
 							{
 								["spellname"] = "Uldaris dies",
@@ -1249,16 +1249,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1415462588.15911,
 								["amount"] = -189,
+								["hp"] = 1571,
 								["spellid"] = 88163,
 								["srcname"] = "Iron Construct",
-								["hp"] = 1571,
 							}, -- [11]
 							{
 								["ts"] = 1415462588.15912,
 								["amount"] = -53,
+								["hp"] = 1518,
 								["srcname"] = "Superheated Winds",
 								["spellid"] = 64737,
-								["hp"] = 1518,
 							}, -- [12]
 							{
 								["absorb"] = -34,
@@ -1271,16 +1271,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1415462588.23214,
 								["amount"] = -154,
+								["hp"] = 1518,
 								["spellid"] = 88163,
 								["srcname"] = "Iron Construct",
-								["hp"] = 1518,
 							}, -- [14]
 							{
 								["ts"] = 1415462588.47615,
 								["amount"] = -37,
+								["hp"] = 973,
 								["srcname"] = "Iron Construct",
 								["spellid"] = 62530,
-								["hp"] = 973,
 							}, -- [15]
 							["pos"] = 11,
 						},
@@ -1300,16 +1300,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1415329125.60402,
 								["amount"] = -2958,
+								["hp"] = 19381,
 								["spellid"] = 88163,
 								["srcname"] = "Ironmarch Pillager",
-								["hp"] = 19381,
 							}, -- [2]
 							{
 								["ts"] = 1415329125.92403,
 								["amount"] = -3124,
+								["hp"] = 16423,
 								["spellid"] = 88163,
 								["srcname"] = "Ironmarch Pillager",
-								["hp"] = 16423,
 							}, -- [3]
 							{
 								["ts"] = 1415329126.03004,
@@ -1322,44 +1322,44 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1415329126.43205,
 								["amount"] = -4729,
+								["hp"] = 10377,
 								["srcname"] = "Ironmarch Pillager",
 								["spellid"] = 164457,
-								["hp"] = 10377,
 							}, -- [5]
 							{
 								["ts"] = 1415329126.54006,
 								["amount"] = -2966,
+								["hp"] = 10377,
 								["spellid"] = 88163,
 								["srcname"] = "Ironmarch Pillager",
-								["hp"] = 10377,
 							}, -- [6]
 							{
 								["ts"] = 1415329127.52307,
 								["amount"] = -3152,
+								["hp"] = 7411,
 								["spellid"] = 88163,
 								["srcname"] = "Ironmarch Pillager",
-								["hp"] = 7411,
 							}, -- [7]
 							{
 								["ts"] = 1415329128.51708,
 								["amount"] = -1166,
+								["hp"] = 4259,
 								["srcname"] = "Ironmarch Pillager",
 								["spellid"] = 88163,
-								["hp"] = 4259,
 							}, -- [8]
 							{
 								["ts"] = 1415329129.62009,
 								["amount"] = -3016,
+								["hp"] = 3093,
 								["spellid"] = 88163,
 								["srcname"] = "Ironmarch Pillager",
-								["hp"] = 3093,
 							}, -- [9]
 							{
 								["ts"] = 1415329131.0551,
 								["amount"] = -2970,
+								["hp"] = 77,
 								["spellid"] = 88163,
 								["srcname"] = "Ironmarch Pillager",
-								["hp"] = 77,
 							}, -- [10]
 							{
 								["spellname"] = "Uldaris dies",
@@ -1370,30 +1370,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1415329121.91412,
 								["amount"] = -2798,
+								["hp"] = 29178,
 								["spellid"] = 88163,
 								["srcname"] = "Ironmarch Pillager",
-								["hp"] = 29178,
 							}, -- [12]
 							{
 								["ts"] = 1415329123.60213,
 								["amount"] = -2587,
+								["hp"] = 24993,
 								["spellid"] = 88163,
 								["srcname"] = "Ironmarch Pillager",
-								["hp"] = 24993,
 							}, -- [13]
 							{
 								["ts"] = 1415329123.82414,
 								["amount"] = -2124,
+								["hp"] = 22406,
 								["spellid"] = 88163,
 								["srcname"] = "Ironmarch Pillager",
-								["hp"] = 22406,
 							}, -- [14]
 							{
 								["ts"] = 1415329124.53615,
 								["amount"] = -2257,
+								["hp"] = 20282,
 								["spellid"] = 88163,
 								["srcname"] = "Ironmarch Pillager",
-								["hp"] = 20282,
 							}, -- [15]
 							["pos"] = 12,
 						},
@@ -2442,19 +2442,19 @@ SkadaPerCharDB = {
 						["max"] = 1680,
 						["damage"] = 9910,
 					},
-					["Dreadmaul Stomp"] = {
+					["Earth Shock"] = {
 						["crushing"] = 0,
-						["id"] = 164489,
-						["damage"] = 805,
-						["max"] = 805,
-						["name"] = "Dreadmaul Stomp",
+						["id"] = 159990,
+						["damage"] = 3859,
+						["max"] = 1370,
+						["name"] = "Earth Shock",
 						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 1,
+						["totalhits"] = 3,
 						["resisted"] = 0,
-						["min"] = 805,
+						["min"] = 1204,
 						["absorbed"] = 0,
 					},
 					["Throw Axe"] = {
@@ -2547,19 +2547,19 @@ SkadaPerCharDB = {
 						["min"] = 3550,
 						["absorbed"] = 0,
 					},
-					["Fieroclast Barrage"] = {
+					["Dreadmaul Stomp"] = {
 						["crushing"] = 0,
-						["id"] = 100095,
-						["damage"] = 3975,
-						["max"] = 3975,
-						["name"] = "Fieroclast Barrage",
-						["min"] = 3975,
+						["id"] = 164489,
+						["damage"] = 805,
+						["max"] = 805,
+						["name"] = "Dreadmaul Stomp",
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 805,
 						["absorbed"] = 0,
 					},
 					["Scorch"] = {
@@ -2697,19 +2697,19 @@ SkadaPerCharDB = {
 						["min"] = 827,
 						["absorbed"] = 0,
 					},
-					["Earth Shock"] = {
+					["Fieroclast Barrage"] = {
 						["crushing"] = 0,
-						["id"] = 159990,
-						["damage"] = 3859,
-						["max"] = 1370,
-						["name"] = "Earth Shock",
-						["glancing"] = 0,
+						["id"] = 100095,
+						["damage"] = 3975,
+						["max"] = 3975,
+						["name"] = "Fieroclast Barrage",
+						["min"] = 3975,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 3,
+						["totalhits"] = 1,
 						["resisted"] = 0,
-						["min"] = 1204,
+						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
 					["Static Disruption"] = {
@@ -3245,9 +3245,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1420815701.018,
 						["amount"] = -1398,
+						["hp"] = 64099,
 						["spellid"] = 88163,
 						["srcname"] = "Karnoth",
-						["hp"] = 64099,
 					}, -- [4]
 					{
 						["ts"] = 1420815584.013,
@@ -3260,9 +3260,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1420815587.359,
 						["amount"] = -1738,
+						["hp"] = 57258,
 						["srcname"] = "Shadowmoon Voidmancer",
 						["spellid"] = 157355,
-						["hp"] = 57258,
 					}, -- [6]
 					{
 						["absorb"] = 0,
@@ -3275,16 +3275,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1420815684.033,
 						["amount"] = -1360,
+						["hp"] = 61306,
 						["srcname"] = "Karnoth",
 						["spellid"] = 88163,
-						["hp"] = 61306,
 					}, -- [8]
 					{
 						["ts"] = 1420815687.081,
 						["amount"] = -1431,
+						["hp"] = 59946,
 						["spellid"] = 88163,
 						["srcname"] = "Karnoth",
-						["hp"] = 59946,
 					}, -- [9]
 					{
 						["absorb"] = 0,
@@ -3297,9 +3297,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1420815688.541,
 						["amount"] = -1486,
+						["hp"] = 60451,
 						["spellid"] = 88163,
 						["srcname"] = "Karnoth",
-						["hp"] = 60451,
 					}, -- [11]
 					{
 						["absorb"] = 0,
@@ -3312,23 +3312,23 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1420815690.086,
 						["amount"] = -1546,
+						["hp"] = 61546,
 						["srcname"] = "Karnoth",
 						["spellid"] = 88163,
-						["hp"] = 61546,
 					}, -- [13]
 					{
 						["ts"] = 1420815691.631,
 						["amount"] = -1529,
+						["hp"] = 60000,
 						["spellid"] = 88163,
 						["srcname"] = "Karnoth",
-						["hp"] = 60000,
 					}, -- [14]
 					{
 						["ts"] = 1420815693.076,
 						["amount"] = -1471,
+						["hp"] = 58471,
 						["spellid"] = 88163,
 						["srcname"] = "Karnoth",
-						["hp"] = 58471,
 					}, -- [15]
 					["pos"] = 5,
 				},
@@ -3827,16 +3827,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1415329177.294,
 						["amount"] = -1103,
+						["hp"] = 23905,
 						["spellid"] = 88163,
 						["srcname"] = "Ironmarch Pillager",
-						["hp"] = 23905,
 					}, -- [1]
 					{
 						["ts"] = 1415329177.427,
 						["amount"] = -1295,
+						["hp"] = 22802,
 						["spellid"] = 88163,
 						["srcname"] = "Ironmarch Pillager",
-						["hp"] = 22802,
 					}, -- [2]
 					{
 						["absorb"] = 0,
@@ -3849,9 +3849,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1415329179.186,
 						["amount"] = -1462,
+						["hp"] = 22325,
 						["spellid"] = 88163,
 						["srcname"] = "Ironmarch Pillager",
-						["hp"] = 22325,
 					}, -- [4]
 					{
 						["absorb"] = 0,
@@ -3888,16 +3888,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1415329185.105,
 						["amount"] = -1731,
+						["hp"] = 27724,
 						["spellid"] = 164457,
 						["srcname"] = "Ironmarch Pillager",
-						["hp"] = 27724,
 					}, -- [9]
 					{
 						["ts"] = 1415329185.479,
 						["amount"] = -1301,
+						["hp"] = 27724,
 						["spellid"] = 88163,
 						["srcname"] = "Ironmarch Pillager",
-						["hp"] = 27724,
 					}, -- [10]
 					{
 						["absorb"] = 0,
@@ -3918,9 +3918,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1415329175.482,
 						["amount"] = -1423,
+						["hp"] = 26698,
 						["spellid"] = 88163,
 						["srcname"] = "Ironmarch Pillager",
-						["hp"] = 26698,
 					}, -- [13]
 					{
 						["absorb"] = 0,
@@ -3933,9 +3933,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1415329177.052,
 						["amount"] = -2188,
+						["hp"] = 23905,
 						["srcname"] = "Ironmarch Pillager",
 						["spellid"] = 164457,
-						["hp"] = 23905,
 					}, -- [15]
 					["pos"] = 13,
 				},
@@ -7059,14 +7059,6 @@ SkadaPerCharDB = {
 				["done"] = 0,
 				["taken"] = 0,
 				["htakenspell"] = {
-					["Beacon of Light"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 103,
-						["healing"] = 1186,
-						["overhealing"] = 2868,
-						["hits"] = 21,
-					},
 					["Eternal Flame"] = {
 						["min"] = 0,
 						["crits"] = 4,
@@ -7082,6 +7074,14 @@ SkadaPerCharDB = {
 						["healing"] = 0,
 						["overhealing"] = 2207,
 						["hits"] = 1,
+					},
+					["Beacon of Light"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 103,
+						["healing"] = 1186,
+						["overhealing"] = 2868,
+						["hits"] = 21,
 					},
 					["Seal of Insight"] = {
 						["min"] = 0,
@@ -7094,14 +7094,6 @@ SkadaPerCharDB = {
 				},
 				["htaken"] = 6278,
 				["hdonespell"] = {
-					["Beacon of Light"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 103,
-						["healing"] = 1186,
-						["overhealing"] = 2868,
-						["hits"] = 21,
-					},
 					["Eternal Flame"] = {
 						["min"] = 0,
 						["crits"] = 4,
@@ -7117,6 +7109,14 @@ SkadaPerCharDB = {
 						["healing"] = 0,
 						["overhealing"] = 2207,
 						["hits"] = 1,
+					},
+					["Beacon of Light"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 103,
+						["healing"] = 1186,
+						["overhealing"] = 2868,
+						["hits"] = 21,
 					},
 					["Seal of Insight"] = {
 						["min"] = 0,
@@ -7773,6 +7773,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 4,
 						},
+						["Savage Roar"] = {
+							["name"] = "Savage Roar",
+							["active"] = 1,
+							["id"] = 52610,
+							["auratype"] = "BUFF",
+							["uptime"] = 4,
+						},
 						["Infected Wounds"] = {
 							["name"] = "Infected Wounds",
 							["active"] = 0,
@@ -7786,13 +7793,6 @@ SkadaPerCharDB = {
 							["id"] = 155722,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 5,
-						},
-						["Savage Roar"] = {
-							["name"] = "Savage Roar",
-							["active"] = 1,
-							["id"] = 52610,
-							["auratype"] = "BUFF",
-							["uptime"] = 4,
 						},
 					},
 					["multistrikes"] = 0,
@@ -8228,6 +8228,13 @@ SkadaPerCharDB = {
 						},
 					},
 					["auras"] = {
+						["Infected Wounds"] = {
+							["name"] = "Infected Wounds",
+							["active"] = 0,
+							["id"] = 58180,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 1,
+						},
 						["Celestial Master"] = {
 							["name"] = "Celestial Master",
 							["active"] = 1,
@@ -8241,13 +8248,6 @@ SkadaPerCharDB = {
 							["id"] = 155722,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 3,
-						},
-						["Infected Wounds"] = {
-							["name"] = "Infected Wounds",
-							["active"] = 0,
-							["id"] = 58180,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 1,
 						},
 					},
 					["multistrikes"] = 0,
@@ -8431,6 +8431,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 3,
 						},
+						["Savage Roar"] = {
+							["name"] = "Savage Roar",
+							["active"] = 1,
+							["id"] = 52610,
+							["auratype"] = "BUFF",
+							["uptime"] = 3,
+						},
 						["Infected Wounds"] = {
 							["name"] = "Infected Wounds",
 							["active"] = 0,
@@ -8444,13 +8451,6 @@ SkadaPerCharDB = {
 							["id"] = 155722,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 5,
-						},
-						["Savage Roar"] = {
-							["name"] = "Savage Roar",
-							["active"] = 1,
-							["id"] = 52610,
-							["auratype"] = "BUFF",
-							["uptime"] = 3,
 						},
 					},
 					["multistrikes"] = 0,

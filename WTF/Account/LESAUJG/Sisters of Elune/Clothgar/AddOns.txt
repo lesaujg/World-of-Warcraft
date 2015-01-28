@@ -81,3 +81,4 @@ HandyNotes_TimelessIsle_RareElites: disabled
 Combuctor: disabled
 RareCoordinator: enabled
 BagBrother: disabled
+BittensSpellFlash_Hunter: disabled

@@ -8,6 +8,74 @@ TradeSkillMaster_ShoppingDB = {
 		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
 	},
 	["global"] = {
+		["previousSearches"] = {
+			"temporal crystal/exact", -- [1]
+			"Large Brilliant Shard/exact/x1", -- [2]
+			"Sha Crystal/exact/x4", -- [3]
+			"Righteous Orb/exact/x1", -- [4]
+			"Sorcerous Water/exact/x4", -- [5]
+			"Abyss Crystal/exact/x1", -- [6]
+			"Sorcerous Earth/exact/x5", -- [7]
+			"Large Brilliant Shard/exact/x4", -- [8]
+			"temporal crystal", -- [9]
+			"Sorcerous earth/exact/x22", -- [10]
+			"Sorcerous Air/exact/x22", -- [11]
+			"Sorcerous Fire/exact/x5", -- [12]
+			"sorcerous water/exact/x12", -- [13]
+			"Abyss Crystal/exact/x4", -- [14]
+			"Large Prismatic Shard/exact/x7", -- [15]
+			"Lesser Eternal Essence/exact/x1", -- [16]
+			"Righteous Orb/exact/x2", -- [17]
+			"Essence of Undeath/exact/x4", -- [18]
+			"Large Brilliant Shard/exact/x8", -- [19]
+			"Wildvine/exact/x2", -- [20]
+			"Sorcerous Air/exact/x2", -- [21]
+			"Mysterious Essence/exact/x47", -- [22]
+			"Sorcerous Water/exact/x1", -- [23]
+			"Mysterious Essence/exact/x43", -- [24]
+			"Sorcerous Air/exact/x4", -- [25]
+			"Luminous Shard/exact/x35", -- [26]
+			"mysterious essence/exact/x30", -- [27]
+			"Essence of Water/exact/x4", -- [28]
+			"River's Heart/exact/x1", -- [29]
+			"luminous shard/exact", -- [30]
+			"temporal crystal/exact/", -- [31]
+			"Temporal Crystal/exact/x9", -- [32]
+			"Temporal Crystal/exact/x30", -- [33]
+			"Greater Magic Essence/exact/x1", -- [34]
+			"Large Brilliant Shard/exact/x7", -- [35]
+			"Maelstrom Crystal/exact/x5", -- [36]
+			"major healing potion/exact/x3", -- [37]
+			"major mana potion/exact/x3", -- [38]
+			"major heal", -- [39]
+			"Abyss Crystal/exact/x6", -- [40]
+			"Lesser Eternal Essence/exact/x2", -- [41]
+			"Large Radiant Shard/exact/x2", -- [42]
+			"Large Prismatic Shard/exact/x4", -- [43]
+			"Arcane Dust/exact/x46", -- [44]
+			"Dragon's Teeth/exact/x2", -- [45]
+			"Volatile Earth/exact/x25", -- [46]
+			"Golden Pearl/exact/x2", -- [47]
+			"Essence of Air/exact/x4", -- [48]
+			"Volatile Air/exact/x12", -- [49]
+			"Volatile Water/exact/x2", -- [50]
+			"Volatile Water/exact/x15", -- [51]
+			"tem<", -- [52]
+			"Alchemical Catalyst/exact", -- [53]
+			"Sorcerous Earth/exact", -- [54]
+		},
+		["optionsTreeStatus"] = {
+			["groups"] = {
+				[2] = true,
+				["2Buy enchant mats"] = true,
+				["2"] = true,
+			},
+			["scrollvalue"] = 0,
+			["treesizable"] = true,
+			["selected"] = "2Buy enchant mats",
+			["treewidth"] = 175,
+			["fullwidth"] = 782.999877929688,
+		},
 		["destroyingTargetItems"] = {
 			["item:36926:0:0:0:0:0:0"] = "Shadow Crystal",
 			["item:11178:0:0:0:0:0:0"] = "Large Radiant Shard",
@@ -185,50 +253,6 @@ TradeSkillMaster_ShoppingDB = {
 			["item:12799:0:0:0:0:0:0"] = "Large Opal",
 			["item:74252:0:0:0:0:0:0"] = "Small Ethereal Shard",
 		},
-		["optionsTreeStatus"] = {
-			["groups"] = {
-				[2] = true,
-				["2Buy enchant mats"] = true,
-				["2"] = true,
-			},
-			["scrollvalue"] = 0,
-			["treesizable"] = true,
-			["selected"] = "2Buy enchant mats",
-			["treewidth"] = 175,
-			["fullwidth"] = 782.999877929688,
-		},
-		["previousSearches"] = {
-			"Temporal Crystal/exact/x9", -- [1]
-			"Wildvine/exact/x2", -- [2]
-			"Temporal Crystal/exact/x30", -- [3]
-			"Sorcerous Earth/exact/x5", -- [4]
-			"Sorcerous Air/exact/x2", -- [5]
-			"Greater Magic Essence/exact/x1", -- [6]
-			"Large Brilliant Shard/exact/x7", -- [7]
-			"Maelstrom Crystal/exact/x5", -- [8]
-			"temporal crystal/exact", -- [9]
-			"major healing potion/exact/x3", -- [10]
-			"major mana potion/exact/x3", -- [11]
-			"major heal", -- [12]
-			"Abyss Crystal/exact/x6", -- [13]
-			"Mysterious Essence/exact/x30", -- [14]
-			"Lesser Eternal Essence/exact/x2", -- [15]
-			"Large Radiant Shard/exact/x2", -- [16]
-			"Large Prismatic Shard/exact/x4", -- [17]
-			"Arcane Dust/exact/x46", -- [18]
-			"Dragon's Teeth/exact/x2", -- [19]
-			"Volatile Earth/exact/x25", -- [20]
-			"Golden Pearl/exact/x2", -- [21]
-			"Essence of Air/exact/x4", -- [22]
-			"Volatile Air/exact/x12", -- [23]
-			"Volatile Water/exact/x2", -- [24]
-			"Volatile Water/exact/x15", -- [25]
-			"tem<", -- [26]
-			"Alchemical Catalyst/exact", -- [27]
-			"Luminous Shard/exact", -- [28]
-			"Sorcerous Earth/exact", -- [29]
-		},
-		["sidebarBtn"] = 2,
 	},
 	["profiles"] = {
 		["Uldaris - Sisters of Elune"] = {
