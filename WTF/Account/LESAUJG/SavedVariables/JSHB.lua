@@ -15,6 +15,10 @@ JSHB4 = {
 				},
 			},
 			["newinstall"] = false,
+			["misdirectionannounce"] = {
+				["partychan"] = "NONE",
+				["raidchan"] = "NONE",
+			},
 			["crowdcontrol"] = {
 				["anchor"] = {
 					nil, -- [1]
@@ -22,10 +26,6 @@ JSHB4 = {
 					nil, -- [3]
 					-190.000015258789, -- [4]
 				},
-			},
-			["misdirectionannounce"] = {
-				["raidchan"] = "NONE",
-				["partychan"] = "NONE",
 			},
 			["timers"] = {
 				["timerbar2"] = {
