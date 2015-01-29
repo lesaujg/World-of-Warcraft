@@ -14,19 +14,6 @@ JSHB4 = {
 					249.999984741211, -- [5]
 				},
 			},
-			["newinstall"] = false,
-			["crowdcontrol"] = {
-				["anchor"] = {
-					nil, -- [1]
-					nil, -- [2]
-					nil, -- [3]
-					-190.000015258789, -- [4]
-				},
-			},
-			["misdirectionannounce"] = {
-				["raidchan"] = "NONE",
-				["partychan"] = "NONE",
-			},
 			["timers"] = {
 				["timerbar2"] = {
 					["timers"] = {
@@ -688,6 +675,19 @@ JSHB4 = {
 					},
 				},
 			},
+			["misdirectionannounce"] = {
+				["partychan"] = "NONE",
+				["raidchan"] = "NONE",
+			},
+			["crowdcontrol"] = {
+				["anchor"] = {
+					nil, -- [1]
+					nil, -- [2]
+					nil, -- [3]
+					-190.000015258789, -- [4]
+				},
+			},
+			["newinstall"] = false,
 		},
 	},
 }
