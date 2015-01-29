@@ -4,6 +4,9 @@ VER 3 000000000000001E "_Clear Target" "Ability_CheapShot"
 /petfollow
 /petpassive
 END
+VER 3 000000000000008E "BuyTradingPost" "INV_MISC_QUESTIONMARK"
+/run BuyMerchantItem(3) 
+END
 VER 3 000000000000008A "Des" "ACHIEVEMENT_GUILDPERK_QUICK AND DEAD"
 /tar Des
 END
