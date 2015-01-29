@@ -810,7 +810,7 @@ TukuiData = {
 			["Ghiaccioli"] = 780428777,
 			["Galinar"] = 5045317,
 			["Belrath"] = 98013973,
-			["Clothgar"] = 578264188,
+			["Clothgar"] = 600955976,
 			["Herbinator"] = 2124241,
 			["Uldaris"] = 209711867,
 		},

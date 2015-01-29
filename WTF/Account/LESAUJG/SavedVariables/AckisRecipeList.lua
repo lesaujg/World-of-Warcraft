@@ -73,9 +73,9 @@ ARLDB2 = {
 			["current_tab"] = 2,
 			["frameopts"] = {
 				["offsety"] = -116.999885559082,
+				["anchorTo"] = "TOP",
 				["offsetx"] = -250.000122070313,
 				["anchorFrom"] = "TOP",
-				["anchorTo"] = "TOP",
 			},
 		},
 		["Clothgar - Sisters of Elune"] = {
