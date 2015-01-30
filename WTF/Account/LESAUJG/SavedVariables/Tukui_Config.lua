@@ -2,8 +2,10 @@
 TukuiConfigShared = {
 	["Sisters of Elune"] = {
 		["Bracnar"] = {
-			["DataTexts"] = {
-				["LocalTime"] = false,
+			["ActionBars"] = {
+				["HotKey"] = true,
+				["OwnWarriorStanceBar"] = true,
+				["OwnShadowDanceBar"] = true,
 			},
 			["Bags"] = {
 				["Enable"] = false,
@@ -11,10 +13,8 @@ TukuiConfigShared = {
 			["General"] = {
 				["UIScale"] = 0.64,
 			},
-			["ActionBars"] = {
-				["HotKey"] = true,
-				["OwnWarriorStanceBar"] = true,
-				["OwnShadowDanceBar"] = true,
+			["DataTexts"] = {
+				["LocalTime"] = false,
 			},
 		},
 		["Ghiaccioli"] = {
@@ -29,19 +29,19 @@ TukuiConfigShared = {
 		},
 		["Belrath"] = {
 		},
-		["Clothgar"] = {
-			["General"] = {
-				["UIScale"] = 0.64,
-			},
-		},
-		["Herbinator"] = {
-		},
 		["Uldaris"] = {
 			["General"] = {
 				["UIScale"] = 0.64,
 			},
 			["Bags"] = {
 				["Enable"] = false,
+			},
+		},
+		["Herbinator"] = {
+		},
+		["Clothgar"] = {
+			["General"] = {
+				["UIScale"] = 0.64,
 			},
 		},
 	},
