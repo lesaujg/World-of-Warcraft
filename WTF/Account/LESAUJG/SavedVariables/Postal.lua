@@ -73,10 +73,10 @@ Postal3DB = {
 		["Bracnar - Sisters of Elune"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Clothgar|Sisters of Elune|Alliance", -- [1]
-					"Herbinator|Sisters of Elune|Alliance", -- [2]
-					"Angall|Sisters of Elune|Alliance", -- [3]
-					"Uldaris|Sisters of Elune|Alliance", -- [4]
+					"Herbinator|Sisters of Elune|Alliance", -- [1]
+					"Uldaris|Sisters of Elune|Alliance", -- [2]
+					"Clothgar|Sisters of Elune|Alliance", -- [3]
+					"Angall|Sisters of Elune|Alliance", -- [4]
 					"Ghiaccioli|Sisters of Elune|Alliance", -- [5]
 					"Aloraal|Sisters of Elune|Alliance", -- [6]
 					"Loupame|Sisters of Elune|Alliance", -- [7]
