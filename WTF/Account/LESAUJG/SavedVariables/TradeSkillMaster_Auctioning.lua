@@ -1,8 +1,22 @@
 
 TradeSkillMaster_AuctioningDB = {
-	["profiles"] = {
-		["Default"] = {
+	["factionrealm"] = {
+		["Alliance - Sisters of Elune"] = {
+			["player"] = {
+				["Bracnar"] = true,
+				["Ghiaccioli"] = true,
+				["Clothgar"] = true,
+				["Herbinator"] = true,
+				["Uldaris"] = true,
+			},
 		},
+	},
+	["profileKeys"] = {
+		["Clothgar - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
 	},
 	["global"] = {
 		["optionsTreeStatus"] = {
@@ -14,28 +28,14 @@ TradeSkillMaster_AuctioningDB = {
 				["3Sell old enchants"] = true,
 			},
 			["scrollvalue"] = 0,
-			["selected"] = "3Sell enchants",
+			["fullwidth"] = 945.000183105469,
 			["treesizable"] = true,
 			["treewidth"] = 175,
-			["fullwidth"] = 945.000183105469,
+			["selected"] = "3Sell enchants",
 		},
 	},
-	["profileKeys"] = {
-		["Uldaris - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-	},
-	["factionrealm"] = {
-		["Alliance - Sisters of Elune"] = {
-			["player"] = {
-				["Bracnar"] = true,
-				["Ghiaccioli"] = true,
-				["Uldaris"] = true,
-				["Herbinator"] = true,
-				["Clothgar"] = true,
-			},
+	["profiles"] = {
+		["Default"] = {
 		},
 	},
 }
