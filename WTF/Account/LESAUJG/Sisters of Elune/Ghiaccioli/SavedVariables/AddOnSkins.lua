@@ -36,6 +36,7 @@ AddOnSkinsOptions = {
 	["DBM"] = true,
 	["Blizzard_Spellbook"] = true,
 	["Blizzard_Gossip"] = true,
+	["Auctioneer"] = true,
 	["Blizzard_Bags"] = true,
 	["Blizzard_Calendar"] = true,
 	["SkadaSkin"] = true,

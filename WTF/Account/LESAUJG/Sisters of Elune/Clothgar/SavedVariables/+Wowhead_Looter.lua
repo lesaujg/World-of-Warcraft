@@ -1,11 +1,12 @@
 
 wlScans = {
 	["archaeology"] = "-1",
-	["timePlayedTotal"] = 608316,
+	["timePlayedTotal"] = 663859,
 	["glyphs"] = "-1",
-	["guid"] = "0x0180000006A1B17D",
+	["guid"] = "Player-1169-06A1B17D",
 }
 wlSetting = {
+	["minimap"] = false,
 }
 wlPetBlacklist = nil
 wlUIReloaded = nil

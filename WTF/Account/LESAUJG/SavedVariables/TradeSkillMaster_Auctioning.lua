@@ -22,16 +22,18 @@ TradeSkillMaster_AuctioningDB = {
 		["optionsTreeStatus"] = {
 			["groups"] = {
 				["1"] = true,
+				["3Sell Single Stuff"] = true,
 				["3"] = true,
 				[3] = true,
 				["3Sell enchants"] = true,
 				["3Sell old enchants"] = true,
+				["3Sell Stack Stuff"] = true,
 			},
 			["scrollvalue"] = 0,
-			["fullwidth"] = 945.000183105469,
+			["fullwidth"] = 945.000061035156,
 			["treesizable"] = true,
 			["treewidth"] = 175,
-			["selected"] = "3Sell enchants",
+			["selected"] = 1,
 		},
 	},
 	["profiles"] = {
