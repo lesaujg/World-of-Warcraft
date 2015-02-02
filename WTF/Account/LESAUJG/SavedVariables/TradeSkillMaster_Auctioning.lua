@@ -30,10 +30,10 @@ TradeSkillMaster_AuctioningDB = {
 				["3Sell Stack Stuff"] = true,
 			},
 			["scrollvalue"] = 0,
-			["fullwidth"] = 945.000061035156,
-			["treesizable"] = true,
-			["treewidth"] = 175,
+			["fullwidth"] = 945.000244140625,
 			["selected"] = 1,
+			["treewidth"] = 175,
+			["treesizable"] = true,
 		},
 	},
 	["profiles"] = {
