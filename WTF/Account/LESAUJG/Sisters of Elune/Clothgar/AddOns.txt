@@ -86,7 +86,7 @@ Basic_Resources: disabled
 Claw: disabled
 HandyNotes_DraenorTreasures: disabled
 LiteMount: disabled
-MasterPlan: disabled
+MasterPlan: enabled
 OPie: disabled
 RaidAchievement_WoDHeroics: disabled
 RaidAchievement_WoDRaids: disabled
@@ -126,3 +126,7 @@ DBM-TerraceofEndlessSpring: disabled
 DBM-TheEye: disabled
 DBM-ThroneFourWinds: disabled
 DBM-ThroneofThunder: disabled
+WeakAuras: disabled
+WeakAurasModelPaths: disabled
+WeakAurasOptions: disabled
+WeakAurasTutorials: disabled

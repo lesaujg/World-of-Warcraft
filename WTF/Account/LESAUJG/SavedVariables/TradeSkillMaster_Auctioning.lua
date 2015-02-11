@@ -5,6 +5,7 @@ TradeSkillMaster_AuctioningDB = {
 			["player"] = {
 				["Bracnar"] = true,
 				["Ghiaccioli"] = true,
+				["Sanjuri"] = true,
 				["Clothgar"] = true,
 				["Herbinator"] = true,
 				["Uldaris"] = true,
@@ -12,6 +13,7 @@ TradeSkillMaster_AuctioningDB = {
 		},
 	},
 	["profileKeys"] = {
+		["Sanjuri - Sisters of Elune"] = "Default",
 		["Clothgar - Sisters of Elune"] = "Default",
 		["Bracnar - Sisters of Elune"] = "Default",
 		["Ghiaccioli - Sisters of Elune"] = "Default",
@@ -31,7 +33,7 @@ TradeSkillMaster_AuctioningDB = {
 			},
 			["scrollvalue"] = 0,
 			["fullwidth"] = 945.000244140625,
-			["selected"] = 1,
+			["selected"] = "3Sell Single Stuff",
 			["treewidth"] = 175,
 			["treesizable"] = true,
 		},

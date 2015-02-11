@@ -81,7 +81,7 @@ HandyNotes_TimelessIsle_RareElites: disabled
 Combuctor: disabled
 RareCoordinator: enabled
 BagBrother: disabled
-Basic_Resources: enabled
+Basic_Resources: disabled
 Claw: disabled
 BittensSpellFlash_Hunter: disabled
 HandyNotes_DraenorTreasures: disabled
@@ -126,3 +126,7 @@ DBM-TerraceofEndlessSpring: enabled
 DBM-TheEye: enabled
 DBM-ThroneFourWinds: enabled
 DBM-ThroneofThunder: enabled
+WeakAuras: enabled
+WeakAurasModelPaths: enabled
+WeakAurasOptions: enabled
+WeakAurasTutorials: enabled

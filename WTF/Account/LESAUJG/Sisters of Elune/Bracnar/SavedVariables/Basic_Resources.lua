@@ -3,9 +3,9 @@ Basic_Resources = {
 	["gcd"] = true,
 	["cpalert"] = 0,
 	["hide_spec"] = 0,
-	["hpalert"] = 0,
 	["locked"] = false,
-	["always"] = false,
+	["hpalert"] = 0,
 	["scale"] = 1,
+	["always"] = false,
 	["frequency"] = 0.01,
 }

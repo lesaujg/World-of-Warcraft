@@ -18,6 +18,20 @@ TukuiConfigShared = {
 			},
 		},
 		["Ghiaccioli"] = {
+			["General"] = {
+				["UIScale"] = 0.64,
+			},
+		},
+		["Clothgar"] = {
+			["General"] = {
+				["UIScale"] = 0.64,
+			},
+		},
+		["Sanjuri"] = {
+		},
+		["Belrath"] = {
+		},
+		["Herbinator"] = {
 		},
 		["Galinar"] = {
 			["General"] = {
@@ -27,21 +41,9 @@ TukuiConfigShared = {
 				["Enable"] = false,
 			},
 		},
-		["Belrath"] = {
-		},
-		["Clothgar"] = {
-			["General"] = {
-				["UIScale"] = 0.64,
-			},
-		},
-		["Herbinator"] = {
-		},
 		["Uldaris"] = {
 			["General"] = {
 				["UIScale"] = 0.64,
-			},
-			["Bags"] = {
-				["Enable"] = false,
 			},
 		},
 	},

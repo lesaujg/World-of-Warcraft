@@ -6,6 +6,7 @@ TradeSkillMaster_AuctionDBDB = {
 		},
 	},
 	["profileKeys"] = {
+		["Sanjuri - Sisters of Elune"] = "Default",
 		["Uldaris - Sisters of Elune"] = "Default",
 		["Herbinator - Sisters of Elune"] = "Default",
 		["Ghiaccioli - Sisters of Elune"] = "Default",
@@ -14,8 +15,8 @@ TradeSkillMaster_AuctionDBDB = {
 	},
 	["realm"] = {
 		["Sisters of Elune"] = {
-			["lastCompleteScan"] = 1422850087,
-			["appDataUpdate"] = 1422850087,
+			["lastCompleteScan"] = 1423314547,
+			["appDataUpdate"] = 1423314547,
 		},
 	},
 }
