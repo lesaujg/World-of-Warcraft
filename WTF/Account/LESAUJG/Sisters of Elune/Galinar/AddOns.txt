@@ -29,7 +29,7 @@ HandyNotes_DraenorTreasures: enabled
 Informant: disabled
 LiteMount: disabled
 MasterPlan: enabled
-OPie: disabled
+OPie: enabled
 Postal: enabled
 RaidAchieveFilter: disabled
 RaidAchievement: disabled

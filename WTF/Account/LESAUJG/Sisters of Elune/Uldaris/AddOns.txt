@@ -87,7 +87,7 @@ Claw: disabled
 HandyNotes_DraenorTreasures: enabled
 LiteMount: disabled
 MasterPlan: enabled
-OPie: disabled
+OPie: enabled
 RaidAchievement_WoDHeroics: disabled
 RaidAchievement_WoDRaids: disabled
 TradeSkillMaster: enabled

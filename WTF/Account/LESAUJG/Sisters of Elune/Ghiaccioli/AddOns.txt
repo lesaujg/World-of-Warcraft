@@ -84,7 +84,7 @@ BagBrother: disabled
 BittensSpellFlash_Hunter: disabled
 HandyNotes_DraenorTreasures: enabled
 MasterPlan: enabled
-OPie: disabled
+OPie: enabled
 RaidAchievement_WoDHeroics: disabled
 RaidAchievement_WoDRaids: disabled
 TradeSkillMaster: enabled
