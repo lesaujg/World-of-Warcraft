@@ -774,7 +774,7 @@ local interestUI = CreateFrame("Frame", nil, missionList) do
 					if pg ~= self.pg then
 						for i=math.max(1, self.pg or 1), pg do
 							local si = self[i]
-							si:SetTexture(si.r or d, si.g or d, si.b or d)
+							si:SetTexture(si.r or 0, si.g or 0, si.b or 0)
 						end
 						for i=pg+1, self.pg or 9 do
 							self[i]:SetTexture(0,0,0, 0.25)
@@ -789,7 +789,7 @@ local interestUI = CreateFrame("Frame", nil, missionList) do
 		end)
 		loader:SetScript("OnHide", function(self)
 			if self.job then
-				if self.nf > 2 then
+				if (self.nf or 0) > 2 then
 					missionList.FadeIn:Play()
 				end
 				self.job = nil
@@ -1077,20 +1077,27 @@ local core = {} do
 		sf:SetScript("OnShow", function()
 			int:Update(bar:GetValue())
 		end)
-		local timeLeft
-		local function fadeIn(self, e)
-			timeLeft = timeLeft-e
-			if timeLeft < 0 then
+		missionList.FadeIn = {} do
+			local timeLeft
+			local function fadeInFinish()
+				sc:SetScript("OnUpdate", nil)
+				sc:SetScript("OnHide", nil)
 				sc:SetAlpha(1)
-				self:SetScript("OnUpdate", nil)
-			else
-				sc:SetAlpha(cos(timeLeft*360))
+			end
+			local function fadeIn(self, e)
+				timeLeft = timeLeft-e
+				if timeLeft < 0 then
+					fadeInFinish()
+				else
+					sc:SetAlpha(cos(timeLeft*360))
+				end
+			end
+			function missionList.FadeIn.Play()
+				timeLeft = 0.25
+				sc:SetScript("OnUpdate", fadeIn)
+				sc:SetScript("OnHide", fadeInFinish)
 			end
 		end
-		missionList.FadeIn = {Play=function()
-			timeLeft = 0.25
-			sc:SetScript("OnUpdate", fadeIn)
-		end}
 	end
 	local function Release(keepMin, keepMax)
 		local t, w = int.view, int.props.widgets
@@ -2173,6 +2180,15 @@ do -- interestMissionsHandle
 						end
 					end
 					b.Details:SetText((prefix or "|cffa0a0a0")  .. b.Details:GetText())
+				end
+			end
+			local mlvl2 = data.best[6]
+			if (mlvl2 or 0) > 600 then
+				local m = (" |cff%s(%d)"):format(info.iLevel < mlvl2 and "ff2020" or "a0a0a0", mlvl2)
+				if info.quality >= 4 and info.level >= 100 then
+					GarrisonFollowerTooltip.ILevel:SetFormattedText(GARRISON_FOLLOWER_ITEM_LEVEL:format(info.iLevel) .. m)
+				else
+					GarrisonFollowerTooltip.ClassSpecName:SetText(info.className .. " - " .. m)
 				end
 			end
 		end

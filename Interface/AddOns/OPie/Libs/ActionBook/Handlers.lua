@@ -410,8 +410,7 @@ do -- equipmentset: equipment sets by name
 	end)
 	RW:SetCommandHint(SLASH_EQUIP_SET1, 80, function(slash, _, clause, target)
 		if clause and clause ~= "" then
-			setMap[false] = clause
-			return true, hint(false)
+			return true, hint(clause)
 		end
 	end)
 end
@@ -615,7 +614,13 @@ do -- petspell: spell ID
 		add(SLASH_PET_DEFENSIVE1, "defend")
 		add(SLASH_PET_ASSIST1, "assist")
 		add(SLASH_PET_PASSIVE1, "passive")
-		add(SLASH_PET_DISMISS1, "dismiss")
+		if SLASH_PET_DISMISS1 then
+			add(SLASH_PET_DISMISS1, "dismiss")
+		elseif class == "HUNTER" then
+			actionID["dismiss"] = AB:CreateActionSlot(hint, "dismiss", "conditional", cnd, "attribute", "type","macro", "macrotext",SLASH_CAST1.." "..GetSpellInfo(HUNTER_DISMISS_PET))
+		else
+			actionID["dismiss"] = AB:CreateActionSlot(hint, "dismiss", "conditional", cnd, "func", PetDismiss)
+		end
 	end
 end
 do -- toybox: item ID

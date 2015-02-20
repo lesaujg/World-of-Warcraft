@@ -130,3 +130,4 @@ WeakAuras: enabled
 WeakAurasModelPaths: enabled
 WeakAurasOptions: enabled
 WeakAurasTutorials: enabled
+TradeSkillMaster_CompetitorTracker: disabled

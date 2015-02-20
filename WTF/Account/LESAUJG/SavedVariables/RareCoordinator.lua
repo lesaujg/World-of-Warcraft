@@ -8,9 +8,9 @@ RCDB = {
 	["biggerbag"] = false,
 	["x"] = 0,
 	["sort"] = true,
-	["notify"] = false,
+	["y"] = 1199.3076171875,
 	["height"] = 399.077075312688,
 	["lastVersion"] = "6.0.2-2",
 	["sound"] = "DIIING",
-	["y"] = 1199.3076171875,
+	["notify"] = false,
 }

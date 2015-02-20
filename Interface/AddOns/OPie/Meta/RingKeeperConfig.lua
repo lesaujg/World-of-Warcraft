@@ -370,7 +370,7 @@ ringDetail = CreateFrame("Frame", nil, ringContainer) do
 	ringDetail.export:SetScript("OnClick", function() PlaySound("UChatScrollButton") api.exportRing() end)
 	
 	local exportBg, scroll = CreateFrame("Frame", nil, ringDetail)
-	exportBg:SetBackdrop({edgeFile="Interface/Tooltips/UI-Tooltip-Border", bgFile="Interface/DialogFrame/UI-DialogBox-Background-Dark", tile=true, edgeSize=16, trileSize=16, insets={left=4,right=4,bottom=4,top=4}})
+	exportBg:SetBackdrop({edgeFile="Interface/Tooltips/UI-Tooltip-Border", bgFile="Interface/DialogFrame/UI-DialogBox-Background-Dark", tile=true, edgeSize=16, tileSize=16, insets={left=4,right=4,bottom=4,top=4}})
 	exportBg:SetBackdropBorderColor(0.7,0.7,0.7) exportBg:SetBackdropColor(0,0,0,0.7)
 	exportBg:SetSize(265, 124) exportBg:Hide()
 	exportBg:SetPoint("TOPLEFT", ringDetail.shareLabel2, "BOTTOMLEFT", -2, -2)
@@ -566,7 +566,7 @@ sliceDetail = CreateFrame("Frame", nil, ringContainer) do
 	
 	do -- .macrotext
 		local bg = CreateFrame("Frame", nil, sliceDetail)
-		bg:SetBackdrop({edgeFile="Interface/Tooltips/UI-Tooltip-Border", bgFile="Interface/DialogFrame/UI-DialogBox-Background-Dark", tile=true, edgeSize=16, trileSize=16, insets={left=4,right=4,bottom=4,top=4}})
+		bg:SetBackdrop({edgeFile="Interface/Tooltips/UI-Tooltip-Border", bgFile="Interface/DialogFrame/UI-DialogBox-Background-Dark", tile=true, edgeSize=16, tileSize=16, insets={left=4,right=4,bottom=4,top=4}})
 		bg:SetBackdropBorderColor(0.7,0.7,0.7) bg:SetBackdropColor(0,0,0,0.7)
 		local eb, scroll = conf.ui.multilineInput("RKC_MacroInput", bg, 511)
 		prepEditBox(eb, function(self) api.setSliceProperty("macrotext", (self:GetText():gsub("|c%x+|Hrk%d+:([%a:%d/]+)|h.-|h|r", "{{%1}}"))) end)
