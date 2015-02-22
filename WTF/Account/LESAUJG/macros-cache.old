@@ -5,7 +5,7 @@ VER 3 000000000000001E "_Clear Target" "Ability_CheapShot"
 /petpassive
 END
 VER 3 000000000000008E "BuyTradingPost" "INV_MISC_QUESTIONMARK"
-/run BuyMerchantItem(1) 
+/run BuyMerchantItem(3) 
 END
 VER 3 000000000000008A "Des" "ACHIEVEMENT_GUILDPERK_QUICK AND DEAD"
 /tar Des
@@ -14,8 +14,8 @@ VER 3 000000000000008C "Garrison Report" "GARRISON_BUILDING_LUMBERMILL"
 END
 VER 3 0000000000000090 "GetKraken!" "ABILITY_HUNTER_EXPLOSIVESHOT"
 #showtooltip Flaming Spears
-/tar[nomod] Kvaldir Deepcaller
-/tar [mod:shift]North Sea Kraken
+/tar North Sea Kraken
+/tar Kvaldir Deepcaller
 /use Flaming Spears
 END
 VER 3 000000000000008F "Houlon" "SPELL_MAGIC_MANAGAIN"

@@ -14,12 +14,12 @@ VER 3 000000000000008C "Garrison Report" "GARRISON_BUILDING_LUMBERMILL"
 END
 VER 3 0000000000000090 "GetKraken!" "ABILITY_HUNTER_EXPLOSIVESHOT"
 #showtooltip Flaming Spears
-/tar[nomod] Kvaldir Deepcaller
-/tar [mod:shift]North Sea Kraken
+/tar North Sea Kraken
+/tar Kvaldir Deepcaller
 /use Flaming Spears
 END
 VER 3 000000000000008F "Houlon" "SPELL_MAGIC_MANAGAIN"
-/tat Houlon
+/tar Houlon
 /petattack
 /cast Arcane Shot
 END
