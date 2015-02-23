@@ -12,27 +12,11 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["regionType"] = "icon",
-			["additional_triggers"] = {
-			},
+			["id"] = "6 stacks p3",
 			["numTriggers"] = 1,
 			["selfPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "6",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
+			["additional_triggers"] = {
 			},
 			["actions"] = {
 				["start"] = {
@@ -63,7 +47,23 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["id"] = "6 stacks p3",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded: Fortification", -- [1]
+				},
+				["custom_hide"] = "timed",
+				["useCount"] = true,
+				["count"] = "6",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["event"] = "Health",
+				["debuffType"] = "HARMFUL",
+			},
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
 			["width"] = 70,
@@ -125,27 +125,12 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["regionType"] = "icon",
-			["id"] = "7 stacks p3",
+			["additional_triggers"] = {
+			},
 			["numTriggers"] = 1,
 			["selfPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["debuffType"] = "HARMFUL",
-				["useCount"] = true,
-				["count"] = "7",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
-			},
+			["id"] = "7 stacks p3",
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -175,7 +160,22 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["additional_triggers"] = {
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded: Fortification", -- [1]
+				},
+				["debuffType"] = "HARMFUL",
+				["useCount"] = true,
+				["count"] = "7",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["event"] = "Health",
+				["custom_hide"] = "timed",
 			},
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
@@ -238,27 +238,12 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["regionType"] = "icon",
-			["id"] = "8 stacks p3",
+			["additional_triggers"] = {
+			},
 			["numTriggers"] = 1,
 			["selfPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "8",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
-			},
+			["id"] = "8 stacks p3",
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -288,7 +273,22 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["additional_triggers"] = {
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded: Fortification", -- [1]
+				},
+				["custom_hide"] = "timed",
+				["useCount"] = true,
+				["count"] = "8",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["event"] = "Health",
+				["debuffType"] = "HARMFUL",
 			},
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
@@ -351,27 +351,11 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["regionType"] = "icon",
-			["additional_triggers"] = {
-			},
+			["id"] = "9 stacks p3",
 			["numTriggers"] = 1,
 			["selfPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["debuffType"] = "HARMFUL",
-				["useCount"] = true,
-				["count"] = "9",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
+			["additional_triggers"] = {
 			},
 			["actions"] = {
 				["start"] = {
@@ -402,7 +386,23 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["id"] = "9 stacks p3",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded: Fortification", -- [1]
+				},
+				["debuffType"] = "HARMFUL",
+				["useCount"] = true,
+				["count"] = "9",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["event"] = "Health",
+				["custom_hide"] = "timed",
+			},
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
 			["width"] = 70,
@@ -497,7 +497,7 @@ WeakAurasSaved = {
 			["desaturate"] = false,
 			["discrete_rotation"] = 0,
 			["font"] = "DorisPP",
-			["height"] = 14.9333047866821,
+			["height"] = 14.7199821472168,
 			["rotate"] = true,
 			["load"] = {
 				["use_never"] = false,
@@ -546,7 +546,7 @@ WeakAurasSaved = {
 			["additional_triggers"] = {
 			},
 			["frameStrata"] = 1,
-			["width"] = 44.0889396667481,
+			["width"] = 42.8800163269043,
 			["stickyDuration"] = false,
 			["numTriggers"] = 1,
 			["inverse"] = false,
@@ -833,7 +833,7 @@ WeakAurasSaved = {
 			["stickyDuration"] = false,
 			["rotation"] = 0,
 			["font"] = "DorisPP",
-			["height"] = 22.7555618286133,
+			["height"] = 20.4799556732178,
 			["rotate"] = true,
 			["load"] = {
 				["use_never"] = false,
@@ -891,7 +891,7 @@ WeakAurasSaved = {
 			},
 			["auto"] = true,
 			["frameStrata"] = 1,
-			["width"] = 203.377807617188,
+			["width"] = 183.040023803711,
 			["desaturate"] = false,
 			["inverse"] = false,
 			["numTriggers"] = 1,
@@ -930,27 +930,12 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["regionType"] = "icon",
-			["id"] = "2 stacks p3",
+			["additional_triggers"] = {
+			},
 			["numTriggers"] = 1,
 			["selfPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "2",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
-			},
+			["id"] = "2 stacks p3",
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -980,7 +965,22 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["additional_triggers"] = {
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded: Fortification", -- [1]
+				},
+				["custom_hide"] = "timed",
+				["useCount"] = true,
+				["count"] = "2",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["event"] = "Health",
+				["debuffType"] = "HARMFUL",
 			},
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
@@ -1149,27 +1149,12 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["regionType"] = "icon",
-			["id"] = "4 stacks p3",
+			["additional_triggers"] = {
+			},
 			["numTriggers"] = 1,
 			["selfPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "4",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
-			},
+			["id"] = "4 stacks p3",
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -1199,7 +1184,22 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["additional_triggers"] = {
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded: Fortification", -- [1]
+				},
+				["custom_hide"] = "timed",
+				["useCount"] = true,
+				["count"] = "4",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["event"] = "Health",
+				["debuffType"] = "HARMFUL",
 			},
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
@@ -1262,27 +1262,11 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["regionType"] = "icon",
-			["additional_triggers"] = {
-			},
+			["id"] = "5 stacks p3",
 			["numTriggers"] = 1,
 			["selfPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["debuffType"] = "HARMFUL",
-				["useCount"] = true,
-				["count"] = "5",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
+			["additional_triggers"] = {
 			},
 			["actions"] = {
 				["start"] = {
@@ -1313,7 +1297,23 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["id"] = "5 stacks p3",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded: Fortification", -- [1]
+				},
+				["debuffType"] = "HARMFUL",
+				["useCount"] = true,
+				["count"] = "5",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["event"] = "Health",
+				["custom_hide"] = "timed",
+			},
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
 			["width"] = 70,
@@ -1375,29 +1375,11 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["regionType"] = "icon",
-			["additional_triggers"] = {
-			},
+			["id"] = "4 stacks",
 			["numTriggers"] = 1,
 			["selfPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Replication", -- [3]
-				},
-				["debuffType"] = "HARMFUL",
-				["useCount"] = true,
-				["count"] = "4",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
+			["additional_triggers"] = {
 			},
 			["actions"] = {
 				["start"] = {
@@ -1432,7 +1414,25 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["id"] = "4 stacks",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded", -- [1]
+					"Branded: Displacement", -- [2]
+					"Branded: Replication", -- [3]
+				},
+				["debuffType"] = "HARMFUL",
+				["useCount"] = true,
+				["count"] = "4",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["event"] = "Health",
+				["custom_hide"] = "timed",
+			},
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
 			["width"] = 70,
@@ -1494,29 +1494,12 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["regionType"] = "icon",
-			["id"] = "5 stacks",
+			["additional_triggers"] = {
+			},
 			["numTriggers"] = 1,
 			["selfPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Replication", -- [3]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "5",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
-			},
+			["id"] = "5 stacks",
 			["actions"] = {
 				["start"] = {
 					["glow_action"] = "show",
@@ -1550,7 +1533,24 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["additional_triggers"] = {
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded", -- [1]
+					"Branded: Displacement", -- [2]
+					"Branded: Replication", -- [3]
+				},
+				["custom_hide"] = "timed",
+				["useCount"] = true,
+				["count"] = "5",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["event"] = "Health",
+				["debuffType"] = "HARMFUL",
 			},
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
@@ -1613,29 +1613,11 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["regionType"] = "icon",
-			["additional_triggers"] = {
-			},
+			["id"] = "2 stacks",
 			["numTriggers"] = 1,
 			["selfPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Replication", -- [3]
-				},
-				["debuffType"] = "HARMFUL",
-				["useCount"] = true,
-				["count"] = "2",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
+			["additional_triggers"] = {
 			},
 			["actions"] = {
 				["start"] = {
@@ -1670,7 +1652,25 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["id"] = "2 stacks",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded", -- [1]
+					"Branded: Displacement", -- [2]
+					"Branded: Replication", -- [3]
+				},
+				["debuffType"] = "HARMFUL",
+				["useCount"] = true,
+				["count"] = "2",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["event"] = "Health",
+				["custom_hide"] = "timed",
+			},
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
 			["width"] = 70,
@@ -1732,29 +1732,11 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["regionType"] = "icon",
-			["additional_triggers"] = {
-			},
+			["id"] = "3 stacks",
 			["numTriggers"] = 1,
 			["selfPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Replication", -- [3]
-				},
-				["debuffType"] = "HARMFUL",
-				["useCount"] = true,
-				["count"] = "3",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
+			["additional_triggers"] = {
 			},
 			["actions"] = {
 				["start"] = {
@@ -1789,7 +1771,25 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["id"] = "3 stacks",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded", -- [1]
+					"Branded: Displacement", -- [2]
+					"Branded: Replication", -- [3]
+				},
+				["debuffType"] = "HARMFUL",
+				["useCount"] = true,
+				["count"] = "3",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["event"] = "Health",
+				["custom_hide"] = "timed",
+			},
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
 			["width"] = 70,
@@ -1851,27 +1851,12 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["regionType"] = "icon",
-			["id"] = "1 stack p3",
+			["additional_triggers"] = {
+			},
 			["numTriggers"] = 1,
 			["selfPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "1",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
-			},
+			["id"] = "1 stack p3",
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -1901,7 +1886,22 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["additional_triggers"] = {
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded: Fortification", -- [1]
+				},
+				["custom_hide"] = "timed",
+				["useCount"] = true,
+				["count"] = "1",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["event"] = "Health",
+				["debuffType"] = "HARMFUL",
 			},
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
@@ -1964,29 +1964,11 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["regionType"] = "icon",
-			["additional_triggers"] = {
-			},
+			["id"] = "6 stacks",
 			["numTriggers"] = 1,
 			["selfPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Replication", -- [3]
-				},
-				["debuffType"] = "HARMFUL",
-				["useCount"] = true,
-				["count"] = "6",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
+			["additional_triggers"] = {
 			},
 			["actions"] = {
 				["start"] = {
@@ -2021,7 +2003,25 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["id"] = "6 stacks",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded", -- [1]
+					"Branded: Displacement", -- [2]
+					"Branded: Replication", -- [3]
+				},
+				["debuffType"] = "HARMFUL",
+				["useCount"] = true,
+				["count"] = "6",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["event"] = "Health",
+				["custom_hide"] = "timed",
+			},
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
 			["width"] = 70,
@@ -2083,27 +2083,11 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["regionType"] = "icon",
-			["additional_triggers"] = {
-			},
+			["id"] = "12 stacks p3",
 			["numTriggers"] = 1,
 			["selfPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "12",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
+			["additional_triggers"] = {
 			},
 			["actions"] = {
 				["start"] = {
@@ -2134,7 +2118,23 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["id"] = "12 stacks p3",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded: Fortification", -- [1]
+				},
+				["custom_hide"] = "timed",
+				["useCount"] = true,
+				["count"] = "12",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["event"] = "Health",
+				["debuffType"] = "HARMFUL",
+			},
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
 			["width"] = 70,
@@ -2220,7 +2220,7 @@ WeakAurasSaved = {
 			["stickyDuration"] = false,
 			["rotation"] = 0,
 			["font"] = "DorisPP",
-			["height"] = 14.9333047866821,
+			["height"] = 14.7199821472168,
 			["rotate"] = true,
 			["load"] = {
 				["use_never"] = false,
@@ -2278,7 +2278,7 @@ WeakAurasSaved = {
 				},
 			},
 			["frameStrata"] = 1,
-			["width"] = 74.6666641235352,
+			["width"] = 72.9599914550781,
 			["id"] = "Highmaul - Imperator Mar'gok - Arcane Wrath Current",
 			["inverse"] = false,
 			["numTriggers"] = 1,
@@ -2470,27 +2470,12 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["regionType"] = "icon",
-			["id"] = "3 stacks p3",
+			["additional_triggers"] = {
+			},
 			["numTriggers"] = 1,
 			["selfPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "3",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
-			},
+			["id"] = "3 stacks p3",
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -2520,7 +2505,22 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["additional_triggers"] = {
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded: Fortification", -- [1]
+				},
+				["custom_hide"] = "timed",
+				["useCount"] = true,
+				["count"] = "3",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["event"] = "Health",
+				["debuffType"] = "HARMFUL",
 			},
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
@@ -2612,13 +2612,13 @@ WeakAurasSaved = {
 			},
 			["anchorPoint"] = "CENTER",
 			["frameStrata"] = 1,
-			["width"] = 1.00000751018524,
+			["width"] = 0.999999701976776,
 			["xOffset"] = 0,
 			["font"] = "Friz Quadrata TT",
 			["numTriggers"] = 1,
 			["additional_triggers"] = {
 			},
-			["height"] = 1.00000751018524,
+			["height"] = 0.999999701976776,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -2677,29 +2677,11 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["regionType"] = "icon",
-			["additional_triggers"] = {
-			},
+			["id"] = "1 stack",
 			["numTriggers"] = 1,
 			["selfPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Replication", -- [3]
-				},
-				["debuffType"] = "HARMFUL",
-				["useCount"] = true,
-				["count"] = "1",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
+			["additional_triggers"] = {
 			},
 			["actions"] = {
 				["start"] = {
@@ -2734,7 +2716,25 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["id"] = "1 stack",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded", -- [1]
+					"Branded: Displacement", -- [2]
+					"Branded: Replication", -- [3]
+				},
+				["debuffType"] = "HARMFUL",
+				["useCount"] = true,
+				["count"] = "1",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["event"] = "Health",
+				["custom_hide"] = "timed",
+			},
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
 			["width"] = 70,
@@ -2796,27 +2796,11 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["regionType"] = "icon",
-			["additional_triggers"] = {
-			},
+			["id"] = "10 stacks p3",
 			["numTriggers"] = 1,
 			["selfPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "10",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
+			["additional_triggers"] = {
 			},
 			["actions"] = {
 				["start"] = {
@@ -2847,7 +2831,23 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["id"] = "10 stacks p3",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded: Fortification", -- [1]
+				},
+				["custom_hide"] = "timed",
+				["useCount"] = true,
+				["count"] = "10",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["event"] = "Health",
+				["debuffType"] = "HARMFUL",
+			},
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
 			["width"] = 70,
@@ -2909,27 +2909,12 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["regionType"] = "icon",
-			["id"] = "11 stacks p3",
+			["additional_triggers"] = {
+			},
 			["numTriggers"] = 1,
 			["selfPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["debuffType"] = "HARMFUL",
-				["useCount"] = true,
-				["count"] = "11",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
-			},
+			["id"] = "11 stacks p3",
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -2959,7 +2944,22 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["additional_triggers"] = {
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded: Fortification", -- [1]
+				},
+				["debuffType"] = "HARMFUL",
+				["useCount"] = true,
+				["count"] = "11",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["event"] = "Health",
+				["custom_hide"] = "timed",
 			},
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
@@ -3022,29 +3022,12 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["regionType"] = "icon",
-			["id"] = "7 stacks",
+			["additional_triggers"] = {
+			},
 			["numTriggers"] = 1,
 			["selfPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Replication", -- [3]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "7",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
-			},
+			["id"] = "7 stacks",
 			["actions"] = {
 				["start"] = {
 					["glow_action"] = "show",
@@ -3078,7 +3061,24 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["additional_triggers"] = {
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded", -- [1]
+					"Branded: Displacement", -- [2]
+					"Branded: Replication", -- [3]
+				},
+				["custom_hide"] = "timed",
+				["useCount"] = true,
+				["count"] = "7",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["spellIds"] = {
+				},
+				["event"] = "Health",
+				["debuffType"] = "HARMFUL",
 			},
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,

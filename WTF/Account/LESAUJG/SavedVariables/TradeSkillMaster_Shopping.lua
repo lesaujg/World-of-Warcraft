@@ -21,111 +21,111 @@ TradeSkillMaster_ShoppingDB = {
 			},
 			["scrollvalue"] = 0,
 			["fullwidth"] = 945.000061035156,
-			["selected"] = 1,
-			["treewidth"] = 175,
 			["treesizable"] = true,
+			["treewidth"] = 175,
+			["selected"] = 1,
 		},
 		["previousSearches"] = {
-			"flask", -- [1]
+			"sorcerous fire/exact", -- [1]
 			"Sorcerous Earth/exact", -- [2]
-			"sorcerous fire/exact", -- [3]
+			"Sorcerous Air/exact", -- [3]
 			"Sorcerous Water/exact", -- [4]
-			"Sorcerous Air/exact", -- [5]
-			"temporal crystal/exact", -- [6]
-			"luminous shard/exact", -- [7]
-			"Essence of Air/exact/x5", -- [8]
-			"Talador Orchid/exact/x88", -- [9]
-			"Righteous Orb/exact/x2", -- [10]
-			"Mysterious Essence/exact/x2", -- [11]
-			"Large Brilliant Shard/exact/x4", -- [12]
-			"Icecap/exact/x1", -- [13]
-			"Frostweed/exact/x72", -- [14]
-			"Draenic Stamina Flask/exact/x10", -- [15]
-			"draenic dust/exact", -- [16]
-			"greater Draenic Strength Flask", -- [17]
-			"Essence of Undeath/exact/x3", -- [18]
-			"Heavenly Shard/exact/x1", -- [19]
-			"Nagrand Arrowbloom/exact/x131", -- [20]
-			"Living Essence/exact/x3", -- [21]
-			"Essence of Undeath/exact/x4", -- [22]
-			"Luminous Shard/exact/x5", -- [23]
-			"Large Brilliant Shard/exact/x1", -- [24]
-			"Blackrock Ore/exact", -- [25]
-			"Draenic Stamina Flask/exact/x45", -- [26]
-			"Draenic Strength Flask/exact/x36", -- [27]
-			"Draenic Strength Flask/exact/x16", -- [28]
-			"Nagrand Arrowbloom/exact/x283", -- [29]
-			"Illusion Dust/exact/x4", -- [30]
-			"Large Brilliant Shard/exact/x2", -- [31]
-			"Sha Crystal/exact/x4", -- [32]
-			"Greater Eternal Essence/exact/x8", -- [33]
-			"Nagrand Arrowbloom/exact/x255", -- [34]
-			"Draenic Strength Flask/exact/x12", -- [35]
-			"Draenic Stamina Flask/exact/x5", -- [36]
-			"True Iron Ore/exact", -- [37]
-			"draenic", -- [38]
-			"draenic flask", -- [39]
-			"Sorcerous Fire/exact/x1", -- [40]
-			"Nagrand Arrowbloom/exact/x77", -- [41]
-			"Eternal Earth/exact/x8", -- [42]
-			"Draenic Intellect Flask/exact", -- [43]
-			"Draenic Intellect Flask/exact/x1", -- [44]
-			"Draenic Agility Flask/exact/x5", -- [45]
-			"Truesilver Bar/exact/x3", -- [46]
-			"Sha Crystal/exact/x1", -- [47]
-			"Sha Crystal/exact/x9", -- [48]
-			"Heavenly Shard/exact/x2", -- [49]
-			"Sha Crystal/exact/x7", -- [50]
-			"Essence of Undeath/exact/x1", -- [51]
-			"Sha Crystal/exact/x19", -- [52]
-			"sorcerous", -- [53]
-			"Sorcerous Earth/exact/x11", -- [54]
-			"Sorcerous Water/exact/x9", -- [55]
-			"Sorcerous Air/exact/x8", -- [56]
-			"Sorcerous Fire/exact/x4", -- [57]
-			"Heavenly Shard/exact/x4", -- [58]
-			"Sha Crystal/exact/x18", -- [59]
-			"Mysterious Essence/exact/x1", -- [60]
-			"Sorcerous Water/exact/x3", -- [61]
-			"Sorcerous Fire/exact/x23", -- [62]
-			"Sorcerous Air/exact/x17", -- [63]
-			"Sorcerous Earth/exact/x6", -- [64]
-			"Sorcerous Earth/exact/x7", -- [65]
-			"Sorcerous Earth/exact/x4", -- [66]
-			"Sorcerous Air/exact/x1", -- [67]
-			"Sorcerous Water/air", -- [68]
-			"Sorcerous Water/exact/x6", -- [69]
-			"Sorcerous Fire/exact/x9", -- [70]
-			"temporal crystal", -- [71]
-			"Silkweed/exact", -- [72]
-			"Shieldtronic Shield/exact", -- [73]
-			"Runed Orb/exact", -- [74]
-			"Pure Rage Potion/exact", -- [75]
-			"Master Healing Potion/exact", -- [76]
-			"Icethorn/exact", -- [77]
-			"Healing Tonic/exact", -- [78]
-			"Green Tea Leaf/exact", -- [79]
-			"Frost Lotus/exact", -- [80]
-			"Fool's Cap/exact", -- [81]
-			"Flask of Spring Blossoms/exact", -- [82]
-			"Eternal Life/exact", -- [83]
-			"Draenic Strength Potion/exact", -- [84]
-			"Draenic Stamina Flask/exact", -- [85]
-			"Draenic Intellect Potion/exact", -- [86]
-			"Draenic Armor Potion/exact", -- [87]
-			"Arcane Crystal Conduit/exact", -- [88]
-			"Arcane Crystal Casing/exact", -- [89]
-			"Arcane Crystal Amplifier/exact", -- [90]
-			"Plans: Pyrium Legplates of Purified Evil/exact", -- [91]
-			"Imbued Plate Girdle/exact", -- [92]
-			"Dizze's Whirling Robe/exact", -- [93]
-			"Sorcerous Earth/exact/x1", -- [94]
-			"Sorcerous Fire/exact/x2", -- [95]
-			"Sha Crystal/exact/x10", -- [96]
-			"Sha Crystal/exact/x12", -- [97]
-			"Luminous Shard/exact/x7", -- [98]
-			"sorcerous air/exact/x3", -- [99]
-			"Sorcerous Water/exact/x1", -- [100]
+			"temporal crystal/exact", -- [5]
+			"Talador Orchid/exact/x53", -- [6]
+			"Nagrand Arrowbloom/exact/x146", -- [7]
+			"Mysterious Essence/exact/x2", -- [8]
+			"Essence of Air/exact/x3", -- [9]
+			"Draenic Stamina Flask/exact/x25", -- [10]
+			"draenic dust/exact", -- [11]
+			"flask", -- [12]
+			"luminous shard/exact", -- [13]
+			"Essence of Air/exact/x5", -- [14]
+			"Talador Orchid/exact/x88", -- [15]
+			"Righteous Orb/exact/x2", -- [16]
+			"Large Brilliant Shard/exact/x4", -- [17]
+			"Icecap/exact/x1", -- [18]
+			"Frostweed/exact/x72", -- [19]
+			"Draenic Stamina Flask/exact/x10", -- [20]
+			"greater Draenic Strength Flask", -- [21]
+			"Essence of Undeath/exact/x3", -- [22]
+			"Heavenly Shard/exact/x1", -- [23]
+			"Nagrand Arrowbloom/exact/x131", -- [24]
+			"Living Essence/exact/x3", -- [25]
+			"Essence of Undeath/exact/x4", -- [26]
+			"Luminous Shard/exact/x5", -- [27]
+			"Large Brilliant Shard/exact/x1", -- [28]
+			"Blackrock Ore/exact", -- [29]
+			"Draenic Stamina Flask/exact/x45", -- [30]
+			"Draenic Strength Flask/exact/x36", -- [31]
+			"Draenic Strength Flask/exact/x16", -- [32]
+			"Nagrand Arrowbloom/exact/x283", -- [33]
+			"Illusion Dust/exact/x4", -- [34]
+			"Large Brilliant Shard/exact/x2", -- [35]
+			"Sha Crystal/exact/x4", -- [36]
+			"Greater Eternal Essence/exact/x8", -- [37]
+			"Nagrand Arrowbloom/exact/x255", -- [38]
+			"Draenic Strength Flask/exact/x12", -- [39]
+			"Draenic Stamina Flask/exact/x5", -- [40]
+			"True Iron Ore/exact", -- [41]
+			"draenic", -- [42]
+			"draenic flask", -- [43]
+			"Sorcerous Fire/exact/x1", -- [44]
+			"Nagrand Arrowbloom/exact/x77", -- [45]
+			"Eternal Earth/exact/x8", -- [46]
+			"Draenic Intellect Flask/exact", -- [47]
+			"Draenic Intellect Flask/exact/x1", -- [48]
+			"Draenic Agility Flask/exact/x5", -- [49]
+			"Truesilver Bar/exact/x3", -- [50]
+			"Sha Crystal/exact/x1", -- [51]
+			"Sha Crystal/exact/x9", -- [52]
+			"Heavenly Shard/exact/x2", -- [53]
+			"Sha Crystal/exact/x7", -- [54]
+			"Essence of Undeath/exact/x1", -- [55]
+			"Sha Crystal/exact/x19", -- [56]
+			"sorcerous", -- [57]
+			"Sorcerous Earth/exact/x11", -- [58]
+			"Sorcerous Water/exact/x9", -- [59]
+			"Sorcerous Air/exact/x8", -- [60]
+			"Sorcerous Fire/exact/x4", -- [61]
+			"Heavenly Shard/exact/x4", -- [62]
+			"Sha Crystal/exact/x18", -- [63]
+			"Mysterious Essence/exact/x1", -- [64]
+			"Sorcerous Water/exact/x3", -- [65]
+			"Sorcerous Fire/exact/x23", -- [66]
+			"Sorcerous Air/exact/x17", -- [67]
+			"Sorcerous Earth/exact/x6", -- [68]
+			"Sorcerous Earth/exact/x7", -- [69]
+			"Sorcerous Earth/exact/x4", -- [70]
+			"Sorcerous Air/exact/x1", -- [71]
+			"Sorcerous Water/air", -- [72]
+			"Sorcerous Water/exact/x6", -- [73]
+			"Sorcerous Fire/exact/x9", -- [74]
+			"temporal crystal", -- [75]
+			"Silkweed/exact", -- [76]
+			"Shieldtronic Shield/exact", -- [77]
+			"Runed Orb/exact", -- [78]
+			"Pure Rage Potion/exact", -- [79]
+			"Master Healing Potion/exact", -- [80]
+			"Icethorn/exact", -- [81]
+			"Healing Tonic/exact", -- [82]
+			"Green Tea Leaf/exact", -- [83]
+			"Frost Lotus/exact", -- [84]
+			"Fool's Cap/exact", -- [85]
+			"Flask of Spring Blossoms/exact", -- [86]
+			"Eternal Life/exact", -- [87]
+			"Draenic Strength Potion/exact", -- [88]
+			"Draenic Stamina Flask/exact", -- [89]
+			"Draenic Intellect Potion/exact", -- [90]
+			"Draenic Armor Potion/exact", -- [91]
+			"Arcane Crystal Conduit/exact", -- [92]
+			"Arcane Crystal Casing/exact", -- [93]
+			"Arcane Crystal Amplifier/exact", -- [94]
+			"Plans: Pyrium Legplates of Purified Evil/exact", -- [95]
+			"Imbued Plate Girdle/exact", -- [96]
+			"Dizze's Whirling Robe/exact", -- [97]
+			"Sorcerous Earth/exact/x1", -- [98]
+			"Sorcerous Fire/exact/x2", -- [99]
+			"Sha Crystal/exact/x10", -- [100]
 		},
 		["destroyingTargetItems"] = {
 			["item:36926:0:0:0:0:0:0"] = "Shadow Crystal",
@@ -230,8 +230,8 @@ TradeSkillMaster_ShoppingDB = {
 			["item:43120:0:0:0:0:0:0"] = "Celestial Ink",
 			["item:23112:0:0:0:0:0:0"] = "Golden Draenite",
 			["item:34056:0:0:0:0:0:0"] = "Lesser Cosmic Essence",
-			["item:43127:0:0:0:0:0:0"] = "Snowfall Ink",
 			["item:11174:0:0:0:0:0:0"] = "Lesser Nether Essence",
+			["item:43127:0:0:0:0:0:0"] = "Snowfall Ink",
 			["item:52195:0:0:0:0:0:0"] = "Amberjewel",
 			["item:34057:0:0:0:0:0:0"] = "Abyss Crystal",
 			["item:52722:0:0:0:0:0:0"] = "Maelstrom Crystal",
@@ -250,7 +250,7 @@ TradeSkillMaster_ShoppingDB = {
 			["item:43115:0:0:0:0:0:0"] = "Hunter's Ink",
 			["item:52721:0:0:0:0:0:0"] = "Heavenly Shard",
 			["item:22452:0:0:0:0:0:0"] = "Primal Earth",
-			["item:115504:0:0:0:0:0:0"] = "Fractured Temporal Crystal",
+			["item:11084:0:0:0:0:0:0"] = "Large Glimmering Shard",
 			["item:36860:0:0:0:0:0:0"] = "Eternal Fire",
 			["item:74247:0:0:0:0:0:0"] = "Ethereal Shard",
 			["item:61979:0:0:0:0:0:0"] = "Ashen Pigment",
@@ -264,7 +264,7 @@ TradeSkillMaster_ShoppingDB = {
 			["item:43118:0:0:0:0:0:0"] = "Jadefire Ink",
 			["item:43122:0:0:0:0:0:0"] = "Shimmering Ink",
 			["item:34055:0:0:0:0:0:0"] = "Greater Cosmic Essence",
-			["item:37701:0:0:0:0:0:0"] = "Crystallized Earth",
+			["item:16203:0:0:0:0:0:0"] = "Greater Eternal Essence",
 			["item:39151:0:0:0:0:0:0"] = "Alabaster Pigment",
 			["item:61981:0:0:0:0:0:0"] = "Inferno Ink",
 			["item:43126:0:0:0:0:0:0"] = "Ink of the Sea",
@@ -277,7 +277,7 @@ TradeSkillMaster_ShoppingDB = {
 			["item:36927:0:0:0:0:0:0"] = "Twilight Opal",
 			["item:10938:0:0:0:0:0:0"] = "Lesser Magic Essence",
 			["item:37705:0:0:0:0:0:0"] = "Crystallized Water",
-			["item:16203:0:0:0:0:0:0"] = "Greater Eternal Essence",
+			["item:37701:0:0:0:0:0:0"] = "Crystallized Earth",
 			["item:23107:0:0:0:0:0:0"] = "Shadow Draenite",
 			["item:11134:0:0:0:0:0:0"] = "Lesser Mystic Essence",
 			["item:11135:0:0:0:0:0:0"] = "Greater Mystic Essence",
@@ -286,7 +286,7 @@ TradeSkillMaster_ShoppingDB = {
 			["item:11139:0:0:0:0:0:0"] = "Large Glowing Shard",
 			["item:61978:0:0:0:0:0:0"] = "Blackfallow Ink",
 			["item:76141:0:0:0:0:0:0"] = "Imperial Amethyst",
-			["item:11084:0:0:0:0:0:0"] = "Large Glimmering Shard",
+			["item:115504:0:0:0:0:0:0"] = "Fractured Temporal Crystal",
 			["item:36917:0:0:0:0:0:0"] = "Bloodstone",
 			["item:36924:0:0:0:0:0:0"] = "Sky Sapphire",
 			["item:23117:0:0:0:0:0:0"] = "Azure Moonstone",
