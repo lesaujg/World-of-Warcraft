@@ -3,13 +3,13 @@ local L		= mod:GetLocalizedStrings()
 local Riplimb	= EJ_GetSectionInfo(2581)
 local Rageface	= EJ_GetSectionInfo(2583)
 
-mod:SetRevision(("$Revision: 145 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 150 $"):sub(12, -3))
 mod:SetCreatureID(53691)
 mod:SetEncounterID(1205)
 mod:DisableEEKillDetection()
 mod:SetZone()
 mod:SetUsedIcons(6, 8) -- cross(7) is hard to see in redish environment?
-mod:SetModelSound("Sound\\Creature\\SHANNOX\\VO_FL_SHANNOX_SPAWN.wav", "Sound\\Creature\\SHANNOX\\VO_FL_SHANNOX_KILL_04.wav")
+mod:SetModelSound("Sound\\Creature\\SHANNOX\\VO_FL_SHANNOX_SPAWN.ogg", "Sound\\Creature\\SHANNOX\\VO_FL_SHANNOX_KILL_04.ogg")
 --Long: Yes, I smell them too, Riplimb. Outsiders encroach on the Firelord's private grounds. Find their trail. Find them for me, that I may dispense punishment!
 --Short: Dog food!
 

@@ -33,7 +33,7 @@ function iclllocaleui()
 	rallachiverepl4 = "Lista de todos los logros en"
 	rallachiverepl5 = "El grupo de logros para esta localización no se han encontrado en la base de datos."
 	rallachiverepl6 = "Chequeo de logros deshabilitado."
-	rallachiverepl7 = "Se han encontrado más de 10 logros (|cff00ff00%s|r). La lista completa está disponible en la ventana de opciones del addon (/rach - Lista por zonas)"
+	rallachiverepl7 = "Se han encontrado más de 10 logros (|cff00ff00%s|r). La lista completa está disponible en la ventana de opciones del addon (/achr - Lista por zonas)"
 	rallachiverepl8 = "Logros sin completar para 'gloria del héroe/raider' en"
 	rallachiverepl9 = "Has completado todos los logros para 'gloria del héroe/raider' pertenecientes a esta zona."
 	rallbutton2 = "Elije otra localización"

@@ -6,10 +6,3 @@ X: -39
 Y: -16
 W: 985
 H: 679
-Frame: TSMCraftingGatherFrame
-FrameLevel: 8
-Anchor: TOPRIGHT
-X: -100
-Y: -132
-W: 325
-H: 400

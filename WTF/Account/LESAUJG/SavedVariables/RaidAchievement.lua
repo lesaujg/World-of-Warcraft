@@ -1,8 +1,8 @@
 
 pseashowfailreas = true
 pseashownewvervar = true
-wherereportraidach = "raid"
-wherereportpartyach = "party"
+wherereportraidach = "sebe"
+wherereportpartyach = "sebe"
 raquantrepeatach = 5
 raquantrepeatachtm = 2
 raoldvern2 = 6.012
@@ -12,7 +12,7 @@ RA_Settings = {
 	["RAMinimapPos"] = -176,
 }
 rasoundtoplay = {
-	1, -- [1]
+	0, -- [1]
 	1, -- [2]
 	1, -- [3]
 	2, -- [4]

@@ -33,7 +33,7 @@ function iclllocaleui()
 	rallachiverepl4 = "Lista de todas as conquistas em" -- Needs review
 	rallachiverepl5 = "Conquistas de grupo desse local não foram encontradas no banco de dados." -- Needs review
 	rallachiverepl6 = "Verificação de conquistas desativada." -- Needs review
-	rallachiverepl7 = "Mais de 10 conquistas foram encontradas (|cff00ff00%s|r). Lista completa disponível na janela de opções do addon (/rach - Listar por zona)" -- Needs review
+	rallachiverepl7 = "Mais de 10 conquistas foram encontradas (|cff00ff00%s|r). Lista completa disponível na janela de opções do addon (/achr - Listar por zona)" -- Needs review
 	rallachiverepl8 = "Conquistas incompletas para 'glória do herói/aventureiro' em" -- Needs review
 	rallachiverepl9 = "Você completou todas as conquistas para 'glória do herói/aventureiro'  nesta zona." -- Needs review
 	rallbutton2 = "Escolha outro local" -- Needs review

@@ -142,7 +142,7 @@ end)
 floatingMechanics:Hide()
 GameTooltip:HookScript("OnShow", function(self)
 	local owner = self:GetOwner()
-	if owner and owner:GetParent() ~= floatingMechanics then
+	if floatingMechanics:IsShown() and owner and (owner:IsForbidden() or owner:GetParent() ~= floatingMechanics) then
 		floatingMechanics:Hide()
 	end
 end)
@@ -153,11 +153,10 @@ local icons = setmetatable({}, {__index=function(self, k)
 	self[k] = f
 	return f
 end})
-local traits, traitGroups = {221, 76, 77, 79}, {
+local traits, traitGroups = {221, 76, 77, 79, 256}, {
 	{80, 236, 29, icon="Interface\\Icons\\XPBonus_Icon"},
-	{63,64,65,66,67,68,69,70,71,72,73,74,75, icon="Interface\\Icons\\PetBattle_Health", affinities=true},
-	{4,36,37,38,39,40,41,42,43, icon="Interface\\Icons\\Ability_Hunter_MarkedForDeath"},
-	{7,8,9,44,45,46,48,49, icon="Interface\\Icons\\Achievement_Zone_Stonetalon_01"},
+	{63,64,65,66,67,68,69,70,71,72,73,74,75,252,253,254,255,  icon="Interface\\Icons\\PetBattle_Health", affinities=true},
+	{4,36,37,38,39,40,41,42,43, 7,8,9,44,45,46,48,49, icon="Interface\\Icons\\Ability_Hunter_MarkedForDeath"},
 	{52,53,54,55,56,57,58,59,60,61,62,227,231, icon="Interface\\Icons\\Trade_Engineering"},
 }
 local function syncTotals()
@@ -377,10 +376,14 @@ hooksecurefunc("GarrisonFollowerPage_SetItem", function(self, itemID, iLevel)
 		self:SetScript("OnHide", FollowerItem_OnLeave)
 		self.HighlightBorder = CreateFollowerItemHighlight(self)
 	end
-	self.hasUpgrade = G.GetUpgradeItems(iLevel, self:GetParent().ItemWeapon == self)
+	local isWeapon = self:GetParent().ItemWeapon == self
+	self.hasUpgrade = G.GetUpgradeItems(iLevel, isWeapon)
 	self.UpgradeIcon:SetShown(self.hasUpgrade ~= nil)
 	for i=1,#self.HighlightBorder do
 		self.HighlightBorder[i]:SetShown(self.hasUpgrade)
+	end
+	if UpgradesFrame:IsVisible() and UpgradesFrame.owner == self then
+		UpgradesFrame:DisplayFor(self, iLevel, isWeapon)
 	end
 end)
 local function resetOnShow(self)

@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(192, "DBM-Firelands", nil, 78)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 145 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 148 $"):sub(12, -3))
 mod:SetCreatureID(52498)
 mod:SetEncounterID(1197)
 mod:DisableEEKillDetection()
@@ -123,7 +123,7 @@ function mod:SPELL_CAST_SUCCESS(args)
 	if spellId == 99476 then--Cast debuff only, don't add other spellid. (99476 spellid uses on SPELL_CAST_START, NOT SPELL_AURA_APPLIED), 
 		warnWidowKiss:Show(args.destName)
 		timerWidowsKissCD:Start()
-		if self.Options.RangeFrame and not DBM.RangeCheck:IsShown() and self:IsTank() then
+		if self.Options.RangeFrame and self:IsTank() then
 			DBM.RangeCheck:Show(10)
 		end
 		if args:IsPlayer() then

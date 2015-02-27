@@ -1,0 +1,13 @@
+tag 6.1.1
+5feb1bb1aefadb2b64c3a8caa3fa23f297a2d942
+Mike "Xodiv" Battersby <mib@post.com>
+2015-02-26 22:40:16 +1100
+
+Tagging 6.1.1.
+Support heirloom Chauffeur mounts.
+
+
+--------------------
+
+Mike "Xodiv" Battersby:
+	- Add support for heirloom-type mounts, code 284. Only current example is Chauffeured Mekgineer's Chopper added in patch 6.1.

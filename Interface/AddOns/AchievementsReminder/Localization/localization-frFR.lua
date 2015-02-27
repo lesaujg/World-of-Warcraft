@@ -32,7 +32,7 @@ function iclllocaleui()
 	rallachiverepl4 = "Liste de tous les hauts faits dans"
 	rallachiverepl5 = "Le groupe de hauts faits pour cette zone n'a pas été trouvé dans la base de données."
 	rallachiverepl6 = "Vérification de hauts faits désactivée."
-	rallachiverepl7 = "Plus de 10 hauts faits ont été trouvés (|cff00ff00%s|r). La liste complète est visible dans la fenêtre d'options de la zone (/rach - Liste pour cette zone)"
+	rallachiverepl7 = "Plus de 10 hauts faits ont été trouvés (|cff00ff00%s|r). La liste complète est visible dans la fenêtre d'options de la zone (/achr - Liste pour cette zone)"
 	rallachiverepl8 = "Hauts faits inachevés pour \"Gloire au héros/à l'écumeur de raids\" dans"
 	rallachiverepl9 = "Vous avez complété tous les hauts faits pour \"Gloire au héros/à l'écumeur de raids\" dans cette zone."
 	rallbutton2 = "Choisissez une autre zone"

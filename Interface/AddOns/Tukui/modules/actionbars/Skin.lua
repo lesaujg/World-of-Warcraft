@@ -30,10 +30,12 @@ function TukuiActionBars:SkinButton()
 	
 	HotKey:ClearAllPoints()
 	HotKey:Point("TOPRIGHT", 0, -3)
-	
+
+	TukuiActionBars.UpdateHotKey(Button)
+
 	if Border and Button.isSkinned then
 		Border:SetTexture('')
-		if Border:IsShown() then
+		if Border:IsShown() and C.ActionBars.EquipBorder then
 			Button:SetBackdropBorderColor(.08, .70, 0)
 		else
 			Button:SetBackdropBorderColor(unpack(C['General'].BorderColor))
@@ -283,17 +285,17 @@ function TukuiActionBars:UpdateHotKey(btype)
 	Text = Replace(Text, "(a%-)", "A")
 	Text = Replace(Text, "(c%-)", "C")
 	Text = Replace(Text, "(Mouse Button )", "M")
-	Text = Replace(Text, "(Middle Mouse)", "M3")
-	Text = Replace(Text, "(Mouse Wheel Up)", "MU")
-	Text = Replace(Text, "(Mouse Wheel Down)", "MD")
+	Text = Replace(Text, KEY_BUTTON3, "M3")
+	Text = Replace(Text, KEY_MOUSEWHEELUP, "MU")
+	Text = Replace(Text, KEY_MOUSEWHEELDOWN, "MD")
 	Text = Replace(Text, "(Num Pad )", "N")
-	Text = Replace(Text, "(Page Up)", "PU")
-	Text = Replace(Text, "(Page Down)", "PD")
-	Text = Replace(Text, "(Spacebar)", "SpB")
-	Text = Replace(Text, "(Insert)", "Ins")
-	Text = Replace(Text, "(Home)", "Hm")
-	Text = Replace(Text, "(Delete)", "Del")
-	Text = Replace(Text, "(Help)", "Hlp") -- mac
+	Text = Replace(Text, KEY_PAGEUP, "PU")
+	Text = Replace(Text, KEY_PAGEDOWN, "PD")
+	Text = Replace(Text, KEY_SPACE, "SpB")
+	Text = Replace(Text, KEY_INSERT, "Ins")
+	Text = Replace(Text, KEY_HOME, "Hm")
+	Text = Replace(Text, KEY_DELETE, "Del")
+	Text = Replace(Text, KEY_INSERT_MAC, "Hlp") -- mac
 	
 	if HotKey:GetText() == Indicator then
 		HotKey:SetText("")

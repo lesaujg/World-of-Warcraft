@@ -2,7 +2,7 @@
 OneRing_Config = {
 	["CharProfiles"] = {
 	},
-	["_GameVersion"] = "6.0.3.19342",
+	["_GameVersion"] = "6.1.0.19678",
 	["_OPieVersion"] = "Rose 6 (3.81)",
 	["ProfileStorage"] = {
 		["default"] = {

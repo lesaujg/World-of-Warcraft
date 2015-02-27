@@ -1,12 +1,12 @@
 local mod	= DBM:NewMod(198, "DBM-Firelands", nil, 78)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 146 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 150 $"):sub(12, -3))
 mod:SetCreatureID(52409)
 --mod:SetEncounterID(1203)--Figure out if EE is bad or not
 mod:SetZone()
 mod:SetUsedIcons(1, 2)
-mod:SetModelSound("Sound\\Creature\\RAGNAROS\\VO_FL_RAGNAROS_AGGRO.wav", "Sound\\Creature\\RAGNAROS\\VO_FL_RAGNAROS_KILL_03.wav")
+mod:SetModelSound("Sound\\Creature\\RAGNAROS\\VO_FL_RAGNAROS_AGGRO.ogg", "Sound\\Creature\\RAGNAROS\\VO_FL_RAGNAROS_KILL_03.ogg")
 --Long: blah blah blah (didn't feel like transcribing it)
 --Short: This is my realm
 

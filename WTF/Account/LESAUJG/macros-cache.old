@@ -21,7 +21,7 @@ VER 3 0000000000000090 "GetKraken!" "ABILITY_HUNTER_EXPLOSIVESHOT"
 /run UIErrorsFrame:Clear()
 END
 VER 3 000000000000008F "Houlon" "SPELL_MAGIC_MANAGAIN"
-/tar Houlon
+/tar Huolon
 /petattack
 /cast Arcane Shot
 END

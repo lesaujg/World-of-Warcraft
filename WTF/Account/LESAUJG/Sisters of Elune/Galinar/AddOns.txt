@@ -1,4 +1,4 @@
-Tukui_ConfigUI: enabled
+Tukui_ConfigUI: disabled
 Combuctor: disabled
 RareCoordinator: enabled
 BagBrother: disabled

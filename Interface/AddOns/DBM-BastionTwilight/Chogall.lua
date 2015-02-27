@@ -1,13 +1,13 @@
 local mod	= DBM:NewMod(167, "DBM-BastionTwilight", nil, 72)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 147 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 150 $"):sub(12, -3))
 mod:SetCreatureID(43324)
 mod:SetEncounterID(1029)
 mod:DisableEEKillDetection()
 mod:SetZone()
 mod:SetUsedIcons(1, 2, 3, 4, 5, 6, 7, 8)
-mod:SetModelSound("Sound\\Creature\\Chogall\\VO_BT_Chogall_BotEvent15.wav", "Sound\\Creature\\Chogall\\VO_BT_Chogall_BotEvent42.wav")
+mod:SetModelSound("Sound\\Creature\\Chogall\\VO_BT_Chogall_BotEvent15.ogg", "Sound\\Creature\\Chogall\\VO_BT_Chogall_BotEvent42.ogg")
 --Long: Foolish mortals-(Usurper's children!) nothing you have done- (Spawn of a lesser god!) I am TRYING to speak here. (Words, words, words. The Master wants murder.) ALL falls to chaos. ALL will be destroyed. (Chaos, chaos!) Your work here today changes nothing. (Chaos, chaos, all things end) No mortal may see what you have and live. Your end has come.
 --Short: (The Master sees, the Master sees!)
 
@@ -302,7 +302,7 @@ function mod:UNIT_AURA(uId)
 	if UnitDebuff("player", Corruption) and self:AntiSpam(7, 2) then
 		specWarnSickness:Show()
 		timerSickness:Start()
-		if self.Options.RangeFrame and not DBM.RangeCheck:IsShown() then
+		if self.Options.RangeFrame then
 			DBM.RangeCheck:Show(5)
 		end
 	end
