@@ -164,6 +164,9 @@ function TSM:RegisterModule()
 		{ key = "maxSell", label = L["Max Sell Price"], callback = "GetMaxSellPrice" },
 		{ key = "maxBuy", label = L["Max Buy Price"], callback = "GetMaxBuyPrice" },
 	}
+	TSM.moduleAPIs = {
+		{ key = "getAuctionStatsSinceLastSale", callback = "GetAuctionStatsSinceLastSale" },
+	}
 	TSM.tooltipOptions = { callback = "GUI:LoadTooltipOptions" }
 
 	TSMAPI:NewModule(TSM)
@@ -559,4 +562,11 @@ function TSM:Round(value, sig)
 	local gold = value / sig
 	gold = floor(gold + 0.5)
 	return gold * sig
+end
+
+function TSM:GetAuctionStatsSinceLastSale(itemString)
+	if not TSM.items[itemString] then return 0 end
+	local numSaleRecords = #TSM.items[itemString].sales
+	local lastSold = numSaleRecords > 0 and TSM.items[itemString].sales[numSaleRecords].time or 0
+	return TSM:GetAuctionStats(itemString, (lastSold > 0 and lastSold))
 end

@@ -1,14 +1,14 @@
 
 _NPCScanOverlayOptions = {
 	["Modules"] = {
-		["WorldMap"] = false,
+		["WorldMap"] = true,
 		["OmegaMap"] = true,
 		["BattlefieldMinimap"] = true,
 		["Minimap"] = true,
 	},
 	["ShowAll"] = true,
 	["Version"] = "5.4.8.5",
-	["ShowKey"] = true,
+	["ShowKey"] = false,
 	["MiniMapIcon"] = {
 	},
 	["ModulesExtra"] = {
