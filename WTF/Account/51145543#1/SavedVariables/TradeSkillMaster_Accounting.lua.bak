@@ -1,0 +1,19 @@
+
+TradeSkillMaster_AccountingDB = {
+	["profileKeys"] = {
+		["Farmerlime - Silvermoon"] = "Default",
+	},
+	["realm"] = {
+		["Silvermoon"] = {
+			["csvExpired"] = "itemString,itemName,stackSize,quantity,player,time",
+			["goldLog"] = {
+				["Farmerlime"] = "startMinute,endMinute,copper\n23761109,23761110,0",
+			},
+			["csvBuys"] = "itemString,itemName,stackSize,quantity,price,seller,player,time,source",
+			["csvIncome"] = "type,amount,source,player,time",
+			["csvExpense"] = "type,amount,destination,player,time",
+			["csvSales"] = "itemString,itemName,stackSize,quantity,price,buyer,player,time,source",
+			["csvCancelled"] = "itemString,itemName,stackSize,quantity,player,time",
+		},
+	},
+}

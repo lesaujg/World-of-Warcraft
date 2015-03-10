@@ -125,7 +125,7 @@ DBM-ThroneFourWinds: disabled
 DBM-ThroneofThunder: disabled
 Basic_Resources: disabled
 Claw: disabled
-LiteMount: disabled
+LiteMount: enabled
 WeakAuras: disabled
 WeakAurasModelPaths: disabled
 WeakAurasOptions: disabled

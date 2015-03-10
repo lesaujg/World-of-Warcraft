@@ -1,5 +1,5 @@
 SET scriptErrors "1"
-SET flaggedTutorials "v##$"
+SET flaggedTutorials "v##$##5"
 SET spamFilter "0"
 SET removeChatDelay "1"
 SET wholeChatWindowClickable "0"

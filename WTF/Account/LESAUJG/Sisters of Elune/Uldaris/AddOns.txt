@@ -83,9 +83,9 @@ RareCoordinator: enabled
 BagBrother: disabled
 BittensSpellFlash_Hunter: disabled
 Basic_Resources: disabled
-Claw: disabled
+Claw: enabled
 HandyNotes_DraenorTreasures: enabled
-LiteMount: disabled
+LiteMount: enabled
 MasterPlan: enabled
 OPie: enabled
 RaidAchievement_WoDHeroics: disabled

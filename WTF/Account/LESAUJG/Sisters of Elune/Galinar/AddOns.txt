@@ -22,12 +22,12 @@ Auc-Stat-StdDev: disabled
 Auc-Util-FixAH: disabled
 Basic_Resources: disabled
 BeanCounter: disabled
-Claw: disabled
+Claw: enabled
 Enchantrix: disabled
 Enchantrix-Barker: disabled
 HandyNotes_DraenorTreasures: enabled
 Informant: disabled
-LiteMount: disabled
+LiteMount: enabled
 MasterPlan: enabled
 OPie: enabled
 Postal: enabled

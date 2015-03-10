@@ -1,0 +1,18 @@
+
+SkadaDB = {
+	["hasUpgraded"] = true,
+	["profileKeys"] = {
+		["Farmerlime - Silvermoon"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["windows"] = {
+				{
+					["y"] = 1.525878906250e-005,
+					["point"] = "CENTER",
+					["x"] = -3.05175781250e-005,
+				}, -- [1]
+			},
+		},
+	},
+}
