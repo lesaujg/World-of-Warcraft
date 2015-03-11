@@ -20,2340 +20,2340 @@ TradeSkillMaster_DestroyingDB = {
 		["history"] = {
 			["Disenchant"] = {
 				{
+					["item"] = "item:15245:0:0:0:0:0:-18",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825351,
 					["result"] = {
 						["item:11176:0:0:0:0:0:0"] = 2,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:15245:0:0:0:0:0:-18",
-					["time"] = 1424825351,
 				}, -- [1]
 				{
+					["item"] = "item:24821:0:0:0:0:0:-40",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825355,
 					["result"] = {
 						["item:22445:0:0:0:0:0:0"] = 3,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:24821:0:0:0:0:0:-40",
-					["time"] = 1424825355,
 				}, -- [2]
 				{
+					["item"] = "item:8194:0:0:0:0:0:-78",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825358,
 					["result"] = {
 						["item:11177:0:0:0:0:0:0"] = 1,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:8194:0:0:0:0:0:-78",
-					["time"] = 1424825358,
 				}, -- [3]
 				{
+					["item"] = "item:2075:0:0:0:0:0:-20",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825362,
 					["result"] = {
 						["item:10938:0:0:0:0:0:0"] = 2,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:2075:0:0:0:0:0:-20",
-					["time"] = 1424825362,
 				}, -- [4]
 				{
+					["item"] = "item:12028:0:0:0:0:0:-68",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825485,
 					["result"] = {
 						["item:11083:0:0:0:0:0:0"] = 4,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:12028:0:0:0:0:0:-68",
-					["time"] = 1424825485,
 				}, -- [5]
 				{
+					["item"] = "item:2075:0:0:0:0:0:-17",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825488,
 					["result"] = {
 						["item:10938:0:0:0:0:0:0"] = 2,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:2075:0:0:0:0:0:-17",
-					["time"] = 1424825488,
 				}, -- [6]
 				{
+					["item"] = "item:36012:0:0:0:0:0:-35",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825492,
 					["result"] = {
 						["item:34054:0:0:0:0:0:0"] = 6,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:36012:0:0:0:0:0:-35",
-					["time"] = 1424825492,
 				}, -- [7]
 				{
+					["item"] = "item:6585:0:0:0:0:0:-9",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825495,
 					["result"] = {
 						["item:10940:0:0:0:0:0:0"] = 2,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:6585:0:0:0:0:0:-9",
-					["time"] = 1424825495,
 				}, -- [8]
 				{
+					["item"] = "item:1207:0:0:0:0:0:-68",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825498,
 					["result"] = {
 						["item:11135:0:0:0:0:0:0"] = 1,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:1207:0:0:0:0:0:-68",
-					["time"] = 1424825498,
 				}, -- [9]
 				{
+					["item"] = "item:55763:0:0:0:0:0:-129",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825502,
 					["result"] = {
 						["item:52555:0:0:0:0:0:0"] = 1,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:55763:0:0:0:0:0:-129",
-					["time"] = 1424825502,
 				}, -- [10]
 				{
+					["item"] = "item:55636:0:0:0:0:0:-132",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825505,
 					["result"] = {
 						["item:52555:0:0:0:0:0:0"] = 1,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:55636:0:0:0:0:0:-132",
-					["time"] = 1424825505,
 				}, -- [11]
 				{
+					["item"] = "item:15257:0:0:0:0:0:-17",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825509,
 					["result"] = {
 						["item:16203:0:0:0:0:0:0"] = 2,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:15257:0:0:0:0:0:-17",
-					["time"] = 1424825509,
 				}, -- [12]
 				{
+					["item"] = "item:82020:0:0:0:0:0:-122",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825512,
 					["result"] = {
 						["item:74249:0:0:0:0:0:0"] = 3,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:82020:0:0:0:0:0:-122",
-					["time"] = 1424825512,
 				}, -- [13]
 				{
+					["item"] = "item:36379:0:0:0:0:0:-67",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825615,
 					["result"] = {
 						["item:34055:0:0:0:0:0:0"] = 2,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:36379:0:0:0:0:0:-67",
-					["time"] = 1424825615,
 				}, -- [14]
 				{
+					["item"] = "item:12979:0:0:0:0:0:0",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825618,
 					["result"] = {
 						["item:10978:0:0:0:0:0:0"] = 1,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:12979:0:0:0:0:0:0",
-					["time"] = 1424825618,
 				}, -- [15]
 				{
+					["item"] = "item:55401:0:0:0:0:0:-123",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825621,
 					["result"] = {
 						["item:52555:0:0:0:0:0:0"] = 1,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:55401:0:0:0:0:0:-123",
-					["time"] = 1424825621,
 				}, -- [16]
 				{
+					["item"] = "item:55538:0:0:0:0:0:-41",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825625,
 					["result"] = {
 						["item:52555:0:0:0:0:0:0"] = 4,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:55538:0:0:0:0:0:-41",
-					["time"] = 1424825625,
 				}, -- [17]
 				{
+					["item"] = "item:1077:0:0:0:0:0:0",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825684,
 					["result"] = {
 						["item:11084:0:0:0:0:0:0"] = 1,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:1077:0:0:0:0:0:0",
-					["time"] = 1424825684,
 				}, -- [18]
 				{
+					["item"] = "item:1994:0:0:0:0:0:-18",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825687,
 					["result"] = {
 						["item:11175:0:0:0:0:0:0"] = 2,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:1994:0:0:0:0:0:-18",
-					["time"] = 1424825687,
 				}, -- [19]
 				{
+					["item"] = "item:24776:0:0:0:0:0:-40",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825691,
 					["result"] = {
 						["item:22445:0:0:0:0:0:0"] = 5,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:24776:0:0:0:0:0:-40",
-					["time"] = 1424825691,
 				}, -- [20]
 				{
+					["item"] = "item:55597:0:0:0:0:0:-135",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825721,
 					["result"] = {
 						["item:52718:0:0:0:0:0:0"] = 2,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:55597:0:0:0:0:0:-135",
-					["time"] = 1424825721,
 				}, -- [21]
 				{
+					["item"] = "item:15285:0:0:0:0:0:0",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825725,
 					["result"] = {
 						["item:11134:0:0:0:0:0:0"] = 2,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:15285:0:0:0:0:0:0",
-					["time"] = 1424825725,
 				}, -- [22]
 				{
+					["item"] = "item:25006:0:0:0:0:0:-45",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825728,
 					["result"] = {
 						["item:22445:0:0:0:0:0:0"] = 2,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:25006:0:0:0:0:0:-45",
-					["time"] = 1424825728,
 				}, -- [23]
 				{
+					["item"] = "item:9797:0:0:0:0:0:-78",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825793,
 					["result"] = {
 						["item:11082:0:0:0:0:0:0"] = 1,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:9797:0:0:0:0:0:-78",
-					["time"] = 1424825793,
 				}, -- [24]
 				{
+					["item"] = "item:10079:0:0:0:0:0:-11",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424825798,
 					["result"] = {
 						["item:11176:0:0:0:0:0:0"] = 1,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:10079:0:0:0:0:0:-11",
-					["time"] = 1424825798,
 				}, -- [25]
 				{
-					["time"] = 1424874167,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424874167,
 				}, -- [26]
 				{
-					["time"] = 1424874171,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424874171,
 				}, -- [27]
 				{
-					["time"] = 1424874198,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424874198,
 				}, -- [28]
 				{
-					["time"] = 1424874201,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424874201,
 				}, -- [29]
 				{
-					["time"] = 1424874205,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424874205,
 				}, -- [30]
 				{
-					["time"] = 1424874208,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874208,
 				}, -- [31]
 				{
-					["time"] = 1424874212,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874212,
 				}, -- [32]
 				{
-					["time"] = 1424874215,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874215,
 				}, -- [33]
 				{
-					["time"] = 1424874219,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874219,
 				}, -- [34]
 				{
-					["time"] = 1424874222,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874222,
 				}, -- [35]
 				{
-					["time"] = 1424874226,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874226,
 				}, -- [36]
 				{
-					["time"] = 1424874229,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874229,
 				}, -- [37]
 				{
-					["time"] = 1424874232,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874232,
 				}, -- [38]
 				{
-					["time"] = 1424874236,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874236,
 				}, -- [39]
 				{
-					["time"] = 1424874247,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874247,
 				}, -- [40]
 				{
-					["time"] = 1424874251,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874251,
 				}, -- [41]
 				{
-					["time"] = 1424874259,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874259,
 				}, -- [42]
 				{
-					["time"] = 1424874263,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874263,
 				}, -- [43]
 				{
-					["time"] = 1424874266,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874266,
 				}, -- [44]
 				{
-					["time"] = 1424874269,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874269,
 				}, -- [45]
 				{
-					["time"] = 1424874273,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874273,
 				}, -- [46]
 				{
-					["time"] = 1424874276,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874276,
 				}, -- [47]
 				{
-					["time"] = 1424874296,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874296,
 				}, -- [48]
 				{
-					["time"] = 1424874300,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874300,
 				}, -- [49]
 				{
-					["time"] = 1424874303,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874303,
 				}, -- [50]
 				{
-					["time"] = 1424874337,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874337,
 				}, -- [51]
 				{
-					["time"] = 1424874340,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874340,
 				}, -- [52]
 				{
-					["time"] = 1424874393,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424874393,
 				}, -- [53]
 				{
-					["time"] = 1424874397,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424874397,
 				}, -- [54]
 				{
-					["time"] = 1424874400,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874400,
 				}, -- [55]
 				{
-					["time"] = 1424874403,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874403,
 				}, -- [56]
 				{
-					["time"] = 1424874407,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874407,
 				}, -- [57]
 				{
-					["time"] = 1424874410,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874410,
 				}, -- [58]
 				{
-					["time"] = 1424874414,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874414,
 				}, -- [59]
 				{
-					["time"] = 1424874417,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874417,
 				}, -- [60]
 				{
-					["time"] = 1424874420,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874420,
 				}, -- [61]
 				{
-					["time"] = 1424874424,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874424,
 				}, -- [62]
 				{
-					["time"] = 1424874427,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874427,
 				}, -- [63]
 				{
-					["time"] = 1424874430,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874430,
 				}, -- [64]
 				{
-					["time"] = 1424874434,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874434,
 				}, -- [65]
 				{
-					["time"] = 1424874437,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874437,
 				}, -- [66]
 				{
-					["time"] = 1424874440,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874440,
 				}, -- [67]
 				{
-					["time"] = 1424874444,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874444,
 				}, -- [68]
 				{
-					["time"] = 1424874448,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874448,
 				}, -- [69]
 				{
-					["time"] = 1424874457,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874457,
 				}, -- [70]
 				{
-					["time"] = 1424874460,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874460,
 				}, -- [71]
 				{
-					["time"] = 1424874463,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874463,
 				}, -- [72]
 				{
-					["time"] = 1424874467,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874467,
 				}, -- [73]
 				{
-					["time"] = 1424874470,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874470,
 				}, -- [74]
 				{
-					["time"] = 1424874474,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424874474,
 				}, -- [75]
 				{
-					["time"] = 1424874478,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874478,
 				}, -- [76]
 				{
-					["time"] = 1424874481,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424874481,
 				}, -- [77]
 				{
-					["time"] = 1424874486,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874486,
 				}, -- [78]
 				{
-					["time"] = 1424874489,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874489,
 				}, -- [79]
 				{
-					["time"] = 1424874493,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874493,
 				}, -- [80]
 				{
-					["time"] = 1424874496,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874496,
 				}, -- [81]
 				{
-					["time"] = 1424874500,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874500,
 				}, -- [82]
 				{
-					["time"] = 1424874503,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874503,
 				}, -- [83]
 				{
-					["time"] = 1424874507,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874507,
 				}, -- [84]
 				{
-					["time"] = 1424874510,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874510,
 				}, -- [85]
 				{
-					["time"] = 1424874514,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874514,
 				}, -- [86]
 				{
-					["time"] = 1424874517,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874517,
 				}, -- [87]
 				{
-					["time"] = 1424874520,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874520,
 				}, -- [88]
 				{
-					["time"] = 1424874523,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424874523,
 				}, -- [89]
 				{
-					["time"] = 1424874541,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424874541,
 				}, -- [90]
 				{
-					["time"] = 1424874815,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424874815,
 				}, -- [91]
 				{
-					["time"] = 1424874819,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424874819,
 				}, -- [92]
 				{
-					["time"] = 1424874822,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424874822,
 				}, -- [93]
 				{
-					["time"] = 1424874831,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424874831,
 				}, -- [94]
 				{
-					["time"] = 1424874835,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424874835,
 				}, -- [95]
 				{
-					["time"] = 1424874838,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424874838,
 				}, -- [96]
 				{
-					["time"] = 1424874841,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424874841,
 				}, -- [97]
 				{
-					["time"] = 1424874845,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424874845,
 				}, -- [98]
 				{
-					["time"] = 1424874850,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874850,
 				}, -- [99]
 				{
-					["time"] = 1424874853,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874853,
 				}, -- [100]
 				{
-					["time"] = 1424874859,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874859,
 				}, -- [101]
 				{
-					["time"] = 1424874862,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424874862,
 				}, -- [102]
 				{
-					["time"] = 1424875091,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875091,
 				}, -- [103]
 				{
-					["time"] = 1424875097,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875097,
 				}, -- [104]
 				{
-					["time"] = 1424875100,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875100,
 				}, -- [105]
 				{
-					["time"] = 1424875103,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875103,
 				}, -- [106]
 				{
-					["time"] = 1424875107,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875107,
 				}, -- [107]
 				{
-					["time"] = 1424875110,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875110,
 				}, -- [108]
 				{
-					["time"] = 1424875113,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875113,
 				}, -- [109]
 				{
-					["time"] = 1424875117,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875117,
 				}, -- [110]
 				{
-					["time"] = 1424875120,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875120,
 				}, -- [111]
 				{
-					["time"] = 1424875124,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875124,
 				}, -- [112]
 				{
-					["time"] = 1424875127,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875127,
 				}, -- [113]
 				{
-					["time"] = 1424875130,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875130,
 				}, -- [114]
 				{
-					["time"] = 1424875133,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424875133,
 				}, -- [115]
 				{
-					["time"] = 1424875272,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424875272,
 				}, -- [116]
 				{
-					["time"] = 1424875275,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424875275,
 				}, -- [117]
 				{
-					["time"] = 1424875278,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424875278,
 				}, -- [118]
 				{
-					["time"] = 1424875284,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424875284,
 				}, -- [119]
 				{
-					["time"] = 1424875289,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424875289,
 				}, -- [120]
 				{
-					["time"] = 1424875292,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424875292,
 				}, -- [121]
 				{
-					["time"] = 1424875295,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424875295,
 				}, -- [122]
 				{
-					["time"] = 1424875299,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424875299,
 				}, -- [123]
 				{
-					["time"] = 1424875302,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424875302,
 				}, -- [124]
 				{
-					["time"] = 1424875306,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424875306,
 				}, -- [125]
 				{
-					["time"] = 1424875310,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115995:0:0:0:0:0:0",
+					["time"] = 1424875310,
 				}, -- [126]
 				{
-					["time"] = 1424875339,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875339,
 				}, -- [127]
 				{
-					["time"] = 1424875342,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875342,
 				}, -- [128]
 				{
-					["time"] = 1424875346,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875346,
 				}, -- [129]
 				{
-					["time"] = 1424875349,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875349,
 				}, -- [130]
 				{
-					["time"] = 1424875361,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875361,
 				}, -- [131]
 				{
-					["time"] = 1424875364,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875364,
 				}, -- [132]
 				{
-					["time"] = 1424875368,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875368,
 				}, -- [133]
 				{
-					["time"] = 1424875371,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875371,
 				}, -- [134]
 				{
-					["time"] = 1424875374,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875374,
 				}, -- [135]
 				{
-					["time"] = 1424875378,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875378,
 				}, -- [136]
 				{
-					["time"] = 1424875381,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875381,
 				}, -- [137]
 				{
-					["time"] = 1424875385,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875385,
 				}, -- [138]
 				{
-					["time"] = 1424875388,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875388,
 				}, -- [139]
 				{
-					["time"] = 1424875391,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875391,
 				}, -- [140]
 				{
-					["time"] = 1424875395,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875395,
 				}, -- [141]
 				{
-					["time"] = 1424875398,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875398,
 				}, -- [142]
 				{
-					["time"] = 1424875402,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875402,
 				}, -- [143]
 				{
-					["time"] = 1424875405,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875405,
 				}, -- [144]
 				{
-					["time"] = 1424875413,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875413,
 				}, -- [145]
 				{
-					["time"] = 1424875437,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875437,
 				}, -- [146]
 				{
-					["time"] = 1424875440,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875440,
 				}, -- [147]
 				{
-					["time"] = 1424875459,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875459,
 				}, -- [148]
 				{
-					["time"] = 1424875462,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875462,
 				}, -- [149]
 				{
-					["time"] = 1424875496,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875496,
 				}, -- [150]
 				{
-					["time"] = 1424875705,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875705,
 				}, -- [151]
 				{
-					["time"] = 1424875708,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875708,
 				}, -- [152]
 				{
-					["time"] = 1424875711,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875711,
 				}, -- [153]
 				{
-					["time"] = 1424875714,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875714,
 				}, -- [154]
 				{
-					["time"] = 1424875719,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875719,
 				}, -- [155]
 				{
-					["time"] = 1424875722,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875722,
 				}, -- [156]
 				{
-					["time"] = 1424875725,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875725,
 				}, -- [157]
 				{
-					["time"] = 1424875729,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875729,
 				}, -- [158]
 				{
-					["time"] = 1424875758,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875758,
 				}, -- [159]
 				{
-					["time"] = 1424875761,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875761,
 				}, -- [160]
 				{
-					["time"] = 1424875764,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875764,
 				}, -- [161]
 				{
-					["time"] = 1424875767,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875767,
 				}, -- [162]
 				{
-					["time"] = 1424875770,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875770,
 				}, -- [163]
 				{
-					["time"] = 1424875804,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875804,
 				}, -- [164]
 				{
-					["time"] = 1424875807,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875807,
 				}, -- [165]
 				{
-					["time"] = 1424875810,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875810,
 				}, -- [166]
 				{
-					["time"] = 1424875813,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875813,
 				}, -- [167]
 				{
-					["time"] = 1424875816,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875816,
 				}, -- [168]
 				{
-					["time"] = 1424875819,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875819,
 				}, -- [169]
 				{
-					["time"] = 1424875822,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875822,
 				}, -- [170]
 				{
-					["time"] = 1424875825,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875825,
 				}, -- [171]
 				{
-					["time"] = 1424875828,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875828,
 				}, -- [172]
 				{
-					["time"] = 1424875831,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875831,
 				}, -- [173]
 				{
-					["time"] = 1424875834,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875834,
 				}, -- [174]
 				{
-					["time"] = 1424875837,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875837,
 				}, -- [175]
 				{
-					["time"] = 1424875840,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875840,
 				}, -- [176]
 				{
-					["time"] = 1424875843,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875843,
 				}, -- [177]
 				{
-					["time"] = 1424875847,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875847,
 				}, -- [178]
 				{
-					["time"] = 1424875850,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875850,
 				}, -- [179]
 				{
-					["time"] = 1424875853,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875853,
 				}, -- [180]
 				{
-					["time"] = 1424875856,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875856,
 				}, -- [181]
 				{
-					["time"] = 1424875859,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875859,
 				}, -- [182]
 				{
-					["time"] = 1424875862,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875862,
 				}, -- [183]
 				{
-					["time"] = 1424875865,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875865,
 				}, -- [184]
 				{
-					["time"] = 1424875868,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875868,
 				}, -- [185]
 				{
-					["time"] = 1424875871,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875871,
 				}, -- [186]
 				{
-					["time"] = 1424875874,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875874,
 				}, -- [187]
 				{
-					["time"] = 1424875877,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875877,
 				}, -- [188]
 				{
-					["time"] = 1424875880,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875880,
 				}, -- [189]
 				{
-					["time"] = 1424875883,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875883,
 				}, -- [190]
 				{
-					["time"] = 1424875886,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875886,
 				}, -- [191]
 				{
-					["time"] = 1424875889,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875889,
 				}, -- [192]
 				{
-					["time"] = 1424875892,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875892,
 				}, -- [193]
 				{
-					["time"] = 1424875895,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875895,
 				}, -- [194]
 				{
-					["time"] = 1424875898,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875898,
 				}, -- [195]
 				{
-					["time"] = 1424875901,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875901,
 				}, -- [196]
 				{
-					["time"] = 1424875905,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875905,
 				}, -- [197]
 				{
-					["time"] = 1424875908,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875908,
 				}, -- [198]
 				{
-					["time"] = 1424875911,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875911,
 				}, -- [199]
 				{
-					["time"] = 1424875914,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875914,
 				}, -- [200]
 				{
-					["time"] = 1424875917,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875917,
 				}, -- [201]
 				{
-					["time"] = 1424875920,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875920,
 				}, -- [202]
 				{
-					["time"] = 1424875923,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875923,
 				}, -- [203]
 				{
-					["time"] = 1424875926,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875926,
 				}, -- [204]
 				{
-					["time"] = 1424875929,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875929,
 				}, -- [205]
 				{
-					["time"] = 1424875932,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875932,
 				}, -- [206]
 				{
-					["time"] = 1424875935,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875935,
 				}, -- [207]
 				{
-					["time"] = 1424875938,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875938,
 				}, -- [208]
 				{
-					["time"] = 1424875941,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875941,
 				}, -- [209]
 				{
-					["time"] = 1424875944,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875944,
 				}, -- [210]
 				{
-					["time"] = 1424875947,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875947,
 				}, -- [211]
 				{
-					["time"] = 1424875950,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875950,
 				}, -- [212]
 				{
-					["time"] = 1424875953,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875953,
 				}, -- [213]
 				{
-					["time"] = 1424875956,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875956,
 				}, -- [214]
 				{
-					["time"] = 1424875959,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875959,
 				}, -- [215]
 				{
-					["time"] = 1424875963,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424875963,
 				}, -- [216]
 				{
-					["time"] = 1424876009,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876009,
 				}, -- [217]
 				{
-					["time"] = 1424876012,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876012,
 				}, -- [218]
 				{
-					["time"] = 1424876015,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876015,
 				}, -- [219]
 				{
-					["time"] = 1424876018,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876018,
 				}, -- [220]
 				{
-					["time"] = 1424876021,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876021,
 				}, -- [221]
 				{
-					["time"] = 1424876024,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876024,
 				}, -- [222]
 				{
-					["time"] = 1424876027,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876027,
 				}, -- [223]
 				{
-					["time"] = 1424876030,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876030,
 				}, -- [224]
 				{
-					["time"] = 1424876033,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876033,
 				}, -- [225]
 				{
-					["time"] = 1424876036,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 10,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876036,
 				}, -- [226]
 				{
-					["time"] = 1424876039,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876039,
 				}, -- [227]
 				{
-					["time"] = 1424876042,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876042,
 				}, -- [228]
 				{
-					["time"] = 1424876045,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876045,
 				}, -- [229]
 				{
-					["time"] = 1424876048,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876048,
 				}, -- [230]
 				{
-					["time"] = 1424876051,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876051,
 				}, -- [231]
 				{
-					["time"] = 1424876054,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876054,
 				}, -- [232]
 				{
-					["time"] = 1424876058,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876058,
 				}, -- [233]
 				{
-					["time"] = 1424876061,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876061,
 				}, -- [234]
 				{
-					["time"] = 1424876064,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876064,
 				}, -- [235]
 				{
-					["time"] = 1424876067,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876067,
 				}, -- [236]
 				{
-					["time"] = 1424876070,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876070,
 				}, -- [237]
 				{
-					["time"] = 1424876073,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876073,
 				}, -- [238]
 				{
-					["time"] = 1424876076,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876076,
 				}, -- [239]
 				{
-					["time"] = 1424876079,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876079,
 				}, -- [240]
 				{
-					["time"] = 1424876082,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876082,
 				}, -- [241]
 				{
-					["time"] = 1424876085,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876085,
 				}, -- [242]
 				{
-					["time"] = 1424876091,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876091,
 				}, -- [243]
 				{
-					["time"] = 1424876094,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876094,
 				}, -- [244]
 				{
-					["time"] = 1424876097,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876097,
 				}, -- [245]
 				{
-					["time"] = 1424876100,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876100,
 				}, -- [246]
 				{
-					["time"] = 1424876103,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876103,
 				}, -- [247]
 				{
-					["time"] = 1424876106,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876106,
 				}, -- [248]
 				{
-					["time"] = 1424876110,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 9,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876110,
 				}, -- [249]
 				{
-					["time"] = 1424876113,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876113,
 				}, -- [250]
 				{
-					["time"] = 1424876116,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876116,
 				}, -- [251]
 				{
-					["time"] = 1424876119,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876119,
 				}, -- [252]
 				{
-					["time"] = 1424876122,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876122,
 				}, -- [253]
 				{
-					["time"] = 1424876125,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 12,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876125,
 				}, -- [254]
 				{
-					["time"] = 1424876128,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 8,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:115994:0:0:0:0:0:0",
+					["time"] = 1424876128,
 				}, -- [255]
 				{
-					["item"] = "item:55659:0:0:0:0:0:-133",
-					["isDraenicEnchanting"] = true,
 					["time"] = 1424915069,
+					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:52555:0:0:0:0:0:0"] = 2,
 					},
+					["item"] = "item:55659:0:0:0:0:0:-133",
 				}, -- [256]
 				{
-					["item"] = "item:36441:0:0:0:0:0:-19",
-					["isDraenicEnchanting"] = true,
 					["time"] = 1424915073,
+					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:34054:0:0:0:0:0:0"] = 5,
 					},
+					["item"] = "item:36441:0:0:0:0:0:-19",
 				}, -- [257]
 				{
-					["item"] = "item:9858:0:0:0:0:0:-14",
-					["isDraenicEnchanting"] = true,
 					["time"] = 1424915076,
+					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:11139:0:0:0:0:0:0"] = 1,
 					},
+					["item"] = "item:9858:0:0:0:0:0:-14",
 				}, -- [258]
 				{
-					["item"] = "item:20670:0:0:0:0:0:-332",
-					["isDraenicEnchanting"] = true,
 					["time"] = 1424915079,
+					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:16204:0:0:0:0:0:0"] = 3,
 					},
+					["item"] = "item:20670:0:0:0:0:0:-332",
 				}, -- [259]
 				{
-					["item"] = "item:9828:0:0:0:0:0:-19",
-					["isDraenicEnchanting"] = true,
 					["time"] = 1424915082,
+					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:11083:0:0:0:0:0:0"] = 3,
 					},
+					["item"] = "item:9828:0:0:0:0:0:-19",
 				}, -- [260]
 				{
-					["item"] = "item:2233:0:0:0:0:0:0",
-					["isDraenicEnchanting"] = true,
 					["time"] = 1424915087,
+					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:11082:0:0:0:0:0:0"] = 2,
 					},
+					["item"] = "item:2233:0:0:0:0:0:0",
 				}, -- [261]
 				{
+					["item"] = "item:36441:0:0:0:0:0:-44",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424998117,
 					["result"] = {
 						["item:34054:0:0:0:0:0:0"] = 6,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:36441:0:0:0:0:0:-44",
-					["time"] = 1424998117,
 				}, -- [262]
 				{
+					["item"] = "item:36046:0:0:0:0:0:-16",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1424998121,
 					["result"] = {
 						["item:34054:0:0:0:0:0:0"] = 5,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:36046:0:0:0:0:0:-16",
-					["time"] = 1424998121,
 				}, -- [263]
 				{
-					["time"] = 1425182846,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:10940:0:0:0:0:0:0"] = 5,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:2981:0:0:0:0:0:0",
+					["time"] = 1425182846,
 				}, -- [264]
 				{
-					["time"] = 1425182900,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:10998:0:0:0:0:0:0"] = 2,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:3193:0:0:0:0:0:-14",
+					["time"] = 1425182900,
 				}, -- [265]
 				{
-					["time"] = 1425182904,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:109693:0:0:0:0:0:0"] = 11,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:119551:0:0:0:0:0:0",
+					["time"] = 1425182904,
 				}, -- [266]
 				{
-					["time"] = 1425182907,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:52555:0:0:0:0:0:0"] = 3,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:55742:0:0:0:0:0:-8",
+					["time"] = 1425182907,
 				}, -- [267]
 				{
-					["time"] = 1425182911,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:52555:0:0:0:0:0:0"] = 3,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:55494:0:0:0:0:0:-43",
+					["time"] = 1425182911,
 				}, -- [268]
 				{
-					["time"] = 1425182914,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:111245:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:119555:0:0:0:0:0:0",
+					["time"] = 1425182914,
 				}, -- [269]
 				{
-					["time"] = 1425182918,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:10978:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:3198:0:0:0:0:0:-12",
+					["time"] = 1425182918,
 				}, -- [270]
 				{
-					["time"] = 1425182921,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:52555:0:0:0:0:0:0"] = 3,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:55750:0:0:0:0:0:-6",
+					["time"] = 1425182921,
 				}, -- [271]
 				{
-					["time"] = 1425182924,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:22446:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:24977:0:0:0:0:0:-11",
+					["time"] = 1425182924,
 				}, -- [272]
 				{
-					["time"] = 1425182927,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:52555:0:0:0:0:0:0"] = 3,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:55656:0:0:0:0:0:-132",
+					["time"] = 1425182927,
 				}, -- [273]
 				{
-					["time"] = 1425219511,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:52555:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:55578:0:0:0:0:0:-91",
+					["time"] = 1425219511,
 				}, -- [274]
 				{
-					["item"] = "item:3192:0:0:0:0:0:-18",
-					["isDraenicEnchanting"] = true,
 					["time"] = 1425262041,
+					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:10938:0:0:0:0:0:0"] = 1,
 					},
+					["item"] = "item:3192:0:0:0:0:0:-18",
 				}, -- [275]
 				{
-					["item"] = "item:3208:0:0:0:0:0:-81",
-					["isDraenicEnchanting"] = true,
 					["time"] = 1425262044,
+					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:11175:0:0:0:0:0:0"] = 1,
 					},
+					["item"] = "item:3208:0:0:0:0:0:-81",
 				}, -- [276]
 				{
-					["item"] = "item:2284:0:0:0:0:0:0",
-					["isDraenicEnchanting"] = true,
 					["time"] = 1425262047,
+					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:10938:0:0:0:0:0:0"] = 2,
 					},
+					["item"] = "item:2284:0:0:0:0:0:0",
 				}, -- [277]
 				{
-					["time"] = 1425263938,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:52555:0:0:0:0:0:0"] = 3,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:55495:0:0:0:0:0:-14",
+					["time"] = 1425263938,
 				}, -- [278]
 				{
-					["time"] = 1425263942,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:52555:0:0:0:0:0:0"] = 3,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:55495:0:0:0:0:0:-42",
+					["time"] = 1425263942,
 				}, -- [279]
 				{
-					["item"] = "item:9779:0:0:0:0:0:-18",
-					["isDraenicEnchanting"] = true,
 					["time"] = 1425341849,
+					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:10940:0:0:0:0:0:0"] = 2,
 					},
+					["item"] = "item:9779:0:0:0:0:0:-18",
 				}, -- [280]
 				{
-					["item"] = "item:10120:0:0:0:0:0:-11",
-					["isDraenicEnchanting"] = true,
 					["time"] = 1425341853,
+					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:16202:0:0:0:0:0:0"] = 1,
 					},
+					["item"] = "item:10120:0:0:0:0:0:-11",
 				}, -- [281]
 				{
-					["item"] = "item:36441:0:0:0:0:0:-14",
-					["isDraenicEnchanting"] = true,
 					["time"] = 1425362645,
+					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:34054:0:0:0:0:0:0"] = 7,
 					},
+					["item"] = "item:36441:0:0:0:0:0:-14",
 				}, -- [282]
 				{
+					["item"] = "item:55488:0:0:0:0:0:-42",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1425430180,
 					["result"] = {
 						["item:52555:0:0:0:0:0:0"] = 1,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:55488:0:0:0:0:0:-42",
-					["time"] = 1425430180,
 				}, -- [283]
 				{
-					["item"] = "item:6574:0:0:0:0:0:-17",
-					["isDraenicEnchanting"] = true,
 					["time"] = 1425531020,
+					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:10940:0:0:0:0:0:0"] = 5,
 					},
+					["item"] = "item:6574:0:0:0:0:0:-17",
 				}, -- [284]
 				{
-					["item"] = "item:15927:0:0:0:0:0:0",
-					["isDraenicEnchanting"] = true,
 					["time"] = 1425531024,
+					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:11083:0:0:0:0:0:0"] = 1,
 					},
+					["item"] = "item:15927:0:0:0:0:0:0",
 				}, -- [285]
 				{
-					["item"] = "item:25021:0:0:0:0:0:-36",
-					["isDraenicEnchanting"] = true,
 					["time"] = 1425531917,
+					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:22445:0:0:0:0:0:0"] = 3,
 					},
+					["item"] = "item:25021:0:0:0:0:0:-36",
 				}, -- [286]
 				{
+					["item"] = "item:3074:0:0:0:0:0:0",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1425861664,
 					["result"] = {
 						["item:10998:0:0:0:0:0:0"] = 1,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:3074:0:0:0:0:0:0",
-					["time"] = 1425861664,
 				}, -- [287]
 				{
+					["item"] = "item:55506:0:0:0:0:0:-139",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1425861667,
 					["result"] = {
 						["item:52718:0:0:0:0:0:0"] = 1,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:55506:0:0:0:0:0:-139",
-					["time"] = 1425861667,
 				}, -- [288]
 				{
-					["item"] = "item:55612:0:0:0:0:0:-5",
-					["isDraenicEnchanting"] = true,
 					["time"] = 1425864321,
+					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:52555:0:0:0:0:0:0"] = 2,
 					},
+					["item"] = "item:55612:0:0:0:0:0:-5",
 				}, -- [289]
 				{
-					["item"] = "item:55574:0:0:0:0:0:-5",
-					["isDraenicEnchanting"] = true,
 					["time"] = 1425864324,
+					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:52555:0:0:0:0:0:0"] = 2,
 					},
+					["item"] = "item:55574:0:0:0:0:0:-5",
 				}, -- [290]
 				{
-					["item"] = "item:55575:0:0:0:0:0:-5",
-					["isDraenicEnchanting"] = true,
 					["time"] = 1425864327,
+					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:52555:0:0:0:0:0:0"] = 4,
 					},
+					["item"] = "item:55575:0:0:0:0:0:-5",
 				}, -- [291]
 				{
-					["item"] = "item:55773:0:0:0:0:0:-6",
-					["isDraenicEnchanting"] = true,
 					["time"] = 1425864787,
+					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:52555:0:0:0:0:0:0"] = 3,
 					},
+					["item"] = "item:55773:0:0:0:0:0:-6",
 				}, -- [292]
 			},
 		},

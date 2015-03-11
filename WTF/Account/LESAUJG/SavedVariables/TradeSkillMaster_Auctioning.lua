@@ -45,9 +45,9 @@ TradeSkillMaster_AuctioningDB = {
 			},
 			["scrollvalue"] = 0,
 			["fullwidth"] = 945.000244140625,
-			["treesizable"] = true,
-			["treewidth"] = 175,
 			["selected"] = 1,
+			["treewidth"] = 175,
+			["treesizable"] = true,
 		},
 	},
 	["profiles"] = {
