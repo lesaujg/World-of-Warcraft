@@ -47,6 +47,13 @@ VER 3 0000000000000087 "RandomMount" "INV_MISC_QUESTIONMARK"
 /click [nobtn:2] LiteMount
 /click [btn:2] LiteMount RightButton
 END
+VER 3 0000000000000091 "TSM_Destroying" "ACHIEVEMENT_GUILDPERK_MASSRESURRECTION"
+/click TSMDestroyButton
+END
+VER 3 0000000000000092 "TSMAucBClick" "1"
+/click TSMAuctioningCancelButton
+/click TSMAuctioningPostButton
+END
 VER 3 000000000000008D "ZoomOut" "INV_MISC_QUESTIONMARK"
 /console cameradistancemaxfactor 10
 END

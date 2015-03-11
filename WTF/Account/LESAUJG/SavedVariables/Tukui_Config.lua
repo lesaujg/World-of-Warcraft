@@ -45,6 +45,9 @@ TukuiConfigShared = {
 			["General"] = {
 				["UIScale"] = 0.64,
 			},
+			["ActionBars"] = {
+				["HotKey"] = true,
+			},
 		},
 	},
 	["Account"] = {
