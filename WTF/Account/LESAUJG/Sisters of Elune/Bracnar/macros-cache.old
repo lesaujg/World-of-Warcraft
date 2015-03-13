@@ -37,7 +37,7 @@ END
 VER 3 0100000000000054 "Pet_stuff" "INV_Misc_QuestionMark"
 #showtooltip
 /cast [nopet,button:2] Revive Pet
-/cast [nopet] Call Pet 4
+/cast [nopet] Call Pet 2
 /cast [button:2, pet, nodead] Dismiss Pet
 /cast [@pet, pet, dead] Revive Pet
 /cast [@pet, pet, nodead] Mend Pet
