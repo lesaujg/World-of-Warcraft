@@ -1,0 +1,19 @@
+
+HandyNotesDB = {
+	["profileKeys"] = {
+		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
+	},
+	["profiles"] = {
+		["Clothgar - Sisters of Elune"] = {
+		},
+	},
+}
+HandyNotes_HandyNotesDB = {
+	["profileKeys"] = {
+		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
+	},
+	["profiles"] = {
+		["Clothgar - Sisters of Elune"] = {
+		},
+	},
+}

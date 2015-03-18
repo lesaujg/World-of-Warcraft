@@ -2,8 +2,9 @@
 WeakAurasSaved = {
 	["displays"] = {
 		["6 stacks p3"] = {
-			["parent"] = "Arcane Wrath(p3)",
-			["yOffset"] = 0,
+			["xOffset"] = 0,
+			["untrigger"] = {
+			},
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
 			["actions"] = {
@@ -14,24 +15,24 @@ WeakAurasSaved = {
 					["do_message"] = false,
 					["do_custom"] = true,
 				},
-				["init"] = {
-				},
 				["finish"] = {
+				},
+				["init"] = {
 				},
 			},
 			["fontFlags"] = "OUTLINE",
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["main"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
 			["trigger"] = {
@@ -41,17 +42,17 @@ WeakAurasSaved = {
 				["names"] = {
 					"Branded: Fortification", -- [1]
 				},
-				["custom_hide"] = "timed",
+				["debuffType"] = "HARMFUL",
 				["useCount"] = true,
 				["count"] = "6",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
+				["event"] = "Health",
 				["spellIds"] = {
 				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
+				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
+				["custom_hide"] = "timed",
 			},
-			["desaturate"] = false,
+			["stickyDuration"] = false,
 			["font"] = "Friz Quadrata TT",
 			["height"] = 70,
 			["load"] = {
@@ -75,13 +76,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["zone"] = "Highmaul",
-				["use_zone"] = true,
-				["use_combat"] = true,
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["use_zone"] = true,
+				["use_combat"] = true,
+				["zone"] = "Highmaul",
 				["size"] = {
 					["multi"] = {
 					},
@@ -90,28 +91,27 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["id"] = "6 stacks p3",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Arcane Wrath(p3)",
 			["additional_triggers"] = {
 			},
-			["untrigger"] = {
-			},
+			["icon"] = true,
+			["frameStrata"] = 1,
+			["width"] = 70,
+			["selfPoint"] = "CENTER",
+			["yOffset"] = 0,
 			["inverse"] = false,
 			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
+			["id"] = "6 stacks p3",
+			["desaturate"] = false,
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
@@ -121,8 +121,9 @@ WeakAurasSaved = {
 			},
 		},
 		["7 stacks p3"] = {
-			["parent"] = "Arcane Wrath(p3)",
-			["yOffset"] = 0,
+			["xOffset"] = 0,
+			["untrigger"] = {
+			},
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
 			["actions"] = {
@@ -133,24 +134,24 @@ WeakAurasSaved = {
 					["do_message"] = false,
 					["do_custom"] = true,
 				},
-				["init"] = {
-				},
 				["finish"] = {
+				},
+				["init"] = {
 				},
 			},
 			["fontFlags"] = "OUTLINE",
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["main"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
 			["trigger"] = {
@@ -160,17 +161,17 @@ WeakAurasSaved = {
 				["names"] = {
 					"Branded: Fortification", -- [1]
 				},
-				["debuffType"] = "HARMFUL",
+				["custom_hide"] = "timed",
 				["useCount"] = true,
 				["count"] = "7",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
+				["event"] = "Health",
 				["spellIds"] = {
 				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
+				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
+				["debuffType"] = "HARMFUL",
 			},
-			["desaturate"] = false,
+			["stickyDuration"] = false,
 			["font"] = "Friz Quadrata TT",
 			["height"] = 70,
 			["load"] = {
@@ -191,13 +192,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["talent"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_zone"] = true,
 				["use_combat"] = true,
-				["spec"] = {
+				["talent"] = {
 					["multi"] = {
 					},
 				},
@@ -209,28 +210,27 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["additional_triggers"] = {
-			},
-			["stickyDuration"] = false,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Arcane Wrath(p3)",
+			["id"] = "7 stacks p3",
+			["icon"] = true,
 			["frameStrata"] = 1,
 			["width"] = 70,
-			["id"] = "7 stacks p3",
-			["untrigger"] = {
-			},
+			["selfPoint"] = "CENTER",
+			["yOffset"] = 0,
 			["inverse"] = false,
 			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
+			["additional_triggers"] = {
+			},
+			["desaturate"] = false,
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
@@ -240,8 +240,9 @@ WeakAurasSaved = {
 			},
 		},
 		["8 stacks p3"] = {
-			["parent"] = "Arcane Wrath(p3)",
-			["yOffset"] = 0,
+			["xOffset"] = 0,
+			["untrigger"] = {
+			},
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
 			["actions"] = {
@@ -252,24 +253,24 @@ WeakAurasSaved = {
 					["do_message"] = false,
 					["do_custom"] = true,
 				},
-				["init"] = {
-				},
 				["finish"] = {
+				},
+				["init"] = {
 				},
 			},
 			["fontFlags"] = "OUTLINE",
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["main"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
 			["trigger"] = {
@@ -279,17 +280,17 @@ WeakAurasSaved = {
 				["names"] = {
 					"Branded: Fortification", -- [1]
 				},
-				["custom_hide"] = "timed",
+				["debuffType"] = "HARMFUL",
 				["useCount"] = true,
 				["count"] = "8",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
+				["event"] = "Health",
 				["spellIds"] = {
 				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
+				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
+				["custom_hide"] = "timed",
 			},
-			["desaturate"] = false,
+			["stickyDuration"] = false,
 			["font"] = "Friz Quadrata TT",
 			["height"] = 70,
 			["load"] = {
@@ -313,13 +314,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["zone"] = "Highmaul",
-				["use_zone"] = true,
-				["use_combat"] = true,
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["use_zone"] = true,
+				["use_combat"] = true,
+				["zone"] = "Highmaul",
 				["size"] = {
 					["multi"] = {
 					},
@@ -328,28 +329,27 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["additional_triggers"] = {
-			},
-			["stickyDuration"] = false,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Arcane Wrath(p3)",
+			["id"] = "8 stacks p3",
+			["icon"] = true,
 			["frameStrata"] = 1,
 			["width"] = 70,
-			["id"] = "8 stacks p3",
-			["untrigger"] = {
-			},
+			["selfPoint"] = "CENTER",
+			["yOffset"] = 0,
 			["inverse"] = false,
 			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
+			["additional_triggers"] = {
+			},
+			["desaturate"] = false,
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
@@ -359,8 +359,9 @@ WeakAurasSaved = {
 			},
 		},
 		["9 stacks p3"] = {
-			["parent"] = "Arcane Wrath(p3)",
-			["yOffset"] = 0,
+			["xOffset"] = 0,
+			["untrigger"] = {
+			},
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
 			["actions"] = {
@@ -371,24 +372,24 @@ WeakAurasSaved = {
 					["do_message"] = false,
 					["do_custom"] = true,
 				},
-				["init"] = {
-				},
 				["finish"] = {
+				},
+				["init"] = {
 				},
 			},
 			["fontFlags"] = "OUTLINE",
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["main"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
 			["trigger"] = {
@@ -398,17 +399,17 @@ WeakAurasSaved = {
 				["names"] = {
 					"Branded: Fortification", -- [1]
 				},
-				["debuffType"] = "HARMFUL",
+				["custom_hide"] = "timed",
 				["useCount"] = true,
 				["count"] = "9",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
+				["event"] = "Health",
 				["spellIds"] = {
 				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
+				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
+				["debuffType"] = "HARMFUL",
 			},
-			["desaturate"] = false,
+			["stickyDuration"] = false,
 			["font"] = "Friz Quadrata TT",
 			["height"] = 70,
 			["load"] = {
@@ -432,13 +433,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["zone"] = "Highmaul",
-				["use_zone"] = true,
-				["use_combat"] = true,
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["use_zone"] = true,
+				["use_combat"] = true,
+				["zone"] = "Highmaul",
 				["size"] = {
 					["multi"] = {
 					},
@@ -447,28 +448,27 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["id"] = "9 stacks p3",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Arcane Wrath(p3)",
 			["additional_triggers"] = {
 			},
-			["untrigger"] = {
-			},
+			["icon"] = true,
+			["frameStrata"] = 1,
+			["width"] = 70,
+			["selfPoint"] = "CENTER",
+			["yOffset"] = 0,
 			["inverse"] = false,
 			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
+			["id"] = "9 stacks p3",
+			["desaturate"] = false,
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
@@ -489,11 +489,11 @@ WeakAurasSaved = {
 					["do_custom"] = false,
 					["custom"] = "-- ON SHOW\nlocal id = 'HighmaulMargokArcaneWrath'\nlocal auras = {\n    {id = 156225, name = \"Branded\",                base_damage = 75000, damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 164004, name = \"Branded: Displacement\",  base_damage = 75000, damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 164005, name = \"Branded: Fortification\", base_damage = 75000, damage_increase = 0.25, distance_reduction = 0.25},\n    {id = 164006, name = \"Branded: Replication\",   base_damage = 75000, damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 119611, name = \"Renewing Mist\",          base_damage = 75000, damage_increase = 0.25, distance_reduction = 0.5},\n} \n\nlocal SetValue = function(value, ...)\n    if not WeakAuras.CustomValues then WeakAuras.CustomValues = {} end\n    if not ... then return end\n    local count, data = #{...}\n    for i,v in pairs({...}) do\n        if i==1 then if count and count == 1 then WeakAuras.CustomValues[v] = value else\n                WeakAuras.CustomValues[v] = WeakAuras.CustomValues[v] or {}\n                data = WeakAuras.CustomValues[v] end\n        else if i ~= count then if not data[v] then data[v] = {} end data = data[v] else data[v] = value end end\n    end\nend\n\nlocal affectedUnits = nil\n-- Loop through raid members        \nlocal numPlayers = GetNumGroupMembers()\nfor i = 1, numPlayers do\n    local unitId = IsInRaid() and \"raid\"..i or \"party\"..i\n    for iAura,vAura in pairs(auras) do\n        local auraName, _, _, auraStack = UnitAura(unitId, vAura.name)\n        -- Has aura            \n        if auraName then\n            auraStack = auraStack or 1\n            -- Add to list\n            affectedUnits = affectedUnits or {}\n            -- Calculate info\n            affectedUnits[unitId] = {\n                id = vAura.id, \n                currentDistance = 200*(1-vAura.distance_reduction)^(auraStack-1),\n                nextDistance    = 200*(1-vAura.distance_reduction)^(auraStack+1-1),\n                currentDamage   = vAura.base_damage + vAura.base_damage * (auraStack - 1) * vAura.damage_increase,\n                nextDamage      = vAura.base_damage + vAura.base_damage * (auraStack+1 - 1) * vAura.damage_increase,\n            }                \n        end\n    end\nend\nSetValue(affectedUnits, id, 'affectedUnits')",
 				},
-				["init"] = {
-				},
 				["finish"] = {
 					["do_custom"] = false,
 					["custom"] = "-- ON HIDE\nlocal id = 'HighmaulMargokArcaneWrath'\nlocal SetValue = function(value, ...)\n    if not WeakAuras.CustomValues then WeakAuras.CustomValues = {} end\n    if not ... then return end\n    local count, data = #{...}\n    for i,v in pairs({...}) do\n        if i==1 then if count and count == 1 then WeakAuras.CustomValues[v] = value else\n                WeakAuras.CustomValues[v] = WeakAuras.CustomValues[v] or {}\n                data = WeakAuras.CustomValues[v] end\n        else if i ~= count then if not data[v] then data[v] = {} end data = data[v] else data[v] = value end end\n    end\nend\nSetValue(nil, id, 'affectedUnits')",
+				},
+				["init"] = {
 				},
 			},
 			["fontFlags"] = "OUTLINE",
@@ -504,7 +504,13 @@ WeakAurasSaved = {
 				["subeventSuffix"] = "_CAST_START",
 				["name_info"] = "players",
 				["unit"] = "group",
-				["debuffType"] = "HARMFUL",
+				["group_countOperator"] = ">",
+				["event"] = "Health",
+				["spellIds"] = {
+				},
+				["subeventPrefix"] = "SPELL",
+				["group_count"] = "0",
+				["custom_hide"] = "timed",
 				["names"] = {
 					"Branded", -- [1]
 					"Branded: Displacement", -- [2]
@@ -512,13 +518,7 @@ WeakAurasSaved = {
 					"Branded: Replication", -- [4]
 					"Venom Splash", -- [5]
 				},
-				["spellIds"] = {
-				},
-				["custom_hide"] = "timed",
-				["group_count"] = "0",
-				["subeventPrefix"] = "SPELL",
-				["event"] = "Health",
-				["group_countOperator"] = ">",
+				["debuffType"] = "HARMFUL",
 			},
 			["desaturate"] = false,
 			["discrete_rotation"] = 0,
@@ -541,7 +541,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["talent"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -550,7 +550,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["spec"] = {
+				["talent"] = {
 					["multi"] = {
 					},
 				},
@@ -571,36 +571,36 @@ WeakAurasSaved = {
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["icon"] = true,
-			["id"] = "Highmaul - Imperator Mar'gok - Arcane Wrath Next",
-			["additional_triggers"] = {
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
 			},
-			["frameStrata"] = 1,
-			["width"] = 42.8800163269043,
-			["stickyDuration"] = false,
-			["numTriggers"] = 1,
-			["inverse"] = false,
-			["justify"] = "LEFT",
+			["id"] = "Highmaul - Imperator Mar'gok - Arcane Wrath Next",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
+			["frameStrata"] = 1,
+			["width"] = 42.8800163269043,
+			["justify"] = "LEFT",
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["stickyDuration"] = false,
+			["additional_triggers"] = {
 			},
+			["icon"] = true,
 			["stacksPoint"] = "BOTTOMRIGHT",
 			["textColor"] = {
 				1, -- [1]
@@ -619,16 +619,16 @@ WeakAurasSaved = {
 			["fontFlags"] = "OUTLINE",
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["main"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
 			["trigger"] = {
@@ -642,14 +642,14 @@ WeakAurasSaved = {
 					"Branded: Replication", -- [4]
 					"Venom Splash", -- [5]
 				},
-				["debuffType"] = "HARMFUL",
+				["custom_hide"] = "timed",
 				["count"] = "3",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
+				["event"] = "Health",
 				["spellIds"] = {
 				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
+				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
+				["debuffType"] = "HARMFUL",
 			},
 			["desaturate"] = false,
 			["font"] = "DorisPP",
@@ -673,16 +673,16 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = true,
-				["zone"] = "Highmaul",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["role"] = {
 					["multi"] = {
 					},
 				},
 				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
+				["zone"] = "Highmaul",
 				["size"] = {
 					["multi"] = {
 					},
@@ -694,33 +694,33 @@ WeakAurasSaved = {
 			["actions"] = {
 				["start"] = {
 				},
-				["init"] = {
-				},
 				["finish"] = {
 				},
+				["init"] = {
+				},
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOMRIGHT",
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0.29,
 			["auto"] = false,
-			["id"] = "Highmaul - Imperator Mar'gok - Arcane Wrath Active Self",
 			["additional_triggers"] = {
 			},
-			["selfPoint"] = "CENTER",
-			["frameStrata"] = 1,
-			["width"] = 75,
-			["yOffset"] = 4.3760986328125,
-			["numTriggers"] = 1,
-			["inverse"] = false,
-			["stickyDuration"] = false,
+			["id"] = "Highmaul - Imperator Mar'gok - Arcane Wrath Active Self",
 			["color"] = {
 				0.968627450980392, -- [1]
 				1, -- [2]
 				0.988235294117647, -- [3]
 				1, -- [4]
 			},
+			["frameStrata"] = 1,
+			["width"] = 75,
+			["stickyDuration"] = false,
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["yOffset"] = 4.3760986328125,
+			["selfPoint"] = "CENTER",
 			["displayIcon"] = "Interface\\Icons\\ability_socererking_arcanewrath",
-			["stacksPoint"] = "BOTTOMRIGHT",
+			["cooldown"] = true,
 			["textColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -761,33 +761,15 @@ WeakAurasSaved = {
 			["selfPoint"] = "BOTTOMLEFT",
 			["additional_triggers"] = {
 			},
-			["anchorPoint"] = "CENTER",
+			["untrigger"] = {
+			},
 			["frameStrata"] = 1,
 			["id"] = "Arcane Wrath(p1&p2&p4)",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["borderEdge"] = "None",
 			["borderInset"] = 11,
 			["numTriggers"] = 1,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
 			["trigger"] = {
-				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
 				["type"] = "aura",
 				["spellIds"] = {
 				},
@@ -796,9 +778,28 @@ WeakAurasSaved = {
 				["names"] = {
 				},
 				["event"] = "Health",
-				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
 			},
-			["borderEdge"] = "None",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["load"] = {
 				["use_class"] = false,
 				["role"] = {
@@ -813,7 +814,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -821,7 +822,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -830,8 +831,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["untrigger"] = {
-			},
+			["anchorPoint"] = "CENTER",
 		},
 		["Highmaul - Imperator Mar'gok - Arcane Wrath Distance"] = {
 			["outline"] = true,
@@ -854,10 +854,12 @@ WeakAurasSaved = {
 				["subeventSuffix"] = "_CAST_START",
 				["name_info"] = "players",
 				["unit"] = "group",
-				["custom_hide"] = "timed",
-				["group_countOperator"] = ">",
+				["debuffType"] = "HARMFUL",
+				["event"] = "Health",
 				["spellIds"] = {
 				},
+				["subeventPrefix"] = "SPELL",
+				["group_count"] = "0",
 				["names"] = {
 					"Branded", -- [1]
 					"Branded: Displacement", -- [2]
@@ -865,10 +867,8 @@ WeakAurasSaved = {
 					"Branded: Replication", -- [4]
 					"Venom Splash", -- [5]
 				},
-				["group_count"] = "0",
-				["subeventPrefix"] = "SPELL",
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
+				["group_countOperator"] = ">",
+				["custom_hide"] = "timed",
 			},
 			["stickyDuration"] = false,
 			["rotation"] = 0,
@@ -891,7 +891,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = true,
-				["talent"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -900,7 +900,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["spec"] = {
+				["talent"] = {
 					["multi"] = {
 					},
 				},
@@ -921,42 +921,42 @@ WeakAurasSaved = {
 					["do_custom"] = false,
 					["custom"] = "",
 				},
-				["init"] = {
-				},
 				["finish"] = {
 					["do_custom"] = false,
 					["custom"] = "",
+				},
+				["init"] = {
 				},
 			},
 			["texture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura110",
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["justify"] = "CENTER",
-			["additional_triggers"] = {
-			},
-			["id"] = "Highmaul - Imperator Mar'gok - Arcane Wrath Distance",
-			["auto"] = true,
-			["frameStrata"] = 1,
-			["width"] = 183.040023803711,
-			["desaturate"] = false,
-			["inverse"] = false,
-			["numTriggers"] = 1,
-			["discrete_rotation"] = 0,
-			["xOffset"] = 0,
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["main"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
+			["additional_triggers"] = {
+			},
+			["xOffset"] = 0,
+			["frameStrata"] = 1,
+			["width"] = 183.040023803711,
+			["discrete_rotation"] = 0,
+			["numTriggers"] = 1,
+			["inverse"] = false,
+			["desaturate"] = false,
+			["auto"] = true,
+			["id"] = "Highmaul - Imperator Mar'gok - Arcane Wrath Distance",
 			["stacksPoint"] = "BOTTOMRIGHT",
 			["textColor"] = {
 				1, -- [1]
@@ -966,30 +966,24 @@ WeakAurasSaved = {
 			},
 		},
 		["2 stacks p3"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["untrigger"] = {
-			},
+			["parent"] = "Arcane Wrath(p3)",
+			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
 			["icon"] = true,
 			["fontFlags"] = "OUTLINE",
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["main"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
 			["trigger"] = {
@@ -999,17 +993,17 @@ WeakAurasSaved = {
 				["names"] = {
 					"Branded: Fortification", -- [1]
 				},
-				["custom_hide"] = "timed",
+				["debuffType"] = "HARMFUL",
 				["useCount"] = true,
 				["count"] = "2",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
+				["event"] = "Health",
 				["spellIds"] = {
 				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
+				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
+				["custom_hide"] = "timed",
 			},
-			["desaturate"] = false,
+			["stickyDuration"] = false,
 			["font"] = "Friz Quadrata TT",
 			["height"] = 70,
 			["load"] = {
@@ -1033,13 +1027,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["zone"] = "Highmaul",
-				["use_zone"] = true,
-				["use_combat"] = true,
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["use_zone"] = true,
+				["use_combat"] = true,
+				["zone"] = "Highmaul",
 				["size"] = {
 					["multi"] = {
 					},
@@ -1048,21 +1042,17 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
-			["parent"] = "Arcane Wrath(p3)",
+			["xOffset"] = 0,
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["xOffset"] = 0,
-			["additional_triggers"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
 			["id"] = "2 stacks p3",
-			["yOffset"] = 0,
-			["numTriggers"] = 1,
-			["inverse"] = false,
-			["selfPoint"] = "CENTER",
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -1071,11 +1061,21 @@ WeakAurasSaved = {
 					["do_message"] = false,
 					["do_custom"] = true,
 				},
-				["init"] = {
-				},
 				["finish"] = {
 				},
+				["init"] = {
+				},
 			},
+			["frameStrata"] = 1,
+			["width"] = 70,
+			["selfPoint"] = "CENTER",
+			["untrigger"] = {
+			},
+			["numTriggers"] = 1,
+			["inverse"] = false,
+			["additional_triggers"] = {
+			},
+			["desaturate"] = false,
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
@@ -1121,34 +1121,16 @@ WeakAurasSaved = {
 			["borderOffset"] = 5,
 			["selfPoint"] = "BOTTOMLEFT",
 			["id"] = "Arcane Wrath(p3)",
-			["anchorPoint"] = "CENTER",
+			["untrigger"] = {
+			},
 			["frameStrata"] = 1,
 			["additional_triggers"] = {
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["borderEdge"] = "None",
 			["borderInset"] = 11,
 			["numTriggers"] = 1,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
 			["trigger"] = {
-				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
 				["type"] = "aura",
 				["spellIds"] = {
 				},
@@ -1157,9 +1139,28 @@ WeakAurasSaved = {
 				["names"] = {
 				},
 				["event"] = "Health",
-				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
 			},
-			["borderEdge"] = "None",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["load"] = {
 				["use_class"] = false,
 				["role"] = {
@@ -1174,7 +1175,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -1182,7 +1183,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -1191,34 +1192,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["untrigger"] = {
-			},
+			["anchorPoint"] = "CENTER",
 		},
 		["4 stacks p3"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["untrigger"] = {
-			},
+			["parent"] = "Arcane Wrath(p3)",
+			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
 			["icon"] = true,
 			["fontFlags"] = "OUTLINE",
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["main"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
 			["trigger"] = {
@@ -1228,17 +1222,17 @@ WeakAurasSaved = {
 				["names"] = {
 					"Branded: Fortification", -- [1]
 				},
-				["custom_hide"] = "timed",
+				["debuffType"] = "HARMFUL",
 				["useCount"] = true,
 				["count"] = "4",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
+				["event"] = "Health",
 				["spellIds"] = {
 				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
+				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
+				["custom_hide"] = "timed",
 			},
-			["desaturate"] = false,
+			["stickyDuration"] = false,
 			["font"] = "Friz Quadrata TT",
 			["height"] = 70,
 			["load"] = {
@@ -1259,13 +1253,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["talent"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_zone"] = true,
 				["use_combat"] = true,
-				["spec"] = {
+				["talent"] = {
 					["multi"] = {
 					},
 				},
@@ -1277,21 +1271,17 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
-			["parent"] = "Arcane Wrath(p3)",
+			["xOffset"] = 0,
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["xOffset"] = 0,
-			["additional_triggers"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
 			["id"] = "4 stacks p3",
-			["yOffset"] = 0,
-			["numTriggers"] = 1,
-			["inverse"] = false,
-			["selfPoint"] = "CENTER",
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -1300,11 +1290,21 @@ WeakAurasSaved = {
 					["do_message"] = false,
 					["do_custom"] = true,
 				},
-				["init"] = {
-				},
 				["finish"] = {
 				},
+				["init"] = {
+				},
 			},
+			["frameStrata"] = 1,
+			["width"] = 70,
+			["selfPoint"] = "CENTER",
+			["untrigger"] = {
+			},
+			["numTriggers"] = 1,
+			["inverse"] = false,
+			["additional_triggers"] = {
+			},
+			["desaturate"] = false,
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
@@ -1314,30 +1314,24 @@ WeakAurasSaved = {
 			},
 		},
 		["5 stacks p3"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["untrigger"] = {
-			},
+			["parent"] = "Arcane Wrath(p3)",
+			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
 			["icon"] = true,
 			["fontFlags"] = "OUTLINE",
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["main"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
 			["trigger"] = {
@@ -1347,17 +1341,17 @@ WeakAurasSaved = {
 				["names"] = {
 					"Branded: Fortification", -- [1]
 				},
-				["debuffType"] = "HARMFUL",
+				["custom_hide"] = "timed",
 				["useCount"] = true,
 				["count"] = "5",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
+				["event"] = "Health",
 				["spellIds"] = {
 				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
+				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
+				["debuffType"] = "HARMFUL",
 			},
-			["desaturate"] = false,
+			["stickyDuration"] = false,
 			["font"] = "Friz Quadrata TT",
 			["height"] = 70,
 			["load"] = {
@@ -1381,13 +1375,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["zone"] = "Highmaul",
-				["use_zone"] = true,
-				["use_combat"] = true,
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["use_zone"] = true,
+				["use_combat"] = true,
+				["zone"] = "Highmaul",
 				["size"] = {
 					["multi"] = {
 					},
@@ -1396,21 +1390,18 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
-			["parent"] = "Arcane Wrath(p3)",
+			["xOffset"] = 0,
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["xOffset"] = 0,
-			["id"] = "5 stacks p3",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["additional_triggers"] = {
 			},
-			["yOffset"] = 0,
-			["numTriggers"] = 1,
-			["inverse"] = false,
-			["selfPoint"] = "CENTER",
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -1419,11 +1410,20 @@ WeakAurasSaved = {
 					["do_message"] = false,
 					["do_custom"] = true,
 				},
-				["init"] = {
-				},
 				["finish"] = {
 				},
+				["init"] = {
+				},
 			},
+			["frameStrata"] = 1,
+			["width"] = 70,
+			["selfPoint"] = "CENTER",
+			["untrigger"] = {
+			},
+			["numTriggers"] = 1,
+			["inverse"] = false,
+			["id"] = "5 stacks p3",
+			["desaturate"] = false,
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
@@ -1433,8 +1433,9 @@ WeakAurasSaved = {
 			},
 		},
 		["4 stacks"] = {
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
-			["yOffset"] = 0,
+			["xOffset"] = 0,
+			["untrigger"] = {
+			},
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
 			["actions"] = {
@@ -1445,28 +1446,28 @@ WeakAurasSaved = {
 					["message"] = "",
 					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (25y) on \"..name, \"SAY\")",
 					["do_sound"] = false,
-					["do_glow"] = false,
-					["do_custom"] = true,
 					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Ding6.ogg",
-				},
-				["init"] = {
+					["do_custom"] = true,
+					["do_glow"] = false,
 				},
 				["finish"] = {
+				},
+				["init"] = {
 				},
 			},
 			["fontFlags"] = "OUTLINE",
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["main"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
 			["trigger"] = {
@@ -1478,17 +1479,17 @@ WeakAurasSaved = {
 					"Branded: Displacement", -- [2]
 					"Branded: Replication", -- [3]
 				},
-				["debuffType"] = "HARMFUL",
+				["custom_hide"] = "timed",
 				["useCount"] = true,
 				["count"] = "4",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
+				["event"] = "Health",
 				["spellIds"] = {
 				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
+				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
+				["debuffType"] = "HARMFUL",
 			},
-			["desaturate"] = false,
+			["stickyDuration"] = false,
 			["font"] = "Friz Quadrata TT",
 			["height"] = 70,
 			["load"] = {
@@ -1506,7 +1507,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["talent"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -1515,7 +1516,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["spec"] = {
+				["talent"] = {
 					["multi"] = {
 					},
 				},
@@ -1527,28 +1528,27 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["id"] = "4 stacks",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Arcane Wrath(p1&p2&p4)",
 			["additional_triggers"] = {
 			},
-			["untrigger"] = {
-			},
+			["icon"] = true,
+			["frameStrata"] = 1,
+			["width"] = 70,
+			["selfPoint"] = "CENTER",
+			["yOffset"] = 0,
 			["inverse"] = false,
 			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
+			["id"] = "4 stacks",
+			["desaturate"] = false,
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
@@ -1558,30 +1558,24 @@ WeakAurasSaved = {
 			},
 		},
 		["5 stacks"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["untrigger"] = {
-			},
+			["parent"] = "Arcane Wrath(p1&p2&p4)",
+			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
 			["icon"] = true,
 			["fontFlags"] = "OUTLINE",
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["main"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
 			["trigger"] = {
@@ -1593,17 +1587,17 @@ WeakAurasSaved = {
 					"Branded: Displacement", -- [2]
 					"Branded: Replication", -- [3]
 				},
-				["custom_hide"] = "timed",
+				["debuffType"] = "HARMFUL",
 				["useCount"] = true,
 				["count"] = "5",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
+				["event"] = "Health",
 				["spellIds"] = {
 				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
+				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
+				["custom_hide"] = "timed",
 			},
-			["desaturate"] = false,
+			["stickyDuration"] = false,
 			["font"] = "Friz Quadrata TT",
 			["height"] = 70,
 			["load"] = {
@@ -1624,16 +1618,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["zone"] = "Highmaul",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
 				},
 				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
+				["zone"] = "Highmaul",
 				["size"] = {
 					["multi"] = {
 					},
@@ -1642,21 +1636,17 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
+			["xOffset"] = 0,
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["xOffset"] = 0,
-			["additional_triggers"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
 			["id"] = "5 stacks",
-			["yOffset"] = 0,
-			["numTriggers"] = 1,
-			["inverse"] = false,
-			["selfPoint"] = "CENTER",
 			["actions"] = {
 				["start"] = {
 					["glow_action"] = "show",
@@ -1665,15 +1655,25 @@ WeakAurasSaved = {
 					["message"] = "",
 					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (12y) on \"..name, \"SAY\")",
 					["do_sound"] = false,
-					["do_glow"] = false,
-					["do_custom"] = true,
 					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Ding6.ogg",
-				},
-				["init"] = {
+					["do_custom"] = true,
+					["do_glow"] = false,
 				},
 				["finish"] = {
 				},
+				["init"] = {
+				},
 			},
+			["frameStrata"] = 1,
+			["width"] = 70,
+			["selfPoint"] = "CENTER",
+			["untrigger"] = {
+			},
+			["numTriggers"] = 1,
+			["inverse"] = false,
+			["additional_triggers"] = {
+			},
+			["desaturate"] = false,
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
@@ -1683,8 +1683,9 @@ WeakAurasSaved = {
 			},
 		},
 		["2 stacks"] = {
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
-			["yOffset"] = 0,
+			["xOffset"] = 0,
+			["untrigger"] = {
+			},
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
 			["actions"] = {
@@ -1695,28 +1696,28 @@ WeakAurasSaved = {
 					["message"] = "",
 					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (100y) on \"..name, \"SAY\")",
 					["do_sound"] = false,
-					["do_glow"] = false,
-					["do_custom"] = true,
 					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Ding6.ogg",
-				},
-				["init"] = {
+					["do_custom"] = true,
+					["do_glow"] = false,
 				},
 				["finish"] = {
+				},
+				["init"] = {
 				},
 			},
 			["fontFlags"] = "OUTLINE",
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["main"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
 			["trigger"] = {
@@ -1728,17 +1729,17 @@ WeakAurasSaved = {
 					"Branded: Displacement", -- [2]
 					"Branded: Replication", -- [3]
 				},
-				["debuffType"] = "HARMFUL",
+				["custom_hide"] = "timed",
 				["useCount"] = true,
 				["count"] = "2",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
+				["event"] = "Health",
 				["spellIds"] = {
 				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
+				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
+				["debuffType"] = "HARMFUL",
 			},
-			["desaturate"] = false,
+			["stickyDuration"] = false,
 			["font"] = "Friz Quadrata TT",
 			["height"] = 70,
 			["load"] = {
@@ -1759,16 +1760,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["zone"] = "Highmaul",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
 				},
 				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
+				["zone"] = "Highmaul",
 				["size"] = {
 					["multi"] = {
 					},
@@ -1777,28 +1778,27 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["id"] = "2 stacks",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Arcane Wrath(p1&p2&p4)",
 			["additional_triggers"] = {
 			},
-			["untrigger"] = {
-			},
+			["icon"] = true,
+			["frameStrata"] = 1,
+			["width"] = 70,
+			["selfPoint"] = "CENTER",
+			["yOffset"] = 0,
 			["inverse"] = false,
 			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
+			["id"] = "2 stacks",
+			["desaturate"] = false,
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
@@ -1808,30 +1808,24 @@ WeakAurasSaved = {
 			},
 		},
 		["3 stacks"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["untrigger"] = {
-			},
+			["parent"] = "Arcane Wrath(p1&p2&p4)",
+			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
 			["icon"] = true,
 			["fontFlags"] = "OUTLINE",
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["main"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
 			["trigger"] = {
@@ -1843,17 +1837,17 @@ WeakAurasSaved = {
 					"Branded: Displacement", -- [2]
 					"Branded: Replication", -- [3]
 				},
-				["debuffType"] = "HARMFUL",
+				["custom_hide"] = "timed",
 				["useCount"] = true,
 				["count"] = "3",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
+				["event"] = "Health",
 				["spellIds"] = {
 				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
+				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
+				["debuffType"] = "HARMFUL",
 			},
-			["desaturate"] = false,
+			["stickyDuration"] = false,
 			["font"] = "Friz Quadrata TT",
 			["height"] = 70,
 			["load"] = {
@@ -1871,7 +1865,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["talent"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -1880,7 +1874,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["spec"] = {
+				["talent"] = {
 					["multi"] = {
 					},
 				},
@@ -1892,21 +1886,18 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
+			["xOffset"] = 0,
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["xOffset"] = 0,
-			["id"] = "3 stacks",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["additional_triggers"] = {
 			},
-			["yOffset"] = 0,
-			["numTriggers"] = 1,
-			["inverse"] = false,
-			["selfPoint"] = "CENTER",
 			["actions"] = {
 				["start"] = {
 					["glow_action"] = "show",
@@ -1915,15 +1906,24 @@ WeakAurasSaved = {
 					["message"] = "",
 					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (50y) on \"..name, \"SAY\")",
 					["do_sound"] = false,
-					["do_glow"] = false,
-					["do_custom"] = true,
 					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Ding6.ogg",
-				},
-				["init"] = {
+					["do_custom"] = true,
+					["do_glow"] = false,
 				},
 				["finish"] = {
 				},
+				["init"] = {
+				},
 			},
+			["frameStrata"] = 1,
+			["width"] = 70,
+			["selfPoint"] = "CENTER",
+			["untrigger"] = {
+			},
+			["numTriggers"] = 1,
+			["inverse"] = false,
+			["id"] = "3 stacks",
+			["desaturate"] = false,
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
@@ -1933,30 +1933,24 @@ WeakAurasSaved = {
 			},
 		},
 		["1 stack p3"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["untrigger"] = {
-			},
+			["parent"] = "Arcane Wrath(p3)",
+			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
 			["icon"] = true,
 			["fontFlags"] = "OUTLINE",
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["main"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
 			["trigger"] = {
@@ -1966,17 +1960,17 @@ WeakAurasSaved = {
 				["names"] = {
 					"Branded: Fortification", -- [1]
 				},
-				["custom_hide"] = "timed",
+				["debuffType"] = "HARMFUL",
 				["useCount"] = true,
 				["count"] = "1",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
+				["event"] = "Health",
 				["spellIds"] = {
 				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
+				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
+				["custom_hide"] = "timed",
 			},
-			["desaturate"] = false,
+			["stickyDuration"] = false,
 			["font"] = "Friz Quadrata TT",
 			["height"] = 70,
 			["load"] = {
@@ -2000,13 +1994,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["zone"] = "Highmaul",
-				["use_zone"] = true,
-				["use_combat"] = true,
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["use_zone"] = true,
+				["use_combat"] = true,
+				["zone"] = "Highmaul",
 				["size"] = {
 					["multi"] = {
 					},
@@ -2015,21 +2009,17 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
-			["parent"] = "Arcane Wrath(p3)",
+			["xOffset"] = 0,
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["xOffset"] = 0,
-			["additional_triggers"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
 			["id"] = "1 stack p3",
-			["yOffset"] = 0,
-			["numTriggers"] = 1,
-			["inverse"] = false,
-			["selfPoint"] = "CENTER",
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -2038,11 +2028,21 @@ WeakAurasSaved = {
 					["do_message"] = false,
 					["do_custom"] = true,
 				},
-				["init"] = {
-				},
 				["finish"] = {
 				},
+				["init"] = {
+				},
 			},
+			["frameStrata"] = 1,
+			["width"] = 70,
+			["selfPoint"] = "CENTER",
+			["untrigger"] = {
+			},
+			["numTriggers"] = 1,
+			["inverse"] = false,
+			["additional_triggers"] = {
+			},
+			["desaturate"] = false,
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
@@ -2052,8 +2052,9 @@ WeakAurasSaved = {
 			},
 		},
 		["6 stacks"] = {
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
-			["yOffset"] = 0,
+			["xOffset"] = 0,
+			["untrigger"] = {
+			},
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
 			["actions"] = {
@@ -2064,28 +2065,28 @@ WeakAurasSaved = {
 					["message"] = "",
 					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (6y) on \"..name, \"SAY\")",
 					["do_sound"] = false,
-					["do_glow"] = false,
-					["do_custom"] = true,
 					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Ding6.ogg",
-				},
-				["init"] = {
+					["do_custom"] = true,
+					["do_glow"] = false,
 				},
 				["finish"] = {
+				},
+				["init"] = {
 				},
 			},
 			["fontFlags"] = "OUTLINE",
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["main"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
 			["trigger"] = {
@@ -2097,17 +2098,17 @@ WeakAurasSaved = {
 					"Branded: Displacement", -- [2]
 					"Branded: Replication", -- [3]
 				},
-				["debuffType"] = "HARMFUL",
+				["custom_hide"] = "timed",
 				["useCount"] = true,
 				["count"] = "6",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
+				["event"] = "Health",
 				["spellIds"] = {
 				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
+				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
+				["debuffType"] = "HARMFUL",
 			},
-			["desaturate"] = false,
+			["stickyDuration"] = false,
 			["font"] = "Friz Quadrata TT",
 			["height"] = 70,
 			["load"] = {
@@ -2128,16 +2129,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["zone"] = "Highmaul",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
 				},
 				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
+				["zone"] = "Highmaul",
 				["size"] = {
 					["multi"] = {
 					},
@@ -2146,28 +2147,27 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["id"] = "6 stacks",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Arcane Wrath(p1&p2&p4)",
 			["additional_triggers"] = {
 			},
-			["untrigger"] = {
-			},
+			["icon"] = true,
+			["frameStrata"] = 1,
+			["width"] = 70,
+			["selfPoint"] = "CENTER",
+			["yOffset"] = 0,
 			["inverse"] = false,
 			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
+			["id"] = "6 stacks",
+			["desaturate"] = false,
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
@@ -2177,8 +2177,9 @@ WeakAurasSaved = {
 			},
 		},
 		["12 stacks p3"] = {
-			["parent"] = "Arcane Wrath(p3)",
-			["yOffset"] = 0,
+			["xOffset"] = 0,
+			["untrigger"] = {
+			},
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
 			["actions"] = {
@@ -2189,24 +2190,24 @@ WeakAurasSaved = {
 					["do_message"] = false,
 					["do_custom"] = true,
 				},
-				["init"] = {
-				},
 				["finish"] = {
+				},
+				["init"] = {
 				},
 			},
 			["fontFlags"] = "OUTLINE",
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["main"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
 			["trigger"] = {
@@ -2216,17 +2217,17 @@ WeakAurasSaved = {
 				["names"] = {
 					"Branded: Fortification", -- [1]
 				},
-				["custom_hide"] = "timed",
+				["debuffType"] = "HARMFUL",
 				["useCount"] = true,
 				["count"] = "12",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
+				["event"] = "Health",
 				["spellIds"] = {
 				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
+				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
+				["custom_hide"] = "timed",
 			},
-			["desaturate"] = false,
+			["stickyDuration"] = false,
 			["font"] = "Friz Quadrata TT",
 			["height"] = 70,
 			["load"] = {
@@ -2250,13 +2251,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["zone"] = "Highmaul",
-				["use_zone"] = true,
-				["use_combat"] = true,
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["use_zone"] = true,
+				["use_combat"] = true,
+				["zone"] = "Highmaul",
 				["size"] = {
 					["multi"] = {
 					},
@@ -2265,28 +2266,27 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["id"] = "12 stacks p3",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Arcane Wrath(p3)",
 			["additional_triggers"] = {
 			},
-			["untrigger"] = {
-			},
+			["icon"] = true,
+			["frameStrata"] = 1,
+			["width"] = 70,
+			["selfPoint"] = "CENTER",
+			["yOffset"] = 0,
 			["inverse"] = false,
 			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
+			["id"] = "12 stacks p3",
+			["desaturate"] = false,
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
@@ -2311,10 +2311,12 @@ WeakAurasSaved = {
 				["subeventSuffix"] = "_CAST_START",
 				["name_info"] = "players",
 				["unit"] = "group",
-				["custom_hide"] = "timed",
-				["group_countOperator"] = ">",
+				["debuffType"] = "HARMFUL",
+				["event"] = "Health",
 				["spellIds"] = {
 				},
+				["subeventPrefix"] = "SPELL",
+				["group_count"] = "0",
 				["names"] = {
 					"Branded", -- [1]
 					"Branded: Displacement", -- [2]
@@ -2322,10 +2324,8 @@ WeakAurasSaved = {
 					"Branded: Replication", -- [4]
 					"Venom Splash", -- [5]
 				},
-				["group_count"] = "0",
-				["subeventPrefix"] = "SPELL",
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
+				["group_countOperator"] = ">",
+				["custom_hide"] = "timed",
 			},
 			["stickyDuration"] = false,
 			["rotation"] = 0,
@@ -2348,7 +2348,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["talent"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -2357,7 +2357,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["spec"] = {
+				["talent"] = {
 					["multi"] = {
 					},
 				},
@@ -2378,48 +2378,755 @@ WeakAurasSaved = {
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["desaturate"] = false,
-			["additional_triggers"] = {
-			},
-			["actions"] = {
+			["animation"] = {
 				["start"] = {
-					["do_custom"] = true,
-					["custom"] = "-- ON SHOW\nlocal id = 'HighmaulMargokArcaneWrath'\nlocal auras = {\n    {id = 79607,  name = \"Venom Splash\",           base_damage = {[14] = 46400, [15] = 65000, [16] = 87800}, base_distance = 50,  damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 156225, name = \"Branded\",                base_damage = {[14] = 46400, [15] = 65000, [16] = 87800}, base_distance = 200, damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 164004, name = \"Branded: Displacement\",  base_damage = {[14] = 46400, [15] = 65000, [16] = 87800}, base_distance = 200, damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 164005, name = \"Branded: Fortification\", base_damage = {[14] = 46400, [15] = 65000, [16] = 87800}, base_distance = 200, damage_increase = 0.25, distance_reduction = 0.25},\n    {id = 164006, name = \"Branded: Replication\",   base_damage = {[14] = 46400, [15] = 65000, [16] = 87800}, base_distance = 200, damage_increase = 0.25, distance_reduction = 0.5},\n    --{id = 119611, name = \"Renewing Mist\",          base_damage = {[14] = 46400, [15] = 65000, [16] = 87800}, base_distance = 200, damage_increase = 0.25, distance_reduction = 0.5},\n} \n\nlocal GetUnitAuraValue = function(aura, valueType, unit, sourceUnit) -- v2\n    if not aura then return end valueType, unit = valueType or 'name', unit or 'player' if not UnitExists(unit) then return end local v, value = {}\n    local GetAuraValues = function(unit, aura, filter)\n        local v, filter = {}, filter or 'HELPFUL'\n        v.name, v.rank, v.icon, v.count, v.auraType, v.duration, v.expirationTime, v.unitCaster, v.isStealable, v.shouldConsolidate, v.spellId, v.canApplyAura, v.isBossDebuff, v.value1, v.value2, v.value3 = UnitAura(unit, aura, type(aura)=='number' and filter or nil, filter)\n        return v\n    end\n    local GetAuraValue = function(v, t, s) if v[t] then if s then if v.unitCaster and UnitExists(s) and v.unitCaster == s then return v[t] end else return v[t] end end end\n    local ScanAuras = function(aura, valueType, unit, sourceUnit)\n        local output = nil\n        if type(aura) == 'string' then\n            v = GetAuraValues(unit, aura)\n            output = GetAuraValue(v,valueType,sourceUnit)\n            if output then return output end\n            v = GetAuraValues(unit, aura, 'HARMFUL')\n            output = GetAuraValue(v,valueType,sourceUnit)\n            if output then return output end    \n        elseif type(aura) == 'number' then\n            for i=1,40 do \n                v = GetAuraValues(unit, i)\n                output = GetAuraValue(v,valueType,sourceUnit)\n                if v.spellId and v.spellId == aura then if output then return output end end\n                v = GetAuraValues(unit, i, 'HARMFUL')\n                output = GetAuraValue(v,valueType,sourceUnit)  \n                if v.spellId and v.spellId == aura then if output then return output end end \n            end\n        end\n    end\n    if type(aura) == 'table' then\n        local output = nil\n        for iAura,vAura in pairs(aura) do\n            output = ScanAuras(vAura, valueType, unit, sourceUnit)\n            if output then return output end\n        end\n    else\n        return ScanAuras(aura, valueType, unit, sourceUnit)\n    end\nend\n\nlocal SetValue = function(value, ...)\n    if not WeakAuras.CustomValues then WeakAuras.CustomValues = {} end\n    if not ... then return end\n    local count, data = #{...}\n    for i,v in pairs({...}) do\n        if i==1 then if count and count == 1 then WeakAuras.CustomValues[v] = value else\n                WeakAuras.CustomValues[v] = WeakAuras.CustomValues[v] or {}\n                data = WeakAuras.CustomValues[v] end\n        else if i ~= count then if not data[v] then data[v] = {} end data = data[v] else data[v] = value end end\n    end\nend\n\nlocal affectedUnits = nil\n-- Loop through raid members        \nlocal numPlayers = GetNumGroupMembers()\nfor i = 1, numPlayers do\n    local unitId = IsInRaid() and \"raid\"..i or \"party\"..i\n    \n    for iAura,vAura in pairs(auras) do\n        local auraName, auraStack = GetUnitAuraValue(vAura.name, 'name', unitId), GetUnitAuraValue(vAura.name, 'count', unitId)\n        -- Has aura            \n        if auraName then\n            if not auraStack or auraStack == 0 then auraStack = 1 end\n            -- Add to list\n            affectedUnits = affectedUnits or {}\n            -- Difficulty\n            local inInstance, instanceType = IsInInstance()\n            local difficultyID = GetRaidDifficultyID()\n            local base_damage = vAura.base_damage[15]\n            if instanceType == 'raid' and vAura.base_damage[difficultyID] then\n                base_damage = vAura.base_damage[difficultyID]\n            end\n            -- Calculate info\n            affectedUnits[unitId] = {\n                id = vAura.id, \n                currentDistance = vAura.base_distance*(1-vAura.distance_reduction)^(auraStack-1),\n                nextDistance    = vAura.base_distance*(1-vAura.distance_reduction)^(auraStack+1-1),\n                currentDamage   = base_damage + base_damage * (auraStack - 1) * vAura.damage_increase,\n                nextDamage      = base_damage + base_damage * (auraStack+1 - 1) * vAura.damage_increase,\n                stacks = auraStack,\n            }                \n        end\n    end\nend\nSetValue(affectedUnits, id, 'affectedUnits')",
+					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
-				["init"] = {
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["do_custom"] = true,
-					["custom"] = "-- ON HIDE\nlocal id = 'HighmaulMargokArcaneWrath'\nlocal SetValue = function(value, ...)\n    if not WeakAuras.CustomValues then WeakAuras.CustomValues = {} end\n    if not ... then return end\n    local count, data = #{...}\n    for i,v in pairs({...}) do\n        if i==1 then if count and count == 1 then WeakAuras.CustomValues[v] = value else\n                WeakAuras.CustomValues[v] = WeakAuras.CustomValues[v] or {}\n                data = WeakAuras.CustomValues[v] end\n        else if i ~= count then if not data[v] then data[v] = {} end data = data[v] else data[v] = value end end\n    end\nend\nSetValue(nil, id, 'affectedUnits')",
+					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
-			["frameStrata"] = 1,
-			["width"] = 72.9599914550781,
-			["id"] = "Highmaul - Imperator Mar'gok - Arcane Wrath Current",
-			["inverse"] = false,
-			["numTriggers"] = 1,
-			["justify"] = "LEFT",
+			["additional_triggers"] = {
+			},
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["animation"] = {
+			["frameStrata"] = 1,
+			["width"] = 72.9599914550781,
+			["justify"] = "LEFT",
+			["numTriggers"] = 1,
+			["inverse"] = false,
+			["id"] = "Highmaul - Imperator Mar'gok - Arcane Wrath Current",
+			["actions"] = {
 				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
+					["do_custom"] = true,
+					["custom"] = "-- ON SHOW\nlocal id = 'HighmaulMargokArcaneWrath'\nlocal auras = {\n    {id = 79607,  name = \"Venom Splash\",           base_damage = {[14] = 46400, [15] = 65000, [16] = 87800}, base_distance = 50,  damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 156225, name = \"Branded\",                base_damage = {[14] = 46400, [15] = 65000, [16] = 87800}, base_distance = 200, damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 164004, name = \"Branded: Displacement\",  base_damage = {[14] = 46400, [15] = 65000, [16] = 87800}, base_distance = 200, damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 164005, name = \"Branded: Fortification\", base_damage = {[14] = 46400, [15] = 65000, [16] = 87800}, base_distance = 200, damage_increase = 0.25, distance_reduction = 0.25},\n    {id = 164006, name = \"Branded: Replication\",   base_damage = {[14] = 46400, [15] = 65000, [16] = 87800}, base_distance = 200, damage_increase = 0.25, distance_reduction = 0.5},\n    --{id = 119611, name = \"Renewing Mist\",          base_damage = {[14] = 46400, [15] = 65000, [16] = 87800}, base_distance = 200, damage_increase = 0.25, distance_reduction = 0.5},\n} \n\nlocal GetUnitAuraValue = function(aura, valueType, unit, sourceUnit) -- v2\n    if not aura then return end valueType, unit = valueType or 'name', unit or 'player' if not UnitExists(unit) then return end local v, value = {}\n    local GetAuraValues = function(unit, aura, filter)\n        local v, filter = {}, filter or 'HELPFUL'\n        v.name, v.rank, v.icon, v.count, v.auraType, v.duration, v.expirationTime, v.unitCaster, v.isStealable, v.shouldConsolidate, v.spellId, v.canApplyAura, v.isBossDebuff, v.value1, v.value2, v.value3 = UnitAura(unit, aura, type(aura)=='number' and filter or nil, filter)\n        return v\n    end\n    local GetAuraValue = function(v, t, s) if v[t] then if s then if v.unitCaster and UnitExists(s) and v.unitCaster == s then return v[t] end else return v[t] end end end\n    local ScanAuras = function(aura, valueType, unit, sourceUnit)\n        local output = nil\n        if type(aura) == 'string' then\n            v = GetAuraValues(unit, aura)\n            output = GetAuraValue(v,valueType,sourceUnit)\n            if output then return output end\n            v = GetAuraValues(unit, aura, 'HARMFUL')\n            output = GetAuraValue(v,valueType,sourceUnit)\n            if output then return output end    \n        elseif type(aura) == 'number' then\n            for i=1,40 do \n                v = GetAuraValues(unit, i)\n                output = GetAuraValue(v,valueType,sourceUnit)\n                if v.spellId and v.spellId == aura then if output then return output end end\n                v = GetAuraValues(unit, i, 'HARMFUL')\n                output = GetAuraValue(v,valueType,sourceUnit)  \n                if v.spellId and v.spellId == aura then if output then return output end end \n            end\n        end\n    end\n    if type(aura) == 'table' then\n        local output = nil\n        for iAura,vAura in pairs(aura) do\n            output = ScanAuras(vAura, valueType, unit, sourceUnit)\n            if output then return output end\n        end\n    else\n        return ScanAuras(aura, valueType, unit, sourceUnit)\n    end\nend\n\nlocal SetValue = function(value, ...)\n    if not WeakAuras.CustomValues then WeakAuras.CustomValues = {} end\n    if not ... then return end\n    local count, data = #{...}\n    for i,v in pairs({...}) do\n        if i==1 then if count and count == 1 then WeakAuras.CustomValues[v] = value else\n                WeakAuras.CustomValues[v] = WeakAuras.CustomValues[v] or {}\n                data = WeakAuras.CustomValues[v] end\n        else if i ~= count then if not data[v] then data[v] = {} end data = data[v] else data[v] = value end end\n    end\nend\n\nlocal affectedUnits = nil\n-- Loop through raid members        \nlocal numPlayers = GetNumGroupMembers()\nfor i = 1, numPlayers do\n    local unitId = IsInRaid() and \"raid\"..i or \"party\"..i\n    \n    for iAura,vAura in pairs(auras) do\n        local auraName, auraStack = GetUnitAuraValue(vAura.name, 'name', unitId), GetUnitAuraValue(vAura.name, 'count', unitId)\n        -- Has aura            \n        if auraName then\n            if not auraStack or auraStack == 0 then auraStack = 1 end\n            -- Add to list\n            affectedUnits = affectedUnits or {}\n            -- Difficulty\n            local inInstance, instanceType = IsInInstance()\n            local difficultyID = GetRaidDifficultyID()\n            local base_damage = vAura.base_damage[15]\n            if instanceType == 'raid' and vAura.base_damage[difficultyID] then\n                base_damage = vAura.base_damage[difficultyID]\n            end\n            -- Calculate info\n            affectedUnits[unitId] = {\n                id = vAura.id, \n                currentDistance = vAura.base_distance*(1-vAura.distance_reduction)^(auraStack-1),\n                nextDistance    = vAura.base_distance*(1-vAura.distance_reduction)^(auraStack+1-1),\n                currentDamage   = base_damage + base_damage * (auraStack - 1) * vAura.damage_increase,\n                nextDamage      = base_damage + base_damage * (auraStack+1 - 1) * vAura.damage_increase,\n                stacks = auraStack,\n            }                \n        end\n    end\nend\nSetValue(affectedUnits, id, 'affectedUnits')",
 				},
 				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
+					["do_custom"] = true,
+					["custom"] = "-- ON HIDE\nlocal id = 'HighmaulMargokArcaneWrath'\nlocal SetValue = function(value, ...)\n    if not WeakAuras.CustomValues then WeakAuras.CustomValues = {} end\n    if not ... then return end\n    local count, data = #{...}\n    for i,v in pairs({...}) do\n        if i==1 then if count and count == 1 then WeakAuras.CustomValues[v] = value else\n                WeakAuras.CustomValues[v] = WeakAuras.CustomValues[v] or {}\n                data = WeakAuras.CustomValues[v] end\n        else if i ~= count then if not data[v] then data[v] = {} end data = data[v] else data[v] = value end end\n    end\nend\nSetValue(nil, id, 'affectedUnits')",
+				},
+				["init"] = {
 				},
 			},
+			["desaturate"] = false,
 			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["7 stacks"] = {
+			["xOffset"] = 0,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["actions"] = {
+				["start"] = {
+					["glow_action"] = "show",
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["message"] = "",
+					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (3y) on \"..name, \"SAY\")",
+					["do_sound"] = false,
+					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Ding6.ogg",
+					["do_custom"] = true,
+					["do_glow"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded", -- [1]
+					"Branded: Displacement", -- [2]
+					"Branded: Replication", -- [3]
+				},
+				["debuffType"] = "HARMFUL",
+				["useCount"] = true,
+				["count"] = "7",
+				["event"] = "Health",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
+				["custom_hide"] = "timed",
+			},
+			["stickyDuration"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 70,
+			["load"] = {
+				["zone"] = "Highmaul",
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_zone"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 20,
+			["displayStacks"] = "%p   %s",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Arcane Wrath(p1&p2&p4)",
+			["id"] = "7 stacks",
+			["icon"] = true,
+			["frameStrata"] = 1,
+			["width"] = 70,
+			["selfPoint"] = "CENTER",
+			["yOffset"] = 0,
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["additional_triggers"] = {
+			},
+			["desaturate"] = false,
+			["stacksPoint"] = "BOTTOM",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["11 stacks p3"] = {
+			["xOffset"] = 0,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (11y) on \"..name, \"SAY\")",
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded: Fortification", -- [1]
+				},
+				["custom_hide"] = "timed",
+				["useCount"] = true,
+				["count"] = "11",
+				["event"] = "Health",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
+				["debuffType"] = "HARMFUL",
+			},
+			["stickyDuration"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 70,
+			["load"] = {
+				["zone"] = "Highmaul",
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["use_zone"] = true,
+				["use_combat"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 20,
+			["displayStacks"] = "%p   %s",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Arcane Wrath(p3)",
+			["id"] = "11 stacks p3",
+			["icon"] = true,
+			["frameStrata"] = 1,
+			["width"] = 70,
+			["selfPoint"] = "CENTER",
+			["yOffset"] = 0,
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["additional_triggers"] = {
+			},
+			["desaturate"] = false,
+			["stacksPoint"] = "BOTTOM",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Highmaul - Imperator Mar'gok - Arcane Wrath Update"] = {
+			["outline"] = true,
+			["fontSize"] = 12,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["displayText"] = "",
+			["yOffset"] = 0,
+			["regionType"] = "text",
+			["customTextUpdate"] = "update",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["untrigger"] = {
+			},
+			["justify"] = "LEFT",
+			["selfPoint"] = "BOTTOM",
+			["trigger"] = {
+				["type"] = "custom",
+				["custom_type"] = "status",
+				["event"] = "Health",
+				["unit"] = "player",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+				},
+				["custom"] = "function(...)\n    local id = 'HighmaulMargokArcaneWrath'\n    local updateId = id .. 'Update'\n    local arrowDisplay = \"Highmaul - Imperator Mar'gok - Arcane Wrath Arrow\"\n    local distanceDisplay = \"Highmaul - Imperator Mar'gok - Arcane Wrath Distance\"\n    local currentDisplay = \"Highmaul - Imperator Mar'gok - Arcane Wrath Current\"\n    local nextDisplay = \"Highmaul - Imperator Mar'gok - Arcane Wrath Next\"\n    \n    local DistanceToUnit = function(unit)\n        local distanceSquared = UnitDistanceSquared(unit)\n        if distanceSquared then return distanceSquared  ^ 0.5 end\n        return nil\n    end\n    \n    local RotateDisplayToPoint = function(display, pointX, pointY, offset)\n        if display and pointX and pointY then\n            local playerX, playerY = UnitPosition('player')\n            offset = offset or 0\n            local degrees = math.deg(math.atan2((playerY - pointY), (playerX - pointX)) - GetPlayerFacing()) + offset\n            \n            local DisplayType = function(name)\n                if WeakAuras then\n                    if WeakAuras.auras and WeakAuras.auras[name] then return 'auras' end\n                    if WeakAuras.regions and WeakAuras.regions[name] then return 'regions' end\n                end\n            end\n            local displayType = DisplayType(display)\n            if not displayType then return end\n            \n            if displayType == 'auras' then\n                if WeakAuras \n                and WeakAuras[displayType] \n                and WeakAuras[displayType][display] \n                and WeakAuras[displayType][display][0]\n                and WeakAuras[displayType][display][0]['region']\n                and WeakAuras[displayType][display][0]['region']['Rotate']\n                and type(WeakAuras[displayType][display][0]['region']['Rotate']) == 'function' then\n                    WeakAuras[displayType][display][0]['region']['Rotate'](0, degrees and degrees or 0)\n                end\n            elseif displayType == 'regions' then\n                if WeakAuras \n                and WeakAuras[displayType] \n                and WeakAuras[displayType][display] \n                and WeakAuras[displayType][display]\n                and WeakAuras[displayType][display]['region']\n                and WeakAuras[displayType][display]['region']['Rotate']\n                and type(WeakAuras[displayType][display]['region']['Rotate']) == 'function' then\n                    WeakAuras[displayType][display]['region']['Rotate'](0, degrees and degrees or 0)\n                end\n            end\n        end\n    end\n    \n    local SetDisplayColor = function(display, r, g, b, a)\n        local DisplayType = function(name)\n            if WeakAuras then\n                if WeakAuras.auras and WeakAuras.auras[name] then return 'auras' end\n                if WeakAuras.regions and WeakAuras.regions[name] then return 'regions' end\n            end\n        end\n        local displayType = DisplayType(display)\n        if not displayType then return end\n        \n        local colors = {\n            { name = 'black',   r = 0, g = 0, b = 0, a = 1, },\n            { name = 'blue',    r = 0, g = 0.2, b = 1, a = 1, },\n            { name = 'green',   r = 0, g = 1, b = 0, a = 1, },\n            { name = 'orange',  r = 1, g = 0.5, b = 0, a = 1, },\n            { name = 'purple',  r = 1, g = 0, b = 1, a = 1, },\n            { name = 'red',     r = 1, g = 0, b = 0, a = 1, },\n            { name = 'white',   r = 1, g = 1, b = 1, a = 1, },\n            { name = 'yellow',  r = 1, g = 1, b = 0, a = 1, },\n        }\n        \n        -- Convert\n        if tonumber(r) == nil and type(r) == 'string' then\n            for i,v in pairs(colors) do\n                if v.name == strlower(r) then\n                    r = v.r\n                    g = v.g\n                    b = v.b\n                    a = v.a\n                end\n            end\n        end\n        \n        if r and b and g then\n            a = a or 1\n            if displayType == 'auras' then\n                if WeakAuras \n                and WeakAuras[displayType] \n                and WeakAuras[displayType][display] \n                and WeakAuras[displayType][display][0]\n                and WeakAuras[displayType][display][0]['region']\n                and WeakAuras[displayType][display][0]['region']['Color'] \n                and type(WeakAuras[displayType][display][0]['region']['Color']) == 'function' then\n                    WeakAuras[displayType][display][0]['region']:Color(r, g, b, a)\n                end\n            elseif displayType == 'regions' then\n                if WeakAuras \n                and WeakAuras[displayType] \n                and WeakAuras[displayType][display] \n                and WeakAuras[displayType][display]\n                and WeakAuras[displayType][display]['region']\n                and WeakAuras[displayType][display]['region']['Color'] \n                and type(WeakAuras[displayType][display]['region']['Color']) == 'function' then\n                    WeakAuras[displayType][display]['region']:Color(r, g, b, a)\n                end\n            end\n        end\n    end\n    \n    local SetDisplayText = function(display, text)\n        local DisplayType = function(name)\n            if WeakAuras then\n                if WeakAuras.auras and WeakAuras.auras[name] then return 'auras' end\n                if WeakAuras.regions and WeakAuras.regions[name] then return 'regions' end\n            end\n        end\n        local displayType = DisplayType(display)\n        if not displayType then return end\n        \n        if displayType == 'auras' then\n            if WeakAuras \n            and WeakAuras[displayType] \n            and WeakAuras[displayType][display] \n            and WeakAuras[displayType][display][0]\n            and WeakAuras[displayType][display][0]['region']\n            and WeakAuras[displayType][display][0]['region']['text'] then\n                WeakAuras[displayType][display][0]['region']['text']:SetText(text or '')\n            end\n        elseif displayType == 'regions' then\n            if WeakAuras \n            and WeakAuras[displayType] \n            and WeakAuras[displayType][display] \n            and WeakAuras[displayType][display]\n            and WeakAuras[displayType][display]['region']\n            and WeakAuras[displayType][display]['region']['text'] then\n                WeakAuras[displayType][display]['region']['text']:SetText(text or '')\n            end\n        end\n    end\n    \n    local GetValue = function(...)\n        if not WeakAuras.CustomValues then WeakAuras.CustomValues = {} end\n        if not ... then return end\n        local count, data = #{...}\n        if count and (count > 1) then\n            for i,v in pairs({...}) do\n                if i==1 then WeakAuras.CustomValues[v] = WeakAuras.CustomValues[v] or {} data = WeakAuras.CustomValues[v]\n                else if i ~= count then if not data[v] then data[v] = {} else data = data[v] end else data = data[v] end end\n            end\n        else data = WeakAuras.CustomValues[select(1, ...)] end\n        return data\n    end\n    \n    local GetUnitAuraValue = function(aura, valueType, unit, sourceUnit) -- v2\n        if not aura then return end valueType, unit = valueType or 'name', unit or 'player' if not UnitExists(unit) then return end local v, value = {}\n        local GetAuraValues = function(unit, aura, filter)\n            local v, filter = {}, filter or 'HELPFUL'\n            v.name, v.rank, v.icon, v.count, v.auraType, v.duration, v.expirationTime, v.unitCaster, v.isStealable, v.shouldConsolidate, v.spellId, v.canApplyAura, v.isBossDebuff, v.value1, v.value2, v.value3 = UnitAura(unit, aura, type(aura)=='number' and filter or nil, filter)\n            return v\n        end\n        local GetAuraValue = function(v, t, s) if v[t] then if s then if v.unitCaster and UnitExists(s) and v.unitCaster == s then return v[t] end else return v[t] end end end\n        local ScanAuras = function(aura, valueType, unit, sourceUnit)\n            local output = nil\n            if type(aura) == 'string' then\n                v = GetAuraValues(unit, aura)\n                output = GetAuraValue(v,valueType,sourceUnit)\n                if output then return output end\n                v = GetAuraValues(unit, aura, 'HARMFUL')\n                output = GetAuraValue(v,valueType,sourceUnit)\n                if output then return output end    \n            elseif type(aura) == 'number' then\n                for i=1,40 do \n                    v = GetAuraValues(unit, i)\n                    output = GetAuraValue(v,valueType,sourceUnit)\n                    if v.spellId and v.spellId == aura then if output then return output end end\n                    v = GetAuraValues(unit, i, 'HARMFUL')\n                    output = GetAuraValue(v,valueType,sourceUnit)  \n                    if v.spellId and v.spellId == aura then if output then return output end end \n                end\n            end\n        end\n        if type(aura) == 'table' then\n            local output = nil\n            for iAura,vAura in pairs(aura) do\n                output = ScanAuras(vAura, valueType, unit, sourceUnit)\n                if output then return output end\n            end\n        else\n            return ScanAuras(aura, valueType, unit, sourceUnit)\n        end\n    end\n    \n    local ShortenNumber = function(value, decimal, pattern)\n        if not value then return end\n        pattern = pattern or '%s%s'\n        function round(val, decimal)\n            if (decimal) then\n                return math.floor( (val * 10^decimal) + 0.5) / (10^decimal)\n            else\n                return math.floor(val+0.5)\n            end\n        end\n        if(value > 999999999) then return (pattern):format(round(value/1000000000, decimal), 'b') end           \n        if(value > 999999) then return (pattern):format(round(value/1000000, decimal), 'm') end        \n        if(value > 999) then return (pattern):format(round(value/1000, decimal), 'k') end        \n        return (pattern):format(round(value, decimal), '')\n    end\n    \n    local NearestPlayer = function()\n        local numPlayers = GetNumGroupMembers()\n        if numPlayers == 0 then return nil end\n        local DistanceToUnit = function(unit)\n            local distanceSquared = UnitDistanceSquared(unit)\n            if distanceSquared then return distanceSquared  ^ 0.5 end\n            return nil\n        end\n        local distance, nearestUnit, nearestDistance\n        for i = 1, numPlayers do\n            local unitId = IsInRaid() and \"raid\"..i or \"party\"..i\n            distance = DistanceToUnit(unitId)\n            if UnitExists(unitId) and not UnitIsUnit(unitId, 'player') and not UnitIsDeadOrGhost(unitId) then\n                if nearestUnit then\n                    -- Shorter\n                    if distance < nearestDistance then\n                        nearestUnit = unitId\n                        nearestDistance = distance\n                    end\n                else\n                    nearestUnit = unitId\n                    nearestDistance = distance\n                end            \n            end\n        end\n        return nearestUnit\n    end\n    \n    -- check if affectedUnits exist\n    local affectedUnits = GetValue(id, 'affectedUnits')\n    if affectedUnits then\n        local isPlayerAfflicted = false        \n        -- Check if self is affected\n        for unit,data in pairs(affectedUnits) do if UnitIsUnit(unit, 'player') then isPlayerAfflicted = true end end        \n        -- Get nearest afflicted info\n        local auraData = nil\n        local nearestUnit = nil             \n        local nearestUnitDistance = nil   \n        for unit, data in pairs(affectedUnits) do\n            if UnitExists(unit) and not UnitIsDeadOrGhost(unit) then\n                local distance = DistanceToUnit(unit)\n                if nearestUnitDistance then\n                    if nearestUnitDistance > distance then\n                        nearestUnitDistance = distance\n                        nearestUnit = unit\n                        auraData = data\n                    end\n                else\n                    nearestUnitDistance = distance\n                    nearestUnit = unit\n                    auraData = data\n                end\n            end            \n        end\n        \n        -- Update current/next info\n        -- Update info box\n        local currentDamage = ShortenNumber(auraData.currentDamage)\n        local currentDamagePercent = math.floor(auraData.currentDamage / UnitHealth('player') * 100)\n        local currentDamagePercentMax = math.floor(auraData.currentDamage / UnitHealthMax('player') * 100)\n        local nextDamage = ShortenNumber(auraData.nextDamage)\n        local nextDamagePercent = math.floor(auraData.nextDamage / UnitHealth('player') * 100)\n        local nextDamagePercentMax = math.floor(auraData.nextDamage / UnitHealthMax('player') * 100)\n        \n        SetDisplayText(currentDisplay, ('Current (%s): %s @ %s yds [%s%% MaxHP]'):format(auraData.stacks, currentDamage, auraData.currentDistance, currentDamagePercentMax))\n        SetDisplayText(nextDisplay, ('Next (%s): %s @ %s yds [%s%% MaxHP]'):format(auraData.stacks+1, nextDamage, auraData.nextDistance, nextDamagePercentMax))\n        \n        -- red if below current HP\n        if currentDamagePercent >= 100 then\n            SetDisplayColor(currentDisplay, 'red')\n        else -- green if OK\n            SetDisplayColor(currentDisplay, 'green')\n        end\n        -- red if below current HP\n        if nextDamagePercent >= 100 then\n            SetDisplayColor(nextDisplay, 'red')\n        else -- green if OK\n            SetDisplayColor(nextDisplay, 'green')\n        end        \n        \n        -- If player is afflicted\n        if isPlayerAfflicted then\n            -- Set distance info to nearest global player\n            local nearestUnit = NearestPlayer()\n            local nearestDistance = DistanceToUnit(nearestUnit)\n            SetDisplayText(distanceDisplay, (\"Nearest: %s [%s]\"):format(UnitName(nearestUnit), math.floor(nearestDistance)))\n            if auraData.currentDistance and nearestDistance > auraData.currentDistance then\n                SetDisplayColor(distanceDisplay, 'green')\n            else\n                SetDisplayColor(distanceDisplay, 'yellow')\n            end\n        else\n            -- Show arrow\n            RotateDisplayToPoint(arrowDisplay, UnitPosition(nearestUnit))\n            local distanceToUnit = DistanceToUnit(nearestUnit)\n            SetDisplayText(distanceDisplay, ('%s (%s)'):format(math.floor(distanceToUnit), UnitName(nearestUnit)))\n            if auraData.currentDistance and distanceToUnit > auraData.currentDistance then\n                --SetDisplayColor(arrowDisplay, 'white')\n                SetDisplayColor(distanceDisplay, 'green')\n            else\n                --SetDisplayColor(arrowDisplay, 'red')\n                SetDisplayColor(distanceDisplay, 'red')\n            end\n        end\n    end\nend",
+				["subeventPrefix"] = "SPELL",
+				["check"] = "update",
+				["subeventSuffix"] = "_CAST_START",
+				["spellIds"] = {
+				},
+				["custom_hide"] = "timed",
+			},
+			["anchorPoint"] = "CENTER",
+			["frameStrata"] = 1,
+			["width"] = 0.999999701976776,
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["font"] = "Friz Quadrata TT",
+			["numTriggers"] = 1,
+			["additional_triggers"] = {
+			},
+			["height"] = 0.999999701976776,
+			["xOffset"] = 0,
+			["load"] = {
+				["use_never"] = false,
+				["zone"] = "Highmaul",
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["use_zone"] = true,
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["id"] = "Highmaul - Imperator Mar'gok - Arcane Wrath Update",
+		},
+		["1 stack"] = {
+			["xOffset"] = 0,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["actions"] = {
+				["start"] = {
+					["glow_action"] = "show",
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["message"] = "",
+					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (200y) on \"..name, \"SAY\")",
+					["do_sound"] = false,
+					["do_custom"] = true,
+					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Ding6.ogg",
+					["do_glow"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded", -- [1]
+					"Branded: Displacement", -- [2]
+					"Branded: Replication", -- [3]
+				},
+				["custom_hide"] = "timed",
+				["useCount"] = true,
+				["count"] = "1",
+				["event"] = "Health",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
+				["debuffType"] = "HARMFUL",
+			},
+			["stickyDuration"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 70,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_zone"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["zone"] = "Highmaul",
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 20,
+			["displayStacks"] = "%p   %s",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Arcane Wrath(p1&p2&p4)",
+			["additional_triggers"] = {
+			},
+			["icon"] = true,
+			["frameStrata"] = 1,
+			["width"] = 70,
+			["selfPoint"] = "CENTER",
+			["yOffset"] = 0,
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["id"] = "1 stack",
+			["desaturate"] = false,
+			["stacksPoint"] = "BOTTOM",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["10 stacks p3"] = {
+			["xOffset"] = 0,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (15y) on \"..name, \"SAY\")",
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded: Fortification", -- [1]
+				},
+				["debuffType"] = "HARMFUL",
+				["useCount"] = true,
+				["count"] = "10",
+				["event"] = "Health",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
+				["custom_hide"] = "timed",
+			},
+			["stickyDuration"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 70,
+			["load"] = {
+				["zone"] = "Highmaul",
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["use_zone"] = true,
+				["use_combat"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 20,
+			["displayStacks"] = "%p   %s",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Arcane Wrath(p3)",
+			["additional_triggers"] = {
+			},
+			["icon"] = true,
+			["frameStrata"] = 1,
+			["width"] = 70,
+			["selfPoint"] = "CENTER",
+			["yOffset"] = 0,
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["id"] = "10 stacks p3",
+			["desaturate"] = false,
+			["stacksPoint"] = "BOTTOM",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["3 stacks p3"] = {
+			["xOffset"] = 0,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (112y) on \"..name, \"SAY\")",
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["countOperator"] = "==",
+				["names"] = {
+					"Branded: Fortification", -- [1]
+				},
+				["debuffType"] = "HARMFUL",
+				["useCount"] = true,
+				["count"] = "3",
+				["event"] = "Health",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["subeventPrefix"] = "SPELL",
+				["custom_hide"] = "timed",
+			},
+			["stickyDuration"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 70,
+			["load"] = {
+				["zone"] = "Highmaul",
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["use_zone"] = true,
+				["use_combat"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 20,
+			["displayStacks"] = "%p   %s",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Arcane Wrath(p3)",
+			["id"] = "3 stacks p3",
+			["icon"] = true,
+			["frameStrata"] = 1,
+			["width"] = 70,
+			["selfPoint"] = "CENTER",
+			["yOffset"] = 0,
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["additional_triggers"] = {
+			},
+			["desaturate"] = false,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -2437,11 +3144,11 @@ WeakAurasSaved = {
 					["do_custom"] = false,
 					["custom"] = "-- ON SHOW\nlocal id = 'HighmaulMargokArcaneWrath'\nlocal auras = {\n    {id = 156225, name = \"Branded\", base_damage = 75000, damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 164004, name = \"Branded: Displacement\", base_damage = 75000, damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 164005, name = \"Branded: Fortification\", base_damage = 75000, damage_increase = 0.25, distance_reduction = 0.25},\n    {id = 164006, name = \"Branded: Replication\", base_damage = 75000, damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 119611, name = \"Renewing Mist\", base_damage = 75000, damage_increase = 0.25, distance_reduction = 0.5},\n} \n\nlocal SetValue = function(value, ...)\n    if not WeakAuras.CustomValues then WeakAuras.CustomValues = {} end\n    if not ... then return end\n    local count, data = #{...}\n    for i,v in pairs({...}) do\n        if i==1 then if count and count == 1 then WeakAuras.CustomValues[v] = value else\n                WeakAuras.CustomValues[v] = WeakAuras.CustomValues[v] or {}\n                data = WeakAuras.CustomValues[v] end\n        else if i ~= count then if not data[v] then data[v] = {} end data = data[v] else data[v] = value end end\n    end\nend\n\nlocal affectedUnits = nil\n-- Loop through raid members        \nlocal numPlayers = GetNumGroupMembers()\nfor i = 1, numPlayers do\n    local unitId = IsInRaid() and \"raid\"..i or \"party\"..i\n    for iAura,vAura in pairs(auras) do\n        local auraName, _, _, auraStack = UnitAura(unitId, vAura.name)\n        -- Has aura            \n        if auraName then\n            -- Add to list\n            affectedUnits = affectedUnits or {}\n            affectedUnits[unitId] = {id = vAura.id, stack = auraStack}                \n        end\n    end\nend\nSetValue(affectedUnits, id, 'affectedUnits')",
 				},
-				["init"] = {
-				},
 				["finish"] = {
 					["do_custom"] = false,
 					["custom"] = "-- ON HIDE\nlocal id = 'HighmaulMargokArcaneWrath'\nlocal SetValue = function(value, ...)\n    if not WeakAuras.CustomValues then WeakAuras.CustomValues = {} end\n    if not ... then return end\n    local count, data = #{...}\n    for i,v in pairs({...}) do\n        if i==1 then if count and count == 1 then WeakAuras.CustomValues[v] = value else\n                WeakAuras.CustomValues[v] = WeakAuras.CustomValues[v] or {}\n                data = WeakAuras.CustomValues[v] end\n        else if i ~= count then if not data[v] then data[v] = {} end data = data[v] else data[v] = value end end\n    end\nend\nSetValue(nil, id, 'affectedUnits')",
+				},
+				["init"] = {
 				},
 			},
 			["fontFlags"] = "OUTLINE",
@@ -2452,7 +3159,13 @@ WeakAurasSaved = {
 				["subeventSuffix"] = "_CAST_START",
 				["name_info"] = "players",
 				["unit"] = "group",
-				["debuffType"] = "HARMFUL",
+				["group_countOperator"] = ">",
+				["event"] = "Health",
+				["spellIds"] = {
+				},
+				["subeventPrefix"] = "SPELL",
+				["group_count"] = "0",
+				["custom_hide"] = "timed",
 				["names"] = {
 					"Branded", -- [1]
 					"Branded: Displacement", -- [2]
@@ -2460,13 +3173,7 @@ WeakAurasSaved = {
 					"Branded: Replication", -- [4]
 					"Venom Splash", -- [5]
 				},
-				["spellIds"] = {
-				},
-				["custom_hide"] = "timed",
-				["group_count"] = "0",
-				["subeventPrefix"] = "SPELL",
-				["event"] = "Health",
-				["group_countOperator"] = ">",
+				["debuffType"] = "HARMFUL",
 			},
 			["stickyDuration"] = false,
 			["rotation"] = 0,
@@ -2489,7 +3196,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = true,
-				["talent"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -2498,7 +3205,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["spec"] = {
+				["talent"] = {
 					["multi"] = {
 					},
 				},
@@ -2527,10 +3234,11 @@ WeakAurasSaved = {
 						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Health",
 						["subeventPrefix"] = "SPELL",
-						["debuffType"] = "HARMFUL",
+						["custom_hide"] = "timed",
 						["spellIds"] = {
 						},
-						["unit"] = "player",
+						["inverse"] = true,
+						["name_info"] = "aura",
 						["names"] = {
 							"Branded", -- [1]
 							"Branded: Displacement", -- [2]
@@ -2538,749 +3246,41 @@ WeakAurasSaved = {
 							"Branded: Replication", -- [4]
 							"Venom Splash", -- [5]
 						},
-						["name_info"] = "aura",
-						["inverse"] = true,
-						["custom_hide"] = "timed",
+						["unit"] = "player",
+						["debuffType"] = "HARMFUL",
 					},
 					["untrigger"] = {
 					},
 				}, -- [1]
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["discrete_rotation"] = 0,
 			["frameStrata"] = 1,
 			["width"] = 79.3152542114258,
-			["id"] = "Highmaul - Imperator Mar'gok - Arcane Wrath Arrow",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["desaturate"] = false,
 			["inverse"] = false,
 			["numTriggers"] = 2,
-			["desaturate"] = false,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
+			["id"] = "Highmaul - Imperator Mar'gok - Arcane Wrath Arrow",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["discrete_rotation"] = 0,
 			["stacksPoint"] = "BOTTOMRIGHT",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["3 stacks p3"] = {
-			["parent"] = "Arcane Wrath(p3)",
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (112y) on \"..name, \"SAY\")",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["do_custom"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "3",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
-			["load"] = {
-				["zone"] = "Highmaul",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["additional_triggers"] = {
-			},
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["id"] = "3 stacks p3",
-			["untrigger"] = {
-			},
-			["inverse"] = false,
-			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
-			["stacksPoint"] = "BOTTOM",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["Highmaul - Imperator Mar'gok - Arcane Wrath Update"] = {
-			["outline"] = true,
-			["fontSize"] = 12,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["displayText"] = "",
-			["yOffset"] = 0,
-			["regionType"] = "text",
-			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["trigger"] = {
-				["type"] = "custom",
-				["custom_type"] = "status",
-				["event"] = "Health",
-				["unit"] = "player",
-				["custom_hide"] = "timed",
-				["custom"] = "function(...)\n    local id = 'HighmaulMargokArcaneWrath'\n    local updateId = id .. 'Update'\n    local arrowDisplay = \"Highmaul - Imperator Mar'gok - Arcane Wrath Arrow\"\n    local distanceDisplay = \"Highmaul - Imperator Mar'gok - Arcane Wrath Distance\"\n    local currentDisplay = \"Highmaul - Imperator Mar'gok - Arcane Wrath Current\"\n    local nextDisplay = \"Highmaul - Imperator Mar'gok - Arcane Wrath Next\"\n    \n    local DistanceToUnit = function(unit)\n        local distanceSquared = UnitDistanceSquared(unit)\n        if distanceSquared then return distanceSquared  ^ 0.5 end\n        return nil\n    end\n    \n    local RotateDisplayToPoint = function(display, pointX, pointY, offset)\n        if display and pointX and pointY then\n            local playerX, playerY = UnitPosition('player')\n            offset = offset or 0\n            local degrees = math.deg(math.atan2((playerY - pointY), (playerX - pointX)) - GetPlayerFacing()) + offset\n            \n            local DisplayType = function(name)\n                if WeakAuras then\n                    if WeakAuras.auras and WeakAuras.auras[name] then return 'auras' end\n                    if WeakAuras.regions and WeakAuras.regions[name] then return 'regions' end\n                end\n            end\n            local displayType = DisplayType(display)\n            if not displayType then return end\n            \n            if displayType == 'auras' then\n                if WeakAuras \n                and WeakAuras[displayType] \n                and WeakAuras[displayType][display] \n                and WeakAuras[displayType][display][0]\n                and WeakAuras[displayType][display][0]['region']\n                and WeakAuras[displayType][display][0]['region']['Rotate']\n                and type(WeakAuras[displayType][display][0]['region']['Rotate']) == 'function' then\n                    WeakAuras[displayType][display][0]['region']['Rotate'](0, degrees and degrees or 0)\n                end\n            elseif displayType == 'regions' then\n                if WeakAuras \n                and WeakAuras[displayType] \n                and WeakAuras[displayType][display] \n                and WeakAuras[displayType][display]\n                and WeakAuras[displayType][display]['region']\n                and WeakAuras[displayType][display]['region']['Rotate']\n                and type(WeakAuras[displayType][display]['region']['Rotate']) == 'function' then\n                    WeakAuras[displayType][display]['region']['Rotate'](0, degrees and degrees or 0)\n                end\n            end\n        end\n    end\n    \n    local SetDisplayColor = function(display, r, g, b, a)\n        local DisplayType = function(name)\n            if WeakAuras then\n                if WeakAuras.auras and WeakAuras.auras[name] then return 'auras' end\n                if WeakAuras.regions and WeakAuras.regions[name] then return 'regions' end\n            end\n        end\n        local displayType = DisplayType(display)\n        if not displayType then return end\n        \n        local colors = {\n            { name = 'black',   r = 0, g = 0, b = 0, a = 1, },\n            { name = 'blue',    r = 0, g = 0.2, b = 1, a = 1, },\n            { name = 'green',   r = 0, g = 1, b = 0, a = 1, },\n            { name = 'orange',  r = 1, g = 0.5, b = 0, a = 1, },\n            { name = 'purple',  r = 1, g = 0, b = 1, a = 1, },\n            { name = 'red',     r = 1, g = 0, b = 0, a = 1, },\n            { name = 'white',   r = 1, g = 1, b = 1, a = 1, },\n            { name = 'yellow',  r = 1, g = 1, b = 0, a = 1, },\n        }\n        \n        -- Convert\n        if tonumber(r) == nil and type(r) == 'string' then\n            for i,v in pairs(colors) do\n                if v.name == strlower(r) then\n                    r = v.r\n                    g = v.g\n                    b = v.b\n                    a = v.a\n                end\n            end\n        end\n        \n        if r and b and g then\n            a = a or 1\n            if displayType == 'auras' then\n                if WeakAuras \n                and WeakAuras[displayType] \n                and WeakAuras[displayType][display] \n                and WeakAuras[displayType][display][0]\n                and WeakAuras[displayType][display][0]['region']\n                and WeakAuras[displayType][display][0]['region']['Color'] \n                and type(WeakAuras[displayType][display][0]['region']['Color']) == 'function' then\n                    WeakAuras[displayType][display][0]['region']:Color(r, g, b, a)\n                end\n            elseif displayType == 'regions' then\n                if WeakAuras \n                and WeakAuras[displayType] \n                and WeakAuras[displayType][display] \n                and WeakAuras[displayType][display]\n                and WeakAuras[displayType][display]['region']\n                and WeakAuras[displayType][display]['region']['Color'] \n                and type(WeakAuras[displayType][display]['region']['Color']) == 'function' then\n                    WeakAuras[displayType][display]['region']:Color(r, g, b, a)\n                end\n            end\n        end\n    end\n    \n    local SetDisplayText = function(display, text)\n        local DisplayType = function(name)\n            if WeakAuras then\n                if WeakAuras.auras and WeakAuras.auras[name] then return 'auras' end\n                if WeakAuras.regions and WeakAuras.regions[name] then return 'regions' end\n            end\n        end\n        local displayType = DisplayType(display)\n        if not displayType then return end\n        \n        if displayType == 'auras' then\n            if WeakAuras \n            and WeakAuras[displayType] \n            and WeakAuras[displayType][display] \n            and WeakAuras[displayType][display][0]\n            and WeakAuras[displayType][display][0]['region']\n            and WeakAuras[displayType][display][0]['region']['text'] then\n                WeakAuras[displayType][display][0]['region']['text']:SetText(text or '')\n            end\n        elseif displayType == 'regions' then\n            if WeakAuras \n            and WeakAuras[displayType] \n            and WeakAuras[displayType][display] \n            and WeakAuras[displayType][display]\n            and WeakAuras[displayType][display]['region']\n            and WeakAuras[displayType][display]['region']['text'] then\n                WeakAuras[displayType][display]['region']['text']:SetText(text or '')\n            end\n        end\n    end\n    \n    local GetValue = function(...)\n        if not WeakAuras.CustomValues then WeakAuras.CustomValues = {} end\n        if not ... then return end\n        local count, data = #{...}\n        if count and (count > 1) then\n            for i,v in pairs({...}) do\n                if i==1 then WeakAuras.CustomValues[v] = WeakAuras.CustomValues[v] or {} data = WeakAuras.CustomValues[v]\n                else if i ~= count then if not data[v] then data[v] = {} else data = data[v] end else data = data[v] end end\n            end\n        else data = WeakAuras.CustomValues[select(1, ...)] end\n        return data\n    end\n    \n    local GetUnitAuraValue = function(aura, valueType, unit, sourceUnit) -- v2\n        if not aura then return end valueType, unit = valueType or 'name', unit or 'player' if not UnitExists(unit) then return end local v, value = {}\n        local GetAuraValues = function(unit, aura, filter)\n            local v, filter = {}, filter or 'HELPFUL'\n            v.name, v.rank, v.icon, v.count, v.auraType, v.duration, v.expirationTime, v.unitCaster, v.isStealable, v.shouldConsolidate, v.spellId, v.canApplyAura, v.isBossDebuff, v.value1, v.value2, v.value3 = UnitAura(unit, aura, type(aura)=='number' and filter or nil, filter)\n            return v\n        end\n        local GetAuraValue = function(v, t, s) if v[t] then if s then if v.unitCaster and UnitExists(s) and v.unitCaster == s then return v[t] end else return v[t] end end end\n        local ScanAuras = function(aura, valueType, unit, sourceUnit)\n            local output = nil\n            if type(aura) == 'string' then\n                v = GetAuraValues(unit, aura)\n                output = GetAuraValue(v,valueType,sourceUnit)\n                if output then return output end\n                v = GetAuraValues(unit, aura, 'HARMFUL')\n                output = GetAuraValue(v,valueType,sourceUnit)\n                if output then return output end    \n            elseif type(aura) == 'number' then\n                for i=1,40 do \n                    v = GetAuraValues(unit, i)\n                    output = GetAuraValue(v,valueType,sourceUnit)\n                    if v.spellId and v.spellId == aura then if output then return output end end\n                    v = GetAuraValues(unit, i, 'HARMFUL')\n                    output = GetAuraValue(v,valueType,sourceUnit)  \n                    if v.spellId and v.spellId == aura then if output then return output end end \n                end\n            end\n        end\n        if type(aura) == 'table' then\n            local output = nil\n            for iAura,vAura in pairs(aura) do\n                output = ScanAuras(vAura, valueType, unit, sourceUnit)\n                if output then return output end\n            end\n        else\n            return ScanAuras(aura, valueType, unit, sourceUnit)\n        end\n    end\n    \n    local ShortenNumber = function(value, decimal, pattern)\n        if not value then return end\n        pattern = pattern or '%s%s'\n        function round(val, decimal)\n            if (decimal) then\n                return math.floor( (val * 10^decimal) + 0.5) / (10^decimal)\n            else\n                return math.floor(val+0.5)\n            end\n        end\n        if(value > 999999999) then return (pattern):format(round(value/1000000000, decimal), 'b') end           \n        if(value > 999999) then return (pattern):format(round(value/1000000, decimal), 'm') end        \n        if(value > 999) then return (pattern):format(round(value/1000, decimal), 'k') end        \n        return (pattern):format(round(value, decimal), '')\n    end\n    \n    local NearestPlayer = function()\n        local numPlayers = GetNumGroupMembers()\n        if numPlayers == 0 then return nil end\n        local DistanceToUnit = function(unit)\n            local distanceSquared = UnitDistanceSquared(unit)\n            if distanceSquared then return distanceSquared  ^ 0.5 end\n            return nil\n        end\n        local distance, nearestUnit, nearestDistance\n        for i = 1, numPlayers do\n            local unitId = IsInRaid() and \"raid\"..i or \"party\"..i\n            distance = DistanceToUnit(unitId)\n            if UnitExists(unitId) and not UnitIsUnit(unitId, 'player') and not UnitIsDeadOrGhost(unitId) then\n                if nearestUnit then\n                    -- Shorter\n                    if distance < nearestDistance then\n                        nearestUnit = unitId\n                        nearestDistance = distance\n                    end\n                else\n                    nearestUnit = unitId\n                    nearestDistance = distance\n                end            \n            end\n        end\n        return nearestUnit\n    end\n    \n    -- check if affectedUnits exist\n    local affectedUnits = GetValue(id, 'affectedUnits')\n    if affectedUnits then\n        local isPlayerAfflicted = false        \n        -- Check if self is affected\n        for unit,data in pairs(affectedUnits) do if UnitIsUnit(unit, 'player') then isPlayerAfflicted = true end end        \n        -- Get nearest afflicted info\n        local auraData = nil\n        local nearestUnit = nil             \n        local nearestUnitDistance = nil   \n        for unit, data in pairs(affectedUnits) do\n            if UnitExists(unit) and not UnitIsDeadOrGhost(unit) then\n                local distance = DistanceToUnit(unit)\n                if nearestUnitDistance then\n                    if nearestUnitDistance > distance then\n                        nearestUnitDistance = distance\n                        nearestUnit = unit\n                        auraData = data\n                    end\n                else\n                    nearestUnitDistance = distance\n                    nearestUnit = unit\n                    auraData = data\n                end\n            end            \n        end\n        \n        -- Update current/next info\n        -- Update info box\n        local currentDamage = ShortenNumber(auraData.currentDamage)\n        local currentDamagePercent = math.floor(auraData.currentDamage / UnitHealth('player') * 100)\n        local currentDamagePercentMax = math.floor(auraData.currentDamage / UnitHealthMax('player') * 100)\n        local nextDamage = ShortenNumber(auraData.nextDamage)\n        local nextDamagePercent = math.floor(auraData.nextDamage / UnitHealth('player') * 100)\n        local nextDamagePercentMax = math.floor(auraData.nextDamage / UnitHealthMax('player') * 100)\n        \n        SetDisplayText(currentDisplay, ('Current (%s): %s @ %s yds [%s%% MaxHP]'):format(auraData.stacks, currentDamage, auraData.currentDistance, currentDamagePercentMax))\n        SetDisplayText(nextDisplay, ('Next (%s): %s @ %s yds [%s%% MaxHP]'):format(auraData.stacks+1, nextDamage, auraData.nextDistance, nextDamagePercentMax))\n        \n        -- red if below current HP\n        if currentDamagePercent >= 100 then\n            SetDisplayColor(currentDisplay, 'red')\n        else -- green if OK\n            SetDisplayColor(currentDisplay, 'green')\n        end\n        -- red if below current HP\n        if nextDamagePercent >= 100 then\n            SetDisplayColor(nextDisplay, 'red')\n        else -- green if OK\n            SetDisplayColor(nextDisplay, 'green')\n        end        \n        \n        -- If player is afflicted\n        if isPlayerAfflicted then\n            -- Set distance info to nearest global player\n            local nearestUnit = NearestPlayer()\n            local nearestDistance = DistanceToUnit(nearestUnit)\n            SetDisplayText(distanceDisplay, (\"Nearest: %s [%s]\"):format(UnitName(nearestUnit), math.floor(nearestDistance)))\n            if auraData.currentDistance and nearestDistance > auraData.currentDistance then\n                SetDisplayColor(distanceDisplay, 'green')\n            else\n                SetDisplayColor(distanceDisplay, 'yellow')\n            end\n        else\n            -- Show arrow\n            RotateDisplayToPoint(arrowDisplay, UnitPosition(nearestUnit))\n            local distanceToUnit = DistanceToUnit(nearestUnit)\n            SetDisplayText(distanceDisplay, ('%s (%s)'):format(math.floor(distanceToUnit), UnitName(nearestUnit)))\n            if auraData.currentDistance and distanceToUnit > auraData.currentDistance then\n                --SetDisplayColor(arrowDisplay, 'white')\n                SetDisplayColor(distanceDisplay, 'green')\n            else\n                --SetDisplayColor(arrowDisplay, 'red')\n                SetDisplayColor(distanceDisplay, 'red')\n            end\n        end\n    end\nend",
-				["spellIds"] = {
-				},
-				["subeventSuffix"] = "_CAST_START",
-				["check"] = "update",
-				["subeventPrefix"] = "SPELL",
-				["names"] = {
-				},
-				["debuffType"] = "HELPFUL",
-			},
-			["justify"] = "LEFT",
-			["selfPoint"] = "BOTTOM",
-			["id"] = "Highmaul - Imperator Mar'gok - Arcane Wrath Update",
-			["anchorPoint"] = "CENTER",
-			["frameStrata"] = 1,
-			["width"] = 0.999999701976776,
-			["xOffset"] = 0,
-			["font"] = "Friz Quadrata TT",
-			["numTriggers"] = 1,
-			["additional_triggers"] = {
-			},
-			["height"] = 0.999999701976776,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["load"] = {
-				["use_never"] = false,
-				["zone"] = "Highmaul",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["untrigger"] = {
-			},
-		},
-		["1 stack"] = {
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-					["glow_action"] = "show",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (200y) on \"..name, \"SAY\")",
-					["do_sound"] = false,
-					["do_glow"] = false,
-					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Ding6.ogg",
-					["do_custom"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Replication", -- [3]
-				},
-				["debuffType"] = "HARMFUL",
-				["useCount"] = true,
-				["count"] = "1",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
-			["load"] = {
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["zone"] = "Highmaul",
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["id"] = "1 stack",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["additional_triggers"] = {
-			},
-			["untrigger"] = {
-			},
-			["inverse"] = false,
-			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
-			["stacksPoint"] = "BOTTOM",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["10 stacks p3"] = {
-			["parent"] = "Arcane Wrath(p3)",
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (15y) on \"..name, \"SAY\")",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["do_custom"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "10",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
-			["load"] = {
-				["zone"] = "Highmaul",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["id"] = "10 stacks p3",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["additional_triggers"] = {
-			},
-			["untrigger"] = {
-			},
-			["inverse"] = false,
-			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
-			["stacksPoint"] = "BOTTOM",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["11 stacks p3"] = {
-			["parent"] = "Arcane Wrath(p3)",
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (11y) on \"..name, \"SAY\")",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["do_custom"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["debuffType"] = "HARMFUL",
-				["useCount"] = true,
-				["count"] = "11",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
-			["load"] = {
-				["zone"] = "Highmaul",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["additional_triggers"] = {
-			},
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["id"] = "11 stacks p3",
-			["untrigger"] = {
-			},
-			["inverse"] = false,
-			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
-			["stacksPoint"] = "BOTTOM",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["7 stacks"] = {
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-					["glow_action"] = "show",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (3y) on \"..name, \"SAY\")",
-					["do_sound"] = false,
-					["do_glow"] = false,
-					["do_custom"] = true,
-					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Ding6.ogg",
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Replication", -- [3]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "7",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
-			["load"] = {
-				["zone"] = "Highmaul",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["additional_triggers"] = {
-			},
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["id"] = "7 stacks",
-			["untrigger"] = {
-			},
-			["inverse"] = false,
-			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
-			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -3290,19 +3290,6 @@ WeakAurasSaved = {
 		},
 	},
 	["registered"] = {
-	},
-	["login_squelch_time"] = 10,
-	["frame"] = {
-		["xOffset"] = -159.000122070313,
-		["yOffset"] = -316.000366210938,
-		["height"] = 492,
-		["width"] = 630,
-	},
-	["tempIconCache"] = {
-		["Branded"] = "Interface\\Icons\\ability_socererking_arcanewrath",
-		["Branded: Displacement"] = "Interface\\Icons\\ability_socererking_arcanewrath",
-		["Branded: Fortification"] = "Interface\\Icons\\ability_socererking_arcanewrath",
-		["Branded: Replication"] = "Interface\\Icons\\ability_socererking_arcanewrath",
 	},
 	["talent_cache"] = {
 		["HUNTER"] = {
@@ -3569,14 +3556,6 @@ WeakAurasSaved = {
 				["icon"] = "Interface\\Icons\\spell_warlock_demonicservitude",
 			}, -- [21]
 		},
-		["SHAMAN"] = {
-		},
-		["DEATHKNIGHT"] = {
-		},
-		["DRUID"] = {
-		},
-		["MONK"] = {
-		},
 		["PALADIN"] = {
 			{
 				["name"] = "Speed of Light",
@@ -3663,5 +3642,26 @@ WeakAurasSaved = {
 				["icon"] = "Interface\\Icons\\Spell_Holy_BlessingOfProtection",
 			}, -- [21]
 		},
+		["DEATHKNIGHT"] = {
+		},
+		["DRUID"] = {
+		},
+		["MONK"] = {
+		},
+		["SHAMAN"] = {
+		},
 	},
+	["frame"] = {
+		["xOffset"] = -159.000122070313,
+		["width"] = 630,
+		["height"] = 492,
+		["yOffset"] = -316.000366210938,
+	},
+	["tempIconCache"] = {
+		["Branded"] = "Interface\\Icons\\ability_socererking_arcanewrath",
+		["Branded: Displacement"] = "Interface\\Icons\\ability_socererking_arcanewrath",
+		["Branded: Replication"] = "Interface\\Icons\\ability_socererking_arcanewrath",
+		["Branded: Fortification"] = "Interface\\Icons\\ability_socererking_arcanewrath",
+	},
+	["login_squelch_time"] = 10,
 }
