@@ -34,7 +34,8 @@ Postal3DB = {
 		["Galinar - Sisters of Elune"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Ghiaccioli|Sisters of Elune|Alliance", -- [1]
+					"Uldaris|Sisters of Elune|Alliance", -- [1]
+					"Ghiaccioli|Sisters of Elune|Alliance", -- [2]
 				},
 			},
 		},
@@ -51,11 +52,12 @@ Postal3DB = {
 		["Clothgar - Sisters of Elune"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Herbinator|Sisters of Elune|Alliance", -- [1]
+					"Ghiaccioli|Sisters of Elune|Alliance", -- [1]
 					"Bracnar|Sisters of Elune|Alliance", -- [2]
 					"Uldaris|Sisters of Elune|Alliance", -- [3]
-					"Ghiaccioli|Sisters of Elune|Alliance", -- [4]
-					"Loupame|Sisters of Elune|Alliance", -- [5]
+					"Aloraal|Sisters of Elune|Alliance", -- [4]
+					"Herbinator|Sisters of Elune|Alliance", -- [5]
+					"Loupame|Sisters of Elune|Alliance", -- [6]
 				},
 			},
 		},
@@ -68,10 +70,10 @@ Postal3DB = {
 		["Ghiaccioli - Sisters of Elune"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Herbinator|Sisters of Elune|Alliance", -- [1]
-					"Bracnar|Sisters of Elune|Alliance", -- [2]
-					"Clothgar|Sisters of Elune|Alliance", -- [3]
-					"Galinar|Sisters of Elune|Alliance", -- [4]
+					"Bracnar|Sisters of Elune|Alliance", -- [1]
+					"Galinar|Sisters of Elune|Alliance", -- [2]
+					"Herbinator|Sisters of Elune|Alliance", -- [3]
+					"Clothgar|Sisters of Elune|Alliance", -- [4]
 					"Belrath|Sisters of Elune|Alliance", -- [5]
 					"Uldaris|Sisters of Elune|Alliance", -- [6]
 				},
@@ -80,26 +82,28 @@ Postal3DB = {
 		["Bracnar - Sisters of Elune"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Ghiaccioli|Sisters of Elune|Alliance", -- [1]
-					"Clothgar|Sisters of Elune|Alliance", -- [2]
-					"Herbinator|Sisters of Elune|Alliance", -- [3]
-					"Uldaris|Sisters of Elune|Alliance", -- [4]
-					"Aloraal|Sisters of Elune|Alliance", -- [5]
-					"ClothGar|Sisters of Elune|Alliance", -- [6]
-					"Belrath|Sisters of Elune|Alliance", -- [7]
-					"Angall|Sisters of Elune|Alliance", -- [8]
-					"Loupame|Sisters of Elune|Alliance", -- [9]
+					"Clothgar|Sisters of Elune|Alliance", -- [1]
+					"Herbinator|Sisters of Elune|Alliance", -- [2]
+					"Ghiaccioli|Sisters of Elune|Alliance", -- [3]
+					"Galinar|Sisters of Elune|Alliance", -- [4]
+					"Uldaris|Sisters of Elune|Alliance", -- [5]
+					"Aloraal|Sisters of Elune|Alliance", -- [6]
+					"ClothGar|Sisters of Elune|Alliance", -- [7]
+					"Belrath|Sisters of Elune|Alliance", -- [8]
+					"Angall|Sisters of Elune|Alliance", -- [9]
+					"Loupame|Sisters of Elune|Alliance", -- [10]
 				},
 			},
 		},
 		["Uldaris - Sisters of Elune"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Clothgar|Sisters of Elune|Alliance", -- [1]
+					"Galinar|Sisters of Elune|Alliance", -- [1]
 					"Herbinator|Sisters of Elune|Alliance", -- [2]
 					"Bracnar|Sisters of Elune|Alliance", -- [3]
-					"Ghiaccioli|Sisters of Elune|Alliance", -- [4]
-					"Belrath|Sisters of Elune|Alliance", -- [5]
+					"Clothgar|Sisters of Elune|Alliance", -- [4]
+					"Ghiaccioli|Sisters of Elune|Alliance", -- [5]
+					"Belrath|Sisters of Elune|Alliance", -- [6]
 				},
 			},
 		},

@@ -1,1 +1,8 @@
 Version: 1
+Frame: TSMMainFrame1
+FrameLevel: 42
+Anchor: CENTER
+X: 55
+Y: 77
+W: 985
+H: 679

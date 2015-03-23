@@ -1,6 +1,7 @@
 
 TradeSkillMaster_CoolDownsDB = {
 	["profileKeys"] = {
+		["Galinar - Sisters of Elune"] = "Default",
 		["Clothgar - Sisters of Elune"] = "Default",
 		["Ghiaccioli - Sisters of Elune"] = "Default",
 		["Herbinator - Sisters of Elune"] = "Default",
@@ -23,7 +24,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Alchemical Catalyst",
 					["players"] = {
 						["Bracnar"] = {
-							["CoolDownTime"] = 1426672811.326,
+							["CoolDownTime"] = 1427104868.945,
 							["knownCraft"] = true,
 						},
 					},
@@ -186,7 +187,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Taladite Crystal",
 					["players"] = {
 						["Uldaris"] = {
-							["CoolDownTime"] = 1426672872.27,
+							["CoolDownTime"] = 1427104810.53,
 							["knownCraft"] = true,
 						},
 					},
@@ -457,7 +458,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Secret of Draenor Jewelcrafting",
 					["players"] = {
 						["Uldaris"] = {
-							["CoolDownTime"] = 1426672819.498,
+							["CoolDownTime"] = 1427104842.503,
 							["knownCraft"] = true,
 						},
 					},
@@ -512,7 +513,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Temporal Crystal",
 					["players"] = {
 						["Bracnar"] = {
-							["CoolDownTime"] = 1426672797.63,
+							["CoolDownTime"] = 1427104862.309,
 							["knownCraft"] = true,
 						},
 					},

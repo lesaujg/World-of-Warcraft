@@ -21,6 +21,9 @@ TukuiConfigShared = {
 			["General"] = {
 				["UIScale"] = 0.64,
 			},
+			["ActionBars"] = {
+				["HotKey"] = true,
+			},
 		},
 		["Uldaris"] = {
 			["General"] = {
@@ -34,9 +37,6 @@ TukuiConfigShared = {
 		["Galinar"] = {
 			["General"] = {
 				["UIScale"] = 0.64,
-			},
-			["Bags"] = {
-				["Enable"] = false,
 			},
 		},
 		["Herbinator"] = {

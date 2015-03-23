@@ -20,6 +20,7 @@ MacroToolkitDB = {
 		},
 	},
 	["profileKeys"] = {
+		["Galinar - Sisters of Elune"] = "profile",
 		["Uldaris - Sisters of Elune"] = "profile",
 		["Herbinator - Sisters of Elune"] = "profile",
 		["Bracnar - Sisters of Elune"] = "profile",

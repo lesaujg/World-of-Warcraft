@@ -2,7 +2,7 @@
 WeakAurasSaved = {
 	["displays"] = {
 		["6 stacks p3"] = {
-			["xOffset"] = 0,
+			["parent"] = "Arcane Wrath(p3)",
 			["untrigger"] = {
 			},
 			["anchorPoint"] = "CENTER",
@@ -91,16 +91,16 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["parent"] = "Arcane Wrath(p3)",
 			["additional_triggers"] = {
 			},
 			["icon"] = true,
@@ -121,7 +121,7 @@ WeakAurasSaved = {
 			},
 		},
 		["7 stacks p3"] = {
-			["xOffset"] = 0,
+			["parent"] = "Arcane Wrath(p3)",
 			["untrigger"] = {
 			},
 			["anchorPoint"] = "CENTER",
@@ -210,16 +210,16 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["parent"] = "Arcane Wrath(p3)",
 			["id"] = "7 stacks p3",
 			["icon"] = true,
 			["frameStrata"] = 1,
@@ -240,7 +240,7 @@ WeakAurasSaved = {
 			},
 		},
 		["8 stacks p3"] = {
-			["xOffset"] = 0,
+			["parent"] = "Arcane Wrath(p3)",
 			["untrigger"] = {
 			},
 			["anchorPoint"] = "CENTER",
@@ -329,16 +329,16 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["parent"] = "Arcane Wrath(p3)",
 			["id"] = "8 stacks p3",
 			["icon"] = true,
 			["frameStrata"] = 1,
@@ -359,7 +359,7 @@ WeakAurasSaved = {
 			},
 		},
 		["9 stacks p3"] = {
-			["xOffset"] = 0,
+			["parent"] = "Arcane Wrath(p3)",
 			["untrigger"] = {
 			},
 			["anchorPoint"] = "CENTER",
@@ -448,16 +448,16 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["parent"] = "Arcane Wrath(p3)",
 			["additional_triggers"] = {
 			},
 			["icon"] = true,
@@ -966,7 +966,12 @@ WeakAurasSaved = {
 			},
 		},
 		["2 stacks p3"] = {
-			["parent"] = "Arcane Wrath(p3)",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
@@ -1042,16 +1047,11 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["parent"] = "Arcane Wrath(p3)",
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["id"] = "2 stacks p3",
 			["actions"] = {
 				["start"] = {
@@ -1195,7 +1195,12 @@ WeakAurasSaved = {
 			["anchorPoint"] = "CENTER",
 		},
 		["4 stacks p3"] = {
-			["parent"] = "Arcane Wrath(p3)",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
@@ -1271,16 +1276,11 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["parent"] = "Arcane Wrath(p3)",
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["id"] = "4 stacks p3",
 			["actions"] = {
 				["start"] = {
@@ -1314,7 +1314,12 @@ WeakAurasSaved = {
 			},
 		},
 		["5 stacks p3"] = {
-			["parent"] = "Arcane Wrath(p3)",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
@@ -1390,16 +1395,11 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["parent"] = "Arcane Wrath(p3)",
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["additional_triggers"] = {
 			},
 			["actions"] = {
@@ -1433,7 +1433,7 @@ WeakAurasSaved = {
 			},
 		},
 		["4 stacks"] = {
-			["xOffset"] = 0,
+			["parent"] = "Arcane Wrath(p1&p2&p4)",
 			["untrigger"] = {
 			},
 			["anchorPoint"] = "CENTER",
@@ -1528,16 +1528,16 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
 			["additional_triggers"] = {
 			},
 			["icon"] = true,
@@ -1558,7 +1558,12 @@ WeakAurasSaved = {
 			},
 		},
 		["5 stacks"] = {
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
@@ -1636,16 +1641,11 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["parent"] = "Arcane Wrath(p1&p2&p4)",
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["id"] = "5 stacks",
 			["actions"] = {
 				["start"] = {
@@ -1683,7 +1683,7 @@ WeakAurasSaved = {
 			},
 		},
 		["2 stacks"] = {
-			["xOffset"] = 0,
+			["parent"] = "Arcane Wrath(p1&p2&p4)",
 			["untrigger"] = {
 			},
 			["anchorPoint"] = "CENTER",
@@ -1778,16 +1778,16 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
 			["additional_triggers"] = {
 			},
 			["icon"] = true,
@@ -1808,7 +1808,12 @@ WeakAurasSaved = {
 			},
 		},
 		["3 stacks"] = {
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
@@ -1886,16 +1891,11 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["parent"] = "Arcane Wrath(p1&p2&p4)",
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["additional_triggers"] = {
 			},
 			["actions"] = {
@@ -1933,7 +1933,12 @@ WeakAurasSaved = {
 			},
 		},
 		["1 stack p3"] = {
-			["parent"] = "Arcane Wrath(p3)",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
@@ -2009,16 +2014,11 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["parent"] = "Arcane Wrath(p3)",
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["id"] = "1 stack p3",
 			["actions"] = {
 				["start"] = {
@@ -2052,7 +2052,7 @@ WeakAurasSaved = {
 			},
 		},
 		["6 stacks"] = {
-			["xOffset"] = 0,
+			["parent"] = "Arcane Wrath(p1&p2&p4)",
 			["untrigger"] = {
 			},
 			["anchorPoint"] = "CENTER",
@@ -2147,16 +2147,16 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
 			["additional_triggers"] = {
 			},
 			["icon"] = true,
@@ -2177,7 +2177,7 @@ WeakAurasSaved = {
 			},
 		},
 		["12 stacks p3"] = {
-			["xOffset"] = 0,
+			["parent"] = "Arcane Wrath(p3)",
 			["untrigger"] = {
 			},
 			["anchorPoint"] = "CENTER",
@@ -2266,16 +2266,16 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["parent"] = "Arcane Wrath(p3)",
 			["additional_triggers"] = {
 			},
 			["icon"] = true,
@@ -2428,7 +2428,7 @@ WeakAurasSaved = {
 			},
 		},
 		["7 stacks"] = {
-			["xOffset"] = 0,
+			["parent"] = "Arcane Wrath(p1&p2&p4)",
 			["untrigger"] = {
 			},
 			["anchorPoint"] = "CENTER",
@@ -2523,16 +2523,16 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
 			["id"] = "7 stacks",
 			["icon"] = true,
 			["frameStrata"] = 1,
@@ -2553,7 +2553,7 @@ WeakAurasSaved = {
 			},
 		},
 		["11 stacks p3"] = {
-			["xOffset"] = 0,
+			["parent"] = "Arcane Wrath(p3)",
 			["untrigger"] = {
 			},
 			["anchorPoint"] = "CENTER",
@@ -2642,16 +2642,16 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["parent"] = "Arcane Wrath(p3)",
 			["id"] = "11 stacks p3",
 			["icon"] = true,
 			["frameStrata"] = 1,
@@ -2772,7 +2772,7 @@ WeakAurasSaved = {
 			["id"] = "Highmaul - Imperator Mar'gok - Arcane Wrath Update",
 		},
 		["1 stack"] = {
-			["xOffset"] = 0,
+			["parent"] = "Arcane Wrath(p1&p2&p4)",
 			["untrigger"] = {
 			},
 			["anchorPoint"] = "CENTER",
@@ -2867,16 +2867,16 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
 			["additional_triggers"] = {
 			},
 			["icon"] = true,
@@ -2897,7 +2897,7 @@ WeakAurasSaved = {
 			},
 		},
 		["10 stacks p3"] = {
-			["xOffset"] = 0,
+			["parent"] = "Arcane Wrath(p3)",
 			["untrigger"] = {
 			},
 			["anchorPoint"] = "CENTER",
@@ -2986,16 +2986,16 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["parent"] = "Arcane Wrath(p3)",
 			["additional_triggers"] = {
 			},
 			["icon"] = true,
@@ -3016,7 +3016,7 @@ WeakAurasSaved = {
 			},
 		},
 		["3 stacks p3"] = {
-			["xOffset"] = 0,
+			["parent"] = "Arcane Wrath(p3)",
 			["untrigger"] = {
 			},
 			["anchorPoint"] = "CENTER",
@@ -3105,16 +3105,16 @@ WeakAurasSaved = {
 			["fontSize"] = 20,
 			["displayStacks"] = "%p   %s",
 			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["parent"] = "Arcane Wrath(p3)",
 			["id"] = "3 stacks p3",
 			["icon"] = true,
 			["frameStrata"] = 1,
@@ -3374,8 +3374,8 @@ WeakAurasSaved = {
 				["icon"] = "Interface\\Icons\\spell_hunter_focusingshot",
 			}, -- [20]
 			{
-				["name"] = "Lone Wolf",
-				["icon"] = "Interface\\Icons\\spell_hunter_lonewolf",
+				["name"] = "Adaptation",
+				["icon"] = "Interface\\Icons\\spell_hunter_adaptation",
 			}, -- [21]
 		},
 		["WARRIOR"] = {
