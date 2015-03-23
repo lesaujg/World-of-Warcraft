@@ -1,13 +1,13 @@
 
 TradeSkillMaster_DestroyingDB = {
 	["profileKeys"] = {
-		["Clothgar - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
 		["Galinar - Sisters of Elune"] = "Default",
 		["Belrath - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
 		["Herbinator - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
 	},
 	["global"] = {
 		["deAboveVendor"] = true,
@@ -16,7 +16,6 @@ TradeSkillMaster_DestroyingDB = {
 			["item:6263:0:0:0:0:0:0"] = true,
 			["item:46874:0:0:0:0:0:0"] = true,
 		},
-		["deMaxQuality"] = 2,
 		["history"] = {
 			["Disenchant"] = {
 				{
@@ -437,5 +436,6 @@ TradeSkillMaster_DestroyingDB = {
 				}, -- [52]
 			},
 		},
+		["deMaxQuality"] = 2,
 	},
 }

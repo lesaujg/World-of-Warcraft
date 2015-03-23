@@ -15,7 +15,7 @@ ActionBarSaverDB = {
 		},
 		["WARLOCK"] = {
 		},
-		["PALADIN"] = {
+		["ROGUE"] = {
 		},
 		["HUNTER"] = {
 			["hunter"] = {
@@ -177,23 +177,23 @@ ActionBarSaverDB = {
 				[84] = "spell|8921||Moonfire|Lunar|",
 				[117] = "spell|6603||Auto Attack||",
 				[90] = "spell|106785||Swipe||",
-				[86] = "spell|5221||Shred||",
-				[74] = "spell|1822||Rake||",
+				[76] = "spell|1079||Rip||",
+				[118] = "spell|770||Faerie Fire||",
 				[96] = "spell|1850||Dash||",
 				[67] = "spell|1850||Dash||",
 				[69] = "spell|1126||Mark of the Wild||",
-				[110] = "companion|23338|||MOUNT|",
+				[79] = "spell|106785||Swipe||",
 				[73] = "spell|5221||Shred||",
 				[75] = "spell|52610||Savage Roar||",
 				[77] = "spell|22568||Ferocious Bite||",
-				[79] = "spell|106785||Swipe||",
-				[118] = "spell|770||Faerie Fire||",
-				[76] = "spell|1079||Rip||",
+				[110] = "companion|23338|||MOUNT|",
+				[74] = "spell|1822||Rake||",
+				[86] = "spell|5221||Shred||",
 			},
 		},
 		["MONK"] = {
 		},
-		["ROGUE"] = {
+		["PALADIN"] = {
 		},
 	},
 	["spellSubs"] = {

@@ -1,8 +1,8 @@
 Version: 1
 Frame: TSMMainFrame1
-FrameLevel: 40
-Anchor: TOP
-X: 138
-Y: -64
+FrameLevel: 21
+Anchor: RIGHT
+X: 0
+Y: -19
 W: 985
 H: 679
