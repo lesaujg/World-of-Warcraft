@@ -1,6 +1,6 @@
 Version: 1
 Frame: TSMMainFrame1
-FrameLevel: 21
+FrameLevel: 18
 Anchor: RIGHT
 X: 0
 Y: -19
