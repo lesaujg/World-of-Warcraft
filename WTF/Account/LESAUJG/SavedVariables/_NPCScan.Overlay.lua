@@ -8,7 +8,7 @@ _NPCScanOverlayOptions = {
 	},
 	["ShowAll"] = true,
 	["Version"] = "5.4.8.5",
-	["ShowKey"] = false,
+	["ShowKey"] = true,
 	["MiniMapIcon"] = {
 	},
 	["ModulesExtra"] = {

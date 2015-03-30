@@ -1,0 +1,8 @@
+v2.0.2
+* Fixed issue with accents in realm names.
+
+v2.0.1
+* Fixed conflict with TSM_Additions
+
+v2.0
+* First version!

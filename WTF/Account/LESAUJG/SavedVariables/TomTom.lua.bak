@@ -1,0 +1,20 @@
+
+TomTomDB = {
+	["profileKeys"] = {
+		["Bracnar - Sisters of Elune"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}
+TomTomWaypoints = nil
+TomTomWaypointsMF = {
+	["profileKeys"] = {
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+	},
+	["profiles"] = {
+		["Bracnar - Sisters of Elune"] = {
+		},
+	},
+}
