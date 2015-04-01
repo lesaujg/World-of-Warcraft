@@ -1,13 +1,13 @@
 
 TradeSkillMaster_DestroyingDB = {
 	["profileKeys"] = {
-		["Clothgar - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
 		["Galinar - Sisters of Elune"] = "Default",
 		["Belrath - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
 		["Herbinator - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
 	},
 	["global"] = {
 		["deAboveVendor"] = true,
@@ -16,7 +16,6 @@ TradeSkillMaster_DestroyingDB = {
 			["item:6263:0:0:0:0:0:0"] = true,
 			["item:46874:0:0:0:0:0:0"] = true,
 		},
-		["deMaxQuality"] = 2,
 		["history"] = {
 			["Disenchant"] = {
 				{
@@ -467,7 +466,104 @@ TradeSkillMaster_DestroyingDB = {
 					},
 					["item"] = "item:36394:0:0:0:0:0:-43",
 				}, -- [56]
+				{
+					["result"] = {
+						["item:52555:0:0:0:0:0:0"] = 2,
+					},
+					["isDraenicEnchanting"] = true,
+					["item"] = "item:55773:0:0:0:0:0:-37",
+					["time"] = 1427765762,
+				}, -- [57]
+				{
+					["result"] = {
+						["item:52555:0:0:0:0:0:0"] = 4,
+					},
+					["isDraenicEnchanting"] = true,
+					["item"] = "item:55494:0:0:0:0:0:-7",
+					["time"] = 1427765853,
+				}, -- [58]
+				{
+					["result"] = {
+						["item:52555:0:0:0:0:0:0"] = 2,
+					},
+					["isDraenicEnchanting"] = true,
+					["item"] = "item:55719:0:0:0:0:0:-132",
+					["time"] = 1427766036,
+				}, -- [59]
+				{
+					["result"] = {
+						["item:10940:0:0:0:0:0:0"] = 4,
+					},
+					["isDraenicEnchanting"] = true,
+					["item"] = "item:12006:0:0:0:0:0:-13",
+					["time"] = 1427829826,
+				}, -- [60]
+				{
+					["result"] = {
+						["item:10940:0:0:0:0:0:0"] = 1,
+					},
+					["isDraenicEnchanting"] = true,
+					["item"] = "item:4570:0:0:0:0:0:-69",
+					["time"] = 1427829829,
+				}, -- [61]
+				{
+					["result"] = {
+						["item:16202:0:0:0:0:0:0"] = 1,
+					},
+					["isDraenicEnchanting"] = true,
+					["item"] = "item:15291:0:0:0:0:0:-13",
+					["time"] = 1427829832,
+				}, -- [62]
+				{
+					["result"] = {
+						["item:52718:0:0:0:0:0:0"] = 2,
+					},
+					["isDraenicEnchanting"] = true,
+					["item"] = "item:55587:0:0:0:0:0:-91",
+					["time"] = 1427829835,
+				}, -- [63]
+				{
+					["result"] = {
+						["item:11176:0:0:0:0:0:0"] = 2,
+					},
+					["isDraenicEnchanting"] = true,
+					["item"] = "item:15237:0:0:0:0:0:-68",
+					["time"] = 1427829893,
+				}, -- [64]
+				{
+					["result"] = {
+						["item:109693:0:0:0:0:0:0"] = 4,
+					},
+					["isDraenicEnchanting"] = true,
+					["item"] = "item:106447:0:0:0:0:0:0",
+					["time"] = 1427829896,
+				}, -- [65]
+				{
+					["result"] = {
+						["item:74249:0:0:0:0:0:0"] = 2,
+					},
+					["isDraenicEnchanting"] = true,
+					["item"] = "item:82020:0:0:0:0:0:-7",
+					["time"] = 1427829900,
+				}, -- [66]
+				{
+					["result"] = {
+						["item:34054:0:0:0:0:0:0"] = 6,
+					},
+					["isDraenicEnchanting"] = true,
+					["item"] = "item:36041:0:0:0:0:0:-39",
+					["time"] = 1427829903,
+				}, -- [67]
+				{
+					["result"] = {
+						["item:11176:0:0:0:0:0:0"] = 2,
+					},
+					["isDraenicEnchanting"] = true,
+					["item"] = "item:10079:0:0:0:0:0:-19",
+					["time"] = 1427829906,
+				}, -- [68]
 			},
 		},
+		["deMaxQuality"] = 2,
 	},
 }
