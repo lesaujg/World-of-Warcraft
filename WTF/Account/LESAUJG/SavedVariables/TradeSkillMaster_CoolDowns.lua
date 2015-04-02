@@ -186,7 +186,6 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Taladite Crystal",
 					["players"] = {
 						["Uldaris"] = {
-							["CoolDownTime"] = 1427882499.859,
 							["knownCraft"] = true,
 						},
 					},
@@ -394,7 +393,6 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Secret of Draenor Jewelcrafting",
 					["players"] = {
 						["Uldaris"] = {
-							["CoolDownTime"] = 1427882443.098,
 							["knownCraft"] = true,
 						},
 					},
@@ -512,6 +510,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Temporal Crystal",
 					["players"] = {
 						["Bracnar"] = {
+							["CoolDownTime"] = 1427968829.087,
 							["knownCraft"] = true,
 						},
 					},

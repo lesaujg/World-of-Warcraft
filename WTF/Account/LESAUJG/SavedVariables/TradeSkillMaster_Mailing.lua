@@ -33,9 +33,9 @@ TradeSkillMaster_MailingDB = {
 			},
 			["scrollvalue"] = 0,
 			["fullwidth"] = 945.000061035156,
-			["selected"] = "2Mail Ghiaccioli",
-			["treewidth"] = 175,
 			["treesizable"] = true,
+			["treewidth"] = 175,
+			["selected"] = "2Mail Ghiaccioli",
 		},
 	},
 }

@@ -14,7 +14,7 @@ local private = {data={}}
 
 
 function TSM:OnInitialize()
-	-- DO STUFF
+	TSMAPI:NewModule(TSM)
 end
 
 function TSM.LoadData(tag, ...)
