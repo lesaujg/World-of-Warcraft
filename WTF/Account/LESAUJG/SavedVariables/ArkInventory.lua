@@ -296,11 +296,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9047",
 											["bag_id"] = 1,
 											["slot_id"] = 1,
-											["h"] = "|cff1eff00|Hbattlepet:74:1:2:147:9:12:BattlePet-0-0000030A9047|h[Albino Snake]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:74:1:2:147:9:12:BattlePet-0-0000030A9047|h[Albino Snake]|h|r",
 											["ab"] = 1,
 										}, -- [1]
 										{
@@ -309,11 +309,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9080",
 											["bag_id"] = 1,
 											["slot_id"] = 2,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:331:1:2:151:10:10:BattlePet-0-0000030A9080|h[Alliance Balloon]|h|r",
 											["count"] = 1,
 											["sb"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:331:1:2:151:10:10:BattlePet-0-0000030A9080|h[Alliance Balloon]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [2]
 										{
@@ -322,11 +322,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9052",
 											["bag_id"] = 1,
 											["slot_id"] = 3,
-											["h"] = "|cff1eff00|Hbattlepet:212:1:2:151:10:10:BattlePet-0-0000030A9052|h[Ammen Vale Lashling]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:212:1:2:151:10:10:BattlePet-0-0000030A9052|h[Ammen Vale Lashling]|h|r",
 											["ab"] = 1,
 										}, -- [3]
 										{
@@ -335,11 +335,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9027",
 											["bag_id"] = 1,
 											["slot_id"] = 4,
-											["h"] = "|cff1eff00|Hbattlepet:52:1:2:150:10:11:BattlePet-0-0000030A9027|h[Ancona Chicken]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:52:1:2:150:10:11:BattlePet-0-0000030A9027|h[Ancona Chicken]|h|r",
 											["ab"] = 1,
 										}, -- [4]
 										{
@@ -348,11 +348,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A901E",
 											["bag_id"] = 1,
 											["slot_id"] = 5,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:214:1:2:151:10:10:BattlePet-0-0000030A901E|h[Argent Squire]|h|r",
 											["count"] = 1,
 											["sb"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:214:1:2:151:10:10:BattlePet-0-0000030A901E|h[Argent Squire]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [5]
 										{
@@ -375,11 +375,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A904A",
 											["bag_id"] = 1,
 											["slot_id"] = 7,
-											["h"] = "|cff0070dd|Hbattlepet:57:1:3:155:12:10:BattlePet-0-0000030A904A|h[Azure Whelpling]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff0070dd|Hbattlepet:57:1:3:155:12:10:BattlePet-0-0000030A904A|h[Azure Whelpling]|h|r",
 											["ab"] = 1,
 										}, -- [7]
 										{
@@ -402,11 +402,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9029",
 											["bag_id"] = 1,
 											["slot_id"] = 9,
-											["h"] = "|cff1eff00|Hbattlepet:75:1:2:145:10:12:BattlePet-0-0000030A9029|h[Black Kingsnake]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:75:1:2:145:10:12:BattlePet-0-0000030A9029|h[Black Kingsnake]|h|r",
 											["ab"] = 1,
 										}, -- [9]
 										{
@@ -415,11 +415,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9053",
 											["bag_id"] = 1,
 											["slot_id"] = 10,
-											["h"] = "|cff1eff00|Hbattlepet:42:1:2:144:12:10:BattlePet-0-0000030A9053|h[Black Tabby Cat]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:42:1:2:144:12:10:BattlePet-0-0000030A9053|h[Black Tabby Cat]|h|r",
 											["ab"] = 1,
 										}, -- [10]
 										{
@@ -428,11 +428,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9063",
 											["bag_id"] = 1,
 											["slot_id"] = 11,
-											["h"] = "|cff1eff00|Hbattlepet:254:1:2:148:11:11:BattlePet-0-0000030A9063|h[Blue Clockwork Rocket Bot]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:254:1:2:148:11:11:BattlePet-0-0000030A9063|h[Blue Clockwork Rocket Bot]|h|r",
 											["ab"] = 1,
 										}, -- [11]
 										{
@@ -441,11 +441,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9036",
 											["bag_id"] = 1,
 											["slot_id"] = 12,
-											["h"] = "|cff1eff00|Hbattlepet:145:1:2:151:9:12:BattlePet-0-0000030A9036|h[Blue Dragonhawk Hatchling]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:145:1:2:151:9:12:BattlePet-0-0000030A9036|h[Blue Dragonhawk Hatchling]|h|r",
 											["ab"] = 1,
 										}, -- [12]
 										{
@@ -468,11 +468,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9019",
 											["bag_id"] = 1,
 											["slot_id"] = 14,
-											["h"] = "|cff1eff00|Hbattlepet:138:1:2:156:9:10:BattlePet-0-0000030A9019|h[Blue Moth]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:138:1:2:156:9:10:BattlePet-0-0000030A9019|h[Blue Moth]|h|r",
 											["ab"] = 1,
 										}, -- [14]
 										{
@@ -481,11 +481,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9021",
 											["bag_id"] = 1,
 											["slot_id"] = 15,
-											["h"] = "|cff1eff00|Hbattlepet:40:1:2:142:11:11:BattlePet-0-0000030A9021|h[Bombay Cat]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:40:1:2:142:11:11:BattlePet-0-0000030A9021|h[Bombay Cat]|h|r",
 											["ab"] = 1,
 										}, -- [15]
 										{
@@ -508,11 +508,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-000004324459",
 											["bag_id"] = 1,
 											["slot_id"] = 17,
-											["h"] = "|cff1eff00|Hbattlepet:1540:1:2:148:11:11:BattlePet-0-000004324459|h[Brilliant Spore]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:1540:1:2:148:11:11:BattlePet-0-000004324459|h[Brilliant Spore]|h|r",
 											["ab"] = 1,
 										}, -- [17]
 										{
@@ -521,11 +521,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9025",
 											["bag_id"] = 1,
 											["slot_id"] = 18,
-											["h"] = "|cff1eff00|Hbattlepet:70:1:2:151:10:11:BattlePet-0-0000030A9025|h[Brown Prairie Dog]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:70:1:2:151:10:11:BattlePet-0-0000030A9025|h[Brown Prairie Dog]|h|r",
 											["ab"] = 1,
 										}, -- [18]
 										{
@@ -534,11 +534,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9037",
 											["bag_id"] = 1,
 											["slot_id"] = 19,
-											["h"] = "|cff1eff00|Hbattlepet:137:1:2:150:9:12:BattlePet-0-0000030A9037|h[Brown Rabbit]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:137:1:2:150:9:12:BattlePet-0-0000030A9037|h[Brown Rabbit]|h|r",
 											["ab"] = 1,
 										}, -- [19]
 										{
@@ -547,11 +547,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A902B",
 											["bag_id"] = 1,
 											["slot_id"] = 20,
-											["h"] = "|cff1eff00|Hbattlepet:77:1:2:151:10:10:BattlePet-0-0000030A902B|h[Brown Snake]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:77:1:2:151:10:10:BattlePet-0-0000030A902B|h[Brown Snake]|h|r",
 											["ab"] = 1,
 										}, -- [20]
 										{
@@ -560,11 +560,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9049",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["h"] = "|cff1eff00|Hbattlepet:224:1:2:144:11:11:BattlePet-0-0000030A9049|h[Calico Cat]|h|r",
+											["loc_id"] = 7,
 											["slot_id"] = 21,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:224:1:2:144:11:11:BattlePet-0-0000030A9049|h[Calico Cat]|h|r",
 											["ab"] = 1,
 										}, -- [21]
 										{
@@ -601,11 +601,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9070",
 											["bag_id"] = 1,
 											["slot_id"] = 24,
-											["h"] = "|cff0070dd|Hbattlepet:277:1:3:158:10:12:BattlePet-0-0000030A9070|h[Clockwork Gnome]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff0070dd|Hbattlepet:277:1:3:158:10:12:BattlePet-0-0000030A9070|h[Clockwork Gnome]|h|r",
 											["ab"] = 1,
 										}, -- [24]
 										{
@@ -614,11 +614,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A900C",
 											["bag_id"] = 1,
 											["slot_id"] = 25,
-											["h"] = "|cff1eff00|Hbattlepet:191:1:2:154:10:10:BattlePet-0-0000030A900C|h[Clockwork Rocket Bot]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:191:1:2:154:10:10:BattlePet-0-0000030A900C|h[Clockwork Rocket Bot]|h|r",
 											["ab"] = 1,
 										}, -- [25]
 										{
@@ -627,11 +627,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9013",
 											["bag_id"] = 1,
 											["slot_id"] = 26,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:197:1:2:145:11:11:BattlePet-0-0000030A9013|h[Cobra Hatchling]|h|r",
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:197:1:2:145:11:11:BattlePet-0-0000030A9013|h[Cobra Hatchling]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [26]
 										{
@@ -640,11 +640,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9030",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:47:1:2:148:9:13:BattlePet-0-0000030A9030|h[Cockatiel]|h|r",
 											["slot_id"] = 27,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:47:1:2:148:9:13:BattlePet-0-0000030A9030|h[Cockatiel]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [27]
 										{
@@ -667,11 +667,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A901F",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:41:1:2:142:13:10:BattlePet-0-0000030A901F|h[Cornish Rex Cat]|h|r",
 											["slot_id"] = 29,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:41:1:2:142:13:10:BattlePet-0-0000030A901F|h[Cornish Rex Cat]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [29]
 										{
@@ -694,11 +694,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9083",
 											["bag_id"] = 1,
 											["slot_id"] = 31,
-											["h"] = "|cff0070dd|Hbattlepet:318:1:3:152:12:11:BattlePet-0-0000030A9083|h[Crimson Lasher]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff0070dd|Hbattlepet:318:1:3:152:12:11:BattlePet-0-0000030A9083|h[Crimson Lasher]|h|r",
 											["ab"] = 1,
 										}, -- [31]
 										{
@@ -707,11 +707,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9022",
 											["bag_id"] = 1,
 											["slot_id"] = 32,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:78:1:2:150:11:10:BattlePet-0-0000030A9022|h[Crimson Snake]|h|r",
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:78:1:2:150:11:10:BattlePet-0-0000030A9022|h[Crimson Snake]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [32]
 										{
@@ -720,11 +720,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A0290",
 											["bag_id"] = 1,
 											["slot_id"] = 33,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:78:1:2:150:11:10:BattlePet-0-0000030A0290|h[Crimson Snake]|h|r",
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:78:1:2:150:11:10:BattlePet-0-0000030A0290|h[Crimson Snake]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [33]
 										{
@@ -733,11 +733,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9059",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["h"] = "|cff0070dd|Hbattlepet:58:1:3:145:13:12:BattlePet-0-0000030A9059|h[Crimson Whelpling]|h|r",
+											["loc_id"] = 7,
 											["slot_id"] = 34,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff0070dd|Hbattlepet:58:1:3:145:13:12:BattlePet-0-0000030A9059|h[Crimson Whelpling]|h|r",
 											["ab"] = 1,
 										}, -- [34]
 										{
@@ -788,11 +788,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A905A",
 											["bag_id"] = 1,
 											["slot_id"] = 38,
-											["h"] = "|cff0070dd|Hbattlepet:56:1:3:155:13:10:BattlePet-0-0000030A905A|h[Dark Whelpling]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff0070dd|Hbattlepet:56:1:3:155:13:10:BattlePet-0-0000030A905A|h[Dark Whelpling]|h|r",
 											["ab"] = 1,
 										}, -- [38]
 										{
@@ -801,11 +801,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A906E",
 											["bag_id"] = 1,
 											["slot_id"] = 39,
-											["h"] = "|cff1eff00|Hbattlepet:232:1:2:142:11:11:BattlePet-0-0000030A906E|h[Darting Hatchling]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:232:1:2:142:11:11:BattlePet-0-0000030A906E|h[Darting Hatchling]|h|r",
 											["ab"] = 1,
 										}, -- [39]
 										{
@@ -814,11 +814,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A906F",
 											["bag_id"] = 1,
 											["slot_id"] = 40,
-											["h"] = "|cff1eff00|Hbattlepet:262:1:2:151:9:12:BattlePet-0-0000030A906F|h[De-Weaponized Mechanical Companion]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:262:1:2:151:9:12:BattlePet-0-0000030A906F|h[De-Weaponized Mechanical Companion]|h|r",
 											["ab"] = 1,
 										}, -- [40]
 										{
@@ -827,11 +827,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A906B",
 											["bag_id"] = 1,
 											["slot_id"] = 41,
-											["h"] = "|cff1eff00|Hbattlepet:233:1:2:142:11:11:BattlePet-0-0000030A906B|h[Deviate Hatchling]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:233:1:2:142:11:11:BattlePet-0-0000030A906B|h[Deviate Hatchling]|h|r",
 											["ab"] = 1,
 										}, -- [41]
 										{
@@ -840,11 +840,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9060",
 											["bag_id"] = 1,
 											["slot_id"] = 42,
-											["h"] = "|cff0070dd|Hbattlepet:114:1:3:161:12:10:BattlePet-0-0000030A9060|h[Disgusting Oozeling]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff0070dd|Hbattlepet:114:1:3:161:12:10:BattlePet-0-0000030A9060|h[Disgusting Oozeling]|h|r",
 											["ab"] = 1,
 										}, -- [42]
 										{
@@ -853,11 +853,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-00000408433E",
 											["bag_id"] = 1,
 											["slot_id"] = 43,
-											["h"] = "|cff0070dd|Hbattlepet:1564:1:3:158:12:10:BattlePet-0-00000408433E|h[Doom Bloom]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff0070dd|Hbattlepet:1564:1:3:158:12:10:BattlePet-0-00000408433E|h[Doom Bloom]|h|r",
 											["ab"] = 1,
 										}, -- [43]
 										{
@@ -866,11 +866,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A904E",
 											["bag_id"] = 1,
 											["slot_id"] = 44,
-											["h"] = "|cff1eff00|Hbattlepet:205:1:2:153:11:10:BattlePet-0-0000030A904E|h[Dun Morogh Cub]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:205:1:2:153:11:10:BattlePet-0-0000030A904E|h[Dun Morogh Cub]|h|r",
 											["ab"] = 1,
 										}, -- [44]
 										{
@@ -879,11 +879,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9054",
 											["bag_id"] = 1,
 											["slot_id"] = 45,
-											["h"] = "|cff1eff00|Hbattlepet:207:1:2:148:11:11:BattlePet-0-0000030A9054|h[Durotar Scorpion]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:207:1:2:148:11:11:BattlePet-0-0000030A9054|h[Durotar Scorpion]|h|r",
 											["ab"] = 1,
 										}, -- [45]
 										{
@@ -892,11 +892,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A901A",
 											["bag_id"] = 1,
 											["slot_id"] = 46,
-											["h"] = "|cff1eff00|Hbattlepet:158:1:2:151:10:10:BattlePet-0-0000030A901A|h[Egbert]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:158:1:2:151:10:10:BattlePet-0-0000030A901A|h[Egbert]|h|r",
 											["ab"] = 1,
 										}, -- [46]
 										{
@@ -905,11 +905,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A906D",
 											["bag_id"] = 1,
 											["slot_id"] = 47,
-											["h"] = "|cff0070dd|Hbattlepet:293:1:3:158:10:12:BattlePet-0-0000030A906D|h[Elementium Geode]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff0070dd|Hbattlepet:293:1:3:158:10:12:BattlePet-0-0000030A906D|h[Elementium Geode]|h|r",
 											["ab"] = 1,
 										}, -- [47]
 										{
@@ -918,11 +918,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9050",
 											["bag_id"] = 1,
 											["slot_id"] = 48,
-											["h"] = "|cff1eff00|Hbattlepet:209:1:2:151:10:10:BattlePet-0-0000030A9050|h[Elwynn Lamb]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:209:1:2:151:10:10:BattlePet-0-0000030A9050|h[Elwynn Lamb]|h|r",
 											["ab"] = 1,
 										}, -- [48]
 										{
@@ -931,11 +931,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A905D",
 											["bag_id"] = 1,
 											["slot_id"] = 49,
-											["h"] = "|cff0070dd|Hbattlepet:59:1:3:161:10:11:BattlePet-0-0000030A905D|h[Emerald Whelpling]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff0070dd|Hbattlepet:59:1:3:161:10:11:BattlePet-0-0000030A905D|h[Emerald Whelpling]|h|r",
 											["ab"] = 1,
 										}, -- [49]
 										{
@@ -944,11 +944,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9055",
 											["bag_id"] = 1,
 											["slot_id"] = 50,
-											["h"] = "|cff1eff00|Hbattlepet:213:1:2:148:10:12:BattlePet-0-0000030A9055|h[Enchanted Broom]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:213:1:2:148:10:12:BattlePet-0-0000030A9055|h[Enchanted Broom]|h|r",
 											["ab"] = 1,
 										}, -- [50]
 										{
@@ -957,11 +957,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A907B",
 											["bag_id"] = 1,
 											["slot_id"] = 51,
-											["h"] = "|cff1eff00|Hbattlepet:267:1:2:151:10:10:BattlePet-0-0000030A907B|h[Enchanted Lantern]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:267:1:2:151:10:10:BattlePet-0-0000030A907B|h[Enchanted Lantern]|h|r",
 											["ab"] = 1,
 										}, -- [51]
 										{
@@ -970,11 +970,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000043FD864",
 											["bag_id"] = 1,
 											["slot_id"] = 52,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:119:1:2:151:10:10:BattlePet-0-0000043FD864|h[Father Winter's Helper]|h|r",
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:119:1:2:151:10:10:BattlePet-0-0000043FD864|h[Father Winter's Helper]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [52]
 										{
@@ -983,11 +983,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9010",
 											["bag_id"] = 1,
 											["slot_id"] = 53,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:119:1:2:151:10:10:BattlePet-0-0000030A9010|h[Father Winter's Helper]|h|r",
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:119:1:2:151:10:10:BattlePet-0-0000030A9010|h[Father Winter's Helper]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [53]
 										{
@@ -996,11 +996,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-000003EDCC4D",
 											["bag_id"] = 1,
 											["slot_id"] = 54,
-											["h"] = "|cff1eff00|Hbattlepet:847:1:2:153:10:10:BattlePet-0-000003EDCC4D|h[Fishy]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:847:1:2:153:10:10:BattlePet-0-000003EDCC4D|h[Fishy]|h|r",
 											["ab"] = 1,
 										}, -- [54]
 										{
@@ -1009,11 +1009,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-000003968FC0",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["slot_id"] = 55,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["h"] = "|cff1eff00|Hbattlepet:847:1:2:153:10:10:BattlePet-0-000003968FC0|h[Fishy]|h|r",
 										}, -- [55]
 										{
@@ -1022,11 +1022,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-000003FB639A",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["ab"] = 1,
+											["h"] = "|cff0070dd|Hbattlepet:1144:1:3:158:10:12:BattlePet-0-000003FB639A|h[Fungal Abomination]|h|r",
 											["slot_id"] = 56,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff0070dd|Hbattlepet:1144:1:3:158:10:12:BattlePet-0-000003FB639A|h[Fungal Abomination]|h|r",
+											["ab"] = 1,
 											["loc_id"] = 7,
 										}, -- [56]
 										{
@@ -1035,11 +1035,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9032",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["h"] = "|cff1eff00|Hbattlepet:190:1:2:163:10:8:BattlePet-0-0000030A9032|h[Ghostly Skull]|h|r",
+											["loc_id"] = 7,
 											["slot_id"] = 57,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:190:1:2:163:10:8:BattlePet-0-0000030A9032|h[Ghostly Skull]|h|r",
 											["ab"] = 1,
 										}, -- [57]
 										{
@@ -1048,11 +1048,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-000003E80EBB",
 											["bag_id"] = 1,
 											["slot_id"] = 58,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff0070dd|Hbattlepet:1143:1:3:152:12:12:BattlePet-0-000003E80EBB|h[Giant Bone Spider]|h|r",
 										}, -- [58]
 										{
@@ -1061,11 +1061,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9005",
 											["bag_id"] = 1,
 											["slot_id"] = 59,
-											["h"] = "|cff0070dd|Hbattlepet:193:1:3:152:14:10:BattlePet-0-0000030A9005|h[Giant Sewer Rat]|h|r",
+											["ab"] = 1,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["h"] = "|cff0070dd|Hbattlepet:193:1:3:152:14:10:BattlePet-0-0000030A9005|h[Giant Sewer Rat]|h|r",
 											["loc_id"] = 7,
 										}, -- [59]
 										{
@@ -1102,11 +1102,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A902C",
 											["bag_id"] = 1,
 											["slot_id"] = 62,
-											["h"] = "|cff1eff00|Hbattlepet:142:1:2:151:11:10:BattlePet-0-0000030A902C|h[Golden Dragonhawk Hatchling]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:142:1:2:151:11:10:BattlePet-0-0000030A902C|h[Golden Dragonhawk Hatchling]|h|r",
 											["ab"] = 1,
 										}, -- [62]
 										{
@@ -1115,11 +1115,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9008",
 											["bag_id"] = 1,
 											["slot_id"] = 63,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:68:1:2:160:10:10:BattlePet-0-0000030A9008|h[Great Horned Owl]|h|r",
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:68:1:2:160:10:10:BattlePet-0-0000030A9008|h[Great Horned Owl]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [63]
 										{
@@ -1128,11 +1128,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A639D",
 											["bag_id"] = 1,
 											["slot_id"] = 64,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:50:1:2:156:10:9:BattlePet-0-0000030A639D|h[Green Wing Macaw]|h|r",
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:50:1:2:156:10:9:BattlePet-0-0000030A639D|h[Green Wing Macaw]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [64]
 										{
@@ -1141,11 +1141,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A902E",
 											["bag_id"] = 1,
 											["slot_id"] = 65,
-											["h"] = "|cff1eff00|Hbattlepet:50:1:2:156:10:9:BattlePet-0-0000030A902E|h[Green Wing Macaw]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:50:1:2:156:10:9:BattlePet-0-0000030A902E|h[Green Wing Macaw]|h|r",
 											["ab"] = 1,
 										}, -- [65]
 										{
@@ -1154,11 +1154,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9074",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["h"] = "|cff1eff00|Hbattlepet:282:1:2:151:10:10:BattlePet-0-0000030A9074|h[Guild Herald]|h|r",
+											["loc_id"] = 7,
 											["slot_id"] = 66,
 											["sb"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:282:1:2:151:10:10:BattlePet-0-0000030A9074|h[Guild Herald]|h|r",
 											["ab"] = 1,
 										}, -- [66]
 										{
@@ -1167,11 +1167,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000033F3296",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["h"] = "|cff1eff00|Hbattlepet:282:1:2:151:10:10:BattlePet-0-0000033F3296|h[Guild Herald]|h|r",
+											["loc_id"] = 7,
 											["slot_id"] = 67,
 											["sb"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:282:1:2:151:10:10:BattlePet-0-0000033F3296|h[Guild Herald]|h|r",
 											["ab"] = 1,
 										}, -- [67]
 										{
@@ -1180,11 +1180,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9072",
 											["bag_id"] = 1,
 											["slot_id"] = 68,
-											["h"] = "|cff1eff00|Hbattlepet:280:1:2:151:10:10:BattlePet-0-0000030A9072|h[Guild Page]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["sb"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:280:1:2:151:10:10:BattlePet-0-0000030A9072|h[Guild Page]|h|r",
 											["ab"] = 1,
 										}, -- [68]
 										{
@@ -1193,11 +1193,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000033F3293",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["h"] = "|cff1eff00|Hbattlepet:280:1:2:151:10:10:BattlePet-0-0000033F3293|h[Guild Page]|h|r",
+											["ab"] = 1,
 											["slot_id"] = 69,
 											["sb"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["h"] = "|cff1eff00|Hbattlepet:280:1:2:151:10:10:BattlePet-0-0000033F3293|h[Guild Page]|h|r",
 											["loc_id"] = 7,
 										}, -- [69]
 										{
@@ -1206,11 +1206,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9079",
 											["bag_id"] = 1,
 											["slot_id"] = 70,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff0070dd|Hbattlepet:234:1:3:148:12:12:BattlePet-0-0000030A9079|h[Gundrak Hatchling]|h|r",
 										}, -- [70]
 										{
@@ -1219,11 +1219,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-000003D3E864",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["slot_id"] = 71,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["h"] = "|cff0070dd|Hbattlepet:1147:1:3:152:13:10:BattlePet-0-000003D3E864|h[Harbinger of Flame]|h|r",
 										}, -- [71]
 										{
@@ -1232,11 +1232,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-000004634FA2",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["slot_id"] = 72,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff0070dd|Hbattlepet:1346:1:3:158:10:12:BattlePet-0-000004634FA2|h[Harmonious Porcupette]|h|r",
 										}, -- [72]
 										{
@@ -1245,11 +1245,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9009",
 											["bag_id"] = 1,
 											["slot_id"] = 73,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff1eff00|Hbattlepet:67:1:2:150:11:10:BattlePet-0-0000030A9009|h[Hawk Owl]|h|r",
 										}, -- [73]
 										{
@@ -1258,11 +1258,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A905B",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["slot_id"] = 74,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["h"] = "|cff0070dd|Hbattlepet:49:1:3:162:10:11:BattlePet-0-0000030A905B|h[Hyacinth Macaw]|h|r",
 										}, -- [74]
 										{
@@ -1271,11 +1271,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9084",
 											["bag_id"] = 1,
 											["slot_id"] = 75,
-											["h"] = "|cff0070dd|Hbattlepet:317:1:3:158:12:10:BattlePet-0-0000030A9084|h[Hyjal Bear Cub]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff0070dd|Hbattlepet:317:1:3:158:12:10:BattlePet-0-0000030A9084|h[Hyjal Bear Cub]|h|r",
 											["ab"] = 1,
 										}, -- [75]
 										{
@@ -1284,11 +1284,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-00000433574B",
 											["bag_id"] = 1,
 											["slot_id"] = 76,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:1532:1:2:145:12:10:BattlePet-0-00000433574B|h[Ikky]|h|r",
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:1532:1:2:145:12:10:BattlePet-0-00000433574B|h[Ikky]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [76]
 										{
@@ -1297,11 +1297,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-000003F97235",
 											["bag_id"] = 1,
 											["slot_id"] = 77,
-											["h"] = "|cff0070dd|Hbattlepet:1387:1:3:158:12:10:BattlePet-0-000003F97235|h[Iron Starlette]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff0070dd|Hbattlepet:1387:1:3:158:12:10:BattlePet-0-000003F97235|h[Iron Starlette]|h|r",
 											["ab"] = 1,
 										}, -- [77]
 										{
@@ -1310,11 +1310,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-000003EF27B8",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["ab"] = 1,
+											["h"] = "|cff0070dd|Hbattlepet:1387:1:3:152:12:11:BattlePet-0-000003EF27B8|h[Iron Starlette]|h|r",
 											["slot_id"] = 78,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff0070dd|Hbattlepet:1387:1:3:152:12:11:BattlePet-0-000003EF27B8|h[Iron Starlette]|h|r",
+											["ab"] = 1,
 											["loc_id"] = 7,
 										}, -- [78]
 										{
@@ -1323,11 +1323,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-000003F530A8",
 											["bag_id"] = 1,
 											["slot_id"] = 79,
-											["loc_id"] = 7,
+											["h"] = "|cff0070dd|Hbattlepet:1387:1:3:152:12:11:BattlePet-0-000003F530A8|h[Iron Starlette]|h|r",
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff0070dd|Hbattlepet:1387:1:3:152:12:11:BattlePet-0-000003F530A8|h[Iron Starlette]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [79]
 										{
@@ -1364,11 +1364,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9065",
 											["bag_id"] = 1,
 											["slot_id"] = 82,
-											["h"] = "|cff1eff00|Hbattlepet:235:1:2:144:11:11:BattlePet-0-0000030A9065|h[Leaping Hatchling]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:235:1:2:144:11:11:BattlePet-0-0000030A9065|h[Leaping Hatchling]|h|r",
 											["ab"] = 1,
 										}, -- [82]
 										{
@@ -1377,11 +1377,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A903B",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:95:1:2:151:10:10:BattlePet-0-0000030A903B|h[Lifelike Toad]|h|r",
 											["slot_id"] = 83,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:95:1:2:151:10:10:BattlePet-0-0000030A903B|h[Lifelike Toad]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [83]
 										{
@@ -1390,11 +1390,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-000003D50DC5",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["slot_id"] = 84,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff0070dd|Hbattlepet:1320:1:3:152:10:13:BattlePet-0-000003D50DC5|h[Lil' Bling]|h|r",
 										}, -- [84]
 										{
@@ -1403,11 +1403,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A904C",
 											["bag_id"] = 1,
 											["slot_id"] = 85,
-											["h"] = "|cff1eff00|Hbattlepet:86:1:2:156:10:10:BattlePet-0-0000030A904C|h[Lil' Smoky]|h|r",
+											["ab"] = 1,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["h"] = "|cff1eff00|Hbattlepet:86:1:2:156:10:10:BattlePet-0-0000030A904C|h[Lil' Smoky]|h|r",
 											["loc_id"] = 7,
 										}, -- [85]
 										{
@@ -1444,11 +1444,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9073",
 											["bag_id"] = 1,
 											["slot_id"] = 88,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["h"] = "|cff1eff00|Hbattlepet:292:1:2:151:10:10:BattlePet-0-0000030A9073|h[Magic Lamp]|h|r",
 										}, -- [88]
 										{
@@ -1457,11 +1457,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9035",
 											["bag_id"] = 1,
 											["slot_id"] = 89,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff1eff00|Hbattlepet:136:1:2:153:10:10:BattlePet-0-0000030A9035|h[Mana Wyrmling]|h|r",
 										}, -- [89]
 										{
@@ -1470,11 +1470,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-000004160067",
 											["bag_id"] = 1,
 											["slot_id"] = 90,
-											["h"] = "|cff1eff00|Hbattlepet:1446:1:2:150:11:10:BattlePet-0-000004160067|h[Meadowstomper Calf]|h|r",
+											["ab"] = 1,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["h"] = "|cff1eff00|Hbattlepet:1446:1:2:150:11:10:BattlePet-0-000004160067|h[Meadowstomper Calf]|h|r",
 											["loc_id"] = 7,
 										}, -- [90]
 										{
@@ -1511,11 +1511,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-000003FA7E66",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["h"] = "|cff1eff00|Hbattlepet:844:1:2:148:10:11:BattlePet-0-000003FA7E66|h[Mechanical Pandaren Dragonling]|h|r",
+											["loc_id"] = 7,
 											["slot_id"] = 93,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:844:1:2:148:10:11:BattlePet-0-000003FA7E66|h[Mechanical Pandaren Dragonling]|h|r",
 											["ab"] = 1,
 										}, -- [93]
 										{
@@ -1524,11 +1524,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9023",
 											["bag_id"] = 1,
 											["slot_id"] = 94,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:39:1:2:153:9:11:BattlePet-0-0000030A9023|h[Mechanical Squirrel]|h|r",
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:39:1:2:153:9:11:BattlePet-0-0000030A9023|h[Mechanical Squirrel]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [94]
 										{
@@ -1537,11 +1537,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9044",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:215:1:2:153:10:10:BattlePet-0-0000030A9044|h[Mechanopeep]|h|r",
 											["slot_id"] = 95,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:215:1:2:153:10:10:BattlePet-0-0000030A9044|h[Mechanopeep]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [95]
 										{
@@ -1578,11 +1578,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9061",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["slot_id"] = 98,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["h"] = "|cff0070dd|Hbattlepet:165:1:3:161:10:12:BattlePet-0-0000030A9061|h[Mojo]|h|r",
 										}, -- [98]
 										{
@@ -1619,11 +1619,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A904D",
 											["bag_id"] = 1,
 											["slot_id"] = 101,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["h"] = "|cff1eff00|Hbattlepet:126:1:2:150:11:10:BattlePet-0-0000030A904D|h[Mr. Wiggles]|h|r",
 										}, -- [101]
 										{
@@ -1632,11 +1632,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9042",
 											["bag_id"] = 1,
 											["slot_id"] = 102,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["h"] = "|cff0070dd|Hbattlepet:164:1:3:155:12:10:BattlePet-0-0000030A9042|h[Muckbreath]|h|r",
 										}, -- [102]
 										{
@@ -1645,11 +1645,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9058",
 											["bag_id"] = 1,
 											["slot_id"] = 103,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:210:1:2:148:10:12:BattlePet-0-0000030A9058|h[Mulgore Hatchling]|h|r",
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:210:1:2:148:10:12:BattlePet-0-0000030A9058|h[Mulgore Hatchling]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [103]
 										{
@@ -1658,11 +1658,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9038",
 											["bag_id"] = 1,
 											["slot_id"] = 104,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["h"] = "|cff0070dd|Hbattlepet:186:1:3:152:12:11:BattlePet-0-0000030A9038|h[Nether Ray Fry]|h|r",
 										}, -- [104]
 										{
@@ -1671,11 +1671,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-000003CBEDB6",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["h"] = "|cff0070dd|Hbattlepet:1228:1:3:165:11:10:BattlePet-0-000003CBEDB6|h[Netherspace Abyssal]|h|r",
+											["ab"] = 1,
 											["slot_id"] = 105,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["h"] = "|cff0070dd|Hbattlepet:1228:1:3:165:11:10:BattlePet-0-000003CBEDB6|h[Netherspace Abyssal]|h|r",
 											["loc_id"] = 7,
 										}, -- [105]
 										{
@@ -1684,11 +1684,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000042D4179",
 											["bag_id"] = 1,
 											["slot_id"] = 106,
-											["ab"] = 1,
+											["h"] = "|cff0070dd|Hbattlepet:1524:1:3:158:10:12:BattlePet-0-0000042D4179|h[Netherspawn, Spawn of Netherspawn]|h|r",
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff0070dd|Hbattlepet:1524:1:3:158:10:12:BattlePet-0-0000042D4179|h[Netherspawn, Spawn of Netherspawn]|h|r",
+											["ab"] = 1,
 											["loc_id"] = 7,
 										}, -- [106]
 										{
@@ -1711,11 +1711,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9062",
 											["bag_id"] = 1,
 											["slot_id"] = 108,
-											["h"] = "|cff1eff00|Hbattlepet:236:1:2:157:10:10:BattlePet-0-0000030A9062|h[Obsidian Hatchling]|h|r",
+											["ab"] = 1,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["h"] = "|cff1eff00|Hbattlepet:236:1:2:157:10:10:BattlePet-0-0000030A9062|h[Obsidian Hatchling]|h|r",
 											["loc_id"] = 7,
 										}, -- [108]
 										{
@@ -1738,11 +1738,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A901D",
 											["bag_id"] = 1,
 											["slot_id"] = 110,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff1eff00|Hbattlepet:43:1:2:145:11:10:BattlePet-0-0000030A901D|h[Orange Tabby Cat]|h|r",
 										}, -- [110]
 										{
@@ -1765,11 +1765,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A905E",
 											["bag_id"] = 1,
 											["slot_id"] = 112,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:159:1:2:160:10:10:BattlePet-0-0000030A905E|h[Peanut]|h|r",
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:159:1:2:160:10:10:BattlePet-0-0000030A905E|h[Peanut]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [112]
 										{
@@ -1792,11 +1792,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A63A2",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["slot_id"] = 114,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["h"] = "|cff1eff00|Hbattlepet:122:1:2:148:10:12:BattlePet-0-0000030A63A2|h[Peddlefeet]|h|r",
 										}, -- [114]
 										{
@@ -1805,11 +1805,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9012",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["ab"] = 1,
+											["h"] = "|cff1eff00|Hbattlepet:122:1:2:148:10:12:BattlePet-0-0000030A9012|h[Peddlefeet]|h|r",
 											["slot_id"] = 115,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:122:1:2:148:10:12:BattlePet-0-0000030A9012|h[Peddlefeet]|h|r",
+											["ab"] = 1,
 											["loc_id"] = 7,
 										}, -- [115]
 										{
@@ -1818,11 +1818,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000032584D1",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["slot_id"] = 116,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["h"] = "|cff1eff00|Hbattlepet:122:1:2:148:10:12:BattlePet-0-0000032584D1|h[Peddlefeet]|h|r",
 										}, -- [116]
 										{
@@ -1831,11 +1831,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9007",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["ab"] = 1,
+											["h"] = "|cff0070dd|Hbattlepet:198:1:3:155:11:12:BattlePet-0-0000030A9007|h[Pengu]|h|r",
 											["slot_id"] = 117,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff0070dd|Hbattlepet:198:1:3:155:11:12:BattlePet-0-0000030A9007|h[Pengu]|h|r",
+											["ab"] = 1,
 											["loc_id"] = 7,
 										}, -- [117]
 										{
@@ -1858,11 +1858,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9071",
 											["bag_id"] = 1,
 											["slot_id"] = 119,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["h"] = "|cff1eff00|Hbattlepet:261:1:2:151:11:10:BattlePet-0-0000030A9071|h[Personal World Destroyer]|h|r",
 										}, -- [119]
 										{
@@ -1871,11 +1871,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A904F",
 											["bag_id"] = 1,
 											["slot_id"] = 120,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:85:1:2:156:9:11:BattlePet-0-0000030A904F|h[Pet Bombling]|h|r",
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:85:1:2:156:9:11:BattlePet-0-0000030A904F|h[Pet Bombling]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [120]
 										{
@@ -1884,11 +1884,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9045",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["h"] = "|cff1eff00|Hbattlepet:166:1:2:156:11:8:BattlePet-0-0000030A9045|h[Pint-Sized Pink Pachyderm]|h|r",
+											["loc_id"] = 7,
 											["slot_id"] = 121,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:166:1:2:156:11:8:BattlePet-0-0000030A9045|h[Pint-Sized Pink Pachyderm]|h|r",
 											["ab"] = 1,
 										}, -- [121]
 										{
@@ -1897,11 +1897,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A63A1",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["h"] = "|cff1eff00|Hbattlepet:166:1:2:156:11:8:BattlePet-0-0000030A63A1|h[Pint-Sized Pink Pachyderm]|h|r",
+											["ab"] = 1,
 											["slot_id"] = 122,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["h"] = "|cff1eff00|Hbattlepet:166:1:2:156:11:8:BattlePet-0-0000030A63A1|h[Pint-Sized Pink Pachyderm]|h|r",
 											["loc_id"] = 7,
 										}, -- [122]
 										{
@@ -1924,11 +1924,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A0296",
 											["bag_id"] = 1,
 											["slot_id"] = 124,
-											["h"] = "|cff1eff00|Hbattlepet:196:1:2:156:11:9:BattlePet-0-0000030A0296|h[Proto-Drake Whelp]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:196:1:2:156:11:9:BattlePet-0-0000030A0296|h[Proto-Drake Whelp]|h|r",
 											["ab"] = 1,
 										}, -- [124]
 										{
@@ -1937,11 +1937,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9014",
 											["bag_id"] = 1,
 											["slot_id"] = 125,
-											["h"] = "|cff1eff00|Hbattlepet:196:1:2:156:11:9:BattlePet-0-0000030A9014|h[Proto-Drake Whelp]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:196:1:2:156:11:9:BattlePet-0-0000030A9014|h[Proto-Drake Whelp]|h|r",
 											["ab"] = 1,
 										}, -- [125]
 										{
@@ -1950,11 +1950,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9068",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["slot_id"] = 126,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["h"] = "|cff1eff00|Hbattlepet:237:1:2:145:11:11:BattlePet-0-0000030A9068|h[Ravasaur Hatchling]|h|r",
 										}, -- [126]
 										{
@@ -1963,11 +1963,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9067",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["slot_id"] = 127,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["h"] = "|cff1eff00|Hbattlepet:238:1:2:144:11:11:BattlePet-0-0000030A9067|h[Razormaw Hatchling]|h|r",
 										}, -- [127]
 										{
@@ -1976,11 +1976,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A906A",
 											["bag_id"] = 1,
 											["slot_id"] = 128,
-											["h"] = "|cff0070dd|Hbattlepet:239:1:3:152:13:10:BattlePet-0-0000030A906A|h[Razzashi Hatchling]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff0070dd|Hbattlepet:239:1:3:152:13:10:BattlePet-0-0000030A906A|h[Razzashi Hatchling]|h|r",
 											["ab"] = 1,
 										}, -- [128]
 										{
@@ -1989,11 +1989,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9024",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["slot_id"] = 129,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff1eff00|Hbattlepet:143:1:2:145:11:11:BattlePet-0-0000030A9024|h[Red Dragonhawk Hatchling]|h|r",
 										}, -- [129]
 										{
@@ -2002,11 +2002,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9034",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["h"] = "|cff1eff00|Hbattlepet:139:1:2:145:11:11:BattlePet-0-0000030A9034|h[Red Moth]|h|r",
+											["ab"] = 1,
 											["slot_id"] = 130,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["h"] = "|cff1eff00|Hbattlepet:139:1:2:145:11:11:BattlePet-0-0000030A9034|h[Red Moth]|h|r",
 											["loc_id"] = 7,
 										}, -- [130]
 										{
@@ -2015,11 +2015,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9081",
 											["bag_id"] = 1,
 											["slot_id"] = 131,
-											["h"] = "|cff1eff00|Hbattlepet:271:1:2:151:10:11:BattlePet-0-0000030A9081|h[Rustberg Gull]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:271:1:2:151:10:11:BattlePet-0-0000030A9081|h[Rustberg Gull]|h|r",
 											["ab"] = 1,
 										}, -- [131]
 										{
@@ -2028,11 +2028,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9078",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["h"] = "|cff1eff00|Hbattlepet:289:1:2:169:10:7:BattlePet-0-0000030A9078|h[Scooter the Snail]|h|r",
+											["loc_id"] = 7,
 											["slot_id"] = 132,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:289:1:2:169:10:7:BattlePet-0-0000030A9078|h[Scooter the Snail]|h|r",
 											["ab"] = 1,
 										}, -- [132]
 										{
@@ -2041,11 +2041,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9000",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["slot_id"] = 133,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff0070dd|Hbattlepet:172:1:3:151:12:11:BattlePet-0-0000030A9000|h[Searing Scorchling]|h|r",
 										}, -- [133]
 										{
@@ -2054,11 +2054,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9056",
 											["bag_id"] = 1,
 											["slot_id"] = 134,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["h"] = "|cff1eff00|Hbattlepet:218:1:2:151:11:10:BattlePet-0-0000030A9056|h[Sen'jin Fetish]|h|r",
 										}, -- [134]
 										{
@@ -2067,11 +2067,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A901B",
 											["bag_id"] = 1,
 											["slot_id"] = 135,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff1eff00|Hbattlepet:51:1:2:151:10:11:BattlePet-0-0000030A901B|h[Senegal]|h|r",
 										}, -- [135]
 										{
@@ -2080,11 +2080,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9064",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["slot_id"] = 136,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff0070dd|Hbattlepet:229:1:3:155:11:11:BattlePet-0-0000030A9064|h[Shimmering Wyrmling]|h|r",
 										}, -- [136]
 										{
@@ -2093,11 +2093,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A0293",
 											["bag_id"] = 1,
 											["slot_id"] = 137,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["h"] = "|cff1eff00|Hbattlepet:44:1:2:142:10:13:BattlePet-0-0000030A0293|h[Siamese Cat]|h|r",
 										}, -- [137]
 										{
@@ -2106,11 +2106,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9026",
 											["bag_id"] = 1,
 											["slot_id"] = 138,
-											["h"] = "|cff1eff00|Hbattlepet:44:1:2:142:10:13:BattlePet-0-0000030A9026|h[Siamese Cat]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:44:1:2:142:10:13:BattlePet-0-0000030A9026|h[Siamese Cat]|h|r",
 											["ab"] = 1,
 										}, -- [138]
 										{
@@ -2119,11 +2119,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9028",
 											["bag_id"] = 1,
 											["slot_id"] = 139,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["h"] = "|cff1eff00|Hbattlepet:144:1:2:148:10:11:BattlePet-0-0000030A9028|h[Silver Dragonhawk Hatchling]|h|r",
 										}, -- [139]
 										{
@@ -2132,11 +2132,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9020",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:45:1:2:145:11:11:BattlePet-0-0000030A9020|h[Silver Tabby Cat]|h|r",
 											["slot_id"] = 140,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:45:1:2:145:11:11:BattlePet-0-0000030A9020|h[Silver Tabby Cat]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [140]
 										{
@@ -2159,11 +2159,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A639F",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["slot_id"] = 142,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff0070dd|Hbattlepet:162:1:3:155:12:10:BattlePet-0-0000030A639F|h[Sinister Squashling]|h|r",
 										}, -- [142]
 										{
@@ -2172,11 +2172,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A900A",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["h"] = "|cff0070dd|Hbattlepet:162:1:3:155:12:10:BattlePet-0-0000030A900A|h[Sinister Squashling]|h|r",
+											["ab"] = 1,
 											["slot_id"] = 143,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["h"] = "|cff0070dd|Hbattlepet:162:1:3:155:12:10:BattlePet-0-0000030A900A|h[Sinister Squashling]|h|r",
 											["loc_id"] = 7,
 										}, -- [143]
 										{
@@ -2185,11 +2185,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-000004096202",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["ab"] = 1,
+											["h"] = "|cff0070dd|Hbattlepet:1336:1:3:158:12:10:BattlePet-0-000004096202|h[Skunky Alemental]|h|r",
 											["slot_id"] = 144,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff0070dd|Hbattlepet:1336:1:3:158:12:10:BattlePet-0-000004096202|h[Skunky Alemental]|h|r",
+											["ab"] = 1,
 											["loc_id"] = 7,
 										}, -- [144]
 										{
@@ -2198,11 +2198,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A903D",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["h"] = "|cff1eff00|Hbattlepet:90:1:2:147:11:10:BattlePet-0-0000030A903D|h[Smolderweb Hatchling]|h|r",
+											["loc_id"] = 7,
 											["slot_id"] = 145,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:90:1:2:147:11:10:BattlePet-0-0000030A903D|h[Smolderweb Hatchling]|h|r",
 											["ab"] = 1,
 										}, -- [145]
 										{
@@ -2211,11 +2211,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9003",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["h"] = "|cff0070dd|Hbattlepet:173:1:3:158:12:10:BattlePet-0-0000030A9003|h[Snarly]|h|r",
+											["ab"] = 1,
 											["slot_id"] = 146,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["h"] = "|cff0070dd|Hbattlepet:173:1:3:158:12:10:BattlePet-0-0000030A9003|h[Snarly]|h|r",
 											["loc_id"] = 7,
 										}, -- [146]
 										{
@@ -2224,11 +2224,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A901C",
 											["bag_id"] = 1,
 											["slot_id"] = 147,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["h"] = "|cff1eff00|Hbattlepet:72:1:2:150:9:12:BattlePet-0-0000030A901C|h[Snowshoe Rabbit]|h|r",
 										}, -- [147]
 										{
@@ -2237,11 +2237,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A63A3",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["h"] = "|cff1eff00|Hbattlepet:125:1:2:148:10:12:BattlePet-0-0000030A63A3|h[Speedy]|h|r",
+											["ab"] = 1,
 											["slot_id"] = 148,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["h"] = "|cff1eff00|Hbattlepet:125:1:2:148:10:12:BattlePet-0-0000030A63A3|h[Speedy]|h|r",
 											["loc_id"] = 7,
 										}, -- [148]
 										{
@@ -2250,11 +2250,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9017",
 											["bag_id"] = 1,
 											["slot_id"] = 149,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff1eff00|Hbattlepet:125:1:2:148:10:12:BattlePet-0-0000030A9017|h[Speedy]|h|r",
 										}, -- [149]
 										{
@@ -2263,11 +2263,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9040",
 											["bag_id"] = 1,
 											["slot_id"] = 150,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff1eff00|Hbattlepet:128:1:2:151:10:10:BattlePet-0-0000030A9040|h[Spirit of Summer]|h|r",
 										}, -- [150]
 										{
@@ -2276,11 +2276,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9011",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["h"] = "|cff1eff00|Hbattlepet:200:1:2:148:8:13:BattlePet-0-0000030A9011|h[Spring Rabbit]|h|r",
+											["loc_id"] = 7,
 											["slot_id"] = 151,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:200:1:2:148:8:13:BattlePet-0-0000030A9011|h[Spring Rabbit]|h|r",
 											["ab"] = 1,
 										}, -- [151]
 										{
@@ -2289,11 +2289,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A63A0",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["slot_id"] = 152,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["h"] = "|cff1eff00|Hbattlepet:200:1:2:148:8:13:BattlePet-0-0000030A63A0|h[Spring Rabbit]|h|r",
 										}, -- [152]
 										{
@@ -2302,11 +2302,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A6397",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["h"] = "|cff0070dd|Hbattlepet:87:1:3:152:11:12:BattlePet-0-0000030A6397|h[Sprite Darter Hatchling]|h|r",
+											["ab"] = 1,
 											["slot_id"] = 153,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["h"] = "|cff0070dd|Hbattlepet:87:1:3:152:11:12:BattlePet-0-0000030A6397|h[Sprite Darter Hatchling]|h|r",
 											["loc_id"] = 7,
 										}, -- [153]
 										{
@@ -2315,11 +2315,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A903F",
 											["bag_id"] = 1,
 											["slot_id"] = 154,
-											["h"] = "|cff0070dd|Hbattlepet:87:1:3:152:11:12:BattlePet-0-0000030A903F|h[Sprite Darter Hatchling]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff0070dd|Hbattlepet:87:1:3:152:11:12:BattlePet-0-0000030A903F|h[Sprite Darter Hatchling]|h|r",
 											["ab"] = 1,
 										}, -- [154]
 										{
@@ -2342,11 +2342,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-000003F417D8",
 											["bag_id"] = 1,
 											["slot_id"] = 156,
-											["ab"] = 1,
+											["h"] = "|cff0070dd|Hbattlepet:1146:1:3:158:12:10:BattlePet-0-000003F417D8|h[Stitched Pup]|h|r",
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff0070dd|Hbattlepet:1146:1:3:158:12:10:BattlePet-0-000003F417D8|h[Stitched Pup]|h|r",
+											["ab"] = 1,
 											["loc_id"] = 7,
 										}, -- [156]
 										{
@@ -2355,11 +2355,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9046",
 											["bag_id"] = 1,
 											["slot_id"] = 157,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["h"] = "|cff0070dd|Hbattlepet:211:1:3:168:10:10:BattlePet-0-0000030A9046|h[Strand Crawler]|h|r",
 										}, -- [157]
 										{
@@ -2368,11 +2368,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9051",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["ab"] = 1,
+											["h"] = "|cff1eff00|Hbattlepet:204:1:2:151:10:10:BattlePet-0-0000030A9051|h[Teldrassil Sproutling]|h|r",
 											["slot_id"] = 158,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:204:1:2:151:10:10:BattlePet-0-0000030A9051|h[Teldrassil Sproutling]|h|r",
+											["ab"] = 1,
 											["loc_id"] = 7,
 										}, -- [158]
 										{
@@ -2381,11 +2381,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000040E77BB",
 											["bag_id"] = 1,
 											["slot_id"] = 159,
-											["h"] = "|cff0070dd|Hbattlepet:1416:1:3:158:12:10:BattlePet-0-0000040E77BB|h[Teroclaw Hatchling]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff0070dd|Hbattlepet:1416:1:3:158:12:10:BattlePet-0-0000040E77BB|h[Teroclaw Hatchling]|h|r",
 											["ab"] = 1,
 										}, -- [159]
 										{
@@ -2394,11 +2394,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-000003E6FEC2",
 											["bag_id"] = 1,
 											["slot_id"] = 160,
-											["ab"] = 1,
+											["h"] = "|cff0070dd|Hbattlepet:650:1:3:155:12:11:BattlePet-0-000003E6FEC2|h[Terrible Turnip]|h|r",
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff0070dd|Hbattlepet:650:1:3:155:12:11:BattlePet-0-000003E6FEC2|h[Terrible Turnip]|h|r",
+											["ab"] = 1,
 											["loc_id"] = 7,
 										}, -- [160]
 										{
@@ -2421,11 +2421,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A900F",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["h"] = "|cff1eff00|Hbattlepet:194:1:2:148:11:11:BattlePet-0-0000030A900F|h[Tickbird Hatchling]|h|r",
+											["ab"] = 1,
 											["slot_id"] = 162,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["h"] = "|cff1eff00|Hbattlepet:194:1:2:148:11:11:BattlePet-0-0000030A900F|h[Tickbird Hatchling]|h|r",
 											["loc_id"] = 7,
 										}, -- [162]
 										{
@@ -2434,11 +2434,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-000003D51053",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["ab"] = 1,
+											["h"] = "|cff1eff00|Hbattlepet:652:1:2:150:10:11:BattlePet-0-000003D51053|h[Tiny Goldfish]|h|r",
 											["slot_id"] = 163,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:652:1:2:150:10:11:BattlePet-0-000003D51053|h[Tiny Goldfish]|h|r",
+											["ab"] = 1,
 											["loc_id"] = 7,
 										}, -- [163]
 										{
@@ -2447,11 +2447,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9069",
 											["bag_id"] = 1,
 											["slot_id"] = 164,
-											["h"] = "|cff0070dd|Hbattlepet:279:1:3:152:12:12:BattlePet-0-0000030A9069|h[Tiny Shale Spider]|h|r",
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["h"] = "|cff0070dd|Hbattlepet:279:1:3:152:12:12:BattlePet-0-0000030A9069|h[Tiny Shale Spider]|h|r",
 											["ab"] = 1,
 										}, -- [164]
 										{
@@ -2460,11 +2460,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9016",
 											["bag_id"] = 1,
 											["slot_id"] = 165,
-											["h"] = "|cff1eff00|Hbattlepet:117:1:2:151:10:10:BattlePet-0-0000030A9016|h[Tiny Snowman]|h|r",
+											["ab"] = 1,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["h"] = "|cff1eff00|Hbattlepet:117:1:2:151:10:10:BattlePet-0-0000030A9016|h[Tiny Snowman]|h|r",
 											["loc_id"] = 7,
 										}, -- [165]
 										{
@@ -2473,11 +2473,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9006",
 											["bag_id"] = 1,
 											["slot_id"] = 166,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["h"] = "|cff0070dd|Hbattlepet:167:1:3:171:10:10:BattlePet-0-0000030A9006|h[Tiny Sporebat]|h|r",
 										}, -- [166]
 										{
@@ -2486,11 +2486,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9057",
 											["bag_id"] = 1,
 											["slot_id"] = 167,
-											["loc_id"] = 7,
+											["h"] = "|cff1eff00|Hbattlepet:206:1:2:156:10:9:BattlePet-0-0000030A9057|h[Tirisfal Batling]|h|r",
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:206:1:2:156:10:9:BattlePet-0-0000030A9057|h[Tirisfal Batling]|h|r",
+											["loc_id"] = 7,
 											["ab"] = 1,
 										}, -- [167]
 										{
@@ -2499,11 +2499,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9043",
 											["bag_id"] = 1,
 											["count"] = 1,
-											["ab"] = 1,
+											["h"] = "|cff0070dd|Hbattlepet:163:1:3:152:12:11:BattlePet-0-0000030A9043|h[Toothy]|h|r",
 											["slot_id"] = 168,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff0070dd|Hbattlepet:163:1:3:152:12:11:BattlePet-0-0000030A9043|h[Toothy]|h|r",
+											["ab"] = 1,
 											["loc_id"] = 7,
 										}, -- [168]
 										{
@@ -2512,11 +2512,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A903A",
 											["bag_id"] = 1,
 											["slot_id"] = 169,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff1eff00|Hbattlepet:116:1:2:153:10:10:BattlePet-0-0000030A903A|h[Tranquil Mechanical Yeti]|h|r",
 										}, -- [169]
 										{
@@ -2526,11 +2526,11 @@ ARKINVDB = {
 											["bag_id"] = 1,
 											["loc_id"] = 7,
 											["ab"] = 1,
-											["slot_id"] = 170,
+											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
 											["h"] = "|cff1eff00|Hbattlepet:65:1:2:156:9:10:BattlePet-0-0000030A902D|h[Tree Frog]|h|r",
-											["count"] = 1,
+											["slot_id"] = 170,
 										}, -- [170]
 										{
 											["q"] = 2,
@@ -2539,11 +2539,11 @@ ARKINVDB = {
 											["bag_id"] = 1,
 											["h"] = "|cff1eff00|Hbattlepet:1538:1:2:148:10:12:BattlePet-0-000004065192|h[Umbrafen Spore]|h|r",
 											["loc_id"] = 7,
-											["count"] = 1,
+											["slot_id"] = 171,
 											["bp"] = 1,
 											["fav"] = false,
 											["ab"] = 1,
-											["slot_id"] = 171,
+											["count"] = 1,
 										}, -- [171]
 										{
 											["q"] = 2,
@@ -2551,11 +2551,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A902A",
 											["bag_id"] = 1,
 											["slot_id"] = 172,
-											["ab"] = 1,
+											["h"] = "|cff1eff00|Hbattlepet:55:1:2:151:8:13:BattlePet-0-0000030A902A|h[Undercity Cockroach]|h|r",
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:55:1:2:151:8:13:BattlePet-0-0000030A902A|h[Undercity Cockroach]|h|r",
+											["ab"] = 1,
 											["loc_id"] = 7,
 										}, -- [172]
 										{
@@ -2565,11 +2565,11 @@ ARKINVDB = {
 											["bag_id"] = 1,
 											["loc_id"] = 7,
 											["h"] = "|cff1eff00|Hbattlepet:55:1:2:151:8:13:BattlePet-0-0000030A0291|h[Undercity Cockroach]|h|r",
-											["slot_id"] = 173,
+											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
 											["ab"] = 1,
-											["count"] = 1,
+											["slot_id"] = 173,
 										}, -- [173]
 										{
 											["q"] = 3,
@@ -2578,11 +2578,11 @@ ARKINVDB = {
 											["bag_id"] = 1,
 											["h"] = "|cff0070dd|Hbattlepet:1151:1:3:158:12:10:BattlePet-0-000003C2D8CD|h[Untamed Hatchling]|h|r",
 											["ab"] = 1,
-											["count"] = 1,
+											["slot_id"] = 174,
 											["bp"] = 1,
 											["fav"] = false,
 											["loc_id"] = 7,
-											["slot_id"] = 174,
+											["count"] = 1,
 										}, -- [174]
 										{
 											["q"] = 3,
@@ -2591,11 +2591,11 @@ ARKINVDB = {
 											["bag_id"] = 1,
 											["h"] = "|cff0070dd|Hbattlepet:1151:1:3:158:12:10:BattlePet-0-000003D8761D|h[Untamed Hatchling]|h|r",
 											["loc_id"] = 7,
-											["slot_id"] = 175,
+											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
 											["ab"] = 1,
-											["count"] = 1,
+											["slot_id"] = 175,
 										}, -- [175]
 										{
 											["q"] = 2,
@@ -2617,11 +2617,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9039",
 											["bag_id"] = 1,
 											["slot_id"] = 177,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff1eff00|Hbattlepet:46:1:2:150:9:11:BattlePet-0-0000030A9039|h[White Kitten]|h|r",
 										}, -- [177]
 										{
@@ -2630,11 +2630,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9015",
 											["bag_id"] = 1,
 											["slot_id"] = 178,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff1eff00|Hbattlepet:141:1:2:157:9:11:BattlePet-0-0000030A9015|h[White Moth]|h|r",
 										}, -- [178]
 										{
@@ -2643,11 +2643,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A900E",
 											["bag_id"] = 1,
 											["slot_id"] = 179,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff1eff00|Hbattlepet:195:1:2:145:10:12:BattlePet-0-0000030A900E|h[White Tickbird Hatchling]|h|r",
 										}, -- [179]
 										{
@@ -2657,11 +2657,11 @@ ARKINVDB = {
 											["bag_id"] = 1,
 											["h"] = "|cff1eff00|Hbattlepet:195:1:2:150:9:12:BattlePet-0-0000030A0294|h[White Tickbird Hatchling]|h|r",
 											["loc_id"] = 7,
-											["count"] = 1,
+											["slot_id"] = 180,
 											["bp"] = 1,
 											["fav"] = false,
 											["ab"] = 1,
-											["slot_id"] = 180,
+											["count"] = 1,
 										}, -- [180]
 										{
 											["q"] = 3,
@@ -2670,11 +2670,11 @@ ARKINVDB = {
 											["bag_id"] = 1,
 											["h"] = "|cff0070dd|Hbattlepet:1523:1:3:152:10:13:BattlePet-0-000003EDCAFC|h[Widget the Departed]|h|r",
 											["loc_id"] = 7,
-											["count"] = 1,
+											["slot_id"] = 181,
 											["bp"] = 1,
 											["fav"] = false,
 											["ab"] = 1,
-											["slot_id"] = 181,
+											["count"] = 1,
 										}, -- [181]
 										{
 											["q"] = 2,
@@ -2683,11 +2683,11 @@ ARKINVDB = {
 											["bag_id"] = 1,
 											["h"] = "|cff1eff00|Hbattlepet:157:1:2:151:10:10:BattlePet-0-0000030A904B|h[Willy]|h|r",
 											["loc_id"] = 7,
-											["count"] = 1,
+											["slot_id"] = 182,
 											["bp"] = 1,
 											["fav"] = false,
 											["ab"] = 1,
-											["slot_id"] = 182,
+											["count"] = 1,
 										}, -- [182]
 										{
 											["q"] = 2,
@@ -2696,11 +2696,11 @@ ARKINVDB = {
 											["bag_id"] = 1,
 											["loc_id"] = 7,
 											["ab"] = 1,
-											["slot_id"] = 183,
+											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
 											["h"] = "|cff1eff00|Hbattlepet:118:1:2:151:10:10:BattlePet-0-0000030A900B|h[Winter Reindeer]|h|r",
-											["count"] = 1,
+											["slot_id"] = 183,
 										}, -- [183]
 										{
 											["q"] = 2,
@@ -2709,11 +2709,11 @@ ARKINVDB = {
 											["bag_id"] = 1,
 											["loc_id"] = 7,
 											["ab"] = 1,
-											["slot_id"] = 184,
+											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
 											["h"] = "|cff1eff00|Hbattlepet:118:1:2:151:10:10:BattlePet-0-0000030A639A|h[Winter Reindeer]|h|r",
-											["count"] = 1,
+											["slot_id"] = 184,
 										}, -- [184]
 										{
 											["q"] = 2,
@@ -2722,11 +2722,11 @@ ARKINVDB = {
 											["bag_id"] = 1,
 											["loc_id"] = 7,
 											["ab"] = 1,
-											["slot_id"] = 185,
+											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
 											["h"] = "|cff1eff00|Hbattlepet:120:1:2:151:10:10:BattlePet-0-0000030A900D|h[Winter's Little Helper]|h|r",
-											["count"] = 1,
+											["slot_id"] = 185,
 										}, -- [185]
 										{
 											["q"] = 2,
@@ -2735,11 +2735,11 @@ ARKINVDB = {
 											["bag_id"] = 1,
 											["loc_id"] = 7,
 											["ab"] = 1,
-											["slot_id"] = 186,
+											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
 											["h"] = "|cff1eff00|Hbattlepet:306:1:2:144:11:11:BattlePet-0-0000030A9075|h[Winterspring Cub]|h|r",
-											["count"] = 1,
+											["slot_id"] = 186,
 										}, -- [186]
 										{
 											["q"] = 2,
@@ -2747,11 +2747,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9004",
 											["bag_id"] = 1,
 											["slot_id"] = 187,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff1eff00|Hbattlepet:153:1:2:153:11:10:BattlePet-0-0000030A9004|h[Wolpertinger]|h|r",
 										}, -- [187]
 										{
@@ -2760,11 +2760,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A639C",
 											["bag_id"] = 1,
 											["slot_id"] = 188,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff1eff00|Hbattlepet:153:1:2:153:11:10:BattlePet-0-0000030A639C|h[Wolpertinger]|h|r",
 										}, -- [188]
 										{
@@ -2773,11 +2773,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A902F",
 											["bag_id"] = 1,
 											["slot_id"] = 189,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff1eff00|Hbattlepet:64:1:2:156:9:11:BattlePet-0-0000030A902F|h[Wood Frog]|h|r",
 										}, -- [189]
 										{
@@ -2786,11 +2786,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9002",
 											["bag_id"] = 1,
 											["slot_id"] = 190,
-											["ab"] = 1,
+											["loc_id"] = 7,
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["loc_id"] = 7,
+											["ab"] = 1,
 											["h"] = "|cff1eff00|Hbattlepet:89:1:2:160:10:10:BattlePet-0-0000030A9002|h[Worg Pup]|h|r",
 										}, -- [190]
 										{
@@ -2799,11 +2799,11 @@ ARKINVDB = {
 											["guid"] = "BattlePet-0-0000030A9018",
 											["bag_id"] = 1,
 											["slot_id"] = 191,
-											["ab"] = 1,
+											["h"] = "|cff1eff00|Hbattlepet:140:1:2:151:11:10:BattlePet-0-0000030A9018|h[Yellow Moth]|h|r",
 											["count"] = 1,
 											["bp"] = 1,
 											["fav"] = false,
-											["h"] = "|cff1eff00|Hbattlepet:140:1:2:151:11:10:BattlePet-0-0000030A9018|h[Yellow Moth]|h|r",
+											["ab"] = 1,
 											["loc_id"] = 7,
 										}, -- [191]
 									},
@@ -8139,7 +8139,7 @@ ARKINVDB = {
 								}, -- [1]
 								{
 									["type"] = 15,
-									["count"] = 292,
+									["count"] = 322,
 									["slot"] = {
 										{
 											["q"] = 2,
@@ -10477,11 +10477,251 @@ ARKINVDB = {
 											["bag_id"] = 2,
 											["slot_id"] = 292,
 										}, -- [292]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109599:0:0:0:0:0:0:0:100:0:0:0|h[Neural Silencer]|h|r",
+											["count"] = 1,
+											["slot_id"] = 293,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [293]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:52776:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Landslide]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 294,
+										}, -- [294]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:38972:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Lifeward]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 295,
+										}, -- [295]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:38932:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Gloves - Precise Strikes]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 296,
+										}, -- [296]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:52744:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Chest - Mighty Stats]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 297,
+										}, -- [297]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:38874:0:0:0:0:0:0:0:100:0:0:0|h[Enchant 2H Weapon - Major Spirit]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 298,
+										}, -- [298]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:69237:0:0:0:0:0:0:0:100:0:0:0|h[Living Ember]|h|r",
+											["count"] = 3,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 299,
+										}, -- [299]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:38852:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Bracer - Greater Intellect]|h|r",
+											["count"] = 1,
+											["slot_id"] = 300,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [300]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:21877:0:0:0:0:0:0:0:100:0:0:0|h[Netherweave Cloth]|h|r",
+											["count"] = 30,
+											["slot_id"] = 301,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [301]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:38898:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Bracer - Stats]|h|r",
+											["count"] = 1,
+											["slot_id"] = 302,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [302]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:38830:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Boots - Stamina]|h|r",
+											["count"] = 1,
+											["slot_id"] = 303,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [303]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:36621:0:0:0:0:0:-16:1897005102:100:0:0:0|h[Advanced Flatbow of Stamina]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 304,
+										}, -- [304]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:116459:0:0:0:0:0:0:0:100:0:0:1:136|h[Frostbitten Bow of the Deft]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 305,
+										}, -- [305]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:87513:0:0:0:0:0:0:0:100:0:0:0|h[Axe of the Iron Price]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 306,
+										}, -- [306]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:52776:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Landslide]|h|r",
+											["count"] = 1,
+											["slot_id"] = 307,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [307]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:38972:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Lifeward]|h|r",
+											["count"] = 1,
+											["slot_id"] = 308,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [308]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:52751:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Chest - Stamina]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 309,
+										}, -- [309]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:52779:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Chest - Peerless Stats]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 310,
+										}, -- [310]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:38844:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Boots - Agility]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 311,
+										}, -- [311]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:6662:0:0:0:0:0:0:0:100:0:0:0|h[Elixir of Giant Growth]|h|r",
+											["count"] = 10,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 312,
+										}, -- [312]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:38948:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Executioner]|h|r",
+											["count"] = 1,
+											["slot_id"] = 313,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [313]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:52774:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Power Torrent]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 314,
+										}, -- [314]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:88567:0:0:0:0:0:0:0:100:0:0:0|h[Ghost Iron Lockbox]|h|r",
+											["count"] = 1,
+											["slot_id"] = 315,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [315]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:89112:0:0:0:0:0:0:0:100:0:0:0|h[Mote of Harmony]|h|r",
+											["count"] = 3,
+											["slot_id"] = 316,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [316]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:72988:0:0:0:0:0:0:0:100:0:0:0|h[Windwool Cloth]|h|r",
+											["count"] = 27,
+											["slot_id"] = 317,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [317]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:38963:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Exceptional Spirit]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 318,
+										}, -- [318]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110625:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Breath of Haste]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 319,
+										}, -- [319]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:44455:0:0:0:0:0:0:0:100:0:0:0|h[Shield Enchant - Greater Intellect]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 320,
+										}, -- [320]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:52744:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Chest - Mighty Stats]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 321,
+										}, -- [321]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:68786:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Bracer - Mighty Intellect]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 322,
+										}, -- [322]
 									},
 									["status"] = -3,
 								}, -- [2]
 							},
-							["slot_count"] = 292,
+							["slot_count"] = 322,
 						},
 						[6] = {
 							["slot_count"] = 18,
@@ -19967,7 +20207,7 @@ ARKINVDB = {
 								}, -- [1]
 								{
 									["type"] = 15,
-									["count"] = 973,
+									["count"] = 1082,
 									["slot"] = {
 										{
 											["q"] = 3,
@@ -27753,11 +27993,883 @@ ARKINVDB = {
 											["bag_id"] = 2,
 											["slot_id"] = 973,
 										}, -- [973]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110641:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Multistrike]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 974,
+										}, -- [974]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:74726:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Dancing Steel]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 975,
+										}, -- [975]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110654:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Cloak - Gift of Mastery]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 976,
+										}, -- [976]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:74725:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Elemental Force]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 977,
+										}, -- [977]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110645:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Gift of Critical Strike]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 978,
+										}, -- [978]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:112093:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Mark of the Shattered Hand]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 979,
+										}, -- [979]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110641:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Multistrike]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 980,
+										}, -- [980]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110653:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Cloak - Gift of Haste]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 981,
+										}, -- [981]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110682:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Mark of the Thunderlord]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 982,
+										}, -- [982]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110645:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Gift of Critical Strike]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 983,
+										}, -- [983]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:112115:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Mark of Shadowmoon]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 984,
+										}, -- [984]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110639:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Haste]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 985,
+										}, -- [985]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:74725:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Elemental Force]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 986,
+										}, -- [986]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110647:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Gift of Mastery]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 987,
+										}, -- [987]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:112160:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Mark of Blackrock]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 988,
+										}, -- [988]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110646:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Gift of Haste]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 989,
+										}, -- [989]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110642:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Versatility]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 990,
+										}, -- [990]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110640:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Mastery]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 991,
+										}, -- [991]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110648:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Gift of Multistrike]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 992,
+										}, -- [992]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:112093:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Mark of the Shattered Hand]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 993,
+										}, -- [993]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:44947:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Bracer - Major Stamina]|h|r",
+											["count"] = 1,
+											["slot_id"] = 994,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [994]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:74726:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Dancing Steel]|h|r",
+											["count"] = 1,
+											["slot_id"] = 995,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [995]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110639:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Haste]|h|r",
+											["count"] = 2,
+											["slot_id"] = 996,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [996]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110640:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Mastery]|h|r",
+											["count"] = 2,
+											["slot_id"] = 997,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [997]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110647:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Gift of Mastery]|h|r",
+											["count"] = 1,
+											["slot_id"] = 998,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [998]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110656:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Cloak - Gift of Versatility]|h|r",
+											["count"] = 1,
+											["slot_id"] = 999,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [999]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110653:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Cloak - Gift of Haste]|h|r",
+											["count"] = 1,
+											["slot_id"] = 1000,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1000]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110646:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Gift of Haste]|h|r",
+											["count"] = 1,
+											["slot_id"] = 1001,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1001]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110640:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Mastery]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1002,
+										}, -- [1002]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110638:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Critical Strike]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1003,
+										}, -- [1003]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110647:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Gift of Mastery]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1004,
+										}, -- [1004]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:112115:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Mark of Shadowmoon]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1005,
+										}, -- [1005]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110648:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Gift of Multistrike]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1006,
+										}, -- [1006]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:112093:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Mark of the Shattered Hand]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1007,
+										}, -- [1007]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110654:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Cloak - Gift of Mastery]|h|r",
+											["count"] = 2,
+											["slot_id"] = 1008,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1008]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110655:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Cloak - Gift of Multistrike]|h|r",
+											["count"] = 2,
+											["slot_id"] = 1009,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1009]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110627:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Breath of Multistrike]|h|r",
+											["count"] = 2,
+											["slot_id"] = 1010,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1010]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110628:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Breath of Versatility]|h|r",
+											["count"] = 2,
+											["slot_id"] = 1011,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1011]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110632:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Cloak - Breath of Haste]|h|r",
+											["count"] = 2,
+											["slot_id"] = 1012,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1012]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110646:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Gift of Haste]|h|r",
+											["count"] = 1,
+											["slot_id"] = 1013,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1013]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110635:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Cloak - Breath of Versatility]|h|r",
+											["count"] = 2,
+											["slot_id"] = 1014,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1014]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110624:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Breath of Critical Strike]|h|r",
+											["count"] = 1,
+											["slot_id"] = 1015,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1015]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110618:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Breath of Haste]|h|r",
+											["count"] = 2,
+											["slot_id"] = 1016,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1016]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:112093:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Mark of the Shattered Hand]|h|r",
+											["count"] = 1,
+											["slot_id"] = 1017,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1017]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:74725:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Elemental Force]|h|r",
+											["count"] = 2,
+											["slot_id"] = 1018,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1018]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110639:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Haste]|h|r",
+											["count"] = 2,
+											["slot_id"] = 1019,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1019]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110626:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Breath of Mastery]|h|r",
+											["count"] = 2,
+											["slot_id"] = 1020,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1020]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110617:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Breath of Critical Strike]|h|r",
+											["count"] = 1,
+											["slot_id"] = 1021,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1021]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:112160:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Mark of Blackrock]|h|r",
+											["count"] = 1,
+											["slot_id"] = 1022,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1022]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110625:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Breath of Haste]|h|r",
+											["count"] = 2,
+											["slot_id"] = 1023,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1023]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110620:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Breath of Multistrike]|h|r",
+											["count"] = 2,
+											["slot_id"] = 1024,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1024]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:74726:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Dancing Steel]|h|r",
+											["count"] = 2,
+											["slot_id"] = 1025,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1025]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:74708:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Chest - Glorious Stats]|h|r",
+											["count"] = 1,
+											["slot_id"] = 1026,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1026]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110654:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Cloak - Gift of Mastery]|h|r",
+											["count"] = 1,
+											["slot_id"] = 1027,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1027]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:38925:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Mongoose]|h|r",
+											["count"] = 1,
+											["slot_id"] = 1028,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1028]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110682:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Mark of the Thunderlord]|h|r",
+											["count"] = 1,
+											["slot_id"] = 1029,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1029]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:74723:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Windsong]|h|r",
+											["count"] = 2,
+											["slot_id"] = 1030,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1030]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110646:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Gift of Haste]|h|r",
+											["count"] = 1,
+											["slot_id"] = 1031,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1031]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110640:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Mastery]|h|r",
+											["count"] = 1,
+											["slot_id"] = 1032,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1032]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110639:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Haste]|h|r",
+											["count"] = 2,
+											["slot_id"] = 1033,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1033]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:74725:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Elemental Force]|h|r",
+											["count"] = 2,
+											["slot_id"] = 1034,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1034]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110647:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Gift of Mastery]|h|r",
+											["count"] = 1,
+											["slot_id"] = 1035,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1035]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110656:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Cloak - Gift of Versatility]|h|r",
+											["count"] = 1,
+											["slot_id"] = 1036,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1036]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110652:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Cloak - Gift of Critical Strike]|h|r",
+											["count"] = 2,
+											["slot_id"] = 1037,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1037]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:112093:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Mark of the Shattered Hand]|h|r",
+											["count"] = 1,
+											["slot_id"] = 1038,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [1038]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110641:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Multistrike]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1039,
+										}, -- [1039]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110640:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Mastery]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1040,
+										}, -- [1040]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110638:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Critical Strike]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1041,
+										}, -- [1041]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110655:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Cloak - Gift of Multistrike]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1042,
+										}, -- [1042]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110648:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Gift of Multistrike]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1043,
+										}, -- [1043]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:74723:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Windsong]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1044,
+										}, -- [1044]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:112115:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Mark of Shadowmoon]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1045,
+										}, -- [1045]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110639:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Haste]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1046,
+										}, -- [1046]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:74725:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Elemental Force]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1047,
+										}, -- [1047]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110647:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Gift of Mastery]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1048,
+										}, -- [1048]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110652:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Cloak - Gift of Critical Strike]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1049,
+										}, -- [1049]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110642:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Versatility]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1050,
+										}, -- [1050]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:112093:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Mark of the Shattered Hand]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1051,
+										}, -- [1051]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110641:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Multistrike]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1052,
+										}, -- [1052]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:112115:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Mark of Shadowmoon]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1053,
+										}, -- [1053]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110640:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Mastery]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1054,
+										}, -- [1054]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110645:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Gift of Critical Strike]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1055,
+										}, -- [1055]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110638:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Critical Strike]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1056,
+										}, -- [1056]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110648:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Gift of Multistrike]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1057,
+										}, -- [1057]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110682:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Mark of the Thunderlord]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1058,
+										}, -- [1058]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110653:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Cloak - Gift of Haste]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1059,
+										}, -- [1059]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:74726:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Dancing Steel]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1060,
+										}, -- [1060]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:74708:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Chest - Glorious Stats]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1061,
+										}, -- [1061]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:74725:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Elemental Force]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1062,
+										}, -- [1062]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110647:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Gift of Mastery]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1063,
+										}, -- [1063]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110639:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Haste]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1064,
+										}, -- [1064]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:112164:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Mark of Warsong]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1065,
+										}, -- [1065]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:45060:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Staff - Spellpower]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1066,
+										}, -- [1066]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:74723:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Windsong]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1067,
+										}, -- [1067]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110653:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Cloak - Gift of Haste]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1068,
+										}, -- [1068]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:74708:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Chest - Glorious Stats]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1069,
+										}, -- [1069]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110654:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Cloak - Gift of Mastery]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1070,
+										}, -- [1070]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110642:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Versatility]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1071,
+										}, -- [1071]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110655:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Cloak - Gift of Multistrike]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1072,
+										}, -- [1072]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:38873:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Crusader]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1073,
+										}, -- [1073]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:38838:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Fiery Weapon]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1074,
+										}, -- [1074]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110645:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Gift of Critical Strike]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1075,
+										}, -- [1075]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:112115:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Mark of Shadowmoon]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1076,
+										}, -- [1076]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110640:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Ring - Gift of Mastery]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1077,
+										}, -- [1077]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:74725:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Elemental Force]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1078,
+										}, -- [1078]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110647:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Gift of Mastery]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1079,
+										}, -- [1079]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:112160:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Mark of Blackrock]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1080,
+										}, -- [1080]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:110648:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Neck - Gift of Multistrike]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1081,
+										}, -- [1081]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:74726:0:0:0:0:0:0:0:100:0:0:0|h[Enchant Weapon - Dancing Steel]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 1082,
+										}, -- [1082]
 									},
 									["status"] = -3,
 								}, -- [2]
 							},
-							["slot_count"] = 973,
+							["slot_count"] = 1082,
 						},
 						[6] = {
 							["slot_count"] = 18,
@@ -30224,7 +31336,7 @@ ARKINVDB = {
 								}, -- [1]
 								{
 									["type"] = 15,
-									["count"] = 412,
+									["count"] = 483,
 									["slot"] = {
 										{
 											["q"] = 2,
@@ -33522,11 +34634,579 @@ ARKINVDB = {
 											["bag_id"] = 2,
 											["slot_id"] = 412,
 										}, -- [412]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113263:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Earth]|h|r",
+											["count"] = 5,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 413,
+										}, -- [413]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113261:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Fire]|h|r",
+											["count"] = 53,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 414,
+										}, -- [414]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113262:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Water]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 415,
+										}, -- [415]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113261:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Fire]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 416,
+										}, -- [416]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113262:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Water]|h|r",
+											["count"] = 1,
+											["slot_id"] = 417,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [417]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113262:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Water]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 418,
+										}, -- [418]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113263:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Earth]|h|r",
+											["count"] = 12,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 419,
+										}, -- [419]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113261:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Fire]|h|r",
+											["count"] = 95,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 420,
+										}, -- [420]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:11083:0:0:0:0:0:0:0:100:0:0:0|h[Soul Dust]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 421,
+										}, -- [421]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:16203:0:0:0:0:0:0:0:100:0:0:0|h[Greater Eternal Essence]|h|r",
+											["count"] = 5,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 422,
+										}, -- [422]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:34055:0:0:0:0:0:0:0:100:0:0:0|h[Greater Cosmic Essence]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 423,
+										}, -- [423]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:11137:0:0:0:0:0:0:0:100:0:0:0|h[Vision Dust]|h|r",
+											["count"] = 3,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 424,
+										}, -- [424]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:34052:0:0:0:0:0:0:0:100:0:0:0|h[Dream Shard]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 425,
+										}, -- [425]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:10938:0:0:0:0:0:0:0:100:0:0:0|h[Lesser Magic Essence]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 426,
+										}, -- [426]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:16204:0:0:0:0:0:0:0:100:0:0:0|h[Illusion Dust]|h|r",
+											["count"] = 4,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 427,
+										}, -- [427]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:74249:0:0:0:0:0:0:0:100:0:0:0|h[Spirit Dust]|h|r",
+											["count"] = 3,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 428,
+										}, -- [428]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:11175:0:0:0:0:0:0:0:100:0:0:0|h[Greater Nether Essence]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 429,
+										}, -- [429]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:52555:0:0:0:0:0:0:0:100:0:0:0|h[Hypnotic Dust]|h|r",
+											["count"] = 4,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 430,
+										}, -- [430]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:11176:0:0:0:0:0:0:0:100:0:0:0|h[Dream Dust]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 431,
+										}, -- [431]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:52718:0:0:0:0:0:0:0:100:0:0:0|h[Lesser Celestial Essence]|h|r",
+											["count"] = 3,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 432,
+										}, -- [432]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:11134:0:0:0:0:0:0:0:100:0:0:0|h[Lesser Mystic Essence]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 433,
+										}, -- [433]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:34052:0:0:0:0:0:0:0:100:0:0:0|h[Dream Shard]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 434,
+										}, -- [434]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:34054:0:0:0:0:0:0:0:100:0:0:0|h[Infinite Dust]|h|r",
+											["count"] = 6,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 435,
+										}, -- [435]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:52555:0:0:0:0:0:0:0:100:0:0:0|h[Hypnotic Dust]|h|r",
+											["count"] = 3,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 436,
+										}, -- [436]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:22445:0:0:0:0:0:0:0:100:0:0:0|h[Arcane Dust]|h|r",
+											["count"] = 7,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 437,
+										}, -- [437]
+										{
+											["q"] = 4,
+											["h"] = "|cffa335ee|Hitem:74248:0:0:0:0:0:0:0:100:0:0:0|h[Sha Crystal]|h|r",
+											["count"] = 6,
+											["slot_id"] = 438,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [438]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:74249:0:0:0:0:0:0:0:100:0:0:0|h[Spirit Dust]|h|r",
+											["count"] = 12,
+											["slot_id"] = 439,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [439]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:38682:0:0:0:0:0:0:0:100:0:0:0|h[Enchanting Vellum]|h|r",
+											["count"] = 1,
+											["slot_id"] = 440,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [440]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113264:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Air]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 441,
+										}, -- [441]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:52555:0:0:0:0:0:0:0:100:0:0:0|h[Hypnotic Dust]|h|r",
+											["count"] = 13,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 442,
+										}, -- [442]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:38682:0:0:0:0:0:0:0:100:0:0:0|h[Enchanting Vellum]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 443,
+										}, -- [443]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113262:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Water]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 444,
+										}, -- [444]
+										{
+											["q"] = 4,
+											["h"] = "|cffa335ee|Hitem:74248:0:0:0:0:0:0:0:100:0:0:0|h[Sha Crystal]|h|r",
+											["count"] = 6,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 445,
+										}, -- [445]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:74249:0:0:0:0:0:0:0:100:0:0:0|h[Spirit Dust]|h|r",
+											["count"] = 12,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 446,
+										}, -- [446]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:52719:0:0:0:0:0:0:0:100:0:0:0|h[Greater Celestial Essence]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 447,
+										}, -- [447]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113264:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Air]|h|r",
+											["count"] = 1,
+											["slot_id"] = 448,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [448]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113263:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Earth]|h|r",
+											["count"] = 8,
+											["slot_id"] = 449,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [449]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:38682:0:0:0:0:0:0:0:100:0:0:0|h[Enchanting Vellum]|h|r",
+											["count"] = 2,
+											["slot_id"] = 450,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [450]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113261:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Fire]|h|r",
+											["count"] = 112,
+											["slot_id"] = 451,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [451]
+										{
+											["q"] = 4,
+											["h"] = "|cffa335ee|Hitem:74248:0:0:0:0:0:0:0:100:0:0:0|h[Sha Crystal]|h|r",
+											["count"] = 6,
+											["slot_id"] = 452,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [452]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:74249:0:0:0:0:0:0:0:100:0:0:0|h[Spirit Dust]|h|r",
+											["count"] = 24,
+											["slot_id"] = 453,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [453]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:16203:0:0:0:0:0:0:0:100:0:0:0|h[Greater Eternal Essence]|h|r",
+											["count"] = 2,
+											["slot_id"] = 454,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [454]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:11176:0:0:0:0:0:0:0:100:0:0:0|h[Dream Dust]|h|r",
+											["count"] = 4,
+											["slot_id"] = 455,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [455]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113261:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Fire]|h|r",
+											["count"] = 1,
+											["slot_id"] = 456,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [456]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:74249:0:0:0:0:0:0:0:100:0:0:0|h[Spirit Dust]|h|r",
+											["count"] = 1,
+											["slot_id"] = 457,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [457]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:11139:0:0:0:0:0:0:0:100:0:0:0|h[Large Glowing Shard]|h|r",
+											["count"] = 1,
+											["slot_id"] = 458,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [458]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:34054:0:0:0:0:0:0:0:100:0:0:0|h[Infinite Dust]|h|r",
+											["count"] = 3,
+											["slot_id"] = 459,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [459]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113264:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Air]|h|r",
+											["count"] = 1,
+											["slot_id"] = 460,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [460]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113263:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Earth]|h|r",
+											["count"] = 2,
+											["slot_id"] = 461,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [461]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113264:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Air]|h|r",
+											["count"] = 20,
+											["slot_id"] = 462,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [462]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113261:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Fire]|h|r",
+											["count"] = 77,
+											["slot_id"] = 463,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [463]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113263:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Earth]|h|r",
+											["count"] = 12,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 464,
+										}, -- [464]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113261:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Fire]|h|r",
+											["count"] = 91,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 465,
+										}, -- [465]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:22446:0:0:0:0:0:0:654421751:100:0:0:0|h[Greater Planar Essence]|h|r",
+											["count"] = 6,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 466,
+										}, -- [466]
+										{
+											["q"] = 4,
+											["h"] = "|cffa335ee|Hitem:22450:0:0:0:0:0:0:1099063680:100:0:0:0|h[Void Crystal]|h|r",
+											["count"] = 6,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 467,
+										}, -- [467]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:38682:0:0:0:0:0:0:0:100:0:0:0|h[Enchanting Vellum]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 468,
+										}, -- [468]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:22445:0:0:0:0:0:0:0:100:0:0:0|h[Arcane Dust]|h|r",
+											["count"] = 30,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 469,
+										}, -- [469]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:22449:0:0:0:0:0:0:0:100:0:0:0|h[Large Prismatic Shard]|h|r",
+											["count"] = 10,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 470,
+										}, -- [470]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:13465:0:0:0:0:0:0:1685119232:100:0:0:0|h[Mountain Silversage]|h|r",
+											["count"] = 15,
+											["slot_id"] = 471,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [471]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:22785:0:0:0:0:0:0:1915561728:100:0:0:0|h[Felweed]|h|r",
+											["count"] = 33,
+											["slot_id"] = 472,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [472]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113262:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Water]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 473,
+										}, -- [473]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113264:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Air]|h|r",
+											["count"] = 6,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 474,
+										}, -- [474]
+										{
+											["q"] = 4,
+											["h"] = "|cffa335ee|Hitem:74248:0:0:0:0:0:0:0:100:0:0:0|h[Sha Crystal]|h|r",
+											["count"] = 5,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 475,
+										}, -- [475]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:38682:0:0:0:0:0:0:0:100:0:0:0|h[Enchanting Vellum]|h|r",
+											["count"] = 8,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 476,
+										}, -- [476]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113262:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Water]|h|r",
+											["count"] = 6,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 477,
+										}, -- [477]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:74249:0:0:0:0:0:0:0:100:0:0:0|h[Spirit Dust]|h|r",
+											["count"] = 12,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 478,
+										}, -- [478]
+										{
+											["q"] = 3,
+											["h"] = "|cff0070dd|Hitem:52721:0:0:0:0:0:0:0:100:0:0:0|h[Heavenly Shard]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 479,
+										}, -- [479]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113261:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Fire]|h|r",
+											["count"] = 6,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 480,
+										}, -- [480]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113262:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Water]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 481,
+										}, -- [481]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113264:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Air]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 482,
+										}, -- [482]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113261:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Fire]|h|r",
+											["count"] = 73,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 483,
+										}, -- [483]
 									},
 									["status"] = -3,
 								}, -- [2]
 							},
-							["slot_count"] = 412,
+							["slot_count"] = 483,
 						},
 						[6] = {
 							["slot_count"] = 18,
@@ -34629,7 +36309,7 @@ ARKINVDB = {
 								}, -- [1]
 								{
 									["type"] = 15,
-									["count"] = 142,
+									["count"] = 231,
 									["slot"] = {
 										{
 											["q"] = 1,
@@ -35767,11 +37447,723 @@ ARKINVDB = {
 											["bag_id"] = 2,
 											["slot_id"] = 142,
 										}, -- [142]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109125:0:0:0:0:0:0:0:100:0:0:0|h[Fireweed]|h|r",
+											["count"] = 1,
+											["slot_id"] = 143,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [143]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:118472:0:0:0:0:0:0:0:100:0:0:0|h[Savage Blood]|h|r",
+											["count"] = 23,
+											["slot_id"] = 144,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [144]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109126:0:0:0:0:0:0:0:100:0:0:0|h[Gorgrond Flytrap]|h|r",
+											["count"] = 1,
+											["slot_id"] = 145,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [145]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109129:0:0:0:0:0:0:0:100:0:0:0|h[Talador Orchid]|h|r",
+											["count"] = 3,
+											["slot_id"] = 146,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [146]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109127:0:0:0:0:0:0:0:100:0:0:0|h[Starflower]|h|r",
+											["count"] = 1,
+											["slot_id"] = 147,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [147]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110609:0:0:0:0:0:0:0:100:0:0:0|h[Raw Beast Hide]|h|r",
+											["count"] = 44,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 148,
+										}, -- [148]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:118472:0:0:0:0:0:0:0:100:0:0:0|h[Savage Blood]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 149,
+										}, -- [149]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109118:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Ore]|h|r",
+											["count"] = 190,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 150,
+										}, -- [150]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109119:0:0:0:0:0:0:0:100:0:0:0|h[True Iron Ore]|h|r",
+											["count"] = 200,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 151,
+										}, -- [151]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109124:0:0:0:0:0:0:0:100:0:0:0|h[Frostweed]|h|r",
+											["count"] = 82,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 152,
+										}, -- [152]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109118:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Ore]|h|r",
+											["count"] = 7,
+											["slot_id"] = 153,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [153]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109126:0:0:0:0:0:0:0:100:0:0:0|h[Gorgrond Flytrap]|h|r",
+											["count"] = 16,
+											["slot_id"] = 154,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [154]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109125:0:0:0:0:0:0:0:100:0:0:0|h[Fireweed]|h|r",
+											["count"] = 8,
+											["slot_id"] = 155,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [155]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109119:0:0:0:0:0:0:0:100:0:0:0|h[True Iron Ore]|h|r",
+											["count"] = 7,
+											["slot_id"] = 156,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [156]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:111557:0:0:0:0:0:0:0:100:0:0:0|h[Sumptuous Fur]|h|r",
+											["count"] = 200,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 157,
+										}, -- [157]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109118:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Ore]|h|r",
+											["count"] = 190,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 158,
+										}, -- [158]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109118:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Ore]|h|r",
+											["count"] = 200,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 159,
+										}, -- [159]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109118:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Ore]|h|r",
+											["count"] = 200,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 160,
+										}, -- [160]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109118:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Ore]|h|r",
+											["count"] = 200,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 161,
+										}, -- [161]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109118:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Ore]|h|r",
+											["count"] = 200,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 162,
+										}, -- [162]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109124:0:0:0:0:0:0:0:100:0:0:0|h[Frostweed]|h|r",
+											["count"] = 168,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 163,
+										}, -- [163]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:118472:0:0:0:0:0:0:0:100:0:0:0|h[Savage Blood]|h|r",
+											["count"] = 1,
+											["slot_id"] = 164,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [164]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109126:0:0:0:0:0:0:0:100:0:0:0|h[Gorgrond Flytrap]|h|r",
+											["count"] = 20,
+											["slot_id"] = 165,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [165]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109129:0:0:0:0:0:0:0:100:0:0:0|h[Talador Orchid]|h|r",
+											["count"] = 31,
+											["slot_id"] = 166,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [166]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109125:0:0:0:0:0:0:0:100:0:0:0|h[Fireweed]|h|r",
+											["count"] = 14,
+											["slot_id"] = 167,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [167]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109118:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Ore]|h|r",
+											["count"] = 103,
+											["slot_id"] = 168,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [168]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109128:0:0:0:0:0:0:0:100:0:0:0|h[Nagrand Arrowbloom]|h|r",
+											["count"] = 15,
+											["slot_id"] = 169,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [169]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:111557:0:0:0:0:0:0:0:100:0:0:0|h[Sumptuous Fur]|h|r",
+											["count"] = 150,
+											["slot_id"] = 170,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [170]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109124:0:0:0:0:0:0:0:100:0:0:0|h[Frostweed]|h|r",
+											["count"] = 7,
+											["slot_id"] = 171,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [171]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110609:0:0:0:0:0:0:0:100:0:0:0|h[Raw Beast Hide]|h|r",
+											["count"] = 88,
+											["slot_id"] = 172,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [172]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109119:0:0:0:0:0:0:0:100:0:0:0|h[True Iron Ore]|h|r",
+											["count"] = 77,
+											["slot_id"] = 173,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [173]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109127:0:0:0:0:0:0:0:100:0:0:0|h[Starflower]|h|r",
+											["count"] = 19,
+											["slot_id"] = 174,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [174]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109128:0:0:0:0:0:0:0:100:0:0:0|h[Nagrand Arrowbloom]|h|r",
+											["count"] = 19,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 175,
+										}, -- [175]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109119:0:0:0:0:0:0:0:100:0:0:0|h[True Iron Ore]|h|r",
+											["count"] = 32,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 176,
+										}, -- [176]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109125:0:0:0:0:0:0:0:100:0:0:0|h[Fireweed]|h|r",
+											["count"] = 17,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 177,
+										}, -- [177]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109127:0:0:0:0:0:0:0:100:0:0:0|h[Starflower]|h|r",
+											["count"] = 7,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 178,
+										}, -- [178]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109129:0:0:0:0:0:0:0:100:0:0:0|h[Talador Orchid]|h|r",
+											["count"] = 35,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 179,
+										}, -- [179]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109126:0:0:0:0:0:0:0:100:0:0:0|h[Gorgrond Flytrap]|h|r",
+											["count"] = 30,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 180,
+										}, -- [180]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109124:0:0:0:0:0:0:0:100:0:0:0|h[Frostweed]|h|r",
+											["count"] = 5,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 181,
+										}, -- [181]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110609:0:0:0:0:0:0:0:100:0:0:0|h[Raw Beast Hide]|h|r",
+											["count"] = 17,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 182,
+										}, -- [182]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109124:0:0:0:0:0:0:0:100:0:0:0|h[Frostweed]|h|r",
+											["count"] = 7,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 183,
+										}, -- [183]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109118:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Ore]|h|r",
+											["count"] = 20,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 184,
+										}, -- [184]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109118:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Ore]|h|r",
+											["count"] = 11,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 185,
+										}, -- [185]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:111557:0:0:0:0:0:0:0:100:0:0:0|h[Sumptuous Fur]|h|r",
+											["count"] = 1,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 186,
+										}, -- [186]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110609:0:0:0:0:0:0:0:100:0:0:0|h[Raw Beast Hide]|h|r",
+											["count"] = 88,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 187,
+										}, -- [187]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:118472:0:0:0:0:0:0:0:100:0:0:0|h[Savage Blood]|h|r",
+											["count"] = 4,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 188,
+										}, -- [188]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110609:0:0:0:0:0:0:0:100:0:0:0|h[Raw Beast Hide]|h|r",
+											["count"] = 44,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 189,
+										}, -- [189]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:118472:0:0:0:0:0:0:0:100:0:0:0|h[Savage Blood]|h|r",
+											["count"] = 2,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 190,
+										}, -- [190]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109119:0:0:0:0:0:0:0:100:0:0:0|h[True Iron Ore]|h|r",
+											["count"] = 61,
+											["slot_id"] = 191,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [191]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109118:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Ore]|h|r",
+											["count"] = 29,
+											["slot_id"] = 192,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [192]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109125:0:0:0:0:0:0:0:100:0:0:0|h[Fireweed]|h|r",
+											["count"] = 33,
+											["slot_id"] = 193,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [193]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109127:0:0:0:0:0:0:0:100:0:0:0|h[Starflower]|h|r",
+											["count"] = 8,
+											["slot_id"] = 194,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [194]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109124:0:0:0:0:0:0:0:100:0:0:0|h[Frostweed]|h|r",
+											["count"] = 21,
+											["slot_id"] = 195,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [195]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109126:0:0:0:0:0:0:0:100:0:0:0|h[Gorgrond Flytrap]|h|r",
+											["count"] = 26,
+											["slot_id"] = 196,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [196]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109129:0:0:0:0:0:0:0:100:0:0:0|h[Talador Orchid]|h|r",
+											["count"] = 31,
+											["slot_id"] = 197,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [197]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109128:0:0:0:0:0:0:0:100:0:0:0|h[Nagrand Arrowbloom]|h|r",
+											["count"] = 8,
+											["slot_id"] = 198,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [198]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109129:0:0:0:0:0:0:0:100:0:0:0|h[Talador Orchid]|h|r",
+											["count"] = 186,
+											["slot_id"] = 199,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [199]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109126:0:0:0:0:0:0:0:100:0:0:0|h[Gorgrond Flytrap]|h|r",
+											["count"] = 39,
+											["slot_id"] = 200,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [200]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:118472:0:0:0:0:0:0:0:100:0:0:0|h[Savage Blood]|h|r",
+											["count"] = 4,
+											["slot_id"] = 201,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [201]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109126:0:0:0:0:0:0:0:100:0:0:0|h[Gorgrond Flytrap]|h|r",
+											["count"] = 1,
+											["slot_id"] = 202,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [202]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109129:0:0:0:0:0:0:0:100:0:0:0|h[Talador Orchid]|h|r",
+											["count"] = 2,
+											["slot_id"] = 203,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [203]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109128:0:0:0:0:0:0:0:100:0:0:0|h[Nagrand Arrowbloom]|h|r",
+											["count"] = 3,
+											["slot_id"] = 204,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [204]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110609:0:0:0:0:0:0:0:100:0:0:0|h[Raw Beast Hide]|h|r",
+											["count"] = 110,
+											["slot_id"] = 205,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [205]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109124:0:0:0:0:0:0:0:100:0:0:0|h[Frostweed]|h|r",
+											["count"] = 24,
+											["slot_id"] = 206,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [206]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109118:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Ore]|h|r",
+											["count"] = 85,
+											["slot_id"] = 207,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [207]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109119:0:0:0:0:0:0:0:100:0:0:0|h[True Iron Ore]|h|r",
+											["count"] = 41,
+											["slot_id"] = 208,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [208]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109127:0:0:0:0:0:0:0:100:0:0:0|h[Starflower]|h|r",
+											["count"] = 1,
+											["slot_id"] = 209,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [209]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110609:0:0:0:0:0:0:0:100:0:0:0|h[Raw Beast Hide]|h|r",
+											["count"] = 132,
+											["slot_id"] = 210,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [210]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:118472:0:0:0:0:0:0:0:100:0:0:0|h[Savage Blood]|h|r",
+											["count"] = 78,
+											["slot_id"] = 211,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [211]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109119:0:0:0:0:0:0:0:100:0:0:0|h[True Iron Ore]|h|r",
+											["count"] = 97,
+											["slot_id"] = 212,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [212]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109119:0:0:0:0:0:0:0:100:0:0:0|h[True Iron Ore]|h|r",
+											["count"] = 200,
+											["slot_id"] = 213,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [213]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109118:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Ore]|h|r",
+											["count"] = 69,
+											["slot_id"] = 214,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [214]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109125:0:0:0:0:0:0:0:100:0:0:0|h[Fireweed]|h|r",
+											["count"] = 8,
+											["slot_id"] = 215,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [215]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110609:0:0:0:0:0:0:0:100:0:0:0|h[Raw Beast Hide]|h|r",
+											["count"] = 22,
+											["slot_id"] = 216,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [216]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109124:0:0:0:0:0:0:0:100:0:0:0|h[Frostweed]|h|r",
+											["count"] = 72,
+											["slot_id"] = 217,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [217]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109124:0:0:0:0:0:0:0:100:0:0:0|h[Frostweed]|h|r",
+											["count"] = 200,
+											["slot_id"] = 218,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [218]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109127:0:0:0:0:0:0:0:100:0:0:0|h[Starflower]|h|r",
+											["count"] = 8,
+											["slot_id"] = 219,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [219]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109129:0:0:0:0:0:0:0:100:0:0:0|h[Talador Orchid]|h|r",
+											["count"] = 8,
+											["slot_id"] = 220,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [220]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109126:0:0:0:0:0:0:0:100:0:0:0|h[Gorgrond Flytrap]|h|r",
+											["count"] = 8,
+											["slot_id"] = 221,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [221]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110609:0:0:0:0:0:0:0:100:0:0:0|h[Raw Beast Hide]|h|r",
+											["count"] = 20,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 222,
+										}, -- [222]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:110609:0:0:0:0:0:0:0:100:0:0:0|h[Raw Beast Hide]|h|r",
+											["count"] = 200,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 223,
+										}, -- [223]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:118472:0:0:0:0:0:0:0:100:0:0:0|h[Savage Blood]|h|r",
+											["count"] = 4,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 224,
+										}, -- [224]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109128:0:0:0:0:0:0:0:100:0:0:0|h[Nagrand Arrowbloom]|h|r",
+											["count"] = 3,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 225,
+										}, -- [225]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109119:0:0:0:0:0:0:0:100:0:0:0|h[True Iron Ore]|h|r",
+											["count"] = 83,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 226,
+										}, -- [226]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109124:0:0:0:0:0:0:0:100:0:0:0|h[Frostweed]|h|r",
+											["count"] = 62,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 227,
+										}, -- [227]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109126:0:0:0:0:0:0:0:100:0:0:0|h[Gorgrond Flytrap]|h|r",
+											["count"] = 8,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 228,
+										}, -- [228]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109129:0:0:0:0:0:0:0:100:0:0:0|h[Talador Orchid]|h|r",
+											["count"] = 8,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 229,
+										}, -- [229]
+										{
+											["q"] = 1,
+											["h"] = "|cffffffff|Hitem:109125:0:0:0:0:0:0:0:100:0:0:0|h[Fireweed]|h|r",
+											["count"] = 24,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 230,
+										}, -- [230]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:118472:0:0:0:0:0:0:0:100:0:0:0|h[Savage Blood]|h|r",
+											["count"] = 42,
+											["slot_id"] = 231,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [231]
 									},
 									["status"] = -3,
 								}, -- [2]
 							},
-							["slot_count"] = 142,
+							["slot_count"] = 231,
 						},
 						[6] = {
 							["slot_count"] = 18,
@@ -39288,7 +41680,7 @@ ARKINVDB = {
 				},
 				["+Council of Dragons - Sisters of Elune"] = {
 					["info"] = {
-						["money"] = 137778126,
+						["money"] = 107997616,
 						["class"] = "GUILD",
 						["player_id"] = "+Council of Dragons - Sisters of Elune",
 						["faction_local"] = "Alliance",
@@ -43954,10 +46346,10 @@ ARKINVDB = {
 				["Bracnar - Sisters of Elune"] = {
 					["info"] = {
 						["faction_local"] = "Alliance",
-						["money"] = 584156575,
+						["money"] = 842247503,
 						["class"] = "HUNTER",
-						["player_id"] = "Bracnar - Sisters of Elune",
 						["class_local"] = "Hunter",
+						["gender"] = 2,
 						["level"] = 100,
 						["race"] = "Dwarf",
 						["name"] = "Bracnar",
@@ -43971,7 +46363,7 @@ ARKINVDB = {
 							185, -- [5]
 							129, -- [6]
 						},
-						["gender"] = 2,
+						["player_id"] = "Bracnar - Sisters of Elune",
 						["realm"] = "Sisters of Elune",
 					},
 					["location"] = {
@@ -43986,21 +46378,18 @@ ARKINVDB = {
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["slot_id"] = 1,
+											["count"] = 1,
 											["class"] = "empty",
 											["bag_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 1,
 										}, -- [1]
 										{
-											["q"] = 2,
-											["class"] = "item",
-											["bag_id"] = 1,
+											["q"] = 0,
 											["loc_id"] = 1,
 											["slot_id"] = 2,
-											["sb"] = 1,
-											["count"] = 4,
-											["h"] = "|cff1eff00|Hitem:114128:0:0:0:0:0:0:0:100:0:0:0|h[Balanced Weapon Enhancement]|h|r",
-											["age"] = 23798913,
+											["class"] = "item",
+											["bag_id"] = 1,
+											["count"] = 1,
 										}, -- [2]
 										{
 											["q"] = 0,
@@ -44013,18 +46402,18 @@ ARKINVDB = {
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 4,
 											["class"] = "item",
 											["bag_id"] = 1,
-											["slot_id"] = 4,
+											["count"] = 1,
 										}, -- [4]
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 5,
 											["class"] = "item",
 											["bag_id"] = 1,
-											["slot_id"] = 5,
+											["count"] = 1,
 										}, -- [5]
 										{
 											["q"] = 0,
@@ -44035,15 +46424,12 @@ ARKINVDB = {
 											["slot_id"] = 6,
 										}, -- [6]
 										{
-											["q"] = 3,
-											["class"] = "item",
-											["bag_id"] = 1,
+											["q"] = 0,
 											["loc_id"] = 1,
 											["slot_id"] = 7,
-											["sb"] = 1,
-											["count"] = 17,
-											["h"] = "|cff0070dd|Hitem:114808:0:0:0:0:0:0:0:100:0:0:0|h[Fortified Armor Enhancement]|h|r",
-											["age"] = 23798915,
+											["class"] = "item",
+											["bag_id"] = 1,
+											["count"] = 1,
 										}, -- [7]
 										{
 											["q"] = 0,
@@ -44056,10 +46442,10 @@ ARKINVDB = {
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 9,
 											["class"] = "item",
 											["bag_id"] = 1,
-											["slot_id"] = 9,
+											["count"] = 1,
 										}, -- [9]
 										{
 											["q"] = 0,
@@ -44080,10 +46466,10 @@ ARKINVDB = {
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["slot_id"] = 12,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 12,
 										}, -- [12]
 										{
 											["q"] = 0,
@@ -44096,30 +46482,30 @@ ARKINVDB = {
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["slot_id"] = 14,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 14,
 										}, -- [14]
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["slot_id"] = 15,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 15,
 										}, -- [15]
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["slot_id"] = 16,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 16,
 										}, -- [16]
 									},
 									["status"] = -3,
-									["empty"] = 14,
+									["empty"] = 16,
 									["texture"] = "Interface\\Icons\\INV_Misc_Bag_07_Green",
 								}, -- [1]
 								{
@@ -44128,147 +46514,141 @@ ARKINVDB = {
 									["count"] = 30,
 									["slot"] = {
 										{
-											["q"] = 3,
-											["class"] = "empty",
-											["bag_id"] = 2,
-											["h"] = "|cff0070dd|Hitem:114806:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Armor Set]|h|r",
-											["slot_id"] = 1,
-											["sb"] = 1,
-											["age"] = 23797680,
+											["q"] = 0,
 											["loc_id"] = 1,
 											["count"] = 1,
+											["class"] = "empty",
+											["bag_id"] = 2,
+											["slot_id"] = 1,
 										}, -- [1]
 										{
 											["q"] = 4,
-											["class"] = "empty",
-											["bag_id"] = 2,
-											["h"] = "|cffa335ee|Hitem:114746:0:0:0:0:0:0:0:100:0:0:0|h[Goredrenched Armor Set]|h|r",
-											["count"] = 3,
-											["sb"] = 1,
-											["age"] = 23798913,
-											["loc_id"] = 1,
+											["class"] = "item",
+											["age"] = 23816561,
+											["h"] = "|cffa335ee|Hitem:32757:0:0:0:0:0:0:250630000:100:0:0:0|h[Blessed Medallion of Karabor]|h|r",
 											["slot_id"] = 2,
+											["sb"] = 1,
+											["bag_id"] = 2,
+											["loc_id"] = 1,
+											["count"] = 1,
 										}, -- [2]
 										{
-											["q"] = 2,
+											["q"] = 1,
 											["class"] = "item",
 											["bag_id"] = 2,
-											["h"] = "|cff1eff00|Hitem:120945:0:0:0:0:0:0:0:100:0:0:0|h[Primal Spirit]|h|r",
-											["slot_id"] = 3,
-											["sb"] = 1,
-											["count"] = 33,
+											["h"] = "|cffffffff|Hitem:110492:0:0:0:0:0:0:0:100:0:11:0|h[Flamewrought Jewel]|h|r",
+											["count"] = 1,
 											["loc_id"] = 1,
-											["age"] = 23798833,
+											["slot_id"] = 3,
+											["age"] = 23808965,
 										}, -- [3]
 										{
-											["q"] = 2,
+											["q"] = 1,
 											["class"] = "item",
 											["bag_id"] = 2,
+											["h"] = "|cffffffff|Hitem:113578:0:0:0:0:0:0:0:100:0:0:0|h[Hearty Soup Bone]|h|r",
+											["count"] = 4,
+											["sb"] = 1,
+											["age"] = 23816561,
 											["loc_id"] = 1,
 											["slot_id"] = 4,
-											["sb"] = 1,
-											["age"] = 23798913,
-											["h"] = "|cff1eff00|Hitem:114745:0:0:0:0:0:0:0:100:0:0:0|h[Braced Armor Enhancement]|h|r",
-											["count"] = 18,
 										}, -- [4]
 										{
-											["q"] = 2,
+											["q"] = 1,
 											["class"] = "item",
 											["bag_id"] = 2,
 											["loc_id"] = 1,
-											["count"] = 20,
-											["sb"] = 1,
-											["age"] = 23798911,
-											["h"] = "|cff1eff00|Hitem:114745:0:0:0:0:0:0:0:100:0:0:0|h[Braced Armor Enhancement]|h|r",
 											["slot_id"] = 5,
+											["h"] = "|cffffffff|Hitem:112332:0:0:0:0:0:0:0:100:0:11:0|h[Gathered Pebbles]|h|r",
+											["count"] = 1,
+											["age"] = 23808965,
 										}, -- [5]
 										{
-											["q"] = 3,
+											["q"] = 1,
 											["class"] = "item",
+											["age"] = 23816561,
+											["h"] = "|cffffffff|Hitem:21100:0:0:0:0:0:0:0:100:0:0:0|h[Coin of Ancestry]|h|r",
+											["count"] = 10,
+											["sb"] = 1,
 											["bag_id"] = 2,
 											["loc_id"] = 1,
 											["slot_id"] = 6,
-											["sb"] = 1,
-											["count"] = 1,
-											["h"] = "|cff0070dd|Hitem:116916:0:0:0:0:0:0:0:100:0:0:0|h[Gorepetal's Gentle Grasp]|h|r",
-											["age"] = 23793267,
 										}, -- [6]
 										{
-											["q"] = 2,
+											["q"] = 4,
 											["class"] = "item",
 											["bag_id"] = 2,
 											["loc_id"] = 1,
 											["slot_id"] = 7,
 											["sb"] = 1,
-											["age"] = 23798911,
-											["h"] = "|cff1eff00|Hitem:114745:0:0:0:0:0:0:0:100:0:0:0|h[Braced Armor Enhancement]|h|r",
-											["count"] = 20,
+											["age"] = 23816561,
+											["h"] = "|cffa335ee|Hitem:118663:0:0:0:0:0:0:0:100:0:14:0|h[Relic of Karabor]|h|r",
+											["count"] = 1,
 										}, -- [7]
 										{
-											["q"] = 2,
+											["q"] = 3,
 											["class"] = "item",
 											["bag_id"] = 2,
-											["h"] = "|cff1eff00|Hitem:114128:0:0:0:0:0:0:0:100:0:0:0|h[Balanced Weapon Enhancement]|h|r",
-											["count"] = 20,
-											["sb"] = 1,
-											["age"] = 23798911,
-											["loc_id"] = 1,
+											["h"] = "|cff0070dd|Hitem:116113:0:0:0:0:0:0:0:100:0:0:0|h[Breath of Talador]|h|r",
 											["slot_id"] = 8,
+											["sb"] = 1,
+											["age"] = 23816561,
+											["loc_id"] = 1,
+											["count"] = 1,
 										}, -- [8]
+										{
+											["q"] = 3,
+											["class"] = "item",
+											["bag_id"] = 2,
+											["h"] = "|cff0070dd|Hitem:113543:0:0:0:0:0:0:0:100:0:0:0|h[Spirit of Shinri]|h|r",
+											["slot_id"] = 9,
+											["sb"] = 1,
+											["age"] = 23816561,
+											["loc_id"] = 1,
+											["count"] = 1,
+										}, -- [9]
+										{
+											["q"] = 3,
+											["class"] = "item",
+											["age"] = 23816561,
+											["loc_id"] = 1,
+											["count"] = 1,
+											["sb"] = 1,
+											["bag_id"] = 2,
+											["h"] = "|cff0070dd|Hitem:113542:0:0:0:0:0:0:0:100:0:0:0|h[Whispers of Rai'Vosh]|h|r",
+											["slot_id"] = 10,
+										}, -- [10]
+										{
+											["q"] = 3,
+											["class"] = "item",
+											["age"] = 23816561,
+											["loc_id"] = 1,
+											["count"] = 1,
+											["sb"] = 1,
+											["bag_id"] = 2,
+											["h"] = "|cff0070dd|Hitem:113540:0:0:0:0:0:0:0:100:0:0:0|h[Ba'ruun's Bountiful Bloom]|h|r",
+											["slot_id"] = 11,
+										}, -- [11]
 										{
 											["q"] = 1,
 											["class"] = "item",
 											["bag_id"] = 2,
-											["h"] = "|cffffffff|Hitem:116053:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Seeds]|h|r",
-											["slot_id"] = 9,
-											["sb"] = 1,
-											["count"] = 1,
-											["loc_id"] = 1,
-											["age"] = 23798833,
-										}, -- [9]
-										{
-											["q"] = 2,
-											["class"] = "item",
-											["bag_id"] = 2,
-											["h"] = "|cff1eff00|Hitem:114745:0:0:0:0:0:0:0:100:0:0:0|h[Braced Armor Enhancement]|h|r",
-											["slot_id"] = 10,
-											["sb"] = 1,
-											["age"] = 23798912,
-											["loc_id"] = 1,
-											["count"] = 20,
-										}, -- [10]
-										{
-											["q"] = 2,
-											["class"] = "item",
-											["bag_id"] = 2,
-											["loc_id"] = 1,
-											["slot_id"] = 11,
-											["sb"] = 1,
-											["age"] = 23798912,
-											["h"] = "|cff1eff00|Hitem:114745:0:0:0:0:0:0:0:100:0:0:0|h[Braced Armor Enhancement]|h|r",
-											["count"] = 14,
-										}, -- [11]
-										{
-											["q"] = 2,
-											["class"] = "item",
-											["bag_id"] = 2,
-											["h"] = "|cff1eff00|Hitem:114128:0:0:0:0:0:0:0:100:0:0:0|h[Balanced Weapon Enhancement]|h|r",
-											["count"] = 16,
-											["sb"] = 1,
-											["age"] = 23798912,
 											["loc_id"] = 1,
 											["slot_id"] = 12,
+											["sb"] = 1,
+											["age"] = 23816562,
+											["h"] = "|cffffffff|Hitem:122590:0:0:0:0:0:0:0:100:0:0:0|h[Rush Order: Enchanter's Study]|h|r",
+											["count"] = 18,
 										}, -- [12]
 										{
-											["q"] = 2,
+											["q"] = 1,
 											["class"] = "item",
 											["bag_id"] = 2,
 											["loc_id"] = 1,
-											["count"] = 20,
-											["sb"] = 1,
 											["slot_id"] = 13,
-											["h"] = "|cff1eff00|Hitem:114745:0:0:0:0:0:0:0:100:0:0:0|h[Braced Armor Enhancement]|h|r",
-											["age"] = 23798911,
+											["h"] = "|cffffffff|Hitem:79249:0:0:0:0:0:0:0:100:0:0:0|h[Tome of the Clear Mind]|h|r",
+											["count"] = 81,
+											["age"] = 23808965,
 										}, -- [13]
 										{
 											["q"] = 0,
@@ -44279,152 +46659,164 @@ ARKINVDB = {
 											["slot_id"] = 14,
 										}, -- [14]
 										{
-											["q"] = 4,
+											["q"] = 1,
 											["class"] = "item",
 											["bag_id"] = 2,
 											["loc_id"] = 1,
 											["slot_id"] = 15,
-											["h"] = "|cffa335ee|Hitem:113588:0:0:0:0:0:0:0:100:0:0:0|h[Temporal Crystal]|h|r",
-											["count"] = 3,
-											["age"] = 23798914,
+											["sb"] = 1,
+											["age"] = 23816564,
+											["h"] = "|cffffffff|Hitem:113681:0:0:0:0:0:0:0:100:0:0:0|h[Iron Horde Scraps]|h|r",
+											["count"] = 722,
 										}, -- [15]
 										{
-											["q"] = 0,
+											["q"] = 3,
 											["class"] = "item",
 											["bag_id"] = 2,
-											["count"] = 1,
 											["loc_id"] = 1,
+											["count"] = 1,
+											["sb"] = 1,
+											["age"] = 23816561,
+											["h"] = "|cff0070dd|Hitem:119093:0:0:0:0:0:0:0:100:0:11:0|h[Aviana's Feather]|h|r",
 											["slot_id"] = 16,
 										}, -- [16]
 										{
-											["q"] = 0,
+											["q"] = 1,
 											["class"] = "item",
 											["bag_id"] = 2,
+											["h"] = "|cffffffff|Hitem:118099:0:0:0:0:0:0:0:100:0:0:0|h[Gorian Artifact Fragment]|h|r",
+											["count"] = 84,
+											["sb"] = 1,
+											["age"] = 23816561,
 											["loc_id"] = 1,
-											["count"] = 1,
 											["slot_id"] = 17,
 										}, -- [17]
 										{
 											["q"] = 1,
 											["class"] = "item",
 											["bag_id"] = 2,
-											["h"] = "|cffffffff|Hitem:115508:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Stone]|h|r",
-											["slot_id"] = 18,
-											["sb"] = 1,
-											["count"] = 47,
 											["loc_id"] = 1,
-											["age"] = 23798833,
+											["count"] = 1,
+											["sb"] = 1,
+											["age"] = 23816561,
+											["h"] = "|cffffffff|Hitem:115010:0:0:0:0:0:0:0:100:0:11:0|h[Deadly Iron Trap]|h|r",
+											["slot_id"] = 18,
 										}, -- [18]
 										{
-											["q"] = 0,
+											["q"] = 1,
+											["r"] = true,
 											["class"] = "item",
-											["age"] = 23798833,
-											["loc_id"] = 1,
+											["bag_id"] = 2,
+											["h"] = "|cffffffff|Hitem:8383:0:0:0:0:0:0:0:100:0:0:0|h[Plain Letter]|h|r",
 											["slot_id"] = 19,
-											["h"] = "|cff9d9d9d|Hitem:56046:0:0:0:0:0:0:0:100:0:0:0|h[Shattered Rock Fragments]|h|r",
+											["age"] = 23808965,
+											["loc_id"] = 1,
 											["count"] = 1,
-											["bag_id"] = 2,
 										}, -- [19]
-										{
-											["q"] = 0,
-											["class"] = "item",
-											["age"] = 23798833,
-											["loc_id"] = 1,
-											["count"] = 2,
-											["h"] = "|cff9d9d9d|Hitem:118902:0:0:0:0:0:0:0:100:0:0:0|h[Weathered Mining Journal]|h|r",
-											["slot_id"] = 20,
-											["bag_id"] = 2,
-										}, -- [20]
-										{
-											["q"] = 2,
-											["class"] = "item",
-											["bag_id"] = 2,
-											["h"] = "|cff1eff00|Hitem:118903:0:0:0:0:0:0:0:100:0:0:0|h[Preserved Mining Pick]|h|r",
-											["count"] = 2,
-											["sb"] = 1,
-											["slot_id"] = 21,
-											["loc_id"] = 1,
-											["age"] = 23798833,
-										}, -- [21]
-										{
-											["q"] = 0,
-											["class"] = "item",
-											["age"] = 23798833,
-											["loc_id"] = 1,
-											["count"] = 1,
-											["h"] = "|cff9d9d9d|Hitem:118898:0:0:0:0:0:0:0:100:0:0:0|h[Rusted Canary Cage]|h|r",
-											["slot_id"] = 22,
-											["bag_id"] = 2,
-										}, -- [22]
-										{
-											["q"] = 0,
-											["class"] = "item",
-											["bag_id"] = 2,
-											["loc_id"] = 1,
-											["slot_id"] = 23,
-											["count"] = 1,
-										}, -- [23]
-										{
-											["q"] = 0,
-											["class"] = "item",
-											["bag_id"] = 2,
-											["loc_id"] = 1,
-											["count"] = 1,
-											["slot_id"] = 24,
-										}, -- [24]
-										{
-											["q"] = 0,
-											["class"] = "item",
-											["bag_id"] = 2,
-											["loc_id"] = 1,
-											["count"] = 1,
-											["slot_id"] = 25,
-										}, -- [25]
-										{
-											["q"] = 0,
-											["class"] = "item",
-											["bag_id"] = 2,
-											["count"] = 1,
-											["loc_id"] = 1,
-											["slot_id"] = 26,
-										}, -- [26]
-										{
-											["q"] = 0,
-											["class"] = "item",
-											["bag_id"] = 2,
-											["count"] = 1,
-											["loc_id"] = 1,
-											["slot_id"] = 27,
-										}, -- [27]
-										{
-											["q"] = 0,
-											["class"] = "item",
-											["bag_id"] = 2,
-											["count"] = 1,
-											["loc_id"] = 1,
-											["slot_id"] = 28,
-										}, -- [28]
-										{
-											["q"] = 0,
-											["class"] = "item",
-											["bag_id"] = 2,
-											["slot_id"] = 29,
-											["loc_id"] = 1,
-											["count"] = 1,
-										}, -- [29]
 										{
 											["q"] = 1,
 											["class"] = "item",
 											["bag_id"] = 2,
 											["loc_id"] = 1,
+											["count"] = 16,
+											["h"] = "|cffffffff|Hitem:116271:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Water Breathing Elixir]|h|r",
+											["slot_id"] = 20,
+											["age"] = 23808965,
+										}, -- [20]
+										{
+											["q"] = 1,
+											["class"] = "item",
+											["bag_id"] = 2,
+											["h"] = "|cffffffff|Hitem:118711:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Water Walking Elixir]|h|r",
+											["slot_id"] = 21,
+											["loc_id"] = 1,
+											["count"] = 8,
+											["age"] = 23808965,
+										}, -- [21]
+										{
+											["q"] = 4,
+											["class"] = "item",
+											["bag_id"] = 2,
+											["h"] = "|cffa335ee|Hitem:44050:846:0:0:0:0:0:0:100:0:0:0|h[Mastercraft Kalu'ak Fishing Pole]|h|r",
+											["count"] = 1,
+											["sb"] = 1,
+											["age"] = 23816561,
+											["loc_id"] = 1,
+											["slot_id"] = 22,
+										}, -- [22]
+										{
+											["q"] = 3,
+											["class"] = "item",
+											["bag_id"] = 2,
+											["h"] = "|cff0070dd|Hitem:33820:0:0:0:0:0:0:-297314198:100:0:0:0|h[Weather-Beaten Fishing Hat]|h|r",
+											["count"] = 1,
+											["sb"] = 1,
+											["age"] = 23816561,
+											["loc_id"] = 1,
+											["slot_id"] = 23,
+										}, -- [23]
+										{
+											["q"] = 3,
+											["class"] = "item",
+											["age"] = 23816561,
+											["h"] = "|cff0070dd|Hitem:85500:0:0:0:0:0:0:0:100:0:14:0|h[Anglers Fishing Raft]|h|r",
+											["count"] = 1,
+											["sb"] = 1,
+											["bag_id"] = 2,
+											["loc_id"] = 1,
+											["slot_id"] = 24,
+										}, -- [24]
+										{
+											["q"] = 0,
+											["loc_id"] = 1,
+											["count"] = 1,
+											["class"] = "item",
+											["bag_id"] = 2,
+											["slot_id"] = 25,
+										}, -- [25]
+										{
+											["q"] = 0,
+											["loc_id"] = 1,
+											["slot_id"] = 26,
+											["class"] = "item",
+											["bag_id"] = 2,
+											["count"] = 1,
+										}, -- [26]
+										{
+											["q"] = 0,
+											["loc_id"] = 1,
+											["count"] = 1,
+											["class"] = "item",
+											["bag_id"] = 2,
+											["slot_id"] = 27,
+										}, -- [27]
+										{
+											["q"] = 0,
+											["loc_id"] = 1,
+											["slot_id"] = 28,
+											["class"] = "item",
+											["bag_id"] = 2,
+											["count"] = 1,
+										}, -- [28]
+										{
+											["q"] = 0,
+											["loc_id"] = 1,
+											["count"] = 1,
+											["class"] = "item",
+											["bag_id"] = 2,
+											["slot_id"] = 29,
+										}, -- [29]
+										{
+											["q"] = 0,
+											["loc_id"] = 1,
 											["slot_id"] = 30,
-											["h"] = "|cffffffff|Hitem:114016:0:0:0:0:0:0:0:100:0:0:0|h[Lavastone Jack]|h|r",
-											["count"] = 2,
-											["age"] = 23790225,
+											["class"] = "item",
+											["bag_id"] = 2,
+											["count"] = 1,
 										}, -- [30]
 									},
 									["status"] = -3,
-									["empty"] = 10,
+									["empty"] = 8,
 									["h"] = "|cffa335ee|Hitem:114821:0:0:0:0:0:0:0:100:0:0:0|h[Hexweave Bag]|h|r",
 									["texture"] = "Interface\\ICONS\\INV_tailoring_hexweavebag.blp",
 								}, -- [2]
@@ -44434,26 +46826,26 @@ ARKINVDB = {
 									["count"] = 30,
 									["slot"] = {
 										{
-											["q"] = 2,
+											["q"] = 4,
 											["class"] = "item",
-											["age"] = 23787352,
+											["age"] = 23816561,
 											["loc_id"] = 1,
 											["slot_id"] = 1,
 											["sb"] = 1,
-											["count"] = 1,
-											["h"] = "|cff1eff00|Hitem:52019:0:0:0:0:0:0:0:100:0:0:0|h[Precious' Ribbon]|h|r",
 											["bag_id"] = 3,
+											["h"] = "|cffa335ee|Hitem:103678:0:0:0:0:0:0:0:100:0:14:0|h[Time-Lost Artifact]|h|r",
+											["count"] = 1,
 										}, -- [1]
 										{
-											["q"] = 3,
+											["q"] = 2,
 											["class"] = "item",
 											["bag_id"] = 3,
 											["loc_id"] = 1,
 											["count"] = 1,
 											["sb"] = 1,
+											["age"] = 23816561,
+											["h"] = "|cff1eff00|Hitem:52019:0:0:0:0:0:0:0:100:0:0:0|h[Precious' Ribbon]|h|r",
 											["slot_id"] = 2,
-											["h"] = "|cff0070dd|Hitem:46874:0:0:0:0:0:0:0:100:0:0:0|h[Argent Crusader's Tabard]|h|r",
-											["age"] = 23787352,
 										}, -- [2]
 										{
 											["q"] = 3,
@@ -44462,306 +46854,250 @@ ARKINVDB = {
 											["loc_id"] = 1,
 											["slot_id"] = 3,
 											["sb"] = 1,
+											["age"] = 23816561,
+											["h"] = "|cff0070dd|Hitem:46874:0:0:0:0:0:0:0:100:0:0:0|h[Argent Crusader's Tabard]|h|r",
 											["count"] = 1,
-											["h"] = "|cff0070dd|Hitem:52723:0:0:0:0:0:0:1642057344:100:0:0:0|h[Runed Elementium Rod]|h|r",
-											["age"] = 23787352,
 										}, -- [3]
 										{
-											["q"] = 1,
+											["q"] = 4,
 											["class"] = "item",
 											["bag_id"] = 3,
-											["h"] = "|cffffffff|Hitem:119293:0:0:0:0:0:0:0:100:0:0:0|h[Secret of Draenor Enchanting]|h|r",
+											["h"] = "|cffa335ee|Hitem:113899:0:0:0:0:0:0:0:100:0:5:2:564:566|h[Neckbreaker Shoulderguards]|h|r",
 											["slot_id"] = 4,
 											["sb"] = 1,
-											["count"] = 31,
+											["age"] = 23816561,
 											["loc_id"] = 1,
-											["age"] = 23787352,
+											["count"] = 1,
 										}, -- [4]
 										{
-											["q"] = 1,
-											["class"] = "item",
-											["bag_id"] = 3,
-											["h"] = "|cffffffff|Hitem:118700:0:0:0:0:0:0:0:100:0:0:0|h[Secret of Draenor Alchemy]|h|r",
-											["slot_id"] = 5,
-											["sb"] = 1,
-											["count"] = 43,
+											["q"] = 0,
 											["loc_id"] = 1,
-											["age"] = 23787352,
+											["count"] = 1,
+											["class"] = "empty",
+											["bag_id"] = 3,
+											["slot_id"] = 5,
 										}, -- [5]
 										{
-											["q"] = 5,
+											["q"] = 3,
 											["class"] = "item",
-											["bag_id"] = 3,
-											["h"] = "|cffff8000|Hitem:115510:0:0:0:0:0:0:0:100:0:0:0|h[Elemental Rune]|h|r",
+											["age"] = 23816561,
+											["h"] = "|cff0070dd|Hitem:122583:0:0:0:0:0:0:0:100:0:0:0|h[Grease Monkey Guide]|h|r",
 											["slot_id"] = 6,
 											["sb"] = 1,
-											["count"] = 783,
+											["bag_id"] = 3,
 											["loc_id"] = 1,
-											["age"] = 23798833,
+											["count"] = 1,
 										}, -- [6]
 										{
-											["q"] = 4,
-											["class"] = "item",
-											["bag_id"] = 3,
+											["q"] = 0,
 											["loc_id"] = 1,
 											["slot_id"] = 7,
-											["sb"] = 1,
+											["class"] = "item",
+											["bag_id"] = 3,
 											["count"] = 1,
-											["h"] = "|cffa335ee|Hitem:32757:0:0:0:0:0:0:250630000:100:0:0:0|h[Blessed Medallion of Karabor]|h|r",
-											["age"] = 23793320,
 										}, -- [7]
 										{
-											["q"] = 1,
-											["class"] = "item",
-											["age"] = 23787352,
-											["h"] = "|cffffffff|Hitem:110492:0:0:0:0:0:0:0:100:0:11:0|h[Flamewrought Jewel]|h|r",
+											["q"] = 0,
+											["loc_id"] = 1,
 											["slot_id"] = 8,
-											["loc_id"] = 1,
-											["count"] = 1,
+											["class"] = "item",
 											["bag_id"] = 3,
+											["count"] = 1,
 										}, -- [8]
-										{
-											["q"] = 1,
-											["class"] = "item",
-											["age"] = 23787352,
-											["loc_id"] = 1,
-											["count"] = 4,
-											["sb"] = 1,
-											["slot_id"] = 9,
-											["h"] = "|cffffffff|Hitem:113578:0:0:0:0:0:0:0:100:0:0:0|h[Hearty Soup Bone]|h|r",
-											["bag_id"] = 3,
-										}, -- [9]
-										{
-											["q"] = 1,
-											["class"] = "item",
-											["age"] = 23787352,
-											["loc_id"] = 1,
-											["count"] = 1,
-											["h"] = "|cffffffff|Hitem:112332:0:0:0:0:0:0:0:100:0:11:0|h[Gathered Pebbles]|h|r",
-											["slot_id"] = 10,
-											["bag_id"] = 3,
-										}, -- [10]
-										{
-											["q"] = 1,
-											["class"] = "item",
-											["age"] = 23787352,
-											["h"] = "|cffffffff|Hitem:21100:0:0:0:0:0:0:0:100:0:0:0|h[Coin of Ancestry]|h|r",
-											["slot_id"] = 11,
-											["sb"] = 1,
-											["count"] = 10,
-											["loc_id"] = 1,
-											["bag_id"] = 3,
-										}, -- [11]
 										{
 											["q"] = 4,
 											["class"] = "item",
-											["age"] = 23787352,
+											["bag_id"] = 3,
+											["h"] = "|cffa335ee|Hitem:113982:0:0:0:0:0:0:0:100:0:5:1:566|h[Chestguard of the Siegemaker]|h|r",
+											["count"] = 1,
+											["sb"] = 1,
+											["age"] = 23816561,
+											["loc_id"] = 1,
+											["slot_id"] = 9,
+										}, -- [9]
+										{
+											["q"] = 0,
+											["loc_id"] = 1,
+											["slot_id"] = 10,
+											["class"] = "item",
+											["bag_id"] = 3,
+											["count"] = 1,
+										}, -- [10]
+										{
+											["q"] = 0,
+											["loc_id"] = 1,
+											["count"] = 1,
+											["class"] = "item",
+											["bag_id"] = 3,
+											["slot_id"] = 11,
+										}, -- [11]
+										{
+											["q"] = 3,
+											["class"] = "item",
+											["age"] = 23816561,
 											["loc_id"] = 1,
 											["slot_id"] = 12,
 											["sb"] = 1,
-											["count"] = 1,
-											["h"] = "|cffa335ee|Hitem:118663:0:0:0:0:0:0:0:100:0:14:0|h[Relic of Karabor]|h|r",
 											["bag_id"] = 3,
+											["h"] = "|cff0070dd|Hitem:52723:0:0:0:0:0:0:1642057344:100:0:0:0|h[Runed Elementium Rod]|h|r",
+											["count"] = 1,
 										}, -- [12]
 										{
-											["q"] = 3,
-											["class"] = "item",
-											["age"] = 23787352,
-											["h"] = "|cff0070dd|Hitem:116113:0:0:0:0:0:0:0:100:0:0:0|h[Breath of Talador]|h|r",
-											["slot_id"] = 13,
-											["sb"] = 1,
-											["count"] = 1,
+											["q"] = 0,
 											["loc_id"] = 1,
+											["slot_id"] = 13,
+											["class"] = "item",
 											["bag_id"] = 3,
+											["count"] = 1,
 										}, -- [13]
 										{
-											["q"] = 3,
-											["class"] = "item",
-											["age"] = 23787352,
+											["q"] = 0,
 											["loc_id"] = 1,
-											["count"] = 1,
-											["sb"] = 1,
 											["slot_id"] = 14,
-											["h"] = "|cff0070dd|Hitem:113543:0:0:0:0:0:0:0:100:0:0:0|h[Spirit of Shinri]|h|r",
+											["class"] = "item",
 											["bag_id"] = 3,
+											["count"] = 1,
 										}, -- [14]
 										{
-											["q"] = 3,
-											["class"] = "item",
-											["age"] = 23787352,
+											["q"] = 0,
 											["loc_id"] = 1,
-											["count"] = 1,
-											["sb"] = 1,
 											["slot_id"] = 15,
-											["h"] = "|cff0070dd|Hitem:113542:0:0:0:0:0:0:0:100:0:0:0|h[Whispers of Rai'Vosh]|h|r",
+											["class"] = "item",
 											["bag_id"] = 3,
+											["count"] = 1,
 										}, -- [15]
 										{
-											["q"] = 3,
-											["class"] = "item",
-											["age"] = 23787352,
-											["h"] = "|cff0070dd|Hitem:113540:0:0:0:0:0:0:0:100:0:0:0|h[Ba'ruun's Bountiful Bloom]|h|r",
-											["count"] = 1,
-											["sb"] = 1,
-											["slot_id"] = 16,
+											["q"] = 0,
 											["loc_id"] = 1,
+											["count"] = 1,
+											["class"] = "item",
 											["bag_id"] = 3,
+											["slot_id"] = 16,
 										}, -- [16]
 										{
-											["q"] = 1,
-											["class"] = "item",
-											["age"] = 23796068,
+											["q"] = 0,
 											["loc_id"] = 1,
 											["slot_id"] = 17,
-											["sb"] = 1,
-											["count"] = 8,
-											["h"] = "|cffffffff|Hitem:122590:0:0:0:0:0:0:0:100:0:0:0|h[Rush Order: Enchanter's Study]|h|r",
+											["class"] = "item",
 											["bag_id"] = 3,
+											["count"] = 1,
 										}, -- [17]
 										{
-											["q"] = 2,
-											["class"] = "item",
-											["age"] = 23798910,
-											["h"] = "|cff1eff00|Hitem:114120:0:0:0:0:0:0:0:100:0:0:0|h[Big Crate of Salvage]|h|r",
-											["slot_id"] = 18,
-											["sb"] = 1,
-											["count"] = 19,
+											["q"] = 0,
 											["loc_id"] = 1,
+											["count"] = 1,
+											["class"] = "item",
 											["bag_id"] = 3,
+											["slot_id"] = 18,
 										}, -- [18]
 										{
-											["q"] = 4,
-											["class"] = "item",
-											["age"] = 23787352,
-											["h"] = "|cffa335ee|Hitem:52026:0:0:0:0:0:0:0:100:0:0:0|h[Protector's Mark of Sanctification]|h|r",
-											["slot_id"] = 19,
-											["sb"] = 1,
-											["count"] = 1,
+											["q"] = 0,
 											["loc_id"] = 1,
+											["count"] = 1,
+											["class"] = "item",
 											["bag_id"] = 3,
+											["slot_id"] = 19,
 										}, -- [19]
 										{
-											["q"] = 1,
-											["class"] = "empty",
-											["age"] = 23798833,
-											["h"] = "|cffffffff|Hitem:113681:0:0:0:0:0:0:0:100:0:0:0|h[Iron Horde Scraps]|h|r",
-											["count"] = 749,
-											["sb"] = 1,
-											["slot_id"] = 20,
+											["q"] = 0,
 											["loc_id"] = 1,
-											["bag_id"] = 3,
-										}, -- [20]
-										{
-											["q"] = 4,
+											["slot_id"] = 20,
 											["class"] = "item",
 											["bag_id"] = 3,
+											["count"] = 1,
+										}, -- [20]
+										{
+											["q"] = 1,
+											["class"] = "item",
+											["age"] = 23816561,
 											["loc_id"] = 1,
-											["slot_id"] = 21,
+											["count"] = 31,
 											["sb"] = 1,
-											["age"] = 23797207,
-											["h"] = "|cffa335ee|Hitem:118655:0:0:0:0:0:0:0:100:0:0:0|h[Bergruu's Horn]|h|r",
-											["count"] = 2,
-											["ab"] = 1,
+											["bag_id"] = 3,
+											["h"] = "|cffffffff|Hitem:119293:0:0:0:0:0:0:0:100:0:0:0|h[Secret of Draenor Enchanting]|h|r",
+											["slot_id"] = 21,
 										}, -- [21]
 										{
 											["q"] = 1,
 											["class"] = "item",
-											["age"] = 23797207,
+											["age"] = 23816561,
 											["loc_id"] = 1,
-											["count"] = 73,
+											["count"] = 43,
 											["sb"] = 1,
-											["slot_id"] = 22,
-											["h"] = "|cffffffff|Hitem:118099:0:0:0:0:0:0:0:100:0:0:0|h[Gorian Artifact Fragment]|h|r",
 											["bag_id"] = 3,
+											["h"] = "|cffffffff|Hitem:118700:0:0:0:0:0:0:0:100:0:0:0|h[Secret of Draenor Alchemy]|h|r",
+											["slot_id"] = 22,
 										}, -- [22]
 										{
-											["q"] = 1,
+											["q"] = 0,
+											["loc_id"] = 1,
+											["slot_id"] = 23,
 											["class"] = "item",
 											["bag_id"] = 3,
-											["h"] = "|cffffffff|Hitem:115010:0:0:0:0:0:0:0:100:0:11:0|h[Deadly Iron Trap]|h|r",
-											["slot_id"] = 23,
-											["sb"] = 1,
 											["count"] = 1,
-											["loc_id"] = 1,
-											["age"] = 23787352,
 										}, -- [23]
 										{
 											["q"] = 1,
-											["r"] = true,
 											["class"] = "item",
-											["age"] = 23787352,
-											["loc_id"] = 1,
-											["count"] = 1,
+											["age"] = 23816561,
+											["h"] = "|cffffffff|Hitem:114116:0:0:0:0:0:0:0:100:0:0:0|h[Bag of Salvaged Goods]|h|r",
 											["slot_id"] = 24,
-											["h"] = "|cffffffff|Hitem:8383:0:0:0:0:0:0:0:100:0:0:0|h[Plain Letter]|h|r",
+											["sb"] = 1,
 											["bag_id"] = 3,
+											["loc_id"] = 1,
+											["count"] = 9,
 										}, -- [24]
 										{
-											["q"] = 1,
-											["class"] = "item",
-											["bag_id"] = 3,
+											["q"] = 0,
 											["loc_id"] = 1,
 											["slot_id"] = 25,
-											["h"] = "|cffffffff|Hitem:116271:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Water Breathing Elixir]|h|r",
-											["count"] = 16,
-											["age"] = 23787352,
+											["class"] = "item",
+											["bag_id"] = 3,
+											["count"] = 1,
 										}, -- [25]
 										{
-											["q"] = 1,
+											["q"] = 0,
+											["loc_id"] = 1,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 3,
-											["loc_id"] = 1,
 											["slot_id"] = 26,
-											["h"] = "|cffffffff|Hitem:118711:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Water Walking Elixir]|h|r",
-											["count"] = 8,
-											["age"] = 23787352,
 										}, -- [26]
 										{
-											["q"] = 4,
-											["class"] = "item",
-											["age"] = 23787352,
+											["q"] = 0,
 											["loc_id"] = 1,
 											["count"] = 1,
-											["sb"] = 1,
-											["slot_id"] = 27,
-											["h"] = "|cffa335ee|Hitem:44050:846:0:0:0:0:0:0:100:0:0:0|h[Mastercraft Kalu'ak Fishing Pole]|h|r",
+											["class"] = "item",
 											["bag_id"] = 3,
+											["slot_id"] = 27,
 										}, -- [27]
 										{
-											["q"] = 3,
-											["class"] = "item",
-											["age"] = 23787352,
-											["h"] = "|cff0070dd|Hitem:33820:0:0:0:0:0:0:-297314198:100:0:0:0|h[Weather-Beaten Fishing Hat]|h|r",
-											["count"] = 1,
-											["sb"] = 1,
-											["slot_id"] = 28,
+											["q"] = 0,
 											["loc_id"] = 1,
+											["slot_id"] = 28,
+											["class"] = "item",
 											["bag_id"] = 3,
+											["count"] = 1,
 										}, -- [28]
 										{
-											["q"] = 3,
-											["class"] = "item",
-											["age"] = 23787352,
-											["h"] = "|cff0070dd|Hitem:85500:0:0:0:0:0:0:0:100:0:14:0|h[Anglers Fishing Raft]|h|r",
-											["slot_id"] = 29,
-											["sb"] = 1,
-											["count"] = 1,
+											["q"] = 0,
 											["loc_id"] = 1,
+											["count"] = 1,
+											["class"] = "item",
 											["bag_id"] = 3,
+											["slot_id"] = 29,
 										}, -- [29]
 										{
-											["q"] = 1,
-											["class"] = "item",
-											["age"] = 23798910,
+											["q"] = 0,
 											["loc_id"] = 1,
-											["count"] = 4,
-											["sb"] = 1,
-											["slot_id"] = 30,
-											["h"] = "|cffffffff|Hitem:114116:0:0:0:0:0:0:0:100:0:0:0|h[Bag of Salvaged Goods]|h|r",
+											["count"] = 1,
+											["class"] = "item",
 											["bag_id"] = 3,
+											["slot_id"] = 30,
 										}, -- [30]
 									},
 									["status"] = -3,
+									["empty"] = 20,
 									["h"] = "|cffa335ee|Hitem:114821:0:0:0:0:0:0:0:100:0:0:0|h[Hexweave Bag]|h|r",
 									["texture"] = "Interface\\ICONS\\INV_tailoring_hexweavebag.blp",
 								}, -- [3]
@@ -44773,63 +47109,65 @@ ARKINVDB = {
 										{
 											["q"] = 1,
 											["class"] = "item",
-											["age"] = 23790225,
-											["h"] = "|cffffffff|Hitem:118006:0:0:0:0:0:0:0:100:0:0:0|h[Shieldtronic Shield]|h|r",
+											["age"] = 23808965,
+											["h"] = "|cffffffff|Hitem:116268:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Invisibility Potion]|h|r",
 											["slot_id"] = 1,
 											["loc_id"] = 1,
-											["count"] = 4,
+											["count"] = 8,
 											["bag_id"] = 4,
 										}, -- [1]
 										{
 											["q"] = 1,
 											["class"] = "item",
 											["bag_id"] = 4,
-											["h"] = "|cffffffff|Hitem:116276:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Living Action Potion]|h|r",
+											["h"] = "|cffffffff|Hitem:107640:0:0:0:0:0:0:0:100:0:0:0|h[Potion of Slow Fall]|h|r",
 											["slot_id"] = 2,
 											["loc_id"] = 1,
-											["count"] = 8,
-											["age"] = 23787352,
+											["count"] = 4,
+											["age"] = 23808965,
 										}, -- [2]
 										{
-											["q"] = 1,
+											["q"] = 3,
 											["class"] = "item",
-											["age"] = 23787352,
-											["loc_id"] = 1,
-											["count"] = 8,
-											["h"] = "|cffffffff|Hitem:116268:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Invisibility Potion]|h|r",
+											["bag_id"] = 4,
+											["h"] = "|cff0070dd|Hitem:118922:0:0:0:0:0:0:0:100:0:11:0|h[Oralius' Whispering Crystal]|h|r",
 											["slot_id"] = 3,
-											["bag_id"] = 4,
-										}, -- [3]
-										{
-											["q"] = 1,
-											["class"] = "item",
-											["bag_id"] = 4,
-											["h"] = "|cffffffff|Hitem:107640:0:0:0:0:0:0:0:100:0:0:0|h[Potion of Slow Fall]|h|r",
-											["count"] = 4,
+											["sb"] = 1,
+											["age"] = 23816561,
 											["loc_id"] = 1,
-											["slot_id"] = 4,
-											["age"] = 23787352,
-										}, -- [4]
+											["count"] = 1,
+										}, -- [3]
 										{
 											["q"] = 4,
 											["class"] = "item",
-											["age"] = 23787352,
+											["age"] = 23816561,
+											["loc_id"] = 1,
+											["slot_id"] = 4,
+											["sb"] = 1,
+											["bag_id"] = 4,
+											["h"] = "|cffa335ee|Hitem:64399:0:0:0:0:0:0:0:100:0:0:0|h[Battle Standard of Coordination]|h|r",
+											["count"] = 1,
+										}, -- [4]
+										{
+											["q"] = 4,
+											["class"] = "empty",
+											["bag_id"] = 4,
+											["h"] = "|cffa335ee|Hitem:114746:0:0:0:0:0:0:0:100:0:0:0|h[Goredrenched Armor Set]|h|r",
+											["count"] = 1,
+											["sb"] = 1,
+											["age"] = 23816561,
 											["loc_id"] = 1,
 											["slot_id"] = 5,
-											["sb"] = 1,
-											["count"] = 1,
-											["h"] = "|cffa335ee|Hitem:64399:0:0:0:0:0:0:0:100:0:0:0|h[Battle Standard of Coordination]|h|r",
-											["bag_id"] = 4,
 										}, -- [5]
 										{
-											["q"] = 1,
+											["q"] = 3,
 											["class"] = "item",
-											["age"] = 23797196,
-											["h"] = "|cffffffff|Hitem:109131:0:0:0:0:0:0:0:100:0:0:0|h[Raw Clefthoof Meat]|h|r",
-											["slot_id"] = 6,
-											["loc_id"] = 1,
-											["count"] = 2,
 											["bag_id"] = 4,
+											["h"] = "|cff0070dd|Hitem:118630:0:0:0:0:0:0:0:100:0:0:0|h[Hyper Augment Rune]|h|r",
+											["count"] = 20,
+											["loc_id"] = 1,
+											["slot_id"] = 6,
+											["age"] = 23808965,
 										}, -- [6]
 										{
 											["q"] = 3,
@@ -44858,237 +47196,238 @@ ARKINVDB = {
 											["loc_id"] = 1,
 											["slot_id"] = 9,
 											["h"] = "|cff0070dd|Hitem:118630:0:0:0:0:0:0:0:100:0:0:0|h[Hyper Augment Rune]|h|r",
-											["count"] = 20,
-											["age"] = 23798833,
+											["count"] = 12,
+											["age"] = 23816321,
 										}, -- [9]
 										{
-											["q"] = 3,
+											["q"] = 2,
 											["class"] = "item",
 											["bag_id"] = 4,
-											["h"] = "|cff0070dd|Hitem:114129:0:0:0:0:0:0:0:100:0:0:0|h[Striking Weapon Enhancement]|h|r",
-											["count"] = 7,
-											["sb"] = 1,
-											["slot_id"] = 10,
 											["loc_id"] = 1,
-											["age"] = 23798911,
+											["slot_id"] = 10,
+											["sb"] = 1,
+											["age"] = 23816561,
+											["h"] = "|cff1eff00|Hitem:114120:0:0:0:0:0:0:0:100:0:0:0|h[Big Crate of Salvage]|h|r",
+											["count"] = 20,
 										}, -- [10]
 										{
 											["q"] = 1,
 											["class"] = "item",
 											["bag_id"] = 4,
+											["h"] = "|cffffffff|Hitem:118628:0:0:0:0:0:0:0:100:0:2:0|h[Overgrown Artifact]|h|r",
+											["slot_id"] = 11,
 											["loc_id"] = 1,
 											["count"] = 1,
-											["h"] = "|cffffffff|Hitem:113274:0:0:0:0:0:0:0:100:0:0:0|h[Plume of Celerity]|h|r",
-											["slot_id"] = 11,
-											["age"] = 23787352,
+											["age"] = 23811868,
 										}, -- [11]
 										{
-											["q"] = 1,
-											["class"] = "item",
+											["q"] = 3,
+											["class"] = "empty",
 											["bag_id"] = 4,
-											["h"] = "|cffffffff|Hitem:113405:0:0:0:0:0:0:0:100:0:0:0|h[Gently Squeezed Toad]|h|r",
-											["slot_id"] = 12,
+											["h"] = "|cff0070dd|Hitem:114808:0:0:0:0:0:0:0:100:0:0:0|h[Fortified Armor Enhancement]|h|r",
+											["count"] = 1,
 											["sb"] = 1,
-											["count"] = 5,
+											["slot_id"] = 12,
 											["loc_id"] = 1,
-											["age"] = 23787352,
+											["age"] = 23816564,
 										}, -- [12]
 										{
-											["q"] = 3,
-											["class"] = "item",
-											["bag_id"] = 4,
-											["loc_id"] = 1,
-											["count"] = 1,
-											["sb"] = 1,
-											["slot_id"] = 13,
-											["h"] = "|cff0070dd|Hitem:119134:0:0:0:0:0:0:0:100:0:11:0|h[Sargerei Disguise]|h|r",
-											["age"] = 23787352,
-										}, -- [13]
-										{
 											["q"] = 1,
 											["class"] = "item",
 											["bag_id"] = 4,
-											["h"] = "|cffffffff|Hitem:109132:0:0:0:0:0:0:0:100:0:0:0|h[Raw Talbuk Meat]|h|r",
-											["count"] = 5,
 											["loc_id"] = 1,
-											["slot_id"] = 14,
-											["age"] = 23797198,
-										}, -- [14]
+											["count"] = 5,
+											["sb"] = 1,
+											["age"] = 23816561,
+											["h"] = "|cffffffff|Hitem:113405:0:0:0:0:0:0:0:100:0:0:0|h[Gently Squeezed Toad]|h|r",
+											["slot_id"] = 13,
+										}, -- [13]
 										{
 											["q"] = 3,
 											["class"] = "item",
-											["age"] = 23787352,
-											["loc_id"] = 1,
-											["slot_id"] = 15,
+											["age"] = 23808965,
+											["h"] = "|cff0070dd|Hitem:119134:0:0:0:0:0:0:0:100:0:11:0|h[Sargerei Disguise]|h|r",
+											["slot_id"] = 14,
 											["sb"] = 1,
-											["count"] = 1,
-											["h"] = "|cff0070dd|Hitem:117398:0:0:0:0:0:0:0:100:0:11:0|h[Everbloom Seed Pouch]|h|r",
 											["bag_id"] = 4,
-										}, -- [15]
+											["loc_id"] = 1,
+											["count"] = 1,
+										}, -- [14]
 										{
 											["q"] = 2,
 											["class"] = "item",
-											["age"] = 23787352,
+											["age"] = 23816561,
+											["loc_id"] = 1,
+											["slot_id"] = 15,
+											["sb"] = 1,
+											["bag_id"] = 4,
+											["h"] = "|cff1eff00|Hitem:114120:0:0:0:0:0:0:0:100:0:0:0|h[Big Crate of Salvage]|h|r",
+											["count"] = 20,
+										}, -- [15]
+										{
+											["q"] = 3,
+											["class"] = "item",
+											["age"] = 23816561,
 											["loc_id"] = 1,
 											["slot_id"] = 16,
 											["sb"] = 1,
-											["count"] = 2,
-											["h"] = "|cff1eff00|Hitem:115463:0:0:0:0:0:0:0:100:0:0:0|h[Elixir of Shadow Sight]|h|r",
 											["bag_id"] = 4,
+											["h"] = "|cff0070dd|Hitem:117398:0:0:0:0:0:0:0:100:0:11:0|h[Everbloom Seed Pouch]|h|r",
+											["count"] = 1,
 										}, -- [16]
+										{
+											["q"] = 2,
+											["class"] = "item",
+											["age"] = 23816561,
+											["loc_id"] = 1,
+											["count"] = 2,
+											["sb"] = 1,
+											["bag_id"] = 4,
+											["h"] = "|cff1eff00|Hitem:115463:0:0:0:0:0:0:0:100:0:0:0|h[Elixir of Shadow Sight]|h|r",
+											["slot_id"] = 17,
+										}, -- [17]
 										{
 											["q"] = 1,
 											["class"] = "item",
-											["age"] = 23787352,
-											["loc_id"] = 1,
-											["count"] = 16,
-											["sb"] = 1,
-											["slot_id"] = 17,
-											["h"] = "|cffffffff|Hitem:112499:0:0:0:0:0:0:0:100:0:0:0|h[Stinky Gloom Bombs]|h|r",
-											["bag_id"] = 4,
-										}, -- [17]
-										{
-											["q"] = 5,
-											["class"] = "item",
-											["age"] = 23787352,
+											["age"] = 23816561,
 											["loc_id"] = 1,
 											["slot_id"] = 18,
 											["sb"] = 1,
-											["count"] = 1,
-											["h"] = "|cffff8000|Hitem:34334:3608:0:0:0:0:0:660801552:100:0:0:0|h[Thori'dal, the Stars' Fury]|h|r",
 											["bag_id"] = 4,
+											["h"] = "|cffffffff|Hitem:112499:0:0:0:0:0:0:0:100:0:0:0|h[Stinky Gloom Bombs]|h|r",
+											["count"] = 16,
 										}, -- [18]
 										{
 											["q"] = 5,
 											["class"] = "item",
-											["age"] = 23787352,
+											["age"] = 23816561,
 											["loc_id"] = 1,
 											["count"] = 1,
 											["sb"] = 1,
-											["slot_id"] = 19,
-											["h"] = "|cffff8000|Hitem:19019:2673:0:0:0:0:0:610963968:100:0:0:0|h[Thunderfury, Blessed Blade of the Windseeker]|h|r",
 											["bag_id"] = 4,
+											["h"] = "|cffff8000|Hitem:34334:3608:0:0:0:0:0:660801552:100:0:0:0|h[Thori'dal, the Stars' Fury]|h|r",
+											["slot_id"] = 19,
 										}, -- [19]
 										{
-											["q"] = 4,
+											["q"] = 3,
 											["class"] = "item",
-											["age"] = 23787352,
+											["age"] = 23816561,
 											["loc_id"] = 1,
 											["count"] = 1,
 											["sb"] = 1,
-											["slot_id"] = 20,
-											["h"] = "|cffa335ee|Hitem:113899:0:0:0:0:0:0:0:100:0:3:2:563:41|h[Neckbreaker Shoulderguards]|h|r",
 											["bag_id"] = 4,
+											["h"] = "|cff0070dd|Hitem:116913:0:0:0:0:0:0:0:100:0:0:0|h[Peon's Mining Pick]|h|r",
+											["slot_id"] = 20,
 										}, -- [20]
+										{
+											["q"] = 5,
+											["class"] = "item",
+											["age"] = 23816561,
+											["loc_id"] = 1,
+											["count"] = 1,
+											["sb"] = 1,
+											["bag_id"] = 4,
+											["h"] = "|cffff8000|Hitem:19019:2673:0:0:0:0:0:610963968:100:0:0:0|h[Thunderfury, Blessed Blade of the Windseeker]|h|r",
+											["slot_id"] = 21,
+										}, -- [21]
 										{
 											["q"] = 2,
 											["class"] = "item",
-											["age"] = 23787352,
-											["loc_id"] = 1,
-											["count"] = 1,
+											["bag_id"] = 4,
+											["h"] = "|cff1eff00|Hitem:114120:0:0:0:0:0:0:0:100:0:0:0|h[Big Crate of Salvage]|h|r",
+											["count"] = 3,
 											["sb"] = 1,
-											["slot_id"] = 21,
-											["h"] = "|cff1eff00|Hitem:6263:41:0:0:0:0:0:500442290:100:0:0:0|h[Blue Overalls]|h|r",
-											["bag_id"] = 4,
-										}, -- [21]
-										{
-											["q"] = 4,
-											["class"] = "empty",
-											["bag_id"] = 4,
-											["h"] = "|cffa335ee|Hitem:114622:0:0:0:0:0:0:0:100:0:0:0|h[Goredrenched Weaponry]|h|r",
 											["slot_id"] = 22,
-											["sb"] = 1,
-											["age"] = 23798913,
 											["loc_id"] = 1,
-											["count"] = 4,
+											["age"] = 23816562,
 										}, -- [22]
 										{
-											["q"] = 4,
+											["q"] = 2,
 											["class"] = "item",
-											["age"] = 23787490,
+											["age"] = 23816561,
 											["loc_id"] = 1,
 											["slot_id"] = 23,
 											["sb"] = 1,
-											["count"] = 1,
-											["h"] = "|cffa335ee|Hitem:113954:0:0:0:0:0:0:0:100:0:5:1:566|h[Railwalker's Ratcheted Boots]|h|r",
 											["bag_id"] = 4,
+											["h"] = "|cff1eff00|Hitem:6263:41:0:0:0:0:0:500442290:100:0:0:0|h[Blue Overalls]|h|r",
+											["count"] = 1,
 										}, -- [23]
-										{
-											["q"] = 4,
-											["class"] = "item",
-											["age"] = 23796100,
-											["loc_id"] = 1,
-											["count"] = 1,
-											["sb"] = 1,
-											["slot_id"] = 24,
-											["h"] = "|cffa335ee|Hitem:65360:0:0:0:0:0:0:0:100:0:0:0|h[Cloak of Coordination]|h|r",
-											["bag_id"] = 4,
-										}, -- [24]
 										{
 											["q"] = 3,
 											["class"] = "item",
-											["age"] = 23793320,
+											["age"] = 23816561,
+											["loc_id"] = 1,
+											["count"] = 1,
+											["sb"] = 1,
+											["bag_id"] = 4,
+											["h"] = "|cff0070dd|Hitem:116916:0:0:0:0:0:0:0:100:0:0:0|h[Gorepetal's Gentle Grasp]|h|r",
+											["slot_id"] = 24,
+										}, -- [24]
+										{
+											["q"] = 4,
+											["class"] = "item",
+											["age"] = 23816561,
 											["loc_id"] = 1,
 											["slot_id"] = 25,
 											["sb"] = 1,
-											["count"] = 1,
-											["h"] = "|cff0070dd|Hitem:63206:0:0:0:0:0:0:0:100:0:0:0|h[Wrap of Unity]|h|r",
 											["bag_id"] = 4,
+											["h"] = "|cffa335ee|Hitem:113954:0:0:0:0:0:0:0:100:0:5:1:566|h[Railwalker's Ratcheted Boots]|h|r",
+											["count"] = 1,
 										}, -- [25]
 										{
-											["q"] = 2,
+											["q"] = 4,
 											["class"] = "item",
-											["age"] = 23787352,
+											["age"] = 23816561,
 											["loc_id"] = 1,
 											["slot_id"] = 26,
 											["sb"] = 1,
-											["count"] = 1,
-											["h"] = "|cff1eff00|Hitem:63352:0:0:0:0:0:0:0:100:0:0:0|h[Shroud of Cooperation]|h|r",
 											["bag_id"] = 4,
+											["h"] = "|cffa335ee|Hitem:65360:0:0:0:0:0:0:0:100:0:0:0|h[Cloak of Coordination]|h|r",
+											["count"] = 1,
 										}, -- [26]
-										{
-											["q"] = 4,
-											["class"] = "item",
-											["age"] = 23793287,
-											["loc_id"] = 1,
-											["count"] = 1,
-											["sb"] = 1,
-											["slot_id"] = 27,
-											["h"] = "|cffa335ee|Hitem:51560:0:0:0:0:0:0:0:100:0:0:0|h[Runed Band of the Kirin Tor]|h|r",
-											["bag_id"] = 4,
-										}, -- [27]
-										{
-											["q"] = 4,
-											["class"] = "item",
-											["age"] = 23787352,
-											["loc_id"] = 1,
-											["count"] = 1,
-											["sb"] = 1,
-											["slot_id"] = 28,
-											["h"] = "|cffa335ee|Hitem:113612:0:0:0:0:0:0:0:100:0:3:1:560|h[Scales of Doom]|h|r",
-											["bag_id"] = 4,
-										}, -- [28]
 										{
 											["q"] = 3,
 											["class"] = "item",
-											["age"] = 23787352,
+											["age"] = 23816561,
 											["loc_id"] = 1,
 											["count"] = 1,
 											["sb"] = 1,
-											["slot_id"] = 29,
-											["h"] = "|cff0070dd|Hitem:109262:0:0:0:0:0:0:0:100:0:1:0|h[Draenic Philosopher's Stone]|h|r",
 											["bag_id"] = 4,
-										}, -- [29]
+											["h"] = "|cff0070dd|Hitem:63206:0:0:0:0:0:0:0:100:0:0:0|h[Wrap of Unity]|h|r",
+											["slot_id"] = 27,
+										}, -- [27]
+										{
+											["q"] = 2,
+											["class"] = "item",
+											["age"] = 23816561,
+											["h"] = "|cff1eff00|Hitem:63352:0:0:0:0:0:0:0:100:0:0:0|h[Shroud of Cooperation]|h|r",
+											["slot_id"] = 28,
+											["sb"] = 1,
+											["bag_id"] = 4,
+											["loc_id"] = 1,
+											["count"] = 1,
+										}, -- [28]
 										{
 											["q"] = 4,
 											["class"] = "item",
-											["age"] = 23787352,
+											["age"] = 23816561,
+											["loc_id"] = 1,
+											["count"] = 1,
+											["sb"] = 1,
+											["bag_id"] = 4,
+											["h"] = "|cffa335ee|Hitem:51560:0:0:0:0:0:0:0:100:0:0:0|h[Runed Band of the Kirin Tor]|h|r",
+											["slot_id"] = 29,
+										}, -- [29]
+										{
+											["q"] = 3,
+											["class"] = "item",
+											["age"] = 23816561,
 											["loc_id"] = 1,
 											["slot_id"] = 30,
 											["sb"] = 1,
-											["count"] = 1,
-											["h"] = "|cffa335ee|Hitem:103678:0:0:0:0:0:0:0:100:0:14:0|h[Time-Lost Artifact]|h|r",
 											["bag_id"] = 4,
+											["h"] = "|cff0070dd|Hitem:109262:0:0:0:0:0:0:0:100:0:1:0|h[Draenic Philosopher's Stone]|h|r",
+											["count"] = 1,
 										}, -- [30]
 									},
 									["status"] = -3,
@@ -45103,252 +47442,255 @@ ARKINVDB = {
 										{
 											["q"] = 1,
 											["class"] = "item",
-											["bag_id"] = 5,
-											["loc_id"] = 1,
-											["count"] = 1,
-											["sb"] = 1,
-											["slot_id"] = 1,
-											["h"] = "|cffffffff|Hitem:6948:0:0:0:0:0:0:872191317:100:0:0:0|h[Hearthstone]|h|r",
 											["age"] = 23776115,
+											["h"] = "|cffffffff|Hitem:6948:0:0:0:0:0:0:872191317:100:0:0:0|h[Hearthstone]|h|r",
+											["slot_id"] = 1,
+											["sb"] = 1,
+											["count"] = 1,
+											["loc_id"] = 1,
+											["bag_id"] = 5,
 										}, -- [1]
 										{
 											["q"] = 1,
 											["class"] = "item",
-											["bag_id"] = 5,
-											["h"] = "|cffffffff|Hitem:110560:0:0:0:0:0:0:0:100:0:11:0|h[Garrison Hearthstone]|h|r",
-											["slot_id"] = 2,
-											["sb"] = 1,
-											["count"] = 1,
-											["loc_id"] = 1,
 											["age"] = 23776115,
+											["loc_id"] = 1,
+											["count"] = 1,
+											["sb"] = 1,
+											["slot_id"] = 2,
+											["h"] = "|cffffffff|Hitem:110560:0:0:0:0:0:0:0:100:0:11:0|h[Garrison Hearthstone]|h|r",
+											["bag_id"] = 5,
 										}, -- [2]
 										{
-											["q"] = 1,
-											["class"] = "item",
+											["q"] = 3,
+											["class"] = "empty",
 											["bag_id"] = 5,
-											["loc_id"] = 1,
-											["count"] = 54,
-											["sb"] = 1,
+											["h"] = "|cff0070dd|Hitem:114806:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Armor Set]|h|r",
 											["slot_id"] = 3,
-											["h"] = "|cffffffff|Hitem:114781:0:0:0:0:0:0:0:100:0:0:0|h[Timber]|h|r",
-											["age"] = 23798833,
+											["sb"] = 1,
+											["age"] = 23816321,
+											["loc_id"] = 1,
+											["count"] = 1,
 										}, -- [3]
 										{
-											["q"] = 3,
+											["q"] = 2,
 											["class"] = "item",
-											["age"] = 23791698,
-											["loc_id"] = 1,
+											["age"] = 23816323,
+											["h"] = "|cff1eff00|Hitem:114616:0:0:0:0:0:0:0:100:0:0:0|h[War Ravaged Weaponry]|h|r",
 											["count"] = 1,
 											["sb"] = 1,
-											["slot_id"] = 4,
-											["h"] = "|cff0070dd|Hitem:116913:0:0:0:0:0:0:0:100:0:0:0|h[Peon's Mining Pick]|h|r",
 											["bag_id"] = 5,
+											["loc_id"] = 1,
+											["slot_id"] = 4,
 										}, -- [4]
 										{
-											["q"] = 0,
+											["q"] = 1,
 											["class"] = "empty",
-											["slot_id"] = 5,
-											["count"] = 1,
-											["loc_id"] = 1,
 											["bag_id"] = 5,
+											["h"] = "|cffffffff|Hitem:109693:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Dust]|h|r",
+											["count"] = 8,
+											["loc_id"] = 1,
+											["slot_id"] = 5,
+											["age"] = 23816323,
 										}, -- [5]
 										{
 											["q"] = 2,
 											["class"] = "item",
-											["age"] = 23787352,
-											["h"] = "|cff1eff00|Hitem:120257:0:0:0:0:0:0:0:100:0:0:0|h[Drums of Fury]|h|r",
-											["count"] = 17,
+											["bag_id"] = 5,
 											["loc_id"] = 1,
 											["slot_id"] = 6,
-											["bag_id"] = 5,
+											["h"] = "|cff1eff00|Hitem:120257:0:0:0:0:0:0:0:100:0:0:0|h[Drums of Fury]|h|r",
+											["count"] = 17,
+											["age"] = 23787352,
 										}, -- [6]
 										{
-											["q"] = 1,
+											["q"] = 2,
 											["class"] = "item",
-											["age"] = 23787352,
+											["age"] = 23816322,
 											["loc_id"] = 1,
-											["count"] = 1,
-											["h"] = "|cffffffff|Hitem:34498:0:0:0:0:0:0:0:100:0:11:0|h[Paper Zeppelin Kit]|h|r",
 											["slot_id"] = 7,
+											["sb"] = 1,
+											["count"] = 20,
+											["h"] = "|cff1eff00|Hitem:114120:0:0:0:0:0:0:0:100:0:0:0|h[Big Crate of Salvage]|h|r",
 											["bag_id"] = 5,
 										}, -- [7]
-										{
-											["q"] = 1,
-											["class"] = "item",
-											["bag_id"] = 5,
-											["h"] = "|cffffffff|Hitem:79249:0:0:0:0:0:0:0:100:0:0:0|h[Tome of the Clear Mind]|h|r",
-											["count"] = 88,
-											["loc_id"] = 1,
-											["slot_id"] = 8,
-											["age"] = 23796077,
-										}, -- [8]
-										{
-											["q"] = 1,
-											["class"] = "item",
-											["bag_id"] = 5,
-											["loc_id"] = 1,
-											["slot_id"] = 9,
-											["h"] = "|cffffffff|Hitem:118576:0:0:0:0:0:0:0:100:0:0:0|h[Savage Feast]|h|r",
-											["count"] = 20,
-											["age"] = 23784795,
-										}, -- [9]
-										{
-											["q"] = 1,
-											["class"] = "item",
-											["bag_id"] = 5,
-											["loc_id"] = 1,
-											["count"] = 20,
-											["h"] = "|cffffffff|Hitem:118576:0:0:0:0:0:0:0:100:0:0:0|h[Savage Feast]|h|r",
-											["slot_id"] = 10,
-											["age"] = 23784795,
-										}, -- [10]
-										{
-											["q"] = 1,
-											["class"] = "item",
-											["age"] = 23787352,
-											["loc_id"] = 1,
-											["slot_id"] = 11,
-											["h"] = "|cffffffff|Hitem:118576:0:0:0:0:0:0:0:100:0:0:0|h[Savage Feast]|h|r",
-											["count"] = 20,
-											["bag_id"] = 5,
-										}, -- [11]
-										{
-											["q"] = 1,
-											["class"] = "item",
-											["age"] = 23787352,
-											["h"] = "|cffffffff|Hitem:118576:0:0:0:0:0:0:0:100:0:0:0|h[Savage Feast]|h|r",
-											["count"] = 20,
-											["loc_id"] = 1,
-											["slot_id"] = 12,
-											["bag_id"] = 5,
-										}, -- [12]
-										{
-											["q"] = 1,
-											["class"] = "item",
-											["age"] = 23793213,
-											["h"] = "|cffffffff|Hitem:118576:0:0:0:0:0:0:0:100:0:0:0|h[Savage Feast]|h|r",
-											["count"] = 3,
-											["loc_id"] = 1,
-											["slot_id"] = 13,
-											["bag_id"] = 5,
-										}, -- [13]
-										{
-											["q"] = 1,
-											["class"] = "item",
-											["bag_id"] = 5,
-											["h"] = "|cffffffff|Hitem:111441:0:0:0:0:0:0:0:100:0:0:0|h[Grilled Gulper]|h|r",
-											["count"] = 18,
-											["loc_id"] = 1,
-											["slot_id"] = 14,
-											["age"] = 23793266,
-										}, -- [14]
 										{
 											["q"] = 2,
 											["class"] = "item",
 											["bag_id"] = 5,
-											["loc_id"] = 1,
-											["count"] = 11,
+											["h"] = "|cff1eff00|Hitem:114745:0:0:0:0:0:0:0:100:0:0:0|h[Braced Armor Enhancement]|h|r",
+											["count"] = 2,
 											["sb"] = 1,
-											["slot_id"] = 15,
+											["age"] = 23816564,
+											["loc_id"] = 1,
+											["slot_id"] = 8,
+										}, -- [8]
+										{
+											["q"] = 1,
+											["class"] = "item",
+											["age"] = 23784795,
+											["h"] = "|cffffffff|Hitem:118576:0:0:0:0:0:0:0:100:0:0:0|h[Savage Feast]|h|r",
+											["count"] = 20,
+											["loc_id"] = 1,
+											["slot_id"] = 9,
+											["bag_id"] = 5,
+										}, -- [9]
+										{
+											["q"] = 1,
+											["class"] = "item",
+											["age"] = 23784795,
+											["h"] = "|cffffffff|Hitem:118576:0:0:0:0:0:0:0:100:0:0:0|h[Savage Feast]|h|r",
+											["slot_id"] = 10,
+											["loc_id"] = 1,
+											["count"] = 20,
+											["bag_id"] = 5,
+										}, -- [10]
+										{
+											["q"] = 1,
+											["class"] = "item",
+											["bag_id"] = 5,
+											["h"] = "|cffffffff|Hitem:118576:0:0:0:0:0:0:0:100:0:0:0|h[Savage Feast]|h|r",
+											["count"] = 20,
+											["loc_id"] = 1,
+											["slot_id"] = 11,
+											["age"] = 23787352,
+										}, -- [11]
+										{
+											["q"] = 1,
+											["class"] = "item",
+											["bag_id"] = 5,
+											["loc_id"] = 1,
+											["slot_id"] = 12,
+											["h"] = "|cffffffff|Hitem:118576:0:0:0:0:0:0:0:100:0:0:0|h[Savage Feast]|h|r",
+											["count"] = 20,
+											["age"] = 23787352,
+										}, -- [12]
+										{
+											["q"] = 1,
+											["class"] = "item",
+											["bag_id"] = 5,
+											["loc_id"] = 1,
+											["slot_id"] = 13,
+											["h"] = "|cffffffff|Hitem:118576:0:0:0:0:0:0:0:100:0:0:0|h[Savage Feast]|h|r",
+											["count"] = 3,
+											["age"] = 23793213,
+										}, -- [13]
+										{
+											["q"] = 2,
+											["class"] = "item",
+											["bag_id"] = 5,
+											["h"] = "|cff1eff00|Hitem:114128:0:0:0:0:0:0:0:100:0:0:0|h[Balanced Weapon Enhancement]|h|r",
+											["count"] = 3,
+											["sb"] = 1,
+											["age"] = 23816321,
+											["loc_id"] = 1,
+											["slot_id"] = 14,
+										}, -- [14]
+										{
+											["q"] = 2,
+											["class"] = "item",
+											["age"] = 23816321,
 											["h"] = "|cff1eff00|Hitem:118897:0:0:0:0:0:0:0:100:0:0:0|h[Miner's Coffee]|h|r",
-											["age"] = 23798833,
+											["slot_id"] = 15,
+											["sb"] = 1,
+											["count"] = 13,
+											["loc_id"] = 1,
+											["bag_id"] = 5,
 										}, -- [15]
 										{
 											["q"] = 3,
 											["class"] = "item",
-											["bag_id"] = 5,
-											["loc_id"] = 1,
-											["count"] = 1,
-											["sb"] = 1,
-											["slot_id"] = 16,
-											["h"] = "|cff0070dd|Hitem:116120:0:0:0:0:0:0:0:100:0:0:0|h[Tasty Talador Lunch]|h|r",
 											["age"] = 23787352,
+											["h"] = "|cff0070dd|Hitem:116120:0:0:0:0:0:0:0:100:0:0:0|h[Tasty Talador Lunch]|h|r",
+											["slot_id"] = 16,
+											["sb"] = 1,
+											["count"] = 1,
+											["loc_id"] = 1,
+											["bag_id"] = 5,
 										}, -- [16]
 										{
 											["q"] = 1,
 											["class"] = "item",
-											["bag_id"] = 5,
-											["loc_id"] = 1,
-											["slot_id"] = 17,
-											["sb"] = 1,
-											["count"] = 2,
-											["h"] = "|cffffffff|Hitem:114225:0:0:0:0:0:0:0:100:0:0:0|h[Forgotten Apexis Trinket]|h|r",
 											["age"] = 23787352,
+											["h"] = "|cffffffff|Hitem:114225:0:0:0:0:0:0:0:100:0:0:0|h[Forgotten Apexis Trinket]|h|r",
+											["count"] = 2,
+											["sb"] = 1,
+											["slot_id"] = 17,
+											["loc_id"] = 1,
+											["bag_id"] = 5,
 										}, -- [17]
 										{
 											["q"] = 1,
 											["class"] = "item",
-											["age"] = 23790266,
-											["loc_id"] = 1,
-											["count"] = 17,
+											["bag_id"] = 5,
 											["h"] = "|cffffffff|Hitem:109153:0:0:0:0:0:0:0:100:0:0:0|h[Greater Draenic Agility Flask]|h|r",
 											["slot_id"] = 18,
-											["bag_id"] = 5,
+											["loc_id"] = 1,
+											["count"] = 17,
+											["age"] = 23809027,
 										}, -- [18]
 										{
 											["q"] = 1,
 											["class"] = "item",
-											["age"] = 23797447,
+											["bag_id"] = 5,
+											["h"] = "|cffffffff|Hitem:109222:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Mana Potion]|h|r",
+											["count"] = 2,
 											["loc_id"] = 1,
 											["slot_id"] = 19,
-											["h"] = "|cffffffff|Hitem:109153:0:0:0:0:0:0:0:100:0:0:0|h[Greater Draenic Agility Flask]|h|r",
-											["count"] = 5,
-											["bag_id"] = 5,
+											["age"] = 23808965,
 										}, -- [19]
 										{
 											["q"] = 1,
 											["class"] = "item",
-											["age"] = 23787352,
-											["h"] = "|cffffffff|Hitem:109222:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Mana Potion]|h|r",
-											["slot_id"] = 20,
-											["loc_id"] = 1,
-											["count"] = 2,
 											["bag_id"] = 5,
+											["loc_id"] = 1,
+											["count"] = 10,
+											["h"] = "|cffffffff|Hitem:58487:0:0:0:0:0:0:0:100:0:0:0|h[Potion of Deepholm]|h|r",
+											["slot_id"] = 20,
+											["age"] = 23808965,
 										}, -- [20]
 										{
 											["q"] = 1,
 											["class"] = "item",
-											["bag_id"] = 5,
+											["age"] = 23808965,
+											["h"] = "|cffffffff|Hitem:109217:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Agility Potion]|h|r",
+											["count"] = 8,
 											["loc_id"] = 1,
 											["slot_id"] = 21,
-											["h"] = "|cffffffff|Hitem:58487:0:0:0:0:0:0:0:100:0:0:0|h[Potion of Deepholm]|h|r",
-											["count"] = 11,
-											["age"] = 23787352,
+											["bag_id"] = 5,
 										}, -- [21]
 										{
 											["q"] = 1,
 											["class"] = "item",
-											["bag_id"] = 5,
-											["h"] = "|cffffffff|Hitem:109217:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Agility Potion]|h|r",
-											["slot_id"] = 22,
+											["age"] = 23808965,
 											["loc_id"] = 1,
-											["count"] = 11,
-											["age"] = 23797461,
+											["count"] = 8,
+											["h"] = "|cffffffff|Hitem:116266:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Swiftness Potion]|h|r",
+											["slot_id"] = 22,
+											["bag_id"] = 5,
 										}, -- [22]
 										{
-											["q"] = 4,
+											["q"] = 1,
 											["class"] = "item",
-											["bag_id"] = 5,
-											["h"] = "|cffa335ee|Hitem:114131:0:0:0:0:0:0:0:100:0:0:0|h[Power Overrun Weapon Enhancement]|h|r",
-											["slot_id"] = 23,
-											["sb"] = 1,
-											["count"] = 3,
+											["age"] = 23808971,
 											["loc_id"] = 1,
-											["age"] = 23798913,
+											["count"] = 7,
+											["h"] = "|cffffffff|Hitem:118006:0:0:0:0:0:0:0:100:0:0:0|h[Shieldtronic Shield]|h|r",
+											["slot_id"] = 23,
+											["bag_id"] = 5,
 										}, -- [23]
 										{
 											["q"] = 1,
 											["class"] = "item",
-											["age"] = 23787352,
+											["bag_id"] = 5,
+											["h"] = "|cffffffff|Hitem:116276:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Living Action Potion]|h|r",
+											["slot_id"] = 24,
 											["loc_id"] = 1,
 											["count"] = 8,
-											["h"] = "|cffffffff|Hitem:116266:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Swiftness Potion]|h|r",
-											["slot_id"] = 24,
-											["bag_id"] = 5,
+											["age"] = 23808965,
 										}, -- [24]
 									},
 									["status"] = -3,
-									["empty"] = 1,
 									["h"] = "|cffa335ee|Hitem:18714:0:0:0:0:0:0:178012994:100:0:0:0|h[Ancient Sinew Wrapped Lamina]|h|r",
 									["texture"] = "Interface\\ICONS\\INV_Misc_Quiver_03.blp",
 								}, -- [5]
@@ -45366,23 +47708,23 @@ ARKINVDB = {
 											["q"] = 3,
 											["class"] = "empty",
 											["bag_id"] = 1,
-											["h"] = "|cff0070dd|Hitem:118475:0:0:0:0:0:0:0:100:0:0:0|h[Hearthstone Strategy Guide]|h|r",
+											["h"] = "|cff0070dd|Hitem:122580:0:0:0:0:0:0:0:100:0:0:0|h[Ogre Buddy Handbook]|h|r",
 											["slot_id"] = 1,
 											["sb"] = 1,
-											["count"] = 2,
+											["age"] = 23810636,
 											["loc_id"] = 3,
-											["age"] = 23786174,
+											["count"] = 1,
 										}, -- [1]
 										{
 											["q"] = 3,
 											["class"] = "empty",
 											["bag_id"] = 1,
-											["loc_id"] = 3,
-											["count"] = 1,
+											["h"] = "|cff0070dd|Hitem:114129:0:0:0:0:0:0:0:100:0:0:0|h[Striking Weapon Enhancement]|h|r",
+											["count"] = 11,
 											["sb"] = 1,
+											["age"] = 23814137,
+											["loc_id"] = 3,
 											["slot_id"] = 2,
-											["h"] = "|cff0070dd|Hitem:122580:0:0:0:0:0:0:0:100:0:0:0|h[Ogre Buddy Handbook]|h|r",
-											["age"] = 23786174,
 										}, -- [2]
 										{
 											["q"] = 3,
@@ -45391,36 +47733,42 @@ ARKINVDB = {
 											["loc_id"] = 3,
 											["count"] = 3,
 											["sb"] = 1,
-											["slot_id"] = 3,
+											["age"] = 23810636,
 											["h"] = "|cff0070dd|Hitem:118474:0:0:0:0:0:0:0:100:0:0:0|h[Supreme Manual of Dance]|h|r",
-											["age"] = 23786174,
+											["slot_id"] = 3,
 										}, -- [3]
 										{
-											["q"] = 0,
+											["q"] = 4,
 											["class"] = "empty",
 											["bag_id"] = 1,
 											["loc_id"] = 3,
 											["count"] = 1,
+											["sb"] = 1,
+											["age"] = 23810636,
+											["h"] = "|cffa335ee|Hitem:114746:0:0:0:0:0:0:0:100:0:0:0|h[Goredrenched Armor Set]|h|r",
 											["slot_id"] = 4,
 										}, -- [4]
 										{
-											["q"] = 0,
+											["q"] = 4,
 											["class"] = "empty",
 											["bag_id"] = 1,
+											["h"] = "|cffa335ee|Hitem:114622:0:0:0:0:0:0:0:100:0:0:0|h[Goredrenched Weaponry]|h|r",
 											["slot_id"] = 5,
-											["count"] = 1,
+											["sb"] = 1,
+											["age"] = 23810636,
 											["loc_id"] = 3,
+											["count"] = 3,
 										}, -- [5]
 										{
-											["q"] = 3,
+											["q"] = 4,
 											["class"] = "empty",
 											["bag_id"] = 1,
-											["h"] = "|cff0070dd|Hitem:118354:0:0:0:0:0:0:0:100:0:0:0|h[Follower Retraining Certificate]|h|r",
+											["h"] = "|cffa335ee|Hitem:114131:0:0:0:0:0:0:0:100:0:0:0|h[Power Overrun Weapon Enhancement]|h|r",
 											["slot_id"] = 6,
 											["sb"] = 1,
-											["count"] = 11,
+											["age"] = 23814137,
 											["loc_id"] = 3,
-											["age"] = 23791630,
+											["count"] = 6,
 										}, -- [6]
 										{
 											["q"] = 3,
@@ -45429,21 +47777,76 @@ ARKINVDB = {
 											["loc_id"] = 3,
 											["slot_id"] = 7,
 											["sb"] = 1,
-											["count"] = 1,
-											["h"] = "|cff0070dd|Hitem:122272:0:0:0:0:0:0:0:100:0:1:0|h[Follower Ability Retraining Manual]|h|r",
-											["age"] = 23786174,
+											["age"] = 23810636,
+											["h"] = "|cff0070dd|Hitem:118475:0:0:0:0:0:0:0:100:0:0:0|h[Hearthstone Strategy Guide]|h|r",
+											["count"] = 2,
 										}, -- [7]
 										{
 											["q"] = 3,
 											["class"] = "item",
 											["bag_id"] = 1,
-											["loc_id"] = 3,
-											["count"] = 18,
-											["sb"] = 1,
+											["h"] = "|cff0070dd|Hitem:114808:0:0:0:0:0:0:0:100:0:0:0|h[Fortified Armor Enhancement]|h|r",
 											["slot_id"] = 8,
-											["h"] = "|cff0070dd|Hitem:114081:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Weaponry]|h|r",
-											["age"] = 23797159,
+											["sb"] = 1,
+											["age"] = 23814137,
+											["loc_id"] = 3,
+											["count"] = 20,
 										}, -- [8]
+										{
+											["q"] = 3,
+											["class"] = "item",
+											["bag_id"] = 1,
+											["loc_id"] = 3,
+											["slot_id"] = 9,
+											["sb"] = 1,
+											["age"] = 23810636,
+											["h"] = "|cff0070dd|Hitem:122273:0:0:0:0:0:0:0:100:0:1:0|h[Follower Trait Retraining Guide]|h|r",
+											["count"] = 1,
+										}, -- [9]
+										{
+											["q"] = 3,
+											["class"] = "item",
+											["bag_id"] = 1,
+											["h"] = "|cff0070dd|Hitem:118354:0:0:0:0:0:0:0:100:0:0:0|h[Follower Retraining Certificate]|h|r",
+											["slot_id"] = 10,
+											["sb"] = 1,
+											["age"] = 23810636,
+											["loc_id"] = 3,
+											["count"] = 12,
+										}, -- [10]
+										{
+											["q"] = 3,
+											["class"] = "item",
+											["bag_id"] = 1,
+											["loc_id"] = 3,
+											["slot_id"] = 11,
+											["sb"] = 1,
+											["age"] = 23810637,
+											["h"] = "|cff0070dd|Hitem:114081:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Weaponry]|h|r",
+											["count"] = 20,
+										}, -- [11]
+										{
+											["q"] = 2,
+											["class"] = "item",
+											["bag_id"] = 1,
+											["h"] = "|cff1eff00|Hitem:114616:0:0:0:0:0:0:0:100:0:0:0|h[War Ravaged Weaponry]|h|r",
+											["count"] = 20,
+											["sb"] = 1,
+											["age"] = 23810637,
+											["loc_id"] = 3,
+											["slot_id"] = 12,
+										}, -- [12]
+										{
+											["q"] = 2,
+											["class"] = "item",
+											["bag_id"] = 1,
+											["h"] = "|cff1eff00|Hitem:114616:0:0:0:0:0:0:0:100:0:0:0|h[War Ravaged Weaponry]|h|r",
+											["count"] = 20,
+											["sb"] = 1,
+											["age"] = 23814137,
+											["loc_id"] = 3,
+											["slot_id"] = 13,
+										}, -- [13]
 										{
 											["q"] = 3,
 											["class"] = "item",
@@ -45451,90 +47854,41 @@ ARKINVDB = {
 											["h"] = "|cff0070dd|Hitem:114806:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Armor Set]|h|r",
 											["count"] = 20,
 											["sb"] = 1,
-											["slot_id"] = 9,
-											["loc_id"] = 3,
-											["age"] = 23786174,
-										}, -- [9]
-										{
-											["q"] = 2,
-											["class"] = "item",
-											["bag_id"] = 1,
-											["h"] = "|cff1eff00|Hitem:114807:0:0:0:0:0:0:0:100:0:0:0|h[War Ravaged Armor Set]|h|r",
-											["count"] = 20,
-											["sb"] = 1,
-											["slot_id"] = 10,
-											["loc_id"] = 3,
-											["age"] = 23786174,
-										}, -- [10]
-										{
-											["q"] = 2,
-											["class"] = "item",
-											["bag_id"] = 1,
-											["loc_id"] = 3,
-											["count"] = 20,
-											["sb"] = 1,
-											["slot_id"] = 11,
-											["h"] = "|cff1eff00|Hitem:114807:0:0:0:0:0:0:0:100:0:0:0|h[War Ravaged Armor Set]|h|r",
-											["age"] = 23786174,
-										}, -- [11]
-										{
-											["q"] = 2,
-											["class"] = "item",
-											["bag_id"] = 1,
-											["loc_id"] = 3,
-											["slot_id"] = 12,
-											["sb"] = 1,
-											["count"] = 20,
-											["h"] = "|cff1eff00|Hitem:114616:0:0:0:0:0:0:0:100:0:0:0|h[War Ravaged Weaponry]|h|r",
-											["age"] = 23786174,
-										}, -- [12]
-										{
-											["q"] = 2,
-											["class"] = "item",
-											["bag_id"] = 1,
-											["h"] = "|cff1eff00|Hitem:114807:0:0:0:0:0:0:0:100:0:0:0|h[War Ravaged Armor Set]|h|r",
-											["count"] = 15,
-											["sb"] = 1,
-											["slot_id"] = 13,
-											["loc_id"] = 3,
-											["age"] = 23797159,
-										}, -- [13]
-										{
-											["q"] = 0,
-											["class"] = "item",
-											["bag_id"] = 1,
+											["age"] = 23810637,
 											["loc_id"] = 3,
 											["slot_id"] = 14,
-											["count"] = 1,
 										}, -- [14]
 										{
-											["q"] = 0,
+											["q"] = 3,
 											["class"] = "item",
-											["loc_id"] = 3,
-											["count"] = 1,
-											["slot_id"] = 15,
 											["bag_id"] = 1,
+											["loc_id"] = 3,
+											["count"] = 2,
+											["sb"] = 1,
+											["age"] = 23814137,
+											["h"] = "|cff0070dd|Hitem:114081:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Weaponry]|h|r",
+											["slot_id"] = 15,
 										}, -- [15]
 										{
 											["q"] = 2,
 											["class"] = "item",
-											["age"] = 23797159,
-											["h"] = "|cff1eff00|Hitem:114616:0:0:0:0:0:0:0:100:0:0:0|h[War Ravaged Weaponry]|h|r",
+											["bag_id"] = 1,
+											["h"] = "|cff1eff00|Hitem:114745:0:0:0:0:0:0:0:100:0:0:0|h[Braced Armor Enhancement]|h|r",
 											["slot_id"] = 16,
 											["sb"] = 1,
-											["bag_id"] = 1,
-											["count"] = 19,
+											["age"] = 23810637,
 											["loc_id"] = 3,
+											["count"] = 20,
 										}, -- [16]
 										{
 											["q"] = 1,
-											["class"] = "item",
-											["age"] = 23781507,
 											["h"] = "|cffffffff|Hitem:88487:0:0:0:0:0:0:1202369024:100:0:0:0|h[Volatile Orb]|h|r",
 											["count"] = 5,
 											["loc_id"] = 3,
-											["slot_id"] = 17,
+											["age"] = 23781507,
+											["class"] = "item",
 											["bag_id"] = 1,
+											["slot_id"] = 17,
 										}, -- [17]
 										{
 											["q"] = 3,
@@ -45570,12 +47924,15 @@ ARKINVDB = {
 											["age"] = 23781507,
 										}, -- [20]
 										{
-											["q"] = 0,
+											["q"] = 2,
 											["class"] = "item",
 											["bag_id"] = 1,
+											["h"] = "|cff1eff00|Hitem:114807:0:0:0:0:0:0:0:100:0:0:0|h[War Ravaged Armor Set]|h|r",
 											["slot_id"] = 21,
-											["count"] = 1,
+											["sb"] = 1,
+											["age"] = 23810637,
 											["loc_id"] = 3,
+											["count"] = 20,
 										}, -- [21]
 										{
 											["q"] = 1,
@@ -45589,59 +47946,73 @@ ARKINVDB = {
 											["age"] = 23781507,
 										}, -- [22]
 										{
-											["q"] = 0,
+											["q"] = 2,
 											["class"] = "item",
 											["bag_id"] = 1,
 											["loc_id"] = 3,
 											["slot_id"] = 23,
-											["count"] = 1,
+											["sb"] = 1,
+											["age"] = 23810637,
+											["h"] = "|cff1eff00|Hitem:114745:0:0:0:0:0:0:0:100:0:0:0|h[Braced Armor Enhancement]|h|r",
+											["count"] = 20,
 										}, -- [23]
 										{
-											["q"] = 0,
+											["q"] = 2,
 											["class"] = "item",
 											["bag_id"] = 1,
-											["count"] = 1,
+											["loc_id"] = 3,
 											["slot_id"] = 24,
-											["loc_id"] = 3,
+											["sb"] = 1,
+											["age"] = 23814137,
+											["h"] = "|cff1eff00|Hitem:114807:0:0:0:0:0:0:0:100:0:0:0|h[War Ravaged Armor Set]|h|r",
+											["count"] = 19,
 										}, -- [24]
-										{
-											["q"] = 0,
-											["class"] = "item",
-											["bag_id"] = 1,
-											["slot_id"] = 25,
-											["count"] = 1,
-											["loc_id"] = 3,
-										}, -- [25]
 										{
 											["q"] = 3,
 											["class"] = "item",
-											["age"] = 23797159,
-											["h"] = "|cff0070dd|Hitem:114806:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Armor Set]|h|r",
-											["count"] = 14,
-											["sb"] = 1,
-											["slot_id"] = 26,
-											["loc_id"] = 3,
 											["bag_id"] = 1,
+											["h"] = "|cff0070dd|Hitem:114806:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Armor Set]|h|r",
+											["count"] = 20,
+											["sb"] = 1,
+											["age"] = 23814137,
+											["loc_id"] = 3,
+											["slot_id"] = 25,
+										}, -- [25]
+										{
+											["q"] = 2,
+											["class"] = "item",
+											["bag_id"] = 1,
+											["loc_id"] = 3,
+											["slot_id"] = 26,
+											["sb"] = 1,
+											["age"] = 23810637,
+											["h"] = "|cff1eff00|Hitem:114745:0:0:0:0:0:0:0:100:0:0:0|h[Braced Armor Enhancement]|h|r",
+											["count"] = 20,
 										}, -- [26]
 										{
-											["q"] = 0,
+											["q"] = 2,
 											["class"] = "item",
-											["slot_id"] = 27,
-											["count"] = 1,
-											["loc_id"] = 3,
 											["bag_id"] = 1,
+											["loc_id"] = 3,
+											["count"] = 20,
+											["sb"] = 1,
+											["age"] = 23810637,
+											["h"] = "|cff1eff00|Hitem:114745:0:0:0:0:0:0:0:100:0:0:0|h[Braced Armor Enhancement]|h|r",
+											["slot_id"] = 27,
 										}, -- [27]
 										{
-											["q"] = 0,
+											["q"] = 2,
 											["class"] = "item",
-											["count"] = 1,
+											["bag_id"] = 1,
+											["h"] = "|cff1eff00|Hitem:114745:0:0:0:0:0:0:0:100:0:0:0|h[Braced Armor Enhancement]|h|r",
+											["count"] = 10,
+											["sb"] = 1,
+											["age"] = 23814137,
 											["loc_id"] = 3,
 											["slot_id"] = 28,
-											["bag_id"] = 1,
 										}, -- [28]
 									},
 									["status"] = -3,
-									["empty"] = 10,
 									["texture"] = "Interface\\Icons\\INV_Box_02",
 								}, -- [1]
 								{
@@ -45650,18 +48021,24 @@ ARKINVDB = {
 									["count"] = 28,
 									["slot"] = {
 										{
-											["q"] = 0,
+											["q"] = 2,
 											["class"] = "empty",
 											["bag_id"] = 2,
-											["count"] = 1,
+											["h"] = "|cff1eff00|Hitem:114128:0:0:0:0:0:0:0:100:0:0:0|h[Balanced Weapon Enhancement]|h|r",
+											["count"] = 19,
+											["sb"] = 1,
+											["age"] = 23810637,
 											["loc_id"] = 3,
 											["slot_id"] = 1,
 										}, -- [1]
 										{
-											["q"] = 0,
-											["class"] = "item",
+											["q"] = 2,
+											["class"] = "empty",
 											["bag_id"] = 2,
-											["count"] = 1,
+											["h"] = "|cff1eff00|Hitem:114745:0:0:0:0:0:0:0:100:0:0:0|h[Braced Armor Enhancement]|h|r",
+											["count"] = 20,
+											["sb"] = 1,
+											["age"] = 23810637,
 											["loc_id"] = 3,
 											["slot_id"] = 2,
 										}, -- [2]
@@ -45744,12 +48121,15 @@ ARKINVDB = {
 											["count"] = 1,
 										}, -- [9]
 										{
-											["q"] = 0,
+											["q"] = 2,
 											["class"] = "item",
 											["bag_id"] = 2,
-											["count"] = 1,
 											["loc_id"] = 3,
 											["slot_id"] = 10,
+											["sb"] = 1,
+											["age"] = 23810637,
+											["h"] = "|cff1eff00|Hitem:114807:0:0:0:0:0:0:0:100:0:0:0|h[War Ravaged Armor Set]|h|r",
+											["count"] = 20,
 										}, -- [10]
 										{
 											["q"] = 4,
@@ -45951,7 +48331,6 @@ ARKINVDB = {
 										}, -- [28]
 									},
 									["status"] = -3,
-									["empty"] = 3,
 									["h"] = "|cffa335ee|Hitem:82446:0:0:0:0:0:0:675767040:100:0:0:0|h[Royal Satchel]|h|r",
 									["texture"] = "Interface\\ICONS\\INV_Misc_Bag_31.blp",
 								}, -- [2]
@@ -46280,13 +48659,13 @@ ARKINVDB = {
 									["slot"] = {
 										{
 											["q"] = 4,
-											["class"] = "item",
-											["age"] = 23781507,
 											["loc_id"] = 3,
 											["count"] = 1,
 											["h"] = "|cffa335ee|Hitem:39194:0:0:0:0:0:0:0:100:0:0:0|h[Rusted-Link Spiked Gauntlets]|h|r",
-											["slot_id"] = 1,
+											["age"] = 23781507,
+											["class"] = "item",
 											["bag_id"] = 4,
+											["slot_id"] = 1,
 										}, -- [1]
 										{
 											["q"] = 4,
@@ -46994,23 +49373,23 @@ ARKINVDB = {
 										}, -- [11]
 										{
 											["q"] = 2,
-											["class"] = "item",
-											["age"] = 23781507,
 											["loc_id"] = 3,
 											["count"] = 9,
 											["h"] = "|cff1eff00|Hitem:63128:0:0:0:0:0:0:-2000249344:100:0:0:0|h[Troll Tablet]|h|r",
-											["slot_id"] = 12,
+											["age"] = 23781507,
+											["class"] = "item",
 											["bag_id"] = 6,
+											["slot_id"] = 12,
 										}, -- [12]
 										{
 											["q"] = 2,
-											["class"] = "item",
-											["age"] = 23781507,
 											["loc_id"] = 3,
 											["count"] = 7,
 											["h"] = "|cff1eff00|Hitem:52843:0:0:0:0:0:0:975579968:100:0:0:0|h[Dwarf Rune Stone]|h|r",
-											["slot_id"] = 13,
+											["age"] = 23781507,
+											["class"] = "item",
 											["bag_id"] = 6,
+											["slot_id"] = 13,
 										}, -- [13]
 										{
 											["q"] = 4,
@@ -47058,33 +49437,33 @@ ARKINVDB = {
 										}, -- [17]
 										{
 											["q"] = 1,
-											["class"] = "item",
-											["bag_id"] = 6,
 											["loc_id"] = 3,
 											["slot_id"] = 18,
 											["h"] = "|cffffffff|Hitem:30688:0:0:0:0:0:0:946889646:100:0:0:0|h[Deathforge Key]|h|r",
-											["count"] = 1,
+											["bag_id"] = 6,
+											["class"] = "item",
 											["age"] = 23781507,
+											["count"] = 1,
 										}, -- [18]
 										{
 											["q"] = 1,
-											["class"] = "item",
-											["age"] = 23781507,
 											["loc_id"] = 3,
 											["count"] = 1,
 											["h"] = "|cffffffff|Hitem:25509:0:0:0:0:0:0:1059282660:100:0:0:0|h[Northwind Cleft Key]|h|r",
-											["slot_id"] = 19,
+											["age"] = 23781507,
+											["class"] = "item",
 											["bag_id"] = 6,
+											["slot_id"] = 19,
 										}, -- [19]
 										{
 											["q"] = 1,
-											["class"] = "item",
-											["age"] = 23781507,
 											["loc_id"] = 3,
 											["slot_id"] = 20,
 											["h"] = "|cffffffff|Hitem:5462:0:0:0:0:0:0:87667981:100:0:0:0|h[Dartol's Rod of Transformation]|h|r",
-											["count"] = 1,
+											["age"] = 23781507,
+											["class"] = "item",
 											["bag_id"] = 6,
+											["count"] = 1,
 										}, -- [20]
 										{
 											["q"] = 4,
@@ -47296,29 +49675,35 @@ ARKINVDB = {
 										}, -- [14]
 										{
 											["q"] = 3,
-											["class"] = "item",
+											["class"] = "empty",
 											["bag_id"] = 7,
-											["h"] = "|cff0070dd|Hitem:122273:0:0:0:0:0:0:0:100:0:1:0|h[Follower Trait Retraining Guide]|h|r",
-											["slot_id"] = 15,
-											["sb"] = 1,
-											["age"] = 23791630,
-											["loc_id"] = 3,
+											["h"] = "|cff0070dd|Hitem:122272:0:0:0:0:0:0:0:100:0:1:0|h[Follower Ability Retraining Manual]|h|r",
 											["count"] = 1,
+											["sb"] = 1,
+											["age"] = 23810637,
+											["loc_id"] = 3,
+											["slot_id"] = 15,
 										}, -- [15]
 										{
-											["q"] = 0,
+											["q"] = 2,
 											["class"] = "empty",
 											["bag_id"] = 7,
-											["slot_id"] = 16,
-											["count"] = 1,
 											["loc_id"] = 3,
+											["slot_id"] = 16,
+											["sb"] = 1,
+											["age"] = 23810637,
+											["h"] = "|cff1eff00|Hitem:114745:0:0:0:0:0:0:0:100:0:0:0|h[Braced Armor Enhancement]|h|r",
+											["count"] = 20,
 										}, -- [16]
 										{
-											["q"] = 0,
-											["loc_id"] = 3,
-											["count"] = 1,
+											["q"] = 2,
 											["class"] = "empty",
 											["bag_id"] = 7,
+											["h"] = "|cff1eff00|Hitem:114128:0:0:0:0:0:0:0:100:0:0:0|h[Balanced Weapon Enhancement]|h|r",
+											["count"] = 20,
+											["sb"] = 1,
+											["age"] = 23810637,
+											["loc_id"] = 3,
 											["slot_id"] = 17,
 										}, -- [17]
 										{
@@ -47400,7 +49785,6 @@ ARKINVDB = {
 										}, -- [24]
 									},
 									["status"] = -3,
-									["empty"] = 2,
 									["h"] = "|cffa335ee|Hitem:51809:0:0:0:0:0:0:0:100:0:0:0|h[Portable Hole]|h|r",
 									["texture"] = "Interface\\ICONS\\INV_Misc_ShadowEgg.blp",
 								}, -- [7]
@@ -47513,123 +49897,132 @@ ARKINVDB = {
 										}, -- [9]
 										{
 											["q"] = 1,
-											["class"] = "item",
-											["bag_id"] = 8,
 											["loc_id"] = 3,
 											["count"] = 1,
 											["h"] = "|cffffffff|Hitem:31664:0:0:0:0:0:0:1270083036:100:0:0:0|h[Zuluhed's Key]|h|r",
-											["slot_id"] = 10,
+											["bag_id"] = 8,
+											["class"] = "item",
 											["age"] = 23781507,
+											["slot_id"] = 10,
 										}, -- [10]
 										{
 											["q"] = 1,
-											["class"] = "item",
-											["bag_id"] = 8,
 											["loc_id"] = 3,
 											["count"] = 1,
 											["h"] = "|cffffffff|Hitem:31655:0:0:0:0:0:0:896032248:100:0:0:0|h[Veil Skith Prison Key]|h|r",
-											["slot_id"] = 11,
+											["bag_id"] = 8,
+											["class"] = "item",
 											["age"] = 23781507,
+											["slot_id"] = 11,
 										}, -- [11]
 										{
 											["q"] = 1,
-											["class"] = "item",
-											["bag_id"] = 8,
 											["loc_id"] = 3,
 											["slot_id"] = 12,
 											["h"] = "|cffffffff|Hitem:110293:0:0:0:0:0:0:0:100:0:0:0|h[Abyssal Gulper Eel Bait]|h|r",
-											["count"] = 1,
+											["bag_id"] = 8,
+											["class"] = "item",
 											["age"] = 23781507,
+											["count"] = 1,
 										}, -- [12]
 										{
 											["q"] = 1,
-											["class"] = "empty",
-											["age"] = 23781507,
 											["loc_id"] = 3,
 											["count"] = 1,
 											["h"] = "|cffffffff|Hitem:110292:0:0:0:0:0:0:0:100:0:0:0|h[Sea Scorpion Bait]|h|r",
-											["slot_id"] = 13,
+											["age"] = 23781507,
+											["class"] = "empty",
 											["bag_id"] = 8,
+											["slot_id"] = 13,
 										}, -- [13]
 										{
 											["q"] = 1,
-											["class"] = "empty",
-											["age"] = 23781507,
 											["loc_id"] = 3,
 											["count"] = 1,
 											["h"] = "|cffffffff|Hitem:110291:0:0:0:0:0:0:0:100:0:0:0|h[Fire Ammonite Bait]|h|r",
-											["slot_id"] = 14,
+											["age"] = 23781507,
+											["class"] = "empty",
 											["bag_id"] = 8,
+											["slot_id"] = 14,
 										}, -- [14]
 										{
 											["q"] = 1,
-											["class"] = "item",
-											["age"] = 23781507,
 											["loc_id"] = 3,
 											["slot_id"] = 15,
 											["h"] = "|cffffffff|Hitem:110290:0:0:0:0:0:0:0:100:0:0:0|h[Blind Lake Sturgeon Bait]|h|r",
-											["count"] = 1,
+											["age"] = 23781507,
+											["class"] = "item",
 											["bag_id"] = 8,
+											["count"] = 1,
 										}, -- [15]
 										{
 											["q"] = 1,
-											["class"] = "item",
-											["age"] = 23781507,
 											["loc_id"] = 3,
 											["slot_id"] = 16,
 											["h"] = "|cffffffff|Hitem:110289:0:0:0:0:0:0:0:100:0:1:0|h[Fat Sleeper Bait]|h|r",
-											["count"] = 1,
+											["age"] = 23781507,
+											["class"] = "item",
 											["bag_id"] = 8,
+											["count"] = 1,
 										}, -- [16]
 										{
 											["q"] = 1,
-											["class"] = "empty",
-											["age"] = 23781507,
 											["h"] = "|cffffffff|Hitem:110274:0:0:0:0:0:0:0:100:0:0:0|h[Jawless Skulker Bait]|h|r",
 											["count"] = 1,
 											["loc_id"] = 3,
-											["slot_id"] = 17,
+											["age"] = 23781507,
+											["class"] = "empty",
 											["bag_id"] = 8,
+											["slot_id"] = 17,
 										}, -- [17]
 										{
 											["q"] = 1,
-											["class"] = "item",
-											["age"] = 23781507,
 											["loc_id"] = 3,
 											["count"] = 20,
 											["h"] = "|cffffffff|Hitem:118391:0:0:0:0:0:0:0:100:0:0:0|h[Worm Supreme]|h|r",
-											["slot_id"] = 18,
-											["bag_id"] = 8,
-										}, -- [18]
-										{
-											["q"] = 0,
-											["loc_id"] = 3,
-											["count"] = 1,
-											["class"] = "empty",
-											["bag_id"] = 8,
-											["slot_id"] = 19,
-										}, -- [19]
-										{
-											["q"] = 0,
-											["loc_id"] = 3,
-											["count"] = 1,
-											["class"] = "empty",
-											["bag_id"] = 8,
-											["slot_id"] = 20,
-										}, -- [20]
-										{
-											["q"] = 0,
-											["loc_id"] = 3,
-											["count"] = 1,
+											["age"] = 23781507,
 											["class"] = "item",
 											["bag_id"] = 8,
+											["slot_id"] = 18,
+										}, -- [18]
+										{
+											["q"] = 2,
+											["class"] = "empty",
+											["bag_id"] = 8,
+											["h"] = "|cff1eff00|Hitem:114128:0:0:0:0:0:0:0:100:0:0:0|h[Balanced Weapon Enhancement]|h|r",
+											["slot_id"] = 19,
+											["sb"] = 1,
+											["age"] = 23814137,
+											["loc_id"] = 3,
+											["count"] = 20,
+										}, -- [19]
+										{
+											["q"] = 4,
+											["class"] = "item",
+											["bag_id"] = 8,
+											["loc_id"] = 3,
+											["slot_id"] = 20,
+											["sb"] = 1,
+											["age"] = 23814137,
+											["h"] = "|cffa335ee|Hitem:52026:0:0:0:0:0:0:0:100:0:0:0|h[Protector's Mark of Sanctification]|h|r",
+											["count"] = 1,
+										}, -- [20]
+										{
+											["q"] = 2,
+											["class"] = "empty",
+											["bag_id"] = 8,
+											["h"] = "|cff1eff00|Hitem:114128:0:0:0:0:0:0:0:100:0:0:0|h[Balanced Weapon Enhancement]|h|r",
+											["count"] = 1,
+											["sb"] = 1,
+											["age"] = 23814137,
+											["loc_id"] = 3,
 											["slot_id"] = 21,
 										}, -- [21]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
 											["count"] = 1,
-											["class"] = "item",
+											["class"] = "empty",
 											["bag_id"] = 8,
 											["slot_id"] = 22,
 										}, -- [22]
@@ -47658,7 +50051,7 @@ ARKINVDB = {
 										}, -- [24]
 									},
 									["status"] = -3,
-									["empty"] = 4,
+									["empty"] = 1,
 									["h"] = "|cffa335ee|Hitem:51809:0:0:0:0:0:0:0:100:0:0:0|h[Portable Hole]|h|r",
 									["texture"] = "Interface\\ICONS\\INV_Misc_ShadowEgg.blp",
 								}, -- [8]
@@ -47668,20 +50061,20 @@ ARKINVDB = {
 									["count"] = 98,
 									["slot"] = {
 										{
-											["q"] = 2,
+											["q"] = 0,
 											["class"] = "item",
-											["age"] = 23797594,
+											["age"] = 23816412,
 											["loc_id"] = 3,
 											["slot_id"] = 1,
-											["h"] = "|cff1eff00|Hitem:108996:0:0:0:0:0:0:0:100:0:0:0|h[Alchemical Catalyst]|h|r",
-											["count"] = 65,
+											["h"] = "|cffffffff|Hitem:108996:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
+											["count"] = 81,
 											["bag_id"] = 9,
 										}, -- [1]
 										{
-											["q"] = 1,
+											["q"] = 0,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["h"] = "|cffffffff|Hitem:109123:0:0:0:0:0:0:0:100:0:0:0|h[Crescent Oil]|h|r",
+											["h"] = "|cffffffff|Hitem:109123:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
 											["slot_id"] = 2,
 											["loc_id"] = 3,
 											["count"] = 170,
@@ -47694,48 +50087,48 @@ ARKINVDB = {
 											["h"] = "|cffffffff|Hitem:109693:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Dust]|h|r",
 											["slot_id"] = 3,
 											["loc_id"] = 3,
-											["count"] = 123,
-											["age"] = 23797166,
+											["count"] = 200,
+											["age"] = 23800434,
 										}, -- [3]
 										{
-											["q"] = 0,
-											["loc_id"] = 3,
-											["slot_id"] = 4,
+											["q"] = 1,
 											["class"] = "empty",
+											["age"] = 23814875,
+											["loc_id"] = 3,
+											["count"] = 200,
+											["h"] = "|cffffffff|Hitem:109693:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Dust]|h|r",
+											["slot_id"] = 4,
 											["bag_id"] = 9,
-											["count"] = 1,
 										}, -- [4]
 										{
-											["q"] = 4,
-											["class"] = "item",
-											["age"] = 23791631,
-											["h"] = "|cffa335ee|Hitem:115504:0:0:0:0:0:0:0:100:0:0:0|h[Fractured Temporal Crystal]|h|r",
+											["q"] = 3,
+											["class"] = "empty",
+											["age"] = 23816414,
+											["h"] = "|cff0070dd|Hitem:111245:0:0:0:0:0:0:0:100:0:0:0|h[Luminous Shard]|h|r",
 											["slot_id"] = 5,
 											["loc_id"] = 3,
-											["count"] = 3,
+											["count"] = 10,
 											["bag_id"] = 9,
 										}, -- [5]
 										{
-											["q"] = 1,
+											["q"] = 0,
 											["class"] = "item",
-											["age"] = 23798911,
+											["bag_id"] = 9,
+											["h"] = "|cffffffff|Hitem:87399:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
+											["count"] = 19,
 											["loc_id"] = 3,
 											["slot_id"] = 6,
-											["sb"] = 1,
-											["h"] = "|cffffffff|Hitem:87399:0:0:0:0:0:0:0:100:0:0:0|h[Restored Artifact]|h|r",
-											["count"] = 19,
-											["bag_id"] = 9,
+											["age"] = 23816529,
 										}, -- [6]
 										{
-											["q"] = 1,
+											["q"] = 0,
 											["class"] = "item",
-											["bag_id"] = 9,
-											["h"] = "|cffffffff|Hitem:114781:0:0:0:0:0:0:0:100:0:0:0|h[Timber]|h|r",
-											["count"] = 1,
-											["sb"] = 1,
+											["age"] = 23816529,
 											["loc_id"] = 3,
 											["slot_id"] = 7,
-											["age"] = 23798911,
+											["h"] = "|cffffffff|Hitem:114781:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
+											["count"] = 7,
+											["bag_id"] = 9,
 										}, -- [7]
 										{
 											["q"] = 1,
@@ -47760,291 +50153,305 @@ ARKINVDB = {
 										{
 											["q"] = 1,
 											["class"] = "item",
-											["age"] = 23790240,
+											["age"] = 23811479,
 											["h"] = "|cffffffff|Hitem:3371:0:0:0:0:0:0:0:100:0:0:0|h[Crystal Vial]|h|r",
-											["count"] = 18,
+											["count"] = 15,
 											["loc_id"] = 3,
 											["slot_id"] = 10,
 											["bag_id"] = 9,
 										}, -- [10]
 										{
-											["q"] = 2,
-											["class"] = "item",
-											["age"] = 23798909,
-											["loc_id"] = 3,
-											["count"] = 28,
-											["sb"] = 1,
-											["h"] = "|cff1eff00|Hitem:120945:0:0:0:0:0:0:0:100:0:0:0|h[Primal Spirit]|h|r",
-											["slot_id"] = 11,
-											["bag_id"] = 9,
-										}, -- [11]
-										{
 											["q"] = 0,
 											["loc_id"] = 3,
 											["count"] = 1,
 											["class"] = "empty",
 											["bag_id"] = 9,
+											["slot_id"] = 11,
+										}, -- [11]
+										{
+											["q"] = 4,
+											["class"] = "empty",
+											["age"] = 23814136,
+											["h"] = "|cffa335ee|Hitem:115504:0:0:0:0:0:0:0:100:0:0:0|h[Fractured Temporal Crystal]|h|r",
+											["count"] = 3,
+											["loc_id"] = 3,
 											["slot_id"] = 12,
+											["bag_id"] = 9,
 										}, -- [12]
 										{
-											["q"] = 3,
+											["q"] = 1,
 											["class"] = "item",
-											["age"] = 23798833,
-											["h"] = "|cff0070dd|Hitem:111245:0:0:0:0:0:0:0:100:0:0:0|h[Luminous Shard]|h|r",
-											["slot_id"] = 13,
+											["age"] = 23814883,
+											["h"] = "|cffffffff|Hitem:109118:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Ore]|h|r",
+											["count"] = 200,
 											["loc_id"] = 3,
-											["count"] = 9,
+											["slot_id"] = 13,
 											["bag_id"] = 9,
 										}, -- [13]
 										{
-											["q"] = 0,
-											["loc_id"] = 3,
-											["slot_id"] = 14,
+											["q"] = 4,
 											["class"] = "empty",
+											["age"] = 23816414,
+											["loc_id"] = 3,
+											["count"] = 4,
+											["h"] = "|cffa335ee|Hitem:113588:0:0:0:0:0:0:0:100:0:0:0|h[Temporal Crystal]|h|r",
+											["slot_id"] = 14,
 											["bag_id"] = 9,
-											["count"] = 1,
 										}, -- [14]
 										{
-											["q"] = 0,
+											["q"] = 1,
+											["class"] = "item",
+											["age"] = 23814883,
+											["h"] = "|cffffffff|Hitem:109118:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Ore]|h|r",
+											["count"] = 200,
 											["loc_id"] = 3,
 											["slot_id"] = 15,
-											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
 										}, -- [15]
 										{
-											["q"] = 0,
-											["loc_id"] = 3,
-											["slot_id"] = 16,
+											["q"] = 1,
 											["class"] = "item",
+											["age"] = 23814883,
+											["h"] = "|cffffffff|Hitem:109118:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Ore]|h|r",
+											["slot_id"] = 16,
+											["loc_id"] = 3,
+											["count"] = 117,
 											["bag_id"] = 9,
-											["count"] = 1,
 										}, -- [16]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 17,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 17,
 										}, -- [17]
 										{
 											["q"] = 0,
-											["loc_id"] = 3,
-											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
+											["loc_id"] = 3,
+											["count"] = 16,
+											["h"] = "|cffffffff|Hitem:120945:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
 											["slot_id"] = 18,
+											["age"] = 23816529,
 										}, -- [18]
 										{
-											["q"] = 0,
+											["q"] = 1,
+											["class"] = "item",
+											["age"] = 23814883,
+											["h"] = "|cffffffff|Hitem:109124:0:0:0:0:0:0:0:100:0:0:0|h[Frostweed]|h|r",
+											["count"] = 200,
 											["loc_id"] = 3,
 											["slot_id"] = 19,
-											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
 										}, -- [19]
 										{
-											["q"] = 0,
+											["q"] = 1,
+											["class"] = "item",
+											["age"] = 23814883,
+											["h"] = "|cffffffff|Hitem:109124:0:0:0:0:0:0:0:100:0:0:0|h[Frostweed]|h|r",
+											["count"] = 200,
 											["loc_id"] = 3,
 											["slot_id"] = 20,
-											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
 										}, -- [20]
 										{
-											["q"] = 0,
-											["loc_id"] = 3,
-											["count"] = 1,
+											["q"] = 1,
 											["class"] = "item",
-											["bag_id"] = 9,
+											["age"] = 23814883,
+											["h"] = "|cffffffff|Hitem:109124:0:0:0:0:0:0:0:100:0:0:0|h[Frostweed]|h|r",
 											["slot_id"] = 21,
+											["loc_id"] = 3,
+											["count"] = 200,
+											["bag_id"] = 9,
 										}, -- [21]
 										{
 											["q"] = 0,
+											["class"] = "item",
+											["age"] = 23816529,
+											["h"] = "|cffffffff|Hitem:115508:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
+											["count"] = 36,
 											["loc_id"] = 3,
 											["slot_id"] = 22,
-											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
 										}, -- [22]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 23,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 23,
+											["count"] = 1,
 										}, -- [23]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 24,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 24,
 										}, -- [24]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 25,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 25,
 										}, -- [25]
 										{
-											["q"] = 1,
+											["q"] = 0,
 											["class"] = "item",
-											["age"] = 23798911,
-											["h"] = "|cffffffff|Hitem:115508:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Stone]|h|r",
-											["count"] = 159,
-											["sb"] = 1,
+											["bag_id"] = 9,
 											["loc_id"] = 3,
 											["slot_id"] = 26,
-											["bag_id"] = 9,
+											["h"] = "|cffffffff|Hitem:115508:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
+											["count"] = 200,
+											["age"] = 23816529,
 										}, -- [26]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 27,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 27,
+											["count"] = 1,
 										}, -- [27]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 28,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 28,
 										}, -- [28]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 29,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 29,
+											["count"] = 1,
 										}, -- [29]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 30,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 30,
 										}, -- [30]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 31,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 31,
 										}, -- [31]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 32,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 32,
 										}, -- [32]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 33,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 33,
+											["count"] = 1,
 										}, -- [33]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 34,
-											["class"] = "empty",
-											["bag_id"] = 9,
 											["count"] = 1,
+											["class"] = "item",
+											["bag_id"] = 9,
+											["slot_id"] = 34,
 										}, -- [34]
 										{
-											["q"] = 1,
+											["q"] = 0,
 											["class"] = "item",
 											["age"] = 23781505,
-											["h"] = "|cffffffff|Hitem:109135:0:0:0:0:0:0:0:100:0:0:0|h[Raw Riverbeast Meat]|h|r",
-											["count"] = 2,
 											["loc_id"] = 3,
 											["slot_id"] = 35,
+											["h"] = "|cffffffff|Hitem:109135:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
+											["count"] = 2,
 											["bag_id"] = 9,
 										}, -- [35]
 										{
-											["q"] = 1,
+											["q"] = 0,
 											["class"] = "item",
-											["age"] = 23781505,
-											["h"] = "|cffffffff|Hitem:109134:0:0:0:0:0:0:0:100:0:0:0|h[Raw Elekk Meat]|h|r",
-											["count"] = 16,
+											["age"] = 23806249,
 											["loc_id"] = 3,
 											["slot_id"] = 36,
+											["h"] = "|cffffffff|Hitem:109134:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
+											["count"] = 17,
 											["bag_id"] = 9,
 										}, -- [36]
 										{
-											["q"] = 1,
+											["q"] = 0,
 											["class"] = "item",
-											["age"] = 23793288,
+											["age"] = 23800434,
+											["h"] = "|cffffffff|Hitem:109133:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
+											["count"] = 37,
 											["loc_id"] = 3,
 											["slot_id"] = 37,
-											["h"] = "|cffffffff|Hitem:109133:0:0:0:0:0:0:0:100:0:0:0|h[Rylak Egg]|h|r",
-											["count"] = 36,
 											["bag_id"] = 9,
 										}, -- [37]
 										{
-											["q"] = 1,
+											["q"] = 0,
 											["class"] = "item",
 											["bag_id"] = 9,
+											["h"] = "|cffffffff|Hitem:109136:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
+											["count"] = 1,
 											["loc_id"] = 3,
 											["slot_id"] = 38,
-											["h"] = "|cffffffff|Hitem:109136:0:0:0:0:0:0:0:100:0:0:0|h[Raw Boar Meat]|h|r",
-											["count"] = 1,
 											["age"] = 23781505,
 										}, -- [38]
 										{
-											["q"] = 1,
+											["q"] = 0,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["h"] = "|cffffffff|Hitem:109132:0:0:0:0:0:0:0:100:0:0:0|h[Raw Talbuk Meat]|h|r",
-											["slot_id"] = 39,
 											["loc_id"] = 3,
-											["count"] = 25,
-											["age"] = 23787125,
+											["count"] = 30,
+											["h"] = "|cffffffff|Hitem:109132:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
+											["slot_id"] = 39,
+											["age"] = 23800434,
 										}, -- [39]
 										{
-											["q"] = 1,
+											["q"] = 0,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["loc_id"] = 3,
-											["count"] = 18,
-											["h"] = "|cffffffff|Hitem:109131:0:0:0:0:0:0:0:100:0:0:0|h[Raw Clefthoof Meat]|h|r",
+											["h"] = "|cffffffff|Hitem:109131:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
 											["slot_id"] = 40,
-											["age"] = 23786175,
+											["loc_id"] = 3,
+											["count"] = 20,
+											["age"] = 23800434,
 										}, -- [40]
 										{
-											["q"] = 1,
+											["q"] = 0,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["h"] = "|cffffffff|Hitem:109143:0:0:0:0:0:0:0:100:0:0:0|h[Abyssal Gulper Eel Flesh]|h|r",
-											["count"] = 34,
 											["loc_id"] = 3,
 											["slot_id"] = 41,
+											["h"] = "|cffffffff|Hitem:109143:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
+											["count"] = 34,
 											["age"] = 23781505,
 										}, -- [41]
 										{
-											["q"] = 1,
+											["q"] = 0,
 											["class"] = "item",
 											["age"] = 23781505,
-											["h"] = "|cffffffff|Hitem:109140:0:0:0:0:0:0:0:100:0:0:0|h[Blind Lake Sturgeon Flesh]|h|r",
-											["slot_id"] = 42,
 											["loc_id"] = 3,
 											["count"] = 1,
+											["h"] = "|cffffffff|Hitem:109140:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
+											["slot_id"] = 42,
 											["bag_id"] = 9,
 										}, -- [42]
 										{
@@ -48058,116 +50465,114 @@ ARKINVDB = {
 											["bag_id"] = 9,
 										}, -- [43]
 										{
-											["q"] = 1,
+											["q"] = 0,
 											["class"] = "item",
 											["age"] = 23781505,
-											["h"] = "|cffffffff|Hitem:109144:0:0:0:0:0:0:0:100:0:0:0|h[Blackwater Whiptail Flesh]|h|r",
-											["slot_id"] = 44,
 											["loc_id"] = 3,
 											["count"] = 5,
+											["h"] = "|cffffffff|Hitem:109144:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
+											["slot_id"] = 44,
 											["bag_id"] = 9,
 										}, -- [44]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 45,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 45,
+											["count"] = 1,
 										}, -- [45]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 46,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 46,
+											["count"] = 1,
 										}, -- [46]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
+											["slot_id"] = 47,
+											["class"] = "item",
+											["bag_id"] = 9,
+											["count"] = 1,
+										}, -- [47]
+										{
+											["q"] = 0,
+											["loc_id"] = 3,
 											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 47,
-										}, -- [47]
-										{
-											["q"] = 1,
-											["class"] = "item",
-											["age"] = 23798911,
-											["loc_id"] = 3,
-											["count"] = 81,
-											["sb"] = 1,
-											["h"] = "|cffffffff|Hitem:115508:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Stone]|h|r",
 											["slot_id"] = 48,
-											["bag_id"] = 9,
 										}, -- [48]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 49,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 49,
 										}, -- [49]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 50,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 50,
+											["count"] = 1,
 										}, -- [50]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 51,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 51,
 										}, -- [51]
 										{
-											["q"] = 2,
+											["q"] = 0,
 											["class"] = "item",
-											["age"] = 23798911,
-											["h"] = "|cff1eff00|Hitem:111556:0:0:0:0:0:0:0:100:0:0:0|h[Hexweave Cloth]|h|r",
-											["count"] = 7,
-											["sb"] = 1,
+											["bag_id"] = 9,
 											["loc_id"] = 3,
 											["slot_id"] = 52,
-											["bag_id"] = 9,
+											["h"] = "|cffffffff|Hitem:111556:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
+											["count"] = 7,
+											["age"] = 23816529,
 										}, -- [52]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 53,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 53,
 										}, -- [53]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 54,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 54,
 										}, -- [54]
 										{
-											["q"] = 0,
-											["loc_id"] = 3,
-											["slot_id"] = 55,
+											["q"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["h"] = "|cffffffff|Hitem:109118:0:0:0:0:0:0:0:100:0:0:0|h[Blackrock Ore]|h|r",
+											["count"] = 200,
+											["loc_id"] = 3,
+											["slot_id"] = 55,
+											["age"] = 23814883,
 										}, -- [55]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 56,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 56,
 										}, -- [56]
 										{
 											["q"] = 1,
@@ -48180,346 +50585,350 @@ ARKINVDB = {
 											["age"] = 23784104,
 										}, -- [57]
 										{
-											["q"] = 1,
+											["q"] = 0,
 											["class"] = "item",
 											["age"] = 23781505,
+											["h"] = "|cffffffff|Hitem:111676:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
+											["slot_id"] = 58,
 											["loc_id"] = 3,
 											["count"] = 2,
-											["h"] = "|cffffffff|Hitem:111676:0:0:0:0:0:0:0:100:0:0:0|h[Enormous Jawless Skulker]|h|r",
-											["slot_id"] = 58,
 											["bag_id"] = 9,
 										}, -- [58]
 										{
-											["q"] = 1,
+											["q"] = 0,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["h"] = "|cffffffff|Hitem:111674:0:0:0:0:0:0:0:100:0:0:0|h[Enormous Blind Lake Sturgeon]|h|r",
-											["slot_id"] = 59,
 											["loc_id"] = 3,
 											["count"] = 7,
+											["h"] = "|cffffffff|Hitem:111674:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
+											["slot_id"] = 59,
 											["age"] = 23781505,
 										}, -- [59]
 										{
-											["q"] = 1,
+											["q"] = 0,
 											["class"] = "item",
 											["age"] = 23781505,
+											["h"] = "|cffffffff|Hitem:111673:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
+											["slot_id"] = 60,
 											["loc_id"] = 3,
 											["count"] = 18,
-											["h"] = "|cffffffff|Hitem:111673:0:0:0:0:0:0:0:100:0:0:0|h[Enormous Fire Ammonite]|h|r",
-											["slot_id"] = 60,
 											["bag_id"] = 9,
 										}, -- [60]
 										{
-											["q"] = 1,
+											["q"] = 0,
 											["class"] = "item",
 											["age"] = 23781505,
-											["h"] = "|cffffffff|Hitem:111671:0:0:0:0:0:0:0:100:0:0:0|h[Enormous Abyssal Gulper Eel]|h|r",
-											["slot_id"] = 61,
 											["loc_id"] = 3,
 											["count"] = 13,
+											["h"] = "|cffffffff|Hitem:111671:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
+											["slot_id"] = 61,
 											["bag_id"] = 9,
 										}, -- [61]
 										{
-											["q"] = 1,
+											["q"] = 0,
 											["class"] = "item",
 											["age"] = 23781505,
+											["h"] = "|cffffffff|Hitem:111601:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
+											["count"] = 47,
 											["loc_id"] = 3,
 											["slot_id"] = 62,
-											["h"] = "|cffffffff|Hitem:111601:0:0:0:0:0:0:0:100:0:0:0|h[Enormous Crescent Saberfish]|h|r",
-											["count"] = 47,
 											["bag_id"] = 9,
 										}, -- [62]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 63,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 63,
+											["count"] = 1,
 										}, -- [63]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 64,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 64,
+											["count"] = 1,
 										}, -- [64]
 										{
-											["q"] = 0,
-											["loc_id"] = 3,
-											["slot_id"] = 65,
+											["q"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["loc_id"] = 3,
+											["count"] = 17,
+											["h"] = "|cffffffff|Hitem:109693:0:0:0:0:0:0:0:100:0:0:0|h[Draenic Dust]|h|r",
+											["slot_id"] = 65,
+											["age"] = 23814875,
 										}, -- [65]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 66,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 66,
+											["count"] = 1,
 										}, -- [66]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 67,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 67,
+											["count"] = 1,
 										}, -- [67]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 68,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 68,
+											["count"] = 1,
 										}, -- [68]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 69,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 69,
 										}, -- [69]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 70,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 70,
+											["count"] = 1,
 										}, -- [70]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 71,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 71,
 										}, -- [71]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 72,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 72,
+											["count"] = 1,
 										}, -- [72]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 73,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 73,
 										}, -- [73]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 74,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 74,
 										}, -- [74]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 75,
-											["class"] = "empty",
-											["bag_id"] = 9,
 											["count"] = 1,
+											["class"] = "item",
+											["bag_id"] = 9,
+											["slot_id"] = 75,
 										}, -- [75]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 76,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 76,
 										}, -- [76]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 77,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 77,
 										}, -- [77]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 78,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 78,
 										}, -- [78]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 79,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 79,
+											["count"] = 1,
 										}, -- [79]
 										{
 											["q"] = 0,
-											["loc_id"] = 3,
-											["count"] = 1,
 											["class"] = "item",
-											["bag_id"] = 9,
+											["age"] = 23816529,
+											["h"] = "|cffffffff|Hitem:116053:0:0:0:0:0:0:0:100:0:0:0|h[]|h|r",
+											["count"] = 1,
+											["loc_id"] = 3,
 											["slot_id"] = 80,
+											["bag_id"] = 9,
 										}, -- [80]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 81,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 81,
 										}, -- [81]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 82,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 82,
 										}, -- [82]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 83,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 83,
+											["count"] = 1,
 										}, -- [83]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 84,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 84,
+											["count"] = 1,
 										}, -- [84]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 85,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 85,
 										}, -- [85]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 86,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 86,
 										}, -- [86]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 87,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 87,
+											["count"] = 1,
 										}, -- [87]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 88,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 88,
 										}, -- [88]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 89,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 89,
+											["count"] = 1,
 										}, -- [89]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 90,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 90,
 										}, -- [90]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 91,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 91,
 										}, -- [91]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 92,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 92,
 										}, -- [92]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 93,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 93,
+											["count"] = 1,
 										}, -- [93]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 94,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 94,
 										}, -- [94]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 95,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 95,
+											["count"] = 1,
 										}, -- [95]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 96,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 96,
+											["count"] = 1,
 										}, -- [96]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["count"] = 1,
+											["slot_id"] = 97,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["slot_id"] = 97,
+											["count"] = 1,
 										}, -- [97]
 										{
 											["q"] = 0,
 											["loc_id"] = 3,
-											["slot_id"] = 98,
+											["count"] = 1,
 											["class"] = "item",
 											["bag_id"] = 9,
-											["count"] = 1,
+											["slot_id"] = 98,
 										}, -- [98]
 									},
 									["status"] = -3,
-									["empty"] = 68,
+									["empty"] = 57,
 									["texture"] = "Interface\\Icons\\INV_Box_02",
 								}, -- [9]
 							},
@@ -48551,21 +50960,21 @@ ARKINVDB = {
 											["sb"] = 1,
 											["loc_id"] = 6,
 											["slot_id"] = 1,
-											["age"] = 23798910,
+											["age"] = 23816561,
 										}, -- [1]
 										{
 											["q"] = 4,
 											["h"] = "|cffa335ee|Hitem:113865:0:0:0:0:0:0:0:100:0:5:1:566|h[Darklight Necklace]|h|r",
 											["count"] = 1,
 											["sb"] = 1,
-											["slot_id"] = 2,
-											["bag_id"] = 1,
-											["age"] = 23797436,
 											["loc_id"] = 6,
+											["bag_id"] = 1,
+											["age"] = 23816321,
+											["slot_id"] = 2,
 										}, -- [2]
 										{
 											["q"] = 4,
-											["age"] = 23798910,
+											["age"] = 23816561,
 											["loc_id"] = 6,
 											["slot_id"] = 3,
 											["sb"] = 1,
@@ -48575,7 +50984,7 @@ ARKINVDB = {
 										}, -- [3]
 										{
 											["q"] = 4,
-											["age"] = 23798910,
+											["age"] = 23816561,
 											["h"] = "|cffa335ee|Hitem:113929:0:0:0:0:0:0:0:100:0:5:1:566|h[Cloak of Delving Secrets]|h|r",
 											["count"] = 1,
 											["sb"] = 1,
@@ -48585,17 +50994,17 @@ ARKINVDB = {
 										}, -- [4]
 										{
 											["q"] = 4,
-											["age"] = 23798910,
+											["bag_id"] = 1,
+											["h"] = "|cffa335ee|Hitem:115548:0:0:0:0:0:0:0:100:0:5:1:566|h[Rylakstalker's Tunic]|h|r",
+											["count"] = 1,
+											["sb"] = 1,
 											["loc_id"] = 6,
 											["slot_id"] = 5,
-											["sb"] = 1,
-											["h"] = "|cffa335ee|Hitem:113982:0:0:0:0:0:0:0:100:0:5:1:566|h[Chestguard of the Siegemaker]|h|r",
-											["count"] = 1,
-											["bag_id"] = 1,
+											["age"] = 23816561,
 										}, -- [5]
 										{
 											["q"] = 1,
-											["age"] = 23798910,
+											["age"] = 23816561,
 											["loc_id"] = 6,
 											["slot_id"] = 6,
 											["sb"] = 1,
@@ -48605,7 +51014,7 @@ ARKINVDB = {
 										}, -- [6]
 										{
 											["q"] = 1,
-											["age"] = 23798910,
+											["age"] = 23816561,
 											["h"] = "|cffffffff|Hitem:28788:0:0:0:0:0:0:320225150:100:0:0:0|h[Tabard of the Protector]|h|r",
 											["slot_id"] = 7,
 											["sb"] = 1,
@@ -48615,7 +51024,7 @@ ARKINVDB = {
 										}, -- [7]
 										{
 											["q"] = 4,
-											["age"] = 23798910,
+											["age"] = 23816561,
 											["loc_id"] = 6,
 											["slot_id"] = 8,
 											["sb"] = 1,
@@ -48626,32 +51035,32 @@ ARKINVDB = {
 										{
 											["q"] = 4,
 											["bag_id"] = 1,
-											["h"] = "|cffa335ee|Hitem:113915:0:5349:0:0:0:0:0:100:0:3:1:563|h[Grips of Rekindling]|h|r",
+											["h"] = "|cffa335ee|Hitem:113915:0:0:0:0:0:0:0:100:0:5:1:566|h[Grips of Rekindling]|h|r",
 											["count"] = 1,
 											["sb"] = 1,
 											["loc_id"] = 6,
 											["slot_id"] = 9,
-											["age"] = 23798910,
+											["age"] = 23816561,
 										}, -- [9]
 										{
 											["q"] = 4,
 											["h"] = "|cffa335ee|Hitem:118887:0:0:0:0:0:0:0:100:0:0:0|h[Cloudcaller's Linked Belt]|h|r",
 											["count"] = 1,
 											["sb"] = 1,
-											["slot_id"] = 10,
-											["bag_id"] = 1,
-											["age"] = 23797436,
 											["loc_id"] = 6,
+											["bag_id"] = 1,
+											["age"] = 23816321,
+											["slot_id"] = 10,
 										}, -- [10]
 										{
 											["q"] = 4,
-											["age"] = 23798910,
 											["loc_id"] = 6,
 											["slot_id"] = 11,
 											["sb"] = 1,
-											["h"] = "|cffa335ee|Hitem:115435:0:0:0:0:0:0:0:100:0:0:0|h[Leggings of Flowing Feathers]|h|r",
-											["count"] = 1,
+											["h"] = "|cffa335ee|Hitem:113944:0:0:0:0:0:0:0:100:0:3:0|h[Legguards of the Stampede]|h|r",
+											["age"] = 23816321,
 											["bag_id"] = 1,
+											["count"] = 1,
 										}, -- [11]
 										{
 											["q"] = 4,
@@ -48661,11 +51070,11 @@ ARKINVDB = {
 											["sb"] = 1,
 											["loc_id"] = 6,
 											["slot_id"] = 12,
-											["age"] = 23798910,
+											["age"] = 23816561,
 										}, -- [12]
 										{
 											["q"] = 4,
-											["age"] = 23798910,
+											["age"] = 23816561,
 											["loc_id"] = 6,
 											["slot_id"] = 13,
 											["sb"] = 1,
@@ -48675,8 +51084,8 @@ ARKINVDB = {
 										}, -- [13]
 										{
 											["q"] = 4,
-											["age"] = 23798910,
-											["h"] = "|cffa335ee|Hitem:118302:5327:0:0:0:0:0:0:100:0:11:0|h[Spellbound Solium Band of Fatal Strikes]|h|r",
+											["age"] = 23816561,
+											["h"] = "|cffa335ee|Hitem:118307:5327:0:0:0:0:0:0:100:0:11:0|h[Spellbound Runic Band of Unrelenting Slaughter]|h|r",
 											["count"] = 1,
 											["sb"] = 1,
 											["loc_id"] = 6,
@@ -48685,17 +51094,17 @@ ARKINVDB = {
 										}, -- [14]
 										{
 											["q"] = 4,
-											["bag_id"] = 1,
-											["h"] = "|cffa335ee|Hitem:113853:0:0:0:0:0:0:0:100:0:6:1:567|h[Captive Micro-Aberration]|h|r",
-											["count"] = 1,
-											["sb"] = 1,
+											["age"] = 23816561,
 											["loc_id"] = 6,
 											["slot_id"] = 15,
-											["age"] = 23798910,
+											["sb"] = 1,
+											["h"] = "|cffa335ee|Hitem:113612:0:0:0:0:0:0:0:100:0:6:1:567|h[Scales of Doom]|h|r",
+											["count"] = 1,
+											["bag_id"] = 1,
 										}, -- [15]
 										{
 											["q"] = 4,
-											["age"] = 23798910,
+											["age"] = 23816561,
 											["loc_id"] = 6,
 											["slot_id"] = 16,
 											["sb"] = 1,
@@ -48705,7 +51114,7 @@ ARKINVDB = {
 										}, -- [16]
 										{
 											["q"] = 4,
-											["age"] = 23798910,
+											["age"] = 23816561,
 											["loc_id"] = 6,
 											["slot_id"] = 17,
 											["sb"] = 1,
@@ -48741,8 +51150,8 @@ ARKINVDB = {
 											["sb"] = 1,
 											["h"] = "|cff1eff00|Hcurrency:823|h[Apexis Crystal]|h|r",
 											["bag_id"] = 1,
-											["age"] = 23798833,
-											["count"] = 27358,
+											["age"] = 23816323,
+											["count"] = 33102,
 										}, -- [1]
 										{
 											["q"] = 1,
@@ -48751,8 +51160,8 @@ ARKINVDB = {
 											["sb"] = 1,
 											["h"] = "|cffffffff|Hcurrency:824|h[Garrison Resources]|h|r",
 											["bag_id"] = 1,
-											["age"] = 23798914,
-											["count"] = 5115,
+											["age"] = 23816563,
+											["count"] = 7781,
 										}, -- [2]
 										{
 											["q"] = 1,
@@ -48761,8 +51170,8 @@ ARKINVDB = {
 											["sb"] = 1,
 											["h"] = "|cffffffff|Hcurrency:994|h[Seal of Tempered Fate]|h|r",
 											["bag_id"] = 1,
-											["age"] = 23797522,
-											["count"] = 7,
+											["age"] = 23810432,
+											["count"] = 6,
 										}, -- [3]
 										{
 											["q"] = 1,
@@ -48871,16 +51280,16 @@ ARKINVDB = {
 											["sb"] = 1,
 											["h"] = "|cffffffff|Hcurrency:738|h[Lesser Charm of Good Fortune]|h|r",
 											["bag_id"] = 1,
-											["age"] = 23771613,
-											["count"] = 1416,
+											["age"] = 23814280,
+											["count"] = 1484,
 										}, -- [14]
 										{
 											["q"] = 1,
 											["loc_id"] = 9,
 											["slot_id"] = 15,
 											["sb"] = 1,
-											["count"] = 136022,
-											["age"] = 23771613,
+											["count"] = 139211,
+											["age"] = 23814280,
 											["bag_id"] = 1,
 											["h"] = "|cffffffff|Hcurrency:777|h[Timeless Coin]|h|r",
 										}, -- [15]
@@ -49108,10 +51517,10 @@ ARKINVDB = {
 											["loc_id"] = 13,
 											["count"] = 1,
 											["sb"] = 1,
-											["slot_id"] = 18,
-											["did"] = 13,
-											["age"] = 23755971,
+											["age"] = 23814689,
 											["bag_id"] = 1,
+											["did"] = 13,
+											["slot_id"] = 18,
 										}, -- [18]
 										{
 											["loc_id"] = 13,
@@ -50339,13 +52748,14 @@ ARKINVDB = {
 											["did"] = 68,
 										}, -- [63]
 										{
+											["q"] = 1,
 											["loc_id"] = 13,
-											["slot_id"] = 64,
-											["sb"] = 1,
 											["count"] = 1,
-											["bag_id"] = 2,
-											["age"] = 23555793,
+											["sb"] = 1,
+											["h"] = "|cffffffff|Hitem:118918:0:0:0:0:0:0:0:100:0:0:0|h[Bloody Bandanna]|h|r",
 											["did"] = 78,
+											["bag_id"] = 2,
+											["slot_id"] = 64,
 										}, -- [64]
 										{
 											["loc_id"] = 13,
@@ -50516,7 +52926,7 @@ ARKINVDB = {
 										}, -- [80]
 									},
 									["status"] = -3,
-									["empty"] = 64,
+									["empty"] = 63,
 								}, -- [2]
 							},
 						},
@@ -54069,7 +56479,7 @@ ARKINVDB = {
 								}, -- [1]
 								{
 									["type"] = 15,
-									["count"] = 69,
+									["count"] = 71,
 									["slot"] = {
 										{
 											["q"] = 1,
@@ -54623,11 +57033,27 @@ ARKINVDB = {
 											["bag_id"] = 2,
 											["slot_id"] = 69,
 										}, -- [69]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113264:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Air]|h|r",
+											["count"] = 20,
+											["loc_id"] = 5,
+											["bag_id"] = 2,
+											["slot_id"] = 70,
+										}, -- [70]
+										{
+											["q"] = 2,
+											["h"] = "|cff1eff00|Hitem:113264:0:0:0:0:0:0:0:100:0:0:0|h[Sorcerous Air]|h|r",
+											["count"] = 10,
+											["slot_id"] = 71,
+											["bag_id"] = 2,
+											["loc_id"] = 5,
+										}, -- [71]
 									},
 									["status"] = -3,
 								}, -- [2]
 							},
-							["slot_count"] = 69,
+							["slot_count"] = 71,
 						},
 						[6] = {
 							["slot_count"] = 18,
@@ -54958,11 +57384,13 @@ ARKINVDB = {
 					["item:114808:1"] = "2!8",
 					["item:64399:1"] = "2!4",
 					["item:118381:1"] = "1!107",
+					["item:119093:1"] = "2!4",
 					["item:86592:0"] = "2!4",
 					["item:122580:1"] = "2!8",
 					["item:110274:0"] = "1!107",
 					["item:107640:0"] = "2!13",
 					["item:109262:1"] = "2!4",
+					["item:122273:1"] = "2!8",
 					["item:2820:1"] = "2!7",
 					["item:119134:1"] = "2!12",
 					["item:116113:1"] = "2!12",
@@ -55048,15 +57476,15 @@ ARKINVDB = {
 				},
 				["anchor"] = {
 					{
-						["b"] = 317.852172851563,
-						["l"] = 791.000122070313,
-						["t"] = 1034.85217285156,
-						["r"] = 1489.00012207031,
+						["b"] = 365.851898193359,
+						["l"] = 1010.99969482422,
+						["t"] = 1082.85192871094,
+						["r"] = 1688.99975585938,
 					}, -- [1]
 					nil, -- [2]
 					{
 						["b"] = 0,
-						["t"] = 1264,
+						["t"] = 1305.00012207031,
 						["r"] = 918.999389648438,
 						["l"] = 220.999420166016,
 					}, -- [3]

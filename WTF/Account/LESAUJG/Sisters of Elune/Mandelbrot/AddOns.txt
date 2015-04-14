@@ -21,7 +21,7 @@ ActionBarSaver: disabled
 Overachiever: enabled
 Overachiever_Tabs: enabled
 Overachiever_Trade: enabled
-Tukui_ConfigUI: enabled
+Tukui_ConfigUI: disabled
 Tukui: enabled
 Tukui_Config: enabled
 ArkInventory: disabled
@@ -83,7 +83,7 @@ RareCoordinator: enabled
 BagBrother: disabled
 BittensSpellFlash_Hunter: disabled
 Basic_Resources: disabled
-Claw: enabled
+Claw: disabled
 HandyNotes_DraenorTreasures: enabled
 LiteMount: enabled
 MasterPlan: enabled

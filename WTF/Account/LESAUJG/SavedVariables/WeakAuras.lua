@@ -1,70 +1,71 @@
 
 WeakAurasSaved = {
 	["displays"] = {
-		["6 stacks p3"] = {
+		["Exotic Munitions"] = {
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
-				1, -- [4]
+				0.800000011920929, -- [4]
 			},
-			["yOffset"] = 0,
+			["untrigger"] = {
+			},
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (47y) on \"..name, \"SAY\")",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["do_custom"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["icon"] = true,
 			["fontFlags"] = "OUTLINE",
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
+					["type"] = "preset",
 					["duration_type"] = "seconds",
+					["preset"] = "shrink",
 				},
 				["main"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
+					["type"] = "preset",
 					["duration_type"] = "seconds",
+					["preset"] = "shrink",
 				},
 			},
 			["trigger"] = {
 				["type"] = "aura",
 				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
+				["event"] = "Health",
 				["names"] = {
-					"Branded: Fortification", -- [1]
+					"Poisoned Ammo", -- [1]
+					"Incendiary Ammo", -- [2]
+					"Frozen Ammo", -- [3]
 				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "6",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
 				["spellIds"] = {
 				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
+				["debuffType"] = "HELPFUL",
+				["subeventPrefix"] = "SPELL",
+				["inverse"] = true,
+				["unit"] = "player",
+				["custom_hide"] = "timed",
 			},
 			["desaturate"] = false,
+			["progressPrecision"] = 0,
 			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
+			["height"] = 34,
 			["load"] = {
 				["talent"] = {
+					["single"] = 19,
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						[2] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -76,14 +77,8 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["zone"] = "Highmaul",
-				["use_zone"] = true,
-				["use_combat"] = true,
-				["spec"] = {
+				["class"] = {
+					["single"] = "HUNTER",
 					["multi"] = {
 					},
 				},
@@ -92,27 +87,59 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
+			["fontSize"] = 18,
+			["displayStacks"] = "%c",
 			["regionType"] = "icon",
-			["parent"] = "Arcane Wrath(p3)",
+			["parent"] = "Hunter Group v2.0",
+			["init_completed"] = 1,
+			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["xOffset"] = 0,
-			["id"] = "6 stacks p3",
+			["disjunctive"] = true,
+			["id"] = "Exotic Munitions",
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
-			["width"] = 70,
-			["additional_triggers"] = {
-			},
-			["untrigger"] = {
-			},
+			["width"] = 34,
 			["inverse"] = false,
-			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
-			["stacksPoint"] = "BOTTOM",
+			["yOffset"] = 0.999755859375,
+			["numTriggers"] = 2,
+			["xOffset"] = -144.999633789063,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = true,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["useRem"] = true,
+						["spellIds"] = {
+						},
+						["rem"] = "300",
+						["remOperator"] = "<=",
+						["names"] = {
+							"Poisoned Ammo", -- [1]
+							"Incendiary Ammo", -- [2]
+							"Frozen Ammo", -- [3]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+			},
+			["displayIcon"] = "Interface\\Icons\\inv_ammo_bullet_07",
+			["stacksPoint"] = "CENTER",
 			["textColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -120,27 +147,18 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
-		["7 stacks p3"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+		["Focus Fire General"] = {
+			["xOffset"] = 0,
+			["untrigger"] = {
 			},
-			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
 			["actions"] = {
 				["start"] = {
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (35y) on \"..name, \"SAY\")",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["do_custom"] = true,
-				},
-				["init"] = {
 				},
 				["finish"] = {
+				},
+				["init"] = {
 				},
 			},
 			["fontFlags"] = "OUTLINE",
@@ -150,7 +168,8 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 				["main"] = {
-					["type"] = "none",
+					["type"] = "preset",
+					["preset"] = "bounce",
 					["duration_type"] = "seconds",
 				},
 				["finish"] = {
@@ -161,34 +180,23 @@ WeakAurasSaved = {
 			["trigger"] = {
 				["type"] = "aura",
 				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
+				["event"] = "Health",
 				["names"] = {
-					"Branded: Fortification", -- [1]
+					"Focus Fire", -- [1]
 				},
-				["debuffType"] = "HARMFUL",
-				["useCount"] = true,
-				["count"] = "7",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
 				["spellIds"] = {
 				},
-				["event"] = "Health",
 				["custom_hide"] = "timed",
+				["unit"] = "player",
+				["inverse"] = true,
+				["subeventPrefix"] = "SPELL",
+				["debuffType"] = "HELPFUL",
 			},
 			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
+			["font"] = "Expressway",
+			["height"] = 64,
 			["load"] = {
-				["zone"] = "Highmaul",
-				["class"] = {
-					["multi"] = {
-					},
-				},
 				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -196,12 +204,19 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_never"] = true,
 				["talent"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = true,
-				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
 				["spec"] = {
 					["multi"] = {
 					},
@@ -211,26 +226,52 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
+			["fontSize"] = 24,
+			["displayStacks"] = " ",
 			["regionType"] = "icon",
-			["parent"] = "Arcane Wrath(p3)",
+			["parent"] = "Azor's Focus Fire Group",
+			["icon"] = true,
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["xOffset"] = 0,
+			["id"] = "Focus Fire General",
 			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["custom_hide"] = "timed",
+						["useCount"] = true,
+						["spellIds"] = {
+						},
+						["count"] = "5",
+						["countOperator"] = "==",
+						["names"] = {
+							"Frenzy", -- [1]
+						},
+						["unit"] = "pet",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
 			},
-			["stickyDuration"] = false,
+			["yOffset"] = 0,
 			["frameStrata"] = 1,
-			["width"] = 70,
-			["id"] = "7 stacks p3",
-			["untrigger"] = {
-			},
+			["width"] = 64,
+			["stickyDuration"] = false,
+			["numTriggers"] = 2,
 			["inverse"] = false,
-			["numTriggers"] = 1,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["selfPoint"] = "CENTER",
-			["icon"] = true,
+			["displayIcon"] = "INTERFACE\\ICONS\\ability_hunter_focusfire",
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
@@ -239,27 +280,178 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
-		["8 stacks p3"] = {
+		["Focus Fire 5"] = {
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["yOffset"] = 0,
+			["untrigger"] = {
+			},
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["ownOnly"] = true,
+				["countOperator"] = "==",
+				["names"] = {
+					"Frenzy", -- [1]
+				},
+				["debuffType"] = "HELPFUL",
+				["useCount"] = true,
+				["count"] = "5",
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 38,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%s",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["selfPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = false,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = true,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["debuffType"] = "HELPFUL",
+						["spellIds"] = {
+						},
+						["unit"] = "player",
+						["names"] = {
+							"The Beast Within", -- [1]
+						},
+						["custom_hide"] = "timed",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = true,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Focus Fire", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
+			},
+			["id"] = "Focus Fire 5",
+			["xOffset"] = -44,
+			["frameStrata"] = 1,
+			["width"] = 38,
 			["actions"] = {
 				["start"] = {
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (26y) on \"..name, \"SAY\")",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["do_custom"] = true,
+					["do_glow"] = true,
+					["glow_action"] = "show",
+					["glow_frame"] = "WeakAuras:Focus Fire 5",
 				},
 				["init"] = {
 				},
 				["finish"] = {
+				},
+			},
+			["inverse"] = false,
+			["numTriggers"] = 3,
+			["yOffset"] = 44,
+			["stickyDuration"] = false,
+			["displayIcon"] = "INTERFACE\\ICONS\\ability_hunter_focusfire",
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Focus Fire Delay if BW"] = {
+			["xOffset"] = 0,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
 				},
 			},
 			["fontFlags"] = "OUTLINE",
@@ -269,7 +461,8 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 				["main"] = {
-					["type"] = "none",
+					["preset"] = "bounce",
+					["type"] = "preset",
 					["duration_type"] = "seconds",
 				},
 				["finish"] = {
@@ -280,37 +473,23 @@ WeakAurasSaved = {
 			["trigger"] = {
 				["type"] = "aura",
 				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
+				["event"] = "Health",
 				["names"] = {
-					"Branded: Fortification", -- [1]
+					"Focus Fire", -- [1]
 				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "8",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
 				["spellIds"] = {
 				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
+				["custom_hide"] = "timed",
+				["unit"] = "player",
+				["inverse"] = true,
+				["subeventPrefix"] = "SPELL",
+				["debuffType"] = "HELPFUL",
 			},
 			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
+			["font"] = "Expressway",
+			["height"] = 64,
 			["load"] = {
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
 				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -318,9 +497,19 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["zone"] = "Highmaul",
-				["use_zone"] = true,
-				["use_combat"] = true,
+				["use_never"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
 				["spec"] = {
 					["multi"] = {
 					},
@@ -330,145 +519,96 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
+			["fontSize"] = 24,
+			["displayStacks"] = " DELAY",
 			["regionType"] = "icon",
-			["parent"] = "Arcane Wrath(p3)",
+			["parent"] = "Azor's Focus Fire Group",
+			["icon"] = true,
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["xOffset"] = 0,
+			["id"] = "Focus Fire Delay if BW",
 			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["debuffType"] = "HELPFUL",
+						["useCount"] = true,
+						["spellIds"] = {
+						},
+						["unit"] = "pet",
+						["names"] = {
+							"Frenzy", -- [1]
+						},
+						["countOperator"] = "==",
+						["count"] = "5",
+						["custom_hide"] = "timed",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["spellName"] = 19574,
+						["subeventSuffix"] = "_CAST_START",
+						["use_showOn"] = true,
+						["remaining_operator"] = ">",
+						["event"] = "Cooldown Progress (Spell)",
+						["subeventPrefix"] = "SPELL",
+						["use_remaining"] = true,
+						["remaining"] = "10",
+						["unit"] = "player",
+						["unevent"] = "auto",
+						["showOn"] = "showOnCooldown",
+						["use_unit"] = true,
+						["use_spellName"] = true,
+						["custom_hide"] = "timed",
+					},
+					["untrigger"] = {
+						["spellName"] = 19574,
+					},
+				}, -- [2]
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["spellName"] = 19574,
+						["subeventSuffix"] = "_CAST_START",
+						["use_showOn"] = true,
+						["remaining_operator"] = "<",
+						["event"] = "Cooldown Progress (Spell)",
+						["subeventPrefix"] = "SPELL",
+						["use_remaining"] = true,
+						["use_spellName"] = true,
+						["unit"] = "player",
+						["unevent"] = "auto",
+						["showOn"] = "showOnCooldown",
+						["use_unit"] = true,
+						["remaining"] = "19",
+						["custom_hide"] = "timed",
+					},
+					["untrigger"] = {
+						["spellName"] = 19574,
+					},
+				}, -- [3]
 			},
-			["stickyDuration"] = false,
+			["yOffset"] = 0,
 			["frameStrata"] = 1,
-			["width"] = 70,
-			["id"] = "8 stacks p3",
-			["untrigger"] = {
-			},
+			["width"] = 64,
+			["stickyDuration"] = false,
+			["numTriggers"] = 4,
 			["inverse"] = false,
-			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
-			["stacksPoint"] = "BOTTOM",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["9 stacks p3"] = {
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (20y) on \"..name, \"SAY\")",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["do_custom"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["debuffType"] = "HARMFUL",
-				["useCount"] = true,
-				["count"] = "9",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
-			["load"] = {
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["zone"] = "Highmaul",
-				["use_zone"] = true,
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["parent"] = "Arcane Wrath(p3)",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["xOffset"] = 0,
-			["id"] = "9 stacks p3",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["additional_triggers"] = {
-			},
-			["untrigger"] = {
-			},
-			["inverse"] = false,
-			["numTriggers"] = 1,
 			["selfPoint"] = "CENTER",
-			["icon"] = true,
+			["displayIcon"] = "INTERFACE\\ICONS\\ability_hunter_focusfire",
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
@@ -477,80 +617,336 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
-		["Highmaul - Imperator Mar'gok - Arcane Wrath Next"] = {
-			["outline"] = true,
-			["xOffset"] = -124,
-			["displayText"] = "NEXT",
-			["yOffset"] = -86,
+		["Barrage CD"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["untrigger"] = {
+				["spellName"] = 120360,
+			},
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["subeventSuffix"] = "_CAST_START",
+				["use_showOn"] = true,
+				["use_unit"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["unevent"] = "auto",
+				["showOn"] = "showOnCooldown",
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+				["spellName"] = 120360,
+			},
+			["desaturate"] = true,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 38,
+			["load"] = {
+				["talent"] = {
+					["single"] = 18,
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "  %p",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["cooldown"] = true,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["selfPoint"] = "CENTER",
+			["additional_triggers"] = {
+			},
+			["id"] = "Barrage CD",
+			["frameStrata"] = 2,
+			["width"] = 38,
+			["xOffset"] = 44,
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["yOffset"] = 44,
+			["stickyDuration"] = false,
 			["actions"] = {
 				["start"] = {
-					["do_custom"] = false,
-					["custom"] = "-- ON SHOW\nlocal id = 'HighmaulMargokArcaneWrath'\nlocal auras = {\n    {id = 156225, name = \"Branded\",                base_damage = 75000, damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 164004, name = \"Branded: Displacement\",  base_damage = 75000, damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 164005, name = \"Branded: Fortification\", base_damage = 75000, damage_increase = 0.25, distance_reduction = 0.25},\n    {id = 164006, name = \"Branded: Replication\",   base_damage = 75000, damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 119611, name = \"Renewing Mist\",          base_damage = 75000, damage_increase = 0.25, distance_reduction = 0.5},\n} \n\nlocal SetValue = function(value, ...)\n    if not WeakAuras.CustomValues then WeakAuras.CustomValues = {} end\n    if not ... then return end\n    local count, data = #{...}\n    for i,v in pairs({...}) do\n        if i==1 then if count and count == 1 then WeakAuras.CustomValues[v] = value else\n                WeakAuras.CustomValues[v] = WeakAuras.CustomValues[v] or {}\n                data = WeakAuras.CustomValues[v] end\n        else if i ~= count then if not data[v] then data[v] = {} end data = data[v] else data[v] = value end end\n    end\nend\n\nlocal affectedUnits = nil\n-- Loop through raid members        \nlocal numPlayers = GetNumGroupMembers()\nfor i = 1, numPlayers do\n    local unitId = IsInRaid() and \"raid\"..i or \"party\"..i\n    for iAura,vAura in pairs(auras) do\n        local auraName, _, _, auraStack = UnitAura(unitId, vAura.name)\n        -- Has aura            \n        if auraName then\n            auraStack = auraStack or 1\n            -- Add to list\n            affectedUnits = affectedUnits or {}\n            -- Calculate info\n            affectedUnits[unitId] = {\n                id = vAura.id, \n                currentDistance = 200*(1-vAura.distance_reduction)^(auraStack-1),\n                nextDistance    = 200*(1-vAura.distance_reduction)^(auraStack+1-1),\n                currentDamage   = vAura.base_damage + vAura.base_damage * (auraStack - 1) * vAura.damage_increase,\n                nextDamage      = vAura.base_damage + vAura.base_damage * (auraStack+1 - 1) * vAura.damage_increase,\n            }                \n        end\n    end\nend\nSetValue(affectedUnits, id, 'affectedUnits')",
 				},
 				["init"] = {
 				},
 				["finish"] = {
-					["do_custom"] = false,
-					["custom"] = "-- ON HIDE\nlocal id = 'HighmaulMargokArcaneWrath'\nlocal SetValue = function(value, ...)\n    if not WeakAuras.CustomValues then WeakAuras.CustomValues = {} end\n    if not ... then return end\n    local count, data = #{...}\n    for i,v in pairs({...}) do\n        if i==1 then if count and count == 1 then WeakAuras.CustomValues[v] = value else\n                WeakAuras.CustomValues[v] = WeakAuras.CustomValues[v] or {}\n                data = WeakAuras.CustomValues[v] end\n        else if i ~= count then if not data[v] then data[v] = {} end data = data[v] else data[v] = value end end\n    end\nend\nSetValue(nil, id, 'affectedUnits')",
 				},
 			},
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Dire Beast Up"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
 			["fontFlags"] = "OUTLINE",
-			["selfPoint"] = "CENTER",
-			["trigger"] = {
-				["stack_info"] = "stack",
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["name_info"] = "players",
-				["unit"] = "group",
-				["debuffType"] = "HARMFUL",
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Fortification", -- [3]
-					"Branded: Replication", -- [4]
-					"Venom Splash", -- [5]
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "event",
+				["debuffType"] = "HELPFUL",
+				["subeventSuffix"] = "_CAST_SUCCESS",
+				["unit"] = "player",
+				["duration"] = "15",
+				["event"] = "Combat Log",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
 				["spellIds"] = {
 				},
+				["use_sourceunit"] = true,
+				["unevent"] = "timed",
+				["sourceunit"] = "player",
+				["spellName"] = "Dire Beast",
 				["custom_hide"] = "timed",
-				["group_count"] = "0",
-				["subeventPrefix"] = "SPELL",
-				["event"] = "Health",
-				["group_countOperator"] = ">",
 			},
 			["desaturate"] = false,
-			["discrete_rotation"] = 0,
-			["font"] = "DorisPP",
-			["height"] = 14.7199821472168,
-			["rotate"] = true,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 32,
+			["load"] = {
+				["talent"] = {
+					["single"] = 11,
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%p",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["selfPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["id"] = "Dire Beast Up",
+			["additional_triggers"] = {
+			},
+			["xOffset"] = -105,
+			["frameStrata"] = 1,
+			["width"] = 32,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["stickyDuration"] = false,
+			["yOffset"] = 44,
+			["displayIcon"] = "INTERFACE\\ICONS\\ability_hunter_sickem",
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["No Lone Wolf Haste"] = {
+			["disjunctive"] = false,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["spellId"] = "160200",
+				["subeventSuffix"] = "_CAST_START",
+				["ownOnly"] = true,
+				["event"] = "Health",
+				["names"] = {
+					"Lone Wolf: Ferocity of the Raptor", -- [1]
+					"Lone Wolf: Grace of the Cat", -- [2]
+					"Lone Wolf: Fortitude of the Bear", -- [3]
+					"Lone Wolf: Haste of the Hyena", -- [4]
+					"Lone Wolf: Wisdom of the Serpent", -- [5]
+					"Lone Wolf: Power of the Primates", -- [6]
+					"Lone Wolf: Versatility of the Ravager", -- [7]
+					"Lone Wolf: Quickness of the Dragonhawk", -- [8]
+				},
+				["debuffType"] = "HELPFUL",
+				["use_spellId"] = true,
+				["name"] = "Lone Wolf: Ferocity of the Raptor",
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["inverse"] = true,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
 			["load"] = {
 				["use_never"] = false,
-				["zone"] = "Highmaul",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["race"] = {
-					["multi"] = {
-					},
-				},
 				["talent"] = {
+					["single"] = 21,
 					["multi"] = {
 					},
 				},
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
 				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_combat"] = true,
-				["spec"] = {
+				["use_spec"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -559,46 +955,454 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["fontSize"] = 15,
-			["displayStacks"] = "%s",
-			["mirror"] = false,
-			["regionType"] = "text",
-			["blendMode"] = "BLEND",
-			["untrigger"] = {
+			["fontSize"] = 18,
+			["displayStacks"] = "%c",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["init_completed"] = 1,
+			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
-			["rotation"] = 0,
-			["texture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura110",
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["icon"] = true,
-			["id"] = "Highmaul - Imperator Mar'gok - Arcane Wrath Next",
-			["additional_triggers"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.800000011920929, -- [4]
 			},
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "custom",
+						["unevent"] = "auto",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
+						["events"] = "UNIT_PET",
+						["subeventSuffix"] = "_CAST_START",
+						["check"] = "event",
+						["use_unit"] = true,
+						["custom_type"] = "status",
+						["custom"] = "function()\n  return not UnitExists(\"pet\")\nend",
+					},
+					["untrigger"] = {
+						["custom"] = "function()\n  return UnitExists(\"pet\")\nend",
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Grace of Air", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Mind Quickening", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [3]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Swiftblade's Cunning", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [4]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Lone Wolf: Haste of the Hyena", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [5]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["custom_hide"] = "timed",
+						["inverse"] = true,
+						["names"] = {
+							"Cackling Howl", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [6]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Energizing Spores", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [7]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Savage Vigor", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [8]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Speed of the Swarm", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [9]
+			},
+			["xOffset"] = -145,
 			["frameStrata"] = 1,
-			["width"] = 42.8800163269043,
+			["width"] = 34,
+			["inverse"] = false,
+			["stickyDuration"] = false,
+			["numTriggers"] = 10,
+			["yOffset"] = 1,
+			["id"] = "No Lone Wolf Haste",
+			["displayIcon"] = "Interface\\Icons\\spell_hunter_lonewolf",
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["No Trap Launcher"] = {
+			["disjunctive"] = true,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["ownOnly"] = true,
+				["event"] = "Health",
+				["names"] = {
+					"Trap Launcher", -- [1]
+				},
+				["inverse"] = true,
+				["debuffType"] = "HELPFUL",
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["single"] = 19,
+					["multi"] = {
+						[19] = true,
+					},
+				},
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						[2] = true,
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%c",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["init_completed"] = 1,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["selfPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.800000011920929, -- [4]
+			},
+			["id"] = "No Trap Launcher",
+			["xOffset"] = 142.00048828125,
+			["frameStrata"] = 1,
+			["width"] = 34,
+			["inverse"] = false,
 			["stickyDuration"] = false,
 			["numTriggers"] = 1,
-			["inverse"] = false,
-			["justify"] = "LEFT",
+			["yOffset"] = 1.99969482421875,
+			["additional_triggers"] = {
+			},
+			["displayIcon"] = "INTERFACE\\ICONS\\ability_hunter_traplauncher",
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Glaive Toss Ready 2"] = {
+			["xOffset"] = 44,
+			["untrigger"] = {
+				["spellName"] = 117050,
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["subeventSuffix"] = "_CAST_START",
+				["use_showOn"] = true,
+				["use_unit"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["unevent"] = "auto",
+				["showOn"] = "showOnReady",
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+				["spellName"] = 117050,
+			},
+			["desaturate"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 38,
+			["load"] = {
+				["talent"] = {
+					["single"] = 16,
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = " ",
+			["regionType"] = "icon",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["animation"] = {
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Hunter Group v2.0",
+			["additional_triggers"] = {
+			},
+			["selfPoint"] = "CENTER",
+			["frameStrata"] = 1,
+			["width"] = 38,
+			["id"] = "Glaive Toss Ready 2",
+			["yOffset"] = 44,
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["stickyDuration"] = false,
+			["actions"] = {
 				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
 				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
+				["init"] = {
 				},
 				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
 				},
 			},
 			["stacksPoint"] = "BOTTOMRIGHT",
@@ -609,7 +1413,611 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
-		["Highmaul - Imperator Mar'gok - Arcane Wrath Active Self"] = {
+		["Barrage Ready"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["yOffset"] = 44,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["subeventSuffix"] = "_CAST_START",
+				["use_showOn"] = true,
+				["use_unit"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["unevent"] = "auto",
+				["showOn"] = "showOnReady",
+				["unit"] = "player",
+				["spellName"] = 120360,
+				["custom_hide"] = "timed",
+			},
+			["stickyDuration"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 38,
+			["load"] = {
+				["talent"] = {
+					["single"] = 18,
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = " ",
+			["regionType"] = "icon",
+			["xOffset"] = 44,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Hunter Group v2.0",
+			["additional_triggers"] = {
+			},
+			["desaturate"] = false,
+			["frameStrata"] = 1,
+			["width"] = 38,
+			["selfPoint"] = "CENTER",
+			["untrigger"] = {
+				["spellName"] = 120360,
+			},
+			["numTriggers"] = 1,
+			["id"] = "Barrage Ready",
+			["inverse"] = false,
+			["icon"] = true,
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Focus Fire"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["ownOnly"] = true,
+				["countOperator"] = "==",
+				["names"] = {
+					"Focus Fire", -- [1]
+				},
+				["debuffType"] = "HELPFUL",
+				["count"] = "5",
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 38,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%p",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["selfPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["additional_triggers"] = {
+			},
+			["id"] = "Focus Fire",
+			["xOffset"] = -44,
+			["frameStrata"] = 1,
+			["width"] = 38,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["stickyDuration"] = false,
+			["yOffset"] = 44,
+			["displayIcon"] = "Interface\\Icons\\INV_Misc_MonsterClaw_03",
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["No Lone Wolf Crit"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.800000011920929, -- [4]
+			},
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["spellId"] = "160200",
+				["subeventSuffix"] = "_CAST_START",
+				["ownOnly"] = true,
+				["event"] = "Health",
+				["names"] = {
+					"Lone Wolf: Ferocity of the Raptor", -- [1]
+					"Lone Wolf: Grace of the Cat", -- [2]
+					"Lone Wolf: Fortitude of the Bear", -- [3]
+					"Lone Wolf: Haste of the Hyena", -- [4]
+					"Lone Wolf: Wisdom of the Serpent", -- [5]
+					"Lone Wolf: Power of the Primates", -- [6]
+					"Lone Wolf: Versatility of the Ravager", -- [7]
+					"Lone Wolf: Quickness of the Dragonhawk", -- [8]
+				},
+				["debuffType"] = "HELPFUL",
+				["use_spellId"] = true,
+				["name"] = "Lone Wolf: Ferocity of the Raptor",
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["inverse"] = true,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["single"] = 21,
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%c",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["init_completed"] = 1,
+			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["xOffset"] = -145,
+			["id"] = "No Lone Wolf Crit",
+			["disjunctive"] = false,
+			["frameStrata"] = 1,
+			["width"] = 14,
+			["inverse"] = false,
+			["stickyDuration"] = false,
+			["numTriggers"] = 13,
+			["yOffset"] = 1,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "custom",
+						["unevent"] = "auto",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["events"] = "UNIT_PET",
+						["custom"] = "function()\n  return not UnitExists(\"pet\")\nend",
+						["custom_type"] = "status",
+						["check"] = "event",
+						["use_unit"] = true,
+						["subeventSuffix"] = "_CAST_START",
+						["unit"] = "player",
+					},
+					["untrigger"] = {
+						["custom"] = "function()\n  return UnitExists(\"pet\")\nend",
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["inverse"] = true,
+						["unit"] = "player",
+						["names"] = {
+							"Arcane Brilliance", -- [1]
+						},
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["inverse"] = true,
+						["unit"] = "player",
+						["names"] = {
+							"Leader of the Pack", -- [1]
+						},
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [3]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["inverse"] = true,
+						["unit"] = "player",
+						["names"] = {
+							"Legacy of the White Tiger", -- [1]
+						},
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [4]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["inverse"] = true,
+						["unit"] = "player",
+						["names"] = {
+							"Lone Wolf: Ferocity of the Raptor", -- [1]
+						},
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [5]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["debuffType"] = "HELPFUL",
+						["unit"] = "player",
+						["names"] = {
+							"Embrace of the Shale Spider", -- [1]
+						},
+						["inverse"] = true,
+						["custom_hide"] = "timed",
+					},
+					["untrigger"] = {
+					},
+				}, -- [6]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["inverse"] = true,
+						["unit"] = "player",
+						["names"] = {
+							"Fearless Roar", -- [1]
+						},
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [7]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["inverse"] = true,
+						["unit"] = "player",
+						["names"] = {
+							"Furious Howl", -- [1]
+						},
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [8]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["inverse"] = true,
+						["unit"] = "player",
+						["names"] = {
+							"Still Water", -- [1]
+						},
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [9]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["inverse"] = true,
+						["unit"] = "player",
+						["names"] = {
+							"Strength of the Pack", -- [1]
+						},
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [10]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["inverse"] = true,
+						["unit"] = "player",
+						["names"] = {
+							"Terrifying Roar", -- [1]
+						},
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [11]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["inverse"] = true,
+						["unit"] = "player",
+						["names"] = {
+							"Dalaran Brilliance", -- [1]
+						},
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [12]
+			},
+			["displayIcon"] = "Interface\\Icons\\spell_hunter_lonewolf",
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["ES Proc"] = {
 			["xOffset"] = 0,
 			["untrigger"] = {
 			},
@@ -617,6 +2025,3983 @@ WeakAurasSaved = {
 			["customTextUpdate"] = "update",
 			["icon"] = true,
 			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["unevent"] = "auto",
+				["debuffType"] = "HELPFUL",
+				["ownOnly"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["subeventSuffix"] = "_CAST_START",
+				["unit"] = "player",
+				["names"] = {
+					"Lock and Load", -- [1]
+				},
+				["spellName"] = 0,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 44,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 24,
+			["displayStacks"] = "%s",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["selfPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = false,
+			["id"] = "ES Proc",
+			["additional_triggers"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["frameStrata"] = 1,
+			["width"] = 44,
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = true,
+					["glow_frame"] = "WeakAuras:ES Proc",
+					["glow_action"] = "show",
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["stickyDuration"] = false,
+			["yOffset"] = 44,
+			["displayIcon"] = "Interface\\Icons\\Ability_Hunter_ExplosiveShot",
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Bestial Wrath"] = {
+			["xOffset"] = 101.999877929688,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["preset"] = "shrink",
+					["duration_type"] = "seconds",
+					["type"] = "preset",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["preset"] = "shrink",
+					["duration_type"] = "seconds",
+					["type"] = "preset",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["names"] = {
+					"Bestial Wrath", -- [1]
+				},
+				["spellIds"] = {
+				},
+				["custom_hide"] = "timed",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["debuffType"] = "HELPFUL",
+			},
+			["desaturate"] = false,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%p",
+			["regionType"] = "icon",
+			["init_completed"] = 1,
+			["parent"] = "Hunter Group v2.0",
+			["selfPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = false,
+			["additional_triggers"] = {
+			},
+			["id"] = "Bestial Wrath",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.800000011920929, -- [4]
+			},
+			["frameStrata"] = 1,
+			["width"] = 34,
+			["stickyDuration"] = false,
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["yOffset"] = 116.000030517578,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["displayIcon"] = "Interface\\Icons\\Ability_Druid_FerociousBite",
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["No Lone Wolf Multistrike"] = {
+			["xOffset"] = -145,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["spellId"] = "160200",
+				["subeventSuffix"] = "_CAST_START",
+				["ownOnly"] = true,
+				["event"] = "Health",
+				["names"] = {
+					"Lone Wolf: Ferocity of the Raptor", -- [1]
+					"Lone Wolf: Grace of the Cat", -- [2]
+					"Lone Wolf: Fortitude of the Bear", -- [3]
+					"Lone Wolf: Haste of the Hyena", -- [4]
+					"Lone Wolf: Wisdom of the Serpent", -- [5]
+					"Lone Wolf: Power of the Primates", -- [6]
+					"Lone Wolf: Versatility of the Ravager", -- [7]
+					"Lone Wolf: Quickness of the Dragonhawk", -- [8]
+				},
+				["debuffType"] = "HELPFUL",
+				["use_spellId"] = true,
+				["name"] = "Lone Wolf: Ferocity of the Raptor",
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["inverse"] = true,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["single"] = 21,
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%c",
+			["regionType"] = "icon",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["init_completed"] = 1,
+			["parent"] = "Hunter Group v2.0",
+			["selfPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.800000011920929, -- [4]
+			},
+			["id"] = "No Lone Wolf Multistrike",
+			["disjunctive"] = false,
+			["frameStrata"] = 1,
+			["width"] = 34,
+			["inverse"] = false,
+			["stickyDuration"] = false,
+			["numTriggers"] = 10,
+			["yOffset"] = 1,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "custom",
+						["unevent"] = "auto",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
+						["custom"] = "function()\n  return not UnitExists(\"pet\")\nend",
+						["subeventSuffix"] = "_CAST_START",
+						["check"] = "event",
+						["use_unit"] = true,
+						["custom_type"] = "status",
+						["events"] = "UNIT_PET",
+					},
+					["untrigger"] = {
+						["custom"] = "function()\n  return UnitExists(\"pet\")\nend",
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Dark Intent", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Mind Quickening", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [3]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Swiftblade's Cunning", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [4]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Windflurry", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [5]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["custom_hide"] = "timed",
+						["inverse"] = true,
+						["names"] = {
+							"Lone Wolf: Quickness of the Dragonhawk", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [6]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Breath of the Winds", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [7]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Double Bite", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [8]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Wild Strength", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [9]
+			},
+			["displayIcon"] = "Interface\\Icons\\spell_hunter_lonewolf",
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["No Lone Wolf Stat Multiplier"] = {
+			["xOffset"] = -145,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["spellId"] = "160200",
+				["subeventSuffix"] = "_CAST_START",
+				["ownOnly"] = true,
+				["event"] = "Health",
+				["names"] = {
+					"Lone Wolf: Ferocity of the Raptor", -- [1]
+					"Lone Wolf: Grace of the Cat", -- [2]
+					"Lone Wolf: Fortitude of the Bear", -- [3]
+					"Lone Wolf: Haste of the Hyena", -- [4]
+					"Lone Wolf: Wisdom of the Serpent", -- [5]
+					"Lone Wolf: Power of the Primates", -- [6]
+					"Lone Wolf: Versatility of the Ravager", -- [7]
+					"Lone Wolf: Quickness of the Dragonhawk", -- [8]
+				},
+				["debuffType"] = "HELPFUL",
+				["use_spellId"] = true,
+				["name"] = "Lone Wolf: Ferocity of the Raptor",
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["inverse"] = true,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["single"] = 21,
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%c",
+			["regionType"] = "icon",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["init_completed"] = 1,
+			["parent"] = "Hunter Group v2.0",
+			["selfPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.800000011920929, -- [4]
+			},
+			["id"] = "No Lone Wolf Stat Multiplier",
+			["disjunctive"] = false,
+			["frameStrata"] = 1,
+			["width"] = 34,
+			["inverse"] = false,
+			["stickyDuration"] = false,
+			["numTriggers"] = 10,
+			["yOffset"] = 1,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "custom",
+						["unevent"] = "auto",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
+						["custom"] = "function()\n  return not UnitExists(\"pet\")\nend",
+						["subeventSuffix"] = "_CAST_START",
+						["check"] = "event",
+						["use_unit"] = true,
+						["custom_type"] = "status",
+						["events"] = "UNIT_PET",
+					},
+					["untrigger"] = {
+						["custom"] = "function()\n  return UnitExists(\"pet\")\nend",
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Blessing of Kings", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Legacy of the Emperor", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [3]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Mark of the Wild", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [4]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Lone Wolf: Power of the Primates", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [5]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["custom_hide"] = "timed",
+						["inverse"] = true,
+						["names"] = {
+							"Bark of the Wild", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [6]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Blessing of Kongs", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [7]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Embrace of the Shale Spider", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [8]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Strength of the Earth", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [9]
+			},
+			["displayIcon"] = "Interface\\Icons\\spell_hunter_lonewolf",
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["CS Line"] = {
+			["xOffset"] = -50,
+			["mirror"] = false,
+			["yOffset"] = 6,
+			["regionType"] = "texture",
+			["blendMode"] = "BLEND",
+			["parent"] = "Hunter Group v2.0",
+			["color"] = {
+				0.658823529411765, -- [1]
+				0.658823529411765, -- [2]
+				0.658823529411765, -- [3]
+				1, -- [4]
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
+			["additional_triggers"] = {
+			},
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["width"] = 2.00047659873962,
+			["selfPoint"] = "CENTER",
+			["id"] = "CS Line",
+			["discrete_rotation"] = 0,
+			["frameStrata"] = 1,
+			["desaturate"] = false,
+			["rotation"] = 0,
+			["anchorPoint"] = "CENTER",
+			["numTriggers"] = 1,
+			["trigger"] = {
+				["type"] = "status",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["use_unit"] = true,
+				["debuffType"] = "HELPFUL",
+				["spellIds"] = {
+				},
+				["names"] = {
+				},
+				["subeventPrefix"] = "SPELL",
+				["unevent"] = "auto",
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+			},
+			["height"] = 31,
+			["rotate"] = true,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["untrigger"] = {
+			},
+		},
+		["ES CD"] = {
+			["xOffset"] = 0,
+			["yOffset"] = 44,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["subeventSuffix"] = "_CAST_START",
+				["use_showOn"] = true,
+				["use_unit"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["unevent"] = "auto",
+				["showOn"] = "showOnCooldown",
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+				["spellName"] = 53301,
+			},
+			["desaturate"] = true,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 44,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "  %p",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["stacksPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["selfPoint"] = "CENTER",
+			["additional_triggers"] = {
+			},
+			["id"] = "ES CD",
+			["frameStrata"] = 2,
+			["width"] = 44,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["stickyDuration"] = false,
+			["untrigger"] = {
+				["spellName"] = 53301,
+			},
+			["cooldown"] = true,
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["SS Debuff MM 2"] = {
+			["outline"] = true,
+			["color"] = {
+				0.0470588235294118, -- [1]
+				0.882352941176471, -- [2]
+				0.105882352941177, -- [3]
+				1, -- [4]
+			},
+			["displayText"] = "%p",
+			["yOffset"] = 88,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["ownOnly"] = true,
+				["event"] = "Health",
+				["names"] = {
+					"Serpent Sting", -- [1]
+				},
+				["spellIds"] = {
+				},
+				["custom_hide"] = "timed",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "target",
+				["debuffType"] = "HARMFUL",
+			},
+			["desaturate"] = false,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 20.4799976348877,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 32,
+			["displayStacks"] = "%p",
+			["regionType"] = "text",
+			["parent"] = "Hunter Group v2.0",
+			["untrigger"] = {
+			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["additional_triggers"] = {
+			},
+			["xOffset"] = -78,
+			["frameStrata"] = 1,
+			["width"] = 13.4400110244751,
+			["justify"] = "LEFT",
+			["numTriggers"] = 1,
+			["inverse"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["stickyDuration"] = false,
+			["id"] = "SS Debuff MM 2",
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["KC CD"] = {
+			["xOffset"] = 0,
+			["yOffset"] = 44,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["subeventSuffix"] = "_CAST_START",
+				["use_showOn"] = true,
+				["use_unit"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["unevent"] = "auto",
+				["showOn"] = "showOnCooldown",
+				["unit"] = "player",
+				["spellName"] = 34026,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = true,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 44,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = " %p",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["cooldown"] = true,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["additional_triggers"] = {
+			},
+			["selfPoint"] = "CENTER",
+			["frameStrata"] = 2,
+			["width"] = 44,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["id"] = "KC CD",
+			["stickyDuration"] = false,
+			["untrigger"] = {
+				["spellName"] = 34026,
+			},
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Focus Fire Stamp"] = {
+			["xOffset"] = 0,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "preset",
+					["preset"] = "bounce",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["names"] = {
+					"Focus Fire", -- [1]
+				},
+				["spellIds"] = {
+				},
+				["custom_hide"] = "timed",
+				["unit"] = "player",
+				["inverse"] = true,
+				["subeventPrefix"] = "SPELL",
+				["debuffType"] = "HELPFUL",
+			},
+			["desaturate"] = false,
+			["font"] = "Expressway",
+			["height"] = 64,
+			["load"] = {
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 24,
+			["displayStacks"] = " Stamp",
+			["regionType"] = "icon",
+			["parent"] = "Azor's Focus Fire Group",
+			["icon"] = true,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["id"] = "Focus Fire Stamp",
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["useCount"] = true,
+						["spellIds"] = {
+						},
+						["count"] = "1",
+						["countOperator"] = ">=",
+						["names"] = {
+							"Frenzy", -- [1]
+						},
+						["unit"] = "pet",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["custom_hide"] = "timed",
+						["subeventSuffix"] = "_CAST_START",
+						["use_showOn"] = true,
+						["remaining_operator"] = ">",
+						["event"] = "Cooldown Progress (Spell)",
+						["subeventPrefix"] = "SPELL",
+						["use_spellName"] = true,
+						["remaining"] = "265",
+						["use_remaining"] = true,
+						["unit"] = "player",
+						["showOn"] = "showOnCooldown",
+						["unevent"] = "auto",
+						["use_unit"] = true,
+						["spellName"] = 121818,
+					},
+					["untrigger"] = {
+						["spellName"] = 121818,
+					},
+				}, -- [2]
+			},
+			["yOffset"] = 0,
+			["frameStrata"] = 1,
+			["width"] = 64,
+			["stickyDuration"] = false,
+			["numTriggers"] = 3,
+			["inverse"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["selfPoint"] = "CENTER",
+			["displayIcon"] = "INTERFACE\\ICONS\\ability_hunter_focusfire",
+			["stacksPoint"] = "BOTTOM",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Careful Aim"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.75, -- [4]
+			},
+			["untrigger"] = {
+				["unit"] = "target",
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["use_health"] = false,
+				["unevent"] = "auto",
+				["debuffType"] = "HELPFUL",
+				["percenthealth"] = "80",
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["unit"] = "target",
+				["spellIds"] = {
+				},
+				["subeventSuffix"] = "_CAST_START",
+				["use_unit"] = true,
+				["use_percenthealth"] = true,
+				["percenthealth_operator"] = ">=",
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["discrete_rotation"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 38,
+			["rotate"] = true,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 12,
+			["displayStacks"] = "%s",
+			["mirror"] = false,
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["blendMode"] = "BLEND",
+			["rotation"] = 0,
+			["selfPoint"] = "CENTER",
+			["stickyDuration"] = false,
+			["texture"] = "Spells\\Reticle_128",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = false,
+			["xOffset"] = -43.0000610351563,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = true,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Rapid Fire", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+			},
+			["inverse"] = false,
+			["frameStrata"] = 1,
+			["width"] = 38,
+			["id"] = "Careful Aim",
+			["disjunctive"] = true,
+			["numTriggers"] = 2,
+			["yOffset"] = 42.9998779296875,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["displayIcon"] = "Interface\\Icons\\Ability_Hunter_ZenArchery",
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Rapid Fire Ready"] = {
+			["xOffset"] = 18,
+			["untrigger"] = {
+				["spellName"] = 3045,
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["unevent"] = "auto",
+				["debuffType"] = "HELPFUL",
+				["event"] = "Action Usable",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["use_unit"] = true,
+				["subeventSuffix"] = "_CAST_START",
+				["unit"] = "player",
+				["spellName"] = 3045,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						[3] = true,
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 12,
+			["displayStacks"] = "%s",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Hunter Group v2.0",
+			["additional_triggers"] = {
+			},
+			["selfPoint"] = "CENTER",
+			["frameStrata"] = 1,
+			["width"] = 34,
+			["id"] = "Rapid Fire Ready",
+			["yOffset"] = -38,
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["stickyDuration"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Chimera Shot CD"] = {
+			["xOffset"] = 0,
+			["untrigger"] = {
+				["spellName"] = 53209,
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["subeventSuffix"] = "_CAST_START",
+				["use_showOn"] = true,
+				["use_unit"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["unevent"] = "auto",
+				["showOn"] = "showOnCooldown",
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+				["spellName"] = 53209,
+			},
+			["desaturate"] = true,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 44,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = " %p",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["stacksPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["selfPoint"] = "CENTER",
+			["additional_triggers"] = {
+			},
+			["id"] = "Chimera Shot CD",
+			["frameStrata"] = 2,
+			["width"] = 44,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["stickyDuration"] = false,
+			["yOffset"] = 44,
+			["cooldown"] = true,
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Powershot CD"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["yOffset"] = 44,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["subeventSuffix"] = "_CAST_START",
+				["use_showOn"] = true,
+				["use_unit"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["unevent"] = "auto",
+				["showOn"] = "showOnCooldown",
+				["unit"] = "player",
+				["spellName"] = 109259,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = true,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 38,
+			["load"] = {
+				["talent"] = {
+					["single"] = 17,
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "  %p",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["stacksPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["selfPoint"] = "CENTER",
+			["id"] = "Powershot CD",
+			["additional_triggers"] = {
+			},
+			["frameStrata"] = 2,
+			["width"] = 38,
+			["xOffset"] = 44,
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["stickyDuration"] = false,
+			["untrigger"] = {
+				["spellName"] = 109259,
+			},
+			["cooldown"] = true,
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["No Lone Wolf Spellpower"] = {
+			["xOffset"] = -145,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["spellId"] = "160200",
+				["subeventSuffix"] = "_CAST_START",
+				["ownOnly"] = true,
+				["event"] = "Health",
+				["names"] = {
+					"Lone Wolf: Ferocity of the Raptor", -- [1]
+					"Lone Wolf: Grace of the Cat", -- [2]
+					"Lone Wolf: Fortitude of the Bear", -- [3]
+					"Lone Wolf: Haste of the Hyena", -- [4]
+					"Lone Wolf: Wisdom of the Serpent", -- [5]
+					"Lone Wolf: Power of the Primates", -- [6]
+					"Lone Wolf: Versatility of the Ravager", -- [7]
+					"Lone Wolf: Quickness of the Dragonhawk", -- [8]
+				},
+				["debuffType"] = "HELPFUL",
+				["use_spellId"] = true,
+				["name"] = "Lone Wolf: Ferocity of the Raptor",
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["inverse"] = true,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["single"] = 21,
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%c",
+			["regionType"] = "icon",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["init_completed"] = 1,
+			["parent"] = "Hunter Group v2.0",
+			["selfPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.800000011920929, -- [4]
+			},
+			["id"] = "No Lone Wolf Spellpower",
+			["disjunctive"] = false,
+			["frameStrata"] = 1,
+			["width"] = 34,
+			["inverse"] = false,
+			["stickyDuration"] = false,
+			["numTriggers"] = 9,
+			["yOffset"] = 1,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "custom",
+						["unevent"] = "auto",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
+						["custom"] = "function()\n  return not UnitExists(\"pet\")\nend",
+						["subeventSuffix"] = "_CAST_START",
+						["check"] = "event",
+						["use_unit"] = true,
+						["custom_type"] = "status",
+						["events"] = "UNIT_PET",
+					},
+					["untrigger"] = {
+						["custom"] = "function()\n  return UnitExists(\"pet\")\nend",
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Arcane Brilliance", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Dark Intent", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [3]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Lone Wolf: Wisdom of the Serpent", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [4]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Qiraji Fortitude", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [5]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["custom_hide"] = "timed",
+						["inverse"] = true,
+						["names"] = {
+							"Serpent's Cunning", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [6]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Still Water", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [7]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["inverse"] = true,
+						["unit"] = "player",
+						["names"] = {
+							"Dalaran Brilliance", -- [1]
+						},
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [8]
+			},
+			["displayIcon"] = "Interface\\Icons\\spell_hunter_lonewolf",
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["BA Debuff"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["ownOnly"] = true,
+				["event"] = "Health",
+				["names"] = {
+					"Black Arrow", -- [1]
+				},
+				["spellIds"] = {
+				},
+				["custom_hide"] = "timed",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "target",
+				["debuffType"] = "HARMFUL",
+			},
+			["desaturate"] = false,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 38,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%p",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["additional_triggers"] = {
+			},
+			["id"] = "BA Debuff",
+			["frameStrata"] = 1,
+			["width"] = 38,
+			["selfPoint"] = "CENTER",
+			["xOffset"] = -44,
+			["numTriggers"] = 1,
+			["inverse"] = false,
+			["yOffset"] = 44,
+			["stickyDuration"] = false,
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Kill Shot CD"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["yOffset"] = 82,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["subeventSuffix"] = "_CAST_START",
+				["use_showOn"] = true,
+				["use_unit"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["unevent"] = "auto",
+				["showOn"] = "showOnCooldown",
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+				["spellName"] = 53351,
+			},
+			["desaturate"] = true,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 32.0000419616699,
+			["load"] = {
+				["talent"] = {
+					["single"] = 16,
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						true, -- [1]
+						true, -- [2]
+					},
+				},
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = false,
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "  %p",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["untrigger"] = {
+				["spellName"] = 53351,
+			},
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["use_health"] = false,
+						["subeventSuffix"] = "_CAST_START",
+						["percenthealth"] = "20",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "target",
+						["use_unit"] = true,
+						["health_operator"] = "<",
+						["use_percenthealth"] = true,
+						["percenthealth_operator"] = "<",
+						["unevent"] = "auto",
+					},
+					["untrigger"] = {
+						["unit"] = "target",
+					},
+				}, -- [1]
+			},
+			["selfPoint"] = "CENTER",
+			["frameStrata"] = 1,
+			["width"] = 30.0000915527344,
+			["xOffset"] = -104.999816894531,
+			["inverse"] = false,
+			["numTriggers"] = 2,
+			["id"] = "Kill Shot CD",
+			["stickyDuration"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["cooldown"] = true,
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Powershot Ready"] = {
+			["xOffset"] = 44,
+			["untrigger"] = {
+				["spellName"] = 109259,
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["subeventSuffix"] = "_CAST_START",
+				["use_showOn"] = true,
+				["use_unit"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["unevent"] = "auto",
+				["showOn"] = "showOnReady",
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+				["spellName"] = 109259,
+			},
+			["desaturate"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 38,
+			["load"] = {
+				["talent"] = {
+					["single"] = 17,
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = " ",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Hunter Group v2.0",
+			["id"] = "Powershot Ready",
+			["selfPoint"] = "CENTER",
+			["frameStrata"] = 1,
+			["width"] = 38,
+			["additional_triggers"] = {
+			},
+			["yOffset"] = 44,
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["stickyDuration"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Rapid Fire CD"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["untrigger"] = {
+				["spellName"] = 3045,
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["subeventSuffix"] = "_CAST_START",
+				["use_showOn"] = true,
+				["use_unit"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["unevent"] = "auto",
+				["showOn"] = "showOnCooldown",
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+				["spellName"] = 3045,
+			},
+			["desaturate"] = true,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						[3] = true,
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 12,
+			["displayStacks"] = "  %p",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["selfPoint"] = "CENTER",
+			["id"] = "Rapid Fire CD",
+			["additional_triggers"] = {
+			},
+			["frameStrata"] = 1,
+			["width"] = 34,
+			["xOffset"] = 18,
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["stickyDuration"] = false,
+			["yOffset"] = -38,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["cooldown"] = true,
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Rapid Fire"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.800000011920929, -- [4]
+			},
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["names"] = {
+					"Rapid Fire", -- [1]
+				},
+				["spellIds"] = {
+				},
+				["custom_hide"] = "timed",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["debuffType"] = "HELPFUL",
+			},
+			["desaturate"] = false,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%p",
+			["regionType"] = "icon",
+			["init_completed"] = 1,
+			["parent"] = "Hunter Group v2.0",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["additional_triggers"] = {
+			},
+			["id"] = "Rapid Fire",
+			["frameStrata"] = 1,
+			["width"] = 34,
+			["selfPoint"] = "CENTER",
+			["xOffset"] = 99.0001220703125,
+			["numTriggers"] = 1,
+			["inverse"] = false,
+			["stickyDuration"] = false,
+			["yOffset"] = 79.9999084472656,
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Glaive Toss CD 2"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["yOffset"] = 44,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["subeventSuffix"] = "_CAST_START",
+				["use_showOn"] = true,
+				["use_unit"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["unevent"] = "auto",
+				["showOn"] = "showOnCooldown",
+				["unit"] = "player",
+				["spellName"] = 117050,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = true,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 38,
+			["load"] = {
+				["talent"] = {
+					["single"] = 16,
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "  %p",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["stacksPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["selfPoint"] = "CENTER",
+			["id"] = "Glaive Toss CD 2",
+			["additional_triggers"] = {
+			},
+			["frameStrata"] = 2,
+			["width"] = 38,
+			["xOffset"] = 44,
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["untrigger"] = {
+				["spellName"] = 117050,
+			},
+			["stickyDuration"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["cooldown"] = true,
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["GCD"] = {
+			["sparkWidth"] = 10,
+			["stacksSize"] = 12,
+			["xOffset"] = 0,
+			["stacksFlags"] = "None",
+			["yOffset"] = -8,
+			["anchorPoint"] = "CENTER",
+			["sparkRotation"] = 0,
+			["rotateText"] = "NONE",
+			["icon"] = false,
+			["fontFlags"] = "OUTLINE",
+			["icon_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["selfPoint"] = "CENTER",
+			["barColor"] = {
+				0.286274509803922, -- [1]
+				0.537254901960784, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["desaturate"] = false,
+			["sparkOffsetY"] = 0,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["timerColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["regionType"] = "aurabar",
+			["stacks"] = true,
+			["texture"] = "Flat",
+			["textFont"] = "Friz Quadrata TT",
+			["stacksFont"] = "Friz Quadrata TT",
+			["auto"] = true,
+			["timerFont"] = "Friz Quadrata TT",
+			["alpha"] = 1,
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["sparkOffsetX"] = 0,
+			["parent"] = "Hunter Group v2.0",
+			["untrigger"] = {
+				["spellName"] = 3044,
+			},
+			["sparkRotationMode"] = "AUTO",
+			["textSize"] = 12,
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["unevent"] = "auto",
+				["debuffType"] = "HELPFUL",
+				["event"] = "Global Cooldown",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["use_unit"] = true,
+				["subeventSuffix"] = "_CAST_START",
+				["unit"] = "player",
+				["spellName"] = 3044,
+				["custom_hide"] = "timed",
+			},
+			["text"] = true,
+			["stickyDuration"] = false,
+			["height"] = 5,
+			["timerFlags"] = "None",
+			["sparkBlendMode"] = "ADD",
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["textFlags"] = "None",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["border"] = false,
+			["borderEdge"] = "None",
+			["timer"] = true,
+			["borderSize"] = 16,
+			["barInFront"] = true,
+			["icon_side"] = "RIGHT",
+			["numTriggers"] = 1,
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["sparkHeight"] = 30,
+			["customTextUpdate"] = "update",
+			["timerSize"] = 12,
+			["stacksColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["displayTextRight"] = " ",
+			["borderOffset"] = 5,
+			["additional_triggers"] = {
+			},
+			["id"] = "GCD",
+			["frameStrata"] = 1,
+			["width"] = 242,
+			["displayTextLeft"] = " ",
+			["spark"] = false,
+			["inverse"] = true,
+			["sparkDesature"] = false,
+			["orientation"] = "HORIZONTAL",
+			["borderInset"] = 11,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+		},
+		["Focus"] = {
+			["sparkWidth"] = 10,
+			["stacksSize"] = 12,
+			["xOffset"] = 0.0001220703125,
+			["stacksFlags"] = "None",
+			["yOffset"] = 6,
+			["anchorPoint"] = "CENTER",
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["rotateText"] = "NONE",
+			["icon"] = false,
+			["fontFlags"] = "OUTLINE",
+			["icon_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["selfPoint"] = "CENTER",
+			["barColor"] = {
+				0.874509803921569, -- [1]
+				0.6, -- [2]
+				0.349019607843137, -- [3]
+				1, -- [4]
+			},
+			["desaturate"] = false,
+			["sparkOffsetY"] = 0,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["timerColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["regionType"] = "aurabar",
+			["stacks"] = true,
+			["texture"] = "Flat",
+			["textFont"] = "Friz Quadrata TT",
+			["stacksFont"] = "Friz Quadrata TT",
+			["auto"] = true,
+			["timerFont"] = "Friz Quadrata TT",
+			["alpha"] = 1,
+			["borderInset"] = 17,
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["sparkOffsetX"] = 0,
+			["parent"] = "Hunter Group v2.0",
+			["barInFront"] = true,
+			["sparkRotationMode"] = "AUTO",
+			["displayTextLeft"] = "%p",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["unevent"] = "auto",
+				["debuffType"] = "HELPFUL",
+				["use_power"] = false,
+				["event"] = "Power",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["powertype"] = 2,
+				["spellIds"] = {
+				},
+				["use_unit"] = true,
+				["subeventSuffix"] = "_CAST_START",
+				["unit"] = "player",
+				["use_powertype"] = true,
+				["custom_hide"] = "timed",
+			},
+			["text"] = true,
+			["stickyDuration"] = false,
+			["height"] = 22,
+			["timerFlags"] = "None",
+			["sparkBlendMode"] = "ADD",
+			["backdropColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["borderOffset"] = 2,
+			["textFlags"] = "None",
+			["borderBackdrop"] = "None",
+			["border"] = true,
+			["borderEdge"] = "Blizzard Achievement Wood",
+			["sparkRotation"] = 0,
+			["borderSize"] = 8,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["icon_side"] = "RIGHT",
+			["inverse"] = false,
+			["customTextUpdate"] = "update",
+			["sparkHeight"] = 30,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.760000005364418, -- [4]
+			},
+			["timerSize"] = 12,
+			["stacksColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["displayTextRight"] = " ",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["additional_triggers"] = {
+			},
+			["id"] = "Focus",
+			["frameStrata"] = 2,
+			["width"] = 240,
+			["timer"] = true,
+			["spark"] = false,
+			["numTriggers"] = 1,
+			["sparkDesature"] = false,
+			["orientation"] = "HORIZONTAL",
+			["untrigger"] = {
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["textSize"] = 12,
+		},
+		["Pet Frenzy 1-4"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["ownOnly"] = true,
+				["countOperator"] = "<=",
+				["names"] = {
+					"Frenzy", -- [1]
+				},
+				["debuffType"] = "HELPFUL",
+				["useCount"] = true,
+				["count"] = "4",
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = true,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 38,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%s",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["selfPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = false,
+			["id"] = "Pet Frenzy 1-4",
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = true,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Focus Fire", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+			},
+			["xOffset"] = -44,
+			["frameStrata"] = 1,
+			["width"] = 38,
+			["yOffset"] = 44,
+			["inverse"] = false,
+			["numTriggers"] = 2,
+			["stickyDuration"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["displayIcon"] = "Interface\\Icons\\INV_Misc_MonsterClaw_03",
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["SS Inactive"] = {
+			["color"] = {
+				0.858823529411765, -- [1]
+				0.462745098039216, -- [2]
+				0.419607843137255, -- [3]
+				0.920000001788139, -- [4]
+			},
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["custom_hide"] = "timed",
+				["unevent"] = "auto",
+				["use_unit"] = true,
+				["ownOnly"] = true,
+				["event"] = "Action Usable",
+				["subeventPrefix"] = "SPELL",
+				["inverse"] = true,
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["subeventSuffix"] = "_CAST_START",
+				["unit"] = "target",
+				["names"] = {
+					"Serpent Sting", -- [1]
+				},
+				["spellName"] = 0,
+				["debuffType"] = "HARMFUL",
+			},
+			["desaturate"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 44,
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = " ",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["selfPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["id"] = "SS Inactive",
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["use_hostility"] = false,
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Unit Characteristics",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "target",
+						["unevent"] = "auto",
+						["use_unit"] = true,
+						["use_attackable"] = true,
+						["use_character"] = false,
+					},
+					["untrigger"] = {
+						["unit"] = "target",
+					},
+				}, -- [1]
+			},
+			["xOffset"] = -108,
+			["frameStrata"] = 1,
+			["width"] = 44,
+			["yOffset"] = 142,
+			["inverse"] = false,
+			["numTriggers"] = 2,
+			["stickyDuration"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["displayIcon"] = "Interface\\Icons\\Ability_Hunter_Quickshot",
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["NoPet FS"] = {
+			["color"] = {
+				0.474509803921569, -- [1]
+				1, -- [2]
+				0.588235294117647, -- [3]
+				1, -- [4]
+			},
+			["yOffset"] = 142,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["colorR"] = 1,
+					["type"] = "custom",
+					["scaley"] = 1,
+					["duration_type"] = "seconds",
+					["y"] = 0,
+					["scalex"] = 1,
+					["alpha"] = 0,
+					["colorB"] = 1,
+					["alphaType"] = "hide",
+					["x"] = 0,
+					["colorG"] = 1,
+					["alphaFunc"] = "    return function()\n    return 0\n    end\n  ",
+					["colorA"] = 1,
+					["rotate"] = 0,
+					["duration"] = "2",
+					["use_alpha"] = true,
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "custom",
+				["custom_type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["unit"] = "player",
+				["events"] = "UNIT_PET",
+				["subeventSuffix"] = "_CAST_START",
+				["check"] = "event",
+				["custom"] = "function()\n  return not UnitExists(\"pet\")\nend",
+				["spellIds"] = {
+				},
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 44,
+			["load"] = {
+				["talent"] = {
+					["single"] = 20,
+					["multi"] = {
+						[19] = true,
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 12,
+			["displayStacks"] = " ",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = false,
+			["selfPoint"] = "CENTER",
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["unevent"] = "auto",
+						["use_vehicle"] = false,
+						["event"] = "Conditions",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
+						["use_unit"] = true,
+						["use_alive"] = true,
+						["subeventSuffix"] = "_CAST_START",
+						["use_mounted"] = false,
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+			},
+			["xOffset"] = -107.999938964844,
+			["frameStrata"] = 1,
+			["width"] = 44,
+			["id"] = "NoPet FS",
+			["inverse"] = false,
+			["numTriggers"] = 2,
+			["untrigger"] = {
+				["custom"] = "function()\n  return UnitExists(\"pet\")\nend",
+			},
+			["stickyDuration"] = false,
+			["displayIcon"] = "Interface\\Icons\\Ability_Hunter_Pet_Cat",
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Bestial Wrath Ready"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["yOffset"] = -38,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["unevent"] = "auto",
+				["debuffType"] = "HELPFUL",
+				["event"] = "Action Usable",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["use_unit"] = true,
+				["subeventSuffix"] = "_CAST_START",
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+				["spellName"] = 19574,
+			},
+			["stickyDuration"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+						[3] = true,
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 12,
+			["displayStacks"] = "%s",
+			["regionType"] = "icon",
+			["xOffset"] = 54,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Hunter Group v2.0",
+			["id"] = "Bestial Wrath Ready",
+			["desaturate"] = false,
+			["frameStrata"] = 1,
+			["width"] = 34,
+			["selfPoint"] = "CENTER",
+			["untrigger"] = {
+				["spellName"] = 19574,
+			},
+			["numTriggers"] = 1,
+			["additional_triggers"] = {
+			},
+			["inverse"] = false,
+			["icon"] = true,
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Azor's Focus Fire Group"] = {
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["controlledChildren"] = {
+				"Focus Fire Expire", -- [1]
+				"Focus Fire General", -- [2]
+				"Focus Fire Pre-BW", -- [3]
+				"Focus Fire BW", -- [4]
+				"Focus Fire Stamp", -- [5]
+				"Focus Fire Delay if BW", -- [6]
+			},
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["xOffset"] = -90.8333129882813,
+			["border"] = false,
+			["yOffset"] = -83.3331298828125,
+			["anchorPoint"] = "CENTER",
+			["borderSize"] = 16,
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["expanded"] = false,
+			["borderOffset"] = 5,
+			["selfPoint"] = "BOTTOMLEFT",
+			["additional_triggers"] = {
+			},
+			["regionType"] = "group",
+			["frameStrata"] = 1,
+			["untrigger"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -631,31 +6016,1269 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
+			["borderInset"] = 11,
+			["numTriggers"] = 1,
 			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "<=",
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Fortification", -- [3]
-					"Branded: Replication", -- [4]
-					"Venom Splash", -- [5]
-				},
-				["debuffType"] = "HARMFUL",
-				["count"] = "3",
-				["subeventPrefix"] = "SPELL",
 				["unit"] = "player",
+				["type"] = "aura",
 				["spellIds"] = {
 				},
+				["subeventSuffix"] = "_CAST_START",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+				},
 				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
+			},
+			["borderEdge"] = "None",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["load"] = {
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["use_class"] = false,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["id"] = "Azor's Focus Fire Group",
+		},
+		["Stampede Ready"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["untrigger"] = {
+				["spellName"] = 121818,
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["unevent"] = "auto",
+				["debuffType"] = "HELPFUL",
+				["event"] = "Action Usable",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["use_unit"] = true,
+				["subeventSuffix"] = "_CAST_START",
+				["unit"] = "player",
+				["spellName"] = 121818,
+				["custom_hide"] = "timed",
+			},
+			["stickyDuration"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["talent"] = {
+					["single"] = 15,
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 12,
+			["displayStacks"] = "%s",
+			["regionType"] = "icon",
+			["xOffset"] = -18,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Hunter Group v2.0",
+			["id"] = "Stampede Ready",
+			["desaturate"] = false,
+			["frameStrata"] = 1,
+			["width"] = 34,
+			["selfPoint"] = "CENTER",
+			["yOffset"] = -38,
+			["numTriggers"] = 1,
+			["additional_triggers"] = {
+			},
+			["inverse"] = false,
+			["icon"] = true,
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Kill Shot Ready"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["yOffset"] = 81.9997863769531,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["unevent"] = "auto",
+				["use_unit"] = true,
+				["use_inverse"] = false,
+				["event"] = "Action Usable",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["subeventSuffix"] = "_CAST_START",
+				["unit"] = "player",
+				["spellName"] = 157708,
+				["use_targetRequired"] = true,
+				["custom_hide"] = "timed",
+			},
+			["stickyDuration"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 30,
+			["load"] = {
+				["talent"] = {
+					["single"] = 16,
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						true, -- [1]
+						true, -- [2]
+					},
+				},
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = false,
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = " ",
+			["regionType"] = "icon",
+			["xOffset"] = -105,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Hunter Group v2.0",
+			["additional_triggers"] = {
+			},
+			["desaturate"] = false,
+			["frameStrata"] = 1,
+			["width"] = 30,
+			["selfPoint"] = "CENTER",
+			["untrigger"] = {
+				["spellName"] = 157708,
+			},
+			["numTriggers"] = 1,
+			["id"] = "Kill Shot Ready",
+			["inverse"] = false,
+			["icon"] = true,
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["A Murder of Crows CD 2"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["untrigger"] = {
+				["spellName"] = 131894,
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["subeventSuffix"] = "_CAST_START",
+				["use_showOn"] = true,
+				["use_unit"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["unevent"] = "auto",
+				["showOn"] = "showOnCooldown",
+				["unit"] = "player",
+				["spellName"] = 131894,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = true,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["talent"] = {
+					["single"] = 13,
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[3] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 12,
+			["displayStacks"] = "  %p",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["selfPoint"] = "CENTER",
+			["id"] = "A Murder of Crows CD 2",
+			["additional_triggers"] = {
+			},
+			["frameStrata"] = 1,
+			["width"] = 34,
+			["xOffset"] = -54,
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["stickyDuration"] = false,
+			["yOffset"] = -38,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["cooldown"] = true,
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["No Lone Wolf Buff"] = {
+			["disjunctive"] = false,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["spellId"] = "160200",
+				["subeventSuffix"] = "_CAST_START",
+				["ownOnly"] = true,
+				["event"] = "Health",
+				["names"] = {
+					"Lone Wolf: Ferocity of the Raptor", -- [1]
+					"Lone Wolf: Grace of the Cat", -- [2]
+					"Lone Wolf: Fortitude of the Bear", -- [3]
+					"Lone Wolf: Haste of the Hyena", -- [4]
+					"Lone Wolf: Wisdom of the Serpent", -- [5]
+					"Lone Wolf: Power of the Primates", -- [6]
+					"Lone Wolf: Versatility of the Ravager", -- [7]
+					"Lone Wolf: Quickness of the Dragonhawk", -- [8]
+				},
+				["debuffType"] = "HELPFUL",
+				["use_spellId"] = true,
+				["name"] = "Lone Wolf: Ferocity of the Raptor",
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["inverse"] = true,
 				["custom_hide"] = "timed",
 			},
 			["desaturate"] = false,
-			["font"] = "DorisPP",
-			["height"] = 75,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
 			["load"] = {
-				["use_never"] = false,
+				["use_never"] = true,
+				["talent"] = {
+					["single"] = 21,
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%c",
+			["regionType"] = "icon",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["init_completed"] = 1,
+			["parent"] = "Hunter Group v2.0",
+			["selfPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.800000011920929, -- [4]
+			},
+			["id"] = "No Lone Wolf Buff",
+			["xOffset"] = -144.999633789063,
+			["frameStrata"] = 1,
+			["width"] = 34,
+			["inverse"] = false,
+			["stickyDuration"] = false,
+			["numTriggers"] = 2,
+			["yOffset"] = 0.999755859375,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "custom",
+						["unevent"] = "auto",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["events"] = "UNIT_PET",
+						["custom"] = "function()\n  return not UnitExists(\"pet\")\nend",
+						["custom_type"] = "status",
+						["check"] = "event",
+						["use_unit"] = true,
+						["subeventSuffix"] = "_CAST_START",
+						["unit"] = "player",
+					},
+					["untrigger"] = {
+						["custom"] = "function()\n  return UnitExists(\"pet\")\nend",
+					},
+				}, -- [1]
+			},
+			["displayIcon"] = "Interface\\Icons\\spell_hunter_lonewolf",
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Focus Fire Expire"] = {
+			["xOffset"] = 0,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "preset",
+					["preset"] = "bounce",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["names"] = {
+					"Focus Fire", -- [1]
+				},
+				["spellIds"] = {
+				},
+				["custom_hide"] = "timed",
+				["unit"] = "player",
+				["inverse"] = true,
+				["subeventPrefix"] = "SPELL",
+				["debuffType"] = "HELPFUL",
+			},
+			["desaturate"] = false,
+			["font"] = "Expressway",
+			["height"] = 64,
+			["load"] = {
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 24,
+			["displayStacks"] = "EXPIRE %s",
+			["regionType"] = "icon",
+			["parent"] = "Azor's Focus Fire Group",
+			["icon"] = true,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["rem"] = "2",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Health",
+						["names"] = {
+							"Frenzy", -- [1]
+						},
+						["debuffType"] = "HELPFUL",
+						["type"] = "aura",
+						["spellIds"] = {
+						},
+						["useRem"] = true,
+						["remOperator"] = "<",
+						["unit"] = "pet",
+						["subeventPrefix"] = "SPELL",
+						["custom_hide"] = "timed",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+			},
+			["id"] = "Focus Fire Expire",
+			["yOffset"] = 0,
+			["frameStrata"] = 1,
+			["width"] = 64,
+			["stickyDuration"] = false,
+			["numTriggers"] = 2,
+			["inverse"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["selfPoint"] = "CENTER",
+			["displayIcon"] = "INTERFACE\\ICONS\\ability_hunter_focusfire",
+			["stacksPoint"] = "BOTTOM",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Dire Beast Ready"] = {
+			["xOffset"] = -105,
+			["yOffset"] = 44,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["debuffType"] = "HELPFUL",
+				["type"] = "status",
+				["use_unit"] = true,
+				["subeventSuffix"] = "_CAST_START",
+				["use_showOn"] = true,
+				["ownOnly"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["unevent"] = "auto",
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["names"] = {
+				},
+				["showOn"] = "showOnReady",
+				["unit"] = "player",
+				["spellName"] = 120679,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 32,
+			["load"] = {
+				["talent"] = {
+					["single"] = 11,
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = " ",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Hunter Group v2.0",
+			["additional_triggers"] = {
+			},
+			["selfPoint"] = "CENTER",
+			["frameStrata"] = 1,
+			["width"] = 32,
+			["id"] = "Dire Beast Ready",
+			["untrigger"] = {
+				["spellName"] = 120679,
+			},
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["stickyDuration"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Bestial Wrath CD"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["yOffset"] = -38,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["subeventSuffix"] = "_CAST_START",
+				["use_showOn"] = true,
+				["use_unit"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["unevent"] = "auto",
+				["showOn"] = "showOnCooldown",
+				["unit"] = "player",
+				["spellName"] = 19574,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = true,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+						[3] = true,
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 12,
+			["displayStacks"] = "  %p",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["selfPoint"] = "CENTER",
+			["additional_triggers"] = {
+			},
+			["id"] = "Bestial Wrath CD",
+			["frameStrata"] = 1,
+			["width"] = 34,
+			["xOffset"] = 54,
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["stickyDuration"] = false,
+			["untrigger"] = {
+				["spellName"] = 19574,
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["cooldown"] = true,
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Stampede CD"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["yOffset"] = -38,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["subeventSuffix"] = "_CAST_START",
+				["use_showOn"] = true,
+				["use_unit"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["unevent"] = "auto",
+				["showOn"] = "showOnCooldown",
+				["unit"] = "player",
+				["spellName"] = 121818,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = true,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["talent"] = {
+					["single"] = 15,
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 12,
+			["displayStacks"] = "  %p",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["selfPoint"] = "CENTER",
+			["id"] = "Stampede CD",
+			["additional_triggers"] = {
+			},
+			["frameStrata"] = 1,
+			["width"] = 34,
+			["xOffset"] = -18,
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["untrigger"] = {
+				["spellName"] = 121818,
+			},
+			["stickyDuration"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["cooldown"] = true,
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Fox"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["customText"] = "\n\n",
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "event",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\bam.ogg",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "custom",
+				["debuffType"] = "HELPFUL",
+				["unevent"] = "timed",
+				["names"] = {
+					"Skull Banner", -- [1]
+				},
+				["duration"] = "6",
+				["event"] = "Combat Log",
+				["subeventPrefix"] = "SPELL",
+				["subeventSuffix"] = "_CAST_START",
+				["customName"] = "function()\n    return FoxCaster or \"??\"\nend\n\n\n\n\n\n\n\n\n\n",
+				["events"] = "UNIT_SPELLCAST_SUCCEEDED",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["custom"] = "function(_, unitID, _, _, _, spellID)\n    if spellID == 172106 then\n        FoxCaster = UnitName(unitID)\n        return true\n    end\nend\n\n\n\n\n\n\n\n\n\n",
+				["custom_type"] = "event",
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 50,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["SHAMAN"] = true,
+					},
+				},
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 12,
+			["displayStacks"] = "%n",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["cooldown"] = true,
+			["stickyDuration"] = false,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0.29,
+			["auto"] = false,
+			["xOffset"] = 150.775512695313,
+			["id"] = "Fox",
+			["yOffset"] = 90.2777404785156,
+			["frameStrata"] = 1,
+			["width"] = 50,
+			["inverse"] = false,
+			["selfPoint"] = "CENTER",
+			["numTriggers"] = 2,
+			["icon"] = true,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["subeventPrefix"] = "SPELL",
+						["type"] = "aura",
+						["spellIds"] = {
+						},
+						["subeventSuffix"] = "_CAST_START",
+						["unit"] = "player",
+						["names"] = {
+							"Aspect of the Fox", -- [1]
+						},
+						["event"] = "Health",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+			},
+			["displayIcon"] = "INTERFACE\\ICONS\\ability_hunter_aspectofthefox",
+			["stacksPoint"] = "BOTTOM",
+			["textColor"] = {
+				0.823529411764706, -- [1]
+				1, -- [2]
+				0.823529411764706, -- [3]
+				1, -- [4]
+			},
+		},
+		["Focus Fire Pre-BW"] = {
+			["xOffset"] = 0,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "preset",
+					["preset"] = "bounce",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["names"] = {
+					"Focus Fire", -- [1]
+				},
+				["spellIds"] = {
+				},
+				["custom_hide"] = "timed",
+				["unit"] = "player",
+				["inverse"] = true,
+				["subeventPrefix"] = "SPELL",
+				["debuffType"] = "HELPFUL",
+			},
+			["desaturate"] = false,
+			["font"] = "Expressway",
+			["height"] = 64,
+			["load"] = {
+				["use_never"] = true,
 				["talent"] = {
 					["multi"] = {
 					},
@@ -668,13 +7291,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = true,
-				["zone"] = "Highmaul",
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -689,8 +7310,3766 @@ WeakAurasSaved = {
 				},
 			},
 			["fontSize"] = 24,
+			["displayStacks"] = "PRE-BW",
+			["regionType"] = "icon",
+			["parent"] = "Azor's Focus Fire Group",
+			["icon"] = true,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["id"] = "Focus Fire Pre-BW",
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["subeventSuffix"] = "_CAST_START",
+						["use_showOn"] = true,
+						["event"] = "Cooldown Progress (Spell)",
+						["subeventPrefix"] = "SPELL",
+						["use_spellName"] = true,
+						["unit"] = "player",
+						["showOn"] = "showOnReady",
+						["use_unit"] = true,
+						["unevent"] = "auto",
+						["spellName"] = 19574,
+					},
+					["untrigger"] = {
+						["showOn"] = "showOnReady",
+						["spellName"] = 19574,
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Health",
+						["names"] = {
+							"Frenzy", -- [1]
+						},
+						["spellIds"] = {
+						},
+						["custom_hide"] = "timed",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "pet",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
+			},
+			["yOffset"] = 0,
+			["frameStrata"] = 1,
+			["width"] = 64,
+			["stickyDuration"] = false,
+			["numTriggers"] = 3,
+			["inverse"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["selfPoint"] = "CENTER",
+			["displayIcon"] = "INTERFACE\\ICONS\\ability_hunter_focusfire",
+			["stacksPoint"] = "BOTTOM",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Pet Frenzy 5"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["ownOnly"] = true,
+				["countOperator"] = "==",
+				["names"] = {
+					"Frenzy", -- [1]
+				},
+				["debuffType"] = "HELPFUL",
+				["useCount"] = true,
+				["count"] = "5",
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = true,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 38,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["selfPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = false,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = true,
+						["event"] = "Health",
+						["names"] = {
+							"The Beast Within", -- [1]
+						},
+						["spellIds"] = {
+						},
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = true,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Focus Fire", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
+			},
+			["id"] = "Pet Frenzy 5",
+			["xOffset"] = -44,
+			["frameStrata"] = 1,
+			["width"] = 38,
+			["yOffset"] = 44,
+			["inverse"] = false,
+			["numTriggers"] = 3,
+			["stickyDuration"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["displayIcon"] = "Interface\\Icons\\INV_Misc_MonsterClaw_03",
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Chimera Shot Ready"] = {
+			["xOffset"] = 0,
+			["yOffset"] = 44,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["subeventSuffix"] = "_CAST_START",
+				["use_showOn"] = true,
+				["use_unit"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["unevent"] = "auto",
+				["showOn"] = "showOnReady",
+				["unit"] = "player",
+				["spellName"] = 53209,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 44,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = " ",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["additional_triggers"] = {
+			},
+			["icon"] = true,
+			["frameStrata"] = 1,
+			["width"] = 44,
+			["selfPoint"] = "CENTER",
+			["untrigger"] = {
+				["spellName"] = 53209,
+			},
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["id"] = "Chimera Shot Ready",
+			["stickyDuration"] = false,
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Beast Cleave 2"] = {
+			["xOffset"] = 98.0001220703125,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["names"] = {
+					"Beast Cleave", -- [1]
+				},
+				["spellIds"] = {
+				},
+				["custom_hide"] = "timed",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "pet",
+				["debuffType"] = "HELPFUL",
+			},
+			["desaturate"] = false,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%p",
+			["regionType"] = "icon",
+			["init_completed"] = 1,
+			["parent"] = "Hunter Group v2.0",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["additional_triggers"] = {
+			},
+			["id"] = "Beast Cleave 2",
+			["frameStrata"] = 1,
+			["width"] = 34,
+			["selfPoint"] = "CENTER",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.800000011920929, -- [4]
+			},
+			["numTriggers"] = 1,
+			["inverse"] = false,
+			["stickyDuration"] = false,
+			["yOffset"] = 43.0000915527344,
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Crows Debuff MM 2"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["ownOnly"] = true,
+				["event"] = "Health",
+				["unit"] = "target",
+				["spellIds"] = {
+				},
+				["debuffType"] = "HARMFUL",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+					"A Murder of Crows", -- [1]
+				},
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 32,
+			["load"] = {
+				["talent"] = {
+					["single"] = 13,
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 14,
+			["displayStacks"] = "%p",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["additional_triggers"] = {
+			},
+			["id"] = "Crows Debuff MM 2",
+			["frameStrata"] = 1,
+			["width"] = 32,
+			["selfPoint"] = "CENTER",
+			["xOffset"] = 105,
+			["numTriggers"] = 1,
+			["inverse"] = false,
+			["yOffset"] = 44,
+			["stickyDuration"] = false,
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Bombardment"] = {
+			["xOffset"] = 98.0001220703125,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["ownOnly"] = true,
+				["event"] = "Health",
+				["names"] = {
+					"Bombardment", -- [1]
+				},
+				["spellIds"] = {
+				},
+				["debuffType"] = "HELPFUL",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%p",
+			["regionType"] = "icon",
+			["init_completed"] = 1,
+			["parent"] = "Hunter Group v2.0",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.800000011920929, -- [4]
+			},
+			["additional_triggers"] = {
+			},
+			["id"] = "Bombardment",
+			["frameStrata"] = 1,
+			["width"] = 34,
+			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["numTriggers"] = 1,
+			["inverse"] = false,
+			["yOffset"] = 43.0000915527344,
+			["stickyDuration"] = false,
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Kill Command Line"] = {
+			["color"] = {
+				0.658823529411765, -- [1]
+				0.658823529411765, -- [2]
+				0.658823529411765, -- [3]
+				1, -- [4]
+			},
+			["mirror"] = false,
+			["yOffset"] = 6,
+			["regionType"] = "texture",
+			["blendMode"] = "BLEND",
+			["parent"] = "Hunter Group v2.0",
+			["untrigger"] = {
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
+			["additional_triggers"] = {
+			},
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["width"] = 2.00047659873962,
+			["selfPoint"] = "CENTER",
+			["id"] = "Kill Command Line",
+			["discrete_rotation"] = 0,
+			["frameStrata"] = 1,
+			["desaturate"] = false,
+			["rotation"] = 0,
+			["anchorPoint"] = "CENTER",
+			["numTriggers"] = 1,
+			["trigger"] = {
+				["type"] = "status",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["use_unit"] = true,
+				["debuffType"] = "HELPFUL",
+				["spellIds"] = {
+				},
+				["names"] = {
+				},
+				["subeventPrefix"] = "SPELL",
+				["unevent"] = "auto",
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+			},
+			["height"] = 31,
+			["rotate"] = true,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["xOffset"] = -40,
+		},
+		["BA CD"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["untrigger"] = {
+				["spellName"] = 3674,
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["subeventSuffix"] = "_CAST_START",
+				["use_showOn"] = true,
+				["use_unit"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["unevent"] = "auto",
+				["showOn"] = "showOnCooldown",
+				["unit"] = "player",
+				["spellName"] = 3674,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = true,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 38,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = " %p",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["cooldown"] = true,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["selfPoint"] = "CENTER",
+			["id"] = "BA CD",
+			["additional_triggers"] = {
+			},
+			["frameStrata"] = 2,
+			["width"] = 38,
+			["xOffset"] = -44,
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["yOffset"] = 44,
+			["stickyDuration"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["ES Ready"] = {
+			["xOffset"] = 0,
+			["yOffset"] = 44,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["subeventSuffix"] = "_CAST_START",
+				["use_showOn"] = true,
+				["use_unit"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["unevent"] = "auto",
+				["showOn"] = "showOnReady",
+				["unit"] = "player",
+				["spellName"] = 53301,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 44,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = " ",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Hunter Group v2.0",
+			["id"] = "ES Ready",
+			["stickyDuration"] = false,
+			["frameStrata"] = 1,
+			["width"] = 44,
+			["additional_triggers"] = {
+			},
+			["untrigger"] = {
+				["spellName"] = 53301,
+			},
+			["numTriggers"] = 1,
+			["selfPoint"] = "CENTER",
+			["inverse"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Sniper Training"] = {
+			["sparkWidth"] = 10,
+			["stacksSize"] = 12,
+			["xOffset"] = 0,
+			["stacksFlags"] = "None",
+			["yOffset"] = -13,
+			["anchorPoint"] = "CENTER",
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["rotateText"] = "NONE",
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["fontFlags"] = "OUTLINE",
+			["icon_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["selfPoint"] = "CENTER",
+			["barColor"] = {
+				0.0274509803921569, -- [1]
+				1, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["desaturate"] = false,
+			["sparkOffsetY"] = 0,
+			["load"] = {
+				["use_never"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_name"] = false,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["timerColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["regionType"] = "aurabar",
+			["stacks"] = true,
+			["texture"] = "Flat",
+			["textFont"] = "Friz Quadrata TT",
+			["stacksFont"] = "Friz Quadrata TT",
+			["auto"] = true,
+			["timerFont"] = "Friz Quadrata TT",
+			["alpha"] = 1,
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["sparkOffsetX"] = 0,
+			["parent"] = "Hunter Group v2.0",
+			["barInFront"] = true,
+			["sparkRotationMode"] = "AUTO",
+			["textSize"] = 12,
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["names"] = {
+					"Sniper Training", -- [1]
+				},
+				["spellIds"] = {
+				},
+				["custom_hide"] = "timed",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["debuffType"] = "HELPFUL",
+			},
+			["text"] = true,
+			["stickyDuration"] = false,
+			["timer"] = true,
+			["timerFlags"] = "None",
+			["sparkBlendMode"] = "ADD",
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["textFlags"] = "None",
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["border"] = false,
+			["borderEdge"] = "None",
+			["untrigger"] = {
+			},
+			["borderSize"] = 16,
+			["spark"] = false,
+			["icon_side"] = "LEFT",
+			["inverse"] = false,
+			["borderOffset"] = 5,
+			["sparkHeight"] = 30,
+			["sparkRotation"] = 0,
+			["displayTextRight"] = "%c",
+			["stacksColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["timerSize"] = 12,
+			["displayTextLeft"] = "%c",
+			["additional_triggers"] = {
+			},
+			["id"] = "Sniper Training",
+			["frameStrata"] = 1,
+			["width"] = 240.000091552734,
+			["customTextUpdate"] = "update",
+			["height"] = 5,
+			["numTriggers"] = 1,
+			["sparkDesature"] = false,
+			["orientation"] = "HORIZONTAL_INVERSE",
+			["borderInset"] = 11,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["icon"] = false,
+		},
+		["Focus Fire BW"] = {
+			["xOffset"] = 0,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "preset",
+					["preset"] = "bounce",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["names"] = {
+					"Focus Fire", -- [1]
+				},
+				["spellIds"] = {
+				},
+				["custom_hide"] = "timed",
+				["unit"] = "player",
+				["inverse"] = true,
+				["subeventPrefix"] = "SPELL",
+				["debuffType"] = "HELPFUL",
+			},
+			["desaturate"] = false,
+			["font"] = "Expressway",
+			["height"] = 64,
+			["load"] = {
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 24,
+			["displayStacks"] = " ",
+			["regionType"] = "icon",
+			["parent"] = "Azor's Focus Fire Group",
+			["icon"] = true,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["id"] = "Focus Fire BW",
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["useCount"] = true,
+						["count"] = "1",
+						["spellIds"] = {
+						},
+						["unit"] = "pet",
+						["names"] = {
+							"Frenzy", -- [1]
+						},
+						["countOperator"] = ">=",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["rem"] = "2.8",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["custom_hide"] = "timed",
+						["type"] = "aura",
+						["spellIds"] = {
+						},
+						["useRem"] = true,
+						["remOperator"] = ">",
+						["names"] = {
+							"Bestial Wrath", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
+			},
+			["yOffset"] = 0,
+			["frameStrata"] = 1,
+			["width"] = 64,
+			["stickyDuration"] = false,
+			["numTriggers"] = 3,
+			["inverse"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["selfPoint"] = "CENTER",
+			["displayIcon"] = "INTERFACE\\ICONS\\ability_hunter_focusfire",
+			["stacksPoint"] = "BOTTOM",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["BA Ready"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["yOffset"] = 44,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["subeventSuffix"] = "_CAST_START",
+				["use_showOn"] = true,
+				["use_unit"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["unevent"] = "auto",
+				["showOn"] = "showOnReady",
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+				["spellName"] = 3674,
+			},
+			["desaturate"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 38,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = " ",
+			["regionType"] = "icon",
+			["xOffset"] = -44,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Hunter Group v2.0",
+			["id"] = "BA Ready",
+			["stickyDuration"] = false,
+			["frameStrata"] = 1,
+			["width"] = 38,
+			["additional_triggers"] = {
+			},
+			["untrigger"] = {
+				["spellName"] = 3674,
+			},
+			["numTriggers"] = 1,
+			["selfPoint"] = "CENTER",
+			["inverse"] = false,
+			["icon"] = true,
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["KC Ready"] = {
+			["xOffset"] = 0,
+			["yOffset"] = 44,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["subeventSuffix"] = "_CAST_START",
+				["use_showOn"] = true,
+				["use_unit"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["unevent"] = "auto",
+				["showOn"] = "showOnReady",
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+				["spellName"] = 34026,
+			},
+			["stickyDuration"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 44,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = " ",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Hunter Group v2.0",
+			["id"] = "KC Ready",
+			["desaturate"] = false,
+			["frameStrata"] = 1,
+			["width"] = 44,
+			["selfPoint"] = "CENTER",
+			["untrigger"] = {
+				["spellName"] = 34026,
+			},
+			["numTriggers"] = 1,
+			["additional_triggers"] = {
+			},
+			["inverse"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Hunter Group v2.0"] = {
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["controlledChildren"] = {
+				"Kill Shot Ready", -- [1]
+				"Kill Shot CD", -- [2]
+				"Glaive Toss Ready 2", -- [3]
+				"Glaive Toss CD 2", -- [4]
+				"Barrage Ready", -- [5]
+				"Barrage CD", -- [6]
+				"Powershot Ready", -- [7]
+				"Powershot CD", -- [8]
+				"ES Proc", -- [9]
+				"ES Ready", -- [10]
+				"ES CD", -- [11]
+				"KC Ready", -- [12]
+				"KC CD", -- [13]
+				"Chimera Shot Ready", -- [14]
+				"Chimera Shot CD", -- [15]
+				"BA Ready", -- [16]
+				"BA Debuff", -- [17]
+				"BA CD", -- [18]
+				"Pet Frenzy 1-4", -- [19]
+				"Pet Frenzy 5", -- [20]
+				"Focus Fire", -- [21]
+				"Focus Fire 5", -- [22]
+				"TotH", -- [23]
+				"Dire Beast Ready", -- [24]
+				"Dire Beast Up", -- [25]
+				"Dire Beast CD", -- [26]
+				"Crows Debuff MM 2", -- [27]
+				"SS Inactive", -- [28]
+				"NoPet ExA", -- [29]
+				"NoPet FS", -- [30]
+				"NoPet Adap", -- [31]
+				"SS Debuff MM 2", -- [32]
+				"Steady Focus", -- [33]
+				"Focus", -- [34]
+				"GCD", -- [35]
+				"ES Line", -- [36]
+				"CS Line", -- [37]
+				"Kill Command Line", -- [38]
+				"CS + AS Line", -- [39]
+				"CS + AS ToTH Line", -- [40]
+				"Rapid Fire", -- [41]
+				"Exotic Munitions", -- [42]
+				"No Trap Launcher", -- [43]
+				"No Lone Wolf Buff", -- [44]
+				"No Lone Wolf Buff 2", -- [45]
+				"No Lone Wolf Crit", -- [46]
+				"No Lone Wolf Versatility", -- [47]
+				"No Lone Wolf Stat Multiplier", -- [48]
+				"No Lone Wolf Stamina", -- [49]
+				"No Lone Wolf Spellpower", -- [50]
+				"No Lone Wolf Multistrike", -- [51]
+				"No Lone Wolf Mastery", -- [52]
+				"No Lone Wolf Haste", -- [53]
+				"Bestial Wrath", -- [54]
+				"Beast Cleave 2", -- [55]
+				"Bombardment", -- [56]
+				"Rapid Fire CD", -- [57]
+				"Rapid Fire Ready", -- [58]
+				"Bestial Wrath Ready", -- [59]
+				"Bestial Wrath CD", -- [60]
+				"A Murder of Crows Ready 2", -- [61]
+				"A Murder of Crows CD 2", -- [62]
+				"Stampede CD", -- [63]
+				"Stampede Ready", -- [64]
+				"Recently Moved", -- [65]
+				"Sniper Training", -- [66]
+				"Fox", -- [67]
+				"Careful Aim", -- [68]
+			},
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["xOffset"] = -3,
+			["border"] = false,
+			["yOffset"] = -193.999908447266,
+			["regionType"] = "group",
+			["borderSize"] = 16,
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["expanded"] = true,
+			["borderOffset"] = 5,
+			["selfPoint"] = "BOTTOMLEFT",
+			["additional_triggers"] = {
+			},
+			["untrigger"] = {
+			},
+			["frameStrata"] = 1,
+			["id"] = "Hunter Group v2.0",
+			["borderEdge"] = "None",
+			["borderInset"] = 11,
+			["numTriggers"] = 1,
+			["trigger"] = {
+				["subeventPrefix"] = "SPELL",
+				["type"] = "aura",
+				["spellIds"] = {
+				},
+				["subeventSuffix"] = "_CAST_START",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+				},
+				["event"] = "Health",
+				["unit"] = "player",
+			},
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["load"] = {
+				["use_class"] = "true",
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["anchorPoint"] = "CENTER",
+		},
+		["No Lone Wolf Stamina"] = {
+			["xOffset"] = -144.999633789063,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["spellId"] = "160200",
+				["subeventSuffix"] = "_CAST_START",
+				["ownOnly"] = true,
+				["event"] = "Health",
+				["names"] = {
+					"Lone Wolf: Ferocity of the Raptor", -- [1]
+					"Lone Wolf: Grace of the Cat", -- [2]
+					"Lone Wolf: Fortitude of the Bear", -- [3]
+					"Lone Wolf: Haste of the Hyena", -- [4]
+					"Lone Wolf: Wisdom of the Serpent", -- [5]
+					"Lone Wolf: Power of the Primates", -- [6]
+					"Lone Wolf: Versatility of the Ravager", -- [7]
+					"Lone Wolf: Quickness of the Dragonhawk", -- [8]
+				},
+				["debuffType"] = "HELPFUL",
+				["use_spellId"] = true,
+				["name"] = "Lone Wolf: Ferocity of the Raptor",
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["inverse"] = true,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["single"] = 21,
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%c",
+			["regionType"] = "icon",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["init_completed"] = 1,
+			["parent"] = "Hunter Group v2.0",
+			["selfPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.800000011920929, -- [4]
+			},
+			["id"] = "No Lone Wolf Stamina",
+			["disjunctive"] = false,
+			["frameStrata"] = 1,
+			["width"] = 34,
+			["inverse"] = false,
+			["stickyDuration"] = false,
+			["numTriggers"] = 10,
+			["yOffset"] = 1,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "custom",
+						["unevent"] = "auto",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
+						["custom"] = "function()\n  return not UnitExists(\"pet\")\nend",
+						["subeventSuffix"] = "_CAST_START",
+						["check"] = "event",
+						["use_unit"] = true,
+						["custom_type"] = "status",
+						["events"] = "UNIT_PET",
+					},
+					["untrigger"] = {
+						["custom"] = "function()\n  return UnitExists(\"pet\")\nend",
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Blood Pact", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Commanding Shout", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [3]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Power Word: Fortitude", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [4]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Lone Wolf: Fortitude of the Bear", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [5]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["custom_hide"] = "timed",
+						["inverse"] = true,
+						["names"] = {
+							"Invigorating Roar", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [6]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Qiraji Fortitude", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [7]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Savage Vigor", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [8]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Sturdiness", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [9]
+			},
+			["displayIcon"] = "Interface\\Icons\\spell_hunter_lonewolf",
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["No Lone Wolf Versatility"] = {
+			["xOffset"] = -145,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["spellId"] = "160200",
+				["subeventSuffix"] = "_CAST_START",
+				["ownOnly"] = true,
+				["event"] = "Health",
+				["names"] = {
+					"Lone Wolf: Ferocity of the Raptor", -- [1]
+					"Lone Wolf: Grace of the Cat", -- [2]
+					"Lone Wolf: Fortitude of the Bear", -- [3]
+					"Lone Wolf: Haste of the Hyena", -- [4]
+					"Lone Wolf: Wisdom of the Serpent", -- [5]
+					"Lone Wolf: Power of the Primates", -- [6]
+					"Lone Wolf: Versatility of the Ravager", -- [7]
+					"Lone Wolf: Quickness of the Dragonhawk", -- [8]
+				},
+				["debuffType"] = "HELPFUL",
+				["use_spellId"] = true,
+				["name"] = "Lone Wolf: Ferocity of the Raptor",
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["inverse"] = true,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["single"] = 21,
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%c",
+			["regionType"] = "icon",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["init_completed"] = 1,
+			["parent"] = "Hunter Group v2.0",
+			["selfPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.800000011920929, -- [4]
+			},
+			["id"] = "No Lone Wolf Versatility",
+			["disjunctive"] = false,
+			["frameStrata"] = 1,
+			["width"] = 34,
+			["inverse"] = false,
+			["stickyDuration"] = false,
+			["numTriggers"] = 13,
+			["yOffset"] = 1,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "custom",
+						["unevent"] = "auto",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
+						["custom"] = "function()\n  return not UnitExists(\"pet\")\nend",
+						["subeventSuffix"] = "_CAST_START",
+						["check"] = "event",
+						["use_unit"] = true,
+						["custom_type"] = "status",
+						["events"] = "UNIT_PET",
+					},
+					["untrigger"] = {
+						["custom"] = "function()\n  return UnitExists(\"pet\")\nend",
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Inspiring Presence", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Mark of the Wild", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [3]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Sanctity Aura", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [4]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Unholy Aura", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [5]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["custom_hide"] = "timed",
+						["inverse"] = true,
+						["names"] = {
+							"Lone Wolf: Versatility of the Ravager", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [6]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Chitinous Armor", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [7]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Defensive Quills", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [8]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Indomitable", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [9]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Strength of the Earth", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [10]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Tenacity", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [11]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["inverse"] = true,
+						["names"] = {
+							"Wild Strength", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [12]
+			},
+			["displayIcon"] = "Interface\\Icons\\spell_hunter_lonewolf",
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["No Lone Wolf Buff 2"] = {
+			["xOffset"] = -144.999633789063,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["spellId"] = "160200",
+				["subeventSuffix"] = "_CAST_START",
+				["ownOnly"] = true,
+				["event"] = "Health",
+				["names"] = {
+					"Lone Wolf: Ferocity of the Raptor", -- [1]
+					"Lone Wolf: Grace of the Cat", -- [2]
+					"Lone Wolf: Fortitude of the Bear", -- [3]
+					"Lone Wolf: Haste of the Hyena", -- [4]
+					"Lone Wolf: Wisdom of the Serpent", -- [5]
+					"Lone Wolf: Power of the Primates", -- [6]
+					"Lone Wolf: Versatility of the Ravager", -- [7]
+					"Lone Wolf: Quickness of the Dragonhawk", -- [8]
+				},
+				["debuffType"] = "HELPFUL",
+				["use_spellId"] = true,
+				["name"] = "Lone Wolf: Ferocity of the Raptor",
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["inverse"] = true,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["use_never"] = true,
+				["talent"] = {
+					["single"] = 21,
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%c",
+			["regionType"] = "icon",
+			["disjunctive"] = false,
+			["init_completed"] = 1,
+			["parent"] = "Hunter Group v2.0",
+			["selfPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.800000011920929, -- [4]
+			},
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "custom",
+						["unevent"] = "auto",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
+						["events"] = "UNIT_PET",
+						["subeventSuffix"] = "_CAST_START",
+						["check"] = "event",
+						["use_unit"] = true,
+						["custom_type"] = "status",
+						["custom"] = "function()\n  return not UnitExists(\"pet\")\nend",
+					},
+					["untrigger"] = {
+						["custom"] = "function()\n  return UnitExists(\"pet\")\nend",
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Arcane Brilliance", -- [1]
+							"Leader of the Pack", -- [2]
+							"Legacy of the White Tiger", -- [3]
+							"Lone Wolf: Ferocity of the Raptor", -- [4]
+							"Embrace of the Shale Spider", -- [5]
+							"Fearless Roar", -- [6]
+							"Furious Howl", -- [7]
+							"Still Water", -- [8]
+							"Strength of the Pack", -- [9]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Blessing of Might", -- [1]
+							"Grace of Air", -- [2]
+							"Power of the Grave", -- [3]
+							"Keen Senses", -- [4]
+							"Plainswalking", -- [5]
+							"Roar of Courage", -- [6]
+							"Spirit Beast Blessing", -- [7]
+							"Lone Wolf: Grace of the Cat", -- [8]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [3]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Dark Intent", -- [1]
+							"Mind Quickening", -- [2]
+							"Swiftblade's Cunning", -- [3]
+							"Windflurry", -- [4]
+							"Breath of the Winds", -- [5]
+							"Double Bite", -- [6]
+							"Wild Strength", -- [7]
+							"Lone Wolf: Quickness of the Dragonhawk", -- [8]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [4]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Arcane Brilliance", -- [1]
+							"Dark Intent", -- [2]
+							"Qiraji Fortitude", -- [3]
+							"Serpent's Cunning", -- [4]
+							"Still Water", -- [5]
+							"Lone Wolf: Wisdom of the Serpent", -- [6]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [5]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["custom_hide"] = "timed",
+						["inverse"] = true,
+						["names"] = {
+							"Blood Pact", -- [1]
+							"Commanding Shout", -- [2]
+							"Power Word: Fortitude", -- [3]
+							"Invigorating Roar", -- [4]
+							"Qiraji Fortitude", -- [5]
+							"Savage Vigor", -- [6]
+							"Sturdiness", -- [7]
+							"Lone Wolf: Fortitude of the Bear", -- [8]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [6]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Blessing of Kings", -- [1]
+							"Legacy of the Emperor", -- [2]
+							"Mark of the Wild", -- [3]
+							"Lone Wolf: Power of the Primates", -- [4]
+							"Bark of the Wild", -- [5]
+							"Blessing of Kongs", -- [6]
+							"Embrace of the Shale Spider", -- [7]
+							"Strength of the Earth", -- [8]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [7]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Inspiring Presence", -- [1]
+							"Mark of the Wild", -- [2]
+							"Sanctity Aura", -- [3]
+							"Unholy Aura", -- [4]
+							"Lone Wolf: Versatility of the Ravager", -- [5]
+							"Chitinous Armor", -- [6]
+							"Defensive Quills", -- [7]
+							"Indomitable", -- [8]
+							"Strength of the Earth", -- [9]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [8]
+			},
+			["stickyDuration"] = false,
+			["frameStrata"] = 1,
+			["width"] = 34,
+			["inverse"] = false,
+			["yOffset"] = 0.999755859375,
+			["numTriggers"] = 9,
+			["id"] = "No Lone Wolf Buff 2",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["displayIcon"] = "Interface\\Icons\\spell_hunter_lonewolf",
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["CS + AS Line"] = {
+			["xOffset"] = 50,
+			["mirror"] = false,
+			["yOffset"] = 6,
+			["regionType"] = "texture",
+			["blendMode"] = "BLEND",
+			["parent"] = "Hunter Group v2.0",
+			["color"] = {
+				0.658823529411765, -- [1]
+				0.658823529411765, -- [2]
+				0.658823529411765, -- [3]
+				1, -- [4]
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = true,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["debuffType"] = "HELPFUL",
+						["spellIds"] = {
+						},
+						["unit"] = "player",
+						["names"] = {
+							"Thrill of the Hunt", -- [1]
+						},
+						["custom_hide"] = "timed",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+			},
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["width"] = 2.00047659873962,
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["type"] = "status",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["use_unit"] = true,
+				["debuffType"] = "HELPFUL",
+				["spellIds"] = {
+				},
+				["names"] = {
+				},
+				["subeventPrefix"] = "SPELL",
+				["unevent"] = "auto",
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+			},
+			["discrete_rotation"] = 0,
+			["frameStrata"] = 1,
+			["desaturate"] = false,
+			["rotation"] = 0,
+			["anchorPoint"] = "CENTER",
+			["numTriggers"] = 2,
+			["id"] = "CS + AS Line",
+			["height"] = 31,
+			["rotate"] = true,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["untrigger"] = {
+			},
+		},
+		["NoPet ExA"] = {
+			["color"] = {
+				0.474509803921569, -- [1]
+				1, -- [2]
+				0.588235294117647, -- [3]
+				1, -- [4]
+			},
+			["untrigger"] = {
+				["custom"] = "function()\n  return UnitExists(\"pet\")\nend",
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "custom",
+					["colorR"] = 1,
+					["duration"] = "2",
+					["duration_type"] = "seconds",
+					["x"] = 0,
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["colorB"] = 1,
+					["y"] = 0,
+					["colorA"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "    return function()\n    return 0\n    end\n  ",
+					["alphaType"] = "hide",
+					["rotate"] = 0,
+					["scalex"] = 1,
+					["use_alpha"] = true,
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "custom",
+				["custom_type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["unit"] = "player",
+				["custom"] = "function()\n  return not UnitExists(\"pet\")\nend",
+				["subeventSuffix"] = "_CAST_START",
+				["check"] = "event",
+				["events"] = "UNIT_PET",
+				["spellIds"] = {
+				},
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 44,
+			["load"] = {
+				["talent"] = {
+					["single"] = 19,
+					["multi"] = {
+						[19] = true,
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 12,
+			["displayStacks"] = " ",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = false,
+			["selfPoint"] = "CENTER",
+			["id"] = "NoPet ExA",
+			["xOffset"] = -107.999938964844,
+			["frameStrata"] = 1,
+			["width"] = 44,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["unevent"] = "auto",
+						["use_vehicle"] = false,
+						["event"] = "Conditions",
+						["subeventPrefix"] = "SPELL",
+						["subeventSuffix"] = "_CAST_START",
+						["unit"] = "player",
+						["use_alive"] = true,
+						["use_unit"] = true,
+						["use_mounted"] = false,
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+			},
+			["inverse"] = false,
+			["numTriggers"] = 2,
+			["yOffset"] = 142,
+			["stickyDuration"] = false,
+			["displayIcon"] = "Interface\\Icons\\Ability_Hunter_Pet_Cat",
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["No Lone Wolf Mastery"] = {
+			["xOffset"] = -145,
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "shrink",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["spellId"] = "160200",
+				["subeventSuffix"] = "_CAST_START",
+				["ownOnly"] = true,
+				["event"] = "Health",
+				["names"] = {
+					"Lone Wolf: Ferocity of the Raptor", -- [1]
+					"Lone Wolf: Grace of the Cat", -- [2]
+					"Lone Wolf: Fortitude of the Bear", -- [3]
+					"Lone Wolf: Haste of the Hyena", -- [4]
+					"Lone Wolf: Wisdom of the Serpent", -- [5]
+					"Lone Wolf: Power of the Primates", -- [6]
+					"Lone Wolf: Versatility of the Ravager", -- [7]
+					"Lone Wolf: Quickness of the Dragonhawk", -- [8]
+				},
+				["debuffType"] = "HELPFUL",
+				["use_spellId"] = true,
+				["name"] = "Lone Wolf: Ferocity of the Raptor",
+				["subeventPrefix"] = "SPELL",
+				["spellIds"] = {
+				},
+				["unit"] = "player",
+				["inverse"] = true,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["progressPrecision"] = 0,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["single"] = 21,
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%c",
+			["regionType"] = "icon",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["init_completed"] = 1,
+			["parent"] = "Hunter Group v2.0",
+			["selfPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.800000011920929, -- [4]
+			},
+			["id"] = "No Lone Wolf Mastery",
+			["disjunctive"] = false,
+			["frameStrata"] = 1,
+			["width"] = 34,
+			["inverse"] = false,
+			["stickyDuration"] = false,
+			["numTriggers"] = 10,
+			["yOffset"] = 1,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "custom",
+						["unevent"] = "auto",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
+						["custom"] = "function()\n  return not UnitExists(\"pet\")\nend",
+						["subeventSuffix"] = "_CAST_START",
+						["check"] = "event",
+						["use_unit"] = true,
+						["custom_type"] = "status",
+						["events"] = "UNIT_PET",
+					},
+					["untrigger"] = {
+						["custom"] = "function()\n  return UnitExists(\"pet\")\nend",
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Blessing of Might", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Grace of Air", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [3]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Power of the Grave", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [4]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Lone Wolf: Grace of the Cat", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [5]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["custom_hide"] = "timed",
+						["inverse"] = true,
+						["names"] = {
+							"Keen Senses", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [6]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Plainswalking", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [7]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Roar of Courage", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [8]
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = false,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["inverse"] = true,
+						["spellIds"] = {
+						},
+						["names"] = {
+							"Spirit Beast Blessing", -- [1]
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [9]
+			},
+			["displayIcon"] = "Interface\\Icons\\spell_hunter_lonewolf",
+			["stacksPoint"] = "CENTER",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["NoPet Adap"] = {
+			["xOffset"] = -107.999938964844,
+			["yOffset"] = 142,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "custom",
+					["colorR"] = 1,
+					["duration"] = "2",
+					["duration_type"] = "seconds",
+					["alphaType"] = "hide",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["colorA"] = 1,
+					["y"] = 0,
+					["x"] = 0,
+					["colorG"] = 1,
+					["alphaFunc"] = "    return function()\n    return 0\n    end\n  ",
+					["colorB"] = 1,
+					["rotate"] = 0,
+					["scalex"] = 1,
+					["use_alpha"] = true,
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "custom",
+				["custom_type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["unit"] = "player",
+				["custom"] = "function()\n  return not UnitExists(\"pet\")\nend",
+				["subeventSuffix"] = "_CAST_START",
+				["check"] = "event",
+				["events"] = "UNIT_PET",
+				["spellIds"] = {
+				},
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 44,
+			["load"] = {
+				["talent"] = {
+					["single"] = 21,
+					["multi"] = {
+						[19] = true,
+					},
+				},
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 12,
+			["displayStacks"] = " ",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["selfPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = false,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["unevent"] = "auto",
+						["use_vehicle"] = false,
+						["event"] = "Conditions",
+						["subeventPrefix"] = "SPELL",
+						["use_unit"] = true,
+						["subeventSuffix"] = "_CAST_START",
+						["use_alive"] = true,
+						["unit"] = "player",
+						["use_mounted"] = false,
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+			},
+			["id"] = "NoPet Adap",
+			["color"] = {
+				0.474509803921569, -- [1]
+				1, -- [2]
+				0.588235294117647, -- [3]
+				1, -- [4]
+			},
+			["frameStrata"] = 1,
+			["width"] = 44,
+			["untrigger"] = {
+				["custom"] = "function()\n  return UnitExists(\"pet\")\nend",
+			},
+			["inverse"] = false,
+			["numTriggers"] = 2,
+			["stickyDuration"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["displayIcon"] = "Interface\\Icons\\Ability_Hunter_Pet_Cat",
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["CS + AS ToTH Line"] = {
+			["xOffset"] = 10,
+			["mirror"] = false,
+			["yOffset"] = 6,
+			["regionType"] = "texture",
+			["blendMode"] = "BLEND",
+			["parent"] = "Hunter Group v2.0",
+			["color"] = {
+				0.658823529411765, -- [1]
+				0.658823529411765, -- [2]
+				0.658823529411765, -- [3]
+				1, -- [4]
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["ownOnly"] = true,
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["debuffType"] = "HELPFUL",
+						["unit"] = "player",
+						["names"] = {
+							"Thrill of the Hunt", -- [1]
+						},
+						["custom_hide"] = "timed",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+			},
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["width"] = 2.00047659873962,
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["type"] = "status",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["use_unit"] = true,
+				["debuffType"] = "HELPFUL",
+				["spellIds"] = {
+				},
+				["names"] = {
+				},
+				["subeventPrefix"] = "SPELL",
+				["unevent"] = "auto",
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+			},
+			["discrete_rotation"] = 0,
+			["frameStrata"] = 1,
+			["desaturate"] = false,
+			["rotation"] = 0,
+			["anchorPoint"] = "CENTER",
+			["numTriggers"] = 2,
+			["id"] = "CS + AS ToTH Line",
+			["height"] = 31,
+			["rotate"] = true,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["untrigger"] = {
+			},
+		},
+		["Dire Beast CD"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["untrigger"] = {
+				["spellName"] = 120679,
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["ownOnly"] = true,
+				["unit"] = "player",
+				["remaining"] = "15",
+				["custom_hide"] = "timed",
+				["type"] = "status",
+				["subeventSuffix"] = "_CAST_START",
+				["unevent"] = "auto",
+				["use_showOn"] = true,
+				["subeventPrefix"] = "SPELL",
+				["event"] = "Cooldown Progress (Spell)",
+				["names"] = {
+				},
+				["use_remaining"] = true,
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["debuffType"] = "HELPFUL",
+				["showOn"] = "showOnCooldown",
+				["remaining_operator"] = "<=",
+				["use_unit"] = true,
+				["spellName"] = 120679,
+			},
+			["desaturate"] = true,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 32,
+			["load"] = {
+				["talent"] = {
+					["single"] = 11,
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "  %p",
+			["regionType"] = "icon",
+			["parent"] = "Hunter Group v2.0",
+			["stacksPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["selfPoint"] = "CENTER",
+			["additional_triggers"] = {
+			},
+			["id"] = "Dire Beast CD",
+			["frameStrata"] = 1,
+			["width"] = 32,
+			["xOffset"] = -105,
+			["inverse"] = false,
+			["numTriggers"] = 1,
+			["yOffset"] = 44,
+			["stickyDuration"] = false,
 			["actions"] = {
 				["start"] = {
 				},
@@ -700,27 +11079,6 @@ WeakAurasSaved = {
 				},
 			},
 			["cooldown"] = true,
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0.29,
-			["auto"] = false,
-			["id"] = "Highmaul - Imperator Mar'gok - Arcane Wrath Active Self",
-			["additional_triggers"] = {
-			},
-			["selfPoint"] = "CENTER",
-			["frameStrata"] = 1,
-			["width"] = 75,
-			["yOffset"] = 4.3760986328125,
-			["numTriggers"] = 1,
-			["inverse"] = false,
-			["stickyDuration"] = false,
-			["color"] = {
-				0.968627450980392, -- [1]
-				1, -- [2]
-				0.988235294117647, -- [3]
-				1, -- [4]
-			},
-			["displayIcon"] = "Interface\\Icons\\ability_socererking_arcanewrath",
-			["stacksPoint"] = "BOTTOMRIGHT",
 			["textColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -728,517 +11086,61 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
-		["Arcane Wrath(p1&p2&p4)"] = {
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["controlledChildren"] = {
-				"1 stack", -- [1]
-				"2 stacks", -- [2]
-				"3 stacks", -- [3]
-				"4 stacks", -- [4]
-				"5 stacks", -- [5]
-				"6 stacks", -- [6]
-				"7 stacks", -- [7]
-			},
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["xOffset"] = 4.00067138671875,
-			["border"] = false,
-			["yOffset"] = 80.00048828125,
-			["regionType"] = "group",
-			["borderSize"] = 16,
-			["borderColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["expanded"] = false,
-			["borderOffset"] = 5,
-			["selfPoint"] = "BOTTOMLEFT",
-			["additional_triggers"] = {
-			},
-			["anchorPoint"] = "CENTER",
-			["frameStrata"] = 1,
-			["id"] = "Arcane Wrath(p1&p2&p4)",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["borderInset"] = 11,
-			["numTriggers"] = 1,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["unit"] = "player",
-				["type"] = "aura",
-				["spellIds"] = {
-				},
-				["subeventSuffix"] = "_CAST_START",
-				["debuffType"] = "HELPFUL",
-				["names"] = {
-				},
-				["event"] = "Health",
-				["subeventPrefix"] = "SPELL",
-			},
-			["borderEdge"] = "None",
-			["load"] = {
-				["use_class"] = false,
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["untrigger"] = {
-			},
-		},
-		["Highmaul - Imperator Mar'gok - Arcane Wrath Distance"] = {
+		["Steady Focus"] = {
 			["outline"] = true,
 			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
+				0.788235294117647, -- [1]
+				0.71764705882353, -- [2]
+				0.380392156862745, -- [3]
 				1, -- [4]
 			},
-			["displayText"] = "OTHER DISTANCE",
-			["yOffset"] = -50,
+			["displayText"] = "%p",
+			["yOffset"] = 88,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
 			["icon"] = true,
-			["fontFlags"] = "OUTLINE",
 			["selfPoint"] = "CENTER",
 			["trigger"] = {
-				["stack_info"] = "stack",
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["name_info"] = "players",
-				["unit"] = "group",
-				["custom_hide"] = "timed",
-				["group_countOperator"] = ">",
-				["spellIds"] = {
-				},
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Fortification", -- [3]
-					"Branded: Replication", -- [4]
-					"Venom Splash", -- [5]
-				},
-				["group_count"] = "0",
-				["subeventPrefix"] = "SPELL",
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
-			},
-			["stickyDuration"] = false,
-			["rotation"] = 0,
-			["font"] = "DorisPP",
-			["height"] = 20.4799556732178,
-			["rotate"] = true,
-			["load"] = {
-				["use_never"] = false,
-				["zone"] = "Highmaul",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 25,
-			["displayStacks"] = "%s",
-			["mirror"] = false,
-			["regionType"] = "text",
-			["blendMode"] = "BLEND",
-			["untrigger"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["do_custom"] = false,
-					["custom"] = "",
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["custom"] = "",
-				},
-			},
-			["texture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura110",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["justify"] = "CENTER",
-			["additional_triggers"] = {
-			},
-			["id"] = "Highmaul - Imperator Mar'gok - Arcane Wrath Distance",
-			["auto"] = true,
-			["frameStrata"] = 1,
-			["width"] = 183.040023803711,
-			["desaturate"] = false,
-			["inverse"] = false,
-			["numTriggers"] = 1,
-			["discrete_rotation"] = 0,
-			["xOffset"] = 0,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["stacksPoint"] = "BOTTOMRIGHT",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["2 stacks p3"] = {
-			["xOffset"] = 0,
-			["untrigger"] = {
-			},
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["icon"] = true,
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "2",
-				["subeventPrefix"] = "SPELL",
+				["sourceunit"] = "player",
+				["duration"] = "10",
 				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
-			["load"] = {
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["zone"] = "Highmaul",
-				["use_zone"] = true,
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["parent"] = "Arcane Wrath(p3)",
-			["additional_triggers"] = {
-			},
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["id"] = "2 stacks p3",
-			["yOffset"] = 0,
-			["numTriggers"] = 1,
-			["inverse"] = false,
-			["selfPoint"] = "CENTER",
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (150y) on \"..name, \"SAY\")",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["do_custom"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["stacksPoint"] = "BOTTOM",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["Arcane Wrath(p3)"] = {
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["controlledChildren"] = {
-				"1 stack p3", -- [1]
-				"2 stacks p3", -- [2]
-				"3 stacks p3", -- [3]
-				"4 stacks p3", -- [4]
-				"5 stacks p3", -- [5]
-				"6 stacks p3", -- [6]
-				"7 stacks p3", -- [7]
-				"8 stacks p3", -- [8]
-				"9 stacks p3", -- [9]
-				"10 stacks p3", -- [10]
-				"11 stacks p3", -- [11]
-				"12 stacks p3", -- [12]
-			},
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["xOffset"] = 1.00018310546875,
-			["border"] = false,
-			["yOffset"] = 10.0001220703125,
-			["regionType"] = "group",
-			["borderSize"] = 16,
-			["borderColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["expanded"] = false,
-			["borderOffset"] = 5,
-			["selfPoint"] = "BOTTOMLEFT",
-			["id"] = "Arcane Wrath(p3)",
-			["anchorPoint"] = "CENTER",
-			["frameStrata"] = 1,
-			["additional_triggers"] = {
-			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["borderInset"] = 11,
-			["numTriggers"] = 1,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["unit"] = "player",
+				["custom_hide"] = "timed",
 				["type"] = "aura",
-				["spellIds"] = {
-				},
-				["subeventSuffix"] = "_CAST_START",
+				["unevent"] = "timed",
+				["subeventPrefix"] = "SPELL",
+				["event"] = "Combat Log",
 				["debuffType"] = "HELPFUL",
-				["names"] = {
-				},
-				["event"] = "Health",
-				["subeventPrefix"] = "SPELL",
-			},
-			["borderEdge"] = "None",
-			["load"] = {
-				["use_class"] = false,
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["untrigger"] = {
-			},
-		},
-		["4 stacks p3"] = {
-			["xOffset"] = 0,
-			["untrigger"] = {
-			},
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["icon"] = true,
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "4",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
+				["use_unit"] = true,
+				["use_spellName"] = true,
 				["spellIds"] = {
 				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
+				["use_sourceunit"] = false,
+				["subeventSuffix"] = "_AURA_APPLIED",
+				["ownOnly"] = true,
+				["names"] = {
+					"Steady Focus", -- [1]
+				},
+				["spellName"] = "Lock and Load",
 			},
-			["desaturate"] = false,
+			["stickyDuration"] = false,
+			["progressPrecision"] = 0,
 			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
+			["height"] = 20.4799976348877,
 			["load"] = {
-				["zone"] = "Highmaul",
+				["talent"] = {
+					["single"] = 10,
+					["multi"] = {
+					},
+				},
 				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -1246,21 +11148,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["use_combat"] = true,
 				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -1269,1157 +11165,48 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["parent"] = "Arcane Wrath(p3)",
-			["additional_triggers"] = {
-			},
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["id"] = "4 stacks p3",
-			["yOffset"] = 0,
-			["numTriggers"] = 1,
-			["inverse"] = false,
-			["selfPoint"] = "CENTER",
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (84y) on \"..name, \"SAY\")",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["do_custom"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["stacksPoint"] = "BOTTOM",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["5 stacks p3"] = {
-			["xOffset"] = 0,
-			["untrigger"] = {
-			},
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["icon"] = true,
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["debuffType"] = "HARMFUL",
-				["useCount"] = true,
-				["count"] = "5",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
-			["load"] = {
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["zone"] = "Highmaul",
-				["use_zone"] = true,
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["parent"] = "Arcane Wrath(p3)",
-			["id"] = "5 stacks p3",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["additional_triggers"] = {
-			},
-			["yOffset"] = 0,
-			["numTriggers"] = 1,
-			["inverse"] = false,
-			["selfPoint"] = "CENTER",
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (63y) on \"..name, \"SAY\")",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["do_custom"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["stacksPoint"] = "BOTTOM",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["4 stacks"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-					["glow_action"] = "show",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (25y) on \"..name, \"SAY\")",
-					["do_sound"] = false,
-					["do_glow"] = false,
-					["do_custom"] = true,
-					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Ding6.ogg",
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Replication", -- [3]
-				},
-				["debuffType"] = "HARMFUL",
-				["useCount"] = true,
-				["count"] = "4",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
-			["load"] = {
-				["zone"] = "Highmaul",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["xOffset"] = 0,
-			["id"] = "4 stacks",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["additional_triggers"] = {
-			},
-			["untrigger"] = {
-			},
-			["inverse"] = false,
-			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
-			["stacksPoint"] = "BOTTOM",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["5 stacks"] = {
-			["xOffset"] = 0,
-			["untrigger"] = {
-			},
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["icon"] = true,
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Replication", -- [3]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "5",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
-			["load"] = {
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["zone"] = "Highmaul",
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
-			["additional_triggers"] = {
-			},
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["id"] = "5 stacks",
-			["yOffset"] = 0,
-			["numTriggers"] = 1,
-			["inverse"] = false,
-			["selfPoint"] = "CENTER",
-			["actions"] = {
-				["start"] = {
-					["glow_action"] = "show",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (12y) on \"..name, \"SAY\")",
-					["do_sound"] = false,
-					["do_glow"] = false,
-					["do_custom"] = true,
-					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Ding6.ogg",
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["stacksPoint"] = "BOTTOM",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["2 stacks"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-					["glow_action"] = "show",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (100y) on \"..name, \"SAY\")",
-					["do_sound"] = false,
-					["do_glow"] = false,
-					["do_custom"] = true,
-					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Ding6.ogg",
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Replication", -- [3]
-				},
-				["debuffType"] = "HARMFUL",
-				["useCount"] = true,
-				["count"] = "2",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
-			["load"] = {
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["zone"] = "Highmaul",
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["xOffset"] = 0,
-			["id"] = "2 stacks",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["additional_triggers"] = {
-			},
-			["untrigger"] = {
-			},
-			["inverse"] = false,
-			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
-			["stacksPoint"] = "BOTTOM",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["3 stacks"] = {
-			["xOffset"] = 0,
-			["untrigger"] = {
-			},
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["icon"] = true,
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Replication", -- [3]
-				},
-				["debuffType"] = "HARMFUL",
-				["useCount"] = true,
-				["count"] = "3",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
-			["load"] = {
-				["zone"] = "Highmaul",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
-			["id"] = "3 stacks",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["additional_triggers"] = {
-			},
-			["yOffset"] = 0,
-			["numTriggers"] = 1,
-			["inverse"] = false,
-			["selfPoint"] = "CENTER",
-			["actions"] = {
-				["start"] = {
-					["glow_action"] = "show",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (50y) on \"..name, \"SAY\")",
-					["do_sound"] = false,
-					["do_glow"] = false,
-					["do_custom"] = true,
-					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Ding6.ogg",
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["stacksPoint"] = "BOTTOM",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["1 stack p3"] = {
-			["xOffset"] = 0,
-			["untrigger"] = {
-			},
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["icon"] = true,
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "1",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
-			["load"] = {
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["zone"] = "Highmaul",
-				["use_zone"] = true,
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["parent"] = "Arcane Wrath(p3)",
-			["additional_triggers"] = {
-			},
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["id"] = "1 stack p3",
-			["yOffset"] = 0,
-			["numTriggers"] = 1,
-			["inverse"] = false,
-			["selfPoint"] = "CENTER",
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (200y) on \"..name, \"SAY\")",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["do_custom"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["stacksPoint"] = "BOTTOM",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["6 stacks"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-					["glow_action"] = "show",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (6y) on \"..name, \"SAY\")",
-					["do_sound"] = false,
-					["do_glow"] = false,
-					["do_custom"] = true,
-					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Ding6.ogg",
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Replication", -- [3]
-				},
-				["debuffType"] = "HARMFUL",
-				["useCount"] = true,
-				["count"] = "6",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
-			["load"] = {
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["zone"] = "Highmaul",
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["xOffset"] = 0,
-			["id"] = "6 stacks",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["additional_triggers"] = {
-			},
-			["untrigger"] = {
-			},
-			["inverse"] = false,
-			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
-			["stacksPoint"] = "BOTTOM",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["12 stacks p3"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (8y) on \"..name, \"SAY\")",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["do_custom"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "12",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
-			["load"] = {
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["zone"] = "Highmaul",
-				["use_zone"] = true,
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["parent"] = "Arcane Wrath(p3)",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["xOffset"] = 0,
-			["id"] = "12 stacks p3",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["additional_triggers"] = {
-			},
-			["untrigger"] = {
-			},
-			["inverse"] = false,
-			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
-			["stacksPoint"] = "BOTTOM",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["Highmaul - Imperator Mar'gok - Arcane Wrath Current"] = {
-			["outline"] = true,
-			["xOffset"] = -130,
-			["displayText"] = "CURRENT",
-			["yOffset"] = -70,
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["icon"] = true,
-			["fontFlags"] = "OUTLINE",
-			["selfPoint"] = "CENTER",
-			["trigger"] = {
-				["stack_info"] = "stack",
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["name_info"] = "players",
-				["unit"] = "group",
-				["custom_hide"] = "timed",
-				["group_countOperator"] = ">",
-				["spellIds"] = {
-				},
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Fortification", -- [3]
-					"Branded: Replication", -- [4]
-					"Venom Splash", -- [5]
-				},
-				["group_count"] = "0",
-				["subeventPrefix"] = "SPELL",
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
-			},
-			["stickyDuration"] = false,
-			["rotation"] = 0,
-			["font"] = "DorisPP",
-			["height"] = 14.7199821472168,
-			["rotate"] = true,
-			["load"] = {
-				["use_never"] = false,
-				["zone"] = "Highmaul",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 15,
-			["displayStacks"] = "%s",
-			["mirror"] = false,
+			["fontSize"] = 32,
+			["displayStacks"] = "%p",
 			["regionType"] = "text",
-			["blendMode"] = "BLEND",
+			["parent"] = "Hunter Group v2.0",
 			["untrigger"] = {
 			},
-			["discrete_rotation"] = 0,
-			["texture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura110",
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["desaturate"] = false,
-			["additional_triggers"] = {
-			},
-			["actions"] = {
+			["animation"] = {
 				["start"] = {
-					["do_custom"] = true,
-					["custom"] = "-- ON SHOW\nlocal id = 'HighmaulMargokArcaneWrath'\nlocal auras = {\n    {id = 79607,  name = \"Venom Splash\",           base_damage = {[14] = 46400, [15] = 65000, [16] = 87800}, base_distance = 50,  damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 156225, name = \"Branded\",                base_damage = {[14] = 46400, [15] = 65000, [16] = 87800}, base_distance = 200, damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 164004, name = \"Branded: Displacement\",  base_damage = {[14] = 46400, [15] = 65000, [16] = 87800}, base_distance = 200, damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 164005, name = \"Branded: Fortification\", base_damage = {[14] = 46400, [15] = 65000, [16] = 87800}, base_distance = 200, damage_increase = 0.25, distance_reduction = 0.25},\n    {id = 164006, name = \"Branded: Replication\",   base_damage = {[14] = 46400, [15] = 65000, [16] = 87800}, base_distance = 200, damage_increase = 0.25, distance_reduction = 0.5},\n    --{id = 119611, name = \"Renewing Mist\",          base_damage = {[14] = 46400, [15] = 65000, [16] = 87800}, base_distance = 200, damage_increase = 0.25, distance_reduction = 0.5},\n} \n\nlocal GetUnitAuraValue = function(aura, valueType, unit, sourceUnit) -- v2\n    if not aura then return end valueType, unit = valueType or 'name', unit or 'player' if not UnitExists(unit) then return end local v, value = {}\n    local GetAuraValues = function(unit, aura, filter)\n        local v, filter = {}, filter or 'HELPFUL'\n        v.name, v.rank, v.icon, v.count, v.auraType, v.duration, v.expirationTime, v.unitCaster, v.isStealable, v.shouldConsolidate, v.spellId, v.canApplyAura, v.isBossDebuff, v.value1, v.value2, v.value3 = UnitAura(unit, aura, type(aura)=='number' and filter or nil, filter)\n        return v\n    end\n    local GetAuraValue = function(v, t, s) if v[t] then if s then if v.unitCaster and UnitExists(s) and v.unitCaster == s then return v[t] end else return v[t] end end end\n    local ScanAuras = function(aura, valueType, unit, sourceUnit)\n        local output = nil\n        if type(aura) == 'string' then\n            v = GetAuraValues(unit, aura)\n            output = GetAuraValue(v,valueType,sourceUnit)\n            if output then return output end\n            v = GetAuraValues(unit, aura, 'HARMFUL')\n            output = GetAuraValue(v,valueType,sourceUnit)\n            if output then return output end    \n        elseif type(aura) == 'number' then\n            for i=1,40 do \n                v = GetAuraValues(unit, i)\n                output = GetAuraValue(v,valueType,sourceUnit)\n                if v.spellId and v.spellId == aura then if output then return output end end\n                v = GetAuraValues(unit, i, 'HARMFUL')\n                output = GetAuraValue(v,valueType,sourceUnit)  \n                if v.spellId and v.spellId == aura then if output then return output end end \n            end\n        end\n    end\n    if type(aura) == 'table' then\n        local output = nil\n        for iAura,vAura in pairs(aura) do\n            output = ScanAuras(vAura, valueType, unit, sourceUnit)\n            if output then return output end\n        end\n    else\n        return ScanAuras(aura, valueType, unit, sourceUnit)\n    end\nend\n\nlocal SetValue = function(value, ...)\n    if not WeakAuras.CustomValues then WeakAuras.CustomValues = {} end\n    if not ... then return end\n    local count, data = #{...}\n    for i,v in pairs({...}) do\n        if i==1 then if count and count == 1 then WeakAuras.CustomValues[v] = value else\n                WeakAuras.CustomValues[v] = WeakAuras.CustomValues[v] or {}\n                data = WeakAuras.CustomValues[v] end\n        else if i ~= count then if not data[v] then data[v] = {} end data = data[v] else data[v] = value end end\n    end\nend\n\nlocal affectedUnits = nil\n-- Loop through raid members        \nlocal numPlayers = GetNumGroupMembers()\nfor i = 1, numPlayers do\n    local unitId = IsInRaid() and \"raid\"..i or \"party\"..i\n    \n    for iAura,vAura in pairs(auras) do\n        local auraName, auraStack = GetUnitAuraValue(vAura.name, 'name', unitId), GetUnitAuraValue(vAura.name, 'count', unitId)\n        -- Has aura            \n        if auraName then\n            if not auraStack or auraStack == 0 then auraStack = 1 end\n            -- Add to list\n            affectedUnits = affectedUnits or {}\n            -- Difficulty\n            local inInstance, instanceType = IsInInstance()\n            local difficultyID = GetRaidDifficultyID()\n            local base_damage = vAura.base_damage[15]\n            if instanceType == 'raid' and vAura.base_damage[difficultyID] then\n                base_damage = vAura.base_damage[difficultyID]\n            end\n            -- Calculate info\n            affectedUnits[unitId] = {\n                id = vAura.id, \n                currentDistance = vAura.base_distance*(1-vAura.distance_reduction)^(auraStack-1),\n                nextDistance    = vAura.base_distance*(1-vAura.distance_reduction)^(auraStack+1-1),\n                currentDamage   = base_damage + base_damage * (auraStack - 1) * vAura.damage_increase,\n                nextDamage      = base_damage + base_damage * (auraStack+1 - 1) * vAura.damage_increase,\n                stacks = auraStack,\n            }                \n        end\n    end\nend\nSetValue(affectedUnits, id, 'affectedUnits')",
+					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
-				["init"] = {
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["do_custom"] = true,
-					["custom"] = "-- ON HIDE\nlocal id = 'HighmaulMargokArcaneWrath'\nlocal SetValue = function(value, ...)\n    if not WeakAuras.CustomValues then WeakAuras.CustomValues = {} end\n    if not ... then return end\n    local count, data = #{...}\n    for i,v in pairs({...}) do\n        if i==1 then if count and count == 1 then WeakAuras.CustomValues[v] = value else\n                WeakAuras.CustomValues[v] = WeakAuras.CustomValues[v] or {}\n                data = WeakAuras.CustomValues[v] end\n        else if i ~= count then if not data[v] then data[v] = {} end data = data[v] else data[v] = value end end\n    end\nend\nSetValue(nil, id, 'affectedUnits')",
+					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
+			["additional_triggers"] = {
+			},
+			["id"] = "Steady Focus",
 			["frameStrata"] = 1,
-			["width"] = 72.9599914550781,
-			["id"] = "Highmaul - Imperator Mar'gok - Arcane Wrath Current",
-			["inverse"] = false,
+			["width"] = 13.4400110244751,
+			["desaturate"] = false,
 			["numTriggers"] = 1,
+			["inverse"] = false,
 			["justify"] = "LEFT",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["animation"] = {
+			["xOffset"] = 78,
+			["actions"] = {
 				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
 				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
+				["init"] = {
 				},
 				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
 				},
 			},
-			["stacksPoint"] = "BOTTOMRIGHT",
+			["stacksPoint"] = "CENTER",
 			["textColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -2427,152 +11214,228 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
-		["Highmaul - Imperator Mar'gok - Arcane Wrath Arrow"] = {
-			["xOffset"] = 0,
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-					["do_custom"] = false,
-					["custom"] = "-- ON SHOW\nlocal id = 'HighmaulMargokArcaneWrath'\nlocal auras = {\n    {id = 156225, name = \"Branded\", base_damage = 75000, damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 164004, name = \"Branded: Displacement\", base_damage = 75000, damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 164005, name = \"Branded: Fortification\", base_damage = 75000, damage_increase = 0.25, distance_reduction = 0.25},\n    {id = 164006, name = \"Branded: Replication\", base_damage = 75000, damage_increase = 0.25, distance_reduction = 0.5},\n    {id = 119611, name = \"Renewing Mist\", base_damage = 75000, damage_increase = 0.25, distance_reduction = 0.5},\n} \n\nlocal SetValue = function(value, ...)\n    if not WeakAuras.CustomValues then WeakAuras.CustomValues = {} end\n    if not ... then return end\n    local count, data = #{...}\n    for i,v in pairs({...}) do\n        if i==1 then if count and count == 1 then WeakAuras.CustomValues[v] = value else\n                WeakAuras.CustomValues[v] = WeakAuras.CustomValues[v] or {}\n                data = WeakAuras.CustomValues[v] end\n        else if i ~= count then if not data[v] then data[v] = {} end data = data[v] else data[v] = value end end\n    end\nend\n\nlocal affectedUnits = nil\n-- Loop through raid members        \nlocal numPlayers = GetNumGroupMembers()\nfor i = 1, numPlayers do\n    local unitId = IsInRaid() and \"raid\"..i or \"party\"..i\n    for iAura,vAura in pairs(auras) do\n        local auraName, _, _, auraStack = UnitAura(unitId, vAura.name)\n        -- Has aura            \n        if auraName then\n            -- Add to list\n            affectedUnits = affectedUnits or {}\n            affectedUnits[unitId] = {id = vAura.id, stack = auraStack}                \n        end\n    end\nend\nSetValue(affectedUnits, id, 'affectedUnits')",
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["custom"] = "-- ON HIDE\nlocal id = 'HighmaulMargokArcaneWrath'\nlocal SetValue = function(value, ...)\n    if not WeakAuras.CustomValues then WeakAuras.CustomValues = {} end\n    if not ... then return end\n    local count, data = #{...}\n    for i,v in pairs({...}) do\n        if i==1 then if count and count == 1 then WeakAuras.CustomValues[v] = value else\n                WeakAuras.CustomValues[v] = WeakAuras.CustomValues[v] or {}\n                data = WeakAuras.CustomValues[v] end\n        else if i ~= count then if not data[v] then data[v] = {} end data = data[v] else data[v] = value end end\n    end\nend\nSetValue(nil, id, 'affectedUnits')",
-				},
+		["ES Line"] = {
+			["color"] = {
+				0.658823529411765, -- [1]
+				0.658823529411765, -- [2]
+				0.658823529411765, -- [3]
+				1, -- [4]
 			},
-			["fontFlags"] = "OUTLINE",
-			["selfPoint"] = "CENTER",
-			["trigger"] = {
-				["stack_info"] = "stack",
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["name_info"] = "players",
-				["unit"] = "group",
-				["debuffType"] = "HARMFUL",
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Fortification", -- [3]
-					"Branded: Replication", -- [4]
-					"Venom Splash", -- [5]
-				},
-				["spellIds"] = {
-				},
-				["custom_hide"] = "timed",
-				["group_count"] = "0",
-				["subeventPrefix"] = "SPELL",
-				["event"] = "Health",
-				["group_countOperator"] = ">",
-			},
-			["stickyDuration"] = false,
-			["rotation"] = 0,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 109.948997497559,
-			["rotate"] = true,
-			["load"] = {
-				["use_never"] = false,
-				["zone"] = "Highmaul",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 12,
-			["displayStacks"] = "%s",
 			["mirror"] = false,
+			["yOffset"] = 6,
 			["regionType"] = "texture",
 			["blendMode"] = "BLEND",
+			["parent"] = "Hunter Group v2.0",
+			["xOffset"] = -84,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
+			["id"] = "ES Line",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["width"] = 2.00047659873962,
+			["selfPoint"] = "CENTER",
+			["additional_triggers"] = {
+			},
+			["discrete_rotation"] = 0,
+			["frameStrata"] = 1,
+			["desaturate"] = false,
+			["rotation"] = 0,
+			["anchorPoint"] = "CENTER",
+			["numTriggers"] = 1,
+			["trigger"] = {
+				["type"] = "status",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["use_unit"] = true,
+				["debuffType"] = "HELPFUL",
+				["spellIds"] = {
+				},
+				["names"] = {
+				},
+				["subeventPrefix"] = "SPELL",
+				["unevent"] = "auto",
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+			},
+			["height"] = 31,
+			["rotate"] = true,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
 			["untrigger"] = {
 			},
-			["texture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura110",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
+		},
+		["A Murder of Crows Ready 2"] = {
+			["xOffset"] = -54,
+			["yOffset"] = -38,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
 			["icon"] = true,
-			["additional_triggers"] = {
-				{
-					["trigger"] = {
-						["stack_info"] = "count",
-						["type"] = "aura",
-						["subeventSuffix"] = "_CAST_START",
-						["event"] = "Health",
-						["subeventPrefix"] = "SPELL",
-						["debuffType"] = "HARMFUL",
-						["spellIds"] = {
-						},
-						["unit"] = "player",
-						["names"] = {
-							"Branded", -- [1]
-							"Branded: Displacement", -- [2]
-							"Branded: Fortification", -- [3]
-							"Branded: Replication", -- [4]
-							"Venom Splash", -- [5]
-						},
-						["name_info"] = "aura",
-						["inverse"] = true,
-						["custom_hide"] = "timed",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
 			},
+			["trigger"] = {
+				["remaining_operator"] = "<=",
+				["unit"] = "player",
+				["remaining"] = "0",
+				["spellName"] = 131894,
+				["use_remaining"] = true,
+				["unevent"] = "auto",
+				["use_showOn"] = true,
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["debuffType"] = "HELPFUL",
+				["showOn"] = "showOnReady",
+				["type"] = "status",
+				["use_unit"] = true,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 34,
+			["load"] = {
+				["talent"] = {
+					["single"] = 13,
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[3] = true,
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+						["HUNTER"] = true,
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 12,
+			["displayStacks"] = "%s",
+			["regionType"] = "icon",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Hunter Group v2.0",
+			["additional_triggers"] = {
+			},
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 1,
-			["width"] = 79.3152542114258,
-			["id"] = "Highmaul - Imperator Mar'gok - Arcane Wrath Arrow",
+			["width"] = 34,
+			["id"] = "A Murder of Crows Ready 2",
+			["untrigger"] = {
+				["spellName"] = 131894,
+			},
 			["inverse"] = false,
-			["numTriggers"] = 2,
-			["desaturate"] = false,
-			["animation"] = {
+			["numTriggers"] = 1,
+			["stickyDuration"] = false,
+			["actions"] = {
 				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
 				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
+				["init"] = {
 				},
 				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
 				},
 			},
-			["discrete_rotation"] = 0,
 			["stacksPoint"] = "BOTTOMRIGHT",
 			["textColor"] = {
 				1, -- [1]
@@ -2581,192 +11444,60 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
-		["3 stacks p3"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+		["TotH"] = {
+			["xOffset"] = -105,
+			["untrigger"] = {
 			},
-			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (112y) on \"..name, \"SAY\")",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["do_custom"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["icon"] = true,
 			["fontFlags"] = "OUTLINE",
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["main"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
 			["trigger"] = {
 				["type"] = "aura",
 				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "3",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
+				["ownOnly"] = true,
 				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
-			["load"] = {
-				["zone"] = "Highmaul",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["parent"] = "Arcane Wrath(p3)",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["xOffset"] = 0,
-			["additional_triggers"] = {
-			},
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["id"] = "3 stacks p3",
-			["untrigger"] = {
-			},
-			["inverse"] = false,
-			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
-			["stacksPoint"] = "BOTTOM",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["Highmaul - Imperator Mar'gok - Arcane Wrath Update"] = {
-			["outline"] = true,
-			["fontSize"] = 12,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["displayText"] = "",
-			["yOffset"] = 0,
-			["regionType"] = "text",
-			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["trigger"] = {
-				["type"] = "custom",
-				["custom_type"] = "status",
-				["event"] = "Health",
-				["unit"] = "player",
-				["custom_hide"] = "timed",
-				["custom"] = "function(...)\n    local id = 'HighmaulMargokArcaneWrath'\n    local updateId = id .. 'Update'\n    local arrowDisplay = \"Highmaul - Imperator Mar'gok - Arcane Wrath Arrow\"\n    local distanceDisplay = \"Highmaul - Imperator Mar'gok - Arcane Wrath Distance\"\n    local currentDisplay = \"Highmaul - Imperator Mar'gok - Arcane Wrath Current\"\n    local nextDisplay = \"Highmaul - Imperator Mar'gok - Arcane Wrath Next\"\n    \n    local DistanceToUnit = function(unit)\n        local distanceSquared = UnitDistanceSquared(unit)\n        if distanceSquared then return distanceSquared  ^ 0.5 end\n        return nil\n    end\n    \n    local RotateDisplayToPoint = function(display, pointX, pointY, offset)\n        if display and pointX and pointY then\n            local playerX, playerY = UnitPosition('player')\n            offset = offset or 0\n            local degrees = math.deg(math.atan2((playerY - pointY), (playerX - pointX)) - GetPlayerFacing()) + offset\n            \n            local DisplayType = function(name)\n                if WeakAuras then\n                    if WeakAuras.auras and WeakAuras.auras[name] then return 'auras' end\n                    if WeakAuras.regions and WeakAuras.regions[name] then return 'regions' end\n                end\n            end\n            local displayType = DisplayType(display)\n            if not displayType then return end\n            \n            if displayType == 'auras' then\n                if WeakAuras \n                and WeakAuras[displayType] \n                and WeakAuras[displayType][display] \n                and WeakAuras[displayType][display][0]\n                and WeakAuras[displayType][display][0]['region']\n                and WeakAuras[displayType][display][0]['region']['Rotate']\n                and type(WeakAuras[displayType][display][0]['region']['Rotate']) == 'function' then\n                    WeakAuras[displayType][display][0]['region']['Rotate'](0, degrees and degrees or 0)\n                end\n            elseif displayType == 'regions' then\n                if WeakAuras \n                and WeakAuras[displayType] \n                and WeakAuras[displayType][display] \n                and WeakAuras[displayType][display]\n                and WeakAuras[displayType][display]['region']\n                and WeakAuras[displayType][display]['region']['Rotate']\n                and type(WeakAuras[displayType][display]['region']['Rotate']) == 'function' then\n                    WeakAuras[displayType][display]['region']['Rotate'](0, degrees and degrees or 0)\n                end\n            end\n        end\n    end\n    \n    local SetDisplayColor = function(display, r, g, b, a)\n        local DisplayType = function(name)\n            if WeakAuras then\n                if WeakAuras.auras and WeakAuras.auras[name] then return 'auras' end\n                if WeakAuras.regions and WeakAuras.regions[name] then return 'regions' end\n            end\n        end\n        local displayType = DisplayType(display)\n        if not displayType then return end\n        \n        local colors = {\n            { name = 'black',   r = 0, g = 0, b = 0, a = 1, },\n            { name = 'blue',    r = 0, g = 0.2, b = 1, a = 1, },\n            { name = 'green',   r = 0, g = 1, b = 0, a = 1, },\n            { name = 'orange',  r = 1, g = 0.5, b = 0, a = 1, },\n            { name = 'purple',  r = 1, g = 0, b = 1, a = 1, },\n            { name = 'red',     r = 1, g = 0, b = 0, a = 1, },\n            { name = 'white',   r = 1, g = 1, b = 1, a = 1, },\n            { name = 'yellow',  r = 1, g = 1, b = 0, a = 1, },\n        }\n        \n        -- Convert\n        if tonumber(r) == nil and type(r) == 'string' then\n            for i,v in pairs(colors) do\n                if v.name == strlower(r) then\n                    r = v.r\n                    g = v.g\n                    b = v.b\n                    a = v.a\n                end\n            end\n        end\n        \n        if r and b and g then\n            a = a or 1\n            if displayType == 'auras' then\n                if WeakAuras \n                and WeakAuras[displayType] \n                and WeakAuras[displayType][display] \n                and WeakAuras[displayType][display][0]\n                and WeakAuras[displayType][display][0]['region']\n                and WeakAuras[displayType][display][0]['region']['Color'] \n                and type(WeakAuras[displayType][display][0]['region']['Color']) == 'function' then\n                    WeakAuras[displayType][display][0]['region']:Color(r, g, b, a)\n                end\n            elseif displayType == 'regions' then\n                if WeakAuras \n                and WeakAuras[displayType] \n                and WeakAuras[displayType][display] \n                and WeakAuras[displayType][display]\n                and WeakAuras[displayType][display]['region']\n                and WeakAuras[displayType][display]['region']['Color'] \n                and type(WeakAuras[displayType][display]['region']['Color']) == 'function' then\n                    WeakAuras[displayType][display]['region']:Color(r, g, b, a)\n                end\n            end\n        end\n    end\n    \n    local SetDisplayText = function(display, text)\n        local DisplayType = function(name)\n            if WeakAuras then\n                if WeakAuras.auras and WeakAuras.auras[name] then return 'auras' end\n                if WeakAuras.regions and WeakAuras.regions[name] then return 'regions' end\n            end\n        end\n        local displayType = DisplayType(display)\n        if not displayType then return end\n        \n        if displayType == 'auras' then\n            if WeakAuras \n            and WeakAuras[displayType] \n            and WeakAuras[displayType][display] \n            and WeakAuras[displayType][display][0]\n            and WeakAuras[displayType][display][0]['region']\n            and WeakAuras[displayType][display][0]['region']['text'] then\n                WeakAuras[displayType][display][0]['region']['text']:SetText(text or '')\n            end\n        elseif displayType == 'regions' then\n            if WeakAuras \n            and WeakAuras[displayType] \n            and WeakAuras[displayType][display] \n            and WeakAuras[displayType][display]\n            and WeakAuras[displayType][display]['region']\n            and WeakAuras[displayType][display]['region']['text'] then\n                WeakAuras[displayType][display]['region']['text']:SetText(text or '')\n            end\n        end\n    end\n    \n    local GetValue = function(...)\n        if not WeakAuras.CustomValues then WeakAuras.CustomValues = {} end\n        if not ... then return end\n        local count, data = #{...}\n        if count and (count > 1) then\n            for i,v in pairs({...}) do\n                if i==1 then WeakAuras.CustomValues[v] = WeakAuras.CustomValues[v] or {} data = WeakAuras.CustomValues[v]\n                else if i ~= count then if not data[v] then data[v] = {} else data = data[v] end else data = data[v] end end\n            end\n        else data = WeakAuras.CustomValues[select(1, ...)] end\n        return data\n    end\n    \n    local GetUnitAuraValue = function(aura, valueType, unit, sourceUnit) -- v2\n        if not aura then return end valueType, unit = valueType or 'name', unit or 'player' if not UnitExists(unit) then return end local v, value = {}\n        local GetAuraValues = function(unit, aura, filter)\n            local v, filter = {}, filter or 'HELPFUL'\n            v.name, v.rank, v.icon, v.count, v.auraType, v.duration, v.expirationTime, v.unitCaster, v.isStealable, v.shouldConsolidate, v.spellId, v.canApplyAura, v.isBossDebuff, v.value1, v.value2, v.value3 = UnitAura(unit, aura, type(aura)=='number' and filter or nil, filter)\n            return v\n        end\n        local GetAuraValue = function(v, t, s) if v[t] then if s then if v.unitCaster and UnitExists(s) and v.unitCaster == s then return v[t] end else return v[t] end end end\n        local ScanAuras = function(aura, valueType, unit, sourceUnit)\n            local output = nil\n            if type(aura) == 'string' then\n                v = GetAuraValues(unit, aura)\n                output = GetAuraValue(v,valueType,sourceUnit)\n                if output then return output end\n                v = GetAuraValues(unit, aura, 'HARMFUL')\n                output = GetAuraValue(v,valueType,sourceUnit)\n                if output then return output end    \n            elseif type(aura) == 'number' then\n                for i=1,40 do \n                    v = GetAuraValues(unit, i)\n                    output = GetAuraValue(v,valueType,sourceUnit)\n                    if v.spellId and v.spellId == aura then if output then return output end end\n                    v = GetAuraValues(unit, i, 'HARMFUL')\n                    output = GetAuraValue(v,valueType,sourceUnit)  \n                    if v.spellId and v.spellId == aura then if output then return output end end \n                end\n            end\n        end\n        if type(aura) == 'table' then\n            local output = nil\n            for iAura,vAura in pairs(aura) do\n                output = ScanAuras(vAura, valueType, unit, sourceUnit)\n                if output then return output end\n            end\n        else\n            return ScanAuras(aura, valueType, unit, sourceUnit)\n        end\n    end\n    \n    local ShortenNumber = function(value, decimal, pattern)\n        if not value then return end\n        pattern = pattern or '%s%s'\n        function round(val, decimal)\n            if (decimal) then\n                return math.floor( (val * 10^decimal) + 0.5) / (10^decimal)\n            else\n                return math.floor(val+0.5)\n            end\n        end\n        if(value > 999999999) then return (pattern):format(round(value/1000000000, decimal), 'b') end           \n        if(value > 999999) then return (pattern):format(round(value/1000000, decimal), 'm') end        \n        if(value > 999) then return (pattern):format(round(value/1000, decimal), 'k') end        \n        return (pattern):format(round(value, decimal), '')\n    end\n    \n    local NearestPlayer = function()\n        local numPlayers = GetNumGroupMembers()\n        if numPlayers == 0 then return nil end\n        local DistanceToUnit = function(unit)\n            local distanceSquared = UnitDistanceSquared(unit)\n            if distanceSquared then return distanceSquared  ^ 0.5 end\n            return nil\n        end\n        local distance, nearestUnit, nearestDistance\n        for i = 1, numPlayers do\n            local unitId = IsInRaid() and \"raid\"..i or \"party\"..i\n            distance = DistanceToUnit(unitId)\n            if UnitExists(unitId) and not UnitIsUnit(unitId, 'player') and not UnitIsDeadOrGhost(unitId) then\n                if nearestUnit then\n                    -- Shorter\n                    if distance < nearestDistance then\n                        nearestUnit = unitId\n                        nearestDistance = distance\n                    end\n                else\n                    nearestUnit = unitId\n                    nearestDistance = distance\n                end            \n            end\n        end\n        return nearestUnit\n    end\n    \n    -- check if affectedUnits exist\n    local affectedUnits = GetValue(id, 'affectedUnits')\n    if affectedUnits then\n        local isPlayerAfflicted = false        \n        -- Check if self is affected\n        for unit,data in pairs(affectedUnits) do if UnitIsUnit(unit, 'player') then isPlayerAfflicted = true end end        \n        -- Get nearest afflicted info\n        local auraData = nil\n        local nearestUnit = nil             \n        local nearestUnitDistance = nil   \n        for unit, data in pairs(affectedUnits) do\n            if UnitExists(unit) and not UnitIsDeadOrGhost(unit) then\n                local distance = DistanceToUnit(unit)\n                if nearestUnitDistance then\n                    if nearestUnitDistance > distance then\n                        nearestUnitDistance = distance\n                        nearestUnit = unit\n                        auraData = data\n                    end\n                else\n                    nearestUnitDistance = distance\n                    nearestUnit = unit\n                    auraData = data\n                end\n            end            \n        end\n        \n        -- Update current/next info\n        -- Update info box\n        local currentDamage = ShortenNumber(auraData.currentDamage)\n        local currentDamagePercent = math.floor(auraData.currentDamage / UnitHealth('player') * 100)\n        local currentDamagePercentMax = math.floor(auraData.currentDamage / UnitHealthMax('player') * 100)\n        local nextDamage = ShortenNumber(auraData.nextDamage)\n        local nextDamagePercent = math.floor(auraData.nextDamage / UnitHealth('player') * 100)\n        local nextDamagePercentMax = math.floor(auraData.nextDamage / UnitHealthMax('player') * 100)\n        \n        SetDisplayText(currentDisplay, ('Current (%s): %s @ %s yds [%s%% MaxHP]'):format(auraData.stacks, currentDamage, auraData.currentDistance, currentDamagePercentMax))\n        SetDisplayText(nextDisplay, ('Next (%s): %s @ %s yds [%s%% MaxHP]'):format(auraData.stacks+1, nextDamage, auraData.nextDistance, nextDamagePercentMax))\n        \n        -- red if below current HP\n        if currentDamagePercent >= 100 then\n            SetDisplayColor(currentDisplay, 'red')\n        else -- green if OK\n            SetDisplayColor(currentDisplay, 'green')\n        end\n        -- red if below current HP\n        if nextDamagePercent >= 100 then\n            SetDisplayColor(nextDisplay, 'red')\n        else -- green if OK\n            SetDisplayColor(nextDisplay, 'green')\n        end        \n        \n        -- If player is afflicted\n        if isPlayerAfflicted then\n            -- Set distance info to nearest global player\n            local nearestUnit = NearestPlayer()\n            local nearestDistance = DistanceToUnit(nearestUnit)\n            SetDisplayText(distanceDisplay, (\"Nearest: %s [%s]\"):format(UnitName(nearestUnit), math.floor(nearestDistance)))\n            if auraData.currentDistance and nearestDistance > auraData.currentDistance then\n                SetDisplayColor(distanceDisplay, 'green')\n            else\n                SetDisplayColor(distanceDisplay, 'yellow')\n            end\n        else\n            -- Show arrow\n            RotateDisplayToPoint(arrowDisplay, UnitPosition(nearestUnit))\n            local distanceToUnit = DistanceToUnit(nearestUnit)\n            SetDisplayText(distanceDisplay, ('%s (%s)'):format(math.floor(distanceToUnit), UnitName(nearestUnit)))\n            if auraData.currentDistance and distanceToUnit > auraData.currentDistance then\n                --SetDisplayColor(arrowDisplay, 'white')\n                SetDisplayColor(distanceDisplay, 'green')\n            else\n                --SetDisplayColor(arrowDisplay, 'red')\n                SetDisplayColor(distanceDisplay, 'red')\n            end\n        end\n    end\nend",
-				["spellIds"] = {
-				},
-				["subeventSuffix"] = "_CAST_START",
-				["check"] = "update",
-				["subeventPrefix"] = "SPELL",
 				["names"] = {
+					"Thrill of the Hunt", -- [1]
+				},
+				["spellIds"] = {
 				},
 				["debuffType"] = "HELPFUL",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["custom_hide"] = "timed",
 			},
-			["justify"] = "LEFT",
-			["selfPoint"] = "BOTTOM",
-			["id"] = "Highmaul - Imperator Mar'gok - Arcane Wrath Update",
-			["anchorPoint"] = "CENTER",
-			["frameStrata"] = 1,
-			["width"] = 0.999999701976776,
-			["xOffset"] = 0,
+			["stickyDuration"] = false,
 			["font"] = "Friz Quadrata TT",
-			["numTriggers"] = 1,
-			["additional_triggers"] = {
-			},
-			["height"] = 0.999999701976776,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
+			["height"] = 32,
 			["load"] = {
-				["use_never"] = false,
-				["zone"] = "Highmaul",
+				["talent"] = {
+					["single"] = 12,
+					["multi"] = {
+					},
+				},
 				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -2774,21 +11505,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_combat"] = true,
-				["spec"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -2797,127 +11519,38 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["untrigger"] = {
-			},
-		},
-		["1 stack"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
+			["fontSize"] = 18,
+			["displayStacks"] = "%s",
+			["regionType"] = "icon",
+			["desaturate"] = false,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["parent"] = "Hunter Group v2.0",
+			["id"] = "TotH",
 			["actions"] = {
 				["start"] = {
-					["glow_action"] = "show",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (200y) on \"..name, \"SAY\")",
-					["do_sound"] = false,
-					["do_glow"] = false,
-					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Ding6.ogg",
-					["do_custom"] = true,
 				},
 				["init"] = {
 				},
 				["finish"] = {
 				},
 			},
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Replication", -- [3]
-				},
-				["debuffType"] = "HARMFUL",
-				["useCount"] = true,
-				["count"] = "1",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
-			["load"] = {
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["zone"] = "Highmaul",
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["xOffset"] = 0,
-			["id"] = "1 stack",
-			["stickyDuration"] = false,
 			["frameStrata"] = 1,
-			["width"] = 70,
-			["additional_triggers"] = {
+			["width"] = 32,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["untrigger"] = {
-			},
+			["yOffset"] = 44,
 			["inverse"] = false,
 			["numTriggers"] = 1,
+			["additional_triggers"] = {
+			},
 			["selfPoint"] = "CENTER",
-			["icon"] = true,
-			["stacksPoint"] = "BOTTOM",
+			["stacksPoint"] = "CENTER",
 			["textColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -2925,67 +11558,50 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
-		["10 stacks p3"] = {
-			["color"] = {
+		["Recently Moved"] = {
+			["sparkWidth"] = 10,
+			["stacksSize"] = 12,
+			["xOffset"] = 0,
+			["stacksFlags"] = "None",
+			["yOffset"] = -18,
+			["anchorPoint"] = "CENTER",
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["rotateText"] = "NONE",
+			["icon"] = false,
+			["fontFlags"] = "OUTLINE",
+			["icon_color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (15y) on \"..name, \"SAY\")",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["do_custom"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "10",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
+			["selfPoint"] = "CENTER",
+			["barColor"] = {
+				1, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
 			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
+			["sparkOffsetY"] = 0,
 			["load"] = {
-				["zone"] = "Highmaul",
+				["use_never"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
 				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -2993,21 +11609,14 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["race"] = {
 					["multi"] = {
 					},
 				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
 				["use_combat"] = true,
 				["spec"] = {
+					["single"] = 2,
 					["multi"] = {
 					},
 				},
@@ -3016,293 +11625,150 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["parent"] = "Arcane Wrath(p3)",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
+			["timerColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["regionType"] = "aurabar",
+			["stacks"] = true,
+			["texture"] = "Flat",
+			["textFont"] = "Friz Quadrata TT",
+			["stacksFont"] = "Friz Quadrata TT",
 			["auto"] = true,
-			["xOffset"] = 0,
-			["id"] = "10 stacks p3",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["additional_triggers"] = {
+			["timerFont"] = "Friz Quadrata TT",
+			["alpha"] = 1,
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["untrigger"] = {
-			},
-			["inverse"] = false,
-			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
-			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-		},
-		["11 stacks p3"] = {
-			["color"] = {
+			["sparkOffsetX"] = 0,
+			["parent"] = "Hunter Group v2.0",
+			["barInFront"] = true,
+			["sparkRotationMode"] = "AUTO",
+			["displayTextLeft"] = "%c",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["names"] = {
+					"Sniper Training: Recently Moved", -- [1]
+				},
+				["spellIds"] = {
+				},
+				["custom_hide"] = "timed",
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["debuffType"] = "HELPFUL",
+			},
+			["text"] = true,
+			["stickyDuration"] = false,
+			["timer"] = true,
+			["timerFlags"] = "None",
+			["sparkBlendMode"] = "ADD",
+			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
-				1, -- [4]
+				0.5, -- [4]
 			},
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["spark"] = false,
+			["textFlags"] = "None",
+			["border"] = false,
+			["borderEdge"] = "None",
 			["actions"] = {
 				["start"] = {
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (11y) on \"..name, \"SAY\")",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["do_custom"] = true,
 				},
 				["init"] = {
 				},
 				["finish"] = {
 				},
 			},
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded: Fortification", -- [1]
-				},
-				["debuffType"] = "HARMFUL",
-				["useCount"] = true,
-				["count"] = "11",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["custom_hide"] = "timed",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
-			["load"] = {
-				["zone"] = "Highmaul",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["parent"] = "Arcane Wrath(p3)",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["xOffset"] = 0,
-			["additional_triggers"] = {
-			},
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["id"] = "11 stacks p3",
+			["borderSize"] = 16,
+			["height"] = 5,
+			["icon_side"] = "LEFT",
+			["inverse"] = false,
 			["untrigger"] = {
 			},
-			["inverse"] = false,
-			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
-			["stacksPoint"] = "BOTTOM",
-			["textColor"] = {
+			["sparkHeight"] = 30,
+			["borderOffset"] = 5,
+			["timerSize"] = 12,
+			["stacksColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-		},
-		["7 stacks"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
+			["displayTextRight"] = "%c",
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
 				1, -- [4]
 			},
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
+			["additional_triggers"] = {
+			},
+			["id"] = "Recently Moved",
+			["frameStrata"] = 1,
+			["width"] = 240,
 			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-					["glow_action"] = "show",
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["message"] = "",
-					["custom"] = "local name = GetUnitName(WeakAuras.CurrentUnit)\nSendChatMessage(\"Arcane Wrath (3y) on \"..name, \"SAY\")",
-					["do_sound"] = false,
-					["do_glow"] = false,
-					["do_custom"] = true,
-					["sound"] = "Interface\\Addons\\TellMeWhen\\Sounds\\Ding6.ogg",
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["countOperator"] = "==",
-				["names"] = {
-					"Branded", -- [1]
-					"Branded: Displacement", -- [2]
-					"Branded: Replication", -- [3]
-				},
-				["custom_hide"] = "timed",
-				["useCount"] = true,
-				["count"] = "7",
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["spellIds"] = {
-				},
-				["event"] = "Health",
-				["debuffType"] = "HARMFUL",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 70,
-			["load"] = {
-				["zone"] = "Highmaul",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = true,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 20,
-			["displayStacks"] = "%p   %s",
-			["regionType"] = "icon",
-			["parent"] = "Arcane Wrath(p1&p2&p4)",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["xOffset"] = 0,
-			["additional_triggers"] = {
-			},
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["id"] = "7 stacks",
-			["untrigger"] = {
-			},
-			["inverse"] = false,
+			["sparkRotation"] = 0,
 			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
-			["icon"] = true,
-			["stacksPoint"] = "BOTTOM",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["sparkDesature"] = false,
+			["orientation"] = "HORIZONTAL_INVERSE",
+			["borderInset"] = 11,
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["textSize"] = 12,
 		},
 	},
 	["registered"] = {
 	},
 	["login_squelch_time"] = 10,
 	["frame"] = {
-		["xOffset"] = -633.000366210938,
-		["yOffset"] = -285.000244140625,
+		["xOffset"] = 0,
+		["yOffset"] = -359.000305175781,
 		["height"] = 492,
 		["width"] = 630,
 	},
 	["tempIconCache"] = {
+		["Bestial Wrath"] = "Interface\\Icons\\Ability_Druid_FerociousBite",
+		["Beast Cleave"] = "INTERFACE\\ICONS\\ability_hunter_sickem",
 		["Branded"] = "Interface\\Icons\\ability_socererking_arcanewrath",
-		["Branded: Displacement"] = "Interface\\Icons\\ability_socererking_arcanewrath",
-		["Branded: Fortification"] = "Interface\\Icons\\ability_socererking_arcanewrath",
 		["Branded: Replication"] = "Interface\\Icons\\ability_socererking_arcanewrath",
+		["Black Arrow"] = "Interface\\Icons\\Spell_Shadow_PainSpike",
+		["Serpent Sting"] = "Interface\\Icons\\Ability_Hunter_Quickshot",
+		["Lock and Load"] = "Interface\\Icons\\Ability_Hunter_LockAndLoad",
+		["Branded: Displacement"] = "Interface\\Icons\\ability_socererking_arcanewrath",
+		["Thrill of the Hunt"] = "Interface\\Icons\\Ability_Hunter_ThrilloftheHunt",
+		["Steady Focus"] = "Interface\\Icons\\Ability_Hunter_ImprovedSteadyShot",
+		["Branded: Fortification"] = "Interface\\Icons\\ability_socererking_arcanewrath",
+		["Trap Launcher"] = "INTERFACE\\ICONS\\ability_hunter_traplauncher",
+		["Focus Fire"] = "INTERFACE\\ICONS\\ability_hunter_focusfire",
+		["Frenzy"] = "Interface\\Icons\\INV_Misc_MonsterClaw_03",
 	},
 	["talent_cache"] = {
 		["HUNTER"] = {

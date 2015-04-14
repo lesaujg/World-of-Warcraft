@@ -1,5 +1,5 @@
 local addonName, T = ...
-if T.Mark ~= 23 then
+if T.Mark ~= 40 then
 	local m = "You must restart World of Warcraft after installing this update."
 	if type(T.L) == "table" and type(T.L[m]) == "string" then m = T.L[m] end
 	return print("|cffffffff[Master Plan]: |cffff8000" .. m)
@@ -26,7 +26,6 @@ local conf, api = setmetatable({}, {__index={
 	levelDecay=0.9,
 	currencyWasteThreshold=0.25,
 	legendStep=0,
-	lastCacheTime=0,
 	timeHorizon=0,
 	timeHorizonMin=300,
 	ignore={},
@@ -46,6 +45,10 @@ T.Evie.RegisterEvent("ADDON_LOADED", function(_, addon)
 			pc, MasterPlanPC = MasterPlanPC
 		else
 			pc = {}
+		end
+		
+		if type(pc.lastCacheTime) == "number" then -- TODO:TEMP
+			MasterPlanA.data.lastCacheTime = MasterPlanA.data.lastCacheTime or pc.lastCacheTime
 		end
 		
 		for k,v in pairs(pc) do
@@ -154,9 +157,11 @@ function api:DissolveMissionByFollower(fid)
 	dissolve(tentativeState[fid])
 end
 function api:DissolveAllMissions()
-	wipe(parties)
-	wipe(tentativeState)
-	T.Evie.RaiseEvent("MP_TENTATIVE_PARTY_UPDATE")
+	if next(parties) or next(tentativeState) then
+		wipe(parties)
+		wipe(tentativeState)
+		T.Evie.RaiseEvent("MP_TENTATIVE_PARTY_UPDATE")
+	end
 end
 T.Evie.RegisterEvent("MP_MISSION_START", function(mid, f1, f2, f3)
 	dissolve(mid, true)
