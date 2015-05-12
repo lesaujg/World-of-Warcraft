@@ -604,6 +604,7 @@ function WeakAuras.ConstructOptions(prototype, data, startorder, subPrefix, subS
           name = arg.display,
           order = order,
           hidden = hidden,
+          desc = arg.desc,
           get = function() return trigger["use_"..realname]; end,
           set = function(info, v)
             trigger["use_"..realname] = v;
@@ -1234,6 +1235,11 @@ function WeakAuras.ShowOptions(msg)
   frame.buttonsScroll.frame:Show();
   WeakAuras.LockUpdateInfo();
   
+  if (frame.needsSort) then
+    WeakAuras.SortDisplayButtons();
+    frame.needsSort = nil;
+  end
+
   frame:Show();
   frame:PickOption("New");
   if not(firstLoad) then
@@ -6078,10 +6084,10 @@ function WeakAuras.CreateFrame()
     db.frame = db.frame or {};
     db.frame.xOffset = xOffset;
     db.frame.yOffset = yOffset;
-	if(not frame.minimized) then
-		db.frame.width = frame:GetWidth();
-		db.frame.height = frame:GetHeight();
-	end
+  if(not frame.minimized) then
+    db.frame.width = frame:GetWidth();
+    db.frame.height = frame:GetHeight();
+  end
     frame:ClearAllPoints();
     frame:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", xOffset, yOffset);
   end
@@ -8317,10 +8323,14 @@ function WeakAuras.SortDisplayButtons(filter, overrideReset)
   end
 end
 
-WeakAuras.loadFrame:SetScript("OnEvent", function()
-  WeakAuras.ScanForLoads();
-  if(frame and frame:IsVisible()) then
-    WeakAuras.SortDisplayButtons();
+WeakAuras.loadFrame:SetScript("OnEvent", function (self, event, arg1)
+  WeakAuras.ScanForLoads(self, event, arg1);
+  if(frame) then
+    if (frame:IsVisible()) then
+      WeakAuras.SortDisplayButtons();
+    else
+      frame.needsSort = true;
+    end
   end
 end);
 

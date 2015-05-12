@@ -134,6 +134,29 @@ L["Eclipse Direction"] = "Eclipse Direction"
 L["Eclipse Power"] = "Eclipse Power"
 L["Eclipse Type"] = "Eclipse Type"
 L["Emote"] = "Emote"
+L["Encounter ID"] = "Encounter ID"
+L["EncounterID List"] = [=[IDs for the current Tier:
+
+Highmaul:
+ Kargath: 1721
+ The Butcher: 1706
+ Tectus: 1722
+ Brackenspore: 1720
+ Twin Ogron: 1719
+ Koragh: 1723
+ Imperator Mar'gok: 1705
+
+Blackrock Foundry:
+ Gruul: 1691
+ Oregorger: 1696
+ Beastlord Darmac:1694
+ Flamebender Ka'graz: 1689
+ Hans'gar and Franzok: 1693
+ Operator Thogar: 1692
+ The Blast Furnace: 1690
+ Kromog: 1713
+ The Iron Maidens: 1695
+ Blackhand: 1704]=]
 L["Energize"] = "Energize"
 L["Energy"] = "Energy"
 L["Enrage"] = "Enrage"
@@ -436,9 +459,6 @@ L["Zone"] = "Zone"
 
 -- Make missing translations available
 setmetatable(WeakAuras.L, {__index = function(self, key)
-	self[key] = (key or "")
-	
-	
-	
+	self[key] = (key or "")	
 	return key
 end})

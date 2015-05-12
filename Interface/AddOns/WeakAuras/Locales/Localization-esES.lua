@@ -138,6 +138,29 @@ L["Eclipse Direction"] = "Dirección del Eclipse"
 L["Eclipse Power"] = "Poder de Eclipse"
 L["Eclipse Type"] = "Tipo de Eclipse"
 L["Emote"] = "Emocion"
+L["Encounter ID"] = "ID de Encuentro" -- Needs review
+L["EncounterID List"] = [=[IDs para el tier actual:
+
+Ogrópolis:
+Kargath: 1721
+El Carnicero: 1706
+Tectus: 1722
+Frondaespora: 1720
+Gemelos ogrones: 1719
+Koragh: 1723
+Imperador Mar'gok: 1705
+
+Fundición Roca Negra:
+Gruul: 1691
+Tragamenas: 1696
+Señor de las bestias Darmac: 1694
+Dominallamas Ka'graz: 1693
+Hans'gar y Franzok: 1693
+Operador Thogar: 1692
+El Horno de Fundición: 1690
+Kromog: 1713
+Doncellas de Hierro: 1695
+Puño Negro: 1704]=] -- Needs review
 L["Energize"] = "Vigorizar"
 L["Energy"] = "Energía"
 L["Enrage"] = "Enfurecido"
