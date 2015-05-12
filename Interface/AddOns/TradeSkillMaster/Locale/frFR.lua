@@ -355,7 +355,7 @@ L["Options"] = "Options"
 -- L["Override Module Operations"] = ""
 L["Parent Group Items:"] = "Objets du groupe parent:" -- Needs review
 L["Parent/Ungrouped Items:"] = "Objets du groupe parent/ non groupés" -- Needs review
-L["Past Contributors:"] = "Precedents Contributeurs: " -- Needs review
+L["Past Contributors:"] = "Précédents Contributeurs: " -- Needs review
 -- L["Paste the exported items into this box and hit enter or press the 'Okay' button. The recommended format for the list of items is a comma separated list of itemIDs for general items. For battle pets, the entire battlepet string should be used. For randomly enchanted items, the format is <itemID>:<randomEnchant> (ex: 38472:-29)."] = ""
 -- L["Paste the exported operation settings into this box and hit enter or press the 'Okay' button. Imported settings will irreversibly replace existing settings for this operation."] = ""
 L[ [=[Paste the list of items into the box below and hit enter or click on the 'Okay' button.
@@ -363,7 +363,7 @@ L[ [=[Paste the list of items into the box below and hit enter or click on the '
 You can also paste an itemLink into the box below to add a specific item to this group.]=] ] = "Copiez la liste d'objets dans le champs ci-dessous et tapez entrée ouclickez sur OK." -- Needs review
 -- L["Paste your import string into the 'Import String' box and hit the <Enter> key to import the list of items."] = ""
 L["Percent of Price Source"] = "Pourcentage du prix référence" -- Needs review
-L["Performs scans of the auction house and calculates the market value of items as well as the minimum buyout. This information can be shown in items' tooltips as well as used by other modules."] = "Scan l'HV et calcule les prix de marché des objets ainsi que leur prix d'achat le plus bas. Ces informations peuvent être visibles dans l'infotexte des objets et également utilisées par d'autres modules." -- Needs review
+L["Performs scans of the auction house and calculates the market value of items as well as the minimum buyout. This information can be shown in items' tooltips as well as used by other modules."] = "Scan l'HV et calcul la valeur marchande des articles ainsi que leur prix d'achat le plus bas. Ces informations peuvent être visibles dans l'info-bulle des articles et également utilisées par d'autres modules." -- Needs review
 L["Per Item:"] = "Par objet:" -- Needs review
 -- L["Please select the group you'd like to use."] = ""
 -- L["Please select the new operation you've created."] = ""

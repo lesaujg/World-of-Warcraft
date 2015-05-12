@@ -1,29 +1,28 @@
 local mod = DBM:NewMod(549, "DBM-Party-BC", 15, 254)
 local L = mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 554 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 561 $"):sub(12, -3))
 
 mod:SetCreatureID(20885)
 mod:RegisterCombat("combat")
 
 mod:RegisterEventsInCombat(
-	"SPELL_CAST_START",
-	"SPELL_AURA_APPLIED",
-	"SPELL_AURA_REMOVED"
+	"SPELL_CAST_START 39013 36144 36175 36142",
+	"SPELL_AURA_APPLIED 39009 36173",
+	"SPELL_AURA_REMOVED 39009 36173"
 )
 
-local warnHeal			= mod:NewSpellAnnounce(39013)
-local warnWhirlwind		= mod:NewSpellAnnounce(36175)
-local warnGift			= mod:NewTargetAnnounce(39009)
-local timerGift			= mod:NewTargetTimer(10, 39009)
+local warnGift			= mod:NewTargetAnnounce(39009, 3)
 
 local specwarnWhirlwind	= mod:NewSpecialWarningRun(36175, "Melee", nil, nil, 4)
+local specwarnHeal		= mod:NewSpecialWarningInterrupt(39013, "-Healer")
+
+local timerGift			= mod:NewTargetTimer("OptionVersion2", 10, 39009, nil, false)
 
 function mod:SPELL_CAST_START(args)
 	if args:IsSpellID(39013, 36144) then
-		warnHeal:Show()
+		specwarnHeal:Show()
 	elseif args:IsSpellID(36175, 36142) then
-		warnWhirlwind:Show()
 		specwarnWhirlwind:Show()
 	end
 end

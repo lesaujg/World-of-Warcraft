@@ -200,7 +200,7 @@ hooksecurefunc(C_Garrison, "SetFollowerInactive", function()
 	C_Timer.After(0.25, syncTotals)
 	C_Timer.After(1, syncTotals)
 end)
-EV.RegisterEvent("MP_RELEASE_CACHES", function()
+function EV:MP_RELEASE_CACHES()
 	if not mechanicsFrame:IsVisible() then
 		for i=1,#icons do
 			icons[i].info = nil
@@ -209,7 +209,7 @@ EV.RegisterEvent("MP_RELEASE_CACHES", function()
 			floatingMechanics.buttons[i].info = nil
 		end
 	end
-end)
+end
 
 local UpgradesFrame = CreateFrame("FRAME")
 UpgradesFrame:SetSize(237, 42)
@@ -561,12 +561,12 @@ end
 
 local function Recruiter_ShowTraitTooltip(self)
 	GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
-	G.SetTraitTooltip(GameTooltip, self.value, nil, true)
+	G.SetTraitTooltip(GameTooltip, self.value)
 	GameTooltip:Show()
 end
 local function Recruiter_ShowCounterTooltip(self)
 	GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
-	G.SetThreatTooltip(GameTooltip, self.value, nil, nil, true)
+	G.SetThreatTooltip(GameTooltip, self.value)
 	GameTooltip:Show()
 end
 hooksecurefunc("GarrisonRecruiterFrame_Init", function(_, level)
@@ -580,7 +580,7 @@ hooksecurefunc("GarrisonRecruiterFrame_Init", function(_, level)
 		local b = _G[bn .. i]
 		local entry = b.arg1
 		if type(entry) == "table" and entry.id then
-			b.tooltipTitle, b.tooltipText = level == 2 and Recruiter_ShowTraitTooltip or Recruiter_ShowCounterTooltip
+			b.tooltipOnButton, b.tooltipTitle, b.tooltipText = level == 2 and Recruiter_ShowTraitTooltip or Recruiter_ShowCounterTooltip
 		end
 	end
 end)
@@ -652,6 +652,23 @@ function _G.GarrisonFollowerList_SortFollowers(followerList)
 				
 				if matched then
 					list[#list+1] = i
+				end
+			end
+		end
+	elseif searchString:match("/") and searchString:match("[^%s/]") then
+		local showUncollected, list, s = followerList.showUncollected, followerList.followersList, {}
+		for qs in searchString:gmatch("[^/]+") do
+			s[#s+1] = qs
+		end
+		wipe(list)
+		for i=1, #followerList.followers do
+			local fi = followerList.followers[i]
+			if showUncollected or fi.isCollected then
+				for j=1,#s do
+					if C_Garrison.SearchForFollower(fi.followerID, s[j]) then
+						list[#list+1] = i
+						break
+					end
 				end
 			end
 		end

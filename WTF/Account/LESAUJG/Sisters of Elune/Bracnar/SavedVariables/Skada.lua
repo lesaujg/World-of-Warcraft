@@ -4,9 +4,9 @@ SkadaPerCharDB = {
 		["healingabsorbed"] = 0,
 		["dispells"] = 0,
 		["ccbreaks"] = 0,
-		["time"] = 33,
+		["time"] = 39,
 		["interrupts"] = 0,
-		["damage"] = 2874994,
+		["damage"] = 2930174,
 		["players"] = {
 			{
 				["healingabsorbed"] = 0,
@@ -18,7 +18,7 @@ SkadaPerCharDB = {
 						["name"] = "Paulbearer: Fearless Roar",
 						["active"] = 2,
 						["id"] = 126373,
-						["uptime"] = 28,
+						["uptime"] = 34,
 						["auratype"] = "BUFF",
 					},
 				},
@@ -40,16 +40,16 @@ SkadaPerCharDB = {
 					{
 						["absorb"] = 0,
 						["amount"] = 0,
-						["srcname"] = "Lanui",
 						["spellid"] = 143924,
+						["srcname"] = "Lanui",
 						["hp"] = 300768,
 						["ts"] = 1429050415.894,
 					}, -- [1]
 					{
 						["absorb"] = 0,
 						["amount"] = 0,
-						["srcname"] = "Lanui",
 						["spellid"] = 143924,
+						["srcname"] = "Lanui",
 						["hp"] = 300768,
 						["ts"] = 1429050424.405,
 					}, -- [2]
@@ -124,52 +124,76 @@ SkadaPerCharDB = {
 				["auras"] = {
 					["Meaty Dragonspine Trophy"] = {
 						["name"] = "Meaty Dragonspine Trophy",
-						["active"] = 0,
+						["active"] = 1,
 						["id"] = 177035,
-						["uptime"] = 10,
+						["uptime"] = 13,
 						["auratype"] = "BUFF",
+					},
+					["Explosive Shot"] = {
+						["name"] = "Explosive Shot",
+						["active"] = 0,
+						["id"] = 53301,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 1,
 					},
 					["Malicor: Roar of Courage"] = {
 						["name"] = "Malicor: Roar of Courage",
 						["active"] = 1,
 						["id"] = 93435,
-						["uptime"] = 27,
+						["uptime"] = 33,
 						["auratype"] = "BUFF",
 					},
 					["Balanced Fate"] = {
 						["name"] = "Balanced Fate",
-						["active"] = 0,
+						["active"] = 1,
 						["id"] = 177038,
-						["uptime"] = 10,
+						["uptime"] = 13,
 						["auratype"] = "BUFF",
 					},
 					["Archmage's Greater Incandescence"] = {
 						["name"] = "Archmage's Greater Incandescence",
-						["active"] = 0,
+						["active"] = 1,
 						["id"] = 177172,
-						["uptime"] = 10,
+						["uptime"] = 13,
 						["auratype"] = "BUFF",
 					},
 					["Serpent Sting"] = {
 						["name"] = "Serpent Sting",
 						["active"] = 0,
 						["id"] = 118253,
-						["uptime"] = 0,
+						["uptime"] = 2,
 						["auratype"] = "DEBUFF",
 					},
 				},
 				["role"] = "DAMAGER",
-				["time"] = 14,
+				["time"] = 18,
 				["interrupts"] = 0,
-				["damage"] = 433407,
+				["damage"] = 488587,
 				["damagespells"] = {
+					["Explosive Shot"] = {
+						["min"] = 4020,
+						["multistrike"] = 3,
+						["hit"] = 2,
+						["totalhits"] = 2,
+						["id"] = 53301,
+						["max"] = 4020,
+						["damage"] = 12383,
+					},
 					["Auto Shot"] = {
-						["min"] = 173848,
-						["hit"] = 1,
-						["totalhits"] = 1,
+						["min"] = 3907,
+						["hit"] = 2,
+						["totalhits"] = 2,
 						["id"] = 75,
 						["max"] = 173848,
-						["damage"] = 173848,
+						["damage"] = 177755,
+					},
+					["Arcane Shot"] = {
+						["min"] = 7825,
+						["hit"] = 2,
+						["totalhits"] = 2,
+						["id"] = 3044,
+						["max"] = 9279,
+						["damage"] = 17104,
 					},
 					["Multi-Shot"] = {
 						["min"] = 88303,
@@ -180,12 +204,14 @@ SkadaPerCharDB = {
 						["damage"] = 88303,
 					},
 					["Serpent Sting"] = {
-						["min"] = 171256,
-						["hit"] = 1,
-						["totalhits"] = 1,
+						["min"] = 5269,
+						["multistrike"] = 2,
+						["critical"] = 1,
+						["hit"] = 2,
+						["totalhits"] = 3,
 						["id"] = 118253,
 						["max"] = 171256,
-						["damage"] = 171256,
+						["damage"] = 193042,
 					},
 				},
 				["deathlog"] = {
@@ -206,8 +232,8 @@ SkadaPerCharDB = {
 					{
 						["absorb"] = 0,
 						["amount"] = 108,
-						["srcname"] = "Bracnar",
 						["spellid"] = 149254,
+						["srcname"] = "Bracnar",
 						["hp"] = 376740,
 						["ts"] = 1429050423.598,
 					}, -- [3]
@@ -221,8 +247,8 @@ SkadaPerCharDB = {
 					{
 						["absorb"] = 0,
 						["amount"] = 44,
-						["srcname"] = "Bracnar",
 						["spellid"] = 149254,
+						["srcname"] = "Bracnar",
 						["hp"] = 376740,
 						["ts"] = 1429050425.586,
 					}, -- [5]
@@ -236,14 +262,52 @@ SkadaPerCharDB = {
 					{
 						["absorb"] = 0,
 						["amount"] = 42,
-						["srcname"] = "Bracnar",
 						["spellid"] = 149254,
+						["srcname"] = "Bracnar",
 						["hp"] = 376740,
 						["ts"] = 1429050429.596,
 					}, -- [7]
-					["pos"] = 8,
+					{
+						["ts"] = 1429375098.373,
+						["amount"] = -5403,
+						["hp"] = 289800,
+						["spellid"] = 88163,
+						["srcname"] = "Disturbed Podling",
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 5403,
+						["ts"] = 1429375098.41,
+						["hp"] = 289800,
+						["spellid"] = 149254,
+						["srcname"] = "Bracnar",
+					}, -- [9]
+					{
+						["ts"] = 1429375100.37,
+						["amount"] = -5877,
+						["hp"] = 289800,
+						["spellid"] = 88163,
+						["srcname"] = "Disturbed Podling",
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 5796,
+						["ts"] = 1429375100.396,
+						["hp"] = 289800,
+						["spellid"] = 149254,
+						["srcname"] = "Bracnar",
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 81,
+						["ts"] = 1429375102.399,
+						["hp"] = 289800,
+						["spellid"] = 149254,
+						["srcname"] = "Bracnar",
+					}, -- [12]
+					["pos"] = 13,
 				},
-				["damagetaken"] = 194,
+				["damagetaken"] = 11474,
 				["power"] = {
 				},
 				["id"] = "Player-1169-06A1ACBD",
@@ -253,16 +317,16 @@ SkadaPerCharDB = {
 					["Attack"] = {
 						["crushing"] = 0,
 						["id"] = 6603,
-						["damage"] = 64,
-						["max"] = 64,
+						["damage"] = 11344,
+						["max"] = 5877,
 						["name"] = "Attack",
-						["min"] = 64,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 1,
+						["totalhits"] = 3,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 64,
 						["absorbed"] = 0,
 					},
 					["Hurl Axe"] = {
@@ -271,13 +335,13 @@ SkadaPerCharDB = {
 						["damage"] = 130,
 						["max"] = 44,
 						["name"] = "Hurl Axe",
-						["min"] = 42,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 3,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 42,
 						["absorbed"] = 0,
 					},
 				},
@@ -286,31 +350,31 @@ SkadaPerCharDB = {
 					["Player-1169-06A1ACBD"] = {
 						["role"] = "DAMAGER",
 						["name"] = "Bracnar",
-						["amount"] = 194,
+						["amount"] = 11474,
 						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
 				},
 				["name"] = "Bracnar",
-				["healing"] = 194,
+				["healing"] = 11474,
 				["shielding"] = 0,
 				["healingspells"] = {
 					["Malicor: Spirit Bond"] = {
 						["shielding"] = 0,
 						["id"] = 149254,
-						["healing"] = 194,
+						["healing"] = 11474,
 						["multistrikes"] = 0,
 						["min"] = 42,
 						["multistrike"] = 0,
 						["name"] = "Malicor: Spirit Bond",
-						["hits"] = 3,
-						["overhealing"] = 22409,
-						["max"] = 108,
+						["hits"] = 6,
+						["overhealing"] = 28517,
+						["max"] = 5796,
 						["critical"] = 0,
 						["absorbed"] = 0,
 					},
 				},
-				["overhealing"] = 22409,
+				["overhealing"] = 28517,
 				["multistrikes"] = 0,
 			}, -- [2]
 		},
@@ -323,6 +387,8 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 17832,
 				["htakenspell"] = {
 					["Greater Heal"] = {
 						["min"] = 17832,
@@ -333,8 +399,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 17832,
-				["done"] = 0,
 			},
 			["Kor'kron Necrolyte"] = {
 				["players"] = {
@@ -343,6 +407,8 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 48707,
 				["htakenspell"] = {
 					["Regrowth"] = {
 						["min"] = 0,
@@ -377,8 +443,6 @@ SkadaPerCharDB = {
 						["hits"] = 4,
 					},
 				},
-				["htaken"] = 48707,
-				["done"] = 0,
 			},
 			["Kor'kron Stalker"] = {
 				["players"] = {
@@ -387,6 +451,8 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 146237,
 				["htakenspell"] = {
 					["Greater Heal"] = {
 						["min"] = 16951,
@@ -397,8 +463,6 @@ SkadaPerCharDB = {
 						["hits"] = 8,
 					},
 				},
-				["htaken"] = 146237,
-				["done"] = 0,
 			},
 			["Kor'kron Templar"] = {
 				["players"] = {
@@ -431,6 +495,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 329022,
 				["htakenspell"] = {
 					["Greater Heal"] = {
 						["min"] = 16233,
@@ -473,8 +539,6 @@ SkadaPerCharDB = {
 						["hits"] = 8,
 					},
 				},
-				["htaken"] = 329022,
-				["done"] = 0,
 			},
 			["Skybreaker Vindicator"] = {
 				["players"] = {
@@ -483,6 +547,8 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 247645,
 				["htakenspell"] = {
 					["Healing Touch"] = {
 						["min"] = 39300,
@@ -493,8 +559,6 @@ SkadaPerCharDB = {
 						["hits"] = 6,
 					},
 				},
-				["htaken"] = 247645,
-				["done"] = 0,
 			},
 			["Kor'kron Defender"] = {
 				["players"] = {
@@ -503,6 +567,8 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 36148,
 				["htakenspell"] = {
 					["Greater Heal"] = {
 						["min"] = 16699,
@@ -513,8 +579,6 @@ SkadaPerCharDB = {
 						["hits"] = 2,
 					},
 				},
-				["htaken"] = 36148,
-				["done"] = 0,
 			},
 			["Skybreaker Hierophant"] = {
 				["players"] = {
@@ -547,6 +611,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 157664,
 				["htakenspell"] = {
 					["Healing Touch"] = {
 						["min"] = 37865,
@@ -573,8 +639,6 @@ SkadaPerCharDB = {
 						["hits"] = 10,
 					},
 				},
-				["htaken"] = 157664,
-				["done"] = 0,
 			},
 			["Kor'kron Reaver"] = {
 				["players"] = {
@@ -589,6 +653,8 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 433407,
+				["done"] = 64,
+				["htaken"] = 163491,
 				["htakenspell"] = {
 					["Regrowth"] = {
 						["min"] = 2400,
@@ -623,8 +689,24 @@ SkadaPerCharDB = {
 						["hits"] = 2,
 					},
 				},
-				["htaken"] = 163491,
-				["done"] = 64,
+			},
+			["Disturbed Podling"] = {
+				["players"] = {
+					["Bracnar"] = {
+						["taken"] = 55180,
+						["done"] = 11280,
+						["role"] = "NONE",
+						["class"] = "HUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 55180,
+				["done"] = 11280,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
 			},
 			["Orgrim's Hammer"] = {
 				["players"] = {
@@ -639,10 +721,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 813863,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Kor'kron Primalist"] = {
 				["players"] = {
@@ -675,6 +757,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 30404,
 				["htakenspell"] = {
 					["Healing Wave"] = {
 						["min"] = 0,
@@ -709,128 +793,6 @@ SkadaPerCharDB = {
 						["hits"] = 5,
 					},
 				},
-				["htaken"] = 30404,
-				["done"] = 0,
-			},
-			["Skybreaker Luminary"] = {
-				["players"] = {
-				},
-				["hdone"] = 96278,
-				["hdonespell"] = {
-					["Earth Shield"] = {
-						["min"] = 1055,
-						["crits"] = 0,
-						["max"] = 1181,
-						["healing"] = 4398,
-						["overhealing"] = 0,
-						["hits"] = 4,
-					},
-					["Healing Wave"] = {
-						["min"] = 17049,
-						["crits"] = 0,
-						["max"] = 18926,
-						["healing"] = 91880,
-						["overhealing"] = 0,
-						["hits"] = 5,
-					},
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-					["Earth Shield"] = {
-						["min"] = 1055,
-						["crits"] = 0,
-						["max"] = 1181,
-						["healing"] = 4398,
-						["overhealing"] = 0,
-						["hits"] = 4,
-					},
-				},
-				["htaken"] = 4398,
-				["done"] = 0,
-			},
-			["Skybreaker Summoner"] = {
-				["players"] = {
-				},
-				["hdone"] = 4879,
-				["hdonespell"] = {
-					["Earth Shield"] = {
-						["min"] = 916,
-						["crits"] = 0,
-						["max"] = 1454,
-						["healing"] = 4879,
-						["overhealing"] = 0,
-						["hits"] = 4,
-					},
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-					["Healing Touch"] = {
-						["min"] = 43416,
-						["crits"] = 0,
-						["max"] = 43416,
-						["healing"] = 43416,
-						["overhealing"] = 0,
-						["hits"] = 1,
-					},
-					["Healing Wave"] = {
-						["min"] = 17049,
-						["crits"] = 0,
-						["max"] = 18926,
-						["healing"] = 91880,
-						["overhealing"] = 0,
-						["hits"] = 5,
-					},
-					["Rejuvenation"] = {
-						["min"] = 3270,
-						["crits"] = 0,
-						["max"] = 4473,
-						["healing"] = 7743,
-						["overhealing"] = 0,
-						["hits"] = 2,
-					},
-					["Earth Shield"] = {
-						["min"] = 916,
-						["crits"] = 0,
-						["max"] = 1454,
-						["healing"] = 4879,
-						["overhealing"] = 0,
-						["hits"] = 4,
-					},
-					["Regrowth"] = {
-						["min"] = 2400,
-						["crits"] = 0,
-						["max"] = 5186,
-						["healing"] = 14786,
-						["overhealing"] = 0,
-						["hits"] = 5,
-					},
-				},
-				["htaken"] = 162704,
-				["done"] = 0,
-			},
-			["Kor'kron Axethrower"] = {
-				["players"] = {
-					["Bracnar"] = {
-						["taken"] = 0,
-						["done"] = 130,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Lanui"] = {
-						["taken"] = 1627724,
-						["done"] = 0,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 1627724,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 130,
 			},
 			["Kor'kron Oracle"] = {
 				["players"] = {
@@ -855,6 +817,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 160237,
 				["htakenspell"] = {
 					["Healing Touch"] = {
 						["min"] = 39995,
@@ -905,8 +869,126 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 160237,
+			},
+			["Skybreaker Summoner"] = {
+				["players"] = {
+				},
+				["hdone"] = 4879,
+				["hdonespell"] = {
+					["Earth Shield"] = {
+						["min"] = 916,
+						["crits"] = 0,
+						["max"] = 1454,
+						["healing"] = 4879,
+						["overhealing"] = 0,
+						["hits"] = 4,
+					},
+				},
+				["taken"] = 0,
 				["done"] = 0,
+				["htaken"] = 162704,
+				["htakenspell"] = {
+					["Healing Touch"] = {
+						["min"] = 43416,
+						["crits"] = 0,
+						["max"] = 43416,
+						["healing"] = 43416,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+					["Healing Wave"] = {
+						["min"] = 17049,
+						["crits"] = 0,
+						["max"] = 18926,
+						["healing"] = 91880,
+						["overhealing"] = 0,
+						["hits"] = 5,
+					},
+					["Rejuvenation"] = {
+						["min"] = 3270,
+						["crits"] = 0,
+						["max"] = 4473,
+						["healing"] = 7743,
+						["overhealing"] = 0,
+						["hits"] = 2,
+					},
+					["Earth Shield"] = {
+						["min"] = 916,
+						["crits"] = 0,
+						["max"] = 1454,
+						["healing"] = 4879,
+						["overhealing"] = 0,
+						["hits"] = 4,
+					},
+					["Regrowth"] = {
+						["min"] = 2400,
+						["crits"] = 0,
+						["max"] = 5186,
+						["healing"] = 14786,
+						["overhealing"] = 0,
+						["hits"] = 5,
+					},
+				},
+			},
+			["Kor'kron Axethrower"] = {
+				["players"] = {
+					["Bracnar"] = {
+						["taken"] = 0,
+						["done"] = 130,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Lanui"] = {
+						["taken"] = 1627724,
+						["done"] = 0,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 1627724,
+				["done"] = 130,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Skybreaker Luminary"] = {
+				["players"] = {
+				},
+				["hdone"] = 96278,
+				["hdonespell"] = {
+					["Earth Shield"] = {
+						["min"] = 1055,
+						["crits"] = 0,
+						["max"] = 1181,
+						["healing"] = 4398,
+						["overhealing"] = 0,
+						["hits"] = 4,
+					},
+					["Healing Wave"] = {
+						["min"] = 17049,
+						["crits"] = 0,
+						["max"] = 18926,
+						["healing"] = 91880,
+						["overhealing"] = 0,
+						["hits"] = 5,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 4398,
+				["htakenspell"] = {
+					["Earth Shield"] = {
+						["min"] = 1055,
+						["crits"] = 0,
+						["max"] = 1181,
+						["healing"] = 4398,
+						["overhealing"] = 0,
+						["hits"] = 4,
+					},
+				},
 			},
 			["Skybreaker Protector"] = {
 				["players"] = {
@@ -915,6 +997,8 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 41732,
 				["htakenspell"] = {
 					["Healing Touch"] = {
 						["min"] = 41732,
@@ -925,36 +1009,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 41732,
-				["done"] = 0,
-			},
-			["Kor'kron Vanquisher"] = {
-				["players"] = {
-				},
-				["hdone"] = 4407,
-				["hdonespell"] = {
-					["Earth Shield"] = {
-						["min"] = 930,
-						["crits"] = 0,
-						["max"] = 1254,
-						["healing"] = 4407,
-						["overhealing"] = 0,
-						["hits"] = 4,
-					},
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-					["Earth Shield"] = {
-						["min"] = 930,
-						["crits"] = 0,
-						["max"] = 1254,
-						["healing"] = 4407,
-						["overhealing"] = 0,
-						["hits"] = 4,
-					},
-				},
-				["htaken"] = 4407,
-				["done"] = 0,
 			},
 			["Kor'kron Invoker"] = {
 				["players"] = {
@@ -963,6 +1017,8 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 18155,
 				["htakenspell"] = {
 					["Rejuvenation"] = {
 						["min"] = 0,
@@ -989,25 +1045,238 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 18155,
+			},
+			["Kor'kron Vanquisher"] = {
+				["players"] = {
+				},
+				["hdone"] = 4407,
+				["hdonespell"] = {
+					["Earth Shield"] = {
+						["min"] = 930,
+						["crits"] = 0,
+						["max"] = 1254,
+						["healing"] = 4407,
+						["overhealing"] = 0,
+						["hits"] = 4,
+					},
+				},
+				["taken"] = 0,
 				["done"] = 0,
+				["htaken"] = 4407,
+				["htakenspell"] = {
+					["Earth Shield"] = {
+						["min"] = 930,
+						["crits"] = 0,
+						["max"] = 1254,
+						["healing"] = 4407,
+						["overhealing"] = 0,
+						["hits"] = 4,
+					},
+				},
 			},
 		},
-		["mobtaken"] = 2874994,
-		["healing"] = 42684,
+		["mobtaken"] = 2930174,
+		["healing"] = 53964,
 		["multistrikes"] = 0,
 		["power"] = {
 		},
-		["overhealing"] = 27922,
+		["overhealing"] = 34030,
 		["shielding"] = 0,
 		["name"] = "Total",
 		["starttime"] = 1429049694,
-		["damagetaken"] = 194,
+		["damagetaken"] = 11474,
 		["mobhdone"] = 1568783,
 		["last_action"] = 1429049694,
-		["mobdone"] = 194,
+		["mobdone"] = 11474,
 	},
 	["sets"] = {
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 6,
+			["interrupts"] = 0,
+			["endtime"] = 1429375103,
+			["damage"] = 55180,
+			["players"] = {
+				{
+					["last"] = 1429375103,
+					["healingabsorbed"] = 0,
+					["class"] = "HUNTER",
+					["damaged"] = {
+						["Disturbed Podling"] = 55180,
+					},
+					["auras"] = {
+						["Meaty Dragonspine Trophy"] = {
+							["name"] = "Meaty Dragonspine Trophy",
+							["active"] = 1,
+							["id"] = 177035,
+							["auratype"] = "BUFF",
+							["uptime"] = 3,
+						},
+						["Archmage's Greater Incandescence"] = {
+							["name"] = "Archmage's Greater Incandescence",
+							["active"] = 1,
+							["id"] = 177172,
+							["auratype"] = "BUFF",
+							["uptime"] = 3,
+						},
+						["Balanced Fate"] = {
+							["name"] = "Balanced Fate",
+							["active"] = 1,
+							["id"] = 177038,
+							["auratype"] = "BUFF",
+							["uptime"] = 3,
+						},
+						["Explosive Shot"] = {
+							["name"] = "Explosive Shot",
+							["active"] = 0,
+							["id"] = 53301,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 1,
+						},
+						["Serpent Sting"] = {
+							["name"] = "Serpent Sting",
+							["active"] = 0,
+							["id"] = 118253,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 2,
+						},
+					},
+					["role"] = "NONE",
+					["time"] = 4,
+					["interrupts"] = 0,
+					["damage"] = 55180,
+					["damagespells"] = {
+						["Auto Shot"] = {
+							["min"] = 3907,
+							["hit"] = 1,
+							["totalhits"] = 1,
+							["id"] = 75,
+							["max"] = 3907,
+							["damage"] = 3907,
+						},
+						["Serpent Sting"] = {
+							["min"] = 5269,
+							["multistrike"] = 2,
+							["critical"] = 1,
+							["hit"] = 1,
+							["totalhits"] = 2,
+							["id"] = 118253,
+							["max"] = 10750,
+							["damage"] = 21786,
+						},
+						["Explosive Shot"] = {
+							["min"] = 4020,
+							["multistrike"] = 3,
+							["hit"] = 2,
+							["totalhits"] = 2,
+							["id"] = 53301,
+							["max"] = 4020,
+							["damage"] = 12383,
+						},
+						["Arcane Shot"] = {
+							["min"] = 7825,
+							["hit"] = 2,
+							["totalhits"] = 2,
+							["id"] = 3044,
+							["max"] = 9279,
+							["damage"] = 17104,
+						},
+					},
+					["power"] = {
+					},
+					["damagetaken"] = 11280,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1ACBD",
+					["first"] = 1429375099,
+					["ccbreaks"] = 0,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["absorbed"] = 0,
+							["min"] = 5403,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["name"] = "Attack",
+							["blocked"] = 0,
+							["totalhits"] = 2,
+							["resisted"] = 0,
+							["max"] = 5877,
+							["damage"] = 11280,
+						},
+					},
+					["overhealing"] = 6108,
+					["healingspells"] = {
+						["Malicor: Spirit Bond"] = {
+							["shielding"] = 0,
+							["id"] = 149254,
+							["healing"] = 11280,
+							["absorbed"] = 0,
+							["min"] = 81,
+							["multistrike"] = 0,
+							["name"] = "Malicor: Spirit Bond",
+							["critical"] = 0,
+							["max"] = 5796,
+							["overhealing"] = 6108,
+							["hits"] = 3,
+							["multistrikes"] = 0,
+						},
+					},
+					["name"] = "Bracnar",
+					["healing"] = 11280,
+					["healed"] = {
+						["Player-1169-06A1ACBD"] = {
+							["role"] = "NONE",
+							["name"] = "Bracnar",
+							["amount"] = 11280,
+							["class"] = "HUNTER",
+							["shielding"] = 0,
+						},
+					},
+					["maxhp"] = 289800,
+					["dispells"] = 0,
+					["multistrikes"] = 0,
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Disturbed Podling"] = {
+					["players"] = {
+						["Bracnar"] = {
+							["taken"] = 55180,
+							["done"] = 11280,
+							["role"] = "NONE",
+							["class"] = "HUNTER",
+						},
+					},
+					["hdone"] = 0,
+					["htakenspell"] = {
+					},
+					["taken"] = 55180,
+					["done"] = 11280,
+					["htaken"] = 0,
+					["hdonespell"] = {
+					},
+				},
+			},
+			["mobtaken"] = 55180,
+			["starttime"] = 1429375097,
+			["healing"] = 11280,
+			["power"] = {
+			},
+			["multistrikes"] = 0,
+			["overhealing"] = 6108,
+			["shielding"] = 0,
+			["name"] = "Disturbed Podling",
+			["mobname"] = "Disturbed Podling",
+			["damagetaken"] = 11280,
+			["mobhdone"] = 0,
+			["last_action"] = 1429375097,
+			["mobdone"] = 11280,
+		}, -- [1]
 		{
 			["healingabsorbed"] = 0,
 			["dispells"] = 0,
@@ -1198,13 +1467,13 @@ SkadaPerCharDB = {
 							["damage"] = 64,
 							["max"] = 64,
 							["name"] = "Attack",
-							["min"] = 64,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 64,
 							["absorbed"] = 0,
 						},
 						["Hurl Axe"] = {
@@ -1213,13 +1482,13 @@ SkadaPerCharDB = {
 							["damage"] = 130,
 							["max"] = 44,
 							["name"] = "Hurl Axe",
-							["min"] = 42,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 42,
 							["absorbed"] = 0,
 						},
 					},
@@ -1265,6 +1534,8 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 0,
+					["done"] = 0,
+					["htaken"] = 17832,
 					["htakenspell"] = {
 						["Greater Heal"] = {
 							["min"] = 17832,
@@ -1275,8 +1546,6 @@ SkadaPerCharDB = {
 							["hits"] = 1,
 						},
 					},
-					["htaken"] = 17832,
-					["done"] = 0,
 				},
 				["Kor'kron Necrolyte"] = {
 					["players"] = {
@@ -1285,6 +1554,8 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 0,
+					["done"] = 0,
+					["htaken"] = 48707,
 					["htakenspell"] = {
 						["Regrowth"] = {
 							["min"] = 0,
@@ -1319,8 +1590,6 @@ SkadaPerCharDB = {
 							["hits"] = 4,
 						},
 					},
-					["htaken"] = 48707,
-					["done"] = 0,
 				},
 				["Kor'kron Stalker"] = {
 					["players"] = {
@@ -1329,6 +1598,8 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 0,
+					["done"] = 0,
+					["htaken"] = 146237,
 					["htakenspell"] = {
 						["Greater Heal"] = {
 							["min"] = 16951,
@@ -1339,8 +1610,6 @@ SkadaPerCharDB = {
 							["hits"] = 8,
 						},
 					},
-					["htaken"] = 146237,
-					["done"] = 0,
 				},
 				["Kor'kron Templar"] = {
 					["players"] = {
@@ -1373,6 +1642,8 @@ SkadaPerCharDB = {
 						},
 					},
 					["taken"] = 0,
+					["done"] = 0,
+					["htaken"] = 329022,
 					["htakenspell"] = {
 						["Greater Heal"] = {
 							["min"] = 16233,
@@ -1415,8 +1686,6 @@ SkadaPerCharDB = {
 							["hits"] = 8,
 						},
 					},
-					["htaken"] = 329022,
-					["done"] = 0,
 				},
 				["Skybreaker Vindicator"] = {
 					["players"] = {
@@ -1425,6 +1694,8 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 0,
+					["done"] = 0,
+					["htaken"] = 247645,
 					["htakenspell"] = {
 						["Healing Touch"] = {
 							["min"] = 39300,
@@ -1435,8 +1706,6 @@ SkadaPerCharDB = {
 							["hits"] = 6,
 						},
 					},
-					["htaken"] = 247645,
-					["done"] = 0,
 				},
 				["Kor'kron Defender"] = {
 					["players"] = {
@@ -1445,6 +1714,8 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 0,
+					["done"] = 0,
+					["htaken"] = 36148,
 					["htakenspell"] = {
 						["Greater Heal"] = {
 							["min"] = 16699,
@@ -1455,8 +1726,6 @@ SkadaPerCharDB = {
 							["hits"] = 2,
 						},
 					},
-					["htaken"] = 36148,
-					["done"] = 0,
 				},
 				["Skybreaker Hierophant"] = {
 					["players"] = {
@@ -1489,6 +1758,8 @@ SkadaPerCharDB = {
 						},
 					},
 					["taken"] = 0,
+					["done"] = 0,
+					["htaken"] = 157664,
 					["htakenspell"] = {
 						["Healing Touch"] = {
 							["min"] = 37865,
@@ -1515,8 +1786,6 @@ SkadaPerCharDB = {
 							["hits"] = 10,
 						},
 					},
-					["htaken"] = 157664,
-					["done"] = 0,
 				},
 				["Kor'kron Reaver"] = {
 					["players"] = {
@@ -1531,6 +1800,8 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 433407,
+					["done"] = 64,
+					["htaken"] = 163491,
 					["htakenspell"] = {
 						["Regrowth"] = {
 							["min"] = 2400,
@@ -1565,8 +1836,6 @@ SkadaPerCharDB = {
 							["hits"] = 2,
 						},
 					},
-					["htaken"] = 163491,
-					["done"] = 64,
 				},
 				["Orgrim's Hammer"] = {
 					["players"] = {
@@ -1581,10 +1850,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 813863,
+					["done"] = 0,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 0,
 				},
 				["Kor'kron Primalist"] = {
 					["players"] = {
@@ -1617,6 +1886,8 @@ SkadaPerCharDB = {
 						},
 					},
 					["taken"] = 0,
+					["done"] = 0,
+					["htaken"] = 30404,
 					["htakenspell"] = {
 						["Healing Wave"] = {
 							["min"] = 0,
@@ -1651,128 +1922,6 @@ SkadaPerCharDB = {
 							["hits"] = 5,
 						},
 					},
-					["htaken"] = 30404,
-					["done"] = 0,
-				},
-				["Skybreaker Luminary"] = {
-					["players"] = {
-					},
-					["hdone"] = 96278,
-					["hdonespell"] = {
-						["Earth Shield"] = {
-							["min"] = 1055,
-							["crits"] = 0,
-							["max"] = 1181,
-							["healing"] = 4398,
-							["overhealing"] = 0,
-							["hits"] = 4,
-						},
-						["Healing Wave"] = {
-							["min"] = 17049,
-							["crits"] = 0,
-							["max"] = 18926,
-							["healing"] = 91880,
-							["overhealing"] = 0,
-							["hits"] = 5,
-						},
-					},
-					["taken"] = 0,
-					["htakenspell"] = {
-						["Earth Shield"] = {
-							["min"] = 1055,
-							["crits"] = 0,
-							["max"] = 1181,
-							["healing"] = 4398,
-							["overhealing"] = 0,
-							["hits"] = 4,
-						},
-					},
-					["htaken"] = 4398,
-					["done"] = 0,
-				},
-				["Skybreaker Summoner"] = {
-					["players"] = {
-					},
-					["hdone"] = 4879,
-					["hdonespell"] = {
-						["Earth Shield"] = {
-							["min"] = 916,
-							["crits"] = 0,
-							["max"] = 1454,
-							["healing"] = 4879,
-							["overhealing"] = 0,
-							["hits"] = 4,
-						},
-					},
-					["taken"] = 0,
-					["htakenspell"] = {
-						["Healing Touch"] = {
-							["min"] = 43416,
-							["crits"] = 0,
-							["max"] = 43416,
-							["healing"] = 43416,
-							["overhealing"] = 0,
-							["hits"] = 1,
-						},
-						["Healing Wave"] = {
-							["min"] = 17049,
-							["crits"] = 0,
-							["max"] = 18926,
-							["healing"] = 91880,
-							["overhealing"] = 0,
-							["hits"] = 5,
-						},
-						["Rejuvenation"] = {
-							["min"] = 3270,
-							["crits"] = 0,
-							["max"] = 4473,
-							["healing"] = 7743,
-							["overhealing"] = 0,
-							["hits"] = 2,
-						},
-						["Earth Shield"] = {
-							["min"] = 916,
-							["crits"] = 0,
-							["max"] = 1454,
-							["healing"] = 4879,
-							["overhealing"] = 0,
-							["hits"] = 4,
-						},
-						["Regrowth"] = {
-							["min"] = 2400,
-							["crits"] = 0,
-							["max"] = 5186,
-							["healing"] = 14786,
-							["overhealing"] = 0,
-							["hits"] = 5,
-						},
-					},
-					["htaken"] = 162704,
-					["done"] = 0,
-				},
-				["Kor'kron Axethrower"] = {
-					["players"] = {
-						["Bracnar"] = {
-							["taken"] = 0,
-							["done"] = 130,
-							["class"] = "HUNTER",
-							["role"] = "DAMAGER",
-						},
-						["Lanui"] = {
-							["taken"] = 1627724,
-							["done"] = 0,
-							["class"] = "HUNTER",
-							["role"] = "DAMAGER",
-						},
-					},
-					["hdone"] = 0,
-					["hdonespell"] = {
-					},
-					["taken"] = 1627724,
-					["htakenspell"] = {
-					},
-					["htaken"] = 0,
-					["done"] = 130,
 				},
 				["Kor'kron Oracle"] = {
 					["players"] = {
@@ -1797,6 +1946,8 @@ SkadaPerCharDB = {
 						},
 					},
 					["taken"] = 0,
+					["done"] = 0,
+					["htaken"] = 160237,
 					["htakenspell"] = {
 						["Healing Touch"] = {
 							["min"] = 39995,
@@ -1847,8 +1998,126 @@ SkadaPerCharDB = {
 							["hits"] = 1,
 						},
 					},
-					["htaken"] = 160237,
+				},
+				["Skybreaker Summoner"] = {
+					["players"] = {
+					},
+					["hdone"] = 4879,
+					["hdonespell"] = {
+						["Earth Shield"] = {
+							["min"] = 916,
+							["crits"] = 0,
+							["max"] = 1454,
+							["healing"] = 4879,
+							["overhealing"] = 0,
+							["hits"] = 4,
+						},
+					},
+					["taken"] = 0,
 					["done"] = 0,
+					["htaken"] = 162704,
+					["htakenspell"] = {
+						["Healing Touch"] = {
+							["min"] = 43416,
+							["crits"] = 0,
+							["max"] = 43416,
+							["healing"] = 43416,
+							["overhealing"] = 0,
+							["hits"] = 1,
+						},
+						["Healing Wave"] = {
+							["min"] = 17049,
+							["crits"] = 0,
+							["max"] = 18926,
+							["healing"] = 91880,
+							["overhealing"] = 0,
+							["hits"] = 5,
+						},
+						["Rejuvenation"] = {
+							["min"] = 3270,
+							["crits"] = 0,
+							["max"] = 4473,
+							["healing"] = 7743,
+							["overhealing"] = 0,
+							["hits"] = 2,
+						},
+						["Earth Shield"] = {
+							["min"] = 916,
+							["crits"] = 0,
+							["max"] = 1454,
+							["healing"] = 4879,
+							["overhealing"] = 0,
+							["hits"] = 4,
+						},
+						["Regrowth"] = {
+							["min"] = 2400,
+							["crits"] = 0,
+							["max"] = 5186,
+							["healing"] = 14786,
+							["overhealing"] = 0,
+							["hits"] = 5,
+						},
+					},
+				},
+				["Kor'kron Axethrower"] = {
+					["players"] = {
+						["Bracnar"] = {
+							["taken"] = 0,
+							["done"] = 130,
+							["class"] = "HUNTER",
+							["role"] = "DAMAGER",
+						},
+						["Lanui"] = {
+							["taken"] = 1627724,
+							["done"] = 0,
+							["class"] = "HUNTER",
+							["role"] = "DAMAGER",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 1627724,
+					["done"] = 130,
+					["htaken"] = 0,
+					["htakenspell"] = {
+					},
+				},
+				["Skybreaker Luminary"] = {
+					["players"] = {
+					},
+					["hdone"] = 96278,
+					["hdonespell"] = {
+						["Earth Shield"] = {
+							["min"] = 1055,
+							["crits"] = 0,
+							["max"] = 1181,
+							["healing"] = 4398,
+							["overhealing"] = 0,
+							["hits"] = 4,
+						},
+						["Healing Wave"] = {
+							["min"] = 17049,
+							["crits"] = 0,
+							["max"] = 18926,
+							["healing"] = 91880,
+							["overhealing"] = 0,
+							["hits"] = 5,
+						},
+					},
+					["taken"] = 0,
+					["done"] = 0,
+					["htaken"] = 4398,
+					["htakenspell"] = {
+						["Earth Shield"] = {
+							["min"] = 1055,
+							["crits"] = 0,
+							["max"] = 1181,
+							["healing"] = 4398,
+							["overhealing"] = 0,
+							["hits"] = 4,
+						},
+					},
 				},
 				["Skybreaker Protector"] = {
 					["players"] = {
@@ -1857,6 +2126,8 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 0,
+					["done"] = 0,
+					["htaken"] = 41732,
 					["htakenspell"] = {
 						["Healing Touch"] = {
 							["min"] = 41732,
@@ -1867,36 +2138,6 @@ SkadaPerCharDB = {
 							["hits"] = 1,
 						},
 					},
-					["htaken"] = 41732,
-					["done"] = 0,
-				},
-				["Kor'kron Vanquisher"] = {
-					["players"] = {
-					},
-					["hdone"] = 4407,
-					["hdonespell"] = {
-						["Earth Shield"] = {
-							["min"] = 930,
-							["crits"] = 0,
-							["max"] = 1254,
-							["healing"] = 4407,
-							["overhealing"] = 0,
-							["hits"] = 4,
-						},
-					},
-					["taken"] = 0,
-					["htakenspell"] = {
-						["Earth Shield"] = {
-							["min"] = 930,
-							["crits"] = 0,
-							["max"] = 1254,
-							["healing"] = 4407,
-							["overhealing"] = 0,
-							["hits"] = 4,
-						},
-					},
-					["htaken"] = 4407,
-					["done"] = 0,
 				},
 				["Kor'kron Invoker"] = {
 					["players"] = {
@@ -1905,6 +2146,8 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 0,
+					["done"] = 0,
+					["htaken"] = 18155,
 					["htakenspell"] = {
 						["Rejuvenation"] = {
 							["min"] = 0,
@@ -1931,8 +2174,34 @@ SkadaPerCharDB = {
 							["hits"] = 1,
 						},
 					},
-					["htaken"] = 18155,
+				},
+				["Kor'kron Vanquisher"] = {
+					["players"] = {
+					},
+					["hdone"] = 4407,
+					["hdonespell"] = {
+						["Earth Shield"] = {
+							["min"] = 930,
+							["crits"] = 0,
+							["max"] = 1254,
+							["healing"] = 4407,
+							["overhealing"] = 0,
+							["hits"] = 4,
+						},
+					},
+					["taken"] = 0,
 					["done"] = 0,
+					["htaken"] = 4407,
+					["htakenspell"] = {
+						["Earth Shield"] = {
+							["min"] = 930,
+							["crits"] = 0,
+							["max"] = 1254,
+							["healing"] = 4407,
+							["overhealing"] = 0,
+							["hits"] = 4,
+						},
+					},
 				},
 			},
 			["mobtaken"] = 2874994,
@@ -1949,6 +2218,6 @@ SkadaPerCharDB = {
 			["mobhdone"] = 1568783,
 			["last_action"] = 1429050415,
 			["endtime"] = 1429050448,
-		}, -- [1]
+		}, -- [2]
 	},
 }
