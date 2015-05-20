@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(112, "DBM-Party-Cataclysm", 7, 67)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 145 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 154 $"):sub(12, -3))
 mod:SetCreatureID(42188)
 mod:SetZone()
 
@@ -22,7 +22,7 @@ local warnEnrage			= mod:NewSpellAnnounce(80467, 3)
 local warnEnrageSoon		= mod:NewSoonAnnounce(80467, 2)
 
 local specWarnGroundSlam	= mod:NewSpecialWarningMove(78903, "Tank")
-local specWarnShatter		= mod:NewSpecialWarningRun("OptionVersion2", 78807, "Melee", nil, nil, 4)
+local specWarnShatter		= mod:NewSpecialWarningRun(78807, "Melee", nil, 2, 4)
 
 --local timerShatterCD		= mod:NewCDTimer(19, 78807)
 local timerBulwark			= mod:NewBuffActiveTimer(10, 78939)

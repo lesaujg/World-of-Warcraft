@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(819, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 57 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 59 $"):sub(12, -3))
 mod:SetCreatureID(68476)
 mod:SetEncounterID(1575)
 mod:SetZone()
@@ -129,13 +129,13 @@ Delayed by Charge version
 --]]
 function mod:SPELL_CAST_START(args)
 	local spellId = args.spellId
-	if spellId == 136741 then--Regular double swipe
+	if spellId == 136741 and self:AntiSpam(3, 5) then--Regular double swipe
 		specWarnDoubleSwipe:Show()
 		--The only flaw is charge is sometimes delayed by unexpected events like using an orb, we may fail to start timer once in a while when it DOES come before a charge.
 		if timerChargeCD:GetTime() < 32 then--Check if charge is less than 18 seconds away, if it is, double swipe is going to be delayed by quite a bit and we'll trigger timer after charge
 			timerDoubleSwipeCD:Start()
 		end
-	elseif spellId == 136770 then--Double swipe that follows a charge (136769)
+	elseif spellId == 136770 and self:AntiSpam(3, 5) then--Double swipe that follows a charge (136769)
 		specWarnDoubleSwipe:Show()
 		timerDoubleSwipeCD:Start(11)--Hard coded failsafe. 136741 version is always 11 seconds after 136770 version
 	elseif spellId == 137458 then
@@ -271,6 +271,7 @@ function mod:OnSync(msg, targetname)
 	if msg == "ChargeTo" and targetname and self:AntiSpam(5, 4) then
 		local target = DBM:GetUnitFullName(targetname)
 		if target then
+			timerDoubleSwipeCD:Cancel()
 			warnCharge:Show(target)
 			timerCharge:Start()
 			timerChargeCD:Start()

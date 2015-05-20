@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(821, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 57 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 60 $"):sub(12, -3))
 mod:SetCreatureID(68065, 70235, 70247)--Frozen 70235, Venomous 70247 (only 2 heads that ever start in front, so no need to look for combat with arcane or fire for combat detection)
 mod:SetEncounterID(1578)
 mod:SetMainBossID(68065)
@@ -45,10 +45,10 @@ local specWarnArcticFreeze		= mod:NewSpecialWarningStack(139843, nil, 2)
 local specWarnIgniteFlesh		= mod:NewSpecialWarningStack(137731, nil, 2)
 local specWarnRotArmor			= mod:NewSpecialWarningStack(139840, nil, 2)
 local specWarnArcaneDiffusion	= mod:NewSpecialWarningStack(139993, nil, 2)
-local specWarnCinders			= mod:NewSpecialWarningYou("OptionVersion2", 139822, nil, nil, nil, 4)
+local specWarnCinders			= mod:NewSpecialWarningYou(139822, nil, nil, 2, 4)
 local specWarnCindersMove		= mod:NewSpecialWarningMove(139836)--Fire left on ground after the fact
 local yellCinders				= mod:NewYell(139822)
-local specWarnTorrentofIceYou	= mod:NewSpecialWarningRun("OptionVersion2", 139857, nil, nil, nil, 4)
+local specWarnTorrentofIceYou	= mod:NewSpecialWarningRun(139857, nil, nil, 2, 4)
 local yellTorrentofIce			= mod:NewYell(139857)
 local specWarnTorrentofIceNear	= mod:NewSpecialWarningClose(139889)
 local specWarnTorrentofIce		= mod:NewSpecialWarningMove(139909)--Ice left on ground by the beam
