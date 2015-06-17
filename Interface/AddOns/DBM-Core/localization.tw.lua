@@ -8,7 +8,7 @@ DBM_FORUMS_MESSAGE					= "發現臭蟲或錯誤的計時器?你希望要讓某�
 DBM_FORUMS_COPY_URL_DIALOG			= "來拜訪我們新的討論與支援論壇\r\n(代管於Elitist Jerks!)"
 
 DBM_CORE_LOAD_MOD_ERROR				= "載入%s模組時發生錯誤：%s"
-DBM_CORE_LOAD_MOD_SUCCESS			= "成功載入%s模組。輸入/dbm或/dbm help有更多選項。"
+DBM_CORE_LOAD_MOD_SUCCESS			= "成功載入%s模組。輸入/dbm 可自訂警告音效和個人化註記。"
 DBM_CORE_LOAD_MOD_COMBAT			= "延遲載入'%s'直到離開戰鬥"
 DBM_CORE_LOAD_GUI_ERROR				= "無法載入圖形介面：%s"
 DBM_CORE_LOAD_GUI_COMBAT			= "圖形介面不能在戰鬥中初始化。圖形介面將在脫離戰鬥後自動讀取，這樣就能夠再次在戰鬥中使用。"
@@ -16,7 +16,7 @@ DBM_CORE_LOAD_SKIN_COMBAT			= "DBM計時條在戰鬥中套用外觀失敗。你�
 DBM_CORE_BAD_LOAD					= "DBM偵測到你的此副本的模組在戰鬥中讀取失敗。一旦脫離戰鬥，請立即輸入/consoel reloadui重新載入。"
 DBM_CORE_LOAD_MOD_VER_MISMATCH		= "%s不能被讀取因為你的DBM核心未達需求，請更新版本。"
 
-DBM_CORE_BLIZZ_BUGS					= "6.1 禁用了用.wav 媒體檔播放，如果使用者的插件有缺失或損毀的自訂音效設定值則會被強制重置設定回預設值。這重置設定只會發生一次而你可以再次重新設定自訂音效。記得，一旦你在某個配置檔設定過自訂音效，你可以從模組狀態視窗複製音效設定到另一個配置檔。"
+DBM_CORE_WHATS_NEW					= "此版本新功能： DBM現在支援在每個特別警告加註個人化註記。像是自訂含有你的名字的警告聲音/閃爍。"
 
 DBM_CORE_DYNAMIC_DIFFICULTY_CLUMP	= "DBM已中禁用動態距離框架，你目前的團隊人數在這場戰鬥中的機制資訊不足。"
 DBM_CORE_DYNAMIC_ADD_COUNT			= "DBM已中禁用小怪計數警告，你目前的團隊人數在這場戰鬥中的機制資訊不足。"
@@ -34,7 +34,7 @@ DBM_CORE_COMBAT_STARTED				= "%s開戰。祝好運與盡興! :)"
 DBM_CORE_COMBAT_STARTED_IN_PROGRESS	= "與%s開戰已進行的戰鬥。祝好運與盡興! :)"
 DBM_CORE_GUILD_COMBAT_STARTED		= "公會已跟%s開戰"
 DBM_CORE_SCENARIO_STARTED			= "%s開始。祝好運與盡興! :)"
-DBM_CORE_SCENARIO_STARTED_IN_PROGRESS	= "加入進行中的%s。祝好運與盡興! :)"
+DBM_CORE_SCENARIO_STARTED_IN_PROGRESS	= "加入進行中的%s事件。祝好運與盡興! :)"
 DBM_CORE_BOSS_DOWN					= "擊敗%s，用了%s!"
 DBM_CORE_BOSS_DOWN_I				= "擊敗%s!你已勝利了%d次。"
 DBM_CORE_BOSS_DOWN_L				= "擊敗%s!本次用了%s，上次用了%s，最快紀錄為%s。你總共戰勝了%d次。"
@@ -53,6 +53,8 @@ DBM_CORE_COMBAT_STATE_RECOVERED		= "%s的戰鬥在%s前開始，恢復計時器�
 DBM_CORE_TRANSCRIPTOR_LOG_START		= "Transcriptor開始記錄。"
 DBM_CORE_TRANSCRIPTOR_LOG_END		= "Transcriptor結束紀錄。"
 
+DBM_CORE_COMBAT_STARTED_AI_TIMER	= "我的CPU是類神經網路處理器，一種學習型電腦。(此戰鬥會使用新的AI計時器功能去產生計時器的近似值)"
+
 DBM_CORE_PROFILE_NOT_FOUND			= "<Deadly Boss Mods>你目前的配置檔已經損毀。DBM會載入'Default'配置檔。"
 DBM_CORE_PROFILE_CREATED			= "配置檔'%s'已建立。"
 DBM_CORE_PROFILE_CREATE_ERROR		= "建立配置檔失敗，無效的配置檔名稱。"
@@ -68,12 +70,25 @@ DBM_CORE_PROFILE_CANNOT_DELETE		= "不能刪除'Default'配置檔。"
 DBM_CORE_MPROFILE_COPY_SUCCESS		= "%s's (%d專精)模組設定已被複製。"
 DBM_CORE_MPROFILE_COPY_SELF_ERROR	= "不能複製角色設定到本身來源"
 DBM_CORE_MPROFILE_COPY_S_ERROR		= "配置檔來源已經損毀，設定不能被複製或是部分複製，複製已失敗。"
-DBM_CORE_MPROFILE_COPYS_SUCCESS		= "%s's (%d專精)模組音效設定已被複製。"
-DBM_CORE_MPROFILE_COPYS_SELF_ERROR	= "不能複製角色音效設定到本身來源"
-DBM_CORE_MPROFILE_COPYS_S_ERROR		= "配置檔來源已經損毀，音效設定不能被複製或是部分複製，複製已失敗。"
+DBM_CORE_MPROFILE_COPYS_SUCCESS		= "%s's (%d專精)模組音效或註記設定已被複製。"
+DBM_CORE_MPROFILE_COPYS_SELF_ERROR	= "不能複製角色音效或註記設定到本身來源"
+DBM_CORE_MPROFILE_COPYS_S_ERROR		= "配置檔來源已經損毀，音效或註記設定不能被複製或是部分複製，複製已失敗。"
 DBM_CORE_MPROFILE_DELETE_SUCCESS	= "%s's (%d專精)模組設定已被刪除。"
 DBM_CORE_MPROFILE_DELETE_SELF_ERROR	= "不能刪除使用中的模組設定。"
 DBM_CORE_MPROFILE_DELETE_S_ERROR	= "配置檔來源已經損毀，設定不能被刪除或是部分刪除，刪除已失敗。"
+
+DBM_CORE_NOTE_SHARE_SUCCESS			= "%s已分享他的%s的註記"
+DBM_CORE_NOTE_SHARE_LINK			= "點擊這裡打開註記"
+DBM_CORE_NOTE_SHARE_FAIL			= "%s嘗試與你分享%s的註記。模組相關的技能沒有安裝或是載入。請確定你載入此模組並請求他們在分享一次。"
+
+DBM_CORE_NOTEHEADER					= "為%s輸入你的註記。在><插入腳色名稱可套用職業顏色。多個註記請使用'/'分開"
+DBM_CORE_NOTEFOOTER					= "按下'確定'接受變更或'取消'放棄變更"
+DBM_CORE_NOTESHAREDHEADER			= "%s已分享%s的註記。接受註記會覆蓋你原有的註記。"
+DBM_CORE_NOTESHARED					= "你的註記已經送出至隊伍"
+DBM_CORE_NOTESHAREERRORSOLO			= "寂寞嗎?不應該能分享注意給你自己"
+DBM_CORE_NOTESHAREERRORBLANK		= "不能分享空白註記"
+DBM_CORE_NOTESHAREERRORGROUPFINDER	= "註記不能被分享在戰場、隨機團隊或隨機隊伍"
+DBM_CORE_NOTESHAREERRORALREADYOPEN	= "不能開啟分享註記連結當註記編輯器已經被打開，避免你失去正在編輯的註記"
 
 DBM_CORE_ALLMOD_DEFAULT_LOADED		= "此副本所有的選項設定已套用預設值。"
 DBM_CORE_ALLMOD_STATS_RESETED		= "所有模組狀態已經被重置。"
@@ -237,7 +252,7 @@ DBM_CORE_AUTO_ANNOUNCE_TEXTS.count			= "%s (%%s)"
 DBM_CORE_AUTO_ANNOUNCE_TEXTS.stack			= ">%%s<中了%s (%%d)"
 
 DBM_CORE_AUTO_ANNOUNCE_OPTIONS.target		= "提示$spell:%s的目標"
-DBM_CORE_AUTO_ANNOUNCE_OPTIONS.targetcount	= "提示$spell:%s的目標"
+DBM_CORE_AUTO_ANNOUNCE_OPTIONS.targetcount	= "提示$spell:%s的目標(次數)"
 DBM_CORE_AUTO_ANNOUNCE_OPTIONS.spell		= "為$spell:%s顯示警告"
 DBM_CORE_AUTO_ANNOUNCE_OPTIONS.ends			= "為$spell:%s結束顯示警告"
 DBM_CORE_AUTO_ANNOUNCE_OPTIONS.endtarget	= "為$spell:%s結束顯示警告"
@@ -249,7 +264,7 @@ DBM_CORE_AUTO_ANNOUNCE_OPTIONS.prewarn		= "為$spell:%s顯示預先警告"
 DBM_CORE_AUTO_ANNOUNCE_OPTIONS.phase		= "提示第%s階段"
 DBM_CORE_AUTO_ANNOUNCE_OPTIONS.phasechange	= "提示階段轉換"
 DBM_CORE_AUTO_ANNOUNCE_OPTIONS.prephase		= "為第%s階段顯示預先警告"
-DBM_CORE_AUTO_ANNOUNCE_OPTIONS.count		= "為$spell:%s顯示警告"
+DBM_CORE_AUTO_ANNOUNCE_OPTIONS.count		= "為$spell:%s顯示警告(次數)"
 DBM_CORE_AUTO_ANNOUNCE_OPTIONS.stack		= "提示$spell:%s的堆疊"
 
 DBM_CORE_AUTO_SPEC_WARN_TEXTS.spell			= "%s!"
@@ -283,8 +298,10 @@ DBM_CORE_AUTO_SPEC_WARN_OPTIONS.soon 		= "為$spell:%s顯示預先特別警告"
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.prewarn 	= "在%s秒前為$spell:%s顯示預先特別警告"
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.dispel		= "需對$spell:%s驅散/竊取時顯示特別警告"
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.interrupt	= "需對$spell:%s斷法時顯示特別警告"
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.interruptcount	= "需對$spell:%s斷法(次數)時顯示特別警告"
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.you			= "當你中了$spell:%s時顯示特別警告"
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.target		= "當有人中了$spell:%s時顯示特別警告"
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.targetcount	= "當有人中了$spell:%s時(次數)顯示特別警告"
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.taunt 		= "當其他坦克中了$spell:%s顯示特別警告去嘲諷"
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.close		= "當你附近有人中了$spell:%s時顯示特別警告"
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.move		= "當你中了$spell:%s時顯示特別警告"
@@ -297,9 +314,7 @@ DBM_CORE_AUTO_SPEC_WARN_OPTIONS.reflect		= "為$spell:%s施放時顯示停止攻
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.count 		= "為$spell:%s顯示特別警告"
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.stack		= "為中了>=%d層$spell:%s時顯示特別警告"
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.switch		= "需對$spell:%s更換目標時顯示特別警告"
-DBM_CORE_AUTO_SPEC_WARN_OPTIONS.switchcount = DBM_CORE_AUTO_SPEC_WARN_OPTIONS.switch
-DBM_CORE_AUTO_SPEC_WARN_OPTIONS.interruptcount	= DBM_CORE_AUTO_SPEC_WARN_OPTIONS.interrupt
-DBM_CORE_AUTO_SPEC_WARN_OPTIONS.targetcount		= DBM_CORE_AUTO_SPEC_WARN_OPTIONS.target
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.switchcount = "需對$spell:%s更換目標時(次數)顯示特別警告"
 
 DBM_CORE_AUTO_TIMER_TEXTS.target			= "%s:>%%s<"
 DBM_CORE_AUTO_TIMER_TEXTS.cast				= "%s"
@@ -387,10 +402,10 @@ DBM_ARROW_ERROR_USAGE	= {
 }
 
 DBM_SPEED_KILL_TIMER_TEXT	= "勝利紀錄"
-DBM_SPEED_KILL_TIMER_OPTION	= "顯示一個計時器來打敗你上次的最快勝利"
 DBM_SPEED_CLEAR_TIMER_TEXT	= "最佳紀錄"
 DBM_COMBAT_RES_TIMER_TEXT	= "下一個戰復充能"
 DBM_CORE_TIMER_RESPAWN		= "重生"
+
 
 DBM_REQ_INSTANCE_ID_PERMISSION		= "%s想要查看你的副本ID和進度鎖定情況。\n你想發送該訊息給%s嗎? 在你的當前進程（除非你下線）他可以一直查閱該訊息。"
 DBM_ERROR_NO_RAID					= "你必須在一個團隊中才可以使用這個功能。"

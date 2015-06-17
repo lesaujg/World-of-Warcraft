@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("BrawlRank6", "DBM-Brawlers")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 13192 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 13843 $"):sub(12, -3))
 mod:SetModelID(39166)
 mod:SetZone()
 
@@ -18,7 +18,7 @@ local warnTorrent				= mod:NewSpellAnnounce(124935, 4)--Proboskus
 local warnDisorientingShriek	= mod:NewSpellAnnounce(134795, 3)
 
 local specWarnHammerFist		= mod:NewSpecialWarningRun(141104, nil, nil, nil, 3)--Doctor FIST
-local specWarnRainDance			= mod:NewSpecialWarningSpell(124860, nil, nil, nil, true)--Proboskus
+local specWarnRainDance			= mod:NewSpecialWarningSpell(124860, nil, nil, nil, 2)--Proboskus
 local specWarnTorrent			= mod:NewSpecialWarningInterrupt(124935)--Proboskus
 local specWarnDisorientingShriek= mod:NewSpecialWarningInterrupt(134795)
 
@@ -28,7 +28,6 @@ local timerTorrentCD			= mod:NewCDTimer(18, 124935)--Proboskus
 local timerShriekCD				= mod:NewCDTimer(23, 134795)
 
 mod:RemoveOption("HealthFrame")
-mod:RemoveOption("SpeedKillTimer")
 
 local brawlersMod = DBM:GetModByName("Brawlers")
 

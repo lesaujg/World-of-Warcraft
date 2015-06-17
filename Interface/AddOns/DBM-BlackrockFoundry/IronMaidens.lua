@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1203, "DBM-BlackrockFoundry", nil, 457)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 13707 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 13866 $"):sub(12, -3))
 mod:SetCreatureID(77557, 77231, 77477)
 mod:SetEncounterID(1695)
 mod:SetZone()
@@ -23,13 +23,13 @@ mod:RegisterEventsInCombat(
 	"UNIT_DIED",
 	"RAID_BOSS_WHISPER",
 	"CHAT_MSG_RAID_BOSS_EMOTE",
+	"CHAT_MSG_MONSTER_YELL",
 	"CHAT_MSG_ADDON",
 	"UNIT_SPELLCAST_SUCCEEDED boss1 boss2 boss3"
 )
 
 mod:SetBossHealthInfo(77557, 77231, 77477)
 
---TODO, does heroic still have blade dash and blood ritual during boat phases?
 local Ship	= EJ_GetSectionInfo(10019)
 local Marak = EJ_GetSectionInfo(10033)
 local Sorka = EJ_GetSectionInfo(10030)
@@ -61,7 +61,7 @@ local specWarnBombardmentOmega			= mod:NewSpecialWarningCount(157886, nil, nil, 
 local specWarnReturnBase				= mod:NewSpecialWarning("specWarnReturnBase")
 local specWarnBoatEnded					= mod:NewSpecialWarningEnd("ej10019")
 ----Blackrock Deckhand
-local specWarnEarthenbarrier			= mod:NewSpecialWarningInterrupt("OptionVersion2", 158708, "-Healer", nil, nil, nil, nil, 2)
+local specWarnEarthenbarrier			= mod:NewSpecialWarningInterrupt(158708, "-Healer", nil, 2, nil, 2)
 ----Shattered Hand Deckhand
 local specWarnDeadlyThrow				= mod:NewSpecialWarningSpell(158692, "Tank")
 local specWarnFixate					= mod:NewSpecialWarningYou(158702)
@@ -69,26 +69,26 @@ local specWarnFixate					= mod:NewSpecialWarningYou(158702)
 local specWarnCorruptedBlood			= mod:NewSpecialWarningMove(158683)
 --Ground
 ----Admiral Gar'an
-local specWarnRapidFire					= mod:NewSpecialWarningRun(156631, nil, nil, nil, 4, nil, 2)
+local specWarnRapidFire					= mod:NewSpecialWarningRun(156631, nil, nil, nil, 4, 2)
 local yellRapidFire						= mod:NewYell(156631)
 local specWarnRapidFireNear				= mod:NewSpecialWarningClose(156631, false)
-local specWarnPenetratingShot			= mod:NewSpecialWarningYou(164271, nil, nil, nil, nil, nil, 2)
+local specWarnPenetratingShot			= mod:NewSpecialWarningYou(164271, nil, nil, nil, nil, 2)
 local specWarnPenetratingShotOther		= mod:NewSpecialWarningTargetCount(164271, false)
 local yellPenetratingShot				= mod:NewYell(164271)
-local specWarnDeployTurret				= mod:NewSpecialWarningSwitch("OptionVersion3", 158599, "RangedDps", nil, nil, 3, nil, 2)--Switch warning since most need to switch and kill, but on for EVERYONE because tanks/healers need to avoid it while it's up
+local specWarnDeployTurret				= mod:NewSpecialWarningSwitch(158599, "RangedDps", nil, 3, 3, 2)--Switch warning since most need to switch and kill, but on for EVERYONE because tanks/healers need to avoid it while it's up
 ----Enforcer Sorka
 local specWarnBladeDash					= mod:NewSpecialWarningYou(155794)
 local specWarnBladeDashOther			= mod:NewSpecialWarningClose(155794)
-local specWarnConvulsiveShadows			= mod:NewSpecialWarningMoveAway(156214, nil, nil, nil, nil, nil, 2)--Does this still drop lingering shadows, if not moveaway is not appropriate
+local specWarnConvulsiveShadows			= mod:NewSpecialWarningMoveAway(156214, nil, nil, nil, nil, 2)--Does this still drop lingering shadows, if not moveaway is not appropriate
 local specWarnConvulsiveShadowsOther	= mod:NewSpecialWarningTargetCount(156214, false)
 local yellConvulsiveShadows				= mod:NewYell(156214, nil, false)
-local specWarnDarkHunt					= mod:NewSpecialWarningYou(158315, nil, nil, nil, nil, nil, 2)
+local specWarnDarkHunt					= mod:NewSpecialWarningYou(158315, nil, nil, nil, nil, 2)
 local specWarnDarkHuntOther				= mod:NewSpecialWarningTarget(158315, false)--Healer may want this, or raid leader
 ----Marak the Blooded
 local specWarnBloodRitual				= mod:NewSpecialWarningYou(158078)
 local specWarnBloodRitualOther			= mod:NewSpecialWarningTargetCount(158078, "Tank")
 local yellBloodRitual					= mod:NewYell(158078)
-local specWarnBloodsoakedHeartseeker	= mod:NewSpecialWarningRun(158010, nil, nil, nil, 4, nil, 2)
+local specWarnBloodsoakedHeartseeker	= mod:NewSpecialWarningRun(158010, nil, nil, nil, 4, 2)
 local yellHeartseeker					= mod:NewYell(158010, nil, false)
 
 --Ship
@@ -258,7 +258,7 @@ function mod:ConvulsiveTarget(targetname, uId)
 end
 
 function mod:BladeDashTarget(targetname, uId)
-	if self:IsMythic() then
+	if self:IsMythic() and self:AntiSpam(5, 3) then
 		if targetname == UnitName("player") then
 			if UnitDebuff("player", GetSpellInfo(170395)) and self.Options.filterBladeDash3 then return end
 			specWarnBladeDash:Show()
@@ -366,7 +366,7 @@ function mod:SPELL_CAST_SUCCESS(args)
 		noFilter = true
 	end
 	if spellId == 157854 then
-		self:Schedule(14, boatReturnWarning)
+		self:Schedule(12.5, boatReturnWarning)
 		if noFilter or not isPlayerOnBoat() then
 			warnBombardmentAlpha:Show(self.vb.alphaOmega)
 			timerBombardmentAlphaCD:Start()
@@ -588,6 +588,23 @@ function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg, npc)
 				timerDeployTurretCD:Cancel()
 			end)
 			voiceShip:Play("1695uktar")
+		end
+	end
+end
+
+--"<9.87 23:50:29> [CHAT_MSG_MONSTER_YELL] CHAT_MSG_MONSTER_YELL#Too slow!#Enforcer Sorka###Etsi
+--"<10.92 23:50:30> [DBM_Announce] DBM_Announce#Blade Dash on |r|cff9382c9Etsi|r|cffffb200 near you", -- [691]
+function mod:CHAT_MSG_MONSTER_YELL(msg, npc, _, _, targetname)
+	if msg:find(L.EarlyBladeDash) then
+		if self:IsMythic() and self:AntiSpam(5, 3) then
+			if targetname == UnitName("player") then
+				if UnitDebuff("player", GetSpellInfo(170395)) and self.Options.filterBladeDash3 then return end
+				specWarnBladeDash:Show()
+			elseif self:CheckNearby(8, targetname) then
+				specWarnBladeDashOther:Show(targetname)
+			else
+				warnBladeDash:Show(self.vb.bladeDash, targetname)
+			end
 		end
 	end
 end

@@ -51,3 +51,9 @@ VER 3 0100000000000055 "Rapid Fire" "INV_MISC_QUESTIONMARK"
 /use 14
 /castsequence reset=combat/10 Rapid Fire, null
 END
+VER 3 0100000000000058 "Trap" "INV_MISC_QUESTIONMARK"
+#showtooltip Explosive trap
+/cast [nomod]!Trap Launcher
+/cancelaura [mod]Trap Launcher
+/cast !Explosive trap
+END

@@ -1,7 +1,6 @@
 local _, T = ...
-if T.Mark ~= 40 then return end
+if T.Mark ~= 50 then return end
 local L, EV, G, api = T.L, T.Evie, T.Garrison, {}
-
 
 local MISSION_PAGE_FRAME = GarrisonMissionFrame.MissionTab.MissionPage
 local RefreshActiveMissionsView, activeMissionsHandle
@@ -46,7 +45,7 @@ local function OpenToMission(mi, f1, f2, f3, isResume)
 	
 	local mp, _, s1, s2, s3, s4, s5, s6 = GarrisonMissionFrame.MissionTab.MissionPage
 	if not (f1 or f2 or f3) then
-		f1, f2, f3 = MasterPlan:GetMissionParty(mi.missionID)
+		f1, f2, f3 = G.GetMissionParty(mi.missionID)
 		if not (f1 or f2 or f3) then
 			f1, f2, f3 = api.roamingParty:GetFollowers()
 		else
@@ -431,6 +430,14 @@ local activeUI = CreateFrame("Frame", nil, missionList) do
 		b:SetPoint("BOTTOM", -64, 5)
 		b:SetText(L"Complete All")
 		b:RegisterForClicks("LeftButtonUp", "RightButtonUp")
+		local function DissmissHelp(self)
+			if self.ShowingHelp then
+				HelpPlate_TooltipHide()
+				self.ShowingHelp = nil
+			end
+		end
+		b:SetScript("OnLeave", DissmissHelp)
+		b:SetScript("OnHide", DissmissHelp)
 	end
 	activeUI.orders = T.CreateLazyItemButton(activeUI, 122514) do
 		activeUI.orders:SetSize(28, 28)
@@ -522,7 +529,7 @@ local activeUI = CreateFrame("Frame", nil, missionList) do
 			b:SetScript("OnClick", function(self)
 				if hoverFocus:CheckToggle(self) then
 					hoverFocus:Open(self, popup, nil, hidePopup)
-					popup:SetPoint("TOPLEFT", self, "BOTTOMLEFT", -60, -2)
+					popup:SetPoint("TOPLEFT", self, "BOTTOMLEFT", -34, -2)
 					popup:Show()
 				end
 			end)
@@ -909,9 +916,6 @@ local availUI = CreateFrame("Frame", nil, missionList) do
 				if i == 1 then t:SetVertexColor(3/4, 3/4, 3/4) end
 			end
 		
-			local function isChecked(self)
-				return T.config.availableMissionSort == self.arg1
-			end
 			local menu, sortOrders = {
 				{text=L"Mission order:", isTitle=true, notCheckable=true},
 				{text=L"Reward type", arg1="reward"},
@@ -921,21 +925,16 @@ local availUI = CreateFrame("Frame", nil, missionList) do
 				{text=L"Mission level", arg1="level"},
 				{text=L"Mission duration", arg1="duration"},
 				{text=L"Mission expiration", arg1="expire"},
-				{text=L"Mitigated threats", arg1="threats2"},
 			}, {}
+			local function isChecked(self)
+				return T.config.availableMissionSort == self.arg1
+			end
 			for i=2,#menu do
 				local m = menu[i]
 				sortOrders[m.arg1], m.checked, m.func = m.text, isChecked, MasterPlan.SetMissionOrder
 			end
 			
-			local mt = menu[#menu]
 			sortIndicator:SetScript("OnClick", function(self)
-				local isMT, alt = menu[#menu] == mt, IsAltKeyDown()
-				if isMT and not alt then
-					menu[#menu] = nil
-				elseif alt and not isMT then
-					menu[#menu+1] = mt
-				end
 				easyDrop:Toggle(self, menu, "TOPLEFT", self, "BOTTOMLEFT", -24, -3)
 			end)
 			sortIndicator:SetScript("OnEnter", function(self)
@@ -1137,7 +1136,7 @@ local availUI = CreateFrame("Frame", nil, missionList) do
 				table.sort(f2, cmp)
 				for i=1,#f2 do
 					local fi, fid = f2[i], f2[i].followerID
-					if fi.isCollected and (fi.status or "") == "" and (fid == cur or (fid ~= a1 and fid ~= a2 and fid ~= a3)) and not T.config.ignore[fid] and not MasterPlan:GetFollowerTentativeMission(fid) then
+					if fi.isCollected and (fi.status or "") == "" and (fid == cur or (fid ~= a1 and fid ~= a2 and fid ~= a3)) and not T.config.ignore[fid] and not G.GetFollowerTentativeMission(fid) then
 						mn[#mn+1] = {text=G.GetFollowerLevelDescription(fi.followerID, nil), func=Roamer_SetFollower, arg1=slot, arg2=fi.followerID, checked=cur==fi.followerID, tooltipOnButton=RoamerMenu_OnMouse}
 					end
 				end
@@ -1175,13 +1174,13 @@ local availUI = CreateFrame("Frame", nil, missionList) do
 		b:Hide()
 		b:SetScript("OnLeave", dismissTooltip)
 		b:SetScript("OnEnter", function(self)
-			if G.GetNumPendingMissionStarts() > 0 or not MasterPlan:HasFullTentativeParties() then return end
+			if G.GetNumPendingMissionStarts() > 0 or not G.HasReadyTentativeParties() then return end
 			GameTooltip:SetOwner(self, "ANCHOR_BOTTOM")
 			GameTooltip:SetText(L"Start Missions")
 			if C_Garrison.IsAboveFollowerSoftCap() then
 				GameTooltip:AddLine(GARRISON_MAX_FOLLOWERS_MISSION_TOOLTIP, 1, 0, 0, 1)
 			else
-				for mid, f1, f2, f3 in MasterPlan:GetFullTentativeParties() do
+				for mid, f1, f2, f3 in G.GetReadyTentativeParties() do
 					local p1,p2,p3 = f1,f2,f3
 					while p1 do
 						p1,p2,p3 = p2, p3, C_Garrison.AddFollowerToMission(mid, p1) and nil
@@ -1201,11 +1200,11 @@ local availUI = CreateFrame("Frame", nil, missionList) do
 			if G.GetNumPendingMissionStarts() > 0 then
 				G.AbortMissionQueue()
 				RefreshAvailMissionsView()
-			elseif button == "RightButton" or not MasterPlan:HasFullTentativeParties() then
-				MasterPlan:DissolveAllMissions()
+			elseif button == "RightButton" or not G.HasReadyTentativeParties() then
+				G.DissolveAllTentativeParties()
 				PlaySound("UChatScrollButton")
 			elseif not C_Garrison.IsAboveFollowerSoftCap() then
-				for mid, p1, p2, p3 in MasterPlan:GetFullTentativeParties() do
+				for mid, p1, p2, p3 in G.GetReadyTentativeParties() do
 					G.StartMissionQueue(mid, p1, p2, p3)
 				end
 				PlaySound("UI_Garrison_CommandTable_MissionStart")
@@ -1222,7 +1221,7 @@ local availUI = CreateFrame("Frame", nil, missionList) do
 					local text
 					if np > 0 then
 						text = L("%d |4party:parties; remaining..."):format(np)
-					elseif MasterPlan:HasFullTentativeParties() then
+					elseif G.HasReadyTentativeParties() then
 						text = L"Send Tentative Parties"
 					else
 						text = L"Clear Tentative Parties"
@@ -1247,7 +1246,7 @@ local availUI = CreateFrame("Frame", nil, missionList) do
 		end
 		function EV:MP_MISSION_REJECT(mid)
 			syncLater()
-			MasterPlan:GetMissionParty(mid, true)
+			G.GetMissionParty(mid, true)
 			PlaySound("igQuestFailed")
 		end
 	end
@@ -1366,7 +1365,7 @@ do -- tabs
 	local activeTab = CreateFrame("Button", "GarrisonMissionFrameTab3", GarrisonMissionFrame, "GarrisonMissionFrameTabTemplate", 1)
 	local availTab, followerTab = GarrisonMissionFrameTab1, GarrisonMissionFrameTab2
 	local interestTab = CreateFrame("Button", "GarrisonMissionFrameTab4", GarrisonMissionFrame, "GarrisonMissionFrameTabTemplate", 1)
-	missionList.activeTab, missionList.availTab, missionList.interestTab = activeTab, availTab, interestTab
+	missionList.activeTab, missionList.availTab, missionList.interestTab, missionList.followerTab = activeTab, availTab, interestTab, followerTab
 	activeTab:SetPoint("LEFT", availTab, "RIGHT", -5, 0)
 	interestTab:SetPoint("LEFT", activeTab, "RIGHT", -5, 0)
 	activeTab.Pulse = activeTab:CreateAnimationGroup() do
@@ -1543,6 +1542,14 @@ local GetActiveMissions, StartCompleteAll, CompleteMission, ClearCompletionState
 			activeUI.completionState = state == "DONE" and "DONE" or nil
 			if next(rew) or next(fol) then
 				activeUI:SetCompletionRewards(rew, fol, #stack)
+			elseif state == "DONE" then
+				activeUI.CompleteAll.ShowingHelp = true
+				HelpPlate_TooltipHide()
+				HelpPlateTooltip.ArrowDOWN:Show()
+				HelpPlateTooltip.ArrowGlowDOWN:Show()
+				HelpPlateTooltip:SetPoint("TOP", activeUI.CompleteAll, "BOTTOM", 0, -14)
+				HelpPlateTooltip.Text:SetText((L"No missions could be completed without exceeding currency caps, violating the %s setting."):format("|cffffd100" .. L"Require Currency Award" .. "|r") .. "\n\n" .. L"To temporarily ignore wasted currency and complete the skipped missions, right-click this button, or left-click individual missions below.")
+				HelpPlateTooltip:Show()
 			end
 		end
 		if (substate == "FAIL" or substate == "COMPLETE") and mid then
@@ -2316,7 +2323,7 @@ do -- availMissionsHandle
 		local mi = core:GetRowData(availMissionsHandle, self:GetParent())
 		local g = mi and mi.groups and mi.groups[self:GetID()]
 		if not g then
-			local ug, ss = mi.upgroup
+			local ug, ss = mi and mi.upgroup
 			if ug then
 				for i=1,mi.numFollowers do
 					ss = (ss and ss .. "/" or "") .. C_Garrison.GetFollowerName(ug[i])
@@ -2325,14 +2332,13 @@ do -- availMissionsHandle
 				sb:SetText(ss)
 				sb.clearText = ss
 				local ifid = G.GetUnderLevelledFollower(ug, mi) or ug[1]
-				if ifid then
-					GarrisonMissionFrame.selectedFollower = ifid
-					GarrisonFollowerPage_ShowFollower(GarrisonMissionFrame.FollowerTab, ifid)
-				end
 				GarrisonMissionFrameTab2:Click()
+				GarrisonMissionFrame.selectedFollower = ifid
+				GarrisonFollowerPage_ShowFollower(GarrisonMissionFrame.FollowerTab, ifid)
+				EV("MP_FORCE_FOLLOWER_TAB", ifid)
 			end
-		elseif (button == "RightButton" or IsAltKeyDown()) and (select(2,GetCurrencyInfo(824)) or 0) >= (mi.cost or 0) then
-			MasterPlan:SaveMissionParty(mi.missionID, g[5], g[6], g[7])
+		elseif button == "RightButton" and (select(2,GetCurrencyInfo(824)) or 0) >= (mi.cost or 0) then
+			G.SaveMissionParty(mi.missionID, g[5], g[6], g[7])
 			api.roamingParty:DropFollowers(g[5], g[6], g[7])
 		else
 			OpenToMission(mi, g[5], g[6], g[7])
@@ -2447,13 +2453,13 @@ do -- availMissionsHandle
 			if not numFollowers then
 				local n, _, r = 0, GetCurrencyInfo(GARRISON_CURRENCY)
 				for k,v in pairs(G.GetFollowerInfo()) do
-					if v.isCombat and (v.status == GARRISON_FOLLOWER_IN_PARTY or v.status == nil) and not T.config.ignore[v.followerID] and not T.tentativeState[v.followerID] then
+					if v.isCombat and (v.status == GARRISON_FOLLOWER_IN_PARTY or v.status == nil) and not T.config.ignore[v.followerID] and not G.GetFollowerTentativeMission(v.followerID) then
 						n = n + 1
 					end
 				end
 				for i=1,#missions do
 					local mi = missions[i]
-					if mi.cost and MasterPlan:HasTentativeParty(mi.missionID) == mi.numFollowers then
+					if mi.cost and G.HasTentativeParty(mi.missionID) == mi.numFollowers then
 						r = r - mi.cost
 					end
 				end
@@ -2489,7 +2495,7 @@ do -- availMissionsHandle
 		end
 		self.loc:SetShown(not not d.locPrefix)
 		local fol = "" do
-			local nf = MasterPlan:HasTentativeParty(d.missionID)
+			local nf = G.HasTentativeParty(d.missionID)
 			for i=1, d.numFollowers do
 				fol = fol .. "|TInterface\\FriendsFrame\\UI-Toast-FriendOnlineIcon:11:11:3:0:32:32:8:24:8:24:" ..
 				      (nf < i and "214:170:115|t" or "255:180:0|t")
@@ -2604,7 +2610,6 @@ do -- availMissionsHandle
 	end
 	local GetAvailableMissions do
 		local roamingParty = api.roamingParty
-		local used, cinfo, finfo = {}
 		local function cmp(a,b)
 			if a.reqCheckFailed ~= b.reqCheckFailed then
 				return b.reqCheckFailed
@@ -2627,35 +2632,11 @@ do -- availMissionsHandle
 			end
 			return ac > bc
 		end
-		local function computeThreat(a)
-			local ret, threats, lvl = 0, T.Garrison.GetMissionThreats(a.missionID), G.GetFMLevel(a)
-			for i=1,#threats do
-				local c, quality, bk = cinfo[threats[i]], 0
-				for j=1,c and #c or 0 do
-					local fi = finfo[c[j]]
-					local ld, mt = G.GetLevelEfficiency(G.GetFMLevel(fi), lvl), fi.missionEndTime and 0 or 2
-					local uk = fi.isCombat and (threats[i] .. "#" .. fi.followerID)
-					if not fi.isCombat or used[uk] then
-					elseif ld == 1 and quality < (2+mt) then
-						quality, bk = 2+mt, uk
-						if mt == 2 then break end
-					elseif ld == 0.5 and quality < (1+mt) then
-						quality, bk = 1+mt, uk
-					end
-				end
-				ret, used[bk or 1] = ret + (quality-4)*100, 1
-			end
-			wipe(used)
-			return ret < 0 and -1 or 0
-		end
 		local fields, eg, srv = {threats=1}, {0, [3]=0,[4]=0, [9]=0, [11]=0}, {minor=1, gold=2, [true]=3, resource=4}
 		local function sortMissions(missions, nf, nr)
 			local order, horizon = T.config.availableMissionSort, T.config.timeHorizon
 			local field = fields[order] or 1
 			local groupCache = G.GetSuggestedMissionGroups(missions, order, roamingParty:GetFollowers())
-			if order == "threats2" then
-				cinfo, finfo = G.GetCounterInfo(), G.GetFollowerInfo()
-			end
 			local checkReq = (nf < 3 or nr < 100) and T.config.availableMissionSort ~= "expire"
 			local p1, p2, p3 = api.roamingParty:GetFollowers()
 			p1 = not (p2 and p3) and p1
@@ -2683,15 +2664,13 @@ do -- availMissionsHandle
 					mi.ord = l == 100 and i > 600 and i or l
 				elseif order == "reward" then
 					mi.ord, mi.ord1 = mi.ord1, (g[11] or 0)*1e8 + ((g[5] and G.GetMissionGroupXP(g, mi) or 0)) * 100 + (g and g[1] or 0)
-				elseif order == "threats2" then
-					mi.ord = g[1] == 100 and computeThreat(mi) or -1
 				elseif g[5] and (order == "xp" or order == "xptime") then
 					local xp = p1 and (g[11] or 0) or G.GetMissionGroupXP(g, mi) or 0
 					mi.ord = order == "xptime" and xp/max(g[4], horizon) or xp
 				else
 					mi.ord = g[5] and g[field] or -math.huge
 				end
-				local tc = MasterPlan:HasTentativeParty(mid)
+				local tc = G.HasTentativeParty(mid)
 				if tc == mi.numFollowers then
 					mi.ord0, mi.reqCheckFailed = -1, false
 				else
@@ -2708,7 +2687,6 @@ do -- availMissionsHandle
 			if job then
 				availUI.loader:Show()
 			end
-			cinfo, finfo = nil
 			GarrisonMissionFrame.MissionTab.MissionList.EmptyListString:SetText(#missions > 0 and "" or GARRISON_EMPTY_MISSION_LIST)
 			return missions
 		end
@@ -2944,13 +2922,13 @@ do -- interestMissionsHandle
 		local c, t = {}, unusedFollowers:CreateFontString(nil, "ARTWORK", "GameFontNormal")
 		t:SetText(L"Redundant followers:")
 		t:SetPoint("BOTTOM", unusedFollowers, "TOP", 0, 4)
+		unusedFollowers.ufollowers, unusedFollowers.label = c, t
 		for i=1,21 do
-			local t = CreateFollowerPortrait(unusedFollowers, 34, i)
+			t = CreateFollowerPortrait(unusedFollowers, 34, i)
 			t:SetPoint("BOTTOMLEFT", 36*i-35, 4)
 			t:SetScript("OnClick", InterestFollower_OnClick)
 			c[i], t.showAbilityDescriptions = t, true
 		end
-		unusedFollowers.ufollowers = c
 	end
 	local function SetUnusedFollowers(self, d)
 		self.veil:Hide()
@@ -3039,10 +3017,11 @@ do -- interestMissionsHandle
 			end
 		end
 		local nf, blvl, mentor, finfo = best and s[2] or 0, best and best[6], best and best.mentorLevel or 0, G.GetFollowerInfo()
+		local muf = best and best.used or 0
 		for i=1,nf do
 			local mlvl = blvl and blvl % 1e3 or d[2]
 			blvl = blvl and (blvl - mlvl) / 1e3
-			local fb, fi = self.followers[i], finfo[best[i]]
+			local fb, fi, usedGlow = self.followers[i], finfo[best[i]]
 			fb.followerID, fb.targetLevel = best[i], (mentor < mlvl or fi.garrFollowerID == T.MENTOR_FOLLOWER) and mlvl or 0
 			fb.portrait:SetToFileData(fi and fi.portraitIconID or 0)
 			fb.glow:Hide()
@@ -3052,8 +3031,13 @@ do -- interestMissionsHandle
 				fb.portrait:SetVertexColor(1, 0.6, 0.6)
 				fb.glow:Show()
 				fb.glow:SetVertexColor(1,0,0)
+				usedGlow = true
 			else
 				fb.portrait:SetVertexColor(1,1,1)
+			end
+			if not usedGlow and muf % 2^i >= 2^(i-1) then
+				fb.glow:Show()
+				fb.glow:SetVertexColor(1, 0.8, 0)
 			end
 			fb:Show()
 		end
@@ -3105,9 +3089,9 @@ do -- interestMissionsHandle
 				return
 			end
 			
-			local uf, ua, hasUE = {}, unusedEntry.unused, missions[1] == unusedEntry
-			wipe(ua)
-			for k, v in pairs(G.GetFollowerInfo()) do
+			local finfo = G.GetFollowerInfo()
+			local uf, ua, hasUE, hasInactive = {}, unusedEntry.unused, missions[1] == unusedEntry
+			for k, v in pairs(finfo) do
 				if v.status ~= GARRISON_FOLLOWER_INACTIVE and v.status ~= GARRISON_FOLLOWER_WORKING and not T.config.ignore[k] then
 					uf[k] = true
 				end
@@ -3123,12 +3107,18 @@ do -- interestMissionsHandle
 						if muf % (2^j) >= 2^(j-1) then
 							uf[b[j] or 0] = nil
 						end
+						hasInactive = hasInactive or (finfo[b[j]].status == GARRISON_FOLLOWER_INACTIVE)
 					end
 				end
 			end
-			for k in pairs(uf) do
-				ua[#ua + 1] = k
+			
+			wipe(ua)
+			if not hasInactive then
+				for k in pairs(uf) do
+					ua[#ua + 1] = k
+				end
 			end
+			
 			if #ua > 0 then
 				local fi = G.GetFollowerInfo()
 				table.sort(ua, function(a,b)
@@ -3302,5 +3292,6 @@ function api:SetMissionsUI(tab)
 			GarrisonMissionFrame_HideCompleteMissions(true)
 		end
 	end
+	EV("MP_SHOW_MISSION_TAB", tab)
 end
 T.MissionsUI = api

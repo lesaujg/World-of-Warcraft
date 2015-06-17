@@ -116,7 +116,7 @@ local RK_ParseMacro, RK_QuantizeMacro do -- +RingKeeper:SetMountPreference(groun
 			end
 			return value
 		end)
-		local spells, nSpec = {}
+		local spells = {}
 		quantizeLine = genLineParser(function(value)
 			local mark, name = value:match("^%s*(!?)(.-)%s*$")
 			local sid = spells[name:lower()]
@@ -133,7 +133,7 @@ local RK_ParseMacro, RK_QuantizeMacro do -- +RingKeeper:SetMountPreference(groun
 					spells[sname:lower()] = sid
 				end
 			end
-			for j=1,nSpec or GetNumSpecializations() do
+			for j=1,GetNumSpecializations() do
 				for i=1,GetNumTalents() do
 					local name, _, id = GetTalentSpellForSpecialization(i, j)
 					if id and type(name) == "string" then

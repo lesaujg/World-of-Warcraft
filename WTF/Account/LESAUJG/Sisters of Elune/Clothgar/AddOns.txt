@@ -27,7 +27,7 @@ Tukui_Config: enabled
 ArkInventory: disabled
 ArkInventoryConfig: disabled
 ArkInventoryRules: disabled
-Postal: enabled
+Postal: disabled
 Auc-Advanced: disabled
 Auc-ScanData: disabled
 Auc-Filter-Basic: disabled
@@ -132,3 +132,5 @@ WeakAurasOptions: disabled
 WeakAurasTutorials: disabled
 TradeSkillMaster_CompetitorTracker: disabled
 TomTom: disabled
+Shrapnel: disabled
+Ovale: disabled

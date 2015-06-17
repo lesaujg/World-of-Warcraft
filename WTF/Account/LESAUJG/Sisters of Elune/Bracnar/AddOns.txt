@@ -36,7 +36,7 @@ Auc-Stat-Simple: disabled
 Auc-Stat-StdDev: disabled
 Auc-Util-FixAH: disabled
 BeanCounter: disabled
-Postal: enabled
+Postal: disabled
 Skada: enabled
 Stubby: enabled
 !Swatter: disabled
@@ -126,9 +126,11 @@ DBM-TerraceofEndlessSpring: enabled
 DBM-TheEye: enabled
 DBM-ThroneFourWinds: enabled
 DBM-ThroneofThunder: enabled
-WeakAuras: enabled
+WeakAuras: disabled
 WeakAurasModelPaths: enabled
 WeakAurasOptions: enabled
 WeakAurasTutorials: enabled
 TradeSkillMaster_CompetitorTracker: disabled
 TomTom: disabled
+Shrapnel: enabled
+Ovale: disabled

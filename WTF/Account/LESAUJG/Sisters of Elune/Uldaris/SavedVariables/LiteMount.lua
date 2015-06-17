@@ -5,6 +5,10 @@ LM_OptionsDB = {
 	["excludedspells"] = {
 	},
 	["flagoverrides"] = {
+		[783] = {
+			11, -- [1]
+			0, -- [2]
+		},
 	},
 	["macro"] = {
 	},

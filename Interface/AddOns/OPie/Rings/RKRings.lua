@@ -1,4 +1,5 @@
-local RingKeeper = OneRingLib and OneRingLib.ext and OneRingLib.ext.RingKeeper
+local _, T = ...
+local L, RingKeeper = T.L, OneRingLib and OneRingLib.ext and OneRingLib.ext.RingKeeper
 if not (RingKeeper and RingKeeper.SetRing) then return end
 
 RingKeeper:SetRing("DruidShift", {
@@ -6,7 +7,7 @@ RingKeeper:SetRing("DruidShift", {
 	{c="c74cff", id=24858, _u="k"}, -- Moonkin
 	{c="fff04d", id=768, _u="c"}, -- Cat
 	{c="ff0000", id=5487, _u="b"}, -- Bear
-	name="Shapeshifts", hotkey="PRIMARY", limit="DRUID", _u="OPCDS"
+	name=L"Shapeshifts", hotkey="PRIMARY", limit="DRUID", _u="OPCDS"
 });
 RingKeeper:SetRing("DruidUtility", {
 	{id="/cast [combat][mod] {{spell:20484}}; {{spell:50769}}", _u="r"}, -- rebirth/revive
@@ -16,7 +17,7 @@ RingKeeper:SetRing("DruidUtility", {
 	{id="/cast {{spell:33891/102560}}", _u="i"}, -- Incarnation
 	{id="/cast [@target,harm][@none] {{spell:2908}}", _u="s"}, -- Soothe
 	{id="/cast [combat][mod] {{spell:88423/2782}}; {{spell:18960}}", _u="p"}, -- moonglade/cleanse
-	name="Utility", hotkey="[noform:bear/cat] SECONDARY; ALT-SECONDARY", limit="DRUID", _u="OPCDU"
+	name=L"Utility", hotkey="[noform:bear/cat] SECONDARY; ALT-SECONDARY", limit="DRUID", _u="OPCDU"
 });
 RingKeeper:SetRing("DruidFeral", {
 	{id=50334, _u="k"}, -- berserk
@@ -28,7 +29,7 @@ RingKeeper:SetRing("DruidFeral", {
 	{id=102401, _u="c"}, -- feral charge
 	{id="/cast {{spell:102543/102558}}", _u="n"}, -- Incarnation
 	{id="/cast [nomod,@player][mod,@none] {{spell:5185}}", show="[spec:102/104/105] hide;", _u="h"}, -- HT
-	name="Feral", hotkey="[form:bear/cat] SECONDARY; ALT-SECONDARY", limit="DRUID", _u="OPCDF"
+	name=L"Feral", hotkey="[form:bear/cat] SECONDARY; ALT-SECONDARY", limit="DRUID", _u="OPCDF"
 });
 
 RingKeeper:SetRing("HunterAspects", {
@@ -37,7 +38,7 @@ RingKeeper:SetRing("HunterAspects", {
 	{id=781, _u="d"}, -- disengage
 	{id=5384, _u="g"}, -- feign
 	{id="/cast [@pet,noexists,nomod] {{spell:883}}; [@pet,dead][@pet,noexists] {{spell:982}}; [@pet,help,nomod] {{spell:136}}; [@pet] {{spell:2641}}", show="[known:883]", _u="e"},
-	name="Aspects", hotkey="PRIMARY", limit="HUNTER", _u="OPCHA"
+	name=L"Aspects", hotkey="PRIMARY", limit="HUNTER", _u="OPCHA"
 });
 RingKeeper:SetRing("HunterTraps", {
 	{id=13813, _u="e"}, -- explosive
@@ -45,7 +46,7 @@ RingKeeper:SetRing("HunterTraps", {
 	{id=13809, _u="c"}, -- ice
 	{id=34600, _u="s"}, -- snake
 	{id=77769, _u="l"}, -- launcher
-	name="Traps", hotkey="ALT-SECONDARY", limit="HUNTER", _u="OPCHT"
+	name=L"Traps", hotkey="ALT-SECONDARY", limit="HUNTER", _u="OPCHT"
 });
 RingKeeper:SetRing("HunterShots", {
 	{id=20736, _u="d"}, -- distract
@@ -53,7 +54,7 @@ RingKeeper:SetRing("HunterShots", {
 	{id=53351, _u="k"}, -- kill
 	{id=2643, _u="m"}, -- multi
 	{id=1130, _u="a"}, -- mark
-	name="Shots", hotkey="SECONDARY", limit="HUNTER", _u="OPCHS"
+	name=L"Shots", hotkey="SECONDARY", limit="HUNTER", _u="OPCHS"
 });
 
 RingKeeper:SetRing("MageCombat", {
@@ -63,26 +64,25 @@ RingKeeper:SetRing("MageCombat", {
 	{id=55342, _u="m"}, -- mirror
 	{id=12051, _u="e"}, -- evo
 	{id=12042, _u="a"}, -- ap
-	name="Combat", limit="MAGE", hotkey="PRIMARY", _u="OPCMC"
+	{id=80353, _u="t"}, -- tw
+	name=L"Combat", limit="MAGE", hotkey="PRIMARY", _u="OPCMC"
 })
 RingKeeper:SetRing("MageTools", {
 	{id=1459, _u="i"}, -- int
 	{id=43987, _u="r"}, -- ritual
 	{id=42955, _u="f"}, -- food
 	{id=759, _u="g"}, -- gem
-	{"ring", "MageArmor", onlyNonEmpty=true, _u="a"},
-	name="Utility", limit="MAGE", hotkey="SECONDARY", _u="OPCMT"
+	{"ring", "MageTravel", onlyNonEmpty=true, _u="t"},
+	{id=130, _u="s"},
+	{id="/cast [help,raid,nomod][@player] {{spell:475}}", _u="c"},
+	name=L"Utility", limit="MAGE", hotkey="SECONDARY", _u="OPCMT"
 })
-RingKeeper:SetRing("MageArmor", {
-	{id=30482, _u="f"}, -- molten
-	{id=7302, _u="i"}, -- ice
-	{id=6117, mx="a"}, -- mage
-	name="Armor spells", limit="MAGE", internal=true, _u="OPCMA"
-});
 do -- MageTravel
 	local m = "/cast [mod] {{spell:%s}}; {{spell:%s}}";
 	RingKeeper:SetRing("MageTravel", {
+		{id=m:format("176246/176244", "176248/176242"), _u="h"}, -- Ashran
 		{id=m:format("132620/132626", "132621/132627"), _u="v"}, -- Vale of Eternal Blossoms
+		{id=m:format("88346/88345", "88344/88342"), _u="b"}, -- Tol Barad
 		{id=m:format(53142, 53140), _u="r"}, -- Dalaran
 		{id=m:format("35717/33691", 33690), _u="s"}, -- Shattrath
 		{id=m:format(10059, 3561), _u="w"}, -- Stormwind
@@ -96,8 +96,7 @@ do -- MageTravel
 		{id=m:format(32267, 32272), _u="l"}, -- Silvermoon
 		{id=m:format(32266, 32271), _u="x"}, -- Exodar
 		{id=m:format(120146, 120145), _u="a"}, -- Ancient Dalaran
-		{id=m:format("88346/88345", "88344/88342"), _u="b"}, -- Tol Barad
-	  name="Portals and Teleports", hotkey="ALT-G", limit="MAGE", _u="OPCMP"
+	  name=L"Portals and Teleports", hotkey="ALT-G", limit="MAGE", _u="OPCMP"
 	});
 end
 
@@ -105,19 +104,19 @@ RingKeeper:SetRing("PaladinAuras", {
 	{"ring", "PaladinSeal", onlyNonEmpty=true, _u="e"},
 	{"ring", "PaladinBlessing", onlyNonEmpty=true, _u="b"},
 	{id=25780, _u="f"}, -- righteous fury
-	name="Paladin Buffs", hotkey="PRIMARY", limit="PALADIN", _u="OPCPA"
+	name=L"Paladin Buffs", hotkey="PRIMARY", limit="PALADIN", _u="OPCPA"
 });
 RingKeeper:SetRing("PaladinSeal", {
 	{id=20154, _u="r"}, -- righteousness
 	{id=31801, _u="t"}, -- truth
 	{c="902020", id=20164, _u="j"}, -- justice
 	{id=20165, _u="i"}, -- insight
-	name="Seals", limit="PALADIN", internal=true, _u="OPCPS"
+	name=L"Seals", limit="PALADIN", internal=true, _u="OPCPS"
 });
 RingKeeper:SetRing("PaladinBlessing", {
 	{id=20217, _u="k"}, -- kings
 	{id=19740, _u="m"}, -- might
-	name="Blessings", limit="PALADIN", internal=true, _u="OPCPB"
+	name=L"Blessings", limit="PALADIN", internal=true, _u="OPCPB"
 });
 RingKeeper:SetRing("PaladinTools", {
 	{id=853, _u="h"}, -- hammer
@@ -129,7 +128,7 @@ RingKeeper:SetRing("PaladinTools", {
 	{id=1038, _u="s"}, -- hand of salvation
 	{id=62124, _u="r"}, -- hand of reckoning
 	{id=26573, _u="c"}, -- consecration
-	name="Utility", limit="PALADIN", hotkey="SECONDARY", _u="OPCPT"
+	name=L"Utility", limit="PALADIN", hotkey="SECONDARY", _u="OPCPT"
 });
 RingKeeper:SetRing("WarlockLTS", {
 	{"ring", "WarlockDemons", _u="d"},
@@ -139,7 +138,7 @@ RingKeeper:SetRing("WarlockLTS", {
 	{id=111771, _u="w"}, -- gateway
 	{"ring", "WarlockGuardians", _u="g"},
 	{id="/cast [flyable,nocombat,nomod] {{mount:air}}; [outdoors,nocombat,nomod:alt] {{mount:ground}}; {{spell:126}}", _u="e"}, -- mount/eye
-	name="Warlock General", hotkey="PRIMARY", limit="WARLOCK", _u="OPCLS"
+	name=L"Warlock General", hotkey="PRIMARY", limit="WARLOCK", _u="OPCLS"
 })
 RingKeeper:SetRing("WarlockCombat", {
 	{id="/cast [nomod] {{spell:48018}}; {{spell:48020}}", _u="t"}, -- demonic circle
@@ -148,7 +147,7 @@ RingKeeper:SetRing("WarlockCombat", {
 	{id="/cast {{spell:111400}}; {{spell:111397}}; {{spell:108482}}", _u="m"}, -- tier 4 talents [combat-ish]
 	{id=5782, _u="f"}, -- fear
 	{id=5484, _u="h"}, -- howl
-	name="Warlock Combat", hotkey="SECONDARY", limit="WARLOCK", _u="OPCLO"
+	name=L"Warlock Combat", hotkey="SECONDARY", limit="WARLOCK", _u="OPCLO"
 })
 RingKeeper:SetRing("WarlockDemons", {
 	{id=30146, _u="f"}, -- felguard
@@ -156,18 +155,18 @@ RingKeeper:SetRing("WarlockDemons", {
 	{id=688, _u="i"}, -- imp
 	{id=712, _u="s"}, -- succubus
 	{id=691, _u="h"}, -- felhunter
-	name="Demons", limit="WARLOCK", _u="OPCLD", internal=true
+	name=L"Demons", limit="WARLOCK", _u="OPCLD", internal=true
 });
 RingKeeper:SetRing("WarlockGuardians", {
 	{id=18540, _u="d"}, -- doomguard
 	{id=1122, _u="i"}, -- infernal
-	name="Guardians", limit="WARLOCK", _u="OPCLG", internal=true
+	name=L"Guardians", limit="WARLOCK", _u="OPCLG", internal=true
 })
 
 RingKeeper:SetRing("WarriorStances", {
 	{id=2457, _u="a"},
 	{id=71, _u="d"},
-	name="Stances", hotkey="PRIMARY", limit="WARRIOR", _u="OPCWS"
+	name=L"Stances", hotkey="PRIMARY", limit="WARRIOR", _u="OPCWS"
 });
 
 RingKeeper:SetRing("DeathKnightPresence", {
@@ -178,7 +177,7 @@ RingKeeper:SetRing("DeathKnightPresence", {
 	{c="a93ae8", id=50977, _u="g"}, -- gate
 	{c="e8c682", id="/cast [flyable,nomod][flying] {{spell:54729}}; {{spell:48778}}; [flyable,nomod][flying] {{mount:air}}; {{mount:ground}}", _u="m"},
 	{c="63eaff", id=3714, _u="o"}, -- path of frost
-	name="Presences", hotkey="PRIMARY", limit="DEATHKNIGHT", _u="OPCDP"
+	name=L"Presences", hotkey="PRIMARY", limit="DEATHKNIGHT", _u="OPCDP"
 });
 RingKeeper:SetRing("DKCombat", {
 	{c="fff4b2", id=57330, _u="h"}, -- horn
@@ -189,7 +188,7 @@ RingKeeper:SetRing("DKCombat", {
 	{c="b31500", id=55233, _u="b"}, -- blood
 	{c="aef1ff", id=51271, _u="p"}, -- pillar of frost
 	{c="d0d0d0", id=49039, _u="l"}, -- lich
-	name="Combat", hotkey="SECONDARY", limit="DEATHKNIGHT", _u="OPCDC"
+	name=L"Combat", hotkey="SECONDARY", limit="DEATHKNIGHT", _u="OPCDC"
 });
 
 RingKeeper:SetRing("CommonTrades", {
@@ -206,7 +205,7 @@ RingKeeper:SetRing("CommonTrades", {
 	{id="/cast [mod] {{spell:80451}}; {{spell:78670/89722}}", _u="r"},
 	{id=53428, _u="u"}, -- runeforging
 	{id=2656, _u="m"}, -- smelting
-	name="Trade Skills", hotkey="ALT-T", _u="OPCCT"
+	name=L"Trade Skills", hotkey="ALT-T", _u="OPCCT"
 });
 RingKeeper:SetRing("WorldMarkers", {
 	{"worldmark", 1, _u="b"},
@@ -218,7 +217,7 @@ RingKeeper:SetRing("WorldMarkers", {
 	{"worldmark", 7, _u="s"},
 	{"worldmark", 8, _u="w"},
 	{"worldmark", 0, c="ccd8e5", _u="c"}, -- clear
-	name="World Markers", hotkey="ALT-Y", _u="OPCWM"
+	name=L"World Markers", hotkey="ALT-Y", _u="OPCWM"
 });
 RingKeeper:SetRing("RaidSymbols", {
 	{"raidmark", 1, _u="y"}, -- yellow star
@@ -230,5 +229,5 @@ RingKeeper:SetRing("RaidSymbols", {
 	{"raidmark", 7, _u="r"}, -- red cross
 	{"raidmark", 8, _u="w"}, -- white skull
 	{"raidmark", 0, _u="c"}, -- clear all
-	name="Target Markers", hotkey="ALT-R", _u="OPCRS"
+	name=L"Target Markers", hotkey="ALT-R", _u="OPCRS"
 });

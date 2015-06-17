@@ -257,30 +257,30 @@ local _, _, _, completed2 = GetAchievementInfo(nxraspisokach10[i])
 local nxrawheresk=string.find(nxraName, "25")
 if nxrawheresk==nil then nxrawheresk=string.find(nxraName, "10") end
 if nxrawheresk then
-  local a=0
-  a=string.find(nxraName," %(")
-  if a==nil then
-    a=string.find(nxraName,"%(")
-  end
-  if a==nil then
-    a=string.find(nxraName,"%（")
-    if a==nil then
-      a=string.find(nxraName,"（")
-    end
-  end
-  local b=0
-  if a then
-    b=string.find(nxraName,"%(",a+3)
-    if b==nil then
-      b=string.find(nxraName,"%（",a+3)
-    end
-    if b and b~=0 then
-      a=b
-    end
-  end
-  if a and a~=0 then
-    nxraName=string.sub(nxraName, 1, a-1)
-  end
+	local a=0
+	a=string.find(nxraName," %(")
+	if a==nil then
+	a=string.find(nxraName,"%(")
+	end
+	if a==nil then
+	a=string.find(nxraName,"%（")
+	if a==nil then
+	  a=string.find(nxraName,"（")
+	end
+	end
+	local b=0
+	if a then
+	b=string.find(nxraName,"%(",a+3)
+	if b==nil then
+	  b=string.find(nxraName,"%（",a+3)
+	end
+	if b and b~=0 then
+	  a=b
+	end
+	end
+	if a and a~=0 then
+	nxraName=string.sub(nxraName, 1, a-1)
+	end
 --nxraName=string.sub(nxraName, 1, nxrawheresk-3)
 end
 

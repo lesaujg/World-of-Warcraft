@@ -77,30 +77,19 @@ do -- known:spell id
 	f:RegisterEvent("PLAYER_ENTERING_WORLD")
 end
 do -- spec:id/name
-	RegisterStateConditional("spec1", "spec", "[spec:1] 1; [spec:2] 2", false)
-	EV.RegisterEvent("PLAYER_LOGIN", function()
-		local cnd, ns, sp, sl, sbest = nil, GetNumSpecializations(), {}, {}, {}
-		local function pop(id, sid, lvl, ...)
-			if sid then
-				sp[sid], sl[sid] = sp[sid] == nil and id, lvl
-				return pop(id, ...)
-			end
+	local _, _, cid = UnitClass("player")
+	local function sync()
+		local idx, s = GetSpecialization()
+		if idx then
+			local id, name = GetSpecializationInfoForClassID(cid, idx)
+			s = idx .. "/" .. (id or idx) .. "/" .. (name or idx)
+		else
+			s = "-1/unspec"
 		end
-		for i=1,ns do
-			pop(i, GetSpecializationSpells(i))
-		end
-		for sid, i in pairs(sp) do
-			if i and (sbest[i] == nil or sl[sbest[i]] > sl[sid]) then
-				sbest[i] = sid
-			end
-		end
-		for i=1,ns do
-			local id, name = GetSpecializationInfo(i)
-			cnd = (cnd and (cnd .. "; ") or "") .. "[known:" .. sbest[i] .. "] " .. id .. "/" .. name
-		end
-		RegisterStateConditional("spec2", "spec", cnd .. "; -1/unspec", true)
-		return "remove"
-	end)
+		KR:SetStateConditionalValue("spec", s)
+	end
+	EV.PLAYER_SPECIALIZATION_CHANGED = sync
+	sync()
 end
 do -- form:token
 	if playerClass == "DRUID" then
@@ -114,7 +103,7 @@ do -- form:token
 			[GetSpellInfo(768)]="/cat",
 			[GetSpellInfo(171745) or 1]="/cat",
 			[GetSpellInfo(5487)]="/bear",
-		}
+		}, nil
 		local function sync()
 			local s = ""
 			for i=1,10 do
@@ -269,4 +258,15 @@ do -- glyph:name/glyph id
 	EV.RegisterEvent("GLYPH_UPDATED", sync)
 	EV.RegisterEvent("GLYPH_REMOVED", sync)
 	EV.RegisterEvent("GLYPH_ADDED", sync)
+end
+do -- level:floor
+	local ls = [=[--
+		local n = tonumber((...))
+		return n and n <= %d
+	]=]
+	local function sync()
+		KR:SetSecureExecConditional("level", ls:format(UnitLevel("player") or 0))
+	end
+	sync()
+	EV.RegisterEvent("PLAYER_LEVEL_UP", sync)
 end

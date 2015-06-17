@@ -1,6 +1,6 @@
-local api, MAJ, REV, _, T = {}, 1, 4, ...
+local api, MAJ, REV, _, T = {}, 1, 5, ...
 if T.ActionBook then return end
-local KR = assert(T.Kindred:compatible(1,3), "A compatible version of Kindred is required.")
+local KR = assert(T.Kindred:compatible(1,8), "A compatible version of Kindred is required.")
 
 local function assert(condition, err, ...)
 	return (not condition) and error(tostring(err):format(...), 3) or condition
@@ -38,6 +38,7 @@ local core, coreEnv = CreateFrame("FRAME", nil, nil, "SecureHandlerBaseTemplate"
 				owner:CallMethod("throw", "Rewire executor pool exhausted; spilling queue (n=" .. #execQueue .. ").")
 				wipe(execQueue)
 				overfull, mutedAbove = false, -1, mutedAbove >= 0 and owner:CallMethod("setMute", false)
+				KR:RunAttribute("SetButtonState", false)
 			end
 		]=])
 	end
@@ -47,7 +48,7 @@ local core, coreEnv = CreateFrame("FRAME", nil, nil, "SecureHandlerBaseTemplate"
 		execQueue, mutedAbove, QUEUE_LIMIT, overfull = newtable(), -1, 20000, false
 		idle, cache, numIdle, numActive, ns = newtable(), newtable(), 0, 0, 0
 		macros, commandInfo, commandHandler, commandAlias = newtable(), newtable(), newtable(), newtable()
-		MACRO_TOKEN, metaCommands = newtable(nil, nil, nil, "MACRO_TOKEN"), newtable()
+		MACRO_TOKEN, metaCommands, transferTokens = newtable(nil, nil, nil, "MACRO_TOKEN"), newtable(), newtable()
 		metaCommands.mute, metaCommands.unmute, metaCommands.mutenext = 1, 1, 1
 		for _, k in pairs(self:GetChildList(newtable())) do
 			idle[k], numIdle = 1, numIdle + 1
@@ -90,7 +91,7 @@ core:SetAttribute("RunSlashCmd", [=[-- Rewire:Internal_RunSlashCmd
 	end
 ]=])
 core:SetAttribute("RunMacro", [=[-- Rewire:RunMacro
-	local macrotext, m = ..., cache[...]
+	local m, macrotext, transferButtonState = cache[...], ...
 	if macrotext and not m then
 		m = newtable()
 		for line in macrotext:gmatch("%S[^\n\r]*") do
@@ -111,8 +112,17 @@ core:SetAttribute("RunMacro", [=[-- Rewire:RunMacro
 			overfull = true, owner:CallMethod("throw", "Rewire execution queue overfull; ignoring subsequent commands.")
 		else
 			local ni = #execQueue+1
-			for i=#m+1,1,-1 do
-				execQueue[ni], ni = m[i] or MACRO_TOKEN, ni + 1
+			if transferButtonState then
+				local nbs = SecureCmdOptionParse("[btn:1] 1; [btn:2] 2; [btn:3] 3; [btn:4] 4; [btn:5] 5")
+				if not (#execQueue == 0 and nbs == "1") then
+					local nt, os = #transferTokens, KR:RunAttribute("SetButtonState", nbs)
+					local tt = nt > 0 and transferTokens[nt] or newtable(nil, nil, nil, "TRANSFER_TOKEN")
+					execQueue[ni], ni, tt[3], transferTokens[nt] = tt, ni + 1, os
+				end
+			end
+			execQueue[ni], ni = MACRO_TOKEN, ni + 1
+			for i=#m, 1, -1 do
+				execQueue[ni], ni = m[i], ni + 1
 			end
 		end
 	end
@@ -137,14 +147,13 @@ core:SetAttribute("RunMacro", [=[-- Rewire:RunMacro
 			local skipChunks = nil
 			v, t = KR:RunAttribute("EvaluateCmdOptions", m[3], nil, skipChunks)
 			if v then
-				nextLine = m[2] .. " "
-				if t then
-					nextLine = nextLine .. "[@" .. t .. "] "
-				end
-				nextLine = nextLine .. v
+				nextLine = m[2] .. (t and " [@" .. t .. "] " or " ") .. v
 			else
-				nextLine = m[2] .. " [@player,noexists]"
+				nextLine = m[2] .. " [form:42]"
 			end
+		elseif m[4] == "TRANSFER_TOKEN" then
+			KR:RunAttribute("SetButtonState", m[3])
+			transferTokens[#transferTokens+1], nextLine = m
 		else
 			nextLine = m[1]
 		end

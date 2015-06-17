@@ -11,7 +11,10 @@ do -- spellbook
 			add(at, sid)
 		elseif st == "FLYOUT" then
 			for j=1,select(3,GetFlyoutInfo(sid)) do
-				addEntry(add, at, true, "SPELL", (GetFlyoutSlotInfo(sid, j)))
+				local asid, _osid, ik = GetFlyoutSlotInfo(sid, j)
+				if ik then
+					addEntry(add, at, true, "SPELL", asid)
+				end
 			end
 		end
 	end
@@ -180,7 +183,7 @@ if C_ToyBox then
 		local fc = tx.GetFilterCollected(), tx.SetFilterCollected(true)
 		local fu = tx.GetFilterUncollected(), tx.SetFilterUncollected(false)
 		for i=1,ns do
-			fs[i] = tx.IsSourceTypeFiltered(i), tx.SetFilterSourceType(i, true)
+			fs[i] = tx.IsSourceTypeFiltered(i), tx.SetFilterSourceType(i, false)
 		end
 		C_ToyBox.FilterToys()
 		for i=1,C_ToyBox.GetNumFilteredToys() do
@@ -192,7 +195,7 @@ if C_ToyBox then
 		tx.SetFilterCollected(fc)
 		tx.SetFilterUncollected(fu)
 		for i=1,ns do
-			tx.SetFilterSourceType(i, not fs[i])
+			tx.SetFilterSourceType(i, fs[i])
 		end
 		tx.SetFilterString(search or "")
 		C_ToyBox.FilterToys()

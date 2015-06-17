@@ -6,7 +6,7 @@ if GetLocale()=="deDE" or GetLocale()=="ruRU" or GetLocale()=="zhTW" or GetLocal
 end
 
 
-	raversion=6.101
+	raversion=6.102
 	local raverstiptext="alpha"
 	if string.len(raversion)==6 then
 		raverstiptext="beta"
@@ -496,16 +496,6 @@ raraerrordfdfdpsdonatefr2:Show()
 --t4:SetText(atext)
 t4:SetJustifyH("CENTER")
 t4:SetJustifyV("BOTTOM")
-
-
-
-
-
-
-
-
-
-
 
 
 

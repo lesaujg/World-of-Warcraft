@@ -30,7 +30,7 @@ Informant: disabled
 LiteMount: enabled
 MasterPlan: enabled
 OPie: enabled
-Postal: enabled
+Postal: disabled
 RaidAchieveFilter: disabled
 RaidAchievement: disabled
 RaidAchievement_CataHeroics: disabled
@@ -112,3 +112,5 @@ WeakAurasOptions: disabled
 WeakAurasTutorials: disabled
 TradeSkillMaster_CompetitorTracker: disabled
 TomTom: disabled
+Shrapnel: disabled
+Ovale: disabled

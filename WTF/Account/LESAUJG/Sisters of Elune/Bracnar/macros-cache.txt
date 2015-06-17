@@ -1,3 +1,7 @@
+VER 3 0100000000000059 "/tar Time" "INV_MISC_QUESTIONMARK"
+/tar Time
+/petattack
+END
 VER 3 0100000000000057 "_Chimaera Shot" "INV_MISC_QUESTIONMARK"
 /stopcasting
 /cast Chimaera Shot

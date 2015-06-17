@@ -1,4 +1,4 @@
-local api, MAJ, REV, execQueue, _, T = {}, 1, 7, {}, ...
+local api, MAJ, REV, execQueue, _, T = {}, 1, 8, {}, ...
 if T.ActionBook then return end
 
 local function assert(condition, err, ...)
@@ -17,6 +17,7 @@ core:Execute([==[-- Kindred.Init
 	pcache, nextDriverKey, sandbox, modStateMap = newtable(), 4200, self:GetFrameRef("sandbox"), newtable()
 	cndType, cndState, cndDrivers, cndAlias, unitAlias, stateDrivers = newtable(), newtable(), newtable(), newtable(), newtable(), newtable()
 	modStateMap.A, modStateMap.a, modStateMap.S, modStateMap.s, modStateMap.C, modStateMap.c = true, false, true, false, true, false
+	btnState = newtable()
 
 	OptionParse = [=[-- Kindred_OptionParse
 		local ret, conditional = newtable(), ...
@@ -142,7 +143,7 @@ core:Execute([==[-- Kindred.Init
 				if isTautology then break end
 			end
 		end
-		out = out or "[form:42,noform:42]"
+		out = out or "[form:42]"
 		return out
 	]=]
 	RefreshDrivers = [=[-- Kindred_RefreshDrivers
@@ -229,6 +230,22 @@ core:SetAttribute("SetAliasUnit", [=[-- Kindred:SetAliasUnit("alias", "unit" or 
 	end
 	unitAlias[alias] = unit
 	owner:Run(RefreshDrivers, "unit:" .. alias)
+]=])
+core:SetAttribute("SetButtonState", [=[-- Kindred:SetButtonState("buttonid" or false or nil)
+	local ostate, nstate = cndState.btn == btnState and btnState["*"], ...
+	if nstate == false then
+		cndType.btn, cndState.btn, btnState[ostate or 0] = nil
+	else
+		if ostate then
+			btnState[ostate] = nil
+		end
+		if nstate then
+			nstate = nstate .. ""
+			btnState[nstate] = true
+		end
+		cndType.btn, cndState.btn, btnState["*"] = "state", btnState, nstate
+	end
+	return ostate
 ]=])
 function core:throw(text)
 	error(text)
@@ -349,5 +366,6 @@ function api:compatible(cmaj, crev)
 end
 
 api:SetAliasConditional("modifier", "mod")
+api:SetAliasConditional("button", "btn")
 
 T.Kindred = {compatible=api.compatible}

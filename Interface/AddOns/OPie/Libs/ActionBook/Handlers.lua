@@ -63,18 +63,19 @@ do -- spell: spell ID + mount spell ID
 		end
 		local msid, sname, _, _, _, _, _, sid = spellMap[n], GetSpellInfo(n)
 		if not sname then return end
-		local inRange, usable, nomana = IsSpellInRange(n, target or "target") ~= 0, IsUsableSpell(n)
+		local inRange, usable, nomana, hasRange = IsSpellInRange(n, target or "target"), IsUsableSpell(n)
+		inRange, hasRange = inRange ~= false, inRange ~= nil
 		local usable, cooldown, cdLength, enabled = usable and inRange, GetSpellCooldown(n)
 		local cdLeft = (cooldown or 0) > 0 and (enabled ~= 0) and (cooldown + cdLength - time) or 0
 		local count, charges, maxCharges, chargeStart, chargeDuration = GetSpellCount(n), GetSpellCharges(n)
 		local state = ((IsSelectedSpellBookItem(n) or IsCurrentSpell(n) or n == currentShapeshift() or enabled == 0) and 1 or 0) +
-		              (IsSpellOverlayed(msid or 0) and 2 or 0) + (nomana and 8 or 0) + (inRange and 0 or 16) + (charges and charges > 0 and 64 or 0)
+		              (IsSpellOverlayed(msid or 0) and 2 or 0) + (nomana and 8 or 0) + (inRange and 0 or 16) + (charges and charges > 0 and 64 or 0) + (hasRange and 512 or 0)
 		usable = not not (usable and (cooldown == nil or cooldown == 0) or (enabled == 0))
 		if charges and maxCharges and charges < maxCharges and cdLeft == 0 then
 			cdLeft, cdLength = chargeStart-time + chargeDuration, chargeDuration
 		end
 		local sbslot = msid and msid ~= 161691 and FindSpellBookSlotBySpellID(msid)
-		return usable, state, GetSpellTexture(n), sname or n, count <= 1 and charges or count, cdLeft, cdLength, sbslot and SetSpellBookItem or spellMap[n] and GameTooltip.SetSpellByID, sbslot or sid or spellMap[n]
+		return usable, state, GetSpellTexture(n), sname or n, count <= 1 and charges or count, cdLeft, cdLength, sbslot and SetSpellBookItem or (msid or sid) and GameTooltip.SetSpellByID, sbslot or sid or msid
 	end
 	function spellFeedback(sname, target, spellId)
 		spellMap[sname] = spellId or spellMap[sname] or tonumber((GetSpellLink(sname) or ""):match("spell:(%d+)"))
@@ -101,6 +102,7 @@ do -- spell: spell ID + mount spell ID
 	end)
 	local gab = GetSpellInfo(161691)
 	actionMap[gab] = AB:CreateActionSlot(hint, gab, "conditional", "[outpost]", "attribute", "type","spell", "spell",gab)
+	spellMap[gab], spellMap[gab:lower()] = 161691, 161691
 	
 	EV.RegisterEvent("SPELLS_CHANGED", function() AB:NotifyObservers("spell") end)
 end
@@ -155,7 +157,8 @@ do -- item: items ID/inventory slot
 		elseif iid then
 			cdStart, cdLen = GetItemCooldown(iid)
 		end
-		local inRange = IsItemInRange(ident, target or "target") ~= 0
+		local inRange, hasRange = IsItemInRange(ident, target or "target")
+		inRange, hasRange = inRange ~= false, inRange ~= nil
 		if ibag and islot then
 			bag, slot = ibag, islot
 		elseif iid then
@@ -170,7 +173,7 @@ do -- item: items ID/inventory slot
 		end
 		local nCharge = GetItemCount(ident, false, true) or 0
 		local usable = nCharge > 0 and ((cdLen or 0) == 0 and ((GetItemSpell(ident) == nil) or (IsUsableItem(ident) and inRange)))
-		return not not usable, (IsCurrentItem(ident) and 1 or 0) + (inRange and 0 or 16) + (slot and IsEquippableItem(ident) and (bag and (purpose == "equip" and 128 or 0) or (slot and 256 or 0)) or 0),
+		return not not usable, (IsCurrentItem(ident) and 1 or 0) + (inRange and 0 or 16) + (slot and IsEquippableItem(ident) and (bag and (purpose == "equip" and 128 or 0) or (slot and 256 or 0)) or 0) + (hasRange and 512 or 0),
 			icon or GetItemIcon(ident), name or ident, nCharge,
 			(cdStart or 0) > 0 and (cdStart - GetTime() + cdLen) or 0, cdLen or 0, tip, tipArg
 	end
@@ -509,13 +512,14 @@ do -- extrabutton
 			return false, 0, "Interface/Icons/temp", "", 0, 0, 0
 		end
 		local at, aid = GetActionInfo(slot)
-		local inRange, usable, nomana = IsActionInRange(slot) ~= 0, IsUsableAction(slot)
+		local inRange, usable, nomana, hasRange = IsActionInRange(slot), IsUsableAction(slot)
+		inRange, hasRange = inRange ~= false, inRange ~= nil
 		local usable, cooldown, cdLength, enabled = usable and inRange, GetActionCooldown(slot)
 		local cdLeft = (cooldown or 0) > 0 and (enabled ~= 0) and (cooldown + cdLength - GetTime()) or 0
 		local count, charges, maxCharges, chargeStart, chargeDuration = GetActionCount(slot), GetActionCharges(slot)
 		local state = ((IsCurrentAction(slot) or enabled == 0) and 1 or 0) +
 		              (at == "spell" and IsSpellOverlayed(aid) and 2 or 0) +
-		              (nomana and 8 or 0) + (inRange and 0 or 16) + (charges and charges > 0 and 64 or 0)
+		              (nomana and 8 or 0) + (inRange and 0 or 16) + (charges and charges > 0 and 64 or 0) + (hasRange and 512 or 0)
 		if charges and maxCharges and charges < maxCharges and cdLeft == 0 then
 			cdLeft, cdLength = chargeStart-time + chargeDuration, chargeDuration
 		end
@@ -614,9 +618,7 @@ do -- petspell: spell ID
 		add(SLASH_PET_DEFENSIVE1, "defend")
 		add(SLASH_PET_ASSIST1, "assist")
 		add(SLASH_PET_PASSIVE1, "passive")
-		if SLASH_PET_DISMISS1 then
-			add(SLASH_PET_DISMISS1, "dismiss")
-		elseif class == "HUNTER" then
+		if class == "HUNTER" then
 			actionID["dismiss"] = AB:CreateActionSlot(hint, "dismiss", "conditional", cnd, "attribute", "type","macro", "macrotext",SLASH_CAST1.." "..GetSpellInfo(HUNTER_DISMISS_PET))
 		else
 			actionID["dismiss"] = AB:CreateActionSlot(hint, "dismiss", "conditional", cnd, "func", PetDismiss)
