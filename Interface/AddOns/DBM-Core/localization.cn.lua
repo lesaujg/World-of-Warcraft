@@ -2,7 +2,7 @@
 -- Diablohu(diablohudream@gmail.com)
 -- yleaf(yaroot@gmail.com)
 -- Mini Dragon(projecteurs@gmail.com)
--- Last update: Jun 2, 2015@13840
+-- Last update: Jun 10, 2015@13867
 
 if GetLocale() ~= "zhCN" then return end
 
@@ -22,7 +22,7 @@ DBM_CORE_LOAD_SKIN_COMBAT			= "DBM无法在战斗中更换皮肤。请先在非�
 DBM_CORE_BAD_LOAD					= "DBM检测到由于你在战斗过程中载入模块，有些计时器可能会错误。请在离开战斗后马上重载界面。"
 DBM_CORE_LOAD_MOD_VER_MISMATCH		= "%s 模块无法被载入。 DBM核心版本过旧。请升级DBM。"
 
-DBM_CORE_WHATS_NEW					= "最新更新：DBM现在支持给每一个特殊警告添加自定义注记，就像自定义警告声音/闪光一样，甚至可以带上自己的名字。"
+DBM_CORE_WHATS_NEW					= "最新更新：DBM的自定义注记功能变得更强大，现在可以分享给别人了。更多信息请访问我们的论坛。"
 
 DBM_CORE_DYNAMIC_DIFFICULTY_CLUMP	= "由于玩家数量不足，DBM 无法开启动态距离检测。"
 DBM_CORE_DYNAMIC_ADD_COUNT			= "由于玩家数量不足，DBM 无法开启倒计时。"
@@ -344,7 +344,7 @@ DBM_CORE_AUTO_TIMER_TEXTS.cdcount				= "%s冷却（%%d）"
 DBM_CORE_AUTO_TIMER_TEXTS.cdsource				= "%s冷却: >%%s<"
 DBM_CORE_AUTO_TIMER_TEXTS.cdspecial				= "特殊技能冷却"
 DBM_CORE_AUTO_TIMER_TEXTS.next 					= "下一次%s"
-DBM_CORE_AUTO_TIMER_TEXTS.nextcount				= "下一次%s（%%d）"
+DBM_CORE_AUTO_TIMER_TEXTS.nextcount				= "下一次%s（%%s）"
 DBM_CORE_AUTO_TIMER_TEXTS.nextsource			= "下一次%s: >%%s<"
 DBM_CORE_AUTO_TIMER_TEXTS.nextspecial			= "下一次特殊技能"
 DBM_CORE_AUTO_TIMER_TEXTS.achievement 			= "%s"

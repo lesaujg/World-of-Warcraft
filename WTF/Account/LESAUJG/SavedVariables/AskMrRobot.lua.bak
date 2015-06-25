@@ -1,0 +1,21 @@
+
+AskMrRobotDb2 = {
+	["char"] = {
+		["Bracnar - Sisters of Elune"] = {
+			["Logging"] = {
+				["LastZone"] = "SMV Alliance Garrison Level 3",
+				["LastDiff"] = 1,
+			},
+		},
+	},
+	["global"] = {
+		["Region"] = "US",
+	},
+	["profileKeys"] = {
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+	},
+	["profiles"] = {
+		["Bracnar - Sisters of Elune"] = {
+		},
+	},
+}

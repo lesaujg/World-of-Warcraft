@@ -8,7 +8,7 @@
 ------------------------------------------------------------
 
 
-PawnVersion = 1.916
+PawnVersion = 1.917
 
 -- Pawn requires this version of VgerCore:
 local PawnVgerCoreVersionRequired = 1.09
@@ -516,7 +516,9 @@ function PawnInitializeOptions()
 	if (not PawnCommon.LastVersion) or (PawnCommon.LastVersion < 1.9) then
 		-- When upgrading to 1.9, enable the "ignore sockets on low-level items" option.
 		PawnCommon.IgnoreGemsWhileLeveling = true
-		-- When upgrading to 1.9, invalidate all best item data, since WoW 6.0 is very different from previous versions.
+	end
+	if (not PawnCommon.LastVersion) or (PawnCommon.LastVersion < 1.917) then
+		-- When upgrading to 1.9.17, invalidate all best item data, since WoW 6.2 changed item link formats.
 		PawnInvalidateBestItems()
 	end
 	PawnCommon.LastVersion = PawnVersion
@@ -2324,7 +2326,7 @@ end
 -- (But if EvenIfNotEnchanted is true, the item link will be processed even if the item wasn't enchanted.)
 function PawnUnenchantItemLink(ItemLink, EvenIfNotEnchanted)
 	local TrimmedItemLink = PawnStripLeftOfItemLink(ItemLink)
-	local Pos, _, ItemID, EnchantID, GemID1, GemID2, GemID3, GemID4, SuffixID, MoreInfo, ViewAtLevel, UpgradeLevel, Difficulty, NumBonusIDs, BonusID1, BonusID2, BonusID3, BonusID4 = strfind(TrimmedItemLink, "^item:(%-?%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*)")
+	local Pos, _, ItemID, EnchantID, GemID1, GemID2, GemID3, GemID4, SuffixID, MoreInfo, ViewAtLevel, Unknown1, UpgradeLevel, Difficulty, NumBonusIDs, BonusID1, BonusID2, BonusID3, BonusID4 = strfind(TrimmedItemLink, "^item:(%-?%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*)")
 
 	if Pos then
 		if
@@ -2342,14 +2344,14 @@ function PawnUnenchantItemLink(ItemLink, EvenIfNotEnchanted)
 			-- REVIEW: Not sure what to do about Difficulty and the BonusIDs here...
 			if SuffixID == nil or SuffixID == "" then SuffixID = "0" end
 			if MoreInfo == nil or MoreInfo == "" then MoreInfo = "0" end
-			if ViewAtLevel == nil or ViewAtLevel == "" then ViewAtLevel = "0" end
+			if Unknown1 == nil or Unknown1 == "" then Unknown1 = "0" end
 			if UpgradeLevel == nil or UpgradeLevel == "" then UpgradeLevel = "0" end
 			if NumBonusIDs == nil or NumBonusIDs == "" then NumBonusIDs = "0" end
 			if BonusID1 == nil or BonusID1 == "" then BonusID1 = "0" end
 			if BonusID2 == nil or BonusID2 == "" then BonusID2 = "0" end
 			if BonusID3 == nil or BonusID3 == "" then BonusID3 = "0" end
 			if BonusID4 == nil or BonusID4 == "" then BonusID4 = "0" end
-			return "item:" .. ItemID .. ":0:0:0:0:0:" .. SuffixID .. ":" .. MoreInfo .. ":" .. 0 .. ":" .. UpgradeLevel .. ":" .. Difficulty .. ":" .. NumBonusIDs .. ":" .. BonusID1 .. ":" .. BonusID2 .. ":" .. BonusID3 .. ":" .. BonusID4
+			return "item:" .. ItemID .. ":0:0:0:0:0:" .. SuffixID .. ":" .. MoreInfo .. ":" .. 0 .. ":" .. Unknown1 .. ":" .. UpgradeLevel .. ":" .. Difficulty .. ":" .. NumBonusIDs .. ":" .. BonusID1 .. ":" .. BonusID2 .. ":" .. BonusID3 .. ":" .. BonusID4
 		else
 			-- This item is not enchanted.  Return nil.
 			return nil

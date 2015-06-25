@@ -106,7 +106,7 @@ DBM-ThroneofThunder: disabled
 DBM-Ulduar: disabled
 DBM-VoA: disabled
 DBM-WorldEvents: disabled
-WeakAuras: disabled
+WeakAuras: enabled
 WeakAurasModelPaths: disabled
 WeakAurasOptions: disabled
 WeakAurasTutorials: disabled

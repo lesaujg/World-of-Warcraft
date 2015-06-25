@@ -11,17 +11,6 @@ local TSM = select(2, ...)
 local Util = TSM:NewModule("Util")
 local VELLUM_ID = "item:38682:0:0:0:0:0:0"
 
-local scanTooltip
-function GetTradeSkillReagentItemLink(skillIndex, reagentLink)
-	if not scanTooltip then
-		scanTooltip = CreateFrame("GameTooltip", "TSMCraftingScanTooltip", UIParent, "GameTooltipTemplate")
-		scanTooltip:SetOwner(UIParent, "ANCHOR_NONE")
-	end
-	scanTooltip:ClearLines()
-	scanTooltip:SetTradeSkillItem(skillIndex, reagentLink)
-	return select(2, scanTooltip:GetItem())
-end
-
 function Util:IsProfessionReady()
 	if GetTradeSkillLine() == "UNKNOWN" or not GetNumTradeSkills() or GetNumTradeSkills() <= 0 or InCombatLockdown() then
 		return

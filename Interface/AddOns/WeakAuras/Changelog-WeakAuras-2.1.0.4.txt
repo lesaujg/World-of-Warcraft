@@ -1,0 +1,13 @@
+tag 2.1.0.4
+4c675539e3cb0243c3b6a8a3915c19ef6dae65d1
+Benjamin Staneck <staneck@gmail.com>
+2015-06-23 15:18:32 +0200
+
+
+
+--------------------
+
+Infus:
+	- Aurabar: Fix typo otherwise displayTextRight is never set at all
+Benjamin Staneck:
+	- Update TOC for Patch 6.2

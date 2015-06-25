@@ -52,9 +52,9 @@
 --  Globals/Default Options  --
 -------------------------------
 DBM = {
-	Revision = tonumber(("$Revision: 13867 $"):sub(12, -3)),
-	DisplayVersion = "6.1.10", -- the string that is shown as version
-	ReleaseRevision = 13867 -- the revision of the latest stable version that is available
+	Revision = tonumber(("$Revision: 13904 $"):sub(12, -3)),
+	DisplayVersion = "6.2.0", -- the string that is shown as version
+	ReleaseRevision = 13904 -- the revision of the latest stable version that is available
 }
 DBM.HighestRelease = DBM.ReleaseRevision --Updated if newer version is detected, used by update nags to reflect critical fixes user is missing on boss pulls
 
@@ -388,7 +388,7 @@ local statusWhisperDisabled = false
 local wowTOC = select(4, GetBuildInfo())
 local dbmToc = 0
 
-local fakeBWRevision = 13165
+local fakeBWRevision = 13200
 
 local enableIcons = true -- set to false when a raid leader or a promoted player has a newer version of DBM
 local guiRequested = false
@@ -4697,10 +4697,11 @@ do
 		if not frame then
 			createFrame()
 			DBM.Noteframe = frame
-		end
-		if frame:IsShown() and syncText then
-			DBM:AddMsg(DBM_CORE_NOTESHAREERRORALREADYOPEN)
-			return
+		else
+			if frame:IsShown() and syncText then
+				DBM:AddMsg(DBM_CORE_NOTESHAREERRORALREADYOPEN)
+				return
+			end
 		end
 		frame:Show()
 		fontstringFooter:SetText(DBM_CORE_NOTEFOOTER)
@@ -4866,6 +4867,7 @@ do
 	
 	local function wipeRecoveryDelay(self)
 		--Wipe Recovery stuff
+		self:Debug("wipeRecoveryDelay running")
 		local ResSpell = GetSpellInfo(95223)--Cannot be mass resurrected
 		local MassResDebuff = 0
 		local playersOutofRange = 0
@@ -4883,7 +4885,7 @@ do
 				playersDead = playersDead + 1
 			end
 			local range = DBM.RangeCheck:GetDistance("player", unitId)
-			if range > 200 then--Very far away, released players probably
+			if range > 250 then--Very far away, released players probably
 				playersOutofRange = playersOutofRange + 1
 			end
 		end
@@ -4921,6 +4923,9 @@ do
 	
 	function DBM:ENCOUNTER_END(encounterID, name, difficulty, size, success)
 		self:Debug("ENCOUNTER_END event fired: "..encounterID.." "..name.." "..difficulty.." "..size.." "..success)
+		if IsInRaid() then
+			self:Schedule(3, wipeRecoveryDelay, self)
+		end
 		for i = #inCombat, 1, -1 do
 			local v = inCombat[i]
 			if not v.combatInfo then return end
@@ -4949,9 +4954,6 @@ do
 				end
 				return
 			end
-		end
-		if IsInRaid() then
-			self:Schedule(3, wipeRecoveryDelay, self)
 		end
 	end
 	
@@ -9276,7 +9278,7 @@ do
 		local activeVP = self.Options.ChosenVoicePack
 		--Check if voice pack out of date
 		if activeVP ~= "None" and activeVP == value then
-			if self.VoiceVersions[value] < 4 then--Version will be bumped when new voice packs released that contain new voices.
+			if self.VoiceVersions[value] < 5 then--Version will be bumped when new voice packs released that contain new voices.
 				self:AddMsg(DBM_CORE_VOICE_PACK_OUTDATED)
 				SWFilterDisabed = self.VoiceVersions[value]--Set disable to version on current voice pack
 			else

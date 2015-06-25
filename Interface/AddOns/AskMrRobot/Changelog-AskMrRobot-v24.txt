@@ -1,0 +1,8 @@
+2015-06-23  yellowfive  <yellowfive>
+
+[f1d5827dbde0] [v24]
+* AskMrRobot-Serializer/AskMrRobot-Serializer.lua, AskMrRobot.toc, Constants.lua:
+
+tweak to read new item link format
+
+

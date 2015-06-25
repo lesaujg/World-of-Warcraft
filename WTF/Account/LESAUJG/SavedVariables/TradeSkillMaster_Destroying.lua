@@ -2,13 +2,13 @@
 TradeSkillMaster_DestroyingDB = {
 	["profileKeys"] = {
 		["Mandelbrot - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
 		["Galinar - Sisters of Elune"] = "Default",
 		["Belrath - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
 		["Bracnar - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
 	},
 	["global"] = {
 		["deAboveVendor"] = true,
@@ -17,6 +17,7 @@ TradeSkillMaster_DestroyingDB = {
 			["item:6263:0:0:0:0:0:0"] = true,
 			["item:46874:0:0:0:0:0:0"] = true,
 		},
+		["deMaxQuality"] = 2,
 		["history"] = {
 			["Disenchant"] = {
 				{
@@ -451,8 +452,31 @@ TradeSkillMaster_DestroyingDB = {
 					["item"] = "item:24687:0:0:0:0:0:-39",
 					["time"] = 1433876109,
 				}, -- [54]
+				{
+					["item"] = "item:24804:0:0:0:0:0:-32",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1434640975,
+					["result"] = {
+						["item:22446:0:0:0:0:0:0"] = 2,
+					},
+				}, -- [55]
+				{
+					["item"] = "item:36177:0:0:0:0:0:-40",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1434644634,
+					["result"] = {
+						["item:34055:0:0:0:0:0:0"] = 1,
+					},
+				}, -- [56]
+				{
+					["item"] = "item:36389:0:0:0:0:0:-9",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1434645095,
+					["result"] = {
+						["item:34054:0:0:0:0:0:0"] = 4,
+					},
+				}, -- [57]
 			},
 		},
-		["deMaxQuality"] = 2,
 	},
 }

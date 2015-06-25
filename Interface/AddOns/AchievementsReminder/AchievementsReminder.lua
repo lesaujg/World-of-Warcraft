@@ -10,7 +10,7 @@ end
 
 ralldatabase()
 
-  achievementsreminderver=6.102
+  achievementsreminderver=6.103
 
 
 	if ralloptions==nil then ralloptions={1,1,0,0,0,0,1,0,0,0,0,0} end
@@ -18,6 +18,7 @@ ralldatabase()
 	if rallbosschaton==nil then rallbosschaton=true end
 	if ralloptionsmanual==nil then ralloptionsmanual={1,0,0,0,0,0} end
 	if ralloptionsmanual3==nil then ralloptionsmanual3={1,0} end
+	if ralloptionTrackCharAchieves==nil then ralloptionTrackCharAchieves=false end
 	rallnomorereport={{},{},{0},{0}}
 	ralltooltipready={{0},{0},{{0}}}
 	rallcolonka=0
@@ -755,6 +756,20 @@ table.insert(psllcheckbuttontable2, t)
 
 
 end
+
+--only char achieves
+ralloptionTrackCharAchievesCB = CreateFrame("CheckButton", nil, zzralistach, "OptionsCheckButtonTemplate")
+ralloptionTrackCharAchievesCB:SetWidth("20")
+ralloptionTrackCharAchievesCB:SetHeight("20")
+ralloptionTrackCharAchievesCB:SetPoint("TOPLEFT", 350, -229)
+ralloptionTrackCharAchievesCB:SetScript("OnClick", function(self) if ralloptionTrackCharAchieves then ralloptionTrackCharAchieves=false else ralloptionTrackCharAchieves=true end end )
+local t2 = zzralistach:CreateFontString()
+t2:SetFont(GameFontNormal:GetFont(), 11)
+t2:SetText("NEW! "..ralltextoptionCharAch)
+t2:SetJustifyH("LEFT")
+t2:SetPoint("TOPLEFT",372, -227)
+t2:SetHeight(23)
+
 icllsetgalki()
 
 end
@@ -1104,6 +1119,11 @@ for i=1,12 do
 		end
 	end
 end
+if ralloptionTrackCharAchieves then
+	ralloptionTrackCharAchievesCB:SetChecked(true)
+else
+	ralloptionTrackCharAchievesCB:SetChecked(false)
+end
 end
 
 function icllsetgalkim2()
@@ -1320,8 +1340,8 @@ local reportqu=0
 if ralloptions[2]==1 then
 	for i=1,#rallachieve[rallcolonka] do
 	if GetAchievementLink(rallachieve[rallcolonka][i]) then
-		local _, _, _, completed = GetAchievementInfo(rallachieve[rallcolonka][i])
-		if completed==false and rallfullver[rallcolonka][i]==0 then
+		local _, _, _, completed, _, _, _, _, _, _, _, _, wasEarnedByMe, earnedBy = GetAchievementInfo(rallachieve[rallcolonka][i])
+		if (completed==false or (completed and ralloptionTrackCharAchieves and wasEarnedByMe==false)) and rallfullver[rallcolonka][i]==0 then
 			if #texttableout==0 then
 				local cur_zone=GetMapNameByID(GetCurrentMapAreaID())
 				if cur_zone==nil then
@@ -1380,7 +1400,7 @@ elseif ralloptions[3]==1 then
 
 	for i=1,#rallachieve[rallcolonka] do
 	if GetAchievementLink(rallachieve[rallcolonka][i]) then
-		local _, _, _, completed = GetAchievementInfo(rallachieve[rallcolonka][i])
+		local _, _, _, completed, _, _, _, _, _, _, _, _, wasEarnedByMe, earnedBy = GetAchievementInfo(rallachieve[rallcolonka][i])
 
 		if rallfullver[rallcolonka][i]==0 then
 			if #texttableout==0 then
@@ -1392,7 +1412,7 @@ elseif ralloptions[3]==1 then
 			
 
 			reportqu=reportqu+1
-			if completed then
+			if (completed and ralloptionTrackCharAchieves==false) or (completed and ralloptionTrackCharAchieves and wasEarnedByMe) then
 					texttableout[#texttableout]=texttableout[#texttableout].." ("..rallachdonel1..")"
 					texttableout2[#texttableout2]=texttableout2[#texttableout2].." |cff00ff00("..rallachdonel1..")|r"
 			else
@@ -1443,8 +1463,8 @@ end
 elseif ralloptions[4]==1 then
 	for i=1,#rallachieve[rallcolonka] do
 	if GetAchievementLink(rallachieve[rallcolonka][i]) then
-		local _, _, _, completed = GetAchievementInfo(rallachieve[rallcolonka][i])
-		if completed==false and rallfullver[rallcolonka][i]==0 and rallmeta[rallcolonka][i]==1 then
+		local _, _, _, completed, _, _, _, _, _, _, _, _, wasEarnedByMe, earnedBy = GetAchievementInfo(rallachieve[rallcolonka][i])
+		if (completed==false or (completed and ralloptionTrackCharAchieves and wasEarnedByMe==false)) and rallfullver[rallcolonka][i]==0 and rallmeta[rallcolonka][i]==1 then
 			if #texttableout==0 then
 				table.insert(texttableout,"AchievementsReminder - "..rallachiverepl8.." '"..GetMapNameByID(GetCurrentMapAreaID()).."':")
 				table.insert(texttableout2,rallachiverepl8.." '"..GetMapNameByID(GetCurrentMapAreaID()).."':")
@@ -1497,7 +1517,7 @@ elseif ralloptions[5]==1 then
 
 	for i=1,#rallachieve[rallcolonka] do
 	if GetAchievementLink(rallachieve[rallcolonka][i]) then
-		local _, _, _, completed = GetAchievementInfo(rallachieve[rallcolonka][i])
+		local _, _, _, completed, _, _, _, _, _, _, _, _, wasEarnedByMe, earnedBy = GetAchievementInfo(rallachieve[rallcolonka][i])
 		if rallfullver[rallcolonka][i]==0 and rallmeta[rallcolonka][i]==1 then
 			if #texttableout==0 then
 				table.insert(texttableout,"AchievementsReminder - "..rallachiverepl10.." '"..GetMapNameByID(GetCurrentMapAreaID()).."':")
@@ -1508,7 +1528,7 @@ elseif ralloptions[5]==1 then
 			
 
 			reportqu=reportqu+1
-			if completed then
+			if (completed and ralloptionTrackCharAchieves==false) or (completed and ralloptionTrackCharAchieves and wasEarnedByMe) then
 					texttableout[#texttableout]=texttableout[#texttableout].." ("..rallachdonel1..")"
 					texttableout2[#texttableout2]=texttableout2[#texttableout2].." |cff00ff00("..rallachdonel1..")|r"
 			else
@@ -1557,8 +1577,8 @@ end
 elseif ralloptions[6]==1 then
 	for i=1,#rallachieve[rallcolonka] do
 	if GetAchievementLink(rallachieve[rallcolonka][i]) then
-		local _, _, _, completed = GetAchievementInfo(rallachieve[rallcolonka][i])
-		if completed==false then
+		local _, _, _, completed, _, _, _, _, _, _, _, _, wasEarnedByMe, earnedBy = GetAchievementInfo(rallachieve[rallcolonka][i])
+		if (completed==false or (completed and ralloptionTrackCharAchieves and wasEarnedByMe==false)) then
 			if #texttableout==0 then
 				table.insert(texttableout,"AchievementsReminder - "..rallachiverepl12.." '"..GetMapNameByID(GetCurrentMapAreaID()).."':")
 				table.insert(texttableout2,rallachiverepl12.." '"..GetMapNameByID(GetCurrentMapAreaID()).."':")
@@ -1972,8 +1992,8 @@ if ralloptions[8]==1 then
 	for i=1,#rallboss[rallcolonka] do
 		for j=1,#rallboss[rallcolonka][i] do
 			if rallboss[rallcolonka][i][j]==id then
-				local _, _, _, completed = GetAchievementInfo(rallachieve[rallcolonka][i])
-				if completed==false and rallfullver[rallcolonka][i]==0 then
+				local _, _, _, completed, _, _, _, _, _, _, _, _, wasEarnedByMe, earnedBy = GetAchievementInfo(rallachieve[rallcolonka][i])
+				if (completed==false or (completed and ralloptionTrackCharAchieves and wasEarnedByMe==false)) and rallfullver[rallcolonka][i]==0 then
 					if #texttableout==0 then
 						table.insert(texttableout,"|cff99ffffAchievementsReminder|r - "..rallachiverepl13.." '"..nick.."':")
 					end
@@ -1998,13 +2018,13 @@ elseif ralloptions[9]==1 then
 	for i=1,#rallboss[rallcolonka] do
 		for j=1,#rallboss[rallcolonka][i] do
 			if rallboss[rallcolonka][i][j]==id then
-				local _, _, _, completed = GetAchievementInfo(rallachieve[rallcolonka][i])
+				local _, _, _, completed, _, _, _, _, _, _, _, _, wasEarnedByMe, earnedBy = GetAchievementInfo(rallachieve[rallcolonka][i])
 				if rallfullver[rallcolonka][i]==0 then
 					if #texttableout==0 then
 						table.insert(texttableout,"|cff99ffffAchievementsReminder|r - "..rallachiverepl14.." '"..nick.."':")
 					end
 					table.insert(texttableout,GetAchievementLink(rallachieve[rallcolonka][i]))
-					if completed then
+					if (completed and ralloptionTrackCharAchieves==false) or (completed and ralloptionTrackCharAchieves and wasEarnedByMe) then
 							texttableout[#texttableout]=texttableout[#texttableout].." |cff00ff00("..rallachdonel1..")|r"
 					else
 							texttableout[#texttableout]=texttableout[#texttableout].." |cffff0000("..rallachdonel2..")|r"
@@ -2028,8 +2048,8 @@ elseif ralloptions[10]==1 then
 	for i=1,#rallboss[rallcolonka] do
 		for j=1,#rallboss[rallcolonka][i] do
 			if rallboss[rallcolonka][i][j]==id then
-				local _, _, _, completed = GetAchievementInfo(rallachieve[rallcolonka][i])
-				if completed==false and rallfullver[rallcolonka][i]==0 and rallmeta[rallcolonka][i]==1 then
+				local _, _, _, completed, _, _, _, _, _, _, _, _, wasEarnedByMe, earnedBy = GetAchievementInfo(rallachieve[rallcolonka][i])
+				if (completed==false or (completed and ralloptionTrackCharAchieves and wasEarnedByMe==false)) and rallfullver[rallcolonka][i]==0 and rallmeta[rallcolonka][i]==1 then
 					if #texttableout==0 then
 						table.insert(texttableout,"|cff99ffffAchievementsReminder|r - "..rallachiverepl16.." '"..nick.."':")
 					end
@@ -2051,7 +2071,7 @@ elseif ralloptions[11]==1 then
 	for i=1,#rallboss[rallcolonka] do
 		for j=1,#rallboss[rallcolonka][i] do
 			if rallboss[rallcolonka][i][j]==id then
-				local _, _, _, completed = GetAchievementInfo(rallachieve[rallcolonka][i])
+				local _, _, _, completed, _, _, _, _, _, _, _, _, wasEarnedByMe, earnedBy = GetAchievementInfo(rallachieve[rallcolonka][i])
 				if rallfullver[rallcolonka][i]==0 and rallmeta[rallcolonka][i]==1 then
 					if #texttableout==0 then
 						table.insert(texttableout,"|cff99ffffAchievementsReminder|r - "..rallachiverepl17.." '"..nick.."':")
@@ -2078,8 +2098,8 @@ elseif ralloptions[12]==1 then
 	for i=1,#rallboss[rallcolonka] do
 		for j=1,#rallboss[rallcolonka][i] do
 			if rallboss[rallcolonka][i][j]==id then
-				local _, _, _, completed = GetAchievementInfo(rallachieve[rallcolonka][i])
-				if completed==false then
+				local _, _, _, completed, _, _, _, _, _, _, _, _, wasEarnedByMe, earnedBy = GetAchievementInfo(rallachieve[rallcolonka][i])
+				if completed==false or (completed and ralloptionTrackCharAchieves and wasEarnedByMe==false) then
 					if #texttableout==0 then
 						table.insert(texttableout,"|cff99ffffAchievementsReminder|r - "..rallachiverepl18.." '"..nick.."':")
 					end
@@ -2198,8 +2218,8 @@ if rallachieve[locrallcolonka][1] and GetAchievementLink(rallachieve[locrallcolo
 if ralloptionsmanual[1]==1 then
 	for i=1,#rallachieve[locrallcolonka] do
 	if GetAchievementLink(rallachieve[locrallcolonka][i]) then
-		local _, _, _, completed = GetAchievementInfo(rallachieve[locrallcolonka][i])
-		if completed==false and rallfullver[locrallcolonka][i]==0 then
+		local _, _, _, completed, _, _, _, _, _, _, _, _, wasEarnedByMe, earnedBy = GetAchievementInfo(rallachieve[locrallcolonka][i])
+		if (completed==false or (completed and ralloptionTrackCharAchieves and wasEarnedByMe==false)) and rallfullver[locrallcolonka][i]==0 then
 			if #texttableout==0 then
 				table.insert(texttableout,"AchievementsReminder - "..rallachiverepl1.." '"..ralltableofinstancebyname[rallmanualch3].."':")
 				table.insert(texttableout2,rallachiverepl1.." '"..ralltableofinstancebyname[rallmanualch3].."':")
@@ -2243,7 +2263,7 @@ elseif ralloptionsmanual[2]==1 then
 
 	for i=1,#rallachieve[locrallcolonka] do
 	if GetAchievementLink(rallachieve[locrallcolonka][i]) then
-		local _, _, _, completed = GetAchievementInfo(rallachieve[locrallcolonka][i])
+		local _, _, _, completed, _, _, _, _, _, _, _, _, wasEarnedByMe, earnedBy = GetAchievementInfo(rallachieve[locrallcolonka][i])
 
 		if rallfullver[locrallcolonka][i]==0 then
 			if #texttableout==0 then
@@ -2253,7 +2273,7 @@ elseif ralloptionsmanual[2]==1 then
 			table.insert(texttableout,GetAchievementLink(rallachieve[locrallcolonka][i]))
 			table.insert(texttableout2,GetAchievementLink(rallachieve[locrallcolonka][i]))
 			
-			if completed then
+			if (completed and ralloptionTrackCharAchieves==false) or (completed and ralloptionTrackCharAchieves and wasEarnedByMe) then
 					texttableout[#texttableout]=texttableout[#texttableout].." ("..rallachdonel1..")"
 					texttableout2[#texttableout2]=texttableout2[#texttableout2].." |cff00ff00("..rallachdonel1..")|r"
 			else
@@ -2297,8 +2317,8 @@ end
 elseif ralloptionsmanual[3]==1 then
 	for i=1,#rallachieve[locrallcolonka] do
 	if GetAchievementLink(rallachieve[locrallcolonka][i]) then
-		local _, _, _, completed = GetAchievementInfo(rallachieve[locrallcolonka][i])
-		if completed==false and rallfullver[locrallcolonka][i]==0 and rallmeta[locrallcolonka][i]==1 then
+		local _, _, _, completed, _, _, _, _, _, _, _, _, wasEarnedByMe, earnedBy = GetAchievementInfo(rallachieve[locrallcolonka][i])
+		if (completed==false or (completed and ralloptionTrackCharAchieves and wasEarnedByMe==false)) and rallfullver[locrallcolonka][i]==0 and rallmeta[locrallcolonka][i]==1 then
 			if #texttableout==0 then
 				table.insert(texttableout,"AchievementsReminder - "..rallachiverepl8.." '"..ralltableofinstancebyname[rallmanualch3].."':")
 				table.insert(texttableout2,rallachiverepl8.." '"..ralltableofinstancebyname[rallmanualch3].."':")
@@ -2345,7 +2365,7 @@ elseif ralloptionsmanual[4]==1 then
 
 	for i=1,#rallachieve[locrallcolonka] do
 	if GetAchievementLink(rallachieve[locrallcolonka][i]) then
-		local _, _, _, completed = GetAchievementInfo(rallachieve[locrallcolonka][i])
+		local _, _, _, completed, _, _, _, _, _, _, _, _, wasEarnedByMe, earnedBy = GetAchievementInfo(rallachieve[locrallcolonka][i])
 		if rallfullver[locrallcolonka][i]==0 and rallmeta[locrallcolonka][i]==1 then
 			if #texttableout==0 then
 				table.insert(texttableout,"AchievementsReminder - "..rallachiverepl10.." '"..ralltableofinstancebyname[rallmanualch3].."':")
@@ -2355,7 +2375,7 @@ elseif ralloptionsmanual[4]==1 then
 			table.insert(texttableout2,GetAchievementLink(rallachieve[locrallcolonka][i]))
 
 
-			if completed then
+			if (completed and ralloptionTrackCharAchieves==false) or (completed and ralloptionTrackCharAchieves and wasEarnedByMe) then
 					texttableout[#texttableout]=texttableout[#texttableout].." ("..rallachdonel1..")"
 					texttableout2[#texttableout2]=texttableout2[#texttableout2].." |cff00ff00("..rallachdonel1..")|r"
 			else
@@ -2398,8 +2418,8 @@ end
 elseif ralloptionsmanual[5]==1 then
 	for i=1,#rallachieve[locrallcolonka] do
 	if GetAchievementLink(rallachieve[locrallcolonka][i]) then
-		local _, _, _, completed = GetAchievementInfo(rallachieve[locrallcolonka][i])
-		if completed==false then
+		local _, _, _, completed, _, _, _, _, _, _, _, _, wasEarnedByMe, earnedBy = GetAchievementInfo(rallachieve[locrallcolonka][i])
+		if completed==false or (completed and ralloptionTrackCharAchieves and wasEarnedByMe==false) then
 			if #texttableout==0 then
 				table.insert(texttableout,"AchievementsReminder - "..rallachiverepl12.." '"..ralltableofinstancebyname[rallmanualch3].."':")
 				table.insert(texttableout2,rallachiverepl12.." '"..ralltableofinstancebyname[rallmanualch3].."':")
@@ -2444,7 +2464,7 @@ elseif ralloptionsmanual[6]==1 then
 
 	for i=1,#rallachieve[locrallcolonka] do
 	if GetAchievementLink(rallachieve[locrallcolonka][i]) then
-		local _, _, _, completed = GetAchievementInfo(rallachieve[locrallcolonka][i])
+		local _, _, _, completed, _, _, _, _, _, _, _, _, wasEarnedByMe, earnedBy = GetAchievementInfo(rallachieve[locrallcolonka][i])
 
 			if #texttableout==0 then
 				table.insert(texttableout,"AchievementsReminder - "..rallachiverepl19.." '"..ralltableofinstancebyname[rallmanualch3].."':")
@@ -2453,7 +2473,7 @@ elseif ralloptionsmanual[6]==1 then
 			table.insert(texttableout,GetAchievementLink(rallachieve[locrallcolonka][i]))
 			table.insert(texttableout2,GetAchievementLink(rallachieve[locrallcolonka][i]))
 
-			if completed then
+			if (completed and ralloptionTrackCharAchieves==false) or (completed and ralloptionTrackCharAchieves and wasEarnedByMe) then
 					texttableout[#texttableout]=texttableout[#texttableout].." ("..rallachdonel1..")"
 					texttableout2[#texttableout2]=texttableout2[#texttableout2].." |cff00ff00("..rallachdonel1..")|r"
 			else
@@ -2807,8 +2827,8 @@ end
 for bb=1,#rallachieve[ralltacticachopen] do
 	if GetAchievementLink(rallachieve[ralltacticachopen][1]) then
 	if ralloptionsmanual3[1]==1 then
-		local _, _, _, completed = GetAchievementInfo(rallachieve[ralltacticachopen][bb])
-		if completed==false and rallfullver[ralltacticachopen][bb]==0 then
+		local _, _, _, completed, _, _, _, _, _, _, _, _, wasEarnedByMe, earnedBy = GetAchievementInfo(rallachieve[ralltacticachopen][bb])
+		if (completed==false or (completed and ralloptionTrackCharAchieves and wasEarnedByMe==false)) and rallfullver[ralltacticachopen][bb]==0 then
 			local name=GetAchievementLink(rallachieve[ralltacticachopen][bb])
 			if ralltactics[ralltacticachopen][bb] and ralltactics[ralltacticachopen][bb]~=0 and ralltacticsdif[ralltacticachopen][bb] and ralltacticsdif[ralltacticachopen][bb]==1 then
 				name=name.." - "..ralltactictext2

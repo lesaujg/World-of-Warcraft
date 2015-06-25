@@ -6,7 +6,7 @@
 ## Notes-ruRU: Отображает список групповых достижений, доступных в локации, а также тактики к ним
 ## LoadOnDemand: 0
 ## SavedVariables: ralllocationnames,ralltactics,ralltacticsver,ralltacticsdif
-## SavedVariablesPerCharacter: ralloptions,ralloptionsmanual,rallbosstooltip,rallbosschaton,ralloptionsmanual3
+## SavedVariablesPerCharacter: ralloptions,ralloptionsmanual,rallbosstooltip,rallbosschaton,ralloptionsmanual3,ralloptionTrackCharAchieves
 Localization\localization-enEN.lua
 Localization\localization-ruRU.lua
 Localization\localization-deDE.lua

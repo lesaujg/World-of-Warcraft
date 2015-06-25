@@ -23,7 +23,7 @@ end
 function TukuiFonts:ChangeWoWFonts()
 	local SetFont = self.SetFont
 	local NORMAL = C.Medias.Font
-	local COMBAT = GetLocale() == "ruRU" and C.Medias.DamageFontRussian or C.Medias.DamageFont
+	local COMBAT = C.Medias.DamageFont
 	local NUMBER = C.Medias.Font
 
 	UIDROPDOWNMENU_DEFAULT_TEXT_HEIGHT = 12
@@ -57,7 +57,7 @@ function TukuiFonts:ChangeWoWFonts()
 	SetFont(SystemFont_Tiny, NORMAL, 12)
 	SetFont(Tooltip_Med, NORMAL, 12)
 	SetFont(Tooltip_Small, NORMAL, 12)
-	SetFont(CombatTextFont, NORMAL, 200, "OUTLINE")
+	SetFont(CombatTextFont, COMBAT, 200, "OUTLINE")
 	SetFont(SystemFont_Shadow_Huge1, NORMAL, 20, "THINOUTLINE")
 	SetFont(ZoneTextString, NORMAL, 32, "OUTLINE")
 	SetFont(SubZoneTextString, NORMAL, 25, "OUTLINE")

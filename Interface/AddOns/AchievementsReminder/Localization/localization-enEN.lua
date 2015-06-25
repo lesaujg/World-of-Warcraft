@@ -91,6 +91,7 @@ ralldefaulttacticmain3			= "Achievement's failure will be saved to instance ID, 
 rallachievekologarnhp1			= "800K - 1 mln"
 rallachievekologarnhp2			= "3 mln - 4 mln"
 rallglory         = "glory"
+ralltextoptionCharAch = "Track only character achievement (not account)"
 
 ralldefaulttactic1			= "There are ~85 Zombies in the entire street in the beginning, so you need:\n1. Kill 1st boss.\n2. 1.Drag 2nd boss to the door of the inn (he won't let you bring him inside, just bring him near the steps).\n3. 2.Give it a minute or two until you see the zombies respawning, then kill him.\n4. 3.Talk to Arthas, then clear the inn, kill the 3rd boss, and talk to Arthas again to get him to open the bookcase.\n5. 1 or 2 dps will turn back where you have killed the 2nd boss, other party will go forward.\n6. Simultaneously begin killing zombies in both locations until you get achievement"
 ralldefaulttactic2			= "Simply stay on the Stairs and kill the Mobs. There will be NO more adds spawn after Novos shield brakes down and you engage him. So you don't need to pay attention to that anymore"

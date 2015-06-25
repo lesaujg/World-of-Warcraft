@@ -275,7 +275,7 @@ function RaidAchFilter:Initialize()
 				info.value = "submenub4"
 				UIDropDownMenu_AddButton(info, level)
 			elseif UIDROPDOWNMENU_MENU_VALUE == "topmenu3" then
-				for i = 73, 86 do --Scenarios!
+				for i = 74, 86 do --Scenarios!
 				  info.value = i
 				  info.checked = false
 				  info.hasArrow = false
@@ -320,7 +320,7 @@ function RaidAchFilter:Initialize()
 				  UIDropDownMenu_AddButton(info, level)
 				end
 			elseif UIDROPDOWNMENU_MENU_VALUE == "submenua4" then
-				for i = 24, 25 do
+				for i = 24, 26 do
 				  info.value = i
 				  info.checked = false
 				  info.text = RAFdb.MapName[i]
@@ -331,7 +331,7 @@ function RaidAchFilter:Initialize()
 				end
 			-- Dungeons!
 			elseif UIDROPDOWNMENU_MENU_VALUE == "submenub1" then
-				for i = 26, 41 do
+				for i = 27, 42 do
 					  info.value = i
 					  info.checked = false
 					  info.text = RAFdb.MapName[i]
@@ -341,7 +341,7 @@ function RaidAchFilter:Initialize()
 					  UIDropDownMenu_AddButton(info, level)
 				end
 			elseif UIDROPDOWNMENU_MENU_VALUE == "submenub2" then
-				for i = 42, 55 do
+				for i = 43, 56 do
 					  info.value = i
 					  info.checked = false
 					  info.text = RAFdb.MapName[i]
@@ -351,7 +351,7 @@ function RaidAchFilter:Initialize()
 					  UIDropDownMenu_AddButton(info, level)
 				end
 			elseif UIDROPDOWNMENU_MENU_VALUE == "submenub3" then
-				for i = 56, 64 do
+				for i = 57, 65 do
 					  info.value = i
 					  info.checked = false
 					  info.text = RAFdb.MapName[i]
@@ -361,7 +361,7 @@ function RaidAchFilter:Initialize()
 					  UIDropDownMenu_AddButton(info, level)
 				end
 			elseif UIDROPDOWNMENU_MENU_VALUE == "submenub4" then
-				for i = 65, 72 do
+				for i = 66, 73 do
 					  info.value = i
 					  info.checked = false
 					  info.text = RAFdb.MapName[i]
