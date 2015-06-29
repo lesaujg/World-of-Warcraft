@@ -137,6 +137,22 @@ L["Emote"] = "Emote"
 L["Encounter ID"] = "Encounter ID"
 L["EncounterID List"] = [=[IDs for the current Tier:
 
+Hellfire Citadel:
+
+  Hellfire Assault: 1778
+  Iron Reaver: 1785
+  Kormrok: 1787
+  Hellfire High Council: 1798
+  Kilrogg Deadeye: 1786
+  Gorefiend: 1783
+  Shadow-Lord Iskar: 1788
+  Xhul'horac: 1800
+  Fel Lord Zakuun: 1777 
+  Socrethar the Eternal: 1794
+  Tyrant Velhari: 1784
+  Mannoroth: 1795
+  Archimonde: 1799
+
 Highmaul:
  Kargath: 1721
  The Butcher: 1706

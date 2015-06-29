@@ -141,6 +141,21 @@ L["Emote"] = "Emote"
 L["Encounter ID"] = "Boss ID" -- Needs review
 L["EncounterID List"] = [=[Aktuelle Raid Tier IDs:
 
+Hellfire Citadel:
+  Höllenfeuerangriff: 1778
+  Eiserner Häscher: 1785
+  Kormrok: 1787
+  Hoher Rat des Höllenfeuers: 1798
+  Kilrogg Totauge: 1786
+  Blutschatten: 1783
+  Schattenfürst Iskar: 1788
+  Xhul'horac: 1800
+  Teufelslord Zakuun: 1777
+  Socrethar der Ewige: 1794
+  Tyrannin Velhari: 1784
+  Mannoroth: 1795
+  Archimonde: 1799
+
 Hochfels:
  Kargath: 1721
  Der Schlächter: 1706
@@ -160,7 +175,7 @@ Schwarzfelsgießerei:
  Der Schmelzofen: 1690
  Kromog: 1713
  Die Eisernen Jungfern: 1695
- Schwarzfaust: 1704]=] -- Needs review
+ Schwarzfaust: 1704]=]
 L["Energize"] = "Aufladen (ENERGIZE)"
 L["Energy"] = "Energie"
 L["Enrage"] = "Wut"

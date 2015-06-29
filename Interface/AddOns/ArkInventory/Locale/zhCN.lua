@@ -51,7 +51,7 @@ if not L then return end
 	
 	
 --	restack
---	L["RESTACK"] = "压缩并重新堆栈"
+	L["RESTACK"] = "压缩并重新堆栈"
 	L["RESTACK_TEXT"] = "重新堆栈物品以减少物品占用的字段，特殊背包的字段将会优先被使用"
 	L["RESTACK_FAIL_WAIT"] = "堆叠行动已经在进行, 请等待完成"
 	L["RESTACK_FAIL_ACCESS"] = "你没有权限堆叠 %1$s 里的 %2$s 标签 %1$s"
@@ -640,6 +640,7 @@ if not L then return end
 --	L["TOOLTIP_PURCHASE_BANK_BAG_SLOT"] = ""
 --	L["TOOLTIP_PURCHASE_BANK_TAB_REAGENT"] = ""
 --	L["LABEL"] = ""
+--	L["ABORTED"] = ""
 	
 	
 --	libdatabroker

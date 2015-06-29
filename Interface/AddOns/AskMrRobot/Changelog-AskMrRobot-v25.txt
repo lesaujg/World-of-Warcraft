@@ -1,0 +1,8 @@
+2015-06-26  yellowfive  <yellowfive>
+
+[e638168c3395] [v25]
+* AskMrRobot-Serializer/AskMrRobot-Serializer.lua, AskMrRobot.toc, CombatLog.lua, Constants.lua, localization/itIT.lua:
+
+fixed some other 6.2 bugs, added italian translation
+
+

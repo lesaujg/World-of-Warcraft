@@ -51,7 +51,7 @@ if not L then return end
 	
 	
 --	restack
---	L["RESTACK"] = "壓縮並重新堆疊"
+	L["RESTACK"] = "壓縮並重新堆疊"
 	L["RESTACK_TEXT"] = "重新堆疊物品以減少物品佔用的欄位，特殊背包的欄位將會優先被使用"
 	L["RESTACK_FAIL_WAIT"] = "正在重新堆疊，請等候完成"
 	L["RESTACK_FAIL_ACCESS"] = "你沒有權限重新堆疊|cffffffff%1$s|r的第|cffffffff%2$s|r個分頁"
@@ -640,6 +640,7 @@ if not L then return end
 --	L["TOOLTIP_PURCHASE_BANK_BAG_SLOT"] = ""
 --	L["TOOLTIP_PURCHASE_BANK_TAB_REAGENT"] = ""
 --	L["LABEL"] = ""
+--	L["ABORTED"] = ""
 	
 	
 -- libdatabroker

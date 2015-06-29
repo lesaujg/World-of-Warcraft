@@ -51,7 +51,7 @@ if not L then return end
 	
 	
 --	restack
---	L["RESTACK"] = "Empiler les objets"
+	L["RESTACK"] = "Empiler les objets"
 	L["RESTACK_TEXT"] = "Empiler les objets pouvant l'être et essai de remplir les emplacements vide des sacs spéciaux"
 	L["RESTACK_FAIL_WAIT"] = "Une opération d'empilage est en cours, veuillez attendre qu'elle se termine"
 	L["RESTACK_FAIL_ACCESS"] = "Vous n'avez pas l'autorisation pour empiler le casier %2$s de la %1$s"
@@ -640,6 +640,7 @@ if not L then return end
 --	L["TOOLTIP_PURCHASE_BANK_BAG_SLOT"] = ""
 --	L["TOOLTIP_PURCHASE_BANK_TAB_REAGENT"] = ""
 --	L["LABEL"] = ""
+--	L["ABORTED"] = ""
 	
 	
 -- libdatabroker

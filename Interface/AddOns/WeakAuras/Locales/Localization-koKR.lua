@@ -160,7 +160,7 @@ L["EncounterID List"] = [=[현재 단계의 ID들:
  격노의 가열로: 1690
  크로모그: 1713
  강철의 여전사들: 1695
- 블랙핸드: 1704]=]
+ 블랙핸드: 1704]=] -- Needs review
 L["Energize"] = "자원회복"
 L["Energy"] = "기력"
 L["Enrage"] = "격노"

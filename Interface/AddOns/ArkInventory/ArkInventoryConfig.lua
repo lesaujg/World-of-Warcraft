@@ -101,7 +101,7 @@ function ArkInventory.ConfigBlizzard( )
 			guiHidden = true,
 			order = 9000,
 			type = "execute",
-			name = ArkInventory.Localise["RESTACK"],
+			name = function( ) return ArkInventory.RestackString( ) end,
 			desc = ArkInventory.Localise["RESTACK_TEXT"],
 			func = function( )
 				ArkInventory.Restack( )
@@ -179,12 +179,14 @@ function ArkInventory.ConfigBlizzard( )
 					return
 				end
 				
-				local class, id = ArkInventory.ObjectStringDecode( h )
+				local osd = ArkInventory.ObjectStringDecode( h )
 				
-				if class ~= "item" then
+				if ods[1] ~= "item" then
 					ArkInventory.OutputWarning( "not an item: ", v )
 					return
 				end
+				
+				local id = osd[2]
 				
 				if ArkInventory.db.global.option.tracking.items[id] then
 					--remove

@@ -51,10 +51,10 @@ if not L then return end
 	
 	
 --	restack
---	L["RESTACK"] = "Restack"
+	L["RESTACK"] = "Restack"
 	L["RESTACK_TEXT"] = "consolidate items into as few stacks as possible and then try to fill up any empty slots in special bags where possible"
-	L["RESTACK_FAIL_WAIT"] = "A restack operation is already in progress please wait for completion"
-	L["RESTACK_FAIL_ACCESS"] = "You don't have enough authority to restack tab %2$s in the %1$s" -- %1$s = guild bank, %2$s = tab number
+	L["RESTACK_FAIL_WAIT"] = "Already in progress please wait for completion"
+	L["RESTACK_FAIL_ACCESS"] = "You don't have enough authority to tab %2$s in the %1$s" -- %1$s = guild bank, %2$s = tab number
 	
 	
 --	vault tab tooltips
@@ -640,6 +640,7 @@ if not L then return end
 	L["TOOLTIP_PURCHASE_BANK_BAG_SLOT"] = "Click to purchase the next available bank bag slot."
 	L["TOOLTIP_PURCHASE_BANK_TAB_REAGENT"] = "Click to purchase the reagent bank tab."
 	L["LABEL"] = "Label"
+	L["ABORTED"] = "Aborted"
 	
 	
 --	libdatabroker

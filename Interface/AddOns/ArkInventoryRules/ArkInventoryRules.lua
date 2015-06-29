@@ -1,6 +1,6 @@
 ﻿-- (c) 2009-2014, all rights reserved.
--- $Revision: 1310 $
--- $Date: 2015-02-25 07:11:34 +1100 (Wed, 25 Feb 2015) $
+-- $Revision: 1325 $
+-- $Date: 2015-05-06 11:14:27 +1000 (Wed, 06 May 2015) $
 
 
 local _G = _G
@@ -177,7 +177,9 @@ function ArkInventoryRules.AppliesToItem( rid, i )
 	end
 	
 	ArkInventoryRules.Object = i
-	i.class = ArkInventory.ObjectStringDecode( i.h )
+	
+	local osd = ArkInventory.ObjectStringDecode( i.h )
+	i.class = osd[1]
 	
 	setfenv( p, ArkInventoryRules.Environment )
 	local ok, eor = pcall( p )
@@ -1177,7 +1179,8 @@ function ArkInventoryRules.System.trash( )
 		return true
 	end
 	
-	local id = select( 2, ArkInventory.ObjectStringDecode( ArkInventoryRules.Object.h ) )
+	local osd = ArkInventory.ObjectStringDecode( ArkInventoryRules.Object.h )
+	local id = osd[2]
 	
 	if IsAddOnLoaded( "Scrap" ) then
 		if Scrap:IsJunk( id ) then
@@ -1844,10 +1847,11 @@ function ArkInventoryRules.EntryFormat( data )
 	zName = string.trim( tostring( data.name or zName ) )
 
 	local zFormula = "false"
-	zFormula = string.trim( tostring( data.formula or zFormula ) )
-	zFormula = string.gsub( zFormula, "[\r]", " " ) -- replace carriage return with space
-	zFormula = string.gsub( zFormula, "[\n]", " " ) -- replace new line with space
-	zFormula = string.gsub( zFormula, "%s+", " " ) -- replace multiple spaces with a single space
+	zFormula = tostring( data.formula or zFormula )
+	--zFormula = string.trim( tostring( data.formula or zFormula ) )
+	--zFormula = string.gsub( zFormula, "[\r]", " " ) -- replace carriage return with space
+	--zFormula = string.gsub( zFormula, "[\n]", " " ) -- replace new line with space
+	--zFormula = string.gsub( zFormula, "%s+", " " ) -- replace multiple spaces with a single space
 	
 	data.used = true
 	data.damaged = false

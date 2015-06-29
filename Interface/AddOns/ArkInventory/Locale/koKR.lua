@@ -51,7 +51,7 @@ if not L then return end
 	
 	
 --	restack
---	L["RESTACK"] = "압축과 쌓기"
+	L["RESTACK"] = "압축과 쌓기"
 	L["RESTACK_TEXT"] = "나뉘어진 더미를 하나로 압축하고 빈 칸 없이 채웁니다."
 --	L["RESTACK_FAIL_WAIT"] = ""
 --	L["RESTACK_FAIL_ACCESS"] = ""
@@ -640,6 +640,7 @@ if not L then return end
 --	L["TOOLTIP_PURCHASE_BANK_BAG_SLOT"] = ""
 --	L["TOOLTIP_PURCHASE_BANK_TAB_REAGENT"] = ""
 --	L["LABEL"] = ""
+--	L["ABORTED"] = ""
 	
 	
 -- libdatabroker

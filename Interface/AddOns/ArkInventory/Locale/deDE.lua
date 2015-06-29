@@ -51,7 +51,7 @@ if not L then return end
 	
 	
 --	restack
---	L["RESTACK"] = "stapeln und umordnen"
+	L["RESTACK"] = "stapeln und umordnen"
 	L["RESTACK_TEXT"] = "Stapel werden maximal aufgef\195\188llt und Gegenst\195\164nde in ihre Spezialtaschen umgeordnet"
 	L["RESTACK_FAIL_WAIT"] = "Die Gegenst\195\164nde werden bereits gestapelt und umgeordnet, bitte warten"
 	L["RESTACK_FAIL_ACCESS"] = "Du hast keine Rechte um die Gegenst\195\164nde in Fach %2$s der %1$s zu stapeln oder umzuordnen"
@@ -640,6 +640,7 @@ if not L then return end
 --	L["TOOLTIP_PURCHASE_BANK_BAG_SLOT"] = ""
 --	L["TOOLTIP_PURCHASE_BANK_TAB_REAGENT"] = ""
 --	L["LABEL"] = ""
+--	L["ABORTED"] = ""
 	
 	
 -- libdatabroker

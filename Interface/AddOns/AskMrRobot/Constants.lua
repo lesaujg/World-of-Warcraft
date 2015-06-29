@@ -148,6 +148,7 @@ function Amr.CreateItemLink(itemObj)
     
     table.insert(parts, 0)
     table.insert(parts, UnitLevel("player"))
+	table.insert(parts, 0) -- unknown
     table.insert(parts, itemObj.upgradeId)
     table.insert(parts, 0)
     

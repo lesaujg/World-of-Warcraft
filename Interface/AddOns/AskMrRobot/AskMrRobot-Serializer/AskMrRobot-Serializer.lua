@@ -1,7 +1,7 @@
 -- AskMrRobot-Serializer will serialize and communicate character data between users.
 -- This is used primarily to associate character information to logs uploaded to askmrrobot.com.
 
-local MAJOR, MINOR = "AskMrRobot-Serializer", 24
+local MAJOR, MINOR = "AskMrRobot-Serializer", 25
 local Amr, oldminor = LibStub:NewLibrary(MAJOR, MINOR)
 
 if not Amr then return end -- already loaded by something else
@@ -596,6 +596,7 @@ function Amr.ParseItemLink(itemLink)
     item.suffixId = math.abs(tonumber(parts[7])) -- convert suffix to positive number, that's what we use in our code
     --item.uniqueId = tonumber(parts[8])
     --item.level = tonumber(parts[9])
+	-- part 10 is unknown atm
     item.upgradeId = tonumber(parts[11])
     --item.difficultyId = tonumber(parts[12])
     

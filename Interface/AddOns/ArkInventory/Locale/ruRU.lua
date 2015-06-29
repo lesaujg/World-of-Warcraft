@@ -51,7 +51,7 @@ if not L then return end
 	
 	
 --	restack
---	L["RESTACK"] = "Сжать и собрать"
+	L["RESTACK"] = "Сжать и собрать"
 	L["RESTACK_TEXT"] = "собрать предметы в как можно меньшее количество стэков, используя по возможности слоты специальных сумок"
 	L["RESTACK_FAIL_WAIT"] = "Операция пересборки уже выполняется, пожалуйста подождите"
 	L["RESTACK_FAIL_ACCESS"] = "У вас недостаточно прав, чтобы пересобрать закладку %2$s в %1$s" -- 1 = guild bank, 2 = tab number
@@ -640,6 +640,7 @@ if not L then return end
 --	L["TOOLTIP_PURCHASE_BANK_BAG_SLOT"] = ""
 --	L["TOOLTIP_PURCHASE_BANK_TAB_REAGENT"] = ""
 --	L["LABEL"] = ""
+--	L["ABORTED"] = ""
 	
 	
 -- libdatabroker

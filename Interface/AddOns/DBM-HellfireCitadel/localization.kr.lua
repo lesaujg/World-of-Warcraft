@@ -49,6 +49,18 @@ L:SetMiscLocalization({
 --------------------
 L= DBM:GetModLocalization(1372)
 
+L:SetTimerLocalization({
+	SoDDPS		= "다음 그림자 (%s)",
+	SoDTank		= "다음 그림자 (%s)",
+	SoDHealer	= "다음 그림자 (%s)"
+})
+
+L:SetOptionLocalization({
+	SoDDPS		= "다음 $spell:179864 대상 바 보기(공격 전담)",
+	SoDTank		= "다음 $spell:179864 대상 바 보기(방어 전담)",
+	SoDHealer	= "다음 $spell:179864 대상 바 보기(치유 전담)"
+})
+
 --------------------------
 -- Shadow-Lord Iskar --
 --------------------------
@@ -76,6 +88,7 @@ L:SetOptionLocalization({
 	Iconed				= "해골, 엑스, 동그라미, 달, 역삼각형(기둥 위치를 사용할 경우)",--Default
 	Numbered			= "1, 2, 3, 4, 5(번호로 지정된 위치를 사용할 경우)",
 	DirectionLine		= "왼쪽, 중앙 왼쪽, 중앙, 중앙 오른쪽, 오른쪽.(일직선 진형을 사용할 경우)",
+	FreeForAll			= "위지 지정하지 않음. 기본 대화 알림 사용",
 	--Currently these 3 below are unused unless I see anyone want/need them
 	CrossPerception		= "앞, 뒤, 가운데, 왼쪽, 오른쪽(십자가 진형을 사용할 경우)",--Unsure if viable with 5 targets/will remain
 	CrossCardinal		= "동쪽, 서쪽, 남쪽, 북쪽, 가운데(십자가 진형을 사용할 경우)",--Unsure if viable 5 targets/will remain
@@ -95,10 +108,10 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(1447)
 
 L:SetOptionLocalization({
-	ChainsBehavior		= "Fel Chains 경고 방식 설정",
+	ChainsBehavior		= "지옥의 사슬 대상 경고 방식 설정",
 	Cast				= "시전 시작시 바라보는 대상만 알림. 바는 시전 시작에 맞추어 갱신됩니다.",
-	Applied				= "시전 완료후 모든 대상 알림. 바는 시전 완료에 맞추어 갱신됩니다.",
-	Both				= "시작 및 완료시 모두 알림. 바는 시전 시작에 맞추어 갱신됩니다."
+	Applied				= "시전 완료후 약화 효과 대상 알림. 바는 시전 완료에 맞추어 갱신됩니다.",
+	Both				= "시전 시작 및 완료시 모두 알림"
 })
 
 --------------------------
@@ -126,11 +139,11 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(1438)
 
 L:SetWarningLocalization({
-	specWarnBreakShackle	= "Shackled Torment: Break %s!"
+	specWarnBreakShackle	= "구속된 고통: %s로 빠지세요!"
 })
 
 L:SetOptionLocalization({
-	specWarnBreakShackle	= "$spell:184964 대상이 된 경우 특수 경고 보기. 이 경고는 최소의 피해만 줄 수 있는 대상에게 자동 할당됩니다.",
+	specWarnBreakShackle	= "$spell:184964 대상이 된 경우 특수 경고 보기(빠지는 순서가 자동으로 할당됩니다.)",
 	FilterOtherPhase		= "당신과 다른 위상에 있는 주문 경고 숨기기"
 })
 

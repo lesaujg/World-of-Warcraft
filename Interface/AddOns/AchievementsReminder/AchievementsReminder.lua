@@ -10,7 +10,7 @@ end
 
 ralldatabase()
 
-  achievementsreminderver=6.103
+  achievementsreminderver=6.104
 
 
 	if ralloptions==nil then ralloptions={1,1,0,0,0,0,1,0,0,0,0,0} end
@@ -762,7 +762,7 @@ ralloptionTrackCharAchievesCB = CreateFrame("CheckButton", nil, zzralistach, "Op
 ralloptionTrackCharAchievesCB:SetWidth("20")
 ralloptionTrackCharAchievesCB:SetHeight("20")
 ralloptionTrackCharAchievesCB:SetPoint("TOPLEFT", 350, -229)
-ralloptionTrackCharAchievesCB:SetScript("OnClick", function(self) if ralloptionTrackCharAchieves then ralloptionTrackCharAchieves=false else ralloptionTrackCharAchieves=true end end )
+ralloptionTrackCharAchievesCB:SetScript("OnClick", function(self) if ralloptionTrackCharAchieves then ralloptionTrackCharAchieves=false icllcheckachieves() else ralloptionTrackCharAchieves=true icllcheckachieves() end end )
 local t2 = zzralistach:CreateFontString()
 t2:SetFont(GameFontNormal:GetFont(), 11)
 t2:SetText("NEW! "..ralltextoptionCharAch)

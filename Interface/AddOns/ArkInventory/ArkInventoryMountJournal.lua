@@ -176,13 +176,12 @@ end
 
 function ArkInventory.MountJournal.SkillLevel( )
 	
---	if true then return 75 end
-	
 	local skill = 0
 	
 	if UnitLevel( "player" ) < PLAYER_MOUNT_LEVEL then
 		
-		--ArkInventory.Output( "player level is too low for flying" )
+		--ArkInventory.Output( "player level is too low" )
+		skill = 1
 		
 	else
 		
