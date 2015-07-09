@@ -516,6 +516,54 @@ TradeSkillMaster_DestroyingDB = {
 					},
 					["item"] = "item:15243:0:0:0:0:0:-20",
 				}, -- [62]
+				{
+					["time"] = 1435922949,
+					["isDraenicEnchanting"] = true,
+					["result"] = {
+						["item:52555:0:0:0:0:0:0"] = 3,
+					},
+					["item"] = "item:55417:0:0:0:0:0:-43",
+				}, -- [63]
+				{
+					["time"] = 1435922952,
+					["isDraenicEnchanting"] = true,
+					["result"] = {
+						["item:52555:0:0:0:0:0:0"] = 4,
+					},
+					["item"] = "item:55620:0:0:0:0:0:-135",
+				}, -- [64]
+				{
+					["time"] = 1435922956,
+					["isDraenicEnchanting"] = true,
+					["result"] = {
+						["item:11083:0:0:0:0:0:0"] = 3,
+					},
+					["item"] = "item:7330:0:0:0:0:0:-18",
+				}, -- [65]
+				{
+					["time"] = 1435922959,
+					["isDraenicEnchanting"] = true,
+					["result"] = {
+						["item:34054:0:0:0:0:0:0"] = 4,
+					},
+					["item"] = "item:36177:0:0:0:0:0:-40",
+				}, -- [66]
+				{
+					["time"] = 1435923009,
+					["isDraenicEnchanting"] = true,
+					["result"] = {
+						["item:11174:0:0:0:0:0:0"] = 2,
+					},
+					["item"] = "item:3187:0:0:0:0:0:-78",
+				}, -- [67]
+				{
+					["result"] = {
+						["item:22445:0:0:0:0:0:0"] = 2,
+					},
+					["isDraenicEnchanting"] = true,
+					["item"] = "item:24897:0:0:0:0:0:-18",
+					["time"] = 1436233822,
+				}, -- [68]
 			},
 		},
 	},

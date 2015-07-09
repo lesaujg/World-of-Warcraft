@@ -532,9 +532,9 @@ local function tryEquipNextItem()
 	end
 	
 	-- bank
-	bestItem, bestDiff = scanBagForItem(item, BANK_CONTAINER, bestItem, bestDiff, bestLink)
+	bestItem, bestDiff, bestLink = scanBagForItem(item, BANK_CONTAINER, bestItem, bestDiff, bestLink)
 	for bagId = NUM_BAG_SLOTS + 1, NUM_BAG_SLOTS + NUM_BANKBAGSLOTS do
-		bestItem, bestDiff = scanBagForItem(item, bagId, bestItem, bestDiff, bestLink)
+		bestItem, bestDiff, bestLink = scanBagForItem(item, bagId, bestItem, bestDiff, bestLink)
 	end
 	
 	ClearCursor()
@@ -666,18 +666,19 @@ local function startEquipGearSet(spec)
 		old = Amr.ParseItemLink(old)
 		
 		local new = gear[slotId]
-		
-		local diff = countItemDifferences(old, new)
-		if diff < 1000 then
-			-- same item, see if inventory has one that is closer (e.g. a duplicate item with correct enchants/gems)
-			local bestLink, bestItem, bestDiff = Amr:FindMatchingItem(new, player, usedItems)
-			if bestDiff and bestDiff < diff then
+		if new then
+			local diff = countItemDifferences(old, new)
+			if diff < 1000 then
+				-- same item, see if inventory has one that is closer (e.g. a duplicate item with correct enchants/gems)
+				local bestLink, bestItem, bestDiff = Amr:FindMatchingItem(new, player, usedItems)
+				if bestDiff and bestDiff < diff then
+					itemsToEquip[slotId] = new
+					remaining = remaining + 1
+				end
+			else
 				itemsToEquip[slotId] = new
 				remaining = remaining + 1
 			end
-		else
-			itemsToEquip[slotId] = new
-			remaining = remaining + 1
 		end
 	end
 

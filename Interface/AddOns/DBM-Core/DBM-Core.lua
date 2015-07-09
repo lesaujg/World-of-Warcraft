@@ -52,9 +52,9 @@
 --  Globals/Default Options  --
 -------------------------------
 DBM = {
-	Revision = tonumber(("$Revision: 13933 $"):sub(12, -3)),
-	DisplayVersion = "6.2.1", -- the string that is shown as version
-	ReleaseRevision = 13933 -- the revision of the latest stable version that is available
+	Revision = tonumber(("$Revision: 14050 $"):sub(12, -3)),
+	DisplayVersion = "6.2.4", -- the string that is shown as version
+	ReleaseRevision = 14050 -- the revision of the latest stable version that is available
 }
 DBM.HighestRelease = DBM.ReleaseRevision --Updated if newer version is detected, used by update nags to reflect critical fixes user is missing on boss pulls
 
@@ -269,7 +269,7 @@ DBM.DefaultOptions = {
 	ShowRespawn = true,
 	ShowQueuePop = true,
 	HelpMessageShown3 = false,
-	NewsMessageShown = 1,
+	NewsMessageShown = 2,
 	MoviesSeen = {},
 	MovieFilter = "AfterFirst",
 	LastRevision = 0,
@@ -388,7 +388,7 @@ local statusWhisperDisabled = false
 local wowTOC = select(4, GetBuildInfo())
 local dbmToc = 0
 
-local fakeBWRevision = 13225
+local fakeBWRevision = 13354
 
 local enableIcons = true -- set to false when a raid leader or a promoted player has a newer version of DBM
 local guiRequested = false
@@ -2050,14 +2050,23 @@ do
 	local fakeMod -- dummy mod for the count sound effects
 	--Standard Pizza Timer
 	function DBM:CreatePizzaTimer(time, text, broadcast, sender, count, loop, terminate)
-		if terminate then
+		if not fakeMod then
+			fakeMod = self:NewMod("CreateCountTimerDummy")
+			self:GetModLocalization("CreateCountTimerDummy"):SetGeneralLocalization{ name = DBM_CORE_MINIMAP_TOOLTIP_HEADER }
+			fakeMod.countdown = fakeMod:NewCountdown(0, 0, nil, nil, nil, true)
+		end
+		if terminate or time == 0 then
 			self:Unschedule(loopTimer)
+			fakeMod.countdown:Cancel()
+			self.Bars:CancelBar(text)
+			self:Unschedule(countDownTextDelay)
+			TimerTracker_OnEvent(TimerTracker, "PLAYER_ENTERING_WORLD")
 			return
 		end
 		if sender and ignore[sender] then return end
 		text = text:sub(1, 16)
 		text = text:gsub("%%t", UnitName("target") or "<no target>")
-		if time < 2 then
+		if time < 3 then
 			self:AddMsg(DBM_PIZZA_ERROR_USAGE)
 			return
 		end
@@ -2175,6 +2184,8 @@ do
 			showPopupConfirmIgnore(ignore, cancel)
 		elseif arg1 == "update" then
 			DBM:ShowUpdateReminder(arg2, arg3) -- displayVersion, revision
+		elseif arg1 == "forumsnews" then
+			DBM:ShowUpdateReminder(nil, nil, DBM_FORUMS_COPY_URL_DIALOG_NEWS, "http://forums.elitistjerks.com/topic/133665-new-feature-color-bars-by-type/")
 		elseif arg1 == "forums" then
 			DBM:ShowUpdateReminder(nil, nil, DBM_FORUMS_COPY_URL_DIALOG)
 		elseif arg1 == "showRaidIdResults" then
@@ -4484,7 +4495,7 @@ end
 --  Update Reminder  --
 -----------------------
 do
-	local frame, fontstring, fontstringFooter
+	local frame, fontstring, fontstringFooter, editBox, urlText
 
 	local function createFrame()
 		frame = CreateFrame("Frame", "DBMUpdateReminder", UIParent)
@@ -4501,7 +4512,7 @@ do
 		fontstring:SetWidth(410)
 		fontstring:SetHeight(0)
 		fontstring:SetPoint("TOP", 0, -16)
-		local editBox = CreateFrame("EditBox", nil, frame)
+		editBox = CreateFrame("EditBox", nil, frame)
 		do
 			local editBoxLeft = editBox:CreateTexture(nil, "BACKGROUND")
 			local editBoxRight = editBox:CreateTexture(nil, "BACKGROUND")
@@ -4529,10 +4540,10 @@ do
 		editBox:SetFontObject("GameFontHighlight")
 		editBox:SetTextInsets(0, 0, 0, 1)
 		editBox:SetFocus()
-		editBox:SetText(DBM_CORE_UPDATEREMINDER_URL or "http://www.deadlybossmods.com")
+		editBox:SetText(urlText)
 		editBox:HighlightText()
 		editBox:SetScript("OnTextChanged", function(self)
-			editBox:SetText(DBM_CORE_UPDATEREMINDER_URL or "http://www.deadlybossmods.com")
+			editBox:SetText(urlText)
 			editBox:HighlightText()
 		end)
 		fontstringFooter = frame:CreateFontString(nil, "ARTWORK", "GameFontNormal")
@@ -4555,9 +4566,13 @@ do
 
 	end
 
-	function DBM:ShowUpdateReminder(newVersion, newRevision, text)
+	function DBM:ShowUpdateReminder(newVersion, newRevision, text, url)
+		urlText = url or DBM_CORE_UPDATEREMINDER_URL or "http://www.deadlybossmods.com"
 		if not frame then
 			createFrame()
+		else
+			editBox:SetText(urlText)
+			editBox:HighlightText()
 		end
 		frame:Show()
 		if newVersion then
@@ -5312,17 +5327,25 @@ do
 						speedTimer:Start()
 					end
 				end
-				if self.Options.CRT_Enabled and savedDifficulty ~= "worldboss" and not self.Options.DontShowBossTimers then
-					if difficultyIndex == 14 or difficultyIndex == 15 or difficultyIndex == 17 then--Flexible difficulties
+				--Combat Rez timer, if not a world boss or 5 man dungeon.
+				if self.Options.CRT_Enabled and difficultyIndex ~= 0 and difficultyIndex ~= 1 and difficultyIndex ~= 2 and difficultyIndex ~= 19 and difficultyIndex ~= 24 and not self.Options.DontShowBossTimers then
+					local charges, maxCharges, started, duration = GetSpellCharges(20484)
+					if charges then
+						local time = duration - (GetTime() - started)
+						loopCRTimer(time, mod)
+						self:Debug("CRT started by charges", 2)
+					elseif difficultyIndex == 14 or difficultyIndex == 15 or difficultyIndex == 17 then--Flexible difficulties
 						local time = 90/LastGroupSize
 						time = time * 60
 						loopCRTimer(time, mod)
+						self:Debug("CRT started by Flexible code", 2)
 					else--Fixed difficulties (LastGroupSize cannot be trusted, this INCLUDES mythic. If you underman mythic then it is NOT 90/20)
 						local realGroupSize = self:GetNumRealPlayersInZone()
 						if realGroupSize > 1 then
 							local time = 90/realGroupSize
 							time = time * 60
 							loopCRTimer(time, mod)
+							self:Debug("CRT started by iffy fixed size code", 2)
 						end
 					end
 				end
@@ -5509,6 +5532,10 @@ do
 				if mod.vb.phase then
 					wipeHP = wipeHP.." ("..SCENARIO_STAGE:format(mod.vb.phase)..")"
 				end
+				if mod.numBoss then
+					local bossesKilled = mod.numBoss - mod.vb.bossLeft
+					wipeHP = wipeHP.." ("..BOSSES_KILLED:format(bossesKilled, mod.numBoss)..")"
+				end
 				local totalPulls = mod.stats[statVarTable[savedDifficulty].."Pulls"]
 				local totalKills = mod.stats[statVarTable[savedDifficulty].."Kills"]
 				if thisTime < 30 then -- Normally, one attempt will last at least 30 sec.
@@ -5548,29 +5575,13 @@ do
 						if scenario then
 							msg = msg or chatPrefixShort..DBM_CORE_WHISPER_SCENARIO_END_WIPE_STATS:format(playerName, difficultyText..(name or ""), totalPulls - totalKills)
 						else
-							local hpText = wipeHP
-							if mod.vb.phase then
-								hpText = hpText.." ("..SCENARIO_STAGE:format(mod.vb.phase)..")"
-							end
-							if mod.numBoss then
-								local bossesKilled = mod.numBoss - mod.vb.bossLeft
-								hpText = hpText.." ("..BOSSES_KILLED:format(bossesKilled, mod.numBoss)..")"
-							end
-							msg = msg or chatPrefixShort..DBM_CORE_WHISPER_COMBAT_END_WIPE_STATS_AT:format(playerName, difficultyText..(name or ""), hpText, totalPulls - totalKills)
+							msg = msg or chatPrefixShort..DBM_CORE_WHISPER_COMBAT_END_WIPE_STATS_AT:format(playerName, difficultyText..(name or ""), wipeHP, totalPulls - totalKills)
 						end
 					else
 						if scenario then
 							msg = msg or chatPrefixShort..DBM_CORE_WHISPER_SCENARIO_END_WIPE:format(playerName, difficultyText..(name or ""))
 						else
-							local hpText = wipeHP
-							if mod.vb.phase then
-								hpText = hpText.." ("..SCENARIO_STAGE:format(mod.vb.phase)..")"
-							end
-							if mod.numBoss then
-								local bossesKilled = mod.numBoss - mod.vb.bossLeft
-								hpText = hpText.." ("..BOSSES_KILLED:format(bossesKilled, mod.numBoss)..")"
-							end
-							msg = msg or chatPrefixShort..DBM_CORE_WHISPER_COMBAT_END_WIPE_AT:format(playerName, difficultyText..(name or ""), hpText)
+							msg = msg or chatPrefixShort..DBM_CORE_WHISPER_COMBAT_END_WIPE_AT:format(playerName, difficultyText..(name or ""), wipeHP)
 						end
 					end
 					sendWhisper(k, msg)
@@ -6117,7 +6128,7 @@ do
 		end
 		self:Schedule(20, function() if not self.Options.ForumsMessageShown then self.Options.ForumsMessageShown = self.ReleaseRevision self:AddMsg(DBM_FORUMS_MESSAGE) end end)
 		self:Schedule(30, function() if not self.Options.SettingsMessageShown then self.Options.SettingsMessageShown = true self:AddMsg(DBM_HOW_TO_USE_MOD) end end)
-		self:Schedule(40, function() if DBM.Options.NewsMessageShown < 2 then DBM.Options.NewsMessageShown = 2 self:AddMsg(DBM_CORE_WHATS_NEW) end end)
+		self:Schedule(40, function() if DBM.Options.NewsMessageShown < 3 then DBM.Options.NewsMessageShown = 3 self:AddMsg(DBM_CORE_WHATS_NEW) end end)
 		if type(RegisterAddonMessagePrefix) == "function" then
 			if not RegisterAddonMessagePrefix("D4") then -- main prefix for DBM4
 				self:AddMsg("Error: unable to register DBM addon message prefix (reached client side addon message filter limit), synchronization will be unavailable") -- TODO: confirm that this actually means that the syncs won't show up
@@ -6388,12 +6399,9 @@ end
 do
 	local testMod
 	local testWarning1, testWarning2, testWarning3
-	local testTimer
-	local testCount1
-	local testCount2
-	local testSpecialWarning1
-	local testSpecialWarning2
-	local testSpecialWarning3
+	local testTimer1, testTimer2, testTimer3, testTimer4, testTimer5, testTimer6, testTimer7
+	local testCount1, testCount2
+	local testSpecialWarning1, testSpecialWarning2, testSpecialWarning3
 	function DBM:DemoMode()
 		if not testMod then
 			testMod = self:NewMod("TestMod")
@@ -6401,25 +6409,30 @@ do
 			testWarning1 = testMod:NewAnnounce("%s", 1, "Interface\\Icons\\Spell_Nature_WispSplode")
 			testWarning2 = testMod:NewAnnounce("%s", 2, "Interface\\Icons\\Spell_Shadow_ShadesOfDarkness")
 			testWarning3 = testMod:NewAnnounce("%s", 3, "Interface\\Icons\\Spell_Fire_SelfDestruct")
-			testTimer = testMod:NewTimer(20, "%s", nil, false)
+			testTimer1 = testMod:NewTimer(20, "%s", "Interface\\Icons\\Spell_Nature_WispSplode", nil, nil)
+			testTimer2 = testMod:NewTimer(20, "%s ", "Interface\\ICONS\\INV_Misc_Head_Orc_01.blp", nil, nil, 1)
+			testTimer3 = testMod:NewTimer(20, "%s  ", "Interface\\Icons\\Spell_Shadow_ShadesOfDarkness", nil, nil, 3)
+			testTimer4 = testMod:NewTimer(20, "%s   ", "Interface\\Icons\\Spell_Nature_WispSplode", nil, nil, 4)
+			testTimer5 = testMod:NewTimer(20, "%s    ", "Interface\\Icons\\Spell_Fire_SelfDestruct", nil, nil, 2)
+			testTimer6 = testMod:NewTimer(20, "%s     ", "Interface\\Icons\\Spell_Nature_WispSplode", nil, nil, 5)
+			testTimer7 = testMod:NewTimer(20, "%s      ", "Interface\\Icons\\Spell_Nature_WispSplode", nil, nil, 6)
 			testCount1 = testMod:NewCountdown(0, 0, nil, nil, nil, true)
 			testCount2 = testMod:NewCountdown(0, 0, nil, nil, nil, true, true)
 			testSpecialWarning1 = testMod:NewSpecialWarning("%s")
 			testSpecialWarning2 = testMod:NewSpecialWarning(" %s ", nil, nil, nil, 2)
 			testSpecialWarning3 = testMod:NewSpecialWarning("  %s  ", nil, nil, nil, 3) -- hack: non auto-generated special warnings need distinct names (we could go ahead and give them proper names with proper localization entries, but this is much easier)
 		end
-		testTimer:Start(20, "Pew Pew Pew...")
-		testTimer:UpdateIcon("Interface\\Icons\\Spell_Nature_Starfall", "Pew Pew Pew...")
-		testTimer:Start(10, "Test Bar")
-		testTimer:UpdateIcon("Interface\\Icons\\Spell_Nature_WispSplode", "Test Bar")
-		testTimer:Start(43, "Evil Spell")
+		testTimer1:Start(10, "Test Bar")
+		testTimer2:Start(30, "Adds")
+		testTimer3:Start(43, "Evil Debuff")
+		testTimer4:Start(20, "Important Interrupt")
+		testTimer5:Start(60, "Boom!")
+		testTimer6:Start(35, "Handle your Role")
+		testTimer7:Start(50, "Next Phase")
 		testCount1:Cancel()
 		testCount1:Start(43)
-		testTimer:UpdateIcon("Interface\\Icons\\Spell_Shadow_ShadesOfDarkness", "Evil Spell")
-		testTimer:Start(60, "Boom!")
 		testCount2:Cancel()
 		testCount2:Start(60)
-		testTimer:UpdateIcon("Interface\\Icons\\Spell_Fire_SelfDestruct", "Boom!")
 		testWarning1:Cancel()
 		testWarning2:Cancel()
 		testWarning3:Cancel()
@@ -6828,6 +6841,16 @@ end
 
 function bossModPrototype:LatencyCheck()
 	return select(4, GetNetStats()) < DBM.Options.LatencyThreshold
+end
+
+function bossModPrototype:CheckBigWigs(name)
+	if raid[name].bwrevision then
+		return raid[name].bwrevision
+	elseif raid[name].bwarevision then
+		return raid[name].bwarevision
+	else
+		return false
+	end
 end
 
 bossModPrototype.AntiSpam = DBM.AntiSpam
@@ -8664,6 +8687,10 @@ do
 	function bossModPrototype:NewFadesYell(...)
 		return newYell(self, "fade", ...)
 	end
+	
+	function bossModPrototype:NewPosYell(...)
+		return newYell(self, "position", ...)
+	end
 end
 
 ------------------------------
@@ -8900,12 +8927,18 @@ do
 						if DBM.Options.SWarnNameInNote and noteText:find(playerName) then
 							noteHasName = 5
 						end
+						if self.announceType and self.announceType:find("switch") then
+							noteText = noteText:gsub(">.-<", classColoringFunction)--Class color note text before combining with warning text.
+						end
 						noteText = " ("..noteText..")"
 						text = text..noteText
 					end
 				end
 			end
-			text = text:gsub(">.-<", classColoringFunction)
+			--No stripping on switch warnings, ever. They will NEVER have player name, but often have adds with "-" in name
+			if self.announceType and not self.announceType:find("switch") then
+				text = text:gsub(">.-<", classColoringFunction)
+			end
 			DBM:AddSpecialWarning(text)
 			self.combinedcount = 0
 			self.combinedtext = {}
@@ -9463,7 +9496,11 @@ do
 				DBM:Debug("Timer autocorrected by "..debugtemp, 2)
 				timer = self.correctedCast
 			end
-			local bar = DBM.Bars:CreateBar(timer, id, self.icon)
+			local colorId = 0
+			if self.option then
+				colorId = self.mod.Options[self.option .. "TColor"]
+			end
+			local bar = DBM.Bars:CreateBar(timer, id, self.icon, nil, nil, nil, nil, colorId)
 			if not bar then
 				return false, "error" -- creating the timer failed somehow, maybe hit the hard-coded timer limit of 15
 			end
@@ -9590,14 +9627,14 @@ do
 		end
 	end
 
-	function timerPrototype:AddOption(optionDefault, optionName)
+	function timerPrototype:AddOption(optionDefault, optionName, colorType)
 		if optionName ~= false then
 			self.option = optionName or self.id
-			self.mod:AddBoolOption(self.option, optionDefault, "timer")
+			self.mod:AddBoolOption(self.option, optionDefault, "timer", nil, colorType)
 		end
 	end
 
-	function bossModPrototype:NewTimer(timer, name, icon, optionDefault, optionName, r, g, b)
+	function bossModPrototype:NewTimer(timer, name, icon, optionDefault, optionName, colorType, r, g, b)
 		local icon = (type(icon) == "string" and icon:match("ej%d+") and select(4, EJ_GetSectionInfo(string.sub(icon, 3))) ~= "" and select(4, EJ_GetSectionInfo(string.sub(icon, 3)))) or (type(icon) == "number" and GetSpellTexture(icon)) or icon or "Interface\\Icons\\Spell_Nature_WispSplode"
 		local obj = setmetatable(
 			{
@@ -9605,6 +9642,7 @@ do
 				timer = timer,
 				id = name,
 				icon = icon,
+				colorType = colorType,
 				r = r,
 				g = g,
 				b = b,
@@ -9613,21 +9651,28 @@ do
 			},
 			mt
 		)
-		obj:AddOption(optionDefault, optionName)
+		obj:AddOption(optionDefault, optionName, colorType)
 		tinsert(self.timers, obj)
 		return obj
 	end
 
 	-- new constructor for the new auto-localized timer types
 	-- note that the function might look unclear because it needs to handle different timer types, especially achievement timers need special treatment
-	-- todo: disable the timer if the player already has the achievement and when the ACHIEVEMENT_EARNED event is fired
-	-- problem: heroic/normal achievements :[
-	-- local achievementTimers = {}
-	local function newTimer(self, timerType, timer, spellId, timerText, optionDefault, optionName, texture, r, g, b, optionVersion)
+	-- local function newTimer(self, timerType, timer, spellId, timerText, optionDefault, optionName, texture, r, g, b, optionVersion, colorType)
+	local function newTimer(self, timerType, timer, spellId, timerText, optionDefault, optionName, colorType, texture, r, g, b)
 		if type(timer) == "string" and timer:match("OptionVersion") then
-			local temp = optionVersion
-			optionVersion = string.sub(timer, 14)
-			timer, spellId, timerText, optionDefault, optionName, texture, r, g, b = spellId, timerText, optionDefault, optionName, texture, r, g, b, temp
+			DBM:Debug("OptionVersion hack depricated, remove it from: "..spellId)
+			return
+		end
+		if type(colorType) == "number" and colorType > 6 then
+			DBM:Debug("texture is in the colorType arg for: "..spellId)
+		end
+		--Use option optionName for optionVersion as well, no reason to split.
+		--This ensures that remaining arg positions match for auto generated and regular NewTimer
+		local optionVersion
+		if type(optionName) == "number" then
+			optionVersion = optionName
+			optionName = nil
 		end
 		local allowdouble
 		if type(timer) == "string" and timer:match("d%d+") then
@@ -9639,14 +9684,14 @@ do
 		if timerType == "achievement" then
 			spellName = select(2, GetAchievementInfo(spellId))
 			icon = type(texture) == "number" and select(10, GetAchievementInfo(texture)) or texture or spellId and select(10, GetAchievementInfo(spellId))
---			if optionDefault == nil then
---				local completed = select(4, GetAchievementInfo(spellId))
---				optionDefault = not completed
---			end
 		elseif timerType == "cdspecial" or timerType == "nextspecial" or timerType == "phase" then
 			icon = type(texture) == "number" and GetSpellTexture(texture) or texture or type(spellId) == "string" and select(4, EJ_GetSectionInfo(string.sub(spellId, 3))) ~= "" and select(4, EJ_GetSectionInfo(string.sub(spellId, 3))) or (type(spellId) == "number" and GetSpellTexture(spellId)) or "Interface\\Icons\\Spell_Nature_WispSplode"
+			if timerType == "phase" then
+				colorType = 6
+			end
 		elseif timerType == "roleplay" then
 			icon = "Interface\\Icons\\Spell_Holy_BorrowedTime"
+			colorType = 6
 		else
 			if type(spellId) == "string" and spellId:match("ej%d+") then
 				spellName = EJ_GetSectionInfo(string.sub(spellId, 3)) or ""
@@ -9669,6 +9714,7 @@ do
 				timer = timer,
 				id = id,
 				icon = icon,
+				colorType = colorType,
 				r = r,
 				g = g,
 				b = b,
@@ -9678,7 +9724,7 @@ do
 			},
 			mt
 		)
-		obj:AddOption(optionDefault, optionName)
+		obj:AddOption(optionDefault, optionName, colorType)
 		tinsert(self.timers, obj)
 		-- todo: move the string creation to the GUI with SetFormattedString...
 		if timerType == "achievement" then
@@ -9871,13 +9917,19 @@ end
 ---------------
 --  Options  --
 ---------------
-function bossModPrototype:AddBoolOption(name, default, cat, func)
+function bossModPrototype:AddBoolOption(name, default, cat, func, extraOption)
 	cat = cat or "misc"
 	self.DefaultOptions[name] = (default == nil) or default
+	if cat == "timer" then
+		self.DefaultOptions[name.."TColor"] = extraOption or 0
+	end
 	if default and type(default) == "string" then
 		default = self:GetRoleFlagValue(default)
 	end
 	self.Options[name] = (default == nil) or default
+	if cat == "timer" then
+		self.Options[name.."TColor"] = extraOption or 0
+	end
 	self:SetOptionCategory(name, cat)
 	if func then
 		self.optionFuncs = self.optionFuncs or {}
@@ -10295,10 +10347,6 @@ end
 
 function bossModPrototype:SetHotfixNoticeRev(revision)
 	self.hotfixNoticeRev = revision
-end
-
-function bossModPrototype:SetRespawnTime(time)
-	self.respawnTime = time
 end
 
 -----------------

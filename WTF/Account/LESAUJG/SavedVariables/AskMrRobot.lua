@@ -3,8 +3,8 @@ AskMrRobotDb2 = {
 	["char"] = {
 		["Galinar - Sisters of Elune"] = {
 			["Logging"] = {
-				["LastDiff"] = 2,
-				["LastZone"] = "Auchindoun: Sethekk Halls",
+				["LastDiff"] = 1,
+				["LastZone"] = "SMV Alliance Garrison Level 1",
 			},
 			["Equipped"] = {
 				{
@@ -18,8 +18,8 @@ AskMrRobotDb2 = {
 					"|cffa335ee|Hitem:101797:0:0:0:0:0:-371:929038404:91:70:4:0:0:491|h[Cliffbreaker Sabatons of the Earthfall]|h|r", -- [8]
 					"|cffa335ee|Hitem:101799:0:0:0:0:0:-346:148832307:91:70:4:0:0:491|h[Cliffbreaker Vambraces of the Decimator]|h|r", -- [9]
 					"|cff1eff00|Hitem:112811:0:0:0:0:0:0:0:91:70:0:1:0|h[Wallbuilder Gauntlets]|h|r", -- [10]
-					"|cff0070dd|Hitem:118764:0:0:0:0:0:0:0:91:70:0:11:0|h[Ruby-Eye Seal]|h|r", -- [11]
-					"|cffa335ee|Hitem:101798:0:0:0:0:0:-352:378798131:91:70:4:0:0:491|h[Cliffbreaker Seal of the Landslide]|h|r", -- [12]
+					"|cff0070dd|Hitem:112799:0:0:0:0:0:0:0:91:70:0:1:0|h[Loop of Vile Lesions]|h|r", -- [11]
+					"|cff0070dd|Hitem:118764:0:0:0:0:0:0:0:91:70:0:11:0|h[Ruby-Eye Seal]|h|r", -- [12]
 					"|cff1eff00|Hitem:117194:0:0:0:0:0:0:0:91:70:0:0:0|h[Sunsoul Stone of Battle]|h|r", -- [13]
 					"|cffa335ee|Hitem:118779:0:0:0:0:0:0:0:91:70:0:0:0|h[Bladespike Charm]|h|r", -- [14]
 					"|cffe6cc80|Hitem:122260:0:0:0:0:0:0:0:91:70:0:0:1:583|h[Worn Stoneskin Gargoyle Cape]|h|r", -- [15]
@@ -33,45 +33,63 @@ AskMrRobotDb2 = {
 				["LastZone"] = "SMV Alliance Garrison Level 3",
 			},
 			["BankItems"] = {
-				"|cff0070dd|Hitem:37892:0:0:0:0:0:0:1245467008:100:0:0:0|h[Green Brewfest Stein]|h|r", -- [1]
-				"|cff1eff00|Hitem:44731:0:0:0:0:0:0:906283088:100:0:0:0|h[Bouquet of Ebon Roses]|h|r", -- [2]
-				"|cff1eff00|Hitem:23587:0:0:0:0:0:0:1152949973:100:0:0:0|h[Mirren's Drinking Hat]|h|r", -- [3]
-				"|cff0070dd|Hitem:33292:0:0:0:0:0:0:2008424057:100:0:0:0|h[Hallowed Helm]|h|r", -- [4]
-				"|cffffffff|Hitem:46723:0:0:0:0:0:0:310181760:100:0:0:0|h[Pilgrim's Hat]|h|r", -- [5]
-				"|cffffffff|Hitem:44803:0:0:0:0:0:0:-1040285671:100:0:0:0|h[Spring Circlet]|h|r", -- [6]
-				"|cffffffff|Hitem:46800:0:0:0:0:0:0:557735232:100:0:0:0|h[Pilgrim's Attire]|h|r", -- [7]
-				"|cffffffff|Hitem:44800:0:0:0:0:0:0:-442269671:100:0:0:0|h[Spring Robes]|h|r", -- [8]
-				"|cffffffff|Hitem:34685:0:0:0:0:0:0:0:100:0:0:0|h[Vestment of Summer]|h|r", -- [9]
-				"|cffffffff|Hitem:21541:0:0:0:0:0:0:0:100:0:0:0|h[Festive Black Pant Suit]|h|r", -- [10]
-				"|cffffffff|Hitem:34683:0:0:0:0:0:0:0:100:0:0:0|h[Sandals of Summer]|h|r", -- [11]
-				"|cff0070dd|Hitem:44597:0:0:0:0:0:0:941147264:100:0:0:0|h[Medallion of Heroism]|h|r", -- [12]
-				"|cff0070dd|Hitem:32481:0:0:0:0:0:0:212233872:100:0:0:0|h[Charm of Swift Flight]|h|r", -- [13]
-				"|cff0070dd|Hitem:10455:0:0:0:0:0:0:1939913195:100:0:0:0|h[Chained Essence of Eranikus]|h|r", -- [14]
-				"|cff1eff00|Hitem:19141:0:0:0:0:0:0:1863395700:100:0:0:0|h[Luffa]|h|r", -- [15]
-				"|cff1eff00|Hitem:11122:0:0:0:0:0:0:719396220:100:0:0:0|h[Carrot on a Stick]|h|r", -- [16]
-				"|cffffffff|Hitem:65906:0:0:0:0:0:0:0:100:0:0:0|h[Tabard of the Guardians of Hyjal]|h|r", -- [17]
-				"|cff1eff00|Hitem:18706:0:0:0:0:0:0:-1337081235:100:0:0:0|h[Arena Master]|h|r", -- [18]
-				"|cff1eff00|Hitem:25978:0:0:0:0:0:0:1225558204:100:0:0:0|h[Seth's Graphite Fishing Pole]|h|r", -- [19]
+				"|cff0070dd|Hitem:37892:0:0:0:0:0:0:1245467008:100:103:0:0:0|h[Green Brewfest Stein]|h|r", -- [1]
+				"|cff1eff00|Hitem:44731:0:0:0:0:0:0:906283088:100:103:0:0:0|h[Bouquet of Ebon Roses]|h|r", -- [2]
+				"|cff1eff00|Hitem:23587:0:0:0:0:0:0:1152949973:100:103:0:0:0|h[Mirren's Drinking Hat]|h|r", -- [3]
+				"|cff0070dd|Hitem:33292:0:0:0:0:0:0:2008424057:100:103:0:0:0|h[Hallowed Helm]|h|r", -- [4]
+				"|cffffffff|Hitem:46723:0:0:0:0:0:0:310181760:100:103:0:0:0|h[Pilgrim's Hat]|h|r", -- [5]
+				"|cffffffff|Hitem:44803:0:0:0:0:0:0:-1040285671:100:103:0:0:0|h[Spring Circlet]|h|r", -- [6]
+				"|cffffffff|Hitem:46800:0:0:0:0:0:0:557735232:100:103:0:0:0|h[Pilgrim's Attire]|h|r", -- [7]
+				"|cffffffff|Hitem:44800:0:0:0:0:0:0:-442269671:100:103:0:0:0|h[Spring Robes]|h|r", -- [8]
+				"|cffffffff|Hitem:34685:0:0:0:0:0:0:0:100:103:0:0:0|h[Vestment of Summer]|h|r", -- [9]
+				"|cffffffff|Hitem:21541:0:0:0:0:0:0:0:100:103:0:0:0|h[Festive Black Pant Suit]|h|r", -- [10]
+				"|cffffffff|Hitem:34683:0:0:0:0:0:0:0:100:103:0:0:0|h[Sandals of Summer]|h|r", -- [11]
+				"|cff0070dd|Hitem:44597:0:0:0:0:0:0:941147264:100:103:0:0:0|h[Medallion of Heroism]|h|r", -- [12]
+				"|cff0070dd|Hitem:32481:0:0:0:0:0:0:212233872:100:103:0:0:0|h[Charm of Swift Flight]|h|r", -- [13]
+				"|cff0070dd|Hitem:10455:0:0:0:0:0:0:1939913195:100:103:0:0:0|h[Chained Essence of Eranikus]|h|r", -- [14]
+				"|cff1eff00|Hitem:19141:0:0:0:0:0:0:1863395700:100:103:0:0:0|h[Luffa]|h|r", -- [15]
+				"|cff1eff00|Hitem:11122:0:0:0:0:0:0:719396220:100:103:0:0:0|h[Carrot on a Stick]|h|r", -- [16]
+				"|cffffffff|Hitem:65906:0:0:0:0:0:0:0:100:103:0:0:0|h[Tabard of the Guardians of Hyjal]|h|r", -- [17]
+				"|cff1eff00|Hitem:18706:0:0:0:0:0:0:-1337081235:100:103:0:0:0|h[Arena Master]|h|r", -- [18]
+				"|cff1eff00|Hitem:25978:0:0:0:0:0:0:1225558204:100:103:0:0:0|h[Seth's Graphite Fishing Pole]|h|r", -- [19]
 			},
 			["Equipped"] = {
 				{
 					"|cff0070dd|Hitem:114694:0:0:0:0:0:0:0:100:103:0:11:1:577|h[Beastrider Helm]|h|r", -- [1]
 					"|cff0070dd|Hitem:114415:0:0:0:0:0:0:0:100:103:0:1:1:140|h[Gorget of Whirling Blades of the Deft]|h|r", -- [2]
-					"|cff0070dd|Hitem:114396:0:0:0:0:0:0:0:100:103:0:1:2:77:42|h[Spaulders of Falling Leaves of the Savage]|h|r", -- [3]
+					"|cffa335ee|Hitem:114518:0:0:0:0:0:0:0:100:103:0:1:1:133|h[Spaulders of Determined Resolve of the Deft]|h|r", -- [3]
 					nil, -- [4]
-					"|cffe6cc80|Hitem:122383:0:0:0:0:0:0:0:100:103:0:0:1:583|h[Stained Shadowcraft Tunic]|h|r", -- [5]
+					"|cffa335ee|Hitem:114497:0:0:0:0:0:0:0:100:103:0:1:1:123|h[Chestguard of Determined Resolve of the Feverflare]|h|r", -- [5]
 					"|cff1eff00|Hitem:114707:0:0:0:0:0:0:0:100:103:0:11:0|h[Beastrider Belt]|h|r", -- [6]
 					"|cffe6cc80|Hitem:122254:0:0:0:0:0:0:0:100:103:0:0:1:583|h[Stained Shadowcraft Pants]|h|r", -- [7]
-					"|cff0070dd|Hitem:114380:0:0:0:0:0:0:0:100:103:0:1:1:235|h[Boots of Falling Leaves of the Strategist]|h|r", -- [8]
-					"|cff0070dd|Hitem:114372:0:0:0:0:0:0:0:100:103:0:1:2:146:40|h[Bracers of Falling Leaves of the Deft]|h|r", -- [9]
+					"|cffa335ee|Hitem:114502:0:0:0:0:0:0:0:100:103:0:1:2:32:560|h[Boots of Determined Resolve of the Fireflash]|h|r", -- [8]
+					"|cffa335ee|Hitem:113634:0:0:0:0:0:0:0:100:103:0:3:0|h[Bracers of Spare Skin]|h|r", -- [9]
 					"|cff1eff00|Hitem:114687:0:0:0:0:0:0:0:100:103:0:11:0|h[Beastrider Gloves]|h|r", -- [10]
-					"|cffa335ee|Hitem:40586:0:0:0:0:0:0:0:100:103:0:14:0|h[Band of the Kirin Tor]|h|r", -- [11]
-					"|cffa335ee|Hitem:108976:0:0:0:0:0:0:0:100:103:0:11:1:576|h[Sanctified Fel-Wrap Ring]|h|r", -- [12]
+					"|cff0070dd|Hitem:118255:0:0:0:0:0:0:0:100:103:0:0:0|h[Trophy Ring of Gordal]|h|r", -- [11]
+					"|cff0070dd|Hitem:118253:0:0:0:0:0:0:0:100:103:0:0:0|h[Trophy Band of Telaar]|h|r", -- [12]
 					"|cff0070dd|Hitem:116824:0:0:0:0:0:0:0:100:103:0:0:0|h[Rabid Talbuk Horn]|h|r", -- [13]
-					"|cff0070dd|Hitem:114366:0:0:0:0:0:0:0:100:103:0:1:0|h[Tormented Tooth of Ferocity]|h|r", -- [14]
+					"|cffa335ee|Hitem:114549:0:0:0:0:0:0:0:100:103:0:1:0|h[Grandiose Plans]|h|r", -- [14]
 					"|cffe6cc80|Hitem:122261:0:0:0:0:0:0:0:100:103:0:0:1:583|h[Inherited Cape of the Black Baron]|h|r", -- [15]
-					"|cff0070dd|Hitem:115316:0:0:0:0:0:0:0:100:103:0:1:2:183:560|h[Munificent Polearm of the Merciless]|h|r", -- [16]
+					"|cff0070dd|Hitem:115316:0:0:0:0:0:0:0:100:103:0:1:2:490:40|h[Munificent Polearm of the Adaptable]|h|r", -- [16]
 				}, -- [1]
+				{
+					"|cff0070dd|Hitem:114694:0:0:0:0:0:0:0:100:102:0:11:1:577|h[Beastrider Helm]|h|r", -- [1]
+					"|cff0070dd|Hitem:114415:0:0:0:0:0:0:0:100:102:0:1:1:140|h[Gorget of Whirling Blades of the Deft]|h|r", -- [2]
+					"|cff0070dd|Hitem:114396:0:0:0:0:0:0:0:100:102:0:1:2:131:43|h[Spaulders of Falling Leaves of the Deft]|h|r", -- [3]
+					nil, -- [4]
+					"|cffe6cc80|Hitem:122383:0:0:0:0:0:0:0:100:102:0:0:1:583|h[Stained Shadowcraft Tunic]|h|r", -- [5]
+					"|cff1eff00|Hitem:114707:0:0:0:0:0:0:0:100:102:0:11:0|h[Beastrider Belt]|h|r", -- [6]
+					"|cffe6cc80|Hitem:122254:0:0:0:0:0:0:0:100:102:0:0:1:583|h[Stained Shadowcraft Pants]|h|r", -- [7]
+					"|cff0070dd|Hitem:114380:0:0:0:0:0:0:0:100:102:0:1:2:75:563|h[Boots of Falling Leaves of the Savage]|h|r", -- [8]
+					"|cff0070dd|Hitem:114372:0:0:0:0:0:0:0:100:102:0:1:2:146:40|h[Bracers of Falling Leaves of the Deft]|h|r", -- [9]
+					"|cff1eff00|Hitem:114687:0:0:0:0:0:0:0:100:102:0:11:0|h[Beastrider Gloves]|h|r", -- [10]
+					"|cffa335ee|Hitem:40586:0:0:0:0:0:0:0:100:102:0:14:0|h[Band of the Kirin Tor]|h|r", -- [11]
+					"|cff0070dd|Hitem:118253:0:0:0:0:0:0:0:100:102:0:0:0|h[Trophy Band of Telaar]|h|r", -- [12]
+					"|cff0070dd|Hitem:116824:0:0:0:0:0:0:0:100:102:0:0:0|h[Rabid Talbuk Horn]|h|r", -- [13]
+					"|cff0070dd|Hitem:114367:0:0:0:0:0:0:0:100:102:0:1:0|h[Tormented Emblem of Flame]|h|r", -- [14]
+					"|cffe6cc80|Hitem:122261:0:0:0:0:0:0:0:100:102:0:0:1:583|h[Inherited Cape of the Black Baron]|h|r", -- [15]
+					"|cff0070dd|Hitem:115316:0:0:0:0:0:0:0:100:102:0:1:2:183:560|h[Munificent Polearm of the Merciless]|h|r", -- [16]
+				}, -- [2]
 			},
 			["BankItemsAndCounts"] = {
 				[109132] = 5,
@@ -85,17 +103,17 @@ AskMrRobotDb2 = {
 				[37892] = 1,
 				[12650] = 1,
 				[65906] = 1,
-				[109118] = 3152,
+				[109118] = 2693,
 				[111666] = 15,
 				[120945] = 952,
 				[115508] = 30,
 				[40615] = 1,
-				[115524] = 101,
+				[115524] = 387,
 				[46723] = 1,
 				[3898] = 1,
 				[31437] = 5,
 				[25978] = 1,
-				[109119] = 2524,
+				[109119] = 2621,
 				[109127] = 5,
 				[21541] = 1,
 				[34599] = 40,
@@ -114,35 +132,35 @@ AskMrRobotDb2 = {
 				[31666] = 1,
 				[44792] = 3,
 				[44800] = 1,
-				[115803] = 6,
-				[109134] = 16,
+				[22523] = 2,
+				[21537] = 16,
 				[37573] = 1,
-				[11482] = 1,
+				[109624] = 20,
 				[15778] = 1,
 				[115806] = 4,
-				[44731] = 1,
-				[33292] = 1,
+				[109126] = 26,
+				[23587] = 1,
 				[17720] = 1,
 				[32454] = 1,
-				[22523] = 2,
+				[109129] = 5,
 				[37863] = 1,
 				[109131] = 9,
-				[22524] = 3,
-				[19141] = 1,
 				[31450] = 5,
 				[116053] = 4,
-				[109129] = 5,
-				[34068] = 17,
-				[18706] = 1,
-				[24475] = 1,
-				[115807] = 3,
 				[10455] = 1,
+				[24475] = 1,
+				[18706] = 1,
+				[115803] = 6,
+				[34068] = 17,
+				[19141] = 1,
+				[115807] = 3,
 				[46725] = 1,
-				[109126] = 26,
-				[21537] = 16,
-				[109624] = 20,
+				[44731] = 1,
+				[33292] = 1,
+				[22524] = 3,
+				[11482] = 1,
 				[109124] = 714,
-				[23587] = 1,
+				[109134] = 16,
 			},
 		},
 		["Ghiaccioli - Sisters of Elune"] = {
@@ -172,313 +190,1092 @@ AskMrRobotDb2 = {
 			},
 		},
 		["Bracnar - Sisters of Elune"] = {
+			["BankItems"] = {
+				"|cffa335ee|Hitem:86889:4699:4996:0:0:0:0:1245908736:100:255:4:0:0:445|h[Taoren, the Soul Burner]|h|r", -- [1]
+				"|cffa335ee|Hitem:78471:0:0:0:0:0:0:0:100:255:0:0:0|h[Vishanka, Jaws of the Earth]|h|r", -- [2]
+				"|cffa335ee|Hitem:71361:4227:0:0:0:0:0:1058632000:100:255:0:0:0|h[Ranseur of Hatred]|h|r", -- [3]
+				"|cffa335ee|Hitem:59320:0:0:0:0:0:0:0:100:255:0:0:0|h[Themios the Darkbringer]|h|r", -- [4]
+				"|cffa335ee|Hitem:50049:3827:0:0:0:0:0:1874002688:100:255:0:0:0|h[Quel'Delar, Ferocity of the Scorned]|h|r", -- [5]
+				"|cffa335ee|Hitem:47737:3827:0:0:0:0:0:276257928:100:255:0:0:0|h[Reckoning]|h|r", -- [6]
+				"|cffa335ee|Hitem:34183:3828:0:0:0:0:0:-1486523879:100:255:0:0:0|h[Shivering Felspine]|h|r", -- [7]
+				"|cffa335ee|Hitem:18715:2646:0:0:0:0:0:802546044:100:255:0:0:0|h[Lok'delar, Stave of the Ancient Keepers]|h|r", -- [8]
+				"|cffa335ee|Hitem:18713:2523:0:0:0:0:0:817254550:100:255:0:0:0|h[Rhok'delar, Longbow of the Ancient Keepers]|h|r", -- [9]
+				"|cffa335ee|Hitem:19854:0:0:0:0:0:0:1966078464:100:255:0:0:0|h[Zin'rokh, Destroyer of Worlds]|h|r", -- [10]
+				"|cffa335ee|Hitem:31336:0:0:0:0:0:0:0:100:255:0:0:0|h[Blade of Wizardry]|h|r", -- [11]
+				"|cffa335ee|Hitem:22816:2564:0:0:0:0:0:0:100:255:0:0:0|h[Hatchet of Sundered Bone]|h|r", -- [12]
+				"|cffa335ee|Hitem:21520:0:0:0:0:0:0:396162912:100:255:0:0:0|h[Ravencrest's Legacy]|h|r", -- [13]
+				"|cffa335ee|Hitem:19859:2564:0:0:0:0:0:0:100:255:0:0:0|h[Fang of the Faceless]|h|r", -- [14]
+				"|cff0070dd|Hitem:19901:0:0:0:0:0:0:1557241280:100:255:0:0:0|h[Zulian Slicer]|h|r", -- [15]
+				"|cff0070dd|Hitem:19901:0:0:0:0:0:0:1072896704:100:255:0:0:0|h[Zulian Slicer]|h|r", -- [16]
+				"|cffa335ee|Hitem:19910:0:0:0:0:0:0:1424354560:100:255:0:0:0|h[Arlokk's Grasp]|h|r", -- [17]
+				"|cffa335ee|Hitem:19896:0:0:0:0:0:0:-1794915584:100:255:0:0:0|h[Thekal's Grasp]|h|r", -- [18]
+				"|cff0070dd|Hitem:37892:0:0:0:0:0:0:2060282880:100:255:0:0:0|h[Green Brewfest Stein]|h|r", -- [19]
+				"|cff0070dd|Hitem:33016:0:0:0:0:0:0:1743467440:100:255:0:0:0|h[Blue Brewfest Stein]|h|r", -- [20]
+				"|cffffffff|Hitem:45073:0:0:0:0:0:0:0:100:255:0:0:0|h[Spring Flowers]|h|r", -- [21]
+				"|cff0070dd|Hitem:113547:0:0:0:0:0:0:0:100:255:0:0:0|h[Bouquet of Dried Flowers]|h|r", -- [22]
+				"|cff1eff00|Hitem:44731:0:0:0:0:0:0:-1004069504:100:255:0:0:0|h[Bouquet of Ebon Roses]|h|r", -- [23]
+				"|cff1eff00|Hitem:22206:0:0:0:0:0:0:2073138752:100:255:0:0:0|h[Bouquet of Red Roses]|h|r", -- [24]
+				"|cffa335ee|Hitem:118939:0:0:0:0:0:0:0:100:255:0:0:0|h[Crown of Destruction]|h|r", -- [25]
+				"|cffa335ee|Hitem:99660:0:4656:4643:0:0:0:0:100:255:4:14:0:505|h[Headguard of the Unblinking Vigil]|h|r", -- [26]
+				"|cffa335ee|Hitem:69576:4209:0:0:0:0:0:-1616507392:100:255:0:0:0|h[Headdress of Sharpened Vision]|h|r", -- [27]
+				"|cff0070dd|Hitem:50741:0:0:0:0:0:0:-1175128192:100:255:0:0:0|h[Vile Fumigator's Mask]|h|r", -- [28]
+				"|cff1eff00|Hitem:30847:0:0:0:0:0:0:47975340:100:255:0:0:0|h[X-52 Rocket Helmet]|h|r", -- [29]
+				"|cffffffff|Hitem:33047:0:0:0:0:0:0:0:100:255:0:0:0|h[Belbi's Eyesight Enhancing Romance Goggles]|h|r", -- [30]
+				"|cff0070dd|Hitem:49715:0:0:0:0:0:0:0:100:255:0:1:0|h[Forever-Lovely Rose]|h|r", -- [31]
+				"|cff0070dd|Hitem:46349:0:0:0:0:0:0:0:100:255:0:0:0|h[Chef's Hat]|h|r", -- [32]
+				"|cff0070dd|Hitem:33292:0:0:0:0:0:0:-1625647640:100:255:0:0:0|h[Hallowed Helm]|h|r", -- [33]
+				"|cff1eff00|Hitem:21525:0:0:0:0:0:0:0:100:255:0:4:0|h[Green Winter Hat]|h|r", -- [34]
+				"|cff1eff00|Hitem:21524:0:0:0:0:0:0:1433097864:100:255:0:0:0|h[Red Winter Hat]|h|r", -- [35]
+				"|cffffffff|Hitem:44803:0:0:0:0:0:0:398967392:100:255:0:0:0|h[Spring Circlet]|h|r", -- [36]
+				"|cffa335ee|Hitem:112927:4804:4609:4609:0:0:0:0:100:255:4:4:1:451:491|h[Shoulderguards of Intended Power]|h|r", -- [37]
+				"|cffa335ee|Hitem:69554:4204:0:0:0:0:0:665101184:100:255:0:0:0|h[Pauldrons of Nalorakk]|h|r", -- [38]
+				"|cffa335ee|Hitem:112931:0:0:0:0:0:0:0:100:255:4:3:0:491|h[Chestguard of Relentless Tyranny]|h|r", -- [39]
+				"|cffa335ee|Hitem:99577:4419:4643:4643:4643:0:0:0:100:255:4:14:0:505|h[Tunic of the Unblinking Vigil]|h|r", -- [40]
+				"|cffa335ee|Hitem:59346:4063:0:0:0:0:0:1932758656:100:255:0:0:0|h[Tunic of Failed Experiments]|h|r", -- [41]
+				"|cffa335ee|Hitem:78430:0:0:0:0:0:0:0:100:255:0:0:0|h[Bracers of Looming Darkness]|h|r", -- [42]
+				"|cffa335ee|Hitem:71365:4258:0:0:0:0:0:694177696:100:255:0:0:0|h[Hide-Bound Chains]|h|r", -- [43]
+				"|cffa335ee|Hitem:47610:0:0:0:0:0:0:0:100:255:0:0:0|h[Armbands of the Northern Stalker]|h|r", -- [44]
+				"|cffa335ee|Hitem:39278:0:0:0:0:0:0:0:100:255:0:0:0|h[Bands of Anxiety]|h|r", -- [45]
+				"|cffa335ee|Hitem:65141:0:0:0:0:0:0:0:100:255:0:0:0|h[Proto-Handler's Gauntlets]|h|r", -- [46]
+				"|cffa335ee|Hitem:45109:0:0:0:0:0:0:0:100:255:0:0:0|h[Gloves of the Fiery Behemoth]|h|r", -- [47]
+				"|cffa335ee|Hitem:39194:0:0:0:0:0:0:0:100:255:0:0:0|h[Rusted-Link Spiked Gauntlets]|h|r", -- [48]
+				"|cffa335ee|Hitem:98614:0:4577:4577:4577:0:0:839342080:100:255:4:0:0:505|h[Gorge Stalker Belt]|h|r", -- [49]
+				"|cffa335ee|Hitem:71255:0:0:0:0:0:0:0:100:255:0:0:0|h[Firearrow Belt]|h|r", -- [50]
+				"|cffa335ee|Hitem:56539:0:0:0:0:0:0:785873280:100:255:0:0:0|h[Corded Viper Belt]|h|r", -- [51]
+				"|cffa335ee|Hitem:50762:0:0:0:0:0:0:0:100:255:0:0:0|h[Linked Scourge Vertebrae]|h|r", -- [52]
+				"|cffa335ee|Hitem:99158:0:0:0:0:0:0:0:100:255:4:14:0:491|h[Legguards of the Unblinking Vigil]|h|r", -- [53]
+				"|cffa335ee|Hitem:98605:4822:4577:4577:0:0:0:2010338816:100:255:4:0:0:505|h[Gorge Stalker Legplates]|h|r", -- [54]
+				"|cffa335ee|Hitem:90570:0:0:0:0:0:0:1909300096:100:255:4:0:0:445|h[Legguards of Sleeting Arrows]|h|r", -- [55]
+				"|cffa335ee|Hitem:112779:4428:3116:0:0:0:0:0:100:255:4:5:1:449:505|h[Ravager's Pathwalkers]|h|r", -- [56]
+				"|cffa335ee|Hitem:70123:4105:0:0:0:0:0:0:100:255:0:0:0|h[Lancer's Greaves]|h|r", -- [57]
+				"|cffa335ee|Hitem:62385:4105:0:0:0:0:0:0:100:255:0:0:0|h[Treads of Malorne]|h|r", -- [58]
+				"|cffa335ee|Hitem:67134:1099:0:0:0:0:0:944880256:100:255:0:0:0|h[Dory's Finery]|h|r", -- [59]
+				"|cffa335ee|Hitem:50470:1099:0:0:0:0:0:0:100:255:0:0:0|h[Recovered Scarlet Onslaught Cape]|h|r", -- [60]
+				"|cffa335ee|Hitem:32420:1441:0:0:0:0:0:629854836:100:255:0:0:0|h[Night's End]|h|r", -- [61]
+				"|cff0070dd|Hitem:32539:1889:0:0:0:0:0:0:100:255:0:0:0|h[Skyguard's Drape]|h|r", -- [62]
+				"|cffffffff|Hitem:53097:0:0:0:0:0:0:1834981760:100:255:0:0:0|h[Gnomeregan Drape]|h|r", -- [63]
+				"|cff0070dd|Hitem:15138:2619:0:0:0:0:0:1981960320:100:255:0:0:0|h[Onyxia Scale Cloak]|h|r", -- [64]
+				"|cffa335ee|Hitem:19621:0:0:0:0:0:0:801097924:100:255:0:0:0|h[Maelstrom's Wrath]|h|r", -- [65]
+				"|cffa335ee|Hitem:50402:0:0:0:0:0:0:718287680:100:255:0:0:0|h[Ashen Band of Endless Vengeance]|h|r", -- [66]
+				"|cffa335ee|Hitem:29301:0:0:0:0:0:0:356441089:100:255:0:0:0|h[Band of the Eternal Champion]|h|r", -- [67]
+				"|cffa335ee|Hitem:21526:0:0:0:0:0:0:2120708864:100:255:0:0:0|h[Band of Icy Depths]|h|r", -- [68]
+				"|cff0070dd|Hitem:12344:0:0:0:0:0:0:2066010368:100:255:0:0:0|h[Seal of Ascension]|h|r", -- [69]
+				"|cff0070dd|Hitem:116154:0:0:0:0:0:0:0:100:255:0:11:0|h[Barov Lumberjack Caller]|h|r", -- [70]
+				"|cffa335ee|Hitem:108903:0:0:0:0:0:0:0:100:255:0:0:1:545|h[Tiny Iron Star]|h|r", -- [71]
+				"|cff0070dd|Hitem:108907:0:0:0:0:0:0:0:100:255:0:0:0|h[Mushroom of Destiny]|h|r", -- [72]
+				"|cffa335ee|Hitem:87576:0:0:0:0:0:0:1768705152:100:255:4:0:0:445|h[Bitterest Balebrew Charm]|h|r", -- [73]
+				"|cffa335ee|Hitem:87575:0:0:0:0:0:0:1552481920:100:255:4:0:0:445|h[Bubbliest Brightbrew Charm]|h|r", -- [74]
+				"|cff0070dd|Hitem:86576:0:0:0:0:0:0:1192295168:100:255:0:0:0|h[Dynasty of Steel]|h|r", -- [75]
+				"|cff1eff00|Hitem:88376:0:0:0:0:0:0:1406087552:100:255:0:0:0|h[Orange Painted Turnip]|h|r", -- [76]
+				"|cff1eff00|Hitem:88371:0:0:0:0:0:0:1811432576:100:255:0:0:0|h[Watermelon Bomb]|h|r", -- [77]
+				"|cff1eff00|Hitem:82984:0:0:0:0:0:0:2001468160:100:255:0:0:0|h[Jade Raccoon]|h|r", -- [78]
+				"|cffa335ee|Hitem:50362:0:0:0:0:0:0:282360596:100:255:0:0:0|h[Deathbringer's Will]|h|r", -- [79]
+				"|cffa335ee|Hitem:49464:0:0:0:0:0:0:1273649920:100:255:0:0:0|h[Shiny Shard of the Flame]|h|r", -- [80]
+				"|cff0070dd|Hitem:44597:0:0:0:0:0:0:1384133922:100:255:0:0:0|h[Medallion of Heroism]|h|r", -- [81]
+				"|cff0070dd|Hitem:40601:0:0:0:0:0:0:0:100:255:0:0:0|h[Argent Dawn Banner]|h|r", -- [82]
+				"|cff0070dd|Hitem:40593:0:0:0:0:0:0:0:100:255:0:0:0|h[Argent Tome]|h|r", -- [83]
+				"|cff0070dd|Hitem:40492:0:0:0:0:0:0:0:100:255:0:0:0|h[Argent War Horn]|h|r", -- [84]
+				"|cff0070dd|Hitem:28237:0:0:0:0:0:0:0:100:255:0:0:0|h[Medallion of the Alliance]|h|r", -- [85]
+				"|cff0070dd|Hitem:32864:0:0:0:0:0:0:532267468:100:255:0:0:0|h[Commander's Badge]|h|r", -- [86]
+				"|cffa335ee|Hitem:19290:0:0:0:0:0:0:593410438:100:255:0:0:0|h[Darkmoon Card: Twisting Nether]|h|r", -- [87]
+				"|cffa335ee|Hitem:21326:0:0:0:0:0:0:1779952128:100:255:0:0:0|h[Defender of the Timbermaw]|h|r", -- [88]
+				"|cff0070dd|Hitem:14023:0:0:0:0:0:0:1555455872:100:255:0:0:0|h[Barov Peasant Caller]|h|r", -- [89]
+				"|cffa335ee|Hitem:17904:0:0:0:0:0:0:950364330:100:255:0:0:0|h[Stormpike Insignia Rank 6]|h|r", -- [90]
+				"|cff1eff00|Hitem:11122:0:0:0:0:0:0:851045248:100:255:0:0:0|h[Carrot on a Stick]|h|r", -- [91]
+				"|cff1eff00|Hitem:2820:0:0:0:0:0:0:362671008:100:255:0:0:0|h[Nifty Stopwatch]|h|r", -- [92]
+				"|cff0070dd|Hitem:13382:0:0:0:0:0:0:674550322:100:255:0:0:0|h[Cannonball Runner]|h|r", -- [93]
+				"|cff0070dd|Hitem:118365:0:0:0:0:0:0:0:100:255:0:11:0|h[Stormwind Tabard]|h|r", -- [94]
+				"|cffffffff|Hitem:65908:0:0:0:0:0:0:0:100:255:0:0:0|h[Tabard of the Wildhammer Clan]|h|r", -- [95]
+				"|cffffffff|Hitem:65907:0:0:0:0:0:0:0:100:255:0:0:0|h[Tabard of Therazane]|h|r", -- [96]
+				"|cffffffff|Hitem:65906:0:0:0:0:0:0:0:100:255:0:0:0|h[Tabard of the Guardians of Hyjal]|h|r", -- [97]
+				"|cffffffff|Hitem:65905:0:0:0:0:0:0:0:100:255:0:0:0|h[Tabard of the Earthen Ring]|h|r", -- [98]
+				"|cffffffff|Hitem:65904:0:0:0:0:0:0:0:100:255:0:0:0|h[Tabard of Ramkahen]|h|r", -- [99]
+				"|cffffffff|Hitem:22999:0:0:0:0:0:0:0:100:255:0:0:0|h[Tabard of the Argent Dawn]|h|r", -- [100]
+				"|cffa335ee|Hitem:69210:0:0:0:0:0:0:0:100:255:0:0:0|h[Renowned Guild Tabard]|h|r", -- [101]
+				"|cffa335ee|Hitem:43348:0:0:0:0:0:0:786328418:100:255:0:0:0|h[Tabard of the Explorer]|h|r", -- [102]
+				"|cffa335ee|Hitem:43300:0:0:0:0:0:0:82134528:100:255:0:0:0|h[Loremaster's Colors]|h|r", -- [103]
+				"|cffa335ee|Hitem:43300:0:0:0:0:0:0:1013702528:100:255:0:0:0|h[Loremaster's Colors]|h|r", -- [104]
+				"|cffa335ee|Hitem:40643:0:0:0:0:0:0:1337248000:100:255:0:0:0|h[Tabard of the Achiever]|h|r", -- [105]
+				"|cff0070dd|Hitem:35280:0:0:0:0:0:0:531165573:100:255:0:0:0|h[Tabard of Summer Flames]|h|r", -- [106]
+				"|cff1eff00|Hitem:23192:0:0:0:0:0:0:1198672544:100:255:0:0:0|h[Tabard of the Scarlet Crusade]|h|r", -- [107]
+				"|cffffffff|Hitem:64882:0:0:0:0:0:0:0:100:255:0:0:0|h[Gilneas Tabard]|h|r", -- [108]
+				"|cffffffff|Hitem:46817:0:0:0:0:0:0:0:100:255:0:0:0|h[Silver Covenant Tabard]|h|r", -- [109]
+				"|cffffffff|Hitem:116448:0:0:0:0:0:0:0:100:255:0:11:0|h[Warm Red Woolen Socks]|h|r", -- [110]
+				"|cffa335ee|Hitem:38082:0:0:0:0:0:0:0:100:255:0:0:0|h[\"Gigantique\" Bag]|h|r", -- [111]
+				"|cff0070dd|Hitem:69748:0:0:0:0:0:0:579081600:100:255:0:0:0|h[Tattered Hexcloth Bag]|h|r", -- [112]
+				"|cffa335ee|Hitem:49295:0:0:0:0:0:0:-1965299264:100:255:0:0:0|h[Enlarged Onyxia Hide Backpack]|h|r", -- [113]
+				"|cffa335ee|Hitem:78857:0:0:0:0:0:0:0:100:255:0:0:0|h[Leggings of the Corrupted Protector]|h|r", -- [114]
+			},
+			["ExtraGemData"] = {
+				{
+					[5413] = {
+						["id"] = 127760,
+						["text"] = "75 Crit",
+						["enchantId"] = 5413,
+						["identicalItemGroup"] = {
+							[127760] = true,
+						},
+					},
+					[5419] = {
+						["id"] = 127414,
+						["text"] = "50 Crit",
+						["enchantId"] = 5419,
+						["identicalItemGroup"] = {
+							[127414] = true,
+						},
+					},
+				}, -- [1]
+				{
+					[5413] = {
+						["id"] = 127760,
+						["text"] = "75 Crit",
+						["enchantId"] = 5413,
+						["identicalItemGroup"] = {
+							[127760] = true,
+						},
+					},
+					[5419] = {
+						["id"] = 127414,
+						["text"] = "50 Crit",
+						["enchantId"] = 5419,
+						["identicalItemGroup"] = {
+							[127414] = true,
+						},
+					},
+				}, -- [2]
+			},
+			["ExtraEnchantData"] = {
+				{
+					[5324] = {
+						["spellId"] = 158914,
+						["id"] = 5324,
+						["text"] = "50 Crit",
+						["materials"] = {
+							[113588] = 4,
+							[113262] = 3,
+						},
+						["itemId"] = 110638,
+					},
+					[5310] = {
+						["spellId"] = 158884,
+						["id"] = 5310,
+						["text"] = "100 Crit, Run Speed",
+						["materials"] = {
+							[113588] = 4,
+							[113264] = 3,
+						},
+						["itemId"] = 110652,
+					},
+					[5276] = {
+						["id"] = 5276,
+						["text"] = "Megawatt Filament",
+						["spellId"] = 156061,
+						["itemId"] = 0,
+					},
+					[5327] = {
+						["spellId"] = 158917,
+						["id"] = 5327,
+						["text"] = "50 Multi",
+						["materials"] = {
+							[113588] = 4,
+							[113263] = 3,
+						},
+						["itemId"] = 110641,
+					},
+					[5317] = {
+						["spellId"] = 158899,
+						["id"] = 5317,
+						["text"] = "75 Crit",
+						["materials"] = {
+							[113588] = 4,
+							[113261] = 3,
+						},
+						["itemId"] = 110645,
+					},
+				}, -- [1]
+				{
+					[5324] = {
+						["spellId"] = 158914,
+						["id"] = 5324,
+						["text"] = "50 Crit",
+						["materials"] = {
+							[113588] = 4,
+							[113262] = 3,
+						},
+						["itemId"] = 110638,
+					},
+					[5310] = {
+						["spellId"] = 158884,
+						["id"] = 5310,
+						["text"] = "100 Crit, Run Speed",
+						["materials"] = {
+							[113588] = 4,
+							[113264] = 3,
+						},
+						["itemId"] = 110652,
+					},
+					[5276] = {
+						["id"] = 5276,
+						["text"] = "Megawatt Filament",
+						["spellId"] = 156061,
+						["itemId"] = 0,
+					},
+					[5327] = {
+						["spellId"] = 158917,
+						["id"] = 5327,
+						["text"] = "50 Multi",
+						["materials"] = {
+							[113588] = 4,
+							[113263] = 3,
+						},
+						["itemId"] = 110641,
+					},
+					[5317] = {
+						["spellId"] = 158899,
+						["id"] = 5317,
+						["text"] = "75 Crit",
+						["materials"] = {
+							[113588] = 4,
+							[113261] = 3,
+						},
+						["itemId"] = 110645,
+					},
+				}, -- [2]
+			},
+			["BagItems"] = {
+				"|cffa335ee|Hitem:113612:0:0:0:0:0:0:0:100:255:0:6:1:567|h[Scales of Doom]|h|r", -- [1]
+				"|cffa335ee|Hitem:124299:0:0:0:0:0:0:0:100:255:0:3:0|h[Kilt of Self-Reflection]|h|r", -- [2]
+				"|cffa335ee|Hitem:44050:846:0:0:0:0:0:0:100:255:0:0:0|h[Mastercraft Kalu'ak Fishing Pole]|h|r", -- [3]
+				"|cff0070dd|Hitem:33820:0:0:0:0:0:0:-297314198:100:255:0:0:0|h[Weather-Beaten Fishing Hat]|h|r", -- [4]
+				"|cffa335ee|Hitem:113982:0:0:0:0:0:0:0:100:255:0:5:1:566|h[Chestguard of the Siegemaker]|h|r", -- [5]
+				"|cffa335ee|Hitem:113971:5310:0:0:0:0:0:0:100:255:0:6:1:567|h[Drape of the Dark Hunt]|h|r", -- [6]
+				"|cffa335ee|Hitem:113875:0:0:0:0:0:0:0:100:255:0:5:2:561:566|h[Corrosion-Proof Legguards]|h|r", -- [7]
+				"|cff1eff00|Hitem:63352:0:0:0:0:0:0:0:100:255:0:0:0|h[Shroud of Cooperation]|h|r", -- [8]
+				"|cffa335ee|Hitem:113892:0:0:0:0:0:0:0:100:255:0:5:1:566|h[Engineer's Grounded Gorget]|h|r", -- [9]
+				"|cffa335ee|Hitem:113611:5327:0:0:0:0:0:0:100:255:0:6:1:567|h[Flenser's Hookring]|h|r", -- [10]
+				"|cffa335ee|Hitem:124304:0:0:0:0:0:0:0:100:255:0:3:0|h[Rugged Stoneshaped Pauldrons]|h|r", -- [11]
+				"|cff0070dd|Hitem:109262:0:0:0:0:0:0:0:100:255:0:1:0|h[Draenic Philosopher's Stone]|h|r", -- [12]
+				"|cffa335ee|Hitem:103678:0:0:0:0:0:0:0:100:255:0:14:0|h[Time-Lost Artifact]|h|r", -- [13]
+				"|cff1eff00|Hitem:52019:0:0:0:0:0:0:0:100:255:0:0:0|h[Precious' Ribbon]|h|r", -- [14]
+				"|cff0070dd|Hitem:46874:0:0:0:0:0:0:0:100:255:0:0:0|h[Argent Crusader's Tabard]|h|r", -- [15]
+				"|cffa335ee|Hitem:113891:0:0:0:0:0:0:0:100:255:0:6:1:567|h[Blast-Proof Cowl]|h|r", -- [16]
+				"|cffa335ee|Hitem:113931:0:0:0:0:0:0:0:100:255:0:5:1:566|h[Beating Heart of the Mountain]|h|r", -- [17]
+				"|cffa335ee|Hitem:32757:0:0:0:0:0:0:250630000:100:255:0:0:0|h[Blessed Medallion of Karabor]|h|r", -- [18]
+				"|cffa335ee|Hitem:113944:0:0:0:0:0:0:0:100:255:0:5:2:41:566|h[Legguards of the Stampede]|h|r", -- [19]
+				"|cff0070dd|Hitem:32780:0:0:0:0:0:0:0:100:255:0:2:0|h[The Boomstick]|h|r", -- [20]
+				"|cffa335ee|Hitem:113915:0:0:0:0:0:0:0:100:255:0:5:1:566|h[Grips of Rekindling]|h|r", -- [21]
+				"|cffff8000|Hitem:34334:3608:0:0:0:0:0:660801552:100:255:0:0:0|h[Thori'dal, the Stars' Fury]|h|r", -- [22]
+				"|cff0070dd|Hitem:116913:0:0:0:0:0:0:0:100:255:0:0:0|h[Peon's Mining Pick]|h|r", -- [23]
+				"|cffff8000|Hitem:19019:2673:0:0:0:0:0:610963968:100:255:0:0:0|h[Thunderfury, Blessed Blade of the Windseeker]|h|r", -- [24]
+				"|cffa335ee|Hitem:113899:0:5419:0:0:0:0:0:100:255:0:5:2:564:566|h[Neckbreaker Shoulderguards]|h|r", -- [25]
+				"|cff1eff00|Hitem:6263:41:0:0:0:0:0:500442290:100:255:0:0:0|h[Blue Overalls]|h|r", -- [26]
+				"|cff0070dd|Hitem:116916:0:0:0:0:0:0:0:100:255:0:0:0|h[Gorepetal's Gentle Grasp]|h|r", -- [27]
+				"|cffa335ee|Hitem:113954:0:0:0:0:0:0:0:100:255:0:5:1:566|h[Railwalker's Ratcheted Boots]|h|r", -- [28]
+				"|cffa335ee|Hitem:124285:0:0:0:0:0:0:0:100:255:0:3:0|h[Die-Cast Ringmail Sabatons]|h|r", -- [29]
+				"|cffa335ee|Hitem:65360:0:0:0:0:0:0:0:100:255:0:0:0|h[Cloak of Coordination]|h|r", -- [30]
+				"|cffa335ee|Hitem:127971:0:0:0:0:0:0:0:100:255:0:0:0|h[Gossamer Felscorched Scarf]|h|r", -- [31]
+				"|cffa335ee|Hitem:124132:0:0:0:0:0:0:0:100:255:0:3:0|h[Forward Observer's Camouflage Cloak]|h|r", -- [32]
+				"|cffa335ee|Hitem:51560:0:0:0:0:0:0:0:100:255:0:0:0|h[Runed Band of the Kirin Tor]|h|r", -- [33]
+				"|cffa335ee|Hitem:113943:0:0:0:0:0:0:0:100:255:0:5:1:566|h[Bracers of the Wolf's Cunning]|h|r", -- [34]
+				"|cffa335ee|Hitem:113608:0:0:0:0:0:0:0:100:255:0:6:1:567|h[Hood of Dispassionate Execution]|h|r", -- [35]
+				"|cffa335ee|Hitem:115545:0:0:0:0:0:0:0:100:255:0:5:1:566|h[Rylakstalker's Headguard]|h|r", -- [36]
+				"|cffa335ee|Hitem:113849:0:0:0:0:0:0:0:100:255:0:6:1:567|h[Face Kickers]|h|r", -- [37]
+				"|cffa335ee|Hitem:113851:0:0:0:0:0:0:0:100:255:0:6:1:567|h[Reaver's Nose Ring]|h|r", -- [38]
+			},
 			["FirstUse"] = false,
 			["VoidItems"] = {
-				"|cffa335ee|Hitem:16939:0:0:0:0:0:0:0:100:254:0:0:0|h[Dragonstalker's Helm]|h|r", -- [1]
-				"|cffa335ee|Hitem:16938:0:0:0:0:0:0:0:100:254:0:0:0|h[Dragonstalker's Legguards]|h|r", -- [2]
-				"|cffa335ee|Hitem:16937:0:0:0:0:0:0:0:100:254:0:0:0|h[Dragonstalker's Spaulders]|h|r", -- [3]
-				"|cffa335ee|Hitem:16940:0:0:0:0:0:0:0:100:254:0:0:0|h[Dragonstalker's Gauntlets]|h|r", -- [4]
-				"|cffa335ee|Hitem:16942:0:0:0:0:0:0:0:100:254:0:0:0|h[Dragonstalker's Breastplate]|h|r", -- [5]
-				"|cffa335ee|Hitem:16935:0:0:0:0:0:0:0:100:254:0:0:0|h[Dragonstalker's Bracers]|h|r", -- [6]
-				"|cffa335ee|Hitem:16936:0:0:0:0:0:0:0:100:254:0:0:0|h[Dragonstalker's Belt]|h|r", -- [7]
-				"|cffa335ee|Hitem:16941:0:0:0:0:0:0:0:100:254:0:0:0|h[Dragonstalker's Greaves]|h|r", -- [8]
-				"|cffa335ee|Hitem:16846:0:0:0:0:0:0:-1915031680:100:254:0:0:0|h[Giantstalker's Helmet]|h|r", -- [9]
-				"|cffa335ee|Hitem:16847:0:0:0:0:0:0:724363616:100:254:0:0:0|h[Giantstalker's Leggings]|h|r", -- [10]
-				"|cffa335ee|Hitem:16848:0:0:0:0:0:0:-1737096704:100:254:0:0:0|h[Giantstalker's Epaulets]|h|r", -- [11]
-				"|cffa335ee|Hitem:16852:0:0:0:0:0:0:2060222208:100:254:0:0:0|h[Giantstalker's Gloves]|h|r", -- [12]
-				"|cffa335ee|Hitem:16845:0:0:0:0:0:0:1006461472:100:254:0:0:0|h[Giantstalker's Breastplate]|h|r", -- [13]
-				"|cffa335ee|Hitem:16850:0:0:0:0:0:0:-2092621679:100:254:0:0:0|h[Giantstalker's Bracers]|h|r", -- [14]
-				"|cffa335ee|Hitem:16851:0:0:0:0:0:0:1937790930:100:254:0:0:0|h[Giantstalker's Belt]|h|r", -- [15]
-				"|cffa335ee|Hitem:16849:0:0:0:0:0:0:1176982272:100:254:0:0:0|h[Giantstalker's Boots]|h|r", -- [16]
-				"|cff0070dd|Hitem:116809:0:0:0:0:0:0:0:100:254:0:0:0|h[Ironbeard's Blunderbuss]|h|r", -- [17]
-				"|cffa335ee|Hitem:30141:0:0:0:0:0:0:0:100:254:0:0:0|h[Rift Stalker Helm]|h|r", -- [18]
-				"|cffa335ee|Hitem:30142:0:0:0:0:0:0:0:100:254:0:0:0|h[Rift Stalker Leggings]|h|r", -- [19]
-				"|cffa335ee|Hitem:30143:0:0:0:0:0:0:0:100:254:0:0:0|h[Rift Stalker Mantle]|h|r", -- [20]
-				"|cffa335ee|Hitem:30140:0:0:0:0:0:0:0:100:254:0:0:0|h[Rift Stalker Gauntlets]|h|r", -- [21]
-				"|cffa335ee|Hitem:30139:0:0:0:0:0:0:0:100:254:0:14:0|h[Rift Stalker Hauberk]|h|r", -- [22]
-				"|cffa335ee|Hitem:32376:0:0:0:0:0:0:1940176836:100:254:0:0:0|h[Forest Prowler's Helm]|h|r", -- [23]
-				"|cffa335ee|Hitem:31005:0:0:0:0:0:0:0:100:254:0:0:0|h[Gronnstalker's Leggings]|h|r", -- [24]
-				"|cffa335ee|Hitem:31006:0:0:0:0:0:0:0:100:254:0:0:0|h[Gronnstalker's Spaulders]|h|r", -- [25]
-				"|cffa335ee|Hitem:31001:0:0:0:0:0:0:0:100:254:0:0:0|h[Gronnstalker's Gloves]|h|r", -- [26]
-				"|cffa335ee|Hitem:31004:0:0:0:0:0:0:0:100:254:0:0:0|h[Gronnstalker's Chestguard]|h|r", -- [27]
-				"|cffa335ee|Hitem:34443:0:0:0:0:0:0:0:100:254:0:0:0|h[Gronnstalker's Bracers]|h|r", -- [28]
-				"|cffa335ee|Hitem:34549:0:0:0:0:0:0:0:100:254:0:0:0|h[Gronnstalker's Belt]|h|r", -- [29]
-				"|cffa335ee|Hitem:34570:0:0:0:0:0:0:0:100:254:0:14:0|h[Gronnstalker's Boots]|h|r", -- [30]
-				"|cffa335ee|Hitem:40505:0:0:0:0:0:0:0:100:254:0:14:0|h[Valorous Cryptstalker Headpiece]|h|r", -- [31]
-				"|cffa335ee|Hitem:40506:0:0:0:0:0:0:0:100:254:0:14:0|h[Valorous Cryptstalker Legguards]|h|r", -- [32]
-				"|cffa335ee|Hitem:40507:0:0:0:0:0:0:0:100:254:0:14:0|h[Valorous Cryptstalker Spaulders]|h|r", -- [33]
-				"|cffa335ee|Hitem:40503:0:0:0:0:0:0:0:100:254:0:14:0|h[Valorous Cryptstalker Tunic]|h|r", -- [34]
-				"|cffa335ee|Hitem:46143:0:0:0:0:0:0:0:100:254:0:14:0|h[Conqueror's Scourgestalker Headpiece]|h|r", -- [35]
-				"|cffa335ee|Hitem:46144:0:0:0:0:0:0:0:100:254:0:14:0|h[Conqueror's Scourgestalker Legguards]|h|r", -- [36]
-				"|cffa335ee|Hitem:46145:0:0:0:0:0:0:0:100:254:0:14:0|h[Conqueror's Scourgestalker Spaulders]|h|r", -- [37]
-				"|cffa335ee|Hitem:46142:0:0:0:0:0:0:0:100:254:0:14:0|h[Conqueror's Scourgestalker Handguards]|h|r", -- [38]
-				"|cffa335ee|Hitem:46141:0:0:0:0:0:0:0:100:254:0:14:0|h[Conqueror's Scourgestalker Tunic]|h|r", -- [39]
-				"|cffa335ee|Hitem:45454:0:0:0:0:0:0:0:100:254:0:0:0|h[Frost-Bound Chain Bracers]|h|r", -- [40]
-				"|cffa335ee|Hitem:45467:0:0:0:0:0:0:0:100:254:0:0:0|h[Belt of the Betrayed]|h|r", -- [41]
-				"|cffa335ee|Hitem:48257:0:0:0:0:0:0:0:100:254:0:0:0|h[Windrunner's Headpiece of Triumph]|h|r", -- [42]
-				"|cffa335ee|Hitem:48258:0:0:0:0:0:0:-1396137088:100:254:0:0:0|h[Windrunner's Legguards of Triumph]|h|r", -- [43]
-				"|cffa335ee|Hitem:48253:0:0:0:0:0:0:0:100:254:0:0:0|h[Windrunner's Spaulders of Conquest]|h|r", -- [44]
-				"|cffa335ee|Hitem:48254:0:0:0:0:0:0:0:100:254:0:0:0|h[Windrunner's Handguards of Conquest]|h|r", -- [45]
-				"|cffa335ee|Hitem:48251:0:0:0:0:0:0:0:100:254:0:0:0|h[Windrunner's Tunic of Conquest]|h|r", -- [46]
-				"|cffa335ee|Hitem:51286:0:0:0:0:0:0:0:100:254:0:14:0|h[Sanctified Ahn'Kahar Blood Hunter's Headpiece]|h|r", -- [47]
-				"|cffa335ee|Hitem:51287:0:0:0:0:0:0:0:100:254:0:14:0|h[Sanctified Ahn'Kahar Blood Hunter's Legguards]|h|r", -- [48]
-				"|cffa335ee|Hitem:51288:0:0:0:0:0:0:0:100:254:0:14:0|h[Sanctified Ahn'Kahar Blood Hunter's Spaulders]|h|r", -- [49]
-				"|cffa335ee|Hitem:51285:0:0:0:0:0:0:0:100:254:0:14:0|h[Sanctified Ahn'Kahar Blood Hunter's Handguards]|h|r", -- [50]
-				"|cffa335ee|Hitem:51289:0:0:0:0:0:0:0:100:254:0:14:0|h[Sanctified Ahn'Kahar Blood Hunter's Tunic]|h|r", -- [51]
-				"|cffa335ee|Hitem:50000:0:0:0:0:0:0:-2080276352:100:254:0:0:0|h[Scourge Hunter's Vambraces]|h|r", -- [52]
-				"|cffa335ee|Hitem:50413:0:0:0:0:0:0:1029243520:100:254:0:0:0|h[Nerub'ar Stalker's Cord]|h|r", -- [53]
-				"|cffa335ee|Hitem:49897:0:0:0:0:0:0:669537600:100:254:0:0:0|h[Rock-Steady Treads]|h|r", -- [54]
-				"|cffa335ee|Hitem:60303:0:0:0:0:0:0:0:100:254:0:14:0|h[Lightning-Charged Headguard]|h|r", -- [55]
-				"|cffa335ee|Hitem:60305:0:0:0:0:0:0:0:100:254:0:0:0|h[Lightning-Charged Legguards]|h|r", -- [56]
-				"|cffa335ee|Hitem:65205:0:0:0:0:0:0:0:100:254:0:14:0|h[Lightning-Charged Gloves]|h|r", -- [57]
-				"|cffa335ee|Hitem:60304:0:0:0:0:0:0:0:100:254:0:0:0|h[Lightning-Charged Tunic]|h|r", -- [58]
-				"|cffa335ee|Hitem:59315:0:0:0:0:0:0:0:100:254:0:0:0|h[Boots of Vertigo]|h|r", -- [59]
-				"|cffa335ee|Hitem:71502:0:0:0:0:0:0:0:100:254:0:14:0|h[Flamewaker's Gloves]|h|r", -- [60]
-				"|cffa335ee|Hitem:71501:0:0:0:0:0:0:0:100:254:0:14:0|h[Flamewaker's Tunic]|h|r", -- [61]
-				"|cffa335ee|Hitem:78674:0:0:0:0:0:0:0:100:254:0:14:0|h[Wyrmstalker's Gloves]|h|r", -- [62]
-				"|cffa335ee|Hitem:95882:0:0:0:0:0:0:0:100:254:4:0:0:465|h[Saurok Stalker's Tunic]|h|r", -- [63]
-				"|cffffffff|Hitem:118918:0:0:0:0:0:0:0:100:254:0:11:0|h[Bloody Bandanna]|h|r", -- [64]
-				"|cffa335ee|Hitem:112918:0:0:0:0:0:0:0:100:254:4:3:0:491|h[Hisek's Reserve Longbow]|h|r", -- [65]
-				"|cffa335ee|Hitem:72876:0:0:0:0:0:0:0:100:254:0:11:0|h[Ironfeather Longbow]|h|r", -- [66]
-				"|cff0070dd|Hitem:13246:0:0:0:0:0:0:739040351:100:254:0:0:0|h[Argent Avenger]|h|r", -- [67]
-				"|cffa335ee|Hitem:72873:0:0:0:0:0:0:0:100:254:0:11:0|h[Bronze Blaster]|h|r", -- [68]
-				"|cffa335ee|Hitem:18817:0:0:0:0:0:0:-1342874624:100:254:0:0:0|h[Crown of Destruction]|h|r", -- [69]
-				"|cffa335ee|Hitem:19361:0:0:0:0:0:0:0:100:254:0:0:0|h[Ashjre'thul, Crossbow of Smiting]|h|r", -- [70]
-				"|cffa335ee|Hitem:32336:0:0:0:0:0:0:1668890156:100:254:0:0:0|h[Black Bow of the Betrayer]|h|r", -- [71]
-				"|cffa335ee|Hitem:51927:0:0:0:0:0:0:800195968:100:254:0:0:0|h[Njorndar Bone Bow]|h|r", -- [72]
-				"|cffa335ee|Hitem:28581:0:0:0:0:0:0:1258896687:100:254:0:0:0|h[Wolfslayer Sniper Rifle]|h|r", -- [73]
-				"|cffa335ee|Hitem:19866:0:0:0:0:0:0:1182230682:100:254:0:0:0|h[Warblade of the Hakkari]|h|r", -- [74]
-				"|cffa335ee|Hitem:19865:0:0:0:0:0:0:-1134017536:100:254:0:0:0|h[Warblade of the Hakkari]|h|r", -- [75]
-				"|cffa335ee|Hitem:40265:0:0:0:0:0:0:0:100:254:0:0:0|h[Arrowsong]|h|r", -- [76]
+				"|cffa335ee|Hitem:16939:0:0:0:0:0:0:0:100:255:0:0:0|h[Dragonstalker's Helm]|h|r", -- [1]
+				"|cffa335ee|Hitem:16938:0:0:0:0:0:0:0:100:255:0:0:0|h[Dragonstalker's Legguards]|h|r", -- [2]
+				"|cffa335ee|Hitem:16937:0:0:0:0:0:0:0:100:255:0:0:0|h[Dragonstalker's Spaulders]|h|r", -- [3]
+				"|cffa335ee|Hitem:16940:0:0:0:0:0:0:0:100:255:0:0:0|h[Dragonstalker's Gauntlets]|h|r", -- [4]
+				"|cffa335ee|Hitem:16942:0:0:0:0:0:0:0:100:255:0:0:0|h[Dragonstalker's Breastplate]|h|r", -- [5]
+				"|cffa335ee|Hitem:16935:0:0:0:0:0:0:0:100:255:0:0:0|h[Dragonstalker's Bracers]|h|r", -- [6]
+				"|cffa335ee|Hitem:16936:0:0:0:0:0:0:0:100:255:0:0:0|h[Dragonstalker's Belt]|h|r", -- [7]
+				"|cffa335ee|Hitem:16941:0:0:0:0:0:0:0:100:255:0:0:0|h[Dragonstalker's Greaves]|h|r", -- [8]
+				"|cffa335ee|Hitem:16846:0:0:0:0:0:0:-1915031680:100:255:0:0:0|h[Giantstalker's Helmet]|h|r", -- [9]
+				"|cffa335ee|Hitem:16847:0:0:0:0:0:0:724363616:100:255:0:0:0|h[Giantstalker's Leggings]|h|r", -- [10]
+				"|cffa335ee|Hitem:16848:0:0:0:0:0:0:-1737096704:100:255:0:0:0|h[Giantstalker's Epaulets]|h|r", -- [11]
+				"|cffa335ee|Hitem:16852:0:0:0:0:0:0:2060222208:100:255:0:0:0|h[Giantstalker's Gloves]|h|r", -- [12]
+				"|cffa335ee|Hitem:16845:0:0:0:0:0:0:1006461472:100:255:0:0:0|h[Giantstalker's Breastplate]|h|r", -- [13]
+				"|cffa335ee|Hitem:16850:0:0:0:0:0:0:-2092621679:100:255:0:0:0|h[Giantstalker's Bracers]|h|r", -- [14]
+				"|cffa335ee|Hitem:16851:0:0:0:0:0:0:1937790930:100:255:0:0:0|h[Giantstalker's Belt]|h|r", -- [15]
+				"|cffa335ee|Hitem:16849:0:0:0:0:0:0:1176982272:100:255:0:0:0|h[Giantstalker's Boots]|h|r", -- [16]
+				"|cff0070dd|Hitem:116809:0:0:0:0:0:0:0:100:255:0:0:0|h[Ironbeard's Blunderbuss]|h|r", -- [17]
+				"|cffa335ee|Hitem:30141:0:0:0:0:0:0:0:100:255:0:0:0|h[Rift Stalker Helm]|h|r", -- [18]
+				"|cffa335ee|Hitem:30142:0:0:0:0:0:0:0:100:255:0:0:0|h[Rift Stalker Leggings]|h|r", -- [19]
+				"|cffa335ee|Hitem:30143:0:0:0:0:0:0:0:100:255:0:0:0|h[Rift Stalker Mantle]|h|r", -- [20]
+				"|cffa335ee|Hitem:30140:0:0:0:0:0:0:0:100:255:0:0:0|h[Rift Stalker Gauntlets]|h|r", -- [21]
+				"|cffa335ee|Hitem:30139:0:0:0:0:0:0:0:100:255:0:14:0|h[Rift Stalker Hauberk]|h|r", -- [22]
+				"|cffa335ee|Hitem:32376:0:0:0:0:0:0:1940176836:100:255:0:0:0|h[Forest Prowler's Helm]|h|r", -- [23]
+				"|cffa335ee|Hitem:31005:0:0:0:0:0:0:0:100:255:0:0:0|h[Gronnstalker's Leggings]|h|r", -- [24]
+				"|cffa335ee|Hitem:31006:0:0:0:0:0:0:0:100:255:0:0:0|h[Gronnstalker's Spaulders]|h|r", -- [25]
+				"|cffa335ee|Hitem:31001:0:0:0:0:0:0:0:100:255:0:0:0|h[Gronnstalker's Gloves]|h|r", -- [26]
+				"|cffa335ee|Hitem:31004:0:0:0:0:0:0:0:100:255:0:0:0|h[Gronnstalker's Chestguard]|h|r", -- [27]
+				"|cffa335ee|Hitem:34443:0:0:0:0:0:0:0:100:255:0:0:0|h[Gronnstalker's Bracers]|h|r", -- [28]
+				"|cffa335ee|Hitem:34549:0:0:0:0:0:0:0:100:255:0:0:0|h[Gronnstalker's Belt]|h|r", -- [29]
+				"|cffa335ee|Hitem:34570:0:0:0:0:0:0:0:100:255:0:14:0|h[Gronnstalker's Boots]|h|r", -- [30]
+				"|cffa335ee|Hitem:40505:0:0:0:0:0:0:0:100:255:0:14:0|h[Valorous Cryptstalker Headpiece]|h|r", -- [31]
+				"|cffa335ee|Hitem:40506:0:0:0:0:0:0:0:100:255:0:14:0|h[Valorous Cryptstalker Legguards]|h|r", -- [32]
+				"|cffa335ee|Hitem:40507:0:0:0:0:0:0:0:100:255:0:14:0|h[Valorous Cryptstalker Spaulders]|h|r", -- [33]
+				"|cffa335ee|Hitem:40503:0:0:0:0:0:0:0:100:255:0:14:0|h[Valorous Cryptstalker Tunic]|h|r", -- [34]
+				"|cffa335ee|Hitem:46143:0:0:0:0:0:0:0:100:255:0:14:0|h[Conqueror's Scourgestalker Headpiece]|h|r", -- [35]
+				"|cffa335ee|Hitem:46144:0:0:0:0:0:0:0:100:255:0:14:0|h[Conqueror's Scourgestalker Legguards]|h|r", -- [36]
+				"|cffa335ee|Hitem:46145:0:0:0:0:0:0:0:100:255:0:14:0|h[Conqueror's Scourgestalker Spaulders]|h|r", -- [37]
+				"|cffa335ee|Hitem:46142:0:0:0:0:0:0:0:100:255:0:14:0|h[Conqueror's Scourgestalker Handguards]|h|r", -- [38]
+				"|cffa335ee|Hitem:46141:0:0:0:0:0:0:0:100:255:0:14:0|h[Conqueror's Scourgestalker Tunic]|h|r", -- [39]
+				"|cffa335ee|Hitem:45454:0:0:0:0:0:0:0:100:255:0:0:0|h[Frost-Bound Chain Bracers]|h|r", -- [40]
+				"|cffa335ee|Hitem:45467:0:0:0:0:0:0:0:100:255:0:0:0|h[Belt of the Betrayed]|h|r", -- [41]
+				"|cffa335ee|Hitem:48257:0:0:0:0:0:0:0:100:255:0:0:0|h[Windrunner's Headpiece of Triumph]|h|r", -- [42]
+				"|cffa335ee|Hitem:48258:0:0:0:0:0:0:-1396137088:100:255:0:0:0|h[Windrunner's Legguards of Triumph]|h|r", -- [43]
+				"|cffa335ee|Hitem:48253:0:0:0:0:0:0:0:100:255:0:0:0|h[Windrunner's Spaulders of Conquest]|h|r", -- [44]
+				"|cffa335ee|Hitem:48254:0:0:0:0:0:0:0:100:255:0:0:0|h[Windrunner's Handguards of Conquest]|h|r", -- [45]
+				"|cffa335ee|Hitem:48251:0:0:0:0:0:0:0:100:255:0:0:0|h[Windrunner's Tunic of Conquest]|h|r", -- [46]
+				"|cffa335ee|Hitem:51286:0:0:0:0:0:0:0:100:255:0:14:0|h[Sanctified Ahn'Kahar Blood Hunter's Headpiece]|h|r", -- [47]
+				"|cffa335ee|Hitem:51287:0:0:0:0:0:0:0:100:255:0:14:0|h[Sanctified Ahn'Kahar Blood Hunter's Legguards]|h|r", -- [48]
+				"|cffa335ee|Hitem:51288:0:0:0:0:0:0:0:100:255:0:14:0|h[Sanctified Ahn'Kahar Blood Hunter's Spaulders]|h|r", -- [49]
+				"|cffa335ee|Hitem:51285:0:0:0:0:0:0:0:100:255:0:14:0|h[Sanctified Ahn'Kahar Blood Hunter's Handguards]|h|r", -- [50]
+				"|cffa335ee|Hitem:51289:0:0:0:0:0:0:0:100:255:0:14:0|h[Sanctified Ahn'Kahar Blood Hunter's Tunic]|h|r", -- [51]
+				"|cffa335ee|Hitem:50000:0:0:0:0:0:0:-2080276352:100:255:0:0:0|h[Scourge Hunter's Vambraces]|h|r", -- [52]
+				"|cffa335ee|Hitem:50413:0:0:0:0:0:0:1029243520:100:255:0:0:0|h[Nerub'ar Stalker's Cord]|h|r", -- [53]
+				"|cffa335ee|Hitem:49897:0:0:0:0:0:0:669537600:100:255:0:0:0|h[Rock-Steady Treads]|h|r", -- [54]
+				"|cffa335ee|Hitem:60303:0:0:0:0:0:0:0:100:255:0:14:0|h[Lightning-Charged Headguard]|h|r", -- [55]
+				"|cffa335ee|Hitem:60305:0:0:0:0:0:0:0:100:255:0:0:0|h[Lightning-Charged Legguards]|h|r", -- [56]
+				"|cffa335ee|Hitem:65205:0:0:0:0:0:0:0:100:255:0:14:0|h[Lightning-Charged Gloves]|h|r", -- [57]
+				"|cffa335ee|Hitem:60304:0:0:0:0:0:0:0:100:255:0:0:0|h[Lightning-Charged Tunic]|h|r", -- [58]
+				"|cffa335ee|Hitem:59315:0:0:0:0:0:0:0:100:255:0:0:0|h[Boots of Vertigo]|h|r", -- [59]
+				"|cffa335ee|Hitem:71502:0:0:0:0:0:0:0:100:255:0:14:0|h[Flamewaker's Gloves]|h|r", -- [60]
+				"|cffa335ee|Hitem:71501:0:0:0:0:0:0:0:100:255:0:14:0|h[Flamewaker's Tunic]|h|r", -- [61]
+				"|cffa335ee|Hitem:78674:0:0:0:0:0:0:0:100:255:0:14:0|h[Wyrmstalker's Gloves]|h|r", -- [62]
+				"|cffa335ee|Hitem:95882:0:0:0:0:0:0:0:100:255:4:0:0:465|h[Saurok Stalker's Tunic]|h|r", -- [63]
+				"|cff1eff00|Hitem:128218:0:0:0:0:0:0:0:100:255:0:0:0|h[Fel-Proof Goggles]|h|r", -- [64]
+				"|cffffffff|Hitem:118918:0:0:0:0:0:0:0:100:255:0:11:0|h[Bloody Bandanna]|h|r", -- [65]
+				"|cffa335ee|Hitem:112918:0:0:0:0:0:0:0:100:255:4:3:0:491|h[Hisek's Reserve Longbow]|h|r", -- [66]
+				"|cffa335ee|Hitem:72876:0:0:0:0:0:0:0:100:255:0:11:0|h[Ironfeather Longbow]|h|r", -- [67]
+				"|cff0070dd|Hitem:13246:0:0:0:0:0:0:739040351:100:255:0:0:0|h[Argent Avenger]|h|r", -- [68]
+				"|cffa335ee|Hitem:72873:0:0:0:0:0:0:0:100:255:0:11:0|h[Bronze Blaster]|h|r", -- [69]
+				"|cffa335ee|Hitem:18817:0:0:0:0:0:0:-1342874624:100:255:0:0:0|h[Crown of Destruction]|h|r", -- [70]
+				"|cffa335ee|Hitem:19361:0:0:0:0:0:0:0:100:255:0:0:0|h[Ashjre'thul, Crossbow of Smiting]|h|r", -- [71]
+				"|cffa335ee|Hitem:32336:0:0:0:0:0:0:1668890156:100:255:0:0:0|h[Black Bow of the Betrayer]|h|r", -- [72]
+				"|cffa335ee|Hitem:51927:0:0:0:0:0:0:800195968:100:255:0:0:0|h[Njorndar Bone Bow]|h|r", -- [73]
+				"|cffa335ee|Hitem:28581:0:0:0:0:0:0:1258896687:100:255:0:0:0|h[Wolfslayer Sniper Rifle]|h|r", -- [74]
+				"|cffa335ee|Hitem:19866:0:0:0:0:0:0:1182230682:100:255:0:0:0|h[Warblade of the Hakkari]|h|r", -- [75]
+				"|cffa335ee|Hitem:19865:0:0:0:0:0:0:-1134017536:100:255:0:0:0|h[Warblade of the Hakkari]|h|r", -- [76]
+				"|cffa335ee|Hitem:40265:0:0:0:0:0:0:0:100:255:0:0:0|h[Arrowsong]|h|r", -- [77]
 			},
 			["BagItemsAndCounts"] = {
 				[113982] = 1,
 				[116276] = 9,
-				[128373] = 5,
-				[51560] = 1,
-				[114808] = 2,
-				[119134] = 1,
-				[113681] = 988,
+				[124285] = 1,
+				[110609] = 1,
+				[114808] = 1,
+				[127770] = 1,
+				[113681] = 983,
+				[32780] = 1,
 				[52723] = 1,
-				[119293] = 31,
+				[128453] = 1,
 				[21100] = 10,
-				[118690] = 1,
-				[113261] = 140,
-				[79249] = 93,
-				[118897] = 10,
+				[33820] = 1,
+				[112499] = 16,
+				[79249] = 87,
+				[113944] = 1,
 				[65360] = 1,
-				[114746] = 2,
+				[120945] = 44,
+				[113849] = 1,
 				[113611] = 1,
 				[63352] = 1,
-				[107277] = 1,
-				[113262] = 194,
-				[112332] = 1,
-				[113405] = 5,
-				[113540] = 1,
-				[118903] = 1,
+				[124557] = 1,
+				[128502] = 1,
+				[109222] = 1,
 				[46874] = 1,
-				[23247] = 5,
+				[127669] = 1,
 				[109262] = 1,
-				[116120] = 1,
-				[113588] = 116,
-				[115546] = 1,
+				[118922] = 1,
 				[116271] = 18,
-				[114120] = 204,
-				[118700] = 43,
-				[113919] = 1,
-				[122272] = 1,
-				[113263] = 23,
-				[112499] = 16,
-				[19019] = 1,
+				[114120] = 17,
+				[114128] = 5,
+				[124304] = 1,
+				[113612] = 1,
+				[114745] = 6,
+				[127884] = 1,
 				[58487] = 8,
-				[114081] = 6,
-				[113954] = 1,
-				[6948] = 1,
-				[116113] = 1,
-				[63206] = 1,
-				[32757] = 1,
-				[113608] = 1,
-				[127115] = 4,
-				[115010] = 1,
+				[113540] = 1,
+				[116268] = 10,
+				[127408] = 1,
+				[114081] = 1,
+				[116913] = 1,
+				[111557] = 3,
+				[113851] = 1,
 				[113875] = 1,
-				[110560] = 1,
+				[128353] = 1,
+				[32757] = 1,
+				[118630] = 74,
 				[113891] = 1,
-				[113264] = 59,
-				[120257] = 17,
+				[113899] = 1,
+				[127115] = 9,
 				[8383] = 1,
 				[113542] = 1,
 				[113931] = 1,
-				[115463] = 2,
+				[124099] = 267,
 				[111407] = 1,
-				[114745] = 16,
-				[114225] = 2,
-				[109145] = 1,
-				[109153] = 3,
-				[117398] = 1,
+				[64399] = 1,
+				[113971] = 1,
+				[114225] = 1,
+				[109153] = 51,
+				[107640] = 4,
 				[116916] = 1,
 				[34334] = 1,
-				[107640] = 4,
+				[110560] = 1,
 				[113892] = 1,
-				[6263] = 1,
-				[118099] = 25,
-				[109217] = 6,
+				[114116] = 2,
+				[118099] = 73,
+				[114129] = 2,
 				[113543] = 1,
-				[113915] = 1,
+				[127971] = 1,
 				[52019] = 1,
 				[85500] = 1,
-				[114128] = 4,
+				[38577] = 3,
 				[118663] = 1,
-				[44050] = 1,
+				[124132] = 1,
 				[116266] = 9,
-				[106876] = 1,
-				[107392] = 2,
+				[127662] = 1,
+				[124299] = 1,
 				[118576] = 79,
 				[118711] = 9,
-				[118630] = 86,
-				[113578] = 4,
-				[118354] = 2,
-				[114806] = 4,
-				[124299] = 1,
-				[114131] = 1,
-				[107273] = 1,
-				[118922] = 1,
-				[5512] = 1,
+				[113915] = 1,
+				[117398] = 1,
+				[115463] = 2,
+				[114806] = 1,
+				[19019] = 1,
+				[6263] = 1,
+				[113954] = 1,
+				[108996] = 2,
+				[44050] = 1,
 				[103678] = 1,
-				[116268] = 10,
-				[114616] = 4,
-				[114116] = 32,
-				[107393] = 1,
-				[113899] = 1,
+				[6948] = 1,
+				[114616] = 1,
+				[113608] = 1,
+				[109167] = 1,
+				[116113] = 1,
 				[119093] = 1,
-				[114129] = 3,
-				[109076] = 1,
-				[116913] = 1,
-				[114807] = 10,
-				[64399] = 1,
-				[33820] = 1,
-				[118006] = 10,
-				[34498] = 1,
-				[118935] = 1,
+				[115545] = 1,
+				[109076] = 4,
+				[120257] = 17,
+				[114807] = 1,
+				[51560] = 1,
+				[113943] = 1,
+				[118897] = 10,
+				[118903] = 1,
+				[116120] = 1,
 			},
-			["BankItems"] = {
-				"|cffa335ee|Hitem:31336:0:0:0:0:0:0:0:100:254:0:0:0|h[Blade of Wizardry]|h|r", -- [1]
-				"|cffa335ee|Hitem:86889:4699:4996:0:0:0:0:1245908736:100:254:4:0:0:445|h[Taoren, the Soul Burner]|h|r", -- [2]
-				"|cffa335ee|Hitem:78471:0:0:0:0:0:0:0:100:254:0:0:0|h[Vishanka, Jaws of the Earth]|h|r", -- [3]
-				"|cffa335ee|Hitem:71361:4227:0:0:0:0:0:1058632000:100:254:0:0:0|h[Ranseur of Hatred]|h|r", -- [4]
-				"|cffa335ee|Hitem:59320:0:0:0:0:0:0:0:100:254:0:0:0|h[Themios the Darkbringer]|h|r", -- [5]
-				"|cffa335ee|Hitem:50049:3827:0:0:0:0:0:1874002688:100:254:0:0:0|h[Quel'Delar, Ferocity of the Scorned]|h|r", -- [6]
-				"|cffa335ee|Hitem:47737:3827:0:0:0:0:0:276257928:100:254:0:0:0|h[Reckoning]|h|r", -- [7]
-				"|cffa335ee|Hitem:34183:3828:0:0:0:0:0:-1486523879:100:254:0:0:0|h[Shivering Felspine]|h|r", -- [8]
-				"|cffa335ee|Hitem:18715:2646:0:0:0:0:0:802546044:100:254:0:0:0|h[Lok'delar, Stave of the Ancient Keepers]|h|r", -- [9]
-				"|cffa335ee|Hitem:18713:2523:0:0:0:0:0:817254550:100:254:0:0:0|h[Rhok'delar, Longbow of the Ancient Keepers]|h|r", -- [10]
-				"|cffa335ee|Hitem:19854:0:0:0:0:0:0:1966078464:100:254:0:0:0|h[Zin'rokh, Destroyer of Worlds]|h|r", -- [11]
-				"|cffa335ee|Hitem:22816:2564:0:0:0:0:0:0:100:254:0:0:0|h[Hatchet of Sundered Bone]|h|r", -- [12]
-				"|cffa335ee|Hitem:21520:0:0:0:0:0:0:396162912:100:254:0:0:0|h[Ravencrest's Legacy]|h|r", -- [13]
-				"|cffa335ee|Hitem:19859:2564:0:0:0:0:0:0:100:254:0:0:0|h[Fang of the Faceless]|h|r", -- [14]
-				"|cff0070dd|Hitem:19901:0:0:0:0:0:0:1557241280:100:254:0:0:0|h[Zulian Slicer]|h|r", -- [15]
-				"|cff0070dd|Hitem:19901:0:0:0:0:0:0:1072896704:100:254:0:0:0|h[Zulian Slicer]|h|r", -- [16]
-				"|cffa335ee|Hitem:19910:0:0:0:0:0:0:1424354560:100:254:0:0:0|h[Arlokk's Grasp]|h|r", -- [17]
-				"|cffa335ee|Hitem:19896:0:0:0:0:0:0:-1794915584:100:254:0:0:0|h[Thekal's Grasp]|h|r", -- [18]
-				"|cff0070dd|Hitem:37892:0:0:0:0:0:0:2060282880:100:254:0:0:0|h[Green Brewfest Stein]|h|r", -- [19]
-				"|cff0070dd|Hitem:33016:0:0:0:0:0:0:1743467440:100:254:0:0:0|h[Blue Brewfest Stein]|h|r", -- [20]
-				"|cffffffff|Hitem:45073:0:0:0:0:0:0:0:100:254:0:0:0|h[Spring Flowers]|h|r", -- [21]
-				"|cff0070dd|Hitem:113547:0:0:0:0:0:0:0:100:254:0:0:0|h[Bouquet of Dried Flowers]|h|r", -- [22]
-				"|cff1eff00|Hitem:44731:0:0:0:0:0:0:-1004069504:100:254:0:0:0|h[Bouquet of Ebon Roses]|h|r", -- [23]
-				"|cff1eff00|Hitem:22206:0:0:0:0:0:0:2073138752:100:254:0:0:0|h[Bouquet of Red Roses]|h|r", -- [24]
-				"|cffa335ee|Hitem:118939:0:0:0:0:0:0:0:100:254:0:0:0|h[Crown of Destruction]|h|r", -- [25]
-				"|cffa335ee|Hitem:99660:0:4656:4643:0:0:0:0:100:254:4:14:0:505|h[Headguard of the Unblinking Vigil]|h|r", -- [26]
-				"|cffa335ee|Hitem:69576:4209:0:0:0:0:0:-1616507392:100:254:0:0:0|h[Headdress of Sharpened Vision]|h|r", -- [27]
-				"|cff0070dd|Hitem:50741:0:0:0:0:0:0:-1175128192:100:254:0:0:0|h[Vile Fumigator's Mask]|h|r", -- [28]
-				"|cff1eff00|Hitem:30847:0:0:0:0:0:0:47975340:100:254:0:0:0|h[X-52 Rocket Helmet]|h|r", -- [29]
-				"|cffffffff|Hitem:33047:0:0:0:0:0:0:0:100:254:0:0:0|h[Belbi's Eyesight Enhancing Romance Goggles]|h|r", -- [30]
-				"|cff0070dd|Hitem:49715:0:0:0:0:0:0:0:100:254:0:1:0|h[Forever-Lovely Rose]|h|r", -- [31]
-				"|cff0070dd|Hitem:46349:0:0:0:0:0:0:0:100:254:0:0:0|h[Chef's Hat]|h|r", -- [32]
-				"|cff0070dd|Hitem:33292:0:0:0:0:0:0:-1625647640:100:254:0:0:0|h[Hallowed Helm]|h|r", -- [33]
-				"|cff1eff00|Hitem:21525:0:0:0:0:0:0:0:100:254:0:4:0|h[Green Winter Hat]|h|r", -- [34]
-				"|cff1eff00|Hitem:21524:0:0:0:0:0:0:1433097864:100:254:0:0:0|h[Red Winter Hat]|h|r", -- [35]
-				"|cffffffff|Hitem:44803:0:0:0:0:0:0:398967392:100:254:0:0:0|h[Spring Circlet]|h|r", -- [36]
-				"|cffa335ee|Hitem:112927:4804:4609:4609:0:0:0:0:100:254:4:4:1:451:491|h[Shoulderguards of Intended Power]|h|r", -- [37]
-				"|cffa335ee|Hitem:69554:4204:0:0:0:0:0:665101184:100:254:0:0:0|h[Pauldrons of Nalorakk]|h|r", -- [38]
-				"|cffa335ee|Hitem:112931:0:0:0:0:0:0:0:100:254:4:3:0:491|h[Chestguard of Relentless Tyranny]|h|r", -- [39]
-				"|cffa335ee|Hitem:99577:4419:4643:4643:4643:0:0:0:100:254:4:14:0:505|h[Tunic of the Unblinking Vigil]|h|r", -- [40]
-				"|cffa335ee|Hitem:59346:4063:0:0:0:0:0:1932758656:100:254:0:0:0|h[Tunic of Failed Experiments]|h|r", -- [41]
-				"|cffa335ee|Hitem:78430:0:0:0:0:0:0:0:100:254:0:0:0|h[Bracers of Looming Darkness]|h|r", -- [42]
-				"|cffa335ee|Hitem:71365:4258:0:0:0:0:0:694177696:100:254:0:0:0|h[Hide-Bound Chains]|h|r", -- [43]
-				"|cffa335ee|Hitem:47610:0:0:0:0:0:0:0:100:254:0:0:0|h[Armbands of the Northern Stalker]|h|r", -- [44]
-				"|cffa335ee|Hitem:39278:0:0:0:0:0:0:0:100:254:0:0:0|h[Bands of Anxiety]|h|r", -- [45]
-				"|cffa335ee|Hitem:65141:0:0:0:0:0:0:0:100:254:0:0:0|h[Proto-Handler's Gauntlets]|h|r", -- [46]
-				"|cffa335ee|Hitem:45109:0:0:0:0:0:0:0:100:254:0:0:0|h[Gloves of the Fiery Behemoth]|h|r", -- [47]
-				"|cffa335ee|Hitem:39194:0:0:0:0:0:0:0:100:254:0:0:0|h[Rusted-Link Spiked Gauntlets]|h|r", -- [48]
-				"|cffa335ee|Hitem:98614:0:4577:4577:4577:0:0:839342080:100:254:4:0:0:505|h[Gorge Stalker Belt]|h|r", -- [49]
-				"|cffa335ee|Hitem:71255:0:0:0:0:0:0:0:100:254:0:0:0|h[Firearrow Belt]|h|r", -- [50]
-				"|cffa335ee|Hitem:56539:0:0:0:0:0:0:785873280:100:254:0:0:0|h[Corded Viper Belt]|h|r", -- [51]
-				"|cffa335ee|Hitem:50762:0:0:0:0:0:0:0:100:254:0:0:0|h[Linked Scourge Vertebrae]|h|r", -- [52]
-				"|cffa335ee|Hitem:99158:0:0:0:0:0:0:0:100:254:4:14:0:491|h[Legguards of the Unblinking Vigil]|h|r", -- [53]
-				"|cffa335ee|Hitem:98605:4822:4577:4577:0:0:0:2010338816:100:254:4:0:0:505|h[Gorge Stalker Legplates]|h|r", -- [54]
-				"|cffa335ee|Hitem:90570:0:0:0:0:0:0:1909300096:100:254:4:0:0:445|h[Legguards of Sleeting Arrows]|h|r", -- [55]
-				"|cffa335ee|Hitem:112779:4428:3116:0:0:0:0:0:100:254:4:5:1:449:505|h[Ravager's Pathwalkers]|h|r", -- [56]
-				"|cffa335ee|Hitem:70123:4105:0:0:0:0:0:0:100:254:0:0:0|h[Lancer's Greaves]|h|r", -- [57]
-				"|cffa335ee|Hitem:62385:4105:0:0:0:0:0:0:100:254:0:0:0|h[Treads of Malorne]|h|r", -- [58]
-				"|cffa335ee|Hitem:67134:1099:0:0:0:0:0:944880256:100:254:0:0:0|h[Dory's Finery]|h|r", -- [59]
-				"|cffa335ee|Hitem:50470:1099:0:0:0:0:0:0:100:254:0:0:0|h[Recovered Scarlet Onslaught Cape]|h|r", -- [60]
-				"|cffa335ee|Hitem:32420:1441:0:0:0:0:0:629854836:100:254:0:0:0|h[Night's End]|h|r", -- [61]
-				"|cff0070dd|Hitem:32539:1889:0:0:0:0:0:0:100:254:0:0:0|h[Skyguard's Drape]|h|r", -- [62]
-				"|cffffffff|Hitem:53097:0:0:0:0:0:0:1834981760:100:254:0:0:0|h[Gnomeregan Drape]|h|r", -- [63]
-				"|cff0070dd|Hitem:15138:2619:0:0:0:0:0:1981960320:100:254:0:0:0|h[Onyxia Scale Cloak]|h|r", -- [64]
-				"|cffa335ee|Hitem:19621:0:0:0:0:0:0:801097924:100:254:0:0:0|h[Maelstrom's Wrath]|h|r", -- [65]
-				"|cffa335ee|Hitem:50402:0:0:0:0:0:0:718287680:100:254:0:0:0|h[Ashen Band of Endless Vengeance]|h|r", -- [66]
-				"|cffa335ee|Hitem:29301:0:0:0:0:0:0:356441089:100:254:0:0:0|h[Band of the Eternal Champion]|h|r", -- [67]
-				"|cffa335ee|Hitem:21526:0:0:0:0:0:0:2120708864:100:254:0:0:0|h[Band of Icy Depths]|h|r", -- [68]
-				"|cff0070dd|Hitem:12344:0:0:0:0:0:0:2066010368:100:254:0:0:0|h[Seal of Ascension]|h|r", -- [69]
-				"|cff0070dd|Hitem:116154:0:0:0:0:0:0:0:100:254:0:11:0|h[Barov Lumberjack Caller]|h|r", -- [70]
-				"|cffa335ee|Hitem:108903:0:0:0:0:0:0:0:100:254:0:0:1:545|h[Tiny Iron Star]|h|r", -- [71]
-				"|cff0070dd|Hitem:108907:0:0:0:0:0:0:0:100:254:0:0:0|h[Mushroom of Destiny]|h|r", -- [72]
-				"|cffa335ee|Hitem:87576:0:0:0:0:0:0:1768705152:100:254:4:0:0:445|h[Bitterest Balebrew Charm]|h|r", -- [73]
-				"|cffa335ee|Hitem:87575:0:0:0:0:0:0:1552481920:100:254:4:0:0:445|h[Bubbliest Brightbrew Charm]|h|r", -- [74]
-				"|cff0070dd|Hitem:86576:0:0:0:0:0:0:1192295168:100:254:0:0:0|h[Dynasty of Steel]|h|r", -- [75]
-				"|cff1eff00|Hitem:88376:0:0:0:0:0:0:1406087552:100:254:0:0:0|h[Orange Painted Turnip]|h|r", -- [76]
-				"|cff1eff00|Hitem:88371:0:0:0:0:0:0:1811432576:100:254:0:0:0|h[Watermelon Bomb]|h|r", -- [77]
-				"|cff1eff00|Hitem:82984:0:0:0:0:0:0:2001468160:100:254:0:0:0|h[Jade Raccoon]|h|r", -- [78]
-				"|cffa335ee|Hitem:50362:0:0:0:0:0:0:282360596:100:254:0:0:0|h[Deathbringer's Will]|h|r", -- [79]
-				"|cffa335ee|Hitem:49464:0:0:0:0:0:0:1273649920:100:254:0:0:0|h[Shiny Shard of the Flame]|h|r", -- [80]
-				"|cff0070dd|Hitem:44597:0:0:0:0:0:0:1384133922:100:254:0:0:0|h[Medallion of Heroism]|h|r", -- [81]
-				"|cff0070dd|Hitem:40601:0:0:0:0:0:0:0:100:254:0:0:0|h[Argent Dawn Banner]|h|r", -- [82]
-				"|cff0070dd|Hitem:40593:0:0:0:0:0:0:0:100:254:0:0:0|h[Argent Tome]|h|r", -- [83]
-				"|cff0070dd|Hitem:40492:0:0:0:0:0:0:0:100:254:0:0:0|h[Argent War Horn]|h|r", -- [84]
-				"|cff0070dd|Hitem:28237:0:0:0:0:0:0:0:100:254:0:0:0|h[Medallion of the Alliance]|h|r", -- [85]
-				"|cff0070dd|Hitem:32864:0:0:0:0:0:0:532267468:100:254:0:0:0|h[Commander's Badge]|h|r", -- [86]
-				"|cffa335ee|Hitem:19290:0:0:0:0:0:0:593410438:100:254:0:0:0|h[Darkmoon Card: Twisting Nether]|h|r", -- [87]
-				"|cffa335ee|Hitem:21326:0:0:0:0:0:0:1779952128:100:254:0:0:0|h[Defender of the Timbermaw]|h|r", -- [88]
-				"|cff0070dd|Hitem:14023:0:0:0:0:0:0:1555455872:100:254:0:0:0|h[Barov Peasant Caller]|h|r", -- [89]
-				"|cffa335ee|Hitem:17904:0:0:0:0:0:0:950364330:100:254:0:0:0|h[Stormpike Insignia Rank 6]|h|r", -- [90]
-				"|cff1eff00|Hitem:11122:0:0:0:0:0:0:851045248:100:254:0:0:0|h[Carrot on a Stick]|h|r", -- [91]
-				"|cff1eff00|Hitem:2820:0:0:0:0:0:0:362671008:100:254:0:0:0|h[Nifty Stopwatch]|h|r", -- [92]
-				"|cff0070dd|Hitem:13382:0:0:0:0:0:0:674550322:100:254:0:0:0|h[Cannonball Runner]|h|r", -- [93]
-				"|cff0070dd|Hitem:118365:0:0:0:0:0:0:0:100:254:0:11:0|h[Stormwind Tabard]|h|r", -- [94]
-				"|cffffffff|Hitem:65908:0:0:0:0:0:0:0:100:254:0:0:0|h[Tabard of the Wildhammer Clan]|h|r", -- [95]
-				"|cffffffff|Hitem:65907:0:0:0:0:0:0:0:100:254:0:0:0|h[Tabard of Therazane]|h|r", -- [96]
-				"|cffffffff|Hitem:65906:0:0:0:0:0:0:0:100:254:0:0:0|h[Tabard of the Guardians of Hyjal]|h|r", -- [97]
-				"|cffffffff|Hitem:65905:0:0:0:0:0:0:0:100:254:0:0:0|h[Tabard of the Earthen Ring]|h|r", -- [98]
-				"|cffffffff|Hitem:65904:0:0:0:0:0:0:0:100:254:0:0:0|h[Tabard of Ramkahen]|h|r", -- [99]
-				"|cffffffff|Hitem:22999:0:0:0:0:0:0:0:100:254:0:0:0|h[Tabard of the Argent Dawn]|h|r", -- [100]
-				"|cffa335ee|Hitem:69210:0:0:0:0:0:0:0:100:254:0:0:0|h[Renowned Guild Tabard]|h|r", -- [101]
-				"|cffa335ee|Hitem:43348:0:0:0:0:0:0:786328418:100:254:0:0:0|h[Tabard of the Explorer]|h|r", -- [102]
-				"|cffa335ee|Hitem:43300:0:0:0:0:0:0:82134528:100:254:0:0:0|h[Loremaster's Colors]|h|r", -- [103]
-				"|cffa335ee|Hitem:43300:0:0:0:0:0:0:1013702528:100:254:0:0:0|h[Loremaster's Colors]|h|r", -- [104]
-				"|cffa335ee|Hitem:40643:0:0:0:0:0:0:1337248000:100:254:0:0:0|h[Tabard of the Achiever]|h|r", -- [105]
-				"|cff0070dd|Hitem:35280:0:0:0:0:0:0:531165573:100:254:0:0:0|h[Tabard of Summer Flames]|h|r", -- [106]
-				"|cff1eff00|Hitem:23192:0:0:0:0:0:0:1198672544:100:254:0:0:0|h[Tabard of the Scarlet Crusade]|h|r", -- [107]
-				"|cffffffff|Hitem:64882:0:0:0:0:0:0:0:100:254:0:0:0|h[Gilneas Tabard]|h|r", -- [108]
-				"|cffffffff|Hitem:46817:0:0:0:0:0:0:0:100:254:0:0:0|h[Silver Covenant Tabard]|h|r", -- [109]
-				"|cffffffff|Hitem:116448:0:0:0:0:0:0:0:100:254:0:11:0|h[Warm Red Woolen Socks]|h|r", -- [110]
-				"|cffa335ee|Hitem:38082:0:0:0:0:0:0:0:100:254:0:0:0|h[\"Gigantique\" Bag]|h|r", -- [111]
-				"|cff0070dd|Hitem:69748:0:0:0:0:0:0:579081600:100:254:0:0:0|h[Tattered Hexcloth Bag]|h|r", -- [112]
-				"|cffa335ee|Hitem:49295:0:0:0:0:0:0:-1965299264:100:254:0:0:0|h[Enlarged Onyxia Hide Backpack]|h|r", -- [113]
-				"|cffa335ee|Hitem:78857:0:0:0:0:0:0:0:100:254:0:0:0|h[Leggings of the Corrupted Protector]|h|r", -- [114]
+			["Equipped"] = {
+				{
+					"|cffa335ee|Hitem:124296:0:0:0:0:0:0:0:100:254:0:3:1:41|h[Hood of the Savage Hunt]|h|r", -- [1]
+					"|cffa335ee|Hitem:113865:5317:0:0:0:0:0:0:100:254:0:5:1:566|h[Darklight Necklace]|h|r", -- [2]
+					"|cffa335ee|Hitem:115547:0:0:0:0:0:0:0:100:254:0:5:1:566|h[Rylakstalker's Spaulders]|h|r", -- [3]
+					nil, -- [4]
+					"|cffa335ee|Hitem:115548:0:0:0:0:0:0:0:100:254:0:5:1:566|h[Rylakstalker's Tunic]|h|r", -- [5]
+					"|cffa335ee|Hitem:113955:0:0:0:0:0:0:0:100:254:0:5:2:43:566|h[Grenadier's Belt]|h|r", -- [6]
+					"|cffa335ee|Hitem:115546:0:0:0:0:0:0:0:100:254:0:5:1:566|h[Rylakstalker's Legguards]|h|r", -- [7]
+					"|cffa335ee|Hitem:113919:0:5346:0:0:0:0:0:100:254:0:5:2:564:566|h[Treads of Rekindled Flames]|h|r", -- [8]
+					"|cffa335ee|Hitem:124312:0:0:0:0:0:0:0:100:254:0:3:0|h[Bloody Berserker's Bracers]|h|r", -- [9]
+					"|cffa335ee|Hitem:115549:0:0:0:0:0:0:0:100:254:0:5:1:566|h[Rylakstalker's Gloves]|h|r", -- [10]
+					"|cffa335ee|Hitem:113917:5327:0:0:0:0:0:0:100:254:0:5:1:566|h[Cinderwolf Signet]|h|r", -- [11]
+					"|cffa335ee|Hitem:118307:5324:0:0:0:0:0:0:100:254:0:11:0|h[Spellbound Runic Band of Unrelenting Slaughter]|h|r", -- [12]
+					"|cffa335ee|Hitem:124224:0:0:0:0:0:0:0:100:254:0:3:0|h[Mirror of the Blademaster]|h|r", -- [13]
+					"|cffa335ee|Hitem:113985:0:0:0:0:0:0:0:100:254:0:5:1:566|h[Humming Blackiron Trigger]|h|r", -- [14]
+					"|cffa335ee|Hitem:127971:0:0:0:0:0:0:0:100:254:0:0:0|h[Gossamer Felscorched Scarf]|h|r", -- [15]
+					"|cffa335ee|Hitem:109168:5276:0:0:0:0:0:0:100:254:0:13:3:74:531:619|h[Shrediron's Shredder of the Savage]|h|r", -- [16]
+				}, -- [1]
+				{
+					"|cffa335ee|Hitem:124296:0:0:0:0:0:0:0:100:255:0:3:1:41|h[Hood of the Savage Hunt]|h|r", -- [1]
+					"|cffa335ee|Hitem:113865:5317:0:0:0:0:0:0:100:255:0:5:1:566|h[Darklight Necklace]|h|r", -- [2]
+					"|cffa335ee|Hitem:115547:0:0:0:0:0:0:0:100:255:0:5:1:566|h[Rylakstalker's Spaulders]|h|r", -- [3]
+					nil, -- [4]
+					"|cffa335ee|Hitem:115548:0:0:0:0:0:0:0:100:255:0:5:1:566|h[Rylakstalker's Tunic]|h|r", -- [5]
+					"|cffa335ee|Hitem:113955:0:0:0:0:0:0:0:100:255:0:5:2:43:566|h[Grenadier's Belt]|h|r", -- [6]
+					"|cffa335ee|Hitem:115546:0:0:0:0:0:0:0:100:255:0:5:1:566|h[Rylakstalker's Legguards]|h|r", -- [7]
+					"|cffa335ee|Hitem:113919:0:5346:0:0:0:0:0:100:255:0:5:2:564:566|h[Treads of Rekindled Flames]|h|r", -- [8]
+					"|cffa335ee|Hitem:124312:0:0:0:0:0:0:0:100:255:0:3:0|h[Bloody Berserker's Bracers]|h|r", -- [9]
+					"|cffa335ee|Hitem:115549:0:0:0:0:0:0:0:100:255:0:5:1:566|h[Rylakstalker's Gloves]|h|r", -- [10]
+					"|cffa335ee|Hitem:113917:5324:0:0:0:0:0:0:100:255:0:5:1:566|h[Cinderwolf Signet]|h|r", -- [11]
+					"|cffa335ee|Hitem:118307:5324:0:0:0:0:0:0:100:255:0:11:0|h[Spellbound Runic Band of Unrelenting Slaughter]|h|r", -- [12]
+					"|cffa335ee|Hitem:124224:0:0:0:0:0:0:0:100:255:0:3:0|h[Mirror of the Blademaster]|h|r", -- [13]
+					"|cffa335ee|Hitem:113985:0:0:0:0:0:0:0:100:255:0:5:1:566|h[Humming Blackiron Trigger]|h|r", -- [14]
+					"|cffa335ee|Hitem:127971:5310:0:0:0:0:0:0:100:255:0:0:0|h[Gossamer Felscorched Scarf]|h|r", -- [15]
+					"|cffa335ee|Hitem:109168:5276:0:0:0:0:0:0:100:255:0:13:3:74:532:620|h[Shrediron's Shredder of the Savage]|h|r", -- [16]
+				}, -- [2]
 			},
 			["Logging"] = {
 				["LastDiff"] = 1,
 				["LastZone"] = "SMV Alliance Garrison Level 3",
+				["LastWipe"] = 1435883070,
+			},
+			["GearSets"] = {
+				{
+					{
+						["bonusIds"] = {
+							566, -- [1]
+						},
+						["enchantId"] = 0,
+						["id"] = 115545,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [1]
+					{
+						["bonusIds"] = {
+							566, -- [1]
+						},
+						["enchantId"] = 5317,
+						["id"] = 113865,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [2]
+					{
+						["bonusIds"] = {
+							564, -- [1]
+							566, -- [2]
+						},
+						["enchantId"] = 0,
+						["id"] = 113899,
+						["gemIds"] = {
+							5413, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [3]
+					nil, -- [4]
+					{
+						["bonusIds"] = {
+							566, -- [1]
+						},
+						["enchantId"] = 0,
+						["id"] = 115548,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [5]
+					{
+						["bonusIds"] = {
+							43, -- [1]
+							566, -- [2]
+						},
+						["enchantId"] = 0,
+						["id"] = 113955,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [6]
+					{
+						["bonusIds"] = {
+							566, -- [1]
+						},
+						["enchantId"] = 0,
+						["id"] = 115546,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [7]
+					{
+						["bonusIds"] = {
+							564, -- [1]
+							566, -- [2]
+						},
+						["enchantId"] = 0,
+						["id"] = 113919,
+						["gemIds"] = {
+							5413, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [8]
+					{
+						["bonusIds"] = {
+							566, -- [1]
+						},
+						["enchantId"] = 0,
+						["id"] = 113943,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [9]
+					{
+						["bonusIds"] = {
+							566, -- [1]
+						},
+						["enchantId"] = 0,
+						["id"] = 115549,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [10]
+					{
+						["bonusIds"] = {
+							566, -- [1]
+						},
+						["enchantId"] = 5324,
+						["id"] = 113917,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [11]
+					{
+						["enchantId"] = 5324,
+						["id"] = 118307,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [12]
+					{
+						["bonusIds"] = {
+							566, -- [1]
+						},
+						["enchantId"] = 0,
+						["id"] = 113931,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [13]
+					{
+						["bonusIds"] = {
+							566, -- [1]
+						},
+						["enchantId"] = 0,
+						["id"] = 113985,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [14]
+					{
+						["bonusIds"] = {
+							567, -- [1]
+						},
+						["enchantId"] = 5310,
+						["id"] = 113971,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [15]
+					{
+						["bonusIds"] = {
+							74, -- [1]
+							531, -- [2]
+							619, -- [3]
+						},
+						["enchantId"] = 5276,
+						["id"] = 109168,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [16]
+				}, -- [1]
+				{
+					{
+						["bonusIds"] = {
+							566, -- [1]
+						},
+						["enchantId"] = 0,
+						["id"] = 115545,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [1]
+					{
+						["bonusIds"] = {
+							566, -- [1]
+						},
+						["enchantId"] = 5317,
+						["id"] = 113865,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [2]
+					{
+						["bonusIds"] = {
+							566, -- [1]
+						},
+						["enchantId"] = 0,
+						["id"] = 115547,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [3]
+					nil, -- [4]
+					{
+						["bonusIds"] = {
+							566, -- [1]
+						},
+						["enchantId"] = 0,
+						["id"] = 115548,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [5]
+					{
+						["bonusIds"] = {
+							43, -- [1]
+							566, -- [2]
+						},
+						["enchantId"] = 0,
+						["id"] = 113955,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [6]
+					{
+						["bonusIds"] = {
+							561, -- [1]
+							566, -- [2]
+						},
+						["enchantId"] = 0,
+						["id"] = 113875,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [7]
+					{
+						["bonusIds"] = {
+							564, -- [1]
+							566, -- [2]
+						},
+						["enchantId"] = 0,
+						["id"] = 113919,
+						["gemIds"] = {
+							5413, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [8]
+					{
+						["bonusIds"] = {
+							566, -- [1]
+						},
+						["enchantId"] = 0,
+						["id"] = 113943,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [9]
+					{
+						["bonusIds"] = {
+							566, -- [1]
+						},
+						["enchantId"] = 0,
+						["id"] = 115549,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [10]
+					{
+						["bonusIds"] = {
+							566, -- [1]
+						},
+						["enchantId"] = 5324,
+						["id"] = 113917,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [11]
+					{
+						["enchantId"] = 5324,
+						["id"] = 118307,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [12]
+					{
+						["bonusIds"] = {
+							566, -- [1]
+						},
+						["enchantId"] = 0,
+						["id"] = 113931,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [13]
+					{
+						["bonusIds"] = {
+							566, -- [1]
+						},
+						["enchantId"] = 0,
+						["id"] = 113985,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [14]
+					{
+						["bonusIds"] = {
+							567, -- [1]
+						},
+						["enchantId"] = 5310,
+						["id"] = 113971,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [15]
+					{
+						["bonusIds"] = {
+							74, -- [1]
+							531, -- [2]
+							619, -- [3]
+						},
+						["enchantId"] = 5276,
+						["id"] = 109168,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [16]
+				}, -- [2]
+			},
+			["ExtraItemData"] = {
+				{
+					[109168] = {
+						["id"] = 109168,
+					},
+					[113865] = {
+						["id"] = 113865,
+					},
+					[113955] = {
+						["id"] = 113955,
+					},
+					[113971] = {
+						["id"] = 113971,
+					},
+					[118307] = {
+						["id"] = 118307,
+					},
+					[113943] = {
+						["id"] = 113943,
+					},
+					[113899] = {
+						["id"] = 113899,
+						["socketColors"] = {
+							0, -- [1]
+						},
+					},
+					[113985] = {
+						["id"] = 113985,
+					},
+					[113931] = {
+						["id"] = 113931,
+					},
+					[113917] = {
+						["id"] = 113917,
+					},
+					[115545] = {
+						["id"] = 115545,
+					},
+					[113919] = {
+						["id"] = 113919,
+						["socketColors"] = {
+							0, -- [1]
+						},
+					},
+					[115546] = {
+						["id"] = 115546,
+					},
+					[115548] = {
+						["id"] = 115548,
+					},
+					[115549] = {
+						["id"] = 115549,
+					},
+				}, -- [1]
+				{
+					[109168] = {
+						["id"] = 109168,
+					},
+					[113955] = {
+						["id"] = 113955,
+					},
+					[113865] = {
+						["id"] = 113865,
+					},
+					[113971] = {
+						["id"] = 113971,
+					},
+					[115547] = {
+						["id"] = 115547,
+					},
+					[113943] = {
+						["id"] = 113943,
+					},
+					[115549] = {
+						["id"] = 115549,
+					},
+					[113985] = {
+						["id"] = 113985,
+					},
+					[113931] = {
+						["id"] = 113931,
+					},
+					[113917] = {
+						["id"] = 113917,
+					},
+					[115545] = {
+						["id"] = 115545,
+					},
+					[113919] = {
+						["id"] = 113919,
+						["socketColors"] = {
+							0, -- [1]
+						},
+					},
+					[113875] = {
+						["id"] = 113875,
+					},
+					[115548] = {
+						["id"] = 115548,
+					},
+					[118307] = {
+						["id"] = 118307,
+					},
+				}, -- [2]
 			},
 			["BankItemsAndCounts"] = {
 				[70123] = 1,
@@ -491,214 +1288,210 @@ AskMrRobotDb2 = {
 				[39278] = 1,
 				[114781] = 7,
 				[40593] = 1,
-				[108996] = 110,
-				[114622] = 7,
+				[108996] = 119,
+				[114622] = 6,
 				[18715] = 1,
 				[21524] = 1,
 				[98605] = 1,
 				[64882] = 1,
-				[109124] = 252,
+				[109124] = 93,
 				[109140] = 1,
 				[33047] = 1,
 				[59320] = 1,
-				[114081] = 20,
+				[114081] = 29,
 				[56539] = 1,
-				[114129] = 43,
+				[114129] = 55,
 				[32864] = 1,
 				[13382] = 1,
-				[109125] = 1320,
+				[109125] = 1349,
 				[50762] = 1,
 				[85219] = 1,
 				[5951] = 7,
-				[113588] = 24,
+				[53097] = 1,
 				[19859] = 1,
 				[88375] = 1,
+				[107277] = 1,
 				[73410] = 1,
-				[111676] = 2,
+				[33016] = 1,
 				[3371] = 412,
 				[108903] = 1,
 				[25509] = 1,
 				[45798] = 1,
 				[15723] = 1,
 				[22206] = 1,
-				[116888] = 1,
 				[65904] = 1,
 				[45073] = 1,
-				[114131] = 18,
-				[21520] = 1,
+				[114131] = 19,
 				[5462] = 1,
-				[110609] = 304,
+				[69554] = 1,
 				[99660] = 1,
-				[112931] = 1,
-				[109127] = 1111,
+				[109127] = 1024,
 				[109143] = 34,
-				[21130] = 1,
 				[94130] = 1,
-				[86889] = 1,
-				[103977] = 1,
-				[86576] = 1,
-				[116889] = 1,
-				[65905] = 1,
+				[21520] = 1,
+				[112931] = 1,
 				[110291] = 1,
-				[88371] = 1,
+				[65905] = 1,
+				[86576] = 1,
+				[86889] = 1,
 				[21525] = 1,
 				[35280] = 1,
 				[40643] = 1,
 				[44731] = 1,
 				[22816] = 1,
-				[109128] = 1797,
-				[127759] = 2,
-				[122147] = 1,
-				[118939] = 1,
-				[118354] = 14,
+				[109128] = 1738,
+				[127759] = 8,
+				[107273] = 1,
+				[21130] = 1,
+				[88371] = 1,
 				[18250] = 1,
-				[109144] = 5,
+				[19854] = 1,
 				[44803] = 1,
 				[59346] = 1,
 				[110292] = 1,
 				[40492] = 1,
-				[69554] = 1,
+				[118939] = 1,
 				[122580] = 1,
+				[122101] = 1,
+				[99577] = 1,
+				[114128] = 116,
+				[109129] = 2428,
 				[90570] = 1,
-				[122272] = 1,
-				[111674] = 7,
-				[109129] = 2486,
 				[50402] = 1,
+				[122272] = 2,
+				[69748] = 1,
+				[67134] = 1,
 				[111671] = 13,
 				[71365] = 1,
-				[109142] = 32,
-				[67134] = 1,
-				[109126] = 924,
-				[116891] = 1,
 				[65907] = 1,
-				[69748] = 1,
+				[110293] = 1,
 				[86594] = 1,
-				[112779] = 1,
-				[114128] = 90,
-				[19621] = 1,
+				[109142] = 32,
+				[111674] = 7,
+				[95567] = 1,
+				[109126] = 987,
 				[37892] = 1,
-				[111673] = 18,
 				[37863] = 1,
-				[53097] = 1,
+				[109144] = 5,
 				[19896] = 1,
 				[21175] = 1,
-				[88487] = 5,
+				[111676] = 2,
 				[113545] = 1,
-				[86574] = 1,
+				[49464] = 1,
 				[39194] = 1,
 				[65908] = 1,
-				[78430] = 1,
-				[110289] = 1,
+				[111673] = 18,
+				[110609] = 304,
 				[111601] = 47,
 				[43824] = 1,
 				[44597] = 1,
 				[50470] = 1,
 				[111665] = 1,
-				[115506] = 1,
+				[109131] = 22,
+				[88487] = 5,
+				[65906] = 1,
 				[116053] = 1,
 				[114746] = 3,
-				[109136] = 1,
-				[40601] = 1,
 				[118391] = 20,
-				[49464] = 1,
+				[109136] = 1,
 				[47737] = 1,
 				[120989] = 1,
 				[18713] = 1,
-				[33016] = 1,
+				[17904] = 1,
 				[21526] = 1,
 				[122583] = 2,
-				[12344] = 1,
+				[118354] = 16,
 				[15138] = 1,
 				[65141] = 1,
 				[109132] = 30,
 				[19290] = 1,
-				[114822] = 12,
+				[114822] = 10,
 				[47610] = 1,
-				[78851] = 1,
+				[114806] = 32,
 				[113547] = 1,
 				[71998] = 8,
 				[32539] = 1,
+				[110289] = 1,
+				[28237] = 1,
 				[50362] = 1,
-				[122584] = 1,
-				[71361] = 1,
 				[116448] = 1,
 				[98614] = 1,
-				[87576] = 1,
 				[69576] = 1,
+				[71361] = 1,
 				[5816] = 1,
 				[109133] = 37,
 				[122154] = 1,
 				[34183] = 1,
 				[104336] = 1,
-				[114807] = 4,
-				[113263] = 2,
+				[87576] = 1,
+				[108907] = 1,
 				[31336] = 1,
 				[69210] = 1,
 				[111556] = 7,
 				[50049] = 1,
-				[108907] = 1,
-				[114745] = 200,
 				[11122] = 1,
+				[109135] = 6,
+				[121820] = 1,
 				[23192] = 1,
 				[112927] = 1,
-				[109118] = 67,
+				[109118] = 7,
 				[109134] = 17,
-				[113262] = 74,
-				[45109] = 1,
-				[19901] = 2,
-				[114808] = 40,
-				[62385] = 1,
+				[114745] = 224,
 				[32420] = 1,
-				[43300] = 2,
-				[111557] = 988,
-				[31655] = 1,
-				[118474] = 4,
+				[19901] = 2,
+				[114808] = 46,
+				[62385] = 1,
 				[88384] = 1,
+				[45109] = 1,
+				[111557] = 1039,
+				[31655] = 1,
+				[43300] = 2,
+				[87575] = 1,
 				[78471] = 1,
 				[121837] = 1,
 				[99158] = 1,
 				[49715] = 1,
-				[109135] = 2,
 				[43348] = 1,
+				[118474] = 4,
 				[88376] = 1,
-				[109693] = 547,
-				[113261] = 1,
-				[120945] = 1037,
+				[109693] = 1595,
+				[118935] = 1,
+				[120945] = 1254,
 				[113821] = 1,
-				[87575] = 1,
-				[114806] = 20,
+				[122584] = 2,
+				[40601] = 1,
 				[116154] = 1,
 				[118475] = 2,
-				[21326] = 1,
-				[116856] = 1,
-				[65906] = 1,
-				[22999] = 1,
-				[28237] = 1,
-				[15778] = 1,
-				[122101] = 1,
-				[33292] = 1,
-				[109131] = 22,
-				[17904] = 1,
+				[127416] = 1,
+				[78851] = 1,
+				[78430] = 1,
 				[50741] = 1,
-				[34078] = 1,
+				[21326] = 1,
+				[15778] = 1,
 				[46817] = 1,
+				[33292] = 1,
+				[22999] = 1,
 				[52843] = 6,
+				[115506] = 1,
+				[86574] = 1,
 				[49295] = 1,
-				[95567] = 1,
+				[34078] = 1,
 				[30688] = 1,
-				[110293] = 1,
+				[122117] = 1,
 				[118224] = 1,
+				[19621] = 1,
+				[46349] = 1,
 				[2820] = 1,
 				[14023] = 1,
 				[109137] = 1,
-				[99577] = 1,
-				[116890] = 1,
-				[118365] = 1,
+				[112779] = 1,
 				[104038] = 1,
-				[46349] = 1,
+				[118365] = 1,
+				[12344] = 1,
+				[122147] = 1,
 				[113823] = 1,
-				[19854] = 1,
 				[82984] = 1,
+				[103977] = 1,
 				[81231] = 1,
 				[29301] = 1,
 				[38082] = 1,
@@ -707,81 +1500,18 @@ AskMrRobotDb2 = {
 				[30847] = 1,
 				[110274] = 1,
 			},
-			["Equipped"] = {
-				{
-					"|cffa335ee|Hitem:115545:0:0:0:0:0:0:0:100:254:0:5:1:566|h[Rylakstalker's Headguard]|h|r", -- [1]
-					"|cffa335ee|Hitem:113865:5317:0:0:0:0:0:0:100:254:0:5:1:566|h[Darklight Necklace]|h|r", -- [2]
-					"|cffa335ee|Hitem:115547:0:0:0:0:0:0:0:100:254:0:5:1:566|h[Rylakstalker's Spaulders]|h|r", -- [3]
-					nil, -- [4]
-					"|cffa335ee|Hitem:115548:0:0:0:0:0:0:0:100:254:0:5:1:566|h[Rylakstalker's Tunic]|h|r", -- [5]
-					"|cffa335ee|Hitem:113955:0:0:0:0:0:0:0:100:254:0:5:2:43:566|h[Grenadier's Belt]|h|r", -- [6]
-					"|cffa335ee|Hitem:113944:0:0:0:0:0:0:0:100:254:0:5:2:41:566|h[Legguards of the Stampede]|h|r", -- [7]
-					"|cffa335ee|Hitem:113849:0:0:0:0:0:0:0:100:254:0:6:1:567|h[Face Kickers]|h|r", -- [8]
-					"|cffa335ee|Hitem:113943:0:0:0:0:0:0:0:100:254:0:5:1:566|h[Bracers of the Wolf's Cunning]|h|r", -- [9]
-					"|cffa335ee|Hitem:115549:0:0:0:0:0:0:0:100:254:0:5:1:566|h[Rylakstalker's Gloves]|h|r", -- [10]
-					"|cffa335ee|Hitem:113917:5327:0:0:0:0:0:0:100:254:0:5:1:566|h[Cinderwolf Signet]|h|r", -- [11]
-					"|cffa335ee|Hitem:118307:5324:0:0:0:0:0:0:100:254:0:11:0|h[Spellbound Runic Band of Unrelenting Slaughter]|h|r", -- [12]
-					"|cffa335ee|Hitem:113612:0:0:0:0:0:0:0:100:254:0:6:1:567|h[Scales of Doom]|h|r", -- [13]
-					"|cffa335ee|Hitem:113985:0:0:0:0:0:0:0:100:254:0:5:1:566|h[Humming Blackiron Trigger]|h|r", -- [14]
-					"|cffa335ee|Hitem:113971:5310:0:0:0:0:0:0:100:254:0:6:1:567|h[Drape of the Dark Hunt]|h|r", -- [15]
-					"|cffa335ee|Hitem:109168:5276:0:0:0:0:0:0:100:254:0:13:3:74:531:619|h[Shrediron's Shredder of the Savage]|h|r", -- [16]
-				}, -- [1]
-				{
-					"|cffa335ee|Hitem:115545:0:0:0:0:0:0:0:100:255:0:5:1:566|h[Rylakstalker's Headguard]|h|r", -- [1]
-					"|cffa335ee|Hitem:113865:5317:0:0:0:0:0:0:100:255:0:5:1:566|h[Darklight Necklace]|h|r", -- [2]
-					"|cffa335ee|Hitem:115547:0:0:0:0:0:0:0:100:255:0:5:1:566|h[Rylakstalker's Spaulders]|h|r", -- [3]
-					nil, -- [4]
-					"|cffa335ee|Hitem:115548:0:0:0:0:0:0:0:100:255:0:5:1:566|h[Rylakstalker's Tunic]|h|r", -- [5]
-					"|cffa335ee|Hitem:113955:0:0:0:0:0:0:0:100:255:0:5:2:43:566|h[Grenadier's Belt]|h|r", -- [6]
-					"|cffa335ee|Hitem:113944:0:0:0:0:0:0:0:100:255:0:5:2:41:566|h[Legguards of the Stampede]|h|r", -- [7]
-					"|cffa335ee|Hitem:113849:0:0:0:0:0:0:0:100:255:0:6:1:567|h[Face Kickers]|h|r", -- [8]
-					"|cffa335ee|Hitem:113943:0:0:0:0:0:0:0:100:255:0:5:1:566|h[Bracers of the Wolf's Cunning]|h|r", -- [9]
-					"|cffa335ee|Hitem:115549:0:0:0:0:0:0:0:100:255:0:5:1:566|h[Rylakstalker's Gloves]|h|r", -- [10]
-					"|cffa335ee|Hitem:113917:5327:0:0:0:0:0:0:100:255:0:5:1:566|h[Cinderwolf Signet]|h|r", -- [11]
-					"|cffa335ee|Hitem:118307:5324:0:0:0:0:0:0:100:255:0:11:0|h[Spellbound Runic Band of Unrelenting Slaughter]|h|r", -- [12]
-					"|cffa335ee|Hitem:113612:0:0:0:0:0:0:0:100:255:0:6:1:567|h[Scales of Doom]|h|r", -- [13]
-					"|cffa335ee|Hitem:113985:0:0:0:0:0:0:0:100:255:0:5:1:566|h[Humming Blackiron Trigger]|h|r", -- [14]
-					"|cffa335ee|Hitem:113971:5310:0:0:0:0:0:0:100:255:0:6:1:567|h[Drape of the Dark Hunt]|h|r", -- [15]
-					"|cffa335ee|Hitem:109168:5276:0:0:0:0:0:0:100:255:0:13:3:74:531:619|h[Shrediron's Shredder of the Savage]|h|r", -- [16]
-				}, -- [2]
-			},
-			["BagItems"] = {
-				"|cff0070dd|Hitem:118690:0:0:0:0:0:0:0:100:254:0:0:0|h[Empty Crawdad Trap]|h|r", -- [1]
-				"|cffa335ee|Hitem:113931:0:0:0:0:0:0:0:100:254:0:5:1:566|h[Beating Heart of the Mountain]|h|r", -- [2]
-				"|cffa335ee|Hitem:124299:0:0:0:0:0:0:0:100:254:0:3:0|h[Kilt of Self-Reflection]|h|r", -- [3]
-				"|cffa335ee|Hitem:44050:846:0:0:0:0:0:0:100:254:0:0:0|h[Mastercraft Kalu'ak Fishing Pole]|h|r", -- [4]
-				"|cff0070dd|Hitem:33820:0:0:0:0:0:0:-297314198:100:254:0:0:0|h[Weather-Beaten Fishing Hat]|h|r", -- [5]
-				"|cffa335ee|Hitem:113982:0:0:0:0:0:0:0:100:254:0:5:1:566|h[Chestguard of the Siegemaker]|h|r", -- [6]
-				"|cffa335ee|Hitem:113875:0:0:0:0:0:0:0:100:254:0:5:2:561:566|h[Corrosion-Proof Legguards]|h|r", -- [7]
-				"|cffa335ee|Hitem:113891:0:0:0:0:0:0:0:100:254:0:5:1:566|h[Blast-Proof Cowl]|h|r", -- [8]
-				"|cff1eff00|Hitem:63352:0:0:0:0:0:0:0:100:254:0:0:0|h[Shroud of Cooperation]|h|r", -- [9]
-				"|cffa335ee|Hitem:113892:0:0:0:0:0:0:0:100:254:0:5:1:566|h[Engineer's Grounded Gorget]|h|r", -- [10]
-				"|cffa335ee|Hitem:113611:5327:0:0:0:0:0:0:100:254:0:6:1:567|h[Flenser's Hookring]|h|r", -- [11]
-				"|cffa335ee|Hitem:51560:0:0:0:0:0:0:0:100:254:0:0:0|h[Runed Band of the Kirin Tor]|h|r", -- [12]
-				"|cff0070dd|Hitem:109262:0:0:0:0:0:0:0:100:254:0:1:0|h[Draenic Philosopher's Stone]|h|r", -- [13]
-				"|cffa335ee|Hitem:103678:0:0:0:0:0:0:0:100:254:0:14:0|h[Time-Lost Artifact]|h|r", -- [14]
-				"|cff1eff00|Hitem:52019:0:0:0:0:0:0:0:100:254:0:0:0|h[Precious' Ribbon]|h|r", -- [15]
-				"|cff0070dd|Hitem:46874:0:0:0:0:0:0:0:100:254:0:0:0|h[Argent Crusader's Tabard]|h|r", -- [16]
-				"|cffa335ee|Hitem:32757:0:0:0:0:0:0:250630000:100:254:0:0:0|h[Blessed Medallion of Karabor]|h|r", -- [17]
-				"|cffa335ee|Hitem:115546:0:0:0:0:0:0:0:100:254:0:5:1:566|h[Rylakstalker's Legguards]|h|r", -- [18]
-				"|cffa335ee|Hitem:113915:0:0:0:0:0:0:0:100:254:0:5:1:566|h[Grips of Rekindling]|h|r", -- [19]
-				"|cffff8000|Hitem:34334:3608:0:0:0:0:0:660801552:100:254:0:0:0|h[Thori'dal, the Stars' Fury]|h|r", -- [20]
-				"|cff0070dd|Hitem:116913:0:0:0:0:0:0:0:100:254:0:0:0|h[Peon's Mining Pick]|h|r", -- [21]
-				"|cffff8000|Hitem:19019:2673:0:0:0:0:0:610963968:100:254:0:0:0|h[Thunderfury, Blessed Blade of the Windseeker]|h|r", -- [22]
-				"|cffa335ee|Hitem:113899:0:0:0:0:0:0:0:100:254:0:5:2:564:566|h[Neckbreaker Shoulderguards]|h|r", -- [23]
-				"|cff1eff00|Hitem:6263:41:0:0:0:0:0:500442290:100:254:0:0:0|h[Blue Overalls]|h|r", -- [24]
-				"|cff0070dd|Hitem:116916:0:0:0:0:0:0:0:100:254:0:0:0|h[Gorepetal's Gentle Grasp]|h|r", -- [25]
-				"|cffa335ee|Hitem:113954:0:0:0:0:0:0:0:100:254:0:5:1:566|h[Railwalker's Ratcheted Boots]|h|r", -- [26]
-				"|cffa335ee|Hitem:113919:0:5348:0:0:0:0:0:100:254:0:5:2:564:566|h[Treads of Rekindled Flames]|h|r", -- [27]
-				"|cff0070dd|Hitem:63206:0:0:0:0:0:0:0:100:254:0:0:0|h[Wrap of Unity]|h|r", -- [28]
-				"|cffa335ee|Hitem:65360:0:0:0:0:0:0:0:100:254:0:0:0|h[Cloak of Coordination]|h|r", -- [29]
-				"|cffa335ee|Hitem:113608:0:0:0:0:0:0:0:100:254:0:6:1:567|h[Hood of Dispassionate Execution]|h|r", -- [30]
-			},
 		},
 		["Herbinator - Sisters of Elune"] = {
 			["Logging"] = {
 				["LastDiff"] = 0,
 				["LastZone"] = "Eastern Kingdoms",
+			},
+			["BankItems"] = {
+				"|cff0070dd|Hitem:113814:0:0:0:0:0:0:0:1:0:0:14:0|h[Warsong Boots]|h|r", -- [1]
+				"|cff0070dd|Hitem:113818:0:0:0:0:0:0:0:1:0:0:14:0|h[Warsong Leggings]|h|r", -- [2]
+				"|cff0070dd|Hitem:113816:0:0:0:0:0:0:0:1:0:0:14:0|h[Warsong Gloves]|h|r", -- [3]
+				"|cff0070dd|Hitem:113816:0:0:0:0:0:0:0:1:0:0:14:0|h[Warsong Gloves]|h|r", -- [4]
+				"|cff0070dd|Hitem:113815:0:0:0:0:0:0:0:1:0:0:14:0|h[Warsong Wraps]|h|r", -- [5]
 			},
 			["Equipped"] = {
 				{
@@ -790,8 +1520,44 @@ AskMrRobotDb2 = {
 					[7] = "|cffffffff|Hitem:44:0:0:0:0:0:0:0:1:0:0:0:0|h[Squire's Pants]|h|r",
 				}, -- [1]
 			},
+			["BankItemsAndCounts"] = {
+				[113818] = 1,
+				[13444] = 5,
+				[13446] = 4,
+				[49362] = 1,
+				[38682] = 200,
+				[113814] = 1,
+				[113815] = 1,
+				[113816] = 2,
+				[33448] = 2,
+			},
 		},
 		["Clothgar - Sisters of Elune"] = {
+			["BankItems"] = {
+				"|cff1eff00|Hitem:14155:0:0:0:0:0:0:882330269:1:0:0:0:0|h[Mooncloth Bag]|h|r", -- [1]
+				"|cff1eff00|Hitem:14155:0:0:0:0:0:0:682475689:1:0:0:0:0|h[Mooncloth Bag]|h|r", -- [2]
+				"|cff1eff00|Hitem:14155:0:0:0:0:0:0:865408267:1:0:0:0:0|h[Mooncloth Bag]|h|r", -- [3]
+				"|cff1eff00|Hitem:14155:0:0:0:0:0:0:747374928:1:0:0:0:0|h[Mooncloth Bag]|h|r", -- [4]
+				"|cff1eff00|Hitem:14155:0:0:0:0:0:0:256187201:1:0:0:0:0|h[Mooncloth Bag]|h|r", -- [5]
+				"|cff1eff00|Hitem:4500:0:0:0:0:0:0:0:1:0:0:0:0|h[Traveler's Backpack]|h|r", -- [6]
+				"|cffe6cc80|Hitem:122360:0:0:0:0:0:0:0:1:0:0:0:1:582|h[Tattered Dreadmist Mantle]|h|r", -- [7]
+				"|cffe6cc80|Hitem:122384:0:0:0:0:0:0:0:1:0:0:0:1:582|h[Tattered Dreadmist Robe]|h|r", -- [8]
+				"|cffffffff|Hitem:69864:0:0:0:0:0:0:1146714752:1:0:0:0:0|h[Tarnished Crown]|h|r", -- [9]
+				"|cff1eff00|Hitem:4500:0:0:0:0:0:0:0:1:0:0:0:0|h[Traveler's Backpack]|h|r", -- [10]
+				"|cff1eff00|Hitem:4500:0:0:0:0:0:0:0:1:0:0:0:0|h[Traveler's Backpack]|h|r", -- [11]
+				"|cff1eff00|Hitem:4500:0:0:0:0:0:0:0:1:0:0:0:0|h[Traveler's Backpack]|h|r", -- [12]
+				"|cffffffff|Hitem:4333:0:0:0:0:0:0:1622646144:1:0:0:0:0|h[Dark Silk Shirt]|h|r", -- [13]
+				"|cffffffff|Hitem:22276:0:0:0:0:0:0:1892441515:1:0:0:0:0|h[Lovely Red Dress]|h|r", -- [14]
+				"|cffffffff|Hitem:22279:0:0:0:0:0:0:1719768739:1:0:0:0:0|h[Lovely Black Dress]|h|r", -- [15]
+				"|cffffffff|Hitem:22279:0:0:0:0:0:0:-980511125:1:0:0:0:0|h[Lovely Black Dress]|h|r", -- [16]
+				"|cffffffff|Hitem:22279:0:0:0:0:0:0:-1149265835:1:0:0:0:0|h[Lovely Black Dress]|h|r", -- [17]
+				"|cffffffff|Hitem:19028:0:0:0:0:0:0:-1968061858:1:0:0:0:0|h[Elegant Dress]|h|r", -- [18]
+				"|cffffffff|Hitem:6835:0:0:0:0:0:0:1631240502:1:0:0:0:0|h[Black Tuxedo Pants]|h|r", -- [19]
+				"|cffffffff|Hitem:4330:0:0:0:0:0:0:462925536:1:0:0:0:0|h[Stylish Red Shirt]|h|r", -- [20]
+				"|cffffffff|Hitem:19028:0:0:0:0:0:0:924893788:1:0:0:0:0|h[Elegant Dress]|h|r", -- [21]
+				"|cffffffff|Hitem:6835:0:0:0:0:0:0:-1988378021:1:0:0:0:0|h[Black Tuxedo Pants]|h|r", -- [22]
+				"|cffffffff|Hitem:6833:0:0:0:0:0:0:1704378975:1:0:0:0:0|h[White Tuxedo Shirt]|h|r", -- [23]
+			},
 			["Logging"] = {
 				["LastDiff"] = 0,
 				["LastZone"] = "Eastern Kingdoms",
@@ -806,12 +1572,2964 @@ AskMrRobotDb2 = {
 					[7] = "|cffffffff|Hitem:10035:0:0:0:0:0:0:870556352:1:0:0:0:0|h[Tuxedo Pants]|h|r",
 				}, -- [1]
 			},
+			["BankItemsAndCounts"] = {
+				[42253] = 3,
+				[24368] = 8,
+				[74866] = 84,
+				[14155] = 5,
+				[40110] = 1,
+				[97623] = 8,
+				[72120] = 53,
+				[8827] = 40,
+				[45087] = 43,
+				[21213] = 30,
+				[49667] = 1,
+				[36860] = 2,
+				[20725] = 67,
+				[14047] = 127,
+				[35622] = 5,
+				[79011] = 124,
+				[36908] = 14,
+				[74844] = 1,
+				[4330] = 1,
+				[76130] = 10,
+				[22279] = 3,
+				[4333] = 1,
+				[51950] = 2,
+				[82441] = 24,
+				[52720] = 1,
+				[74837] = 90,
+				[7068] = 86,
+				[52986] = 20,
+				[76131] = 1,
+				[30183] = 8,
+				[21301] = 2,
+				[29425] = 40,
+				[72234] = 183,
+				[34599] = 15,
+				[20009] = 1,
+				[21305] = 2,
+				[35627] = 32,
+				[53010] = 141,
+				[36905] = 55,
+				[72163] = 1,
+				[85506] = 6,
+				[14342] = 14,
+				[7077] = 30,
+				[122360] = 1,
+				[76140] = 2,
+				[24246] = 7,
+				[122384] = 1,
+				[33470] = 518,
+				[18283] = 1,
+				[72988] = 746,
+				[22574] = 3,
+				[74838] = 29,
+				[74846] = 70,
+				[97624] = 6,
+				[35623] = 37,
+				[97620] = 6,
+				[7909] = 3,
+				[74847] = 4,
+				[7910] = 3,
+				[36922] = 1,
+				[5760] = 1,
+				[52178] = 80,
+				[72093] = 132,
+				[6833] = 1,
+				[74849] = 6,
+				[30809] = 440,
+				[71998] = 27,
+				[6835] = 2,
+				[19974] = 48,
+				[52186] = 2,
+				[36906] = 18,
+				[3371] = 20,
+				[74840] = 58,
+				[74848] = 94,
+				[5759] = 3,
+				[69237] = 29,
+				[22276] = 1,
+				[36934] = 1,
+				[89112] = 53,
+				[41133] = 6,
+				[72237] = 159,
+				[56516] = 3,
+				[14256] = 1,
+				[25719] = 57,
+				[12607] = 1,
+				[69864] = 1,
+				[23439] = 1,
+				[74833] = 21,
+				[31952] = 2,
+				[23572] = 4,
+				[74857] = 2,
+				[39970] = 18,
+				[35624] = 1,
+				[102541] = 34,
+				[12363] = 1,
+				[23436] = 1,
+				[4500] = 4,
+				[40195] = 38,
+				[43622] = 7,
+				[35625] = 39,
+				[21308] = 1,
+				[72235] = 99,
+				[3864] = 2,
+				[19028] = 2,
+				[49362] = 1,
+			},
 		},
 	},
 	["global"] = {
+		["Logging"] = {
+			["PlayerData"] = {
+				["US:Sisters of Elune:Daerlith"] = {
+					[1436318425] = "$27;US;Sisters of Elune;Daerlith;Council of Dragons;2;1;100;13:700,15:130,12:700,8:700,14:650,2:700;1;.s1;27;1313211;55448,2,2607,78,42917,58592;.q1;113843s11b42b520b5e5325;45s8b0;14s5b0;41s9b0;28s15b-2b2x5347e-14;14s13b0;1590s7b-1;1s3b0;2s10b-5b5;1s1b0;615s6b-441b411b57;2113s12e14;5902s2e-7;16s14;133s17b-33b3x0e19;270s16b-474b559b4e0$",
+					[1436322555] = "$27;US;Sisters of Elune;Daerlith;Council of Dragons;2;1;100;13:700,15:130,12:700,8:700,14:650,2:700;1;.s1;27;1313221;55443,5,7,2602,78,42917;.q1;113843s11b42b520b5e5325;45s8b0;14s5b0;41s9b0;28s15b-2b2x5347e-14;14s13b0;1590s7b-1;1s3b0;2s10b-5b5;1s1b0;615s6b-441b411b57;2113s12e14;5902s2e-7;16s14;133s17b-33b3x0e19;270s16b-474b559b4e0$",
+					[1436314822] = "$27;US;Sisters of Elune;Daerlith;Council of Dragons;2;1;100;13:700,15:130,12:700,8:700,14:650,2:700;1;.s1;27;1313221;55443,5,7,2602,78,42917;.q1;113843s11b42b520b5e5325;45s8b0;14s5b0;41s9b0;28s15b-2b2x5347e-14;14s13b0;1590s7b-1;1s3b0;2s10b-5b5;1s1b0;615s6b-441b411b57;2113s12e14;5902s2e-7;16s14;133s17b-33b3x0e19;270s16b-474b559b4e0$",
+				},
+				["US:Sisters of Elune:Maelyn"] = {
+					[1435881886] = "$26;US;Sisters of Elune;Maelyn;Council of Dragons;2;1;100;5:610,7:700,14:70,13:1;2;.s2;18;1132223;54924,4,7,60998,1,9109;.q2;113633s8b565b2x5347;15s7b0;223s9b0;22s13b-1;29s11b1e5325;4s17b-1;1s16b0e11;25s2b0e-18;24s6b-525b525;11s14b1;1578s3b-1;1s5b0;1s10b-2b2x0;1s1b0;2740s12e7;5837s15e-14$",
+					[1435885727] = "$26;US;Sisters of Elune;Maelyn;Council of Dragons;2;1;100;5:610,7:700,14:70,13:1;2;.s2;18;1132233;54924,4,7,60998,1,9109;.q2;113633s8b565b2x5347;15s7b0;223s9b0;22s13b-1;29s11b1e5325;4s17b-1;1s16b0e11;25s2b0e-18;24s6b-525b525;11s14b1;1578s3b-1;1s5b0;1s10b-2b2x0;1s1b0;2740s12e7;5837s15e-14$",
+				},
+				["US:Sisters of Elune:Sorgon"] = {
+					[1435708997] = "$26;US;Sisters of Elune;Sorgon;Council of Dragons;5;1;100;13:650,7:700,15:218,12:600,1:700,14:600;2;.s2;1;2311112;58657,23,627,2,23,87316;.q2;113860s11b42b523b2x5348e5326;11s9b-1;12s15b-2b2x0e-14;10s14b0;12s13b-2b2x0;16s7b-1b2x0;2s2b-5b5e7;13s8b-3b2x0;14s6b1;3s16b-6b5e-1951;1583s3b-526b524b2x0;1s5b0;1s10b-5b5;1s1b-525b525;2769s12e1958$",
+					[1436314858] = "$27;US;Sisters of Elune;Sorgon;Council of Dragons;5;1;100;13:650,7:700,15:218,12:600,1:700,14:600;2;.s2;1;2311112;58657,23,627,2,23,87316;.q2;113871s9b566;22s14b0;12s13b-2b2x5348;3s11b1e5326;13s7b-2b2x0;2s2b-5b5e-7;13s8b-3b2x0;14s6b1;1586s3b-527b524b2x0;1s5b0;1s10b-5b5;1s1b-525b525;2769s12e7;5837s15e-14;215s16e-1944$",
+				},
+				["US:Sisters of Elune:Silverstone"] = {
+					[1435708992] = "$26;US;Sisters of Elune;Silverstone;Council of Dragons;4;1;100;10:700,15:700,12:700,13:700,14:700,4:700;2;.s2;11;3232321;57925,4285,23999,3540,25969;.q2;113864s8b561b5;23s9b-5b3b2x5348;33s16b0e5384;17s15b-2b2x0e-72;10s12b-526b522b5e14;13s17b-1;7s6b1;14s1b0;1569s5b-1;1s3b-526b526;1s10b-2b2x0;2s7b0;2752s11e0;5921s14;318s13;3432s2e-7$",
+					[1435710537] = "$26;US;Sisters of Elune;Silverstone;Council of Dragons;4;1;100;10:700,15:700,12:700,13:700,14:700,4:700;2;.s2;11;3232331;57925,4285,23999,3540,25969;.q2;113864s8b561b5;23s9b-5b3b2x5348;33s16b0e5384;17s15b-2b2x0e-72;10s12b-526b522b5e14;13s17b-1;7s6b1;14s1b0;1569s5b-1;1s3b-526b526;1s10b-2b2x0;2s7b0;2752s11e0;5921s14;318s13;3432s2e-7$",
+				},
+				["US:Sisters of Elune:Bracnar"] = {
+					[1435711361] = "$26;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:654,15:444,12:700,11:700,14:680,4:700;1;.s1;9;1123333;20895,35949,6,1016,36,61560;.q1;109168s16b74b457b88e5276;4444s13b-52;253s2b-1e41;52s11b0e10;26s9b0;1s7b-525b525;11s6b-523b523;16s15b1e-17;14s14b-1;1560s1b0;2s3b0;1s5b0;1s10b0;2758s12e14;5978s8$",
+					[1435713135] = "$26;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:654,15:444,12:700,11:700,14:680,4:700;1;.s1;9;1123333;20895,35949,6,1016,36,61560;.q1;109168s16b74b457b88e5276;4444s13b-52;253s2b-1e41;26s1b0;26s11b0e10;26s9b0;12s6b-523b523;16s15b1e-17;14s14b-1;1561s7b0;1s3b0;1s5b0;1s10b0;2758s12e14;5978s8$",
+					[1435708999] = "$26;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:654,15:444,12:700,11:700,14:680,4:700;1;.s1;9;1123333;20895,35949,6,1016,36,61560;.q1;109168s16b74b457b88e5276;4444s13b-52;237s8b0;16s2b-1e41;52s11b0e10;26s9b0;1s7b-525b525;11s6b-523b523;16s15b1e-17;14s14b-1;1560s1b0;2s3b0;1s5b0;1s10b0;2758s12e14$",
+					[1435883663] = "$26;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:654,15:444,12:700,11:700,14:680,4:700;1;.s1;9;1123333;20895,35949,6,1016,36,61560;.q1;109168s16b74b457b88e5276;4697s2b-53e41;34s3b-2b2x5419;18s11b0e10;14s13b0;24s6b-523b523;16s15b1e-17;14s14b-1;1560s1b0;1s7b0;2s5b0;1s10b0;2758s12e14;5978s8;27s9$",
+					[1435887642] = "$26;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:654,15:444,12:700,11:700,14:680,4:700;2;.s2;10;1133333;20895,35934,21,1016,61596,7284;.q2;109168s16b74b457b88e5276;4697s2b-53e41;34s3b-2b2x5419;18s11b0e10;2s8b-2b2x-73;12s13b0;24s6b-523b523;16s15b1e-17;14s14b-1;1560s1b0;1s7b0;2s5b0;1s10b0;2758s12e14;6005s9$",
+					[1436317790] = "$27;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:654,15:444,12:700,11:700,14:680,4:700;1;.s1;9;1123333;20895,35949,6,1016,36,61560;.q1;109168s16b74b457b88e5276;4697s2b-53e41;34s3b-2b2x5419;18s11b0e10;2s8b-2b2x-73;12s13b0;24s6b-523b523;16s15b1e-17;14s14b-1;1560s1b0;1s7b0;2s5b0;1s10b0;2758s12e14;6005s9$",
+					[1436314839] = "$27;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:654,15:444,12:700,11:700,14:680,4:700;1;.s1;9;1123333;20895,35949,6,1016,36,61560;.q1;109168s16b74b457b88e5276;4697s2b-53e41;34s3b-2b2x5419;18s11b0e10;2s8b-2b2x-73;12s13b0;24s6b-523b523;16s15b1e-17;14s14b-1;1560s1b0;1s7b0;2s5b0;1s10b0;2758s12e14;6005s9$",
+					[1435714618] = "$26;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:654,15:444,12:700,11:700,14:680,4:700;1;.s1;9;1123333;20895,35949,6,1016,36,61560;.q1;109168s16b74b457b88e5276;4444s13b-52;253s2b-1e41;34s3b-2b2x5419;18s11b0e10;26s9b0;12s6b-523b523;16s15b1e-17;14s14b-1;1560s1b0;1s7b0;2s5b0;1s10b0;2758s12e14;5978s8$",
+					[1436319967] = "$27;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:654,15:444,12:700,11:700,14:680,4:700;1;.s1;9;1123333;20895,35949,6,1016,36,61560;.q1;109168s16b74b457b88e5276;4697s2b-53e41;52s11b0e10;2s8b-2b2x5346;12s13b0;24s6b-523b523;16s15b1e-17;14s14b-1;1561s7b0;1s3b0;1s5b0;1s10b0;2758s12e14;5989s1b-525;16s9$",
+					[1436321793] = "$27;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:654,15:444,12:700,11:700,14:680,4:700;1;.s1;9;1123333;20895,35949,6,1016,36,61560;.q1;109168s16b74b457b88e5276;4697s2b-53e41;52s11b0e10;2s8b-2b2x5346;36s6b-523b523;16s15b1e-17;14s14b-1;1561s7b0;1s3b0;1s5b0;1s10b0;2758s12e14;5917s13;72s1b-525;16s9$",
+					[1435884749] = "$26;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:654,15:444,12:700,11:700,14:680,4:700;1;.s1;9;1123333;20895,35949,6,1016,36,61560;.q1;109168s16b74b457b88e5276;4697s2b-53e41;34s3b-2b2x5419;18s11b0e10;2s8b-2b2x-73;12s13b0;24s6b-523b523;16s15b1e-17;14s14b-1;1560s1b0;1s7b0;2s5b0;1s10b0;2758s12e14;6005s9$",
+					[1435887329] = "$26;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:654,15:444,12:700,11:700,14:680,4:700;2;.s2;10;1133332;20895,35934,21,1016,61596,7284;.q2;109168s16b74b457b88e5276;4697s2b-53e41;34s3b-2b2x5419;18s11b0e10;2s8b-2b2x-73;12s13b0;24s6b-523b523;16s15b1e-17;14s14b-1;1560s1b0;1s7b0;2s5b0;1s10b0;2758s12e14;6005s9$",
+					[1435881888] = "$26;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:654,15:444,12:700,11:700,14:680,4:700;1;.s1;9;1123333;20895,35949,6,1016,36,61560;.q1;109168s16b74b457b88e5276;4697s2b-53e41;34s3b-2b2x5419;18s11b0e10;14s13b0;12s9b0;12s6b-523b523;16s15b1e-17;14s14b-1;1560s1b0;1s7b0;2s5b0;1s10b0;2758s12e14;5978s8$",
+					[1436317568] = "$27;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:654,15:444,12:700,11:700,14:680,4:700;2;.s2;10;1133332;20895,35934,21,1016,61596,7284;.q2;109168s16b74b457b88e5276;4697s2b-53e41;34s3b-2b2x5419;18s11b0e10;2s8b-2b2x-73;12s13b0;24s6b-523b523;16s15b1e-17;14s14b-1;1560s1b0;1s7b0;2s5b0;1s10b0;2758s12e14;6005s9$",
+				},
+				["US:Cenarion Circle:Lynngin"] = {
+					[1435710556] = "$26;US;Cenarion Circle;Lynngin;Rusty Blades;12;1;100;13:700,15:31,12:81,8:700,14:91,2:709;1;.s1;7;2331232;17076,45894,51325,1923,14895,15541;.q1;113646s12e5325;18s8b561b5;178s13b-525b525;27s16e12;9s15b-5b3b2x5347e-26;29s6b0;42s10b0;40s7b-2b2x0;1551s5;4s3;633s1b-403b372b0b58;2122s11e14;5932s14;3747s2;4s9$",
+				},
+				["US:Cenarion Circle:Tinite"] = {
+					[1435712579] = "$26;US;Cenarion Circle;Tinite;Rusty Blades;5;1;100;13:700,7:700,15:36,12:86,14:498,2:700;2;.s2;17;1223211;57954,1,24,31422,57556,15647;.q2;113592s17b566;260s15b0e5310;38s2e7;60s6b-5b5;7s12b-524e7;4s8b522b2x5346;16s5b-3x0;9s13;251s10b-481b451b60;2005s9b-30x0;2067s11e0;883s14;1067s16b-544b529b46e6;132s7b-31x0;4s3;3938s1$",
+					[1435708944] = "$26;US;Cenarion Circle;Tinite;Rusty Blades;5;1;100;13:700,7:700,15:36,12:86,14:498,2:700;2;.s2;17;1123211;57954,1,24,31422,57556,15647;.q2;113592s17b566;260s15b0e5310;48s2b0;50s6b-5b5;7s12b-524e14;4s8b522b2x5346;16s5b-3x0;9s13;251s10b-481b451b60;2005s9b-30x0;2067s11e0;883s14;1067s16b-544b529b46e6;132s7b-31x0;4s3;3938s1$",
+					[1436316921] = "$26;US;Cenarion Circle;Tinite;Rusty Blades;5;1;100;13:700,7:700,15:36,12:244,14:498,2:700;2;.s2;17;1223211;57954,1,24,31422,57556,15647;.q2;113852s15b566e5310;98s6b-5b5;7s12b-524e14;4s8b522b2x5346;16s5b-3x0;9s13;251s10b-481b451b60;2005s9b-30x0;2067s11e0;883s14;1067s16b-544b529b46e6;132s7b-31x0;3942s1;8s3;13s17;3624s2$",
+					[1436314788] = "$26;US;Cenarion Circle;Tinite;Rusty Blades;5;1;100;13:700,7:700,15:36,12:244,14:498,2:700;2;.s2;17;1223211;57954,1,24,31422,57556,15647;.q2;113592s17b566;260s15b0e5310;98s6b-5b5;7s12b-524e14;4s8b522b2x5346;16s5b-3x0;9s13;251s10b-481b451b60;2005s9b-30x0;2067s11e0;883s14;1067s16b-544b529b46e6;132s7b-31x0;3942s1;8s3;3637s2$",
+					[1436321744] = "$26;US;Cenarion Circle;Tinite;Rusty Blades;5;1;100;13:700,7:700,15:36,12:244,14:498,2:700;2;.s2;17;1223211;57954,1,24,31422,57556,15647;.q2;113852s15b566e5310;98s6b-5b5;7s12b-524e14;4s8b522b2x5346;16s5b-3x0;9s13;251s10b-481b451b60;2005s9b-30x0;2067s11e0;883s14;1067s16b-544b529b46e6;4074s1;3s7;5s3;13s17;3624s2$",
+				},
+				["US:Sisters of Elune:Lealdade"] = {
+					[1435881889] = "$26;US;Sisters of Elune;Lealdade;Council of Dragons;5;1;100;13:700,7:700,15:700,12:700,1:700,14:600;1;.s1;19;3232133;54926,1,3031,5262,26181,26532;.q1;113841s2b42b525e5319;25s12b-526b526e7;30s9b0;40s8b-3b2x5348;33s14b-525b526;7s6b-5b5;1s5b0;2s16b-1e58;4s13b1;1582s3b-1;2s10b0;1s1b-2b2x0;1s7b-526b521b5;2736s11e-58;9669s15e-14$",
+					[1436314856] = "$27;US;Sisters of Elune;Lealdade;Council of Dragons;5;1;100;13:700,7:700,15:700,12:700,1:700,14:600;1;.s1;19;3232133;54926,1,3031,5262,26181,26532;.q1;113866s12b41b526e5326;30s9b0;40s8b-3b2x5348;23s2b0e-7;10s14b-525b526;7s6b-5b5;1s5b0;1588s3b-1;2s10b0;1s1b-2b2x0;1s7b-526b521b5;884s16b-502b485b71e65;1852s11e-58;5932s13;3737s15e-14$",
+					[1435709017] = "$26;US;Sisters of Elune;Lealdade;Council of Dragons;5;1;100;13:700,7:700,15:700,12:700,1:700,14:600;1;.s1;19;3232133;54926,1,3031,5262,26181,26532;.q1;113841s2b42b525e5319;25s12b-526b526e7;30s9b0;40s8b-3b2x5348;40s6b-4b5;1s5b0;2s16b-1e58;4s13b1;1582s3b-1;2s10b0;1s1b-2b2x0;1s7b-526b521b5;2736s11e-58;888s14b0;8781s15e-14$",
+				},
+			},
+			["Wipes"] = {
+				1435713061, -- [1]
+				1435883070, -- [2]
+			},
+			["PlayerExtras"] = {
+				["US:Sisters of Elune:Patio"] = {
+					[1435883691] = "469,657,333,18281,35870,1720,1274,57410,6984,33081,17243,3729,108,3591;_",
+					[1435711934] = "1126,333,18047,234,5192,24936,36405,0,30683,6042,33081,10849;_",
+					[1436317204] = "1126,333,5214,13067,30128,29815,30090,6241,40065,10849,10123,3699;_",
+					[1435883757] = "469,657,333,18281,35870,1720,1274,21079,39840,3475,33081,10793,13878;_",
+					[1435711556] = "1126,333,18281,477,1345,3370,30678,1720,22353,34059,2272,40065,24671;_",
+					[1436315613] = "1126,333,5214,13067,1822,88211,3969,9256,33081,24671;_",
+					[1435886251] = "1126,333,18281,1822,34048,1720,51509,934,46306,347,24324;_",
+					[1436316122] = "1126,333,5214,13067,1822,88211,6494,689,6042,33081,20967,5,3699;_",
+					[1436321946] = "1126,333,18047,234,1822,58121,31277,2782,120,42217,17243;_",
+					[1435885809] = "1126,333,18281,1822,35768,52443,7183,6042,33081,24671;_",
+					[1436317790] = "1126,333,5214,13067,1822,28306,59905,6241,6984,33081,24671;_",
+					[1435708999] = "1126,5547,13067,35870,5706,61682,43930,13822;_",
+					[1436317023] = "1126,333,5214,13067,30128,59905,6241,40065,10849,13822;_",
+					[1436319967] = "1126,333,5214,13067,1822,88211,3969,9256,33081,24671;_",
+					[1435881973] = "469,657,333,5214,13067,477,59466,36331,942,6042,50324,3724,3704;_",
+					[1435711946] = "1126,333,18047,234,5192,24936,29815,36331,942,6042,33081,10849,6394;_",
+					[1435710542] = "1126,333,18281,477,1345,34048,1720,52443,6241,6984,33081,24671;_",
+					[1436316582] = "1126,333,5214,13067,1822,85336,2875,7183,6042,33081,24671;_",
+					[1435716684] = "1126,333,18281,477,1345,3370,32398,52443,3969,2272,6984,33081,347,24324;_",
+					[1435715471] = "139,330,657,333,18281,477,4715,32398,20159,32284,3969,2272,6984,33081,347,24324;_",
+					[1435709069] = "1126,333,18281,35870,1720,22353,34059,9256,43874,56,13822;_",
+					[1436321892] = "1126,333,18047,234,1822,20073,6118,65989,2272,40065;_",
+					[1436321829] = "1126,333,18047,234,1822,58121,30090,3969,2272,40065,17243,3724,5,108;_",
+					[1435883708] = "469,657,333,18281,35870,1720,1274,21079,36331,6984,33081,24671;_",
+					[1436320358] = "1126,333,5214,13067,1822,88211,6241,942,6042,33081,20972,108,3591;_",
+					[1436317161] = "1126,333,5214,13067,30128,29815,6590,23500,46306,10849,13822;_",
+					[1435883841] = "469,305,352,333,18281,35870,1720,1274,27669,28635,8090,33081,10793,6450,3724,3704;_",
+					[1436322026] = "1126,333,18047,234,477,1345,20073,35854,2194,34059,2272,61037;_",
+					[1435881922] = "469,305,352,333,5214,13067,477,59466,36331,942,6042,50324,7428;_",
+					[1435885230] = "1126,333,5214,13067,1822,34048,54163,6494,39812,347,24324;_",
+					[1435882439] = "1126,333,5214,13067,1822,34048,2994,57410,6984,33081,347,19031,5293;_",
+					[1436316973] = "1126,333,5214,13067,30128,59905,13225,33081,10849,13822;_",
+					[1435709405] = "1126,333,18281,477,1345,34048,1720,52443,13225,57752;_",
+					[1436321815] = "1126,333,18047,234,1822,88211,3969,42337;_",
+					[1436320110] = "1126,333,5214,13067,1822,88211,7183,6042,33081,24671;_",
+					[1436317746] = "1126,333,5214,13067,1822,28306,27621,8784,23500,6241,40065,11073,6170,7428;_",
+					[1436321121] = "469,657,333,18281,37590,52443,6241,942,6042,33081,347,24324;_",
+					[1436317474] = "1126,333,5214,13067,1822,28306,29815,30090,6241,40065,17243,7428;_",
+					[1435711518] = "1126,333,18281,1822,34048,1720,28943,27469,2272,40065,17243,7428;_",
+					[1436320147] = "1126,333,5214,13067,1822,88211,7183,6042,33081,24671;_",
+					[1436317856] = "774,352,333,5214,13067,1822,28306,27621,2194,30090,13225,33081,1531,23140;_",
+					[1435711837] = "1126,333,18047,234,5192,24936,66146,942,6042,33081,10849;_",
+					[1435885690] = "1126,333,5214,13067,1822,88211,7183,6042,33081,24671;_",
+					[1435711711] = "1126,333,18281,477,1345,3370,30678,1720,56412,2272,40065,24671;_",
+					[1435709048] = "1126,333,18281,21895,13975,1720,22353,6590,0,0,27469,2272,6984,43930,6394,7428;_",
+					[1435709277] = "1126,18614,35870,1720,3986,18367,6590,23500,6241,6984,43930,10231,3591;_",
+					[1436317415] = "139,635,352,333,5214,13067,30128,27621,32284,46306,10849,13822;_",
+					[1436317689] = "1126,333,5214,13067,1822,28306,29815,30090,6241,40065,20972,3699;_",
+					[1435711397] = "1126,333,18281,1822,34048,1720,22353,34059,2272,40065,20972,3699;_",
+					[1435884749] = "469,657,333,5214,13067,35870,54163,6241,6984,33081,347,24324;_",
+					[1436323062] = "469,657,333,5214,13067,94002,3214,6042,33081,347,24324;_",
+					[1435883663] = "469,657,333,18281,35870,1720,1274,64394,33081,24671;_",
+					[1435711925] = "1126,333,18047,234,5192,24936,36405,29741,942,6042,33081,10849;_",
+					[1436317647] = "1126,333,5214,13067,1822,28306,59905,46306,24671;_",
+					[1435709686] = "1126,333,5894,12387,1822,34048,1720,52443,6494,6731,33081,20967,3704;_",
+					[1435709226] = "1126,333,18281,35870,1720,52443,6241,6984,43930,13822;_",
+					[1436320264] = "1126,333,5214,13067,1822,58121,30090,6241,942,6042,33081,20967,3704;_",
+					[1435881888] = "469,657,333,5214,13067,477,59466,6590,29741,942,6042,33324,10550,6450,3724,5,108,3591;_",
+					[1436321598] = "156079;_",
+					[1436317568] = "1126,333,5214,13067,1822,26876,1430,59905,6241,40065,24671;_",
+					[1436317632] = "1126,333,5214,13067,1822,28306,29815,30090,6241,40065,17243,7428;_",
+					[1435886929] = "1126,333,18281,1822,34048,1720,52443,13225,33081,347,24324;_",
+					[1435887965] = "156079;_",
+					[1436317760] = "139,987,333,5214,13067,1822,28306,27621,32284,46306,20967,3704;_",
+					[1435715156] = "139,330,657,333,18281,5192,24936,7462,20159,38525,6984,33081,347,24324;_",
+					[1435709358] = "1126,333,18281,477,35393,1720,52443,13225,43930,13822;_",
+					[1435712040] = "1126,333,18047,234,5192,24936,58971,7175,942,6042,33081,10849;_",
+					[1436317310] = "1126,333,5214,13067,30128,59905,6241,40065,10849,6394,3837,3591;_",
+					[1436321793] = "1126,333,18047,234,90033,3969,42337;_",
+					[1436321984] = "1126,333,18047,234,477,1345,85336,6844,42337,17243,3724,5,108;_",
+					[1436321858] = "1126,333,18047,234,1822,88211,3969,2272,40065;_",
+					[1435883800] = "469,657,333,18281,35870,1720,1274,57410,6984,33081,20967,3704;_",
+					[1435709163] = "1126,333,18281,35870,1720,22353,30090,4089,2152,6984,43930,10118,3704;_",
+					[1436317892] = "1126,333,5214,13067,1822,28306,59905,13225,33081,24671;_",
+					[1435883738] = "469,657,333,18281,35870,1720,1274,21079,43315,33081,24671;_",
+					[1435887642] = "1126,333,5214,13067,477,35393,54163,13225,33081,347,10502,13822;_",
+					[1436319171] = "1126,333,5214,13067,1822,88211,3969,2272,6984,33081,347,24324;_",
+					[1435709305] = "1126,18614,35870,1720,3986,18367,30090,6241,6984,43930,13822;_",
+					[1436322570] = "1126,333,5214,13067,1822,92180,9256,33081,347,24324;_",
+					[1435888541] = "469,657,333,18047,234,35870,53229,934,6494,6731,33081,347,19031,1589,5,3699;_",
+					[1435711666] = "1126,333,7477,10804,477,1345,3370,23572,7106,1720,56412,2272,40065,10793,10174,113,3591;_",
+					[1435711603] = "1126,333,18281,477,1345,3370,30678,1720,22353,34059,2272,40065,24671;_",
+					[1435713135] = "469,657,333,18758,4715,32398,56412,2272,942,6042,33081,24671;_",
+					[1435885725] = "1126,333,5214,13067,1822,58121,29156,934,6494,689,6042,33081,24671;_",
+					[1435713586] = "469,657,333,18281,477,4715,32398,56412,2272,6984,33081,347,24324;_",
+					[1435710953] = "1126,333,18281,1822,34048,1720,56412,9256,33081,24671;_",
+					[1435715890] = "1126,333,18047,234,477,4715,54751,30090,6241,942,6042,33081,347,10502,6394,3729,108,3591;_",
+					[1436320200] = "1126,333,5214,13067,1822,58121,30090,6241,942,6042,33081,24671;_",
+					[1436321930] = "1126,333,18047,234,1822,26876,31245,34059,2272,40065,17243;_",
+					[1436321994] = "1126,333,18047,234,477,1345,26876,29051,36253,2272,40065,17243;_",
+					[1435889054] = "1126,333,18281,477,37113,52443,7183,6042,33081,347,10502,8529,5293;_",
+					[1435712630] = "469,657,333,18281,477,4715,32398,52443,7183,39123,347,24324;_",
+					[1436317257] = "1126,333,5214,13067,30128,27621,32284,6241,40065,10849,10123,3699;_",
+					[1435709110] = "1126,333,18281,21895,13975,1720,22353,30090,6241,6984,43930,10118,5,3699;_",
+					[1435886565] = "1126,333,18047,234,477,1345,26876,7172,54163,13225,33081,347,24324;_",
+					[1435883685] = "469,657,333,18281,35870,1720,1274,57410,6984,33081,24671;_",
+					[1435883170] = "469,657,333,18281,35870,1720,1274,57410,6984,33081,347,24324;_",
+					[1435714618] = "469,657,333,18047,234,5192,30678,54163,6241,6984,33081,347,24324;_",
+					[1436318442] = "1126,333,5214,13067,1822,88211,3969,2272,6984,33081,24671;_",
+					[1435887329] = "1126,333,18281,477,1345,35768,52443,7183,6042,33081,347,24324;_",
+					[1436320227] = "1126,333,5214,13067,1822,58121,30090,6241,942,6042,33081,24671;_",
+					[1435712121] = "139,987,333,18047,234,5192,23506,0,1430,27621,2194,6590,0,30683,6042,33081,10849,224;_",
+					[1435712141] = "1126,333,18047,234,5192,24936,67088,6042,33081,10849,10123;_",
+					[1435888291] = "1126,333,5214,13067,90033,7183,6042,33081,347,10502,8529,5293;_",
+					[1435711361] = "1126,333,18281,1822,34048,1720,56412,2272,40065,10793,6450,3724,3704;_",
+					[1436314839] = "1126,333,5214,680,12387,1822,88211,3969,9256,33081,24671;_",
+				},
+				["US:Sisters of Elune:Tadakatsu"] = {
+					[1435883691] = "469,657,333,998,10423,6860,35870,1720,1274,72512,24964,24665,3196,4231;_",
+					[1435711934] = "774,352,333,998,17283,1822,3370,30678,1720,28943,27469,17374,24964,24665;_",
+					[1436317204] = "1126,333,998,4216,6207,6860,21895,68138,7183,14160,24964,3154,7694,10114,133,10997;_",
+					[1435883757] = "469,657,333,998,17283,27176,1522,7172,1720,1274,97476,24665,3196,4231;_",
+					[1435711556] = "1126,333,998,10423,6860,477,1345,3370,21984,8694,1720,56412,17374,24964,24665,3196;_",
+					[1436315613] = "1126,333,998,4216,13067,1822,28306,59905,66378,634,3960,6401;_",
+					[1435886251] = "1126,333,998,17283,1822,35768,52443,7183,39124,24665;_",
+					[1436316122] = "1126,333,998,4216,13067,1822,88211,3969,42338,19359,1346,3960;_",
+					[1436321946] = "1126,333,998,10423,6626,234,1822,92180,42338,24665;_",
+					[1435885809] = "974,152,333,998,17283,1822,34048,1720,52443,46307,24665;_",
+					[1436317790] = "1126,333,998,4216,13067,1822,88211,3969,42338,24665,7427;_",
+					[1435708999] = "1126,1331,4216,13067,35870,5706,105612,9223,307,186,141,3960,6401,28;_",
+					[1436317023] = "1126,333,998,4216,13067,90033,7183,39124,10848,21244;_",
+					[1436319967] = "1126,333,998,4216,13067,1822,88211,7183,39124,19359,5306;_",
+					[1435881973] = "469,657,333,998,4216,6207,5619,1241,477,26707,5513,33836,30683,14160,28118,0,16917,307,186,141,3960,6401,28;_",
+					[1435711946] = "774,352,333,998,17283,1822,3370,21984,5521,3173,1720,56412,42338,3154,21511;_",
+					[1435710542] = "1126,333,998,17283,477,1345,34048,1720,52443,66378,307,186,141,3960,7427;_",
+					[1436316582] = "139,987,333,998,4216,13067,1822,26463,58873,2875,7183,39124,32092;_",
+					[1435716684] = "1126,333,998,17283,477,1345,3370,30678,1720,52443,46307,21095,3570,6401,28;_",
+					[1435715471] = "469,657,333,998,17283,477,4715,32398,52443,3969,42338,15754,4951,3960;_",
+					[1435709069] = "1126,333,998,17283,12476,23394,1720,56412,53186,9223,307,186,141,3960,6401,28;_",
+					[1436321892] = "1126,333,998,10423,6626,234,1822,92180,17374,24964,3154,21511;_",
+					[1436321829] = "774,352,333,998,10423,6626,234,1822,30875,57336,3969,17374,24964,3154,17808,3703;_",
+					[1435883708] = "469,657,333,998,17283,35870,1720,1274,72512,24964,3154,0,17808,3703,7427;_",
+					[1436320358] = "1126,333,998,4216,13067,1822,88211,7183,1082,38042,3154,16205,5306;_",
+					[1436317161] = "1126,333,998,4216,13067,21895,68138,7183,39124,10848,21244;_",
+					[1435883841] = "469,305,352,333,998,10423,6860,35870,1720,1274,28059,28245,16208,24964,3154,17808,3703,7427;_",
+					[1436322026] = "1126,333,998,10423,6626,234,477,1345,92180,42338,24665;_",
+					[1435881922] = "469,657,333,998,4216,13067,477,96739,2567,39711,16917,307,186,141,390,3570,3196,3205,28;_",
+					[1435885230] = "1126,333,998,4216,13067,1822,34048,54163,46307,24665;_",
+					[1435882439] = "774,352,333,998,4216,13067,1822,34048,2994,110687,6860,307,186,141,3960;_",
+					[1436316973] = "1126,333,998,4216,6207,6860,66533,23500,7183,14160,24964,3154,0,7694,10247,6766,4231;_",
+					[1435709405] = "1126,333,998,10423,6860,477,1345,20073,13975,1720,56412,17374,28118,16917,307,186,141,257,3703,3196;_",
+					[1436321815] = "1126,333,998,17049,234,1822,64711,23500,3969,42338,24665;_",
+					[1436320110] = "1126,333,998,4216,6207,6860,1822,88211,7183,14160,24964,3154,0,16205,5306,3196;_",
+					[1436317746] = "1126,333,998,4216,13067,1822,88211,3969,42338,21095,3570,7427;_",
+					[1436321121] = "469,657,333,998,17283,37590,52443,7183,39124,19359,5306;_",
+					[1436317474] = "1126,333,998,4216,13067,1822,88211,7183,39124,32092;_",
+					[1435711518] = "1126,333,998,10423,5619,1241,1822,25362,5513,3173,1720,56412,17374,24964,3154,21511,3196;_",
+					[1436320147] = "1126,333,998,4216,13067,1822,88211,7183,39124,19359,5306;_",
+					[1436317856] = "774,352,333,998,4216,13067,1822,88211,3969,42338,24665,3196,4231;_",
+					[1435711837] = "1126,333,998,17283,1822,3370,30678,1720,56412,42338,24665;_",
+					[1435885690] = "1126,333,998,4216,13067,1822,34048,54163,46307,24665;_",
+					[1435711711] = "1126,333,998,17283,477,1345,3370,30678,1720,56412,42338,3154,0,21511;_",
+					[1435709048] = "1126,333,998,10423,6860,27176,5521,3173,1720,28943,27469,17374,28118,7694,9223,307,186,141,390,3570,3196,3205,28;_",
+					[1435709277] = "1126,1331,17283,35870,1720,3986,52426,53186,4906,4317,307,186,141,3960,6401,28;_",
+					[1436317415] = "1126,333,998,4216,6207,6860,21895,10802,25052,32284,7183,14160,24964,3154,0,7694,10114,11130;_",
+					[1436317689] = "1126,333,998,4216,6207,6860,1822,26876,3999,57336,3969,17374,24964,3154,0,17941,3570,7427;_",
+					[1435711397] = "1126,333,998,17283,1822,34048,1720,28943,27469,42338,242,24423;_",
+					[1435884749] = "469,657,333,998,4216,13067,35870,54163,46307,9105,15560;_",
+					[1436323062] = "139,330,657,333,998,4216,13067,57749,36253,3214,63789;_",
+					[1435883663] = "469,657,333,998,17283,35870,1720,1274,97476,24665,7427;_",
+					[1435711925] = "1126,333,998,10423,6860,1822,3370,30678,1720,28943,27469,17374,24964,3154,21511;_",
+					[1436317647] = "1126,333,998,4216,13067,1822,88211,3969,42338,4518,1,27573;_",
+					[1435709686] = "1126,333,998,17283,1822,34048,1720,56412,62409,307,186,141,3960;_",
+					[1435709226] = "1126,333,998,10423,6860,21895,13975,1720,28943,27469,17374,28118,7694,9223,307,186,141,390,3570,3196,3205,28;_",
+					[1436320264] = "1126,333,998,4216,13067,1822,64711,0,23500,7183,14160,24964,19359,5306,3196;_",
+					[1435881888] = "469,657,333,998,4216,6207,6860,477,26707,5513,64519,14160,28118,16917,307,186,141,257,133,3570,3196,3205,28;_",
+					[1436321598] = "2457,153623,11108;_",
+					[1436317568] = "1126,333,998,4216,13067,1822,26876,61335,3969,42338,4518,1,27573;_",
+					[1436317632] = "1126,333,998,4216,13067,1822,88211,3969,17374,24964,32092;_",
+					[1435886929] = "1126,333,260,738,17283,1822,35768,52443,7183,39124,20705,257,3703;_",
+					[1435887965] = "1126,333,260,738,4216,6207,6860,477,89556,7183,14160,24964,3154,0,7354,340,9857,3960;_",
+					[1436317760] = "1126,333,998,4216,13067,1822,88211,3969,42338,24665,7427;_",
+					[1435715156] = "469,657,333,998,17283,5192,24936,7462,98750,20705,3960;_",
+					[1435709358] = "1126,333,998,17283,477,35393,1720,4095,105503,9223,307,186,141,3960;_",
+					[1435712040] = "1126,333,998,17283,1822,3370,7284,23394,1720,56412,42338,24665;_",
+					[1436317310] = "1126,333,998,4216,6207,5619,1241,21895,68138,7183,14160,24964,3154,0,7694,10247,10997;_",
+					[1436321793] = "1126,333,998,17049,234,32697,57336,3969,42338,3154,0,17808,133,3570,3196;_",
+					[1436321984] = "1126,333,998,10423,6626,234,477,1345,85336,6844,42338,3154,17808,3703;_",
+					[1436321858] = "1126,333,998,17049,234,1822,88211,3969,42338,24665;_",
+					[1435883800] = "469,657,333,998,10423,6860,32697,3173,1720,1274,28059,44453,24964,3154,0,21511,3196,4231;_",
+					[1435709163] = "1126,333,998,10423,6860,27184,5513,3173,1720,56412,17374,28118,0,7694,9223,307,186,141,3960,6401,28;_",
+					[1436317892] = "1126,333,998,4216,13067,1822,88211,3969,42338,24665;_",
+					[1435883738] = "469,657,333,998,17283,12476,23394,1720,1274,28059,44453,24964,24665,7427;_",
+					[1435887642] = "1126,333,998,4216,13067,477,35393,54163,46307,10848,9857,390,3570;_",
+					[1436319171] = "1126,333,998,4216,13067,1822,88211,7183,39124,19359,5306;_",
+					[1435709305] = "1126,1331,10423,6860,35870,1720,3986,52426,17374,28118,7694,9223,307,186,141,3960;_",
+					[1436322570] = "1126,333,998,4216,13067,1822,30875,61305,45492,0,16917,634,390,3570,7427;_",
+					[1435888541] = "469,657,333,260,738,10423,6626,234,27176,8694,54163,21343,24964,3154,0,17808,3703;_",
+					[1435711666] = "1126,333,998,6479,3944,6860,477,1345,3370,23572,3933,3173,1720,28943,27469,17374,24964,3154,0,21511,3196;_",
+					[1435711603] = "1126,333,998,17283,477,1345,3370,30678,1720,56412,42338,24665;_",
+					[1435713135] = "469,657,333,998,17760,4715,30678,1720,56412,41780,558,15754,8911;_",
+					[1435885725] = "1126,333,998,4216,13067,1822,30875,3173,54163,46307,3154,21511;_",
+					[1435713586] = "469,657,333,998,17283,477,4715,32398,56412,42338,24665;_",
+					[1435710953] = "1126,333,998,17283,1822,28306,5742,1720,98750,24665;_",
+					[1435715890] = "469,657,333,998,17049,234,477,4715,84841,3969,42338,21095,3570;_",
+					[1436320200] = "1126,333,998,4216,6207,6860,1822,88211,7183,14160,24964,3154,16205,5306;_",
+					[1436321930] = "1126,333,998,10423,5619,1007,234,1822,92180,17374,24964,3154,21511,3196;_",
+					[1436321994] = "1126,333,998,10423,6626,234,477,1345,92180,42338,24665;_",
+					[1435889054] = "1126,333,260,738,10423,6860,477,32220,3173,1720,52443,21343,24964,3154,0,7694,10114,133,3570,3196;_",
+					[1435712630] = "469,657,333,998,17283,477,4715,30678,1720,52443,46307,24665;_",
+					[1436317257] = "1126,333,998,4216,13067,27176,5521,33836,23500,7183,39124,3154,0,7694,17013,4231;_",
+					[1435709110] = "1126,333,998,10423,6860,35870,1720,20159,36253,17374,35812,9223,307,186,141,3960,3196,3205,28;_",
+					[1435886565] = "1126,333,260,738,17049,234,477,1345,26876,3999,3173,54163,46307,3154,0,16205,1603,133,3570,3196;_",
+					[1435883685] = "469,657,333,998,17283,32697,3173,1720,1274,97476,24665,3196,4231;_",
+					[1435883170] = "469,657,333,998,17283,35870,1720,1274,97476,10512,14153,7427;_",
+					[1435714618] = "469,657,333,998,17049,234,5192,84841,7183,10305,54,28765,19359,1346,390,3570;_",
+					[1436318442] = "1126,333,998,4216,13067,1822,88211,3969,42338,20705,3960;_",
+					[1435887329] = "1126,333,998,17283,477,1345,34048,1720,52443,46307,20705,3960;_",
+					[1436320227] = "1126,333,998,4216,6207,5619,1241,1822,30875,57336,7183,14160,24964,3154,16205,1736,3570;_",
+					[1435712121] = "774,352,333,998,17283,1822,3370,21984,5521,3173,1720,28943,0,27469,42338,3154,17808,3703;_",
+					[1435712141] = "1126,333,998,17283,1822,3370,21984,8694,1720,56412,17374,24964,24665,3196;_",
+					[1435888291] = "1126,333,998,4216,13067,90033,7183,39124,10848,9857,390,3570;_",
+					[1435711361] = "1126,333,998,10423,6860,1822,30875,3173,1720,56412,17374,24964,3154,0,17808,133,3570,3196;_",
+					[1436314839] = "1126,333,998,4216,680,12387,1822,28306,59905,61015,5363,307,186,141,3960;_",
+				},
+				["US:Sisters of Elune:Bitts"] = {
+					[1435883170] = "469,657,333,18281,21895,10492,1263,3940,1274,58352,25287,13836,3599,3235,10270,4,3989,3574;_",
+					[1435881922] = "6673,13067,32387,1263,63566,12041,13246,24945,13562;_",
+					[1435883691] = "469,657,333,18281,32387,1263,3940,1274,58352,25287,13836,24671;_",
+					[1435884749] = "469,657,333,5214,13067,32387,1263,56383,7183,25287,13836,14871,2234,3,3989,3574;_",
+					[1435883738] = "469,657,333,18281,32387,1263,3940,1274,58352,25287,13836,21097,3574;_",
+					[1435887965] = "16166,3340,234,32387,1263,2220,18075,12588,30683,12041,13246,13836,243,6235,4371,775,5481,3,3989;_",
+					[1435886251] = "1126,333,18281,1822,30565,5203,52443,7183,25287,30941,3,7563;_",
+					[1435888291] = "1126,333,5214,13067,32387,1263,56383,7183,25287,13836,10849,6256,3,2270,1719,3574;_",
+					[1435883708] = "469,657,333,18281,32387,5203,1274,58352,25287,13836,24671;_",
+					[1435883685] = "469,657,333,18281,32387,1263,3940,1274,58352,25287,13836,6834,4790,13047;_",
+					[1435885725] = "1126,333,5214,13067,1822,26191,4374,1263,32883,23500,7183,25287,13836,243,24428;_",
+					[1435888541] = "1126,333,18047,234,28698,3689,1263,56383,7183,25287,13836,10849,6257,2,7563;_",
+					[1435882439] = "1126,333,5214,13067,1822,30565,1263,5214,58352,25287,13836,24671;_",
+					[1435883841] = "469,657,333,18281,32387,1263,3940,1274,27669,28635,2048,25287,13836,21097,3574;_",
+					[1435883663] = "469,657,333,18281,32387,1263,3940,1274,58352,25287,13836,3599,21072;_",
+					[1435887642] = "1459,18047,234,477,31910,1263,32883,23500,7183,25287,13836,10849,260,9988,3574;_",
+					[1435889054] = "1126,333,18281,477,31910,1263,3940,52443,7183,25287,13836,10849,6256,3,7563;_",
+					[1435885230] = "1126,333,5214,13067,1822,31828,56383,7183,25287,13836,24671;_",
+					[1435883757] = "469,305,352,333,1186,17095,28698,3689,1263,3940,1274,27669,30683,25287,13836,24671;_",
+					[1435881888] = "6673,45454,1263,63566,12041,13246,20670,4275,13562;_",
+					[1435883800] = "469,657,333,18281,32387,1263,3940,1274,58352,25287,13836,24671;_",
+					[1435886565] = "1126,333,18047,234,477,1345,30565,1263,56383,7183,1566,23721,13836,17108,7563;_",
+					[1435886929] = "1126,333,18281,1822,30565,1263,3940,52443,7183,25287,13836,24671;_",
+					[1435887329] = "1126,333,18281,477,1345,30565,1263,3940,52443,7183,25287,13836,24671;_",
+					[1435881973] = "6673,13067,32387,1263,32883,30683,12041,13246,24945,13562;_",
+					[1435885690] = "1126,333,5214,13067,1822,30565,1263,56383,7183,25287,13836,21097,3574;_",
+					[1435885809] = "1126,333,18281,1822,30565,1263,3940,52443,7183,25287,13836,24671;_",
+				},
+				["US:CenarionCircle:Tahnah"] = {
+					[1436319171] = "1126,333,3659,1555,13067,1822,56207,32004,7183,39108,19392,5293;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-05022C3DF9",
+					[1436317023] = "1126,333,5214,13067,58029,32004,7183,39108,10864,8528,5293;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-04022C3DF9",
+					[1436317310] = "1126,333,5214,13067,58029,32004,7183,39099,9,10864,8528,1579,3714;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-04022C3DF9",
+					[1436316582] = "1126,333,5214,13067,1822,56207,32004,7183,39108,19392,5293;_",
+					[1436315613] = "1126,333,5214,13067,1822,56207,32004,7183,39108,19392,5293;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-02022C3DF9",
+					[1436317568] = "1126,333,5214,13067,1822,56207,32004,7183,39108,19392,5293;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-04022C3DF9",
+					[1436317204] = "1126,333,5214,13067,58029,32004,7183,39108,10864,8528,5293;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-04022C3DF9",
+					[1436314839] = "1126,333,5214,680,12387,58029,32004,7183,39108,10864,8528,5293;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-02022C3DF9",
+					[1436317632] = "1126,333,5214,13067,1822,56207,32004,7183,39108,19392,1705,3588;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-04022C3DF9",
+					[1436318442] = "1126,333,5214,13067,1822,26876,29331,32004,7183,58500,5293;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-04022C3DF9",
+					[1436317892] = "1126,333,5214,13067,1822,56207,32004,7183,39108,19392,5293;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-04022C3DF9",
+					[1436316973] = "1126,333,5214,13067,58029,32004,7183,39108,10864,8528,5293;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-04022C3DF9",
+					[1436317415] = "1126,333,5214,13067,58029,32004,7183,39108,10864,8528,5293;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-04022C3DF9",
+					[1436317856] = "1126,333,5214,13067,1822,56207,8504,23500,7183,39108,19392,5293;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-04022C3DF9",
+					[1436317689] = "1126,333,5214,13067,1822,20073,36134,32004,7183,39108,19392,1579,3714;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-04022C3DF9",
+					[1436317760] = "1126,333,5214,13067,1822,20073,36134,8504,0,23500,7183,39099,9,19392,5293;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-04022C3DF9",
+					[1436317746] = "1126,333,5214,13067,1822,55927,280,8504,23500,7183,39108,19392,5293;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-04022C3DF9",
+					[1436317474] = "1126,333,5214,13067,1822,56207,32004,7183,39108,19392,5293;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-04022C3DF9",
+					[1436317647] = "1126,333,5214,13067,1822,56207,32004,7183,39099,9,19392,5293;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-04022C3DF9",
+					[1436317161] = "1126,333,5214,13067,58029,8504,23500,7183,39108,10864,8528,5293;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-04022C3DF9",
+					[1436316122] = "774,352,333,5214,13067,1822,56207,32004,7183,39108,19392,5293;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-03022C3DF9",
+					[1436317790] = "1126,333,5214,13067,1822,56207,32004,7183,39108,19392,5293;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-04022C3DF9",
+					[1436317257] = "1126,333,5214,13067,58029,32004,7183,39108,10864,8528,5293;Player-1169-065EC6D9,Pet-0-3132-1448-32244-58450-04022C3DF9",
+				},
+				["US:Sisters of Elune:Arianah"] = {
+					[1435883691] = "469,657,333,18281,37590,1274,58352,39123,19378,1603,3,3685;_",
+					[1435711934] = "1126,333,18281,5192,24936,5742,1720,20159,54669,23921,3599,7250,13820;_",
+					[1436317204] = "1126,333,5214,13067,28698,61335,7183,39123,10849,8529,5291;_",
+					[1435883757] = "469,657,333,18281,28698,8892,1274,58352,2567,36556,19378,5291;_",
+					[1435711556] = "1126,333,18047,711,4715,24936,5742,99912,557,10849,13820;_",
+					[1436315613] = "139,987,333,5214,13067,1822,88211,3969,42337,19378,5291;_",
+					[1435886251] = "1126,333,18281,1822,35768,52443,7183,39123,347,19031,5291;_",
+					[1436316122] = "1126,333,5214,13067,1822,79415,8796,7183,39123,19378,1606,113,3572;_",
+					[1436321946] = "1126,333,18281,1822,35768,43647,12765,42337,3599,15779,5291;_",
+					[1435885809] = "1126,333,18281,1822,35768,52443,7183,39123,19378,5291;_",
+					[1436317790] = "1126,333,5214,13067,1822,88211,3969,42337,19378,5291;_",
+					[1435708999] = "1126,5547,13067,35870,5706,105612,13822;_",
+					[1436317023] = "1126,333,5214,13067,21895,68138,7183,39123,10849,8529,5291;_",
+					[1436319967] = "1126,333,5214,13067,1822,88211,7183,39123,19378,5291;_",
+					[1435881973] = "469,657,333,5214,13067,477,80760,15979,42722,17498,3572;_",
+					[1435711946] = "1126,333,18281,5192,24936,5742,1720,28943,14704,55102,10849,13820;_",
+					[1435710542] = "1126,333,18281,477,35393,1720,52443,46306,10849,13820;_",
+					[1436316582] = "1126,333,5214,13067,1822,79415,5921,2875,7183,39123,19378,1606,113,3572;_",
+					[1435716684] = "1126,333,18281,477,1345,3370,30678,1720,52443;_",
+					[1435715471] = "139,330,657,333,18281,477,4715,24936,7462,20159,23488,8796,46306,347;_",
+					[1435709069] = "1126,333,18281,35870,1720,43647,12765,53186,13822;_",
+					[1436321892] = "1126,333,18281,1822,35768,56412,11232,31105,19378,1719,3572;_",
+					[1436321829] = "774,352,333,18281,1822,35768,52443,3969,42337,19378,5291;_",
+					[1435883708] = "469,657,333,18281,37590,1274,42373,15979,39123,19378,5291;_",
+					[1436320358] = "1126,333,5214,13067,1822,79415,8796,7183,39123,19378,5291;_",
+					[1436317161] = "1126,333,5214,13067,90033,7183,38821,302,10849,224,8305,5291;_",
+					[1435883841] = "469,657,333,18281,37590,1274,27669,28635,2048,39123,19378,5291;_",
+					[1436322026] = "1126,333,18281,477,1345,35768,43647,12765,42337,19378,1606,3685;_",
+					[1435881922] = "469,657,333,5214,13067,477,80760,15979,63792;_",
+					[1435885230] = "1126,333,5214,13067,1822,34048,45367,8796,46306,347,19031,1606,113,3572;_",
+					[1435882439] = "1126,333,5214,13067,1822,34048,2994,2691,94784,19378,1603,3,113,3572;_",
+					[1436316973] = "139,987,333,5214,13067,57749,32284,7183,39123,3599,7250,8529,5291;_",
+					[1435709405] = "1126,333,18281,37590,52443,70977;_",
+					[1436321815] = "1126,333,18281,1822,35768,43647,8796,3969,42337,19378,5291;_",
+					[1436320110] = "1126,333,5214,13067,1822,79415,8796,7183,15202,23921,19378,1719,3572;_",
+					[1436317746] = "1126,333,5214,13067,1822,64711,23500,3969,42337,19378,5291;_",
+					[1436321121] = "469,657,333,18281,37590,43647,8796,7183,39123,19378,5291;_",
+					[1436317474] = "1126,333,5214,13067,1822,88211,7183,39123,19378,5291;_",
+					[1435711518] = "1126,333,18047,30362,5742,76548,23364,557,10849,13820;_",
+					[1436320147] = "1126,333,5214,13067,1822,26876,61335,7183,15202,23921,3599,15779,5291;_",
+					[1436317856] = "774,352,333,5214,13067,1822,88211,3969,42035,302,3599,15779,5291;_",
+					[1435711837] = "1126,333,18281,5192,23506,1430,5742,1720,98749,10849,13820;_",
+					[1435885690] = "1126,333,5214,13067,1822,88211,7183,39123,19378,5291;_",
+					[1435711711] = "1126,333,18758,4715,24936,5742,1720,98192,557,10849,13820;_",
+					[1435709048] = "1126,333,18281,35870,1720,28943,27469,53186,13822;_",
+					[1435709277] = "1126,333,18281,37590,52443,61859,9118;_",
+					[1436317415] = "139,987,333,5214,13067,66533,14704,8796,7183,38821,302,243,10606,8529,5291;_",
+					[1436317689] = "1126,333,5214,13067,1822,26876,52539,8796,3969,42337,3599,15779,1719,3572;_",
+					[1435711397] = "1126,333,18047,30362,5742,99912,557,10849,13820;_",
+					[1435884749] = "469,657,333,5214,13067,90033,7183,39123,17880,1498,5291;_",
+					[1436323062] = "139,330,657,333,5214,13067,81237,12765,3214,39123,347,19031,5291;_",
+					[1435883663] = "469,657,333,18281,37590,1274,58352,39123,19378,1719,3572;_",
+					[1435711925] = "1126,333,18281,5192,24936,5742,1720,20159,54669,23921,3599,7250,13820;_",
+					[1436317647] = "1126,333,5214,13067,1822,88211,3969,42337,19378,5291;_",
+					[1435709686] = "1126,333,5894,12387,35870,1720,52443,46306,10849,13822;_",
+					[1435709226] = "1126,333,18281,37590,52443,61859,9118;_",
+					[1436320264] = "1126,333,5214,13067,1822,64711,14704,8796,7183,15202,23921,19378,5291;_",
+					[1435881888] = "469,657,333,5214,13067,477,80760,15979,42722,17385,3685;_",
+					[1436321598] = "469,657,333,18281,477,13674,23439,43647,8796,7183,723,38400,19378,5291;_",
+					[1436317568] = "1126,333,5214,13067,1822,26876,61335,3969,42337,19378,5291;_",
+					[1436317632] = "1126,333,5214,13067,1822,26876,37835,14704,8796,3969,11232,31105,19378,1606,113,3572;_",
+					[1435886929] = "1126,333,18281,1822,34048,1720,43647,8796,46306,347,19031,1606,113,3572;_",
+					[1435887965] = "774,352,333,5214,13067,477,35393,5685,48478,46004,302,10849,8529,1606,113;_",
+					[1436317760] = "1126,333,5214,13067,1822,88211,3969,42337,19378,5291;_",
+					[1435715156] = "139,330,657,333,18281,5192,24936,7462,20159,23488,55102,24669;_",
+					[1435709358] = "1126,333,18281,37590,52443,61859,9118;_",
+					[1435712040] = "1126,333,18281,5192,24936,5742,1720,98749,10849,13820;_",
+					[1436317310] = "1126,333,5214,13067,81237,8796,7183,39123,3599,7250,8529,1719,3572;_",
+					[1436321793] = "469,657,333,18281,37590,52443,3969,42337,19378,5291;_",
+					[1436321984] = "1126,333,18281,477,1345,35768,49568,6844,11232,31105,19378,5291;_",
+					[1436321858] = "1126,333,18281,1822,35768,43647,8796,3969,42337,19378,5291;_",
+					[1435883800] = "469,657,333,18281,28013,9577,1274,58352,39123,19378,5291;_",
+					[1435709163] = "1126,333,18281,37590,52443,70977;_",
+					[1436317892] = "1126,333,5214,13067,1822,88211,3969,42337,19378,5291;_",
+					[1435883738] = "469,657,333,18281,37590,1274,42373,15979,39123,3599,15779,5291;_",
+					[1435887642] = "1126,333,5214,13067,477,35393,54163,46306,10849;_",
+					[1436319171] = "1126,333,5214,13067,1822,79415,8796,7183,39123,19378,5291;_",
+					[1435709305] = "1126,333,18281,37590,52443,61859,9118;_",
+					[1436322570] = "139,987,333,5214,13067,1822,26191,53224,12765,42337,19378,1606,113,3572;_",
+					[1435888541] = "469,657,333,18047,234,81237,8796,7183,39123,347,3252,15779,1606,113,3572;_",
+					[1435711666] = "1126,333,18047,711,4715,24936,5742,45367,23997,30548,557,3599,7250,13820;_",
+					[1435711603] = "1126,333,18047,711,4715,16703,8233,5742,99912,557,10849,13820;_",
+					[1435713135] = "469,657,333,18758,4715,32398,43647,12765,15255,27082,24669;_",
+					[1435885725] = "1126,333,5214,13067,1822,79415,8796,7183,39123,19378,5291;_",
+					[1435713586] = "469,657,333,15411,2870,477,4715,24936,7462,43647,55102,24669;_",
+					[1435710953] = "139,987,333,18281,1822,34048,1720,20159,36253,42337,24669;_",
+					[1435715890] = "1126,333,18047,234,477,4715,24936,59905,46306,10849;_",
+					[1436320200] = "1126,333,5214,13067,1822,79415,8796,7183,39123,19378,5291;_",
+					[1436321930] = "1126,333,18281,1822,26876,8892,56412,42337,19378,5291;_",
+					[1436321994] = "1126,333,18281,477,1345,26876,8892,43647,12765,11232,31105,3599,15779,5291;_",
+					[1435889054] = "1126,333,18281,477,37113,52443,7183,39123,347,10502,8529,1606,113,3572;_",
+					[1435712630] = "469,657,333,18281,477,4715,30678,1720,52443,46306,24669;_",
+					[1436317257] = "1126,333,5214,13067,90033,7183,39123,10849,8529,1719,3572;_",
+					[1435709110] = "139,987,333,18281,37590,20159,32284,7183,49972,13822;_",
+					[1435886565] = "1126,333,18281,477,1345,35768,43647,8796,7183,39123,347,3252,15779,1606,113,3572;_",
+					[1435883685] = "469,657,333,18281,37590,1274,58352,39123,19378,1603,3688;_",
+					[1435883170] = "469,657,333,18281,37590,1274,58352,39123,3599,15779,1603,3,113,3572;_",
+					[1435714618] = "469,657,333,18047,234,5192,84841,3969,42337,24669;_",
+					[1436318442] = "1126,333,5214,13067,1822,26876,61335,3969,42337,19378,5291;_",
+					[1435887329] = "1126,333,18281,477,1345,34048,1720,52443,22385,23921,19378,5291;_",
+					[1436320227] = "1126,333,5214,13067,1822,79415,8796,7183,39123,3599,15779,1606,3685;_",
+					[1435712121] = "1126,333,18281,5192,24936,5742,1720,28943,14704,55102,10849,10248,3572;_",
+					[1435712141] = "1126,333,18281,5192,24936,5742,1720,98749,10849,13820;_",
+					[1435888291] = "1126,333,5214,13067,81237,8796,7183,39123,10849,8529,5291;_",
+					[1435711361] = "1126,333,18047,30362,5742,45367,54545,557,3599,7250,10248,3572;_",
+					[1436314839] = "139,987,333,5214,680,12387,1822,55927,23488,8796,3969,42337,19378,1719,3572;_",
+				},
+				["US:CenarionCircle:Gillard"] = {
+					[1435711556] = "1126,333,18281,477,1345,3370,23334,9064,56412,3214,39124,20960,3708;_",
+					[1435711946] = "1126,333,18281,5192,23334,1602,3497,2245,1720,98750,10848;_",
+					[1435715471] = "469,657,333,18281,477,4715,23334,7344,1720,52443,46307,24668;_",
+					[1435716684] = "1126,333,18281,477,1345,3370,23334,9064,52443,3969,42338,24668;_",
+					[1435715156] = "1126,333,18281,5192,23334,512,8552,56412,42338,10848,13820;_",
+					[1435709686] = "1126,333,18281,1822,26704,7344,1720,52443,46307,24668;_",
+					[1435709048] = "1126,333,18281,28526,7344,1720,28943,0,27469,42338,10848,13820;_",
+					[1435709277] = "1126,18614,28526,5099,2245,1720,3986,48457,46307,10848,10114,3706;_",
+					[1435709226] = "1126,333,18281,28526,7344,1720,28943,23500,46307,242,10606,13820;_",
+					[1435711518] = "1126,333,18281,1822,26704,9064,56412,3214,39124,20962,3706;_",
+					[1435711837] = "1126,333,18281,5192,23334,1602,5742,1720,98750,10848;_",
+					[1435709305] = "1126,18614,28526,7344,1720,3986,48457,46307,10848,10112,2,3706;_",
+					[1435711361] = "1126,333,18281,1822,26704,2858,2241,3965,28943,27469,3214,39124,20960,2,133,3437,136;_",
+					[1435712121] = "774,352,333,18281,5192,23334,1602,5742,1720,1722,42516,54512,10848;_",
+					[1435714618] = "469,657,333,5318,12729,234,5192,23334,61507,3969,42338,24668;_",
+					[1435709069] = "1126,333,18281,28526,5099,2245,1720,44238,12174,42338,10848,10247,3573;_",
+					[1435712141] = "1126,333,18281,5192,23334,1602,5742,1720,4095,24848,15295,54512,10848;_",
+					[1435711397] = "1126,333,18281,1822,26704,5099,3965,56412,3214,39124,24668;_",
+					[1435711925] = "1126,333,18281,5192,23334,172,1430,3497,2245,1720,28943,69807,10848,10112,2,3570;_",
+					[1435708999] = "1126,5547,13067,28526,7344,5706,94761,10851,13820;_",
+					[1435715890] = "1126,333,18047,234,477,4715,23334,7344,54163,46307,10848,13820;_",
+					[1435709163] = "1126,333,18281,28526,7344,1720,28943,23500,46307,10848,13820;_",
+					[1435709405] = "1126,333,18281,477,1345,26704,2858,2241,2245,1720,52443,46307,24668;_",
+					[1435711711] = "1126,333,18281,477,1345,3370,23334,9064,56412,3214,39124,20962,3706;_",
+					[1435709110] = "774,352,333,18281,28526,3005,2094,2245,1720,52443,46307,10848,13820;_",
+					[1435711603] = "1126,333,18281,477,1345,3370,23334,9064,56412,3214,39124,24668;_",
+					[1435709358] = "1126,333,18281,477,28049,7344,1720,52443,46307,10848,13820;_",
+					[1435713586] = "469,657,333,18281,477,4715,23334,9064,56412,42338,24668;_",
+					[1435711934] = "1126,333,18281,5192,23334,1602,5742,1720,28943,69807,10848;_",
+					[1435710953] = "1126,333,18281,1822,26704,9064,56412,3214,39124,24668;_",
+					[1435712040] = "1126,333,18281,5192,23334,1602,5742,1720,98750,10848,10114;_",
+					[1435711666] = "1126,333,18281,477,1345,3370,23334,238,8826,28943,27469,3214,39124,20962,3706;_",
+					[1435712630] = "469,657,333,18281,477,4715,23334,7344,1720,52443,46307,19359,5309;_",
+					[1435713135] = "469,657,333,18758,4715,23334,7344,1720,56412,41780,558,24668;_",
+					[1435710542] = "1126,333,18281,477,1345,26704,7344,1720,52443,46307,24668;_",
+				},
+				["US:CenarionCircle:Kontent"] = {
+					[1435711556] = "1126,333,18281,477,1345,3370,24936,5742,1720,28943,11068,78116,694,4594;_",
+					[1435711946] = "1126,333,18281,5192,24936,7462,28943,11068,19615,49972;_",
+					[1435715471] = "1459,18281,477,4715,24936,7462,40011,19615,49972,259,8270,5288;_",
+					[1435716684] = "1126,333,18281,477,1345,3370,24936,7462,40011,12432,65684,694,4594;_",
+					[1435715156] = "139,330,657,333,18281,5192,24936,7462,40011,78116,694,4594;_",
+					[1436317790] = "_;_",
+					[1435709686] = "1126,333,5894,12387,1822,34048,1720,40011,12432,65684,694,4594;_",
+					[1435709048] = "1126,333,54151,1720,28169,774,0,0,11068,16401,15255,37931,9223,4594;_",
+					[1435711934] = "139,987,333,18281,5192,24936,4281,3181,20159,8784,11068,19615,42722,7250;_",
+					[1436317204] = "1126,333,5214,13067,77601,12432,7183,39123,10849,8529,5288;_",
+					[1436316582] = "1126,333,5214,13067,1822,25066,50713,12432,7183,39123,19378,5288;_",
+					[1436317023] = "1126,333,5214,13067,77601,12432,7183,39123,10849,8529,5288;_",
+					[1436315613] = "139,987,333,5214,13067,1822,25066,30861,19852,12432,3969,42337,19378,5288;_",
+					[1435709277] = "1126,18614,34409,1461,1720,3986,24957,0,11068,12432,49905,7250,9223,4594;_",
+					[1436317161] = "1126,333,5214,13067,66533,11068,12432,7183,39123,10849,8529,5288;_",
+					[1435709110] = "1126,333,54151,1720,40011,12432,19224,37931,9223,4594;_",
+					[1435709226] = "1126,333,18281,35870,1720,28943,11068,12432,12065,45090,9223,4594;_",
+					[1435711518] = "1126,333,18281,1822,28306,4281,1461,1720,28943,11068,78116,694,4594;_",
+					[1435711837] = "1126,333,18281,5192,23506,1430,7462,40011,19615,49972;_",
+					[1436317760] = "_;_",
+					[1435709305] = "1126,18614,35870,1720,3986,24183,774,11068,12432,57155,9223,4594;_",
+					[1435711361] = "1126,333,18281,1822,28306,5742,1720,40011,78116,694,4594;_",
+					[1436317892] = "_;_",
+					[1435715890] = "139,987,333,18047,234,477,4715,24936,27621,19852,12432,57155,8529,5288;_",
+					[1435713586] = "469,657,333,18281,477,4715,24936,7462,40011,83404;_",
+					[1436316122] = "1126,333,5214,13067,1822,25066,3240,47473,12432,46306,19378,5288;_",
+					[1435712121] = "774,352,333,18281,5192,23572,1364,4281,3181,28943,0,11068,19615,38821,545,10606;_",
+					[1435714618] = "469,657,333,18047,234,5192,24936,47473,12432,70972;_",
+					[1435710542] = "139,987,333,18281,477,1345,34048,1720,20159,19852,12432,65684,694,4594;_",
+					[1435711397] = "1126,333,18281,1822,28306,5742,1720,20159,19852,78116,694,4594;_",
+					[1436316973] = "1126,333,5214,13067,77601,12432,7183,39123,3599,7250,8529,1702,3586;_",
+					[1435712141] = "1126,333,18281,5192,24936,7462,28943,11068,19615,42722,920,1,6329;_",
+					[1436318442] = "_;_",
+					[1436317568] = "1126,333,5214,13067,1822,75779,12432,3969,42337,19378,5288;_",
+					[1436317632] = "_;_",
+					[1435711711] = "1459,18758,4715,24936,7462,40011,19615,12041,37931,260;_",
+					[1436317257] = "774,352,333,5214,13067,34409,32124,0,0,11068,12432,7183,39123,10849,8529,1702,3586;_",
+					[1436317647] = "_;_",
+					[1436319171] = "_;_",
+					[1435711925] = "1126,333,18281,5192,24936,4281,3181,28943,11068,19615,42722,7250;_",
+					[1435712630] = "139,330,657,333,18281,477,4715,32398,20159,19852,12432,7183,58501,5288;_",
+					[1436317474] = "1126,333,5214,13067,1822,75779,12432,7183,39123,19378,5288;_",
+					[1435708999] = "1126,333,18047,73929,3906,78810,4594;_",
+					[1436317856] = "_;_",
+					[1435709163] = "1126,333,54151,1720,28169,774,11068,12432,19224,37931,9223,4594;_",
+					[1435709405] = "1126,333,18281,477,1345,34048,1720,40011,12432,12065,54313,4594;_",
+					[1436317415] = "1126,333,5214,13067,77601,12432,7183,39123,10849,8529,5288;_",
+					[1436317746] = "_;_",
+					[1436314839] = "1126,333,5214,680,12387,1822,26771,49008,12432,3969,42337,19378,5288;_",
+					[1435709358] = "1126,333,18281,477,35393,1720,40011,12432,57155,9223,4594;_",
+					[1435711603] = "1126,333,18281,477,1345,3370,16703,8233,5742,1720,40011,78116,694,4594;_",
+					[1435709069] = "1126,333,54151,1720,40011,16401,15255,31005,6926,9223,4594;_",
+					[1435710953] = "139,987,333,18281,1822,35768,20159,8010,11842,16401,3214,63789;_",
+					[1435712040] = "1126,333,18281,5192,24936,7462,28943,11068,19615,39366,10606;_",
+					[1435711666] = "19506,30362,47473,19615,12041,37931,260;_",
+					[1436317689] = "_;_",
+					[1435713135] = "469,657,333,18758,4715,30678,1720,40011,16401,41780,19935,694,4594;_",
+					[1436317310] = "1126,333,5214,13067,57749,19852,12432,7183,39123,10849,8529,5288;_",
+				},
+				["US:Sisters of Elune:Lenae"] = {
+					[1435711934] = "139,635,0,352,333,18281,5192,24936,5742,1720,20159,78288,302,4810,6039;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-040216CB35",
+					[1436317204] = "1126,333,5214,13067,90033,7183,39123,10849,13821;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-020216CB35",
+					[1436321815] = "1126,333,18047,234,1822,26876,29051,32284,3969,42337,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-050216CB35",
+					[1435711556] = "1126,333,18047,711,4715,30678,58132,41780,557,10849,13821;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-020216CB35",
+					[1436315613] = "1126,333,5214,13067,1822,88211,7183,39123,24670;Player-1169-06C1070E,Pet-0-1169-1464-17-78116-010216CB35",
+					[1436316122] = "1126,333,5214,13067,1822,88211,7183,39123,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-010216CB35",
+					[1436321946] = "1126,333,18047,234,1822,92180,42337,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-050216CB35",
+					[1436317790] = "156079;_",
+					[1435708999] = "1126,333,115497,1133,37990;Player-1169-06C1070E,Pet-0-3018-1159-29808-78116-010216CB35",
+					[1436317856] = "1459,18047,66767,23500,7183,39123,10849,259;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-030216CB35",
+					[1436319967] = "1126,333,5214,13067,1822,88211,7183,39123,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-040216CB35",
+					[1435711946] = "1126,333,18281,5192,24936,5742,1720,431,98318,4810,6039;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-040216CB35",
+					[1435710542] = "1126,333,18281,477,1345,35768,43856,8587,3969,42337,19378,5292;Player-1169-06C1070E,Pet-0-3018-1159-29808-78116-010216CB35",
+					[1436316582] = "1126,333,5214,13067,1822,55927,29409,2875,7183,39123,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-020216CB35",
+					[1435716684] = "1126,333,18281,477,1345,3370,24936,7462,52443,46306,19378,5292;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-0B0216CB35",
+					[1435715471] = "469,657,333,5894,12387,477,4715,24936,7462,52443,46306,24670;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-090216CB35",
+					[1435709069] = "1126,333,154620;Player-1169-06C1070E,Pet-0-3018-1159-29808-78116-010216CB35",
+					[1436321892] = "1126,333,18047,234,1822,92180,42337,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-050216CB35",
+					[1436321829] = "1126,333,18047,234,1822,88211,3969,42337,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-050216CB35",
+					[1435712141] = "1126,333,18281,5192,24936,5742,1720,28943,69806,4810,6039;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-040216CB35",
+					[1436320358] = "1126,333,5214,13067,1822,88211,7183,39123,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-040216CB35",
+					[1436317415] = "1126,333,5214,13067,90033,7183,39123,10849,13821;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-020216CB35",
+					[1436322026] = "1126,333,18047,234,477,1345,26191,65989,42337,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-050216CB35",
+					[1436316973] = "1126,333,5214,13067,24804,13217,19728,32284,7183,39123,10849,13821;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-020216CB35",
+					[1436318442] = "1126,333,5214,13067,90033,7183,39123,10849,13821;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-030216CB35",
+					[1435709405] = "1126,333,18047,234,477,1345,87277,934,3969,42337,24670;Player-1169-06C1070E,Pet-0-3018-1159-29808-78116-010216CB35",
+					[1436320110] = "1126,333,5214,13067,1822,88211,7183,39123,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-040216CB35",
+					[1436317746] = "156079;_",
+					[1435711518] = "1126,333,18047,36104,58132,41780,557,10849,13821;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-020216CB35",
+					[1435711837] = "1126,333,18281,5192,24936,5742,1720,98749,4810,6039;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-040216CB35",
+					[1435711711] = "1459,18758,4715,24936,7462,59626,12041,27082,10849,259,13562;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-030216CB35",
+					[1436317689] = "1126,333,5214,13067,1822,26876,60401,934,7183,39123,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-020216CB35",
+					[1435711397] = "1126,333,18047,36104,58132,41780,557,10849,13821;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-020216CB35",
+					[1436323062] = "469,657,333,5214,13067,94002,42337;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-060216CB35",
+					[1435709226] = "1126,333,18047,234,90033,3969,42337,10849,13821;Player-1169-06C1070E,Pet-0-3018-1159-29808-78116-010216CB35",
+					[1436321598] = "156079;_",
+					[1436317568] = "1126,333,5214,13067,1822,88211,7183,39123,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-020216CB35",
+					[1436317632] = "1126,333,5214,2263,10804,1822,26876,0,66,61269,7183,39123,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-020216CB35",
+					[1436317760] = "156079;_",
+					[1435709358] = "1126,333,18047,234,477,89556,7183,39123,10849,13821;Player-1169-06C1070E,Pet-0-3018-1159-29808-78116-010216CB35",
+					[1435712040] = "1126,333,18281,5192,24936,5742,1720,98749,4810,6039;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-040216CB35",
+					[1436317310] = "1126,333,5214,13067,90033,7183,39123,10849,13821;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-020216CB35",
+					[1436321793] = "1126,333,18047,234,90033,3969,42337,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-050216CB35",
+					[1436321984] = "1126,333,18047,234,477,1345,85336,6844,42337,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-050216CB35",
+					[1436321858] = "1126,333,18047,234,1822,88211,3969,42337,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-050216CB35",
+					[1435709163] = "1126,333,18047,90267,3969,15255,27082,10849,13821;Player-1169-06C1070E,Pet-0-3018-1159-29808-78116-010216CB35",
+					[1436317892] = "1459,18047,234,90033,7183,39123,10849,259,13562;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-030216CB35",
+					[1435715156] = "469,657,333,18281,5192,24936,7462,98749,24670;_",
+					[1436321121] = "469,657,333,18281,37590,52443,7183,39123,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-040216CB35",
+					[1436319171] = "1126,333,5214,13067,1822,88211,7183,39123,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-040216CB35",
+					[1436314839] = "1126,333,5214,680,12387,90033,7183,39123,10849,13821;Player-1169-06C1070E,Pet-0-1169-1464-17-78116-010216CB35",
+					[1436320147] = "774,352,333,5214,13067,1822,88211,7183,39123,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-040216CB35",
+					[1436322570] = "1126,333,5214,13067,1822,92180,42337,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-050216CB35",
+					[1435711666] = "156079,24670;_",
+					[1435711603] = "1126,333,18047,711,4715,19612,11066,2151,55981,41780,557,10849,13821;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-020216CB35",
+					[1435713135] = "469,657,333,18758,4715,30678,1720,56412,41780,557,19378,5292;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-050216CB35",
+					[1436321930] = "1126,333,18047,234,1822,92180,42337,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-050216CB35",
+					[1436320200] = "1126,333,5214,13067,1822,88211,7183,39123,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-040216CB35",
+					[1436320264] = "1126,333,5214,13067,1822,88211,7183,39123,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-040216CB35",
+					[1435709305] = "1126,18380,234,41576,48457,3969,42337,10849,13821;Player-1169-06C1070E,Pet-0-3018-1159-29808-78116-010216CB35",
+					[1435709686] = "1126,333,5894,12387,1822,35768,52443,3969,42337,19378,5292;Player-1169-06C1070E,Pet-0-3018-1159-29808-78116-010216CB35",
+					[1435712630] = "469,657,333,18281,477,4715,30678,1720,52443,46306,19378,5292;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-040216CB35",
+					[1436321994] = "1126,333,18047,234,477,1345,22982,13217,55981,42337,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-050216CB35",
+					[1435711925] = "774,0,352,333,18281,5192,24936,5742,1720,98749,4810,6039;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-040216CB35",
+					[1435715890] = "469,657,333,18047,234,477,4715,84841,3969,42337,24670;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-0A0216CB35",
+					[1436317023] = "1126,333,5214,13067,90033,7183,39123,10849,13821;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-020216CB35",
+					[1435709110] = "1126,333,18047,35451,22532,8784,23500,3969,15255,27082,10849,13821;Player-1169-06C1070E,Pet-0-3018-1159-29808-78116-010216CB35",
+					[1435709277] = "1126,18380,234,41576,48457,7183,39123,10849,13821;Player-1169-06C1070E,Pet-0-3018-1159-29808-78116-010216CB35",
+					[1436317161] = "1126,333,5214,13067,90033,7183,39123,10849,13821;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-020216CB35",
+					[1435709048] = "1126,333,115497,1133,37990;Player-1169-06C1070E,Pet-0-3018-1159-29808-78116-010216CB35",
+					[1435714618] = "469,657,333,18047,234,5192,76254,8587,3969,42337,24670;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-070216CB35",
+					[1436317647] = "1126,333,5214,13067,1822,88211,7183,39123,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-020216CB35",
+					[1436317257] = "1126,333,5214,13067,90033,7183,39123,10849,13821;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-020216CB35",
+					[1435713586] = "469,657,333,18281,477,4715,24936,5742,1720,98749,24670;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-060216CB35",
+					[1435712121] = "774,352,333,18281,5192,24936,5742,1720,28943,69806,243,4567,6039;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-040216CB35",
+					[1436320227] = "1126,333,5214,13067,1822,88211,7183,39123,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-040216CB35",
+					[1436317474] = "1126,333,5214,13067,1822,88211,7183,39123,24670;Player-1169-06C1070E,Pet-0-3132-1448-32244-78116-020216CB35",
+					[1435711361] = "1126,333,18047,36104,58132,41780,557,10849,13821;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-020216CB35",
+					[1435710953] = "1126,333,18281,1822,35768,56412,3214,39123,24670;Player-1169-06C1070E,Pet-0-3132-1448-2476-78116-010216CB35",
+				},
+				["US:Sisters of Elune:Everose"] = {
+					[1435711934] = "1126,333,18281,1822,3370,24936,5742,1720,20159,8784,0,69806,24671;_",
+					[1436317204] = "1126,333,5214,13067,30128,59905,13225,33081,10849,13822;_",
+					[1436321815] = "1126,333,18047,234,1822,88211,7183,39123;_",
+					[1435711556] = "1126,333,18281,477,1345,3370,32398,56412,42337,24671;_",
+					[1436315613] = "1126,333,5214,13067,1822,88211,7183,6042,33081,24671;_",
+					[1436316122] = "1126,333,5214,13067,1822,88211,7183,6042,33081,24671;_",
+					[1436321946] = "1126,333,18047,234,1822,64711,27469,3214,39123;_",
+					[1436317790] = "1126,333,5214,13067,1822,28306,59905,13225,33081,24671;_",
+					[1435708999] = "1126,5547,13067,35870,5706,105612,13822;_",
+					[1436317856] = "1126,333,5214,13067,1822,20073,8233,5089,0,31316,0,23500,13225,33081,24671;_",
+					[1436319967] = "1126,333,5214,13067,1822,88211,3969,9256,33081,24671;_",
+					[1435711946] = "1126,333,18281,1822,3370,24936,5742,1720,22353,76396,24671;_",
+					[1435710542] = "1126,333,18281,477,1345,35768,52443,7183,39123,24671;_",
+					[1436316582] = "1126,333,5214,13067,1822,88211,7183,6042,33081,24671;_",
+					[1435716684] = "1126,333,18281,477,1345,3370,24936,7462,52443,46306,24671;_",
+					[1435715471] = "1126,333,18281,477,4715,30678,1720,52443,46306,10849,13822;_",
+					[1435709069] = "1126,333,18281,35870,1720,22353,34059,53186,13822;_",
+					[1436321892] = "1126,333,18047,234,1822,92180,3214,39123;_",
+					[1436321829] = "1126,333,18047,234,1822,88211,7183,39123;_",
+					[1435712141] = "1126,333,18281,1822,3370,16703,8233,5742,1720,28943,69806,24671;_",
+					[1436320358] = "1126,333,5214,13067,1822,88211,3969,9256,33081,24671;_",
+					[1436317415] = "1126,333,5214,13067,30128,36405,23500,13225,33081,10849,13822;_",
+					[1436322026] = "1126,333,18047,234,477,1345,92180,42337;_",
+					[1436316973] = "1126,333,5214,13067,30128,59905,13225,33081,10849,6394,7428;_",
+					[1436318442] = "1126,333,5214,13067,1822,88211,3969,9256,33081,24671;_",
+					[1435709405] = "1126,333,18281,477,1345,35768,52443,7183,39123,20967,3704;_",
+					[1436320110] = "1126,333,5214,13067,1822,64711,0,23500,3969,9256,33081,24671;_",
+					[1436317746] = "774,352,333,5214,13067,1822,28306,36405,23500,6241,6984,33081,24671;_",
+					[1435711518] = "1126,333,18281,1822,35768,56412,42337,24671;_",
+					[1435711837] = "1126,333,18281,1822,3370,32398,56412,42337,24671;_",
+					[1435711711] = "1126,333,18281,477,1345,3370,32398,56412,42337,24671;_",
+					[1436317689] = "1126,333,5214,13067,1822,28306,59905,13225,33081,17243,7428;_",
+					[1435711397] = "1126,333,18281,1822,35768,20159,36253,42337,21002,2,3667;_",
+					[1436323062] = "469,657,333,5214,13067,94002,2272,40065,24671;_",
+					[1435709226] = "1126,333,10584,7697,37590,52443,7183,39123,10849,13822;_",
+					[1436321598] = "156079;_",
+					[1436317568] = "1126,333,5214,13067,1822,28306,59905,13225,33081,4519,1,20151;_",
+					[1436317632] = "774,352,333,5214,13067,1822,26876,1430,36405,23500,13225,33081,24671;_",
+					[1436317760] = "1126,333,5214,13067,1822,28306,27621,32284,13225,33081,24671;_",
+					[1435709358] = "1126,333,18281,477,37113,52443,7183,39123,10849,13822;_",
+					[1435712040] = "1126,333,18281,1822,3370,24936,5742,1720,98749,24671;_",
+					[1436317310] = "1126,333,5214,13067,30128,59905,13225,33081,10849,13822;_",
+					[1436321793] = "1126,333,18047,234,90033,7183,39123;_",
+					[1436321984] = "1126,333,18047,234,477,1345,85336,6844,42337;_",
+					[1436321858] = "1126,333,18047,234,1822,88211,7183,39123;_",
+					[1435709163] = "1126,333,18281,37590,52443,7183,49972,13822;_",
+					[1436317892] = "1126,333,5214,13067,1822,28306,59905,13225,33081,24671;_",
+					[1435715156] = "1126,333,18281,5192,32398,56412,3214,39123,10849,13822;_",
+					[1436321121] = "139,330,657,333,18281,37590,20159,32284,3969,2272,6984,33081,24671;_",
+					[1436319171] = "1126,333,5214,13067,1822,58121,30090,6241,942,6042,33081,20967,3704;_",
+					[1436314839] = "1126,333,5214,13067,1822,88211,6241,942,6042,33081,24671;_",
+					[1436320147] = "1126,333,5214,13067,1822,88211,3969,9256,33081,24671;_",
+					[1436322570] = "1126,333,5214,13067,1822,92180,2272,40065,24671;_",
+					[1435711666] = "1126,333,18281,477,1345,3370,32398,56412,42337,24671;_",
+					[1435711603] = "1126,333,18281,477,1345,3370,32398,56412,42337,24671;_",
+					[1435713135] = "469,657,333,18758,4715,24936,7462,98192,557,24671;_",
+					[1436321930] = "1126,333,18047,234,1822,92180,3214,39123;_",
+					[1436320200] = "1126,333,5214,13067,1822,88211,3969,9256,33081,24671;_",
+					[1436320264] = "1126,333,5214,5369,7698,1822,58121,6590,23500,3969,9256,33081,24671;_",
+					[1435709305] = "1126,18614,37590,3986,48457,7183,39123,10849,13822;_",
+					[1435709686] = "1126,333,5894,12387,1822,35768,22353,30090,7183,39123,24671;_",
+					[1435712630] = "469,657,333,18281,477,4715,30678,1720,52443,46306,24671;_",
+					[1436321994] = "1126,333,18047,234,477,1345,26191,65989,42337;_",
+					[1435711925] = "1126,333,18281,1822,3370,24936,5089,653,1720,28943,0,69806,21002,2,3667;_",
+					[1435715890] = "469,657,333,18047,234,477,4715,84841,3969,42337;_",
+					[1436317023] = "1126,333,5214,13067,30128,59905,13225,33081,10849,13822;_",
+					[1435709110] = "1126,333,7477,3106,7698,28764,6453,653,1720,28943,0,0,23500,57155,13822;_",
+					[1435709277] = "1126,18614,37590,3986,48457,7183,39123,1531,9318,13822;_",
+					[1436317161] = "1126,333,5214,13067,30128,59905,13225,33081,10849,13822;_",
+					[1435709048] = "1126,333,18281,35870,1720,28943,0,0,27469,53186,13822;_",
+					[1435714618] = "469,657,333,18047,234,5192,30678,54163,46306,24671;_",
+					[1436317647] = "1126,333,5214,13067,1822,28306,59905,13225,33081,24671;_",
+					[1436317257] = "1126,333,5214,13067,21895,8233,59905,13225,33081,10849,13822;_",
+					[1435713586] = "469,657,333,18281,477,4715,24936,7462,98749,24671;_",
+					[1435712121] = "1126,333,18281,1822,3370,16703,8233,5742,1720,28943,0,69806,243,20724,3704;_",
+					[1436320227] = "1126,333,5214,13067,1822,88211,3969,9256,33081,24671;_",
+					[1436317474] = "1126,333,5214,13067,1822,28306,59905,13225,33081,24671;_",
+					[1435711361] = "1126,333,18281,1822,35768,56412,42337,24671;_",
+					[1435710953] = "1126,333,18281,1822,35768,56412,3214,39123,24671;_",
+				},
+				["US:Sisters of Elune:Lealdade"] = {
+					[1435883691] = "469,657,333,18281,35870,1720,1274,56091,973,40412,17242,7428;_",
+					[1435711934] = "1126,333,18281,1822,3370,24936,5742,1720,57365,41385,10751,13919;_",
+					[1436317204] = "1126,333,5214,13067,90033,4922,973,1288,39124,10848,6394,7428;_",
+					[1435883757] = "469,657,333,18281,35870,1720,1274,56091,41385,24670;_",
+					[1435711556] = "1126,333,18281,477,1345,3370,24936,5742,1720,57365,973,40412,968,23702;_",
+					[1436315613] = "1126,333,5214,13067,1822,28306,59905,46307,348,20030,186,4106;_",
+					[1435886251] = "1126,333,18281,1822,34048,1720,52443,46307,348,24322;_",
+					[1436316122] = "1126,333,5214,13067,90033,7183,39124,348,10500,13822;_",
+					[1436321946] = "1126,333,18281,1822,35768,56412,953,973,1288,39124,968,23702;_",
+					[1435885809] = "1126,333,18281,1822,34048,1720,52443,46307,24670;_",
+					[1436317790] = "1126,333,18047,234,30128,59905,46307,968,9880,13822;_",
+					[1435708999] = "1126,333,115497,13136;_",
+					[1436317023] = "1126,333,5214,13067,90033,4922,2261,39124,968,9880,6394,7428;_",
+					[1436319967] = "1126,333,5214,13067,1822,88211,7183,39124,24670;_",
+					[1435881973] = "469,657,333,5214,13067,477,94478,973,1288,2567,36557,17242,7428;_",
+					[1435711946] = "1126,333,18281,1822,3370,23506,1430,5742,1720,57365,41385,968,8394,7880,3720,3708;_",
+					[1435710542] = "1126,333,18281,477,1345,34048,1720,52443,46307,348,24322;_",
+					[1436316582] = "1126,333,5214,13067,1822,85336,2875,7183,39124,348,24322;_",
+					[1435716684] = "1126,333,18281,477,1345,3370,24936,7462,52443,46307,348,24322;_",
+					[1435715471] = "1126,333,18281,477,4715,30678,1720,52443,46307,348,10500,13822;_",
+					[1435709069] = "1126,333,40176,13975,1720,56412,953,40827,11406,10168,3,76;_",
+					[1436321892] = "1126,333,18281,1822,35768,56412,953,973,1288,39124,968,23702;_",
+					[1436321829] = "1126,333,18281,1822,35768,28943,23500,4922,973,1288,39124,21095,3575;_",
+					[1435883708] = "469,657,333,18281,35870,1720,1274,56091,973,40412,968,23702;_",
+					[1436320358] = "1126,333,5214,13067,1822,88211,4922,2261,39124,24670;_",
+					[1436317161] = "1126,333,5214,13067,90033,7183,39124,10751,97,13822;_",
+					[1435883841] = "469,657,333,18281,35870,1720,1274,27669,28422,213,760,40412,968,16274,3774,3,3651;_",
+					[1436322026] = "1126,333,18281,477,1345,35768,56412,953,2261,39124,968,9783,13919;_",
+					[1435881922] = "469,305,352,333,5214,13067,477,11667,73925,8886,852,121,1288,39124,968,19826,222,3,3651;_",
+					[1435885230] = "1126,333,5214,13067,1822,34048,54163,46307,348,24322;_",
+					[1435882439] = "1126,333,5214,13067,1822,37042,58352,39124,348,24322;_",
+					[1436316973] = "1126,333,5214,13067,66533,23500,4922,2261,39124,10848,6394,7428;_",
+					[1435709405] = "1126,333,18281,477,1345,34048,1720,56412,953,973,61374,133;_",
+					[1436321815] = "1126,333,18281,1822,35768,20159,32284,4922,973,1288,39124,968,16274,7428;_",
+					[1436320110] = "1126,333,5214,13067,1822,88211,4922,973,1288,27639,11485,968,20127,3575;_",
+					[1436317746] = "1126,333,18047,234,30128,36405,23500,4922,41385,968,9783,97,6394,7428;_",
+					[1436321121] = "469,657,333,18281,37590,52443,7183,39124,348,24322;_",
+					[1436317474] = "1126,333,5214,13067,1822,88211,4922,2261,39124,17242,7428;_",
+					[1435711518] = "1126,333,18281,1822,28306,5742,1720,57365,973,40412,968,16274,7428;_",
+					[1436320147] = "1126,333,5214,13067,1822,88211,4922,2261,39124,968,23702;_",
+					[1436317856] = "1126,333,18047,234,30128,59905,4922,973,40412,968,9880,6394,7428;_",
+					[1435711837] = "1126,333,18281,1822,3370,24936,5742,1720,98750,24670;_",
+					[1435885690] = "1126,333,5214,13067,1822,34048,54163,46307,24670;_",
+					[1435711711] = "1126,333,18281,477,1345,3370,24936,5742,1720,57365,41385,24670;_",
+					[1435709048] = "1126,333,54151,1720,28943,0,27469,953,40827,800,726,9783,97;_",
+					[1435709277] = "1126,18614,35870,1720,3986,52426,953,973,41380,9880,6394,3774,3;_",
+					[1436317415] = "1126,333,5214,13067,57749,32284,4922,973,1288,39124,10848,13822;_",
+					[1436317689] = "1126,333,18047,234,28698,1430,59905,4922,973,40412,10848,6394,7428;_",
+					[1435711397] = "1126,333,18281,1822,28306,5742,1720,57365,973,40412,17242,3720,133,3575;_",
+					[1435884749] = "469,657,333,5214,13067,12144,23726,50199,3964,5774,40533,348,20446,301,3575;_",
+					[1436323062] = "469,657,333,5214,13067,94002,3214,39124,348,24322;_",
+					[1435883663] = "469,657,333,18281,37590,98750,24670;_",
+					[1435711925] = "774,352,333,18281,1822,3370,24936,5742,1720,57365,41385,17242,7428;_",
+					[1436317647] = "1126,333,18047,234,30128,59905,4922,29900,11485,968,9880,6394,7428;_",
+					[1435709686] = "1126,333,18281,1822,34048,1720,56412,42338,348,24322;_",
+					[1435709226] = "1126,333,18281,35870,1720,56412,953,52233;_",
+					[1436320264] = "774,352,333,5214,13067,1822,64711,0,23500,4922,2261,39124,968,9783,13919;_",
+					[1435881888] = "469,657,333,5214,13067,477,94478,2261,2567,36557,17242,3774,3,3651;_",
+					[1436321598] = "469,657,333,18281,477,37113,52443,4922,2261,27639,11485,968,9783,6491,7428;_",
+					[1436317568] = "774,352,333,18047,234,28698,1430,27621,78591,4518,1,6329;_",
+					[1436317632] = "1126,333,18047,234,30128,59905,4922,973,40412,968,9783,97,13822;_",
+					[1435886929] = "1126,333,18281,1822,34048,1720,52443,46307,348,24322;_",
+					[1435887965] = "1126,333,5214,13067,477,11667,73925,3964,4922,852,121,1288,39124,968,9783,97,6394,3552,3876;_",
+					[1436317760] = "1126,333,18047,234,30128,59905,4922,973,40412,968,9880,6394,7428;_",
+					[1435715156] = "469,657,333,18281,5192,24936,7462,98750,348,24322;_",
+					[1435709358] = "1126,333,18281,477,35393,1720,57365,52233;_",
+					[1435712040] = "1126,333,18281,1822,3370,24936,5742,1720,57365,41385,968,23702;_",
+					[1436317310] = "1126,333,5214,13067,90033,4922,973,1288,39124,10848,6394,7428;_",
+					[1436321793] = "469,657,333,18281,37590,52443,4922,2261,39124,17242,3853,3575;_",
+					[1436321984] = "1126,333,18281,477,1345,35768,49568,6844,953,973,1288,39124,968,23702;_",
+					[1436321858] = "1126,333,18281,1822,35768,52443,4922,2261,39124,17242,3853,3575;_",
+					[1435883800] = "469,657,333,18281,35870,1720,1274,56091,973,40412,968,16274,7428;_",
+					[1435709163] = "1126,333,54151,1720,56412,953,40827,1526,9880;_",
+					[1436317892] = "1126,333,18047,234,30128,59905,4922,41385,10848,13822;_",
+					[1435883738] = "469,657,333,18281,35870,1720,1274,56091,29900,11485,968,9783,13919;_",
+					[1435887642] = "1126,333,5214,13067,477,708,34685,54163,46307,348,10500,13822;_",
+					[1436319171] = "1126,333,5214,13067,1822,88211,4922,973,1288,39124,348,16894,7428;_",
+					[1435709305] = "1126,18614,35870,1720,3986,44493,7933,43306,9880;_",
+					[1436322570] = "1126,333,5214,13067,1822,10322,73925,7933,1805,1409,39124,348,20446,301,3575;_",
+					[1435888541] = "469,657,333,18047,234,1185,44223,44625,7183,39124,348,24322;_",
+					[1435711666] = "774,352,333,7477,10804,477,1345,3370,23572,1364,5742,1720,28943,28422,973,40412,242,17000,3853,3575;_",
+					[1435711603] = "1126,333,18281,477,1345,3370,24936,5742,1720,28943,28422,41385,10751,13919;_",
+					[1435713135] = "469,657,333,18758,4715,30678,1720,56412,41780,558,348,24322;_",
+					[1435885725] = "774,352,333,5214,13067,1822,34048,54163,4922,41385,968,23702;_",
+					[1435713586] = "469,657,333,18281,477,4715,24936,5742,1720,98750,348,24322;_",
+					[1435710953] = "1126,333,18281,1822,34048,1720,56412,42338,348,24322;_",
+					[1435715890] = "1126,333,18047,234,477,4715,6952,77889,5774,1409,39124,348,10500,13822;_",
+					[1436320200] = "1126,333,5214,13067,1822,20073,68138,4922,2261,39124,968,9783,13919;_",
+					[1436321930] = "1126,333,18281,1822,20073,6803,8892,56412,1926,1288,39124,968,8394,15308;_",
+					[1436321994] = "1126,333,18281,477,1345,35768,37356,19056,953,973,1288,39124,968,16274,7428;_",
+					[1435889054] = "774,352,333,18281,477,708,10959,25446,48479,3964,5774,1409,39124,348,10500,8511,1435,301,3575;_",
+					[1435712630] = "469,657,333,18281,477,4715,6952,23726,1720,52443,5774,40533,348,24322;_",
+					[1436317257] = "1126,333,5214,13067,90033,4922,973,1288,39124,968,9880,6394,7428;_",
+					[1435709110] = "1126,333,30425,23726,1720,48479,7933,953,852,121,39854,1526,9783,97,6394;_",
+					[1435886565] = "1126,333,18281,477,1345,10322,25446,48479,3964,5774,1409,39124,348,20446,301,3575;_",
+					[1435883685] = "469,657,333,18281,35870,1720,1274,60919,36557,24670;_",
+					[1435883170] = "469,657,333,18281,12144,25446,1274,47205,9738,1409,39124,348,20446,3876;_",
+					[1435714618] = "469,657,333,18047,234,5192,30678,54163,46307,348,24322;_",
+					[1436318442] = "1126,333,5214,13067,90033,7183,39472,10500,13822;_",
+					[1435887329] = "1459,18281,477,35393,1720,52443,46307,348,10500,260,13562;_",
+					[1436320227] = "1126,333,5214,13067,1822,10322,73925,3964,4922,852,121,1288,39124,968,19826,3876;_",
+					[1435712121] = "1126,333,18281,1822,3370,24936,5742,1720,57365,41385,968,16274,7428;_",
+					[1435712141] = "1126,333,18281,1822,3370,24936,5742,1720,57365,973,40412,968,19994,133,3575;_",
+					[1435888291] = "1126,333,5214,13067,35870,54163,46307,348,10500,8511,5311;_",
+					[1435711361] = "1126,333,18281,1822,28306,5742,1720,57365,973,40412,17242,3720,3708;_",
+					[1436314839] = "1126,333,5214,680,12387,1822,28306,59905,46307,348,20030,186,4106;_",
+				},
+				["US:Sisters of Elune:Sorgon"] = {
+					[1435711934] = "1126,333,18281,1822,3370,23331,959,1199,3142,0,2047,1720,15638,13305,27469,1109,40926,307,238,588,1390,5747,16702;_",
+					[1436317204] = "139,987,333,5214,13067,14737,0,13786,959,4143,198,0,1670,17735,4521,46,32238,3969,1109,40926,307,2216,5747,2881,13684,137;_",
+					[1436321815] = "1126,333,18281,1822,26701,959,1199,2944,198,0,3767,15638,4521,32284,5078,2105,39128,2216,5747,13009,3693;_",
+					[1435711556] = "139,635,352,333,7477,10804,477,1345,3370,8831,714,0,13786,959,4143,198,0,1394,2373,15638,4567,3721,5017,27469,1109,2105,39128,238,0,588,1390,5747,16565,137;_",
+					[1436315613] = "139,635,352,333,5214,13067,1822,12915,7158,6628,5300,0,0,19405,23300,13505,3969,42035,307,2216,18756,119,3574;_",
+					[1436316122] = "139,635,352,333,5214,2263,10804,1822,26701,5300,0,0,19405,4521,8784,0,23500,7183,10264,28864,2216,22449;_",
+					[1436321946] = "774,0,352,333,7477,10804,1822,12201,14500,959,1199,3142,0,1670,2097,15638,29374,11400,1109,2105,38821,0,307,2216,5747,16702;_",
+					[1436317790] = "1126,333,5214,13067,1822,12915,13786,1605,3497,198,0,19405,13305,23500,46311,2216,18756,3693;_",
+					[1435708999] = "139,987,5547,13067,28523,959,4143,198,1670,377,5706,11652,4521,46,3721,75654,1390,8628,13821;_",
+					[1436317856] = "1126,333,5214,13067,1822,26701,959,646,553,2944,198,0,19405,4567,32238,5078,41233,2216,5747,16702;_",
+					[1436319967] = "139,987,333,5214,13067,21895,6628,5300,0,19405,4521,32284,7183,39128,2216,8628,13821;_",
+					[1435711946] = "774,352,333,18281,1822,3370,9545,0,13786,959,4143,198,0,1394,653,1720,15638,4567,3606,115,5017,27469,1109,41233,238,588,1390,5747,13009,3556,137;_",
+					[1435710542] = "139,987,333,18281,477,1345,12915,13786,5300,0,2047,1720,15638,13305,23500,47137,1390,22449;_",
+					[1436316582] = "17,122,635,352,333,5214,13067,1822,20073,0,6628,5300,0,19405,4521,29409,2875,7183,31440,3722,3659,307,826,0,1390,22449;_",
+					[1435716684] = "139,635,0,352,333,18281,477,1345,3370,9545,0,7158,6628,5300,0,2047,1720,15638,13305,23500,46311,238,588,1390,18875,3574;_",
+					[1435715471] = "139,330,305,352,333,18281,477,4715,8831,714,0,0,13786,5300,3767,15638,4521,8784,23500,7183,38821,307,826,0,1390,22449;_",
+					[1435709069] = "774,352,333,18281,28523,959,4143,198,2047,1720,15638,4521,46,3606,5132,27469,1109,40926,545,588,0,1390,5747,2881,13821;_",
+					[1436321892] = "139,987,333,18281,1822,12915,13786,959,4143,198,0,1670,2097,15638,4521,46,3721,32486,1109,2105,39128,2216,5747,13009,119,3437,137;_",
+					[1436321829] = "774,352,333,18281,1822,12915,13786,959,4143,198,0,1394,2373,15638,4521,46,8738,23500,5078,2105,39128,2216,5747,16565,137;_",
+					[1435712141] = "139,987,333,18281,1822,3370,9545,0,13786,959,646,3497,198,0,1670,2097,15638,4521,46,3721,33595,2105,39128,826,1390,5747,13009,3693;_",
+					[1436320358] = "774,0,352,18380,28757,5300,19405,13305,23500,3969,15255,26525,255,307,2216,8628;_",
+					[1436317415] = "1126,333,5214,13067,14737,13786,5102,198,0,19405,4521,46,32238,3969,1109,41233,2216,5747,2881,13684,137;_",
+					[1436322026] = "774,0,352,333,7477,10804,477,1345,12201,14500,5300,0,3767,15638,4521,24853,11400,1109,2105,38821,307,2216,5747,13128,3437,137;_",
+					[1436316973] = "1126,333,5214,13067,14737,13786,959,4143,198,0,1670,17735,4567,3606,115,5017,0,23500,3969,42342,2216,8628,10128,119,3437,137;_",
+					[1436318442] = "1126,333,5214,13067,1822,12915,13786,5300,0,1394,18011,13305,23500,7183,39128,2216,22449;_",
+					[1435709405] = "139,987,333,18281,477,1345,12915,0,13786,2158,3142,1394,653,1720,15638,4521,32284,5078,42059,0,1390,5747,16702;_",
+					[1436320110] = "139,987,333,5214,13067,28523,959,4143,198,0,19405,4521,46,8738,23500,5078,2105,39128,2216,5747,2881,10247,3437,137;_",
+					[1436317746] = "774,352,333,5214,13067,1822,12201,7872,6628,1605,3695,0,19405,4567,32238,5078,41233,2216,5747,13009,3693;_",
+					[1435711518] = "774,0,352,333,18281,1822,26701,959,1199,2944,198,0,3767,15638,40774,1109,2105,39128,826,1390,5747,7002,6126,3574;_",
+					[1435711837] = "1126,333,18281,1822,3370,23331,175,784,4143,198,0,2047,1720,15638,13305,27469,42342,826,1390,22449;_",
+					[1435711711] = "774,0,352,333,18281,477,1345,3370,23331,959,4143,198,0,3767,15638,40774,3214,38821,307,826,1390,5747,16702;_",
+					[1436317689] = "774,352,333,5214,2263,10804,1822,12201,714,13786,175,66,718,646,553,3142,0,19405,8288,28517,5078,40926,307,2216,5747,16702;_",
+					[1435711397] = "139,635,352,333,5481,1996,10804,1822,12915,0,0,7158,6628,241,718,1199,2944,198,0,1394,276,2097,15638,4521,46,8738,0,27469,1109,2105,38821,307,238,0,0,588,1390,5747,16702;_",
+					[1436323062] = "17,122,330,305,352,333,5214,2263,10804,14023,714,13786,241,5059,0,19405,4521,8784,27469,3214,35162,3659,307,2216,22449;_",
+					[1435709226] = "774,352,333,18281,28523,959,4341,1190,2577,15638,13305,0,23500,3969,42035,545,0,588,0,1390,5747,16702;_",
+					[1436321598] = "469,657,333,7477,10804,477,28046,959,1199,3142,0,1394,2373,15638,8288,28517,3969,288,821,41233,2216,5747,13128,3574;_",
+					[1436317568] = "1126,333,5214,13067,1822,12915,13786,1605,553,2944,198,0,19405,36805,46311,2216,22449;_",
+					[1436317632] = "774,352,333,5214,2263,0,10804,1822,20073,6628,241,1364,553,2944,198,0,1394,18011,4567,8738,23500,5078,40926,0,307,2216,5747,16702;_",
+					[1436317760] = "774,352,333,5214,13067,1822,20073,6628,1605,553,2944,198,0,19405,4567,8738,23500,5078,41233,238,1978,5747,13009,3693;_",
+					[1435709358] = "1126,333,18281,477,14260,0,13786,959,1199,2944,198,1394,653,1720,15638,13305,23500,46549,588,0,1390,8628,13821;_",
+					[1435712040] = "1126,333,18281,1822,3370,9545,0,13786,959,1199,2944,198,0,2047,1720,15638,40774,1109,41233,826,1390,5747,16702;_",
+					[1436317310] = "139,635,0,352,333,5214,2263,10804,28523,241,0,718,4143,198,0,19405,4521,8784,23500,3969,1109,40926,307,2216,5747,2881,10247,3437,137;_",
+					[1436321793] = "139,330,657,333,18281,14737,13786,5102,198,0,3767,15638,4521,32284,7183,39128,2216,18756,119,3574;_",
+					[1436321984] = "139,987,333,18281,477,1345,26701,5300,0,3767,15638,4521,46,3606,115,25642,6844,3214,39128,2216,5747,13128,3437,137;_",
+					[1436321858] = "17,122,635,352,333,7477,10804,1822,20073,0,6628,959,4143,198,0,3767,15638,13305,16069,7431,5078,2105,35162,3966,2216,5747,16702;_",
+					[1435709163] = "774,352,333,18281,14737,0,0,7158,6628,2158,2944,198,1394,653,1720,15638,13305,0,23500,5078,41471,588,0,1390,5747,2881,10128,3693;_",
+					[1436317892] = "774,352,333,5214,13067,1822,26701,959,646,3695,0,19405,13305,0,9995,13505,46311,2216,22449;_",
+					[1435715156] = "139,330,305,352,333,7477,10804,5192,9545,13786,1605,3695,0,3767,15638,4521,8784,69504,307,826,1390;_",
+					[1436321121] = "139,330,657,333,18281,14737,0,0,7158,6628,959,4341,0,3767,15638,4521,8784,23500,3969,38376,3966,238,1978,22449;_",
+					[1436319171] = "1126,333,5214,13067,14737,7158,6628,5300,0,19405,13305,23500,7183,39128,2216,8628,10247,3574;_",
+					[1436314839] = "139,635,0,352,333,5214,680,1583,10804,1822,12201,0,714,0,13786,241,5059,0,0,19405,4521,8784,23500,3969,42342,2216,22449;_",
+					[1436320147] = "17,757,0,352,333,5214,13067,14737,7158,6118,510,959,1199,3142,0,19405,36805,5078,2105,39128,2216,8628,10128,3693;_",
+					[1436322570] = "17,122,635,352,333,5214,2263,10804,1822,12915,13786,241,5059,0,19405,13305,27469,3214,35162,3659,2523,22449;_",
+					[1435711666] = "1126,333,18281,477,1345,3370,23331,2158,3142,0,3767,15638,40774,1109,2105,39128,826,1390,5747,16702;_",
+					[1435711603] = "774,352,333,18281,477,1345,3370,9545,13786,959,1199,2944,198,0,3767,15638,13305,27469,1109,2105,39128,238,588,1390,5747,13128,3574;_",
+					[1435713135] = "469,657,333,18758,4715,9545,13786,959,4341,1394,653,1720,15638,13305,27469,41780,562,826,0,1390,18756,3693;_",
+					[1436321930] = "139,635,352,333,18281,1822,12915,13276,510,959,4143,198,0,3767,15638,4521,46,36207,1109,2105,38821,307,2216,5747,13009,3556,137;_",
+					[1436320200] = "139,635,352,333,5214,13067,14023,14500,959,4341,0,1670,17735,4521,46,8738,23500,5078,2105,38821,307,2216,5747,2881,13684,137;_",
+					[1436320264] = "774,352,333,5214,13067,14737,7158,6628,959,1199,3142,0,19405,8173,28632,5078,2105,39128,2216,5747,2881,10247,3574;_",
+					[1435709305] = "774,352,18614,28523,959,1199,3142,3767,3986,11652,13305,23500,3969,1109,41471,0,588,0,1390,5747,2881,13821;_",
+					[1435709686] = "1126,333,5894,12387,1822,12915,0,0,13786,959,4341,2047,1720,15638,13305,23500,47137,0,1390,22449;_",
+					[1435712630] = "139,330,657,333,18281,477,4715,9545,13786,5300,0,3767,15638,4521,8784,23500,7183,39128,826,1390,18875,3574;_",
+					[1436321994] = "139,635,352,333,7477,10804,477,1345,26191,510,175,66,718,1199,3142,0,3767,15638,4521,8784,27469,1109,2105,39128,238,1978,5747,16702;_",
+					[1435711925] = "774,352,333,18281,1822,3370,23331,959,1199,2944,198,0,1670,377,1720,15638,4567,8738,27469,1109,40926,307,238,588,1390,5747,16565,137;_",
+					[1435715890] = "1126,333,18047,234,477,4715,9545,0,0,13786,5300,19405,13305,23500,7183,39128,826,1390,8628,13821;_",
+					[1436317023] = "139,635,352,333,5214,13067,21895,6628,959,646,3695,0,19405,4521,8784,0,23500,5078,40926,307,238,1978,5747,2881,13821;_",
+					[1435709110] = "1126,333,18281,14737,13786,2158,3142,2047,1720,15638,4567,32238,5078,41471,588,0,1390,5747,2881,13821;_",
+					[1435709277] = "774,352,18614,14737,0,13786,959,1199,3142,2047,1720,3986,11652,13305,23500,46004,1133,0,1390,8628,10247,3574;_",
+					[1436317161] = "1126,333,5214,13067,14737,13786,959,646,553,2944,198,0,19405,4521,8784,0,23500,5078,41233,2216,5747,2881,10128,3693;_",
+					[1435709048] = "1126,333,18281,14737,0,13786,2158,3142,2047,1720,15638,40774,1109,41471,588,0,1390,5747,2881,13821;_",
+					[1435714618] = "139,330,305,352,333,18047,234,5192,9545,13786,5300,0,2047,17358,4521,32284,46004,307,826,1390,18756,119,3574;_",
+					[1436317647] = "139,987,333,5214,13067,1822,20073,6628,959,646,3497,198,0,1670,17735,4567,32238,5078,40926,307,2216,5747,16702;_",
+					[1436317257] = "139,635,352,333,5214,13067,14737,0,13786,959,1199,2944,198,0,19405,13305,23500,3969,1109,40926,307,238,1978,5747,2881,13821;_",
+					[1435713586] = "469,657,333,18281,477,4715,9545,0,0,13786,959,646,3695,2047,1720,15638,83116,826,0,1390,22449;_",
+					[1435712121] = "1126,333,18281,1822,3370,23331,959,4341,0,2047,1720,15638,13305,27469,1109,41233,238,588,1390,5747,16702;_",
+					[1436320227] = "139,635,0,352,333,5214,2263,10804,14737,13786,241,1917,2944,198,0,19405,4521,8784,23500,5078,2105,39128,238,1978,5747,2881,10128,3693;_",
+					[1436317474] = "1126,333,5214,13067,1822,12915,13786,5102,198,0,19405,4521,32284,3969,42342,2216,22449;_",
+					[1435711361] = "139,635,352,333,18281,1822,12915,0,13786,959,4143,198,0,1670,2097,15638,4521,46,3721,5017,0,2411,25058,3214,39128,826,1390,18756,119,3437,137;_",
+					[1435710953] = "139,987,333,18281,1822,12915,0,13786,5300,0,2047,1720,15638,40774,42342,826,1390,22449;_",
+				},
+				["US:Sisters of Elune:Silverstone"] = {
+					[1435711556] = "1126,333,18281,477,1345,3370,30678,1720,28943,27469,2525,6731,19249,13832,24671;_",
+					[1435711946] = "1126,333,18281,1822,3370,23506,7172,1720,22353,34059,2525,6731,19249,13832,24671;_",
+					[1435715471] = "469,657,333,18281,477,4715,32398,52443,3969,9256,19249,13832,347,24324;_",
+					[1435716684] = "1126,333,18281,477,1345,3370,32398,52443,3969,9256,19249,13832,347,19031,5293;_",
+					[1435715156] = "469,657,333,18281,5192,24936,7462,65668,19249,13832,347,24324;_",
+					[1435709686] = "1126,333,5894,12387,1822,34048,1720,52443,6241,6984,19249,13832,347,24324;_",
+					[1435709048] = "1126,333,18281,35870,1720,28943,27469,2272,6984,19249,24681,13822;_",
+					[1435709277] = "1126,18614,35870,1720,3986,24957,23500,13225,19249,24681,6394,7428;_",
+					[1435709226] = "1126,333,18281,35870,1720,52443,13225,19249,15363,9318,13822;_",
+					[1435711518] = "1126,333,18281,1822,34048,1720,56412,9256,19249,13832,24671;_",
+					[1435711837] = "1126,333,18281,1822,3370,30678,1720,56412,9256,19249,13832,24671;_",
+					[1435709305] = "1126,18614,35870,1720,3986,48457,13225,19249,24681,13822;_",
+					[1435711361] = "1126,333,18281,1822,34048,1720,56412,9256,19249,13832,24671;_",
+					[1435712121] = "1126,333,18281,1822,3370,23506,0,7172,1720,56412,2525,6731,19249,13832,24671;_",
+					[1435714618] = "469,657,333,18047,234,5192,30678,54163,6494,6731,19249,13832,347,24324;_",
+					[1435709069] = "1126,333,10583,7698,35870,1720,22353,34059,2272,6984,19249,24625,56,6394,7428;_",
+					[1435712141] = "1126,333,18281,1822,3370,30678,1720,56412,2525,6731,19249,13832,24671;_",
+					[1435711397] = "1126,333,18281,1822,34048,1720,56412,2525,6731,19249,13832,24671;_",
+					[1435711925] = "1126,333,18281,1822,3370,23506,7172,1720,56412,2525,6731,19249,13832,10793,6450,7428;_",
+					[1435708999] = "1126,5547,13067,35870,5706,61682,19249,24681,13822;_",
+					[1435715890] = "469,657,333,18047,234,477,4715,54751,30090,3969,2525,25980,13832,347,16896,7428;_",
+					[1435709163] = "1126,333,18281,35870,1720,52443,6241,6984,19249,24681,13822;_",
+					[1435709405] = "1126,333,18281,477,1345,34048,1720,52443,13225,19249,38503;_",
+					[1435711711] = "1126,333,18281,477,1345,3370,30678,1720,56412,9256,19249,13832,24671;_",
+					[1435709110] = "774,352,333,7477,10804,28764,7106,1720,28943,0,23500,6241,6984,19249,14075,10606,6394,7428;_",
+					[1435711603] = "1126,333,18281,477,1345,3370,30678,1720,22353,34059,2525,6731,19249,13832,24671;_",
+					[1435709358] = "1126,333,18281,477,35393,1720,52443,13225,19249,24681,13822;_",
+					[1435713586] = "469,657,333,18281,477,4715,24936,5742,1720,65668,19249,13832,347,24324;_",
+					[1435711934] = "1126,333,18281,1822,3370,30678,1720,28943,27469,2525,6731,19249,13832,10793,13878;_",
+					[1435710953] = "1126,333,18281,1822,35768,56412,3214,25291,13832,347,24324;_",
+					[1435712040] = "1126,333,18281,1822,3370,30678,1720,56412,2525,6731,19249,13832,24671;_",
+					[1435711666] = "1126,333,18281,477,1345,3370,30678,1720,56412,2525,6731,19249,13832,24671;_",
+					[1435712630] = "469,657,333,18281,477,4715,30678,1720,52443,13225,19249,13832,347,24324;_",
+					[1435713135] = "469,657,333,18758,4715,32398,56412,2525,6731,19249,13275,557,347;_",
+					[1435710542] = "1126,333,18281,477,1345,34048,1720,52443,32474,13832,347,24324;_",
+				},
+				["US:CenarionCircle:Magniy"] = {
+					[1435711556] = "1126,333,18156,125,477,1345,3370,30678,1720,20439,35973,42322,19392,5294;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0101C2AF81",
+					[1435711946] = "1126,333,18156,125,1822,3370,16703,13975,1720,20439,35973,42318,4,19392,5294;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0101C2AF81",
+					[1435715471] = "139,330,657,333,18281,477,4715,32398,20439,32004,7183,39108,359,24327;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0701C2AF81",
+					[1435716684] = "1126,333,18281,477,1345,3370,32398,20439,32004,7183,39108,359,24327;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0901C2AF81",
+					[1435715156] = "139,330,657,333,18281,5192,24936,7462,20439,78295,359,19033,5294;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0601C2AF81",
+					[1435709686] = "1126,333,5894,12387,1822,34048,1720,20439,32004,46291,359,19033,5294;Player-1169-06642069,Pet-0-1169-1464-103-59773-0101C2AF81",
+					[1435709048] = "1126,333,18156,125,35870,1720,20439,35973,42322,10864,13822;Player-1169-06642069,Pet-0-1169-1464-103-59773-0101C2AF81",
+					[1435709277] = "1126,18614,35870,1720,3986,16173,280,32004,46291,10864,8528,5294;Player-1169-06642069,Pet-0-1169-1464-103-59773-0101C2AF81",
+					[1435709226] = "1126,333,18281,35870,1720,20439,32004,17447,28844,10864,13822;Player-1169-06642069,Pet-0-1169-1464-103-59773-0101C2AF81",
+					[1435711518] = "1126,333,18156,125,1822,20073,13975,1720,20439,35973,42322,19392,5294;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0101C2AF81",
+					[1435711837] = "1126,333,18281,1822,3370,30678,1720,20439,35973,42322,19392,5294;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0101C2AF81",
+					[1435709305] = "1126,18614,35870,1720,3986,16453,32004,46291,10864,8528,5294;Player-1169-06642069,Pet-0-1169-1464-103-59773-0101C2AF81",
+					[1435711361] = "1126,333,18281,1822,34048,1720,20439,35973,13478,28844,19392,5294;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0101C2AF81",
+					[1435712121] = "139,635,352,333,18115,41,125,1822,3370,30025,653,1720,20439,8504,0,27469,42322,19392,5294;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0101C2AF81",
+					[1435714618] = "469,657,333,18047,234,5192,24936,27901,32004,46291,19392,5294;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0501C2AF81",
+					[1435709069] = "1126,333,18281,35870,1720,20439,35973,42322,10864,13822;Player-1169-06642069,Pet-0-1169-1464-103-59773-0101C2AF81",
+					[1435712141] = "1126,333,18156,125,1822,3370,30678,1720,20439,35973,42322,19392,5294;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0101C2AF81",
+					[1435711397] = "1126,333,18156,125,1822,34048,1720,20439,35973,42322,19392,1705,3589;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0101C2AF81",
+					[1435711925] = "1126,333,18281,1822,3370,16703,13975,1720,20439,4923,31050,42322,19392,5294;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0101C2AF81",
+					[1435708999] = "1126,5547,13067,35870,5706,16453,49451,28844,10864,13822;Player-1169-06642069,Pet-0-1169-1464-103-59773-0101C2AF81",
+					[1435715890] = "469,657,333,18047,234,477,4715,30678,22159,32004,46291,359,24327;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0801C2AF81",
+					[1435709163] = "1126,333,18281,35870,1720,20439,32004,46291,10864,13822;Player-1169-06642069,Pet-0-1169-1464-103-59773-0101C2AF81",
+					[1435709405] = "1126,333,18156,125,477,1345,34048,1720,20439,32004,46291,19392,5294;Player-1169-06642069,Pet-0-1169-1464-103-59773-0101C2AF81",
+					[1435711711] = "1126,333,18156,125,477,1345,3370,30678,1720,20439,35973,42318,4,19392,5294;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0101C2AF81",
+					[1435709110] = "774,352,333,18281,35870,1720,20439,4923,27081,46291,10864,13822;Player-1169-06642069,Pet-0-1169-1464-103-59773-0101C2AF81",
+					[1435711603] = "1126,333,18156,125,477,1345,3370,30678,1720,20439,35973,42322,19392,5294;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0101C2AF81",
+					[1435709358] = "1126,333,18281,477,35393,1720,20439,32004,17447,28844,10864,8528,5294;Player-1169-06642069,Pet-0-1169-1464-103-59773-0101C2AF81",
+					[1435713586] = "469,657,333,18281,477,4715,32398,20439,35973,3214,39108,359,19033,5294;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0401C2AF81",
+					[1435711934] = "1126,333,18281,1822,3370,16703,13975,1720,20159,280,4923,31050,42322,19392,5294;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0101C2AF81",
+					[1435710953] = "139,987,333,18281,1822,34048,1720,20159,280,35973,42322,19392,5294;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0101C2AF81",
+					[1435712040] = "1126,333,18156,125,1822,3370,30678,1720,20439,35973,42322,19392,5294;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0101C2AF81",
+					[1435711666] = "1126,333,18156,125,477,1345,3370,30678,1720,20439,35973,42322,19392,5294;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0101C2AF81",
+					[1435712630] = "469,657,333,18281,477,4715,30678,1720,20439,32004,46291,359,19033,5294;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0101C2AF81",
+					[1435713135] = "469,657,333,18281,477,4715,30678,1720,20439,32004,46291,359,19033,5294;Player-1169-06642069,Pet-0-3132-1448-2476-59773-0201C2AF81",
+					[1435710542] = "139,987,333,18281,477,1345,34048,1720,20159,280,32004,46291,19392,5294;Player-1169-06642069,Pet-0-1169-1464-103-59773-0101C2AF81",
+				},
+				["US:Sisters of Elune:Mavilerna"] = {
+					[1435883170] = "71,398,657,333,18281,33823,2047,1720,1274,97480,2216,18860,3590;_",
+					[1435881922] = "71,398,657,333,5214,6207,5619,1241,477,33346,63393,35162,3659,307,2216,18860,3587;_",
+					[1435883691] = "71,398,305,352,333,11421,6860,33823,1394,653,1720,1274,97173,307,2216,22450;_",
+					[1435884749] = "71,398,505,152,333,5214,6207,5619,1241,33823,2047,5685,48478,46311,2216,1063,17797,3590;_",
+					[1435883738] = "71,398,305,352,333,18281,33823,2047,1720,1274,27669,69811,2216,22450;_",
+					[1435887965] = "71,1055,333,5214,13067,477,33346,2047,54163,9750,36561,2216,8628,13819;_",
+					[1435886251] = "71,1055,333,18281,1822,32001,2047,1720,28943,23500,42345,3966,2216,22447;_",
+					[1435888291] = "71,703,352,333,5214,2263,10804,28764,5059,32710,23500,7183,38821,307,238,1978,8628,13819;_",
+					[1435883708] = "71,398,305,352,333,18281,33823,2047,1720,1274,27669,69811,238,1978,18860,3590;_",
+					[1435883685] = "71,398,305,352,333,18281,33823,2047,1720,1274,97173,307,2216,22450;_",
+					[1435885725] = "71,703,352,333,5214,13067,1822,26942,5059,2047,54163,46311,2216,18860,3587;_",
+					[1435888541] = "71,398,305,352,333,7477,10570,234,28698,5125,2047,5685,24978,23500,46004,307,238,1978,22447;_",
+					[1435882439] = "17,54,1055,333,5214,13067,1822,32001,2047,2994,2691,94789,2216,22447;_",
+					[1435883841] = "71,398,657,333,10833,588,5619,1241,33823,2047,1720,1274,56304,41176,2216,22450;_",
+					[1435883663] = "71,398,657,333,18281,33823,2047,1720,1274,97480,2216,22450;_",
+					[1435887642] = "71,1055,333,5214,13067,477,33346,2047,54163,46311,2216,8628,13819;_",
+					[1435889054] = "71,703,352,333,18281,477,30010,3336,2047,1720,3965,24978,23500,46004,307,238,1978,8628,10232,3587;_",
+					[1435885230] = "17,54,703,352,333,5214,2263,10804,1822,26876,66,5059,2047,9471,44692,46311,2216,18860,3587;_",
+					[1435883757] = "71,398,657,333,18281,33823,2047,1720,1274,97480,2216,22450;_",
+					[1435881888] = "17,54,398,657,333,5214,6207,6860,477,33346,63393,39128,2216,18860,3587;_",
+					[1435883800] = "71,398,657,333,18281,30487,3336,2047,1720,1274,27669,69811,2216,1063,21387;_",
+					[1435886565] = "71,1055,333,18281,477,1345,26876,5125,2047,1720,52443,46311,2216,18860,3587;_",
+					[1435886929] = "17,54,1055,333,18281,1822,32001,2047,1720,3965,3786,21192,23500,46311,238,1978,22447;_",
+					[1435887329] = "17,54,1055,333,18281,477,1345,32001,3767,3965,3786,21192,23500,7183,39128,2216,22447;_",
+					[1435881973] = "71,398,657,333,5214,5619,588,6860,477,30010,3336,63393,15448,23680,2216,11388,11059;_",
+					[1435885690] = "71,1055,333,5214,13067,1822,32001,2047,54163,46311,2216,1063,21384;_",
+					[1435885809] = "17,54,1055,333,11421,6860,1822,28665,3336,2047,1720,3965,48478,42345,3966,2216,18860,3587;_",
+				},
+				["US:Sisters of Elune:Daerlith"] = {
+					[1436317790] = "324,222,580,333,1186,4028,13067,1822,32255,19864,36092,7183,39108,19392,5292;_",
+					[1436321815] = "324,145,657,333,18281,28698,5379,3513,16351,2,36090,7183,39108,1110,18282,5292;_",
+					[1436320358] = "324,802,333,5214,13067,34077,19864,36092,7183,1516,37592,6493,4371,8528,5292;_",
+					[1436320110] = "324,802,333,5214,13067,34077,19864,36092,7183,1516,37592,3611,2882,4371,276,8252,1611,3,102,3576,3545;_",
+					[1436317310] = "324,802,333,5214,13067,34077,19864,36092,7183,39108,6493,4371,8528,5292,3545;_",
+					[1436315613] = "324,802,333,5214,13067,1822,88211,3969,42322,359,19033,5292;Player-1169-06C144D6,Creature-0-3132-1448-32244-61029-00001C6FF0",
+					[1436317204] = "324,802,333,5214,13067,34077,19864,2,36090,7183,39108,3611,2882,4371,8528,5292;_",
+					[1436316582] = "324,222,580,333,1186,4028,13067,1822,85336,2875,7183,39108,359,19033,5292;_",
+					[1436317023] = "324,802,333,5214,47144,19864,36092,7183,39108,6493,4371,276,8252,5292;_",
+					[1436317161] = "324,222,580,333,1186,4028,13067,34077,19864,2,36090,7183,39108,10864,8528,5292;_",
+					[1436317689] = "324,802,333,5214,13067,1822,32255,19864,36092,7183,39108,3611,2882,4647,8252,5292;Player-1169-06C144D6,Creature-0-3132-1448-32244-61029-00001C780C",
+					[1436317760] = "324,450,352,333,5214,13067,1822,32255,55956,7183,39108,1110,18282,1611,3,3678;_",
+					[1436321793] = "324,145,657,333,18281,37590,16351,2,36090,7183,1516,37592,6493,12899,5292;_",
+					[1436316122] = "324,222,580,333,1186,4028,13067,1822,88211,7183,39108,359,19033,5292;_",
+					[1436321994] = "324,450,0,18732,234,477,1345,52119,2,40059,3214,1516,10525,27067,11123,8269;_",
+					[1436320147] = "324,802,333,5214,13067,34077,19864,36092,7183,1516,37592,6493,4371,8528,5292;_",
+					[1436316973] = "324,222,580,333,1186,4028,103100,7183,39108,19392,5292;_",
+					[1436321930] = "324,802,333,18281,1822,26191,685,8892,56412,3214,1516,37592,3611,15781,5292;_",
+					[1436318442] = "324,802,333,5214,13067,1822,26876,61335,7183,39108,359,19033,5292;_",
+					[1436317568] = "324,802,333,5214,13067,1822,88211,7183,39108,11140,8252,5292;_",
+					[1436322026] = "324,19182,234,477,1345,32255,19864,40061,3214,1516,10525,27067,3611,2882,4630,8269;_",
+					[1436323062] = "324,145,657,333,5214,13067,94002,3214,39108,359,10781,8252,5292;Player-1169-06C144D6,Creature-0-3132-1448-32244-61029-00001C8D09",
+					[1436321984] = "324,450,0,18732,234,477,1345,64711,0,20625,6844,3214,12041,27067,11123,8269;_",
+					[1436317647] = "324,802,333,5214,13067,1822,32255,19864,36092,7183,39108,3611,923,1,14857,5292,3545;_",
+					[1436317257] = "324,802,333,5214,13067,21895,12182,19864,2,12590,23500,7183,39108,6493,4371,276,8252,5292;_",
+					[1436321946] = "324,802,333,18281,1822,35768,16351,40061,3214,1516,37592,3611,15781,1716,3576;_",
+					[1436322570] = "324,802,333,5214,13067,1822,92180,3214,39108,359,10781,8252,5292;Player-1169-06C144D6,Creature-0-3132-1448-32244-61029-00001C8B1D",
+					[1436317474] = "324,222,580,333,1186,4028,13067,1822,88211,7183,39108,19392,5292;_",
+					[1436321892] = "324,802,333,18281,1822,32255,3513,16351,40061,3214,1516,24440,13152,3611,2882,4647,8252,5292;_",
+					[1436317856] = "324,802,333,5214,13067,1822,32255,19864,2,3806,8784,23500,7183,39108,19392,5292,3545;_",
+					[1436321598] = "324,145,657,333,18281,477,11399,22201,3513,16351,2,36090,7183,39108,3611,0,15781,5292;_",
+					[1436319967] = "324,222,580,333,1186,4028,13067,90033,7183,39108,10864,8528,5292;_",
+					[1436317415] = "324,802,333,5214,13067,53941,2,36090,7183,39108,10864,8528,5292;_",
+					[1436320227] = "324,802,333,5214,13067,28013,25928,2,12590,23500,7183,1516,37592,258,6235,4371,276,8252,5292;_",
+					[1436321829] = "324,802,333,18281,1822,32255,3513,16351,2,12590,23500,7183,1516,37592,6493,12899,5292;_",
+					[1436317632] = "324,802,333,5214,13067,1822,26876,0,5379,32456,23500,7183,39108,3611,15781,5292;_",
+					[1436320264] = "324,450,352,333,5214,13067,34077,19864,12592,23500,7183,39108,3611,7253,8528,5292;_",
+					[1436317746] = "324,450,352,333,5214,13067,1822,52121,12590,23500,7183,39108,1110,18282,5292;_",
+					[1436317892] = "324,222,580,333,1186,4028,13067,1822,88211,7183,39108,19392,5292;_",
+					[1436321121] = "324,145,77,580,333,1186,17095,37590,52443,7183,39108,359,19033,5292;_",
+					[1436319171] = "324,802,333,5214,13067,90033,7183,39108,359,10505,276,8252,1716,3576;_",
+					[1436321858] = "324,802,333,18281,1822,32255,3513,52443,7183,39108,19392,5292;_",
+					[1436320200] = "324,802,333,5214,13067,34077,19864,36092,7183,1516,37592,3611,2882,4371,8528,5292;_",
+					[1436314839] = "324,222,580,333,1186,4028,680,12387,1822,88211,3969,42322,359,19033,5292;_",
+				},
+				["US:Sisters of Elune:Azrena"] = {
+					[1435883691] = "469,657,333,18281,28013,7857,1720,1274,57064,27957,12455,968,16274,2117,1603,133,3575;_",
+					[1435711934] = "774,352,333,18281,1822,3370,30678,1720,28943,27469,953,28930,970,11485,968,18391,5311;_",
+					[1435883757] = "469,657,333,18281,28698,8892,1274,56091,2261,26669,12455,17242,2117,5311;_",
+					[1435711556] = "1126,333,18281,477,708,637,3370,6952,23726,1720,48479,7933,953,852,28078,12455,968,9783,6491,2117,1435,168,3708;_",
+					[1435886251] = "1126,333,18281,1185,637,35768,7818,44625,7183,26669,12455,348,19011,5311;_",
+					[1436321946] = "1126,333,18281,1185,637,35768,7818,48594,953,973,27957,12455,968,16274,7428;_",
+					[1435885809] = "1126,333,18281,1185,637,35768,7818,44625,4922,2261,26669,12455,17242,2117,1736,3575;_",
+					[1435708999] = "1126,333,115497,26669,12455,24670;_",
+					[1435881973] = "19506,234,66533,28422,2261,12041,14628,12455,11107,8252,1736,3573;_",
+					[1435711946] = "1126,333,18281,1822,3370,30678,1720,56412,1926,27957,12455,968,16274,2117,5311;_",
+					[1435710542] = "1126,333,18281,477,708,637,35768,7818,44625,7183,26669,12455,348,19011,5311;_",
+					[1435716684] = "1126,333,18281,477,1345,3370,6952,17984,7462,48479,3964,5774,28078,12455,348,20446,168,3708;_",
+					[1436321121] = "469,657,333,18281,1185,36405,52443,7183,26669,12455,348,24322;_",
+					[1435709069] = "1126,333,142166,12455,24670;_",
+					[1436321892] = "1126,333,18281,1185,637,35768,56412,953,28930,12455,968,16274,3853,3575;_",
+					[1436321829] = "1126,333,18281,1185,637,35768,7818,44625,3969,953,973,27957,12455,968,16274,7428;_",
+					[1435883708] = "469,657,333,18281,35870,1720,1274,56091,973,27957,12455,968,18391,1603,3708;_",
+					[1435883841] = "469,305,352,333,18281,1185,36405,1274,6544,21125,28422,213,760,1288,26669,12455,968,16274,2117,5311;_",
+					[1435881922] = "143625,12455,11107,8252,5309;_",
+					[1435882439] = "1126,333,5214,13067,1185,637,37042,6544,51808,26669,12455,348,19011,5309;_",
+					[1435709405] = "1126,333,18047,234,477,1345,28306,65800,1288,26669,970,11485,968,18391,5311;_",
+					[1435711518] = "1126,333,18281,1185,637,34048,1720,56412,953,28930,12455,17242,2117,5311;_",
+					[1435711837] = "1126,333,18281,1822,3370,30678,1720,56412,953,28930,12455,17242,2117,1603,3708;_",
+					[1435711711] = "1126,333,18281,477,1345,3370,30678,1720,56412,953,28930,12455,17242,2117,5311;_",
+					[1435711397] = "1126,333,18281,1822,34048,1720,56412,953,28930,12455,10751,8608,5311;_",
+					[1435883663] = "469,657,333,18281,35870,1720,1274,56091,28930,12455,17242,2117,1736,3575;_",
+					[1435709226] = "774,352,333,18047,234,66533,27469,3214,26669,12455,10848,8511,5311;_",
+					[1436323062] = "469,657,333,5214,13067,1185,44223,48594,3214,26669,12455,348,24322;_",
+					[1436321598] = "469,657,333,18281,477,708,36405,20159,24863,7421,4922,973,1288,26669,12455,968,16274,3720,3708;_",
+					[1436322026] = "1126,333,18281,477,708,637,35768,56412,953,973,27957,12455,968,23702;_",
+					[1435712141] = "1126,333,18281,1822,3370,30678,1720,56412,953,28930,12455,968,18391,5311;_",
+					[1435886929] = "1126,333,18281,1185,637,10322,23726,1720,7818,40661,3964,5774,28078,12455,348,19011,1435,3876;_",
+					[1436321815] = "1126,333,18281,1185,637,26876,8892,52443,3969,953,28930,12455,968,20127,3575;_",
+					[1435715156] = "469,657,333,18281,1185,4007,6952,17984,7462,7818,21125,19536,9738,28078,12455,348,16894,3552,301,3575;_",
+					[1435715471] = "469,657,333,18281,477,708,4007,6952,25446,7818,40661,3964,5774,1409,26669,12455,348,20446,3876;_",
+					[1435709358] = "1126,333,18047,234,477,66056,30683,26669,12455,10848,6394,2117,1603,3708;_",
+					[1435710953] = "1126,333,18281,1185,637,34048,1720,7818,48594,29883,12455,348,19011,5311;_",
+					[1435885690] = "1126,333,5214,13067,1822,88211,4922,2261,26669,12455,17242,2117,1603,133;_",
+					[1436321793] = "469,657,333,18281,1185,12838,23567,52443,3969,953,28930,12455,17242,3720,133,3575;_",
+					[1436321984] = "1126,333,18281,477,708,637,35768,7818,41750,6844,953,973,27957,12455,968,23702;_",
+					[1435883800] = "469,657,333,18281,28013,9577,1274,56091,2261,26669,12455,968,18391,1736,3575;_",
+					[1436321858] = "1126,333,18281,1185,637,35768,7818,44625,3969,953,28930,12455,968,19994,3708;_",
+					[1435709163] = "1126,333,18047,97450,26669,12455,10848,8511,5311;_",
+					[1435713586] = "469,657,333,18281,477,708,4007,32398,7818,48594,29883,12455,348,19011,5311;_",
+					[1435883738] = "469,657,333,18281,12144,23726,1720,1274,47205,8886,852,28078,12455,19359,1435,3876;_",
+					[1435887642] = "1126,333,5214,13067,477,708,10959,23726,9538,40661,3964,5774,28078,12455,348,10500,8511,1435,3876;_",
+					[1435709048] = "1126,333,115497,26669,12455,24670;_",
+					[1435711603] = "1126,333,18281,477,1345,3370,30678,1720,56412,953,28930,12455,968,9783,6491,2117,5311;_",
+					[1436322570] = "1126,333,5214,13067,1185,637,10322,33264,40661,7933,1805,28078,12455,348,20446,3876;_",
+					[1435888541] = "469,657,333,18047,234,1185,10959,23726,9538,40661,3964,5774,28078,12455,348,5974,13037,1435,168,3708;_",
+					[1435711666] = "1126,333,18281,477,1345,3370,23572,7106,1720,7818,21125,27469,953,973,27957,12455,968,8394,9997,5311;_",
+					[1435885725] = "774,352,333,5214,13067,1822,10322,54389,19536,3964,4922,973,1288,26669,970,11485,968,18391,1435;_",
+					[1435713135] = "469,990,18758,708,4007,6952,17984,7462,7818,40661,9738,1409,26669,12455,348,10759,8252,1435,3876;_",
+					[1435887965] = "1126,333,5214,13067,477,11667,73925,3964,4922,852,121,1288,26669,12455,242,726,9880,6394,2117,1435,3876;_",
+					[1435881888] = "66906,76719,12455,11107,8252,5309;_",
+					[1436321930] = "1126,333,18281,1185,637,26876,8892,7818,48594,953,973,27957,12455,968,16274,7428;_",
+					[1435715890] = "469,657,333,18047,234,477,708,4007,6952,33264,40661,3964,3969,1805,28078,12455,348,16894,3552,301;_",
+					[1435709686] = "1126,333,5894,12387,1185,637,28306,7462,7818,51808,26669,12455,348,19011,5311;_",
+					[1435712630] = "469,657,333,18281,477,708,4007,6952,23726,1720,48479,3964,5774,28078,12455,348,19011,1435,168,3708;_",
+					[1436321994] = "1126,333,18281,477,708,637,35768,7818,21125,27469,953,28930,12455,968,16274,7428;_",
+					[1435711925] = "774,352,333,18281,1822,3370,30678,1720,28943,27469,953,973,27957,12455,968,18391,5311;_",
+					[1435889054] = "1126,333,18281,477,708,10959,23726,1720,48479,3964,5774,28078,12455,348,10500,8511,1435,301,3575;_",
+					[1435709305] = "1126,18380,234,41576,52426,3214,26669,12455,968,9783,97,8511,5311;_",
+					[1435709110] = "1126,333,142166,12455,24670;_",
+					[1435886565] = "1126,333,18281,477,708,637,10322,16554,8892,7818,40661,3964,5774,1409,26669,12455,348,19011,1435,168,133,3575;_",
+					[1435883685] = "469,657,333,18281,28013,7857,1720,1274,56091,28930,12455,968,16274,2117,5311;_",
+					[1435883170] = "469,657,333,18281,1185,10959,23726,1720,1274,6544,40661,8886,852,28078,12455,348,16894,2117,1435,168,133,3575;_",
+					[1435714618] = "469,657,333,18047,234,1185,4007,6952,23726,9538,40661,3964,5774,28078,12455,348,19011,1435,168,133,3575;_",
+					[1435709277] = "1126,18380,234,41576,55640,26669,12455,9362,1486,8511,5311;_",
+					[1435887329] = "1459,18281,477,708,10959,23726,1720,7818,40661,3964,5774,28078,12455,348,10500,8511,1435,3876;_",
+					[1435712040] = "1126,333,18281,1822,3370,30678,1720,56412,953,28930,12455,10751,8608,5311;_",
+					[1435712121] = "1126,333,18281,1822,3370,30678,1720,28943,0,27469,953,973,27957,970,11485,968,9783,8608,1736,3575;_",
+					[1435884749] = "469,657,333,5214,13067,1185,10959,23726,9538,40661,3964,33852,12455,348,10164,4277,3090,1480,1435,3876,7478;_",
+					[1435888291] = "1126,333,5214,13067,1185,10959,73925,3964,5774,1409,26669,12455,348,10500,8511,1435,3876;_",
+					[1435711361] = "1126,333,18281,1185,637,34048,1720,7818,48594,1926,27957,12455,968,8394,7880,2117,5311;_",
+					[1435885230] = "1126,333,5214,13067,1185,637,10322,16554,7172,9538,40661,3964,33852,12455,348,19011,1435,168,133;_",
+				},
+				["US:Sisters of Elune:Lexib"] = {
+					[1436317790] = "71,1055,333,5214,13067,1822,20073,11928,19405,24373,12432,3969,42342,826,0,1390,22450;_",
+					[1436321815] = "71,1055,333,18047,234,1822,26876,66,24464,24373,12432,3969,42342,826,1390,22450;_",
+					[1436320358] = "71,1055,333,18047,234,53228,24373,12432,7183,39128,826,1390,2597,6031;_",
+					[1436320110] = "71,68,987,333,11421,6626,234,53228,4521,8784,0,11068,12432,7183,39128,238,588,1390,2597,6031;_",
+					[1436317310] = "71,68,987,333,5214,13067,21895,8592,3336,0,19405,13305,11068,12432,3969,42035,307,238,588,0,1390,8628,13822,6424;_",
+					[1436315613] = "71,68,987,333,5214,13067,1822,51406,13305,0,11068,12432,7183,39128,826,0,0,1390,13530,8920;_",
+					[1436317204] = "71,68,635,352,333,5214,13067,21895,6803,5125,0,19405,4521,8784,0,11068,12432,3969,42342,238,588,0,1390,8628,10125,3697;_",
+					[1436316582] = "71,703,352,333,5214,2263,10804,1822,12201,7872,6869,5059,0,19405,4521,19852,9557,2875,7183,38821,307,826,0,1390,13530,8920;_",
+					[1436317023] = "71,68,635,352,333,5214,13067,21895,11928,0,19405,4521,8784,11068,12432,7183,39128,238,588,0,1390,8628,13822;_",
+					[1436317161] = "71,1055,333,5214,13067,21895,11928,0,19405,13305,0,11068,12432,7183,39128,238,588,0,1390,8628,13822;_",
+					[1436317689] = "71,1055,333,5214,13067,1822,32001,19405,4521,19852,12432,3969,42342,826,0,1390,22450;_",
+					[1436317760] = "71,1055,333,5214,13067,1822,32001,19405,13305,11068,12432,3969,42342,238,588,0,1390,22450;_",
+					[1436321793] = "71,1055,333,18047,234,53228,24373,12432,3969,42342,826,1390,22450;_",
+					[1436316122] = "71,68,987,333,5214,13067,1822,51406,4521,8784,0,11068,12432,7183,39128,826,0,0,1390,13530,3609,5311;_",
+					[1436321994] = "71,703,352,333,7477,3944,6626,234,477,1345,51406,13305,11068,16401,8768,33574,826,1390,22450;_",
+					[1436320147] = "17,54,703,352,333,18047,234,21895,0,8592,22741,13305,0,11068,12432,7183,39128,826,1390,2597,6031;_",
+					[1436316973] = "71,1055,333,5214,13067,30487,3336,0,19405,13305,0,11068,12432,7183,39128,826,0,1390,8628,13822;_",
+					[1436321930] = "17,54,68,635,352,333,18047,234,1822,51406,4521,8784,11068,16401,42342,826,1390,22450;_",
+					[1436318442] = "71,68,987,333,5214,13067,1822,32001,19405,13305,0,11068,12432,3969,42342,826,0,1390,22450;_",
+					[1436317568] = "71,1055,333,5214,13067,1822,32001,0,19405,24373,12432,3969,43168,0,1390,22450,6424;_",
+					[1436322026] = "71,703,352,333,7477,3944,6626,234,477,1345,12201,7872,31333,4521,8784,0,11068,16401,42035,307,238,588,1390,22450;_",
+					[1436323062] = "17,54,398,657,333,5214,13067,53228,13305,0,11068,16401,42342,238,588,0,1390,22450;_",
+					[1436321984] = "71,68,987,333,18047,234,477,1345,51406,4521,8784,11068,9557,6844,42342,238,588,1390,22450;_",
+					[1436317647] = "71,1055,333,5214,13067,1822,20073,11928,19405,24373,12432,3969,43168,0,1390,22450;_",
+					[1436317257] = "71,1055,333,5214,13067,33823,0,19405,24373,12432,3969,42342,826,0,1390,8628,13822;_",
+					[1436321946] = "17,54,703,0,352,333,7477,10570,234,1822,20073,6869,6453,10124,7887,4521,8784,11068,16401,42035,307,826,1390,22450;_",
+					[1436322570] = "71,703,352,333,5214,2263,10804,1822,12201,14741,24464,13305,11068,16401,42342,826,0,1390,22450;_",
+					[1436317474] = "71,68,987,333,5214,13067,1822,20073,11928,0,19405,13305,11068,12432,3969,42342,826,0,1390,22450,6424;_",
+					[1436321892] = "71,703,352,333,11421,6626,234,1822,12201,7872,31333,24373,16401,8768,33267,307,238,588,1390,18753,3697;_",
+					[1436317856] = "71,1055,333,5214,6207,6860,1822,28665,3336,19405,24373,12432,3969,42342,826,0,1390,22450;_",
+					[1436321598] = "71,72897,24373,58743;_",
+					[1436319967] = "71,68,987,333,18047,234,53228,4521,8784,11068,12432,7183,39128,826,1390,2597,6031;_",
+					[1436317415] = "71,1055,333,5214,13067,21895,11928,0,19405,24373,12432,3969,42342,826,0,1390,8628,13822,6424;_",
+					[1436320227] = "71,68,987,333,7477,10570,234,53228,4521,8784,0,11068,12432,7183,39128,238,588,1390,2597,6031,10125;_",
+					[1436321829] = "71,703,352,333,11421,6626,234,1822,51406,13305,11068,12432,3969,42035,307,238,588,1390,18753,3697;_",
+					[1436317632] = "71,703,352,333,5214,13067,1822,20073,11928,19405,24373,12432,3969,42035,1133,0,1390,22450;_",
+					[1436320264] = "71,1055,333,18047,234,53228,13305,0,11068,12432,7183,5554,33574,238,588,1390,2597,6031;_",
+					[1436317746] = "71,703,352,333,5214,13067,1822,28665,3336,19405,13305,11068,12432,3969,42342,238,588,0,1390,22450;_",
+					[1436317892] = "71,1055,333,5214,13067,1822,32001,19405,13305,11068,12432,3969,42342,238,588,0,1390,22450;_",
+					[1436321121] = "71,398,305,352,333,7477,10804,14737,7158,6869,8826,15638,13305,0,11068,12432,7183,35162,3659,307,826,0,1390,2597,26277;_",
+					[1436319171] = "71,68,635,352,333,5214,2263,10804,1822,26942,24464,4521,8784,11068,12432,7183,38821,307,826,0,1390,17139,5311;_",
+					[1436321858] = "17,54,68,635,0,352,333,7477,10570,234,1822,26942,24464,4521,8784,0,11068,12432,3969,42035,307,238,588,1390,22450;_",
+					[1436320200] = "71,68,635,352,333,18047,234,14023,7872,31333,4521,8784,0,11068,12432,7183,39128,238,588,1390,2597,6031;_",
+					[1436314839] = "71,68,987,333,5214,680,12387,1822,51406,24373,12432,7183,39128,826,0,0,1390,22450,6424;_",
+				},
+				["US:Sisters of Elune:Augmek"] = {
+					[1435883691] = "469,657,333,18156,125,15339,18178,2353,1720,1274,19165,40925,37370,24686;Player-1169-06C16B6D,Pet-0-3018-1448-24772-17447-020207140F",
+					[1435711934] = "1126,333,18156,125,1822,3370,24936,3389,4073,20159,5203,36002,37370,24686;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0102071410",
+					[1436317204] = "1126,333,5214,12942,125,15339,42690,4923,27081,7183,1738,37370,10864,10107,137,3578;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0202071410",
+					[1435883757] = "469,657,333,3659,14497,125,28698,7172,1720,1274,19165,4923,36002,37370,17224,7462;Player-1169-06C16B6D,Pet-0-3018-1448-24772-17447-020207140F",
+					[1435711556] = "1126,333,18156,125,477,1345,3370,10147,14789,7462,20159,41205,37370,24686;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0102071410",
+					[1436315613] = "1126,333,5214,13067,1822,56207,32004,7183,1738,37370,359,24327;Player-1169-06C16B6D,Pet-0-1169-1116-36-54318-0102071410",
+					[1435886251] = "1126,333,18281,1822,34048,1720,20439,32004,8921,37370,359,24327;Player-1169-06C16B6D,Pet-0-3018-1448-24772-54318-2402071410",
+					[1436316122] = "1126,333,5214,13067,1822,56207,32004,7183,1738,37370,359,24327;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0102071410",
+					[1436321946] = "1126,333,18115,41,125,1822,35768,20439,35973,4952,37370,17224,3747,633,3082;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0602071410",
+					[1435885809] = "1126,333,18156,125,35870,1720,20439,32004,8921,37370,10864,6360,3779,3683;Player-1169-06C16B6D,Pet-0-3018-1448-24772-54318-2402071410",
+					[1436317790] = "1126,333,5214,13067,1822,56207,32004,3969,4952,37370,24686;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0202071410",
+					[1435708999] = "1126,5547,12942,125,35870,5706,16453,40925,48234,9223,4599;Player-1169-06C16B6D,Pet-0-1169-1464-103-54318-0102071410",
+					[1436317023] = "1126,333,3659,1555,12942,125,57749,280,32004,7183,1738,37370,10864,13822;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0202071410",
+					[1436319967] = "1126,333,5214,13067,1822,56207,32004,3969,4952,37370,24686;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0302071410",
+					[1435881973] = "469,657,333,5214,13067,477,57552,4923,3581,30683,1738,57457,916,3,102,3578;Player-1169-06C16B6D,Pet-0-1169-1464-148-54318-0102071410",
+					[1435711946] = "1126,333,18156,125,1822,3370,10147,14789,7462,61364,37370,24686;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0102071410",
+					[1435710542] = "1126,333,3659,14622,477,1345,34048,1720,52443,8921,8621,28749,359,14446,9003,878;Player-1169-06C16B6D,Pet-0-1169-1464-103-54318-0102071410",
+					[1436316582] = "1126,333,3659,1555,13067,1822,56207,29129,2875,7183,1738,37370,359,24327;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0202071410",
+					[1435716684] = "1126,333,3659,14622,477,1345,3370,24936,7462,20439,32004,8921,37370,359,20612,137,3578;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0802071410",
+					[1435715471] = "1126,333,3659,14622,477,4715,10147,22251,20439,32004,7183,1738,37370,359,10505,13822;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0602071410",
+					[1435709069] = "1126,333,18156,125,35870,1720,20439,4923,31050,4952,48234,9223,4599;Player-1169-06C16B6D,Pet-0-1169-1464-103-54318-0102071410",
+					[1436321892] = "1126,333,3659,14497,125,1822,35768,20439,35973,4952,37370,24686;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0602071410",
+					[1436321829] = "1126,333,3659,14622,1822,35768,20439,32004,3969,4952,37370,17224,3779,3,3680;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0602071410",
+					[1435883708] = "469,657,333,18281,35870,1720,1274,19165,4923,36002,37370,24686;Player-1169-06C16B6D,Pet-0-3018-1448-24772-17447-020207140F",
+					[1436320358] = "77769,78295;_",
+					[1436317161] = "1126,333,5214,12942,125,58029,32004,7183,1738,37370,10864,10139,3,3680;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0202071410",
+					[1435883841] = "469,657,333,18156,125,35870,1720,1274,19165,4923,3581,28635,3786,37370,20971,32,3,598,3082;Player-1169-06C16B6D,Pet-0-3018-1448-24772-17447-020207140F",
+					[1436322026] = "1126,333,18156,125,477,1345,31695,4073,20439,35973,3214,1738,58341,32,3,102,3578;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0602071410",
+					[1435881922] = "469,657,333,3659,1555,13067,477,57552,4923,3581,30683,1738,54594,2863,1517,3082;Player-1169-06C16B6D,Pet-0-1169-1464-148-54318-0102071410",
+					[1435885230] = "1126,333,5214,13067,35870,22159,32004,8921,37370,10864,13822;Player-1169-06C16B6D,Pet-0-3018-1448-24772-54318-2002071410",
+					[1435882439] = "1126,333,5214,13067,1822,34048,2994,19165,40925,37370,359,24327;Player-1169-06C16B6D,Pet-0-3018-1448-24772-17447-010207140F",
+					[1436316973] = "1126,333,5214,13067,58029,32004,7183,1738,37370,10864,13822;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0202071410",
+					[1435709405] = "1126,333,3659,14622,477,1345,13517,20531,1720,25362,27081,8921,57457,916,3,3680;Player-1169-06C16B6D,Pet-0-1169-1464-103-54318-0102071410",
+					[1436321815] = "1126,333,3659,14497,125,1822,35768,20439,32004,3969,4952,37370,20971,3715;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0602071410",
+					[1436320110] = "1126,333,5214,12942,125,1822,56207,8504,23500,3969,4952,37370,20971,32,3,3680;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0402071410",
+					[1436317746] = "1126,333,5214,12942,125,1822,56207,4923,27081,3969,4952,37370,21604,3082;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0202071410",
+					[1436321121] = "469,657,333,18281,15339,22251,20439,32004,3969,4952,37370,359,24327;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0502071410",
+					[1436317474] = "1126,333,3659,1555,13067,1822,56207,32004,7183,1738,37370,24686;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0202071410",
+					[1435711518] = "1126,333,18156,125,1822,20073,8233,7462,28943,32421,37370,17224,7462;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0102071410",
+					[1436320147] = "1126,333,5214,12942,125,1822,56207,4923,27081,3969,4952,37370,24686;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0402071410",
+					[1436317856] = "1126,333,5214,13067,1822,56207,4923,27081,3969,4952,37370,24686;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0202071410",
+					[1435711837] = "1126,333,18281,1822,3370,24936,7462,61364,37370,24686;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0102071410",
+					[1435885690] = "1126,333,3659,1555,13067,35870,22159,32004,8921,829,36541,10864,13822;Player-1169-06C16B6D,Pet-0-3018-1448-24772-54318-2402071410",
+					[1435711711] = "1126,333,18281,477,1345,3370,24936,7462,61364,37370,24686;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0102071410",
+					[1435709048] = "1126,333,18156,125,35870,1720,20439,8504,0,0,27469,4952,48234,9223,4599;Player-1169-06C16B6D,Pet-0-1169-1464-103-54318-0102071410",
+					[1435709277] = "1126,18614,15339,20531,1720,3986,21376,27081,8921,48234,9223,4599;Player-1169-06C16B6D,Pet-0-1169-1464-103-54318-0102071410",
+					[1436317415] = "1126,333,3659,1555,12942,125,58029,4923,27081,7183,1738,37370,10864,13822;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0202071410",
+					[1436317689] = "1126,333,5214,13067,1822,56207,4923,27081,3969,4952,37370,21108,3578;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0202071410",
+					[1435711397] = "1126,333,18281,1822,13517,14789,7462,20159,5203,36002,37370,24686;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0102071410",
+					[1435884749] = "469,657,333,3659,1555,13067,35870,22159,32004,8921,37370,359,24327;Player-1169-06C16B6D,Pet-0-3018-1448-24772-17447-030207140F",
+					[1436323062] = "469,657,333,5214,13067,58029,35973,4952,37370,359,24327;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0602071410",
+					[1435883663] = "469,657,333,18281,35870,1720,1274,19165,40925,37370,17224,3747,3715;Player-1169-06C16B6D,Pet-0-3018-1448-24772-17447-020207140F",
+					[1435711925] = "1126,333,18156,125,1822,3370,24936,3389,4073,20159,5203,36002,37370,17224,4380,3082;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0102071410",
+					[1436317647] = "1126,333,5214,12942,125,1822,56207,32004,3969,4952,37370,24686;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0202071410",
+					[1435709686] = "1126,333,3659,2235,12387,1822,13517,20531,1720,52443,8921,37370,359,23449,878;Player-1169-06C16B6D,Pet-0-1169-1464-103-54318-0102071410",
+					[1435709226] = "1126,333,18281,35870,1720,25362,27081,8921,228,48006,9223,4599;Player-1169-06C16B6D,Pet-0-1169-1464-103-54318-0102071410",
+					[1436320264] = "774,352,333,5214,12942,125,1822,55927,280,8504,0,23500,3969,4952,37370,24686;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0402071410",
+					[1435881888] = "469,657,333,3659,1555,12942,125,477,14862,42690,39187,1738,54594,2863,884,32,105,3578;Player-1169-06C16B6D,Pet-0-1169-1464-148-54318-0102071410",
+					[1436321598] = "469,657,333,18281,477,37113,20439,4923,27081,3969,4952,37370,21108,496,3082;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0502071410",
+					[1436317568] = "1126,333,5214,13067,1822,56207,32004,3969,4952,37370,24686;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0202071410",
+					[1436317632] = "1126,333,5214,12942,125,1822,56207,32004,3969,4952,37370,21604,3082;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0202071410",
+					[1435886929] = "1126,333,18281,1822,34048,1720,20439,32004,8921,37370,359,24327;Player-1169-06C16B6D,Pet-0-3018-1448-24772-54318-2A02071410",
+					[1435887965] = "1126,333,5214,12901,41,125,477,57552,4923,27081,7183,1738,37370,10864,10740,3082;Player-1169-06C16B6D,Pet-0-3018-1448-24772-54318-3302071410",
+					[1436317760] = "1126,333,5214,12942,125,1822,56207,32004,3969,4952,37370,17224,7462;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0202071410",
+					[1435715156] = "469,657,333,3659,14622,5192,32398,20439,32004,3969,4952,37370,359,24327;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0502071410",
+					[1435709358] = "1126,333,18156,125,477,14862,20531,1720,25362,3581,23500,8921,48234,9223,1021,3578;Player-1169-06C16B6D,Pet-0-1169-1464-103-54318-0102071410",
+					[1435712040] = "1126,333,3659,14497,125,1822,3370,10147,14789,7462,25362,36002,37370,17224,3779,105,3578;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0102071410",
+					[1436317310] = "1126,333,5214,12901,166,58029,32004,7183,1738,37370,10864,6360,7462;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0202071410",
+					[1436321793] = "469,657,333,3659,14456,166,37590,20439,32004,3969,4952,37370,17224,3747,32,3,102,3578;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0602071410",
+					[1436321984] = "1126,333,18281,477,1345,30193,5575,20439,29129,6844,3214,1738,37370,24686;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0602071410",
+					[1436321858] = "1126,333,3659,14497,125,1822,35768,20439,32004,3969,4952,37370,24686;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0602071410",
+					[1435883800] = "469,657,333,3659,14622,15339,20531,1720,1274,19165,4923,36002,37370,24686;Player-1169-06C16B6D,Pet-0-3018-1448-24772-17447-020207140F",
+					[1435709163] = "1126,333,18281,15339,20531,1720,25362,27081,8921,48234,6360,2863,4599;Player-1169-06C16B6D,Pet-0-1169-1464-103-54318-0102071410",
+					[1436317892] = "1126,333,5214,13067,1822,56207,32004,3969,4952,37370,24686;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0202071410",
+					[1435883738] = "469,657,333,3659,14497,125,35870,1720,1274,19165,40925,37370,24686;Player-1169-06C16B6D,Pet-0-3018-1448-24772-17447-020207140F",
+					[1435887642] = "1126,333,3659,1555,13067,477,35393,22159,8504,23500,8921,37370,359,10505,13822;Player-1169-06C16B6D,Pet-0-3018-1448-24772-54318-3102071410",
+					[1436319171] = "1126,333,3659,1555,12901,166,1822,56207,32004,7183,1738,37370,359,16865,3884,3578;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0302071410",
+					[1435709305] = "1126,18489,125,35870,1720,3986,48457,8921,48234,9223,884,3715;Player-1169-06C16B6D,Pet-0-1169-1464-103-54318-0102071410",
+					[1436322570] = "1126,333,5214,13067,1822,56207,35973,3214,1738,37729,16865,3779,3683;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0602071410",
+					[1435888541] = "469,657,333,18047,109,125,90033,7183,1738,37370,359,24327;Player-1169-06C16B6D,Pet-0-3018-1448-24772-54318-3702071410",
+					[1435711666] = "1126,333,18156,125,477,1345,3370,24936,7462,61364,37370,17224,7462;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0102071410",
+					[1435711603] = "1126,333,18281,477,1345,3370,10147,14789,7462,25362,36002,37370,20971,32,3,3680;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0102071410",
+					[1435713135] = "469,657,333,18156,602,4715,30678,1720,20439,35973,4952,36828,542,359,16865,3779,3683;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0302071410",
+					[1435885725] = "1126,333,5214,12942,125,35870,22159,4923,27081,8921,37370,10864,10244,3578;Player-1169-06C16B6D,Pet-0-3018-1448-24772-54318-2402071410",
+					[1435713586] = "469,657,333,3659,14622,477,4715,10147,22251,20439,35973,3214,1738,37370,359,24327;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0402071410",
+					[1435710953] = "1126,333,18281,1822,13517,20531,1720,56412,4952,37370,359,24327;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0102071410",
+					[1435715890] = "469,657,333,3659,14388,234,477,4715,10147,42690,32004,7183,1738,37370,359,20612,137,3578;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0702071410",
+					[1436320200] = "1126,333,5214,13067,1822,56207,4923,3581,23500,3969,4952,37370,20971,137,3578;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0402071410",
+					[1436321930] = "1126,333,3659,14622,1822,26876,8892,20439,35973,4952,37370,17224,3779,3,3680;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0602071410",
+					[1436321994] = "1126,333,18281,477,1345,26876,8892,20439,8504,27469,3214,1738,37370,24686;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0602071410",
+					[1435889054] = "1126,333,3659,14622,477,35393,1720,20439,32004,8921,37370,359,10505,13822;Player-1169-06C16B6D,Pet-0-3018-1448-24772-54318-3D02071410",
+					[1435712630] = "469,657,333,18115,41,125,477,4715,24936,7462,52443,8921,37370,359,16865,3747,32,3683;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0102071410",
+					[1436317257] = "139,987,333,5214,12942,125,15339,42690,32004,7183,1738,37370,10864,10244,496,3082;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0202071410",
+					[1435709110] = "1126,333,18156,125,15339,20531,1720,20439,32004,8921,48234,9223,1021,496,3082;Player-1169-06C16B6D,Pet-0-1169-1464-103-54318-0102071410",
+					[1435886565] = "1126,333,3659,14388,68,166,477,35393,22159,32004,8921,37370,359,10505,6360,3747,32,105,3578;Player-1169-06C16B6D,Pet-0-3018-1448-24772-54318-2702071410",
+					[1435883685] = "469,657,333,18156,125,15339,20531,1720,1274,19165,40925,37370,24686;Player-1169-06C16B6D,Pet-0-3018-1448-24772-17447-020207140F",
+					[1435883170] = "469,657,333,3659,14622,15339,20531,1720,1274,19165,40925,37370,359,16865,3747,137,3578;Player-1169-06C16B6D,Pet-0-3018-1448-24772-17447-020207140F",
+					[1435714618] = "469,657,333,18047,109,125,5192,52837,32004,3969,4952,37370,359,16865,3747,32,105,3578;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0502071410",
+					[1436318442] = "1126,333,5214,13067,1822,56207,32004,3969,4952,37370,359,24327;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0202071410",
+					[1435887329] = "1126,333,3659,14622,477,1345,34048,1720,20439,32004,8921,37370,359,24327;Player-1169-06C16B6D,Pet-0-3018-1448-24772-54318-2D02071410",
+					[1436320227] = "1126,333,5214,12901,166,1822,56207,32004,3969,4952,37370,21003,3,3680;Player-1169-06C16B6D,Pet-0-3132-1448-32244-54318-0402071410",
+					[1435712121] = "1126,333,18156,125,1822,3370,23506,1430,7462,61364,37370,21604,3082;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0102071410",
+					[1435712141] = "1126,333,18281,1822,3370,10147,14789,7462,25362,36002,37370,24686;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0102071410",
+					[1435888291] = "1126,333,5214,13067,58029,32004,7183,1738,37370,359,10505,8528,5294;Player-1169-06C16B6D,Pet-0-3018-1448-24772-54318-3402071410",
+					[1435711361] = "1126,333,3659,14497,125,1822,13517,14789,7462,61364,37370,17224,3884,3578;Player-1169-06C16B6D,Pet-0-3132-1448-2476-54318-0102071410",
+					[1436314839] = "1126,333,5214,680,12387,1822,13517,42690,32004,7183,1738,37370,359,24327;Player-1169-06C16B6D,Pet-0-1169-1116-36-54318-0102071410",
+				},
+				["US:Sisters of Elune:Milric"] = {
+					[1435883691] = "469,657,333,18281,34409,1461,1720,1274,38737,58729,19387,5288;_",
+					[1435711934] = "1126,333,18281,1822,3370,30678,1720,20159,8784,0,11068,16401,42328,24675;_",
+					[1436317204] = "774,352,333,5214,13067,30128,36405,11068,12432,46306,243,10606,13817;_",
+					[1435883757] = "469,657,333,18281,28698,7172,1720,1274,38737,58729,19387,5288;_",
+					[1435711556] = "1126,333,18281,477,1345,3370,32398,40011,16401,42328,24675;_",
+					[1436315613] = "1126,333,5214,13067,1822,32587,43192,12432,7183,39123,24666;_",
+					[1435886251] = "1126,333,18281,1822,32587,1461,1720,40011,12432,46297,24675;_",
+					[1436316122] = "1126,333,5214,13067,1822,75779,12432,3969,42337,24666;_",
+					[1436321946] = "1126,333,18281,1822,32587,3181,40011,16401,3214,39123,24666;_",
+					[1435885809] = "1126,333,18281,1822,34048,1720,40011,12432,46297,24675;_",
+					[1436317790] = "1126,333,5214,13067,1822,28306,47473,12432,46306,24666;_",
+					[1435708999] = "1126,5547,13067,35870,5706,24957,11068,69587;_",
+					[1436317023] = "1126,333,5214,13067,30128,27621,19852,12432,46306,10849,13817;_",
+					[1436319967] = "17,1109,333,5214,13067,1822,43519,32260,12432,7183,39123,24666;_",
+					[1435881973] = "469,657,333,5214,13067,477,66056,11068,19615,63789;_",
+					[1435711946] = "1126,333,18281,1822,3370,30678,1720,40011,16401,42328,3608,324,20743;_",
+					[1435710542] = "139,987,333,18281,477,1345,32587,1461,1720,40011,12432,46297,24675;_",
+					[1436316582] = "1126,333,5214,13067,1822,75779,9557,2875,7183,39123,24666;_",
+					[1435716684] = "1126,333,18281,477,1345,3370,32398,40011,12432,7183,39114,24675;_",
+					[1435715471] = "139,330,657,333,18281,477,4715,32398,20159,19852,12432,7183,39114,24675;_",
+					[1435709069] = "1126,333,18281,35870,1720,40011,16401,53186;_",
+					[1436321892] = "1126,333,18281,1822,35768,40011,16401,3214,39123,24666;_",
+					[1436321829] = "1126,333,18281,1822,20073,15695,28943,0,11068,12432,7183,39123,24666;_",
+					[1435883708] = "469,657,333,18281,35870,1720,1274,38737,58729,19387,5288;_",
+					[1436320358] = "1126,333,5214,13067,1822,75779,12432,7183,39123,24666;_",
+					[1436317161] = "1126,333,5214,13067,30128,36405,11068,12432,46306,243,3356,7250,13817;_",
+					[1435883841] = "469,657,333,18281,34409,1461,1720,1274,2691,24978,11068,58729,10710,8677,5288;_",
+					[1436322026] = "1126,333,18281,477,1345,35768,40011,16401,42337,20981,116,3569;_",
+					[1435881922] = "469,305,352,333,5214,13067,477,77124,19615,60104,3685;_",
+					[1435885230] = "1126,333,5214,13067,1822,34048,41731,12432,46297,24675;_",
+					[1435882439] = "1126,333,5214,13067,1822,32587,1461,2994,38737,58729,19387,5288;_",
+					[1436316973] = "1126,333,5214,13067,30128,36405,11068,12432,46306,10849,13817;_",
+					[1435709405] = "1126,333,18281,477,1345,34048,1720,28943,11068,12432,67287;_",
+					[1436321815] = "1126,333,18281,1822,20073,6803,8892,40011,12432,7183,39123,24666;_",
+					[1436320110] = "1126,333,5214,13067,1822,75779,12432,7183,39123,3599,17408,1,3658;_",
+					[1436317746] = "1126,333,5214,13067,1822,28306,5089,31316,0,11068,12432,46306,24666;_",
+					[1436321121] = "469,657,333,18281,34409,3181,40011,12432,7183,39123,24666;_",
+					[1436317474] = "1126,333,5214,13067,1822,28306,4281,43192,12432,46306,24666;_",
+					[1435711518] = "1126,333,18281,1822,35768,28943,11068,16401,42328,21016,1,89,3569;_",
+					[1436320147] = "17,1109,333,5214,13067,1822,75779,12432,7183,39123,24666;_",
+					[1436317856] = "1126,333,5214,13067,1822,28306,5089,31316,11068,12432,46306,24666;_",
+					[1435711837] = "1126,333,18281,1822,3370,29217,1461,1720,40011,16401,42328,24675;_",
+					[1435885690] = "1126,333,5214,13067,1822,34048,41731,12432,46297,24675;_",
+					[1435711711] = "1126,333,18281,477,1345,3370,32398,40011,16401,42328,24675;_",
+					[1435709048] = "1126,333,18281,35870,1720,28943,11068,16401,53186;_",
+					[1435709277] = "1126,18614,12102,23768,1720,3986,36025,12432,4459,52696;_",
+					[1436317415] = "1126,333,5214,13067,30128,36405,11068,12432,46306,3599,7250,10248,3569;_",
+					[1436317689] = "1126,333,5214,13067,1822,28306,4281,43192,12432,46306,3599,21067;_",
+					[1435711397] = "1126,333,18281,1822,20073,15695,40011,16401,42328,3932,6779,10395,3569;_",
+					[1435884749] = "469,305,352,333,5214,13067,34409,1461,41731,12432,46297,19387,5288;_",
+					[1436323062] = "469,657,333,5214,13067,77601,16401,3214,39123,24666;_",
+					[1435883663] = "469,657,333,18281,34409,1461,1720,1274,38737,58729,19387,5288;_",
+					[1435711925] = "1126,333,18281,1822,3370,30678,1720,28943,0,11068,16401,42328,20990,3685;_",
+					[1436317647] = "1126,333,5214,13067,1822,28306,47473,12432,46306,24666;_",
+					[1435709686] = "139,987,333,5894,12387,1822,34048,1720,20159,19852,12432,46297,24675;_",
+					[1435709226] = "1126,333,18281,35870,1720,40011,12432,57155;_",
+					[1436320264] = "1126,333,5214,13067,1822,32587,32124,11068,12432,7183,39123,24666;_",
+					[1435881888] = "469,305,352,333,5214,13067,477,77124,19615,42722,324,17058,26,1,89,3569;_",
+					[1436321598] = "469,657,333,7477,10804,477,37113,40011,12432,3969,42337,3599,17382,3685;_",
+					[1436317568] = "1126,333,5214,13067,1822,28306,47473,12432,46306,24666;_",
+					[1436317632] = "774,352,333,5214,13067,1822,28306,36405,11068,12432,46306,3923,20743;_",
+					[1435886929] = "1126,333,18281,1822,32587,1461,1720,40011,12432,46297,24675;_",
+					[1435887965] = "774,352,333,5214,13067,477,11625,22307,1461,41731,12432,4459,41838,10711,147,10132,3685;_",
+					[1436317760] = "1126,333,5214,13067,1822,28306,36405,11068,12432,46306,24666;_",
+					[1435715156] = "469,657,333,18281,5192,24936,7462,28943,11068,58729,24675;_",
+					[1435709358] = "1126,333,18281,477,35393,1720,40011,12432,50229,6926,10158;_",
+					[1435712040] = "1126,333,18281,1822,3370,30678,1720,40011,16401,42328,24675;_",
+					[1436317310] = "1126,333,5214,13067,30128,27621,19852,12432,46306,10849,13817;_",
+					[1436321793] = "469,657,333,18281,37590,40011,12432,7183,39123,24666;_",
+					[1436321984] = "1126,333,18281,477,1345,35768,40011,9557,6844,42337,24666;_",
+					[1436321858] = "1126,333,18281,1822,35768,40011,12432,7183,39123,24666;_",
+					[1435883800] = "469,657,333,18281,35870,1720,1274,38737,58729,19387,5288;_",
+					[1435709163] = "1126,333,18281,35870,1720,40011,12432,49905,7250;_",
+					[1436317892] = "1126,333,5214,13067,1822,28306,4281,43192,12432,46306,21007,1,89,3569;_",
+					[1435883738] = "469,657,333,18281,35870,1720,1274,38737,58729,19387,5288;_",
+					[1435887642] = "1126,333,5214,13067,477,33932,1461,41731,12432,46297,10858,13817;_",
+					[1436319171] = "1126,333,5214,13067,1822,75779,12432,7183,39123,24666;_",
+					[1435709305] = "1126,18614,34409,1461,1720,3986,36025,12432,57008,147;_",
+					[1436322570] = "1126,333,5214,13067,1822,32587,43192,16401,42337,24666;_",
+					[1435888541] = "469,657,333,18047,234,35870,41731,12432,46297,24675;_",
+					[1435711666] = "1126,333,18281,477,1345,3370,32398,40011,16401,42328,3608,7103,10395,3569;_",
+					[1435711603] = "1126,333,18281,477,1345,3370,29217,3181,40011,16401,42328,24675;_",
+					[1435713135] = "469,657,333,18758,4715,30678,1720,40011,16401,41780,548,24675;_",
+					[1435885725] = "1126,333,5214,13067,1822,32587,1461,41731,12432,46297,24675;_",
+					[1435713586] = "469,657,333,18281,477,4715,24936,4281,1461,1720,40011,58729,24675;_",
+					[1435710953] = "139,987,333,18281,1822,32587,1461,1720,40011,16401,42328,24675;_",
+					[1435715890] = "469,657,333,18047,234,477,4715,72409,12432,7183,39114,24675;_",
+					[1436320200] = "1126,333,5214,13067,1822,32587,43192,12432,7183,39123,24666;_",
+					[1436321930] = "1126,333,18281,1822,35768,40011,16401,3214,39123,24666;_",
+					[1436321994] = "1126,333,18281,477,1345,32587,3181,40011,16401,42337,24666;_",
+					[1435889054] = "774,352,333,18281,477,37113,40011,12432,7183,39114,10858,13817;_",
+					[1435712630] = "139,330,657,333,18281,477,4715,30678,1720,40011,12432,46297,24675;_",
+					[1436317257] = "1126,333,5214,13067,30128,4281,43192,12432,46306,3599,7250,10132,26,1,89,3569;_",
+					[1435709110] = "1126,333,18281,21895,12514,1461,1720,28943,11068,12432,46549,10606;_",
+					[1435886565] = "1126,333,18047,234,477,35393,41731,12432,46297,10858,13817;_",
+					[1435883685] = "469,657,333,18281,35870,1720,1274,38737,58729,19387,5288;_",
+					[1435883170] = "469,657,333,18281,34409,1461,1720,1274,38737,58729,19387,5288;_",
+					[1435714618] = "469,657,333,18047,234,5192,72409,12432,7183,39114,24675;_",
+					[1436318442] = "1126,333,5214,13067,1822,75779,12432,3969,42337,24666;_",
+					[1435887329] = "1459,18281,477,35393,1720,40011,12432,46297,10858,259,13558;_",
+					[1436320227] = "1126,333,5214,13067,1822,75779,12432,7183,39123,20981,3685;_",
+					[1435712121] = "1126,333,18281,1822,3370,23506,5711,808,653,1720,28943,0,0,11068,16401,42328,24675;_",
+					[1435712141] = "1126,333,18281,1822,3370,30678,1720,28943,11068,16401,42328,24675;_",
+					[1435888291] = "1126,333,5214,13067,35870,41731,12432,46297,10858,8529,5288;_",
+					[1435711361] = "1126,333,18281,1822,32587,3181,40011,16401,42328,21016,1,3658;_",
+					[1436314839] = "139,987,333,5214,13067,1822,55927,19852,12432,7183,39123,24666;_",
+				},
+				["US:CenarionCircle:Tinite"] = {
+					[1435711934] = "1126,333,18281,5192,24936,5742,1720,20159,8784,2546,67260,243,10606,13817;_",
+					[1436317204] = "1126,333,5214,13067,28698,5711,55624,7183,39123,10849,8529,1603,3685;_",
+					[1436321815] = "1126,333,18281,1822,35768,52443,7183,39123,19378,5288;_",
+					[1435711556] = "139,987,333,18281,477,1345,3370,24936,4281,1461,1720,20159,78590,19378,5288;_",
+					[1436315613] = "139,987,333,5214,13067,1822,55927,32284,3969,42337,19378,5288;_",
+					[1436316122] = "1126,333,5214,13067,1822,88211,7183,39123,19378,5288;_",
+					[1436321946] = "1126,333,18281,1822,35768,28943,27469,3214,39123,3155,16223,1603,3685;_",
+					[1436317790] = "1126,333,18047,234,90033,3969,42337,10849;_",
+					[1435708999] = "1126,5547,13067,35870,5706,105612,9223,1025,3569;_",
+					[1436317856] = "1126,333,18047,234,34409,32124,23500,3969,42337,3155,7694,10248;_",
+					[1436319967] = "1126,333,18047,234,90033,7183,39123,10849,13817;_",
+					[1435711946] = "1126,333,18281,5192,24936,5742,1720,28943,69806,243,10606,13817;_",
+					[1435710542] = "139,987,333,18281,477,1345,32587,1461,1720,20159,32284,46306,19378,5288;_",
+					[1436316582] = "1126,333,5214,13067,1822,64711,23500,7183,39123,19378,5288;_",
+					[1435716684] = "1126,333,18281,477,1345,3370,29217,1461,1720,52443,46306,19378,5288;_",
+					[1435715471] = "139,330,657,333,18281,477,4715,32398,20159,32284,3969,42337,24666;_",
+					[1435709069] = "1126,333,18281,35870,1720,56412,53186,9223,4594;_",
+					[1436321892] = "1126,333,18281,1822,35768,56412,3214,39123,19378,5288;_",
+					[1436321829] = "1126,333,18281,1822,32587,3181,52443,7183,39123,19378,5288;_",
+					[1435712141] = "1126,333,18281,5192,24936,5742,1720,98749,10849,13817;_",
+					[1436320358] = "1126,333,18047,34643,55624,3969,3214,39123,10849,13817;_",
+					[1436317415] = "1126,53023,32124,69806;_",
+					[1436322026] = "1126,333,18281,477,1345,32587,3181,56412,3214,39123,19378,5288;_",
+					[1436316973] = "1126,333,5214,13067,90033,7183,39123,3155,7694,8529,5288;_",
+					[1436318442] = "1126,333,5214,13067,34409,55624,3969,53186,8529,5288;_",
+					[1435709405] = "1126,333,18281,477,1345,34048,1720,52443,66378,4594;_",
+					[1436320110] = "1126,333,18047,234,34409,55624,7183,39123,3155,7694,13817;_",
+					[1436317746] = "139,987,18380,35451,22532,8784,0,7162,16338,3969,15255,27082,3155,7694;_",
+					[1435711518] = "1126,333,18281,1822,10280,18026,4281,1461,1720,28943,27959,41847,243,19135,5288;_",
+					[1435711837] = "1126,333,18281,5192,24936,5742,1720,98749,10849,13817;_",
+					[1435711711] = "1126,333,18281,477,1345,3370,24936,5742,1720,98749,19378,5288;_",
+					[1436317689] = "19506,73929,16338,3969,15255,27082,3155,768,6926,259,9873,26,1,89;_",
+					[1435711397] = "1126,333,18281,1822,28306,5742,1720,98749,3155,16223,1603,3685;_",
+					[1436323062] = "469,657,333,5214,13067,34409,59593,42337,24666;_",
+					[1435709226] = "1126,333,18281,35870,1720,52443,57155,9223,4594;_",
+					[1436321598] = "469,173,484,333,18281,477,33932,3181,28943,23500,7183,39123,19378,5288;_",
+					[1436317568] = "1126,333,18047,234,1822,20073,68138,7183,39123,24666;_",
+					[1436317632] = "86273,69806;_",
+					[1436317760] = "1126,18380,34643,32124,7162,16338,3969,15255,27082,3155,7694,10132;_",
+					[1435709358] = "1126,333,18281,477,35393,1720,52443,57155,9223,909,116,3569;_",
+					[1435712040] = "1126,333,18281,5192,24936,5742,1720,28943,69806,243,10606,13817;_",
+					[1436317310] = "1126,333,5214,13067,90033,7183,39123,3155,7694,8529,1629,1,3658;_",
+					[1436321793] = "469,657,333,18281,37590,52443,7183,39123,19378,5288;_",
+					[1436321984] = "1126,333,18281,477,1345,10280,22307,3181,49568,6844,490,2724,39123,19378,5288;_",
+					[1436321858] = "1126,333,18281,1822,35768,52443,7183,39123,19378,5288;_",
+					[1435709163] = "1126,333,18281,34409,1461,1720,28169,24274,49461,7694,9223,4594;_",
+					[1436317892] = "1126,333,18047,234,90033,3969,42337,10849;_",
+					[1435715156] = "139,330,657,333,18281,5192,24936,4281,1461,1720,28943,69806,19378,5288;_",
+					[1436321121] = "469,657,333,18281,34409,3181,52443,7183,39123,19378,5288;_",
+					[1436319171] = "1126,333,5214,13067,1822,88211,7183,39123,19378,5288;_",
+					[1436314839] = "1126,333,5214,680,12387,1822,88211,3969,42337,19378,5288;_",
+					[1436320147] = "1126,333,18047,234,90033,7183,39123,3155,7694,13817;_",
+					[1436322570] = "1126,333,5214,13067,1822,92180,3214,39123,19378,5288;_",
+					[1435711666] = "1126,333,18281,477,1345,3370,24936,5742,1720,98749,19378,5288;_",
+					[1435711603] = "1126,333,18281,477,1345,3370,24936,5742,1720,98749,19378,5288;_",
+					[1435713135] = "469,657,333,18758,4715,30678,1720,56412,41780,25223;_",
+					[1436321930] = "1126,333,18281,1822,26191,9577,56412,3214,39123,19378,5288;_",
+					[1436320200] = "1126,333,18047,234,90033,7183,39123,10849,13817;_",
+					[1436320264] = "1126,333,18047,234,34409,32124,23500,7183,39123,10849,13817;_",
+					[1435709305] = "1126,18614,34409,1461,1720,3986,48457,57155,9223,4594;_",
+					[1435709686] = "1126,333,18281,1822,34048,1720,52443,46306,19378,5288;_",
+					[1435712630] = "469,657,333,18281,477,4715,29217,1461,1720,52443,46306,19378,5288;_",
+					[1436321994] = "1126,333,18281,477,1345,35768,28943,27469,3214,39123,19378,1603,3685;_",
+					[1435711925] = "1126,333,18281,5192,24936,4281,1461,1720,20159,8784,69806,3155,7694,13817;_",
+					[1435715890] = "139,987,333,18047,234,477,4715,29217,1461,21879,32284,46306,3155,7694,13817;_",
+					[1436317023] = "1126,333,5214,13067,57749,32284,7183,39123,3155,7694,8529,1719,3569;_",
+					[1435709110] = "1126,333,18281,12102,22307,1461,1720,52443,4459,45002,7694,9223,1025,3569;_",
+					[1435709277] = "1126,18614,34409,1461,1720,3986,48457,57155,9223,1025,3569;_",
+					[1436317161] = "1126,333,5214,13067,66533,0,23500,7183,39123,10849,8529,1603,116,3569;_",
+					[1435709048] = "1126,333,18281,34409,1461,1720,28943,27469,53186,9223,4594;_",
+					[1435714618] = "469,657,333,18047,234,5192,24936,59905,46306,19378,5288;_",
+					[1436317647] = "54149,32124,69806;_",
+					[1436317257] = "1126,333,5214,13067,28698,5711,55624,7183,39123,10849,8529,5288;_",
+					[1435713586] = "469,657,333,18281,477,4715,29217,3181,56412,42337,19378,5288;_",
+					[1435712121] = "1126,333,18281,5192,24936,5742,1720,28943,69806,3155,7694,13817;_",
+					[1436320227] = "1126,333,18047,234,21895,68138,7183,39123,10849,10248,3569;_",
+					[1436317474] = "1126,18380,234,1822,92180,3214,12041,27082;_",
+					[1435711361] = "1126,333,18281,1822,28306,4281,1461,1720,98749,3155,16223,1629,1,3658;_",
+					[1435710953] = "139,987,333,18281,1822,34048,1720,20159,8010,28243,42337,19378,5288;_",
+				},
+				["US:Sisters of Elune:Emelaine"] = {
+					[1435711934] = "774,352,333,18156,125,1822,3370,32398,20159,280,8504,27469,3214,26669,12439,24686;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0102188A8C",
+					[1436317204] = "1126,333,5214,13067,15339,42690,32004,7183,26669,12439,10864,10244,3578;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0202188A8C",
+					[1436321815] = "1126,333,3659,14497,125,1822,35768,20439,32004,7183,26669,12439,21108,3578;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1435711556] = "1126,333,18156,125,477,1345,3370,10147,22251,20439,35973,3214,26669,12439,21108,3578;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0102188A8C",
+					[1436315613] = "1126,333,5214,13067,1822,13517,42690,32004,7183,26669,12439,359,24327;Player-1169-06C011D7,Pet-0-1169-1116-40-88708-0202188A8C",
+					[1436316122] = "1126,333,5214,13067,1822,56207,32004,7183,26669,12439,359,19033,5294;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0102188A8C",
+					[1436321946] = "1126,333,18281,1822,35768,20439,35973,3214,26669,12439,20971,633,3082;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1436317790] = "1126,333,5214,12901,166,1822,13517,42690,32004,7183,26669,12439,24686;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0202188A8C",
+					[1435708999] = "1126,5547,13067,35870,5706,16453,65856,17063,6240,4626;Player-1169-06C011D7,Pet-0-3018-1159-15533-88708-0102188A8C",
+					[1436317856] = "1126,333,5214,12942,125,1822,20073,35854,280,32004,7183,26669,12439,24686;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0202188A8C",
+					[1436319967] = "1126,333,5214,13067,1822,56207,32004,3969,29883,12439,24686;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1435711946] = "1126,333,18156,125,1822,3370,32398,20439,35973,3214,26669,12439,17224,3884,3578;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0102188A8C",
+					[1435710542] = "1126,333,18281,477,1345,13517,20531,1720,52443,33852,12439,24686;Player-1169-06C011D7,Pet-0-3018-1159-15533-88708-0102188A8C",
+					[1436316582] = "1126,333,5214,13067,1822,56207,32004,7183,26669,12439,359,24327;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0202188A8C",
+					[1435716684] = "1126,333,3659,14622,477,1345,3370,10147,20531,1720,20439,32004,33852,12439,17224,7462;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0802188A8C",
+					[1435715471] = "469,657,333,18281,477,4715,10147,22251,20439,32004,3969,29883,12439,24686;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0502188A8C",
+					[1435709069] = "1126,333,18281,37590,25362,31050,29883,17063,6240,4626,1734;Player-1169-06C011D7,Pet-0-3018-1159-15533-88708-0102188A8C",
+					[1436321892] = "1126,333,18281,1822,13517,22251,20439,4923,31050,3214,26669,12439,24686;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1436321829] = "1126,333,3659,14497,125,1822,13517,22251,20439,32004,7183,26669,12439,17224,7462;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1435712141] = "1126,333,18281,1822,3370,10147,22251,20439,35973,3214,26669,12439,17224,7462;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0102188A8C",
+					[1436320358] = "1126,333,5214,13067,1822,56207,32004,3969,29883,12439,20971,3715;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1436317415] = "1126,333,5214,12942,125,15339,42690,32004,7183,26669,12439,10864,10107,137,3578;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0202188A8C",
+					[1436322026] = "1126,333,3659,14497,125,477,1345,31695,4073,20439,35973,3214,26669,29663,3884,3578;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1436316973] = "1126,333,5214,13067,15339,42690,32004,7183,26669,12439,10864,6360,3747,3715;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0202188A8C",
+					[1436318442] = "1126,333,5214,13067,1822,13517,42690,32004,7183,26669,12439,359,16865,3884,3578;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0202188A8C",
+					[1435709405] = "1126,333,18156,125,477,1345,34048,1720,52443,33852,17063,12600,4380;Player-1169-06C011D7,Pet-0-3018-1159-15533-88708-0102188A8C",
+					[1436320110] = "1126,333,5214,13067,1822,56207,32004,3969,29883,12439,24686;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1436317746] = "1126,333,5214,12942,125,1822,55927,280,8504,23500,7183,26669,12439,24686;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0202188A8C",
+					[1435711518] = "774,352,333,18156,125,1822,35768,20439,8504,27469,3214,26669,12152,287,24686;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0102188A8C",
+					[1435711837] = "1126,333,18281,1822,3370,32398,20439,35973,3214,26669,12439,24686;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0102188A8C",
+					[1435711711] = "1126,333,18281,477,1345,3370,32398,20439,35973,3214,26669,12439,24686;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0102188A8C",
+					[1436317689] = "1126,333,5214,12942,125,1822,13517,42690,32004,7183,26669,12439,17224,7462;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0202188A8C",
+					[1435711397] = "1126,333,18156,125,1822,13517,22251,56412,3214,26669,12439,17224,7462;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0102188A8C",
+					[1436323062] = "469,657,333,5214,13067,15339,42690,35973,3214,26669,12439,359,16865,3747,3715;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0402188A8C",
+					[1435709226] = "1126,333,18281,37590,25362,3581,23500,3969,29883,17063,6240;Player-1169-06C011D7,Pet-0-3018-1159-15533-88708-0102188A8C",
+					[1436321598] = "469,657,333,18115,41,125,477,37113,20159,280,4923,27081,7183,26669,12439,17224,3590,790,3082;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1436317568] = "1126,333,5214,12901,41,125,1822,13517,42690,32004,7183,26669,12439,17224,3590,3872;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0202188A8C",
+					[1436317632] = "1126,333,5214,12942,125,1822,26876,29331,32004,7183,26669,12439,21108,496,3082;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0202188A8C",
+					[1436317760] = "1126,333,5214,12942,125,1822,56207,32004,7183,26669,12439,24686;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0202188A8C",
+					[1435709358] = "1126,333,3659,14622,477,14862,20531,1720,25362,27081,33852,17063,6240;Player-1169-06C011D7,Pet-0-3018-1159-15533-88708-0102188A8C",
+					[1435712040] = "1126,333,18281,1822,3370,10147,22251,20439,8504,27469,3214,26669,12439,24686;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0102188A8C",
+					[1436317310] = "1126,333,5214,13067,57749,280,32004,7183,26669,12439,10864,13822;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0202188A8C",
+					[1436321793] = "469,657,333,3659,14497,125,15339,22251,20439,32004,7183,26669,12439,17224,3747,137,3578;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1436321984] = "1126,333,3659,14622,477,1345,20073,15695,20439,29129,6844,3214,26669,33547,3578;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1436321858] = "1126,333,3659,14497,125,1822,35768,20439,32004,7183,26669,12439,24686;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1435709163] = "1126,333,18281,15339,22251,25362,27081,3969,29883,17063,6240,6360;Player-1169-06C011D7,Pet-0-3018-1159-15533-88708-0102188A8C",
+					[1436317892] = "1126,333,5214,13067,1822,56207,32004,7183,26669,12439,17224,7462;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0202188A8C",
+					[1435715156] = "469,657,333,18281,5192,10147,14789,7462,20439,32004,33852,12439,17224,3747,3715;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0502188A8C",
+					[1436321121] = "469,657,333,18281,15339,22251,20439,32004,3969,29883,12439,359,16865,7462;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1436319171] = "1126,333,3659,1555,13067,1822,13517,42690,32004,7183,26669,12439,359,16865,3747,3715;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1436314839] = "1126,333,5214,680,12387,1822,13517,74694,7183,26669,12439,359,24327;Player-1169-06C011D7,Pet-0-1169-1116-40-88708-0202188A8C",
+					[1436320147] = "1126,333,5214,12942,125,1822,13517,42690,32004,3969,29883,12439,24686;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1436322570] = "1126,333,5214,12942,125,1822,13517,78663,3214,26669,12798,16865,7462;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1435711666] = "1126,333,18156,125,477,1345,3370,32398,20439,35973,3214,26669,12439,17224,7462;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0102188A8C",
+					[1435711603] = "1126,333,18156,125,477,1345,3370,32398,20439,35973,3214,26669,12439,24686;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0102188A8C",
+					[1435713135] = "469,657,333,18758,4715,10147,20531,1720,20439,35973,29883,11897,542,17224,7462;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0202188A8C",
+					[1436321930] = "1126,333,18281,1822,13517,13359,4819,4073,20439,35973,3214,26669,12439,21108,3578;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1436320200] = "1126,333,5214,12942,125,1822,56207,32004,3969,29883,12439,24686;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1436320264] = "1126,333,5214,13067,1822,13517,42690,4923,3581,23500,3969,29883,12439,24686;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1435709305] = "1126,18614,37590,3986,21376,27081,3969,29883,17063,6240;Player-1169-06C011D7,Pet-0-3018-1159-15533-88708-0102188A8C",
+					[1435709686] = "1126,333,5894,12387,1822,13517,20531,1720,52443,33852,12439,359,16865,7462;Player-1169-06C011D7,Pet-0-3018-1159-15533-88708-0102188A8C",
+					[1435712630] = "469,657,333,18281,477,4715,10147,22251,20439,32004,7183,26669,12439,359,16865,3884,3578;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0102188A8C",
+					[1436321994] = "1126,333,3659,14622,477,1345,20073,6803,8892,20439,35973,3214,26669,37125;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1435711925] = "1126,333,18115,41,125,1822,3370,32398,20439,35973,3214,26669,12439,21604,3082;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0102188A8C",
+					[1435715890] = "469,657,333,3659,14388,234,477,4715,10147,42690,32004,3969,29883,12439,17224,7462;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0702188A8C",
+					[1436317023] = "1126,333,5214,12942,125,58029,32004,7183,26669,12439,10864,10244,3578;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0202188A8C",
+					[1435709110] = "1126,333,18156,125,37590,52443,3969,29883,17063,6240,4626,5618,496;Player-1169-06C011D7,Pet-0-3018-1159-15533-88708-0102188A8C",
+					[1435709277] = "139,987,18614,35870,1720,3986,24957,0,23500,33852,17063,6240,10244,496;Player-1169-06C011D7,Pet-0-3018-1159-15533-88708-0102188A8C",
+					[1436317161] = "1126,333,5214,13067,15339,42690,8504,23500,7183,26669,12439,10864,6360,3884,3578;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0202188A8C",
+					[1435709048] = "1126,333,18156,125,15339,22251,28943,27469,29883,17063,6240,4626;Player-1169-06C011D7,Pet-0-3018-1159-15533-88708-0102188A8C",
+					[1435714618] = "469,657,333,18047,234,5192,10147,20531,22159,32004,33852,12439,17224,3884;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0402188A8C",
+					[1436317647] = "1126,333,5214,12942,125,1822,56207,32004,7183,26669,12439,24686;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0202188A8C",
+					[1436317257] = "139,987,333,5214,13067,15339,13359,29051,280,4923,3581,23500,7183,26669,12439,10864,13822;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0202188A8C",
+					[1435713586] = "469,657,333,18281,477,4715,10147,14789,7462,20439,65856,12439,24686;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0302188A8C",
+					[1435712121] = "1126,333,18156,125,1822,3370,23506,8892,20439,8504,27469,3214,26669,12439,17224,3884,3578;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0102188A8C",
+					[1436320227] = "1126,333,5214,12901,166,1822,13517,42690,4923,27081,3969,29883,12439,20971,137,496,3082;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0302188A8C",
+					[1436317474] = "1126,333,5214,12942,125,1822,13517,42690,32004,7183,26669,12439,17224,7462;Player-1169-06C011D7,Pet-0-3132-1448-32244-88708-0202188A8C",
+					[1435711361] = "1126,333,18281,1822,13517,22251,25362,31050,3214,26669,12439,17224,3747,137,3578;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0102188A8C",
+					[1435710953] = "1126,333,18281,1822,13517,22251,56412,3214,26669,12439,359,24327;Player-1169-06C011D7,Pet-0-3132-1448-2476-88708-0102188A8C",
+				},
+				["US:Sisters of Elune:Othman"] = {
+					[1435883170] = "469,657,333,18281,28526,7344,1720,1274,60919,36557,19359,5309;_",
+					[1435881922] = "48266,7344,1720,98750,19359,5309;_",
+					[1435883691] = "469,657,333,18281,28526,7344,1720,1274,97476,19359,5309;_",
+					[1435884749] = "469,657,333,5214,13067,28526,7344,54163,46307,19359,5309;_",
+					[1435883738] = "469,657,333,18281,28526,7344,1720,1274,97476,19359,5309;_",
+					[1435887965] = "1126,333,5214,13067,477,28049,3005,2094,2245,54163,9750,36557,10848,10247,3573;_",
+					[1435886251] = "1126,333,18281,1822,26704,7344,1720,52443,46307,24668;_",
+					[1435888291] = "1126,333,5214,13067,28526,7344,54163,46307,10848,8511,5309;_",
+					[1435883708] = "469,657,333,18281,28526,7344,1720,1274,97476,19359,5309;_",
+					[1435883685] = "469,657,333,18281,28526,3005,4339,1720,1274,97476,19359,1435,3874;_",
+					[1435885725] = "1126,333,5214,13067,1822,26704,5099,2245,54163,46307,19359,1736,3573;_",
+					[1435888541] = "1126,333,18047,234,28526,7344,54163,46307,10848,13820;_",
+					[1435882439] = "1126,333,5214,13067,1822,26704,7344,2994,97476,19359,5309;_",
+					[1435883841] = "469,657,333,18281,28526,7344,1720,1274,448,27221,28635,41172,19359,5309;_",
+					[1435883663] = "469,657,333,18281,28526,7344,1720,1274,97476,19359,5309;_",
+					[1435887642] = "1126,333,5214,13067,477,28049,7344,54163,46307,10848,13820;_",
+					[1435889054] = "1126,333,18281,477,28049,7344,1720,52443,46307,10848,13820;_",
+					[1435885230] = "1126,333,5214,13067,1822,26704,172,7172,54163,46307,19359,5309;_",
+					[1435883757] = "469,657,333,18281,28526,7344,1720,1274,60919,36557,19359,5309;_",
+					[1435881888] = "48266,7344,1720,98750,19359,5309;_",
+					[1435883800] = "469,657,333,18281,28526,7344,1720,1274,97476,19359,5309;_",
+					[1435886565] = "1126,333,18281,477,1345,26704,7344,1720,52443,46307,24668;_",
+					[1435886929] = "1126,333,18281,1822,26704,7344,1720,52443,46307,24668;_",
+					[1435887329] = "1126,333,18281,477,1345,26704,7344,1720,52443,46307,24668;_",
+					[1435881973] = "48266,7344,1720,14956,83794,19359,5309;_",
+					[1435885690] = "1126,333,5214,13067,1822,26704,7344,54163,46307,19359,5309;_",
+					[1435885809] = "1126,333,18281,1822,26704,7344,1720,52443,46307,19359,5309;_",
+				},
+				["US:Sisters of Elune:Maelyn"] = {
+					[1435883170] = "17,452,305,200,152,333,18281,1185,4855,7983,714,7158,13975,1720,1274,2691,3853,21125,65845,3659,303,830,1390,7147,11728,3573;_",
+					[1435881922] = "17,452,305,200,152,333,5214,2263,10804,477,708,4855,15855,6869,12791,53342,2319,35162,3659,1133,1390,7147;_",
+					[1435883691] = "469,305,200,152,333,18281,1185,4855,8697,21133,1720,1274,2691,3853,20268,857,28364,37481,3659,303,242,588,1390,7147,15301;_",
+					[1435884749] = "17,452,305,352,333,5214,13067,1185,4855,29830,5685,3853,21125,23500,46004,303,242,588,1390,22448;_",
+					[1435883738] = "17,452,505,152,333,18281,1185,4855,29830,1720,1274,2691,53342,17766,23677,830,1390,7147,11609,3692;_",
+					[1435887965] = "1126,333,5214,13067,477,708,4855,29830,54163,4864,4886,36557,830,1390,8628,13820;_",
+					[1435886251] = "17,757,200,152,333,18281,1185,637,4218,29830,1720,7818,20351,774,23500,42345,4792,1390,7147,11609,119,3573;_",
+					[1435888291] = "774,200,152,333,5214,2263,10804,1185,4855,7983,14741,12791,3853,21125,23500,7183,38821,303,242,588,1390,7147,1481,10247;_",
+					[1435883708] = "469,505,152,333,18281,1185,4855,29830,1720,1274,6477,49556,17766,23677,830,1390,22448;_",
+					[1435883685] = "469,505,152,333,18281,1185,4855,8697,21133,1720,1274,2691,24978,28364,41443,242,588,1390,22448;_",
+					[1435885725] = "774,200,152,333,5214,13067,1185,637,4218,39368,44625,4864,2319,2567,12880,23677,830,1390,18756,3692;_",
+					[1435888541] = "774,200,152,333,7477,10570,234,1185,4855,22724,7106,5685,3853,21125,23500,46004,303,242,588,1390,7147,1481,10247,3573;_",
+					[1435882439] = "17,757,200,152,333,5214,13067,1185,637,4218,32824,6477,67,21125,30683,38821,303,830,1390,7147,11728;_",
+					[1435883841] = "469,657,333,18281,1185,4855,29830,1720,1274,6544,21125,28364,271,41172,242,588,1390,9442,9360,1,3645;_",
+					[1435883663] = "17,452,305,200,152,333,18281,1185,4855,29830,1720,1274,2691,3786,90999,830,1390,7147,15301;_",
+					[1435887642] = "974,152,333,5214,13067,477,708,4855,29830,5685,3853,20351,774,23500,46307,830,1390,7147,1481,10128,119,3573;_",
+					[1435889054] = "774,200,152,333,18281,477,708,4855,31550,3965,3853,20351,774,23500,7183,38821,303,242,588,1390,8628,10174,1,72,3573;_",
+					[1435885230] = "17,957,152,333,5214,13067,1185,637,4218,15855,6803,7172,5685,48478,42345,3962,830,1390,22448;_",
+					[1435883757] = "469,305,352,333,18281,1185,4855,29830,1720,1274,2691,24121,29221,37481,3962,242,588,1390,22448;_",
+					[1435881888] = "469,29,276,200,152,333,5214,13067,477,708,4855,8697,13276,7204,6338,3853,21125,30683,39954,1390,1379,17377,119;_",
+					[1435883800] = "469,505,152,333,18281,1185,4855,8697,13276,7204,653,1720,1274,2691,94785,830,1390,7147,11728,3573;_",
+					[1435886565] = "774,200,152,333,7477,10570,234,477,708,637,4218,22658,7172,5685,3853,20351,774,23500,46004,1133,1390,7147,11609,46,1,72,3573;_",
+					[1435886929] = "17,757,200,152,333,7477,10804,1185,637,4218,22724,8826,3965,3853,20351,774,23500,7183,35162,3962,830,1390,7147,11609,46,1,72;_",
+					[1435887329] = "17,757,200,152,333,18281,477,708,637,4218,31550,3965,3786,67,44625,7183,38821,303,830,1390,7147,11728;_",
+					[1435881973] = "469,505,152,333,5214,2263,10804,477,708,4855,35515,3853,21125,30683,39954,1390,1379;_",
+					[1435885690] = "17,957,152,333,5214,13067,1185,637,4218,35515,3786,67,21125,23500,7183,39124,830,1390,7147,11609,119,3573;_",
+					[1435885809] = "17,1109,333,18281,1185,637,4218,15855,15695,3965,3853,44625,7183,35162,3962,830,1390,7147,11728,3573;_",
+				},
+				["US:Sisters of Elune:Chalda"] = {
+					[1436317790] = "1126,333,18047,234,90033,3969,28501,13836,10849,13822;_",
+					[1436321815] = "1126,333,18047,234,35217,22532,8784,23500,3969,508,27993,13837,17242,3853,3575;_",
+					[1436320358] = "1126,333,5214,13067,1822,88211,4477,1418,1288,25287,31079,7428;_",
+					[1436320110] = "1126,333,5214,13067,1822,88211,4477,1418,1288,25287,13836,969,16274,3774,3,3651;_",
+					[1436317310] = "1126,333,5214,13067,30128,59905,4477,1418,26575,13836,969,9880,6394,2135,1718,3575;_",
+					[1436315613] = "139,987,333,5214,13067,1822,25106,3200,27621,32284,32470,13837,348,19011,5311;_",
+					[1436317204] = "1126,333,5214,13067,21895,8233,27621,32284,4477,27993,13836,969,9880,8529,1718,3575;_",
+					[1436316582] = "1126,333,5214,13067,1822,85336,2875,7183,25287,13836,19378,5293;_",
+					[1436317023] = "1126,333,5214,13067,30128,59905,4477,27993,13836,969,9880,8529,5293;_",
+					[1436317161] = "1126,333,5214,13067,30128,59905,32470,2352,11484,10849,6394,2135,5293;_",
+					[1436317689] = "1126,18380,234,90033,3969,508,1418,13329,13246,2352,11484,969,9880,6394,3853,3575;_",
+					[1436317760] = "774,352,18380,234,21895,68138,3969,508,14747,13246,13836,969,9880,10168,3,3651;_",
+					[1436321793] = "1126,333,18047,234,90033,3969,28501,13837,24670;_",
+					[1436316122] = "1126,333,5214,13067,1822,88211,7183,25287,13837,348,19011,5311;_",
+					[1436321994] = "1126,333,18047,234,477,1345,92180,508,2706,25287,13837,17242,3774,3654;_",
+					[1436320147] = "17,1109,333,5214,13067,1822,88211,4477,2706,25287,13836,969,23702;_",
+					[1436316973] = "1126,333,5214,13067,30128,27621,32284,4477,27993,13836,10849,8529,5293;_",
+					[1436321930] = "1126,333,18047,234,1822,20073,6118,65989,508,1418,26575,13837,968,16274,7428;_",
+					[1436318442] = "1126,333,5214,13067,90033,3969,28501,13836,10849,13822;_",
+					[1436317568] = "1126,141117,13836;_",
+					[1436322026] = "1126,333,18047,234,477,1345,92180,1926,1288,25287,13837,968,16274,3853,3575;_",
+					[1436323062] = "469,657,333,5214,13067,94002,3214,25287,13837,24670;_",
+					[1436321984] = "1126,333,18047,234,477,1345,85336,6844,508,1418,1288,25287,13837,17242,7428;_",
+					[1436317647] = "1126,18380,234,90033,3969,508,14747,13246,13836,969,9880;_",
+					[1436317257] = "1126,333,5214,13067,28698,1430,27621,32284,32470,13836,10849,8529,5293;_",
+					[1436321946] = "1126,333,18047,234,1822,55927,36253,508,1418,26575,13837,968,20048,3,76,3575;_",
+					[1436322570] = "1126,333,5214,13067,1822,92180,3214,25287,9875,3962,24670;_",
+					[1436317474] = "1126,333,5214,13067,1822,28306,59905,4477,27993,13836,17243,2135,1718,3575;_",
+					[1436321892] = "1126,333,18047,234,1822,92180,508,1418,26575,13837,968,23702;_",
+					[1436317856] = "1126,333,18047,234,21895,44638,23500,3969,508,27993,13836,10849,6394,7428;_",
+					[1436321598] = "142243,13837,11107;_",
+					[1436319967] = "1126,333,5214,13067,1822,88211,7183,25287,13836,24671;_",
+					[1436317415] = "1126,333,5214,13067,30128,59905,32470,13836,969,9880,8529,5293;_",
+					[1436320227] = "1126,333,5214,13067,1822,88211,4477,1418,1288,25287,14805,16274,7428;_",
+					[1436321829] = "1126,333,18047,234,1822,20073,13322,31316,23500,3969,508,27993,13837,968,16274,7428;_",
+					[1436317632] = "1126,18380,234,21895,68138,3969,508,14747,13246,13836,10849;_",
+					[1436320264] = "1126,333,5214,13067,1822,64711,23500,4477,2706,25287,14805,23702;_",
+					[1436317746] = "774,352,18380,234,21895,44638,23500,3969,508,14747,13246,13836,969,9880,13822;_",
+					[1436317892] = "1126,333,18047,234,90033,3969,28501,13836,10849,13822;_",
+					[1436321121] = "469,657,333,18281,37590,52443,7183,25287,13837,24670;_",
+					[1436319171] = "1126,333,5214,13067,1822,88211,4477,2706,25287,13836,17243,3853,3575;_",
+					[1436321858] = "1126,333,18047,234,1822,88211,3969,28501,13837,968,16274,7428;_",
+					[1436320200] = "1126,333,5214,13067,1822,64711,23500,5895,1288,25287,34932,3575;_",
+					[1436314839] = "139,987,333,5214,680,12387,1822,25106,3200,27621,32284,32470,13837,19359,5311;_",
+				},
+				["US:Sisters of Elune:Volan"] = {
+					[1435883691] = "469,657,333,998,10423,6860,35870,1720,1274,72512,24964,3154,0,21511,3196;_",
+					[1436314839] = "1126,333,998,4216,680,12387,1822,28306,59905,46307,348,24317;_",
+					[1436317204] = "1126,333,998,4216,6207,6860,21895,68138,7183,14160,24964,3154,0,7694,13817;_",
+					[1435883757] = "469,657,333,998,10423,6860,12476,23394,1720,1274,97476,24665,3196;_",
+					[1435711556] = "1126,333,998,17283,477,1345,3370,30678,1720,28409,28003,42338,3154,0,21511;_",
+					[1436315613] = "1126,333,998,4216,13067,1822,28306,59905,46307,348,24317;_",
+					[1435886251] = "1126,333,998,17283,1822,34048,1720,52443,46307,348,24317;_",
+					[1436316122] = "1126,333,998,4216,13067,1822,88211,7183,39124,348,24317;_",
+					[1436321946] = "1126,333,998,10423,6626,234,1822,30875,33302,534,27469,3214,14160,24964,3154,0,21511;_",
+					[1435885809] = "2457,17283,35870,1720,52443,19224,27083,10848,260;_",
+					[1436317790] = "1126,333,998,4216,13067,1822,88211,3969,42338,24665;_",
+					[1436317474] = "1126,333,998,4216,13067,1822,88211,7183,39124,24665;_",
+					[1436317023] = "1126,333,998,4216,13067,90033,7183,39124,10848,13817;_",
+					[1436319967] = "1126,333,998,4216,13067,1822,88211,7183,39124,24665;_",
+					[1435881973] = "469,657,333,998,4216,6207,6860,477,66056,30683,14160,28118;_",
+					[1435711946] = "1126,333,998,17283,1822,3370,27505,3173,1720,56412,42338,21095,3570,3196;_",
+					[1435710542] = "1126,333,998,17283,477,29651,7462,52443,46307,348,10500,13817;_",
+					[1436316582] = "1126,333,998,4216,13067,1822,55927,29409,2875,7183,39124,348,24317;_",
+					[1435716684] = "1126,333,998,17283,477,1345,3370,32398,52443,7183,39124,348,24317;_",
+					[1435715471] = "469,657,333,998,17283,477,4715,32398,52443,7183,39124,348,24317;_",
+					[1435885690] = "2457,17283,90033,46307,11108;_",
+					[1436321892] = "1126,333,998,17049,234,1822,92180,3214,39124,3154,21511;_",
+					[1436321829] = "1126,333,998,10423,6626,234,1822,64711,23500,7183,39124,3154,17808,3703;_",
+					[1435883708] = "469,657,333,998,17283,35870,1720,1274,97476,24665;_",
+					[1436320358] = "774,1683,17049,94236,3214,12041,26780,303,10848,259;_",
+					[1436317161] = "1126,333,998,4216,13067,66533,23500,7183,39124,10848,13817;_",
+					[1435883841] = "469,305,352,333,998,17283,32697,3173,1720,1274,56304,41172,3154,21511;_",
+					[1435881922] = "469,657,333,998,4216,6207,6860,477,11999,84740,60086,6899;_",
+					[1435882439] = "1126,333,998,4216,13067,1822,37042,58352,39124,348,24317;_",
+					[1435709405] = "2457,17049,30362,79129,30237,7694,260;_",
+					[1436320110] = "1126,333,998,4216,6207,6860,1822,25354,5521,57336,7183,39124,3154,0,17808,3703;_",
+					[1436317746] = "1126,333,998,4216,13067,1822,88211,3969,42338,24665,3196;_",
+					[1435711518] = "1126,333,998,17283,1822,20073,13975,1720,56412,42338,24665;_",
+					[1436322026] = "1126,333,998,10423,6626,234,477,1345,92180,3214,39124,3154,21511;_",
+					[1436321815] = "774,352,333,998,10423,6626,234,1822,26876,61335,7183,39124,3154,21511;_",
+					[1435711837] = "1126,333,998,17283,1822,3370,30678,1720,56412,42338,24665;_",
+					[1436321121] = "469,657,333,998,17283,37590,52443,7183,39124,348,24317;_",
+					[1435711711] = "1126,333,998,17283,477,1345,3370,30678,1720,56412,42338,24665;_",
+					[1436320227] = "1126,333,998,4216,13067,1822,25354,62857,7183,39124,3154,21511;_",
+					[1436318442] = "1126,333,998,4216,13067,90033,7183,39124,348,10500;_",
+					[1435885230] = "1126,333,998,4216,13067,1822,34048,54163,46307,348,24317;_",
+					[1436317689] = "1126,333,998,4216,6207,6860,1822,25354,5521,57336,3969,17374,24964,24665,3196;_",
+					[1435711397] = "1126,333,998,17283,1822,25354,8694,1720,56412,42338,3154,17808,3703,3196;_",
+					[1435884749] = "469,657,333,998,4216,13067,35870,54163,46307,348,24317;_",
+					[1436317415] = "774,352,333,998,4216,6207,6860,27176,5521,2520,22532,8784,23500,7183,14160,24964,3154,0,7694,13817;_",
+					[1436323062] = "469,657,333,998,4216,13067,94002,42338,348,24317;_",
+					[1435715156] = "469,657,333,998,17283,5192,24936,7462,98750,348,24317;_",
+					[1436317647] = "1126,333,998,4216,13067,1822,88211,3969,42338,24665;_",
+					[1435710953] = "1126,333,998,17283,1822,35768,56412,3214,39124,348,24317;_",
+					[1436321930] = "1126,333,998,17049,234,1822,26876,65304,3214,39124,3154,21511;_",
+					[1435883800] = "469,657,333,998,17283,35870,1720,1274,97476,3154,0,21511,3196;_",
+					[1435712630] = "469,657,333,998,17283,477,4715,30678,1720,52443,46307,348,20614,3703;_",
+					[1436321598] = "2457,153623,11108;_",
+					[1436317568] = "1126,333,998,4216,13067,1822,88211,3969,42338,24665;_",
+					[1436317632] = "1126,333,998,4216,13067,1822,88211,3969,42338,3154,21511;_",
+					[1435886929] = "1126,333,998,17283,1822,34048,1720,52443,46307,348,24317;_",
+					[1435885725] = "2457,17283,90033,46307,11108;_",
+					[1436317760] = "1126,333,998,4216,13067,1822,88211,3969,42338,3154,21511;_",
+					[1435889054] = "1126,333,998,17283,477,37113,52443,7183,39124,348,10500,13817;_",
+					[1435709358] = "2457,145939,18792;_",
+					[1435712040] = "1126,333,998,17283,1822,3370,7284,23394,1720,56412,42338,24665;_",
+					[1436317310] = "1126,333,998,4216,6207,6860,27176,62857,7183,39124,3154,0,7694,10247,3570;_",
+					[1436321793] = "1126,333,998,17049,234,90033,7183,39124,20962,133,3570;_",
+					[1436321984] = "774,352,333,998,10423,6626,234,477,1345,85336,6844,3214,39124,24665,3196;_",
+					[1436322570] = "1126,333,998,4216,13067,1822,92180,3214,39124,348,24317;_",
+					[1436321858] = "1126,333,998,17049,234,1822,30875,57336,7183,39124,3154,0,21511,3196;_",
+					[1436317257] = "1126,333,998,4216,13067,90033,7183,39124,10848,13817;_",
+					[1436317892] = "1126,333,998,4216,13067,1822,88211,3969,42338,24665;_",
+					[1435883738] = "469,657,333,998,17283,35870,1720,1274,97476,24665;_",
+					[1435887642] = "1126,333,998,4216,13067,477,35393,54163,46307,348,10500,13817;_",
+					[1436319171] = "1126,333,998,4216,13067,1822,88211,7183,39124,348,24317;_",
+					[1436320200] = "1126,333,998,4216,6207,6860,1822,64711,23500,7183,39124,3154,21511,3196;_",
+					[1435887965] = "1126,333,998,4216,5619,588,6860,477,35393,54163,9750,11593,24964,3154,7694,13817;_",
+					[1435888541] = "469,657,333,998,17049,234,35870,54163,46307,348,20614,3703;_",
+					[1435711666] = "1126,333,998,6479,10804,477,1345,3370,23572,7106,1720,28943,27469,42338,24665;_",
+					[1435711603] = "1126,333,998,17283,477,1345,3370,7284,23394,1720,56412,42338,24665;_",
+					[1435713135] = "469,657,333,998,17760,4715,24936,7462,98192,558,348,24317;_",
+					[1435709277] = "2457,164731;_",
+					[1435711934] = "1126,333,998,17283,1822,3370,30678,1720,28943,0,27469,17374,24964,24665;_",
+					[1436316973] = "1126,333,998,4216,6207,6860,32697,57336,7183,14160,24964,3154,0,7694,10114,133,3570;_",
+					[1435715890] = "1126,333,998,17049,234,477,4715,24936,59905,46307,348,10500,13817;_",
+					[1435709686] = "1126,333,998,4896,12387,30128,7462,98750,348,10500,13817;_",
+					[1436320264] = "1126,333,998,4216,13067,1822,64711,0,23500,7183,39124,24665;_",
+					[1436321994] = "1126,333,998,17049,234,477,1345,20073,72107,3214,39124,24665,3196;_",
+					[1435711925] = "1126,333,998,10423,6860,1822,3370,30678,1720,20159,8784,0,27469,17374,24964,3154,0,21511;_",
+					[1435713586] = "469,657,333,998,17283,477,4715,24936,7462,98750,348;_",
+					[1435709305] = "2457,164731;_",
+					[1435881888] = "469,657,333,998,4216,13067,477,96739,60086,133;_",
+					[1435886565] = "1126,333,998,17283,477,1345,34048,1720,52443,46307,348,20614,133,3570;_",
+					[1435883685] = "469,657,333,998,17283,12476,23394,1720,1274,97476,24665;_",
+					[1435883170] = "469,657,333,998,17283,35870,1720,1274,97476,348,20747,3570;_",
+					[1435714618] = "469,657,333,998,17049,234,5192,24936,59905,46307,348,24317;_",
+					[1435883663] = "469,657,333,998,17283,35870,1720,1274,97476,24665;_",
+					[1435887329] = "1459,998,17283,477,35393,1720,52443,46307,348,10500,260,13557;_",
+					[1435712141] = "1126,333,998,10423,6860,1822,3370,16703,13975,1720,56412,42338,3154,21511;_",
+					[1435712121] = "1126,333,998,10423,6860,1822,3370,16703,6803,7172,1720,28943,27469,17374,24964,21095,3570,3196;_",
+					[1436320147] = "1126,333,998,4216,6207,6860,1822,26876,3999,57336,7183,39124,3154,21511;_",
+					[1435888291] = "1126,333,998,4216,13067,90033,7183,39124,348,10500,8511,5306;_",
+					[1435711361] = "1126,333,998,10423,6860,1822,25354,5521,3173,1720,56412,17374,24964,3154,0,21511,3196;_",
+					[1436317856] = "1126,333,998,4216,13067,1822,25354,8041,31316,0,23500,3969,17374,24964,24665;_",
+				},
+				["US:Sisters of Elune:Bronnan"] = {
+					[1435711934] = "139,635,352,333,18047,234,5192,4303,20633,36405,27977,445,2261,39124,968,9880,8511,1736;_",
+					[1436317204] = "1126,333,5214,13067,90033,4477,445,2261,39124,968,9880,8511,5311;_",
+					[1436321815] = "469,305,352,333,18281,28698,8892,52443,3969,508,445,41385,968,18391,5311;_",
+					[1435711556] = "1126,333,18281,477,1345,3370,4303,28095,56412,953,2261,39124,968,18391,5311;_",
+					[1436315613] = "1126,333,5214,13067,1822,88211,7183,39124,19359,5311;_",
+					[1436316122] = "1126,333,5214,13067,1822,88211,7183,39124,19359,5311;_",
+					[1436321946] = "1126,333,18281,1822,35768,28943,27469,508,445,41385,968,18391,5311;_",
+					[1436317790] = "1126,333,18047,234,30128,59905,4922,41385,10848,8511,5311;_",
+					[1435708999] = "1126,5547,13067,9495,26375,5706,99282,1,6329,13822;_",
+					[1436317856] = "1126,333,18047,234,30128,36405,23500,4477,445,29900,11485,10848,8511,5311;_",
+					[1436319967] = "1126,333,5214,13067,1822,88211,7183,39124,19359,5311;_",
+					[1435711946] = "1126,333,18047,234,5192,4303,19203,1430,40306,24076,445,2261,27639,11485,968,8394,1486,6394,2117;_",
+					[1435710542] = "1126,333,18281,477,1345,7673,26375,1720,52443,46307,19359,5311;_",
+					[1436316582] = "139,987,333,5214,13067,1822,85336,2875,7183,39124,19359,5311;_",
+					[1435716684] = "1126,333,18281,477,1345,3370,30678,1720,52443,46307,24670;_",
+					[1435715471] = "469,657,333,18281,477,4715,32398,52443,7183,39124,19359,5311;_",
+					[1435709069] = "1126,333,18281,9495,26375,1720,28943,27469,53186,8511,5311;_",
+					[1436321892] = "1126,333,18281,1822,26191,9577,56412,508,445,41385,968,18391,5311;_",
+					[1436321829] = "774,352,333,18281,1822,35768,52443,3969,508,445,41082,303,968,18391,5311;_",
+					[1435712141] = "1126,333,18047,234,5192,16703,8233,64827,2261,39124,968,9880,8511;_",
+					[1436320358] = "1126,333,5214,13067,1822,88211,4477,445,2261,39124,17242,2117,5311;_",
+					[1436317415] = "1126,333,5214,13067,90033,4477,445,2261,39124,10848,6394,2117,5311;_",
+					[1436322026] = "1126,333,18281,477,1345,35768,56412,508,1418,40412,968,16274,2117,1736,3575;_",
+					[1436316973] = "1126,333,5214,13067,90033,7183,39124,10848,8511,5311;_",
+					[1436318442] = "1126,333,5214,13067,28698,61335,7183,49972,8511,5311;_",
+					[1435709405] = "1126,333,18281,477,1345,7673,26375,1720,52443,47275,18391,5311;_",
+					[1436320110] = "1126,333,5214,13067,1822,68612,19599,4477,445,973,1288,39124,968,16274,2117,1736,3575;_",
+					[1436317746] = "1126,333,18047,234,30128,36405,23500,4477,445,41385,968,9880,8511,5311;_",
+					[1435711518] = "1126,333,18281,1822,7673,28095,56412,953,2261,39124,968,18391,5311;_",
+					[1435711837] = "1126,333,18047,234,5192,4303,20633,67088,39124,10848,8511;_",
+					[1435711711] = "1126,333,18281,477,1345,3370,4303,28095,56412,953,2261,39124,19359,5311;_",
+					[1436317689] = "1126,333,18047,234,30128,59905,4477,445,41385,10848,8511,5311;_",
+					[1435711397] = "1126,333,18281,1822,7673,28095,56412,508,445,2261,39124,968,16274,2117,5311;_",
+					[1436323062] = "139,330,657,333,5214,13067,57749,36253,3214,58483,5311;_",
+					[1435709226] = "1126,333,18281,9495,12400,13975,1720,52443,57155,8511,5311;_",
+					[1436321598] = "469,173,484,333,18281,477,37113,52443,3969,508,445,41385,968,3640,14751,5311;_",
+					[1436317568] = "139,635,352,333,18047,234,28698,1430,27621,78591,4518,1,6329,8511;_",
+					[1436317632] = "1126,333,18047,234,30128,40306,19599,4477,1418,28927,11485,968,8394,1486,8511,5311;_",
+					[1436317760] = "1126,333,18047,234,30128,59905,4477,445,41385,10848,6394,2117,5311;_",
+					[1435709358] = "1126,333,18281,477,9018,26375,1720,52443,57155,8511,5311;_",
+					[1435712040] = "1126,333,18047,234,5192,24936,64827,2261,39124,968,9880,8511;_",
+					[1436317310] = "1126,333,5214,13067,90033,4477,445,2261,39124,10848,6394,2117,5311;_",
+					[1436321793] = "469,657,333,18281,37590,52443,3969,42338,19359,5311;_",
+					[1436321984] = "1126,333,18281,477,1345,35768,49568,6844,953,41385,968,18391,5311;_",
+					[1436321858] = "1126,333,18281,1822,35768,52443,3969,42338,968,18391,5311;_",
+					[1435709163] = "1126,333,18281,9495,26375,1720,52443,4477,445,50747,1486,8511,5311;_",
+					[1436317892] = "1126,333,18047,234,30128,59905,46307,10848,8511,5311;_",
+					[1435715156] = "469,657,333,18281,5192,24936,7462,98750,19359,5311;_",
+					[1436321121] = "469,657,333,18281,37590,52443,7183,39124,4608,14751,5311;_",
+					[1436319171] = "1126,333,5214,13067,1822,88211,7183,39124,19359,5311;_",
+					[1436314839] = "1126,333,5214,680,12387,1822,88211,7183,39124,19359,5311;_",
+					[1436320147] = "1126,333,5214,13067,1822,88211,7183,39124,19359,5311;_",
+					[1436322570] = "139,987,333,5214,13067,1822,55927,36253,42338,19359,5311;_",
+					[1435711666] = "1126,333,18281,477,1345,3370,4303,28095,56412,508,445,2261,39124,968,16274,2117,5311;_",
+					[1435711603] = "1126,333,18281,477,1345,3370,4303,28095,56412,3214,39124,968,18391,5311;_",
+					[1435713135] = "469,990,18758,4715,32398,56412,41780,558,11107,8252,5311;_",
+					[1436321930] = "774,352,333,18281,1822,26191,685,8892,28943,27469,508,1418,40412,242,726,18391,5311;_",
+					[1436320200] = "1126,333,5214,13067,1822,88211,4477,445,2261,39124,968,16274,2117,5311;_",
+					[1436320264] = "1126,333,5214,13067,1822,64711,0,23500,4477,445,2261,39124,968,16274,2117,5311;_",
+					[1435709305] = "1126,18614,9495,26375,1720,3986,24957,23500,4922,42353,9880,8511,5311;_",
+					[1435709686] = "1126,333,5894,12387,1822,7673,26375,1720,52443,46307,19359,741,4570;_",
+					[1435712630] = "469,657,333,18281,477,4715,32398,52443,7183,39124,19359,5311;_",
+					[1436321994] = "1126,333,18281,477,1345,35768,56412,42338,19359,5311;_",
+					[1435711925] = "139,987,333,18047,234,5192,4303,19203,1430,27621,12685,4512,19564,445,973,1288,39124,968,9880,6394,2117,1736;_",
+					[1435715890] = "469,657,333,18047,234,477,4715,84841,3969,42338,24670;_",
+					[1436317023] = "1126,333,5214,13067,90033,4922,2261,39124,968,9880,8511,5311;_",
+					[1435709110] = "774,352,333,18281,9495,26375,1720,20159,8784,23500,4477,445,973,41380,9880,8511,5311;_",
+					[1435709277] = "1126,18614,9495,26375,1720,3986,48457,4477,445,973,41380,9880,8511,5311;_",
+					[1436317161] = "1126,333,5214,13067,90033,4922,2261,39124,968,9880,8511,5311;_",
+					[1435709048] = "1126,333,18281,9495,26375,1720,28943,0,27469,953,42353,9880,8511,5311;_",
+					[1435714618] = "469,657,333,18047,234,5192,30678,54163,46307,19359,5311;_",
+					[1436317647] = "1126,333,18047,234,30128,59905,4477,445,41385,968,9880,8511,5311;_",
+					[1436317257] = "1126,333,5214,13067,66533,23500,4922,2261,39124,968,9880,8511,5311;_",
+					[1435713586] = "469,657,333,18281,477,4715,32398,56412,42338,19359,5311;_",
+					[1435712121] = "139,987,333,18047,234,5192,24936,27621,36761,445,2261,39124,968,9880,6394,2117;_",
+					[1436320227] = "1126,333,5214,13067,1822,88211,4477,445,2261,39124,968,18391,5311;_",
+					[1436317474] = "1126,333,5214,13067,1822,88211,7183,39124,19359,5311;_",
+					[1435711361] = "1126,333,18281,1822,7673,28095,9576,46836,3214,39124,19359,5311;_",
+					[1435710953] = "1126,333,18281,1822,7673,26375,1720,56412,42338,19359,5311;_",
+				},
+				["US:CenarionCircle:Kordrion"] = {
+					[1435711934] = "1126,333,1364,16917,1822,3370,32398,20159,8784,21938,5531,42322,19392,5294;_",
+					[1436317204] = "1126,333,325,1039,3850,13067,21895,6803,29051,30722,1562,3969,42322,10864,8528,5294;_",
+					[1436321815] = "1126,333,1364,16683,234,57749,30722,1562,3969,1447,40875,17258,0;_",
+					[1435711556] = "1126,333,325,1039,16917,477,1345,3370,32398,28943,21938,5531,23831,18491,19392,5294;_",
+					[1436315613] = "1126,333,325,1039,3850,13067,1822,86649,1562,3969,42322,19392,5294;_",
+					[1436316122] = "139,987,333,325,1039,3850,13067,88471,1562,3969,42322,10864,8528,5294;_",
+					[1436321946] = "1126,333,1364,16683,234,1822,11083,75566,5531,42322,17258;_",
+					[1436317790] = "1126,333,325,1039,16683,234,88471,1562,3969,42322,10864;_",
+					[1435708999] = "1126,333,1364,105388,5531,3214,31440;_",
+					[1436317856] = "774,352,333,1364,16683,234,88471,1562,3969,23831,18491,10864;_",
+					[1436319967] = "1126,333,325,1039,3850,13067,1822,86649,1562,3969,42322,19392,5294;_",
+					[1435711946] = "1126,333,1364,16917,1822,3370,32398,50881,5531,42322,19392,5294;_",
+					[1435710542] = "1126,333,325,1039,16917,477,1345,35768,50881,1562,3969,42322,19392,5294;_",
+					[1436316582] = "1126,333,325,1039,3850,13067,1822,86649,1562,3969,42322,19392,5294;_",
+					[1435716684] = "1126,333,325,1039,16917,477,1345,3370,32398,50881,1562,3969,42322,19392,5294;_",
+					[1435715471] = "469,657,333,325,1039,4530,12387,477,4715,32398,50881,1562,3969,42322,19392,5294;_",
+					[1435709069] = "1126,333,325,1039,54507,50881,5531,23831,17949,11406;_",
+					[1436321892] = "1126,333,325,1039,16683,234,1822,86649,5531,42322;_",
+					[1436321829] = "774,352,333,1364,16683,234,1822,86649,1562,3969,42035,287,17258;_",
+					[1435712141] = "1126,333,325,1039,16917,1822,3370,32398,50881,5531,42322,17258,2134,5294;_",
+					[1436320358] = "1126,333,1364,3850,13067,1822,64711,21938,1562,3969,1447,40875,17258,0,2134,5294;_",
+					[1436317415] = "1126,333,325,1039,3850,13067,88471,1562,3969,42322,10864,8528,5294;_",
+					[1436322026] = "1126,333,1364,16683,234,477,1345,86649,5531,42322;_",
+					[1436316973] = "1126,333,1364,3850,13067,88471,1562,3969,42322,10864,8528,5294,2367;_",
+					[1436318442] = "1126,333,325,1039,3850,13067,28698,59773,1562,3969,53186,4626;_",
+					[1435709405] = "1126,1697,18739,35768,3986,46895,1562,3969,3214;_",
+					[1436320110] = "1126,333,1364,3850,13067,1822,64711,21938,1562,3969,1447,40875,17258,2134,5294;_",
+					[1436317746] = "1126,333,1364,16683,234,12905,8990,35854,8784,21938,1562,3969,42322,10864;_",
+					[1435711518] = "774,352,333,325,1039,16917,1822,35768,28943,21938,5531,42322,19392,5294;_",
+					[1435711837] = "1126,333,325,1039,16917,1822,3370,32398,50881,5531,42322,19392,5294;_",
+					[1435711711] = "1126,333,325,1039,16917,477,1345,3370,32398,50881,5531,42322,19392,5294;_",
+					[1436317689] = "1126,333,325,1039,16683,234,88471,1562,3969,42322,10864;_",
+					[1435711397] = "1126,333,1364,16917,1822,35768,50881,5531,42322,19392,5294;_",
+					[1436323062] = "469,657,333,325,1039,3850,13067,88471,5531,42322,19392,5294;_",
+					[1435709226] = "1126,333,325,1039,54507,50881,1562,3969,41780,11406;_",
+					[1436321598] = "469,657,333,1364,16917,477,37113,50881,1562,3969,23831,18491,17258,0,2134,5294;_",
+					[1436317568] = "1126,333,325,1039,16683,234,28698,59773,5531,42322,10864;_",
+					[1436317632] = "774,352,333,1364,16683,234,88471,1562,3969,42322,10864,6394,3850;_",
+					[1436317760] = "1126,333,1364,16683,234,12905,75566,1562,3969,42322,10864,10244;_",
+					[1435709358] = "1126,658,1039,54507,3986,46895,1562,3969,3214,20617;_",
+					[1435712040] = "1126,333,325,1039,16917,1822,3370,32398,50881,5531,42322,19392,5294;_",
+					[1436317310] = "1126,333,325,1039,3850,13067,88471,1562,3969,42322,10864,8528,5294;_",
+					[1436321793] = "1126,333,1364,16683,234,88471,1562,3969,42322,17258,0,3713,137;_",
+					[1436321984] = "1126,333,325,1039,16683,234,477,1345,85336,1313,5531,42322;_",
+					[1436321858] = "1126,333,1364,16683,234,1822,86649,1562,3969,42322;_",
+					[1435709163] = "1126,333,1364,54507,50881,1562,3969,41780,11406,6394;_",
+					[1436317892] = "1126,333,1364,16683,234,41685,46786,1562,3969,42322,10864;_",
+					[1435715156] = "1126,333,325,1039,16917,5192,32398,50881,5531,23831,18491,10864,8528,5294;_",
+					[1436321121] = "469,657,333,325,1039,16917,37590,50881,1562,3969,42322,19392,4985,309;_",
+					[1436319171] = "1126,333,325,1039,3850,13067,1822,86649,1562,3969,42322,19392,5294;_",
+					[1436314839] = "1126,333,325,1039,3850,680,12387,1822,86649,1562,3969,42322,19392,5294;_",
+					[1436320147] = "1126,333,325,1039,3850,13067,1822,64711,21938,1562,3969,42322,258,19134,5294;_",
+					[1436322570] = "139,987,333,325,1039,3850,13067,1822,55927,30722,5531,42322,19392,5294;_",
+					[1435711666] = "1126,333,325,1039,16917,477,1345,3370,32398,28943,21938,5531,23831,18491,19392,5294;_",
+					[1435711603] = "1126,333,325,1039,16917,477,1345,3370,32398,50881,5531,23831,18491,19392,5294;_",
+					[1435713135] = "469,990,325,1039,17394,4715,32398,50881,5531,3214,20617,18491,11123,8269,5294;_",
+					[1436321930] = "1126,333,1364,16683,234,1822,26876,59773,5531,42322,17258,3713;_",
+					[1436320200] = "1126,333,325,1039,3850,13067,1822,86649,1562,3969,42322,19392,5294;_",
+					[1436320264] = "1126,333,325,1039,3850,13067,1822,86649,1562,3969,42322,19392,5294;_",
+					[1435709305] = "139,987,658,1039,54507,3986,16173,8784,21938,1562,3969,15255,8576,29355;_",
+					[1435709686] = "1126,333,325,1039,4530,12387,1822,35768,50881,1562,3969,42322,19392,5294;_",
+					[1435712630] = "469,657,333,325,1039,16917,477,4715,32398,50881,1562,3969,23831,18491,19392,5294;_",
+					[1436321994] = "1126,333,325,1039,16683,234,477,1345,86649,5531,42322;_",
+					[1435711925] = "1126,333,1364,16917,1822,3370,23506,8892,28943,21938,5531,42322,19392,5294;_",
+					[1435715890] = "469,657,333,325,1039,16683,234,477,4715,83279,1562,3969,42322,19392,5294;_",
+					[1436317023] = "1126,333,1364,3850,13067,88471,1562,3969,42322,19392,5294,2367;_",
+					[1435709110] = "1126,333,1364,54507,50881,1562,3969,1447,40333,11406,6394;_",
+					[1435709277] = "1126,658,1039,54507,3986,46895,1562,3969,41780,11406;_",
+					[1436317161] = "1126,333,1364,3850,13067,88471,1562,3969,42322,19392,5294,2367;_",
+					[1435709048] = "1126,333,1364,54507,28943,21938,5531,41780,11406;_",
+					[1435714618] = "469,657,333,1364,16683,234,5192,83279,1562,3969,23831,18491,19392,5294;_",
+					[1436317647] = "1126,333,1364,16683,234,88471,1562,3969,23831,18491,10864;_",
+					[1436317257] = "1126,333,1364,3850,13067,28698,37835,21938,1562,3969,42322,10864,8528,5294;_",
+					[1435713586] = "469,657,333,325,1039,16917,477,4715,32398,50881,5531,42322,19392,5294;_",
+					[1435712121] = "1126,333,1364,16917,1822,3370,32398,50881,5531,42322,17258,2134,5294;_",
+					[1436320227] = "1126,333,1364,3850,13067,1822,86649,1562,3969,42322,17258,2134,5294;_",
+					[1436317474] = "1126,333,325,1039,3850,13067,1822,86649,1562,3969,42322,19392,5294;_",
+					[1435711361] = "1126,333,1364,16917,1822,35768,50881,5531,23831,18491,17258,0,2134,1579,137,3578;_",
+					[1435710953] = "1126,333,325,1039,16917,1822,35768,50881,5531,23831,18491,19392,5294;_",
+				},
+				["US:CenarionCircle:Toxxi"] = {
+					[1436317790] = "324,222,580,333,1186,4028,13067,1822,32255,19864,36092,7183,58500,5292;_",
+					[1436321815] = "324,222,580,333,1186,16861,234,1822,52119,2,3806,32284,7183,1516,44085,18191;_",
+					[1436320358] = "324,802,333,5214,13067,1822,32255,19864,36092,7183,1516,44085,12899,5292;_",
+					[1436320110] = "324,802,333,5214,13067,1822,52119,2,36090,7183,58500,5292;_",
+					[1436317310] = "324,802,333,5214,13067,34077,19864,36092,7183,1516,44085,4371,8528,1528,3764;_",
+					[1436315613] = "324,802,333,5214,13067,1822,38862,49349,7183,58500,5292;_",
+					[1436317204] = "324,802,333,5214,13067,34077,19864,36092,7183,1516,44085,4371,8528,5292;_",
+					[1436316582] = "324,802,333,5214,13067,1822,38862,46474,2875,7183,58500,5292;_",
+					[1436317023] = "324,802,333,5214,13067,34077,19864,2,36090,7183,1516,44085,4371,8528,1705,3587;_",
+					[1436317161] = "324,222,580,333,1186,4028,13067,34077,55956,7183,49972,8528,5292;_",
+					[1436317689] = "324,802,333,5214,13067,1822,52119,36092,7183,1516,56984,5292;_",
+					[1436317760] = "324,802,333,5214,13067,1822,32255,19864,2,36090,7183,1516,56984,5292;_",
+					[1436321793] = "324,802,333,18047,234,90033,7183,63792;_",
+					[1436316122] = "139,185,802,333,5214,13067,30128,10556,49349,57155,8528,5292;_",
+					[1436321994] = "324,802,333,18047,234,477,1345,52119,2,40059,3214,60205,3587;_",
+					[1436320147] = "324,802,333,5214,13067,1822,26876,61335,7183,58500,5292;_",
+					[1436316973] = "324,802,333,5214,13067,53941,12592,0,23500,7183,1516,44085,4371,8528,5292;_",
+					[1436321930] = "324,222,580,333,1186,16861,234,1822,92180,3214,63792;_",
+					[1436318442] = "324,802,333,5214,13067,1822,38862,49349,7183,58500,5292;_",
+					[1436317568] = "324,802,333,5214,13067,1822,52119,2,36090,7183,1516,44085,12899,5292;_",
+					[1436322026] = "324,802,333,18047,234,477,1345,20073,6118,25928,40061,3214,1516,44085,18191;_",
+					[1436323062] = "324,145,657,333,5214,13067,94002,3214,58500,5292;_",
+					[1436321984] = "324,802,333,18047,234,477,1345,32255,19864,2,33215,6844,3214,1516,44085,14604,3587;_",
+					[1436317647] = "324,802,333,5214,13067,1822,32255,55956,7183,58500,5292;_",
+					[1436317257] = "324,802,333,5214,13067,28698,5379,19864,36092,7183,25956,24016,8528,1705,3587;_",
+					[1436321946] = "324,222,580,333,1186,16861,234,1822,92180,3214,63792;_",
+					[1436322570] = "324,802,333,5214,13067,1822,52119,2,40059,3214,1516,44085,12899,5292;_",
+					[1436317474] = "324,222,580,333,1186,4028,13067,1822,88211,7183,58500,5292;_",
+					[1436321892] = "324,802,333,18047,234,1822,32255,59925,3214,63792;_",
+					[1436317856] = "324,450,352,333,5214,13067,1822,20073,13322,18963,3569,8784,23500,7183,58500,5292;_",
+					[1436321598] = "324,1135,18047,711,33600,19866,40059,3214,49972,259;_",
+					[1436319967] = "324,222,580,333,1186,4028,13067,1822,88211,7183,58500,5292;_",
+					[1436317415] = "324,222,580,333,1186,4028,13067,34077,55956,7183,49972,8528,5292;_",
+					[1436320227] = "324,802,333,5214,13067,1822,20073,12182,19864,36092,7183,1516,56984,5292;_",
+					[1436321829] = "324,802,333,18047,234,1822,32255,19864,36092,7183,63792;_",
+					[1436317632] = "324,802,333,5214,13067,1822,32255,55956,7183,58500,5292;_",
+					[1436320264] = "17,307,450,352,333,5214,13067,1822,26942,5313,19864,2,3806,32284,7183,1516,37305,6780,12899,5292;_",
+					[1436317746] = "324,802,333,5214,13067,1822,32255,19864,2,12590,23500,7183,1516,56984,5292;_",
+					[1436317892] = "324,222,580,333,1186,4028,13067,1822,52119,2,36090,7183,1516,44085,12899,5292;_",
+					[1436321121] = "324,145,657,333,18281,37590,52443,7183,58500,5292;_",
+					[1436319171] = "324,802,333,5214,13067,1822,38862,49349,7183,58500,5292;_",
+					[1436321858] = "324,802,333,18047,234,1822,52119,36092,7183,63792;_",
+					[1436320200] = "324,802,333,5214,13067,1822,32255,19864,36092,7183,1516,44085,12899,5292;_",
+					[1436314839] = "324,802,333,5214,680,12387,1822,88211,7183,58500,5292;_",
+				},
+				["US:CenarionCircle:Itankuthank"] = {
+					[1436317790] = "1126,333,998,17049,234,90033,7183,49972;_",
+					[1436321815] = "1126,333,998,17049,234,1822,26876,3999,33836,23500,7183,39366;_",
+					[1436320358] = "139,987,1331,17049,32931,25052,32284,7183,12041,27083,10848,6394;_",
+					[1436320110] = "1126,333,998,4216,13067,1822,88211,7183,39124,17242,2117,5311;_",
+					[1436317310] = "1126,333,998,4216,13067,32697,57336,3969,42338,10848,6394,2117,5306;_",
+					[1436315613] = "139,987,333,998,4216,13067,1822,55927,32284,3969,42338,348,19011,5306;_",
+					[1436317204] = "1126,333,998,4216,13067,12476,77557,3969,42338,10848,8511,5306;_",
+					[1436316582] = "1126,333,998,4216,13067,1822,85336,2875,7183,39124,19359,5306;_",
+					[1436317023] = "1126,333,998,4216,103100,3969,15255,27083,10848,8511,5306;_",
+					[1436317161] = "1126,333,998,4216,13067,30128,59905,46307,10848,8511,5306;_",
+					[1436317689] = "1126,1331,17049,234,28698,61335,7183,12041,27083,10848;_",
+					[1436317760] = "1126,1331,9871,7178,234,90033,7183,12041,37931,6394;_",
+					[1436321793] = "1126,333,998,17049,234,32697,57336,7183,56366;_",
+					[1436316122] = "1126,333,998,4216,13067,1822,88211,7183,39124,19359,5306;_",
+					[1436321994] = "1126,333,998,17049,234,477,1345,55927,36253,42338,17242,2117;_",
+					[1436320147] = "1126,333,998,4216,13067,1822,88211,7183,39124,19359,5311;_",
+					[1436316973] = "1126,333,998,4216,53751,49349,3969,15255,27083,10848,8511,5306;_",
+					[1436321930] = "1126,333,998,17049,234,1822,92180,3214,39124,19359;_",
+					[1436318442] = "1126,333,998,4216,13067,90033,3969,13573,28765,10848,8511,5311;_",
+					[1436317568] = "1126,1331,17049,14257,83193,12041,27083,10848;_",
+					[1436322026] = "1126,333,998,17049,234,477,1345,92180,42338,17242,2117;_",
+					[1436323062] = "469,657,333,998,4216,13067,94002,3214,39124,348,19011,5311;_",
+					[1436321984] = "1126,333,998,17049,234,477,1345,85336,6844,42338,19359;_",
+					[1436317647] = "1126,1331,17049,234,90033,7183,12041,27083,10848;_",
+					[1436317257] = "1126,333,998,4216,13067,32697,25052,32284,3969,42338,10848,8511,5306;_",
+					[1436321946] = "1126,333,998,9871,7178,234,1822,30875,61305,3214,39124,19359;_",
+					[1436322570] = "1126,333,998,4216,13067,1822,92180,42338,19359,5311;_",
+					[1436317474] = "1126,333,998,4216,13067,1822,88211,3969,42338,19359,5306;_",
+					[1436321892] = "1126,333,998,17049,234,1822,92180,3214,39124,19359;_",
+					[1436317856] = "774,352,333,998,17049,234,90033,7183,38821,7138,4013;_",
+					[1436321598] = "469,657,333,998,17283,477,37113,52443,7183,58483,5311;_",
+					[1436319967] = "1126,333,998,4216,13067,1822,88211,7183,39124,19359,5311;_",
+					[1436317415] = "1126,333,998,4216,13067,21895,68138,3969,42338,10848,8511,5306;_",
+					[1436320227] = "1126,333,998,4216,13067,1822,30875,57336,7183,39124,19359,5311;_",
+					[1436321829] = "774,352,333,998,17049,234,1822,10654,54057,23500,7183,38821,303,242,19117;_",
+					[1436317632] = "1126,1331,17049,234,28698,61335,7183,12041,27083,10848;_",
+					[1436320264] = "1126,333,998,4216,13067,1822,64711,0,23500,7183,39124,19359,5311;_",
+					[1436317746] = "1126,1331,17049,234,12476,54057,23500,7183,12041,37931;_",
+					[1436317892] = "1126,333,998,17049,234,90033,3969,53186,13822;_",
+					[1436321121] = "469,657,333,998,17283,37590,52443,7183,39124,348,19011,5311;_",
+					[1436319171] = "1126,333,998,4216,13067,1822,88211,7183,39124,348,19011,5311;_",
+					[1436321858] = "1126,333,998,17049,234,1822,20073,68138,7183,39124,19359;_",
+					[1436320200] = "1126,333,998,4216,13067,1822,30875,57336,7183,39124,17242,2117,5311;_",
+					[1436314839] = "139,987,333,998,4216,680,12387,1822,55927,32284,3969,42338,19359,5306;_",
+				},
+				["US:Sisters of Elune:Irrebella"] = {
+					[1435711934] = "139,635,352,333,18281,1822,3370,16703,15695,20159,3719,5065,27469,3214,38406,717,24670;_",
+					[1436317204] = "1126,333,5214,13067,25502,4626,27621,3719,28565,45589,717,10849,8529,5292;_",
+					[1436321815] = "1126,333,18047,234,1822,26876,29051,3719,28565,7183,38406,717,24670;_",
+					[1435711556] = "139,987,333,18281,477,1345,3370,32398,23878,5065,27469,3214,38406,717,24670;_",
+					[1436315613] = "1126,333,5214,13067,1822,59646,28565,3969,41621,716,3597,15781,1719,3573;_",
+					[1436316122] = "1126,333,5214,13067,1822,59646,28565,7183,38407,716,3597,15781,5292;_",
+					[1436321946] = "1126,333,18047,234,1822,23680,32247,3719,32534,3214,38406,717,3597,21073;_",
+					[1436317790] = "1126,333,5214,13067,1822,55927,3719,28565,3969,41620,717,19378,5292;_",
+					[1435708999] = "1126,5547,13067,1822,34048,5706,19892,74154,25387;_",
+					[1436317856] = "17,1109,333,5214,13067,1822,42173,13754,3719,5065,23500,3969,41620,717,243,19135,5292;_",
+					[1436319967] = "1126,333,18047,234,61468,28565,3969,41620,717,10849,8529,5292;_",
+					[1435711946] = "1126,333,18281,1822,3370,16703,15695,23878,32534,3214,38406,717,20981,3689;_",
+					[1435710542] = "139,987,333,18281,477,1345,34048,1720,20159,3719,28565,45589,717,3597,15781,1719,3573;_",
+					[1436316582] = "1126,333,5214,13067,1822,55927,3719,25690,2875,3969,41620,717,3597,15781,1603,116,3573;_",
+					[1435716684] = "1126,333,18281,477,1345,3370,24936,7462,23878,28565,45589,717,19378,5292;_",
+					[1435715471] = "139,987,333,18281,477,4715,32398,23878,28565,7183,38406,717,10849,13821;_",
+					[1435709069] = "1126,333,18281,1822,34048,1720,23878,32534,41620,25387;_",
+					[1436321892] = "1126,333,18047,234,1822,42173,13754,3719,32534,3214,38406,717,21097,3573;_",
+					[1436321829] = "1126,333,18047,234,1822,42173,13754,3719,28565,7183,38406,717,21097,3573;_",
+					[1435712141] = "1126,333,18281,1822,3370,32398,23878,32534,3214,38407,716,3597,17500,3573;_",
+					[1436320358] = "1126,333,18047,61702,28565,7183,38406,717,10849;_",
+					[1436317415] = "1126,333,5214,13067,30128,31340,28565,45589,717,10849,8529,5292;_",
+					[1436322026] = "1126,333,18047,234,477,1345,23680,18493,13754,3719,32534,3214,38406,717,20981,3689;_",
+					[1436316973] = "1126,333,5214,13067,57749,3719,28565,3969,41620,717,3597,7252,8529,5292;_",
+					[1436318442] = "1126,333,5214,13067,1822,59646,28565,3969,41620,717,19378,5292;_",
+					[1435709405] = "1126,333,18281,477,1345,34048,1720,23878,28565,45589,4314,21073;_",
+					[1436320110] = "1126,333,18047,234,43995,13754,3719,28565,3969,41620,717,3597,7252,8529,5292;_",
+					[1436317746] = "1126,333,5214,13067,1822,42173,13754,3719,28565,3969,41620,717,19378,1719,3573;_",
+					[1435711518] = "1126,333,18281,1822,35768,23878,5065,27469,3214,38406,1,716,11073,13597;_",
+					[1435711837] = "1126,333,18281,1822,3370,32398,23878,32534,3214,38406,717,24670;_",
+					[1435711711] = "1126,333,18281,477,1345,3370,32398,23878,32534,3214,38406,717,24670;_",
+					[1436317689] = "1126,333,5214,13067,1822,59646,28565,3969,41620,717,19378,5292;_",
+					[1435711397] = "1126,333,18281,1822,35768,23878,32534,3214,38406,717,3597,21073;_",
+					[1436323062] = "469,657,333,5214,13067,61468,32534,41620,717,19378,5292;_",
+					[1435709226] = "1126,333,18281,1822,34048,1720,23878,28565,45589,25387;_",
+					[1436321598] = "469,657,333,18281,477,7610,29503,23878,28565,7183,38406,717,3597,15781,1603,3689;_",
+					[1436317568] = "1126,333,5214,13067,1822,55927,3719,28565,3969,41620,717,19378,5292;_",
+					[1436317632] = "1126,333,5214,13067,1822,59646,28565,3969,41620,717,19378,5292;_",
+					[1436317760] = "1126,333,5214,13067,1822,42173,13754,3719,5065,23500,3969,41621,716,19378,5292;_",
+					[1435709358] = "1126,333,18281,477,1345,34048,1720,23878,28565,45589,25387;_",
+					[1435712040] = "774,352,333,18281,1822,3370,32398,23878,32534,3214,38406,717,24670;_",
+					[1436317310] = "1126,333,5214,13067,30128,27621,3719,28565,45589,717,3597,7252,8529,5292;_",
+					[1436321793] = "1126,333,18047,234,61468,28565,7183,38406,717,20981,116,3573;_",
+					[1436321984] = "1126,333,18047,234,477,1345,59646,25690,6844,3214,38406,717,20981,116,3573;_",
+					[1436321858] = "1126,333,18047,234,1822,59646,28565,7183,38406,1,716,3597,21073;_",
+					[1435709163] = "1126,333,18281,1822,34048,1720,4095,19783,5065,23500,45589,25387;_",
+					[1436317892] = "1126,333,5214,13067,1822,59646,28565,3969,42337,19378,5292;_",
+					[1435715156] = "469,657,333,18281,5192,24936,7462,23878,74154,717,3597,17384,116,3573;_",
+					[1436321121] = "469,657,333,18281,37590,23878,28565,7183,38407,716,19378,5292;_",
+					[1436319171] = "1126,333,5214,13067,1822,59646,28565,7183,38406,717,19378,5292;_",
+					[1436314839] = "1126,333,5214,680,12387,1822,59646,28565,3969,41620,717,3597,15781,5292;_",
+					[1436320147] = "1126,333,18047,234,61468,28565,3969,41620,717,10849,8529,5292;_",
+					[1436322570] = "139,987,333,5214,13067,1822,55927,3719,32534,3214,38406,717,3597,15781,1603,116,3573;_",
+					[1435711666] = "1126,333,7477,10804,477,1345,3370,23572,8826,6405,17473,5065,27469,3214,38406,717,243,24427;_",
+					[1435711603] = "1126,333,18281,477,1345,3370,32398,23878,32534,3214,38406,717,11073,13597;_",
+					[1435713135] = "469,657,333,18758,4715,30678,1720,23878,32534,41780,557,19378,5292;_",
+					[1436321930] = "1126,333,18047,234,1822,42173,13754,3719,32534,3214,38406,717,3597,21073;_",
+					[1436320200] = "1126,333,18047,234,61468,28565,3969,41620,717,3597,7252,8529,5292;Player-1169-06F6EC37,Creature-0-3132-1448-32244-62982-00001C81C7",
+					[1436320264] = "1126,333,18047,234,21895,39573,5065,23500,3969,41620,717,10849,8529,5292;_",
+					[1435709305] = "1126,18614,1822,34048,1720,3986,2419,17473,28565,45589,25387;_",
+					[1435709686] = "1126,333,5894,12387,1822,34048,1720,23878,28565,45589,717,3597,15781,1603,3689;_",
+					[1435712630] = "469,657,333,18281,477,4715,32398,23878,28565,7183,38407,716,3597,15781,1603,116,3573;_",
+					[1436321994] = "1126,333,18047,234,477,1345,55927,3719,5065,27469,3214,38406,1,716,24670;_",
+					[1435711925] = "774,352,333,18281,1822,3370,20310,3196,8892,20159,3719,5065,27469,3214,38407,716,24670;_",
+					[1435715890] = "139,987,333,18047,234,477,4715,24936,27621,3719,28565,45589,717,10849,13821;_",
+					[1436317023] = "1126,333,5214,13067,30128,27621,3719,28565,45589,717,10849,8529,1603,116,3573;_",
+					[1435709110] = "1126,333,18281,1822,23680,10368,1720,6405,17473,28565,45589,21698,3689;_",
+					[1435709277] = "1126,18614,1822,34048,1720,3986,2419,17473,5065,0,23500,45589,21698,3689;_",
+					[1436317161] = "1126,333,5214,13067,30128,31340,28565,45589,717,10849,8529,5292;_",
+					[1435709048] = "1126,333,18281,1822,34048,1720,6405,17473,5065,27469,41620,25387;_",
+					[1435714618] = "469,657,333,18047,234,5192,30678,25598,28565,45589,717,3597,17384,116,3573;_",
+					[1436317647] = "1126,333,5214,13067,1822,59646,28565,3969,41620,717,19378,1719,3573;_",
+					[1436317257] = "139,987,333,5214,13067,25502,3196,1430,27621,3719,28565,45590,716,3597,7252,8529,5292;_",
+					[1435713586] = "469,657,333,18281,477,4715,24936,7462,23878,74154,717,19378,5292;_",
+					[1435712121] = "139,987,333,18281,1822,3370,16703,15695,23878,5065,27469,3214,38406,717,24670;Player-1169-06F6EC37,Creature-0-3132-1448-2476-62982-0000133A6B",
+					[1436320227] = "1126,333,18047,234,61468,28565,3969,41620,717,3597,7252,8529,5292;_",
+					[1436317474] = "1126,333,5214,13067,1822,28306,31340,28565,45589,717,19378,5292;_",
+					[1435711361] = "1126,333,18281,1822,35768,23878,32534,3214,38406,717,3597,17384,116,3573;_",
+					[1435710953] = "139,987,333,18281,1822,35768,23878,32534,3214,38406,717,3597,17384,116,3573;_",
+				},
+				["US:CenarionCircle:Belpha"] = {
+					[1435711934] = "324,450,352,333,18281,1822,3370,32398,16351,2,12590,0,27469,3214,26669,12439,258,24426;_",
+					[1436317204] = "324,802,333,5214,13067,30128,3949,19864,36092,8699,25153,12439,6493,4371,8528,5292;_",
+					[1436321815] = "1126,333,18047,234,1822,88211,7183,26669,16050,0,17360,137;_",
+					[1435711556] = "324,802,333,18281,477,1345,3370,28885,3513,16351,40061,3214,1516,25153,12439,6493,18191;_",
+					[1436315613] = "324,802,333,5214,13067,1822,52119,2,36090,7183,1516,25153,12439,359,6134,18191;_",
+					[1436316122] = "324,802,333,5214,13067,1822,52119,2,36090,7183,26669,12439,6493,12899,5292;_",
+					[1436321946] = "1126,333,18047,234,1822,32255,19864,12592,27469,3214,1516,25153,18932;_",
+					[1436317790] = "324,802,333,18047,234,34077,55956,3969,29883,12439,10864,13820;_",
+					[1435708999] = "324,802,333,33438,82059,26669,32526;_",
+					[1436317856] = "324,802,333,18047,234,57749,32284,3969,29883,12439,10864,13820;_",
+					[1436319967] = "324,802,333,1186,4028,13067,1822,88211,7183,26669,12439,19392,5292;_",
+					[1435711946] = "324,802,333,18281,1822,3370,28885,3513,16351,12592,27469,3214,26669,12439,258,24426;_",
+					[1435710542] = "324,802,333,18281,477,1345,35768,16351,2,36090,7183,1516,25153,12439,6493,18191;_",
+					[1436316582] = "324,450,352,333,5214,13067,1822,55927,29409,2875,7183,26669,12439,19392,5292;_",
+					[1435716684] = "324,802,333,18281,477,1345,3370,24936,7462,16351,36092,33852,12439,3611,17497,3576;_",
+					[1435715471] = "324,145,657,333,18281,477,4715,32398,16351,2,36090,7183,1516,25153,12439,6493,18191;_",
+					[1435709069] = "324,802,333,33438,82059,26669,32526;_",
+					[1436321892] = "1126,333,18047,234,1822,52119,40061,3214,1516,25153,16050,2882,14615;_",
+					[1436321829] = "1126,333,18047,234,1822,32255,32456,23500,7183,26669,16050,0;_",
+					[1435712141] = "324,802,333,18281,1822,3370,28885,3513,16351,40061,3214,1516,25153,12439,3611,21073;_",
+					[1436320358] = "324,802,333,1186,4028,13067,1822,88211,7183,26669,12439,19392,5292;_",
+					[1436317415] = "324,802,333,1186,4028,13067,30128,3949,55956,33852,12439,10864,8528,5292;_",
+					[1436322026] = "1126,333,18047,234,477,1345,20073,32046,40061,3214,1516,25153,33410;_",
+					[1436316973] = "324,802,333,5214,13067,30128,3949,32456,23500,8699,25153,12439,3611,0,7253,8528,5292;_",
+					[1436318442] = "324,802,333,5214,13067,53941,2,36090,3969,4730,25153,12439,359,6134,4371,13820;_",
+					[1435709405] = "324,802,333,1186,16861,234,477,1345,32255,55956,7183,26669,32526;_",
+					[1436320110] = "324,802,333,5214,13067,1822,32255,19864,12592,23500,7183,1516,25153,12439,19392,5292;_",
+					[1436317746] = "324,802,333,1186,16861,234,34077,32456,23500,3969,29883,12439,3611,7253,13820;_",
+					[1435711518] = "324,802,333,18281,1822,32255,3513,16351,40061,3214,1516,25153,12439,6493,18191;_",
+					[1435711837] = "324,802,333,18281,1822,3370,32398,16351,2,40059,3214,1516,25153,12439,6493,18191;_",
+					[1435711711] = "324,802,333,1186,17095,477,1345,3370,32398,56412,3214,26669,12439,24684;_",
+					[1436317689] = "324,802,333,18047,234,90033,3969,29883,12439,10864,13820;_",
+					[1435711397] = "324,802,333,18281,1822,32255,3513,16351,40061,3214,1516,25153,12439,6493,14478,3713;_",
+					[1436323062] = "324,145,657,333,5214,13067,53941,2,40059,3214,1516,25153,12439,6493,18191;_",
+					[1435709226] = "324,802,333,1186,16861,234,90033,7183,26669,23303,9223;_",
+					[1436321598] = "19506,94236,3214,12041,14628,16050,7253,259;_",
+					[1436317568] = "324,802,333,18047,234,94002,29883,12439,10864;_",
+					[1436317632] = "324,802,333,18047,234,21895,32046,2,36090,3969,4730,25153,12439,3611,0,7253;_",
+					[1436317760] = "324,802,333,1186,16861,234,34077,32456,23500,3969,29883,12439,3611,7253,13820;_",
+					[1435709358] = "324,802,333,1186,16861,234,477,89556,7183,26669,23303,9223;_",
+					[1435712040] = "324,802,333,18281,1822,3370,32398,16351,40061,3214,1516,25153,12439,6493,14478,3713;_",
+					[1436317310] = "324,802,333,5214,13067,30128,3949,19864,36092,8699,25153,12439,3611,0,2882,4371,8528,1579,137,3576;_",
+					[1436321793] = "1126,333,1186,16861,234,90033,7183,26669;_",
+					[1436321984] = "1126,333,18047,234,477,1345,32255,19864,12592,20625,6844,3214,1516,25153,12697,6235,14478;_",
+					[1436321858] = "1126,333,18047,234,1822,88211,7183,26669;_",
+					[1435709163] = "324,802,333,18047,15391,74876,7183,26669,23303,9223;_",
+					[1436317892] = "324,802,333,1186,16861,234,90033,3969,29883,12439,10864,13820;_",
+					[1435715156] = "324,802,333,18281,5192,30678,1720,16351,2,12590,27469,4730,25153,12439,6493,4371;_",
+					[1436321121] = "324,145,657,333,18281,37590,16351,2,36090,7183,1516,25153,12439,6493,8312,4587,5292;_",
+					[1436319171] = "324,802,333,1186,4028,13067,1822,52119,2,36090,7183,1516,25153,12439,6493,12899,1716,3576;_",
+					[1436314839] = "324,802,333,1186,4028,680,12387,1822,52119,2,36090,7183,1516,25153,12439,4624,1869,18191;_",
+					[1436320147] = "324,802,333,5214,13067,1822,26876,25243,36092,7183,26669,12439,3611,15781,5292;_",
+					[1436322570] = "324,802,333,5214,13067,1822,52119,2,40059,3214,26669,12439,24684;_",
+					[1435711666] = "324,802,333,1186,6291,10804,477,1345,3370,32398,16351,2,12590,27469,3214,26669,12439,24684;_",
+					[1435711603] = "324,802,333,1186,17095,477,1345,3370,32398,16351,2,40059,3214,1516,25153,12439,6493,18191;_",
+					[1435713135] = "324,145,990,18758,4715,32398,16351,2,40059,3214,1516,25153,12439,6493,4631,13560;_",
+					[1436321930] = "1126,333,1186,16861,234,1822,92180,3214,26669;_",
+					[1436320200] = "324,802,333,5214,13067,1822,88211,7183,26669,12439,19392,5292;_",
+					[1436320264] = "324,450,352,333,5214,13067,1822,32255,19864,2,12590,23500,7183,1516,25153,12439,6493,12899,5292;_",
+					[1435709305] = "324,802,1519,16861,234,34077,7499,48457,7183,26669,16050,7253,9223;_",
+					[1435709686] = "324,802,333,5894,12387,1822,35768,16351,2,36090,7183,1516,25153,12439,6493,18191;_",
+					[1435712630] = "324,145,657,333,18281,477,4715,32398,16351,36092,7183,1516,25153,12439,3611,2882,18191;_",
+					[1436321994] = "774,352,333,18047,234,477,1345,32255,19864,2,12590,27469,3214,1516,25153,18932,14615;_",
+					[1435711925] = "324,802,333,18281,1822,3370,28885,3513,28943,27469,3214,26669,12439,3611,17497,3576;_",
+					[1435715890] = "324,145,657,333,18047,234,477,4715,48749,36092,7183,1516,25153,12439,3611,21073;_",
+					[1436317023] = "324,450,352,333,5214,13067,30128,3949,55956,33852,12439,10864,8528,5292;_",
+					[1435709110] = "324,802,333,18047,15391,74876,7183,26669,23303,9223;_",
+					[1435709277] = "324,802,18380,234,21895,19681,48457,7183,26669,16050,7253,9223,884,137;_",
+					[1436317161] = "324,802,333,5214,13067,30128,23813,12592,23500,8699,25153,12439,3611,2882,4371,8528,1579,3713;_",
+					[1435709048] = "324,802,333,33438,82059,26669,32526;_",
+					[1435714618] = "324,145,657,333,14729,3318,234,5192,48749,2,36090,7183,1516,25153,12439,6493,18191;_",
+					[1436317647] = "139,185,802,333,1186,16861,234,90033,3969,17826,12057,12439,10864;_",
+					[1436317257] = "324,450,0,352,333,5214,13067,30128,3949,19864,36092,33852,12439,3611,7253,8528,1716,3576;_",
+					[1435713586] = "324,145,657,333,18281,477,4715,32398,16351,2,40059,4730,25153,12439,6493,18191;_",
+					[1435712121] = "324,802,333,18281,1822,3370,28885,3513,56412,3214,26669,12439,20971,3713;_",
+					[1436320227] = "324,802,333,5214,13067,1822,32255,19864,36092,7183,1516,25153,12439,3611,0,15781,1716,3576;_",
+					[1436317474] = "324,802,333,1186,4028,13067,1822,28306,59905,33852,12439,19392,5292;_",
+					[1435711361] = "324,802,333,1186,13543,3552,1822,35768,56412,3214,26669,12439,24684;_",
+					[1435710953] = "324,802,333,1186,17095,1822,35768,16351,2,40059,3214,1516,25153,12439,6493,14615,3576;_",
+				},
+				["US:Sisters of Elune:Jpettry"] = {
+					[1436320264] = "1126,333,18047,234,66533,23500,7183,39124,968,9783,97,13822;_",
+					[1436319171] = "1126,333,5214,13067,67433,22600,4477,2706,4071,35053,348,10500,6394,7428;_",
+					[1436317023] = "774,352,333,18047,234,90033,7183,39124,10848,13822;_",
+					[1436317310] = "1126,333,18047,234,90033,7183,39124,10848,13822;_",
+					[1436316582] = "774,352,333,18047,234,1822,85336,2875,7183,38821,303,348,24322;_",
+					[1436320358] = "1126,333,18047,234,90033,4477,1418,1288,4071,35053,10848,6394,3853,3575;_",
+					[1436320227] = "1126,333,18047,234,67433,22600,4477,1418,1288,4071,35053,968,9880,6394,7428;_",
+					[1436317474] = "1126,333,18047,234,1822,88211,7183,39124,24670;_",
+					[1436317568] = "1126,333,18047,234,1822,88211,3969,42338,24670;_",
+					[1436320147] = "1126,333,18047,234,90033,7183,39124,968,9880,13822;_",
+					[1436321598] = "469,657,333,18281,477,37113,52443,4477,1418,1288,4071,35053,968,9783,13919;_",
+					[1436321121] = "469,657,333,18281,37590,52443,7183,39124,348,24322;_",
+					[1436317856] = "774,352,333,18047,234,1822,28306,59905,46307,24670;_",
+					[1436317204] = "1126,333,18047,234,67433,22600,4477,1418,1288,4071,35053,968,9880,6394,7428;_",
+					[1436314839] = "1126,333,5214,680,12387,1822,88211,7183,39124,348,24322;_",
+					[1436320110] = "1126,333,18047,234,90033,4477,1418,1288,4071,35053,968,9880,13822;_",
+					[1436317632] = "1126,333,18047,234,1822,88211,3969,42338,24670;_",
+					[1436318442] = "1126,333,5214,13067,1822,88211,3969,42338,348,24322;_",
+					[1436319967] = "1126,333,18047,234,90033,7183,39124,10848,13822;_",
+					[1436316973] = "1126,333,18047,234,57749,32284,7183,39124,10848,13822;_",
+					[1436317415] = "1126,333,18047,234,67433,22600,4477,1418,1288,4071,35053,968,9880,6394,7428;_",
+					[1436317892] = "1126,333,18047,234,1822,88211,3969,42338,24670;_",
+					[1436320200] = "1126,333,18047,234,90033,7183,39124,10848,13822;_",
+					[1436317257] = "1126,333,18047,234,90033,4477,2706,39124,968,9880,13822;_",
+					[1436317760] = "1126,333,18047,234,1822,28306,59905,4477,1418,5359,35053,968,20127,3575;_",
+					[1436317647] = "1126,333,18047,234,1822,88211,3969,42338,24670;_",
+					[1436317746] = "774,352,333,7477,10570,234,1822,28306,36405,0,23500,4477,6777,34750,303,9362,7880,3853,3575;_",
+					[1436317689] = "1126,333,18047,234,1822,88211,7183,39124,24670;_",
+					[1436317161] = "1126,333,18047,234,90033,7183,39124,968,9783,97,13822;_",
+					[1436317790] = "1126,333,18047,234,1822,28306,10556,49349,46307,968,23702;_",
+					[1436315613] = "1126,333,5214,13067,1822,88211,7183,39124,348,24322;_",
+				},
+				["US:CenarionCircle:Kheldru"] = {
+					[1435711556] = "1126,333,18281,477,1345,3370,23331,959,4143,198,2047,1720,15638,4567,8738,27469,42580,588,0,1390,5747,11392,712,4461,137;_",
+					[1435711946] = "774,352,333,7477,10804,1822,3370,23331,241,1917,2944,198,2047,1720,15638,13305,27469,42035,1133,0,1390,5747,11392,712,4598;_",
+					[1435715471] = "139,635,0,352,333,7477,10804,477,4715,23331,241,718,646,3695,0,3767,15638,13305,16078,7422,46004,307,826,1390,8628,8511,5310;_",
+					[1435716684] = "774,0,352,333,18281,477,1345,3370,16703,6628,959,4341,3767,15638,4521,8784,0,23500,7183,38821,307,826,0,1390,17139,5310;_",
+					[1435715156] = "139,330,305,0,352,333,7477,10804,5192,8831,7872,6628,241,718,646,3695,1394,2373,15638,13305,0,69504,307,238,588,0,1390,17139,5310;_",
+					[1435709686] = "139,635,352,333,5894,12387,1822,20073,6628,959,4341,2047,1720,15638,13305,12171,11329,46004,545,588,1390,17139,712,4598;_",
+					[1435709048] = "139,987,333,18281,21895,6628,5300,2047,1720,15638,13305,0,0,27469,42580,588,1390,5747,2881,8511,712,4598;_",
+					[1435709277] = "139,987,18614,28523,2158,3142,2047,1720,3986,11652,4521,8784,23500,47137,1390,5747,2881,8511,712,1024,3574;_",
+					[1435709226] = "1126,333,18281,28523,2158,2944,198,2047,1720,15638,4521,32284,46549,588,1390,5747,2881,8511,712,891,3707;_",
+					[1435711518] = "774,352,333,18281,1822,26701,5102,198,2047,1720,15638,4567,36207,43168,0,1390,5747,11392,712,4461,137;_",
+					[1435711837] = "1126,333,18281,1822,3370,23331,959,4341,2047,1720,15638,13305,27469,43168,0,1390,17139,712,891,3707;_",
+					[1435709305] = "139,987,18614,28285,238,5300,2047,1720,3986,11652,4521,8784,0,23500,46549,0,588,1390,5747,2881,8511,712,4598;_",
+					[1435711361] = "774,352,333,7477,10804,1822,26701,2158,2944,198,2047,1720,15638,40774,43168,0,1390,5747,11392,712,891,133,3574;_",
+					[1435712121] = "1126,333,18281,1822,3370,16703,6628,959,1199,2944,198,2047,1720,15638,13305,27469,42580,588,0,1390,5747,11392,712,4598;_",
+					[1435714618] = "139,330,657,333,18047,234,5192,23331,959,4341,2047,17358,4521,8784,23500,46311,826,0,1390,17139,5310;_",
+					[1435709069] = "139,635,352,333,7477,10804,28523,241,1917,2944,198,2047,1720,15638,4521,8784,0,27469,42035,545,588,1390,5747,2881,8511,712,4598;_",
+					[1435712141] = "139,987,333,18281,1822,3370,16703,6628,959,1199,3142,2047,1720,15638,4521,8784,27469,42580,588,0,1390,5747,11392,712,4598;_",
+					[1435711397] = "139,635,0,352,333,18281,1822,12201,14500,959,4143,198,2047,1720,15638,4521,46,36207,42035,0,545,0,588,0,1390,5747,11392,712,4461,137;_",
+					[1435711925] = "139,987,333,18281,1822,3370,23331,241,1917,3142,2047,1720,15638,13305,0,16079,11390,42035,545,0,588,0,1390,5747,11392,712,891,3707;_",
+					[1435708999] = "1126,5547,13067,28523,5102,198,2047,5706,11652,4567,8738,70637,1390,8628,9223,4598;_",
+					[1435715890] = "139,635,352,333,18047,234,477,4715,23331,1605,3695,19405,4521,8784,69811,826,1390,8628,13821;_",
+					[1435709163] = "1126,333,18281,28523,2158,3142,2047,1720,15638,4521,32284,46549,588,1390,5747,2881,8511,712,4598;_",
+					[1435709405] = "139,987,333,18281,477,1345,12201,14262,238,2158,3142,2047,1720,15638,13305,0,0,23500,46549,0,0,588,1390,5747,11392,712,722,3876;_",
+					[1435711711] = "774,0,352,333,18281,477,1345,3370,16703,6628,959,4341,2047,1720,15638,13305,27469,42580,588,0,1390,17139,712,4598;_",
+					[1435709110] = "139,635,352,333,18281,28523,959,1199,2944,198,2047,1720,15638,4521,32284,46549,588,1390,5747,2881,8511,712,4598;_",
+					[1435711603] = "139,987,333,18281,477,1345,3370,23331,2158,3142,2047,1720,15638,13305,0,27469,42580,588,0,1390,5747,11392,712,891,3707;_",
+					[1435709358] = "1126,333,18281,477,21418,6628,959,1199,2944,198,2047,1720,15638,13305,23500,47137,1390,8628,8511,712,4598;_",
+					[1435713586] = "139,330,305,352,333,7477,10804,477,4715,8831,14500,959,4341,0,2047,1720,15638,4521,8784,0,27469,42035,307,826,1390,17139,5310;_",
+					[1435711934] = "1126,333,18281,1822,3370,23331,2158,3142,2047,1720,15638,13305,0,27469,42035,1133,0,1390,5747,11392,712,4598;_",
+					[1435710953] = "139,635,352,333,18281,1822,12201,14500,959,4341,2047,1720,15638,13305,27469,42035,1133,0,1390,17139,712,4598;_",
+					[1435712040] = "139,987,333,18281,1822,3370,23331,5102,198,2047,1720,15638,4521,46,8738,27469,43168,0,1390,5747,11392,712,4461,137;_",
+					[1435711666] = "1126,333,18281,477,1345,3370,16703,6628,2158,2944,198,2047,1720,15638,13305,0,27469,42580,588,0,1390,5747,11392,712,1024,3574;_",
+					[1435712630] = "469,657,333,18281,477,4715,23331,5300,2047,1720,15638,13305,23500,47137,0,1390,17139,712,4598;_",
+					[1435713135] = "469,305,0,352,333,7477,11281,4715,8831,14500,241,718,4341,0,2047,1720,15638,13305,27469,41780,1388,1390,17139,712,4598;_",
+					[1435710542] = "139,987,333,18281,477,1345,26701,5300,2047,1720,15638,13305,0,23500,47137,0,1390,17139,712,4598;_",
+				},
+				["US:CenarionCircle:Thorydan"] = {
+					[1435711934] = "1126,333,18156,125,5192,24936,5742,1720,20439,8504,0,69791,10864,13822;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-010230A239",
+					[1436317204] = "1126,333,18047,234,30128,27901,32004,46291,8209,2655,1881,4479,2168,1582,3707;_",
+					[1436321815] = "1126,333,3659,14388,234,1822,55927,280,32004,7183,39108,8209,4538;_",
+					[1435711556] = "1126,333,18156,602,4715,24936,5742,1720,20439,51228,27067,10864,13822;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-010230A239",
+					[1436315613] = "1126,333,5214,13067,1822,56207,32004,3969,42322,359,7850,4538,6645,5289;_",
+					[1436316122] = "1126,333,5214,13067,1822,56207,32004,7183,39108,359,7850,4536,2,6645,1716,3573;_",
+					[1436321946] = "17,1109,333,18047,234,1822,43519,12688,8504,27469,3214,39108,8209,4538,4477;_",
+					[1436317790] = "139,1320,18047,234,57749,280,8504,27469,46856,1,3674,2655,259,1624;_",
+					[1435708999] = "1126,3992,1555,13067,35870,5706,16453,78295,10864;Player-1169-06F79F42,Pet-0-3132-1159-2207-70008-010230A239",
+					[1436317856] = "1459,18047,234,14980,43049,32004,3969,50531,2655,259,1622,8229;_",
+					[1436319967] = "1126,333,3659,1555,13067,1822,56207,32004,7183,39108,8209,4538,6645,5289;_",
+					[1435711946] = "1126,333,18156,125,5192,23506,1430,5742,1720,20439,8504,69791,10864,13822;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-010230A239",
+					[1435710542] = "1126,333,18281,477,1345,34048,1720,20439,32004,46291,24686;Player-1169-06F79F42,Pet-0-3132-1159-2207-70008-010230A239",
+					[1436316582] = "1126,333,18047,234,1822,56207,29129,2875,3969,42322,359,7850,4536,2,6645,1716,3573;_",
+					[1435716684] = "1126,333,3659,14456,166,477,1345,3370,24936,7462,20439,32004,46291,359,20749,3578;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-070230A239",
+					[1435715471] = "469,657,333,3659,14622,477,4715,32398,20439,32004,7183,39108,359,20749,3578;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-050230A239",
+					[1435709069] = "1126,333,18156,125,35870,1720,20439,8504,27469,42322,258,10606;Player-1169-06F79F42,Pet-0-3132-1159-2207-70008-010230A239",
+					[1436321892] = "1126,333,3659,14388,234,1822,56207,35973,3214,39108,8209,4538;_",
+					[1436321829] = "1126,333,3659,14388,234,1822,56207,32004,7183,39108,8209,4538;_",
+					[1435712141] = "1126,333,18156,125,5192,24936,5742,1720,20439,78295,10864,13822;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-010230A239",
+					[1436320358] = "1126,333,5214,13067,1822,13158,43049,32004,7183,39108,8209,4536,2,6645,1582,3707;_",
+					[1436317415] = "139,635,352,333,18047,234,30128,27901,8504,23500,46291,8209,2655,8528,5289;_",
+					[1436322026] = "1126,333,3659,14388,234,477,1345,56207,35973,3214,39108,8209,4538;_",
+					[1436316973] = "1126,333,18047,234,58029,32004,3969,42322,8209,2655,1883,6645,5289;_",
+					[1436318442] = "1126,333,5214,13067,58029,32004,3969,42322,359,7850,2655,1883,6645,1582,3707;_",
+					[1435709405] = "1126,333,18156,125,477,1345,20073,13975,1720,20439,32004,46291;Player-1169-06F79F42,Pet-0-3132-1159-2207-70008-010230A239",
+					[1436320110] = "1126,333,5214,13067,1822,56207,8504,23500,7183,39108,8209,4536,6647,1582,134,3573;_",
+					[1436317746] = "77769,78295;_",
+					[1435711518] = "774,0,352,333,18156,30253,5742,1720,20439,8504,42724,27067,10864,13822;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-010230A239",
+					[1435711837] = "1126,333,18281,5192,23506,1430,5742,1720,20439,78295,10864,13822;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-010230A239",
+					[1435711711] = "1126,333,18758,4715,24936,5742,1720,20439,51228,27067,10864,13822;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-010230A239",
+					[1436317689] = "1126,333,18047,234,1822,56207,32004,3969,42322,8209,4538,6645,5289;_",
+					[1435711397] = "1126,333,3659,14497,30253,5742,1720,20439,51228,27067,10864,10244,3578;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-010230A239",
+					[1436323062] = "469,657,333,5214,13067,58029,35973,3214,39108,8209,4538,11934;_",
+					[1435709226] = "139,987,333,3659,14622,35870,1720,20159,280,32004,46291,10864;Player-1169-06F79F42,Pet-0-3132-1159-2207-70008-010230A239",
+					[1436321598] = "77769,78295;_",
+					[1436317568] = "1126,333,18047,234,1822,56207,32004,3969,42322,8209,4538,6645,5289;_",
+					[1436317632] = "1126,333,18047,234,1822,26876,29331,32004,3969,42322,8209,4536,2,6645,5289;_",
+					[1436317760] = "77769;_",
+					[1435709358] = "1126,333,3659,14622,477,35393,1720,20439,15557,16447,46291,10864;Player-1169-06F79F42,Pet-0-3132-1159-2207-70008-010230A239",
+					[1435712040] = "1126,333,18281,5192,16703,8233,5742,1720,20439,78295,10864,13822;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-010230A239",
+					[1436317310] = "1126,333,18047,234,30128,27901,32004,46291,8209,2655,1883,6645,5289;_",
+					[1436321793] = "1126,333,3659,14388,234,58029,32004,7183,39108,8209,4538;_",
+					[1436321984] = "1126,333,18047,234,477,1345,56207,29129,6844,3214,39108,8209,4538;_",
+					[1436321858] = "1126,333,3659,14388,234,1822,56207,32004,7183,39108,8209,4536,4479;_",
+					[1435709163] = "1126,333,18281,35870,1720,20439,32004,46291,10864;Player-1169-06F79F42,Pet-0-3132-1159-2207-70008-010230A239",
+					[1436317892] = "1459,18047,234,58029,32004,3969,42322,8209,2655,259,13558;_",
+					[1435715156] = "469,657,333,18115,166,5192,24936,7462,20439,32004,46291,359,20615,134,3578;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-040230A239",
+					[1436321121] = "469,657,333,18281,15339,22251,20439,32004,7183,39108,359,7850,4538,6645,5289;_",
+					[1436319171] = "1126,333,3659,1555,13067,1822,56207,32004,7183,39108,359,7850,4536,2,6645,1422,294,3573;_",
+					[1436314839] = "1126,333,5214,680,12387,1822,56207,32004,3969,42322,359,7850,4538,11934;_",
+					[1436320147] = "1126,333,5214,13067,1822,56207,32004,7183,39108,8209,4536,6647,5289;_",
+					[1436322570] = "1126,333,3659,1555,13067,1822,56207,35973,3214,39108,8209,4538,11934;_",
+					[1435711666] = "1126,333,18758,4715,24936,5742,1720,20439,51228,27067,10864,13822;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-010230A239",
+					[1435711603] = "1126,333,18156,602,4715,24936,5742,1720,20439,51228,27067,10864,13822;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-010230A239",
+					[1435713135] = "469,657,333,18758,4715,32398,20439,35973,41780,542,359,24327;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-020230A239",
+					[1436321930] = "1126,333,3659,14388,234,1822,56207,35973,3214,39108,8209,4538;_",
+					[1436320200] = "1126,333,5214,13067,1822,56207,32004,7183,39108,8209,11183,5289;_",
+					[1436320264] = "1126,333,5214,13067,1822,56207,8504,23500,7183,39108,8209,4536,6647,5289;_",
+					[1435709305] = "1126,18489,125,35870,1720,3986,16453,32004,46291,10864,6360;Player-1169-06F79F42,Pet-0-3132-1159-2207-70008-010230A239",
+					[1435709686] = "1126,333,5894,12387,1822,34048,1720,20439,32004,46291,359,24327;Player-1169-06F79F42,Pet-0-3132-1159-2207-70008-010230A239",
+					[1435712630] = "469,657,333,3659,14622,477,4715,30678,1720,20439,32004,46291,359,19033,1582,134,3578;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-010230A239",
+					[1436321994] = "1126,333,18047,234,477,1345,56207,35973,3214,39108,8209,4538;_",
+					[1435711925] = "1126,333,18156,125,5192,24936,5742,1720,20439,8504,0,69791,10864,10110,630,3082;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-010230A239",
+					[1435715890] = "1459,3659,14388,68,166,477,4715,24936,5742,22159,78295,359,10505,260,9850,134,3578;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-060230A239",
+					[1436317023] = "1126,333,3659,14388,234,30128,27901,32004,46291,8209,2655,1881,2,6645,5289;_",
+					[1435709110] = "1126,333,18115,41,125,21895,13975,1720,20439,8504,23500,46291,10864,10740;Player-1169-06F79F42,Pet-0-3132-1159-2207-70008-010230A239",
+					[1435709277] = "1126,3992,14497,125,35870,1720,3986,16453,32004,46291,10864;Player-1169-06F79F42,Pet-0-3132-1159-2207-70008-010230A239",
+					[1436317161] = "1126,333,3659,14388,234,30128,27901,32004,46291,8209,2655,1881,6647,5289;_",
+					[1435709048] = "1126,333,18156,125,35870,1720,20439,8504,0,27469,42322,258,10606;Player-1169-06F79F42,Pet-0-3132-1159-2207-70008-010230A239",
+					[1435714618] = "469,657,333,3659,14388,234,5192,30678,22159,32004,46291,359,20749,3578;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-040230A239",
+					[1436317647] = "1126,333,18047,234,1822,56207,32004,3969,42322,8209,4538,6645,5289;_",
+					[1436317257] = "1126,333,18047,234,21895,8233,27621,280,8504,23500,46291,8209,2655,1881,6647,5289;_",
+					[1435713586] = "469,657,333,3659,14622,477,4715,32398,20439,35973,42322,359,24327;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-030230A239",
+					[1435712121] = "1126,333,18156,125,5192,23506,1430,5742,1720,20439,78295,10864,10110,134,496,3082;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-010230A239",
+					[1436320227] = "1126,333,5214,13067,1822,13158,43049,32004,7183,39108,8209,4536,6647,1582,3707;_",
+					[1436317474] = "1126,333,18047,234,1822,28306,27901,32004,46291,8209,4538,6645,5289;_",
+					[1435711361] = "1126,333,3659,44750,5742,1720,20439,15557,35671,27067,10864,13822;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-010230A239",
+					[1435710953] = "1126,333,55871,20439,35973,41780,901,10505,13822;Player-1169-06F79F42,Pet-0-3132-1448-2476-70008-010230A239",
+				},
+				["US:Sisters of Elune:Shaddi"] = {
+					[1435883691] = "469,657,333,18281,25502,10368,1720,1274,23057,74418,19378,1589,3699;_",
+					[1435711934] = "17,1109,333,14014,4267,1822,3370,24936,7462,20159,8784,36981,32825,24671;_",
+					[1436317204] = "1126,333,5214,8800,4267,30128,27621,32284,46306,10849,6394,2135,5293;_",
+					[1435883757] = "17,452,657,333,18281,35870,1720,1274,1285,5192,90998,3155,16223,5288;_",
+					[1435711556] = "17,1109,333,14014,4744,1345,3370,24936,7462,7751,63916,27082,24671;_",
+					[1436315613] = "1126,333,5214,8800,4267,1822,28306,59905,46306,347,24324;_",
+					[1435886251] = "1126,333,18281,1822,34048,1720,2559,49884,46306,347,19031,5288;_",
+					[1436316122] = "1126,333,5214,8800,4267,1822,28306,59905,46306,347,24324;_",
+					[1436321946] = "1126,333,18047,234,1822,20073,3607,14647,21772,4612,27469,3214,39123,17243,7423;_",
+					[1435885809] = "1126,333,18281,1822,34048,1720,52443,46306,19378,5288;_",
+					[1436317790] = "1126,333,5214,8800,4267,1822,28306,59905,46306,19378,5293;_",
+					[1436317474] = "1126,333,5214,8800,4267,1822,28306,59905,22800,23506,17243,2135,1589,3704;_",
+					[1436317023] = "1126,333,5214,8800,4267,30128,27621,32284,46306,10849,6394,2135,5293;_",
+					[1436319967] = "17,1109,333,5214,13067,1822,38327,49884,7183,39123,17243,3724,130,3569,3184;_",
+					[1435881973] = "17,452,657,333,5214,13067,477,66056,30683,39366,24423;_",
+					[1435711946] = "1126,333,14014,4267,1822,3370,24936,7462,28943,36981,32825,24671;_",
+					[1435710542] = "1126,333,14014,4267,477,1345,28306,7462,52443,46306,347,24324;_",
+					[1436316582] = "1126,333,5214,13067,1822,38327,49884,7183,39123,347,19031,5293,3179;_",
+					[1435716684] = "1126,333,14014,4267,477,1345,3370,24936,7462,52443,46306,347,16896,3724,130,3574;_",
+					[1435715471] = "469,657,333,14014,4267,477,4715,24936,7462,52443,46306,347,16896,7428;_",
+					[1435709069] = "17;_",
+					[1436321892] = "17,1109,333,18047,234,1822,60099,32081,3214,39123,17243,3854,3569;_",
+					[1436321829] = "1126,333,18047,234,1822,60099,28112,7183,39123,17243,3724,130,3569,3184;_",
+					[1435883708] = "469,657,333,18281,35870,1720,1274,1285,21772,74418,19378,1418,3870;_",
+					[1436320358] = "1126,333,5214,13067,1822,60099,28112,7183,39123,17243,7423,3184;_",
+					[1436317161] = "1126,333,5214,8800,4267,30128,59905,46306,10849,8529,5293;_",
+					[1435883841] = "469,657,333,18281,35870,1720,1274,23096,4573,69806,3155,16223,5288;_",
+					[1435881922] = "469,657,333,5214,13067,477,96739,63789;_",
+					[1435882439] = "1126,333,5214,13067,1822,34048,2994,1285,96190,347,19031,5288;_",
+					[1435709405] = "1459,14014,4033,711,1345,28306,105654,11665,13563;_",
+					[1436320110] = "1126,333,5214,13067,1822,38327,21772,28112,7183,39123,24666;_",
+					[1436317746] = "1126,333,5214,8800,4267,1822,28306,27621,8784,23500,46306,19378,1418,3875;_",
+					[1435711518] = "1126,333,14014,6089,28306,7462,71667,27082,24671;_",
+					[1436322026] = "1126,333,18047,234,477,1345,60099,32081,3214,39123,21097,3569,3184;_",
+					[1435711837] = "1126,333,14014,4267,1822,3370,24936,7462,98749,17243,7428;_",
+					[1436314839] = "1126,333,5214,680,8120,4267,1822,28306,59905,46306,347,24324;_",
+					[1435711711] = "1126,333,14014,4744,1345,3370,24936,7462,71667,27082,20967,130,3574;_",
+					[1436321815] = "1126,333,18047,234,1822,88211,7183,39123,24666;_",
+					[1436320227] = "1126,333,5214,13067,1822,60099,28112,7183,39123,20967,130,3569;_",
+					[1436321121] = "469,657,333,18281,37590,52443,7183,39123,347,24319;_",
+					[1436317689] = "1126,333,5214,8800,4267,1822,28306,59905,46306,19378,5293;_",
+					[1436320147] = "1126,333,5214,13067,1822,26876,11451,21772,28112,7183,39123,17243,7423;_",
+					[1435884749] = "469,657,333,5214,13067,35870,4279,49884,46306,347,19031,5288,6401;_",
+					[1435883663] = "469,657,333,18281,35870,1720,1274,1285,96190,19378,5288;_",
+					[1436323062] = "469,657,333,5214,13067,40149,53853,3214,39123,347,19031,5293,3179;_",
+					[1435885690] = "1126,333,5214,13067,1822,34048,4279,49884,46306,3155,16223,5288;_",
+					[1435715156] = "469,657,333,14014,4267,5192,24936,7462,28943,69806,347,16896,3724,3704;_",
+					[1436316973] = "17,1109,333,5214,8800,4267,30128,59905,46306,10849,8529,5293;_",
+					[1435709226] = "73313;_",
+					[1435710953] = "1126,333,14014,6089,28306,7462,98192,557,347,24324;_",
+					[1436321858] = "1126,333,18047,234,1822,88211,7183,39123,21097,3569;_",
+					[1436321598] = "156079;_",
+					[1436317568] = "1126,333,5214,8800,4267,1822,28306,59905,46306,19378,5293;_",
+					[1436317632] = "1126,333,5214,8800,4267,1822,26876,1430,59905,46306,17243,2135,5293;_",
+					[1435886929] = "1126,333,18281,1822,35768,2559,21772,28112,7183,39123,347,2808,17812,3699;_",
+					[1436321930] = "17,1109,333,18047,234,1822,60099,32081,3214,39123,20967,3699,3184;_",
+					[1436317760] = "17,1109,333,5214,8800,4267,1822,28306,59905,46306,17243,2135,5293;_",
+					[1436317257] = "1126,333,5214,8800,4267,30128,59905,22800,23506,10849,326,8203,1418,171,3704;_",
+					[1435709358] = "1459,18047,711,35393,71661,28251,11406,259;_",
+					[1435712040] = "17,1109,333,14014,4267,1822,3370,24936,7462,98749,20967,3704;_",
+					[1436317310] = "1126,333,5214,8800,4267,30128,59905,46306,10849,6394,2135,1719,3574;_",
+					[1436321793] = "17,1109,333,18281,90033,7183,39123,4519,1;_",
+					[1436321984] = "1126,333,18047,234,477,1345,60099,25237,6844,3214,39123,24666;_",
+					[1436320200] = "1126,333,5214,13067,1822,60099,28112,7183,39123,24666;Player-1169-06C20D11,Creature-0-3132-1448-32244-62982-00001C81DB",
+					[1435883800] = "17,452,657,333,18281,35870,1720,1274,23057,74418,3155,16223,1589,130,3569;_",
+					[1435709163] = "73313;_",
+					[1436317892] = "1126,333,5214,8800,4267,1822,28306,59905,46306,17243,2135,1719,3574;_",
+					[1435883738] = "469,657,333,18281,28013,7857,1720,1274,1285,21772,74418,19378,1719,3569;_",
+					[1436317647] = "1126,333,5214,8800,4267,1822,28306,59905,46306,19378,5293;_",
+					[1436319171] = "1126,333,5214,13067,1822,60099,28112,7183,39123,347,20620,130,3569,3184;_",
+					[1435713135] = "17,452,990,14014,4744,4715,24936,7462,98192,557,347,10761,6135,3724,3704;_",
+					[1435712630] = "469,657,333,14014,4267,477,4715,24936,7462,52443,46306,347,16896,3724,3704;_",
+					[1435709686] = "1126,333,5894,8120,4267,1822,28306,7462,98749,347,24324;_",
+					[1435711666] = "1126,333,7477,6537,4744,1345,3370,23572,1364,7462,28943,42724,27082,24671;_",
+					[1435885725] = "17,1109,333,5214,13067,1822,34048,4279,5192,16580,28112,46004,302,19378,5288;_",
+					[1436322570] = "1126,333,5214,13067,1822,60099,32081,3214,39123,347,16896,3724,130,3569,3184;_",
+					[1435715890] = "1126,333,14014,4033,234,477,4715,24936,59905,46306,347,10502,6394,3553,171,3704;_",
+					[1435709277] = "73313;_",
+					[1435712141] = "17,1109,333,14014,4267,1822,3370,24936,7462,7751,90998,17243,7428;_",
+					[1435709305] = "_;_",
+					[1435881888] = "469,657,333,5214,13067,477,61444,35295,42278,17641,3870;_",
+					[1436320264] = "774,352,333,5214,13067,1822,60099,4612,23500,7183,39123,17243,3854,3569,3184;_",
+					[1436321994] = "1126,333,18047,234,477,1345,60099,32081,3214,39123,24666;_",
+					[1435711925] = "17,1109,333,14014,4267,1822,3370,23506,1430,7462,7751,21192,34314,2667,32825,17243,3854,3574;_",
+					[1435711603] = "17,1109,333,14014,4744,1345,3370,24936,7462,7751,63916,27082,24671;_",
+					[1435713586] = "469,657,333,14014,4267,477,4715,24936,7462,98749,347,16896,7428;_",
+					[1435709110] = "72286;_",
+					[1435886565] = "1126,333,18047,234,477,1345,34048,26051,28112,46306,347,19031,1418,171,130,3569;_",
+					[1435883685] = "469,657,333,18281,25502,10368,1720,1274,2691,20366,74418,19378,5288;_",
+					[1435883170] = "469,657,333,18281,35870,1720,1274,97475,347,2808,16223,1719,3569;_",
+					[1435714618] = "469,657,333,14014,4033,234,5192,24936,59905,46306,347,16896,3724,3704;_",
+					[1436317856] = "17,1109,333,5214,8800,4267,1822,20073,8233,59905,46306,17243,2135,5293;_",
+					[1435887329] = "1126,333,18281,477,1345,34048,1720,2559,49884,46306,347,24319;_",
+					[1435711397] = "1126,333,14014,6089,28306,7462,63257,8410,3576,23506,11175,9792,130,3574;_",
+					[1435712121] = "17,757,352,333,14014,4267,1822,3370,23506,1430,7462,63257,2667,32825,17243,7428;_",
+					[1435885230] = "1126,333,5214,13067,1822,34048,4279,49884,46306,347,19031,5288;_",
+					[1436317415] = "17,1109,333,5214,8800,4267,30128,59905,22800,23506,10849,326,6068,2135,5293;_",
+					[1435711361] = "1126,333,14014,6089,28306,7462,71667,27082,17243,3854,3574;_",
+					[1436318442] = "1126,333,5214,13067,1822,88211,7183,39123,347,19031,5288;_",
+				},
+				["US:Sisters of Elune:Felanima"] = {
+					[1435883691] = "469,657,333,18281,21895,13975,1720,1274,21079,36584,3256,3475,33081,10793,8585,1594,3699;_",
+					[1435711934] = "1126,333,18281,5192,24936,5742,1720,58937,6731,33081,10849,13822;_",
+					[1436317204] = "1126,333,5214,13067,21895,67204,934,6494,689,6042,33081,10849,6394,2135,5293;_",
+					[1435883757] = "469,657,333,18281,35870,1720,1274,57663,6731,33081,19378,5293;_",
+					[1435711556] = "1459,121539,33081,15557,9114;_",
+					[1436315613] = "1126,333,5214,5370,7697,1822,28306,59905,6494,6731,33081,347,19031,1589,5,3699;_",
+					[1435886251] = "1126,333,18281,1822,34048,1720,52443,13225,33081,347,19031,5293;_",
+					[1436316122] = "1126,333,5214,13067,1822,88211,7183,6042,33081,347,19031,5293;_",
+					[1436321946] = "1126,333,18047,234,1822,58121,34059,2525,689,6042,33081,24671;_",
+					[1435885809] = "1126,333,18281,1822,34048,1720,52443,13225,33081,19378,5293;_",
+					[1436317790] = "1459,18047,234,94002,42337,10849,259;_",
+					[1435708999] = "1126,5547,13067,35870,5706,61682,33081,4519,1,6329,13822;_",
+					[1436317023] = "1126,333,5214,13067,90033,7183,6042,33081,10849,8529,5293;_",
+					[1436319967] = "1126,333,5214,13067,1822,88211,7183,6042,33081,19378,5293;_",
+					[1435881973] = "469,657,333,5214,13067,477,21418,38048,36584,689,2567,3475,33081,21097,3574,892;_",
+					[1435711946] = "1126,333,18281,5192,24936,5742,1720,58937,6731,33081,10849,13822;_",
+					[1435710542] = "1126,333,18281,477,1345,34048,1720,51509,934,13225,33081,347,24324;_",
+					[1436316582] = "1126,333,5214,13067,1822,88211,6494,689,6042,33081,347,19031,1589,5,3699;_",
+					[1435716684] = "1126,333,10583,7698,477,1345,3370,32398,22353,30090,3969,2525,6731,33081,347,16896,3724,130,3574;_",
+					[1435715471] = "469,657,333,18281,477,4715,32398,52443,3969,9256,33081,347,24324;_",
+					[1435709069] = "1126,333,18281,35870,1720,22353,34059,2525,6731,33081,10793,56,13822;_",
+					[1436321892] = "1126,333,18047,234,1822,92180,2525,689,6042,33081,24671;_",
+					[1436321829] = "1126,333,18047,234,1822,88211,6494,689,6042,33081,24671;_",
+					[1435883708] = "469,657,333,18281,21895,13975,1720,1274,57663,6731,33081,19378,5293;_",
+					[1436320358] = "1126,333,18047,90267,7183,6042,33081,10849,13822;_",
+					[1436317161] = "1126,333,5214,13067,66533,23500,6494,689,6042,33081,10849,8529,5293;_",
+					[1435883841] = "17,452,657,333,18281,35870,1720,1274,27669,28635,1359,6731,33081,17243,2135,5293;_",
+					[1436322026] = "1126,333,18047,234,477,1345,20073,38048,34059,2525,689,6042,33081,20967,3704;_",
+					[1435881922] = "469,657,333,5214,13067,477,96050,689,6042,33081,24671,892;_",
+					[1435885230] = "1126,333,5214,13067,1822,26876,7172,54163,13225,33081,347,19031,5293;_",
+					[1435882439] = "1126,333,5214,13067,1822,37042,58352,6042,33081,347,19031,5293;_",
+					[1436316973] = "1126,333,5214,13067,90033,7183,6042,33081,10849,8529,5293;_",
+					[1435709405] = "1126,18614,477,1345,34048,1720,3986,48457,6494,6731,33081,17243,3724,130,3574;_",
+					[1436321815] = "1126,333,18047,234,1822,26876,61335,6494,689,6042,33081,24671;_",
+					[1436320110] = "1126,333,5214,13067,1822,88211,6494,689,6042,33081,19378,5293;_",
+					[1436317746] = "130092,25987;_",
+					[1436321121] = "469,657,333,18281,37590,52443,7183,6042,33081,347,19031,5293;_",
+					[1436317474] = "1126,333,5214,13067,1822,88211,7183,6042,33081,19378,5293;_",
+					[1435711518] = "156079,4519,1;_",
+					[1436320147] = "1126,333,5214,13067,1822,26876,61335,6494,689,6042,33081,19378,5293;_",
+					[1436317856] = "774,685,18047,234,57749,31350,934,3969,2525,6731,33081,10849,259;_",
+					[1435711837] = "1126,333,18281,5192,24936,5742,1720,65668,33081,10849,13822;_",
+					[1435885690] = "1126,333,5214,13067,1822,34048,54163,13225,33081,19378,5293;_",
+					[1435711711] = "1459,18758,4715,24936,7462,59626,6042,32524,557,10849,259,13563;_",
+					[1435709048] = "1126,333,18281,35870,1720,28943,0,0,27469,2525,6731,33081,10849,13822;_",
+					[1435709277] = "1126,18614,35870,1720,3986,18367,30090,6494,6731,33081,10849,6394,7428;_",
+					[1436317415] = "1126,333,5214,13067,57749,32284,6494,689,6042,33081,10849,8529,5293;_",
+					[1436317689] = "1126,333,5214,13067,1822,88211,7183,6042,33081,19378,5293;_",
+					[1435711397] = "1126,333,18281,1822,35768,22353,34059,2525,6731,33081,20967,130,3574;_",
+					[1435884749] = "469,657,333,5214,5369,1,7697,35870,54163,6494,6731,33081,347,19031,1589,3704;_",
+					[1436323062] = "469,657,333,5214,5370,7697,94002,3214,6042,33081,347,19031,5293;_",
+					[1435883663] = "469,657,333,18281,35870,1720,1274,64394,33081,19378,5293;_",
+					[1435711925] = "1126,333,18281,5192,24936,5742,1720,20159,38778,6731,33081,10849,13822;_",
+					[1436317647] = "1126,333,5214,13067,1822,88211,6494,689,6042,33081,19378,5293;_",
+					[1435709686] = "1126,333,5894,12387,1822,34048,1720,52443,13225,33081,347,24324;_",
+					[1435709226] = "1126,333,18281,35870,1720,52443,13225,33081,10849,4708,9114;_",
+					[1436320264] = "1126,333,5214,5369,7698,1822,20073,44638,23500,6494,689,6042,33081,19378,5293;_",
+					[1435881888] = "469,657,333,5214,13067,477,96739,6042,33081,24671,892;_",
+					[1436321598] = "156079;_",
+					[1436317568] = "1126,333,5214,13067,1822,88211,7183,6042,33081,19378,5293;_",
+					[1436317632] = "1126,333,5214,13067,1822,26876,0,37835,23500,6494,689,6042,33081,17243,2135,5293;_",
+					[1435886929] = "1126,333,18281,1822,34048,1720,52443,13225,33081,347,19031,5293;_",
+					[1435887965] = "1126,333,5214,5369,7698,477,35393,54163,1136,5358,6731,33081,243,10606,10123,3699;_",
+					[1436317760] = "130092,25987;_",
+					[1435715156] = "469,657,333,18281,5192,24936,7462,51509,14159,33081,347,24324;_",
+					[1435709358] = "1126,18614,477,35393,1720,3986,24957,23500,13225,33081,10849,13822;_",
+					[1435712040] = "1126,333,18281,5192,24936,5742,1720,58937,6731,33081,10849,13822;_",
+					[1436317310] = "1126,333,5214,13067,90033,6494,689,6042,33081,10849,6394,2135,5293;_",
+					[1436321793] = "1126,333,18047,234,90033,7183,6042,33081,24671;_",
+					[1436321984] = "1126,333,18047,234,477,1345,85336,6844,3214,6042,33081,24671;_",
+					[1436321858] = "1126,333,18047,234,1822,88211,7183,6042,33081,24671;_",
+					[1435883800] = "469,657,333,18281,35870,1720,1274,57663,6731,33081,19378,5293;_",
+					[1435709163] = "1126,333,18281,35870,1720,52443,6494,6731,33081,10849,13822;_",
+					[1436317892] = "1459,18047,234,66533,23500,3969,9256,33081,10849,259,13563;_",
+					[1435883738] = "469,657,333,18281,35870,1720,1274,57663,6731,33081,19378,5293;_",
+					[1435887642] = "1126,333,5214,13067,477,35393,54163,13225,33081,347,10502,13822;_",
+					[1436319171] = "1126,333,5214,13067,1822,88211,6494,689,39123,347,19031,1589,5,3699;_",
+					[1435709305] = "1126,18614,35870,1720,3986,47523,934,6494,6731,33081,10793,56,13822;_",
+					[1436322570] = "1126,333,5214,13067,1822,92180,2525,689,6042,33081,347,16896,2135,1589,5,3699;_",
+					[1435888541] = "1126,333,18047,234,28698,7172,24073,30090,6494,6731,33081,347,10502,6394,2135,1589,5,3699;_",
+					[1435711666] = "1459,18047,5426,24936,66399,689,6042,32524,557,10849,259,13563;_",
+					[1435711603] = "1459,18047,5426,24936,67088,6042,32524,557,10849,259,13563;_",
+					[1435713135] = "469,657,333,10584,8174,4715,24936,7462,65668,32524,557,347,24324;_",
+					[1435885725] = "1126,333,5214,13067,1822,34048,54163,6494,6731,33081,19378,5293;_",
+					[1435713586] = "469,657,333,18281,477,4715,32398,56412,9256,33081,347,24324;_",
+					[1435710953] = "1126,333,18281,1822,34048,1720,56412,2525,6731,33081,347,20620,5,3699;_",
+					[1435715890] = "469,657,333,18047,234,477,4715,84841,3969,9256,33081,347,24324;_",
+					[1436320200] = "1126,333,5214,13067,1822,88211,6494,689,6042,33081,19378,5293;_",
+					[1436321930] = "1126,333,18047,234,1822,26191,65989,2525,689,6042,33081,17243,3854,3574;_",
+					[1436321994] = "1126,333,18047,234,477,1345,26876,29051,2194,34059,2525,689,6042,33081,17243,3724,5,125,3574;_",
+					[1435889054] = "1126,333,18281,477,37113,52443,6494,689,6042,33081,347,10502,6394,2135,1589,5,125,3574;_",
+					[1435712630] = "469,657,333,18281,477,4715,30678,1720,52443,6494,6731,33081,347,16896,3729,125,3574;_",
+					[1436317257] = "1126,333,5214,13067,90033,6494,689,6042,33081,10849,8529,5293;_",
+					[1435709110] = "1126,333,18281,35870,1720,52443,6494,6731,33081,10849,10118,5,3699;_",
+					[1435886565] = "1126,333,18047,234,477,1345,34048,54163,6494,6731,33081,347,16896,2135,1589,5,125,3574;_",
+					[1435883685] = "469,657,333,18281,35870,1720,1274,57663,3256,3475,33081,19378,5293;_",
+					[1435883170] = "469,657,333,18281,35870,1720,1274,57663,39812,347,10446,6450,2135,1589,5,125,3574;_",
+					[1435714618] = "469,657,333,10584,7463,234,5192,84841,3969,9256,33081,347,24324;_",
+					[1436318442] = "1126,333,5214,13067,90033,3969,9256,33081,347,10502,13822;_",
+					[1435887329] = "1126,333,10584,7697,477,1345,34048,1720,52443,46306,347,19031,5293;_",
+					[1436320227] = "1126,333,5214,13067,1822,88211,6494,689,6042,33081,19378,1594,125,3574;_",
+					[1435712121] = "156079;_",
+					[1435712141] = "156079;_",
+					[1435888291] = "1126,333,5214,5370,7697,90033,7183,6042,33081,347,10502,8529,1589,5,125,3574;_",
+					[1435711361] = "1126,333,18281,1822,35768,56412,9256,33081,24671;_",
+					[1436314839] = "1126,333,5214,680,12387,30128,59905,13225,33081,347,10502,8529,5293;_",
+				},
+				["US:Sisters of Elune:Anthelinise"] = {
+					[1435711556] = "1126,333,18281,477,1345,3370,32398,28943,27469,1183,41154,19378,5293;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-03021A34BF",
+					[1435711946] = "1126,333,18047,234,5192,24936,65057,2031,39123,10849;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-04021A34BF",
+					[1435715471] = "469,305,352,333,18281,477,4715,24936,7462,52443,5152,41154,19378,5293;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-09021A34BF",
+					[1435716684] = "1126,333,18281,477,1345,3370,30678,1720,52443,5152,41154,19378;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-0B021A34BF",
+					[1435715156] = "469,657,333,18281,5192,24936,7462,57595,41154,19378;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-08021A34BF",
+					[1435709686] = "1126,333,5894,12387,1822,35768,52443,5152,2031,39123,19378,5293;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-01021A34BF",
+					[1435709048] = "1126,333,18281,35870,1720,28943,0,27469,1183,7430,33724,10849;Player-1169-06F3951D,Pet-0-3018-1159-14294-78215-01021A34BF",
+					[1435709277] = "1126,18380,234,41576,42642,5815,4088,1064,2031,39123,10849,6394,2135,1418;Player-1169-06F3951D,Pet-0-3132-1448-2476-58965-0202188039",
+					[1435709226] = "1126,333,18047,234,90033,5152,2031,39123,10849;Player-1169-06F3951D,Pet-0-3132-1448-2476-58965-0202188039",
+					[1435711518] = "774,0,352,333,18281,1822,35768,56412,1183,7430,33724,19378,5293;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-03021A34BF",
+					[1435711837] = "1126,333,18047,234,5192,24936,65057,2031,39123,10849;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-04021A34BF",
+					[1435709305] = "1126,18380,234,41576,48457,5152,2031,5399,12004,21720,10849,8529;Player-1169-06F3951D,Pet-0-3132-1448-2476-58965-0202188039",
+					[1435711361] = "1126,333,18281,1822,35768,56412,1183,19434,21720,19378,5293;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-03021A34BF",
+					[1435712121] = "1126,333,18047,234,5192,16703,8233,67088,5399,33724,10849,6394,7428;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-04021A34BF",
+					[1435714618] = "469,657,333,18047,234,5192,84841,5152,2031,39123,19378,5293;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-07021A34BF",
+					[1435709069] = "1126,333,18281,35870,1720,56412,1183,41154,10849;Player-1169-06F3951D,Pet-0-3132-1448-2476-58965-0102188039",
+					[1435712141] = "1126,333,18047,234,5192,24936,65057,2031,5399,33724,10849,13822;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-04021A34BF",
+					[1435711397] = "1126,333,18281,1822,35768,56412,1183,7430,33724,19378,5293;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-03021A34BF",
+					[1435711925] = "1126,333,18047,234,5192,24936,36405,0,28652,2031,5399,33724,10849,6394;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-04021A34BF",
+					[1435708999] = "1126,5547,13067,35870,5706,53609,19434,21720,10849;Player-1169-06F3951D,Pet-0-3018-1159-14294-78215-01021A34BF",
+					[1435715890] = "469,657,333,18047,234,477,4715,84841,3969,1183,41154,19378,5293;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-0A021A34BF",
+					[1435709163] = "1126,333,18047,90267,5152,2031,5399,6642,27082,10849,10153;Player-1169-06F3951D,Pet-0-3132-1448-2476-58965-0202188039",
+					[1435709405] = "1126,333,18047,234,477,1345,82396,5815,5152,2031,5399,33724,19378,1418;_",
+					[1435711711] = "774,352,333,18281,477,1345,3370,32398,56412,1183,7430,33724,19378,5293;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-03021A34BF",
+					[1435709110] = "8936,10570,28998,7106,54163,5152,2031,5399,6642,27082,10849,6394;_",
+					[1435711603] = "1126,333,18281,477,1345,3370,32398,56412,1183,7430,33724,19378,5293;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-03021A34BF",
+					[1435709358] = "1126,333,18047,234,477,89556,7183,39123,10849,8529;Player-1169-06F3951D,Pet-0-3132-1448-2476-58965-0202188039",
+					[1435713586] = "469,657,333,18281,477,4715,24936,7462,57595,41154;_",
+					[1435711934] = "1126,333,18047,234,5192,24936,36405,0,28652,2031,5399,33724,10849;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-04021A34BF",
+					[1435710953] = "1126,333,18281,1822,35768,56412,1183,2031,39123,19378,5293;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-03021A34BF",
+					[1435712040] = "1126,333,18047,234,5192,24936,65057,2031,39123,4519,1,6329,13822;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-04021A34BF",
+					[1435711666] = "1126,333,18281,477,1345,3370,32398,56412,1183,7430,33724,19378,5293;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-03021A34BF",
+					[1435712630] = "469,657,333,18281,477,4715,32398,52443,5152,2031,39123,19378,5293;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-04021A34BF",
+					[1435713135] = "469,657,333,18758,4715,24936,5742,1720,57595,40597,557,347,19031,5293;Player-1169-06F3951D,Pet-0-3132-1448-2476-78215-05021A34BF",
+					[1435710542] = "1126,333,18281,477,1345,35768,52443,5152,2031,39123,19378,5293;_",
+				},
+				["US:Sisters of Elune:Talathera"] = {
+					[1435711934] = "1126,333,18281,1822,3370,30678,1720,15638,4521,8784,11068,3636,12765,42337,19378,5291;_",
+					[1436317204] = "1126,333,5214,13067,77601,12432,3969,42337,10849,8529,5291;_",
+					[1436321815] = "1126,333,18047,234,1822,26876,48903,3636,8796,7183,39123,3596,17501;_",
+					[1435711556] = "768,358,333,15411,2870,477,1345,3370,32398,15638,24373,3636,12765,42337,19378,5291;_",
+					[1436315613] = "139,629,358,333,3756,1458,13067,1822,55927,19852,12432,3969,42337,24669;_",
+					[1436316122] = "1126,333,5214,13067,1822,75779,12432,7183,39123,19378,5291;_",
+					[1436321946] = "774,352,333,18047,234,1822,74644,1135,3636,12765,3214,39123,3596;_",
+					[1436317790] = "1126,333,18047,234,77601,12432,7183,39123,10849;_",
+					[1435708999] = "1126,5547,13067,35870,5706,11652,24373,58738,4519,1,6329;_",
+					[1436317856] = "97341,58738;_",
+					[1436319967] = "774,352,333,18047,234,77601,12432,3969,42337,3596,7253,10248;_",
+					[1435711946] = "774,352,333,18281,1822,3370,23506,7172,1720,15638,23238,1135,3636,12765,366,41971,19378,5291;_",
+					[1435710542] = "768,358,333,3756,14525,477,1345,28306,7462,15638,24373,12432,46306,14790,5699,4180;_",
+					[1436316582] = "1126,333,5214,13067,1822,74644,1135,9557,2875,7183,39123,19378,5291;_",
+					[1435716684] = "1126,333,18281,477,1345,3370,24936,7462,15638,23238,1135,12432,46306,19378,5291;_",
+					[1435715471] = "774,352,333,18281,477,4715,32398,15638,23238,1135,3636,8796,7183,39123,10849,8529,5291;_",
+					[1435709069] = "1126,333,18281,35870,1720,15638,24373,16401,42337,10849,13820;_",
+					[1436321892] = "1126,333,18047,234,1822,75779,16401,3214,39123,3596;_",
+					[1436321829] = "774,352,333,18047,234,1822,74644,1135,12432,7183,39123,3596;_",
+					[1435712141] = "768,358,333,18281,1822,3370,30678,1720,15638,24373,16401,42337,19378,5291;_",
+					[1436320358] = "1126,333,18047,234,76466,1135,3636,8796,3969,42337,10849;_",
+					[1436317415] = "768,358,18614,66533,11068,58738;_",
+					[1436322026] = "1126,333,15411,2636,234,477,1345,75779,3636,12765,3214,39123;_",
+					[1436316973] = "774,352,333,5214,13067,77601,3636,8796,3969,366,41971,10849,8529,5291;_",
+					[1436318442] = "1126,333,5214,13067,77601,12432,3969,42337,10849,13820;_",
+					[1435709405] = "768,358,333,15411,2870,477,1345,28306,7462,15638,24373,3636,36475,18627,3596,21073;_",
+					[1436320110] = "1126,333,18047,234,77601,12432,3969,42337,10849;_",
+					[1436317746] = "774,352,15744,2636,234,76466,1135,3636,8796,7183,12041,26780,302,10849,10248;_",
+					[1435711518] = "774,352,333,18281,1822,35768,15638,23238,1135,3636,12765,366,41971,19378,5291;_",
+					[1435711837] = "1126,333,18281,1822,3370,30678,1720,15638,24373,16401,42337,19378,5291;_",
+					[1435711711] = "774,352,333,18281,477,1345,3370,32398,15638,23238,1135,16401,42337,19378,5291;_",
+					[1436317689] = "774,352,18380,234,77601,12432,7183,12041,27082,10849;_",
+					[1435711397] = "1126,333,18281,1822,35768,15638,23238,1135,3636,12765,42035,302,19378,5291;_",
+					[1436323062] = "469,305,352,333,5214,13067,77601,16401,42337,24669;_",
+					[1435709226] = "1126,333,18281,35870,1720,15638,23238,1135,16401,42337,10849,13820;_",
+					[1436321598] = "97341,58738;_",
+					[1436317568] = "1126,18380,77835,19615,12041,27082,10849;_",
+					[1436317632] = "774,0,352,18380,234,77601,3636,8796,7183,12041,27082,10849,10248;_",
+					[1436317760] = "1126,15744,2636,234,77601,12432,7183,12041,27082,3596,7253;_",
+					[1435709358] = "768,358,333,15411,2870,477,35393,1720,15638,24373,58738,10849,13820;_",
+					[1435712040] = "774,352,333,18281,1822,3370,30678,1720,15638,23238,1135,16401,42337,19378,5291;_",
+					[1436317310] = "1126,333,5214,13067,77601,3636,8796,3969,366,41971,10849,8529,5291;_",
+					[1436321793] = "1126,333,15411,2636,234,77601,12432,7183,39123;_",
+					[1436321984] = "1126,333,4028,14019,234,477,1345,74644,1135,9557,6844,3214,39123;_",
+					[1436321858] = "1126,333,18047,234,1822,75779,12432,7183,39123;_",
+					[1435709163] = "1126,333,18281,35870,1720,15638,23238,1135,16401,42035,302,10849,13820;_",
+					[1436317892] = "1126,96215,58738;_",
+					[1435715156] = "469,657,333,18281,5192,24936,7462,15638,24373,58738,24669;_",
+					[1436321121] = "469,657,333,18281,37590,40011,12432,3969,42337,15475,9194;_",
+					[1436319171] = "1126,333,5214,13067,1822,75779,12432,7183,39123,24669;_",
+					[1436314839] = "1126,333,5214,680,12387,1822,75779,3636,8796,3969,366,41971,3596,21073;_",
+					[1436320147] = "774,352,333,18047,234,76466,1135,12432,3969,42337,10849;_",
+					[1436322570] = "1126,333,5214,13067,1822,75779,16401,3214,39123,3596,17501,3572;_",
+					[1435711666] = "1126,333,18281,477,1345,3370,32398,15638,23238,1135,3636,12765,42337,19378,5291;_",
+					[1435711603] = "1126,333,18281,477,1345,3370,32398,15638,24373,16401,42337,19378,5291;_",
+					[1435713135] = "469,657,333,18758,4715,32398,15638,24373,16401,41780,557,24669;_",
+					[1436321930] = "774,352,333,18047,234,1822,26876,47768,1135,3636,12765,3214,38821,302,21097;_",
+					[1436320200] = "1126,333,15411,2636,234,66533,11068,3636,8796,3969,42337,3596,7253;_",
+					[1436320264] = "1126,333,18047,234,66533,11068,12432,3969,42337,3596,7253;_",
+					[1435709305] = "768,358,15744,2870,37590,3986,11652,24373,16401,23710,18627,10849,13820;_",
+					[1435709686] = "1126,333,5894,12387,1822,28306,7462,15638,24373,58738,13212,7277,4180;_",
+					[1435712630] = "469,657,333,18281,477,4715,30678,1720,15638,24373,12432,46306,19378,5291;_",
+					[1436321994] = "774,352,333,18047,234,477,1345,74644,1135,16401,3214,38821,302;_",
+					[1435711925] = "774,352,333,18281,1822,3370,30678,1720,15638,23238,1135,3636,12765,42035,302,19378,5291;_",
+					[1435715890] = "469,657,333,18047,234,477,4715,48036,24373,12432,7183,39123,19378,5291;_",
+					[1436317023] = "1126,333,5214,13067,30128,46338,1135,12432,46306,10849,8529,5291;_",
+					[1435709110] = "774,352,333,18281,35870,1720,15638,23238,1135,3636,12765,42035,302,10849,13820;_",
+					[1435709277] = "1126,18614,35870,1720,3986,11652,13305,9933,1135,3636,13131,41971,3596,7253,13820;_",
+					[1436317161] = "1126,333,5214,10197,2870,30128,36405,11068,12432,46306,10849,8529,5291;_",
+					[1435709048] = "1126,333,18281,35870,1720,15638,13305,11068,16401,42035,302,4519,1,6329,13820;_",
+					[1435714618] = "469,314,343,333,18047,234,5192,30678,17358,24373,12432,46306,19378,5291;_",
+					[1436317647] = "1126,18380,234,21895,55706,3636,8796,7183,12041,27082,3596,7253;_",
+					[1436317257] = "774,352,333,5214,13067,76466,1135,3636,8796,3969,42035,302,3596,7253,8529,5291;_",
+					[1435713586] = "469,657,333,18281,477,4715,24936,7462,15638,24373,3636,15979,39123,24669;_",
+					[1435712121] = "774,0,352,333,18281,1822,3370,16703,13975,1720,15638,23238,1135,3636,12765,42337,19378,5291;_",
+					[1436320227] = "774,352,333,18047,234,77601,3636,8796,3969,42337,10849;_",
+					[1436317474] = "774,352,18380,234,1822,28306,47473,31656,27082,19378;_",
+					[1435711361] = "1126,333,18281,1822,35768,15638,24373,16401,42337,19378,5291;_",
+					[1435710953] = "1126,333,18281,1822,35768,15638,24373,16401,3214,39123,20489,4180;_",
+				},
+				["US:Sisters of Elune:Bracnar"] = {
+					[1435883691] = "469,657,333,3659,14622,37590,1274,19165,39187,39108,8209,4538,11934;_",
+					[1435711934] = "774,352,333,18281,1822,3370,30678,1720,20159,280,8504,27469,42322,8209,11183,5289;_",
+					[1436317204] = "1126,18380,234,58029,32004,3969,15255,27067,8209,2655,1881;_",
+					[1435883757] = "469,657,333,18281,37590,1274,19165,39187,39108,8209,4536,11936;_",
+					[1435711556] = "1126,333,18281,477,1345,3370,9788,6915,13975,1720,20439,8504,27469,42322,8209,4536,6647,5289;_",
+					[1436315613] = "1126,333,5214,13067,1822,56207,32004,7183,39108,8209,16472;_",
+					[1435886251] = "1126,333,3659,14622,1822,34048,1720,20439,32004,46291,8209,11183,5289;_",
+					[1436316122] = "774,352,333,5214,13067,1822,28306,27901,32004,46291,8209,4538,6645,5289;_",
+					[1436321946] = "1126,333,18047,234,1822,56207,35973,3214,47317,4536,11936;_",
+					[1435885809] = "1126,333,1586,2073,14622,1822,34048,1720,20439,32004,46291,8209,4536,2,8067,3867;_",
+					[1436317790] = "1126,333,18047,234,1822,56207,32004,3969,42322,8209,4536;_",
+					[1435708999] = "1126,3992,1555,13067,35870,5706,16453,86504,2655,1881,2;_",
+					[1436317023] = "1126,3992,14388,234,58029,32004,7183,12041,27067,8209,2655,1881,2;_",
+					[1436319967] = "1126,333,3659,1555,13067,1822,56207,32004,7183,39108,8209,4536,6647;_",
+					[1435881973] = "469,657,333,5214,13067,477,57552,39187,39108,8209,4536,11936;_",
+					[1435711946] = "1126,333,18281,1822,3370,10147,20531,1720,20439,35973,42318,4,8209,4536,2,6645,1716,3573;_",
+					[1435710542] = "1126,333,18281,477,1345,34048,1720,20439,32004,46291,359,7850,11183,5289;_",
+					[1436316582] = "1126,333,5214,13067,1822,56207,29129,2875,7183,39108,8209,4538;_",
+					[1435716684] = "1126,333,3659,14622,477,1345,3370,9788,359,22251,20439,32004,3969,42322,359,7850,4538,8256,105;_",
+					[1435715471] = "469,305,352,333,18281,477,4715,10147,13425,8826,20439,32004,3969,42322,359,7850,4538;_",
+					[1435709069] = "1126,333,18281,35870,1720,20439,8504,27469,42580,7951,2655,1881;_",
+					[1436321892] = "1126,333,3659,14388,234,1822,56207,35973,3214,47317,4536,11936;_",
+					[1436321829] = "1126,333,3659,14388,234,1822,56207,32004,7183,39108,8209,4536,11936;_",
+					[1435883708] = "469,657,333,3659,14622,37590,1274,19165,39187,39108,8209,4536,11936;_",
+					[1436320358] = "1126,333,5214,13067,1822,56207,32004,7183,39108,8209,4536,6647;_",
+					[1436317161] = "1126,18380,234,14980,43049,8504,23500,7183,12041,27067,8209,2655,1881;_",
+					[1435883841] = "469,657,333,18281,37590,1274,19165,37139,2048,39108,8209,4536,11936;_",
+					[1436322026] = "1126,333,18047,234,477,1345,13158,43049,35973,3214,47317,4536,2,11934;_",
+					[1435881922] = "469,657,333,5214,13067,477,57552,39187,39108,8209,4538,11934;_",
+					[1435885230] = "1126,333,5214,13067,1822,56207,32004,7183,39108,8209,4536,2,11934;_",
+					[1435882439] = "1126,333,5214,13067,1822,37042,19165,39187,39108,8209,4538,6645,5289;_",
+					[1436316973] = "1126,3992,14388,234,58029,8504,23500,7183,12041,27067,8209,2655,1881,2;_",
+					[1435709405] = "1126,333,18281,477,1345,13517,20531,1720,20439,32004,46291,8209,11183;_",
+					[1436321815] = "1126,333,3659,14388,234,1822,26876,29331,32004,7183,39108,8209,4536,2,11934;_",
+					[1436320110] = "1126,333,5214,13067,1822,13158,43049,32004,7183,39108,8209,4536,2,6645;_",
+					[1436317746] = "139,987,333,18047,234,1822,55927,280,32004,3969,4952,37370;Player-1169-06A1ACBD,Pet-0-3132-1448-32244-1201-0101EE0460",
+					[1436321121] = "469,657,333,18281,15339,22251,20439,32004,7183,39108,8209,4538,6645,5289;_",
+					[1436317474] = "1126,18380,234,1822,56207,32004,3969,15255,27067,8209,4538;_",
+					[1435711518] = "1126,333,18281,1822,34048,1720,20439,35973,42322,8209,4536,6647,5289;_",
+					[1436320147] = "1126,333,5214,13067,1822,56207,32004,7183,39108,8209,4536,6647;_",
+					[1436317856] = "1126,333,18047,234,1822,56207,32004,3969,42035,287,8209;_",
+					[1435711837] = "1126,333,18281,1822,3370,23506,7172,1720,20439,35973,42322,8209,4536,2,6645,5289;_",
+					[1435885690] = "1126,333,3659,1555,13067,1822,34048,22159,32004,46291,8209,4536,2,11934;_",
+					[1435711711] = "1126,333,18281,477,1345,3370,30678,1720,20439,35973,42322,8209,4536,2,6645,5289;_",
+					[1435709048] = "1126,333,18281,15339,20531,1720,20439,8504,0,27469,50531,2655,1883;_",
+					[1435709277] = "1126,18614,15339,20531,1720,3986,16453,32004,46291,8209,2655,1881,6647;_",
+					[1436317415] = "1126,18380,234,21895,36134,8504,23500,3969,15255,27067,8209,2655,1881;_",
+					[1436317689] = "1126,333,18047,234,1822,13158,43049,32004,3969,4952,37370,12916;Player-1169-06A1ACBD,Pet-0-3132-1448-32244-1201-0101EE0460",
+					[1435711397] = "1126,333,18281,1822,13517,20531,1720,20439,35973,42322,8209,11183,5289;_",
+					[1435884749] = "469,657,333,5214,13067,58029,32004,7183,39108,8209,4536,2,8256,3678;_",
+					[1436323062] = "139,330,657,333,5214,13067,58029,35973,3214,39108,8209,4538,6645,5289;_",
+					[1435883663] = "469,657,333,3659,14622,14980,22610,1274,19165,39187,39108,8209,4536,2,11934;_",
+					[1435711925] = "1126,333,18281,1822,3370,30678,1720,20439,35973,42322,8209,4536,2,6645,5289;_",
+					[1436317647] = "1126,333,18047,234,1822,56207,32004,3969,4952,37370;Player-1169-06A1ACBD,Pet-0-3132-1448-32244-1201-0101EE0460",
+					[1435709686] = "1126,333,5894,12387,1822,13517,20531,1720,20439,32004,46291,8209,4538,6645,5289;_",
+					[1435709226] = "1126,333,18281,35870,1720,20439,32004,46291,8209,2655,1881,6647;_",
+					[1436320264] = "1126,333,5214,13067,1822,56207,8504,23500,7183,39108,8209,4536,6647;_",
+					[1435881888] = "469,657,333,5214,13067,477,57552,39187,39108,8209,16472;_",
+					[1436321598] = "19506,58263,78295;_",
+					[1436317568] = "1126,333,18047,234,1822,56207,32004,3969,4952,37370;Player-1169-06A1ACBD,Pet-0-3132-1448-32244-1201-0101EE0460",
+					[1436317632] = "1126,333,7477,10570,234,1822,13158,43049,8504,23500,3969,4952,37366,4;Player-1169-06A1ACBD,Pet-0-3132-1448-32244-1201-0101EE0460",
+					[1435886929] = "1126,333,1586,16695,1822,34048,1720,20439,32004,46291,8209,4536,2,6645,1422,3867;_",
+					[1435887965] = "19506,58263,78295;_",
+					[1436317760] = "1126,333,18047,234,1822,56207,32004,3969,4952,37370,21003,3;Player-1169-06A1ACBD,Pet-0-3132-1448-32244-1201-0101EE0460",
+					[1435715156] = "469,657,333,18281,5192,24936,7462,20439,78295,8209,4536,11936;_",
+					[1435709358] = "1126,333,3659,14622,477,14503,20890,1720,20439,32004,46291,8209,2655,1881,6647;_",
+					[1435712040] = "1126,333,18281,1822,3370,9788,20890,1720,20439,8504,27469,42322,258,7951,4536,6647,5289;_",
+					[1436317310] = "1126,18380,234,58029,32004,3969,15255,27067,8209,2655,1881,2;_",
+					[1436321793] = "1126,333,3659,14388,234,58029,32004,7183,39108,8209,4536,11936;_",
+					[1436321984] = "1126,333,18047,234,477,1345,20073,36134,29129,6844,3214,47317,4536,11936;_",
+					[1436321858] = "1126,333,3659,14388,234,1822,56207,32004,7183,47317,4536,2,11934;_",
+					[1435883800] = "469,657,333,18281,37590,1274,19165,39187,39108,8209,4536,11936;_",
+					[1435709163] = "1126,333,18281,14980,359,20531,1720,20439,32004,46291,8209,2655,1883,6645;_",
+					[1436317892] = "1126,333,18047,234,1822,56207,32004,3969,42322,8209,4536,2;_",
+					[1435883738] = "469,657,333,3659,14622,14980,22610,1274,19165,39187,39108,8209,16472;_",
+					[1435887642] = "1126,333,5214,13067,477,35393,22159,32004,46291,8209,2655,13821;_",
+					[1436319171] = "1126,333,3659,1555,13067,1822,56207,32004,7183,39108,8209,4536,2,6645;_",
+					[1435709305] = "1126,18614,14980,6915,15695,3986,16453,32004,3969,42322,8209,2655,1881,6647;_",
+					[1436322570] = "139,987,333,3659,1555,13067,1822,13158,43049,35973,3214,47317,4536,11936;_",
+					[1435888541] = "1126,333,18047,234,58029,32004,7183,39108,8209,2655,2052,6476,5293;_",
+					[1435711666] = "1126,333,18281,477,1345,3370,30678,1720,20439,8504,27469,42322,258,7951,4536,6647,5289;_",
+					[1435711603] = "1126,333,18281,477,1345,3370,9788,20890,1720,20439,35973,42322,8209,4536,6647,5289;_",
+					[1435713135] = "469,657,333,1586,17172,4715,30678,1720,20439,35973,41780,542,8209,4536,6647;_",
+					[1435885725] = "1126,333,5214,13067,1822,34048,22159,32004,46004,283,4,8209,4536,11936;_",
+					[1435713586] = "469,657,333,3659,14622,477,4715,10147,14789,7462,20439,78295,8209,4538,11934;_",
+					[1435710953] = "1126,333,18281,1822,34048,1720,20439,35973,42322,8209,4538,6645,5289;_",
+					[1435715890] = "1126,333,3659,14388,234,477,4715,10147,20531,22159,32004,46291,359,7850,2655,1883,11934;_",
+					[1436320200] = "1126,333,5214,13067,1822,56207,32004,7183,39108,8209,11183;_",
+					[1436321930] = "1126,333,3659,14388,234,1822,26876,29331,35973,3214,47317,4538,8256,3678;_",
+					[1436321994] = "1126,333,18047,234,477,1345,13158,6915,36134,35973,3214,47317,4536,2,8256,3,102,3573;_",
+					[1435889054] = "1126,333,3659,14622,477,37113,20439,32004,7183,39108,8209,2655,2052,6476,5293;_",
+					[1435712630] = "469,657,333,18281,477,4715,9788,20890,1720,20439,32004,46291,8209,11183,5289;_",
+					[1436317257] = "1126,18380,234,58029,32004,3969,15255,27067,8209,2655,1881;_",
+					[1435709110] = "774,352,333,18281,35870,1720,20159,280,5152,5763,21089,46287,8213,2655,1881,2;_",
+					[1435886565] = "1126,333,1586,16461,234,477,1345,34048,22159,32004,46291,8209,1257,3281,8067,189,105,3573;_",
+					[1435883685] = "469,657,333,3659,14622,37590,1274,19165,39187,39108,8209,4536,2,11934;_",
+					[1435883170] = "469,657,333,3659,14622,14980,22610,1274,19165,39187,39108,8209,4536,8258,3678;_",
+					[1435714618] = "469,657,333,18047,234,5192,9788,20890,22159,32004,46291,8209,4538;_",
+					[1436318442] = "1126,333,5214,13067,1822,56207,32004,3969,42322,8209,0,4536,11936;_",
+					[1435887329] = "1126,333,18281,477,1345,34048,1720,20439,32004,8921,37370,19392,5293;Player-1169-06A1ACBD,Pet-0-3018-1448-24772-1201-1F01EE0460",
+					[1436320227] = "139,987,333,5214,13067,1822,56207,32004,7183,39108,8209,4536,6647;_",
+					[1435712121] = "774,352,333,18281,1822,3370,23506,0,7172,1720,20439,8504,27469,42322,8209,4536,2,6645,5289;_",
+					[1435712141] = "1126,333,18281,1822,3370,30678,1720,20439,35973,42322,8209,4536,6647,5289;_",
+					[1435888291] = "1126,333,5214,13067,58029,32004,7183,39108,8209,2655,2052,6476,5293;_",
+					[1435711361] = "1126,333,18281,1822,34048,1720,20439,35973,42322,8209,4536,2,6645,5289;_",
+					[1436314839] = "1126,333,5214,680,12387,58029,32004,7183,39108,8209,2655,1883,11934;_",
+				},
+				["US:Sisters of Elune:Bazíl"] = {
+					[1435712141] = "768,358,333,18281,5192,24936,7462,59626,28196,10912,3170,7694,7616,2628,3573;_",
+					[1435711925] = "768,6,352,333,18281,5192,24936,2742,3000,1720,12039,16904,69791,3170,7694,10139,3,3675;_",
+					[1435713135] = "469,299,358,333,3756,15002,4715,30678,1720,11662,44750,31410,10370,542,359,24322;_",
+					[1435713586] = "469,299,358,333,3756,14525,477,4715,32398,56412,31410,10912,359,24322;_",
+					[1435711934] = "768,6,352,333,18281,5192,24936,2742,3000,1720,28943,58879,10912,10864,13817;_",
+					[1435711361] = "_;_",
+					[1435715890] = "469,299,358,333,3756,14291,234,477,4715,84841,7183,28196,10912,359,24322;_",
+					[1435712121] = "768,358,333,18281,5192,24936,2742,4720,12039,47587,20496,7700,10912,10864,13817;_",
+					[1435711711] = "768,358,333,3756,15002,4715,24936,7462,59626,12041,16155,10912,10864,13817;_",
+					[1435711603] = "768,6,352,4089,14291,711,4715,24936,2742,37699,26647,12041,27067,10864,13817;_",
+					[1435711518] = "1126,18380,30362,40441,26647,12041,16155,10912,10864,13817;_",
+					[1435716684] = "768,358,333,18281,477,1345,3370,32398,52443,7183,28196,10912,359,2811,15310,6201;_",
+					[1435711666] = "768,6,352,18380,711,4715,24936,40441,26647,12041,27067,10864,7616,6201;_",
+					[1435715156] = "469,299,358,333,18281,5192,24936,7462,87822,10912,359,18121,6201;_",
+					[1435711837] = "768,358,333,3756,14525,5192,24936,5742,1720,98734,10864,13817;_",
+					[1435712040] = "768,358,333,18281,5192,24936,7462,59626,28196,10912,3170,7694,7616,6201;_",
+					[1435711946] = "768,358,333,3756,14525,5192,24936,2742,3000,1720,87822,10912,10864,13817;_",
+					[1435714618] = "469,299,358,333,3756,14291,234,5192,30678,13382,40781,35379,10912,359,24322;_",
+					[1435711556] = "768,358,18380,711,4715,16703,8233,40441,26647,12041,16155,10912,10864,7616,6201;_",
+					[1435715471] = "469,299,358,333,3756,14525,477,4715,32398,52443,7183,28196,10912,359,24322;_",
+					[1435711397] = "783;_",
+					[1435712630] = "469,299,358,333,18281,477,4715,32398,11662,40781,7183,28196,10912,359,2811,15310,2523,3,102,3573;_",
+				},
+				["US:CenarionCircle:Lynngin"] = {
+					[1435712141] = "1126,333,18281,5192,24936,5742,1720,98749,10849,8529,5291;_",
+					[1435711925] = "1126,333,18281,5192,24936,5742,1720,20159,8784,9933,4771,23997,31105,3596,7253,8529,5291;_",
+					[1435713135] = "469,657,333,18758,4715,24936,7462,98192,557,19378,5291;_",
+					[1435713586] = "469,657,333,18281,477,4715,32398,56412,42337,19378,5291;_",
+					[1435711934] = "1126,333,18281,5192,24936,5742,1720,20159,8784,9933,59873,10849,8529,5291;_",
+					[1435711361] = "1126,333,18047,30362,67088,38566,557,4519,1,6329,13820;_",
+					[1435715890] = "469,657,333,18047,234,477,4715,84841,7183,39123,19378,5291;_",
+					[1435712121] = "774,0,352,333,18281,5192,24936,5742,1720,28943,0,9933,59873,10849,8529,5291;_",
+					[1435711711] = "1459,18758,4715,24936,5742,1720,71667,27082,10849,259,8270,5291;_",
+					[1435715471] = "1126,333,18281,477,4715,24936,7462,52443,46306,10849,8529,5291;_",
+					[1435711603] = "19506,711,4715,23572,1364,5742,34699,10668,28020,3161,23921,10849,259,8270,5291;_",
+					[1435711518] = "19506,30362,5742,34699,38688,27082,10849,259;_",
+					[1435712040] = "1126,333,18281,5192,24936,5742,1720,98749,3596,7253,8529,5291;_",
+					[1435716684] = "1126,333,18281,477,1345,3370,32398,52443,7183,39123,19378,5291;_",
+					[1435711666] = "19506,711,2595,2120,24936,5742,30663,4036,10668,1365,22632,4023,26780,302,10849,259,8270,5291;_",
+					[1435715156] = "469,657,333,18281,5192,24936,7462,28943,69806,19378,5291;_",
+					[1435711837] = "1126,333,18281,5192,23506,1430,5742,1720,74828,23921,10849,8529,5291;_",
+					[1435710953] = "1126,333,18281,1822,34048,1720,56412,42337,19378,5291;_",
+					[1435711946] = "1126,333,18281,5192,23506,1430,5742,1720,98749,10849,8529,5291;_",
+					[1435712630] = "469,657,333,18281,477,4715,30678,1720,52443,46306,19378,5291;_",
+					[1435711556] = "19506,711,4715,24936,5742,34699,34665,4023,27082,4519,1,6329,259,8270;_",
+					[1435710542] = "1459,18047,234,477,29651,59905,46306,10849,259,8270,5291;_",
+					[1435711397] = "1126,333,18047,22129,8233,67088,8018,7184,23364,557,10849,8529,5291;_",
+					[1435714618] = "469,657,333,18047,234,5192,30678,54163,46306,19378,5291;_",
+				},
+				["US:Sisters of Elune:Cashonly"] = {
+					[1436317790] = "1126,333,5214,13067,1822,86941,1270,7183,63792;_",
+					[1435886929] = "1126,333,18281,1822,34048,1720,51116,1327,47925,19348,5,125,3572;Player-1169-06C159E1,Pet-0-3018-1448-24772-58964-060206FAA8",
+					[1435887642] = "1126,333,5214,13067,477,35393,18824,34012,1327,57155,13820;Player-1169-06C159E1,Pet-0-3018-1448-24772-58964-0D0206FAA8",
+					[1435887965] = "1126,333,5214,13067,477,35393,52836,1327,4087,43838,9230,6394,7426;Player-1169-06C159E1,Pet-0-3018-1448-24772-58964-0F0206FAA8",
+					[1436320110] = "17,1109,333,5214,13067,1822,20073,13322,10124,12408,12872,18142,1270,3969,42337,1619,19353,3697;_",
+					[1436317310] = "1126,333,5214,13067,54694,34069,1270,4087,3096,39123,10849,6394,7426;_",
+					[1436315613] = "1126,333,5214,13067,1822,86884,1327,3969,42337,347,1272,16261,3087,5,3697;Player-1169-06C159E1,Pet-0-3132-1448-32244-58964-010206FAA8",
+					[1436317204] = "1126,333,5214,13067,28698,25996,3055,31014,1270,7183,39123,10849,13820;_",
+					[1436316582] = "1126,333,5214,13067,1822,52872,32464,1605,1270,7183,39123,347,24322;_",
+					[1436317023] = "1126,333,5214,13067,54694,34069,1270,7183,39123,10849,6394,3724,130,3572;_",
+					[1436317161] = "1126,333,5214,13067,66533,22230,1270,1627,5556,39123,1619,9230,13820;_",
+					[1435888541] = "469,657,333,18047,234,54694,34012,1327,7183,63792;Player-1169-06C159E1,Pet-0-3018-1448-24772-58964-170206FAA8",
+					[1436317689] = "1126,333,5214,13067,1822,52872,34069,1270,7183,56366,3724,3702;_",
+					[1436317760] = "1126,333,5214,13067,1822,86941,1270,7183,56366,7426;_",
+					[1435885690] = "1126,333,5214,13067,1822,34048,52836,1327,70975;Player-1169-06C159E1,Pet-0-3018-1448-24772-58964-020206FAA8",
+					[1436321793] = "469,657,333,18281,37590,51173,1270,36842,9464,24669;_",
+					[1436321815] = "469,657,333,18281,37590,51173,1270,36842,9464,24669;_",
+					[1436316122] = "1126,333,5214,13067,1822,52872,34069,1270,7183,39123,347,24322;_",
+					[1436320358] = "1126,333,5214,13067,1822,26456,60485,1270,3969,42337,24669;_",
+					[1436320147] = "1126,333,5214,13067,1822,86941,1270,3969,42337,1619,19478,3572;_",
+					[1436320264] = "1126,333,5214,13067,1822,26456,38255,22230,1270,3969,42337,243,1376,23050;_",
+					[1436318442] = "1126,333,5214,13067,1822,26456,420,25996,34069,1270,7183,10251,28872,347,24322;_",
+					[1436316973] = "1126,333,5214,13067,88763,1270,7183,39123,10849,13820;_",
+					[1435886565] = "1126,333,18047,234,477,1345,34048,52836,1327,47925,19348,5,125,3572;Player-1169-06C159E1,Pet-0-3018-1448-24772-58964-040206FAA8",
+					[1436321829] = "469,657,333,18281,37590,51173,1270,36842,9464,24669;_",
+					[1436317568] = "1126,333,5214,13067,1822,52872,34069,1270,7183,63792;_",
+					[1435889054] = "774,352,333,18281,477,27801,9312,3965,47151,1327,7183,40742,9230,10118,5,3697;Player-1169-06C159E1,Pet-0-3018-1448-24772-58964-1C0206FAA8",
+					[1435885230] = "1126,333,5214,13067,1822,26456,420,7172,52836,1327,47925,19348,130,3572;Player-1169-06C159E1,Pet-0-3018-1448-24772-58964-020206FAA8",
+					[1435885725] = "1126,333,5214,13067,1822,34048,52836,1327,67273,3702;Player-1169-06C159E1,Pet-0-3018-1448-24772-58964-020206FAA8",
+					[1436317647] = "1126,333,5214,13067,1822,86941,1270,7183,40742,2900,1,20149;_",
+					[1436314839] = "1126,333,5214,680,12387,1822,26456,26416,34012,1327,3969,42337,347,17533,6789;Player-1169-06C159E1,Pet-0-3132-1448-32244-58964-010206FAA8",
+					[1436321598] = "469,657,333,18281,477,37113,20159,12872,18142,1270,3969,42337,20972,3697;_",
+					[1435888291] = "1126,333,5214,13067,54694,34012,1327,7183,49972,13820;Player-1169-06C159E1,Pet-0-3018-1448-24772-58964-130206FAA8",
+					[1436317474] = "1126,333,5214,13067,1822,20073,66868,1270,7183,39123,1619,19353,3697;_",
+					[1436321121] = "469,657,333,18281,37590,17104,34069,1270,3969,42337,347,24322;_",
+					[1436317856] = "1126,333,5214,13067,1822,86941,1270,7183,63792;_",
+					[1436320227] = "1126,333,5214,13067,1822,26456,60485,1270,3969,42337,1619,15624,3724,3702;_",
+					[1436319967] = "1126,333,5214,13067,1822,86941,1270,1627,2342,42337,24669;_",
+					[1436317415] = "1126,333,5214,13067,88763,1270,7183,39123,1619,9230,13820;_",
+					[1436317746] = "1126,333,5214,13067,1822,64711,22230,1270,7183,40742,19348,3702;_",
+					[1436319171] = "1126,333,5214,13067,1822,26456,60485,1270,3969,42337,347,1272,19348,5,125,3572;_",
+					[1436317632] = "1126,333,5214,13067,1822,64711,22230,1270,7183,40742,19348,130,3572;_",
+					[1436317257] = "1126,333,5214,13067,88763,1270,7183,39123,10849,10118,3702;_",
+					[1435886251] = "1126,333,18281,1822,26456,7592,1720,17104,34012,1327,70975;Player-1169-06C159E1,Pet-0-3018-1448-24772-58964-020206FAA8",
+					[1436317892] = "1126,333,5214,13067,1822,86941,1270,7183,63792;_",
+					[1435885809] = "1126,333,18281,1822,26456,7592,1720,17104,34012,1327,70975;Player-1169-06C159E1,Pet-0-3018-1448-24772-58964-020206FAA8",
+					[1435887329] = "1459,18281,477,35393,1720,17104,34012,1327,57155,259,13561;Player-1169-06C159E1,Pet-0-3018-1448-24772-58964-090206FAA8",
+					[1436321858] = "469,657,333,18281,37590,51173,1270,36842,9464,24669;_",
+					[1436320200] = "1126,333,5214,13067,1822,86941,1270,3969,42337,1619,15624,3729,125,3572;_",
+					[1435884749] = "1459,5214,13067,88706,1327,7183,40742,9230,259,6135,3724,5,125,3572;Player-1169-06C159E1,Pet-0-3018-1448-24772-58964-010206FAA8",
+				},
+			},
+		},
 		["Shopping"] = {
 			["Bracnar-Sisters of Elune"] = {
-				["gems"] = {
+				["materials"] = {
 					{
 					}, -- [1]
 					{
@@ -823,20 +4541,26 @@ AskMrRobotDb2 = {
 					9, -- [1]
 					10, -- [2]
 				},
-				["materials"] = {
-					{
-					}, -- [1]
-					{
-					}, -- [2]
-					[0] = {
-					},
-				},
 				["enchants"] = {
 					{
+						[0] = 1,
 					}, -- [1]
 					{
+						[0] = 1,
 					}, -- [2]
 					[0] = {
+						[0] = 2,
+					},
+				},
+				["gems"] = {
+					{
+						[127760] = 2,
+					}, -- [1]
+					{
+						[127760] = 1,
+					}, -- [2]
+					[0] = {
+						[127760] = 3,
 					},
 				},
 			},

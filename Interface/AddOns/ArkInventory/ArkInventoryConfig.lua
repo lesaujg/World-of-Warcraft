@@ -101,10 +101,10 @@ function ArkInventory.ConfigBlizzard( )
 			guiHidden = true,
 			order = 9000,
 			type = "execute",
-			name = function( ) return ArkInventory.RestackString( ) end,
+			name = ArkInventory.Localise["RESTACK"],
 			desc = ArkInventory.Localise["RESTACK_TEXT"],
 			func = function( )
-				ArkInventory.Restack( )
+				ArkInventory.Restack( ArkInventory.Const.Location.Bag )
 			end,
 		},
 		

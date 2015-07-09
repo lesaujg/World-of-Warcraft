@@ -93,7 +93,7 @@ function ArkInventory.MenuMainOpen( frame )
 						"text", ArkInventory.Const.Actions[22].Name,
 						"closeWhenClicked", true,
 						"func", function( )
-							ArkInventory.Restack( )
+							ArkInventory.Restack( loc_id )
 						end
 					)
 					
@@ -1457,7 +1457,7 @@ function ArkInventory.MenuBagOpen( frame )
 						ArkInventory.Lib.Dewdrop:AddLine( )
 						
 						ArkInventory.Lib.Dewdrop:AddLine(
-							"text", ArkInventory.RestackString( ),
+							"text", ArkInventory.Localise["RESTACK"],
 							"isTitle", true,
 							"icon", ArkInventory.Const.Actions[22].Texture,
 							"textHeight", 12
@@ -1489,7 +1489,7 @@ function ArkInventory.MenuBagOpen( frame )
 						
 						ArkInventory.Lib.Dewdrop:AddLine(
 							"text", BAG_FILTER_IGNORE,
-							"tooltipTitle", ArkInventory.RestackString( ),
+							"tooltipTitle", ArkInventory.Localise["RESTACK"],
 							"tooltipText", BAG_FILTER_IGNORE,
 							"checked", checked,
 							"closeWhenClicked", true,

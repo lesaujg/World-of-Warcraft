@@ -60,7 +60,12 @@ function Amr.ColorToHex(color, alpha)
 end
 
 local function getFontPath(style)
-	return "Interface\\AddOns\\" .. Amr.ADDON_NAME .. "\\Media\\Ubuntu-" .. style .. ".ttf"
+	local region = Amr.RegionNames[GetCurrentRegion()]
+	if region == "KR" or region == "CN" or region == "TW" then
+		return "Fonts\\FRIZQT__.TTF"
+	else
+		return "Interface\\AddOns\\" .. Amr.ADDON_NAME .. "\\Media\\Ubuntu-" .. style .. ".ttf"
+	end
 end
 
 -- create a font with the specified style (Regular, Bold, Italic), size (pixels, max of 32), color (object with R, G, B), and alpha (if not specified, defaults to 1)

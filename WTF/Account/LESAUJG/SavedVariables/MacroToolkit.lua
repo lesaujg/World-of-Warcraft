@@ -1,11 +1,11 @@
 
 MacroToolkitDB = {
 	["char"] = {
-		["Ghiaccioli - Sisters of Elune"] = {
+		["Bracnar - Sisters of Elune"] = {
 			["backups"] = {
 			},
 		},
-		["Bracnar - Sisters of Elune"] = {
+		["Ghiaccioli - Sisters of Elune"] = {
 			["backups"] = {
 			},
 		},

@@ -10,7 +10,7 @@ end
 
 ralldatabase()
 
-  achievementsreminderver=6.104
+  achievementsreminderver=6.203
 
 
 	if ralloptions==nil then ralloptions={1,1,0,0,0,0,1,0,0,0,0,0} end
@@ -77,16 +77,18 @@ if select(3,GetInstanceInfo())==17 then
 --no LFR
 elseif (a2=="pvp" and raenablebg==1) or a2=="raid" or a2=="scenario" or a3==14 or a3==15 or a3==16 or (a2=="party" and a3==2) or select(3,GetInstanceInfo())==2 or (select(3,GetInstanceInfo())==1 and a2=="scenario") then
   local found=0
+  local curZoneID=GetCurrentMapAreaID()
   for kj=1,#ralllocations do
-    if ralllocations[kj]==GetCurrentMapAreaID() then
+    if ralllocations[kj]==curZoneID then
       found=found+1
       rallcolonka=kj
     end
   end
   if found>1 then
     rallcolonka=0
+	local curZoneID=GetCurrentMapAreaID()
     for bv=1,#ralllocations do
-      if ralllocations[bv]==GetCurrentMapAreaID() then
+      if ralllocations[bv]==curZoneID then
         if ralltip[bv]=="10" or ralltip[bv]=="25" then
           if tonumber(ralltip[bv])==a5 then
             rallcolonka=bv
@@ -114,8 +116,9 @@ if ralldelaycheckzone and icracurtime>ralldelaycheckzone then
 if select(3,GetInstanceInfo())==17 then
 --no LFR
 elseif GetMapNameByID(GetCurrentMapAreaID()) and ralllocationnames and ralllocations and GetCurrentMapAreaID() then
+local curZoneID=GetCurrentMapAreaID()
   for i=1,#ralllocations do
-    if ralllocations[i]==GetCurrentMapAreaID() then
+    if ralllocations[i]==curZoneID then
       ralllocationnames[i]=GetMapNameByID(GetCurrentMapAreaID())
       if a2~="pvp" then
         vbil=1
@@ -150,15 +153,17 @@ else
 				local a1, a2, a3, a4, a5 = GetInstanceInfo()
         if a2~="pvp" then --для пвп постоянно показываем зону, для сценариев также!
           if select(3,GetInstanceInfo())~=1 and a2~=nil then
-            table.insert(rallnomorereport[1],GetCurrentMapAreaID())
+			local curZoneID=GetCurrentMapAreaID()
+            table.insert(rallnomorereport[1],curZoneID)
             table.insert(rallnomorereport[2],a5)
           end
 				end
 			end
 		else
 			local bil=0
+			local curZoneID=GetCurrentMapAreaID()
 			for i=1,#rallnomorereport[1] do
-				if rallnomorereport[1][i]==GetCurrentMapAreaID() then
+				if rallnomorereport[1][i]==curZoneID then
 					if a5==rallnomorereport[2][i] then
 						bil=1
 						icllcheckachieves()
@@ -171,7 +176,8 @@ else
           local a1, a2, a3, a4, a5 = GetInstanceInfo()
           if a2~="pvp" then --для пвп постоянно показываем зону, для сценариев также!
             if select(3,GetInstanceInfo())~=1 and a2~=nil then
-              table.insert(rallnomorereport[1],GetCurrentMapAreaID())
+				local curZoneID=GetCurrentMapAreaID()
+              table.insert(rallnomorereport[1],curZoneID)
               table.insert(rallnomorereport[2],a5)
             end
 					end
@@ -561,8 +567,9 @@ local _, instanceType, pppl, _, maxPlayers, dif = GetInstanceInfo()
 if select(3,GetInstanceInfo())==17 then
 --no LFR
 else
+local curZoneID=GetCurrentMapAreaID()
 for i=1,#ralllocations do
-	if ralllocations[i]==GetCurrentMapAreaID() then
+	if ralllocations[i]==curZoneID then
 		local a1, a2, a3, a4, a5 = GetInstanceInfo()
 		if a2=="pvp" or a2=="raid" or a2=="scenario" or a3==14 or a3==15 or a3==16 or (a2=="party" and a3==2) or select(3,GetInstanceInfo())==2 or (select(3,GetInstanceInfo())==1 and a2=="scenario") then
 			if ralltip[i]=="10" or ralltip[i]=="25" then
@@ -1295,8 +1302,9 @@ local _, instanceType, pppl, _, maxPlayers, dif = GetInstanceInfo()
 if select(3,GetInstanceInfo())==17 then
 --no LFR
 else
+local curZoneID=GetCurrentMapAreaID()
 for kj=1,#ralllocations do
-	if ralllocations[kj]==GetCurrentMapAreaID() then
+	if ralllocations[kj]==curZoneID then
 		found=found+1
 		rallcolonka=kj
 	end
@@ -1314,11 +1322,11 @@ if found==0 then
 			end
 	end
 else
-
+local curZoneID=GetCurrentMapAreaID()
 if found>1 then
 	rallcolonka=0
 	for bv=1,#ralllocations do
-		if ralllocations[bv]==GetCurrentMapAreaID() then
+		if ralllocations[bv]==curZoneID then
 			if ralltip[bv]=="10" or ralltip[bv]=="25" then
 			if tonumber(ralltip[bv])==a5 then
 				rallcolonka=bv

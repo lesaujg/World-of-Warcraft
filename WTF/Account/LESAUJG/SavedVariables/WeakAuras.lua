@@ -1181,25 +1181,15 @@ WeakAurasSaved = {
 				},
 			},
 			["sort"] = "none",
-			["align"] = "CENTER",
+			["additional_triggers"] = {
+			},
 			["space"] = 2,
 			["background"] = "None",
 			["expanded"] = false,
 			["constantFactor"] = "RADIUS",
 			["selfPoint"] = "CENTER",
 			["borderOffset"] = 16,
-			["trigger"] = {
-				["unit"] = "player",
-				["type"] = "aura",
-				["spellIds"] = {
-				},
-				["subeventSuffix"] = "_CAST_START",
-				["debuffType"] = "HELPFUL",
-				["names"] = {
-				},
-				["event"] = "Health",
-				["subeventPrefix"] = "SPELL",
-			},
+			["id"] = "Hunter-Abilities-Talents-75",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -1214,15 +1204,25 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["additional_triggers"] = {
-			},
+			["align"] = "CENTER",
 			["stagger"] = 0,
 			["frameStrata"] = 1,
 			["width"] = 206.000061035156,
 			["rotation"] = 0,
 			["backgroundInset"] = 0,
 			["numTriggers"] = 1,
-			["id"] = "Hunter-Abilities-Talents-75",
+			["trigger"] = {
+				["unit"] = "player",
+				["type"] = "aura",
+				["spellIds"] = {
+				},
+				["subeventSuffix"] = "_CAST_START",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+				},
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
+			},
 			["height"] = 50.0000305175781,
 			["radius"] = 200,
 			["load"] = {
@@ -2647,20 +2647,11 @@ WeakAurasSaved = {
 			["parent"] = "Hunter-Active Buffs",
 		},
 		["Stampede Ready"] = {
-			["parent"] = "Hunter-Abilities-Talents-75",
-			["untrigger"] = {
-				["spellName"] = 121818,
-			},
+			["xOffset"] = 89,
+			["yOffset"] = 89,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["fontFlags"] = "OUTLINE",
 			["selfPoint"] = "CENTER",
 			["trigger"] = {
@@ -2723,16 +2714,27 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "READY",
 			["regionType"] = "icon",
+			["parent"] = "Hunter-Abilities-Talents-75",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0.29,
+			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.794246569275856, -- [4]
 			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0.29,
-			["auto"] = true,
-			["xOffset"] = 89,
+			["id"] = "Stampede Ready",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["frameStrata"] = 1,
+			["width"] = 50,
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -2751,13 +2753,11 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["icon"] = true,
-			["frameStrata"] = 1,
-			["width"] = 50,
-			["id"] = "Stampede Ready",
+			["untrigger"] = {
+				["spellName"] = 121818,
+			},
 			["inverse"] = false,
 			["numTriggers"] = 2,
-			["yOffset"] = 89,
 			["stickyDuration"] = false,
 			["animation"] = {
 				["start"] = {
@@ -2782,13 +2782,23 @@ WeakAurasSaved = {
 			},
 		},
 		["Counter Shot-Interrupt"] = {
-			["xOffset"] = 232,
-			["untrigger"] = {
-				["spellName"] = 147362,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.70535746216774, -- [4]
 			},
+			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["fontFlags"] = "OUTLINE",
 			["animation"] = {
 				["start"] = {
@@ -2864,16 +2874,15 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "INTERRUPT!",
 			["regionType"] = "icon",
-			["parent"] = "Hunter-Warnings",
+			["xOffset"] = 232,
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0.29,
 			["auto"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.70535746216774, -- [4]
-			},
+			["parent"] = "Hunter-Warnings",
+			["id"] = "Counter Shot-Interrupt",
+			["icon"] = true,
+			["frameStrata"] = 5,
+			["width"] = 80,
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -2910,20 +2919,11 @@ WeakAurasSaved = {
 					},
 				}, -- [2]
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["untrigger"] = {
+				["spellName"] = 147362,
 			},
-			["frameStrata"] = 5,
-			["width"] = 80,
-			["id"] = "Counter Shot-Interrupt",
 			["inverse"] = false,
 			["numTriggers"] = 3,
-			["yOffset"] = 0,
 			["stickyDuration"] = false,
 			["selfPoint"] = "CENTER",
 			["stacksPoint"] = "BOTTOM",
@@ -3021,8 +3021,8 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "%p",
 			["regionType"] = "icon",
-			["parent"] = "Hunter-Abilities",
 			["stacksPoint"] = "BOTTOM",
+			["parent"] = "Hunter-Abilities",
 			["selfPoint"] = "CENTER",
 			["actions"] = {
 				["start"] = {
@@ -3462,24 +3462,14 @@ WeakAurasSaved = {
 				},
 			},
 			["sort"] = "none",
-			["align"] = "CENTER",
+			["id"] = "Hunter-Active Buffs",
 			["space"] = 1,
 			["background"] = "None",
 			["expanded"] = false,
 			["constantFactor"] = "RADIUS",
 			["selfPoint"] = "LEFT",
 			["borderOffset"] = 16,
-			["trigger"] = {
-				["unit"] = "player",
-				["type"] = "aura",
-				["spellIds"] = {
-				},
-				["subeventSuffix"] = "_CAST_START",
-				["debuffType"] = "HELPFUL",
-				["names"] = {
-				},
-				["event"] = "Health",
-				["subeventPrefix"] = "SPELL",
+			["additional_triggers"] = {
 			},
 			["animation"] = {
 				["start"] = {
@@ -3495,14 +3485,24 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["id"] = "Hunter-Active Buffs",
+			["align"] = "CENTER",
 			["stagger"] = 0,
 			["frameStrata"] = 1,
 			["width"] = 713.000122070313,
 			["rotation"] = 0,
 			["backgroundInset"] = 0,
 			["numTriggers"] = 1,
-			["additional_triggers"] = {
+			["trigger"] = {
+				["unit"] = "player",
+				["type"] = "aura",
+				["spellIds"] = {
+				},
+				["subeventSuffix"] = "_CAST_START",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+				},
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
 			},
 			["height"] = 49.9999847412109,
 			["radius"] = 200,
@@ -3788,11 +3788,11 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["id"] = "Glaive Toss Ready",
-			["numTriggers"] = 2,
-			["inverse"] = false,
 			["untrigger"] = {
 				["spellName"] = 117050,
 			},
+			["numTriggers"] = 2,
+			["inverse"] = false,
 			["stickyDuration"] = false,
 			["animation"] = {
 				["start"] = {
@@ -3817,16 +3817,20 @@ WeakAurasSaved = {
 			},
 		},
 		["Barrage Ready"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.781548127532005, -- [4]
+			["parent"] = "Hunter-Abilities-Talents-90",
+			["untrigger"] = {
+				["spellName"] = 120360,
 			},
-			["yOffset"] = -89,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["fontFlags"] = "OUTLINE",
 			["animation"] = {
 				["start"] = {
@@ -3902,11 +3906,20 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "READY",
 			["regionType"] = "icon",
-			["xOffset"] = -89,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.781548127532005, -- [4]
+			},
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0.29,
 			["auto"] = true,
-			["parent"] = "Hunter-Abilities-Talents-90",
+			["xOffset"] = -89,
+			["id"] = "Barrage Ready",
+			["icon"] = true,
+			["frameStrata"] = 1,
+			["width"] = 50,
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -3925,22 +3938,9 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
-			["frameStrata"] = 1,
-			["width"] = 50,
-			["id"] = "Barrage Ready",
+			["yOffset"] = -89,
 			["inverse"] = false,
 			["numTriggers"] = 2,
-			["untrigger"] = {
-				["spellName"] = 120360,
-			},
 			["stickyDuration"] = false,
 			["selfPoint"] = "CENTER",
 			["stacksPoint"] = "BOTTOM",
@@ -6449,271 +6449,6 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
-		["BM/Surv-Cobra Shot"] = {
-			["color"] = {
-				1, -- [1]
-				0.968627450980392, -- [2]
-				0.972549019607843, -- [3]
-				0.48948472738266, -- [4]
-			},
-			["untrigger"] = {
-			},
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["icon"] = true,
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["use_power"] = false,
-				["unit"] = "player",
-				["powertype"] = 2,
-				["use_powertype"] = true,
-				["custom_hide"] = "timed",
-				["type"] = "status",
-				["subeventSuffix"] = "_CAST_START",
-				["event"] = "Power",
-				["use_percentpower"] = true,
-				["subeventPrefix"] = "SPELL",
-				["names"] = {
-				},
-				["spellIds"] = {
-				},
-				["use_unit"] = true,
-				["unevent"] = "auto",
-				["debuffType"] = "HELPFUL",
-				["percentpower"] = "70",
-				["percentpower_operator"] = "<=",
-			},
-			["desaturate"] = false,
-			["discrete_rotation"] = 0,
-			["font"] = "Tw_Cen_MT_Bold",
-			["height"] = 50,
-			["rotate"] = true,
-			["load"] = {
-				["use_never"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["single"] = "HUNTER",
-					["multi"] = {
-					},
-				},
-				["use_class"] = true,
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["use_spec"] = false,
-				["spec"] = {
-					["multi"] = {
-						true, -- [1]
-						[3] = true,
-					},
-				},
-				["use_combat"] = true,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 12,
-			["displayStacks"] = " ",
-			["mirror"] = false,
-			["regionType"] = "icon",
-			["blendMode"] = "ADD",
-			["parent"] = "Hunter-Focus Use",
-			["rotation"] = 0,
-			["selfPoint"] = "CENTER",
-			["texture"] = "Spells\\Agility_128",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0.29,
-			["auto"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
-			["additional_triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "status",
-						["subeventSuffix"] = "_CAST_START",
-						["use_vehicle"] = false,
-						["event"] = "Conditions",
-						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
-						["use_unit"] = true,
-						["use_alive"] = true,
-						["unevent"] = "auto",
-						["custom_hide"] = "timed",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-			},
-			["yOffset"] = -106,
-			["frameStrata"] = 4,
-			["width"] = 50,
-			["numTriggers"] = 2,
-			["xOffset"] = -188,
-			["inverse"] = false,
-			["id"] = "BM/Surv-Cobra Shot",
-			["stickyDuration"] = false,
-			["displayIcon"] = "INTERFACE\\ICONS\\ability_hunter_cobrashot",
-			["stacksPoint"] = "BOTTOMRIGHT",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["Hunter-Abilities"] = {
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["controlledChildren"] = {
-				"Misdirection Active", -- [1]
-				"BM-Kill Shot Almost", -- [2]
-				"BM-Kill Shot Ready", -- [3]
-				"Marks-Kill Shot Almost", -- [4]
-				"Marks-Kill Shot Ready", -- [5]
-				"BM-Bestial Wrath Almost", -- [6]
-				"BM-Bestial Wrath Ready", -- [7]
-				"BM-Kill Command Almost", -- [8]
-				"BM-Kill Command Ready", -- [9]
-				"BM-Focus Fire Ready", -- [10]
-				"Marks-Rapid Fire Almost", -- [11]
-				"Marks-Rapid Fire Ready", -- [12]
-				"Marks-Chimaera Shot Almost", -- [13]
-				"Marks-Chimaera Shot Ready", -- [14]
-				"Surv-Black Arrow Almost", -- [15]
-				"Surv-Black Arrow Ready", -- [16]
-				"Surv-Lock and Load Active", -- [17]
-				"Surv-Explosive Shot Almost", -- [18]
-				"Surv-Explosive Shot Ready", -- [19]
-			},
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["xOffset"] = 0,
-			["border"] = false,
-			["yOffset"] = 0,
-			["regionType"] = "group",
-			["borderSize"] = 16,
-			["borderColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["expanded"] = false,
-			["borderOffset"] = 5,
-			["selfPoint"] = "BOTTOMLEFT",
-			["additional_triggers"] = {
-			},
-			["anchorPoint"] = "CENTER",
-			["frameStrata"] = 1,
-			["id"] = "Hunter-Abilities",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
-			["borderInset"] = 11,
-			["numTriggers"] = 1,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["unit"] = "player",
-				["type"] = "aura",
-				["spellIds"] = {
-				},
-				["subeventSuffix"] = "_CAST_START",
-				["debuffType"] = "HELPFUL",
-				["names"] = {
-				},
-				["event"] = "Health",
-				["subeventPrefix"] = "SPELL",
-			},
-			["borderEdge"] = "None",
-			["load"] = {
-				["use_class"] = "true",
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["single"] = "HUNTER",
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["untrigger"] = {
-			},
-		},
 		["Talent-Exotic Munitions Missing"] = {
 			["user_y"] = 0,
 			["user_x"] = 0,
@@ -6740,33 +6475,25 @@ WeakAurasSaved = {
 				0.0823529411764706, -- [3]
 				0.150000035762787, -- [4]
 			},
-			["anchorPoint"] = "CENTER",
-			["backgroundOffset"] = 2,
-			["sameTexture"] = true,
-			["rotateText"] = "NONE",
-			["icon"] = true,
-			["fontFlags"] = "OUTLINE",
 			["yOffset"] = 0,
-			["crop_x"] = 0.41,
-			["xOffset"] = 232,
-			["animation"] = {
+			["backgroundOffset"] = 2,
+			["customTextUpdate"] = "update",
+			["rotateText"] = "NONE",
+			["actions"] = {
 				["start"] = {
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["use_alpha"] = false,
-				},
-				["main"] = {
-					["preset"] = "pulse",
-					["type"] = "preset",
-					["duration_type"] = "seconds",
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\wilhelm.ogg",
+					["do_sound"] = false,
 				},
 				["finish"] = {
-					["preset"] = "fade",
-					["type"] = "none",
-					["duration_type"] = "seconds",
+				},
+				["init"] = {
 				},
 			},
+			["fontFlags"] = "OUTLINE",
+			["parent"] = "Hunter-Warnings",
+			["crop_x"] = 0.41,
+			["xOffset"] = 232,
+			["selfPoint"] = "CENTER",
 			["trigger"] = {
 				["use_unit"] = true,
 				["unit"] = "player",
@@ -6803,13 +6530,17 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["stickyDuration"] = false,
-			["discrete_rotation"] = 0,
-			["font"] = "Tw_Cen_MT_Bold",
 			["rotation"] = 0,
+			["font"] = "Tw_Cen_MT_Bold",
+			["backgroundColor"] = {
+				0.168627450980392, -- [1]
+				0, -- [2]
+				0.00392156862745098, -- [3]
+				0.5, -- [4]
+			},
 			["numTriggers"] = 2,
 			["timer"] = true,
 			["rotate"] = true,
-			["crop_y"] = 0.41,
 			["load"] = {
 				["use_never"] = false,
 				["talent"] = {
@@ -6851,28 +6582,15 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["backgroundColor"] = {
-				0.168627450980392, -- [1]
-				0, -- [2]
-				0.00392156862745098, -- [3]
-				0.5, -- [4]
-			},
-			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
+			["discrete_rotation"] = 0,
+			["sameTexture"] = true,
+			["fontSize"] = 12,
 			["displayStacks"] = " ",
 			["foregroundTexture"] = "Interface\\PVPFrame\\PVP-Banner-Emblem-4",
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\wilhelm.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["desaturate"] = false,
 			["alpha"] = 1,
 			["mirror"] = false,
-			["fontSize"] = 12,
+			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
 			["regionType"] = "icon",
 			["stacks"] = true,
 			["blendMode"] = "BLEND",
@@ -6901,13 +6619,30 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["compress"] = false,
 			["id"] = "Talent-Exotic Munitions Missing",
-			["customTextUpdate"] = "update",
+			["crop_y"] = 0.41,
 			["frameStrata"] = 1,
 			["width"] = 150,
-			["selfPoint"] = "CENTER",
-			["parent"] = "Hunter-Warnings",
+			["anchorPoint"] = "CENTER",
+			["animation"] = {
+				["start"] = {
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["use_alpha"] = false,
+				},
+				["main"] = {
+					["preset"] = "pulse",
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["preset"] = "fade",
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
 			["inverse"] = false,
-			["desaturate"] = false,
+			["icon"] = true,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "Interface\\Icons\\spell_hunter_exoticmunitions_incendiary",
 			["stacksPoint"] = "BOTTOM",
@@ -6917,6 +6652,459 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
+		},
+		["BM-Cobra Strikes Active"] = {
+			["user_y"] = 0,
+			["stacksSize"] = 12,
+			["user_x"] = 0,
+			["xOffset"] = -150,
+			["stacksFlags"] = "None",
+			["yOffset"] = -157,
+			["foregroundColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["sameTexture"] = true,
+			["rotateText"] = "NONE",
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
+			["fontFlags"] = "OUTLINE",
+			["selfPoint"] = "CENTER",
+			["barColor"] = {
+				1, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["desaturate"] = false,
+			["rotation"] = 0,
+			["font"] = "Tw_Cen_MT_Bold",
+			["crop_y"] = 0.41,
+			["foregroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
+			["regionType"] = "icon",
+			["stacks"] = true,
+			["blendMode"] = "BLEND",
+			["texture"] = "Blizzard",
+			["textFont"] = "Friz Quadrata TT",
+			["borderOffset"] = 5,
+			["auto"] = true,
+			["compress"] = false,
+			["timerFont"] = "Friz Quadrata TT",
+			["alpha"] = 1,
+			["borderInset"] = 11,
+			["displayIcon"] = "Interface\\Icons\\",
+			["stacksPoint"] = "BOTTOM",
+			["backgroundOffset"] = 2,
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.743452787399292, -- [4]
+			},
+			["barInFront"] = true,
+			["desaturateBackground"] = false,
+			["customTextUpdate"] = "update",
+			["desaturateForeground"] = false,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["trigger"] = {
+				["sourceunit"] = "player",
+				["spellId"] = "82692",
+				["duration"] = "20",
+				["message_operator"] = "find('%s')",
+				["names"] = {
+					"Cobra Strikes", -- [1]
+				},
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["debuffType"] = "HELPFUL",
+				["sourceName"] = "Tehstool",
+				["subeventSuffix"] = "_CAST_SUCCESS",
+				["name"] = "Focus Fire",
+				["custom_hide"] = "timed",
+				["use_spellId"] = true,
+				["type"] = "aura",
+				["use_name"] = true,
+				["unevent"] = "timed",
+				["tooltip_operator"] = "==",
+				["use_sourceName"] = true,
+				["event"] = "Combat Log",
+				["name_operator"] = "==",
+				["message"] = "Stampede 20s",
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["use_sourceunit"] = true,
+				["use_message"] = true,
+				["spellName"] = "Stampede",
+				["use_messageType"] = true,
+				["messageType"] = "CHAT_MSG_WHISPER",
+			},
+			["text"] = true,
+			["stickyDuration"] = false,
+			["stacksFont"] = "Friz Quadrata TT",
+			["timer"] = true,
+			["timerFlags"] = "None",
+			["height"] = 50,
+			["fontSize"] = 18,
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
+			["displayStacks"] = "%s",
+			["displayTextLeft"] = "%n",
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["numTriggers"] = 1,
+			["mirror"] = false,
+			["borderEdge"] = "None",
+			["zoom"] = 0.29,
+			["borderSize"] = 16,
+			["timerColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["icon_side"] = "RIGHT",
+			["anchorPoint"] = "CENTER",
+			["textFlags"] = "None",
+			["displayTextRight"] = "%p",
+			["id"] = "BM-Cobra Strikes Active",
+			["stacksContainment"] = "INSIDE",
+			["stacksColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["timerSize"] = 12,
+			["border"] = false,
+			["additional_triggers"] = {
+			},
+			["textSize"] = 12,
+			["frameStrata"] = 1,
+			["width"] = 50,
+			["icon"] = true,
+			["untrigger"] = {
+			},
+			["inverse"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["orientation"] = "HORIZONTAL",
+			["crop_x"] = 0.41,
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["parent"] = "Hunter-Active Buffs",
+		},
+		["Surv-Lock and Load Active"] = {
+			["textFlags"] = "None",
+			["stacksSize"] = 12,
+			["user_x"] = 0,
+			["xOffset"] = -89,
+			["stacksFlags"] = "None",
+			["yOffset"] = 89,
+			["foregroundColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["sameTexture"] = true,
+			["rotateText"] = "NONE",
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["glow_frame"] = "WeakAuras:M-Bombardment Active",
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["fontFlags"] = "OUTLINE",
+			["useTooltip"] = false,
+			["selfPoint"] = "CENTER",
+			["barColor"] = {
+				1, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["desaturate"] = false,
+			["rotation"] = 0,
+			["font"] = "Tw_Cen_MT_Bold",
+			["crop_y"] = 0.41,
+			["foregroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
+			["regionType"] = "icon",
+			["stacks"] = true,
+			["blendMode"] = "BLEND",
+			["texture"] = "Blizzard",
+			["textFont"] = "Friz Quadrata TT",
+			["stacksFont"] = "Friz Quadrata TT",
+			["auto"] = false,
+			["compress"] = false,
+			["timerFont"] = "Friz Quadrata TT",
+			["alpha"] = 1,
+			["borderInset"] = 11,
+			["displayIcon"] = "Interface\\Icons\\ability_hunter_explosiveshot",
+			["stacksPoint"] = "CENTER",
+			["backgroundOffset"] = 2,
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.743452787399292, -- [4]
+			},
+			["customText"] = "Lock\n&\nLoad!\n%p",
+			["barInFront"] = true,
+			["desaturateBackground"] = false,
+			["customTextUpdate"] = "update",
+			["textSize"] = 12,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "preset",
+					["preset"] = "pulse",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["trigger"] = {
+				["sourceunit"] = "player",
+				["spellId"] = "82692",
+				["duration"] = "20",
+				["message_operator"] = "find('%s')",
+				["names"] = {
+					"Lock and Load", -- [1]
+				},
+				["subeventPrefix"] = "SPELL",
+				["unit"] = "player",
+				["debuffType"] = "HELPFUL",
+				["use_sourceName"] = true,
+				["unevent"] = "timed",
+				["name"] = "Focus Fire",
+				["custom_hide"] = "timed",
+				["use_spellId"] = true,
+				["type"] = "aura",
+				["use_name"] = true,
+				["tooltip_operator"] = "==",
+				["name_operator"] = "==",
+				["subeventSuffix"] = "_CAST_SUCCESS",
+				["event"] = "Combat Log",
+				["sourceName"] = "Tehstool",
+				["message"] = "Stampede 20s",
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["use_sourceunit"] = true,
+				["use_message"] = true,
+				["spellName"] = "Stampede",
+				["use_messageType"] = true,
+				["messageType"] = "CHAT_MSG_WHISPER",
+			},
+			["text"] = true,
+			["stickyDuration"] = false,
+			["desaturateForeground"] = false,
+			["timer"] = true,
+			["timerFlags"] = "None",
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["untrigger"] = {
+			},
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["fontSize"] = 16,
+			["displayStacks"] = "L&L %s",
+			["zoom"] = 0.29,
+			["border"] = false,
+			["numTriggers"] = 2,
+			["mirror"] = false,
+			["borderEdge"] = "None",
+			["height"] = 50,
+			["borderSize"] = 16,
+			["borderOffset"] = 5,
+			["icon_side"] = "RIGHT",
+			["displayTextLeft"] = "%n",
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
+			["timerSize"] = 12,
+			["id"] = "Surv-Lock and Load Active",
+			["stacksContainment"] = "INSIDE",
+			["stacksColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["displayTextRight"] = "%p",
+			["user_y"] = 0,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["subeventSuffix"] = "_CAST_START",
+						["use_vehicle"] = false,
+						["event"] = "Conditions",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
+						["use_unit"] = true,
+						["use_alive"] = true,
+						["unevent"] = "auto",
+						["custom_hide"] = "timed",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+			},
+			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
+			["frameStrata"] = 5,
+			["width"] = 50,
+			["timerColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["anchorPoint"] = "CENTER",
+			["inverse"] = false,
+			["icon"] = true,
+			["orientation"] = "HORIZONTAL",
+			["crop_x"] = 0.41,
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["parent"] = "Hunter-Abilities",
 		},
 		["Stampede Almost"] = {
 			["color"] = {
@@ -7199,85 +7387,71 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
-		["Surv-Lock and Load Active"] = {
-			["textFlags"] = "None",
-			["stacksSize"] = 12,
-			["user_x"] = 0,
-			["xOffset"] = -89,
-			["stacksFlags"] = "None",
-			["yOffset"] = 89,
-			["foregroundColor"] = {
+		["Hunter-Abilities"] = {
+			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
-				1, -- [4]
+				0.5, -- [4]
 			},
+			["controlledChildren"] = {
+				"Misdirection Active", -- [1]
+				"BM-Kill Shot Almost", -- [2]
+				"BM-Kill Shot Ready", -- [3]
+				"Marks-Kill Shot Almost", -- [4]
+				"Marks-Kill Shot Ready", -- [5]
+				"BM-Bestial Wrath Almost", -- [6]
+				"BM-Bestial Wrath Ready", -- [7]
+				"BM-Kill Command Almost", -- [8]
+				"BM-Kill Command Ready", -- [9]
+				"BM-Focus Fire Ready", -- [10]
+				"Marks-Rapid Fire Almost", -- [11]
+				"Marks-Rapid Fire Ready", -- [12]
+				"Marks-Chimaera Shot Almost", -- [13]
+				"Marks-Chimaera Shot Ready", -- [14]
+				"Surv-Black Arrow Almost", -- [15]
+				"Surv-Black Arrow Ready", -- [16]
+				"Surv-Lock and Load Active", -- [17]
+				"Surv-Explosive Shot Almost", -- [18]
+				"Surv-Explosive Shot Ready", -- [19]
+			},
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["xOffset"] = 0,
+			["border"] = false,
+			["yOffset"] = 0,
+			["regionType"] = "group",
+			["borderSize"] = 16,
 			["borderColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sameTexture"] = true,
-			["rotateText"] = "NONE",
+			["expanded"] = false,
+			["borderOffset"] = 5,
+			["selfPoint"] = "BOTTOMLEFT",
+			["additional_triggers"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["frameStrata"] = 1,
+			["id"] = "Hunter-Abilities",
 			["actions"] = {
 				["start"] = {
-					["do_glow"] = false,
-					["glow_frame"] = "WeakAuras:M-Bombardment Active",
 				},
 				["finish"] = {
 				},
 				["init"] = {
 				},
 			},
-			["fontFlags"] = "OUTLINE",
-			["useTooltip"] = false,
-			["selfPoint"] = "CENTER",
-			["barColor"] = {
-				1, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["desaturate"] = false,
-			["rotation"] = 0,
-			["font"] = "Tw_Cen_MT_Bold",
-			["crop_y"] = 0.41,
-			["foregroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
-			["regionType"] = "icon",
-			["stacks"] = true,
-			["blendMode"] = "BLEND",
-			["texture"] = "Blizzard",
-			["textFont"] = "Friz Quadrata TT",
-			["stacksFont"] = "Friz Quadrata TT",
-			["auto"] = false,
-			["compress"] = false,
-			["timerFont"] = "Friz Quadrata TT",
-			["alpha"] = 1,
 			["borderInset"] = 11,
-			["displayIcon"] = "Interface\\Icons\\ability_hunter_explosiveshot",
-			["stacksPoint"] = "CENTER",
-			["backgroundOffset"] = 2,
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.743452787399292, -- [4]
-			},
-			["customText"] = "Lock\n&\nLoad!\n%p",
-			["barInFront"] = true,
-			["desaturateBackground"] = false,
-			["customTextUpdate"] = "update",
-			["textSize"] = 12,
+			["numTriggers"] = 1,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
 					["duration_type"] = "seconds",
 				},
 				["main"] = {
-					["type"] = "preset",
-					["preset"] = "pulse",
+					["type"] = "none",
 					["duration_type"] = "seconds",
 				},
 				["finish"] = {
@@ -7286,43 +7460,106 @@ WeakAurasSaved = {
 				},
 			},
 			["trigger"] = {
-				["sourceunit"] = "player",
-				["spellId"] = "82692",
-				["duration"] = "20",
-				["message_operator"] = "find('%s')",
-				["names"] = {
-					"Lock and Load", -- [1]
-				},
-				["subeventPrefix"] = "SPELL",
 				["unit"] = "player",
-				["debuffType"] = "HELPFUL",
-				["use_sourceName"] = true,
-				["unevent"] = "timed",
-				["name"] = "Focus Fire",
-				["custom_hide"] = "timed",
-				["use_spellId"] = true,
 				["type"] = "aura",
-				["use_name"] = true,
-				["tooltip_operator"] = "==",
-				["name_operator"] = "==",
-				["subeventSuffix"] = "_CAST_SUCCESS",
-				["event"] = "Combat Log",
-				["sourceName"] = "Tehstool",
-				["message"] = "Stampede 20s",
-				["use_spellName"] = true,
 				["spellIds"] = {
 				},
-				["use_sourceunit"] = true,
-				["use_message"] = true,
-				["spellName"] = "Stampede",
-				["use_messageType"] = true,
-				["messageType"] = "CHAT_MSG_WHISPER",
+				["subeventSuffix"] = "_CAST_START",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+				},
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
 			},
-			["text"] = true,
-			["stickyDuration"] = false,
-			["desaturateForeground"] = false,
-			["timer"] = true,
-			["timerFlags"] = "None",
+			["borderEdge"] = "None",
+			["load"] = {
+				["use_class"] = "true",
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["untrigger"] = {
+			},
+		},
+		["BM/Surv-Cobra Shot"] = {
+			["color"] = {
+				1, -- [1]
+				0.968627450980392, -- [2]
+				0.972549019607843, -- [3]
+				0.48948472738266, -- [4]
+			},
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["trigger"] = {
+				["use_power"] = false,
+				["unit"] = "player",
+				["powertype"] = 2,
+				["use_powertype"] = true,
+				["custom_hide"] = "timed",
+				["type"] = "status",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Power",
+				["use_percentpower"] = true,
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["spellIds"] = {
+				},
+				["use_unit"] = true,
+				["unevent"] = "auto",
+				["debuffType"] = "HELPFUL",
+				["percentpower"] = "70",
+				["percentpower_operator"] = "<=",
+			},
+			["desaturate"] = false,
+			["discrete_rotation"] = 0,
+			["font"] = "Tw_Cen_MT_Bold",
+			["height"] = 50,
+			["rotate"] = true,
 			["load"] = {
 				["use_never"] = false,
 				["talent"] = {
@@ -7343,10 +7580,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["use_spec"] = false,
 				["spec"] = {
-					["single"] = 3,
 					["multi"] = {
+						true, -- [1]
+						[3] = true,
 					},
 				},
 				["use_combat"] = true,
@@ -7359,43 +7597,26 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["untrigger"] = {
-			},
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["fontSize"] = 16,
-			["displayStacks"] = "L&L %s",
-			["zoom"] = 0.29,
-			["border"] = false,
-			["numTriggers"] = 2,
+			["fontSize"] = 12,
+			["displayStacks"] = " ",
 			["mirror"] = false,
-			["borderEdge"] = "None",
-			["height"] = 50,
-			["borderSize"] = 16,
-			["borderOffset"] = 5,
-			["icon_side"] = "RIGHT",
-			["displayTextLeft"] = "%n",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
-			["timerSize"] = 12,
-			["id"] = "Surv-Lock and Load Active",
+			["regionType"] = "icon",
+			["blendMode"] = "ADD",
+			["parent"] = "Hunter-Focus Use",
+			["rotation"] = 0,
+			["selfPoint"] = "CENTER",
+			["texture"] = "Spells\\Agility_128",
 			["stacksContainment"] = "INSIDE",
-			["stacksColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["zoom"] = 0.29,
+			["auto"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
-			["displayTextRight"] = "%p",
-			["user_y"] = 0,
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -7414,243 +7635,22 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
-			["frameStrata"] = 5,
+			["yOffset"] = -106,
+			["frameStrata"] = 4,
 			["width"] = 50,
-			["timerColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["anchorPoint"] = "CENTER",
+			["numTriggers"] = 2,
+			["xOffset"] = -188,
 			["inverse"] = false,
-			["icon"] = true,
-			["orientation"] = "HORIZONTAL",
-			["crop_x"] = 0.41,
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["parent"] = "Hunter-Abilities",
-		},
-		["BM-Cobra Strikes Active"] = {
-			["user_y"] = 0,
-			["stacksSize"] = 12,
-			["user_x"] = 0,
-			["xOffset"] = -150,
-			["stacksFlags"] = "None",
-			["yOffset"] = -157,
-			["foregroundColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["borderColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["sameTexture"] = true,
-			["rotateText"] = "NONE",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
-			["fontFlags"] = "OUTLINE",
-			["selfPoint"] = "CENTER",
-			["barColor"] = {
-				1, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["desaturate"] = false,
-			["rotation"] = 0,
-			["font"] = "Tw_Cen_MT_Bold",
-			["crop_y"] = 0.41,
-			["foregroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
-			["regionType"] = "icon",
-			["stacks"] = true,
-			["blendMode"] = "BLEND",
-			["texture"] = "Blizzard",
-			["textFont"] = "Friz Quadrata TT",
-			["borderOffset"] = 5,
-			["auto"] = true,
-			["compress"] = false,
-			["timerFont"] = "Friz Quadrata TT",
-			["alpha"] = 1,
-			["borderInset"] = 11,
-			["displayIcon"] = "Interface\\Icons\\",
-			["stacksPoint"] = "BOTTOM",
-			["backgroundOffset"] = 2,
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.743452787399292, -- [4]
-			},
-			["barInFront"] = true,
-			["desaturateBackground"] = false,
-			["customTextUpdate"] = "update",
-			["desaturateForeground"] = false,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["sourceunit"] = "player",
-				["spellId"] = "82692",
-				["duration"] = "20",
-				["message_operator"] = "find('%s')",
-				["names"] = {
-					"Cobra Strikes", -- [1]
-				},
-				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
-				["debuffType"] = "HELPFUL",
-				["sourceName"] = "Tehstool",
-				["subeventSuffix"] = "_CAST_SUCCESS",
-				["name"] = "Focus Fire",
-				["custom_hide"] = "timed",
-				["use_spellId"] = true,
-				["type"] = "aura",
-				["use_name"] = true,
-				["unevent"] = "timed",
-				["tooltip_operator"] = "==",
-				["use_sourceName"] = true,
-				["event"] = "Combat Log",
-				["name_operator"] = "==",
-				["message"] = "Stampede 20s",
-				["use_spellName"] = true,
-				["spellIds"] = {
-				},
-				["use_sourceunit"] = true,
-				["use_message"] = true,
-				["spellName"] = "Stampede",
-				["use_messageType"] = true,
-				["messageType"] = "CHAT_MSG_WHISPER",
-			},
-			["text"] = true,
+			["id"] = "BM/Surv-Cobra Shot",
 			["stickyDuration"] = false,
-			["stacksFont"] = "Friz Quadrata TT",
-			["timer"] = true,
-			["timerFlags"] = "None",
-			["height"] = 50,
-			["fontSize"] = 18,
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
-			["displayStacks"] = "%s",
-			["displayTextLeft"] = "%n",
-			["load"] = {
-				["use_never"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["single"] = "HUNTER",
-					["multi"] = {
-					},
-				},
-				["use_class"] = true,
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["use_spec"] = true,
-				["spec"] = {
-					["single"] = 1,
-					["multi"] = {
-					},
-				},
-				["use_combat"] = true,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["numTriggers"] = 1,
-			["mirror"] = false,
-			["borderEdge"] = "None",
-			["zoom"] = 0.29,
-			["borderSize"] = 16,
-			["timerColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["icon_side"] = "RIGHT",
-			["anchorPoint"] = "CENTER",
-			["textFlags"] = "None",
-			["displayTextRight"] = "%p",
-			["id"] = "BM-Cobra Strikes Active",
-			["stacksContainment"] = "INSIDE",
-			["stacksColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["timerSize"] = 12,
-			["border"] = false,
-			["additional_triggers"] = {
-			},
-			["textSize"] = 12,
-			["frameStrata"] = 1,
-			["width"] = 50,
-			["icon"] = true,
-			["untrigger"] = {
-			},
-			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
-			["orientation"] = "HORIZONTAL",
-			["crop_x"] = 0.41,
+			["displayIcon"] = "INTERFACE\\ICONS\\ability_hunter_cobrashot",
+			["stacksPoint"] = "BOTTOMRIGHT",
 			["textColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["parent"] = "Hunter-Active Buffs",
 		},
 		["Marks-Bombardment Active"] = {
 			["textFlags"] = "None",
@@ -8141,9 +8141,9 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["width"] = 60,
 			["stickyDuration"] = false,
+			["yOffset"] = 140,
 			["inverse"] = false,
 			["numTriggers"] = 2,
-			["yOffset"] = 140,
 			["id"] = "Marks-Kill Shot Ready",
 			["selfPoint"] = "CENTER",
 			["stacksPoint"] = "BOTTOM",
@@ -8322,25 +8322,15 @@ WeakAurasSaved = {
 				},
 			},
 			["sort"] = "none",
-			["align"] = "CENTER",
+			["additional_triggers"] = {
+			},
 			["space"] = 2,
 			["background"] = "None",
 			["expanded"] = false,
 			["constantFactor"] = "RADIUS",
 			["selfPoint"] = "CENTER",
 			["borderOffset"] = 16,
-			["trigger"] = {
-				["unit"] = "player",
-				["type"] = "aura",
-				["spellIds"] = {
-				},
-				["subeventSuffix"] = "_CAST_START",
-				["debuffType"] = "HELPFUL",
-				["names"] = {
-				},
-				["event"] = "Health",
-				["subeventPrefix"] = "SPELL",
-			},
+			["id"] = "Hunter-Abilities-Talents-90",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -8355,15 +8345,25 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["additional_triggers"] = {
-			},
+			["align"] = "CENTER",
 			["stagger"] = 0,
 			["frameStrata"] = 1,
 			["width"] = 309.999969482422,
 			["rotation"] = 0,
 			["backgroundInset"] = 0,
 			["numTriggers"] = 1,
-			["id"] = "Hunter-Abilities-Talents-90",
+			["trigger"] = {
+				["unit"] = "player",
+				["type"] = "aura",
+				["spellIds"] = {
+				},
+				["subeventSuffix"] = "_CAST_START",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+				},
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
+			},
 			["height"] = 50.0000305175781,
 			["radius"] = 200,
 			["load"] = {
@@ -9317,7 +9317,7 @@ WeakAurasSaved = {
 			["rotation"] = 0,
 			["font"] = "Tw_Cen_MT_Bold",
 			["height"] = 50,
-			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
 			["load"] = {
 				["use_never"] = false,
 				["talent"] = {
@@ -9356,14 +9356,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["yOffset"] = 0,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -9374,13 +9367,13 @@ WeakAurasSaved = {
 			["displayStacks"] = " %p",
 			["stacksPoint"] = "BOTTOM",
 			["scale"] = 1,
-			["parent"] = "Hunter-Active Buffs",
+			["stickyDuration"] = false,
 			["border"] = false,
 			["borderEdge"] = "None",
 			["regionType"] = "icon",
 			["borderSize"] = 16,
 			["sequence"] = 1,
-			["yOffset"] = 0,
+			["xOffset"] = 0,
 			["numTriggers"] = 1,
 			["animation"] = {
 				["start"] = {
@@ -9410,8 +9403,15 @@ WeakAurasSaved = {
 			["zoom"] = 0.29,
 			["borderInset"] = 11,
 			["inverse"] = true,
-			["selfPoint"] = "CENTER",
-			["xOffset"] = 0,
+			["parent"] = "Hunter-Active Buffs",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["displayIcon"] = "Interface\\Icons\\Ability_Hunter_MendPet",
 			["cooldown"] = false,
 			["textColor"] = {
@@ -9531,9 +9531,9 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["id"] = "Marks-Rapid Fire Ready",
+			["yOffset"] = 89,
 			["inverse"] = false,
 			["numTriggers"] = 2,
-			["yOffset"] = 89,
 			["stickyDuration"] = false,
 			["animation"] = {
 				["start"] = {
@@ -10168,8 +10168,8 @@ WeakAurasSaved = {
 				["icon"] = "Interface\\Icons\\ability_paladin_seraphim",
 			}, -- [20]
 			{
-				["name"] = "Final Verdict",
-				["icon"] = "Interface\\Icons\\ability_paladin_finalverdict",
+				["name"] = "Holy Shield",
+				["icon"] = "Interface\\Icons\\Spell_Holy_BlessingOfProtection",
 			}, -- [21]
 		},
 	},

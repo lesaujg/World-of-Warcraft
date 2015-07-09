@@ -1,0 +1,17 @@
+tag 6.2.2
+9b59f661934daa2e1f87fcac74168f5e15d6d792
+Mike "Xodiv" Battersby <mib@post.com>
+2015-07-02 21:59:52 +1000
+
+Release 6.2.2.
+
+Add slash commands for current mount actions.
+
+
+--------------------
+
+Mike "Xodiv" Battersby:
+	- Add slash commands for updating enabled state of active mount.
+	/litemount enable
+	    /litemount disable
+	    /litemount toggle

@@ -1253,8 +1253,6 @@ function DraenorTreasures:OnInitialize()
 
  self.db = LibStub("AceDB-3.0"):New("DraenorTreasuresDB", defaults, "Default")
  self:RegisterEvent("PLAYER_ENTERING_WORLD", "WorldEnter")
- local temp = "TanaanTreasures"
- print (string.find(temp, "Horst"))
 end
 
 function DraenorTreasures:WorldEnter()
@@ -1341,7 +1339,7 @@ do
 				if (value[1] and self.db.profile[value[6]] and not DraenorTreasures:HasBeenLooted(value)) and (value[6] == "TanaanHundred") then
 					if (self.db.profile.TanaanHundredAchievement) then
 						if ((value[8] ~= nil) and (value[8] ~= "")) then
-						_, _, completed, _, _, _, _, _, _, _, _ = GetAchievementCriteriaInfoByID(10070, value[8])
+							local _, _, completed, _, _, _, _, _, _, _, _ = GetAchievementCriteriaInfoByID(10070, value[8])
 							if (completed == false) then
 								if ((value[7] ~= nil) and (value[7] ~= "")) then
 									GetIcon(value[7]) --this should precache the Item, so that the loot is correctly returned

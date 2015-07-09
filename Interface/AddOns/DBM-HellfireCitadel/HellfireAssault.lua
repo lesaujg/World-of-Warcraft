@@ -1,13 +1,13 @@
 local mod	= DBM:NewMod(1426, "DBM-HellfireCitadel", nil, 669)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 13927 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 14024 $"):sub(12, -3))
 mod:SetCreatureID(90019)--Main ID is door, door death= win. 94515 Siegemaster Mar'tak
 mod:SetEncounterID(1778)
 mod:SetZone()
 mod:SetUsedIcons(6, 5, 4, 3, 2, 1)
-mod:SetHotfixNoticeRev(13909)
---mod:SetRespawnTime(20)
+mod:SetHotfixNoticeRev(13937)
+--mod.respawnTime = 20
 
 mod:RegisterCombat("combat")
 
@@ -71,20 +71,20 @@ local specWarnRepair				= mod:NewSpecialWarningInterrupt(185816, "-Healer", nil,
 local specWarnDemolisher			= mod:NewSpecialWarningSwitch("ej11429", "Dps", nil, nil, 1, 5)--Heroic & Mythic only. Does massive aoe damage, has to be killed asap
 
 --Siegemaster Mar'tak
-local timerHowlingAxeCD				= mod:NewCDTimer(8.47, 184369)
-local timerShockwaveCD				= mod:NewCDTimer(8.5, 184394)
+local timerHowlingAxeCD				= mod:NewCDTimer(8.47, 184369, nil, nil, nil, 3)
+local timerShockwaveCD				= mod:NewCDTimer(8.5, 184394, nil, nil, nil, 3)
 --Hellfire Reinforcements
-local timerFelCastersCD				= mod:NewCDCountTimer(40, "ej11411", nil, nil, nil, 181155)
-local timerBerserkersCD				= mod:NewCDCountTimer(40, "ej11425", nil, nil, nil, 184243)
+local timerFelCastersCD				= mod:NewCDCountTimer(40, "ej11411", nil, nil, nil, 1, 181155)
+local timerBerserkersCD				= mod:NewCDCountTimer(40, "ej11425", nil, nil, nil, 1, 184243)
 ----Gorebound Berserker (tank add probably)
---local timerCowerCD				= mod:NewCDTimer(107, 184238)
---local timerSlamCD					= mod:NewCDTimer(107, 184243)
+--local timerCowerCD				= mod:NewCDTimer(107, 184238, nil, nil, nil, 5)
+--local timerSlamCD					= mod:NewCDTimer(107, 184243, nil, nil, nil, 5)
 ----Gorebound Felcaster
---local timerFelfireVolleyCD		= mod:NewCDTimer(107, 180417, nil, "-Healer")
+--local timerFelfireVolleyCD		= mod:NewCDTimer(107, 180417, nil, "-Healer", nil, 4)
 ----Contracted Engineer
 
 --Felfire-Imbued Siege Vehicles
-local timerSiegeVehicleCD			= mod:NewTimer(60, "timerSiegeVehicleCD", 160240)--Cannot find any short text timers that will fit the bill
+local timerSiegeVehicleCD			= mod:NewTimer(60, "timerSiegeVehicleCD", 160240, nil, nil, 1)--Cannot find any short text timers that will fit the bill
 
 --local berserkTimer				= mod:NewBerserkTimer(360)
 
@@ -198,7 +198,7 @@ function mod:OnCombatStart(delay)
 		timerSiegeVehicleCD:Start(55-delay, "("..DBM_CORE_RIGHT..")")
 	else
 		timerBerserkersCD:Start(30-delay, 1)
-		timerFelCastersCD:start(35-delay, 1)
+		timerFelCastersCD:Start(35-delay, 1)
 		timerSiegeVehicleCD:Start(37.8-delay, "")
 	end
 end

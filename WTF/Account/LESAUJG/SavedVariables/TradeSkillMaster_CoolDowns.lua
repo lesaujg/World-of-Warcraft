@@ -34,7 +34,6 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Alchemical Catalyst",
 					["players"] = {
 						["Bracnar"] = {
-							["CoolDownTime"] = 1435572022.812,
 							["knownCraft"] = true,
 						},
 					},
@@ -197,6 +196,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Taladite Crystal",
 					["players"] = {
 						["Uldaris"] = {
+							["CoolDownTime"] = 1436436033.928,
 							["knownCraft"] = true,
 						},
 					},
@@ -548,7 +548,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Temporal Crystal",
 					["players"] = {
 						["Bracnar"] = {
-							["CoolDownTime"] = 1435572085.574,
+							["CoolDownTime"] = 1436436013.702,
 							["knownCraft"] = true,
 						},
 					},

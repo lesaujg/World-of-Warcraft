@@ -2,15 +2,15 @@
 
 
 --locations
-ralllocations={604,604,543,543,529,529,535,535,527,527,718,718,532,532,531,531,609,609,522,533,521,542,534,530,603,602,601,520,528,536,525,526,523,524,756,764,767,753,768,769,757,759,747,752,754,758,773,781,793,800,820,819,816,824,443,461,401,482,512,540,736,626,871,874,898,876,867,885,877,875,887,897,896,886,878,899,884,900,880,851,882,856,912,911,883,914,930,937,939,940,938,953,964,987,984,989,995,993,1008,969,994,988}
+ralllocations={604,604,543,543,529,529,535,535,527,527,718,718,532,532,531,531,609,609,522,533,521,542,534,530,603,602,601,520,528,536,525,526,523,524,756,764,767,753,768,769,757,759,747,752,754,758,773,781,793,800,820,819,816,824,443,461,401,482,512,540,736,626,871,874,898,876,867,885,877,875,887,897,896,886,878,899,884,900,880,851,882,856,912,911,883,914,930,937,939,940,938,953,964,987,984,989,995,993,1008,969,994,988,1026}
 
-ralllocationnamesdef={"Icecrown Citadel","Icecrown Citadel","Trial of the Crusader", "Trial of the Crusader", "Ulduar", "Ulduar", "Naxxramas","Naxxramas","The Eye of Eternity","The Eye of Eternity","Onyxia's Lair","Onyxia's Lair","Vault of Archavon","Vault of Archavon","The Obsidian Sanctum","The Obsidian Sanctum","The Ruby Sanctum","The Ruby Sanctum","Ahn'kahet: The Old Kingdom","Azjol-Nerub","The Culling of Stratholme","Trial of the Champion","Drak'Tharon Keep","Gundrak","Halls of Reflection","Pit of Saron","The Forge of Souls","The Nexus","The Oculus","The Violet Hold","Halls of Lightning","Halls of Stone","Utgarde Keep","Utgarde Pinnacle", "The Deadmines","Shadowfang Keep","Throne of the Tides","Blackrock Caverns","The Stonecore","The Vortex Pinnacle","Grim Batol","Halls of Origination","Lost City of the Tol'vir","Baradin Hold","Blackwing Descent","The Bastion of Twilight","Throne of the Four Winds","Zul'Aman","Zul'Gurub", "Firelands","End Time","Hour of Twilight","Well of Eternity","Dragon Soul","Warsong Gulch","Arathi Basin","Alterac Valley","Eye of the Storm","Strand of the Ancients","Isle of Conquest","The Battle for Gilneas","Twin Peaks","Scarlet Halls","Scarlet Monastery","Scholomance","Stormstout Brewery","Temple of the Jade Serpent","Mogu'shan Palace","Shado-Pan Monastery","Gate of the Setting Sun","Siege of Niuzao Temple","Heart of Fear","Mogu'shan Vaults","Terrace of Endless Spring","A Brewing Storm", "Arena of Annihilation","Brewmoon Festval","Crypt of Forgotten Kings","Greenstone Village","Theramore's Fall","Unga Ingoo","Temple of Kotmogu","A Little Patience","Lion's Landing","Zan'vess","Dagger in the Dark","Throne of Thunder","Dark Heart of Pandaria","Blood in the Snow","Battle on the High Seas","The Secrets of Ragefire","Siege of Orgrimmar","Bloodmaul Slag Mines","Iron Docks","Auchindoun","Skyreach","Upper Blackrock Spire","Grimrail Depot","The Everbloom","Shadowmoon Burial Grounds","Highmaul","Blackrock Foundry"}
+ralllocationnamesdef={"Icecrown Citadel","Icecrown Citadel","Trial of the Crusader", "Trial of the Crusader", "Ulduar", "Ulduar", "Naxxramas","Naxxramas","The Eye of Eternity","The Eye of Eternity","Onyxia's Lair","Onyxia's Lair","Vault of Archavon","Vault of Archavon","The Obsidian Sanctum","The Obsidian Sanctum","The Ruby Sanctum","The Ruby Sanctum","Ahn'kahet: The Old Kingdom","Azjol-Nerub","The Culling of Stratholme","Trial of the Champion","Drak'Tharon Keep","Gundrak","Halls of Reflection","Pit of Saron","The Forge of Souls","The Nexus","The Oculus","The Violet Hold","Halls of Lightning","Halls of Stone","Utgarde Keep","Utgarde Pinnacle", "The Deadmines","Shadowfang Keep","Throne of the Tides","Blackrock Caverns","The Stonecore","The Vortex Pinnacle","Grim Batol","Halls of Origination","Lost City of the Tol'vir","Baradin Hold","Blackwing Descent","The Bastion of Twilight","Throne of the Four Winds","Zul'Aman","Zul'Gurub", "Firelands","End Time","Hour of Twilight","Well of Eternity","Dragon Soul","Warsong Gulch","Arathi Basin","Alterac Valley","Eye of the Storm","Strand of the Ancients","Isle of Conquest","The Battle for Gilneas","Twin Peaks","Scarlet Halls","Scarlet Monastery","Scholomance","Stormstout Brewery","Temple of the Jade Serpent","Mogu'shan Palace","Shado-Pan Monastery","Gate of the Setting Sun","Siege of Niuzao Temple","Heart of Fear","Mogu'shan Vaults","Terrace of Endless Spring","A Brewing Storm", "Arena of Annihilation","Brewmoon Festval","Crypt of Forgotten Kings","Greenstone Village","Theramore's Fall","Unga Ingoo","Temple of Kotmogu","A Little Patience","Lion's Landing","Zan'vess","Dagger in the Dark","Throne of Thunder","Dark Heart of Pandaria","Blood in the Snow","Battle on the High Seas","The Secrets of Ragefire","Siege of Orgrimmar","Bloodmaul Slag Mines","Iron Docks","Auchindoun","Skyreach","Upper Blackrock Spire","Grimrail Depot","The Everbloom","Shadowmoon Burial Grounds","Highmaul","Blackrock Foundry","Hellfire Citadel"}
 
 rallexpansions={"PVP","Wotlk","Cataclysm","Pandaria","WoD"}
 
-rallcontent={2,2,2,2,2,2,2,2,2,2, 2,2,2,2,2,2,2,2,2,2, 2,2,2,2,2,2,2,2,2,2, 2,2,2,2,3,3,3,3,3,3, 3,3,3,3,3,3,3,3,3,3, 3,3,3,3,1,1,1,1,1,1,1,1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,1,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5}
+rallcontent={2,2,2,2,2,2,2,2,2,2, 2,2,2,2,2,2,2,2,2,2, 2,2,2,2,2,2,2,2,2,2, 2,2,2,2,3,3,3,3,3,3, 3,3,3,3,3,3,3,3,3,3, 3,3,3,3,1,1,1,1,1,1,1,1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,1,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5}
 
-ralltip={"10","25","10","25","10","25","10","25","10","25","10","25","10","25","10","25","10","25","5","5","5","5","5","5","5","5","5","5","5","5","5","5","5","5",ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifraid,ralldifraid,ralldifraid,ralldifraid,ralldifparty,ralldifparty,ralldifraid,ralldifparty,ralldifparty,ralldifparty,ralldifraid,ramainbattleground,ramainbattleground,ramainbattleground,ramainbattleground,ramainbattleground,ramainbattleground,ramainbattleground,ramainbattleground,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifraid,ralldifraid,ralldifraid,ralldifscenario,ralldifscenario,ralldifscenario,ralldifscenario,ralldifscenario,ralldifscenario,ralldifscenario,ramainbattleground,ralldifscenario,ralldifscenario,ralldifscenario,ralldifscenario,ralldifraid,ralldifscenario,ralldifscenario,ralldifscenario,ralldifscenario,ralldifraid,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifraid,ralldifraid}
+ralltip={"10","25","10","25","10","25","10","25","10","25","10","25","10","25","10","25","10","25","5","5","5","5","5","5","5","5","5","5","5","5","5","5","5","5",ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifraid,ralldifraid,ralldifraid,ralldifraid,ralldifparty,ralldifparty,ralldifraid,ralldifparty,ralldifparty,ralldifparty,ralldifraid,ramainbattleground,ramainbattleground,ramainbattleground,ramainbattleground,ramainbattleground,ramainbattleground,ramainbattleground,ramainbattleground,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifraid,ralldifraid,ralldifraid,ralldifscenario,ralldifscenario,ralldifscenario,ralldifscenario,ralldifscenario,ralldifscenario,ralldifscenario,ramainbattleground,ralldifscenario,ralldifscenario,ralldifscenario,ralldifscenario,ralldifraid,ralldifscenario,ralldifscenario,ralldifscenario,ralldifscenario,ralldifraid,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifparty,ralldifraid,ralldifraid,ralldifraid}
 
 rallachieve={
 {4534,4535,4536,4537,4577,4538,4578,4582,4539,4579,4580,4601,4581,4531,4628,4528,4629,4529,4630,4527,4631,4530,4583,4532,4636},--icc10
@@ -115,6 +115,7 @@ rallachieve={
 {9018,9025,9026,9041,9054,9375},--Shadowmoon Burial Grounds
 {8948,8947,8975,8974,8958,8976,8977,8986,8987,8988},--Highmaul
 {8978,8979,8930,8980,8929,8983,8981,8982,8984,8952,8989,8990,8991,8992},--Blackrock Foundry
+{10026,10057,10013,9972,9979,9988,10086,9989,10012,10087,10030,10073,10023,10024,10025,10020,10019},--Hellfire Citadel
 }
 
 
@@ -238,6 +239,7 @@ rallboss={
 {{75509},{75452},{76407},{76407},{76407},{76407}},--Shadowmoon Burial Grounds
 {{78714},{77404},{78491},{78948},{78237},{79015},{77428},{78714,77404,78491},{78948,78237,79015},{77428}},--Highmaul
 {{76877},{77182},{76806},{76973,76974},{76814},{77692},{76865},{76906},{77557},{77325},{76877,77182,76806},{76973,76974,76814,77692},{76865,76906,77557},{77325}},--Blackrock Foundry
+{{95068,93023},{90284},{90435},{90378},{90199},{90316},{90296},{90269},{89890},{93068},{91349},{91331},{95068,93023,90284,90435},{92146,90378,90199},{90316,90296,90269},{89890,93068,91349},{91331}},--Hellfire Citadel
 }
 
 if UnitFactionGroup("player")=="Alliance" then
@@ -245,7 +247,7 @@ rallboss[80]={{64900},{64479},{0}}
 end
 
 
-ralltrack  ={
+ralltrack ={
 {1,0,0,1,1,1,1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0},--icc10
 {1,0,0,1,1,1,1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0},--icc25
 {0,0,0,0,0,0,0,0}, --toc10
@@ -347,7 +349,8 @@ ralltrack  ={
 {0,1,0,0,0,0},--The Everbloom
 {0,1,0,0,0,0},--Shadowmoon Burial Grounds
 {0,0,0,0,0,0,0,0,0,0},--Highmaul
-{0,0,0,0,0,0,0,0,0,0,0,0,0,0},--Blackrock Foundry
+{0,0,1,1,0,1,0,0,0,0,0,0,0,0},--Blackrock Foundry
+{1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},--Hellfire Citadel
 }--1 если трекерится
 
 
@@ -454,6 +457,7 @@ rallmeta   ={
 {1,1,1,0,0,0},--Shadowmoon Burial Grounds
 {1,1,1,1,1,1,1,0,0,0},--Highmaul
 {1,1,1,1,1,1,1,1,1,1,0,0,0,0},--Blackrock Foundry
+{1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0},--Hellfire Citadel
 }--1 если на мету
 
 
@@ -560,6 +564,7 @@ rallfullver={
 {0,0,0,1,1,1},--Shadowmoon Burial Grounds
 {0,0,0,0,0,0,0,1,1,1},--Highmaul
 {0,0,0,0,0,0,0,0,0,0,1,1,1,1},--Blackrock Foundry
+{0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1},--Hellfire Citadel
 }--1 это только для фулл версии ачивка
 
 

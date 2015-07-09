@@ -8,7 +8,7 @@
 ------------------------------------------------------------
 
 
-PawnVersion = 1.917
+PawnVersion = 1.918
 
 -- Pawn requires this version of VgerCore:
 local PawnVgerCoreVersionRequired = 1.09
@@ -18,6 +18,9 @@ local PawnEpsilon = 0.0000000001
 
 -- Set to true once initialization completes
 local PawnIsInitialized
+
+-- Name of our private tooltip defined in PawnUI.xml
+PawnPrivateTooltipName = "PawnPrivateTooltip1"
 
 -- Caching
 -- 	An item in the cache has the following properties: Name, NumLines, UnknownLines, Stats, SocketBonusStats, UnenchantedStats, UnenchantedSocketBonusStats, Values, Link, PrettyLink, Level, Rarity, ID, InvType, Texture, ShouldUseGems
@@ -763,7 +766,7 @@ end
 
 -- Attempts to reset a single tooltip, causing Pawn values to be recalculated.  Returns true if successful.
 function PawnResetTooltip(TooltipName)
-	local Tooltip = getglobal(TooltipName)
+	local Tooltip = _G[TooltipName]
 	if not Tooltip or not Tooltip.IsShown or not Tooltip:IsShown() or not Tooltip.GetItem then return end
 	
 	local _, ItemLink = Tooltip:GetItem()
@@ -959,7 +962,7 @@ function PawnGetItemData(ItemLink)
 		end
 
 		-- First the enchanted stats.
-		Item.Stats, Item.SocketBonusStats, Item.UnknownLines, Item.PrettyLink = PawnGetStatsFromTooltipWithMethod("PawnPrivateTooltip", true, "SetHyperlink", Item.Link)
+		Item.Stats, Item.SocketBonusStats, Item.UnknownLines, Item.PrettyLink = PawnGetStatsFromTooltipWithMethod(PawnPrivateTooltipName, true, "SetHyperlink", Item.Link)
 
 		if InvType == "INVTYPE_RANGED" or InvType == "INVTYPE_RANGEDRIGHT" then
 			-- We convert ranged weapons into the correct "handedness" of weapons since there's no ranged slot anymore.
@@ -981,6 +984,7 @@ function PawnGetItemData(ItemLink)
 		if UnenchantedItemLink then
 			PawnDebugMessage(" ")
 			PawnDebugMessage(PawnLocal.UnenchantedStatsHeader)
+			--if PawnCommon.Debug then VgerCore.Message("  Base item link: " .. tostring(PawnEscapeString(UnenchantedItemLink))) end -- ***
 			Item.UnenchantedStats, Item.UnenchantedSocketBonusStats = PawnGetStatsForItemLink(UnenchantedItemLink, true)
 			if not Item.UnenchantedStats then
 				PawnDebugMessage(PawnLocal.FailedToGetUnenchantedItemMessage)
@@ -1067,7 +1071,7 @@ function PawnGetItemDataFromTooltip(TooltipName, MethodName, Param1, ...)
 	if (not TooltipName) or (not MethodName) then return end
 	
 	-- First, find the tooltip.
-	local Tooltip = getglobal(TooltipName)
+	local Tooltip = _G[TooltipName]
 	if not Tooltip then return end
 	
 	-- If we have a tooltip, try to get an item link from it.
@@ -1197,7 +1201,7 @@ function PawnUpdateTooltip(TooltipName, MethodName, Param1, ...)
 	end
 	
 	-- Now, just update the tooltip with the item data we got from the previous call.
-	local Tooltip = getglobal(TooltipName)
+	local Tooltip = _G[TooltipName]
 	if not Tooltip then
 		VgerCore.Fail("Where'd the tooltip go?  I seem to have misplaced it.")
 		return
@@ -1462,10 +1466,10 @@ end
 -- Enchantments and random item properties ("of the whale") are formatted like this: "|cffffffff+15 Intellect|r\r\n".
 -- We correct this here.
 function PawnFixStupidTooltipFormatting(TooltipName)
-	local Tooltip = getglobal(TooltipName)
+	local Tooltip = _G[TooltipName]
 	if not Tooltip then return end
 	for i = 1, Tooltip:NumLines() do
-		local LeftLine = getglobal(TooltipName .. "TextLeft" .. i)
+		local LeftLine = _G[TooltipName .. "TextLeft" .. i]
 		local Text = LeftLine:GetText()
 		local Updated = false
 		if Text and strsub(Text, 1, 2) ~= "\n" then
@@ -1506,8 +1510,12 @@ function PawnGetStatsFromTooltipWithMethod(TooltipName, DebugMessages, MethodNam
 		VgerCore.Fail("PawnGetStatsFromTooltipWithMethod requires a valid tooltip name and method name.")
 		return
 	end
-	local Tooltip = getglobal(TooltipName)
-	Tooltip:ClearLines() -- Without this, sometimes SetHyperlink seems to fail when called rapidly
+	local Tooltip = _G[TooltipName]
+	Tooltip:ClearLines() -- Without ClearLines, sometimes SetHyperlink seems to fail when called rapidly
+	if TooltipName == PawnPrivateTooltipName then
+		-- Pawn 1.9.18: Curse user Bodar suggests reanchoring the tooltip to ensure that future updates work
+		Tooltip:SetOwner(UIParent, "ANCHOR_NONE")
+	end
 	local Method = Tooltip[MethodName]
 	Method(Tooltip, ...)
 	PawnFixStupidTooltipFormatting(TooltipName)
@@ -1540,10 +1548,11 @@ function PawnGetStatsForItemLink(ItemLink, DebugMessages)
 	-- Other types of hyperlinks, such as enchant, quest, or spell are ignored by Pawn.
 	if PawnGetHyperlinkType(ItemLink) ~= "item" then return end
 	
-	PawnPrivateTooltip:ClearLines() -- Without this, sometimes SetHyperlink seems to fail when called rapidly
-	PawnPrivateTooltip:SetHyperlink(ItemLink)
-	PawnFixStupidTooltipFormatting("PawnPrivateTooltip")
-	return PawnGetStatsFromTooltip("PawnPrivateTooltip", DebugMessages)
+	local Tooltip = _G[PawnPrivateTooltipName]
+	Tooltip:ClearLines() -- Without this, sometimes SetHyperlink seems to fail when called rapidly
+	Tooltip:SetHyperlink(ItemLink)
+	PawnFixStupidTooltipFormatting(PawnPrivateTooltipName)
+	return PawnGetStatsFromTooltip(PawnPrivateTooltipName, DebugMessages)
 end
 
 -- Returns the stats of an equipped item, eventually calling PawnGetStatsFromTooltip.
@@ -1558,7 +1567,7 @@ function PawnGetStatsForInventorySlot(Slot, DebugMessages, UnitName)
 		return
 	end
 	if not UnitName then UnitName = "player" end
-	return PawnGetStatsFromTooltipWithMethod("PawnPrivateTooltip", DebugMessages, "SetInventoryItem", UnitName, Slot)
+	return PawnGetStatsFromTooltipWithMethod(PawnPrivateTooltipName, DebugMessages, "SetInventoryItem", UnitName, Slot)
 end
 
 -- Reads the stats from a tooltip.
@@ -1576,13 +1585,13 @@ function PawnGetStatsFromTooltip(TooltipName, DebugMessages)
 	local Stats, SocketBonusStats, UnknownLines = {}, {}, {}
 	local HadUnknown = false
 	local SocketBonusIsValid = false
-	local Tooltip = getglobal(TooltipName)
+	local Tooltip = _G[TooltipName]
 	if DebugMessages == nil then DebugMessages = true end
 	
 	-- Get the item name.  It could be on line 2 if the first line is "Currently Equipped".
 	local ItemName, ItemNameLineNumber = PawnGetItemNameFromTooltip(TooltipName)
 	if (not ItemName) or (not ItemNameLineNumber) then
-		--VgerCore.Fail("Failed to find name of item on the hidden tooltip")
+		--VgerCore.Fail("Failed to find name of item on the hidden tooltip") -- ***
 		return
 	end
 
@@ -1592,13 +1601,15 @@ function PawnGetStatsFromTooltip(TooltipName, DebugMessages)
 	for _, ThisName in pairs(PawnIgnoreNames) do
 		if strsub(ItemName, 1, strlen(ThisName)) == ThisName then
 			-- This is a known ignored item name; don't return any stats.
+			--VgerCore.Fail("Didnd't find any stats for the item because it's a known-ignored item.") -- ***
 			return
 		end
 	end
 	
 	-- Now, read the tooltip for stats.
+	--VgerCore.Assert(ItemNameLineNumber + 1 < Tooltip:NumLines(), "Didn't find any lines on the tooltip after the name (item name on line number " .. tostring(ItemNameLineNumber) .. " out of " .. tostring(Tooltip:NumLines()) .. " lines") -- ***
 	for i = ItemNameLineNumber + 1, Tooltip:NumLines() do
-		local LeftLine = getglobal(TooltipName .. "TextLeft" .. i)
+		local LeftLine = _G[TooltipName .. "TextLeft" .. i]
 		local LeftLineText = LeftLine:GetText()
 		
 		-- Look for this line in the "kill lines" list.  If it's there, we're done.
@@ -1615,6 +1626,7 @@ function PawnGetStatsFromTooltip(TooltipName, DebugMessages)
 				if strfind(LeftLineText, ThisKillLine) then
 					-- This is a known ignored kill line; stop now.
 					IsKillLine = true
+					--VgerCore.Message("Stopped reading the item tooltip at a kill line") -- ***
 					break
 				end
 			end
@@ -1629,7 +1641,7 @@ function PawnGetStatsFromTooltip(TooltipName, DebugMessages)
 				CurrentDebugMessages = DebugMessages
 				IgnoreErrors = false
 			else
-				local RightLine = getglobal(TooltipName .. "TextRight" .. i)
+				local RightLine = _G[TooltipName .. "TextRight" .. i]
 				CurrentParseText = RightLine:GetText()
 				if (not CurrentParseText) or (CurrentParseText == "") then break end
 				RegexTable = PawnRightHandRegexes
@@ -1940,15 +1952,21 @@ end
 --		LineNumber: The line number on which the name was found, or nil if no item was found.
 function PawnGetItemNameFromTooltip(TooltipName)
 	-- First, get the tooltip details.
-	local TooltipTopLine = getglobal(TooltipName .. "TextLeft1")
-	if not TooltipTopLine then return end
+	local TooltipTopLine = _G[TooltipName .. "TextLeft1"]
+	if not TooltipTopLine then
+		--VgerCore.Message("Didn't find the line " .. tostring(TooltipName) .. "TextLeft1") -- ***
+		return
+	end
 	local ItemName = TooltipTopLine:GetText()
-	if not ItemName or ItemName == "" then return end
+	if not ItemName or ItemName == "" then
+		--VgerCore.Message("First line of the tooltip was blank") -- ***
+		return
+	end
 	
 	-- If this is a Currently Equipped tooltip, skip the first line.
 	if ItemName == CURRENTLY_EQUIPPED then
 		ItemNameLineNumber = 2
-		TooltipTopLine = getglobal(TooltipName .. "TextLeft2")
+		TooltipTopLine = _G[TooltipName .. "TextLeft2"]
 		if not TooltipTopLine then return end
 		return TooltipTopLine:GetText(), 2
 	end
@@ -1961,10 +1979,10 @@ end
 function PawnAnnotateTooltipLines(TooltipName, Lines)
 	if not Lines then return false end
 	local Annotated = false
-	local Tooltip = getglobal(TooltipName)
+	local Tooltip = _G[TooltipName]
 	local LineCount = Tooltip:NumLines()
 	for i = 2, LineCount do
-		local LeftLine = getglobal(TooltipName .. "TextLeft" .. i)
+		local LeftLine = _G[TooltipName .. "TextLeft" .. i]
 		if LeftLine then
 			local LeftLineText = LeftLine:GetText()
 			if Lines[LeftLineText] then
@@ -2326,7 +2344,9 @@ end
 -- (But if EvenIfNotEnchanted is true, the item link will be processed even if the item wasn't enchanted.)
 function PawnUnenchantItemLink(ItemLink, EvenIfNotEnchanted)
 	local TrimmedItemLink = PawnStripLeftOfItemLink(ItemLink)
-	local Pos, _, ItemID, EnchantID, GemID1, GemID2, GemID3, GemID4, SuffixID, MoreInfo, ViewAtLevel, Unknown1, UpgradeLevel, Difficulty, NumBonusIDs, BonusID1, BonusID2, BonusID3, BonusID4 = strfind(TrimmedItemLink, "^item:(%-?%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*)")
+	local Pos, _, ItemID, EnchantID, GemID1, GemID2, GemID3, GemID4, SuffixID, MoreInfo, ViewAtLevel, SpecializationID, UpgradeLevel, Difficulty, NumBonusIDs, BonusID1, BonusID2, BonusID3, BonusID4 = strfind(TrimmedItemLink, "^item:(%-?%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*)")
+
+	-- TODO: *** After the last bonus ID (not necessarily 4) is another parameter indicating the level that the item was acquired, for timewarped items.  That should be preserved.
 
 	if Pos then
 		if
@@ -2344,14 +2364,14 @@ function PawnUnenchantItemLink(ItemLink, EvenIfNotEnchanted)
 			-- REVIEW: Not sure what to do about Difficulty and the BonusIDs here...
 			if SuffixID == nil or SuffixID == "" then SuffixID = "0" end
 			if MoreInfo == nil or MoreInfo == "" then MoreInfo = "0" end
-			if Unknown1 == nil or Unknown1 == "" then Unknown1 = "0" end
+			if SpecializationID == nil or SpecializationID == "" then SpecializationID = "0" end
 			if UpgradeLevel == nil or UpgradeLevel == "" then UpgradeLevel = "0" end
 			if NumBonusIDs == nil or NumBonusIDs == "" then NumBonusIDs = "0" end
 			if BonusID1 == nil or BonusID1 == "" then BonusID1 = "0" end
 			if BonusID2 == nil or BonusID2 == "" then BonusID2 = "0" end
 			if BonusID3 == nil or BonusID3 == "" then BonusID3 = "0" end
 			if BonusID4 == nil or BonusID4 == "" then BonusID4 = "0" end
-			return "item:" .. ItemID .. ":0:0:0:0:0:" .. SuffixID .. ":" .. MoreInfo .. ":" .. 0 .. ":" .. Unknown1 .. ":" .. UpgradeLevel .. ":" .. Difficulty .. ":" .. NumBonusIDs .. ":" .. BonusID1 .. ":" .. BonusID2 .. ":" .. BonusID3 .. ":" .. BonusID4
+			return "item:" .. ItemID .. ":0:0:0:0:0:" .. SuffixID .. ":" .. MoreInfo .. ":" .. 0 .. ":" .. SpecializationID .. ":" .. UpgradeLevel .. ":" .. Difficulty .. ":" .. NumBonusIDs .. ":" .. BonusID1 .. ":" .. BonusID2 .. ":" .. BonusID3 .. ":" .. BonusID4
 		else
 			-- This item is not enchanted.  Return nil.
 			return nil
@@ -2555,13 +2575,13 @@ end
 
 -- Causes the Pawn private tooltip to be shown when next hovering an item.
 --function PawnTestShowPrivateTooltip()
---	PawnPrivateTooltip:SetOwner(UIParent, "ANCHOR_TOPRIGHT")
+--	_G[PawnPrivateTooltipName]:SetOwner(UIParent, "ANCHOR_TOPRIGHT")
 --end
 
 -- Hides the Pawn private tooltip (normal).
 --function PawnTestHidePrivateTooltip()
---	PawnPrivateTooltip:SetOwner(UIParent, "ANCHOR_NONE")
---	PawnPrivateTooltip:Hide()
+--	_G[PawnPrivateTooltipName]:SetOwner(UIParent, "ANCHOR_NONE")
+--	_G[PawnPrivateTooltipName]:Hide()
 --end
 
 -- Depending on the user's current tooltip icon settings, show and hide icons as appropriate.
@@ -2643,7 +2663,7 @@ end
 -- Hides any icons on a tooltip, if there are any.
 function PawnHideTooltipIcon(TooltipName)
 	-- Find the tooltip.  If it doesn't exist, we can skip out now.
-	local Tooltip = getglobal(TooltipName)
+	local Tooltip = _G[TooltipName]
 	if not Tooltip then return end
 	
 	-- Is there an icon on it?  If not, exit.
