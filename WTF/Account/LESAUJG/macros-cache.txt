@@ -25,6 +25,11 @@ VER 3 000000000000008F "Houlon" "SPELL_MAGIC_MANAGAIN"
 /petattack
 /cast Arcane Shot
 END
+VER 3 0000000000000096 "Iskar" "INV_MISC_QUESTIONMARK"
+/target [@mouseover]
+/click ExtraActionButton1
+/targetlasttarget
+END
 VER 3 0000000000000089 "Kneel" "INV_MISC_QUESTIONMARK"
 /kneel
 END

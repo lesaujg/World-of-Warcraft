@@ -1,3 +1,6 @@
+v2.0.4
+* Updated for patch 6.2
+
 v2.0.3
 *Updated for new app version.
 *AppHelper will now register with TSM.

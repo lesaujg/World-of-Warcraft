@@ -25,6 +25,7 @@ AddOnSkinsOptions = {
 	["RecountBackdrop"] = true,
 	["HideChatFrame"] = "NONE",
 	["EmbedRightChat"] = "Skada",
+	["Quartz"] = true,
 	["Blizzard_AddonManager"] = true,
 	["EmbedLeft"] = "Skada",
 	["Blizzard_Inspect"] = true,

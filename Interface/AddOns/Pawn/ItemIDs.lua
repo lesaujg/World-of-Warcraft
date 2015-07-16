@@ -24,4 +24,7 @@ PawnKhadgarUniqueEquippedRings =
 
 	-- Spellbound Runic Band (715)
 	[118305] = true, [118306] = true, [118307] = true, [118308] = true, [118309] = true,
+
+	-- Legendary (735)
+	[124634] = true, [124635] = true, [124636] = true, [124637] = true, [124637] = true,
 }

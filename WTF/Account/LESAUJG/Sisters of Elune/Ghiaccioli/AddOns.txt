@@ -126,7 +126,7 @@ DBM-ThroneofThunder: disabled
 Basic_Resources: disabled
 Claw: disabled
 LiteMount: enabled
-WeakAuras: enabled
+WeakAuras: disabled
 WeakAurasModelPaths: disabled
 WeakAurasOptions: disabled
 WeakAurasTutorials: disabled
@@ -134,3 +134,4 @@ TradeSkillMaster_CompetitorTracker: disabled
 TomTom: disabled
 Shrapnel: disabled
 Ovale: disabled
+Quartz: disabled

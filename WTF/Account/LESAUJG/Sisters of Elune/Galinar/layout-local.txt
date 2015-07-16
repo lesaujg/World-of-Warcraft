@@ -1,8 +1,15 @@
 Version: 1
 Frame: TSMMainFrame1
-FrameLevel: 16
+FrameLevel: 13
 Anchor: BOTTOMLEFT
 X: 0
 Y: 22
 W: 985
 H: 679
+Frame: TSMCraftingTradeSkillFrame
+FrameLevel: 33
+Anchor: LEFT
+X: 46
+Y: 167
+W: 450
+H: 500
