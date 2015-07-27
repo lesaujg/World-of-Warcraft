@@ -1,12 +1,31 @@
+-- 6.2.0-01
+-- Bugfix: Added functionality to disable glow with LibButtonGlow
+-- Bugfix: Activated normal button glow when hiding Claw
+-- Update: Action list re-written for 6.2
+-- New: Support for T17 and T18
+-- New: Added a new parameter "react", which makes it possible to configure extra time for dot refreshes
+
+-- No use for this addon if we're not a druid
 if select(2, UnitClass('player')) ~= 'DRUID' then
 	DisableAddOn('Claw')
 	return
 end
 
-Claw = {}
-
-SLASH_Claw1, SLASH_Claw2 = '/claw', '/clawesome'
+--[[
+Variables
+--]]
 BINDING_HEADER_CLAW = 'Claw'
+Claw = {}
+local events, var, abilities, ability, glows = {}, {}, {}, {}, {}
+local me, abilityTimer, currentSpec, targetMode = 0, 0, 0, 0
+local Target = {
+	boss = false,
+	guid = 0,
+	healthArray = {},
+	hostile = false
+}
+local Ability = {}
+local tier18_2pc, tier18_4pc, tier17_2pc, tier17_4pc
 
 local function InitializeVariables()
 	for k, v in pairs({ -- defaults
@@ -37,7 +56,8 @@ local function InitializeVariables()
 		pre_touch = true,
 		single_thrash = true,
 		tigersfury_berserk = false,
-		survival = false
+		survival = false,
+		react = 0.2
 	}) do
 		if Claw[k] == nil then
 			Claw[k] = v
@@ -45,9 +65,9 @@ local function InitializeVariables()
 	end
 end
 
-local events, var, abilities, ability, glows = {}, {}, {}, {}, {}
-local me, abilityTimer, currentSpec, targetMode = 0, 0, 0, 0
-
+--[[
+Set up frames to display the icons
+--]]
 local clawPanel = CreateFrame('Frame', 'clawPanel', UIParent)
 clawPanel:SetPoint('CENTER', 0, -169)
 clawPanel:SetFrameStrata('BACKGROUND')
@@ -121,7 +141,42 @@ clawInterruptPanel.border:SetTexture('Interface\\AddOns\\Claw\\border.blp')
 clawInterruptPanel.cast = CreateFrame('Cooldown', nil, clawInterruptPanel, 'CooldownFrameTemplate')
 clawInterruptPanel.cast:SetAllPoints(clawInterruptPanel)
 
-local Ability = {}
+local function UpdateDraggable()
+	clawPanel:EnableMouse(Claw.aoe or not Claw.locked)
+	if Claw.aoe then
+		clawPanel.button:Show()
+	else
+		clawPanel.button:Hide()
+	end
+	if Claw.locked then
+		clawPanel:SetScript('OnDragStart', nil)
+		clawPanel:SetScript('OnDragStop', nil)
+		clawPanel:RegisterForDrag(nil)
+		clawPreviousPanel:EnableMouse(false)
+		clawCooldownPanel:EnableMouse(false)
+		clawInterruptPanel:EnableMouse(false)
+	else
+		if not Claw.aoe then
+			clawPanel:SetScript('OnDragStart', clawPanel.StartMoving)
+			clawPanel:SetScript('OnDragStop', clawPanel.StopMovingOrSizing)
+			clawPanel:RegisterForDrag('LeftButton')
+		end
+		clawPreviousPanel:EnableMouse(true)
+		clawCooldownPanel:EnableMouse(true)
+		clawInterruptPanel:EnableMouse(true)
+	end
+end
+
+local function UpdateAlpha()
+	clawPanel:SetAlpha(Claw.alpha)
+	clawPreviousPanel:SetAlpha(Claw.alpha)
+	clawCooldownPanel:SetAlpha(Claw.alpha)
+	clawInterruptPanel:SetAlpha(Claw.alpha)
+end
+
+--[[
+Functions to handle abilities (checking cooldown, debuffs etc)
+--]]
 Ability.__index = Ability
 
 function Ability.add(spellId, buff, playerCast, spellId2)
@@ -149,7 +204,7 @@ function Ability:remains()
 	for i = 1, 40 do
 		_, _, _, _, _, _, expires, _, _, _, id = UnitAura(self.auraTarget, i, self.auraFilter)
 		if id == self.spellId or id == self.spellId2 then
-			return expires - var.time
+			return expires - var.time - Claw.react -- Subtrack reaction time to ensure we get that extra fraction of a second to react
 		end
 	end
 	return 0
@@ -254,12 +309,15 @@ local Shadowmeld = Ability.add(58984, true, true)
 
 Rake.targets, Rip.targets = {}, {}
 
-local Target = {
-	boss = false,
-	guid = 0,
-	healthArray = {},
-	hostile = false
-}
+--[[
+Functions to check and calculate various parameters
+--]]
+local function UpdateHealthArray()
+	Target.healthArray = {}
+	for i = 1, floor(3 / Claw.frequency) do
+		Target.healthArray[i] = 0
+	end
+end
 
 local function UpdateVars()
 	local _, start, duration, hp
@@ -269,9 +327,9 @@ local function UpdateVars()
 	start, duration = GetSpellCooldown(768)
 	var.gcd = start > 0 and duration - (var.time - start) or 0
 	var.combo_points = UnitPower('player', 4)
-	var.energy = UnitPower('player', 3)
 	var.energy_max = UnitPowerMax('player', 3)
-	var.energy_time_to_max = (var.energy_max - var.energy) / GetPowerRegen()
+	var.energy = math.min(var.energy_max, UnitPower('player', 3) + math.floor(var.gcd*GetPowerRegen())) -- If we're in a GCD, then set energy to what we will have once the GCD is over
+	var.energy_time_to_max = math.max((var.energy_max - var.energy) / GetPowerRegen() - Claw.react, 0)
 	var.rage = UnitPower('player', 1)
 	Target.healthArray[#Target.healthArray + 1] = UnitHealth('target')
 	table.remove(Target.healthArray, 1)
@@ -290,6 +348,10 @@ end
 
 local function Energy()
 	return var.energy
+end
+
+local function EnergyDeficit()
+	return var.energy_max - var.energy
 end
 
 local function EnergyTimeToMax()
@@ -366,25 +428,44 @@ local function UseCooldown(overwrite)
 	return Claw.cooldown and (not Claw.boss_only or Target.boss) and (not ability.cd or overwrite)
 end
 
+--[[
+Action lists
+--]]
+-- Determine the next Cat ability to use
 local function DetermineAbilityCat()
+	-- Cooldowns
 	if UseCooldown() then
-		if ForceOfNature.known and ForceOfNature:ready() and Prowl:down() and (ForceOfNature:charges() == 3 or Target.timeToDie < 20) then
+		-- actions+=/force_of_nature,if=charges=3|trinket.proc.all.react|target.time_to_die<20
+		if ForceOfNature.known and ForceOfNature:ready() and (ForceOfNature:charges() == 3 or Target.timeToDie < 20) then
 			ability.cd = ForceOfNature
-		elseif KingOfTheJungle.known and KingOfTheJungle:ready() and ComboPoints() < 5 and Prowl:down() and Shadowmeld:down() and Berserk:ready(2) then
-			ability.cd = KingOfTheJungle
-		elseif TigersFury:ready() and EnergyMax() - Energy() >= (OmenOfClarity:up() and 80 or 60) then
-			ability.cd = Claw.tigersfury_berserk and Berserk:ready() and Berserk or TigersFury
-		elseif Berserk:ready() and TigersFury:up() then
+		-- actions+=/berserk,if=buff.tigers_fury.up&(buff.incarnation.up|!talent.incarnation_king_of_the_jungle.enabled)
+		elseif Berserk:ready() and (TigersFury:up() and (KingOfTheJungle:up() or not KingOfTheJungle.known)) then
 			ability.cd = Berserk
-		elseif ImprovedRake.known and Shadowmeld.known and Shadowmeld:ready() and Rake:remains() < 4.5 and (Bloodtalons:up() or not Bloodtalons.known) and (KingOfTheJungle:cooldown() > 15 or not KingOfTheJungle.known) then
-			ability.cd = Shadowmeld
-		elseif Claw.pot and DraenicAgility:ready() and Target.boss and ((Berserk:up() and Target.healthPercentage < 25) or Target.timeToDie < 40) then
+		-- Same as above, but TF macroed with Berserk
+		elseif Claw.tigersfury_berserk and Berserk:ready() and (TigersFury:ready() and (KingOfTheJungle:up() or not KingOfTheJungle.known)) then
+			ability.cd = Berserk
+		-- actions+=/potion,name=draenic_agility,if=(buff.berserk.remains>10&(target.time_to_die<180|(trinket.proc.all.react&target.health.pct<25)))|target.time_to_die<=40
+		elseif Claw.pot and DraenicAgility:ready() and ((Berserk:remains() > 10 and (Target.timeToDie < 180 or Target.healthPercentage < 25)) or Target.timeToDie <= 40) then
 			ability.cd = DraenicAgility
+		-- actions+=/tigers_fury,if=(!buff.omen_of_clarity.react&energy.deficit>=60)|energy.deficit>=80|(t18_class_trinket&buff.berserk.up&buff.tigers_fury.down)	
+		elseif TigersFury:ready() and ((OmenOfClarity:down() and EnergyDeficit() >=60) or EnergyDeficit() >=80) then -- Add class trinket
+			ability.cd = TigersFury
+		-- actions+=/incarnation,if=cooldown.berserk.remains<10&energy.time_to_max>1
+		elseif KingOfTheJungle.known and KingOfTheJungle:ready() and (Berserk:ready(10) and EnergyTimeToMax() > 1) then
+			ability.cd = KingOfTheJungle
+		-- actions+=/shadowmeld,if=dot.rake.remains<4.5&energy>=35&dot.rake.pmultiplier<2&(buff.bloodtalons.up|!talent.bloodtalons.enabled)&(!talent.incarnation.enabled|cooldown.incarnation.remains>15)&!buff.incarnation.up
+		elseif  Shadowmeld.known and Shadowmeld:ready() and (Rake:remains() < 4.5 and Energy() >= 35 and Rake:multiplier() < 2 and (Bloodtalons:up() or not Bloodtalons.known) and (not KingOfTheJungle.known or KingOfTheJungle:cooldown() > 15) and not KingOfTheJungle:up()) then
+			ability.cd = Shadowmeld
 		end
 	end
+	
+	-- Keep Mark of the Wild up
 	if Claw.mark_of_the_wild and not StatsBuffActive() then
 		return MarkOfTheWild
-	elseif not InCombat() then
+	end
+	
+	-- Pre-combat actions
+	if not InCombat() then
 		if Bloodtalons.known and (Claw.pre_touch or PredatorySwiftness:up()) and Bloodtalons:down() and Prowl:down() then
 			return HealingTouch
 		elseif ClawsOfShirvallah.known and ClawsOfShirvallah:down() then
@@ -395,64 +476,90 @@ local function DetermineAbilityCat()
 			return CatForm
 		end
 	end
+	
+	-- actions+=/rake,if=buff.prowl.up|buff.shadowmeld.up
 	if Prowl:up() or Shadowmeld:up() then
 		return Rake
-	elseif ComboPoints() > 0 and Rip:up() and Rip:remains() < 3 and Target.healthPercentage < 25 then
+	-- actions+=/ferocious_bite,cycle_targets=1,if=dot.rip.ticking&dot.rip.remains<3&target.health.pct<25
+	elseif ComboPoints() > 0 and (Rip:up() and Rip:remains() < 3 and Target.healthPercentage < 25) then
 		return FerociousBite
-	elseif Bloodtalons.known and PredatorySwiftness:up() and (ComboPoints() > 3 or PredatorySwiftness:remains() < 1.7) then
+	-- actions+=/healing_touch,if=talent.bloodtalons.enabled&buff.predatory_swiftness.up&((combo_points>=4&!set_bonus.tier18_4pc)|combo_points=5|buff.predatory_swiftness.remains<1.5)
+	elseif Bloodtalons.known and PredatorySwiftness:up() and ((ComboPoints() >= 4 and not tier18_4pc) or ComboPoints() == 5 or PredatorySwiftness:remains() < 1.5) then
 		return HealingTouch
-	elseif not GlyphOfSavagery.known and SavageRoar:remains() < 3 and ComboPoints() > 0 and (KingOfTheJungle:down() or not GlyphOfSavageRoar.known) then
-		if Bloodtalons.known and PredatorySwiftness:up() and ComboPoints() > 1 then
-			return HealingTouch
-		elseif ComboPoints() < 5 and SavageRoar:up() then
-			if Rake:remains() < 3 and Target.timeToDie > Rake:remains() + 7 then
-				return Rake
-			end
-			return Enemies() > 2 and Swipe or Shred
-		end
+	-- actions+=/savage_roar,if=buff.savage_roar.down
+	elseif not GlyphOfSavagery.known and ComboPoints() > 0 and SavageRoar:down() then
 		return SavageRoar
-	elseif Enemies() > 1 and OmenOfClarity:up() and Thrash:remains() < 4.5 then
+	-- actions+=/thrash_cat,if=set_bonus.tier18_4pc&buff.omen_of_clarity.react&remains<4.5&combo_points+buff.bloodtalons.stack!=6
+	elseif tier18_4pc and OmenOfClarity:up() and Thrash:remains() < 4.5 and ComboPoints() + Bloodtalons:stack() ~= 6 then
 		return Thrash
-	elseif ComboPoints() == 5 then
-		if not Bloodtalons.known and Claw.single_thrash and Thrash:remains() < 4.5 and OmenOfClarity:up() and KingOfTheJungle:down() then
-			return Thrash
-		elseif Target.healthPercentage < 25 and Rip:up() and Energy() >= (Berserk:up() and 37.5 or 50) then
-			return FerociousBite
-		elseif (Rip:remains() < 3 or (Rip:remains() < 7.2 and (Rip.newMultiplier() > Rip:multiplier() or (Rip.newMultiplier() == Rip:multiplier() and EnergyTimeToMax() < 1.2)))) and Target.timeToDie > Rip:remains() + 7 then
+	-- actions+=/thrash_cat,cycle_targets=1,if=remains<4.5&(spell_targets.thrash_cat>=2&set_bonus.tier17_2pc|spell_targets.thrash_cat>=4)
+	elseif Thrash:remains() < 4.5 and (Enemies() >= 2 and tier17_pc or Enemies() >= 4) then
+		return Thrash
+	end
+	
+	-- actions+=/call_action_list,name=finisher,if=combo_points=5
+	if ComboPoints() == 5 then
+		-- actions.finisher=rip,cycle_targets=1,if=remains<2&target.time_to_die-remains>18&(target.health.pct>25|!dot.rip.ticking)
+		if Rip:remains() < 2 and Target.timeToDie > 18 and (Target.healthPercentage > 25 or Rip:down()) then
 			return Rip
-		elseif not GlyphOfSavagery.known and SavageRoar:remains() < 12.6 and SavageRoar:remains() < Target.timeToDie and (EnergyTimeToMax() < 1.2 or Berserk:up() or Rake:down() or TigersFury:ready(3)) and (KingOfTheJungle:down() or not GlyphOfSavageRoar.known) then
+		-- actions.finisher+=/ferocious_bite,cycle_targets=1,max_energy=1,if=target.health.pct<25&dot.rip.ticking
+		elseif Energy() >= (Berserk:up() and 37.5 or 50) and Target.healthPercentage < 25 and Rip:up() then
+			return FerociousBite
+		-- actions.finisher+=/rip,cycle_targets=1,if=remains<7.2&persistent_multiplier>dot.rip.pmultiplier&target.time_to_die-remains>18
+		elseif Rip:remains() < 7.2 and Rip.newMultiplier() > Rip:multiplier() and Target.timeToDie > 18 then
+			return Rip
+		-- actions.finisher+=/rip,cycle_targets=1,if=remains<7.2&persistent_multiplier=dot.rip.pmultiplier&(energy.time_to_max<=1|!talent.bloodtalons.enabled)&target.time_to_die-remains>18
+		elseif Rip:remains() < 7.2 and Rip.newMultiplier() > Rip:multiplier() and (EnergyTimeToMax() <= 1 or not Bloodtalons.known) and Target.timeToDie > 18 then
+			return Rip
+		-- actions.finisher+=/savage_roar,if=((set_bonus.tier18_4pc&energy>50)|(set_bonus.tier18_2pc&buff.omen_of_clarity.react)|energy.time_to_max<=1|buff.berserk.up|cooldown.tigers_fury.remains<3)&buff.savage_roar.remains<12.6
+		elseif not GlyphOfSavagery.known and ((tier18_4pc and Energy() > 50) or (tier18_2pc and OmenOfClarity:up()) or EnergyTimeToMax() <= 1 or Berserk:up() or TigersFury:ready(3)) and SavageRoar:remains() < 12.6 then
 			return SavageRoar
-		elseif EnergyTimeToMax() < 1.2 or Berserk:up() or Rake:down() or (TigersFury:ready(3) and Energy() >= 50) then
+		-- actions.finisher+=/ferocious_bite,max_energy=1,if=(set_bonus.tier18_4pc&energy>50)|(set_bonus.tier18_2pc&buff.omen_of_clarity.react)|energy.time_to_max<=1|buff.berserk.up|cooldown.tigers_fury.remains<3
+		elseif Energy() >= (Berserk:up() and 37.5 or 50) and ((tier18_4pc and Energy() > 50) or (tier18_2pc and OmenOfClarity:up()) or EnergyTimeToMax() <= 1 or Berserk:up() or TigersFury:ready(3)) then
 			return FerociousBite
 		end
 	end
-	if UseCooldown(true) and KingOfTheJungle.known and KingOfTheJungle:ready() and ComboPoints() < 5 and Berserk:ready(12) and EnergyTimeToMax() < 1.2 then
-		ability.cd = KingOfTheJungle
+	
+	-- actions+=/savage_roar,if=buff.savage_roar.remains<gcd
+	if not GlyphOfSavagery.known and ComboPoints() > 0 and SavageRoar:remains() < var.gcd then
+		return SavageRoar
 	end
-	if ComboPoints() < 5 and Target.timeToDie > Rake:remains() + 7 then
-		if Bloodtalons.known and Rake:remains() < 4.5 and (Bloodtalons:up() or PredatorySwiftness:down() or Rake.newMultiplier() > Rake:multiplier()) then
-			return Rake
-		elseif not Bloodtalons.known and (Rake:remains() < 3 or (Rake:remains() < 4.5 and Rake.newMultiplier() > Rake:multiplier())) then
-			return Rake
-		end
-	end
-	if Enemies() > 2 or Target.timeToDie > Thrash:remains() + 7 then
-		if Bloodtalons.known and Claw.single_thrash and ComboPoints() == 5 and Thrash:remains() < 4.5 and OmenOfClarity:up() and KingOfTheJungle:down() and Rip:remains() > 6 then
-			return Thrash
-		elseif Enemies() > 2 and Thrash:remains() < 4.5 then
-			return Thrash
-		end
-	end
+	
+	-- actions+=/call_action_list,name=maintain,if=combo_points<5
 	if ComboPoints() < 5 then
-		if LunarInspiration.known and Moonfire:remains() < 4.2 and Target.timeToDie > Moonfire:remains() + 7 then
+		-- actions.maintain=rake,cycle_targets=1,if=remains<3&((target.time_to_die-remains>3&spell_targets.swipe<3)|target.time_to_die-remains>6)
+		if Rake:remains() < 3 and ((Target.timeToDie > 3 and Enemies() < 3) or Target.timeToDie > 6) then
+			return Rake
+		-- actions.maintain+=/rake,cycle_targets=1,if=remains<4.5&(persistent_multiplier>=dot.rake.pmultiplier|(talent.bloodtalons.enabled&(buff.bloodtalons.up|!buff.predatory_swiftness.up)))&((target.time_to_die-remains>3&spell_targets.swipe<3)|target.time_to_die-remains>6)
+		elseif Rake:remains() < 4.5 and (Rake.newMultiplier() > Rake:multiplier() or (Bloodtalons.known and (Bloodtalons:up() or not PredatorySwiftness:up()))) and ((Target.timeToDie > 3 and Enemies() < 3) or Target.timeToDie > 6) then
+			return Rake
+		-- actions.maintain+=/moonfire_cat,cycle_targets=1,if=remains<4.2&spell_targets.swipe<=5&target.time_to_die-remains>tick_time*5
+		elseif LunarInspiration.known and (Moonfire:remains() < 4.2 and Enemies() <= 5 and Target.timeToDie > 9) then -- Approximate tick_time*5
 			return Moonfire
-		elseif Enemies() == 1 and Rake.newMultiplier() > Rake:multiplier() and Target.timeToDie > Rake:remains() + 4 then
+		-- actions.maintain+=/rake,cycle_targets=1,if=persistent_multiplier>dot.rake.pmultiplier&spell_targets.swipe=1&((target.time_to_die-remains>3&spell_targets.swipe<3)|target.time_to_die-remains>6)
+		elseif Rake.newMultiplier() > Rake:multiplier() and Enemies() == 1 and ((Target.timeToDie > 3 and Enemies() < 3) or Target.timeToDie > 6) then
 			return Rake
 		end
-		return Enemies() > 2 and Swipe or Shred
+	end
+	
+	-- actions+=/thrash_cat,cycle_targets=1,if=remains<4.5&spell_targets.thrash_cat>=2
+	if Thrash:remains() < 4.5 and Enemies() >= 2 then
+		return Thrash
+	end
+	
+	-- actions+=/call_action_list,name=generator,if=combo_points<5
+	if ComboPoints() < 5 then
+		-- actions.generator=swipe,if=spell_targets.swipe>=4|(spell_targets.swipe>=3&buff.incarnation.down)
+		if Enemies() >= 4 or (Enemies() >= 3 and KingOfTheJungle:down()) then 
+			return Swipe
+		-- actions.generator+=/shred,if=spell_targets.swipe<3|(spell_targets.swipe=3&buff.incarnation.up)
+		elseif Enemies() < 3 or (Enemies() == 3 and KingOfTheJungle:up()) then
+			return Shred
+		end
 	end
 end
 
+-- Determine the next Bear ability to use
 local function DetermineAbilityBear()
 	if UseCooldown() then
 		if Claw.pot and DraenicAgility:ready() and Target.boss and BerserkBear:up() then
@@ -485,6 +592,7 @@ local function DetermineAbilityBear()
 	return Lacerate
 end
 
+-- Determine the next Bear ability to use (max survival)
 local function DetermineAbilityBearSurvival()
 	if UseCooldown() then
 		if Barkskin:ready() then
@@ -575,14 +683,29 @@ local function UpdateInterrupt()
 	end
 end
 
+--[[ 
+Functions to handle button glow
+--]]
+-- Disable Blizzard's built-in action button glowing
 local function DenyOverlayGlow(actionButton)
-	if not Claw.glow_blizzard then
+	if not Claw.glow_blizzard and Claw.hide_spec ~= GetActiveSpecGroup() then
 		actionButton.overlay:Hide()
 	end
 end
+hooksecurefunc('ActionButton_ShowOverlayGlow', DenyOverlayGlow)
 
-hooksecurefunc('ActionButton_ShowOverlayGlow', DenyOverlayGlow) -- Disable Blizzard's built-in action button glowing
+-- Disable action button glowing for addons using LibButtonGlow, e.g. Bartender4
+local function DenyLBGGlow(frame)
+	if not Claw.glow_blizzard and Claw.hide_spec ~= GetActiveSpecGroup() then
+		frame.__LBGoverlay:Hide()
+	end
+end
+local LBG = LibStub("LibButtonGlow-1.0", true)
+if LBG then
+	hooksecurefunc(LBG, "ShowOverlayGlow", DenyLBGGlow)
+end
 
+-- Create our own glows
 local function CreateOverlayGlows()
 	local GenerateGlow = function(button)
 		if button then
@@ -643,6 +766,7 @@ local function UpdateGlows()
 	end
 end
 
+-- Event handlers to ensure glows are active and on the right buttons
 function events:ACTIONBAR_SLOT_CHANGED()
 	UpdateGlows()
 end
@@ -652,6 +776,9 @@ function events:PLAYER_LOGIN()
 	CreateOverlayGlows()
 end
 
+--[[
+Handle targets (target change, target mode etc)
+--]]
 local function Disappear()
 	ability.main = nil
 	ability.cd = nil
@@ -727,16 +854,9 @@ function events:UNIT_FACTION(unitID)
 	end
 end
 
---[=[
-local function Equipped(slot, item)
-	return (GetInventoryItemLink('player', slot) or ''):match('%[([^%]]*)%]') == item and 1 or 0
-end
-
-function events:PLAYER_EQUIPMENT_CHANGED()
-	-- use for tier bonus checking
-end
-]=]
-
+--[[
+Handle spec changes
+--]]
 function events:PLAYER_SPECIALIZATION_CHANGED(unitName)
 	if unitName == 'player' then
 		for i = 1, #abilities do
@@ -753,50 +873,39 @@ function events:PLAYER_SPECIALIZATION_CHANGED(unitName)
 end
 
 function events:PLAYER_ENTERING_WORLD()
-	--events:PLAYER_EQUIPMENT_CHANGED()
 	events:PLAYER_SPECIALIZATION_CHANGED('player')
+	events:PLAYER_EQUIPMENT_CHANGED()
 end
 
-local function UpdateDraggable()
-	clawPanel:EnableMouse(Claw.aoe or not Claw.locked)
-	if Claw.aoe then
-		clawPanel.button:Show()
-	else
-		clawPanel.button:Hide()
-	end
-	if Claw.locked then
-		clawPanel:SetScript('OnDragStart', nil)
-		clawPanel:SetScript('OnDragStop', nil)
-		clawPanel:RegisterForDrag(nil)
-		clawPreviousPanel:EnableMouse(false)
-		clawCooldownPanel:EnableMouse(false)
-		clawInterruptPanel:EnableMouse(false)
-	else
-		if not Claw.aoe then
-			clawPanel:SetScript('OnDragStart', clawPanel.StartMoving)
-			clawPanel:SetScript('OnDragStop', clawPanel.StopMovingOrSizing)
-			clawPanel:RegisterForDrag('LeftButton')
+--[[
+Check for T17/T18 set bonus 
+--]]
+function events:PLAYER_EQUIPMENT_CHANGED()
+	local count = 0
+	local itemID
+	local tier17_items = {115540, 115541, 115542, 115543, 115544}
+	local tier18_items = {124246, 124255, 124261, 124267, 124272}
+
+	for _, itemID in ipairs(tier18_items) do
+		if IsEquippedItem(itemID) then
+			count = count + 1
 		end
-		clawPreviousPanel:EnableMouse(true)
-		clawCooldownPanel:EnableMouse(true)
-		clawInterruptPanel:EnableMouse(true)
 	end
-end
-
-local function UpdateAlpha()
-	clawPanel:SetAlpha(Claw.alpha)
-	clawPreviousPanel:SetAlpha(Claw.alpha)
-	clawCooldownPanel:SetAlpha(Claw.alpha)
-	clawInterruptPanel:SetAlpha(Claw.alpha)
-end
-
-local function UpdateHealthArray()
-	Target.healthArray = {}
-	for i = 1, floor(3 / Claw.frequency) do
-		Target.healthArray[i] = 0
+	tier17_2pc = count >= 2
+	tier17_4pc = count >= 4
+	count = 0
+	for _, itemID in ipairs(tier18_items) do
+		if IsEquippedItem(itemID) then
+			count = count + 1
+		end
 	end
+	tier18_2pc = count >= 2
+	tier18_4pc = count >= 4
 end
 
+--[[
+Initialization
+--]]
 function events:ADDON_LOADED(name)
 	if name == 'Claw' then
 		if not Claw.frequency then
@@ -817,34 +926,7 @@ function events:ADDON_LOADED(name)
 	end
 end
 
-function events:COMBAT_LOG_EVENT_UNFILTERED(self, eventType, hideCaster, srcGUID, srcName, srcFlags, srcRaidFlags, dstGUID, dstName, dstFlags, dstRaidFlags, spellId)
-	if srcGUID == me then
-		if eventType == 'SPELL_MISSED' and Claw.previous and Claw.miss_effect and ability.previous and spellId == ability.previous.spellId then
-			clawPreviousPanel.border:SetTexture('Interface\\AddOns\\Claw\\misseffect.blp')
-		elseif eventType == 'SPELL_CAST_SUCCESS' then
-			if Claw.previous and ability.main and spellId == ability.main.spellId then
-				ability.previous = ability.main
-				clawPreviousPanel.border:SetTexture('Interface\\AddOns\\Claw\\border.blp')
-				clawPreviousPanel.icon:SetTexture(ability.previous.icon)
-				clawPreviousPanel:Show()
-			end
-			if spellId == Rake.spellId then
-				Rake.targets[dstGUID] = Rake.newMultiplier()
-			elseif spellId == Rip.spellId then
-				Rip.targets[dstGUID] = Rip.newMultiplier()
-			end
-		elseif eventType == 'SPELL_AURA_REMOVED' then
-			if spellId == Prowl.spellId then
-				Prowl.removed = var.time
-			elseif spellId == Shadowmeld.spellId then
-				Shadowmeld.removed = var.time
-			elseif spellId == Bloodtalons.spellId2 then
-				Bloodtalons.removed = var.time
-			end
-		end
-	end
-end
-
+-- Event handlers
 clawPanel.button:SetScript('OnClick', function(self, button, down)
 	if down then
 		if button == 'LeftButton' then
@@ -904,11 +986,46 @@ clawPanel:SetScript('OnUpdate', function(self, elapsed)
 	end
 end)
 
+--[[
+Combat log handler to check spell miss/hit and loss of auras
+--]]
+function events:COMBAT_LOG_EVENT_UNFILTERED(self, eventType, hideCaster, srcGUID, srcName, srcFlags, srcRaidFlags, dstGUID, dstName, dstFlags, dstRaidFlags, spellId)
+	if srcGUID == me then
+		if eventType == 'SPELL_MISSED' and Claw.previous and Claw.miss_effect and ability.previous and spellId == ability.previous.spellId then
+			clawPreviousPanel.border:SetTexture('Interface\\AddOns\\Claw\\misseffect.blp')
+		elseif eventType == 'SPELL_CAST_SUCCESS' then
+			if Claw.previous and ability.main and spellId == ability.main.spellId then
+				ability.previous = ability.main
+				clawPreviousPanel.border:SetTexture('Interface\\AddOns\\Claw\\border.blp')
+				clawPreviousPanel.icon:SetTexture(ability.previous.icon)
+				clawPreviousPanel:Show()
+			end
+			if spellId == Rake.spellId then
+				Rake.targets[dstGUID] = Rake.newMultiplier()
+			elseif spellId == Rip.spellId then
+				Rip.targets[dstGUID] = Rip.newMultiplier()
+			end
+		elseif eventType == 'SPELL_AURA_REMOVED' then
+			if spellId == Prowl.spellId then
+				Prowl.removed = var.time
+			elseif spellId == Shadowmeld.spellId then
+				Shadowmeld.removed = var.time
+			elseif spellId == Bloodtalons.spellId2 then
+				Bloodtalons.removed = var.time
+			end
+		end
+	end
+end
+
 clawPanel:SetScript('OnEvent', function(self, event, ...) events[event](self, ...) end)
 for event in pairs(events) do
 	clawPanel:RegisterEvent(event)
 end
 
+--[[
+Command line handling
+--]]
+SLASH_Claw1, SLASH_Claw2 = '/claw', '/clawesome'
 function SlashCmdList.Claw(msg, editbox)
 	msg = { strsplit(' ', strlower(msg)) }
 	if msg[1] == 'locked' then
@@ -1081,6 +1198,11 @@ function SlashCmdList.Claw(msg, editbox)
 			Claw.survival = msg[2] == 'on'
 		end
 		print('Claw - Survival mode (bear only): ' .. (Claw.survival and '|cFF00C000On' or '|cFFC00000Off'))
+	elseif msg[1] == 'react' then
+		if msg[2] then
+			Claw.react = tonumber(msg[2]) or 0.2
+		end
+		print('Claw - Reaction time |cFFFFD000' .. Claw.react .. '|r seconds')
 	elseif msg[1] == 'reset' then
 		clawPanel:ClearAllPoints()
 		clawPanel:SetPoint('CENTER', 0, -169)
@@ -1115,6 +1237,7 @@ function SlashCmdList.Claw(msg, editbox)
 		print('  /claw thrash |cFF00C000on|r/|cFFC00000off|r - use Thrash in single target mode (cat only)')
 		print('  /claw tfberserk |cFF00C000on|r/|cFFC00000off|r - Tiger\'s Fury is macro\'d to Berserk (cat only)')
 		print('  /claw survival |cFF00C000on|r/|cFFC00000off|r - survival mode (bear only)')
+		print('  /claw react |cFFFFD000[number]|r - set the player reaction time, which will be added on top of dot refreshes (default is 0.2 seconds)')
 		print('  /claw |cFFFFD000reset|r - reset the location of the Claw UI to default')
 		if Basic_Resources then
 			print('For Basic Resources commands, please type |cFFFFD000/bres')

@@ -106,9 +106,9 @@ DBM-ThroneofThunder: disabled
 DBM-Ulduar: disabled
 DBM-VoA: disabled
 DBM-WorldEvents: disabled
-WeakAuras: disabled
-WeakAurasModelPaths: disabled
-WeakAurasOptions: disabled
+WeakAuras: enabled
+WeakAurasModelPaths: enabled
+WeakAurasOptions: enabled
 WeakAurasTutorials: disabled
 TradeSkillMaster_CompetitorTracker: disabled
 TomTom: disabled

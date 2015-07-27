@@ -34,6 +34,9 @@ wodrraspisokach25={
 10026,
 10057,
 
+9972,
+9979,
+
 
 }
 
@@ -270,6 +273,24 @@ if arg2=="UNIT_DIED" then
        if wodrracounter1==10 then
           wodrraachcompl(6)
        end
+     end
+  end
+end
+
+if arg2=="UNIT_DIED" then
+  if wodrraspisokon[7]==1 and wodrraachdone1 then
+     local id=raGetUnitID(arg7)
+     if id==90980 then
+          wodrrafailnoreason(7)
+     end
+  end
+end
+
+if arg2=="UNIT_DIED" then
+  if wodrraspisokon[8]==1 and wodrraachdone1 then
+     local id=raGetUnitID(arg7)
+     if id==93145 then
+          wodrraachcompl(8)
      end
   end
 end

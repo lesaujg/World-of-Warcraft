@@ -1,7 +1,7 @@
-## Interface: 60000
+## Interface: 60200
 ## Title: Claw
 ## Notes: Claw is an addon for cat and bear druids that simplifies gameplay and maximizes DPS by doing all the decision making for you
-## Author: Jpapertowels @ www.wowinterface.com & curse.com or Spy#1955 @ BattleTag
+## Author: Szandos (based on Claw version 6.0.3-11 by Jpapertowels)
 ## SavedVariablesPerCharacter: Claw
-## Version: 6.0.3-11
+## Version: 6.2.0-01
 Claw.lua
