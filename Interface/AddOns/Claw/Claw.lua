@@ -1,9 +1,16 @@
+-- 6.2.0-03
+-- Bugfix: Fixed error message when LibStub is not installed
+
+-- 6.2.0-02
+-- Performance improvements
+-- Adjusting bleed times and energy levels to improve prediction of next ability while in a gcd
+
 -- 6.2.0-01
--- Bugfix: Added functionality to disable glow with LibButtonGlow
--- Bugfix: Activated normal button glow when hiding Claw
--- Update: Action list re-written for 6.2
--- New: Support for T17 and T18
--- New: Added a new parameter "react", which makes it possible to configure extra time for dot refreshes
+-- Action list re-written for 6.2
+-- Added functionality to disable glow with LibButtonGlow
+-- Activated normal button glow when hiding Claw
+-- Support for T17 and T18 (dry-coded since I don't have either atm...)
+-- Added a new parameter "react", which makes it possible to configure extra time for dot refreshes
 
 -- No use for this addon if we're not a druid
 if select(2, UnitClass('player')) ~= 'DRUID' then
@@ -26,6 +33,7 @@ local Target = {
 }
 local Ability = {}
 local tier18_2pc, tier18_4pc, tier17_2pc, tier17_4pc
+local auras = {['player']={}, ['target'] ={}}
 
 local function InitializeVariables()
 	for k, v in pairs({ -- defaults
@@ -200,21 +208,21 @@ function Ability:ready(seconds)
 end
 
 function Ability:remains()
-	local _, id, expires
-	for i = 1, 40 do
-		_, _, _, _, _, _, expires, _, _, _, id = UnitAura(self.auraTarget, i, self.auraFilter)
-		if id == self.spellId or id == self.spellId2 then
-			return expires - var.time - Claw.react -- Subtrack reaction time to ensure we get that extra fraction of a second to react
+	local i
+	
+	for i = 1, auras[self.auraTarget].len do
+		if auras[self.auraTarget][i].spellId == self.spellId or auras[self.auraTarget][i].spellId == self.spellId2 then
+			return math.max (0, auras[self.auraTarget][i].expirationTime - var.time - var.gcd - Claw.react) -- Subtract reaction time and gcd
 		end
 	end
 	return 0
 end
 
 function Ability:up()
-	local _, id
-	for i = 1, 40 do
-		_, _, _, _, _, _, _, _, _, _, id = UnitAura(self.auraTarget, i, self.auraFilter)
-		if id == self.spellId or id == self.spellId2 then
+	local i
+
+	for i = 1, auras[self.auraTarget].len do
+		if auras[self.auraTarget][i].spellId == self.spellId or auras[self.auraTarget][i].spellId == self.spellId2 then
 			return true
 		end
 	end
@@ -233,11 +241,11 @@ function Ability:cooldown()
 end
 
 function Ability:stack()
-	local _, id, count
-	for i = 1, 40 do
-		_, _, _, count, _, _, _, _, _, _, id = UnitAura(self.auraTarget, i, self.auraFilter)
-		if id == self.spellId or id == self.spellId2 then
-			return count
+	local i
+	
+	for i = 1, auras[self.auraTarget].len do
+		if auras[self.auraTarget][i].spellId == self.spellId or auras[self.auraTarget][i].spellId == self.spellId2 then
+			return auras[self.auraTarget][i].count
 		end
 	end
 	return 0
@@ -336,6 +344,34 @@ local function UpdateVars()
 	Target.healthPercentage = Target.guid == 0 and 100 or UnitHealth('target') / UnitHealthMax('target') * 100
 	hp = Target.healthArray[1] - Target.healthArray[#Target.healthArray]
 	Target.timeToDie = hp > 0 and Target.healthArray[#Target.healthArray] / (hp / 3) or 600
+	
+	-- Get all auras on the player and the target
+	local i = 1, auraName, count, duration, expirationTime, spellId
+	while true do
+		auraName, _, _, count, _, duration, expirationTime, _, _, _, spellId = UnitBuff('player', i)
+		if not spellId then break end
+		if not auras['player'][i] then auras['player'][i] = {} end
+		auras['player'][i].name = auraName
+		auras['player'][i].count = count
+		auras['player'][i].duration = duration
+		auras['player'][i].expirationTime = expirationTime
+		auras['player'][i].spellId = spellId
+		i = i + 1
+	end
+	auras['player'].len = i-1
+	i = 1
+	while true do
+		auraName, _, _, count, _, duration, expirationTime, _, _, _, spellId = UnitDebuff('target', i)
+		if not spellId then break end
+		if not auras['target'][i] then auras['target'][i] = {} end
+		auras['target'][i].name = auraName
+		auras['target'][i].count = count
+		auras['target'][i].duration = duration
+		auras['target'][i].expirationTime = expirationTime
+		auras['target'][i].spellId = spellId
+		i = i + 1
+	end
+	auras['target'].len = i-1
 end
 
 local function ComboPoints()
@@ -415,11 +451,12 @@ function DraenicAgility:cooldown()
 end
 
 local function StatsBuffActive()
-	local _, id, duration, expires
-	for i = 1, 40 do
-		_, _, _, _, _, duration, expires, _, _, _, id = UnitBuff('player', i)
+	local i, id
+
+	for i = 1, auras['player'].len do
+		id = auras['player'][i].spellId
 		if id == 1126 or id == 20217 or id == 90363 or id == 117666 or id == 159988 or id == 160017 or id == 160077 then
-			return duration == 0 or expires - var.time > 10
+			return auras['player'][i].duration == 0 or auras['player'][i].expirationTime - var.time > 10
 		end
 	end
 end
@@ -700,10 +737,12 @@ local function DenyLBGGlow(frame)
 		frame.__LBGoverlay:Hide()
 	end
 end
-local LBG = LibStub("LibButtonGlow-1.0", true)
-if LBG then
-	hooksecurefunc(LBG, "ShowOverlayGlow", DenyLBGGlow)
-end
+pcall (function()
+	local LBG = LibStub("LibButtonGlow-1.0", true)
+	if LBG then
+		hooksecurefunc(LBG, "ShowOverlayGlow", DenyLBGGlow)
+	end
+end)
 
 -- Create our own glows
 local function CreateOverlayGlows()

@@ -2,7 +2,7 @@
 OneRing_Config = {
 	["CharProfiles"] = {
 	},
-	["_GameVersion"] = "6.2.0.20253",
+	["_GameVersion"] = "6.2.0.20338",
 	["_OPieVersion"] = "Salmon 1 (3.81)",
 	["ProfileStorage"] = {
 		["default"] = {
