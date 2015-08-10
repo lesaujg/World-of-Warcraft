@@ -1,3 +1,7 @@
+-- 6.2.0-04
+-- Fixed bug in the APL that could delay a Rip for too long
+-- Now working correctly if more than one feral is attacking the same target
+
 -- 6.2.0-03
 -- Bugfix: Fixed error message when LibStub is not installed
 
@@ -196,7 +200,7 @@ function Ability.add(spellId, buff, playerCast, spellId2)
 		icon = icon,
 		known = IsPlayerSpell(spellId),
 		auraTarget = buff and 'player' or 'target',
-		auraFilter = (buff and 'HELPFUL' or 'HARMFUL') .. (playerCast and '|PLAYER' or '')
+		auraFilter = playerCast
 	}
 	setmetatable(ability, Ability)
 	abilities[#abilities + 1] = ability
@@ -211,7 +215,7 @@ function Ability:remains()
 	local i
 	
 	for i = 1, auras[self.auraTarget].len do
-		if auras[self.auraTarget][i].spellId == self.spellId or auras[self.auraTarget][i].spellId == self.spellId2 then
+		if (auras[self.auraTarget][i].spellId == self.spellId or auras[self.auraTarget][i].spellId == self.spellId2) and (auras[self.auraTarget][i].unitCaster == 'player' or not self.auraFilter) then
 			return math.max (0, auras[self.auraTarget][i].expirationTime - var.time - var.gcd - Claw.react) -- Subtract reaction time and gcd
 		end
 	end
@@ -222,7 +226,7 @@ function Ability:up()
 	local i
 
 	for i = 1, auras[self.auraTarget].len do
-		if auras[self.auraTarget][i].spellId == self.spellId or auras[self.auraTarget][i].spellId == self.spellId2 then
+		if (auras[self.auraTarget][i].spellId == self.spellId or auras[self.auraTarget][i].spellId == self.spellId2) and (auras[self.auraTarget][i].unitCaster == 'player' or not self.auraFilter) then
 			return true
 		end
 	end
@@ -244,7 +248,7 @@ function Ability:stack()
 	local i
 	
 	for i = 1, auras[self.auraTarget].len do
-		if auras[self.auraTarget][i].spellId == self.spellId or auras[self.auraTarget][i].spellId == self.spellId2 then
+		if (auras[self.auraTarget][i].spellId == self.spellId or auras[self.auraTarget][i].spellId == self.spellId2) and (auras[self.auraTarget][i].unitCaster == 'player' or not self.auraFilter) then
 			return auras[self.auraTarget][i].count
 		end
 	end
@@ -346,28 +350,30 @@ local function UpdateVars()
 	Target.timeToDie = hp > 0 and Target.healthArray[#Target.healthArray] / (hp / 3) or 600
 	
 	-- Get all auras on the player and the target
-	local i = 1, auraName, count, duration, expirationTime, spellId
+	local i = 1, auraName, count, duration, expirationTime, unitCaster, spellId
 	while true do
-		auraName, _, _, count, _, duration, expirationTime, _, _, _, spellId = UnitBuff('player', i)
+		auraName, _, _, count, _, duration, expirationTime, unitCaster, _, _, spellId = UnitBuff('player', i)
 		if not spellId then break end
 		if not auras['player'][i] then auras['player'][i] = {} end
 		auras['player'][i].name = auraName
 		auras['player'][i].count = count
 		auras['player'][i].duration = duration
 		auras['player'][i].expirationTime = expirationTime
+		auras['player'][i].unitCaster = unitCaster
 		auras['player'][i].spellId = spellId
 		i = i + 1
 	end
 	auras['player'].len = i-1
 	i = 1
 	while true do
-		auraName, _, _, count, _, duration, expirationTime, _, _, _, spellId = UnitDebuff('target', i)
+		auraName, _, _, count, _, duration, expirationTime, unitCaster, _, _, spellId = UnitDebuff('target', i)
 		if not spellId then break end
 		if not auras['target'][i] then auras['target'][i] = {} end
 		auras['target'][i].name = auraName
 		auras['target'][i].count = count
 		auras['target'][i].duration = duration
 		auras['target'][i].expirationTime = expirationTime
+		auras['target'][i].unitCaster = unitCaster
 		auras['target'][i].spellId = spellId
 		i = i + 1
 	end
@@ -546,7 +552,7 @@ local function DetermineAbilityCat()
 		elseif Rip:remains() < 7.2 and Rip.newMultiplier() > Rip:multiplier() and Target.timeToDie > 18 then
 			return Rip
 		-- actions.finisher+=/rip,cycle_targets=1,if=remains<7.2&persistent_multiplier=dot.rip.pmultiplier&(energy.time_to_max<=1|!talent.bloodtalons.enabled)&target.time_to_die-remains>18
-		elseif Rip:remains() < 7.2 and Rip.newMultiplier() > Rip:multiplier() and (EnergyTimeToMax() <= 1 or not Bloodtalons.known) and Target.timeToDie > 18 then
+		elseif Rip:remains() < 7.2 and Rip.newMultiplier() == Rip:multiplier() and ((tier18_4pc and Energy() > 50) or EnergyTimeToMax() <= 1 or not Bloodtalons.known) and Target.timeToDie > 18 then -- Added energy check, not in Simcraft yet
 			return Rip
 		-- actions.finisher+=/savage_roar,if=((set_bonus.tier18_4pc&energy>50)|(set_bonus.tier18_2pc&buff.omen_of_clarity.react)|energy.time_to_max<=1|buff.berserk.up|cooldown.tigers_fury.remains<3)&buff.savage_roar.remains<12.6
 		elseif not GlyphOfSavagery.known and ((tier18_4pc and Energy() > 50) or (tier18_2pc and OmenOfClarity:up()) or EnergyTimeToMax() <= 1 or Berserk:up() or TigersFury:ready(3)) and SavageRoar:remains() < 12.6 then

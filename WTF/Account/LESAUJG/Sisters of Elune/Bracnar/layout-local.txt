@@ -15,9 +15,9 @@ W: 800
 H: 525
 Frame: TSMMainFrame1
 FrameLevel: 39
-Anchor: LEFT
-X: 2
-Y: -21
+Anchor: BOTTOMLEFT
+X: 1
+Y: 20
 W: 985
 H: 679
 Frame: _NPCScanButton

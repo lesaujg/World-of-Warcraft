@@ -121,7 +121,7 @@ WeakAurasSaved = {
 			},
 		},
 		["GlaiveUp"] = {
-			["xOffset"] = 120,
+			["parent"] = "MM_MainBar",
 			["untrigger"] = {
 				["spellName"] = 117050,
 			},
@@ -129,7 +129,20 @@ WeakAurasSaved = {
 			["customTextUpdate"] = "update",
 			["icon"] = true,
 			["fontFlags"] = "OUTLINE",
-			["selfPoint"] = "CENTER",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
 			["trigger"] = {
 				["type"] = "status",
 				["unevent"] = "auto",
@@ -146,7 +159,7 @@ WeakAurasSaved = {
 				},
 				["debuffType"] = "HELPFUL",
 			},
-			["desaturate"] = false,
+			["stickyDuration"] = false,
 			["font"] = "Friz Quadrata TT",
 			["height"] = 35,
 			["load"] = {
@@ -189,18 +202,19 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
-			["parent"] = "MM_MainBar",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["id"] = "GlaiveUp",
-			["stickyDuration"] = false,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["xOffset"] = 120,
+			["additional_triggers"] = {
+			},
+			["desaturate"] = false,
 			["frameStrata"] = 1,
 			["width"] = 35,
 			["actions"] = {
@@ -214,22 +228,8 @@ WeakAurasSaved = {
 			["yOffset"] = 0,
 			["numTriggers"] = 1,
 			["inverse"] = false,
-			["additional_triggers"] = {
-			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
+			["id"] = "GlaiveUp",
+			["selfPoint"] = "CENTER",
 			["stacksPoint"] = "BOTTOMRIGHT",
 			["textColor"] = {
 				1, -- [1]
@@ -3396,18 +3396,13 @@ WeakAurasSaved = {
 			},
 		},
 		["GlaiveUpNoFocus"] = {
-			["xOffset"] = 120,
-			["yOffset"] = 0,
+			["parent"] = "MM_MainBar",
+			["untrigger"] = {
+				["spellName"] = 117050,
+			},
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["fontFlags"] = "OUTLINE",
 			["animation"] = {
 				["start"] = {
@@ -3483,29 +3478,34 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
-			["parent"] = "MM_MainBar",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["additional_triggers"] = {
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["xOffset"] = 120,
+			["id"] = "GlaiveUpNoFocus",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
-			["icon"] = true,
 			["frameStrata"] = 1,
 			["width"] = 35,
 			["selfPoint"] = "CENTER",
-			["untrigger"] = {
-				["spellName"] = 117050,
-			},
+			["yOffset"] = 0,
 			["numTriggers"] = 1,
-			["desaturate"] = true,
 			["inverse"] = false,
-			["id"] = "GlaiveUpNoFocus",
+			["desaturate"] = true,
+			["additional_triggers"] = {
+			},
 			["stacksPoint"] = "BOTTOMRIGHT",
 			["textColor"] = {
 				1, -- [1]
@@ -4967,7 +4967,7 @@ WeakAurasSaved = {
 				["icon"] = "Interface\\Icons\\Ability_Druid_ManaTree",
 			}, -- [10]
 			{
-				["name"] = "Incarnation: Chosen of Elune",
+				["name"] = "Incarnation: King of the Jungle",
 				["icon"] = "Interface\\Icons\\spell_druid_incarnation",
 			}, -- [11]
 			{
@@ -4999,16 +4999,16 @@ WeakAurasSaved = {
 				["icon"] = "Interface\\Icons\\Achievement_Zone_Feralas",
 			}, -- [18]
 			{
-				["name"] = "Euphoria",
-				["icon"] = "INTERFACE\\ICONS\\achievement_boss_valithradreamwalker",
+				["name"] = "Lunar Inspiration",
+				["icon"] = "Interface\\Icons\\spell_druid_lunarinspiration",
 			}, -- [19]
 			{
-				["name"] = "Stellar Flare",
-				["icon"] = "Interface\\Icons\\ability_druid_stellarflare",
+				["name"] = "Bloodtalons",
+				["icon"] = "Interface\\Icons\\spell_druid_bloodythrash",
 			}, -- [20]
 			{
-				["name"] = "Balance of Power",
-				["icon"] = "Interface\\Icons\\Ability_Druid_BalanceofPower",
+				["name"] = "Claws of Shirvallah",
+				["icon"] = "Interface\\Icons\\talentspec_druid_feral_cat",
 			}, -- [21]
 		},
 		["MONK"] = {

@@ -14,7 +14,7 @@ SkadaDB = {
 		["Default"] = {
 			["windows"] = {
 				{
-					["y"] = 191.00048828125,
+					["y"] = 190.000473022461,
 					["x"] = 26.9963970184326,
 					["point"] = "BOTTOMLEFT",
 					["mode"] = "Damage",
@@ -22,9 +22,6 @@ SkadaDB = {
 			},
 			["icon"] = {
 				["hide"] = true,
-			},
-			["report"] = {
-				["mode"] = "DPS",
 			},
 			["hidesolo"] = true,
 			["hidedisables"] = false,

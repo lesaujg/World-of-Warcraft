@@ -1036,8 +1036,11 @@ local newOptions;
 local loadedOptions;
 local unloadedOptions;
 local pickonupdate;
+local reopenAfterCombat = false;
 local loadedFrame = CreateFrame("FRAME");
 loadedFrame:RegisterEvent("ADDON_LOADED");
+loadedFrame:RegisterEvent("PLAYER_REGEN_ENABLED");
+loadedFrame:RegisterEvent("PLAYER_REGEN_DISABLED");
 loadedFrame:SetScript("OnEvent", function(self, event, addon)
   if (event == "ADDON_LOADED") then
     if(addon == ADDON_NAME) then
@@ -1078,6 +1081,16 @@ loadedFrame:SetScript("OnEvent", function(self, event, addon)
     --Saves the talent names and icons for the current class
     --Used for making the Talent Selected load option prettier
     
+    end
+  elseif (event == "PLAYER_REGEN_DISABLED") then
+    if(frame and frame:IsVisible()) then
+      reopenAfterCombat = true;
+      WeakAuras.HideOptions();
+    end
+  elseif (event == "PLAYER_REGEN_ENABLED") then
+    if (reopenAfterCombat) then
+      reopenAfterCombat = nil;
+      WeakAuras.ShowOptions(msg);
     end
   end
 end);
@@ -1135,6 +1148,9 @@ end
 function WeakAuras.ToggleOptions(msg)
   if(frame and frame:IsVisible()) then
     WeakAuras.HideOptions();
+  elseif (InCombatLockdown()) then
+    print("|cff9900FF".."WeakAuras Options"..FONT_COLOR_CODE_CLOSE.." will open after combat.")
+    reopenAfterCombat = true;
   else
     WeakAuras.ShowOptions(msg);
   end
@@ -3805,40 +3821,45 @@ function WeakAuras.ReloadTriggerOptions(data)
     if(optionTriggerChoices[id] == 0) then
       trigger = data.trigger;
       untrigger = data.untrigger;
-      
-      function appendToTriggerPath(...)
-        local ret = {...};
-        tinsert(ret, 1, "trigger");
-        return ret;
-      end
-      
-      function appendToUntriggerPath(...)
-        local ret = {...};
-        tinsert(ret, 1, "untrigger");
-        return ret;
-      end
     else
       trigger = data.additional_triggers and data.additional_triggers[optionTriggerChoices[id]].trigger or data.trigger;
       untrigger = data.additional_triggers and data.additional_triggers[optionTriggerChoices[id]].untrigger or data.untrigger;
-      
-      function appendToTriggerPath(...)
-        local ret = {...};
-        tinsert(ret, 1, "trigger");
-        tinsert(ret, 1, optionTriggerChoices[id]);
-        tinsert(ret, 1, "additional_triggers");
-        return ret;
-      end
-      
-      function appendToUntriggerPath(...)
-        local ret = {...};
-        tinsert(ret, 1, "untrigger");
-        tinsert(ret, 1, optionTriggerChoices[id]);
-        tinsert(ret, 1, "additional_triggers");
-        return ret;
-      end
     end
   end
   
+  if(optionTriggerChoices[id] == 0) then
+    function appendToTriggerPath(...)
+      local ret = {...};
+      tinsert(ret, 1, "trigger");
+      return ret;
+    end
+
+    function appendToUntriggerPath(...)
+      local ret = {...};
+      tinsert(ret, 1, "untrigger");
+      return ret;
+    end
+  elseif (optionTriggerChoices[id] > 0) then
+    function appendToTriggerPath(...)
+      local ret = {...};
+      tinsert(ret, 1, "trigger");
+      tinsert(ret, 1, optionTriggerChoices[id]);
+      tinsert(ret, 1, "additional_triggers");
+      return ret;
+    end
+
+    function appendToUntriggerPath(...)
+      local ret = {...};
+      tinsert(ret, 1, "untrigger");
+      tinsert(ret, 1, optionTriggerChoices[id]);
+      tinsert(ret, 1, "additional_triggers");
+      return ret;
+    end
+  else
+    function appendToTriggerPath(...) end
+    function appendToUntriggerPath(...) end
+  end
+ 
   local function getAuraMatchesLabel(name)
     local ids = idCache[name]
     if(ids) then

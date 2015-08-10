@@ -33,8 +33,8 @@ FIZ_Data = {
 			["Carved Drinking Horn"] = 1,
 			["Goredrenched Weaponry"] = 6,
 			["Goredrenched Armor Set"] = 3,
-			["Light of Elune"] = 1,
 			["Heavily Reinforced Armor Enhancement"] = 10,
+			["Light of Elune"] = 1,
 		},
 		["Sisters of Elune - Uldaris"] = {
 			["Graccu's Mince Meat Fruitcake"] = 20,
