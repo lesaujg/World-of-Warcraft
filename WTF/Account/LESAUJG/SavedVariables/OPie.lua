@@ -43,10 +43,10 @@ OneRing_Config = {
 					113543, -- [2]
 					["sliceToken"] = "ABuey13UZ3p",
 				}, -- [5]
-				["name"] = "Useful Items",
+				["limit"] = "Bracnar",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["limit"] = "Bracnar",
+				["name"] = "Useful Items",
 			},
 		},
 	},
