@@ -1,0 +1,17 @@
+## Interface: 60200
+## Title: Balance Spell Suggest
+## Author: envY (clemenZ9 on curse)
+## Version: v5
+## SavedVariables: BalanceSpellSuggestDB
+## OptionalDeps: Ace3, LibSharedMedia-3.0, Masque
+## X-Curse-Packaged-Version: v.5.2
+## X-Curse-Project-Name: Balance Spell Suggest
+## X-Curse-Project-ID: balancespellsuggest
+## X-Curse-Repository-ID: wow/balancespellsuggest/mainline
+
+embeds.xml
+
+locale\enUS.lua
+locale\deDE.lua
+
+Core.lua

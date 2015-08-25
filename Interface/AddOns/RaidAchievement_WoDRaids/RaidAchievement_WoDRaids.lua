@@ -373,7 +373,7 @@ if arg2=="UNIT_DIED" then
   if wodrraspisokon[10]==1 and wodrraachdone1 then
      local id=raGetUnitID(arg7)
      if id==90270 and UnitGUID("boss1") then
-          wodrraachcompl(10)
+          wodrrafailnoreason(10)
      end
   end
 end

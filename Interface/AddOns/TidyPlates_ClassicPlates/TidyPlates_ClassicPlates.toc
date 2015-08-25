@@ -1,0 +1,8 @@
+## Interface: 60200
+## Title: Tidy Plates: ClassicPlates
+## Notes: Vanilla-Style Plates.
+## Author: delabarra 
+## Dependencies: TidyPlates, TidyPlatesHub
+
+TidyPlates_ClassicPlates.lua
+

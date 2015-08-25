@@ -8,16 +8,16 @@ TukuiConfigShared = {
 			["DataTexts"] = {
 				["LocalTime"] = false,
 			},
-			["Raid"] = {
-				["ShowPets"] = false,
+			["Bags"] = {
+				["Enable"] = false,
 			},
 			["ActionBars"] = {
 				["OwnShadowDanceBar"] = true,
 				["OwnWarriorStanceBar"] = true,
 				["HotKey"] = true,
 			},
-			["Bags"] = {
-				["Enable"] = false,
+			["Raid"] = {
+				["ShowPets"] = false,
 			},
 		},
 		["Ghiaccioli"] = {
@@ -50,6 +50,9 @@ TukuiConfigShared = {
 		["Sanjuri"] = {
 		},
 		["Uldaris"] = {
+			["Bags"] = {
+				["Enable"] = false,
+			},
 			["General"] = {
 				["UIScale"] = 0.64,
 			},

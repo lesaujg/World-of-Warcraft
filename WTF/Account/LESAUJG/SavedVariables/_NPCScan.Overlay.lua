@@ -4,7 +4,7 @@ _NPCScanOverlayOptions = {
 		["Minimap"] = true,
 		["OmegaMap"] = true,
 		["BattlefieldMinimap"] = true,
-		["WorldMap"] = true,
+		["WorldMap"] = false,
 	},
 	["ModulesAlpha"] = {
 		["Minimap"] = 0.5,
@@ -13,7 +13,7 @@ _NPCScanOverlayOptions = {
 		["WorldMap"] = 0.5,
 	},
 	["Version"] = "5.4.8.5",
-	["ShowKey"] = true,
+	["ShowKey"] = false,
 	["ShowAll"] = true,
 	["ModulesExtra"] = {
 		["Minimap"] = {

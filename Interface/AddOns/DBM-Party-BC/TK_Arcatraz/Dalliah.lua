@@ -1,7 +1,7 @@
 local mod = DBM:NewMod(549, "DBM-Party-BC", 15, 254)
 local L = mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 568 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 572 $"):sub(12, -3))
 
 mod:SetCreatureID(20885)
 mod:RegisterCombat("combat")
@@ -12,6 +12,7 @@ mod:RegisterEventsInCombat(
 	"SPELL_AURA_REMOVED 39009 36173"
 )
 
+--LOG THIS, needs whirlwind CD timer
 local warnGift			= mod:NewTargetAnnounce(39009, 3)
 
 local specwarnWhirlwind	= mod:NewSpecialWarningRun(36175, "Melee", nil, nil, 4)

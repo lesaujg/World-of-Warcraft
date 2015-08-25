@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("LichKing", "DBM-Icecrown", 5)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 199 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 210 $"):sub(12, -3))
 mod:SetCreatureID(36597)
 mod:SetEncounterID(1106)
 mod:DisableEEKillDetection()--EE fires at 10%
@@ -70,24 +70,24 @@ local specWarnHarvestSouls	= mod:NewSpecialWarningSpell(73654) --Heroic Ability
 local specWarnValkyrLow		= mod:NewSpecialWarning("SpecWarnValkyrLow")
 
 local timerCombatStart		= mod:NewCombatTimer(53.5)
-local timerPhaseTransition	= mod:NewTimer(62.5, "PhaseTransition", 72262)
+local timerPhaseTransition	= mod:NewTimer(62.5, "PhaseTransition", 72262, nil, nil, 6)
 local timerSoulreaper	 	= mod:NewTargetTimer(5.1, 69409, nil, "Tank|Healer")
-local timerSoulreaperCD	 	= mod:NewNextTimer(30.5, 69409, nil, "Tank|Healer")
+local timerSoulreaperCD	 	= mod:NewNextTimer(30.5, 69409, nil, "Tank|Healer", nil, 5)
 local timerHarvestSoul	 	= mod:NewTargetTimer(6, 68980)
-local timerHarvestSoulCD	= mod:NewNextTimer(75, 68980)
-local timerInfestCD			= mod:NewNextTimer(22.5, 70541)
+local timerHarvestSoulCD	= mod:NewNextTimer(75, 68980, nil, nil, nil, 6)
+local timerInfestCD			= mod:NewNextTimer(22.5, 70541, nil, nil, nil, 5)
 local timerNecroticPlagueCleanse = mod:NewTimer(5, "TimerNecroticPlagueCleanse", 70337, "Healer")
-local timerNecroticPlagueCD	= mod:NewNextTimer(30, 70337)
-local timerDefileCD			= mod:NewNextTimer(32.5, 72762)
-local timerEnrageCD			= mod:NewCDTimer(20, 72143, nil, "Tank|RemoveEnrage")
-local timerShamblingHorror 	= mod:NewNextTimer(60, 70372)
-local timerDrudgeGhouls 	= mod:NewNextTimer(20, 70358)
-local timerRagingSpiritCD	= mod:NewNextTimer(22, 69200)
-local timerSummonValkyr 	= mod:NewCDTimer(45, 71844)
-local timerVileSpirit 		= mod:NewNextTimer(30.5, 70498)
-local timerTrapCD		 	= mod:NewNextTimer(15.5, 73539)
-local timerRestoreSoul 		= mod:NewCastTimer(40, 73650)
-local timerRoleplay			= mod:NewTimer(162, "TimerRoleplay", 72350)
+local timerNecroticPlagueCD	= mod:NewNextTimer(30, 70337, nil, nil, nil, 3)
+local timerDefileCD			= mod:NewNextTimer(32.5, 72762, nil, nil, nil, 3)
+local timerEnrageCD			= mod:NewCDTimer(20, 72143, nil, "Tank|RemoveEnrage", nil, 5)
+local timerShamblingHorror 	= mod:NewNextTimer(60, 70372, nil, nil, nil, 1)
+local timerDrudgeGhouls 	= mod:NewNextTimer(20, 70358, nil, nil, nil, 1)
+local timerRagingSpiritCD	= mod:NewNextTimer(22, 69200, nil, nil, nil, 1)
+local timerSummonValkyr 	= mod:NewCDTimer(45, 71844, nil, nil, nil, 1)
+local timerVileSpirit 		= mod:NewNextTimer(30.5, 70498, nil, nil, nil, 1)
+local timerTrapCD		 	= mod:NewNextTimer(15.5, 73539, nil, nil, nil, 3)
+local timerRestoreSoul 		= mod:NewCastTimer(40, 73650, nil, nil, nil, 6)
+local timerRoleplay			= mod:NewTimer(162, "TimerRoleplay", 72350, nil, nil, 6)
 
 local berserkTimer			= mod:NewBerserkTimer(900)
 
@@ -99,7 +99,7 @@ mod:AddBoolOption("DefileIcon")
 mod:AddBoolOption("NecroticPlagueIcon")
 mod:AddBoolOption("RagingSpiritIcon", false)
 mod:AddBoolOption("TrapIcon")
-mod:AddBoolOption("ValkyrIcon")
+mod:AddSetIconOption("ValkyrIcon", 71844, true, true)
 mod:AddBoolOption("HarvestSoulIcon", false)
 mod:AddBoolOption("AnnounceValkGrabs", false)
 
@@ -306,20 +306,11 @@ function mod:SPELL_AURA_APPLIED(args)
 end
 
 do
-	local valkIcons = {}
 	local valkyrTargets = {}
-	local currentIcon = 2
 	local grabIcon = 2
-	local iconsSet = 0
 	local lastValk = 0
 	
-	local function resetValkIconState()
-		table.wipe(valkIcons)
-		currentIcon = 2
-		iconsSet = 0
-	end
-	
-	local function scanValkyrTargets()
+	local function scanValkyrTargets(self)
 		if (time() - lastValk) < 10 then    -- scan for like 10secs
 			for uId in DBM:GetGroupMembers() do        -- for every raid member check ..
 				if UnitInVehicle(uId) and not valkyrTargets[uId] then      -- if person #i is in a vehicle and not already announced 
@@ -330,7 +321,7 @@ do
 					end
 					if IsInGroup() and mod.Options.AnnounceValkGrabs and DBM:GetRaidRank() > 1 then
 						local channel = (IsInRaid() and "RAID") or "PARTY"
-						if mod.Options.ValkyrIcon then
+						if self.Options.ValkyrIcon then
 							SendChatMessage(L.ValkGrabbedIcon:format(grabIcon, UnitName(uId)), channel)
 							grabIcon = grabIcon + 1
 						else
@@ -339,14 +330,13 @@ do
 					end
 				end
 			end
-			mod:Schedule(0.5, scanValkyrTargets)  -- check for more targets in a few
+			self:Schedule(0.5, scanValkyrTargets, self)  -- check for more targets in a few
 		else
 			table.wipe(valkyrTargets)       -- no more valkyrs this round, so lets clear the table
 			grabIcon = 2
 		end
 	end  
-	
-	
+
 	function mod:SPELL_SUMMON(args)
 		if args.spellId == 69037 then -- Summon Val'kyr
 			if time() - lastValk > 15 then -- show the warning and timer just once for all three summon events
@@ -355,31 +345,17 @@ do
 					timerSummonValkyr:Start()
 				end
 				lastValk = time()
-				scanValkyrTargets()
-				if self.Options.ValkyrIcon then
-					resetValkIconState()
-				end
+				scanValkyrTargets(self)
 			end
 			if self.Options.ValkyrIcon then
-				valkIcons[args.destGUID] = currentIcon
-				currentIcon = currentIcon + 1
+				if self:IsDifficulty("normal25", "heroic25") then
+					self:ScanForMobs(args.destGUID, 1, 2, 3, 0.1, 20, "ValkyrIcon")
+				else
+					self:ScanForMobs(args.destGUID, 1, 2, 1, 0.1, 20, "ValkyrIcon")
+				end
 			end
 		end
 	end
-	
-	mod:RegisterOnUpdateHandler(function(self)
-		if self.Options.ValkyrIcon and (DBM:GetRaidRank() > 0 and not (iconsSet == 3 and self:IsDifficulty("normal25", "heroic25") or iconsSet == 1 and self:IsDifficulty("normal10", "heroic10"))) then
-			for i = 1, DBM:GetNumGroupMembers() do
-				local uId = "raid"..i.."target"
-				local guid = UnitGUID(uId)
-				if valkIcons[guid] then
-					SetRaidTarget(uId, valkIcons[guid])
-					iconsSet = iconsSet + 1
-					valkIcons[guid] = nil
-				end
-			end
-		end
-	end, 1)
 end
 
 function mod:SPELL_DAMAGE(_, _, _, _, destGUID, _, _, _, spellId)

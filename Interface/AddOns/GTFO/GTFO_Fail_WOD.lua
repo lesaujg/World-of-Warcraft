@@ -242,6 +242,24 @@ GTFO.SpellID["180285"] = {
 	sound = 3;
 };
 
+GTFO.SpellID["180380"] = {
+	--desc = "Razor Net!";
+	sound = 3;
+	applicationOnly = true;
+};
+
+GTFO.SpellID["187664"] = {
+	--desc = "Fel Breath (Supreme Lord Kazzak)";
+	sound = 3;
+	tankSound = 0;
+};
+
+GTFO.SpellID["187632"] = {
+	--desc = "Explosive Doom (Supreme Lord Kazzak)";
+	sound = 4;
+	ignoreSelfInflicted = true;
+};
+
 
 --TODO: Colossal Slam (Drov the Ruiner) - non-tank fail for front-cone damage
 --TODO: Rumbling Goren (Drov the Ruiner) - non-tank fail?
@@ -1040,12 +1058,6 @@ GTFO.SpellID["135891"] = {
 -- * Hellfire Citadel *
 -- ********************
 
-GTFO.SpellID["184571"] = {
-	--desc = "Massive Siege Nova (Felfire Demolisher)";
-	sound = 3;
-	test = true;
-};
-
 GTFO.SpellID["178162"] = {
 	--desc = "Flameorb (Felfire Flamebelcher)";
 	sound = 3;
@@ -1112,6 +1124,11 @@ GTFO.SpellID["181324"] = {
 	tankSound = 0;
 };
 
+GTFO.SpellID["183226"] = {
+	--desc = "Fel Blaze (Blademaster Jubei'thos)";
+	sound = 3;
+};
+
 GTFO.SpellID["182525"] = {
 	--desc = "Bursting Ulcer (Gorefiend)";
 	sound = 3;
@@ -1128,4 +1145,34 @@ GTFO.SpellID["188939"] = {
 	test = true;
 };
 
+GTFO.SpellID["180146"] = {
+	--desc = "Hunger For Life (Gorefiend)";
+	sound = 3;
+};
 
+GTFO.SpellID["180146"] = {
+	--desc = "Hellfire Blast (Eredar Faithbreaker)";
+	sound = 3;
+	minimumStacks = 2;
+};
+
+GTFO.SpellID["183090"] = {
+	--desc = "Searing Blaze (Vindicator Bramu/Tyrant Velhari)";
+	sound = 3;
+};
+
+GTFO.SpellID["181295"] = {
+	--desc = "Digest (Gorefiend)";
+	sound = 3;
+	damageMinimum = 1;
+};
+
+GTFO.SpellID["180017"] = {
+	--desc = "Crushing Darkness (Gorefiend)";
+	sound = 3;
+};
+
+GTFO.SpellID["181180"] = {
+	--desc = "Inferno (Mannoroth)";
+	sound = 3;
+};
