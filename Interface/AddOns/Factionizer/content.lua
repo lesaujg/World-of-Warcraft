@@ -1,384 +1,381 @@
-function FIZ_InitEnFactionGains(guildName)
-local zone = {}
--- Kalimdor
-zone.Kalimdor = 13
-zone.AhnQiraj_F_King = 772
-zone.Ammen_Vale = 894
-zone.Ashenvale = 43
-zone.Azshara = 181
-zone.Azuremyst_Isle = 464
-zone.Bloodmyst_Isle = 476
-zone.Camp_Narache = 890
-zone.Darkshore = 42
-zone.Darnassus = 381
-zone.Desolace = 101
-zone.Durotar = 4
-zone.Dustwallow_Marsh = 141
-zone.Echo_Isles = 891
-zone.Felwood = 182
-zone.Feralas = 121
-zone.Molten_Front = 795
-zone.Moonglade = 241
-zone.Mount_Hyjal = 606
-zone.Mulgore = 9
-zone.Northern_Barrens = 11
-zone.Orgrimmar = 321
-zone.Shadowglen = 888
-zone.Silithus = 261
-zone.Southern_Barrens = 607
-zone.Stonetalon_Mountains = 81
-zone.Tanaris = 161
-zone.Teldrassil = 41
-zone.The_Exodar = 471
-zone.Thousand_Needles = 61
-zone.Thunder_Bluff = 362
-zone.Uldum = 720
-zone.UnGoro_Crater = 201
-zone.Valley_of_Trials = 889
-zone.Winterspring = 281
-
--- Eastern Kingdoms
-zone.Eastern_Kingdoms = 14
-zone.Abyssal_Depths = 614
-zone.Arathi_Highlands = 16
-zone.Badlands = 17
-zone.Blasted_Lands = 19
-zone.Burning_Steppes = 29
-zone.Coldridge_Valley = 866
-zone.Deadwind_Pass = 32
-zone.Deathknell = 892
-zone.Dun_Morogh = 27
-zone.Duskwood = 34
-zone.E_Plaguelands = 23
-zone.Elwynn_Forest = 30
-zone.Evrsong_Woods = 462
-zone.Ghostlands = 463
-zone.Gilneas = 545
-zone.Gilneas_City = 611
-zone.Hillsbrad_Foothills = 24
-zone.Ironforge = 341
-zone.Isle_of_QuelDanas = 499
-zone.Kelpthar_Forest = 610
-zone.Loch_Modan = 35
-zone.New_Tinkertown = 895
-zone.N_Stranglethorn = 37
-zone.Northshire = 864
-zone.Redridge_Mountains = 36
-zone.R_Gilneas = 684
-zone.R_Gilneas_C = 685
-zone.Searing_Gorge = 28
-zone.Shimmering_Expanse = 615
-zone.Silvermoon_City = 480
-zone.Silverpine_Forest = 21
-zone.Stormwind_City = 301
-zone.Stranglethorn_Vale = 689
-zone.Sunstrider_Isle = 893
-zone.Swamp_of_Sorrows = 38
-zone.C_o_Stranglethorn = 673
-zone.The_Hinterlands = 26
-zone.The_Scarlet_Enclave = 502
-zone.Tirisfal_Glades = 20
-zone.Tol_Barad = 708
-zone.Tol_Barad_Peninsula = 709
-zone.Twilight_Highlands = 700
-zone.Undercity = 382
-zone.Vashjir = 613
-zone.W_Plaguelands = 22
-zone.Westfall = 39
-zone.Wetlands = 40
-
--- Outland
-zone.Outland = 466
-zone.Blades_Edge = 475
-zone.Hellfire_Peninsula = 465
-zone.Nagrand = 477
-zone.Netherstorm = 479
-zone.Shadowmoon_Valley = 473
-zone.Shattrath_City = 481
-zone.Terokkar_Forest = 478
-zone.Zangarmarsh = 467
-
--- Northrend
-zone.Northrend = 485
-zone.Borean_Tundra = 486
-zone.Crystalsong_Forest = 510
-zone.Dalaran = 504
-zone.Dragonblight = 488
-zone.Grizzly_Hills = 490
-zone.Howling_Fjord = 491
-zone.Hrothgars_Landing = 541
-zone.Icecrown = 492
-zone.Sholazar_Basin = 493
-zone.The_Storm_Peaks = 495
-zone.Wintergrasp = 501
-zone.ZulDrak = 496
-
--- Cataclysm
-
-
-
-
-
--- The Maelstrom
-zone.The_Maelstrom = 751
-zone.Deepholm = 640
-zone.Kezan = 605
-zone.The_Lost_Isles = 544
-zone.The_Maelstrom2 = 737
-
--- Pandaria
-zone.Pandaria = 862
-zone.Dread_Wastes = 858
-zone.Isle_of_Giants = 929
-zone.Isle_of_Thunder = 928
-zone.Krasarang_Wilds = 857
-zone.Kun_Lai_Summit = 809
-zone.Shrine_of_7_Stars = 905
-zone.Shrine_of_2_Moons = 903
-zone.The_Jade_Forest = 806
-zone.The_Veiled_Stair = 873
-zone.The_Wandering_Isle = 808
-zone.Timeless_Isle = 951
-zone.Townlong_Steppes = 810
-zone.Vale_of_Eternal_Blossoms = 811
-zone.Valley_ot_FourvWind = 807
-
--- Draenor
-zone.Draenor = 962
-zone.Ashran = 978
-zone.Frostfire_Ridge = 941
-zone.Frostwall = 976
-zone.Gorgrond = 949
-zone.Lunarfall = 971
-zone.Nagrand_WoD = 950
-zone.Shadowmoon_Valley = 947
-zone.Spires_of_Arak = 948
-zone.Stormshield = 1009
-zone.Talador = 946
-zone.Tanaan_Jungle = 945
-zone.TaJuAs_ot_Dark_Portal = 970
-zone.Warspear = 1011
-
--- Battlegrounds
-zone.Alterac_Valley = 401
-zone.Arathi_Basin = 461
-zone.Deepwind_Gorge = 935
-zone.Eye_of_the_Storm = 482
-zone.Isle_of_Conquest = 540
-zone.Silvershard_Mines = 860
-zone.Strand_ot_Ancients = 512
-zone.Temple_of_Kotmogu = 856
-zone.Battle_for_Gilneas = 736
-zone.Twin_Peaks = 626
-zone.Warsong_Gulch = 443
-
--- Scenarios
-zone.A_Brewing_Storm = 878
-zone.A_Little_Patience = 912
-zone.Arena_of_Annihilation = 899
-zone.Assault_on_Zanvess = 883
-zone.Battle_ot_High_Seas = 940
-zone.Blood_in_the_Snow = 939
-zone.Brewmoon_Festival = 884
-zone.Celestial_Tournament = 955
-zone.C_of_Forgotten_Kings = 900
-zone.Dagger_in_the_Dark = 914
-zone.Da_He_of_Panda = 937
-zone.Domination_Point_H = 920
-zone.Greenstone_Village = 880
-zone.Lions_Landing_A = 911
-zone.Secrets_of_Ragefire = 938
-zone.Theramores_Fall_A = 906
-zone.Theramores_Fall_H = 851
-zone.Unga_Ingoo = 882
-
--- Classic Dungeons
-zone.Blackfathom_Deeps = 688
-zone.Blackrock_Depths = 704
-zone.Blackrock_Spire = 721
-zone.Dire_Maul = 699
-zone.Gnomeregan = 691
-zone.Maraudon = 750
-zone.Ragefire_Chasm = 680
-zone.Razorfen_Downs = 760
-zone.Razorfen_Kraul = 761
-zone.Shadowfang_Keep = 764
-zone.Stratholme = 765
-zone.The_Deadmines = 756
-zone.The_Stockade = 690
-zone.Temple_of_AtalHakkar = 687
-zone.Uldaman = 692
-zone.Wailing_Caverns = 749
-zone.ZulFarrak = 686
-
--- Classic Raids
-zone.Blackwing_Lair = 755
-zone.Molten_Core = 696
-zone.Ruins_of_AhnQiraj = 717
-zone.Temple_of_AhnQiraj = 766
-
--- Burning Crusade Dungeons
-zone.Auchenai_Crypts = 722
-zone.Hellfire_Ramparts = 797
-zone.Magisters_Terrace = 798
-zone.Mana_Tombs = 732
-zone.O_Hills_Foothills = 734
-zone.Sethekk_Halls = 723
-zone.Shadow_Labyrinth = 724
-zone.The_Arcatraz = 731
-zone.The_Black_Morass = 733
-zone.The_Blood_Furnace = 725
-zone.The_Botanica = 729
-zone.The_Mechanar = 730
-zone.The_Shattered_Halls = 710
-zone.The_Slave_Pens = 728
-zone.The_Steamvault = 727
-zone.The_Underbog = 726
-
--- Burning Crusade Raids
-zone.Black_Temple = 796
-zone.Gruuls_Lair = 776
-zone.Hyjal_Summit = 775
-zone.Karazhan = 799
-zone.Magtheridons_Lair = 779
-zone.Serpentshrine_Cavern = 780
-zone.Sunwell_Plateau = 789
-zone.The_Eye = 782
-
--- Wrath Dungeons
-zone.Ahnkahet_T_O_Kingdom = 522
-zone.Azjol_Nerub = 533
-zone.DrakTharon_Keep = 534
-zone.Gundrak = 530
-zone.Halls_o_Lightning = 525
-zone.Halls_of_Reflection = 603
-zone.Halls_of_Stone = 526
-zone.Pit_of_Saron = 602
-zone.Culling_of_Stratholme = 521
-zone.The_Forge_of_Souls = 601
-zone.The_Nexus = 520
-zone.The_Oculus = 528
-zone.The_Violet_Hold = 536
-zone.Trial_ot_Champion = 542
-zone.Utgarde_Keep = 523
-zone.Utgarde_Pinnacle = 524
-
--- Wrath Raids
-zone.Icecrown_Citadel = 604
-zone.Naxxramas = 535
-zone.Onyxias_Lair = 718
-zone.The_Eye_of_Eternity = 527
-zone.The_Obsidian_Sanctum = 531
-zone.The_Ruby_Sanctum = 609
-zone.Trial_of_the_Crusader = 543
-zone.Ulduar = 529
-zone.Vault_of_Archavon = 532
-
--- Cataclysm Dungeons
-zone.Blackrock_Caverns = 753
-zone.End_Time = 820
-zone.Grim_Batol = 757
-zone.Halls_of_Origination = 759
-zone.Hour_of_Twilight = 819
-zone.Lost_City_of_thevTolvir = 747
-zone.The_Stonecore = 768
-zone.The_Vortex_Pinnacle = 769
-zone.Throne_of_the_Tides = 767
-zone.Well_of_Eternity = 816
-zone.ZulAman = 781
-zone.ZulGurub = 793
-
--- Cataclysm Raids
-zone.Baradin_Hold = 752
-zone.Blackwing_Descent = 754
-zone.Dragon_Soul = 824
-zone.Firelands = 800
-zone.Bastion_of_Twilight = 758
-zone.Throne_ot_Four_Winds = 773
-
--- Pandaria Dungeons
-zone.Gate_of_the_Setting_Sun = 875
-zone.MoguShan_Palace = 885
-zone.Scarlet_Halls = 871
-zone.Scarlet_Monastery = 874
-zone.Scholomance = 898
-zone.Shado_pan_Monastery = 877
-zone.Siege_of_Niuzao_Temple = 887
-zone.Stormstout_Brewery = 876
-zone.Temple_ot_Jade_Serpen = 867
-
--- Pandaria Raids
-zone.Heart_of_Fear = 897
-zone.Mogushan_Vaults = 896
-zone.Siege_of_Orgrimmar = 953
-zone.Terrace_of_Endless_Spring = 886
-zone.Throne_of_Thunder = 930
-
--- Draenor Dungeons
-zone.Auchindoun = 984
-zone.Bloodmaul_Slag_Mines = 964
-zone.Grimrail_Depot = 993
-zone.Iron_Docks = 987
-zone.Shadowmoon_Burial_Grounds = 969
-zone.Skyreach = 989
-zone.The_Everbloom = 1008
-zone.Up_Blackrock_Spire = 995
-
--- Draenor Raids
-zone.Highmaul = 994
-zone.Blackrock_Foundry = 988
-
-local mob = {}
-
-mob.t_mobs = 1
-mob.o_bosses = 2
-mob.a_bosses = 3
-mob.p_boss = 4
-mob.f_clear = 5
-mob.a_unamed = 11
-mob.a_named = 12
-mob.bs_bucc = 13
-mob.s_pirate = 14
-mob.wastewander = 15
-mob.a_vent_co = 16
--- mob.Mosh'Ogg_Spellcrafter
--- mob.Boulderfist_Ogre
--- mob.an_mobs
--- mob.ar_mobs
--- Quest
-local Quest = {}
-
-Quest.mc_cook_dq = 1
-Quest.oc_cook_dq = 2
-Quest.mc_fish_dq = 3
-Quest.oc_fish_dq = 4
-Quest.no_dq = 5
-Quest.outd = 6
-Quest.champ_tabard = 7
-Quest.bp_quest_fac = 8
-Quest.da_jewel_dq = 9
-
--- items
-local items = {}
-
-items.oc_comm_bad = 1
--- instance
-local instance = {}
-
-instance.spill_rep_dun = 1
-instance.TBD = 2
-instance.n_cat_inst = 3
-instance.h_cat_inst = 4
--- ToBeDone
-local ToBeDone = {}
-
-ToBeDone.till_farm_rep = 1
-ToBeDone.nswts = 2
-ToBeDone.Max_n_d = 3
-ToBeDone.max_ndq_is = 4
-
--- ToBeDone.Outland daily dungeon quest (normal)
--- ToBeDone.Outland daily dungeon quest (heroic)
+function FIZ_InitEnFactionGains(guildName)	
+	local zone = {}
+	-- Kalimdor
+	zone.Kalimdor = 13
+	zone.AhnQiraj_F_King = 772
+	zone.Ammen_Vale = 894
+	zone.Ashenvale = 43
+	zone.Azshara = 181
+	zone.Azuremyst_Isle = 464
+	zone.Bloodmyst_Isle = 476
+	zone.Camp_Narache = 890
+	zone.Darkshore = 42
+	zone.Darnassus = 381
+	zone.Desolace = 101
+	zone.Durotar = 4
+	zone.Dustwallow_Marsh = 141
+	zone.Echo_Isles = 891
+	zone.Felwood = 182
+	zone.Feralas = 121
+	zone.Molten_Front = 795
+	zone.Moonglade = 241
+	zone.Mount_Hyjal = 606
+	zone.Mulgore = 9
+	zone.Northern_Barrens = 11
+	zone.Orgrimmar = 321
+	zone.Shadowglen = 888
+	zone.Silithus = 261
+	zone.Southern_Barrens = 607
+	zone.Stonetalon_Mountains = 81
+	zone.Tanaris = 161
+	zone.Teldrassil = 41
+	zone.The_Exodar = 471
+	zone.Thousand_Needles = 61
+	zone.Thunder_Bluff = 362
+	zone.Uldum = 720
+	zone.UnGoro_Crater = 201
+	zone.Valley_of_Trials = 889
+	zone.Winterspring = 281
+	
+	-- Eastern Kingdoms
+	zone.Eastern_Kingdoms = 14
+	zone.Abyssal_Depths = 614
+	zone.Arathi_Highlands = 16
+	zone.Badlands = 17
+	zone.Blasted_Lands = 19
+	zone.Burning_Steppes = 29
+	zone.Coldridge_Valley = 866
+	zone.Deadwind_Pass = 32
+	zone.Deathknell = 892
+	zone.Dun_Morogh = 27
+	zone.Duskwood = 34
+	zone.E_Plaguelands = 23
+	zone.Elwynn_Forest = 30
+	zone.Evrsong_Woods = 462
+	zone.Ghostlands = 463
+	zone.Gilneas = 545
+	zone.Gilneas_City = 611
+	zone.Hillsbrad_Foothills = 24
+	zone.Ironforge = 341
+	zone.Isle_of_QuelDanas = 499
+	zone.Kelpthar_Forest = 610
+	zone.Loch_Modan = 35
+	zone.New_Tinkertown = 895
+	zone.N_Stranglethorn = 37
+	zone.Northshire = 864
+	zone.Redridge_Mountains = 36
+	zone.R_Gilneas = 684
+	zone.R_Gilneas_C = 685
+	zone.Searing_Gorge = 28
+	zone.Shimmering_Expanse = 615
+	zone.Silvermoon_City = 480
+	zone.Silverpine_Forest = 21
+	zone.Stormwind_City = 301
+	zone.Stranglethorn_Vale = 689
+	zone.Sunstrider_Isle = 893
+	zone.Swamp_of_Sorrows = 38
+	zone.C_o_Stranglethorn = 673
+	zone.The_Hinterlands = 26
+	zone.The_Scarlet_Enclave = 502
+	zone.Tirisfal_Glades = 20
+	zone.Tol_Barad = 708
+	zone.Tol_Barad_Peninsula = 709
+	zone.Twilight_Highlands = 700
+	zone.Undercity = 382
+	zone.Vashjir = 613
+	zone.W_Plaguelands = 22
+	zone.Westfall = 39
+	zone.Wetlands = 40
+	
+	-- Outland
+	zone.Outland = 466
+	zone.Blades_Edge = 475
+	zone.Hellfire_Peninsula = 465
+	zone.Nagrand = 477
+	zone.Netherstorm = 479
+	zone.Shadowmoon_Valley = 473
+	zone.Shattrath_City = 481
+	zone.Terokkar_Forest = 478
+	zone.Zangarmarsh = 467
+	
+	-- Northrend
+	zone.Northrend = 485
+	zone.Borean_Tundra = 486
+	zone.Crystalsong_Forest = 510
+	zone.Dalaran = 504
+	zone.Dragonblight = 488
+	zone.Grizzly_Hills = 490
+	zone.Howling_Fjord = 491
+	zone.Hrothgars_Landing = 541
+	zone.Icecrown = 492
+	zone.Sholazar_Basin = 493
+	zone.The_Storm_Peaks = 495
+	zone.Wintergrasp = 501
+	zone.ZulDrak = 496
+	
+	-- Cataclysm
+	
+	
+	
+	
+	
+	-- The Maelstrom
+	zone.The_Maelstrom = 751
+	zone.Deepholm = 640
+	zone.Kezan = 605
+	zone.The_Lost_Isles = 544
+	zone.The_Maelstrom2 = 737
+	
+	-- Pandaria
+	zone.Pandaria = 862
+	zone.Dread_Wastes = 858
+	zone.Isle_of_Giants = 929
+	zone.Isle_of_Thunder = 928
+	zone.Krasarang_Wilds = 857
+	zone.Kun_Lai_Summit = 809
+	zone.Shrine_of_7_Stars = 905
+	zone.Shrine_of_2_Moons = 903
+	zone.The_Jade_Forest = 806
+	zone.The_Veiled_Stair = 873
+	zone.The_Wandering_Isle = 808
+	zone.Timeless_Isle = 951
+	zone.Townlong_Steppes = 810
+	zone.Vale_of_Eternal_Blossoms = 811
+	zone.Valley_ot_FourvWind = 807
+	
+	-- Draenor
+	zone.Draenor = 962
+	zone.Ashran = 978
+	zone.Frostfire_Ridge = 941
+	zone.Frostwall = 976
+	zone.Gorgrond = 949
+	zone.Lunarfall = 971
+	zone.Nagrand_WoD = 950
+	zone.Shadowmoon_Valley = 947
+	zone.Spires_of_Arak = 948
+	zone.Stormshield = 1009
+	zone.Talador = 946
+	zone.Tanaan_Jungle = 945
+	zone.TaJuAs_ot_Dark_Portal = 970
+	zone.Warspear = 1011
+	
+	-- Battlegrounds
+	zone.Alterac_Valley = 401
+	zone.Arathi_Basin = 461
+	zone.Deepwind_Gorge = 935
+	zone.Eye_of_the_Storm = 482
+	zone.Isle_of_Conquest = 540
+	zone.Silvershard_Mines = 860
+	zone.Strand_ot_Ancients = 512
+	zone.Temple_of_Kotmogu = 856
+	zone.Battle_for_Gilneas = 736
+	zone.Twin_Peaks = 626
+	zone.Warsong_Gulch = 443
+	
+	-- Scenarios
+	zone.A_Brewing_Storm = 878
+	zone.A_Little_Patience = 912
+	zone.Arena_of_Annihilation = 899
+	zone.Assault_on_Zanvess = 883
+	zone.Battle_ot_High_Seas = 940
+	zone.Blood_in_the_Snow = 939
+	zone.Brewmoon_Festival = 884
+	zone.Celestial_Tournament = 955
+	zone.C_of_Forgotten_Kings = 900
+	zone.Dagger_in_the_Dark = 914
+	zone.Da_He_of_Panda = 937
+	zone.Domination_Point_H = 920
+	zone.Greenstone_Village = 880
+	zone.Lions_Landing_A = 911
+	zone.Secrets_of_Ragefire = 938
+	zone.Theramores_Fall_A = 906
+	zone.Theramores_Fall_H = 851
+	zone.Unga_Ingoo = 882
+	
+	-- Classic Dungeons
+	zone.Blackfathom_Deeps = 688
+	zone.Blackrock_Depths = 704
+	zone.Blackrock_Spire = 721
+	zone.Dire_Maul = 699
+	zone.Gnomeregan = 691
+	zone.Maraudon = 750
+	zone.Ragefire_Chasm = 680
+	zone.Razorfen_Downs = 760
+	zone.Razorfen_Kraul = 761
+	zone.Shadowfang_Keep = 764
+	zone.Stratholme = 765
+	zone.The_Deadmines = 756
+	zone.The_Stockade = 690
+	zone.Temple_of_AtalHakkar = 687
+	zone.Uldaman = 692
+	zone.Wailing_Caverns = 749
+	zone.ZulFarrak = 686
+	
+	-- Classic Raids
+	zone.Blackwing_Lair = 755
+	zone.Molten_Core = 696
+	zone.Ruins_of_AhnQiraj = 717
+	zone.Temple_of_AhnQiraj = 766
+	
+	-- Burning Crusade Dungeons
+	zone.Auchenai_Crypts = 722
+	zone.Hellfire_Ramparts = 797
+	zone.Magisters_Terrace = 798
+	zone.Mana_Tombs = 732
+	zone.O_Hills_Foothills = 734
+	zone.Sethekk_Halls = 723
+	zone.Shadow_Labyrinth = 724
+	zone.The_Arcatraz = 731
+	zone.The_Black_Morass = 733
+	zone.The_Blood_Furnace = 725
+	zone.The_Botanica = 729
+	zone.The_Mechanar = 730
+	zone.The_Shattered_Halls = 710
+	zone.The_Slave_Pens = 728
+	zone.The_Steamvault = 727
+	zone.The_Underbog = 726
+	
+	-- Burning Crusade Raids
+	zone.Black_Temple = 796
+	zone.Gruuls_Lair = 776
+	zone.Hyjal_Summit = 775
+	zone.Karazhan = 799
+	zone.Magtheridons_Lair = 779
+	zone.Serpentshrine_Cavern = 780
+	zone.Sunwell_Plateau = 789
+	zone.The_Eye = 782
+	
+	-- Wrath Dungeons
+	zone.Ahnkahet_T_O_Kingdom = 522
+	zone.Azjol_Nerub = 533
+	zone.DrakTharon_Keep = 534
+	zone.Gundrak = 530
+	zone.Halls_o_Lightning = 525
+	zone.Halls_of_Reflection = 603
+	zone.Halls_of_Stone = 526
+	zone.Pit_of_Saron = 602
+	zone.Culling_of_Stratholme = 521
+	zone.The_Forge_of_Souls = 601
+	zone.The_Nexus = 520
+	zone.The_Oculus = 528
+	zone.The_Violet_Hold = 536
+	zone.Trial_ot_Champion = 542
+	zone.Utgarde_Keep = 523
+	zone.Utgarde_Pinnacle = 524
+	
+	-- Wrath Raids
+	zone.Icecrown_Citadel = 604
+	zone.Naxxramas = 535
+	zone.Onyxias_Lair = 718
+	zone.The_Eye_of_Eternity = 527
+	zone.The_Obsidian_Sanctum = 531
+	zone.The_Ruby_Sanctum = 609
+	zone.Trial_of_the_Crusader = 543
+	zone.Ulduar = 529
+	zone.Vault_of_Archavon = 532
+	
+	-- Cataclysm Dungeons
+	zone.Blackrock_Caverns = 753
+	zone.End_Time = 820
+	zone.Grim_Batol = 757
+	zone.Halls_of_Origination = 759
+	zone.Hour_of_Twilight = 819
+	zone.Lost_City_of_thevTolvir = 747
+	zone.The_Stonecore = 768
+	zone.The_Vortex_Pinnacle = 769
+	zone.Throne_of_the_Tides = 767
+	zone.Well_of_Eternity = 816
+	zone.ZulAman = 781
+	zone.ZulGurub = 793
+	
+	-- Cataclysm Raids
+	zone.Baradin_Hold = 752
+	zone.Blackwing_Descent = 754
+	zone.Dragon_Soul = 824
+	zone.Firelands = 800
+	zone.Bastion_of_Twilight = 758
+	zone.Throne_ot_Four_Winds = 773
+	
+	-- Pandaria Dungeons
+	zone.Gate_of_the_Setting_Sun = 875
+	zone.MoguShan_Palace = 885
+	zone.Scarlet_Halls = 871
+	zone.Scarlet_Monastery = 874
+	zone.Scholomance = 898
+	zone.Shado_pan_Monastery = 877
+	zone.Siege_of_Niuzao_Temple = 887
+	zone.Stormstout_Brewery = 876
+	zone.Temple_ot_Jade_Serpen = 867
+	
+	-- Pandaria Raids
+	zone.Heart_of_Fear = 897
+	zone.Mogushan_Vaults = 896
+	zone.Siege_of_Orgrimmar = 953
+	zone.Terrace_of_Endless_Spring = 886
+	zone.Throne_of_Thunder = 930
+	
+	-- Draenor Dungeons
+	zone.Auchindoun = 984
+	zone.Bloodmaul_Slag_Mines = 964
+	zone.Grimrail_Depot = 993
+	zone.Iron_Docks = 987
+	zone.Shadowmoon_Burial_Grounds = 969
+	zone.Skyreach = 989
+	zone.The_Everbloom = 1008
+	zone.Up_Blackrock_Spire = 995
+	
+	-- Draenor Raids
+	zone.Highmaul = 994
+	zone.Blackrock_Foundry = 988
+	
+	local mob = {}
+	
+	mob.t_mobs = 1
+	mob.o_bosses = 2
+	mob.a_bosses = 3
+	mob.p_boss = 4
+	mob.f_clear = 5
+	mob.a_unamed = 11
+	mob.a_named = 12
+	mob.bs_bucc = 13
+	mob.s_pirate = 14
+	mob.wastewander = 15
+	mob.a_vent_co = 16
+	-- mob.Mosh'Ogg_Spellcrafter
+	-- mob.Boulderfist_Ogre
+	-- mob.an_mobs
+	-- mob.ar_mobs
+	-- Quest
+	local Quest = {}
+	
+	Quest.mc_cook_dq = 1
+	Quest.oc_cook_dq = 2
+	Quest.mc_fish_dq = 3
+	Quest.oc_fish_dq = 4
+	Quest.no_dq = 5
+	Quest.outd = 6
+	Quest.champ_tabard = 7
+	Quest.bp_quest_fac = 8
+	Quest.da_jewel_dq = 9
+	
+	-- items
+	local items = {}
+	
+	items.oc_comm_bad = 1
+	-- instance
+	local instance = {}
+	
+	instance.spill_rep_dun = 1
+	instance.TBD = 2
+	instance.n_cat_inst = 3
+	instance.h_cat_inst = 4
+	-- ToBeDone
+	local ToBeDone = {}
+	
+	ToBeDone.till_farm_rep = 1
+	ToBeDone.nswts = 2
+	ToBeDone.Max_n_d = 3
+	ToBeDone.max_ndq_is = 4
 
 	--383	
 	if (FIZ_IsAlliance) then	
@@ -389,17 +386,17 @@ ToBeDone.max_ndq_is = 4
 		FIZ_AddQuest(69, 4, 8, Quest.mc_fish_dq, 250, "nil", FIZ_LIMIT_TYPE_Fish)
 		FIZ_AddQuest(69, 4, 8, Quest.oc_fish_dq, 65, "nil", FIZ_LIMIT_TYPE_Fish)
 	---- spillover from Alterac Valley	
-		FIZ_AddQuest(69, 4, 8, 7386, 18.75, {[17423] = 5})
-		FIZ_AddQuest(69, 4, 8, 6881, 2.5, {[17423] = 1})
-		FIZ_AddQuest(69, 4, 8, 6943, 10, {[17504] = 1})
-		FIZ_AddQuest(69, 4, 8, 6942, 10, {[17502] = 1})
-		FIZ_AddQuest(69, 4, 8, 6941, 10, {[17503] = 1})
-		FIZ_AddQuest(69, 4, 8, 7027, 2.5)
-		FIZ_AddQuest(69, 4, 8, 7026, 2.5, {[17643] = 1})
-		FIZ_AddQuest(69, 4, 8, 6781, 2.5, {[17422] = 20})
+		FIZ_AddQuest(930, 4, 8, 7386, 18.75, {[17423] = 5})
+		FIZ_AddQuest(930, 4, 8, 6881, 2.5, {[17423] = 1})
+		FIZ_AddQuest(930, 4, 8, 6943, 10, {[17504] = 1})
+		FIZ_AddQuest(930, 4, 8, 6942, 10, {[17502] = 1})
+		FIZ_AddQuest(930, 4, 8, 6941, 10, {[17503] = 1})
+		FIZ_AddQuest(930, 4, 8, 7027, 2.5)
+		FIZ_AddQuest(930, 4, 8, 7026, 2.5, {[17643] = 1})
+		FIZ_AddQuest(930, 4, 8, 6781, 2.5, {[17422] = 20})
 	---- spillover from Other	
-		FIZ_AddItems(69, 4, 8, 250, {[45714] = 1})
-		FIZ_AddItems(69, 4, 8, 62.5, {["items.oc_comm_bad"] = 1})
+		FIZ_AddItems(69, 4, 8, 10, {[45714] = 1})
+		FIZ_AddItems(69, 4, 8, 10, {["items.oc_comm_bad"] = 1})
 		FIZ_AddSpell(69, 1, 8, "Quest.no_dq", 1000)
 	-- Exodar 930	
 		FIZ_AddQuest(930, 4, 8, Quest.oc_cook_dq, 65, "nil", FIZ_LIMIT_TYPE_Cook)
@@ -500,13 +497,16 @@ ToBeDone.max_ndq_is = 4
 	-- Bizmo's Brawlpub 1419	
 		FIZ_AddQuest(1419, 1, 8, Quest.no_dq, 1)
 	-- Outland (burning crusade)	
+	-- Wintersaber Trainers 589	
+		FIZ_AddQuest(589, 4, 8, 29037, 1500)
+		FIZ_AddQuest(589, 4, 8, 29035, 1500)
+		FIZ_AddQuest(589, 4, 8, 29038, 1500)
+		FIZ_AddQuest(589, 4, 8, 29040, 1500)
 	-- Honor Hold 946	
 		FIZ_AddInstance(946, 4, 5, zone.Hellfire_Ramparts, 600, false)
 		FIZ_AddInstance(946, 6, 8, zone.Hellfire_Ramparts, 2000, true)
 		FIZ_AddInstance(946, 4, 5, zone.The_Blood_Furnace, 750, false)
 		FIZ_AddInstance(946, 6, 8, zone.The_Blood_Furnace, 2700, true)
-		
-		
 		FIZ_AddInstance(946, 4, 8, zone.The_Shattered_Halls, 1600, false)
 		FIZ_AddInstance(946, 4, 8, zone.The_Shattered_Halls, 2900, true)
 		FIZ_AddMob(946, 4, 7, "MoshOgg Spellcrafter", 5, zone.The_Shattered_Halls)
@@ -683,8 +683,8 @@ ToBeDone.max_ndq_is = 4
 		FIZ_AddInstance(1050, 4, 8, instance.spill_rep_dun, 400, false)
 		FIZ_AddInstance(1050, 4, 8, instance.spill_rep_dun, 800, true)
 	-- Cataclysm	
-	---- from zone Twilight Highlands	
 	-- Wildhammer Clan 1174	
+	---- from zone Twilight Highlands	
 		FIZ_AddQuest(1174, 4, 8, 28864, 250)
 		FIZ_AddQuest(1174, 4, 8, 28861, 250)
 		FIZ_AddQuest(1174, 4, 8, 28860, 250)
@@ -783,6 +783,7 @@ ToBeDone.max_ndq_is = 4
 		FIZ_AddQuest(1376, 1, 8, 32171, 200)
 	-- Isle of Thunder	
 	-- Kirin Tor Offensive 1387	
+		FIZ_AddQuest(1387, 1, 8, 32943, 400)
 		FIZ_AddQuest(1387, 4, 8, 32571, 150)
 		FIZ_AddQuest(1387, 4, 8, 32558, 150)
 		FIZ_AddQuest(1387, 4, 8, 32578, 200)
@@ -1188,7 +1189,6 @@ ToBeDone.max_ndq_is = 4
 	---- spillover from dungeon	
 		FIZ_AddInstance(1124, 4, 8, instance.spill_rep_dun, 400, false)
 		FIZ_AddInstance(1124, 4, 8, instance.spill_rep_dun, 800, true)
-		
 	-- Warsong Offensive 1085	
 		FIZ_AddQuest(1085, 4, 8, 12284, 125)
 		FIZ_AddQuest(1085, 4, 8, 12280, 125)
@@ -1245,13 +1245,13 @@ ToBeDone.max_ndq_is = 4
 		FIZ_AddInstance(1064, 4, 8, instance.spill_rep_dun, 400, false)
 		FIZ_AddInstance(1064, 4, 8, instance.spill_rep_dun, 800, true)
 	-- Cataclysm	
-	---- from zone Twilight Highlands	
 	-- Dragonmaw Clan 1172	
-		FIZ_AddQuest(1172, 4, 8, 28873, 250)
-		FIZ_AddQuest(1172, 4, 8, 28875, 350)
-		FIZ_AddQuest(1172, 4, 8, 28871, 250)
-		FIZ_AddQuest(1172, 4, 8, 28874, 250)
-		FIZ_AddQuest(1172, 4, 8, 28872, 250)
+	---- from zone Twilight Highlands	
+		FIZ_AddQuest(1172, 4, 8, 28864, 250)
+		FIZ_AddQuest(1172, 4, 8, 28861, 250)
+		FIZ_AddQuest(1172, 4, 8, 28860, 250)
+		FIZ_AddQuest(1172, 4, 8, 28862, 250)
+		FIZ_AddQuest(1172, 4, 8, 28863, 350)
 		FIZ_AddSpell(1172, 1, 8, "Quest.no_dq", 1000)
 		FIZ_AddSpell(1172, 1, 8, "Quest.no_dq", 1800)
 		FIZ_AddMob(1172, 1, 8, mob.t_mobs, 10, 3)
@@ -1352,6 +1352,7 @@ ToBeDone.max_ndq_is = 4
 		FIZ_AddQuest(1375, 1, 8, 32171, 200)
 	-- Isle of Thunder	
 	-- Sunreaver Onslaught 1388	
+		FIZ_AddQuest(1388, 1, 8, 32943, 400)
 		FIZ_AddQuest(1388, 4, 8, 32571, 150)
 		FIZ_AddQuest(1388, 4, 8, 32578, 200)
 		FIZ_AddQuest(1388, 4, 8, 32525, 150)
@@ -1426,7 +1427,6 @@ ToBeDone.max_ndq_is = 4
 		FIZ_AddQuest(1388, 4, 8, 32206, 150)
 		FIZ_AddQuest(1388, 4, 8, 32233, 150)
 		FIZ_AddQuest(1388, 4, 8, 32232, 150)
-		FIZ_AddQuest(1388, 4, 8, 32583, 200)
 	-- Warlords of Draenor	
 	-- Frostwolf Orcs 1445	
 		FIZ_AddMob(1445, 1, 7, "Grimfrost Drudge", 500, zone.Frostfire_Ridge)
@@ -1669,11 +1669,6 @@ ToBeDone.max_ndq_is = 4
 		FIZ_AddMob(576, 2, 8, "Ragepaw (Rare)", 50, zone.Felwood)
 		FIZ_AddMob(576, 2, 8, "Grizzle Snowpaw (Rare)", 50, zone.Winterspring)
 		FIZ_AddMob(576, 2, 8, "High Chief Winterfall", 50, zone.Winterspring)
-	-- Wintersaber Trainers 589	
-		
-		
-		
-		
 	-- Raid_Factions	
 	-- Ashtongue Deathsworn 1012	
 		FIZ_AddInstance(1012, 4, 8, zone.Black_Temple, 8000)
@@ -2073,8 +2068,10 @@ ToBeDone.max_ndq_is = 4
 		FIZ_AddMob(1269, 1, 8, "Jade Colossus", 100, zone.Vale_of_Eternal_Blossoms)
 		FIZ_AddMob(1269, 1, 8, "Milau", 60, zone.Vale_of_Eternal_Blossoms)
 	-- Shado-Pan 1270	
+		FIZ_AddItems(1270, 1, 8, 1000, {[86592] = 1})
+		FIZ_AddQuest(1270, 1, 8, 32657, 400)
 		FIZ_AddQuest(1270, 1, 8, 31198, 250)
-		
+		FIZ_AddQuest(1270, 1, 8, 32650, 400)
 		FIZ_AddQuest(1270, 1, 8, 31114, 250)
 		FIZ_AddQuest(1270, 1, 8, 31113, 250)
 		FIZ_AddQuest(1270, 1, 8, 31047, 250)
@@ -2100,12 +2097,10 @@ ToBeDone.max_ndq_is = 4
 		FIZ_AddQuest(1270, 1, 8, 31119, 250)
 		FIZ_AddQuest(1270, 1, 8, 31039, 250)
 		FIZ_AddQuest(1270, 1, 8, 31117, 250)
-		FIZ_AddQuest(1270, 1, 8, 31062, 250)
-		FIZ_AddQuest(1270, 1, 8, 32650, 300)
 	-- The August Celestials 1341	
 		FIZ_AddItems(1341, 1, 8, 1000, {[86592] = 1})
-		FIZ_AddQuest(1341, 1, 8, 32657, 1000)
-		
+		FIZ_AddQuest(1341, 1, 8, 32657, 400)
+	------ Krasarang Wilds	
 	------ Krasarang Wilds	
 		FIZ_AddQuest(1341, 1, 8, 30740, 250)
 		FIZ_AddQuest(1341, 1, 8, 30716, 250)
@@ -2156,7 +2151,8 @@ ToBeDone.max_ndq_is = 4
 		FIZ_AddQuest(1341, 1, 8, 30956, 350)
 		FIZ_AddQuest(1341, 1, 8, 30952, 300)
 	-- The Klaxxi 1337	
-		
+		FIZ_AddQuest(1337, 1, 8, 32659, 400)
+		FIZ_AddItems(1337, 1, 8, 1000, {[86592] = 1})
 		FIZ_AddItems(1337, 4, 8, 250, {[87903] = 5})
 		FIZ_AddQuest(1337, 4, 8, 99, 780)
 		FIZ_AddQuest(1337, 4, 8, 99, 260)
@@ -2176,7 +2172,6 @@ ToBeDone.max_ndq_is = 4
 		FIZ_AddQuest(1337, 1, 8, 31598, 500)
 		FIZ_AddQuest(1337, 1, 8, 31507, 130)
 		
-		
 		FIZ_AddQuest(1337, 1, 8, 31235, 250)
 		FIZ_AddQuest(1337, 1, 8, 31504, 250)
 		FIZ_AddQuest(1337, 1, 8, 31234, 250)
@@ -2191,10 +2186,10 @@ ToBeDone.max_ndq_is = 4
 		FIZ_AddQuest(1337, 1, 8, 31269, 250)
 		FIZ_AddQuest(1337, 1, 8, 31505, 250)
 		FIZ_AddQuest(1337, 1, 8, 31502, 250)
-		FIZ_AddQuest(1337, 1, 8, 32659, 350)
+		FIZ_AddQuest(1337, 1, 8, 32659, 400)
 	-- Order of the Cloud Serpent 1271	
 		FIZ_AddItems(1271, 1, 8, 1000, {[86592] = 1})
-		FIZ_AddQuest(1271, 4, 8, 99, 780)
+		FIZ_AddQuest(1271, 1, 8, 32657, 400)
 		FIZ_AddQuest(1271, 4, 8, 99, 780)
 		FIZ_AddQuest(1271, 4, 8, 99, 780)
 		FIZ_AddQuest(1271, 4, 8, 99, 780)
@@ -2491,7 +2486,7 @@ ToBeDone.max_ndq_is = 4
 		FIZ_AddQuest(270, 1, 8, Quest.outd, 1)
 	-- The Brewmasters 1351	
 		FIZ_AddQuest(1351, 1, 8, Quest.outd, 1)
-	-- 0 guildName	
+	-- 11 guildName	
 	if (IsInGuild()) then	
 		FIZ_AddQuest(guildName, 4, 8, Quest.bp_quest_fac, 125)
 	end	

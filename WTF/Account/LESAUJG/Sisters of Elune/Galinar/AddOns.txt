@@ -120,7 +120,7 @@ AskMrRobot: enabled
 Factionizer: enabled
 GTFO: enabled
 HandyNotes: enabled
-MacroToolkit: disabled
+MacroToolkit: enabled
 MasterPlanA: enabled
 Pawn: enabled
 TradeSkillMaster_AppHelper: enabled
@@ -129,3 +129,4 @@ TradeSkillMaster_Destroying: enabled
 DBM-GarrisonInvasions: enabled
 DBM-HellfireCitadel: enabled
 DBM-Party-Classic: enabled
+premade-filter: disabled

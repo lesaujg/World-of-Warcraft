@@ -1,8 +1,8 @@
 ## Interface: 60200
 ## Title: Factionizer |cFFFFA0A0by A_Nolan|r
-## Version: 6.02.00.07 15.06.24
+## Version: 6.02.00.10 15.08.26
 ## Author: A_Nolan, gOOvER (Gooverdra), Arygos-EU
-## X-Date: 2015-06-10
+## X-Date: 2015-08-26
 ## X-Category: Reputation
 ## X-Website: http://wow.curseforge.com/addons/factionizer/
 ## URL: http://wow.curseforge.com/addons/factionizer/

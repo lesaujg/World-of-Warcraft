@@ -1,11 +1,15 @@
 
 MacroToolkitDB = {
 	["char"] = {
+		["Ghiaccioli - Sisters of Elune"] = {
+			["backups"] = {
+			},
+		},
 		["Bracnar - Sisters of Elune"] = {
 			["backups"] = {
 			},
 		},
-		["Ghiaccioli - Sisters of Elune"] = {
+		["Uldaris - Sisters of Elune"] = {
 			["backups"] = {
 			},
 		},
@@ -39,8 +43,8 @@ MacroToolkitDB = {
 	},
 	["profiles"] = {
 		["profile"] = {
-			["x"] = 208.399963378906,
-			["y"] = 431.999908447266,
+			["x"] = 51.3999900817871,
+			["y"] = 659.999938964844,
 		},
 	},
 }

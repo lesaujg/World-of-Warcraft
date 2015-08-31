@@ -350,7 +350,7 @@ ralltrack ={
 {0,1,0,0,0,0},--Shadowmoon Burial Grounds
 {0,0,0,0,0,0,0,0,0,0},--Highmaul
 {0,0,1,1,0,1,0,0,0,0,0,0,0,0},--Blackrock Foundry
-{1,1,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0},--Hellfire Citadel
+{1,1,0,1,1,1,0,1,0,1,0,0,0,0,0,0,0},--Hellfire Citadel
 }--1 если трекерится
 
 

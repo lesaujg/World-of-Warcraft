@@ -2,7 +2,7 @@
 -- Diablohu(diablohudream@gmail.com)
 -- yleaf(yaroot@gmail.com)
 -- Mini Dragon(projecteurs@gmail.com)
--- Last update: Aug 14 2015, 6:39 UTC@14333
+-- Last update: Aug 17 2015, 17:38 UTC@14349
 
 if GetLocale() ~= "zhCN" then return end
 
@@ -22,7 +22,7 @@ DBM_CORE_LOAD_GUI_COMBAT			= "DBM无法在战斗中初始化图形界面。请�
 DBM_CORE_BAD_LOAD					= "DBM检测到由于你在战斗过程中载入模块，有些计时器可能会错误。请在离开战斗后马上重载界面。"
 DBM_CORE_LOAD_MOD_VER_MISMATCH		= "%s 模块无法被载入。 DBM核心版本过旧。请升级DBM。"
 
-DBM_CORE_WHATS_NEW					= "最新更新：DBM帮助菜单(/dbm help)加入了一些新的命令，它变得更加友好了。有一些模组的HUD功能被强化了，特别是阿克蒙德。我们和世界知名工会合作，改善了神话模式下阿克蒙德模组的表现。"
+--DBM_CORE_WHATS_NEW					= "最新更新：DBM帮助菜单(/dbm help)加入了一些新的命令，它变得更加友好了。有一些模组的HUD功能被强化了，特别是阿克蒙德。我们和世界知名工会合作，改善了神话模式下阿克蒙德模组的表现。"--Uncomment when updated
 --DBM_CORE_WHATS_NEW_LINK			= "最新更新: 想要知道更多可以 |HDBM:forumsnews|h|cff3588ff 点击此处|r 访问我们的论坛"
 
 DBM_CORE_DYNAMIC_DIFFICULTY_CLUMP	= "由于玩家数量不足，DBM 无法开启动态距离检测。"
@@ -320,8 +320,8 @@ DBM_CORE_AUTO_SPEC_WARN_TEXTS.cast				= "%s - 停止施法"
 DBM_CORE_AUTO_SPEC_WARN_TEXTS.reflect			= ">%%s<中了%s - 快停手"
 DBM_CORE_AUTO_SPEC_WARN_TEXTS.count				= "%s! (%%s)"
 DBM_CORE_AUTO_SPEC_WARN_TEXTS.stack				= "你叠加了%%d层%s"
-DBM_CORE_AUTO_SPEC_WARN_TEXTS.switch			= ">%s< - 转换目标"
-DBM_CORE_AUTO_SPEC_WARN_TEXTS.switchcount		= ">%s< - 转换目标 (%%d)"
+DBM_CORE_AUTO_SPEC_WARN_TEXTS.switch			= "%s - 转换目标"
+DBM_CORE_AUTO_SPEC_WARN_TEXTS.switchcount		= "%s - 转换目标 (%%d)"
 
 -- Auto-generated Special Warning Localizations
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.spell			= "特殊警报：$spell:%s"
@@ -395,11 +395,17 @@ DBM_CORE_AUTO_VOICE2_OPTION_TEXT			= "为阶段转换提供语音包警报"
 DBM_CORE_AUTO_COUNTDOWN_OPTION_TEXT			= "倒计时：$spell:%s的冷却时间倒计时"
 DBM_CORE_AUTO_COUNTDOWN_OPTION_TEXT2		= "倒计时：$spell:%s消失时"
 DBM_CORE_AUTO_COUNTOUT_OPTION_TEXT			= "倒计时：$spell:%s的持续时间正计时"
+--
 DBM_CORE_AUTO_YELL_OPTION_TEXT.yell			= "当你受到$spell:%s影响时大喊"
+DBM_CORE_AUTO_YELL_OPTION_TEXT.count		= "当你受到$spell:%s影响时大喊（带计数）"
+DBM_CORE_AUTO_YELL_OPTION_TEXT.fade			= "当你身上的$spell:%s即将消失时影响时大喊倒计时"
+DBM_CORE_AUTO_YELL_OPTION_TEXT.position		= "当你受到$spell:%s影响时大喊（带位置）"
+--
 DBM_CORE_AUTO_YELL_ANNOUNCE_TEXT.yell		= UnitName("player") .. " 中了%s!"
 DBM_CORE_AUTO_YELL_ANNOUNCE_TEXT.count		= UnitName("player") .. " 中了%s! (%%d)"
 DBM_CORE_AUTO_YELL_ANNOUNCE_TEXT.fade		= "%s 于%%d秒后消失"
-DBM_CORE_AUTO_YELL_ANNOUNCE_TEXT.position	= UnitName("player") .. " 中了%s! (%%s)".."{rt%%d}"--Arg order is going to be a problem. any way to word differently for playername at end?
+DBM_CORE_AUTO_YELL_ANNOUNCE_TEXT.position	= UnitName("player").." ({rt%%3$d})中了%1$s! (%%1$s - {rt%%2$d})" --리동윤
+--
 DBM_CORE_AUTO_HUD_OPTION_TEXT				= "为$spell:%s显示HudMap"
 DBM_CORE_AUTO_HUD_OPTION_TEXT_MULTI			= "为多个机制显示HudMap"
 DBM_CORE_AUTO_RANGE_OPTION_TEXT				= "距离监视(%s码)：$spell:%s"--string used for range so we can use things like "5/2" as a value for that field

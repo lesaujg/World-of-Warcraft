@@ -40,6 +40,7 @@ wodrraspisokach25={
 9988,
 9989,
 
+10087,
 
 }
 
@@ -376,6 +377,15 @@ if arg2=="UNIT_DIED" then
           wodrrafailnoreason(10)
      end
   end
+end
+
+if (arg2=="SPELL_AURA_APPLIED" and arg10==185656) and arg8 then
+   raunitisplayer(arg7,arg8)
+   if raunitplayertrue then
+      if wodrraspisokon[11]==1 and wodrraachdone1 then
+         wodrrafailnoreason(11,arg8)
+      end
+   end
 end
 
 

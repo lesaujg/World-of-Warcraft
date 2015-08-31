@@ -1,39 +1,49 @@
-VER 3 0100000000000009 "Cat_Charge" "INV_Misc_QuestionMark"
-/cast [Button:1] Feral Charge(Cat Form)
-/cast [Button:2] Skull Bash(Cat Form)
-END
-VER 3 010000000000000A "Charge" "INV_Misc_QuestionMark"
+VER 3 0100000000000005 "Cenarion Ward" "INV_Misc_QuestionMark"
 #showtooltip
-/cast [stance:1, button:1] Feral Charge(Bear Form)
-/cast [stance:3, button:1] Feral Charge(Cat Form)
-/cast [stance:1, button:2] Skull Bash(Bear Form)
-/cast [stance:3, button:2] Skull Bash(Cat Form)
+/cast [@mouseover,exists,nodead,help,][exists,nodead,help][@player] Cenarion Ward
 END
-VER 3 0100000000000002 "Faerie Fire" "INV_Misc_QuestionMark"
-#showtooltip Faerie Fire
-#show Faerie Fire
-/cast [stance:1/3] Faerie Fire (Feral)(); [nostance] Faerie Fire
+VER 3 0100000000000006 "Healing Touch" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,nodead,help,][exists,nodead,help][@player] Healing Touch
 END
-VER 3 0100000000000005 "Gift of the Wild" "INV_Misc_QuestionMark"
-#show Wild Spineleaf
-#showtooltip Mark of the Wild
-/cast [button:1] Mark of the Wild 
-/cast [button:2] Gift of the Wild
+VER 3 0100000000000007 "Iron Bark" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,nodead,help,][exists,nodead,help][@player] Ironbark
 END
-VER 3 0100000000000001 "Mangle/Auto" "INV_Misc_QuestionMark"
-/castrandom [stance:1]Mangle (Bear); [stance:3]Mangle (Cat);
+VER 3 0100000000000008 "Lifebloom" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,nodead,help,][exists,nodead,help][@player] Lifebloom
 END
-VER 3 0100000000000008 "Prostpecting" "INV_Misc_QuestionMark"
-/cast Prospecting
-/use Obsidium Ore
-/use Elementium Ore
+VER 3 010000000000000D "Nature's Cure" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,nodead,help,][exists,nodead,help][@player] Nature's Cure
+END
+VER 3 010000000000000A "Rebirth" "INV_Misc_QuestionMark"
+#showtooltip Rebirth
+/cast [@mouseover,help]Rebirth;Rebirth
+END
+VER 3 010000000000000E "Regrowth " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,nodead,help,][exists,nodead,help][@player] Regrowth
+END
+VER 3 0100000000000009 "Rejuvenation" "INV_Misc_QuestionMark"
+#showtooltip Rejuvenation
+/cast [@mouseover,exists,nodead,help,][exists,nodead,help][@player] Rejuvenation
 END
 VER 3 0100000000000003 "Rez" "INV_Misc_QuestionMark"
-#showtooltip Revive
-/cast [combat] Rebirth; Revive;
+#showtooltip
+/use [@mouseover,help][combat]Rebirth;Revive;[combat]Rebirth;Revive
 END
 VER 3 0100000000000004 "Stealth" "INV_Misc_QuestionMark"
-/cast [stance:3, button:1] Prowl;
-/stopmacro  [stance:3, button:1];
-/cast Shadowmeld
+/use [form:2,btn:1]Prowl
+/stopmacro [form:2,btn:1]
+/use Shadowmeld
+END
+VER 3 010000000000000B "Swiftmend" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,nodead,help,][exists,nodead,help][@player] Swiftmend
+END
+VER 3 010000000000000C "Wild Growth" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,nodead,help,][exists,nodead,help][@player] Wild Growth
 END

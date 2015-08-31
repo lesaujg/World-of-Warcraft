@@ -16,7 +16,7 @@ DBM_CORE_LOAD_GUI_COMBAT			= "圖形介面不能在戰鬥中初始化。圖形�
 DBM_CORE_BAD_LOAD					= "DBM偵測到你的此副本的模組在戰鬥中讀取失敗。一旦脫離戰鬥，請立即輸入/consoel reloadui重新載入。"
 DBM_CORE_LOAD_MOD_VER_MISMATCH		= "%s不能被讀取因為你的DBM核心未達需求，請更新版本。"
 
-DBM_CORE_WHATS_NEW					= "此版本新功能：有幾個模組的HUD功能改進，特別是阿克蒙德，還有神話模式的改進。"
+--DBM_CORE_WHATS_NEW					= "此版本新功能：有幾個模組的HUD功能改進，特別是阿克蒙德，還有神話模式的改進。"--Uncomment when updated
 --DBM_CORE_WHATS_NEW_LINK			= "此版本新功能： DBM計時器可以根據不同類型的技能上色。此功能可以從計時條樣式去設定。想知道此功能的詳細資訊請至|HDBM:forumsnews|h|cff3588ffclicking here|r"
 
 DBM_CORE_DYNAMIC_DIFFICULTY_CLUMP	= "DBM已中禁用動態距離框架，你目前的團隊人數在這場戰鬥中的機制資訊不足。"
@@ -305,8 +305,8 @@ DBM_CORE_AUTO_SPEC_WARN_TEXTS.cast			= "%s - 停止施法"
 DBM_CORE_AUTO_SPEC_WARN_TEXTS.reflect		= "%s - 停止攻擊"
 DBM_CORE_AUTO_SPEC_WARN_TEXTS.count			= "%s!(%%s)"
 DBM_CORE_AUTO_SPEC_WARN_TEXTS.stack			= "你中了%%d層%s"
-DBM_CORE_AUTO_SPEC_WARN_TEXTS.switch		= ">%s< - 快更換目標!"
-DBM_CORE_AUTO_SPEC_WARN_TEXTS.switchcount	= ">%s< - 快更換目標!(%%d)"
+DBM_CORE_AUTO_SPEC_WARN_TEXTS.switch		= "%s - 快更換目標!"
+DBM_CORE_AUTO_SPEC_WARN_TEXTS.switchcount	= "%s - 快更換目標!(%%d)"
 
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.spell		= "為$spell:%s顯示特別警告"
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.ends 		= "為$spell:%s結束顯示特別警告"

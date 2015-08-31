@@ -1,38 +1,8 @@
-MACRO 16777225 "Cat_Charge" INV_Misc_QuestionMark
-/cast [Button:1] Feral Charge(Cat Form)
-/cast [Button:2] Skull Bash(Cat Form)
-END
-MACRO 16777226 "Charge" INV_Misc_QuestionMark
-#showtooltip
-/cast [stance:1, button:1] Feral Charge(Bear Form)
-/cast [stance:3, button:1] Feral Charge(Cat Form)
-/cast [stance:1, button:2] Skull Bash(Bear Form)
-/cast [stance:3, button:2] Skull Bash(Cat Form)
-END
-MACRO 16777218 "Faerie Fire" INV_Misc_QuestionMark
-#showtooltip Faerie Fire
-#show Faerie Fire
-/cast [stance:1/3] Faerie Fire (Feral)(); [nostance] Faerie Fire
-END
-MACRO 16777221 "Gift of the Wild" INV_Misc_QuestionMark
-#show Wild Spineleaf
-#showtooltip Mark of the Wild
-/cast [button:1] Mark of the Wild 
-/cast [button:2] Gift of the Wild
-END
-MACRO 16777217 "Mangle/Auto" INV_Misc_QuestionMark
-/castrandom [stance:1]Mangle (Bear); [stance:3]Mangle (Cat);
-END
-MACRO 16777224 "Prostpecting" INV_Misc_QuestionMark
-/cast Prospecting
-/use Obsidium Ore
-/use Elementium Ore
-END
-MACRO 16777219 "Rez" INV_Misc_QuestionMark
+VER 3 0100000000000003 "Rez" "INV_Misc_QuestionMark"
 #showtooltip Revive
 /cast [combat] Rebirth; Revive;
 END
-MACRO 16777220 "Stealth" INV_Misc_QuestionMark
+VER 3 0100000000000004 "Stealth" "INV_Misc_QuestionMark"
 /cast [stance:3, button:1] Prowl;
 /stopmacro  [stance:3, button:1];
 /cast Shadowmeld

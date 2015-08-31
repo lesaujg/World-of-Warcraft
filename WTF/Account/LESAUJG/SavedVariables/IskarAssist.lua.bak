@@ -1,0 +1,18 @@
+
+IskarAssistDB = {
+	["profileKeys"] = {
+		["Bracnar - Sisters of Elune"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["MainPanel"] = {
+				["position"] = {
+					["y"] = -188.999847412109,
+					["x"] = 172.999938964844,
+				},
+				["IsLocked"] = false,
+			},
+			["barwidth_grid"] = 70,
+		},
+	},
+}
