@@ -178,20 +178,6 @@ do -- petcontrol
 		end)
 	end
 end
-do -- Draenor [flyable]
-	local noFlight = {}
-	for n in ("1158 1331 1159 1152 1330 1153; 1116 1265"):gmatch("%d+") do
-		noFlight[tonumber(n)] = 1
-	end
-	EV.RegisterEvent("PLAYER_ENTERING_WORLD", function()
-		local _, _, _, root = UnitPosition("player")
-		if noFlight[root] then
-			KR:SetStateConditionalValue("flyable", "")
-		else
-			KR:ClearConditional("flyable")
-		end
-	end)
-end
 do -- outpost
 	local map, state, name = {
 		[161676]="garrison", [161332]="garrison",
@@ -269,4 +255,79 @@ do -- level:floor
 	end
 	sync()
 	EV.RegisterEvent("PLAYER_LEVEL_UP", sync)
+end
+do -- horde/alliance
+	local function sync()
+		local fg = UnitFactionGroup("player")
+		KR:SetStateConditionalValue("horde", fg == "Horde" and "*" or "")
+		KR:SetStateConditionalValue("alliance", fg == "Alliance" and "*" or "")
+	end
+	sync()
+	EV.PLAYER_ENTERING_WORLD = sync
+end
+do -- moving
+	KR:SetNonSecureConditional("moving", function()
+		return GetUnitSpeed("player") > 0
+	end)
+end
+do -- ready:spell name/spell id/item name/item id
+	local argCache = {}
+	KR:SetNonSecureConditional("ready", function(_name, args)
+		if not args or args == "" then
+			return false
+		end
+		
+		local at = argCache[args]
+		if not at then
+			at = {}
+			for s in args:gmatch("[^/]+") do
+				s = s:match("^%s*(.-)%s*$")
+				if #s > 0 then
+					at[#at + 1] = s
+				end
+			end
+			argCache[args] = at
+		end
+		
+		local gcS, gcL = GetSpellCooldown(61304)
+		local gcE = gcS and gcL and (gcS + gcL) or math.huge
+		for i=1,#at do
+			local rc, j = at[i], 1
+			local cdS, cdL, cdA = GetSpellCooldown(rc)
+			if cdL == nil then cdS, cdL, cdA = GetItemCooldown(rc) end
+			if cdL == 0 or (cdS and cdL and (cdS + cdL) <= gcE) then
+				return true
+			end
+		end
+		
+		return false
+	end)
+end
+do -- have:item name/id
+	local argCache = {}
+	KR:SetNonSecureConditional("have", function(_name, args)
+		if not args or args == "" then
+			return false
+		end
+		
+		local at = argCache[args]
+		if not at then
+			at = {}
+			for s in args:gmatch("[^/]+") do
+				s = s:match("^%s*(.-)%s*$")
+				if #s > 0 then
+					at[#at + 1] = s
+				end
+			end
+			argCache[args] = at
+		end
+		
+		for i=1,#at do
+			if (GetItemCount(at[i]) or 0) > 0 then
+				return true
+			end
+		end
+		
+		return false
+	end)
 end

@@ -24508,8 +24508,8 @@ WeakAurasSaved = {
 				["icon"] = "Interface\\Icons\\spell_hunter_focusingshot",
 			}, -- [20]
 			{
-				["name"] = "Adaptation",
-				["icon"] = "Interface\\Icons\\spell_hunter_adaptation",
+				["name"] = "Lone Wolf",
+				["icon"] = "Interface\\Icons\\spell_hunter_lonewolf",
 			}, -- [21]
 		},
 		["WARRIOR"] = {

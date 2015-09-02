@@ -1,0 +1,15 @@
+tag 6.2.3
+32610e2d33ec4a5bf817fa54f7f7b192ee462ca8
+Mike "Xodiv" Battersby <mib@post.com>
+2015-09-02 11:27:27 +1000
+
+Draenor Pathfinder support - untested.
+
+
+--------------------
+
+Mike "Xodiv" Battersby:
+	- Draenor Pathfinder achievement support.
+	- Use CaseAccentInsensitiveParse instead of strlower.
+	The Blizzard MountJournal code does this. By the sound of it, it will
+	work better for other locales.

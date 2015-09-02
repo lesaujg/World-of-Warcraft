@@ -1,4 +1,4 @@
-local api, MAJ, REV, execQueue, _, T = {}, 1, 8, {}, ...
+local api, MAJ, REV, execQueue, _, T = {}, 1, 10, {}, ...
 if T.ActionBook then return end
 
 local function assert(condition, err, ...)
@@ -11,13 +11,13 @@ local safequote do
 	end
 end
 
-local core = CreateFrame("FRAME", nil, nil, "SecureHandlerAttributeTemplate")
+local core = CreateFrame("FRAME", nil, nil, "SecureHandlerStateTemplate")
 core:SetFrameRef("sandbox", CreateFrame("FRAME", nil, nil, "SecureFrameTemplate"))
 core:Execute([==[-- Kindred.Init
 	pcache, nextDriverKey, sandbox, modStateMap = newtable(), 4200, self:GetFrameRef("sandbox"), newtable()
 	cndType, cndState, cndDrivers, cndAlias, unitAlias, stateDrivers = newtable(), newtable(), newtable(), newtable(), newtable(), newtable()
 	modStateMap.A, modStateMap.a, modStateMap.S, modStateMap.s, modStateMap.C, modStateMap.c = true, false, true, false, true, false
-	btnState = newtable()
+	btnState, isInLockdown, cndInsecure = newtable(), false, newtable()
 
 	OptionParse = [=[-- Kindred_OptionParse
 		local ret, conditional = newtable(), ...
@@ -34,7 +34,7 @@ core:Execute([==[-- Kindred.Init
 						if m:sub(1,1) == "@" or m:sub(1,7) == "target=" then
 							ct.target = m:match("[=@](.*)")
 						else
-							local cvalparsed, mark, wname, inv, name, col, cval = nil, m:match("^([+%-#]?)((n?o?)([^:=]*))([:=]?)(.-)%s*$")
+							local cvalparsed, mark, wname, inv, name, col, cval = nil, m:match("^([+]?)((n?o?)([^:=]*))([:=]?)(.-)%s*$")
 							if inv ~= "no" then inv, name = "", wname end
 							cval, name = col == ":" and cval and ("/" .. cval .. "/"):gsub("%s*/%s*", "/"):match("/(.+)/") or nil, col == ":" and name or (name .. col .. cval)
 							if cval and cval ~= "" then
@@ -122,6 +122,16 @@ core:Execute([==[-- Kindred.Init
 								cres = s:RunAttribute("EvaluateMacroConditional", name, c[5], target, c[4])
 							end
 							cres = (not not cres) == goal
+						elseif ctype == "irun" then
+							local markType = c[4]
+							if isInLockdown then
+								cres = markType == "+"
+							elseif _shadowES and _shadowES[name] then
+								cres = (not not _shadowES[name](name, c[5], target, markType)) == goal
+							else
+								self:CallMethod("irun", name, c[5], target, markType)
+								cres = (not not self:GetAttribute("irun-result")) == goal
+							end
 						end
 						if not cres then
 							conditional = nil
@@ -231,6 +241,9 @@ core:SetAttribute("SetAliasUnit", [=[-- Kindred:SetAliasUnit("alias", "unit" or 
 	unitAlias[alias] = unit
 	owner:Run(RefreshDrivers, "unit:" .. alias)
 ]=])
+core:SetAttribute("PokeConditional", [=[-- Kindred:PokeConditional("name")
+	owner:Run(RefreshDrivers, (...))
+]=])
 core:SetAttribute("SetButtonState", [=[-- Kindred:SetButtonState("buttonid" or false or nil)
 	local ostate, nstate = cndState.btn == btnState and btnState["*"], ...
 	if nstate == false then
@@ -247,6 +260,21 @@ core:SetAttribute("SetButtonState", [=[-- Kindred:SetButtonState("buttonid" or f
 	end
 	return ostate
 ]=])
+core:SetAttribute("_onstate-lockdown", [[-- Kindred:SyncLockdown
+	if newstate then
+		isInLockdown = newstate == "on"
+		self:SetAttribute("state-lockdown", nil)
+	else
+		for k in pairs(cndInsecure) do
+			if cndType[k] ~= "irun" then
+				cndInsecure[k] = nil
+			elseif cndDrivers[k] then
+				owner:Run(RefreshDrivers, k)
+			end
+		end
+	end
+]])
+RegisterStateDriver(core, "lockdown", "[combat] on; off")
 function core:throw(text)
 	error(text)
 end
@@ -276,8 +304,8 @@ local EvaluateCmdOptions, SetExternalShadow do
 				v = _R[k] or _G[k]
 			elseif type(v) == "userdata" then
 				v = IsFrameHandle(v) and ShadowEnvironment(GetFrameHandleFrame(v)) or setmetatable({}, {__index=v})
+				t[k] = v
 			end
-			t[k] = v
 			return v
 		end}
 		local function ShadowRun(self, f, ...)
@@ -298,6 +326,9 @@ local EvaluateCmdOptions, SetExternalShadow do
 	end
 	function SetExternalShadow(name, func)
 		_env._shadowES[name] = func
+	end
+	function core:irun(...)
+		self:SetAttribute("irun-result", _env._shadowES[...](...))
 	end
 end
 
@@ -326,16 +357,27 @@ function api:SetSecureExternalConditional(name, handler, hint)
 	assert(type(name) == "string" and type(handler) == "table" and handler[0] and type(hint) == "function", 'Syntax: Kindred:SetSecureExternalConditional("name", handlerFrame, hintFunc)')
 	assert(handler.IsProtected and select(2,handler:IsProtected()) and handler:GetAttribute("EvaluateMacroConditional"), 'Handler frame must be explicitly protected; must have EvaluateMacroConditional attribute set')
 	if InCombatLockdown() then
-		core:DeferExecute(function() self:SetExternalConditional(name, handler, hint) end, name)
-	else
-		core:SetFrameRef("ExternalConditional-frame", handler)
-		core:Execute(([[ local name, h = %s, self:GetFrameRef('ExternalConditional-frame')
-			self:SetAttribute("frameref-ExternalConditional-frame", nil)
-			cndType[name], cndState[name] = h and "srun", h
-			owner:Run(RefreshDrivers, name)
-		]]):format(safequote(name)), name)
-		SetExternalShadow(name, hint)
+		return core:DeferExecute(function() self:SetExternalConditional(name, handler, hint) end, name)
 	end
+	core:SetFrameRef("ExternalConditional-frame", handler)
+	core:Execute(([[ local name, h = %s, self:GetFrameRef('ExternalConditional-frame')
+		self:SetAttribute("frameref-ExternalConditional-frame", nil)
+		cndType[name], cndState[name] = h and "srun", h
+		owner:Run(RefreshDrivers, name)
+	]]):format(safequote(name)), name)
+	SetExternalShadow(name, hint)
+end
+function api:SetNonSecureConditional(name, handler)
+	assert(type(name) == "string" and type(handler) == "function", 'Syntax: Kindred:SetNonSecureConditional("name", handlerFunc)')
+	if InCombatLockdown() then
+		return core:DeferExecute(function() self:SetNonSecureConditional(name, handler) end, name)
+	end
+	core:Execute(([[-- KR:SetNonSecureConditional
+		local name = %s
+		cndType[name], cndInsecure[name], cndState[name] = "irun", true
+		owner:Run(RefreshDrivers, name)
+	]]):format(safequote(name)), name)
+	SetExternalShadow(name, handler)
 end
 function api:SetAliasConditional(name, aliasFor)
 	assert(type(name) == "string" and type(aliasFor) == "string", 'Syntax: Kindred:SetAliasConditional("name", "aliasFor")')

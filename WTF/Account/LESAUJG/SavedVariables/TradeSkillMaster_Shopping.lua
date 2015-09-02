@@ -324,7 +324,7 @@ TradeSkillMaster_ShoppingDB = {
 			"Arcane Dust/exact/x35", -- [99]
 			"Void Crystal/exact/x4", -- [100]
 		},
-		["sidebarBtn"] = 2,
+		["sidebarBtn"] = 3,
 	},
 	["profiles"] = {
 		["Sanjuri - Sisters of Elune"] = {

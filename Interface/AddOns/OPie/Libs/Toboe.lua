@@ -32,6 +32,15 @@ end
 E.MAX_ACCOUNT_MACROS = 120
 do -- Macro icons and file data
 	local tex = tip:CreateTexture()
+	local function resolveIcon(i, ...)
+		if type(i) == "number" then
+			return (tex:SetToFileData(i) and nil) or (tex:GetTexture() or "Temp"):match("[^\\]+$"), ...
+		end
+		return i, ...
+	end
+	function E.GetEquipmentSetInfoByName(...)
+		return resolveIcon(GetEquipmentSetInfoByName(...))
+	end
 	local function wrap(f)
 		return function(t)
 			local fi, t = (t and #t or 0), f(t)
