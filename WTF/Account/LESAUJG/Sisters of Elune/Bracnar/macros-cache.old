@@ -8,6 +8,7 @@ VER 3 0100000000000057 "_Chimaera Shot" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0100000000000056 "_Kill Shot" "INV_MISC_QUESTIONMARK"
 /stopcasting
+/stopcasting
 /cast Kill Shot
 END
 VER 3 010000000000000E "_Pet Attack/Foll" "Ability_Druid_ChallangingRoar"
@@ -48,6 +49,7 @@ VER 3 0100000000000054 "Pet_stuff" "INV_Misc_QuestionMark"
 END
 VER 3 0100000000000055 "Rapid Fire" "INV_MISC_QUESTIONMARK"
 /cast Rapid Fire
+/use Tabard of the Protector
 /use 13
 /use 14
 /castsequence reset=combat/10 Rapid Fire, null

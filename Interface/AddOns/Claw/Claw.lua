@@ -1,3 +1,6 @@
+-- 6.2.0-05
+-- Fixed bug in management of t17 set pieces
+
 -- 6.2.0-04
 -- Fixed bug in the APL that could delay a Rip for too long
 -- Now working correctly if more than one feral is attacking the same target
@@ -536,7 +539,7 @@ local function DetermineAbilityCat()
 	elseif tier18_4pc and OmenOfClarity:up() and Thrash:remains() < 4.5 and ComboPoints() + Bloodtalons:stack() ~= 6 then
 		return Thrash
 	-- actions+=/thrash_cat,cycle_targets=1,if=remains<4.5&(spell_targets.thrash_cat>=2&set_bonus.tier17_2pc|spell_targets.thrash_cat>=4)
-	elseif Thrash:remains() < 4.5 and (Enemies() >= 2 and tier17_pc or Enemies() >= 4) then
+	elseif Thrash:remains() < 4.5 and (Enemies() >= 2 and tier17_2pc or Enemies() >= 4) then
 		return Thrash
 	end
 	
@@ -931,7 +934,7 @@ function events:PLAYER_EQUIPMENT_CHANGED()
 	local tier17_items = {115540, 115541, 115542, 115543, 115544}
 	local tier18_items = {124246, 124255, 124261, 124267, 124272}
 
-	for _, itemID in ipairs(tier18_items) do
+	for _, itemID in ipairs(tier17_items) do
 		if IsEquippedItem(itemID) then
 			count = count + 1
 		end
@@ -1263,7 +1266,7 @@ function SlashCmdList.Claw(msg, editbox)
 		print('  /claw locked |cFF00C000on|r/|cFFC00000off|r - lock the Claw UI so that it can\'t be moved')
 		print('  /claw scale |cFFFFD000prev|r/|cFFFFD000main|r/|cFFFFD000cd|r/|cFFFFD000interrupt|r |cFFFFD000[number]|r - adjust the scale of the Claw UI icons')
 		print('  /claw alpha |cFFFFD000[percent]|r - adjust the transparency of the Claw UI icons')
-		print('  /claw frequency |cFFFFD000[number]|r - set the calculation frequency (default is every 0.05 seconds)')
+		print('  /claw frequency |cFFFFD000[number]|r - set the calculation frequency')
 		print('  /claw glow |cFFFFD000main|r/|cFFFFD000cd|r/|cFFFFD000interrupt|r/|cFFFFD000blizzard|r |cFF00C000on|r/|cFFC00000off|r - glowing ability buttons on action bars')
 		print('  /claw previous |cFF00C000on|r/|cFFC00000off|r - previous ability icon')
 		print('  /claw always |cFF00C000on|r/|cFFC00000off|r - show the Claw UI without a target')

@@ -43,6 +43,12 @@ VER 3 010000000000000B "Swiftmend" "INV_Misc_QuestionMark"
 #showtooltip
 /cast [@mouseover,exists,nodead,help,][exists,nodead,help][@player] Swiftmend
 END
+VER 3 010000000000000F "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1DH[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000010 "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Uld[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
 VER 3 010000000000000C "Wild Growth" "INV_Misc_QuestionMark"
 #showtooltip
 /cast [@mouseover,exists,nodead,help,][exists,nodead,help][@player] Wild Growth

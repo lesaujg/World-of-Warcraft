@@ -1824,6 +1824,9 @@ local CreateMissionButton do
 				GameTooltip:AddLine(self.tooltipTitle)
 				GameTooltip:AddLine(self.tooltipText, 1,1,1,1)
 				GameTooltip:Show()
+				if self.tooltipTitle == GARRISON_REWARD_MONEY then
+					G.SetCurrencyTraitTip(GameTooltip, 0)
+				end
 			elseif self.currencyID then
 				GameTooltip:SetOwner(self, "ANCHOR_TOPRIGHT")
 				GameTooltip:SetCurrencyByID(self.currencyID)
@@ -3326,6 +3329,11 @@ do -- Ships
 				end
 			end
 		end
+		hooksecurefunc("GarrisonShipyardMapMission_UpdateTooltipSize", function(self)
+			if tipGroup:IsVisible() then
+				GarrisonShipyardMapMissionTooltip:SetHeight(self:GetHeight() + tipGroup:GetHeight()+12)
+			end
+		end)
 	end
 	local function UpdateShipMissionMap()
 		local self = GarrisonShipyardFrame.MissionTab.MissionList

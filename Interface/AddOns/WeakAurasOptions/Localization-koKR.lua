@@ -103,21 +103,21 @@ L["Creating options: "] = "옵션 생성:"
 L["Crop X"] = "X 자르기"
 L["Crop Y"] = "Y 자르기"
 L["Crusader"] = "성전사"
-L["Custom Code"] = "개인추가 코드"
-L["Custom Trigger"] = "개인추가 조건"
-L["Custom trigger event tooltip"] = [=[개인추가 조건을 체크할 이벤트를 선택하세요.
+L["Custom Code"] = "사용자 설정 코드"
+L["Custom Trigger"] = "사용자 설정 조건"
+L["Custom trigger event tooltip"] = [=[사용자 설정 조건을 체크할 이벤트를 선택하세요.
 콤마와 공백을 사용해 여러 이벤트를 선택할 수 있습니다.
 
 |cFF4444FF예제:|r
 UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
-L["Custom trigger status tooltip"] = [=[개인추가 조건을 체크할 이벤트를 선택하세요.
+L["Custom trigger status tooltip"] = [=[사용자 설정 조건을 체크할 이벤트를 선택하세요.
 상태 형식 조건이면, 특정 이벤트는 독립 변수없이 WeakAuras에 의해 불러와집니다.
 콤마와 공백을 사용해 여러 이벤트를 선택할 수 있습니다.
 
 |cFF4444FF예제:|r
 UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
-L["Custom Untrigger"] = "개인추가 비활성 조건"
-L["Custom untrigger event tooltip"] = [=[개인추가 숨김 조건을 체크할 이벤트를 선택하세요.
+L["Custom Untrigger"] = "사용자 설정 비활성 조건"
+L["Custom untrigger event tooltip"] = [=[사용자 설정 숨김 조건을 체크할 이벤트를 선택하세요.
 발생 조건과 다른 이벤트도 상관 없습니다.
 콤마와 공백을 사용해 여러 이벤트를 선택할 수 있습니다.
 
@@ -142,7 +142,7 @@ L["Display Text"] = "디스플레이 텍스트"
 L["Distribute Horizontally"] = "가로로 퍼뜨리기"
 L["Distribute Vertically"] = "세로로 퍼뜨리기"
 L["Do not copy any settings"] = "설정을 복사하지 않음"
-L["Do not group this display"] = "이 디스플레이 그룹하지 않음"
+L["Do not group this display"] = "이 디스플레이 그룹화하지 않음"
 L["Duplicate"] = "복사"
 L["Duration Info"] = "지속시간 정보"
 L["Duration (s)"] = "지속시간 (s)"
@@ -154,7 +154,7 @@ L["Dynamic text tooltip"] = [=[이 텍스트를 유동적으로 만들 수 있�
 |cFFFF0000%n|r - 이름 - 디스플레이의 이름 (보통 오라 이름), 또는 유동적 이름이 없을 때 디스플레이의 ID
 |cFFFF0000%i|r - 아이콘 - 디스플레이와 연관된 아이콘
 |cFFFF0000%s|r - 중첩 - 오라의 중첩 횟수 (보통)
-|cFFFF0000%c|r - 개인추가 - 표시될 string 값을 반환하는 개인 Lua function 정의를 허용합니다]=]
+|cFFFF0000%c|r - 사용자 설정 - 표시할 string 값을 반환하는 사용자 설정 Lua 함수 정의를 허용합니다]=]
 L["Enabled"] = "활성화됨"
 L["Enter an aura name, partial aura name, or spell id"] = "오라 이름 / 오라의 부분 이름 / 주문ID를 입력하세요,"
 L["Event Type"] = "이벤트 유형"
@@ -220,8 +220,8 @@ L["Main"] = "메인"
 L["Main Trigger"] = "메인 조건"
 L["Mana (%)"] = "마나 (%)"
 L["Manage displays defined by Addons"] = "애드온에 의해 정의된 디스플레이 관리"
-L["Message Prefix"] = "메세지 접두사"
-L["Message Suffix"] = "메세지 접미사"
+L["Message Prefix"] = "메시지 접두사"
+L["Message Suffix"] = "메시지 접미사"
 L["Metamorphosis"] = "탈태"
 L["Mirror"] = "거울효과"
 L["Model"] = "모델"
@@ -238,7 +238,7 @@ L["Multiselect multiple tooltip"] = [=[|cFF777777무시|r - |cFF777777단일|r -
 선택한 것중 하나라도 일치할 때 불러옴]=]
 L["Multiselect single tooltip"] = [=[|cFF777777무시|r - |cFF00FF00단일|r - |cFF777777다중|r
 선택한 한가지만 일치할 때 불러옴]=]
-L["Must be spelled correctly!"] = "정확한 주문이어야 합니다!"
+L["Must be spelled correctly!"] = "철자가 정확해야 합니다!"
 L["Name Info"] = "이름 정보"
 -- L["Negator"] = ""
 L["New"] = "새로 만들기"

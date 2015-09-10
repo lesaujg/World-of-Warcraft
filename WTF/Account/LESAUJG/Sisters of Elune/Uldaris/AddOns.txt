@@ -150,3 +150,6 @@ DBM-GarrisonInvasions: enabled
 DBM-HellfireCitadel: enabled
 DBM-Party-Classic: enabled
 premade-filter: disabled
+TidyPlates: disabled
+PGFinder: disabled
+LFGFilter: disabled

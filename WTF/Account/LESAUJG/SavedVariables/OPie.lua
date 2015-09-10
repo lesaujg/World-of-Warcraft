@@ -8,12 +8,39 @@ OneRing_Config = {
 		["default"] = {
 			["ClickActivation"] = true,
 			["Bindings"] = {
+				["Pets"] = "ALT-W",
 				["sefulItems"] = "ALT-E",
 			},
 		},
 	},
 	["PersistentStorage"] = {
 		["RingKeeper"] = {
+			["Pets"] = {
+				{
+					["sliceToken"] = "ABueyhiySOd",
+					["id"] = 883,
+				}, -- [1]
+				{
+					["sliceToken"] = "ABueyhiySO3",
+					["id"] = 83242,
+				}, -- [2]
+				{
+					["sliceToken"] = "ABueyhiySOs",
+					["id"] = 83243,
+				}, -- [3]
+				{
+					["sliceToken"] = "ABueyhiySOa",
+					["id"] = 83244,
+				}, -- [4]
+				{
+					["sliceToken"] = "ABueyhiySOp",
+					["id"] = 83245,
+				}, -- [5]
+				["limit"] = "Bracnar",
+				["save"] = true,
+				["hotkey"] = "ALT-W",
+				["name"] = "Pets",
+			},
 			["OPieFlagStore"] = {
 				["FlushedDefaultColors"] = true,
 			},
@@ -43,10 +70,10 @@ OneRing_Config = {
 					113543, -- [2]
 					["sliceToken"] = "ABuey13UZ3p",
 				}, -- [5]
-				["name"] = "Useful Items",
+				["limit"] = "Bracnar",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["limit"] = "Bracnar",
+				["name"] = "Useful Items",
 			},
 		},
 	},
