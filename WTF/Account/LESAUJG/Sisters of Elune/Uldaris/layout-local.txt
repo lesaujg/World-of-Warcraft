@@ -1,6 +1,6 @@
 Version: 1
 Frame: BaudManifestDisplay1
-FrameLevel: 35
+FrameLevel: 34
 Anchor: TOPRIGHT
 X: -85
 Y: -27
@@ -21,10 +21,10 @@ Y: -123
 W: 32
 H: 32
 Frame: TSMMainFrame1
-FrameLevel: 9
-Anchor: BOTTOMRIGHT
-X: 0
-Y: 18
+FrameLevel: 40
+Anchor: BOTTOM
+X: 34
+Y: -36
 W: 985
 H: 679
 Frame: _NPCScanButton
