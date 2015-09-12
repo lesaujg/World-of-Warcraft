@@ -8,9 +8,9 @@ TukuiData = {
 			["Herbinator"] = 5475115,
 			["Galinar"] = 47291627,
 			["Belrath"] = 98013973,
-			["Uldaris"] = 527527190,
+			["Uldaris"] = 512527190,
 			["Sanjuri"] = 11460,
-			["Clothgar"] = 1787514013,
+			["Clothgar"] = 1878189953,
 		},
 	},
 	["Sisters of Elune"] = {
