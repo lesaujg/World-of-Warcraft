@@ -14,7 +14,7 @@ MasterPlanAG = {
 		},
 		["Uldaris"] = {
 			["cacheSize"] = 750,
-			["lastCacheTime"] = 1442054241,
+			["lastCacheTime"] = 1442149231,
 		},
 		["Ghiaccioli"] = {
 		},

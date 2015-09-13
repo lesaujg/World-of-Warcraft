@@ -35,7 +35,7 @@ TradeSkillMaster_AuctioningDB = {
 			},
 			["scrollvalue"] = 0,
 			["treesizable"] = true,
-			["selected"] = "3Sell Medallion of the Legion",
+			["selected"] = 1,
 			["treewidth"] = 175,
 			["fullwidth"] = 944.999938964844,
 		},
