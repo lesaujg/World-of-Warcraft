@@ -1,16 +1,5 @@
 
 TradeSkillMaster_ShoppingDB = {
-	["profileKeys"] = {
-		["Sanjuri - Sisters of Elune"] = "Sanjuri - Sisters of Elune",
-		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
-		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
-		["Mandelbrot - Sisters of Elune"] = "Mandelbrot - Sisters of Elune",
-		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
-		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
-		["Herbinator - Sisters of Elune"] = "Herbinator - Sisters of Elune",
-		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
-		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
-	},
 	["global"] = {
 		["favoriteSearches"] = {
 			"temporal crystal/exact", -- [1]
@@ -22,6 +11,108 @@ TradeSkillMaster_ShoppingDB = {
 			"draenic dust/exact", -- [7]
 			"sorcerous air/exact", -- [8]
 			"miscellaneous/mount", -- [9]
+		},
+		["previousSearches"] = {
+			"water", -- [1]
+			"heartb", -- [2]
+			"hearthb", -- [3]
+			"Cinderbloom/exact/x1", -- [4]
+			"Elixir of Impossible Accuracy/exact/x1", -- [5]
+			"Abyss Crystal/exact/x14", -- [6]
+			"Sungrass/exact/x3", -- [7]
+			"Saronite Bar/exact/x16", -- [8]
+			"Infinite Dust/exact/x65", -- [9]
+			"Fel Lotus/exact/x1", -- [10]
+			"universal", -- [11]
+			"arcane c", -- [12]
+			"temporal crystal/exact", -- [13]
+			"bone", -- [14]
+			"Warm Arcane Crystal/exact", -- [15]
+			"Sorcerous Water/exact", -- [16]
+			"raw beast", -- [17]
+			"miscellaneous/mount", -- [18]
+			"Greater Draenic Agility Flask/exact", -- [19]
+			"weed", -- [20]
+			"critical strike", -- [21]
+			"fireweed", -- [22]
+			"auction con", -- [23]
+			"super cooling", -- [24]
+			"cyclical", -- [25]
+			"aution con", -- [26]
+			"module", -- [27]
+			"luminous shard/exact", -- [28]
+			"Small Radiant Shard/exact", -- [29]
+			"Small Radiant Shard/exact/x2", -- [30]
+			"Sha Crystal/exact", -- [31]
+			"Sha Crystal/exact/x8", -- [32]
+			"Maelstrom Crystal/exact", -- [33]
+			"Maelstrom Crystal/exact/x3", -- [34]
+			"Lesser Cosmic Essence/exact", -- [35]
+			"Lesser Cosmic Essence/exact/x2", -- [36]
+			"Essence of Undeath", -- [37]
+			"Essence of Undeath/exact/x5", -- [38]
+			"breath", -- [39]
+			"hexweave Bag", -- [40]
+			"hide", -- [41]
+			"leather", -- [42]
+			"savage leather", -- [43]
+			"Temporal Crystal/exact/x132", -- [44]
+			"Temporal Crystal/exact/x52", -- [45]
+			"Temporal Crystal/exact/x88", -- [46]
+			"Temporal Crystal/exact/x145", -- [47]
+			"Temporal Crystal/exact/x50", -- [48]
+			"Sha Crystal/exact/x18", -- [49]
+			"Mysterious Essence/exact/x4", -- [50]
+			"Lesser Eternal Essence/exact/x2", -- [51]
+			"Infinite Dust/exact/x11", -- [52]
+			"Greater Nether Essence/exact/x2", -- [53]
+			"Abyssal Gulper Eel Flesh/exact", -- [54]
+			"Crescent Saberfish Flesh/exact", -- [55]
+			"Sea Scorpion Segment/exact", -- [56]
+			"felb", -- [57]
+			"Sha Crystal/exact/x29", -- [58]
+			"Heavenly Shard/exact/x8", -- [59]
+			"Mysterious Essence/exact/x8", -- [60]
+			"Large Prismatic Shard/exact/x8", -- [61]
+			"Infinite Dust/exact/x6", -- [62]
+			"Sha Crystal/exact/x40", -- [63]
+			"sorcerous air/exact", -- [64]
+			"flytrap", -- [65]
+			"gor", -- [66]
+			"raw beastr", -- [67]
+			"sorcerous", -- [68]
+			"Sha Crystal/exact/x30", -- [69]
+			"Righteous Orb/exact", -- [70]
+			"Righteous Orb/exact/x1", -- [71]
+			"Heavenly Shard/exact/x3", -- [72]
+			"felb?", -- [73]
+			"Sha Crystal/exact/x20", -- [74]
+			"Small Radiant Shard/exact/x4", -- [75]
+			"Sha Crystal/exact/x10", -- [76]
+			"Adamantite Bar/exact/x16", -- [77]
+			"Khorium Power Core/exact/x8", -- [78]
+			"Hula Girl Doll/exact/x1", -- [79]
+			"Felsteel Stabilizer/exact/x8", -- [80]
+			"Adamantite Frame/exact/x4", -- [81]
+			"True Iron Ore/exact", -- [82]
+			"Blackrock Ore/exact", -- [83]
+			"Elixir of Major Strength/exact/x3", -- [84]
+			"Luminous Shard/exact/x7", -- [85]
+			"Arcane Dust/exact", -- [86]
+			"Arcane Dust/exact/x37", -- [87]
+			"Taladite Firing Pin/exact", -- [88]
+			"felbl", -- [89]
+			"Void Crystal/exact", -- [90]
+			"Void Crystal/exact/x6", -- [91]
+			"Large Prismatic Shard/exact", -- [92]
+			"Large Prismatic Shard/exact/x1", -- [93]
+			"Arcane Dust/exact/x2", -- [94]
+			"Abyss Crystal/exact/x2", -- [95]
+			"legion", -- [96]
+			"Sha Crystal/exact/x12", -- [97]
+			"Mysterious Essence/exact", -- [98]
+			"Mysterious Essence/exact/x15", -- [99]
+			"Ethereal Shard/exact", -- [100]
 		},
 		["destroyingTargetItems"] = {
 			["item:36926:0:0:0:0:0:0"] = "Shadow Crystal",
@@ -110,59 +201,59 @@ TradeSkillMaster_ShoppingDB = {
 			["item:79255:0:0:0:0:0:0"] = "Starlight Ink",
 			["item:1529:0:0:0:0:0:0"] = "Jade",
 			["item:37101:0:0:0:0:0:0"] = "Ivory Ink",
-			["item:52190:0:0:0:0:0:0"] = "Inferno Ruby",
+			["item:74252:0:0:0:0:0:0"] = "Small Ethereal Shard",
 			["item:11083:0:0:0:0:0:0"] = "Soul Dust",
 			["item:23438:0:0:0:0:0:0"] = "Star of Elune",
-			["item:16202:0:0:0:0:0:0"] = "Lesser Eternal Essence",
-			["item:52718:0:0:0:0:0:0"] = "Lesser Celestial Essence",
+			["item:12799:0:0:0:0:0:0"] = "Large Opal",
+			["item:22574:0:0:0:0:0:0"] = "Mote of Fire",
 			["item:113111:0:0:0:0:0:0"] = "Warbinder's Ink",
 			["item:37704:0:0:0:0:0:0"] = "Crystallized Life",
 			["item:79254:0:0:0:0:0:0"] = "Ink of Dreams",
-			["item:22573:0:0:0:0:0:0"] = "Mote of Earth",
+			["item:3864:0:0:0:0:0:0"] = "Citrine",
 			["item:39341:0:0:0:0:0:0"] = "Silvery Pigment",
 			["item:818:0:0:0:0:0:0"] = "Tigerseye",
-			["item:34054:0:0:0:0:0:0"] = "Infinite Dust",
+			["item:23077:0:0:0:0:0:0"] = "Blood Garnet",
 			["item:52193:0:0:0:0:0:0"] = "Ember Topaz",
 			["item:43120:0:0:0:0:0:0"] = "Celestial Ink",
 			["item:23112:0:0:0:0:0:0"] = "Golden Draenite",
 			["item:34056:0:0:0:0:0:0"] = "Lesser Cosmic Essence",
-			["item:22447:0:0:0:0:0:0"] = "Lesser Planar Essence",
 			["item:11174:0:0:0:0:0:0"] = "Lesser Nether Essence",
+			["item:43127:0:0:0:0:0:0"] = "Snowfall Ink",
 			["item:52195:0:0:0:0:0:0"] = "Amberjewel",
-			["item:22445:0:0:0:0:0:0"] = "Arcane Dust",
-			["item:52194:0:0:0:0:0:0"] = "Demonseye",
+			["item:34057:0:0:0:0:0:0"] = "Abyss Crystal",
+			["item:52722:0:0:0:0:0:0"] = "Maelstrom Crystal",
 			["item:43116:0:0:0:0:0:0"] = "Lion's Ink",
 			["item:12800:0:0:0:0:0:0"] = "Azerothian Diamond",
-			["item:11175:0:0:0:0:0:0"] = "Greater Nether Essence",
-			["item:20725:0:0:0:0:0:0"] = "Nexus Crystal",
 			["item:76136:0:0:0:0:0:0"] = "Pandarian Garnet",
+			["item:20725:0:0:0:0:0:0"] = "Nexus Crystal",
+			["item:11175:0:0:0:0:0:0"] = "Greater Nether Essence",
 			["item:36929:0:0:0:0:0:0"] = "Huge Citrine",
 			["item:113588:0:0:0:0:0:0"] = "Temporal Crystal",
 			["item:14343:0:0:0:0:0:0"] = "Small Brilliant Shard",
-			["item:43123:0:0:0:0:0:0"] = "Ink of the Sky",
+			["item:43119:0:0:0:0:0:0"] = "Royal Ink",
 			["item:52180:0:0:0:0:0:0"] = "Nightstone",
 			["item:52191:0:0:0:0:0:0"] = "Ocean Sapphire",
-			["item:36924:0:0:0:0:0:0"] = "Sky Sapphire",
-			["item:36917:0:0:0:0:0:0"] = "Bloodstone",
-			["item:115504:0:0:0:0:0:0"] = "Fractured Temporal Crystal",
-			["item:36860:0:0:0:0:0:0"] = "Eternal Fire",
-			["item:11084:0:0:0:0:0:0"] = "Large Glimmering Shard",
+			["item:39469:0:0:0:0:0:0"] = "Moonglow Ink",
+			["item:52721:0:0:0:0:0:0"] = "Heavenly Shard",
+			["item:22452:0:0:0:0:0:0"] = "Primal Earth",
 			["item:43115:0:0:0:0:0:0"] = "Hunter's Ink",
-			["item:61978:0:0:0:0:0:0"] = "Blackfallow Ink",
+			["item:11084:0:0:0:0:0:0"] = "Large Glimmering Shard",
+			["item:36860:0:0:0:0:0:0"] = "Eternal Fire",
+			["item:74247:0:0:0:0:0:0"] = "Ethereal Shard",
 			["item:61979:0:0:0:0:0:0"] = "Ashen Pigment",
 			["item:43105:0:0:0:0:0:0"] = "Indigo Pigment",
-			["item:11139:0:0:0:0:0:0"] = "Large Glowing Shard",
-			["item:35623:0:0:0:0:0:0"] = "Eternal Air",
-			["item:1210:0:0:0:0:0:0"] = "Shadowgem",
-			["item:11135:0:0:0:0:0:0"] = "Greater Mystic Essence",
-			["item:11134:0:0:0:0:0:0"] = "Lesser Mystic Essence",
-			["item:23107:0:0:0:0:0:0"] = "Shadow Draenite",
-			["item:37701:0:0:0:0:0:0"] = "Crystallized Earth",
-			["item:37705:0:0:0:0:0:0"] = "Crystallized Water",
-			["item:10938:0:0:0:0:0:0"] = "Lesser Magic Essence",
+			["item:39342:0:0:0:0:0:0"] = "Nether Pigment",
+			["item:43125:0:0:0:0:0:0"] = "Darkflame Ink",
+			["item:76140:0:0:0:0:0:0"] = "Vermilion Onyx",
+			["item:43106:0:0:0:0:0:0"] = "Ruby Pigment",
+			["item:76133:0:0:0:0:0:0"] = "Lapis Lazuli",
+			["item:16204:0:0:0:0:0:0"] = "Illusion Dust",
+			["item:43118:0:0:0:0:0:0"] = "Jadefire Ink",
+			["item:39151:0:0:0:0:0:0"] = "Alabaster Pigment",
+			["item:34055:0:0:0:0:0:0"] = "Greater Cosmic Essence",
 			["item:16203:0:0:0:0:0:0"] = "Greater Eternal Essence",
-			["item:43122:0:0:0:0:0:0"] = "Shimmering Ink",
-			["item:36927:0:0:0:0:0:0"] = "Twilight Opal",
+			["item:37705:0:0:0:0:0:0"] = "Crystallized Water",
+			["item:61981:0:0:0:0:0:0"] = "Inferno Ink",
 			["item:43126:0:0:0:0:0:0"] = "Ink of the Sea",
 			["item:43121:0:0:0:0:0:0"] = "Fiery Ink",
 			["item:21929:0:0:0:0:0:0"] = "Flame Spessarite",
@@ -170,35 +261,35 @@ TradeSkillMaster_ShoppingDB = {
 			["item:36918:0:0:0:0:0:0"] = "Scarlet Ruby",
 			["item:37700:0:0:0:0:0:0"] = "Crystallized Air",
 			["item:10998:0:0:0:0:0:0"] = "Lesser Astral Essence",
-			["item:61981:0:0:0:0:0:0"] = "Inferno Ink",
-			["item:34055:0:0:0:0:0:0"] = "Greater Cosmic Essence",
-			["item:39151:0:0:0:0:0:0"] = "Alabaster Pigment",
-			["item:43118:0:0:0:0:0:0"] = "Jadefire Ink",
-			["item:16204:0:0:0:0:0:0"] = "Illusion Dust",
-			["item:76133:0:0:0:0:0:0"] = "Lapis Lazuli",
-			["item:43106:0:0:0:0:0:0"] = "Ruby Pigment",
-			["item:76140:0:0:0:0:0:0"] = "Vermilion Onyx",
-			["item:43125:0:0:0:0:0:0"] = "Darkflame Ink",
-			["item:39342:0:0:0:0:0:0"] = "Nether Pigment",
-			["item:74247:0:0:0:0:0:0"] = "Ethereal Shard",
+			["item:36927:0:0:0:0:0:0"] = "Twilight Opal",
+			["item:10938:0:0:0:0:0:0"] = "Lesser Magic Essence",
+			["item:43122:0:0:0:0:0:0"] = "Shimmering Ink",
+			["item:37701:0:0:0:0:0:0"] = "Crystallized Earth",
+			["item:23107:0:0:0:0:0:0"] = "Shadow Draenite",
+			["item:11134:0:0:0:0:0:0"] = "Lesser Mystic Essence",
+			["item:11135:0:0:0:0:0:0"] = "Greater Mystic Essence",
+			["item:1210:0:0:0:0:0:0"] = "Shadowgem",
+			["item:35623:0:0:0:0:0:0"] = "Eternal Air",
+			["item:11139:0:0:0:0:0:0"] = "Large Glowing Shard",
+			["item:61978:0:0:0:0:0:0"] = "Blackfallow Ink",
 			["item:76141:0:0:0:0:0:0"] = "Imperial Amethyst",
-			["item:22452:0:0:0:0:0:0"] = "Primal Earth",
-			["item:52721:0:0:0:0:0:0"] = "Heavenly Shard",
-			["item:39469:0:0:0:0:0:0"] = "Moonglow Ink",
+			["item:115504:0:0:0:0:0:0"] = "Fractured Temporal Crystal",
+			["item:36917:0:0:0:0:0:0"] = "Bloodstone",
+			["item:36924:0:0:0:0:0:0"] = "Sky Sapphire",
 			["item:23117:0:0:0:0:0:0"] = "Azure Moonstone",
 			["item:37703:0:0:0:0:0:0"] = "Crystallized Shadow",
-			["item:43119:0:0:0:0:0:0"] = "Royal Ink",
+			["item:43123:0:0:0:0:0:0"] = "Ink of the Sky",
 			["item:52181:0:0:0:0:0:0"] = "Hessonite",
 			["item:23440:0:0:0:0:0:0"] = "Dawnstone",
-			["item:52722:0:0:0:0:0:0"] = "Maelstrom Crystal",
-			["item:34057:0:0:0:0:0:0"] = "Abyss Crystal",
-			["item:43127:0:0:0:0:0:0"] = "Snowfall Ink",
-			["item:23077:0:0:0:0:0:0"] = "Blood Garnet",
-			["item:3864:0:0:0:0:0:0"] = "Citrine",
+			["item:52194:0:0:0:0:0:0"] = "Demonseye",
+			["item:22445:0:0:0:0:0:0"] = "Arcane Dust",
+			["item:22447:0:0:0:0:0:0"] = "Lesser Planar Essence",
+			["item:34054:0:0:0:0:0:0"] = "Infinite Dust",
+			["item:22573:0:0:0:0:0:0"] = "Mote of Earth",
 			["item:39338:0:0:0:0:0:0"] = "Golden Pigment",
-			["item:22574:0:0:0:0:0:0"] = "Mote of Fire",
-			["item:12799:0:0:0:0:0:0"] = "Large Opal",
-			["item:74252:0:0:0:0:0:0"] = "Small Ethereal Shard",
+			["item:52718:0:0:0:0:0:0"] = "Lesser Celestial Essence",
+			["item:16202:0:0:0:0:0:0"] = "Lesser Eternal Essence",
+			["item:52190:0:0:0:0:0:0"] = "Inferno Ruby",
 		},
 		["optionsTreeStatus"] = {
 			["groups"] = {
@@ -208,122 +299,31 @@ TradeSkillMaster_ShoppingDB = {
 				[2] = true,
 				["2Buy 40g"] = true,
 				["2Buy Clothgar"] = true,
-				["2Buy Enchants"] = true,
+				["2Buy 150g"] = true,
 				["2Buy 2g"] = true,
 				["2Buy Galinar"] = true,
 				["2Buy Herb/Ore"] = true,
 				["2Buy enchant mats"] = true,
-				["2Buy 150g"] = true,
+				["2Buy Enchants"] = true,
 			},
 			["scrollvalue"] = 0,
-			["selected"] = "2Buy Clothgar",
+			["fullwidth"] = 945,
 			["treesizable"] = true,
 			["treewidth"] = 175,
-			["fullwidth"] = 945,
-		},
-		["previousSearches"] = {
-			"universal", -- [1]
-			"arcane c", -- [2]
-			"Warm Arcane Crystal/exact", -- [3]
-			"Sorcerous Water/exact", -- [4]
-			"bone", -- [5]
-			"raw beast", -- [6]
-			"miscellaneous/mount", -- [7]
-			"Greater Draenic Agility Flask/exact", -- [8]
-			"weed", -- [9]
-			"critical strike", -- [10]
-			"fireweed", -- [11]
-			"auction con", -- [12]
-			"super cooling", -- [13]
-			"cyclical", -- [14]
-			"aution con", -- [15]
-			"module", -- [16]
-			"luminous shard/exact", -- [17]
-			"Small Radiant Shard/exact", -- [18]
-			"Small Radiant Shard/exact/x2", -- [19]
-			"Sha Crystal/exact", -- [20]
-			"Sha Crystal/exact/x8", -- [21]
-			"Maelstrom Crystal/exact", -- [22]
-			"Maelstrom Crystal/exact/x3", -- [23]
-			"Lesser Cosmic Essence/exact", -- [24]
-			"Lesser Cosmic Essence/exact/x2", -- [25]
-			"Essence of Undeath", -- [26]
-			"Essence of Undeath/exact/x5", -- [27]
-			"breath", -- [28]
-			"temporal crystal/exact", -- [29]
-			"hexweave Bag", -- [30]
-			"hide", -- [31]
-			"leather", -- [32]
-			"savage leather", -- [33]
-			"Temporal Crystal/exact/x132", -- [34]
-			"Temporal Crystal/exact/x52", -- [35]
-			"Temporal Crystal/exact/x88", -- [36]
-			"Temporal Crystal/exact/x145", -- [37]
-			"Temporal Crystal/exact/x50", -- [38]
-			"Sha Crystal/exact/x18", -- [39]
-			"Mysterious Essence/exact/x4", -- [40]
-			"Lesser Eternal Essence/exact/x2", -- [41]
-			"Infinite Dust/exact/x11", -- [42]
-			"Greater Nether Essence/exact/x2", -- [43]
-			"Abyssal Gulper Eel Flesh/exact", -- [44]
-			"Crescent Saberfish Flesh/exact", -- [45]
-			"Sea Scorpion Segment/exact", -- [46]
-			"felb", -- [47]
-			"Sha Crystal/exact/x29", -- [48]
-			"Heavenly Shard/exact/x8", -- [49]
-			"Mysterious Essence/exact/x8", -- [50]
-			"Large Prismatic Shard/exact/x8", -- [51]
-			"Infinite Dust/exact/x6", -- [52]
-			"Sha Crystal/exact/x40", -- [53]
-			"sorcerous air/exact", -- [54]
-			"flytrap", -- [55]
-			"gor", -- [56]
-			"raw beastr", -- [57]
-			"sorcerous", -- [58]
-			"Sha Crystal/exact/x30", -- [59]
-			"Righteous Orb/exact", -- [60]
-			"Righteous Orb/exact/x1", -- [61]
-			"Heavenly Shard/exact/x3", -- [62]
-			"felb?", -- [63]
-			"Sha Crystal/exact/x20", -- [64]
-			"Small Radiant Shard/exact/x4", -- [65]
-			"Sha Crystal/exact/x10", -- [66]
-			"Adamantite Bar/exact/x16", -- [67]
-			"Khorium Power Core/exact/x8", -- [68]
-			"Hula Girl Doll/exact/x1", -- [69]
-			"Felsteel Stabilizer/exact/x8", -- [70]
-			"Adamantite Frame/exact/x4", -- [71]
-			"True Iron Ore/exact", -- [72]
-			"Blackrock Ore/exact", -- [73]
-			"Elixir of Major Strength/exact/x3", -- [74]
-			"Luminous Shard/exact/x7", -- [75]
-			"Arcane Dust/exact", -- [76]
-			"Arcane Dust/exact/x37", -- [77]
-			"Taladite Firing Pin/exact", -- [78]
-			"felbl", -- [79]
-			"Void Crystal/exact", -- [80]
-			"Void Crystal/exact/x6", -- [81]
-			"Large Prismatic Shard/exact", -- [82]
-			"Large Prismatic Shard/exact/x1", -- [83]
-			"Arcane Dust/exact/x2", -- [84]
-			"Abyss Crystal/exact/x2", -- [85]
-			"legion", -- [86]
-			"Sha Crystal/exact/x12", -- [87]
-			"Mysterious Essence/exact", -- [88]
-			"Mysterious Essence/exact/x15", -- [89]
-			"Ethereal Shard/exact", -- [90]
-			"Ethereal Shard/exact/x19", -- [91]
-			"Sha Crystal/exact/x13", -- [92]
-			"Ethereal Shard/exact/x22", -- [93]
-			"Essence of Air/exact/x1", -- [94]
-			"Arcane Dust/exact/x14", -- [95]
-			"Arcane Dust/exact/x1", -- [96]
-			"Essence of Air/exact/x2", -- [97]
-			"Arcane Dust/exact/x20", -- [98]
-			"Illusion Dust/exact/x2", -- [99]
-			"Arcane Dust/exact/x13", -- [100]
+			["selected"] = "2Buy Clothgar",
 		},
 		["sidebarBtn"] = 2,
+	},
+	["profileKeys"] = {
+		["Sanjuri - Sisters of Elune"] = "Sanjuri - Sisters of Elune",
+		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
+		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
+		["Mandelbrot - Sisters of Elune"] = "Mandelbrot - Sisters of Elune",
+		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
+		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
+		["Herbinator - Sisters of Elune"] = "Herbinator - Sisters of Elune",
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
 	},
 	["profiles"] = {
 		["Sanjuri - Sisters of Elune"] = {
@@ -336,13 +336,13 @@ TradeSkillMaster_ShoppingDB = {
 		},
 		["Belrath - Sisters of Elune"] = {
 		},
-		["Uldaris - Sisters of Elune"] = {
+		["Clothgar - Sisters of Elune"] = {
 		},
 		["Herbinator - Sisters of Elune"] = {
 		},
 		["Bracnar - Sisters of Elune"] = {
 		},
-		["Clothgar - Sisters of Elune"] = {
+		["Uldaris - Sisters of Elune"] = {
 		},
 	},
 }
