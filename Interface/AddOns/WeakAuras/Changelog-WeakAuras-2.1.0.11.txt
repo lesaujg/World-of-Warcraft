@@ -1,0 +1,15 @@
+tag 2.1.0.11
+2056275f94e22ee9c3de248d415cd330019c4e70
+Benjamin Staneck <staneck@gmail.com>
+2015-09-10 13:54:11 +0200
+
+
+
+--------------------
+
+Benjamin Staneck:
+	- More work on the frame level issue
+	From the feedback I got, the workaround in the FixGroupChildrenOrder() call is not enough. So we now set the frameLevel to zero before increasing it one by
+	one and also apply the double SetFrameLevel() workaround in all the other
+	places where we have been using it.
+	- Instead of using the Jack Input font (when it is available) we now use the Fira Mono font (when it is available)

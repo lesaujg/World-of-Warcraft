@@ -50,6 +50,10 @@ function LM_PlayerMounts:ScanMounts()
     self:AddJournalMounts()
     self:AddSpellMounts()
 
+    for m in self.list:Iterate() do
+        LM_Options:SeenMount(m, true)
+    end
+
     self.list:Sort()
 end
 

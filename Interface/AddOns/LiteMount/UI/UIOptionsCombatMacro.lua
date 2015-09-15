@@ -16,9 +16,9 @@ function LiteMountOptionsCombatMacro_OnLoad(self)
     self.name = MACRO .. " : " .. COMBAT
     self.title:SetText("LiteMount : " .. self.name)
 
-    self.default = function ()
-            LM_Options:SetCombatMacro(nil)
-            LM_Options:DisableCombatMacro()
+    self.default = function (self)
+            LiteMountOptionsPanel_Default(self)
+            LiteMountOptionsPanel_Refresh(self)
         end
 
     InterfaceOptions_AddCategory(self)
@@ -26,13 +26,11 @@ end
 
 function LiteMountOptionsCombatMacro_OnShow(self)
     LiteMountOptions.CurrentOptionsPanel = self
-    local m = LM_Options:GetCombatMacro()
-    if m then
-        LiteMountOptionsCombatMacroEditBox:SetText(m)
-    end
+    LiteMountOptionsPanel_Refresh(self)
 end
 
 function LiteMountOptionsCombatMacro_OnHide(self)
+    -- Currently set to combat action, refresh
     LiteMount:PostClick()
 end
 

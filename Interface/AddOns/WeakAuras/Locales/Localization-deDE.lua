@@ -38,13 +38,13 @@ L["Aura Applied"] = "Aura angewandt (AURA_APPLIED)" -- Needs review
 L["Aura Applied Dose"] = "Aura angewandt, Stack erhöht (AURA_APPLIED_DOSE)" -- Needs review
 L["Aura Broken"] = "Aura gebrochen, Nahkampf (AURA_BROKEN)"
 L["Aura Broken Spell"] = "Aura gebrochen, Zauber (AURA_BROKEN_SPELL)"
-L["Aura Name"] = "Auraname oder ID" -- Needs review
+L["Aura Name"] = "Auraname oder ID"
 L["Aura Name or ID"] = "Auraname oder ID"
 L["Aura Refresh"] = "Aura erneuert (AURA_REFRESH)"
 L["Aura Removed"] = "Aura entfernt (AURA_REMOVED)"
 L["Aura Removed Dose"] = "Aura entfernt, Stack verringert (AURA_REMOVED_DOSE)"
 L["Auras:"] = "Auren:"
-L["Aura Stack"] = "Aurastapel" -- Needs review
+L["Aura Stack"] = "Aurastapel"
 L["Aura Type"] = "Auratyp"
 L["Automatic"] = "Automatisch"
 L["Back and Forth"] = "Vor und zurück"
@@ -142,7 +142,7 @@ L["Eclipse Direction"] = "Finsternisausrichtung"
 L["Eclipse Power"] = "Finsternisenergie"
 L["Eclipse Type"] = "Finsternistyp"
 L["Emote"] = "Emote"
-L["Encounter ID"] = "Boss ID" -- Needs review
+L["Encounter ID"] = "Boss-ID"
 L["EncounterID List"] = [=[Aktuelle Raid Tier IDs:
 
 Hellfire Citadel:
@@ -350,24 +350,24 @@ L["Requested display not authorized"] = "Angeforderte Anzeige ist nicht autorisi
 L["Require Valid Target"] = "Erfordert gültiges Ziel"
 L["Resist"] = "Widerstehen" -- Needs review
 L["Resisted"] = "Widerstanden (RESISTED)" -- Needs review
-L["Resolve collisions dialog"] = [=[Ein externes Addon definiert |cFF8800FFWeakAuras|r-Anzeigen die den selben Namen besitzten wie bereits existierende Anzeigen.
+L["Resolve collisions dialog"] = [=[Ein externes Addon definiert |cFF8800FFWeakAuras|r-Anzeigen, die den selben Namen besitzen wie bereits existierende Anzeigen.
+
+|cFF8800FFWeakAuras|r-Anzeigen müssen umbenannt werden, um Platz für die externen Anzeigen zu machen.
+
+Gelöst: |cFFFF0000]=] -- Needs review
+L["Resolve collisions dialog singular"] = [=[Ein externes Addon definiert eine |cFF8800FFWeakAuras|r-Anzeige, die den selben Namen besitzt wie eine bereits existierende Anzeige.
+
+|cFF8800FFWeakAuras|r-Anzeige muss umbenannt werden, um Platz für die externe Anzeige zu machen.
+
+Gelöst: |cFFFF0000]=] -- Needs review
+L["Resolve collisions dialog startup"] = [=[Ein externes Addon definiert |cFF8800FFWeakAuras|r-Anzeigen, die den selben Namen besitzen wie bereits existierende Anzeigen.
 
 |cFF8800FFWeakAuras|r-Anzeigen müssen umbenannt werden um Platz für die externen Anzeigen zu machen.
 
 Gelöst: |cFFFF0000]=] -- Needs review
-L["Resolve collisions dialog singular"] = [=[Ein externes Addon definiert eine |cFF8800FFWeakAuras|r-Anzeige die den selben Namen besitzten wie eine bereits existierende Anzeige.
+L["Resolve collisions dialog startup singular"] = [=[Ein externes Addon definiert eine |cFF8800FFWeakAuras|r-Anzeige, die den selben Namen besitzt wie bereits existierende Anzeigen.
 
-|cFF8800FFWeakAuras|r-Anzeige muss umbenannt werden um Platz für die externe Anzeige zu machen.
-
-Gelöst: |cFFFF0000]=] -- Needs review
-L["Resolve collisions dialog startup"] = [=[Ein externes Addon definiert |cFF8800FFWeakAuras|r-Anzeigen die den selben Namen besitzten wie bereits existierende Anzeigen.
-
-|cFF8800FFWeakAuras|r-Anzeigen müssen umbenannt werden um Platz für die externen Anzeigen zu machen.
-
-Gelöst: |cFFFF0000]=] -- Needs review
-L["Resolve collisions dialog startup singular"] = [=[Ein externes Addon definiert eine |cFF8800FFWeakAuras|r-Anzeige die den selben Namen besitzten wie eine bereits existierende Anzeige.
-
-|cFF8800FFWeakAuras|r-Anzeige muss umbenannt werden um Platz für die externe Anzeige zu machen.
+|cFF8800FFWeakAuras|r-Anzeige muss umbenannt werden, um Platz für die externe Anzeige zu machen.
 
 Gelöst: |cFFFF0000]=] -- Needs review
 L["Resting"] = "Erholen"
@@ -474,7 +474,7 @@ L["Whisper"] = "Flüstern"
 L["Wobble"] = "Wackeln"
 L["Yell"] = "Schreien"
 L["Zone"] = "Zone"
-L["Zone ID"] = "Zonen-ID" -- Needs review
+L["Zone ID"] = "Zonen-ID"
 
 
 

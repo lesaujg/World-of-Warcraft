@@ -1,6 +1,6 @@
 ## Interface: 60200
 ## Title: Factionizer |cFFFFA0A0by A_Nolan|r
-## Version: 6.02.00.10 15.08.26
+## Version: 6.02.00.11 15.08.26
 ## Author: A_Nolan, gOOvER (Gooverdra), Arygos-EU
 ## X-Date: 2015-08-26
 ## X-Category: Reputation

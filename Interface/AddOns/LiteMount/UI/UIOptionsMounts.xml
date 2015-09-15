@@ -2,6 +2,8 @@
 
 <!-- Copyright 2011-2015 Mike Battersby -->
 
+<Script file="UIOptionsMounts.lua" />
+
 <!--
     See OptionsBaseCheckButtonTemplate in FrameXML/OptionsPanelTemplates.xml
     We don't use it directly because of the hitrect crap we don't want.
@@ -94,25 +96,24 @@
 
             <Scripts>
                 <OnEnter>
-                    local b = self:GetParent()
+                    local m = self:GetParent().mount
 
                     GameTooltip:SetOwner(self, "ANCHOR_RIGHT", 8)
-                    if b.journalIndex then
-                        GameTooltip:SetMountBySpellID(b.spellid)
+                    if m:JournalIndex() then
+                        GameTooltip:SetMountBySpellID(m:SpellId())
                     else
-                        GameTooltip:SetSpellByID(b.spellid)
+                        GameTooltip:SetSpellByID(m:SpellId())
                     end
-                    if b.isUsable then
+                    if m:IsUsable() then
                         GameTooltip:AddLine("|cffff00ff" .. HELPFRAME_REPORT_PLAYER_RIGHT_CLICK .. ": " .. MOUNT .. "|r")
                     end
                     GameTooltip:Show()
 
-                    local m = b.modelid
-                    local isself = b.isself
+                    local model = m:ModelId()
 
-                    if m then
-                        LiteMountOptionsPreview.model:SetDisplayInfo(m)
-                        if isself then
+                    if model then
+                        LiteMountOptionsPreview.model:SetDisplayInfo(model)
+                        if m:SelfMount() then
                             LiteMountOptionsPreview.model:SetDoBlend(false)
                             LiteMountOptionsPreview.model:SetAnimation(618, -1)
                         end
@@ -131,11 +132,11 @@
                     self:RegisterForDrag("LeftButton")
                 </OnLoad>
                 <OnDragStart>
-                    local parent = self:GetParent()
-                    if parent.spellid then
-                        PickupSpell(parent.spellid)
-                    elseif parent.itemid then
-                        PickupItem(parent.itemid)
+                    local mount = self:GetParent().mount
+                    if mount:SpellId() then
+                        PickupSpell(mount:SpellId())
+                    elseif mount:ItemId() then
+                        PickupItem(mount:ItemId())
                     end
                 </OnDragStart>
             </Scripts>
@@ -256,47 +257,26 @@
             <DisabledCheckedTexture file="Interface\Buttons\UI-CheckBox-Check-Disabled"/>
         </CheckButton>
 
-        <CheckButton name="$parentCharSpecific" parentkey="charSpecific">
-            <Size x="22" y="22" />
+        <CheckButton name="$parentCharSpecific" parentkey="charSpecific" inherits="InterfaceOptionsCheckButtonTemplate">
             <Anchors>
-                <Anchor point="TOPRIGHT" x="-4" y="-4" />
+                <Anchor point="TOPRIGHT" x="-210" y="-8" />
             </Anchors>
-            <NormalTexture file="Interface\Buttons\UI-CheckBox-Up"/>
-            <PushedTexture file="Interface\Buttons\UI-CheckBox-Down"/>
-            <HighlightTexture file="Interface\Buttons\UI-CheckBox-Highlight" alphaMode="ADD"/>
-            <CheckedTexture file="Interface\Buttons\UI-CheckBox-Check"/>
-            <DisabledCheckedTexture file="Interface\Buttons\UI-CheckBox-Check-Disabled"/>
             <Scripts>
+                <OnLoad>
+                    self.text = _G[self:GetName().."Text"]
+                    self.text:SetText("Use character specific settings.")
+                    self.text:SetTextColor(1,0,0,1)
+                </OnLoad>
                 <OnShow>
                     self:SetChecked(not LM_Options:UseGlobal())
                 </OnShow>
                 <OnClick>
                     if self:GetChecked() then
-                        LM_Options:SetGlobal()
+                        LM_Options:SetUseGlobal()
                     else
-                        LM_Options:SetGlobal(true)
+                        LM_Options:SetUseGlobal(true)
                     end
                     LiteMountOptions_UpdateMountList()
-                </OnClick>
-            </Scripts>
-        </CheckButton>
-
-        <CheckButton name="$parentCopyTargetsMount" parentkey="copyTargetsMount">
-            <Size x="22" y="22" />
-            <Anchors>
-                <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="$parentCharSpecific" y="4" />
-            </Anchors>
-            <NormalTexture file="Interface\Buttons\UI-CheckBox-Up"/>
-            <PushedTexture file="Interface\Buttons\UI-CheckBox-Down"/>
-            <HighlightTexture file="Interface\Buttons\UI-CheckBox-Highlight" alphaMode="ADD"/>
-            <CheckedTexture file="Interface\Buttons\UI-CheckBox-Check"/>
-            <DisabledCheckedTexture file="Interface\Buttons\UI-CheckBox-Check-Disabled"/>
-            <Scripts>
-                <OnShow>
-                    self:SetChecked(LM_Options:CopyTargetsMount())
-                </OnShow>
-                <OnClick>
-                    LM_Options:SetCopyTargetsMount(self:GetChecked())
                 </OnClick>
             </Scripts>
         </CheckButton>
@@ -333,16 +313,6 @@
             <FontString inherits="GameFontNormalLarge" parentKey="title">
                 <Anchors>
                     <Anchor point="TOPLEFT" x="16" y="-16" />
-                </Anchors>
-            </FontString>
-            <FontString inherits="GameFontRedSmall" parentKey="charSpecificText" text="Use character specific settings.">
-                <Anchors>
-                    <Anchor point="RIGHT" relativePoint="LEFT" relativeKey="$parent.charSpecific" x="-4" />
-                </Anchors>
-            </FontString>
-            <FontString inherits="GameFontRedSmall" parentKey="copyTargetsMountText" text="Try to copy target's mount.">
-                <Anchors>
-                    <Anchor point="RIGHT" relativePoint="LEFT" relativeKey="$parent.copyTargetsMount" x="-4" />
                 </Anchors>
             </FontString>
             <FontString name="$parentBit1Text" inherits="GameFontWhiteTiny" justifyH="CENTER" text="Run">

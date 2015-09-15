@@ -1,0 +1,21 @@
+tag 6.2.4
+9b4a32316a14119c7c1295308629667b1f1fa293
+Mike "Xodiv" Battersby <mib@post.com>
+2015-09-12 22:03:38 +1000
+
+Tagging 6.2.4 - Setting Tab
+
+
+--------------------
+
+Mike "Xodiv" Battersby:
+	- Moved realm. :(  Also moved settings down a bit.
+	- Macro settings pages also use common controls setup
+	- Add Settings option panel.
+	- Fix UI "Defaults" for Mounts tab.
+	- Fix spellId error in SeenMount
+	- Fix syntax errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+	- Switch option calls to use mount instead of spell.
+	- SpellFlags -> MountFlags
+	- Oops, left something behind.
+	- First cut of recording what mount spells you've seen before.

@@ -1,9 +1,19 @@
 
 TradeSkillMaster_AdditionsDB = {
 	["char"] = {
+		["Bracnar - Sisters of Elune"] = {
+			["auctionMessages"] = {
+				["A buyer has been found for your auction of Warm Arcane Crystal."] = "|cff0070dd|Hitem:129217:0:0:0:0:0:0:0:100:253:0:0:0|h[Warm Arcane Crystal]|h|r",
+			},
+			["auctionPrices"] = {
+				["|cff0070dd|Hitem:129217:0:0:0:0:0:0:0:100:253:0:0:0|h[Warm Arcane Crystal]|h|r"] = {
+					95000000, -- [1]
+				},
+			},
+		},
 		["Ghiaccioli - Sisters of Elune"] = {
 			["auctionMessages"] = {
-				["A buyer has been found for your auction of Pattern: Boots of the Crimson Hawk."] = "|cffa335ee|Hitem:30307:0:0:0:0:0:0:0:50:0:0:0:0|h[Pattern: Boots of the Crimson Hawk]|h|r",
+				["A buyer has been found for your auction of Enchant Weapon - Lifestealing."] = "|cff0070dd|Hitem:38871:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Lifestealing]|h|r",
 				["A buyer has been found for your auction of Enchant Weapon - Winter's Might."] = "|cff0070dd|Hitem:38876:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Winter's Might]|h|r",
 				["A buyer has been found for your auction of Enchant Gloves - Mighty Strength."] = "|cffffffff|Hitem:52783:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Mighty Strength]|h|r",
 				["A buyer has been found for your auction of Enchant Weapon - Fiery Weapon."] = "|cff0070dd|Hitem:38838:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Fiery Weapon]|h|r",
@@ -21,11 +31,10 @@ TradeSkillMaster_AdditionsDB = {
 				["A buyer has been found for your auction of Enchant Weapon - Landslide."] = "|cffffffff|Hitem:52776:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Landslide]|h|r",
 				["A buyer has been found for your auction of Enchant Shield - Lesser Spirit."] = "|cffffffff|Hitem:38792:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Shield - Lesser Spirit]|h|r",
 				["A buyer has been found for your auction of Enchant Chest - Greater Mana."] = "|cffffffff|Hitem:38818:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Greater Mana]|h|r",
-				["A buyer has been found for your auction of Enchant Weapon - Elemental Force."] = "|cff0070dd|Hitem:74725:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Elemental Force]|h|r",
 				["A buyer has been found for your auction of Enchant Chest - Mighty Resilience."] = "|cffffffff|Hitem:52758:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Mighty Resilience]|h|r",
 				["A buyer has been found for your auction of Enchant Boots - Icewalker."] = "|cffffffff|Hitem:38986:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Icewalker]|h|r",
 				["A buyer has been found for your auction of Enchant Bracer - Greater Stats."] = "|cffffffff|Hitem:38987:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Greater Stats]|h|r",
-				["A buyer has been found for your auction of Enchant Weapon - Accuracy."] = "|cff0070dd|Hitem:44497:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Accuracy]|h|r",
+				["A buyer has been found for your auction of Arcane Crystal Casing."] = "|cffffffff|Hitem:118344:0:0:0:0:0:0:0:50:0:0:1:0|h[Arcane Crystal Casing]|h|r",
 				["A buyer has been found for your auction of Enchant Cloak - Minor Power."] = "|cffffffff|Hitem:38973:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Minor Power]|h|r",
 				["A buyer has been found for your auction of Enchant Boots - Greater Assault."] = "|cffffffff|Hitem:44469:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Greater Assault]|h|r",
 				["A buyer has been found for your auction of Enchant 2H Weapon - Major Spirit."] = "|cff0070dd|Hitem:38874:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant 2H Weapon - Major Spirit]|h|r",
@@ -40,7 +49,7 @@ TradeSkillMaster_AdditionsDB = {
 				["A buyer has been found for your auction of Enchant Cloak - Dodge."] = "|cffffffff|Hitem:38895:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Dodge]|h|r",
 				["A buyer has been found for your auction of Enchant Shield - Spirit."] = "|cffffffff|Hitem:38816:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Shield - Spirit]|h|r",
 				["A buyer has been found for your auction of Enchant Weapon - Major Striking."] = "|cff0070dd|Hitem:38917:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Major Striking]|h|r",
-				["A buyer has been found for your auction of Enchant 2H Weapon - Massacre."] = "|cff0070dd|Hitem:44463:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant 2H Weapon - Massacre]|h|r",
+				["A buyer has been found for your auction of Enchant 2H Weapon - Lesser Intellect."] = "|cff0070dd|Hitem:38781:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant 2H Weapon - Lesser Intellect]|h|r",
 				["A buyer has been found for your auction of Enchant Bracer - Haste."] = "|cffffffff|Hitem:38984:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Haste]|h|r",
 				["A buyer has been found for your auction of Enchant Chest - Mighty Stats."] = "|cffffffff|Hitem:52744:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Mighty Stats]|h|r",
 				["A buyer has been found for your auction of Shield Enchant - Greater Intellect."] = "|cffffffff|Hitem:44455:0:0:0:0:0:0:0:50:0:0:0:0|h[Shield Enchant - Greater Intellect]|h|r",
@@ -74,11 +83,10 @@ TradeSkillMaster_AdditionsDB = {
 				["A buyer has been found for your auction of Pattern: Heavenly Gloves of the Moon."] = "|cffa335ee|Hitem:69963:0:0:0:0:0:0:0:50:0:0:0:0|h[Pattern: Heavenly Gloves of the Moon]|h|r",
 				["A buyer has been found for your auction of Enchant Shield - Greater Spirit."] = "|cffffffff|Hitem:38839:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Shield - Greater Spirit]|h|r",
 				["A buyer has been found for your auction of Enchant Boots - Greater Fortitude."] = "|cffffffff|Hitem:38966:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Greater Fortitude]|h|r",
-				["A buyer has been found for your auction of Arcane Crystal Amplifier."] = "|cffffffff|Hitem:118346:0:0:0:0:0:0:0:50:0:0:1:0|h[Arcane Crystal Amplifier]|h|r",
 				["A buyer has been found for your auction of Enchant Cloak - Defense."] = "|cffffffff|Hitem:38806:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Defense]|h|r",
 				["A buyer has been found for your auction of Enchant Bracer - Major Spirit."] = "|cffffffff|Hitem:38980:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Major Spirit]|h|r",
 				["A buyer has been found for your auction of Enchant Gloves - Assault."] = "|cffffffff|Hitem:38934:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Assault]|h|r",
-				["A buyer has been found for your auction of Enchant Weapon - Windsong."] = "|cff0070dd|Hitem:74723:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Windsong]|h|r",
+				["A buyer has been found for your auction of Enchant Weapon - Mongoose."] = "|cff0070dd|Hitem:38925:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Mongoose]|h|r",
 				["A buyer has been found for your auction of Enchant Cloak - Critical Strike."] = "|cffffffff|Hitem:52764:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Critical Strike]|h|r",
 				["A buyer has been found for your auction of Enchant Cloak - Superior Agility."] = "|cffffffff|Hitem:38959:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Superior Agility]|h|r",
 				["A buyer has been found for your auction of Enchant 2H Weapon - Superior Impact."] = "|cff0070dd|Hitem:38869:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant 2H Weapon - Superior Impact]|h|r",
@@ -93,76 +101,68 @@ TradeSkillMaster_AdditionsDB = {
 				["A buyer has been found for your auction of Enchant Bracer - Superior Dodge."] = "|cffffffff|Hitem:52763:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Superior Dodge]|h|r",
 				["A buyer has been found for your auction of Enchant 2H Weapon - Savagery."] = "|cff0070dd|Hitem:38919:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant 2H Weapon - Savagery]|h|r",
 				["A buyer has been found for your auction of Enchant Gloves - Greater Strength."] = "|cffffffff|Hitem:38857:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Greater Strength]|h|r",
-				["A buyer has been found for your auction of Enchant Gloves - Blasting."] = "|cffffffff|Hitem:38931:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Blasting]|h|r",
 				["A buyer has been found for your auction of Enchant Weapon - Elemental Slayer."] = "|cffffffff|Hitem:52755:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Elemental Slayer]|h|r",
 				["A buyer has been found for your auction of Enchant Weapon - Crusader."] = "|cff0070dd|Hitem:38873:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Crusader]|h|r",
 				["A buyer has been found for your auction of Enchant Bracer - Major Strength."] = "|cff0070dd|Hitem:68785:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Major Strength]|h|r",
-				["A buyer has been found for your auction of Enchant Cloak - Shadow Armor."] = "|cffffffff|Hitem:38993:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Shadow Armor]|h|r",
 				["A buyer has been found for your auction of Enchant Bracer - Intellect."] = "|cffffffff|Hitem:38829:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Intellect]|h|r",
-				["A buyer has been found for your auction of Enchant Shield - Lesser Dodge."] = "|cffffffff|Hitem:38904:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Shield - Lesser Dodge]|h|r",
-				["A buyer has been found for your auction of Enchant Chest - Mighty Health."] = "|cffffffff|Hitem:38955:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Mighty Health]|h|r",
 				["A buyer has been found for your auction of Hyper Augment Rune."] = "|cff0070dd|Hitem:118630:0:0:0:0:0:0:0:50:0:0:0:0|h[Hyper Augment Rune]|h|r",
-				["A buyer has been found for your auction of Enchant Boots - Lesser Spirit."] = "|cffffffff|Hitem:38819:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Lesser Spirit]|h|r",
 				["A buyer has been found for your auction of Enchant Boots - Mastery."] = "|cffffffff|Hitem:52771:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Mastery]|h|r",
-				["A buyer has been found for your auction of Enchant Weapon - Avalanche."] = "|cffffffff|Hitem:52748:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Avalanche]|h|r",
 				["A buyer has been found for your auction of Enchant Gloves - Exceptional Spellpower."] = "|cffffffff|Hitem:38979:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Exceptional Spellpower]|h|r",
-				["A buyer has been found for your auction of Enchant Bracer - Minor Strength."] = "|cffffffff|Hitem:38778:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Minor Strength]|h|r",
 				["A buyer has been found for your auction of Enchant Chest - Major Spirit."] = "|cffffffff|Hitem:38928:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Major Spirit]|h|r",
 				["A buyer has been found for your auction of Enchant Gloves - Super Strength."] = "|cffffffff|Hitem:74721:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Super Strength]|h|r",
-				["A buyer has been found for your auction of Enchant Bracer - Healing Power."] = "|cffffffff|Hitem:38882:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Healing Power]|h|r",
 				["A buyer has been found for your auction of Enchant Bracer - Major Dodge."] = "|cffffffff|Hitem:74701:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Major Dodge]|h|r",
-				["A buyer has been found for your auction of Enchant Cloak - Stealth."] = "|cffffffff|Hitem:38893:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Stealth]|h|r",
-				["A buyer has been found for your auction of Arcane Crystal Conduit."] = "|cffffffff|Hitem:118345:0:0:0:0:0:0:0:50:0:0:1:0|h[Arcane Crystal Conduit]|h|r",
-				["A buyer has been found for your auction of Enchant Weapon - Unholy Weapon."] = "|cff0070dd|Hitem:38872:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Unholy Weapon]|h|r",
+				["A buyer has been found for your auction of Enchant Cloak - Shadow Armor."] = "|cffffffff|Hitem:38993:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Shadow Armor]|h|r",
+				["A buyer has been found for your auction of Pattern: Belt of Dragons."] = "|cffa335ee|Hitem:45094:0:0:0:0:0:0:0:50:0:0:0:0|h[Pattern: Belt of Dragons]|h|r",
+				["A buyer has been found for your auction of Enchant Boots - Greater Stamina."] = "|cffffffff|Hitem:38862:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Greater Stamina]|h|r",
 				["A buyer has been found for your auction of Enchant Shield - Lesser Parry."] = "|cffffffff|Hitem:38820:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Shield - Lesser Parry]|h|r",
-				["A buyer has been found for your auction of Pattern: Boots of Wintry Endurance."] = "|cffa335ee|Hitem:45101:0:0:0:0:0:0:0:50:0:0:0:0|h[Pattern: Boots of Wintry Endurance]|h|r",
+				["A buyer has been found for your auction of Enchant Bracer - Greater Haste."] = "|cffffffff|Hitem:52772:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Greater Haste]|h|r",
 				["A buyer has been found for your auction of Enchant Chest - Superior Mana."] = "|cffffffff|Hitem:38841:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Superior Mana]|h|r",
-				["A buyer has been found for your auction of Enchant Cloak - Protection."] = "|cffffffff|Hitem:52767:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Protection]|h|r",
+				["A buyer has been found for your auction of Enchant Gloves - Greater Haste."] = "|cffffffff|Hitem:52759:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Greater Haste]|h|r",
 				["A buyer has been found for your auction of Plans: Spiked Deathdealers."] = "|cffa335ee|Hitem:45093:0:0:0:0:0:0:0:50:0:0:0:0|h[Plans: Spiked Deathdealers]|h|r",
 				["A buyer has been found for your auction of Enchant Weapon - Black Magic."] = "|cff0070dd|Hitem:43987:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Black Magic]|h|r",
-				["A buyer has been found for your auction of Felblight."] = "|cff0070dd|Hitem:127759:0:0:0:0:0:0:0:50:0:0:0:0|h[Felblight]|h|r",
+				["A buyer has been found for your auction of Pattern: Blue Belt of Chaos."] = "|cffa335ee|Hitem:45096:0:0:0:0:0:0:0:50:0:0:0:0|h[Pattern: Blue Belt of Chaos]|h|r",
+				["A buyer has been found for your auction of Enchant Boots - Earthen Vitality."] = "|cffffffff|Hitem:52743:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Earthen Vitality]|h|r",
+				["A buyer has been found for your auction of Enchant Weapon - Strength."] = "|cff0070dd|Hitem:38879:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Strength]|h|r",
 				["A buyer has been found for your auction of Enchant Cloak - Superior Intellect."] = "|cffffffff|Hitem:74712:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Superior Intellect]|h|r",
-				["A buyer has been found for your auction of Enchant Boots - Precision."] = "|cffffffff|Hitem:52769:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Precision]|h|r",
-				["A buyer has been found for your auction of Enchant Gloves - Superior Mastery."] = "|cffffffff|Hitem:74722:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Superior Mastery]|h|r",
-				["A buyer has been found for your auction of Enchant Boots - Major Agility."] = "|cffffffff|Hitem:52757:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Major Agility]|h|r",
+				["A buyer has been found for your auction of Enchant Boots - Dexterity."] = "|cffffffff|Hitem:37603:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Dexterity]|h|r",
 				["A buyer has been found for your auction of Enchant Chest - Mana."] = "|cffffffff|Hitem:38799:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Mana]|h|r",
-				["A buyer has been found for your auction of Enchant Bracer - Greater Agility."] = "|cffffffff|Hitem:74705:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Greater Agility]|h|r",
-				["A buyer has been found for your auction of Frozen Orb."] = "|cff0070dd|Hitem:43102:0:0:0:0:0:0:0:50:0:0:0:0|h[Frozen Orb]|h|r",
+				["A buyer has been found for your auction of Enchant Bracer - Exceptional Spirit."] = "|cffffffff|Hitem:52770:0:0:0:0:0:0:1164584448:50:0:0:0:0|h[Enchant Bracer - Exceptional Spirit]|h|r",
+				["A buyer has been found for your auction of Enchant Weapon - Berserking."] = "|cff0070dd|Hitem:44493:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Berserking]|h|r",
 				["A buyer has been found for your auction of Enchant 2H Weapon - Major Intellect."] = "|cff0070dd|Hitem:38875:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant 2H Weapon - Major Intellect]|h|r",
-				["A buyer has been found for your auction of Enchant Bracer - Fortitude."] = "|cffffffff|Hitem:38902:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Fortitude]|h|r",
-				["A buyer has been found for your auction of Enchant Weapon - Mongoose."] = "|cff0070dd|Hitem:38925:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Mongoose]|h|r",
-				["A buyer has been found for your auction of Enchant 2H Weapon - Lesser Impact."] = "|cff0070dd|Hitem:38796:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant 2H Weapon - Lesser Impact]|h|r",
+				["A buyer has been found for your auction of Enchant Bracer - Superior Spellpower."] = "|cffffffff|Hitem:44470:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Superior Spellpower]|h|r",
 				["A buyer has been found for your auction of Enchant Weapon - Giant Slayer."] = "|cff0070dd|Hitem:38988:0:0:0:0:0:0:1585831040:50:0:0:0:0|h[Enchant Weapon - Giant Slayer]|h|r",
-				["A buyer has been found for your auction of Enchant 2H Weapon - Impact."] = "|cff0070dd|Hitem:38822:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant 2H Weapon - Impact]|h|r",
+				["A buyer has been found for your auction of Enchant 2H Weapon - Lesser Impact."] = "|cff0070dd|Hitem:38796:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant 2H Weapon - Lesser Impact]|h|r",
+				["A buyer has been found for your auction of Enchant Chest - Greater Mana Restoration."] = "|cffffffff|Hitem:38962:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Greater Mana Restoration]|h|r",
 				["A buyer has been found for your auction of Enchant Cloak - Greater Intellect."] = "|cffffffff|Hitem:52773:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Greater Intellect]|h|r",
+				["A buyer has been found for your auction of Enchant Bracer - Assault."] = "|cffffffff|Hitem:38971:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Assault]|h|r",
 				["A buyer has been found for your auction of Enchant Shield - Lesser Protection."] = "|cffffffff|Hitem:38791:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Shield - Lesser Protection]|h|r",
 				["A buyer has been found for your auction of Enchant Chest - Stamina."] = "|cffffffff|Hitem:52751:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Stamina]|h|r",
 				["A buyer has been found for your auction of Enchant Bracer - Greater Stamina."] = "|cffffffff|Hitem:38849:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Greater Stamina]|h|r",
-				["A buyer has been found for your auction of Arcane Crystal Casing."] = "|cffffffff|Hitem:118344:0:0:0:0:0:0:0:50:0:0:1:0|h[Arcane Crystal Casing]|h|r",
-				["A buyer has been found for your auction of Enchant Cloak - Greater Speed."] = "|cffffffff|Hitem:39003:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Greater Speed]|h|r",
-				["A buyer has been found for your auction of Enchant Gloves - Crusher."] = "|cffffffff|Hitem:44458:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Crusher]|h|r",
-				["A buyer has been found for your auction of Enchant Gloves - Greater Assault."] = "|cffffffff|Hitem:38964:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Greater Assault]|h|r",
 				["A buyer has been found for your auction of Enchant Gloves - Major Strength."] = "|cffffffff|Hitem:38933:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Major Strength]|h|r",
-				["A buyer has been found for your auction of Enchant Bracer - Assault."] = "|cffffffff|Hitem:38971:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Assault]|h|r",
+				["A buyer has been found for your auction of Enchant Gloves - Greater Assault."] = "|cffffffff|Hitem:38964:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Greater Assault]|h|r",
 				["A buyer has been found for your auction of Enchant Bracer - Lesser Intellect."] = "|cffffffff|Hitem:38803:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Lesser Intellect]|h|r",
+				["A buyer has been found for your auction of Enchant Boots - Precision."] = "|cffffffff|Hitem:52769:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Precision]|h|r",
+				["A buyer has been found for your auction of Enchant Gloves - Crusher."] = "|cffffffff|Hitem:44458:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Crusher]|h|r",
+				["A buyer has been found for your auction of Enchant Cloak - Greater Speed."] = "|cffffffff|Hitem:39003:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Greater Speed]|h|r",
+				["A buyer has been found for your auction of Enchant Bracer - Fortitude."] = "|cffffffff|Hitem:38902:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Fortitude]|h|r",
 				["A buyer has been found for your auction of Enchant Weapon - Jade Spirit."] = "|cff0070dd|Hitem:74724:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Jade Spirit]|h|r",
-				["A buyer has been found for your auction of Enchant Chest - Greater Mana Restoration."] = "|cffffffff|Hitem:38962:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Greater Mana Restoration]|h|r",
+				["A buyer has been found for your auction of Enchant 2H Weapon - Impact."] = "|cff0070dd|Hitem:38822:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant 2H Weapon - Impact]|h|r",
 				["A buyer has been found for your auction of Enchant Weapon - Striking."] = "|cff0070dd|Hitem:38821:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Striking]|h|r",
-				["A buyer has been found for your auction of Enchant Bracer - Superior Spellpower."] = "|cffffffff|Hitem:44470:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Superior Spellpower]|h|r",
-				["A buyer has been found for your auction of Enchant Weapon - Lifestealing."] = "|cff0070dd|Hitem:38871:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Lifestealing]|h|r",
-				["A buyer has been found for your auction of Enchant Bracer - Exceptional Spirit."] = "|cffffffff|Hitem:52770:0:0:0:0:0:0:1164584448:50:0:0:0:0|h[Enchant Bracer - Exceptional Spirit]|h|r",
-				["A buyer has been found for your auction of Enchant Boots - Dexterity."] = "|cffffffff|Hitem:37603:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Dexterity]|h|r",
-				["A buyer has been found for your auction of Enchant Weapon - Berserking."] = "|cff0070dd|Hitem:44493:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Berserking]|h|r",
+				["A buyer has been found for your auction of Frozen Orb."] = "|cff0070dd|Hitem:43102:0:0:0:0:0:0:0:50:0:0:0:0|h[Frozen Orb]|h|r",
+				["A buyer has been found for your auction of Enchant Bracer - Greater Agility."] = "|cffffffff|Hitem:74705:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Greater Agility]|h|r",
+				["A buyer has been found for your auction of Enchant Boots - Major Agility."] = "|cffffffff|Hitem:52757:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Major Agility]|h|r",
+				["A buyer has been found for your auction of Enchant Gloves - Superior Mastery."] = "|cffffffff|Hitem:74722:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Superior Mastery]|h|r",
+				["A buyer has been found for your auction of Enchant Cloak - Protection."] = "|cffffffff|Hitem:52767:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Protection]|h|r",
 				["A buyer has been found for your auction of Enchant Cloak - Superior Defense."] = "|cffffffff|Hitem:38859:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Superior Defense]|h|r",
-				["A buyer has been found for your auction of Enchant Weapon - Strength."] = "|cff0070dd|Hitem:38879:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Strength]|h|r",
-				["A buyer has been found for your auction of Enchant Boots - Earthen Vitality."] = "|cffffffff|Hitem:52743:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Earthen Vitality]|h|r",
-				["A buyer has been found for your auction of Enchant Bracer - Greater Haste."] = "|cffffffff|Hitem:52772:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Greater Haste]|h|r",
-				["A buyer has been found for your auction of Enchant Boots - Greater Stamina."] = "|cffffffff|Hitem:38862:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Greater Stamina]|h|r",
-				["A buyer has been found for your auction of Pattern: Blue Belt of Chaos."] = "|cffa335ee|Hitem:45096:0:0:0:0:0:0:0:50:0:0:0:0|h[Pattern: Blue Belt of Chaos]|h|r",
-				["A buyer has been found for your auction of Enchant Gloves - Greater Haste."] = "|cffffffff|Hitem:52759:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Greater Haste]|h|r",
-				["A buyer has been found for your auction of Enchant Weapon - Heartsong."] = "|cffffffff|Hitem:52761:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Heartsong]|h|r",
-				["A buyer has been found for your auction of Enchant 2H Weapon - Lesser Intellect."] = "|cff0070dd|Hitem:38781:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant 2H Weapon - Lesser Intellect]|h|r",
-				["A buyer has been found for your auction of Pattern: Belt of Dragons."] = "|cffa335ee|Hitem:45094:0:0:0:0:0:0:0:50:0:0:0:0|h[Pattern: Belt of Dragons]|h|r",
+				["A buyer has been found for your auction of Pattern: Boots of Wintry Endurance."] = "|cffa335ee|Hitem:45101:0:0:0:0:0:0:0:50:0:0:0:0|h[Pattern: Boots of Wintry Endurance]|h|r",
+				["A buyer has been found for your auction of Enchant Weapon - Unholy Weapon."] = "|cff0070dd|Hitem:38872:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Unholy Weapon]|h|r",
+				["A buyer has been found for your auction of Enchant Cloak - Stealth."] = "|cffffffff|Hitem:38893:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Stealth]|h|r",
+				["A buyer has been found for your auction of Enchant Bracer - Healing Power."] = "|cffffffff|Hitem:38882:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Healing Power]|h|r",
+				["A buyer has been found for your auction of Enchant Bracer - Minor Strength."] = "|cffffffff|Hitem:38778:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Minor Strength]|h|r",
+				["A buyer has been found for your auction of Enchant Weapon - Avalanche."] = "|cffffffff|Hitem:52748:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Avalanche]|h|r",
+				["A buyer has been found for your auction of Enchant Boots - Lesser Spirit."] = "|cffffffff|Hitem:38819:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Lesser Spirit]|h|r",
+				["A buyer has been found for your auction of Enchant Chest - Mighty Health."] = "|cffffffff|Hitem:38955:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Mighty Health]|h|r",
+				["A buyer has been found for your auction of Enchant Shield - Lesser Dodge."] = "|cffffffff|Hitem:38904:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Shield - Lesser Dodge]|h|r",
 				["A buyer has been found for your auction of Enchant Off-Hand - Superior Intellect."] = "|cffffffff|Hitem:52768:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Off-Hand - Superior Intellect]|h|r",
 			},
 			["auctionPrices"] = {
@@ -213,18 +213,12 @@ TradeSkillMaster_AdditionsDB = {
 				["|cffffffff|Hitem:38829:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Intellect]|h|r"] = {
 					5372317, -- [1]
 				},
-				["|cffffffff|Hitem:118345:0:0:0:0:0:0:0:50:0:0:1:0|h[Arcane Crystal Conduit]|h|r"] = {
-					995000, -- [1]
-				},
 				["|cffffffff|Hitem:39004:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Wisdom]|h|r"] = {
 					5372317, -- [1]
 				},
 				["|cffffffff|Hitem:38811:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Lesser Dodge]|h|r"] = {
 					5372317, -- [1]
 					5372317, -- [2]
-				},
-				["|cff0070dd|Hitem:44463:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant 2H Weapon - Massacre]|h|r"] = {
-					5372317, -- [1]
 				},
 				["|cffffffff|Hitem:38866:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Major Health]|h|r"] = {
 					5372317, -- [1]
@@ -310,9 +304,6 @@ TradeSkillMaster_AdditionsDB = {
 				},
 				["|cffffffff|Hitem:38841:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Superior Mana]|h|r"] = {
 					5372317, -- [1]
-				},
-				["|cffffffff|Hitem:38931:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Blasting]|h|r"] = {
-					385000, -- [1]
 				},
 				["|cffffffff|Hitem:52773:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Greater Intellect]|h|r"] = {
 					5517946, -- [1]
@@ -432,9 +423,6 @@ TradeSkillMaster_AdditionsDB = {
 				["|cffffffff|Hitem:52783:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Mighty Strength]|h|r"] = {
 					15000000, -- [1]
 				},
-				["|cff0070dd|Hitem:74723:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Windsong]|h|r"] = {
-					251350, -- [1]
-				},
 				["|cff0070dd|Hitem:38874:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant 2H Weapon - Major Spirit]|h|r"] = {
 					5372317, -- [1]
 				},
@@ -444,70 +432,47 @@ TradeSkillMaster_AdditionsDB = {
 				["|cffffffff|Hitem:38882:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Healing Power]|h|r"] = {
 					5372317, -- [1]
 				},
-				["|cff0070dd|Hitem:38781:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant 2H Weapon - Lesser Intellect]|h|r"] = {
-					5372317, -- [1]
-				},
-				["|cffa335ee|Hitem:30307:0:0:0:0:0:0:0:50:0:0:0:0|h[Pattern: Boots of the Crimson Hawk]|h|r"] = {
-					84497, -- [1]
+				["|cff0070dd|Hitem:38872:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Unholy Weapon]|h|r"] = {
+					2985000, -- [1]
 				},
 				["|cff0070dd|Hitem:74727:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Colossus]|h|r"] = {
 					2432500, -- [1]
 				},
+				["|cff0070dd|Hitem:38873:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Crusader]|h|r"] = {
+					5372317, -- [1]
+				},
+				["|cffffffff|Hitem:38818:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Greater Mana]|h|r"] = {
+					50000, -- [1]
+				},
 				["|cff0070dd|Hitem:118630:0:0:0:0:0:0:0:50:0:0:0:0|h[Hyper Augment Rune]|h|r"] = {
 					981000, -- [1]
-				},
-				["|cff0070dd|Hitem:38872:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Unholy Weapon]|h|r"] = {
-					2985000, -- [1]
 				},
 				["|cffffffff|Hitem:38986:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Icewalker]|h|r"] = {
 					995000, -- [1]
 				},
-				["|cff0070dd|Hitem:127759:0:0:0:0:0:0:0:50:0:0:0:0|h[Felblight]|h|r"] = {
-					2035000, -- [1]
-					2035000, -- [2]
-					2035000, -- [3]
-					2035000, -- [4]
-					2035000, -- [5]
-				},
-				["|cff0070dd|Hitem:38821:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Striking]|h|r"] = {
-					1105701, -- [1]
-				},
-				["|cff0070dd|Hitem:38873:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Crusader]|h|r"] = {
-					5372317, -- [1]
-				},
-				["|cffffffff|Hitem:38799:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Mana]|h|r"] = {
-					993966, -- [1]
-				},
-				["|cffffffff|Hitem:38904:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Shield - Lesser Dodge]|h|r"] = {
-					5372317, -- [1]
-				},
-				["|cff0070dd|Hitem:74724:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Jade Spirit]|h|r"] = {
-					3926350, -- [1]
-				},
-				["|cffffffff|Hitem:38776:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Lesser Mana]|h|r"] = {
-					5372317, -- [1]
+				["|cffffffff|Hitem:74703:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Super Intellect]|h|r"] = {
+					1121200, -- [1]
 				},
 				["|cffffffff|Hitem:52755:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Elemental Slayer]|h|r"] = {
 					1051357, -- [1]
 				},
-				["|cffffffff|Hitem:118346:0:0:0:0:0:0:0:50:0:0:1:0|h[Arcane Crystal Amplifier]|h|r"] = {
-					2495000, -- [1]
+				["|cffffffff|Hitem:38799:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Mana]|h|r"] = {
+					993966, -- [1]
+				},
+				["|cffffffff|Hitem:52744:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Mighty Stats]|h|r"] = {
+					685000, -- [1]
+				},
+				["|cffffffff|Hitem:74704:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Exceptional Strength]|h|r"] = {
+					895960, -- [1]
 				},
 				["|cffffffff|Hitem:44458:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Crusher]|h|r"] = {
 					1738447, -- [1]
 				},
-				["|cff0070dd|Hitem:44497:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Accuracy]|h|r"] = {
-					6880852, -- [1]
+				["|cffffffff|Hitem:38967:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Major Agility]|h|r"] = {
+					995000, -- [1]
 				},
-				["|cffffffff|Hitem:38867:0:0:0:0:0:0:275093536:50:0:0:0:0|h[Enchant Chest - Major Mana]|h|r"] = {
-					455000, -- [1]
-					455000, -- [2]
-				},
-				["|cffffffff|Hitem:38929:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Restore Mana Prime]|h|r"] = {
-					669618, -- [1]
-				},
-				["|cffffffff|Hitem:52760:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Hurricane]|h|r"] = {
-					2190252, -- [1]
+				["|cffffffff|Hitem:74712:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Superior Intellect]|h|r"] = {
+					139960, -- [1]
 				},
 				["|cffffffff|Hitem:44947:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Major Stamina]|h|r"] = {
 					5372317, -- [1]
@@ -518,19 +483,20 @@ TradeSkillMaster_AdditionsDB = {
 				["|cffffffff|Hitem:38934:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Assault]|h|r"] = {
 					684100, -- [1]
 				},
-				["|cffffffff|Hitem:38792:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Shield - Lesser Spirit]|h|r"] = {
-					1851413, -- [1]
-					1851413, -- [2]
-					1851413, -- [3]
+				["|cffffffff|Hitem:38949:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Shield - Resilience]|h|r"] = {
+					284100, -- [1]
 				},
 				["|cff0070dd|Hitem:38963:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Exceptional Spirit]|h|r"] = {
 					4845000, -- [1]
 				},
+				["|cffffffff|Hitem:38951:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Haste]|h|r"] = {
+					5372317, -- [1]
+				},
 				["|cff0070dd|Hitem:38919:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant 2H Weapon - Savagery]|h|r"] = {
 					5372317, -- [1]
 				},
-				["|cffffffff|Hitem:38959:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Superior Agility]|h|r"] = {
-					5372317, -- [1]
+				["|cffffffff|Hitem:38893:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Stealth]|h|r"] = {
+					6321411, -- [1]
 				},
 				["|cffffffff|Hitem:38933:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Major Strength]|h|r"] = {
 					296113, -- [1]
@@ -538,23 +504,20 @@ TradeSkillMaster_AdditionsDB = {
 				["|cffffffff|Hitem:44470:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Superior Spellpower]|h|r"] = {
 					5372317, -- [1]
 				},
-				["|cffffffff|Hitem:38859:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Superior Defense]|h|r"] = {
-					5330000, -- [1]
-				},
 				["|cffffffff|Hitem:38820:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Shield - Lesser Parry]|h|r"] = {
 					995000, -- [1]
-				},
-				["|cff0070dd|Hitem:38879:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Strength]|h|r"] = {
-					2494999, -- [1]
 				},
 				["|cffa335ee|Hitem:45096:0:0:0:0:0:0:0:50:0:0:0:0|h[Pattern: Blue Belt of Chaos]|h|r"] = {
 					5000000, -- [1]
 				},
+				["|cffffffff|Hitem:38857:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Greater Strength]|h|r"] = {
+					1245000, -- [1]
+				},
 				["|cff0070dd|Hitem:44453:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Greater Potency]|h|r"] = {
 					995000, -- [1]
 				},
-				["|cffffffff|Hitem:38857:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Greater Strength]|h|r"] = {
-					1245000, -- [1]
+				["|cffffffff|Hitem:38859:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Superior Defense]|h|r"] = {
+					5330000, -- [1]
 				},
 				["|cffffffff|Hitem:38960:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Gatherer]|h|r"] = {
 					50000, -- [1]
@@ -582,32 +545,32 @@ TradeSkillMaster_AdditionsDB = {
 				["|cffffffff|Hitem:38839:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Shield - Greater Spirit]|h|r"] = {
 					644000, -- [1]
 				},
-				["|cffffffff|Hitem:52769:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Precision]|h|r"] = {
-					995000, -- [1]
-				},
 				["|cffffffff|Hitem:52748:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Avalanche]|h|r"] = {
 					4794900, -- [1]
 				},
-				["|cffffffff|Hitem:52761:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Heartsong]|h|r"] = {
-					1735683, -- [1]
-				},
-				["|cffffffff|Hitem:44455:0:0:0:0:0:0:0:50:0:0:0:0|h[Shield Enchant - Greater Intellect]|h|r"] = {
-					2027499, -- [1]
-				},
-				["|cffa335ee|Hitem:45101:0:0:0:0:0:0:0:50:0:0:0:0|h[Pattern: Boots of Wintry Endurance]|h|r"] = {
-					5000000, -- [1]
+				["|cffffffff|Hitem:38962:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Greater Mana Restoration]|h|r"] = {
+					118656, -- [1]
 				},
 				["|cffa335ee|Hitem:69963:0:0:0:0:0:0:0:50:0:0:0:0|h[Pattern: Heavenly Gloves of the Moon]|h|r"] = {
 					1897922, -- [1]
 				},
+				["|cffffffff|Hitem:44455:0:0:0:0:0:0:0:50:0:0:0:0|h[Shield Enchant - Greater Intellect]|h|r"] = {
+					2027499, -- [1]
+				},
+				["|cffffffff|Hitem:52769:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Precision]|h|r"] = {
+					995000, -- [1]
+				},
 				["|cffffffff|Hitem:38816:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Shield - Spirit]|h|r"] = {
 					2115000, -- [1]
+				},
+				["|cffa335ee|Hitem:45101:0:0:0:0:0:0:0:50:0:0:0:0|h[Pattern: Boots of Wintry Endurance]|h|r"] = {
+					5000000, -- [1]
 				},
 				["|cff0070dd|Hitem:38869:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant 2H Weapon - Superior Impact]|h|r"] = {
 					5301250, -- [1]
 				},
-				["|cffffffff|Hitem:38962:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Greater Mana Restoration]|h|r"] = {
-					118656, -- [1]
+				["|cff0070dd|Hitem:38879:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Strength]|h|r"] = {
+					2494999, -- [1]
 				},
 				["|cffffffff|Hitem:74721:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Super Strength]|h|r"] = {
 					161200, -- [1]
@@ -628,44 +591,47 @@ TradeSkillMaster_AdditionsDB = {
 				["|cff0070dd|Hitem:68785:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Major Strength]|h|r"] = {
 					11997984, -- [1]
 				},
-				["|cffffffff|Hitem:38893:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Stealth]|h|r"] = {
-					6321411, -- [1]
+				["|cffffffff|Hitem:38959:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Superior Agility]|h|r"] = {
+					5372317, -- [1]
 				},
 				["|cffffffff|Hitem:38928:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Major Spirit]|h|r"] = {
 					912100, -- [1]
 				},
-				["|cffffffff|Hitem:38949:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Shield - Resilience]|h|r"] = {
-					284100, -- [1]
+				["|cffffffff|Hitem:38792:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Shield - Lesser Spirit]|h|r"] = {
+					1851413, -- [1]
+					1851413, -- [2]
+					1851413, -- [3]
 				},
-				["|cffffffff|Hitem:38951:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Haste]|h|r"] = {
-					5372317, -- [1]
+				["|cffffffff|Hitem:38867:0:0:0:0:0:0:275093536:50:0:0:0:0|h[Enchant Chest - Major Mana]|h|r"] = {
+					455000, -- [1]
+					455000, -- [2]
 				},
 				["|cffffffff|Hitem:38862:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Greater Stamina]|h|r"] = {
 					5372317, -- [1]
 				},
-				["|cffffffff|Hitem:74712:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Superior Intellect]|h|r"] = {
-					139960, -- [1]
+				["|cffffffff|Hitem:52760:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Hurricane]|h|r"] = {
+					2190252, -- [1]
 				},
-				["|cffffffff|Hitem:38967:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Major Agility]|h|r"] = {
-					995000, -- [1]
+				["|cffffffff|Hitem:38929:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Restore Mana Prime]|h|r"] = {
+					669618, -- [1]
 				},
 				["|cffffffff|Hitem:68134:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant 2H Weapon - Mighty Agility]|h|r"] = {
 					1833638, -- [1]
 				},
-				["|cffffffff|Hitem:74704:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Exceptional Strength]|h|r"] = {
-					895960, -- [1]
+				["|cffffffff|Hitem:38776:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Lesser Mana]|h|r"] = {
+					5372317, -- [1]
 				},
-				["|cff0070dd|Hitem:74725:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Elemental Force]|h|r"] = {
-					745000, -- [1]
+				["|cff0070dd|Hitem:74724:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Jade Spirit]|h|r"] = {
+					3926350, -- [1]
 				},
-				["|cffffffff|Hitem:52744:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Mighty Stats]|h|r"] = {
-					685000, -- [1]
+				["|cffffffff|Hitem:38904:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Shield - Lesser Dodge]|h|r"] = {
+					5372317, -- [1]
 				},
 				["|cffffffff|Hitem:52774:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Power Torrent]|h|r"] = {
 					15000000, -- [1]
 				},
-				["|cffffffff|Hitem:74703:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Super Intellect]|h|r"] = {
-					1121200, -- [1]
+				["|cff0070dd|Hitem:38821:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Striking]|h|r"] = {
+					1105701, -- [1]
 				},
 				["|cffa335ee|Hitem:45094:0:0:0:0:0:0:0:50:0:0:0:0|h[Pattern: Belt of Dragons]|h|r"] = {
 					4753124, -- [1]
@@ -673,21 +639,11 @@ TradeSkillMaster_AdditionsDB = {
 				["|cffffffff|Hitem:52764:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Critical Strike]|h|r"] = {
 					1180766, -- [1]
 				},
-				["|cffffffff|Hitem:38818:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Chest - Greater Mana]|h|r"] = {
-					50000, -- [1]
+				["|cff0070dd|Hitem:38781:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant 2H Weapon - Lesser Intellect]|h|r"] = {
+					5372317, -- [1]
 				},
 				["|cffffffff|Hitem:38993:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Shadow Armor]|h|r"] = {
 					5372317, -- [1]
-				},
-			},
-		},
-		["Bracnar - Sisters of Elune"] = {
-			["auctionMessages"] = {
-				["A buyer has been found for your auction of Warm Arcane Crystal."] = "|cff0070dd|Hitem:129217:0:0:0:0:0:0:0:100:253:0:0:0|h[Warm Arcane Crystal]|h|r",
-			},
-			["auctionPrices"] = {
-				["|cff0070dd|Hitem:129217:0:0:0:0:0:0:0:100:253:0:0:0|h[Warm Arcane Crystal]|h|r"] = {
-					95000000, -- [1]
 				},
 			},
 		},
@@ -698,13 +654,13 @@ TradeSkillMaster_AdditionsDB = {
 				["A buyer has been found for your auction of Enchant Ring - Breath of Mastery."] = "|cffffffff|Hitem:110619:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Mastery]|h|r",
 				["A buyer has been found for your auction of Enchant Neck - Breath of Multistrike."] = "|cffffffff|Hitem:110627:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Multistrike]|h|r",
 				["A buyer has been found for your auction of Enchant Weapon - Mark of the Shattered Hand."] = "|cff0070dd|Hitem:112093:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Shattered Hand]|h|r",
-				["A buyer has been found for your auction of Enchant Cloak - Gift of Critical Strike."] = "|cff0070dd|Hitem:110652:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Critical Strike]|h|r",
+				["A buyer has been found for your auction of Enchant Cloak - Gift of Haste."] = "|cff0070dd|Hitem:110653:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Haste]|h|r",
 				["A buyer has been found for your auction of Enchant Ring - Gift of Versatility."] = "|cff0070dd|Hitem:110642:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Versatility]|h|r",
 				["A buyer has been found for your auction of Enchant Weapon - Mark of Warsong."] = "|cff0070dd|Hitem:112164:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Warsong]|h|r",
 				["A buyer has been found for your auction of Enchant Neck - Gift of Haste."] = "|cff0070dd|Hitem:110646:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Haste]|h|r",
 				["A buyer has been found for your auction of Enchant Neck - Gift of Multistrike."] = "|cff0070dd|Hitem:110648:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Multistrike]|h|r",
 				["A buyer has been found for your auction of Enchant Weapon - Mark of the Thunderlord."] = "|cff0070dd|Hitem:110682:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Thunderlord]|h|r",
-				["A buyer has been found for your auction of Enchant Ring - Breath of Versatility."] = "|cffffffff|Hitem:110621:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Versatility]|h|r",
+				["A buyer has been found for your auction of Enchant Weapon - Mark of Blackrock."] = "|cff0070dd|Hitem:112160:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Blackrock]|h|r",
 				["A buyer has been found for your auction of Enchant Neck - Gift of Critical Strike."] = "|cff0070dd|Hitem:110645:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Critical Strike]|h|r",
 				["A buyer has been found for your auction of Enchant Cloak - Breath of Haste."] = "|cffffffff|Hitem:110632:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Haste]|h|r",
 				["A buyer has been found for your auction of Enchant Cloak - Gift of Versatility."] = "|cff0070dd|Hitem:110656:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Versatility]|h|r",
@@ -712,35 +668,33 @@ TradeSkillMaster_AdditionsDB = {
 				["A buyer has been found for your auction of Enchant Cloak - Gift of Mastery."] = "|cff0070dd|Hitem:110654:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Mastery]|h|r",
 				["A buyer has been found for your auction of Enchant Cloak - Breath of Versatility."] = "|cffffffff|Hitem:110635:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Versatility]|h|r",
 				["A buyer has been found for your auction of Enchant Neck - Breath of Haste."] = "|cffffffff|Hitem:110625:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Haste]|h|r",
-				["A buyer has been found for your auction of Giant Dinosaur Bone."] = "|cffffffff|Hitem:94288:0:0:0:0:0:0:0:1:0:0:0:0|h[Giant Dinosaur Bone]|h|r",
 				["A buyer has been found for your auction of Enchant Weapon - Mark of Bleeding Hollow."] = "|cff0070dd|Hitem:118015:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Bleeding Hollow]|h|r",
 				["A buyer has been found for your auction of Enchant Ring - Gift of Critical Strike."] = "|cff0070dd|Hitem:110638:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Critical Strike]|h|r",
 				["A buyer has been found for your auction of Enchant Weapon - Mark of Shadowmoon."] = "|cff0070dd|Hitem:112115:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Shadowmoon]|h|r",
 				["A buyer has been found for your auction of Enchant Cloak - Breath of Critical Strike."] = "|cffffffff|Hitem:110631:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Critical Strike]|h|r",
-				["A buyer has been found for your auction of Enchant Weapon - Mark of Blackrock."] = "|cff0070dd|Hitem:112160:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Blackrock]|h|r",
-				["A buyer has been found for your auction of Enchant Ring - Gift of Mastery."] = "|cff0070dd|Hitem:110640:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Mastery]|h|r",
-				["A buyer has been found for your auction of Enchant Ring - Breath of Critical Strike."] = "|cffffffff|Hitem:110617:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Critical Strike]|h|r",
-				["A buyer has been found for your auction of Medallion of the Legion."] = "|cff0070dd|Hitem:128315:0:0:0:0:0:0:0:1:0:0:0:0|h[Medallion of the Legion]|h|r",
-				["A buyer has been found for your auction of Enchant Cloak - Breath of Multistrike."] = "|cffffffff|Hitem:110634:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Multistrike]|h|r",
-				["A buyer has been found for your auction of Enchant Neck - Gift of Mastery."] = "|cff0070dd|Hitem:110647:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Mastery]|h|r",
-				["A buyer has been found for your auction of Enchant Ring - Breath of Multistrike."] = "|cffffffff|Hitem:110620:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Multistrike]|h|r",
-				["A buyer has been found for your auction of Enchant Neck - Breath of Versatility."] = "|cffffffff|Hitem:110628:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Versatility]|h|r",
-				["A buyer has been found for your auction of Enchant Neck - Breath of Mastery."] = "|cffffffff|Hitem:110626:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Mastery]|h|r",
 				["A buyer has been found for your auction of Enchant Ring - Breath of Haste."] = "|cffffffff|Hitem:110618:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Haste]|h|r",
-				["A buyer has been found for your auction of Enchant Cloak - Breath of Mastery."] = "|cffffffff|Hitem:110633:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Mastery]|h|r",
+				["A buyer has been found for your auction of Enchant Ring - Breath of Critical Strike."] = "|cffffffff|Hitem:110617:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Critical Strike]|h|r",
 				["A buyer has been found for your auction of Enchant Ring - Gift of Haste."] = "|cff0070dd|Hitem:110639:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Haste]|h|r",
-				["A buyer has been found for your auction of Enchant Cloak - Gift of Haste."] = "|cff0070dd|Hitem:110653:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Haste]|h|r",
-				["A buyer has been found for your auction of Enchant Weapon - Mark of the Frostwolf."] = "|cff0070dd|Hitem:112165:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Frostwolf]|h|r",
+				["A buyer has been found for your auction of Enchant Cloak - Breath of Multistrike."] = "|cffffffff|Hitem:110634:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Multistrike]|h|r",
 				["A buyer has been found for your auction of Enchant Cloak - Gift of Multistrike."] = "|cff0070dd|Hitem:110655:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Multistrike]|h|r",
+				["A buyer has been found for your auction of Enchant Neck - Gift of Mastery."] = "|cff0070dd|Hitem:110647:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Mastery]|h|r",
+				["A buyer has been found for your auction of Enchant Weapon - Mark of the Frostwolf."] = "|cff0070dd|Hitem:112165:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Frostwolf]|h|r",
+				["A buyer has been found for your auction of Enchant Neck - Breath of Mastery."] = "|cffffffff|Hitem:110626:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Mastery]|h|r",
+				["A buyer has been found for your auction of Enchant Ring - Gift of Mastery."] = "|cff0070dd|Hitem:110640:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Mastery]|h|r",
+				["A buyer has been found for your auction of Enchant Ring - Breath of Multistrike."] = "|cffffffff|Hitem:110620:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Multistrike]|h|r",
+				["A buyer has been found for your auction of Enchant Cloak - Breath of Mastery."] = "|cffffffff|Hitem:110633:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Mastery]|h|r",
+				["A buyer has been found for your auction of Enchant Neck - Breath of Versatility."] = "|cffffffff|Hitem:110628:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Versatility]|h|r",
+				["A buyer has been found for your auction of Enchant Cloak - Gift of Critical Strike."] = "|cff0070dd|Hitem:110652:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Critical Strike]|h|r",
+				["A buyer has been found for your auction of Enchant Ring - Breath of Versatility."] = "|cffffffff|Hitem:110621:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Versatility]|h|r",
 			},
 			["auctionPrices"] = {
 				["|cff0070dd|Hitem:110649:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Versatility]|h|r"] = {
-					3472500, -- [1]
-					3472500, -- [2]
+					5546500, -- [1]
+					5546500, -- [2]
 				},
 				["|cff0070dd|Hitem:110641:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Multistrike]|h|r"] = {
-					3237500, -- [1]
-					3237500, -- [2]
+					2995000, -- [1]
+					2995000, -- [2]
 				},
 				["|cff0070dd|Hitem:110652:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Critical Strike]|h|r"] = {
 					2995000, -- [1]
@@ -757,169 +711,164 @@ TradeSkillMaster_AdditionsDB = {
 					2476150, -- [5]
 				},
 				["|cff0070dd|Hitem:112164:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Warsong]|h|r"] = {
-					11415000, -- [1]
-					11415000, -- [2]
+					11445000, -- [1]
+					11445000, -- [2]
 				},
 				["|cff0070dd|Hitem:110656:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Versatility]|h|r"] = {
-					3457500, -- [1]
-					3457500, -- [2]
+					3427350, -- [1]
+					3427350, -- [2]
 				},
 				["|cff0070dd|Hitem:110640:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Mastery]|h|r"] = {
-					3314874, -- [1]
-					3314874, -- [2]
-					3314874, -- [3]
-					3314874, -- [4]
+					2764999, -- [1]
+					2764999, -- [2]
+					2764999, -- [3]
 				},
 				["|cffffffff|Hitem:110619:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Mastery]|h|r"] = {
-					639998, -- [1]
-					639998, -- [2]
+					545000, -- [1]
+					545000, -- [2]
 				},
 				["|cffffffff|Hitem:110625:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Haste]|h|r"] = {
-					395000, -- [1]
-					395000, -- [2]
-					395000, -- [3]
+					384800, -- [1]
+					384800, -- [2]
+					384800, -- [3]
 				},
 				["|cff0070dd|Hitem:110655:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Multistrike]|h|r"] = {
-					2799460, -- [1]
-					2799460, -- [2]
+					2375460, -- [1]
+					2375460, -- [2]
 				},
 				["|cff0070dd|Hitem:110646:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Haste]|h|r"] = {
-					2905375, -- [1]
-					2905375, -- [2]
-					2905375, -- [3]
-					2905375, -- [4]
+					2822864, -- [1]
+					2822864, -- [2]
+					2822864, -- [3]
+					2822864, -- [4]
+					2822864, -- [5]
 				},
 				["|cffffffff|Hitem:110618:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Haste]|h|r"] = {
-					439000, -- [1]
-					439000, -- [2]
+					395000, -- [1]
+					395000, -- [2]
 				},
 				["|cffffffff|Hitem:110632:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Haste]|h|r"] = {
-					387500, -- [1]
-					387500, -- [2]
-					387500, -- [3]
+					377300, -- [1]
+					377300, -- [2]
+					377300, -- [3]
 				},
 				["|cffffffff|Hitem:110627:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Multistrike]|h|r"] = {
-					390000, -- [1]
-					390000, -- [2]
+					379800, -- [1]
+					379800, -- [2]
 				},
 				["|cffffffff|Hitem:110626:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Mastery]|h|r"] = {
-					443700, -- [1]
-					443700, -- [2]
+					389900, -- [1]
+					389900, -- [2]
 				},
 				["|cff0070dd|Hitem:112093:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Shattered Hand]|h|r"] = {
-					4745000, -- [1]
-					4745000, -- [2]
-					4745000, -- [3]
-					4745000, -- [4]
+					3975000, -- [1]
+					3975000, -- [2]
+					3975000, -- [3]
+					3975000, -- [4]
 				},
 				["|cffffffff|Hitem:110624:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Critical Strike]|h|r"] = {
-					395000, -- [1]
-					395000, -- [2]
+					384800, -- [1]
+					384800, -- [2]
 				},
 				["|cffffffff|Hitem:110634:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Multistrike]|h|r"] = {
-					395000, -- [1]
-					395000, -- [2]
-					395000, -- [3]
+					384800, -- [1]
+					384800, -- [2]
+					384800, -- [3]
 				},
 				["|cff0070dd|Hitem:118015:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Bleeding Hollow]|h|r"] = {
-					10995000, -- [1]
-					10995000, -- [2]
-				},
-				["|cff0070dd|Hitem:128315:0:0:0:0:0:0:0:1:0:0:0:0|h[Medallion of the Legion]|h|r"] = {
-					61495000, -- [1]
+					10493999, -- [1]
+					10493999, -- [2]
+					10493999, -- [3]
+					10493999, -- [4]
+					10493999, -- [5]
 				},
 				["|cffffffff|Hitem:110621:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Versatility]|h|r"] = {
-					395000, -- [1]
-					395000, -- [2]
+					384800, -- [1]
+					384800, -- [2]
 				},
 				["|cffffffff|Hitem:110633:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Mastery]|h|r"] = {
-					295000, -- [1]
-					295000, -- [2]
+					266060, -- [1]
+					266060, -- [2]
 				},
 				["|cffffffff|Hitem:110635:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Versatility]|h|r"] = {
-					345000, -- [1]
-					345000, -- [2]
-					345000, -- [3]
+					334800, -- [1]
+					334800, -- [2]
 				},
 				["|cff0070dd|Hitem:110682:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Thunderlord]|h|r"] = {
-					20545000, -- [1]
-					20545000, -- [2]
-					20545000, -- [3]
-					20545000, -- [4]
-					20545000, -- [5]
+					19985000, -- [1]
+					19985000, -- [2]
+					19985000, -- [3]
+					19985000, -- [4]
+					19985000, -- [5]
 				},
 				["|cff0070dd|Hitem:110653:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Haste]|h|r"] = {
-					3150000, -- [1]
-					3150000, -- [2]
-					3150000, -- [3]
-					3150000, -- [4]
-				},
-				["|cff0070dd|Hitem:112160:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Blackrock]|h|r"] = {
-					4954944, -- [1]
-					4954944, -- [2]
-				},
-				["|cff0070dd|Hitem:110639:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Haste]|h|r"] = {
-					2671375, -- [1]
-					2671375, -- [2]
-					2671375, -- [3]
-				},
-				["|cffffffff|Hitem:94288:0:0:0:0:0:0:0:1:0:0:0:0|h[Giant Dinosaur Bone]|h|r"] = {
-					25000000, -- [1]
-					25000000, -- [2]
-					25000000, -- [3]
-					25000000, -- [4]
-				},
-				["|cff0070dd|Hitem:110648:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Multistrike]|h|r"] = {
-					3192874, -- [1]
-					3192874, -- [2]
-				},
-				["|cff0070dd|Hitem:110642:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Versatility]|h|r"] = {
-					3612385, -- [1]
-					3612385, -- [2]
-				},
-				["|cff0070dd|Hitem:110647:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Mastery]|h|r"] = {
-					3455000, -- [1]
-					3455000, -- [2]
-					3455000, -- [3]
-					3455000, -- [4]
-				},
-				["|cff0070dd|Hitem:110645:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Critical Strike]|h|r"] = {
-					3251398, -- [1]
-					3251398, -- [2]
-					3251398, -- [3]
-					3251398, -- [4]
-					3251398, -- [5]
+					2987500, -- [1]
+					2987500, -- [2]
+					2995000, -- [3]
+					2995000, -- [4]
+					2995000, -- [5]
 				},
 				["|cffffffff|Hitem:110628:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Versatility]|h|r"] = {
-					395000, -- [1]
-					395000, -- [2]
-					395000, -- [3]
+					384800, -- [1]
+					384800, -- [2]
+				},
+				["|cff0070dd|Hitem:112160:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Blackrock]|h|r"] = {
+					4532349, -- [1]
+					4532349, -- [2]
+				},
+				["|cff0070dd|Hitem:110648:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Multistrike]|h|r"] = {
+					3014999, -- [1]
+					3014999, -- [2]
+				},
+				["|cff0070dd|Hitem:110642:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Versatility]|h|r"] = {
+					3597285, -- [1]
+					3597285, -- [2]
 				},
 				["|cffffffff|Hitem:110617:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Critical Strike]|h|r"] = {
-					489500, -- [1]
-					489500, -- [2]
+					434500, -- [1]
+					434500, -- [2]
 				},
-				["|cffffffff|Hitem:110620:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Multistrike]|h|r"] = {
-					389999, -- [1]
-					389999, -- [2]
+				["|cff0070dd|Hitem:110645:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Critical Strike]|h|r"] = {
+					3236398, -- [1]
+					3236398, -- [2]
+					3236398, -- [3]
+					3236398, -- [4]
+					3236398, -- [5]
 				},
-				["|cff0070dd|Hitem:110638:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Critical Strike]|h|r"] = {
-					5245224, -- [1]
-					5245224, -- [2]
-					5245224, -- [3]
-					5245224, -- [4]
-					5245224, -- [5]
-				},
-				["|cff0070dd|Hitem:112165:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Frostwolf]|h|r"] = {
-					13989999, -- [1]
-					13989999, -- [2]
-				},
-				["|cffffffff|Hitem:110631:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Critical Strike]|h|r"] = {
-					443700, -- [1]
-					443700, -- [2]
+				["|cff0070dd|Hitem:110647:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Mastery]|h|r"] = {
+					3419998, -- [1]
+					3419998, -- [2]
+					3419998, -- [3]
+					3419998, -- [4]
+					3419998, -- [5]
 				},
 				["|cff0070dd|Hitem:112115:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Shadowmoon]|h|r"] = {
 					2564050, -- [1]
+					2564050, -- [2]
+				},
+				["|cffffffff|Hitem:110620:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Multistrike]|h|r"] = {
+					379799, -- [1]
+					379799, -- [2]
+				},
+				["|cff0070dd|Hitem:110638:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Critical Strike]|h|r"] = {
+					4554985, -- [1]
+					4554985, -- [2]
+					4554985, -- [3]
+					4554985, -- [4]
+					4554985, -- [5]
+				},
+				["|cff0070dd|Hitem:112165:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Frostwolf]|h|r"] = {
+					12214995, -- [1]
+					12214995, -- [2]
+				},
+				["|cffffffff|Hitem:110631:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Critical Strike]|h|r"] = {
+					389900, -- [1]
+					389900, -- [2]
+				},
+				["|cff0070dd|Hitem:110639:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Haste]|h|r"] = {
+					2594714, -- [1]
+					2594714, -- [2]
+					2594714, -- [3]
 				},
 			},
 		},
@@ -930,9 +879,9 @@ TradeSkillMaster_AdditionsDB = {
 		["Ghiaccioli - Sisters of Elune"] = "Default",
 		["Mandelbrot - Sisters of Elune"] = "Default",
 		["Belrath - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
 		["Herbinator - Sisters of Elune"] = "Default",
 		["Bracnar - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
 	},
 }

@@ -444,21 +444,12 @@ local APISplitBarFunctions
 			end
 		end
 
-		local oc = frame.MyObject.texture.original_colors --original colors
-		DF:GradientEffect ( frame.MyObject.texture, "texture", oc[1], oc[2], oc[3], oc[4], oc[1]+0.2, oc[2]+0.2, oc[3]+0.2, oc[4], .2)
 		frame.MyObject.div:SetPoint ("left", frame, "left", frame:GetValue() * (frame:GetWidth()/100) - 18, 0)
 		
 		if (frame.MyObject.have_tooltip) then
 			GameCooltip2:Reset()
 			GameCooltip2:AddLine (frame.MyObject.have_tooltip)
 			GameCooltip2:ShowCooltip (frame, "tooltip")
-		end
-		
-		local parent = frame:GetParent().MyObject
-		if (parent and parent.type == "panel") then
-			if (parent.GradientEnabled) then
-				parent:RunGradient()
-			end
 		end
 	end
 	
@@ -469,20 +460,9 @@ local APISplitBarFunctions
 				return
 			end
 		end
-		
-		local oc = frame.MyObject.texture.original_colors --original colors
-		local r, g, b, a = frame.MyObject.texture:GetVertexColor()
-		DF:GradientEffect ( frame.MyObject.texture, "texture", r, g, b, a, oc[1], oc[2], oc[3], oc[4], .2)
-		
+
 		if (frame.MyObject.have_tooltip) then 
 			DF.popup:ShowMe (false)
-		end
-		
-		local parent = frame:GetParent().MyObject
-		if (parent and parent.type == "panel") then
-			if (parent.GradientEnabled) then
-				parent:RunGradient (false)
-			end
 		end
 	end
 	

@@ -219,6 +219,23 @@ local LabelMetaFunctions = {}
 	end
 
 ------------------------------------------------------------------------------------------------------------
+
+	function LabelMetaFunctions:SetTemplate (template)
+		if (template.size) then
+			DF:SetFontSize (self.label, template.size)
+		end
+		if (template.color) then
+			local r, g, b, a = DF:ParseColors (template.color)
+			self:SetTextColor (r, g, b, a)
+		end
+		if (template.font) then
+			local SharedMedia = LibStub:GetLibrary ("LibSharedMedia-3.0")
+			local font = SharedMedia:Fetch ("font", template.font)
+			DF:SetFontFace (self.label, font)
+		end
+	end
+	
+------------------------------------------------------------------------------------------------------------
 --> object constructor
 function DF:CreateLabel (parent, text, size, color, font, member, name, layer)
 	return DF:NewLabel (parent, nil, name, member, text, font, size, color, layer)
@@ -287,22 +304,6 @@ function DF:NewLabel (parent, container, name, member, text, font, size, color, 
 	
 	if (size and type (size) == "number") then
 		DF:SetFontSize (LabelObject.label, size)
-		
-	elseif (size and type (size) == "table") then
-		local template = size
-		
-		if (template.size) then
-			DF:SetFontSize (LabelObject.label, template.size)
-		end
-		if (template.color) then
-			local r, g, b, a = DF:ParseColors (template.color)
-			LabelObject.label:SetTextColor (r, g, b, a)
-		end
-		if (template.font) then
-			local SharedMedia = LibStub:GetLibrary ("LibSharedMedia-3.0")
-			local font = SharedMedia:Fetch ("font", template.font)
-			DF:SetFontFace (LabelObject.label, font)
-		end
 	end
 	
 
@@ -310,6 +311,10 @@ function DF:NewLabel (parent, container, name, member, text, font, size, color, 
 	LabelObject.label:SetJustifyH ("LEFT")
 	
 	setmetatable (LabelObject, LabelMetaFunctions)
+
+	if (size and type (size) == "table") then
+		LabelObject:SetTemplate (size)
+	end
 	
 	return LabelObject
 end

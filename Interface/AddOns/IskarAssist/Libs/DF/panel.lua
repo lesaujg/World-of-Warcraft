@@ -259,11 +259,9 @@ local simple_panel_counter = 1
 	function PanelMetaFunctions:SetBackdropColor (color, arg2, arg3, arg4)
 		if (arg2) then
 			self.frame:SetBackdropColor (color, arg2, arg3, arg4 or 1)
-			self.frame.Gradient.OnLeave = {color, arg2, arg3, arg4 or 1}
 		else
 			local _value1, _value2, _value3, _value4 = DF:ParseColors (color)
 			self.frame:SetBackdropColor (_value1, _value2, _value3, _value4)
-			self.frame.Gradient.OnLeave = {_value1, _value2, _value3, _value4}
 		end
 	end
 	
@@ -274,16 +272,6 @@ local simple_panel_counter = 1
 		end
 		local _value1, _value2, _value3, _value4 = DF:ParseColors (color)
 		self.frame:SetBackdropBorderColor (_value1, _value2, _value3, _value4)
-	end
-	
--- gradient colors
-	function PanelMetaFunctions:SetGradient (FadeType, color)
-		local _value1, _value2, _value3, _value4 = DF:ParseColors (color)
-		if (FadeType == "OnEnter") then
-			self.frame.Gradient.OnEnter = {_value1, _value2, _value3, _value4}
-		elseif (FadeType == "OnLeave") then
-			self.frame.Gradient.OnLeave = {_value1, _value2, _value3, _value4}
-		end
 	end
 	
 -- tooltip
@@ -321,14 +309,6 @@ local simple_panel_counter = 1
 		else
 			self.widget:SetFrameStrata (strata)
 		end
-	end
-	
--- enable and disable gradients
-	function PanelMetaFunctions:DisableGradient()
-		self.GradientEnabled = false
-	end
-	function PanelMetaFunctions:EnableGradient()
-		self.GradientEnabled = true
 	end
 
 --> hooks
@@ -489,7 +469,6 @@ function DF:NewPanel (parent, container, name, member, w, h, backdrop, backdropc
 		PanelObject.OnMouseUpHook = nil
 		--> misc
 		PanelObject.is_locked = true
-		PanelObject.GradientEnabled = true
 		PanelObject.container = container
 		PanelObject.rightButtonClose = false
 	
@@ -588,6 +567,7 @@ local align_rows = function (self)
 
 	local cur_width = 0
 	local row_width = self._width / rows_shown
+
 	local sindex = 1
 	
 	wipe (self._anchors)
@@ -765,6 +745,8 @@ local update_rows = function (self, updated_rows)
 		end
 	end
 	
+	self.current_header = updated_rows
+	
 	self:AlignRows()
 
 end
@@ -798,7 +780,8 @@ end
 local create_panel_button = function (self, row)
 	row.button_total = row.button_total + 1
 	local button = DF:NewButton (row, nil, "$parentButton" .. row.button_total, "button" .. row.button_total, 120, 20)
-	button:InstallCustomTexture()
+	--, nil, nil, nil, nil, nil, nil, DF:GetTemplate ("button", "OPTIONS_BUTTON_TEMPLATE")
+	--button:InstallCustomTexture()
 
 	--> create icon and the text
 	local icon = DF:NewImage (button, nil, 20, 20)
@@ -848,7 +831,28 @@ end
 local drop_header_function = function (self)
 	wipe (self.rows)
 end
+
+local fillpanel_update_size = function (self, elapsed)
+	local panel = self.MyObject
+	
+	panel._width = panel:GetWidth()
+	panel._height = panel:GetHeight()
+		
+	panel:UpdateRowAmount()
+	if (panel.current_header) then
+		update_rows (panel, panel.current_header)
+	end
+	panel:Refresh()
+	
+	self:SetScript ("OnUpdate", nil)
+end
+
  -- ~fillpanel
+  --alias
+function DF:CreateFillPanel (parent, rows, w, h, total_lines, fill_row, autowidth, options, member, name)
+	return DF:NewFillPanel (parent, rows, name, member, w, h, total_lines, fill_row, autowidth, options)
+end
+ 
 function DF:NewFillPanel (parent, rows, name, member, w, h, total_lines, fill_row, autowidth, options)
 	
 	local panel = DF:NewPanel (parent, parent, name, member, w, h)
@@ -876,6 +880,10 @@ function DF:NewFillPanel (parent, rows, name, member, w, h, total_lines, fill_ro
 	panel._fillfunc = fill_row
 	panel._totalfunc = total_lines
 	panel._autowidth = autowidth
+	
+	panel:SetScript ("OnSizeChanged", function() 
+		panel:SetScript ("OnUpdate", fillpanel_update_size)
+	end)
 	
 	for index, t in ipairs (rows) do 
 		panel.AddRow (panel, t)
@@ -920,11 +928,7 @@ function DF:NewFillPanel (parent, rows, name, member, w, h, total_lines, fill_ro
 								button = button + 1
 								buttonwidget.index = real_index
 							
-								local func = function()
-									t.func (real_index, index)
-									panel:Refresh()
-								end
-								buttonwidget:SetClickFunction (func)
+
 							
 								if (type (results [index]) == "table") then
 									if (results [index].text) then
@@ -936,9 +940,24 @@ function DF:NewFillPanel (parent, rows, name, member, w, h, total_lines, fill_ro
 									end
 									
 									if (results [index].func) then
-										buttonwidget:SetClickFunction (results [index].func, real_index, results [index].value)
+										local func = function()
+											t.func (real_index, results [index].value)
+											panel:Refresh()
+										end
+										buttonwidget:SetClickFunction (func)
+									else
+										local func = function()
+											t.func (real_index, index)
+											panel:Refresh()
+										end
+										buttonwidget:SetClickFunction (func)
 									end
 								else
+									local func = function()
+										t.func (real_index, index)
+										panel:Refresh()
+									end
+									buttonwidget:SetClickFunction (func)
 									buttonwidget:SetText (results [index])
 								end
 								
@@ -969,6 +988,10 @@ function DF:NewFillPanel (parent, rows, name, member, w, h, total_lines, fill_ro
 	end
 	
 	function panel:Refresh()
+		if (type (panel._totalfunc) == "boolean") then
+			--> not yet initialized
+			return
+		end
 		local filled_lines = panel._totalfunc (panel)
 		local scroll_total_lines = #panel.scrollframe.lines
 		local line_height = options.rowheight
@@ -987,43 +1010,46 @@ function DF:NewFillPanel (parent, rows, name, member, w, h, total_lines, fill_ro
 	scrollframe.lines = {}
 	
 	--create lines
-	local size = options.rowheight
-	local amount = math.floor (((h-21) / size))
-	
-	for i = 1, amount do
-		local row = CreateFrame ("frame", panel:GetName() .. "Row_" .. i, panel.widget)
-		row:SetSize (1, size)
-		row.color = {1, 1, 1, .2}
-		
-		row:SetBackdrop ({bgFile = [[Interface\Tooltips\UI-Tooltip-Background]]})
-		
-		if (i%2 == 0) then
-			row:SetBackdropColor (.5, .5, .5, 0.2)
-		else
-			row:SetBackdropColor (1, 1, 1, 0.00)
+	function panel:UpdateRowAmount()
+		local size = options.rowheight
+		local amount = math.floor (((panel._height-21) / size))
+
+		for i = #scrollframe.lines+1, amount do
+			local row = CreateFrame ("frame", panel:GetName() .. "Row_" .. i, panel.widget)
+			row:SetSize (1, size)
+			row.color = {1, 1, 1, .2}
+			
+			row:SetBackdrop ({bgFile = [[Interface\Tooltips\UI-Tooltip-Background]]})
+			
+			if (i%2 == 0) then
+				row:SetBackdropColor (.5, .5, .5, 0.2)
+			else
+				row:SetBackdropColor (1, 1, 1, 0.00)
+			end
+			
+			row:SetPoint ("topleft", scrollframe, "topleft", 0, (i-1) * size * -1)
+			row:SetPoint ("topright", scrollframe, "topright", 0, (i-1) * size * -1)
+			tinsert (scrollframe.lines, row)
+			
+			row.text_available = {}
+			row.text_inuse = {}
+			row.text_total = 0
+			
+			row.entry_available = {}
+			row.entry_inuse = {}
+			row.entry_total = 0
+			
+			row.button_available = {}
+			row.button_inuse = {}
+			row.button_total = 0
+			
+			row.icon_available = {}
+			row.icon_inuse = {}
+			row.icon_total = 0
 		end
-		
-		row:SetPoint ("topleft", scrollframe, "topleft", 0, (i-1) * size * -1)
-		row:SetPoint ("topright", scrollframe, "topright", 0, (i-1) * size * -1)
-		tinsert (scrollframe.lines, row)
-		
-		row.text_available = {}
-		row.text_inuse = {}
-		row.text_total = 0
-		
-		row.entry_available = {}
-		row.entry_inuse = {}
-		row.entry_total = 0
-		
-		row.button_available = {}
-		row.button_inuse = {}
-		row.button_total = 0
-		
-		row.icon_available = {}
-		row.icon_inuse = {}
-		row.icon_total = 0
 	end
-	
+	panel:UpdateRowAmount()
+
 	panel.AlignRows (panel)
 	
 	return panel
@@ -1437,8 +1463,16 @@ local simple_panel_mouse_up = function (self, button)
 	end
 end
 local simple_panel_settitle = function (self, title)
-	self.title:SetText (title)
+	self.Title:SetText (title)
 end
+
+local simple_panel_close_click = function (self)
+	self:GetParent():GetParent():Hide()
+end
+
+local SimplePanel_frame_backdrop = {edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true}
+local SimplePanel_frame_backdrop_color = {0, 0, 0, 0.9}
+local SimplePanel_frame_backdrop_border_color = {0, 0, 0, 1}
 
 function DF:CreateSimplePanel (parent, w, h, title, name)
 	
@@ -1456,21 +1490,41 @@ function DF:CreateSimplePanel (parent, w, h, title, name)
 	f:SetFrameStrata ("FULLSCREEN")
 	f:EnableMouse()
 	f:SetMovable (true)
+	f:SetBackdrop (SimplePanel_frame_backdrop)
+	f:SetBackdropColor (unpack (SimplePanel_frame_backdrop_color))
+	f:SetBackdropBorderColor (unpack (SimplePanel_frame_backdrop_border_color))
 	tinsert (UISpecialFrames, name)
-
+	
+	local title_bar = CreateFrame ("frame", name .. "TitleBar", f)
+	title_bar:SetPoint ("topleft", f, "topleft", 2, -3)
+	title_bar:SetPoint ("topright", f, "topright", -2, -3)
+	title_bar:SetHeight (20)
+	title_bar:SetBackdrop (SimplePanel_frame_backdrop)
+	title_bar:SetBackdropColor (.2, .2, .2, 1)
+	title_bar:SetBackdropBorderColor (0, 0, 0, 1)
+	
+	local close = CreateFrame ("button", name and name .. "CloseButton", title_bar)
+	close:SetSize (16, 16)
+	close:SetNormalTexture (DF.folder .. "icons")
+	close:SetHighlightTexture (DF.folder .. "icons")
+	close:SetPushedTexture (DF.folder .. "icons")
+	close:GetNormalTexture():SetTexCoord (0, 16/128, 0, 1)
+	close:GetHighlightTexture():SetTexCoord (0, 16/128, 0, 1)
+	close:GetPushedTexture():SetTexCoord (0, 16/128, 0, 1)
+	close:SetAlpha (0.7)
+	close:SetScript ("OnClick", simple_panel_close_click)
+	f.Close = close
+	
+	local title_string = title_bar:CreateFontString (name and name .. "Title", "overlay", "GameFontNormal")
+	title_string:SetTextColor (.8, .8, .8, 1)
+	title_string:SetText (title or "")
+	f.Title = title_string
+	
+	f.Title:SetPoint ("center", title_bar, "center")
+	f.Close:SetPoint ("right", title_bar, "right", -2, 0)
+	
 	f:SetScript ("OnMouseDown", simple_panel_mouse_down)
 	f:SetScript ("OnMouseUp", simple_panel_mouse_up)
-	
-	local bg = f:CreateTexture (nil, "background")
-	bg:SetAllPoints (f)
-	bg:SetTexture (DF.folder .. "background")
-	
-	local close = CreateFrame ("button", name .. "Close", f, "UIPanelCloseButton")
-	close:SetSize (32, 32)
-	close:SetPoint ("topright", f, "topright", 0, -12)
-
-	f.title = DF:CreateLabel (f, title or "", 12, nil, "GameFontNormal")
-	f.title:SetPoint ("top", f, "top", 0, -22)
 	
 	f.SetTitle = simple_panel_settitle
 	
@@ -1678,18 +1732,23 @@ function DF:ShowPromptPanel (message, func_true, func_false)
 	
 	if (not DF.prompt_panel) then
 		local f = CreateFrame ("frame", "DetailsFrameworkPrompt", UIParent) 
-		f:SetSize (400, 100)
+		f:SetSize (400, 65)
 		f:SetFrameStrata ("DIALOG")
-		f:SetPoint ("center", UIParent, "center", 0, -300)
+		f:SetPoint ("center", UIParent, "center", 0, 300)
 		f:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true})
 		f:SetBackdropColor (0, 0, 0, 0.8)
 		f:SetBackdropBorderColor (0, 0, 0, 1)
 		
-		local button_true = DF:CreateButton (f, nil, 60, 20, "")
+		local prompt = f:CreateFontString (nil, "overlay", "GameFontNormal")
+		prompt:SetPoint ("top", f, "top", 0, -15)
+		prompt:SetJustifyH ("center")
+		f.prompt = prompt
+		
+		local button_true = DF:CreateButton (f, nil, 60, 20, "Yes")
 		button_true:SetPoint ("bottomleft", f, "bottomleft", 5, 5)
 		f.button_true = button_true
 
-		local button_false = DF:CreateButton (f, nil, 60, 20, "")
+		local button_false = DF:CreateButton (f, nil, 60, 20, "No")
 		button_false:SetPoint ("bottomright", f, "bottomright", -5, 5)
 		f.button_false = button_false
 		
@@ -1700,6 +1759,7 @@ function DF:ShowPromptPanel (message, func_true, func_false)
 				if (not okey) then
 					print ("error:", errormessage)
 				end
+				f:Hide()
 			end
 		end)
 		
@@ -1710,6 +1770,7 @@ function DF:ShowPromptPanel (message, func_true, func_false)
 				if (not okey) then
 					print ("error:", errormessage)
 				end
+				f:Hide()
 			end
 		end)
 		
@@ -1719,11 +1780,67 @@ function DF:ShowPromptPanel (message, func_true, func_false)
 	
 	assert (type (func_true) == "function" and type (func_false) == "function", "ShowPromptPanel expects two functions.")
 	
+	DF.promtp_panel.prompt:SetText (message)
 	DF.promtp_panel.button_true.true_function = func_true
 	DF.promtp_panel.button_false.false_function = func_false
 	
 	DF.promtp_panel:Show()
 end
+
+
+function DF:ShowTextPromptPanel (message, callback)
+	
+	if (not DF.text_prompt_panel) then
+		
+		local f = CreateFrame ("frame", "DetailsFrameworkPrompt", UIParent) 
+		f:SetSize (400, 100)
+		f:SetFrameStrata ("DIALOG")
+		f:SetPoint ("center", UIParent, "center", 0, 300)
+		f:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true})
+		f:SetBackdropColor (0, 0, 0, 0.8)
+		f:SetBackdropBorderColor (0, 0, 0, 1)
+		
+		local prompt = f:CreateFontString (nil, "overlay", "GameFontNormal")
+		prompt:SetPoint ("top", f, "top", 0, -15)
+		prompt:SetJustifyH ("center")
+		f.prompt = prompt
+		
+		local button_true = DF:CreateButton (f, nil, 60, 20, "Okey")
+		button_true:SetPoint ("bottomleft", f, "bottomleft", 10, 5)
+		f.button_true = button_true
+
+		local button_false = DF:CreateButton (f, function() f.textbox:ClearFocus(); f:Hide() end, 60, 20, "Cancel")
+		button_false:SetPoint ("bottomright", f, "bottomright", -10, 5)
+		f.button_false = button_false
+		
+		local textbox = DF:CreateTextEntry (f, function()end, 380, 20, "textbox", nil, nil, nil, nil)
+		textbox:SetPoint ("topleft", f, "topleft", 10, -45)
+
+		button_true:SetClickFunction (function()
+			local my_func = button_true.true_function
+			if (my_func) then
+				local okey, errormessage = pcall (my_func, textbox:GetText())
+				textbox:ClearFocus()
+				if (not okey) then
+					print ("error:", errormessage)
+				end
+				f:Hide()
+			end
+		end)
+	
+		f:Hide()
+		DF.text_prompt_panel = f
+	end
+
+	DF.text_prompt_panel:Show()
+	
+	DF.text_prompt_panel.prompt:SetText (message)
+	DF.text_prompt_panel.button_true.true_function = callback
+	DF.text_prompt_panel.textbox:SetText ("")
+	DF.text_prompt_panel.textbox:SetFocus (true)
+	
+end
+
 ------------------------------------------------------------------------------------------------------------------------------------------------
 --> options button -- ~options
 function DF:CreateOptionsButton (parent, callback, name)
@@ -2126,18 +2243,22 @@ local chart_panel_align_timelabels = function (self, elapsed_time)
 end
 
 local chart_panel_set_scale = function (self, amt, func, text)
+
 	if (type (amt) ~= "number") then
 		return
 	end
 	
 	local piece = amt / 1000 / 8
+	if (not text or text == "") then
+		text = amt > 1000000 and "M" or amt > 1000 and "K"
+	end
 	
 	for i = 1, 8 do
 		if (func) then
 			self ["dpsamt" .. math.abs (i-9)]:SetText ( func (piece*i) .. (text or ""))
 		else
 			if (piece*i > 1) then
-				self ["dpsamt" .. math.abs (i-9)]:SetText ( floor (piece*i) .. (text or ""))
+				self ["dpsamt" .. math.abs (i-9)]:SetText ( format ("%.1f", piece*i) .. (text or ""))
 			else
 				self ["dpsamt" .. math.abs (i-9)]:SetText ( format ("%.3f", piece*i) .. (text or ""))
 			end
@@ -2264,7 +2385,7 @@ local create_box = function (self, next_box)
 	button:SetScript ("OnClick", function()
 		chart_panel_enable_line (self, thisbox)
 	end)
-	button:SetPoint ("center", box, "center")
+	button:SetPoint ("center", box.widget or box, "center")
 	
 	thisbox.button = button
 	
@@ -2440,7 +2561,7 @@ local chart_panel_add_data = function (self, graphicData, color, name, elapsed_t
 
 	local f = self
 	self = self.Graphic
-	
+
 	local _data = {}
 	local max_value = graphicData.max_value
 	local amount = #graphicData

@@ -1,5 +1,5 @@
 
-local major, minor = "DetailsFramework-1.0", 5
+local major, minor = "DetailsFramework-1.0", 9
 local DF, oldminor = LibStub:NewLibrary (major, minor)
 
 if (not DF) then
@@ -22,6 +22,8 @@ DF.PanelCounter = 1
 DF.ButtonCounter = 1
 DF.SliderCounter = 1
 DF.SplitBarCounter = 1
+
+LibStub:GetLibrary("AceTimer-3.0"):Embed (DF)
 
 do
 	local path = string.match (debugstack (1, 1, 0), "AddOns\\(.+)fw.lua")
@@ -80,11 +82,19 @@ local embed_functions = {
 	"Create1PxPanel",
 	"CreateFeedbackButton",
 	"CreateOptionsFrame",
+	"NewSpecialLuaEditorEntry",
 	"ShowPromptPanel",
+	"ShowTextPromptPanel",
 	"www_icons",
+	"GetTemplate",
+	"GetFrameworkFolder",
 }
 
 DF.table = {}
+
+function DF:GetFrameworkFolder()
+	return DF.folder
+end
 
 function DF.table.reverse (t)
 	local new = {}
@@ -115,7 +125,7 @@ function DF.table.deploy (t1, t2)
 		if (type (value) == "table") then
 			t1 [key] = t1 [key] or {}
 			DF.table.deploy (t1 [key], t2 [key])
-		elseif (not t1 [key]) then
+		elseif (t1 [key] == nil) then
 			t1 [key] = value
 		end
 	end
@@ -157,6 +167,10 @@ DF.www_icons = {
 	mmoc = {0, 0.7890625, 80/123, 123/128},
 }
 
+function DF:IntegerToTimer (value)
+	return "" .. floor (value/60) .. ":" .. format ("%02.f", value%60)
+end
+
 function DF:Embed (target)
 	for k, v in pairs (embed_functions) do
 		target[v] = self[v]
@@ -174,6 +188,9 @@ function DF:SetFontSize (fontString, ...)
 	fontString:SetFont (fonte, max (...), flags)
 end
 function DF:SetFontFace (fontString, fontface)
+
+	
+
 	local _, size, flags = fontString:GetFont()
 	fontString:SetFont (fontface, size, flags)
 end
@@ -567,7 +584,11 @@ end
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --> menus
 	
-	function DF:BuildMenu (parent, menu, x_offset, y_offset, height, use_two_points)
+	function DF:BuildMenu (parent, menu, x_offset, y_offset, height, use_two_points, text_template, dropdown_template, switch_template, switch_is_box, slider_template, button_template)
+		
+		if (not parent.widget_list) then
+			DF:SetAsOptionsPanel (parent)
+		end
 		
 		local cur_x = x_offset
 		local cur_y = y_offset
@@ -582,18 +603,18 @@ end
 				-- do nothing
 		
 			elseif (widget_table.type == "label" or widget_table.type == "text") then
-				local label = DF:CreateLabel (parent, widget_table.get() or widget_table.text, widget_table.text_template or widget_table.size, widget_table.color, widget_table.font, nil, "$parentWidget" .. index, "overlay")
+				local label = DF:CreateLabel (parent, widget_table.get() or widget_table.text, widget_table.text_template or text_template or widget_table.size, widget_table.color, widget_table.font, nil, "$parentWidget" .. index, "overlay")
 				label._get = widget_table.get
 				label.widget_type = "label"
 				label:SetPoint (cur_x, cur_y)
 				tinsert (parent.widget_list, label)
 			
 			elseif (widget_table.type == "select" or widget_table.type == "dropdown") then
-				local dropdown = DF:NewDropDown (parent, nil, "$parentWidget" .. index, nil, 140, 18, widget_table.values, widget_table.get())
+				local dropdown = DF:NewDropDown (parent, nil, "$parentWidget" .. index, nil, 140, 18, widget_table.values, widget_table.get(), dropdown_template)
 				dropdown.tooltip = widget_table.desc
 				dropdown._get = widget_table.get
 				dropdown.widget_type = "select"
-				local label = DF:NewLabel (parent, nil, "$parentLabel" .. index, nil, widget_table.name .. (use_two_points and ": " or ""), "GameFontNormal", widget_table.text_template or 12)
+				local label = DF:NewLabel (parent, nil, "$parentLabel" .. index, nil, widget_table.name .. (use_two_points and ": " or ""), "GameFontNormal", widget_table.text_template or text_template or 12)
 				dropdown:SetPoint ("left", label, "right", 2)
 				label:SetPoint (cur_x, cur_y)
 				
@@ -605,13 +626,17 @@ end
 				tinsert (parent.widget_list, dropdown)
 				
 			elseif (widget_table.type == "toggle" or widget_table.type == "switch") then
-				local switch = DF:NewSwitch (parent, nil, "$parentWidget" .. index, nil, 60, 20, nil, nil, widget_table.get())
+				local switch = DF:NewSwitch (parent, nil, "$parentWidget" .. index, nil, 60, 20, nil, nil, widget_table.get(), nil, nil, nil, nil, switch_template)
 				switch.tooltip = widget_table.desc
 				switch._get = widget_table.get
 				switch.widget_type = "toggle"
 				switch.OnSwitch = widget_table.set
 				
-				local label = DF:NewLabel (parent, nil, "$parentLabel" .. index, nil, widget_table.name .. (use_two_points and ": " or ""), "GameFontNormal", widget_table.text_template or 12)
+				if (switch_is_box) then
+					switch:SetAsCheckBox()
+				end
+				
+				local label = DF:NewLabel (parent, nil, "$parentLabel" .. index, nil, widget_table.name .. (use_two_points and ": " or ""), "GameFontNormal", widget_table.text_template or text_template or 12)
 				switch:SetPoint ("left", label, "right", 2)
 				label:SetPoint (cur_x, cur_y)
 				
@@ -624,13 +649,13 @@ end
 				
 			elseif (widget_table.type == "range" or widget_table.type == "slider") then
 				local is_decimanls = widget_table.usedecimals
-				local slider = DF:NewSlider (parent, nil, "$parentWidget" .. index, nil, 140, 20, widget_table.min, widget_table.max, widget_table.step, widget_table.get(),  is_decimanls)
+				local slider = DF:NewSlider (parent, nil, "$parentWidget" .. index, nil, 140, 20, widget_table.min, widget_table.max, widget_table.step, widget_table.get(),  is_decimanls, nil, nil, slider_template)
 				slider.tooltip = widget_table.desc
 				slider._get = widget_table.get
 				slider.widget_type = "range"
 				slider:SetHook ("OnValueChange", widget_table.set)
 				
-				local label = DF:NewLabel (parent, nil, "$parentLabel" .. index, nil, widget_table.name .. (use_two_points and ": " or ""), "GameFontNormal", widget_table.text_template or 12)
+				local label = DF:NewLabel (parent, nil, "$parentLabel" .. index, nil, widget_table.name .. (use_two_points and ": " or ""), "GameFontNormal", widget_table.text_template or text_template or 12)
 				slider:SetPoint ("left", label, "right", 2)
 				label:SetPoint (cur_x, cur_y)
 				
@@ -642,7 +667,7 @@ end
 				tinsert (parent.widget_list, slider)
 				
 			elseif (widget_table.type == "color" or widget_table.type == "color") then
-				local colorpick = DF:NewColorPickButton (parent, "$parentWidget" .. index, nil, widget_table.set)
+				local colorpick = DF:NewColorPickButton (parent, "$parentWidget" .. index, nil, widget_table.set, nil, button_template)
 				colorpick.tooltip = widget_table.desc
 				colorpick._get = widget_table.get
 				colorpick.widget_type = "color"
@@ -654,7 +679,7 @@ end
 					colorpick:SetColor (default_value, g, b, a)
 				end
 				
-				local label = DF:NewLabel (parent, nil, "$parentLabel" .. index, nil, widget_table.name .. (use_two_points and ": " or ""), "GameFontNormal", widget_table.text_template or 12)
+				local label = DF:NewLabel (parent, nil, "$parentLabel" .. index, nil, widget_table.name .. (use_two_points and ": " or ""), "GameFontNormal", widget_table.text_template or text_template or 12)
 				colorpick:SetPoint ("left", label, "right", 2)
 				label:SetPoint (cur_x, cur_y)
 				
@@ -667,8 +692,11 @@ end
 				
 			elseif (widget_table.type == "execute" or widget_table.type == "button") then
 			
-				local button = DF:NewButton (parent, nil, "$parentWidget", nil, 120, 18, widget_table.func, widget_table.param1, widget_table.param2, nil, widget_table.name)
-				button:InstallCustomTexture()
+				local button = DF:NewButton (parent, nil, "$parentWidget" .. index, nil, 120, 18, widget_table.func, widget_table.param1, widget_table.param2, nil, widget_table.name, nil, button_template)
+				if (not button_template) then
+					button:InstallCustomTexture()
+				end
+
 				button:SetPoint (cur_x, cur_y)
 				button.tooltip = widget_table.desc
 				button.widget_type = "execute"
@@ -900,3 +928,78 @@ end
 			return options_frame
 		end
 	end	
+	
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--> templates
+
+DF.font_templates = {}
+DF.font_templates ["ORANGE_FONT_TEMPLATE"] = {color = "orange", size = 11, font = "Accidental Presidency"}
+DF.font_templates ["OPTIONS_FONT_TEMPLATE"] = {color = "yellow", size = 12, font = "Accidental Presidency"}
+
+DF.dropdown_templates = {}
+DF.dropdown_templates ["OPTIONS_DROPDOWN_TEMPLATE"] = {
+	backdrop = {edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true},
+	backdropcolor = {1, 1, 1, .5},
+	backdropbordercolor = {0, 0, 0, 1},
+	onentercolor = {1, 1, 1, .5},
+	onenterbordercolor = {1, 1, 1, 1},
+}
+
+DF.switch_templates = {}
+DF.switch_templates ["OPTIONS_CHECKBOX_TEMPLATE"] = {
+	backdrop = {edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true},
+	backdropcolor = {1, 1, 1, .5},
+	backdropbordercolor = {0, 0, 0, 1},
+	width = 18,
+	height = 18,
+	enabled_backdropcolor = {1, 1, 1, .5},
+	disabled_backdropcolor = {1, 1, 1, .2},
+	onenterbordercolor = {1, 1, 1, 1},
+}
+DF.switch_templates ["OPTIONS_CHECKBOX_BRIGHT_TEMPLATE"] = {
+	backdrop = {edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true},
+	backdropcolor = {1, 1, 1, .5},
+	backdropbordercolor = {0, 0, 0, 1},
+	width = 18,
+	height = 18,
+	enabled_backdropcolor = {1, 1, 1, .5},
+	disabled_backdropcolor = {1, 1, 1, .5},
+	onenterbordercolor = {1, 1, 1, 1},
+}
+
+DF.button_templates = {}
+DF.button_templates ["OPTIONS_BUTTON_TEMPLATE"] = {
+	backdrop = {edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true},
+	backdropcolor = {1, 1, 1, .5},
+	backdropbordercolor = {0, 0, 0, 1},
+}
+
+DF.slider_templates = {}
+DF.slider_templates ["OPTIONS_SLIDER_TEMPLATE"] = {
+	backdrop = {edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true},
+	backdropcolor = {1, 1, 1, .5},
+	backdropbordercolor = {0, 0, 0, 1},
+	onentercolor = {1, 1, 1, .5},
+	onenterbordercolor = {1, 1, 1, 1},
+	thumbtexture = [[Interface\Tooltips\UI-Tooltip-Background]],
+	thumbwidth = 16,
+	thumbheight = 14,
+	thumbcolor = {0, 0, 0, 0.5},
+}
+
+function DF:GetTemplate (type, template_name)
+	local template_table
+	if (type == "font") then
+		template_table = DF.font_templates
+	elseif (type == "dropdown") then
+		template_table = DF.dropdown_templates
+	elseif (type == "button") then
+		template_table = DF.button_templates
+	elseif (type == "switch") then
+		template_table = DF.switch_templates
+	elseif (type == "slider") then
+		template_table = DF.slider_templates
+	end
+	return template_table [template_name]
+end
+	
