@@ -9,7 +9,7 @@ H: 32
 Frame: TSMMainFrame1
 FrameLevel: 31
 Anchor: BOTTOM
-X: 34
+X: 35
 Y: -37
 W: 985
 H: 679
@@ -20,3 +20,10 @@ X: 0
 Y: 128
 W: 150
 H: 42
+Frame: AuctionFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 832
+H: 447
