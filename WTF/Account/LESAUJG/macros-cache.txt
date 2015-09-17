@@ -10,6 +10,9 @@ END
 VER 3 000000000000008A "Des" "ACHIEVEMENT_GUILDPERK_QUICK AND DEAD"
 /tar Des
 END
+VER 3 0000000000000097 "Entanglement" "INV_MISC_QUESTIONMARK"
+/tar entanglement
+END
 VER 3 000000000000008C "Garrison Report" "GARRISON_BUILDING_LUMBERMILL"
 END
 VER 3 0000000000000090 "GetKraken!" "ABILITY_HUNTER_EXPLOSIVESHOT"
@@ -47,6 +50,7 @@ VER 3 0000000000000088 "MD+CS" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000087 "RandomMount" "INV_MISC_QUESTIONMARK"
 /cast [mod:ctrl] Azure Water Strider
+/cast [mod:shift] Ironbound Proto-drake
 /cast [noswimming,mod:shift] Traveler's Tundra Mammoth
 #showtooltip [nomod] White Ram
 /click [nobtn:2] LiteMount

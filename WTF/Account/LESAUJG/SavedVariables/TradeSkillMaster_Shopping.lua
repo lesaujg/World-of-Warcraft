@@ -212,11 +212,11 @@ TradeSkillMaster_ShoppingDB = {
 		},
 		["previousSearches"] = {
 			"critical strike", -- [1]
-			"miscellaneous/mount", -- [2]
-			"universal", -- [3]
-			"arcane c", -- [4]
-			"temporal crystal/exact", -- [5]
-			"Giant Dinosaur Bone/exact", -- [6]
+			"Giant Dinosaur Bone/exact", -- [2]
+			"arcane c", -- [3]
+			"universal", -- [4]
+			"miscellaneous/mount", -- [5]
+			"temporal crystal/exact", -- [6]
 			"water", -- [7]
 			"heartb", -- [8]
 			"hearthb", -- [9]
@@ -312,6 +312,7 @@ TradeSkillMaster_ShoppingDB = {
 			"Mysterious Essence/exact", -- [99]
 			"Mysterious Essence/exact/x15", -- [100]
 		},
+		["sidebarBtn"] = 2,
 	},
 	["profileKeys"] = {
 		["Sanjuri - Sisters of Elune"] = "Sanjuri - Sisters of Elune",

@@ -24808,7 +24808,7 @@ WeakAurasSaved = {
 			},
 			["id"] = "ToTHCount",
 			["frameStrata"] = 5,
-			["width"] = 1.37143683433533,
+			["width"] = 1.28001344203949,
 			["anchorPoint"] = "CENTER",
 			["font"] = "ElvUI Font",
 			["numTriggers"] = 1,
@@ -24826,7 +24826,7 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["height"] = 35.6571426391602,
+			["height"] = 35.8399887084961,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
