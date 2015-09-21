@@ -93,6 +93,21 @@ PawnCommon = {
 		},
 		["\"Wowhead\":PaladinTank"] = {
 			["PerCharacterOptions"] = {
+				["Herbinator-Sisters of Elune"] = {
+					["Visible"] = true,
+					["BestItems"] = {
+						["INVTYPE_FEET"] = {
+							0.244514106583072, -- [1]
+							"item:43:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_LEGS"] = {
+							0.366771159874608, -- [1]
+							"item:44:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+					},
+				},
 				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
@@ -158,21 +173,6 @@ PawnCommon = {
 							56.1724137931035, -- [1]
 							"item:122381:0:0:0:0:0:0:0:0:70:0:0:1:583:0:0:0", -- [2]
 							99, -- [3]
-						},
-					},
-				},
-				["Herbinator-Sisters of Elune"] = {
-					["Visible"] = true,
-					["BestItems"] = {
-						["INVTYPE_FEET"] = {
-							0.244514106583072, -- [1]
-							"item:43:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_LEGS"] = {
-							0.366771159874608, -- [1]
-							"item:44:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
-							0, -- [3]
 						},
 					},
 				},
@@ -293,6 +293,11 @@ PawnCommon = {
 		},
 		["\"Wowhead\":PaladinHoly"] = {
 			["PerCharacterOptions"] = {
+				["Herbinator-Sisters of Elune"] = {
+					["Visible"] = true,
+					["BestItems"] = {
+					},
+				},
 				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
@@ -359,11 +364,6 @@ PawnCommon = {
 							"item:122381:0:0:0:0:0:0:0:0:70:0:0:1:583:0:0:0", -- [2]
 							99, -- [3]
 						},
-					},
-				},
-				["Herbinator-Sisters of Elune"] = {
-					["Visible"] = true,
-					["BestItems"] = {
 					},
 				},
 			},
@@ -1022,6 +1022,11 @@ PawnCommon = {
 		},
 		["\"Wowhead\":PaladinRetribution"] = {
 			["PerCharacterOptions"] = {
+				["Herbinator-Sisters of Elune"] = {
+					["Visible"] = true,
+					["BestItems"] = {
+					},
+				},
 				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
@@ -1088,11 +1093,6 @@ PawnCommon = {
 							"item:122381:0:0:0:0:0:0:0:0:70:0:0:1:583:0:0:0", -- [2]
 							99, -- [3]
 						},
-					},
-				},
-				["Herbinator-Sisters of Elune"] = {
-					["Visible"] = true,
-					["BestItems"] = {
 					},
 				},
 			},

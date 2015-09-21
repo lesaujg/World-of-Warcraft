@@ -34,6 +34,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Alchemical Catalyst",
 					["players"] = {
 						["Bracnar"] = {
+							["CoolDownTime"] = 1442829650.827,
 							["knownCraft"] = true,
 						},
 					},
@@ -246,14 +247,14 @@ TradeSkillMaster_CoolDownsDB = {
 					},
 					["spellID"] = 176058,
 				},
-				[177043] = {
-					["Name"] = "Secret of Draenor Enchanting",
+				[60893] = {
+					["Name"] = "Alchemy: Northrend Alchemy Research",
 					["players"] = {
 						["Bracnar"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 177043,
+					["spellID"] = 60893,
 				},
 				[66660] = {
 					["Name"] = "King's Amber",
@@ -363,14 +364,14 @@ TradeSkillMaster_CoolDownsDB = {
 					},
 					["spellID"] = 17566,
 				},
-				[60893] = {
-					["Name"] = "Alchemy: Northrend Alchemy Research",
+				[53774] = {
+					["Name"] = "Eternal Water",
 					["players"] = {
 						["Bracnar"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 60893,
+					["spellID"] = 53774,
 				},
 				[131691] = {
 					["Name"] = "Facets of Research",
@@ -498,14 +499,14 @@ TradeSkillMaster_CoolDownsDB = {
 					},
 					["spellID"] = 131593,
 				},
-				[53774] = {
-					["Name"] = "Eternal Water",
+				[177043] = {
+					["Name"] = "Secret of Draenor Enchanting",
 					["players"] = {
 						["Bracnar"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 53774,
+					["spellID"] = 177043,
 				},
 				[28584] = {
 					["Name"] = "Primal Earth",
@@ -565,6 +566,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Temporal Crystal",
 					["players"] = {
 						["Bracnar"] = {
+							["CoolDownTime"] = 1442829642.555,
 							["knownCraft"] = true,
 						},
 					},

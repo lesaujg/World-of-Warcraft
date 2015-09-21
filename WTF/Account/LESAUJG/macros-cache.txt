@@ -50,7 +50,7 @@ VER 3 0000000000000088 "MD+CS" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000087 "RandomMount" "INV_MISC_QUESTIONMARK"
 /cast [mod:ctrl] Azure Water Strider
-/cast [mod:shift] Ironbound Proto-drake
+/cast [mod:alt] Ironbound Proto-drake
 /cast [noswimming,mod:shift] Traveler's Tundra Mammoth
 #showtooltip [nomod] White Ram
 /click [nobtn:2] LiteMount
