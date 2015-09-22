@@ -8,16 +8,9 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 149,
 			["interrupts"] = 0,
-			["power"] = {
-				950, -- [1]
-				326, -- [2]
-				230, -- [3]
-				4, -- [4]
-				[9] = 19,
-				[0] = 24520,
-			},
-			["mobtaken"] = 11946542,
+			["multistrikes"] = 12,
 			["damagetaken"] = 4717361,
+			["gotboss"] = true,
 			["damage"] = 11989095,
 			["players"] = {
 				{
@@ -138,8 +131,8 @@ SkadaPerCharDB = {
 					["time"] = 149,
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
-					["maxhp"] = 391620,
 					["dispells"] = 0,
+					["first"] = 1442806987,
 					["damage"] = 4562101,
 					["damagespells"] = {
 						["Steady Shot"] = {
@@ -228,30 +221,30 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1442807135.00101,
 									["amount"] = -15743,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 121005,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [1]
 								{
 									["ts"] = 1442807135.03502,
 									["amount"] = -16298,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 121005,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [2]
 								{
 									["ts"] = 1442807135.44103,
 									["amount"] = -16307,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 56316,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [3]
 								{
 									["ts"] = 1442807135.44104,
 									["amount"] = -60533,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 56316,
 									["spellid"] = 88163,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [4]
 								{
 									["spellname"] = "Bracnar dies",
@@ -262,72 +255,72 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1442807132.61406,
 									["amount"] = -28943,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 269976,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [6]
 								{
 									["ts"] = 1442807132.61407,
 									["amount"] = -28301,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 241675,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [7]
 								{
 									["ts"] = 1442807133.01608,
 									["amount"] = -15889,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 241675,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [8]
 								{
 									["ts"] = 1442807133.10709,
 									["amount"] = -27046,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 214629,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [9]
 								{
 									["ts"] = 1442807133.5891,
 									["amount"] = -28550,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 170190,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [10]
 								{
 									["ts"] = 1442807133.68611,
 									["amount"] = -17023,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 170190,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [11]
 								{
 									["ts"] = 1442807133.72112,
 									["amount"] = -16496,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 170190,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [12]
 								{
 									["ts"] = 1442807134.01813,
 									["amount"] = -15666,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 136671,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [13]
 								{
 									["ts"] = 1442807134.71414,
 									["amount"] = -16887,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 121005,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [14]
 								{
 									["ts"] = 1442807134.71415,
 									["amount"] = -15761,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 121005,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [15]
 								["pos"] = 6,
 							},
@@ -335,17 +328,9 @@ SkadaPerCharDB = {
 						}, -- [1]
 					},
 					["damagetaken"] = 597801,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[77443] = 126,
-								[157722] = 200,
-							},
-							["amount"] = 326,
-						},
-					},
+					["shielding"] = 0,
 					["id"] = "Player-1169-06A1ACBD",
-					["first"] = 1442806987,
+					["maxhp"] = 391620,
 					["healing"] = 134381,
 					["damagetakenspells"] = {
 						["Shrapnel Blast"] = {
@@ -354,13 +339,13 @@ SkadaPerCharDB = {
 							["damage"] = 197835,
 							["max"] = 29361,
 							["name"] = "Shrapnel Blast",
-							["min"] = 27046,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 7,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 27046,
 							["absorbed"] = 0,
 						},
 						["Slag Blast"] = {
@@ -369,13 +354,13 @@ SkadaPerCharDB = {
 							["damage"] = 30699,
 							["max"] = 6257,
 							["name"] = "Slag Blast",
-							["min"] = 2542,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 8,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2542,
 							["absorbed"] = 0,
 						},
 						["Blackrock Mortar"] = {
@@ -384,13 +369,13 @@ SkadaPerCharDB = {
 							["damage"] = 97147,
 							["max"] = 97147,
 							["name"] = "Blackrock Mortar",
-							["min"] = 97147,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 97147,
 							["absorbed"] = 0,
 						},
 						["Attack"] = {
@@ -399,21 +384,21 @@ SkadaPerCharDB = {
 							["damage"] = 272120,
 							["max"] = 60533,
 							["name"] = "Attack",
-							["min"] = 15666,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 14,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 15666,
 							["absorbed"] = 0,
 						},
 					},
 					["healed"] = {
-						["Creature-0-3018-1208-14641-92993-00007F7CFF"] = {
+						["Creature-0-3018-1208-14641-92993-0000FF7CFF"] = {
 							["role"] = "DAMAGER",
 							["name"] = "Bracnar",
-							["amount"] = 1381,
+							["amount"] = 1351,
 							["class"] = "HUNTER",
 							["shielding"] = 0,
 						},
@@ -424,20 +409,6 @@ SkadaPerCharDB = {
 							["class"] = "HUNTER",
 							["shielding"] = 0,
 						},
-						["Creature-0-3018-1208-14641-92993-0001FF7CFF"] = {
-							["role"] = "DAMAGER",
-							["name"] = "Bracnar",
-							["amount"] = 974,
-							["class"] = "HUNTER",
-							["shielding"] = 0,
-						},
-						["Creature-0-3018-1208-14641-92993-0000FF7CFF"] = {
-							["role"] = "DAMAGER",
-							["name"] = "Bracnar",
-							["amount"] = 1351,
-							["class"] = "HUNTER",
-							["shielding"] = 0,
-						},
 						["Creature-0-3018-1208-14641-92993-00017F7CFF"] = {
 							["role"] = "DAMAGER",
 							["name"] = "Bracnar",
@@ -445,11 +416,33 @@ SkadaPerCharDB = {
 							["class"] = "HUNTER",
 							["shielding"] = 0,
 						},
+						["Creature-0-3018-1208-14641-92993-00007F7CFF"] = {
+							["role"] = "DAMAGER",
+							["name"] = "Bracnar",
+							["amount"] = 1381,
+							["class"] = "HUNTER",
+							["shielding"] = 0,
+						},
+						["Creature-0-3018-1208-14641-92993-0001FF7CFF"] = {
+							["role"] = "DAMAGER",
+							["name"] = "Bracnar",
+							["amount"] = 974,
+							["class"] = "HUNTER",
+							["shielding"] = 0,
+						},
 					},
 					["alertDamage"] = 0,
 					["name"] = "Bracnar",
 					["alertCount"] = 2,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[77443] = 126,
+								[157722] = 200,
+							},
+							["amount"] = 326,
+						},
+					},
 					["overhealing"] = 43465,
 					["alert"] = {
 						["High"] = {
@@ -587,12 +580,12 @@ SkadaPerCharDB = {
 							["uptime"] = 20,
 							["auratype"] = "BUFF",
 						},
-						["Enraged Regeneration"] = {
-							["name"] = "Enraged Regeneration",
-							["active"] = 0,
-							["id"] = 55694,
-							["uptime"] = 10,
-							["auratype"] = "BUFF",
+						["Deep Wounds"] = {
+							["name"] = "Deep Wounds",
+							["active"] = 8,
+							["id"] = 115767,
+							["uptime"] = 132,
+							["auratype"] = "DEBUFF",
 						},
 						["Bladestorm"] = {
 							["name"] = "Bladestorm",
@@ -601,12 +594,12 @@ SkadaPerCharDB = {
 							["uptime"] = 6,
 							["auratype"] = "BUFF",
 						},
-						["Deep Wounds"] = {
-							["name"] = "Deep Wounds",
-							["active"] = 8,
-							["id"] = 115767,
-							["uptime"] = 132,
-							["auratype"] = "DEBUFF",
+						["Enraged Regeneration"] = {
+							["name"] = "Enraged Regeneration",
+							["active"] = 0,
+							["id"] = 55694,
+							["uptime"] = 10,
+							["auratype"] = "BUFF",
 						},
 						["Enrage"] = {
 							["name"] = "Enrage",
@@ -671,8 +664,8 @@ SkadaPerCharDB = {
 					["time"] = 149,
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
-					["maxhp"] = 406020,
 					["dispells"] = 0,
+					["first"] = 1442806987,
 					["damage"] = 3247735,
 					["damagespells"] = {
 						["Shield Slam"] = {
@@ -752,6 +745,15 @@ SkadaPerCharDB = {
 							["max"] = 22023,
 							["damage"] = 340838,
 						},
+						["Devastate"] = {
+							["min"] = 10164,
+							["critical"] = 1,
+							["hit"] = 6,
+							["totalhits"] = 7,
+							["id"] = 20243,
+							["max"] = 23256,
+							["damage"] = 92314,
+						},
 						["Ravager"] = {
 							["min"] = 2976,
 							["multistrike"] = 5,
@@ -761,15 +763,6 @@ SkadaPerCharDB = {
 							["id"] = 156287,
 							["max"] = 7409,
 							["damage"] = 257981,
-						},
-						["Devastate"] = {
-							["min"] = 10164,
-							["critical"] = 1,
-							["hit"] = 6,
-							["totalhits"] = 7,
-							["id"] = 20243,
-							["max"] = 23256,
-							["damage"] = 92314,
 						},
 						["Heroic Strike"] = {
 							["min"] = 4964,
@@ -788,38 +781,38 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1442807122.57201,
 									["amount"] = -7621,
-									["srcname"] = "Iron Infantry",
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 									["hp"] = 395249,
 									["absorb"] = -592,
 								}, -- [1]
 								{
 									["ts"] = 1442807123.33702,
 									["amount"] = -5999,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 387628,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [2]
 								{
 									["ts"] = 1442807124.34303,
 									["amount"] = -8363,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 381629,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [3]
 								{
 									["ts"] = 1442807125.35104,
 									["amount"] = -3263,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 373266,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [4]
 								{
 									["ts"] = 1442807125.61705,
 									["amount"] = -8362,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 370003,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [5]
 								{
 									["ts"] = 1442807129.34806,
@@ -837,63 +830,63 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1442807113.46408,
 									["amount"] = 2929,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 156322,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 367380,
 									["absorb"] = 0,
 								}, -- [8]
 								{
 									["absorb"] = -698,
 									["amount"] = -2719,
-									["srcname"] = "Iron Infantry",
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 									["hp"] = 367380,
 									["ts"] = 1442807114.00309,
 								}, -- [9]
 								{
 									["absorb"] = 0,
 									["amount"] = 32987,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 25914,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 397648,
 									["ts"] = 1442807115.1631,
 								}, -- [10]
 								{
 									["absorb"] = 0,
 									["amount"] = 1465,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 156322,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 399113,
 									["ts"] = 1442807115.16311,
 								}, -- [11]
 								{
 									["ts"] = 1442807115.49612,
-									["srcname"] = "Iron Infantry",
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 									["hp"] = 399113,
 									["absorb"] = -6007,
 								}, -- [12]
 								{
 									["absorb"] = -2207,
 									["amount"] = -6350,
-									["srcname"] = "Iron Infantry",
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 									["hp"] = 399113,
 									["ts"] = 1442807116.50213,
 								}, -- [13]
 								{
 									["absorb"] = 0,
 									["amount"] = 1465,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 156322,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 394228,
 									["ts"] = 1442807116.87514,
 								}, -- [14]
 								{
 									["absorb"] = 0,
 									["amount"] = 1021,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 156322,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 395249,
 									["ts"] = 1442807118.08115,
 								}, -- [15]
@@ -903,19 +896,9 @@ SkadaPerCharDB = {
 						}, -- [1]
 					},
 					["damagetaken"] = 1387824,
-					["power"] = {
-						{
-							["spells"] = {
-								[109128] = 20,
-								[23922] = 240,
-								[12880] = 210,
-								[6572] = 480,
-							},
-							["amount"] = 950,
-						}, -- [1]
-					},
+					["shielding"] = 328000,
 					["id"] = "Player-116-074FF25B",
-					["first"] = 1442806987,
+					["maxhp"] = 406020,
 					["healing"] = 595974,
 					["damagetakenspells"] = {
 						["Blackrock-Plated Gauntlets"] = {
@@ -924,13 +907,13 @@ SkadaPerCharDB = {
 							["damage"] = 24232,
 							["max"] = 8078,
 							["name"] = "Blackrock-Plated Gauntlets",
-							["min"] = 8077,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 8077,
 							["absorbed"] = 0,
 						},
 						["Attack"] = {
@@ -939,13 +922,13 @@ SkadaPerCharDB = {
 							["damage"] = 712651,
 							["max"] = 63159,
 							["name"] = "Attack",
-							["min"] = 8,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 440759,
 							["totalhits"] = 71,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 8,
 							["absorbed"] = 80065,
 						},
 						["Shrapnel Blast"] = {
@@ -954,13 +937,13 @@ SkadaPerCharDB = {
 							["damage"] = 188468,
 							["max"] = 22092,
 							["name"] = "Shrapnel Blast",
-							["min"] = 1962,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 11,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1962,
 							["absorbed"] = 40938,
 						},
 						["Suppressive Fire"] = {
@@ -969,13 +952,13 @@ SkadaPerCharDB = {
 							["damage"] = 79454,
 							["max"] = 8457,
 							["name"] = "Suppressive Fire",
-							["min"] = 4415,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 10,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 4415,
 							["absorbed"] = 4746,
 						},
 						["Blackrock Mortar"] = {
@@ -984,13 +967,13 @@ SkadaPerCharDB = {
 							["damage"] = 263978,
 							["max"] = 75257,
 							["name"] = "Blackrock Mortar",
-							["min"] = 56683,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 4,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 56683,
 							["absorbed"] = 1362,
 						},
 						["Blackrock Grenade"] = {
@@ -999,13 +982,13 @@ SkadaPerCharDB = {
 							["damage"] = 119041,
 							["max"] = 32945,
 							["name"] = "Blackrock Grenade",
-							["min"] = 26508,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 4,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 26508,
 							["absorbed"] = 0,
 						},
 					},
@@ -1021,7 +1004,17 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Pist",
 					["alertCount"] = 0,
-					["shielding"] = 328000,
+					["power"] = {
+						{
+							["spells"] = {
+								[109128] = 20,
+								[23922] = 240,
+								[12880] = 210,
+								[6572] = 480,
+							},
+							["amount"] = 950,
+						}, -- [1]
+					},
 					["overhealing"] = 71101,
 					["alert"] = {
 					},
@@ -1092,11 +1085,11 @@ SkadaPerCharDB = {
 							["uptime"] = 32,
 							["auratype"] = "BUFF",
 						},
-						["Shallow Insight"] = {
-							["name"] = "Shallow Insight",
+						["Slice and Dice"] = {
+							["name"] = "Slice and Dice",
 							["active"] = 0,
-							["id"] = 84745,
-							["uptime"] = 18,
+							["id"] = 5171,
+							["uptime"] = 24,
 							["auratype"] = "BUFF",
 						},
 						["Archmage's Incandescence"] = {
@@ -1134,11 +1127,11 @@ SkadaPerCharDB = {
 							["uptime"] = 10,
 							["auratype"] = "BUFF",
 						},
-						["Slice and Dice"] = {
-							["name"] = "Slice and Dice",
+						["Shallow Insight"] = {
+							["name"] = "Shallow Insight",
 							["active"] = 0,
-							["id"] = 5171,
-							["uptime"] = 24,
+							["id"] = 84745,
+							["uptime"] = 18,
 							["auratype"] = "BUFF",
 						},
 					},
@@ -1162,8 +1155,8 @@ SkadaPerCharDB = {
 					["time"] = 65,
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
-					["maxhp"] = 339000,
 					["dispells"] = 0,
+					["first"] = 1442806988,
 					["damage"] = 659886,
 					["damagespells"] = {
 						["Killing Spree Off-Hand"] = {
@@ -1267,58 +1260,58 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1442807051.71201,
 									["amount"] = -10896,
-									["srcname"] = "Assault Cannon",
 									["hp"] = 107485,
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 								}, -- [1]
 								{
 									["ts"] = 1442807051.74802,
 									["amount"] = -27337,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 80148,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [2]
 								{
 									["ts"] = 1442807051.82203,
 									["amount"] = -11181,
-									["srcname"] = "Assault Cannon",
 									["hp"] = 68967,
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 								}, -- [3]
 								{
 									["ts"] = 1442807051.93504,
 									["amount"] = -10931,
-									["srcname"] = "Assault Cannon",
 									["hp"] = 58036,
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 								}, -- [4]
 								{
 									["ts"] = 1442807052.00605,
 									["amount"] = -11313,
-									["srcname"] = "Assault Cannon",
 									["hp"] = 46723,
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 								}, -- [5]
 								{
 									["ts"] = 1442807052.12206,
 									["amount"] = -11065,
-									["srcname"] = "Assault Cannon",
 									["hp"] = 35658,
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 								}, -- [6]
 								{
 									["ts"] = 1442807052.23707,
 									["amount"] = -11034,
-									["srcname"] = "Assault Cannon",
 									["hp"] = 24624,
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 								}, -- [7]
 								{
 									["ts"] = 1442807052.27508,
 									["amount"] = -29022,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 1,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [8]
 								{
 									["spellname"] = "Kawatan dies",
@@ -1329,44 +1322,44 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1442807051.1941,
 									["amount"] = -10808,
-									["srcname"] = "Assault Cannon",
 									["hp"] = 191019,
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 								}, -- [10]
 								{
 									["ts"] = 1442807051.23311,
 									["amount"] = -28008,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 163011,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [11]
 								{
 									["ts"] = 1442807051.30512,
 									["amount"] = -10935,
-									["srcname"] = "Assault Cannon",
 									["hp"] = 152076,
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 								}, -- [12]
 								{
 									["ts"] = 1442807051.42813,
 									["amount"] = -11251,
-									["srcname"] = "Assault Cannon",
 									["hp"] = 140825,
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 								}, -- [13]
 								{
 									["ts"] = 1442807051.53514,
 									["amount"] = -11170,
-									["srcname"] = "Assault Cannon",
 									["hp"] = 129655,
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 								}, -- [14]
 								{
 									["ts"] = 1442807051.60015,
 									["amount"] = -11274,
-									["srcname"] = "Assault Cannon",
 									["hp"] = 118381,
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 								}, -- [15]
 								["pos"] = 10,
 							},
@@ -1374,6 +1367,84 @@ SkadaPerCharDB = {
 						}, -- [1]
 					},
 					["damagetaken"] = 408298,
+					["shielding"] = 0,
+					["id"] = "Player-117-05DFB5E5",
+					["maxhp"] = 339000,
+					["healing"] = 47149,
+					["damagetakenspells"] = {
+						["Suppressive Fire"] = {
+							["crushing"] = 0,
+							["id"] = 161220,
+							["damage"] = 251534,
+							["max"] = 11325,
+							["name"] = "Suppressive Fire",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 23,
+							["resisted"] = 0,
+							["min"] = 6986,
+							["absorbed"] = 4232,
+						},
+						["Shrapnel Blast"] = {
+							["crushing"] = 0,
+							["id"] = 156303,
+							["damage"] = 84367,
+							["max"] = 29022,
+							["name"] = "Shrapnel Blast",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 3,
+							["resisted"] = 0,
+							["min"] = 27337,
+							["absorbed"] = 0,
+						},
+						["Blackrock Mortar"] = {
+							["crushing"] = 0,
+							["id"] = 163741,
+							["damage"] = 36979,
+							["max"] = 36979,
+							["name"] = "Blackrock Mortar",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 1,
+							["resisted"] = 0,
+							["min"] = 36979,
+							["absorbed"] = 15858,
+						},
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 35418,
+							["max"] = 18005,
+							["name"] = "Attack",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 2,
+							["resisted"] = 0,
+							["min"] = 17413,
+							["absorbed"] = 0,
+						},
+					},
+					["healed"] = {
+						["Player-117-05DFB5E5"] = {
+							["role"] = "DAMAGER",
+							["name"] = "Kawatan-Shandris",
+							["amount"] = 47149,
+							["class"] = "ROGUE",
+							["shielding"] = 0,
+						},
+					},
+					["alertDamage"] = 0,
+					["name"] = "Kawatan",
+					["alertCount"] = 0,
 					["power"] = {
 						[3] = {
 							["spells"] = {
@@ -1390,84 +1461,6 @@ SkadaPerCharDB = {
 							["amount"] = 4,
 						},
 					},
-					["id"] = "Player-117-05DFB5E5",
-					["first"] = 1442806988,
-					["healing"] = 47149,
-					["damagetakenspells"] = {
-						["Suppressive Fire"] = {
-							["crushing"] = 0,
-							["id"] = 161220,
-							["damage"] = 251534,
-							["max"] = 11325,
-							["name"] = "Suppressive Fire",
-							["min"] = 6986,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 23,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 4232,
-						},
-						["Shrapnel Blast"] = {
-							["crushing"] = 0,
-							["id"] = 156303,
-							["damage"] = 84367,
-							["max"] = 29022,
-							["name"] = "Shrapnel Blast",
-							["min"] = 27337,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 3,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-						},
-						["Blackrock Mortar"] = {
-							["crushing"] = 0,
-							["id"] = 163741,
-							["damage"] = 36979,
-							["max"] = 36979,
-							["name"] = "Blackrock Mortar",
-							["min"] = 36979,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 1,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 15858,
-						},
-						["Attack"] = {
-							["crushing"] = 0,
-							["id"] = 6603,
-							["damage"] = 35418,
-							["max"] = 18005,
-							["name"] = "Attack",
-							["min"] = 17413,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 2,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-						},
-					},
-					["healed"] = {
-						["Player-117-05DFB5E5"] = {
-							["role"] = "DAMAGER",
-							["name"] = "Kawatan-Shandris",
-							["amount"] = 47149,
-							["class"] = "ROGUE",
-							["shielding"] = 0,
-						},
-					},
-					["alertDamage"] = 0,
-					["name"] = "Kawatan",
-					["alertCount"] = 0,
-					["shielding"] = 0,
 					["overhealing"] = 13871,
 					["alert"] = {
 					},
@@ -1612,8 +1605,8 @@ SkadaPerCharDB = {
 					["time"] = 147,
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
-					["maxhp"] = 386460,
 					["dispells"] = 0,
+					["first"] = 1442806989,
 					["damage"] = 3432761,
 					["damagespells"] = {
 						["Ice Nova"] = {
@@ -1718,112 +1711,112 @@ SkadaPerCharDB = {
 								{
 									["absorb"] = -2220,
 									["amount"] = -8881,
-									["srcname"] = "Assault Cannon",
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 									["hp"] = 103492,
 									["ts"] = 1442807100.86402,
 								}, -- [2]
 								{
 									["absorb"] = -2271,
 									["amount"] = -9084,
-									["srcname"] = "Assault Cannon",
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 									["hp"] = 94408,
 									["ts"] = 1442807101.03603,
 								}, -- [3]
 								{
 									["absorb"] = -2280,
 									["amount"] = -9121,
-									["srcname"] = "Assault Cannon",
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 									["hp"] = 85287,
 									["ts"] = 1442807101.11504,
 								}, -- [4]
 								{
 									["absorb"] = -2250,
 									["amount"] = -9000,
-									["srcname"] = "Assault Cannon",
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 									["hp"] = 76287,
 									["ts"] = 1442807101.22005,
 								}, -- [5]
 								{
 									["absorb"] = -2236,
 									["amount"] = -8947,
-									["srcname"] = "Assault Cannon",
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 									["hp"] = 67340,
 									["ts"] = 1442807101.43306,
 								}, -- [6]
 								{
 									["absorb"] = -2272,
 									["amount"] = -9092,
-									["srcname"] = "Assault Cannon",
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 									["hp"] = 58248,
 									["ts"] = 1442807101.57507,
 								}, -- [7]
 								{
 									["absorb"] = -2244,
 									["amount"] = -8980,
-									["srcname"] = "Assault Cannon",
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 									["hp"] = 49268,
 									["ts"] = 1442807101.66508,
 								}, -- [8]
 								{
 									["absorb"] = -1802,
 									["amount"] = -7208,
-									["srcname"] = "Assault Cannon",
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 									["hp"] = 42060,
 									["ts"] = 1442807101.74409,
 								}, -- [9]
 								{
 									["absorb"] = -1785,
 									["amount"] = -7143,
-									["srcname"] = "Assault Cannon",
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 									["hp"] = 34917,
 									["ts"] = 1442807101.8411,
 								}, -- [10]
 								{
 									["absorb"] = -1743,
 									["amount"] = -6974,
-									["srcname"] = "Assault Cannon",
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 									["hp"] = 27943,
 									["ts"] = 1442807102.02511,
 								}, -- [11]
 								{
 									["absorb"] = -1789,
 									["amount"] = -7159,
-									["srcname"] = "Assault Cannon",
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 									["hp"] = 20784,
 									["ts"] = 1442807102.21912,
 								}, -- [12]
 								{
 									["absorb"] = -1760,
 									["amount"] = -7040,
-									["srcname"] = "Assault Cannon",
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 									["hp"] = 13744,
 									["ts"] = 1442807102.34413,
 								}, -- [13]
 								{
 									["absorb"] = -1802,
 									["amount"] = -7210,
-									["srcname"] = "Assault Cannon",
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 									["hp"] = 6534,
 									["ts"] = 1442807102.42214,
 								}, -- [14]
 								{
 									["absorb"] = -1793,
 									["amount"] = -7172,
-									["srcname"] = "Assault Cannon",
 									["spellid"] = 161220,
+									["srcname"] = "Assault Cannon",
 									["hp"] = 1,
 									["ts"] = 1442807102.64415,
 								}, -- [15]
@@ -1833,10 +1826,9 @@ SkadaPerCharDB = {
 						}, -- [1]
 					},
 					["damagetaken"] = 836092,
-					["power"] = {
-					},
+					["shielding"] = 136733,
 					["id"] = "Player-4-040B0987",
-					["first"] = 1442806989,
+					["maxhp"] = 386460,
 					["healing"] = 244942,
 					["damagetakenspells"] = {
 						["Blackrock Grenade"] = {
@@ -1845,13 +1837,13 @@ SkadaPerCharDB = {
 							["damage"] = 44133,
 							["max"] = 44133,
 							["name"] = "Blackrock Grenade",
-							["min"] = 44133,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 44133,
 							["absorbed"] = 2849,
 						},
 						["Shrapnel Blast"] = {
@@ -1860,13 +1852,13 @@ SkadaPerCharDB = {
 							["damage"] = 98953,
 							["max"] = 26644,
 							["name"] = "Shrapnel Blast",
-							["min"] = 23153,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 4,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 23153,
 							["absorbed"] = 12603,
 						},
 						["Suppressive Fire"] = {
@@ -1875,13 +1867,13 @@ SkadaPerCharDB = {
 							["damage"] = 248182,
 							["max"] = 9142,
 							["name"] = "Suppressive Fire",
-							["min"] = 1395,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 31,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1395,
 							["absorbed"] = 83394,
 						},
 						["Attack"] = {
@@ -1890,13 +1882,13 @@ SkadaPerCharDB = {
 							["damage"] = 444824,
 							["max"] = 66239,
 							["name"] = "Attack",
-							["min"] = 1406,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 2,
 							["blocked"] = 0,
 							["totalhits"] = 21,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1406,
 							["absorbed"] = 74227,
 						},
 					},
@@ -1912,7 +1904,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Hàmm",
 					["alertCount"] = 0,
-					["shielding"] = 136733,
+					["power"] = {
+					},
 					["overhealing"] = 0,
 					["alert"] = {
 					},
@@ -2194,8 +2187,8 @@ SkadaPerCharDB = {
 					["time"] = 147,
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
-					["maxhp"] = 365100,
 					["dispells"] = 0,
+					["first"] = 1442806989,
 					["damage"] = 86612,
 					["damagespells"] = {
 						["Judgment"] = {
@@ -2232,96 +2225,96 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1442807115.62901,
 									["amount"] = -27303,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 158228,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [1]
 								{
 									["ts"] = 1442807116.03102,
 									["amount"] = -12142,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 158228,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [2]
 								{
 									["ts"] = 1442807116.03103,
 									["amount"] = -13200,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 158228,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [3]
 								{
 									["ts"] = 1442807116.12004,
 									["amount"] = -27121,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 105765,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [4]
 								{
 									["ts"] = 1442807116.63605,
 									["amount"] = -26036,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 79729,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [5]
 								{
 									["absorb"] = 0,
 									["amount"] = 916,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 53652,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 80645,
 									["ts"] = 1442807116.87606,
 								}, -- [6]
 								{
 									["ts"] = 1442807117.02707,
 									["amount"] = -12557,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 80645,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [7]
 								{
 									["ts"] = 1442807117.02708,
 									["amount"] = -13260,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 80645,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [8]
 								{
 									["absorb"] = 0,
 									["amount"] = 59,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 143924,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 54887,
 									["ts"] = 1442807117.26809,
 								}, -- [9]
 								{
 									["ts"] = 1442807118.0271,
 									["amount"] = -12485,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 54887,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [10]
 								{
 									["ts"] = 1442807118.02711,
 									["amount"] = -26452,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 54887,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [11]
 								{
 									["absorb"] = 0,
 									["amount"] = 639,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 53652,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 55526,
 									["ts"] = 1442807118.08212,
 								}, -- [12]
 								{
 									["ts"] = 1442807118.49413,
 									["amount"] = -46711,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 16589,
 									["spellid"] = 88163,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [13]
 								{
 									["spellname"] = "Jhedoner dies",
@@ -2332,9 +2325,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1442807115.39715,
 									["amount"] = -25897,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 185531,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [15]
 								["pos"] = 15,
 							},
@@ -2342,23 +2335,9 @@ SkadaPerCharDB = {
 						}, -- [1]
 					},
 					["damagetaken"] = 1487346,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[148976] = 15,
-								[138248] = 4,
-							},
-							["amount"] = 19,
-						},
-						[0] = {
-							["spells"] = {
-								[88852] = 24520,
-							},
-							["amount"] = 24520,
-						},
-					},
+					["shielding"] = 464737,
 					["id"] = "Player-1428-07B76084",
-					["first"] = 1442806989,
+					["maxhp"] = 365100,
 					["healing"] = 2936019,
 					["damagetakenspells"] = {
 						["Blackrock Grenade"] = {
@@ -2367,13 +2346,13 @@ SkadaPerCharDB = {
 							["damage"] = 86926,
 							["max"] = 43876,
 							["name"] = "Blackrock Grenade",
-							["min"] = 43050,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 43050,
 							["absorbed"] = 0,
 						},
 						["Shrapnel Blast"] = {
@@ -2382,13 +2361,13 @@ SkadaPerCharDB = {
 							["damage"] = 495642,
 							["max"] = 27972,
 							["name"] = "Shrapnel Blast",
-							["min"] = 20666,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 19,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 20666,
 							["absorbed"] = 11914,
 						},
 						["Blackrock Mortar"] = {
@@ -2397,13 +2376,13 @@ SkadaPerCharDB = {
 							["damage"] = 195639,
 							["max"] = 88570,
 							["name"] = "Blackrock Mortar",
-							["min"] = 35489,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 35489,
 							["absorbed"] = 18579,
 						},
 						["Attack"] = {
@@ -2412,13 +2391,13 @@ SkadaPerCharDB = {
 							["damage"] = 709139,
 							["max"] = 46711,
 							["name"] = "Attack",
-							["min"] = 3766,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 5,
 							["blocked"] = 0,
 							["totalhits"] = 51,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 3766,
 							["absorbed"] = 36639,
 						},
 					},
@@ -2469,7 +2448,21 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Jhedoner",
 					["alertCount"] = 0,
-					["shielding"] = 464737,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[148976] = 15,
+								[138248] = 4,
+							},
+							["amount"] = 19,
+						},
+						[0] = {
+							["spells"] = {
+								[88852] = 24520,
+							},
+							["amount"] = 24520,
+						},
+					},
 					["overhealing"] = 1594335.58587646,
 					["alert"] = {
 					},
@@ -2486,17 +2479,17 @@ SkadaPerCharDB = {
 							["class"] = "PALADIN",
 							["role"] = "HEALER",
 						},
-						["Hàmm-Kilrogg"] = {
-							["taken"] = 460690,
-							["done"] = 77877,
-							["class"] = "MAGE",
-							["role"] = "DAMAGER",
-						},
 						["Pist-Antonidas"] = {
 							["taken"] = 483453,
 							["done"] = 304741,
 							["class"] = "WARRIOR",
 							["role"] = "TANK",
+						},
+						["Hàmm-Kilrogg"] = {
+							["taken"] = 460690,
+							["done"] = 77877,
+							["class"] = "MAGE",
+							["role"] = "DAMAGER",
 						},
 						["Bracnar"] = {
 							["taken"] = 1253276,
@@ -2509,10 +2502,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 2226281,
+					["done"] = 639915,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 639915,
 				},
 				["Grom'kar Grenadier"] = {
 					["players"] = {
@@ -2522,17 +2515,17 @@ SkadaPerCharDB = {
 							["class"] = "HUNTER",
 							["role"] = "DAMAGER",
 						},
-						["Hàmm-Kilrogg"] = {
-							["taken"] = 420388,
-							["done"] = 0,
-							["class"] = "MAGE",
-							["role"] = "DAMAGER",
-						},
 						["Pist-Antonidas"] = {
 							["taken"] = 237069,
 							["done"] = 137283,
 							["class"] = "WARRIOR",
 							["role"] = "TANK",
+						},
+						["Hàmm-Kilrogg"] = {
+							["taken"] = 420388,
+							["done"] = 0,
+							["class"] = "MAGE",
+							["role"] = "DAMAGER",
 						},
 						["Jhedoner-Quel'Thalas"] = {
 							["taken"] = 0,
@@ -2545,10 +2538,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 660132,
+					["done"] = 181159,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 181159,
 				},
 				["Iron Infantry"] = {
 					["players"] = {
@@ -2587,10 +2580,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 3876118,
+					["done"] = 1458352,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 1458352,
 				},
 				["Assault Cannon"] = {
 					["players"] = {
@@ -2623,10 +2616,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 1120426,
+					["done"] = 609869,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 609869,
 				},
 				["Grom'kar Gunner"] = {
 					["players"] = {
@@ -2665,10 +2658,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 1786637,
+					["done"] = 1420296,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 1420296,
 				},
 				["Nitrogg Thundertower"] = {
 					["players"] = {
@@ -2707,13 +2700,13 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 2276948,
+					["done"] = 407770,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 407770,
 				},
 			},
-			["gotboss"] = true,
+			["mobtaken"] = 11946542,
 			["alertCount"] = 2,
 			["healing"] = 3958465,
 			["overhealing"] = 1722772.58587647,
@@ -2722,7 +2715,14 @@ SkadaPerCharDB = {
 			["shielding"] = 929470,
 			["name"] = "Nitrogg Thundertower (2)",
 			["mobname"] = "Nitrogg Thundertower",
-			["multistrikes"] = 12,
+			["power"] = {
+				950, -- [1]
+				326, -- [2]
+				230, -- [3]
+				4, -- [4]
+				[9] = 19,
+				[0] = 24520,
+			},
 			["mobhdone"] = 0,
 			["last_action"] = 1442806987,
 			["endtime"] = 1442807136,
@@ -2734,16 +2734,9 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 171,
 			["interrupts"] = 0,
-			["power"] = {
-				510, -- [1]
-				218, -- [2]
-				295, -- [3]
-				3, -- [4]
-				[9] = 20,
-				[0] = 7680,
-			},
-			["mobtaken"] = 27962622,
+			["multistrikes"] = 37,
 			["damagetaken"] = 4999269,
+			["gotboss"] = true,
 			["damage"] = 28006141,
 			["players"] = {
 				{
@@ -2836,13 +2829,6 @@ SkadaPerCharDB = {
 							["uptime"] = 55,
 							["auratype"] = "BUFF",
 						},
-						["Blessing of Kings"] = {
-							["name"] = "Blessing of Kings",
-							["active"] = 0,
-							["id"] = 20217,
-							["uptime"] = 8,
-							["auratype"] = "BUFF",
-						},
 						["Blackrock Turret: Shrapnel Cannon"] = {
 							["name"] = "Blackrock Turret: Shrapnel Cannon",
 							["active"] = 0,
@@ -2855,6 +2841,13 @@ SkadaPerCharDB = {
 							["active"] = 0,
 							["id"] = 88819,
 							["uptime"] = 29,
+							["auratype"] = "BUFF",
+						},
+						["Blessing of Kings"] = {
+							["name"] = "Blessing of Kings",
+							["active"] = 0,
+							["id"] = 20217,
+							["uptime"] = 8,
 							["auratype"] = "BUFF",
 						},
 						["Divine Shield"] = {
@@ -3014,20 +3007,6 @@ SkadaPerCharDB = {
 							["critical"] = 0,
 							["absorbed"] = 0,
 						},
-						["Holy Radiance"] = {
-							["shielding"] = 0,
-							["id"] = 82327,
-							["healing"] = 217966,
-							["multistrikes"] = 0,
-							["min"] = 0,
-							["multistrike"] = 9,
-							["name"] = "Holy Radiance",
-							["hits"] = 33,
-							["overhealing"] = 124928,
-							["max"] = 31495,
-							["critical"] = 12,
-							["absorbed"] = 0,
-						},
 						["Beacon of Light"] = {
 							["shielding"] = 0,
 							["id"] = 53652,
@@ -3042,12 +3021,26 @@ SkadaPerCharDB = {
 							["critical"] = 0,
 							["absorbed"] = 0,
 						},
+						["Holy Radiance"] = {
+							["shielding"] = 0,
+							["id"] = 82327,
+							["healing"] = 217966,
+							["multistrikes"] = 0,
+							["min"] = 0,
+							["multistrike"] = 9,
+							["name"] = "Holy Radiance",
+							["hits"] = 33,
+							["overhealing"] = 124928,
+							["max"] = 31495,
+							["critical"] = 12,
+							["absorbed"] = 0,
+						},
 					},
 					["time"] = 170,
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
-					["maxhp"] = 365100,
 					["dispells"] = 0,
+					["first"] = 1442806705,
 					["damage"] = 13487433,
 					["damagespells"] = {
 						["Judgment"] = {
@@ -3091,82 +3084,82 @@ SkadaPerCharDB = {
 								{
 									["absorb"] = 0,
 									["amount"] = 428,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 53652,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 289918,
 									["ts"] = 1442806845.35201,
 								}, -- [1]
 								{
 									["absorb"] = 0,
 									["amount"] = 1799,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 143924,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 291717,
 									["ts"] = 1442806845.58102,
 								}, -- [2]
 								{
 									["absorb"] = -12340,
-									["srcname"] = "Iron Infantry",
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 									["hp"] = 291717,
 									["ts"] = 1442806845.80803,
 								}, -- [3]
 								{
 									["absorb"] = -2527,
 									["amount"] = -10605,
-									["srcname"] = "Iron Infantry",
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 									["hp"] = 291717,
 									["ts"] = 1442806845.94404,
 								}, -- [4]
 								{
 									["ts"] = 1442806846.48805,
 									["amount"] = -104111,
-									["srcname"] = "Nitrogg Thundertower",
 									["hp"] = 281112,
 									["spellid"] = 88163,
+									["srcname"] = "Nitrogg Thundertower",
 								}, -- [5]
 								{
 									["ts"] = 1442806846.80506,
 									["amount"] = -13028,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 177001,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [6]
 								{
 									["ts"] = 1442806846.93807,
 									["amount"] = -12353,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 177001,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [7]
 								{
 									["ts"] = 1442806847.18508,
 									["amount"] = -46628,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 177001,
 									["spellid"] = 88163,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [8]
 								{
 									["ts"] = 1442806847.82509,
 									["amount"] = -13169,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 104992,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [9]
 								{
 									["ts"] = 1442806847.9321,
 									["amount"] = -12094,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 104992,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [10]
 								{
 									["ts"] = 1442806847.98611,
 									["amount"] = -201326,
-									["srcname"] = "Nitrogg Thundertower",
 									["hp"] = 104992,
 									["spellid"] = 88163,
+									["srcname"] = "Nitrogg Thundertower",
 								}, -- [11]
 								{
 									["spellname"] = "Jhedoner dies",
@@ -3177,24 +3170,24 @@ SkadaPerCharDB = {
 								{
 									["absorb"] = 0,
 									["amount"] = 1425,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 53652,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 287636,
 									["ts"] = 1442806845.35113,
 								}, -- [13]
 								{
 									["absorb"] = 0,
 									["amount"] = 428,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 53652,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 288064,
 									["ts"] = 1442806845.35114,
 								}, -- [14]
 								{
 									["absorb"] = 0,
 									["amount"] = 1426,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 53652,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 289490,
 									["ts"] = 1442806845.35115,
 								}, -- [15]
@@ -3204,23 +3197,9 @@ SkadaPerCharDB = {
 						}, -- [1]
 					},
 					["damagetaken"] = 1256703,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[148976] = 15,
-								[138248] = 5,
-							},
-							["amount"] = 20,
-						},
-						[0] = {
-							["spells"] = {
-								[88852] = 7680,
-							},
-							["amount"] = 7680,
-						},
-					},
+					["shielding"] = 459864,
 					["id"] = "Player-1428-07B76084",
-					["first"] = 1442806705,
+					["maxhp"] = 365100,
 					["healing"] = 2828432,
 					["damagetakenspells"] = {
 						["Shrapnel Blast"] = {
@@ -3229,13 +3208,13 @@ SkadaPerCharDB = {
 							["damage"] = 324474,
 							["max"] = 28138,
 							["name"] = "Shrapnel Blast",
-							["min"] = 25594,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 12,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 25594,
 							["absorbed"] = 0,
 						},
 						["Suppressive Fire"] = {
@@ -3244,13 +3223,13 @@ SkadaPerCharDB = {
 							["damage"] = 36366,
 							["max"] = 10716,
 							["name"] = "Suppressive Fire",
-							["min"] = 4342,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 4,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 4342,
 							["absorbed"] = 6253,
 						},
 						["Blackrock Mortar"] = {
@@ -3259,13 +3238,13 @@ SkadaPerCharDB = {
 							["damage"] = 154626,
 							["max"] = 52226,
 							["name"] = "Blackrock Mortar",
-							["min"] = 51032,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 51032,
 							["absorbed"] = 5002,
 						},
 						["Attack"] = {
@@ -3274,13 +3253,13 @@ SkadaPerCharDB = {
 							["damage"] = 741237,
 							["max"] = 201326,
 							["name"] = "Attack",
-							["min"] = 8685,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 3,
 							["blocked"] = 0,
 							["totalhits"] = 30,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 8685,
 							["absorbed"] = 11502,
 						},
 					},
@@ -3331,7 +3310,21 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Jhedoner",
 					["alertCount"] = 0,
-					["shielding"] = 459864,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[148976] = 15,
+								[138248] = 5,
+							},
+							["amount"] = 20,
+						},
+						[0] = {
+							["spells"] = {
+								[88852] = 7680,
+							},
+							["amount"] = 7680,
+						},
+					},
 					["overhealing"] = 5656757.16569519,
 					["alert"] = {
 					},
@@ -3426,18 +3419,18 @@ SkadaPerCharDB = {
 							["uptime"] = 20,
 							["auratype"] = "BUFF",
 						},
-						["Enraged Regeneration"] = {
-							["name"] = "Enraged Regeneration",
-							["active"] = 0,
-							["id"] = 55694,
-							["uptime"] = 5,
-							["auratype"] = "BUFF",
-						},
 						["Enrage"] = {
 							["name"] = "Enrage",
 							["active"] = 0,
 							["id"] = 12880,
 							["uptime"] = 52,
+							["auratype"] = "BUFF",
+						},
+						["Enraged Regeneration"] = {
+							["name"] = "Enraged Regeneration",
+							["active"] = 0,
+							["id"] = 55694,
+							["uptime"] = 5,
 							["auratype"] = "BUFF",
 						},
 						["Deep Wounds"] = {
@@ -3538,8 +3531,8 @@ SkadaPerCharDB = {
 					["time"] = 170,
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
-					["maxhp"] = 406020,
 					["dispells"] = 0,
+					["first"] = 1442806705,
 					["damage"] = 2058266,
 					["damagespells"] = {
 						["Shield Slam"] = {
@@ -3572,6 +3565,15 @@ SkadaPerCharDB = {
 							["max"] = 10545,
 							["damage"] = 238775,
 						},
+						["Devastate"] = {
+							["min"] = 7653,
+							["critical"] = 1,
+							["hit"] = 12,
+							["totalhits"] = 13,
+							["id"] = 20243,
+							["max"] = 23035,
+							["damage"] = 156652,
+						},
 						["Ravager"] = {
 							["min"] = 2351,
 							["multistrike"] = 4,
@@ -3581,15 +3583,6 @@ SkadaPerCharDB = {
 							["id"] = 156287,
 							["max"] = 8604,
 							["damage"] = 179672,
-						},
-						["Devastate"] = {
-							["min"] = 7653,
-							["critical"] = 1,
-							["hit"] = 12,
-							["totalhits"] = 13,
-							["id"] = 20243,
-							["max"] = 23035,
-							["damage"] = 156652,
 						},
 						["Thunder Clap"] = {
 							["min"] = 5840,
@@ -3666,81 +3659,81 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1442806839.16701,
 									["amount"] = -12950,
-									["srcname"] = "Assault Cannon",
 									["hp"] = 258995,
 									["spellid"] = 166570,
+									["srcname"] = "Assault Cannon",
 								}, -- [1]
 								{
 									["ts"] = 1442806839.20602,
 									["amount"] = -47481,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 211514,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [2]
 								{
 									["absorb"] = 0,
 									["amount"] = 19963,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 53652,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 231477,
 									["ts"] = 1442806841.75003,
 								}, -- [3]
 								{
 									["absorb"] = -20527,
 									["amount"] = -25187,
-									["srcname"] = "Nitrogg Thundertower",
 									["spellid"] = 88163,
+									["srcname"] = "Nitrogg Thundertower",
 									["hp"] = 231477,
 									["ts"] = 1442806843.85104,
 								}, -- [4]
 								{
 									["ts"] = 1442806843.89405,
 									["amount"] = -7631,
-									["srcname"] = "Nitrogg Thundertower",
 									["hp"] = 223846,
 									["spellid"] = 163536,
+									["srcname"] = "Nitrogg Thundertower",
 								}, -- [5]
 								{
 									["ts"] = 1442806844.14106,
 									["amount"] = -12950,
-									["srcname"] = "Assault Cannon",
 									["hp"] = 185709,
 									["spellid"] = 166570,
+									["srcname"] = "Assault Cannon",
 								}, -- [6]
 								{
 									["ts"] = 1442806844.29607,
 									["amount"] = -45820,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 139889,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [7]
 								{
 									["ts"] = 1442806844.29608,
 									["amount"] = -46762,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 93127,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [8]
 								{
 									["ts"] = 1442806844.79209,
 									["amount"] = -47091,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 46036,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [9]
 								{
 									["ts"] = 1442806844.7921,
 									["amount"] = -45337,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 699,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [10]
 								{
 									["ts"] = 1442806844.79211,
 									["amount"] = -3104,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 699,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [11]
 								{
 									["spellname"] = "Pist dies",
@@ -3751,24 +3744,24 @@ SkadaPerCharDB = {
 								{
 									["absorb"] = 0,
 									["amount"] = 4060,
-									["srcname"] = "Pist-Antonidas",
 									["spellid"] = 159363,
+									["srcname"] = "Pist-Antonidas",
 									["hp"] = 365603,
 									["ts"] = 1442806838.41813,
 								}, -- [13]
 								{
 									["ts"] = 1442806838.72614,
 									["amount"] = -48474,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 317129,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [14]
 								{
 									["ts"] = 1442806838.72615,
 									["amount"] = -45184,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 271945,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [15]
 								["pos"] = 13,
 							},
@@ -3776,19 +3769,9 @@ SkadaPerCharDB = {
 						}, -- [1]
 					},
 					["damagetaken"] = 1315341,
-					["power"] = {
-						{
-							["spells"] = {
-								[109128] = 40,
-								[23922] = 130,
-								[12880] = 100,
-								[6572] = 240,
-							},
-							["amount"] = 510,
-						}, -- [1]
-					},
+					["shielding"] = 231442,
 					["id"] = "Player-116-074FF25B",
-					["first"] = 1442806705,
+					["maxhp"] = 406020,
 					["healing"] = 436709,
 					["damagetakenspells"] = {
 						["Blackrock-Plated Gauntlets"] = {
@@ -3797,13 +3780,13 @@ SkadaPerCharDB = {
 							["damage"] = 31862,
 							["max"] = 8077,
 							["name"] = "Blackrock-Plated Gauntlets",
-							["min"] = 7631,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 4,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 7631,
 							["absorbed"] = 0,
 						},
 						["Shrapnel Blast"] = {
@@ -3812,13 +3795,13 @@ SkadaPerCharDB = {
 							["damage"] = 471326,
 							["max"] = 48474,
 							["name"] = "Shrapnel Blast",
-							["min"] = 20517,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 13,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 20517,
 							["absorbed"] = 0,
 						},
 						["Slag Blast"] = {
@@ -3827,13 +3810,13 @@ SkadaPerCharDB = {
 							["damage"] = 33582,
 							["max"] = 12950,
 							["name"] = "Slag Blast",
-							["min"] = 1913,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 4,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1913,
 							["absorbed"] = 2618,
 						},
 						["Suppressive Fire"] = {
@@ -3842,13 +3825,13 @@ SkadaPerCharDB = {
 							["damage"] = 23453,
 							["max"] = 8552,
 							["name"] = "Suppressive Fire",
-							["min"] = 6486,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 6486,
 							["absorbed"] = 1811,
 						},
 						["Attack"] = {
@@ -3857,13 +3840,13 @@ SkadaPerCharDB = {
 							["damage"] = 755118,
 							["max"] = 69423,
 							["name"] = "Attack",
-							["min"] = 2259,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 186367,
 							["totalhits"] = 53,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2259,
 							["absorbed"] = 83128,
 						},
 					},
@@ -3879,7 +3862,17 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Pist",
 					["alertCount"] = 0,
-					["shielding"] = 231442,
+					["power"] = {
+						{
+							["spells"] = {
+								[109128] = 40,
+								[23922] = 130,
+								[12880] = 100,
+								[6572] = 240,
+							},
+							["amount"] = 510,
+						}, -- [1]
+					},
 					["overhealing"] = 126256.5234375,
 					["alert"] = {
 					},
@@ -4037,8 +4030,8 @@ SkadaPerCharDB = {
 					["time"] = 170,
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
-					["maxhp"] = 391620,
 					["dispells"] = 0,
+					["first"] = 1442806705,
 					["damage"] = 4153871,
 					["damagespells"] = {
 						["Bracnar: Felstorm"] = {
@@ -4143,108 +4136,108 @@ SkadaPerCharDB = {
 								{
 									["absorb"] = 0,
 									["amount"] = 220,
-									["srcname"] = "Bracnar",
 									["spellid"] = 143924,
+									["srcname"] = "Bracnar",
 									["hp"] = 255995,
 									["ts"] = 1442806861.79802,
 								}, -- [2]
 								{
 									["absorb"] = 0,
 									["amount"] = 7833,
-									["srcname"] = "Bracnar",
 									["spellid"] = 53353,
+									["srcname"] = "Bracnar",
 									["hp"] = 263828,
 									["ts"] = 1442806862.31403,
 								}, -- [3]
 								{
 									["absorb"] = 0,
 									["amount"] = 4894,
-									["srcname"] = "Bracnar",
 									["spellid"] = 143924,
+									["srcname"] = "Bracnar",
 									["hp"] = 268722,
 									["ts"] = 1442806862.99604,
 								}, -- [4]
 								{
 									["absorb"] = 0,
 									["amount"] = 4106,
-									["srcname"] = "Bracnar",
 									["spellid"] = 143924,
+									["srcname"] = "Bracnar",
 									["hp"] = 272828,
 									["ts"] = 1442806864.21805,
 								}, -- [5]
 								{
 									["absorb"] = 0,
 									["amount"] = 834,
-									["srcname"] = "Bracnar",
 									["spellid"] = 143924,
+									["srcname"] = "Bracnar",
 									["hp"] = 273662,
 									["ts"] = 1442806868.66706,
 								}, -- [6]
 								{
 									["ts"] = 1442806869.77407,
 									["amount"] = -29083,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 244579,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [7]
 								{
 									["absorb"] = 0,
 									["amount"] = 5686,
-									["srcname"] = "Bracnar",
 									["spellid"] = 143924,
+									["srcname"] = "Bracnar",
 									["hp"] = 250265,
 									["ts"] = 1442806869.89708,
 								}, -- [8]
 								{
 									["ts"] = 1442806870.26609,
 									["amount"] = -27185,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 223080,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [9]
 								{
 									["ts"] = 1442806870.4411,
 									["amount"] = -129479,
-									["srcname"] = "Nitrogg Thundertower",
 									["hp"] = 223080,
 									["spellid"] = 88163,
+									["srcname"] = "Nitrogg Thundertower",
 								}, -- [10]
 								{
 									["ts"] = 1442806870.77311,
 									["amount"] = -27453,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 66148,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [11]
 								{
 									["absorb"] = 0,
 									["amount"] = 157,
-									["srcname"] = "Bracnar",
 									["spellid"] = 143924,
+									["srcname"] = "Bracnar",
 									["hp"] = 66305,
 									["ts"] = 1442806871.51412,
 								}, -- [12]
 								{
 									["ts"] = 1442806871.66013,
 									["amount"] = -45717,
-									["srcname"] = "Nitrogg Thundertower",
 									["hp"] = 20588,
 									["spellid"] = 161153,
+									["srcname"] = "Nitrogg Thundertower",
 								}, -- [13]
 								{
 									["absorb"] = 0,
 									["amount"] = 186,
-									["srcname"] = "Bracnar",
 									["spellid"] = 143924,
+									["srcname"] = "Bracnar",
 									["hp"] = 20774,
 									["ts"] = 1442806872.72514,
 								}, -- [14]
 								{
 									["ts"] = 1442806874.82015,
 									["amount"] = -53631,
-									["srcname"] = "Nitrogg Thundertower",
 									["hp"] = 1,
 									["spellid"] = 163741,
+									["srcname"] = "Nitrogg Thundertower",
 								}, -- [15]
 								["pos"] = 2,
 							},
@@ -4252,17 +4245,9 @@ SkadaPerCharDB = {
 						}, -- [1]
 					},
 					["damagetaken"] = 1011554,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[77443] = 98,
-								[157722] = 120,
-							},
-							["amount"] = 218,
-						},
-					},
+					["shielding"] = 0,
 					["id"] = "Player-1169-06A1ACBD",
-					["first"] = 1442806705,
+					["maxhp"] = 391620,
 					["healing"] = 260957,
 					["damagetakenspells"] = {
 						["Blackrock Grenade"] = {
@@ -4271,13 +4256,13 @@ SkadaPerCharDB = {
 							["damage"] = 92752,
 							["max"] = 47035,
 							["name"] = "Blackrock Grenade",
-							["min"] = 45717,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 45717,
 							["absorbed"] = 0,
 						},
 						["Shrapnel Blast"] = {
@@ -4286,13 +4271,13 @@ SkadaPerCharDB = {
 							["damage"] = 485338,
 							["max"] = 29344,
 							["name"] = "Shrapnel Blast",
-							["min"] = 11196,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 18,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 11196,
 							["absorbed"] = 16745,
 						},
 						["Slag Blast"] = {
@@ -4301,13 +4286,13 @@ SkadaPerCharDB = {
 							["damage"] = 17824,
 							["max"] = 6243,
 							["name"] = "Slag Blast",
-							["min"] = 5629,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 5629,
 							["absorbed"] = 948,
 						},
 						["Blackrock Mortar"] = {
@@ -4316,13 +4301,13 @@ SkadaPerCharDB = {
 							["damage"] = 214462,
 							["max"] = 55399,
 							["name"] = "Blackrock Mortar",
-							["min"] = 50570,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 4,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 50570,
 							["absorbed"] = 5000,
 						},
 						["Attack"] = {
@@ -4331,13 +4316,13 @@ SkadaPerCharDB = {
 							["damage"] = 201178,
 							["max"] = 129479,
 							["name"] = "Attack",
-							["min"] = 13747,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 13747,
 							["absorbed"] = 1836,
 						},
 					},
@@ -4411,7 +4396,15 @@ SkadaPerCharDB = {
 					["alertDamage"] = 214462,
 					["name"] = "Bracnar",
 					["alertCount"] = 6,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[77443] = 98,
+								[157722] = 120,
+							},
+							["amount"] = 218,
+						},
+					},
 					["overhealing"] = 42315,
 					["alert"] = {
 						["High"] = {
@@ -4459,12 +4452,12 @@ SkadaPerCharDB = {
 							["uptime"] = 5,
 							["auratype"] = "DEBUFF",
 						},
-						["Chilled"] = {
-							["name"] = "Chilled",
-							["active"] = 1,
-							["id"] = 7321,
-							["uptime"] = 27,
-							["auratype"] = "DEBUFF",
+						["Icy Veins"] = {
+							["name"] = "Icy Veins",
+							["active"] = 0,
+							["id"] = 12472,
+							["uptime"] = 28,
+							["auratype"] = "BUFF",
 						},
 						["Water Elemental: Water Jet"] = {
 							["name"] = "Water Elemental: Water Jet",
@@ -4480,12 +4473,12 @@ SkadaPerCharDB = {
 							["uptime"] = 128,
 							["auratype"] = "DEBUFF",
 						},
-						["Icy Veins"] = {
-							["name"] = "Icy Veins",
-							["active"] = 0,
-							["id"] = 12472,
-							["uptime"] = 28,
-							["auratype"] = "BUFF",
+						["Chilled"] = {
+							["name"] = "Chilled",
+							["active"] = 1,
+							["id"] = 7321,
+							["uptime"] = 27,
+							["auratype"] = "DEBUFF",
 						},
 						["Fingers of Frost"] = {
 							["name"] = "Fingers of Frost",
@@ -4571,8 +4564,8 @@ SkadaPerCharDB = {
 					["time"] = 169,
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
-					["maxhp"] = 386460,
 					["dispells"] = 0,
+					["first"] = 1442806706,
 					["damage"] = 4398982,
 					["damagespells"] = {
 						["Ice Nova"] = {
@@ -4678,24 +4671,24 @@ SkadaPerCharDB = {
 								{
 									["absorb"] = -2503,
 									["amount"] = -42022,
-									["srcname"] = "Nitrogg Thundertower",
 									["spellid"] = 161153,
+									["srcname"] = "Nitrogg Thundertower",
 									["hp"] = 101509,
 									["ts"] = 1442806865.86401,
 								}, -- [1]
 								{
 									["absorb"] = -2503,
 									["amount"] = -16978,
-									["srcname"] = "Iron Infantry",
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 									["hp"] = 101509,
 									["ts"] = 1442806866.01202,
 								}, -- [2]
 								{
 									["absorb"] = -2503,
 									["amount"] = -133095,
-									["srcname"] = "Nitrogg Thundertower",
 									["spellid"] = 88163,
+									["srcname"] = "Nitrogg Thundertower",
 									["hp"] = 84531,
 									["ts"] = 1442806867.42403,
 								}, -- [3]
@@ -4708,87 +4701,87 @@ SkadaPerCharDB = {
 								{
 									["absorb"] = 0,
 									["amount"] = 0,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 19750,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 386460,
 									["ts"] = 1442806834.22905,
 								}, -- [5]
 								{
 									["absorb"] = 0,
 									["amount"] = 0,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 19750,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 386460,
 									["ts"] = 1442806836.25906,
 								}, -- [6]
 								{
 									["absorb"] = 0,
 									["amount"] = 0,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 19750,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 386460,
 									["ts"] = 1442806836.25907,
 								}, -- [7]
 								{
 									["absorb"] = 0,
 									["amount"] = 0,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 82327,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 386460,
 									["ts"] = 1442806845.30808,
 								}, -- [8]
 								{
 									["absorb"] = -18545,
-									["srcname"] = "Iron Infantry",
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 									["hp"] = 386460,
 									["ts"] = 1442806848.82709,
 								}, -- [9]
 								{
 									["absorb"] = -59048,
 									["amount"] = -88214,
-									["srcname"] = "Nitrogg Thundertower",
 									["spellid"] = 88163,
+									["srcname"] = "Nitrogg Thundertower",
 									["hp"] = 386460,
 									["ts"] = 1442806856.9381,
 								}, -- [10]
 								{
 									["absorb"] = -2503,
 									["amount"] = -13303,
-									["srcname"] = "Nitrogg Thundertower",
 									["spellid"] = 163536,
+									["srcname"] = "Nitrogg Thundertower",
 									["hp"] = 284943,
 									["ts"] = 1442806856.96911,
 								}, -- [11]
 								{
 									["absorb"] = -2503,
 									["amount"] = -44589,
-									["srcname"] = "Nitrogg Thundertower",
 									["spellid"] = 161153,
+									["srcname"] = "Nitrogg Thundertower",
 									["hp"] = 240354,
 									["ts"] = 1442806860.00512,
 								}, -- [12]
 								{
 									["absorb"] = -2503,
 									["amount"] = -64146,
-									["srcname"] = "Grom'kar Gunner",
 									["spellid"] = 88163,
+									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 240354,
 									["ts"] = 1442806862.99613,
 								}, -- [13]
 								{
 									["absorb"] = -2503,
 									["amount"] = -16199,
-									["srcname"] = "Iron Infantry",
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 									["hp"] = 176208,
 									["ts"] = 1442806864.01814,
 								}, -- [14]
 								{
 									["absorb"] = -2503,
 									["amount"] = -16478,
-									["srcname"] = "Iron Infantry",
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 									["hp"] = 160009,
 									["ts"] = 1442806865.01815,
 								}, -- [15]
@@ -4798,10 +4791,9 @@ SkadaPerCharDB = {
 						}, -- [1]
 					},
 					["damagetaken"] = 735424,
-					["power"] = {
-					},
+					["shielding"] = 82691,
 					["id"] = "Player-4-040B0987",
-					["first"] = 1442806706,
+					["maxhp"] = 386460,
 					["healing"] = 82691,
 					["damagetakenspells"] = {
 						["Blackrock-Plated Gauntlets"] = {
@@ -4810,13 +4802,13 @@ SkadaPerCharDB = {
 							["damage"] = 13303,
 							["max"] = 13303,
 							["name"] = "Blackrock-Plated Gauntlets",
-							["min"] = 13303,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 13303,
 							["absorbed"] = 2503,
 						},
 						["Blackrock Grenade"] = {
@@ -4825,29 +4817,14 @@ SkadaPerCharDB = {
 							["damage"] = 94790,
 							["max"] = 44589,
 							["name"] = "Blackrock Grenade",
-							["min"] = 8179,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 8179,
 							["absorbed"] = 42951,
-						},
-						["Suppressive Fire"] = {
-							["crushing"] = 0,
-							["id"] = 161220,
-							["damage"] = 195647,
-							["max"] = 15677,
-							["name"] = "Suppressive Fire",
-							["min"] = 653,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 15,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 45420,
 						},
 						["Slag Blast"] = {
 							["crushing"] = 0,
@@ -4855,13 +4832,13 @@ SkadaPerCharDB = {
 							["damage"] = 14098,
 							["max"] = 5013,
 							["name"] = "Slag Blast",
-							["min"] = 2036,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 4,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2036,
 							["absorbed"] = 3524,
 						},
 						["Shrapnel Blast"] = {
@@ -4870,14 +4847,29 @@ SkadaPerCharDB = {
 							["damage"] = 66853,
 							["max"] = 25059,
 							["name"] = "Shrapnel Blast",
-							["min"] = 17108,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 17108,
 							["absorbed"] = 15149,
+						},
+						["Suppressive Fire"] = {
+							["crushing"] = 0,
+							["id"] = 161220,
+							["damage"] = 195647,
+							["max"] = 15677,
+							["name"] = "Suppressive Fire",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 15,
+							["resisted"] = 0,
+							["min"] = 653,
+							["absorbed"] = 45420,
 						},
 						["Attack"] = {
 							["crushing"] = 0,
@@ -4885,13 +4877,13 @@ SkadaPerCharDB = {
 							["damage"] = 350733,
 							["max"] = 133095,
 							["name"] = "Attack",
-							["min"] = 15623,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 7,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 15623,
 							["absorbed"] = 74066,
 						},
 					},
@@ -4907,7 +4899,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Hàmm",
 					["alertCount"] = 0,
-					["shielding"] = 82691,
+					["power"] = {
+					},
 					["overhealing"] = 0,
 					["alert"] = {
 					},
@@ -5064,8 +5057,8 @@ SkadaPerCharDB = {
 					["time"] = 161,
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
-					["maxhp"] = 339000,
 					["dispells"] = 0,
+					["first"] = 1442806708,
 					["damage"] = 3907589,
 					["damagespells"] = {
 						["Killing Spree Off-Hand"] = {
@@ -5172,98 +5165,98 @@ SkadaPerCharDB = {
 								{
 									["absorb"] = 0,
 									["amount"] = 0,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 82327,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 339000,
 									["ts"] = 1442806801.50701,
 								}, -- [1]
 								{
 									["absorb"] = 0,
 									["amount"] = 0,
-									["srcname"] = "Kawatan-Shandris",
 									["spellid"] = 73651,
+									["srcname"] = "Kawatan-Shandris",
 									["hp"] = 339000,
 									["ts"] = 1442806802.82102,
 								}, -- [2]
 								{
 									["ts"] = 1442806844.29603,
 									["amount"] = -28907,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 310093,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [3]
 								{
 									["ts"] = 1442806845.30904,
 									["amount"] = 7598,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 82327,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 317691,
 									["absorb"] = 0,
 								}, -- [4]
 								{
 									["ts"] = 1442806845.30905,
 									["amount"] = 2279,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 82327,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 319970,
 									["absorb"] = 0,
 								}, -- [5]
 								{
 									["absorb"] = -2355,
 									["amount"] = -17606,
-									["srcname"] = "Nitrogg Thundertower",
 									["spellid"] = 163741,
+									["srcname"] = "Nitrogg Thundertower",
 									["hp"] = 302364,
 									["ts"] = 1442806851.51906,
 								}, -- [6]
 								{
 									["ts"] = 1442806857.00507,
 									["amount"] = -66811,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 302364,
 									["spellid"] = 88163,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [7]
 								{
 									["ts"] = 1442806857.00508,
 									["amount"] = -64566,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 302364,
 									["spellid"] = 88163,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [8]
 								{
 									["ts"] = 1442806857.00509,
 									["amount"] = -18267,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 302364,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [9]
 								{
 									["ts"] = 1442806858.0001,
 									["amount"] = -17097,
-									["srcname"] = "Iron Infantry",
 									["hp"] = 152720,
 									["spellid"] = 88163,
+									["srcname"] = "Iron Infantry",
 								}, -- [10]
 								{
 									["ts"] = 1442806858.50711,
 									["amount"] = -28911,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 106712,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [11]
 								{
 									["ts"] = 1442806858.50712,
 									["amount"] = -27631,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 79081,
 									["spellid"] = 156303,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [12]
 								{
 									["ts"] = 1442806868.93813,
 									["amount"] = -134961,
-									["srcname"] = "Nitrogg Thundertower",
 									["hp"] = 79081,
 									["spellid"] = 88163,
+									["srcname"] = "Nitrogg Thundertower",
 								}, -- [13]
 								{
 									["spellname"] = "Kawatan dies",
@@ -5274,8 +5267,8 @@ SkadaPerCharDB = {
 								{
 									["absorb"] = 0,
 									["amount"] = 0,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 82327,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 339000,
 									["ts"] = 1442806801.50615,
 								}, -- [15]
@@ -5285,23 +5278,9 @@ SkadaPerCharDB = {
 						}, -- [1]
 					},
 					["damagetaken"] = 680247,
-					["power"] = {
-						[3] = {
-							["spells"] = {
-								[35546] = 195,
-								[98440] = 100,
-							},
-							["amount"] = 295,
-						},
-						[4] = {
-							["spells"] = {
-								[139546] = 3,
-							},
-							["amount"] = 3,
-						},
-					},
+					["shielding"] = 0,
 					["id"] = "Player-117-05DFB5E5",
-					["first"] = 1442806708,
+					["maxhp"] = 339000,
 					["healing"] = 71190,
 					["damagetakenspells"] = {
 						["Attack"] = {
@@ -5310,13 +5289,13 @@ SkadaPerCharDB = {
 							["damage"] = 319496,
 							["max"] = 134961,
 							["name"] = "Attack",
-							["min"] = 17097,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 6,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 17097,
 							["absorbed"] = 0,
 						},
 						["Shrapnel Blast"] = {
@@ -5325,13 +5304,13 @@ SkadaPerCharDB = {
 							["damage"] = 222372,
 							["max"] = 28911,
 							["name"] = "Shrapnel Blast",
-							["min"] = 26962,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 8,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 26962,
 							["absorbed"] = 0,
 						},
 						["Suppressive Fire"] = {
@@ -5340,13 +5319,13 @@ SkadaPerCharDB = {
 							["damage"] = 96389,
 							["max"] = 11332,
 							["name"] = "Suppressive Fire",
-							["min"] = 7526,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 9,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 7526,
 							["absorbed"] = 3625,
 						},
 						["Blackrock Mortar"] = {
@@ -5355,13 +5334,13 @@ SkadaPerCharDB = {
 							["damage"] = 17606,
 							["max"] = 17606,
 							["name"] = "Blackrock Mortar",
-							["min"] = 17606,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 17606,
 							["absorbed"] = 2355,
 						},
 						["Blackrock Grenade"] = {
@@ -5370,13 +5349,13 @@ SkadaPerCharDB = {
 							["damage"] = 24384,
 							["max"] = 24384,
 							["name"] = "Blackrock Grenade",
-							["min"] = 24384,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 24384,
 							["absorbed"] = 18588,
 						},
 					},
@@ -5392,7 +5371,21 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Kawatan",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[3] = {
+							["spells"] = {
+								[35546] = 195,
+								[98440] = 100,
+							},
+							["amount"] = 295,
+						},
+						[4] = {
+							["spells"] = {
+								[139546] = 3,
+							},
+							["amount"] = 3,
+						},
+					},
 					["overhealing"] = 30510,
 					["alert"] = {
 					},
@@ -5438,10 +5431,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 2350408,
+					["done"] = 0,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 0,
 				},
 				["Grom'kar Grenadier"] = {
 					["players"] = {
@@ -5468,10 +5461,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 786952,
+					["done"] = 76770,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 76770,
 				},
 				["Iron Infantry"] = {
 					["players"] = {
@@ -5510,10 +5503,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 6117966,
+					["done"] = 761809,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 761809,
 				},
 				["Assault Cannon"] = {
 					["players"] = {
@@ -5552,10 +5545,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 11489941,
+					["done"] = 417359,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 417359,
 				},
 				["Grom'kar Gunner"] = {
 					["players"] = {
@@ -5594,10 +5587,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 2898211,
+					["done"] = 1913763,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 1913763,
 				},
 				["Nitrogg Thundertower"] = {
 					["players"] = {
@@ -5636,13 +5629,13 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 4319144,
+					["done"] = 1829568,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 1829568,
 				},
 			},
-			["gotboss"] = true,
+			["mobtaken"] = 27962622,
 			["alertCount"] = 6,
 			["healing"] = 3679979,
 			["overhealing"] = 5855838.68913269,
@@ -5651,7 +5644,14 @@ SkadaPerCharDB = {
 			["shielding"] = 773997,
 			["name"] = "Nitrogg Thundertower",
 			["mobname"] = "Nitrogg Thundertower",
-			["multistrikes"] = 37,
+			["power"] = {
+				510, -- [1]
+				218, -- [2]
+				295, -- [3]
+				3, -- [4]
+				[9] = 20,
+				[0] = 7680,
+			},
 			["mobhdone"] = 0,
 			["last_action"] = 1442806704,
 			["endtime"] = 1442806875,
@@ -5663,8 +5663,8 @@ SkadaPerCharDB = {
 			["time"] = 45,
 			["interrupts"] = 0,
 			["mobdone"] = 2122647,
-			["mobtaken"] = 7033599,
 			["multistrikes"] = 11,
+			["mobtaken"] = 7033599,
 			["damage"] = 7033599,
 			["players"] = {
 				{
@@ -5775,7 +5775,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 27739,
-					["maxhp"] = 308220,
+					["dispells"] = 0,
 					["damage"] = 1502857,
 					["damagespells"] = {
 						["Blade Flurry"] = {
@@ -5844,25 +5844,11 @@ SkadaPerCharDB = {
 							["damage"] = 273399,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 375508,
-					["power"] = {
-						[3] = {
-							["spells"] = {
-								[35546] = 120,
-								[98440] = 100,
-							},
-							["amount"] = 220,
-						},
-						[4] = {
-							["spells"] = {
-								[139546] = 4,
-							},
-							["amount"] = 4,
-						},
-					},
-					["id"] = "Player-117-05DFB5E5",
 					["first"] = 1442806646,
+					["damagetaken"] = 375508,
+					["shielding"] = 0,
+					["id"] = "Player-117-05DFB5E5",
+					["maxhp"] = 308220,
 					["healing"] = 55479,
 					["damagetakenspells"] = {
 						["Flametongue"] = {
@@ -5871,13 +5857,13 @@ SkadaPerCharDB = {
 							["damage"] = 119497,
 							["max"] = 18774,
 							["name"] = "Flametongue",
-							["min"] = 11191,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 10,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 11191,
 							["absorbed"] = 0,
 						},
 						["Cannon Barrage"] = {
@@ -5886,13 +5872,13 @@ SkadaPerCharDB = {
 							["damage"] = 65932,
 							["max"] = 33767,
 							["name"] = "Cannon Barrage",
-							["min"] = 32165,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 32165,
 							["absorbed"] = 0,
 						},
 						["Shrapnel Blast"] = {
@@ -5901,13 +5887,13 @@ SkadaPerCharDB = {
 							["damage"] = 39433,
 							["max"] = 39433,
 							["name"] = "Shrapnel Blast",
-							["min"] = 39433,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 39433,
 							["absorbed"] = 0,
 						},
 						["Blackrock Mortar"] = {
@@ -5916,13 +5902,13 @@ SkadaPerCharDB = {
 							["damage"] = 95436,
 							["max"] = 95436,
 							["name"] = "Blackrock Mortar",
-							["min"] = 95436,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 95436,
 							["absorbed"] = 0,
 						},
 						["Blackrock Grenade"] = {
@@ -5931,13 +5917,13 @@ SkadaPerCharDB = {
 							["damage"] = 55210,
 							["max"] = 46847,
 							["name"] = "Blackrock Grenade",
-							["min"] = 8363,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 8363,
 							["absorbed"] = 37941,
 						},
 					},
@@ -5953,7 +5939,21 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Kawatan",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[3] = {
+							["spells"] = {
+								[35546] = 120,
+								[98440] = 100,
+							},
+							["amount"] = 220,
+						},
+						[4] = {
+							["spells"] = {
+								[139546] = 4,
+							},
+							["amount"] = 4,
+						},
+					},
 					["healingspells"] = {
 						["Recuperate"] = {
 							["shielding"] = 0,
@@ -6013,11 +6013,11 @@ SkadaPerCharDB = {
 							["uptime"] = 14,
 							["auratype"] = "BUFF",
 						},
-						["Water Elemental: Water Jet"] = {
-							["name"] = "Water Elemental: Water Jet",
+						["Frostfire Bolt"] = {
+							["name"] = "Frostfire Bolt",
 							["active"] = 0,
-							["id"] = 135029,
-							["uptime"] = 12,
+							["id"] = 44614,
+							["uptime"] = 15,
 							["auratype"] = "DEBUFF",
 						},
 						["Frostbolt"] = {
@@ -6034,11 +6034,11 @@ SkadaPerCharDB = {
 							["uptime"] = 18,
 							["auratype"] = "BUFF",
 						},
-						["Frostfire Bolt"] = {
-							["name"] = "Frostfire Bolt",
+						["Water Elemental: Water Jet"] = {
+							["name"] = "Water Elemental: Water Jet",
 							["active"] = 0,
-							["id"] = 44614,
-							["uptime"] = 15,
+							["id"] = 135029,
+							["uptime"] = 12,
 							["auratype"] = "DEBUFF",
 						},
 					},
@@ -6047,7 +6047,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 386460,
+					["dispells"] = 0,
 					["damage"] = 1616871,
 					["damagespells"] = {
 						["Ice Nova"] = {
@@ -6060,15 +6060,15 @@ SkadaPerCharDB = {
 							["max"] = 104332,
 							["damage"] = 401681,
 						},
-						["Ice Lance"] = {
-							["min"] = 2158,
-							["multistrike"] = 8,
-							["critical"] = 3,
-							["hit"] = 6,
-							["totalhits"] = 9,
-							["id"] = 30455,
-							["max"] = 22611,
-							["damage"] = 71369,
+						["Water Elemental: Water Jet"] = {
+							["min"] = 3132,
+							["multistrike"] = 16,
+							["critical"] = 6,
+							["hit"] = 9,
+							["totalhits"] = 15,
+							["id"] = 135029,
+							["max"] = 8113,
+							["damage"] = 98376,
 						},
 						["Icicle"] = {
 							["min"] = 1287,
@@ -6088,15 +6088,14 @@ SkadaPerCharDB = {
 							["max"] = 14674,
 							["damage"] = 131521,
 						},
-						["Water Elemental: Water Jet"] = {
-							["min"] = 3132,
-							["multistrike"] = 16,
-							["critical"] = 6,
-							["hit"] = 9,
-							["totalhits"] = 15,
-							["id"] = 135029,
-							["max"] = 8113,
-							["damage"] = 98376,
+						["Frostfire Bolt"] = {
+							["min"] = 57586,
+							["multistrike"] = 2,
+							["critical"] = 3,
+							["totalhits"] = 3,
+							["id"] = 44614,
+							["max"] = 72798,
+							["damage"] = 229779,
 						},
 						["Frostbolt"] = {
 							["min"] = 16159,
@@ -6118,22 +6117,22 @@ SkadaPerCharDB = {
 							["id"] = 183950,
 							["damage"] = 250656,
 						},
-						["Frostfire Bolt"] = {
-							["min"] = 57586,
-							["multistrike"] = 2,
+						["Ice Lance"] = {
+							["min"] = 2158,
+							["multistrike"] = 8,
 							["critical"] = 3,
-							["totalhits"] = 3,
-							["id"] = 44614,
-							["max"] = 72798,
-							["damage"] = 229779,
+							["hit"] = 6,
+							["totalhits"] = 9,
+							["id"] = 30455,
+							["max"] = 22611,
+							["damage"] = 71369,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 256217,
-					["power"] = {
-					},
-					["id"] = "Player-4-040B0987",
 					["first"] = 1442806646,
+					["damagetaken"] = 256217,
+					["shielding"] = 34426,
+					["id"] = "Player-4-040B0987",
+					["maxhp"] = 386460,
 					["healing"] = 34426,
 					["damagetakenspells"] = {
 						["Cannon Barrage"] = {
@@ -6142,13 +6141,13 @@ SkadaPerCharDB = {
 							["damage"] = 199614,
 							["max"] = 34345,
 							["name"] = "Cannon Barrage",
-							["min"] = 32011,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 6,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 32011,
 							["absorbed"] = 15018,
 						},
 						["Flametongue"] = {
@@ -6157,13 +6156,13 @@ SkadaPerCharDB = {
 							["damage"] = 31539,
 							["max"] = 16122,
 							["name"] = "Flametongue",
-							["min"] = 15417,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 15417,
 							["absorbed"] = 5006,
 						},
 						["Lava Wreath"] = {
@@ -6172,13 +6171,13 @@ SkadaPerCharDB = {
 							["damage"] = 25064,
 							["max"] = 6266,
 							["name"] = "Lava Wreath",
-							["min"] = 6266,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 4,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 6266,
 							["absorbed"] = 6264,
 						},
 					},
@@ -6194,7 +6193,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Hàmm",
 					["alertCount"] = 0,
-					["shielding"] = 34426,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Flameglow"] = {
 							["shielding"] = 34426,
@@ -6296,12 +6296,12 @@ SkadaPerCharDB = {
 							["uptime"] = 6,
 							["auratype"] = "BUFF",
 						},
-						["Deep Wounds"] = {
-							["name"] = "Deep Wounds",
+						["Sudden Death"] = {
+							["name"] = "Sudden Death",
 							["active"] = 0,
-							["id"] = 115767,
-							["uptime"] = 11,
-							["auratype"] = "DEBUFF",
+							["id"] = 52437,
+							["uptime"] = 17,
+							["auratype"] = "BUFF",
 						},
 						["Bladestorm"] = {
 							["name"] = "Bladestorm",
@@ -6324,12 +6324,12 @@ SkadaPerCharDB = {
 							["uptime"] = 1,
 							["auratype"] = "DEBUFF",
 						},
-						["Sudden Death"] = {
-							["name"] = "Sudden Death",
+						["Deep Wounds"] = {
+							["name"] = "Deep Wounds",
 							["active"] = 0,
-							["id"] = 52437,
-							["uptime"] = 17,
-							["auratype"] = "BUFF",
+							["id"] = 115767,
+							["uptime"] = 11,
+							["auratype"] = "DEBUFF",
 						},
 					},
 					["role"] = "TANK",
@@ -6337,7 +6337,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 406020,
+					["dispells"] = 0,
 					["damage"] = 1666096,
 					["damagespells"] = {
 						["Shield Slam"] = {
@@ -6425,20 +6425,11 @@ SkadaPerCharDB = {
 							["damage"] = 121503,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 1361708,
-					["power"] = {
-						{
-							["spells"] = {
-								[6572] = 220,
-								[12880] = 40,
-								[23922] = 100,
-							},
-							["amount"] = 360,
-						}, -- [1]
-					},
-					["id"] = "Player-116-074FF25B",
 					["first"] = 1442806647,
+					["damagetaken"] = 1361708,
+					["shielding"] = 459697,
+					["id"] = "Player-116-074FF25B",
+					["maxhp"] = 406020,
 					["healing"] = 499893,
 					["damagetakenspells"] = {
 						["Flametongue"] = {
@@ -6447,13 +6438,13 @@ SkadaPerCharDB = {
 							["damage"] = 324014,
 							["max"] = 17489,
 							["name"] = "Flametongue",
-							["min"] = 5853,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 24,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 5853,
 							["absorbed"] = 13954,
 						},
 						["Ignite"] = {
@@ -6462,13 +6453,13 @@ SkadaPerCharDB = {
 							["damage"] = 197433,
 							["max"] = 31315,
 							["name"] = "Ignite",
-							["min"] = 1764,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 21,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1764,
 							["absorbed"] = 84182,
 						},
 						["Blackrock Grenade"] = {
@@ -6477,13 +6468,13 @@ SkadaPerCharDB = {
 							["damage"] = 81142,
 							["max"] = 42610,
 							["name"] = "Blackrock Grenade",
-							["min"] = 38532,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 38532,
 							["absorbed"] = 0,
 						},
 						["Shrapnel Blast"] = {
@@ -6492,13 +6483,13 @@ SkadaPerCharDB = {
 							["damage"] = 203171,
 							["max"] = 38667,
 							["name"] = "Shrapnel Blast",
-							["min"] = 29529,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 6,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 29529,
 							["absorbed"] = 0,
 						},
 						["Blackrock Mortar"] = {
@@ -6507,13 +6498,13 @@ SkadaPerCharDB = {
 							["damage"] = 142117,
 							["max"] = 73930,
 							["name"] = "Blackrock Mortar",
-							["min"] = 68187,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 68187,
 							["absorbed"] = 7774,
 						},
 						["Attack"] = {
@@ -6522,13 +6513,13 @@ SkadaPerCharDB = {
 							["damage"] = 413831,
 							["max"] = 19429,
 							["name"] = "Attack",
-							["min"] = 227,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 130613,
 							["totalhits"] = 33,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 227,
 							["absorbed"] = 51645,
 						},
 					},
@@ -6544,7 +6535,16 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Pist",
 					["alertCount"] = 0,
-					["shielding"] = 459697,
+					["power"] = {
+						{
+							["spells"] = {
+								[6572] = 220,
+								[12880] = 40,
+								[23922] = 100,
+							},
+							["amount"] = 360,
+						}, -- [1]
+					},
 					["healingspells"] = {
 						["Shield Barrier"] = {
 							["shielding"] = 459697,
@@ -6677,7 +6677,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 1861048.51449585,
-					["maxhp"] = 365100,
+					["dispells"] = 0,
 					["damage"] = 54830,
 					["damagespells"] = {
 						["Holy Prism"] = {
@@ -6689,24 +6689,11 @@ SkadaPerCharDB = {
 							["damage"] = 54830,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 139808,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[148976] = 8,
-							},
-							["amount"] = 8,
-						},
-						[0] = {
-							["spells"] = {
-								[88852] = 18080,
-							},
-							["amount"] = 18080,
-						},
-					},
-					["id"] = "Player-1428-07B76084",
 					["first"] = 1442806647,
+					["damagetaken"] = 139808,
+					["shielding"] = 298958,
+					["id"] = "Player-1428-07B76084",
+					["maxhp"] = 365100,
 					["healing"] = 2288884,
 					["damagetakenspells"] = {
 						["Flametongue"] = {
@@ -6715,13 +6702,13 @@ SkadaPerCharDB = {
 							["damage"] = 86602,
 							["max"] = 18580,
 							["name"] = "Flametongue",
-							["min"] = 11337,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 7,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 11337,
 							["absorbed"] = 0,
 						},
 						["Lava Wreath"] = {
@@ -6730,13 +6717,13 @@ SkadaPerCharDB = {
 							["damage"] = 53206,
 							["max"] = 18525,
 							["name"] = "Lava Wreath",
-							["min"] = 16920,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 16920,
 							["absorbed"] = 0,
 						},
 					},
@@ -6787,7 +6774,20 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Jhedoner",
 					["alertCount"] = 0,
-					["shielding"] = 298958,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[148976] = 8,
+							},
+							["amount"] = 8,
+						},
+						[0] = {
+							["spells"] = {
+								[88852] = 18080,
+							},
+							["amount"] = 18080,
+						},
+					},
 					["healingspells"] = {
 						["Leech"] = {
 							["shielding"] = 0,
@@ -6951,7 +6951,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 18561,
-					["maxhp"] = 391620,
+					["dispells"] = 0,
 					["damage"] = 2192945,
 					["damagespells"] = {
 						["Steady Shot"] = {
@@ -7014,19 +7014,11 @@ SkadaPerCharDB = {
 							["damage"] = 897268,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 60349,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[77443] = 84,
-								[157722] = 20,
-							},
-							["amount"] = 104,
-						},
-					},
-					["id"] = "Player-1169-06A1ACBD",
 					["first"] = 1442806648,
+					["damagetaken"] = 60349,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1ACBD",
+					["maxhp"] = 391620,
 					["healing"] = 60349,
 					["damagetakenspells"] = {
 						["Flametongue"] = {
@@ -7035,13 +7027,13 @@ SkadaPerCharDB = {
 							["damage"] = 19146,
 							["max"] = 19146,
 							["name"] = "Flametongue",
-							["min"] = 19146,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 19146,
 							["absorbed"] = 0,
 						},
 						["Lava Wreath"] = {
@@ -7050,13 +7042,13 @@ SkadaPerCharDB = {
 							["damage"] = 41203,
 							["max"] = 17737,
 							["name"] = "Lava Wreath",
-							["min"] = 7822,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 4,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 7822,
 							["absorbed"] = 0,
 						},
 					},
@@ -7072,7 +7064,15 @@ SkadaPerCharDB = {
 					["alertDamage"] = 19146,
 					["name"] = "Bracnar",
 					["alertCount"] = 1,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[77443] = 84,
+								[157722] = 20,
+							},
+							["amount"] = 104,
+						},
+					},
 					["healingspells"] = {
 						["Leech"] = {
 							["shielding"] = 0,
@@ -7156,10 +7156,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 1519633,
+					["done"] = 384553,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 384553,
 				},
 				["Grom'kar Gunner"] = {
 					["players"] = {
@@ -7192,10 +7192,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 1610841,
+					["done"] = 571238,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 571238,
 				},
 				["Grom'kar Boomer"] = {
 					["players"] = {
@@ -7228,10 +7228,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 1428682,
+					["done"] = 594144,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 594144,
 				},
 				["Grom'kar Cinderseer"] = {
 					["players"] = {
@@ -7270,10 +7270,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 2474443,
+					["done"] = 572712,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 572712,
 				},
 			},
 			["power"] = {
@@ -7304,8 +7304,8 @@ SkadaPerCharDB = {
 			["time"] = 32,
 			["interrupts"] = 0,
 			["mobdone"] = 902115,
-			["mobtaken"] = 7084950,
 			["multistrikes"] = 5,
+			["mobtaken"] = 7084950,
 			["damage"] = 7084950,
 			["players"] = {
 				{
@@ -7395,7 +7395,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 386460,
+					["dispells"] = 0,
 					["damage"] = 2591106,
 					["damagespells"] = {
 						["Ice Nova"] = {
@@ -7484,12 +7484,11 @@ SkadaPerCharDB = {
 							["damage"] = 1174697,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 0,
-					["power"] = {
-					},
-					["id"] = "Player-4-040B0987",
 					["first"] = 1442806611,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-4-040B0987",
+					["maxhp"] = 386460,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -7498,7 +7497,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Hàmm",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 					},
 					["alert"] = {
@@ -7557,7 +7557,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 69869,
-					["maxhp"] = 391620,
+					["dispells"] = 0,
 					["damage"] = 2131691,
 					["damagespells"] = {
 						["Steady Shot"] = {
@@ -7629,19 +7629,11 @@ SkadaPerCharDB = {
 							["damage"] = 825910,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 0,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[77443] = 70,
-								[157722] = 60,
-							},
-							["amount"] = 130,
-						},
-					},
-					["id"] = "Player-1169-06A1ACBD",
 					["first"] = 1442806611,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1ACBD",
+					["maxhp"] = 391620,
 					["healing"] = 6136,
 					["damagetakenspells"] = {
 					},
@@ -7685,7 +7677,15 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Bracnar",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[77443] = 70,
+								[157722] = 60,
+							},
+							["amount"] = 130,
+						},
+					},
 					["healingspells"] = {
 						["Leech"] = {
 							["shielding"] = 0,
@@ -7828,7 +7828,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 55481,
-					["maxhp"] = 308220,
+					["dispells"] = 0,
 					["damage"] = 977320,
 					["damagespells"] = {
 						["Instant Poison"] = {
@@ -7910,25 +7910,11 @@ SkadaPerCharDB = {
 							["damage"] = 55000,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 218237,
-					["power"] = {
-						[3] = {
-							["spells"] = {
-								[35546] = 165,
-								[98440] = 25,
-							},
-							["amount"] = 190,
-						},
-						[4] = {
-							["spells"] = {
-								[139546] = 2,
-							},
-							["amount"] = 2,
-						},
-					},
-					["id"] = "Player-117-05DFB5E5",
 					["first"] = 1442806611,
+					["damagetaken"] = 218237,
+					["shielding"] = 0,
+					["id"] = "Player-117-05DFB5E5",
+					["maxhp"] = 308220,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 						["Flametongue"] = {
@@ -7937,13 +7923,13 @@ SkadaPerCharDB = {
 							["damage"] = 37615,
 							["max"] = 11191,
 							["name"] = "Flametongue",
-							["min"] = 4042,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 4,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 4042,
 							["absorbed"] = 7149,
 						},
 						["Blackrock Mortar"] = {
@@ -7952,13 +7938,13 @@ SkadaPerCharDB = {
 							["damage"] = 180622,
 							["max"] = 91277,
 							["name"] = "Blackrock Mortar",
-							["min"] = 89345,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 89345,
 							["absorbed"] = 1941,
 						},
 					},
@@ -7974,7 +7960,21 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Kawatan",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[3] = {
+							["spells"] = {
+								[35546] = 165,
+								[98440] = 25,
+							},
+							["amount"] = 190,
+						},
+						[4] = {
+							["spells"] = {
+								[139546] = 2,
+							},
+							["amount"] = 2,
+						},
+					},
 					["healingspells"] = {
 						["Recuperate"] = {
 							["shielding"] = 0,
@@ -8075,7 +8075,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 135019.15625,
-					["maxhp"] = 406020,
+					["dispells"] = 0,
 					["damage"] = 1343241,
 					["damagespells"] = {
 						["Shield Slam"] = {
@@ -8155,20 +8155,11 @@ SkadaPerCharDB = {
 							["damage"] = 48718,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 683878,
-					["power"] = {
-						{
-							["spells"] = {
-								[23922] = 100,
-								[12880] = 70,
-								[6572] = 180,
-							},
-							["amount"] = 350,
-						}, -- [1]
-					},
-					["id"] = "Player-116-074FF25B",
 					["first"] = 1442806611,
+					["damagetaken"] = 683878,
+					["shielding"] = 220340,
+					["id"] = "Player-116-074FF25B",
+					["maxhp"] = 406020,
 					["healing"] = 366506,
 					["damagetakenspells"] = {
 						["Flametongue"] = {
@@ -8177,13 +8168,13 @@ SkadaPerCharDB = {
 							["damage"] = 29778,
 							["max"] = 14091,
 							["name"] = "Flametongue",
-							["min"] = 4118,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 4118,
 							["absorbed"] = 7953,
 						},
 						["Blackrock Mortar"] = {
@@ -8192,13 +8183,13 @@ SkadaPerCharDB = {
 							["damage"] = 247345,
 							["max"] = 67598,
 							["name"] = "Blackrock Mortar",
-							["min"] = 56946,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 4,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 56946,
 							["absorbed"] = 26265,
 						},
 						["Attack"] = {
@@ -8207,13 +8198,13 @@ SkadaPerCharDB = {
 							["damage"] = 406755,
 							["max"] = 49830,
 							["name"] = "Attack",
-							["min"] = 1826,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 323328,
 							["totalhits"] = 29,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1826,
 							["absorbed"] = 17351,
 						},
 					},
@@ -8229,7 +8220,16 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Pist",
 					["alertCount"] = 0,
-					["shielding"] = 220340,
+					["power"] = {
+						{
+							["spells"] = {
+								[23922] = 100,
+								[12880] = 70,
+								[6572] = 180,
+							},
+							["amount"] = 350,
+						}, -- [1]
+					},
 					["healingspells"] = {
 						["Shield Barrier"] = {
 							["shielding"] = 220340,
@@ -8357,7 +8357,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 1467372.94836426,
-					["maxhp"] = 365100,
+					["dispells"] = 0,
 					["damage"] = 41592,
 					["damagespells"] = {
 						["Judgment"] = {
@@ -8378,25 +8378,11 @@ SkadaPerCharDB = {
 							["damage"] = 22848,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 0,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[148976] = 5,
-								[138248] = 3,
-							},
-							["amount"] = 8,
-						},
-						[0] = {
-							["spells"] = {
-								[88852] = 6440,
-							},
-							["amount"] = 6440,
-						},
-					},
-					["id"] = "Player-1428-07B76084",
 					["first"] = 1442806613,
+					["damagetaken"] = 0,
+					["shielding"] = 190651,
+					["id"] = "Player-1428-07B76084",
+					["maxhp"] = 365100,
 					["healing"] = 1091999,
 					["damagetakenspells"] = {
 					},
@@ -8447,7 +8433,21 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Jhedoner",
 					["alertCount"] = 0,
-					["shielding"] = 190651,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[148976] = 5,
+								[138248] = 3,
+							},
+							["amount"] = 8,
+						},
+						[0] = {
+							["spells"] = {
+								[88852] = 6440,
+							},
+							["amount"] = 6440,
+						},
+					},
 					["healingspells"] = {
 						["Daybreak"] = {
 							["shielding"] = 0,
@@ -8519,20 +8519,6 @@ SkadaPerCharDB = {
 							["critical"] = 5,
 							["absorbed"] = 0,
 						},
-						["Holy Radiance"] = {
-							["shielding"] = 0,
-							["id"] = 82327,
-							["healing"] = 73365,
-							["multistrikes"] = 0,
-							["min"] = 0,
-							["multistrike"] = 2,
-							["name"] = "Holy Radiance",
-							["hits"] = 14,
-							["overhealing"] = 80879,
-							["max"] = 33712,
-							["critical"] = 3,
-							["absorbed"] = 0,
-						},
 						["Holy Prism"] = {
 							["shielding"] = 0,
 							["id"] = 114852,
@@ -8545,6 +8531,20 @@ SkadaPerCharDB = {
 							["overhealing"] = 59973,
 							["max"] = 29988,
 							["critical"] = 0,
+							["absorbed"] = 0,
+						},
+						["Holy Radiance"] = {
+							["shielding"] = 0,
+							["id"] = 82327,
+							["healing"] = 73365,
+							["multistrikes"] = 0,
+							["min"] = 0,
+							["multistrike"] = 2,
+							["name"] = "Holy Radiance",
+							["hits"] = 14,
+							["overhealing"] = 80879,
+							["max"] = 33712,
+							["critical"] = 3,
 							["absorbed"] = 0,
 						},
 						["Flash of Light"] = {
@@ -8648,10 +8648,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 2764477,
+					["done"] = 526859,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 526859,
 				},
 				["Iron Infantry"] = {
 					["players"] = {
@@ -8690,10 +8690,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 943174,
+					["done"] = 31393,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 31393,
 				},
 				["Grom'kar Hulk"] = {
 					["players"] = {
@@ -8726,10 +8726,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 2172426,
+					["done"] = 248968,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 248968,
 				},
 				["Grom'kar Cinderseer"] = {
 					["players"] = {
@@ -8768,10 +8768,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 1204873,
+					["done"] = 94895,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 94895,
 				},
 			},
 			["power"] = {
@@ -8802,8 +8802,8 @@ SkadaPerCharDB = {
 			["time"] = 37,
 			["interrupts"] = 0,
 			["mobdone"] = 2278420,
-			["mobtaken"] = 6154855,
 			["multistrikes"] = 15,
+			["mobtaken"] = 6154855,
 			["damage"] = 6154855,
 			["players"] = {
 				{
@@ -8884,7 +8884,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 1558953.97042847,
-					["maxhp"] = 365100,
+					["dispells"] = 0,
 					["damage"] = 117772,
 					["damagespells"] = {
 						["Judgment"] = {
@@ -8914,24 +8914,11 @@ SkadaPerCharDB = {
 							["damage"] = 32624,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 437948,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[148976] = 5,
-							},
-							["amount"] = 5,
-						},
-						[0] = {
-							["spells"] = {
-								[88852] = 14200,
-							},
-							["amount"] = 14200,
-						},
-					},
-					["id"] = "Player-1428-07B76084",
 					["first"] = 1442806556,
+					["damagetaken"] = 437948,
+					["shielding"] = 235451,
+					["id"] = "Player-1428-07B76084",
+					["maxhp"] = 365100,
 					["healing"] = 1655307,
 					["damagetakenspells"] = {
 						["Shrapnel Blast"] = {
@@ -8940,13 +8927,13 @@ SkadaPerCharDB = {
 							["damage"] = 164931,
 							["max"] = 47972,
 							["name"] = "Shrapnel Blast",
-							["min"] = 34628,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 4,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 34628,
 							["absorbed"] = 16444,
 						},
 						["Ignite"] = {
@@ -8955,13 +8942,13 @@ SkadaPerCharDB = {
 							["damage"] = 273017,
 							["max"] = 41902,
 							["name"] = "Ignite",
-							["min"] = 29182,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 7,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 29182,
 							["absorbed"] = 7577,
 						},
 					},
@@ -9012,7 +8999,20 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Jhedoner",
 					["alertCount"] = 0,
-					["shielding"] = 235451,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[148976] = 5,
+							},
+							["amount"] = 5,
+						},
+						[0] = {
+							["spells"] = {
+								[88852] = 14200,
+							},
+							["amount"] = 14200,
+						},
+					},
 					["healingspells"] = {
 						["Illuminated Healing"] = {
 							["shielding"] = 235451,
@@ -9204,24 +9204,17 @@ SkadaPerCharDB = {
 							["uptime"] = 12,
 							["auratype"] = "BUFF",
 						},
-						["Deep Wounds"] = {
-							["name"] = "Deep Wounds",
+						["Sudden Death"] = {
+							["name"] = "Sudden Death",
 							["active"] = 0,
-							["id"] = 115767,
-							["uptime"] = 6,
-							["auratype"] = "DEBUFF",
+							["id"] = 52437,
+							["uptime"] = 10,
+							["auratype"] = "BUFF",
 						},
 						["Bladestorm"] = {
 							["name"] = "Bladestorm",
 							["active"] = 0,
 							["id"] = 46924,
-							["uptime"] = 6,
-							["auratype"] = "BUFF",
-						},
-						["Victory Rush"] = {
-							["name"] = "Victory Rush",
-							["active"] = 0,
-							["id"] = 118779,
 							["uptime"] = 6,
 							["auratype"] = "BUFF",
 						},
@@ -9232,12 +9225,19 @@ SkadaPerCharDB = {
 							["uptime"] = 11,
 							["auratype"] = "BUFF",
 						},
-						["Sudden Death"] = {
-							["name"] = "Sudden Death",
+						["Victory Rush"] = {
+							["name"] = "Victory Rush",
 							["active"] = 0,
-							["id"] = 52437,
-							["uptime"] = 10,
+							["id"] = 118779,
+							["uptime"] = 6,
 							["auratype"] = "BUFF",
+						},
+						["Deep Wounds"] = {
+							["name"] = "Deep Wounds",
+							["active"] = 0,
+							["id"] = 115767,
+							["uptime"] = 6,
+							["auratype"] = "DEBUFF",
 						},
 					},
 					["role"] = "TANK",
@@ -9245,7 +9245,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 406020,
+					["dispells"] = 0,
 					["damage"] = 1587798,
 					["damagespells"] = {
 						["Shockwave"] = {
@@ -9276,14 +9276,6 @@ SkadaPerCharDB = {
 							["max"] = 11951,
 							["damage"] = 143672,
 						},
-						["Victory Rush"] = {
-							["min"] = 9678,
-							["hit"] = 1,
-							["totalhits"] = 1,
-							["id"] = 34428,
-							["max"] = 9678,
-							["damage"] = 9678,
-						},
 						["Ravager"] = {
 							["min"] = 2934,
 							["critical"] = 14,
@@ -9292,6 +9284,14 @@ SkadaPerCharDB = {
 							["id"] = 156287,
 							["max"] = 8604,
 							["damage"] = 194005,
+						},
+						["Victory Rush"] = {
+							["min"] = 9678,
+							["hit"] = 1,
+							["totalhits"] = 1,
+							["id"] = 34428,
+							["max"] = 9678,
+							["damage"] = 9678,
 						},
 						["Revenge"] = {
 							["min"] = 4577,
@@ -9348,20 +9348,11 @@ SkadaPerCharDB = {
 							["damage"] = 9189,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 756560,
-					["power"] = {
-						{
-							["spells"] = {
-								[6572] = 160,
-								[12880] = 50,
-								[23922] = 60,
-							},
-							["amount"] = 270,
-						}, -- [1]
-					},
-					["id"] = "Player-116-074FF25B",
 					["first"] = 1442806556,
+					["damagetaken"] = 756560,
+					["shielding"] = 204542,
+					["id"] = "Player-116-074FF25B",
+					["maxhp"] = 406020,
 					["healing"] = 277626,
 					["damagetakenspells"] = {
 						["Attack"] = {
@@ -9370,13 +9361,13 @@ SkadaPerCharDB = {
 							["damage"] = 331219,
 							["max"] = 19247,
 							["name"] = "Attack",
-							["min"] = 3235,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 69897,
 							["totalhits"] = 32,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 3235,
 							["absorbed"] = 42754,
 						},
 						["Shrapnel Blast"] = {
@@ -9385,13 +9376,13 @@ SkadaPerCharDB = {
 							["damage"] = 124855,
 							["max"] = 36172,
 							["name"] = "Shrapnel Blast",
-							["min"] = 1548,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 5,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1548,
 							["absorbed"] = 40687,
 						},
 						["Ignite"] = {
@@ -9400,13 +9391,13 @@ SkadaPerCharDB = {
 							["damage"] = 260100,
 							["max"] = 31315,
 							["name"] = "Ignite",
-							["min"] = 4140,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 18,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 4140,
 							["absorbed"] = 44101,
 						},
 						["Blackrock Grenade"] = {
@@ -9415,13 +9406,13 @@ SkadaPerCharDB = {
 							["damage"] = 40386,
 							["max"] = 40386,
 							["name"] = "Blackrock Grenade",
-							["min"] = 40386,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 40386,
 							["absorbed"] = 629,
 						},
 					},
@@ -9437,7 +9428,16 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Pist",
 					["alertCount"] = 0,
-					["shielding"] = 204542,
+					["power"] = {
+						{
+							["spells"] = {
+								[6572] = 160,
+								[12880] = 50,
+								[23922] = 60,
+							},
+							["amount"] = 270,
+						}, -- [1]
+					},
 					["healingspells"] = {
 						["Blood Craze"] = {
 							["shielding"] = 0,
@@ -9517,11 +9517,11 @@ SkadaPerCharDB = {
 							["uptime"] = 17,
 							["auratype"] = "BUFF",
 						},
-						["Frostfire Bolt"] = {
-							["name"] = "Frostfire Bolt",
+						["Water Elemental: Water Jet"] = {
+							["name"] = "Water Elemental: Water Jet",
 							["active"] = 0,
-							["id"] = 44614,
-							["uptime"] = 5,
+							["id"] = 135029,
+							["uptime"] = 7,
 							["auratype"] = "DEBUFF",
 						},
 						["Frostbolt"] = {
@@ -9538,11 +9538,11 @@ SkadaPerCharDB = {
 							["uptime"] = 16,
 							["auratype"] = "BUFF",
 						},
-						["Water Elemental: Water Jet"] = {
-							["name"] = "Water Elemental: Water Jet",
+						["Frostfire Bolt"] = {
+							["name"] = "Frostfire Bolt",
 							["active"] = 0,
-							["id"] = 135029,
-							["uptime"] = 7,
+							["id"] = 44614,
+							["uptime"] = 5,
 							["auratype"] = "DEBUFF",
 						},
 					},
@@ -9551,7 +9551,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 386460,
+					["dispells"] = 0,
 					["damage"] = 2048115,
 					["damagespells"] = {
 						["Ice Nova"] = {
@@ -9641,12 +9641,11 @@ SkadaPerCharDB = {
 							["damage"] = 82354,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 277974,
-					["power"] = {
-					},
-					["id"] = "Player-4-040B0987",
 					["first"] = 1442806556,
+					["damagetaken"] = 277974,
+					["shielding"] = 25030,
+					["id"] = "Player-4-040B0987",
+					["maxhp"] = 386460,
 					["healing"] = 25030,
 					["damagetakenspells"] = {
 						["Shrapnel Blast"] = {
@@ -9655,13 +9654,13 @@ SkadaPerCharDB = {
 							["damage"] = 112880,
 							["max"] = 46765,
 							["name"] = "Shrapnel Blast",
-							["min"] = 22204,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 22204,
 							["absorbed"] = 23952,
 						},
 						["Ignite"] = {
@@ -9670,13 +9669,13 @@ SkadaPerCharDB = {
 							["damage"] = 165094,
 							["max"] = 26515,
 							["name"] = "Ignite",
-							["min"] = 12931,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 7,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 12931,
 							["absorbed"] = 38030,
 						},
 					},
@@ -9692,7 +9691,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Hàmm",
 					["alertCount"] = 0,
-					["shielding"] = 25030,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Flameglow"] = {
 							["shielding"] = 25030,
@@ -9730,27 +9730,6 @@ SkadaPerCharDB = {
 							["uptime"] = 33,
 							["auratype"] = "BUFF",
 						},
-						["Trueshot Aura"] = {
-							["name"] = "Trueshot Aura",
-							["active"] = 2,
-							["id"] = 19506,
-							["uptime"] = 24,
-							["auratype"] = "BUFF",
-						},
-						["Lone Wolf: Ferocity of the Raptor"] = {
-							["name"] = "Lone Wolf: Ferocity of the Raptor",
-							["active"] = 1,
-							["id"] = 160200,
-							["uptime"] = 11,
-							["auratype"] = "BUFF",
-						},
-						["Sniper Training"] = {
-							["name"] = "Sniper Training",
-							["active"] = 0,
-							["id"] = 168811,
-							["uptime"] = 34,
-							["auratype"] = "BUFF",
-						},
 						["Thrill of the Hunt"] = {
 							["name"] = "Thrill of the Hunt",
 							["active"] = 1,
@@ -9765,13 +9744,34 @@ SkadaPerCharDB = {
 							["uptime"] = 33,
 							["auratype"] = "BUFF",
 						},
+						["Sniper Training"] = {
+							["name"] = "Sniper Training",
+							["active"] = 0,
+							["id"] = 168811,
+							["uptime"] = 34,
+							["auratype"] = "BUFF",
+						},
+						["Trueshot Aura"] = {
+							["name"] = "Trueshot Aura",
+							["active"] = 2,
+							["id"] = 19506,
+							["uptime"] = 24,
+							["auratype"] = "BUFF",
+						},
+						["Lone Wolf: Ferocity of the Raptor"] = {
+							["name"] = "Lone Wolf: Ferocity of the Raptor",
+							["active"] = 1,
+							["id"] = 160200,
+							["uptime"] = 11,
+							["auratype"] = "BUFF",
+						},
 					},
 					["role"] = "DAMAGER",
 					["time"] = 36,
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 55041,
-					["maxhp"] = 391620,
+					["dispells"] = 0,
 					["damage"] = 2107646,
 					["damagespells"] = {
 						["Steady Shot"] = {
@@ -9834,19 +9834,11 @@ SkadaPerCharDB = {
 							["damage"] = 613257,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 434430,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[157722] = 20,
-								[77443] = 56,
-							},
-							["amount"] = 76,
-						},
-					},
-					["id"] = "Player-1169-06A1ACBD",
 					["first"] = 1442806556,
+					["damagetaken"] = 434430,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1ACBD",
+					["maxhp"] = 391620,
 					["healing"] = 148182,
 					["damagetakenspells"] = {
 						["Shrapnel Blast"] = {
@@ -9855,13 +9847,13 @@ SkadaPerCharDB = {
 							["damage"] = 174800,
 							["max"] = 52423,
 							["name"] = "Shrapnel Blast",
-							["min"] = 25818,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 4,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 25818,
 							["absorbed"] = 14299,
 						},
 						["Ignite"] = {
@@ -9870,13 +9862,13 @@ SkadaPerCharDB = {
 							["damage"] = 259630,
 							["max"] = 41613,
 							["name"] = "Ignite",
-							["min"] = 28980,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 7,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 28980,
 							["absorbed"] = 19025,
 						},
 					},
@@ -9920,7 +9912,15 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Bracnar",
 					["alertCount"] = 4,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[157722] = 20,
+								[77443] = 56,
+							},
+							["amount"] = 76,
+						},
+					},
 					["healingspells"] = {
 						["Chimaera Shot"] = {
 							["shielding"] = 0,
@@ -10008,13 +10008,6 @@ SkadaPerCharDB = {
 						["Iron Infantry"] = 80483,
 					},
 					["auras"] = {
-						["Shallow Insight"] = {
-							["name"] = "Shallow Insight",
-							["active"] = 0,
-							["id"] = 84745,
-							["uptime"] = 1,
-							["auratype"] = "BUFF",
-						},
 						["Crippling Poison"] = {
 							["name"] = "Crippling Poison",
 							["active"] = 0,
@@ -10022,11 +10015,11 @@ SkadaPerCharDB = {
 							["uptime"] = 12,
 							["auratype"] = "DEBUFF",
 						},
-						["Swiftblade's Cunning"] = {
-							["name"] = "Swiftblade's Cunning",
-							["active"] = 4,
-							["id"] = 113742,
-							["uptime"] = 11,
+						["Shallow Insight"] = {
+							["name"] = "Shallow Insight",
+							["active"] = 0,
+							["id"] = 84745,
+							["uptime"] = 1,
 							["auratype"] = "BUFF",
 						},
 						["Archmage's Incandescence"] = {
@@ -10036,6 +10029,13 @@ SkadaPerCharDB = {
 							["uptime"] = 5,
 							["auratype"] = "BUFF",
 						},
+						["Swiftblade's Cunning"] = {
+							["name"] = "Swiftblade's Cunning",
+							["active"] = 4,
+							["id"] = 113742,
+							["uptime"] = 11,
+							["auratype"] = "BUFF",
+						},
 					},
 					["role"] = "DAMAGER",
 					["healingspells"] = {
@@ -10043,8 +10043,8 @@ SkadaPerCharDB = {
 					["time"] = 26,
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
-					["maxhp"] = 339000,
 					["dispells"] = 0,
+					["first"] = 1442806556,
 					["damage"] = 293524,
 					["damagespells"] = {
 						["Instant Poison"] = {
@@ -10102,99 +10102,99 @@ SkadaPerCharDB = {
 								{
 									["absorb"] = 0,
 									["amount"] = 15206,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 82327,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 184200,
 									["ts"] = 1442806534.01401,
 								}, -- [1]
 								{
 									["absorb"] = 0,
 									["amount"] = 59970,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 19750,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 244170,
 									["ts"] = 1442806535.23502,
 								}, -- [2]
 								{
 									["absorb"] = 0,
 									["amount"] = 8996,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 19750,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 253166,
 									["ts"] = 1442806535.23503,
 								}, -- [3]
 								{
 									["absorb"] = 0,
 									["amount"] = 31581,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 25914,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 284747,
 									["ts"] = 1442806535.58704,
 								}, -- [4]
 								{
 									["ts"] = 1442806557.18905,
 									["amount"] = -46716,
-									["srcname"] = "Grom'kar Grenadier",
 									["hp"] = 268563,
 									["spellid"] = 161153,
+									["srcname"] = "Grom'kar Grenadier",
 								}, -- [5]
 								{
 									["absorb"] = 0,
 									["amount"] = 29988,
-									["srcname"] = "Jhedoner-Quel'Thalas",
 									["spellid"] = 114852,
+									["srcname"] = "Jhedoner-Quel'Thalas",
 									["hp"] = 298551,
 									["ts"] = 1442806559.41106,
 								}, -- [6]
 								{
 									["absorb"] = -7150,
 									["amount"] = -32540,
-									["srcname"] = "Grom'kar Gunner",
 									["spellid"] = 166676,
+									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 266011,
 									["ts"] = 1442806564.24807,
 								}, -- [7]
 								{
 									["ts"] = 1442806564.24808,
 									["amount"] = -40367,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 225644,
 									["spellid"] = 166676,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [8]
 								{
 									["ts"] = 1442806564.75309,
 									["amount"] = -47651,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 177993,
 									["spellid"] = 166676,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [9]
 								{
 									["ts"] = 1442806564.7531,
 									["amount"] = -49759,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 128234,
 									["spellid"] = 166676,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [10]
 								{
 									["ts"] = 1442806565.24711,
 									["amount"] = -41200,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 87034,
 									["spellid"] = 176147,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [11]
 								{
 									["ts"] = 1442806565.24712,
 									["amount"] = -54854,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 32180,
 									["spellid"] = 166676,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [12]
 								{
 									["ts"] = 1442806565.24713,
 									["amount"] = -58421,
-									["srcname"] = "Grom'kar Gunner",
 									["hp"] = 1,
 									["spellid"] = 166676,
+									["srcname"] = "Grom'kar Gunner",
 								}, -- [13]
 								{
 									["spellname"] = "Kawatan dies",
@@ -10205,9 +10205,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1442806533.29815,
 									["amount"] = -11147,
-									["srcname"] = "Grom'kar Cinderseer",
 									["hp"] = 168994,
 									["spellid"] = 176033,
+									["srcname"] = "Grom'kar Cinderseer",
 								}, -- [15]
 								["pos"] = 15,
 							},
@@ -10215,6 +10215,62 @@ SkadaPerCharDB = {
 						}, -- [1]
 					},
 					["damagetaken"] = 371508,
+					["shielding"] = 0,
+					["id"] = "Player-117-05DFB5E5",
+					["maxhp"] = 339000,
+					["healing"] = 0,
+					["damagetakenspells"] = {
+						["Shrapnel Blast"] = {
+							["crushing"] = 0,
+							["id"] = 166676,
+							["damage"] = 283592,
+							["max"] = 58421,
+							["name"] = "Shrapnel Blast",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 6,
+							["resisted"] = 0,
+							["min"] = 32540,
+							["absorbed"] = 7150,
+						},
+						["Blackrock Grenade"] = {
+							["crushing"] = 0,
+							["id"] = 161153,
+							["damage"] = 46716,
+							["max"] = 46716,
+							["name"] = "Blackrock Grenade",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 1,
+							["resisted"] = 0,
+							["min"] = 46716,
+							["absorbed"] = 0,
+						},
+						["Ignite"] = {
+							["crushing"] = 0,
+							["id"] = 176147,
+							["damage"] = 41200,
+							["max"] = 41200,
+							["name"] = "Ignite",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 1,
+							["resisted"] = 0,
+							["min"] = 41200,
+							["absorbed"] = 0,
+						},
+					},
+					["healed"] = {
+					},
+					["alertDamage"] = 0,
+					["name"] = "Kawatan",
+					["alertCount"] = 0,
 					["power"] = {
 						[4] = {
 							["spells"] = {
@@ -10229,62 +10285,6 @@ SkadaPerCharDB = {
 							["amount"] = 30,
 						},
 					},
-					["id"] = "Player-117-05DFB5E5",
-					["first"] = 1442806556,
-					["healing"] = 0,
-					["damagetakenspells"] = {
-						["Shrapnel Blast"] = {
-							["crushing"] = 0,
-							["id"] = 166676,
-							["damage"] = 283592,
-							["max"] = 58421,
-							["name"] = "Shrapnel Blast",
-							["min"] = 32540,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 6,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 7150,
-						},
-						["Blackrock Grenade"] = {
-							["crushing"] = 0,
-							["id"] = 161153,
-							["damage"] = 46716,
-							["max"] = 46716,
-							["name"] = "Blackrock Grenade",
-							["min"] = 46716,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 1,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-						},
-						["Ignite"] = {
-							["crushing"] = 0,
-							["id"] = 176147,
-							["damage"] = 41200,
-							["max"] = 41200,
-							["name"] = "Ignite",
-							["min"] = 41200,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 1,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-						},
-					},
-					["healed"] = {
-					},
-					["alertDamage"] = 0,
-					["name"] = "Kawatan",
-					["alertCount"] = 0,
-					["shielding"] = 0,
 					["overhealing"] = 0,
 					["alert"] = {
 					},
@@ -10324,10 +10324,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 1391170,
+					["done"] = 240726,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 240726,
 				},
 				["Grom'kar Gunner"] = {
 					["players"] = {
@@ -10366,10 +10366,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 3074997,
+					["done"] = 1995207,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 1995207,
 				},
 				["Iron Infantry"] = {
 					["players"] = {
@@ -10408,10 +10408,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 1688688,
+					["done"] = 42487,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 42487,
 				},
 			},
 			["power"] = {
@@ -10442,8 +10442,8 @@ SkadaPerCharDB = {
 			["time"] = 55,
 			["interrupts"] = 0,
 			["mobdone"] = 1788082,
-			["mobtaken"] = 10133858,
 			["multistrikes"] = 27,
+			["mobtaken"] = 10133858,
 			["damage"] = 10133858,
 			["players"] = {
 				{
@@ -10500,19 +10500,19 @@ SkadaPerCharDB = {
 							["uptime"] = 20,
 							["auratype"] = "BUFF",
 						},
-						["Shield Barrier"] = {
-							["name"] = "Shield Barrier",
-							["active"] = 0,
-							["id"] = 112048,
-							["uptime"] = 5,
-							["auratype"] = "BUFF",
-						},
 						["Thunder Clap"] = {
 							["name"] = "Thunder Clap",
 							["active"] = 0,
 							["id"] = 6343,
 							["uptime"] = 4,
 							["auratype"] = "DEBUFF",
+						},
+						["Shield Barrier"] = {
+							["name"] = "Shield Barrier",
+							["active"] = 0,
+							["id"] = 112048,
+							["uptime"] = 5,
+							["auratype"] = "BUFF",
 						},
 						["Shield Block"] = {
 							["name"] = "Shield Block",
@@ -10562,7 +10562,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 406020,
+					["dispells"] = 0,
 					["damage"] = 1940894,
 					["damagespells"] = {
 						["Shield Slam"] = {
@@ -10630,6 +10630,15 @@ SkadaPerCharDB = {
 							["max"] = 8042,
 							["damage"] = 43852,
 						},
+						["Devastate"] = {
+							["min"] = 11617,
+							["critical"] = 2,
+							["hit"] = 5,
+							["totalhits"] = 7,
+							["id"] = 20243,
+							["max"] = 26402,
+							["damage"] = 108775,
+						},
 						["Ravager"] = {
 							["min"] = 2699,
 							["multistrike"] = 3,
@@ -10639,15 +10648,6 @@ SkadaPerCharDB = {
 							["id"] = 156287,
 							["max"] = 7914,
 							["damage"] = 151937,
-						},
-						["Devastate"] = {
-							["min"] = 11617,
-							["critical"] = 2,
-							["hit"] = 5,
-							["totalhits"] = 7,
-							["id"] = 20243,
-							["max"] = 26402,
-							["damage"] = 108775,
 						},
 						["Attack"] = {
 							["min"] = 4522,
@@ -10660,20 +10660,11 @@ SkadaPerCharDB = {
 							["damage"] = 177603,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 939767,
-					["power"] = {
-						{
-							["spells"] = {
-								[6572] = 220,
-								[12880] = 110,
-								[23922] = 110,
-							},
-							["amount"] = 440,
-						}, -- [1]
-					},
-					["id"] = "Player-116-074FF25B",
 					["first"] = 1442806482,
+					["damagetaken"] = 939767,
+					["shielding"] = 268619,
+					["id"] = "Player-116-074FF25B",
+					["maxhp"] = 406020,
 					["healing"] = 305162,
 					["damagetakenspells"] = {
 						["Attack"] = {
@@ -10682,13 +10673,13 @@ SkadaPerCharDB = {
 							["damage"] = 702596,
 							["max"] = 41359,
 							["name"] = "Attack",
-							["min"] = 1978,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 288850,
 							["totalhits"] = 68,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1978,
 							["absorbed"] = 78234,
 						},
 						["Blackrock Mortar"] = {
@@ -10697,13 +10688,13 @@ SkadaPerCharDB = {
 							["damage"] = 65343,
 							["max"] = 65343,
 							["name"] = "Blackrock Mortar",
-							["min"] = 65343,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 65343,
 							["absorbed"] = 5436,
 						},
 						["Flametongue"] = {
@@ -10712,13 +10703,13 @@ SkadaPerCharDB = {
 							["damage"] = 135601,
 							["max"] = 18828,
 							["name"] = "Flametongue",
-							["min"] = 4239,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 12,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 4239,
 							["absorbed"] = 19703,
 						},
 						["Blackrock Grenade"] = {
@@ -10727,13 +10718,13 @@ SkadaPerCharDB = {
 							["damage"] = 36227,
 							["max"] = 33620,
 							["name"] = "Blackrock Grenade",
-							["min"] = 2607,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2607,
 							["absorbed"] = 32352,
 						},
 					},
@@ -10749,7 +10740,16 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Pist",
 					["alertCount"] = 0,
-					["shielding"] = 268619,
+					["power"] = {
+						{
+							["spells"] = {
+								[6572] = 220,
+								[12880] = 110,
+								[23922] = 110,
+							},
+							["amount"] = 440,
+						}, -- [1]
+					},
 					["healingspells"] = {
 						["Blood Craze"] = {
 							["shielding"] = 0,
@@ -10863,7 +10863,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 6382605.83605957,
-					["maxhp"] = 365100,
+					["dispells"] = 0,
 					["damage"] = 185348,
 					["damagespells"] = {
 						["Judgment"] = {
@@ -10903,25 +10903,11 @@ SkadaPerCharDB = {
 							["damage"] = 38558,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 160076,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[148976] = 10,
-								[138248] = 6,
-							},
-							["amount"] = 16,
-						},
-						[0] = {
-							["spells"] = {
-								[88852] = 2640,
-							},
-							["amount"] = 2640,
-						},
-					},
-					["id"] = "Player-1428-07B76084",
 					["first"] = 1442806482,
+					["damagetaken"] = 160076,
+					["shielding"] = 609587,
+					["id"] = "Player-1428-07B76084",
+					["maxhp"] = 365100,
 					["healing"] = 2273313,
 					["damagetakenspells"] = {
 						["Attack"] = {
@@ -10930,13 +10916,13 @@ SkadaPerCharDB = {
 							["damage"] = 64007,
 							["max"] = 64007,
 							["name"] = "Attack",
-							["min"] = 64007,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 64007,
 							["absorbed"] = 11892,
 						},
 						["Lava Wreath"] = {
@@ -10945,13 +10931,13 @@ SkadaPerCharDB = {
 							["damage"] = 3097,
 							["max"] = 3097,
 							["name"] = "Lava Wreath",
-							["min"] = 3097,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 3097,
 							["absorbed"] = 14193,
 						},
 						["Flametongue"] = {
@@ -10960,13 +10946,13 @@ SkadaPerCharDB = {
 							["damage"] = 54306,
 							["max"] = 11337,
 							["name"] = "Flametongue",
-							["min"] = 3056,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 6,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 3056,
 							["absorbed"] = 13716,
 						},
 						["Blackrock Grenade"] = {
@@ -10975,13 +10961,13 @@ SkadaPerCharDB = {
 							["damage"] = 38666,
 							["max"] = 38666,
 							["name"] = "Blackrock Grenade",
-							["min"] = 38666,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 38666,
 							["absorbed"] = 3205,
 						},
 					},
@@ -11032,7 +11018,21 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Jhedoner",
 					["alertCount"] = 0,
-					["shielding"] = 609587,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[148976] = 10,
+								[138248] = 6,
+							},
+							["amount"] = 16,
+						},
+						[0] = {
+							["spells"] = {
+								[88852] = 2640,
+							},
+							["amount"] = 2640,
+						},
+					},
 					["healingspells"] = {
 						["Daybreak"] = {
 							["shielding"] = 0,
@@ -11247,11 +11247,11 @@ SkadaPerCharDB = {
 							["uptime"] = 6,
 							["auratype"] = "BUFF",
 						},
-						["Water Elemental: Water Jet"] = {
-							["name"] = "Water Elemental: Water Jet",
+						["Frostfire Bolt"] = {
+							["name"] = "Frostfire Bolt",
 							["active"] = 0,
-							["id"] = 135029,
-							["uptime"] = 9,
+							["id"] = 44614,
+							["uptime"] = 19,
 							["auratype"] = "DEBUFF",
 						},
 						["Frostbolt"] = {
@@ -11268,11 +11268,11 @@ SkadaPerCharDB = {
 							["uptime"] = 25,
 							["auratype"] = "BUFF",
 						},
-						["Frostfire Bolt"] = {
-							["name"] = "Frostfire Bolt",
+						["Water Elemental: Water Jet"] = {
+							["name"] = "Water Elemental: Water Jet",
 							["active"] = 0,
-							["id"] = 44614,
-							["uptime"] = 19,
+							["id"] = 135029,
+							["uptime"] = 9,
 							["auratype"] = "DEBUFF",
 						},
 					},
@@ -11281,7 +11281,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 386460,
+					["dispells"] = 0,
 					["damage"] = 2877735,
 					["damagespells"] = {
 						["Ice Nova"] = {
@@ -11294,15 +11294,15 @@ SkadaPerCharDB = {
 							["max"] = 52166,
 							["damage"] = 530183,
 						},
-						["Frostfire Bolt"] = {
-							["min"] = 33736,
-							["multistrike"] = 7,
-							["critical"] = 3,
-							["hit"] = 1,
-							["totalhits"] = 4,
-							["id"] = 44614,
-							["max"] = 74456,
-							["damage"] = 379971,
+						["Ice Lance"] = {
+							["min"] = 2210,
+							["multistrike"] = 28,
+							["critical"] = 11,
+							["hit"] = 9,
+							["totalhits"] = 20,
+							["max"] = 54379,
+							["id"] = 30455,
+							["damage"] = 498987,
 						},
 						["Icicle"] = {
 							["min"] = 1286,
@@ -11322,15 +11322,15 @@ SkadaPerCharDB = {
 							["max"] = 15900,
 							["damage"] = 103815,
 						},
-						["Ice Lance"] = {
-							["min"] = 2210,
-							["multistrike"] = 28,
-							["critical"] = 11,
-							["hit"] = 9,
-							["totalhits"] = 20,
-							["max"] = 54379,
-							["id"] = 30455,
-							["damage"] = 498987,
+						["Water Elemental: Water Jet"] = {
+							["min"] = 3243,
+							["multistrike"] = 33,
+							["critical"] = 2,
+							["hit"] = 19,
+							["totalhits"] = 21,
+							["id"] = 135029,
+							["max"] = 7958,
+							["damage"] = 127861,
 						},
 						["Frostbolt"] = {
 							["min"] = 16158,
@@ -11352,23 +11352,22 @@ SkadaPerCharDB = {
 							["max"] = 33981,
 							["damage"] = 439537,
 						},
-						["Water Elemental: Water Jet"] = {
-							["min"] = 3243,
-							["multistrike"] = 33,
-							["critical"] = 2,
-							["hit"] = 19,
-							["totalhits"] = 21,
-							["id"] = 135029,
-							["max"] = 7958,
-							["damage"] = 127861,
+						["Frostfire Bolt"] = {
+							["min"] = 33736,
+							["multistrike"] = 7,
+							["critical"] = 3,
+							["hit"] = 1,
+							["totalhits"] = 4,
+							["id"] = 44614,
+							["max"] = 74456,
+							["damage"] = 379971,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 11563,
-					["power"] = {
-					},
-					["id"] = "Player-4-040B0987",
 					["first"] = 1442806482,
+					["damagetaken"] = 11563,
+					["shielding"] = 18720,
+					["id"] = "Player-4-040B0987",
+					["maxhp"] = 386460,
 					["healing"] = 18720,
 					["damagetakenspells"] = {
 						["Lava Wreath"] = {
@@ -11377,13 +11376,13 @@ SkadaPerCharDB = {
 							["damage"] = 11563,
 							["max"] = 11563,
 							["name"] = "Lava Wreath",
-							["min"] = 11563,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 11563,
 							["absorbed"] = 7155,
 						},
 					},
@@ -11399,7 +11398,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Hàmm",
 					["alertCount"] = 0,
-					["shielding"] = 18720,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Flameglow"] = {
 							["shielding"] = 18720,
@@ -11487,7 +11487,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 339000,
+					["dispells"] = 0,
 					["damage"] = 1969918,
 					["damagespells"] = {
 						["Killing Spree Off-Hand"] = {
@@ -11578,8 +11578,79 @@ SkadaPerCharDB = {
 							["damage"] = 279910,
 						},
 					},
-					["dispells"] = 0,
+					["first"] = 1442806482,
 					["damagetaken"] = 566437,
+					["shielding"] = 0,
+					["id"] = "Player-117-05DFB5E5",
+					["maxhp"] = 339000,
+					["healing"] = 0,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 100171,
+							["max"] = 100171,
+							["name"] = "Attack",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 1,
+							["resisted"] = 0,
+							["min"] = 100171,
+							["absorbed"] = 0,
+						},
+						["Blackrock Mortar"] = {
+							["crushing"] = 0,
+							["id"] = 160963,
+							["damage"] = 72352,
+							["max"] = 72352,
+							["name"] = "Blackrock Mortar",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 1,
+							["resisted"] = 0,
+							["min"] = 72352,
+							["absorbed"] = 25996,
+						},
+						["Flametongue"] = {
+							["crushing"] = 0,
+							["id"] = 176033,
+							["damage"] = 337554,
+							["max"] = 18099,
+							["name"] = "Flametongue",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 30,
+							["resisted"] = 0,
+							["min"] = 5335,
+							["absorbed"] = 16904,
+						},
+						["Blackrock Grenade"] = {
+							["crushing"] = 0,
+							["id"] = 161153,
+							["damage"] = 56360,
+							["max"] = 46371,
+							["name"] = "Blackrock Grenade",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 2,
+							["resisted"] = 0,
+							["min"] = 9989,
+							["absorbed"] = 35446,
+						},
+					},
+					["healed"] = {
+					},
+					["alertDamage"] = 0,
+					["name"] = "Kawatan",
+					["alertCount"] = 0,
 					["power"] = {
 						[3] = {
 							["spells"] = {
@@ -11596,77 +11667,6 @@ SkadaPerCharDB = {
 							["amount"] = 5,
 						},
 					},
-					["id"] = "Player-117-05DFB5E5",
-					["first"] = 1442806482,
-					["healing"] = 0,
-					["damagetakenspells"] = {
-						["Attack"] = {
-							["crushing"] = 0,
-							["id"] = 6603,
-							["damage"] = 100171,
-							["max"] = 100171,
-							["name"] = "Attack",
-							["min"] = 100171,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 1,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-						},
-						["Blackrock Mortar"] = {
-							["crushing"] = 0,
-							["id"] = 160963,
-							["damage"] = 72352,
-							["max"] = 72352,
-							["name"] = "Blackrock Mortar",
-							["min"] = 72352,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 1,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 25996,
-						},
-						["Flametongue"] = {
-							["crushing"] = 0,
-							["id"] = 176033,
-							["damage"] = 337554,
-							["max"] = 18099,
-							["name"] = "Flametongue",
-							["min"] = 5335,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 30,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 16904,
-						},
-						["Blackrock Grenade"] = {
-							["crushing"] = 0,
-							["id"] = 161153,
-							["damage"] = 56360,
-							["max"] = 46371,
-							["name"] = "Blackrock Grenade",
-							["min"] = 9989,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 2,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 35446,
-						},
-					},
-					["healed"] = {
-					},
-					["alertDamage"] = 0,
-					["name"] = "Kawatan",
-					["alertCount"] = 0,
-					["shielding"] = 0,
 					["healingspells"] = {
 					},
 					["alert"] = {
@@ -11733,7 +11733,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 88111,
-					["maxhp"] = 391620,
+					["dispells"] = 0,
 					["damage"] = 3159963,
 					["damagespells"] = {
 						["Steady Shot"] = {
@@ -11817,19 +11817,11 @@ SkadaPerCharDB = {
 							["damage"] = 351452,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 124899,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[77443] = 98,
-								[157722] = 20,
-							},
-							["amount"] = 118,
-						},
-					},
-					["id"] = "Player-1169-06A1ACBD",
 					["first"] = 1442806482,
+					["damagetaken"] = 124899,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1ACBD",
+					["maxhp"] = 391620,
 					["healing"] = 26779,
 					["damagetakenspells"] = {
 						["Flametongue"] = {
@@ -11838,13 +11830,13 @@ SkadaPerCharDB = {
 							["damage"] = 117078,
 							["max"] = 16079,
 							["name"] = "Flametongue",
-							["min"] = 10931,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 10,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 10931,
 							["absorbed"] = 2139,
 						},
 						["Lava Wreath"] = {
@@ -11853,13 +11845,13 @@ SkadaPerCharDB = {
 							["damage"] = 7821,
 							["max"] = 7821,
 							["name"] = "Lava Wreath",
-							["min"] = 7821,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 7821,
 							["absorbed"] = 0,
 						},
 					},
@@ -11885,13 +11877,6 @@ SkadaPerCharDB = {
 							["class"] = "HUNTER",
 							["shielding"] = 0,
 						},
-						["Creature-0-3018-1208-14641-92993-0001FF7AD2"] = {
-							["role"] = "DAMAGER",
-							["name"] = "Bracnar",
-							["amount"] = 1726,
-							["class"] = "HUNTER",
-							["shielding"] = 0,
-						},
 						["Creature-0-3018-1208-14641-92993-00017F7AD2"] = {
 							["role"] = "DAMAGER",
 							["name"] = "Bracnar",
@@ -11899,11 +11884,26 @@ SkadaPerCharDB = {
 							["class"] = "HUNTER",
 							["shielding"] = 0,
 						},
+						["Creature-0-3018-1208-14641-92993-0001FF7AD2"] = {
+							["role"] = "DAMAGER",
+							["name"] = "Bracnar",
+							["amount"] = 1726,
+							["class"] = "HUNTER",
+							["shielding"] = 0,
+						},
 					},
 					["alertDamage"] = 117078,
 					["name"] = "Bracnar",
 					["alertCount"] = 11,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[77443] = 98,
+								[157722] = 20,
+							},
+							["amount"] = 118,
+						},
+					},
 					["healingspells"] = {
 						["Leech"] = {
 							["shielding"] = 0,
@@ -12015,10 +12015,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 2880249,
+					["done"] = 464805,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 464805,
 				},
 				["Grom'kar Cinderseer"] = {
 					["players"] = {
@@ -12057,10 +12057,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 1282656,
+					["done"] = 677278,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 677278,
 				},
 				["Iron Infantry"] = {
 					["players"] = {
@@ -12099,10 +12099,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 2668502,
+					["done"] = 183644,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 183644,
 				},
 				["Grom'kar Hulk"] = {
 					["players"] = {
@@ -12141,10 +12141,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 2239998,
+					["done"] = 278230,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 278230,
 				},
 				["Grom'kar Boomer"] = {
 					["players"] = {
@@ -12177,10 +12177,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 1062453,
+					["done"] = 184125,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 184125,
 				},
 			},
 			["power"] = {
@@ -12211,8 +12211,8 @@ SkadaPerCharDB = {
 			["time"] = 25,
 			["interrupts"] = 0,
 			["mobdone"] = 1602072,
-			["mobtaken"] = 4468610,
 			["multistrikes"] = 2,
+			["mobtaken"] = 4468610,
 			["damage"] = 4468610,
 			["players"] = {
 				{
@@ -12301,11 +12301,11 @@ SkadaPerCharDB = {
 							["uptime"] = 6,
 							["auratype"] = "BUFF",
 						},
-						["Victory Rush"] = {
-							["name"] = "Victory Rush",
-							["active"] = 1,
-							["id"] = 118779,
-							["uptime"] = 4,
+						["Ravager"] = {
+							["name"] = "Ravager",
+							["active"] = 0,
+							["id"] = 152277,
+							["uptime"] = 11,
 							["auratype"] = "BUFF",
 						},
 						["Sudden Death"] = {
@@ -12315,11 +12315,11 @@ SkadaPerCharDB = {
 							["uptime"] = 1,
 							["auratype"] = "BUFF",
 						},
-						["Ravager"] = {
-							["name"] = "Ravager",
-							["active"] = 0,
-							["id"] = 152277,
-							["uptime"] = 11,
+						["Victory Rush"] = {
+							["name"] = "Victory Rush",
+							["active"] = 1,
+							["id"] = 118779,
+							["uptime"] = 4,
 							["auratype"] = "BUFF",
 						},
 					},
@@ -12328,7 +12328,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 406020,
+					["dispells"] = 0,
 					["damage"] = 1235076,
 					["damagespells"] = {
 						["Shield Slam"] = {
@@ -12395,14 +12395,6 @@ SkadaPerCharDB = {
 							["max"] = 21287,
 							["damage"] = 372483,
 						},
-						["Victory Rush"] = {
-							["min"] = 11738,
-							["hit"] = 1,
-							["totalhits"] = 1,
-							["id"] = 34428,
-							["max"] = 11738,
-							["damage"] = 11738,
-						},
 						["Ravager"] = {
 							["min"] = 3506,
 							["multistrike"] = 1,
@@ -12412,6 +12404,14 @@ SkadaPerCharDB = {
 							["id"] = 156287,
 							["max"] = 8604,
 							["damage"] = 168091,
+						},
+						["Victory Rush"] = {
+							["min"] = 11738,
+							["hit"] = 1,
+							["totalhits"] = 1,
+							["id"] = 34428,
+							["max"] = 11738,
+							["damage"] = 11738,
 						},
 						["Heroic Strike"] = {
 							["min"] = 5619,
@@ -12424,20 +12424,11 @@ SkadaPerCharDB = {
 							["damage"] = 29514,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 562164,
-					["power"] = {
-						{
-							["spells"] = {
-								[23922] = 40,
-								[12880] = 30,
-								[6572] = 80,
-							},
-							["amount"] = 150,
-						}, -- [1]
-					},
-					["id"] = "Player-116-074FF25B",
 					["first"] = 1442806438,
+					["damagetaken"] = 562164,
+					["shielding"] = 117326,
+					["id"] = "Player-116-074FF25B",
+					["maxhp"] = 406020,
 					["healing"] = 324395,
 					["damagetakenspells"] = {
 						["Shrapnel Blast"] = {
@@ -12446,13 +12437,13 @@ SkadaPerCharDB = {
 							["damage"] = 100105,
 							["max"] = 36337,
 							["name"] = "Shrapnel Blast",
-							["min"] = 29393,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 29393,
 							["absorbed"] = 0,
 						},
 						["Attack"] = {
@@ -12461,13 +12452,13 @@ SkadaPerCharDB = {
 							["damage"] = 136732,
 							["max"] = 17762,
 							["name"] = "Attack",
-							["min"] = 1011,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 16721,
 							["totalhits"] = 15,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1011,
 							["absorbed"] = 17009,
 						},
 						["Ignite"] = {
@@ -12476,13 +12467,13 @@ SkadaPerCharDB = {
 							["damage"] = 325327,
 							["max"] = 41939,
 							["name"] = "Ignite",
-							["min"] = 2943,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 16,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2943,
 							["absorbed"] = 21443,
 						},
 					},
@@ -12498,7 +12489,16 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Pist",
 					["alertCount"] = 0,
-					["shielding"] = 117326,
+					["power"] = {
+						{
+							["spells"] = {
+								[23922] = 40,
+								[12880] = 30,
+								[6572] = 80,
+							},
+							["amount"] = 150,
+						}, -- [1]
+					},
 					["healingspells"] = {
 						["Blood Craze"] = {
 							["shielding"] = 0,
@@ -12646,7 +12646,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 386460,
+					["dispells"] = 0,
 					["damage"] = 1852576,
 					["damagespells"] = {
 						["Ice Nova"] = {
@@ -12736,12 +12736,11 @@ SkadaPerCharDB = {
 							["damage"] = 472554,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 280573,
-					["power"] = {
-					},
-					["id"] = "Player-4-040B0987",
 					["first"] = 1442806438,
+					["damagetaken"] = 280573,
+					["shielding"] = 27533,
+					["id"] = "Player-4-040B0987",
+					["maxhp"] = 386460,
 					["healing"] = 27533,
 					["damagetakenspells"] = {
 						["Shrapnel Blast"] = {
@@ -12750,13 +12749,13 @@ SkadaPerCharDB = {
 							["damage"] = 121776,
 							["max"] = 44550,
 							["name"] = "Shrapnel Blast",
-							["min"] = 37463,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 37463,
 							["absorbed"] = 7509,
 						},
 						["Ignite"] = {
@@ -12765,13 +12764,13 @@ SkadaPerCharDB = {
 							["damage"] = 158797,
 							["max"] = 20711,
 							["name"] = "Ignite",
-							["min"] = 15353,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 8,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 15353,
 							["absorbed"] = 33164,
 						},
 					},
@@ -12787,7 +12786,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Hàmm",
 					["alertCount"] = 0,
-					["shielding"] = 27533,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Flameglow"] = {
 							["shielding"] = 27533,
@@ -12851,7 +12851,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 16959,
-					["maxhp"] = 391620,
+					["dispells"] = 0,
 					["damage"] = 1219241,
 					["damagespells"] = {
 						["Kill Shot"] = {
@@ -12903,18 +12903,11 @@ SkadaPerCharDB = {
 							["damage"] = 444907,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 449041,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[157722] = 40,
-							},
-							["amount"] = 40,
-						},
-					},
-					["id"] = "Player-1169-06A1ACBD",
 					["first"] = 1442806439,
+					["damagetaken"] = 449041,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1ACBD",
+					["maxhp"] = 391620,
 					["healing"] = 150002,
 					["damagetakenspells"] = {
 						["Shrapnel Blast"] = {
@@ -12923,13 +12916,13 @@ SkadaPerCharDB = {
 							["damage"] = 181199,
 							["max"] = 49436,
 							["name"] = "Shrapnel Blast",
-							["min"] = 40519,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 4,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 40519,
 							["absorbed"] = 6499,
 						},
 						["Ignite"] = {
@@ -12938,13 +12931,13 @@ SkadaPerCharDB = {
 							["damage"] = 267842,
 							["max"] = 41612,
 							["name"] = "Ignite",
-							["min"] = 22478,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 8,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 22478,
 							["absorbed"] = 10812,
 						},
 					},
@@ -12960,7 +12953,14 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Bracnar",
 					["alertCount"] = 4,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[157722] = 40,
+							},
+							["amount"] = 40,
+						},
+					},
 					["healingspells"] = {
 						["Leech"] = {
 							["shielding"] = 0,
@@ -13108,7 +13108,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 411419.420776367,
-					["maxhp"] = 365100,
+					["dispells"] = 0,
 					["damage"] = 46677,
 					["damagespells"] = {
 						["Judgment"] = {
@@ -13128,25 +13128,11 @@ SkadaPerCharDB = {
 							["damage"] = 41540,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 310294,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[148976] = 4,
-								[138248] = 1,
-							},
-							["amount"] = 5,
-						},
-						[0] = {
-							["spells"] = {
-								[88852] = 5120,
-							},
-							["amount"] = 5120,
-						},
-					},
-					["id"] = "Player-1428-07B76084",
 					["first"] = 1442806439,
+					["damagetaken"] = 310294,
+					["shielding"] = 64249,
+					["id"] = "Player-1428-07B76084",
+					["maxhp"] = 365100,
 					["healing"] = 1036738,
 					["damagetakenspells"] = {
 						["Shrapnel Blast"] = {
@@ -13155,13 +13141,13 @@ SkadaPerCharDB = {
 							["damage"] = 123745,
 							["max"] = 43811,
 							["name"] = "Shrapnel Blast",
-							["min"] = 36362,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 36362,
 							["absorbed"] = 0,
 						},
 						["Ignite"] = {
@@ -13170,13 +13156,13 @@ SkadaPerCharDB = {
 							["damage"] = 186549,
 							["max"] = 29182,
 							["name"] = "Ignite",
-							["min"] = 17958,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 8,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 17958,
 							["absorbed"] = 6500,
 						},
 					},
@@ -13227,7 +13213,21 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Jhedoner",
 					["alertCount"] = 0,
-					["shielding"] = 64249,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[148976] = 4,
+								[138248] = 1,
+							},
+							["amount"] = 5,
+						},
+						[0] = {
+							["spells"] = {
+								[88852] = 5120,
+							},
+							["amount"] = 5120,
+						},
+					},
 					["healingspells"] = {
 						["Daybreak"] = {
 							["shielding"] = 0,
@@ -13416,7 +13416,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 339000,
+					["dispells"] = 0,
 					["damage"] = 115040,
 					["damagespells"] = {
 						["Instant Poison"] = {
@@ -13467,18 +13467,11 @@ SkadaPerCharDB = {
 							["damage"] = 45456,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 0,
-					["power"] = {
-						[3] = {
-							["spells"] = {
-								[35546] = 30,
-							},
-							["amount"] = 30,
-						},
-					},
-					["id"] = "Player-117-05DFB5E5",
 					["first"] = 1442806454,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-117-05DFB5E5",
+					["maxhp"] = 339000,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -13487,7 +13480,14 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Kawatan",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[3] = {
+							["spells"] = {
+								[35546] = 30,
+							},
+							["amount"] = 30,
+						},
+					},
 					["healingspells"] = {
 					},
 					["alert"] = {
@@ -13505,17 +13505,17 @@ SkadaPerCharDB = {
 							["class"] = "HUNTER",
 							["role"] = "DAMAGER",
 						},
-						["Pist-Antonidas"] = {
-							["taken"] = 676082,
-							["done"] = 57276,
-							["class"] = "WARRIOR",
-							["role"] = "TANK",
-						},
 						["Hàmm-Kilrogg"] = {
 							["taken"] = 1365014,
 							["done"] = 0,
 							["class"] = "MAGE",
 							["role"] = "DAMAGER",
+						},
+						["Pist-Antonidas"] = {
+							["taken"] = 676082,
+							["done"] = 57276,
+							["class"] = "WARRIOR",
+							["role"] = "TANK",
 						},
 						["Jhedoner-Quel'Thalas"] = {
 							["taken"] = 46677,
@@ -13528,10 +13528,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 2859901,
+					["done"] = 57276,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 57276,
 				},
 				["Grom'kar Gunner"] = {
 					["players"] = {
@@ -13570,10 +13570,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 1608709,
+					["done"] = 1544796,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 1544796,
 				},
 			},
 			["power"] = {
@@ -13603,8 +13603,8 @@ SkadaPerCharDB = {
 			["time"] = 16,
 			["interrupts"] = 0,
 			["mobdone"] = 262189,
-			["mobtaken"] = 2284143,
 			["multistrikes"] = 3,
+			["mobtaken"] = 2284143,
 			["damage"] = 2284143,
 			["players"] = {
 				{
@@ -13670,7 +13670,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 406020,
+					["dispells"] = 0,
 					["damage"] = 408873,
 					["damagespells"] = {
 						["Shield Slam"] = {
@@ -13738,20 +13738,11 @@ SkadaPerCharDB = {
 							["damage"] = 29729,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 262189,
-					["power"] = {
-						{
-							["spells"] = {
-								[23922] = 60,
-								[12880] = 30,
-								[6572] = 60,
-							},
-							["amount"] = 150,
-						}, -- [1]
-					},
-					["id"] = "Player-116-074FF25B",
 					["first"] = 1442806375,
+					["damagetaken"] = 262189,
+					["shielding"] = 17890,
+					["id"] = "Player-116-074FF25B",
+					["maxhp"] = 406020,
 					["healing"] = 17890,
 					["damagetakenspells"] = {
 						["Double Slash"] = {
@@ -13760,13 +13751,13 @@ SkadaPerCharDB = {
 							["damage"] = 163558,
 							["max"] = 53690,
 							["name"] = "Double Slash",
-							["min"] = 7734,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 22495,
 							["totalhits"] = 6,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 7734,
 							["absorbed"] = 24268,
 						},
 						["Attack"] = {
@@ -13775,13 +13766,13 @@ SkadaPerCharDB = {
 							["damage"] = 98631,
 							["max"] = 38250,
 							["name"] = "Attack",
-							["min"] = 17595,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 42271,
 							["totalhits"] = 4,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 17595,
 							["absorbed"] = 0,
 						},
 					},
@@ -13797,7 +13788,16 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Pist",
 					["alertCount"] = 0,
-					["shielding"] = 17890,
+					["power"] = {
+						{
+							["spells"] = {
+								[23922] = 60,
+								[12880] = 30,
+								[6572] = 60,
+							},
+							["amount"] = 150,
+						}, -- [1]
+					},
 					["healingspells"] = {
 						["Shield Barrier"] = {
 							["shielding"] = 17890,
@@ -13853,7 +13853,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 26445,
-					["maxhp"] = 391620,
+					["dispells"] = 0,
 					["damage"] = 728892,
 					["damagespells"] = {
 						["Steady Shot"] = {
@@ -13904,19 +13904,11 @@ SkadaPerCharDB = {
 							["damage"] = 206341,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 0,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[157722] = 60,
-								[77443] = 28,
-							},
-							["amount"] = 88,
-						},
-					},
-					["id"] = "Player-1169-06A1ACBD",
 					["first"] = 1442806375,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1ACBD",
+					["maxhp"] = 391620,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -13932,7 +13924,15 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Bracnar",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[157722] = 60,
+								[77443] = 28,
+							},
+							["amount"] = 88,
+						},
+					},
 					["healingspells"] = {
 						["Leech"] = {
 							["shielding"] = 0,
@@ -13996,19 +13996,19 @@ SkadaPerCharDB = {
 							["uptime"] = 12,
 							["auratype"] = "BUFF",
 						},
-						["Revealing Strike"] = {
-							["name"] = "Revealing Strike",
-							["active"] = 0,
-							["id"] = 84617,
-							["uptime"] = 12,
-							["auratype"] = "DEBUFF",
-						},
 						["Archmage's Incandescence"] = {
 							["name"] = "Archmage's Incandescence",
 							["active"] = 0,
 							["id"] = 177161,
 							["uptime"] = 10,
 							["auratype"] = "BUFF",
+						},
+						["Revealing Strike"] = {
+							["name"] = "Revealing Strike",
+							["active"] = 0,
+							["id"] = 84617,
+							["uptime"] = 12,
+							["auratype"] = "DEBUFF",
 						},
 						["Detonating"] = {
 							["name"] = "Detonating",
@@ -14037,7 +14037,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 339000,
+					["dispells"] = 0,
 					["damage"] = 316979,
 					["damagespells"] = {
 						["Instant Poison"] = {
@@ -14098,8 +14098,19 @@ SkadaPerCharDB = {
 							["damage"] = 112131,
 						},
 					},
-					["dispells"] = 0,
+					["first"] = 1442806375,
 					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-117-05DFB5E5",
+					["maxhp"] = 339000,
+					["healing"] = 0,
+					["damagetakenspells"] = {
+					},
+					["healed"] = {
+					},
+					["alertDamage"] = 0,
+					["name"] = "Kawatan",
+					["alertCount"] = 0,
 					["power"] = {
 						[3] = {
 							["spells"] = {
@@ -14109,17 +14120,6 @@ SkadaPerCharDB = {
 							["amount"] = 85,
 						},
 					},
-					["id"] = "Player-117-05DFB5E5",
-					["first"] = 1442806375,
-					["healing"] = 0,
-					["damagetakenspells"] = {
-					},
-					["healed"] = {
-					},
-					["alertDamage"] = 0,
-					["name"] = "Kawatan",
-					["alertCount"] = 0,
-					["shielding"] = 0,
 					["healingspells"] = {
 					},
 					["alert"] = {
@@ -14175,7 +14175,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 386460,
+					["dispells"] = 0,
 					["damage"] = 809665,
 					["damagespells"] = {
 						["Ice Nova"] = {
@@ -14195,15 +14195,6 @@ SkadaPerCharDB = {
 							["max"] = 34075,
 							["damage"] = 143665,
 						},
-						["Frostfire Bolt"] = {
-							["min"] = 63822,
-							["multistrike"] = 1,
-							["critical"] = 1,
-							["totalhits"] = 1,
-							["id"] = 44614,
-							["max"] = 63822,
-							["damage"] = 83762,
-						},
 						["Ice Lance"] = {
 							["min"] = 20676,
 							["multistrike"] = 4,
@@ -14213,6 +14204,16 @@ SkadaPerCharDB = {
 							["id"] = 30455,
 							["max"] = 50813,
 							["damage"] = 214732,
+						},
+						["Water Elemental: Water Jet"] = {
+							["min"] = 3141,
+							["multistrike"] = 14,
+							["critical"] = 2,
+							["hit"] = 13,
+							["totalhits"] = 15,
+							["id"] = 135029,
+							["max"] = 7224,
+							["damage"] = 75346,
 						},
 						["Frostbolt"] = {
 							["min"] = 16159,
@@ -14233,23 +14234,21 @@ SkadaPerCharDB = {
 							["max"] = 33731,
 							["damage"] = 67161,
 						},
-						["Water Elemental: Water Jet"] = {
-							["min"] = 3141,
-							["multistrike"] = 14,
-							["critical"] = 2,
-							["hit"] = 13,
-							["totalhits"] = 15,
-							["id"] = 135029,
-							["max"] = 7224,
-							["damage"] = 75346,
+						["Frostfire Bolt"] = {
+							["min"] = 63822,
+							["multistrike"] = 1,
+							["critical"] = 1,
+							["totalhits"] = 1,
+							["id"] = 44614,
+							["max"] = 63822,
+							["damage"] = 83762,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 0,
-					["power"] = {
-					},
-					["id"] = "Player-4-040B0987",
 					["first"] = 1442806375,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-4-040B0987",
+					["maxhp"] = 386460,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -14258,7 +14257,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Hàmm",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 					},
 					["alert"] = {
@@ -14307,7 +14307,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 110459.931304932,
-					["maxhp"] = 365100,
+					["dispells"] = 0,
 					["damage"] = 19734,
 					["damagespells"] = {
 						["Judgment"] = {
@@ -14328,18 +14328,11 @@ SkadaPerCharDB = {
 							["damage"] = 10819,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 0,
-					["power"] = {
-						[0] = {
-							["spells"] = {
-								[88852] = 1320,
-							},
-							["amount"] = 1320,
-						},
-					},
-					["id"] = "Player-1428-07B76084",
 					["first"] = 1442806375,
+					["damagetaken"] = 0,
+					["shielding"] = 24585,
+					["id"] = "Player-1428-07B76084",
+					["maxhp"] = 365100,
 					["healing"] = 67349,
 					["damagetakenspells"] = {
 					},
@@ -14362,7 +14355,14 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Jhedoner",
 					["alertCount"] = 0,
-					["shielding"] = 24585,
+					["power"] = {
+						[0] = {
+							["spells"] = {
+								[88852] = 1320,
+							},
+							["amount"] = 1320,
+						},
+					},
 					["healingspells"] = {
 						["Holy Light"] = {
 							["shielding"] = 0,
@@ -14406,20 +14406,6 @@ SkadaPerCharDB = {
 							["critical"] = 0,
 							["absorbed"] = 0,
 						},
-						["Eternal Flame"] = {
-							["shielding"] = 0,
-							["id"] = 114163,
-							["healing"] = 42764,
-							["multistrikes"] = 0,
-							["min"] = 360,
-							["multistrike"] = 3,
-							["name"] = "Eternal Flame",
-							["hits"] = 8,
-							["overhealing"] = 0,
-							["max"] = 35116,
-							["critical"] = 1,
-							["absorbed"] = 0,
-						},
 						["Beacon of Light"] = {
 							["shielding"] = 0,
 							["id"] = 53652,
@@ -14432,6 +14418,20 @@ SkadaPerCharDB = {
 							["overhealing"] = 47509,
 							["max"] = 0,
 							["critical"] = 0,
+							["absorbed"] = 0,
+						},
+						["Eternal Flame"] = {
+							["shielding"] = 0,
+							["id"] = 114163,
+							["healing"] = 42764,
+							["multistrikes"] = 0,
+							["min"] = 360,
+							["multistrike"] = 3,
+							["name"] = "Eternal Flame",
+							["hits"] = 8,
+							["overhealing"] = 0,
+							["max"] = 35116,
+							["critical"] = 1,
 							["absorbed"] = 0,
 						},
 					},
@@ -14479,10 +14479,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 2284143,
+					["done"] = 262189,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 262189,
 				},
 			},
 			["power"] = {
@@ -14511,8 +14511,8 @@ SkadaPerCharDB = {
 			["time"] = 18,
 			["interrupts"] = 0,
 			["mobdone"] = 412863,
-			["mobtaken"] = 1925051,
 			["multistrikes"] = 6,
+			["mobtaken"] = 1925051,
 			["damage"] = 1925051,
 			["players"] = {
 				{
@@ -14536,7 +14536,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 24659,
-					["maxhp"] = 391620,
+					["dispells"] = 0,
 					["damage"] = 657524,
 					["damagespells"] = {
 						["Steady Shot"] = {
@@ -14587,19 +14587,11 @@ SkadaPerCharDB = {
 							["damage"] = 195480,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 0,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[77443] = 70,
-								[157722] = 20,
-							},
-							["amount"] = 90,
-						},
-					},
-					["id"] = "Player-1169-06A1ACBD",
 					["first"] = 1442806338,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1ACBD",
+					["maxhp"] = 391620,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -14615,7 +14607,15 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Bracnar",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[77443] = 70,
+								[157722] = 20,
+							},
+							["amount"] = 90,
+						},
+					},
 					["healingspells"] = {
 						["Leech"] = {
 							["shielding"] = 0,
@@ -14692,7 +14692,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 386676.890838623,
-					["maxhp"] = 365100,
+					["dispells"] = 0,
 					["damage"] = 33759,
 					["damagespells"] = {
 						["Judgment"] = {
@@ -14721,24 +14721,11 @@ SkadaPerCharDB = {
 							["damage"] = 2715,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 262323,
-					["power"] = {
-						[0] = {
-							["spells"] = {
-								[88852] = 9080,
-							},
-							["amount"] = 9080,
-						},
-						[9] = {
-							["spells"] = {
-								[148976] = 3,
-							},
-							["amount"] = 3,
-						},
-					},
-					["id"] = "Player-1428-07B76084",
 					["first"] = 1442806338,
+					["damagetaken"] = 262323,
+					["shielding"] = 94827,
+					["id"] = "Player-1428-07B76084",
+					["maxhp"] = 365100,
 					["healing"] = 862631,
 					["damagetakenspells"] = {
 						["Double Slash"] = {
@@ -14747,13 +14734,13 @@ SkadaPerCharDB = {
 							["damage"] = 134017,
 							["max"] = 107688,
 							["name"] = "Double Slash",
-							["min"] = 12356,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 12356,
 							["absorbed"] = 18923,
 						},
 						["Attack"] = {
@@ -14762,13 +14749,13 @@ SkadaPerCharDB = {
 							["damage"] = 128306,
 							["max"] = 98725,
 							["name"] = "Attack",
-							["min"] = 29581,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 29581,
 							["absorbed"] = 65305,
 						},
 					},
@@ -14791,7 +14778,20 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Jhedoner",
 					["alertCount"] = 0,
-					["shielding"] = 94827,
+					["power"] = {
+						[0] = {
+							["spells"] = {
+								[88852] = 9080,
+							},
+							["amount"] = 9080,
+						},
+						[9] = {
+							["spells"] = {
+								[148976] = 3,
+							},
+							["amount"] = 3,
+						},
+					},
 					["healingspells"] = {
 						["Holy Light"] = {
 							["shielding"] = 0,
@@ -14973,7 +14973,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 386460,
+					["dispells"] = 0,
 					["damage"] = 856024,
 					["damagespells"] = {
 						["Ice Nova"] = {
@@ -15058,12 +15058,11 @@ SkadaPerCharDB = {
 							["damage"] = 240916,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 0,
-					["power"] = {
-					},
-					["id"] = "Player-4-040B0987",
 					["first"] = 1442806338,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-4-040B0987",
+					["maxhp"] = 386460,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -15072,7 +15071,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Hàmm",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 					},
 					["alert"] = {
@@ -15142,7 +15142,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 406020,
+					["dispells"] = 0,
 					["damage"] = 281879,
 					["damagespells"] = {
 						["Shield Slam"] = {
@@ -15205,20 +15205,11 @@ SkadaPerCharDB = {
 							["damage"] = 8863,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 150540,
-					["power"] = {
-						{
-							["spells"] = {
-								[23922] = 90,
-								[12880] = 20,
-								[6572] = 40,
-							},
-							["amount"] = 150,
-						}, -- [1]
-					},
-					["id"] = "Player-116-074FF25B",
 					["first"] = 1442806339,
+					["damagetaken"] = 150540,
+					["shielding"] = 41225,
+					["id"] = "Player-116-074FF25B",
+					["maxhp"] = 406020,
 					["healing"] = 49345,
 					["damagetakenspells"] = {
 						["Double Slash"] = {
@@ -15227,13 +15218,13 @@ SkadaPerCharDB = {
 							["damage"] = 96887,
 							["max"] = 32816,
 							["name"] = "Double Slash",
-							["min"] = 11166,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 50341,
 							["totalhits"] = 5,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 11166,
 							["absorbed"] = 9502,
 						},
 						["Attack"] = {
@@ -15242,13 +15233,13 @@ SkadaPerCharDB = {
 							["damage"] = 53653,
 							["max"] = 49558,
 							["name"] = "Attack",
-							["min"] = 4095,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 14707,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 4095,
 							["absorbed"] = 6281,
 						},
 					},
@@ -15264,7 +15255,16 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Pist",
 					["alertCount"] = 0,
-					["shielding"] = 41225,
+					["power"] = {
+						{
+							["spells"] = {
+								[23922] = 90,
+								[12880] = 20,
+								[6572] = 40,
+							},
+							["amount"] = 150,
+						}, -- [1]
+					},
 					["healingspells"] = {
 						["Blood Craze"] = {
 							["shielding"] = 0,
@@ -15335,13 +15335,6 @@ SkadaPerCharDB = {
 							["uptime"] = 6,
 							["auratype"] = "BUFF",
 						},
-						["Archmage's Incandescence"] = {
-							["name"] = "Archmage's Incandescence",
-							["active"] = 1,
-							["id"] = 177161,
-							["uptime"] = 5,
-							["auratype"] = "BUFF",
-						},
 						["Revealing Strike"] = {
 							["name"] = "Revealing Strike",
 							["active"] = 0,
@@ -15349,13 +15342,20 @@ SkadaPerCharDB = {
 							["uptime"] = 4,
 							["auratype"] = "DEBUFF",
 						},
+						["Archmage's Incandescence"] = {
+							["name"] = "Archmage's Incandescence",
+							["active"] = 1,
+							["id"] = 177161,
+							["uptime"] = 5,
+							["auratype"] = "BUFF",
+						},
 					},
 					["role"] = "DAMAGER",
 					["time"] = 4,
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 339000,
+					["dispells"] = 0,
 					["damage"] = 95865,
 					["damagespells"] = {
 						["Instant Poison"] = {
@@ -15405,8 +15405,19 @@ SkadaPerCharDB = {
 							["damage"] = 36759,
 						},
 					},
-					["dispells"] = 0,
+					["first"] = 1442806350,
 					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-117-05DFB5E5",
+					["maxhp"] = 339000,
+					["healing"] = 0,
+					["damagetakenspells"] = {
+					},
+					["healed"] = {
+					},
+					["alertDamage"] = 0,
+					["name"] = "Kawatan",
+					["alertCount"] = 0,
 					["power"] = {
 						[4] = {
 							["spells"] = {
@@ -15422,17 +15433,6 @@ SkadaPerCharDB = {
 							["amount"] = 65,
 						},
 					},
-					["id"] = "Player-117-05DFB5E5",
-					["first"] = 1442806350,
-					["healing"] = 0,
-					["damagetakenspells"] = {
-					},
-					["healed"] = {
-					},
-					["alertDamage"] = 0,
-					["name"] = "Kawatan",
-					["alertCount"] = 0,
-					["shielding"] = 0,
 					["healingspells"] = {
 					},
 					["alert"] = {
@@ -15479,10 +15479,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 1925051,
+					["done"] = 412863,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 412863,
 				},
 			},
 			["power"] = {
@@ -15513,8 +15513,8 @@ SkadaPerCharDB = {
 			["time"] = 21,
 			["interrupts"] = 0,
 			["mobdone"] = 623635,
-			["mobtaken"] = 2126248,
 			["multistrikes"] = 0,
+			["mobtaken"] = 2126248,
 			["damage"] = 2126248,
 			["players"] = {
 				{
@@ -15580,7 +15580,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 21113,
-					["maxhp"] = 527826,
+					["dispells"] = 0,
 					["damage"] = 592747,
 					["damagespells"] = {
 						["Shield Slam"] = {
@@ -15648,20 +15648,11 @@ SkadaPerCharDB = {
 							["damage"] = 10359,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 451206,
-					["power"] = {
-						{
-							["spells"] = {
-								[6572] = 60,
-								[12880] = 40,
-								[23922] = 70,
-							},
-							["amount"] = 170,
-						}, -- [1]
-					},
-					["id"] = "Player-116-074FF25B",
 					["first"] = 1442806306,
+					["damagetaken"] = 451206,
+					["shielding"] = 89026,
+					["id"] = "Player-116-074FF25B",
+					["maxhp"] = 527826,
 					["healing"] = 89026,
 					["damagetakenspells"] = {
 						["Double Slash"] = {
@@ -15670,13 +15661,13 @@ SkadaPerCharDB = {
 							["damage"] = 148350,
 							["max"] = 53112,
 							["name"] = "Double Slash",
-							["min"] = 16107,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 33449,
 							["totalhits"] = 6,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 16107,
 							["absorbed"] = 24934,
 						},
 						["Attack"] = {
@@ -15685,13 +15676,13 @@ SkadaPerCharDB = {
 							["damage"] = 302856,
 							["max"] = 67748,
 							["name"] = "Attack",
-							["min"] = 12724,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 111851,
 							["totalhits"] = 10,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 12724,
 							["absorbed"] = 26641,
 						},
 					},
@@ -15707,7 +15698,16 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Pist",
 					["alertCount"] = 0,
-					["shielding"] = 89026,
+					["power"] = {
+						{
+							["spells"] = {
+								[6572] = 60,
+								[12880] = 40,
+								[23922] = 70,
+							},
+							["amount"] = 170,
+						}, -- [1]
+					},
 					["healingspells"] = {
 						["Enraged Regeneration"] = {
 							["shielding"] = 0,
@@ -15791,7 +15791,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 66250.6328125,
-					["maxhp"] = 365100,
+					["dispells"] = 0,
 					["damage"] = 1166,
 					["damagespells"] = {
 						["Attack"] = {
@@ -15803,24 +15803,11 @@ SkadaPerCharDB = {
 							["damage"] = 1166,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 172429,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[148976] = 3,
-							},
-							["amount"] = 3,
-						},
-						[0] = {
-							["spells"] = {
-								[88852] = 1320,
-							},
-							["amount"] = 1320,
-						},
-					},
-					["id"] = "Player-1428-07B76084",
 					["first"] = 1442806306,
+					["damagetaken"] = 172429,
+					["shielding"] = 42747,
+					["id"] = "Player-1428-07B76084",
+					["maxhp"] = 365100,
 					["healing"] = 446062,
 					["damagetakenspells"] = {
 						["Blackrock Bomb"] = {
@@ -15829,13 +15816,13 @@ SkadaPerCharDB = {
 							["damage"] = 172429,
 							["max"] = 172429,
 							["name"] = "Blackrock Bomb",
-							["min"] = 172429,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 172429,
 							["absorbed"] = 0,
 						},
 					},
@@ -15865,7 +15852,20 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Jhedoner",
 					["alertCount"] = 0,
-					["shielding"] = 42747,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[148976] = 3,
+							},
+							["amount"] = 3,
+						},
+						[0] = {
+							["spells"] = {
+								[88852] = 1320,
+							},
+							["amount"] = 1320,
+						},
+					},
 					["healingspells"] = {
 						["Holy Light"] = {
 							["shielding"] = 0,
@@ -16019,7 +16019,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 339000,
+					["dispells"] = 0,
 					["damage"] = 117865,
 					["damagespells"] = {
 						["Instant Poison"] = {
@@ -16069,12 +16069,11 @@ SkadaPerCharDB = {
 							["damage"] = 59158,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 0,
-					["power"] = {
-					},
-					["id"] = "Player-117-05DFB5E5",
 					["first"] = 1442806306,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-117-05DFB5E5",
+					["maxhp"] = 339000,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -16083,7 +16082,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Kawatan",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 					},
 					["alert"] = {
@@ -16118,7 +16118,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 391620,
+					["dispells"] = 0,
 					["damage"] = 797085,
 					["damagespells"] = {
 						["Steady Shot"] = {
@@ -16172,19 +16172,11 @@ SkadaPerCharDB = {
 							["damage"] = 229262,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 0,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[157722] = 40,
-								[77443] = 42,
-							},
-							["amount"] = 82,
-						},
-					},
-					["id"] = "Player-1169-06A1ACBD",
 					["first"] = 1442806308,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1ACBD",
+					["maxhp"] = 391620,
 					["healing"] = 35982,
 					["damagetakenspells"] = {
 					},
@@ -16200,7 +16192,15 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Bracnar",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[157722] = 40,
+								[77443] = 42,
+							},
+							["amount"] = 82,
+						},
+					},
 					["healingspells"] = {
 						["Chimaera Shot"] = {
 							["shielding"] = 0,
@@ -16291,7 +16291,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 386460,
+					["dispells"] = 0,
 					["damage"] = 617385,
 					["damagespells"] = {
 						["Ice Nova"] = {
@@ -16311,16 +16311,6 @@ SkadaPerCharDB = {
 							["max"] = 34888,
 							["damage"] = 76409,
 						},
-						["Ice Lance"] = {
-							["min"] = 4673,
-							["multistrike"] = 6,
-							["critical"] = 2,
-							["hit"] = 2,
-							["totalhits"] = 4,
-							["id"] = 30455,
-							["max"] = 50332,
-							["damage"] = 186488,
-						},
 						["Frostfire Bolt"] = {
 							["min"] = 65721,
 							["multistrike"] = 1,
@@ -16329,6 +16319,16 @@ SkadaPerCharDB = {
 							["id"] = 44614,
 							["max"] = 65721,
 							["damage"] = 75825,
+						},
+						["Water Elemental: Water Jet"] = {
+							["min"] = 3089,
+							["multistrike"] = 14,
+							["critical"] = 3,
+							["hit"] = 10,
+							["totalhits"] = 13,
+							["id"] = 135029,
+							["max"] = 7479,
+							["damage"] = 76370,
 						},
 						["Frostbolt"] = {
 							["min"] = 16780,
@@ -16348,23 +16348,22 @@ SkadaPerCharDB = {
 							["max"] = 16566,
 							["damage"] = 41672,
 						},
-						["Water Elemental: Water Jet"] = {
-							["min"] = 3089,
-							["multistrike"] = 14,
-							["critical"] = 3,
-							["hit"] = 10,
-							["totalhits"] = 13,
-							["id"] = 135029,
-							["max"] = 7479,
-							["damage"] = 76370,
+						["Ice Lance"] = {
+							["min"] = 4673,
+							["multistrike"] = 6,
+							["critical"] = 2,
+							["hit"] = 2,
+							["totalhits"] = 4,
+							["id"] = 30455,
+							["max"] = 50332,
+							["damage"] = 186488,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 0,
-					["power"] = {
-					},
-					["id"] = "Player-4-040B0987",
 					["first"] = 1442806309,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-4-040B0987",
+					["maxhp"] = 386460,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -16373,7 +16372,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Hàmm",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 					},
 					["alert"] = {
@@ -16420,10 +16420,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 2126248,
+					["done"] = 623635,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 623635,
 				},
 			},
 			["power"] = {
@@ -16644,23 +16644,13 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 					},
 				},
-				["power"] = {
-					{
-						["spells"] = {
-							[109128] = 80,
-							[23922] = 1695,
-							[12880] = 970,
-							[6572] = 2400,
-						},
-						["amount"] = 5145,
-					}, -- [1]
-				},
-				["role"] = "TANK",
 				["time"] = 783,
-				["interrupts"] = 3,
+				["role"] = "TANK",
 				["overhealing"] = 497373.6796875,
+				["interrupts"] = 3,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
+				["shielding"] = 2930425,
 				["damage"] = 20387092,
 				["damagespells"] = {
 					["Shield Slam"] = {
@@ -16761,14 +16751,6 @@ SkadaPerCharDB = {
 						["max"] = 24089,
 						["damage"] = 1938662,
 					},
-					["Victory Rush"] = {
-						["min"] = 9678,
-						["hit"] = 3,
-						["totalhits"] = 3,
-						["id"] = 34428,
-						["max"] = 11738,
-						["damage"] = 31806,
-					},
 					["Ravager"] = {
 						["min"] = 2351,
 						["multistrike"] = 22,
@@ -16778,6 +16760,14 @@ SkadaPerCharDB = {
 						["id"] = 156287,
 						["max"] = 8604,
 						["damage"] = 1505782,
+					},
+					["Victory Rush"] = {
+						["min"] = 9678,
+						["hit"] = 3,
+						["totalhits"] = 3,
+						["id"] = 34428,
+						["max"] = 11738,
+						["damage"] = 31806,
 					},
 					["Heroic Strike"] = {
 						["min"] = 3065,
@@ -16797,38 +16787,38 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1442807122.57201,
 								["amount"] = -7621,
-								["srcname"] = "Iron Infantry",
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 								["hp"] = 395249,
 								["absorb"] = -592,
 							}, -- [1]
 							{
 								["ts"] = 1442807123.33702,
 								["amount"] = -5999,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 387628,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [2]
 							{
 								["ts"] = 1442807124.34303,
 								["amount"] = -8363,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 381629,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [3]
 							{
 								["ts"] = 1442807125.35104,
 								["amount"] = -3263,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 373266,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [4]
 							{
 								["ts"] = 1442807125.61705,
 								["amount"] = -8362,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 370003,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [5]
 							{
 								["ts"] = 1442807129.34806,
@@ -16846,63 +16836,63 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1442807113.46408,
 								["amount"] = 2929,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 156322,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 367380,
 								["absorb"] = 0,
 							}, -- [8]
 							{
 								["absorb"] = -698,
 								["amount"] = -2719,
-								["srcname"] = "Iron Infantry",
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 								["hp"] = 367380,
 								["ts"] = 1442807114.00309,
 							}, -- [9]
 							{
 								["absorb"] = 0,
 								["amount"] = 32987,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 25914,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 397648,
 								["ts"] = 1442807115.1631,
 							}, -- [10]
 							{
 								["absorb"] = 0,
 								["amount"] = 1465,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 156322,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 399113,
 								["ts"] = 1442807115.16311,
 							}, -- [11]
 							{
 								["ts"] = 1442807115.49612,
-								["srcname"] = "Iron Infantry",
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 								["hp"] = 399113,
 								["absorb"] = -6007,
 							}, -- [12]
 							{
 								["absorb"] = -2207,
 								["amount"] = -6350,
-								["srcname"] = "Iron Infantry",
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 								["hp"] = 399113,
 								["ts"] = 1442807116.50213,
 							}, -- [13]
 							{
 								["absorb"] = 0,
 								["amount"] = 1465,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 156322,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 394228,
 								["ts"] = 1442807116.87514,
 							}, -- [14]
 							{
 								["absorb"] = 0,
 								["amount"] = 1021,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 156322,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 395249,
 								["ts"] = 1442807118.08115,
 							}, -- [15]
@@ -16916,81 +16906,81 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1442806839.16701,
 								["amount"] = -12950,
-								["srcname"] = "Assault Cannon",
 								["hp"] = 258995,
 								["spellid"] = 166570,
+								["srcname"] = "Assault Cannon",
 							}, -- [1]
 							{
 								["ts"] = 1442806839.20602,
 								["amount"] = -47481,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 211514,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [2]
 							{
 								["absorb"] = 0,
 								["amount"] = 19963,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 53652,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 231477,
 								["ts"] = 1442806841.75003,
 							}, -- [3]
 							{
 								["absorb"] = -20527,
 								["amount"] = -25187,
-								["srcname"] = "Nitrogg Thundertower",
 								["spellid"] = 88163,
+								["srcname"] = "Nitrogg Thundertower",
 								["hp"] = 231477,
 								["ts"] = 1442806843.85104,
 							}, -- [4]
 							{
 								["ts"] = 1442806843.89405,
 								["amount"] = -7631,
-								["srcname"] = "Nitrogg Thundertower",
 								["hp"] = 223846,
 								["spellid"] = 163536,
+								["srcname"] = "Nitrogg Thundertower",
 							}, -- [5]
 							{
 								["ts"] = 1442806844.14106,
 								["amount"] = -12950,
-								["srcname"] = "Assault Cannon",
 								["hp"] = 185709,
 								["spellid"] = 166570,
+								["srcname"] = "Assault Cannon",
 							}, -- [6]
 							{
 								["ts"] = 1442806844.29607,
 								["amount"] = -45820,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 139889,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [7]
 							{
 								["ts"] = 1442806844.29608,
 								["amount"] = -46762,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 93127,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [8]
 							{
 								["ts"] = 1442806844.79209,
 								["amount"] = -47091,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 46036,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [9]
 							{
 								["ts"] = 1442806844.7921,
 								["amount"] = -45337,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 699,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [10]
 							{
 								["ts"] = 1442806844.79211,
 								["amount"] = -3104,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 699,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [11]
 							{
 								["spellname"] = "Pist dies",
@@ -17001,24 +16991,24 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 4060,
-								["srcname"] = "Pist-Antonidas",
 								["spellid"] = 159363,
+								["srcname"] = "Pist-Antonidas",
 								["hp"] = 365603,
 								["ts"] = 1442806838.41813,
 							}, -- [13]
 							{
 								["ts"] = 1442806838.72614,
 								["amount"] = -48474,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 317129,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [14]
 							{
 								["ts"] = 1442806838.72615,
 								["amount"] = -45184,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 271945,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [15]
 							["pos"] = 13,
 						},
@@ -17026,7 +17016,8 @@ SkadaPerCharDB = {
 					}, -- [2]
 				},
 				["damagetaken"] = 11623977,
-				["shielding"] = 2930425,
+				["deathlog"] = {
+				},
 				["id"] = "Player-116-074FF25B",
 				["maxhp"] = 406020,
 				["healing"] = 4260056,
@@ -17037,13 +17028,13 @@ SkadaPerCharDB = {
 						["damage"] = 87042,
 						["max"] = 38737,
 						["name"] = "Slam",
-						["min"] = 9815,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 3,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 9815,
 						["absorbed"] = 31402,
 					},
 					["Flametongue"] = {
@@ -17052,13 +17043,13 @@ SkadaPerCharDB = {
 						["damage"] = 489393,
 						["max"] = 18828,
 						["name"] = "Flametongue",
-						["min"] = 4118,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 39,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 4118,
 						["absorbed"] = 41610,
 					},
 					["50,000 Volts"] = {
@@ -17067,13 +17058,13 @@ SkadaPerCharDB = {
 						["damage"] = 79052,
 						["max"] = 79052,
 						["name"] = "50,000 Volts",
-						["min"] = 79052,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 79052,
 						["absorbed"] = 14967,
 					},
 					["X21-01A Missile Barrage"] = {
@@ -17082,13 +17073,13 @@ SkadaPerCharDB = {
 						["damage"] = 21204,
 						["max"] = 21204,
 						["name"] = "X21-01A Missile Barrage",
-						["min"] = 21204,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 21204,
 						["absorbed"] = 0,
 					},
 					["Hewing Swipe"] = {
@@ -17097,13 +17088,13 @@ SkadaPerCharDB = {
 						["damage"] = 173570,
 						["max"] = 60343,
 						["name"] = "Hewing Swipe",
-						["min"] = 11186,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 89339,
 						["totalhits"] = 5,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 11186,
 						["absorbed"] = 24300,
 					},
 					["New Plan!"] = {
@@ -17112,13 +17103,13 @@ SkadaPerCharDB = {
 						["damage"] = 22408,
 						["max"] = 22408,
 						["name"] = "New Plan!",
-						["min"] = 22408,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 22408,
 						["absorbed"] = 0,
 					},
 					["VX18-B Target Eliminator"] = {
@@ -17127,13 +17118,13 @@ SkadaPerCharDB = {
 						["damage"] = 553447,
 						["max"] = 148996,
 						["name"] = "VX18-B Target Eliminator",
-						["min"] = 106461,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 4,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 106461,
 						["absorbed"] = 42534,
 					},
 					["Shrapnel Blast"] = {
@@ -17142,13 +17133,13 @@ SkadaPerCharDB = {
 						["damage"] = 1087925,
 						["max"] = 48474,
 						["name"] = "Shrapnel Blast",
-						["min"] = 1548,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 38,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1548,
 						["absorbed"] = 81625,
 					},
 					["Double Slash"] = {
@@ -17157,29 +17148,29 @@ SkadaPerCharDB = {
 						["damage"] = 408795,
 						["max"] = 53690,
 						["name"] = "Double Slash",
-						["min"] = 7734,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 106285,
 						["totalhits"] = 17,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 7734,
 						["absorbed"] = 58704,
 					},
-					["Mad Dash"] = {
+					["Blackrock Grenade"] = {
 						["crushing"] = 0,
-						["id"] = 161089,
-						["damage"] = 261473,
-						["max"] = 167296,
-						["name"] = "Mad Dash",
-						["min"] = 94177,
+						["id"] = 161153,
+						["damage"] = 276796,
+						["max"] = 42610,
+						["name"] = "Blackrock Grenade",
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 2,
+						["totalhits"] = 9,
 						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 2298,
+						["min"] = 2607,
+						["absorbed"] = 32981,
 					},
 					["Blackrock Mortar"] = {
 						["crushing"] = 0,
@@ -17187,13 +17178,13 @@ SkadaPerCharDB = {
 						["damage"] = 718783,
 						["max"] = 75257,
 						["name"] = "Blackrock Mortar",
-						["min"] = 56683,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 11,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 56683,
 						["absorbed"] = 40837,
 					},
 					["Iron Star Mk. III"] = {
@@ -17202,13 +17193,13 @@ SkadaPerCharDB = {
 						["damage"] = 185395,
 						["max"] = 185395,
 						["name"] = "Iron Star Mk. III",
-						["min"] = 185395,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 185395,
 						["absorbed"] = 219,
 					},
 					["Haymaker"] = {
@@ -17217,29 +17208,29 @@ SkadaPerCharDB = {
 						["damage"] = 109300,
 						["max"] = 40951,
 						["name"] = "Haymaker",
-						["min"] = 32862,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 3,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 32862,
 						["absorbed"] = 5602,
 					},
-					["Blackrock Grenade"] = {
+					["Mad Dash"] = {
 						["crushing"] = 0,
-						["id"] = 161153,
-						["damage"] = 276796,
-						["max"] = 42610,
-						["name"] = "Blackrock Grenade",
-						["min"] = 2607,
+						["id"] = 161089,
+						["damage"] = 261473,
+						["max"] = 167296,
+						["name"] = "Mad Dash",
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 9,
+						["totalhits"] = 2,
 						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 32981,
+						["min"] = 94177,
+						["absorbed"] = 2298,
 					},
 					["Blackrock-Plated Gauntlets"] = {
 						["crushing"] = 0,
@@ -17247,13 +17238,13 @@ SkadaPerCharDB = {
 						["damage"] = 56094,
 						["max"] = 8078,
 						["name"] = "Blackrock-Plated Gauntlets",
-						["min"] = 7631,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 7,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 7631,
 						["absorbed"] = 0,
 					},
 					["Ignite"] = {
@@ -17262,13 +17253,13 @@ SkadaPerCharDB = {
 						["damage"] = 782860,
 						["max"] = 41939,
 						["name"] = "Ignite",
-						["min"] = 1764,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 55,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1764,
 						["absorbed"] = 149726,
 					},
 					["Dash"] = {
@@ -17277,13 +17268,13 @@ SkadaPerCharDB = {
 						["damage"] = 173102,
 						["max"] = 38733,
 						["name"] = "Dash",
-						["min"] = 27877,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 5,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 27877,
 						["absorbed"] = 6601,
 					},
 					["Slag Blast"] = {
@@ -17292,13 +17283,13 @@ SkadaPerCharDB = {
 						["damage"] = 33582,
 						["max"] = 12950,
 						["name"] = "Slag Blast",
-						["min"] = 1913,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 4,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1913,
 						["absorbed"] = 2618,
 					},
 					["Suppressive Fire"] = {
@@ -17307,13 +17298,13 @@ SkadaPerCharDB = {
 						["damage"] = 102907,
 						["max"] = 8552,
 						["name"] = "Suppressive Fire",
-						["min"] = 4415,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 13,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 4415,
 						["absorbed"] = 6557,
 					},
 					["Attack"] = {
@@ -17322,13 +17313,13 @@ SkadaPerCharDB = {
 						["damage"] = 6000849,
 						["max"] = 70296,
 						["name"] = "Attack",
-						["min"] = 8,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 1929770,
 						["totalhits"] = 374,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 8,
 						["absorbed"] = 861372,
 					},
 				},
@@ -17344,7 +17335,16 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Pist",
 				["alertCount"] = 0,
-				["deathlog"] = {
+				["power"] = {
+					{
+						["spells"] = {
+							[109128] = 80,
+							[23922] = 1695,
+							[12880] = 970,
+							[6572] = 2400,
+						},
+						["amount"] = 5145,
+					}, -- [1]
 				},
 				["healingspells"] = {
 					["Blood Craze"] = {
@@ -17506,21 +17506,13 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 					},
 				},
-				["power"] = {
-					[2] = {
-						["spells"] = {
-							[77443] = 1022,
-							[157722] = 1100,
-						},
-						["amount"] = 2122,
-					},
-				},
-				["role"] = "DAMAGER",
 				["time"] = 772,
-				["interrupts"] = 1,
+				["role"] = "DAMAGER",
 				["overhealing"] = 666129,
+				["interrupts"] = 1,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
+				["shielding"] = 0,
 				["damage"] = 32805203,
 				["damagespells"] = {
 					["Bracnar: Felstorm"] = {
@@ -17629,30 +17621,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1442807135.00101,
 								["amount"] = -15743,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 121005,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [1]
 							{
 								["ts"] = 1442807135.03502,
 								["amount"] = -16298,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 121005,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [2]
 							{
 								["ts"] = 1442807135.44103,
 								["amount"] = -16307,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 56316,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [3]
 							{
 								["ts"] = 1442807135.44104,
 								["amount"] = -60533,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 56316,
 								["spellid"] = 88163,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [4]
 							{
 								["spellname"] = "Bracnar dies",
@@ -17663,72 +17655,72 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1442807132.61406,
 								["amount"] = -28943,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 269976,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [6]
 							{
 								["ts"] = 1442807132.61407,
 								["amount"] = -28301,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 241675,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [7]
 							{
 								["ts"] = 1442807133.01608,
 								["amount"] = -15889,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 241675,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [8]
 							{
 								["ts"] = 1442807133.10709,
 								["amount"] = -27046,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 214629,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [9]
 							{
 								["ts"] = 1442807133.5891,
 								["amount"] = -28550,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 170190,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [10]
 							{
 								["ts"] = 1442807133.68611,
 								["amount"] = -17023,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 170190,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [11]
 							{
 								["ts"] = 1442807133.72112,
 								["amount"] = -16496,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 170190,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [12]
 							{
 								["ts"] = 1442807134.01813,
 								["amount"] = -15666,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 136671,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [13]
 							{
 								["ts"] = 1442807134.71414,
 								["amount"] = -16887,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 121005,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [14]
 							{
 								["ts"] = 1442807134.71415,
 								["amount"] = -15761,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 121005,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [15]
 							["pos"] = 6,
 						},
@@ -17746,108 +17738,108 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 220,
-								["srcname"] = "Bracnar",
 								["spellid"] = 143924,
+								["srcname"] = "Bracnar",
 								["hp"] = 255995,
 								["ts"] = 1442806861.79802,
 							}, -- [2]
 							{
 								["absorb"] = 0,
 								["amount"] = 7833,
-								["srcname"] = "Bracnar",
 								["spellid"] = 53353,
+								["srcname"] = "Bracnar",
 								["hp"] = 263828,
 								["ts"] = 1442806862.31403,
 							}, -- [3]
 							{
 								["absorb"] = 0,
 								["amount"] = 4894,
-								["srcname"] = "Bracnar",
 								["spellid"] = 143924,
+								["srcname"] = "Bracnar",
 								["hp"] = 268722,
 								["ts"] = 1442806862.99604,
 							}, -- [4]
 							{
 								["absorb"] = 0,
 								["amount"] = 4106,
-								["srcname"] = "Bracnar",
 								["spellid"] = 143924,
+								["srcname"] = "Bracnar",
 								["hp"] = 272828,
 								["ts"] = 1442806864.21805,
 							}, -- [5]
 							{
 								["absorb"] = 0,
 								["amount"] = 834,
-								["srcname"] = "Bracnar",
 								["spellid"] = 143924,
+								["srcname"] = "Bracnar",
 								["hp"] = 273662,
 								["ts"] = 1442806868.66706,
 							}, -- [6]
 							{
 								["ts"] = 1442806869.77407,
 								["amount"] = -29083,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 244579,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [7]
 							{
 								["absorb"] = 0,
 								["amount"] = 5686,
-								["srcname"] = "Bracnar",
 								["spellid"] = 143924,
+								["srcname"] = "Bracnar",
 								["hp"] = 250265,
 								["ts"] = 1442806869.89708,
 							}, -- [8]
 							{
 								["ts"] = 1442806870.26609,
 								["amount"] = -27185,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 223080,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [9]
 							{
 								["ts"] = 1442806870.4411,
 								["amount"] = -129479,
-								["srcname"] = "Nitrogg Thundertower",
 								["hp"] = 223080,
 								["spellid"] = 88163,
+								["srcname"] = "Nitrogg Thundertower",
 							}, -- [10]
 							{
 								["ts"] = 1442806870.77311,
 								["amount"] = -27453,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 66148,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [11]
 							{
 								["absorb"] = 0,
 								["amount"] = 157,
-								["srcname"] = "Bracnar",
 								["spellid"] = 143924,
+								["srcname"] = "Bracnar",
 								["hp"] = 66305,
 								["ts"] = 1442806871.51412,
 							}, -- [12]
 							{
 								["ts"] = 1442806871.66013,
 								["amount"] = -45717,
-								["srcname"] = "Nitrogg Thundertower",
 								["hp"] = 20588,
 								["spellid"] = 161153,
+								["srcname"] = "Nitrogg Thundertower",
 							}, -- [13]
 							{
 								["absorb"] = 0,
 								["amount"] = 186,
-								["srcname"] = "Bracnar",
 								["spellid"] = 143924,
+								["srcname"] = "Bracnar",
 								["hp"] = 20774,
 								["ts"] = 1442806872.72514,
 							}, -- [14]
 							{
 								["ts"] = 1442806874.82015,
 								["amount"] = -53631,
-								["srcname"] = "Nitrogg Thundertower",
 								["hp"] = 1,
 								["spellid"] = 163741,
+								["srcname"] = "Nitrogg Thundertower",
 							}, -- [15]
 							["pos"] = 2,
 						},
@@ -17855,7 +17847,8 @@ SkadaPerCharDB = {
 					}, -- [2]
 				},
 				["damagetaken"] = 3926563,
-				["shielding"] = 0,
+				["deathlog"] = {
+				},
 				["id"] = "Player-1169-06A1ACBD",
 				["maxhp"] = 391620,
 				["healing"] = 1129398,
@@ -17866,13 +17859,13 @@ SkadaPerCharDB = {
 						["damage"] = 32502,
 						["max"] = 32502,
 						["name"] = "New Plan!",
-						["min"] = 32502,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 32502,
 						["absorbed"] = 0,
 					},
 					["VX18-B Target Eliminator"] = {
@@ -17881,13 +17874,13 @@ SkadaPerCharDB = {
 						["damage"] = 347321,
 						["max"] = 197991,
 						["name"] = "VX18-B Target Eliminator",
-						["min"] = 149330,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 2,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 149330,
 						["absorbed"] = 48661,
 					},
 					["Lava Wreath"] = {
@@ -17896,13 +17889,13 @@ SkadaPerCharDB = {
 						["damage"] = 49024,
 						["max"] = 17737,
 						["name"] = "Lava Wreath",
-						["min"] = 7821,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 5,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 7821,
 						["absorbed"] = 0,
 					},
 					["Slam"] = {
@@ -17911,13 +17904,13 @@ SkadaPerCharDB = {
 						["damage"] = 392329,
 						["max"] = 72479,
 						["name"] = "Slam",
-						["min"] = 38781,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 6,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 38781,
 						["absorbed"] = 31927,
 					},
 					["Blackrock Mortar"] = {
@@ -17926,13 +17919,13 @@ SkadaPerCharDB = {
 						["damage"] = 311609,
 						["max"] = 97147,
 						["name"] = "Blackrock Mortar",
-						["min"] = 50570,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 5,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 50570,
 						["absorbed"] = 5000,
 					},
 					["Iron Star Mk. III"] = {
@@ -17941,29 +17934,14 @@ SkadaPerCharDB = {
 						["damage"] = 241997,
 						["max"] = 241997,
 						["name"] = "Iron Star Mk. III",
-						["min"] = 241997,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 241997,
 						["absorbed"] = 0,
-					},
-					["Shrapnel Blast"] = {
-						["crushing"] = 0,
-						["id"] = 156303,
-						["damage"] = 1039172,
-						["max"] = 52423,
-						["name"] = "Shrapnel Blast",
-						["min"] = 11196,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 33,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 37543,
 					},
 					["Blackrock Grenade"] = {
 						["crushing"] = 0,
@@ -17971,58 +17949,13 @@ SkadaPerCharDB = {
 						["damage"] = 92752,
 						["max"] = 47035,
 						["name"] = "Blackrock Grenade",
-						["min"] = 45717,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 2,
 						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Flametongue"] = {
-						["crushing"] = 0,
-						["id"] = 176039,
-						["damage"] = 136224,
-						["max"] = 19146,
-						["name"] = "Flametongue",
-						["min"] = 10931,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 11,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 2139,
-					},
-					["Ignite"] = {
-						["crushing"] = 0,
-						["id"] = 176147,
-						["damage"] = 527472,
-						["max"] = 41613,
-						["name"] = "Ignite",
-						["min"] = 22478,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 15,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 29837,
-					},
-					["50,000 Volts"] = {
-						["crushing"] = 0,
-						["id"] = 164192,
-						["damage"] = 120969,
-						["max"] = 120969,
-						["name"] = "50,000 Volts",
-						["min"] = 120969,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 45717,
 						["absorbed"] = 0,
 					},
 					["Slag Blast"] = {
@@ -18031,14 +17964,59 @@ SkadaPerCharDB = {
 						["damage"] = 48523,
 						["max"] = 6257,
 						["name"] = "Slag Blast",
-						["min"] = 2542,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 11,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2542,
 						["absorbed"] = 948,
+					},
+					["Flametongue"] = {
+						["crushing"] = 0,
+						["id"] = 176039,
+						["damage"] = 136224,
+						["max"] = 19146,
+						["name"] = "Flametongue",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 11,
+						["resisted"] = 0,
+						["min"] = 10931,
+						["absorbed"] = 2139,
+					},
+					["Ignite"] = {
+						["crushing"] = 0,
+						["id"] = 176147,
+						["damage"] = 527472,
+						["max"] = 41613,
+						["name"] = "Ignite",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 15,
+						["resisted"] = 0,
+						["min"] = 22478,
+						["absorbed"] = 29837,
+					},
+					["50,000 Volts"] = {
+						["crushing"] = 0,
+						["id"] = 164192,
+						["damage"] = 120969,
+						["max"] = 120969,
+						["name"] = "50,000 Volts",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 120969,
+						["absorbed"] = 0,
 					},
 					["X21-01A Missile Barrage"] = {
 						["crushing"] = 0,
@@ -18046,14 +18024,29 @@ SkadaPerCharDB = {
 						["damage"] = 113371,
 						["max"] = 26160,
 						["name"] = "X21-01A Missile Barrage",
-						["min"] = 10176,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 6,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 10176,
 						["absorbed"] = 6546,
+					},
+					["Shrapnel Blast"] = {
+						["crushing"] = 0,
+						["id"] = 156303,
+						["damage"] = 1039172,
+						["max"] = 52423,
+						["name"] = "Shrapnel Blast",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 33,
+						["resisted"] = 0,
+						["min"] = 11196,
+						["absorbed"] = 37543,
 					},
 					["Attack"] = {
 						["crushing"] = 0,
@@ -18061,13 +18054,13 @@ SkadaPerCharDB = {
 						["damage"] = 473298,
 						["max"] = 129479,
 						["name"] = "Attack",
-						["min"] = 13747,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 17,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 13747,
 						["absorbed"] = 1836,
 					},
 				},
@@ -18172,27 +18165,6 @@ SkadaPerCharDB = {
 						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1208-14641-92993-00017F7998"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Bracnar",
-						["amount"] = 1971,
-						["class"] = "HUNTER",
-						["shielding"] = 0,
-					},
-					["Creature-0-3018-1208-14641-92993-0001FF7CFF"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Bracnar",
-						["amount"] = 974,
-						["class"] = "HUNTER",
-						["shielding"] = 0,
-					},
-					["Creature-0-3018-1208-14641-92993-00007F7AD2"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Bracnar",
-						["amount"] = 1858,
-						["class"] = "HUNTER",
-						["shielding"] = 0,
-					},
 					["Creature-0-3018-1208-14641-92993-0000FF7CFF"] = {
 						["role"] = "DAMAGER",
 						["name"] = "Bracnar",
@@ -18200,10 +18172,10 @@ SkadaPerCharDB = {
 						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1208-14641-92993-00007F795C"] = {
+					["Creature-0-3018-1208-14641-92993-00017F7CFF"] = {
 						["role"] = "DAMAGER",
 						["name"] = "Bracnar",
-						["amount"] = 0,
+						["amount"] = 1421,
 						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
@@ -18220,10 +18192,31 @@ SkadaPerCharDB = {
 						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
+					["Creature-0-3018-1208-14641-92993-00007F795C"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Bracnar",
+						["amount"] = 0,
+						["class"] = "HUNTER",
+						["shielding"] = 0,
+					},
+					["Creature-0-3018-1208-14641-92993-00017F7998"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Bracnar",
+						["amount"] = 1971,
+						["class"] = "HUNTER",
+						["shielding"] = 0,
+					},
 					["Creature-0-3018-1208-14641-92993-0001FF795C"] = {
 						["role"] = "DAMAGER",
 						["name"] = "Bracnar",
 						["amount"] = 963,
+						["class"] = "HUNTER",
+						["shielding"] = 0,
+					},
+					["Creature-0-3018-1208-14641-92993-0001FF7C31"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Bracnar",
+						["amount"] = 0,
 						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
@@ -18240,24 +18233,17 @@ SkadaPerCharDB = {
 						["name"] = "Malicor",
 						["amount"] = 383,
 					},
-					["Creature-0-3018-1208-14641-92993-0001FF7AD2"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Bracnar",
-						["amount"] = 1726,
-						["class"] = "HUNTER",
-						["shielding"] = 0,
-					},
-					["Creature-0-3018-1208-14641-92993-0001FF7C31"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Bracnar",
-						["amount"] = 0,
-						["class"] = "HUNTER",
-						["shielding"] = 0,
-					},
 					["Creature-0-3018-1208-14641-92993-0000FF7B20"] = {
 						["role"] = "DAMAGER",
 						["name"] = "Bracnar",
 						["amount"] = 0,
+						["class"] = "HUNTER",
+						["shielding"] = 0,
+					},
+					["Creature-0-3018-1208-14641-92993-0001FF7AD2"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Bracnar",
+						["amount"] = 1726,
 						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
@@ -18272,6 +18258,13 @@ SkadaPerCharDB = {
 						["role"] = "DAMAGER",
 						["name"] = "Bracnar",
 						["amount"] = 0,
+						["class"] = "HUNTER",
+						["shielding"] = 0,
+					},
+					["Creature-0-3018-1208-14641-92993-00007F7AD2"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Bracnar",
+						["amount"] = 1858,
 						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
@@ -18343,10 +18336,10 @@ SkadaPerCharDB = {
 						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1208-14641-92993-00017F7CFF"] = {
+					["Creature-0-3018-1208-14641-92993-0001FF7CFF"] = {
 						["role"] = "DAMAGER",
 						["name"] = "Bracnar",
-						["amount"] = 1421,
+						["amount"] = 974,
 						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
@@ -18367,7 +18360,14 @@ SkadaPerCharDB = {
 				["alertDamage"] = 698007,
 				["name"] = "Bracnar",
 				["alertCount"] = 30,
-				["deathlog"] = {
+				["power"] = {
+					[2] = {
+						["spells"] = {
+							[77443] = 1022,
+							[157722] = 1100,
+						},
+						["amount"] = 2122,
+					},
 				},
 				["healingspells"] = {
 					["Kill Shot"] = {
@@ -18689,28 +18689,13 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 					},
 				},
-				["power"] = {
-					[3] = {
-						["spells"] = {
-							[98440] = 875,
-							[35546] = 1530,
-						},
-						["amount"] = 2405,
-					},
-					[4] = {
-						["spells"] = {
-							[139546] = 36,
-							[115190] = 14,
-						},
-						["amount"] = 50,
-					},
-				},
-				["role"] = "DAMAGER",
 				["time"] = 646,
-				["interrupts"] = 0,
+				["role"] = "DAMAGER",
 				["overhealing"] = 127601,
+				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
+				["shielding"] = 0,
 				["damage"] = 14910440,
 				["damagespells"] = {
 					["Killing Spree Off-Hand"] = {
@@ -18825,58 +18810,58 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1442807051.71201,
 								["amount"] = -10896,
-								["srcname"] = "Assault Cannon",
 								["hp"] = 107485,
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 							}, -- [1]
 							{
 								["ts"] = 1442807051.74802,
 								["amount"] = -27337,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 80148,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [2]
 							{
 								["ts"] = 1442807051.82203,
 								["amount"] = -11181,
-								["srcname"] = "Assault Cannon",
 								["hp"] = 68967,
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 							}, -- [3]
 							{
 								["ts"] = 1442807051.93504,
 								["amount"] = -10931,
-								["srcname"] = "Assault Cannon",
 								["hp"] = 58036,
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 							}, -- [4]
 							{
 								["ts"] = 1442807052.00605,
 								["amount"] = -11313,
-								["srcname"] = "Assault Cannon",
 								["hp"] = 46723,
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 							}, -- [5]
 							{
 								["ts"] = 1442807052.12206,
 								["amount"] = -11065,
-								["srcname"] = "Assault Cannon",
 								["hp"] = 35658,
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 							}, -- [6]
 							{
 								["ts"] = 1442807052.23707,
 								["amount"] = -11034,
-								["srcname"] = "Assault Cannon",
 								["hp"] = 24624,
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 							}, -- [7]
 							{
 								["ts"] = 1442807052.27508,
 								["amount"] = -29022,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 1,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [8]
 							{
 								["spellname"] = "Kawatan dies",
@@ -18887,44 +18872,44 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1442807051.1941,
 								["amount"] = -10808,
-								["srcname"] = "Assault Cannon",
 								["hp"] = 191019,
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 							}, -- [10]
 							{
 								["ts"] = 1442807051.23311,
 								["amount"] = -28008,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 163011,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [11]
 							{
 								["ts"] = 1442807051.30512,
 								["amount"] = -10935,
-								["srcname"] = "Assault Cannon",
 								["hp"] = 152076,
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 							}, -- [12]
 							{
 								["ts"] = 1442807051.42813,
 								["amount"] = -11251,
-								["srcname"] = "Assault Cannon",
 								["hp"] = 140825,
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 							}, -- [13]
 							{
 								["ts"] = 1442807051.53514,
 								["amount"] = -11170,
-								["srcname"] = "Assault Cannon",
 								["hp"] = 129655,
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 							}, -- [14]
 							{
 								["ts"] = 1442807051.60015,
 								["amount"] = -11274,
-								["srcname"] = "Assault Cannon",
 								["hp"] = 118381,
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 							}, -- [15]
 							["pos"] = 10,
 						},
@@ -18936,98 +18921,98 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 82327,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 339000,
 								["ts"] = 1442806801.50701,
 							}, -- [1]
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
-								["srcname"] = "Kawatan-Shandris",
 								["spellid"] = 73651,
+								["srcname"] = "Kawatan-Shandris",
 								["hp"] = 339000,
 								["ts"] = 1442806802.82102,
 							}, -- [2]
 							{
 								["ts"] = 1442806844.29603,
 								["amount"] = -28907,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 310093,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [3]
 							{
 								["ts"] = 1442806845.30904,
 								["amount"] = 7598,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 82327,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 317691,
 								["absorb"] = 0,
 							}, -- [4]
 							{
 								["ts"] = 1442806845.30905,
 								["amount"] = 2279,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 82327,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 319970,
 								["absorb"] = 0,
 							}, -- [5]
 							{
 								["absorb"] = -2355,
 								["amount"] = -17606,
-								["srcname"] = "Nitrogg Thundertower",
 								["spellid"] = 163741,
+								["srcname"] = "Nitrogg Thundertower",
 								["hp"] = 302364,
 								["ts"] = 1442806851.51906,
 							}, -- [6]
 							{
 								["ts"] = 1442806857.00507,
 								["amount"] = -66811,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 302364,
 								["spellid"] = 88163,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [7]
 							{
 								["ts"] = 1442806857.00508,
 								["amount"] = -64566,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 302364,
 								["spellid"] = 88163,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [8]
 							{
 								["ts"] = 1442806857.00509,
 								["amount"] = -18267,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 302364,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [9]
 							{
 								["ts"] = 1442806858.0001,
 								["amount"] = -17097,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 152720,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [10]
 							{
 								["ts"] = 1442806858.50711,
 								["amount"] = -28911,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 106712,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [11]
 							{
 								["ts"] = 1442806858.50712,
 								["amount"] = -27631,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 79081,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [12]
 							{
 								["ts"] = 1442806868.93813,
 								["amount"] = -134961,
-								["srcname"] = "Nitrogg Thundertower",
 								["hp"] = 79081,
 								["spellid"] = 88163,
+								["srcname"] = "Nitrogg Thundertower",
 							}, -- [13]
 							{
 								["spellname"] = "Kawatan dies",
@@ -19038,8 +19023,8 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 82327,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 339000,
 								["ts"] = 1442806801.50615,
 							}, -- [15]
@@ -19053,99 +19038,99 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 15206,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 82327,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 184200,
 								["ts"] = 1442806534.01401,
 							}, -- [1]
 							{
 								["absorb"] = 0,
 								["amount"] = 59970,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 19750,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 244170,
 								["ts"] = 1442806535.23502,
 							}, -- [2]
 							{
 								["absorb"] = 0,
 								["amount"] = 8996,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 19750,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 253166,
 								["ts"] = 1442806535.23503,
 							}, -- [3]
 							{
 								["absorb"] = 0,
 								["amount"] = 31581,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 25914,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 284747,
 								["ts"] = 1442806535.58704,
 							}, -- [4]
 							{
 								["ts"] = 1442806557.18905,
 								["amount"] = -46716,
-								["srcname"] = "Grom'kar Grenadier",
 								["hp"] = 268563,
 								["spellid"] = 161153,
+								["srcname"] = "Grom'kar Grenadier",
 							}, -- [5]
 							{
 								["absorb"] = 0,
 								["amount"] = 29988,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 114852,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 298551,
 								["ts"] = 1442806559.41106,
 							}, -- [6]
 							{
 								["absorb"] = -7150,
 								["amount"] = -32540,
-								["srcname"] = "Grom'kar Gunner",
 								["spellid"] = 166676,
+								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 266011,
 								["ts"] = 1442806564.24807,
 							}, -- [7]
 							{
 								["ts"] = 1442806564.24808,
 								["amount"] = -40367,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 225644,
 								["spellid"] = 166676,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [8]
 							{
 								["ts"] = 1442806564.75309,
 								["amount"] = -47651,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 177993,
 								["spellid"] = 166676,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [9]
 							{
 								["ts"] = 1442806564.7531,
 								["amount"] = -49759,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 128234,
 								["spellid"] = 166676,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [10]
 							{
 								["ts"] = 1442806565.24711,
 								["amount"] = -41200,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 87034,
 								["spellid"] = 176147,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [11]
 							{
 								["ts"] = 1442806565.24712,
 								["amount"] = -54854,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 32180,
 								["spellid"] = 166676,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [12]
 							{
 								["ts"] = 1442806565.24713,
 								["amount"] = -58421,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 1,
 								["spellid"] = 166676,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [13]
 							{
 								["spellname"] = "Kawatan dies",
@@ -19156,9 +19141,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1442806533.29815,
 								["amount"] = -11147,
-								["srcname"] = "Grom'kar Cinderseer",
 								["hp"] = 168994,
 								["spellid"] = 176033,
+								["srcname"] = "Grom'kar Cinderseer",
 							}, -- [15]
 							["pos"] = 15,
 						},
@@ -19166,7 +19151,8 @@ SkadaPerCharDB = {
 					}, -- [3]
 				},
 				["damagetaken"] = 3915539,
-				["shielding"] = 0,
+				["deathlog"] = {
+				},
 				["id"] = "Player-117-05DFB5E5",
 				["maxhp"] = 339000,
 				["healing"] = 214498,
@@ -19177,13 +19163,13 @@ SkadaPerCharDB = {
 						["damage"] = 213381,
 						["max"] = 127579,
 						["name"] = "Hewing Swipe",
-						["min"] = 85802,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 2,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 85802,
 						["absorbed"] = 18135,
 					},
 					["New Plan!"] = {
@@ -19192,13 +19178,13 @@ SkadaPerCharDB = {
 						["damage"] = 28570,
 						["max"] = 28570,
 						["name"] = "New Plan!",
-						["min"] = 28570,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 28570,
 						["absorbed"] = 0,
 					},
 					["VX18-B Target Eliminator"] = {
@@ -19207,13 +19193,13 @@ SkadaPerCharDB = {
 						["damage"] = 196028,
 						["max"] = 196028,
 						["name"] = "VX18-B Target Eliminator",
-						["min"] = 196028,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 196028,
 						["absorbed"] = 0,
 					},
 					["Slam"] = {
@@ -19222,13 +19208,13 @@ SkadaPerCharDB = {
 						["damage"] = 347270,
 						["max"] = 73820,
 						["name"] = "Slam",
-						["min"] = 43795,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 6,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 43795,
 						["absorbed"] = 119119,
 					},
 					["Cannon Barrage"] = {
@@ -19237,13 +19223,13 @@ SkadaPerCharDB = {
 						["damage"] = 65932,
 						["max"] = 33767,
 						["name"] = "Cannon Barrage",
-						["min"] = 32165,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 2,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 32165,
 						["absorbed"] = 0,
 					},
 					["Blackrock Mortar"] = {
@@ -19252,13 +19238,13 @@ SkadaPerCharDB = {
 						["damage"] = 402995,
 						["max"] = 95436,
 						["name"] = "Blackrock Mortar",
-						["min"] = 17606,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 6,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 17606,
 						["absorbed"] = 46150,
 					},
 					["Iron Star Mk. III"] = {
@@ -19267,13 +19253,13 @@ SkadaPerCharDB = {
 						["damage"] = 214438,
 						["max"] = 214438,
 						["name"] = "Iron Star Mk. III",
-						["min"] = 214438,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 214438,
 						["absorbed"] = 27749,
 					},
 					["Blackrock Grenade"] = {
@@ -19282,13 +19268,13 @@ SkadaPerCharDB = {
 						["damage"] = 182670,
 						["max"] = 46847,
 						["name"] = "Blackrock Grenade",
-						["min"] = 8363,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 6,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 8363,
 						["absorbed"] = 91975,
 					},
 					["X21-01A Missile Barrage"] = {
@@ -19297,13 +19283,13 @@ SkadaPerCharDB = {
 						["damage"] = 188616,
 						["max"] = 28383,
 						["name"] = "X21-01A Missile Barrage",
-						["min"] = 5505,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 10,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 5505,
 						["absorbed"] = 25214,
 					},
 					["Flametongue"] = {
@@ -19312,13 +19298,13 @@ SkadaPerCharDB = {
 						["damage"] = 494666,
 						["max"] = 18774,
 						["name"] = "Flametongue",
-						["min"] = 4042,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 44,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 4042,
 						["absorbed"] = 24053,
 					},
 					["Ignite"] = {
@@ -19327,13 +19313,13 @@ SkadaPerCharDB = {
 						["damage"] = 41200,
 						["max"] = 41200,
 						["name"] = "Ignite",
-						["min"] = 41200,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 41200,
 						["absorbed"] = 0,
 					},
 					["50,000 Volts"] = {
@@ -19342,29 +19328,14 @@ SkadaPerCharDB = {
 						["damage"] = 107001,
 						["max"] = 107001,
 						["name"] = "50,000 Volts",
-						["min"] = 107001,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 107001,
 						["absorbed"] = 20997,
-					},
-					["Suppressive Fire"] = {
-						["crushing"] = 0,
-						["id"] = 161220,
-						["damage"] = 347923,
-						["max"] = 11332,
-						["name"] = "Suppressive Fire",
-						["min"] = 6986,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 32,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 7857,
 					},
 					["Shrapnel Blast"] = {
 						["crushing"] = 0,
@@ -19372,14 +19343,29 @@ SkadaPerCharDB = {
 						["damage"] = 629764,
 						["max"] = 58421,
 						["name"] = "Shrapnel Blast",
-						["min"] = 26962,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 18,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 26962,
 						["absorbed"] = 7150,
+					},
+					["Suppressive Fire"] = {
+						["crushing"] = 0,
+						["id"] = 161220,
+						["damage"] = 347923,
+						["max"] = 11332,
+						["name"] = "Suppressive Fire",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 32,
+						["resisted"] = 0,
+						["min"] = 6986,
+						["absorbed"] = 7857,
 					},
 					["Attack"] = {
 						["crushing"] = 0,
@@ -19387,13 +19373,13 @@ SkadaPerCharDB = {
 						["damage"] = 455085,
 						["max"] = 134961,
 						["name"] = "Attack",
-						["min"] = 17097,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 9,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 17097,
 						["absorbed"] = 0,
 					},
 				},
@@ -19409,7 +19395,21 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Kawatan",
 				["alertCount"] = 0,
-				["deathlog"] = {
+				["power"] = {
+					[3] = {
+						["spells"] = {
+							[98440] = 875,
+							[35546] = 1530,
+						},
+						["amount"] = 2405,
+					},
+					[4] = {
+						["spells"] = {
+							[139546] = 36,
+							[115190] = 14,
+						},
+						["amount"] = 50,
+					},
 				},
 				["healingspells"] = {
 					["Recuperate"] = {
@@ -19564,14 +19564,13 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 					},
 				},
-				["power"] = {
-				},
-				["role"] = "DAMAGER",
 				["time"] = 772,
-				["interrupts"] = 0,
+				["role"] = "DAMAGER",
 				["overhealing"] = 0,
+				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
+				["shielding"] = 368558,
 				["damage"] = 34062041,
 				["damagespells"] = {
 					["Ice Nova"] = {
@@ -19684,112 +19683,112 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = -2220,
 								["amount"] = -8881,
-								["srcname"] = "Assault Cannon",
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 								["hp"] = 103492,
 								["ts"] = 1442807100.86402,
 							}, -- [2]
 							{
 								["absorb"] = -2271,
 								["amount"] = -9084,
-								["srcname"] = "Assault Cannon",
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 								["hp"] = 94408,
 								["ts"] = 1442807101.03603,
 							}, -- [3]
 							{
 								["absorb"] = -2280,
 								["amount"] = -9121,
-								["srcname"] = "Assault Cannon",
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 								["hp"] = 85287,
 								["ts"] = 1442807101.11504,
 							}, -- [4]
 							{
 								["absorb"] = -2250,
 								["amount"] = -9000,
-								["srcname"] = "Assault Cannon",
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 								["hp"] = 76287,
 								["ts"] = 1442807101.22005,
 							}, -- [5]
 							{
 								["absorb"] = -2236,
 								["amount"] = -8947,
-								["srcname"] = "Assault Cannon",
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 								["hp"] = 67340,
 								["ts"] = 1442807101.43306,
 							}, -- [6]
 							{
 								["absorb"] = -2272,
 								["amount"] = -9092,
-								["srcname"] = "Assault Cannon",
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 								["hp"] = 58248,
 								["ts"] = 1442807101.57507,
 							}, -- [7]
 							{
 								["absorb"] = -2244,
 								["amount"] = -8980,
-								["srcname"] = "Assault Cannon",
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 								["hp"] = 49268,
 								["ts"] = 1442807101.66508,
 							}, -- [8]
 							{
 								["absorb"] = -1802,
 								["amount"] = -7208,
-								["srcname"] = "Assault Cannon",
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 								["hp"] = 42060,
 								["ts"] = 1442807101.74409,
 							}, -- [9]
 							{
 								["absorb"] = -1785,
 								["amount"] = -7143,
-								["srcname"] = "Assault Cannon",
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 								["hp"] = 34917,
 								["ts"] = 1442807101.8411,
 							}, -- [10]
 							{
 								["absorb"] = -1743,
 								["amount"] = -6974,
-								["srcname"] = "Assault Cannon",
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 								["hp"] = 27943,
 								["ts"] = 1442807102.02511,
 							}, -- [11]
 							{
 								["absorb"] = -1789,
 								["amount"] = -7159,
-								["srcname"] = "Assault Cannon",
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 								["hp"] = 20784,
 								["ts"] = 1442807102.21912,
 							}, -- [12]
 							{
 								["absorb"] = -1760,
 								["amount"] = -7040,
-								["srcname"] = "Assault Cannon",
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 								["hp"] = 13744,
 								["ts"] = 1442807102.34413,
 							}, -- [13]
 							{
 								["absorb"] = -1802,
 								["amount"] = -7210,
-								["srcname"] = "Assault Cannon",
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 								["hp"] = 6534,
 								["ts"] = 1442807102.42214,
 							}, -- [14]
 							{
 								["absorb"] = -1793,
 								["amount"] = -7172,
-								["srcname"] = "Assault Cannon",
 								["spellid"] = 161220,
+								["srcname"] = "Assault Cannon",
 								["hp"] = 1,
 								["ts"] = 1442807102.64415,
 							}, -- [15]
@@ -19803,24 +19802,24 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = -2503,
 								["amount"] = -42022,
-								["srcname"] = "Nitrogg Thundertower",
 								["spellid"] = 161153,
+								["srcname"] = "Nitrogg Thundertower",
 								["hp"] = 101509,
 								["ts"] = 1442806865.86401,
 							}, -- [1]
 							{
 								["absorb"] = -2503,
 								["amount"] = -16978,
-								["srcname"] = "Iron Infantry",
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 								["hp"] = 101509,
 								["ts"] = 1442806866.01202,
 							}, -- [2]
 							{
 								["absorb"] = -2503,
 								["amount"] = -133095,
-								["srcname"] = "Nitrogg Thundertower",
 								["spellid"] = 88163,
+								["srcname"] = "Nitrogg Thundertower",
 								["hp"] = 84531,
 								["ts"] = 1442806867.42403,
 							}, -- [3]
@@ -19833,87 +19832,87 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 19750,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 386460,
 								["ts"] = 1442806834.22905,
 							}, -- [5]
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 19750,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 386460,
 								["ts"] = 1442806836.25906,
 							}, -- [6]
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 19750,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 386460,
 								["ts"] = 1442806836.25907,
 							}, -- [7]
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 82327,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 386460,
 								["ts"] = 1442806845.30808,
 							}, -- [8]
 							{
 								["absorb"] = -18545,
-								["srcname"] = "Iron Infantry",
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 								["hp"] = 386460,
 								["ts"] = 1442806848.82709,
 							}, -- [9]
 							{
 								["absorb"] = -59048,
 								["amount"] = -88214,
-								["srcname"] = "Nitrogg Thundertower",
 								["spellid"] = 88163,
+								["srcname"] = "Nitrogg Thundertower",
 								["hp"] = 386460,
 								["ts"] = 1442806856.9381,
 							}, -- [10]
 							{
 								["absorb"] = -2503,
 								["amount"] = -13303,
-								["srcname"] = "Nitrogg Thundertower",
 								["spellid"] = 163536,
+								["srcname"] = "Nitrogg Thundertower",
 								["hp"] = 284943,
 								["ts"] = 1442806856.96911,
 							}, -- [11]
 							{
 								["absorb"] = -2503,
 								["amount"] = -44589,
-								["srcname"] = "Nitrogg Thundertower",
 								["spellid"] = 161153,
+								["srcname"] = "Nitrogg Thundertower",
 								["hp"] = 240354,
 								["ts"] = 1442806860.00512,
 							}, -- [12]
 							{
 								["absorb"] = -2503,
 								["amount"] = -64146,
-								["srcname"] = "Grom'kar Gunner",
 								["spellid"] = 88163,
+								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 240354,
 								["ts"] = 1442806862.99613,
 							}, -- [13]
 							{
 								["absorb"] = -2503,
 								["amount"] = -16199,
-								["srcname"] = "Iron Infantry",
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 								["hp"] = 176208,
 								["ts"] = 1442806864.01814,
 							}, -- [14]
 							{
 								["absorb"] = -2503,
 								["amount"] = -16478,
-								["srcname"] = "Iron Infantry",
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 								["hp"] = 160009,
 								["ts"] = 1442806865.01815,
 							}, -- [15]
@@ -19923,25 +19922,26 @@ SkadaPerCharDB = {
 					}, -- [2]
 				},
 				["damagetaken"] = 3499649,
-				["shielding"] = 368558,
+				["deathlog"] = {
+				},
 				["id"] = "Player-4-040B0987",
 				["maxhp"] = 386460,
 				["healing"] = 476767,
 				["damagetakenspells"] = {
-					["Suppressive Fire"] = {
+					["Slam"] = {
 						["crushing"] = 0,
-						["id"] = 161220,
-						["damage"] = 443829,
-						["max"] = 15677,
-						["name"] = "Suppressive Fire",
-						["min"] = 653,
+						["id"] = 162617,
+						["damage"] = 409712,
+						["max"] = 83323,
+						["name"] = "Slam",
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 46,
+						["totalhits"] = 6,
 						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 128814,
+						["min"] = 55468,
+						["absorbed"] = 73043,
 					},
 					["New Plan!"] = {
 						["crushing"] = 0,
@@ -19949,13 +19949,13 @@ SkadaPerCharDB = {
 						["damage"] = 25436,
 						["max"] = 25436,
 						["name"] = "New Plan!",
-						["min"] = 25436,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 25436,
 						["absorbed"] = 2503,
 					},
 					["VX18-B Target Eliminator"] = {
@@ -19964,13 +19964,13 @@ SkadaPerCharDB = {
 						["damage"] = 146942,
 						["max"] = 146942,
 						["name"] = "VX18-B Target Eliminator",
-						["min"] = 146942,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 146942,
 						["absorbed"] = 51306,
 					},
 					["Lava Wreath"] = {
@@ -19979,29 +19979,14 @@ SkadaPerCharDB = {
 						["damage"] = 36627,
 						["max"] = 11563,
 						["name"] = "Lava Wreath",
-						["min"] = 6266,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 5,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 6266,
 						["absorbed"] = 13419,
-					},
-					["Slam"] = {
-						["crushing"] = 0,
-						["id"] = 162617,
-						["damage"] = 409712,
-						["max"] = 83323,
-						["name"] = "Slam",
-						["min"] = 55468,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 6,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 73043,
 					},
 					["Cannon Barrage"] = {
 						["crushing"] = 0,
@@ -20009,13 +19994,13 @@ SkadaPerCharDB = {
 						["damage"] = 199614,
 						["max"] = 34345,
 						["name"] = "Cannon Barrage",
-						["min"] = 32011,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 6,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 32011,
 						["absorbed"] = 15018,
 					},
 					["X21-01A Missile Barrage"] = {
@@ -20024,14 +20009,29 @@ SkadaPerCharDB = {
 						["damage"] = 147235,
 						["max"] = 24662,
 						["name"] = "X21-01A Missile Barrage",
-						["min"] = 13734,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 7,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 13734,
 						["absorbed"] = 21899,
+					},
+					["Suppressive Fire"] = {
+						["crushing"] = 0,
+						["id"] = 161220,
+						["damage"] = 443829,
+						["max"] = 15677,
+						["name"] = "Suppressive Fire",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 46,
+						["resisted"] = 0,
+						["min"] = 653,
+						["absorbed"] = 128814,
 					},
 					["Iron Star Mk. III"] = {
 						["crushing"] = 0,
@@ -20039,13 +20039,13 @@ SkadaPerCharDB = {
 						["damage"] = 237559,
 						["max"] = 237559,
 						["name"] = "Iron Star Mk. III",
-						["min"] = 237559,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 237559,
 						["absorbed"] = 12534,
 					},
 					["Blackrock Grenade"] = {
@@ -20054,13 +20054,13 @@ SkadaPerCharDB = {
 						["damage"] = 138923,
 						["max"] = 44589,
 						["name"] = "Blackrock Grenade",
-						["min"] = 8179,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 4,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 8179,
 						["absorbed"] = 45800,
 					},
 					["Flametongue"] = {
@@ -20069,13 +20069,13 @@ SkadaPerCharDB = {
 						["damage"] = 31539,
 						["max"] = 16122,
 						["name"] = "Flametongue",
-						["min"] = 15417,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 2,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 15417,
 						["absorbed"] = 5006,
 					},
 					["Blackrock-Plated Gauntlets"] = {
@@ -20084,13 +20084,13 @@ SkadaPerCharDB = {
 						["damage"] = 13303,
 						["max"] = 13303,
 						["name"] = "Blackrock-Plated Gauntlets",
-						["min"] = 13303,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 13303,
 						["absorbed"] = 2503,
 					},
 					["Ignite"] = {
@@ -20099,13 +20099,13 @@ SkadaPerCharDB = {
 						["damage"] = 323891,
 						["max"] = 26515,
 						["name"] = "Ignite",
-						["min"] = 12931,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 15,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 12931,
 						["absorbed"] = 71194,
 					},
 					["50,000 Volts"] = {
@@ -20114,29 +20114,14 @@ SkadaPerCharDB = {
 						["damage"] = 134922,
 						["max"] = 134922,
 						["name"] = "50,000 Volts",
-						["min"] = 134922,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 134922,
 						["absorbed"] = 2594,
-					},
-					["Slag Blast"] = {
-						["crushing"] = 0,
-						["id"] = 166570,
-						["damage"] = 14098,
-						["max"] = 5013,
-						["name"] = "Slag Blast",
-						["min"] = 2036,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 4,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 3524,
 					},
 					["Shrapnel Blast"] = {
 						["crushing"] = 0,
@@ -20144,14 +20129,29 @@ SkadaPerCharDB = {
 						["damage"] = 400462,
 						["max"] = 46765,
 						["name"] = "Shrapnel Blast",
-						["min"] = 17108,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 13,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 17108,
 						["absorbed"] = 59213,
+					},
+					["Slag Blast"] = {
+						["crushing"] = 0,
+						["id"] = 166570,
+						["damage"] = 14098,
+						["max"] = 5013,
+						["name"] = "Slag Blast",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 4,
+						["resisted"] = 0,
+						["min"] = 2036,
+						["absorbed"] = 3524,
 					},
 					["Attack"] = {
 						["crushing"] = 0,
@@ -20159,13 +20159,13 @@ SkadaPerCharDB = {
 						["damage"] = 795557,
 						["max"] = 133095,
 						["name"] = "Attack",
-						["min"] = 1406,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 2,
 						["blocked"] = 0,
 						["totalhits"] = 28,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1406,
 						["absorbed"] = 148293,
 					},
 				},
@@ -20181,7 +20181,7 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Hàmm",
 				["alertCount"] = 0,
-				["deathlog"] = {
+				["power"] = {
 				},
 				["healingspells"] = {
 					["Flameglow"] = {
@@ -20420,27 +20420,13 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 					},
 				},
-				["power"] = {
-					[9] = {
-						["spells"] = {
-							[148976] = 103,
-							[138248] = 27,
-						},
-						["amount"] = 130,
-					},
-					[0] = {
-						["spells"] = {
-							[88852] = 116320,
-						},
-						["amount"] = 116320,
-					},
-				},
-				["role"] = "HEALER",
 				["time"] = 779,
-				["interrupts"] = 0,
+				["role"] = "HEALER",
 				["overhealing"] = 24536796.2439423,
+				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
+				["shielding"] = 3431288,
 				["damage"] = 14712199,
 				["damagespells"] = {
 					["Blackrock Turret: Homing Shell"] = {
@@ -20513,96 +20499,96 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1442807115.62901,
 								["amount"] = -27303,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 158228,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [1]
 							{
 								["ts"] = 1442807116.03102,
 								["amount"] = -12142,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 158228,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [2]
 							{
 								["ts"] = 1442807116.03103,
 								["amount"] = -13200,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 158228,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [3]
 							{
 								["ts"] = 1442807116.12004,
 								["amount"] = -27121,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 105765,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [4]
 							{
 								["ts"] = 1442807116.63605,
 								["amount"] = -26036,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 79729,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [5]
 							{
 								["absorb"] = 0,
 								["amount"] = 916,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 53652,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 80645,
 								["ts"] = 1442807116.87606,
 							}, -- [6]
 							{
 								["ts"] = 1442807117.02707,
 								["amount"] = -12557,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 80645,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [7]
 							{
 								["ts"] = 1442807117.02708,
 								["amount"] = -13260,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 80645,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [8]
 							{
 								["absorb"] = 0,
 								["amount"] = 59,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 143924,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 54887,
 								["ts"] = 1442807117.26809,
 							}, -- [9]
 							{
 								["ts"] = 1442807118.0271,
 								["amount"] = -12485,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 54887,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [10]
 							{
 								["ts"] = 1442807118.02711,
 								["amount"] = -26452,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 54887,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [11]
 							{
 								["absorb"] = 0,
 								["amount"] = 639,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 53652,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 55526,
 								["ts"] = 1442807118.08212,
 							}, -- [12]
 							{
 								["ts"] = 1442807118.49413,
 								["amount"] = -46711,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 16589,
 								["spellid"] = 88163,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [13]
 							{
 								["spellname"] = "Jhedoner dies",
@@ -20613,9 +20599,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1442807115.39715,
 								["amount"] = -25897,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 185531,
 								["spellid"] = 156303,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [15]
 							["pos"] = 15,
 						},
@@ -20627,82 +20613,82 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 428,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 53652,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 289918,
 								["ts"] = 1442806845.35201,
 							}, -- [1]
 							{
 								["absorb"] = 0,
 								["amount"] = 1799,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 143924,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 291717,
 								["ts"] = 1442806845.58102,
 							}, -- [2]
 							{
 								["absorb"] = -12340,
-								["srcname"] = "Iron Infantry",
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 								["hp"] = 291717,
 								["ts"] = 1442806845.80803,
 							}, -- [3]
 							{
 								["absorb"] = -2527,
 								["amount"] = -10605,
-								["srcname"] = "Iron Infantry",
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 								["hp"] = 291717,
 								["ts"] = 1442806845.94404,
 							}, -- [4]
 							{
 								["ts"] = 1442806846.48805,
 								["amount"] = -104111,
-								["srcname"] = "Nitrogg Thundertower",
 								["hp"] = 281112,
 								["spellid"] = 88163,
+								["srcname"] = "Nitrogg Thundertower",
 							}, -- [5]
 							{
 								["ts"] = 1442806846.80506,
 								["amount"] = -13028,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 177001,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [6]
 							{
 								["ts"] = 1442806846.93807,
 								["amount"] = -12353,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 177001,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [7]
 							{
 								["ts"] = 1442806847.18508,
 								["amount"] = -46628,
-								["srcname"] = "Grom'kar Gunner",
 								["hp"] = 177001,
 								["spellid"] = 88163,
+								["srcname"] = "Grom'kar Gunner",
 							}, -- [8]
 							{
 								["ts"] = 1442806847.82509,
 								["amount"] = -13169,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 104992,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [9]
 							{
 								["ts"] = 1442806847.9321,
 								["amount"] = -12094,
-								["srcname"] = "Iron Infantry",
 								["hp"] = 104992,
 								["spellid"] = 88163,
+								["srcname"] = "Iron Infantry",
 							}, -- [10]
 							{
 								["ts"] = 1442806847.98611,
 								["amount"] = -201326,
-								["srcname"] = "Nitrogg Thundertower",
 								["hp"] = 104992,
 								["spellid"] = 88163,
+								["srcname"] = "Nitrogg Thundertower",
 							}, -- [11]
 							{
 								["spellname"] = "Jhedoner dies",
@@ -20713,24 +20699,24 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 1425,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 53652,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 287636,
 								["ts"] = 1442806845.35113,
 							}, -- [13]
 							{
 								["absorb"] = 0,
 								["amount"] = 428,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 53652,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 288064,
 								["ts"] = 1442806845.35114,
 							}, -- [14]
 							{
 								["absorb"] = 0,
 								["amount"] = 1426,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 53652,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 289490,
 								["ts"] = 1442806845.35115,
 							}, -- [15]
@@ -20744,65 +20730,65 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 143924,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 365100,
 								["ts"] = 1442806248.55201,
 							}, -- [1]
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 53652,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 365100,
 								["ts"] = 1442806248.55202,
 							}, -- [2]
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 53652,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 365100,
 								["ts"] = 1442806249.24003,
 							}, -- [3]
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 143924,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 365100,
 								["ts"] = 1442806249.76704,
 							}, -- [4]
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 53652,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 365100,
 								["ts"] = 1442806250.01505,
 							}, -- [5]
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 53652,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 365100,
 								["ts"] = 1442806250.71006,
 							}, -- [6]
 							{
 								["absorb"] = -10724,
 								["amount"] = -177719,
-								["srcname"] = "Railmaster Rocketspark",
 								["spellid"] = 162513,
+								["srcname"] = "Railmaster Rocketspark",
 								["hp"] = 187381,
 								["ts"] = 1442806250.75507,
 							}, -- [7]
 							{
 								["ts"] = 1442806250.88608,
 								["amount"] = -188444,
-								["srcname"] = "Railmaster Rocketspark",
 								["hp"] = 1,
 								["spellid"] = 162513,
+								["srcname"] = "Railmaster Rocketspark",
 							}, -- [8]
 							{
 								["spellname"] = "Jhedoner dies",
@@ -20813,48 +20799,48 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 53652,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 365100,
 								["ts"] = 1442806246.1951,
 							}, -- [10]
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 53652,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 365100,
 								["ts"] = 1442806246.19511,
 							}, -- [11]
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 53652,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 365100,
 								["ts"] = 1442806246.26812,
 							}, -- [12]
 							{
 								["ts"] = 1442806247.05213,
 								["amount"] = 0,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 53652,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 365100,
 								["absorb"] = 0,
 							}, -- [13]
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 143924,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 365100,
 								["ts"] = 1442806247.33414,
 							}, -- [14]
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
-								["srcname"] = "Jhedoner-Quel'Thalas",
 								["spellid"] = 53652,
+								["srcname"] = "Jhedoner-Quel'Thalas",
 								["hp"] = 365100,
 								["ts"] = 1442806247.74015,
 							}, -- [15]
@@ -20864,39 +20850,40 @@ SkadaPerCharDB = {
 					}, -- [3]
 				},
 				["damagetaken"] = 5804017,
-				["shielding"] = 3431288,
+				["deathlog"] = {
+				},
 				["id"] = "Player-1428-07B76084",
 				["maxhp"] = 365100,
 				["healing"] = 22417007,
 				["damagetakenspells"] = {
-					["Shrapnel Blast"] = {
+					["Suppressive Fire"] = {
 						["crushing"] = 0,
-						["id"] = 156303,
-						["damage"] = 1108792,
-						["max"] = 47972,
-						["name"] = "Shrapnel Blast",
-						["min"] = 20666,
+						["id"] = 161220,
+						["damage"] = 36366,
+						["max"] = 10716,
+						["name"] = "Suppressive Fire",
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 38,
+						["totalhits"] = 4,
 						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 28358,
+						["min"] = 4342,
+						["absorbed"] = 6253,
 					},
-					["Haymaker"] = {
+					["Blackrock Bomb"] = {
 						["crushing"] = 0,
-						["id"] = 164102,
-						["damage"] = 56168,
-						["max"] = 56168,
-						["name"] = "Haymaker",
-						["min"] = 56168,
+						["id"] = 164188,
+						["damage"] = 172429,
+						["max"] = 172429,
+						["name"] = "Blackrock Bomb",
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 172429,
 						["absorbed"] = 0,
 					},
 					["VX18-B Target Eliminator"] = {
@@ -20905,13 +20892,13 @@ SkadaPerCharDB = {
 						["damage"] = 721187,
 						["max"] = 188444,
 						["name"] = "VX18-B Target Eliminator",
-						["min"] = 166581,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 4,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 166581,
 						["absorbed"] = 32587,
 					},
 					["Lava Wreath"] = {
@@ -20920,13 +20907,13 @@ SkadaPerCharDB = {
 						["damage"] = 56303,
 						["max"] = 18525,
 						["name"] = "Lava Wreath",
-						["min"] = 3097,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 4,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 3097,
 						["absorbed"] = 14193,
 					},
 					["Slam"] = {
@@ -20935,29 +20922,29 @@ SkadaPerCharDB = {
 						["damage"] = 265122,
 						["max"] = 57772,
 						["name"] = "Slam",
-						["min"] = 44430,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 5,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 44430,
 						["absorbed"] = 12583,
 					},
-					["X21-01A Missile Barrage"] = {
+					["Shrapnel Blast"] = {
 						["crushing"] = 0,
-						["id"] = 162422,
-						["damage"] = 137583,
-						["max"] = 27751,
-						["name"] = "X21-01A Missile Barrage",
-						["min"] = 6497,
+						["id"] = 156303,
+						["damage"] = 1108792,
+						["max"] = 47972,
+						["name"] = "Shrapnel Blast",
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 7,
+						["totalhits"] = 38,
 						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 15014,
+						["min"] = 20666,
+						["absorbed"] = 28358,
 					},
 					["Blackrock Mortar"] = {
 						["crushing"] = 0,
@@ -20965,43 +20952,43 @@ SkadaPerCharDB = {
 						["damage"] = 350265,
 						["max"] = 88570,
 						["name"] = "Blackrock Mortar",
-						["min"] = 35489,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 6,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 35489,
 						["absorbed"] = 23581,
 					},
-					["Blackrock Grenade"] = {
+					["Iron Star Mk. III"] = {
 						["crushing"] = 0,
-						["id"] = 161153,
-						["damage"] = 125592,
-						["max"] = 43876,
-						["name"] = "Blackrock Grenade",
-						["min"] = 38666,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 3,
-						["resisted"] = 0,
+						["id"] = 163971,
+						["damage"] = 215474,
+						["max"] = 215474,
+						["name"] = "Iron Star Mk. III",
 						["glancing"] = 0,
-						["absorbed"] = 3205,
-					},
-					["Blackrock Bomb"] = {
-						["crushing"] = 0,
-						["id"] = 164188,
-						["damage"] = 172429,
-						["max"] = 172429,
-						["name"] = "Blackrock Bomb",
-						["min"] = 172429,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
+						["min"] = 215474,
+						["absorbed"] = 18390,
+					},
+					["Haymaker"] = {
+						["crushing"] = 0,
+						["id"] = 164102,
+						["damage"] = 56168,
+						["max"] = 56168,
+						["name"] = "Haymaker",
 						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 56168,
 						["absorbed"] = 0,
 					},
 					["Double Slash"] = {
@@ -21010,13 +20997,13 @@ SkadaPerCharDB = {
 						["damage"] = 134017,
 						["max"] = 107688,
 						["name"] = "Double Slash",
-						["min"] = 12356,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 3,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 12356,
 						["absorbed"] = 18923,
 					},
 					["Flametongue"] = {
@@ -21025,13 +21012,13 @@ SkadaPerCharDB = {
 						["damage"] = 140908,
 						["max"] = 18580,
 						["name"] = "Flametongue",
-						["min"] = 3056,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 13,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 3056,
 						["absorbed"] = 13716,
 					},
 					["Ignite"] = {
@@ -21040,13 +21027,13 @@ SkadaPerCharDB = {
 						["damage"] = 459566,
 						["max"] = 41902,
 						["name"] = "Ignite",
-						["min"] = 17958,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 15,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 17958,
 						["absorbed"] = 14077,
 					},
 					["50,000 Volts"] = {
@@ -21055,44 +21042,44 @@ SkadaPerCharDB = {
 						["damage"] = 134149,
 						["max"] = 134149,
 						["name"] = "50,000 Volts",
-						["min"] = 134149,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 134149,
 						["absorbed"] = 4508,
 					},
-					["Suppressive Fire"] = {
+					["X21-01A Missile Barrage"] = {
 						["crushing"] = 0,
-						["id"] = 161220,
-						["damage"] = 36366,
-						["max"] = 10716,
-						["name"] = "Suppressive Fire",
-						["min"] = 4342,
+						["id"] = 162422,
+						["damage"] = 137583,
+						["max"] = 27751,
+						["name"] = "X21-01A Missile Barrage",
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 4,
+						["totalhits"] = 7,
 						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 6253,
+						["min"] = 6497,
+						["absorbed"] = 15014,
 					},
-					["Iron Star Mk. III"] = {
+					["Blackrock Grenade"] = {
 						["crushing"] = 0,
-						["id"] = 163971,
-						["damage"] = 215474,
-						["max"] = 215474,
-						["name"] = "Iron Star Mk. III",
-						["min"] = 215474,
+						["id"] = 161153,
+						["damage"] = 125592,
+						["max"] = 43876,
+						["name"] = "Blackrock Grenade",
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 1,
+						["totalhits"] = 3,
 						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 18390,
+						["min"] = 38666,
+						["absorbed"] = 3205,
 					},
 					["Attack"] = {
 						["crushing"] = 0,
@@ -21100,13 +21087,13 @@ SkadaPerCharDB = {
 						["damage"] = 1690096,
 						["max"] = 201326,
 						["name"] = "Attack",
-						["min"] = 3766,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 8,
 						["blocked"] = 0,
 						["totalhits"] = 87,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 3766,
 						["absorbed"] = 161462,
 					},
 				},
@@ -21164,7 +21151,20 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Jhedoner",
 				["alertCount"] = 0,
-				["deathlog"] = {
+				["power"] = {
+					[9] = {
+						["spells"] = {
+							[148976] = 103,
+							[138248] = 27,
+						},
+						["amount"] = 130,
+					},
+					[0] = {
+						["spells"] = {
+							[88852] = 116320,
+						},
+						["amount"] = 116320,
+					},
 				},
 				["healingspells"] = {
 					["Daybreak"] = {
@@ -21394,10 +21394,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 5484930,
+				["done"] = 740289,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 740289,
 			},
 			["Railmaster Rocketspark"] = {
 				["players"] = {
@@ -21436,10 +21436,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 6944626,
+				["done"] = 2681850,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 2681850,
 			},
 			["Grom'kar Cinderseer"] = {
 				["players"] = {
@@ -21478,10 +21478,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 4961972,
+				["done"] = 1344885,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 1344885,
 			},
 			["Grom'kar Gunner"] = {
 				["players"] = {
@@ -21520,10 +21520,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 10979395,
+				["done"] = 7445300,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 7445300,
 			},
 			["Assault Cannon"] = {
 				["players"] = {
@@ -21562,10 +21562,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 12610367,
+				["done"] = 1027228,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 1027228,
 			},
 			["Grom'kar Hulk"] = {
 				["players"] = {
@@ -21604,10 +21604,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 4412424,
+				["done"] = 527198,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 527198,
 			},
 			["Iron Star Mk. III"] = {
 				["players"] = {
@@ -21646,10 +21646,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 1094863,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 1094863,
 			},
 			["Grom'kar Boomer"] = {
 				["players"] = {
@@ -21688,10 +21688,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 9832301,
+				["done"] = 1945043,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 1945043,
 			},
 			["Grom'kar Grenadier"] = {
 				["players"] = {
@@ -21730,10 +21730,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 7238136,
+				["done"] = 1348013,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 1348013,
 			},
 			["Grimrail Laborer"] = {
 				["players"] = {
@@ -21772,10 +21772,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 4303419,
+				["done"] = 336625,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 336625,
 			},
 			["Grimrail Bombardier"] = {
 				["players"] = {
@@ -21814,10 +21814,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 6335442,
+				["done"] = 1298687,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 1298687,
 			},
 			["Iron Infantry"] = {
 				["players"] = {
@@ -21856,10 +21856,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 18154349,
+				["done"] = 2534961,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 2534961,
 			},
 			["Borka the Brute"] = {
 				["players"] = {
@@ -21898,10 +21898,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 8082867,
+				["done"] = 2339010,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 2339010,
 			},
 			["Grimrail Overseer"] = {
 				["players"] = {
@@ -21940,10 +21940,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 10854583,
+				["done"] = 1521379,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 1521379,
 			},
 			["Nitrogg Thundertower"] = {
 				["players"] = {
@@ -21982,10 +21982,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 6596092,
+				["done"] = 2237338,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 2237338,
 			},
 		},
 		["power"] = {
