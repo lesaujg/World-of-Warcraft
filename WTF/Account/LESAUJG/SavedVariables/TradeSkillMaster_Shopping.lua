@@ -211,14 +211,14 @@ TradeSkillMaster_ShoppingDB = {
 			["treesizable"] = true,
 		},
 		["previousSearches"] = {
-			"arcane c", -- [1]
-			"sea scorpion segment/exact", -- [2]
-			"Healing Tonic/exact", -- [3]
-			"Luminous Shard/exact/x3", -- [4]
-			"critical strike", -- [5]
-			"Giant Dinosaur Bone/exact", -- [6]
-			"universal", -- [7]
-			"miscellaneous/mount", -- [8]
+			"critical strike", -- [1]
+			"universal", -- [2]
+			"arcane c", -- [3]
+			"Healing Tonic/exact", -- [4]
+			"sea scorpion segment/exact", -- [5]
+			"miscellaneous/mount", -- [6]
+			"Giant Dinosaur Bone/exact", -- [7]
+			"Luminous Shard/exact/x3", -- [8]
 			"temporal crystal/exact", -- [9]
 			"water", -- [10]
 			"heartb", -- [11]
@@ -312,7 +312,6 @@ TradeSkillMaster_ShoppingDB = {
 			"legion", -- [99]
 			"Sha Crystal/exact/x12", -- [100]
 		},
-		["sidebarBtn"] = 2,
 	},
 	["profileKeys"] = {
 		["Sanjuri - Sisters of Elune"] = "Sanjuri - Sisters of Elune",
