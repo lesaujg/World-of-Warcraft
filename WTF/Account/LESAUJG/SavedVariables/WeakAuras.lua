@@ -9379,7 +9379,8 @@ WeakAurasSaved = {
 			["constantFactor"] = "RADIUS",
 			["selfPoint"] = "BOTTOMRIGHT",
 			["borderOffset"] = 16,
-			["id"] = "G2_7_Hunter Trinkets Bar",
+			["additional_triggers"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -9394,6 +9395,13 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
+			["align"] = "RIGHT",
+			["rotation"] = 0,
+			["frameStrata"] = 1,
+			["width"] = 99.9999847412109,
+			["stagger"] = 0,
+			["radius"] = 200,
+			["numTriggers"] = 1,
 			["trigger"] = {
 				["subeventPrefix"] = "SPELL",
 				["type"] = "aura",
@@ -9406,16 +9414,8 @@ WeakAurasSaved = {
 				["event"] = "Health",
 				["unit"] = "player",
 			},
-			["rotation"] = 0,
-			["frameStrata"] = 1,
-			["width"] = 99.9999847412109,
-			["stagger"] = 0,
-			["radius"] = 200,
-			["numTriggers"] = 1,
-			["align"] = "RIGHT",
 			["height"] = 575.999923706055,
-			["additional_triggers"] = {
-			},
+			["id"] = "G2_7_Hunter Trinkets Bar",
 			["load"] = {
 				["difficulty"] = {
 					["multi"] = {
@@ -11040,7 +11040,7 @@ WeakAurasSaved = {
 			["anchorPoint"] = "CENTER",
 			["expanded"] = false,
 			["sort"] = "none",
-			["align"] = "LEFT",
+			["id"] = "G2_1_Hunter Avisos",
 			["space"] = 4,
 			["background"] = "None",
 			["actions"] = {
@@ -11067,6 +11067,16 @@ WeakAurasSaved = {
 				},
 			},
 			["borderOffset"] = 16,
+			["additional_triggers"] = {
+			},
+			["selfPoint"] = "TOPLEFT",
+			["align"] = "LEFT",
+			["rotation"] = 0,
+			["frameStrata"] = 1,
+			["width"] = 30,
+			["stagger"] = 0,
+			["backgroundInset"] = 0,
+			["numTriggers"] = 1,
 			["trigger"] = {
 				["subeventPrefix"] = "SPELL",
 				["type"] = "aura",
@@ -11078,16 +11088,6 @@ WeakAurasSaved = {
 				},
 				["event"] = "Health",
 				["unit"] = "player",
-			},
-			["selfPoint"] = "TOPLEFT",
-			["id"] = "G2_1_Hunter Avisos",
-			["rotation"] = 0,
-			["frameStrata"] = 1,
-			["width"] = 30,
-			["stagger"] = 0,
-			["backgroundInset"] = 0,
-			["numTriggers"] = 1,
-			["additional_triggers"] = {
 			},
 			["height"] = 404.000030517578,
 			["radius"] = 200,
@@ -13198,8 +13198,16 @@ WeakAurasSaved = {
 				},
 			},
 			["radius"] = 200,
-			["align"] = "CENTER",
+			["id"] = "G2_6_Hunter Trinkets",
 			["selfPoint"] = "BOTTOM",
+			["additional_triggers"] = {
+			},
+			["rotation"] = 0,
+			["frameStrata"] = 1,
+			["width"] = 30,
+			["stagger"] = 0,
+			["backgroundInset"] = 0,
+			["numTriggers"] = 1,
 			["trigger"] = {
 				["subeventPrefix"] = "SPELL",
 				["type"] = "aura",
@@ -13212,16 +13220,8 @@ WeakAurasSaved = {
 				["event"] = "Health",
 				["unit"] = "player",
 			},
-			["rotation"] = 0,
-			["frameStrata"] = 1,
-			["width"] = 30,
-			["stagger"] = 0,
-			["backgroundInset"] = 0,
-			["numTriggers"] = 1,
-			["additional_triggers"] = {
-			},
 			["height"] = 575.999923706055,
-			["id"] = "G2_6_Hunter Trinkets",
+			["align"] = "CENTER",
 			["load"] = {
 				["use_class"] = "false",
 				["role"] = {

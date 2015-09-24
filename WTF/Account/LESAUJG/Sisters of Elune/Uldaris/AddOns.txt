@@ -153,3 +153,5 @@ premade-filter: disabled
 TidyPlates: disabled
 PGFinder: disabled
 LFGFilter: disabled
+PremadeNotifier: enabled
+PremadeAge: enabled

@@ -28,10 +28,6 @@ AskMrRobotDb2 = {
 			},
 		},
 		["Uldaris - Sisters of Elune"] = {
-			["Logging"] = {
-				["LastDiff"] = 1,
-				["LastZone"] = "SMV Alliance Garrison Level 3",
-			},
 			["BankItems"] = {
 				"|cff0070dd|Hitem:37892:0:0:0:0:0:0:1245467008:100:103:0:0:0|h[Green Brewfest Stein]|h|r", -- [1]
 				"|cff1eff00|Hitem:44731:0:0:0:0:0:0:906283088:100:103:0:0:0|h[Bouquet of Ebon Roses]|h|r", -- [2]
@@ -52,6 +48,10 @@ AskMrRobotDb2 = {
 				"|cffffffff|Hitem:65906:0:0:0:0:0:0:0:100:103:0:0:0|h[Tabard of the Guardians of Hyjal]|h|r", -- [17]
 				"|cff1eff00|Hitem:18706:0:0:0:0:0:0:-1337081235:100:103:0:0:0|h[Arena Master]|h|r", -- [18]
 				"|cff1eff00|Hitem:25978:0:0:0:0:0:0:1225558204:100:103:0:0:0|h[Seth's Graphite Fishing Pole]|h|r", -- [19]
+			},
+			["Logging"] = {
+				["LastDiff"] = 0,
+				["LastZone"] = "Tanaan Jungle",
 			},
 			["Equipped"] = {
 				{
@@ -75,21 +75,22 @@ AskMrRobotDb2 = {
 				}, -- [1]
 				{
 					"|cff0070dd|Hitem:124580:0:0:0:0:0:0:0:100:105:0:0:3:163:647:653|h[Bladefang Hood of the Aurora]|h|r", -- [1]
-					"|cffa335ee|Hitem:113851:0:0:0:0:0:0:0:100:105:0:3:0|h[Reaver's Nose Ring]|h|r", -- [2]
-					"|cffa335ee|Hitem:128046:0:0:0:0:0:0:0:100:105:0:4:0|h[Shoulderpads of Wrought Destruction]|h|r", -- [3]
+					"|cffa335ee|Hitem:113598:0:0:0:0:0:0:0:100:105:0:3:0|h[Champion's Medallion]|h|r", -- [2]
+					"|cffa335ee|Hitem:128065:0:0:0:0:0:0:0:100:105:0:4:1:560|h[Fel-Crazed Pauldrons]|h|r", -- [3]
 					nil, -- [4]
 					"|cffa335ee|Hitem:113951:0:0:0:0:0:0:0:100:105:0:3:0|h[Unrendable Wolfhide Robes]|h|r", -- [5]
-					"|cffa335ee|Hitem:113964:0:0:0:0:0:0:0:100:105:0:3:0|h[Conductor's Multi-Pocket Girdle]|h|r", -- [6]
+					"|cffa335ee|Hitem:113907:0:0:0:0:0:0:0:100:105:0:3:0|h[Girdle of Unconquered Glory]|h|r", -- [6]
 					"|cffa335ee|Hitem:116178:0:0:0:0:0:0:0:100:105:0:13:3:51:525:535|h[Supple Leggings of the Peerless]|h|r", -- [7]
 					"|cffa335ee|Hitem:124572:0:0:0:0:0:0:0:100:105:0:0:3:138:651:653|h[Bladefang Boots of the Deft]|h|r", -- [8]
-					"|cffa335ee|Hitem:113634:0:0:0:0:0:0:0:100:105:0:3:1:560|h[Bracers of Spare Skin]|h|r", -- [9]
+					"|cff0070dd|Hitem:127665:0:0:0:0:0:0:0:100:105:0:0:0|h[Warpscaled Wristwraps]|h|r", -- [9]
 					"|cffa335ee|Hitem:128137:0:0:0:0:0:0:0:100:105:0:4:0|h[Ironpelt Mitts]|h|r", -- [10]
-					"|cffa335ee|Hitem:113877:0:0:0:0:0:0:0:100:105:0:3:0|h[Unexploded Explosive Shard]|h|r", -- [11]
-					"|cffa335ee|Hitem:113611:0:0:0:0:0:0:0:100:105:0:3:0|h[Flenser's Hookring]|h|r", -- [12]
-					"|cffa335ee|Hitem:128150:0:0:0:0:0:0:0:100:105:0:4:0|h[Pressure-Compressed Loop]|h|r", -- [13]
-					"|cffa335ee|Hitem:113985:0:0:0:0:0:0:0:100:105:0:3:1:563|h[Humming Blackiron Trigger]|h|r", -- [14]
-					"|cffa335ee|Hitem:116174:0:0:0:0:0:0:0:100:105:0:13:3:176:525:536|h[Nimble Burnished Cloak of the Merciless]|h|r", -- [15]
-					"|cffa335ee|Hitem:115332:0:0:0:0:0:0:0:100:105:0:1:1:132|h[Grandiose Polearm of the Deft]|h|r", -- [16]
+					"|cff0070dd|Hitem:124603:0:0:0:0:0:0:0:100:105:0:14:3:375:647:653|h[Shademire Seal of the Zealot]|h|r", -- [11]
+					"|cffa335ee|Hitem:115798:0:0:0:0:0:0:0:100:105:0:13:3:125:525:540|h[Whispering Taladite Ring of the Feverflare]|h|r", -- [12]
+					"|cffa335ee|Hitem:124546:0:0:0:0:0:0:0:100:105:0:3:0|h[Mark of Supreme Doom]|h|r", -- [13]
+					"|cff0070dd|Hitem:128220:0:0:0:0:0:0:0:100:105:0:0:0|h[Grannok's Lidless Eye]|h|r", -- [14]
+					"|cffa335ee|Hitem:127973:0:0:0:0:0:0:0:100:105:0:3:0|h[Nether-Touched Cloak]|h|r", -- [15]
+					"|cff0070dd|Hitem:124631:0:0:0:0:0:0:0:100:105:0:14:3:180:647:652|h[Baleful Scepter of the Merciless]|h|r", -- [16]
+					"|cffa335ee|Hitem:118851:0:0:0:0:0:0:0:100:105:0:0:0|h[Genesaur Braid]|h|r", -- [17]
 				}, -- [2]
 			},
 			["BankItemsAndCounts"] = {
@@ -1395,16 +1396,16 @@ AskMrRobotDb2 = {
 				[47737] = 1,
 				[120989] = 1,
 				[18713] = 1,
-				[15138] = 1,
+				[88487] = 5,
 				[21526] = 1,
 				[122583] = 3,
 				[33292] = 1,
-				[88487] = 5,
+				[15138] = 1,
 				[65141] = 1,
 				[109132] = 30,
 				[109136] = 5,
-				[114822] = 15,
 				[86574] = 1,
+				[114822] = 15,
 				[78851] = 1,
 				[113547] = 1,
 				[47610] = 1,
@@ -1530,44 +1531,9 @@ AskMrRobotDb2 = {
 			},
 		},
 		["Clothgar - Sisters of Elune"] = {
-			["BankItems"] = {
-				"|cff1eff00|Hitem:14155:0:0:0:0:0:0:882330269:1:0:0:0:0|h[Mooncloth Bag]|h|r", -- [1]
-				"|cff1eff00|Hitem:14155:0:0:0:0:0:0:682475689:1:0:0:0:0|h[Mooncloth Bag]|h|r", -- [2]
-				"|cff1eff00|Hitem:14155:0:0:0:0:0:0:865408267:1:0:0:0:0|h[Mooncloth Bag]|h|r", -- [3]
-				"|cff1eff00|Hitem:14155:0:0:0:0:0:0:747374928:1:0:0:0:0|h[Mooncloth Bag]|h|r", -- [4]
-				"|cff1eff00|Hitem:14155:0:0:0:0:0:0:256187201:1:0:0:0:0|h[Mooncloth Bag]|h|r", -- [5]
-				"|cff1eff00|Hitem:4500:0:0:0:0:0:0:0:1:0:0:0:0|h[Traveler's Backpack]|h|r", -- [6]
-				"|cffe6cc80|Hitem:122360:0:0:0:0:0:0:0:1:0:0:0:1:582|h[Tattered Dreadmist Mantle]|h|r", -- [7]
-				"|cffe6cc80|Hitem:122384:0:0:0:0:0:0:0:1:0:0:0:1:582|h[Tattered Dreadmist Robe]|h|r", -- [8]
-				"|cffffffff|Hitem:69864:0:0:0:0:0:0:1146714752:1:0:0:0:0|h[Tarnished Crown]|h|r", -- [9]
-				"|cff1eff00|Hitem:4500:0:0:0:0:0:0:0:1:0:0:0:0|h[Traveler's Backpack]|h|r", -- [10]
-				"|cff1eff00|Hitem:4500:0:0:0:0:0:0:0:1:0:0:0:0|h[Traveler's Backpack]|h|r", -- [11]
-				"|cff1eff00|Hitem:4500:0:0:0:0:0:0:0:1:0:0:0:0|h[Traveler's Backpack]|h|r", -- [12]
-				"|cffffffff|Hitem:4333:0:0:0:0:0:0:1622646144:1:0:0:0:0|h[Dark Silk Shirt]|h|r", -- [13]
-				"|cffffffff|Hitem:22276:0:0:0:0:0:0:1892441515:1:0:0:0:0|h[Lovely Red Dress]|h|r", -- [14]
-				"|cffffffff|Hitem:22279:0:0:0:0:0:0:1719768739:1:0:0:0:0|h[Lovely Black Dress]|h|r", -- [15]
-				"|cffffffff|Hitem:22279:0:0:0:0:0:0:-980511125:1:0:0:0:0|h[Lovely Black Dress]|h|r", -- [16]
-				"|cffffffff|Hitem:22279:0:0:0:0:0:0:-1149265835:1:0:0:0:0|h[Lovely Black Dress]|h|r", -- [17]
-				"|cffffffff|Hitem:19028:0:0:0:0:0:0:-1968061858:1:0:0:0:0|h[Elegant Dress]|h|r", -- [18]
-				"|cffffffff|Hitem:6835:0:0:0:0:0:0:1631240502:1:0:0:0:0|h[Black Tuxedo Pants]|h|r", -- [19]
-				"|cffffffff|Hitem:4330:0:0:0:0:0:0:462925536:1:0:0:0:0|h[Stylish Red Shirt]|h|r", -- [20]
-				"|cffffffff|Hitem:19028:0:0:0:0:0:0:924893788:1:0:0:0:0|h[Elegant Dress]|h|r", -- [21]
-				"|cffffffff|Hitem:6835:0:0:0:0:0:0:-1988378021:1:0:0:0:0|h[Black Tuxedo Pants]|h|r", -- [22]
-				"|cffffffff|Hitem:6833:0:0:0:0:0:0:1704378975:1:0:0:0:0|h[White Tuxedo Shirt]|h|r", -- [23]
-			},
 			["Logging"] = {
 				["LastDiff"] = 0,
 				["LastZone"] = "Eastern Kingdoms",
-			},
-			["Equipped"] = {
-				{
-					"|cffffffff|Hitem:45998:0:0:0:0:0:0:-790816284:1:0:0:0:0|h[Battered Jungle Hat]|h|r", -- [1]
-					"|cffffffff|Hitem:69863:0:0:0:0:0:0:1441199488:1:0:0:0:0|h[Golden Necklace]|h|r", -- [2]
-					[8] = "|cffffffff|Hitem:59:0:0:0:0:0:0:0:1:0:0:0:0|h[Acolyte's Shoes]|h|r",
-					[16] = "|cffffffff|Hitem:45861:0:0:0:0:0:0:-529786634:1:0:0:0:0|h[Diamond-Tipped Cane]|h|r",
-					[9] = "|cffffffff|Hitem:69865:0:0:0:0:0:0:1951996160:1:0:0:0:0|h[Gem Studded Bracelets]|h|r",
-					[7] = "|cffffffff|Hitem:10035:0:0:0:0:0:0:870556352:1:0:0:0:0|h[Tuxedo Pants]|h|r",
-				}, -- [1]
 			},
 			["BankItemsAndCounts"] = {
 				[42253] = 3,
@@ -1675,6 +1641,41 @@ AskMrRobotDb2 = {
 				[3864] = 2,
 				[19028] = 2,
 				[49362] = 1,
+			},
+			["Equipped"] = {
+				{
+					"|cffffffff|Hitem:45998:0:0:0:0:0:0:-790816284:1:0:0:0:0|h[Battered Jungle Hat]|h|r", -- [1]
+					"|cffffffff|Hitem:69863:0:0:0:0:0:0:1441199488:1:0:0:0:0|h[Golden Necklace]|h|r", -- [2]
+					[8] = "|cffffffff|Hitem:59:0:0:0:0:0:0:0:1:0:0:0:0|h[Acolyte's Shoes]|h|r",
+					[16] = "|cffffffff|Hitem:45861:0:0:0:0:0:0:-529786634:1:0:0:0:0|h[Diamond-Tipped Cane]|h|r",
+					[9] = "|cffffffff|Hitem:69865:0:0:0:0:0:0:1951996160:1:0:0:0:0|h[Gem Studded Bracelets]|h|r",
+					[7] = "|cffffffff|Hitem:10035:0:0:0:0:0:0:870556352:1:0:0:0:0|h[Tuxedo Pants]|h|r",
+				}, -- [1]
+			},
+			["BankItems"] = {
+				"|cff1eff00|Hitem:14155:0:0:0:0:0:0:882330269:1:0:0:0:0|h[Mooncloth Bag]|h|r", -- [1]
+				"|cff1eff00|Hitem:14155:0:0:0:0:0:0:682475689:1:0:0:0:0|h[Mooncloth Bag]|h|r", -- [2]
+				"|cff1eff00|Hitem:14155:0:0:0:0:0:0:865408267:1:0:0:0:0|h[Mooncloth Bag]|h|r", -- [3]
+				"|cff1eff00|Hitem:14155:0:0:0:0:0:0:747374928:1:0:0:0:0|h[Mooncloth Bag]|h|r", -- [4]
+				"|cff1eff00|Hitem:14155:0:0:0:0:0:0:256187201:1:0:0:0:0|h[Mooncloth Bag]|h|r", -- [5]
+				"|cff1eff00|Hitem:4500:0:0:0:0:0:0:0:1:0:0:0:0|h[Traveler's Backpack]|h|r", -- [6]
+				"|cffe6cc80|Hitem:122360:0:0:0:0:0:0:0:1:0:0:0:1:582|h[Tattered Dreadmist Mantle]|h|r", -- [7]
+				"|cffe6cc80|Hitem:122384:0:0:0:0:0:0:0:1:0:0:0:1:582|h[Tattered Dreadmist Robe]|h|r", -- [8]
+				"|cffffffff|Hitem:69864:0:0:0:0:0:0:1146714752:1:0:0:0:0|h[Tarnished Crown]|h|r", -- [9]
+				"|cff1eff00|Hitem:4500:0:0:0:0:0:0:0:1:0:0:0:0|h[Traveler's Backpack]|h|r", -- [10]
+				"|cff1eff00|Hitem:4500:0:0:0:0:0:0:0:1:0:0:0:0|h[Traveler's Backpack]|h|r", -- [11]
+				"|cff1eff00|Hitem:4500:0:0:0:0:0:0:0:1:0:0:0:0|h[Traveler's Backpack]|h|r", -- [12]
+				"|cffffffff|Hitem:4333:0:0:0:0:0:0:1622646144:1:0:0:0:0|h[Dark Silk Shirt]|h|r", -- [13]
+				"|cffffffff|Hitem:22276:0:0:0:0:0:0:1892441515:1:0:0:0:0|h[Lovely Red Dress]|h|r", -- [14]
+				"|cffffffff|Hitem:22279:0:0:0:0:0:0:1719768739:1:0:0:0:0|h[Lovely Black Dress]|h|r", -- [15]
+				"|cffffffff|Hitem:22279:0:0:0:0:0:0:-980511125:1:0:0:0:0|h[Lovely Black Dress]|h|r", -- [16]
+				"|cffffffff|Hitem:22279:0:0:0:0:0:0:-1149265835:1:0:0:0:0|h[Lovely Black Dress]|h|r", -- [17]
+				"|cffffffff|Hitem:19028:0:0:0:0:0:0:-1968061858:1:0:0:0:0|h[Elegant Dress]|h|r", -- [18]
+				"|cffffffff|Hitem:6835:0:0:0:0:0:0:1631240502:1:0:0:0:0|h[Black Tuxedo Pants]|h|r", -- [19]
+				"|cffffffff|Hitem:4330:0:0:0:0:0:0:462925536:1:0:0:0:0|h[Stylish Red Shirt]|h|r", -- [20]
+				"|cffffffff|Hitem:19028:0:0:0:0:0:0:924893788:1:0:0:0:0|h[Elegant Dress]|h|r", -- [21]
+				"|cffffffff|Hitem:6835:0:0:0:0:0:0:-1988378021:1:0:0:0:0|h[Black Tuxedo Pants]|h|r", -- [22]
+				"|cffffffff|Hitem:6833:0:0:0:0:0:0:1704378975:1:0:0:0:0|h[White Tuxedo Shirt]|h|r", -- [23]
 			},
 		},
 	},
