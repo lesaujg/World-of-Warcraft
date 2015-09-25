@@ -11,13 +11,13 @@ TukuiConfigShared = {
 			["Bags"] = {
 				["Enable"] = false,
 			},
-			["Raid"] = {
-				["ShowPets"] = false,
-			},
 			["ActionBars"] = {
 				["OwnShadowDanceBar"] = true,
 				["OwnWarriorStanceBar"] = true,
 				["HotKey"] = true,
+			},
+			["Raid"] = {
+				["ShowPets"] = false,
 			},
 		},
 		["Ghiaccioli"] = {
@@ -39,10 +39,7 @@ TukuiConfigShared = {
 		},
 		["Belrath"] = {
 		},
-		["Uldaris"] = {
-			["Bags"] = {
-				["Enable"] = false,
-			},
+		["Clothgar"] = {
 			["General"] = {
 				["UIScale"] = 0.64,
 			},
@@ -52,7 +49,10 @@ TukuiConfigShared = {
 		},
 		["Sanjuri"] = {
 		},
-		["Clothgar"] = {
+		["Uldaris"] = {
+			["Bags"] = {
+				["Enable"] = false,
+			},
 			["General"] = {
 				["UIScale"] = 0.64,
 			},

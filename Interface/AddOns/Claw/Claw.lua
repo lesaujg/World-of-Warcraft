@@ -39,7 +39,7 @@ local Target = {
 	hostile = false
 }
 local Ability = {}
-local tier18_2pc, tier18_4pc, tier17_2pc, tier17_4pc
+local tier18_2pc, tier18_4pc, tier17_2pc, tier17_4pc, t18_class_trinket
 local auras = {['player']={}, ['target'] ={}}
 
 local function InitializeVariables()
@@ -494,7 +494,7 @@ local function DetermineAbilityCat()
 		elseif Claw.pot and DraenicAgility:ready() and ((Berserk:remains() > 10 and (Target.timeToDie < 180 or Target.healthPercentage < 25)) or Target.timeToDie <= 40) then
 			ability.cd = DraenicAgility
 		-- actions+=/tigers_fury,if=(!buff.omen_of_clarity.react&energy.deficit>=60)|energy.deficit>=80|(t18_class_trinket&buff.berserk.up&buff.tigers_fury.down)	
-		elseif TigersFury:ready() and ((OmenOfClarity:down() and EnergyDeficit() >=60) or EnergyDeficit() >=80) then -- Add class trinket
+		elseif TigersFury:ready() and ((OmenOfClarity:down() and EnergyDeficit() >=60) or EnergyDeficit() >=80 or (t18_class_trinket and Berserk:up() and TigersFury:down())) then
 			ability.cd = TigersFury
 		-- actions+=/incarnation,if=cooldown.berserk.remains<10&energy.time_to_max>1
 		elseif KingOfTheJungle.known and KingOfTheJungle:ready() and (Berserk:ready(10) and EnergyTimeToMax() > 1) then
@@ -926,7 +926,7 @@ function events:PLAYER_ENTERING_WORLD()
 end
 
 --[[
-Check for T17/T18 set bonus 
+Check for T17/T18 set bonus and T18 class trinket 
 --]]
 function events:PLAYER_EQUIPMENT_CHANGED()
 	local count = 0
@@ -949,6 +949,7 @@ function events:PLAYER_EQUIPMENT_CHANGED()
 	end
 	tier18_2pc = count >= 2
 	tier18_4pc = count >= 4
+	t18_class_trinket=IsEquippedItem(124514)
 end
 
 --[[
@@ -1262,31 +1263,39 @@ function SlashCmdList.Claw(msg, editbox)
 		clawInterruptPanel:SetPoint('TOPLEFT', clawPanel, 'TOPRIGHT', 16, 25)
 		print('Claw - Position has been reset to default')
 	else
-		print('Claw (version: |cFFFFD000' .. GetAddOnMetadata('Claw', 'Version') .. '|r) - Commands:')
-		print('  /claw locked |cFF00C000on|r/|cFFC00000off|r - lock the Claw UI so that it can\'t be moved')
-		print('  /claw scale |cFFFFD000prev|r/|cFFFFD000main|r/|cFFFFD000cd|r/|cFFFFD000interrupt|r |cFFFFD000[number]|r - adjust the scale of the Claw UI icons')
-		print('  /claw alpha |cFFFFD000[percent]|r - adjust the transparency of the Claw UI icons')
-		print('  /claw frequency |cFFFFD000[number]|r - set the calculation frequency')
-		print('  /claw glow |cFFFFD000main|r/|cFFFFD000cd|r/|cFFFFD000interrupt|r/|cFFFFD000blizzard|r |cFF00C000on|r/|cFFC00000off|r - glowing ability buttons on action bars')
-		print('  /claw previous |cFF00C000on|r/|cFFC00000off|r - previous ability icon')
-		print('  /claw always |cFF00C000on|r/|cFFC00000off|r - show the Claw UI without a target')
-		print('  /claw cd |cFF00C000on|r/|cFFC00000off|r - use Claw for cooldown management')
-		print('  /claw gcd |cFF00C000on|r/|cFFC00000off|r - show global cooldown swipe on main ability icon')
-		print('  /claw dim |cFF00C000on|r/|cFFC00000off|r - dim main ability icon when you don\'t have enough resources')
-		print('  /claw miss |cFF00C000on|r/|cFFC00000off|r - red border around previous ability when it fails to hit')
-		print('  /claw aoe |cFF00C000on|r/|cFFC00000off|r - allow clicking main ability icon to toggle amount of targets (disables moving)')
-		print('  /claw bossonly |cFF00C000on|r/|cFFC00000off|r - only use cooldowns on bosses')
-		print('  /claw hidespec |cFFFFD0000|r/|cFFFFD0001|r/|cFFFFD0002|r - hide Claw in specialization 1 or 2 (0 is neither)')
-		print('  /claw interrupt |cFF00C000on|r/|cFFC00000off|r - show an icon for interruptable spells')
-		print('  /claw pot |cFF00C000on|r/|cFFC00000off|r - show Draenic Agility potions in cooldown UI')
-		print('  /claw motw |cFF00C000on|r/|cFFC00000off|r - use Mark of the Wild')
-		print('  /claw prowl |cFF00C000on|r/|cFFC00000off|r - start combat with Prowl (cat only)')
-		print('  /claw pretouch |cFF00C000on|r/|cFFC00000off|r - hard cast Healing Touch pre-combat with Bloodtalons (cat only)')
-		print('  /claw thrash |cFF00C000on|r/|cFFC00000off|r - use Thrash in single target mode (cat only)')
-		print('  /claw tfberserk |cFF00C000on|r/|cFFC00000off|r - Tiger\'s Fury is macro\'d to Berserk (cat only)')
-		print('  /claw survival |cFF00C000on|r/|cFFC00000off|r - survival mode (bear only)')
-		print('  /claw react |cFFFFD000[number]|r - set the player reaction time, which will be added on top of dot refreshes (default is 0.2 seconds)')
-		print('  /claw |cFFFFD000reset|r - reset the location of the Claw UI to default')
+		print('Claw (version: |cFFFFD000' .. GetAddOnMetadata('Claw', 'Version') .. '|r) - Commands:') 
+		print(' /claw locked |cFF00C000on|r/|cFFC00000off|r - lock the Claw UI so that it can\'t be moved: ' .. (Claw.locked and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' /claw scale |cFFFFD000prev|r/|cFFFFD000main|r/|cFFFFD000cd|r/|cFFFFD000interrupt|r |cFFFFD000[number]|r - adjust the scale of the Claw UI icons') 
+		print(' Claw - Previous ability icon scale set to: |cFFFFD000' .. Claw.scale_previous .. '|r times') 
+		print(' Claw - Main ability icon scale set to: |cFFFFD000' .. Claw.scale_main .. '|r times') 
+		print(' Claw - Cooldown ability icon scale set to: |cFFFFD000' .. Claw.scale_cooldown .. '|r times') 
+		print(' Claw - Interrupt ability icon scale set to: |cFFFFD000' .. Claw.scale_interrupt .. '|r times') 
+		print(' /claw alpha |cFFFFD000[percent]|r - adjust the transparency of the Claw UI icons: |cFFFFD000' .. Claw.alpha * 100 .. '%|r') 
+		print(' /claw frequency |cFFFFD000[number]|r - set the calculation frequency (default is every 0.05 seconds): |cFFFFD000' .. Claw.frequency .. '|r seconds') 
+		print(' /claw glow |cFFFFD000main|r/|cFFFFD000cd|r/|cFFFFD000interrupt|r/|cFFFFD000blizzard|r |cFF00C000on|r/|cFFC00000off|r - glowing ability buttons on action bars') 
+		print(' Claw - Glowing ability buttons (main icon): ' .. (Claw.glow_main and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' Claw - Glowing ability buttons (cooldown icon): ' .. (Claw.glow_cooldown and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' Claw - Glowing ability buttons (interrupt icon): ' .. (Claw.glow_interrupt and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' Claw - Blizzard default proc glow: ' .. (Claw.glow_blizzard and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' /claw previous |cFF00C000on|r/|cFFC00000off|r - previous ability icon: ' .. (Claw.previous and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' /claw always |cFF00C000on|r/|cFFC00000off|r - show the Claw UI without a target: ' .. (Claw.always_on and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' /claw cd |cFF00C000on|r/|cFFC00000off|r - use Claw for cooldown management: ' .. (Claw.cooldown and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' /claw gcd |cFF00C000on|r/|cFFC00000off|r - show global cooldown swipe on main ability icon: ' .. (Claw.gcd and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' /claw dim |cFF00C000on|r/|cFFC00000off|r - dim main ability icon when you don\'t have enough resources: ' .. (Claw.dimmer and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' /claw miss |cFF00C000on|r/|cFFC00000off|r - red border around previous ability when it fails to hit: ' .. (Claw.miss_effect and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' /claw aoe |cFF00C000on|r/|cFFC00000off|r - allow clicking main ability icon to toggle amount of targets (disables moving: )' .. (Claw.aoe and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' /claw bossonly |cFF00C000on|r/|cFFC00000off|r - only use cooldowns on bosses: ' .. (Claw.boss_only and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' /claw hidespec |cFFFFD0000|r/|cFFFFD0001|r/|cFFFFD0002|r - hide Claw in specialization 1 or 2 (0 is neither): |cFFFFD000' .. (Claw.hide_spec == 0 and 'None' or Claw.hide_spec)) 
+		print(' /claw interrupt |cFF00C000on|r/|cFFC00000off|r - show an icon for interruptable spells: ' .. (Claw.interrupt and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' /claw pot |cFF00C000on|r/|cFFC00000off|r - show Draenic Agility potions in cooldown UI: ' .. (Claw.pot and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' /claw motw |cFF00C000on|r/|cFFC00000off|r - use Mark of the Wild: ' .. (Claw.mark_of_the_wild and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' /claw prowl |cFF00C000on|r/|cFFC00000off|r - start combat with Prowl (cat only): '.. (Claw.prowl and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' /claw pretouch |cFF00C000on|r/|cFFC00000off|r - hard cast Healing Touch pre-combat with Bloodtalons (cat only): ' .. (Claw.pre_touch and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' /claw thrash |cFF00C000on|r/|cFFC00000off|r - use Thrash in single target mode (cat only): ' .. (Claw.single_thrash and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' /claw tfberserk |cFF00C000on|r/|cFFC00000off|r - Tiger\'s Fury is macro\'d to Berserk (cat only): '.. (Claw.tigersfury_berserk and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' /claw survival |cFF00C000on|r/|cFFC00000off|r - survival mode (bear only): ' .. (Claw.survival and '|cFF00C000On' or '|cFFC00000Off')) 
+		print(' /claw react |cFFFFD000[number]|r - set the player reaction time, which will be added on top of dot refreshes (default is 0.2 seconds): |cFFFFD000'.. Claw.react .. '|r seconds') 
+		print(' /claw |cFFFFD000reset|r - reset the location of the Claw UI to default')
 		if Basic_Resources then
 			print('For Basic Resources commands, please type |cFFFFD000/bres')
 		end

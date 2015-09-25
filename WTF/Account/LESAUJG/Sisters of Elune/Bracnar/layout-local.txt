@@ -1,11 +1,4 @@
 Version: 1
-Frame: BaudManifestDisplay1
-FrameLevel: 34
-Anchor: BOTTOMRIGHT
-X: -194
-Y: 130
-W: 250
-H: 417
 Frame: DBMMinimapButton
 FrameLevel: 3
 Anchor: TOPRIGHT
@@ -13,13 +6,6 @@ X: -136
 Y: -115
 W: 32
 H: 32
-Frame: TSMMainFrame1
-FrameLevel: 31
-Anchor: BOTTOM
-X: 35
-Y: -37
-W: 985
-H: 679
 Frame: _NPCScanButton
 FrameLevel: 1
 Anchor: BOTTOM
@@ -27,3 +13,10 @@ X: 0
 Y: 128
 W: 150
 H: 42
+Frame: AmrUiFrame1
+FrameLevel: 1
+Anchor: TOP
+X: 180
+Y: -65
+W: 1000
+H: 700

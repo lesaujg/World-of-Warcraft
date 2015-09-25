@@ -1,0 +1,13 @@
+tag 6.2.5
+12347616f05b9686f43228fd586726590ee76e54
+Mike "Xodiv" Battersby <mib@post.com>
+2015-09-18 08:01:40 +1000
+
+Update mount list on earning achievements.
+Some achievements (e.g., Draenor Pathfinder) award mounts.
+
+
+--------------------
+
+Mike "Xodiv" Battersby:
+	- Some achievement award mounts.

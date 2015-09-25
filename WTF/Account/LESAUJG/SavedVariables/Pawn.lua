@@ -93,21 +93,6 @@ PawnCommon = {
 		},
 		["\"Wowhead\":PaladinTank"] = {
 			["PerCharacterOptions"] = {
-				["Herbinator-Sisters of Elune"] = {
-					["Visible"] = true,
-					["BestItems"] = {
-						["INVTYPE_LEGS"] = {
-							0.366771159874608, -- [1]
-							"item:44:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_FEET"] = {
-							0.244514106583072, -- [1]
-							"item:43:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
-							0, -- [3]
-						},
-					},
-				},
 				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
@@ -176,6 +161,21 @@ PawnCommon = {
 						},
 					},
 				},
+				["Herbinator-Sisters of Elune"] = {
+					["Visible"] = true,
+					["BestItems"] = {
+						["INVTYPE_LEGS"] = {
+							0.366771159874608, -- [1]
+							"item:44:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_FEET"] = {
+							0.244514106583072, -- [1]
+							"item:43:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+					},
+				},
 			},
 			["Color"] = "f58cba",
 			["LocalizedName"] = "Paladin: tank",
@@ -202,17 +202,22 @@ PawnCommon = {
 			["Values"] = {
 				["CritRating"] = 0.5,
 				["Dps"] = 0.76,
-				["Agility"] = 1,
+				["Multistrike"] = 0.52,
 				["HasteRating"] = 0.53,
 				["MasteryRating"] = 0.52,
 				["Versatility"] = 0.5,
-				["Multistrike"] = 0.52,
+				["Agility"] = 1,
 				["Ap"] = 0.9,
 			},
 			["PerCharacterOptions"] = {
 				["Bracnar-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
+						["INVTYPE_LEGS"] = {
+							552.27, -- [1]
+							"item:124301:0:0:0:0:0:0:0:0:254:0:3:1:563:0:0:0", -- [2]
+							0, -- [3]
+						},
 						["INVTYPE_HEAD"] = {
 							518.16, -- [1]
 							"item:124296:0:0:0:0:0:0:0:0:254:0:3:1:41:0:0:0", -- [2]
@@ -236,11 +241,6 @@ PawnCommon = {
 						["INVTYPE_WEAPONMAINHAND"] = {
 							9.2, -- [1]
 							"item:19019:0:0:0:0:0:0:610963968:0:255:0:0:0:0:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_LEGS"] = {
-							552.27, -- [1]
-							"item:124301:0:0:0:0:0:0:0:0:254:0:3:1:563:0:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_2HWEAPON"] = {
@@ -277,8 +277,8 @@ PawnCommon = {
 							475.5, -- [1]
 							"item:124636:0:0:0:0:0:0:0:0:254:0:11:2:650:626:0:0", -- [2]
 							0, -- [3]
-							464, -- [4]
-							"item:124636:0:0:0:0:0:0:0:0:254:0:11:2:649:625:0:0", -- [5]
+							475.5, -- [4]
+							"item:124636:0:0:0:0:0:0:0:0:253:0:11:2:650:626:0:0", -- [5]
 							0, -- [6]
 						},
 						["INVTYPE_CLOAK"] = {
@@ -293,11 +293,6 @@ PawnCommon = {
 		},
 		["\"Wowhead\":PaladinHoly"] = {
 			["PerCharacterOptions"] = {
-				["Herbinator-Sisters of Elune"] = {
-					["Visible"] = true,
-					["BestItems"] = {
-					},
-				},
 				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
@@ -364,6 +359,11 @@ PawnCommon = {
 							"item:122260:0:0:0:0:0:0:0:0:70:0:0:1:583:0:0:0", -- [2]
 							99, -- [3]
 						},
+					},
+				},
+				["Herbinator-Sisters of Elune"] = {
+					["Visible"] = true,
+					["BestItems"] = {
 					},
 				},
 			},
@@ -605,17 +605,22 @@ PawnCommon = {
 			["Values"] = {
 				["CritRating"] = 0.65,
 				["Dps"] = 2.5,
-				["Agility"] = 1,
+				["Multistrike"] = 0.6,
 				["HasteRating"] = 0.43,
 				["MasteryRating"] = 0.55,
 				["Versatility"] = 0.56,
-				["Multistrike"] = 0.6,
+				["Agility"] = 1,
 				["Ap"] = 0.9,
 			},
 			["PerCharacterOptions"] = {
 				["Bracnar-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
+						["INVTYPE_LEGS"] = {
+							611.75, -- [1]
+							"item:124301:0:0:0:0:0:0:0:0:254:0:3:1:563:0:0:0", -- [2]
+							0, -- [3]
+						},
 						["INVTYPE_HEAD"] = {
 							542.35, -- [1]
 							"item:124296:0:0:0:0:0:0:0:0:254:0:3:1:41:0:0:0", -- [2]
@@ -641,17 +646,12 @@ PawnCommon = {
 							"item:19019:0:0:0:0:0:0:610963968:0:255:0:0:0:0:0:0:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_LEGS"] = {
-							611.75, -- [1]
-							"item:124301:0:0:0:0:0:0:0:0:254:0:3:1:563:0:0:0", -- [2]
-							0, -- [3]
-						},
 						["INVTYPE_FINGER"] = {
 							516.12, -- [1]
 							"item:124636:0:0:0:0:0:0:0:0:254:0:11:2:650:626:0:0", -- [2]
 							0, -- [3]
-							503.63, -- [4]
-							"item:124636:0:0:0:0:0:0:0:0:254:0:11:2:649:625:0:0", -- [5]
+							516.12, -- [4]
+							"item:124636:0:0:0:0:0:0:0:0:253:0:11:2:650:626:0:0", -- [5]
 							0, -- [6]
 						},
 						["INVTYPE_HAND"] = {
@@ -944,11 +944,6 @@ PawnCommon = {
 		},
 		["\"Wowhead\":PaladinRetribution"] = {
 			["PerCharacterOptions"] = {
-				["Herbinator-Sisters of Elune"] = {
-					["Visible"] = true,
-					["BestItems"] = {
-					},
-				},
 				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
@@ -1015,6 +1010,11 @@ PawnCommon = {
 							"item:122260:0:0:0:0:0:0:0:0:70:0:0:1:583:0:0:0", -- [2]
 							99, -- [3]
 						},
+					},
+				},
+				["Herbinator-Sisters of Elune"] = {
+					["Visible"] = true,
+					["BestItems"] = {
 					},
 				},
 			},
@@ -1363,17 +1363,22 @@ PawnCommon = {
 			["Values"] = {
 				["CritRating"] = 0.49,
 				["Dps"] = 1,
-				["Agility"] = 1,
+				["Multistrike"] = 0.59,
 				["HasteRating"] = 0.42,
 				["MasteryRating"] = 0.41,
 				["Versatility"] = 0.5,
-				["Multistrike"] = 0.59,
+				["Agility"] = 1,
 				["Ap"] = 0.9,
 			},
 			["PerCharacterOptions"] = {
 				["Bracnar-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
+						["INVTYPE_LEGS"] = {
+							564.78, -- [1]
+							"item:124301:0:0:0:0:0:0:0:0:254:0:3:1:563:0:0:0", -- [2]
+							0, -- [3]
+						},
 						["INVTYPE_HEAD"] = {
 							516.3, -- [1]
 							"item:124296:0:0:0:0:0:0:0:0:254:0:3:1:41:0:0:0", -- [2]
@@ -1397,11 +1402,6 @@ PawnCommon = {
 						["INVTYPE_WEAPONMAINHAND"] = {
 							11.1578947368421, -- [1]
 							"item:19019:0:0:0:0:0:0:610963968:0:255:0:0:0:0:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_LEGS"] = {
-							564.78, -- [1]
-							"item:124301:0:0:0:0:0:0:0:0:254:0:3:1:563:0:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_2HWEAPON"] = {
@@ -1438,8 +1438,8 @@ PawnCommon = {
 							473.5, -- [1]
 							"item:124636:0:0:0:0:0:0:0:0:254:0:11:2:650:626:0:0", -- [2]
 							0, -- [3]
-							462.05, -- [4]
-							"item:124636:0:0:0:0:0:0:0:0:254:0:11:2:649:625:0:0", -- [5]
+							473.5, -- [4]
+							"item:124636:0:0:0:0:0:0:0:0:253:0:11:2:650:626:0:0", -- [5]
 							0, -- [6]
 						},
 						["INVTYPE_CLOAK"] = {
