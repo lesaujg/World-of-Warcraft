@@ -211,11 +211,11 @@ TradeSkillMaster_ShoppingDB = {
 			["selected"] = "2Buy Clothgar",
 		},
 		["previousSearches"] = {
-			"Giant Dinosaur Bone/exact", -- [1]
-			"arcane c", -- [2]
-			"universal", -- [3]
-			"critical strike", -- [4]
-			"miscellaneous/mount", -- [5]
+			"miscellaneous/mount", -- [1]
+			"Giant Dinosaur Bone/exact", -- [2]
+			"arcane c", -- [3]
+			"universal", -- [4]
+			"critical strike", -- [5]
 			"Healing Tonic/exact", -- [6]
 			"sea scorpion segment/exact", -- [7]
 			"Luminous Shard/exact/x3", -- [8]
@@ -312,6 +312,7 @@ TradeSkillMaster_ShoppingDB = {
 			"legion", -- [99]
 			"Sha Crystal/exact/x12", -- [100]
 		},
+		["sidebarBtn"] = 2,
 	},
 	["profileKeys"] = {
 		["Sanjuri - Sisters of Elune"] = "Sanjuri - Sisters of Elune",
