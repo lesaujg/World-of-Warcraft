@@ -143,6 +143,21 @@ SkadaPerCharDB = {
 							["min"] = 8645,
 							["absorbed"] = 0,
 						},
+						["Dark Binding"] = {
+							["crushing"] = 0,
+							["id"] = 183194,
+							["damage"] = 17696,
+							["max"] = 1545,
+							["name"] = "Dark Binding",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 12,
+							["resisted"] = 0,
+							["min"] = 1404,
+							["absorbed"] = 0,
+						},
 						["Felfire Slam"] = {
 							["crushing"] = 0,
 							["id"] = 183214,
@@ -171,21 +186,6 @@ SkadaPerCharDB = {
 							["totalhits"] = 1,
 							["resisted"] = 0,
 							["min"] = 17474,
-							["absorbed"] = 0,
-						},
-						["Dark Binding"] = {
-							["crushing"] = 0,
-							["id"] = 183194,
-							["damage"] = 17696,
-							["max"] = 1545,
-							["name"] = "Dark Binding",
-							["glancing"] = 0,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 12,
-							["resisted"] = 0,
-							["min"] = 1404,
 							["absorbed"] = 0,
 						},
 					},
@@ -937,6 +937,21 @@ SkadaPerCharDB = {
 					["maxhp"] = 268560,
 					["healing"] = 20872,
 					["damagetakenspells"] = {
+						["Shadow Eruption"] = {
+							["crushing"] = 0,
+							["id"] = 170181,
+							["damage"] = 67223,
+							["max"] = 25831,
+							["name"] = "Shadow Eruption",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 3,
+							["resisted"] = 0,
+							["min"] = 20196,
+							["absorbed"] = 0,
+						},
 						["Felfire Slam"] = {
 							["crushing"] = 0,
 							["id"] = 183214,
@@ -965,21 +980,6 @@ SkadaPerCharDB = {
 							["totalhits"] = 1,
 							["resisted"] = 0,
 							["min"] = 4002,
-							["absorbed"] = 0,
-						},
-						["Shadow Eruption"] = {
-							["crushing"] = 0,
-							["id"] = 170181,
-							["damage"] = 67223,
-							["max"] = 25831,
-							["name"] = "Shadow Eruption",
-							["glancing"] = 0,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 3,
-							["resisted"] = 0,
-							["min"] = 20196,
 							["absorbed"] = 0,
 						},
 					},
@@ -1629,19 +1629,19 @@ SkadaPerCharDB = {
 					["maxhp"] = 354120,
 					["healing"] = 136709,
 					["damagetakenspells"] = {
-						["Fel Sear"] = {
+						["Withering Roar"] = {
 							["crushing"] = 0,
-							["id"] = 184233,
-							["damage"] = 10882,
-							["max"] = 5457,
-							["name"] = "Fel Sear",
+							["id"] = 183270,
+							["damage"] = 6750,
+							["max"] = 3438,
+							["name"] = "Withering Roar",
 							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["min"] = 5425,
+							["min"] = 3312,
 							["absorbed"] = 0,
 						},
 						["Fiery Slash"] = {
@@ -1659,6 +1659,21 @@ SkadaPerCharDB = {
 							["min"] = 525,
 							["absorbed"] = 0,
 						},
+						["Fel Sear"] = {
+							["crushing"] = 0,
+							["id"] = 184233,
+							["damage"] = 10882,
+							["max"] = 5457,
+							["name"] = "Fel Sear",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 2,
+							["resisted"] = 0,
+							["min"] = 5425,
+							["absorbed"] = 0,
+						},
 						["Shadow Eruption"] = {
 							["crushing"] = 0,
 							["id"] = 170181,
@@ -1672,21 +1687,6 @@ SkadaPerCharDB = {
 							["totalhits"] = 4,
 							["resisted"] = 0,
 							["min"] = 16239,
-							["absorbed"] = 0,
-						},
-						["Withering Roar"] = {
-							["crushing"] = 0,
-							["id"] = 183270,
-							["damage"] = 6750,
-							["max"] = 3438,
-							["name"] = "Withering Roar",
-							["glancing"] = 0,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 2,
-							["resisted"] = 0,
-							["min"] = 3312,
 							["absorbed"] = 0,
 						},
 					},
@@ -2121,6 +2121,21 @@ SkadaPerCharDB = {
 					["maxhp"] = 382740,
 					["healing"] = 24204,
 					["damagetakenspells"] = {
+						["Withering Roar"] = {
+							["crushing"] = 0,
+							["id"] = 183270,
+							["damage"] = 10405,
+							["max"] = 3549,
+							["name"] = "Withering Roar",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 3,
+							["resisted"] = 0,
+							["min"] = 3371,
+							["absorbed"] = 0,
+						},
 						["Enveloping Shadows"] = {
 							["crushing"] = 0,
 							["id"] = 170178,
@@ -2149,21 +2164,6 @@ SkadaPerCharDB = {
 							["totalhits"] = 1,
 							["resisted"] = 0,
 							["min"] = 16130,
-							["absorbed"] = 0,
-						},
-						["Withering Roar"] = {
-							["crushing"] = 0,
-							["id"] = 183270,
-							["damage"] = 10405,
-							["max"] = 3549,
-							["name"] = "Withering Roar",
-							["glancing"] = 0,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 3,
-							["resisted"] = 0,
-							["min"] = 3371,
 							["absorbed"] = 0,
 						},
 					},
@@ -2762,21 +2762,6 @@ SkadaPerCharDB = {
 					["maxhp"] = 375240,
 					["healing"] = 0,
 					["damagetakenspells"] = {
-						["Enveloping Shadows"] = {
-							["crushing"] = 0,
-							["id"] = 170178,
-							["damage"] = 16184,
-							["max"] = 16184,
-							["name"] = "Enveloping Shadows",
-							["glancing"] = 0,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 1,
-							["resisted"] = 0,
-							["min"] = 16184,
-							["absorbed"] = 0,
-						},
 						["Withering Roar"] = {
 							["crushing"] = 0,
 							["id"] = 183270,
@@ -2805,6 +2790,21 @@ SkadaPerCharDB = {
 							["totalhits"] = 1,
 							["resisted"] = 0,
 							["min"] = 4297,
+							["absorbed"] = 0,
+						},
+						["Enveloping Shadows"] = {
+							["crushing"] = 0,
+							["id"] = 170178,
+							["damage"] = 16184,
+							["max"] = 16184,
+							["name"] = "Enveloping Shadows",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 1,
+							["resisted"] = 0,
+							["min"] = 16184,
 							["absorbed"] = 0,
 						},
 						["Attack"] = {
@@ -3026,6 +3026,21 @@ SkadaPerCharDB = {
 					["maxhp"] = 334200,
 					["healing"] = 161578,
 					["damagetakenspells"] = {
+						["Enveloping Shadows"] = {
+							["crushing"] = 0,
+							["id"] = 170178,
+							["damage"] = 11519,
+							["max"] = 11519,
+							["name"] = "Enveloping Shadows",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 1,
+							["resisted"] = 0,
+							["min"] = 11519,
+							["absorbed"] = 0,
+						},
 						["Fel Sear"] = {
 							["crushing"] = 0,
 							["id"] = 184233,
@@ -3054,21 +3069,6 @@ SkadaPerCharDB = {
 							["totalhits"] = 1,
 							["resisted"] = 0,
 							["min"] = 20846,
-							["absorbed"] = 0,
-						},
-						["Enveloping Shadows"] = {
-							["crushing"] = 0,
-							["id"] = 170178,
-							["damage"] = 11519,
-							["max"] = 11519,
-							["name"] = "Enveloping Shadows",
-							["glancing"] = 0,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 1,
-							["resisted"] = 0,
-							["min"] = 11519,
 							["absorbed"] = 0,
 						},
 					},
@@ -3670,11 +3670,12 @@ SkadaPerCharDB = {
 							["class"] = "HUNTER",
 							["shielding"] = 0,
 						},
-						["Player-5-0A0DBFD1"] = {
-							["shielding"] = 0,
-							["role"] = "NONE",
-							["name"] = "Khrøme-Proudmoore",
+						["Player-3675-06E404FD"] = {
+							["role"] = "HEALER",
+							["name"] = "Effy-MoonGuard",
 							["amount"] = 82,
+							["class"] = "PRIEST",
+							["shielding"] = 0,
 						},
 						["Player-1184-0A0C7021"] = {
 							["role"] = "HEALER",
@@ -3683,18 +3684,17 @@ SkadaPerCharDB = {
 							["class"] = "PRIEST",
 							["shielding"] = 0,
 						},
+						["Player-5-0A0DBFD1"] = {
+							["shielding"] = 0,
+							["role"] = "NONE",
+							["name"] = "Khrøme-Proudmoore",
+							["amount"] = 82,
+						},
 						["Player-47-06A409FF"] = {
 							["role"] = "DAMAGER",
 							["name"] = "Lopeppeta-Shu'halo",
 							["amount"] = 6777,
 							["class"] = "MAGE",
-							["shielding"] = 0,
-						},
-						["Player-3675-06E404FD"] = {
-							["role"] = "HEALER",
-							["name"] = "Effy-MoonGuard",
-							["amount"] = 82,
-							["class"] = "PRIEST",
 							["shielding"] = 0,
 						},
 						["Player-3675-06E409A8"] = {
@@ -5051,106 +5051,20 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 55152,
-				["power"] = {
-					{
-						["spells"] = {
-							[23881] = 20,
-							[12880] = 10,
-						},
-						["amount"] = 30,
-					}, -- [1]
-				},
-				["id"] = "Player-3693-075C4C55",
-				["maxhp"] = 345960,
-				["healing"] = 8303,
-				["damagetakenspells"] = {
-					["Fel Fireball"] = {
-						["crushing"] = 0,
-						["id"] = 35913,
-						["damage"] = 8645,
-						["max"] = 8645,
-						["name"] = "Fel Fireball",
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["min"] = 8645,
-						["absorbed"] = 0,
-					},
-					["Felfire Slam"] = {
-						["crushing"] = 0,
-						["id"] = 183214,
-						["damage"] = 11337,
-						["max"] = 4251,
-						["name"] = "Felfire Slam",
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 8,
-						["resisted"] = 0,
-						["min"] = 506,
-						["absorbed"] = 0,
-					},
-					["Enveloping Shadows"] = {
-						["crushing"] = 0,
-						["id"] = 170178,
-						["damage"] = 17474,
-						["max"] = 17474,
-						["name"] = "Enveloping Shadows",
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["min"] = 17474,
-						["absorbed"] = 0,
-					},
-					["Dark Binding"] = {
-						["crushing"] = 0,
-						["id"] = 183194,
-						["damage"] = 17696,
-						["max"] = 1545,
-						["name"] = "Dark Binding",
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 12,
-						["resisted"] = 0,
-						["min"] = 1404,
-						["absorbed"] = 0,
-					},
-				},
-				["healed"] = {
-					["Player-3693-075C4C55"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Cakeftw-Kel'Thuzad",
-						["amount"] = 8303,
-						["class"] = "WARRIOR",
-						["shielding"] = 0,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Cakeftw",
-				["alertCount"] = 0,
 				["deathlog"] = {
 					{
 						["ts"] = 1443115274.36,
 						["amount"] = -507,
+						["spellid"] = 183214,
 						["srcname"] = "Sargerei Nullifier",
 						["hp"] = 270491,
-						["spellid"] = 183214,
 					}, -- [1]
 					{
 						["ts"] = 1443115276.148,
 						["amount"] = -8645,
+						["spellid"] = 35913,
 						["srcname"] = "Sargerei Felbinder",
 						["hp"] = 261846,
-						["spellid"] = 35913,
 					}, -- [2]
 					{
 						["ts"] = 1443115278.151,
@@ -5163,44 +5077,44 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1443115279.425,
 						["amount"] = -1544,
+						["spellid"] = 183194,
 						["srcname"] = "Sargerei Felbinder",
 						["hp"] = 264454,
-						["spellid"] = 183194,
 					}, -- [4]
 					{
 						["ts"] = 1443115280.402,
 						["amount"] = -1545,
+						["spellid"] = 183194,
 						["srcname"] = "Sargerei Felbinder",
 						["hp"] = 262909,
-						["spellid"] = 183194,
 					}, -- [5]
 					{
 						["ts"] = 1443115281.393,
 						["amount"] = -1545,
+						["spellid"] = 183194,
 						["srcname"] = "Sargerei Felbinder",
 						["hp"] = 261364,
-						["spellid"] = 183194,
 					}, -- [6]
 					{
 						["ts"] = 1443115282.439,
 						["amount"] = -1545,
+						["spellid"] = 183194,
 						["srcname"] = "Sargerei Felbinder",
 						["hp"] = 259819,
-						["spellid"] = 183194,
 					}, -- [7]
 					{
 						["ts"] = 1443115283.518,
 						["amount"] = -1545,
+						["spellid"] = 183194,
 						["srcname"] = "Sargerei Felbinder",
 						["hp"] = 258274,
-						["spellid"] = 183194,
 					}, -- [8]
 					{
 						["ts"] = 1443115284.488,
 						["amount"] = -1545,
+						["spellid"] = 183194,
 						["srcname"] = "Sargerei Felbinder",
 						["hp"] = 256729,
-						["spellid"] = 183194,
 					}, -- [9]
 					{
 						["ts"] = 1443115300.078,
@@ -5237,20 +5151,106 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1443115272.402,
 						["amount"] = -506,
+						["spellid"] = 183214,
 						["srcname"] = "Sargerei Nullifier",
 						["hp"] = 271504,
-						["spellid"] = 183214,
 					}, -- [14]
 					{
 						["ts"] = 1443115273.089,
 						["amount"] = -506,
+						["spellid"] = 183214,
 						["srcname"] = "Sargerei Nullifier",
 						["hp"] = 270998,
-						["spellid"] = 183214,
 					}, -- [15]
 					["pos"] = 14,
 				},
+				["id"] = "Player-3693-075C4C55",
+				["maxhp"] = 345960,
+				["healing"] = 8303,
+				["damagetakenspells"] = {
+					["Fel Fireball"] = {
+						["crushing"] = 0,
+						["id"] = 35913,
+						["damage"] = 8645,
+						["max"] = 8645,
+						["name"] = "Fel Fireball",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 8645,
+						["absorbed"] = 0,
+					},
+					["Dark Binding"] = {
+						["crushing"] = 0,
+						["id"] = 183194,
+						["damage"] = 17696,
+						["max"] = 1545,
+						["name"] = "Dark Binding",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 12,
+						["resisted"] = 0,
+						["min"] = 1404,
+						["absorbed"] = 0,
+					},
+					["Felfire Slam"] = {
+						["crushing"] = 0,
+						["id"] = 183214,
+						["damage"] = 11337,
+						["max"] = 4251,
+						["name"] = "Felfire Slam",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 8,
+						["resisted"] = 0,
+						["min"] = 506,
+						["absorbed"] = 0,
+					},
+					["Enveloping Shadows"] = {
+						["crushing"] = 0,
+						["id"] = 170178,
+						["damage"] = 17474,
+						["max"] = 17474,
+						["name"] = "Enveloping Shadows",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 17474,
+						["absorbed"] = 0,
+					},
+				},
+				["healed"] = {
+					["Player-3693-075C4C55"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Cakeftw-Kel'Thuzad",
+						["amount"] = 8303,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Cakeftw",
+				["alertCount"] = 0,
 				["shielding"] = 0,
+				["power"] = {
+					{
+						["spells"] = {
+							[23881] = 20,
+							[12880] = 10,
+						},
+						["amount"] = 30,
+					}, -- [1]
+				},
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -5505,105 +5505,6 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 71405,
-				["power"] = {
-					[2] = {
-						["spells"] = {
-							[91954] = 84,
-							[53398] = 40,
-							[34953] = 90,
-							[83468] = 30,
-						},
-						["amount"] = 244,
-					},
-				},
-				["id"] = "Player-1169-06A1ACBD",
-				["maxhp"] = 392340,
-				["healing"] = 184975,
-				["damagetakenspells"] = {
-					["Felfire Slam"] = {
-						["crushing"] = 0,
-						["id"] = 183214,
-						["damage"] = 5710,
-						["max"] = 4143,
-						["name"] = "Felfire Slam",
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 4,
-						["resisted"] = 0,
-						["min"] = 522,
-						["absorbed"] = 0,
-					},
-					["Shadow Eruption"] = {
-						["crushing"] = 0,
-						["id"] = 170181,
-						["damage"] = 65695,
-						["max"] = 24473,
-						["name"] = "Shadow Eruption",
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 3,
-						["resisted"] = 0,
-						["min"] = 20307,
-						["absorbed"] = 0,
-					},
-				},
-				["healed"] = {
-					["Pet-0-5-1464-35-32517-0301EE0465"] = {
-						["role"] = "NONE",
-						["name"] = "McHealy",
-						["amount"] = 0,
-						["class"] = "WARRIOR",
-						["shielding"] = 0,
-					},
-					["Pet-0-5-1464-35-32517-0201EE0465"] = {
-						["role"] = "NONE",
-						["name"] = "McHealy",
-						["amount"] = 0,
-						["class"] = "WARRIOR",
-						["shielding"] = 0,
-					},
-					["Pet-0-5-1464-35-32517-0401EE0465"] = {
-						["role"] = "NONE",
-						["name"] = "McHealy",
-						["amount"] = 0,
-						["class"] = "WARRIOR",
-						["shielding"] = 0,
-					},
-					["Player-1169-06A1ACBD"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Bracnar",
-						["amount"] = 103075,
-						["class"] = "HUNTER",
-						["shielding"] = 0,
-					},
-					["Creature-0-5-1464-35-95021-000004312A"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Felboar",
-						["amount"] = 0,
-					},
-					["Pet-0-5-1464-35-32517-0101EE0465"] = {
-						["role"] = "NONE",
-						["name"] = "McHealy",
-						["amount"] = 81900,
-						["class"] = "WARRIOR",
-						["shielding"] = 0,
-					},
-					["Pet-0-5-1464-35-32517-0501EE0465"] = {
-						["role"] = "NONE",
-						["name"] = "McHealy",
-						["amount"] = 0,
-						["class"] = "WARRIOR",
-						["shielding"] = 0,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Bracnar",
-				["alertCount"] = 0,
 				["deathlog"] = {
 					{
 						["ts"] = 1443115303.774,
@@ -5727,7 +5628,106 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 5,
 				},
+				["id"] = "Player-1169-06A1ACBD",
+				["maxhp"] = 392340,
+				["healing"] = 184975,
+				["damagetakenspells"] = {
+					["Felfire Slam"] = {
+						["crushing"] = 0,
+						["id"] = 183214,
+						["damage"] = 5710,
+						["max"] = 4143,
+						["name"] = "Felfire Slam",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 4,
+						["resisted"] = 0,
+						["min"] = 522,
+						["absorbed"] = 0,
+					},
+					["Shadow Eruption"] = {
+						["crushing"] = 0,
+						["id"] = 170181,
+						["damage"] = 65695,
+						["max"] = 24473,
+						["name"] = "Shadow Eruption",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 3,
+						["resisted"] = 0,
+						["min"] = 20307,
+						["absorbed"] = 0,
+					},
+				},
+				["healed"] = {
+					["Pet-0-5-1464-35-32517-0301EE0465"] = {
+						["role"] = "NONE",
+						["name"] = "McHealy",
+						["amount"] = 0,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+					["Pet-0-5-1464-35-32517-0201EE0465"] = {
+						["role"] = "NONE",
+						["name"] = "McHealy",
+						["amount"] = 0,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+					["Pet-0-5-1464-35-32517-0401EE0465"] = {
+						["role"] = "NONE",
+						["name"] = "McHealy",
+						["amount"] = 0,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+					["Player-1169-06A1ACBD"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Bracnar",
+						["amount"] = 103075,
+						["class"] = "HUNTER",
+						["shielding"] = 0,
+					},
+					["Creature-0-5-1464-35-95021-000004312A"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Felboar",
+						["amount"] = 0,
+					},
+					["Pet-0-5-1464-35-32517-0101EE0465"] = {
+						["role"] = "NONE",
+						["name"] = "McHealy",
+						["amount"] = 81900,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+					["Pet-0-5-1464-35-32517-0501EE0465"] = {
+						["role"] = "NONE",
+						["name"] = "McHealy",
+						["amount"] = 0,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Bracnar",
+				["alertCount"] = 0,
 				["shielding"] = 0,
+				["power"] = {
+					[2] = {
+						["spells"] = {
+							[91954] = 84,
+							[53398] = 40,
+							[34953] = 90,
+							[83468] = 30,
+						},
+						["amount"] = 244,
+					},
+				},
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -5916,38 +5916,6 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
-					[14] = {
-						["spells"] = {
-							[105047] = 2,
-						},
-						["amount"] = 2,
-					},
-				},
-				["id"] = "Player-1182-03E92971",
-				["maxhp"] = 263580,
-				["healing"] = 43152,
-				["damagetakenspells"] = {
-				},
-				["healed"] = {
-					["Player-1182-03E92971"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Camelman-Muradin",
-						["amount"] = 17639,
-						["class"] = "WARLOCK",
-						["shielding"] = 17639,
-					},
-					["Pet-0-5-1464-35-58960-0100EE2BD8"] = {
-						["role"] = "NONE",
-						["name"] = "Kilton",
-						["amount"] = 25513,
-						["class"] = "WARRIOR",
-						["shielding"] = 13339,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Camelman",
-				["alertCount"] = 0,
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -6071,7 +6039,39 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 14,
 				},
+				["id"] = "Player-1182-03E92971",
+				["maxhp"] = 263580,
+				["healing"] = 43152,
+				["damagetakenspells"] = {
+				},
+				["healed"] = {
+					["Player-1182-03E92971"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Camelman-Muradin",
+						["amount"] = 17639,
+						["class"] = "WARLOCK",
+						["shielding"] = 17639,
+					},
+					["Pet-0-5-1464-35-58960-0100EE2BD8"] = {
+						["role"] = "NONE",
+						["name"] = "Kilton",
+						["amount"] = 25513,
+						["class"] = "WARRIOR",
+						["shielding"] = 13339,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Camelman",
+				["alertCount"] = 0,
 				["shielding"] = 30978,
+				["power"] = {
+					[14] = {
+						["spells"] = {
+							[105047] = 2,
+						},
+						["amount"] = 2,
+					},
+				},
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -6205,19 +6205,100 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 77210,
-				["power"] = {
-					[12] = {
-						["spells"] = {
-							[115072] = 4,
-							[100780] = 12,
-						},
-						["amount"] = 16,
-					},
+				["deathlog"] = {
+					{
+						["ts"] = 1443115268.402,
+						["amount"] = -4419,
+						["spellid"] = 183214,
+						["srcname"] = "Sargerei Nullifier",
+						["hp"] = 258679,
+					}, -- [1]
+					{
+						["ts"] = 1443115270.386,
+						["amount"] = -522,
+						["spellid"] = 183214,
+						["srcname"] = "Sargerei Nullifier",
+						["hp"] = 258157,
+					}, -- [2]
+					{
+						["ts"] = 1443115272.402,
+						["amount"] = -522,
+						["spellid"] = 183214,
+						["srcname"] = "Sargerei Nullifier",
+						["hp"] = 257635,
+					}, -- [3]
+					{
+						["ts"] = 1443115274.36,
+						["amount"] = -522,
+						["spellid"] = 183214,
+						["srcname"] = "Sargerei Nullifier",
+						["hp"] = 257113,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 8701,
+						["spellid"] = 115072,
+						["srcname"] = "Marzipanda-Vek'nilash",
+						["hp"] = 268560,
+						["ts"] = 1443115275.484,
+					}, -- [5]
+					{
+						["ts"] = 1443115286.34,
+						["amount"] = -21196,
+						["spellid"] = 170181,
+						["srcname"] = "Eredar Chaosborn",
+						["hp"] = 247364,
+					}, -- [6]
+					{
+						["ts"] = 1443115287.852,
+						["amount"] = -20196,
+						["spellid"] = 170181,
+						["srcname"] = "Eredar Chaosborn",
+						["hp"] = 177601,
+					}, -- [7]
+					{
+						["ts"] = 1443115289.293,
+						["amount"] = -25831,
+						["spellid"] = 170181,
+						["srcname"] = "Eredar Chaosborn",
+						["hp"] = 177601,
+					}, -- [8]
+					{
+						["ts"] = 1443115289.772,
+						["amount"] = -4002,
+						["spellid"] = 183270,
+						["srcname"] = "Felguard",
+						["hp"] = 177601,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 12171,
+						["spellid"] = 115072,
+						["srcname"] = "Marzipanda-Vek'nilash",
+						["hp"] = 189772,
+						["ts"] = 1443115298.551,
+					}, -- [10]
+					["pos"] = 11,
 				},
 				["id"] = "Player-1184-0748158B",
 				["maxhp"] = 268560,
 				["healing"] = 20872,
 				["damagetakenspells"] = {
+					["Shadow Eruption"] = {
+						["crushing"] = 0,
+						["id"] = 170181,
+						["damage"] = 67223,
+						["max"] = 25831,
+						["name"] = "Shadow Eruption",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 3,
+						["resisted"] = 0,
+						["min"] = 20196,
+						["absorbed"] = 0,
+					},
 					["Felfire Slam"] = {
 						["crushing"] = 0,
 						["id"] = 183214,
@@ -6248,21 +6329,6 @@ SkadaPerCharDB = {
 						["min"] = 4002,
 						["absorbed"] = 0,
 					},
-					["Shadow Eruption"] = {
-						["crushing"] = 0,
-						["id"] = 170181,
-						["damage"] = 67223,
-						["max"] = 25831,
-						["name"] = "Shadow Eruption",
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 3,
-						["resisted"] = 0,
-						["min"] = 20196,
-						["absorbed"] = 0,
-					},
 				},
 				["healed"] = {
 					["Player-1184-0748158B"] = {
@@ -6276,82 +6342,16 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Marzipanda",
 				["alertCount"] = 0,
-				["deathlog"] = {
-					{
-						["ts"] = 1443115268.402,
-						["amount"] = -4419,
-						["srcname"] = "Sargerei Nullifier",
-						["hp"] = 258679,
-						["spellid"] = 183214,
-					}, -- [1]
-					{
-						["ts"] = 1443115270.386,
-						["amount"] = -522,
-						["srcname"] = "Sargerei Nullifier",
-						["hp"] = 258157,
-						["spellid"] = 183214,
-					}, -- [2]
-					{
-						["ts"] = 1443115272.402,
-						["amount"] = -522,
-						["srcname"] = "Sargerei Nullifier",
-						["hp"] = 257635,
-						["spellid"] = 183214,
-					}, -- [3]
-					{
-						["ts"] = 1443115274.36,
-						["amount"] = -522,
-						["srcname"] = "Sargerei Nullifier",
-						["hp"] = 257113,
-						["spellid"] = 183214,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 8701,
-						["spellid"] = 115072,
-						["srcname"] = "Marzipanda-Vek'nilash",
-						["hp"] = 268560,
-						["ts"] = 1443115275.484,
-					}, -- [5]
-					{
-						["ts"] = 1443115286.34,
-						["amount"] = -21196,
-						["srcname"] = "Eredar Chaosborn",
-						["hp"] = 247364,
-						["spellid"] = 170181,
-					}, -- [6]
-					{
-						["ts"] = 1443115287.852,
-						["amount"] = -20196,
-						["srcname"] = "Eredar Chaosborn",
-						["hp"] = 177601,
-						["spellid"] = 170181,
-					}, -- [7]
-					{
-						["ts"] = 1443115289.293,
-						["amount"] = -25831,
-						["srcname"] = "Eredar Chaosborn",
-						["hp"] = 177601,
-						["spellid"] = 170181,
-					}, -- [8]
-					{
-						["ts"] = 1443115289.772,
-						["amount"] = -4002,
-						["srcname"] = "Felguard",
-						["hp"] = 177601,
-						["spellid"] = 183270,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 12171,
-						["spellid"] = 115072,
-						["srcname"] = "Marzipanda-Vek'nilash",
-						["hp"] = 189772,
-						["ts"] = 1443115298.551,
-					}, -- [10]
-					["pos"] = 11,
-				},
 				["shielding"] = 0,
+				["power"] = {
+					[12] = {
+						["spells"] = {
+							[115072] = 4,
+							[100780] = 12,
+						},
+						["amount"] = 16,
+					},
+				},
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -6426,69 +6426,27 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 62118,
-				["power"] = {
-				},
-				["id"] = "Player-60-05DE6C78",
-				["maxhp"] = 71197,
-				["healing"] = 0,
-				["damagetakenspells"] = {
-					["Enveloping Shadows"] = {
-						["crushing"] = 0,
-						["id"] = 170178,
-						["damage"] = 36640,
-						["max"] = 18385,
-						["name"] = "Enveloping Shadows",
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 2,
-						["resisted"] = 0,
-						["min"] = 18255,
-						["absorbed"] = 0,
-					},
-					["Shadow Eruption"] = {
-						["crushing"] = 0,
-						["id"] = 170181,
-						["damage"] = 25478,
-						["max"] = 25478,
-						["name"] = "Shadow Eruption",
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["min"] = 25478,
-						["absorbed"] = 0,
-					},
-				},
-				["healed"] = {
-				},
-				["alertDamage"] = 0,
-				["name"] = "Nümnuts",
-				["alertCount"] = 0,
 				["deathlog"] = {
 					{
 						["ts"] = 1443115272.402,
 						["amount"] = -18255,
+						["spellid"] = 170178,
 						["srcname"] = "Vengeance",
 						["hp"] = 48657,
-						["spellid"] = 170178,
 					}, -- [1]
 					{
 						["ts"] = 1443115284.262,
 						["amount"] = -18385,
+						["spellid"] = 170178,
 						["srcname"] = "Vengeance",
 						["hp"] = 30272,
-						["spellid"] = 170178,
 					}, -- [2]
 					{
 						["ts"] = 1443115286.34,
 						["amount"] = -25478,
+						["spellid"] = 170181,
 						["srcname"] = "Eredar Chaosborn",
 						["hp"] = 4794,
-						["spellid"] = 170181,
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -6556,7 +6514,49 @@ SkadaPerCharDB = {
 					}, -- [11]
 					["pos"] = 12,
 				},
+				["id"] = "Player-60-05DE6C78",
+				["maxhp"] = 71197,
+				["healing"] = 0,
+				["damagetakenspells"] = {
+					["Enveloping Shadows"] = {
+						["crushing"] = 0,
+						["id"] = 170178,
+						["damage"] = 36640,
+						["max"] = 18385,
+						["name"] = "Enveloping Shadows",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["min"] = 18255,
+						["absorbed"] = 0,
+					},
+					["Shadow Eruption"] = {
+						["crushing"] = 0,
+						["id"] = 170181,
+						["damage"] = 25478,
+						["max"] = 25478,
+						["name"] = "Shadow Eruption",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 25478,
+						["absorbed"] = 0,
+					},
+				},
+				["healed"] = {
+				},
+				["alertDamage"] = 0,
+				["name"] = "Nümnuts",
+				["alertCount"] = 0,
 				["shielding"] = 0,
+				["power"] = {
+				},
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -6838,108 +6838,20 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 102658,
-				["power"] = {
-					[9] = {
-						["spells"] = {
-							[111528] = 3,
-							[141459] = 5,
-							[147715] = 1,
-							[35395] = 4,
-						},
-						["amount"] = 13,
-					},
-				},
-				["id"] = "Player-117-0745BB8A",
-				["maxhp"] = 354120,
-				["healing"] = 136709,
-				["damagetakenspells"] = {
-					["Fel Sear"] = {
-						["crushing"] = 0,
-						["id"] = 184233,
-						["damage"] = 10882,
-						["max"] = 5457,
-						["name"] = "Fel Sear",
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 2,
-						["resisted"] = 0,
-						["min"] = 5425,
-						["absorbed"] = 0,
-					},
-					["Fiery Slash"] = {
-						["crushing"] = 0,
-						["id"] = 183268,
-						["damage"] = 6434,
-						["max"] = 4857,
-						["name"] = "Fiery Slash",
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 4,
-						["resisted"] = 0,
-						["min"] = 525,
-						["absorbed"] = 0,
-					},
-					["Shadow Eruption"] = {
-						["crushing"] = 0,
-						["id"] = 170181,
-						["damage"] = 78592,
-						["max"] = 21857,
-						["name"] = "Shadow Eruption",
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 4,
-						["resisted"] = 0,
-						["min"] = 16239,
-						["absorbed"] = 0,
-					},
-					["Withering Roar"] = {
-						["crushing"] = 0,
-						["id"] = 183270,
-						["damage"] = 6750,
-						["max"] = 3438,
-						["name"] = "Withering Roar",
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 2,
-						["resisted"] = 0,
-						["min"] = 3312,
-						["absorbed"] = 0,
-					},
-				},
-				["healed"] = {
-					["Player-117-0745BB8A"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Bopit-Bronzebeard",
-						["amount"] = 136709,
-						["class"] = "PALADIN",
-						["shielding"] = 0,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Bopit",
-				["alertCount"] = 0,
 				["deathlog"] = {
 					{
 						["ts"] = 1443115293.938,
 						["amount"] = -526,
+						["hp"] = 282770,
 						["srcname"] = "Felguard",
 						["spellid"] = 183268,
-						["hp"] = 282770,
 					}, -- [1]
 					{
 						["ts"] = 1443115296.929,
 						["amount"] = -526,
+						["spellid"] = 183268,
 						["srcname"] = "Felguard",
 						["hp"] = 282244,
-						["spellid"] = 183268,
 					}, -- [2]
 					{
 						["ts"] = 1443115303.01,
@@ -6952,58 +6864,58 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1443115285.439,
 						["amount"] = -3312,
+						["spellid"] = 183270,
 						["srcname"] = "Felguard",
 						["hp"] = 280432,
-						["spellid"] = 183270,
 					}, -- [4]
 					{
 						["ts"] = 1443115286.34,
 						["amount"] = -20867,
+						["spellid"] = 170181,
 						["srcname"] = "Eredar Chaosborn",
 						["hp"] = 231521,
-						["spellid"] = 170181,
 					}, -- [5]
 					{
 						["ts"] = 1443115286.34,
 						["amount"] = -21857,
+						["spellid"] = 170181,
 						["srcname"] = "Eredar Chaosborn",
 						["hp"] = 209664,
-						["spellid"] = 170181,
 					}, -- [6]
 					{
 						["ts"] = 1443115287.852,
 						["amount"] = -19629,
+						["spellid"] = 170181,
 						["srcname"] = "Eredar Chaosborn",
 						["hp"] = 147112,
-						["spellid"] = 170181,
 					}, -- [7]
 					{
 						["ts"] = 1443115287.962,
 						["amount"] = -4857,
+						["spellid"] = 183268,
 						["srcname"] = "Felguard",
 						["hp"] = 147112,
-						["spellid"] = 183268,
 					}, -- [8]
 					{
 						["ts"] = 1443115289.293,
 						["amount"] = -16239,
+						["spellid"] = 170181,
 						["srcname"] = "Eredar Chaosborn",
 						["hp"] = 146587,
-						["spellid"] = 170181,
 					}, -- [9]
 					{
 						["ts"] = 1443115289.772,
 						["amount"] = -3438,
+						["spellid"] = 183270,
 						["srcname"] = "Felguard",
 						["hp"] = 146587,
-						["spellid"] = 183270,
 					}, -- [10]
 					{
 						["ts"] = 1443115290.962,
 						["amount"] = -525,
+						["spellid"] = 183268,
 						["srcname"] = "Felguard",
 						["hp"] = 146587,
-						["spellid"] = 183268,
 					}, -- [11]
 					{
 						["absorb"] = 0,
@@ -7039,7 +6951,95 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 4,
 				},
+				["id"] = "Player-117-0745BB8A",
+				["maxhp"] = 354120,
+				["healing"] = 136709,
+				["damagetakenspells"] = {
+					["Withering Roar"] = {
+						["crushing"] = 0,
+						["id"] = 183270,
+						["damage"] = 6750,
+						["max"] = 3438,
+						["name"] = "Withering Roar",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["min"] = 3312,
+						["absorbed"] = 0,
+					},
+					["Fiery Slash"] = {
+						["crushing"] = 0,
+						["id"] = 183268,
+						["damage"] = 6434,
+						["max"] = 4857,
+						["name"] = "Fiery Slash",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 4,
+						["resisted"] = 0,
+						["min"] = 525,
+						["absorbed"] = 0,
+					},
+					["Fel Sear"] = {
+						["crushing"] = 0,
+						["id"] = 184233,
+						["damage"] = 10882,
+						["max"] = 5457,
+						["name"] = "Fel Sear",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["min"] = 5425,
+						["absorbed"] = 0,
+					},
+					["Shadow Eruption"] = {
+						["crushing"] = 0,
+						["id"] = 170181,
+						["damage"] = 78592,
+						["max"] = 21857,
+						["name"] = "Shadow Eruption",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 4,
+						["resisted"] = 0,
+						["min"] = 16239,
+						["absorbed"] = 0,
+					},
+				},
+				["healed"] = {
+					["Player-117-0745BB8A"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Bopit-Bronzebeard",
+						["amount"] = 136709,
+						["class"] = "PALADIN",
+						["shielding"] = 0,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Bopit",
+				["alertCount"] = 0,
 				["shielding"] = 0,
+				["power"] = {
+					[9] = {
+						["spells"] = {
+							[111528] = 3,
+							[141459] = 5,
+							[147715] = 1,
+							[35395] = 4,
+						},
+						["amount"] = 13,
+					},
+				},
 				["alert"] = {
 				},
 				["multistrikes"] = 2,
@@ -7231,7 +7231,38 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 52592,
-				["power"] = {
+				["deathlog"] = {
+					{
+						["ts"] = 1443115286.34,
+						["amount"] = -22100,
+						["spellid"] = 170181,
+						["srcname"] = "Eredar Chaosborn",
+						["hp"] = 337789,
+					}, -- [1]
+					{
+						["ts"] = 1443115286.34,
+						["amount"] = -30492,
+						["spellid"] = 170181,
+						["srcname"] = "Eredar Chaosborn",
+						["hp"] = 307297,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 6683,
+						["spellid"] = 81751,
+						["srcname"] = "Keladan-Nesingwary",
+						["hp"] = 313980,
+						["ts"] = 1443115298.087,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 94,
+						["spellid"] = 81751,
+						["srcname"] = "Keladan-Nesingwary",
+						["hp"] = 314074,
+						["ts"] = 1443115306.953,
+					}, -- [4]
+					["pos"] = 5,
 				},
 				["id"] = "Player-47-06A409FF",
 				["maxhp"] = 366360,
@@ -7258,40 +7289,9 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Lopeppeta",
 				["alertCount"] = 0,
-				["deathlog"] = {
-					{
-						["ts"] = 1443115286.34,
-						["amount"] = -22100,
-						["srcname"] = "Eredar Chaosborn",
-						["hp"] = 337789,
-						["spellid"] = 170181,
-					}, -- [1]
-					{
-						["ts"] = 1443115286.34,
-						["amount"] = -30492,
-						["srcname"] = "Eredar Chaosborn",
-						["hp"] = 307297,
-						["spellid"] = 170181,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 6683,
-						["spellid"] = 81751,
-						["srcname"] = "Keladan-Nesingwary",
-						["hp"] = 313980,
-						["ts"] = 1443115298.087,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 94,
-						["spellid"] = 81751,
-						["srcname"] = "Keladan-Nesingwary",
-						["hp"] = 314074,
-						["ts"] = 1443115306.953,
-					}, -- [4]
-					["pos"] = 5,
-				},
 				["shielding"] = 0,
+				["power"] = {
+				},
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -7325,10 +7325,9 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-117-1464-12-86934-0000042DCC",
 				["maxhp"] = 0,
@@ -7340,7 +7339,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Sha'tari Defender",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 				},
 				["alert"] = {
@@ -7382,10 +7382,9 @@ SkadaPerCharDB = {
 						["damage"] = 257735,
 					},
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Sha'tari Defender",
 				["maxhp"] = 0,
@@ -7397,7 +7396,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Sha'tari Defender",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 				},
 				["alert"] = {
@@ -7671,100 +7671,27 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 38580,
-				["power"] = {
-					[9] = {
-						["spells"] = {
-							[147715] = 2,
-							[141459] = 5,
-							[111528] = 4,
-							[35395] = 1,
-						},
-						["amount"] = 12,
-					},
-				},
-				["id"] = "Player-60-09AE4C94",
-				["maxhp"] = 382740,
-				["healing"] = 24204,
-				["damagetakenspells"] = {
-					["Enveloping Shadows"] = {
-						["crushing"] = 0,
-						["id"] = 170178,
-						["damage"] = 12045,
-						["max"] = 12045,
-						["name"] = "Enveloping Shadows",
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["min"] = 12045,
-						["absorbed"] = 0,
-					},
-					["Shadow Eruption"] = {
-						["crushing"] = 0,
-						["id"] = 170181,
-						["damage"] = 16130,
-						["max"] = 16130,
-						["name"] = "Shadow Eruption",
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["min"] = 16130,
-						["absorbed"] = 0,
-					},
-					["Withering Roar"] = {
-						["crushing"] = 0,
-						["id"] = 183270,
-						["damage"] = 10405,
-						["max"] = 3549,
-						["name"] = "Withering Roar",
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 3,
-						["resisted"] = 0,
-						["min"] = 3371,
-						["absorbed"] = 0,
-					},
-				},
-				["healed"] = {
-					["Player-60-09AE4C94"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Klugarini-Stormrage",
-						["amount"] = 24204,
-						["class"] = "PALADIN",
-						["shielding"] = 0,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Klugarini",
-				["alertCount"] = 0,
 				["deathlog"] = {
 					{
 						["ts"] = 1443115284.262,
 						["amount"] = -12045,
+						["spellid"] = 170178,
 						["srcname"] = "Vengeance",
 						["hp"] = 374965,
-						["spellid"] = 170178,
 					}, -- [1]
 					{
 						["ts"] = 1443115285.439,
 						["amount"] = -3549,
+						["spellid"] = 183270,
 						["srcname"] = "Felguard",
 						["hp"] = 371416,
-						["spellid"] = 183270,
 					}, -- [2]
 					{
 						["ts"] = 1443115286.34,
 						["amount"] = -16130,
+						["spellid"] = 170181,
 						["srcname"] = "Eredar Chaosborn",
 						["hp"] = 318144,
-						["spellid"] = 170181,
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -7777,9 +7704,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1443115289.772,
 						["amount"] = -3485,
+						["spellid"] = 183270,
 						["srcname"] = "Felguard",
 						["hp"] = 283064,
-						["spellid"] = 183270,
 					}, -- [5]
 					{
 						["absorb"] = 0,
@@ -7808,9 +7735,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1443115301.725,
 						["amount"] = -3371,
+						["spellid"] = 183270,
 						["srcname"] = "Felguard",
 						["hp"] = 289795,
-						["spellid"] = 183270,
 					}, -- [9]
 					{
 						["absorb"] = 0,
@@ -7846,7 +7773,80 @@ SkadaPerCharDB = {
 					}, -- [13]
 					["pos"] = 14,
 				},
+				["id"] = "Player-60-09AE4C94",
+				["maxhp"] = 382740,
+				["healing"] = 24204,
+				["damagetakenspells"] = {
+					["Withering Roar"] = {
+						["crushing"] = 0,
+						["id"] = 183270,
+						["damage"] = 10405,
+						["max"] = 3549,
+						["name"] = "Withering Roar",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 3,
+						["resisted"] = 0,
+						["min"] = 3371,
+						["absorbed"] = 0,
+					},
+					["Enveloping Shadows"] = {
+						["crushing"] = 0,
+						["id"] = 170178,
+						["damage"] = 12045,
+						["max"] = 12045,
+						["name"] = "Enveloping Shadows",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 12045,
+						["absorbed"] = 0,
+					},
+					["Shadow Eruption"] = {
+						["crushing"] = 0,
+						["id"] = 170181,
+						["damage"] = 16130,
+						["max"] = 16130,
+						["name"] = "Shadow Eruption",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 16130,
+						["absorbed"] = 0,
+					},
+				},
+				["healed"] = {
+					["Player-60-09AE4C94"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Klugarini-Stormrage",
+						["amount"] = 24204,
+						["class"] = "PALADIN",
+						["shielding"] = 0,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Klugarini",
+				["alertCount"] = 0,
 				["shielding"] = 0,
+				["power"] = {
+					[9] = {
+						["spells"] = {
+							[147715] = 2,
+							[141459] = 5,
+							[111528] = 4,
+							[35395] = 1,
+						},
+						["amount"] = 12,
+					},
+				},
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -8024,31 +8024,6 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
-					[7] = {
-						["spells"] = {
-							[17941] = 1,
-						},
-						["amount"] = 1,
-					},
-				},
-				["id"] = "Player-1175-0936E3AE",
-				["maxhp"] = 347820,
-				["healing"] = 33189,
-				["damagetakenspells"] = {
-				},
-				["healed"] = {
-					["Player-1175-0936E3AE"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Luciasta-Malfurion",
-						["amount"] = 33189,
-						["class"] = "WARLOCK",
-						["shielding"] = 6024,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Luciasta",
-				["alertCount"] = 0,
 				["deathlog"] = {
 					{
 						["ts"] = 1443115302.14,
@@ -8172,7 +8147,32 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 11,
 				},
+				["id"] = "Player-1175-0936E3AE",
+				["maxhp"] = 347820,
+				["healing"] = 33189,
+				["damagetakenspells"] = {
+				},
+				["healed"] = {
+					["Player-1175-0936E3AE"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Luciasta-Malfurion",
+						["amount"] = 33189,
+						["class"] = "WARLOCK",
+						["shielding"] = 6024,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Luciasta",
+				["alertCount"] = 0,
 				["shielding"] = 6024,
+				["power"] = {
+					[7] = {
+						["spells"] = {
+							[17941] = 1,
+						},
+						["amount"] = 1,
+					},
+				},
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -8337,7 +8337,38 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 5425,
-				["power"] = {
+				["deathlog"] = {
+					{
+						["ts"] = 1443115285.439,
+						["amount"] = -3993,
+						["spellid"] = 183270,
+						["srcname"] = "Felguard",
+						["hp"] = 307282,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 6946,
+						["spellid"] = 94472,
+						["srcname"] = "Effy-MoonGuard",
+						["hp"] = 314227,
+						["ts"] = 1443115300.97,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 260,
+						["spellid"] = 81751,
+						["srcname"] = "Effy-MoonGuard",
+						["hp"] = 314487,
+						["ts"] = 1443115305.868,
+					}, -- [3]
+					{
+						["ts"] = 1443115316.514,
+						["amount"] = -1432,
+						["spellid"] = 183194,
+						["srcname"] = "Sargerei Felbinder",
+						["hp"] = 313055,
+					}, -- [4]
+					["pos"] = 5,
 				},
 				["id"] = "Player-1175-09D85877",
 				["maxhp"] = 331080,
@@ -8379,40 +8410,9 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Icypewpew",
 				["alertCount"] = 0,
-				["deathlog"] = {
-					{
-						["ts"] = 1443115285.439,
-						["amount"] = -3993,
-						["srcname"] = "Felguard",
-						["hp"] = 307282,
-						["spellid"] = 183270,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 6946,
-						["spellid"] = 94472,
-						["srcname"] = "Effy-MoonGuard",
-						["hp"] = 314227,
-						["ts"] = 1443115300.97,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 260,
-						["spellid"] = 81751,
-						["srcname"] = "Effy-MoonGuard",
-						["hp"] = 314487,
-						["ts"] = 1443115305.868,
-					}, -- [3]
-					{
-						["ts"] = 1443115316.514,
-						["amount"] = -1432,
-						["srcname"] = "Sargerei Felbinder",
-						["hp"] = 313055,
-						["spellid"] = 183194,
-					}, -- [4]
-					["pos"] = 5,
-				},
 				["shielding"] = 0,
+				["power"] = {
+				},
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -8536,27 +8536,55 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 1,
 				["damagetaken"] = 37128,
-				["power"] = {
+				["deathlog"] = {
+					{
+						["ts"] = 1443115284.262,
+						["amount"] = -16184,
+						["spellid"] = 170178,
+						["srcname"] = "Vengeance",
+						["hp"] = 336406,
+					}, -- [1]
+					{
+						["ts"] = 1443115285.439,
+						["amount"] = -4231,
+						["spellid"] = 183270,
+						["srcname"] = "Felguard",
+						["hp"] = 332175,
+					}, -- [2]
+					{
+						["ts"] = 1443115289.772,
+						["amount"] = -4043,
+						["spellid"] = 183270,
+						["srcname"] = "Felguard",
+						["hp"] = 262145,
+					}, -- [3]
+					{
+						["ts"] = 1443115302.455,
+						["amount"] = -4799,
+						["spellid"] = 88163,
+						["srcname"] = "Felbound Stalker",
+						["hp"] = 262145,
+					}, -- [4]
+					{
+						["ts"] = 1443115302.693,
+						["amount"] = -4297,
+						["spellid"] = 183275,
+						["srcname"] = "Felbound Stalker",
+						["hp"] = 253049,
+					}, -- [5]
+					{
+						["ts"] = 1443115307.807,
+						["amount"] = -3574,
+						["spellid"] = 183270,
+						["srcname"] = "Felguard",
+						["hp"] = 312737,
+					}, -- [6]
+					["pos"] = 7,
 				},
 				["id"] = "Player-1426-07673509",
 				["maxhp"] = 375240,
 				["healing"] = 0,
 				["damagetakenspells"] = {
-					["Enveloping Shadows"] = {
-						["crushing"] = 0,
-						["id"] = 170178,
-						["damage"] = 16184,
-						["max"] = 16184,
-						["name"] = "Enveloping Shadows",
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["min"] = 16184,
-						["absorbed"] = 0,
-					},
 					["Withering Roar"] = {
 						["crushing"] = 0,
 						["id"] = 183270,
@@ -8587,6 +8615,21 @@ SkadaPerCharDB = {
 						["min"] = 4297,
 						["absorbed"] = 0,
 					},
+					["Enveloping Shadows"] = {
+						["crushing"] = 0,
+						["id"] = 170178,
+						["damage"] = 16184,
+						["max"] = 16184,
+						["name"] = "Enveloping Shadows",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 16184,
+						["absorbed"] = 0,
+					},
 					["Attack"] = {
 						["crushing"] = 0,
 						["id"] = 6603,
@@ -8608,52 +8651,9 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Karaaniiris",
 				["alertCount"] = 0,
-				["deathlog"] = {
-					{
-						["ts"] = 1443115284.262,
-						["amount"] = -16184,
-						["srcname"] = "Vengeance",
-						["hp"] = 336406,
-						["spellid"] = 170178,
-					}, -- [1]
-					{
-						["ts"] = 1443115285.439,
-						["amount"] = -4231,
-						["srcname"] = "Felguard",
-						["hp"] = 332175,
-						["spellid"] = 183270,
-					}, -- [2]
-					{
-						["ts"] = 1443115289.772,
-						["amount"] = -4043,
-						["srcname"] = "Felguard",
-						["hp"] = 262145,
-						["spellid"] = 183270,
-					}, -- [3]
-					{
-						["ts"] = 1443115302.455,
-						["amount"] = -4799,
-						["srcname"] = "Felbound Stalker",
-						["hp"] = 262145,
-						["spellid"] = 88163,
-					}, -- [4]
-					{
-						["ts"] = 1443115302.693,
-						["amount"] = -4297,
-						["srcname"] = "Felbound Stalker",
-						["hp"] = 253049,
-						["spellid"] = 183275,
-					}, -- [5]
-					{
-						["ts"] = 1443115307.807,
-						["amount"] = -3574,
-						["srcname"] = "Felguard",
-						["hp"] = 312737,
-						["spellid"] = 183270,
-					}, -- [6]
-					["pos"] = 7,
-				},
 				["shielding"] = 0,
+				["power"] = {
+				},
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -8897,91 +8897,6 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 37316,
-				["power"] = {
-					[2] = {
-						["spells"] = {
-							[82716] = 18,
-							[34953] = 60,
-							[83468] = 6,
-						},
-						["amount"] = 84,
-					},
-				},
-				["id"] = "Player-105-06BF5F10",
-				["maxhp"] = 334200,
-				["healing"] = 161578,
-				["damagetakenspells"] = {
-					["Fel Sear"] = {
-						["crushing"] = 0,
-						["id"] = 184233,
-						["damage"] = 4951,
-						["max"] = 4951,
-						["name"] = "Fel Sear",
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["min"] = 4951,
-						["absorbed"] = 0,
-					},
-					["Shadow Eruption"] = {
-						["crushing"] = 0,
-						["id"] = 170181,
-						["damage"] = 20846,
-						["max"] = 20846,
-						["name"] = "Shadow Eruption",
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["min"] = 20846,
-						["absorbed"] = 0,
-					},
-					["Enveloping Shadows"] = {
-						["crushing"] = 0,
-						["id"] = 170178,
-						["damage"] = 11519,
-						["max"] = 11519,
-						["name"] = "Enveloping Shadows",
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["min"] = 11519,
-						["absorbed"] = 0,
-					},
-				},
-				["healed"] = {
-					["Pet-0-5-1464-35-38453-0102336404"] = {
-						["role"] = "NONE",
-						["name"] = "Arcturis",
-						["amount"] = 94534,
-						["class"] = "WARRIOR",
-						["shielding"] = 0,
-					},
-					["Creature-0-5-1464-35-95582-0000043121"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Player-105-06BF5F10"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Rakuri-Blade'sEdge",
-						["amount"] = 67044,
-						["class"] = "HUNTER",
-						["shielding"] = 0,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Rakuri",
-				["alertCount"] = 0,
 				["deathlog"] = {
 					{
 						["ts"] = 1443115298.551,
@@ -9105,7 +9020,92 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 11,
 				},
+				["id"] = "Player-105-06BF5F10",
+				["maxhp"] = 334200,
+				["healing"] = 161578,
+				["damagetakenspells"] = {
+					["Enveloping Shadows"] = {
+						["crushing"] = 0,
+						["id"] = 170178,
+						["damage"] = 11519,
+						["max"] = 11519,
+						["name"] = "Enveloping Shadows",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 11519,
+						["absorbed"] = 0,
+					},
+					["Fel Sear"] = {
+						["crushing"] = 0,
+						["id"] = 184233,
+						["damage"] = 4951,
+						["max"] = 4951,
+						["name"] = "Fel Sear",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 4951,
+						["absorbed"] = 0,
+					},
+					["Shadow Eruption"] = {
+						["crushing"] = 0,
+						["id"] = 170181,
+						["damage"] = 20846,
+						["max"] = 20846,
+						["name"] = "Shadow Eruption",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 20846,
+						["absorbed"] = 0,
+					},
+				},
+				["healed"] = {
+					["Pet-0-5-1464-35-38453-0102336404"] = {
+						["role"] = "NONE",
+						["name"] = "Arcturis",
+						["amount"] = 94534,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+					["Creature-0-5-1464-35-95582-0000043121"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Player-105-06BF5F10"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Rakuri-Blade'sEdge",
+						["amount"] = 67044,
+						["class"] = "HUNTER",
+						["shielding"] = 0,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Rakuri",
+				["alertCount"] = 0,
 				["shielding"] = 0,
+				["power"] = {
+					[2] = {
+						["spells"] = {
+							[82716] = 18,
+							[34953] = 60,
+							[83468] = 6,
+						},
+						["amount"] = 84,
+					},
+				},
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -9132,10 +9132,9 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-1426-1464-15-86934-0000042CEC",
 				["maxhp"] = 0,
@@ -9147,7 +9146,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Sha'tari Defender",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 				},
 				["alert"] = {
@@ -9177,10 +9177,9 @@ SkadaPerCharDB = {
 						["damage"] = 4097,
 					},
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Pet-0-5-1464-35-38453-0102336404",
 				["maxhp"] = 356700,
@@ -9192,7 +9191,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Unknown",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 				},
 				["alert"] = {
@@ -9364,40 +9364,6 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
-					[2] = {
-						["spells"] = {
-							[91954] = 56,
-							[34953] = 45,
-							[53398] = 20,
-						},
-						["amount"] = 121,
-					},
-				},
-				["id"] = "Player-3683-0882D135",
-				["maxhp"] = 346920,
-				["healing"] = 15691,
-				["damagetakenspells"] = {
-				},
-				["healed"] = {
-					["Player-3683-0882D135"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Deathshots-Dalaran",
-						["amount"] = 15691,
-						["class"] = "HUNTER",
-						["shielding"] = 0,
-					},
-					["Pet-0-5-1464-35-91250-01024C7AB0"] = {
-						["role"] = "NONE",
-						["name"] = "Ironwolf",
-						["amount"] = 0,
-						["class"] = "WARRIOR",
-						["shielding"] = 0,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Deathshots",
-				["alertCount"] = 0,
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -9521,7 +9487,41 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 5,
 				},
+				["id"] = "Player-3683-0882D135",
+				["maxhp"] = 346920,
+				["healing"] = 15691,
+				["damagetakenspells"] = {
+				},
+				["healed"] = {
+					["Player-3683-0882D135"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Deathshots-Dalaran",
+						["amount"] = 15691,
+						["class"] = "HUNTER",
+						["shielding"] = 0,
+					},
+					["Pet-0-5-1464-35-91250-01024C7AB0"] = {
+						["role"] = "NONE",
+						["name"] = "Ironwolf",
+						["amount"] = 0,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Deathshots",
+				["alertCount"] = 0,
 				["shielding"] = 0,
+				["power"] = {
+					[2] = {
+						["spells"] = {
+							[91954] = 56,
+							[34953] = 45,
+							[53398] = 20,
+						},
+						["amount"] = 121,
+					},
+				},
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -9550,10 +9550,9 @@ SkadaPerCharDB = {
 						["damage"] = 142277,
 					},
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Bloodmane Earthbinder",
 				["maxhp"] = 0,
@@ -9565,7 +9564,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Bloodmane Earthbinder",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 				},
 				["alert"] = {
@@ -9715,13 +9715,24 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
-					[0] = {
-						["spells"] = {
-							[129253] = 3200,
-						},
-						["amount"] = 3200,
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 11822,
+						["spellid"] = 596,
+						["srcname"] = "Keladan-Nesingwary",
+						["hp"] = 171960,
+						["ts"] = 1443115305.322,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 120,
+						["spellid"] = 596,
+						["srcname"] = "Keladan-Nesingwary",
+						["hp"] = 172080,
+						["ts"] = 1443115307.891,
+					}, -- [2]
+					["pos"] = 3,
 				},
 				["id"] = "Player-1184-0A0C7021",
 				["maxhp"] = 172080,
@@ -9789,11 +9800,12 @@ SkadaPerCharDB = {
 						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
-					["Player-5-0A0DBFD1"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Khrøme-Proudmoore",
+					["Player-3675-06E404FD"] = {
+						["role"] = "HEALER",
+						["name"] = "Effy-MoonGuard",
 						["amount"] = 82,
+						["class"] = "PRIEST",
+						["shielding"] = 0,
 					},
 					["Player-1184-0A0C7021"] = {
 						["role"] = "HEALER",
@@ -9802,18 +9814,17 @@ SkadaPerCharDB = {
 						["class"] = "PRIEST",
 						["shielding"] = 0,
 					},
+					["Player-5-0A0DBFD1"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Khrøme-Proudmoore",
+						["amount"] = 82,
+					},
 					["Player-47-06A409FF"] = {
 						["role"] = "DAMAGER",
 						["name"] = "Lopeppeta-Shu'halo",
 						["amount"] = 6777,
 						["class"] = "MAGE",
-						["shielding"] = 0,
-					},
-					["Player-3675-06E404FD"] = {
-						["role"] = "HEALER",
-						["name"] = "Effy-MoonGuard",
-						["amount"] = 82,
-						["class"] = "PRIEST",
 						["shielding"] = 0,
 					},
 					["Player-3675-06E409A8"] = {
@@ -9840,26 +9851,15 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Keladan",
 				["alertCount"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 11822,
-						["spellid"] = 596,
-						["srcname"] = "Keladan-Nesingwary",
-						["hp"] = 171960,
-						["ts"] = 1443115305.322,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 120,
-						["spellid"] = 596,
-						["srcname"] = "Keladan-Nesingwary",
-						["hp"] = 172080,
-						["ts"] = 1443115307.891,
-					}, -- [2]
-					["pos"] = 3,
-				},
 				["shielding"] = 0,
+				["power"] = {
+					[0] = {
+						["spells"] = {
+							[129253] = 3200,
+						},
+						["amount"] = 3200,
+					},
+				},
 				["alert"] = {
 				},
 				["multistrikes"] = 2,
@@ -9986,7 +9986,16 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 82,
+						["spellid"] = 81751,
+						["srcname"] = "Keladan-Nesingwary",
+						["hp"] = 310628,
+						["ts"] = 1443115302.022,
+					}, -- [1]
+					["pos"] = 2,
 				},
 				["id"] = "Player-3675-06E404FD",
 				["maxhp"] = 330720,
@@ -10043,18 +10052,9 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Effy",
 				["alertCount"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 82,
-						["spellid"] = 81751,
-						["srcname"] = "Keladan-Nesingwary",
-						["hp"] = 310628,
-						["ts"] = 1443115302.022,
-					}, -- [1]
-					["pos"] = 2,
-				},
 				["shielding"] = 7164,
+				["power"] = {
+				},
 				["alert"] = {
 				},
 				["multistrikes"] = 0,

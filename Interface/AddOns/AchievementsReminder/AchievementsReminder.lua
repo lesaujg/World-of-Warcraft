@@ -10,7 +10,7 @@ end
 
 ralldatabase()
 
-  achievementsreminderver=6.220
+  achievementsreminderver=6.221
 
 
 	if ralloptions==nil then ralloptions={1,1,0,0,0,0,1,0,0,0,0,0} end
@@ -1347,7 +1347,7 @@ local reportqu=0
 
 if ralloptions[2]==1 then
 	for i=1,#rallachieve[rallcolonka] do
-	if GetAchievementLink(rallachieve[rallcolonka][i]) then
+	if rallachieve[rallcolonka][i]>0 and GetAchievementLink(rallachieve[rallcolonka][i]) then
 		local _, _, _, completed, _, _, _, _, _, _, _, _, wasEarnedByMe, earnedBy = GetAchievementInfo(rallachieve[rallcolonka][i])
 		if (completed==false or (completed and ralloptionTrackCharAchieves and wasEarnedByMe==false)) and rallfullver[rallcolonka][i]==0 then
 			if #texttableout==0 then

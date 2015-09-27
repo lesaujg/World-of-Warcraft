@@ -14,9 +14,9 @@ Y: 128
 W: 150
 H: 42
 Frame: TSMCraftingTradeSkillFrame
-FrameLevel: 45
+FrameLevel: 54
 Anchor: LEFT
-X: 31
+X: 32
 Y: 171
 W: 450
 H: 500
