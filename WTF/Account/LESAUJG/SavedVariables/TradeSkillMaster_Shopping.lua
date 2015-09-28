@@ -34,13 +34,13 @@ TradeSkillMaster_ShoppingDB = {
 			["treesizable"] = true,
 		},
 		["previousSearches"] = {
-			"raw beast", -- [1]
-			"true iron ore/exact", -- [2]
-			"Blackrock Ore/exact", -- [3]
+			"miscellaneous/mount", -- [1]
+			"universal", -- [2]
+			"Giant Dinosaur Bone/exact", -- [3]
 			"arcane c", -- [4]
-			"Giant Dinosaur Bone/exact", -- [5]
-			"miscellaneous/mount", -- [6]
-			"universal", -- [7]
+			"Blackrock Ore/exact", -- [5]
+			"raw beast", -- [6]
+			"true iron ore/exact", -- [7]
 			"critical strike", -- [8]
 			"Healing Tonic/exact", -- [9]
 			"sea scorpion segment/exact", -- [10]

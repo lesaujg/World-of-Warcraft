@@ -14,7 +14,8 @@ _NPCScanOverlayOptions = {
 	},
 	["Version"] = "5.4.8.5",
 	["ShowKey"] = true,
-	["ShowAll"] = true,
+	["MiniMapIcon"] = {
+	},
 	["ModulesExtra"] = {
 		["Minimap"] = {
 			["RangeRing"] = true,
@@ -24,8 +25,7 @@ _NPCScanOverlayOptions = {
 		},
 	},
 	["LockSwap"] = false,
-	["MiniMapIcon"] = {
-	},
+	["ShowAll"] = true,
 }
 _NPCScanMiniMapIcon = {
 }
