@@ -29,15 +29,15 @@ TradeSkillMaster_ShoppingDB = {
 			},
 			["scrollvalue"] = 0,
 			["fullwidth"] = 945,
-			["selected"] = "2Buy Clothgar",
-			["treewidth"] = 175,
 			["treesizable"] = true,
+			["treewidth"] = 175,
+			["selected"] = "2Buy Clothgar",
 		},
 		["previousSearches"] = {
-			"miscellaneous/mount", -- [1]
-			"universal", -- [2]
-			"Giant Dinosaur Bone/exact", -- [3]
-			"arcane c", -- [4]
+			"Giant Dinosaur Bone/exact", -- [1]
+			"miscellaneous/mount", -- [2]
+			"arcane c", -- [3]
+			"universal", -- [4]
 			"Blackrock Ore/exact", -- [5]
 			"raw beast", -- [6]
 			"true iron ore/exact", -- [7]
@@ -238,8 +238,8 @@ TradeSkillMaster_ShoppingDB = {
 			["item:43120:0:0:0:0:0:0"] = "Celestial Ink",
 			["item:23112:0:0:0:0:0:0"] = "Golden Draenite",
 			["item:34056:0:0:0:0:0:0"] = "Lesser Cosmic Essence",
-			["item:43127:0:0:0:0:0:0"] = "Snowfall Ink",
 			["item:11174:0:0:0:0:0:0"] = "Lesser Nether Essence",
+			["item:43127:0:0:0:0:0:0"] = "Snowfall Ink",
 			["item:52195:0:0:0:0:0:0"] = "Amberjewel",
 			["item:34057:0:0:0:0:0:0"] = "Abyss Crystal",
 			["item:52722:0:0:0:0:0:0"] = "Maelstrom Crystal",
@@ -258,7 +258,7 @@ TradeSkillMaster_ShoppingDB = {
 			["item:43115:0:0:0:0:0:0"] = "Hunter's Ink",
 			["item:52721:0:0:0:0:0:0"] = "Heavenly Shard",
 			["item:22452:0:0:0:0:0:0"] = "Primal Earth",
-			["item:115504:0:0:0:0:0:0"] = "Fractured Temporal Crystal",
+			["item:11084:0:0:0:0:0:0"] = "Large Glimmering Shard",
 			["item:36860:0:0:0:0:0:0"] = "Eternal Fire",
 			["item:74247:0:0:0:0:0:0"] = "Ethereal Shard",
 			["item:61979:0:0:0:0:0:0"] = "Ashen Pigment",
@@ -272,7 +272,7 @@ TradeSkillMaster_ShoppingDB = {
 			["item:43118:0:0:0:0:0:0"] = "Jadefire Ink",
 			["item:43122:0:0:0:0:0:0"] = "Shimmering Ink",
 			["item:34055:0:0:0:0:0:0"] = "Greater Cosmic Essence",
-			["item:37701:0:0:0:0:0:0"] = "Crystallized Earth",
+			["item:16203:0:0:0:0:0:0"] = "Greater Eternal Essence",
 			["item:39151:0:0:0:0:0:0"] = "Alabaster Pigment",
 			["item:61981:0:0:0:0:0:0"] = "Inferno Ink",
 			["item:43126:0:0:0:0:0:0"] = "Ink of the Sea",
@@ -285,7 +285,7 @@ TradeSkillMaster_ShoppingDB = {
 			["item:36927:0:0:0:0:0:0"] = "Twilight Opal",
 			["item:10938:0:0:0:0:0:0"] = "Lesser Magic Essence",
 			["item:37705:0:0:0:0:0:0"] = "Crystallized Water",
-			["item:16203:0:0:0:0:0:0"] = "Greater Eternal Essence",
+			["item:37701:0:0:0:0:0:0"] = "Crystallized Earth",
 			["item:23107:0:0:0:0:0:0"] = "Shadow Draenite",
 			["item:11134:0:0:0:0:0:0"] = "Lesser Mystic Essence",
 			["item:11135:0:0:0:0:0:0"] = "Greater Mystic Essence",
@@ -294,7 +294,7 @@ TradeSkillMaster_ShoppingDB = {
 			["item:11139:0:0:0:0:0:0"] = "Large Glowing Shard",
 			["item:61978:0:0:0:0:0:0"] = "Blackfallow Ink",
 			["item:76141:0:0:0:0:0:0"] = "Imperial Amethyst",
-			["item:11084:0:0:0:0:0:0"] = "Large Glimmering Shard",
+			["item:115504:0:0:0:0:0:0"] = "Fractured Temporal Crystal",
 			["item:36917:0:0:0:0:0:0"] = "Bloodstone",
 			["item:36924:0:0:0:0:0:0"] = "Sky Sapphire",
 			["item:23117:0:0:0:0:0:0"] = "Azure Moonstone",
