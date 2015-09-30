@@ -1,6 +1,6 @@
 local L, _, T = GetLocale(), ...
--- See https://www.townlong-yak.com/opie/localization
 
+-- See https://www.townlong-yak.com/opie/localization
 T.L =
 L == "deDE" and {
 	["(%.1f sec)"] = "(%.1f sek)",
@@ -49,7 +49,7 @@ L == "deDE" and {
 	["Customize OPie by modifying existing rings, or creating your own."] = "Passe OPie durch modifizieren existierender Ringe, oder durch erstellen deiner eigenen, an.",
 	["Customize OPie key bindings below. |cffa0a0a0Gray|r and |cffFA2800red|r bindings conflict with others and are not currently active."] = "Hier können die Tastaturbelegungen für OPie angepasst werden. |cffa0a0a0Graue|r und |cffFA2800Rote|r Belegungen kollidieren mit anderen und sind im Moment nicht aktiv.",
 	["Customize OPie's appearance and behavior. Right clicking a checkbox restores it to its default state."] = "Einstellungen für OPies Aussehen und Verhalten. Ein Rechtsklick auf eine Checkbox stellt den Standardwert wieder her.",
-	["Custom Macro"] = "Kundenmakro",
+	["Custom Macro"] = "Eigenes Makro",
 	["Custom Rings"] = "Eigene Ringe",
 	DataBroker = "DataBroker",
 	["(default)"] = "(Standard)",
@@ -94,13 +94,13 @@ L == "deDE" and {
 	Miscellaneous = "Verschiedenes",
 	Mount = "Reittier",
 	Mounts = "Reittiere",
-	["Move rings down"] = "Ringe nach unden bewegen",
+	["Move rings down"] = "Ringe nach unten bewegen",
 	["Move rings right"] = "Ringe nach rechts bewegen",
 	["Nested rings"] = "Verschachtelte Ringe",
 	["New profile name:"] = "Name des neuen Profils:",
 	["New Ring..."] = "Neuer Ring...",
 	["New ring name:"] = "Name des neuen Rings:",
-	["No %s specializations"] = "Keine %s Buchstaben",
+	["No %s specializations"] = "Keine %s Spezialisierungen",
 	["Not bound"] = "nicht belegt",
 	["Only %s"] = "Nur %s",
 	["Only show when equipped"] = "Zeige nur wenn angelegt",
@@ -114,7 +114,7 @@ L == "deDE" and {
 	["Paladin Buffs"] = "Paladinstärkungszauber",
 	["Per-slice bindings"] = "Abschnitt-spezifische Tastenbelegungen",
 	["Per-slice icons"] = "Abschnitt-spezifische Icons",
-	["Pet abilities"] = "Begleitersfähigkeiten",
+	["Pet abilities"] = "Begleiterfähigkeiten",
 	["Pointer rotation speed"] = "Drehgeschwindeigkeit des Zeigers",
 	["Portals and Teleports"] = "Portale und Teleportierungen",
 	["Pre-select a quick action slice"] = "Abschnitt für die Schnellwahl auswählen",
@@ -164,15 +164,15 @@ L == "deDE" and {
 	["Target Markers"] = "Zielmarkierungen",
 	["The binding will update to reflect the value of this macro conditional."] = "Die Tastaturbelegung wird aktualisiert, um den Wert dieser Makro-Bedingung widerzuspiegeln.",
 	["The following macro command opens this ring:"] = "Das folgende Macro Kommando öffnet diesen Ring:",
-	["This binding is currently used by another addon."] = "Diese Belegung ist bereits von einem anderen Addon benutzt.",
+	["This binding is currently used by another addon."] = "Diese Belegung wird bereits von einem anderen Addon benutzt.",
 	["This binding is not currently active because it conflicts with another."] = "Diese Belegung ist nicht aktiv, weil sie mit ein anderen kollidiert.",
 	["To enable the default binding for this ring, check this box or change the binding."] = "Wähle dieses Feld oder ändere die Belegung, um die Standardbelegung zu nutzen.",
 	Toy = "Spielzeug",
 	["Trade Skills"] = "Handwerksfertigkeiten",
 	Traps = "Fallen",
-	Trinkets = "Schmucke",
+	Trinkets = "Schmuckstücke",
 	Unbind = "Belegung löschen",
-	["Understood; edit anyway"] = "Verstanden. Bearbeiten sowieso.",
+	["Understood; edit anyway"] = "Verstanden. Trotzdem bearbeiten.",
 	["Undo changes"] = "Änderung rückgängig machen",
 	["Use default ring bindings"] = "Standardbelegungen nutzen",
 	["Visibility conditional:"] = "Sichtbarkeits-Bedingung:",
@@ -990,12 +990,12 @@ L == "zhTW" and {
 	["Other Bindings"] = "其它快捷鍵",
 	["Outward spiral on hide"] = "旋轉消失",
 	["Paladin Buffs"] = "聖騎士光環",
-	["Per-slice bindings"] = "單一功能的快捷鍵",
-	["Per-slice icons"] = "單一功能的圖示",
+	["Per-slice bindings"] = "每個功能各自綁定快捷鍵",
+	["Per-slice icons"] = "每個功能各自的圖示",
 	["Pet abilities"] = "寵物技能",
 	["Pointer rotation speed"] = "指標旋轉速度",
 	["Portals and Teleports"] = "傳送門和傳送術",
-	["Pre-select a quick action slice"] = "預選一個快速功能",
+	["Pre-select a quick action slice"] = "預選一個功能設為快速動作",
 	Presences = "領域",
 	["Press |cffffffffEnter|r to search"] = "按 |cffffffffEnter|r 搜尋",
 	["Press ENTER to save."] = "按 Enter 儲存。",
@@ -1070,5 +1070,4 @@ Any changes you make now will not be saved.]=] ] = "記憶體不足! 魔獸世�
 	["You may use extended macro conditionals; see |cff33DDFF%s|r for details."] = "可以使用擴充的巨集條件式；請參考 |cff33DDFF%s|r 的詳細內容。",
 	["You must enable the %s option for this ring in OPie options to use quick actions."] = "要使用快速功能，必須在 OPie 選項中替這個環啟用 %。",
 	["Zoom-in/out time"] = "旋入/旋出時間",
-} or
-nil
+}

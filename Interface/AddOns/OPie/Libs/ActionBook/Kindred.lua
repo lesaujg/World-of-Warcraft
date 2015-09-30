@@ -288,7 +288,7 @@ function core:DeferExecute(snippet, key)
 	end
 end
 core:RegisterEvent("PLAYER_REGEN_ENABLED")
-core:SetScript("OnEvent", function(self, e)
+core:SetScript("OnEvent", function(self)
 	for k,v in pairs(execQueue) do
 		securecall(self.DeferExecute, self, v)
 		execQueue[k] = nil

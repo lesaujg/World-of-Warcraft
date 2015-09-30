@@ -1,4 +1,4 @@
-local apiV, api, MAJ, REV, ext, T = {}, {}, 2, 14, ...
+local apiV, api, MAJ, REV, ext, T = {}, {}, 2, 15, ...
 if T.ActionBook then return end
 apiV[MAJ], ext, T.Kindred, T.Rewire = api, {Kindred=T.Kindred, Rewire=T.Rewire, ActionBook={}}
 
@@ -175,7 +175,7 @@ local DeferExecute do
 			core:Execute(block)
 		end
 	end
-	core:SetScript("OnEvent", function(self, event)
+	core:SetScript("OnEvent", function()
 		for i=1,#q do
 			q[i] = DeferExecute(q[i])
 		end
@@ -241,7 +241,7 @@ end
 local function nullInfoFunc() return false end
 
 local getActionIdent, getActionArgs do
-	function getActionIdent(identTable, ...)
+	function getActionIdent(identTable)
 		local itt = type(identTable)
 		if itt == "string" then
 			return identTable, nil
@@ -251,7 +251,7 @@ local getActionIdent, getActionArgs do
 	end
 	local function index(t, a, ...)
 		if a then
-			return t[a], index(t, api:GetActionOptions(t[1]))
+			return t[a], index(t, ...)
 		end
 	end
 	local function unfold(t, i)
@@ -426,8 +426,8 @@ end
 
 apiV[1] = {uniq=api.CreateToken, get=api.GetActionSlot, describe=api.GetActionDescription, info=api.GetSlotInfo, options=api.GetActionOptions, actionType=api.GetSlotImplementation,
 	register=api.RegisterActionType, update=api.UpdateActionSlot, notify=api.NotifyObservers, observe=api.AddObserver, lastupdate=api.GetLastObserverUpdateToken, compatible=api.compatible} do
-	apiV[1].miscaction = function(self, ...) return api:AddActionToCategory("Miscellaneous", ...) end
-	apiV[1].category = function(self, name, numFunc, getFunc)
+	apiV[1].miscaction = function(_self, ...) return api:AddActionToCategory("Miscellaneous", ...) end
+	apiV[1].category = function(_self, name, numFunc, getFunc)
 		assert(type(name) == "string" and type(numFunc) == "function" and type(getFunc) == "function", 'Syntax: ActionBook:category("name", countFunc, entryFunc)')
 		local count = numFunc()
 		assert(type(count) == "number" and count >= 0, "countFunc() must return a non-negative integer")
@@ -443,7 +443,7 @@ apiV[1] = {uniq=api.CreateToken, get=api.GetActionSlot, describe=api.GetActionDe
 	proxy:SetAttribute("collection", "return core:RunAttribute('GetCollectionContent', ...)")
 	proxy:SetAttribute("triggerMacro", "return core:RunAttribute('UseAction', ...)")
 	apiV[1].seclib = function() return proxy end
-	apiV[1].create = function(self, atype, hint, ...)
+	apiV[1].create = function(_self, atype, hint, ...)
 		assert(type(atype) == "string" and (hint == nil or type(hint) == "function"), 'Syntax: id = ActionBook:create("actionType", hintFunc, ...)')
 		return api:CreateActionSlot(hint, nextActionId, atype, ...)
 	end

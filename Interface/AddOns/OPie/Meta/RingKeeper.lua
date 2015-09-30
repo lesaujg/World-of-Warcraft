@@ -1,5 +1,5 @@
 local RingKeeper, _, T = {}, ...
-local RK_RingDesc, RK_CollectionIDs, RK_Version, RK_Rev, EV, SV = {}, {}, 2, 43, T.Evie
+local RK_RingDesc, RK_CollectionIDs, RK_Version, RK_Rev, EV, SV = {}, {}, 2, 44, T.Evie
 local unlocked, queue, RK_DeletedRings, RK_FlagStore, sharedCollection = false, {}, {}, {}, {}
 _ = T.Toboe and T.Toboe()
 
@@ -9,6 +9,7 @@ end
 
 local AB = assert(T.ActionBook:compatible(2,14), "A compatible version of ActionBook is required")
 local ORI = OneRingLib.ext.OPieUI
+local CLASS, NAME, FULLNAME
 
 local RK_ParseMacro, RK_QuantizeMacro do -- +RingKeeper:SetMountPreference(groundSpellID, airSpellID)
 	local castAlias = {[SLASH_CAST1]=1,[SLASH_CAST2]=1,[SLASH_CAST3]=1,[SLASH_CAST4]=1,[SLASH_USE1]=1,[SLASH_USE2]=1,["#show"]=1,["#showtooltip"]=1,["#rkrequire"]=0,[SLASH_CASTSEQUENCE1]=2,[SLASH_CASTSEQUENCE2]=2,[SLASH_CASTRANDOM1]=3,[SLASH_CASTRANDOM2]=3}
@@ -171,11 +172,10 @@ local RK_ParseMacro, RK_QuantizeMacro do -- +RingKeeper:SetMountPreference(groun
 		return type(macro) == "string" and (prepareQuantizer(useCache) or true) and ("\n" .. macro):gsub("(\n([#/]%S+) ?)([^\n]*)", quantizeLine):sub(2) or macro
 	end
 end
-local RK_IsRelevantRingDescription, CLASS do
-	local name, _ = UnitName("player")
-	_, CLASS = UnitClass("player")
-	function RK_IsRelevantRingDescription(desc)
-		return desc and (desc.limit == nil or desc.limit == name or desc.limit == CLASS)
+local function RK_IsRelevantRingDescription(desc)
+	if desc then
+		local limit = desc.limit
+		return limit == nil or limit == FULLNAME or limit == CLASS
 	end
 end
 local serialize, unserialize do
@@ -381,6 +381,9 @@ local function RK_SanitizeDescription(props)
 		v.fastClick, v.fcSlice, v.onlyWhilePresent = v.fastClick or v.fcSlice -- TEMP[<L8]
 		v.sliceToken, v._action = v.sliceToken or (uprefix and type(v._u) == "string" and (uprefix .. v._u)) or AB:CreateToken()
 	end
+	if props.limit == NAME then
+		props.limit = FULLNAME
+	end
 	return props
 end
 local function RK_SerializeDescription(props)
@@ -404,7 +407,7 @@ local function abPreOpen(_, _, id)
 		RK_SyncRing(k)
 	end
 end
-local function svInitializer(event, name, sv)
+local function svInitializer(event, _name, sv)
 	if event == "LOGOUT" and unlocked then
 		for k in pairs(sv) do sv[k] = nil end
 		for k, v in pairs(RK_RingDesc) do
@@ -415,6 +418,9 @@ local function svInitializer(event, name, sv)
 		sv.OPieDeletedRings, sv.OPieFlagStore = next(RK_DeletedRings) and RK_DeletedRings, next(RK_FlagStore) and RK_FlagStore
 
 	elseif event == "LOGIN" then
+		local name, realm, _ = UnitFullName("player")
+		NAME, FULLNAME, _, CLASS = name, name .. '-' .. realm, UnitClass("player")
+
 		unlocked = true
 		local deleted, flags, mousemap = SV.OPieDeletedRings or RK_DeletedRings, SV.OPieFlagStore or RK_FlagStore
 		mousemap, SV.OPieDeletedRings, SV.OPieFlagStore = {PRIMARY=OneRingLib:GetOption("PrimaryButton"), SECONDARY=OneRingLib:GetOption("SecondaryButton")}

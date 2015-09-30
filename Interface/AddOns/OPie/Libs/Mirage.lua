@@ -75,7 +75,7 @@ end
 function indicatorAPI:SetIconVertexColor(r,g,b)
 	self.icon:SetVertexColor(r,g,b)
 end
-function indicatorAPI:SetUsable(usable, usableCharge, cd, nomana, norange)
+function indicatorAPI:SetUsable(usable, _usableCharge, _cd, nomana, norange)
 	local state = usable and 0 or (norange and 1 or (nomana and 2 or 3))
 	if self.ustate == state then return end
 	self.ustate = state

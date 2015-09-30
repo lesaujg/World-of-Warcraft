@@ -19,7 +19,7 @@ end
 do -- ext.config.ui
 	config.ui = {}
 	do -- multilineInput
-		local function onNavigate(self, x,y, w,h)
+		local function onNavigate(self, _x,y, _w,h)
 			local scroller = self.scroll
 			local occH, occP, y = scroller:GetHeight(), scroller:GetVerticalScroll(), -y
 			if occP > y then
@@ -309,14 +309,14 @@ do -- ext.config.overlay
 		promptFrame.editBox:SetScript("OnTextChanged", function(self)
 			promptFrame.accept:SetEnabled(promptFrame.callback == nil or promptFrame.callback(self, self:GetText() or "", false, promptFrame:GetParent():GetParent()))
 		end)
-		promptFrame.accept:SetScript("OnClick", function(self)
+		promptFrame.accept:SetScript("OnClick", function()
 			local callback, text = promptFrame.callback, promptFrame.editBox:GetText() or ""
 			if callback == nil or callback(promptFrame.editBox, text, true, promptFrame:GetParent():GetParent()) then
 				promptFrame:Hide()
 			end
 		end)
-		promptFrame.editBox:SetScript("OnEnterPressed", function(self) promptFrame.accept:Click() end)
-		promptFrame.editBox:SetScript("OnEscapePressed", function(self) promptFrame.cancel:Click() end)
+		promptFrame.editBox:SetScript("OnEnterPressed", function() promptFrame.accept:Click() end)
+		promptFrame.editBox:SetScript("OnEscapePressed", function() promptFrame.cancel:Click() end)
 	end
 	function config.prompt(frame, title, prompt, explainText, acceptText, callback, editBoxWidth, cancelText)
 		promptFrame.callback = callback

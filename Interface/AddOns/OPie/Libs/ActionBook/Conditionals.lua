@@ -219,7 +219,7 @@ do -- glyph:name/glyph id
 		end})
 	end
 	local state, marker, w = {}, 1, {}
-	local function sync(e)
+	local function sync()
 		marker = -marker
 		local changed
 		for i=1,GetNumGlyphSockets() do
@@ -292,9 +292,9 @@ do -- ready:spell name/spell id/item name/item id
 		local gcS, gcL = GetSpellCooldown(61304)
 		local gcE = gcS and gcL and (gcS + gcL) or math.huge
 		for i=1,#at do
-			local rc, j = at[i], 1
-			local cdS, cdL, cdA = GetSpellCooldown(rc)
-			if cdL == nil then cdS, cdL, cdA = GetItemCooldown(rc) end
+			local rc = at[i]
+			local cdS, cdL, _cdA = GetSpellCooldown(rc)
+			if cdL == nil then cdS, cdL, _cdA = GetItemCooldown(rc) end
 			if cdL == 0 or (cdS and cdL and (cdS + cdL) <= gcE) then
 				return true
 			end

@@ -1,5 +1,6 @@
 
-local major, minor = "DetailsFramework-1.0", 9
+local dversion = 10
+local major, minor = "DetailsFramework-1.0", dversion
 local DF, oldminor = LibStub:NewLibrary (major, minor)
 
 if (not DF) then
@@ -8,6 +9,7 @@ if (not DF) then
 end
 
 DetailsFrameworkCanLoad = true
+local SharedMedia = LibStub:GetLibrary ("LibSharedMedia-3.0")
 
 local _type = type
 local _unpack = unpack
@@ -22,6 +24,11 @@ DF.PanelCounter = 1
 DF.ButtonCounter = 1
 DF.SliderCounter = 1
 DF.SplitBarCounter = 1
+
+DF.FrameWorkVersion = tostring (dversion)
+function DF:PrintVersion()
+	print ("Details! Framework Version:", DF.FrameWorkVersion)
+end
 
 LibStub:GetLibrary("AceTimer-3.0"):Embed (DF)
 
@@ -188,8 +195,10 @@ function DF:SetFontSize (fontString, ...)
 	fontString:SetFont (fonte, max (...), flags)
 end
 function DF:SetFontFace (fontString, fontface)
-
-	
+	local font = SharedMedia:Fetch ("font", fontface, true)
+	if (font) then
+		fontface = font
+	end
 
 	local _, size, flags = fontString:GetFont()
 	fontString:SetFont (fontface, size, flags)
@@ -543,7 +552,11 @@ end
 	local tn = tonumber
 	function DF:ParseColors (_arg1, _arg2, _arg3, _arg4)
 		if (_type (_arg1) == "table") then
-			_arg1, _arg2, _arg3, _arg4 = _unpack (_arg1)
+			if (not _arg1[1] and _arg1.r) then
+				_arg1, _arg2, _arg3, _arg4 = _arg1.r, _arg1.g, _arg1.b, _arg1.a
+			else
+				_arg1, _arg2, _arg3, _arg4 = _unpack (_arg1)
+			end
 		
 		elseif (_type (_arg1) == "string") then
 		

@@ -413,7 +413,7 @@ do
 	api:AddCommandAliases(SLASH_USERANDOM1, getAliases("SLASH_CASTRANDOM", 1))
 	setCommandType(SLASH_CASTSEQUENCE1, 1+2+4+8)
 	api:RegisterCommand("/runmacro", true, false, core)
-	api:SetCommandHint("/runmacro", math.huge, function(slash, _, ...)
+	api:SetCommandHint("/runmacro", math.huge, function(_slash, _, ...)
 		local f = namedMacros[...]
 		if f then return f(...) end
 	end)

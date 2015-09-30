@@ -22,17 +22,18 @@ do -- spell: spell ID + mount spell ID
 	end
 	local actionMap, spellMap, mountMap, spellMountID = {}, {}, {}, {}
 	local companionUpdate do -- maintain mountMap/spellMountID
-		function companionUpdate(event)
+		function companionUpdate(_event)
 			local changed, myFactionId = false, UnitFactionGroup("player") == "Horde" and 0 or 1
 			for i=1, C_MountJournal.GetNumMounts() do
-				local exists, _1, sid, _3, _4, _5, _6, _7, factionLocked, factionId, hide, have = false, C_MountJournal.GetMountInfo(i)
+				local exists, oldMap, _1, sid, _3, _4, _5, _6, _7, factionLocked, factionId, hide, have = false, nil, C_MountJournal.GetMountInfo(i)
+				spellMountID[sid], oldMap, mountMap[sid] = i, mountMap[sid], nil
 				if not hide and (not factionLocked or factionId == myFactionId) then
 					local sname, srank, rname = GetSpellInfo(sid)
 					exists, rname = have and GetSpellInfo(sname, srank) ~= nil, (sname .. "(" .. (srank or "") .. ")") -- Paladin/Warlock/Death Knight horses have spell ranks
-					spellMountID[sid], mountMap[sid], mountMap[sname], mountMap[sname:lower()], mountMap[rname], mountMap[rname:lower()] =
-						i, exists and rname, sid, sid, sid, sid
+					mountMap[sid], mountMap[sname], mountMap[sname:lower()], mountMap[rname], mountMap[rname:lower()] =
+						exists and rname or nil, sid, sid, sid, sid
 				end
-				changed = changed or exists ~= (mountMap[sid] ~= nil)
+				changed = changed or (oldMap ~= mountMap[sid])
 			end
 			if changed then AB:NotifyObservers("spell") end
 		end
@@ -328,7 +329,7 @@ do -- macro: name
 		end
 		return pri, ...
 	end
-	local function tail(a, ...)
+	local function tail(_, ...)
 		return ...
 	end
 	local function hint(name, modState)
@@ -530,7 +531,7 @@ do -- extrabutton
 	local aid2 = AB:CreateActionSlot(hint, nil, "attribute", "type","action", "action",slot)
 	AB:RegisterActionType("extrabutton", function(id, forceShow)
 		return id == 1 and (forceShow and aid2 or aid) or nil
-	end, function(id)
+	end, function()
 		local name, tex = "Extra Action Button", "Interface/Icons/Temp"
 		if HasExtraActionBar() then
 			local at, aid = GetActionInfo(slot)

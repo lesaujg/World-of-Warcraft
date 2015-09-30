@@ -53,7 +53,7 @@ local cap = CreateFrame("Frame", nil, frame)
 	cap:SetPoint("LEFT", 5, 0)
 	cap:SetPoint("RIGHT", -10, 0)
 	cap:SetPoint("BOTTOM", btnUnbind, "TOP", 0, 2)
-	cap:SetScript("OnMouseWheel", function(self, delta)
+	cap:SetScript("OnMouseWheel", function(_, delta)
 		local b = delta == 1 and btnUp or btnDown
 		if b:IsEnabled() and not btnUnbind:IsEnabled() then b:Click() end
 	end)

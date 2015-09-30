@@ -1,7 +1,14 @@
 local api, L, RK, conf, ORI, _, T = {}, OneRingLib.lang, OneRingLib.ext.RingKeeper, OneRingLib.ext.config, OneRingLib.ext.OPieUI, ...
 local AB = assert(T.ActionBook:compatible(2,14), "A compatible version of ActionBook is required")
-local gfxBase = ([[Interface\AddOns\%s\gfx\]]):format((...))
+local gfxBase, EV = ([[Interface\AddOns\%s\gfx\]]):format((...)), T.Evie
 _ = T.Toboe and T.Toboe()
+
+local FULLNAME, SHORTNAME do
+	function EV.PLAYER_LOGIN()
+		local name, realm = UnitFullName("player")
+		FULLNAME, SHORTNAME = name .. "-" .. realm, name
+	end
+end
 
 local function prepEditBoxCancel(self)
 	self.oldValue = self:GetText()
@@ -917,13 +924,14 @@ local function sortNames(a,b)
 	return oa < ob or (oa == ob and ta < tb) or (oa == ob and ta == tb and na < nb) or false
 end
 function ringDropDown:initialize(level, nameList)
-	local info, playerName = UIDropDownMenu_CreateInfo(), UnitName("player")
+	local info, playerName, playerServer = UIDropDownMenu_CreateInfo(), UnitFullName("player")
+	local playerFullName = playerName .. "-" .. playerServer
 	info.func, info.minWidth = api.selectRing, level == 1 and (self:GetWidth()-40) or nil
 	if level == 1 then
 		ringNames = {hidden={}, other={}}
 		for name, dname, active, slices, internal, limit in RK:GetManagedRings() do
 			table.insert(active and (internal and ringNames.hidden or ringNames) or ringNames.other, name)
-			local rtype = type(limit) ~= "string" and "GLOBAL" or limit == playerName and "MINE" or limit:match("[^A-Z]") and "PERSONAL" or limit
+			local rtype = type(limit) ~= "string" and "GLOBAL" or limit == playerFullName and "MINE" or limit:match("[^A-Z]") and "PERSONAL" or limit
 			ringNameMap[name], ringOrderMap[name], ringTypeMap[name] = dname, (not active and (rtype == "PERSONAL" and 12 or 10)) or (limit and (limit:match("[^A-Z]") and 0 or 2)), rtype
 		end
 		table.sort(ringNames, sortNames)
@@ -954,7 +962,7 @@ function api.createRing(name, data)
 	if name == "" then return false end
 	local iname = RK:GenFreeRingName(name)
 	SaveRingVersion(iname, false)
-	data.name, data.limit = name, data.limit == "PLAYER" and UnitName("player") or (type(data.limit) == "string" and not data.limit:match("[^A-Z]") and data.limit or nil)
+	data.name, data.limit = name, data.limit == "PLAYER" and FULLNAME or (type(data.limit) == "string" and not data.limit:match("[^A-Z]") and data.limit or nil)
 	api.saveRing(iname, data)
 	api:selectRing(iname)
 	return true
@@ -1038,7 +1046,7 @@ function sliceDetail.skipSpecs:text()
 	end
 	UIDropDownMenu_SetText(self, text)
 end
-function sliceDetail.skipSpecs:initialize(level)
+function sliceDetail.skipSpecs:initialize()
 	local info, skip = UIDropDownMenu_CreateInfo(), self.val or ""
 	info.func, info.isNotRadio, info.minWidth, info.keepShownOnClick = self.toggle, true, self:GetWidth()-40, true
 	for i=1, GetNumSpecializations() do
@@ -1047,13 +1055,13 @@ function sliceDetail.skipSpecs:initialize(level)
 		UIDropDownMenu_AddButton(info)
 	end
 end
-function ringDetail.scope:initialize(level)
-	local name, info = UnitName("player"), UIDropDownMenu_CreateInfo()
+function ringDetail.scope:initialize()
+	local info = UIDropDownMenu_CreateInfo()
 	info.func, info.minWidth, info.text, info.checked = self.set, self:GetWidth()-40, L"All characters", currentRing.limit == nil
 	UIDropDownMenu_AddButton(info)
 	info.text, info.checked, info.arg1 = (L"All %s characters"):format("|cff" .. PLAYER_CLASS_COLOR_HEX .. PLAYER_CLASS .. "|r"), currentRing.limit == PLAYER_CLASS_UC, PLAYER_CLASS_UC
 	UIDropDownMenu_AddButton(info)
-	info.text, info.checked, info.arg1 = (L"Only %s"):format("|cff" .. PLAYER_CLASS_COLOR_HEX .. name .. "|r"), currentRing.limit == name, name
+	info.text, info.checked, info.arg1 = (L"Only %s"):format("|cff" .. PLAYER_CLASS_COLOR_HEX .. SHORTNAME .. "|r"), currentRing.limit == FULLNAME, FULLNAME
 	UIDropDownMenu_AddButton(info)
 end
 function ringDetail.scope:set(arg1)
@@ -1062,7 +1070,7 @@ end
 function ringDetail.scope:text()
 	local limit = currentRing.limit
 	UIDropDownMenu_SetText(self, type(limit) ~= "string" and L"All characters" or
-		limit:match("[^A-Z]") and (L"Only %s"):format("|cff" .. (limit == UnitName("player") and PLAYER_CLASS_COLOR_HEX or "d659ff") .. limit .. "|r") or
+		limit:match("[^A-Z]") and (L"Only %s"):format("|cff" .. (limit == FULLNAME and PLAYER_CLASS_COLOR_HEX .. SHORTNAME or ("d659ff" .. limit)) .. "|r") or
 		RAID_CLASS_COLORS[limit] and (L"All %s characters"):format("|cff" .. RAID_CLASS_COLORS[limit].colorStr:sub(3) .. (UnitSex("player") == 3 and LOCALIZED_CLASS_NAMES_FEMALE or LOCALIZED_CLASS_NAMES_MALE)[limit] .. "|r")
 	)
 end
@@ -1322,7 +1330,7 @@ end
 OneRingLib.ext.CustomRingsConfig = {addProperty=addProp}
 
 SLASH_OPIE_CUSTOM_RINGS1 = "/rk"
-function SlashCmdList.OPIE_CUSTOM_RINGS(args)
+function SlashCmdList.OPIE_CUSTOM_RINGS()
 	if not panel:IsVisible() then
 		InterfaceOptionsFrame_OpenToCategory(panel)
 		InterfaceOptionsFrame_OpenToCategory(panel)

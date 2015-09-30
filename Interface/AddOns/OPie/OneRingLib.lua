@@ -44,7 +44,7 @@ local safequote do
 		return (("%q"):format(s):gsub("[{}u]", r))
 	end
 end
-getmetatable(L).__call, T.L = TL and function(self,k) return TL[k] or k end or function(self,k) return k end, L
+getmetatable(L).__call, T.L = TL and function(_,k) return TL[k] or k end or function(_,k) return k end, L
 
 local function OR_GetRingOption(ringName, option)
 	if not configInstance then return defaultConfig[option], nil, nil, nil, defaultConfig[option] end

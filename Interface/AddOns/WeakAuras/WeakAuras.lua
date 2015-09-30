@@ -63,11 +63,11 @@ local registeredFromAddons;
 WeakAuras.addons = {};
 local addons = WeakAuras.addons;
 
--- A list of tutorials, filled in by the WeakAuraTutorial addon by callling RegisterTutorial
+-- A list of tutorials, filled in by the WeakAuras_Tutorials addon by calling RegisterTutorial
 WeakAuras.tutorials = {};
 local tutorials = WeakAuras.tutorials;
 
--- used if an addon tries to register a display under an id, that the user already has a display with that id
+-- used if an addon tries to register a display under an id that the user already has a display with that id
 WeakAuras.collisions = {};
 local collisions = WeakAuras.collisions;
 
@@ -288,20 +288,26 @@ local overrideFunctions = {
 
 local aura_environments = {};
 local current_aura_env = nil;
+local aura_env_stack = {}; -- Stack of of aura environments, allows use of recursive aura activations through calls to WeakAuras.ScanEvents().
 function WeakAuras.ActivateAuraEnvironment(id)
   if(not id or not db.displays[id]) then
-    -- Don't point to the previous aura's environment if an invalid id/display was supplied
-    current_aura_env = nil;
+    -- Pop the last aura_env from the stack, and update current_aura_env appropriately.
+    tremove(aura_env_stack);
+    current_aura_env = aura_env_stack[#aura_env_stack] or nil;
   else
     local data = db.displays[id];
     if data.init_completed then
       -- Point the current environment to the correct table
       aura_environments[id] = aura_environments[id] or {};
       current_aura_env = aura_environments[id];
+      -- Push the new environment onto the stack
+      tinsert(aura_env_stack, current_aura_env);
     else
       -- Reset the environment if we haven't completed init, i.e. if we add/update/replace a WeakAura
       aura_environments[id] = {};
       current_aura_env = aura_environments[id];
+      -- Push the new environment onto the stack
+      tinsert(aura_env_stack, current_aura_env);
       -- Run the init function if supplied
       local actions = data.actions.init;
       if(actions and actions.do_custom and actions.custom) then
@@ -528,7 +534,6 @@ function WeakAuras.ConstructFunction(prototype, trigger)
             if(type(trigger[name]) == "table") then
               trigger[name] = "error";
             end
-            -- if arg.type == "number" and (trigger[name]) and not number then trigger[name] = 0 number = 0 end -- fix corrupt data, ticket #366
             test = "("..name..(trigger[name.."_operator"] or "==")..(number or "\""..(trigger[name] or "").."\"")..")";
           end
           if(arg.required) then
@@ -2887,7 +2892,7 @@ function WeakAuras.FixGroupChildrenOrder()
       local lowestRegion = WeakAuras.regions[data.controlledChildren[1]] and WeakAuras.regions[data.controlledChildren[1]].region;
       if(lowestRegion) then
         local frameLevel = lowestRegion:GetFrameLevel()
-        for i=2, #data.controlledChildren do
+        for i=1, #data.controlledChildren do
           local childRegion = WeakAuras.regions[data.controlledChildren[i]] and WeakAuras.regions[data.controlledChildren[i]].region;
           if(childRegion) then
             if frameLevel >= 100 then

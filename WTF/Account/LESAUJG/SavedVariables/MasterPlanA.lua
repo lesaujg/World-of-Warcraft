@@ -3,7 +3,7 @@ MasterPlanAG = {
 	["Sisters of Elune"] = {
 		["Bracnar"] = {
 			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1443138456,
+			["lastCacheTime"] = 1443536509,
 		},
 		["Herbinator"] = {
 		},
@@ -12,12 +12,12 @@ MasterPlanAG = {
 		["Galinar"] = {
 			["lastCacheTime"] = 1435195455,
 		},
-		["Clothgar"] = {
+		["Uldaris"] = {
+			["lastCacheTime"] = 1443536742,
 		},
 		["Ghiaccioli"] = {
 		},
-		["Uldaris"] = {
-			["lastCacheTime"] = 1443496529,
+		["Clothgar"] = {
 		},
 	},
 }

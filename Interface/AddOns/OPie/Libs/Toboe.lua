@@ -16,7 +16,7 @@ end
 function E.GetNumTalents()
 	return 21
 end
-function E.GetTalentInfo(id, isInspect, talentGroup, inspectedUnit, classId)
+function E.GetTalentInfo(id, isInspect, talentGroup, inspectedUnit, _classId)
 	local col = ((id-1) % 3)+1
 	local row = 1 + (id - col)/3
 	local _sid, name, tex, selected, available = GetTalentInfo(row, col, talentGroup or GetActiveSpecGroup() or 1, isInspect, inspectedUnit)
@@ -59,6 +59,6 @@ function T.Toboe()
 	local G, N = getfenv(2), {}
 	for k,v in pairs(E) do N[k] = v end
 	N._G = N
-	setmetatable(N, {__index=G, __newindex=function(t,k,v) G[k] = v end})
+	setmetatable(N, {__index=G, __newindex=function(_,k,v) G[k] = v end})
 	setfenv(2, N)
 end
