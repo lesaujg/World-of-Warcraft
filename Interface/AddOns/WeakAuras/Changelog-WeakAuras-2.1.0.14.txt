@@ -1,0 +1,14 @@
+tag 2.1.0.14
+42030938cd62ff67d844b8f2a07acc270cd7d0df
+Benjamin Staneck <staneck@gmail.com>
+2015-10-01 02:07:45 +0200
+
+
+
+--------------------
+
+Benjamin Staneck:
+	- Revert "BuffTrigger: Fix Unknown affected players"
+	This reverts commit 9682403ae2a17a1ce1632116a3a445d1d4dfd492.
+	- Revert "Internal => WeakAuras"
+	This reverts commit 2d50ff3dd029fb09ae1c66d0dfb64bbc1eed0e29.

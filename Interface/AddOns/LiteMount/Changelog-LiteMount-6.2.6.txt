@@ -1,0 +1,16 @@
+tag 6.2.6
+b8b2760f60b6bd034073545e6c046355672addd7
+Mike "Xodiv" Battersby <mib@post.com>
+2015-10-02 22:02:05 +1000
+
+Match the Blizzard random mount logic for swimming:
+  - Turtles aren't summoned when swimming (by default)
+  - Water Striders are summoned when swimming (by default)
+Manually change the flags in the settings to get the old behaviour back.
+
+
+--------------------
+
+Mike "Xodiv" Battersby:
+	- Turtles no longer swim by default. Water Striders swim by default. To match how the Blizzard random mount magic works.
+	- Move button debug print out of Mount to Core

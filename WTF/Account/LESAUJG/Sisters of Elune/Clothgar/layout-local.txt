@@ -1,4 +1,11 @@
 Version: 1
+Frame: TSMMainFrame1
+FrameLevel: 17
+Anchor: BOTTOM
+X: 36
+Y: -37
+W: 985
+H: 679
 Frame: _NPCScanButton
 FrameLevel: 1
 Anchor: BOTTOM

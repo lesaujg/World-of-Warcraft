@@ -6,6 +6,13 @@ X: -79
 Y: -59
 W: 250
 H: 417
+Frame: BaudManifestDisplay2
+FrameLevel: 61
+Anchor: BOTTOMLEFT
+X: 254
+Y: 95
+W: 250
+H: 411
 Frame: DBMMinimapButton
 FrameLevel: 3
 Anchor: TOPRIGHT
