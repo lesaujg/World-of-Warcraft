@@ -7,7 +7,7 @@ Y: -59
 W: 250
 H: 417
 Frame: BaudManifestDisplay2
-FrameLevel: 61
+FrameLevel: 45
 Anchor: BOTTOMLEFT
 X: 254
 Y: 95
@@ -27,10 +27,10 @@ X: 0
 Y: 128
 W: 150
 H: 42
-Frame: TSMCraftingTradeSkillFrame
-FrameLevel: 44
-Anchor: LEFT
-X: 28
-Y: 171
-W: 450
-H: 500
+Frame: TSMCraftingGatherFrame
+FrameLevel: 0
+Anchor: RIGHT
+X: -153
+Y: 143
+W: 325
+H: 400
