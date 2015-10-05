@@ -312,6 +312,7 @@ TradeSkillMaster_ShoppingDB = {
 			"Abyss Crystal/exact/x2", -- [99]
 			"legion", -- [100]
 		},
+		["sidebarBtn"] = 2,
 	},
 	["profileKeys"] = {
 		["Sanjuri - Sisters of Elune"] = "Sanjuri - Sisters of Elune",
