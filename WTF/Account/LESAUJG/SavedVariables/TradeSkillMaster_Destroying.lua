@@ -22,44 +22,44 @@ TradeSkillMaster_DestroyingDB = {
 		["history"] = {
 			["Disenchant"] = {
 				{
-					["time"] = 1439410447,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:22445:0:0:0:0:0:0"] = 3,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:24674:0:0:0:0:0:-9",
+					["time"] = 1439410447,
 				}, -- [1]
 				{
-					["time"] = 1439410450,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:22445:0:0:0:0:0:0"] = 3,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:25007:0:0:0:0:0:-26",
+					["time"] = 1439410450,
 				}, -- [2]
 				{
-					["time"] = 1439651057,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:22445:0:0:0:0:0:0"] = 3,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:24914:0:0:0:0:0:-39",
+					["time"] = 1439651057,
 				}, -- [3]
 				{
-					["time"] = 1439651062,
-					["isDraenicEnchanting"] = true,
 					["result"] = {
 						["item:22446:0:0:0:0:0:0"] = 1,
 					},
+					["isDraenicEnchanting"] = true,
 					["item"] = "item:24680:0:0:0:0:0:-19",
+					["time"] = 1439651062,
 				}, -- [4]
 				{
+					["item"] = "item:24679:0:0:0:0:0:-38",
+					["isDraenicEnchanting"] = true,
+					["time"] = 1439684726,
 					["result"] = {
 						["item:22445:0:0:0:0:0:0"] = 5,
 					},
-					["isDraenicEnchanting"] = true,
-					["item"] = "item:24679:0:0:0:0:0:-38",
-					["time"] = 1439684726,
 				}, -- [5]
 			},
 		},

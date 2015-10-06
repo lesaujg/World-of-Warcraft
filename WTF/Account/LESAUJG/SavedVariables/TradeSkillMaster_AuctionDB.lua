@@ -18,8 +18,8 @@ TradeSkillMaster_AuctionDBDB = {
 	},
 	["realm"] = {
 		["Sisters of Elune"] = {
-			["lastCompleteScan"] = 1444013250,
-			["appDataUpdate"] = 1444013250,
+			["lastCompleteScan"] = 1444099650,
+			["appDataUpdate"] = 1444099650,
 			["appHelperNoticeShown"] = true,
 		},
 	},
