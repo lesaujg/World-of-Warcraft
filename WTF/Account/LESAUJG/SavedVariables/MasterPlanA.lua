@@ -3,7 +3,7 @@ MasterPlanAG = {
 	["Sisters of Elune"] = {
 		["Bracnar"] = {
 			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1443964038,
+			["lastCacheTime"] = 1444155858,
 		},
 		["Herbinator"] = {
 		},
