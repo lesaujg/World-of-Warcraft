@@ -1,4 +1,4 @@
-local api, MAJ, REV, _, T = {}, 1, 5, ...
+local api, MAJ, REV, _, T = {}, 1, 6, ...
 if T.ActionBook then return end
 local KR = assert(T.Kindred:compatible(1,8), "A compatible version of Kindred is required.")
 
@@ -49,7 +49,7 @@ local core, coreEnv = CreateFrame("FRAME", nil, nil, "SecureHandlerBaseTemplate"
 		idle, cache, numIdle, numActive, ns = newtable(), newtable(), 0, 0, 0
 		macros, commandInfo, commandHandler, commandAlias = newtable(), newtable(), newtable(), newtable()
 		MACRO_TOKEN, metaCommands, transferTokens = newtable(nil, nil, nil, "MACRO_TOKEN"), newtable(), newtable()
-		metaCommands.mute, metaCommands.unmute, metaCommands.mutenext = 1, 1, 1
+		metaCommands.mute, metaCommands.unmute, metaCommands.mutenext, metaCommands.parse = 1, 1, 1, 1
 		for _, k in pairs(self:GetChildList(newtable())) do
 			idle[k], numIdle = 1, numIdle + 1
 			k:SetAttribute("type", "macro")
@@ -83,6 +83,15 @@ core:SetAttribute("RunSlashCmd", [=[-- Rewire:Internal_RunSlashCmd
 			end
 		end
 		mutedAbove = -1, self:CallMethod("setMute", false)
+	elseif slash == "#parse" then
+		local m = execQueue[#execQueue]
+		if m and m[2] and m[3] then
+			execQueue[#execQueue] = nil
+			local parsed = KR:RunAttribute("EvaluateCmdOptions", m[3], nil, nil)
+			if parsed then
+				return m[2] .. " " .. parsed
+			end
+		end
 	elseif slash == "/runmacro" then
 		if macros[v] then
 			return macros[v]:RunAttribute("RunNamedMacro", v)
@@ -393,7 +402,7 @@ do
 	for k in ("DISMOUNT LEAVEVEHICLE SET_TITLE USE_TALENT_SPEC TARGET_MARKER"):gmatch("%S+") do
 		api:ImportSlashCmd(k, true, false)
 	end
-	for m in ("#mute #unmute #mutenext"):gmatch("%S+") do
+	for m in ("#mute #unmute #mutenext #parse"):gmatch("%S+") do
 		api:RegisterCommand(m, true, false, core)
 	end
 	api:RegisterCommand("/stopmacro", true, false, core)

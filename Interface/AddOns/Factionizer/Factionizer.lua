@@ -1,5 +1,5 @@
 ----------------------------------------------------------
--- Factionizer, a reputation management tool 6.02.00.11 15.08.26 42249.8064957176 --
+-- Factionizer, a reputation management tool 6.02.00.12 15.08.26 42278.8086288194 --
 -------------------------------------------------------
 ---------------------------
 -- _00_ Variables Set up --
@@ -26,10 +26,13 @@ FIZ_ToBFF[5] = 8400;	--> 6 - Best Friend: 42000-42999
 
 -- Addon constants
 FIZ_NAME = "Factionizer"
-FIZ_VNMBR = 6020011	-- Number code for this version
+FIZ_VNMBR = 6020012	-- Number code for this version
+local addonName, vars = ...
+local L = vars.L
+FIZ = vars
 
 -- Colours
-FIZ_HELP_COLOUR = "|cFFFFFF7F"
+FIZ_Help_COLOUR = "|cFFFFFF7F"
 FIZ_NEW_REP_COLOUR = "|cFF7F7FFF"
 FIZ_NEW_STANDING_COLOUR = "|cFF6060C0"
 FIZ_BAG_COLOUR = "|cFFC0FFC0"
@@ -149,25 +152,24 @@ end
 ------------------------
 
 function FIZ_OnEvent(self, event, ...)
-	--- fpt	FIZ_Printtest("Event Handler ",tostring(Event),"")
 	local arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13 = ...
 	if (event == "ADDON_LOADED") and (arg1 == FIZ_NAME) then
 		FIZ_Main:UnregisterEvent("ADDON_LOADED")
 		FIZ_InitStages = FIZ_InitStages + 1
-		FIZ_Init()
+		FIZ:Init()
 	elseif (event == "VARIABLES_LOADED") then
 		FIZ_OnShowOptionFrame()
 		FIZ_VarsLoaded = true
 		FIZ_InitStages = FIZ_InitStages + 2
-		FIZ_Init()
+		FIZ:Init()
 	elseif (event == "PLAYER_LOGIN") then
 		FIZ_Main:UnregisterEvent("PLAYER_LOGIN")
 		--FIZ_DoInitialCollapse()
 		FIZ_InitStages = FIZ_InitStages + 4
-		FIZ_Init()
+		FIZ:Init()
 	elseif (event == "PLAYER_ENTERING_WORLD") then
 		FIZ_InitStages = FIZ_InitStages + 8
-		FIZ_Init()
+		FIZ:Init()
 		FIZ_Main:UnregisterEvent("PLAYER_ENTERING_WORLD")
 		FIZ_Main:RegisterEvent("UPDATE_FACTION") --rfl
 		FIZ_Main:RegisterEvent("LFG_BONUS_FACTION_ID_UPDATED") --rfl
@@ -198,10 +200,10 @@ function FIZ_OnEvent(self, event, ...)
 		end
 -- rfl event ^
 		if ( FIZ_ReputationDetailFrame:IsVisible()) then
-			FIZ_BuildUpdateList()
+			FIZ:BuildUpdateList()
 			FIZ_UpdateList_Update()
 		end
-		FIZ_DumpReputationChangesToChat()
+		FIZ:DumpReputationChangesToChat()
 
 	elseif ( event == "BAG_UPDATE") then
 		if (FIZ_ReputationDetailFrame:IsVisible()) then
@@ -225,18 +227,18 @@ function FIZ_OnEvent(self, event, ...)
 		end
 
 	elseif ( event == "PLAYER_DIFFICULTY_CHANGED") then -- ccc
-			FIZ_Print("PLAYER_DIFFICULTY_CHANGED", nil) 
+			FIZ:Print("PLAYER_DIFFICULTY_CHANGED", nil) 
 
 	elseif ( event == "CHAT_MSG_SKILL") or
 		( event == "CHAT_MSG_SPELL_TRADESKILLS") or
 		( event == "SKILL_LINES_CHANGED") or
 		( event == "UPDATE_TRADESKILL_RECAST") then
-		FIZ_ExtractSkills()
+		FIZ:ExtractSkills()
 		if ( ReputationFrame:IsVisible() ) then
 			ReputationFrame_Update(); -- rfl Event
 		end
 		if ( FIZ_ReputationDetailFrame:IsVisible()) then
-			FIZ_BuildUpdateList()
+			FIZ:BuildUpdateList()
 			FIZ_UpdateList_Update()
 		end
 
@@ -252,12 +254,12 @@ function FIZ_OnUpdate(self)
 
 	if (FIZ_InitCount <= 5) then
 		-- Guild level seems to only return a proper value a little later
-		--FIZ_Print("update number "..tostring(FIZ_InitCount))
+		--FIZ:Print("update number "..tostring(FIZ_InitCount))
 		FIZ_InitCount = FIZ_InitCount + 1
 		FIZ_UpdateRequest = GetTime() + FIZ_UPDATE_INTERVAL
 		if (FIZ_InitCount > 5) then
 			FIZ_UpdateRequest = nil
-			--FIZ_Print("Stopping updates")
+			--FIZ:Print("Stopping updates")
 		end
 	end
 end
@@ -266,7 +268,7 @@ end
 -------------------------------
 -- _04_ Addon Initialization --
 -------------------------------
-function FIZ_InitVariable(var, value)
+function FIZ:InitVariable(var, value)
 	local result = 0
 	if var == nil then return result end
 
@@ -284,9 +286,9 @@ function FIZ_InitVariable(var, value)
 end
 
 -------------------------------
-function FIZ_Init()
+function FIZ:Init()
 	if FIZ_InitComplete then return end
-	--FIZ_Print("FIZ_InitStages ["..tostring(FIZ_InitStages).."]")
+	--FIZ:Print("FIZ_InitStages ["..tostring(FIZ_InitStages).."]")
 	if (FIZ_InitStages ~= 15) then return end
 
 	local version = GetAddOnMetadata("Factionizer", "Version");
@@ -300,31 +302,31 @@ function FIZ_Init()
 
 	if FIZ_Data.ChatFrame == nil then FIZ_Data.ChatFrame = 0 end
 	local changed = 0
-	changed = changed + FIZ_InitVariable("ShowMobs", true)
-	changed = changed + FIZ_InitVariable("ShowQuests", true)
-	changed = changed + FIZ_InitVariable("ShowInstances", true)
-	changed = changed + FIZ_InitVariable("ShowItems", true)
-	changed = changed + FIZ_InitVariable("ShowGeneral", true)
+	changed = changed + FIZ:InitVariable("ShowMobs", true)
+	changed = changed + FIZ:InitVariable("ShowQuests", true)
+	changed = changed + FIZ:InitVariable("ShowInstances", true)
+	changed = changed + FIZ:InitVariable("ShowItems", true)
+	changed = changed + FIZ:InitVariable("ShowGeneral", true)
 
-	changed = changed + FIZ_InitVariable("ShowMissing", true)
-	changed = changed + FIZ_InitVariable("ExtendDetails", true)
-	changed = changed + FIZ_InitVariable("WriteChatMessage", true)
-	changed = changed + FIZ_InitVariable("NoGuildGain", true)
-	changed = changed + FIZ_InitVariable("SuppressOriginalChat", true)
-	changed = changed + FIZ_InitVariable("ShowPreviewRep", true)
-	changed = changed + FIZ_InitVariable("SwitchFactionBar", true)
-	changed = changed + FIZ_InitVariable("SilentSwitch", true)
-	changed = changed + FIZ_InitVariable("NoGuildSwitch", true)
+	changed = changed + FIZ:InitVariable("ShowMissing", true)
+	changed = changed + FIZ:InitVariable("ExtendDetails", true)
+	changed = changed + FIZ:InitVariable("WriteChatMessage", true)
+	changed = changed + FIZ:InitVariable("NoGuildGain", true)
+	changed = changed + FIZ:InitVariable("SuppressOriginalChat", true)
+	changed = changed + FIZ:InitVariable("ShowPreviewRep", true)
+	changed = changed + FIZ:InitVariable("SwitchFactionBar", true)
+	changed = changed + FIZ:InitVariable("SilentSwitch", true)
+	changed = changed + FIZ:InitVariable("NoGuildSwitch", true)
 	if (changed > 0) then
 		StaticPopupDialogs["FIZ_CONFIG_CHANGED"] = {
 			text = FIZ_TXT.configQuestion,
 			button1 = FIZ_TXT.showConfig,
 			button2 = FIZ_TXT.later,
 			OnAccept = function()
-					FIZ_ToggleConfigWindow();				--- f_tcw
+				FIZ:ToggleConfigWindow();	--- f_tcw
 				end,
 			--OnCancel = function()
-			--	FIZ_Print(GLDG_Data.colours.help..GLDG_NAME..":|cFFFF0000 "..GLDG_TXT.reload)
+			--	FIZ:Print(GLDG_Data.colours.help..GLDG_NAME..":|cFFFF0000 "..GLDG_TXT.reload)
 			--	end,
 			timeout = 0,
 			whileDead = 1,
@@ -353,14 +355,13 @@ function FIZ_Init()
 	FIZ_OrderByStandingCheckBoxText:SetText(FIZ_TXT.orderByStanding)
 
 	---	FIZ_OnShowOptionFrame()
-	FIZ_ExtractSkills()
+	FIZ:ExtractSkills()
 
 	local _, race = UnitRace("player")
 	local faction, locFaction = UnitFactionGroup("player")
 	local class, enClass = UnitClass("player")
 	FIZ_Player = UnitName("player")
-	FIZ_Realm = GetRealmName()	--	FIZ_Realm = GetCVar("realmName")
-	-- gci	FIZ_CapIndex = FIZ_Realm.." - "..FIZ_Player
+	FIZ_Realm = GetRealmName()
 
 	if (IsInGuild()) then
 		if (FIZ_GuildName == nil or FIZ_GuildName == "") then FIZ_GuildName = GetGuildInfo("player") end
@@ -383,22 +384,22 @@ function FIZ_Init()
 			FIZ_IsHorde = true
 		end
 
-		FIZ_InitFactor(FIZ_IsHuman)
+		FIZ:InitFactor(FIZ_IsHuman)
 
 		-- Initialize Faction information
 		local locale = GetLocale()
-		FIZ_InitFactionMap(locale, FIZ_GuildName)
+		FIZ:InitFactionMap(locale, FIZ_GuildName)
 		-- Changed by Bagdad for easy reputation content moderation
 		FIZ_FactionGain = {}
 		FIZ_InitEnFactionGains(FIZ_GuildName)
-		FIZ_DumpReputationChangesToChat(true)
+		FIZ:DumpReputationChangesToChat(true)
 
 		FIZ_InitComplete = true
 		if (FIZ_InitCount <= 5) then
 			FIZ_UpdateRequest = GetTime() + FIZ_UPDATE_INTERVAL
-			--FIZ_Print("Init complete, setting up updates ("..tostring(FIZ_InitCount).." already done)")
+			--FIZ:Print("Init complete, setting up updates ("..tostring(FIZ_InitCount).." already done)")
 		--else
-			--FIZ_Print("Init complete, not starting updates")
+			--FIZ:Print("Init complete, not starting updates")
 		end
 
 	end
@@ -413,9 +414,9 @@ function FIZ_SlashHandler(msg)
 		return
 	else
 		local msgLower = string.lower(msg)
-		local words = FIZ_GetWords(msg)
-		local wordsLower = FIZ_GetWords(msgLower)
-		local size = FIZ_TableSize(wordsLower)
+		local words = FIZ:GetWords(msg)
+		local wordsLower = FIZ:GetWords(msgLower)
+		local size = FIZ:TableSize(wordsLower)
 		local FD_SH = FIZ_Data
 
 		if (size>0) then
@@ -462,18 +463,18 @@ function FIZ_SlashHandler(msg)
 						FD_SH.NoGuildSwitch = false
 						FD_SH.SilentSwitch = false
 					else
-						FIZ_PrintSlash(FIZ_TXT.command,msgLower)
+						FIZ:PrintSlash(FIZ_TXT.command,msgLower)
 					end
 
 					if ( ReputationFrame:IsVisible() ) then
 						ReputationFrame_Update(); -- rfl Event
 					end
 					if ( FIZ_ReputationDetailFrame:IsVisible()) then
-						FIZ_BuildUpdateList()
+						FIZ:BuildUpdateList()
 						FIZ_UpdateList_Update()
 					end
 				else
-						FIZ_PrintSlash(FIZ_TXT.command,msgLower)
+						FIZ:PrintSlash(FIZ_TXT.command,msgLower)
 				end
 			elseif (wordsLower[0]=="disable") then
 				if (size>1) then
@@ -518,18 +519,18 @@ function FIZ_SlashHandler(msg)
 						FD_SH.NoGuildSwitch = false
 						FD_SH.SilentSwitch = false
 					else
-						FIZ_PrintSlash(FIZ_TXT.command,msgLower)
+						FIZ:PrintSlash(FIZ_TXT.command,msgLower)
 					end
 
 					if ( ReputationFrame:IsVisible() ) then
 						ReputationFrame_Update(); -- rfl Event
 					end
 					if ( FIZ_ReputationDetailFrame:IsVisible()) then
-						FIZ_BuildUpdateList()
+						FIZ:BuildUpdateList()
 						FIZ_UpdateList_Update()
 					end
 				else
-						FIZ_PrintSlash(FIZ_TXT.command,msgLower)
+					FIZ:PrintSlash(FIZ_TXT.command,msgLower)
 				end
 			elseif (wordsLower[0]=="toggle") then
 				if (size>1) then
@@ -574,63 +575,63 @@ function FIZ_SlashHandler(msg)
 						FD_SH.NoGuildSwitch = false
 						FD_SH.SilentSwitch = false
 					else
-						FIZ_PrintSlash(FIZ_TXT.command,msgLower)
+						FIZ:PrintSlash(FIZ_TXT.command,msgLower)
 					end
 
 					if ( ReputationFrame:IsVisible() ) then
 						ReputationFrame_Update(); -- rfl Event
 					end
 					if ( FIZ_ReputationDetailFrame:IsVisible()) then
-						FIZ_BuildUpdateList()
+						FIZ:BuildUpdateList()
 						FIZ_UpdateList_Update()
 					end
 				else
-						FIZ_PrintSlash(FIZ_TXT.command,msgLower)
+						FIZ:PrintSlash(FIZ_TXT.command,msgLower)
 				end
 			elseif (wordsLower[0]=="list") then
 				if (size>1) then
 					if (wordsLower[1]=="1" or wordsLower[1]==string.lower(_G["FACTION_STANDING_LABEL1"])) then
-						FIZ_ListByStanding(1)
+						FIZ:ListByStanding(1)
 					elseif (wordsLower[1]=="2" or wordsLower[1]==string.lower(_G["FACTION_STANDING_LABEL2"])) then
-						FIZ_ListByStanding(2)
+						FIZ:ListByStanding(2)
 					elseif (wordsLower[1]=="3" or wordsLower[1]==string.lower(_G["FACTION_STANDING_LABEL3"])) then
-						FIZ_ListByStanding(3)
+						FIZ:ListByStanding(3)
 					elseif (wordsLower[1]=="4" or wordsLower[1]==string.lower(_G["FACTION_STANDING_LABEL4"])) then
-						FIZ_ListByStanding(4)
+						FIZ:ListByStanding(4)
 					elseif (wordsLower[1]=="5" or wordsLower[1]==string.lower(_G["FACTION_STANDING_LABEL5"])) then
-						FIZ_ListByStanding(5)
+						FIZ:ListByStanding(5)
 					elseif (wordsLower[1]=="6" or wordsLower[1]==string.lower(_G["FACTION_STANDING_LABEL6"])) then
-						FIZ_ListByStanding(6)
+						FIZ:ListByStanding(6)
 					elseif (wordsLower[1]=="7" or wordsLower[1]==string.lower(_G["FACTION_STANDING_LABEL7"])) then
-						FIZ_ListByStanding(7)
+						FIZ:ListByStanding(7)
 					elseif (wordsLower[1]=="8" or wordsLower[1]==string.lower(_G["FACTION_STANDING_LABEL8"])) then
-						FIZ_ListByStanding(8)
+						FIZ:ListByStanding(8)
 					else
-						FIZ_PrintSlash(FIZ_TXT.command,msgLower)
+						FIZ:PrintSlash(FIZ_TXT.command,msgLower)
 					end
 				else
-					FIZ_ListByStanding()
+					FIZ:ListByStanding()
 				end
 			elseif (wordsLower[0]=="loc") then
 				if (size>1) then
 					if (wordsLower[1]=="1" or wordsLower[1]==string.lower(_G["FACTION_STANDING_LABEL1"])) then
-						FIZ_ShowGerman(1)
+						FIZ:ListByStanding(1)
 					elseif (wordsLower[1]=="2" or wordsLower[1]==string.lower(_G["FACTION_STANDING_LABEL2"])) then
-						FIZ_ShowGerman(2)
+						FIZ:ListByStanding(2)
 					elseif (wordsLower[1]=="3" or wordsLower[1]==string.lower(_G["FACTION_STANDING_LABEL3"])) then
-						FIZ_ShowGerman(3)
+						FIZ:ListByStanding(3)
 					elseif (wordsLower[1]=="4" or wordsLower[1]==string.lower(_G["FACTION_STANDING_LABEL4"])) then
-						FIZ_ShowGerman(4)
+						FIZ:ListByStanding(4)
 					elseif (wordsLower[1]=="5" or wordsLower[1]==string.lower(_G["FACTION_STANDING_LABEL5"])) then
-						FIZ_ShowGerman(5)
+						FIZ:ListByStanding(5)
 					elseif (wordsLower[1]=="6" or wordsLower[1]==string.lower(_G["FACTION_STANDING_LABEL6"])) then
-						FIZ_ShowGerman(6)
+						FIZ:ListByStanding(6)
 					elseif (wordsLower[1]=="7" or wordsLower[1]==string.lower(_G["FACTION_STANDING_LABEL7"])) then
-						FIZ_ShowGerman(7)
+						FIZ:ListByStanding(7)
 					elseif (wordsLower[1]=="8" or wordsLower[1]==string.lower(_G["FACTION_STANDING_LABEL8"])) then
-						FIZ_ShowGerman(8)
+						FIZ:ListByStanding(8)
 					else
-						FIZ_PrintSlash(FIZ_TXT.command,msgLower)
+						FIZ:PrintSlash(FIZ_TXT.command,msgLower)
 					end
 				else
 					FIZ_ShowGerman()
@@ -638,13 +639,13 @@ function FIZ_SlashHandler(msg)
 			elseif (wordsLower[0]=="test") then
 				FIZ_Test()
 			elseif (wordsLower[0]=="status") then
-				FIZ_Status()
+				FIZ:Status()
 			elseif (wordsLower[0]=="help") then
-				FIZ_Help()
+				FIZ:Help()
 			elseif (wordsLower[0]=="about") then
-				FIZ_About()
+				FIZ:About()
 			else
-				FIZ_PrintSlash(FIZ_TXT.command,msgLower)
+				FIZ:PrintSlash(FIZ_TXT.command,msgLower)
 			end
 		else
 			-- do nothing
@@ -656,7 +657,7 @@ end
 -- _06_ General Helper Functions --
 -----------------------------------
 
-function FIZ_Print(msg, forceDefault) --zzz
+function FIZ:Print(msg, forceDefault) --zzz
 	if not (msg) then return end
 
 	if ((FIZ_Data==nil) or forceDefault) then
@@ -678,21 +679,21 @@ function FIZ_Print(msg, forceDefault) --zzz
 	end
 end
 ------------------------------------------------------------
-function FIZ_Printtest(msg,msg1,msg2) --fpt
-	FIZ_Print(""..tostring(msg).." "..tostring(msg1).."  "..tostring(msg2), nil)
+function FIZ:Printtest(msg,msg1,msg2) --fpt
+	FIZ:Print(""..tostring(msg).." "..tostring(msg1).."  "..tostring(msg2), nil)
 end
 ------------------------------------------------------------
-function FIZ_PrintSlash(msg,msg1) --zzz
-	FIZ_Print(FIZ_HELP_COLOUR..FIZ_NAME..":|r "..msg.." ["..FIZ_HELP_COLOUR..msg1.."|r]", true)
-	FIZ_Help()
+function FIZ:PrintSlash(msg,msg1) --zzz
+	FIZ:Print(FIZ_Help_COLOUR..FIZ_NAME..":|r "..msg.." ["..FIZ_Help_COLOUR..msg1.."|r]", true)
+	FIZ:Help()
 end
 ------------------------------------------------------------
-function FIZ_Debug(msg)
+function FIZ:Debug(msg)
 	if not (msg) then return end
-	--FIZ_Print(msg)
+	--FIZ:Print(msg)
 end
 ------------------------------------------------------------
-function FIZ_TableSize(info)
+function FIZ:TableSize(info)
 	local result = 0
 	if info then
 		for item in pairs(info) do result = result + 1 end
@@ -701,7 +702,7 @@ function FIZ_TableSize(info)
 end
 
 ------------------------------------------------------------
-function FIZ_GetWords(str)
+function FIZ:GetWords(str)
 	local ret = {};
 	local pos=0;
 	local index=0
@@ -717,11 +718,11 @@ function FIZ_GetWords(str)
 end
 
 ------------------------------------------------------------
-function FIZ_Concat(list, start, stop)
+function FIZ:Concat(list, start, stop)
 	local ret = "";
 
 	if (start == nil) then start = 0 end
-	if (stop == nil) then stop = FIZ_TableSize(list) end
+	if (stop == nil) then stop = FIZ:TableSize(list) end
 
 	for i = start,stop do
 		if list[i] then
@@ -733,14 +734,14 @@ function FIZ_Concat(list, start, stop)
 end
 
 ------------------------------------------------------------
-function FIZ_BoolToEnabled(b)
+function FIZ:BoolToEnabled(b)
 	local result = FIZ_TXT.disabled
 	if b then result = FIZ_TXT.enabled end
 	return result
 end
 
 ------------------------------------------------------------
-function FIZ_RGBToColour_perc(a, r, g, b)
+function FIZ:RGBToColour_perc(a, r, g, b)
 	return string.format("|c%02X%02X%02X%02X", a*255, r*255, g*255, b*255)
 end
 
@@ -748,66 +749,66 @@ end
 -- _07_ information
 ------------------------
 
-function FIZ_Help() --xxx
-	FIZ_Print(" ", true)
-	FIZ_Print(FIZ_HELP_COLOUR..FIZ_NAME..":|r "..FIZ_TXT.help, true)
-	FIZ_Print(FIZ_HELP_COLOUR..FIZ_TXT.usage..":|r /fz help "..FIZ_HELP_COLOUR..FIZ_TXT.helphelp, true)
-	FIZ_Print(FIZ_HELP_COLOUR..FIZ_TXT.usage..":|r /fz about "..FIZ_HELP_COLOUR..FIZ_TXT.helpabout, true)
-	FIZ_Print(FIZ_HELP_COLOUR..FIZ_TXT.usage..":|r /fz status "..FIZ_HELP_COLOUR..FIZ_TXT.helpstatus, true)
-	FIZ_Print(FIZ_HELP_COLOUR..FIZ_TXT.usage..":|r /fz enable { mobs | quests | instances | items | all }", true)
-	FIZ_Print(FIZ_HELP_COLOUR..FIZ_TXT.usage..":|r /fz disable { mobs | quests | instances | items | all }", true)
-	FIZ_Print(FIZ_HELP_COLOUR..FIZ_TXT.usage..":|r /fz toggle { mobs | quests | instances | items | all }", true)
-	FIZ_Print(FIZ_HELP_COLOUR..FIZ_TXT.usage..":|r /fz enable { missing | details | chat | suppress }", true)
-	FIZ_Print(FIZ_HELP_COLOUR..FIZ_TXT.usage..":|r /fz disable { missing | details | chat | suppress }", true)
-	FIZ_Print(FIZ_HELP_COLOUR..FIZ_TXT.usage..":|r /fz toggle { missing | details | chat | suppress }" , true)
+function FIZ:Help() --xxx
+	FIZ:Print(" ", true)
+	FIZ:Print(FIZ_Help_COLOUR..FIZ_NAME..":|r "..FIZ_TXT.help, true)
+	FIZ:Print(FIZ_Help_COLOUR..FIZ_TXT.usage..":|r /fz help "..FIZ_Help_COLOUR..FIZ_TXT.helphelp, true)
+	FIZ:Print(FIZ_Help_COLOUR..FIZ_TXT.usage..":|r /fz about "..FIZ_Help_COLOUR..FIZ_TXT.helpabout, true)
+	FIZ:Print(FIZ_Help_COLOUR..FIZ_TXT.usage..":|r /fz status "..FIZ_Help_COLOUR..FIZ_TXT.helpstatus, true)
+	FIZ:Print(FIZ_Help_COLOUR..FIZ_TXT.usage..":|r /fz enable { mobs | quests | instances | items | all }", true)
+	FIZ:Print(FIZ_Help_COLOUR..FIZ_TXT.usage..":|r /fz disable { mobs | quests | instances | items | all }", true)
+	FIZ:Print(FIZ_Help_COLOUR..FIZ_TXT.usage..":|r /fz toggle { mobs | quests | instances | items | all }", true)
+	FIZ:Print(FIZ_Help_COLOUR..FIZ_TXT.usage..":|r /fz enable { missing | details | chat | suppress }", true)
+	FIZ:Print(FIZ_Help_COLOUR..FIZ_TXT.usage..":|r /fz disable { missing | details | chat | suppress }", true)
+	FIZ:Print(FIZ_Help_COLOUR..FIZ_TXT.usage..":|r /fz toggle { missing | details | chat | suppress }" , true)
 end
 ------------------------------------------------------------
-function FIZ_About()
+function FIZ:About()
 	local ver = GetAddOnMetadata("Factionizer", "Version");
 	local date = GetAddOnMetadata("Factionizer", "X-Date");
 	local author = GetAddOnMetadata("Factionizer", "Author");
 	local web = GetAddOnMetadata("Factionizer", "X-Website");
 
 	if (author ~= nil) then
-		FIZ_Print(FIZ_NAME.." "..FIZ_TXT.by.." "..FIZ_HELP_COLOUR..author.."|r", true);
+		FIZ:Print(FIZ_NAME.." "..FIZ_TXT.by.." "..FIZ_Help_COLOUR..author.."|r", true);
 	end
 	if (ver ~= nil) then
-		FIZ_Print("  "..FIZ_TXT.version..": "..FIZ_HELP_COLOUR..ver.."|r", true);
+		FIZ:Print("  "..FIZ_TXT.version..": "..FIZ_Help_COLOUR..ver.."|r", true);
 	end
 	if (date ~= nil) then
-		FIZ_Print("  "..FIZ_TXT.date..": "..FIZ_HELP_COLOUR..date.."|r", true);
+		FIZ:Print("  "..FIZ_TXT.date..": "..FIZ_Help_COLOUR..date.."|r", true);
 	end
 	if (web ~= nil) then
-		FIZ_Print("  "..FIZ_TXT.web..": "..FIZ_HELP_COLOUR..web.."|r", true);
+		FIZ:Print("  "..FIZ_TXT.web..": "..FIZ_Help_COLOUR..web.."|r", true);
 	end
 
 end
 ------------------------------------------------------------
-function FIZ_Status()
-	FIZ_Print(" ", true)
-	FIZ_Print(FIZ_HELP_COLOUR..FIZ_NAME..":|r "..FIZ_TXT.status, true)
-	FIZ_Print("   "..FIZ_TXT.statMobs..": "..FIZ_HELP_COLOUR..FIZ_BoolToEnabled(FIZ_Data.ShowMobs).."|r", true)
-	FIZ_Print("   "..FIZ_TXT.statQuests..": "..FIZ_HELP_COLOUR..FIZ_BoolToEnabled(FIZ_Data.ShowQuests).."|r", true)
-	FIZ_Print("   "..FIZ_TXT.statInstances..": "..FIZ_HELP_COLOUR..FIZ_BoolToEnabled(FIZ_Data.ShowInstances).."|r", true)
-	FIZ_Print("   "..FIZ_TXT.statItems..": "..FIZ_HELP_COLOUR..FIZ_BoolToEnabled(FIZ_Data.ShowItems).."|r", true)
-	FIZ_Print("   "..FIZ_TXT.statGeneral..": "..FIZ_HELP_COLOUR..FIZ_BoolToEnabled(FIZ_Data.ShowGeneral).."|r", true)
-	FIZ_Print("   "..FIZ_TXT.statMissing..": "..FIZ_HELP_COLOUR..FIZ_BoolToEnabled(FIZ_Data.ShowMissing).."|r", true)
-	FIZ_Print("   "..FIZ_TXT.statDetails..": "..FIZ_HELP_COLOUR..FIZ_BoolToEnabled(FIZ_Data.ExtendDetails).."|r", true)
-	FIZ_Print("   "..FIZ_TXT.statChat..": "..FIZ_HELP_COLOUR..FIZ_BoolToEnabled(FIZ_Data.WriteChatMessage).."|r", true)
+function FIZ:Status()
+	FIZ:Print(" ", true)
+	FIZ:Print(FIZ_Help_COLOUR..FIZ_NAME..":|r "..FIZ_TXT.status, true)
+	FIZ:Print("   "..FIZ_TXT.statMobs..": "..FIZ_Help_COLOUR..FIZ:BoolToEnabled(FIZ_Data.ShowMobs).."|r", true)
+	FIZ:Print("   "..FIZ_TXT.statQuests..": "..FIZ_Help_COLOUR..FIZ:BoolToEnabled(FIZ_Data.ShowQuests).."|r", true)
+	FIZ:Print("   "..FIZ_TXT.statInstances..": "..FIZ_Help_COLOUR..FIZ:BoolToEnabled(FIZ_Data.ShowInstances).."|r", true)
+	FIZ:Print("   "..FIZ_TXT.statItems..": "..FIZ_Help_COLOUR..FIZ:BoolToEnabled(FIZ_Data.ShowItems).."|r", true)
+	FIZ:Print("   "..FIZ_TXT.statGeneral..": "..FIZ_Help_COLOUR..FIZ:BoolToEnabled(FIZ_Data.ShowGeneral).."|r", true)
+	FIZ:Print("   "..FIZ_TXT.statMissing..": "..FIZ_Help_COLOUR..FIZ:BoolToEnabled(FIZ_Data.ShowMissing).."|r", true)
+	FIZ:Print("   "..FIZ_TXT.statDetails..": "..FIZ_Help_COLOUR..FIZ:BoolToEnabled(FIZ_Data.ExtendDetails).."|r", true)
+	FIZ:Print("   "..FIZ_TXT.statChat..": "..FIZ_Help_COLOUR..FIZ:BoolToEnabled(FIZ_Data.WriteChatMessage).."|r", true)
 
-	FIZ_Print("   "..FIZ_TXT.statNoGuildChat..": "..FIZ_HELP_COLOUR..FIZ_BoolToEnabled(FIZ_Data.NoGuildGain).."|r", true)
-	FIZ_Print("   "..FIZ_TXT.statSuppress..": "..FIZ_HELP_COLOUR..FIZ_BoolToEnabled(FIZ_Data.SuppressOriginalChat).."|r", true)
-	FIZ_Print("   "..FIZ_TXT.statPreview..": "..FIZ_HELP_COLOUR..FIZ_BoolToEnabled(FIZ_Data.ShowPreviewRep).."|r", true)
-	FIZ_Print("   "..FIZ_TXT.statSwitch..": "..FIZ_HELP_COLOUR..FIZ_BoolToEnabled(FIZ_Data.SwitchFactionBar).."|r", true)
-	FIZ_Print("   "..FIZ_TXT.statNoGuildSwitch..": "..FIZ_HELP_COLOUR..FIZ_BoolToEnabled(FIZ_Data.NoGuildSwitch).."|r", true)
-	FIZ_Print("   "..FIZ_TXT.statSilentSwitch..": "..FIZ_HELP_COLOUR..FIZ_BoolToEnabled(FIZ_Data.SilentSwitch).."|r", true)
+	FIZ:Print("   "..FIZ_TXT.statNoGuildChat..": "..FIZ_Help_COLOUR..FIZ:BoolToEnabled(FIZ_Data.NoGuildGain).."|r", true)
+	FIZ:Print("   "..FIZ_TXT.statSuppress..": "..FIZ_Help_COLOUR..FIZ:BoolToEnabled(FIZ_Data.SuppressOriginalChat).."|r", true)
+	FIZ:Print("   "..FIZ_TXT.statPreview..": "..FIZ_Help_COLOUR..FIZ:BoolToEnabled(FIZ_Data.ShowPreviewRep).."|r", true)
+	FIZ:Print("   "..FIZ_TXT.statSwitch..": "..FIZ_Help_COLOUR..FIZ:BoolToEnabled(FIZ_Data.SwitchFactionBar).."|r", true)
+	FIZ:Print("   "..FIZ_TXT.statNoGuildSwitch..": "..FIZ_Help_COLOUR..FIZ:BoolToEnabled(FIZ_Data.NoGuildSwitch).."|r", true)
+	FIZ:Print("   "..FIZ_TXT.statSilentSwitch..": "..FIZ_Help_COLOUR..FIZ:BoolToEnabled(FIZ_Data.SilentSwitch).."|r", true)
 end
 
 -----------------------------------
 -- _08_ Faction map --
 -----------------------------------
-function FIZ_Initmapname(fimap)
-	--- fpt f_imn	FIZ_Printtest(fimap,"","map 1")
+function FIZ:InitMapName(fimap)
+	--- fpt f_imn	FIZ:Printtest(fimap,"","map 1")
 	local map
 	if fimap == 1 then
 		map = FIZ_TXT.srfd
@@ -825,15 +826,15 @@ function FIZ_Initmapname(fimap)
 		local mapName = GetMapNameByID(fimap);
 		map = mapName
 	end
-	--- fpt f_imn	FIZ_Printtest(fimap,"","map 2")
+	--- fpt f_imn	FIZ:Printtest(fimap,"","map 2")
 	if not map then
 		map = fimap
 	end
 	return map
 end
 
-function FIZ_Initmobname(fimob)
-	--- fpt f_ion	FIZ_Printtest(fimob,"","mob 1")
+function FIZ:InitMobName(fimob)
+	--- fpt f_ion	FIZ:Printtest(fimob,"","mob 1")
 	local mob
 	if fimob == 1 then
 		mob = FIZ_TXT.tmob
@@ -863,15 +864,15 @@ function FIZ_Initmobname(fimob)
 	--[[--	local mobName = GetmobNameByID(fimob);
 		mob = mobName	--]]--
 	end
-	--- fpt f_ion	FIZ_Printtest(fimob,mob,"mob 2")
+	--- fpt f_ion	FIZ:Printtest(fimob,mob,"mob 2")
 	if not mob then
 		mob = fimob
 	end
 	return mob
 end
 
-function FIZ_Inititemname(fiitem,amt)
-	--- fpt f_iin	FIZ_Printtest(fiitem,amt,"item 1")
+function FIZ:InitItemName(fiitem,amt)
+	--- fpt f_iin	FIZ:Printtest(fiitem,amt,"item 1")
 	if fiitem==1 then
 		item_name = FIZ_TXT.cdq
 	elseif fiitem==2 then
@@ -892,7 +893,7 @@ function FIZ_Inititemname(fiitem,amt)
 	return item_name
 end
 
-function quest_names(questIndex)
+function FIZ:Quest_Names(questIndex)
 
 		GameTooltip:SetOwner(UIParent, ANCHOR_NONE)
 		GameTooltip:SetHyperlink(format("quest:%d", questIndex))
@@ -929,7 +930,7 @@ function quest_names(questIndex)
 		return quest
 	end
 
-function FIZ_GetTabardFaction()
+function FIZ:GetTabardFaction()
 	for i = 1, 40 do
 		local _, _, _, _, _, _, _, _, _, _, id = UnitBuff("player", i)
 		if not id then
@@ -945,7 +946,7 @@ function FIZ_GetTabardFaction()
 	if DEBUG then self:Debug("GetChampionedFaction:", "none") end
 end
 
-function FIZ_InitFactor(FIZ_IsHuman,faction)
+function FIZ:InitFactor(FIZ_IsHuman,faction)
 --- Thanks Gwalkmaur for the heads up
 	local factor=1.0
 	-- Race check
@@ -961,22 +962,22 @@ function FIZ_InitFactor(FIZ_IsHuman,faction)
 				local name, hasBonusRepGain;
 				local name, _, _, _, _, _, _, _, _, _, _, _, _, _, hasBonusRepGain, _ = GetFactionInfo(factionIndex);
 				if (faction==name) then
-				--- f_if	FIZ_Printtest(faction,name,"test")
+				--- f_if	FIZ:Printtest(faction,name,"test")
 					if (hasBonusRepGain) then
-					--- f_if	FIZ_Printtest(faction,name,"Gain")
+					--- f_if	FIZ:Printtest(faction,name,"Gain")
 						factor=factor+1
 					end
 				end
 			end
 		end
-	--- f_if	FIZ_Printtest(faction,factor,"fact")
+	--- f_if	FIZ:Printtest(faction,factor,"fact")
 	return factor
 
 end
 
-function FIZ_InitFaction(guildName,faction)
+function FIZ:InitFaction(guildName,faction)
 	if faction=="guildName" or faction==FIZ_GuildName then
-	--- f_ifa	FIZ_Printtest(faction,guildName,"1")
+	--- f_ifa	FIZ:Printtest(faction,guildName,"1")
 		FIZ_faction = faction
 	else
 		FIZ_faction = GetFactionInfoByID(faction)
@@ -984,21 +985,21 @@ function FIZ_InitFaction(guildName,faction)
 	return FIZ_faction
 end
 
-function FIZ_InitFactionMap(locale, guildName)
+function FIZ:InitFactionMap(locale, guildName)
 	FIZ_FactionMapping = {}
 	FIZ_InitEnFactions()
 	if (guildName) then
-		FIZ_AddMapping(guildName, guildName)
+		FIZ:AddMapping(guildName, guildName)
 	end
 end
 
-function FIZ_AddMapping(english, localised)
---- f_am	FIZ_Printtest(english, localised,"map")
+function FIZ:AddMapping(english, localised)
+--- f_am	FIZ:Printtest(english, localised,"map")
 	if (not FIZ_FactionMapping) then
 		FIZ_FactionMapping = {}
 	end
 
-	if (FIZ_InitFaction(FIZ_GuildName,localised)) then
+	if (FIZ:InitFaction(FIZ_GuildName,localised)) then
 		FIZ_FactionMapping[string.lower(FIZ_faction)] = string.lower(english)
 	end
 end
@@ -1007,7 +1008,7 @@ end
 -- _09_ Faction Lists --
 ------------------------------------
 
-function FIZ_AddSpell(faction, from, to, name, rep, zone, limit)
+function FIZ:AddSpell(faction, from, to, name, rep, zone, limit)
 
 	if not faction then return end
 	if not from then return end
@@ -1018,15 +1019,14 @@ function FIZ_AddSpell(faction, from, to, name, rep, zone, limit)
 	if ((from<1) or (from>8)) then return end
 	if ((to<1) or (to>8)) then return end
 	if (from > to) then return end
-	faction = string.lower(faction)
 
 --[[--	FIZ_Initspellname(name)
----	FIZ_Initmapname(zone)
+---	FIZ:InitMapName(zone)
 
 
-	rep = rep * FIZ_InitFactor(FIZ_IsHuman,FIZ_faction)
-	faction = string.lower(FIZ_InitFaction(FIZ_GuildName,faction))
-	---	FIZ_Printtest(faction,FIZ_faction,"spell")--fpt
+	rep = rep * FIZ:InitFactor(FIZ_IsHuman,FIZ_faction)
+	faction = string.lower(FIZ:InitFaction(FIZ_GuildName,faction))
+	---	FIZ:Printtest(faction,FIZ_faction,"spell")--fpt
 
 	for standing = from,to do
 		local faction_info = FIZ_FactionGain[faction]
@@ -1058,11 +1058,11 @@ function FIZ_AddSpell(faction, from, to, name, rep, zone, limit)
 		if ((standing == to) and limit) then
 			add_count.limit = limit
 		end
-		FIZ_Debug("Added spell ["..name.."] for faction ["..faction.."] and standing [".._G["FACTION_STANDING_LABEL"..standing].."]")
+		FIZ:Debug("Added spell ["..name.."] for faction ["..faction.."] and standing [".._G["FACTION_STANDING_LABEL"..standing].."]")
 	end	--]]--
 end
 
-function FIZ_AddMob(faction, from, to, name, rep, zone, limit)
+function FIZ:AddMob(faction, from, to, name, rep, zone, limit)
 
 	if not faction then return end
 	if not from then return end
@@ -1074,9 +1074,9 @@ function FIZ_AddMob(faction, from, to, name, rep, zone, limit)
 	if ((to<1) or (to>8)) then return end
 	if (from > to) then return end
 
-	rep = rep * FIZ_InitFactor(FIZ_IsHuman,FIZ_faction)
-	faction = string.lower(FIZ_InitFaction(FIZ_GuildName,faction))
-	--- f_amo	FIZ_Printtest(faction,FIZ_faction,"mob")
+	rep = rep * FIZ:InitFactor(FIZ_IsHuman,FIZ_faction)
+	faction = string.lower(FIZ:InitFaction(FIZ_GuildName,faction))
+	--- f_amo	FIZ:Printtest(faction,FIZ_faction,"mob")
 
 	for standing = from,to do
 		local faction_info = FIZ_FactionGain[faction]
@@ -1101,18 +1101,18 @@ function FIZ_AddMob(faction, from, to, name, rep, zone, limit)
 		local count = add_info.count
 		add_info.data[count] = {}
 		local add_count=add_info.data[count]
-		add_count.name = FIZ_Initmobname(name)
+		add_count.name = name
 		add_count.rep = rep
 		add_count.maxStanding = to
-		add_count.zone = FIZ_Initmapname(zone)
+		add_count.zone = zone
 		if ((standing == to) and limit) then
 			add_count.limit = limit
 		end
-		FIZ_Debug("Added mob ["..name.."] for faction ["..faction.."] and standing [".._G["FACTION_STANDING_LABEL"..standing].."]")
+		FIZ:Debug("Added mob ["..name.."] for faction ["..faction.."] and standing [".._G["FACTION_STANDING_LABEL"..standing].."]")
 	end
 end
 
-function FIZ_AddQuest(faction, from, to, name, rep, itemList, limitType)
+function FIZ:AddQuest(faction, from, to, name, rep, itemList, limitType)
 
 	if not faction then return end
 	if not from then return end
@@ -1124,9 +1124,9 @@ function FIZ_AddQuest(faction, from, to, name, rep, itemList, limitType)
 	if ((to<1) or (to>8)) then return end
 	if (from > to) then return end
 
-	rep = rep * FIZ_InitFactor(FIZ_IsHuman,FIZ_faction)
-	faction = string.lower(FIZ_InitFaction(FIZ_GuildName,faction))
-	--- f_aq	FIZ_Printtest(faction,FIZ_faction,"quest")
+	rep = rep * FIZ:InitFactor(FIZ_IsHuman,FIZ_faction)
+	faction = string.lower(FIZ:InitFaction(FIZ_GuildName,faction))
+	--- f_aq	FIZ:Printtest(faction,FIZ_faction,"quest")
 
 	for standing = from,to do
 		local faction_info = FIZ_FactionGain[faction]
@@ -1161,7 +1161,7 @@ function FIZ_AddQuest(faction, from, to, name, rep, itemList, limitType)
 				add_count.items = {}
 				for item in pairs(itemList) do
 					add_count.items[item] = itemList[item]
-					--- f_aq	FIZ_Printtest(add_count.items[item_name],mark_I[item_name],"item 4")
+					--- f_aq	FIZ:Printtest(add_count.items[item_name],mark_I[item_name],"item 4")
 				end
 			end
 		end
@@ -1169,11 +1169,11 @@ function FIZ_AddQuest(faction, from, to, name, rep, itemList, limitType)
 			add_count.limit = limit
 		end
 
-		FIZ_Debug("Added quest ["..name.."] for faction ["..faction.."] and standing [".._G["FACTION_STANDING_LABEL"..standing].."]")
+		FIZ:Debug("Added quest ["..name.."] for faction ["..faction.."] and standing [".._G["FACTION_STANDING_LABEL"..standing].."]")
 	end
 end
 
-function FIZ_AddInstance(faction, from, to, name, rep, heroic)
+function FIZ:AddInstance(faction, from, to, name, rep, heroic)
 	if not faction then return end
 	if not from then return end
 	if not to then return end
@@ -1183,11 +1183,10 @@ function FIZ_AddInstance(faction, from, to, name, rep, heroic)
 	if ((from<1) or (from>8)) then return end
 	if ((to<1) or (to>8)) then return end
 	if (from > to) then return end
-	faction = string.lower(faction)
 
-	rep = rep * FIZ_InitFactor(FIZ_IsHuman,FIZ_faction)
-	faction = string.lower(FIZ_InitFaction(FIZ_GuildName,faction))
-	--- f_ain	FIZ_Printtest(faction,FIZ_faction,"inst")
+	rep = rep * FIZ:InitFactor(FIZ_IsHuman,FIZ_faction)
+	faction = string.lower(FIZ:InitFaction(FIZ_GuildName,faction))
+	--- f_ain	FIZ:Printtest(faction,FIZ_faction,"inst")
 
 	for standing = from,to do
 		local faction_info = FIZ_FactionGain[faction]
@@ -1212,10 +1211,10 @@ function FIZ_AddInstance(faction, from, to, name, rep, heroic)
 		local count = add_info.count
 		add_info.data[count] = {}
 		local add_count=add_info.data[count]
-		add_count.name = FIZ_Initmapname(name)
+		add_count.name = name
 		add_count.rep = rep
 		add_count.maxStanding = to
-		add_count.level = (isheroic and
+		add_count.level = (heroic and
 			 FIZ_TXT.heroic
 		or
 			FIZ_TXT.normal
@@ -1224,11 +1223,11 @@ function FIZ_AddInstance(faction, from, to, name, rep, heroic)
 			add_count.limit = limit
 		end
 
-		FIZ_Debug("Added instance ["..name.."] for faction ["..faction.."] and standing [".._G["FACTION_STANDING_LABEL"..standing].."]")
+		FIZ:Debug("Added instance ["..name.."] for faction ["..faction.."] and standing [".._G["FACTION_STANDING_LABEL"..standing].."]")
 	end
 end
 
-function FIZ_AddItems(faction, from, to, rep, itemList)
+function FIZ:AddItems(faction, from, to, rep, itemList)
 	if not faction then return end
 	if not from then return end
 	if not to then return end
@@ -1238,11 +1237,10 @@ function FIZ_AddItems(faction, from, to, rep, itemList)
 	if ((from<1) or (from>8)) then return end
 	if ((to<1) or (to>8)) then return end
 	if (from > to) then return end
-	faction = string.lower(faction)
 
-	rep = rep * FIZ_InitFactor(FIZ_IsHuman,FIZ_faction)
-	faction = string.lower(FIZ_InitFaction(FIZ_GuildName,faction))
-	--- f_ait	FIZ_Printtest(faction,FIZ_faction,"item")
+	rep = rep * FIZ:InitFactor(FIZ_IsHuman,FIZ_faction)
+	faction = string.lower(FIZ:InitFaction(FIZ_GuildName,faction))
+	--- f_ait	FIZ:Printtest(faction,FIZ_faction,"item")
 
 	local itemString = ""
 	for standing = from,to do
@@ -1281,11 +1279,11 @@ function FIZ_AddItems(faction, from, to, rep, itemList)
 			add_count.limit = limit
 		end
 
-		FIZ_Debug("AddItem: Added items ["..itemString.."] for faction ["..faction.."] and standing [".._G["FACTION_STANDING_LABEL"..standing].."]")
+		FIZ:Debug("AddItem: Added items ["..itemString.."] for faction ["..faction.."] and standing [".._G["FACTION_STANDING_LABEL"..standing].."]")
 	end
 end
 
-function FIZ_AddGeneral(faction, from, to, name, rep, head, tip, tipList, flag)
+function FIZ:AddGeneral(faction, from, to, name, rep, head, tip, tipList, flag)
 	if not faction then return end
 	if not from then return end
 	if not to then return end
@@ -1295,7 +1293,6 @@ function FIZ_AddGeneral(faction, from, to, name, rep, head, tip, tipList, flag)
 	if ((from<1) or (from>8)) then return end
 	if ((to<1) or (to>8)) then return end
 	if (from > to) then return end
-	faction = string.lower(faction)
 
 	if name == "1" then
 		name = FIZ_TXT.tfr
@@ -1304,9 +1301,9 @@ function FIZ_AddGeneral(faction, from, to, name, rep, head, tip, tipList, flag)
 	else
 	end
 
-	rep = rep * FIZ_InitFactor(FIZ_IsHuman,FIZ_faction)
-	faction = string.lower(FIZ_InitFaction(FIZ_GuildName,faction))
-	--- f_ag	FIZ_Printtest(faction,FIZ_faction,"gen") 
+	rep = rep * FIZ:InitFactor(FIZ_IsHuman,FIZ_faction)
+	faction = string.lower(FIZ:InitFaction(FIZ_GuildName,faction))
+	--- f_ag	FIZ:Printtest(faction,FIZ_faction,"gen") 
 
 	local tipString = ""
 	for standing = from,to do
@@ -1349,7 +1346,7 @@ function FIZ_AddGeneral(faction, from, to, name, rep, head, tip, tipList, flag)
 		if ((standing == to) and limit) then
 			add_count.limit = limit
 		end
-		FIZ_Debug("AddGeneral: Added general rep gain ["..name.."] for faction ["..faction.."] and standing [".._G["FACTION_STANDING_LABEL"..standing].."] with tooltip ["..tipString.."]")
+		FIZ:Debug("AddGeneral: Added general rep gain ["..name.."] for faction ["..faction.."] and standing [".._G["FACTION_STANDING_LABEL"..standing].."] with tooltip ["..tipString.."]")
 	end
 end
 
@@ -1379,7 +1376,7 @@ function FIZ_ReputationFrame_Update() --rfl
 -- v rfl 1.1
 	local numFactions
 	if FIZ_Data.SortByStanding then
-		FIZ_StandingSort()
+		FIZ:StandingSort()
 		numFactions = FIZ_OBS_numFactions
 	else
 -- ^ rfl 1.1
@@ -1417,9 +1414,9 @@ function FIZ_ReputationFrame_Update() --rfl
 		if ( factionIndex <= numFactions ) then
 -- v rfl _9_ rep Main window
 			if FIZ_Data.SortByStanding then
-				FIZ_SortByStanding(i,factionIndex,factionRow,factionBar,factionBarPreview,factionTitle,factionButton,factionStanding,factionBackground)
+				FIZ:SortByStanding(i,factionIndex,factionRow,factionBar,factionBarPreview,factionTitle,factionButton,factionStanding,factionBackground)
 			else
-				FIZ_OriginalRepOrder(i,factionIndex,factionRow,factionBar,factionBarPreview,factionTitle,factionButton,factionStanding,factionBackground)
+				FIZ:OriginalRepOrder(i,factionIndex,factionRow,factionBar,factionBarPreview,factionTitle,factionButton,factionStanding,factionBackground)
 			end
 -- ^ rfl _9_ Rep Main Window
 		else
@@ -1437,7 +1434,7 @@ end
 
 function FIZ_ExpandFactionHeader(index)
 	-- replaces ExpandFactionHeader
-	---fpt f_efh	FIZ_Printtest(index,"","f_efh_1")							---fpt f_efh
+	---fpt f_efh	FIZ:Printtest(index,"","f_efh_1")							---fpt f_efh
 	if not FIZ_Entries then return end
 	if FIZ_Data.SortByStanding then
 		if not FIZ_Entries[index] then return end
@@ -1448,7 +1445,7 @@ function FIZ_ExpandFactionHeader(index)
 		--[[
 		local name = FIZ_Orig_GetFactionInfo(index);
 		FIZ_Data.OriginalCollapsed[name] = nil
-		--FIZ_Print("Expanding original index "..tostring(index).." which is ["..tostring(name).."]")
+		--FIZ:Print("Expanding original index "..tostring(index).." which is ["..tostring(name).."]")
 		FIZ_ShowCollapsedList()
 		]]--
 	end
@@ -1509,7 +1506,7 @@ function FIZ_ReputationFrame_SetRowType(factionRow, isChild, isHeader, hasRep)
 end
 function FIZ_CollapseFactionHeader(index)
 	-- replaces CollapseFactionHeader
-	---fpt f_efh	FIZ_Printtest(index,"","f_cfh_1")							---fpt f_efh
+	---fpt f_efh	FIZ:Printtest(index,"","f_cfh_1")							---fpt f_efh
 	if not FIZ_Entries then return end
 
 	if FIZ_Data.SortByStanding then
@@ -1521,7 +1518,7 @@ function FIZ_CollapseFactionHeader(index)
 		--[[
 		local name = FIZ_Orig_GetFactionInfo(index);
 		FIZ_Data.OriginalCollapsed[name] = true
-		--FIZ_Print("Collapsing original index "..tostring(index).." which is ["..tostring(name).."]")
+		--FIZ:Print("Collapsing original index "..tostring(index).." which is ["..tostring(name).."]")
 		FIZ_ShowCollapsedList()
 		]]--
 	end
@@ -1541,7 +1538,7 @@ function FIZ_ReputationBar_OnClick(self)
 			ReputationDetailFrame:Hide();
 			FIZ_OptionsFrame:Hide()
 			if (FIZ_Data.ExtendDetails) then
-				FIZ_BuildUpdateList()
+				FIZ:BuildUpdateList()
 				FIZ_UpdateList_Update()
 			end
 			ReputationFrame_Update(); -- rfl Event
@@ -1554,7 +1551,7 @@ FIZ_UPDATE_LIST_HEIGHT = 13
 
 function FIZ_UpdateList_Update()
 	-- usually called In conjuction with FIZ_BuildUpdateList
-	--fpt hed ful_u	FIZ_Printtest("","","ful_u 1")
+	--fpt hed ful_u	FIZ:Printtest("","","ful_u 1")
 	if (not FIZ_ReputationDetailFrame:IsVisible()) then return end
 
 	FIZ_UpdateListScrollFrame:Show()
@@ -1580,7 +1577,7 @@ function FIZ_UpdateList_Update()
 	FIZ_ReputationDetailSuppressHint:SetText(FIZ_TXT.suppressHint)
 	FIZ_ClearSessionGainButton:SetText(FIZ_TXT.clearSessionGain)
 
-	local numEntries, highestVisible = FIZ_GetUpdateListSize()
+	local numEntries, highestVisible = FIZ:GetUpdateListSize()
 
 	-- Update scroll frame
 	if ( not FauxScrollFrame_Update(FIZ_UpdateListScrollFrame, numEntries, FIZ_UPDATE_LIST_HEIGHT, 16 ) ) then
@@ -1597,7 +1594,7 @@ function FIZ_UpdateList_Update()
 	local haveInfo = false;
 	entryIndex = 1
 	local i = 0
-	local max = FIZ_TableSize(FIZ_UpdateList)
+	local max = FIZ:TableSize(FIZ_UpdateList)
 	while(i<entryOffset and entryIndex<max) do
 		if FIZ_UpdateList[entryIndex].isShown then
 			i = i + 1
@@ -1706,11 +1703,11 @@ end
 
 function FIZ_MouseButtonUp(self, button)
 	-- unkown call
-	--fpt hed mbu	FIZ_Printtest("","","1 f_mbu")
+	--fpt hed mbu	FIZ:Printtest("","","1 f_mbu")
 	if (button and button == "LeftButton") then
 		FIZ_UpdateEntryClick(self)
 	elseif (button and button == "RightButton") then
-		FIZ_UpdateEntrySuppress(self)
+		FIZ:UpdateEntrySuppress(self)
 	end
 end
 
@@ -1718,16 +1715,16 @@ function FIZ_UpdateEntryClick(self)
 	-- sub function of FIZ_MouseButtonUp
 	if (FIZ_UpdateList[self.id] and FIZ_UpdateList[self.id].hasList) then
 		if (FIZ_UpdateList[self.id].listShown) then
-			FIZ_ShowUpdateEntry(self.id, false)
+			FIZ:ShowUpdateEntry(self.id, false)
 		else
-			FIZ_ShowUpdateEntry(self.id, true)
+			FIZ:ShowUpdateEntry(self.id, true)
 		end
 	end
 end
 
-function FIZ_UpdateEntrySuppress(self)
+function FIZ:UpdateEntrySuppress(self)
 	-- sub function of FIZ_UpdateEntryClick
-	--fpt hed f_ues	FIZ_Printtest("","","f_ues 1")
+	--fpt hed f_ues	FIZ:Printtest("","","f_ues 1")
 	if (FIZ_UpdateList[self.id]) then
 		if (FIZ_UpdateList[self.id].type ~= "") then
 			if (FIZ_UpdateList[self.id].faction and FIZ_UpdateList[self.id].originalName) then
@@ -1738,33 +1735,33 @@ function FIZ_UpdateEntrySuppress(self)
 					FIZ_Suppressed[FIZ_UpdateList[self.id].faction] = {}
 				end
 				if (FIZ_Suppressed[FIZ_UpdateList[self.id].faction][FIZ_UpdateList[self.id].originalName]) then
-					--FIZ_Print("No longer suppressing ["..FIZ_UpdateList[self.id].faction.."]["..FIZ_UpdateList[self.id].originalName.."]");
+					--FIZ:Print("No longer suppressing ["..FIZ_UpdateList[self.id].faction.."]["..FIZ_UpdateList[self.id].originalName.."]");
 					FIZ_Suppressed[FIZ_UpdateList[self.id].faction][FIZ_UpdateList[self.id].originalName] = nil
 				else
-					--FIZ_Print("Suppressing ["..FIZ_UpdateList[self.id].faction.."]["..FIZ_UpdateList[self.id].originalName.."]");
+					--FIZ:Print("Suppressing ["..FIZ_UpdateList[self.id].faction.."]["..FIZ_UpdateList[self.id].originalName.."]");
 					FIZ_Suppressed[FIZ_UpdateList[self.id].faction][FIZ_UpdateList[self.id].originalName] = true
 				end
-				FIZ_BuildUpdateList()
+				FIZ:BuildUpdateList()
 			end
 		end
 	end
 end
 
-function FIZ_SupressNone(allFactions)
+function FIZ:SupressNone(allFactions)
 	-- unkown call
-	--fpt hed sn	FIZ_Printtest("","","1 sn")
+	--fpt hed sn	FIZ:Printtest("","","1 sn")
 	if (allFactions == true) then
 		FIZ_Suppressed = {}
-		FIZ_BuildUpdateList()
+		FIZ:BuildUpdateList()
 	else
 		local factionIndex = GetSelectedFaction()
 		local faction = GetFactionInfo(factionIndex)
 
 		if (faction) then
 			faction = string.lower(faction)
-	--- fpt sn	FIZ_Printtest(faction,FIZ_faction,"1 sn")
+	--- fpt sn	FIZ:Printtest(faction,FIZ_faction,"1 sn")
 			if (FIZ_FactionMapping[faction]) then
-	--- fpt sn	FIZ_Printtest(faction,FIZ_faction,"2 sn")
+	--- fpt sn	FIZ:Printtest(faction,FIZ_faction,"2 sn")
 				faction = FIZ_FactionMapping[faction]
 			end
 
@@ -1773,21 +1770,21 @@ function FIZ_SupressNone(allFactions)
 			end
 			FIZ_Suppressed[faction] = {}
 		end
-		FIZ_BuildUpdateList()
+		FIZ:BuildUpdateList()
 	end
 end
 
 -----------------------------------
 -- _11_ Prepare update entries   --
 -----------------------------------
-function FIZ_Update_Tooltip(x, l1,r1)
+function FIZ:Update_Tooltip(x, l1,r1)
 	x=x+1
 	local ToolTip_ID = {l = l1, r = r1}
 --	print(x.." "..ToolTip_ID.l.." "..ToolTip_ID.r)
 	return ToolTip_ID, x
 end
 
-function FIZ_BuildUpdateList() --xxx
+function FIZ:BuildUpdateList() --xxx
 	FIZ_UpdateList = {}
 	FIZ_CurrentRepInBag = 0
 	FIZ_CurrentRepInBagBank = 0
@@ -1827,7 +1824,7 @@ function FIZ_BuildUpdateList() --xxx
 							end --zzz
 							FIZ_UpdateList[index] = {}
 							local FUL_I = FIZ_UpdateList[index]
-							local bul_name = fg_sid_x_d.name
+							local bul_name = FIZ:InitMapName(fg_sid_x_d.name)
 							FUL_I.type = FIZ_TXT.instanceShort
 							FUL_I.times = toDo.."x"
 							FUL_I.rep = string.format("%d", fg_sid_x_d.rep)
@@ -1844,32 +1841,12 @@ function FIZ_BuildUpdateList() --xxx
 							FUL_I.tooltipDetails = {}
 							local FUL_I_TD = FUL_I.tooltipDetails
 							local x = 0
---- ddd							FIZ_Update_Tooltip(x, FIZ_TXT.instance2, bul_name)
-							FUL_I_TD[x] = {}
-							FUL_I_TD[x].l = FIZ_TXT.instance2
-							FUL_I_TD[x].r = bul_name
-
-							x = x+1
---- ddd							FIZ_Update_Tooltip(x, FIZ_TXT.mode, fg_sid_x_d.level)
-							FUL_I_TD[x] = {}
-							FUL_I_TD[x].l = FIZ_TXT.mode
-							FUL_I_TD[x].r = fg_sid_x_d.level
-							x = x+1
-							FUL_I_TD[x] = {}
-							FUL_I_TD[x].l = FIZ_TXT.reputation
-							FUL_I_TD[x].r = FUL_I.rep
-							x = x+1
-							FUL_I_TD[x] = {}
-							FUL_I_TD[x].l = FIZ_TXT.timesToRun
-							FUL_I_TD[x].r = FUL_I.times
-							x = x+1
-							FUL_I_TD[x] = {}
-							FUL_I_TD[x].l = " "
-							FUL_I_TD[x].r = " "
-							x = x+1
-							FUL_I_TD[x] = {}
-							FUL_I_TD[x].l = FIZ_TXT.maxStanding
-							FUL_I_TD[x].r = _G["FACTION_STANDING_LABEL"..fg_sid_x_d.maxStanding]
+							FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.instance2, bul_name)
+							FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.mode, fg_sid_x_d.level)
+							FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.reputation, FUL_I.rep)
+							FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.timesToRun, FUL_I.times)
+							FUL_I_TD[x], x = FIZ:Update_Tooltip(x, " ", " ")
+							FUL_I_TD[x] = FIZ:Update_Tooltip(x, FIZ_TXT.maxStanding, _G["FACTION_STANDING_LABEL"..fg_sid_x_d.maxStanding])
 							FUL_I_TD.count = x
 							FUL_I.tooltipDetails = FUL_I_TD
 							FIZ_UpdateList[index] = FUL_I
@@ -1900,31 +1877,32 @@ function FIZ_BuildUpdateList() --xxx
 							FUL_I.isShown = true
 							FUL_I.tooltipHead = FIZ_TXT.mobHead
 							FUL_I.tooltipTip = FIZ_TXT.mobTip
-							local bul_name = fg_sid_x_d.name
+							local bul_name = FIZ:InitMobName(fg_sid_x_d.name)
 							if (fg_sid_x_d.zone) then
-								FUL_I.name = bul_name.." ("..fg_sid_x_d.zone..")"
+								local bul_zone = FIZ:InitMapName(fg_sid_x_d.zone)
+								FUL_I.name = bul_name.." ("..bul_zone..")"
 								FUL_I.tooltipDetails = {}
 								local FUL_I_TD = FUL_I.tooltipDetails
 								local x = 0
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.mob2, bul_name)
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.location, fg_sid_x_d.zone)
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.reputation, FUL_I.rep)
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.toDo, FUL_I.times)
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, " ", " ")
-								FUL_I_TD[x] = FIZ_Update_Tooltip(x, FIZ_TXT.maxStanding, _G["FACTION_STANDING_LABEL"..fg_sid_x_d.maxStanding])
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.mob2, bul_name)
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.location, bul_zone)
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.reputation, FUL_I.rep)
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.toDo, FUL_I.times)
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, " ", " ")
+								FUL_I_TD[x] = FIZ:Update_Tooltip(x, FIZ_TXT.maxStanding, _G["FACTION_STANDING_LABEL"..fg_sid_x_d.maxStanding])
 								FUL_I_TD.count = x
 							else
 								FUL_I.name = bul_name
 								FUL_I_TD = {}
 								local x = 0
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.mob2, bul_name)
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.reputation, FUL_I.rep)
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.mob2, bul_name)
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.reputation, FUL_I.rep)
 
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.FIZ_TXT.toDo, FUL_I.times)
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.FIZ_TXT.toDo, FUL_I.times)
 
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, " ", " ")
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, " ", " ")
 
-								FUL_I_TD[x] = FIZ_Update_Tooltip(x, FIZ_TXT.maxStanding, _G["FACTION_STANDING_LABEL"..fg_sid_x_d.maxStanding])
+								FUL_I_TD[x] = FIZ:Update_Tooltip(x, FIZ_TXT.maxStanding, _G["FACTION_STANDING_LABEL"..fg_sid_x_d.maxStanding])
 								FUL_I_TD.count = x
 								FUL_I.tooltipDetails = FUL_I_TD
 							end
@@ -1947,15 +1925,12 @@ function FIZ_BuildUpdateList() --xxx
 							if ((fg_sid_x_d_p == FIZ_LIMIT_TYPE_Herb) and not FIZ_Herb) then
 								-- if list of known professions does not contain Herbology
 								showQuest = false
-								--FIZ_Print("Not showing quest ["..FIZ_FactionGain[faction][standingId].quests.data[i].name.."] because you do not know Herbalism")
 							elseif ((fg_sid_x_d_p == FIZ_LIMIT_TYPE_Skin) and not FIZ_Skin) then
 								-- if list of known professions does not contain Herbology
 								showQuest = false
-								--FIZ_Print("Not showing quest ["..FIZ_FactionGain[faction][standingId].quests.data[i].name.."] because you do not know Skinning")
 							elseif ((fg_sid_x_d_p == FIZ_LIMIT_TYPE_Mine) and not FIZ_Mine) then
 								-- if list of known professions does not contain Herbology
 								showQuest = false
-								--FIZ_Print("Not showing quest ["..FIZ_FactionGain[faction][standingId].quests.data[i].name.."] because you do not know mining")
 							elseif ((fg_sid_x_d_p == FIZ_LIMIT_TYPE_Gather) and not (FIZ_Herb or FIZ_Skin or FIZ_Mine)) then
 								-- no gathering profession
 								showQuest = false
@@ -2014,7 +1989,7 @@ function FIZ_BuildUpdateList() --xxx
 							FUL_I.index = index
 							FUL_I.belongsTo = nil
 							FUL_I.isShown = true
-							local bul_name = quest_names(fg_sid_x_d.name)
+							local bul_name = FIZ:Quest_Names(fg_sid_x_d.name)
 							FUL_I.name = bul_name
 							FUL_I.originalName = FUL_I.name
 
@@ -2031,9 +2006,9 @@ function FIZ_BuildUpdateList() --xxx
 							FUL_I.tooltipDetails = {}
 							local FUL_I_TD = FUL_I.tooltipDetails
 							local x = 0
-							FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.quest2, FUL_I.name)
-							FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.reputation, FUL_I.rep)
-							FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.toDo, FUL_I.times)
+							FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.quest2, FUL_I.name)
+							FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.reputation, FUL_I.rep)
+							FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.toDo, FUL_I.times)
 							if (not FUL_I.suppress) then
 								sum = sum + fg_sid_x_d.rep
 								count = count + 1
@@ -2042,8 +2017,8 @@ function FIZ_BuildUpdateList() --xxx
 							if (fg_sid_x_d.items) then
 								FUL_I.hasList = true
 								FUL_I.listShown = false
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, " ", " ")
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.itemsRequired, " ")
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, " ", " ")
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.itemsRequired, " ")
 								-- quest In log?
 								FUL_I.lowlight = nil
 
@@ -2076,11 +2051,11 @@ function FIZ_BuildUpdateList() --xxx
 									FUL_II.hasList = nil
 									FUL_II.listShown = nil
 									FUL_II.isShown = FUL_I.listShown
-									FUL_II.name = FIZ_Inititemname(item).." ("..fg_sid_x_d.items[item].."x)"
+									FUL_II.name = FIZ:InitItemName(item).." ("..fg_sid_x_d.items[item].."x)"
 
-									FUL_I_TD[x], x = FIZ_Update_Tooltip(x, fg_sid_x_d.items[item].."x", FIZ_Inititemname(item))
+									FUL_I_TD[x], x = FIZ:Update_Tooltip(x, fg_sid_x_d.items[item].."x", FIZ:InitItemName(item))
 
-									FUL_II, currentQuestTimesBag, currentQuestTimesBagBank = FIZ_Quest_Items(fg_sid_x_d.items[item], currentQuestTimesBag, currentQuestTimesBagBank, FUL_II, item)
+									FUL_II, currentQuestTimesBag, currentQuestTimesBagBank = FIZ:Quest_Items(fg_sid_x_d.items[item], currentQuestTimesBag, currentQuestTimesBagBank, FUL_II, item)
 
 									FIZ_UpdateList[itemIndex] = FUL_II					--come here
 									itemIndex = itemIndex + 1
@@ -2093,10 +2068,10 @@ function FIZ_BuildUpdateList() --xxx
 									FUL_I.currentRepBag = currentQuestTimesBag * FUL_I.rep
 									FIZ_CurrentRepInBag = FIZ_CurrentRepInBag + FUL_I.currentRepBag
 									FUL_I.name = FUL_I.originalName
-									FUL_I_TD[x], x = FIZ_Update_Tooltip(x, " ", " ")
-									FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.inBag, " ")
-									FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.turnIns, string.format("%d", FUL_I.currentTimesBag))
-									FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.reputation, string.format("%d", FUL_I.currentRepBag))
+									FUL_I_TD[x], x = FIZ:Update_Tooltip(x, " ", " ")
+									FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.inBag, " ")
+									FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.turnIns, string.format("%d", FUL_I.currentTimesBag))
+									FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.reputation, string.format("%d", FUL_I.currentRepBag))
 								else
 									FUL_I.currentTimesBag = nil
 									FUL_I.currentRepBag = nil
@@ -2110,10 +2085,10 @@ function FIZ_BuildUpdateList() --xxx
 									FUL_I.name = FUL_I.originalName
 									FUL_I.lowlight = nil
 									FIZ_CurrentRepInBagBank = FIZ_CurrentRepInBagBank + FUL_I.currentRepBagBank
-									FUL_I_TD[x], x = FIZ_Update_Tooltip(x, " ", " ")
-									FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.inBagBank, " ")
-									FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.turnIns, string.format("%d", FUL_I.currentTimesBagBank))
-									FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.reputation, string.format("%d", FUL_I.currentRepBagBank))
+									FUL_I_TD[x], x = FIZ:Update_Tooltip(x, " ", " ")
+									FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.inBagBank, " ")
+									FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.turnIns, string.format("%d", FUL_I.currentTimesBagBank))
+									FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.reputation, string.format("%d", FUL_I.currentRepBagBank))
 								else
 									FUL_I.currentTimesBagBank = nil
 									FUL_I.currentRepBagBank = nil
@@ -2143,9 +2118,9 @@ function FIZ_BuildUpdateList() --xxx
 												FUL_I.currentRepQuest = FUL_I.rep
 												FIZ_CurrentRepInQuest = FIZ_CurrentRepInQuest + fg_sid_x_d.rep
 
-												FUL_I_TD[x], x = FIZ_Update_Tooltip(x, " ", " ")
-												FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.questCompleted, " ")
-												FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.reputation, string.format("%d", FUL_I.currentRepQuest))
+												FUL_I_TD[x], x = FIZ:Update_Tooltip(x, " ", " ")
+												FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.questCompleted, " ")
+												FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.reputation, string.format("%d", FUL_I.currentRepQuest))
 											else
 												FUL_I.lowlight = true
 												FUL_I.name = FUL_I.name..FIZ_QUEST_ACTIVE_COLOUR.." ("..FIZ_TXT.active..")|r"
@@ -2156,8 +2131,8 @@ function FIZ_BuildUpdateList() --xxx
 							index = index + 1
 							end
 
-							FUL_I_TD[x], x = FIZ_Update_Tooltip(x, " ", " ")
-							FUL_I_TD[x] = FIZ_Update_Tooltip(x, FIZ_TXT.maxStanding, _G["FACTION_STANDING_LABEL"..fg_sid_x_d.maxStanding])
+							FUL_I_TD[x], x = FIZ:Update_Tooltip(x, " ", " ")
+							FUL_I_TD[x] = FIZ:Update_Tooltip(x, FIZ_TXT.maxStanding, _G["FACTION_STANDING_LABEL"..fg_sid_x_d.maxStanding])
 							FUL_I_TD.count = x
 						end
 					end
@@ -2179,9 +2154,9 @@ function FIZ_BuildUpdateList() --xxx
 
 					FUL_I_TD = {}
 					local x = 0
-					FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.reputation, FUL_I.rep)
+					FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.reputation, FUL_I.rep)
 
-					FUL_I_TD[x], x  = FIZ_Update_Tooltip(x, FIZ_TXT.timesToDo, FUL_I.times)
+					FUL_I_TD[x], x  = FIZ:Update_Tooltip(x, FIZ_TXT.timesToDo, FUL_I.times)
 					FUL_I_TD.count = x-1
 					FUL_I.tooltipDetails = FUL_I_TD
 					FIZ_UpdateList[index] = FUL_I
@@ -2218,9 +2193,9 @@ function FIZ_BuildUpdateList() --xxx
 							local FUL_I_TD = FUL_I.tooltipDetails
 							local x = 0
 
-							FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FUL_I.name, " ")
-							FUL_I_TD[x], x = FIZ_Update_Tooltip(x, " ", " ")
-							FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.itemsRequired, " ")
+							FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FUL_I.name, " ")
+							FUL_I_TD[x], x = FIZ:Update_Tooltip(x, " ", " ")
+							FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.itemsRequired, " ")
 
 							-- add items
 							local itemIndex = index+1
@@ -2238,11 +2213,11 @@ function FIZ_BuildUpdateList() --xxx
 								FUL_II.hasList = nil
 								FUL_II.listShown = nil
 								FUL_II.isShown = FUL_I.listShown
-								FUL_II.name = FIZ_Inititemname(item).." ("..fg_sid_x_d.items[item].."x)"
+								FUL_II.name = FIZ:InitItemName(item).." ("..fg_sid_x_d.items[item].."x)"
 
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, fg_sid_x_d.items[item].."x", FIZ_Inititemname(item))
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, fg_sid_x_d.items[item].."x", FIZ:InitItemName(item))
 
-								FUL_II, currentQuestTimesBag, currentQuestTimesBagBank = FIZ_Quest_Items(fg_sid_x_d.items[item], currentQuestTimesBag, currentQuestTimesBagBank, FUL_II, item)
+								FUL_II, currentQuestTimesBag, currentQuestTimesBagBank = FIZ:Quest_Items(fg_sid_x_d.items[item], currentQuestTimesBag, currentQuestTimesBagBank, FUL_II, item)
 
 								FIZ_UpdateList[itemIndex] = FUL_II
 								itemIndex = itemIndex + 1
@@ -2255,10 +2230,10 @@ function FIZ_BuildUpdateList() --xxx
 								FUL_I.currentRepBag = currentQuestTimesBag * FUL_I.rep
 								FIZ_CurrentRepInBag = FIZ_CurrentRepInBag + FUL_I.currentRepBag
 
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, " ", " ")
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.inBag, " ")
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.turnIns, string.format("%d", FUL_I.currentTimesBag))
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.reputation, string.format("%d", FUL_I.currentRepBag))
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, " ", " ")
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.inBag, " ")
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.turnIns, string.format("%d", FUL_I.currentTimesBag))
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.reputation, string.format("%d", FUL_I.currentRepBag))
 							else
 								FUL_I.currentTimesBag = nil
 								FUL_I.currentRepBag = nil
@@ -2276,10 +2251,10 @@ function FIZ_BuildUpdateList() --xxx
 								FUL_I_TD[x] = {}
 								if (not FIZ_UpdateList[index].hasList) then return end	-- not a list Header entry
 
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, " ", " ")
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.inBagBank, " ")
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.turnIns, string.format("%d", FUL_I.currentTimesBagBank))
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.reputation, string.format("%d", FUL_I.currentRepBagBank))
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, " ", " ")
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.inBagBank, " ")
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.turnIns, string.format("%d", FUL_I.currentTimesBagBank))
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.reputation, string.format("%d", FUL_I.currentRepBagBank))
 							else
 								FUL_I.currentTimesBagBank = nil
 								FUL_I.currentRepBagBank = nil
@@ -2289,8 +2264,8 @@ function FIZ_BuildUpdateList() --xxx
 								FUL_I.highlight = nil
 							end
 
-							FUL_I_TD[x], x = FIZ_Update_Tooltip(x, " ", " ")
-							FUL_I_TD[x] = FIZ_Update_Tooltip(x, FIZ_TXT.maxStanding, _G["FACTION_STANDING_LABEL"..fg_sid_x_d.maxStanding])
+							FUL_I_TD[x], x = FIZ:Update_Tooltip(x, " ", " ")
+							FUL_I_TD[x] = FIZ:Update_Tooltip(x, FIZ_TXT.maxStanding, _G["FACTION_STANDING_LABEL"..fg_sid_x_d.maxStanding])
 
 							FUL_I_TD.count = x
 							FUL_I.tooltipDetails = FUL_I_TD
@@ -2338,19 +2313,19 @@ function FIZ_BuildUpdateList() --xxx
 							FUL_I.tooltipDetails = {}
 							local FUL_I_TD = FUL_I.tooltipDetails
 							local x = 0
-							FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.general2, bul_name)
-							FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.reputation, FUL_I.rep)
-							FUL_I_TD[x], x = FIZ_Update_Tooltip(x, FIZ_TXT.timesToRun, FUL_I.times)
-							FUL_I_TD[x], x = FIZ_Update_Tooltip(x, " ", " ")
+							FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.general2, bul_name)
+							FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.reputation, FUL_I.rep)
+							FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.timesToRun, FUL_I.times)
+							FUL_I_TD[x], x = FIZ:Update_Tooltip(x, " ", " ")
 							if (fg_sid_x_d.tipList) then
 								for tip in pairs(fg_sid_x_d.tipList) do
 
-									FUL_I_TD[x], x = FIZ_Update_Tooltip(x, tip, fg_sid_x_d.tipList[tip])
+									FUL_I_TD[x], x = FIZ:Update_Tooltip(x, tip, fg_sid_x_d.tipList[tip])
 								end
-								FUL_I_TD[x], x = FIZ_Update_Tooltip(x, " ", " ")
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, " ", " ")
 
 							end
-							FUL_I_TD[x] = FIZ_Update_Tooltip(x, FIZ_TXT.maxStanding, _G["FACTION_STANDING_LABEL"..fg_sid_x_d.maxStanding])
+							FUL_I_TD[x] = FIZ:Update_Tooltip(x, FIZ_TXT.maxStanding, _G["FACTION_STANDING_LABEL"..fg_sid_x_d.maxStanding])
 							FUL_I_TD.count = x
 							local FUL_I_TD = FUL_I.tooltipDetails
 							FIZ_UpdateList[index] = FUL_I
@@ -2363,12 +2338,12 @@ function FIZ_BuildUpdateList() --xxx
 		end
 	end
 
-	--FIZ_Print("Added "..(index-1).." entries for ["..faction.."] at standing "..standingId)
+	--FIZ:Print("Added "..(index-1).." entries for ["..faction.."] at standing "..standingId)
 
 	FIZ_UpdateList_Update()
 end
 
-function FIZ_Quest_Items(itemsNeed, currentQuestTimesBag, currentQuestTimesBagBank, QuestItem, item)
+function FIZ:Quest_Items(itemsNeed, currentQuestTimesBag, currentQuestTimesBagBank, QuestItem, item)
 	if not QuestItem.times then 
 		QuestItem = {}
 		QuestItem.name = "James"
@@ -2424,9 +2399,9 @@ function FIZ_Quest_Items(itemsNeed, currentQuestTimesBag, currentQuestTimesBagBa
 	return QuestItem, currentQuestTimesBag, currentQuestTimesBagBank
 end
 
-function FIZ_GetUpdateListSize()
+function FIZ:GetUpdateListSize()
 	-- sub function of	FIZ_UpdateList_Update()
-	--fpt hed f_guls	FIZ_Printtest("","","f_guls 1")
+	--fpt hed f_guls	FIZ:Printtest("","","f_guls 1")
 	local count = 0
 	local highest = 0
 	for i in pairs(FIZ_UpdateList) do
@@ -2441,8 +2416,8 @@ function FIZ_GetUpdateListSize()
 	return count, highest
 end
 
-function FIZ_ShowUpdateEntry(index, show)
-	--fpt hed f_sue	FIZ_Printtest("","","f_sue 1")
+function FIZ:ShowUpdateEntry(index, show)
+	--fpt hed f_sue	FIZ:Printtest("","","f_sue 1")
 	if (not FIZ_UpdateList[index]) then return end		-- invalid index
 	if (not FIZ_UpdateList[index].hasList) then return end	-- not a list Header entry
 	if (type(show)~="boolean") then return end		-- wrong data type
@@ -2574,7 +2549,7 @@ end
 -----------------------------------
 -- _12_ reputation Changes to chat
 -----------------------------------
-function FIZ_DumpReputationChangesToChat(initOnly)
+function FIZ:DumpReputationChangesToChat(initOnly)
 	if not FIZ_StoredRep then FIZ_StoredRep = {} end
 
 	local numFactions = GetNumFactions();
@@ -2602,24 +2577,24 @@ function FIZ_DumpReputationChangesToChat(initOnly)
 						end
 						if (barValue > FIZ_StoredRep[name].rep) then
 							-- increased rep
-							FIZ_Print(FIZ_NEW_REP_COLOUR..string.format(FACTION_STANDING_INCREASED..FIZ_TXT.stats, name, barValue-FIZ_StoredRep[name].rep, sign, barValue-FIZ_StoredRep[name].origRep, barMax-barValue))
+							FIZ:Print(FIZ_NEW_REP_COLOUR..string.format(FACTION_STANDING_INCREASED..FIZ_TXT.stats, name, barValue-FIZ_StoredRep[name].rep, sign, barValue-FIZ_StoredRep[name].origRep, barMax-barValue))
 						elseif (barValue < FIZ_StoredRep[name].rep) then
-							FIZ_Print(FIZ_NEW_REP_COLOUR..string.format(FACTION_STANDING_DECREASED..FIZ_TXT.stats, name, FIZ_StoredRep[name].rep-barValue, sign, barValue-FIZ_StoredRep[name].origRep, barMax-barValue))
+							FIZ:Print(FIZ_NEW_REP_COLOUR..string.format(FACTION_STANDING_DECREASED..FIZ_TXT.stats, name, FIZ_StoredRep[name].rep-barValue, sign, barValue-FIZ_StoredRep[name].origRep, barMax-barValue))
 							-- decreased rep
 						end
 						if (FIZ_StoredRep[name].standingID ~= standingID) then
-							FIZ_Print(FIZ_NEW_STANDING_COLOUR..string.format(FACTION_STANDING_CHANGED, _G["FACTION_STANDING_LABEL"..standingID], name))
+							FIZ:Print(FIZ_NEW_STANDING_COLOUR..string.format(FACTION_STANDING_CHANGED, _G["FACTION_STANDING_LABEL"..standingID], name))
 						end
 					end
 				end
 				if (FIZ_Data.SwitchFactionBar) then
 					if (not FIZ_Data.NoGuildSwitch or name ~= FIZ_GuildName) then
 						if (barValue > FIZ_StoredRep[name].rep) then
-							--FIZ_Print("Marking faction ["..tostring(name).."] index ["..tostring(factionIndex).."] for rep watch bar")
+							--FIZ:Print("Marking faction ["..tostring(name).."] index ["..tostring(factionIndex).."] for rep watch bar")
 							watchIndex = factionIndex
 							watchName = name
 						--elseif (barValue ~= FIZ_StoredRep[name].rep) then
-							--FIZ_Print("Faction ["..tostring(name).."] lost rep")
+							--FIZ:Print("Faction ["..tostring(name).."] lost rep")
 						end
 					end
 				end
@@ -2634,7 +2609,7 @@ function FIZ_DumpReputationChangesToChat(initOnly)
 	if (watchIndex > 0) then
 		if (watchIndex ~= watchedIndex) then
 			if (not FIZ_Data.SilentSwitch) then
-				FIZ_Print(FIZ_HELP_COLOUR..FIZ_NAME..":|r "..FIZ_TXT.switchBar.." ["..tostring(watchName).."|r]")
+				FIZ:Print(FIZ_Help_COLOUR..FIZ_NAME..":|r "..FIZ_TXT.switchBar.." ["..tostring(watchName).."|r]")
 			end
 		end
 		-- choose Faction to show
@@ -2643,7 +2618,7 @@ function FIZ_DumpReputationChangesToChat(initOnly)
 	end
 end
 
-function FIZ_ClearSessionGain()
+function FIZ:ClearSessionGain()
 	local factionIndex = GetSelectedFaction()
 	local name, _, standingID, barMin, barMax, barValue, _, _, isHeader, _, hasRep, isWatched = GetFactionInfo(factionIndex)
 
@@ -2696,8 +2671,8 @@ end
 -----------------------------------
 -- _13_ show option window
 -----------------------------------
-function FIZ_ToggleConfigWindow()
-	--- fpt f_tcw	FIZ_Printtest("f_tcw","","")
+function FIZ:ToggleConfigWindow()
+	--- fpt f_tcw	FIZ:Printtest("f_tcw","","")
 	if ReputationFrame:IsVisible() then
 		if FIZ_OptionsFrame:IsVisible() then
 			-- both windows shown -> hide them both
@@ -2718,8 +2693,8 @@ function FIZ_ToggleConfigWindow()
 	end
 end
 
-function FIZ_ToggleDetailWindow()
-	--- fpt f_tdw	FIZ_Printtest("f_tdw","","")
+function FIZ:ToggleDetailWindow()
+	--- fpt f_tdw	FIZ:Printtest("f_tdw","","")
 	if ReputationFrame:IsVisible() then
 		if (FIZ_Data.ExtendDetails) then
 			if FIZ_ReputationDetailFrame:IsVisible() then
@@ -2769,39 +2744,39 @@ end
 function FIZ_Test()
 
 	if (FIZ_GuildFactionBar:GetParent()) then
-		FIZ_Print("FIZ_GuildFactionBar parent: "..tostring(FIZ_GuildFactionBar:GetParent():GetName()))
+		FIZ:Print("FIZ_GuildFactionBar parent: "..tostring(FIZ_GuildFactionBar:GetParent():GetName()))
 	else
-		FIZ_Print("FIZ_GuildFactionBar has no parent")
+		FIZ:Print("FIZ_GuildFactionBar has no parent")
 	end
 
 	if (FIZ_GuildFactionBarCapHeader:GetParent()) then
-		FIZ_Print("FIZ_GuildFactionBarCapHeader parent: "..tostring(FIZ_GuildFactionBarCapHeader:GetParent():GetName()))
+		FIZ:Print("FIZ_GuildFactionBarCapHeader parent: "..tostring(FIZ_GuildFactionBarCapHeader:GetParent():GetName()))
 	else
-		FIZ_Print("FIZ_GuildFactionBarCapHeader has no parent")
+		FIZ:Print("FIZ_GuildFactionBarCapHeader has no parent")
 	end
 	if (FIZ_GuildFactionBarCapText:GetParent()) then
-		FIZ_Print("FIZ_GuildFactionBarCapText parent: "..tostring(FIZ_GuildFactionBarCapText:GetParent():GetName()))
+		FIZ:Print("FIZ_GuildFactionBarCapText parent: "..tostring(FIZ_GuildFactionBarCapText:GetParent():GetName()))
 	else
-		FIZ_Print("FIZ_GuildFactionBarCapText has no parent")
+		FIZ:Print("FIZ_GuildFactionBarCapText has no parent")
 	end
 	if (FIZ_GuildFactionBarCapMarker:GetParent()) then
-		FIZ_Print("FIZ_GuildFactionBarCapMarker parent: "..tostring(FIZ_GuildFactionBarCapMarker:GetParent():GetName()))
+		FIZ:Print("FIZ_GuildFactionBarCapMarker parent: "..tostring(FIZ_GuildFactionBarCapMarker:GetParent():GetName()))
 	else
-		FIZ_Print("FIZ_GuildFactionBarCapMarker has no parent")
+		FIZ:Print("FIZ_GuildFactionBarCapMarker has no parent")
 	end
 	if (FIZ_GuildFactionBarBaseMarker:GetParent()) then
-		FIZ_Print("FIZ_GuildFactionBarBaseMarker parent: "..tostring(FIZ_GuildFactionBarBaseMarker:GetParent():GetName()))
+		FIZ:Print("FIZ_GuildFactionBarBaseMarker parent: "..tostring(FIZ_GuildFactionBarBaseMarker:GetParent():GetName()))
 	else
-		FIZ_Print("FIZ_GuildFactionBarBaseMarker has no parent")
+		FIZ:Print("FIZ_GuildFactionBarBaseMarker has no parent")
 	end
 end
 
 -------------------------------------------
 -- _15_ Getting reputation ready to hand In
 -------------------------------------------
-function FIZ_GetReadyReputation(factionIndex)
+function FIZ:GetReadyReputation(factionIndex)
 	local result = 0
-	return result end	--[[-- curently disabled
+	return result end	--[[-- curently disabled 
 	if not factionIndex then return result end
 
 	if (not ReputationFrame:IsVisible()) then return result end
@@ -2844,7 +2819,7 @@ function FIZ_GetReadyReputation(factionIndex)
 								local currentQuestTimesBag = -1
 								local currentQuestTimesBagBank = -1
 								for item in pairs(FIZ_FG_fs_h_d.items) do
-								_,currentQuestTimesBag, currentQuestTimesBagBank = FIZ_Quest_Items(FIZ_FG_fs_h_d.items[item], currentQuestTimesBag, currentQuestTimesBagBank, "nil", item)
+								_,currentQuestTimesBag, currentQuestTimesBagBank = FIZ:Quest_Items(FIZ_FG_fs_h_d.items[item], currentQuestTimesBag, currentQuestTimesBagBank, "nil", item)
 								end
 								if (currentQuestTimesBag > toDo) then
 									currentQuestTimesBag = toDo
@@ -2865,7 +2840,7 @@ function FIZ_GetReadyReputation(factionIndex)
 								for z=1,entries do
 									local title,level,tag,group,header,collapsed,complete,daily = GetQuestLogTitle(z)
 									if (title and not header and complete) then
-										if string.find(string.lower(quest_names(FIZ_FG_fs_h_d.name)), string.lower(title)) then
+										if string.find(string.lower(FIZ:Quest_Names(FIZ_FG_fs_h_d.name)), string.lower(title)) then
 											-- this quest matches
 											result = result + FIZ_FG_fs_h_d.rep
 										end
@@ -2890,7 +2865,7 @@ function FIZ_GetReadyReputation(factionIndex)
 								local currentQuestTimesBag = -1
 								local currentQuestTimesBagBank = -1
 								for item in pairs(FIZ_FG_fs_h_d.items) do
-								_,currentQuestTimesBag, currentQuestTimesBagBank = FIZ_Quest_Items(FIZ_FG_fs_h_d.items[item], currentQuestTimesBag, currentQuestTimesBagBank, "nil", item)
+								_,currentQuestTimesBag, currentQuestTimesBagBank = FIZ:Quest_Items(FIZ_FG_fs_h_d.items[item], currentQuestTimesBag, currentQuestTimesBagBank, "nil", item)
 								end
 								if (currentQuestTimesBag > toDo) then
 									currentQuestTimesBag = toDo
@@ -2918,7 +2893,7 @@ end	--]]--
 -- _16_ FSS // RDF_IS // RDF
 -----------------------------------
 -- ^ rfl 2.7 v ptr
-function FIZ_StandingSort()
+function FIZ:StandingSort()
 -- del	local name, description, standingID, barMin, barMax, barValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus;
 	local standings = {}
 	local numFactions = GetNumFactions();
@@ -2931,7 +2906,7 @@ function FIZ_StandingSort()
 			if not standings[standingID] then
 				standings[standingID] = {}
 			end
-			local size = FIZ_TableSize(standings[standingID])
+			local size = FIZ:TableSize(standings[standingID])
 			local entry = {}
 			local inserted = false
 			entry.missing = barMax-barValue
@@ -2962,13 +2937,13 @@ function FIZ_StandingSort()
 	end
 	for i=8,1, -1 do
 	--for i In pairs(standings) do
-		if FIZ_TableSize(standings[i]) then
+		if FIZ:TableSize(standings[i]) then
 			if (standings[i]) then
 				numFactions = numFactions + 1 -- count standing as header
 				FIZ_Entries[numFactions] = {}
 				FIZ_Entries[numFactions].header = true
 				FIZ_Entries[numFactions].i = i	-- this is the standingID
-				FIZ_Entries[numFactions].size = FIZ_TableSize(standings[i]) -- this is the number of factions with this standing
+				FIZ_Entries[numFactions].size = FIZ:TableSize(standings[i]) -- this is the number of factions with this standing
 				if (not FIZ_Collapsed[i]) then
 					for j in pairs(standings[i]) do
 						numFactions = numFactions + 1 -- count each faction in the current standing
@@ -3032,10 +3007,10 @@ function FIZ_ReputationDetailFrame_IsShown(faction,flag,flag2,i)
 -- ^ rfl _16_ 2
 end
 -- ^ R_D_F_IS v R_D_F
-function FIZ_Rep_Detail_Frame(faction,colorID,barValue,barMax,origBarValue,standingID,toExalted,factionStandingtext)
+function FIZ:Rep_Detail_Frame(faction,colorID,barValue,barMax,origBarValue,standingID,toExalted,factionStandingtext)
 	local name, description, _, _, _, _, atWarWith, canToggleAtWar, _, _, _, _, _, _, _, _ = GetFactionInfo(faction);
 	local gender = UnitSex("player");
-	FIZ_BuildUpdateList()
+	FIZ:BuildUpdateList()
 
 	FIZ_ReputationDetailFactionName:SetText(name);
 	FIZ_ReputationDetailFactionDescription:SetText(description);
@@ -3131,7 +3106,7 @@ end
 -----------------------------------
 -- _16_ Listing by standing
 -----------------------------------
-function FIZ_ListByStanding(standing)
+function FIZ:ListByStanding(standing)
 	local numFactions = GetNumFactions();
 	local name, description, standingID, barMin, barMax, barValue, atWarWith, canToggleAtWar, isHeader, hasRep, isCollapsed, isWatched;
 	local list = {}
@@ -3155,44 +3130,22 @@ function FIZ_ListByStanding(standing)
 	-- output
 	for i=1, 8 do
 		if (list[i]) then
-			FIZ_Print(FIZ_HELP_COLOUR..FIZ_NAME..":|r "..FIZ_RGBToColour_perc(1, FACTION_BAR_COLORS[i].r, FACTION_BAR_COLORS[i].g, FACTION_BAR_COLORS[i].b).."--- "..FIZ_TXT_STAND_LV[i].." ("..i..") ---|r")
+			FIZ:Print(FIZ_Help_COLOUR..FIZ_NAME..":|r "..FIZ:RGBToColour_perc(1, FACTION_BAR_COLORS[i].r, FACTION_BAR_COLORS[i].g, FACTION_BAR_COLORS[i].b).."--- "..FIZ_TXT_STAND_LV[i].." ("..i..") ---|r")
 			for p in pairs(list[i]) do
-				--FIZ_Print("    "..p..": "..list[i][p].value.."/"..list[i][p].max.." ("..FIZ_TXT.missing2..": "..list[i][p].max-list[i][p].value..")")
-				FIZ_Print("    "..p..": "..FIZ_TXT.missing2..": "..list[i][p].max-list[i][p].value)
+				--FIZ:Print("    "..p..": "..list[i][p].value.."/"..list[i][p].max.." ("..FIZ_TXT.missing2..": "..list[i][p].max-list[i][p].value..")")
+				FIZ:Print("    "..p..": "..FIZ_TXT.missing2..": "..list[i][p].max-list[i][p].value)
 			end
 			if (not standing) then
-				FIZ_Print(" ")
+				FIZ:Print(" ")
 			end
 		end
 	end
 end
 
------------------------------------
--- _17_ list German names
------------------------------------
-
-function FIZ_ShowGerman(standing)
-
-	local en,de,color,min,max
-	min=1
-	max=8
-	if ((standing ~= nil) and (standing<=8)) then
-		min=standing
-		max=standing
-	end
-	FIZ_Print(FIZ_HELP_COLOUR..FIZ_NAME..":|r German standing names:")
-	for i=min,max do
-		en = _G["FACTION_STANDING_LABEL"..i]
-		de = FIZ_TXT_STAND_LV[i]
-		color = FACTION_BAR_COLORS[i]
-		FIZ_Print("  "..FIZ_RGBToColour_perc(1,color.r,color.g,color.b)..i..": "..en.." = "..de)
-	end
-end
-
 ------------------------
--- _18_ extracting Skill information now 6
+-- _17_ extracting Skill information
 ------------------------
-function FIZ_ExtractSkills() --- ggg
+function FIZ:ExtractSkills() --- ggg
 	FIZ_Herb = false
 	FIZ_Skin = false
 	FIZ_Mine = false
@@ -3271,26 +3224,26 @@ function FIZ_ExtractSkills() --- ggg
 		end
 	end
 --[[----------------------------------------------------------
-	FIZ_Printtest(prof1, prof2, archaeology)--fpt --zzz
-	FIZ_Printtest(fishing, cooking, firstaid)--fpt --zzz
-	FIZ_Printtest("skillHerb",FIZ_TXT.skillHerb,FIZ_Herb)
-	FIZ_Printtest("skillHerb",FIZ_TXT.skillMine,FIZ_Mine)
-	FIZ_Printtest("skillHerb",FIZ_TXT.skillSkin,FIZ_Skin)
-	FIZ_Printtest("skillHerb",FIZ_TXT.skillAlch,FIZ_Alche)
-	FIZ_Printtest("skillHerb",FIZ_TXT.skillBlack,FIZ_Black)
-	FIZ_Printtest("skillHerb",FIZ_TXT.skillEnch,FIZ_Enchan)
-	FIZ_Printtest("skillHerb",FIZ_TXT.skillEngi,FIZ_Engin)
-	FIZ_Printtest("skillHerb",FIZ_TXT.skillIncrip,FIZ_Incrip)
-	FIZ_Printtest("skillHerb",FIZ_TXT.skillJewel,FIZ_Jewel)
-	FIZ_Printtest("skillHerb",FIZ_TXT.skillLeath,FIZ_Leath)
-	FIZ_Printtest("skillHerb",FIZ_TXT.skillAid,FIZ_Aid)
-	FIZ_Printtest("skillHerb",FIZ_TXT.skillArch,FIZ_Arch)
-	FIZ_Printtest("skillHerb",FIZ_TXT.skillCook,FIZ_Cook)
-	FIZ_Printtest("skillHerb",FIZ_TXT.skillFish,FIZ_Fish)--]]--
+	FIZ:Printtest(prof1, prof2, archaeology)--fpt --zzz
+	FIZ:Printtest(fishing, cooking, firstaid)--fpt --zzz
+	FIZ:Printtest("skillHerb",FIZ_TXT.skillHerb,FIZ_Herb)
+	FIZ:Printtest("skillHerb",FIZ_TXT.skillMine,FIZ_Mine)
+	FIZ:Printtest("skillHerb",FIZ_TXT.skillSkin,FIZ_Skin)
+	FIZ:Printtest("skillHerb",FIZ_TXT.skillAlch,FIZ_Alche)
+	FIZ:Printtest("skillHerb",FIZ_TXT.skillBlack,FIZ_Black)
+	FIZ:Printtest("skillHerb",FIZ_TXT.skillEnch,FIZ_Enchan)
+	FIZ:Printtest("skillHerb",FIZ_TXT.skillEngi,FIZ_Engin)
+	FIZ:Printtest("skillHerb",FIZ_TXT.skillIncrip,FIZ_Incrip)
+	FIZ:Printtest("skillHerb",FIZ_TXT.skillJewel,FIZ_Jewel)
+	FIZ:Printtest("skillHerb",FIZ_TXT.skillLeath,FIZ_Leath)
+	FIZ:Printtest("skillHerb",FIZ_TXT.skillAid,FIZ_Aid)
+	FIZ:Printtest("skillHerb",FIZ_TXT.skillArch,FIZ_Arch)
+	FIZ:Printtest("skillHerb",FIZ_TXT.skillCook,FIZ_Cook)
+	FIZ:Printtest("skillHerb",FIZ_TXT.skillFish,FIZ_Fish)--]]--
 end
 
 --------------------------
--- _20_ classic options
+-- _18_ classic options
 --------------------------
 function FIZ_OnShowOptionFrame()
 	FIZ_EnableMissingBox:SetChecked(FIZ_Data.ShowMissing)
@@ -3307,7 +3260,7 @@ function FIZ_OnShowOptionFrame()
 end
 
 --------------------------
--- _21_ interface options
+-- _19_ interface options
 --------------------------
 function FIZ_OnLoadOptions(panel)
 	panel.name = FIZ_NAME
@@ -3376,9 +3329,9 @@ function FIZ_OptionsDefault()
 end
 
 --------------------------
--- _22_ rep Main window
+-- _20_ rep Main window
 --------------------------
-function FIZ_SortByStanding(i,factionIndex,factionRow,factionBar,factionBarPreview,factionTitle,factionButton,factionStanding,factionBackground)
+function FIZ:SortByStanding(i,factionIndex,factionRow,factionBar,factionBarPreview,factionTitle,factionButton,factionStanding,factionBackground)
 -- v rfl SBS set 2 start
 
 	local OBS_fi = FIZ_Entries[factionIndex]
@@ -3463,7 +3416,7 @@ function FIZ_SortByStanding(i,factionIndex,factionRow,factionBar,factionBarPrevi
 -- ^ rfl SBS 5
 		local previewValue = 0
 		if (FIZ_Data.ShowPreviewRep) then
-			previewValue = FIZ_GetReadyReputation(OBS_fi_i)
+			previewValue = FIZ:GetReadyReputation(OBS_fi_i)
 		end
 		if ((previewValue > 0) and not ((standingID==8) and (barMax-barValue == 1) ) ) then
 			factionBarPreview:Show()
@@ -3498,7 +3451,7 @@ function FIZ_SortByStanding(i,factionIndex,factionRow,factionBar,factionBarPrevi
 				if ( canToggleAtWar ) then local flag = 1 end
 				FIZ_ReputationDetailFrame_IsShown(OBS_fi_I,flag,1)
 			end
-			if ( FIZ_ReputationDetailFrame:IsVisible() ) then FIZ_Rep_Detail_Frame(OBS_fi_i,standingID,barValue,barMax,origBarValue,standingID,toExalted,factionStandingtext) end
+			if ( FIZ_ReputationDetailFrame:IsVisible() ) then FIZ:Rep_Detail_Frame(OBS_fi_i,standingID,barValue,barMax,origBarValue,standingID,toExalted,factionStandingtext) end
 
 -- ^ rfl SBS 6.2
 -- ^ rfl SBS 6
@@ -3519,7 +3472,7 @@ function FIZ_SortByStanding(i,factionIndex,factionRow,factionBar,factionBarPrevi
 
 end
 -- ^ rfl SBS
-function FIZ_OriginalRepOrder(i,factionIndex,factionRow,factionBar,factionBarPreview,factionTitle,factionButton,factionStanding,factionBackground)
+function FIZ:OriginalRepOrder(i,factionIndex,factionRow,factionBar,factionBarPreview,factionTitle,factionButton,factionStanding,factionBackground)
 -- v rfl ORO set 2 start
 
 
@@ -3599,7 +3552,7 @@ function FIZ_OriginalRepOrder(i,factionIndex,factionRow,factionBar,factionBarPre
 -- ^ rfl ORO 5
 	local previewValue = 0
 	if (FIZ_Data.ShowPreviewRep) then
-		previewValue = FIZ_GetReadyReputation(factionIndex)
+		previewValue = FIZ:GetReadyReputation(factionIndex)
 	end
 	if ((previewValue > 0) and not ((standingID==8) and (barMax-barValue == 1) ) ) then
 		factionBarPreview:Show()
@@ -3635,7 +3588,7 @@ function FIZ_OriginalRepOrder(i,factionIndex,factionRow,factionBar,factionBarPre
 			FIZ_ReputationDetailFrame_IsShown(factionIndex,flag,2)
 		end
 		if ( FIZ_ReputationDetailFrame:IsVisible() ) then 
-			FIZ_Rep_Detail_Frame(factionIndex,colorIndex,barValue,barMax,origBarValue,standingID,toExalted,factionStandingtext) 
+			FIZ:Rep_Detail_Frame(factionIndex,colorIndex,barValue,barMax,origBarValue,standingID,toExalted,factionStandingtext) 
 -- ^ rfl ORO 6.1
 -- ^ rfl ORO 6
 -- v rfl _17 start line 4

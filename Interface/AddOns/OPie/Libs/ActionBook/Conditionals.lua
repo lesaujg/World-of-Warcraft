@@ -270,25 +270,34 @@ do -- moving
 		return GetUnitSpeed("player") > 0
 	end)
 end
-do -- ready:spell name/spell id/item name/item id
-	local argCache = {}
-	KR:SetNonSecureConditional("ready", function(_name, args)
-		if not args or args == "" then
-			return false
-		end
-		
-		local at = argCache[args]
-		if not at then
-			at = {}
-			for s in args:gmatch("[^/]+") do
+local stringArgCache = {} do
+	local empty = {}
+	setmetatable(stringArgCache, {__index=function(t,k)
+		if k then
+			local at
+			for s in k:gmatch("[^/]+") do
 				s = s:match("^%s*(.-)%s*$")
 				if #s > 0 then
+					at = at or {}
 					at[#at + 1] = s
 				end
 			end
-			argCache[args] = at
+			at = at or empty
+			t[k] = at
+			return at
+		end
+		return empty
+	end})
+end
+do -- ready:spell name/spell id/item name/item id
+	KR:SetNonSecureConditional("ready", function(_name, args)
+		if not args or args == "" then
+			local gcS, gcL = GetSpellCooldown(61304)
+			return gcS == 0 and gcL == 0
 		end
 		
+		local at = stringArgCache[args]
+
 		local gcS, gcL = GetSpellCooldown(61304)
 		local gcE = gcS and gcL and (gcS + gcL) or math.huge
 		for i=1,#at do
@@ -304,24 +313,12 @@ do -- ready:spell name/spell id/item name/item id
 	end)
 end
 do -- have:item name/id
-	local argCache = {}
 	KR:SetNonSecureConditional("have", function(_name, args)
 		if not args or args == "" then
 			return false
 		end
 		
-		local at = argCache[args]
-		if not at then
-			at = {}
-			for s in args:gmatch("[^/]+") do
-				s = s:match("^%s*(.-)%s*$")
-				if #s > 0 then
-					at[#at + 1] = s
-				end
-			end
-			argCache[args] = at
-		end
-		
+		local at = stringArgCache[args]
 		for i=1,#at do
 			if (GetItemCount(at[i]) or 0) > 0 then
 				return true
@@ -329,5 +326,48 @@ do -- have:item name/id
 		end
 		
 		return false
+	end)
+end
+do -- selfbuff:name
+	local function checkSelf(name, args)
+		if not args or args == "" then
+			return false
+		end
+		
+		local at, query = stringArgCache[args], name == "selfbuff" and UnitBuff or UnitDebuff
+		for i=1,#at do
+			if query("player", at[i]) then
+				return true
+			end
+		end
+		
+		return false
+	end
+	KR:SetNonSecureConditional("selfbuff", checkSelf)
+	KR:SetNonSecureConditional("selfdebuff", checkSelf)
+end
+do -- debuff:name
+	local function checkAura(name, args, target)
+		if not args or args == "" then
+			return false
+		end
+		local at = stringArgCache[args], name == "owndebuff" and "PLAYER" or ""
+		local filter = (name == "owndebuff" or name == "ownbuff") and "PLAYER" or ""
+		local query = (name == "debuff" or name == "owndebuff") and UnitDebuff or UnitBuff
+		for i=1,#at do
+			if query(target, at[i], nil, filter) then
+				return true
+			end
+		end
+		return false
+	end
+	KR:SetNonSecureConditional("debuff", checkAura)
+	KR:SetNonSecureConditional("owndebuff", checkAura)
+	KR:SetNonSecureConditional("buff", checkAura)
+	KR:SetNonSecureConditional("ownbuff", checkAura)
+end
+do -- combo:count
+	KR:SetNonSecureConditional("combo", function(_name, args, target)
+		return UnitPower("player", 4) >= (tonumber(args) or 1)
 	end)
 end

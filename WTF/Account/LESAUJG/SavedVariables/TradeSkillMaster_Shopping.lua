@@ -24,16 +24,16 @@ TradeSkillMaster_ShoppingDB = {
 			"miscellaneous/mount", -- [9]
 		},
 		["previousSearches"] = {
-			"Giant Dinosaur Bone/exact", -- [1]
-			"critical strike", -- [2]
-			"sorcerous air/exact", -- [3]
-			"frostweed", -- [4]
+			"true iron ore/exact", -- [1]
+			"raw beast", -- [2]
+			"Blackrock Ore/exact", -- [3]
+			"universal", -- [4]
 			"miscellaneous/mount", -- [5]
 			"arcane c", -- [6]
-			"universal", -- [7]
-			"Blackrock Ore/exact", -- [8]
-			"raw beast", -- [9]
-			"true iron ore/exact", -- [10]
+			"Giant Dinosaur Bone/exact", -- [7]
+			"sorcerous air/exact", -- [8]
+			"critical strike", -- [9]
+			"frostweed", -- [10]
 			"Healing Tonic/exact", -- [11]
 			"sea scorpion segment/exact", -- [12]
 			"Luminous Shard/exact/x3", -- [13]
@@ -229,7 +229,7 @@ TradeSkillMaster_ShoppingDB = {
 			["item:23112:0:0:0:0:0:0"] = "Golden Draenite",
 			["item:34056:0:0:0:0:0:0"] = "Lesser Cosmic Essence",
 			["item:22447:0:0:0:0:0:0"] = "Lesser Planar Essence",
-			["item:11174:0:0:0:0:0:0"] = "Lesser Nether Essence",
+			["item:43127:0:0:0:0:0:0"] = "Snowfall Ink",
 			["item:52195:0:0:0:0:0:0"] = "Amberjewel",
 			["item:22445:0:0:0:0:0:0"] = "Arcane Dust",
 			["item:52194:0:0:0:0:0:0"] = "Demonseye",
@@ -246,9 +246,9 @@ TradeSkillMaster_ShoppingDB = {
 			["item:52191:0:0:0:0:0:0"] = "Ocean Sapphire",
 			["item:36924:0:0:0:0:0:0"] = "Sky Sapphire",
 			["item:36917:0:0:0:0:0:0"] = "Bloodstone",
-			["item:115504:0:0:0:0:0:0"] = "Fractured Temporal Crystal",
-			["item:36860:0:0:0:0:0:0"] = "Eternal Fire",
 			["item:11084:0:0:0:0:0:0"] = "Large Glimmering Shard",
+			["item:36860:0:0:0:0:0:0"] = "Eternal Fire",
+			["item:115504:0:0:0:0:0:0"] = "Fractured Temporal Crystal",
 			["item:22452:0:0:0:0:0:0"] = "Primal Earth",
 			["item:61978:0:0:0:0:0:0"] = "Blackfallow Ink",
 			["item:61979:0:0:0:0:0:0"] = "Ashen Pigment",
@@ -259,10 +259,10 @@ TradeSkillMaster_ShoppingDB = {
 			["item:11135:0:0:0:0:0:0"] = "Greater Mystic Essence",
 			["item:11134:0:0:0:0:0:0"] = "Lesser Mystic Essence",
 			["item:23107:0:0:0:0:0:0"] = "Shadow Draenite",
-			["item:37701:0:0:0:0:0:0"] = "Crystallized Earth",
+			["item:16203:0:0:0:0:0:0"] = "Greater Eternal Essence",
 			["item:39151:0:0:0:0:0:0"] = "Alabaster Pigment",
 			["item:10938:0:0:0:0:0:0"] = "Lesser Magic Essence",
-			["item:16203:0:0:0:0:0:0"] = "Greater Eternal Essence",
+			["item:37701:0:0:0:0:0:0"] = "Crystallized Earth",
 			["item:37705:0:0:0:0:0:0"] = "Crystallized Water",
 			["item:36927:0:0:0:0:0:0"] = "Twilight Opal",
 			["item:43126:0:0:0:0:0:0"] = "Ink of the Sea",
@@ -294,7 +294,7 @@ TradeSkillMaster_ShoppingDB = {
 			["item:23440:0:0:0:0:0:0"] = "Dawnstone",
 			["item:52722:0:0:0:0:0:0"] = "Maelstrom Crystal",
 			["item:34057:0:0:0:0:0:0"] = "Abyss Crystal",
-			["item:43127:0:0:0:0:0:0"] = "Snowfall Ink",
+			["item:11174:0:0:0:0:0:0"] = "Lesser Nether Essence",
 			["item:23077:0:0:0:0:0:0"] = "Blood Garnet",
 			["item:3864:0:0:0:0:0:0"] = "Citrine",
 			["item:39338:0:0:0:0:0:0"] = "Golden Pigment",
@@ -318,12 +318,11 @@ TradeSkillMaster_ShoppingDB = {
 				["2Buy 150g"] = true,
 			},
 			["scrollvalue"] = 0,
-			["selected"] = "2Buy Clothgar",
 			["treesizable"] = true,
+			["selected"] = "2Buy Clothgar",
 			["treewidth"] = 175,
 			["fullwidth"] = 945,
 		},
-		["sidebarBtn"] = 2,
 	},
 	["profiles"] = {
 		["Sanjuri - Sisters of Elune"] = {
