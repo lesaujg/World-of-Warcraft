@@ -10,7 +10,7 @@ SkadaPerCharDB = {
 			["interrupts"] = 0,
 			["multistrikes"] = 47,
 			["damagetaken"] = 304001,
-			["mobtaken"] = 4491841,
+			["gotboss"] = true,
 			["damage"] = 4498563,
 			["players"] = {
 				{
@@ -592,6 +592,13 @@ SkadaPerCharDB = {
 						["Supreme Lord Kazzak"] = 82660,
 					},
 					["auras"] = {
+						["Hammer Blows"] = {
+							["name"] = "Hammer Blows",
+							["active"] = 1,
+							["id"] = 177099,
+							["uptime"] = 5,
+							["auratype"] = "BUFF",
+						},
 						["Freezing Fog"] = {
 							["name"] = "Freezing Fog",
 							["active"] = 0,
@@ -604,13 +611,6 @@ SkadaPerCharDB = {
 							["active"] = 1,
 							["id"] = 177096,
 							["uptime"] = 6,
-							["auratype"] = "BUFF",
-						},
-						["Hammer Blows"] = {
-							["name"] = "Hammer Blows",
-							["active"] = 1,
-							["id"] = 177099,
-							["uptime"] = 5,
 							["auratype"] = "BUFF",
 						},
 					},
@@ -2732,6 +2732,12 @@ SkadaPerCharDB = {
 							["class"] = "PALADIN",
 							["shielding"] = 0,
 						},
+						["Player-105-067E0731"] = {
+							["shielding"] = 0,
+							["role"] = "NONE",
+							["name"] = "Deathspally-Blade'sEdge",
+							["amount"] = 60025,
+						},
 						["Player-122-0742B8D7"] = {
 							["role"] = "DAMAGER",
 							["name"] = "Weskerosë-Perenolde",
@@ -2739,12 +2745,11 @@ SkadaPerCharDB = {
 							["class"] = "MAGE",
 							["shielding"] = 0,
 						},
-						["Player-3675-06D7CE1C"] = {
-							["role"] = "DAMAGER",
-							["name"] = "Roguê-MoonGuard",
-							["amount"] = 0,
-							["class"] = "ROGUE",
+						["Creature-0-105-1464-15-15438-000014444F"] = {
 							["shielding"] = 0,
+							["role"] = "NONE",
+							["name"] = "Greater Fire Elemental",
+							["amount"] = 0,
 						},
 						["Player-1427-0635D125"] = {
 							["role"] = "HEALER",
@@ -2760,17 +2765,12 @@ SkadaPerCharDB = {
 							["class"] = "MONK",
 							["shielding"] = 0,
 						},
-						["Creature-0-105-1464-15-15438-000014444F"] = {
-							["shielding"] = 0,
-							["role"] = "NONE",
-							["name"] = "Greater Fire Elemental",
+						["Player-3675-06D7CE1C"] = {
+							["role"] = "DAMAGER",
+							["name"] = "Roguê-MoonGuard",
 							["amount"] = 0,
-						},
-						["Player-105-067E0731"] = {
+							["class"] = "ROGUE",
 							["shielding"] = 0,
-							["role"] = "NONE",
-							["name"] = "Deathspally-Blade'sEdge",
-							["amount"] = 60025,
 						},
 					},
 					["alertDamage"] = 0,
@@ -3210,14 +3210,6 @@ SkadaPerCharDB = {
 							["max"] = 3825,
 							["damage"] = 5738,
 						},
-						["Hand of Light"] = {
-							["min"] = 7879,
-							["hit"] = 2,
-							["totalhits"] = 2,
-							["id"] = 96172,
-							["max"] = 19816,
-							["damage"] = 27695,
-						},
 						["Final Verdict"] = {
 							["min"] = 48591,
 							["hit"] = 1,
@@ -3225,14 +3217,6 @@ SkadaPerCharDB = {
 							["id"] = 157048,
 							["max"] = 48591,
 							["damage"] = 48591,
-						},
-						["Attack"] = {
-							["min"] = 6726,
-							["hit"] = 2,
-							["totalhits"] = 2,
-							["id"] = 6603,
-							["max"] = 13770,
-							["damage"] = 20496,
 						},
 						["Mark of Kazzak"] = {
 							["min"] = 2933,
@@ -3242,6 +3226,22 @@ SkadaPerCharDB = {
 							["max"] = 33463,
 							["id"] = 187671,
 							["damage"] = 50742,
+						},
+						["Attack"] = {
+							["min"] = 6726,
+							["hit"] = 2,
+							["totalhits"] = 2,
+							["id"] = 6603,
+							["max"] = 13770,
+							["damage"] = 20496,
+						},
+						["Hand of Light"] = {
+							["min"] = 7879,
+							["hit"] = 2,
+							["totalhits"] = 2,
+							["id"] = 96172,
+							["max"] = 19816,
+							["damage"] = 27695,
 						},
 						["Hammer of Wrath"] = {
 							["min"] = 19320,
@@ -3641,16 +3641,6 @@ SkadaPerCharDB = {
 							["max"] = 1282,
 							["damage"] = 4484,
 						},
-						["Windlash"] = {
-							["min"] = 5422,
-							["multistrike"] = 2,
-							["critical"] = 1,
-							["hit"] = 4,
-							["totalhits"] = 5,
-							["id"] = 114089,
-							["max"] = 11470,
-							["damage"] = 39241,
-						},
 						["Windlash Off-Hand"] = {
 							["min"] = 2672,
 							["multistrike"] = 1,
@@ -3668,6 +3658,16 @@ SkadaPerCharDB = {
 							["id"] = 115357,
 							["max"] = 31739,
 							["damage"] = 31739,
+						},
+						["Windlash"] = {
+							["min"] = 5422,
+							["multistrike"] = 2,
+							["critical"] = 1,
+							["hit"] = 4,
+							["totalhits"] = 5,
+							["id"] = 114089,
+							["max"] = 11470,
+							["damage"] = 39241,
 						},
 						["Lava Lash"] = {
 							["min"] = 47470,
@@ -5097,62 +5097,32 @@ SkadaPerCharDB = {
 					["htaken"] = 0,
 					["done"] = 0,
 				},
-				["Mendokgb-Blade'sEdge"] = {
+				["Lottuss-Thunderhorn"] = {
 					["players"] = {
-						["Ashbringor-SteamwheedleCartel"] = {
-							["taken"] = 44020,
-							["done"] = 0,
-							["class"] = "PALADIN",
-							["role"] = "DAMAGER",
-						},
 					},
-					["hdone"] = 3673,
+					["hdone"] = 24419,
 					["hdonespell"] = {
-						["Leech"] = {
-							["min"] = 0,
+						["Devouring Plague"] = {
+							["min"] = 3488,
 							["crits"] = 0,
-							["max"] = 3673,
-							["healing"] = 3673,
-							["overhealing"] = 8302,
-							["hits"] = 5,
-						},
-					},
-					["taken"] = 44020,
-					["htakenspell"] = {
-						["Leech"] = {
-							["min"] = 0,
-							["crits"] = 0,
-							["max"] = 3673,
-							["healing"] = 3673,
-							["overhealing"] = 8302,
-							["hits"] = 5,
-						},
-						["Light of Dawn"] = {
-							["min"] = 2934,
-							["crits"] = 0,
-							["max"] = 2934,
-							["healing"] = 2934,
+							["max"] = 20931,
+							["healing"] = 24419,
 							["overhealing"] = 0,
-							["hits"] = 1,
-						},
-						["Holy Radiance"] = {
-							["min"] = 0,
-							["crits"] = 0,
-							["max"] = 0,
-							["healing"] = 0,
-							["overhealing"] = 9857,
-							["hits"] = 2,
-						},
-						["Arcing Light"] = {
-							["min"] = 0,
-							["crits"] = 0,
-							["max"] = 0,
-							["healing"] = 0,
-							["overhealing"] = 5079,
 							["hits"] = 2,
 						},
 					},
-					["htaken"] = 6607,
+					["taken"] = 0,
+					["htakenspell"] = {
+						["Devouring Plague"] = {
+							["min"] = 3488,
+							["crits"] = 0,
+							["max"] = 20931,
+							["healing"] = 24419,
+							["overhealing"] = 0,
+							["hits"] = 2,
+						},
+					},
+					["htaken"] = 24419,
 					["done"] = 0,
 				},
 				["Ashbringor-SteamwheedleCartel"] = {
@@ -5402,32 +5372,40 @@ SkadaPerCharDB = {
 					["htaken"] = 0,
 					["done"] = 0,
 				},
-				["Lottuss-Thunderhorn"] = {
+				["Beast"] = {
 					["players"] = {
 					},
-					["hdone"] = 24419,
+					["hdone"] = 0,
 					["hdonespell"] = {
-						["Devouring Plague"] = {
-							["min"] = 3488,
+						["Leech"] = {
+							["min"] = 0,
 							["crits"] = 0,
-							["max"] = 20931,
-							["healing"] = 24419,
-							["overhealing"] = 0,
-							["hits"] = 2,
+							["max"] = 0,
+							["healing"] = 0,
+							["overhealing"] = 1515,
+							["hits"] = 1,
 						},
 					},
 					["taken"] = 0,
 					["htakenspell"] = {
-						["Devouring Plague"] = {
-							["min"] = 3488,
-							["crits"] = 0,
-							["max"] = 20931,
-							["healing"] = 24419,
-							["overhealing"] = 0,
+						["Light from Above"] = {
+							["min"] = 0,
+							["crits"] = 1,
+							["max"] = 0,
+							["healing"] = 0,
+							["overhealing"] = 18776,
 							["hits"] = 2,
 						},
+						["Leech"] = {
+							["min"] = 0,
+							["crits"] = 0,
+							["max"] = 0,
+							["healing"] = 0,
+							["overhealing"] = 1515,
+							["hits"] = 1,
+						},
 					},
-					["htaken"] = 24419,
+					["htaken"] = 0,
 					["done"] = 0,
 				},
 				["Kailyn-Thunderhorn"] = {
@@ -5578,40 +5556,62 @@ SkadaPerCharDB = {
 					["htaken"] = 0,
 					["done"] = 0,
 				},
-				["Beast"] = {
+				["Mendokgb-Blade'sEdge"] = {
 					["players"] = {
+						["Ashbringor-SteamwheedleCartel"] = {
+							["taken"] = 44020,
+							["done"] = 0,
+							["class"] = "PALADIN",
+							["role"] = "DAMAGER",
+						},
 					},
-					["hdone"] = 0,
+					["hdone"] = 3673,
 					["hdonespell"] = {
 						["Leech"] = {
 							["min"] = 0,
 							["crits"] = 0,
-							["max"] = 0,
-							["healing"] = 0,
-							["overhealing"] = 1515,
-							["hits"] = 1,
+							["max"] = 3673,
+							["healing"] = 3673,
+							["overhealing"] = 8302,
+							["hits"] = 5,
 						},
 					},
-					["taken"] = 0,
+					["taken"] = 44020,
 					["htakenspell"] = {
-						["Light from Above"] = {
-							["min"] = 0,
-							["crits"] = 1,
-							["max"] = 0,
-							["healing"] = 0,
-							["overhealing"] = 18776,
-							["hits"] = 2,
-						},
 						["Leech"] = {
+							["min"] = 0,
+							["crits"] = 0,
+							["max"] = 3673,
+							["healing"] = 3673,
+							["overhealing"] = 8302,
+							["hits"] = 5,
+						},
+						["Light of Dawn"] = {
+							["min"] = 2934,
+							["crits"] = 0,
+							["max"] = 2934,
+							["healing"] = 2934,
+							["overhealing"] = 0,
+							["hits"] = 1,
+						},
+						["Holy Radiance"] = {
 							["min"] = 0,
 							["crits"] = 0,
 							["max"] = 0,
 							["healing"] = 0,
-							["overhealing"] = 1515,
-							["hits"] = 1,
+							["overhealing"] = 9857,
+							["hits"] = 2,
+						},
+						["Arcing Light"] = {
+							["min"] = 0,
+							["crits"] = 0,
+							["max"] = 0,
+							["healing"] = 0,
+							["overhealing"] = 5079,
+							["hits"] = 2,
 						},
 					},
-					["htaken"] = 0,
+					["htaken"] = 6607,
 					["done"] = 0,
 				},
 				["Uldaris"] = {
@@ -5635,6 +5635,15 @@ SkadaPerCharDB = {
 					["done"] = 0,
 				},
 			},
+			["mobtaken"] = 4491841,
+			["alertCount"] = 2,
+			["healing"] = 951311,
+			["overhealing"] = 1827436.81625366,
+			["starttime"] = 1444168799,
+			["alertDamage"] = 42489,
+			["shielding"] = 451054,
+			["name"] = "Supreme Lord Kazzak (2)",
+			["mobname"] = "Supreme Lord Kazzak",
 			["power"] = {
 				[2] = 62,
 				[14] = 2,
@@ -5644,15 +5653,6 @@ SkadaPerCharDB = {
 				[9] = 10,
 				[13] = 3,
 			},
-			["alertCount"] = 2,
-			["healing"] = 951311,
-			["overhealing"] = 1827436.81625366,
-			["starttime"] = 1444168799,
-			["alertDamage"] = 42489,
-			["shielding"] = 451054,
-			["name"] = "Supreme Lord Kazzak (2)",
-			["mobname"] = "Supreme Lord Kazzak",
-			["gotboss"] = true,
 			["mobhdone"] = 105096,
 			["last_action"] = 1444168799,
 			["endtime"] = 1444168807,
@@ -5666,7 +5666,7 @@ SkadaPerCharDB = {
 			["interrupts"] = 0,
 			["multistrikes"] = 2250,
 			["damagetaken"] = 19205481,
-			["mobtaken"] = 126034345,
+			["gotboss"] = true,
 			["damage"] = 126041880,
 			["players"] = {
 				{
@@ -5713,11 +5713,11 @@ SkadaPerCharDB = {
 							["uptime"] = 173,
 							["auratype"] = "DEBUFF",
 						},
-						["Grace of Air"] = {
-							["name"] = "Grace of Air",
+						["Ancestral Guidance"] = {
+							["name"] = "Ancestral Guidance",
 							["active"] = 0,
-							["id"] = 116956,
-							["uptime"] = 59,
+							["id"] = 108281,
+							["uptime"] = 10,
 							["auratype"] = "BUFF",
 						},
 						["Lightning Shield"] = {
@@ -5727,11 +5727,11 @@ SkadaPerCharDB = {
 							["uptime"] = 123,
 							["auratype"] = "BUFF",
 						},
-						["Ancestral Guidance"] = {
-							["name"] = "Ancestral Guidance",
+						["Shamanistic Rage"] = {
+							["name"] = "Shamanistic Rage",
 							["active"] = 0,
-							["id"] = 108281,
-							["uptime"] = 10,
+							["id"] = 30823,
+							["uptime"] = 30,
 							["auratype"] = "BUFF",
 						},
 						["Lava Surge"] = {
@@ -5755,11 +5755,11 @@ SkadaPerCharDB = {
 							["uptime"] = 30,
 							["auratype"] = "BUFF",
 						},
-						["Shamanistic Rage"] = {
-							["name"] = "Shamanistic Rage",
+						["Grace of Air"] = {
+							["name"] = "Grace of Air",
 							["active"] = 0,
-							["id"] = 30823,
-							["uptime"] = 30,
+							["id"] = 116956,
+							["uptime"] = 59,
 							["auratype"] = "BUFF",
 						},
 						["Enhanced Unleash"] = {
@@ -6399,23 +6399,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1444168778.47202,
 									["amount"] = -5495,
+									["hp"] = 126829,
 									["spellid"] = 187671,
 									["srcname"] = "Barion-Thunderhorn",
-									["hp"] = 126829,
 								}, -- [2]
 								{
 									["ts"] = 1444168778.76303,
 									["amount"] = -2192,
+									["hp"] = 124637,
 									["spellid"] = 187671,
 									["srcname"] = "Barion-Thunderhorn",
-									["hp"] = 124637,
 								}, -- [3]
 								{
 									["ts"] = 1444168779.20904,
 									["amount"] = -16159,
+									["hp"] = 108478,
 									["spellid"] = 187671,
 									["srcname"] = "Mendokgb-Blade'sEdge",
-									["hp"] = 108478,
 								}, -- [4]
 								{
 									["absorb"] = 0,
@@ -6428,37 +6428,37 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1444168779.30306,
 									["amount"] = -11210,
+									["hp"] = 108680,
 									["spellid"] = 187671,
 									["srcname"] = "Mendokgb-Blade'sEdge",
-									["hp"] = 108680,
 								}, -- [6]
 								{
 									["ts"] = 1444168779.30307,
 									["amount"] = -15280,
+									["hp"] = 93400,
 									["spellid"] = 187671,
 									["srcname"] = "Mendokgb-Blade'sEdge",
-									["hp"] = 93400,
 								}, -- [7]
 								{
 									["ts"] = 1444168779.39908,
 									["amount"] = -67404,
+									["hp"] = 25996,
 									["spellid"] = 187671,
 									["srcname"] = "Mendokgb-Blade'sEdge",
-									["hp"] = 25996,
 								}, -- [8]
 								{
 									["ts"] = 1444168779.50109,
 									["amount"] = -5819,
+									["hp"] = 20177,
 									["spellid"] = 187671,
 									["srcname"] = "Barion-Thunderhorn",
-									["hp"] = 20177,
 								}, -- [9]
 								{
 									["ts"] = 1444168780.1551,
 									["amount"] = -33948,
+									["hp"] = 1,
 									["spellid"] = 187671,
 									["srcname"] = "Barion-Thunderhorn",
-									["hp"] = 1,
 								}, -- [10]
 								{
 									["spellname"] = "Uldaris dies",
@@ -6469,30 +6469,30 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1444168777.10512,
 									["amount"] = -22144,
+									["hp"] = 178379,
 									["spellid"] = 187671,
 									["srcname"] = "Barion-Thunderhorn",
-									["hp"] = 178379,
 								}, -- [12]
 								{
 									["ts"] = 1444168777.44513,
 									["amount"] = -4850,
+									["hp"] = 173529,
 									["spellid"] = 187671,
 									["srcname"] = "Barion-Thunderhorn",
-									["hp"] = 173529,
 								}, -- [13]
 								{
 									["ts"] = 1444168778.25014,
 									["amount"] = -37568,
+									["hp"] = 135961,
 									["spellid"] = 187671,
 									["srcname"] = "Barion-Thunderhorn",
-									["hp"] = 135961,
 								}, -- [14]
 								{
 									["ts"] = 1444168778.25015,
 									["amount"] = -12196,
+									["hp"] = 123765,
 									["spellid"] = 187671,
 									["srcname"] = "Mendokgb-Blade'sEdge",
-									["hp"] = 123765,
 								}, -- [15]
 								["pos"] = 12,
 							},
@@ -6608,9 +6608,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1444168616.72714,
 									["amount"] = -289328,
+									["hp"] = 1,
 									["spellid"] = 187664,
 									["srcname"] = "Supreme Lord Kazzak",
-									["hp"] = 1,
 								}, -- [14]
 								{
 									["spellname"] = "Uldaris dies",
@@ -6896,6 +6896,13 @@ SkadaPerCharDB = {
 							["uptime"] = 11,
 							["auratype"] = "BUFF",
 						},
+						["Freezing Fog"] = {
+							["name"] = "Freezing Fog",
+							["active"] = 1,
+							["id"] = 59052,
+							["uptime"] = 61,
+							["auratype"] = "BUFF",
+						},
 						["Forgemaster's Vigor"] = {
 							["name"] = "Forgemaster's Vigor",
 							["active"] = 0,
@@ -6908,13 +6915,6 @@ SkadaPerCharDB = {
 							["active"] = 1,
 							["id"] = 51124,
 							["uptime"] = 169,
-							["auratype"] = "BUFF",
-						},
-						["Freezing Fog"] = {
-							["name"] = "Freezing Fog",
-							["active"] = 1,
-							["id"] = 59052,
-							["uptime"] = 61,
 							["auratype"] = "BUFF",
 						},
 					},
@@ -7631,11 +7631,12 @@ SkadaPerCharDB = {
 							["name"] = "DINO",
 							["amount"] = 0,
 						},
-						["Creature-0-105-1464-16-86934-0000144298"] = {
-							["shielding"] = 0,
-							["role"] = "NONE",
-							["name"] = "Sha'tari Defender",
+						["Creature-0-105-1464-15-31216-000094444E"] = {
+							["role"] = "DAMAGER",
+							["name"] = "Weskerosë-Perenolde",
 							["amount"] = 0,
+							["class"] = "MAGE",
+							["shielding"] = 0,
 						},
 						["Player-123-035ABF2C"] = {
 							["role"] = "DAMAGER",
@@ -7723,19 +7724,18 @@ SkadaPerCharDB = {
 							["name"] = "Retired Gorian Centurion",
 							["amount"] = 0,
 						},
-						["Creature-0-105-1464-15-31216-000094444E"] = {
-							["role"] = "DAMAGER",
-							["name"] = "Weskerosë-Perenolde",
-							["amount"] = 0,
-							["class"] = "MAGE",
-							["shielding"] = 0,
-						},
 						["Creature-0-105-1464-15-31216-000014444E"] = {
 							["role"] = "DAMAGER",
 							["name"] = "Weskerosë-Perenolde",
 							["amount"] = 0,
 							["class"] = "MAGE",
 							["shielding"] = 0,
+						},
+						["Creature-0-105-1464-16-86934-0000144298"] = {
+							["shielding"] = 0,
+							["role"] = "NONE",
+							["name"] = "Sha'tari Defender",
+							["amount"] = 0,
 						},
 						["Player-86-05166722"] = {
 							["role"] = "TANK",
@@ -10117,12 +10117,11 @@ SkadaPerCharDB = {
 							["class"] = "HUNTER",
 							["shielding"] = 78509,
 						},
-						["Player-158-0239183B"] = {
-							["role"] = "DAMAGER",
-							["name"] = "Ellwina-Greymane",
-							["amount"] = 2751,
-							["class"] = "PALADIN",
+						["Creature-0-105-1464-15-24207-0000944420"] = {
 							["shielding"] = 0,
+							["role"] = "NONE",
+							["name"] = "Army of the Dead",
+							["amount"] = 0,
 						},
 						["Creature-0-1071-1464-9-86927-0000144190"] = {
 							["shielding"] = 0,
@@ -10130,7 +10129,7 @@ SkadaPerCharDB = {
 							["name"] = "Stormshield Death Knight",
 							["amount"] = 0,
 						},
-						["Creature-0-105-1464-15-24207-0000944420"] = {
+						["Creature-0-105-1464-15-24207-0000144420"] = {
 							["shielding"] = 0,
 							["role"] = "NONE",
 							["name"] = "Army of the Dead",
@@ -10163,11 +10162,12 @@ SkadaPerCharDB = {
 							["class"] = "WARLOCK",
 							["shielding"] = 0,
 						},
-						["Creature-0-105-1464-15-24207-0000144420"] = {
+						["Player-158-0239183B"] = {
+							["role"] = "DAMAGER",
+							["name"] = "Ellwina-Greymane",
+							["amount"] = 2751,
+							["class"] = "PALADIN",
 							["shielding"] = 0,
-							["role"] = "NONE",
-							["name"] = "Army of the Dead",
-							["amount"] = 0,
 						},
 						["Creature-0-105-1464-15-31216-000014444E"] = {
 							["role"] = "DAMAGER",
@@ -10300,6 +10300,20 @@ SkadaPerCharDB = {
 					["alertCount"] = 0,
 					["shielding"] = 3100127,
 					["healingspells"] = {
+						["Power Word: Shield"] = {
+							["shielding"] = 1321564,
+							["id"] = 17,
+							["healing"] = 1321564,
+							["multistrikes"] = 0,
+							["min"] = 0,
+							["multistrike"] = 0,
+							["name"] = "Power Word: Shield",
+							["hits"] = 79,
+							["overhealing"] = 923573.74609375,
+							["max"] = 128250,
+							["critical"] = 0,
+							["absorbed"] = 0,
+						},
 						["Penance"] = {
 							["shielding"] = 0,
 							["id"] = 47750,
@@ -10312,20 +10326,6 @@ SkadaPerCharDB = {
 							["overhealing"] = 271905,
 							["max"] = 37680,
 							["critical"] = 3,
-							["absorbed"] = 0,
-						},
-						["Divine Aegis"] = {
-							["shielding"] = 432802,
-							["id"] = 47753,
-							["healing"] = 432802,
-							["multistrikes"] = 0,
-							["min"] = 0,
-							["multistrike"] = 0,
-							["name"] = "Divine Aegis",
-							["hits"] = 100,
-							["overhealing"] = 458638.632644653,
-							["max"] = 60355,
-							["critical"] = 0,
 							["absorbed"] = 0,
 						},
 						["Prayer of Healing"] = {
@@ -10384,17 +10384,17 @@ SkadaPerCharDB = {
 							["critical"] = 29,
 							["absorbed"] = 0,
 						},
-						["Power Word: Shield"] = {
-							["shielding"] = 1321564,
-							["id"] = 17,
-							["healing"] = 1321564,
+						["Divine Aegis"] = {
+							["shielding"] = 432802,
+							["id"] = 47753,
+							["healing"] = 432802,
 							["multistrikes"] = 0,
 							["min"] = 0,
 							["multistrike"] = 0,
-							["name"] = "Power Word: Shield",
-							["hits"] = 79,
-							["overhealing"] = 923573.74609375,
-							["max"] = 128250,
+							["name"] = "Divine Aegis",
+							["hits"] = 100,
+							["overhealing"] = 458638.632644653,
+							["max"] = 60355,
 							["critical"] = 0,
 							["absorbed"] = 0,
 						},
@@ -10595,9 +10595,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1444168625.93404,
 									["amount"] = -3128,
+									["hp"] = 236515,
 									["spellid"] = 187671,
 									["srcname"] = "Britnèyfears-Aggramar",
-									["hp"] = 236515,
 								}, -- [4]
 								{
 									["absorb"] = 0,
@@ -10610,9 +10610,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1444168626.42106,
 									["amount"] = -337915,
+									["hp"] = 1,
 									["spellid"] = 187471,
 									["srcname"] = "Supreme Lord Kazzak",
-									["hp"] = 1,
 								}, -- [6]
 								{
 									["spellname"] = "Arcanoweave dies",
@@ -10623,9 +10623,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1444168619.34808,
 									["amount"] = -22434,
+									["hp"] = 279302,
 									["spellid"] = 187671,
 									["srcname"] = "Britnèyfears-Aggramar",
-									["hp"] = 279302,
 								}, -- [8]
 								{
 									["absorb"] = 0,
@@ -11789,9 +11789,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1444168766.53508,
 									["amount"] = -56862,
+									["hp"] = 1,
 									["spellid"] = 187671,
 									["srcname"] = "Mendokgb-Blade'sEdge",
-									["hp"] = 1,
 								}, -- [8]
 								{
 									["spellname"] = "Sunsooji dies",
@@ -13193,7 +13193,7 @@ SkadaPerCharDB = {
 							["name"] = "Greater Fire Elemental",
 							["amount"] = 0,
 						},
-						["Creature-0-105-1464-15-29264-00009443C0"] = {
+						["Creature-0-105-1464-15-29264-0000944444"] = {
 							["shielding"] = 0,
 							["role"] = "NONE",
 							["name"] = "Spirit Raptor",
@@ -13206,7 +13206,7 @@ SkadaPerCharDB = {
 							["class"] = "SHAMAN",
 							["shielding"] = 0,
 						},
-						["Creature-0-105-1464-15-29264-00001443C0"] = {
+						["Creature-0-105-1464-15-29264-00009443C0"] = {
 							["shielding"] = 0,
 							["role"] = "NONE",
 							["name"] = "Spirit Raptor",
@@ -13218,7 +13218,7 @@ SkadaPerCharDB = {
 							["name"] = "Spirit Raptor",
 							["amount"] = 0,
 						},
-						["Creature-0-105-1464-15-29264-0000944444"] = {
+						["Creature-0-105-1464-15-29264-00001443C0"] = {
 							["shielding"] = 0,
 							["role"] = "NONE",
 							["name"] = "Spirit Raptor",
@@ -13865,13 +13865,6 @@ SkadaPerCharDB = {
 							["uptime"] = 13,
 							["auratype"] = "BUFF",
 						},
-						["Archmage's Greater Incandescence"] = {
-							["name"] = "Archmage's Greater Incandescence",
-							["active"] = 0,
-							["id"] = 177176,
-							["uptime"] = 20,
-							["auratype"] = "BUFF",
-						},
 						["Artillery Strike"] = {
 							["name"] = "Artillery Strike",
 							["active"] = 19,
@@ -13884,6 +13877,13 @@ SkadaPerCharDB = {
 							["active"] = 0,
 							["id"] = 85499,
 							["uptime"] = 8,
+							["auratype"] = "BUFF",
+						},
+						["Archmage's Greater Incandescence"] = {
+							["name"] = "Archmage's Greater Incandescence",
+							["active"] = 0,
+							["id"] = 177176,
+							["uptime"] = 20,
 							["auratype"] = "BUFF",
 						},
 						["Hand of Sacrifice"] = {
@@ -14078,11 +14078,11 @@ SkadaPerCharDB = {
 							["class"] = "PALADIN",
 							["shielding"] = 0,
 						},
-						["Player-60-06A6FB3E"] = {
+						["Player-1175-06B15DF1"] = {
 							["role"] = "DAMAGER",
-							["name"] = "Sammun-Stormrage",
-							["amount"] = 111882,
-							["class"] = "HUNTER",
+							["name"] = "Altnumbersix-Trollbane",
+							["amount"] = 0,
+							["class"] = "WARLOCK",
 							["shielding"] = 0,
 						},
 						["Player-158-0849CCFA"] = {
@@ -14106,12 +14106,12 @@ SkadaPerCharDB = {
 							["class"] = "DRUID",
 							["shielding"] = 0,
 						},
-						["Player-52-063C1174"] = {
+						["Player-60-06A6FB3E"] = {
 							["role"] = "DAMAGER",
-							["name"] = "Minzy-Alleria",
-							["amount"] = 99427,
-							["class"] = "PRIEST",
-							["shielding"] = 40469,
+							["name"] = "Sammun-Stormrage",
+							["amount"] = 111882,
+							["class"] = "HUNTER",
+							["shielding"] = 0,
 						},
 						["Player-12-011A6721"] = {
 							["role"] = "DAMAGER",
@@ -14223,12 +14223,12 @@ SkadaPerCharDB = {
 							["class"] = "MAGE",
 							["shielding"] = 0,
 						},
-						["Player-1175-06B15DF1"] = {
+						["Player-52-063C1174"] = {
 							["role"] = "DAMAGER",
-							["name"] = "Altnumbersix-Trollbane",
-							["amount"] = 0,
-							["class"] = "WARLOCK",
-							["shielding"] = 0,
+							["name"] = "Minzy-Alleria",
+							["amount"] = 99427,
+							["class"] = "PRIEST",
+							["shielding"] = 40469,
 						},
 					},
 					["alertDamage"] = 0,
@@ -14913,9 +14913,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1444168766.5351,
 									["amount"] = -56723,
+									["hp"] = 1,
 									["spellid"] = 187671,
 									["srcname"] = "Mendokgb-Blade'sEdge",
-									["hp"] = 1,
 								}, -- [10]
 								{
 									["spellname"] = "Claudia dies",
@@ -15033,18 +15033,19 @@ SkadaPerCharDB = {
 							["class"] = "DEATHKNIGHT",
 							["shielding"] = 70356,
 						},
+						["Player-1185-085AADBD"] = {
+							["role"] = "DAMAGER",
+							["name"] = "Sixpointfive-Sen'jin",
+							["amount"] = 0,
+							["class"] = "SHAMAN",
+							["shielding"] = 0,
+						},
 						["Player-105-067E0470"] = {
 							["role"] = "HEALER",
 							["name"] = "Tagamausy-Blade'sEdge",
 							["amount"] = 0,
 							["class"] = "DRUID",
 							["shielding"] = 0,
-						},
-						["Player-105-067E5FAC"] = {
-							["shielding"] = 0,
-							["role"] = "NONE",
-							["name"] = "Mendokgb-Blade'sEdge",
-							["amount"] = 0,
 						},
 						["Player-105-08062BDB"] = {
 							["role"] = "HEALER",
@@ -15240,12 +15241,11 @@ SkadaPerCharDB = {
 							["class"] = "DRUID",
 							["shielding"] = 14722,
 						},
-						["Player-1185-085AADBD"] = {
-							["role"] = "DAMAGER",
-							["name"] = "Sixpointfive-Sen'jin",
-							["amount"] = 0,
-							["class"] = "SHAMAN",
+						["Player-105-067E5FAC"] = {
 							["shielding"] = 0,
+							["role"] = "NONE",
+							["name"] = "Mendokgb-Blade'sEdge",
+							["amount"] = 0,
 						},
 					},
 					["alertDamage"] = 0,
@@ -15528,12 +15528,12 @@ SkadaPerCharDB = {
 							["uptime"] = 9,
 							["auratype"] = "BUFF",
 						},
-						["Healing Stream Totem"] = {
-							["name"] = "Healing Stream Totem",
-							["active"] = 1,
-							["id"] = 5394,
-							["uptime"] = 172,
-							["auratype"] = "BUFF",
+						["Mark of Kazzak"] = {
+							["name"] = "Mark of Kazzak",
+							["active"] = 0,
+							["id"] = 187668,
+							["uptime"] = 15,
+							["auratype"] = "DEBUFF",
 						},
 						["Healing Tide Totem"] = {
 							["name"] = "Healing Tide Totem",
@@ -15577,12 +15577,12 @@ SkadaPerCharDB = {
 							["uptime"] = 172,
 							["auratype"] = "BUFF",
 						},
-						["Mark of Kazzak"] = {
-							["name"] = "Mark of Kazzak",
+						["Ascendance"] = {
+							["name"] = "Ascendance",
 							["active"] = 0,
-							["id"] = 187668,
+							["id"] = 114052,
 							["uptime"] = 15,
-							["auratype"] = "DEBUFF",
+							["auratype"] = "BUFF",
 						},
 						["Unleash Life"] = {
 							["name"] = "Unleash Life",
@@ -15598,11 +15598,11 @@ SkadaPerCharDB = {
 							["uptime"] = 171,
 							["auratype"] = "BUFF",
 						},
-						["Ascendance"] = {
-							["name"] = "Ascendance",
-							["active"] = 0,
-							["id"] = 114052,
-							["uptime"] = 15,
+						["Healing Stream Totem"] = {
+							["name"] = "Healing Stream Totem",
+							["active"] = 1,
+							["id"] = 5394,
+							["uptime"] = 172,
 							["auratype"] = "BUFF",
 						},
 						["Grace of Air"] = {
@@ -18172,23 +18172,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1444168779.30207,
 									["amount"] = -12563,
+									["hp"] = 270826,
 									["spellid"] = 187671,
 									["srcname"] = "Mendokgb-Blade'sEdge",
-									["hp"] = 270826,
 								}, -- [7]
 								{
 									["ts"] = 1444168779.30208,
 									["amount"] = -17122,
+									["hp"] = 253704,
 									["spellid"] = 187671,
 									["srcname"] = "Mendokgb-Blade'sEdge",
-									["hp"] = 253704,
 								}, -- [8]
 								{
 									["ts"] = 1444168779.39809,
 									["amount"] = -75532,
+									["hp"] = 178172,
 									["spellid"] = 187671,
 									["srcname"] = "Mendokgb-Blade'sEdge",
-									["hp"] = 178172,
 								}, -- [9]
 								{
 									["absorb"] = 0,
@@ -18209,9 +18209,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1444168780.02512,
 									["amount"] = -38043,
+									["hp"] = 145450,
 									["spellid"] = 187671,
 									["srcname"] = "Barion-Thunderhorn",
-									["hp"] = 145450,
 								}, -- [12]
 								{
 									["absorb"] = 0,
@@ -18232,9 +18232,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1444168780.59015,
 									["amount"] = -139606,
+									["hp"] = 1,
 									["spellid"] = 187471,
 									["srcname"] = "Supreme Lord Kazzak",
-									["hp"] = 1,
 								}, -- [15]
 								["pos"] = 2,
 							},
@@ -18328,11 +18328,11 @@ SkadaPerCharDB = {
 							["class"] = "MONK",
 							["shielding"] = 19728,
 						},
-						["Player-1175-06B15DF1"] = {
+						["Player-60-06A6FB3E"] = {
 							["role"] = "DAMAGER",
-							["name"] = "Altnumbersix-Trollbane",
+							["name"] = "Sammun-Stormrage",
 							["amount"] = 0,
-							["class"] = "WARLOCK",
+							["class"] = "HUNTER",
 							["shielding"] = 0,
 						},
 						["Player-105-057EFF38"] = {
@@ -18383,12 +18383,12 @@ SkadaPerCharDB = {
 							["class"] = "MAGE",
 							["shielding"] = 0,
 						},
-						["Player-52-063C1174"] = {
+						["Player-1175-06B15DF1"] = {
 							["role"] = "DAMAGER",
-							["name"] = "Minzy-Alleria",
-							["amount"] = 50624,
-							["class"] = "PRIEST",
-							["shielding"] = 8359,
+							["name"] = "Altnumbersix-Trollbane",
+							["amount"] = 0,
+							["class"] = "WARLOCK",
+							["shielding"] = 0,
 						},
 						["Player-12-011A6721"] = {
 							["role"] = "DAMAGER",
@@ -18481,12 +18481,12 @@ SkadaPerCharDB = {
 							["class"] = "ROGUE",
 							["shielding"] = 35846,
 						},
-						["Player-60-06A6FB3E"] = {
+						["Player-52-063C1174"] = {
 							["role"] = "DAMAGER",
-							["name"] = "Sammun-Stormrage",
-							["amount"] = 0,
-							["class"] = "HUNTER",
-							["shielding"] = 0,
+							["name"] = "Minzy-Alleria",
+							["amount"] = 50624,
+							["class"] = "PRIEST",
+							["shielding"] = 8359,
 						},
 						["Player-106-057848C5"] = {
 							["role"] = "DAMAGER",
@@ -18645,15 +18645,13 @@ SkadaPerCharDB = {
 							["max"] = 3301,
 							["damage"] = 217829,
 						},
-						["Crusader Strike"] = {
-							["min"] = 7704,
-							["multistrike"] = 4,
-							["critical"] = 4,
-							["hit"] = 28,
-							["totalhits"] = 32,
-							["id"] = 35395,
-							["max"] = 18466,
-							["damage"] = 315919,
+						["Final Verdict"] = {
+							["min"] = 24236,
+							["hit"] = 4,
+							["totalhits"] = 4,
+							["id"] = 157048,
+							["max"] = 30838,
+							["damage"] = 108263,
 						},
 						["Execution Sentence"] = {
 							["min"] = 2216,
@@ -18665,6 +18663,16 @@ SkadaPerCharDB = {
 							["max"] = 26122,
 							["damage"] = 149584,
 						},
+						["Crusader Strike"] = {
+							["min"] = 7704,
+							["multistrike"] = 4,
+							["critical"] = 4,
+							["hit"] = 28,
+							["totalhits"] = 32,
+							["id"] = 35395,
+							["max"] = 18466,
+							["damage"] = 315919,
+						},
 						["Hand of Light"] = {
 							["min"] = 1223,
 							["hit"] = 83,
@@ -18672,14 +18680,6 @@ SkadaPerCharDB = {
 							["id"] = 96172,
 							["max"] = 24948,
 							["damage"] = 612605,
-						},
-						["Final Verdict"] = {
-							["min"] = 24236,
-							["hit"] = 4,
-							["totalhits"] = 4,
-							["id"] = 157048,
-							["max"] = 30838,
-							["damage"] = 108263,
 						},
 						["Attack"] = {
 							["min"] = 6883,
@@ -19315,14 +19315,15 @@ SkadaPerCharDB = {
 							["max"] = 8668,
 							["damage"] = 36048,
 						},
-						["Crusader Strike"] = {
-							["min"] = 7406,
-							["multistrike"] = 4,
-							["hit"] = 6,
-							["totalhits"] = 6,
-							["id"] = 35395,
-							["max"] = 8375,
-							["damage"] = 56993,
+						["Final Verdict"] = {
+							["min"] = 23574,
+							["multistrike"] = 3,
+							["critical"] = 2,
+							["hit"] = 5,
+							["totalhits"] = 7,
+							["id"] = 157048,
+							["max"] = 47970,
+							["damage"] = 236827,
 						},
 						["Artillery Strike"] = {
 							["min"] = 37779,
@@ -19334,6 +19335,15 @@ SkadaPerCharDB = {
 							["max"] = 101291,
 							["damage"] = 1065838,
 						},
+						["Crusader Strike"] = {
+							["min"] = 7406,
+							["multistrike"] = 4,
+							["hit"] = 6,
+							["totalhits"] = 6,
+							["id"] = 35395,
+							["max"] = 8375,
+							["damage"] = 56993,
+						},
 						["Hand of Light"] = {
 							["min"] = 317,
 							["hit"] = 51,
@@ -19341,16 +19351,6 @@ SkadaPerCharDB = {
 							["id"] = 96172,
 							["max"] = 19562,
 							["damage"] = 231622,
-						},
-						["Final Verdict"] = {
-							["min"] = 23574,
-							["multistrike"] = 3,
-							["critical"] = 2,
-							["hit"] = 5,
-							["totalhits"] = 7,
-							["id"] = 157048,
-							["max"] = 47970,
-							["damage"] = 236827,
 						},
 						["Seal of Truth"] = {
 							["min"] = 1211,
@@ -20472,11 +20472,11 @@ SkadaPerCharDB = {
 							["class"] = "MAGE",
 							["shielding"] = 0,
 						},
-						["Player-1175-06B15DF1"] = {
+						["Player-52-063C1174"] = {
 							["role"] = "DAMAGER",
-							["name"] = "Altnumbersix-Trollbane",
+							["name"] = "Minzy-Alleria",
 							["amount"] = 0,
-							["class"] = "WARLOCK",
+							["class"] = "PRIEST",
 							["shielding"] = 0,
 						},
 						["Creature-0-1071-1464-9-86927-0000144190"] = {
@@ -20519,11 +20519,11 @@ SkadaPerCharDB = {
 							["class"] = "DRUID",
 							["shielding"] = 0,
 						},
-						["Player-60-06A6FB3E"] = {
+						["Player-1175-06B15DF1"] = {
 							["role"] = "DAMAGER",
-							["name"] = "Sammun-Stormrage",
+							["name"] = "Altnumbersix-Trollbane",
 							["amount"] = 0,
-							["class"] = "HUNTER",
+							["class"] = "WARLOCK",
 							["shielding"] = 0,
 						},
 						["Player-105-057EFF38"] = {
@@ -20560,11 +20560,11 @@ SkadaPerCharDB = {
 							["class"] = "PRIEST",
 							["shielding"] = 0,
 						},
-						["Player-52-063C1174"] = {
+						["Player-60-06A6FB3E"] = {
 							["role"] = "DAMAGER",
-							["name"] = "Minzy-Alleria",
+							["name"] = "Sammun-Stormrage",
 							["amount"] = 0,
-							["class"] = "PRIEST",
+							["class"] = "HUNTER",
 							["shielding"] = 0,
 						},
 						["Creature-0-52-1464-15-86927-0000144202"] = {
@@ -23278,25 +23278,321 @@ SkadaPerCharDB = {
 					["htaken"] = 0,
 					["done"] = 0,
 				},
-				["Claudia-Thunderhorn"] = {
+				["Slap-Thunderhorn"] = {
 					["players"] = {
-					},
-					["hdone"] = 0,
-					["hdonespell"] = {
-						["Holy Prism"] = {
-							["min"] = 0,
-							["crits"] = 1,
-							["max"] = 0,
-							["healing"] = 0,
-							["overhealing"] = 169017,
-							["hits"] = 3,
+						["Decapre-Whisperwind"] = {
+							["taken"] = 0,
+							["done"] = 32693,
+							["class"] = "DEATHKNIGHT",
+							["role"] = "DAMAGER",
+						},
+						["Hamtory-Sargeras"] = {
+							["taken"] = 0,
+							["done"] = 44424,
+							["class"] = "ROGUE",
+							["role"] = "DAMAGER",
+						},
+						["Madslock-Eldre'Thalas"] = {
+							["taken"] = 0,
+							["done"] = 48004,
+							["class"] = "WARLOCK",
+							["role"] = "DAMAGER",
+						},
+						["Weskerosë-Perenolde"] = {
+							["taken"] = 0,
+							["done"] = 38814,
+							["class"] = "MAGE",
+							["role"] = "DAMAGER",
+						},
+						["Ashbringor-SteamwheedleCartel"] = {
+							["taken"] = 0,
+							["done"] = 19476,
+							["class"] = "PALADIN",
+							["role"] = "DAMAGER",
+						},
+						["Arcanoweave-Fizzcrank"] = {
+							["taken"] = 0,
+							["done"] = 47637,
+							["class"] = "MAGE",
+							["role"] = "DAMAGER",
+						},
+						["Roguê-MoonGuard"] = {
+							["taken"] = 0,
+							["done"] = 48564,
+							["class"] = "ROGUE",
+							["role"] = "DAMAGER",
+						},
+						["Blaastar-Quel'Thalas"] = {
+							["taken"] = 0,
+							["done"] = 41835,
+							["class"] = "WARLOCK",
+							["role"] = "DAMAGER",
+						},
+						["Zonvra-Ragnaros"] = {
+							["taken"] = 0,
+							["done"] = 30447,
+							["class"] = "SHAMAN",
+							["role"] = "HEALER",
+						},
+						["Kneesaa-Shadowsong"] = {
+							["taken"] = 0,
+							["done"] = 31830,
+							["class"] = "MAGE",
+							["role"] = "DAMAGER",
+						},
+						["Claudia-Thunderhorn"] = {
+							["taken"] = 0,
+							["done"] = 16813,
+							["class"] = "PALADIN",
+							["role"] = "HEALER",
+						},
+						["Sammun-Stormrage"] = {
+							["taken"] = 0,
+							["done"] = 48411,
+							["class"] = "HUNTER",
+							["role"] = "DAMAGER",
+						},
+						["Sunsooji-ScarletCrusade"] = {
+							["taken"] = 0,
+							["done"] = 35774,
+							["class"] = "MONK",
+							["role"] = "HEALER",
+						},
+						["Sixpointfive-Sen'jin"] = {
+							["taken"] = 128250,
+							["done"] = 0,
+							["class"] = "SHAMAN",
+							["role"] = "DAMAGER",
+						},
+						["Dincadon-Darrowmere"] = {
+							["taken"] = 0,
+							["done"] = 31840,
+							["class"] = "SHAMAN",
+							["role"] = "HEALER",
+						},
+						["Uldaris"] = {
+							["taken"] = 0,
+							["done"] = 12980,
+							["class"] = "DRUID",
+							["role"] = "DAMAGER",
 						},
 					},
-					["taken"] = 0,
-					["htakenspell"] = {
+					["hdone"] = 105337,
+					["hdonespell"] = {
+						["Leader of the Pack"] = {
+							["min"] = 0,
+							["crits"] = 0,
+							["max"] = 0,
+							["healing"] = 0,
+							["overhealing"] = 3878,
+							["hits"] = 1,
+						},
+						["Rejuvenation"] = {
+							["min"] = 96,
+							["crits"] = 1,
+							["max"] = 4344,
+							["healing"] = 13310,
+							["overhealing"] = 0,
+							["hits"] = 7,
+						},
+						["Ysera's Gift"] = {
+							["min"] = 5169,
+							["crits"] = 0,
+							["max"] = 5170,
+							["healing"] = 56867,
+							["overhealing"] = 0,
+							["hits"] = 11,
+						},
+						["Healing Touch"] = {
+							["min"] = 0,
+							["crits"] = 2,
+							["max"] = 27046,
+							["healing"] = 35160,
+							["overhealing"] = 17581,
+							["hits"] = 4,
+						},
 					},
-					["htaken"] = 0,
-					["done"] = 0,
+					["taken"] = 128250,
+					["htakenspell"] = {
+						["Daybreak"] = {
+							["min"] = 0,
+							["crits"] = 0,
+							["max"] = 0,
+							["healing"] = 0,
+							["overhealing"] = 5196,
+							["hits"] = 1,
+						},
+						["Holy Prism"] = {
+							["min"] = 0,
+							["crits"] = 0,
+							["max"] = 0,
+							["healing"] = 0,
+							["overhealing"] = 48289,
+							["hits"] = 1,
+						},
+						["Wild Mushroom"] = {
+							["min"] = 0,
+							["crits"] = 2,
+							["max"] = 5970,
+							["healing"] = 5970,
+							["overhealing"] = 55516,
+							["hits"] = 9,
+						},
+						["Wild Growth"] = {
+							["min"] = 0,
+							["crits"] = 2,
+							["max"] = 0,
+							["healing"] = 0,
+							["overhealing"] = 55502,
+							["hits"] = 11,
+						},
+						["Renewing Mist"] = {
+							["min"] = 0,
+							["crits"] = 8,
+							["max"] = 1395,
+							["healing"] = 10987,
+							["overhealing"] = 37563,
+							["hits"] = 38,
+						},
+						["Chi Wave"] = {
+							["min"] = 0,
+							["crits"] = 1,
+							["max"] = 4662,
+							["healing"] = 7459,
+							["overhealing"] = 4669,
+							["hits"] = 3,
+						},
+						["Uplift"] = {
+							["min"] = 12585,
+							["crits"] = 0,
+							["max"] = 14561,
+							["healing"] = 27146,
+							["overhealing"] = 1976,
+							["hits"] = 2,
+						},
+						["Ancestral Guidance"] = {
+							["min"] = 0,
+							["crits"] = 0,
+							["max"] = 7287,
+							["healing"] = 40722,
+							["overhealing"] = 1694,
+							["hits"] = 27,
+						},
+						["Soothing Winds"] = {
+							["min"] = 0,
+							["crits"] = 2,
+							["max"] = 0,
+							["healing"] = 0,
+							["overhealing"] = 2763,
+							["hits"] = 5,
+						},
+						["Leader of the Pack"] = {
+							["min"] = 0,
+							["crits"] = 0,
+							["max"] = 0,
+							["healing"] = 0,
+							["overhealing"] = 3878,
+							["hits"] = 1,
+						},
+						["Halo"] = {
+							["min"] = 0,
+							["crits"] = 0,
+							["max"] = 0,
+							["healing"] = 0,
+							["overhealing"] = 11702,
+							["hits"] = 1,
+						},
+						["Healing Tide"] = {
+							["min"] = 0,
+							["crits"] = 0,
+							["max"] = 11254,
+							["healing"] = 31397,
+							["overhealing"] = 8387,
+							["hits"] = 4,
+						},
+						["Gift of the Serpent"] = {
+							["min"] = 4766,
+							["crits"] = 2,
+							["max"] = 8877,
+							["healing"] = 26914,
+							["overhealing"] = 0,
+							["hits"] = 4,
+						},
+						["Healing Rain"] = {
+							["min"] = 0,
+							["crits"] = 2,
+							["max"] = 3602,
+							["healing"] = 4683,
+							["overhealing"] = 18195,
+							["hits"] = 8,
+						},
+						["Ysera's Gift"] = {
+							["min"] = 5169,
+							["crits"] = 0,
+							["max"] = 7873,
+							["healing"] = 64740,
+							["overhealing"] = 3539,
+							["hits"] = 12,
+						},
+						["Light of Dawn"] = {
+							["min"] = 1038,
+							["crits"] = 0,
+							["max"] = 3461,
+							["healing"] = 7959,
+							["overhealing"] = 0,
+							["hits"] = 3,
+						},
+						["Healing Stream Totem"] = {
+							["min"] = 1975,
+							["crits"] = 1,
+							["max"] = 8220,
+							["healing"] = 24275,
+							["overhealing"] = 0,
+							["hits"] = 5,
+						},
+						["Restorative Mists"] = {
+							["min"] = 1628,
+							["crits"] = 0,
+							["max"] = 1628,
+							["healing"] = 1628,
+							["overhealing"] = 0,
+							["hits"] = 1,
+						},
+						["Nature's Vigil"] = {
+							["min"] = 368,
+							["crits"] = 0,
+							["max"] = 567,
+							["healing"] = 935,
+							["overhealing"] = 0,
+							["hits"] = 2,
+						},
+						["Rejuvenation"] = {
+							["min"] = 96,
+							["crits"] = 1,
+							["max"] = 4344,
+							["healing"] = 13310,
+							["overhealing"] = 0,
+							["hits"] = 7,
+						},
+						["Atonement"] = {
+							["min"] = 0,
+							["crits"] = 3,
+							["max"] = 9083,
+							["healing"] = 42128,
+							["overhealing"] = 168,
+							["hits"] = 27,
+						},
+						["Healing Touch"] = {
+							["min"] = 0,
+							["crits"] = 2,
+							["max"] = 27046,
+							["healing"] = 35160,
+							["overhealing"] = 17581,
+							["hits"] = 4,
+						},
+					},
+					["htaken"] = 345413,
+					["done"] = 529542,
 				},
 				["Serenah-Thunderhorn"] = {
 					["players"] = {
@@ -23414,78 +23710,22 @@ SkadaPerCharDB = {
 					["htaken"] = 28060,
 					["done"] = 0,
 				},
-				["Noelani"] = {
+				["Claudia-Thunderhorn"] = {
 					["players"] = {
 					},
-					["hdone"] = 13150,
+					["hdone"] = 0,
 					["hdonespell"] = {
-						["Leech"] = {
+						["Holy Prism"] = {
 							["min"] = 0,
-							["crits"] = 0,
+							["crits"] = 1,
 							["max"] = 0,
 							["healing"] = 0,
-							["overhealing"] = 110154,
-							["hits"] = 30,
-						},
-						["Spirit Bond"] = {
-							["min"] = 6575,
-							["crits"] = 0,
-							["max"] = 6575,
-							["healing"] = 13150,
-							["overhealing"] = 0,
-							["hits"] = 2,
+							["overhealing"] = 169017,
+							["hits"] = 3,
 						},
 					},
 					["taken"] = 0,
 					["htakenspell"] = {
-						["Chi Burst"] = {
-							["min"] = 0,
-							["crits"] = 0,
-							["max"] = 0,
-							["healing"] = 0,
-							["overhealing"] = 44166,
-							["hits"] = 2,
-						},
-						["Leech"] = {
-							["min"] = 0,
-							["crits"] = 0,
-							["max"] = 0,
-							["healing"] = 0,
-							["overhealing"] = 110154,
-							["hits"] = 30,
-						},
-						["Halo"] = {
-							["min"] = 0,
-							["crits"] = 1,
-							["max"] = 0,
-							["healing"] = 0,
-							["overhealing"] = 11380,
-							["hits"] = 3,
-						},
-						["Tranquility"] = {
-							["min"] = 0,
-							["crits"] = 2,
-							["max"] = 0,
-							["healing"] = 0,
-							["overhealing"] = 192098,
-							["hits"] = 8,
-						},
-						["Healing Tide"] = {
-							["min"] = 0,
-							["crits"] = 1,
-							["max"] = 0,
-							["healing"] = 0,
-							["overhealing"] = 102658,
-							["hits"] = 9,
-						},
-						["Restorative Mists"] = {
-							["min"] = 0,
-							["crits"] = 0,
-							["max"] = 0,
-							["healing"] = 0,
-							["overhealing"] = 20391,
-							["hits"] = 6,
-						},
 					},
 					["htaken"] = 0,
 					["done"] = 0,
@@ -24558,321 +24798,81 @@ SkadaPerCharDB = {
 					["htaken"] = 0,
 					["done"] = 0,
 				},
-				["Slap-Thunderhorn"] = {
+				["Noelani"] = {
 					["players"] = {
-						["Decapre-Whisperwind"] = {
-							["taken"] = 0,
-							["done"] = 32693,
-							["class"] = "DEATHKNIGHT",
-							["role"] = "DAMAGER",
-						},
-						["Hamtory-Sargeras"] = {
-							["taken"] = 0,
-							["done"] = 44424,
-							["class"] = "ROGUE",
-							["role"] = "DAMAGER",
-						},
-						["Madslock-Eldre'Thalas"] = {
-							["taken"] = 0,
-							["done"] = 48004,
-							["class"] = "WARLOCK",
-							["role"] = "DAMAGER",
-						},
-						["Weskerosë-Perenolde"] = {
-							["taken"] = 0,
-							["done"] = 38814,
-							["class"] = "MAGE",
-							["role"] = "DAMAGER",
-						},
-						["Ashbringor-SteamwheedleCartel"] = {
-							["taken"] = 0,
-							["done"] = 19476,
-							["class"] = "PALADIN",
-							["role"] = "DAMAGER",
-						},
-						["Arcanoweave-Fizzcrank"] = {
-							["taken"] = 0,
-							["done"] = 47637,
-							["class"] = "MAGE",
-							["role"] = "DAMAGER",
-						},
-						["Roguê-MoonGuard"] = {
-							["taken"] = 0,
-							["done"] = 48564,
-							["class"] = "ROGUE",
-							["role"] = "DAMAGER",
-						},
-						["Blaastar-Quel'Thalas"] = {
-							["taken"] = 0,
-							["done"] = 41835,
-							["class"] = "WARLOCK",
-							["role"] = "DAMAGER",
-						},
-						["Zonvra-Ragnaros"] = {
-							["taken"] = 0,
-							["done"] = 30447,
-							["class"] = "SHAMAN",
-							["role"] = "HEALER",
-						},
-						["Kneesaa-Shadowsong"] = {
-							["taken"] = 0,
-							["done"] = 31830,
-							["class"] = "MAGE",
-							["role"] = "DAMAGER",
-						},
-						["Claudia-Thunderhorn"] = {
-							["taken"] = 0,
-							["done"] = 16813,
-							["class"] = "PALADIN",
-							["role"] = "HEALER",
-						},
-						["Sammun-Stormrage"] = {
-							["taken"] = 0,
-							["done"] = 48411,
-							["class"] = "HUNTER",
-							["role"] = "DAMAGER",
-						},
-						["Sunsooji-ScarletCrusade"] = {
-							["taken"] = 0,
-							["done"] = 35774,
-							["class"] = "MONK",
-							["role"] = "HEALER",
-						},
-						["Sixpointfive-Sen'jin"] = {
-							["taken"] = 128250,
-							["done"] = 0,
-							["class"] = "SHAMAN",
-							["role"] = "DAMAGER",
-						},
-						["Dincadon-Darrowmere"] = {
-							["taken"] = 0,
-							["done"] = 31840,
-							["class"] = "SHAMAN",
-							["role"] = "HEALER",
-						},
-						["Uldaris"] = {
-							["taken"] = 0,
-							["done"] = 12980,
-							["class"] = "DRUID",
-							["role"] = "DAMAGER",
-						},
 					},
-					["hdone"] = 105337,
+					["hdone"] = 13150,
 					["hdonespell"] = {
-						["Leader of the Pack"] = {
+						["Leech"] = {
 							["min"] = 0,
 							["crits"] = 0,
 							["max"] = 0,
 							["healing"] = 0,
-							["overhealing"] = 3878,
-							["hits"] = 1,
+							["overhealing"] = 110154,
+							["hits"] = 30,
 						},
-						["Rejuvenation"] = {
-							["min"] = 96,
-							["crits"] = 1,
-							["max"] = 4344,
-							["healing"] = 13310,
+						["Spirit Bond"] = {
+							["min"] = 6575,
+							["crits"] = 0,
+							["max"] = 6575,
+							["healing"] = 13150,
 							["overhealing"] = 0,
-							["hits"] = 7,
-						},
-						["Ysera's Gift"] = {
-							["min"] = 5169,
-							["crits"] = 0,
-							["max"] = 5170,
-							["healing"] = 56867,
-							["overhealing"] = 0,
-							["hits"] = 11,
-						},
-						["Healing Touch"] = {
-							["min"] = 0,
-							["crits"] = 2,
-							["max"] = 27046,
-							["healing"] = 35160,
-							["overhealing"] = 17581,
-							["hits"] = 4,
-						},
-					},
-					["taken"] = 128250,
-					["htakenspell"] = {
-						["Daybreak"] = {
-							["min"] = 0,
-							["crits"] = 0,
-							["max"] = 0,
-							["healing"] = 0,
-							["overhealing"] = 5196,
-							["hits"] = 1,
-						},
-						["Holy Prism"] = {
-							["min"] = 0,
-							["crits"] = 0,
-							["max"] = 0,
-							["healing"] = 0,
-							["overhealing"] = 48289,
-							["hits"] = 1,
-						},
-						["Wild Mushroom"] = {
-							["min"] = 0,
-							["crits"] = 2,
-							["max"] = 5970,
-							["healing"] = 5970,
-							["overhealing"] = 55516,
-							["hits"] = 9,
-						},
-						["Wild Growth"] = {
-							["min"] = 0,
-							["crits"] = 2,
-							["max"] = 0,
-							["healing"] = 0,
-							["overhealing"] = 55502,
-							["hits"] = 11,
-						},
-						["Renewing Mist"] = {
-							["min"] = 0,
-							["crits"] = 8,
-							["max"] = 1395,
-							["healing"] = 10987,
-							["overhealing"] = 37563,
-							["hits"] = 38,
-						},
-						["Chi Wave"] = {
-							["min"] = 0,
-							["crits"] = 1,
-							["max"] = 4662,
-							["healing"] = 7459,
-							["overhealing"] = 4669,
-							["hits"] = 3,
-						},
-						["Uplift"] = {
-							["min"] = 12585,
-							["crits"] = 0,
-							["max"] = 14561,
-							["healing"] = 27146,
-							["overhealing"] = 1976,
 							["hits"] = 2,
 						},
-						["Ancestral Guidance"] = {
-							["min"] = 0,
-							["crits"] = 0,
-							["max"] = 7287,
-							["healing"] = 40722,
-							["overhealing"] = 1694,
-							["hits"] = 27,
-						},
-						["Soothing Winds"] = {
-							["min"] = 0,
-							["crits"] = 2,
-							["max"] = 0,
-							["healing"] = 0,
-							["overhealing"] = 2763,
-							["hits"] = 5,
-						},
-						["Leader of the Pack"] = {
+					},
+					["taken"] = 0,
+					["htakenspell"] = {
+						["Chi Burst"] = {
 							["min"] = 0,
 							["crits"] = 0,
 							["max"] = 0,
 							["healing"] = 0,
-							["overhealing"] = 3878,
-							["hits"] = 1,
+							["overhealing"] = 44166,
+							["hits"] = 2,
+						},
+						["Leech"] = {
+							["min"] = 0,
+							["crits"] = 0,
+							["max"] = 0,
+							["healing"] = 0,
+							["overhealing"] = 110154,
+							["hits"] = 30,
 						},
 						["Halo"] = {
 							["min"] = 0,
-							["crits"] = 0,
+							["crits"] = 1,
 							["max"] = 0,
 							["healing"] = 0,
-							["overhealing"] = 11702,
-							["hits"] = 1,
+							["overhealing"] = 11380,
+							["hits"] = 3,
+						},
+						["Tranquility"] = {
+							["min"] = 0,
+							["crits"] = 2,
+							["max"] = 0,
+							["healing"] = 0,
+							["overhealing"] = 192098,
+							["hits"] = 8,
 						},
 						["Healing Tide"] = {
 							["min"] = 0,
-							["crits"] = 0,
-							["max"] = 11254,
-							["healing"] = 31397,
-							["overhealing"] = 8387,
-							["hits"] = 4,
-						},
-						["Gift of the Serpent"] = {
-							["min"] = 4766,
-							["crits"] = 2,
-							["max"] = 8877,
-							["healing"] = 26914,
-							["overhealing"] = 0,
-							["hits"] = 4,
-						},
-						["Healing Rain"] = {
-							["min"] = 0,
-							["crits"] = 2,
-							["max"] = 3602,
-							["healing"] = 4683,
-							["overhealing"] = 18195,
-							["hits"] = 8,
-						},
-						["Ysera's Gift"] = {
-							["min"] = 5169,
-							["crits"] = 0,
-							["max"] = 7873,
-							["healing"] = 64740,
-							["overhealing"] = 3539,
-							["hits"] = 12,
-						},
-						["Light of Dawn"] = {
-							["min"] = 1038,
-							["crits"] = 0,
-							["max"] = 3461,
-							["healing"] = 7959,
-							["overhealing"] = 0,
-							["hits"] = 3,
-						},
-						["Healing Stream Totem"] = {
-							["min"] = 1975,
 							["crits"] = 1,
-							["max"] = 8220,
-							["healing"] = 24275,
-							["overhealing"] = 0,
-							["hits"] = 5,
+							["max"] = 0,
+							["healing"] = 0,
+							["overhealing"] = 102658,
+							["hits"] = 9,
 						},
 						["Restorative Mists"] = {
-							["min"] = 1628,
-							["crits"] = 0,
-							["max"] = 1628,
-							["healing"] = 1628,
-							["overhealing"] = 0,
-							["hits"] = 1,
-						},
-						["Nature's Vigil"] = {
-							["min"] = 368,
-							["crits"] = 0,
-							["max"] = 567,
-							["healing"] = 935,
-							["overhealing"] = 0,
-							["hits"] = 2,
-						},
-						["Rejuvenation"] = {
-							["min"] = 96,
-							["crits"] = 1,
-							["max"] = 4344,
-							["healing"] = 13310,
-							["overhealing"] = 0,
-							["hits"] = 7,
-						},
-						["Atonement"] = {
 							["min"] = 0,
-							["crits"] = 3,
-							["max"] = 9083,
-							["healing"] = 42128,
-							["overhealing"] = 168,
-							["hits"] = 27,
-						},
-						["Healing Touch"] = {
-							["min"] = 0,
-							["crits"] = 2,
-							["max"] = 27046,
-							["healing"] = 35160,
-							["overhealing"] = 17581,
-							["hits"] = 4,
+							["crits"] = 0,
+							["max"] = 0,
+							["healing"] = 0,
+							["overhealing"] = 20391,
+							["hits"] = 6,
 						},
 					},
-					["htaken"] = 345413,
-					["done"] = 529542,
+					["htaken"] = 0,
+					["done"] = 0,
 				},
 				["Beast"] = {
 					["players"] = {
@@ -24971,6 +24971,15 @@ SkadaPerCharDB = {
 					["done"] = 0,
 				},
 			},
+			["mobtaken"] = 126034345,
+			["alertCount"] = 38,
+			["healing"] = 25240941,
+			["overhealing"] = 97177045.5949555,
+			["starttime"] = 1444168606,
+			["alertDamage"] = 1091137,
+			["shielding"] = 8569313,
+			["name"] = "Supreme Lord Kazzak",
+			["mobname"] = "Supreme Lord Kazzak",
 			["power"] = {
 				nil, -- [1]
 				2296, -- [2]
@@ -24983,15 +24992,6 @@ SkadaPerCharDB = {
 				[9] = 314,
 				[7] = 9,
 			},
-			["alertCount"] = 38,
-			["healing"] = 25240941,
-			["overhealing"] = 97177045.5949555,
-			["starttime"] = 1444168606,
-			["alertDamage"] = 1091137,
-			["shielding"] = 8569313,
-			["name"] = "Supreme Lord Kazzak",
-			["mobname"] = "Supreme Lord Kazzak",
-			["gotboss"] = true,
 			["mobhdone"] = 730944,
 			["last_action"] = 1444168606,
 			["endtime"] = 1444168784,
@@ -25047,11 +25047,11 @@ SkadaPerCharDB = {
 						["uptime"] = 179,
 						["auratype"] = "DEBUFF",
 					},
-					["Grace of Air"] = {
-						["name"] = "Grace of Air",
+					["Ancestral Guidance"] = {
+						["name"] = "Ancestral Guidance",
 						["active"] = 0,
-						["id"] = 116956,
-						["uptime"] = 59,
+						["id"] = 108281,
+						["uptime"] = 10,
 						["auratype"] = "BUFF",
 					},
 					["Lightning Shield"] = {
@@ -25061,11 +25061,11 @@ SkadaPerCharDB = {
 						["uptime"] = 131,
 						["auratype"] = "BUFF",
 					},
-					["Ancestral Guidance"] = {
-						["name"] = "Ancestral Guidance",
+					["Shamanistic Rage"] = {
+						["name"] = "Shamanistic Rage",
 						["active"] = 0,
-						["id"] = 108281,
-						["uptime"] = 10,
+						["id"] = 30823,
+						["uptime"] = 30,
 						["auratype"] = "BUFF",
 					},
 					["Lava Surge"] = {
@@ -25089,11 +25089,11 @@ SkadaPerCharDB = {
 						["uptime"] = 30,
 						["auratype"] = "BUFF",
 					},
-					["Shamanistic Rage"] = {
-						["name"] = "Shamanistic Rage",
+					["Grace of Air"] = {
+						["name"] = "Grace of Air",
 						["active"] = 0,
-						["id"] = 30823,
-						["uptime"] = 30,
+						["id"] = 116956,
+						["uptime"] = 59,
 						["auratype"] = "BUFF",
 					},
 					["Enhanced Unleash"] = {
@@ -25252,129 +25252,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 31840,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 157982,
-						["hp"] = 339300,
-						["ts"] = 1444168773.751,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dincadon-Darrowmere",
-						["spellid"] = 137808,
-						["hp"] = 339300,
-						["ts"] = 1444168774.136,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dincadon-Darrowmere",
-						["spellid"] = 137808,
-						["hp"] = 339300,
-						["ts"] = 1444168775.198,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 157982,
-						["hp"] = 339300,
-						["ts"] = 1444168775.388,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 157982,
-						["hp"] = 339300,
-						["ts"] = 1444168776.95,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dincadon-Darrowmere",
-						["spellid"] = 137808,
-						["hp"] = 339300,
-						["ts"] = 1444168777.635,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dincadon-Darrowmere",
-						["spellid"] = 137808,
-						["hp"] = 339300,
-						["ts"] = 1444168780.154,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dincadon-Darrowmere",
-						["spellid"] = 137808,
-						["hp"] = 339300,
-						["ts"] = 1444168799.87,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Abira-Durotan",
-						["spellid"] = 125953,
-						["hp"] = 339300,
-						["ts"] = 1444168800.751,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dincadon-Darrowmere",
-						["spellid"] = 137808,
-						["hp"] = 339300,
-						["ts"] = 1444168802.31,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dincadon-Darrowmere",
-						["spellid"] = 137808,
-						["hp"] = 339300,
-						["ts"] = 1444168767.924,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dincadon-Darrowmere",
-						["spellid"] = 137808,
-						["hp"] = 339300,
-						["ts"] = 1444168770.282,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 157982,
-						["hp"] = 339300,
-						["ts"] = 1444168772.219,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dincadon-Darrowmere",
-						["spellid"] = 137808,
-						["hp"] = 339300,
-						["ts"] = 1444168772.819,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Kariaani-Anvilmar",
-						["spellid"] = 120692,
-						["hp"] = 339300,
-						["ts"] = 1444168773.021,
-					}, -- [15]
-					["pos"] = 11,
-				},
+				["shielding"] = 0,
 				["id"] = "Player-87-05936269",
 				["maxhp"] = 339300,
 				["healing"] = 179984,
@@ -25627,8 +25505,130 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Dincadon",
 				["alertCount"] = 0,
-				["shielding"] = 0,
 				["power"] = {
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 157982,
+						["hp"] = 339300,
+						["ts"] = 1444168773.751,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dincadon-Darrowmere",
+						["spellid"] = 137808,
+						["hp"] = 339300,
+						["ts"] = 1444168774.136,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dincadon-Darrowmere",
+						["spellid"] = 137808,
+						["hp"] = 339300,
+						["ts"] = 1444168775.198,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 157982,
+						["hp"] = 339300,
+						["ts"] = 1444168775.388,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 157982,
+						["hp"] = 339300,
+						["ts"] = 1444168776.95,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dincadon-Darrowmere",
+						["spellid"] = 137808,
+						["hp"] = 339300,
+						["ts"] = 1444168777.635,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dincadon-Darrowmere",
+						["spellid"] = 137808,
+						["hp"] = 339300,
+						["ts"] = 1444168780.154,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dincadon-Darrowmere",
+						["spellid"] = 137808,
+						["hp"] = 339300,
+						["ts"] = 1444168799.87,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Abira-Durotan",
+						["spellid"] = 125953,
+						["hp"] = 339300,
+						["ts"] = 1444168800.751,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dincadon-Darrowmere",
+						["spellid"] = 137808,
+						["hp"] = 339300,
+						["ts"] = 1444168802.31,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dincadon-Darrowmere",
+						["spellid"] = 137808,
+						["hp"] = 339300,
+						["ts"] = 1444168767.924,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dincadon-Darrowmere",
+						["spellid"] = 137808,
+						["hp"] = 339300,
+						["ts"] = 1444168770.282,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 157982,
+						["hp"] = 339300,
+						["ts"] = 1444168772.219,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dincadon-Darrowmere",
+						["spellid"] = 137808,
+						["hp"] = 339300,
+						["ts"] = 1444168772.819,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Kariaani-Anvilmar",
+						["spellid"] = 120692,
+						["hp"] = 339300,
+						["ts"] = 1444168773.021,
+					}, -- [15]
+					["pos"] = 11,
 				},
 				["alert"] = {
 				},
@@ -25745,112 +25745,7 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 119952,
-						["hp"] = 285300,
-						["ts"] = 1444168800.284,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 774,
-						["hp"] = 285300,
-						["ts"] = 1444168800.348,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Uldaris",
-						["spellid"] = 68285,
-						["hp"] = 285300,
-						["ts"] = 1444168800.57,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 774,
-						["hp"] = 285300,
-						["ts"] = 1444168802.815,
-					}, -- [4]
-					{
-						["absorb"] = -17572,
-						["amount"] = -29227,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 187671,
-						["hp"] = 256073,
-						["ts"] = 1444168803.505,
-					}, -- [5]
-					{
-						["ts"] = 1444168804.214,
-						["amount"] = -13262,
-						["spellid"] = 187671,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["hp"] = 242811,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 11412,
-						["srcname"] = "Uldaris",
-						["spellid"] = 145109,
-						["hp"] = 254223,
-						["ts"] = 1444168804.214,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 5800,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 48438,
-						["hp"] = 260023,
-						["ts"] = 1444168804.497,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 8242,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 774,
-						["hp"] = 268265,
-						["ts"] = 1444168805.272,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 5513,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 48438,
-						["hp"] = 273778,
-						["ts"] = 1444168805.272,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 5250,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 48438,
-						["hp"] = 279028,
-						["ts"] = 1444168806.013,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 2933,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 85222,
-						["hp"] = 281961,
-						["ts"] = 1444168806.248,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 3339,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 48438,
-						["hp"] = 285300,
-						["ts"] = 1444168806.821,
-					}, -- [13]
-					["pos"] = 14,
-				},
+				["shielding"] = 0,
 				["damage"] = 2785053,
 				["damagespells"] = {
 					["Rake"] = {
@@ -25929,23 +25824,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1444168778.47202,
 								["amount"] = -5495,
+								["hp"] = 126829,
 								["spellid"] = 187671,
 								["srcname"] = "Barion-Thunderhorn",
-								["hp"] = 126829,
 							}, -- [2]
 							{
 								["ts"] = 1444168778.76303,
 								["amount"] = -2192,
+								["hp"] = 124637,
 								["spellid"] = 187671,
 								["srcname"] = "Barion-Thunderhorn",
-								["hp"] = 124637,
 							}, -- [3]
 							{
 								["ts"] = 1444168779.20904,
 								["amount"] = -16159,
+								["hp"] = 108478,
 								["spellid"] = 187671,
 								["srcname"] = "Mendokgb-Blade'sEdge",
-								["hp"] = 108478,
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -25958,37 +25853,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1444168779.30306,
 								["amount"] = -11210,
+								["hp"] = 108680,
 								["spellid"] = 187671,
 								["srcname"] = "Mendokgb-Blade'sEdge",
-								["hp"] = 108680,
 							}, -- [6]
 							{
 								["ts"] = 1444168779.30307,
 								["amount"] = -15280,
+								["hp"] = 93400,
 								["spellid"] = 187671,
 								["srcname"] = "Mendokgb-Blade'sEdge",
-								["hp"] = 93400,
 							}, -- [7]
 							{
 								["ts"] = 1444168779.39908,
 								["amount"] = -67404,
+								["hp"] = 25996,
 								["spellid"] = 187671,
 								["srcname"] = "Mendokgb-Blade'sEdge",
-								["hp"] = 25996,
 							}, -- [8]
 							{
 								["ts"] = 1444168779.50109,
 								["amount"] = -5819,
+								["hp"] = 20177,
 								["spellid"] = 187671,
 								["srcname"] = "Barion-Thunderhorn",
-								["hp"] = 20177,
 							}, -- [9]
 							{
 								["ts"] = 1444168780.1551,
 								["amount"] = -33948,
+								["hp"] = 1,
 								["spellid"] = 187671,
 								["srcname"] = "Barion-Thunderhorn",
-								["hp"] = 1,
 							}, -- [10]
 							{
 								["spellname"] = "Uldaris dies",
@@ -25999,30 +25894,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1444168777.10512,
 								["amount"] = -22144,
+								["hp"] = 178379,
 								["spellid"] = 187671,
 								["srcname"] = "Barion-Thunderhorn",
-								["hp"] = 178379,
 							}, -- [12]
 							{
 								["ts"] = 1444168777.44513,
 								["amount"] = -4850,
+								["hp"] = 173529,
 								["spellid"] = 187671,
 								["srcname"] = "Barion-Thunderhorn",
-								["hp"] = 173529,
 							}, -- [13]
 							{
 								["ts"] = 1444168778.25014,
 								["amount"] = -37568,
+								["hp"] = 135961,
 								["spellid"] = 187671,
 								["srcname"] = "Barion-Thunderhorn",
-								["hp"] = 135961,
 							}, -- [14]
 							{
 								["ts"] = 1444168778.25015,
 								["amount"] = -12196,
+								["hp"] = 123765,
 								["spellid"] = 187671,
 								["srcname"] = "Mendokgb-Blade'sEdge",
-								["hp"] = 123765,
 							}, -- [15]
 							["pos"] = 12,
 						},
@@ -26138,9 +26033,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1444168616.72714,
 								["amount"] = -289328,
+								["hp"] = 1,
 								["spellid"] = 187664,
 								["srcname"] = "Supreme Lord Kazzak",
-								["hp"] = 1,
 							}, -- [14]
 							{
 								["spellname"] = "Uldaris dies",
@@ -26154,14 +26049,111 @@ SkadaPerCharDB = {
 					}, -- [2]
 				},
 				["damagetaken"] = 1483755,
-				["power"] = {
-					[3] = {
-						["spells"] = {
-							[5217] = 240,
-							[22568] = -89,
-						},
-						["amount"] = 151,
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 119952,
+						["hp"] = 285300,
+						["ts"] = 1444168800.284,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 774,
+						["hp"] = 285300,
+						["ts"] = 1444168800.348,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Uldaris",
+						["spellid"] = 68285,
+						["hp"] = 285300,
+						["ts"] = 1444168800.57,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 774,
+						["hp"] = 285300,
+						["ts"] = 1444168802.815,
+					}, -- [4]
+					{
+						["absorb"] = -17572,
+						["amount"] = -29227,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 187671,
+						["hp"] = 256073,
+						["ts"] = 1444168803.505,
+					}, -- [5]
+					{
+						["ts"] = 1444168804.214,
+						["amount"] = -13262,
+						["hp"] = 242811,
+						["spellid"] = 187671,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 11412,
+						["srcname"] = "Uldaris",
+						["spellid"] = 145109,
+						["hp"] = 254223,
+						["ts"] = 1444168804.214,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 5800,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 48438,
+						["hp"] = 260023,
+						["ts"] = 1444168804.497,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 8242,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 774,
+						["hp"] = 268265,
+						["ts"] = 1444168805.272,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 5513,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 48438,
+						["hp"] = 273778,
+						["ts"] = 1444168805.272,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 5250,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 48438,
+						["hp"] = 279028,
+						["ts"] = 1444168806.013,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 2933,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 85222,
+						["hp"] = 281961,
+						["ts"] = 1444168806.248,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 3339,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 48438,
+						["hp"] = 285300,
+						["ts"] = 1444168806.821,
+					}, -- [13]
+					["pos"] = 14,
 				},
 				["id"] = "Player-1169-06A1AD17",
 				["maxhp"] = 285300,
@@ -26308,7 +26300,15 @@ SkadaPerCharDB = {
 				["alertDamage"] = 1133626,
 				["name"] = "Uldaris",
 				["alertCount"] = 40,
-				["shielding"] = 0,
+				["power"] = {
+					[3] = {
+						["spells"] = {
+							[5217] = 240,
+							[22568] = -89,
+						},
+						["amount"] = 151,
+					},
+				},
 				["healingspells"] = {
 					["Ysera's Gift"] = {
 						["shielding"] = 0,
@@ -26467,6 +26467,13 @@ SkadaPerCharDB = {
 						["uptime"] = 11,
 						["auratype"] = "BUFF",
 					},
+					["Freezing Fog"] = {
+						["name"] = "Freezing Fog",
+						["active"] = 1,
+						["id"] = 59052,
+						["uptime"] = 69,
+						["auratype"] = "BUFF",
+					},
 					["Forgemaster's Vigor"] = {
 						["name"] = "Forgemaster's Vigor",
 						["active"] = 1,
@@ -26479,13 +26486,6 @@ SkadaPerCharDB = {
 						["active"] = 1,
 						["id"] = 51124,
 						["uptime"] = 177,
-						["auratype"] = "BUFF",
-					},
-					["Freezing Fog"] = {
-						["name"] = "Freezing Fog",
-						["active"] = 1,
-						["id"] = 59052,
-						["uptime"] = 69,
 						["auratype"] = "BUFF",
 					},
 				},
@@ -26685,128 +26685,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 917681,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Decapre-Whisperwind",
-						["spellid"] = 143924,
-						["hp"] = 287220,
-						["ts"] = 1444168802.31,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 82327,
-						["hp"] = 287220,
-						["ts"] = 1444168803.329,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 82327,
-						["hp"] = 287220,
-						["ts"] = 1444168803.329,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Decapre-Whisperwind",
-						["spellid"] = 143924,
-						["hp"] = 287220,
-						["ts"] = 1444168803.505,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Decapre-Whisperwind",
-						["spellid"] = 143924,
-						["hp"] = 287220,
-						["ts"] = 1444168805.547,
-					}, -- [5]
-					{
-						["ts"] = 1444168780.745,
-						["amount"] = -23671,
-						["spellid"] = 187671,
-						["srcname"] = "Mendokgb-Blade'sEdge",
-						["hp"] = 30350,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 63404,
-						["srcname"] = "Dirtysock-AeriePeak",
-						["spellid"] = 82326,
-						["hp"] = 93754,
-						["ts"] = 1444168781.245,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 143610,
-						["srcname"] = "Decapre-Whisperwind",
-						["spellid"] = 48743,
-						["hp"] = 237364,
-						["ts"] = 1444168781.578,
-					}, -- [8]
-					{
-						["absorb"] = 4139,
-						["amount"] = 0,
-						["srcname"] = "Forthwith-Silvermoon",
-						["spellid"] = 132463,
-						["hp"] = 237364,
-						["ts"] = 1444168781.578,
-					}, -- [9]
-					{
-						["absorb"] = 1241,
-						["amount"] = 0,
-						["srcname"] = "Forthwith-Silvermoon",
-						["spellid"] = 132463,
-						["hp"] = 237364,
-						["ts"] = 1444168781.578,
-					}, -- [10]
-					{
-						["absorb"] = 2278,
-						["amount"] = 0,
-						["srcname"] = "Decapre-Whisperwind",
-						["spellid"] = 143924,
-						["hp"] = 237364,
-						["ts"] = 1444168781.578,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Decapre-Whisperwind",
-						["spellid"] = 143924,
-						["hp"] = 287220,
-						["ts"] = 1444168799.063,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 119952,
-						["hp"] = 287220,
-						["ts"] = 1444168800.284,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Decapre-Whisperwind",
-						["spellid"] = 53365,
-						["hp"] = 287220,
-						["ts"] = 1444168800.979,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Decapre-Whisperwind",
-						["spellid"] = 143924,
-						["hp"] = 287220,
-						["ts"] = 1444168801.073,
-					}, -- [15]
-					["pos"] = 6,
-				},
+				["shielding"] = 0,
 				["id"] = "Player-55-05973991",
 				["maxhp"] = 287220,
 				["healing"] = 185364,
@@ -26902,8 +26781,129 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Decapre",
 				["alertCount"] = 0,
-				["shielding"] = 0,
 				["power"] = {
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Decapre-Whisperwind",
+						["spellid"] = 143924,
+						["hp"] = 287220,
+						["ts"] = 1444168802.31,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 82327,
+						["hp"] = 287220,
+						["ts"] = 1444168803.329,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 82327,
+						["hp"] = 287220,
+						["ts"] = 1444168803.329,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Decapre-Whisperwind",
+						["spellid"] = 143924,
+						["hp"] = 287220,
+						["ts"] = 1444168803.505,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Decapre-Whisperwind",
+						["spellid"] = 143924,
+						["hp"] = 287220,
+						["ts"] = 1444168805.547,
+					}, -- [5]
+					{
+						["ts"] = 1444168780.745,
+						["amount"] = -23671,
+						["hp"] = 30350,
+						["spellid"] = 187671,
+						["srcname"] = "Mendokgb-Blade'sEdge",
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 63404,
+						["srcname"] = "Dirtysock-AeriePeak",
+						["spellid"] = 82326,
+						["hp"] = 93754,
+						["ts"] = 1444168781.245,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 143610,
+						["srcname"] = "Decapre-Whisperwind",
+						["spellid"] = 48743,
+						["hp"] = 237364,
+						["ts"] = 1444168781.578,
+					}, -- [8]
+					{
+						["absorb"] = 4139,
+						["amount"] = 0,
+						["srcname"] = "Forthwith-Silvermoon",
+						["spellid"] = 132463,
+						["hp"] = 237364,
+						["ts"] = 1444168781.578,
+					}, -- [9]
+					{
+						["absorb"] = 1241,
+						["amount"] = 0,
+						["srcname"] = "Forthwith-Silvermoon",
+						["spellid"] = 132463,
+						["hp"] = 237364,
+						["ts"] = 1444168781.578,
+					}, -- [10]
+					{
+						["absorb"] = 2278,
+						["amount"] = 0,
+						["srcname"] = "Decapre-Whisperwind",
+						["spellid"] = 143924,
+						["hp"] = 237364,
+						["ts"] = 1444168781.578,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Decapre-Whisperwind",
+						["spellid"] = 143924,
+						["hp"] = 287220,
+						["ts"] = 1444168799.063,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 119952,
+						["hp"] = 287220,
+						["ts"] = 1444168800.284,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Decapre-Whisperwind",
+						["spellid"] = 53365,
+						["hp"] = 287220,
+						["ts"] = 1444168800.979,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Decapre-Whisperwind",
+						["spellid"] = 143924,
+						["hp"] = 287220,
+						["ts"] = 1444168801.073,
+					}, -- [15]
+					["pos"] = 6,
 				},
 				["alert"] = {
 				},
@@ -27167,129 +27167,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 157982,
-						["hp"] = 332460,
-						["ts"] = 1444168773.751,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 774,
-						["hp"] = 332460,
-						["ts"] = 1444168773.934,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 157982,
-						["hp"] = 332460,
-						["ts"] = 1444168775.388,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 774,
-						["hp"] = 332460,
-						["ts"] = 1444168776.294,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 157982,
-						["hp"] = 332460,
-						["ts"] = 1444168776.95,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 774,
-						["hp"] = 332460,
-						["ts"] = 1444168776.95,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 82327,
-						["hp"] = 332460,
-						["ts"] = 1444168803.329,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 48438,
-						["hp"] = 332460,
-						["ts"] = 1444168767.226,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 48438,
-						["hp"] = 332460,
-						["ts"] = 1444168767.924,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 48438,
-						["hp"] = 332460,
-						["ts"] = 1444168767.924,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 774,
-						["hp"] = 332460,
-						["ts"] = 1444168769.133,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 774,
-						["hp"] = 332460,
-						["ts"] = 1444168769.133,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 774,
-						["hp"] = 332460,
-						["ts"] = 1444168771.535,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 157982,
-						["hp"] = 332460,
-						["ts"] = 1444168772.142,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Kariaani-Anvilmar",
-						["spellid"] = 120692,
-						["hp"] = 332460,
-						["ts"] = 1444168772.394,
-					}, -- [15]
-					["pos"] = 8,
-				},
+				["shielding"] = 0,
 				["id"] = "Player-120-05030B7E",
 				["maxhp"] = 332460,
 				["healing"] = 3087819,
@@ -27583,11 +27461,12 @@ SkadaPerCharDB = {
 						["name"] = "DINO",
 						["amount"] = 0,
 					},
-					["Creature-0-105-1464-16-86934-0000144298"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Sha'tari Defender",
+					["Creature-0-105-1464-15-31216-000094444E"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Weskerosë-Perenolde",
 						["amount"] = 0,
+						["class"] = "MAGE",
+						["shielding"] = 0,
 					},
 					["Player-123-035ABF2C"] = {
 						["role"] = "DAMAGER",
@@ -27675,19 +27554,18 @@ SkadaPerCharDB = {
 						["name"] = "Retired Gorian Centurion",
 						["amount"] = 0,
 					},
-					["Creature-0-105-1464-15-31216-000094444E"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Weskerosë-Perenolde",
-						["amount"] = 0,
-						["class"] = "MAGE",
-						["shielding"] = 0,
-					},
 					["Creature-0-105-1464-15-31216-000014444E"] = {
 						["role"] = "DAMAGER",
 						["name"] = "Weskerosë-Perenolde",
 						["amount"] = 0,
 						["class"] = "MAGE",
 						["shielding"] = 0,
+					},
+					["Creature-0-105-1464-16-86934-0000144298"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Sha'tari Defender",
+						["amount"] = 0,
 					},
 					["Player-86-05166722"] = {
 						["role"] = "TANK",
@@ -27733,8 +27611,130 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Dryason",
 				["alertCount"] = 0,
-				["shielding"] = 0,
 				["power"] = {
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 157982,
+						["hp"] = 332460,
+						["ts"] = 1444168773.751,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 774,
+						["hp"] = 332460,
+						["ts"] = 1444168773.934,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 157982,
+						["hp"] = 332460,
+						["ts"] = 1444168775.388,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 774,
+						["hp"] = 332460,
+						["ts"] = 1444168776.294,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 157982,
+						["hp"] = 332460,
+						["ts"] = 1444168776.95,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 774,
+						["hp"] = 332460,
+						["ts"] = 1444168776.95,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 82327,
+						["hp"] = 332460,
+						["ts"] = 1444168803.329,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 48438,
+						["hp"] = 332460,
+						["ts"] = 1444168767.226,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 48438,
+						["hp"] = 332460,
+						["ts"] = 1444168767.924,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 48438,
+						["hp"] = 332460,
+						["ts"] = 1444168767.924,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 774,
+						["hp"] = 332460,
+						["ts"] = 1444168769.133,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 774,
+						["hp"] = 332460,
+						["ts"] = 1444168769.133,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 774,
+						["hp"] = 332460,
+						["ts"] = 1444168771.535,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 157982,
+						["hp"] = 332460,
+						["ts"] = 1444168772.142,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Kariaani-Anvilmar",
+						["spellid"] = 120692,
+						["hp"] = 332460,
+						["ts"] = 1444168772.394,
+					}, -- [15]
+					["pos"] = 8,
 				},
 				["alert"] = {
 				},
@@ -27968,6 +27968,48 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 638161,
+				["shielding"] = 0,
+				["id"] = "Player-60-098708E7",
+				["maxhp"] = 401760,
+				["healing"] = 8036,
+				["damagetakenspells"] = {
+					["Mark of Kazzak"] = {
+						["crushing"] = 0,
+						["id"] = 187671,
+						["damage"] = 638161,
+						["max"] = 108966,
+						["name"] = "Mark of Kazzak",
+						["min"] = 3118,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 36,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 32844,
+					},
+				},
+				["healed"] = {
+					["Player-60-098708E7"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Nostroscythe-Stormrage",
+						["amount"] = 8036,
+						["class"] = "HUNTER",
+						["shielding"] = 0,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Nostroscythe",
+				["alertCount"] = 0,
+				["power"] = {
+					[2] = {
+						["spells"] = {
+							[77443] = 644,
+							[157722] = 260,
+						},
+						["amount"] = 904,
+					},
+				},
 				["deathlog"] = {
 					{
 						["absorb"] = -241,
@@ -27980,16 +28022,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1444168768.025,
 						["amount"] = -4416,
+						["hp"] = 329359,
 						["spellid"] = 187671,
 						["srcname"] = "Dryason-Darkspear",
-						["hp"] = 329359,
 					}, -- [2]
 					{
 						["ts"] = 1444168768.025,
 						["amount"] = -4416,
+						["hp"] = 324943,
 						["spellid"] = 187671,
 						["srcname"] = "Dryason-Darkspear",
-						["hp"] = 324943,
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -28088,48 +28130,6 @@ SkadaPerCharDB = {
 						["ts"] = 1444168776.95,
 					}, -- [15]
 					["pos"] = 1,
-				},
-				["id"] = "Player-60-098708E7",
-				["maxhp"] = 401760,
-				["healing"] = 8036,
-				["damagetakenspells"] = {
-					["Mark of Kazzak"] = {
-						["crushing"] = 0,
-						["id"] = 187671,
-						["damage"] = 638161,
-						["max"] = 108966,
-						["name"] = "Mark of Kazzak",
-						["min"] = 3118,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 36,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 32844,
-					},
-				},
-				["healed"] = {
-					["Player-60-098708E7"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Nostroscythe-Stormrage",
-						["amount"] = 8036,
-						["class"] = "HUNTER",
-						["shielding"] = 0,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Nostroscythe",
-				["alertCount"] = 0,
-				["shielding"] = 0,
-				["power"] = {
-					[2] = {
-						["spells"] = {
-							[77443] = 644,
-							[157722] = 260,
-						},
-						["amount"] = 904,
-					},
 				},
 				["alert"] = {
 				},
@@ -28398,129 +28398,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 2404257,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 440,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 435668,
-						["ts"] = 1444168806.248,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 49,
-						["srcname"] = "Stewiegrifon-Staghelm",
-						["spellid"] = 143924,
-						["hp"] = 435717,
-						["ts"] = 1444168806.719,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 190,
-						["srcname"] = "Stewiegrifon-Staghelm",
-						["spellid"] = 159375,
-						["hp"] = 435907,
-						["ts"] = 1444168806.719,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 635,
-						["srcname"] = "Dirtysock-AeriePeak",
-						["spellid"] = 53652,
-						["hp"] = 436542,
-						["ts"] = 1444168806.719,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 191,
-						["srcname"] = "Dirtysock-AeriePeak",
-						["spellid"] = 53652,
-						["hp"] = 436733,
-						["ts"] = 1444168806.719,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 1492,
-						["srcname"] = "Stewiegrifon-Staghelm",
-						["spellid"] = 159375,
-						["hp"] = 438225,
-						["ts"] = 1444168806.821,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 1491,
-						["srcname"] = "Stewiegrifon-Staghelm",
-						["spellid"] = 159375,
-						["hp"] = 439716,
-						["ts"] = 1444168806.821,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 4973,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 48438,
-						["hp"] = 444689,
-						["ts"] = 1444168806.821,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 264,
-						["srcname"] = "Stewiegrifon-Staghelm",
-						["spellid"] = 159375,
-						["hp"] = 432764,
-						["ts"] = 1444168806.248,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 880,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 433644,
-						["ts"] = 1444168806.248,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 132,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 433776,
-						["ts"] = 1444168806.248,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 440,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 434216,
-						["ts"] = 1444168806.248,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 440,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 434656,
-						["ts"] = 1444168806.248,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 440,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 435096,
-						["ts"] = 1444168806.248,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 132,
-						["srcname"] = "Stewiegrifon-Staghelm",
-						["spellid"] = 159375,
-						["hp"] = 435228,
-						["ts"] = 1444168806.248,
-					}, -- [15]
-					["pos"] = 9,
-				},
+				["shielding"] = 459242,
 				["id"] = "Player-160-00B7C6B3",
 				["maxhp"] = 459780,
 				["healing"] = 879889,
@@ -28680,7 +28558,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Stewiegrifon",
 				["alertCount"] = 0,
-				["shielding"] = 459242,
 				["power"] = {
 					[9] = {
 						["spells"] = {
@@ -28691,6 +28568,129 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 66,
 					},
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 440,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 435668,
+						["ts"] = 1444168806.248,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 49,
+						["srcname"] = "Stewiegrifon-Staghelm",
+						["spellid"] = 143924,
+						["hp"] = 435717,
+						["ts"] = 1444168806.719,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 190,
+						["srcname"] = "Stewiegrifon-Staghelm",
+						["spellid"] = 159375,
+						["hp"] = 435907,
+						["ts"] = 1444168806.719,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 635,
+						["srcname"] = "Dirtysock-AeriePeak",
+						["spellid"] = 53652,
+						["hp"] = 436542,
+						["ts"] = 1444168806.719,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 191,
+						["srcname"] = "Dirtysock-AeriePeak",
+						["spellid"] = 53652,
+						["hp"] = 436733,
+						["ts"] = 1444168806.719,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 1492,
+						["srcname"] = "Stewiegrifon-Staghelm",
+						["spellid"] = 159375,
+						["hp"] = 438225,
+						["ts"] = 1444168806.821,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 1491,
+						["srcname"] = "Stewiegrifon-Staghelm",
+						["spellid"] = 159375,
+						["hp"] = 439716,
+						["ts"] = 1444168806.821,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 4973,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 48438,
+						["hp"] = 444689,
+						["ts"] = 1444168806.821,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 264,
+						["srcname"] = "Stewiegrifon-Staghelm",
+						["spellid"] = 159375,
+						["hp"] = 432764,
+						["ts"] = 1444168806.248,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 880,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 433644,
+						["ts"] = 1444168806.248,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 132,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 433776,
+						["ts"] = 1444168806.248,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 440,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 434216,
+						["ts"] = 1444168806.248,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 440,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 434656,
+						["ts"] = 1444168806.248,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 440,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 435096,
+						["ts"] = 1444168806.248,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 132,
+						["srcname"] = "Stewiegrifon-Staghelm",
+						["spellid"] = 159375,
+						["hp"] = 435228,
+						["ts"] = 1444168806.248,
+					}, -- [15]
+					["pos"] = 9,
 				},
 				["alert"] = {
 				},
@@ -28842,129 +28842,7 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 48438,
-						["hp"] = 445260,
-						["ts"] = 1444168806.821,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dirtysock-AeriePeak",
-						["spellid"] = 82326,
-						["hp"] = 445260,
-						["ts"] = 1444168805.17,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 774,
-						["hp"] = 445260,
-						["ts"] = 1444168805.272,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 33763,
-						["hp"] = 445260,
-						["ts"] = 1444168805.272,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 33763,
-						["hp"] = 445260,
-						["ts"] = 1444168805.272,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 48438,
-						["hp"] = 445260,
-						["ts"] = 1444168805.272,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dirtysock-AeriePeak",
-						["spellid"] = 156322,
-						["hp"] = 445260,
-						["ts"] = 1444168805.272,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dirtysock-AeriePeak",
-						["spellid"] = 156322,
-						["hp"] = 445260,
-						["ts"] = 1444168805.272,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 33763,
-						["hp"] = 445260,
-						["ts"] = 1444168806.013,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 33763,
-						["hp"] = 445260,
-						["ts"] = 1444168806.013,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 48438,
-						["hp"] = 445260,
-						["ts"] = 1444168806.013,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Tagamausy-Blade'sEdge",
-						["spellid"] = 8936,
-						["hp"] = 445260,
-						["ts"] = 1444168806.479,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dirtysock-AeriePeak",
-						["spellid"] = 156322,
-						["hp"] = 445260,
-						["ts"] = 1444168806.719,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dirtysock-AeriePeak",
-						["spellid"] = 156322,
-						["hp"] = 445260,
-						["ts"] = 1444168806.719,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 33763,
-						["hp"] = 445260,
-						["ts"] = 1444168806.821,
-					}, -- [15]
-					["pos"] = 2,
-				},
+				["shielding"] = 1517571,
 				["damage"] = 2769621,
 				["damagespells"] = {
 					["Expel Harm"] = {
@@ -29164,17 +29042,128 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 2273762,
-				["power"] = {
-					[12] = {
-						["spells"] = {
-							[157558] = 7,
-							[115399] = 8,
-							[100780] = 17,
-							[115072] = 9,
-							[127796] = 32,
-						},
-						["amount"] = 73,
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 48438,
+						["hp"] = 445260,
+						["ts"] = 1444168806.821,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dirtysock-AeriePeak",
+						["spellid"] = 82326,
+						["hp"] = 445260,
+						["ts"] = 1444168805.17,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 774,
+						["hp"] = 445260,
+						["ts"] = 1444168805.272,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 33763,
+						["hp"] = 445260,
+						["ts"] = 1444168805.272,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 33763,
+						["hp"] = 445260,
+						["ts"] = 1444168805.272,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 48438,
+						["hp"] = 445260,
+						["ts"] = 1444168805.272,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dirtysock-AeriePeak",
+						["spellid"] = 156322,
+						["hp"] = 445260,
+						["ts"] = 1444168805.272,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dirtysock-AeriePeak",
+						["spellid"] = 156322,
+						["hp"] = 445260,
+						["ts"] = 1444168805.272,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 33763,
+						["hp"] = 445260,
+						["ts"] = 1444168806.013,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 33763,
+						["hp"] = 445260,
+						["ts"] = 1444168806.013,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 48438,
+						["hp"] = 445260,
+						["ts"] = 1444168806.013,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Tagamausy-Blade'sEdge",
+						["spellid"] = 8936,
+						["hp"] = 445260,
+						["ts"] = 1444168806.479,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dirtysock-AeriePeak",
+						["spellid"] = 156322,
+						["hp"] = 445260,
+						["ts"] = 1444168806.719,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dirtysock-AeriePeak",
+						["spellid"] = 156322,
+						["hp"] = 445260,
+						["ts"] = 1444168806.719,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 33763,
+						["hp"] = 445260,
+						["ts"] = 1444168806.821,
+					}, -- [15]
+					["pos"] = 2,
 				},
 				["id"] = "Player-86-05166722",
 				["maxhp"] = 453900,
@@ -29326,7 +29315,18 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Forthwith",
 				["alertCount"] = 0,
-				["shielding"] = 1517571,
+				["power"] = {
+					[12] = {
+						["spells"] = {
+							[157558] = 7,
+							[115399] = 8,
+							[100780] = 17,
+							[115072] = 9,
+							[127796] = 32,
+						},
+						["amount"] = 73,
+					},
+				},
 				["healingspells"] = {
 					["Expel Harm"] = {
 						["shielding"] = 0,
@@ -29593,6 +29593,63 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 281502,
+				["shielding"] = 0,
+				["id"] = "Player-158-0849CCFA",
+				["maxhp"] = 311580,
+				["healing"] = 144498,
+				["damagetakenspells"] = {
+					["Fel Breath"] = {
+						["crushing"] = 0,
+						["id"] = 187664,
+						["damage"] = 223704,
+						["max"] = 223704,
+						["name"] = "Fel Breath",
+						["min"] = 223704,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 9438,
+					},
+					["Mark of Kazzak"] = {
+						["crushing"] = 0,
+						["id"] = 187671,
+						["damage"] = 57798,
+						["max"] = 18342,
+						["name"] = "Mark of Kazzak",
+						["min"] = 4634,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 9,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+				},
+				["healed"] = {
+					["Player-158-0849CCFA"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Demhealztho-Tanaris",
+						["amount"] = 144498,
+						["class"] = "PRIEST",
+						["shielding"] = 0,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Demhealztho",
+				["alertCount"] = 0,
+				["power"] = {
+					[13] = {
+						["spells"] = {
+							[8092] = 25,
+							[125927] = 3,
+						},
+						["amount"] = 28,
+					},
+				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -29716,63 +29773,6 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 15,
 				},
-				["id"] = "Player-158-0849CCFA",
-				["maxhp"] = 311580,
-				["healing"] = 144498,
-				["damagetakenspells"] = {
-					["Fel Breath"] = {
-						["crushing"] = 0,
-						["id"] = 187664,
-						["damage"] = 223704,
-						["max"] = 223704,
-						["name"] = "Fel Breath",
-						["min"] = 223704,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 9438,
-					},
-					["Mark of Kazzak"] = {
-						["crushing"] = 0,
-						["id"] = 187671,
-						["damage"] = 57798,
-						["max"] = 18342,
-						["name"] = "Mark of Kazzak",
-						["min"] = 4634,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 9,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-				},
-				["healed"] = {
-					["Player-158-0849CCFA"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Demhealztho-Tanaris",
-						["amount"] = 144498,
-						["class"] = "PRIEST",
-						["shielding"] = 0,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Demhealztho",
-				["alertCount"] = 0,
-				["shielding"] = 0,
-				["power"] = {
-					[13] = {
-						["spells"] = {
-							[8092] = 25,
-							[125927] = 3,
-						},
-						["amount"] = 28,
-					},
-				},
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -29846,129 +29846,7 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Zonvra-Ragnaros",
-						["spellid"] = 61295,
-						["hp"] = 320460,
-						["ts"] = 1444168804.601,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 48438,
-						["hp"] = 320460,
-						["ts"] = 1444168805.272,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 774,
-						["hp"] = 320460,
-						["ts"] = 1444168805.547,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 48438,
-						["hp"] = 320460,
-						["ts"] = 1444168806.013,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 48438,
-						["hp"] = 320460,
-						["ts"] = 1444168806.821,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Roguê-MoonGuard",
-						["spellid"] = 143924,
-						["hp"] = 320460,
-						["ts"] = 1444168801.934,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Zonvra-Ragnaros",
-						["spellid"] = 61295,
-						["hp"] = 320460,
-						["ts"] = 1444168802.049,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Abira-Durotan",
-						["spellid"] = 115175,
-						["hp"] = 320460,
-						["ts"] = 1444168802.439,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Roguê-MoonGuard",
-						["spellid"] = 143924,
-						["hp"] = 320460,
-						["ts"] = 1444168803.217,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 774,
-						["hp"] = 320460,
-						["ts"] = 1444168803.217,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Abira-Durotan",
-						["spellid"] = 115175,
-						["hp"] = 320460,
-						["ts"] = 1444168803.329,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Abira-Durotan",
-						["spellid"] = 115175,
-						["hp"] = 320460,
-						["ts"] = 1444168804.089,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Abira-Durotan",
-						["spellid"] = 115175,
-						["hp"] = 320460,
-						["ts"] = 1444168804.089,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Roguê-MoonGuard",
-						["spellid"] = 143924,
-						["hp"] = 320460,
-						["ts"] = 1444168804.497,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 48438,
-						["hp"] = 320460,
-						["ts"] = 1444168804.497,
-					}, -- [15]
-					["pos"] = 6,
-				},
+				["shielding"] = 0,
 				["damage"] = 1777769,
 				["damagespells"] = {
 					["Killing Spree Off-Hand"] = {
@@ -30190,20 +30068,128 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 1094841,
-				["power"] = {
-					[3] = {
-						["spells"] = {
-							[35546] = 645,
-							[98440] = 225,
-						},
-						["amount"] = 870,
-					},
-					[4] = {
-						["spells"] = {
-							[139546] = 11,
-						},
-						["amount"] = 11,
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Zonvra-Ragnaros",
+						["spellid"] = 61295,
+						["hp"] = 320460,
+						["ts"] = 1444168804.601,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 48438,
+						["hp"] = 320460,
+						["ts"] = 1444168805.272,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 774,
+						["hp"] = 320460,
+						["ts"] = 1444168805.547,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 48438,
+						["hp"] = 320460,
+						["ts"] = 1444168806.013,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 48438,
+						["hp"] = 320460,
+						["ts"] = 1444168806.821,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Roguê-MoonGuard",
+						["spellid"] = 143924,
+						["hp"] = 320460,
+						["ts"] = 1444168801.934,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Zonvra-Ragnaros",
+						["spellid"] = 61295,
+						["hp"] = 320460,
+						["ts"] = 1444168802.049,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Abira-Durotan",
+						["spellid"] = 115175,
+						["hp"] = 320460,
+						["ts"] = 1444168802.439,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Roguê-MoonGuard",
+						["spellid"] = 143924,
+						["hp"] = 320460,
+						["ts"] = 1444168803.217,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 774,
+						["hp"] = 320460,
+						["ts"] = 1444168803.217,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Abira-Durotan",
+						["spellid"] = 115175,
+						["hp"] = 320460,
+						["ts"] = 1444168803.329,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Abira-Durotan",
+						["spellid"] = 115175,
+						["hp"] = 320460,
+						["ts"] = 1444168804.089,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Abira-Durotan",
+						["spellid"] = 115175,
+						["hp"] = 320460,
+						["ts"] = 1444168804.089,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Roguê-MoonGuard",
+						["spellid"] = 143924,
+						["hp"] = 320460,
+						["ts"] = 1444168804.497,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 48438,
+						["hp"] = 320460,
+						["ts"] = 1444168804.497,
+					}, -- [15]
+					["pos"] = 6,
 				},
 				["id"] = "Player-3675-06D7CE1C",
 				["maxhp"] = 320460,
@@ -30252,7 +30238,21 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Roguê",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+					[3] = {
+						["spells"] = {
+							[35546] = 645,
+							[98440] = 225,
+						},
+						["amount"] = 870,
+					},
+					[4] = {
+						["spells"] = {
+							[139546] = 11,
+						},
+						["amount"] = 11,
+					},
+				},
 				["healingspells"] = {
 					["Leech"] = {
 						["shielding"] = 0,
@@ -30369,6 +30369,20 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["overhealing"] = 3689623.3631134,
 				["healingspells"] = {
+					["Power Word: Shield"] = {
+						["shielding"] = 1479553,
+						["id"] = 17,
+						["healing"] = 1479553,
+						["multistrikes"] = 0,
+						["min"] = 0,
+						["multistrike"] = 0,
+						["name"] = "Power Word: Shield",
+						["hits"] = 87,
+						["overhealing"] = 923573.74609375,
+						["max"] = 128250,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
 					["Penance"] = {
 						["shielding"] = 0,
 						["id"] = 47750,
@@ -30381,20 +30395,6 @@ SkadaPerCharDB = {
 						["overhealing"] = 271905,
 						["max"] = 37680,
 						["critical"] = 3,
-						["absorbed"] = 0,
-					},
-					["Divine Aegis"] = {
-						["shielding"] = 433041,
-						["id"] = 47753,
-						["healing"] = 433041,
-						["multistrikes"] = 0,
-						["min"] = 0,
-						["multistrike"] = 0,
-						["name"] = "Divine Aegis",
-						["hits"] = 101,
-						["overhealing"] = 458638.632644653,
-						["max"] = 60355,
-						["critical"] = 0,
 						["absorbed"] = 0,
 					},
 					["Prayer of Healing"] = {
@@ -30453,17 +30453,17 @@ SkadaPerCharDB = {
 						["critical"] = 29,
 						["absorbed"] = 0,
 					},
-					["Power Word: Shield"] = {
-						["shielding"] = 1479553,
-						["id"] = 17,
-						["healing"] = 1479553,
+					["Divine Aegis"] = {
+						["shielding"] = 433041,
+						["id"] = 47753,
+						["healing"] = 433041,
 						["multistrikes"] = 0,
 						["min"] = 0,
 						["multistrike"] = 0,
-						["name"] = "Power Word: Shield",
-						["hits"] = 87,
-						["overhealing"] = 923573.74609375,
-						["max"] = 128250,
+						["name"] = "Divine Aegis",
+						["hits"] = 101,
+						["overhealing"] = 458638.632644653,
+						["max"] = 60355,
 						["critical"] = 0,
 						["absorbed"] = 0,
 					},
@@ -30502,122 +30502,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 447590,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 774,
-						["hp"] = 332520,
-						["ts"] = 1444168801.52,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 119952,
-						["hp"] = 332520,
-						["ts"] = 1444168802.241,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 119952,
-						["hp"] = 332520,
-						["ts"] = 1444168802.241,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 82327,
-						["hp"] = 332520,
-						["ts"] = 1444168803.329,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 774,
-						["hp"] = 332520,
-						["ts"] = 1444168803.728,
-					}, -- [5]
-					{
-						["ts"] = 1444168779.302,
-						["amount"] = -11233,
-						["spellid"] = 187671,
-						["srcname"] = "Mendokgb-Blade'sEdge",
-						["hp"] = 181687,
-					}, -- [6]
-					{
-						["ts"] = 1444168779.302,
-						["amount"] = -15310,
-						["spellid"] = 187671,
-						["srcname"] = "Mendokgb-Blade'sEdge",
-						["hp"] = 166377,
-					}, -- [7]
-					{
-						["ts"] = 1444168779.398,
-						["amount"] = -67540,
-						["spellid"] = 187671,
-						["srcname"] = "Mendokgb-Blade'sEdge",
-						["hp"] = 98837,
-					}, -- [8]
-					{
-						["ts"] = 1444168779.5,
-						["amount"] = -5831,
-						["spellid"] = 187671,
-						["srcname"] = "Barion-Thunderhorn",
-						["hp"] = 93006,
-					}, -- [9]
-					{
-						["ts"] = 1444168780.154,
-						["amount"] = -34017,
-						["spellid"] = 187671,
-						["srcname"] = "Barion-Thunderhorn",
-						["hp"] = 58989,
-					}, -- [10]
-					{
-						["ts"] = 1444168780.467,
-						["amount"] = -16533,
-						["spellid"] = 187671,
-						["srcname"] = "Mendokgb-Blade'sEdge",
-						["hp"] = 42456,
-					}, -- [11]
-					{
-						["ts"] = 1444168780.745,
-						["amount"] = -24947,
-						["spellid"] = 187671,
-						["srcname"] = "Mendokgb-Blade'sEdge",
-						["hp"] = 17509,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 4472,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 774,
-						["hp"] = 21981,
-						["ts"] = 1444168782.39,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 774,
-						["hp"] = 332520,
-						["ts"] = 1444168799.063,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 119952,
-						["hp"] = 332520,
-						["ts"] = 1444168800.284,
-					}, -- [15]
-					["pos"] = 6,
-				},
+				["shielding"] = 3396100,
 				["id"] = "Player-1174-07966DB0",
 				["maxhp"] = 332520,
 				["healing"] = 3883164,
@@ -31014,12 +30899,11 @@ SkadaPerCharDB = {
 						["class"] = "HUNTER",
 						["shielding"] = 78509,
 					},
-					["Player-158-0239183B"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Ellwina-Greymane",
-						["amount"] = 2751,
-						["class"] = "PALADIN",
+					["Creature-0-105-1464-15-24207-0000944420"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Army of the Dead",
+						["amount"] = 0,
 					},
 					["Creature-0-1071-1464-9-86927-0000144190"] = {
 						["shielding"] = 0,
@@ -31027,7 +30911,7 @@ SkadaPerCharDB = {
 						["name"] = "Stormshield Death Knight",
 						["amount"] = 0,
 					},
-					["Creature-0-105-1464-15-24207-0000944420"] = {
+					["Creature-0-105-1464-15-24207-0000144420"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Army of the Dead",
@@ -31060,11 +30944,12 @@ SkadaPerCharDB = {
 						["class"] = "WARLOCK",
 						["shielding"] = 0,
 					},
-					["Creature-0-105-1464-15-24207-0000144420"] = {
+					["Player-158-0239183B"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Ellwina-Greymane",
+						["amount"] = 2751,
+						["class"] = "PALADIN",
 						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Army of the Dead",
-						["amount"] = 0,
 					},
 					["Creature-0-105-1464-15-31216-000014444E"] = {
 						["role"] = "DAMAGER",
@@ -31195,7 +31080,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Kariaani",
 				["alertCount"] = 0,
-				["shielding"] = 3396100,
 				["power"] = {
 					[0] = {
 						["spells"] = {
@@ -31203,6 +31087,122 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 25600,
 					},
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 774,
+						["hp"] = 332520,
+						["ts"] = 1444168801.52,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 119952,
+						["hp"] = 332520,
+						["ts"] = 1444168802.241,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 119952,
+						["hp"] = 332520,
+						["ts"] = 1444168802.241,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 82327,
+						["hp"] = 332520,
+						["ts"] = 1444168803.329,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 774,
+						["hp"] = 332520,
+						["ts"] = 1444168803.728,
+					}, -- [5]
+					{
+						["ts"] = 1444168779.302,
+						["amount"] = -11233,
+						["hp"] = 181687,
+						["spellid"] = 187671,
+						["srcname"] = "Mendokgb-Blade'sEdge",
+					}, -- [6]
+					{
+						["ts"] = 1444168779.302,
+						["amount"] = -15310,
+						["hp"] = 166377,
+						["spellid"] = 187671,
+						["srcname"] = "Mendokgb-Blade'sEdge",
+					}, -- [7]
+					{
+						["ts"] = 1444168779.398,
+						["amount"] = -67540,
+						["hp"] = 98837,
+						["spellid"] = 187671,
+						["srcname"] = "Mendokgb-Blade'sEdge",
+					}, -- [8]
+					{
+						["ts"] = 1444168779.5,
+						["amount"] = -5831,
+						["hp"] = 93006,
+						["spellid"] = 187671,
+						["srcname"] = "Barion-Thunderhorn",
+					}, -- [9]
+					{
+						["ts"] = 1444168780.154,
+						["amount"] = -34017,
+						["hp"] = 58989,
+						["spellid"] = 187671,
+						["srcname"] = "Barion-Thunderhorn",
+					}, -- [10]
+					{
+						["ts"] = 1444168780.467,
+						["amount"] = -16533,
+						["hp"] = 42456,
+						["spellid"] = 187671,
+						["srcname"] = "Mendokgb-Blade'sEdge",
+					}, -- [11]
+					{
+						["ts"] = 1444168780.745,
+						["amount"] = -24947,
+						["hp"] = 17509,
+						["spellid"] = 187671,
+						["srcname"] = "Mendokgb-Blade'sEdge",
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 4472,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 774,
+						["hp"] = 21981,
+						["ts"] = 1444168782.39,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 774,
+						["hp"] = 332520,
+						["ts"] = 1444168799.063,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 119952,
+						["hp"] = 332520,
+						["ts"] = 1444168800.284,
+					}, -- [15]
+					["pos"] = 6,
 				},
 				["alert"] = {
 				},
@@ -31559,127 +31559,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 332041,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 82327,
-						["hp"] = 349200,
-						["ts"] = 1444168803.329,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dirtysock-AeriePeak",
-						["spellid"] = 156322,
-						["hp"] = 349200,
-						["ts"] = 1444168804.497,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dirtysock-AeriePeak",
-						["spellid"] = 156322,
-						["hp"] = 349200,
-						["ts"] = 1444168804.497,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dirtysock-AeriePeak",
-						["spellid"] = 156322,
-						["hp"] = 349200,
-						["ts"] = 1444168805.732,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 85222,
-						["hp"] = 349200,
-						["ts"] = 1444168806.248,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 85222,
-						["hp"] = 349200,
-						["ts"] = 1444168806.248,
-					}, -- [6]
-					{
-						["ts"] = 1444168780.59,
-						["amount"] = -121420,
-						["spellid"] = 187471,
-						["srcname"] = "Supreme Lord Kazzak",
-						["hp"] = 88045,
-					}, -- [7]
-					{
-						["ts"] = 1444168780.745,
-						["amount"] = -14984,
-						["spellid"] = 187671,
-						["srcname"] = "Mendokgb-Blade'sEdge",
-						["hp"] = 73061,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 14444,
-						["srcname"] = "Zonvra-Ragnaros",
-						["spellid"] = 61295,
-						["hp"] = 87505,
-						["ts"] = 1444168782.155,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 4333,
-						["srcname"] = "Zonvra-Ragnaros",
-						["spellid"] = 61295,
-						["hp"] = 91838,
-						["ts"] = 1444168782.155,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dirtysock-AeriePeak",
-						["spellid"] = 156322,
-						["hp"] = 349200,
-						["ts"] = 1444168799.959,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Zonvra-Ragnaros",
-						["spellid"] = 61295,
-						["hp"] = 349200,
-						["ts"] = 1444168800.162,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dirtysock-AeriePeak",
-						["spellid"] = 156322,
-						["hp"] = 349200,
-						["ts"] = 1444168801.415,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dirtysock-AeriePeak",
-						["spellid"] = 156322,
-						["hp"] = 349200,
-						["ts"] = 1444168802.888,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dirtysock-AeriePeak",
-						["spellid"] = 156322,
-						["hp"] = 349200,
-						["ts"] = 1444168802.888,
-					}, -- [15]
-					["pos"] = 7,
-				},
+				["shielding"] = 622975,
 				["id"] = "Player-127-061C5692",
 				["maxhp"] = 342600,
 				["healing"] = 1414889,
@@ -32095,7 +31975,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Babajenkins",
 				["alertCount"] = 0,
-				["shielding"] = 622975,
 				["power"] = {
 					[9] = {
 						["spells"] = {
@@ -32110,6 +31989,127 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 3960,
 					},
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 82327,
+						["hp"] = 349200,
+						["ts"] = 1444168803.329,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dirtysock-AeriePeak",
+						["spellid"] = 156322,
+						["hp"] = 349200,
+						["ts"] = 1444168804.497,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dirtysock-AeriePeak",
+						["spellid"] = 156322,
+						["hp"] = 349200,
+						["ts"] = 1444168804.497,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dirtysock-AeriePeak",
+						["spellid"] = 156322,
+						["hp"] = 349200,
+						["ts"] = 1444168805.732,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 85222,
+						["hp"] = 349200,
+						["ts"] = 1444168806.248,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 85222,
+						["hp"] = 349200,
+						["ts"] = 1444168806.248,
+					}, -- [6]
+					{
+						["ts"] = 1444168780.59,
+						["amount"] = -121420,
+						["hp"] = 88045,
+						["spellid"] = 187471,
+						["srcname"] = "Supreme Lord Kazzak",
+					}, -- [7]
+					{
+						["ts"] = 1444168780.745,
+						["amount"] = -14984,
+						["hp"] = 73061,
+						["spellid"] = 187671,
+						["srcname"] = "Mendokgb-Blade'sEdge",
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 14444,
+						["srcname"] = "Zonvra-Ragnaros",
+						["spellid"] = 61295,
+						["hp"] = 87505,
+						["ts"] = 1444168782.155,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 4333,
+						["srcname"] = "Zonvra-Ragnaros",
+						["spellid"] = 61295,
+						["hp"] = 91838,
+						["ts"] = 1444168782.155,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dirtysock-AeriePeak",
+						["spellid"] = 156322,
+						["hp"] = 349200,
+						["ts"] = 1444168799.959,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Zonvra-Ragnaros",
+						["spellid"] = 61295,
+						["hp"] = 349200,
+						["ts"] = 1444168800.162,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dirtysock-AeriePeak",
+						["spellid"] = 156322,
+						["hp"] = 349200,
+						["ts"] = 1444168801.415,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dirtysock-AeriePeak",
+						["spellid"] = 156322,
+						["hp"] = 349200,
+						["ts"] = 1444168802.888,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dirtysock-AeriePeak",
+						["spellid"] = 156322,
+						["hp"] = 349200,
+						["ts"] = 1444168802.888,
+					}, -- [15]
+					["pos"] = 7,
 				},
 				["alert"] = {
 				},
@@ -32191,6 +32191,213 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
+				["shielding"] = 0,
+				["damage"] = 4427684,
+				["damagespells"] = {
+					["Ice Nova"] = {
+						["min"] = 30026,
+						["multistrike"] = 6,
+						["critical"] = 1,
+						["hit"] = 7,
+						["totalhits"] = 8,
+						["id"] = 157997,
+						["max"] = 73611,
+						["damage"] = 510414,
+					},
+					["Frostfire Bolt"] = {
+						["min"] = 18330,
+						["multistrike"] = 7,
+						["critical"] = 7,
+						["hit"] = 2,
+						["totalhits"] = 9,
+						["id"] = 44614,
+						["max"] = 84996,
+						["damage"] = 458071,
+					},
+					["Icicle"] = {
+						["min"] = 1447,
+						["hit"] = 95,
+						["totalhits"] = 95,
+						["id"] = 148022,
+						["max"] = 38207,
+						["damage"] = 630228,
+					},
+					["Water Elemental: Waterbolt"] = {
+						["min"] = 3767,
+						["multistrike"] = 28,
+						["critical"] = 15,
+						["hit"] = 37,
+						["totalhits"] = 52,
+						["id"] = 31707,
+						["max"] = 12127,
+						["damage"] = 380194,
+					},
+					["Ice Lance"] = {
+						["min"] = 4109,
+						["multistrike"] = 13,
+						["critical"] = 20,
+						["hit"] = 5,
+						["totalhits"] = 25,
+						["id"] = 30455,
+						["max"] = 73477,
+						["damage"] = 1064693,
+					},
+					["Frostbolt"] = {
+						["min"] = 11160,
+						["multistrike"] = 32,
+						["critical"] = 16,
+						["hit"] = 37,
+						["totalhits"] = 53,
+						["id"] = 116,
+						["max"] = 47357,
+						["damage"] = 1055710,
+					},
+					["Water Elemental: Water Jet"] = {
+						["min"] = 2077,
+						["multistrike"] = 17,
+						["critical"] = 7,
+						["hit"] = 24,
+						["totalhits"] = 31,
+						["id"] = 135029,
+						["max"] = 7193,
+						["damage"] = 116197,
+					},
+					["Frozen Orb"] = {
+						["min"] = 2992,
+						["multistrike"] = 29,
+						["critical"] = 9,
+						["hit"] = 22,
+						["totalhits"] = 31,
+						["id"] = 84721,
+						["max"] = 12696,
+						["damage"] = 212177,
+					},
+				},
+				["deaths"] = {
+					{
+						["ts"] = 1444168626.63607,
+						["log"] = {
+							{
+								["absorb"] = 0,
+								["amount"] = 4059,
+								["srcname"] = "Warliky-Hydraxis",
+								["spellid"] = 85222,
+								["hp"] = 307440,
+								["ts"] = 1444168625.50501,
+							}, -- [1]
+							{
+								["ts"] = 1444168625.50502,
+								["amount"] = -48419,
+								["srcname"] = "Britnèyfears-Aggramar",
+								["spellid"] = 187671,
+								["hp"] = 259021,
+								["absorb"] = -16607,
+							}, -- [2]
+							{
+								["absorb"] = -3057,
+								["amount"] = -19378,
+								["srcname"] = "Britnèyfears-Aggramar",
+								["spellid"] = 187671,
+								["hp"] = 239643,
+								["ts"] = 1444168625.71603,
+							}, -- [3]
+							{
+								["ts"] = 1444168625.93404,
+								["amount"] = -3128,
+								["hp"] = 236515,
+								["spellid"] = 187671,
+								["srcname"] = "Britnèyfears-Aggramar",
+							}, -- [4]
+							{
+								["absorb"] = 0,
+								["amount"] = 4178,
+								["srcname"] = "Dryason-Darkspear",
+								["spellid"] = 48438,
+								["hp"] = 240693,
+								["ts"] = 1444168626.14405,
+							}, -- [5]
+							{
+								["ts"] = 1444168626.42106,
+								["amount"] = -337915,
+								["hp"] = 1,
+								["spellid"] = 187471,
+								["srcname"] = "Supreme Lord Kazzak",
+							}, -- [6]
+							{
+								["spellname"] = "Arcanoweave dies",
+								["ts"] = 1444168626.63607,
+								["hp"] = 0,
+								["spellid"] = 41220,
+							}, -- [7]
+							{
+								["ts"] = 1444168619.34808,
+								["amount"] = -22434,
+								["hp"] = 279302,
+								["spellid"] = 187671,
+								["srcname"] = "Britnèyfears-Aggramar",
+							}, -- [8]
+							{
+								["absorb"] = 0,
+								["amount"] = 19363,
+								["srcname"] = "Sunsooji-ScarletCrusade",
+								["spellid"] = 125953,
+								["hp"] = 298665,
+								["ts"] = 1444168619.41409,
+							}, -- [9]
+							{
+								["absorb"] = 0,
+								["amount"] = 2983,
+								["srcname"] = "Sunsooji-ScarletCrusade",
+								["spellid"] = 125953,
+								["hp"] = 301648,
+								["ts"] = 1444168619.4141,
+							}, -- [10]
+							{
+								["absorb"] = 0,
+								["amount"] = 3188,
+								["srcname"] = "Sunsooji-ScarletCrusade",
+								["spellid"] = 125953,
+								["hp"] = 304836,
+								["ts"] = 1444168619.41411,
+							}, -- [11]
+							{
+								["absorb"] = 0,
+								["amount"] = 7742,
+								["srcname"] = "Minzy-Alleria",
+								["spellid"] = 15290,
+								["hp"] = 297367,
+								["ts"] = 1444168625.39612,
+							}, -- [12]
+							{
+								["absorb"] = 0,
+								["amount"] = 4362,
+								["srcname"] = "Dryason-Darkspear",
+								["spellid"] = 48438,
+								["hp"] = 301729,
+								["ts"] = 1444168625.50413,
+							}, -- [13]
+							{
+								["ts"] = 1444168625.50414,
+								["amount"] = 1271,
+								["srcname"] = "Dirtysock-AeriePeak",
+								["spellid"] = 156322,
+								["hp"] = 303000,
+								["absorb"] = 0,
+							}, -- [14]
+							{
+								["absorb"] = 0,
+								["amount"] = 381,
+								["srcname"] = "Dirtysock-AeriePeak",
+								["spellid"] = 156322,
+								["hp"] = 303381,
+								["ts"] = 1444168625.50415,
+							}, -- [15]
+							["pos"] = 8,
+						},
+						["maxhp"] = 307440,
+					}, -- [1]
+				},
+				["damagetaken"] = 969214,
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -32314,214 +32521,6 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 2,
 				},
-				["damage"] = 4427684,
-				["damagespells"] = {
-					["Ice Nova"] = {
-						["min"] = 30026,
-						["multistrike"] = 6,
-						["critical"] = 1,
-						["hit"] = 7,
-						["totalhits"] = 8,
-						["id"] = 157997,
-						["max"] = 73611,
-						["damage"] = 510414,
-					},
-					["Frostfire Bolt"] = {
-						["min"] = 18330,
-						["multistrike"] = 7,
-						["critical"] = 7,
-						["hit"] = 2,
-						["totalhits"] = 9,
-						["id"] = 44614,
-						["max"] = 84996,
-						["damage"] = 458071,
-					},
-					["Icicle"] = {
-						["min"] = 1447,
-						["hit"] = 95,
-						["totalhits"] = 95,
-						["id"] = 148022,
-						["max"] = 38207,
-						["damage"] = 630228,
-					},
-					["Water Elemental: Waterbolt"] = {
-						["min"] = 3767,
-						["multistrike"] = 28,
-						["critical"] = 15,
-						["hit"] = 37,
-						["totalhits"] = 52,
-						["id"] = 31707,
-						["max"] = 12127,
-						["damage"] = 380194,
-					},
-					["Ice Lance"] = {
-						["min"] = 4109,
-						["multistrike"] = 13,
-						["critical"] = 20,
-						["hit"] = 5,
-						["totalhits"] = 25,
-						["id"] = 30455,
-						["max"] = 73477,
-						["damage"] = 1064693,
-					},
-					["Frostbolt"] = {
-						["min"] = 11160,
-						["multistrike"] = 32,
-						["critical"] = 16,
-						["hit"] = 37,
-						["totalhits"] = 53,
-						["id"] = 116,
-						["max"] = 47357,
-						["damage"] = 1055710,
-					},
-					["Water Elemental: Water Jet"] = {
-						["min"] = 2077,
-						["multistrike"] = 17,
-						["critical"] = 7,
-						["hit"] = 24,
-						["totalhits"] = 31,
-						["id"] = 135029,
-						["max"] = 7193,
-						["damage"] = 116197,
-					},
-					["Frozen Orb"] = {
-						["min"] = 2992,
-						["multistrike"] = 29,
-						["critical"] = 9,
-						["hit"] = 22,
-						["totalhits"] = 31,
-						["id"] = 84721,
-						["max"] = 12696,
-						["damage"] = 212177,
-					},
-				},
-				["deaths"] = {
-					{
-						["ts"] = 1444168626.63607,
-						["log"] = {
-							{
-								["absorb"] = 0,
-								["amount"] = 4059,
-								["srcname"] = "Warliky-Hydraxis",
-								["spellid"] = 85222,
-								["hp"] = 307440,
-								["ts"] = 1444168625.50501,
-							}, -- [1]
-							{
-								["ts"] = 1444168625.50502,
-								["amount"] = -48419,
-								["srcname"] = "Britnèyfears-Aggramar",
-								["spellid"] = 187671,
-								["hp"] = 259021,
-								["absorb"] = -16607,
-							}, -- [2]
-							{
-								["absorb"] = -3057,
-								["amount"] = -19378,
-								["srcname"] = "Britnèyfears-Aggramar",
-								["spellid"] = 187671,
-								["hp"] = 239643,
-								["ts"] = 1444168625.71603,
-							}, -- [3]
-							{
-								["ts"] = 1444168625.93404,
-								["amount"] = -3128,
-								["spellid"] = 187671,
-								["srcname"] = "Britnèyfears-Aggramar",
-								["hp"] = 236515,
-							}, -- [4]
-							{
-								["absorb"] = 0,
-								["amount"] = 4178,
-								["srcname"] = "Dryason-Darkspear",
-								["spellid"] = 48438,
-								["hp"] = 240693,
-								["ts"] = 1444168626.14405,
-							}, -- [5]
-							{
-								["ts"] = 1444168626.42106,
-								["amount"] = -337915,
-								["spellid"] = 187471,
-								["srcname"] = "Supreme Lord Kazzak",
-								["hp"] = 1,
-							}, -- [6]
-							{
-								["spellname"] = "Arcanoweave dies",
-								["ts"] = 1444168626.63607,
-								["hp"] = 0,
-								["spellid"] = 41220,
-							}, -- [7]
-							{
-								["ts"] = 1444168619.34808,
-								["amount"] = -22434,
-								["spellid"] = 187671,
-								["srcname"] = "Britnèyfears-Aggramar",
-								["hp"] = 279302,
-							}, -- [8]
-							{
-								["absorb"] = 0,
-								["amount"] = 19363,
-								["srcname"] = "Sunsooji-ScarletCrusade",
-								["spellid"] = 125953,
-								["hp"] = 298665,
-								["ts"] = 1444168619.41409,
-							}, -- [9]
-							{
-								["absorb"] = 0,
-								["amount"] = 2983,
-								["srcname"] = "Sunsooji-ScarletCrusade",
-								["spellid"] = 125953,
-								["hp"] = 301648,
-								["ts"] = 1444168619.4141,
-							}, -- [10]
-							{
-								["absorb"] = 0,
-								["amount"] = 3188,
-								["srcname"] = "Sunsooji-ScarletCrusade",
-								["spellid"] = 125953,
-								["hp"] = 304836,
-								["ts"] = 1444168619.41411,
-							}, -- [11]
-							{
-								["absorb"] = 0,
-								["amount"] = 7742,
-								["srcname"] = "Minzy-Alleria",
-								["spellid"] = 15290,
-								["hp"] = 297367,
-								["ts"] = 1444168625.39612,
-							}, -- [12]
-							{
-								["absorb"] = 0,
-								["amount"] = 4362,
-								["srcname"] = "Dryason-Darkspear",
-								["spellid"] = 48438,
-								["hp"] = 301729,
-								["ts"] = 1444168625.50413,
-							}, -- [13]
-							{
-								["ts"] = 1444168625.50414,
-								["amount"] = 1271,
-								["srcname"] = "Dirtysock-AeriePeak",
-								["spellid"] = 156322,
-								["hp"] = 303000,
-								["absorb"] = 0,
-							}, -- [14]
-							{
-								["absorb"] = 0,
-								["amount"] = 381,
-								["srcname"] = "Dirtysock-AeriePeak",
-								["spellid"] = 156322,
-								["hp"] = 303381,
-								["ts"] = 1444168625.50415,
-							}, -- [15]
-							["pos"] = 8,
-						},
-						["maxhp"] = 307440,
-					}, -- [1]
-				},
-				["damagetaken"] = 969214,
-				["power"] = {
-				},
 				["id"] = "Player-106-05F8EAFE",
 				["maxhp"] = 307440,
 				["healing"] = 0,
@@ -32592,7 +32591,8 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Arcanoweave",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 				},
 				["alert"] = {
@@ -32764,6 +32764,63 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 287306,
+				["shielding"] = 0,
+				["id"] = "Player-60-06A6FB3E",
+				["maxhp"] = 263040,
+				["healing"] = 0,
+				["damagetakenspells"] = {
+					["Supreme Doom"] = {
+						["crushing"] = 0,
+						["id"] = 187471,
+						["damage"] = 238895,
+						["max"] = 238895,
+						["name"] = "Supreme Doom",
+						["min"] = 238895,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 15694,
+					},
+					["Explosive Doom"] = {
+						["crushing"] = 0,
+						["id"] = 187632,
+						["damage"] = 48411,
+						["max"] = 48411,
+						["name"] = "Explosive Doom",
+						["min"] = 48411,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 239,
+					},
+				},
+				["healed"] = {
+					["Player-60-06A6FB3E"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Sammun-Stormrage",
+						["amount"] = 0,
+						["class"] = "HUNTER",
+						["shielding"] = 0,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Sammun",
+				["alertCount"] = 0,
+				["power"] = {
+					[2] = {
+						["spells"] = {
+							[157722] = 140,
+							[77443] = 546,
+						},
+						["amount"] = 686,
+					},
+				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -32886,63 +32943,6 @@ SkadaPerCharDB = {
 						["ts"] = 1444168775.388,
 					}, -- [15]
 					["pos"] = 3,
-				},
-				["id"] = "Player-60-06A6FB3E",
-				["maxhp"] = 263040,
-				["healing"] = 0,
-				["damagetakenspells"] = {
-					["Supreme Doom"] = {
-						["crushing"] = 0,
-						["id"] = 187471,
-						["damage"] = 238895,
-						["max"] = 238895,
-						["name"] = "Supreme Doom",
-						["min"] = 238895,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 15694,
-					},
-					["Explosive Doom"] = {
-						["crushing"] = 0,
-						["id"] = 187632,
-						["damage"] = 48411,
-						["max"] = 48411,
-						["name"] = "Explosive Doom",
-						["min"] = 48411,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 239,
-					},
-				},
-				["healed"] = {
-					["Player-60-06A6FB3E"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Sammun-Stormrage",
-						["amount"] = 0,
-						["class"] = "HUNTER",
-						["shielding"] = 0,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Sammun",
-				["alertCount"] = 0,
-				["shielding"] = 0,
-				["power"] = {
-					[2] = {
-						["spells"] = {
-							[157722] = 140,
-							[77443] = 546,
-						},
-						["amount"] = 686,
-					},
 				},
 				["alert"] = {
 				},
@@ -33150,6 +33150,56 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 104388,
+				["shielding"] = 0,
+				["id"] = "Player-122-0742B8D7",
+				["maxhp"] = 344640,
+				["healing"] = 20111,
+				["damagetakenspells"] = {
+					["Explosive Doom"] = {
+						["crushing"] = 0,
+						["id"] = 187632,
+						["damage"] = 38814,
+						["max"] = 38814,
+						["name"] = "Explosive Doom",
+						["min"] = 38814,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["Mark of Kazzak"] = {
+						["crushing"] = 0,
+						["id"] = 187671,
+						["damage"] = 65574,
+						["max"] = 18327,
+						["name"] = "Mark of Kazzak",
+						["min"] = 1210,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 9,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 3420,
+					},
+				},
+				["healed"] = {
+					["Player-122-0742B8D7"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Weskerosë-Perenolde",
+						["amount"] = 20111,
+						["class"] = "MAGE",
+						["shielding"] = 0,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Weskerosë",
+				["alertCount"] = 0,
+				["power"] = {
+				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -33272,56 +33322,6 @@ SkadaPerCharDB = {
 						["ts"] = 1444168805.547,
 					}, -- [15]
 					["pos"] = 1,
-				},
-				["id"] = "Player-122-0742B8D7",
-				["maxhp"] = 344640,
-				["healing"] = 20111,
-				["damagetakenspells"] = {
-					["Explosive Doom"] = {
-						["crushing"] = 0,
-						["id"] = 187632,
-						["damage"] = 38814,
-						["max"] = 38814,
-						["name"] = "Explosive Doom",
-						["min"] = 38814,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Mark of Kazzak"] = {
-						["crushing"] = 0,
-						["id"] = 187671,
-						["damage"] = 65574,
-						["max"] = 18327,
-						["name"] = "Mark of Kazzak",
-						["min"] = 1210,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 9,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 3420,
-					},
-				},
-				["healed"] = {
-					["Player-122-0742B8D7"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Weskerosë-Perenolde",
-						["amount"] = 20111,
-						["class"] = "MAGE",
-						["shielding"] = 0,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Weskerosë",
-				["alertCount"] = 0,
-				["shielding"] = 0,
-				["power"] = {
 				},
 				["alert"] = {
 				},
@@ -33527,6 +33527,26 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 0,
+				["shielding"] = 0,
+				["id"] = "Player-118-062E23C2",
+				["maxhp"] = 382620,
+				["healing"] = 0,
+				["damagetakenspells"] = {
+				},
+				["healed"] = {
+					["Player-118-062E23C2"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Failmage-ScarletCrusade",
+						["amount"] = 0,
+						["class"] = "MAGE",
+						["shielding"] = 0,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Failmage",
+				["alertCount"] = 0,
+				["power"] = {
+				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -33609,26 +33629,6 @@ SkadaPerCharDB = {
 						["ts"] = 1444168760.17,
 					}, -- [10]
 					["pos"] = 11,
-				},
-				["id"] = "Player-118-062E23C2",
-				["maxhp"] = 382620,
-				["healing"] = 0,
-				["damagetakenspells"] = {
-				},
-				["healed"] = {
-					["Player-118-062E23C2"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Failmage-ScarletCrusade",
-						["amount"] = 0,
-						["class"] = "MAGE",
-						["shielding"] = 0,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Failmage",
-				["alertCount"] = 0,
-				["shielding"] = 0,
-				["power"] = {
 				},
 				["alert"] = {
 				},
@@ -33717,6 +33717,147 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
+				["shielding"] = 229290,
+				["damage"] = 246715,
+				["damagespells"] = {
+					["Chi Burst"] = {
+						["min"] = 20222,
+						["multistrike"] = 4,
+						["critical"] = 3,
+						["hit"] = 5,
+						["totalhits"] = 8,
+						["id"] = 148135,
+						["max"] = 40445,
+						["damage"] = 246715,
+					},
+				},
+				["deaths"] = {
+					{
+						["ts"] = 1444168766.87009,
+						["log"] = {
+							{
+								["absorb"] = 0,
+								["amount"] = 0,
+								["srcname"] = "Dirtysock-AeriePeak",
+								["spellid"] = 114852,
+								["hp"] = 337680,
+								["ts"] = 1444168762.44801,
+							}, -- [1]
+							{
+								["absorb"] = 0,
+								["amount"] = 0,
+								["srcname"] = "Sunsooji-ScarletCrusade",
+								["spellid"] = 119611,
+								["hp"] = 337680,
+								["ts"] = 1444168763.55702,
+							}, -- [2]
+							{
+								["absorb"] = 0,
+								["amount"] = 0,
+								["srcname"] = "Babajenkins-Stormscale",
+								["spellid"] = 121129,
+								["hp"] = 337680,
+								["ts"] = 1444168764.97003,
+							}, -- [3]
+							{
+								["absorb"] = 0,
+								["amount"] = 0,
+								["srcname"] = "Sunsooji-ScarletCrusade",
+								["spellid"] = 119611,
+								["hp"] = 337680,
+								["ts"] = 1444168765.36704,
+							}, -- [4]
+							{
+								["ts"] = 1444168765.36705,
+								["amount"] = 0,
+								["srcname"] = "Sunsooji-ScarletCrusade",
+								["spellid"] = 119611,
+								["hp"] = 337680,
+								["absorb"] = 0,
+							}, -- [5]
+							{
+								["absorb"] = -12124,
+								["amount"] = -283293,
+								["srcname"] = "Supreme Lord Kazzak",
+								["spellid"] = 187664,
+								["hp"] = 54387,
+								["ts"] = 1444168765.52506,
+							}, -- [6]
+							{
+								["absorb"] = 0,
+								["amount"] = 1395,
+								["srcname"] = "Sunsooji-ScarletCrusade",
+								["spellid"] = 119611,
+								["hp"] = 55782,
+								["ts"] = 1444168766.20807,
+							}, -- [7]
+							{
+								["ts"] = 1444168766.53508,
+								["amount"] = -56862,
+								["hp"] = 1,
+								["spellid"] = 187671,
+								["srcname"] = "Mendokgb-Blade'sEdge",
+							}, -- [8]
+							{
+								["spellname"] = "Sunsooji dies",
+								["ts"] = 1444168766.87009,
+								["hp"] = 0,
+								["spellid"] = 41220,
+							}, -- [9]
+							{
+								["absorb"] = 0,
+								["amount"] = 0,
+								["srcname"] = "Sunsooji-ScarletCrusade",
+								["spellid"] = 119611,
+								["hp"] = 337680,
+								["ts"] = 1444168758.3791,
+							}, -- [10]
+							{
+								["absorb"] = 0,
+								["amount"] = 0,
+								["srcname"] = "Sunsooji-ScarletCrusade",
+								["spellid"] = 119611,
+								["hp"] = 337680,
+								["ts"] = 1444168758.37911,
+							}, -- [11]
+							{
+								["absorb"] = 0,
+								["amount"] = 0,
+								["srcname"] = "Sunsooji-ScarletCrusade",
+								["spellid"] = 119611,
+								["hp"] = 337680,
+								["ts"] = 1444168760.04812,
+							}, -- [12]
+							{
+								["absorb"] = 0,
+								["amount"] = 0,
+								["srcname"] = "Sunsooji-ScarletCrusade",
+								["spellid"] = 119611,
+								["hp"] = 337680,
+								["ts"] = 1444168760.04813,
+							}, -- [13]
+							{
+								["absorb"] = 0,
+								["amount"] = 0,
+								["srcname"] = "Sunsooji-ScarletCrusade",
+								["spellid"] = 119611,
+								["hp"] = 337680,
+								["ts"] = 1444168761.84614,
+							}, -- [14]
+							{
+								["absorb"] = 0,
+								["amount"] = 0,
+								["srcname"] = "Sunsooji-ScarletCrusade",
+								["spellid"] = 119611,
+								["hp"] = 337680,
+								["ts"] = 1444168761.84615,
+							}, -- [15]
+							["pos"] = 10,
+						},
+						["maxhp"] = 337680,
+					}, -- [1]
+				},
+				["damagetaken"] = 790136,
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -33825,9 +33966,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1444168804.214,
 						["amount"] = -13426,
+						["hp"] = 285644,
 						["spellid"] = 187671,
 						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["hp"] = 285644,
 					}, -- [14]
 					{
 						["absorb"] = 0,
@@ -33838,163 +33979,6 @@ SkadaPerCharDB = {
 						["ts"] = 1444168804.497,
 					}, -- [15]
 					["pos"] = 7,
-				},
-				["damage"] = 246715,
-				["damagespells"] = {
-					["Chi Burst"] = {
-						["min"] = 20222,
-						["multistrike"] = 4,
-						["critical"] = 3,
-						["hit"] = 5,
-						["totalhits"] = 8,
-						["id"] = 148135,
-						["max"] = 40445,
-						["damage"] = 246715,
-					},
-				},
-				["deaths"] = {
-					{
-						["ts"] = 1444168766.87009,
-						["log"] = {
-							{
-								["absorb"] = 0,
-								["amount"] = 0,
-								["srcname"] = "Dirtysock-AeriePeak",
-								["spellid"] = 114852,
-								["hp"] = 337680,
-								["ts"] = 1444168762.44801,
-							}, -- [1]
-							{
-								["absorb"] = 0,
-								["amount"] = 0,
-								["srcname"] = "Sunsooji-ScarletCrusade",
-								["spellid"] = 119611,
-								["hp"] = 337680,
-								["ts"] = 1444168763.55702,
-							}, -- [2]
-							{
-								["absorb"] = 0,
-								["amount"] = 0,
-								["srcname"] = "Babajenkins-Stormscale",
-								["spellid"] = 121129,
-								["hp"] = 337680,
-								["ts"] = 1444168764.97003,
-							}, -- [3]
-							{
-								["absorb"] = 0,
-								["amount"] = 0,
-								["srcname"] = "Sunsooji-ScarletCrusade",
-								["spellid"] = 119611,
-								["hp"] = 337680,
-								["ts"] = 1444168765.36704,
-							}, -- [4]
-							{
-								["ts"] = 1444168765.36705,
-								["amount"] = 0,
-								["srcname"] = "Sunsooji-ScarletCrusade",
-								["spellid"] = 119611,
-								["hp"] = 337680,
-								["absorb"] = 0,
-							}, -- [5]
-							{
-								["absorb"] = -12124,
-								["amount"] = -283293,
-								["srcname"] = "Supreme Lord Kazzak",
-								["spellid"] = 187664,
-								["hp"] = 54387,
-								["ts"] = 1444168765.52506,
-							}, -- [6]
-							{
-								["absorb"] = 0,
-								["amount"] = 1395,
-								["srcname"] = "Sunsooji-ScarletCrusade",
-								["spellid"] = 119611,
-								["hp"] = 55782,
-								["ts"] = 1444168766.20807,
-							}, -- [7]
-							{
-								["ts"] = 1444168766.53508,
-								["amount"] = -56862,
-								["spellid"] = 187671,
-								["srcname"] = "Mendokgb-Blade'sEdge",
-								["hp"] = 1,
-							}, -- [8]
-							{
-								["spellname"] = "Sunsooji dies",
-								["ts"] = 1444168766.87009,
-								["hp"] = 0,
-								["spellid"] = 41220,
-							}, -- [9]
-							{
-								["absorb"] = 0,
-								["amount"] = 0,
-								["srcname"] = "Sunsooji-ScarletCrusade",
-								["spellid"] = 119611,
-								["hp"] = 337680,
-								["ts"] = 1444168758.3791,
-							}, -- [10]
-							{
-								["absorb"] = 0,
-								["amount"] = 0,
-								["srcname"] = "Sunsooji-ScarletCrusade",
-								["spellid"] = 119611,
-								["hp"] = 337680,
-								["ts"] = 1444168758.37911,
-							}, -- [11]
-							{
-								["absorb"] = 0,
-								["amount"] = 0,
-								["srcname"] = "Sunsooji-ScarletCrusade",
-								["spellid"] = 119611,
-								["hp"] = 337680,
-								["ts"] = 1444168760.04812,
-							}, -- [12]
-							{
-								["absorb"] = 0,
-								["amount"] = 0,
-								["srcname"] = "Sunsooji-ScarletCrusade",
-								["spellid"] = 119611,
-								["hp"] = 337680,
-								["ts"] = 1444168760.04813,
-							}, -- [13]
-							{
-								["absorb"] = 0,
-								["amount"] = 0,
-								["srcname"] = "Sunsooji-ScarletCrusade",
-								["spellid"] = 119611,
-								["hp"] = 337680,
-								["ts"] = 1444168761.84614,
-							}, -- [14]
-							{
-								["absorb"] = 0,
-								["amount"] = 0,
-								["srcname"] = "Sunsooji-ScarletCrusade",
-								["spellid"] = 119611,
-								["hp"] = 337680,
-								["ts"] = 1444168761.84615,
-							}, -- [15]
-							["pos"] = 10,
-						},
-						["maxhp"] = 337680,
-					}, -- [1]
-				},
-				["damagetaken"] = 790136,
-				["power"] = {
-					[12] = {
-						["spells"] = {
-							[116694] = 5,
-							[115399] = 4,
-							[115151] = 12,
-							[129881] = 6,
-						},
-						["amount"] = 27,
-					},
-					[0] = {
-						["spells"] = {
-							[115294] = 15048,
-						},
-						["amount"] = 15048,
-					},
 				},
 				["id"] = "Player-118-062C8000",
 				["maxhp"] = 337680,
@@ -34537,7 +34521,23 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Sunsooji",
 				["alertCount"] = 0,
-				["shielding"] = 229290,
+				["power"] = {
+					[12] = {
+						["spells"] = {
+							[116694] = 5,
+							[115399] = 4,
+							[115151] = 12,
+							[129881] = 6,
+						},
+						["amount"] = 27,
+					},
+					[0] = {
+						["spells"] = {
+							[115294] = 15048,
+						},
+						["amount"] = 15048,
+					},
+				},
 				["healingspells"] = {
 					["Life Cocoon"] = {
 						["shielding"] = 229290,
@@ -34882,6 +34882,41 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 247636,
+				["shielding"] = 52511,
+				["id"] = "Player-12-011A6721",
+				["maxhp"] = 291600,
+				["healing"] = 67282,
+				["damagetakenspells"] = {
+					["Supreme Doom"] = {
+						["crushing"] = 0,
+						["id"] = 187471,
+						["damage"] = 247636,
+						["max"] = 247636,
+						["name"] = "Supreme Doom",
+						["min"] = 247636,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 25051,
+					},
+				},
+				["healed"] = {
+					["Player-12-011A6721"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Zerrastar-SilverHand",
+						["amount"] = 67282,
+						["class"] = "MAGE",
+						["shielding"] = 52511,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Zerrastar",
+				["alertCount"] = 0,
+				["power"] = {
+				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -35004,41 +35039,6 @@ SkadaPerCharDB = {
 						["ts"] = 1444168799.063,
 					}, -- [15]
 					["pos"] = 6,
-				},
-				["id"] = "Player-12-011A6721",
-				["maxhp"] = 291600,
-				["healing"] = 67282,
-				["damagetakenspells"] = {
-					["Supreme Doom"] = {
-						["crushing"] = 0,
-						["id"] = 187471,
-						["damage"] = 247636,
-						["max"] = 247636,
-						["name"] = "Supreme Doom",
-						["min"] = 247636,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 25051,
-					},
-				},
-				["healed"] = {
-					["Player-12-011A6721"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Zerrastar-SilverHand",
-						["amount"] = 67282,
-						["class"] = "MAGE",
-						["shielding"] = 52511,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Zerrastar",
-				["alertCount"] = 0,
-				["shielding"] = 52511,
-				["power"] = {
 				},
 				["alert"] = {
 				},
@@ -35229,6 +35229,53 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 48004,
+				["shielding"] = 0,
+				["id"] = "Player-123-035ABF2C",
+				["maxhp"] = 350040,
+				["healing"] = 13411,
+				["damagetakenspells"] = {
+					["Explosive Doom"] = {
+						["crushing"] = 0,
+						["id"] = 187632,
+						["damage"] = 48004,
+						["max"] = 48004,
+						["name"] = "Explosive Doom",
+						["min"] = 48004,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+				},
+				["healed"] = {
+					["Player-123-035ABF2C"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Madslock-Eldre'Thalas",
+						["amount"] = 13411,
+						["class"] = "WARLOCK",
+						["shielding"] = 0,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Madslock",
+				["alertCount"] = 0,
+				["power"] = {
+					[7] = {
+						["spells"] = {
+							[17941] = 6,
+						},
+						["amount"] = 6,
+					},
+					[0] = {
+						["spells"] = {
+							[1454] = 262530,
+						},
+						["amount"] = 262530,
+					},
+				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -35351,53 +35398,6 @@ SkadaPerCharDB = {
 						["ts"] = 1444168776.95,
 					}, -- [15]
 					["pos"] = 7,
-				},
-				["id"] = "Player-123-035ABF2C",
-				["maxhp"] = 350040,
-				["healing"] = 13411,
-				["damagetakenspells"] = {
-					["Explosive Doom"] = {
-						["crushing"] = 0,
-						["id"] = 187632,
-						["damage"] = 48004,
-						["max"] = 48004,
-						["name"] = "Explosive Doom",
-						["min"] = 48004,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-				},
-				["healed"] = {
-					["Player-123-035ABF2C"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Madslock-Eldre'Thalas",
-						["amount"] = 13411,
-						["class"] = "WARLOCK",
-						["shielding"] = 0,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Madslock",
-				["alertCount"] = 0,
-				["shielding"] = 0,
-				["power"] = {
-					[7] = {
-						["spells"] = {
-							[17941] = 6,
-						},
-						["amount"] = 6,
-					},
-					[0] = {
-						["spells"] = {
-							[1454] = 262530,
-						},
-						["amount"] = 262530,
-					},
 				},
 				["alert"] = {
 				},
@@ -35724,6 +35724,86 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 470301,
+				["shielding"] = 0,
+				["id"] = "Player-60-0A025686",
+				["maxhp"] = 334560,
+				["healing"] = 126625,
+				["damagetakenspells"] = {
+					["Fel Breath"] = {
+						["crushing"] = 0,
+						["id"] = 187664,
+						["damage"] = 466643,
+						["max"] = 236430,
+						["name"] = "Fel Breath",
+						["min"] = 230213,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["Mark of Kazzak"] = {
+						["crushing"] = 0,
+						["id"] = 187671,
+						["damage"] = 3658,
+						["max"] = 3658,
+						["name"] = "Mark of Kazzak",
+						["min"] = 3658,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+				},
+				["healed"] = {
+					["Creature-0-105-1464-15-15438-00001443BB"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Greater Fire Elemental",
+						["amount"] = 0,
+					},
+					["Creature-0-105-1464-15-29264-0000944444"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Spirit Raptor",
+						["amount"] = 0,
+					},
+					["Player-60-0A025686"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Totemlyraxh-Stormrage",
+						["amount"] = 126625,
+						["class"] = "SHAMAN",
+						["shielding"] = 0,
+					},
+					["Creature-0-105-1464-15-29264-00009443C0"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Spirit Raptor",
+						["amount"] = 0,
+					},
+					["Creature-0-105-1464-15-29264-0000144444"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Spirit Raptor",
+						["amount"] = 0,
+					},
+					["Creature-0-105-1464-15-29264-00001443C0"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Spirit Raptor",
+						["amount"] = 0,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Totemlyraxh",
+				["alertCount"] = 0,
+				["power"] = {
+				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -35808,9 +35888,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1444168780.59,
 						["amount"] = -3658,
+						["hp"] = 315762,
 						["spellid"] = 187671,
 						["srcname"] = "Barion-Thunderhorn",
-						["hp"] = 315762,
 					}, -- [11]
 					{
 						["absorb"] = 0,
@@ -35845,86 +35925,6 @@ SkadaPerCharDB = {
 						["ts"] = 1444168799.44,
 					}, -- [15]
 					["pos"] = 9,
-				},
-				["id"] = "Player-60-0A025686",
-				["maxhp"] = 334560,
-				["healing"] = 126625,
-				["damagetakenspells"] = {
-					["Fel Breath"] = {
-						["crushing"] = 0,
-						["id"] = 187664,
-						["damage"] = 466643,
-						["max"] = 236430,
-						["name"] = "Fel Breath",
-						["min"] = 230213,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 2,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Mark of Kazzak"] = {
-						["crushing"] = 0,
-						["id"] = 187671,
-						["damage"] = 3658,
-						["max"] = 3658,
-						["name"] = "Mark of Kazzak",
-						["min"] = 3658,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-				},
-				["healed"] = {
-					["Creature-0-105-1464-15-15438-00001443BB"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Greater Fire Elemental",
-						["amount"] = 0,
-					},
-					["Creature-0-105-1464-15-29264-00009443C0"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Spirit Raptor",
-						["amount"] = 0,
-					},
-					["Player-60-0A025686"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Totemlyraxh-Stormrage",
-						["amount"] = 126625,
-						["class"] = "SHAMAN",
-						["shielding"] = 0,
-					},
-					["Creature-0-105-1464-15-29264-00001443C0"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Spirit Raptor",
-						["amount"] = 0,
-					},
-					["Creature-0-105-1464-15-29264-0000144444"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Spirit Raptor",
-						["amount"] = 0,
-					},
-					["Creature-0-105-1464-15-29264-0000944444"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Spirit Raptor",
-						["amount"] = 0,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Totemlyraxh",
-				["alertCount"] = 0,
-				["shielding"] = 0,
-				["power"] = {
 				},
 				["alert"] = {
 				},
@@ -36091,6 +36091,56 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 57512,
+				["shielding"] = 0,
+				["id"] = "Player-85-071236E6",
+				["maxhp"] = 377520,
+				["healing"] = 0,
+				["damagetakenspells"] = {
+					["Explosive Doom"] = {
+						["crushing"] = 0,
+						["id"] = 187632,
+						["damage"] = 31830,
+						["max"] = 31830,
+						["name"] = "Explosive Doom",
+						["min"] = 31830,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 15835,
+					},
+					["Mark of Kazzak"] = {
+						["crushing"] = 0,
+						["id"] = 187671,
+						["damage"] = 25682,
+						["max"] = 15453,
+						["name"] = "Mark of Kazzak",
+						["min"] = 10229,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 2913,
+					},
+				},
+				["healed"] = {
+					["Player-85-071236E6"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Kneesaa-Shadowsong",
+						["amount"] = 0,
+						["class"] = "MAGE",
+						["shielding"] = 0,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Kneesaa",
+				["alertCount"] = 0,
+				["power"] = {
+				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -36213,56 +36263,6 @@ SkadaPerCharDB = {
 						["ts"] = 1444168755.832,
 					}, -- [15]
 					["pos"] = 4,
-				},
-				["id"] = "Player-85-071236E6",
-				["maxhp"] = 377520,
-				["healing"] = 0,
-				["damagetakenspells"] = {
-					["Explosive Doom"] = {
-						["crushing"] = 0,
-						["id"] = 187632,
-						["damage"] = 31830,
-						["max"] = 31830,
-						["name"] = "Explosive Doom",
-						["min"] = 31830,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 15835,
-					},
-					["Mark of Kazzak"] = {
-						["crushing"] = 0,
-						["id"] = 187671,
-						["damage"] = 25682,
-						["max"] = 15453,
-						["name"] = "Mark of Kazzak",
-						["min"] = 10229,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 2,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 2913,
-					},
-				},
-				["healed"] = {
-					["Player-85-071236E6"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Kneesaa-Shadowsong",
-						["amount"] = 0,
-						["class"] = "MAGE",
-						["shielding"] = 0,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Kneesaa",
-				["alertCount"] = 0,
-				["shielding"] = 0,
-				["power"] = {
 				},
 				["alert"] = {
 				},
@@ -36488,6 +36488,56 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 631376,
+				["shielding"] = 0,
+				["id"] = "Player-90-0057465A",
+				["maxhp"] = 321900,
+				["healing"] = 0,
+				["damagetakenspells"] = {
+					["Fel Breath"] = {
+						["crushing"] = 0,
+						["id"] = 187664,
+						["damage"] = 523863,
+						["max"] = 262687,
+						["name"] = "Fel Breath",
+						["min"] = 261176,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["Mark of Kazzak"] = {
+						["crushing"] = 0,
+						["id"] = 187671,
+						["damage"] = 107513,
+						["max"] = 62491,
+						["name"] = "Mark of Kazzak",
+						["min"] = 45022,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 7417,
+					},
+				},
+				["healed"] = {
+				},
+				["alertDamage"] = 0,
+				["name"] = "Eriaa",
+				["alertCount"] = 0,
+				["power"] = {
+					[2] = {
+						["spells"] = {
+							[77443] = 588,
+							[157722] = 180,
+						},
+						["amount"] = 768,
+					},
+				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -36611,56 +36661,6 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 4,
 				},
-				["id"] = "Player-90-0057465A",
-				["maxhp"] = 321900,
-				["healing"] = 0,
-				["damagetakenspells"] = {
-					["Fel Breath"] = {
-						["crushing"] = 0,
-						["id"] = 187664,
-						["damage"] = 523863,
-						["max"] = 262687,
-						["name"] = "Fel Breath",
-						["min"] = 261176,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 2,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Mark of Kazzak"] = {
-						["crushing"] = 0,
-						["id"] = 187671,
-						["damage"] = 107513,
-						["max"] = 62491,
-						["name"] = "Mark of Kazzak",
-						["min"] = 45022,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 2,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 7417,
-					},
-				},
-				["healed"] = {
-				},
-				["alertDamage"] = 0,
-				["name"] = "Eriaa",
-				["alertCount"] = 0,
-				["shielding"] = 0,
-				["power"] = {
-					[2] = {
-						["spells"] = {
-							[77443] = 588,
-							[157722] = 180,
-						},
-						["amount"] = 768,
-					},
-				},
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -36727,13 +36727,6 @@ SkadaPerCharDB = {
 						["uptime"] = 13,
 						["auratype"] = "BUFF",
 					},
-					["Archmage's Greater Incandescence"] = {
-						["name"] = "Archmage's Greater Incandescence",
-						["active"] = 0,
-						["id"] = 177176,
-						["uptime"] = 20,
-						["auratype"] = "BUFF",
-					},
 					["Artillery Strike"] = {
 						["name"] = "Artillery Strike",
 						["active"] = 19,
@@ -36746,6 +36739,13 @@ SkadaPerCharDB = {
 						["active"] = 0,
 						["id"] = 85499,
 						["uptime"] = 8,
+						["auratype"] = "BUFF",
+					},
+					["Archmage's Greater Incandescence"] = {
+						["name"] = "Archmage's Greater Incandescence",
+						["active"] = 0,
+						["id"] = 177176,
+						["uptime"] = 20,
 						["auratype"] = "BUFF",
 					},
 					["Hand of Sacrifice"] = {
@@ -36955,129 +36955,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 218809,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 13317,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 157982,
-						["hp"] = 366120,
-						["ts"] = 1444168776.95,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 157982,
-						["hp"] = 366120,
-						["ts"] = 1444168776.95,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 119952,
-						["hp"] = 366120,
-						["ts"] = 1444168800.284,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 419,
-						["srcname"] = "Sunsooji-ScarletCrusade",
-						["spellid"] = 119611,
-						["hp"] = 151915,
-						["ts"] = 1444168768.502,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 35295,
-						["srcname"] = "Dirtysock-AeriePeak",
-						["spellid"] = 19750,
-						["hp"] = 187210,
-						["ts"] = 1444168769.473,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 32529,
-						["srcname"] = "Kariaani-Anvilmar",
-						["spellid"] = 596,
-						["hp"] = 219739,
-						["ts"] = 1444168769.739,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 36765,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 114852,
-						["hp"] = 256504,
-						["ts"] = 1444168769.739,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 2790,
-						["srcname"] = "Sunsooji-ScarletCrusade",
-						["spellid"] = 119611,
-						["hp"] = 259294,
-						["ts"] = 1444168770.365,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 419,
-						["srcname"] = "Sunsooji-ScarletCrusade",
-						["spellid"] = 119611,
-						["hp"] = 259713,
-						["ts"] = 1444168770.365,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 1395,
-						["srcname"] = "Sunsooji-ScarletCrusade",
-						["spellid"] = 119611,
-						["hp"] = 261108,
-						["ts"] = 1444168771.208,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 7209,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 85222,
-						["hp"] = 268317,
-						["ts"] = 1444168772.074,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 41279,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 157982,
-						["hp"] = 309596,
-						["ts"] = 1444168772.219,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 1928,
-						["srcname"] = "Kariaani-Anvilmar",
-						["spellid"] = 120692,
-						["hp"] = 311524,
-						["ts"] = 1444168772.219,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 20639,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 157982,
-						["hp"] = 332163,
-						["ts"] = 1444168773.751,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 20640,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 157982,
-						["hp"] = 352803,
-						["ts"] = 1444168775.388,
-					}, -- [15]
-					["pos"] = 4,
-				},
+				["shielding"] = 1329583,
 				["id"] = "Player-1426-0767F6E9",
 				["maxhp"] = 366120,
 				["healing"] = 3978746,
@@ -37210,11 +37088,11 @@ SkadaPerCharDB = {
 						["class"] = "PALADIN",
 						["shielding"] = 0,
 					},
-					["Player-60-06A6FB3E"] = {
+					["Player-1175-06B15DF1"] = {
 						["role"] = "DAMAGER",
-						["name"] = "Sammun-Stormrage",
-						["amount"] = 111882,
-						["class"] = "HUNTER",
+						["name"] = "Altnumbersix-Trollbane",
+						["amount"] = 0,
+						["class"] = "WARLOCK",
 						["shielding"] = 0,
 					},
 					["Player-158-0849CCFA"] = {
@@ -37238,12 +37116,12 @@ SkadaPerCharDB = {
 						["class"] = "DRUID",
 						["shielding"] = 0,
 					},
-					["Player-52-063C1174"] = {
+					["Player-60-06A6FB3E"] = {
 						["role"] = "DAMAGER",
-						["name"] = "Minzy-Alleria",
-						["amount"] = 99427,
-						["class"] = "PRIEST",
-						["shielding"] = 40469,
+						["name"] = "Sammun-Stormrage",
+						["amount"] = 111882,
+						["class"] = "HUNTER",
+						["shielding"] = 0,
 					},
 					["Player-12-011A6721"] = {
 						["role"] = "DAMAGER",
@@ -37355,18 +37233,17 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["shielding"] = 0,
 					},
-					["Player-1175-06B15DF1"] = {
+					["Player-52-063C1174"] = {
 						["role"] = "DAMAGER",
-						["name"] = "Altnumbersix-Trollbane",
-						["amount"] = 0,
-						["class"] = "WARLOCK",
-						["shielding"] = 0,
+						["name"] = "Minzy-Alleria",
+						["amount"] = 99427,
+						["class"] = "PRIEST",
+						["shielding"] = 40469,
 					},
 				},
 				["alertDamage"] = 0,
 				["name"] = "Dirtysock",
 				["alertCount"] = 0,
-				["shielding"] = 1329583,
 				["power"] = {
 					[9] = {
 						["spells"] = {
@@ -37381,6 +37258,129 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 48520,
 					},
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 13317,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 157982,
+						["hp"] = 366120,
+						["ts"] = 1444168776.95,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 157982,
+						["hp"] = 366120,
+						["ts"] = 1444168776.95,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 119952,
+						["hp"] = 366120,
+						["ts"] = 1444168800.284,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 419,
+						["srcname"] = "Sunsooji-ScarletCrusade",
+						["spellid"] = 119611,
+						["hp"] = 151915,
+						["ts"] = 1444168768.502,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 35295,
+						["srcname"] = "Dirtysock-AeriePeak",
+						["spellid"] = 19750,
+						["hp"] = 187210,
+						["ts"] = 1444168769.473,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 32529,
+						["srcname"] = "Kariaani-Anvilmar",
+						["spellid"] = 596,
+						["hp"] = 219739,
+						["ts"] = 1444168769.739,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 36765,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 114852,
+						["hp"] = 256504,
+						["ts"] = 1444168769.739,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 2790,
+						["srcname"] = "Sunsooji-ScarletCrusade",
+						["spellid"] = 119611,
+						["hp"] = 259294,
+						["ts"] = 1444168770.365,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 419,
+						["srcname"] = "Sunsooji-ScarletCrusade",
+						["spellid"] = 119611,
+						["hp"] = 259713,
+						["ts"] = 1444168770.365,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 1395,
+						["srcname"] = "Sunsooji-ScarletCrusade",
+						["spellid"] = 119611,
+						["hp"] = 261108,
+						["ts"] = 1444168771.208,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 7209,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 85222,
+						["hp"] = 268317,
+						["ts"] = 1444168772.074,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 41279,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 157982,
+						["hp"] = 309596,
+						["ts"] = 1444168772.219,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 1928,
+						["srcname"] = "Kariaani-Anvilmar",
+						["spellid"] = 120692,
+						["hp"] = 311524,
+						["ts"] = 1444168772.219,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 20639,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 157982,
+						["hp"] = 332163,
+						["ts"] = 1444168773.751,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 20640,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 157982,
+						["hp"] = 352803,
+						["ts"] = 1444168775.388,
+					}, -- [15]
+					["pos"] = 4,
 				},
 				["alert"] = {
 				},
@@ -37588,6 +37588,32 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 0,
+				["shielding"] = 47518,
+				["id"] = "Player-1175-06B15DF1",
+				["maxhp"] = 375300,
+				["healing"] = 58982,
+				["damagetakenspells"] = {
+				},
+				["healed"] = {
+					["Player-1175-06B15DF1"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Altnumbersix-Trollbane",
+						["amount"] = 58982,
+						["class"] = "WARLOCK",
+						["shielding"] = 47518,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Altnumbersix",
+				["alertCount"] = 0,
+				["power"] = {
+					[14] = {
+						["spells"] = {
+							[105047] = 0,
+						},
+						["amount"] = 0,
+					},
+				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -37711,32 +37737,6 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 8,
 				},
-				["id"] = "Player-1175-06B15DF1",
-				["maxhp"] = 375300,
-				["healing"] = 58982,
-				["damagetakenspells"] = {
-				},
-				["healed"] = {
-					["Player-1175-06B15DF1"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Altnumbersix-Trollbane",
-						["amount"] = 58982,
-						["class"] = "WARLOCK",
-						["shielding"] = 47518,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Altnumbersix",
-				["alertCount"] = 0,
-				["shielding"] = 47518,
-				["power"] = {
-					[14] = {
-						["spells"] = {
-							[105047] = 0,
-						},
-						["amount"] = 0,
-					},
-				},
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -37831,8 +37831,7 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 487347,
 				["damage"] = 180275,
 				["damagespells"] = {
 					["Holy Prism"] = {
@@ -37924,9 +37923,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1444168766.5351,
 								["amount"] = -56723,
+								["hp"] = 1,
 								["spellid"] = 187671,
 								["srcname"] = "Mendokgb-Blade'sEdge",
-								["hp"] = 1,
 							}, -- [10]
 							{
 								["spellname"] = "Claudia dies",
@@ -37972,19 +37971,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 353862,
-				["power"] = {
-					[9] = {
-						["spells"] = {
-							[148976] = 26,
-						},
-						["amount"] = 26,
-					},
-					[0] = {
-						["spells"] = {
-							[88852] = 3880,
-						},
-						["amount"] = 3880,
-					},
+				["deathlog"] = {
 				},
 				["id"] = "Player-105-08062BDB",
 				["maxhp"] = 295500,
@@ -38044,18 +38031,19 @@ SkadaPerCharDB = {
 						["class"] = "DEATHKNIGHT",
 						["shielding"] = 70356,
 					},
+					["Player-1185-085AADBD"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Sixpointfive-Sen'jin",
+						["amount"] = 0,
+						["class"] = "SHAMAN",
+						["shielding"] = 0,
+					},
 					["Player-105-067E0470"] = {
 						["role"] = "HEALER",
 						["name"] = "Tagamausy-Blade'sEdge",
 						["amount"] = 0,
 						["class"] = "DRUID",
 						["shielding"] = 0,
-					},
-					["Player-105-067E5FAC"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Mendokgb-Blade'sEdge",
-						["amount"] = 0,
 					},
 					["Player-105-08062BDB"] = {
 						["role"] = "HEALER",
@@ -38251,18 +38239,30 @@ SkadaPerCharDB = {
 						["class"] = "DRUID",
 						["shielding"] = 14722,
 					},
-					["Player-1185-085AADBD"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Sixpointfive-Sen'jin",
-						["amount"] = 0,
-						["class"] = "SHAMAN",
+					["Player-105-067E5FAC"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Mendokgb-Blade'sEdge",
+						["amount"] = 0,
 					},
 				},
 				["alertDamage"] = 0,
 				["name"] = "Claudia",
 				["alertCount"] = 0,
-				["shielding"] = 487347,
+				["power"] = {
+					[9] = {
+						["spells"] = {
+							[148976] = 26,
+						},
+						["amount"] = 26,
+					},
+					[0] = {
+						["spells"] = {
+							[88852] = 3880,
+						},
+						["amount"] = 3880,
+					},
+				},
 				["healingspells"] = {
 					["Holy Light"] = {
 						["shielding"] = 0,
@@ -38552,6 +38552,70 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 544089,
+				["shielding"] = 0,
+				["id"] = "Player-76-08846B5E",
+				["maxhp"] = 424380,
+				["healing"] = 22932,
+				["damagetakenspells"] = {
+					["Explosive Doom"] = {
+						["crushing"] = 0,
+						["id"] = 187632,
+						["damage"] = 44424,
+						["max"] = 44424,
+						["name"] = "Explosive Doom",
+						["min"] = 44424,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 2668,
+					},
+					["Mark of Kazzak"] = {
+						["crushing"] = 0,
+						["id"] = 187671,
+						["damage"] = 499665,
+						["max"] = 85441,
+						["name"] = "Mark of Kazzak",
+						["min"] = 2445,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 38,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 18445,
+					},
+				},
+				["healed"] = {
+					["Player-76-08846B5E"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Hamtory-Sargeras",
+						["amount"] = 22932,
+						["class"] = "ROGUE",
+						["shielding"] = 0,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Hamtory",
+				["alertCount"] = 0,
+				["power"] = {
+					[4] = {
+						["spells"] = {
+							[51699] = 88,
+							[115190] = 38,
+						},
+						["amount"] = 126,
+					},
+					[3] = {
+						["spells"] = {
+							[98440] = 500,
+							[5171] = 323,
+						},
+						["amount"] = 823,
+					},
+				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -38675,70 +38739,6 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 10,
 				},
-				["id"] = "Player-76-08846B5E",
-				["maxhp"] = 424380,
-				["healing"] = 22932,
-				["damagetakenspells"] = {
-					["Explosive Doom"] = {
-						["crushing"] = 0,
-						["id"] = 187632,
-						["damage"] = 44424,
-						["max"] = 44424,
-						["name"] = "Explosive Doom",
-						["min"] = 44424,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 2668,
-					},
-					["Mark of Kazzak"] = {
-						["crushing"] = 0,
-						["id"] = 187671,
-						["damage"] = 499665,
-						["max"] = 85441,
-						["name"] = "Mark of Kazzak",
-						["min"] = 2445,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 38,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 18445,
-					},
-				},
-				["healed"] = {
-					["Player-76-08846B5E"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Hamtory-Sargeras",
-						["amount"] = 22932,
-						["class"] = "ROGUE",
-						["shielding"] = 0,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Hamtory",
-				["alertCount"] = 0,
-				["shielding"] = 0,
-				["power"] = {
-					[4] = {
-						["spells"] = {
-							[51699] = 88,
-							[115190] = 38,
-						},
-						["amount"] = 126,
-					},
-					[3] = {
-						["spells"] = {
-							[98440] = 500,
-							[5171] = 323,
-						},
-						["amount"] = 823,
-					},
-				},
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -38756,12 +38756,12 @@ SkadaPerCharDB = {
 						["uptime"] = 9,
 						["auratype"] = "BUFF",
 					},
-					["Healing Stream Totem"] = {
-						["name"] = "Healing Stream Totem",
+					["Mark of Kazzak"] = {
+						["name"] = "Mark of Kazzak",
 						["active"] = 0,
-						["id"] = 5394,
-						["uptime"] = 175,
-						["auratype"] = "BUFF",
+						["id"] = 187668,
+						["uptime"] = 15,
+						["auratype"] = "DEBUFF",
 					},
 					["Healing Tide Totem"] = {
 						["name"] = "Healing Tide Totem",
@@ -38805,12 +38805,12 @@ SkadaPerCharDB = {
 						["uptime"] = 180,
 						["auratype"] = "BUFF",
 					},
-					["Mark of Kazzak"] = {
-						["name"] = "Mark of Kazzak",
+					["Ascendance"] = {
+						["name"] = "Ascendance",
 						["active"] = 0,
-						["id"] = 187668,
+						["id"] = 114052,
 						["uptime"] = 15,
-						["auratype"] = "DEBUFF",
+						["auratype"] = "BUFF",
 					},
 					["Unleash Life"] = {
 						["name"] = "Unleash Life",
@@ -38826,11 +38826,11 @@ SkadaPerCharDB = {
 						["uptime"] = 179,
 						["auratype"] = "BUFF",
 					},
-					["Ascendance"] = {
-						["name"] = "Ascendance",
+					["Healing Stream Totem"] = {
+						["name"] = "Healing Stream Totem",
 						["active"] = 0,
-						["id"] = 114052,
-						["uptime"] = 15,
+						["id"] = 5394,
+						["uptime"] = 175,
 						["auratype"] = "BUFF",
 					},
 					["Grace of Air"] = {
@@ -39117,129 +39117,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 280389,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Zonvra-Ragnaros",
-						["spellid"] = 143924,
-						["hp"] = 322860,
-						["ts"] = 1444168800.651,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Zonvra-Ragnaros",
-						["spellid"] = 143924,
-						["hp"] = 322860,
-						["ts"] = 1444168801.934,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Zonvra-Ragnaros",
-						["spellid"] = 143924,
-						["hp"] = 322860,
-						["ts"] = 1444168803.217,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Zonvra-Ragnaros",
-						["spellid"] = 143924,
-						["hp"] = 322860,
-						["ts"] = 1444168804.497,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Zonvra-Ragnaros",
-						["spellid"] = 143924,
-						["hp"] = 322860,
-						["ts"] = 1444168805.547,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Zonvra-Ragnaros",
-						["spellid"] = 55533,
-						["hp"] = 322860,
-						["ts"] = 1444168777.741,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Zonvra-Ragnaros",
-						["spellid"] = 143924,
-						["hp"] = 322860,
-						["ts"] = 1444168778.762,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Zonvra-Ragnaros",
-						["spellid"] = 143924,
-						["hp"] = 322860,
-						["ts"] = 1444168779.912,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Zonvra-Ragnaros",
-						["spellid"] = 55533,
-						["hp"] = 322860,
-						["ts"] = 1444168780.025,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Zonvra-Ragnaros",
-						["spellid"] = 55533,
-						["hp"] = 322860,
-						["ts"] = 1444168780.025,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Zonvra-Ragnaros",
-						["spellid"] = 143924,
-						["hp"] = 322860,
-						["ts"] = 1444168781.167,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Zonvra-Ragnaros",
-						["spellid"] = 55533,
-						["hp"] = 322860,
-						["ts"] = 1444168782.155,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Zonvra-Ragnaros",
-						["spellid"] = 55533,
-						["hp"] = 322860,
-						["ts"] = 1444168782.155,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Zonvra-Ragnaros",
-						["spellid"] = 143924,
-						["hp"] = 322860,
-						["ts"] = 1444168782.39,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Zonvra-Ragnaros",
-						["spellid"] = 143924,
-						["hp"] = 322860,
-						["ts"] = 1444168799.44,
-					}, -- [15]
-					["pos"] = 6,
-				},
+				["shielding"] = 26953,
 				["id"] = "Player-1427-0635D125",
 				["maxhp"] = 322860,
 				["healing"] = 1831699,
@@ -39841,7 +39719,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Zonvra",
 				["alertCount"] = 0,
-				["shielding"] = 26953,
 				["power"] = {
 					[0] = {
 						["spells"] = {
@@ -39849,6 +39726,129 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 10175,
 					},
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Zonvra-Ragnaros",
+						["spellid"] = 143924,
+						["hp"] = 322860,
+						["ts"] = 1444168800.651,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Zonvra-Ragnaros",
+						["spellid"] = 143924,
+						["hp"] = 322860,
+						["ts"] = 1444168801.934,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Zonvra-Ragnaros",
+						["spellid"] = 143924,
+						["hp"] = 322860,
+						["ts"] = 1444168803.217,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Zonvra-Ragnaros",
+						["spellid"] = 143924,
+						["hp"] = 322860,
+						["ts"] = 1444168804.497,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Zonvra-Ragnaros",
+						["spellid"] = 143924,
+						["hp"] = 322860,
+						["ts"] = 1444168805.547,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Zonvra-Ragnaros",
+						["spellid"] = 55533,
+						["hp"] = 322860,
+						["ts"] = 1444168777.741,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Zonvra-Ragnaros",
+						["spellid"] = 143924,
+						["hp"] = 322860,
+						["ts"] = 1444168778.762,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Zonvra-Ragnaros",
+						["spellid"] = 143924,
+						["hp"] = 322860,
+						["ts"] = 1444168779.912,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Zonvra-Ragnaros",
+						["spellid"] = 55533,
+						["hp"] = 322860,
+						["ts"] = 1444168780.025,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Zonvra-Ragnaros",
+						["spellid"] = 55533,
+						["hp"] = 322860,
+						["ts"] = 1444168780.025,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Zonvra-Ragnaros",
+						["spellid"] = 143924,
+						["hp"] = 322860,
+						["ts"] = 1444168781.167,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Zonvra-Ragnaros",
+						["spellid"] = 55533,
+						["hp"] = 322860,
+						["ts"] = 1444168782.155,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Zonvra-Ragnaros",
+						["spellid"] = 55533,
+						["hp"] = 322860,
+						["ts"] = 1444168782.155,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Zonvra-Ragnaros",
+						["spellid"] = 143924,
+						["hp"] = 322860,
+						["ts"] = 1444168782.39,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Zonvra-Ragnaros",
+						["spellid"] = 143924,
+						["hp"] = 322860,
+						["ts"] = 1444168799.44,
+					}, -- [15]
+					["pos"] = 6,
 				},
 				["alert"] = {
 				},
@@ -40293,129 +40293,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 157982,
-						["hp"] = 345420,
-						["ts"] = 1444168776.95,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Sixpointfive-Sen'jin",
-						["spellid"] = 137808,
-						["hp"] = 345420,
-						["ts"] = 1444168777.741,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Sixpointfive-Sen'jin",
-						["spellid"] = 137808,
-						["hp"] = 345420,
-						["ts"] = 1444168779.912,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Sixpointfive-Sen'jin",
-						["spellid"] = 137808,
-						["hp"] = 345420,
-						["ts"] = 1444168782.099,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 119952,
-						["hp"] = 345420,
-						["ts"] = 1444168800.284,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 119952,
-						["hp"] = 345420,
-						["ts"] = 1444168800.284,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Sixpointfive-Sen'jin",
-						["spellid"] = 137808,
-						["hp"] = 345420,
-						["ts"] = 1444168800.464,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Sixpointfive-Sen'jin",
-						["spellid"] = 137808,
-						["hp"] = 345420,
-						["ts"] = 1444168802.626,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 48438,
-						["hp"] = 345420,
-						["ts"] = 1444168804.497,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 48438,
-						["hp"] = 345420,
-						["ts"] = 1444168805.17,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 48438,
-						["hp"] = 345420,
-						["ts"] = 1444168806.013,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 48438,
-						["hp"] = 345420,
-						["ts"] = 1444168806.821,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 157982,
-						["hp"] = 345420,
-						["ts"] = 1444168773.751,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 157982,
-						["hp"] = 345420,
-						["ts"] = 1444168775.388,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Sixpointfive-Sen'jin",
-						["spellid"] = 137808,
-						["hp"] = 345420,
-						["ts"] = 1444168775.59,
-					}, -- [15]
-					["pos"] = 13,
-				},
+				["shielding"] = 0,
 				["id"] = "Player-1185-085AADBD",
 				["maxhp"] = 345420,
 				["healing"] = 2097,
@@ -40615,8 +40493,130 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Sixpointfive",
 				["alertCount"] = 0,
-				["shielding"] = 0,
 				["power"] = {
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 157982,
+						["hp"] = 345420,
+						["ts"] = 1444168776.95,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Sixpointfive-Sen'jin",
+						["spellid"] = 137808,
+						["hp"] = 345420,
+						["ts"] = 1444168777.741,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Sixpointfive-Sen'jin",
+						["spellid"] = 137808,
+						["hp"] = 345420,
+						["ts"] = 1444168779.912,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Sixpointfive-Sen'jin",
+						["spellid"] = 137808,
+						["hp"] = 345420,
+						["ts"] = 1444168782.099,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 119952,
+						["hp"] = 345420,
+						["ts"] = 1444168800.284,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 119952,
+						["hp"] = 345420,
+						["ts"] = 1444168800.284,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Sixpointfive-Sen'jin",
+						["spellid"] = 137808,
+						["hp"] = 345420,
+						["ts"] = 1444168800.464,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Sixpointfive-Sen'jin",
+						["spellid"] = 137808,
+						["hp"] = 345420,
+						["ts"] = 1444168802.626,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 48438,
+						["hp"] = 345420,
+						["ts"] = 1444168804.497,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 48438,
+						["hp"] = 345420,
+						["ts"] = 1444168805.17,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 48438,
+						["hp"] = 345420,
+						["ts"] = 1444168806.013,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 48438,
+						["hp"] = 345420,
+						["ts"] = 1444168806.821,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 157982,
+						["hp"] = 345420,
+						["ts"] = 1444168773.751,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 157982,
+						["hp"] = 345420,
+						["ts"] = 1444168775.388,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Sixpointfive-Sen'jin",
+						["spellid"] = 137808,
+						["hp"] = 345420,
+						["ts"] = 1444168775.59,
+					}, -- [15]
+					["pos"] = 13,
 				},
 				["alert"] = {
 				},
@@ -40929,6 +40929,55 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 235022,
+				["shielding"] = 0,
+				["id"] = "Player-1426-07677058",
+				["maxhp"] = 356340,
+				["healing"] = 47740,
+				["damagetakenspells"] = {
+					["Mark of Kazzak"] = {
+						["crushing"] = 0,
+						["id"] = 187671,
+						["damage"] = 235022,
+						["max"] = 45665,
+						["name"] = "Mark of Kazzak",
+						["min"] = 598,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 22,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 36602,
+					},
+				},
+				["healed"] = {
+					["Player-1426-07677058"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Wulm-AeriePeak",
+						["amount"] = 47740,
+						["class"] = "ROGUE",
+						["shielding"] = 0,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Wulm",
+				["alertCount"] = 0,
+				["power"] = {
+					[3] = {
+						["spells"] = {
+							[35546] = 1065,
+							[98440] = 600,
+						},
+						["amount"] = 1665,
+					},
+					[4] = {
+						["spells"] = {
+							[139546] = 23,
+							[115190] = 31,
+						},
+						["amount"] = 54,
+					},
+				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -41013,9 +41062,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1444168780.59,
 						["amount"] = -6507,
+						["hp"] = 349833,
 						["spellid"] = 187671,
 						["srcname"] = "Barion-Thunderhorn",
-						["hp"] = 349833,
 					}, -- [11]
 					{
 						["absorb"] = 0,
@@ -41036,9 +41085,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1444168781.787,
 						["amount"] = -2206,
+						["hp"] = 350045,
 						["spellid"] = 187671,
 						["srcname"] = "Barion-Thunderhorn",
-						["hp"] = 350045,
 					}, -- [14]
 					{
 						["absorb"] = 0,
@@ -41049,55 +41098,6 @@ SkadaPerCharDB = {
 						["ts"] = 1444168782.39,
 					}, -- [15]
 					["pos"] = 10,
-				},
-				["id"] = "Player-1426-07677058",
-				["maxhp"] = 356340,
-				["healing"] = 47740,
-				["damagetakenspells"] = {
-					["Mark of Kazzak"] = {
-						["crushing"] = 0,
-						["id"] = 187671,
-						["damage"] = 235022,
-						["max"] = 45665,
-						["name"] = "Mark of Kazzak",
-						["min"] = 598,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 22,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 36602,
-					},
-				},
-				["healed"] = {
-					["Player-1426-07677058"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Wulm-AeriePeak",
-						["amount"] = 47740,
-						["class"] = "ROGUE",
-						["shielding"] = 0,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Wulm",
-				["alertCount"] = 0,
-				["shielding"] = 0,
-				["power"] = {
-					[3] = {
-						["spells"] = {
-							[35546] = 1065,
-							[98440] = 600,
-						},
-						["amount"] = 1665,
-					},
-					[4] = {
-						["spells"] = {
-							[139546] = 23,
-							[115190] = 31,
-						},
-						["amount"] = 54,
-					},
 				},
 				["alert"] = {
 				},
@@ -41242,73 +41242,7 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 48,
-						["srcname"] = "Tagamausy-Blade'sEdge",
-						["spellid"] = 143924,
-						["hp"] = 49,
-						["ts"] = 1444168770.591,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 42,
-						["srcname"] = "Tagamausy-Blade'sEdge",
-						["spellid"] = 143924,
-						["hp"] = 91,
-						["ts"] = 1444168771.691,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Tagamausy-Blade'sEdge",
-						["spellid"] = 143924,
-						["hp"] = 256980,
-						["ts"] = 1444168800.651,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Tagamausy-Blade'sEdge",
-						["spellid"] = 143924,
-						["hp"] = 256980,
-						["ts"] = 1444168801.934,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Tagamausy-Blade'sEdge",
-						["spellid"] = 143924,
-						["hp"] = 256980,
-						["ts"] = 1444168803.217,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 82327,
-						["hp"] = 256980,
-						["ts"] = 1444168803.329,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Tagamausy-Blade'sEdge",
-						["spellid"] = 143924,
-						["hp"] = 256980,
-						["ts"] = 1444168805.547,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Tagamausy-Blade'sEdge",
-						["spellid"] = 143924,
-						["hp"] = 256980,
-						["ts"] = 1444168806.719,
-					}, -- [8]
-					["pos"] = 9,
-				},
+				["shielding"] = 0,
 				["damage"] = 51197,
 				["damagespells"] = {
 					["Nature's Vigil"] = {
@@ -41456,7 +41390,72 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 1084556,
-				["power"] = {
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 48,
+						["srcname"] = "Tagamausy-Blade'sEdge",
+						["spellid"] = 143924,
+						["hp"] = 49,
+						["ts"] = 1444168770.591,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 42,
+						["srcname"] = "Tagamausy-Blade'sEdge",
+						["spellid"] = 143924,
+						["hp"] = 91,
+						["ts"] = 1444168771.691,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Tagamausy-Blade'sEdge",
+						["spellid"] = 143924,
+						["hp"] = 256980,
+						["ts"] = 1444168800.651,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Tagamausy-Blade'sEdge",
+						["spellid"] = 143924,
+						["hp"] = 256980,
+						["ts"] = 1444168801.934,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Tagamausy-Blade'sEdge",
+						["spellid"] = 143924,
+						["hp"] = 256980,
+						["ts"] = 1444168803.217,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 82327,
+						["hp"] = 256980,
+						["ts"] = 1444168803.329,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Tagamausy-Blade'sEdge",
+						["spellid"] = 143924,
+						["hp"] = 256980,
+						["ts"] = 1444168805.547,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Tagamausy-Blade'sEdge",
+						["spellid"] = 143924,
+						["hp"] = 256980,
+						["ts"] = 1444168806.719,
+					}, -- [8]
+					["pos"] = 9,
 				},
 				["id"] = "Player-105-067E0470",
 				["maxhp"] = 262860,
@@ -41719,11 +41718,11 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["shielding"] = 0,
 					},
-					["Player-1175-06B15DF1"] = {
+					["Player-52-063C1174"] = {
 						["role"] = "DAMAGER",
-						["name"] = "Altnumbersix-Trollbane",
+						["name"] = "Minzy-Alleria",
 						["amount"] = 0,
-						["class"] = "WARLOCK",
+						["class"] = "PRIEST",
 						["shielding"] = 0,
 					},
 					["Creature-0-1071-1464-9-86927-0000144190"] = {
@@ -41766,11 +41765,11 @@ SkadaPerCharDB = {
 						["class"] = "DRUID",
 						["shielding"] = 0,
 					},
-					["Player-60-06A6FB3E"] = {
+					["Player-1175-06B15DF1"] = {
 						["role"] = "DAMAGER",
-						["name"] = "Sammun-Stormrage",
+						["name"] = "Altnumbersix-Trollbane",
 						["amount"] = 0,
-						["class"] = "HUNTER",
+						["class"] = "WARLOCK",
 						["shielding"] = 0,
 					},
 					["Player-105-057EFF38"] = {
@@ -41807,11 +41806,11 @@ SkadaPerCharDB = {
 						["class"] = "PRIEST",
 						["shielding"] = 0,
 					},
-					["Player-52-063C1174"] = {
+					["Player-60-06A6FB3E"] = {
 						["role"] = "DAMAGER",
-						["name"] = "Minzy-Alleria",
+						["name"] = "Sammun-Stormrage",
 						["amount"] = 0,
-						["class"] = "PRIEST",
+						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
 					["Creature-0-52-1464-15-86927-0000144202"] = {
@@ -41890,7 +41889,8 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Tagamausy",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 					["Nature's Vigil"] = {
 						["shielding"] = 0,
@@ -42148,49 +42148,7 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 8127,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 187268,
-						["hp"] = 170787,
-						["ts"] = 1444168803.409,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 44014,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 8936,
-						["hp"] = 217080,
-						["ts"] = 1444168805.42,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 13204,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 8936,
-						["hp"] = 230284,
-						["ts"] = 1444168805.42,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 5867,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 85222,
-						["hp"] = 236151,
-						["ts"] = 1444168806.248,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 880,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 85222,
-						["hp"] = 237031,
-						["ts"] = 1444168806.248,
-					}, -- [5]
-					["pos"] = 6,
-				},
+				["shielding"] = 638824,
 				["damage"] = 1049619,
 				["damagespells"] = {
 					["Holy Prism"] = {
@@ -42326,23 +42284,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1444168779.30207,
 								["amount"] = -12563,
+								["hp"] = 270826,
 								["spellid"] = 187671,
 								["srcname"] = "Mendokgb-Blade'sEdge",
-								["hp"] = 270826,
 							}, -- [7]
 							{
 								["ts"] = 1444168779.30208,
 								["amount"] = -17122,
+								["hp"] = 253704,
 								["spellid"] = 187671,
 								["srcname"] = "Mendokgb-Blade'sEdge",
-								["hp"] = 253704,
 							}, -- [8]
 							{
 								["ts"] = 1444168779.39809,
 								["amount"] = -75532,
+								["hp"] = 178172,
 								["spellid"] = 187671,
 								["srcname"] = "Mendokgb-Blade'sEdge",
-								["hp"] = 178172,
 							}, -- [9]
 							{
 								["absorb"] = 0,
@@ -42363,9 +42321,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1444168780.02512,
 								["amount"] = -38043,
+								["hp"] = 145450,
 								["spellid"] = 187671,
 								["srcname"] = "Barion-Thunderhorn",
-								["hp"] = 145450,
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -42386,9 +42344,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1444168780.59015,
 								["amount"] = -139606,
+								["hp"] = 1,
 								["spellid"] = 187471,
 								["srcname"] = "Supreme Lord Kazzak",
-								["hp"] = 1,
 							}, -- [15]
 							["pos"] = 2,
 						},
@@ -42396,15 +42354,48 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 473440,
-				["power"] = {
-					[9] = {
-						["spells"] = {
-							[35395] = 1,
-							[138248] = 6,
-							[148976] = 23,
-						},
-						["amount"] = 30,
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 8127,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 187268,
+						["hp"] = 170787,
+						["ts"] = 1444168803.409,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 44014,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 8936,
+						["hp"] = 217080,
+						["ts"] = 1444168805.42,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 13204,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 8936,
+						["hp"] = 230284,
+						["ts"] = 1444168805.42,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 5867,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 85222,
+						["hp"] = 236151,
+						["ts"] = 1444168806.248,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 880,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 85222,
+						["hp"] = 237031,
+						["ts"] = 1444168806.248,
+					}, -- [5]
+					["pos"] = 6,
 				},
 				["id"] = "Player-90-05E9E07F",
 				["maxhp"] = 357840,
@@ -42482,11 +42473,11 @@ SkadaPerCharDB = {
 						["class"] = "MONK",
 						["shielding"] = 19728,
 					},
-					["Player-1175-06B15DF1"] = {
+					["Player-60-06A6FB3E"] = {
 						["role"] = "DAMAGER",
-						["name"] = "Altnumbersix-Trollbane",
+						["name"] = "Sammun-Stormrage",
 						["amount"] = 0,
-						["class"] = "WARLOCK",
+						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
 					["Player-105-057EFF38"] = {
@@ -42537,12 +42528,12 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["shielding"] = 0,
 					},
-					["Player-52-063C1174"] = {
+					["Player-1175-06B15DF1"] = {
 						["role"] = "DAMAGER",
-						["name"] = "Minzy-Alleria",
-						["amount"] = 50624,
-						["class"] = "PRIEST",
-						["shielding"] = 8359,
+						["name"] = "Altnumbersix-Trollbane",
+						["amount"] = 0,
+						["class"] = "WARLOCK",
+						["shielding"] = 0,
 					},
 					["Player-12-011A6721"] = {
 						["role"] = "DAMAGER",
@@ -42635,12 +42626,12 @@ SkadaPerCharDB = {
 						["class"] = "ROGUE",
 						["shielding"] = 35846,
 					},
-					["Player-60-06A6FB3E"] = {
+					["Player-52-063C1174"] = {
 						["role"] = "DAMAGER",
-						["name"] = "Sammun-Stormrage",
-						["amount"] = 0,
-						["class"] = "HUNTER",
-						["shielding"] = 0,
+						["name"] = "Minzy-Alleria",
+						["amount"] = 50624,
+						["class"] = "PRIEST",
+						["shielding"] = 8359,
 					},
 					["Player-106-057848C5"] = {
 						["role"] = "DAMAGER",
@@ -42667,7 +42658,16 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Warliky",
 				["alertCount"] = 0,
-				["shielding"] = 638824,
+				["power"] = {
+					[9] = {
+						["spells"] = {
+							[35395] = 1,
+							[138248] = 6,
+							[148976] = 23,
+						},
+						["amount"] = 30,
+					},
+				},
 				["healingspells"] = {
 					["Daybreak"] = {
 						["shielding"] = 0,
@@ -42939,15 +42939,13 @@ SkadaPerCharDB = {
 						["max"] = 3301,
 						["damage"] = 223078,
 					},
-					["Crusader Strike"] = {
-						["min"] = 7704,
-						["multistrike"] = 4,
-						["critical"] = 4,
-						["hit"] = 29,
-						["totalhits"] = 33,
-						["id"] = 35395,
-						["max"] = 18466,
-						["damage"] = 323764,
+					["Final Verdict"] = {
+						["min"] = 24236,
+						["hit"] = 4,
+						["totalhits"] = 4,
+						["id"] = 157048,
+						["max"] = 30838,
+						["damage"] = 108263,
 					},
 					["Execution Sentence"] = {
 						["min"] = 2216,
@@ -42959,6 +42957,16 @@ SkadaPerCharDB = {
 						["max"] = 26122,
 						["damage"] = 160671,
 					},
+					["Crusader Strike"] = {
+						["min"] = 7704,
+						["multistrike"] = 4,
+						["critical"] = 4,
+						["hit"] = 29,
+						["totalhits"] = 33,
+						["id"] = 35395,
+						["max"] = 18466,
+						["damage"] = 323764,
+					},
 					["Hand of Light"] = {
 						["min"] = 1223,
 						["hit"] = 87,
@@ -42966,14 +42974,6 @@ SkadaPerCharDB = {
 						["id"] = 96172,
 						["max"] = 24948,
 						["damage"] = 637525,
-					},
-					["Final Verdict"] = {
-						["min"] = 24236,
-						["hit"] = 4,
-						["totalhits"] = 4,
-						["id"] = 157048,
-						["max"] = 30838,
-						["damage"] = 108263,
 					},
 					["Attack"] = {
 						["min"] = 6883,
@@ -42988,6 +42988,58 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 505037,
+				["shielding"] = 0,
+				["id"] = "Player-158-0239183B",
+				["maxhp"] = 316800,
+				["healing"] = 0,
+				["damagetakenspells"] = {
+					["Fel Breath"] = {
+						["crushing"] = 0,
+						["id"] = 187664,
+						["damage"] = 234630,
+						["max"] = 234630,
+						["name"] = "Fel Breath",
+						["min"] = 234630,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 27552,
+					},
+					["Mark of Kazzak"] = {
+						["crushing"] = 0,
+						["id"] = 187671,
+						["damage"] = 270407,
+						["max"] = 41551,
+						["name"] = "Mark of Kazzak",
+						["min"] = 454,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 21,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 22617,
+					},
+				},
+				["healed"] = {
+				},
+				["alertDamage"] = 0,
+				["name"] = "Ellwina",
+				["alertCount"] = 0,
+				["power"] = {
+					[9] = {
+						["spells"] = {
+							[147715] = 13,
+							[35395] = 33,
+							[111528] = 22,
+							[141459] = 20,
+						},
+						["amount"] = 88,
+					},
+				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -43016,16 +43068,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1444168780.154,
 						["amount"] = -30142,
+						["hp"] = 239300,
 						["spellid"] = 187671,
 						["srcname"] = "Barion-Thunderhorn",
-						["hp"] = 239300,
 					}, -- [4]
 					{
 						["ts"] = 1444168780.59,
 						["amount"] = -5741,
+						["hp"] = 233559,
 						["spellid"] = 187671,
 						["srcname"] = "Barion-Thunderhorn",
-						["hp"] = 233559,
 					}, -- [5]
 					{
 						["absorb"] = 0,
@@ -43078,23 +43130,23 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1444168803.409,
 						["amount"] = -3271,
+						["hp"] = 313529,
 						["spellid"] = 187671,
 						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["hp"] = 313529,
 					}, -- [12]
 					{
 						["ts"] = 1444168803.505,
 						["amount"] = -41551,
+						["hp"] = 271978,
 						["spellid"] = 187671,
 						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["hp"] = 271978,
 					}, -- [13]
 					{
 						["ts"] = 1444168804.214,
 						["amount"] = -11775,
+						["hp"] = 260203,
 						["spellid"] = 187671,
 						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["hp"] = 260203,
 					}, -- [14]
 					{
 						["absorb"] = 0,
@@ -43105,58 +43157,6 @@ SkadaPerCharDB = {
 						["ts"] = 1444168806.248,
 					}, -- [15]
 					["pos"] = 1,
-				},
-				["id"] = "Player-158-0239183B",
-				["maxhp"] = 316800,
-				["healing"] = 0,
-				["damagetakenspells"] = {
-					["Fel Breath"] = {
-						["crushing"] = 0,
-						["id"] = 187664,
-						["damage"] = 234630,
-						["max"] = 234630,
-						["name"] = "Fel Breath",
-						["min"] = 234630,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 27552,
-					},
-					["Mark of Kazzak"] = {
-						["crushing"] = 0,
-						["id"] = 187671,
-						["damage"] = 270407,
-						["max"] = 41551,
-						["name"] = "Mark of Kazzak",
-						["min"] = 454,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 21,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 22617,
-					},
-				},
-				["healed"] = {
-				},
-				["alertDamage"] = 0,
-				["name"] = "Ellwina",
-				["alertCount"] = 0,
-				["shielding"] = 0,
-				["power"] = {
-					[9] = {
-						["spells"] = {
-							[147715] = 13,
-							[35395] = 33,
-							[111528] = 22,
-							[141459] = 20,
-						},
-						["amount"] = 88,
-					},
 				},
 				["alert"] = {
 				},
@@ -43186,10 +43186,10 @@ SkadaPerCharDB = {
 						["damage"] = 2681836,
 					},
 				},
-				["shielding"] = 0,
-				["damagetaken"] = 0,
-				["deathlog"] = {
+				["power"] = {
 				},
+				["damagetaken"] = 0,
+				["shielding"] = 0,
 				["id"] = "Bloodmane Earthbinder",
 				["maxhp"] = 0,
 				["healing"] = 0,
@@ -43200,7 +43200,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Bloodmane Earthbinder",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 				},
@@ -43223,10 +43223,10 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["shielding"] = 0,
-				["damagetaken"] = 0,
-				["deathlog"] = {
+				["power"] = {
 				},
+				["damagetaken"] = 0,
+				["shielding"] = 0,
 				["id"] = "Creature-0-1426-1464-16-86964-00001441A9",
 				["maxhp"] = 0,
 				["healing"] = 0,
@@ -43243,7 +43243,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Bloodmane Earthbinder",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 					["Leech"] = {
@@ -43440,6 +43440,62 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 950849,
+				["shielding"] = 159981,
+				["id"] = "Player-106-057848C5",
+				["maxhp"] = 255600,
+				["healing"] = 223820,
+				["damagetakenspells"] = {
+					["Supreme Doom"] = {
+						["crushing"] = 0,
+						["id"] = 187471,
+						["damage"] = 444244,
+						["max"] = 230819,
+						["name"] = "Supreme Doom",
+						["min"] = 213425,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 59286,
+					},
+					["Fel Breath"] = {
+						["crushing"] = 0,
+						["id"] = 187664,
+						["damage"] = 506605,
+						["max"] = 253344,
+						["name"] = "Fel Breath",
+						["min"] = 253261,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 85825,
+					},
+				},
+				["healed"] = {
+					["Player-106-057848C5"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Britnèyfears-Aggramar",
+						["amount"] = 223820,
+						["class"] = "WARLOCK",
+						["shielding"] = 159981,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Britnèyfears",
+				["alertCount"] = 0,
+				["power"] = {
+					[14] = {
+						["spells"] = {
+							[105047] = 2,
+						},
+						["amount"] = 2,
+					},
+				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -43563,62 +43619,6 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 2,
 				},
-				["id"] = "Player-106-057848C5",
-				["maxhp"] = 255600,
-				["healing"] = 223820,
-				["damagetakenspells"] = {
-					["Supreme Doom"] = {
-						["crushing"] = 0,
-						["id"] = 187471,
-						["damage"] = 444244,
-						["max"] = 230819,
-						["name"] = "Supreme Doom",
-						["min"] = 213425,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 2,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 59286,
-					},
-					["Fel Breath"] = {
-						["crushing"] = 0,
-						["id"] = 187664,
-						["damage"] = 506605,
-						["max"] = 253344,
-						["name"] = "Fel Breath",
-						["min"] = 253261,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 2,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 85825,
-					},
-				},
-				["healed"] = {
-					["Player-106-057848C5"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Britnèyfears-Aggramar",
-						["amount"] = 223820,
-						["class"] = "WARLOCK",
-						["shielding"] = 159981,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Britnèyfears",
-				["alertCount"] = 0,
-				["shielding"] = 159981,
-				["power"] = {
-					[14] = {
-						["spells"] = {
-							[105047] = 2,
-						},
-						["amount"] = 2,
-					},
-				},
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -43657,10 +43657,10 @@ SkadaPerCharDB = {
 						["damage"] = 655831,
 					},
 				},
-				["shielding"] = 0,
-				["damagetaken"] = 0,
-				["deathlog"] = {
+				["power"] = {
 				},
+				["damagetaken"] = 0,
+				["shielding"] = 0,
 				["id"] = "Sha'tari Defender",
 				["maxhp"] = 0,
 				["healing"] = 0,
@@ -43671,7 +43671,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Sha'tari Defender",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 				},
@@ -43993,129 +43993,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 636962,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 156322,
-						["hp"] = 331380,
-						["ts"] = 1444168805.17,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 143924,
-						["hp"] = 331380,
-						["ts"] = 1444168805.547,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 156322,
-						["hp"] = 331380,
-						["ts"] = 1444168806.581,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 156322,
-						["hp"] = 331380,
-						["ts"] = 1444168806.581,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 143924,
-						["hp"] = 331380,
-						["ts"] = 1444168806.719,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 156322,
-						["hp"] = 331380,
-						["ts"] = 1444168806.958,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 143924,
-						["hp"] = 331380,
-						["ts"] = 1444168800.651,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 156322,
-						["hp"] = 331380,
-						["ts"] = 1444168801.073,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 156322,
-						["hp"] = 331380,
-						["ts"] = 1444168801.073,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 143924,
-						["hp"] = 331380,
-						["ts"] = 1444168801.934,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 119952,
-						["hp"] = 331380,
-						["ts"] = 1444168802.241,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 156322,
-						["hp"] = 331380,
-						["ts"] = 1444168802.888,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 143924,
-						["hp"] = 331380,
-						["ts"] = 1444168803.217,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 143924,
-						["hp"] = 331380,
-						["ts"] = 1444168804.497,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ashbringor-SteamwheedleCartel",
-						["spellid"] = 156322,
-						["hp"] = 331380,
-						["ts"] = 1444168805.17,
-					}, -- [15]
-					["pos"] = 7,
-				},
+				["shielding"] = 0,
 				["id"] = "Player-1071-0732CC50",
 				["maxhp"] = 331380,
 				["healing"] = 202011,
@@ -44280,7 +44158,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Ashbringor",
 				["alertCount"] = 0,
-				["shielding"] = 0,
 				["power"] = {
 					[9] = {
 						["spells"] = {
@@ -44292,6 +44169,129 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 43,
 					},
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 156322,
+						["hp"] = 331380,
+						["ts"] = 1444168805.17,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 143924,
+						["hp"] = 331380,
+						["ts"] = 1444168805.547,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 156322,
+						["hp"] = 331380,
+						["ts"] = 1444168806.581,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 156322,
+						["hp"] = 331380,
+						["ts"] = 1444168806.581,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 143924,
+						["hp"] = 331380,
+						["ts"] = 1444168806.719,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 156322,
+						["hp"] = 331380,
+						["ts"] = 1444168806.958,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 143924,
+						["hp"] = 331380,
+						["ts"] = 1444168800.651,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 156322,
+						["hp"] = 331380,
+						["ts"] = 1444168801.073,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 156322,
+						["hp"] = 331380,
+						["ts"] = 1444168801.073,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 143924,
+						["hp"] = 331380,
+						["ts"] = 1444168801.934,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 119952,
+						["hp"] = 331380,
+						["ts"] = 1444168802.241,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 156322,
+						["hp"] = 331380,
+						["ts"] = 1444168802.888,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 143924,
+						["hp"] = 331380,
+						["ts"] = 1444168803.217,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 143924,
+						["hp"] = 331380,
+						["ts"] = 1444168804.497,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ashbringor-SteamwheedleCartel",
+						["spellid"] = 156322,
+						["hp"] = 331380,
+						["ts"] = 1444168805.17,
+					}, -- [15]
+					["pos"] = 7,
 				},
 				["alert"] = {
 				},
@@ -44443,6 +44443,47 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 41835,
+				["shielding"] = 0,
+				["id"] = "Player-1428-07DC0B3E",
+				["maxhp"] = 379380,
+				["healing"] = 0,
+				["damagetakenspells"] = {
+					["Explosive Doom"] = {
+						["crushing"] = 0,
+						["id"] = 187632,
+						["damage"] = 41835,
+						["max"] = 41835,
+						["name"] = "Explosive Doom",
+						["min"] = 41835,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+				},
+				["healed"] = {
+					["Player-1428-07DC0B3E"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Blaastar-Quel'Thalas",
+						["amount"] = 0,
+						["class"] = "WARLOCK",
+						["shielding"] = 0,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Blaastar",
+				["alertCount"] = 0,
+				["power"] = {
+					[7] = {
+						["spells"] = {
+							[17941] = 3,
+						},
+						["amount"] = 3,
+					},
+				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -44565,47 +44606,6 @@ SkadaPerCharDB = {
 						["ts"] = 1444168802.888,
 					}, -- [15]
 					["pos"] = 4,
-				},
-				["id"] = "Player-1428-07DC0B3E",
-				["maxhp"] = 379380,
-				["healing"] = 0,
-				["damagetakenspells"] = {
-					["Explosive Doom"] = {
-						["crushing"] = 0,
-						["id"] = 187632,
-						["damage"] = 41835,
-						["max"] = 41835,
-						["name"] = "Explosive Doom",
-						["min"] = 41835,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-				},
-				["healed"] = {
-					["Player-1428-07DC0B3E"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Blaastar-Quel'Thalas",
-						["amount"] = 0,
-						["class"] = "WARLOCK",
-						["shielding"] = 0,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Blaastar",
-				["alertCount"] = 0,
-				["shielding"] = 0,
-				["power"] = {
-					[7] = {
-						["spells"] = {
-							[17941] = 3,
-						},
-						["amount"] = 3,
-					},
 				},
 				["alert"] = {
 				},
@@ -44839,129 +44839,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 387564,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Minzy-Alleria",
-						["spellid"] = 127626,
-						["hp"] = 236160,
-						["ts"] = 1444168774.136,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 157982,
-						["hp"] = 236160,
-						["ts"] = 1444168775.388,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 157982,
-						["hp"] = 236160,
-						["ts"] = 1444168776.95,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Minzy-Alleria",
-						["spellid"] = 56160,
-						["hp"] = 236160,
-						["ts"] = 1444168782.39,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Abira-Durotan",
-						["spellid"] = 125953,
-						["hp"] = 236160,
-						["ts"] = 1444168801.824,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Abira-Durotan",
-						["spellid"] = 125953,
-						["hp"] = 236160,
-						["ts"] = 1444168801.824,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Abira-Durotan",
-						["spellid"] = 125953,
-						["hp"] = 236160,
-						["ts"] = 1444168801.824,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Minzy-Alleria",
-						["spellid"] = 127626,
-						["hp"] = 236160,
-						["ts"] = 1444168802.439,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Minzy-Alleria",
-						["spellid"] = 127626,
-						["hp"] = 236160,
-						["ts"] = 1444168803.329,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Minzy-Alleria",
-						["spellid"] = 127626,
-						["hp"] = 236160,
-						["ts"] = 1444168804.214,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 157982,
-						["hp"] = 236160,
-						["ts"] = 1444168772.219,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Minzy-Alleria",
-						["spellid"] = 127626,
-						["hp"] = 236160,
-						["ts"] = 1444168772.467,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Kariaani-Anvilmar",
-						["spellid"] = 120692,
-						["hp"] = 236160,
-						["ts"] = 1444168773.021,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Minzy-Alleria",
-						["spellid"] = 127626,
-						["hp"] = 236160,
-						["ts"] = 1444168773.31,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Dryason-Darkspear",
-						["spellid"] = 157982,
-						["hp"] = 236160,
-						["ts"] = 1444168773.751,
-					}, -- [15]
-					["pos"] = 11,
-				},
+				["shielding"] = 52472,
 				["id"] = "Player-52-063C1174",
 				["maxhp"] = 236160,
 				["healing"] = 77065,
@@ -45174,7 +45052,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Minzy",
 				["alertCount"] = 0,
-				["shielding"] = 52472,
 				["power"] = {
 					[13] = {
 						["spells"] = {
@@ -45183,6 +45060,129 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 20,
 					},
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Minzy-Alleria",
+						["spellid"] = 127626,
+						["hp"] = 236160,
+						["ts"] = 1444168774.136,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 157982,
+						["hp"] = 236160,
+						["ts"] = 1444168775.388,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 157982,
+						["hp"] = 236160,
+						["ts"] = 1444168776.95,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Minzy-Alleria",
+						["spellid"] = 56160,
+						["hp"] = 236160,
+						["ts"] = 1444168782.39,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Abira-Durotan",
+						["spellid"] = 125953,
+						["hp"] = 236160,
+						["ts"] = 1444168801.824,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Abira-Durotan",
+						["spellid"] = 125953,
+						["hp"] = 236160,
+						["ts"] = 1444168801.824,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Abira-Durotan",
+						["spellid"] = 125953,
+						["hp"] = 236160,
+						["ts"] = 1444168801.824,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Minzy-Alleria",
+						["spellid"] = 127626,
+						["hp"] = 236160,
+						["ts"] = 1444168802.439,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Minzy-Alleria",
+						["spellid"] = 127626,
+						["hp"] = 236160,
+						["ts"] = 1444168803.329,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Minzy-Alleria",
+						["spellid"] = 127626,
+						["hp"] = 236160,
+						["ts"] = 1444168804.214,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 157982,
+						["hp"] = 236160,
+						["ts"] = 1444168772.219,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Minzy-Alleria",
+						["spellid"] = 127626,
+						["hp"] = 236160,
+						["ts"] = 1444168772.467,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Kariaani-Anvilmar",
+						["spellid"] = 120692,
+						["hp"] = 236160,
+						["ts"] = 1444168773.021,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Minzy-Alleria",
+						["spellid"] = 127626,
+						["hp"] = 236160,
+						["ts"] = 1444168773.31,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Dryason-Darkspear",
+						["spellid"] = 157982,
+						["hp"] = 236160,
+						["ts"] = 1444168773.751,
+					}, -- [15]
+					["pos"] = 11,
 				},
 				["alert"] = {
 				},
@@ -45223,10 +45223,10 @@ SkadaPerCharDB = {
 						["damage"] = 795262,
 					},
 				},
-				["shielding"] = 0,
-				["damagetaken"] = 0,
-				["deathlog"] = {
+				["power"] = {
 				},
+				["damagetaken"] = 0,
+				["shielding"] = 0,
 				["id"] = "Retired Gorian Centurion",
 				["maxhp"] = 0,
 				["healing"] = 0,
@@ -45237,7 +45237,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Retired Gorian Centurion",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 				},
@@ -45274,10 +45274,10 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["shielding"] = 0,
-				["damagetaken"] = 0,
-				["deathlog"] = {
+				["power"] = {
 				},
+				["damagetaken"] = 0,
+				["shielding"] = 0,
 				["id"] = "Creature-0-87-1464-15-86682-00001442B5",
 				["maxhp"] = 0,
 				["healing"] = 0,
@@ -45288,7 +45288,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Retired Gorian Centurion",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 				},
@@ -45406,129 +45406,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 285765,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 363840,
-						["ts"] = 1444168806.248,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 363840,
-						["ts"] = 1444168806.248,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 363840,
-						["ts"] = 1444168806.248,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 363840,
-						["ts"] = 1444168806.248,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 363840,
-						["ts"] = 1444168806.248,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 363840,
-						["ts"] = 1444168806.248,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 363840,
-						["ts"] = 1444168806.248,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 363840,
-						["ts"] = 1444168806.248,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 363840,
-						["ts"] = 1444168803.409,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 363840,
-						["ts"] = 1444168803.409,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 363840,
-						["ts"] = 1444168803.409,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 363840,
-						["ts"] = 1444168803.409,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 363840,
-						["ts"] = 1444168803.409,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 363840,
-						["ts"] = 1444168803.409,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Babajenkins-Stormscale",
-						["spellid"] = 53652,
-						["hp"] = 363840,
-						["ts"] = 1444168803.409,
-					}, -- [15]
-					["pos"] = 9,
-				},
+				["shielding"] = 0,
 				["id"] = "Player-63-076805A4",
 				["maxhp"] = 363840,
 				["healing"] = 1610824,
@@ -45873,7 +45751,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Abira",
 				["alertCount"] = 0,
-				["shielding"] = 0,
 				["power"] = {
 					[12] = {
 						["spells"] = {
@@ -45882,6 +45759,129 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 6,
 					},
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 363840,
+						["ts"] = 1444168806.248,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 363840,
+						["ts"] = 1444168806.248,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 363840,
+						["ts"] = 1444168806.248,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 363840,
+						["ts"] = 1444168806.248,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 363840,
+						["ts"] = 1444168806.248,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 363840,
+						["ts"] = 1444168806.248,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 363840,
+						["ts"] = 1444168806.248,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 363840,
+						["ts"] = 1444168806.248,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 363840,
+						["ts"] = 1444168803.409,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 363840,
+						["ts"] = 1444168803.409,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 363840,
+						["ts"] = 1444168803.409,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 363840,
+						["ts"] = 1444168803.409,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 363840,
+						["ts"] = 1444168803.409,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 363840,
+						["ts"] = 1444168803.409,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Babajenkins-Stormscale",
+						["spellid"] = 53652,
+						["hp"] = 363840,
+						["ts"] = 1444168803.409,
+					}, -- [15]
+					["pos"] = 9,
 				},
 				["alert"] = {
 				},
@@ -45931,10 +45931,10 @@ SkadaPerCharDB = {
 						["damage"] = 1641057,
 					},
 				},
-				["shielding"] = 0,
-				["damagetaken"] = 0,
-				["deathlog"] = {
+				["power"] = {
 				},
+				["damagetaken"] = 0,
+				["shielding"] = 0,
 				["id"] = "Stormshield Death Knight",
 				["maxhp"] = 0,
 				["healing"] = 0,
@@ -45945,7 +45945,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Stormshield Death Knight",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 				},
@@ -45982,10 +45982,10 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["shielding"] = 0,
-				["damagetaken"] = 0,
-				["deathlog"] = {
+				["power"] = {
 				},
+				["damagetaken"] = 0,
+				["shielding"] = 0,
 				["id"] = "Creature-0-105-1464-18-86927-00001441E0",
 				["maxhp"] = 0,
 				["healing"] = 0,
@@ -46002,7 +46002,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Stormshield Death Knight",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 					["Leech"] = {
@@ -46053,10 +46053,10 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["shielding"] = 0,
-				["damagetaken"] = 0,
-				["deathlog"] = {
+				["power"] = {
 				},
+				["damagetaken"] = 0,
+				["shielding"] = 0,
 				["id"] = "Creature-0-105-1464-16-86934-0000144298",
 				["maxhp"] = 0,
 				["healing"] = 0,
@@ -46067,7 +46067,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Sha'tari Defender",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 				},
@@ -46097,10 +46097,10 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["shielding"] = 0,
-				["damagetaken"] = 0,
-				["deathlog"] = {
+				["power"] = {
 				},
+				["damagetaken"] = 0,
+				["shielding"] = 0,
 				["id"] = "Creature-0-1071-1464-9-86927-0000144190",
 				["maxhp"] = 0,
 				["healing"] = 0,
@@ -46117,7 +46117,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Stormshield Death Knight",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 					["Leech"] = {
@@ -46161,10 +46161,10 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["shielding"] = 0,
-				["damagetaken"] = 0,
-				["deathlog"] = {
+				["power"] = {
 				},
+				["damagetaken"] = 0,
+				["shielding"] = 0,
 				["id"] = "Creature-0-52-1464-15-86927-0000144202",
 				["maxhp"] = 0,
 				["healing"] = 0,
@@ -46175,7 +46175,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Stormshield Death Knight",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 				},
@@ -46198,10 +46198,10 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["shielding"] = 0,
-				["damagetaken"] = 0,
-				["deathlog"] = {
+				["power"] = {
 				},
+				["damagetaken"] = 0,
+				["shielding"] = 0,
 				["id"] = "Creature-0-105-1464-15-47649-00001443CE",
 				["maxhp"] = 0,
 				["healing"] = 0,
@@ -46212,7 +46212,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Wild Mushroom",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 				},
@@ -46293,6 +46293,26 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 0,
+				["shielding"] = 0,
+				["id"] = "Player-96-06572D55",
+				["maxhp"] = 358500,
+				["healing"] = 0,
+				["damagetakenspells"] = {
+				},
+				["healed"] = {
+					["Player-96-06572D55"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Matthewsdk-Velen",
+						["amount"] = 0,
+						["class"] = "DEATHKNIGHT",
+						["shielding"] = 0,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Matthewsdk",
+				["alertCount"] = 0,
+				["power"] = {
+				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -46376,26 +46396,6 @@ SkadaPerCharDB = {
 					}, -- [10]
 					["pos"] = 11,
 				},
-				["id"] = "Player-96-06572D55",
-				["maxhp"] = 358500,
-				["healing"] = 0,
-				["damagetakenspells"] = {
-				},
-				["healed"] = {
-					["Player-96-06572D55"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Matthewsdk-Velen",
-						["amount"] = 0,
-						["class"] = "DEATHKNIGHT",
-						["shielding"] = 0,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Matthewsdk",
-				["alertCount"] = 0,
-				["shielding"] = 0,
-				["power"] = {
-				},
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -46422,10 +46422,10 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["shielding"] = 0,
-				["damagetaken"] = 0,
-				["deathlog"] = {
+				["power"] = {
 				},
+				["damagetaken"] = 0,
+				["shielding"] = 0,
 				["id"] = "Creature-0-96-1464-15-86927-00001441D3",
 				["maxhp"] = 0,
 				["healing"] = 0,
@@ -46436,7 +46436,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Stormshield Death Knight",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 				},
@@ -46468,10 +46468,10 @@ SkadaPerCharDB = {
 						["damage"] = 11113,
 					},
 				},
-				["shielding"] = 0,
-				["damagetaken"] = 0,
-				["deathlog"] = {
+				["power"] = {
 				},
+				["damagetaken"] = 0,
+				["shielding"] = 0,
 				["id"] = "Searing Totem",
 				["maxhp"] = 0,
 				["healing"] = 0,
@@ -46482,7 +46482,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Searing Totem",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 				},
@@ -46505,10 +46505,10 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["shielding"] = 0,
-				["damagetaken"] = 0,
-				["deathlog"] = {
+				["power"] = {
 				},
+				["damagetaken"] = 0,
+				["shielding"] = 0,
 				["id"] = "Creature-0-105-1464-15-60849-0000144474",
 				["maxhp"] = 0,
 				["healing"] = 0,
@@ -46519,7 +46519,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Jade Serpent Statue",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 				},
@@ -46549,10 +46549,10 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["shielding"] = 0,
-				["damagetaken"] = 0,
-				["deathlog"] = {
+				["power"] = {
 				},
+				["damagetaken"] = 0,
+				["shielding"] = 0,
 				["id"] = "Creature-0-105-1464-15-3527-000014446F",
 				["maxhp"] = 0,
 				["healing"] = 0,
@@ -46563,7 +46563,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Healing Stream Totem",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 				},
@@ -47420,844 +47420,6 @@ SkadaPerCharDB = {
 				["htaken"] = 345413,
 				["done"] = 529542,
 			},
-			["Kailyn-Thunderhorn"] = {
-				["players"] = {
-					["Britnèyfears-Aggramar"] = {
-						["taken"] = 10622,
-						["done"] = 0,
-						["class"] = "WARLOCK",
-						["role"] = "DAMAGER",
-					},
-				},
-				["hdone"] = 11495,
-				["hdonespell"] = {
-					["Leech"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 4883,
-						["healing"] = 11495,
-						["overhealing"] = 180154,
-						["hits"] = 125,
-					},
-				},
-				["taken"] = 10622,
-				["htakenspell"] = {
-					["Chi Burst"] = {
-						["min"] = 0,
-						["crits"] = 1,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 41601,
-						["hits"] = 1,
-					},
-					["Rushing Jade Wind"] = {
-						["min"] = 6020,
-						["crits"] = 1,
-						["max"] = 6020,
-						["healing"] = 6020,
-						["overhealing"] = 951,
-						["hits"] = 1,
-					},
-					["Leech"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 4883,
-						["healing"] = 11495,
-						["overhealing"] = 180154,
-						["hits"] = 125,
-					},
-					["Halo"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 23575,
-						["hits"] = 3,
-					},
-					["Wild Growth"] = {
-						["min"] = 0,
-						["crits"] = 9,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 163974,
-						["hits"] = 22,
-					},
-					["Tranquility"] = {
-						["min"] = 0,
-						["crits"] = 4,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 172255,
-						["hits"] = 8,
-					},
-					["Light of Dawn"] = {
-						["min"] = 0,
-						["crits"] = 3,
-						["max"] = 11534,
-						["healing"] = 11534,
-						["overhealing"] = 35231,
-						["hits"] = 6,
-					},
-					["Ancestral Guidance"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 3412,
-						["healing"] = 4602,
-						["overhealing"] = 471,
-						["hits"] = 8,
-					},
-					["Healing Tide"] = {
-						["min"] = 0,
-						["crits"] = 2,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 98918,
-						["hits"] = 12,
-					},
-					["Atonement"] = {
-						["min"] = 0,
-						["crits"] = 1,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 9251,
-						["hits"] = 2,
-					},
-					["Healing Stream Totem"] = {
-						["min"] = 1899,
-						["crits"] = 0,
-						["max"] = 1899,
-						["healing"] = 1899,
-						["overhealing"] = 4230,
-						["hits"] = 1,
-					},
-					["Holy Radiance"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 31422,
-						["hits"] = 4,
-					},
-					["Spirit Bond"] = {
-						["min"] = 6575,
-						["crits"] = 0,
-						["max"] = 6575,
-						["healing"] = 13150,
-						["overhealing"] = 0,
-						["hits"] = 2,
-					},
-				},
-				["htaken"] = 48700,
-				["done"] = 0,
-			},
-			["Claudia-Thunderhorn"] = {
-				["players"] = {
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-					["Holy Prism"] = {
-						["min"] = 0,
-						["crits"] = 1,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 169017,
-						["hits"] = 3,
-					},
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 0,
-			},
-			["Kariaani-Anvilmar"] = {
-				["players"] = {
-				},
-				["hdone"] = 57703,
-				["hdonespell"] = {
-					["Atonement"] = {
-						["min"] = 0,
-						["crits"] = 7,
-						["max"] = 9083,
-						["healing"] = 57703,
-						["overhealing"] = 40582,
-						["hits"] = 39,
-					},
-					["Halo"] = {
-						["min"] = 0,
-						["crits"] = 5,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 121960,
-						["hits"] = 29,
-					},
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 0,
-			},
-			["Forthwith-Silvermoon"] = {
-				["players"] = {
-				},
-				["hdone"] = 18387,
-				["hdonespell"] = {
-					["Chi Wave"] = {
-						["min"] = 0,
-						["crits"] = 3,
-						["max"] = 4662,
-						["healing"] = 18387,
-						["overhealing"] = 15016,
-						["hits"] = 10,
-					},
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 0,
-			},
-			["Army of the Dead"] = {
-				["players"] = {
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-					["Leech"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 3277,
-						["hits"] = 56,
-					},
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-					["Halo"] = {
-						["min"] = 0,
-						["crits"] = 3,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 27374,
-						["hits"] = 9,
-					},
-					["Chi Burst"] = {
-						["min"] = 0,
-						["crits"] = 4,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 88332,
-						["hits"] = 4,
-					},
-					["Leech"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 3277,
-						["hits"] = 56,
-					},
-				},
-				["htaken"] = 0,
-				["done"] = 0,
-			},
-			["Serenah-Thunderhorn"] = {
-				["players"] = {
-				},
-				["hdone"] = 3773,
-				["hdonespell"] = {
-					["Chi Wave"] = {
-						["min"] = 0,
-						["crits"] = 1,
-						["max"] = 3773,
-						["healing"] = 3773,
-						["overhealing"] = 7165,
-						["hits"] = 2,
-					},
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-					["Tranquility"] = {
-						["min"] = 0,
-						["crits"] = 2,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 138386,
-						["hits"] = 6,
-					},
-					["Gift of the Serpent"] = {
-						["min"] = 0,
-						["crits"] = 2,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 19235,
-						["hits"] = 2,
-					},
-					["Wild Growth"] = {
-						["min"] = 0,
-						["crits"] = 3,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 48347,
-						["hits"] = 11,
-					},
-					["Renewing Mist"] = {
-						["min"] = 0,
-						["crits"] = 12,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 53430,
-						["hits"] = 41,
-					},
-					["Healing Tide"] = {
-						["min"] = 0,
-						["crits"] = 1,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 77432,
-						["hits"] = 11,
-					},
-					["Chi Wave"] = {
-						["min"] = 0,
-						["crits"] = 1,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 13993,
-						["hits"] = 4,
-					},
-					["Atonement"] = {
-						["min"] = 0,
-						["crits"] = 1,
-						["max"] = 6156,
-						["healing"] = 6492,
-						["overhealing"] = 3263,
-						["hits"] = 5,
-					},
-					["Healing Stream Totem"] = {
-						["min"] = 6184,
-						["crits"] = 0,
-						["max"] = 6266,
-						["healing"] = 18684,
-						["overhealing"] = 0,
-						["hits"] = 3,
-					},
-					["Light of Dawn"] = {
-						["min"] = 0,
-						["crits"] = 1,
-						["max"] = 2884,
-						["healing"] = 2884,
-						["overhealing"] = 39218,
-						["hits"] = 7,
-					},
-					["Uplift"] = {
-						["min"] = 0,
-						["crits"] = 2,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 56788,
-						["hits"] = 4,
-					},
-					["Holy Radiance"] = {
-						["min"] = 0,
-						["crits"] = 2,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 49785,
-						["hits"] = 5,
-					},
-					["Halo"] = {
-						["min"] = 0,
-						["crits"] = 1,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 22946,
-						["hits"] = 3,
-					},
-				},
-				["htaken"] = 28060,
-				["done"] = 0,
-			},
-			["Dryason-Darkspear"] = {
-				["players"] = {
-				},
-				["hdone"] = 107363,
-				["hdonespell"] = {
-					["Wild Mushroom"] = {
-						["min"] = 0,
-						["crits"] = 3,
-						["max"] = 5970,
-						["healing"] = 10019,
-						["overhealing"] = 88950,
-						["hits"] = 14,
-					},
-					["Wild Growth"] = {
-						["min"] = 0,
-						["crits"] = 16,
-						["max"] = 15019,
-						["healing"] = 19652,
-						["overhealing"] = 338807,
-						["hits"] = 53,
-					},
-					["Tranquility"] = {
-						["min"] = 0,
-						["crits"] = 10,
-						["max"] = 41279,
-						["healing"] = 77692,
-						["overhealing"] = 855220,
-						["hits"] = 36,
-					},
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 0,
-			},
-			["Warliky-Hydraxis"] = {
-				["players"] = {
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-					["Holy Radiance"] = {
-						["min"] = 0,
-						["crits"] = 2,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 66295,
-						["hits"] = 7,
-					},
-					["Light of Dawn"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 23172,
-						["hits"] = 2,
-					},
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 0,
-			},
-			["Dincadon-Darrowmere"] = {
-				["players"] = {
-				},
-				["hdone"] = 45324,
-				["hdonespell"] = {
-					["Ancestral Guidance"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 7287,
-						["healing"] = 45324,
-						["overhealing"] = 2778,
-						["hits"] = 37,
-					},
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 0,
-			},
-			["Kryztine-Thunderhorn"] = {
-				["players"] = {
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-					["Leech"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 2973,
-						["hits"] = 114,
-					},
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-					["Tranquility"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 26979,
-						["hits"] = 3,
-					},
-					["Leech"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 2973,
-						["hits"] = 114,
-					},
-					["Gift of the Serpent"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 7398,
-						["hits"] = 1,
-					},
-					["Atonement"] = {
-						["min"] = 0,
-						["crits"] = 1,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 27900,
-						["hits"] = 4,
-					},
-					["Ancestral Guidance"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 341,
-						["hits"] = 1,
-					},
-					["Healing Tide"] = {
-						["min"] = 0,
-						["crits"] = 2,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 74616,
-						["hits"] = 11,
-					},
-				},
-				["htaken"] = 0,
-				["done"] = 0,
-			},
-			["Dirtgobbler"] = {
-				["players"] = {
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-					["Leech"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 16030,
-						["hits"] = 16,
-					},
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-					["Restorative Mists"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 25396,
-						["hits"] = 4,
-					},
-					["Halo"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 6235,
-						["hits"] = 2,
-					},
-					["Leech"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 16030,
-						["hits"] = 16,
-					},
-					["Holy Radiance"] = {
-						["min"] = 0,
-						["crits"] = 1,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 17439,
-						["hits"] = 2,
-					},
-					["Tranquility"] = {
-						["min"] = 0,
-						["crits"] = 1,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 103198,
-						["hits"] = 4,
-					},
-				},
-				["htaken"] = 0,
-				["done"] = 0,
-			},
-			["Deathspally-Blade'sEdge"] = {
-				["players"] = {
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-					["Chi Wave"] = {
-						["min"] = 1131,
-						["crits"] = 1,
-						["max"] = 3768,
-						["healing"] = 10928,
-						["overhealing"] = 0,
-						["hits"] = 4,
-					},
-					["Tranquility"] = {
-						["min"] = 0,
-						["crits"] = 1,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 109389,
-						["hits"] = 5,
-					},
-					["Halo"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 1426,
-						["hits"] = 1,
-					},
-					["Healing Stream Totem"] = {
-						["min"] = 3316,
-						["crits"] = 1,
-						["max"] = 7379,
-						["healing"] = 16112,
-						["overhealing"] = 0,
-						["hits"] = 3,
-					},
-					["Cloudburst"] = {
-						["min"] = 43913,
-						["crits"] = 0,
-						["max"] = 43913,
-						["healing"] = 43913,
-						["overhealing"] = 0,
-						["hits"] = 1,
-					},
-				},
-				["htaken"] = 70953,
-				["done"] = 0,
-			},
-			["Ashbringor-SteamwheedleCartel"] = {
-				["players"] = {
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-					["Arcing Light"] = {
-						["min"] = 0,
-						["crits"] = 2,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 15640,
-						["hits"] = 4,
-					},
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 0,
-			},
-			["Dirtysock-AeriePeak"] = {
-				["players"] = {
-				},
-				["hdone"] = 13988,
-				["hdonespell"] = {
-					["Daybreak"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 5196,
-						["hits"] = 1,
-					},
-					["Light of Dawn"] = {
-						["min"] = 13988,
-						["crits"] = 0,
-						["max"] = 13988,
-						["healing"] = 13988,
-						["overhealing"] = 0,
-						["hits"] = 1,
-					},
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 0,
-			},
-			["Zonvra-Ragnaros"] = {
-				["players"] = {
-				},
-				["hdone"] = 160767,
-				["hdonespell"] = {
-					["Restorative Mists"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 1628,
-						["healing"] = 1628,
-						["overhealing"] = 74799,
-						["hits"] = 17,
-					},
-					["Cloudburst"] = {
-						["min"] = 43913,
-						["crits"] = 0,
-						["max"] = 43913,
-						["healing"] = 43913,
-						["overhealing"] = 0,
-						["hits"] = 1,
-					},
-					["Healing Stream Totem"] = {
-						["min"] = 1899,
-						["crits"] = 3,
-						["max"] = 12833,
-						["healing"] = 73803,
-						["overhealing"] = 4230,
-						["hits"] = 13,
-					},
-					["Healing Tide"] = {
-						["min"] = 0,
-						["crits"] = 6,
-						["max"] = 11254,
-						["healing"] = 31397,
-						["overhealing"] = 396644,
-						["hits"] = 52,
-					},
-					["Healing Rain"] = {
-						["min"] = 0,
-						["crits"] = 3,
-						["max"] = 3602,
-						["healing"] = 10026,
-						["overhealing"] = 40077,
-						["hits"] = 17,
-					},
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 0,
-			},
-			["Tagamausy-Blade'sEdge"] = {
-				["players"] = {
-				},
-				["hdone"] = 935,
-				["hdonespell"] = {
-					["Nature's Vigil"] = {
-						["min"] = 368,
-						["crits"] = 0,
-						["max"] = 567,
-						["healing"] = 935,
-						["overhealing"] = 0,
-						["hits"] = 2,
-					},
-					["Wild Mushroom"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 15391,
-						["hits"] = 4,
-					},
-					["Wild Growth"] = {
-						["min"] = 0,
-						["crits"] = 1,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 12354,
-						["hits"] = 8,
-					},
-					["Tranquility"] = {
-						["min"] = 0,
-						["crits"] = 6,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 194239,
-						["hits"] = 15,
-					},
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 0,
-			},
-			["Babajenkins-Stormscale"] = {
-				["players"] = {
-				},
-				["hdone"] = 89370,
-				["hdonespell"] = {
-					["Daybreak"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 29804,
-						["hits"] = 5,
-					},
-					["Light of Dawn"] = {
-						["min"] = 0,
-						["crits"] = 4,
-						["max"] = 11534,
-						["healing"] = 31078,
-						["overhealing"] = 65746,
-						["hits"] = 18,
-					},
-					["Holy Prism"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 36763,
-						["healing"] = 58292,
-						["overhealing"] = 57147,
-						["hits"] = 5,
-					},
-					["Holy Radiance"] = {
-						["min"] = 0,
-						["crits"] = 2,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 72028,
-						["hits"] = 9,
-					},
-					["Light from Above"] = {
-						["min"] = 0,
-						["crits"] = 1,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 18776,
-						["hits"] = 2,
-					},
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 0,
-			},
-			["Ebon Gargoyle"] = {
-				["players"] = {
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-					["Halo"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 2626,
-						["hits"] = 2,
-					},
-				},
-				["htaken"] = 0,
-				["done"] = 0,
-			},
 			["Mendokgb-Blade'sEdge"] = {
 				["players"] = {
 					["Warliky-Hydraxis"] = {
@@ -48490,50 +47652,692 @@ SkadaPerCharDB = {
 				["htaken"] = 123708,
 				["done"] = 1924028,
 			},
-			["Sunsooji-ScarletCrusade"] = {
+			["Claudia-Thunderhorn"] = {
 				["players"] = {
 				},
-				["hdone"] = 78576,
+				["hdone"] = 0,
 				["hdonespell"] = {
-					["Chi Burst"] = {
+					["Holy Prism"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 169017,
+						["hits"] = 3,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Kariaani-Anvilmar"] = {
+				["players"] = {
+				},
+				["hdone"] = 57703,
+				["hdonespell"] = {
+					["Atonement"] = {
+						["min"] = 0,
+						["crits"] = 7,
+						["max"] = 9083,
+						["healing"] = 57703,
+						["overhealing"] = 40582,
+						["hits"] = 39,
+					},
+					["Halo"] = {
 						["min"] = 0,
 						["crits"] = 5,
 						["max"] = 0,
 						["healing"] = 0,
-						["overhealing"] = 174099,
-						["hits"] = 7,
+						["overhealing"] = 121960,
+						["hits"] = 29,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Deathspally-Blade'sEdge"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Chi Wave"] = {
+						["min"] = 1131,
+						["crits"] = 1,
+						["max"] = 3768,
+						["healing"] = 10928,
+						["overhealing"] = 0,
+						["hits"] = 4,
+					},
+					["Tranquility"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 109389,
+						["hits"] = 5,
+					},
+					["Halo"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 1426,
+						["hits"] = 1,
+					},
+					["Healing Stream Totem"] = {
+						["min"] = 3316,
+						["crits"] = 1,
+						["max"] = 7379,
+						["healing"] = 16112,
+						["overhealing"] = 0,
+						["hits"] = 3,
+					},
+					["Cloudburst"] = {
+						["min"] = 43913,
+						["crits"] = 0,
+						["max"] = 43913,
+						["healing"] = 43913,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+				},
+				["htaken"] = 70953,
+				["done"] = 0,
+			},
+			["Army of the Dead"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+					["Leech"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 3277,
+						["hits"] = 56,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Halo"] = {
+						["min"] = 0,
+						["crits"] = 3,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 27374,
+						["hits"] = 9,
+					},
+					["Chi Burst"] = {
+						["min"] = 0,
+						["crits"] = 4,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 88332,
+						["hits"] = 4,
+					},
+					["Leech"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 3277,
+						["hits"] = 56,
+					},
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Kailyn-Thunderhorn"] = {
+				["players"] = {
+					["Britnèyfears-Aggramar"] = {
+						["taken"] = 10622,
+						["done"] = 0,
+						["class"] = "WARLOCK",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 11495,
+				["hdonespell"] = {
+					["Leech"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 4883,
+						["healing"] = 11495,
+						["overhealing"] = 180154,
+						["hits"] = 125,
+					},
+				},
+				["taken"] = 10622,
+				["htakenspell"] = {
+					["Chi Burst"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 41601,
+						["hits"] = 1,
 					},
 					["Rushing Jade Wind"] = {
+						["min"] = 6020,
+						["crits"] = 1,
+						["max"] = 6020,
+						["healing"] = 6020,
+						["overhealing"] = 951,
+						["hits"] = 1,
+					},
+					["Leech"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 4883,
+						["healing"] = 11495,
+						["overhealing"] = 180154,
+						["hits"] = 125,
+					},
+					["Halo"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 23575,
+						["hits"] = 3,
+					},
+					["Wild Growth"] = {
+						["min"] = 0,
+						["crits"] = 9,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 163974,
+						["hits"] = 22,
+					},
+					["Tranquility"] = {
+						["min"] = 0,
+						["crits"] = 4,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 172255,
+						["hits"] = 8,
+					},
+					["Light of Dawn"] = {
+						["min"] = 0,
+						["crits"] = 3,
+						["max"] = 11534,
+						["healing"] = 11534,
+						["overhealing"] = 35231,
+						["hits"] = 6,
+					},
+					["Ancestral Guidance"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 3412,
+						["healing"] = 4602,
+						["overhealing"] = 471,
+						["hits"] = 8,
+					},
+					["Healing Tide"] = {
 						["min"] = 0,
 						["crits"] = 2,
-						["max"] = 7755,
-						["healing"] = 27733,
-						["overhealing"] = 17114,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 98918,
 						["hits"] = 12,
 					},
-					["Gift of the Serpent"] = {
-						["min"] = 4766,
+					["Atonement"] = {
+						["min"] = 0,
 						["crits"] = 1,
-						["max"] = 7944,
-						["healing"] = 12710,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 9251,
+						["hits"] = 2,
+					},
+					["Healing Stream Totem"] = {
+						["min"] = 1899,
+						["crits"] = 0,
+						["max"] = 1899,
+						["healing"] = 1899,
+						["overhealing"] = 4230,
+						["hits"] = 1,
+					},
+					["Holy Radiance"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 31422,
+						["hits"] = 4,
+					},
+					["Spirit Bond"] = {
+						["min"] = 6575,
+						["crits"] = 0,
+						["max"] = 6575,
+						["healing"] = 13150,
 						["overhealing"] = 0,
 						["hits"] = 2,
 					},
-					["Uplift"] = {
+				},
+				["htaken"] = 48700,
+				["done"] = 0,
+			},
+			["Dryason-Darkspear"] = {
+				["players"] = {
+				},
+				["hdone"] = 107363,
+				["hdonespell"] = {
+					["Wild Mushroom"] = {
+						["min"] = 0,
+						["crits"] = 3,
+						["max"] = 5970,
+						["healing"] = 10019,
+						["overhealing"] = 88950,
+						["hits"] = 14,
+					},
+					["Wild Growth"] = {
+						["min"] = 0,
+						["crits"] = 16,
+						["max"] = 15019,
+						["healing"] = 19652,
+						["overhealing"] = 338807,
+						["hits"] = 53,
+					},
+					["Tranquility"] = {
+						["min"] = 0,
+						["crits"] = 10,
+						["max"] = 41279,
+						["healing"] = 77692,
+						["overhealing"] = 855220,
+						["hits"] = 36,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Ebon Gargoyle"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Halo"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 2626,
+						["hits"] = 2,
+					},
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Dincadon-Darrowmere"] = {
+				["players"] = {
+				},
+				["hdone"] = 45324,
+				["hdonespell"] = {
+					["Ancestral Guidance"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 7287,
+						["healing"] = 45324,
+						["overhealing"] = 2778,
+						["hits"] = 37,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Kryztine-Thunderhorn"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+					["Leech"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 2973,
+						["hits"] = 114,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Tranquility"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 26979,
+						["hits"] = 3,
+					},
+					["Leech"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 2973,
+						["hits"] = 114,
+					},
+					["Gift of the Serpent"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 7398,
+						["hits"] = 1,
+					},
+					["Atonement"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 27900,
+						["hits"] = 4,
+					},
+					["Ancestral Guidance"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 341,
+						["hits"] = 1,
+					},
+					["Healing Tide"] = {
 						["min"] = 0,
 						["crits"] = 2,
-						["max"] = 14561,
-						["healing"] = 27146,
-						["overhealing"] = 58764,
-						["hits"] = 6,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 74616,
+						["hits"] = 11,
 					},
-					["Renewing Mist"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Dirtgobbler"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+					["Leech"] = {
 						["min"] = 0,
-						["crits"] = 20,
-						["max"] = 1395,
-						["healing"] = 10987,
-						["overhealing"] = 90993,
-						["hits"] = 79,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 16030,
+						["hits"] = 16,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Restorative Mists"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 25396,
+						["hits"] = 4,
+					},
+					["Halo"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 6235,
+						["hits"] = 2,
+					},
+					["Leech"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 16030,
+						["hits"] = 16,
+					},
+					["Holy Radiance"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 17439,
+						["hits"] = 2,
+					},
+					["Tranquility"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 103198,
+						["hits"] = 4,
+					},
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Dirtysock-AeriePeak"] = {
+				["players"] = {
+				},
+				["hdone"] = 13988,
+				["hdonespell"] = {
+					["Daybreak"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 5196,
+						["hits"] = 1,
+					},
+					["Light of Dawn"] = {
+						["min"] = 13988,
+						["crits"] = 0,
+						["max"] = 13988,
+						["healing"] = 13988,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Ashbringor-SteamwheedleCartel"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+					["Arcing Light"] = {
+						["min"] = 0,
+						["crits"] = 2,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 15640,
+						["hits"] = 4,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Forthwith-Silvermoon"] = {
+				["players"] = {
+				},
+				["hdone"] = 18387,
+				["hdonespell"] = {
+					["Chi Wave"] = {
+						["min"] = 0,
+						["crits"] = 3,
+						["max"] = 4662,
+						["healing"] = 18387,
+						["overhealing"] = 15016,
+						["hits"] = 10,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Zonvra-Ragnaros"] = {
+				["players"] = {
+				},
+				["hdone"] = 160767,
+				["hdonespell"] = {
+					["Restorative Mists"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 1628,
+						["healing"] = 1628,
+						["overhealing"] = 74799,
+						["hits"] = 17,
+					},
+					["Cloudburst"] = {
+						["min"] = 43913,
+						["crits"] = 0,
+						["max"] = 43913,
+						["healing"] = 43913,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+					["Healing Stream Totem"] = {
+						["min"] = 1899,
+						["crits"] = 3,
+						["max"] = 12833,
+						["healing"] = 73803,
+						["overhealing"] = 4230,
+						["hits"] = 13,
+					},
+					["Healing Tide"] = {
+						["min"] = 0,
+						["crits"] = 6,
+						["max"] = 11254,
+						["healing"] = 31397,
+						["overhealing"] = 396644,
+						["hits"] = 52,
+					},
+					["Healing Rain"] = {
+						["min"] = 0,
+						["crits"] = 3,
+						["max"] = 3602,
+						["healing"] = 10026,
+						["overhealing"] = 40077,
+						["hits"] = 17,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Tagamausy-Blade'sEdge"] = {
+				["players"] = {
+				},
+				["hdone"] = 935,
+				["hdonespell"] = {
+					["Nature's Vigil"] = {
+						["min"] = 368,
+						["crits"] = 0,
+						["max"] = 567,
+						["healing"] = 935,
+						["overhealing"] = 0,
+						["hits"] = 2,
+					},
+					["Wild Mushroom"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 15391,
+						["hits"] = 4,
+					},
+					["Wild Growth"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 12354,
+						["hits"] = 8,
+					},
+					["Tranquility"] = {
+						["min"] = 0,
+						["crits"] = 6,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 194239,
+						["hits"] = 15,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Babajenkins-Stormscale"] = {
+				["players"] = {
+				},
+				["hdone"] = 89370,
+				["hdonespell"] = {
+					["Daybreak"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 29804,
+						["hits"] = 5,
+					},
+					["Light of Dawn"] = {
+						["min"] = 0,
+						["crits"] = 4,
+						["max"] = 11534,
+						["healing"] = 31078,
+						["overhealing"] = 65746,
+						["hits"] = 18,
+					},
+					["Holy Prism"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 36763,
+						["healing"] = 58292,
+						["overhealing"] = 57147,
+						["hits"] = 5,
+					},
+					["Holy Radiance"] = {
+						["min"] = 0,
+						["crits"] = 2,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 72028,
+						["hits"] = 9,
+					},
+					["Light from Above"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 18776,
+						["hits"] = 2,
 					},
 				},
 				["taken"] = 0,
@@ -48715,6 +48519,202 @@ SkadaPerCharDB = {
 				},
 				["htaken"] = 194787,
 				["done"] = 647734,
+			},
+			["Serenah-Thunderhorn"] = {
+				["players"] = {
+				},
+				["hdone"] = 3773,
+				["hdonespell"] = {
+					["Chi Wave"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 3773,
+						["healing"] = 3773,
+						["overhealing"] = 7165,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Tranquility"] = {
+						["min"] = 0,
+						["crits"] = 2,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 138386,
+						["hits"] = 6,
+					},
+					["Gift of the Serpent"] = {
+						["min"] = 0,
+						["crits"] = 2,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 19235,
+						["hits"] = 2,
+					},
+					["Wild Growth"] = {
+						["min"] = 0,
+						["crits"] = 3,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 48347,
+						["hits"] = 11,
+					},
+					["Renewing Mist"] = {
+						["min"] = 0,
+						["crits"] = 12,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 53430,
+						["hits"] = 41,
+					},
+					["Healing Tide"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 77432,
+						["hits"] = 11,
+					},
+					["Chi Wave"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 13993,
+						["hits"] = 4,
+					},
+					["Atonement"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 6156,
+						["healing"] = 6492,
+						["overhealing"] = 3263,
+						["hits"] = 5,
+					},
+					["Healing Stream Totem"] = {
+						["min"] = 6184,
+						["crits"] = 0,
+						["max"] = 6266,
+						["healing"] = 18684,
+						["overhealing"] = 0,
+						["hits"] = 3,
+					},
+					["Light of Dawn"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 2884,
+						["healing"] = 2884,
+						["overhealing"] = 39218,
+						["hits"] = 7,
+					},
+					["Uplift"] = {
+						["min"] = 0,
+						["crits"] = 2,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 56788,
+						["hits"] = 4,
+					},
+					["Holy Radiance"] = {
+						["min"] = 0,
+						["crits"] = 2,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 49785,
+						["hits"] = 5,
+					},
+					["Halo"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 22946,
+						["hits"] = 3,
+					},
+				},
+				["htaken"] = 28060,
+				["done"] = 0,
+			},
+			["Sunsooji-ScarletCrusade"] = {
+				["players"] = {
+				},
+				["hdone"] = 78576,
+				["hdonespell"] = {
+					["Chi Burst"] = {
+						["min"] = 0,
+						["crits"] = 5,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 174099,
+						["hits"] = 7,
+					},
+					["Rushing Jade Wind"] = {
+						["min"] = 0,
+						["crits"] = 2,
+						["max"] = 7755,
+						["healing"] = 27733,
+						["overhealing"] = 17114,
+						["hits"] = 12,
+					},
+					["Gift of the Serpent"] = {
+						["min"] = 4766,
+						["crits"] = 1,
+						["max"] = 7944,
+						["healing"] = 12710,
+						["overhealing"] = 0,
+						["hits"] = 2,
+					},
+					["Uplift"] = {
+						["min"] = 0,
+						["crits"] = 2,
+						["max"] = 14561,
+						["healing"] = 27146,
+						["overhealing"] = 58764,
+						["hits"] = 6,
+					},
+					["Renewing Mist"] = {
+						["min"] = 0,
+						["crits"] = 20,
+						["max"] = 1395,
+						["healing"] = 10987,
+						["overhealing"] = 90993,
+						["hits"] = 79,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Warliky-Hydraxis"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+					["Holy Radiance"] = {
+						["min"] = 0,
+						["crits"] = 2,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 66295,
+						["hits"] = 7,
+					},
+					["Light of Dawn"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 23172,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
 			},
 			["Lottuss-Thunderhorn"] = {
 				["players"] = {

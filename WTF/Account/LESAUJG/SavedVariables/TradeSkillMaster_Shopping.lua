@@ -23,15 +23,36 @@ TradeSkillMaster_ShoppingDB = {
 			"sorcerous air/exact", -- [8]
 			"miscellaneous/mount", -- [9]
 		},
+		["optionsTreeStatus"] = {
+			["groups"] = {
+				["1"] = true,
+				["2Buy"] = true,
+				["2"] = true,
+				[2] = true,
+				["2Buy 40g"] = true,
+				["2Buy Clothgar"] = true,
+				["2Buy Enchants"] = true,
+				["2Buy 2g"] = true,
+				["2Buy Galinar"] = true,
+				["2Buy Herb/Ore"] = true,
+				["2Buy enchant mats"] = true,
+				["2Buy 150g"] = true,
+			},
+			["scrollvalue"] = 0,
+			["selected"] = "2Buy Clothgar",
+			["treesizable"] = true,
+			["treewidth"] = 175,
+			["fullwidth"] = 945,
+		},
 		["previousSearches"] = {
-			"arcane c", -- [1]
-			"Giant Dinosaur Bone/exact", -- [2]
-			"miscellaneous/mount", -- [3]
-			"true iron ore/exact", -- [4]
-			"raw beast", -- [5]
-			"Blackrock Ore/exact", -- [6]
-			"universal", -- [7]
-			"sorcerous air/exact", -- [8]
+			"miscellaneous/mount", -- [1]
+			"sorcerous air/exact", -- [2]
+			"Giant Dinosaur Bone/exact", -- [3]
+			"universal", -- [4]
+			"arcane c", -- [5]
+			"true iron ore/exact", -- [6]
+			"raw beast", -- [7]
+			"Blackrock Ore/exact", -- [8]
 			"critical strike", -- [9]
 			"frostweed", -- [10]
 			"Healing Tonic/exact", -- [11]
@@ -249,7 +270,7 @@ TradeSkillMaster_ShoppingDB = {
 			["item:115504:0:0:0:0:0:0"] = "Fractured Temporal Crystal",
 			["item:36860:0:0:0:0:0:0"] = "Eternal Fire",
 			["item:11084:0:0:0:0:0:0"] = "Large Glimmering Shard",
-			["item:22452:0:0:0:0:0:0"] = "Primal Earth",
+			["item:52721:0:0:0:0:0:0"] = "Heavenly Shard",
 			["item:61978:0:0:0:0:0:0"] = "Blackfallow Ink",
 			["item:61979:0:0:0:0:0:0"] = "Ashen Pigment",
 			["item:43105:0:0:0:0:0:0"] = "Indigo Pigment",
@@ -260,10 +281,10 @@ TradeSkillMaster_ShoppingDB = {
 			["item:11134:0:0:0:0:0:0"] = "Lesser Mystic Essence",
 			["item:23107:0:0:0:0:0:0"] = "Shadow Draenite",
 			["item:37701:0:0:0:0:0:0"] = "Crystallized Earth",
-			["item:39151:0:0:0:0:0:0"] = "Alabaster Pigment",
+			["item:43122:0:0:0:0:0:0"] = "Shimmering Ink",
 			["item:10938:0:0:0:0:0:0"] = "Lesser Magic Essence",
 			["item:16203:0:0:0:0:0:0"] = "Greater Eternal Essence",
-			["item:37705:0:0:0:0:0:0"] = "Crystallized Water",
+			["item:39151:0:0:0:0:0:0"] = "Alabaster Pigment",
 			["item:36927:0:0:0:0:0:0"] = "Twilight Opal",
 			["item:43126:0:0:0:0:0:0"] = "Ink of the Sea",
 			["item:43121:0:0:0:0:0:0"] = "Fiery Ink",
@@ -274,7 +295,7 @@ TradeSkillMaster_ShoppingDB = {
 			["item:10998:0:0:0:0:0:0"] = "Lesser Astral Essence",
 			["item:61981:0:0:0:0:0:0"] = "Inferno Ink",
 			["item:34055:0:0:0:0:0:0"] = "Greater Cosmic Essence",
-			["item:43122:0:0:0:0:0:0"] = "Shimmering Ink",
+			["item:37705:0:0:0:0:0:0"] = "Crystallized Water",
 			["item:43118:0:0:0:0:0:0"] = "Jadefire Ink",
 			["item:16204:0:0:0:0:0:0"] = "Illusion Dust",
 			["item:76133:0:0:0:0:0:0"] = "Lapis Lazuli",
@@ -284,8 +305,8 @@ TradeSkillMaster_ShoppingDB = {
 			["item:39342:0:0:0:0:0:0"] = "Nether Pigment",
 			["item:74247:0:0:0:0:0:0"] = "Ethereal Shard",
 			["item:76141:0:0:0:0:0:0"] = "Imperial Amethyst",
-			["item:52721:0:0:0:0:0:0"] = "Heavenly Shard",
 			["item:43115:0:0:0:0:0:0"] = "Hunter's Ink",
+			["item:22452:0:0:0:0:0:0"] = "Primal Earth",
 			["item:39469:0:0:0:0:0:0"] = "Moonglow Ink",
 			["item:23117:0:0:0:0:0:0"] = "Azure Moonstone",
 			["item:37703:0:0:0:0:0:0"] = "Crystallized Shadow",
@@ -301,27 +322,6 @@ TradeSkillMaster_ShoppingDB = {
 			["item:22574:0:0:0:0:0:0"] = "Mote of Fire",
 			["item:12799:0:0:0:0:0:0"] = "Large Opal",
 			["item:74252:0:0:0:0:0:0"] = "Small Ethereal Shard",
-		},
-		["optionsTreeStatus"] = {
-			["groups"] = {
-				["1"] = true,
-				["2Buy"] = true,
-				["2"] = true,
-				[2] = true,
-				["2Buy 40g"] = true,
-				["2Buy Clothgar"] = true,
-				["2Buy Enchants"] = true,
-				["2Buy 2g"] = true,
-				["2Buy Galinar"] = true,
-				["2Buy Herb/Ore"] = true,
-				["2Buy enchant mats"] = true,
-				["2Buy 150g"] = true,
-			},
-			["scrollvalue"] = 0,
-			["selected"] = "2Buy Clothgar",
-			["treesizable"] = true,
-			["treewidth"] = 175,
-			["fullwidth"] = 945,
 		},
 	},
 	["profiles"] = {
