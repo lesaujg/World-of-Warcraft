@@ -142,14 +142,10 @@ DBM_AllSavedOptions = {
 		["HPFrameMaxEntries"] = 5,
 		["DisableSFX"] = false,
 		["AutologBosses"] = false,
-		["SpecialWarningFlashDura4"] = 0.7,
+		["DontShowRespawn"] = false,
 		["HideApplicantAlerts"] = 0,
 		["DontShowBossAnnounces"] = false,
-		["SpecialWarningFlashCol3"] = {
-			1, -- [1]
-			0, -- [2]
-			0, -- [3]
-		},
+		["HUDSize4"] = 5,
 		["WarningColors"] = {
 			{
 				["r"] = 0.411764705882353,
@@ -174,28 +170,28 @@ DBM_AllSavedOptions = {
 		},
 		["SpecialWarningSound2"] = "Sound\\Creature\\AlgalonTheObserver\\UR_Algalon_BHole01.ogg",
 		["SWarningAlphabetical"] = true,
-		["DontShowFlexMessage"] = false,
-		["BlockNoteShare"] = false,
 		["HUDTexture4"] = "highlight",
+		["BlockNoteShare"] = false,
+		["DontShowFlexMessage"] = false,
 		["FilterSelfHud"] = true,
-		["WarningY"] = 260,
+		["RaidWarningSound"] = "Sound\\Doodad\\BellTollNightElf.ogg",
 		["ModelSoundValue"] = "Short",
 		["HUDColor3"] = {
 			1, -- [1]
 			0.5, -- [2]
 			0, -- [3]
 		},
-		["CustomSounds"] = 0,
-		["FilterInterrupt"] = true,
+		["DontRestoreRange"] = false,
+		["HUDTexture2"] = "highlight",
 		["RangeFrameRadarPoint"] = "CENTER",
 		["SpecialWarningY"] = 75,
 		["SpecialWarningFont"] = "Interface\\Addons\\Tukui\\medias\\fonts\\normal_font.ttf",
 		["WarningDuration"] = 4,
 		["RangeFrameUpdates"] = "Average",
-		["AutoCorrectTimer"] = false,
+		["CountdownVoice3v2"] = "HoTS_R",
 		["SpecialWarningFlashRepeat3"] = true,
-		["RaidWarningSound"] = "Sound\\Doodad\\BellTollNightElf.ogg",
-		["DontRestoreRange"] = false,
+		["WarningY"] = 260,
+		["CustomSounds"] = 0,
 		["HideGarrisonUpdates"] = true,
 		["ShowTranscriptorMessage"] = true,
 		["RoleSpecAlert"] = true,
@@ -226,12 +222,12 @@ DBM_AllSavedOptions = {
 		["SpecialWarningFlashRepeat4"] = false,
 		["CountdownVoice"] = "Corsica",
 		["SpecialWarningFlashRepeat2"] = false,
-		["DontShowUserTimers"] = false,
+		["CountdownVoice3"] = "Pewsey",
 		["AutoRespond"] = true,
 		["SpecialWarningFlashRepeat5"] = true,
 		["DisableStatusWhisper"] = false,
 		["HealthFrameGrowUp"] = false,
-		["CountdownVoice3"] = "Pewsey",
+		["DontShowUserTimers"] = false,
 		["RangeFrameFrames"] = "radar",
 		["DontPlayCountdowns"] = false,
 		["ShowBigBrotherOnCombatStart"] = false,
@@ -244,16 +240,20 @@ DBM_AllSavedOptions = {
 		["VoiceOverSpecW"] = false,
 		["InfoFrameShowSelf"] = false,
 		["WarningFontShadow"] = true,
-		["CountdownVoice3v2"] = "HoTS_R",
-		["HUDTexture2"] = "highlight",
+		["AutoCorrectTimer"] = false,
+		["FilterInterrupt"] = true,
 		["DontShowBossTimers"] = false,
 		["HelpMessageShown3"] = false,
 		["ChatFrame"] = "DEFAULT_CHAT_FRAME",
 		["SpecialWarningSound3"] = "Sound\\Creature\\KilJaeden\\KILJAEDEN02.ogg",
-		["HUDSize4"] = 5,
+		["SpecialWarningFlashCol3"] = {
+			1, -- [1]
+			0, -- [2]
+			0, -- [3]
+		},
 		["WorldBossNearAlert"] = false,
 		["WarningX"] = 0,
-		["DontShowRespawn"] = false,
+		["SpecialWarningFlashDura4"] = 0.7,
 		["SpecialWarningFlashRepeatAmount"] = 2,
 		["AutoAcceptFriendInvite"] = false,
 		["WarningIconChat"] = true,
