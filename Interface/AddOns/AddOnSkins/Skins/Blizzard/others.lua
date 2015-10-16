@@ -162,12 +162,12 @@ function AS:Blizzard_Others()
 	AS:SetTemplate(_G["GeneralDockManagerOverflowButtonList"])
 
 	AS:SetTemplate(RolePollPopup, 'Default')
-	RolePollPopup:CreateShadow('Default')
+	AS:CreateShadow(RolePollPopup)
 	AS:SkinCloseButton(RolePollPopupCloseButton)
 	
 	AS:StripTextures(BasicScriptErrors)
 	AS:SetTemplate(BasicScriptErrors)
-	BasicScriptErrors:CreateShadow()
+	AS:CreateShadow(BasicScriptErrors)
 	AS:SkinButton(BasicScriptErrorsButton)
 	BasicScriptErrors:SetScale(AS.UIScale)
 	

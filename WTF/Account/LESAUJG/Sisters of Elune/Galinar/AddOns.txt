@@ -22,7 +22,7 @@ Auc-Stat-StdDev: disabled
 Auc-Util-FixAH: disabled
 Basic_Resources: disabled
 BeanCounter: disabled
-Claw: enabled
+Claw: disabled
 Enchantrix: disabled
 Enchantrix-Barker: disabled
 HandyNotes_DraenorTreasures: enabled

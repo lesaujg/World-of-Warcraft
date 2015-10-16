@@ -1008,9 +1008,23 @@ end
 -- _09_ Faction Lists --
 ------------------------------------
 
+function FIZ:Content(faction, from, to, name, rep)
+
+	if not faction then return 0 end
+	if not from then return 0 end
+	if not to then return 0 end
+	if not name then return 0 end
+	if not rep then return 0 end
+	if (type(rep) ~= "number") then return 0 end
+	if ((from<1) or (from>8)) then return 0 end
+	if ((to<1) or (to>8)) then return 0 end
+	if (from > to) then return 0 end
+	return 1
+end
+
 function FIZ:AddSpell(faction, from, to, name, rep, zone, limit)
 
-	if not faction then return end
+--[[--	if not faction then return end
 	if not from then return end
 	if not to then return end
 	if not name then return end
@@ -1018,8 +1032,8 @@ function FIZ:AddSpell(faction, from, to, name, rep, zone, limit)
 	if (type(rep) ~= "number") then return end
 	if ((from<1) or (from>8)) then return end
 	if ((to<1) or (to>8)) then return end
-	if (from > to) then return end
-
+	if (from > to) then return end								--]]--
+	if FIZ:Content(faction, from, to, name, rep) ~=1 then return end
 --[[--	FIZ_Initspellname(name)
 ---	FIZ:InitMapName(zone)
 
@@ -1064,7 +1078,7 @@ end
 
 function FIZ:AddMob(faction, from, to, name, rep, zone, limit)
 
-	if not faction then return end
+--[[--	if not faction then return end
 	if not from then return end
 	if not to then return end
 	if not name then return end
@@ -1072,7 +1086,8 @@ function FIZ:AddMob(faction, from, to, name, rep, zone, limit)
 	if (type(rep) ~= "number") then return end
 	if ((from<1) or (from>8)) then return end
 	if ((to<1) or (to>8)) then return end
-	if (from > to) then return end
+	if (from > to) then return end								--]]--
+	if FIZ:Content(faction, from, to, name, rep) ~=1 then return end
 
 	rep = rep * FIZ:InitFactor(FIZ_IsHuman,FIZ_faction)
 	faction = string.lower(FIZ:InitFaction(FIZ_GuildName,faction))
@@ -1114,7 +1129,7 @@ end
 
 function FIZ:AddQuest(faction, from, to, name, rep, itemList, limitType)
 
-	if not faction then return end
+--[[--	if not faction then return end
 	if not from then return end
 	if not to then return end
 	if not name then return end
@@ -1122,7 +1137,8 @@ function FIZ:AddQuest(faction, from, to, name, rep, itemList, limitType)
 	if (type(rep) ~= "number") then return end
 	if ((from<1) or (from>8)) then return end
 	if ((to<1) or (to>8)) then return end
-	if (from > to) then return end
+	if (from > to) then return end								--]]--
+	if FIZ:Content(faction, from, to, name, rep) ~=1 then return end
 
 	rep = rep * FIZ:InitFactor(FIZ_IsHuman,FIZ_faction)
 	faction = string.lower(FIZ:InitFaction(FIZ_GuildName,faction))
@@ -1174,7 +1190,8 @@ function FIZ:AddQuest(faction, from, to, name, rep, itemList, limitType)
 end
 
 function FIZ:AddInstance(faction, from, to, name, rep, heroic)
-	if not faction then return end
+
+--[[--	if not faction then return end
 	if not from then return end
 	if not to then return end
 	if not name then return end
@@ -1182,7 +1199,8 @@ function FIZ:AddInstance(faction, from, to, name, rep, heroic)
 	if (type(rep) ~= "number") then return end
 	if ((from<1) or (from>8)) then return end
 	if ((to<1) or (to>8)) then return end
-	if (from > to) then return end
+	if (from > to) then return end								--]]--
+	if FIZ:Content(faction, from, to, name, rep) ~=1 then return end
 
 	rep = rep * FIZ:InitFactor(FIZ_IsHuman,FIZ_faction)
 	faction = string.lower(FIZ:InitFaction(FIZ_GuildName,faction))
@@ -1214,21 +1232,22 @@ function FIZ:AddInstance(faction, from, to, name, rep, heroic)
 		add_count.name = name
 		add_count.rep = rep
 		add_count.maxStanding = to
+		if ((standing == to) and limit) then
+			add_count.limit = limit
+		end
+
 		add_count.level = (heroic and
 			 FIZ_TXT.heroic
 		or
 			FIZ_TXT.normal
 		)
-		if ((standing == to) and limit) then
-			add_count.limit = limit
-		end
-
 		FIZ:Debug("Added instance ["..name.."] for faction ["..faction.."] and standing [".._G["FACTION_STANDING_LABEL"..standing].."]")
 	end
 end
 
 function FIZ:AddItems(faction, from, to, rep, itemList)
-	if not faction then return end
+
+--[[--	if not faction then return end
 	if not from then return end
 	if not to then return end
 	if not rep then return end
@@ -1236,7 +1255,8 @@ function FIZ:AddItems(faction, from, to, rep, itemList)
 	if (type(rep) ~= "number") then return end
 	if ((from<1) or (from>8)) then return end
 	if ((to<1) or (to>8)) then return end
-	if (from > to) then return end
+	if (from > to) then return end								--]]--
+	if FIZ:Content(faction, from, to, itemList, rep) ~=1 then return end
 
 	rep = rep * FIZ:InitFactor(FIZ_IsHuman,FIZ_faction)
 	faction = string.lower(FIZ:InitFaction(FIZ_GuildName,faction))
@@ -1269,43 +1289,38 @@ function FIZ:AddItems(faction, from, to, rep, itemList)
 		local add_count=add_info.data[count]
 		add_count.rep = rep
 		add_count.maxStanding = to
+		if ((standing == to) and limit) then
+			add_count.limit = limit
+		end
+
 		if (itemList) then
 			add_count.items = {}
 			for item in pairs(itemList) do
 				add_count.items[item] = itemList[item]
 			end
 		end
-		if ((standing == to) and limit) then
-			add_count.limit = limit
-		end
-
 		FIZ:Debug("AddItem: Added items ["..itemString.."] for faction ["..faction.."] and standing [".._G["FACTION_STANDING_LABEL"..standing].."]")
 	end
 end
 
 function FIZ:AddGeneral(faction, from, to, name, rep, head, tip, tipList, flag)
-	if not faction then return end
+
+--[[--	if not faction then return end
 	if not from then return end
 	if not to then return end
-	if not rep then return end
 	if not name then return end
+	if not rep then return end
 	if (type(rep) ~= "number") then return end
 	if ((from<1) or (from>8)) then return end
 	if ((to<1) or (to>8)) then return end
-	if (from > to) then return end
-
-	if name == "1" then
-		name = FIZ_TXT.tfr
-		head = FIZ_TXT.tfr
-		tip = FIZ_TXT.nswts
-	else
-	end
+	if (from > to) then return end								--]]--
+	if FIZ:Content(faction, from, to, name, rep) ~=1 then return end
 
 	rep = rep * FIZ:InitFactor(FIZ_IsHuman,FIZ_faction)
 	faction = string.lower(FIZ:InitFaction(FIZ_GuildName,faction))
 	--- f_ag	FIZ:Printtest(faction,FIZ_faction,"gen") 
-
 	local tipString = ""
+
 	for standing = from,to do
 		local faction_info = FIZ_FactionGain[faction]
 		if not faction_info then
@@ -1330,11 +1345,21 @@ function FIZ:AddGeneral(faction, from, to, name, rep, head, tip, tipList, flag)
 		add_info.data[count] = {}
 		local add_count=add_info.data[count]
 		add_count.name = name
+		add_count.rep = rep
+		add_count.maxStanding = to
+		if ((standing == to) and limit) then
+			add_count.limit = limit
+		end
+
+		if name == "1" then
+			name = FIZ_TXT.tfr
+			head = FIZ_TXT.tfr
+			tip = FIZ_TXT.nswts
+		end
+
 		add_count.flag = flag
 		add_count.head = head
 		add_count.tip = tip
-		add_count.rep = rep
-		add_count.maxStanding = to
 		if (tipList) then
 			add_count.tipList = {}
 			for tip in pairs(tipList) do
@@ -1343,9 +1368,7 @@ function FIZ:AddGeneral(faction, from, to, name, rep, head, tip, tipList, flag)
 				add_count.tipList[tip] = tipList[tip]
 			end
 		end
-		if ((standing == to) and limit) then
-			add_count.limit = limit
-		end
+
 		FIZ:Debug("AddGeneral: Added general rep gain ["..name.."] for faction ["..faction.."] and standing [".._G["FACTION_STANDING_LABEL"..standing].."] with tooltip ["..tipString.."]")
 	end
 end
@@ -1550,7 +1573,7 @@ end
 FIZ_UPDATE_LIST_HEIGHT = 13
 
 function FIZ_UpdateList_Update()
-	-- usually called In conjuction with FIZ_BuildUpdateList
+	-- usually called In conjuction with FIZ:BuildUpdateList
 	--fpt hed ful_u	FIZ:Printtest("","","ful_u 1")
 	if (not FIZ_ReputationDetailFrame:IsVisible()) then return end
 
@@ -1898,7 +1921,7 @@ function FIZ:BuildUpdateList() --xxx
 								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.mob2, bul_name)
 								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.reputation, FUL_I.rep)
 
-								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.FIZ_TXT.toDo, FUL_I.times)
+								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, FIZ_TXT.toDo, FUL_I.times)
 
 								FUL_I_TD[x], x = FIZ:Update_Tooltip(x, " ", " ")
 

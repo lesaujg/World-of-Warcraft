@@ -376,11 +376,13 @@ function FIZ_InitEnFactionGains(guildName)
 	--375		
 	if (FIZ_IsAlliance) then		
 	-- Aliance Cities		
-	-- Darnassus 69		
-		FIZ:AddQuest(69, 4, 8, Quest.mc_cook_dq, 250, "nil", FIZ_LIMIT_TYPE_Cook)	
-		FIZ:AddQuest(69, 4, 8, Quest.oc_cook_dq, 65, "nil", FIZ_LIMIT_TYPE_Cook)	
-		FIZ:AddQuest(69, 4, 8, Quest.mc_fish_dq, 250, "nil", FIZ_LIMIT_TYPE_Fish)	
-		FIZ:AddQuest(69, 4, 8, Quest.oc_fish_dq, 65, "nil", FIZ_LIMIT_TYPE_Fish)	
+	-- Darnassus 69	
+		FIZ:AddQuest(69, 4, 8, Quest.mc_cook_dq, 250, "nil", FIZ_LIMIT_TYPE_Cook)
+		FIZ:AddQuest(69, 4, 8, Quest.oc_cook_dq, 65, "nil", FIZ_LIMIT_TYPE_Cook)
+		FIZ:AddQuest(69, 4, 8, Quest.mc_fish_dq, 250, "nil", FIZ_LIMIT_TYPE_Fish)
+		FIZ:AddQuest(69, 4, 8, Quest.oc_fish_dq, 65, "nil", FIZ_LIMIT_TYPE_Fish)
+		FIZ:AddQuest(69, 8, 5, Quest.oc_fish_dq, 65, "nil", FIZ_LIMIT_TYPE_Fish)
+		FIZ:AddGeneral(69, 4, 8, "Max number of daily quests", 1500, "Max number of daily quests", "The max number of dallies is 5", nil, 0)
 	---- spillover from Alterac Valley		
 		FIZ:AddQuest(69, 4, 8, 7386, 18.75, {[17423] = 5})	
 		FIZ:AddQuest(69, 4, 8, 6881, 2.5, {[17423] = 1})	

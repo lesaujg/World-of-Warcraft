@@ -1,0 +1,11 @@
+tag 2.1.0.16
+9584b9892051889491db58658ee0e1b5e3441964
+Benjamin Staneck <staneck@gmail.com>
+2015-10-14 01:36:56 +0200
+
+
+
+--------------------
+
+Benjamin Staneck:
+	- Fix to aura_env change

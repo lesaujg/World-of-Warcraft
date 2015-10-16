@@ -436,7 +436,7 @@
 						else			
 							PlaySound("igMainMenuOptionCheckBoxOff");		
 						end			
-						FIZ_BuildUpdateList()			
+						FIZ:BuildUpdateList()			
 						FIZ_UpdateList_Update()			
 					</OnClick>				
 					<OnEnter>				
@@ -472,7 +472,7 @@
 						else			
 							PlaySound("igMainMenuOptionCheckBoxOff");		
 						end			
-						FIZ_BuildUpdateList()			
+						FIZ:BuildUpdateList()			
 						FIZ_UpdateList_Update()			
 					</OnClick>				
 					<OnEnter>				
@@ -508,7 +508,7 @@
 						else			
 							PlaySound("igMainMenuOptionCheckBoxOff");		
 						end			
-						FIZ_BuildUpdateList()			
+						FIZ:BuildUpdateList()			
 						FIZ_UpdateList_Update()			
 					</OnClick>				
 					<OnEnter>				
@@ -544,7 +544,7 @@
 						else			
 							PlaySound("igMainMenuOptionCheckBoxOff");		
 						end			
-						FIZ_BuildUpdateList()			
+						FIZ:BuildUpdateList()			
 						FIZ_UpdateList_Update()			
 					</OnClick>				
 					<OnEnter>				
@@ -580,7 +580,7 @@
 						else			
 							PlaySound("igMainMenuOptionCheckBoxOff");		
 						end			
-						FIZ_BuildUpdateList()			
+						FIZ:BuildUpdateList()			
 						FIZ_UpdateList_Update()			
 					</OnClick>				
 					<OnEnter>				
@@ -606,7 +606,7 @@
 						FIZ_Data.ShowInstances = true			
 						FIZ_Data.ShowItems = true			
 						PlaySound("igMainMenuOptionCheckBoxOn");			
-						FIZ_BuildUpdateList()			
+						FIZ:BuildUpdateList()			
 						FIZ_UpdateList_Update()			
 					</OnClick>				
 					<OnEnter>				
@@ -631,7 +631,7 @@
 						FIZ_Data.ShowInstances = nil			
 						FIZ_Data.ShowItems = nil			
 						PlaySound("igMainMenuOptionCheckBoxOff");			
-						FIZ_BuildUpdateList()			
+						FIZ:BuildUpdateList()			
 						FIZ_UpdateList_Update()			
 					</OnClick>				
 					<OnEnter>				
@@ -693,7 +693,7 @@
 				<Scripts>					
 					<OnClick>				
 						PlaySound("igMainMenuOptionCheckBoxOff");			
-						FIZ_SupressNone(false)			
+						FIZ:SupressNone(false)			
 					</OnClick>				
 					<OnEnter>				
 						FIZ_ShowHelpToolTip(self, self:GetName())			
@@ -713,7 +713,7 @@
 				<Scripts>					
 					<OnClick>				
 						PlaySound("igMainMenuOptionCheckBoxOff");			
-						FIZ_SupressNone(true)			
+						FIZ:SupressNone(true)			
 					</OnClick>				
 					<OnEnter>				
 						FIZ_ShowHelpToolTip(self, self:GetName())			
@@ -734,7 +734,7 @@
 				<Scripts>					
 					<OnClick>				
 						PlaySound("igMainMenuOptionCheckBoxOff");			
-						FIZ_ClearSessionGain()			
+						FIZ:ClearSessionGain()			
 					</OnClick>				
 					<OnEnter>				
 						FIZ_ShowHelpToolTip(self, self:GetName())			
@@ -1385,4 +1385,4 @@
 -->									
 <!--> ============================================================================================================== <-->									
 									
-</Ui>									
+</Ui>

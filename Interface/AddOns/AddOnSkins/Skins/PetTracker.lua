@@ -18,6 +18,7 @@ function AS:PetTracker()
 	AS:StripTextures(PetTrackerMapFilter, true)
 	AS:SkinEditBox(PetTrackerMapFilter)
 	AS:SkinTooltip(PetTrackerMapFilterSuggestions)
+
 	for i = 1, PetTrackerMapFilterSuggestions:GetNumChildren() do
 		local Button = select(i, PetTrackerMapFilterSuggestions:GetChildren())
 		Button:SetFrameLevel(PetTrackerMapFilterSuggestions:GetFrameLevel() + 1)
@@ -58,7 +59,7 @@ function AS:PetTracker()
 			end
 			for i = 1, 6 do
 				if not _G['PetTrackerBattleSlot'..i].IsSkinned then
-					_G['PetTrackerBattleSlot'..i]:SetTemplate('Transparent')
+					AS:SetTemplate(_G['PetTrackerBattleSlot'..i], 'Transparent')
 					_G['PetTrackerBattleSlot'..i].Bg:Hide()
 					AS:SkinTexture(_G['PetTrackerBattleSlot'..i].Icon)
 					_G['PetTrackerBattleSlot'..i].IconBorder:Hide()
@@ -120,7 +121,7 @@ function AS:PetTracker()
 				end
 				self.IsSkinned = true
 				for i = 1, 3 do
-					_G['PetTrackerJournalSlot'..i]:SetTemplate('Transparent')
+					AS:SetTemplate(_G['PetTrackerJournalSlot'..i], 'Transparent')
 					_G['PetTrackerJournalSlot'..i].Bg:Hide()
 					_G['PetTrackerJournalSlot'..i].Quality:Hide()
 					_G['PetTrackerJournalSlot'..i].Hover:Kill()
@@ -172,13 +173,15 @@ function AS:PetTracker()
 		end
 	end
 
-	for i = 1, 6 do
-        local button = _G["PetTrackerAbilityAction"..i]
-        if button then
-            AS:SkinIconButton(button)
-			AS:SkinTexture(button.Icon)
-        end
-    end
+	AS:Delay(5, function()
+		for i = 1, 6 do
+			local button = _G["PetTrackerAbilityAction"..i]
+			if button then
+				AS:SkinIconButton(button)
+				AS:SkinTexture(button.Icon)
+			end
+		end
+	end);
 end
 
 AS:RegisterSkin('PetTracker', AS.PetTracker)

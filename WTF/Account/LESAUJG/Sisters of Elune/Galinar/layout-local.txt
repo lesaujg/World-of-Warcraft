@@ -1,4 +1,11 @@
 Version: 1
+Frame: DBMMinimapButton
+FrameLevel: 3
+Anchor: TOPRIGHT
+X: -149
+Y: -123
+W: 32
+H: 32
 Frame: TSMMainFrame1
 FrameLevel: 13
 Anchor: BOTTOMLEFT
@@ -6,3 +13,10 @@ X: 0
 Y: 22
 W: 985
 H: 679
+Frame: _NPCScanButton
+FrameLevel: 1
+Anchor: BOTTOM
+X: 0
+Y: 128
+W: 150
+H: 42
