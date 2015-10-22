@@ -1174,9 +1174,15 @@ GTFO.SpellID["182522"] = {
 
 GTFO.SpellID["188072"] = {
 	--desc = "Fel Destruction (Orb of Destruction)";
-	sound = 2;
 	alwaysAlert = true;
-	test = true;
+	soundFunction = function() -- Slow down spam
+		if (GTFO_FindEvent("FelFail")) then
+			return 0;
+		end
+		GTFO_AddEvent("FelFail", 1.5);
+		return 1;
+	end	
+	
 };
 
 GTFO.SpellID["187103"] = {
@@ -1268,6 +1274,12 @@ GTFO.SpellID["182600"] = {
 GTFO.SpellID["182218"] = {
 	--desc = "Felblaze Residue (Socrethar)";
 	sound = 1;
+	vehicle = true;
+};
+
+GTFO.SpellID["181653"] = {
+	--desc = "Fel Crystals (Fel Lord Zakuun)";
+	sound = 1;
 };
 
 GTFO.SpellID["186063"] = {
@@ -1316,6 +1328,11 @@ GTFO.SpellID["183586"] = {
 
 GTFO.SpellID["187255"] = {
 	--desc = "Nether Storm (Archimonde)";
+	sound = 1;
+};
+
+GTFO.SpellID["188796"] = {
+	--desc = "Fel Corruption (Archimonde)";
 	sound = 1;
 };
 

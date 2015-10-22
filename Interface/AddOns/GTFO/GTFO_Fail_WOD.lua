@@ -260,6 +260,11 @@ GTFO.SpellID["187632"] = {
 	ignoreSelfInflicted = true;
 };
 
+GTFO.SpellID["172992"] = {
+	--desc = "Rigged Rifle Shot";
+	sound = 3;
+	alwaysAlert = true;
+};
 
 --TODO: Colossal Slam (Drov the Ruiner) - non-tank fail for front-cone damage
 --TODO: Rumbling Goren (Drov the Ruiner) - non-tank fail?
@@ -1129,6 +1134,11 @@ GTFO.SpellID["183226"] = {
 	sound = 3;
 };
 
+GTFO.SpellID["184681"] = {
+	--desc = "Wailing Horror (Hellfire Council)";
+	sound = 3;
+};
+
 GTFO.SpellID["182525"] = {
 	--desc = "Bursting Ulcer (Gorefiend)";
 	sound = 3;
@@ -1175,4 +1185,27 @@ GTFO.SpellID["180017"] = {
 GTFO.SpellID["181180"] = {
 	--desc = "Inferno (Mannoroth)";
 	sound = 3;
+};
+
+GTFO.SpellID["181498"] = {
+	--desc = "Wake of Destruction (Fel Lord Zakuun)";
+	sound = 3;
+	affirmingDebuffSpellID = 182008; -- Latent Energy
+};
+
+GTFO.SpellID["189596"] = {
+	--desc = "Protocol: Crowd Control (Construct Peacekeeper)";
+	sound = 3;
+};
+
+GTFO.SpellID["188500"] = {
+	--desc = "Soul Dispersion (Socrethar)";
+	sound = 3;
+	vehicle = true;
+};
+
+GTFO.SpellID["182900"] = {
+	--desc = "Virulent Haunt (Socrethar)";
+	sound = 3;
+	applicationOnly = true;
 };
