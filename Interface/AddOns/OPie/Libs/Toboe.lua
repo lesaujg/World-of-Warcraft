@@ -1,5 +1,4 @@
-local E, tip, _, T = {}, CreateFrame("GameTooltip"), ...
-tip:AddFontStrings(tip:CreateFontString(), tip:CreateFontString())
+local E, _, T = {}, ...
 
 do -- Is*InRange
 	local m = {[0]=0, 1, [true]=1, [false]=0}
@@ -13,25 +12,9 @@ do -- Is*InRange
 	end
 end
 
-function E.GetNumTalents()
-	return 21
-end
-function E.GetTalentInfo(id, isInspect, talentGroup, inspectedUnit, _classId)
-	local col = ((id-1) % 3)+1
-	local row = 1 + (id - col)/3
-	local _sid, name, tex, selected, available = GetTalentInfo(row, col, talentGroup or GetActiveSpecGroup() or 1, isInspect, inspectedUnit)
-	return name, tex, row, col, selected, available
-end
-function E.GetTalentSpellForSpecialization(id, spec)
-	tip:SetOwner(UIParent, "ANCHOR_NONE")
-	local col = ((id-1) % 3)+1
-	tip:SetTalent((GetTalentInfoBySpecialization(spec or GetSpecialization() or 1, 1 + (id - col)/3, col)))
-	return tip:GetSpell()
-end
-
 E.MAX_ACCOUNT_MACROS = 120
 do -- Macro icons and file data
-	local tex = tip:CreateTexture()
+	local tex = UIParent:CreateTexture()
 	local function resolveIcon(i, ...)
 		if type(i) == "number" then
 			return (tex:SetToFileData(i) and nil) or (tex:GetTexture() or "Temp"):match("[^\\]+$"), ...

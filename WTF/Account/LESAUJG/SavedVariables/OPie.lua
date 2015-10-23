@@ -3,7 +3,7 @@ OneRing_Config = {
 	["CharProfiles"] = {
 	},
 	["_GameVersion"] = "6.2.2.20574",
-	["_OPieVersion"] = "Tomato 3 (3.81)",
+	["_OPieVersion"] = "Tomato 4 (3.82)",
 	["ProfileStorage"] = {
 		["default"] = {
 			["ClickActivation"] = true,
@@ -36,9 +36,9 @@ OneRing_Config = {
 					["id"] = 83245,
 					["sliceToken"] = "ABueyhiySOp",
 				}, -- [5]
-				["name"] = "Pets",
-				["save"] = true,
 				["hotkey"] = "ALT-W",
+				["save"] = true,
+				["name"] = "Pets",
 				["limit"] = "Bracnar-SistersofElune",
 			},
 			["OPieFlagStore"] = {
@@ -70,9 +70,9 @@ OneRing_Config = {
 					113543, -- [2]
 					["sliceToken"] = "ABuey13UZ3p",
 				}, -- [5]
-				["name"] = "Useful Items",
-				["save"] = true,
 				["hotkey"] = "ALT-E",
+				["save"] = true,
+				["name"] = "Useful Items",
 				["limit"] = "Bracnar-SistersofElune",
 			},
 		},

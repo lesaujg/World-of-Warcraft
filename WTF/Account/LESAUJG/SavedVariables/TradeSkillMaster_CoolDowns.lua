@@ -34,20 +34,20 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Alchemical Catalyst",
 					["players"] = {
 						["Bracnar"] = {
-							["CoolDownTime"] = 1445508040.675,
+							["CoolDownTime"] = 1445594477.331,
 							["knownCraft"] = true,
 						},
 					},
 					["spellID"] = 156587,
 				},
-				[140050] = {
-					["Name"] = "Serpent's Heart",
+				[53771] = {
+					["Name"] = "Eternal Shadow",
 					["players"] = {
-						["Uldaris"] = {
+						["Bracnar"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 140050,
+					["spellID"] = 53771,
 				},
 				[53781] = {
 					["Name"] = "Eternal Air",
@@ -67,14 +67,14 @@ TradeSkillMaster_CoolDownsDB = {
 					},
 					["spellID"] = 131688,
 				},
-				[53771] = {
-					["Name"] = "Eternal Shadow",
+				[140050] = {
+					["Name"] = "Serpent's Heart",
 					["players"] = {
-						["Bracnar"] = {
+						["Uldaris"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 53771,
+					["spellID"] = 140050,
 				},
 				[53773] = {
 					["Name"] = "Eternal Fire",
@@ -94,14 +94,14 @@ TradeSkillMaster_CoolDownsDB = {
 					},
 					["spellID"] = 53775,
 				},
-				[131695] = {
-					["Name"] = "Facets of Research",
+				[53777] = {
+					["Name"] = "Eternal Earth",
 					["players"] = {
-						["Uldaris"] = {
+						["Bracnar"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 131695,
+					["spellID"] = 53777,
 				},
 				[53779] = {
 					["Name"] = "Eternal Earth",
@@ -170,6 +170,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Taladite Crystal",
 					["players"] = {
 						["Uldaris"] = {
+							["CoolDownTime"] = 1445594448.114,
 							["knownCraft"] = true,
 						},
 					},
@@ -211,14 +212,14 @@ TradeSkillMaster_CoolDownsDB = {
 					},
 					["spellID"] = 80244,
 				},
-				[131690] = {
-					["Name"] = "Facets of Research",
+				[17560] = {
+					["Name"] = "Essence of Earth",
 					["players"] = {
-						["Uldaris"] = {
+						["Bracnar"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 131690,
+					["spellID"] = 17560,
 				},
 				[78866] = {
 					["Name"] = "Random Volatile Element",
@@ -238,14 +239,14 @@ TradeSkillMaster_CoolDownsDB = {
 					},
 					["spellID"] = 114780,
 				},
-				[176058] = {
-					["Name"] = "Secret of Draenor Tailoring",
+				[17562] = {
+					["Name"] = "Essence of Air",
 					["players"] = {
-						["Galinar"] = {
+						["Bracnar"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 176058,
+					["spellID"] = 17562,
 				},
 				[177043] = {
 					["Name"] = "Secret of Draenor Enchanting",
@@ -283,32 +284,32 @@ TradeSkillMaster_CoolDownsDB = {
 					},
 					["spellID"] = 28582,
 				},
-				[28583] = {
-					["Name"] = "Primal Mana",
+				[176089] = {
+					["Name"] = "Secret of Draenor Leatherworking",
 					["players"] = {
-						["Bracnar"] = {
+						["Uldaris"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 28583,
+					["spellID"] = 176089,
 				},
-				[17559] = {
-					["Name"] = "Essence of Fire",
+				[28584] = {
+					["Name"] = "Primal Earth",
 					["players"] = {
 						["Bracnar"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 17559,
+					["spellID"] = 28584,
 				},
-				[17560] = {
-					["Name"] = "Essence of Earth",
+				[131690] = {
+					["Name"] = "Facets of Research",
 					["players"] = {
-						["Bracnar"] = {
+						["Uldaris"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 17560,
+					["spellID"] = 131690,
 				},
 				[17561] = {
 					["Name"] = "Essence of Water",
@@ -319,14 +320,14 @@ TradeSkillMaster_CoolDownsDB = {
 					},
 					["spellID"] = 17561,
 				},
-				[17562] = {
-					["Name"] = "Essence of Air",
+				[176058] = {
+					["Name"] = "Secret of Draenor Tailoring",
 					["players"] = {
-						["Bracnar"] = {
+						["Galinar"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 17562,
+					["spellID"] = 176058,
 				},
 				[17563] = {
 					["Name"] = "Essence of Water",
@@ -508,28 +509,29 @@ TradeSkillMaster_CoolDownsDB = {
 					},
 					["spellID"] = 53774,
 				},
-				[28584] = {
-					["Name"] = "Primal Earth",
+				[17559] = {
+					["Name"] = "Essence of Fire",
 					["players"] = {
 						["Bracnar"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 28584,
+					["spellID"] = 17559,
 				},
-				[176089] = {
-					["Name"] = "Secret of Draenor Leatherworking",
+				[28583] = {
+					["Name"] = "Primal Mana",
 					["players"] = {
-						["Uldaris"] = {
+						["Bracnar"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 176089,
+					["spellID"] = 28583,
 				},
 				[171391] = {
 					["Name"] = "Burnished Leather",
 					["players"] = {
 						["Uldaris"] = {
+							["CoolDownTime"] = 1445594440.383,
 							["knownCraft"] = true,
 						},
 					},
@@ -566,7 +568,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Temporal Crystal",
 					["players"] = {
 						["Bracnar"] = {
-							["CoolDownTime"] = 1445508056.691,
+							["CoolDownTime"] = 1445594484.632,
 							["knownCraft"] = true,
 						},
 					},
@@ -581,14 +583,14 @@ TradeSkillMaster_CoolDownsDB = {
 					},
 					["spellID"] = 73478,
 				},
-				[53777] = {
-					["Name"] = "Eternal Earth",
+				[131695] = {
+					["Name"] = "Facets of Research",
 					["players"] = {
-						["Bracnar"] = {
+						["Uldaris"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 53777,
+					["spellID"] = 131695,
 				},
 			},
 		},

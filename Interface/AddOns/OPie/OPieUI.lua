@@ -184,7 +184,7 @@ local function updateCentralElements(self, si)
 	end
 	self.oldSlice = si
 end
-local function updateSlice(self, selected, tok, usable, state, icon, _, count, cd, cd2, tf, ta, ext)
+local function updateSlice(self, selected, tok, usable, state, icon, _, count, cd, cd2, _tf, _ta, ext)
 	state, icon, ext, usable = state or 0, tokenIcon[tok] or icon or "Interface/Icons/INV_Misc_QuestionMark", not tokenIcon[tok] and ext or nil, usable or (state and usable ~= false) or false
 	local active, overlay, faded, usableCharge, r,g,b = state % 2 > 0, state % 4 > 1, not usable, usable or (state % 128 >= 64)
 	self:SetIcon(icon)

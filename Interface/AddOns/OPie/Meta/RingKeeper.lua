@@ -108,6 +108,9 @@ local RK_ParseMacro, RK_QuantizeMacro do -- +RingKeeper:SetMountPreference(groun
 		end
 	end
 	local parseLine, quantizeLine, prepareQuantizer do
+		local tip = CreateFrame("GameTooltip")
+		tip:AddFontStrings(tip:CreateFontString(), tip:CreateFontString())
+		tip:SetOwner(UIParent, "ANCHOR_NONE")
 		parseLine = genLineParser(function(value)
 			local prefix, tkey, tval = value:match("^%s*(!?)%s*{{(%a+):([%a%d/]+)}}%s*$")
 			if tkey == "spell" then
@@ -134,11 +137,14 @@ local RK_ParseMacro, RK_QuantizeMacro do -- +RingKeeper:SetMountPreference(groun
 					spells[sname:lower()] = sid
 				end
 			end
-			for j=1,GetNumSpecializations() do
-				for i=1,GetNumTalents() do
-					local name, _, id = GetTalentSpellForSpecialization(i, j)
-					if id and type(name) == "string" then
-						spells[name:lower()] = id
+			for spec=1,GetNumSpecializations() do
+				for tier=1, MAX_TALENT_TIERS do
+					for column=1, 3 do
+						tip:SetTalent(GetTalentInfoBySpecialization(spec, tier, column))
+						local name, _, id = tip:GetSpell()
+						if id and type(name) == "string" then
+							spells[name:lower()] = id
+						end
 					end
 				end
 			end

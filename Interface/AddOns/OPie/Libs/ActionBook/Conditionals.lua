@@ -130,11 +130,13 @@ end
 do -- talent:tier.num/name
 	local cur, levels = false, CLASS_TALENT_LEVELS[playerClass] or CLASS_TALENT_LEVELS.DEFAULT
 	local function updateTalents()
-		local s
-		for i=1,GetNumTalents() do
-			local name, _, tier, column, selected = GetTalentInfo(i)
-			if selected then
-				s = (s and s .. "/" or "") .. tier .. "." .. column .. "/" .. levels[tier] .. "." .. column .. "/" .. name
+		local ag, s = (GetActiveSpecGroup() or 1)
+		for tier=1, MAX_TALENT_TIERS do
+			for column=1, 3 do
+				local _, name, _, selected = GetTalentInfo(tier, column, ag)
+				if name and selected then
+					s = (s and s .. "/" or "") .. tier .. "." .. column .. "/" .. levels[tier] .. "." .. column .. "/" .. name
+				end
 			end
 		end
 		if s ~= cur then

@@ -1,4 +1,4 @@
-local api, MAJ, REV, _, T = {}, 1, 6, ...
+local api, MAJ, REV, _, T = {}, 1, 7, ...
 if T.ActionBook then return end
 local KR = assert(T.Kindred:compatible(1,8), "A compatible version of Kindred is required.")
 
@@ -264,9 +264,11 @@ local setCommandHinter, getMacroHint, getCommandHint, getCommandHintRaw do
 			cDepth = cDepth + 1
 			local res = store(securecall(hf, slash, args, args2, target, modState, priLimit))
 			cDepth = cDepth - 1
-			if priLimit then
+			if res == "stop" then
+				return res, pri
+			elseif priLimit then
 				return res, (res ~= true and res or pri) + (priBias or 0)
-			elseif res and res ~= "stop" then
+			elseif res then
 				return res, unpack(ht2, 1, ht2[0])
 			end
 		elseif not pri then

@@ -173,7 +173,10 @@ do -- ext.config.bind
 	local function IsCapturingBinding(self)
 		return activeCaptureButton == self;
 	end
-	local function bindNameLookup(capture) return _G["KEY_" .. capture]; end
+	local specialSymbolMap = {OPEN="[", CLOSE="]", SEMICOLON=";"}
+	local function bindNameLookup(capture)
+		return specialSymbolMap[capture] or _G["KEY_" .. capture]
+	end
 	local function bindFormat(bind)
 		return bind and bind ~= "" and bind:gsub("[^%-]+$", bindNameLookup) or L"Not bound";
 	end

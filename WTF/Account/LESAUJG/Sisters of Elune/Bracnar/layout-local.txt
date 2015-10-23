@@ -13,13 +13,6 @@ X: 254
 Y: 95
 W: 250
 H: 411
-Frame: DBMMinimapButton
-FrameLevel: 3
-Anchor: TOPRIGHT
-X: -136
-Y: -115
-W: 32
-H: 32
 Frame: _NPCScanButton
 FrameLevel: 1
 Anchor: BOTTOM

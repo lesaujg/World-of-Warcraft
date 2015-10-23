@@ -1,4 +1,4 @@
-local api, MAJ, REV, execQueue, _, T = {}, 1, 10, {}, ...
+local api, MAJ, REV, execQueue, _, T = {}, 1, 11, {}, ...
 if T.ActionBook then return end
 
 local function assert(condition, err, ...)
@@ -11,13 +11,23 @@ local safequote do
 	end
 end
 
-local core = CreateFrame("FRAME", nil, nil, "SecureHandlerStateTemplate")
-core:SetFrameRef("sandbox", CreateFrame("FRAME", nil, nil, "SecureFrameTemplate"))
+local core = CreateFrame("FRAME", nil, nil, "SecureHandlerStateTemplate") do
+	core:SetFrameRef("sandbox", CreateFrame("FRAME", nil, nil, "SecureFrameTemplate"))
+	local bindProxy = CreateFrame("FRAME", nil, nil, "SecureFrameTemplate")
+	core:SetFrameRef("bindProxy", bindProxy)
+	core:WrapScript(bindProxy, "OnAttributeChanged", [=[--Kindred_Bind_OnAttributeChanged
+		local key = name:match("^state%-(bind%d+)$")
+		if not bindingDrivers[key] then return end
+		owner:Run(BindingLink_Move, key, true, value and rtgsub(value, "[^%-]+$", bindEscapeMap))
+	]=])
+end
 core:Execute([==[-- Kindred.Init
 	pcache, nextDriverKey, sandbox, modStateMap = newtable(), 4200, self:GetFrameRef("sandbox"), newtable()
 	cndType, cndState, cndDrivers, cndAlias, unitAlias, stateDrivers = newtable(), newtable(), newtable(), newtable(), newtable(), newtable()
 	modStateMap.A, modStateMap.a, modStateMap.S, modStateMap.s, modStateMap.C, modStateMap.c = true, false, true, false, true, false
 	btnState, isInLockdown, cndInsecure = newtable(), false, newtable()
+	bindingDrivers, bindingKeys, nextBindingKey, bindProxy, bindEscapeMap = newtable(), newtable(), 42000, self:GetFrameRef("bindProxy"), newtable()
+	bindEscapeMap.SEMICOLON, bindEscapeMap.OPEN, bindEscapeMap.CLOSE = ";", "[", "]"
 
 	OptionParse = [=[-- Kindred_OptionParse
 		local ret, conditional = newtable(), ...
@@ -168,11 +178,60 @@ core:Execute([==[-- Kindred.Init
 			end
 		end
 	]=]
+	BindingLink_Move = [=[-- Kindred_BindingLink_Move
+		local key, doInsert, newValue = ...
+		local link = bindingDrivers[key]
+		if not link then return end
+		local up, down, value = link.up, link.down, link.value
+		if up then
+			up.down, link.up = down
+		end
+		if down then
+			down.up, link.down = up
+		end
+		if value and not up then
+			bindingKeys[value] = down
+			if down then
+				bindProxy:SetBindingClick(down.priority > 0, value, down.target, down.button)
+				if down.notify then
+					down.notify:SetAttribute('binding-' .. down.button, value)
+				end
+			else
+				bindProxy:ClearBinding(value)
+			end
+		end
+		if doInsert then
+			newValue = (newValue or "") ~= "" and newValue or ""
+			link.value = newValue
+			if newValue then
+				local down, up = bindingKeys[newValue]
+				while down and down.priority > link.priority do
+					down, up = down.down, down
+				end
+				link.down, link.up = down, up
+				if down then
+					down.up = link
+				end
+				if up then
+					up.down = link
+				else
+					bindingKeys[newValue], link.down = link, down
+					bindProxy:SetBindingClick(link.priority > 0, newValue, link.target, link.button)
+				end
+				if down and down.notify and not up then
+					down.notify:SetAttribute('binding-' .. down.button, nil)
+				end
+			end
+		end
+		if link.notify then
+			link.notify:SetAttribute('binding-' .. link.button, doInsert and not link.up and newValue or nil)
+		end
+	]=]
 ]==])
-core:SetAttribute("RegisterStateDriver", [=[-- Kindred:RegisterStateDriver
+core:SetAttribute("RegisterStateDriver", [=[-- Kindred:RegisterStateDriver(*frame*, "state", "options")
 	local frame = owner:GetFrameRef("RegisterStateDriver-frame")
 	owner:SetAttribute("frameref-RegisterStateDriver-frame", nil)
-	if frame == nil then return owner:CallMethod("throw", 'Set the "RegisterStateDriver-frame" frameref before calling RegisterStateDriver."') end
+	if frame == nil then return owner:CallMethod("throw", 'Set the "RegisterStateDriver-frame" frameref before calling RegisterStateDriver.') end
 	local drivers, state, values = stateDrivers[frame], ...
 	local old = drivers and drivers[state]
 	if old then
@@ -260,11 +319,44 @@ core:SetAttribute("SetButtonState", [=[-- Kindred:SetButtonState("buttonid" or f
 	end
 	return ostate
 ]=])
+core:SetAttribute("RegisterBindingDriver", [=[-- Kindred:RegisterBindingDriver(*target*, "button", "options", priority[, *notify*])
+	local target, notify, button, options, priority = self:GetFrameRef("RegisterBindingDriver-target"), self:GetFrameRef("RegisterBindingDriver-notify"), ...
+	self:SetAttribute("frameref-RegisterStateDriver-target", nil)
+	self:SetAttribute("frameref-RegisterStateDriver-notify", nil)
+	if not target then return owner:CallMethod("throw", 'Set the "RegisterStateDriver-target" frameref before calling RegisterStateDriver.') end
+	bindingDrivers[target] = bindingDrivers[target] or newtable()
+	local driver = bindingDrivers[target][button] or newtable()
+	if driver.id then
+		bindProxy:SetAttribute("state-" .. driver.id, nil)
+	else
+		nextBindingKey, driver.id, driver.target, driver.button = nextBindingKey + 1, 'bind' .. nextBindingKey, target, button
+		bindingDrivers[target][button], bindingDrivers[driver.id] = driver, driver
+	end
+	driver.priority, driver.notify = priority, notify
+	self:SetAttribute("frameref-RegisterStateDriver-frame", bindProxy)
+	self:RunAttribute("RegisterStateDriver", driver.id, options)
+]=])
+core:SetAttribute("UnregisterBindingDriver", [=[-- Kindred:UnregisterBindingDriver(*target*, "button")
+	local target, button = self:GetFrameRef("UnregisterBindingDriver-target"), ...
+	self:SetAttribute("frameref-UnregisterBindingDriver-target", nil)
+	if not target then return owner:CallMethod("throw", 'Set the "UnregisterBindingDriver-target" frameref before calling UnregisterBindingDriver.') end
+	local drivers = bindingDrivers[target]
+	local driver = drivers and drivers[button]
+	if driver then
+		bindProxy:SetAttribute("state-" .. driver.id, nil)
+		self:SetAttribute("frameref-RegisterStateDriver-frame", bindProxy)
+		self:RunAttribute("RegisterStateDriver", driver.id, "")
+		drivers[button], bindingDrivers[driver.id] = nil
+		if not next(drivers) then
+			bindingDrivers[target] = nil
+		end
+	end
+]=])
 core:SetAttribute("_onstate-lockdown", [[-- Kindred:SyncLockdown
 	if newstate then
 		isInLockdown = newstate == "on"
 		self:SetAttribute("state-lockdown", nil)
-	else
+	elseif not isInLockdown then
 		for k in pairs(cndInsecure) do
 			if cndType[k] ~= "irun" then
 				cndInsecure[k] = nil
@@ -383,23 +475,42 @@ function api:SetAliasConditional(name, aliasFor)
 	assert(type(name) == "string" and type(aliasFor) == "string", 'Syntax: Kindred:SetAliasConditional("name", "aliasFor")')
 	core:DeferExecute(('cndAlias[%s] = %s\n owner:Run(RefreshDrivers, name)'):format(safequote(name), safequote(aliasFor)), name)
 end
-function api:PokeConditional(name)
-	assert(type(name) == "string", 'Syntax: Kindred:PokeConditional("name")')
-	core:DeferExecute(("owner:Run(RefreshDrivers, %s)"):format(safequote(name)), "_poke-" .. name)
-end
 function api:SetAliasUnit(alias, unit)
 	assert(type(alias) == "string" and (type(unit) == "string" or unit == nil), 'Syntax: Kindred:SetAliasUnit("alias", "unit" or nil)')
 	core:DeferExecute(('owner:RunAttribute("SetAliasUnit", %s, %s)'):format(safequote(alias), unit and safequote(unit) or "nil"), "_alias-" .. alias)
 end
+function api:PokeConditional(name)
+	assert(type(name) == "string", 'Syntax: Kindred:PokeConditional("name")')
+	core:DeferExecute(("owner:Run(RefreshDrivers, %s)"):format(safequote(name)), "_poke-" .. name)
+end
+
+function api:EvaluateCmdOptions(options, ...)
+	return EvaluateCmdOptions(options, ...)
+end
+
 function api:RegisterStateDriver(frame, state, values)
 	assert(type(frame) == "table" and type(state) == "string" and (values == nil or type(values) == "string"), 'Syntax: Kindred:RegisterStateDriver(frame, "state"[, "values"])')
 	assert(not InCombatLockdown(), 'Combat lockdown in effect')
 	core:SetFrameRef("RegisterStateDriver-frame", frame)
 	core:Execute(([[self:RunAttribute("RegisterStateDriver", %s, %s)]]):format(safequote(state), safequote(values or "")))
 end
-function api:EvaluateCmdOptions(options, ...)
-	return EvaluateCmdOptions(options, ...)
+function api:RegisterBindingDriver(target, button, options, priority, notify)
+	assert(type(target) == "table" and type(button) == "string" and type(options) == "string", 'Syntax: Kindred:RegisterBindingDriver(targetButton, "button", "options", priority, notifyFrame)')
+	assert(type(priority or 0) == "number", 'Binding priority must be a number')
+	assert(not InCombatLockdown(), 'Combat lockdown in effect')
+	if notify and assert(type(notify) == "table" and notify:IsProtected(), 'If specified, notifyFrame must be a protected frame.') then
+		core:SetFrameRef('RegisterBindingDriver-notify', notify)
+	end
+	core:SetFrameRef('RegisterBindingDriver-target', target)
+	core:Execute(('self:RunAttribute("RegisterBindingDriver", %s, %s, %d)'):format(safequote(button), safequote(options), priority or 0))
 end
+function api:UnregisterBindingDriver(target, button)
+	assert(type(target) == "table" and type(button) == "string", 'Syntax: Kindred:UnregisterBindingDriver(targetButton, "button")')
+	assert(not InCombatLockdown(), 'Combat lockdown in effect')
+	core:SetFrameRef('UnregisterBindingDriver-target', target)
+	core:Execute(('self:RunAttribute("UnregisterBindingDriver", %s)'):format(safequote(button)))
+end
+
 function api:seclib()
 	return core
 end
