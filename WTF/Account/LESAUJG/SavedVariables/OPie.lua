@@ -36,10 +36,10 @@ OneRing_Config = {
 					["id"] = 83245,
 					["sliceToken"] = "ABueyhiySOp",
 				}, -- [5]
-				["hotkey"] = "ALT-W",
-				["save"] = true,
-				["name"] = "Pets",
 				["limit"] = "Bracnar-SistersofElune",
+				["save"] = true,
+				["hotkey"] = "ALT-W",
+				["name"] = "Pets",
 			},
 			["OPieFlagStore"] = {
 				["FlushedDefaultColors"] = true,
@@ -70,10 +70,10 @@ OneRing_Config = {
 					113543, -- [2]
 					["sliceToken"] = "ABuey13UZ3p",
 				}, -- [5]
-				["hotkey"] = "ALT-E",
-				["save"] = true,
-				["name"] = "Useful Items",
 				["limit"] = "Bracnar-SistersofElune",
+				["save"] = true,
+				["hotkey"] = "ALT-E",
+				["name"] = "Useful Items",
 			},
 		},
 	},
