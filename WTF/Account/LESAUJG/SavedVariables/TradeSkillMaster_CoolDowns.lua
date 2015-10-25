@@ -34,7 +34,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Alchemical Catalyst",
 					["players"] = {
 						["Bracnar"] = {
-							["CoolDownTime"] = 1445670051.512,
+							["CoolDownTime"] = 1445756454.152,
 							["knownCraft"] = true,
 						},
 					},
@@ -170,7 +170,6 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Taladite Crystal",
 					["players"] = {
 						["Uldaris"] = {
-							["CoolDownTime"] = 1445670032.214,
 							["knownCraft"] = true,
 						},
 					},
@@ -248,14 +247,14 @@ TradeSkillMaster_CoolDownsDB = {
 					},
 					["spellID"] = 17559,
 				},
-				[53774] = {
-					["Name"] = "Eternal Water",
+				[60893] = {
+					["Name"] = "Alchemy: Northrend Alchemy Research",
 					["players"] = {
 						["Bracnar"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 53774,
+					["spellID"] = 60893,
 				},
 				[66660] = {
 					["Name"] = "King's Amber",
@@ -288,7 +287,6 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Secret of Draenor Leatherworking",
 					["players"] = {
 						["Uldaris"] = {
-							["CoolDownTime"] = 1445670023.992,
 							["knownCraft"] = true,
 						},
 					},
@@ -366,14 +364,14 @@ TradeSkillMaster_CoolDownsDB = {
 					},
 					["spellID"] = 17566,
 				},
-				[177043] = {
-					["Name"] = "Secret of Draenor Enchanting",
+				[53774] = {
+					["Name"] = "Eternal Water",
 					["players"] = {
 						["Bracnar"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 177043,
+					["spellID"] = 53774,
 				},
 				[131691] = {
 					["Name"] = "Facets of Research",
@@ -501,14 +499,14 @@ TradeSkillMaster_CoolDownsDB = {
 					},
 					["spellID"] = 11480,
 				},
-				[60893] = {
-					["Name"] = "Alchemy: Northrend Alchemy Research",
+				[177043] = {
+					["Name"] = "Secret of Draenor Enchanting",
 					["players"] = {
 						["Bracnar"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 60893,
+					["spellID"] = 177043,
 				},
 				[176058] = {
 					["Name"] = "Secret of Draenor Tailoring",
@@ -532,7 +530,6 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Burnished Leather",
 					["players"] = {
 						["Uldaris"] = {
-							["CoolDownTime"] = 1445670020.852,
 							["knownCraft"] = true,
 						},
 					},
@@ -569,7 +566,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Temporal Crystal",
 					["players"] = {
 						["Bracnar"] = {
-							["CoolDownTime"] = 1445670074.687,
+							["CoolDownTime"] = 1445756448.089,
 							["knownCraft"] = true,
 						},
 					},
