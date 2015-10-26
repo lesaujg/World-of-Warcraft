@@ -212,9 +212,9 @@ TradeSkillMaster_ShoppingDB = {
 		},
 		["previousSearches"] = {
 			"miscellaneous/mount", -- [1]
-			"Giant Dinosaur Bone/exact", -- [2]
-			"universal", -- [3]
-			"arcane c", -- [4]
+			"universal", -- [2]
+			"arcane c", -- [3]
+			"Giant Dinosaur Bone/exact", -- [4]
 			"Hula Girl Doll/exact/x1", -- [5]
 			"temporal crystal/exact", -- [6]
 			"Adamantite Frame/exact/x4", -- [7]
@@ -312,6 +312,7 @@ TradeSkillMaster_ShoppingDB = {
 			"Elixir of Major Strength/exact/x3", -- [99]
 			"Luminous Shard/exact/x7", -- [100]
 		},
+		["sidebarBtn"] = 2,
 	},
 	["profileKeys"] = {
 		["Sanjuri - Sisters of Elune"] = "Sanjuri - Sisters of Elune",
