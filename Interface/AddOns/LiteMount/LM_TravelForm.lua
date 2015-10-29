@@ -19,9 +19,9 @@ LM_TravelForm.__index = LM_TravelForm
 local LM_SPELL_GLYPH_OF_THE_STAG = 114338
 local LM_SPELL_GLYPH_OF_TRAVEL = 159456
 
-function LM_TravelForm:FlagsSet(f)
+function LM_TravelForm:CurrentFlagsSet(f)
 
-    local flags = self:Flags()
+    local flags = self:CurrentFlags()
 
     -- If we know Flight Form then Travel Form can't fly. Sigh.
     if self:SpellId() == LM_SPELL_TRAVEL_FORM then
@@ -34,8 +34,8 @@ function LM_TravelForm:FlagsSet(f)
     return bit.band(flags, f) == f
 end
 
-function LM_TravelForm:DefaultFlags(v)
-    local flags = LM_Mount.DefaultFlags(self, v)
+function LM_TravelForm:Flags(v)
+    local flags = LM_Mount.Flags(self, v)
 
     -- If we have glyph of travel then we can also "run"
     for i = 1, NUM_GLYPH_SLOTS do
@@ -56,7 +56,7 @@ end
 
 -- IsUsableSpell doesn't return false for Travel Form indoors like it should,
 -- because you can swim indoors with it (apparently).
-function LM_TravelForm:IsUsable(flags)
+function LM_TravelForm:IsUsable()
     if IsIndoors() and not IsSubmerged() then return false end
-    return LM_Spell.IsUsable(self, flags)
+    return LM_Spell.IsUsable(self)
 end

@@ -55,14 +55,16 @@ function LM_ItemSummoned:SetupActionButton(button)
     button:SetAttribute("item", self.itemName)
 end
 
-function LM_ItemSummoned:IsUsable(flags)
+function LM_ItemSummoned:IsUsable()
 
-    local spell = self:SpellId()
+    local spellId = self:SpellId()
 
     -- IsUsableSpell seems to test correctly whether it's indoors etc.
-    if spell and not IsUsableSpell(spell) then
+    if spellId and not IsUsableSpell(spellId) then
         return false
     end
+
+    local itemId = self:ItemId()
 
     if IsEquippableItem(itemId) then
         if not IsEquippedItem(itemId) then

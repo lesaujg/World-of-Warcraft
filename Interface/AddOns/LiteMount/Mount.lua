@@ -89,33 +89,13 @@ function LM_Mount:JournalIndex(v)
     return self.journalIndex
 end
 
-function LM_Mount:DefaultFlags(v)
+function LM_Mount:Flags(v)
     if v then self.flags = v end
     return self.flags
 end
 
-function LM_Mount:Flags()
+function LM_Mount:CurrentFlags()
     return LM_Options:ApplyMountFlags(self)
-end
-
-function LM_Mount:CanFly()
-    return self:FlagsSet(LM_FLAG_BIT_FLY)
-end
-
-function LM_Mount:CanRun()
-    return self:FlagsSet(LM_FLAG_BIT_RUN)
-end
-
-function LM_Mount:CanWalk()
-    return self:FlagsSet(LM_FLAG_BIT_WALK)
-end
-
-function LM_Mount:CanFloat()
-    return self:FlagsSet(LM_FLAG_BIT_FLOAT)
-end
-
-function LM_Mount:CanSwim()
-    return self:FlagsSet(LM_FLAG_BIT_SWIM)
 end
 
 function LM_Mount:CastTime()
@@ -123,12 +103,12 @@ function LM_Mount:CastTime()
 end
 
 -- This is a bit of a convenience since bit.isset doesn't exist
-function LM_Mount:FlagsSet(f)
-    return bit.band(self:Flags(), f) == f
+function LM_Mount:CurrentFlagsSet(f)
+    return bit.band(self:CurrentFlags(), f) == f
 end
 
-function LM_Mount:DefaultFlagsSet(f)
-    return bit.band(self:DefaultFlags(), f) == f
+function LM_Mount:FlagsSet(f)
+    return bit.band(self:Flags(), f) == f
 end
 
 local IceFloesSpellName
@@ -156,7 +136,7 @@ local function KnowProfessionSkillLine(needSkillLine, needRank)
     return false
 end
 
-function LM_Mount:IsUsable(flags)
+function LM_Mount:IsUsable()
 
     if PlayerIsMovingOrFalling() then
         if self:CastTime() > 0 then return end
@@ -195,7 +175,7 @@ function LM_Mount:Dump(prefix)
     LM_Print(prefix .. self:Name())
     LM_Print(prefix .. " spell: " .. format("%s (id %d)", self:SpellName(), self:SpellId()))
     LM_Print(prefix .. " casttime: " .. self:CastTime())
-    LM_Print(prefix .. " flags: " .. format("%02x (default %02x)", self:Flags(), self:DefaultFlags()))
+    LM_Print(prefix .. " flags: " .. format("%02x (default %02x)", self:CurrentFlags(), self:Flags()))
     LM_Print(prefix .. " excluded: " .. yesno(self:IsExcluded()))
     LM_Print(prefix .. " usable: " .. yesno(self:IsUsable()) .. " (spell " .. yesno(IsUsableSpell(self:SpellId())) .. ")")
 end

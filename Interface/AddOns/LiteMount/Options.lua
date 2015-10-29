@@ -177,7 +177,7 @@ end
 
 function LM_Options:ApplyMountFlags(m)
     local id = m:SpellId()
-    local flags = m:DefaultFlags()
+    local flags = m:Flags()
     local ov = self.db.flagoverrides[id]
 
     if not ov then return flags end
@@ -195,7 +195,7 @@ function LM_Options:SetMountFlagBit(m, flagbit)
     LM_Debug(format("Setting flag bit %d for spell %s (%d).",
                     flagbit, name, id))
 
-    LM_Options:SetMountFlags(m, bit.bor(m:Flags(), flagbit))
+    LM_Options:SetMountFlags(m, bit.bor(m:CurrentFlags(), flagbit))
 end
 
 function LM_Options:ClearMountFlagBit(m, flagbit)
@@ -204,7 +204,7 @@ function LM_Options:ClearMountFlagBit(m, flagbit)
     LM_Debug(format("Clearing flag bit %d for spell %s (%d).",
                      flagbit, name, id))
 
-    LM_Options:SetMountFlags(m, bit.band(m:Flags(), bit.bnot(flagbit)))
+    LM_Options:SetMountFlags(m, bit.band(m:CurrentFlags(), bit.bnot(flagbit)))
 end
 
 function LM_Options:ResetMountFlags(m)
@@ -218,12 +218,12 @@ end
 
 function LM_Options:SetMountFlags(m, flags)
 
-    if flags == m:DefaultFlags() then
+    if flags == m:Flags() then
         return self:ResetMountFlags(m)
     end
 
     local id = m:SpellId()
-    local def = m:DefaultFlags()
+    local def = m:Flags()
 
     local toset = bit.band(bit.bxor(flags, def), flags)
     local toclear = bit.band(bit.bxor(flags, def), bit.bnot(flags))

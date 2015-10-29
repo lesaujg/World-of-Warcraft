@@ -46,7 +46,7 @@ function LM_Journal:Get(mountIndex)
         return self.cacheByName[name]
     end
 
-    local m = setmetatable({ }, LM_Journal)
+    local m = setmetatable(LM_Mount:new(), LM_Journal)
 
     m.journalIndex  = mountIndex
     m.modelId       = modelId
@@ -97,9 +97,9 @@ function LM_Journal:Get(mountIndex)
     return m
 end
 
-function LM_Journal:IsUsable(flags)
+function LM_Journal:IsUsable()
     local usable = select(5, C_MountJournal.GetMountInfo(self:JournalIndex()))
     if not usable then return end
     if not IsUsableSpell(self:SpellId()) then return end
-    return LM_Mount.IsUsable(self, flags)
+    return LM_Mount.IsUsable(self)
 end

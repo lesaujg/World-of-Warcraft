@@ -30,7 +30,7 @@ local RescanEvents = {
     "COMPANION_LEARNED", "COMPANION_UNLEARNED",
     -- Talents (might have mount abilities). Glyphs that teach spells   
     -- fire PLAYER_TALENT_UPDATE too, don't need to watch GLYPH_ events.
-    "UNIT_LEVEL", "ACTIVE_TALENT_GROUP_CHANGED", "PLAYER_TALENT_UPDATE",
+    "ACTIVE_TALENT_GROUP_CHANGED", "PLAYER_LEVEL_UP", "PLAYER_TALENT_UPDATE",
     -- You might have received a mount item
     "BAG_UPDATE",
     -- Draenor flying is an achievement
@@ -248,9 +248,7 @@ function LiteMount:PreClick(mouseButton)
 
     -- The order of GetSwimmingMount and GetFlyingMount here is uncertain
     -- now that we can't properly detect if you're under water or floating
-    -- on top.  If one day again we can detect "floating" then either:
-    --  CanSwim returns false if floating and we leave as is; or
-    --  CanFly returns true if floating but not if swimming and reverse.
+    -- on top.
 
     if not m and LM_Location:CanFly() then
         if mouseButton == "LeftButton" then

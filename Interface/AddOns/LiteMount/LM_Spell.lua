@@ -26,7 +26,7 @@ function LM_Spell:Get(spellId, forceKnown)
         return
     end
 
-    local m = setmetatable({ }, LM_Spell)
+    local m = setmetatable(LM_Mount:new(), LM_Spell)
 
     m.name = name
     m.spellName = name
@@ -41,7 +41,7 @@ function LM_Spell:Get(spellId, forceKnown)
     return m
 end
 
-function LM_Spell:IsUsable(flags)
+function LM_Spell:IsUsable()
     if not IsUsableSpell(self:SpellId()) then return end
-    return LM_Mount.IsUsable(self, flags)
+    return LM_Mount.IsUsable(self)
 end
