@@ -35,12 +35,12 @@ TradeSkillMaster_AdditionsDB = {
 				["A buyer has been found for your auction of Enchant Boots - Major Agility."] = "|cffffffff|Hitem:52757:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Boots - Major Agility]|h|r",
 				["A buyer has been found for your auction of Enchant 2H Weapon - Major Spirit."] = "|cff0070dd|Hitem:38874:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant 2H Weapon - Major Spirit]|h|r",
 				["A buyer has been found for your auction of Enchant Cloak - Greater Intellect."] = "|cffffffff|Hitem:52773:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Greater Intellect]|h|r",
-				["A buyer has been found for your auction of Enchant Bracer - Greater Agility."] = "|cffffffff|Hitem:74705:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Greater Agility]|h|r",
+				["A buyer has been found for your auction of Enchant Gloves - Advanced Herbalism."] = "|cffffffff|Hitem:38834:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Advanced Herbalism]|h|r",
 				["A buyer has been found for your auction of Enchant Gloves - Greater Haste."] = "|cffffffff|Hitem:52759:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Greater Haste]|h|r",
 				["A buyer has been found for your auction of Enchant Bracer - Major Stamina."] = "|cffffffff|Hitem:44947:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Major Stamina]|h|r",
 				["A buyer has been found for your auction of Enchant Cloak - Stealth."] = "|cffffffff|Hitem:38893:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Cloak - Stealth]|h|r",
-				["A buyer has been found for your auction of Enchant Gloves - Advanced Herbalism."] = "|cffffffff|Hitem:38834:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Gloves - Advanced Herbalism]|h|r",
 				["A buyer has been found for your auction of Enchant Weapon - Elemental Slayer."] = "|cffffffff|Hitem:52755:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Weapon - Elemental Slayer]|h|r",
+				["A buyer has been found for your auction of Enchant Bracer - Greater Agility."] = "|cffffffff|Hitem:74705:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Greater Agility]|h|r",
 				["A buyer has been found for your auction of Enchant Weapon - Giant Slayer."] = "|cff0070dd|Hitem:38988:0:0:0:0:0:0:1585831040:50:0:0:0:0|h[Enchant Weapon - Giant Slayer]|h|r",
 				["A buyer has been found for your auction of Enchant Bracer - Greater Haste."] = "|cffffffff|Hitem:52772:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Greater Haste]|h|r",
 				["A buyer has been found for your auction of Enchant Bracer - Major Spirit."] = "|cffffffff|Hitem:38980:0:0:0:0:0:0:0:50:0:0:0:0|h[Enchant Bracer - Major Spirit]|h|r",
@@ -487,12 +487,12 @@ TradeSkillMaster_AdditionsDB = {
 		["Clothgar - Sisters of Elune"] = {
 			["auctionMessages"] = {
 				["A buyer has been found for your auction of Enchant Ring - Gift of Multistrike."] = "|cff0070dd|Hitem:110641:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Multistrike]|h|r",
-				["A buyer has been found for your auction of Enchant Ring - Gift of Haste."] = "|cff0070dd|Hitem:110639:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Haste]|h|r",
+				["A buyer has been found for your auction of Enchant Neck - Gift of Versatility."] = "|cff0070dd|Hitem:110649:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Versatility]|h|r",
 				["A buyer has been found for your auction of Enchant Ring - Breath of Mastery."] = "|cffffffff|Hitem:110619:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Mastery]|h|r",
 				["A buyer has been found for your auction of Enchant Neck - Breath of Multistrike."] = "|cffffffff|Hitem:110627:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Multistrike]|h|r",
 				["A buyer has been found for your auction of Enchant Weapon - Mark of the Shattered Hand."] = "|cff0070dd|Hitem:112093:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Shattered Hand]|h|r",
 				["A buyer has been found for your auction of Enchant Cloak - Gift of Haste."] = "|cff0070dd|Hitem:110653:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Haste]|h|r",
-				["A buyer has been found for your auction of Enchant Ring - Gift of Versatility."] = "|cff0070dd|Hitem:110642:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Versatility]|h|r",
+				["A buyer has been found for your auction of Enchant Neck - Gift of Mastery."] = "|cff0070dd|Hitem:110647:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Mastery]|h|r",
 				["A buyer has been found for your auction of Enchant Weapon - Mark of Warsong."] = "|cff0070dd|Hitem:112164:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Warsong]|h|r",
 				["A buyer has been found for your auction of Enchant Neck - Gift of Haste."] = "|cff0070dd|Hitem:110646:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Haste]|h|r",
 				["A buyer has been found for your auction of Enchant Neck - Gift of Multistrike."] = "|cff0070dd|Hitem:110648:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Multistrike]|h|r",
@@ -510,70 +510,70 @@ TradeSkillMaster_AdditionsDB = {
 				["A buyer has been found for your auction of Enchant Weapon - Mark of Shadowmoon."] = "|cff0070dd|Hitem:112115:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Shadowmoon]|h|r",
 				["A buyer has been found for your auction of Enchant Cloak - Gift of Multistrike."] = "|cff0070dd|Hitem:110655:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Multistrike]|h|r",
 				["A buyer has been found for your auction of Enchant Cloak - Breath of Critical Strike."] = "|cffffffff|Hitem:110631:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Critical Strike]|h|r",
-				["A buyer has been found for your auction of Enchant Ring - Breath of Haste."] = "|cffffffff|Hitem:110618:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Haste]|h|r",
-				["A buyer has been found for your auction of Enchant Ring - Gift of Mastery."] = "|cff0070dd|Hitem:110640:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Mastery]|h|r",
-				["A buyer has been found for your auction of Enchant Ring - Breath of Critical Strike."] = "|cffffffff|Hitem:110617:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Critical Strike]|h|r",
 				["A buyer has been found for your auction of Enchant Weapon - Mark of Blackrock."] = "|cff0070dd|Hitem:112160:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Blackrock]|h|r",
+				["A buyer has been found for your auction of Enchant Ring - Breath of Haste."] = "|cffffffff|Hitem:110618:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Haste]|h|r",
+				["A buyer has been found for your auction of Enchant Ring - Breath of Critical Strike."] = "|cffffffff|Hitem:110617:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Critical Strike]|h|r",
+				["A buyer has been found for your auction of Enchant Cloak - Gift of Critical Strike."] = "|cff0070dd|Hitem:110652:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Critical Strike]|h|r",
 				["A buyer has been found for your auction of Enchant Cloak - Breath of Multistrike."] = "|cffffffff|Hitem:110634:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Multistrike]|h|r",
-				["A buyer has been found for your auction of Enchant Weapon - Mark of the Frostwolf."] = "|cff0070dd|Hitem:112165:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Frostwolf]|h|r",
-				["A buyer has been found for your auction of Enchant Neck - Gift of Mastery."] = "|cff0070dd|Hitem:110647:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Mastery]|h|r",
-				["A buyer has been found for your auction of Enchant Ring - Breath of Multistrike."] = "|cffffffff|Hitem:110620:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Multistrike]|h|r",
 				["A buyer has been found for your auction of Amani Dragonhawk."] = "|cffa335ee|Hitem:68825:0:0:0:0:0:0:0:1:0:0:0:0|h[Amani Dragonhawk]|h|r",
+				["A buyer has been found for your auction of Enchant Neck - Breath of Mastery."] = "|cffffffff|Hitem:110626:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Mastery]|h|r",
+				["A buyer has been found for your auction of Enchant Cloak - Breath of Mastery."] = "|cffffffff|Hitem:110633:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Mastery]|h|r",
+				["A buyer has been found for your auction of Enchant Ring - Gift of Mastery."] = "|cff0070dd|Hitem:110640:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Mastery]|h|r",
 				["A buyer has been found for your auction of Enchant Neck - Breath of Versatility."] = "|cffffffff|Hitem:110628:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Versatility]|h|r",
 				["A buyer has been found for your auction of Mottled Drake."] = "|cffa335ee|Hitem:68008:0:0:0:0:0:0:0:1:0:0:0:0|h[Mottled Drake]|h|r",
-				["A buyer has been found for your auction of Enchant Cloak - Breath of Mastery."] = "|cffffffff|Hitem:110633:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Mastery]|h|r",
-				["A buyer has been found for your auction of Enchant Neck - Breath of Mastery."] = "|cffffffff|Hitem:110626:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Mastery]|h|r",
-				["A buyer has been found for your auction of Enchant Cloak - Gift of Critical Strike."] = "|cff0070dd|Hitem:110652:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Critical Strike]|h|r",
-				["A buyer has been found for your auction of Enchant Neck - Gift of Versatility."] = "|cff0070dd|Hitem:110649:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Versatility]|h|r",
+				["A buyer has been found for your auction of Enchant Ring - Gift of Haste."] = "|cff0070dd|Hitem:110639:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Haste]|h|r",
+				["A buyer has been found for your auction of Enchant Ring - Breath of Multistrike."] = "|cffffffff|Hitem:110620:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Multistrike]|h|r",
+				["A buyer has been found for your auction of Enchant Weapon - Mark of the Frostwolf."] = "|cff0070dd|Hitem:112165:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Frostwolf]|h|r",
+				["A buyer has been found for your auction of Enchant Ring - Gift of Versatility."] = "|cff0070dd|Hitem:110642:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Versatility]|h|r",
 			},
 			["auctionPrices"] = {
 				["|cff0070dd|Hitem:110649:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Versatility]|h|r"] = {
-					1702500, -- [1]
-					1702500, -- [2]
+					1697500, -- [1]
+					1697500, -- [2]
 				},
 				["|cff0070dd|Hitem:110641:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Multistrike]|h|r"] = {
-					1882490, -- [1]
-					1887500, -- [2]
+					1882500, -- [1]
+					1882500, -- [2]
 				},
 				["|cff0070dd|Hitem:110639:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Haste]|h|r"] = {
-					2105000, -- [1]
-					2105000, -- [2]
-					2105000, -- [3]
-					2105000, -- [4]
-					2105000, -- [5]
+					2092500, -- [1]
+					2092500, -- [2]
+					2092500, -- [3]
+					2092500, -- [4]
+					2092500, -- [5]
 				},
 				["|cff0070dd|Hitem:110654:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Mastery]|h|r"] = {
-					1675860, -- [1]
-					1675860, -- [2]
-					1675860, -- [3]
-					1675860, -- [4]
-					1675860, -- [5]
+					1693313, -- [1]
+					1708313, -- [2]
+					1708313, -- [3]
+					1708313, -- [4]
+					1708313, -- [5]
 				},
 				["|cff0070dd|Hitem:112164:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Warsong]|h|r"] = {
-					8295000, -- [1]
-					8295000, -- [2]
+					10995000, -- [1]
+					10995000, -- [2]
 				},
 				["|cff0070dd|Hitem:110656:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Versatility]|h|r"] = {
-					1682500, -- [1]
-					1682500, -- [2]
+					1695000, -- [1]
+					1695000, -- [2]
 				},
 				["|cff0070dd|Hitem:110640:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Mastery]|h|r"] = {
-					2032500, -- [1]
-					2032500, -- [2]
-					2032500, -- [3]
-					2032500, -- [4]
-					2032500, -- [5]
+					2868563, -- [1]
+					2868563, -- [2]
+					2868563, -- [3]
+					2868563, -- [4]
+					2868563, -- [5]
 				},
 				["|cffffffff|Hitem:110619:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Mastery]|h|r"] = {
-					545000, -- [1]
-					545000, -- [2]
+					490000, -- [1]
+					490000, -- [2]
 				},
 				["|cffa335ee|Hitem:68008:0:0:0:0:0:0:0:1:0:0:0:0|h[Mottled Drake]|h|r"] = {
 					1340000000, -- [1]
 				},
 				["|cffffffff|Hitem:110625:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Haste]|h|r"] = {
-					325200, -- [1]
-					325200, -- [2]
+					275200, -- [1]
+					275200, -- [2]
 				},
 				["|cff0070dd|Hitem:110655:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Multistrike]|h|r"] = {
 					1675860, -- [1]
@@ -587,34 +587,35 @@ TradeSkillMaster_AdditionsDB = {
 					1675860, -- [5]
 				},
 				["|cffffffff|Hitem:110618:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Haste]|h|r"] = {
-					490000, -- [1]
+					435000, -- [1]
+					435000, -- [2]
 				},
 				["|cffffffff|Hitem:110632:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Haste]|h|r"] = {
-					370000, -- [1]
-					370000, -- [2]
+					359800, -- [1]
+					359800, -- [2]
 				},
 				["|cffffffff|Hitem:110627:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Multistrike]|h|r"] = {
-					389900, -- [1]
-					389900, -- [2]
+					379700, -- [1]
+					379700, -- [2]
 				},
 				["|cffffffff|Hitem:110626:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Mastery]|h|r"] = {
-					370100, -- [1]
-					370100, -- [2]
+					389999, -- [1]
+					389999, -- [2]
 				},
 				["|cff0070dd|Hitem:112093:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Shattered Hand]|h|r"] = {
-					372060, -- [1]
-					745000, -- [2]
-					745000, -- [3]
-					745000, -- [4]
-					745000, -- [5]
+					487720, -- [1]
+					487720, -- [2]
+					487720, -- [3]
+					487720, -- [4]
+					487720, -- [5]
 				},
 				["|cffffffff|Hitem:110624:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Critical Strike]|h|r"] = {
-					370100, -- [1]
-					370100, -- [2]
+					389999, -- [1]
+					389999, -- [2]
 				},
 				["|cffffffff|Hitem:110634:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Multistrike]|h|r"] = {
-					389900, -- [1]
-					389900, -- [2]
+					379699, -- [1]
+					379699, -- [2]
 				},
 				["|cff0070dd|Hitem:118015:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Bleeding Hollow]|h|r"] = {
 					7995000, -- [1]
@@ -624,60 +625,57 @@ TradeSkillMaster_AdditionsDB = {
 					7995000, -- [5]
 				},
 				["|cffffffff|Hitem:110621:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Versatility]|h|r"] = {
-					394900, -- [1]
-					394900, -- [2]
+					384700, -- [1]
+					384700, -- [2]
 				},
 				["|cffffffff|Hitem:110617:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Critical Strike]|h|r"] = {
+					589000, -- [1]
+					589000, -- [2]
+				},
+				["|cffffffff|Hitem:110635:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Versatility]|h|r"] = {
+					367000, -- [1]
+					367000, -- [2]
+				},
+				["|cff0070dd|Hitem:110682:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Thunderlord]|h|r"] = {
+					12746200, -- [1]
+					12746200, -- [2]
+					12746200, -- [3]
+					12746200, -- [4]
+					12746200, -- [5]
+				},
+				["|cff0070dd|Hitem:112115:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Shadowmoon]|h|r"] = {
+					4195000, -- [1]
+					4195000, -- [2]
+				},
+				["|cff0070dd|Hitem:112160:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Blackrock]|h|r"] = {
+					8438579, -- [1]
+					8438579, -- [2]
+				},
+				["|cff0070dd|Hitem:110653:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Haste]|h|r"] = {
+					2649985, -- [1]
+					2649985, -- [2]
+					2649985, -- [3]
+					2649985, -- [4]
+					2649985, -- [5]
+				},
+				["|cffffffff|Hitem:110633:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Mastery]|h|r"] = {
 					395000, -- [1]
 					395000, -- [2]
 				},
-				["|cffffffff|Hitem:110635:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Versatility]|h|r"] = {
-					377900, -- [1]
-					377900, -- [2]
-				},
-				["|cff0070dd|Hitem:110682:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Thunderlord]|h|r"] = {
-					6202060, -- [1]
-					6202060, -- [2]
-					6202060, -- [3]
-					6202060, -- [4]
-					6202060, -- [5]
-				},
-				["|cff0070dd|Hitem:110653:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Haste]|h|r"] = {
-					2942500, -- [1]
-					2942500, -- [2]
-					2942500, -- [3]
-					2942500, -- [4]
-					2942500, -- [5]
-				},
-				["|cff0070dd|Hitem:112160:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Blackrock]|h|r"] = {
-					7771491, -- [1]
-					7771491, -- [2]
-				},
-				["|cff0070dd|Hitem:112115:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Shadowmoon]|h|r"] = {
-					5855000, -- [1]
-					5855000, -- [2]
-				},
-				["|cff0070dd|Hitem:110652:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Critical Strike]|h|r"] = {
-					1675860, -- [1]
-					1675860, -- [2]
-					1675860, -- [3]
-					1675860, -- [4]
-					1675860, -- [5]
-				},
 				["|cff0070dd|Hitem:110648:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Multistrike]|h|r"] = {
-					1675860, -- [1]
-					1675860, -- [2]
+					3341438, -- [1]
+					3341438, -- [2]
 				},
 				["|cff0070dd|Hitem:110642:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Versatility]|h|r"] = {
-					1795000, -- [1]
-					1795000, -- [2]
+					3157485, -- [1]
+					3157485, -- [2]
 				},
 				["|cff0070dd|Hitem:110647:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Mastery]|h|r"] = {
-					1877400, -- [1]
-					1877400, -- [2]
-					1877400, -- [3]
-					1877400, -- [4]
-					1877400, -- [5]
+					1860000, -- [1]
+					1860000, -- [2]
+					1860000, -- [3]
+					1860000, -- [4]
+					1860000, -- [5]
 				},
 				["|cff0070dd|Hitem:110645:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Critical Strike]|h|r"] = {
 					1675860, -- [1]
@@ -687,34 +685,37 @@ TradeSkillMaster_AdditionsDB = {
 					1675860, -- [5]
 				},
 				["|cffa335ee|Hitem:68825:0:0:0:0:0:0:0:1:0:0:0:0|h[Amani Dragonhawk]|h|r"] = {
-					1420808131, -- [1]
+					1418782463, -- [1]
 				},
 				["|cffffffff|Hitem:110628:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Versatility]|h|r"] = {
 					395000, -- [1]
 					395000, -- [2]
 				},
 				["|cffffffff|Hitem:110620:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Multistrike]|h|r"] = {
-					300400, -- [1]
-					300400, -- [2]
+					275500, -- [1]
+					275500, -- [2]
 				},
 				["|cff0070dd|Hitem:110638:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Critical Strike]|h|r"] = {
-					2535000, -- [1]
-					2535000, -- [2]
-					2535000, -- [3]
-					2535000, -- [4]
-					2535000, -- [5]
+					2162500, -- [1]
+					2162500, -- [2]
+					2181073, -- [3]
+					2181073, -- [4]
+					2181073, -- [5]
 				},
 				["|cff0070dd|Hitem:112165:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Frostwolf]|h|r"] = {
-					9795000, -- [1]
-					9795000, -- [2]
+					9779800, -- [1]
+					9779800, -- [2]
 				},
 				["|cffffffff|Hitem:110631:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Critical Strike]|h|r"] = {
-					389900, -- [1]
-					389900, -- [2]
+					389800, -- [1]
+					389800, -- [2]
 				},
-				["|cffffffff|Hitem:110633:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Mastery]|h|r"] = {
-					395000, -- [1]
-					395000, -- [2]
+				["|cff0070dd|Hitem:110652:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Critical Strike]|h|r"] = {
+					1675860, -- [1]
+					1675860, -- [2]
+					1675860, -- [3]
+					1675860, -- [4]
+					1675860, -- [5]
 				},
 			},
 		},
