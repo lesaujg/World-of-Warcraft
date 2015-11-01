@@ -11,8 +11,8 @@ FrameLevel: 31
 Anchor: BOTTOM
 X: 34
 Y: -37
-W: 985
-H: 679
+W: 968
+H: 621
 Frame: _NPCScanButton
 FrameLevel: 1
 Anchor: BOTTOM
@@ -20,10 +20,3 @@ X: 0
 Y: 128
 W: 150
 H: 42
-Frame: AuctionFrame
-FrameLevel: 44
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 832
-H: 447

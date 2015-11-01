@@ -1,4 +1,4 @@
-  
+ 
 local DF = _G ["DetailsFramework"]
 if (not DF) then
 	print ("|cFFFFAA00Please restart your client to finish update some AddOns.|r")
@@ -34,7 +34,7 @@ local anzu_texture
 local player_class
 local block_backdrop_eye = {bgFile = [[Interface\RaidFrame\Raid-Bar-Hp-Fill]], tile = true, tileSize = 16, insets = {left = 0, right = 0, top = 0, bottom = 0},
 edgeFile = "Interface\\AddOns\\IskarAssist\\border_2", edgeSize = 20}
-local iskar_version = "v0.16.1a"
+local iskar_version = "v0.16.2"
 
 local iskar_encounter_id = 1788 --iskar
 local iskar_npcid = 90316 --iskar
@@ -1690,8 +1690,8 @@ function IKA:CreateFrames (show_after_cretion)
 				min = 20,
 				max = 200,
 				step = 1,
-				desc = "Size in pixels of width of player frames.",
-				name = "Block Width",
+				desc = "The width of each player frame.",
+				name = "Width",
 			},
 			{
 				type = "range",
@@ -1715,15 +1715,15 @@ function IKA:CreateFrames (show_after_cretion)
 				min = 8,
 				max = 60,
 				step = 1,
-				desc = "Size in pixels of height of player frames.",
-				name = "Block Height",
+				desc = "The height of each player frame.",
+				name = "Height",
 			},
 			{
 				type = "select",
 				get = function() return IKA.db.profile.bartexture end,
 				values = function() return texTable end,
 				desc = "Choose the texture used on tank blocks.",
-				name = "Block Texture"
+				name = "Texture"
 			},
 			{
 				type = "range",
@@ -1761,7 +1761,7 @@ function IKA:CreateFrames (show_after_cretion)
 					IKA.db.profile.eye_flash_anim = not IKA.db.profile.eye_flash_anim
 				end,
 				desc = "Play a flash animation on the player that just received the Eye of Anzu.",
-				name = "Flash Eye"
+				name = "Flash Enabled"
 			},
 			{
 				type = "toggle",
