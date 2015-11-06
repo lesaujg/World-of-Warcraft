@@ -40,7 +40,7 @@ TradeSkillMaster_AuctioningDB = {
 			["selected"] = "3Sell Mounts 90k",
 			["treesizable"] = true,
 			["treewidth"] = 175,
-			["fullwidth"] = 928.000122070313,
+			["fullwidth"] = 928.000061035156,
 		},
 	},
 	["profileKeys"] = {
