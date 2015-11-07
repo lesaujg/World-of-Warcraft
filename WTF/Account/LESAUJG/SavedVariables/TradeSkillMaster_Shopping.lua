@@ -45,13 +45,13 @@ TradeSkillMaster_ShoppingDB = {
 			["fullwidth"] = 945,
 		},
 		["previousSearches"] = {
-			"temporal crystal/exact", -- [1]
-			"Temporal Crystal/exact/x112", -- [2]
-			"miscellaneous/mount", -- [3]
-			"trade goods/metal & stone/i100", -- [4]
-			"legion", -- [5]
-			"universal", -- [6]
-			"arcane c", -- [7]
+			"trade goods/metal & stone/i100", -- [1]
+			"miscellaneous/mount", -- [2]
+			"legion", -- [3]
+			"arcane c", -- [4]
+			"universal", -- [5]
+			"Temporal Crystal/exact/x112", -- [6]
+			"temporal crystal/exact", -- [7]
 			"trade goods/i100", -- [8]
 			"trade goods/herb/i100", -- [9]
 			"trade goods/metal & stone/i90", -- [10]
