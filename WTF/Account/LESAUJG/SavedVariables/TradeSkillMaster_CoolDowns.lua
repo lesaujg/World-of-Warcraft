@@ -2,9 +2,10 @@
 TradeSkillMaster_CoolDownsDB = {
 	["profileKeys"] = {
 		["Mandelbrot - Sisters of Elune"] = "Default",
+		["Orig - Sisters of Elune"] = "Default",
 		["Galinar - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
 		["Bracnar - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
 		["Herbinator - Sisters of Elune"] = "Default",
 		["Ghiaccioli - Sisters of Elune"] = "Default",
 		["Clothgar - Sisters of Elune"] = "Default",
@@ -34,7 +35,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Alchemical Catalyst",
 					["players"] = {
 						["Bracnar"] = {
-							["CoolDownTime"] = 1446980461.668,
+							["CoolDownTime"] = 1446980461.852,
 							["knownCraft"] = true,
 						},
 					},
@@ -247,14 +248,14 @@ TradeSkillMaster_CoolDownsDB = {
 					},
 					["spellID"] = 17562,
 				},
-				[53774] = {
-					["Name"] = "Eternal Water",
+				[177043] = {
+					["Name"] = "Secret of Draenor Enchanting",
 					["players"] = {
 						["Bracnar"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 53774,
+					["spellID"] = 177043,
 				},
 				[66660] = {
 					["Name"] = "King's Amber",
@@ -364,14 +365,14 @@ TradeSkillMaster_CoolDownsDB = {
 					},
 					["spellID"] = 17566,
 				},
-				[177043] = {
-					["Name"] = "Secret of Draenor Enchanting",
+				[60893] = {
+					["Name"] = "Alchemy: Northrend Alchemy Research",
 					["players"] = {
 						["Bracnar"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 177043,
+					["spellID"] = 60893,
 				},
 				[131691] = {
 					["Name"] = "Facets of Research",
@@ -499,14 +500,14 @@ TradeSkillMaster_CoolDownsDB = {
 					},
 					["spellID"] = 131593,
 				},
-				[60893] = {
-					["Name"] = "Alchemy: Northrend Alchemy Research",
+				[53774] = {
+					["Name"] = "Eternal Water",
 					["players"] = {
 						["Bracnar"] = {
 							["knownCraft"] = true,
 						},
 					},
-					["spellID"] = 60893,
+					["spellID"] = 53774,
 				},
 				[17559] = {
 					["Name"] = "Essence of Fire",

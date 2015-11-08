@@ -16,9 +16,10 @@ MacroToolkitDB = {
 	},
 	["profileKeys"] = {
 		["Mandelbrot - Sisters of Elune"] = "profile",
+		["Orig - Sisters of Elune"] = "profile",
 		["Galinar - Sisters of Elune"] = "profile",
-		["Clothgar - Sisters of Elune"] = "profile",
 		["Ghiaccioli - Sisters of Elune"] = "profile",
+		["Clothgar - Sisters of Elune"] = "profile",
 		["Bracnar - Sisters of Elune"] = "profile",
 		["Herbinator - Sisters of Elune"] = "profile",
 		["Uldaris - Sisters of Elune"] = "profile",

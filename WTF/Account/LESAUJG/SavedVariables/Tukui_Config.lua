@@ -30,6 +30,8 @@ TukuiConfigShared = {
 		},
 		["Mandelbrot"] = {
 		},
+		["Orig"] = {
+		},
 		["Herbinator"] = {
 		},
 		["Galinar"] = {
