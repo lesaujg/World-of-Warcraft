@@ -8,7 +8,7 @@
 ------------------------------------------------------------
 
 
-PawnVersion = 1.918
+PawnVersion = 1.920
 
 -- Pawn requires this version of VgerCore:
 local PawnVgerCoreVersionRequired = 1.09
@@ -171,8 +171,6 @@ function PawnInitialize()
 		message(WrongLocaleMessage)
 	end
 
---	VgerCore.Message("*** Pawn initialization: PawnInitialize")
-
 	-- Set up slash commands
 	SLASH_PAWN1 = "/pawn"
 	SlashCmdList["PAWN"] = PawnCommand
@@ -221,8 +219,28 @@ function PawnInitialize()
 	hooksecurefunc(GameTooltip, "SetLootRollItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetLootRollItem", ...) end)
 	hooksecurefunc(GameTooltip, "SetMerchantItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetMerchantItem", ...) end)
 	hooksecurefunc(GameTooltip, "SetMissingLootItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetMissingLootItem", ...) end)
-	hooksecurefunc(GameTooltip, "SetQuestItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetQuestItem", ...) end)
-	hooksecurefunc(GameTooltip, "SetQuestLogItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetQuestLogItem", ...) end)
+	hooksecurefunc(GameTooltip, "SetQuestItem",
+		function(self, ...)
+			-- BUG IN 6.2: This item will come through with an item ID of 0 and we'll fail to get stats from it normally.
+			-- Special thanks to Phanx for suggesting this workaround!
+			local ItemLink = GetQuestItemLink(...)
+			if ItemLink then
+				PawnUpdateTooltip("GameTooltip", "SetHyperlink", ItemLink)
+			else
+				PawnUpdateTooltip("GameTooltip", "SetQuestItem", ...)
+			end
+		end)
+	hooksecurefunc(GameTooltip, "SetQuestLogItem",
+		function(self, ...)
+			-- BUG IN 6.2: This item will come through with an item ID of 0 and we'll fail to get stats from it normally.
+			-- Special thanks to Phanx for suggesting this workaround!
+			local ItemLink = GetQuestLogItemLink(...)
+			if ItemLink then
+				PawnUpdateTooltip("GameTooltip", "SetHyperlink", ItemLink)
+			else
+				PawnUpdateTooltip("GameTooltip", "SetQuestLogItem", ...)
+			end
+		end)
 	hooksecurefunc(GameTooltip, "SetSendMailItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetSendMailItem", ...) end)
 	hooksecurefunc(GameTooltip, "SetSocketGem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetSocketGem", ...) end)
 	hooksecurefunc(GameTooltip, "SetTradePlayerItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetTradePlayerItem", ...) end)
@@ -239,6 +257,7 @@ function PawnInitialize()
 	hooksecurefunc(GameTooltip, "Hide", function(self, ...) PawnLastHoveredItem = nil end)
 	
 	-- World map tooltip (for quest rewards)
+	hooksecurefunc(WorldMapTooltip, "SetHyperlink", function(self, ...) PawnUpdateTooltip("WorldMapTooltip", "SetHyperlink", ...) end) -- HandyNotes_DraenorTreasures compatibility
 	hooksecurefunc(WorldMapTooltip, "SetQuestLogItem", function(self, ...) PawnUpdateTooltip("WorldMapTooltip", "SetQuestLogItem", ...) end)
 	hooksecurefunc(WorldMapTooltip, "Hide", function(self, ...) PawnLastHoveredItem = nil end)
 	
@@ -351,22 +370,18 @@ function PawnInitialize()
 	if IsAddOnLoaded("Blizzard_ItemSocketingUI") then PawnOnAddonLoaded("Blizzard_ItemSocketingUI") end
 
 	-- Now, load any plugins that are ready to be loaded.
---	VgerCore.Message("*** Pawn initialization: Load plugins: start")
 	PawnInitializePlugins()
---	VgerCore.Message("*** Pawn initialization: Load plugins: end")
 	
 	-- Go through the user's scales and check them for errors.
 	for ScaleName, _ in pairs(PawnCommon.Scales) do
 		PawnCorrectScaleErrors(ScaleName)
 	end
---	VgerCore.Message("*** Pawn initialization: Scales corrected")
 	
 	-- Then, recalculate totals.
 	-- This must be done after checking for errors is completed on all scales because it can trigger other recalculations.
 	for ScaleName, _ in pairs(PawnCommon.Scales) do
 		PawnRecalculateScaleTotal(ScaleName)
 	end
---	VgerCore.Message("*** Pawn initialization: end of PawnInitialize")
 	
 end
 
@@ -984,7 +999,7 @@ function PawnGetItemData(ItemLink)
 		if UnenchantedItemLink then
 			PawnDebugMessage(" ")
 			PawnDebugMessage(PawnLocal.UnenchantedStatsHeader)
-			--if PawnCommon.Debug then VgerCore.Message("  Base item link: " .. tostring(PawnEscapeString(UnenchantedItemLink))) end -- ***
+			--if PawnCommon.Debug then VgerCore.Message("  Base item link: " .. tostring(PawnEscapeString(UnenchantedItemLink))) end
 			Item.UnenchantedStats, Item.UnenchantedSocketBonusStats = PawnGetStatsForItemLink(UnenchantedItemLink, true)
 			if not Item.UnenchantedStats then
 				PawnDebugMessage(PawnLocal.FailedToGetUnenchantedItemMessage)
@@ -1590,10 +1605,7 @@ function PawnGetStatsFromTooltip(TooltipName, DebugMessages)
 	
 	-- Get the item name.  It could be on line 2 if the first line is "Currently Equipped".
 	local ItemName, ItemNameLineNumber = PawnGetItemNameFromTooltip(TooltipName)
-	if (not ItemName) or (not ItemNameLineNumber) then
-		--VgerCore.Fail("Failed to find name of item on the hidden tooltip") -- ***
-		return
-	end
+	if (not ItemName) or (not ItemNameLineNumber) then return end
 
 	-- First, check for the ignored item names: for example, any item that starts with "Design:" should
 	-- be ignored, because it's a jewelcrafting design, not a real item with stats.
@@ -1601,13 +1613,11 @@ function PawnGetStatsFromTooltip(TooltipName, DebugMessages)
 	for _, ThisName in pairs(PawnIgnoreNames) do
 		if strsub(ItemName, 1, strlen(ThisName)) == ThisName then
 			-- This is a known ignored item name; don't return any stats.
-			--VgerCore.Fail("Didnd't find any stats for the item because it's a known-ignored item.") -- ***
 			return
 		end
 	end
 	
 	-- Now, read the tooltip for stats.
-	--VgerCore.Assert(ItemNameLineNumber + 1 < Tooltip:NumLines(), "Didn't find any lines on the tooltip after the name (item name on line number " .. tostring(ItemNameLineNumber) .. " out of " .. tostring(Tooltip:NumLines()) .. " lines") -- ***
 	for i = ItemNameLineNumber + 1, Tooltip:NumLines() do
 		local LeftLine = _G[TooltipName .. "TextLeft" .. i]
 		local LeftLineText = LeftLine:GetText()
@@ -1626,7 +1636,6 @@ function PawnGetStatsFromTooltip(TooltipName, DebugMessages)
 				if strfind(LeftLineText, ThisKillLine) then
 					-- This is a known ignored kill line; stop now.
 					IsKillLine = true
-					--VgerCore.Message("Stopped reading the item tooltip at a kill line") -- ***
 					break
 				end
 			end
@@ -1953,15 +1962,9 @@ end
 function PawnGetItemNameFromTooltip(TooltipName)
 	-- First, get the tooltip details.
 	local TooltipTopLine = _G[TooltipName .. "TextLeft1"]
-	if not TooltipTopLine then
-		--VgerCore.Message("Didn't find the line " .. tostring(TooltipName) .. "TextLeft1") -- ***
-		return
-	end
+	if not TooltipTopLine then return end
 	local ItemName = TooltipTopLine:GetText()
-	if not ItemName or ItemName == "" then
-		--VgerCore.Message("First line of the tooltip was blank") -- ***
-		return
-	end
+	if not ItemName or ItemName == "" then return end
 	
 	-- If this is a Currently Equipped tooltip, skip the first line.
 	if ItemName == CURRENTLY_EQUIPPED then

@@ -1,4 +1,4 @@
-local versionMajor, versionRev, L, ADDON, T, ORI = 3, 82, newproxy(true), ...
+local versionMajor, versionRev, L, ADDON, T, ORI = 3, 83, newproxy(true), ...
 local api, OR_Rings, OR_ModifierLockState, TL, EV, OR_LoadedState = {ext={ActionBook=T.ActionBook},lang=L}, {}, nil, T.L, T.Evie, 1
 local defaultConfig = {ClickActivation=false, IndicationOffsetX=0, IndicationOffsetY=0, RingAtMouse=false, RingScale=1, ClickPriority=true, CenterAction=false, MouseBucket=1, NoClose=false, SliceBinding=false, SliceBindingString="1 2 3 4 5 6 7 8 9 0", SelectedSliceBind="", PrimaryButton="BUTTON4", SecondaryButton="BUTTON5", OpenNestedRingButton="BUTTON3", ScrollNestedRingUpButton="", ScrollNestedRingDownButton="", UseDefaultBindings=true}
 local configRoot, configInstance, activeProfile, PersistentStorageInfo, optionValidators, optionsMeta = {}, nil, nil, {}, {}, {__index=defaultConfig}
@@ -337,10 +337,6 @@ local OR_SyncRingBinding do -- Binding management
 				hotkey = (hotkey .. ";"):gsub("(([^%s%[%];]+)%s*;)", RemoveConflictingBindings)
 			end
 		end
-		if props.currentBindingConditional == hotkey then
-			return
-		end
-		props.currentBindingConditional = hotkey
 		if not OR_SecCore:GetAttribute("frameref-proxy" .. id) then
 			local f = CreateFrame("Button", "ORL_RProxy" .. id, nil, "SecureActionButtonTemplate")
 			f:RegisterForClicks("AnyUp", "AnyDown")
@@ -348,6 +344,10 @@ local OR_SyncRingBinding do -- Binding management
 			OR_SecCore:SetFrameRef("proxy" .. id, f)
 			_G["BINDING_NAME_CLICK ".. f:GetName() .. ":r" .. id] = (L"OPie ring: %s"):format(props.name or "?")
 		end
+		if props.currentBindingConditional == hotkey then
+			return
+		end
+		props.currentBindingConditional = hotkey
 		OR_DeferExecute([=[-- OR_SyncRingBinding
 			local ringName, internalId = %s, %d
 			KR:SetAttribute("frameref-RegisterBindingDriver-target", self:GetFrameRef("proxy" .. internalId))

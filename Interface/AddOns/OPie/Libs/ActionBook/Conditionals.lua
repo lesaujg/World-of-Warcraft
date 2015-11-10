@@ -369,7 +369,13 @@ do -- debuff:name
 	KR:SetNonSecureConditional("ownbuff", checkAura)
 end
 do -- combo:count
+	local power, powerMap = 4, {[265]=7, [267]=14, [258]=13, PALADIN=9, MONK=12}
+	local defaultPower = powerMap[playerClass] or 4
 	KR:SetNonSecureConditional("combo", function(_name, args, target)
-		return UnitPower("player", 4) >= (tonumber(args) or 1)
+		return UnitPower("player", power) >= (tonumber(args) or 1)
 	end)
+	local function sync()
+		power = powerMap[GetSpecializationInfo(GetSpecialization() or 0)] or defaultPower
+	end
+	EV.PLAYER_SPECIALIZATION_CHANGED, EV.PLAYER_LOGIN = sync, sync
 end

@@ -11,8 +11,8 @@ FrameLevel: 13
 Anchor: BOTTOMLEFT
 X: 0
 Y: 22
-W: 985
-H: 679
+W: 968
+H: 621
 Frame: _NPCScanButton
 FrameLevel: 1
 Anchor: BOTTOM
@@ -20,3 +20,10 @@ X: 0
 Y: 128
 W: 150
 H: 42
+Frame: TSMCraftingGatherFrame
+FrameLevel: 12
+Anchor: TOPRIGHT
+X: -315
+Y: -89
+W: 325
+H: 400
