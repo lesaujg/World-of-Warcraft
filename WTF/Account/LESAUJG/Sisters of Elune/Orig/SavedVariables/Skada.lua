@@ -1,14 +1,12 @@
 
 SkadaPerCharDB = {
-	["sets"] = {
-	},
 	["total"] = {
 		["healingabsorbed"] = 0,
 		["dispells"] = 1,
 		["ccbreaks"] = 0,
 		["time"] = 0,
 		["interrupts"] = 2,
-		["mobdone"] = 0,
+		["multistrikes"] = 15,
 		["damage"] = 0,
 		["players"] = {
 			{
@@ -21,78 +19,78 @@ SkadaPerCharDB = {
 						["name"] = "Fists of Fury",
 						["active"] = 0,
 						["id"] = 113656,
-						["uptime"] = 8,
 						["auratype"] = "BUFF",
+						["uptime"] = 8,
 					},
 					["Combo Breaker: Blackout Kick"] = {
 						["name"] = "Combo Breaker: Blackout Kick",
 						["active"] = 0,
 						["id"] = 116768,
-						["uptime"] = 11,
 						["auratype"] = "BUFF",
+						["uptime"] = 11,
 					},
 					["Fortifying Brew"] = {
 						["name"] = "Fortifying Brew",
 						["active"] = 0,
 						["id"] = 120954,
-						["uptime"] = 30,
 						["auratype"] = "BUFF",
+						["uptime"] = 30,
 					},
 					["Tiger Power"] = {
 						["name"] = "Tiger Power",
 						["active"] = 8,
 						["id"] = 125359,
+						["auratype"] = "BUFF",
 						["uptime"] = 493,
-						["auratype"] = "BUFF",
-					},
-					["Tigereye Brew"] = {
-						["name"] = "Tigereye Brew",
-						["active"] = 6,
-						["id"] = 125195,
-						["uptime"] = 490,
-						["auratype"] = "BUFF",
-					},
-					["Spinning Crane Kick"] = {
-						["name"] = "Spinning Crane Kick",
-						["active"] = 0,
-						["id"] = 101546,
-						["uptime"] = 12,
-						["auratype"] = "BUFF",
-					},
-					["Touch of Karma"] = {
-						["name"] = "Touch of Karma",
-						["active"] = 0,
-						["id"] = 122470,
-						["uptime"] = 42,
-						["auratype"] = "BUFF",
-					},
-					["Crackling Jade Lightning"] = {
-						["name"] = "Crackling Jade Lightning",
-						["active"] = 0,
-						["id"] = 117952,
-						["uptime"] = 13,
-						["auratype"] = "DEBUFF",
 					},
 					["Death Note"] = {
 						["name"] = "Death Note",
 						["active"] = 7,
 						["id"] = 121125,
-						["uptime"] = 195,
 						["auratype"] = "BUFF",
+						["uptime"] = 195,
+					},
+					["Spinning Crane Kick"] = {
+						["name"] = "Spinning Crane Kick",
+						["active"] = 0,
+						["id"] = 101546,
+						["auratype"] = "BUFF",
+						["uptime"] = 12,
+					},
+					["Touch of Karma"] = {
+						["name"] = "Touch of Karma",
+						["active"] = 0,
+						["id"] = 122470,
+						["auratype"] = "BUFF",
+						["uptime"] = 42,
+					},
+					["Crackling Jade Lightning"] = {
+						["name"] = "Crackling Jade Lightning",
+						["active"] = 0,
+						["id"] = 117952,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 13,
+					},
+					["Tigereye Brew"] = {
+						["name"] = "Tigereye Brew",
+						["active"] = 6,
+						["id"] = 125195,
+						["auratype"] = "BUFF",
+						["uptime"] = 490,
 					},
 					["Combo Breaker: Tiger Palm"] = {
 						["name"] = "Combo Breaker: Tiger Palm",
 						["active"] = 3,
 						["id"] = 118864,
-						["uptime"] = 193,
 						["auratype"] = "BUFF",
+						["uptime"] = 193,
 					},
 					["Tiger Strikes"] = {
 						["name"] = "Tiger Strikes",
 						["active"] = 2,
 						["id"] = 120273,
-						["uptime"] = 219,
 						["auratype"] = "BUFF",
+						["uptime"] = 219,
 					},
 				},
 				["role"] = "NONE",
@@ -104,183 +102,294 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 						["id"] = 115072,
 						["healing"] = 106243,
-						["multistrikes"] = 0,
+						["absorbed"] = 0,
 						["min"] = 3027,
 						["multistrike"] = 4,
 						["name"] = "Expel Harm",
-						["hits"] = 12,
-						["overhealing"] = 0,
-						["max"] = 20742,
 						["critical"] = 1,
-						["absorbed"] = 0,
+						["max"] = 20742,
+						["overhealing"] = 0,
+						["hits"] = 12,
+						["multistrikes"] = 0,
 					},
 					["Blackout Kick"] = {
 						["shielding"] = 0,
 						["id"] = 128591,
 						["healing"] = 102267,
-						["multistrikes"] = 0,
+						["absorbed"] = 0,
 						["min"] = 0,
 						["multistrike"] = 0,
 						["name"] = "Blackout Kick",
-						["hits"] = 40,
-						["overhealing"] = 2702,
-						["max"] = 5642,
 						["critical"] = 0,
-						["absorbed"] = 0,
+						["max"] = 5642,
+						["overhealing"] = 2702,
+						["hits"] = 40,
+						["multistrikes"] = 0,
 					},
 					["Touch of Karma"] = {
 						["shielding"] = 24415,
 						["id"] = 122470,
 						["healing"] = 24415,
-						["multistrikes"] = 0,
+						["absorbed"] = 0,
 						["min"] = 292,
 						["multistrike"] = 0,
 						["name"] = "Touch of Karma",
-						["hits"] = 22,
-						["overhealing"] = 0,
-						["max"] = 3227,
 						["critical"] = 0,
-						["absorbed"] = 0,
+						["max"] = 3227,
+						["overhealing"] = 0,
+						["hits"] = 22,
+						["multistrikes"] = 0,
 					},
 				},
-				["dispells"] = 1,
+				["shielding"] = 24415,
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["ccbreaks"] = 0,
+				["deathlog"] = {
+					{
+						["ts"] = 1447081934.155,
+						["amount"] = -2609,
+						["spellid"] = 88163,
+						["srcname"] = "Master Hsu",
+						["hp"] = 193942,
+					}, -- [1]
+					{
+						["ts"] = 1447081934.155,
+						["amount"] = -782,
+						["spellid"] = 88163,
+						["srcname"] = "Master Hsu",
+						["hp"] = 193942,
+					}, -- [2]
+					{
+						["ts"] = 1447081934.155,
+						["amount"] = -947,
+						["spellid"] = 88163,
+						["srcname"] = "Master Hsu",
+						["hp"] = 193942,
+					}, -- [3]
+					{
+						["ts"] = 1447081789.049,
+						["amount"] = -1621,
+						["srcname"] = "Master Hight",
+						["spellid"] = 88163,
+						["hp"] = 209710,
+					}, -- [4]
+					{
+						["ts"] = 1447081795.055,
+						["amount"] = -2127,
+						["spellid"] = 88163,
+						["srcname"] = "Master Hight",
+						["hp"] = 208089,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 2851,
+						["ts"] = 1447081795.679,
+						["hp"] = 208813,
+						["spellid"] = 128591,
+						["srcname"] = "Orig",
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 2789,
+						["ts"] = 1447081803.221,
+						["hp"] = 211602,
+						["spellid"] = 128591,
+						["srcname"] = "Orig",
+					}, -- [7]
+					{
+						["ts"] = 1447081803.486,
+						["amount"] = 837,
+						["absorb"] = 0,
+						["hp"] = 212439,
+						["srcname"] = "Orig",
+						["spellid"] = 128591,
+					}, -- [8]
+					{
+						["ts"] = 1447081926.77,
+						["amount"] = -1023,
+						["spellid"] = 88163,
+						["srcname"] = "Master Hsu",
+						["hp"] = 208036,
+					}, -- [9]
+					{
+						["ts"] = 1447081927.968,
+						["amount"] = -1957,
+						["spellid"] = 88163,
+						["srcname"] = "Master Hsu",
+						["hp"] = 207013,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 2759,
+						["ts"] = 1447081928.433,
+						["hp"] = 207815,
+						["spellid"] = 128591,
+						["srcname"] = "Orig",
+					}, -- [11]
+					{
+						["ts"] = 1447081929.199,
+						["amount"] = -10662,
+						["srcname"] = "Master Hsu",
+						["spellid"] = 131743,
+						["hp"] = 197153,
+					}, -- [12]
+					{
+						["ts"] = 1447081929.507,
+						["amount"] = -3198,
+						["spellid"] = 131743,
+						["srcname"] = "Master Hsu",
+						["hp"] = 193955,
+					}, -- [13]
+					{
+						["ts"] = 1447081931.201,
+						["amount"] = -10,
+						["spellid"] = 131743,
+						["srcname"] = "Master Hsu",
+						["hp"] = 193945,
+					}, -- [14]
+					{
+						["ts"] = 1447081931.201,
+						["amount"] = -3,
+						["spellid"] = 131743,
+						["srcname"] = "Master Hsu",
+						["hp"] = 193942,
+					}, -- [15]
+					["pos"] = 4,
+				},
 				["damagetaken"] = 814946,
 				["power"] = {
 					[12] = {
+						["amount"] = 146,
 						["spells"] = {
 							[115695] = 130,
 							[115072] = 16,
 						},
-						["amount"] = 146,
 					},
 				},
 				["id"] = "Player-1169-076A3790",
 				["maxhp"] = 213240,
 				["healing"] = 232925,
 				["damagetakenspells"] = {
-					["Blackout Kick"] = {
-						["crushing"] = 0,
-						["id"] = 130783,
-						["damage"] = 121875,
-						["max"] = 4238,
-						["name"] = "Blackout Kick",
-						["min"] = 511,
-						["multistrike"] = 26,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 71,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
 					["Fiery Keg Smash"] = {
 						["crushing"] = 0,
 						["id"] = 131831,
-						["damage"] = 85296,
-						["max"] = 21324,
-						["name"] = "Fiery Keg Smash",
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 21324,
 						["multistrike"] = 0,
-						["critical"] = 0,
+						["name"] = "Fiery Keg Smash",
 						["blocked"] = 0,
 						["totalhits"] = 4,
 						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
+						["max"] = 21324,
+						["damage"] = 85296,
 					},
 					["Spinning Crane Kick"] = {
 						["crushing"] = 0,
 						["id"] = 130151,
-						["damage"] = 162679,
-						["max"] = 27573,
-						["name"] = "Spinning Crane Kick",
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 8271,
 						["multistrike"] = 3,
-						["critical"] = 0,
+						["name"] = "Spinning Crane Kick",
 						["blocked"] = 0,
 						["totalhits"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["max"] = 27573,
+						["damage"] = 162679,
+					},
+					["Blackout Kick"] = {
+						["crushing"] = 0,
+						["id"] = 130783,
 						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 511,
+						["multistrike"] = 26,
+						["name"] = "Blackout Kick",
+						["blocked"] = 0,
+						["totalhits"] = 71,
+						["resisted"] = 0,
+						["max"] = 4238,
+						["damage"] = 121875,
 					},
 					["Tiger Palm"] = {
 						["crushing"] = 0,
 						["id"] = 130782,
-						["damage"] = 56410,
-						["max"] = 2055,
-						["name"] = "Tiger Palm",
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 248,
 						["multistrike"] = 20,
-						["critical"] = 0,
+						["name"] = "Tiger Palm",
 						["blocked"] = 0,
 						["totalhits"] = 67,
 						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
+						["max"] = 2055,
+						["damage"] = 56410,
 					},
 					["Poison Strike"] = {
 						["crushing"] = 0,
 						["id"] = 131743,
-						["damage"] = 24597,
-						["max"] = 10662,
-						["name"] = "Poison Strike",
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 3,
 						["multistrike"] = 6,
-						["critical"] = 0,
+						["name"] = "Poison Strike",
 						["blocked"] = 0,
 						["totalhits"] = 14,
 						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
+						["max"] = 10662,
+						["damage"] = 24597,
 					},
 					["Rising Sun Kick"] = {
 						["crushing"] = 0,
 						["id"] = 130784,
-						["damage"] = 87685,
-						["max"] = 3779,
-						["name"] = "Rising Sun Kick",
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 776,
 						["multistrike"] = 11,
-						["critical"] = 0,
+						["name"] = "Rising Sun Kick",
 						["blocked"] = 0,
 						["totalhits"] = 36,
 						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
+						["max"] = 3779,
+						["damage"] = 87685,
 					},
 					["Throw Rock"] = {
 						["crushing"] = 0,
 						["id"] = 130060,
-						["damage"] = 110635,
-						["max"] = 3447,
-						["name"] = "Throw Rock",
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 1034,
 						["multistrike"] = 7,
-						["critical"] = 0,
+						["name"] = "Throw Rock",
 						["blocked"] = 0,
 						["totalhits"] = 37,
 						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
+						["max"] = 3447,
+						["damage"] = 110635,
 					},
 					["Attack"] = {
 						["crushing"] = 0,
 						["id"] = 6603,
-						["damage"] = 165769,
-						["max"] = 2646,
-						["name"] = "Attack",
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 20,
 						["min"] = 146,
 						["multistrike"] = 38,
-						["critical"] = 20,
+						["name"] = "Attack",
 						["blocked"] = 0,
 						["totalhits"] = 169,
 						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
+						["max"] = 2646,
+						["damage"] = 165769,
 					},
 				},
 				["healed"] = {
@@ -295,122 +404,11 @@ SkadaPerCharDB = {
 				["alertDamage"] = 85296,
 				["name"] = "Orig",
 				["alertCount"] = 5,
-				["deathlog"] = {
-					{
-						["ts"] = 1447081934.155,
-						["amount"] = -2609,
-						["srcname"] = "Master Hsu",
-						["hp"] = 193942,
-						["spellid"] = 88163,
-					}, -- [1]
-					{
-						["ts"] = 1447081934.155,
-						["amount"] = -782,
-						["srcname"] = "Master Hsu",
-						["hp"] = 193942,
-						["spellid"] = 88163,
-					}, -- [2]
-					{
-						["ts"] = 1447081934.155,
-						["amount"] = -947,
-						["srcname"] = "Master Hsu",
-						["hp"] = 193942,
-						["spellid"] = 88163,
-					}, -- [3]
-					{
-						["ts"] = 1447081789.049,
-						["amount"] = -1621,
-						["spellid"] = 88163,
-						["hp"] = 209710,
-						["srcname"] = "Master Hight",
-					}, -- [4]
-					{
-						["ts"] = 1447081795.055,
-						["amount"] = -2127,
-						["srcname"] = "Master Hight",
-						["hp"] = 208089,
-						["spellid"] = 88163,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 2851,
-						["spellid"] = 128591,
-						["srcname"] = "Orig",
-						["hp"] = 208813,
-						["ts"] = 1447081795.679,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 2789,
-						["spellid"] = 128591,
-						["srcname"] = "Orig",
-						["hp"] = 211602,
-						["ts"] = 1447081803.221,
-					}, -- [7]
-					{
-						["ts"] = 1447081803.486,
-						["amount"] = 837,
-						["srcname"] = "Orig",
-						["spellid"] = 128591,
-						["hp"] = 212439,
-						["absorb"] = 0,
-					}, -- [8]
-					{
-						["ts"] = 1447081926.77,
-						["amount"] = -1023,
-						["srcname"] = "Master Hsu",
-						["hp"] = 208036,
-						["spellid"] = 88163,
-					}, -- [9]
-					{
-						["ts"] = 1447081927.968,
-						["amount"] = -1957,
-						["srcname"] = "Master Hsu",
-						["hp"] = 207013,
-						["spellid"] = 88163,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 2759,
-						["spellid"] = 128591,
-						["srcname"] = "Orig",
-						["hp"] = 207815,
-						["ts"] = 1447081928.433,
-					}, -- [11]
-					{
-						["ts"] = 1447081929.199,
-						["amount"] = -10662,
-						["spellid"] = 131743,
-						["hp"] = 197153,
-						["srcname"] = "Master Hsu",
-					}, -- [12]
-					{
-						["ts"] = 1447081929.507,
-						["amount"] = -3198,
-						["srcname"] = "Master Hsu",
-						["hp"] = 193955,
-						["spellid"] = 131743,
-					}, -- [13]
-					{
-						["ts"] = 1447081931.201,
-						["amount"] = -10,
-						["srcname"] = "Master Hsu",
-						["hp"] = 193945,
-						["spellid"] = 131743,
-					}, -- [14]
-					{
-						["ts"] = 1447081931.201,
-						["amount"] = -3,
-						["srcname"] = "Master Hsu",
-						["hp"] = 193942,
-						["spellid"] = 131743,
-					}, -- [15]
-					["pos"] = 4,
-				},
-				["shielding"] = 24415,
+				["ccbreaks"] = 0,
+				["dispells"] = 1,
 				["alert"] = {
 					["High"] = {
-						["alertCount"] = 5,
+						["alertDamage"] = 85296,
 						["spell"] = {
 							["Fiery Keg Smash"] = {
 								["min"] = 21324,
@@ -430,7 +428,7 @@ SkadaPerCharDB = {
 							},
 						},
 						["name"] = "High",
-						["alertDamage"] = 85296,
+						["alertCount"] = 5,
 					},
 				},
 				["multistrikes"] = 4,
@@ -444,8 +442,8 @@ SkadaPerCharDB = {
 						["name"] = "Fiery Keg Smash",
 						["active"] = 0,
 						["id"] = 131831,
-						["uptime"] = 5,
 						["auratype"] = "DEBUFF",
+						["uptime"] = 5,
 					},
 				},
 				["healingspells"] = {
@@ -454,17 +452,18 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["role"] = "NONE",
-				["alertDamage"] = 0,
+				["time"] = 4,
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["maxhp"] = 0,
+				["deathlog"] = {
+				},
 				["healed"] = {
 				},
 				["power"] = {
 				},
 				["id"] = "Creature-0-1169-870-81-67060-000040B067",
-				["healing"] = 0,
+				["maxhp"] = 0,
 				["ccbreaks"] = 0,
 				["damagetakenspells"] = {
 				},
@@ -472,9 +471,8 @@ SkadaPerCharDB = {
 				["damagetaken"] = 0,
 				["name"] = "Master Cheng",
 				["alertCount"] = 0,
-				["deathlog"] = {
-				},
-				["time"] = 4,
+				["healing"] = 0,
+				["alertDamage"] = 0,
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -489,22 +487,28 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["ccbreaks"] = 0,
 				["overhealing"] = 0,
-				["auras"] = {
+				["healingspells"] = {
 					["Blade Guard"] = {
-						["name"] = "Blade Guard",
-						["active"] = 0,
+						["shielding"] = 1922512,
 						["id"] = 129754,
-						["uptime"] = 285,
-						["auratype"] = "BUFF",
+						["healing"] = 1922512,
+						["absorbed"] = 0,
+						["min"] = 252,
+						["multistrike"] = 0,
+						["name"] = "Blade Guard",
+						["critical"] = 0,
+						["max"] = 25354,
+						["overhealing"] = 0,
+						["hits"] = 528,
+						["multistrikes"] = 0,
 					},
 				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 1922512,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-1169-870-81-65960-000040B0D1",
 				["maxhp"] = 0,
@@ -514,29 +518,23 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["healed"] = {
 					["Creature-0-1169-870-81-65960-000040B0D1"] = {
-						["shielding"] = 1922512,
+						["amount"] = 1922512,
 						["role"] = "NONE",
 						["name"] = "Master Woo",
-						["amount"] = 1922512,
+						["shielding"] = 1922512,
 					},
 				},
 				["name"] = "Master Woo",
 				["alertCount"] = 0,
-				["shielding"] = 1922512,
-				["healingspells"] = {
+				["power"] = {
+				},
+				["auras"] = {
 					["Blade Guard"] = {
-						["shielding"] = 1922512,
-						["id"] = 129754,
-						["healing"] = 1922512,
-						["multistrikes"] = 0,
-						["min"] = 252,
-						["multistrike"] = 0,
 						["name"] = "Blade Guard",
-						["hits"] = 528,
-						["overhealing"] = 0,
-						["max"] = 25354,
-						["critical"] = 0,
-						["absorbed"] = 0,
+						["active"] = 0,
+						["id"] = 129754,
+						["auratype"] = "BUFF",
+						["uptime"] = 285,
 					},
 				},
 				["alert"] = {
@@ -553,22 +551,28 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["ccbreaks"] = 0,
 				["overhealing"] = 0,
-				["auras"] = {
+				["healingspells"] = {
 					["Zen Healing"] = {
-						["name"] = "Zen Healing",
-						["active"] = 0,
+						["shielding"] = 0,
 						["id"] = 129700,
-						["uptime"] = 3,
-						["auratype"] = "BUFF",
+						["healing"] = 15975,
+						["absorbed"] = 0,
+						["min"] = 15975,
+						["multistrike"] = 0,
+						["name"] = "Zen Healing",
+						["critical"] = 0,
+						["max"] = 15975,
+						["overhealing"] = 0,
+						["hits"] = 1,
+						["multistrikes"] = 0,
 					},
 				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-1169-870-81-65899-000040B28B",
 				["maxhp"] = 0,
@@ -578,29 +582,23 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["healed"] = {
 					["Creature-0-1169-870-81-65899-000040B28B"] = {
-						["shielding"] = 0,
+						["amount"] = 15975,
 						["role"] = "NONE",
 						["name"] = "Master Kistane",
-						["amount"] = 15975,
+						["shielding"] = 0,
 					},
 				},
 				["name"] = "Master Kistane",
 				["alertCount"] = 0,
-				["shielding"] = 0,
-				["healingspells"] = {
+				["power"] = {
+				},
+				["auras"] = {
 					["Zen Healing"] = {
-						["shielding"] = 0,
-						["id"] = 129700,
-						["healing"] = 15975,
-						["multistrikes"] = 0,
-						["min"] = 15975,
-						["multistrike"] = 0,
 						["name"] = "Zen Healing",
-						["hits"] = 1,
-						["overhealing"] = 0,
-						["max"] = 15975,
-						["critical"] = 0,
-						["absorbed"] = 0,
+						["active"] = 0,
+						["id"] = 129700,
+						["auratype"] = "BUFF",
+						["uptime"] = 3,
 					},
 				},
 				["alert"] = {
@@ -617,22 +615,28 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["ccbreaks"] = 0,
 				["overhealing"] = 0,
-				["auras"] = {
+				["healingspells"] = {
 					["Soothing Mist"] = {
-						["name"] = "Soothing Mist",
-						["active"] = 0,
+						["shielding"] = 0,
 						["id"] = 129952,
-						["uptime"] = 3,
-						["auratype"] = "BUFF",
+						["healing"] = 11584,
+						["absorbed"] = 0,
+						["min"] = 1198,
+						["multistrike"] = 3,
+						["name"] = "Soothing Mist",
+						["critical"] = 0,
+						["max"] = 3994,
+						["overhealing"] = 0,
+						["hits"] = 5,
+						["multistrikes"] = 0,
 					},
 				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-1169-870-81-66073-000040B306",
 				["maxhp"] = 0,
@@ -642,29 +646,23 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["healed"] = {
 					["Creature-0-1169-870-81-66073-000040B306"] = {
-						["shielding"] = 0,
+						["amount"] = 11584,
 						["role"] = "NONE",
 						["name"] = "Master Yoon",
-						["amount"] = 11584,
+						["shielding"] = 0,
 					},
 				},
 				["name"] = "Master Yoon",
 				["alertCount"] = 0,
-				["shielding"] = 0,
-				["healingspells"] = {
+				["power"] = {
+				},
+				["auras"] = {
 					["Soothing Mist"] = {
-						["shielding"] = 0,
-						["id"] = 129952,
-						["healing"] = 11584,
-						["multistrikes"] = 0,
-						["min"] = 1198,
-						["multistrike"] = 3,
 						["name"] = "Soothing Mist",
-						["hits"] = 5,
-						["overhealing"] = 0,
-						["max"] = 3994,
-						["critical"] = 0,
-						["absorbed"] = 0,
+						["active"] = 0,
+						["id"] = 129952,
+						["auratype"] = "BUFF",
+						["uptime"] = 3,
 					},
 				},
 				["alert"] = {
@@ -681,22 +679,14 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["ccbreaks"] = 0,
 				["overhealing"] = 0,
-				["auras"] = {
-					["Spinning Crane Kick"] = {
-						["name"] = "Spinning Crane Kick",
-						["active"] = 0,
-						["id"] = 130150,
-						["uptime"] = 8,
-						["auratype"] = "BUFF",
-					},
+				["healingspells"] = {
 				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-1169-870-81-66180-000040B36D",
 				["maxhp"] = 0,
@@ -708,8 +698,16 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Master Cheng",
 				["alertCount"] = 0,
-				["shielding"] = 0,
-				["healingspells"] = {
+				["power"] = {
+				},
+				["auras"] = {
+					["Spinning Crane Kick"] = {
+						["name"] = "Spinning Crane Kick",
+						["active"] = 0,
+						["id"] = 130150,
+						["auratype"] = "BUFF",
+						["uptime"] = 8,
+					},
 				},
 				["alert"] = {
 				},
@@ -725,22 +723,14 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["ccbreaks"] = 0,
 				["overhealing"] = 0,
-				["auras"] = {
-					["Poison Strike"] = {
-						["name"] = "Poison Strike",
-						["active"] = 0,
-						["id"] = 131743,
-						["uptime"] = 10,
-						["auratype"] = "DEBUFF",
-					},
+				["healingspells"] = {
 				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-1169-870-81-65977-000040B618",
 				["maxhp"] = 0,
@@ -752,8 +742,16 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Master Hsu",
 				["alertCount"] = 0,
-				["shielding"] = 0,
-				["healingspells"] = {
+				["power"] = {
+				},
+				["auras"] = {
+					["Poison Strike"] = {
+						["name"] = "Poison Strike",
+						["active"] = 0,
+						["id"] = 131743,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 10,
+					},
 				},
 				["alert"] = {
 				},
@@ -769,22 +767,28 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["ccbreaks"] = 0,
 				["overhealing"] = 0,
-				["auras"] = {
+				["healingspells"] = {
 					["Soothing Mist"] = {
-						["name"] = "Soothing Mist",
-						["active"] = 0,
+						["shielding"] = 0,
 						["id"] = 131121,
-						["uptime"] = 9,
-						["auratype"] = "BUFF",
+						["healing"] = 44362,
+						["absorbed"] = 0,
+						["min"] = 1167,
+						["multistrike"] = 8,
+						["name"] = "Soothing Mist",
+						["critical"] = 0,
+						["max"] = 3892,
+						["overhealing"] = 0,
+						["hits"] = 17,
+						["multistrikes"] = 0,
 					},
 				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-1169-870-81-66732-000040B720",
 				["maxhp"] = 0,
@@ -794,29 +798,23 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["healed"] = {
 					["Creature-0-1169-870-81-66732-000040B720"] = {
-						["shielding"] = 0,
+						["amount"] = 44362,
 						["role"] = "NONE",
 						["name"] = "Master Hight",
-						["amount"] = 44362,
+						["shielding"] = 0,
 					},
 				},
 				["name"] = "Master Hight",
 				["alertCount"] = 0,
-				["shielding"] = 0,
-				["healingspells"] = {
+				["power"] = {
+				},
+				["auras"] = {
 					["Soothing Mist"] = {
-						["shielding"] = 0,
-						["id"] = 131121,
-						["healing"] = 44362,
-						["multistrikes"] = 0,
-						["min"] = 1167,
-						["multistrike"] = 8,
 						["name"] = "Soothing Mist",
-						["hits"] = 17,
-						["overhealing"] = 0,
-						["max"] = 3892,
-						["critical"] = 0,
-						["absorbed"] = 0,
+						["active"] = 0,
+						["id"] = 131121,
+						["auratype"] = "BUFF",
+						["uptime"] = 9,
 					},
 				},
 				["alert"] = {
@@ -833,22 +831,14 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["ccbreaks"] = 0,
 				["overhealing"] = 0,
-				["auras"] = {
-					["Poison Strike"] = {
-						["name"] = "Poison Strike",
-						["active"] = 0,
-						["id"] = 131743,
-						["uptime"] = 3,
-						["auratype"] = "DEBUFF",
-					},
+				["healingspells"] = {
 				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-1169-870-81-65977-000040B79B",
 				["maxhp"] = 0,
@@ -860,8 +850,16 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Master Hsu",
 				["alertCount"] = 0,
-				["shielding"] = 0,
-				["healingspells"] = {
+				["power"] = {
+				},
+				["auras"] = {
+					["Poison Strike"] = {
+						["name"] = "Poison Strike",
+						["active"] = 0,
+						["id"] = 131743,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 3,
+					},
 				},
 				["alert"] = {
 				},
@@ -874,6 +872,11 @@ SkadaPerCharDB = {
 				["players"] = {
 				},
 				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
 				["hdonespell"] = {
 					["Soothing Mist"] = {
 						["min"] = 0,
@@ -884,46 +887,12 @@ SkadaPerCharDB = {
 						["hits"] = 562,
 					},
 				},
-				["taken"] = 0,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 0,
-			},
-			["Master Kistane"] = {
-				["players"] = {
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-					["Soothing Mist"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 124258,
-						["hits"] = 562,
-					},
-				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Monk Trainee"] = {
 				["players"] = {
 				},
 				["hdone"] = 63488,
-				["hdonespell"] = {
-					["Meditation"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 1107,
-						["healing"] = 63488,
-						["overhealing"] = 12881,
-						["hits"] = 69,
-					},
-				},
+				["done"] = 0,
 				["taken"] = 0,
 				["htakenspell"] = {
 					["Meditation"] = {
@@ -936,7 +905,36 @@ SkadaPerCharDB = {
 					},
 				},
 				["htaken"] = 63488,
+				["hdonespell"] = {
+					["Meditation"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 1107,
+						["healing"] = 63488,
+						["overhealing"] = 12881,
+						["hits"] = 69,
+					},
+				},
+			},
+			["Master Kistane"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
 				["done"] = 0,
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Soothing Mist"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 124258,
+						["hits"] = 562,
+					},
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
 			},
 		},
 		["power"] = {
@@ -945,14 +943,16 @@ SkadaPerCharDB = {
 		["mobtaken"] = 0,
 		["healing"] = 2227358,
 		["overhealing"] = 2702,
-		["damagetaken"] = 814946,
+		["shielding"] = 1946927,
 		["alertDamage"] = 85296,
 		["starttime"] = 1447080032,
 		["name"] = "Total",
 		["alertCount"] = 5,
-		["shielding"] = 1946927,
+		["damagetaken"] = 814946,
 		["mobhdone"] = 63488,
 		["last_action"] = 1447080032,
-		["multistrikes"] = 15,
+		["mobdone"] = 0,
+	},
+	["sets"] = {
 	},
 }
