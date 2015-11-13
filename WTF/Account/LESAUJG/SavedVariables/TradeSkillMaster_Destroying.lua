@@ -22,6 +22,38 @@ TradeSkillMaster_DestroyingDB = {
 		["deMaxQuality"] = 2,
 		["history"] = {
 			["Disenchant"] = {
+				{
+					["result"] = {
+						["item:34054:0:0:0:0:0:0"] = 4,
+					},
+					["isDraenicEnchanting"] = true,
+					["item"] = "item:36380:0:0:0:0:0:-5",
+					["time"] = 1447349331,
+				}, -- [1]
+				{
+					["result"] = {
+						["item:34054:0:0:0:0:0:0"] = 6,
+					},
+					["isDraenicEnchanting"] = true,
+					["item"] = "item:36430:0:0:0:0:0:-39",
+					["time"] = 1447349431,
+				}, -- [2]
+				{
+					["result"] = {
+						["item:34054:0:0:0:0:0:0"] = 6,
+					},
+					["isDraenicEnchanting"] = true,
+					["item"] = "item:36045:0:0:0:0:0:-9",
+					["time"] = 1447349782,
+				}, -- [3]
+				{
+					["result"] = {
+						["item:34054:0:0:0:0:0:0"] = 6,
+					},
+					["isDraenicEnchanting"] = true,
+					["item"] = "item:36159:0:0:0:0:0:-11",
+					["time"] = 1447349786,
+				}, -- [4]
 			},
 			["Prospecting"] = {
 				{
