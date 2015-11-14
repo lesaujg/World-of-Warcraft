@@ -1,13 +1,13 @@
 Version: 1
 Frame: BaudManifestDisplay1
-FrameLevel: 52
+FrameLevel: 43
 Anchor: TOPRIGHT
 X: -89
 Y: -10
 W: 500
 H: 795
 Frame: BaudManifestDisplay2
-FrameLevel: 44
+FrameLevel: 37
 Anchor: BOTTOMLEFT
 X: 254
 Y: 95
@@ -34,3 +34,10 @@ X: 0
 Y: 128
 W: 150
 H: 42
+Frame: DBMBossHealth
+FrameLevel: 1
+Anchor: CENTER
+X: 326
+Y: 55
+W: 60
+H: 10
