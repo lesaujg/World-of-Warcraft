@@ -35,9 +35,9 @@ TradeSkillMaster_MailingDB = {
 			},
 			["scrollvalue"] = 0,
 			["fullwidth"] = 945,
-			["treesizable"] = true,
-			["treewidth"] = 175,
 			["selected"] = "2Mail Clothgar",
+			["treewidth"] = 175,
+			["treesizable"] = true,
 		},
 	},
 }

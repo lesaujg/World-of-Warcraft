@@ -24,108 +24,6 @@ TradeSkillMaster_ShoppingDB = {
 			"trade goods/herb/i100", -- [8]
 			"temporal crystal/exact", -- [9]
 		},
-		["previousSearches"] = {
-			"miscellaneous/mount", -- [1]
-			"arcane c", -- [2]
-			"universal", -- [3]
-			"temporal crystal/exact", -- [4]
-			"glyph/monk/usable", -- [5]
-			"glyph/monk", -- [6]
-			"glyph\\monk", -- [7]
-			"glyph", -- [8]
-			"megawatt", -- [9]
-			"frozen orb", -- [10]
-			"Shadow Crystal/exact", -- [11]
-			"Shadow Crystal/exact/x1", -- [12]
-			"Dark Jade/exact", -- [13]
-			"Dark Jade/exact/x1", -- [14]
-			"Chalcedony/exact", -- [15]
-			"Chalcedony/exact/x1", -- [16]
-			"cobalt ore", -- [17]
-			"saronite ore", -- [18]
-			"titanium ore", -- [19]
-			"topaz", -- [20]
-			"eternal life", -- [21]
-			"eternal fire", -- [22]
-			"frostweave", -- [23]
-			"weave", -- [24]
-			"Spellweave/exact/x1", -- [25]
-			"Monarch Topaz/exact/x4", -- [26]
-			"Infinite Dust/exact/x26", -- [27]
-			"Iceweb Spider Silk/exact/x1", -- [28]
-			"Ebonweave/exact/x1", -- [29]
-			"trade goods/herb/i100", -- [30]
-			"silk cloth", -- [31]
-			"silt cloth", -- [32]
-			"wool cloth", -- [33]
-			"linen cloth", -- [34]
-			"linen", -- [35]
-			"draenic dust/exact", -- [36]
-			"kyparite", -- [37]
-			"trillium ore", -- [38]
-			"ghost iron ore", -- [39]
-			"gem/i87", -- [40]
-			"living steel", -- [41]
-			"alexandrite /exact", -- [42]
-			"alexandrite", -- [43]
-			"golden lotus", -- [44]
-			"goldenlotus", -- [45]
-			"serpent's eye", -- [46]
-			"spirit of harmony", -- [47]
-			"spirit of harmiony", -- [48]
-			"wild jade", -- [49]
-			"luminous shard/exact", -- [50]
-			"trade goods/metal & stone/i100", -- [51]
-			"huge", -- [52]
-			"sources", -- [53]
-			"soources", -- [54]
-			"rtesources", -- [55]
-			"ressources", -- [56]
-			"shard", -- [57]
-			"gold lotus", -- [58]
-			"legion", -- [59]
-			"Temporal Crystal/exact/x112", -- [60]
-			"trade goods/i100", -- [61]
-			"trade goods/metal & stone/i90", -- [62]
-			"trade goods/metal & stone/i91", -- [63]
-			"trade goods/metal & stone", -- [64]
-			"Blackrock Ore/exact", -- [65]
-			"greater draenic agility flask/exact", -- [66]
-			"Giant Dinosaur Bone/exact", -- [67]
-			"frostweed", -- [68]
-			"flytrap", -- [69]
-			"fireweed", -- [70]
-			"firewwed", -- [71]
-			"goregrond", -- [72]
-			"goregond", -- [73]
-			"gorgond", -- [74]
-			"Hula Girl Doll/exact/x1", -- [75]
-			"Adamantite Frame/exact/x4", -- [76]
-			"Primal Fire/exact/x8", -- [77]
-			"Khorium Bar/exact/x8", -- [78]
-			"Felsteel Bar/exact/x16", -- [79]
-			"Sorcerous Water/exact", -- [80]
-			"Savage Blood/exact/x1", -- [81]
-			"Felblight/exact/x169", -- [82]
-			"Savage Blood/exact/x56", -- [83]
-			"catalyst", -- [84]
-			"Sorcerous Water/exact/x77", -- [85]
-			"gorgrond", -- [86]
-			"gorg", -- [87]
-			"sorcerous air/exact", -- [88]
-			"true iron ore/exact", -- [89]
-			"raw beast", -- [90]
-			"critical strike", -- [91]
-			"Healing Tonic/exact", -- [92]
-			"sea scorpion segment/exact", -- [93]
-			"Luminous Shard/exact/x3", -- [94]
-			"water", -- [95]
-			"heartb", -- [96]
-			"hearthb", -- [97]
-			"Cinderbloom/exact/x1", -- [98]
-			"Elixir of Impossible Accuracy/exact/x1", -- [99]
-			"Abyss Crystal/exact/x14", -- [100]
-		},
 		["destroyingTargetItems"] = {
 			["item:36926:0:0:0:0:0:0"] = "Shadow Crystal",
 			["item:11178:0:0:0:0:0:0"] = "Large Radiant Shard",
@@ -230,7 +128,7 @@ TradeSkillMaster_ShoppingDB = {
 			["item:23112:0:0:0:0:0:0"] = "Golden Draenite",
 			["item:34056:0:0:0:0:0:0"] = "Lesser Cosmic Essence",
 			["item:22447:0:0:0:0:0:0"] = "Lesser Planar Essence",
-			["item:43127:0:0:0:0:0:0"] = "Snowfall Ink",
+			["item:11174:0:0:0:0:0:0"] = "Lesser Nether Essence",
 			["item:52195:0:0:0:0:0:0"] = "Amberjewel",
 			["item:22445:0:0:0:0:0:0"] = "Arcane Dust",
 			["item:52194:0:0:0:0:0:0"] = "Demonseye",
@@ -247,10 +145,10 @@ TradeSkillMaster_ShoppingDB = {
 			["item:52191:0:0:0:0:0:0"] = "Ocean Sapphire",
 			["item:36924:0:0:0:0:0:0"] = "Sky Sapphire",
 			["item:36917:0:0:0:0:0:0"] = "Bloodstone",
-			["item:11084:0:0:0:0:0:0"] = "Large Glimmering Shard",
-			["item:36860:0:0:0:0:0:0"] = "Eternal Fire",
 			["item:115504:0:0:0:0:0:0"] = "Fractured Temporal Crystal",
-			["item:22452:0:0:0:0:0:0"] = "Primal Earth",
+			["item:36860:0:0:0:0:0:0"] = "Eternal Fire",
+			["item:11084:0:0:0:0:0:0"] = "Large Glimmering Shard",
+			["item:43115:0:0:0:0:0:0"] = "Hunter's Ink",
 			["item:61978:0:0:0:0:0:0"] = "Blackfallow Ink",
 			["item:61979:0:0:0:0:0:0"] = "Ashen Pigment",
 			["item:43105:0:0:0:0:0:0"] = "Indigo Pigment",
@@ -260,11 +158,11 @@ TradeSkillMaster_ShoppingDB = {
 			["item:11135:0:0:0:0:0:0"] = "Greater Mystic Essence",
 			["item:11134:0:0:0:0:0:0"] = "Lesser Mystic Essence",
 			["item:23107:0:0:0:0:0:0"] = "Shadow Draenite",
-			["item:16203:0:0:0:0:0:0"] = "Greater Eternal Essence",
-			["item:39151:0:0:0:0:0:0"] = "Alabaster Pigment",
-			["item:10938:0:0:0:0:0:0"] = "Lesser Magic Essence",
 			["item:37701:0:0:0:0:0:0"] = "Crystallized Earth",
 			["item:37705:0:0:0:0:0:0"] = "Crystallized Water",
+			["item:10938:0:0:0:0:0:0"] = "Lesser Magic Essence",
+			["item:16203:0:0:0:0:0:0"] = "Greater Eternal Essence",
+			["item:43122:0:0:0:0:0:0"] = "Shimmering Ink",
 			["item:36927:0:0:0:0:0:0"] = "Twilight Opal",
 			["item:43126:0:0:0:0:0:0"] = "Ink of the Sea",
 			["item:43121:0:0:0:0:0:0"] = "Fiery Ink",
@@ -275,7 +173,7 @@ TradeSkillMaster_ShoppingDB = {
 			["item:10998:0:0:0:0:0:0"] = "Lesser Astral Essence",
 			["item:61981:0:0:0:0:0:0"] = "Inferno Ink",
 			["item:34055:0:0:0:0:0:0"] = "Greater Cosmic Essence",
-			["item:43122:0:0:0:0:0:0"] = "Shimmering Ink",
+			["item:39151:0:0:0:0:0:0"] = "Alabaster Pigment",
 			["item:43118:0:0:0:0:0:0"] = "Jadefire Ink",
 			["item:16204:0:0:0:0:0:0"] = "Illusion Dust",
 			["item:76133:0:0:0:0:0:0"] = "Lapis Lazuli",
@@ -285,8 +183,8 @@ TradeSkillMaster_ShoppingDB = {
 			["item:39342:0:0:0:0:0:0"] = "Nether Pigment",
 			["item:74247:0:0:0:0:0:0"] = "Ethereal Shard",
 			["item:76141:0:0:0:0:0:0"] = "Imperial Amethyst",
+			["item:22452:0:0:0:0:0:0"] = "Primal Earth",
 			["item:52721:0:0:0:0:0:0"] = "Heavenly Shard",
-			["item:43115:0:0:0:0:0:0"] = "Hunter's Ink",
 			["item:39469:0:0:0:0:0:0"] = "Moonglow Ink",
 			["item:23117:0:0:0:0:0:0"] = "Azure Moonstone",
 			["item:37703:0:0:0:0:0:0"] = "Crystallized Shadow",
@@ -295,7 +193,7 @@ TradeSkillMaster_ShoppingDB = {
 			["item:23440:0:0:0:0:0:0"] = "Dawnstone",
 			["item:52722:0:0:0:0:0:0"] = "Maelstrom Crystal",
 			["item:34057:0:0:0:0:0:0"] = "Abyss Crystal",
-			["item:11174:0:0:0:0:0:0"] = "Lesser Nether Essence",
+			["item:43127:0:0:0:0:0:0"] = "Snowfall Ink",
 			["item:23077:0:0:0:0:0:0"] = "Blood Garnet",
 			["item:3864:0:0:0:0:0:0"] = "Citrine",
 			["item:39338:0:0:0:0:0:0"] = "Golden Pigment",
@@ -319,12 +217,113 @@ TradeSkillMaster_ShoppingDB = {
 				["2Buy 150g"] = true,
 			},
 			["scrollvalue"] = 0,
-			["treesizable"] = true,
 			["selected"] = "2Buy Clothgar",
+			["treesizable"] = true,
 			["treewidth"] = 175,
 			["fullwidth"] = 945,
 		},
-		["sidebarBtn"] = 2,
+		["previousSearches"] = {
+			"orb", -- [1]
+			"universal", -- [2]
+			"arcane c", -- [3]
+			"miscellaneous/mount", -- [4]
+			"temporal crystal/exact", -- [5]
+			"glyph/monk/usable", -- [6]
+			"glyph/monk", -- [7]
+			"glyph\\monk", -- [8]
+			"glyph", -- [9]
+			"megawatt", -- [10]
+			"frozen orb", -- [11]
+			"Shadow Crystal/exact", -- [12]
+			"Shadow Crystal/exact/x1", -- [13]
+			"Dark Jade/exact", -- [14]
+			"Dark Jade/exact/x1", -- [15]
+			"Chalcedony/exact", -- [16]
+			"Chalcedony/exact/x1", -- [17]
+			"cobalt ore", -- [18]
+			"saronite ore", -- [19]
+			"titanium ore", -- [20]
+			"topaz", -- [21]
+			"eternal life", -- [22]
+			"eternal fire", -- [23]
+			"frostweave", -- [24]
+			"weave", -- [25]
+			"Spellweave/exact/x1", -- [26]
+			"Monarch Topaz/exact/x4", -- [27]
+			"Infinite Dust/exact/x26", -- [28]
+			"Iceweb Spider Silk/exact/x1", -- [29]
+			"Ebonweave/exact/x1", -- [30]
+			"trade goods/herb/i100", -- [31]
+			"silk cloth", -- [32]
+			"silt cloth", -- [33]
+			"wool cloth", -- [34]
+			"linen cloth", -- [35]
+			"linen", -- [36]
+			"draenic dust/exact", -- [37]
+			"kyparite", -- [38]
+			"trillium ore", -- [39]
+			"ghost iron ore", -- [40]
+			"gem/i87", -- [41]
+			"living steel", -- [42]
+			"alexandrite /exact", -- [43]
+			"alexandrite", -- [44]
+			"golden lotus", -- [45]
+			"goldenlotus", -- [46]
+			"serpent's eye", -- [47]
+			"spirit of harmony", -- [48]
+			"spirit of harmiony", -- [49]
+			"wild jade", -- [50]
+			"luminous shard/exact", -- [51]
+			"trade goods/metal & stone/i100", -- [52]
+			"huge", -- [53]
+			"sources", -- [54]
+			"soources", -- [55]
+			"rtesources", -- [56]
+			"ressources", -- [57]
+			"shard", -- [58]
+			"gold lotus", -- [59]
+			"legion", -- [60]
+			"Temporal Crystal/exact/x112", -- [61]
+			"trade goods/i100", -- [62]
+			"trade goods/metal & stone/i90", -- [63]
+			"trade goods/metal & stone/i91", -- [64]
+			"trade goods/metal & stone", -- [65]
+			"Blackrock Ore/exact", -- [66]
+			"greater draenic agility flask/exact", -- [67]
+			"Giant Dinosaur Bone/exact", -- [68]
+			"frostweed", -- [69]
+			"flytrap", -- [70]
+			"fireweed", -- [71]
+			"firewwed", -- [72]
+			"goregrond", -- [73]
+			"goregond", -- [74]
+			"gorgond", -- [75]
+			"Hula Girl Doll/exact/x1", -- [76]
+			"Adamantite Frame/exact/x4", -- [77]
+			"Primal Fire/exact/x8", -- [78]
+			"Khorium Bar/exact/x8", -- [79]
+			"Felsteel Bar/exact/x16", -- [80]
+			"Sorcerous Water/exact", -- [81]
+			"Savage Blood/exact/x1", -- [82]
+			"Felblight/exact/x169", -- [83]
+			"Savage Blood/exact/x56", -- [84]
+			"catalyst", -- [85]
+			"Sorcerous Water/exact/x77", -- [86]
+			"gorgrond", -- [87]
+			"gorg", -- [88]
+			"sorcerous air/exact", -- [89]
+			"true iron ore/exact", -- [90]
+			"raw beast", -- [91]
+			"critical strike", -- [92]
+			"Healing Tonic/exact", -- [93]
+			"sea scorpion segment/exact", -- [94]
+			"Luminous Shard/exact/x3", -- [95]
+			"water", -- [96]
+			"heartb", -- [97]
+			"hearthb", -- [98]
+			"Cinderbloom/exact/x1", -- [99]
+			"Elixir of Impossible Accuracy/exact/x1", -- [100]
+		},
 	},
 	["profiles"] = {
 		["Sanjuri - Sisters of Elune"] = {

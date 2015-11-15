@@ -499,6 +499,13 @@ WeakAuras.load_prototype = {
       init = "arg"
     },
     {
+      name = "faction",
+      display = L["Player Faction"],
+      type = "multiselect",
+      values = "faction_group",
+      init = "arg"
+    },
+    {
       name = "level",
       display = L["Player Level"],
       type = "number",
@@ -563,7 +570,7 @@ WeakAuras.event_prototypes = {
         name = "combopoints",
         display = L["Combo Points"],
         type = "number",
-        init = "UnitInVehicle('player') and GetComboPoints('vehicle', 'target') or UnitPower('player', 4)"
+        init = "UnitInVehicle('player') and UnitHasVehicleUI('player') and GetComboPoints('vehicle', 'target') or UnitPower('player', 4)"
       }
     },
     durationFunc = function(trigger)
@@ -595,7 +602,7 @@ WeakAuras.event_prototypes = {
     init = function(trigger)
       trigger.unit = trigger.unit or "target";
       local ret = [[
-        local unit = unit or '%s';
+        local unit = '%s';
         local concernedUnit = '%s';
       ]];
 
@@ -614,7 +621,7 @@ WeakAuras.event_prototypes = {
         name = "name",
         display = L["Name"],
         type = "string",
-        init = "UnitName(unit)"
+        init = "UnitName(concernedUnit)"
       },
       {
         name = "class",
@@ -627,27 +634,27 @@ WeakAuras.event_prototypes = {
         name = "hostility",
         display = L["Hostility"],
         type = "select",
-        init = "UnitIsEnemy('player', unit) and 'hostile' or 'friendly'",
+        init = "UnitIsEnemy('player', concernedUnit) and 'hostile' or 'friendly'",
         values = "hostility_types"
       },
       {
         name = "character",
         display = L["Character Type"],
         type = "select",
-        init = "UnitIsPlayer(unit) and 'player' or 'npc'",
+        init = "UnitIsPlayer(concernedUnit) and 'player' or 'npc'",
         values = "character_types"
       },
       {
         name = "level",
         display = L["Level"],
         type = "number",
-        init = "UnitLevel(unit)"
+        init = "UnitLevel(concernedUnit)"
       },
       {
         name = "attackable",
         display = L["Attackable"],
         type = "tristate",
-        init = "UnitCanAttack('player', unit) and true or false",
+        init = "UnitCanAttack('player', concernedUnit)",
       },
       {
         hidden = true,
@@ -787,28 +794,19 @@ WeakAuras.event_prototypes = {
     },
     force_events = true,
     name = L["Holy Power"],
-    init = function(trigger)
-      trigger.unit = trigger.unit or "player";
-      local ret = [[
-        local unit = unit or '%s';
-        local concernedUnit = '%s';
-      ]];
-
-    return ret:format(trigger.unit, trigger.unit);
-    end,
     args = {
       {
         name = "power",
         display = L["Holy Power"],
         type = "number",
-        init = "UnitPower(unit, 9)"
+        init = "UnitPower('player', 9)"
       },
     },
     durationFunc = function(trigger)
-      return UnitPower(trigger.unit, 9), UnitPowerMax(trigger.unit, 9), true;
+      return UnitPower('player', 9), UnitPowerMax('player', 9), true;
     end,
     stacksFunc = function(trigger)
-      return UnitPower(trigger.unit, 9);
+      return UnitPower('player', 9);
     end,
     automatic = true
   },
@@ -820,28 +818,19 @@ WeakAuras.event_prototypes = {
     },
     force_events = true,
     name = L["Demonic Fury"],
-    init = function(trigger)
-      trigger.unit = trigger.unit or "player";
-      local ret = [[
-        local unit = unit or '%s';
-        local concernedUnit = '%s';
-      ]];
-
-    return ret:format(trigger.unit, trigger.unit);
-    end,
     args = {
       {
         name = "power",
         display = L["Demonic Fury"],
         type = "number",
-        init = "UnitPower(unit, SPELL_POWER_DEMONIC_FURY)"
+        init = "UnitPower('player', SPELL_POWER_DEMONIC_FURY)"
       },
     },
     durationFunc = function(trigger)
-      return UnitPower(trigger.unit, SPELL_POWER_DEMONIC_FURY), math.max(1, UnitPowerMax(trigger.unit, SPELL_POWER_DEMONIC_FURY)), true;
+      return UnitPower('player', SPELL_POWER_DEMONIC_FURY), math.max(1, UnitPowerMax('player', SPELL_POWER_DEMONIC_FURY)), true;
     end,
     stacksFunc = function(trigger)
-      return UnitPower(trigger.unit, SPELL_POWER_DEMONIC_FURY);
+      return UnitPower('player', SPELL_POWER_DEMONIC_FURY);
     end,
     automatic = true
   },
@@ -853,28 +842,19 @@ WeakAuras.event_prototypes = {
     },
     force_events = true,
     name = L["Burning Embers"],
-    init = function(trigger)
-      trigger.unit = trigger.unit or "player";
-      local ret = [[
-        local unit = unit or '%s';
-        local concernedUnit = '%s';
-      ]];
-
-    return ret:format(trigger.unit, trigger.unit);
-    end,
     args = {
       {
         name = "ember",
         display = L["Burning Embers"],
         type = "number",
-        init = "UnitPower(unit, SPELL_POWER_BURNING_EMBERS, true)"
+        init = "UnitPower('player', SPELL_POWER_BURNING_EMBERS, true)"
       },
     },
     durationFunc = function(trigger)
-      return UnitPower(trigger.unit, SPELL_POWER_BURNING_EMBERS, true), math.max(1, UnitPowerMax(trigger.unit, SPELL_POWER_BURNING_EMBERS, true)), true;
+      return UnitPower('player', SPELL_POWER_BURNING_EMBERS, true), math.max(1, UnitPowerMax('player', SPELL_POWER_BURNING_EMBERS, true)), true;
     end,
     stacksFunc = function(trigger)
-      return UnitPower(trigger.unit, SPELL_POWER_BURNING_EMBERS, true);
+      return UnitPower('player', SPELL_POWER_BURNING_EMBERS, true);
     end,
     automatic = true
   },
@@ -886,28 +866,19 @@ WeakAuras.event_prototypes = {
     },
     force_events = true,
     name = L["Shadow Orbs"],
-    init = function(trigger)
-      trigger.unit = trigger.unit or "player";
-      local ret = [[
-        local unit = unit or '%s';
-        local concernedUnit = '%s';
-      ]];
-
-    return ret:format(trigger.unit, trigger.unit);
-    end,
     args = {
       {
         name = "power",
         display = L["Shadow Orbs"],
         type = "number",
-        init = "UnitPower(unit, SPELL_POWER_SHADOW_ORBS)"
+        init = "UnitPower('player', SPELL_POWER_SHADOW_ORBS)"
       },
     },
     durationFunc = function(trigger)
-      return UnitPower(trigger.unit, SPELL_POWER_SHADOW_ORBS), math.max(1, UnitPowerMax(trigger.unit, SPELL_POWER_SHADOW_ORBS)), true;
+      return UnitPower('player', SPELL_POWER_SHADOW_ORBS), math.max(1, UnitPowerMax('player', SPELL_POWER_SHADOW_ORBS)), true;
     end,
     stacksFunc = function(trigger)
-      return UnitPower(trigger.unit, SPELL_POWER_SHADOW_ORBS);
+      return UnitPower('player', SPELL_POWER_SHADOW_ORBS);
     end,
     automatic = true
   },
@@ -919,28 +890,19 @@ WeakAuras.event_prototypes = {
     },
     force_events = true,
     name = L["Chi Power"],
-    init = function(trigger)
-      trigger.unit = trigger.unit or "player";
-      local ret = [[
-        local unit = unit or '%s';
-        local concernedUnit = '%s';
-      ]];
-
-    return ret:format(trigger.unit, trigger.unit);
-    end,
     args = {
       {
         name = "power",
         display = L["Chi Power"],
         type = "number",
-        init = "UnitPower(unit, SPELL_POWER_CHI)"
+        init = "UnitPower('player', SPELL_POWER_CHI)"
       },
     },
     durationFunc = function(trigger)
-      return UnitPower(trigger.unit, SPELL_POWER_CHI), math.max(1, UnitPowerMax(trigger.unit, SPELL_POWER_CHI)), true;
+      return UnitPower('player', SPELL_POWER_CHI), math.max(1, UnitPowerMax('player', SPELL_POWER_CHI)), true;
     end,
     stacksFunc = function(trigger)
-      return UnitPower(trigger.unit, SPELL_POWER_CHI);
+      return UnitPower('player', SPELL_POWER_CHI);
     end,
     automatic = true
   },
@@ -1008,28 +970,19 @@ WeakAuras.event_prototypes = {
     },
     force_events = true,
     name = L["Shards"],
-    init = function(trigger)
-      trigger.unit = trigger.unit or "player";
-      local ret = [[
-        local unit = unit or '%s';
-        local concernedUnit = '%s';
-      ]];
-
-    return ret:format(trigger.unit, trigger.unit);
-    end,
     args = {
       {
         name = "power",
         display = L["Shards"],
         type = "number",
-        init = "UnitPower(unit, 7)"
+        init = "UnitPower('player', 7)"
       },
     },
     durationFunc = function(trigger)
-      return UnitPower(trigger.unit, 7), math.max(1, UnitPowerMax(trigger.unit, 7)), true;
+      return UnitPower('player', 7), math.max(1, UnitPowerMax('player', 7)), true;
     end,
     stacksFunc = function(trigger)
-      return UnitPower(trigger.unit, 7);
+      return UnitPower('player', 7);
     end,
     automatic = true
   },
@@ -1049,24 +1002,14 @@ WeakAuras.event_prototypes = {
     },
     name = L["Eclipse Power"],
     init = function(trigger)
-      trigger.unit = trigger.unit or "player";
       local ret = [[
-        local unit = unit or '%s';
-        local concernedUnit = '%s';
+        local unit = 'player';
         local GetRealEclipseDirection = UnitPower(unit, SPELL_POWER_ECLIPSE) > 0 and "sun" or UnitPower(unit, SPELL_POWER_ECLIPSE) < 0 and "moon" or GetEclipseDirection();
       ]];
 
-    return ret:format(trigger.unit, trigger.unit);
+    return ret;
     end,
     args = {
-      {
-        name = "unit",
-        required = true,
-        display = L["Unit"],
-        type = "unit",
-        init = "arg",
-        values = "actual_unit_types_with_specific"
-      },
       {
         name = "eclipsetype",
         -- required = true,
@@ -1079,7 +1022,7 @@ WeakAuras.event_prototypes = {
         name = "lunar_power",
         display = L["Lunar Power"],
         type = "number",
-        init = "math.min(UnitPower(unit, SPELL_POWER_ECLIPSE), -0) * -1",
+        init = "math.min(UnitPower('player', SPELL_POWER_ECLIPSE), -0) * -1",
         enable = function(trigger)
           return trigger.eclipsetype == "moon"
         end
@@ -1088,7 +1031,7 @@ WeakAuras.event_prototypes = {
         name = "solar_power",
         display = L["Solar Power"],
         type = "number",
-        init = "math.max(UnitPower(unit, SPELL_POWER_ECLIPSE), 0)",
+        init = "math.max(UnitPower('player', SPELL_POWER_ECLIPSE), 0)",
         enable = function(trigger)
           return trigger.eclipsetype == "sun"
         end
@@ -1101,32 +1044,28 @@ WeakAuras.event_prototypes = {
         enable = function(trigger)
           return not trigger.eclipsetype
         end
-      },
-      {
-        hidden = true,
-        test = "UnitExists(concernedUnit)"
       }
     },
     durationFunc = function(trigger)
-    local GetRealEclipseDirection = UnitPower(trigger.unit, SPELL_POWER_ECLIPSE) > 0 and "sun" or UnitPower(trigger.unit, SPELL_POWER_ECLIPSE) < 0 and "moon" or GetEclipseDirection();
+    local GetRealEclipseDirection = UnitPower('player', SPELL_POWER_ECLIPSE) > 0 and "sun" or UnitPower('player', SPELL_POWER_ECLIPSE) < 0 and "moon" or GetEclipseDirection();
 
     if(trigger.use_absolutValues) then
-      return math.max(UnitPower(trigger.unit, SPELL_POWER_ECLIPSE) + UnitPowerMax(trigger.unit, SPELL_POWER_ECLIPSE), 0), math.max(UnitPowerMax(trigger.unit, SPELL_POWER_ECLIPSE) * 2, 1), true;
+      return math.max(UnitPower('player', SPELL_POWER_ECLIPSE) + UnitPowerMax('player', SPELL_POWER_ECLIPSE), 0), math.max(UnitPowerMax('player', SPELL_POWER_ECLIPSE) * 2, 1), true;
     elseif(not trigger.use_eclipsetype or trigger.eclipsetype == GetRealEclipseDirection) then
-      return math.max(math.abs(UnitPower(trigger.unit, SPELL_POWER_ECLIPSE)), 0), math.max(math.abs(UnitPowerMax(trigger.unit, SPELL_POWER_ECLIPSE)), 1), true;
+      return math.max(math.abs(UnitPower('player', SPELL_POWER_ECLIPSE)), 0), math.max(math.abs(UnitPowerMax('player', SPELL_POWER_ECLIPSE)), 1), true;
     else
       return 0, 0, true;
     end
     end,
     nameFunc = function(trigger)
-      return WeakAuras.eclipse_types[UnitPower(trigger.unit, SPELL_POWER_ECLIPSE) > 0 and "sun" or UnitPower(trigger.unit, SPELL_POWER_ECLIPSE) < 0 and "moon" or GetEclipseDirection()];
+      return WeakAuras.eclipse_types[UnitPower('player', SPELL_POWER_ECLIPSE) > 0 and "sun" or UnitPower('player', SPELL_POWER_ECLIPSE) < 0 and "moon" or GetEclipseDirection()];
     end,
     iconFunc = function(trigger)
       local eclipseIcons = {
         ["moon"] = "Interface\\Icons\\ability_druid_eclipse",
         ["sun"] = "Interface\\Icons\\ability_druid_eclipseorange"
       };
-      return eclipseIcons[UnitPower(trigger.unit, SPELL_POWER_ECLIPSE) > 0 and "sun" or UnitPower(trigger.unit, SPELL_POWER_ECLIPSE) < 0 and "moon" or GetEclipseDirection()];
+      return eclipseIcons[UnitPower('player', SPELL_POWER_ECLIPSE) > 0 and "sun" or UnitPower('player', SPELL_POWER_ECLIPSE) < 0 and "moon" or GetEclipseDirection()];
     end,
     automatic = true
   },

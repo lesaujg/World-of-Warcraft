@@ -140,6 +140,12 @@ WeakAuras.race_types = {
   Undead = LBR["Undead"]
 }
 
+WeakAuras.faction_group = {
+  Alliance = L["Alliance"],
+  Horde = L["Horde"],
+  Neutral = L["Neutral"],
+}
+
 WeakAuras.form_types = {};
 local function update_forms()
   wipe(WeakAuras.form_types);
@@ -1187,6 +1193,10 @@ for path, name in pairs(WeakAuras.sound_types) do
   end
 end
 ]=]
+
+-- register options font
+LSM:Register("font", "Fira Mono Medium", "Interface\\Addons\\WeakAuras\\Media\\Fonts\\FiraMono-Medium.ttf")
+
 local SharedMediaSounds = LSM:HashTable("sound");
 for name, path in pairs(SharedMediaSounds) do
   WeakAuras.sound_types[path] = name;

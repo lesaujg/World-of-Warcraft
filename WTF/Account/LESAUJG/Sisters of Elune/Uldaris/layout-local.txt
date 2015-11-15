@@ -34,10 +34,3 @@ X: 0
 Y: 128
 W: 150
 H: 42
-Frame: DBMBossHealth
-FrameLevel: 1
-Anchor: CENTER
-X: 326
-Y: 55
-W: 60
-H: 10

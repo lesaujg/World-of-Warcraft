@@ -267,7 +267,7 @@ local function WeakAuras_HideOverlayGlow(frame)
 end
 
 local function forbidden()
-  print("|cffffff00A WeakAura that you are using just tried to use a forbidden function but has been blocked from doing so. Please check your auras!|r")
+  print("|cffffff00A WeakAura you are using just tried to use a forbidden function but has been blocked from doing so. Please check your auras!|r")
 end
 
 local blockedFunctions = {
@@ -994,6 +994,11 @@ function WeakAuras.ScanForLoads(self, event, arg1)
 
   local player, realm, zone, zoneId, spec, role = UnitName("player"), GetRealmName(),GetRealZoneText(), GetCurrentMapAreaID(), GetSpecialization(), UnitGroupRolesAssigned("player");
   local _, race = UnitRace("player")
+  local faction, localized_faction = UnitFactionGroup("player")
+  -- Hack because there is no second arg for Neutral
+  if faction == "Neutral" then
+    localized_faction = "Neutral"
+  end
   if role == "NONE" then
     if IsInRaid() then
       for i=1,GetNumGroupMembers() do
@@ -1079,8 +1084,8 @@ function WeakAuras.ScanForLoads(self, event, arg1)
   for id, data in pairs(db.displays) do
     if (data and data.trigger) then
       local loadFunc = loadFuncs[id];
-      shouldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", incombat, inpetbattle, player, realm, class, spec, race, playerLevel, zone, zoneId, encounter_id, size, difficulty, role);
-      couldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", true, true, player, realm, class, spec, race, playerLevel, zone, zoneId, encounter_id, size, difficulty, role);
+      shouldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", incombat, inpetbattle, player, realm, class, spec, race, faction, playerLevel, zone, zoneId, encounter_id, size, difficulty, role);
+      couldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", true, true, player, realm, class, spec, race, faction, playerLevel, zone, zoneId, encounter_id, size, difficulty, role);
 
       if(shouldBeLoaded and not loaded[id]) then
         WeakAuras.LoadDisplay(id);
@@ -2027,8 +2032,8 @@ function WeakAuras.EnsureClone(id, cloneId)
       clones[id][cloneId] = regionTypes[data.regionType].create(frame, data);
     end
     WeakAuras.SetRegion(data, cloneId);
+    clones[id][cloneId].justCreated = true;
   end
-  clones[id][cloneId].justCreated = true;
   return clones[id][cloneId];
 end
 
