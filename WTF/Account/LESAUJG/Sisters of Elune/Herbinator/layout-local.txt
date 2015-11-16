@@ -11,8 +11,8 @@ FrameLevel: 9
 Anchor: BOTTOMLEFT
 X: 0
 Y: 22
-W: 985
-H: 679
+W: 968
+H: 621
 Frame: _NPCScanButton
 FrameLevel: 1
 Anchor: BOTTOM
