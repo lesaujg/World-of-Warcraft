@@ -17,7 +17,7 @@ AckisRecipeList_Jewelcrafting: enabled
 AckisRecipeList_Leatherworking: enabled
 AckisRecipeList_Smelting: enabled
 AckisRecipeList_Tailoring: enabled
-ActionBarSaver: disabled
+ActionBarSaver: enabled
 Overachiever: enabled
 Overachiever_Tabs: enabled
 Overachiever_Trade: enabled
@@ -83,7 +83,7 @@ RareCoordinator: enabled
 BagBrother: disabled
 BittensSpellFlash_Hunter: disabled
 Basic_Resources: disabled
-Claw: enabled
+Claw: disabled
 HandyNotes_DraenorTreasures: enabled
 LiteMount: enabled
 MasterPlan: enabled
@@ -126,10 +126,10 @@ DBM-TerraceofEndlessSpring: enabled
 DBM-TheEye: enabled
 DBM-ThroneFourWinds: enabled
 DBM-ThroneofThunder: enabled
-WeakAuras: enabled
-WeakAurasModelPaths: enabled
-WeakAurasOptions: enabled
-WeakAurasTutorials: enabled
+WeakAuras: disabled
+WeakAurasModelPaths: disabled
+WeakAurasOptions: disabled
+WeakAurasTutorials: disabled
 TradeSkillMaster_CompetitorTracker: disabled
 TomTom: disabled
 Shrapnel: disabled

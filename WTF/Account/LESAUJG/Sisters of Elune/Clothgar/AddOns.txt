@@ -17,7 +17,7 @@ AckisRecipeList_Jewelcrafting: enabled
 AckisRecipeList_Leatherworking: enabled
 AckisRecipeList_Smelting: enabled
 AckisRecipeList_Tailoring: enabled
-ActionBarSaver: disabled
+ActionBarSaver: enabled
 Overachiever: enabled
 Overachiever_Tabs: enabled
 Overachiever_Trade: enabled

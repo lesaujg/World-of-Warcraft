@@ -482,7 +482,7 @@ DBMGarrisonInvasions_AllSavedVars = {
 				["HealthFrame"] = false,
 			}, -- [2]
 		},
-		["talent1"] = "Feral",
+		["talent1"] = "Balance",
 		["Teluur"] = {
 			{
 				["Enabled"] = true,

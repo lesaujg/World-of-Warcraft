@@ -1,0 +1,376 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ 
+C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
+
+<Frame name="BoomkinatorFrame" movable="true" frameStrata="BACKGROUND" parent="UIParent" hidden="false">
+	<Size>
+		<AbsDimension x="100" y="100" />
+	</Size>
+	<Anchors>
+		<Anchor point="CENTER">
+			<Offset x="0" y="0" />
+		</Anchor>
+	</Anchors>
+	<Layers>
+		<Layer level="OVERLAY">
+			<Texture name="$parentButton1" file="Interface\Icons\Spell_Arcane_StarFire">
+				<Size>
+					<AbsDimension x="32" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="0" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Texture>
+			<FontString name="$parentTime1" inherits="GameFontHighlightSmall" text="1" justifyH="RIGHT">
+				<Size>
+					<AbsDimension x="32" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="BOTTOMLEFT" relativeTo="$parentButton1" relativePoint="BOTTOMLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-1" />
+						</Offset>
+					</Anchor>
+				</Anchors>					
+			</FontString>
+			<FontString name="$parentStack1" inherits="GameFontHighlightSmall" text="1" justifyH="RIGHT">
+				<Size>
+					<AbsDimension x="32" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentButton1" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-1" />
+						</Offset>
+					</Anchor>
+				</Anchors>					
+			</FontString>
+			
+			<Texture name="$parentButton2" file="Interface\Icons\Spell_Arcane_StarFire">
+				<Size>
+					<AbsDimension x="32" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentButton1" relativePoint="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="2" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Texture>
+			<FontString name="$parentTime2" inherits="GameFontHighlightSmall" text="2" justifyH="RIGHT">
+				<Size>
+					<AbsDimension x="32" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="BOTTOMLEFT" relativeTo="$parentButton2" relativePoint="BOTTOMLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-1" />
+						</Offset>
+					</Anchor>
+				</Anchors>					
+			</FontString>				
+			<FontString name="$parentStack2" inherits="GameFontHighlightSmall" text="1" justifyH="RIGHT">
+				<Size>
+					<AbsDimension x="32" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentButton2" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-1" />
+						</Offset>
+					</Anchor>
+				</Anchors>					
+			</FontString>
+
+			<Texture name="$parentButton3" file="Interface\Icons\Spell_Arcane_StarFire">
+				<Size>
+					<AbsDimension x="32" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentButton2" relativePoint="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="2" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Texture>
+			<FontString name="$parentTime3" inherits="GameFontHighlightSmall" text="3" justifyH="RIGHT">
+				<Size>
+					<AbsDimension x="32" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="BOTTOMLEFT" relativeTo="$parentButton3" relativePoint="BOTTOMLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-1" />
+						</Offset>
+					</Anchor>
+				</Anchors>					
+			</FontString>
+			<FontString name="$parentStack3" inherits="GameFontHighlightSmall" text="1" justifyH="RIGHT">
+				<Size>
+					<AbsDimension x="32" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentButton3" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-1" />
+						</Offset>
+					</Anchor>
+				</Anchors>					
+			</FontString>			
+
+			<Texture name="$parentButton4" file="Interface\Icons\Spell_Arcane_StarFire">
+				<Size>
+					<AbsDimension x="32" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentButton1" relativePoint="BOTTOMLEFT">
+						<Offset>
+							<AbsDimension x="0" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Texture>
+			<FontString name="$parentTime4" inherits="GameFontHighlightSmall" text="4" justifyH="RIGHT">
+				<Size>
+					<AbsDimension x="32" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="BOTTOMLEFT" relativeTo="$parentButton4" relativePoint="BOTTOMLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-1" />
+						</Offset>
+					</Anchor>
+				</Anchors>					
+			</FontString>
+			<FontString name="$parentStack4" inherits="GameFontHighlightSmall" text="1" justifyH="RIGHT">
+				<Size>
+					<AbsDimension x="32" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentButton4" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-1" />
+						</Offset>
+					</Anchor>
+				</Anchors>					
+			</FontString>			
+
+			<Texture name="$parentButton5" file="Interface\Icons\Spell_Arcane_StarFire">
+				<Size>
+					<AbsDimension x="32" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentButton2" relativePoint="BOTTOMLEFT">
+						<Offset>
+							<AbsDimension x="0" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Texture>
+			<FontString name="$parentTime5" inherits="GameFontHighlightSmall" text="5" justifyH="RIGHT">
+				<Size>
+					<AbsDimension x="32" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="BOTTOMLEFT" relativeTo="$parentButton5" relativePoint="BOTTOMLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-1" />
+						</Offset>
+					</Anchor>
+				</Anchors>					
+			</FontString>			
+			<FontString name="$parentStack5" inherits="GameFontHighlightSmall" text="1" justifyH="RIGHT">
+				<Size>
+					<AbsDimension x="32" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentButton5" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-1" />
+						</Offset>
+					</Anchor>
+				</Anchors>					
+			</FontString>			
+
+			<Texture name="$parentButton6" file="Interface\Icons\Spell_Arcane_StarFire">
+				<Size>
+					<AbsDimension x="32" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentButton3" relativePoint="BOTTOMLEFT">
+						<Offset>
+							<AbsDimension x="0" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Texture>
+			<FontString name="$parentTime6" inherits="GameFontHighlightSmall" text="6" justifyH="RIGHT">
+				<Size>
+					<AbsDimension x="32" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="BOTTOMLEFT" relativeTo="$parentButton6" relativePoint="BOTTOMLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-1" />
+						</Offset>
+					</Anchor>
+				</Anchors>					
+			</FontString>
+			<FontString name="$parentStack6" inherits="GameFontHighlightSmall" text="1" justifyH="RIGHT">
+				<Size>
+					<AbsDimension x="32" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentButton6" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-1" />
+						</Offset>
+					</Anchor>
+				</Anchors>					
+			</FontString>			
+
+			<Texture name="$parentButton7" file="Interface\Icons\Spell_Arcane_StarFire">
+				<Size>
+					<AbsDimension x="32" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentButton4" relativePoint="BOTTOMLEFT">
+						<Offset>
+							<AbsDimension x="0" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Texture>
+			<FontString name="$parentTime7" inherits="GameFontHighlightSmall" text="7" justifyH="RIGHT">
+				<Size>
+					<AbsDimension x="32" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="BOTTOMLEFT" relativeTo="$parentButton7" relativePoint="BOTTOMLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-1" />
+						</Offset>
+					</Anchor>
+				</Anchors>					
+			</FontString>
+			<FontString name="$parentStack7" inherits="GameFontHighlightSmall" text="1" justifyH="RIGHT">
+				<Size>
+					<AbsDimension x="32" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentButton7" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-1" />
+						</Offset>
+					</Anchor>
+				</Anchors>					
+			</FontString>
+
+			<Texture name="$parentButton8" file="Interface\Icons\Spell_Arcane_StarFire">
+				<Size>
+					<AbsDimension x="32" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentButton5" relativePoint="BOTTOMLEFT">
+						<Offset>
+							<AbsDimension x="0" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Texture>
+			<FontString name="$parentTime8" inherits="GameFontHighlightSmall" text="8" justifyH="RIGHT">
+				<Size>
+					<AbsDimension x="32" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="BOTTOMLEFT" relativeTo="$parentButton8" relativePoint="BOTTOMLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-1" />
+						</Offset>
+					</Anchor>
+				</Anchors>					
+			</FontString>
+			<FontString name="$parentStack8" inherits="GameFontHighlightSmall" text="1" justifyH="RIGHT">
+				<Size>
+					<AbsDimension x="32" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentButton8" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-1" />
+						</Offset>
+					</Anchor>
+				</Anchors>					
+			</FontString>			
+
+			<Texture name="$parentButton9" file="Interface\Icons\Spell_Arcane_StarFire">
+				<Size>
+					<AbsDimension x="32" y="32" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentButton6" relativePoint="BOTTOMLEFT">
+						<Offset>
+							<AbsDimension x="0" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Texture>
+			<FontString name="$parentTime9" inherits="GameFontHighlightSmall" text="9" justifyH="RIGHT">
+				<Size>
+					<AbsDimension x="32" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="BOTTOMLEFT" relativeTo="$parentButton9" relativePoint="BOTTOMLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-1" />
+						</Offset>
+					</Anchor>
+				</Anchors>					
+			</FontString>
+			<FontString name="$parentStack9" inherits="GameFontHighlightSmall" text="1" justifyH="RIGHT">
+				<Size>
+					<AbsDimension x="32" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentButton9" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="0" y="-1" />
+						</Offset>
+					</Anchor>
+				</Anchors>					
+			</FontString>			
+
+			<FontString name="$parentCCount" inherits="GameFontHighlightSmall" text="" justifyH="RIGHT">
+				<Size>
+					<AbsDimension x="32" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentButton2" relativePoint="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="0" y="-1" />
+						</Offset>
+					</Anchor>
+				</Anchors>					
+			</FontString>
+		</Layer>
+	</Layers>
+	<Scripts>
+		<OnLoad>
+			self:RegisterForDrag("RightButton");
+		</OnLoad>
+		<OnDragStart>
+			if IsShiftKeyDown() then
+				self:StartMoving()
+			end
+		</OnDragStart>
+		<OnDragStop>
+			self:StopMovingOrSizing()
+		</OnDragStop>
+	</Scripts>
+</Frame>
+</Ui>

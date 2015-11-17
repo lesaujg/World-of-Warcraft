@@ -6,7 +6,7 @@ BittensSpellFlash_Hunter: disabled
 _NPCScan: enabled
 _NPCScan.Overlay: enabled
 AchievementsReminder: enabled
-ActionBarSaver: disabled
+ActionBarSaver: enabled
 ArkInventory: disabled
 ArkInventoryConfig: disabled
 ArkInventoryRules: disabled
