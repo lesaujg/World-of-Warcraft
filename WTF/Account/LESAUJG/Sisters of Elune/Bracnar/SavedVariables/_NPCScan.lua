@@ -1,6 +1,7 @@
 
 _NPCScanOptionsCharacter = {
 	["AchievementsAddFound"] = true,
+	["TrackHellbane"] = true,
 	["PrintTime"] = true,
 	["FlightSupress"] = true,
 	["AlertSoundUnmute"] = true,
