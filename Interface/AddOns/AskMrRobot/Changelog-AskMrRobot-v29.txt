@@ -1,0 +1,8 @@
+2015-11-17  yellowfive  <yellowfive>
+
+[304d7ebb8e30] [v29]
+* AskMrRobot-Serializer/AskMrRobot-Serializer.lua, AskMrRobot.toc, Gear.lua, ui/Ui.lua:
+
+small bug fixes for item upgrades, gear swapping
+
+

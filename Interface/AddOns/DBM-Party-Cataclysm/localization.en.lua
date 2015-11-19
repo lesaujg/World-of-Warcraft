@@ -98,10 +98,6 @@ L:SetOptionLocalization{
 	PingBlitz	= "Ping the minimap when General Umbriss is about to blitz you"
 }
 
-L:SetMiscLocalization{
-	Blitz		= "sets his eyes on |cFFFF0000(%S+)"
-}
-
 --------------------------
 -- Forgemaster Throngus --
 --------------------------
@@ -111,11 +107,6 @@ L= DBM:GetModLocalization(132)
 -- Drahga Shadowburner --
 -------------------------
 L= DBM:GetModLocalization(133)
-
-L:SetMiscLocalization{
-	ValionaYell	= "Dragon, you will do as I command! Catch me!",	-- Yell when Valiona is incoming
-	Add			= "%s Summons an"
-}
 
 ------------
 -- Erudax --
@@ -222,13 +213,8 @@ L:SetWarningLocalization{
 	specWarnPhase2Soon	= "Phase 2 in 5 seconds"
 }
 
-L:SetTimerLocalization({
-	timerPhase2 		= "Phase 2 Starts"
-})
-
 L:SetOptionLocalization{
-	specWarnPhase2Soon	= "Show special warning for phase 2 soon (5 seconds)",
-	timerPhase2 		= "Show timer for start of phase 2"
+	specWarnPhase2Soon	= "Show special warning for phase 2 soon (5 seconds)"
 }
 
 -----------------------
