@@ -34,10 +34,10 @@ TradeSkillMaster_MailingDB = {
 				["2Mail Clothgar"] = true,
 			},
 			["scrollvalue"] = 0,
-			["selected"] = "2Mail Clothgar",
+			["selected"] = "2Mail Uldaris",
 			["treesizable"] = true,
 			["treewidth"] = 175,
-			["fullwidth"] = 945,
+			["fullwidth"] = 928,
 		},
 	},
 }

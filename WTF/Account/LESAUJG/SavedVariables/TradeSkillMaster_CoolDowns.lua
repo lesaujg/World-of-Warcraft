@@ -35,7 +35,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Temporal Crystal",
 					["players"] = {
 						["Bracnar"] = {
-							["CoolDownTime"] = 1448092841.795,
+							["CoolDownTime"] = 1448276389.688,
 							["knownCraft"] = true,
 						},
 					},
@@ -198,6 +198,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Gearspring Parts",
 					["players"] = {
 						["Galinar"] = {
+							["CoolDownTime"] = 1448265552.672,
 							["knownCraft"] = true,
 						},
 					},
@@ -216,7 +217,6 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Taladite Crystal",
 					["players"] = {
 						["Uldaris"] = {
-							["CoolDownTime"] = 1448092887.225,
 							["knownCraft"] = true,
 						},
 					},
@@ -433,7 +433,6 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Secret of Draenor Leatherworking",
 					["players"] = {
 						["Uldaris"] = {
-							["CoolDownTime"] = 1448092892.702,
 							["knownCraft"] = true,
 						},
 					},
@@ -470,6 +469,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Secret of Draenor Engineering",
 					["players"] = {
 						["Galinar"] = {
+							["CoolDownTime"] = 1448265557.798,
 							["knownCraft"] = true,
 						},
 					},
@@ -479,6 +479,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Secret of Draenor Tailoring",
 					["players"] = {
 						["Galinar"] = {
+							["CoolDownTime"] = 1448276409.447,
 							["knownCraft"] = true,
 						},
 					},
@@ -488,6 +489,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Hexweave Cloth",
 					["players"] = {
 						["Galinar"] = {
+							["CoolDownTime"] = 1448276406.581,
 							["knownCraft"] = true,
 						},
 					},
@@ -497,7 +499,6 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Burnished Leather",
 					["players"] = {
 						["Uldaris"] = {
-							["CoolDownTime"] = 1448092880.322,
 							["knownCraft"] = true,
 						},
 					},
@@ -615,7 +616,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Alchemical Catalyst",
 					["players"] = {
 						["Bracnar"] = {
-							["CoolDownTime"] = 1448092850.209,
+							["CoolDownTime"] = 1448276442.603,
 							["knownCraft"] = true,
 						},
 					},

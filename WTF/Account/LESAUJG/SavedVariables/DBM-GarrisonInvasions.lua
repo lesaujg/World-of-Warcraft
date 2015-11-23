@@ -249,8 +249,8 @@ DBMGarrisonInvasions_AllSavedVars = {
 				["Enabled"] = true,
 				["announce180774spell"] = true,
 				["announceother180776target"] = true,
-				["SpecWarn180775moveSWNote"] = true,
 				["SpecWarn180775move"] = true,
+				["SpecWarn180775moveSWSound"] = 1,
 				["Yell180776"] = true,
 				["SpecWarn180776moveawaySWNote"] = true,
 				["SpecWarn180776moveawaySWSound"] = 1,
@@ -259,7 +259,7 @@ DBMGarrisonInvasions_AllSavedVars = {
 				["HealthFrame"] = false,
 				["SpecWarn180779spellSWSound"] = 2,
 				["SpecWarn180779spell"] = true,
-				["SpecWarn180775moveSWSound"] = 1,
+				["SpecWarn180775moveSWNote"] = true,
 			},
 		},
 		["GarrisonInvasions"] = {

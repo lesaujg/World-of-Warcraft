@@ -1,9 +1,9 @@
 Version: 1
 Frame: BaudManifestDisplay1
-FrameLevel: 23
-Anchor: TOP
-X: 91
-Y: 0
+FrameLevel: 50
+Anchor: RIGHT
+X: -68
+Y: 27
 W: 500
 H: 795
 Frame: BaudManifestDisplay2

@@ -610,7 +610,7 @@ function Amr.ParseItemLink(itemLink)
     end
 	
 	-- if there is another part after bonus ids, that is the upgrade id	
-	if #parts >= 14 + numBonuses then
+	if numBonuses and #parts >= 14 + numBonuses then
 		local upgradeId = tonumber(parts[14 + numBonuses])
 		item.upgradeId = upgradeId and upgradeId or 0
 	else
