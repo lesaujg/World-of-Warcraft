@@ -5,7 +5,7 @@ _NPCScanOptionsCharacter = {
 	["PrintTime"] = true,
 	["FlightSupress"] = true,
 	["AlertSoundUnmute"] = true,
-	["TrackBeasts"] = true,
+	["TrackMouseover"] = true,
 	["AlertScreenEdgeFlash"] = true,
 	["Version"] = 3,
 	["Achievements"] = {
@@ -18,6 +18,6 @@ _NPCScanOptionsCharacter = {
 	},
 	["TargetIcon"] = 8,
 	["TrackRares"] = true,
-	["TrackMouseover"] = true,
+	["TrackBeasts"] = true,
 	["TrackVignettes"] = true,
 }

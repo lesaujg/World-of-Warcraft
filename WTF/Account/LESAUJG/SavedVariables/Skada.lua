@@ -19,6 +19,7 @@ SkadaDB = {
 		["Default"] = {
 			["windows"] = {
 				{
+					["set"] = "total",
 					["y"] = 244.000579833984,
 					["x"] = 26.9963970184326,
 					["point"] = "BOTTOMLEFT",

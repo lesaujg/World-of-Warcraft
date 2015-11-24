@@ -35,7 +35,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Temporal Crystal",
 					["players"] = {
 						["Bracnar"] = {
-							["CoolDownTime"] = 1448276389.688,
+							["CoolDownTime"] = 1448362865.947,
 							["knownCraft"] = true,
 						},
 					},
@@ -198,7 +198,6 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Gearspring Parts",
 					["players"] = {
 						["Galinar"] = {
-							["CoolDownTime"] = 1448265552.672,
 							["knownCraft"] = true,
 						},
 					},
@@ -217,6 +216,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Taladite Crystal",
 					["players"] = {
 						["Uldaris"] = {
+							["CoolDownTime"] = 1448362858.601,
 							["knownCraft"] = true,
 						},
 					},
@@ -469,7 +469,6 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Secret of Draenor Engineering",
 					["players"] = {
 						["Galinar"] = {
-							["CoolDownTime"] = 1448265557.798,
 							["knownCraft"] = true,
 						},
 					},
@@ -479,7 +478,6 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Secret of Draenor Tailoring",
 					["players"] = {
 						["Galinar"] = {
-							["CoolDownTime"] = 1448276409.447,
 							["knownCraft"] = true,
 						},
 					},
@@ -489,7 +487,6 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Hexweave Cloth",
 					["players"] = {
 						["Galinar"] = {
-							["CoolDownTime"] = 1448276406.581,
 							["knownCraft"] = true,
 						},
 					},
@@ -499,6 +496,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Burnished Leather",
 					["players"] = {
 						["Uldaris"] = {
+							["CoolDownTime"] = 1448362852.991,
 							["knownCraft"] = true,
 						},
 					},
@@ -616,7 +614,7 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Alchemical Catalyst",
 					["players"] = {
 						["Bracnar"] = {
-							["CoolDownTime"] = 1448276442.603,
+							["CoolDownTime"] = 1448362847.035,
 							["knownCraft"] = true,
 						},
 					},
