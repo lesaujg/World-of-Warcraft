@@ -7,7 +7,7 @@ Y: -66
 W: 250
 H: 417
 Frame: BaudManifestDisplay2
-FrameLevel: 48
+FrameLevel: 58
 Anchor: BOTTOMLEFT
 X: 254
 Y: 95

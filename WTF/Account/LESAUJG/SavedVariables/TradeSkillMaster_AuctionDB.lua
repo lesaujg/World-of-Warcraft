@@ -1,10 +1,8 @@
 
 TradeSkillMaster_AuctionDBDB = {
-	["realm"] = {
-		["Sisters of Elune"] = {
-			["appHelperNoticeShown"] = true,
-			["appDataUpdate"] = 1448425738,
-			["lastCompleteScan"] = 1448425738,
+	["profiles"] = {
+		["Default"] = {
+			["lastGetAll"] = 1421294537,
 		},
 	},
 	["profileKeys"] = {
@@ -14,14 +12,16 @@ TradeSkillMaster_AuctionDBDB = {
 		["Orig - Sisters of Elune"] = "Default",
 		["Mandelbrot - Sisters of Elune"] = "Default",
 		["Belrath - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
 		["Ghiaccioli - Sisters of Elune"] = "Default",
 		["Bracnar - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
 	},
-	["profiles"] = {
-		["Default"] = {
-			["lastGetAll"] = 1421294537,
+	["realm"] = {
+		["Sisters of Elune"] = {
+			["lastCompleteScan"] = 1448544538,
+			["appDataUpdate"] = 1448544538,
+			["appHelperNoticeShown"] = true,
 		},
 	},
 }
