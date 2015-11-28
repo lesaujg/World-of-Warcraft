@@ -1,9 +1,9 @@
 Version: 1
 Frame: TSMMainFrame1
-FrameLevel: 14
+FrameLevel: 21
 Anchor: CENTER
 X: 53
-Y: -11
+Y: -12
 W: 968
 H: 621
 Frame: _NPCScanButton
@@ -13,10 +13,3 @@ X: 0
 Y: 128
 W: 150
 H: 42
-Frame: TSMCraftingTradeSkillFrame
-FrameLevel: 44
-Anchor: LEFT
-X: 150
-Y: -31
-W: 450
-H: 500
