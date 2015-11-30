@@ -155,3 +155,4 @@ PGFinder: disabled
 LFGFilter: disabled
 PremadeNotifier: enabled
 PremadeAge: enabled
+Boomkinator: disabled

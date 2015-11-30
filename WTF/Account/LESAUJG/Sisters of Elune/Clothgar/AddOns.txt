@@ -156,3 +156,4 @@ LFGFilter: disabled
 IskarAssist: disabled
 PremadeAge: disabled
 PremadeNotifier: disabled
+Boomkinator: disabled

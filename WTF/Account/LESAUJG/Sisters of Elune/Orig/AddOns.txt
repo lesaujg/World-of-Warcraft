@@ -1,3 +1,4 @@
 Tukui_ConfigUI: disabled
 Claw: disabled
 ActionBarSaver: enabled
+Boomkinator: disabled

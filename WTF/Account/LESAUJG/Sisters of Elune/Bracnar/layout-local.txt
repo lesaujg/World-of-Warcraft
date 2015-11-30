@@ -27,17 +27,3 @@ X: 0
 Y: 128
 W: 150
 H: 42
-Frame: TSMCraftingGatherFrame
-FrameLevel: 0
-Anchor: RIGHT
-X: -94
-Y: 115
-W: 325
-H: 400
-Frame: SavedInstancesDetachHeader
-FrameLevel: 100
-Anchor: CENTER
-X: 0
-Y: 0
-W: 280
-H: 440
