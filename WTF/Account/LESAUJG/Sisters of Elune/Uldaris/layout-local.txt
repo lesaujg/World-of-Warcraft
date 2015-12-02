@@ -34,17 +34,3 @@ X: 0
 Y: 128
 W: 150
 H: 42
-Frame: SavedInstancesDetachHeader
-FrameLevel: 100
-Anchor: CENTER
-X: 0
-Y: 0
-W: 237
-H: 485
-Frame: TSMCraftingTradeSkillFrame
-FrameLevel: 128
-Anchor: LEFT
-X: 151
-Y: -31
-W: 450
-H: 500
