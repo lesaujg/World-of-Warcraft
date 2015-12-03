@@ -1,10 +1,7 @@
 VER 3 0100000000000057 "_Chimaera Shot" "INV_MISC_QUESTIONMARK"
-/stopcasting
 /cast Chimaera Shot
 END
 VER 3 0100000000000056 "_Kill Shot" "INV_MISC_QUESTIONMARK"
-/stopcasting
-/stopcasting
 /cast Kill Shot
 END
 VER 3 010000000000000E "_Pet Attack/Foll" "Ability_Druid_ChallangingRoar"
@@ -27,6 +24,11 @@ VER 3 0100000000000010 "BOOM" "INV_MISC_QUESTIONMARK"
 /use 13
 /use 14
 /castsequence reset=combat/10 Rapid Fire, null
+END
+VER 3 0100000000000059 "Counter Shot" "INV_Misc_QuestionMark"
+/stopcasting
+/stopcasting
+/cast Counter Shot
 END
 VER 3 010000000000004D "MD+" "INV_Misc_QuestionMark"
 #show Misdirection

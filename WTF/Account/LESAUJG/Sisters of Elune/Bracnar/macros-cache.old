@@ -1,7 +1,3 @@
-VER 3 0100000000000059 "/tar Time" "INV_MISC_QUESTIONMARK"
-/tar Time
-/petattack
-END
 VER 3 0100000000000057 "_Chimaera Shot" "INV_MISC_QUESTIONMARK"
 /stopcasting
 /cast Chimaera Shot
@@ -48,10 +44,12 @@ VER 3 0100000000000054 "Pet_stuff" "INV_Misc_QuestionMark"
 /cast [@pet, pet, nodead] Mend Pet
 END
 VER 3 0100000000000055 "Rapid Fire" "INV_MISC_QUESTIONMARK"
+#showtooltip
 /cast Rapid Fire
 /use Tabard of the Protector
 /use 13
 /use 14
+/use /use [nogroup:raid] [mod] 12
 /castsequence reset=combat/10 Rapid Fire, null
 END
 VER 3 0100000000000058 "Trap" "INV_MISC_QUESTIONMARK"
