@@ -34,10 +34,10 @@ TradeSkillMaster_MailingDB = {
 				["2Mail Clothgar"] = true,
 			},
 			["scrollvalue"] = 0,
-			["selected"] = 1,
 			["treesizable"] = true,
+			["selected"] = 1,
 			["treewidth"] = 175,
-			["fullwidth"] = 928,
+			["fullwidth"] = 927.999938964844,
 		},
 	},
 }
