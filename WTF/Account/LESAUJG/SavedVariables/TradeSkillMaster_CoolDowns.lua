@@ -35,7 +35,6 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Temporal Crystal",
 					["players"] = {
 						["Bracnar"] = {
-							["CoolDownTime"] = 1449831665.425,
 							["knownCraft"] = true,
 						},
 					},
@@ -468,7 +467,6 @@ TradeSkillMaster_CoolDownsDB = {
 					["Name"] = "Alchemical Catalyst",
 					["players"] = {
 						["Bracnar"] = {
-							["CoolDownTime"] = 1449831703.061,
 							["knownCraft"] = true,
 						},
 					},
