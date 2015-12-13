@@ -161,21 +161,6 @@ PawnCommon = {
 		},
 		["\"Wowhead\":PaladinTank"] = {
 			["PerCharacterOptions"] = {
-				["Herbinator-Sisters of Elune"] = {
-					["Visible"] = true,
-					["BestItems"] = {
-						["INVTYPE_FEET"] = {
-							0.244514106583072, -- [1]
-							"item:43:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_LEGS"] = {
-							0.366771159874608, -- [1]
-							"item:44:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
-							0, -- [3]
-						},
-					},
-				},
 				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
@@ -244,6 +229,21 @@ PawnCommon = {
 						},
 					},
 				},
+				["Herbinator-Sisters of Elune"] = {
+					["Visible"] = true,
+					["BestItems"] = {
+						["INVTYPE_FEET"] = {
+							0.244514106583072, -- [1]
+							"item:43:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_LEGS"] = {
+							0.366771159874608, -- [1]
+							"item:44:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+					},
+				},
 			},
 			["Color"] = "f58cba",
 			["LocalizedName"] = "Paladin: tank",
@@ -281,11 +281,6 @@ PawnCommon = {
 				["Bracnar-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
-						["INVTYPE_LEGS"] = {
-							647.82, -- [1]
-							"item:124301:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0", -- [2]
-							0, -- [3]
-						},
 						["INVTYPE_HEAD"] = {
 							654.28, -- [1]
 							"item:124296:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0", -- [2]
@@ -309,6 +304,11 @@ PawnCommon = {
 						["INVTYPE_WEAPONMAINHAND"] = {
 							9.2, -- [1]
 							"item:19019:0:0:0:0:0:0:610963968:0:255:0:0:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_LEGS"] = {
+							647.82, -- [1]
+							"item:124301:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_2HWEAPON"] = {
@@ -361,11 +361,6 @@ PawnCommon = {
 		},
 		["\"Wowhead\":PaladinHoly"] = {
 			["PerCharacterOptions"] = {
-				["Herbinator-Sisters of Elune"] = {
-					["Visible"] = true,
-					["BestItems"] = {
-					},
-				},
 				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
@@ -432,6 +427,11 @@ PawnCommon = {
 							"item:122260:0:0:0:0:0:0:0:0:70:0:0:1:583:0:0:0", -- [2]
 							99, -- [3]
 						},
+					},
+				},
+				["Herbinator-Sisters of Elune"] = {
+					["Visible"] = true,
+					["BestItems"] = {
 					},
 				},
 			},
@@ -684,11 +684,6 @@ PawnCommon = {
 				["Bracnar-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
-						["INVTYPE_LEGS"] = {
-							711.55, -- [1]
-							"item:124301:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0", -- [2]
-							0, -- [3]
-						},
 						["INVTYPE_HEAD"] = {
 							684.75, -- [1]
 							"item:124296:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0", -- [2]
@@ -712,6 +707,11 @@ PawnCommon = {
 						["INVTYPE_WEAPONMAINHAND"] = {
 							23.3947368421053, -- [1]
 							"item:19019:0:0:0:0:0:0:610963968:0:255:0:0:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_LEGS"] = {
+							711.55, -- [1]
+							"item:124301:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_FINGER"] = {
@@ -869,6 +869,11 @@ PawnCommon = {
 				["Uldaris-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
+						["INVTYPE_LEGS"] = {
+							151.902358020591, -- [1]
+							"item:128131:0:0:0:0:0:0:0:0:105:0:4:1:42:0:0:0", -- [2]
+							0, -- [3]
+						},
 						["INVTYPE_HEAD"] = {
 							162.677847891066, -- [1]
 							"item:128034:0:0:0:0:0:0:0:0:105:0:4:1:560:0:0:0", -- [2]
@@ -892,11 +897,6 @@ PawnCommon = {
 						["INVTYPE_2HWEAPON"] = {
 							89.219860511458, -- [1]
 							"item:115325:0:0:0:0:0:0:0:0:103:0:1:1:142:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_LEGS"] = {
-							151.902358020591, -- [1]
-							"item:128131:0:0:0:0:0:0:0:0:105:0:4:1:42:0:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_FINGER"] = {
@@ -986,6 +986,11 @@ PawnCommon = {
 				["Uldaris-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
+						["INVTYPE_LEGS"] = {
+							175.05614973262, -- [1]
+							"item:128131:0:0:0:0:0:0:0:0:105:0:4:1:42:0:0:0", -- [2]
+							0, -- [3]
+						},
 						["INVTYPE_HEAD"] = {
 							175.122994652406, -- [1]
 							"item:128034:0:0:0:0:0:0:0:0:105:0:4:1:560:0:0:0", -- [2]
@@ -1009,11 +1014,6 @@ PawnCommon = {
 						["INVTYPE_2HWEAPON"] = {
 							103.553475935829, -- [1]
 							"item:115332:0:0:0:0:0:0:0:0:103:0:1:1:132:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_LEGS"] = {
-							175.05614973262, -- [1]
-							"item:128131:0:0:0:0:0:0:0:0:105:0:4:1:42:0:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_FINGER"] = {
@@ -1085,11 +1085,6 @@ PawnCommon = {
 		},
 		["\"Wowhead\":PaladinRetribution"] = {
 			["PerCharacterOptions"] = {
-				["Herbinator-Sisters of Elune"] = {
-					["Visible"] = true,
-					["BestItems"] = {
-					},
-				},
 				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
@@ -1156,6 +1151,11 @@ PawnCommon = {
 							"item:122260:0:0:0:0:0:0:0:0:70:0:0:1:583:0:0:0", -- [2]
 							99, -- [3]
 						},
+					},
+				},
+				["Herbinator-Sisters of Elune"] = {
+					["Visible"] = true,
+					["BestItems"] = {
 					},
 				},
 			},
@@ -1345,6 +1345,11 @@ PawnCommon = {
 				["Uldaris-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
+						["INVTYPE_LEGS"] = {
+							149.624855268236, -- [1]
+							"item:128131:0:0:0:0:0:0:0:0:105:0:4:1:42:0:0:0", -- [2]
+							0, -- [3]
+						},
 						["INVTYPE_HEAD"] = {
 							159.646082593593, -- [1]
 							"item:128034:0:0:0:0:0:0:0:0:105:0:4:1:560:0:0:0", -- [2]
@@ -1368,11 +1373,6 @@ PawnCommon = {
 						["INVTYPE_2HWEAPON"] = {
 							105.398687765342, -- [1]
 							"item:115332:0:0:0:0:0:0:0:0:103:0:1:1:132:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_LEGS"] = {
-							149.624855268236, -- [1]
-							"item:128131:0:0:0:0:0:0:0:0:105:0:4:1:42:0:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_FINGER"] = {
@@ -1435,6 +1435,11 @@ PawnCommon = {
 				["Uldaris-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
+						["INVTYPE_LEGS"] = {
+							149.567297393788, -- [1]
+							"item:128131:0:0:0:0:0:0:0:0:105:0:4:1:42:0:0:0", -- [2]
+							0, -- [3]
+						},
 						["INVTYPE_HEAD"] = {
 							157.823277400928, -- [1]
 							"item:128034:0:0:0:0:0:0:0:0:105:0:4:1:560:0:0:0", -- [2]
@@ -1458,11 +1463,6 @@ PawnCommon = {
 						["INVTYPE_2HWEAPON"] = {
 							88.6401285255266, -- [1]
 							"item:115325:0:0:0:0:0:0:0:0:103:0:1:1:142:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_LEGS"] = {
-							149.567297393788, -- [1]
-							"item:128131:0:0:0:0:0:0:0:0:105:0:4:1:42:0:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_FINGER"] = {
@@ -1588,11 +1588,6 @@ PawnCommon = {
 				["Bracnar-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
-						["INVTYPE_LEGS"] = {
-							657.96, -- [1]
-							"item:124301:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0", -- [2]
-							0, -- [3]
-						},
 						["INVTYPE_HEAD"] = {
 							651.92, -- [1]
 							"item:124296:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0", -- [2]
@@ -1616,6 +1611,11 @@ PawnCommon = {
 						["INVTYPE_WEAPONMAINHAND"] = {
 							11.1578947368421, -- [1]
 							"item:19019:0:0:0:0:0:0:610963968:0:255:0:0:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_LEGS"] = {
+							657.96, -- [1]
+							"item:124301:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_2HWEAPON"] = {
