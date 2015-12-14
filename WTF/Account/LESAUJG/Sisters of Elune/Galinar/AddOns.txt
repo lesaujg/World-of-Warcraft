@@ -124,7 +124,7 @@ MacroToolkit: enabled
 MasterPlanA: enabled
 Pawn: enabled
 TradeSkillMaster_AppHelper: enabled
-TradeSkillMaster_CoolDowns: enabled
+TradeSkillMaster_CoolDowns: disabled
 TradeSkillMaster_Destroying: enabled
 DBM-GarrisonInvasions: enabled
 DBM-HellfireCitadel: enabled
@@ -134,3 +134,4 @@ TidyPlates: disabled
 PGFinder: disabled
 LFGFilter: disabled
 Boomkinator: disabled
+VuhDo: disabled

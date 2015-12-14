@@ -1,43 +1,63 @@
 
 TradeSkillMaster_MailingDB = {
-	["profileKeys"] = {
-		["Sanjuri - Sisters of Elune"] = "Default",
-		["Galinar - Sisters of Elune"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Orig - Sisters of Elune"] = "Default",
-		["Mandelbrot - Sisters of Elune"] = "Default",
-		["Belrath - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-	},
-	["global"] = {
-		["optionsTreeStatus"] = {
-			["groups"] = {
-				["2Mail Pots Keep"] = true,
-				["2Low level enchant mats"] = true,
-				["2Mail Uldaris"] = true,
-				["2Mail Ghiaccioli"] = true,
-				["2Mails Pots"] = true,
-				["1"] = true,
-				["2Mail Herbinator"] = true,
-				["2"] = true,
-				["2Mail Bracnar"] = true,
-				["2Mail disenchant"] = true,
-				["2Mail Galinar"] = true,
-				["2Mail enchants"] = true,
-				["2Mail Potions Keep"] = true,
-				[2] = true,
-				["2Mails Flasks"] = true,
-				["2Mail Ore"] = true,
-				["2Mail Clothgar"] = true,
-			},
-			["scrollvalue"] = 0,
-			["fullwidth"] = 927.999938964844,
-			["treesizable"] = true,
-			["treewidth"] = 175,
-			["selected"] = 1,
+	["g@ @sendDelay"] = 0.5,
+	["g@ @sendItemsIndividually"] = false,
+	["c@Ghiaccioli - Sisters of Elune@goldMailTarget"] = "",
+	["c@Uldaris - Sisters of Elune@goldMailTarget"] = "",
+	["_scopeKeys"] = {
+		["char"] = {
+			"Clothgar - Sisters of Elune", -- [1]
+			"Uldaris - Sisters of Elune", -- [2]
+			"Bracnar - Sisters of Elune", -- [3]
+			"Orig - Sisters of Elune", -- [4]
+			"Galinar - Sisters of Elune", -- [5]
+			"Ghiaccioli - Sisters of Elune", -- [6]
+		},
+		["factionrealm"] = {
+			"Alliance - Sisters of Elune", -- [1]
+		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["realm"] = {
+			"Sisters of Elune", -- [1]
 		},
 	},
+	["g@ @helpPlatesShown"] = {
+		["inbox"] = true,
+		["groups"] = true,
+	},
+	["c@Clothgar - Sisters of Elune@goldKeepAmount"] = 1000000,
+	["c@Uldaris - Sisters of Elune@goldKeepAmount"] = 1000000,
+	["c@Bracnar - Sisters of Elune@goldMailTarget"] = "",
+	["_hash"] = 3711258,
+	["g@ @inboxMessages"] = true,
+	["c@Ghiaccioli - Sisters of Elune@goldKeepAmount"] = 1000000,
+	["g@ @defaultMailTab"] = true,
+	["c@Orig - Sisters of Elune@goldMailTarget"] = "",
+	["c@Galinar - Sisters of Elune@goldKeepAmount"] = 1000000,
+	["_currentProfile"] = {
+		["Galinar - Sisters of Elune"] = "Default",
+		["Orig - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
+	},
+	["g@ @resendDelay"] = 1,
+	["c@Orig - Sisters of Elune@goldKeepAmount"] = 1000000,
+	["g@ @keepMailSpace"] = 0,
+	["g@ @displayMoneyCollected"] = true,
+	["f@Alliance - Sisters of Elune@deMailTarget"] = "",
+	["g@ @defaultPage"] = 1,
+	["g@ @deleteEmptyNPCMail"] = false,
+	["g@ @openMailSound"] = "TSM_NO_SOUND",
+	["c@Galinar - Sisters of Elune@goldMailTarget"] = "",
+	["g@ @sendMessages"] = true,
+	["g@ @autoCheck"] = true,
+	["g@ @showReloadBtn"] = true,
+	["c@Clothgar - Sisters of Elune@goldMailTarget"] = "",
+	["g@ @deMaxQuality"] = 2,
+	["_version"] = 1,
+	["c@Bracnar - Sisters of Elune@goldKeepAmount"] = 1000000,
 }

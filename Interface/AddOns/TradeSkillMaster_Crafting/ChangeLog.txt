@@ -1,3 +1,7 @@
+v3.0
+*Initial 3.0 version!
+\\
+
 v2.6.19
 *Updated to 6.2.
 *Fixed bug with material links not showing up.

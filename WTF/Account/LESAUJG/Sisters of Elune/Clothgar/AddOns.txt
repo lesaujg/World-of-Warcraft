@@ -144,7 +144,7 @@ MacroToolkit: enabled
 MasterPlanA: disabled
 Pawn: disabled
 TradeSkillMaster_AppHelper: enabled
-TradeSkillMaster_CoolDowns: enabled
+TradeSkillMaster_CoolDowns: disabled
 TradeSkillMaster_Destroying: enabled
 DBM-GarrisonInvasions: disabled
 DBM-HellfireCitadel: disabled
@@ -157,3 +157,4 @@ IskarAssist: disabled
 PremadeAge: disabled
 PremadeNotifier: disabled
 Boomkinator: disabled
+VuhDo: disabled
