@@ -474,7 +474,7 @@ function private:UpdateGatherSelection(onEnable)
 			end
 		end
 	end
-	private.gatherSelection.player = private.gatherSelection.player or (hasCurrentPlayer and currentPlayerName) or (numCrafters == 1 and next(crafters))
+	private.gatherSelection.player = private.gatherSelection.player or (hasCurrentPlayer and currentPlayerName) or next(crafters)
 	private.gatheringFrame.gatheroptions.playerDropdown:SetList(crafters)
 	private.gatheringFrame.gatheroptions.playerDropdown:SetValue(private.gatherSelection.player)
 	if not private.gatherSelection.player then

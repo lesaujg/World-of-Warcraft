@@ -7,6 +7,10 @@ END
 VER 3 000000000000008E "BuyTradingPost" "INV_MISC_QUESTIONMARK"
 /run BuyMerchantItem(3) 
 END
+VER 3 0000000000000098 "Decursive" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/cast [@mouseover,nomod,exists] Nature's Cure;  [@mouseover,exists,mod:ctrl] Cyclone; [@mouseover,exists,mod:shift] Nature's Cure
+END
 VER 3 000000000000008A "Des" "ACHIEVEMENT_GUILDPERK_QUICK AND DEAD"
 /tar Des
 END
@@ -50,7 +54,7 @@ VER 3 0000000000000088 "MD+CS" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000087 "RandomMount" "INV_MISC_QUESTIONMARK"
 /cast [mod:ctrl] Azure Water Strider
-/cast [mod:shift] Ironbound Proto-drake
+/cast [mod:alt] Ironbound Proto-drake
 /cast [noswimming,mod:shift] Traveler's Tundra Mammoth
 #showtooltip [nomod] White Ram
 /click [nobtn:2] LiteMount

@@ -1,3 +1,6 @@
+v3.0.1
+*Fix issue with gathering not appearing if no queue for the current player.
+
 v3.0
 *Initial 3.0 version!
 \\

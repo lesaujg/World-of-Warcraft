@@ -97,11 +97,11 @@ end
 -- Error GUI Functions
 -- ============================================================================
 
-function private:ShowError(msg, isVerify)
+function private:ShowError(msg, isVerify, isUnofficial)
 	if not AceGUI or not TSM.db then
 		private.isErrorFrameVisible = true
 		-- can't use TSMAPI.Delay:AfterTime here since we can't rely on that being loaded
-		C_Timer.After(0.1, function() private:ShowError(msg, isVerify) end)
+		C_Timer.After(0.1, function() private:ShowError(msg, isVerify, isUnofficial) end)
 		return
 	end
 
@@ -117,6 +117,8 @@ function private:ShowError(msg, isVerify)
 	l:SetFontObject(GameFontNormal)
 	if isVerify then
 		l:SetText(L["Looks like TradeSkillMaster has detected an error with your configuration. Please address this in order to ensure TSM remains functional."].."\n"..L["|cffffff00DO NOT report this as an error to the developers.|r If you require assistance with this, make a post on the TSM forums instead."].."|r")
+	elseif isUnofficial then
+		l:SetText(L["Looks like an |cffff0000unofficial|r TSM module has encountered an error. Please do not report this to the TSM team, but instead report it to the author of the addon. If it's affecting the operation of TSM, you may want to disable it."])
 	else
 		l:SetText(L["Looks like TradeSkillMaster has encountered an error. Please help the author fix this error by copying the entire error below and following the instructions for reporting lua errors listed at the following URL:"].." |cffffff00http://tradeskillmaster.com/site/getting-help|r")
 	end
@@ -270,7 +272,9 @@ function private.ErrorHandler(msg, thread)
 	if not private.isErrorFrameVisible then
 		TSM:LOG_ERR(msg)
 		TSM:Print(L["Looks like TradeSkillMaster has encountered an error. Please help the author fix this error by following the instructions shown."])
-		private:ShowError(TSMERRORLOG[#TSMERRORLOG])
+		local author = GetAddOnMetadata(addonName, "Author")
+		local isOfficial = author and strfind(author, "^Sapu94")
+		private:ShowError(TSMERRORLOG[#TSMERRORLOG], nil, not isOfficial)
 	elseif private.isErrorFrameVisible == true then
 		TSM:LOG_ERR(msg)
 		TSM:Print(L["Additional error suppressed"])
@@ -312,7 +316,7 @@ do
 	local s = GetAddOnMetadata("TradeSkillMaster", "X-TSM")
 	local i = strmatch(tostring(s), "^[0-9]+_25[5-9]$") or strmatch(tostring(s), "^[0-9]+$")
 	local b = {29194, 48300}
-	if GetAddOnMetadata("TradeSkillMaster", "Version") ~= "v3.0" and (not i or tContains(b, i)) then
+	if GetAddOnMetadata("TradeSkillMaster", "Version") ~= "v3.0.1" and (not i or tContains(b, i)) then
 		s = "\73\110\118\97\108\105\100\32\105\116\101\109\58\32"..tostring(s)
 		C_Timer.After(1, function() TSM:Print(s) TSM:ShowError(s) end)
 		DisableAddOn("TradeSkillMaster")

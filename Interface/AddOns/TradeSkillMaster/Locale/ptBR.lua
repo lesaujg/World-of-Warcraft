@@ -300,6 +300,7 @@ L["Light (by Ravanys - The Consortium)"] = "Light (por Ravanys - The Consortium)
 L["Link Text 2 (Requires Reload)"] = "Texto dos Links 2 (Necessário Recarregamento)" -- Needs review
 L["Link Text (Requires Reload)"] = "Texto dos Links (Necessário Recarregamento)" -- Needs review
 L["Load Saved Theme"] = "Carregar tema salvo"
+-- L["Looks like an |cffff0000unofficial|r TSM module has encountered an error. Please do not report this to the TSM team, but instead report it to the author of the addon. If it's affecting the operation of TSM, you may want to disable it."] = ""
 -- L["Looks like TradeSkillMaster has detected an error with your configuration. Please address this in order to ensure TSM remains functional."] = ""
 -- L["Looks like TradeSkillMaster has encountered an error. Please help the author fix this error by copying the entire error below and following the instructions for reporting lua errors listed at the following URL:"] = ""
 L["Looks like TradeSkillMaster has encountered an error. Please help the author fix this error by following the instructions shown."] = "Parece que o TradeSkillMaster encontrou um erro. Por favor ajude o autor a corrigir este erro seguindo as instruções exibidas." -- Needs review

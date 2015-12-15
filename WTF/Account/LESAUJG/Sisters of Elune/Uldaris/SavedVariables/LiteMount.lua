@@ -4,6 +4,14 @@ LM_OptionsDB = {
 	},
 	["excludedspells"] = {
 	},
+	["excludeNewMounts"] = {
+	},
+	["flagoverrides"] = {
+		[783] = {
+			11, -- [1]
+			0, -- [2]
+		},
+	},
 	["seenspells"] = {
 		[75207] = true,
 		[123992] = true,
@@ -30,6 +38,7 @@ LM_OptionsDB = {
 		[34896] = true,
 		[171838] = true,
 		[88741] = true,
+		[40192] = true,
 		[98718] = true,
 		[73313] = true,
 		[127310] = true,
@@ -59,12 +68,12 @@ LM_OptionsDB = {
 		[61425] = true,
 		[120395] = true,
 		[127216] = true,
-		[10969] = true,
+		[61470] = true,
 		[171619] = true,
 		[61465] = true,
 		[39798] = true,
 		[127290] = true,
-		[61470] = true,
+		[6648] = true,
 		[39318] = true,
 		[17453] = true,
 		[23338] = true,
@@ -221,7 +230,7 @@ LM_OptionsDB = {
 		[66090] = true,
 		[98204] = true,
 		[189999] = true,
-		[6648] = true,
+		[10969] = true,
 		[39803] = true,
 		[61996] = true,
 		[35710] = true,
@@ -235,14 +244,6 @@ LM_OptionsDB = {
 		[102349] = true,
 		[23221] = true,
 		[22719] = true,
-	},
-	["excludeNewMounts"] = {
-	},
-	["flagoverrides"] = {
-		[783] = {
-			11, -- [1]
-			0, -- [2]
-		},
 	},
 	["macro"] = {
 	},

@@ -3,7 +3,7 @@ Enchantrix-Barker: disabled
 Informant: disabled
 +Wowhead_Looter: disabled
 SlideBar: disabled
-_NPCScan: enabled
+_NPCScan: disabled
 _NPCScan.Overlay: disabled
 AckisRecipeList: enabled
 AckisRecipeList_Alchemy: enabled
@@ -17,7 +17,7 @@ AckisRecipeList_Jewelcrafting: enabled
 AckisRecipeList_Leatherworking: enabled
 AckisRecipeList_Smelting: enabled
 AckisRecipeList_Tailoring: enabled
-ActionBarSaver: enabled
+ActionBarSaver: disabled
 Overachiever: enabled
 Overachiever_Tabs: enabled
 Overachiever_Trade: enabled
@@ -158,3 +158,13 @@ PremadeAge: disabled
 PremadeNotifier: disabled
 Boomkinator: disabled
 VuhDo: disabled
+AdvancedIconSelector: disabled
+BalanceSpellSuggest: disabled
+Decursive: disabled
+Grid2: disabled
+Grid2Options: disabled
+Grid2RaidDebuffs: disabled
+Grid2LDB: disabled
+Grid2RaidDebuffsOptions: disabled
+SavedInstances: disabled
+VuhDoOptions: disabled

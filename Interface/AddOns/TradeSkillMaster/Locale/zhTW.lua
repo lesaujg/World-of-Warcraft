@@ -297,6 +297,7 @@ L["Light (by Ravanys - The Consortium)"] = "Light (by Ravanys - The Consortium)"
 L["Link Text 2 (Requires Reload)"] = "連結文字2（需重載）" -- Needs review
 L["Link Text (Requires Reload)"] = "連結文字（需重載）" -- Needs review
 L["Load Saved Theme"] = "載入保存的主題" -- Needs review
+-- L["Looks like an |cffff0000unofficial|r TSM module has encountered an error. Please do not report this to the TSM team, but instead report it to the author of the addon. If it's affecting the operation of TSM, you may want to disable it."] = ""
 L["Looks like TradeSkillMaster has detected an error with your configuration. Please address this in order to ensure TSM remains functional."] = "TradeSkillMaster似乎在你的配置中檢測到了一個錯誤。請解決這個問題確保TSM正常工作。" -- Needs review
 -- L["Looks like TradeSkillMaster has encountered an error. Please help the author fix this error by copying the entire error below and following the instructions for reporting lua errors listed at the following URL:"] = ""
 L["Looks like TradeSkillMaster has encountered an error. Please help the author fix this error by following the instructions shown."] = "看起來TradeSkillMaster似乎發生了一個錯誤。請按照下列指示協助作者修正此問題。"

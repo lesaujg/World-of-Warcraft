@@ -1,16 +1,19 @@
 
 Grid2DB = {
 	["namespaces"] = {
-		["Grid2RaidDebuffs"] = {
+		["Grid2Utils"] = {
+		},
+		["Grid2Frame"] = {
 		},
 		["Grid2Layout"] = {
 			["profiles"] = {
 				["Uldaris - Sisters of Elune"] = {
 					["layouts"] = {
+						["solo"] = "None",
 						["party"] = "Party",
 					},
-					["PosY"] = -563.52028037309,
-					["PosX"] = 522.400105510947,
+					["PosY"] = -440.319872970584,
+					["PosX"] = 537.759831730131,
 				},
 			},
 		},
@@ -18,9 +21,9 @@ Grid2DB = {
 		},
 		["Grid2Options"] = {
 		},
-		["Grid2Utils"] = {
+		["Grid2RaidDebuffs"] = {
 		},
-		["Grid2Frame"] = {
+		["Grid2AoeHeals"] = {
 		},
 	},
 	["profileKeys"] = {
@@ -246,9 +249,6 @@ Grid2DB = {
 						["b"] = 0,
 					},
 				},
-				["corner-top-left-color"] = {
-					["type"] = "text-color",
-				},
 				["health"] = {
 					["type"] = "bar",
 					["location"] = {
@@ -266,6 +266,21 @@ Grid2DB = {
 						["b"] = 0,
 					},
 				},
+				["corner-top-left-color"] = {
+					["type"] = "text-color",
+				},
+				["text-up"] = {
+					["type"] = "text",
+					["location"] = {
+						["y"] = -8,
+						["relPoint"] = "TOP",
+						["point"] = "TOP",
+						["x"] = 0,
+					},
+					["level"] = 7,
+					["textlength"] = 6,
+					["fontSize"] = 8,
+				},
 				["corner-bottom-left"] = {
 					["type"] = "square",
 					["location"] = {
@@ -282,18 +297,6 @@ Grid2DB = {
 						["g"] = 1,
 						["b"] = 1,
 					},
-				},
-				["text-up"] = {
-					["type"] = "text",
-					["location"] = {
-						["y"] = -8,
-						["relPoint"] = "TOP",
-						["point"] = "TOP",
-						["x"] = 0,
-					},
-					["level"] = 7,
-					["textlength"] = 6,
-					["fontSize"] = 8,
 				},
 				["text-up-color"] = {
 					["type"] = "text-color",
@@ -392,11 +395,6 @@ Grid2DB = {
 				["health"] = {
 					["health-current"] = 99,
 				},
-				["corner-bottom-left"] = {
-					["threat"] = 99,
-					["buff-HandOfSalvation-mine"] = 100,
-					["buff-HandOfSalvation"] = 101,
-				},
 				["text-up"] = {
 					["charmed"] = 65,
 					["feign-death"] = 96,
@@ -404,6 +402,11 @@ Grid2DB = {
 					["offline"] = 93,
 					["death"] = 95,
 					["vehicle"] = 70,
+				},
+				["corner-bottom-left"] = {
+					["threat"] = 99,
+					["buff-HandOfSalvation-mine"] = 100,
+					["buff-HandOfSalvation"] = 101,
 				},
 				["text-up-color"] = {
 					["charmed"] = 65,
@@ -588,22 +591,17 @@ Grid2DB = {
 					["level"] = 9,
 					["size"] = 5,
 				},
-				["corner-bottom-left"] = {
-					["type"] = "square",
+				["text-up"] = {
+					["type"] = "text",
 					["location"] = {
-						["y"] = 0,
-						["relPoint"] = "BOTTOMLEFT",
-						["point"] = "BOTTOMLEFT",
+						["y"] = -8,
+						["relPoint"] = "TOP",
+						["point"] = "TOP",
 						["x"] = 0,
 					},
-					["level"] = 5,
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
-					["size"] = 5,
+					["level"] = 7,
+					["textlength"] = 6,
+					["fontSize"] = 8,
 				},
 				["text-up-color"] = {
 					["type"] = "text-color",
@@ -627,17 +625,22 @@ Grid2DB = {
 					["opacity"] = 0.25,
 					["texture"] = "Gradient",
 				},
-				["text-up"] = {
-					["type"] = "text",
+				["corner-bottom-left"] = {
+					["type"] = "square",
 					["location"] = {
-						["y"] = -8,
-						["relPoint"] = "TOP",
-						["point"] = "TOP",
+						["y"] = 0,
+						["relPoint"] = "BOTTOMLEFT",
+						["point"] = "BOTTOMLEFT",
 						["x"] = 0,
 					},
-					["level"] = 7,
-					["textlength"] = 6,
-					["fontSize"] = 8,
+					["level"] = 5,
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["size"] = 5,
 				},
 			},
 			["statusMap"] = {
@@ -711,10 +714,6 @@ Grid2DB = {
 			},
 		},
 		["Bracnar - Sisters of Elune"] = {
-			["versions"] = {
-				["Grid2"] = 5,
-				["Grid2RaidDebuffs"] = 1,
-			},
 			["indicators"] = {
 				["heals"] = {
 					["type"] = "bar",
@@ -882,13 +881,8 @@ Grid2DB = {
 					["target"] = 50,
 					["health-low"] = 55,
 				},
-				["text-up"] = {
-					["charmed"] = 65,
-					["feign-death"] = 96,
-					["health-deficit"] = 50,
-					["offline"] = 93,
-					["vehicle"] = 70,
-					["death"] = 95,
+				["corner-bottom-left"] = {
+					["threat"] = 99,
 				},
 				["health"] = {
 					["health-current"] = 99,
@@ -896,8 +890,13 @@ Grid2DB = {
 				["text-down-color"] = {
 					["classcolor"] = 99,
 				},
-				["corner-bottom-left"] = {
-					["threat"] = 99,
+				["text-up"] = {
+					["charmed"] = 65,
+					["feign-death"] = 96,
+					["health-deficit"] = 50,
+					["offline"] = 93,
+					["vehicle"] = 70,
+					["death"] = 95,
 				},
 				["text-up-color"] = {
 					["charmed"] = 65,
@@ -915,6 +914,10 @@ Grid2DB = {
 					["raid-debuffs"] = 155,
 					["death"] = 155,
 				},
+			},
+			["versions"] = {
+				["Grid2"] = 5,
+				["Grid2RaidDebuffs"] = 1,
 			},
 		},
 		["Uldaris - Sisters of Elune"] = {
@@ -952,9 +955,12 @@ Grid2DB = {
 					["buff-Regrowth-mine"] = 99,
 				},
 				["icon-center"] = {
-					["ready-check"] = 150,
-					["raid-debuffs"] = 155,
+					["debuff-Poison"] = 157,
 					["death"] = 155,
+					["debuff-Curse"] = 156,
+					["raid-debuffs"] = 155,
+					["ready-check"] = 150,
+					["debuff-Magic"] = 158,
 				},
 				["health-color"] = {
 					["classcolor"] = 99,
@@ -976,13 +982,8 @@ Grid2DB = {
 				["heals"] = {
 					["heals-incoming"] = 99,
 				},
-				["text-up"] = {
-					["charmed"] = 65,
-					["feign-death"] = 96,
-					["health-deficit"] = 50,
-					["offline"] = 93,
-					["vehicle"] = 70,
-					["death"] = 95,
+				["corner-bottom-left"] = {
+					["threat"] = 99,
 				},
 				["text-up-color"] = {
 					["charmed"] = 65,
@@ -995,8 +996,13 @@ Grid2DB = {
 				["corner-top-left-color"] = {
 					["buff-Lifebloom-mine"] = 99,
 				},
-				["corner-bottom-left"] = {
-					["threat"] = 99,
+				["text-up"] = {
+					["charmed"] = 65,
+					["feign-death"] = 96,
+					["health-deficit"] = 50,
+					["offline"] = 93,
+					["vehicle"] = 70,
+					["death"] = 95,
 				},
 			},
 			["versions"] = {
@@ -1138,22 +1144,8 @@ Grid2DB = {
 					["textlength"] = 12,
 					["fontSize"] = 8,
 				},
-				["health"] = {
-					["type"] = "bar",
-					["location"] = {
-						["y"] = 0,
-						["relPoint"] = "CENTER",
-						["point"] = "CENTER",
-						["x"] = 0,
-					},
-					["level"] = 2,
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0,
-						["g"] = 0,
-						["r"] = 0,
-					},
-					["texture"] = "Gradient",
+				["corner-top-left-color"] = {
+					["type"] = "text-color",
 				},
 				["heals"] = {
 					["type"] = "bar",
@@ -1174,21 +1166,6 @@ Grid2DB = {
 					["opacity"] = 0.25,
 					["texture"] = "Gradient",
 				},
-				["text-up"] = {
-					["type"] = "text",
-					["location"] = {
-						["y"] = -8,
-						["relPoint"] = "TOP",
-						["point"] = "TOP",
-						["x"] = 0,
-					},
-					["level"] = 7,
-					["textlength"] = 6,
-					["fontSize"] = 8,
-				},
-				["text-up-color"] = {
-					["type"] = "text-color",
-				},
 				["corner-bottom-left"] = {
 					["type"] = "square",
 					["location"] = {
@@ -1206,8 +1183,37 @@ Grid2DB = {
 					},
 					["size"] = 5,
 				},
-				["corner-top-left-color"] = {
+				["text-up-color"] = {
 					["type"] = "text-color",
+				},
+				["text-up"] = {
+					["type"] = "text",
+					["location"] = {
+						["y"] = -8,
+						["relPoint"] = "TOP",
+						["point"] = "TOP",
+						["x"] = 0,
+					},
+					["level"] = 7,
+					["textlength"] = 6,
+					["fontSize"] = 8,
+				},
+				["health"] = {
+					["type"] = "bar",
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "CENTER",
+						["point"] = "CENTER",
+						["x"] = 0,
+					},
+					["level"] = 2,
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0,
+						["g"] = 0,
+						["r"] = 0,
+					},
+					["texture"] = "Gradient",
 				},
 			},
 			["statuses"] = {
@@ -1532,6 +1538,58 @@ Grid2DB = {
 			},
 		},
 		["Clothgar - Sisters of Elune"] = {
+			["statuses"] = {
+				["buff-FelArmor-mine"] = {
+					["type"] = "buff",
+					["missing"] = true,
+					["spellName"] = 28176,
+					["mine"] = true,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["buff-ShadowWard-mine"] = {
+					["spellName"] = 6229,
+					["type"] = "buff",
+					["mine"] = true,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["buff-DemonArmor-mine"] = {
+					["type"] = "buff",
+					["missing"] = true,
+					["spellName"] = 687,
+					["mine"] = true,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["buff-SoulLink-mine"] = {
+					["spellName"] = 19028,
+					["type"] = "buff",
+					["mine"] = true,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+			},
+			["versions"] = {
+				["Grid2"] = 5,
+				["Grid2RaidDebuffs"] = 1,
+			},
 			["indicators"] = {
 				["heals"] = {
 					["type"] = "bar",
@@ -1687,58 +1745,6 @@ Grid2DB = {
 					["fontSize"] = 8,
 					["size"] = 14,
 				},
-			},
-			["statuses"] = {
-				["buff-ShadowWard-mine"] = {
-					["spellName"] = 6229,
-					["type"] = "buff",
-					["mine"] = true,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 1,
-					},
-				},
-				["buff-FelArmor-mine"] = {
-					["type"] = "buff",
-					["missing"] = true,
-					["spellName"] = 28176,
-					["mine"] = true,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 1,
-					},
-				},
-				["buff-SoulLink-mine"] = {
-					["spellName"] = 19028,
-					["type"] = "buff",
-					["mine"] = true,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 1,
-					},
-				},
-				["buff-DemonArmor-mine"] = {
-					["type"] = "buff",
-					["missing"] = true,
-					["spellName"] = 687,
-					["mine"] = true,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 1,
-					},
-				},
-			},
-			["versions"] = {
-				["Grid2"] = 5,
-				["Grid2RaidDebuffs"] = 1,
 			},
 			["statusMap"] = {
 				["heals"] = {
