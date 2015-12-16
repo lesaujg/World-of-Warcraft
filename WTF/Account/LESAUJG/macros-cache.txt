@@ -9,7 +9,7 @@ VER 3 000000000000008E "BuyTradingPost" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000098 "Decursive" "INV_MISC_QUESTIONMARK"
 /stopcasting
-/cast [@mouseover,nomod,exists] Tranquilizing Shot;  [@mouseover,exists,mod:ctrl] Tranquilizing Shot; [@mouseover,exists,mod:shift] Tranquilizing Shot
+/cast [@mouseover,nomod,exists] Remove Corruption;  [@mouseover,exists,mod:ctrl] Cyclone; [@mouseover,exists,mod:shift] Remove Corruption
 END
 VER 3 000000000000008A "Des" "ACHIEVEMENT_GUILDPERK_QUICK AND DEAD"
 /tar Des

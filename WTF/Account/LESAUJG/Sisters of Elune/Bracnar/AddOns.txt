@@ -155,3 +155,11 @@ PGFinder: disabled
 LFGFilter: disabled
 Boomkinator: disabled
 VuhDo: disabled
+BalanceSpellSuggest: disabled
+Grid2: disabled
+Grid2AoeHeals: disabled
+Grid2RaidDebuffs: disabled
+Grid2RaidDebuffsOptions: disabled
+Grid2LDB: disabled
+Grid2Options: disabled
+Decursive: disabled

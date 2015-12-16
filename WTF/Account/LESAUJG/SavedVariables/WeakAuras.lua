@@ -9625,7 +9625,18 @@ WeakAurasSaved = {
 			["constantFactor"] = "RADIUS",
 			["selfPoint"] = "BOTTOMRIGHT",
 			["backgroundInset"] = 0,
-			["align"] = "RIGHT",
+			["trigger"] = {
+				["subeventPrefix"] = "SPELL",
+				["type"] = "aura",
+				["spellIds"] = {
+				},
+				["subeventSuffix"] = "_CAST_START",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+				},
+				["event"] = "Health",
+				["unit"] = "player",
+			},
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -9640,28 +9651,17 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["id"] = "G2_7_Hunter Trinkets Bar",
+			["additional_triggers"] = {
+			},
 			["rotation"] = 0,
 			["frameStrata"] = 1,
 			["width"] = 99.9999847412109,
 			["stagger"] = 0,
 			["radius"] = 200,
 			["numTriggers"] = 1,
-			["additional_triggers"] = {
-			},
+			["id"] = "G2_7_Hunter Trinkets Bar",
 			["height"] = 575.999923706055,
-			["trigger"] = {
-				["subeventPrefix"] = "SPELL",
-				["type"] = "aura",
-				["spellIds"] = {
-				},
-				["subeventSuffix"] = "_CAST_START",
-				["debuffType"] = "HELPFUL",
-				["names"] = {
-				},
-				["event"] = "Health",
-				["unit"] = "player",
-			},
+			["align"] = "RIGHT",
 			["load"] = {
 				["difficulty"] = {
 					["multi"] = {
@@ -10644,9 +10644,9 @@ WeakAurasSaved = {
 			["mirror"] = false,
 			["regionType"] = "texture",
 			["blendMode"] = "BLEND",
+			["parent"] = "G2_5_Hunter Talentos",
 			["untrigger"] = {
 			},
-			["parent"] = "G2_5_Hunter Talentos",
 			["init_completed"] = 1,
 			["discrete_rotation"] = 0,
 			["texture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura45",
@@ -11331,7 +11331,17 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["expanded"] = false,
 			["sort"] = "none",
-			["additional_triggers"] = {
+			["trigger"] = {
+				["subeventPrefix"] = "SPELL",
+				["type"] = "aura",
+				["spellIds"] = {
+				},
+				["subeventSuffix"] = "_CAST_START",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+				},
+				["event"] = "Health",
+				["unit"] = "player",
 			},
 			["space"] = 4,
 			["background"] = "None",
@@ -11359,19 +11369,9 @@ WeakAurasSaved = {
 				},
 			},
 			["radius"] = 200,
-			["align"] = "LEFT",
+			["id"] = "G2_1_Hunter Avisos",
 			["selfPoint"] = "TOPLEFT",
-			["trigger"] = {
-				["subeventPrefix"] = "SPELL",
-				["type"] = "aura",
-				["spellIds"] = {
-				},
-				["subeventSuffix"] = "_CAST_START",
-				["debuffType"] = "HELPFUL",
-				["names"] = {
-				},
-				["event"] = "Health",
-				["unit"] = "player",
+			["additional_triggers"] = {
 			},
 			["rotation"] = 0,
 			["frameStrata"] = 1,
@@ -11379,7 +11379,7 @@ WeakAurasSaved = {
 			["stagger"] = 0,
 			["backgroundInset"] = 0,
 			["numTriggers"] = 1,
-			["id"] = "G2_1_Hunter Avisos",
+			["align"] = "LEFT",
 			["height"] = 404.000030517578,
 			["borderOffset"] = 16,
 			["load"] = {
@@ -13544,18 +13544,6 @@ WeakAurasSaved = {
 				},
 			},
 			["borderOffset"] = 16,
-			["additional_triggers"] = {
-			},
-			["selfPoint"] = "BOTTOM",
-			["align"] = "CENTER",
-			["rotation"] = 0,
-			["frameStrata"] = 1,
-			["width"] = 30,
-			["stagger"] = 0,
-			["backgroundInset"] = 0,
-			["numTriggers"] = 1,
-			["id"] = "G2_6_Hunter Trinkets",
-			["height"] = 575.999923706055,
 			["trigger"] = {
 				["subeventPrefix"] = "SPELL",
 				["type"] = "aura",
@@ -13567,6 +13555,18 @@ WeakAurasSaved = {
 				},
 				["event"] = "Health",
 				["unit"] = "player",
+			},
+			["selfPoint"] = "BOTTOM",
+			["id"] = "G2_6_Hunter Trinkets",
+			["rotation"] = 0,
+			["frameStrata"] = 1,
+			["width"] = 30,
+			["stagger"] = 0,
+			["backgroundInset"] = 0,
+			["numTriggers"] = 1,
+			["align"] = "CENTER",
+			["height"] = 575.999923706055,
+			["additional_triggers"] = {
 			},
 			["load"] = {
 				["talent"] = {
@@ -15304,9 +15304,9 @@ WeakAurasSaved = {
 			["mirror"] = false,
 			["regionType"] = "texture",
 			["blendMode"] = "BLEND",
+			["parent"] = "G2_4_Hunter Rotação",
 			["untrigger"] = {
 			},
-			["parent"] = "G2_4_Hunter Rotação",
 			["init_completed"] = 1,
 			["discrete_rotation"] = 0,
 			["texture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura45",
@@ -16583,9 +16583,9 @@ WeakAurasSaved = {
 			["mirror"] = false,
 			["regionType"] = "texture",
 			["blendMode"] = "BLEND",
+			["parent"] = "G2_5_Hunter Talentos",
 			["untrigger"] = {
 			},
-			["parent"] = "G2_5_Hunter Talentos",
 			["init_completed"] = 1,
 			["discrete_rotation"] = 0,
 			["texture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura45",
