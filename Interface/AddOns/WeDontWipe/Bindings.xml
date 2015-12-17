@@ -1,0 +1,12 @@
+<Bindings>
+    <Binding name="WeDontWipeSelect1" header="WeDontWipeHeader">WeDontWipe:RotationSelect1()</Binding>
+    <Binding name="WeDontWipeSelect2">WeDontWipe:RotationSelect2()</Binding>
+    <Binding name="WeDontWipeSelect3">WeDontWipe:RotationSelect3()</Binding>
+    <Binding name="WeDontWipeSelect4">WeDontWipe:RotationSelect4()</Binding>
+    <Binding name="WeDontWipeSelect5">WeDontWipe:RotationSelect5()</Binding>
+    <Binding name="WeDontWipeSelect6">WeDontWipe:RotationSelect6()</Binding>
+    <Binding name="WeDontWipeSelect7">WeDontWipe:RotationSelect7()</Binding>
+    <Binding name="WeDontWipeSelect8">WeDontWipe:RotationSelect8()</Binding>
+    <Binding name="WeDontWipeSelect9">WeDontWipe:RotationSelect9()</Binding>
+    <Binding name="WeDontWipeSelect10">WeDontWipe:RotationSelect10()</Binding>
+</Bindings>

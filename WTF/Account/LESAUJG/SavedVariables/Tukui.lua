@@ -399,6 +399,10 @@ TukuiData = {
 			},
 		},
 		["Orig"] = {
+			["HideBar4"] = false,
+			["Move"] = {
+			},
+			["InstallDone"] = true,
 			["Texts"] = {
 				["Friends"] = {
 					true, -- [1]
@@ -515,9 +519,6 @@ TukuiData = {
 					111, -- [6]
 				},
 			},
-			["Move"] = {
-			},
-			["InstallDone"] = true,
 		},
 		["Herbinator"] = {
 			["ufpos"] = {
@@ -1107,16 +1108,16 @@ TukuiData = {
 	},
 	["Gold"] = {
 		["Sisters of Elune"] = {
-			["Bracnar"] = 764540161,
+			["Bracnar"] = 1179421799,
 			["Ghiaccioli"] = 281783609,
 			["Mandelbrot"] = 205133,
-			["Orig"] = 38163378,
+			["Orig"] = 38700058,
 			["Herbinator"] = 5473675,
 			["Galinar"] = 82321833,
 			["Belrath"] = 98013973,
-			["Clothgar"] = 9620758622,
+			["Clothgar"] = 9741772590,
 			["Sanjuri"] = 11460,
-			["Uldaris"] = 317926386,
+			["Uldaris"] = 312773259,
 		},
 	},
 }

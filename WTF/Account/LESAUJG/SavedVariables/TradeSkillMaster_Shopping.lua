@@ -41,28 +41,46 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @savedSearches"] = {
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1450230842,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
+			["lastSearch"] = 1450330278,
+			["name"] = "universal",
+			["filter"] = "universal",
 		}, -- [1]
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1450230835,
-			["name"] = "universal",
-			["filter"] = "universal",
+			["lastSearch"] = 1450330253,
+			["name"] = "arcane c",
+			["filter"] = "arcane c",
 		}, -- [2]
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1450230818,
-			["name"] = "arcane c",
-			["filter"] = "arcane c",
+			["lastSearch"] = 1450330233,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
 		}, -- [3]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1450330225,
+			["name"] = "legion",
+			["filter"] = "legion",
+		}, -- [4]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1450325729,
+			["name"] = "saberfish",
+			["filter"] = "saberfish",
+		}, -- [5]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1450323206,
+			["name"] = "sorcerous",
+			["filter"] = "sorcerous",
+		}, -- [6]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1450066769,
 			["name"] = "Mounts/Miscellaneous/Mount/usable",
 			["filter"] = "Mounts/Miscellaneous/Mount/usable",
-		}, -- [4]
+		}, -- [7]
 	},
 	["_hash"] = 1861581,
 	["g@ @normalPostPrice"] = "150% dbmarket",

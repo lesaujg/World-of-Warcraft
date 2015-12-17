@@ -31,6 +31,9 @@ TukuiConfigShared = {
 		["Mandelbrot"] = {
 		},
 		["Orig"] = {
+			["General"] = {
+				["UIScale"] = 0.64,
+			},
 		},
 		["Herbinator"] = {
 		},

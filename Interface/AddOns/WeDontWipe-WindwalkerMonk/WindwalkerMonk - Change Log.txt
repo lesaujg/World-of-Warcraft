@@ -1,0 +1,46 @@
+v2.10
+=====
+* Fix for RSK
+
+v2.09
+=====
+* TOC file update for Patch 6.2
+
+v2.08
+=====
+* Now checks for minimum WDW version as a help to keep things up to date
+
+v2.07
+=====
+* Chi Brew availability/charges not tracking correctly.
+
+v2.06
+=====
+* Include Power Strikes in the default cooldown list
+* Sneak in a debug "chi" option to alert me if the module over maxes Chi
+* Update TOC file for Patch 6.1
+
+v2.05
+=====
+* Stand alone AddOn (requiring We Don't Wipe v4.00) but hopefully Wowinterface & Curse compatible
+
+v2.04
+=====
+First Power Strike buff now at worst 300-400ms off.
+Fixed PS when zoning out / reload ui.
+Problem with Serenity and FoF causing Serenity to get clipped by 4s (ouch!)
+Option to alter the dummy/filler icon
+Reorder priority as a result of Serenity/FoF changes
+
+v2.03
+=====
+FSK (finisher/2nd) added to Chi cost lookup table
+TigereyeBrew reaching 20 stacks and not in queue
+
+v2.02
+=====
+TOTAL rewrite for Warlords of Draenor - BETA!!!!
+
+v1.01
+=====
+Version number bump for Patch 6.0.3

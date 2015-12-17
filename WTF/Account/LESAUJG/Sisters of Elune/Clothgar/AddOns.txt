@@ -168,3 +168,5 @@ Grid2LDB: disabled
 Grid2RaidDebuffsOptions: disabled
 SavedInstances: disabled
 VuhDoOptions: disabled
+WeDontWipe: disabled
+WeDontWipe-WindwalkerMonk: disabled

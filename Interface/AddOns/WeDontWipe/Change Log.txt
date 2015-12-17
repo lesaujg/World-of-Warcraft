@@ -1,0 +1,282 @@
+v4.11
+=====
+* Audible greeting toggle now shows current status (On/Off)
+* Incanter's Flow CD had erroneously copy/pasted code from my CoolAid AddOn
+
+v4.10
+=====
+* Mage Fire Blast and Inferno Blast CDs now checked by player level
+* Incanter's Flow charge/cooldown timers added
+* "Excluded Cooldowns" -> "Excluded from Queue/Rotation" on Cooldowns Panel
+
+v4.09
+=====
+* Mage Rune of Power Expiry timer added
+* Mage Incanter's Flow spellbook entry needed to be specially cached as a passive spell
+
+v4.08
+=====
+* warning/error message for reaching or trying to exceed the max number of excluded CDs able to be displayed now tests against correct maximum. Doh!
+* Message for no module for a specialisation changed to no module for a class.
+
+v4.07
+=====
+* TOC update to Patch 6.2
+* Suppress WDW showing when in Garrisons
+* Ability to suppress the audible chirpy racial greeting
+* Fire Mage ignite value now always passed to module (previously only when charges to be shown)
+
+v4.06
+=====
+* Remove 1 or 2 left over debugging messages. Doh!
+
+v4.05
+=====
+* Power Strikes broken in Patch 6.1, fixed and in fact enhanced yet again for accuracy
+* Avoid "Delete" button not showing in the '/wdw coo' Panel
+* Hidden "sb" debug option to dump the player's Spellbook to saved variables. Added v4.00+ but not documented
+* '/wdw sb' dumps the Spellbook to the chat channel
+* '/wdw bp' dumps Buffs (Player) to the chat channel
+* '/wdw bt' dumps Buffs (Target) to the chat channel
+* '/wdw dp' dumps Debuffs (Player) to the chat channel
+* '/wdw dt' dumps Debuff (Target) to the chat channel
+
+v4.04
+=====
+* Blizzard Cooldown changes forced code to be altered to stop flickering/stuck icons
+* Cooldown code slightly more efficient (less cpu)
+* Better module presence/version/format checking and feedback
+* Less repeated setup iterations due to multiple Events firing. Much less message repetition
+* Removed unused frame overlay code
+
+v4.03
+=====
+* If 'Show Charges' deselected then queue might have been non-optimal as charges not getting calculated.
+
+v4.02
+=====
+* Sweeping 'Second Hand' GCD/cooldown timer wasn't visible (alpha problem)
+* Chi Brew special recharge 'Cooldown' works as intended now
+* Roll / Chi Torpedo potentially bugged for 'recharges'. Fixed.
+* Renewing Mist / RSK added (both recharges for Mistweavers) to keep code in sync with Cool Aid AddOn
+
+v4.01
+=====
+* No crash when player uses WDW on unsupported classes
+* Removed the Slash file. The single line of code placed into Core.lua
+* Overhauled the help panels
+* If Spellbook has > 70 icons then reduce the size incrementally in the '/wdw coo' panel.
+* Error message if showing the WoW Interface AND WDW cooldown countdown text overlays.
+* Updated TOC file for Patch 6.1
+
+v4.00
+=====
+* Modules now all properly load alone and not inside a WDW Modules folder.
+
+v3.13
+=====
+* Mages again blowing out the limit of 70 spells in the prebuilt spellbook. Portals and Teleports are now excluded (as they used to be)
+
+v3.12
+=====
+* Monk Power Strikes further accuracy: First PS up to 400ms out, remainder at 100%
+* Power Strikes calculation was also trashed if the player zoned / reload UI
+
+v3.11
+=====
+* Chi Torpedo Spell ID added for Roll recharge
+* Chat command '/wdw gcd' now also returns remaining time of GCD
+* Monk Power Strikes (hidden (re)activation timer) now supported
+
+v3.10
+=====
+* Arcane Mage Arcane Charge amount is wrong if a Fire Mage is in the party.
+
+v3.09
+=====
+* Fix for buffs of type ""
+* Protection Paladin Bastion of Glory stacking buff added
+* Windwalker Monk Tigereye Brew stacking buff added
+* Enhancement Shaman Maelstrom Weapon stacking buff added
+* Arcane Mage Arcane Charges stacking debuff added
+
+v3.08
+=====
+* /wdw now works the same as /wdw help or /wdw ?
+* Fixed porting bug (from Cool Aid) when selecting a Spell ID manually in /wdw coo
+* Fix for remaining GCD calculation
+* New global wdw_specialModuleNew to allow players to adjust module constants/parameters directly
+* Code for above in Core.lua. NOT executed on regular polling but only on a talent/environment change
+* Edited Template.rtf to reflect the above and upped version to v1.01
+* pairs/ipairs localised
+* cooldown timer alpha fix for spells no longer being "shown"
+
+v3.07
+=====
+* Special "recharge" abilities totally rewritten and expanded
+* Target & Range text positions optimised for all screen resolutions
+* Target & Range text repositioned if main queue is not shown
+* Handling of Check boxes identical to my Cool Aid AddOn. i.e. works the new Blizzard way
+* Lots more localisation in the Core file
+* Removed taint sources from Core and Interface files and rewrote lots of code
+* Due to anti taint measures, Tooltips removed for icons BUT now properly click through
+* Alter sliders so that whole units for icons but detailed for update frequency
+* Changed minimum requestable update frequency to "0" (i.e. as often as possible)
+* Remove Glyph of Icy Veins test as that pre-WoD glyph was removed from the game
+* Removed options to NOT show icons if out of range or insufficient power as never actually implemented AND in WoD Blizzard removed power costs as an *easily* obtainable quantity
+
+v3.06
+=====
+* Very slightly moved target text (above the first icon) upwards
+* Further removal and refinement of pre WoD Mage Polymorph code as redundant
+* Bug in code testing for earliest possible cool down in mini-icons
+
+v3.05
+=====
+* When target is player the target text has the class specific appropriate colour.
+* Fix for global typos due to cut and paste from another of my AddOns (sigh)
+
+v3.04
+=====
+* Totally new routine for distance *estimation* copied over from my Hard Yards AddOn
+* More localisation of things. Localisation is generally better than bloating the global pool.
+* Fishing Poles list updated. New WoD poles plus added some other old or obsolete ones.
+* Added silent chat command /wdw gcd to show the current GCD for current toon
+* Corrected code for the (fun) hourly easter egg salute
+* The obtaining of a character's specialisation (if it has one) is now sadly hardcoded as I am tired of the bad API return results which occur from time to time with patches/expansions.
+* Several API calls have had parameters and return values altered, some with big changes
+* Updated author & copyright notices to reflect my current personal, game & AddOn status
+* Removed the Mage Polymorph code as no longer relevant. R.I.P. the lovely poly glyphs
+
+v3.03
+=====
+* Just a small Interface update so AddOn will load!
+
+v3.02
+=====
+* Saved Spellbook "active" spell limit exceeded by a player. Extended from 56 to 70
+* Added ability to specify Cooldown or Item by ID number!
+
+v3.01
+=====
+* Trivial change to TOC file so will launch/run under patch 5.4.
+* Special test for Glyph of Icy Veins to reveal Blizzard's hidden cooldown spell ID
+* Shaman Glyph of Shamanistic Rage Cleanse of Magic debuffs now supported
+* Can now exclude interrupt, mob buff dispel, friendly debuff dispels (mini icons 1 to 3) & items
+* Suppress buffs reminders when special action bars on show
+* All my current and 'maybe' modules included in the TOC file to ease installation
+
+v3.00
+=====
+* Added specific DK code for Glyph of Icy Touch giving a purge to DKs
+* Auto Attack now included in buffered Spellbook as rotations may wish to use it to signify "up to you" actions. Previously it was a specific exclusion
+* Number sizes for cooldowns (both main and CD rows) improved for really small tile sizes
+* Sweet spot for icon moving scales now at small tile sizes
+* Had to add specific Enh. Shaman code due to Blizzard smoke and mirrors with Stormblast
+
+v3.00b
+=====
+Big Changes
+-----------
+* Designed to support classes/specs from level 1 to 90 (1-9 has no specialisation)
+* Bag items, equipment, buffs and spells may be freely used for rotations and cooldowns
+* Supports user supplied modules. WDW functions mostly as a generic engine now. Template & instructions provided
+* Interface panels greatly expanded
+* Added Windwalker Monks
+* Management of specified shown or excluded cooldowns reworked / improved
+* Spell IDs used throughout, no more spell names. To use an itemID simply make it negative
+* Distance to target now much enhanced and supports all target types (as best as is allowed by Blizzard)
+* Charge display enhanced and standardised across the classes/specs
+* Almost all the globals removed and replaced with a much smaller set. Globals file & descriptions provided
+* Debug mode. Ability to also limit debug messages to a predefined subset of messages
+
+Fixes
+-----
+* Frost DK check for T15 2P bonus in Soul Reaper trigger in rotations
+* A spilling erors and a gramar eror fixed cuz im not 2 clevr
+* Position sometimes not saved fixed
+* Creeping memory use
+
+Smaller Enhancements
+--------------------
+* Rotation selection no longer by mouse wheel. Lots of keybindings possible now
+* Two new config options for managing Global Cooldowns
+* Test for 'interruptible' now specially checks for channelled spells bypassed by Blizzard's regular API call
+* Removed buff check exclusion for non-DKs when mounted. Response to user feedback
+* Option added to show everything when not in combat/aggro/instance (works in sync with 'Missing Buffs' option)
+* Added the "minus" UnitClassification for NPC minions. ("Minions" shown in WDW rather than "minus")
+* If target is a player then the usual target information text replaced with some basic player relevant stuff
+* Interface options panel better organised, some rewordings
+* Friendly audible login welcome sound, tailored for races
+* New error, warning, debug messages. Colour coded. And the old standard 'print' message too
+* All Mage modules now intelligently handle none, one or two Rune of Powers
+
+v2.03
+=====
+* Rotations changed for Patch 5.2 "Throne of Thunder" (Actions, Glyphs, Rotations, Core)
+* Better display of Mage Polymorph icons, including fixes for Blizzard's own bugs (Glyphs, Interface, Core, Spells)
+* More robust to handle players with no specialisation (Core, Interface)
+* Tier 15 Enhancement Shaman 2P +2 Maelstrom bonus (Spells, Rotation, Actions)
+* Updated version greeting to keep it fresh (Core)
+
+v2.02
+=====
+* Blood DK getting spammed with "Sorry," message fixed (Core)
+* Blood DK crashes fixed (Core)
+* Following Icon Sizes option changed to fraction from dodgy percentage (Interface)
+* Apparently 'stuck' or nonresponsive or duplicate icons fixed (Core)
+
+v2.01
+=====
+* Remove annoying Shaman weapon buff reminder if have a fishing pole equipped (Core)
+* Valentines Easter egg date error. Doh! (Core)
+
+v2.00
+=====
+* Saved data system now on a character name / realm basis as per Blizzard standards (Core)
+* Added in-game instructions (Core + Interface)
+* Able to edit cooldown / mini icon list from in game (Core + Interface)
+* Interface options panel cleaned up but still has that cozy "Ace" feel (Core + Interface)
+* Removed "Ace" as a dependancy. WDW now its own boss (Core + Interface + TOC)
+* Calculation of number of each type of DK rune is now accurate and not a (pretty good) estimate (Core)
+* Helpful message and sound for when seeking to reposition the icons (Core)
+* Allow for more CD icons (Core)
+* Allow for more than two DK Death runes (Actions)
+* Mini icon glow effect added & tested. Unused at present (Core)
+* Out of combat test now also tests for non-targeted aggro/attacks via an API call (Core)
+* Pillar of Frost added to default set of Frost DK CDs (Cooldowns)
+* Shaman must be >= L87 for Ascendance (Actions)
+* Shaman must be >= L81 for Unleashed Elements (Actions)
+* DK must be >= L87 for Soul Reaper (Actions)
+* DK must be >= 81 for Outbreak (Actions)
+* The various multiple polymorphs of a Mage are now properly known and managed (Core)
+* Improve logic for mini icon #3: ensure deal only with Curse/Disease/Magic/Poison if supported by Class/Race (IntDispel+Core)
+* Exclude Auto Attack from pre-scanned Spellbook (Core)
+* Invisible first/main icon could previously be moved (if you were clever). Now not possible (Core)
+* Notify other users of your WDW version and prompt player if player has an out of date WDW version (Core)
+* Spellbook scanning now correctly knows about and allows multiple spells with the same name. Relevant to Mage Polymorph (Core)
+* Removed the 'Up to You' icon. It was a dumb idea but fun at the time to see Hula Dolls and icecream cones on the screen (Core)
+* Now works properly for Mana Gems. What a hack job that was (Core)
+* Changed Welcome message and added a non-intrusive welcome sound (Core)
+* Fun stuff (Core + Interface)
+
+v1.05
+=====
+* Fix bug when switching from Frost to Arcane, with no zone change and then generating 1 Arcane Charge
+
+v1.04
+=====
+* Frost Death Knights added
+* Massive performance boost. No longer throttles cpu (lesson: don't blindly trust what you read on the net. Test for yourself!)
+* Tooltips for all icons
+* Keybindings revamped, including the bug in v1.03. Now bi-directional for both rotation & cooldown
+* Mouse wheel support as an alternative to keybindings
+* Frost Mages no longer prompted for Water Elemental when mounted
+* Slight range text placement adjustment to allow for null queues (unlikely as it is)
+* The forced English language for a player's "specialisation" removed. Thus more non-English friendly
+* Shaman Reincarnation correctly shows when dead and not on CD
+* Mage Tier 2 talent no longer assumed to be Ice Barrier (unlikely as that would be in PvE)
+
+----o----(||)----o----(||)----o----(||)----o----(||)----o----(||)----o----(||)----o----(||)----o----
+Inspired by EnhaPrio by Stormcast @ Lightbringer EU, the successor to ShamWow_Enhanc by Thomas Lien.
+Thank you both!
