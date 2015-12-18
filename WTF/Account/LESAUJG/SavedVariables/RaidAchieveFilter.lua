@@ -12,6 +12,9 @@ RAchF_DB = {
 	},
 	["profiles"] = {
 		["Orig - Sisters of Elune"] = {
+			["minimap"] = {
+				["minimapPos"] = 33.9675504931045,
+			},
 		},
 		["Herbinator - Sisters of Elune"] = {
 			["minimap"] = {
