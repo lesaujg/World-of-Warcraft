@@ -27,10 +27,3 @@ X: 0
 Y: 128
 W: 150
 H: 42
-Frame: _NPCScanOverlayKey
-FrameLevel: 23
-Anchor: CENTER
-X: -135
-Y: 133
-W: 219
-H: 500

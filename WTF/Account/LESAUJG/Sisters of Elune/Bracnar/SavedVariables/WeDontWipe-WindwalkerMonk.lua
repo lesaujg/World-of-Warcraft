@@ -1,0 +1,2 @@
+
+WDW_WindwalkerMonkDB = nil
