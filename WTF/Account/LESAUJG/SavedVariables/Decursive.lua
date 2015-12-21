@@ -1,12 +1,7 @@
 
 DecursiveDB = {
-	["profileKeys"] = {
-		["Galinar - Sisters of Elune"] = "Default",
-		["Orig - Sisters of Elune"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
+	["global"] = {
+		["LastVersionAnnounce"] = 1450676140,
 	},
 	["class"] = {
 		["HUNTER"] = {
@@ -76,8 +71,13 @@ DecursiveDB = {
 			},
 		},
 	},
-	["global"] = {
-		["LastVersionAnnounce"] = 1450592142,
+	["profileKeys"] = {
+		["Galinar - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Orig - Sisters of Elune"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

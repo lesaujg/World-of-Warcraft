@@ -402,10 +402,10 @@ function private:ShouldPost(itemString, operation, numInBags, pendingPosts)
 		TSM:Printf(L["The seller name of the lowest auction for %s was not given by the server. Skipping this item."], TSMAPI.Item:ToItemLink(itemString))
 		return "invalidSeller"
 	elseif lowestAuction.isBlacklist and lowestAuction.isPlayer then
-		TSM:Printf(L["Did not post %s because you or one of your alts (%s) is on the blacklist which is not allowed. Remove this character from your blacklist."], TSMAPI.Item:ToItemLink(itemString), lowestAuction.owner)
+		TSM:Printf(L["Did not post %s because you or one of your alts (%s) is on the blacklist which is not allowed. Remove this character from your blacklist."], TSMAPI.Item:ToItemLink(itemString), lowestAuction.seller)
 		return "invalid"
 	elseif lowestAuction.isBlacklist and lowestAuction.isWhitelist then
-		TSM:Printf(L["Did not post %s because the owner of the lowest auction (%s) is on both the blacklist and whitelist which is not allowed. Adjust your settings to correct this issue."], TSMAPI.Item:ToItemLink(itemString), lowestAuction.owner)
+		TSM:Printf(L["Did not post %s because the owner of the lowest auction (%s) is on both the blacklist and whitelist which is not allowed. Adjust your settings to correct this issue."], TSMAPI.Item:ToItemLink(itemString), lowestAuction.seller)
 		return "invalid"
 	elseif lowestAuction.buyout <= prices.minPrice then
 		if prices.resetPrice then
@@ -451,8 +451,12 @@ function private:ShouldPost(itemString, operation, numInBags, pendingPosts)
 		reason = "postingUndercut"
 		buyout = lowestAuction.buyout - prices.undercut
 	end
-	buyout = max(buyout, prices.minPrice)
-	bid = max(bid or buyout * operation.bidPercent, prices.minPrice)
+	if reason == "undercuttingBlacklist" then
+		bid = bid or buyout * operation.bidPercent
+	else
+		buyout = max(buyout, prices.minPrice)
+		bid = max(bid or buyout * operation.bidPercent, prices.minPrice)
+	end
 	
 	-- check if we can't post anymore
 	for _, info in ipairs(pendingPosts) do

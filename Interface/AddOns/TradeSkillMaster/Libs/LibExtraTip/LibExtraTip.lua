@@ -377,6 +377,7 @@ local function hook(tip, method, prehook, posthook)
 	-- prepare upvalues
 	local orig = tip[method]
 	if not orig then
+		-- There should be an original method - abort if it's missing
 		return
 	end
 	control = {prehook or false, posthook or false}
@@ -1060,7 +1061,6 @@ function lib:GenerateTooltipMethodTable() -- Sets up hooks to give the quantity 
 			reg.additional.eventContainer = tab
 			reg.additional.eventIndex = index
 			reg.additional.locked = locked
-			reg.item = GetGuildBankItemLink(tab,index) -- Workaround [LTT-56], Remove when fixed by Blizzard
 		end,
 
 		SetInboxItem = function(self,index)
@@ -1190,6 +1190,7 @@ function lib:GenerateTooltipMethodTable() -- Sets up hooks to give the quantity 
 				local _,_,q,rc = GetTradeSkillReagentInfo(index,reagentIndex)
 				reg.quantity = q
 				reg.additional.playerReagentCount = rc
+				reg.additional.link = GetTradeSkillReagentItemLink(index, reagentIndex)
 			else
 				local link = GetTradeSkillItemLink(index)
 				reg.additional.link = link

@@ -155,3 +155,5 @@ PGFinder: disabled
 LFGFilter: disabled
 Boomkinator: disabled
 VuhDo: disabled
+WeDontWipe: disabled
+WeDontWipe-WindwalkerMonk: disabled

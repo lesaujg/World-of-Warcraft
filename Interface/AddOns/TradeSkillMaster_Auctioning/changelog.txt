@@ -1,3 +1,9 @@
+v3.0.2
+*Fixed bug with blacklisted players not being undercut properly.
+
+v3.0.1
+*Fixed lua error when the post scan detects an invalid configuration.
+
 v3.0
 *Initial 3.0 version!
 \\

@@ -163,3 +163,5 @@ Grid2RaidDebuffsOptions: disabled
 Grid2LDB: disabled
 Grid2Options: disabled
 Decursive: disabled
+WeDontWipe: disabled
+WeDontWipe-WindwalkerMonk: disabled
