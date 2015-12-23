@@ -30,6 +30,12 @@ VER 3 0100000000000059 "Counter Shot" "INV_Misc_QuestionMark"
 /stopcasting
 /cast Counter Shot
 END
+VER 3 010000000000005A "Disengage" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/stopcasting
+/cast Disengage
+/cast Auto Shot
+END
 VER 3 010000000000004D "MD+" "INV_Misc_QuestionMark"
 #show Misdirection
 /focus [button:2] target
