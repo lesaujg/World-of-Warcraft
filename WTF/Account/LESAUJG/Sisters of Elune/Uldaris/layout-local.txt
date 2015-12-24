@@ -1,6 +1,6 @@
 Version: 1
 Frame: BaudManifestDisplay1
-FrameLevel: 23
+FrameLevel: 28
 Anchor: RIGHT
 X: -194
 Y: -10

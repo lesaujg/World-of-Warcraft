@@ -2,19 +2,25 @@
 WeDontWipeDB = {
 	["Windwalker"] = {
 		["iconSizeFactor"] = 0.8,
-		["greet"] = 1,
 		["autoAdjustGCD"] = 1,
-		["debug"] = 0,
+		["greet"] = 1,
 		["iconPosY"] = 0,
 		["alwaysShow"] = 0,
 		["showDispelDef"] = 1,
-		["showRangeText"] = 1,
-		["showCooldowns"] = 1,
-		["showInterrupt"] = 1,
 		["showCharges"] = 1,
-		["showMainQueue"] = 1,
+		["showCooldowns"] = 1,
 		["iconSize"] = 74,
 		["showDispelOff"] = 1,
+		["fixedGCD"] = 1.5,
+		["showRangeText"] = 1,
+		["iconRelP"] = "CENTER",
+		["showInterrupt"] = 1,
+		["debug"] = 0,
+		["excludeCDs"] = {
+		},
+		["updateFrequency"] = 0.09,
+		["iconPosX"] = 0,
+		["showMainQueue"] = 1,
 		["showCDs"] = {
 			121817, -- [1]
 			115399, -- [2]
@@ -28,19 +34,13 @@ WeDontWipeDB = {
 			137562, -- [10]
 			115288, -- [11]
 		},
-		["excludeCDs"] = {
-		},
-		["updateFrequency"] = 0.09,
-		["fixedGCD"] = 1.5,
-		["iconRelP"] = "CENTER",
-		["positionLocked"] = 0,
 		["rotation"] = {
 			["modID"] = "Taraezor MonkWindwalker",
 			["rotName"] = "Single",
 		},
 		["cooldownCountdown"] = 10,
 		["missingBuffs"] = 1,
-		["iconPosX"] = 0,
+		["positionLocked"] = 0,
 		["queueLength"] = 4,
 		["showClassType"] = 1,
 		["alwaysRangeAndClass"] = 1,
