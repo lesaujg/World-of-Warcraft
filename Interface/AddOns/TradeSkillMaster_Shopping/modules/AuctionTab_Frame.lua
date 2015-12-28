@@ -744,6 +744,8 @@ function AuctionTabFrame:Create(parent)
 					OnClick = function(self)
 						if private.searchInProgress then
 							TSMAPI.Threading:SendMsg(private.threadId, {"STOP_SCAN"})
+						elseif self.continueCallback and IsShiftKeyDown() then
+							self.continueCallback()
 						else
 							local text = self:GetParent().searchBox:GetText()
 							if text == "" then
@@ -998,6 +1000,8 @@ end
 
 function frameFunctions.UpdateSearchInProgress(inProgress, updateStatus)
 	local headerFrame = private.frame.header
+	headerFrame.searchBtn.continueCallback = nil
+	headerFrame.searchBtn.tooltip = nil
 	private.searchInProgress = inProgress
 	if inProgress then
 		-- disable mode buttons which aren't active
@@ -1045,12 +1049,20 @@ function frameFunctions.UpdateSearchInProgress(inProgress, updateStatus)
 		end
 		-- enable search box
 		headerFrame.searchBox:Enable()
-		headerFrame.searchBtn:SetText(SEARCH)
 		headerFrame.searchBtn:Enable()
+		headerFrame.searchBtn:SetText(SEARCH)
 		-- check if we are just finishing a search
 		if updateStatus then
 			private.frame.content.result.statusBar:UpdateStatus(100, 100)
 			private.frame.content.result.statusBar:SetStatusText(L["Done Scanning"])
+		end
+	
+		if private.extraInfo and private.extraInfo.continue then
+			headerFrame.searchBtn:SetText(TSMAPI.Design:GetInlineColor("link")..SEARCH.."|r")
+			headerFrame.searchBtn.tooltip = private.extraInfo.continue.tooltip
+			headerFrame.searchBtn.continueCallback = private.extraInfo.continue.callback
+		else
+			headerFrame.searchBtn.tooltip = nil
 		end
 	end
 end

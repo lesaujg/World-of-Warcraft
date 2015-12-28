@@ -31,19 +31,19 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @savedSearches"] = {
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1451190572,
-			["name"] = "universal",
-			["filter"] = "universal",
+			["lastSearch"] = 1451314046,
+			["name"] = "arcane c",
+			["filter"] = "arcane c",
 		}, -- [1]
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1451190553,
-			["name"] = "arcane c",
-			["filter"] = "arcane c",
+			["lastSearch"] = 1451288765,
+			["name"] = "universal",
+			["filter"] = "universal",
 		}, -- [2]
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1451190527,
+			["lastSearch"] = 1451288746,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 		}, -- [3]

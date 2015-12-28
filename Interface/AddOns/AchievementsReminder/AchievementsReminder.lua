@@ -1,4 +1,9 @@
 ﻿achievereminderload=1
+function out(text)
+DEFAULT_CHAT_FRAME:AddMessage(text)
+UIErrorsFrame:AddMessage(text, 1.0, 1.0, 0, 1, 10) 
+end
+
 function icllonload()
 
 iclllocaleuim()
@@ -10,7 +15,7 @@ end
 
 ralldatabase()
 
-  achievementsreminderver=6.223
+  achievementsreminderver=6.225
 
 
 	if ralloptions==nil then ralloptions={1,1,0,0,0,0,1,0,0,0,0,0} end

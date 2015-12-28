@@ -108,6 +108,11 @@ function Scan:GetFilterFunction(itemString, operation)
 	end
 end
 
+function Scan:Clear()
+	private.database = nil
+	private.dbView = nil
+end
+
 
 function private.AuctionRecordFilter(record)
 	TSMAPI:Assert(private.filterItemString and private.filterOperation)

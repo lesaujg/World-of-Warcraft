@@ -54,7 +54,7 @@ end
 function private:CanLootMailIndex(index, copper)
 	local MAX_COPPER = 9999999999
 	local currentMoney = GetMoney()
-	TSMAPI:Assert(currentMoney < MAX_COPPER)
+	TSMAPI:Assert(currentMoney <= MAX_COPPER)
 	-- check if this would put them over the gold cap
 	if currentMoney + copper > MAX_COPPER then return end
 	local hasItem = select(8, GetInboxHeaderInfo(index))

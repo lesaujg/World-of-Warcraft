@@ -388,7 +388,7 @@ function private:CanLootMailIndex(index, force)
 	money = (money or 0) + (cod or 0)
 	local MAX_COPPER = 9999999999
 	local currentMoney = GetMoney()
-	TSMAPI:Assert(currentMoney < MAX_COPPER)
+	TSMAPI:Assert(currentMoney <= MAX_COPPER)
 	if currentMoney + money > MAX_COPPER then return end
 	if not hasItem or hasItem == 0 then return true end
 

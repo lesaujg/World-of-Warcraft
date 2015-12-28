@@ -805,7 +805,12 @@ end
 function private:UpdateAuctionsSTData()
 	local auctionsST = private.scanFrame.content.auctionsST
 	if not auctionsST:IsVisible() then return end
-	auctionsST:SetDatabase(TSM.Scan:GetDatabase(), private.AuctionSTFilterFunc)
+	local db = TSM.Scan:GetDatabase()
+	if db then
+		auctionsST:SetDatabase(db, private.AuctionSTFilterFunc)
+	else
+		auctionsST:Clear()
+	end
 	auctionsST:SetDisabled(false)
 end
 
@@ -971,6 +976,7 @@ function private:StartScan(frame, mode, options)
 	end
 	
 	TSM.Log:Clear()
+	TSM.Scan:Clear()
 	GUI:UpdateSTData()
 	TSMAPI.Delay:AfterTime(0, function() TSM.Manage:StartScan(options, private.mode, isGroup) end)
 end

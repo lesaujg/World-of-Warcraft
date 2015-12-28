@@ -1,3 +1,6 @@
+v3.0.3
+*Fixed lua error when viewing auctions during special cancel scan.
+
 v3.0.2
 *Fixed bug with blacklisted players not being undercut properly.
 

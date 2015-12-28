@@ -26,6 +26,7 @@ StaticPopupDialogs["TSM_SHOPPING_SAVED_RENAME_POPUP"] = {
 	end,
 	OnAccept = function(self)
 		private.popupInfo.renameInfo.name = self.editBox:GetText()
+		private.UpdateSTData()
 	end,
 	hasEditBox = true,
 	timeout = 0,
@@ -213,41 +214,58 @@ function AuctionTabSaved:AddRecentSearch(filter, searchMode)
 	end
 end
 
+function private.RunSavedSearch(index, isFavoriteST)
+	local searchInfo = CopyTable(TSM.db.global.savedSearches[index])
+	searchInfo.extraInfo = {searchType="filter"}
+	if isFavoriteST then
+		for i=index+1, #TSM.db.global.savedSearches do
+			if TSM.db.global.savedSearches[i].isFavorite then
+				-- setup the next search
+				searchInfo.extraInfo.continue = {
+					tooltip = L["Shift-Click to run the next favorite search."],
+					callback = function()
+						private.RunSavedSearch(i, true)
+					end,
+				}
+				break
+			end
+		end
+	end
+	TSM.AuctionTab:StartSearch(searchInfo)
+end
+
 function AuctionTabSaved:GetFrameInfo()
 	local stHandlers = {
 		OnClick = function(st, data, _, button)
 			if not data then return end
-			local info = TSM.db.global.savedSearches[data.index]
 			if button == "LeftButton" then
 				if IsShiftKeyDown() then
-					if info.searchMode == "normal" then
+					if data.searchInfo.searchMode == "normal" then
 						private.popupInfo.export = data.search
 						TSMAPI.Util:ShowStaticPopupDialog("TSM_SHOPPING_SAVED_EXPORT_POPUP")
 					else
 						TSM:Print(L["Only exporting normal mode searches is allows."])
 					end
 				elseif IsControlKeyDown() then
-					private.popupInfo.renameInfo = info
+					private.popupInfo.renameInfo = data.searchInfo
 					TSMAPI.Util:ShowStaticPopupDialog("TSM_SHOPPING_SAVED_RENAME_POPUP")
 				else
-					local searchInfo = CopyTable(data.searchInfo)
-					searchInfo.extraInfo = {searchType="filter"}
-					TSM.AuctionTab:StartSearch(searchInfo)
+					private.RunSavedSearch(data.index, st == private.frame.saved.favoriteST)
 				end
 			elseif button == "RightButton" then
 				if st == private.frame.saved.recentST then
 					if IsShiftKeyDown() then
 						tremove(TSM.db.global.savedSearches, data.index)
-						TSM:Printf(L["Removed '%s' from your recent searches."], info.name)
+						TSM:Printf(L["Removed '%s' from your recent searches."], data.searchInfo.name)
 						private.UpdateSTData()
 					else
-						info.isFavorite = true
-						TSM:Printf(L["Added '%s' to your favorite searches."], info.name)
+						data.searchInfo.isFavorite = true
+						TSM:Printf(L["Added '%s' to your favorite searches."], data.searchInfo.name)
 						private.UpdateSTData()
 					end
 				elseif st == private.frame.saved.favoriteST then
-					info.isFavorite = nil
-					TSM:Printf(L["Removed '%s' from your favorite searches."], info.name)
+					data.searchInfo.isFavorite = nil
+					TSM:Printf(L["Removed '%s' from your favorite searches."], data.searchInfo.name)
 				end
 				private.UpdateSTData()
 			end

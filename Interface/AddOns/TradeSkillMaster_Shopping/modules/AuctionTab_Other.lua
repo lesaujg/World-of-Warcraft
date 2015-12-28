@@ -157,7 +157,11 @@ function private:StartDisenchantSearch()
 end
 
 function private:StartSniperSearch()
-	TSM.AuctionTab:StartSearch({searchMode="normal", extraInfo={searchType="sniper"}, searchBoxText="~"..L["sniper"].."~"})
+	local continueInfo = {
+		tooltip = L["Shift-Click to run sniper again."],
+		callback = private.StartSniperSearch,
+	}
+	TSM.AuctionTab:StartSearch({searchMode="normal", extraInfo={searchType="sniper", continue=continueInfo}, searchBoxText="~"..L["sniper"].."~"})
 end
 
 function private:StartGreatDealsSearch()
