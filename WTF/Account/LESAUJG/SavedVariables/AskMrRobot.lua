@@ -23,6 +23,16 @@ AskMrRobotDb2 = {
 						},
 						["itemId"] = 112164,
 					},
+					[5313] = {
+						["spellId"] = 158887,
+						["id"] = 5313,
+						["text"] = "100 Multi, Run Speed",
+						["materials"] = {
+							[113588] = 4,
+							[113261] = 3,
+						},
+						["itemId"] = 110655,
+					},
 					[5327] = {
 						["spellId"] = 158917,
 						["id"] = 5327,
@@ -42,16 +52,6 @@ AskMrRobotDb2 = {
 							[113262] = 3,
 						},
 						["itemId"] = 110648,
-					},
-					[5313] = {
-						["spellId"] = 158887,
-						["id"] = 5313,
-						["text"] = "100 Multi, Run Speed",
-						["materials"] = {
-							[113588] = 4,
-							[113261] = 3,
-						},
-						["itemId"] = 110655,
 					},
 				}, -- [1]
 			},
@@ -348,14 +348,14 @@ AskMrRobotDb2 = {
 				[6948] = 1,
 				[129504] = 1,
 				[113681] = 494,
+				[109167] = 1,
 				[118365] = 1,
-				[114081] = 3,
 				[127793] = 1,
 				[114128] = 3,
 				[114807] = 7,
 				[110560] = 1,
 				[114622] = 2,
-				[109167] = 1,
+				[114081] = 3,
 				[129481] = 1,
 				[129485] = 1,
 				[124572] = 3,
@@ -507,14 +507,14 @@ AskMrRobotDb2 = {
 				[127779] = 4,
 				[31308] = 1,
 				[3419] = 1,
-				[39505] = 2,
+				[11912] = 1,
 				[127823] = 5,
 				[15280] = 1,
 				[18587] = 1,
 				[30747] = 1,
-				[11912] = 1,
-				[127805] = 4,
 				[127819] = 3,
+				[127805] = 4,
+				[39505] = 2,
 				[68729] = 1,
 				[6367] = 1,
 				[22248] = 1,
@@ -1180,9 +1180,9 @@ AskMrRobotDb2 = {
 				[114877] = 1,
 				[113107] = 1,
 				[113877] = 1,
+				[116179] = 1,
 				[118084] = 1,
 				[115798] = 1,
-				[116179] = 1,
 				[118100] = 8,
 				[124099] = 200,
 				[114746] = 4,
@@ -1504,13 +1504,13 @@ AskMrRobotDb2 = {
 				[37863] = 1,
 				[109131] = 9,
 				[23572] = 1,
-				[19141] = 1,
-				[31450] = 5,
 				[116053] = 1,
+				[31450] = 5,
+				[24475] = 1,
 				[34068] = 17,
 				[109129] = 978,
 				[46725] = 1,
-				[24475] = 1,
+				[19141] = 1,
 				[115807] = 3,
 				[18706] = 1,
 				[120945] = 1112,
@@ -1523,121 +1523,121 @@ AskMrRobotDb2 = {
 		},
 		["Bracnar - Sisters of Elune"] = {
 			["BankItems"] = {
-				"|cffa335ee|Hitem:86889:4699:4996:0:0:0:0:1245908736:100:254:4:0:0:445|h[Taoren, the Soul Burner]|h|r", -- [1]
-				"|cffa335ee|Hitem:78471:0:0:0:0:0:0:0:100:254:0:0:0|h[Vishanka, Jaws of the Earth]|h|r", -- [2]
-				"|cffa335ee|Hitem:71361:4227:0:0:0:0:0:1058632000:100:254:0:0:0|h[Ranseur of Hatred]|h|r", -- [3]
-				"|cffa335ee|Hitem:59320:0:0:0:0:0:0:0:100:254:0:0:0|h[Themios the Darkbringer]|h|r", -- [4]
-				"|cffa335ee|Hitem:50049:3827:0:0:0:0:0:1874002688:100:254:0:0:0|h[Quel'Delar, Ferocity of the Scorned]|h|r", -- [5]
-				"|cffa335ee|Hitem:47737:3827:0:0:0:0:0:276257928:100:254:0:0:0|h[Reckoning]|h|r", -- [6]
-				"|cffa335ee|Hitem:34183:3828:0:0:0:0:0:-1486523879:100:254:0:0:0|h[Shivering Felspine]|h|r", -- [7]
-				"|cffa335ee|Hitem:18715:2646:0:0:0:0:0:802546044:100:254:0:0:0|h[Lok'delar, Stave of the Ancient Keepers]|h|r", -- [8]
-				"|cffa335ee|Hitem:18713:2523:0:0:0:0:0:817254550:100:254:0:0:0|h[Rhok'delar, Longbow of the Ancient Keepers]|h|r", -- [9]
-				"|cffa335ee|Hitem:19854:0:0:0:0:0:0:1966078464:100:254:0:0:0|h[Zin'rokh, Destroyer of Worlds]|h|r", -- [10]
-				"|cffa335ee|Hitem:31336:0:0:0:0:0:0:0:100:254:0:0:0|h[Blade of Wizardry]|h|r", -- [11]
-				"|cffa335ee|Hitem:22816:2564:0:0:0:0:0:0:100:254:0:0:0|h[Hatchet of Sundered Bone]|h|r", -- [12]
-				"|cffa335ee|Hitem:21520:0:0:0:0:0:0:396162912:100:254:0:0:0|h[Ravencrest's Legacy]|h|r", -- [13]
-				"|cffa335ee|Hitem:19859:2564:0:0:0:0:0:0:100:254:0:0:0|h[Fang of the Faceless]|h|r", -- [14]
-				"|cff0070dd|Hitem:19901:0:0:0:0:0:0:1557241280:100:254:0:0:0|h[Zulian Slicer]|h|r", -- [15]
-				"|cff0070dd|Hitem:19901:0:0:0:0:0:0:1072896704:100:254:0:0:0|h[Zulian Slicer]|h|r", -- [16]
-				"|cffa335ee|Hitem:19910:0:0:0:0:0:0:1424354560:100:254:0:0:0|h[Arlokk's Grasp]|h|r", -- [17]
-				"|cffa335ee|Hitem:19896:0:0:0:0:0:0:-1794915584:100:254:0:0:0|h[Thekal's Grasp]|h|r", -- [18]
-				"|cff0070dd|Hitem:37892:0:0:0:0:0:0:2060282880:100:254:0:0:0|h[Green Brewfest Stein]|h|r", -- [19]
-				"|cff0070dd|Hitem:33016:0:0:0:0:0:0:1743467440:100:254:0:0:0|h[Blue Brewfest Stein]|h|r", -- [20]
-				"|cffffffff|Hitem:45073:0:0:0:0:0:0:0:100:254:0:0:0|h[Spring Flowers]|h|r", -- [21]
-				"|cff0070dd|Hitem:113547:0:0:0:0:0:0:0:100:254:0:0:0|h[Bouquet of Dried Flowers]|h|r", -- [22]
-				"|cff1eff00|Hitem:44731:0:0:0:0:0:0:-1004069504:100:254:0:0:0|h[Bouquet of Ebon Roses]|h|r", -- [23]
-				"|cff1eff00|Hitem:22206:0:0:0:0:0:0:2073138752:100:254:0:0:0|h[Bouquet of Red Roses]|h|r", -- [24]
-				"|cffa335ee|Hitem:118939:0:0:0:0:0:0:0:100:254:0:0:0|h[Crown of Destruction]|h|r", -- [25]
-				"|cffa335ee|Hitem:99660:0:4656:4643:0:0:0:0:100:254:4:14:0:505|h[Headguard of the Unblinking Vigil]|h|r", -- [26]
-				"|cffa335ee|Hitem:69576:4209:0:0:0:0:0:-1616507392:100:254:0:0:0|h[Headdress of Sharpened Vision]|h|r", -- [27]
-				"|cff0070dd|Hitem:50741:0:0:0:0:0:0:-1175128192:100:254:0:0:0|h[Vile Fumigator's Mask]|h|r", -- [28]
-				"|cff1eff00|Hitem:30847:0:0:0:0:0:0:47975340:100:254:0:0:0|h[X-52 Rocket Helmet]|h|r", -- [29]
-				"|cffffffff|Hitem:33047:0:0:0:0:0:0:0:100:254:0:0:0|h[Belbi's Eyesight Enhancing Romance Goggles]|h|r", -- [30]
-				"|cff0070dd|Hitem:49715:0:0:0:0:0:0:0:100:254:0:1:0|h[Forever-Lovely Rose]|h|r", -- [31]
-				"|cff0070dd|Hitem:46349:0:0:0:0:0:0:0:100:254:0:0:0|h[Chef's Hat]|h|r", -- [32]
-				"|cff0070dd|Hitem:33292:0:0:0:0:0:0:-1625647640:100:254:0:0:0|h[Hallowed Helm]|h|r", -- [33]
-				"|cff1eff00|Hitem:21525:0:0:0:0:0:0:0:100:254:0:4:0|h[Green Winter Hat]|h|r", -- [34]
-				"|cff1eff00|Hitem:21524:0:0:0:0:0:0:1433097864:100:254:0:0:0|h[Red Winter Hat]|h|r", -- [35]
-				"|cffffffff|Hitem:44803:0:0:0:0:0:0:398967392:100:254:0:0:0|h[Spring Circlet]|h|r", -- [36]
-				"|cffa335ee|Hitem:112927:4804:4609:4609:0:0:0:0:100:254:4:4:1:451:491|h[Shoulderguards of Intended Power]|h|r", -- [37]
-				"|cffa335ee|Hitem:69554:4204:0:0:0:0:0:665101184:100:254:0:0:0|h[Pauldrons of Nalorakk]|h|r", -- [38]
-				"|cffa335ee|Hitem:112931:0:0:0:0:0:0:0:100:254:4:3:0:491|h[Chestguard of Relentless Tyranny]|h|r", -- [39]
-				"|cffa335ee|Hitem:99577:4419:4643:4643:4643:0:0:0:100:254:4:14:0:505|h[Tunic of the Unblinking Vigil]|h|r", -- [40]
-				"|cffa335ee|Hitem:59346:4063:0:0:0:0:0:1932758656:100:254:0:0:0|h[Tunic of Failed Experiments]|h|r", -- [41]
-				"|cffa335ee|Hitem:78430:0:0:0:0:0:0:0:100:254:0:0:0|h[Bracers of Looming Darkness]|h|r", -- [42]
-				"|cffa335ee|Hitem:71365:4258:0:0:0:0:0:694177696:100:254:0:0:0|h[Hide-Bound Chains]|h|r", -- [43]
-				"|cffa335ee|Hitem:47610:0:0:0:0:0:0:0:100:254:0:0:0|h[Armbands of the Northern Stalker]|h|r", -- [44]
-				"|cffa335ee|Hitem:39278:0:0:0:0:0:0:0:100:254:0:0:0|h[Bands of Anxiety]|h|r", -- [45]
-				"|cffa335ee|Hitem:65141:0:0:0:0:0:0:0:100:254:0:0:0|h[Proto-Handler's Gauntlets]|h|r", -- [46]
-				"|cffa335ee|Hitem:45109:0:0:0:0:0:0:0:100:254:0:0:0|h[Gloves of the Fiery Behemoth]|h|r", -- [47]
-				"|cffa335ee|Hitem:39194:0:0:0:0:0:0:0:100:254:0:0:0|h[Rusted-Link Spiked Gauntlets]|h|r", -- [48]
-				"|cffa335ee|Hitem:98614:0:4577:4577:4577:0:0:839342080:100:254:4:0:0:505|h[Gorge Stalker Belt]|h|r", -- [49]
-				"|cffa335ee|Hitem:71255:0:0:0:0:0:0:0:100:254:0:0:0|h[Firearrow Belt]|h|r", -- [50]
-				"|cffa335ee|Hitem:56539:0:0:0:0:0:0:785873280:100:254:0:0:0|h[Corded Viper Belt]|h|r", -- [51]
-				"|cffa335ee|Hitem:50762:0:0:0:0:0:0:0:100:254:0:0:0|h[Linked Scourge Vertebrae]|h|r", -- [52]
-				"|cffa335ee|Hitem:99158:0:0:0:0:0:0:0:100:254:4:14:0:491|h[Legguards of the Unblinking Vigil]|h|r", -- [53]
-				"|cffa335ee|Hitem:98605:4822:4577:4577:0:0:0:2010338816:100:254:4:0:0:505|h[Gorge Stalker Legplates]|h|r", -- [54]
-				"|cffa335ee|Hitem:90570:0:0:0:0:0:0:1909300096:100:254:4:0:0:445|h[Legguards of Sleeting Arrows]|h|r", -- [55]
-				"|cffa335ee|Hitem:112779:4428:3116:0:0:0:0:0:100:254:4:5:1:449:505|h[Ravager's Pathwalkers]|h|r", -- [56]
-				"|cffa335ee|Hitem:70123:4105:0:0:0:0:0:0:100:254:0:0:0|h[Lancer's Greaves]|h|r", -- [57]
-				"|cffa335ee|Hitem:62385:4105:0:0:0:0:0:0:100:254:0:0:0|h[Treads of Malorne]|h|r", -- [58]
-				"|cffa335ee|Hitem:67134:1099:0:0:0:0:0:944880256:100:254:0:0:0|h[Dory's Finery]|h|r", -- [59]
-				"|cffa335ee|Hitem:50470:1099:0:0:0:0:0:0:100:254:0:0:0|h[Recovered Scarlet Onslaught Cape]|h|r", -- [60]
-				"|cffa335ee|Hitem:32420:1441:0:0:0:0:0:629854836:100:254:0:0:0|h[Night's End]|h|r", -- [61]
-				"|cff0070dd|Hitem:32539:1889:0:0:0:0:0:0:100:254:0:0:0|h[Skyguard's Drape]|h|r", -- [62]
-				"|cffffffff|Hitem:53097:0:0:0:0:0:0:1834981760:100:254:0:0:0|h[Gnomeregan Drape]|h|r", -- [63]
-				"|cff0070dd|Hitem:15138:2619:0:0:0:0:0:1981960320:100:254:0:0:0|h[Onyxia Scale Cloak]|h|r", -- [64]
-				"|cffa335ee|Hitem:19621:0:0:0:0:0:0:801097924:100:254:0:0:0|h[Maelstrom's Wrath]|h|r", -- [65]
-				"|cffa335ee|Hitem:50402:0:0:0:0:0:0:718287680:100:254:0:0:0|h[Ashen Band of Endless Vengeance]|h|r", -- [66]
-				"|cffa335ee|Hitem:29301:0:0:0:0:0:0:356441089:100:254:0:0:0|h[Band of the Eternal Champion]|h|r", -- [67]
-				"|cffa335ee|Hitem:21526:0:0:0:0:0:0:2120708864:100:254:0:0:0|h[Band of Icy Depths]|h|r", -- [68]
-				"|cff0070dd|Hitem:12344:0:0:0:0:0:0:2066010368:100:254:0:0:0|h[Seal of Ascension]|h|r", -- [69]
-				"|cff0070dd|Hitem:116154:0:0:0:0:0:0:0:100:254:0:11:0|h[Barov Lumberjack Caller]|h|r", -- [70]
-				"|cffa335ee|Hitem:108903:0:0:0:0:0:0:0:100:254:0:0:1:545|h[Tiny Iron Star]|h|r", -- [71]
-				"|cff0070dd|Hitem:108907:0:0:0:0:0:0:0:100:254:0:0:0|h[Mushroom of Destiny]|h|r", -- [72]
-				"|cffa335ee|Hitem:87576:0:0:0:0:0:0:1768705152:100:254:4:0:0:445|h[Bitterest Balebrew Charm]|h|r", -- [73]
-				"|cffa335ee|Hitem:87575:0:0:0:0:0:0:1552481920:100:254:4:0:0:445|h[Bubbliest Brightbrew Charm]|h|r", -- [74]
-				"|cff0070dd|Hitem:86576:0:0:0:0:0:0:1192295168:100:254:0:0:0|h[Dynasty of Steel]|h|r", -- [75]
-				"|cff1eff00|Hitem:88376:0:0:0:0:0:0:1406087552:100:254:0:0:0|h[Orange Painted Turnip]|h|r", -- [76]
-				"|cff1eff00|Hitem:88371:0:0:0:0:0:0:1811432576:100:254:0:0:0|h[Watermelon Bomb]|h|r", -- [77]
-				"|cff1eff00|Hitem:82984:0:0:0:0:0:0:2001468160:100:254:0:0:0|h[Jade Raccoon]|h|r", -- [78]
-				"|cffa335ee|Hitem:50362:0:0:0:0:0:0:282360596:100:254:0:0:0|h[Deathbringer's Will]|h|r", -- [79]
-				"|cffa335ee|Hitem:49464:0:0:0:0:0:0:1273649920:100:254:0:0:0|h[Shiny Shard of the Flame]|h|r", -- [80]
-				"|cff0070dd|Hitem:44597:0:0:0:0:0:0:1384133922:100:254:0:0:0|h[Medallion of Heroism]|h|r", -- [81]
-				"|cff0070dd|Hitem:40601:0:0:0:0:0:0:0:100:254:0:0:0|h[Argent Dawn Banner]|h|r", -- [82]
-				"|cff0070dd|Hitem:40593:0:0:0:0:0:0:0:100:254:0:0:0|h[Argent Tome]|h|r", -- [83]
-				"|cff0070dd|Hitem:40492:0:0:0:0:0:0:0:100:254:0:0:0|h[Argent War Horn]|h|r", -- [84]
-				"|cff0070dd|Hitem:28237:0:0:0:0:0:0:0:100:254:0:0:0|h[Medallion of the Alliance]|h|r", -- [85]
-				"|cff0070dd|Hitem:32864:0:0:0:0:0:0:532267468:100:254:0:0:0|h[Commander's Badge]|h|r", -- [86]
-				"|cffa335ee|Hitem:19290:0:0:0:0:0:0:593410438:100:254:0:0:0|h[Darkmoon Card: Twisting Nether]|h|r", -- [87]
-				"|cffa335ee|Hitem:21326:0:0:0:0:0:0:1779952128:100:254:0:0:0|h[Defender of the Timbermaw]|h|r", -- [88]
-				"|cff0070dd|Hitem:14023:0:0:0:0:0:0:1555455872:100:254:0:0:0|h[Barov Peasant Caller]|h|r", -- [89]
-				"|cffa335ee|Hitem:17904:0:0:0:0:0:0:950364330:100:254:0:0:0|h[Stormpike Insignia Rank 6]|h|r", -- [90]
-				"|cff1eff00|Hitem:11122:0:0:0:0:0:0:851045248:100:254:0:0:0|h[Carrot on a Stick]|h|r", -- [91]
-				"|cff1eff00|Hitem:2820:0:0:0:0:0:0:362671008:100:254:0:0:0|h[Nifty Stopwatch]|h|r", -- [92]
-				"|cff0070dd|Hitem:13382:0:0:0:0:0:0:674550322:100:254:0:0:0|h[Cannonball Runner]|h|r", -- [93]
-				"|cff0070dd|Hitem:118365:0:0:0:0:0:0:0:100:254:0:11:0|h[Stormwind Tabard]|h|r", -- [94]
-				"|cffffffff|Hitem:65908:0:0:0:0:0:0:0:100:254:0:0:0|h[Tabard of the Wildhammer Clan]|h|r", -- [95]
-				"|cffffffff|Hitem:65907:0:0:0:0:0:0:0:100:254:0:0:0|h[Tabard of Therazane]|h|r", -- [96]
-				"|cffffffff|Hitem:65906:0:0:0:0:0:0:0:100:254:0:0:0|h[Tabard of the Guardians of Hyjal]|h|r", -- [97]
-				"|cffffffff|Hitem:65905:0:0:0:0:0:0:0:100:254:0:0:0|h[Tabard of the Earthen Ring]|h|r", -- [98]
-				"|cffffffff|Hitem:65904:0:0:0:0:0:0:0:100:254:0:0:0|h[Tabard of Ramkahen]|h|r", -- [99]
-				"|cffffffff|Hitem:22999:0:0:0:0:0:0:0:100:254:0:0:0|h[Tabard of the Argent Dawn]|h|r", -- [100]
-				"|cffa335ee|Hitem:69210:0:0:0:0:0:0:0:100:254:0:0:0|h[Renowned Guild Tabard]|h|r", -- [101]
-				"|cffa335ee|Hitem:43348:0:0:0:0:0:0:786328418:100:254:0:0:0|h[Tabard of the Explorer]|h|r", -- [102]
-				"|cffa335ee|Hitem:43300:0:0:0:0:0:0:82134528:100:254:0:0:0|h[Loremaster's Colors]|h|r", -- [103]
-				"|cffa335ee|Hitem:43300:0:0:0:0:0:0:1013702528:100:254:0:0:0|h[Loremaster's Colors]|h|r", -- [104]
-				"|cffa335ee|Hitem:40643:0:0:0:0:0:0:1337248000:100:254:0:0:0|h[Tabard of the Achiever]|h|r", -- [105]
-				"|cff0070dd|Hitem:35280:0:0:0:0:0:0:531165573:100:254:0:0:0|h[Tabard of Summer Flames]|h|r", -- [106]
-				"|cff1eff00|Hitem:23192:0:0:0:0:0:0:1198672544:100:254:0:0:0|h[Tabard of the Scarlet Crusade]|h|r", -- [107]
-				"|cffffffff|Hitem:64882:0:0:0:0:0:0:0:100:254:0:0:0|h[Gilneas Tabard]|h|r", -- [108]
-				"|cffffffff|Hitem:46817:0:0:0:0:0:0:0:100:254:0:0:0|h[Silver Covenant Tabard]|h|r", -- [109]
-				"|cffffffff|Hitem:116448:0:0:0:0:0:0:0:100:254:0:11:0|h[Warm Red Woolen Socks]|h|r", -- [110]
-				"|cffa335ee|Hitem:38082:0:0:0:0:0:0:0:100:254:0:0:0|h[\"Gigantique\" Bag]|h|r", -- [111]
-				"|cff0070dd|Hitem:69748:0:0:0:0:0:0:579081600:100:254:0:0:0|h[Tattered Hexcloth Bag]|h|r", -- [112]
-				"|cffa335ee|Hitem:49295:0:0:0:0:0:0:-1965299264:100:254:0:0:0|h[Enlarged Onyxia Hide Backpack]|h|r", -- [113]
-				"|cffa335ee|Hitem:78857:0:0:0:0:0:0:0:100:254:0:0:0|h[Leggings of the Corrupted Protector]|h|r", -- [114]
-				"|cff1eff00|Hitem:31404:0:0:0:0:0:0:0:100:254:0:0:0|h[Green Trophy Tabard of the Illidari]|h|r", -- [115]
+				"|cffa335ee|Hitem:86889:4699:4996:0:0:0:0:1245908736:100:253:4:0:0:445|h[Taoren, the Soul Burner]|h|r", -- [1]
+				"|cffa335ee|Hitem:78471:0:0:0:0:0:0:0:100:253:0:0:0|h[Vishanka, Jaws of the Earth]|h|r", -- [2]
+				"|cffa335ee|Hitem:71361:4227:0:0:0:0:0:1058632000:100:253:0:0:0|h[Ranseur of Hatred]|h|r", -- [3]
+				"|cffa335ee|Hitem:59320:0:0:0:0:0:0:0:100:253:0:0:0|h[Themios the Darkbringer]|h|r", -- [4]
+				"|cffa335ee|Hitem:50049:3827:0:0:0:0:0:1874002688:100:253:0:0:0|h[Quel'Delar, Ferocity of the Scorned]|h|r", -- [5]
+				"|cffa335ee|Hitem:47737:3827:0:0:0:0:0:276257928:100:253:0:0:0|h[Reckoning]|h|r", -- [6]
+				"|cffa335ee|Hitem:34183:3828:0:0:0:0:0:-1486523879:100:253:0:0:0|h[Shivering Felspine]|h|r", -- [7]
+				"|cffa335ee|Hitem:18715:2646:0:0:0:0:0:802546044:100:253:0:0:0|h[Lok'delar, Stave of the Ancient Keepers]|h|r", -- [8]
+				"|cffa335ee|Hitem:18713:2523:0:0:0:0:0:817254550:100:253:0:0:0|h[Rhok'delar, Longbow of the Ancient Keepers]|h|r", -- [9]
+				"|cffa335ee|Hitem:19854:0:0:0:0:0:0:1966078464:100:253:0:0:0|h[Zin'rokh, Destroyer of Worlds]|h|r", -- [10]
+				"|cffa335ee|Hitem:31336:0:0:0:0:0:0:0:100:253:0:0:0|h[Blade of Wizardry]|h|r", -- [11]
+				"|cffa335ee|Hitem:22816:2564:0:0:0:0:0:0:100:253:0:0:0|h[Hatchet of Sundered Bone]|h|r", -- [12]
+				"|cffa335ee|Hitem:21520:0:0:0:0:0:0:396162912:100:253:0:0:0|h[Ravencrest's Legacy]|h|r", -- [13]
+				"|cffa335ee|Hitem:19859:2564:0:0:0:0:0:0:100:253:0:0:0|h[Fang of the Faceless]|h|r", -- [14]
+				"|cff0070dd|Hitem:19901:0:0:0:0:0:0:1557241280:100:253:0:0:0|h[Zulian Slicer]|h|r", -- [15]
+				"|cff0070dd|Hitem:19901:0:0:0:0:0:0:1072896704:100:253:0:0:0|h[Zulian Slicer]|h|r", -- [16]
+				"|cffa335ee|Hitem:19910:0:0:0:0:0:0:1424354560:100:253:0:0:0|h[Arlokk's Grasp]|h|r", -- [17]
+				"|cffa335ee|Hitem:19896:0:0:0:0:0:0:-1794915584:100:253:0:0:0|h[Thekal's Grasp]|h|r", -- [18]
+				"|cff0070dd|Hitem:37892:0:0:0:0:0:0:2060282880:100:253:0:0:0|h[Green Brewfest Stein]|h|r", -- [19]
+				"|cff0070dd|Hitem:33016:0:0:0:0:0:0:1743467440:100:253:0:0:0|h[Blue Brewfest Stein]|h|r", -- [20]
+				"|cffffffff|Hitem:45073:0:0:0:0:0:0:0:100:253:0:0:0|h[Spring Flowers]|h|r", -- [21]
+				"|cff0070dd|Hitem:113547:0:0:0:0:0:0:0:100:253:0:0:0|h[Bouquet of Dried Flowers]|h|r", -- [22]
+				"|cff1eff00|Hitem:44731:0:0:0:0:0:0:-1004069504:100:253:0:0:0|h[Bouquet of Ebon Roses]|h|r", -- [23]
+				"|cff1eff00|Hitem:22206:0:0:0:0:0:0:2073138752:100:253:0:0:0|h[Bouquet of Red Roses]|h|r", -- [24]
+				"|cffa335ee|Hitem:118939:0:0:0:0:0:0:0:100:253:0:0:0|h[Crown of Destruction]|h|r", -- [25]
+				"|cffa335ee|Hitem:99660:0:4656:4643:0:0:0:0:100:253:4:14:0:505|h[Headguard of the Unblinking Vigil]|h|r", -- [26]
+				"|cffa335ee|Hitem:69576:4209:0:0:0:0:0:-1616507392:100:253:0:0:0|h[Headdress of Sharpened Vision]|h|r", -- [27]
+				"|cff0070dd|Hitem:50741:0:0:0:0:0:0:-1175128192:100:253:0:0:0|h[Vile Fumigator's Mask]|h|r", -- [28]
+				"|cff1eff00|Hitem:30847:0:0:0:0:0:0:47975340:100:253:0:0:0|h[X-52 Rocket Helmet]|h|r", -- [29]
+				"|cffffffff|Hitem:33047:0:0:0:0:0:0:0:100:253:0:0:0|h[Belbi's Eyesight Enhancing Romance Goggles]|h|r", -- [30]
+				"|cff0070dd|Hitem:49715:0:0:0:0:0:0:0:100:253:0:1:0|h[Forever-Lovely Rose]|h|r", -- [31]
+				"|cff0070dd|Hitem:46349:0:0:0:0:0:0:0:100:253:0:0:0|h[Chef's Hat]|h|r", -- [32]
+				"|cff0070dd|Hitem:33292:0:0:0:0:0:0:-1625647640:100:253:0:0:0|h[Hallowed Helm]|h|r", -- [33]
+				"|cff1eff00|Hitem:21525:0:0:0:0:0:0:0:100:253:0:4:0|h[Green Winter Hat]|h|r", -- [34]
+				"|cff1eff00|Hitem:21524:0:0:0:0:0:0:1433097864:100:253:0:0:0|h[Red Winter Hat]|h|r", -- [35]
+				"|cffffffff|Hitem:44803:0:0:0:0:0:0:398967392:100:253:0:0:0|h[Spring Circlet]|h|r", -- [36]
+				"|cffa335ee|Hitem:112927:4804:4609:4609:0:0:0:0:100:253:4:4:1:451:491|h[Shoulderguards of Intended Power]|h|r", -- [37]
+				"|cffa335ee|Hitem:69554:4204:0:0:0:0:0:665101184:100:253:0:0:0|h[Pauldrons of Nalorakk]|h|r", -- [38]
+				"|cffa335ee|Hitem:112931:0:0:0:0:0:0:0:100:253:4:3:0:491|h[Chestguard of Relentless Tyranny]|h|r", -- [39]
+				"|cffa335ee|Hitem:99577:4419:4643:4643:4643:0:0:0:100:253:4:14:0:505|h[Tunic of the Unblinking Vigil]|h|r", -- [40]
+				"|cffa335ee|Hitem:59346:4063:0:0:0:0:0:1932758656:100:253:0:0:0|h[Tunic of Failed Experiments]|h|r", -- [41]
+				"|cffa335ee|Hitem:78430:0:0:0:0:0:0:0:100:253:0:0:0|h[Bracers of Looming Darkness]|h|r", -- [42]
+				"|cffa335ee|Hitem:71365:4258:0:0:0:0:0:694177696:100:253:0:0:0|h[Hide-Bound Chains]|h|r", -- [43]
+				"|cffa335ee|Hitem:47610:0:0:0:0:0:0:0:100:253:0:0:0|h[Armbands of the Northern Stalker]|h|r", -- [44]
+				"|cffa335ee|Hitem:39278:0:0:0:0:0:0:0:100:253:0:0:0|h[Bands of Anxiety]|h|r", -- [45]
+				"|cffa335ee|Hitem:65141:0:0:0:0:0:0:0:100:253:0:0:0|h[Proto-Handler's Gauntlets]|h|r", -- [46]
+				"|cffa335ee|Hitem:45109:0:0:0:0:0:0:0:100:253:0:0:0|h[Gloves of the Fiery Behemoth]|h|r", -- [47]
+				"|cffa335ee|Hitem:39194:0:0:0:0:0:0:0:100:253:0:0:0|h[Rusted-Link Spiked Gauntlets]|h|r", -- [48]
+				"|cffa335ee|Hitem:98614:0:4577:4577:4577:0:0:839342080:100:253:4:0:0:505|h[Gorge Stalker Belt]|h|r", -- [49]
+				"|cffa335ee|Hitem:71255:0:0:0:0:0:0:0:100:253:0:0:0|h[Firearrow Belt]|h|r", -- [50]
+				"|cffa335ee|Hitem:56539:0:0:0:0:0:0:785873280:100:253:0:0:0|h[Corded Viper Belt]|h|r", -- [51]
+				"|cffa335ee|Hitem:50762:0:0:0:0:0:0:0:100:253:0:0:0|h[Linked Scourge Vertebrae]|h|r", -- [52]
+				"|cffa335ee|Hitem:99158:0:0:0:0:0:0:0:100:253:4:14:0:491|h[Legguards of the Unblinking Vigil]|h|r", -- [53]
+				"|cffa335ee|Hitem:98605:4822:4577:4577:0:0:0:2010338816:100:253:4:0:0:505|h[Gorge Stalker Legplates]|h|r", -- [54]
+				"|cffa335ee|Hitem:90570:0:0:0:0:0:0:1909300096:100:253:4:0:0:445|h[Legguards of Sleeting Arrows]|h|r", -- [55]
+				"|cffa335ee|Hitem:112779:4428:3116:0:0:0:0:0:100:253:4:5:1:449:505|h[Ravager's Pathwalkers]|h|r", -- [56]
+				"|cffa335ee|Hitem:70123:4105:0:0:0:0:0:0:100:253:0:0:0|h[Lancer's Greaves]|h|r", -- [57]
+				"|cffa335ee|Hitem:62385:4105:0:0:0:0:0:0:100:253:0:0:0|h[Treads of Malorne]|h|r", -- [58]
+				"|cffa335ee|Hitem:67134:1099:0:0:0:0:0:944880256:100:253:0:0:0|h[Dory's Finery]|h|r", -- [59]
+				"|cffa335ee|Hitem:50470:1099:0:0:0:0:0:0:100:253:0:0:0|h[Recovered Scarlet Onslaught Cape]|h|r", -- [60]
+				"|cffa335ee|Hitem:32420:1441:0:0:0:0:0:629854836:100:253:0:0:0|h[Night's End]|h|r", -- [61]
+				"|cff0070dd|Hitem:32539:1889:0:0:0:0:0:0:100:253:0:0:0|h[Skyguard's Drape]|h|r", -- [62]
+				"|cffffffff|Hitem:53097:0:0:0:0:0:0:1834981760:100:253:0:0:0|h[Gnomeregan Drape]|h|r", -- [63]
+				"|cff0070dd|Hitem:15138:2619:0:0:0:0:0:1981960320:100:253:0:0:0|h[Onyxia Scale Cloak]|h|r", -- [64]
+				"|cffa335ee|Hitem:19621:0:0:0:0:0:0:801097924:100:253:0:0:0|h[Maelstrom's Wrath]|h|r", -- [65]
+				"|cffa335ee|Hitem:50402:0:0:0:0:0:0:718287680:100:253:0:0:0|h[Ashen Band of Endless Vengeance]|h|r", -- [66]
+				"|cffa335ee|Hitem:29301:0:0:0:0:0:0:356441089:100:253:0:0:0|h[Band of the Eternal Champion]|h|r", -- [67]
+				"|cffa335ee|Hitem:21526:0:0:0:0:0:0:2120708864:100:253:0:0:0|h[Band of Icy Depths]|h|r", -- [68]
+				"|cff0070dd|Hitem:12344:0:0:0:0:0:0:2066010368:100:253:0:0:0|h[Seal of Ascension]|h|r", -- [69]
+				"|cff0070dd|Hitem:116154:0:0:0:0:0:0:0:100:253:0:11:0|h[Barov Lumberjack Caller]|h|r", -- [70]
+				"|cffa335ee|Hitem:108903:0:0:0:0:0:0:0:100:253:0:0:1:545|h[Tiny Iron Star]|h|r", -- [71]
+				"|cff0070dd|Hitem:108907:0:0:0:0:0:0:0:100:253:0:0:0|h[Mushroom of Destiny]|h|r", -- [72]
+				"|cffa335ee|Hitem:87576:0:0:0:0:0:0:1768705152:100:253:4:0:0:445|h[Bitterest Balebrew Charm]|h|r", -- [73]
+				"|cffa335ee|Hitem:87575:0:0:0:0:0:0:1552481920:100:253:4:0:0:445|h[Bubbliest Brightbrew Charm]|h|r", -- [74]
+				"|cff0070dd|Hitem:86576:0:0:0:0:0:0:1192295168:100:253:0:0:0|h[Dynasty of Steel]|h|r", -- [75]
+				"|cff1eff00|Hitem:88376:0:0:0:0:0:0:1406087552:100:253:0:0:0|h[Orange Painted Turnip]|h|r", -- [76]
+				"|cff1eff00|Hitem:88371:0:0:0:0:0:0:1811432576:100:253:0:0:0|h[Watermelon Bomb]|h|r", -- [77]
+				"|cff1eff00|Hitem:82984:0:0:0:0:0:0:2001468160:100:253:0:0:0|h[Jade Raccoon]|h|r", -- [78]
+				"|cffa335ee|Hitem:50362:0:0:0:0:0:0:282360596:100:253:0:0:0|h[Deathbringer's Will]|h|r", -- [79]
+				"|cffa335ee|Hitem:49464:0:0:0:0:0:0:1273649920:100:253:0:0:0|h[Shiny Shard of the Flame]|h|r", -- [80]
+				"|cff0070dd|Hitem:44597:0:0:0:0:0:0:1384133922:100:253:0:0:0|h[Medallion of Heroism]|h|r", -- [81]
+				"|cff0070dd|Hitem:40601:0:0:0:0:0:0:0:100:253:0:0:0|h[Argent Dawn Banner]|h|r", -- [82]
+				"|cff0070dd|Hitem:40593:0:0:0:0:0:0:0:100:253:0:0:0|h[Argent Tome]|h|r", -- [83]
+				"|cff0070dd|Hitem:40492:0:0:0:0:0:0:0:100:253:0:0:0|h[Argent War Horn]|h|r", -- [84]
+				"|cff0070dd|Hitem:28237:0:0:0:0:0:0:0:100:253:0:0:0|h[Medallion of the Alliance]|h|r", -- [85]
+				"|cff0070dd|Hitem:32864:0:0:0:0:0:0:532267468:100:253:0:0:0|h[Commander's Badge]|h|r", -- [86]
+				"|cffa335ee|Hitem:19290:0:0:0:0:0:0:593410438:100:253:0:0:0|h[Darkmoon Card: Twisting Nether]|h|r", -- [87]
+				"|cffa335ee|Hitem:21326:0:0:0:0:0:0:1779952128:100:253:0:0:0|h[Defender of the Timbermaw]|h|r", -- [88]
+				"|cff0070dd|Hitem:14023:0:0:0:0:0:0:1555455872:100:253:0:0:0|h[Barov Peasant Caller]|h|r", -- [89]
+				"|cffa335ee|Hitem:17904:0:0:0:0:0:0:950364330:100:253:0:0:0|h[Stormpike Insignia Rank 6]|h|r", -- [90]
+				"|cff1eff00|Hitem:11122:0:0:0:0:0:0:851045248:100:253:0:0:0|h[Carrot on a Stick]|h|r", -- [91]
+				"|cff1eff00|Hitem:2820:0:0:0:0:0:0:362671008:100:253:0:0:0|h[Nifty Stopwatch]|h|r", -- [92]
+				"|cff0070dd|Hitem:13382:0:0:0:0:0:0:674550322:100:253:0:0:0|h[Cannonball Runner]|h|r", -- [93]
+				"|cff0070dd|Hitem:118365:0:0:0:0:0:0:0:100:253:0:11:0|h[Stormwind Tabard]|h|r", -- [94]
+				"|cffffffff|Hitem:65908:0:0:0:0:0:0:0:100:253:0:0:0|h[Tabard of the Wildhammer Clan]|h|r", -- [95]
+				"|cffffffff|Hitem:65907:0:0:0:0:0:0:0:100:253:0:0:0|h[Tabard of Therazane]|h|r", -- [96]
+				"|cffffffff|Hitem:65906:0:0:0:0:0:0:0:100:253:0:0:0|h[Tabard of the Guardians of Hyjal]|h|r", -- [97]
+				"|cffffffff|Hitem:65905:0:0:0:0:0:0:0:100:253:0:0:0|h[Tabard of the Earthen Ring]|h|r", -- [98]
+				"|cffffffff|Hitem:65904:0:0:0:0:0:0:0:100:253:0:0:0|h[Tabard of Ramkahen]|h|r", -- [99]
+				"|cffffffff|Hitem:22999:0:0:0:0:0:0:0:100:253:0:0:0|h[Tabard of the Argent Dawn]|h|r", -- [100]
+				"|cffa335ee|Hitem:69210:0:0:0:0:0:0:0:100:253:0:0:0|h[Renowned Guild Tabard]|h|r", -- [101]
+				"|cffa335ee|Hitem:43348:0:0:0:0:0:0:786328418:100:253:0:0:0|h[Tabard of the Explorer]|h|r", -- [102]
+				"|cffa335ee|Hitem:43300:0:0:0:0:0:0:82134528:100:253:0:0:0|h[Loremaster's Colors]|h|r", -- [103]
+				"|cffa335ee|Hitem:43300:0:0:0:0:0:0:1013702528:100:253:0:0:0|h[Loremaster's Colors]|h|r", -- [104]
+				"|cffa335ee|Hitem:40643:0:0:0:0:0:0:1337248000:100:253:0:0:0|h[Tabard of the Achiever]|h|r", -- [105]
+				"|cff0070dd|Hitem:35280:0:0:0:0:0:0:531165573:100:253:0:0:0|h[Tabard of Summer Flames]|h|r", -- [106]
+				"|cff1eff00|Hitem:23192:0:0:0:0:0:0:1198672544:100:253:0:0:0|h[Tabard of the Scarlet Crusade]|h|r", -- [107]
+				"|cffffffff|Hitem:64882:0:0:0:0:0:0:0:100:253:0:0:0|h[Gilneas Tabard]|h|r", -- [108]
+				"|cffffffff|Hitem:46817:0:0:0:0:0:0:0:100:253:0:0:0|h[Silver Covenant Tabard]|h|r", -- [109]
+				"|cffffffff|Hitem:116448:0:0:0:0:0:0:0:100:253:0:11:0|h[Warm Red Woolen Socks]|h|r", -- [110]
+				"|cffa335ee|Hitem:38082:0:0:0:0:0:0:0:100:253:0:0:0|h[\"Gigantique\" Bag]|h|r", -- [111]
+				"|cff0070dd|Hitem:69748:0:0:0:0:0:0:579081600:100:253:0:0:0|h[Tattered Hexcloth Bag]|h|r", -- [112]
+				"|cffa335ee|Hitem:49295:0:0:0:0:0:0:-1965299264:100:253:0:0:0|h[Enlarged Onyxia Hide Backpack]|h|r", -- [113]
+				"|cffa335ee|Hitem:78857:0:0:0:0:0:0:0:100:253:0:0:0|h[Leggings of the Corrupted Protector]|h|r", -- [114]
+				"|cff1eff00|Hitem:31404:0:0:0:0:0:0:0:100:253:0:0:0|h[Green Trophy Tabard of the Illidari]|h|r", -- [115]
 			},
 			["ExtraGemData"] = {
 				{
@@ -1747,28 +1747,27 @@ AskMrRobotDb2 = {
 				"|cff1eff00|Hitem:52019:0:0:0:0:0:0:0:100:254:0:0:0|h[Precious' Ribbon]|h|r", -- [5]
 				"|cff0070dd|Hitem:46874:0:0:0:0:0:0:0:100:254:0:0:0|h[Argent Crusader's Tabard]|h|r", -- [6]
 				"|cffa335ee|Hitem:32757:0:0:0:0:0:0:250630000:100:254:0:0:0|h[Blessed Medallion of Karabor]|h|r", -- [7]
-				"|cffff8000|Hitem:34334:3608:0:0:0:0:0:660801552:100:254:0:0:0|h[Thori'dal, the Stars' Fury]|h|r", -- [8]
-				"|cff0070dd|Hitem:116913:0:0:0:0:0:0:0:100:254:0:0:0|h[Peon's Mining Pick]|h|r", -- [9]
-				"|cffff8000|Hitem:19019:2673:0:0:0:0:0:610963968:100:254:0:0:0|h[Thunderfury, Blessed Blade of the Windseeker]|h|r", -- [10]
-				"|cffa335ee|Hitem:124515:0:0:0:0:0:0:0:100:254:4:3:0:529|h[Talisman of the Master Tracker]|h|r", -- [11]
-				"|cff1eff00|Hitem:6263:41:0:0:0:0:0:500442290:100:254:0:0:0|h[Blue Overalls]|h|r", -- [12]
-				"|cff0070dd|Hitem:116916:0:0:0:0:0:0:0:100:254:0:0:0|h[Gorepetal's Gentle Grasp]|h|r", -- [13]
-				"|cffa335ee|Hitem:124295:0:0:0:0:0:0:0:100:254:4:5:1:566:529|h[Sinister Felborne Helmet]|h|r", -- [14]
-				"|cffa335ee|Hitem:124281:0:5346:0:0:0:0:0:100:254:4:5:3:564:42:566:529|h[Jungle Flayer's Chestguard]|h|r", -- [15]
-				"|cffa335ee|Hitem:65360:0:0:0:0:0:0:0:100:254:0:0:0|h[Cloak of Coordination]|h|r", -- [16]
-				"|cffa335ee|Hitem:127971:5310:0:0:0:0:0:0:100:254:4:0:0:529|h[Gossamer Felscorched Scarf]|h|r", -- [17]
+				"|cffa335ee|Hitem:124515:0:0:0:0:0:0:0:100:254:4:3:0:531|h[Talisman of the Master Tracker]|h|r", -- [8]
+				"|cffff8000|Hitem:34334:3608:0:0:0:0:0:660801552:100:254:0:0:0|h[Thori'dal, the Stars' Fury]|h|r", -- [9]
+				"|cff0070dd|Hitem:116913:0:0:0:0:0:0:0:100:254:0:0:0|h[Peon's Mining Pick]|h|r", -- [10]
+				"|cffff8000|Hitem:19019:2673:0:0:0:0:0:610963968:100:254:0:0:0|h[Thunderfury, Blessed Blade of the Windseeker]|h|r", -- [11]
+				"|cffe6cc80|Hitem:133597:0:0:0:0:0:0:0:100:254:0:23:0|h[Infallible Tracking Charm]|h|r", -- [12]
+				"|cff1eff00|Hitem:6263:41:0:0:0:0:0:500442290:100:254:0:0:0|h[Blue Overalls]|h|r", -- [13]
+				"|cff0070dd|Hitem:116916:0:0:0:0:0:0:0:100:254:0:0:0|h[Gorepetal's Gentle Grasp]|h|r", -- [14]
+				"|cffa335ee|Hitem:124295:0:0:0:0:0:0:0:100:254:4:5:1:566:529|h[Sinister Felborne Helmet]|h|r", -- [15]
+				"|cffa335ee|Hitem:124281:0:5346:0:0:0:0:0:100:254:4:5:3:564:42:566:529|h[Jungle Flayer's Chestguard]|h|r", -- [16]
+				"|cffa335ee|Hitem:65360:0:0:0:0:0:0:0:100:254:0:0:0|h[Cloak of Coordination]|h|r", -- [17]
 				"|cff0070dd|Hitem:63206:0:0:0:0:0:0:0:100:254:0:0:0|h[Wrap of Unity]|h|r", -- [18]
-				"|cffa335ee|Hitem:124135:5310:5346:0:0:0:0:0:100:254:4:3:1:563:529|h[Cloak of Tangible Dread]|h|r", -- [19]
-				"|cffa335ee|Hitem:128024:0:0:0:0:0:0:0:100:254:4:1:0:529|h[Stone of the Elements]|h|r", -- [20]
-				"|cffa335ee|Hitem:51560:0:0:0:0:0:0:0:100:254:0:0:0|h[Runed Band of the Kirin Tor]|h|r", -- [21]
-				"|cff1eff00|Hitem:63352:0:0:0:0:0:0:0:100:254:0:0:0|h[Shroud of Cooperation]|h|r", -- [22]
-				"|cffa335ee|Hitem:124300:0:0:0:0:0:0:0:100:254:4:5:1:566:529|h[Haughty Chain Legguards]|h|r", -- [23]
-				"|cffa335ee|Hitem:127983:0:0:0:0:0:0:0:100:254:4:3:2:560:40:529|h[Supreme Felchain Bracers]|h|r", -- [24]
-				"|cffa335ee|Hitem:109168:5276:0:0:0:0:0:0:100:254:4:13:3:74:532:620:529|h[Shrediron's Shredder of the Savage]|h|r", -- [25]
-				"|cffa335ee|Hitem:124223:0:5346:0:0:0:0:0:100:254:4:5:2:564:566:529|h[Fel-Spring Coil]|h|r", -- [26]
-				"|cffa335ee|Hitem:124292:0:0:0:0:0:0:0:100:254:4:3:0:529|h[Gloves of the Savage Hunt]|h|r", -- [27]
-				"|cffa335ee|Hitem:124370:5276:0:0:0:0:0:0:100:254:4:5:2:561:566:529|h[Felfire Munitions Launcher]|h|r", -- [28]
-				"|cffa335ee|Hitem:115800:5317:0:0:0:0:0:0:100:254:4:13:4:618:539:86:539:529|h[Shifting Taladite Pendant of the Savage]|h|r", -- [29]
+				"|cffa335ee|Hitem:128024:0:0:0:0:0:0:0:100:254:4:1:0:529|h[Stone of the Elements]|h|r", -- [19]
+				"|cffa335ee|Hitem:51560:0:0:0:0:0:0:0:100:254:0:0:0|h[Runed Band of the Kirin Tor]|h|r", -- [20]
+				"|cff1eff00|Hitem:63352:0:0:0:0:0:0:0:100:254:0:0:0|h[Shroud of Cooperation]|h|r", -- [21]
+				"|cffa335ee|Hitem:124210:5317:5346:0:0:0:0:0:100:254:4:3:1:563:531|h[Choker of the Great Betrayer]|h|r", -- [22]
+				"|cffa335ee|Hitem:109168:5276:0:0:0:0:0:0:100:254:4:13:3:74:532:620:529|h[Shrediron's Shredder of the Savage]|h|r", -- [23]
+				"|cffa335ee|Hitem:124300:0:0:0:0:0:0:0:100:254:4:5:1:566:529|h[Haughty Chain Legguards]|h|r", -- [24]
+				"|cffa335ee|Hitem:124223:0:5346:0:0:0:0:0:100:254:4:5:2:564:566:529|h[Fel-Spring Coil]|h|r", -- [25]
+				"|cffa335ee|Hitem:124292:0:0:0:0:0:0:0:100:254:4:3:0:529|h[Gloves of the Savage Hunt]|h|r", -- [26]
+				"|cffa335ee|Hitem:124370:5276:0:0:0:0:0:0:100:254:4:5:2:561:566:529|h[Felfire Munitions Launcher]|h|r", -- [27]
+				"|cffa335ee|Hitem:115800:5317:0:0:0:0:0:0:100:254:4:13:4:618:539:86:539:529|h[Shifting Taladite Pendant of the Savage]|h|r", -- [28]
 			},
 			["FirstUse"] = false,
 			["VoidItems"] = {
@@ -1860,26 +1859,23 @@ AskMrRobotDb2 = {
 			},
 			["BagItemsAndCounts"] = {
 				[124515] = 1,
-				[116268] = 10,
-				[116276] = 9,
-				[118197] = 1,
-				[114014] = 1,
+				[122618] = 7,
+				[107640] = 4,
 				[115800] = 1,
 				[51560] = 1,
-				[114808] = 4,
+				[114808] = 6,
 				[128024] = 1,
 				[113681] = 1000,
 				[52723] = 1,
-				[124135] = 1,
-				[114745] = 1,
+				[128453] = 1,
+				[133597] = 1,
 				[33820] = 1,
-				[114015] = 3,
-				[79249] = 92,
+				[113261] = 6,
+				[79249] = 112,
 				[129295] = 1,
 				[124223] = 1,
-				[122580] = 1,
+				[119151] = 1,
 				[109253] = 1,
-				[120945] = 100,
 				[114746] = 1,
 				[116913] = 1,
 				[63352] = 1,
@@ -1889,89 +1885,77 @@ AskMrRobotDb2 = {
 				[127669] = 1,
 				[116120] = 1,
 				[118922] = 1,
-				[64399] = 1,
-				[106873] = 1,
+				[116271] = 18,
 				[109167] = 1,
-				[114128] = 2,
-				[118897] = 9,
-				[113509] = 19,
+				[114128] = 4,
+				[122272] = 3,
 				[128503] = 1,
-				[111366] = 70,
 				[19019] = 1,
 				[58487] = 7,
-				[108977] = 1,
-				[127881] = 3,
 				[127662] = 2,
 				[116113] = 1,
 				[63206] = 1,
-				[6948] = 1,
-				[119151] = 1,
-				[128320] = 1,
-				[124281] = 1,
+				[109168] = 1,
 				[32757] = 1,
-				[128353] = 1,
-				[122273] = 2,
-				[116271] = 18,
+				[122273] = 3,
 				[120257] = 17,
 				[8383] = 1,
 				[113542] = 1,
-				[115463] = 1,
 				[124099] = 917,
-				[127983] = 1,
-				[124292] = 1,
+				[109223] = 20,
 				[122345] = 6,
-				[118099] = 45,
-				[109153] = 16,
-				[114622] = 3,
+				[65360] = 1,
+				[109153] = 126,
+				[114622] = 4,
 				[116916] = 1,
 				[34334] = 1,
-				[116170] = 1,
-				[128482] = 1,
-				[115504] = 3,
+				[127881] = 2,
+				[128320] = 1,
+				[128632] = 45,
 				[6263] = 1,
-				[109217] = 18,
+				[128482] = 1,
 				[113543] = 1,
-				[108979] = 2,
+				[118099] = 45,
 				[52019] = 1,
 				[85500] = 1,
 				[124370] = 1,
 				[118663] = 1,
-				[118576] = 5,
+				[114745] = 4,
 				[116266] = 9,
-				[114131] = 7,
-				[107392] = 1,
+				[114131] = 10,
+				[113588] = 6,
 				[44050] = 1,
-				[118711] = 8,
-				[127770] = 1,
-				[118354] = 4,
-				[118100] = 3,
-				[122618] = 12,
-				[109168] = 1,
-				[114822] = 7,
+				[17202] = 1,
 				[124300] = 1,
-				[108996] = 2,
-				[128453] = 1,
+				[124292] = 1,
+				[118354] = 7,
+				[118100] = 3,
+				[6948] = 1,
+				[114822] = 12,
+				[115463] = 1,
+				[117398] = 1,
+				[124281] = 1,
 				[103678] = 1,
-				[94288] = 12,
-				[114616] = 1,
+				[94288] = 88,
+				[64399] = 1,
 				[110560] = 1,
-				[107640] = 4,
+				[124210] = 1,
 				[124546] = 1,
 				[119093] = 1,
-				[117398] = 1,
+				[118711] = 8,
 				[109076] = 20,
-				[109223] = 29,
-				[122272] = 1,
-				[106870] = 1,
-				[106889] = 1,
-				[127971] = 1,
+				[116268] = 10,
+				[118576] = 82,
+				[116276] = 9,
+				[127770] = 1,
+				[128353] = 1,
 				[118903] = 2,
-				[65360] = 1,
+				[118897] = 9,
 			},
 			["Equipped"] = {
 				{
 					"|cffa335ee|Hitem:124296:0:0:0:0:0:0:0:100:254:4:5:1:566:531|h[Hood of the Savage Hunt]|h|r", -- [1]
-					"|cffa335ee|Hitem:124210:5317:5346:0:0:0:0:0:100:254:4:3:1:563:531|h[Choker of the Great Betrayer]|h|r", -- [2]
+					"|cffa335ee|Hitem:124210:5317:0:0:0:0:0:0:100:254:4:5:3:561:41:566:531|h[Choker of the Great Betrayer]|h|r", -- [2]
 					"|cffa335ee|Hitem:124307:0:0:0:0:0:0:0:100:254:4:5:1:566:531|h[Pauldrons of the Savage Hunt]|h|r", -- [3]
 					nil, -- [4]
 					"|cffa335ee|Hitem:124284:0:5346:0:0:0:0:0:100:254:4:3:2:560:563:531|h[Hauberk of the Savage Hunt]|h|r", -- [5]
@@ -1981,34 +1965,34 @@ AskMrRobotDb2 = {
 					"|cffa335ee|Hitem:109875:0:5346:0:0:0:0:0:100:254:4:23:3:642:644:523:531|h[Lavalink Bracers]|h|r", -- [9]
 					"|cffa335ee|Hitem:124291:0:0:0:0:0:0:0:100:254:4:5:1:566:531|h[Eredar Fel-Chain Gloves]|h|r", -- [10]
 					"|cffa335ee|Hitem:115796:5324:0:0:0:0:0:0:100:254:4:13:4:618:540:79:540:531|h[Shifting Taladite Ring of the Savage]|h|r", -- [11]
-					"|cffff8000|Hitem:124636:5324:0:0:0:0:0:0:100:254:0:11:2:649:639|h[Maalus, the Blood Drinker]|h|r", -- [12]
+					"|cffff8000|Hitem:124636:5324:0:0:0:0:0:0:100:254:0:11:2:650:640|h[Maalus, the Blood Drinker]|h|r", -- [12]
 					"|cffa335ee|Hitem:124224:0:0:0:0:0:0:0:100:254:4:5:1:566:531|h[Mirror of the Blademaster]|h|r", -- [13]
-					"|cffa335ee|Hitem:124515:0:0:0:0:0:0:0:100:254:4:3:0:529|h[Talisman of the Master Tracker]|h|r", -- [14]
+					"|cffa335ee|Hitem:124545:0:0:0:0:0:0:0:100:254:4:3:1:41:531|h[Chipped Soul Prism]|h|r", -- [14]
 					"|cffa335ee|Hitem:116174:5310:0:0:0:0:0:0:100:254:4:13:3:618:536:76:531|h[Nimble Burnished Cloak of the Savage]|h|r", -- [15]
 					"|cffa335ee|Hitem:124362:5276:0:0:0:0:0:0:100:254:4:5:1:566:531|h[Felcrystal Impaler]|h|r", -- [16]
 				}, -- [1]
 				{
 					"|cffa335ee|Hitem:124296:0:0:0:0:0:0:0:100:253:4:5:1:566:531|h[Hood of the Savage Hunt]|h|r", -- [1]
-					"|cffa335ee|Hitem:124210:5317:5346:0:0:0:0:0:100:253:4:3:1:563:531|h[Choker of the Great Betrayer]|h|r", -- [2]
+					"|cffa335ee|Hitem:124210:0:0:0:0:0:0:0:100:253:4:5:3:561:41:566:531|h[Choker of the Great Betrayer]|h|r", -- [2]
 					"|cffa335ee|Hitem:124307:0:0:0:0:0:0:0:100:253:4:5:1:566:531|h[Pauldrons of the Savage Hunt]|h|r", -- [3]
 					nil, -- [4]
 					"|cffa335ee|Hitem:124284:0:5346:0:0:0:0:0:100:253:4:3:2:560:563:531|h[Hauberk of the Savage Hunt]|h|r", -- [5]
 					"|cffa335ee|Hitem:116194:0:0:0:0:0:0:0:100:253:4:13:3:618:536:80:531|h[Wayfaring Belt of the Savage]|h|r", -- [6]
 					"|cffa335ee|Hitem:124301:0:0:0:0:0:0:0:100:253:4:5:1:566:531|h[Leggings of the Savage Hunt]|h|r", -- [7]
-					"|cffa335ee|Hitem:124286:0:0:0:0:0:0:0:100:253:4:5:2:561:566:531|h[Surefooted Chain Treads]|h|r", -- [8]
+					"|cffa335ee|Hitem:124287:0:0:0:0:0:0:0:100:253:4:5:2:561:566:531|h[Spiked Throatcrusher Boots]|h|r", -- [8]
 					"|cffa335ee|Hitem:109875:0:5346:0:0:0:0:0:100:253:4:23:3:642:644:523:531|h[Lavalink Bracers]|h|r", -- [9]
 					"|cffa335ee|Hitem:124291:0:0:0:0:0:0:0:100:253:4:5:1:566:531|h[Eredar Fel-Chain Gloves]|h|r", -- [10]
 					"|cffa335ee|Hitem:115796:5324:0:0:0:0:0:0:100:253:4:13:4:618:540:79:540:531|h[Shifting Taladite Ring of the Savage]|h|r", -- [11]
-					"|cffff8000|Hitem:124636:5324:0:0:0:0:0:0:100:253:0:11:2:650:638|h[Maalus, the Blood Drinker]|h|r", -- [12]
+					"|cffff8000|Hitem:124636:5324:0:0:0:0:0:0:100:253:0:11:2:650:640|h[Maalus, the Blood Drinker]|h|r", -- [12]
 					"|cffa335ee|Hitem:124224:0:0:0:0:0:0:0:100:253:4:5:1:566:531|h[Mirror of the Blademaster]|h|r", -- [13]
-					"|cffa335ee|Hitem:124515:0:0:0:0:0:0:0:100:253:4:3:0:529|h[Talisman of the Master Tracker]|h|r", -- [14]
+					"|cffa335ee|Hitem:124515:0:0:0:0:0:0:0:100:253:4:3:0:531|h[Talisman of the Master Tracker]|h|r", -- [14]
 					"|cffa335ee|Hitem:116174:5310:0:0:0:0:0:0:100:253:4:13:3:618:536:76:531|h[Nimble Burnished Cloak of the Savage]|h|r", -- [15]
 					"|cffa335ee|Hitem:124362:5276:0:0:0:0:0:0:100:253:4:5:1:566:531|h[Felcrystal Impaler]|h|r", -- [16]
 				}, -- [2]
 			},
 			["Logging"] = {
-				["LastDiff"] = 1,
-				["LastZone"] = "SMV Alliance Garrison Level 3",
+				["LastDiff"] = 3,
+				["LastZone"] = "Onyxia's Lair",
 			},
 			["GearSets"] = {
 				{
@@ -2029,17 +2013,19 @@ AskMrRobotDb2 = {
 					}, -- [1]
 					{
 						["bonusIds"] = {
-							563, -- [1]
+							41, -- [1]
+							561, -- [2]
+							566, -- [3]
 						},
 						["enchantId"] = 5317,
 						["id"] = 124210,
 						["gemIds"] = {
-							5346, -- [1]
+							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 529,
+						["upgradeId"] = 531,
 						["suffixId"] = 0,
 					}, -- [2]
 					{
@@ -2071,7 +2057,7 @@ AskMrRobotDb2 = {
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 529,
+						["upgradeId"] = 531,
 						["suffixId"] = 0,
 					}, -- [5]
 					{
@@ -2093,17 +2079,17 @@ AskMrRobotDb2 = {
 					}, -- [6]
 					{
 						["bonusIds"] = {
-							563, -- [1]
+							566, -- [1]
 						},
 						["enchantId"] = 0,
 						["id"] = 124301,
 						["gemIds"] = {
-							5346, -- [1]
+							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 529,
+						["upgradeId"] = 531,
 						["suffixId"] = 0,
 					}, -- [7]
 					{
@@ -2112,14 +2098,14 @@ AskMrRobotDb2 = {
 							566, -- [2]
 						},
 						["enchantId"] = 0,
-						["id"] = 124286,
+						["id"] = 124287,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 529,
+						["upgradeId"] = 531,
 						["suffixId"] = 0,
 					}, -- [8]
 					{
@@ -2136,7 +2122,7 @@ AskMrRobotDb2 = {
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 529,
+						["upgradeId"] = 531,
 						["suffixId"] = 0,
 					}, -- [9]
 					{
@@ -2169,13 +2155,13 @@ AskMrRobotDb2 = {
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 529,
+						["upgradeId"] = 531,
 						["suffixId"] = 0,
 					}, -- [11]
 					{
 						["bonusIds"] = {
-							635, -- [1]
-							649, -- [2]
+							640, -- [1]
+							650, -- [2]
 						},
 						["enchantId"] = 5324,
 						["id"] = 124636,
@@ -2200,7 +2186,7 @@ AskMrRobotDb2 = {
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 529,
+						["upgradeId"] = 531,
 						["suffixId"] = 0,
 					}, -- [13]
 					{
@@ -2215,22 +2201,24 @@ AskMrRobotDb2 = {
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 529,
+						["upgradeId"] = 531,
 						["suffixId"] = 0,
 					}, -- [14]
 					{
 						["bonusIds"] = {
-							563, -- [1]
+							76, -- [1]
+							536, -- [2]
+							618, -- [3]
 						},
 						["enchantId"] = 5310,
-						["id"] = 124135,
+						["id"] = 116174,
 						["gemIds"] = {
-							5346, -- [1]
+							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 529,
+						["upgradeId"] = 531,
 						["suffixId"] = 0,
 					}, -- [15]
 					{
@@ -2267,17 +2255,19 @@ AskMrRobotDb2 = {
 					}, -- [1]
 					{
 						["bonusIds"] = {
-							563, -- [1]
+							41, -- [1]
+							561, -- [2]
+							566, -- [3]
 						},
 						["enchantId"] = 5317,
 						["id"] = 124210,
 						["gemIds"] = {
-							5346, -- [1]
+							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 529,
+						["upgradeId"] = 531,
 						["suffixId"] = 0,
 					}, -- [2]
 					{
@@ -2309,7 +2299,7 @@ AskMrRobotDb2 = {
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 529,
+						["upgradeId"] = 531,
 						["suffixId"] = 0,
 					}, -- [5]
 					{
@@ -2331,17 +2321,17 @@ AskMrRobotDb2 = {
 					}, -- [6]
 					{
 						["bonusIds"] = {
-							563, -- [1]
+							566, -- [1]
 						},
 						["enchantId"] = 0,
 						["id"] = 124301,
 						["gemIds"] = {
-							5346, -- [1]
+							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 529,
+						["upgradeId"] = 531,
 						["suffixId"] = 0,
 					}, -- [7]
 					{
@@ -2350,14 +2340,14 @@ AskMrRobotDb2 = {
 							566, -- [2]
 						},
 						["enchantId"] = 0,
-						["id"] = 124286,
+						["id"] = 124287,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 529,
+						["upgradeId"] = 531,
 						["suffixId"] = 0,
 					}, -- [8]
 					{
@@ -2374,7 +2364,7 @@ AskMrRobotDb2 = {
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 529,
+						["upgradeId"] = 531,
 						["suffixId"] = 0,
 					}, -- [9]
 					{
@@ -2407,13 +2397,13 @@ AskMrRobotDb2 = {
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 529,
+						["upgradeId"] = 531,
 						["suffixId"] = 0,
 					}, -- [11]
 					{
 						["bonusIds"] = {
-							635, -- [1]
-							649, -- [2]
+							640, -- [1]
+							650, -- [2]
 						},
 						["enchantId"] = 5324,
 						["id"] = 124636,
@@ -2438,7 +2428,7 @@ AskMrRobotDb2 = {
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 529,
+						["upgradeId"] = 531,
 						["suffixId"] = 0,
 					}, -- [13]
 					{
@@ -2455,17 +2445,19 @@ AskMrRobotDb2 = {
 					}, -- [14]
 					{
 						["bonusIds"] = {
-							563, -- [1]
+							76, -- [1]
+							536, -- [2]
+							618, -- [3]
 						},
 						["enchantId"] = 5310,
-						["id"] = 124135,
+						["id"] = 116174,
 						["gemIds"] = {
-							5346, -- [1]
+							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 529,
+						["upgradeId"] = 531,
 						["suffixId"] = 0,
 					}, -- [15]
 					{
@@ -2487,11 +2479,11 @@ AskMrRobotDb2 = {
 			},
 			["ExtraItemData"] = {
 				{
-					[124362] = {
-						["id"] = 124362,
+					[124287] = {
+						["id"] = 124287,
 					},
-					[124636] = {
-						["id"] = 124636,
+					[116174] = {
+						["id"] = 116174,
 					},
 					[109875] = {
 						["id"] = 109875,
@@ -2505,55 +2497,46 @@ AskMrRobotDb2 = {
 					[124307] = {
 						["id"] = 124307,
 					},
-					[124301] = {
-						["id"] = 124301,
-						["socketColors"] = {
-							0, -- [1]
-						},
+					[124636] = {
+						["id"] = 124636,
 					},
 					[116194] = {
 						["id"] = 116194,
 					},
-					[124135] = {
-						["id"] = 124135,
-						["socketColors"] = {
-							0, -- [1]
-						},
+					[124301] = {
+						["id"] = 124301,
 					},
 					[124296] = {
 						["id"] = 124296,
-					},
-					[124284] = {
-						["id"] = 124284,
-						["socketColors"] = {
-							0, -- [1]
-						},
 					},
 					[124545] = {
 						["id"] = 124545,
 					},
+					[124284] = {
+						["id"] = 124284,
+						["socketColors"] = {
+							0, -- [1]
+						},
+					},
 					[124224] = {
 						["id"] = 124224,
 					},
 					[124210] = {
 						["id"] = 124210,
-						["socketColors"] = {
-							0, -- [1]
-						},
-					},
-					[124286] = {
-						["id"] = 124286,
 					},
 					[115796] = {
 						["id"] = 115796,
 					},
-				}, -- [1]
-				{
 					[124362] = {
 						["id"] = 124362,
 					},
-					[124636] = {
-						["id"] = 124636,
+				}, -- [1]
+				{
+					[124287] = {
+						["id"] = 124287,
+					},
+					[116174] = {
+						["id"] = 116174,
 					},
 					[109875] = {
 						["id"] = 109875,
@@ -2567,23 +2550,20 @@ AskMrRobotDb2 = {
 					[124307] = {
 						["id"] = 124307,
 					},
-					[124301] = {
-						["id"] = 124301,
-						["socketColors"] = {
-							0, -- [1]
-						},
+					[124636] = {
+						["id"] = 124636,
 					},
 					[116194] = {
 						["id"] = 116194,
 					},
-					[124135] = {
-						["id"] = 124135,
-						["socketColors"] = {
-							0, -- [1]
-						},
+					[124301] = {
+						["id"] = 124301,
 					},
 					[124296] = {
 						["id"] = 124296,
+					},
+					[124515] = {
+						["id"] = 124515,
 					},
 					[124284] = {
 						["id"] = 124284,
@@ -2591,23 +2571,17 @@ AskMrRobotDb2 = {
 							0, -- [1]
 						},
 					},
-					[124515] = {
-						["id"] = 124515,
-					},
 					[124224] = {
 						["id"] = 124224,
 					},
 					[124210] = {
 						["id"] = 124210,
-						["socketColors"] = {
-							0, -- [1]
-						},
-					},
-					[124286] = {
-						["id"] = 124286,
 					},
 					[115796] = {
 						["id"] = 115796,
+					},
+					[124362] = {
+						["id"] = 124362,
 					},
 				}, -- [2]
 			},
@@ -2628,7 +2602,7 @@ AskMrRobotDb2 = {
 				[21524] = 1,
 				[98605] = 1,
 				[64882] = 1,
-				[109124] = 198,
+				[109124] = 338,
 				[33047] = 1,
 				[59320] = 1,
 				[56539] = 1,
@@ -2675,151 +2649,151 @@ AskMrRobotDb2 = {
 				[59346] = 1,
 				[46349] = 1,
 				[40492] = 1,
-				[110291] = 1,
-				[109129] = 1861,
-				[112931] = 1,
-				[103977] = 1,
-				[86889] = 1,
-				[107273] = 1,
+				[110274] = 1,
+				[109129] = 1721,
+				[30847] = 1,
+				[110290] = 1,
+				[87399] = 30,
+				[38082] = 1,
 				[67134] = 1,
-				[69748] = 1,
-				[88371] = 1,
+				[103977] = 1,
+				[81231] = 1,
 				[65907] = 1,
 				[110293] = 1,
 				[86594] = 1,
-				[99577] = 1,
-				[19854] = 1,
+				[21130] = 1,
+				[118939] = 1,
 				[19621] = 1,
 				[112779] = 1,
-				[114128] = 135,
+				[118354] = 16,
 				[37863] = 1,
-				[50402] = 1,
+				[21326] = 1,
 				[19896] = 1,
 				[21175] = 1,
-				[90570] = 1,
+				[118365] = 1,
 				[113545] = 1,
-				[95567] = 1,
+				[122147] = 1,
 				[39194] = 1,
 				[65908] = 1,
-				[115506] = 1,
-				[109131] = 25,
+				[104038] = 1,
+				[114746] = 7,
 				[111601] = 47,
 				[43824] = 1,
 				[44597] = 1,
 				[50470] = 1,
-				[111671] = 13,
+				[14023] = 1,
 				[50741] = 1,
-				[71365] = 1,
-				[18715] = 1,
-				[109126] = 94,
-				[19290] = 1,
+				[2820] = 1,
+				[95567] = 1,
+				[118224] = 1,
+				[49295] = 1,
 				[118391] = 20,
-				[12344] = 1,
+				[30688] = 1,
 				[47737] = 1,
 				[120989] = 1,
 				[18713] = 1,
-				[22999] = 1,
+				[34078] = 1,
 				[21526] = 1,
 				[122583] = 3,
-				[46817] = 1,
-				[122101] = 1,
+				[110292] = 1,
+				[52843] = 6,
 				[15138] = 1,
 				[109132] = 30,
-				[37892] = 1,
-				[108907] = 1,
-				[114822] = 29,
+				[116154] = 1,
+				[46817] = 1,
+				[43300] = 2,
 				[78851] = 1,
 				[113547] = 1,
-				[32539] = 1,
+				[86574] = 1,
 				[47610] = 1,
-				[17904] = 1,
-				[111673] = 18,
+				[108996] = 910,
+				[65906] = 1,
 				[15778] = 1,
 				[116448] = 1,
 				[98614] = 1,
-				[69576] = 1,
+				[69210] = 1,
 				[71361] = 1,
 				[5816] = 1,
 				[128513] = 1,
 				[122154] = 1,
 				[34183] = 1,
-				[40601] = 1,
-				[71255] = 1,
-				[65141] = 1,
-				[50362] = 1,
-				[69210] = 1,
-				[31336] = 1,
+				[17904] = 1,
+				[122272] = 7,
+				[109118] = 1342,
+				[28237] = 1,
+				[118935] = 1,
+				[88487] = 5,
 				[50049] = 1,
-				[88376] = 1,
-				[109133] = 37,
+				[49464] = 1,
+				[50362] = 1,
 				[121820] = 1,
 				[23192] = 1,
 				[112927] = 1,
-				[109118] = 1438,
+				[11122] = 1,
 				[109134] = 17,
-				[31404] = 1,
-				[31655] = 1,
+				[82984] = 1,
+				[78430] = 1,
 				[19901] = 2,
 				[114808] = 54,
 				[62385] = 1,
-				[88384] = 1,
-				[121837] = 1,
-				[49715] = 1,
+				[111366] = 1620,
+				[109133] = 37,
+				[109119] = 1235,
 				[32420] = 1,
-				[43300] = 2,
-				[114745] = 240,
-				[111366] = 1440,
+				[88384] = 1,
+				[109135] = 10,
+				[78471] = 1,
 				[45109] = 1,
 				[99158] = 1,
-				[109119] = 1311,
-				[43348] = 1,
+				[49715] = 1,
+				[114745] = 240,
 				[110289] = 1,
-				[109135] = 10,
-				[109693] = 4173,
-				[78471] = 1,
-				[120945] = 896,
+				[43348] = 1,
+				[109693] = 2909,
+				[121837] = 1,
+				[120945] = 1066,
 				[113821] = 1,
-				[78430] = 1,
-				[11122] = 1,
-				[82984] = 1,
+				[31404] = 1,
+				[31655] = 1,
+				[88376] = 1,
 				[118475] = 7,
-				[118935] = 1,
-				[49464] = 1,
-				[88487] = 5,
-				[28237] = 1,
-				[122272] = 7,
-				[114746] = 7,
+				[65141] = 1,
+				[71255] = 1,
+				[31336] = 1,
+				[40601] = 1,
+				[111673] = 18,
 				[109136] = 5,
+				[108907] = 1,
 				[33292] = 1,
-				[65906] = 1,
-				[108996] = 868,
-				[86574] = 1,
+				[69576] = 1,
+				[37892] = 1,
+				[122101] = 1,
 				[116117] = 1,
-				[116154] = 1,
-				[52843] = 6,
-				[110292] = 1,
-				[34078] = 1,
-				[30688] = 1,
-				[49295] = 1,
-				[118224] = 1,
-				[2820] = 1,
-				[14023] = 1,
+				[22999] = 1,
+				[32539] = 1,
+				[12344] = 1,
+				[114822] = 29,
+				[19290] = 1,
+				[109126] = 94,
+				[18715] = 1,
+				[71365] = 1,
+				[111671] = 13,
 				[109137] = 14,
-				[104038] = 1,
-				[122147] = 1,
-				[118365] = 1,
-				[21326] = 1,
-				[118354] = 16,
+				[50402] = 1,
+				[109131] = 26,
+				[90570] = 1,
+				[115506] = 1,
+				[114128] = 135,
 				[113823] = 1,
-				[118939] = 1,
-				[21130] = 1,
-				[81231] = 1,
+				[19854] = 1,
+				[99577] = 1,
+				[88371] = 1,
 				[29301] = 1,
-				[38082] = 1,
-				[87399] = 26,
-				[110290] = 1,
-				[30847] = 1,
-				[110274] = 1,
+				[107273] = 1,
+				[86889] = 1,
+				[69748] = 1,
+				[112931] = 1,
+				[110291] = 1,
 			},
 		},
 		["Herbinator - Sisters of Elune"] = {
@@ -2917,7 +2891,7 @@ AskMrRobotDb2 = {
 				[7909] = 3,
 				[74847] = 4,
 				[7910] = 3,
-				[36922] = 1,
+				[39970] = 18,
 				[5760] = 1,
 				[52178] = 80,
 				[72093] = 132,
@@ -2932,7 +2906,7 @@ AskMrRobotDb2 = {
 				[3371] = 20,
 				[74840] = 58,
 				[74848] = 94,
-				[5759] = 3,
+				[36922] = 1,
 				[69237] = 29,
 				[22276] = 1,
 				[36934] = 1,
@@ -2949,7 +2923,7 @@ AskMrRobotDb2 = {
 				[31952] = 2,
 				[23572] = 4,
 				[74857] = 2,
-				[39970] = 18,
+				[5759] = 3,
 				[35624] = 1,
 				[102541] = 34,
 				[12363] = 1,
@@ -3006,51 +2980,26 @@ AskMrRobotDb2 = {
 			["PlayerData"] = {
 				["US:Eonar:Badandevil"] = {
 					[1450801051] = "$28;US;Eonar;Badandevil;Forged by Fire;3;1;100;13:566,15:75,12:543,8:700,14:627,5:700;1;.s1;9;3123333;53299,3551,62597,15,2,7282;.q1;116192s9b79b456b83;1s8b-543b460b83;7995s12b-52e5324;19s2b-524b524e-7;17s13u531;57s5b-5b5;11s10b0;4s1u0;5s7b0;6s3b-525b525;4s6b0;51s16b-2b2x5413e-41;274s11b61b23e48;3335s15b-90e-14;5626s14$",
+					[1451407181] = "$28;US;Eonar;Badandevil;Forged by Fire;3;1;100;13:566,15:75,12:543,8:700,14:627,5:700;1;.s1;9;3123333;53299,3551,62597,15,2,7282;.q1;116192s9b79b456b83;1s8b-543b460b83;7995s12b-52e5324;20s2b-2b2x5413e-7;16s13u531;57s5b-5b5;11s10b0;4s1u0;5s7b0;6s3b-525b525;4s6b0;51s16b-2b2x0e-41;274s11b62b21e48;3335s15b-89e-14;5626s14$",
 				},
-				["US:Korialstrasz:Baconstrip"] = {
-					[1451287240] = "$28;US;Korialstrasz;Baconstrip;TwInKs;3;1;100;13:283,15:61,12:375,8:700,14:31,6:684;2;.s2;9;3123333;56850,1020,61577,15,12644,27353;.q2;109168s16b82b449b89e5276;750s15b22b115e34;6273s5b-677b456b82;3s6b-534b452b82;7994s11b-52e14;36s14b-2b2x5346;2s13b-2b2x0;61s8b0;5s10b0;4s1b0;5s7b-526b526;6s3b0;7s9b0;322s12b67b17e0;3340s2u531e-7$",
-				},
-				["US:Sargeras:Frózen"] = {
-					[1451322361] = "$31;US;Sargeras;Frózen;Storm;5;1;100;13:700,12:219,5:101,14:1,4:700;2;.s2;13;1331231;56364,13,1548,5165,83886;.q2;114815s8u531b125b413b80;4s15u0b-493b412b81e5311;982s2u0b-502b423b79e7;2505s12e7;5848s10u0b-51;5s1u0b-3b2x5414;6s7u0b0;6s5u0b0;6s3u0b0;9s9u0b0;6s11u0b-5b5e0;8s6u0b-525b525;5s17u-1b0;24s14u1;155s16u0b-4b5e9;132s13u0b-1$",
+				["US:Elune:Áubrey"] = {
+					[1451409092] = "$31;US;Elune;Áubrey;vanguard;6;1;100;13:661,12:700,5:700,14:101,4:700;1;.s1;7;2132232;62970,51252,116,1880,8829,21607;.q1;115801s2u531b370b170b78e5318;8340s15u0b-54b2x5347e-7;53s12u0b0;40s14u0;9s5u-2b0;7s8u2b0;4s10u-2;7s1u0;6s7u2b0;4s3u-2b-525b525;5s6u2;4s9u0b0;101s16u0b0e24;133s13u0b-6;124s11b63b27e-10$",
 				},
 				["US:Arygos:Elizarr"] = {
 					[1450806456] = "$31;US;Arygos;Elizarr;Immersive;5;1;100;10:700,15:700,12:689,13:700,14:700,4:700;1;.s1;11;3212332;56382,2,5826,27539,25956,13;.q1;114814s9u531b108b429b81;5s15u0b-499b418b81e5311;979s11u0b-497b418b79e15;8350s8u0b-54b2x5415;6s10u0b0;3s1u0b-525b520b5;8s7u0b0;6s5u0b0;6s3u0b0;4s6u0b0;25s17u0b0;23s14u0b0;1s13u0b0;153s16u0b-5b5e11;8s2u0b-526b526e-19;244s12b68b16e7$",
 				},
-				["US:Gallywix:Roha"] = {
-					[1450806466] = "$28;US;Gallywix;Roha;Mestres De Azeroth;2;1;100;13:700,15:694,12:700,1:700,14:700,5:710;1;.s1;2;2131212;58623,19,15,23,629,2950;.q1;109838s6b642b117;4394s5b-577b352b84;1562s11b-434b355b0b79e5326;8348s15b-57b5e-14;77s2b-5b5e7;19s13b0;83s8b-2b2x5415;6s10b0;5s1b0;6s7b-5b5;6s3b0;8s9b-5b5;22s17b0e-1949;0s16b0e-2;260s12b72b12e1958;8961s14$",
+				["US:Ragnaros:Hunkir"] = {
+					[1451322359] = "$31;US;Ragnaros;Hunkir;Ataúd Risueño;3;1;100;13:700,15:700,12:700,1:700,14:700,6:700;1;.s1;8;3122333;20895,62600,35969,5578,1704,5360;.q1;109168s16u531b59b473b88e5383;5s1u0b-555b466b87;586s11u0b24b115e-58;41s8u0b-115b117;14s7u0b-117b117;60s9u0b-117b115;13s5u0b-115b2;64s2u0b-2b117e-7;2367s13u0b-230b89;11817s15u0b-52e-7;156s10u0b-3x5421;15s3u0b-3;4s6u0b6;235s14u0;91s12b57b27e15$",
 				},
 				["US:Darkspear:Eilyssa"] = {
 					[1451287238] = "$31;US;Darkspear;Eilyssa;Enter The Void;5;1;100;3:700,13:1,14:1,11:700;2;.s2;22;2222111;33202,22482,4,2540,89548;.q2;124137s15u529b566e5310;18s10u2b-6;6s1u0b-518b518;5s7u0b-520;3s5u0b2b524;9s3u-2;2s6u2b-2b2x5346;11s12u-2b0e14;24s2u0b-5b5;14s13u2;151s16u0b-524b524e6;191s8u-2b-534b616b4;64s11b-30b27e-6;65s9;8896s14$",
 				},
-				["US:Icecrown:Lutece"] = {
-					[1451287456] = "$31;US;Icecrown;Lutece;SELECT geeks FROM WoW;6;1;100;13:1,7:700,15:21,12:1,14:600,4:694;2;.s2;33;2121323;58098,257,36017,21571,7836,23190;.q2;124235s14u529;84s5u0b561b5;27s3u0;3s6u0b0;462s9;32s16e5330;0s17e54;40s7;1049s10;27s15e-74;3s11e14;143s8;34s2e-7;3s12b-20e7;32s1;7421s13$",
-					[1451288252] = "$31;US;Icecrown;Lutece;SELECT geeks FROM WoW;6;1;100;13:1,7:700,15:21,12:1,14:600,4:694;2;.s2;33;2121333;58098,257,36017,21571,7836,23190;.q2;124235s14u529;84s5u0b561b5;27s3u0;3s6u0b0;462s9;32s16e5330;0s17e54;40s7;1049s10;27s15e-74;3s11e14;143s8;34s2e-7;3s12b-20e7;32s1;7421s13$",
-				},
-				["US:Ragnaros:Seigen"] = {
-					[1450806459] = "$31;US;Ragnaros;Seigen;;5;1;100;13:700,7:700,15:700,12:700,14:700,6:700;1;.s1;33;1123331;58095,3,257,17,57571,7836;.q1;109893s5u531b642b115;153s17u0b-115b116e5330;6407s16u0b-693b484b71e0;7691s15u0b-60e-20;55s11u0b6e14;20s2u0b-6e-7;19s13u0b6;84s8u0b-6;7s10u0b6;1s1u0b0;10s7u0b-6;2s3u0;6s6u0b6;175s14u0b-3x5346;111s12b63b24e7;3350s9u0$",
-					[1450806729] = "$31;US;Ragnaros;Seigen;;5;1;100;13:700,7:700,15:700,12:700,14:700,6:700;1;.s1;33;1121331;58095,3,257,17,57571,7836;.q1;109893s5u531b642b115;153s17u0b-115b116e5330;6407s16u0b-693b484b71e0;7691s15u0b-60e-20;55s11u0b6e14;20s2u0b-6e-7;19s13u0b6;84s8u0b-6;7s10u0b6;1s1u0b0;10s7u0b-6;2s3u0;6s6u0b6;175s14u0b-3x5346;111s12b63b24e7;3350s9u0$",
-				},
-				["US:Ragnaros:Hunkir"] = {
-					[1451322359] = "$31;US;Ragnaros;Hunkir;Ataúd Risueño;3;1;100;13:700,15:700,12:700,1:700,14:700,6:700;1;.s1;8;3122333;20895,62600,35969,5578,1704,5360;.q1;109168s16u531b59b473b88e5383;5s1u0b-555b466b87;586s11u0b24b115e-58;41s8u0b-115b117;14s7u0b-117b117;60s9u0b-117b115;13s5u0b-115b2;64s2u0b-2b117e-7;2367s13u0b-230b89;11817s15u0b-52e-7;156s10u0b-3x5421;15s3u0b-3;4s6u0b6;235s14u0;91s12b57b27e15$",
-				},
-				["US:Proudmoore:Brawlenaces"] = {
-					[1451363215] = "$31;US;Proudmoore;Brawlenaces;Propaganda;13;1;100;13:712,15:13,12:573,8:700,14:626,2:700;1;.s1;16;1133323;123403,2275,215,6112,14946,12539;.q1;124134s15u531b566e5313;54s11u0b0e14;22s2u0b-2b2x5416e-7;14s13u0b-525b523b2x0;23s5u0b0;2s8u0b-1b2x0;7s10u-2b0;6s1u2b-3b2x0;6s7u0b0;3s3u0b-524b519b5;5s6u0b0;3s9u0b0;99s16u0b0e17;139s14u0b0;119s12b71b12e-10$",
-				},
 				["US:Korialstrasz:Exstinct"] = {
 					[1451322368] = "$31;US;Korialstrasz;Exstinct;TwInKs;6;1;100;13:132,15:600,12:700,8:700,14:600,2:700;1;.s1;8;3122333;20895,35934,26666,35967,7284,32713;.q1;109760s12u531b523b119b116x5348e5326;93s10u0b-116b2;19s9u0b-2b116;6321s8u0b-721b499b82;7941s15u0b-52e-15;73s2u0b0e7;19s13u0b0;56s5u0b0;14s1u0b-526b526;3s7u0b-524b524;8s3u0b0;4s6u0b-5b5;51s16u0b0e65;153s14u0b-5b5;121s11b56b27e-58$",
 				},
-				["US:Proudmoore:Megapow"] = {
-					[1451287247] = "$31;US;Proudmoore;Megapow;Risen;13;1;100;10:454,15:2,12:1,8:392,14:26,13:411;2;.s2;15;2313313;120483,2851,1820,578,169,33635;.q2;109862s10u529b523b119b2x5346;8s9u0b-2b114;2447s14u0b-227b89;3481s11u2b-197b118b79e5327;2501s12e-26;5953s8u-2b-52;8s1u0b0;17s6u0b0;268s13u0b-6;22s5u0b-72b160b4;21s3u0b-583b579b4;42s16u0b-419b415b5e34;3343s15u0b-90x70e-22;5s2u0e7;86s7u0$",
-				},
-				["US:Sisters of Elune:Bracnar"] = {
-					[1451287213] = "$31;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:694,15:450,12:700,11:700,14:700,4:700;1;.s1;9;1113333;56844,6,1016,36,61545,15;.q1;109875s9u531b523b119b2x5346;5921s11u0b-565b461b0b78e5324;378s15u0b-542b460b82e-14;20s6u0b-538b456b82;8016s2u0b-55x0e7;14s13u0b3;60s5u0b-6b3x0;2s8u0b-2b5;5s10u0b0;5s1u0b0;5s7u0b0;6s3u0b0;55s16u0b0e-41;183s14u0b-525;91s12b597b12e48$",
-					[1450801025] = "$31;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:694,15:450,12:700,11:700,14:700,4:700;1;.s1;9;1113333;56844,6,1016,36,61545,15;.q1;109875s9u531b523b119b2x5346;5921s11u0b-565b461b0b78e5324;378s15u0b-542b460b82e-14;20s6u0b-538b456b82;8016s2u0b-55x0e7;14s13u0b3;60s5u0b-6b3x0;2s8u0b-2b5;5s10u0b0;5s1u0b0;5s7u0b0;6s3u0b0;55s16u0b0e-41;153s14u-2;121s12b72b12e48$",
-					[1450806706] = "$31;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:694,15:450,12:700,11:700,14:700,4:700;1;.s1;9;1113333;56844,6,1016,36,61545,15;.q1;109875s9u531b523b119b2x5346;5921s11u0b-565b461b0b78e5324;378s15u0b-542b460b82e-14;20s6u0b-538b456b82;8016s2u0b-55x0e7;14s13u0b3;60s5u0b-6b3x0;2s8u0b-2b5;5s10u0b0;5s1u0b0;5s7u0b0;6s3u0b0;55s16u0b0e-41;274s12b72b12e48;8961s14$",
-					[1451323396] = "$31;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:694,15:450,12:700,11:700,14:700,4:700;1;.s1;9;1113333;56844,6,1016,36,61545,15;.q1;109875s9u531b523b119b2x5346;5921s11u0b-565b461b0b78e5324;378s15u0b-542b460b82e-14;20s6u0b-538b456b82;8016s2u0b-55x0e7;14s13u0b3;60s5u0b-6b3x0;2s8u0b-2b5;5s10u0b0;5s1u0b0;5s7u0b0;6s3u0b0;55s16u0b0e-41;274s12b72b12e48;8961s14$",
-					[1451363493] = "$31;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:694,15:450,12:700,11:700,14:700,4:700;1;.s1;9;1113333;56844,6,1016,36,61545,15;.q1;109875s9u531b523b119b2x5346;5921s11u0b-565b461b0b78e5324;378s15u0b-542b460b82e-14;20s6u0b-538b456b82;8016s2u0b-55x0e7;14s13u0b3;60s5u0b-6b3x0;2s8u0b-2b5;5s10u0b0;5s1u0b0;5s7u0b0;6s3u0b0;55s16u0b0e-41;274s12b73b10e48;8961s14$",
-				},
-				["US:Stormrage:Latía"] = {
-					[1451322359] = "$28;US;Stormrage;Latía;Dirty Connection;5;1;100;10:630,15:88,12:700,13:700,14:612,4:700;1;.s1;29;2332311;56218,14,1,1861,5218,96379;.q1;109881s9b523b119b2x5347;14269s8b-78;6s10b0;6s1b0;5s7b0;6s5b0;3s3b0;5s6b0;11s12b0e5326;20s2b-2b2x0e-8;168s16b0e19;142s14b-6;113s11b66b24e-12;3337s15u531e-25;5624s13$",
+				["US:Korgath:Truthheals"] = {
+					[1451407152] = "$31;US;Korgath;Truthheals;Nefas Eternum;2;1;100;9:700,15:34,3:700,13:230,14:216,12:22;1;.s1;20;1223111;55685,2324,31480,30377,6286,22;.q1;124137s15u531b561b5e5312;11s8u-2b0;7s10u2b-5b5;3s1u0b-5b5;8s7u0b-2b2x5342;6s5u-1b0;6s3u1b0;2s6u0b-2b2x0;6s9u0b-524b524;9s11u0b0;20s2u-2b-525e-27;16s13u2b520b5;151s16u0b0e50;163s14u0b-6;93s12b62b27e-9$",
+					[1451407920] = "$31;US;Korgath;Truthheals;Nefas Eternum;2;1;100;9:700,15:34,3:700,13:230,14:216,12:22;2;.s2;21;1221112;55673,2,7573,62846,58,22;.q2;124137s15u531b561b5e5312;11s8u-2b0;7s10u2b-5b5;3s1u0b-5b5;8s7u0b-2b2x5342;6s5u-1b0;6s3u1b0;2s6u0b-2b2x0;6s9u0b-524b524;9s11u0b0;20s2u-2b-525e-27;16s13u2b520b5;151s16u0b0e50;163s14u0b-6;93s12b62b27e-9$",
 				},
 				["US:Stormrage:Eldantor"] = {
 					[1450806517] = "$31;US;Stormrage;Eldantor;OBOROTEN;12;1;100;10:700,15:700,12:700,13:675,14:700,9:700;2;.s2;13;1311233;56364,13,5,2,6706,2;.q2;124138s15u531b563x5416e5313;12s8u0b-523b521b5;4s10u0b-2b2x0;6s1u0b0;5s7u0b-5b5;6s5u0b0;5s3u0b-5b5;6s6u0b-5b3b2x0;1s9u0b-523b523;8s12u0b0e14;21s2u0b0e-7;17s13u0b0;1s14u0b0;152s16u0e17;253s11b65b18e-10$",
@@ -3058,8 +3007,8 @@ AskMrRobotDb2 = {
 				["US:Gallywix:Quinhus"] = {
 					[1450842793] = "$28;US;Gallywix;Quinhus;Heroes Of Our Time;13;1;100;13:715,15:700,12:700,11:700,14:700,4:700;2;.s2;15;3312313;120483,2851,1820,739,8,46025;.q2;116182s8b66b469b83;1s6b-539b457b82;2998s16b24b118e5335;4960s15b-199b5e-22;53s12b0e14;11s17b0;10s2b0e-7;19s13b0;11s5b-526b526;11s10b0;6s1b0;6s7b-5b5;5s3b-5b5;6s9b-523b523;238s14b0;121s11b67b17e7$",
 				},
-				["US:Dalaran:Hazzar"] = {
-					[1451287247] = "$31;US;Dalaran;Hazzar;Pak Cafan;2;1;100;13:700,15:85,12:1,1:700,14:600,5:710;1;.s1;26;1231211;55448,1,7,2602,1,42993;.q1;124138s15u531b561b5e5313;52s11u0b1e14;39s14u0b-1;58s8u0b0;6s10u0b-2b2x5416;2s1u0b-5b5;7s7u0b0;1s5u0b-2b2x0;5s3u0b0;1s6u0b1;5s9u0b-6b5;67s16u0b0e7;10s2u0b0e-14;130s13u0b0;114s12b66b17e7$",
+				["US:Aman'Thul:Wish"] = {
+					[1450842795] = "$31;US;Aman'Thul;Wish;Startled;2;1;100;13:156,7:648,12:280,14:11,11:700;2;.s2;19;2112233;54926,3028,25,5241,52713,31024;.q2;124142s15u531b567e5312;56s11u0b0e14;21s2u0b-3b2x5348e-7;19s13u0b-2b2x67;78s5u0b1;6s8u-2b-3b2x-67;6s10u2b0;5s1u0b-4b3b2x67;6s7u0b-1;6s3u0b-5b5;5s6u0b1;1s9u-2b-2b2x-67;37s16u2b-2b2x0e65;246s12b73b10e-58;8961s14$",
 				},
 				["US:Arathor:Cleopetra"] = {
 					[1450806457] = "$31;US;Arathor;Cleopetra;Treason;2;1;100;10:700,15:62,12:700,13:700,14:46,4:700;2;.s2;20;1122112;89489,30364,13,25856;.q2;114815s8u531b48b489b81;1s6u0b-566b486b80;9325s15u-2b-52e5312;14s10u2b0;6s1u0b-2b2x5348;5s7u0b0;6s5u0b-2b2x73;3s3u0b0;11s9u0b0;9s11u0b-5b5e14;19s2u-2b0e-7;18s14u2b0;1s13u-2;147s16u2b-5b5e65;258s12b67b16e-58$",
@@ -3070,8 +3019,64 @@ AskMrRobotDb2 = {
 				["US:Ravenholdt:Sont"] = {
 					[1450801049] = "$31;US;Ravenholdt;Sont;Renaissance;12;1;100;10:700,12:700,5:700,14:700,13:700;2;.s2;11;3312222;56384,6708,23117,3540,56910,12827;.q2;114813s5u531b123b415b80;2s8u0b-496b415b81;983s12u0b-473b395b78e5326;8339s15u0b-57b5e-14;17s10u0b0;6s1u0b-5b5;5s7u0b0;12s3u-2b-6;9s9u2b-517b518b3b2x5414;14s6u0b-2b2x0;12s2u0b0e7;18s13u0b-5b5;151s16u0b0e18;135s14u0b0;119s11b70b14e-11$",
 				},
-				["US:Aman'Thul:Wish"] = {
-					[1450842795] = "$31;US;Aman'Thul;Wish;Startled;2;1;100;13:156,7:648,12:280,14:11,11:700;2;.s2;19;2112233;54926,3028,25,5241,52713,31024;.q2;124142s15u531b567e5312;56s11u0b0e14;21s2u0b-3b2x5348e-7;19s13u0b-2b2x67;78s5u0b1;6s8u-2b-3b2x-67;6s10u2b0;5s1u0b-4b3b2x67;6s7u0b-1;6s3u0b-5b5;5s6u0b1;1s9u-2b-2b2x-67;37s16u2b-2b2x0e65;246s12b73b10e-58;8961s14$",
+				["US:Stormrage:Latía"] = {
+					[1451322359] = "$28;US;Stormrage;Latía;Dirty Connection;5;1;100;10:630,15:88,12:700,13:700,14:612,4:700;1;.s1;29;2332311;56218,14,1,1861,5218,96379;.q1;109881s9b523b119b2x5347;14269s8b-78;6s10b0;6s1b0;5s7b0;6s5b0;3s3b0;5s6b0;11s12b0e5326;20s2b-2b2x0e-8;168s16b0e19;142s14b-6;113s11b66b24e-12;3337s15u531e-25;5624s13$",
+				},
+				["US:Argent Dawn:Siouxsie"] = {
+					[1450803896] = "$28;US;Argent Dawn;Siouxsie;Gnomes Will Eat You;6;1;100;13:700,15:358,12:700,1:700,14:659,6:700;2;.s2;23;1312132;56799,1234,6,5210,19,1;.q2;116176s3b61b474b83;6s8b-555b473b82;7953s15b-52e5312;53s12b-525b523b2x5348e14;22s2b0e-7;14s13b-5b3b2x67;24s5b0;9s10b0;6s1b0;6s7b0;7s6b-2b2x0;3s9b-5b5;88s17b0e15;0s16b0e50;153s14u531;116s11b68b16e-58$",
+				},
+				["US:Frostmourne:Sylvair"] = {
+					[1451287248] = "$31;US;Frostmourne;Sylvair;Centurion Knights;6;1;100;13:700,15:700,12:700,8:700,14:700,2:700;1;.s1;9;1123333;56850,1016,61581,15,2,12642;.q1;109792s8u531b642b2;6004s11u0b-577b473b78e5324;378s15u0b-551b468b83e-14;20s6u0b-548b466b82;8016s2u0b-52e7;14s14u0b0;60s5u-2b-6;7s10u2b6;5s1u0b0;5s7u0b-2b2x5413;6s3u-2;7s9u2b0;47s16u0b-6e-41;184s13u0;91s12b71b18e48$",
+				},
+				["US:Turalyon:Paramedica"] = {
+					[1451419892] = "$31;US;Turalyon;Paramedica;;2;1;100;10:700,15:230,12:219,13:700,14:166,4:700;1;.s1;20;1232212;89489,30364,13,715,5571,19570;.q1;124140s15u531b566e5312;9s8u0b-2b2x5421;6s10u-2;6s1u0b-3x-73;3s7u2b-2b5;8s5u0b-525b525;6s3u0b-524b518;6s9u0b1b5;10s11u0b-5b5e14;6s6u0b0;14s2u0b0e-7;14s14u0b0;3s13u0b-5b5;149s16u0b0e65;258s12b63b20e-58$",
+				},
+				["US:Korialstrasz:Baconstrip"] = {
+					[1451287240] = "$28;US;Korialstrasz;Baconstrip;TwInKs;3;1;100;13:283,15:61,12:375,8:700,14:31,6:684;2;.s2;9;3123333;56850,1020,61577,15,12644,27353;.q2;109168s16b82b449b89e5276;750s15b22b115e34;6273s5b-677b456b82;3s6b-534b452b82;7994s11b-52e14;36s14b-2b2x5346;2s13b-2b2x0;61s8b0;5s10b0;4s1b0;5s7b-526b526;6s3b0;7s9b0;322s12b67b17e0;3340s2u531e-7$",
+				},
+				["US:Sargeras:Frózen"] = {
+					[1451322361] = "$31;US;Sargeras;Frózen;Storm;5;1;100;13:700,12:219,5:101,14:1,4:700;2;.s2;13;1331231;56364,13,1548,5165,83886;.q2;114815s8u531b125b413b80;4s15u0b-493b412b81e5311;982s2u0b-502b423b79e7;2505s12e7;5848s10u0b-51;5s1u0b-3b2x5414;6s7u0b0;6s5u0b0;6s3u0b0;9s9u0b0;6s11u0b-5b5e0;8s6u0b-525b525;5s17u-1b0;24s14u1;155s16u0b-4b5e9;132s13u0b-1$",
+				},
+				["US:Caelestrasz:Finney"] = {
+					[1450842779] = "$31;US;Caelestrasz;Finney;Alliance United;4;1;100;10:700,15:700,12:700,13:700,14:700,4:700;1;.s1;11;3211323;56384,5826,882,26657,25969,43768;.q1;109865s9u531b523b119b115x5348;3269s16u0b-649b421b91e5384;803s15b-58b5e-72;10212s8u0;5s10u0;5s1u0b-1;6s7u0;6s5u0b0;6s3u0;15s11u0b-6e14;8s6u0;12s2u0b0e-7;17s13u0;1s14u0b0;405s12b67b22e7$",
+				},
+				["US:Sisters of Elune:Bracnar"] = {
+					[1451407146] = "$31;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:694,15:450,12:700,11:700,14:700,4:700;1;.s1;9;1113333;56844,6,1016,36,61545,15;.q1;109875s9u531b523b119b2x5346;5921s11u0b-565b461b0b78e5324;378s15u0b-542b460b82e-14;20s6u0b-538b456b82;8016s2u0b-55x0e7;14s13u0b3;60s5u0b-6b3x0;3s8u0b-2b5;4s10u0b0;5s1u0b0;5s7u0b0;6s3u0b0;55s16u0b0e-41;183s14u0b-525;91s12b598b10e48$",
+					[1451287213] = "$31;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:694,15:450,12:700,11:700,14:700,4:700;1;.s1;9;1113333;56844,6,1016,36,61545,15;.q1;109875s9u531b523b119b2x5346;5921s11u0b-565b461b0b78e5324;378s15u0b-542b460b82e-14;20s6u0b-538b456b82;8016s2u0b-55x0e7;14s13u0b3;60s5u0b-6b3x0;2s8u0b-2b5;5s10u0b0;5s1u0b0;5s7u0b0;6s3u0b0;55s16u0b0e-41;183s14u0b-525;91s12b597b12e48$",
+					[1450801025] = "$31;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:694,15:450,12:700,11:700,14:700,4:700;1;.s1;9;1113333;56844,6,1016,36,61545,15;.q1;109875s9u531b523b119b2x5346;5921s11u0b-565b461b0b78e5324;378s15u0b-542b460b82e-14;20s6u0b-538b456b82;8016s2u0b-55x0e7;14s13u0b3;60s5u0b-6b3x0;2s8u0b-2b5;5s10u0b0;5s1u0b0;5s7u0b0;6s3u0b0;55s16u0b0e-41;153s14u-2;121s12b72b12e48$",
+					[1450806706] = "$31;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:694,15:450,12:700,11:700,14:700,4:700;1;.s1;9;1113333;56844,6,1016,36,61545,15;.q1;109875s9u531b523b119b2x5346;5921s11u0b-565b461b0b78e5324;378s15u0b-542b460b82e-14;20s6u0b-538b456b82;8016s2u0b-55x0e7;14s13u0b3;60s5u0b-6b3x0;2s8u0b-2b5;5s10u0b0;5s1u0b0;5s7u0b0;6s3u0b0;55s16u0b0e-41;274s12b72b12e48;8961s14$",
+					[1451419814] = "$31;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:694,15:450,12:700,11:700,14:700,4:700;1;.s1;9;1113333;56844,6,1016,36,61545,15;.q1;109875s9u531b523b119b2x5346;5921s11u0b-565b461b0b78e5324;378s15u0b-542b460b82e-14;20s6u0b-538b456b82;8016s2u0b-55x0e7;14s13u0b3;60s5u0b-6b3x0;3s8u0b-2b5;4s10u0b0;5s1u0b0;5s7u0b0;6s3u0b0;55s16u0b0e-41;274s12b73b10e48;8961s14$",
+					[1451323396] = "$31;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:694,15:450,12:700,11:700,14:700,4:700;1;.s1;9;1113333;56844,6,1016,36,61545,15;.q1;109875s9u531b523b119b2x5346;5921s11u0b-565b461b0b78e5324;378s15u0b-542b460b82e-14;20s6u0b-538b456b82;8016s2u0b-55x0e7;14s13u0b3;60s5u0b-6b3x0;2s8u0b-2b5;5s10u0b0;5s1u0b0;5s7u0b0;6s3u0b0;55s16u0b0e-41;274s12b72b12e48;8961s14$",
+					[1451363493] = "$31;US;Sisters of Elune;Bracnar;Council of Dragons;3;1;100;13:694,15:450,12:700,11:700,14:700,4:700;1;.s1;9;1113333;56844,6,1016,36,61545,15;.q1;109875s9u531b523b119b2x5346;5921s11u0b-565b461b0b78e5324;378s15u0b-542b460b82e-14;20s6u0b-538b456b82;8016s2u0b-55x0e7;14s13u0b3;60s5u0b-6b3x0;2s8u0b-2b5;5s10u0b0;5s1u0b0;5s7u0b0;6s3u0b0;55s16u0b0e-41;274s12b73b10e48;8961s14$",
+				},
+				["US:Ragnaros:Seigen"] = {
+					[1450806459] = "$31;US;Ragnaros;Seigen;;5;1;100;13:700,7:700,15:700,12:700,14:700,6:700;1;.s1;33;1123331;58095,3,257,17,57571,7836;.q1;109893s5u531b642b115;153s17u0b-115b116e5330;6407s16u0b-693b484b71e0;7691s15u0b-60e-20;55s11u0b6e14;20s2u0b-6e-7;19s13u0b6;84s8u0b-6;7s10u0b6;1s1u0b0;10s7u0b-6;2s3u0;6s6u0b6;175s14u0b-3x5346;111s12b63b24e7;3350s9u0$",
+					[1450806729] = "$31;US;Ragnaros;Seigen;;5;1;100;13:700,7:700,15:700,12:700,14:700,6:700;1;.s1;33;1121331;58095,3,257,17,57571,7836;.q1;109893s5u531b642b115;153s17u0b-115b116e5330;6407s16u0b-693b484b71e0;7691s15u0b-60e-20;55s11u0b6e14;20s2u0b-6e-7;19s13u0b6;84s8u0b-6;7s10u0b6;1s1u0b0;10s7u0b-6;2s3u0;6s6u0b6;175s14u0b-3x5346;111s12b63b24e7;3350s9u0$",
+				},
+				["US:Proudmoore:Brawlenaces"] = {
+					[1451363215] = "$31;US;Proudmoore;Brawlenaces;Propaganda;13;1;100;13:712,15:13,12:573,8:700,14:626,2:700;1;.s1;16;1133323;123403,2275,215,6112,14946,12539;.q1;124134s15u531b566e5313;54s11u0b0e14;22s2u0b-2b2x5416e-7;14s13u0b-525b523b2x0;23s5u0b0;2s8u0b-1b2x0;7s10u-2b0;6s1u2b-3b2x0;6s7u0b0;3s3u0b-524b519b5;5s6u0b0;3s9u0b0;99s16u0b0e17;139s14u0b0;119s12b71b12e-10$",
+				},
+				["US:Icecrown:Lutece"] = {
+					[1451287456] = "$31;US;Icecrown;Lutece;SELECT geeks FROM WoW;6;1;100;13:1,7:700,15:21,12:1,14:600,4:694;2;.s2;33;2121323;58098,257,36017,21571,7836,23190;.q2;124235s14u529;84s5u0b561b5;27s3u0;3s6u0b0;462s9;32s16e5330;0s17e54;40s7;1049s10;27s15e-74;3s11e14;143s8;34s2e-7;3s12b-20e7;32s1;7421s13$",
+					[1451288252] = "$31;US;Icecrown;Lutece;SELECT geeks FROM WoW;6;1;100;13:1,7:700,15:21,12:1,14:600,4:694;2;.s2;33;2121333;58098,257,36017,21571,7836,23190;.q2;124235s14u529;84s5u0b561b5;27s3u0;3s6u0b0;462s9;32s16e5330;0s17e54;40s7;1049s10;27s15e-74;3s11e14;143s8;34s2e-7;3s12b-20e7;32s1;7421s13$",
+				},
+				["US:Proudmoore:Megapow"] = {
+					[1451287247] = "$31;US;Proudmoore;Megapow;Risen;13;1;100;10:454,15:2,12:1,8:392,14:26,13:411;2;.s2;15;2313313;120483,2851,1820,578,169,33635;.q2;109862s10u529b523b119b2x5346;8s9u0b-2b114;2447s14u0b-227b89;3481s11u2b-197b118b79e5327;2501s12e-26;5953s8u-2b-52;8s1u0b0;17s6u0b0;268s13u0b-6;22s5u0b-72b160b4;21s3u0b-583b579b4;42s16u0b-419b415b5e34;3343s15u0b-90x70e-22;5s2u0e7;86s7u0$",
+				},
+				["US:Dalaran:Hazzar"] = {
+					[1451287247] = "$31;US;Dalaran;Hazzar;Pak Cafan;2;1;100;13:700,15:85,12:1,1:700,14:600,5:710;1;.s1;26;1231211;55448,1,7,2602,1,42993;.q1;124138s15u531b561b5e5313;52s11u0b1e14;39s14u0b-1;58s8u0b0;6s10u0b-2b2x5416;2s1u0b-5b5;7s7u0b0;1s5u0b-2b2x0;5s3u0b0;1s6u0b1;5s9u0b-6b5;67s16u0b0e7;10s2u0b0e-14;130s13u0b0;114s12b66b17e7$",
+				},
+				["US:Frostmourne:Packetj"] = {
+					[1451409087] = "$31;US;Frostmourne;Packetj;Pilipinas;5;1;100;6:31,13:700,14:1,11:700;2;.s2;32;2123321;58098,274,36000,21571,7836,23190;.q2;109879s9u531b642b116;4938s15u0b-709b489b80e5312;3488s11e14;5894s12u0b-52e0;37s14u0b0;80s5u0b0;7s8u0b-524b522b2x5415;6s10u0b0;5s1u0b0;6s7u0;6s3u0b0;3s6u0b0;26s16u0b0e58;148s13u0b0;1437s2e-65$",
+				},
+				["US:Galakrond:Therehn"] = {
+					[1451419847] = "$31;US;Galakrond;Therehn;Overlords;2;1;100;13:700,15:700,12:700,5:710,14:700,4:700;1;.s1;s38;2133332;58095,3,6,253,9807,91537;.q1;109803s8u531b642b117;74s9u0b-117b116;176s17u0b-717b601b116;5741s11u0b-459b241b0b78e5326;8428s2u0b-52e-7;20s13u0b0;77s5u0b-5b5;10s10u0b0;5s1u0;6s7u0b-2b2x5348;3s3u0b0;6s6u0b0;25s16u0b0e65;149s14u0b0;114s12b70b14e-58;3338s15u0b-90b3x0e-14$",
+				},
+				["US:Proudmoore:Vanwarr"] = {
+					[1451407181] = "$31;US;Proudmoore;Vanwarr;Death Assured;5;1;100;13:41,6:635,5:13,14:36,12:700;1;.s1;33;2112331;58355,17,36000,21574;.q1;109775s12u531b642b117e5326;14367s15u0b-193e-14;96s13u0;81s5u0;3s8u0;7s10u0;5s1u0;6s7u0;3s3u0;6s6u0b0;40s17u0b-523e72;0s16u0b521b2x5415e0;245s11b55b28e-58;3345s2u-2;5s9u2;5611s14$",
+				},
+				["US:Gallywix:Roha"] = {
+					[1450806466] = "$28;US;Gallywix;Roha;Mestres De Azeroth;2;1;100;13:700,15:694,12:700,1:700,14:700,5:710;1;.s1;2;2131212;58623,19,15,23,629,2950;.q1;109838s6b642b117;4394s5b-577b352b84;1562s11b-434b355b0b79e5326;8348s15b-57b5e-14;77s2b-5b5e7;19s13b0;83s8b-2b2x5415;6s10b0;5s1b0;6s7b-5b5;6s3b0;8s9b-5b5;22s17b0e-1949;0s16b0e-2;260s12b72b12e1958;8961s14$",
 				},
 				["US:Shu'halo:Goonner"] = {
 					[1450802091] = "$31;US;Shu'halo;Goonner;cursed ones;13;1;100;10:700,15:700,12:700,13:715,14:700,5:700;1;.s1;13;3323233;56364,13,7,6706,83572,314;.q1;114809s3u531b142b396b80;5s9u0b-482b402b80;984s11u0b-473b395b0b78e5327;8339s15u0b-52e-14;11s8u0b-2b2x5416;6s10u0b-3x0;6s1u0b1b2x0;5s7u0b0;6s5u0;29s6u0b0;5s17u0b0;7s2u0b0e7;17s13u0b0;1s14u0;153s16u0b-524b524e17;252s12b62b22e-10$",
@@ -3081,25 +3086,26 @@ AskMrRobotDb2 = {
 					[1450802091] = "$31;US;Kel'Thuzad;Symphy;;13;1;100;13:715,15:700,11:700,6:700,14:700,12:700;2;.s2;13;2311333;56364,13,6713,83572,314;.q2;114815s8u531b136b401b81;983s12u0b-489b410b79e5327;8339s15u-2b-52e-14;17s10u2b-2b2x5349;4s1u-1b0;7s7u1b0;6s5u0b0;5s3u0b0;7s9u0b1;17s6u0b-525b524;11s2u0b-2b2x0e7;18s13u0b0;1s14u0b0;150s16u0b0e17;255s11b65b19e-10$",
 					[1450803903] = "$31;US;Kel'Thuzad;Symphy;;13;1;100;13:715,15:700,11:700,6:700,14:700,12:700;2;.s2;13;2311333;56364,13,6713,83572,314;.q2;114815s8u531b136b401b81;983s12u0b-489b410b79e5327;8339s15u-2b-52e-14;17s10u2b-2b2x5349;4s1u-1b0;7s7u1b0;6s5u0b0;5s3u0b0;7s9u0b1;17s6u0b-525b524;11s2u0b-2b2x0e7;19s14u0b0;150s16u0b0e17;136s13u0b0;119s11b65b19e-10$",
 				},
-				["US:Argent Dawn:Siouxsie"] = {
-					[1450803896] = "$28;US;Argent Dawn;Siouxsie;Gnomes Will Eat You;6;1;100;13:700,15:358,12:700,1:700,14:659,6:700;2;.s2;23;1312132;56799,1234,6,5210,19,1;.q2;116176s3b61b474b83;6s8b-555b473b82;7953s15b-52e5312;53s12b-525b523b2x5348e14;22s2b0e-7;14s13b-5b3b2x67;24s5b0;9s10b0;6s1b0;6s7b0;7s6b-2b2x0;3s9b-5b5;88s17b0e15;0s16b0e50;153s14u531;116s11b68b16e-58$",
+				["US:Ysera:Heavenzgate"] = {
+					[1451407132] = "$31;US;Ysera;Heavenzgate;Crusaders of the Light;2;1;100;10:700,13:1,14:1,4:652;1;.s1;13;2311331;56364,13,6713,83572,314;.q1;114816s6u531b137b401b80;3s15u0b-475b395b80e5311;9329s8u0b-54b2x5416;6s10u0;6s1u0b-5b5;5s7u0b0;5s5u0b0;7s3u0b0;8s9u0b-2b2x-67;6s12u0b-5b5e16;38s13u0b-5b5;1s14u0b0;151s16u0b-524b524e10;254s11b64b20e-10;3342s2u0b-87x0e-7$",
 				},
-				["US:Caelestrasz:Finney"] = {
-					[1450842779] = "$31;US;Caelestrasz;Finney;Alliance United;4;1;100;10:700,15:700,12:700,13:700,14:700,4:700;1;.s1;11;3211323;56384,5826,882,26657,25969,43768;.q1;109865s9u531b523b119b115x5348;3269s16u0b-649b421b91e5384;803s15b-58b5e-72;10212s8u0;5s10u0;5s1u0b-1;6s7u0;6s5u0b0;6s3u0;15s11u0b-6e14;8s6u0;12s2u0b0e-7;17s13u0;1s14u0b0;405s12b67b22e7$",
+				["US:Khaz'goroth:Trimension"] = {
+					[1451409074] = "$31;US;Khaz'goroth;Trimension;Vanguard Elite;5;1;100;10:700,15:2,3:700,13:700,14:532,12:700;2;.s2;13;3211231;56364,13,7,6706,2,83884;.q2;109804s7u529b642b115;41s10u0b-115b2;4970s8u2b-566b459b81;1s6u0b-484b404b80;3s15u0b-477b397b80e5313;9341s1u0b-57b5;11s5u0;5s3u-2b0;7s9u2b0;7s12u0b0e14;16s17u0b0;24s14u0b0;154s16u0b0e10;7s2u0b-3x5416e-17;244s11b59b27e7;8961s13$",
 				},
-				["US:Frostmourne:Sylvair"] = {
-					[1451287248] = "$31;US;Frostmourne;Sylvair;Centurion Knights;6;1;100;13:700,15:700,12:700,8:700,14:700,2:700;1;.s1;9;1123333;56850,1016,61581,15,2,12642;.q1;109792s8u531b642b2;6004s11u0b-577b473b78e5324;378s15u0b-551b468b83e-14;20s6u0b-548b466b82;8016s2u0b-52e7;14s14u0b0;60s5u-2b-6;7s10u2b6;5s1u0b0;5s7u0b-2b2x5413;6s3u-2;7s9u2b0;47s16u0b-6e-41;184s13u0;91s12b71b18e48$",
+				["US:Korialstrasz:Pounderr"] = {
+					[1451409064] = "$31;US;Korialstrasz;Pounderr;Epic Guardians;6;1;100;13:700,15:700,12:700,8:700,14:700,2:700;1;.s1;4;2122331;54733,59489,73,6,32354,12800;.q1;109829s6u531b523b119b115x5415;42s9u0b-234b119b116x0;5930s2u0b-641b423b78e5319;379s5u0b-500b417b83;7956s15u0b-57b3b2x0e-7;55s11u0b-2b2x0e14;61s8u0b-5b5;3s10u0b-526b524b2x0;6s1u0b0;6s7u0b0;5s3u0;110s16u0b0e58;132s14u0b0;31s13u0b-526;90s12b589b20e-58$",
 				},
 			},
 			["PlayerExtras"] = {
 				["US:Eonar:Badandevil"] = {
+					[1451407146] = "1126,333,18758,1345,35768,20439,39187,38566,542,359,7850,4536,2,4157,2488,5289;_",
 					[1450802121] = "1126,333,18281,1822,13158,20890,1720,20439,32004,7008,39283,8209,4538,6645,5289;_",
-					[1450803141] = "19506,58263,35973,3214,39108,8209,2915,1623;_",
-					[1450801025] = "139,987,333,18281,1822,34048,1720,20439,32004,7008,39283,359,7850,4536,2,6645,5289;_",
 					[1450802155] = "1126,333,18281,1822,13158,20890,1720,20159,280,32004,7008,39279,4,8209,4538,6645,5289,7457;_",
+					[1450801025] = "139,987,333,18281,1822,34048,1720,20439,32004,7008,39283,359,7850,4536,2,6645,5289;_",
 					[1450803874] = "139,987,333,5214,13067,1822,13517,42690,35973,3039,39283,359,7850,4538,6645,5289;_",
-					[1450802064] = "1126,333,1586,16695,1822,13517,20531,1720,20439,32004,7008,39283,8209,4536,6647,5289;_",
 					[1450802756] = "1126,333,3659,1555,13067,1822,56207,32004,3969,42322,359,7850,4538,6645,5289;_",
+					[1450802064] = "1126,333,1586,16695,1822,13517,20531,1720,20439,32004,7008,39283,8209,4536,6647,5289;_",
+					[1450803141] = "19506,58263,35973,3214,39108,8209,2915,1623;_",
 				},
 				["US:Drak'thul:Jackie"] = {
 					[1450802121] = "139,635,18732,22129,6803,7172,21879,37806,13,10051,30418,2523,8628;_",
@@ -3148,10 +3154,19 @@ AskMrRobotDb2 = {
 					[1451322999] = "1459,95882,19615,39123,30325;_",
 					[1451322929] = "19506,77835,58738,30325;_",
 				},
+				["US:Proudmoore:Lavits"] = {
+					[1451407146] = "324,802,333,18758,1345,35768,59626,39108,359,16545,7780;_",
+					[1451407931] = "324,145,657,333,18281,37590,59626,39108,359,16545,7780;_",
+				},
 				["US:EarthenRing:Foelgan"] = {
 					[1450803874] = "139,987,333,5214,10946,2121,1822,30565,1263,2220,18075,3804,36253,3039,1692,37606,6478,12900,5293;_",
 					[1450803141] = "17619,34508,5203,56412,3214,39123,11109;_",
 					[1450802756] = "1126,333,5214,10946,3943,30565,57646,7183,39123,19378,5293;_",
+				},
+				["US:Vek'nilash:Scattertrap"] = {
+					[1451420299] = "17,1109,3992,14388,2056,3370,30678,22159,32004,7183,39108,359,7850,4538,6645;_",
+					[1451419898] = "5118,14388,58263,82431,4073,11183,695,13848,633;_",
+					[1451419814] = "5118,14388,58263,82431,4073,11183,695,13848;_",
 				},
 				["US:WyrmrestAccord:Warpdrive"] = {
 					[1450806706] = "1126,333,10583,7698,1822,35768,56412,42337,347,19031,5291;_",
@@ -3184,6 +3199,9 @@ AskMrRobotDb2 = {
 					[1450842758] = "1126,333,18281,1822,35768,52443,7183,39124,24670;_",
 					[1450843914] = "1126,333,18281,1822,34048,1720,52443,46307,4817;_",
 				},
+				["US:Frostmourne:Lethiaa"] = {
+					[1451409048] = "1126,333,3659,1555,18234,52862,35973,2179,40143,4135,4074,4538,4157,2488,5289;_",
+				},
 				["US:Korialstrasz:Baconstrip"] = {
 					[1451287213] = "1459,18281,1822,28306,7462,20439,38152,1035,2655,36453,359,7850,2914,1624,6645,5289,5659;_",
 					[1451288009] = "1459,5214,13067,1822,28306,27901,38152,1035,39108,359,7850,2915,1623,6645,5289,5659;_",
@@ -3202,6 +3220,11 @@ AskMrRobotDb2 = {
 					[1450842758] = "17,957,152,333,18281,1822,4218,27783,0,1394,2373,3965,3786,21192,0,23500,3969,5869,32507,3962,2220,22448,4410,717;_",
 					[1450843914] = "17,757,200,152,333,18281,1822,4218,15855,11928,0,2047,1720,28943,0,23500,9838,36166,2523,22448,4022,388;_",
 				},
+				["US:Frostmourne:Grávedancer"] = {
+					[1451420299] = "1126,18380,2056,3370,17718,5616,1602,23100,36805,7183,58483;_",
+					[1451419898] = "19506,28760,7344,17358;_",
+					[1451419814] = "48266,7344,17358,117031;_",
+				},
 				["US:Dalaran:Iolmonkdps"] = {
 					[1451363493] = "17,757,352,333,5214,13067,1822,12201,14500,959,6388,9471,12408,3767,35525,38996,307,2216,8346,270,13833,3182,839,1634,1213;_",
 					[1451364439] = "139,330,990,5214,13067,14737,7158,6628,959,32034,32486,3039,39303,826,1390,8346,542,13561,4021,1634;_",
@@ -3215,21 +3238,27 @@ AskMrRobotDb2 = {
 					[1451323397] = "1126,333,5214,14889,56207,32004,3969,15255,27067,359,7850,4538,6645,5289,5659;_",
 					[1450806706] = "1126,333,5894,12387,1822,34048,1720,20439,32004,46650,7850,4538,11934;_",
 					[1451288009] = "1459,5214,13067,1822,28306,27901,38152,1035,39108,359,7850,2915,1623,6645,5289,5659;_",
-					[1450803141] = "57330,20439,35973,3214,39108,8209,2915,1623;_",
+					[1451364439] = "139,330,305,685,5214,13067,14980,42769,280,35973,3039,39283,359,7850,2373,270,272,1621,2,6645,5289,5659,15004;_",
+					[1450802155] = "774,18732,15214,20890,21879,280,78295,8209,2655,260,1621,2;_",
 					[1450806437] = "20217,1345,34048,1720,20439,32004,45749,4678,4073,2915,1623,11934;_",
+					[1451322929] = "1126,333,20103,13158,22610,20439,32004,7183,9198,29910,8209,4538,6645,5289,5130,529;_",
 					[1451323035] = "19506,58263,32004,3969,15255,27067,3924,4285,2655,1881,17595;_",
+					[1450803141] = "57330,20439,35973,3214,39108,8209,2915,1623;_",
+					[1451407146] = "1126,333,18758,1345,35768,20439,39187,39108,359,7850,4538,4157,2488,5289;_",
+					[1451420299] = "1126,18380,2056,3345,25,30678,22159,32004,46291,4136,4073,4538;_",
+					[1450801025] = "1126,333,18281,1822,34048,1720,20439,32004,7008,39283,359,7850,4538,6645,5289;_",
 					[1450802064] = "1126,333,18281,1822,13158,20890,1720,20439,32004,7008,39283,8209,4538,6645,5289;_",
 					[1450843914] = "1126,333,18281,1822,35768,20439,32004,7183,39108,359,7850,4536,2,6645,5289;_",
-					[1450801025] = "1126,333,18281,1822,34048,1720,20439,32004,7008,39283,359,7850,4538,6645,5289;_",
+					[1451322866] = "1126,333,20103,35768,20439,32004,7183,39108,8209,4538,6645,5289,5659;_",
 					[1450842758] = "1126,333,20103,35768,20439,32004,7183,2655,36453,359,7850,4538,6645,5289;_",
 					[1451287213] = "1459,3659,14388,234,30128,27901,38152,3690,36453,8209,2915,1621,2,6645,5289,5659;_",
 					[1451363493] = "139,987,333,3659,1555,14889,55927,280,35973,3039,38741,542,359,7850,2373,2165,6645,5289,5659,15004;_",
-					[1450802155] = "774,18732,15214,20890,21879,280,78295,8209,2655,260,1621,2;_",
-					[1451322866] = "1126,333,20103,35768,20439,32004,7183,39108,8209,4538,6645,5289,5659;_",
-					[1451322929] = "1126,333,20103,13158,22610,20439,32004,7183,9198,29910,8209,4538,6645,5289,5130,529;_",
+					[1451419898] = "19506,36104,22159,35973,42322,8209,4536;_",
+					[1451407931] = "469,657,333,18281,37590,20439,39187,39108,8209,4536,2,4157;_",
+					[1451409048] = "1126,333,3659,1555,18234,52862,35973,2179,40143,359,3776,4074,4538,4157,2488,5289;_",
 					[1451322999] = "19506,5098,53165,32004,46291,8209,2655,1883,17593;_",
 					[1450802756] = "1126,333,5214,13067,1822,56207,32004,3969,42322,359,7850,4536,2,6645,5289;_",
-					[1451364439] = "139,330,305,685,5214,13067,14980,42769,280,35973,3039,39283,359,7850,2373,270,272,1621,2,6645,5289,5659,15004;_",
+					[1451419814] = "1126,18380,234,1822,3370,24936,5742,5706,16453,78295,8209,4536,18811;_",
 				},
 				["US:Ravencrest:Airchan"] = {
 					[1451323035] = "1459,18047,2056,26701,959,1199,2944,24170,36207,1109,40671,558,2220,1688,4059,22357;_",
@@ -3239,9 +3268,17 @@ AskMrRobotDb2 = {
 					[1451322999] = "1459,46804,65479,41780,558,2220,28104;_",
 					[1451322929] = "139,835,152,333,5481,14622,26701,2158,2944,198,1394,2373,3965,0,16194,32284,3969,1109,4672,6631,29368,558,242,1978,5747,16702,5126,529;_",
 				},
+				["US:Stormrage:Lázerchicken"] = {
+					[1451420299] = "1126,18380,2056,3296,49,25,24936,52692,7213,2298,44008,347,3774,15257,5293;_",
+					[1451419898] = "156079;_",
+					[1451419814] = "1126,18614,1822,3296,74,32398,3986,41244,9511,1671,42337,347,8121,8775,2135,5293,3174,1065,2627,470;_",
+				},
 				["US:WyrmrestAccord:Kanrethad"] = {
 					[1450842758] = "1126,333,20103,26456,9312,51173,1270,7183,25291,13832,19378,13077;_",
 					[1450843914] = "1126,333,18281,1822,26456,7592,1720,51173,1270,32474,13832,19378,5291;_",
+				},
+				["US:Gallywix:Lupusl"] = {
+					[1451407146] = "1126,333,18758,1345,35768,20439,39187,38566,542,359,7850,4538,4157,7777;_",
 				},
 				["US:Frostmourne:Cerebbral"] = {
 					[1450842758] = "1126,333,325,1039,585,16332,1822,35768,15638,20369,16436,3169,4014,31473,7635,359,24327;_",
@@ -3307,6 +3344,10 @@ AskMrRobotDb2 = {
 					[1450842758] = "1126,333,18281,1822,26701,959,6388,1720,52443,9838,22633,9874,3962,350,480,0,1390,17139,5311,4408;_",
 					[1450843914] = "17,757,352,333,18281,1822,26701,6694,2373,3965,24978,0,23500,7183,2655,22633,13533,303,242,108,480,0,1390,17139,5311,4408;_",
 				},
+				["US:Goldrinn:Wrâthmâgic"] = {
+					[1451407146] = "1126,333,18758,1345,3296,49,32423,59626,39123,347,16542,2489,5293;_",
+					[1451407931] = "469,657,333,18281,5118,32472,59626,39123,347,16542,2489,5293,10087;_",
+				},
 				["US:Nemesis:Reaperqt"] = {
 					[1450802121] = "17,1109,333,998,10423,6860,1822,26876,7172,1720,7751,20658,24034,7008,14335,11133,13831,17242,2117,9791;_",
 					[1450803141] = "2457,54873,56412,3214,25293,13831,11108;_",
@@ -3352,6 +3393,9 @@ AskMrRobotDb2 = {
 					[1451322999] = "19506,5098,85169,46306,3596,7253,8529,5291,5656;_",
 					[1451322929] = "1459,20103,35768,51173,1270,3969,118,3096,39123,1619,2290,15469,5291,5656;_",
 				},
+				["US:Drak'thul:Bulgür"] = {
+					[1451407146] = "1126,333,18758,1345,3296,49,32423,45230,14396,56012,3183,4599;_",
+				},
 				["US:Sargeras:Frózen"] = {
 					[1451323035] = "1459,18047,25038,3209,10008,55981,2525,689,39123,3597,312,6940,19476;Player-76-08A53E8B,Pet-0-3782-1448-7568-78116-0202646591",
 					[1451322326] = "1126,333,11013,7034,2056,39733,48478,3969,15255,27082,347,19031,5292,5655;Player-76-08A53E8B,Pet-0-3782-1448-7568-78116-0102646591",
@@ -3360,9 +3404,40 @@ AskMrRobotDb2 = {
 					[1451322999] = "1459,154620,30325;_",
 					[1451322929] = "1126,333,20103,22982,12786,20159,20518,11766,3969,2525,689,39123,19378,1719,3573,5655;Player-76-08A53E8B,Pet-0-3782-1448-7568-78116-0102646591",
 				},
+				["US:Ysera:Heavenzgate"] = {
+					[1451407146] = "1126,333,18758,1345,35768,59626,38566,557,16889,2489,5292;Player-63-09E75CA4,Pet-0-3675-1464-15-78116-0102BE9F80",
+					[1451407931] = "469,657,333,18281,37590,59626,39123,16889,2489,5292;Player-63-09E75CA4,Pet-0-3017-1448-22463-78116-0102BE9F80",
+				},
+				["US:Sargeras:Wyana"] = {
+					[1451420299] = "1126,1331,17049,2056,3345,25,24936,5742,100470,348,19011,5311;_",
+				},
+				["US:Tanaris:Reforge"] = {
+					[1451419814] = "1126,18614,1822,3370,24936,5742,1720,3986,61682,33081,19378,5291,6868;_",
+					[1451419898] = "17,1109,18614,1822,26876,1430,5742,1720,3986,54951,3344,3387,33081,19378,5291,9875;_",
+				},
 				["US:Nemesis:Gambisloide"] = {
 					[1450842758] = "1126,333,9967,1046,9090,35768,52443,7183,2655,22631,13837,347,19031,5292;Player-3208-081E0DA9,Pet-0-3782-1448-22204-78116-01021FFE29",
 					[1450843914] = "1126,333,9967,1046,7268,1822,34048,1720,52443,6494,25975,13837,347,19031,5292;Player-3208-081E0DA9,Pet-0-3782-1448-22204-78116-02021FFE29",
+				},
+				["US:Nemesis:Carronte"] = {
+					[1450802121] = "1126,333,18281,21895,13975,1720,51173,1270,7008,39298,10849,13817;_",
+					[1450801025] = "1126,333,18281,1822,34048,1720,51173,1270,7008,2830,36468,347,19031;_",
+					[1450802756] = "1126,333,5214,13067,1822,86941,1270,3969,42337,347,19031,5288;_",
+					[1450802155] = "1126,333,18281,28013,7857,1720,20159,31014,1270,7008,1047,38251,10849,6394,7423,3179,1179;_",
+					[1450802064] = "1126,333,18281,35870,1720,51173,1270,7008,39298,10849,13817;_",
+				},
+				["US:Kel'Thuzad:Hadlie"] = {
+					[1451420299] = "17,1109,18380,2056,3370,30678,4279,13079,36805,7183,38406,717,347,3774,15257,5293,5728;_",
+					[1451419898] = "40192,32776;_",
+					[1451419814] = "2479,70489;_",
+				},
+				["US:EmeraldDream:Neryssia"] = {
+					[1451420299] = "1126,18380,2056,3345,25,30678,52893,1270,4085,29767,12454,347,19031;_",
+				},
+				["US:Proudmoore:Bellakijo"] = {
+					[1451420299] = "1126,18380,2056,3345,25,30678,45367,8796,50427,15257;_",
+					[1451419898] = "1126,18380,2056,34048,5706,39661,12765,5869,40067,15779;_",
+					[1451419814] = "1126,18380,2056,3345,25,24936,11448,98362,15779;_",
 				},
 				["US:Ragnaros:Seigen"] = {
 					[1450806706] = "17,1109,333,998,4896,12387,1822,35768,7751,7887,36805,3969,42338,348,351,18660,5306;_",
@@ -3374,8 +3449,46 @@ AskMrRobotDb2 = {
 					[1451363493] = "139,987,333,998,4216,13067,1822,34048,21879,39292,39299,10566,270,6406,3853,3575,3191,2463;_",
 					[1451364439] = "139,330,990,998,4216,13067,94002,3039,39299,348,10218,270,272,6134,3853,3575,3191,2463;_",
 				},
+				["US:AlteracMountains:Triassa"] = {
+					[1451409048] = "1126,333,5214,18234,52862,35973,2179,26323,13820,4135,4074,4538,6645,5289;_",
+				},
+				["US:Runetotem:Turick"] = {
+					[1451420299] = "1126,1919,16461,2056,3345,25,30678,22159,32004,32474,13817,359,3777,4073,4538,6645,5289;_",
+					[1451419898] = "19506,28247,2115,5742,22159,64478,22026,4538,6645,8470;_",
+					[1451419814] = "1126,18380,2056,3345,25,24936,5742,5706,16453,64478,22026,4538,6645,12164;_",
+				},
 				["US:Stormrage:Salahuddin"] = {
 					[1450803874] = "1126,333,5214,13067,1822,26703,7345,58132,3039,26844,12455,348,19011,1019,186,4105;Player-60-0A14B84B,Pet-0-3133-1448-22011-26125-0102CD9790",
+				},
+				["US:ShadowCouncil:Stephei"] = {
+					[1451407146] = "1126,333,18758,1345,3345,27220,1263,3940,3965,55661,39123,3599,13290,2489,5293;_",
+					[1451407931] = "469,77,580,333,1186,17095,32387,5203,59626,39123,16889,2489,5293;_",
+				},
+				["US:Stormrage:Rheolynx"] = {
+					[1450842758] = "1126,333,18281,1822,35768,52443,3969,42337,347,24319,4831;_",
+					[1450843914] = "1126,333,18281,1822,32587,3181,28943,23500,3969,42337,243,104,6841,12190,5288,4355,476;_",
+				},
+				["US:Proudmoore:Crazynutz"] = {
+					[1451420299] = "324,802,18380,2056,3370,24936,67088,1514,37609,347,3774,2357,2905,9995,5292;_",
+				},
+				["US:Galakrond:Therehn"] = {
+					[1451420299] = "17,54,703,352,18614,1822,3370,22821,9577,52443,3969,5869,36473,695,1521,1900,15239,5311,4020,388,3392;_",
+					[1451419898] = "71,703,352,11754,6860,1822,10654,9419,15695,3986,52426,5869,12509,284,23373,307,695,1521,15022,2117,5311,4020,388,3392;_",
+					[1451419814] = "71,703,352,18614,1822,3370,32398,3986,52426,42342,695,1521,15022,2117,5311,4020,3780;_",
+				},
+				["US:Aggramar:Laath"] = {
+					[1450803874] = "1126,333,998,4216,13067,1822,92180,3039,175,39124,348,19011,5306;_",
+					[1450803141] = "2457,17049,94236,3214,39124,11108;_",
+					[1450802756] = "1126,333,998,4216,14889,88211,3969,3214,39124,348,24317;_",
+				},
+				["US:Korgath:Volechek"] = {
+					[1451420299] = "17,1109,14347,4033,2056,3370,30678,54163,7183,39123,347,3774;_",
+					[1451419898] = "15473,4033,28932,1430,5742,64001,3643,32825;Player-1146-075E0866,Creature-0-3782-1448-30225-19668-000002E915",
+					[1451419814] = "17,49851,15213,90998;_",
+				},
+				["US:Dalaran:Hazzar"] = {
+					[1451287213] = "324,1135,18281,1822,28306,7462,58591,1035,1514,1053,88,36468,347,6131,2905,1725,8270,5292,5655;_",
+					[1451288009] = "324,1135,5214,13067,1822,28306,66053,1035,1514,1141,36468,347,6131,2905,1726,8269,5292,5655;_",
 				},
 				["US:Gilneas:Nourishing"] = {
 					[1450802121] = "1126,333,46979,7172,1720,43647,55102,3596,7253;_",
@@ -3385,6 +3498,9 @@ AskMrRobotDb2 = {
 					[1450803874] = "1126,333,5214,13067,1822,34048,58132,3039,39298,24669;_",
 					[1450802064] = "1126,333,18047,36104,58132,42337,10849;_",
 					[1450802756] = "1126,333,5214,13067,1822,88211,3969,42337,3596,21073;_",
+				},
+				["US:Stormrage:Slayerjim"] = {
+					[1451409048] = "469,657,333,5214,18234,52862,35973,2179,26326,13817,359,7850,4538,4157,2488,5289;_",
 				},
 				["US:Shu'halo:Goonner"] = {
 					[1450802121] = "139,1320,40176,6118,7857,1720,20159,32284,6494,514,39298,10849,259,8270,5292;Player-47-06A5329E,Pet-0-3133-1448-22011-78116-0101CC089F",
@@ -3402,10 +3518,23 @@ AskMrRobotDb2 = {
 					[1450802155] = "1459,18047,36104,21879,38778,39812,10849,8529;Player-3693-0766ECD9,Pet-0-3133-1448-22011-78116-020209D7B2",
 					[1450802756] = "1126,333,5214,4753,8314,1822,36199,52012,3969,2525,39812,347,19031,5292;Player-3693-0766ECD9,Pet-0-3133-1448-22011-78116-020209D7B2",
 				},
-				["US:Aggramar:Laath"] = {
-					[1450803874] = "1126,333,998,4216,13067,1822,92180,3039,175,39124,348,19011,5306;_",
-					[1450803141] = "2457,17049,94236,3214,39124,11108;_",
-					[1450802756] = "1126,333,998,4216,14889,88211,3969,3214,39124,348,24317;_",
+				["US:Gilneas:Foxyshawty"] = {
+					[1450802121] = "17,1109,333,18281,1822,20073,13975,1720,2559,49884,7008,6473,32108,17960,7423;_",
+					[1450803141] = "_;_",
+					[1450801025] = "139,987,333,18281,1822,35768,20159,32284,3969,3039,63964;_",
+					[1450802155] = "139,635,352,333,18281,1822,23680,3262,7106,1720,2559,17600,32284,7008,6473,32108,25383,4358,1375;_",
+					[1450803874] = "1126,333,5214,13067,1822,34048,58132,3039,39298,19378,5288;_",
+					[1450802064] = "1126,333,18281,1822,34048,1720,2559,49884,7008,38581,25383;_",
+					[1450802756] = "1126,333,5214,13067,1822,34048,54163,70972;_",
+				},
+				["US:Khaz'goroth:Jenmonk"] = {
+					[1451409048] = "1126,333,5214,18234,88835,2179,40158,4120,15258,5292;_",
+				},
+				["US:Proudmoore:Leiya"] = {
+					[1451409048] = "1126,333,5214,18234,88835,2179,40158,4120,15258,5291;_",
+				},
+				["US:Nemesis:Bloodlined"] = {
+					[1450803874] = "1126,333,3659,1555,13067,1822,34048,22159,35973,3039,39283,359,7850,4538,6645,982,4307;_",
 				},
 				["US:Goldrinn:Chesterfield"] = {
 					[1451323035] = "19506,34643,55624,3969,28500,13280,557,3909,6940,19476;_",
@@ -3415,6 +3544,15 @@ AskMrRobotDb2 = {
 					[1451322999] = "498,961,18047,66767,30683,25286,13837,29021,1304;_",
 					[1451322929] = "1459,20103,35768,52443,3969,3214,25286,13837,3155,754,15469,10119,828;_",
 				},
+				["US:Khaz'goroth:Trimension"] = {
+					[1451409048] = "469,657,333,5214,18234,88835,2179,40158,16889,2489,5292,10077;Player-3726-09B5700D,Pet-0-3748-1448-21226-78116-0402538CE4",
+				},
+				["US:ShadowCouncil:Looneyluna"] = {
+					[1450806706] = "1126,333,5894,12387,1822,34048,1720,51173,1270,46306,347,353,23971;_",
+					[1450806437] = "1126,19091,1345,35768,51173,1270,3969,41780,557,700,3421,20550;_",
+					[1450807225] = "1126,333,20103,35768,51173,1270,3969,41780,557,347,353,23971;_",
+					[1450807388] = "17,1109,333,20103,35768,40133,11040,1270,3969,41780,557,700,23971;_",
+				},
 				["US:KhazModan:Naheva"] = {
 					[1451323035] = "19506,58263,35973,4952,37370,30340;Player-121-060F8166,Pet-0-3782-1448-7568-79755-050237572F",
 					[1451322326] = "1126,333,18047,2056,40086,16121,32004,7183,1738,37370,19392,5294,5654;Player-121-060F8166,Pet-0-3782-1448-7568-79755-010237572F",
@@ -3423,13 +3561,29 @@ AskMrRobotDb2 = {
 					[1451322999] = "19506,5098,37044,16121,40925,37370,10864,19476;Player-121-060F8166,Pet-0-3782-1448-7568-79755-040237572F",
 					[1451322929] = "19506,58263,78295,30340;_",
 				},
+				["US:Korialstrasz:Exstinct"] = {
+					[1451323035] = "19506,68,41,1947,92180,3214,12041,26525,542,3924,15468,8470,2478;Player-123-060875EB,Pet-0-3782-1448-7568-27329-03022E7390",
+					[1451322326] = "1126,333,3659,14388,2056,88211,3969,15255,27067,19392,5294,892,4762;Player-123-060875EB,Pet-0-3782-1448-7568-77140-01022E70FC",
+					[1451323397] = "1126,333,5214,12901,1988,88211,3969,41780,542,359,19033,5294,5654;Player-123-060875EB,Pet-0-3782-1448-7568-27329-03022E7390",
+					[1451322866] = "1459,18115,1988,35768,52443,7183,39108,3924,7199,8269,5294,5654;Player-123-060875EB,Pet-0-3782-1448-7568-27329-02022E7390",
+					[1451322999] = "156064,30340;_",
+					[1451322929] = "17,1442,18156,1947,20073,0,15695,52443,7183,39108,3924,15468,5294,5654;Player-123-060875EB,Pet-0-3782-1448-7568-27329-02022E7390",
+				},
 				["US:Alleria:Knotai"] = {
 					[1451287213] = "1459,325,1199,16757,1822,35768,36491,19121,800,2179,3690,18602,17851,1520,9603,8269,10948,2130,3691;_",
 					[1451288009] = "1459,325,1199,3690,13067,1822,36372,35887,19121,800,2179,22292,17851,359,1161,9604,8268,10948,2130;_",
 				},
+				["US:Frostmourne:Yoloshoota"] = {
+					[1451409048] = "1126,333,5214,18234,52862,35973,2179,40143,359,3776,4074,4538,4157,2488,5289;_",
+				},
 				["US:Nemesis:Thyraz"] = {
 					[1450842758] = "1126,333,23399,49,30703,1720,52443,15201,31105,347,8121,2381,8529,5293,4239;_",
 					[1450843914] = "1126,333,18281,1822,3296,30752,1720,3965,48478,15201,31105,347,8121,10910,5293;_",
+				},
+				["US:Medivh:Savaant"] = {
+					[1451420299] = "1126,14347,4033,2056,3345,25,24936,59905,46306,347,3774,15257,5293;_",
+					[1451419898] = "15473,4033,22129,8233,5742,64001,3643,32825,17243;Player-62-0102EC83,Creature-0-3782-1448-30225-19668-000002E911",
+					[1451419814] = "586,540,14347,4267,1822,3370,24936,5742,1720,3986,94763,347,16896,2135,5293,6866,13794;_",
 				},
 				["US:Goldrinn:Blackwar"] = {
 					[1451323035] = "1459,507,1442,16098,90267,3969,15255,14628,12439,655,865,2091,313,6940,19476,15004;_",
@@ -3446,11 +3600,14 @@ AskMrRobotDb2 = {
 				["US:Quel'Thalas:Baggìns"] = {
 					[1450801025] = "139,987,333,18281,1822,34048,1720,15638,4521,32284,7008,2830,36468,347,24323;Player-1428-05B9A8C9,Pet-0-3133-1448-22011-78116-01020AA987",
 				},
-				["US:Dalaran:Yingzong"] = {
-					[1450806706] = "1126,333,5894,10266,2121,1822,34048,1720,20439,32004,16661,29630,8209,4538,6645,5289;_",
-					[1450806437] = "17619,2598,1345,34048,1720,20439,32004,16661,29088,542,4136,4073,4538,6645,5289;_",
-					[1450807225] = "1126,333,16160,3943,35768,20439,35973,12692,29088,542,8209,4538,6645,5289;_",
-					[1450807388] = "1126,333,16160,3943,13158,22610,20439,8504,11190,16279,12692,29088,542,8209,4538,6645,5289;_",
+				["US:Stormrage:Emean"] = {
+					[1450801025] = "1126,333,18281,1822,26703,7345,1720,52443,7008,2830,36469,348,19011,5310;Player-60-09566A48,Pet-0-3133-1448-22011-26125-0102CF6F8F",
+				},
+				["US:Turalyon:Magicbringer"] = {
+					[1450806706] = "1126,333,5894,12387,1822,35768,40011,11498,4903,2525;_",
+					[1450806437] = "20217,1345,34048,1720,40011,12432,45749,4678,6987,13563;_",
+					[1450807225] = "1126,333,20103,34048,1720,22353,17658,12432,45749,904,24324;_",
+					[1450807388] = "774,352,333,20103,34048,1720,40011,122,12310,6494,39255,17800,7428;_",
 				},
 				["US:Goldrinn:Arauto"] = {
 					[1451323035] = "142246,13833,30325,1212;_",
@@ -3460,14 +3617,39 @@ AskMrRobotDb2 = {
 					[1451322999] = "1459,18047,94236,28504,13276,557,30325;Player-3207-054F328F,Pet-0-3782-1448-7568-78116-02021A1D0A",
 					[1451322929] = "142246,13833,30325;Player-3207-054F328F,Pet-0-3782-1448-7568-78116-01021A1D0A",
 				},
-				["US:Nemesis:Bloodlined"] = {
-					[1450803874] = "1126,333,3659,1555,13067,1822,34048,22159,35973,3039,39283,359,7850,4538,6645,982,4307;_",
+				["US:Nemesis:Nerdstark"] = {
+					[1450802121] = "1126,333,16160,2121,1822,26704,172,269,2417,2241,2245,1720,52443,7008,9373,17471,12455,19359,5309,7145,1;_",
+					[1450801025] = "1126,333,16160,2121,1822,21088,5616,7344,1720,52443,7008,26844,12455,19359,5309;_",
+					[1450802756] = "1126,333,5214,10946,2121,1822,21088,5616,7344,54163,33852,12455,19359,5309;_",
+					[1450802155] = "1126,333,16160,2121,1822,20073,0,6631,2858,2241,2245,1720,20159,32284,7008,26844,12455,19359,5309,7145,1;_",
+					[1450802064] = "1126,333,16160,2121,1822,26704,7344,1720,38938,13505,7008,26844,12455,19359,5309;_",
+				},
+				["US:Draenor:Zalionon"] = {
+					[1450807388] = "17,1109,333,7477,12626,12201,7872,6628,241,4861,3965,15638,4567,8738,11190,12310,3969,1109,40671,558,242,588,1390,5747,11392,5173,137,4021;_",
+					[1450807225] = "17,757,352,333,20103,26701,959,8108,15638,13305,9995,13505,3969,41780,558,348,482,1390,17139,5310,4021;_",
+					[1450806706] = "17,757,352,333,7477,10804,1822,12201,14500,241,718,6388,1720,15638,13305,23500,46307,830,1390,17139,1019,186,4105,4021;_",
+					[1450806437] = "774,0,352,7810,11281,1345,26701,959,1199,2944,2245,1720,15638,36805,45749,255,303,830,1390,1900,15239,1019,186,4105,4021;_",
+					[1451409048] = "469,657,333,5214,18234,23358,24703,40774,2179,40159,24669;Player-115-070655E6,Pet-0-3748-1448-21226-26125-010229AB47",
+				},
+				["US:Stormrage:Yosim"] = {
+					[1451407146] = "1126,333,18758,1345,21088,5613,959,8108,3965,50464,5197,35162,3404,562,826,1390,14668,2471,5310,4021,2847;_",
+					[1451407931] = "139,330,657,333,18281,22910,5613,959,8108,20159,8784,30683,35162,3966,826,1390,14668,2471,5310,4021;_",
+				},
+				["US:DarkIron:Devöur"] = {
+					[1450806706] = "17,1109,333,18281,1822,34048,1720,52443,46306,3155,21511;_",
+					[1450806437] = "20217,1345,32587,1461,1720,52443,45749,557,3155,966,6987,13558,4355;_",
+					[1450807225] = "1126,333,18281,1822,34048,1720,52443,46306,24666;_",
+					[1450807388] = "17,1109,333,18281,1822,10280,23768,1720,7751,21192,11190,12310,4459,41847,24666;_",
 				},
 				["US:Stormrage:Eldantor"] = {
 					[1450806706] = "1126,333,5894,12387,1822,34048,1720,52443,32471,13835,347,19031,5292;Player-60-070729C3,Pet-0-3024-1448-5942-78116-01029712CB",
 					[1450806437] = "17,20200,1345,34048,1720,7751,21192,23500,32471,13278,4678,6988,13561;Player-60-070729C3,Pet-0-3024-1448-5942-78116-01029712CB",
 					[1450807225] = "1126,333,20103,22982,12786,28943,27469,2525,25977,13278,557,347,19031,5292;Player-60-070729C3,Pet-0-3024-1448-5942-78116-03029712CB",
 					[1450807388] = "17,757,352,333,7477,12626,20073,2909,3960,8826,431,28512,11190,16279,2525,25977,13278,255,302,3596,15782,5292;Player-60-070729C3,Pet-0-3024-1448-5942-78116-03029712CB",
+				},
+				["US:Stormrage:Elorynne"] = {
+					[1450842758] = "1126,333,14014,6089,35768,490,51953,7183,39123,19378,5288;_",
+					[1450843914] = "1126,333,14014,4267,1822,35768,490,3475,48478,3969,42337,19378,5288;_",
 				},
 				["US:Dalaran:Megaflare"] = {
 					[1450802121] = "113742,28500,13822,1520;_",
@@ -3491,11 +3673,33 @@ AskMrRobotDb2 = {
 					[1450842758] = "1126,333,18281,1822,35768,52443,3969,42337,19378,5288;_",
 					[1450843914] = "1126,333,18281,1822,32587,3181,3965,48478,7183,39123,19378,5288;_",
 				},
-				["US:DarkIron:Devöur"] = {
-					[1450806706] = "17,1109,333,18281,1822,34048,1720,52443,46306,3155,21511;_",
-					[1450806437] = "20217,1345,32587,1461,1720,52443,45749,557,3155,966,6987,13558,4355;_",
-					[1450807225] = "1126,333,18281,1822,34048,1720,52443,46306,24666;_",
-					[1450807388] = "17,1109,333,18281,1822,10280,23768,1720,7751,21192,11190,12310,4459,41847,24666;_",
+				["US:Velen:Toobsock"] = {
+					[1450802121] = "139,635,352,333,4028,14253,1822,1250,10951,7872,13975,1720,4006,41015,7422,7008,18505,20491,7,300,2216,933,21516,20665,638;_",
+					[1450803141] = "155784,300,2216,8628;_",
+					[1450801025] = "774,352,333,4028,14253,1822,34048,1720,52443,7008,38996,7,300,2216,22449;_",
+					[1450802155] = "17,122,987,333,4028,14253,1822,34048,1720,7751,44692,7008,39003,300,2216,933,443,21073,3182;_",
+					[1450803874] = "139,635,200,152,333,4028,1186,13067,1822,12915,21133,5685,16194,8784,27469,3039,38996,7,300,238,588,1390,22449;_",
+					[1450802064] = "17,122,987,333,4028,14253,1822,12915,21133,1720,7751,12408,32284,7008,39003,300,2216,22449;_",
+					[1450802756] = "139,635,352,333,4028,1186,13067,1822,34048,21879,32284,46004,7,300,826,1390,22449;_",
+				},
+				["US:Dunemaul:Desintegrati"] = {
+					[1451420299] = "17,1109,18614,1822,3370,17718,5616,3005,4339,1720,38938,13505,9838,36469,348,3772,15239,5311;_",
+					[1451419898] = "774,352,18614,1822,26704,172,1430,1256,147,189,4150,1720,3986,58295,36469,348,19011,5311,7144,13511;_",
+					[1451419814] = "1126,18614,1822,3370,23334,1602,1403,4339,1720,3986,34952,59812,348,19011,5311,6869;_",
+				},
+				["US:Silvermoon:Wrathal"] = {
+					[1451407146] = "1126,333,998,17760,1345,35768,15638,43988,39115,16897,2471,5306;_",
+					[1451407931] = "469,657,333,998,17283,37590,15638,43988,39115,16897,2471,5306;_",
+				},
+				["US:Lightning'sBlade:Tritium"] = {
+					[1451420299] = "768,358,4089,14291,2056,3370,84841,3969,3214,28196,10921,350,3777,15256;_",
+					[1451419898] = "19506,94236;_",
+					[1451419814] = "768,358,4089,14291,234,1822,3370,24936,5742,5706,114140,695,11469;_",
+				},
+				["US:ArgentDawn:Pikachiuu"] = {
+					[1451420299] = "17,1109,18380,2056,3370,72628,12213,3969,3214,25291,13832,4121;_",
+					[1451419898] = "49868,92379,13832;_",
+					[1451419814] = "1126,14347,4033,234,1822,3370,24936,11448,80931,13832;_",
 				},
 				["US:Norgannon:Voidz"] = {
 					[1450802121] = "17,1442,54151,1720,7751,43365,1327,16381,13920,16005,10849,260,6134,2135,5293,8107;Player-98-066B599C,Pet-0-3133-1448-22011-78158-010219330F",
@@ -3509,11 +3713,44 @@ AskMrRobotDb2 = {
 					[1450842758] = "1126,333,998,19105,3345,32423,52443,3969,42338,24665;_",
 					[1450843914] = "1126,333,998,17283,1822,35768,52443,7183,39124,24665;_",
 				},
-				["US:Draenor:Zalionon"] = {
-					[1450806706] = "17,757,352,333,7477,10804,1822,12201,14500,241,718,6388,1720,15638,13305,23500,46307,830,1390,17139,1019,186,4105,4021;_",
-					[1450806437] = "774,0,352,7810,11281,1345,26701,959,1199,2944,2245,1720,15638,36805,45749,255,303,830,1390,1900,15239,1019,186,4105,4021;_",
-					[1450807225] = "17,757,352,333,20103,26701,959,8108,15638,13305,9995,13505,3969,41780,558,348,482,1390,17139,5310,4021;_",
-					[1450807388] = "17,1109,333,7477,12626,12201,7872,6628,241,4861,3965,15638,4567,8738,11190,12310,3969,1109,40671,558,242,588,1390,5747,11392,5173,137,4021;_",
+				["US:Proudmoore:Dontknoo"] = {
+					[1451407146] = "1126,333,18758,1345,35768,3965,55661,39123,700,16189,2489,5288;_",
+					[1451407931] = "469,657,333,18281,37590,59626,39123,700,16189,7777;_",
+				},
+				["US:Dalaran:Cùte"] = {
+					[1451420299] = "1126,18380,2056,3345,25,23334,7344,54163,46307,4120;_",
+					[1451419898] = "774,352,18614,1822,20073,6118,513,172,7172,1720,3986,52426,42338;_",
+					[1451419814] = "1126,18614,1822,3370,23334,1602,5742,1720,3986,94764;_",
+				},
+				["US:Turalyon:Paramedica"] = {
+					[1451419814] = "1126,18614,1822,3370,24936,5742,1720,3986,94763,19378,5293;_",
+					[1451419898] = "17,1109,18614,1822,34048,1720,2559,1427,20345,32081,5869,35751,717,17243,2135,5293,3174,1234,1320;_",
+				},
+				["US:Kel'Thuzad:Vaguito"] = {
+					[1451323397] = "1459,998,4216,14889,88211,7183,39124,348,3560,7200,8251,5306,5659;_",
+				},
+				["US:Proudmoore:Greypaw"] = {
+					[1451407146] = "1126,333,18758,1345,35768,20439,39187,39108,359,7850,4536,2,4157,7777;_",
+					[1451407931] = "469,657,333,18281,37590,20439,39187,39108,359,7850,4538,4157,7777;_",
+				},
+				["US:ArgentDawn:Bossxut"] = {
+					[1451420299] = "1126,1697,585,1763,14569,1822,3370,6733,25665,52443,3969,1449,27048,13825,359,3777,15256,5293;_",
+					[1451419898] = "17,1109,1697,585,1763,14569,1822,26876,8892,3986,52426,28497,17437,15780,5293;_",
+					[1451419814] = "1126,1697,585,16332,1822,3370,32398,3986,52426,28497,33217,5293,6871;_",
+				},
+				["US:Sargeras:Sigeni"] = {
+					[1451420299] = "17,1109,18380,2056,3345,25,16703,8233,5742,100469,4121,20549;_",
+				},
+				["US:Sargeras:Døømkin"] = {
+					[1451363493] = "1126,333,5214,14889,3296,49,30703,17710,29240,9511,4710,8193,31105,347,8121,2099,270,6406,2135,5293,3174,1065,1415;_",
+				},
+				["US:Proudmoore:Shavre"] = {
+					[1451323035] = "1459,18047,25736,48579,19921,3214,38407,716,3909,6940,6394,13082;_",
+					[1451322326] = "139,987,333,18047,2056,38327,17600,16332,15952,3969,15255,26365,717,19378,5288,5659;_",
+					[1451323397] = "1126,333,5214,14889,72259,15952,7183,38406,717,19378,5288,5659;_",
+					[1451322866] = "17,1442,20103,35768,2559,21772,12160,15952,3969,3214,38406,717,3909,7199,6135,2135,8467,2480;_",
+					[1451322999] = "1459,92362,19921,41780,557,30325;_",
+					[1451322929] = "1459,20103,35768,24331,12160,15952,3969,3214,38406,717,3909,15469,10947;_",
 				},
 				["US:Sargeras:Zïpps"] = {
 					[1451287213] = "1459,14014,4267,1822,28306,7462,58591,3602,88,36468,347,2808,7953,8270,1719,3569,5659;_",
@@ -3523,12 +3760,63 @@ AskMrRobotDb2 = {
 					[1450842758] = "1126,333,998,19105,35768,15638,36805,3969,3214,39115,19368,5306;_",
 					[1450843914] = "1126,333,998,17283,1822,35768,15638,36805,7183,39115,19368,5306;_",
 				},
+				["US:Arathor:Cleopetra"] = {
+					[1450806706] = "17,1109,333,5894,12387,1822,34048,1720,2559,5192,44692,45589,717,19378,5288;_",
+					[1450806437] = "1126,19091,1345,34048,1720,2559,49884,45589,160,557,4121,20545;_",
+					[1450807225] = "1126,333,20103,35768,28943,23500,3969,41620,160,557,19378,5288;_",
+					[1450807388] = "774,352,333,20103,26942,8826,2559,26384,11190,12310,3969,41620,160,255,302,19378,5288,5733;_",
+				},
 				["US:Alleria:Shalvaris"] = {
 					[1451287213] = "1459,18281,1822,28306,7462,15638,4801,38152,1035,39108,359,7850,2914,1624,6645,5289,5659;_",
 					[1451288009] = "1459,5214,13067,1822,28306,23100,4801,38152,1035,39108,359,7850,2915,1623,6645,5289,5659;_",
 				},
+				["US:Durotan:Darkksteel"] = {
+					[1451407146] = "1126,333,18758,1345,35768,58684,942,38566,557,347,4471,12071,2489;_",
+					[1451407931] = "469,657,333,18281,37590,58937,689,39123,347,16542,2489,5293;_",
+				},
 				["US:Sargeras:Ølympius"] = {
 					[1450803874] = "1126,333,5214,13067,1822,92180,3039,25462,13836,347,19031,5291;Player-76-08703FCC,Pet-0-3133-1448-22011-78116-01025458DE",
+				},
+				["US:AeriePeak:Damonard"] = {
+					[1451323035] = "156779,10149,19476;_",
+					[1451322326] = "1126,333,18047,2056,86884,1327,3969,15255,27782,19372,4597,5656;Player-1426-076290CF,Pet-0-3782-1448-7568-58959-01023E0AB1",
+					[1451323397] = "1126,333,5214,14034,855,86884,1327,7183,39823,23969,5656;Player-1426-076290CF,Pet-0-3782-1448-7568-58959-04023E0AB1",
+					[1451322866] = "1459,20103,35768,51116,1327,7183,39823,3209,7199,19217,15006;Player-1426-076290CF,Pet-0-3782-1448-7568-58959-03023E0AB1",
+					[1451322999] = "1459,18047,94236,41780,1257,10149,19476;_",
+					[1451322929] = "1459,20103,26191,9577,51116,1327,4087,3096,39823,919,2290,26416;Player-1426-076290CF,Pet-0-3782-1448-7568-58959-03023E0AB1",
+				},
+				["US:Darkspear:Gardenl"] = {
+					[1451364439] = "469,990,260,738,4216,13067,94002,3039,39299,348,10218,542,8251,5306,897,4762;_",
+				},
+				["US:Sargeras:Pierian"] = {
+					[1451407146] = "1126,333,18281,477,1345,35768,36038,23588,25293,13831,348,16540,2471,5311;_",
+					[1451407931] = "469,657,333,18281,37590,36038,23588,25293,13831,348,16540,2471,5311;_",
+				},
+				["US:Lightning'sBlade:Butteredstuf"] = {
+					[1451407146] = "1126,333,18758,1345,3345,32423,3965,53400,2261,39123,4810,12079;_",
+					[1451407931] = "469,657,333,18281,37590,57365,2261,39123,16889,7777;_",
+				},
+				["US:Dalaran:Zamkaria"] = {
+					[1451420299] = "1126,18380,2056,3345,25,24936,5742,100454,359,7850,4538,6645,5289;_",
+					[1451419898] = "1126,20436,34048,1720,3986,94748,8209,4538,6645,5289;_",
+					[1451419814] = "1126,20436,35768,3986,94748,8209,4538,6645,5289;_",
+				},
+				["US:Moonrunner:Stariane"] = {
+					[1451409048] = "469,657,333,325,1039,585,3265,18234,88035,800,2179,40143,19392,5294;_",
+				},
+				["US:ArgentDawn:Siouxsie"] = {
+					[1450803874] = "1126,333,325,1039,3850,13067,1822,92180,3039,175,39108,19392,5294;_",
+				},
+				["US:Stormrage:Ðana"] = {
+					[1451363493] = "1126,333,1586,3628,13067,1822,34048,22159,39012,39283,359,7850,2643,1895,6645,5289,5659;_",
+					[1451364439] = "469,990,1586,3628,13067,35870,22159,39012,39283,359,7850,2643,272,1623,6645,5289,5659;_",
+				},
+				["US:Frostmourne:Packetj"] = {
+					[1451409048] = "469,657,333,998,4216,18234,30703,60311,40159,348,16540,2471,5311;_",
+				},
+				["US:Sargeras:Trumpsta"] = {
+					[1451407146] = "1126,333,18758,1345,3345,32423,43647,15979,39123,16889,7780;_",
+					[1451407931] = "469,657,333,18281,5118,32472,59626,39123,16889,7780;_",
 				},
 				["US:Frostmourne:Fëlìx"] = {
 					[1451287213] = "1459,998,17283,1822,28306,7462,58591,3690,0,36469,348,10760,13557,4413,1246;_",
@@ -3546,9 +3834,21 @@ AskMrRobotDb2 = {
 					[1451287213] = "1459,18281,1822,28306,7462,58591,3690,36468,11109,8269,5292,5655;_",
 					[1451288009] = "1459,5214,13067,1822,28306,66053,1035,2655,36468,11109,8269,5292,5655;_",
 				},
+				["US:Goldrinn:Maedhros"] = {
+					[1451323035] = "5487,14019,2056,26191,65989,3214,12041,26525,262,300,2216,933,755,23943,839,1634;_",
+					[1451322326] = "17,122,835,152,333,4028,14019,2056,64711,23500,3969,41780,262,300,238,588,1390,22447,4023,1634;_",
+					[1451323397] = "17,957,152,333,4028,1186,14889,39733,0,48478,7183,38566,262,300,826,1390,22447,4023,1634;_",
+					[1451322866] = "17,957,152,333,4028,16075,35768,52443,7183,38828,300,826,1390,1376,21071,3184,839,1634;_",
+					[1451322999] = "156084,30320;_",
+					[1451322929] = "974,152,333,4028,16075,35768,40677,11766,7183,38828,300,826,1390,22447,4023,1634;_",
+				},
 				["US:Stormrage:Bügatti"] = {
 					[1450842758] = "1126,333,20103,3296,49,30703,1720,45230,7213,2298,44008,347,19031,5293;_",
 					[1450843914] = "1126,333,18281,1822,3296,30752,1720,45230,7213,2298,7540,36468,347,16896,2135,5293,3174;_",
+				},
+				["US:Frostmourne:Sikeen"] = {
+					[1451363493] = "1126,333,3712,1502,14889,92180,3039,38741,901,296,865,2091,1,6970,14102,5656;_",
+					[1451364439] = "469,990,1364,585,1763,1502,13067,11925,27963,54114,1450,1589,39283,359,3253,6970,270,272,13561,5655;_",
 				},
 				["US:Frostmourne:Xareph"] = {
 					[1450806706] = "17,1109,333,325,1039,160,425,1763,2182,12387,1822,10103,23945,1720,52443,28440,4028,13823,24685;_",
@@ -3556,43 +3856,38 @@ AskMrRobotDb2 = {
 					[1450807225] = "1126,333,1364,160,425,1763,6156,10235,10103,23945,1720,52443,28440,4028,9910,3371,542,24685,7951;_",
 					[1450807388] = "774,352,333,1364,585,1763,16391,34048,1720,28943,11190,12310,5416,23024,4028,13281,542,3612,21073;_",
 				},
-				["US:Turalyon:Magicbringer"] = {
-					[1450806706] = "1126,333,5894,12387,1822,35768,40011,11498,4903,2525;_",
-					[1450806437] = "20217,1345,34048,1720,40011,12432,45749,4678,6987,13563;_",
-					[1450807225] = "1126,333,20103,34048,1720,22353,17658,12432,45749,904,24324;_",
-					[1450807388] = "774,352,333,20103,34048,1720,40011,122,12310,6494,39255,17800,7428;_",
+				["US:Greymane:Bearhand"] = {
+					[1451420299] = "1126,18614,1822,3370,32398,52443,3969,20821,21516,19378,5292;_",
+					[1451419898] = "1126,18614,1822,35768,3986,52426,2125,3744,14952,40894,5292;_",
+					[1451419814] = "1126,18614,1822,3370,24936,7462,3986,73247,40894,5292;_",
 				},
-				["US:Nemesis:Carronte"] = {
-					[1450802121] = "1126,333,18281,21895,13975,1720,51173,1270,7008,39298,10849,13817;_",
-					[1450801025] = "1126,333,18281,1822,34048,1720,51173,1270,7008,2830,36468,347,19031;_",
-					[1450802756] = "1126,333,5214,13067,1822,86941,1270,3969,42337,347,19031,5288;_",
-					[1450802155] = "1126,333,18281,28013,7857,1720,20159,31014,1270,7008,1047,38251,10849,6394,7423,3179,1179;_",
-					[1450802064] = "1126,333,18281,35870,1720,51173,1270,7008,39298,10849,13817;_",
+				["US:Saurfang:Flipkens"] = {
+					[1450842758] = "1126,333,20103,26456,9312,51173,1270,3969,41780,557,347,19031,5293;_",
+					[1450843914] = "1126,333,18281,1822,26456,9312,17104,34069,1270,3969,42337,347,1272,17759,5293;_",
 				},
-				["US:ShadowCouncil:Looneyluna"] = {
-					[1450806706] = "1126,333,5894,12387,1822,34048,1720,51173,1270,46306,347,353,23971;_",
-					[1450806437] = "1126,19091,1345,35768,51173,1270,3969,41780,557,700,3421,20550;_",
-					[1450807225] = "1126,333,20103,35768,51173,1270,3969,41780,557,347,353,23971;_",
-					[1450807388] = "17,1109,333,20103,35768,40133,11040,1270,3969,41780,557,700,23971;_",
+				["US:Alleria:Frankerz"] = {
+					[1451287213] = "1459,18281,1822,28306,7462,58591,3690,22632,13837,348,10759,8252,5311,1193,4461;_",
+					[1451288009] = "1459,5214,13067,1822,28306,35631,30422,1035,2655,22632,13837,348,10759,8252,5311,4408,1246;_",
 				},
-				["US:Kel'Thuzad:Futapatchy"] = {
-					[1450802121] = "77769,78295,12745;_",
-					[1450803141] = "19506,36104,22159,78295,8209,2655,1883;_",
-					[1450801025] = "1126,333,18281,1822,34048,1720,20439,32004,7008,39283,8209,4538,6645,5289;_",
-					[1450802155] = "19506,22129,13975,22159,78295,8209,2655,1881,2,32597;_",
-					[1450803874] = "1126,333,3659,1555,13067,1822,34048,22159,35973,3039,39283,8209,4538,6645,5289;_",
-					[1450802064] = "1126,333,18281,1822,13158,20890,1720,20439,32004,7008,39279,4,8209,4536,6647,5289,20663;_",
-					[1450802756] = "1126,333,3659,1555,13067,1822,34048,22159,32004,46291,8209,4536,2,6645,5289;_",
+				["US:Terenas:Schwa"] = {
+					[1451323035] = "1459,18047,2056,88211,3969,42322,1520,28820;_",
+					[1451322326] = "1126,333,1364,2348,14335,2056,3345,6758,78108,3969,1449,40873,359,24326,5655;_",
+					[1451323397] = "1126,333,325,4889,14889,88211,3169,800,15255,8576,18491,1520,17872,5292,5656;_",
+					[1451322866] = "1126,333,325,12093,7685,35768,52443,3169,800,3214,20617,18491,1520,17872,5293,5655;_",
+					[1451322999] = "1459,18047,94236,41780,542,1520,28820;_",
+					[1451322929] = "1126,333,3712,8706,7685,35768,27416,25027,3969,3214,39108,258,397,865,2091,15781,5293,5537,118;_",
 				},
-				["US:Arygos:Elizarr"] = {
-					[1450806706] = "1126,333,5894,12387,1822,35768,56412,42337,19378,5293;_",
-					[1450806437] = "1126,10916,8175,1345,34048,1720,22353,30090,6494,39255,557,3596,525,15257,5293;_",
-					[1450807225] = "1126,333,10583,9520,35768,52443,3969,41780,557,19378,5293;_",
-					[1450807388] = "17,1109,333,7477,12626,26942,8826,22353,30090,3969,2525,39255,557,19378,5293;_",
+				["US:Stonemaul:Apochalypse"] = {
+					[1451287213] = "71,1388,11421,5619,1241,1822,32001,3767,15990,12953,27469,1433,746,3690,0,36466,2223,8888,8251,5311,4020,388,1246;_",
+					[1451288009] = "71,1388,5214,6207,5619,1241,1822,28306,3695,32710,29648,1035,2655,36466,2223,8887,8252,5311,4020,1634;_",
 				},
-				["US:Frostmourne:Sikeen"] = {
-					[1451363493] = "1126,333,3712,1502,14889,92180,3039,38741,901,296,865,2091,1,6970,14102,5656;_",
-					[1451364439] = "469,990,1364,585,1763,1502,13067,11925,27963,54114,1450,1589,39283,359,3253,6970,270,272,13561,5655;_",
+				["US:Kel'Thuzad:Tarlavar"] = {
+					[1451363493] = "774,352,333,5214,13067,1822,4218,8697,7158,13975,17358,43813,38996,303,350,1870,8346,270,8523,5309,4022,1634,1213;_",
+					[1451364439] = "139,330,990,5214,13067,6040,27783,19405,4521,8784,27469,3039,39299,242,108,1870,8346,270,272,8251,5309,4022,1634;_",
+				},
+				["US:Aman'Thul:Wish"] = {
+					[1450842758] = "1126,333,18281,1822,35768,15638,36805,3969,42338,348,3903,15108,5311;_",
+					[1450843914] = "1126,333,18281,1822,35768,15638,36805,3969,42338,348,19011,5311;_",
 				},
 				["US:AeriePeak:Laurine"] = {
 					[1451363493] = "139,987,333,5214,13067,1822,34048,61171,39298,10837,8541,5291,5656;_",
@@ -3601,12 +3896,11 @@ AskMrRobotDb2 = {
 				["US:Sargeras:Jayces"] = {
 					[1450803874] = "1126,333,998,4216,13067,1822,51406,40774,3039,175,39124,348,19011,5311;_",
 				},
-				["US:Stormrage:Ðana"] = {
-					[1451363493] = "1126,333,1586,3628,13067,1822,34048,22159,39012,39283,359,7850,2643,1895,6645,5289,5659;_",
-					[1451364439] = "469,990,1586,3628,13067,35870,22159,39012,39283,359,7850,2643,272,1623,6645,5289,5659;_",
+				["US:Korialstrasz:Pounderr"] = {
+					[1451409048] = "469,657,333,5214,18185,49,77653,11182,2179,40158,347,19031,5293;_",
 				},
-				["US:Sargeras:Døømkin"] = {
-					[1451363493] = "1126,333,5214,14889,3296,49,30703,17710,29240,9511,4710,8193,31105,347,8121,2099,270,6406,2135,5293,3174,1065,1415;_",
+				["US:Whisperwind:Powerglove"] = {
+					[1451409048] = "469,305,352,333,5214,18234,23597,65238,2179,40163,2216,17156,5289,7805;_",
 				},
 				["US:Nemesis:Marijeynë"] = {
 					[1450842758] = "1126,333,20103,35768,20439,32004,7183,38566,542,359,6844,1006,4538,6645,5289;_",
@@ -3616,35 +3910,32 @@ AskMrRobotDb2 = {
 					[1451287213] = "1459,998,17283,1822,35768,56412,2179,1035,2655,36469,348,10760,8251,5306,5659;_",
 					[1451288009] = "1459,998,4216,13067,1822,28306,66053,1035,2655,36469,348,10760,8251,5306,5659;_",
 				},
-				["US:Stormrage:Emean"] = {
-					[1450801025] = "1126,333,18281,1822,26703,7345,1720,52443,7008,2830,36469,348,19011,5310;Player-60-09566A48,Pet-0-3133-1448-22011-26125-0102CF6F8F",
+				["US:Blackhand:Hlyshtzu"] = {
+					[1451409048] = "469,657,333,5214,18234,873,87962,2179,40163,2216,22448,4022;_",
 				},
-				["US:Korialstrasz:Exstinct"] = {
-					[1451323035] = "19506,68,41,1947,92180,3214,12041,26525,542,3924,15468,8470,2478;Player-123-060875EB,Pet-0-3782-1448-7568-27329-03022E7390",
-					[1451322326] = "1126,333,3659,14388,2056,88211,3969,15255,27067,19392,5294,892,4762;Player-123-060875EB,Pet-0-3782-1448-7568-77140-01022E70FC",
-					[1451323397] = "1126,333,5214,12901,1988,88211,3969,41780,542,359,19033,5294,5654;Player-123-060875EB,Pet-0-3782-1448-7568-27329-03022E7390",
-					[1451322866] = "1459,18115,1988,35768,52443,7183,39108,3924,7199,8269,5294,5654;Player-123-060875EB,Pet-0-3782-1448-7568-27329-02022E7390",
-					[1451322999] = "156064,30340;_",
-					[1451322929] = "17,1442,18156,1947,20073,0,15695,52443,7183,39108,3924,15468,5294,5654;Player-123-060875EB,Pet-0-3782-1448-7568-27329-02022E7390",
+				["US:Korgath:Truthheals"] = {
+					[1451407146] = "1126,333,18758,1345,35768,59626,56012,3183,4594;_",
+					[1451407931] = "469,657,333,18281,37590,23876,35750,38406,17606,2489,694,4594,11175;_",
 				},
-				["US:Frostmourne:Terrorblast"] = {
-					[1451363493] = "1126,333,5214,13067,1822,34048,61171,14712,24586,347,10220,270,13832,5656;_",
-					[1451364439] = "469,990,5214,13067,35870,61171,14712,24586,10567,270,272,9988,3572,5656;_",
+				["US:EmeraldDream:Ironnite"] = {
+					[1451420299] = "1126,18380,1419,637,3345,25,848,29830,9538,7820,36805,9838,36473,346,1870,1900,15239,5308,4411;_",
+					[1451419898] = "25780,47188,83116,2216;_",
+					[1451419814] = "1126,18614,1822,3370,848,31550,3986,11652,40774,42342,2216,17139,5308,4929;_",
 				},
-				["US:Darkspear:Tristên"] = {
-					[1451363493] = "139,987,333,5214,13067,1822,34048,4279,37452,19440,25466,13115,717,10567,270,13834,5654;_",
-					[1451364439] = "139,330,990,5214,13067,35870,6451,35280,19440,10480,54,14932,13832,10837,272,3681,9881,5654;_",
+				["US:Frostmourne:Sylvair"] = {
+					[1451287213] = "1459,18281,1822,28306,5742,1720,20439,38152,10029,30114,8209,2915,1623,6645,5289,5659;_",
+					[1451288009] = "1459,5214,13067,1822,13517,14789,5742,22159,38152,3690,36453,359,7850,4538,6645,5289,5659;_",
 				},
-				["US:Proudmoore:Megapow"] = {
-					[1451287213] = "1459,18281,1822,28306,7462,58591,1035,2655,0,10303,26165,347,10761,5599,2671,5292,5655;_",
-					[1451288009] = "1459,5214,13067,1822,28306,66053,1035,2655,10303,26165,347,10762,8269,5292,5655;_",
+				["US:Nemesis:Painsama"] = {
+					[1450842758] = "1126,333,18281,1822,30565,1263,3940,3965,12625,35853,7183,39123,347,16896,2135,5293;_",
+					[1450843914] = "1126,333,18281,1822,28306,2259,1263,3940,3965,48478,46306,347,16896,2135,5293,5125;_",
 				},
 				["US:Korgath:Kealmir"] = {
 					[1451364439] = "139,330,990,5214,13067,53228,4521,36253,3039,39298,10567,270,272,8269,9643,476,828;_",
 				},
-				["US:Stonemaul:Apochalypse"] = {
-					[1451287213] = "71,1388,11421,5619,1241,1822,32001,3767,15990,12953,27469,1433,746,3690,0,36466,2223,8888,8251,5311,4020,388,1246;_",
-					[1451288009] = "71,1388,5214,6207,5619,1241,1822,28306,3695,32710,29648,1035,2655,36466,2223,8887,8252,5311,4020,1634;_",
+				["US:Sargeras:Phntem"] = {
+					[1451407146] = "1126,333,11013,7745,1345,35768,36475,23151,6042,33081,347,16542,2489,5292;Player-76-08AC0CED,Pet-0-3675-1464-18-78116-0102666083",
+					[1451407931] = "469,657,333,11013,7268,24804,12786,36475,23151,6042,33081,347,16542,2489,5292;Player-76-08AC0CED,Pet-0-3017-1448-22463-78116-0102666083",
 				},
 				["US:Sargeras:Iliketudawls"] = {
 					[1450801025] = "1126,333,1364,16917,1822,10103,25665,15638,36805,3969,1449,1590,39283,359,19033,5293;_",
@@ -3653,21 +3944,17 @@ AskMrRobotDb2 = {
 					[1450842758] = "1126,333,20103,35768,44313,8130,6907,276,2655,10303,26165,347,19031,5292;_",
 					[1450843914] = "1126,333,18281,1822,35768,44313,8130,3969,2938,2931,10303,26165,347,19031,5292;_",
 				},
-				["US:Velen:Toobsock"] = {
-					[1450802121] = "139,635,352,333,4028,14253,1822,1250,10951,7872,13975,1720,4006,41015,7422,7008,18505,20491,7,300,2216,933,21516,20665,638;_",
-					[1450803141] = "155784,300,2216,8628;_",
-					[1450801025] = "774,352,333,4028,14253,1822,34048,1720,52443,7008,38996,7,300,2216,22449;_",
-					[1450802155] = "17,122,987,333,4028,14253,1822,34048,1720,7751,44692,7008,39003,300,2216,933,443,21073,3182;_",
-					[1450803874] = "139,635,200,152,333,4028,1186,13067,1822,12915,21133,5685,16194,8784,27469,3039,38996,7,300,238,588,1390,22449;_",
-					[1450802064] = "17,122,987,333,4028,14253,1822,12915,21133,1720,7751,12408,32284,7008,39003,300,2216,22449;_",
-					[1450802756] = "139,635,352,333,4028,1186,13067,1822,34048,21879,32284,46004,7,300,826,1390,22449;_",
+				["US:Frostmourne:Terrorblast"] = {
+					[1451363493] = "1126,333,5214,13067,1822,34048,61171,14712,24586,347,10220,270,13832,5656;_",
+					[1451364439] = "469,990,5214,13067,35870,61171,14712,24586,10567,270,272,9988,3572,5656;_",
 				},
-				["US:Stormrage:Elorynne"] = {
-					[1450842758] = "1126,333,14014,6089,35768,490,51953,7183,39123,19378,5288;_",
-					[1450843914] = "1126,333,14014,4267,1822,35768,490,3475,48478,3969,42337,19378,5288;_",
+				["US:Llane:Allasst"] = {
+					[1451409048] = "469,657,333,5214,4753,617,12864,72434,16401,2179,346,6731,33081,347,19031,5293;_",
 				},
-				["US:Kel'Thuzad:Vaguito"] = {
-					[1451323397] = "1459,998,4216,14889,88211,7183,39124,348,3560,7200,8251,5306,5659;_",
+				["US:Proudmoore:Oldmanlogan"] = {
+					[1451420299] = "1126,1697,585,1763,14335,2056,3345,25,6733,18203,59905,5418,23022,17851,359,3777,15256,5293;_",
+					[1451419898] = "1126,1697,585,16098,2056,26876,7172,5706,52426,5869,18602,17851,3612,15780,5293;_",
+					[1451419814] = "1126,1697,585,16098,2056,3345,25,6733,18203,11448,53875,23022,17851,19392,5293,6871;_",
 				},
 				["US:Nemesis:Däenërÿs"] = {
 					[1450806706] = "1126,333,5894,12387,1822,34048,1720,20439,32004,46291,12745,6647,5289;_",
@@ -3682,44 +3969,40 @@ AskMrRobotDb2 = {
 				["US:Sargeras:Dutchbros"] = {
 					[1451322326] = "1126,333,18047,2056,3296,84915,3969,15255,27082,347,19031,5293,5654;_",
 				},
-				["US:Terenas:Schwa"] = {
-					[1451323035] = "1459,18047,2056,88211,3969,42322,1520,28820;_",
-					[1451322326] = "1126,333,1364,2348,14335,2056,3345,6758,78108,3969,1449,40873,359,24326,5655;_",
-					[1451323397] = "1126,333,325,4889,14889,88211,3169,800,15255,8576,18491,1520,17872,5292,5656;_",
-					[1451322866] = "1126,333,325,12093,7685,35768,52443,3169,800,3214,20617,18491,1520,17872,5293,5655;_",
-					[1451322999] = "1459,18047,94236,41780,542,1520,28820;_",
-					[1451322929] = "1126,333,3712,8706,7685,35768,27416,25027,3969,3214,39108,258,397,865,2091,15781,5293,5537,118;_",
+				["US:Ravencrest:Magonics"] = {
+					[1451323035] = "61425,55531,39123,700,10149,19476;_",
+					[1451322326] = "1126,333,18047,2056,3345,84866,3969,42337,347,353,18678,5292,5655;Player-1072-06A95474,Pet-0-1185-1464-17-78116-010215AA33",
+					[1451323397] = "1126,333,5214,14889,88211,7183,39123,347,353,18678,5292,5655;Player-1072-06A95474,Pet-0-3782-1448-7568-78116-030215AA33",
+					[1451322866] = "1126,333,20103,35768,52443,3969,3214,39123,700,18678,5292,5655;Player-1072-06A95474,Pet-0-3782-1448-7568-78116-010215AA33",
+					[1451322999] = "1459,18047,94236,42337,700,18678,10947;_",
+					[1451322929] = "1126,333,20103,35768,40677,11766,3969,2525,689,39123,700,16543,2135,5292,5655;Player-1072-06A95474,Pet-0-3782-1448-7568-78116-010215AA33",
 				},
-				["US:ArgentDawn:Siouxsie"] = {
-					[1450803874] = "1126,333,325,1039,3850,13067,1822,92180,3039,175,39108,19392,5294;_",
+				["US:Arygos:Elizarr"] = {
+					[1450806706] = "1126,333,5894,12387,1822,35768,56412,42337,19378,5293;_",
+					[1450806437] = "1126,10916,8175,1345,34048,1720,22353,30090,6494,39255,557,3596,525,15257,5293;_",
+					[1450807225] = "1126,333,10583,9520,35768,52443,3969,41780,557,19378,5293;_",
+					[1450807388] = "17,1109,333,7477,12626,26942,8826,22353,30090,3969,2525,39255,557,19378,5293;_",
 				},
 				["US:Stormrage:Spacesong"] = {
 					[1450842758] = "1126,333,20103,3296,49,32423,45230,7213,7183,39123,347,19031,5293;_",
 					[1450843914] = "1126,333,18281,1822,3296,32472,45230,7213,3969,42337,347,19031,5293;_",
 				},
-				["US:AeriePeak:Damonard"] = {
-					[1451323035] = "156779,10149,19476;_",
-					[1451322326] = "1126,333,18047,2056,86884,1327,3969,15255,27782,19372,4597,5656;Player-1426-076290CF,Pet-0-3782-1448-7568-58959-01023E0AB1",
-					[1451323397] = "1126,333,5214,14034,855,86884,1327,7183,39823,23969,5656;Player-1426-076290CF,Pet-0-3782-1448-7568-58959-04023E0AB1",
-					[1451322866] = "1459,20103,35768,51116,1327,7183,39823,3209,7199,19217,15006;Player-1426-076290CF,Pet-0-3782-1448-7568-58959-03023E0AB1",
-					[1451322999] = "1459,18047,94236,41780,1257,10149,19476;_",
-					[1451322929] = "1459,20103,26191,9577,51116,1327,4087,3096,39823,919,2290,26416;Player-1426-076290CF,Pet-0-3782-1448-7568-58959-03023E0AB1",
+				["US:Goldrinn:Sracrow"] = {
+					[1451287213] = "1459,18281,1822,28306,7462,58591,3690,22631,24945,8252,5311,5654;_",
+					[1451288009] = "1459,5214,13067,1822,92180,2179,3690,22631,24946,8251,5311,5654;_",
 				},
-				["US:Arathor:Cleopetra"] = {
-					[1450806706] = "17,1109,333,5894,12387,1822,34048,1720,2559,5192,44692,45589,717,19378,5288;_",
-					[1450806437] = "1126,19091,1345,34048,1720,2559,49884,45589,160,557,4121,20545;_",
-					[1450807225] = "1126,333,20103,35768,28943,23500,3969,41620,160,557,19378,5288;_",
-					[1450807388] = "774,352,333,20103,26942,8826,2559,26384,11190,12310,3969,41620,160,255,302,19378,5288,5733;_",
+				["US:Gallywix:Roha"] = {
+					[1450806706] = "17,1109,333,5894,12387,1822,26704,7344,1720,15638,36805,46307,348,19011,13095;_",
+					[1450806437] = "17,20200,1345,26704,7344,1720,7751,7887,36805,45749,558,4120,15239,13095;_",
+					[1450807225] = "1126,333,20103,26704,7344,1720,15638,36805,45749,558,19359,5309;_",
+					[1450807388] = "17,1109,333,20103,26704,526,2332,2241,2245,1720,15638,24495,12310,5078,40671,558,19359,5309,7145,1,13511;_",
 				},
-				["US:Alleria:Frankerz"] = {
-					[1451287213] = "1459,18281,1822,28306,7462,58591,3690,22632,13837,348,10759,8252,5311,1193,4461;_",
-					[1451288009] = "1459,5214,13067,1822,28306,35631,30422,1035,2655,22632,13837,348,10759,8252,5311,4408,1246;_",
+				["US:Darkspear:Tristên"] = {
+					[1451363493] = "139,987,333,5214,13067,1822,34048,4279,37452,19440,25466,13115,717,10567,270,13834,5654;_",
+					[1451364439] = "139,330,990,5214,13067,35870,6451,35280,19440,10480,54,14932,13832,10837,272,3681,9881,5654;_",
 				},
-				["US:Stormrage:Starbabe"] = {
-					[1450806706] = "1126,333,5894,12387,1822,34048,1720,43647,8796,46306,3599,15779,5291;_",
-					[1450806437] = "1126,19091,1345,34048,1720,38876,4771,8796,45749,557,3599,522,15257,1719,3572;_",
-					[1450807225] = "1126,333,20103,35768,28943,23500,3969,41780,557,19378,5291;_",
-					[1450807388] = "1126,333,7477,12626,12329,14613,8826,28943,11190,3514,7317,1479,3969,3937,37843,557,19378,5291;_",
+				["US:Zul'jin:Tehbomb"] = {
+					[1451409048] = "1126,333,5214,18234,48061,28009,12765,2179,40158,4120,13123,2135,5291;_",
 				},
 				["US:Dath'Remar:Sinnafein"] = {
 					[1451287213] = "1459,18281,1822,28306,7462,58591,1035,39123,3923,7185,8270,5288,4831,828;_",
@@ -3734,28 +4017,20 @@ AskMrRobotDb2 = {
 					[1450807225] = "1126,333,1364,585,1763,14569,1822,10103,25665,2298,50145,3969,1447,3,1,40871,359,3253,21073,7951;_",
 					[1450807388] = "1126,333,1364,585,1763,14569,1822,35768,28943,11190,12310,3969,1447,40875,3612,21073;_",
 				},
-				["US:Proudmoore:Shavre"] = {
-					[1451323035] = "1459,18047,25736,48579,19921,3214,38407,716,3909,6940,6394,13082;_",
-					[1451322326] = "139,987,333,18047,2056,38327,17600,16332,15952,3969,15255,26365,717,19378,5288,5659;_",
-					[1451323397] = "1126,333,5214,14889,72259,15952,7183,38406,717,19378,5288,5659;_",
-					[1451322866] = "17,1442,20103,35768,2559,21772,12160,15952,3969,3214,38406,717,3909,7199,6135,2135,8467,2480;_",
-					[1451322999] = "1459,92362,19921,41780,557,30325;_",
-					[1451322929] = "1459,20103,35768,24331,12160,15952,3969,3214,38406,717,3909,15469,10947;_",
+				["US:Sargeras:Starfail"] = {
+					[1451407146] = "1126,333,18758,1345,3296,49,32423,45230,9511,4885,39123,347,16542,7782;_",
+					[1451407931] = "469,657,333,18281,5118,32472,45230,9511,4885,39123,347,16542,7782;_",
 				},
-				["US:Goldrinn:Maedhros"] = {
-					[1451323035] = "5487,14019,2056,26191,65989,3214,12041,26525,262,300,2216,933,755,23943,839,1634;_",
-					[1451322326] = "17,122,835,152,333,4028,14019,2056,64711,23500,3969,41780,262,300,238,588,1390,22447,4023,1634;_",
-					[1451323397] = "17,957,152,333,4028,1186,14889,39733,0,48478,7183,38566,262,300,826,1390,22447,4023,1634;_",
-					[1451322866] = "17,957,152,333,4028,16075,35768,52443,7183,38828,300,826,1390,1376,21071,3184,839,1634;_",
-					[1451322999] = "156084,30320;_",
-					[1451322929] = "974,152,333,4028,16075,35768,40677,11766,7183,38828,300,826,1390,22447,4023,1634;_",
+				["US:MoonGuard:Apollyón"] = {
+					[1451407146] = "774,200,152,333,18758,1345,26701,5300,3767,59626,35162,3404,255,653,1870,14668,2471,5310,5126,1742,933;_",
+					[1451407931] = "17,452,657,333,18281,21895,1015,5613,5300,3767,59626,35162,3962,2220,14668,2471,5310;_",
 				},
 				["US:Drakkari:Averti"] = {
 					[1450842758] = "1126,333,18281,1822,35768,2559,49884,7183,39123,347,19031,5288;_",
 				},
-				["US:Goldrinn:Sracrow"] = {
-					[1451287213] = "1459,18281,1822,28306,7462,58591,3690,22631,24945,8252,5311,5654;_",
-					[1451288009] = "1459,5214,13067,1822,92180,2179,3690,22631,24946,8251,5311,5654;_",
+				["US:Frostmourne:Ozdêvil"] = {
+					[1451363493] = "1126,333,998,4216,13067,1822,30875,20531,25476,15298,3039,35496,3803,10566,6676,0,2117,5306,4485,1174;_",
+					[1451364439] = "469,990,260,738,4216,13067,32697,20531,40774,3039,35496,3803,6835,3731,270,272,6134,0,2117,999,4307,5659,8077,6924;_",
 				},
 				["US:Aggramar:Bigdsun"] = {
 					[1450803874] = "139,987,333,998,4216,13067,1822,34048,58132,3039,39299,348,4469,14542;_",
@@ -3766,17 +4041,17 @@ AskMrRobotDb2 = {
 					[1451287213] = "974,485,18281,1822,4218,24088,7462,28943,29648,3690,22628,13845,826,1390,2593,6294,17583,1634,3595;_",
 					[1451288009] = "1459,5214,13067,1185,637,4218,8697,15391,5742,30663,29648,3690,22628,13845,826,1390,2597,23873,1634;_",
 				},
-				["US:Saurfang:Flipkens"] = {
-					[1450842758] = "1126,333,20103,26456,9312,51173,1270,3969,41780,557,347,19031,5293;_",
-					[1450843914] = "1126,333,18281,1822,26456,9312,17104,34069,1270,3969,42337,347,1272,17759,5293;_",
+				["US:Farstriders:Merydius"] = {
+					[1451407146] = "1126,333,18758,1345,35768,15638,43988,56012,7782;_",
+					[1451407931] = "469,657,333,18281,37590,15638,43988,39124,16888,7782;_",
 				},
-				["US:Aman'Thul:Wish"] = {
-					[1450842758] = "1126,333,18281,1822,35768,15638,36805,3969,42338,348,3903,15108,5311;_",
-					[1450843914] = "1126,333,18281,1822,35768,15638,36805,3969,42338,348,19011,5311;_",
+				["US:Proudmoore:Vanwarr"] = {
+					[1451407146] = "1126,333,998,17760,1345,35768,59626,25283,13283,558,348,16540,2471,5311;_",
+					[1451407931] = "469,657,333,998,17283,37590,59626,25283,13841,348,16540,2471,5311;_",
 				},
-				["US:Frostmourne:Sylvair"] = {
-					[1451287213] = "1459,18281,1822,28306,5742,1720,20439,38152,10029,30114,8209,2915,1623,6645,5289,5659;_",
-					[1451288009] = "1459,5214,13067,1822,13517,14789,5742,22159,38152,3690,36453,359,7850,4538,6645,5289,5659;_",
+				["US:Proudmoore:Megapow"] = {
+					[1451287213] = "1459,18281,1822,28306,7462,58591,1035,2655,0,10303,26165,347,10761,5599,2671,5292,5655;_",
+					[1451288009] = "1459,5214,13067,1822,28306,66053,1035,2655,10303,26165,347,10762,8269,5292,5655;_",
 				},
 				["US:Proudmoore:Brawlenaces"] = {
 					[1451363493] = "139,987,333,5214,13067,1822,34048,21879,39292,39283,359,10223,270,8540,5293,5655,4433;_",
@@ -3792,45 +4067,41 @@ AskMrRobotDb2 = {
 					[1451322929] = "1459,20103,23680,12088,6405,13754,3719,16799,11766,7183,6298,32108,717,700,3209,26379,37;_",
 					[1451363493] = "139,987,333,5214,13067,1822,34048,25596,33049,2526,38582,716,347,353,10137,8541,5292,5618,37;_",
 				},
-				["US:Ravencrest:Magonics"] = {
-					[1451323035] = "61425,55531,39123,700,10149,19476;_",
-					[1451322326] = "1126,333,18047,2056,3345,84866,3969,42337,347,353,18678,5292,5655;Player-1072-06A95474,Pet-0-1185-1464-17-78116-010215AA33",
-					[1451323397] = "1126,333,5214,14889,88211,7183,39123,347,353,18678,5292,5655;Player-1072-06A95474,Pet-0-3782-1448-7568-78116-030215AA33",
-					[1451322866] = "1126,333,20103,35768,52443,3969,3214,39123,700,18678,5292,5655;Player-1072-06A95474,Pet-0-3782-1448-7568-78116-010215AA33",
-					[1451322999] = "1459,18047,94236,42337,700,18678,10947;_",
-					[1451322929] = "1126,333,20103,35768,40677,11766,3969,2525,689,39123,700,16543,2135,5292,5655;Player-1072-06A95474,Pet-0-3782-1448-7568-78116-010215AA33",
-				},
-				["US:Nemesis:Nerdstark"] = {
-					[1450802121] = "1126,333,16160,2121,1822,26704,172,269,2417,2241,2245,1720,52443,7008,9373,17471,12455,19359,5309,7145,1;_",
-					[1450801025] = "1126,333,16160,2121,1822,21088,5616,7344,1720,52443,7008,26844,12455,19359,5309;_",
-					[1450802756] = "1126,333,5214,10946,2121,1822,21088,5616,7344,54163,33852,12455,19359,5309;_",
-					[1450802155] = "1126,333,16160,2121,1822,20073,0,6631,2858,2241,2245,1720,20159,32284,7008,26844,12455,19359,5309,7145,1;_",
-					[1450802064] = "1126,333,16160,2121,1822,26704,7344,1720,38938,13505,7008,26844,12455,19359,5309;_",
-				},
-				["US:Kel'Thuzad:Tarlavar"] = {
-					[1451363493] = "774,352,333,5214,13067,1822,4218,8697,7158,13975,17358,43813,38996,303,350,1870,8346,270,8523,5309,4022,1634,1213;_",
-					[1451364439] = "139,330,990,5214,13067,6040,27783,19405,4521,8784,27469,3039,39299,242,108,1870,8346,270,272,8251,5309,4022,1634;_",
-				},
-				["US:Stormrage:Yansey"] = {
-					[1450803874] = "1126,333,998,4216,13067,1822,51406,40774,3039,39299,348,19011,5306;_",
-				},
-				["US:Gallywix:Roha"] = {
-					[1450806706] = "17,1109,333,5894,12387,1822,26704,7344,1720,15638,36805,46307,348,19011,13095;_",
-					[1450806437] = "17,20200,1345,26704,7344,1720,7751,7887,36805,45749,558,4120,15239,13095;_",
-					[1450807225] = "1126,333,20103,26704,7344,1720,15638,36805,45749,558,19359,5309;_",
-					[1450807388] = "17,1109,333,20103,26704,526,2332,2241,2245,1720,15638,24495,12310,5078,40671,558,19359,5309,7145,1,13511;_",
-				},
-				["US:Dalaran:Hazzar"] = {
-					[1451287213] = "324,1135,18281,1822,28306,7462,58591,1035,1514,1053,88,36468,347,6131,2905,1725,8270,5292,5655;_",
-					[1451288009] = "324,1135,5214,13067,1822,28306,66053,1035,1514,1141,36468,347,6131,2905,1726,8269,5292,5655;_",
+				["US:Dalaran:Yingzong"] = {
+					[1450806706] = "1126,333,5894,10266,2121,1822,34048,1720,20439,32004,16661,29630,8209,4538,6645,5289;_",
+					[1450806437] = "17619,2598,1345,34048,1720,20439,32004,16661,29088,542,4136,4073,4538,6645,5289;_",
+					[1450807225] = "1126,333,16160,3943,35768,20439,35973,12692,29088,542,8209,4538,6645,5289;_",
+					[1450807388] = "1126,333,16160,3943,13158,22610,20439,8504,11190,16279,12692,29088,542,8209,4538,6645,5289;_",
 				},
 				["US:AeriePeak:Shasi"] = {
 					[1451363493] = "1126,333,5214,13067,1822,26703,7345,61171,39299,10566,270,8523,5310,5655;Player-1426-07674EE1,Pet-0-3748-1448-20101-26125-0201F4F203",
 					[1451364439] = "469,990,5214,13067,28525,7345,61171,39299,10566,270,272,8251,5310,5655;Player-1426-07674EE1,Pet-0-3748-1448-20101-26125-0301F4F203",
 				},
-				["US:Nemesis:Painsama"] = {
-					[1450842758] = "1126,333,18281,1822,30565,1263,3940,3965,12625,35853,7183,39123,347,16896,2135,5293;_",
-					[1450843914] = "1126,333,18281,1822,28306,2259,1263,3940,3965,48478,46306,347,16896,2135,5293,5125;_",
+				["US:Kel'Thuzad:Futapatchy"] = {
+					[1450802121] = "77769,78295,12745;_",
+					[1450803141] = "19506,36104,22159,78295,8209,2655,1883;_",
+					[1450801025] = "1126,333,18281,1822,34048,1720,20439,32004,7008,39283,8209,4538,6645,5289;_",
+					[1450802155] = "19506,22129,13975,22159,78295,8209,2655,1881,2,32597;_",
+					[1450803874] = "1126,333,3659,1555,13067,1822,34048,22159,35973,3039,39283,8209,4538,6645,5289;_",
+					[1450802064] = "1126,333,18281,1822,13158,20890,1720,20439,32004,7008,39279,4,8209,4536,6647,5289,20663;_",
+					[1450802756] = "1126,333,3659,1555,13067,1822,34048,22159,32004,46291,8209,4536,2,6645,5289;_",
+				},
+				["US:Stormrage:Yansey"] = {
+					[1450803874] = "1126,333,998,4216,13067,1822,51406,40774,3039,39299,348,19011,5306;_",
+				},
+				["US:MoonGuard:Orm"] = {
+					[1451407146] = "1459,18758,1345,3345,32423,3965,16474,39187,1738,33424,15070,5780;Player-3675-06C22F04,Pet-0-3017-1448-22463-50159-0201ECBA37",
+					[1451407931] = "469,657,333,3659,14622,37590,20439,39187,1738,54274;Player-3675-06C22F04,Pet-0-3017-1448-22463-50159-0301ECBA37",
+				},
+				["US:Dragonblight:Killearn"] = {
+					[1451407146] = "1126,333,3659,15099,1345,35768,20439,39187,38566,542,359,7850,4538,4157,2488,13078;_",
+					[1451407931] = "469,657,333,3659,14622,37590,20439,39187,39108,4534,1,3674,4538,4157,2488;_",
+				},
+				["US:EmeraldDream:Anshlun"] = {
+					[1451420299] = "1126,14347,4033,2056,3345,25,16703,8233,59905,46306,347,3774,15257;_",
+				},
+				["US:Frostmourne:Alamatt"] = {
+					[1451409048] = "1126,333,998,4216,18234,88835,2179,40159,348,3771,12769,2471,5306;_",
 				},
 				["US:Kil'jaeden:Omgatree"] = {
 					[1450806706] = "1126,333,5894,12387,1822,34048,1720,52443,46306,19378,5291;_",
@@ -3838,33 +4109,30 @@ AskMrRobotDb2 = {
 					[1450807225] = "1126,333,20103,35768,52443,3969,41780,557,3599,21070;_",
 					[1450807388] = "774,352,333,7477,12626,26942,8826,28943,14704,8796,3969,41780,557,3599,15779,5291;_",
 				},
-				["US:Stormrage:Rheolynx"] = {
-					[1450842758] = "1126,333,18281,1822,35768,52443,3969,42337,347,24319,4831;_",
-					[1450843914] = "1126,333,18281,1822,32587,3181,28943,23500,3969,42337,243,104,6841,12190,5288,4355,476;_",
+				["US:Ragnaros:Kráxo"] = {
+					[1451409048] = "1126,333,998,4216,18234,88835,2179,40159,4119,15240,5311;_",
 				},
 				["US:Proudmoore:Ljuben"] = {
 					[1451287213] = "1459,998,17283,1822,35768,56412,2179,3690,24014,12455,348,10760,8251,1019,186,4106,5654;_",
 					[1451288009] = "1459,998,4216,13067,1822,34048,58132,2179,3690,0,24014,12455,19359,5311,5654;_",
 				},
-				["US:Gilneas:Foxyshawty"] = {
-					[1450802121] = "17,1109,333,18281,1822,20073,13975,1720,2559,49884,7008,6473,32108,17960,7423;_",
-					[1450803141] = "_;_",
-					[1450801025] = "139,987,333,18281,1822,35768,20159,32284,3969,3039,63964;_",
-					[1450802155] = "139,635,352,333,18281,1822,23680,3262,7106,1720,2559,17600,32284,7008,6473,32108,25383,4358,1375;_",
-					[1450803874] = "1126,333,5214,13067,1822,34048,58132,3039,39298,19378,5288;_",
-					[1450802064] = "1126,333,18281,1822,34048,1720,2559,49884,7008,38581,25383;_",
-					[1450802756] = "1126,333,5214,13067,1822,34048,54163,70972;_",
+				["US:Kel'Thuzad:Okurite"] = {
+					[1451420299] = "17,1109,18614,1822,3370,32398,52443,3969,2525,39812,347,3774,15257,5291;_",
+					[1451419898] = "1126,18614,1822,35768,3986,18367,34059,2525,39812,19378,5291;_",
+					[1451419814] = "1126,10916,1,7697,1822,3370,32398,3986,52426,2525,39812,347,19031,5291,6868;_",
 				},
-				["US:Frostmourne:Ozdêvil"] = {
-					[1451363493] = "1126,333,998,4216,13067,1822,30875,20531,25476,15298,3039,35496,3803,10566,6676,0,2117,5306,4485,1174;_",
-					[1451364439] = "469,990,260,738,4216,13067,32697,20531,40774,3039,35496,3803,6835,3731,270,272,6134,0,2117,999,4307,5659,8077,6924;_",
+				["US:Stormrage:Starbabe"] = {
+					[1450806706] = "1126,333,5894,12387,1822,34048,1720,43647,8796,46306,3599,15779,5291;_",
+					[1450806437] = "1126,19091,1345,34048,1720,38876,4771,8796,45749,557,3599,522,15257,1719,3572;_",
+					[1450807225] = "1126,333,20103,35768,28943,23500,3969,41780,557,19378,5291;_",
+					[1450807388] = "1126,333,7477,12626,12329,14613,8826,28943,11190,3514,7317,1479,3969,3937,37843,557,19378,5291;_",
 				},
 				["US:Eredar:Alaind"] = {
 					[1450842758] = "1126,333,20103,35768,52443,3969,540,2674,39121,19380,5291;_",
 					[1450843914] = "774,352,333,18281,37590,38876,13567,3969,5869,36466,10851,13820;_",
 				},
-				["US:Darkspear:Gardenl"] = {
-					[1451364439] = "469,990,260,738,4216,13067,94002,3039,39299,348,10218,542,8251,5306,897,4762;_",
+				["US:Elune:Áubrey"] = {
+					[1451409048] = "469,657,333,5214,18234,88835,2179,40158,16889,7780,10078;_",
 				},
 			},
 		},
@@ -3903,31 +4171,28 @@ AskMrRobotDb2 = {
 					{
 						[112164] = 2,
 						[74705] = 1,
+						[110648] = 1,
 						[110655] = 1,
 						[110641] = 2,
-						[110648] = 1,
 					}, -- [1]
 					{
 					}, -- [2]
 					[0] = {
 						[112164] = 2,
 						[74705] = 1,
+						[110648] = 1,
 						[110655] = 1,
 						[110641] = 2,
-						[110648] = 1,
 					},
 				},
 			},
 			["Bracnar-Sisters of Elune"] = {
 				["gems"] = {
 					{
-						[115809] = 1,
 					}, -- [1]
 					{
-						[115809] = 1,
 					}, -- [2]
 					[0] = {
-						[115809] = 2,
 					},
 				},
 				["specs"] = {
@@ -3936,27 +4201,18 @@ AskMrRobotDb2 = {
 				},
 				["materials"] = {
 					{
-						[113588] = 4,
-						[113262] = 3,
 					}, -- [1]
 					{
-						[113588] = 4,
-						[113262] = 3,
 					}, -- [2]
 					[0] = {
-						[113588] = 8,
-						[113262] = 6,
 					},
 				},
 				["enchants"] = {
 					{
-						[110638] = 1,
 					}, -- [1]
 					{
-						[110638] = 1,
 					}, -- [2]
 					[0] = {
-						[110638] = 2,
 					},
 				},
 			},

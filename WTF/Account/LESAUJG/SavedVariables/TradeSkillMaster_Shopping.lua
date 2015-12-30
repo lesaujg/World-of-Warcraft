@@ -31,64 +31,70 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @savedSearches"] = {
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1451397485,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
+			["lastSearch"] = 1451450454,
+			["name"] = "arcane c",
+			["filter"] = "arcane c",
 		}, -- [1]
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1451397475,
+			["lastSearch"] = 1451450438,
 			["name"] = "universal",
 			["filter"] = "universal",
 		}, -- [2]
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1451397460,
-			["name"] = "arcane c",
-			["filter"] = "arcane c",
+			["lastSearch"] = 1451423080,
+			["name"] = "hexweave bag",
+			["filter"] = "hexweave bag",
 		}, -- [3]
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1450965813,
-			["name"] = "raw beast",
-			["filter"] = "raw beast",
+			["lastSearch"] = 1451421798,
+			["name"] = "sorcerous",
+			["filter"] = "sorcerous",
 		}, -- [4]
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1450758209,
+			["lastSearch"] = 1451421774,
 			["name"] = "temporal",
 			["filter"] = "temporal",
 		}, -- [5]
 		{
 			["searchMode"] = "normal",
+			["lastSearch"] = 1451397485,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
+		}, -- [6]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1450965813,
+			["name"] = "raw beast",
+			["filter"] = "raw beast",
+		}, -- [7]
+		{
+			["searchMode"] = "normal",
 			["lastSearch"] = 1450676744,
 			["name"] = "frostweed",
 			["filter"] = "frostweed",
-		}, -- [6]
+		}, -- [8]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1450593824,
 			["name"] = "legion",
 			["filter"] = "legion",
-		}, -- [7]
+		}, -- [9]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1450325729,
 			["name"] = "saberfish",
 			["filter"] = "saberfish",
-		}, -- [8]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1450323206,
-			["name"] = "sorcerous",
-			["filter"] = "sorcerous",
-		}, -- [9]
+		}, -- [10]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1450066769,
 			["name"] = "Mounts/Miscellaneous/Mount/usable",
 			["filter"] = "Mounts/Miscellaneous/Mount/usable",
-		}, -- [10]
+		}, -- [11]
 	},
 	["_hash"] = 1861581,
 	["g@ @marketValueSource"] = "dbmarket",
