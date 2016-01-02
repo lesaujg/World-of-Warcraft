@@ -31,15 +31,15 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @savedSearches"] = {
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1451633535,
-			["name"] = "universal",
-			["filter"] = "universal",
+			["lastSearch"] = 1451710026,
+			["name"] = "arcane c",
+			["filter"] = "arcane c",
 		}, -- [1]
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1451633523,
-			["name"] = "arcane c",
-			["filter"] = "arcane c",
+			["lastSearch"] = 1451710021,
+			["name"] = "universal",
+			["filter"] = "universal",
 		}, -- [2]
 		{
 			["searchMode"] = "normal",

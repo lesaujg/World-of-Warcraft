@@ -10,7 +10,7 @@
 
 local TSM = select(2, ...)
 local Items = TSM:NewModule("Items", "AceEvent-3.0")
-local private = {itemInfoCache=setmetatable({}, {__mode="kv"}), scanTooltip=nil, pendingItems={}}
+local private = {itemInfoCache=setmetatable({}, {__mode="kv"}), bonusIdCache=setmetatable({}, {__mode="kv"}), bonusIdTemp={}, scanTooltip=nil, pendingItems={}}
 local PET_CAGE_ITEM_INFO = {isDefault=true, 0, "Battle Pets", "", 1, "", "", 0}
 local WEAPON, ARMOR = GetAuctionItemClasses()
 
@@ -34,8 +34,9 @@ function TSMAPI.Item:ToItemString(item)
 	
 	-- test if it's already (likely) an item string or battle pet string
 	if strmatch(item, "^p:([0-9%-:]+)$") then
-		if strmatch(item, "^p:(%d+:%d+:%d+)$") then
-			return item..":0:0:0"
+		result = strjoin(":", strmatch(item, "^(p):(%d+:%d+:%d+)"))
+		if result then
+			return result
 		end
 		return item
 	elseif strmatch(item, "^i:([0-9%-:]+)$") then
@@ -57,15 +58,15 @@ function TSMAPI.Item:ToItemString(item)
 	end
 	
 	-- test if it's an old style battle pet string (or if it was a link)
-	result = strjoin(":", strmatch(item, "^battle(p)et:(%d+:%d+:%d+:%d+:%d+:%d+)"))
-	if result then
-		return result
-	end
 	result = strjoin(":", strmatch(item, "^battle(p)et:(%d+:%d+:%d+)"))
 	if result then
 		return result
 	end
 	result = strjoin(":", strmatch(item, "^battle(p)et:(%d+)$"))
+	if result then
+		return result
+	end
+	result = strjoin(":", strmatch(item, "^(p):(%d+:%d+:%d+)"))
 	if result then
 		return result
 	end
@@ -114,8 +115,8 @@ function TSMAPI.Item:ToItemLink(itemString)
 	local link = select(2, TSMAPI.Item:GetInfo(itemString))
 	if link then return link end
 	if strmatch(itemString, "p:") then
-		local _, speciesId, level, quality, maxHealth, power, speed = (":"):split(itemString)
-		return "|cffff0000|Hbattlepet"..strjoin(":", speciesId, level or 0, quality or 0, maxHealth or 0, power or 0, speed or 0).."|h[Unknown Pet]|h|r"
+		local _, speciesId, level, quality = (":"):split(itemString)
+		return "|cffff0000|Hbattlepet"..strjoin(":", speciesId, level or 0, quality or 0, 0, 0, 0).."|h[Unknown Pet]|h|r"
 	elseif strmatch(itemString, "i:") then
 		return "|cffff0000|H"..gsub(itemString, "i:", "item:").."|h[Unknown Item]|h|r"
 	end
@@ -356,7 +357,8 @@ end
 
 function private.ItemInfoThread(self)
 	self:SetThreadName("QUERY_ITEM_INFO")
-	local yieldPeriod = 50
+	self:Sleep(10)
+	local yieldPeriod = 10
 	local targetItemInfo = {}
 	while true do
 		for i=#private.pendingItems, 1, -1 do
@@ -365,7 +367,7 @@ function private.ItemInfoThread(self)
 			end
 			if i % yieldPeriod == 0 then
 				self:Yield(true)
-				yieldPeriod = min(yieldPeriod + 10, 300)
+				yieldPeriod = min(yieldPeriod + 10, 50)
 			else
 				self:Yield()
 			end
@@ -421,9 +423,78 @@ function private:FixItemString(itemString)
 			itemString = gsub(strmatch(itemString, "^i:[0-9]+:[0-9%-]+"), ":0$", "")
 			return itemString
 		end
-		-- fix the count
-		itemString = gsub(itemString, "^(i:[0-9]+:[0-9%-]+:)[0-9]+", "%1"..(num_parts-1))
-		return itemString
+		-- filter out bonusIds we don't care about
+		return private:FilterImportantBonsuIds(itemString)
 	end
 	return itemString
+end
+
+function private:CorrectBonusId(bonusId)
+	if bonusId >= 19 and bonusId <= 39 then -- Fireflash
+		bonusId = 19
+	elseif bonusId >= 45 and bonusId <= 65 then -- Peerless
+		bonusId = 45
+	elseif bonusId >= 66 and bonusId <= 86 then -- Savage
+		bonusId = 66
+	elseif bonusId >= 87 and bonusId <= 107 then -- Quickblade
+		bonusId = 87
+	elseif bonusId >= 108 and bonusId <= 128 then -- Feverflare
+		bonusId = 108
+	elseif bonusId >= 129 and bonusId <= 149 then -- Deft
+		bonusId = 129
+	elseif bonusId >= 150 and bonusId <= 170 then -- Aurora
+		bonusId = 150
+	elseif bonusId >= 175 and bonusId <= 195 then -- Merciless
+		bonusId = 175
+	elseif bonusId >= 196 and bonusId <= 216 then -- Harmonious
+		bonusId = 196
+	elseif bonusId >= 217 and bonusId <= 237 then -- Strategist
+		bonusId = 217
+	elseif bonusId >= 238 and bonusId <= 258 then -- Guileful
+		bonusId = 238
+	elseif bonusId >= 259 and bonusId <= 279 then -- Windshaper
+		bonusId = 259
+	elseif bonusId >= 280 and bonusId <= 300 then -- Noble
+		bonusId = 280
+	elseif bonusId >= 301 and bonusId <= 321 then -- Stormbreaker
+		bonusId = 301
+	elseif bonusId >= 322 and bonusId <= 342 then -- Stalwart
+		bonusId = 322
+	elseif bonusId >= 343 and bonusId <= 363 then -- Fanatic
+		bonusId = 343
+	elseif bonusId >= 364 and bonusId <= 384 then -- Zealot
+		bonusId = 364
+	elseif bonusId >= 385 and bonusId <= 405 then -- Diviner
+		bonusId = 385
+	elseif bonusId >= 406 and bonusId <= 426 then -- Herald
+		bonusId = 406
+	elseif bonusId >= 427 and bonusId <= 447 then -- Augur
+		bonusId = 427
+	end
+	return bonusId
+end
+
+function private:FilterImportantBonsuIds(itemString)
+	local itemId, rand, bonusIds = strmatch(itemString, "i:([0-9]+):([0-9%-]+):[0-9]+:(.+)$")
+	if not bonusIds then return print(itemString) end
+	if not private.bonusIdCache[bonusIds] then
+		wipe(private.bonusIdTemp)
+		for id in gmatch(bonusIds, "[0-9]+") do
+			id = private:CorrectBonusId(tonumber(id))
+			if TSM.STATIC_DATA.importantBonusId[id] and not tContains(private.bonusIdTemp, id) then
+				tinsert(private.bonusIdTemp, id)
+			end
+		end
+		sort(private.bonusIdTemp)
+		private.bonusIdCache[bonusIds] = { num = #private.bonusIdTemp, value = strjoin(":", unpack(private.bonusIdTemp)) }
+	end
+	if private.bonusIdCache[bonusIds].num == 0 then
+		if rand == 0 then
+			return strjoin(":", "i", itemId)
+		else
+			return strjoin(":", "i", itemId, rand)
+		end
+	else
+		return strjoin(":", "i", itemId, rand, private.bonusIdCache[bonusIds].num, private.bonusIdCache[bonusIds].value)
+	end
 end
