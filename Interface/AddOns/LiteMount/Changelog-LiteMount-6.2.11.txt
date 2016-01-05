@@ -1,0 +1,12 @@
+tag 6.2.11
+392fb90d4b99b39e20070bfe0fba1841890df382
+Mike "Xodiv" Battersby <mib@post.com>
+2016-01-03 21:38:18 +1100
+
+Another options fix, properly save new mount exclude.
+
+
+--------------------
+
+Mike "Xodiv" Battersby:
+	- Fix the same non-saving problem with the exclude new mounts option.
