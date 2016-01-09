@@ -27,61 +27,61 @@ TradeSkillMaster_ShoppingDB = {
 		["auction"] = true,
 	},
 	["g@ @sniperVendorPrice"] = true,
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @savedSearches"] = {
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1452257535,
+			["lastSearch"] = 1452311217,
 			["name"] = "universal",
 			["filter"] = "universal",
 		}, -- [1]
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1452257524,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
+			["lastSearch"] = 1452311203,
+			["name"] = "arcane c",
+			["filter"] = "arcane c",
 		}, -- [2]
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1452257512,
-			["name"] = "arcane c",
-			["filter"] = "arcane c",
+			["lastSearch"] = 1452311172,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
 		}, -- [3]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1452311119,
+			["name"] = "legion",
+			["filter"] = "legion",
+		}, -- [4]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452040768,
 			["name"] = "sorcerous",
 			["filter"] = "sorcerous",
-		}, -- [4]
+		}, -- [5]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1451926613,
 			["name"] = "hexweave bag",
 			["filter"] = "hexweave bag",
-		}, -- [5]
+		}, -- [6]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1451421774,
 			["name"] = "temporal",
 			["filter"] = "temporal",
-		}, -- [6]
+		}, -- [7]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1450965813,
 			["name"] = "raw beast",
 			["filter"] = "raw beast",
-		}, -- [7]
+		}, -- [8]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1450676744,
 			["name"] = "frostweed",
 			["filter"] = "frostweed",
-		}, -- [8]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1450593824,
-			["name"] = "legion",
-			["filter"] = "legion",
 		}, -- [9]
 		{
 			["searchMode"] = "normal",
@@ -96,7 +96,7 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "Mounts/Miscellaneous/Mount/usable",
 		}, -- [11]
 	},
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @maxDeSearchLvl"] = 735,
 	["g@ @minDeSearchLvl"] = 1,

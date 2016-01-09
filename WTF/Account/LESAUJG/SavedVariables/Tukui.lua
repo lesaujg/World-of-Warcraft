@@ -2,7 +2,7 @@
 TukuiData = {
 	["Gold"] = {
 		["Sisters of Elune"] = {
-			["Bracnar"] = 1272575711,
+			["Bracnar"] = 1287467487,
 			["Ghiaccioli"] = 296660173,
 			["Mandelbrot"] = 205133,
 			["Orig"] = 36575615,
@@ -11,7 +11,7 @@ TukuiData = {
 			["Belrath"] = 98013973,
 			["Uldaris"] = 465393219,
 			["Sanjuri"] = 11460,
-			["Clothgar"] = 9403297102,
+			["Clothgar"] = 9410408455,
 		},
 	},
 	["Sisters of Elune"] = {
@@ -29,6 +29,7 @@ TukuiData = {
 			["hidebar4"] = false,
 			["hidebar2"] = false,
 			["HideBar2"] = false,
+			["HideBar5"] = false,
 			["install"] = true,
 			["HideBar4"] = false,
 			["Chat"] = {
@@ -113,11 +114,11 @@ TukuiData = {
 					111, -- [6]
 				},
 			},
-			["InstallDone"] = true,
 			["ufpos"] = {
 			},
 			["hidebar3"] = false,
 			["hidebar5"] = false,
+			["InstallDone"] = true,
 			["HideBar3"] = false,
 			["Texts"] = {
 				["Friends"] = {

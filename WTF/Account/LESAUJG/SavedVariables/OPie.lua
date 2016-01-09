@@ -38,8 +38,8 @@ OneRing_Config = {
 				}, -- [5]
 				["name"] = "Pets",
 				["save"] = true,
-				["limit"] = "Bracnar-SistersofElune",
 				["hotkey"] = "ALT-W",
+				["limit"] = "Bracnar-SistersofElune",
 			},
 			["OPieFlagStore"] = {
 				["FlushedDefaultColors"] = true,
@@ -72,8 +72,8 @@ OneRing_Config = {
 				}, -- [5]
 				["name"] = "Useful Items",
 				["save"] = true,
-				["limit"] = "Bracnar-SistersofElune",
 				["hotkey"] = "ALT-E",
+				["limit"] = "Bracnar-SistersofElune",
 			},
 		},
 	},
