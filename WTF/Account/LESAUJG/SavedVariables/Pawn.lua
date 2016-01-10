@@ -8,7 +8,7 @@ PawnCommon = {
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
-	["ShownGettingStarted"] = true,
+	["ShowUpgradesOnTooltips"] = true,
 	["ShowSocketingAdvisor"] = true,
 	["Scales"] = {
 		["\"Wowhead\":ShamanEnhancement"] = {
@@ -94,10 +94,10 @@ PawnCommon = {
 		},
 		["\"Wowhead\":PaladinTank"] = {
 			["PerCharacterOptions"] = {
-				["Herbinator-Sisters of Elune"] = {
+				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
-				["Galinar-Sisters of Elune"] = {
+				["Herbinator-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
 			},
@@ -123,23 +123,13 @@ PawnCommon = {
 			["UnenchantedColor"] = "809f56",
 		},
 		["BM - Single-Target"] = {
-			["Values"] = {
-				["CritRating"] = 0.5,
-				["Dps"] = 0.76,
-				["Agility"] = 1,
-				["HasteRating"] = 0.53,
-				["MasteryRating"] = 0.52,
-				["Versatility"] = 0.5,
-				["Multistrike"] = 0.52,
-				["Ap"] = 0.9,
-			},
 			["PerCharacterOptions"] = {
 				["Bracnar-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
-						["INVTYPE_HAND"] = {
-							532.28, -- [1]
-							"item:124291:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
+						["INVTYPE_2HWEAPON"] = {
+							1175.42, -- [1]
+							"item:124362:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_HEAD"] = {
@@ -152,9 +142,9 @@ PawnCommon = {
 							"item:124287:0:0:0:0:0:0:0:0:254:4:5:2:561:566:531:0:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_CLOAK"] = {
-							383.04, -- [1]
-							"item:116174:0:0:0:0:0:0:0:0:254:4:13:3:618:536:76:531:0", -- [2]
+						["INVTYPE_CHEST"] = {
+							636.99, -- [1]
+							"item:124284:0:0:0:0:0:0:0:0:254:4:3:2:560:563:531:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_FINGER"] = {
@@ -165,14 +155,14 @@ PawnCommon = {
 							"item:124636:0:0:0:0:0:0:0:0:253:0:11:2:649:641:0:0:0", -- [5]
 							0, -- [6]
 						},
-						["INVTYPE_LEGS"] = {
-							647.82, -- [1]
-							"item:124301:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
+						["INVTYPE_SHOULDER"] = {
+							492.98, -- [1]
+							"item:124307:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_WRIST"] = {
-							445.29, -- [1]
-							"item:124314:0:0:0:0:0:0:0:0:254:4:5:3:561:564:566:531:0", -- [2]
+						["INVTYPE_HAND"] = {
+							532.28, -- [1]
+							"item:124291:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_WAIST"] = {
@@ -185,32 +175,42 @@ PawnCommon = {
 							"item:124210:0:0:0:0:0:0:0:0:254:4:5:3:561:41:566:531:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_SHOULDER"] = {
-							492.98, -- [1]
-							"item:124307:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
+						["INVTYPE_LEGS"] = {
+							647.82, -- [1]
+							"item:124301:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_2HWEAPON"] = {
-							1175.42, -- [1]
-							"item:124362:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
+						["INVTYPE_WRIST"] = {
+							445.29, -- [1]
+							"item:124314:0:0:0:0:0:0:0:0:254:4:5:3:561:564:566:531:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_CHEST"] = {
-							636.99, -- [1]
-							"item:124284:0:0:0:0:0:0:0:0:254:4:3:2:560:563:531:0:0", -- [2]
+						["INVTYPE_CLOAK"] = {
+							383.04, -- [1]
+							"item:116174:0:0:0:0:0:0:0:0:254:4:13:3:618:536:76:531:0", -- [2]
 							0, -- [3]
 						},
 					},
 				},
 			},
+			["Values"] = {
+				["CritRating"] = 0.5,
+				["Dps"] = 0.76,
+				["Multistrike"] = 0.52,
+				["HasteRating"] = 0.53,
+				["MasteryRating"] = 0.52,
+				["Versatility"] = 0.5,
+				["Agility"] = 1,
+				["Ap"] = 0.9,
+			},
 			["UpgradesFollowSpecialization"] = true,
 		},
 		["\"Wowhead\":PaladinHoly"] = {
 			["PerCharacterOptions"] = {
-				["Herbinator-Sisters of Elune"] = {
+				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
-				["Galinar-Sisters of Elune"] = {
+				["Herbinator-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
 			},
@@ -316,36 +316,97 @@ PawnCommon = {
 			["Provider"] = "Wowhead",
 			["UnenchantedColor"] = "957552",
 		},
-		["\"Wowhead\":DeathKnightFrostDps"] = {
-			["PerCharacterOptions"] = {
-			},
-			["Color"] = "ff4d6b",
-			["LocalizedName"] = "DK: frost",
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
-			["DoNotShow2HUpgrades"] = false,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "bf3950",
-		},
-		["MM - Single-Target"] = {
-			["Values"] = {
-				["CritRating"] = 0.65,
-				["Dps"] = 2.5,
-				["Agility"] = 1,
-				["HasteRating"] = 0.43,
-				["MasteryRating"] = 0.55,
-				["Versatility"] = 0.56,
-				["Multistrike"] = 0.6,
-				["Ap"] = 0.9,
-			},
+		["SV - Single-Target"] = {
 			["PerCharacterOptions"] = {
 				["Bracnar-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
+						["INVTYPE_2HWEAPON"] = {
+							1318.96, -- [1]
+							"item:124362:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_HEAD"] = {
+							651.92, -- [1]
+							"item:124296:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_FEET"] = {
+							543.33, -- [1]
+							"item:124287:0:0:0:0:0:0:0:0:254:4:5:2:561:566:531:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_CHEST"] = {
+							608.06, -- [1]
+							"item:124284:0:0:0:0:0:0:0:0:254:4:3:2:560:563:531:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_FINGER"] = {
+							720.96, -- [1]
+							"item:124636:0:0:0:0:0:0:0:0:254:0:11:2:649:641:0:0:0", -- [2]
+							0, -- [3]
+							720.96, -- [4]
+							"item:124636:0:0:0:0:0:0:0:0:253:0:11:2:649:641:0:0:0", -- [5]
+							0, -- [6]
+						},
+						["INVTYPE_SHOULDER"] = {
+							479.32, -- [1]
+							"item:124307:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
+							0, -- [3]
+						},
 						["INVTYPE_HAND"] = {
-							586, -- [1]
+							539.17, -- [1]
 							"item:124291:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_WAIST"] = {
+							516.83, -- [1]
+							"item:116194:0:0:0:0:0:0:0:0:254:4:13:3:618:536:80:531:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_NECK"] = {
+							437.04, -- [1]
+							"item:124210:0:0:0:0:0:0:0:0:254:4:5:3:561:41:566:531:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_LEGS"] = {
+							657.96, -- [1]
+							"item:124301:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_WRIST"] = {
+							462.74, -- [1]
+							"item:124314:0:0:0:0:0:0:0:0:254:4:5:3:561:564:566:531:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_CLOAK"] = {
+							392.16, -- [1]
+							"item:116174:0:0:0:0:0:0:0:0:254:4:13:3:618:536:76:531:0", -- [2]
+							0, -- [3]
+						},
+					},
+				},
+			},
+			["Values"] = {
+				["CritRating"] = 0.49,
+				["Dps"] = 1,
+				["Multistrike"] = 0.59,
+				["HasteRating"] = 0.42,
+				["MasteryRating"] = 0.41,
+				["Versatility"] = 0.5,
+				["Agility"] = 1,
+				["Ap"] = 0.9,
+			},
+			["UpgradesFollowSpecialization"] = true,
+		},
+		["MM - Single-Target"] = {
+			["PerCharacterOptions"] = {
+				["Bracnar-Sisters of Elune"] = {
+					["Visible"] = true,
+					["BestItems"] = {
+						["INVTYPE_2HWEAPON"] = {
+							2439.35, -- [1]
+							"item:124362:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_HEAD"] = {
@@ -358,9 +419,9 @@ PawnCommon = {
 							"item:124287:0:0:0:0:0:0:0:0:254:4:5:2:561:566:531:0:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_CLOAK"] = {
-							418, -- [1]
-							"item:116174:0:0:0:0:0:0:0:0:254:4:13:3:618:536:76:531:0", -- [2]
+						["INVTYPE_CHEST"] = {
+							682.5, -- [1]
+							"item:124284:0:0:0:0:0:0:0:0:254:4:3:2:560:563:531:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_FINGER"] = {
@@ -371,14 +432,14 @@ PawnCommon = {
 							"item:124636:0:0:0:0:0:0:0:0:253:0:11:2:649:641:0:0:0", -- [5]
 							0, -- [6]
 						},
-						["INVTYPE_LEGS"] = {
-							711.55, -- [1]
-							"item:124301:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
+						["INVTYPE_SHOULDER"] = {
+							483.18, -- [1]
+							"item:124307:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_WRIST"] = {
-							488.3, -- [1]
-							"item:124314:0:0:0:0:0:0:0:0:254:4:5:3:561:564:566:531:0", -- [2]
+						["INVTYPE_HAND"] = {
+							586, -- [1]
+							"item:124291:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_WAIST"] = {
@@ -391,23 +452,33 @@ PawnCommon = {
 							"item:124210:0:0:0:0:0:0:0:0:254:4:5:3:561:41:566:531:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_SHOULDER"] = {
-							483.18, -- [1]
-							"item:124307:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
+						["INVTYPE_LEGS"] = {
+							711.55, -- [1]
+							"item:124301:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_2HWEAPON"] = {
-							2439.35, -- [1]
-							"item:124362:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
+						["INVTYPE_WRIST"] = {
+							488.3, -- [1]
+							"item:124314:0:0:0:0:0:0:0:0:254:4:5:3:561:564:566:531:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_CHEST"] = {
-							682.5, -- [1]
-							"item:124284:0:0:0:0:0:0:0:0:254:4:3:2:560:563:531:0:0", -- [2]
+						["INVTYPE_CLOAK"] = {
+							418, -- [1]
+							"item:116174:0:0:0:0:0:0:0:0:254:4:13:3:618:536:76:531:0", -- [2]
 							0, -- [3]
 						},
 					},
 				},
+			},
+			["Values"] = {
+				["CritRating"] = 0.65,
+				["Dps"] = 2.5,
+				["Multistrike"] = 0.6,
+				["HasteRating"] = 0.43,
+				["MasteryRating"] = 0.55,
+				["Versatility"] = 0.56,
+				["Agility"] = 1,
+				["Ap"] = 0.9,
 			},
 			["UpgradesFollowSpecialization"] = true,
 		},
@@ -456,9 +527,14 @@ PawnCommon = {
 							"item:124251:0:0:0:0:0:0:0:0:105:4:3:1:563:531:0:0:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_CLOAK"] = {
-							91.388575224178, -- [1]
-							"item:127973:0:0:0:0:0:0:0:0:105:4:3:0:531:0:0:0:0", -- [2]
+						["INVTYPE_CHEST"] = {
+							125.541016273663, -- [1]
+							"item:113951:0:0:0:0:0:0:0:0:105:0:3:0:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_HAND"] = {
+							120.343739621388, -- [1]
+							"item:128137:0:0:0:0:0:0:0:0:105:4:4:0:531:0:0:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_FINGER"] = {
@@ -469,14 +545,9 @@ PawnCommon = {
 							"item:124603:0:0:0:0:0:0:0:0:105:4:14:3:375:652:648:531:0", -- [5]
 							0, -- [6]
 						},
-						["INVTYPE_2HWEAPON"] = {
-							175.693789438725, -- [1]
-							"item:124630:0:0:0:0:0:0:0:0:105:4:14:3:188:653:648:531:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_LEGS"] = {
-							166.615410162737, -- [1]
-							"item:128131:0:0:0:0:0:0:0:0:105:4:4:1:42:531:0:0:0", -- [2]
+						["INVTYPE_SHOULDER"] = {
+							100.76187313185, -- [1]
+							"item:128046:0:0:0:0:0:0:0:0:102:4:4:0:531:0:0:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_WRIST"] = {
@@ -494,19 +565,19 @@ PawnCommon = {
 							"item:124609:0:0:0:0:0:0:0:0:105:4:1:3:488:653:648:531:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_SHOULDER"] = {
-							100.76187313185, -- [1]
-							"item:128046:0:0:0:0:0:0:0:0:102:4:4:0:531:0:0:0:0", -- [2]
+						["INVTYPE_LEGS"] = {
+							166.615410162737, -- [1]
+							"item:128131:0:0:0:0:0:0:0:0:105:4:4:1:42:531:0:0:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_HAND"] = {
-							120.343739621388, -- [1]
-							"item:128137:0:0:0:0:0:0:0:0:105:4:4:0:531:0:0:0:0", -- [2]
+						["INVTYPE_2HWEAPON"] = {
+							175.693789438725, -- [1]
+							"item:124630:0:0:0:0:0:0:0:0:105:4:14:3:188:653:648:531:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_CHEST"] = {
-							125.541016273663, -- [1]
-							"item:113951:0:0:0:0:0:0:0:0:105:0:3:0:0:0:0:0:0", -- [2]
+						["INVTYPE_CLOAK"] = {
+							91.388575224178, -- [1]
+							"item:127973:0:0:0:0:0:0:0:0:105:4:3:0:531:0:0:0:0", -- [2]
 							0, -- [3]
 						},
 					},
@@ -521,20 +592,17 @@ PawnCommon = {
 			["Provider"] = "Wowhead",
 			["UnenchantedColor"] = "bf5d07",
 		},
-		["\"Wowhead\":RogueSubtlety"] = {
+		["\"Wowhead\":PriestShadow"] = {
 			["PerCharacterOptions"] = {
-				["Mandelbrot-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 			},
-			["Color"] = "fff569",
-			["LocalizedName"] = "Rogue: subtlety",
+			["Color"] = "e0e0e0",
+			["LocalizedName"] = "Priest: shadow",
 			["DoNotShow1HUpgrades"] = false,
 			["NormalizationFactor"] = 1,
-			["DoNotShow2HUpgrades"] = true,
+			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "bfb74e",
+			["UnenchantedColor"] = "a8a8a8",
 		},
 		["\"Wowhead\":HunterMarksman"] = {
 			["PerCharacterOptions"] = {
@@ -563,9 +631,14 @@ PawnCommon = {
 							"item:124251:0:0:0:0:0:0:0:0:105:4:3:1:563:531:0:0:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_CLOAK"] = {
-							113.409090909091, -- [1]
-							"item:127973:0:0:0:0:0:0:0:0:105:4:3:0:531:0:0:0:0", -- [2]
+						["INVTYPE_CHEST"] = {
+							181.802139037433, -- [1]
+							"item:113951:0:0:0:0:0:0:0:0:105:0:3:0:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_HAND"] = {
+							163.417112299465, -- [1]
+							"item:128137:0:0:0:0:0:0:0:0:105:4:4:0:531:0:0:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_FINGER"] = {
@@ -576,14 +649,9 @@ PawnCommon = {
 							"item:124602:0:0:0:0:0:0:0:0:102:4:14:3:226:764:652:531:0", -- [5]
 							0, -- [6]
 						},
-						["INVTYPE_2HWEAPON"] = {
-							171.216577540107, -- [1]
-							"item:124630:0:0:0:0:0:0:0:0:105:4:14:3:188:653:648:531:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_LEGS"] = {
-							190.53743315508, -- [1]
-							"item:128131:0:0:0:0:0:0:0:0:105:4:4:1:42:531:0:0:0", -- [2]
+						["INVTYPE_SHOULDER"] = {
+							154.51871657754, -- [1]
+							"item:128065:0:0:0:0:0:0:0:0:105:4:4:1:560:531:0:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_WRIST"] = {
@@ -601,19 +669,19 @@ PawnCommon = {
 							"item:124609:0:0:0:0:0:0:0:0:105:4:1:3:488:653:648:531:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_SHOULDER"] = {
-							154.51871657754, -- [1]
-							"item:128065:0:0:0:0:0:0:0:0:105:4:4:1:560:531:0:0:0", -- [2]
+						["INVTYPE_LEGS"] = {
+							190.53743315508, -- [1]
+							"item:128131:0:0:0:0:0:0:0:0:105:4:4:1:42:531:0:0:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_HAND"] = {
-							163.417112299465, -- [1]
-							"item:128137:0:0:0:0:0:0:0:0:105:4:4:0:531:0:0:0:0", -- [2]
+						["INVTYPE_2HWEAPON"] = {
+							171.216577540107, -- [1]
+							"item:124630:0:0:0:0:0:0:0:0:105:4:14:3:188:653:648:531:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_CHEST"] = {
-							181.802139037433, -- [1]
-							"item:113951:0:0:0:0:0:0:0:0:105:0:3:0:0:0:0:0:0", -- [2]
+						["INVTYPE_CLOAK"] = {
+							113.409090909091, -- [1]
+							"item:127973:0:0:0:0:0:0:0:0:105:4:3:0:531:0:0:0:0", -- [2]
 							0, -- [3]
 						},
 					},
@@ -642,10 +710,10 @@ PawnCommon = {
 		},
 		["\"Wowhead\":PaladinRetribution"] = {
 			["PerCharacterOptions"] = {
-				["Herbinator-Sisters of Elune"] = {
+				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
-				["Galinar-Sisters of Elune"] = {
+				["Herbinator-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
 			},
@@ -673,20 +741,20 @@ PawnCommon = {
 			["Provider"] = "Wowhead",
 			["UnenchantedColor"] = "4e99b3",
 		},
-		["\"Wowhead\":MonkWindwalker"] = {
+		["\"Wowhead\":WarlockAffliction"] = {
 			["PerCharacterOptions"] = {
-				["Orig-Sisters of Elune"] = {
+				["Clothgar-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
 			},
-			["Color"] = "00ff96",
-			["LocalizedName"] = "Monk: windwalker",
+			["Color"] = "bca5ff",
+			["LocalizedName"] = "Warlock: affliction",
 			["DoNotShow1HUpgrades"] = false,
 			["NormalizationFactor"] = 1,
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "00bf70",
+			["UnenchantedColor"] = "8d7bbf",
 		},
 		["\"Wowhead\":WarriorTank"] = {
 			["PerCharacterOptions"] = {
@@ -715,9 +783,14 @@ PawnCommon = {
 							"item:124251:0:0:0:0:0:0:0:0:105:4:3:1:563:531:0:0:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_CLOAK"] = {
-							19.6337321497491, -- [1]
-							"item:127973:0:0:0:0:0:0:0:0:105:4:3:0:531:0:0:0:0", -- [2]
+						["INVTYPE_CHEST"] = {
+							131.549208799691, -- [1]
+							"item:113951:0:0:0:0:0:0:0:0:105:0:3:0:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_HAND"] = {
+							126.022771130838, -- [1]
+							"item:128137:0:0:0:0:0:0:0:0:105:4:4:0:531:0:0:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_FINGER"] = {
@@ -728,14 +801,9 @@ PawnCommon = {
 							"item:124602:0:0:0:0:0:0:0:0:102:4:14:3:226:764:652:531:0", -- [5]
 							0, -- [6]
 						},
-						["INVTYPE_2HWEAPON"] = {
-							52.6453106908529, -- [1]
-							"item:124630:0:0:0:0:0:0:0:0:105:4:14:3:188:653:648:531:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_LEGS"] = {
-							164.113855654188, -- [1]
-							"item:128131:0:0:0:0:0:0:0:0:105:4:4:1:42:531:0:0:0", -- [2]
+						["INVTYPE_SHOULDER"] = {
+							120.984947896565, -- [1]
+							"item:128065:0:0:0:0:0:0:0:0:105:4:4:1:560:531:0:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_WRIST"] = {
@@ -753,19 +821,19 @@ PawnCommon = {
 							"item:124609:0:0:0:0:0:0:0:0:105:4:1:3:488:653:648:531:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_SHOULDER"] = {
-							120.984947896565, -- [1]
-							"item:128065:0:0:0:0:0:0:0:0:105:4:4:1:560:531:0:0:0", -- [2]
+						["INVTYPE_LEGS"] = {
+							164.113855654188, -- [1]
+							"item:128131:0:0:0:0:0:0:0:0:105:4:4:1:42:531:0:0:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_HAND"] = {
-							126.022771130838, -- [1]
-							"item:128137:0:0:0:0:0:0:0:0:105:4:4:0:531:0:0:0:0", -- [2]
+						["INVTYPE_2HWEAPON"] = {
+							52.6453106908529, -- [1]
+							"item:124630:0:0:0:0:0:0:0:0:105:4:14:3:188:653:648:531:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_CHEST"] = {
-							131.549208799691, -- [1]
-							"item:113951:0:0:0:0:0:0:0:0:105:0:3:0:0:0:0:0:0", -- [2]
+						["INVTYPE_CLOAK"] = {
+							19.6337321497491, -- [1]
+							"item:127973:0:0:0:0:0:0:0:0:105:4:3:0:531:0:0:0:0", -- [2]
 							0, -- [3]
 						},
 					},
@@ -795,9 +863,14 @@ PawnCommon = {
 							"item:124251:0:0:0:0:0:0:0:0:105:4:3:1:563:531:0:0:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_CLOAK"] = {
-							92.9100321313817, -- [1]
-							"item:127973:0:0:0:0:0:0:0:0:105:4:3:0:531:0:0:0:0", -- [2]
+						["INVTYPE_CHEST"] = {
+							128.498393430918, -- [1]
+							"item:113951:0:0:0:0:0:0:0:0:105:0:3:0:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_HAND"] = {
+							123.125669403784, -- [1]
+							"item:128137:0:0:0:0:0:0:0:0:105:4:4:0:531:0:0:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_FINGER"] = {
@@ -808,14 +881,9 @@ PawnCommon = {
 							"item:124602:0:0:0:0:0:0:0:0:102:4:14:3:226:764:652:531:0", -- [5]
 							0, -- [6]
 						},
-						["INVTYPE_2HWEAPON"] = {
-							179.226704748304, -- [1]
-							"item:124630:0:0:0:0:0:0:0:0:105:4:14:3:188:653:648:531:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_LEGS"] = {
-							164.055337379507, -- [1]
-							"item:128131:0:0:0:0:0:0:0:0:105:4:4:1:42:531:0:0:0", -- [2]
+						["INVTYPE_SHOULDER"] = {
+							112.888968225634, -- [1]
+							"item:128065:0:0:0:0:0:0:0:0:105:4:4:1:560:531:0:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_WRIST"] = {
@@ -833,19 +901,19 @@ PawnCommon = {
 							"item:124609:0:0:0:0:0:0:0:0:105:4:1:3:488:653:648:531:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_SHOULDER"] = {
-							112.888968225634, -- [1]
-							"item:128065:0:0:0:0:0:0:0:0:105:4:4:1:560:531:0:0:0", -- [2]
+						["INVTYPE_LEGS"] = {
+							164.055337379507, -- [1]
+							"item:128131:0:0:0:0:0:0:0:0:105:4:4:1:42:531:0:0:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_HAND"] = {
-							123.125669403784, -- [1]
-							"item:128137:0:0:0:0:0:0:0:0:105:4:4:0:531:0:0:0:0", -- [2]
+						["INVTYPE_2HWEAPON"] = {
+							179.226704748304, -- [1]
+							"item:124630:0:0:0:0:0:0:0:0:105:4:14:3:188:653:648:531:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_CHEST"] = {
-							128.498393430918, -- [1]
-							"item:113951:0:0:0:0:0:0:0:0:105:0:3:0:0:0:0:0:0", -- [2]
+						["INVTYPE_CLOAK"] = {
+							92.9100321313817, -- [1]
+							"item:127973:0:0:0:0:0:0:0:0:105:4:3:0:531:0:0:0:0", -- [2]
 							0, -- [3]
 						},
 					},
@@ -860,20 +928,20 @@ PawnCommon = {
 			["Provider"] = "Wowhead",
 			["UnenchantedColor"] = "bf5d07",
 		},
-		["\"Wowhead\":WarlockAffliction"] = {
+		["\"Wowhead\":MonkWindwalker"] = {
 			["PerCharacterOptions"] = {
-				["Clothgar-Sisters of Elune"] = {
+				["Orig-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
 			},
-			["Color"] = "bca5ff",
-			["LocalizedName"] = "Warlock: affliction",
+			["Color"] = "00ff96",
+			["LocalizedName"] = "Monk: windwalker",
 			["DoNotShow1HUpgrades"] = false,
 			["NormalizationFactor"] = 1,
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "8d7bbf",
+			["UnenchantedColor"] = "00bf70",
 		},
 		["\"Wowhead\":HunterSurvival"] = {
 			["PerCharacterOptions"] = {
@@ -887,17 +955,20 @@ PawnCommon = {
 			["Provider"] = "Wowhead",
 			["UnenchantedColor"] = "809f56",
 		},
-		["\"Wowhead\":PriestShadow"] = {
+		["\"Wowhead\":RogueSubtlety"] = {
 			["PerCharacterOptions"] = {
+				["Mandelbrot-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
-			["Color"] = "e0e0e0",
-			["LocalizedName"] = "Priest: shadow",
+			["Color"] = "fff569",
+			["LocalizedName"] = "Rogue: subtlety",
 			["DoNotShow1HUpgrades"] = false,
 			["NormalizationFactor"] = 1,
-			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow2HUpgrades"] = true,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "a8a8a8",
+			["UnenchantedColor"] = "bfb74e",
 		},
 		["\"Wowhead\":PriestHoly"] = {
 			["PerCharacterOptions"] = {
@@ -911,94 +982,23 @@ PawnCommon = {
 			["Provider"] = "Wowhead",
 			["UnenchantedColor"] = "a8a8a8",
 		},
-		["SV - Single-Target"] = {
-			["Values"] = {
-				["CritRating"] = 0.49,
-				["Dps"] = 1,
-				["Agility"] = 1,
-				["HasteRating"] = 0.42,
-				["MasteryRating"] = 0.41,
-				["Versatility"] = 0.5,
-				["Multistrike"] = 0.59,
-				["Ap"] = 0.9,
-			},
+		["\"Wowhead\":DeathKnightFrostDps"] = {
 			["PerCharacterOptions"] = {
-				["Bracnar-Sisters of Elune"] = {
-					["Visible"] = true,
-					["BestItems"] = {
-						["INVTYPE_HAND"] = {
-							539.17, -- [1]
-							"item:124291:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_HEAD"] = {
-							651.92, -- [1]
-							"item:124296:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_FEET"] = {
-							543.33, -- [1]
-							"item:124287:0:0:0:0:0:0:0:0:254:4:5:2:561:566:531:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_CLOAK"] = {
-							392.16, -- [1]
-							"item:116174:0:0:0:0:0:0:0:0:254:4:13:3:618:536:76:531:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_FINGER"] = {
-							720.96, -- [1]
-							"item:124636:0:0:0:0:0:0:0:0:254:0:11:2:649:641:0:0:0", -- [2]
-							0, -- [3]
-							720.96, -- [4]
-							"item:124636:0:0:0:0:0:0:0:0:253:0:11:2:649:641:0:0:0", -- [5]
-							0, -- [6]
-						},
-						["INVTYPE_LEGS"] = {
-							657.96, -- [1]
-							"item:124301:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_WRIST"] = {
-							462.74, -- [1]
-							"item:124314:0:0:0:0:0:0:0:0:254:4:5:3:561:564:566:531:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_WAIST"] = {
-							516.83, -- [1]
-							"item:116194:0:0:0:0:0:0:0:0:254:4:13:3:618:536:80:531:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_NECK"] = {
-							437.04, -- [1]
-							"item:124210:0:0:0:0:0:0:0:0:254:4:5:3:561:41:566:531:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_SHOULDER"] = {
-							479.32, -- [1]
-							"item:124307:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_2HWEAPON"] = {
-							1318.96, -- [1]
-							"item:124362:0:0:0:0:0:0:0:0:254:4:5:1:566:531:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_CHEST"] = {
-							608.06, -- [1]
-							"item:124284:0:0:0:0:0:0:0:0:254:4:3:2:560:563:531:0:0", -- [2]
-							0, -- [3]
-						},
-					},
-				},
 			},
+			["Color"] = "ff4d6b",
+			["LocalizedName"] = "DK: frost",
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "bf3950",
 		},
 	},
-	["LastVersion"] = 1.921,
+	["ShowLootUpgradeAdvisor"] = true,
 	["ButtonPosition"] = 2,
 	["IgnoreGemsWhileLeveling"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["ShowLootUpgradeAdvisor"] = true,
-	["ShowUpgradesOnTooltips"] = true,
+	["LastVersion"] = 1.921,
+	["ShownGettingStarted"] = true,
 }
