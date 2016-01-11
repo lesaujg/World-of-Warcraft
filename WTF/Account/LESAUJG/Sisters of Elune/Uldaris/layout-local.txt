@@ -27,17 +27,3 @@ X: 0
 Y: 128
 W: 150
 H: 42
-Frame: _NPCScanOverlayKey
-FrameLevel: 27
-Anchor: CENTER
-X: -168
-Y: -95
-W: 153
-H: 44
-Frame: AuctionFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 832
-H: 447
