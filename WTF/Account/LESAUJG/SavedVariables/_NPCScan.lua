@@ -29,16 +29,15 @@ _NPCScanOptions = {
 }
 _NPCScanProfiles = {
 	["profileKeys"] = {
-		["Galinar - Sisters of Elune"] = "Default",
 		["Orig - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
 		["Bracnar - Sisters of Elune"] = "Default",
 		["Uldaris - Sisters of Elune"] = "Default",
 		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
 		["Clothgar - Sisters of Elune"] = "Default",
 	},
 	["profiles"] = {
-		["Default"] = {
-		},
 		["Orig - Sisters of Elune"] = {
 			["AchievementsAddFound"] = true,
 			["TrackHellbane"] = true,
@@ -53,19 +52,21 @@ _NPCScanProfiles = {
 				[9216] = true,
 				[9638] = true,
 				[9400] = true,
-				[1312] = true,
-				[8714] = true,
-				[7439] = true,
-				[9678] = true,
 				[10070] = true,
-				[7317] = true,
-				[2257] = true,
+				[8714] = true,
 				[10061] = true,
 				[9633] = true,
+				[1312] = true,
+				[7317] = true,
+				[2257] = true,
+				[7439] = true,
+				[9678] = true,
 				[9655] = true,
 			},
 			["TargetIcon"] = 8,
 			["TrackVignettes"] = true,
+		},
+		["Default"] = {
 		},
 		["Bracnar - Sisters of Elune"] = {
 			["AchievementsAddFound"] = true,
@@ -73,7 +74,7 @@ _NPCScanProfiles = {
 			["PrintTime"] = true,
 			["FlightSupress"] = true,
 			["AlertSoundUnmute"] = true,
-			["TrackBeasts"] = true,
+			["TrackMouseover"] = true,
 			["AlertScreenEdgeFlash"] = true,
 			["Version"] = 3,
 			["Achievements"] = {
@@ -86,7 +87,7 @@ _NPCScanProfiles = {
 			},
 			["TargetIcon"] = 8,
 			["TrackRares"] = true,
-			["TrackMouseover"] = true,
+			["TrackBeasts"] = true,
 			["TrackVignettes"] = true,
 		},
 		["Galinar - Sisters of Elune"] = {
@@ -133,6 +134,26 @@ _NPCScanProfiles = {
 				[8714] = true,
 			},
 			["TrackBeasts"] = true,
+			["TrackVignettes"] = true,
+		},
+		["Herbinator - Sisters of Elune"] = {
+			["AchievementsAddFound"] = true,
+			["TrackHellbane"] = true,
+			["FlightSupress"] = true,
+			["TrackBeasts"] = true,
+			["AlertScreenEdgeFlash"] = true,
+			["Version"] = 3,
+			["TrackRares"] = true,
+			["TrackMouseover"] = true,
+			["Achievements"] = {
+				[7317] = true,
+				[8103] = true,
+				[1312] = true,
+				[2257] = true,
+				[8714] = true,
+				[7439] = true,
+			},
+			["TargetIcon"] = 8,
 			["TrackVignettes"] = true,
 		},
 		["Clothgar - Sisters of Elune"] = {

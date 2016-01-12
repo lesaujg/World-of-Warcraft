@@ -1,7 +1,7 @@
 
 DecursiveDB = {
 	["global"] = {
-		["LastVersionAnnounce"] = 1452481953,
+		["LastVersionAnnounce"] = 1452571610,
 	},
 	["class"] = {
 		["HUNTER"] = {
@@ -28,12 +28,12 @@ DecursiveDB = {
 		},
 		["PALADIN"] = {
 			["CureOrder"] = {
-				nil, -- [1]
+				-11, -- [1]
 				-15, -- [2]
 				nil, -- [3]
 				-14, -- [4]
-				[8] = 2,
-				[16] = 3,
+				[8] = -12,
+				[16] = -13,
 				[32] = -16,
 			},
 		},
@@ -72,8 +72,9 @@ DecursiveDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Galinar - Sisters of Elune"] = "Default",
 		["Clothgar - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
 		["Bracnar - Sisters of Elune"] = "Default",
 		["Uldaris - Sisters of Elune"] = "Default",
 		["Ghiaccioli - Sisters of Elune"] = "Default",

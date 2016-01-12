@@ -19,6 +19,7 @@ local private = {
 	playerData = {}, -- reference to all characters on this realm (and connected realms) - kept in sync
 	guildData = {}, -- reference to all guilds on this realm (and connected realms)
 	inventoryChangeCallbacks = {},
+	petSpeciesCache={},
 }
 local PLAYER_NAME = UnitName("player")
 local PLAYER_GUILD = nil
@@ -779,10 +780,13 @@ function private:ScanGuildVault(dataTbl)
 	for tab = 1, GetNumGuildBankTabs() do
 		if select(5, GetGuildBankTabInfo(tab)) > 0 or IsGuildLeader(UnitName("player")) then
 			for slot = 1, GUILD_VAULT_SLOTS_PER_TAB do
-				local itemString = TSMAPI.Item:ToBaseItemString(GetGuildBankItemLink(tab, slot))
+				local link = GetGuildBankItemLink(tab, slot)
+				local itemString = TSMAPI.Item:ToBaseItemString(link)
 				if itemString == "i:82800" then
-					local speciesID = GameTooltip:SetGuildBankItem(tab, slot)
-					itemString = speciesID and ("p:" .. speciesID)
+					if not private.petSpeciesCache[link] then
+						private.petSpeciesCache[link] = GameTooltip:SetGuildBankItem(tab, slot)
+					end
+					itemString = private.petSpeciesCache[link] and ("p:" .. private.petSpeciesCache[link])
 				end
 				if itemString then
 					dataTbl[itemString] = (dataTbl[itemString] or 0) + select(2, GetGuildBankItemInfo(tab, slot))

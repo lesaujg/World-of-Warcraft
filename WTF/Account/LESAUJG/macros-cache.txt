@@ -8,8 +8,7 @@ VER 3 000000000000008E "BuyTradingPost" "INV_MISC_QUESTIONMARK"
 /run BuyMerchantItem(3) 
 END
 VER 3 0000000000000098 "Decursive" "INV_MISC_QUESTIONMARK"
-/stopcasting
-/cast [@mouseover,nomod,exists] Nature's Cure;  [@mouseover,exists,mod:ctrl] Cyclone; [@mouseover,exists,mod:shift] Nature's Cure
+/script DecursiveRootTable.Dcr:Println('No spell available')
 END
 VER 3 000000000000008A "Des" "ACHIEVEMENT_GUILDPERK_QUICK AND DEAD"
 /tar Des

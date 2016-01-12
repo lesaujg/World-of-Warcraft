@@ -141,128 +141,18 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 1163,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["hp"] = 366120,
-						["ts"] = 1452288375.465,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 510,
-						["ts"] = 1452288376.576,
-						["spellid"] = 143924,
-						["srcname"] = "Bracnar",
-						["hp"] = 366630,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 8513,
-						["srcname"] = "Bracnar",
-						["spellid"] = 149254,
-						["hp"] = 375143,
-						["ts"] = 1452288377.274,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 398,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["hp"] = 375541,
-						["ts"] = 1452288378.248,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 8512,
-						["ts"] = 1452288379.303,
-						["spellid"] = 149254,
-						["srcname"] = "Bracnar",
-						["hp"] = 384053,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 536,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["hp"] = 384589,
-						["ts"] = 1452288379.421,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 744,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["hp"] = 385333,
-						["ts"] = 1452288380.611,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 8513,
-						["srcname"] = "Bracnar",
-						["spellid"] = 149254,
-						["hp"] = 393846,
-						["ts"] = 1452288381.263,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 1125,
-						["ts"] = 1452288381.906,
-						["spellid"] = 143924,
-						["srcname"] = "Bracnar",
-						["hp"] = 394971,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 8513,
-						["srcname"] = "Bracnar",
-						["spellid"] = 149254,
-						["hp"] = 342028,
-						["ts"] = 1452288371.24,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 1388,
-						["ts"] = 1452288371.709,
-						["spellid"] = 143924,
-						["srcname"] = "Bracnar",
-						["hp"] = 343416,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 4108,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["hp"] = 347524,
-						["ts"] = 1452288372.974,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 8512,
-						["ts"] = 1452288373.205,
-						["spellid"] = 149254,
-						["srcname"] = "Bracnar",
-						["hp"] = 356036,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 409,
-						["ts"] = 1452288374.184,
-						["spellid"] = 143924,
-						["srcname"] = "Bracnar",
-						["hp"] = 356445,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 8512,
-						["ts"] = 1452288375.286,
-						["spellid"] = 149254,
-						["srcname"] = "Bracnar",
-						["hp"] = 364957,
-					}, -- [15]
-					["pos"] = 10,
+				["power"] = {
+					[2] = {
+						["spells"] = {
+							[83468] = 72,
+							[157722] = 800,
+							[77443] = 1162,
+							[91954] = 280,
+							[53398] = 200,
+							[34953] = 510,
+						},
+						["amount"] = 3024,
+					},
 				},
 				["damage"] = 11634785,
 				["damagespells"] = {
@@ -461,24 +351,24 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 42,
-								["srcname"] = "Bracnar",
 								["spellid"] = 143924,
+								["srcname"] = "Bracnar",
 								["hp"] = 6561,
 								["ts"] = 1452287373.81901,
 							}, -- [1]
 							{
 								["ts"] = 1452287374.59102,
 								["amount"] = -5654,
-								["spellid"] = 88163,
 								["srcname"] = "Azure Enforcer",
 								["hp"] = 6561,
+								["spellid"] = 88163,
 							}, -- [2]
 							{
 								["ts"] = 1452287374.59103,
 								["amount"] = -4871,
-								["spellid"] = 88163,
 								["srcname"] = "Azure Enforcer",
 								["hp"] = 6561,
+								["spellid"] = 88163,
 							}, -- [3]
 							{
 								["spellname"] = "Bracnar dies",
@@ -489,85 +379,85 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
-								["srcname"] = "Bracnar",
 								["spellid"] = 143924,
+								["srcname"] = "Bracnar",
 								["hp"] = 35367,
 								["ts"] = 1452287367.75805,
 							}, -- [5]
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
-								["srcname"] = "Bracnar",
 								["spellid"] = 143924,
+								["srcname"] = "Bracnar",
 								["hp"] = 35367,
 								["ts"] = 1452287368.97406,
 							}, -- [6]
 							{
 								["ts"] = 1452287369.28607,
 								["amount"] = -5616,
-								["spellid"] = 56969,
 								["srcname"] = "Azure Scale-Binder",
 								["hp"] = 29751,
+								["spellid"] = 56969,
 							}, -- [7]
 							{
 								["ts"] = 1452287369.78608,
 								["amount"] = -5467,
-								["spellid"] = 88163,
 								["srcname"] = "Azure Enforcer",
 								["hp"] = 29751,
+								["spellid"] = 88163,
 							}, -- [8]
 							{
 								["absorb"] = 0,
 								["amount"] = 707,
-								["srcname"] = "Bracnar",
 								["spellid"] = 53353,
+								["srcname"] = "Bracnar",
 								["hp"] = 24991,
 								["ts"] = 1452287370.36509,
 							}, -- [9]
 							{
 								["absorb"] = 0,
 								["amount"] = 462,
-								["srcname"] = "Bracnar",
 								["spellid"] = 143924,
+								["srcname"] = "Bracnar",
 								["hp"] = 25453,
 								["ts"] = 1452287370.6011,
 							}, -- [10]
 							{
 								["absorb"] = 0,
 								["amount"] = 1403,
-								["srcname"] = "Yaelle-AeriePeak",
 								["spellid"] = 145110,
+								["srcname"] = "Yaelle-AeriePeak",
 								["hp"] = 26856,
 								["ts"] = 1452287371.21511,
 							}, -- [11]
 							{
 								["ts"] = 1452287371.58012,
 								["amount"] = -6512,
-								["spellid"] = 56969,
 								["srcname"] = "Azure Scale-Binder",
 								["hp"] = 20344,
+								["spellid"] = 56969,
 							}, -- [12]
 							{
 								["absorb"] = 0,
 								["amount"] = 103,
-								["srcname"] = "Bracnar",
 								["spellid"] = 143924,
+								["srcname"] = "Bracnar",
 								["hp"] = 20447,
 								["ts"] = 1452287371.82113,
 							}, -- [13]
 							{
 								["ts"] = 1452287372.19714,
 								["amount"] = -6751,
-								["spellid"] = 88163,
 								["srcname"] = "Azure Enforcer",
 								["hp"] = 20447,
+								["spellid"] = 88163,
 							}, -- [14]
 							{
 								["ts"] = 1452287372.19715,
 								["amount"] = -7177,
-								["spellid"] = 15284,
 								["srcname"] = "Azure Enforcer",
 								["hp"] = 6519,
+								["spellid"] = 15284,
 							}, -- [15]
 							["pos"] = 5,
 						},
@@ -575,19 +465,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 782958,
-				["power"] = {
-					[2] = {
-						["spells"] = {
-							[83468] = 72,
-							[157722] = 800,
-							[34953] = 510,
-							[77443] = 1162,
-							[53398] = 200,
-							[91954] = 280,
-						},
-						["amount"] = 3024,
-					},
-				},
+				["shielding"] = 0,
 				["id"] = "Player-1169-06A1ACBD",
 				["maxhp"] = 30164,
 				["healing"] = 1079886,
@@ -598,13 +476,13 @@ SkadaPerCharDB = {
 						["damage"] = 12128,
 						["max"] = 6512,
 						["name"] = "Arcane Blast",
-						["min"] = 5616,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 2,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 5616,
 						["absorbed"] = 0,
 					},
 					["Lightning Tether"] = {
@@ -613,13 +491,13 @@ SkadaPerCharDB = {
 						["damage"] = 212052,
 						["max"] = 2357,
 						["name"] = "Lightning Tether",
-						["min"] = 1178,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 120,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1178,
 						["absorbed"] = 0,
 					},
 					["Stormcloud"] = {
@@ -628,13 +506,13 @@ SkadaPerCharDB = {
 						["damage"] = 41232,
 						["max"] = 5891,
 						["name"] = "Stormcloud",
-						["min"] = 5890,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 7,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 5890,
 						["absorbed"] = 0,
 					},
 					["Cleave"] = {
@@ -643,13 +521,13 @@ SkadaPerCharDB = {
 						["damage"] = 7177,
 						["max"] = 7177,
 						["name"] = "Cleave",
-						["min"] = 7177,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 7177,
 						["absorbed"] = 0,
 					},
 					["Intense Cold"] = {
@@ -658,13 +536,13 @@ SkadaPerCharDB = {
 						["damage"] = 20469,
 						["max"] = 1164,
 						["name"] = "Intense Cold",
-						["min"] = 44,
+						["glancing"] = 0,
 						["multistrike"] = 7,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 46,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 44,
 						["absorbed"] = 0,
 					},
 					["Arcane Missiles"] = {
@@ -673,13 +551,13 @@ SkadaPerCharDB = {
 						["damage"] = 601,
 						["max"] = 601,
 						["name"] = "Arcane Missiles",
-						["min"] = 601,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 601,
 						["absorbed"] = 0,
 					},
 					["Chaotic Energy Burst"] = {
@@ -688,13 +566,13 @@ SkadaPerCharDB = {
 						["damage"] = 848,
 						["max"] = 508,
 						["name"] = "Chaotic Energy Burst",
-						["min"] = 91,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 4,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 91,
 						["absorbed"] = 0,
 					},
 					["Static Shield"] = {
@@ -703,13 +581,13 @@ SkadaPerCharDB = {
 						["damage"] = 359316,
 						["max"] = 5891,
 						["name"] = "Static Shield",
-						["min"] = 5890,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 61,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 5890,
 						["absorbed"] = 0,
 					},
 					["Shard Spray"] = {
@@ -718,13 +596,13 @@ SkadaPerCharDB = {
 						["damage"] = 3518,
 						["max"] = 3518,
 						["name"] = "Shard Spray",
-						["min"] = 3518,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 3518,
 						["absorbed"] = 0,
 					},
 					["Crystallize"] = {
@@ -733,13 +611,13 @@ SkadaPerCharDB = {
 						["damage"] = 5104,
 						["max"] = 2663,
 						["name"] = "Crystallize",
-						["min"] = 2441,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 2,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2441,
 						["absorbed"] = 0,
 					},
 					["Crystal Chains"] = {
@@ -748,13 +626,13 @@ SkadaPerCharDB = {
 						["damage"] = 3887,
 						["max"] = 1999,
 						["name"] = "Crystal Chains",
-						["min"] = 1888,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 2,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1888,
 						["absorbed"] = 0,
 					},
 					["Gravity Well"] = {
@@ -763,13 +641,13 @@ SkadaPerCharDB = {
 						["damage"] = 1649,
 						["max"] = 110,
 						["name"] = "Gravity Well",
-						["min"] = 109,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 15,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 109,
 						["absorbed"] = 0,
 					},
 					["Charged Chaotic Energy Burst"] = {
@@ -778,13 +656,13 @@ SkadaPerCharDB = {
 						["damage"] = 1107,
 						["max"] = 786,
 						["name"] = "Charged Chaotic Energy Burst",
-						["min"] = 137,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 3,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 137,
 						["absorbed"] = 0,
 					},
 					["Attack"] = {
@@ -793,13 +671,13 @@ SkadaPerCharDB = {
 						["damage"] = 113870,
 						["max"] = 24428,
 						["name"] = "Attack",
-						["min"] = 569,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 1,
 						["blocked"] = 0,
 						["totalhits"] = 13,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 569,
 						["absorbed"] = 0,
 					},
 				},
@@ -864,11 +742,11 @@ SkadaPerCharDB = {
 						["name"] = "Malicor",
 						["amount"] = 66,
 					},
-					["Creature-0-3018-576-25824-92993-000010253A"] = {
+					["Creature-0-3018-576-25824-92993-000090253A"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Mirror Image",
-						["amount"] = 287,
+						["amount"] = 0,
 					},
 					["Creature-0-3018-576-25824-92993-00011024C1"] = {
 						["shielding"] = 0,
@@ -882,11 +760,11 @@ SkadaPerCharDB = {
 						["name"] = "Malicor",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-576-25824-92993-000090253A"] = {
+					["Creature-0-3018-576-25824-92993-000190253A"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Mirror Image",
-						["amount"] = 0,
+						["amount"] = 215,
 					},
 					["Pet-0-3018-576-25824-1201-0201EE0460"] = {
 						["shielding"] = 0,
@@ -894,11 +772,11 @@ SkadaPerCharDB = {
 						["name"] = "Malicor",
 						["amount"] = 54,
 					},
-					["Creature-0-3018-576-25824-92993-000190253A"] = {
+					["Creature-0-3018-576-25824-92993-000010253A"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Mirror Image",
-						["amount"] = 215,
+						["amount"] = 287,
 					},
 					["Pet-0-1171-1064-30-1201-0301EE0460"] = {
 						["role"] = "NONE",
@@ -920,11 +798,11 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-576-25824-92993-00011027A7"] = {
+					["Creature-0-3018-576-25824-92993-00009024C1"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Mirror Image",
-						["amount"] = 137,
+						["amount"] = 0,
 					},
 					["Pet-0-3018-576-25824-1201-0601EE0460"] = {
 						["shielding"] = 0,
@@ -932,11 +810,11 @@ SkadaPerCharDB = {
 						["name"] = "Malicor",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-576-25824-92993-00009024C1"] = {
+					["Creature-0-3018-576-25824-92993-00011027A7"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Mirror Image",
-						["amount"] = 0,
+						["amount"] = 137,
 					},
 					["Creature-0-3018-576-25824-92993-000110264A"] = {
 						["shielding"] = 0,
@@ -950,10 +828,10 @@ SkadaPerCharDB = {
 						["name"] = "Malicor",
 						["amount"] = 74,
 					},
-					["Creature-0-3018-576-25824-92993-000090264A"] = {
+					["Creature-0-1171-1064-30-95021-00001028D8"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Mirror Image",
+						["name"] = "Felboar",
 						["amount"] = 0,
 					},
 					["Pet-0-1171-1064-30-32517-0101EE0465"] = {
@@ -963,11 +841,11 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
-					["Creature-0-1171-1064-30-95021-00001028D8"] = {
+					["Creature-0-3018-576-25824-92993-000110273C"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Felboar",
-						["amount"] = 0,
+						["name"] = "Mirror Image",
+						["amount"] = 118,
 					},
 					["Pet-0-1171-1064-30-1201-0201EE0460"] = {
 						["role"] = "NONE",
@@ -1019,18 +897,18 @@ SkadaPerCharDB = {
 						["name"] = "Mirror Image",
 						["amount"] = 145,
 					},
+					["Pet-0-3018-576-25824-1201-0401EE0460"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Malicor",
+						["amount"] = 71,
+					},
 					["Player-1169-06A1ACBD"] = {
 						["role"] = "DAMAGER",
 						["name"] = "Bracnar",
 						["amount"] = 688579,
 						["class"] = "HUNTER",
 						["shielding"] = 0,
-					},
-					["Pet-0-3018-576-25824-1201-0401EE0460"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Malicor",
-						["amount"] = 71,
 					},
 					["Pet-0-3018-576-25824-1201-0D01EE0460"] = {
 						["shielding"] = 0,
@@ -1050,13 +928,13 @@ SkadaPerCharDB = {
 						["name"] = "Mirror Image",
 						["amount"] = 133,
 					},
-					["Creature-0-1171-1064-30-92993-0000902956"] = {
+					["Creature-0-1171-1064-30-92993-0000102956"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Mirror Image",
 						["amount"] = 0,
 					},
-					["Creature-0-1171-1064-30-92993-0000102956"] = {
+					["Creature-0-1171-1064-30-92993-0000902956"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Mirror Image",
@@ -1080,11 +958,11 @@ SkadaPerCharDB = {
 						["name"] = "Mirror Image",
 						["amount"] = 744,
 					},
-					["Creature-0-3018-576-25824-92993-000110273C"] = {
+					["Creature-0-3018-576-25824-92993-000090264A"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Mirror Image",
-						["amount"] = 118,
+						["amount"] = 0,
 					},
 					["Creature-0-1171-1064-30-92993-00001028CD"] = {
 						["shielding"] = 0,
@@ -1152,7 +1030,129 @@ SkadaPerCharDB = {
 				["alertDamage"] = 7177,
 				["name"] = "Bracnar",
 				["alertCount"] = 9,
-				["shielding"] = 0,
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 1163,
+						["spellid"] = 143924,
+						["srcname"] = "Bracnar",
+						["hp"] = 366120,
+						["ts"] = 1452288375.465,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 510,
+						["ts"] = 1452288376.576,
+						["spellid"] = 143924,
+						["hp"] = 366630,
+						["srcname"] = "Bracnar",
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 8513,
+						["spellid"] = 149254,
+						["srcname"] = "Bracnar",
+						["hp"] = 375143,
+						["ts"] = 1452288377.274,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 398,
+						["spellid"] = 143924,
+						["srcname"] = "Bracnar",
+						["hp"] = 375541,
+						["ts"] = 1452288378.248,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 8512,
+						["ts"] = 1452288379.303,
+						["spellid"] = 149254,
+						["hp"] = 384053,
+						["srcname"] = "Bracnar",
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 536,
+						["spellid"] = 143924,
+						["srcname"] = "Bracnar",
+						["hp"] = 384589,
+						["ts"] = 1452288379.421,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 744,
+						["spellid"] = 143924,
+						["srcname"] = "Bracnar",
+						["hp"] = 385333,
+						["ts"] = 1452288380.611,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 8513,
+						["spellid"] = 149254,
+						["srcname"] = "Bracnar",
+						["hp"] = 393846,
+						["ts"] = 1452288381.263,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 1125,
+						["ts"] = 1452288381.906,
+						["spellid"] = 143924,
+						["hp"] = 394971,
+						["srcname"] = "Bracnar",
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 8513,
+						["spellid"] = 149254,
+						["srcname"] = "Bracnar",
+						["hp"] = 342028,
+						["ts"] = 1452288371.24,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 1388,
+						["ts"] = 1452288371.709,
+						["spellid"] = 143924,
+						["hp"] = 343416,
+						["srcname"] = "Bracnar",
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 4108,
+						["spellid"] = 143924,
+						["srcname"] = "Bracnar",
+						["hp"] = 347524,
+						["ts"] = 1452288372.974,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 8512,
+						["ts"] = 1452288373.205,
+						["spellid"] = 149254,
+						["hp"] = 356036,
+						["srcname"] = "Bracnar",
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 409,
+						["ts"] = 1452288374.184,
+						["spellid"] = 143924,
+						["hp"] = 356445,
+						["srcname"] = "Bracnar",
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 8512,
+						["ts"] = 1452288375.286,
+						["spellid"] = 149254,
+						["hp"] = 364957,
+						["srcname"] = "Bracnar",
+					}, -- [15]
+					["pos"] = 10,
+				},
 				["healingspells"] = {
 					["McHealy: Spirit Bond"] = {
 						["shielding"] = 0,
@@ -1384,18 +1384,18 @@ SkadaPerCharDB = {
 						["uptime"] = 625,
 						["auratype"] = "DEBUFF",
 					},
-					["Sudden Death"] = {
-						["name"] = "Sudden Death",
-						["active"] = 0,
-						["id"] = 52437,
-						["uptime"] = 77,
-						["auratype"] = "BUFF",
-					},
 					["Vicious Strike"] = {
 						["name"] = "Vicious Strike",
 						["active"] = 0,
 						["id"] = 165638,
 						["uptime"] = 34,
+						["auratype"] = "BUFF",
+					},
+					["Sudden Death"] = {
+						["name"] = "Sudden Death",
+						["active"] = 0,
+						["id"] = 52437,
+						["uptime"] = 77,
 						["auratype"] = "BUFF",
 					},
 					["Shield Barrier"] = {
@@ -1622,15 +1622,12 @@ SkadaPerCharDB = {
 						["max"] = 121,
 						["damage"] = 694,
 					},
-					["Thunder Clap"] = {
-						["min"] = 249,
-						["multistrike"] = 3,
-						["critical"] = 13,
-						["hit"] = 76,
-						["totalhits"] = 89,
-						["id"] = 6343,
-						["max"] = 1920,
-						["damage"] = 86824,
+					["Warbringer"] = {
+						["totalhits"] = 8,
+						["id"] = 7922,
+						["IMMUNE"] = 8,
+						["max"] = 0,
+						["damage"] = 0,
 					},
 					["Execute"] = {
 						["max"] = 36856,
@@ -1663,15 +1660,15 @@ SkadaPerCharDB = {
 						["max"] = 8775,
 						["damage"] = 110689,
 					},
-					["Enhanced Rend"] = {
-						["min"] = 744,
-						["multistrike"] = 2,
-						["critical"] = 7,
-						["hit"] = 55,
-						["totalhits"] = 62,
-						["id"] = 174736,
-						["max"] = 1849,
-						["damage"] = 56216,
+					["Thunder Clap"] = {
+						["min"] = 249,
+						["multistrike"] = 3,
+						["critical"] = 13,
+						["hit"] = 76,
+						["totalhits"] = 89,
+						["id"] = 6343,
+						["max"] = 1920,
+						["damage"] = 86824,
 					},
 					["Mortal Strike"] = {
 						["min"] = 1679,
@@ -1683,12 +1680,15 @@ SkadaPerCharDB = {
 						["max"] = 16551,
 						["damage"] = 480918,
 					},
-					["Warbringer"] = {
-						["totalhits"] = 8,
-						["id"] = 7922,
-						["IMMUNE"] = 8,
-						["max"] = 0,
-						["damage"] = 0,
+					["Enhanced Rend"] = {
+						["min"] = 744,
+						["multistrike"] = 2,
+						["critical"] = 7,
+						["hit"] = 55,
+						["totalhits"] = 62,
+						["id"] = 174736,
+						["max"] = 1849,
+						["damage"] = 56216,
 					},
 					["Bladestorm"] = {
 						["min"] = 583,
@@ -1748,6 +1748,349 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 189146,
+				["power"] = {
+					{
+						["spells"] = {
+							[109128] = 315,
+							[165672] = 324,
+							[163201] = -948,
+							[173401] = 41,
+						},
+						["amount"] = -268,
+					}, -- [1]
+				},
+				["id"] = "Player-11-09B497BC",
+				["maxhp"] = 30115,
+				["healing"] = 36865,
+				["damagetakenspells"] = {
+					["Arcane Blast"] = {
+						["crushing"] = 0,
+						["id"] = 56969,
+						["damage"] = 23916,
+						["max"] = 7076,
+						["name"] = "Arcane Blast",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 4,
+						["resisted"] = 0,
+						["min"] = 4931,
+						["absorbed"] = 0,
+					},
+					["Arcane Nova"] = {
+						["crushing"] = 0,
+						["id"] = 57046,
+						["damage"] = 2719,
+						["max"] = 2719,
+						["name"] = "Arcane Nova",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 2719,
+						["absorbed"] = 0,
+					},
+					["Ice Barb"] = {
+						["crushing"] = 0,
+						["id"] = 56937,
+						["damage"] = 1274,
+						["max"] = 1274,
+						["name"] = "Ice Barb",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 1274,
+						["absorbed"] = 0,
+					},
+					["Gravity Well"] = {
+						["crushing"] = 0,
+						["id"] = 47765,
+						["damage"] = 1632,
+						["max"] = 109,
+						["name"] = "Gravity Well",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 15,
+						["resisted"] = 0,
+						["min"] = 108,
+						["absorbed"] = 0,
+					},
+					["Crystalfire Breath"] = {
+						["crushing"] = 0,
+						["id"] = 57091,
+						["damage"] = 20593,
+						["max"] = 5439,
+						["name"] = "Crystalfire Breath",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 9,
+						["resisted"] = 0,
+						["min"] = 1325,
+						["absorbed"] = 0,
+					},
+					["Firebomb"] = {
+						["crushing"] = 0,
+						["id"] = 56934,
+						["damage"] = 7912,
+						["max"] = 4039,
+						["name"] = "Firebomb",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["min"] = 3873,
+						["absorbed"] = 0,
+					},
+					["Shoot"] = {
+						["crushing"] = 0,
+						["id"] = 22907,
+						["damage"] = 1834,
+						["max"] = 1834,
+						["name"] = "Shoot",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 1834,
+						["absorbed"] = 0,
+					},
+					["Ensnare"] = {
+						["crushing"] = 0,
+						["id"] = 48053,
+						["damage"] = 605,
+						["max"] = 212,
+						["name"] = "Ensnare",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 3,
+						["resisted"] = 0,
+						["min"] = 194,
+						["absorbed"] = 0,
+					},
+					["Tail Sweep"] = {
+						["crushing"] = 0,
+						["id"] = 50155,
+						["damage"] = 525,
+						["max"] = 525,
+						["name"] = "Tail Sweep",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 525,
+						["absorbed"] = 0,
+					},
+					["Trample"] = {
+						["crushing"] = 0,
+						["id"] = 57066,
+						["damage"] = 10917,
+						["max"] = 4848,
+						["name"] = "Trample",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 3,
+						["resisted"] = 0,
+						["min"] = 3017,
+						["absorbed"] = 0,
+					},
+					["Intense Cold"] = {
+						["crushing"] = 0,
+						["id"] = 48095,
+						["damage"] = 5814,
+						["max"] = 729,
+						["name"] = "Intense Cold",
+						["glancing"] = 0,
+						["multistrike"] = 1,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 17,
+						["resisted"] = 0,
+						["min"] = 102,
+						["absorbed"] = 0,
+					},
+					["Crystal Chains"] = {
+						["crushing"] = 0,
+						["id"] = 57050,
+						["damage"] = 2295,
+						["max"] = 2295,
+						["name"] = "Crystal Chains",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 2295,
+						["absorbed"] = 0,
+					},
+					["Attack"] = {
+						["crushing"] = 0,
+						["id"] = 6603,
+						["damage"] = 40681,
+						["max"] = 13526,
+						["name"] = "Attack",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 1,
+						["blocked"] = 0,
+						["totalhits"] = 14,
+						["resisted"] = 0,
+						["min"] = 374,
+						["absorbed"] = 2807,
+					},
+					["Chaotic Energy Burst"] = {
+						["crushing"] = 0,
+						["id"] = 47688,
+						["damage"] = 2511,
+						["max"] = 288,
+						["name"] = "Chaotic Energy Burst",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 11,
+						["resisted"] = 0,
+						["min"] = 124,
+						["absorbed"] = 0,
+					},
+					["Thunderclap"] = {
+						["crushing"] = 0,
+						["id"] = 30633,
+						["damage"] = 2964,
+						["max"] = 1640,
+						["name"] = "Thunderclap",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["min"] = 1324,
+						["absorbed"] = 0,
+					},
+					["War Stomp"] = {
+						["crushing"] = 0,
+						["id"] = 38682,
+						["damage"] = 24308,
+						["max"] = 6975,
+						["name"] = "War Stomp",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 4,
+						["resisted"] = 0,
+						["min"] = 4784,
+						["absorbed"] = 0,
+					},
+					["Crystallize"] = {
+						["crushing"] = 0,
+						["id"] = 48179,
+						["damage"] = 4261,
+						["max"] = 2433,
+						["name"] = "Crystallize",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["min"] = 1828,
+						["absorbed"] = 0,
+					},
+					["Whirlwind"] = {
+						["crushing"] = 0,
+						["id"] = 38619,
+						["damage"] = 18507,
+						["max"] = 18507,
+						["name"] = "Whirlwind",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 18507,
+						["absorbed"] = 0,
+					},
+					["Charged Chaotic Energy Burst"] = {
+						["crushing"] = 0,
+						["id"] = 47737,
+						["damage"] = 5149,
+						["max"] = 2544,
+						["name"] = "Charged Chaotic Energy Burst",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 3,
+						["resisted"] = 0,
+						["min"] = 304,
+						["absorbed"] = 0,
+					},
+					["Cone of Cold"] = {
+						["crushing"] = 0,
+						["id"] = 38384,
+						["damage"] = 4840,
+						["max"] = 4840,
+						["name"] = "Cone of Cold",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 4840,
+						["absorbed"] = 0,
+					},
+					["Rain of Fire"] = {
+						["crushing"] = 0,
+						["id"] = 39376,
+						["damage"] = 5889,
+						["max"] = 5889,
+						["name"] = "Rain of Fire",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 5889,
+						["absorbed"] = 0,
+					},
+				},
+				["healed"] = {
+					["Player-11-09B497BC"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Executions-Tichondrius",
+						["amount"] = 36865,
+						["class"] = "WARRIOR",
+						["shielding"] = 2807,
+					},
+				},
+				["alertDamage"] = 0,
+				["name"] = "Executions",
+				["alertCount"] = 0,
 				["deathlog"] = {
 					{
 						["spellid"] = 48095,
@@ -1758,30 +2101,30 @@ SkadaPerCharDB = {
 					{
 						["absorb"] = 0,
 						["amount"] = 803,
-						["srcname"] = "Wwmonk-Kel'Thuzad",
 						["spellid"] = 124041,
+						["srcname"] = "Wwmonk-Kel'Thuzad",
 						["hp"] = 18019,
 						["ts"] = 1452287959.405,
 					}, -- [2]
 					{
 						["ts"] = 1452287960.768,
 						["amount"] = -1894,
-						["spellid"] = 57091,
 						["srcname"] = "Keristrasza",
 						["hp"] = 16125,
+						["spellid"] = 57091,
 					}, -- [3]
 					{
 						["ts"] = 1452287962.777,
 						["amount"] = -1894,
-						["spellid"] = 57091,
 						["srcname"] = "Keristrasza",
 						["hp"] = 14231,
+						["spellid"] = 57091,
 					}, -- [4]
 					{
 						["absorb"] = 0,
 						["amount"] = 9564,
-						["srcname"] = "Wwmonk-Kel'Thuzad",
 						["spellid"] = 115310,
+						["srcname"] = "Wwmonk-Kel'Thuzad",
 						["hp"] = 23795,
 						["ts"] = 1452287964.205,
 					}, -- [5]
@@ -1800,9 +2143,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1452287954.764,
 						["amount"] = -5439,
-						["spellid"] = 57091,
 						["srcname"] = "Keristrasza",
 						["hp"] = 23948,
+						["spellid"] = 57091,
 					}, -- [8]
 					{
 						["spellid"] = 48095,
@@ -1819,9 +2162,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1452287956.788,
 						["amount"] = -1894,
-						["spellid"] = 57091,
 						["srcname"] = "Keristrasza",
 						["hp"] = 21180,
+						["spellid"] = 57091,
 					}, -- [11]
 					{
 						["spellid"] = 48095,
@@ -1844,356 +2187,13 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1452287958.781,
 						["amount"] = -1894,
-						["spellid"] = 57091,
 						["srcname"] = "Keristrasza",
 						["hp"] = 17945,
+						["spellid"] = 57091,
 					}, -- [15]
 					["pos"] = 6,
 				},
-				["id"] = "Player-11-09B497BC",
-				["maxhp"] = 30115,
-				["healing"] = 36865,
-				["damagetakenspells"] = {
-					["Arcane Blast"] = {
-						["crushing"] = 0,
-						["id"] = 56969,
-						["damage"] = 23916,
-						["max"] = 7076,
-						["name"] = "Arcane Blast",
-						["min"] = 4931,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 4,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Arcane Nova"] = {
-						["crushing"] = 0,
-						["id"] = 57046,
-						["damage"] = 2719,
-						["max"] = 2719,
-						["name"] = "Arcane Nova",
-						["min"] = 2719,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Ice Barb"] = {
-						["crushing"] = 0,
-						["id"] = 56937,
-						["damage"] = 1274,
-						["max"] = 1274,
-						["name"] = "Ice Barb",
-						["min"] = 1274,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Gravity Well"] = {
-						["crushing"] = 0,
-						["id"] = 47765,
-						["damage"] = 1632,
-						["max"] = 109,
-						["name"] = "Gravity Well",
-						["min"] = 108,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 15,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Crystalfire Breath"] = {
-						["crushing"] = 0,
-						["id"] = 57091,
-						["damage"] = 20593,
-						["max"] = 5439,
-						["name"] = "Crystalfire Breath",
-						["min"] = 1325,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 9,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Firebomb"] = {
-						["crushing"] = 0,
-						["id"] = 56934,
-						["damage"] = 7912,
-						["max"] = 4039,
-						["name"] = "Firebomb",
-						["min"] = 3873,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 2,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Shoot"] = {
-						["crushing"] = 0,
-						["id"] = 22907,
-						["damage"] = 1834,
-						["max"] = 1834,
-						["name"] = "Shoot",
-						["min"] = 1834,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Ensnare"] = {
-						["crushing"] = 0,
-						["id"] = 48053,
-						["damage"] = 605,
-						["max"] = 212,
-						["name"] = "Ensnare",
-						["min"] = 194,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 3,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Tail Sweep"] = {
-						["crushing"] = 0,
-						["id"] = 50155,
-						["damage"] = 525,
-						["max"] = 525,
-						["name"] = "Tail Sweep",
-						["min"] = 525,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Trample"] = {
-						["crushing"] = 0,
-						["id"] = 57066,
-						["damage"] = 10917,
-						["max"] = 4848,
-						["name"] = "Trample",
-						["min"] = 3017,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 3,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Intense Cold"] = {
-						["crushing"] = 0,
-						["id"] = 48095,
-						["damage"] = 5814,
-						["max"] = 729,
-						["name"] = "Intense Cold",
-						["min"] = 102,
-						["multistrike"] = 1,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 17,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Crystal Chains"] = {
-						["crushing"] = 0,
-						["id"] = 57050,
-						["damage"] = 2295,
-						["max"] = 2295,
-						["name"] = "Crystal Chains",
-						["min"] = 2295,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Attack"] = {
-						["crushing"] = 0,
-						["id"] = 6603,
-						["damage"] = 40681,
-						["max"] = 13526,
-						["name"] = "Attack",
-						["min"] = 374,
-						["multistrike"] = 0,
-						["critical"] = 1,
-						["blocked"] = 0,
-						["totalhits"] = 14,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 2807,
-					},
-					["Chaotic Energy Burst"] = {
-						["crushing"] = 0,
-						["id"] = 47688,
-						["damage"] = 2511,
-						["max"] = 288,
-						["name"] = "Chaotic Energy Burst",
-						["min"] = 124,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 11,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Thunderclap"] = {
-						["crushing"] = 0,
-						["id"] = 30633,
-						["damage"] = 2964,
-						["max"] = 1640,
-						["name"] = "Thunderclap",
-						["min"] = 1324,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 2,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["War Stomp"] = {
-						["crushing"] = 0,
-						["id"] = 38682,
-						["damage"] = 24308,
-						["max"] = 6975,
-						["name"] = "War Stomp",
-						["min"] = 4784,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 4,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Crystallize"] = {
-						["crushing"] = 0,
-						["id"] = 48179,
-						["damage"] = 4261,
-						["max"] = 2433,
-						["name"] = "Crystallize",
-						["min"] = 1828,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 2,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Whirlwind"] = {
-						["crushing"] = 0,
-						["id"] = 38619,
-						["damage"] = 18507,
-						["max"] = 18507,
-						["name"] = "Whirlwind",
-						["min"] = 18507,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Charged Chaotic Energy Burst"] = {
-						["crushing"] = 0,
-						["id"] = 47737,
-						["damage"] = 5149,
-						["max"] = 2544,
-						["name"] = "Charged Chaotic Energy Burst",
-						["min"] = 304,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 3,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Cone of Cold"] = {
-						["crushing"] = 0,
-						["id"] = 38384,
-						["damage"] = 4840,
-						["max"] = 4840,
-						["name"] = "Cone of Cold",
-						["min"] = 4840,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Rain of Fire"] = {
-						["crushing"] = 0,
-						["id"] = 39376,
-						["damage"] = 5889,
-						["max"] = 5889,
-						["name"] = "Rain of Fire",
-						["min"] = 5889,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-				},
-				["healed"] = {
-					["Player-11-09B497BC"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Executions-Tichondrius",
-						["amount"] = 36865,
-						["class"] = "WARRIOR",
-						["shielding"] = 2807,
-					},
-				},
-				["alertDamage"] = 0,
-				["name"] = "Executions",
-				["alertCount"] = 0,
 				["shielding"] = 2807,
-				["power"] = {
-					{
-						["spells"] = {
-							[109128] = 315,
-							[165672] = 324,
-							[163201] = -948,
-							[173401] = 41,
-						},
-						["amount"] = -268,
-					}, -- [1]
-				},
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -2393,126 +2393,17 @@ SkadaPerCharDB = {
 				["interrupts"] = 5,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["deathlog"] = {
-					{
-						["ts"] = 1452287961.235,
-						["amount"] = -4280,
-						["spellid"] = 88163,
-						["srcname"] = "Keristrasza",
-						["hp"] = 10493,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 16,
-						["srcname"] = "Arestotle-AeriePeak",
-						["spellid"] = 143924,
-						["hp"] = 6229,
-						["ts"] = 1452287961.466,
-					}, -- [2]
-					{
-						["ts"] = 1452287962.091,
-						["amount"] = 1116,
-						["srcname"] = "Wwmonk-Kel'Thuzad",
-						["spellid"] = 115175,
-						["hp"] = 7345,
-						["absorb"] = 0,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 1108,
-						["srcname"] = "Wwmonk-Kel'Thuzad",
-						["spellid"] = 125953,
-						["hp"] = 8453,
-						["ts"] = 1452287962.112,
-					}, -- [4]
-					{
-						["ts"] = 1452287962.67,
-						["amount"] = 33,
-						["srcname"] = "Arestotle-AeriePeak",
-						["spellid"] = 143924,
-						["hp"] = 8486,
-						["absorb"] = 0,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 2887,
-						["srcname"] = "Wwmonk-Kel'Thuzad",
-						["spellid"] = 116995,
-						["hp"] = 11373,
-						["ts"] = 1452287962.711,
-					}, -- [6]
-					{
-						["ts"] = 1452287962.777,
-						["amount"] = -613,
-						["srcname"] = "Keristrasza",
-						["spellid"] = 88163,
-						["hp"] = 11373,
-						["absorb"] = -4980,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 3322,
-						["srcname"] = "Arestotle-AeriePeak",
-						["spellid"] = 159375,
-						["hp"] = 13848,
-						["ts"] = 1452287963.748,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 9629,
-						["srcname"] = "Arestotle-AeriePeak",
-						["spellid"] = 130551,
-						["hp"] = 23477,
-						["ts"] = 1452287963.748,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 129,
-						["srcname"] = "Arestotle-AeriePeak",
-						["spellid"] = 143924,
-						["hp"] = 23606,
-						["ts"] = 1452287963.883,
-					}, -- [10]
-					{
-						["ts"] = 1452287964.205,
-						["amount"] = 2999,
-						["srcname"] = "Arestotle-AeriePeak",
-						["spellid"] = 159375,
-						["hp"] = 26605,
-						["absorb"] = 0,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 8695,
-						["srcname"] = "Wwmonk-Kel'Thuzad",
-						["spellid"] = 115310,
-						["hp"] = 35300,
-						["ts"] = 1452287964.205,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 10,
-						["srcname"] = "Arestotle-AeriePeak",
-						["spellid"] = 143924,
-						["hp"] = 7898,
-						["ts"] = 1452287960.256,
-					}, -- [13]
-					{
-						["ts"] = 1452287960.768,
-						["amount"] = -292,
-						["spellid"] = 57091,
-						["srcname"] = "Keristrasza",
-						["hp"] = 7606,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 2887,
-						["srcname"] = "Wwmonk-Kel'Thuzad",
-						["spellid"] = 116995,
-						["hp"] = 10493,
-						["ts"] = 1452287961.209,
-					}, -- [15]
-					["pos"] = 13,
+				["power"] = {
+					[9] = {
+						["spells"] = {
+							[105427] = 65,
+							[35395] = 38,
+							[98057] = 72,
+							[174040] = 14,
+							[53595] = 48,
+						},
+						["amount"] = 237,
+					},
 				},
 				["damage"] = 1744884,
 				["damagespells"] = {
@@ -2599,15 +2490,15 @@ SkadaPerCharDB = {
 						["max"] = 541,
 						["damage"] = 38163,
 					},
-					["Avenger's Shield"] = {
-						["min"] = 2420,
-						["multistrike"] = 29,
-						["critical"] = 15,
-						["hit"] = 185,
-						["totalhits"] = 200,
-						["id"] = 31935,
-						["max"] = 4943,
-						["damage"] = 551520,
+					["Crusader Strike"] = {
+						["min"] = 541,
+						["multistrike"] = 12,
+						["critical"] = 2,
+						["hit"] = 36,
+						["totalhits"] = 38,
+						["id"] = 35395,
+						["max"] = 1653,
+						["damage"] = 33952,
 					},
 					["Consecration"] = {
 						["max"] = 5820,
@@ -2620,15 +2511,15 @@ SkadaPerCharDB = {
 						["id"] = 159561,
 						["damage"] = 221666,
 					},
-					["Crusader Strike"] = {
-						["min"] = 541,
-						["multistrike"] = 12,
-						["critical"] = 2,
-						["hit"] = 36,
-						["totalhits"] = 38,
-						["id"] = 35395,
-						["max"] = 1653,
-						["damage"] = 33952,
+					["Avenger's Shield"] = {
+						["min"] = 2420,
+						["multistrike"] = 29,
+						["critical"] = 15,
+						["hit"] = 185,
+						["totalhits"] = 200,
+						["id"] = 31935,
+						["max"] = 4943,
+						["damage"] = 551520,
 					},
 					["Fel Cleave"] = {
 						["min"] = 198,
@@ -2658,39 +2549,39 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1452287366.06701,
 								["amount"] = -2772,
-								["spellid"] = 88163,
 								["srcname"] = "Azure Enforcer",
 								["hp"] = 5013,
+								["spellid"] = 88163,
 							}, -- [1]
 							{
 								["ts"] = 1452287366.06702,
 								["amount"] = -3222,
-								["spellid"] = 88163,
 								["srcname"] = "Azure Enforcer",
 								["hp"] = 5013,
+								["spellid"] = 88163,
 							}, -- [2]
 							{
 								["absorb"] = 0,
 								["amount"] = 787,
-								["srcname"] = "Arestotle-AeriePeak",
 								["spellid"] = 159375,
+								["srcname"] = "Arestotle-AeriePeak",
 								["hp"] = 5800,
 								["ts"] = 1452287366.06703,
 							}, -- [3]
 							{
 								["absorb"] = 0,
 								["amount"] = 2280,
-								["srcname"] = "Arestotle-AeriePeak",
 								["spellid"] = 66235,
+								["srcname"] = "Arestotle-AeriePeak",
 								["hp"] = 8080,
 								["ts"] = 1452287366.06704,
 							}, -- [4]
 							{
 								["ts"] = 1452287366.17905,
 								["amount"] = -6193,
-								["spellid"] = 58460,
 								["srcname"] = "Azure Enforcer",
 								["hp"] = 1,
+								["spellid"] = 58460,
 							}, -- [5]
 							{
 								["spellname"] = "Arestotle dies",
@@ -2701,71 +2592,71 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 47,
-								["srcname"] = "Arestotle-AeriePeak",
 								["spellid"] = 143924,
+								["srcname"] = "Arestotle-AeriePeak",
 								["hp"] = 20696,
 								["ts"] = 1452287361.28307,
 							}, -- [7]
 							{
 								["absorb"] = 0,
 								["amount"] = 73,
-								["srcname"] = "Arestotle-AeriePeak",
 								["spellid"] = 143924,
+								["srcname"] = "Arestotle-AeriePeak",
 								["hp"] = 20769,
 								["ts"] = 1452287362.50108,
 							}, -- [8]
 							{
 								["absorb"] = -606,
 								["amount"] = -5368,
-								["srcname"] = "Azure Scale-Binder",
 								["spellid"] = 56969,
+								["srcname"] = "Azure Scale-Binder",
 								["hp"] = 15401,
 								["ts"] = 1452287363.55509,
 							}, -- [9]
 							{
 								["ts"] = 1452287363.6691,
 								["amount"] = -3321,
-								["spellid"] = 88163,
 								["srcname"] = "Azure Enforcer",
 								["hp"] = 15401,
+								["spellid"] = 88163,
 							}, -- [10]
 							{
 								["ts"] = 1452287363.66911,
 								["amount"] = -1890,
-								["spellid"] = 88163,
 								["srcname"] = "Azure Enforcer",
 								["hp"] = 15401,
+								["spellid"] = 88163,
 							}, -- [11]
 							{
 								["absorb"] = 0,
 								["amount"] = 50,
-								["srcname"] = "Arestotle-AeriePeak",
 								["spellid"] = 143924,
+								["srcname"] = "Arestotle-AeriePeak",
 								["hp"] = 10240,
 								["ts"] = 1452287363.71412,
 							}, -- [12]
 							{
 								["absorb"] = -1706,
 								["amount"] = -3765,
-								["srcname"] = "Azure Scale-Binder",
 								["spellid"] = 56969,
+								["srcname"] = "Azure Scale-Binder",
 								["hp"] = 6475,
 								["ts"] = 1452287364.58713,
 							}, -- [13]
 							{
 								["absorb"] = 0,
 								["amount"] = 98,
-								["srcname"] = "Arestotle-AeriePeak",
 								["spellid"] = 143924,
+								["srcname"] = "Arestotle-AeriePeak",
 								["hp"] = 6573,
 								["ts"] = 1452287364.90714,
 							}, -- [14]
 							{
 								["ts"] = 1452287365.59115,
 								["amount"] = -1560,
-								["spellid"] = 88163,
 								["srcname"] = "Azure Scale-Binder",
 								["hp"] = 6573,
+								["spellid"] = 88163,
 							}, -- [15]
 							["pos"] = 7,
 						},
@@ -2773,18 +2664,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 625988,
-				["power"] = {
-					[9] = {
-						["spells"] = {
-							[105427] = 65,
-							[35395] = 38,
-							[98057] = 72,
-							[174040] = 14,
-							[53595] = 48,
-						},
-						["amount"] = 237,
-					},
-				},
+				["shielding"] = 351006,
 				["id"] = "Player-1426-07672C5E",
 				["maxhp"] = 37681,
 				["healing"] = 627263,
@@ -2795,13 +2675,13 @@ SkadaPerCharDB = {
 						["damage"] = 7203,
 						["max"] = 3502,
 						["name"] = "Crystal Strike",
-						["min"] = 118,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 4242,
 						["totalhits"] = 4,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 118,
 						["absorbed"] = 7840,
 					},
 					["Arcane Nova"] = {
@@ -2810,13 +2690,13 @@ SkadaPerCharDB = {
 						["damage"] = 578,
 						["max"] = 578,
 						["name"] = "Arcane Nova",
-						["min"] = 578,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 578,
 						["absorbed"] = 2075,
 					},
 					["Crystalfire Breath"] = {
@@ -2825,13 +2705,13 @@ SkadaPerCharDB = {
 						["damage"] = 16825,
 						["max"] = 5537,
 						["name"] = "Crystalfire Breath",
-						["min"] = 292,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 9,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 292,
 						["absorbed"] = 0,
 					},
 					["Whirlwind"] = {
@@ -2840,13 +2720,13 @@ SkadaPerCharDB = {
 						["damage"] = 3628,
 						["max"] = 3628,
 						["name"] = "Whirlwind",
-						["min"] = 3628,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 3628,
 						["absorbed"] = 4559,
 					},
 					["Spellbreaker"] = {
@@ -2855,13 +2735,13 @@ SkadaPerCharDB = {
 						["damage"] = 1076,
 						["max"] = 1076,
 						["name"] = "Spellbreaker",
-						["min"] = 1076,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 1521,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1076,
 						["absorbed"] = 1205,
 					},
 					["Rapid Shot"] = {
@@ -2870,13 +2750,13 @@ SkadaPerCharDB = {
 						["damage"] = 2658,
 						["max"] = 786,
 						["name"] = "Rapid Shot",
-						["min"] = 437,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 5,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 437,
 						["absorbed"] = 373,
 					},
 					["Shoot"] = {
@@ -2885,13 +2765,13 @@ SkadaPerCharDB = {
 						["damage"] = 1451,
 						["max"] = 1451,
 						["name"] = "Shoot",
-						["min"] = 1451,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1451,
 						["absorbed"] = 0,
 					},
 					["Ensnare"] = {
@@ -2900,13 +2780,13 @@ SkadaPerCharDB = {
 						["damage"] = 318,
 						["max"] = 168,
 						["name"] = "Ensnare",
-						["min"] = 64,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 3,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 64,
 						["absorbed"] = 0,
 					},
 					["Arcane Shock"] = {
@@ -2915,13 +2795,13 @@ SkadaPerCharDB = {
 						["damage"] = 14320,
 						["max"] = 2304,
 						["name"] = "Arcane Shock",
-						["min"] = 270,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 10,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 270,
 						["absorbed"] = 1084,
 					},
 					["Scorch"] = {
@@ -2930,13 +2810,13 @@ SkadaPerCharDB = {
 						["damage"] = 3425,
 						["max"] = 3425,
 						["name"] = "Scorch",
-						["min"] = 3425,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 3425,
 						["absorbed"] = 0,
 					},
 					["Trample"] = {
@@ -2945,13 +2825,13 @@ SkadaPerCharDB = {
 						["damage"] = 5072,
 						["max"] = 2162,
 						["name"] = "Trample",
-						["min"] = 1415,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 944,
 						["totalhits"] = 3,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1415,
 						["absorbed"] = 0,
 					},
 					["Frostbolt"] = {
@@ -2960,13 +2840,13 @@ SkadaPerCharDB = {
 						["damage"] = 42155,
 						["max"] = 7387,
 						["name"] = "Frostbolt",
-						["min"] = 571,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 9,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 571,
 						["absorbed"] = 17565,
 					},
 					["Intense Cold"] = {
@@ -2975,13 +2855,13 @@ SkadaPerCharDB = {
 						["damage"] = 1926,
 						["max"] = 516,
 						["name"] = "Intense Cold",
-						["min"] = 116,
+						["glancing"] = 0,
 						["multistrike"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 7,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 116,
 						["absorbed"] = 0,
 					},
 					["Arcane Missiles"] = {
@@ -2990,13 +2870,13 @@ SkadaPerCharDB = {
 						["damage"] = 2100,
 						["max"] = 550,
 						["name"] = "Arcane Missiles",
-						["min"] = 507,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 4,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 507,
 						["absorbed"] = 0,
 					},
 					["Arcane Blast"] = {
@@ -3005,13 +2885,13 @@ SkadaPerCharDB = {
 						["damage"] = 27541,
 						["max"] = 6356,
 						["name"] = "Arcane Blast",
-						["min"] = 3765,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 5,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 3765,
 						["absorbed"] = 2378,
 					},
 					["Shadow Word: Death"] = {
@@ -3020,13 +2900,13 @@ SkadaPerCharDB = {
 						["damage"] = 2008,
 						["max"] = 2008,
 						["name"] = "Shadow Word: Death",
-						["min"] = 2008,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2008,
 						["absorbed"] = 1662,
 					},
 					["Chaotic Energy Burst"] = {
@@ -3035,13 +2915,13 @@ SkadaPerCharDB = {
 						["damage"] = 5139,
 						["max"] = 531,
 						["name"] = "Chaotic Energy Burst",
-						["min"] = 34,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 14,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 34,
 						["absorbed"] = 1078,
 					},
 					["Magic Burn"] = {
@@ -3050,13 +2930,13 @@ SkadaPerCharDB = {
 						["damage"] = 8246,
 						["max"] = 2201,
 						["name"] = "Magic Burn",
-						["min"] = 77,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 11,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 77,
 						["absorbed"] = 589,
 					},
 					["Shard Spray"] = {
@@ -3065,13 +2945,13 @@ SkadaPerCharDB = {
 						["damage"] = 3476,
 						["max"] = 3085,
 						["name"] = "Shard Spray",
-						["min"] = 391,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 2,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 391,
 						["absorbed"] = 3228,
 					},
 					["Crystallize"] = {
@@ -3080,13 +2960,13 @@ SkadaPerCharDB = {
 						["damage"] = 2204,
 						["max"] = 2204,
 						["name"] = "Crystallize",
-						["min"] = 2204,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2204,
 						["absorbed"] = 0,
 					},
 					["Brutal Strike"] = {
@@ -3095,13 +2975,13 @@ SkadaPerCharDB = {
 						["damage"] = 11757,
 						["max"] = 6193,
 						["name"] = "Brutal Strike",
-						["min"] = 1793,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 3710,
 						["totalhits"] = 3,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1793,
 						["absorbed"] = 0,
 					},
 					["Avenger's Shield"] = {
@@ -3110,13 +2990,13 @@ SkadaPerCharDB = {
 						["damage"] = 162,
 						["max"] = 162,
 						["name"] = "Avenger's Shield",
-						["min"] = 162,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 162,
 						["absorbed"] = 1969,
 					},
 					["War Stomp"] = {
@@ -3125,13 +3005,13 @@ SkadaPerCharDB = {
 						["damage"] = 8065,
 						["max"] = 5046,
 						["name"] = "War Stomp",
-						["min"] = 241,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 3,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 241,
 						["absorbed"] = 5896,
 					},
 					["Attack"] = {
@@ -3140,13 +3020,13 @@ SkadaPerCharDB = {
 						["damage"] = 454655,
 						["max"] = 10221,
 						["name"] = "Attack",
-						["min"] = 20,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 57399,
 						["totalhits"] = 164,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 20,
 						["absorbed"] = 117452,
 					},
 				},
@@ -3183,7 +3063,127 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Arestotle",
 				["alertCount"] = 0,
-				["shielding"] = 351006,
+				["deathlog"] = {
+					{
+						["ts"] = 1452287961.235,
+						["amount"] = -4280,
+						["srcname"] = "Keristrasza",
+						["hp"] = 10493,
+						["spellid"] = 88163,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 16,
+						["spellid"] = 143924,
+						["srcname"] = "Arestotle-AeriePeak",
+						["hp"] = 6229,
+						["ts"] = 1452287961.466,
+					}, -- [2]
+					{
+						["ts"] = 1452287962.091,
+						["amount"] = 1116,
+						["spellid"] = 115175,
+						["srcname"] = "Wwmonk-Kel'Thuzad",
+						["hp"] = 7345,
+						["absorb"] = 0,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 1108,
+						["spellid"] = 125953,
+						["srcname"] = "Wwmonk-Kel'Thuzad",
+						["hp"] = 8453,
+						["ts"] = 1452287962.112,
+					}, -- [4]
+					{
+						["ts"] = 1452287962.67,
+						["amount"] = 33,
+						["spellid"] = 143924,
+						["srcname"] = "Arestotle-AeriePeak",
+						["hp"] = 8486,
+						["absorb"] = 0,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 2887,
+						["spellid"] = 116995,
+						["srcname"] = "Wwmonk-Kel'Thuzad",
+						["hp"] = 11373,
+						["ts"] = 1452287962.711,
+					}, -- [6]
+					{
+						["ts"] = 1452287962.777,
+						["amount"] = -613,
+						["spellid"] = 88163,
+						["srcname"] = "Keristrasza",
+						["hp"] = 11373,
+						["absorb"] = -4980,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 3322,
+						["spellid"] = 159375,
+						["srcname"] = "Arestotle-AeriePeak",
+						["hp"] = 13848,
+						["ts"] = 1452287963.748,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 9629,
+						["spellid"] = 130551,
+						["srcname"] = "Arestotle-AeriePeak",
+						["hp"] = 23477,
+						["ts"] = 1452287963.748,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 129,
+						["spellid"] = 143924,
+						["srcname"] = "Arestotle-AeriePeak",
+						["hp"] = 23606,
+						["ts"] = 1452287963.883,
+					}, -- [10]
+					{
+						["ts"] = 1452287964.205,
+						["amount"] = 2999,
+						["spellid"] = 159375,
+						["srcname"] = "Arestotle-AeriePeak",
+						["hp"] = 26605,
+						["absorb"] = 0,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 8695,
+						["spellid"] = 115310,
+						["srcname"] = "Wwmonk-Kel'Thuzad",
+						["hp"] = 35300,
+						["ts"] = 1452287964.205,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 10,
+						["spellid"] = 143924,
+						["srcname"] = "Arestotle-AeriePeak",
+						["hp"] = 7898,
+						["ts"] = 1452287960.256,
+					}, -- [13]
+					{
+						["ts"] = 1452287960.768,
+						["amount"] = -292,
+						["srcname"] = "Keristrasza",
+						["hp"] = 7606,
+						["spellid"] = 57091,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 2887,
+						["spellid"] = 116995,
+						["srcname"] = "Wwmonk-Kel'Thuzad",
+						["hp"] = 10493,
+						["ts"] = 1452287961.209,
+					}, -- [15]
+					["pos"] = 13,
+				},
 				["healingspells"] = {
 					["Word of Glory"] = {
 						["shielding"] = 0,
@@ -3322,18 +3322,18 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["auras"] = {
-					["Jade Serpent Statue: Soothing Mist"] = {
-						["name"] = "Jade Serpent Statue: Soothing Mist",
-						["active"] = 0,
-						["id"] = 125950,
-						["uptime"] = 162,
-						["auratype"] = "BUFF",
-					},
 					["Protection of Chi-Ji"] = {
 						["name"] = "Protection of Chi-Ji",
 						["active"] = 2,
 						["id"] = 170808,
 						["uptime"] = 637,
+						["auratype"] = "BUFF",
+					},
+					["Jade Serpent Statue: Soothing Mist"] = {
+						["name"] = "Jade Serpent Statue: Soothing Mist",
+						["active"] = 0,
+						["id"] = 125950,
+						["uptime"] = 162,
 						["auratype"] = "BUFF",
 					},
 					["Nimble Brew"] = {
@@ -3357,11 +3357,11 @@ SkadaPerCharDB = {
 						["uptime"] = 727,
 						["auratype"] = "BUFF",
 					},
-					["Zen Sphere"] = {
-						["name"] = "Zen Sphere",
-						["active"] = 4,
-						["id"] = 124081,
-						["uptime"] = 699,
+					["Legacy of the Emperor"] = {
+						["name"] = "Legacy of the Emperor",
+						["active"] = 5,
+						["id"] = 115921,
+						["uptime"] = 522,
 						["auratype"] = "BUFF",
 					},
 					["Paralysis"] = {
@@ -3427,11 +3427,11 @@ SkadaPerCharDB = {
 						["uptime"] = 200,
 						["auratype"] = "BUFF",
 					},
-					["Legacy of the Emperor"] = {
-						["name"] = "Legacy of the Emperor",
-						["active"] = 5,
-						["id"] = 115921,
-						["uptime"] = 522,
+					["Zen Sphere"] = {
+						["name"] = "Zen Sphere",
+						["active"] = 4,
+						["id"] = 124081,
+						["uptime"] = 699,
 						["auratype"] = "BUFF",
 					},
 				},
@@ -3441,100 +3441,16 @@ SkadaPerCharDB = {
 				["interrupts"] = 1,
 				["dispells"] = 5,
 				["ccbreaks"] = 0,
-				["deathlog"] = {
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287956.886,
-						["hp"] = 22628,
-						["amount"] = -213,
-					}, -- [1]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287957.852,
-						["hp"] = 21919,
-						["amount"] = -709,
-					}, -- [2]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287958.881,
-						["hp"] = 21069,
-						["amount"] = -850,
-					}, -- [3]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287958.881,
-						["hp"] = 20814,
-						["amount"] = -255,
-					}, -- [4]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287959.871,
-						["hp"] = 19963,
-						["amount"] = -851,
-					}, -- [5]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287960.866,
-						["hp"] = 18970,
-						["amount"] = -993,
-					}, -- [6]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287961.863,
-						["hp"] = 17978,
-						["amount"] = -992,
-					}, -- [7]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287962.885,
-						["hp"] = 16844,
-						["amount"] = -1134,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 8695,
-						["srcname"] = "Wwmonk-Kel'Thuzad",
-						["spellid"] = 115310,
-						["hp"] = 25539,
-						["ts"] = 1452287964.205,
-					}, -- [9]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287951.854,
-						["hp"] = 25535,
-						["amount"] = -283,
-					}, -- [10]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287952.852,
-						["hp"] = 25109,
-						["amount"] = -426,
-					}, -- [11]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287953.871,
-						["hp"] = 24683,
-						["amount"] = -426,
-					}, -- [12]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287954.883,
-						["hp"] = 24116,
-						["amount"] = -567,
-					}, -- [13]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287955.859,
-						["hp"] = 23549,
-						["amount"] = -567,
-					}, -- [14]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287956.886,
-						["hp"] = 22841,
-						["amount"] = -708,
-					}, -- [15]
-					["pos"] = 10,
+				["power"] = {
+					[12] = {
+						["spells"] = {
+							[116694] = 25,
+							[115072] = 10,
+							[115151] = 24,
+							[115399] = 16,
+						},
+						["amount"] = 75,
+					},
 				},
 				["damage"] = 109907,
 				["damagespells"] = {
@@ -3637,8 +3553,8 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 742,
-								["srcname"] = "Wwmonk-Kel'Thuzad",
 								["spellid"] = 115072,
+								["srcname"] = "Wwmonk-Kel'Thuzad",
 								["hp"] = 29967,
 								["ts"] = 1452287317.46306,
 							}, -- [6]
@@ -3657,8 +3573,8 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 212,
-								["srcname"] = "Wwmonk-Kel'Thuzad",
 								["spellid"] = 122281,
+								["srcname"] = "Wwmonk-Kel'Thuzad",
 								["hp"] = 29967,
 								["ts"] = 1452287317.91109,
 							}, -- [9]
@@ -3704,17 +3620,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 104426,
-				["power"] = {
-					[12] = {
-						["spells"] = {
-							[116694] = 25,
-							[115072] = 10,
-							[115151] = 24,
-							[115399] = 16,
-						},
-						["amount"] = 75,
-					},
-				},
+				["shielding"] = 0,
 				["id"] = "Player-3693-07D3EE12",
 				["maxhp"] = 29967,
 				["healing"] = 584606,
@@ -3725,13 +3631,13 @@ SkadaPerCharDB = {
 						["damage"] = 2681,
 						["max"] = 2681,
 						["name"] = "Arcane Nova",
-						["min"] = 2681,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2681,
 						["absorbed"] = 0,
 					},
 					["Spark"] = {
@@ -3740,13 +3646,13 @@ SkadaPerCharDB = {
 						["damage"] = 5594,
 						["max"] = 5594,
 						["name"] = "Spark",
-						["min"] = 5594,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 5594,
 						["absorbed"] = 0,
 					},
 					["Gravity Well"] = {
@@ -3755,13 +3661,13 @@ SkadaPerCharDB = {
 						["damage"] = 1590,
 						["max"] = 106,
 						["name"] = "Gravity Well",
-						["min"] = 106,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 15,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 106,
 						["absorbed"] = 0,
 					},
 					["Intense Cold"] = {
@@ -3770,13 +3676,13 @@ SkadaPerCharDB = {
 						["damage"] = 21579,
 						["max"] = 1134,
 						["name"] = "Intense Cold",
-						["min"] = 85,
+						["glancing"] = 0,
 						["multistrike"] = 5,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 47,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 85,
 						["absorbed"] = 0,
 					},
 					["Arcane Missiles"] = {
@@ -3785,13 +3691,13 @@ SkadaPerCharDB = {
 						["damage"] = 2090,
 						["max"] = 541,
 						["name"] = "Arcane Missiles",
-						["min"] = 515,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 4,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 515,
 						["absorbed"] = 0,
 					},
 					["Spellbreaker"] = {
@@ -3800,13 +3706,13 @@ SkadaPerCharDB = {
 						["damage"] = 4817,
 						["max"] = 4817,
 						["name"] = "Spellbreaker",
-						["min"] = 4817,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 4817,
 						["absorbed"] = 0,
 					},
 					["Charge"] = {
@@ -3815,13 +3721,13 @@ SkadaPerCharDB = {
 						["damage"] = 10477,
 						["max"] = 10477,
 						["name"] = "Charge",
-						["min"] = 10477,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 10477,
 						["absorbed"] = 0,
 					},
 					["Chaotic Energy Burst"] = {
@@ -3830,13 +3736,13 @@ SkadaPerCharDB = {
 						["damage"] = 790,
 						["max"] = 228,
 						["name"] = "Chaotic Energy Burst",
-						["min"] = 112,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 5,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 112,
 						["absorbed"] = 0,
 					},
 					["Trample"] = {
@@ -3845,28 +3751,13 @@ SkadaPerCharDB = {
 						["damage"] = 5417,
 						["max"] = 5417,
 						["name"] = "Trample",
-						["min"] = 5417,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Crystallize"] = {
-						["crushing"] = 0,
-						["id"] = 48179,
-						["damage"] = 5012,
-						["max"] = 2513,
-						["name"] = "Crystallize",
-						["min"] = 2499,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 2,
-						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 5417,
 						["absorbed"] = 0,
 					},
 					["Tail Sweep"] = {
@@ -3875,28 +3766,13 @@ SkadaPerCharDB = {
 						["damage"] = 1125,
 						["max"] = 1125,
 						["name"] = "Tail Sweep",
-						["min"] = 1125,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Frostbolt"] = {
-						["crushing"] = 0,
-						["id"] = 56775,
-						["damage"] = 14546,
-						["max"] = 7344,
-						["name"] = "Frostbolt",
-						["min"] = 7202,
-						["multistrike"] = 0,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 2,
-						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1125,
 						["absorbed"] = 0,
 					},
 					["Crystal Spike"] = {
@@ -3905,13 +3781,43 @@ SkadaPerCharDB = {
 						["damage"] = 12831,
 						["max"] = 12831,
 						["name"] = "Crystal Spike",
-						["min"] = 12831,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
+						["min"] = 12831,
+						["absorbed"] = 0,
+					},
+					["Frostbolt"] = {
+						["crushing"] = 0,
+						["id"] = 56775,
+						["damage"] = 14546,
+						["max"] = 7344,
+						["name"] = "Frostbolt",
 						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["min"] = 7202,
+						["absorbed"] = 0,
+					},
+					["Crystallize"] = {
+						["crushing"] = 0,
+						["id"] = 48179,
+						["damage"] = 5012,
+						["max"] = 2513,
+						["name"] = "Crystallize",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["min"] = 2499,
 						["absorbed"] = 0,
 					},
 					["War Stomp"] = {
@@ -3920,13 +3826,13 @@ SkadaPerCharDB = {
 						["damage"] = 6663,
 						["max"] = 6663,
 						["name"] = "War Stomp",
-						["min"] = 6663,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 6663,
 						["absorbed"] = 0,
 					},
 					["Crystalfire Breath"] = {
@@ -3935,13 +3841,13 @@ SkadaPerCharDB = {
 						["damage"] = 9214,
 						["max"] = 5528,
 						["name"] = "Crystalfire Breath",
-						["min"] = 1843,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 3,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1843,
 						["absorbed"] = 0,
 					},
 				},
@@ -4063,7 +3969,101 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Wwmonk",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["deathlog"] = {
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287956.886,
+						["hp"] = 22628,
+						["amount"] = -213,
+					}, -- [1]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287957.852,
+						["hp"] = 21919,
+						["amount"] = -709,
+					}, -- [2]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287958.881,
+						["hp"] = 21069,
+						["amount"] = -850,
+					}, -- [3]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287958.881,
+						["hp"] = 20814,
+						["amount"] = -255,
+					}, -- [4]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287959.871,
+						["hp"] = 19963,
+						["amount"] = -851,
+					}, -- [5]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287960.866,
+						["hp"] = 18970,
+						["amount"] = -993,
+					}, -- [6]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287961.863,
+						["hp"] = 17978,
+						["amount"] = -992,
+					}, -- [7]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287962.885,
+						["hp"] = 16844,
+						["amount"] = -1134,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 8695,
+						["spellid"] = 115310,
+						["srcname"] = "Wwmonk-Kel'Thuzad",
+						["hp"] = 25539,
+						["ts"] = 1452287964.205,
+					}, -- [9]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287951.854,
+						["hp"] = 25535,
+						["amount"] = -283,
+					}, -- [10]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287952.852,
+						["hp"] = 25109,
+						["amount"] = -426,
+					}, -- [11]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287953.871,
+						["hp"] = 24683,
+						["amount"] = -426,
+					}, -- [12]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287954.883,
+						["hp"] = 24116,
+						["amount"] = -567,
+					}, -- [13]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287955.859,
+						["hp"] = 23549,
+						["amount"] = -567,
+					}, -- [14]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287956.886,
+						["hp"] = 22841,
+						["amount"] = -708,
+					}, -- [15]
+					["pos"] = 10,
+				},
 				["healingspells"] = {
 					["Revival"] = {
 						["shielding"] = 0,
@@ -4244,12 +4244,12 @@ SkadaPerCharDB = {
 						["uptime"] = 441,
 						["auratype"] = "BUFF",
 					},
-					["Lunar Empowerment"] = {
-						["name"] = "Lunar Empowerment",
-						["active"] = 2,
-						["id"] = 164547,
-						["uptime"] = 655,
-						["auratype"] = "BUFF",
+					["Sunfire"] = {
+						["name"] = "Sunfire",
+						["active"] = 0,
+						["id"] = 164815,
+						["uptime"] = 319,
+						["auratype"] = "DEBUFF",
 					},
 					["Moonfire"] = {
 						["name"] = "Moonfire",
@@ -4279,11 +4279,11 @@ SkadaPerCharDB = {
 						["uptime"] = 5,
 						["auratype"] = "DEBUFF",
 					},
-					["Rejuvenation"] = {
-						["name"] = "Rejuvenation",
-						["active"] = 1,
-						["id"] = 774,
-						["uptime"] = 310,
+					["Lunar Empowerment"] = {
+						["name"] = "Lunar Empowerment",
+						["active"] = 2,
+						["id"] = 164547,
+						["uptime"] = 655,
 						["auratype"] = "BUFF",
 					},
 					["Solar Empowerment"] = {
@@ -4300,12 +4300,12 @@ SkadaPerCharDB = {
 						["uptime"] = 260,
 						["auratype"] = "BUFF",
 					},
-					["Sunfire"] = {
-						["name"] = "Sunfire",
-						["active"] = 0,
-						["id"] = 164815,
-						["uptime"] = 319,
-						["auratype"] = "DEBUFF",
+					["Rejuvenation"] = {
+						["name"] = "Rejuvenation",
+						["active"] = 1,
+						["id"] = 774,
+						["uptime"] = 310,
+						["auratype"] = "BUFF",
 					},
 					["Incarnation: Chosen of Elune"] = {
 						["name"] = "Incarnation: Chosen of Elune",
@@ -4414,110 +4414,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 77234,
-				["deathlog"] = {
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287956.886,
-						["hp"] = 28731,
-						["amount"] = -737,
-					}, -- [1]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287957.852,
-						["hp"] = 27994,
-						["amount"] = -737,
-					}, -- [2]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287958.881,
-						["hp"] = 27110,
-						["amount"] = -884,
-					}, -- [3]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287959.871,
-						["hp"] = 26226,
-						["amount"] = -884,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 1196,
-						["ts"] = 1452287961.209,
-						["spellid"] = 145109,
-						["srcname"] = "Yaelle-AeriePeak",
-						["hp"] = 27422,
-					}, -- [5]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287963.865,
-						["hp"] = 27275,
-						["amount"] = -147,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 2642,
-						["ts"] = 1452287964.205,
-						["spellid"] = 115310,
-						["srcname"] = "Wwmonk-Kel'Thuzad",
-						["hp"] = 29917,
-					}, -- [7]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287953.871,
-						["hp"] = 26352,
-						["amount"] = -441,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 1036,
-						["ts"] = 1452287954.792,
-						["spellid"] = 125953,
-						["srcname"] = "Wwmonk-Kel'Thuzad",
-						["hp"] = 27388,
-					}, -- [9]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287954.883,
-						["hp"] = 26799,
-						["amount"] = -589,
-					}, -- [10]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287954.883,
-						["hp"] = 26622,
-						["amount"] = -177,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 1178,
-						["ts"] = 1452287955.819,
-						["spellid"] = 125953,
-						["srcname"] = "Wwmonk-Kel'Thuzad",
-						["hp"] = 27800,
-					}, -- [12]
-					{
-						["spellid"] = 48095,
-						["ts"] = 1452287955.88,
-						["hp"] = 27211,
-						["amount"] = -589,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 1197,
-						["ts"] = 1452287956.2,
-						["spellid"] = 145109,
-						["srcname"] = "Yaelle-AeriePeak",
-						["hp"] = 28408,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 1060,
-						["ts"] = 1452287956.809,
-						["spellid"] = 125953,
-						["srcname"] = "Wwmonk-Kel'Thuzad",
-						["hp"] = 29468,
-					}, -- [15]
-					["pos"] = 8,
+				["power"] = {
 				},
 				["id"] = "Player-1426-0754277A",
 				["maxhp"] = 29917,
@@ -4529,13 +4426,13 @@ SkadaPerCharDB = {
 						["damage"] = 2885,
 						["max"] = 2885,
 						["name"] = "Arcane Nova",
-						["min"] = 2885,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2885,
 						["absorbed"] = 0,
 					},
 					["Starfire"] = {
@@ -4544,13 +4441,13 @@ SkadaPerCharDB = {
 						["damage"] = 7470,
 						["max"] = 7470,
 						["name"] = "Starfire",
-						["min"] = 7470,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 7470,
 						["absorbed"] = 0,
 					},
 					["Gravity Well"] = {
@@ -4559,13 +4456,13 @@ SkadaPerCharDB = {
 						["damage"] = 1631,
 						["max"] = 109,
 						["name"] = "Gravity Well",
-						["min"] = 108,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 15,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 108,
 						["absorbed"] = 0,
 					},
 					["Intense Cold"] = {
@@ -4574,13 +4471,13 @@ SkadaPerCharDB = {
 						["damage"] = 22783,
 						["max"] = 1031,
 						["name"] = "Intense Cold",
-						["min"] = 44,
+						["glancing"] = 0,
 						["multistrike"] = 11,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 53,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 44,
 						["absorbed"] = 0,
 					},
 					["Frostbolt"] = {
@@ -4589,13 +4486,13 @@ SkadaPerCharDB = {
 						["damage"] = 23893,
 						["max"] = 8389,
 						["name"] = "Frostbolt",
-						["min"] = 7701,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 3,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 7701,
 						["absorbed"] = 0,
 					},
 					["Starsurge"] = {
@@ -4604,13 +4501,13 @@ SkadaPerCharDB = {
 						["damage"] = 6519,
 						["max"] = 6519,
 						["name"] = "Starsurge",
-						["min"] = 6519,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 6519,
 						["absorbed"] = 0,
 					},
 					["Chaotic Energy Burst"] = {
@@ -4619,13 +4516,13 @@ SkadaPerCharDB = {
 						["damage"] = 1165,
 						["max"] = 291,
 						["name"] = "Chaotic Energy Burst",
-						["min"] = 97,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 7,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 97,
 						["absorbed"] = 0,
 					},
 					["Ensnare"] = {
@@ -4634,13 +4531,13 @@ SkadaPerCharDB = {
 						["damage"] = 184,
 						["max"] = 184,
 						["name"] = "Ensnare",
-						["min"] = 184,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 184,
 						["absorbed"] = 0,
 					},
 					["Crystallize"] = {
@@ -4649,13 +4546,13 @@ SkadaPerCharDB = {
 						["damage"] = 5095,
 						["max"] = 2558,
 						["name"] = "Crystallize",
-						["min"] = 2537,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 2,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2537,
 						["absorbed"] = 0,
 					},
 					["Attack"] = {
@@ -4664,13 +4561,13 @@ SkadaPerCharDB = {
 						["damage"] = 5609,
 						["max"] = 1157,
 						["name"] = "Attack",
-						["min"] = 480,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 2,
 						["blocked"] = 0,
 						["totalhits"] = 7,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 480,
 						["absorbed"] = 0,
 					},
 				},
@@ -4714,9 +4611,112 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Yaelle",
 				["alertCount"] = 0,
-				["shielding"] = 0,
-				["power"] = {
+				["deathlog"] = {
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287956.886,
+						["hp"] = 28731,
+						["amount"] = -737,
+					}, -- [1]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287957.852,
+						["hp"] = 27994,
+						["amount"] = -737,
+					}, -- [2]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287958.881,
+						["hp"] = 27110,
+						["amount"] = -884,
+					}, -- [3]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287959.871,
+						["hp"] = 26226,
+						["amount"] = -884,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 1196,
+						["ts"] = 1452287961.209,
+						["spellid"] = 145109,
+						["hp"] = 27422,
+						["srcname"] = "Yaelle-AeriePeak",
+					}, -- [5]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287963.865,
+						["hp"] = 27275,
+						["amount"] = -147,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 2642,
+						["ts"] = 1452287964.205,
+						["spellid"] = 115310,
+						["hp"] = 29917,
+						["srcname"] = "Wwmonk-Kel'Thuzad",
+					}, -- [7]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287953.871,
+						["hp"] = 26352,
+						["amount"] = -441,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 1036,
+						["ts"] = 1452287954.792,
+						["spellid"] = 125953,
+						["hp"] = 27388,
+						["srcname"] = "Wwmonk-Kel'Thuzad",
+					}, -- [9]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287954.883,
+						["hp"] = 26799,
+						["amount"] = -589,
+					}, -- [10]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287954.883,
+						["hp"] = 26622,
+						["amount"] = -177,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 1178,
+						["ts"] = 1452287955.819,
+						["spellid"] = 125953,
+						["hp"] = 27800,
+						["srcname"] = "Wwmonk-Kel'Thuzad",
+					}, -- [12]
+					{
+						["spellid"] = 48095,
+						["ts"] = 1452287955.88,
+						["hp"] = 27211,
+						["amount"] = -589,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 1197,
+						["ts"] = 1452287956.2,
+						["spellid"] = 145109,
+						["hp"] = 28408,
+						["srcname"] = "Yaelle-AeriePeak",
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 1060,
+						["ts"] = 1452287956.809,
+						["spellid"] = 125953,
+						["hp"] = 29468,
+						["srcname"] = "Wwmonk-Kel'Thuzad",
+					}, -- [15]
+					["pos"] = 8,
 				},
+				["shielding"] = 0,
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -4769,6 +4769,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 224577,
+				["done"] = 13922,
+				["htaken"] = 123752,
 				["htakenspell"] = {
 					["Seed Pod"] = {
 						["min"] = 0,
@@ -4779,8 +4781,6 @@ SkadaPerCharDB = {
 						["hits"] = 353,
 					},
 				},
-				["htaken"] = 123752,
-				["done"] = 13922,
 			},
 			["Azure Scale-Binder"] = {
 				["players"] = {
@@ -4815,6 +4815,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 230763,
+				["done"] = 66546,
+				["htaken"] = 5597,
 				["htakenspell"] = {
 					["Heal"] = {
 						["min"] = 2787,
@@ -4825,8 +4827,6 @@ SkadaPerCharDB = {
 						["hits"] = 2,
 					},
 				},
-				["htaken"] = 5597,
-				["done"] = 66546,
 			},
 			["Mage Hunter Initiate"] = {
 				["players"] = {
@@ -4873,10 +4873,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 187675,
+				["done"] = 18702,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 18702,
 			},
 			["Mage Hunter Ascendant"] = {
 				["players"] = {
@@ -4915,6 +4915,8 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 288098,
+				["done"] = 18401,
+				["htaken"] = 481,
 				["htakenspell"] = {
 					["Renew"] = {
 						["min"] = 481,
@@ -4925,8 +4927,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 481,
-				["done"] = 18401,
 			},
 			["Nalak"] = {
 				["players"] = {
@@ -4941,52 +4941,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 8925789,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
 				["done"] = 660566,
-			},
-			["Azure Warder"] = {
-				["players"] = {
-					["Bracnar"] = {
-						["taken"] = 72168,
-						["done"] = 0,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Executions-Tichondrius"] = {
-						["taken"] = 50414,
-						["done"] = 0,
-						["class"] = "WARRIOR",
-						["role"] = "DAMAGER",
-					},
-					["Wwmonk-Kel'Thuzad"] = {
-						["taken"] = 230,
-						["done"] = 0,
-						["class"] = "MONK",
-						["role"] = "HEALER",
-					},
-					["Arestotle-AeriePeak"] = {
-						["taken"] = 6819,
-						["done"] = 3184,
-						["class"] = "PALADIN",
-						["role"] = "TANK",
-					},
-					["Yaelle-AeriePeak"] = {
-						["taken"] = 20593,
-						["done"] = 0,
-						["class"] = "DRUID",
-						["role"] = "DAMAGER",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 150224,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 3184,
 			},
 			["Horde Cleric"] = {
 				["players"] = {
@@ -5033,10 +4991,52 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 266217,
+				["done"] = 9522,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
+			},
+			["Azure Warder"] = {
+				["players"] = {
+					["Bracnar"] = {
+						["taken"] = 72168,
+						["done"] = 0,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Executions-Tichondrius"] = {
+						["taken"] = 50414,
+						["done"] = 0,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Wwmonk-Kel'Thuzad"] = {
+						["taken"] = 230,
+						["done"] = 0,
+						["class"] = "MONK",
+						["role"] = "HEALER",
+					},
+					["Arestotle-AeriePeak"] = {
+						["taken"] = 6819,
+						["done"] = 3184,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Yaelle-AeriePeak"] = {
+						["taken"] = 20593,
+						["done"] = 0,
+						["class"] = "DRUID",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 150224,
+				["done"] = 3184,
 				["htaken"] = 0,
-				["done"] = 9522,
+				["htakenspell"] = {
+				},
 			},
 			["Steward"] = {
 				["players"] = {
@@ -5075,10 +5075,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 203765,
+				["done"] = 23914,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 23914,
 			},
 			["Crystalline Protector"] = {
 				["players"] = {
@@ -5117,6 +5117,8 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 420592,
+				["done"] = 29983,
+				["htaken"] = 2387,
 				["htakenspell"] = {
 					["Tranquility"] = {
 						["min"] = 2387,
@@ -5127,8 +5129,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 2387,
-				["done"] = 29983,
 			},
 			["Commander Kolurg"] = {
 				["players"] = {
@@ -5167,10 +5167,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 386633,
+				["done"] = 74644,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 74644,
 			},
 			["Ormorok the Tree-Shaper"] = {
 				["players"] = {
@@ -5209,10 +5209,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 524672,
+				["done"] = 82835,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 82835,
 			},
 			["Horde Ranger"] = {
 				["players"] = {
@@ -5251,10 +5251,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 197841,
+				["done"] = 12669,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 12669,
 			},
 			["Azure Enforcer"] = {
 				["players"] = {
@@ -5287,6 +5287,8 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 401837,
+				["done"] = 79611,
+				["htaken"] = 4097,
 				["htakenspell"] = {
 					["Heal"] = {
 						["min"] = 4097,
@@ -5297,8 +5299,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 4097,
-				["done"] = 79611,
 			},
 			["Grand Magus Telestra"] = {
 				["players"] = {
@@ -5337,10 +5337,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 575740,
+				["done"] = 15642,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 15642,
 			},
 			["Mage Slayer"] = {
 				["players"] = {
@@ -5379,10 +5379,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 385178,
+				["done"] = 15654,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 15654,
 			},
 			["Crazed Mana-Wraith"] = {
 				["players"] = {
@@ -5415,10 +5415,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 73970,
+				["done"] = 7208,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 7208,
 			},
 			["Chaotic Rift"] = {
 				["players"] = {
@@ -5457,10 +5457,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 155324,
+				["done"] = 16709,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 16709,
 			},
 			["Horde Berserker"] = {
 				["players"] = {
@@ -5499,6 +5499,8 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 423867,
+				["done"] = 59453,
+				["htaken"] = 3101,
 				["htakenspell"] = {
 					["Flash Heal"] = {
 						["min"] = 3101,
@@ -5509,8 +5511,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 3101,
-				["done"] = 59453,
 			},
 			["Crystal Spider"] = {
 				["players"] = {
@@ -5525,10 +5525,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 8395,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Crazed Mana-Surge"] = {
 				["players"] = {
@@ -5575,6 +5575,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 239017,
+				["done"] = 16166,
+				["htaken"] = 3459,
 				["htakenspell"] = {
 					["Arcane Nova"] = {
 						["min"] = 3459,
@@ -5585,8 +5587,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 3459,
-				["done"] = 16166,
 			},
 			["Anomalus"] = {
 				["players"] = {
@@ -5625,10 +5625,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 509249,
+				["done"] = 65495,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 65495,
 			},
 			["Crystalline Keeper"] = {
 				["players"] = {
@@ -5667,6 +5667,8 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 486536,
+				["done"] = 29704,
+				["htaken"] = 1808,
 				["htakenspell"] = {
 					["Tranquility"] = {
 						["min"] = 1808,
@@ -5677,8 +5679,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 1808,
-				["done"] = 29704,
 			},
 			["Crystalline Tender"] = {
 				["players"] = {
@@ -5725,6 +5725,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 331624,
+				["done"] = 23628,
+				["htaken"] = 2498,
 				["htakenspell"] = {
 					["Tranquility"] = {
 						["min"] = 2498,
@@ -5735,8 +5737,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 2498,
-				["done"] = 23628,
 			},
 			["Azure Magus"] = {
 				["players"] = {
@@ -5775,10 +5775,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 302314,
+				["done"] = 102376,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 102376,
 			},
 			["Crystalline Tangler"] = {
 				["players"] = {
@@ -5811,10 +5811,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 6244,
+				["done"] = 5774,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 5774,
 			},
 			["Keristrasza"] = {
 				["players"] = {
@@ -5853,10 +5853,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 614421,
+				["done"] = 180157,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 180157,
 			},
 			["Bahalahada-MoonGuard"] = {
 				["players"] = {
@@ -5873,6 +5873,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 59193,
 				["htakenspell"] = {
 					["Ysera's Gift"] = {
 						["min"] = 7399,
@@ -5883,8 +5885,6 @@ SkadaPerCharDB = {
 						["hits"] = 8,
 					},
 				},
-				["htaken"] = 59193,
-				["done"] = 0,
 			},
 		},
 		["power"] = {
@@ -5916,7 +5916,9 @@ SkadaPerCharDB = {
 			["interrupts"] = 0,
 			["multistrikes"] = 0,
 			["damagetaken"] = 701798,
-			["mobtaken"] = 8925789,
+			["power"] = {
+				[2] = 1062,
+			},
 			["damage"] = 8925789,
 			["players"] = {
 				{
@@ -5969,18 +5971,18 @@ SkadaPerCharDB = {
 							["uptime"] = 30,
 							["auratype"] = "BUFF",
 						},
-						["Thrill of the Hunt"] = {
-							["name"] = "Thrill of the Hunt",
-							["active"] = 1,
-							["id"] = 34720,
-							["uptime"] = 66,
-							["auratype"] = "BUFF",
-						},
 						["Mirror Image: Felstorm"] = {
 							["name"] = "Mirror Image: Felstorm",
 							["active"] = 6,
 							["id"] = 184279,
 							["uptime"] = 180,
+							["auratype"] = "BUFF",
+						},
+						["Thrill of the Hunt"] = {
+							["name"] = "Thrill of the Hunt",
+							["active"] = 1,
+							["id"] = 34720,
+							["uptime"] = 66,
 							["auratype"] = "BUFF",
 						},
 						["McHealy: Dash"] = {
@@ -6143,21 +6145,11 @@ SkadaPerCharDB = {
 							["damage"] = 689483,
 						},
 					},
-					["maxhp"] = 425640,
-					["damagetaken"] = 701798,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[83468] = 72,
-								[91954] = 280,
-								[34953] = 510,
-								[53398] = 200,
-							},
-							["amount"] = 1062,
-						},
-					},
-					["id"] = "Player-1169-06A1ACBD",
 					["first"] = 1452288190,
+					["damagetaken"] = 701798,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1ACBD",
+					["maxhp"] = 425640,
 					["healing"] = 1059108,
 					["damagetakenspells"] = {
 						["Static Shield"] = {
@@ -6166,13 +6158,13 @@ SkadaPerCharDB = {
 							["damage"] = 359316,
 							["max"] = 5891,
 							["name"] = "Static Shield",
-							["min"] = 5890,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 61,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 5890,
 							["absorbed"] = 0,
 						},
 						["Lightning Tether"] = {
@@ -6181,13 +6173,13 @@ SkadaPerCharDB = {
 							["damage"] = 212052,
 							["max"] = 2357,
 							["name"] = "Lightning Tether",
-							["min"] = 1178,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 120,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1178,
 							["absorbed"] = 0,
 						},
 						["Stormcloud"] = {
@@ -6196,13 +6188,13 @@ SkadaPerCharDB = {
 							["damage"] = 41232,
 							["max"] = 5891,
 							["name"] = "Stormcloud",
-							["min"] = 5890,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 7,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 5890,
 							["absorbed"] = 0,
 						},
 						["Attack"] = {
@@ -6211,13 +6203,13 @@ SkadaPerCharDB = {
 							["damage"] = 89198,
 							["max"] = 24428,
 							["name"] = "Attack",
-							["min"] = 10796,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 1,
 							["blocked"] = 0,
 							["totalhits"] = 6,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 10796,
 							["absorbed"] = 0,
 						},
 					},
@@ -6336,7 +6328,17 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Bracnar",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[34953] = 510,
+								[53398] = 200,
+								[83468] = 72,
+								[91954] = 280,
+							},
+							["amount"] = 1062,
+						},
+					},
 					["healingspells"] = {
 						["McHealy: Spirit Bond"] = {
 							["shielding"] = 0,
@@ -6352,17 +6354,17 @@ SkadaPerCharDB = {
 							["critical"] = 0,
 							["absorbed"] = 0,
 						},
-						["Leech"] = {
+						["Malicor: Leech"] = {
 							["shielding"] = 0,
 							["id"] = 143924,
-							["healing"] = 116272,
+							["healing"] = 14702,
 							["multistrikes"] = 0,
 							["min"] = 0,
 							["multistrike"] = 0,
-							["name"] = "Leech",
-							["hits"] = 130,
-							["overhealing"] = 17342,
-							["max"] = 7199,
+							["name"] = "Malicor: Leech",
+							["hits"] = 32,
+							["overhealing"] = 63623,
+							["max"] = 4950,
 							["critical"] = 0,
 							["absorbed"] = 0,
 						},
@@ -6380,17 +6382,17 @@ SkadaPerCharDB = {
 							["critical"] = 0,
 							["absorbed"] = 0,
 						},
-						["Malicor: Leech"] = {
+						["Felboar: Leech"] = {
 							["shielding"] = 0,
 							["id"] = 143924,
-							["healing"] = 14702,
+							["healing"] = 2061,
 							["multistrikes"] = 0,
 							["min"] = 0,
 							["multistrike"] = 0,
-							["name"] = "Malicor: Leech",
-							["hits"] = 32,
-							["overhealing"] = 63623,
-							["max"] = 4950,
+							["name"] = "Felboar: Leech",
+							["hits"] = 13,
+							["overhealing"] = 35291,
+							["max"] = 2061,
 							["critical"] = 0,
 							["absorbed"] = 0,
 						},
@@ -6436,17 +6438,17 @@ SkadaPerCharDB = {
 							["critical"] = 0,
 							["absorbed"] = 0,
 						},
-						["Felboar: Leech"] = {
+						["Leech"] = {
 							["shielding"] = 0,
 							["id"] = 143924,
-							["healing"] = 2061,
+							["healing"] = 116272,
 							["multistrikes"] = 0,
 							["min"] = 0,
 							["multistrike"] = 0,
-							["name"] = "Felboar: Leech",
-							["hits"] = 13,
-							["overhealing"] = 35291,
-							["max"] = 2061,
+							["name"] = "Leech",
+							["hits"] = 130,
+							["overhealing"] = 17342,
+							["max"] = 7199,
 							["critical"] = 0,
 							["absorbed"] = 0,
 						},
@@ -6473,6 +6475,8 @@ SkadaPerCharDB = {
 						},
 					},
 					["taken"] = 0,
+					["done"] = 0,
+					["htaken"] = 59193,
 					["htakenspell"] = {
 						["Ysera's Gift"] = {
 							["min"] = 7399,
@@ -6483,8 +6487,6 @@ SkadaPerCharDB = {
 							["hits"] = 8,
 						},
 					},
-					["htaken"] = 59193,
-					["done"] = 0,
 				},
 				["Nalak"] = {
 					["players"] = {
@@ -6499,15 +6501,13 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 8925789,
+					["done"] = 660566,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 660566,
 				},
 			},
-			["power"] = {
-				[2] = 1062,
-			},
+			["gotboss"] = true,
 			["alertCount"] = 0,
 			["healing"] = 1059108,
 			["overhealing"] = 480232,
@@ -6516,7 +6516,7 @@ SkadaPerCharDB = {
 			["shielding"] = 0,
 			["name"] = "Nalak",
 			["mobname"] = "Nalak",
-			["gotboss"] = true,
+			["mobtaken"] = 8925789,
 			["mobhdone"] = 59193,
 			["last_action"] = 1452288189,
 			["endtime"] = 1452288383,
@@ -6530,7 +6530,12 @@ SkadaPerCharDB = {
 			["interrupts"] = 0,
 			["multistrikes"] = 29,
 			["damagetaken"] = 355104,
-			["mobtaken"] = 916735,
+			["power"] = {
+				46, -- [1]
+				344, -- [2]
+				[9] = 34,
+				[12] = 20,
+			},
 			["damage"] = 916735,
 			["players"] = {
 				{
@@ -6656,19 +6661,11 @@ SkadaPerCharDB = {
 							["damage"] = 79539,
 						},
 					},
-					["maxhp"] = 30164,
-					["damagetaken"] = 25573,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[77443] = 224,
-								[157722] = 120,
-							},
-							["amount"] = 344,
-						},
-					},
-					["id"] = "Player-1169-06A1ACBD",
 					["first"] = 1452287888,
+					["damagetaken"] = 25573,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1ACBD",
+					["maxhp"] = 30164,
 					["healing"] = 11378,
 					["damagetakenspells"] = {
 						["Intense Cold"] = {
@@ -6677,13 +6674,13 @@ SkadaPerCharDB = {
 							["damage"] = 20469,
 							["max"] = 1164,
 							["name"] = "Intense Cold",
-							["min"] = 44,
+							["glancing"] = 0,
 							["multistrike"] = 7,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 46,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 44,
 							["absorbed"] = 0,
 						},
 						["Crystallize"] = {
@@ -6692,13 +6689,13 @@ SkadaPerCharDB = {
 							["damage"] = 5104,
 							["max"] = 2663,
 							["name"] = "Crystallize",
-							["min"] = 2441,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2441,
 							["absorbed"] = 0,
 						},
 					},
@@ -6709,12 +6706,11 @@ SkadaPerCharDB = {
 							["name"] = "Malicor",
 							["amount"] = 122,
 						},
-						["Player-1169-06A1ACBD"] = {
-							["role"] = "DAMAGER",
-							["name"] = "Bracnar",
-							["amount"] = 10240,
-							["class"] = "HUNTER",
+						["Pet-0-3018-576-25824-1201-0D01EE0460"] = {
 							["shielding"] = 0,
+							["role"] = "NONE",
+							["name"] = "Malicor",
+							["amount"] = 128,
 						},
 						["Pet-0-3018-576-25824-1201-0B01EE0460"] = {
 							["shielding"] = 0,
@@ -6728,11 +6724,11 @@ SkadaPerCharDB = {
 							["name"] = "Malicor",
 							["amount"] = 110,
 						},
-						["Creature-0-3018-576-25824-92993-00011027A7"] = {
+						["Creature-0-3018-576-25824-92993-00001027A7"] = {
 							["shielding"] = 0,
 							["role"] = "NONE",
 							["name"] = "Mirror Image",
-							["amount"] = 137,
+							["amount"] = 133,
 						},
 						["Pet-0-3018-576-25824-1201-0F01EE0460"] = {
 							["shielding"] = 0,
@@ -6740,23 +6736,12 @@ SkadaPerCharDB = {
 							["name"] = "Malicor",
 							["amount"] = 116,
 						},
-						["Pet-0-3018-576-25824-1201-0D01EE0460"] = {
+						["Player-1169-06A1ACBD"] = {
+							["role"] = "DAMAGER",
+							["name"] = "Bracnar",
+							["amount"] = 10240,
+							["class"] = "HUNTER",
 							["shielding"] = 0,
-							["role"] = "NONE",
-							["name"] = "Malicor",
-							["amount"] = 128,
-						},
-						["Creature-0-3018-576-25824-92993-00001027A7"] = {
-							["shielding"] = 0,
-							["role"] = "NONE",
-							["name"] = "Mirror Image",
-							["amount"] = 133,
-						},
-						["Creature-0-3018-576-25824-92993-00019027A7"] = {
-							["shielding"] = 0,
-							["role"] = "NONE",
-							["name"] = "Mirror Image",
-							["amount"] = 141,
 						},
 						["Creature-0-3018-576-25824-92993-00009027A7"] = {
 							["shielding"] = 0,
@@ -6764,11 +6749,31 @@ SkadaPerCharDB = {
 							["name"] = "Mirror Image",
 							["amount"] = 128,
 						},
+						["Creature-0-3018-576-25824-92993-00011027A7"] = {
+							["shielding"] = 0,
+							["role"] = "NONE",
+							["name"] = "Mirror Image",
+							["amount"] = 137,
+						},
+						["Creature-0-3018-576-25824-92993-00019027A7"] = {
+							["shielding"] = 0,
+							["role"] = "NONE",
+							["name"] = "Mirror Image",
+							["amount"] = 141,
+						},
 					},
 					["alertDamage"] = 0,
 					["name"] = "Bracnar",
 					["alertCount"] = 8,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[77443] = 224,
+								[157722] = 120,
+							},
+							["amount"] = 344,
+						},
+					},
 					["healingspells"] = {
 						["Kill Shot"] = {
 							["shielding"] = 0,
@@ -6988,18 +6993,18 @@ SkadaPerCharDB = {
 							["uptime"] = 6,
 							["auratype"] = "BUFF",
 						},
-						["Victory Rush"] = {
-							["name"] = "Victory Rush",
-							["active"] = 0,
-							["id"] = 118779,
-							["uptime"] = 6,
-							["auratype"] = "BUFF",
-						},
 						["Die by the Sword"] = {
 							["name"] = "Die by the Sword",
 							["active"] = 0,
 							["id"] = 118038,
 							["uptime"] = 8,
+							["auratype"] = "BUFF",
+						},
+						["Victory Rush"] = {
+							["name"] = "Victory Rush",
+							["active"] = 0,
+							["id"] = 118779,
+							["uptime"] = 6,
 							["auratype"] = "BUFF",
 						},
 						["Sweeping Strikes"] = {
@@ -7149,20 +7154,11 @@ SkadaPerCharDB = {
 							["damage"] = 19305,
 						},
 					},
-					["maxhp"] = 30115,
-					["damagetaken"] = 31193,
-					["power"] = {
-						{
-							["spells"] = {
-								[163201] = -98,
-								[165672] = 109,
-								[109128] = 35,
-							},
-							["amount"] = 46,
-						}, -- [1]
-					},
-					["id"] = "Player-11-09B497BC",
 					["first"] = 1452287888,
+					["damagetaken"] = 31193,
+					["shielding"] = 0,
+					["id"] = "Player-11-09B497BC",
+					["maxhp"] = 30115,
 					["healing"] = 10132,
 					["damagetakenspells"] = {
 						["Crystalfire Breath"] = {
@@ -7171,13 +7167,13 @@ SkadaPerCharDB = {
 							["damage"] = 20593,
 							["max"] = 5439,
 							["name"] = "Crystalfire Breath",
-							["min"] = 1325,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 9,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1325,
 							["absorbed"] = 0,
 						},
 						["Crystallize"] = {
@@ -7186,13 +7182,13 @@ SkadaPerCharDB = {
 							["damage"] = 4261,
 							["max"] = 2433,
 							["name"] = "Crystallize",
-							["min"] = 1828,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1828,
 							["absorbed"] = 0,
 						},
 						["Intense Cold"] = {
@@ -7201,13 +7197,13 @@ SkadaPerCharDB = {
 							["damage"] = 5814,
 							["max"] = 729,
 							["name"] = "Intense Cold",
-							["min"] = 102,
+							["glancing"] = 0,
 							["multistrike"] = 1,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 17,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 102,
 							["absorbed"] = 0,
 						},
 						["Tail Sweep"] = {
@@ -7216,13 +7212,13 @@ SkadaPerCharDB = {
 							["damage"] = 525,
 							["max"] = 525,
 							["name"] = "Tail Sweep",
-							["min"] = 525,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 525,
 							["absorbed"] = 0,
 						},
 					},
@@ -7238,7 +7234,16 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Executions",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						{
+							["spells"] = {
+								[163201] = -98,
+								[165672] = 109,
+								[109128] = 35,
+							},
+							["amount"] = 46,
+						}, -- [1]
+					},
 					["healingspells"] = {
 						["Enraged Regeneration"] = {
 							["shielding"] = 0,
@@ -7492,14 +7497,14 @@ SkadaPerCharDB = {
 							["max"] = 297,
 							["damage"] = 2728,
 						},
-						["Crusader Strike"] = {
-							["min"] = 773,
-							["multistrike"] = 2,
-							["hit"] = 3,
-							["totalhits"] = 3,
-							["id"] = 35395,
-							["max"] = 817,
-							["damage"] = 3123,
+						["Avenger's Shield"] = {
+							["min"] = 2420,
+							["multistrike"] = 1,
+							["hit"] = 17,
+							["totalhits"] = 17,
+							["id"] = 31935,
+							["max"] = 2790,
+							["damage"] = 44279,
 						},
 						["Consecration"] = {
 							["min"] = 232,
@@ -7511,14 +7516,14 @@ SkadaPerCharDB = {
 							["max"] = 547,
 							["damage"] = 22143,
 						},
-						["Avenger's Shield"] = {
-							["min"] = 2420,
-							["multistrike"] = 1,
-							["hit"] = 17,
-							["totalhits"] = 17,
-							["id"] = 31935,
-							["max"] = 2790,
-							["damage"] = 44279,
+						["Crusader Strike"] = {
+							["min"] = 773,
+							["multistrike"] = 2,
+							["hit"] = 3,
+							["totalhits"] = 3,
+							["id"] = 35395,
+							["max"] = 817,
+							["damage"] = 3123,
 						},
 						["Fel Cleave"] = {
 							["min"] = 635,
@@ -7539,22 +7544,11 @@ SkadaPerCharDB = {
 							["damage"] = 4434,
 						},
 					},
-					["maxhp"] = 37681,
-					["damagetaken"] = 195091,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[105427] = 10,
-								[35395] = 3,
-								[98057] = 14,
-								[174040] = 1,
-								[53595] = 6,
-							},
-							["amount"] = 34,
-						},
-					},
-					["id"] = "Player-1426-07672C5E",
 					["first"] = 1452287888,
+					["damagetaken"] = 195091,
+					["shielding"] = 50182,
+					["id"] = "Player-1426-07672C5E",
+					["maxhp"] = 37681,
 					["healing"] = 143568,
 					["damagetakenspells"] = {
 						["Arcane Shock"] = {
@@ -7563,13 +7557,13 @@ SkadaPerCharDB = {
 							["damage"] = 14320,
 							["max"] = 2304,
 							["name"] = "Arcane Shock",
-							["min"] = 270,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 10,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 270,
 							["absorbed"] = 1084,
 						},
 						["Crystallize"] = {
@@ -7578,13 +7572,13 @@ SkadaPerCharDB = {
 							["damage"] = 2204,
 							["max"] = 2204,
 							["name"] = "Crystallize",
-							["min"] = 2204,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2204,
 							["absorbed"] = 0,
 						},
 						["Intense Cold"] = {
@@ -7593,13 +7587,13 @@ SkadaPerCharDB = {
 							["damage"] = 1926,
 							["max"] = 516,
 							["name"] = "Intense Cold",
-							["min"] = 116,
+							["glancing"] = 0,
 							["multistrike"] = 1,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 7,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 116,
 							["absorbed"] = 0,
 						},
 						["Frostbolt"] = {
@@ -7608,13 +7602,13 @@ SkadaPerCharDB = {
 							["damage"] = 42155,
 							["max"] = 7387,
 							["name"] = "Frostbolt",
-							["min"] = 571,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 9,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 571,
 							["absorbed"] = 17565,
 						},
 						["Crystalfire Breath"] = {
@@ -7623,13 +7617,13 @@ SkadaPerCharDB = {
 							["damage"] = 16825,
 							["max"] = 5537,
 							["name"] = "Crystalfire Breath",
-							["min"] = 292,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 9,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 292,
 							["absorbed"] = 0,
 						},
 						["Attack"] = {
@@ -7638,13 +7632,13 @@ SkadaPerCharDB = {
 							["damage"] = 117661,
 							["max"] = 8273,
 							["name"] = "Attack",
-							["min"] = 613,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 8634,
 							["totalhits"] = 28,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 613,
 							["absorbed"] = 18214,
 						},
 					},
@@ -7667,7 +7661,18 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Arestotle",
 					["alertCount"] = 0,
-					["shielding"] = 50182,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[105427] = 10,
+								[35395] = 3,
+								[98057] = 14,
+								[174040] = 1,
+								[53595] = 6,
+							},
+							["amount"] = 34,
+						},
+					},
 					["healingspells"] = {
 						["Arcing Light"] = {
 							["shielding"] = 0,
@@ -7899,12 +7904,11 @@ SkadaPerCharDB = {
 							["damage"] = 28458,
 						},
 					},
-					["maxhp"] = 29917,
-					["damagetaken"] = 51771,
-					["power"] = {
-					},
-					["id"] = "Player-1426-0754277A",
 					["first"] = 1452287890,
+					["damagetaken"] = 51771,
+					["shielding"] = 0,
+					["id"] = "Player-1426-0754277A",
+					["maxhp"] = 29917,
 					["healing"] = 14409,
 					["damagetakenspells"] = {
 						["Intense Cold"] = {
@@ -7913,13 +7917,13 @@ SkadaPerCharDB = {
 							["damage"] = 22783,
 							["max"] = 1031,
 							["name"] = "Intense Cold",
-							["min"] = 44,
+							["glancing"] = 0,
 							["multistrike"] = 11,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 53,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 44,
 							["absorbed"] = 0,
 						},
 						["Frostbolt"] = {
@@ -7928,13 +7932,13 @@ SkadaPerCharDB = {
 							["damage"] = 23893,
 							["max"] = 8389,
 							["name"] = "Frostbolt",
-							["min"] = 7701,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 7701,
 							["absorbed"] = 0,
 						},
 						["Crystallize"] = {
@@ -7943,13 +7947,13 @@ SkadaPerCharDB = {
 							["damage"] = 5095,
 							["max"] = 2558,
 							["name"] = "Crystallize",
-							["min"] = 2537,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2537,
 							["absorbed"] = 0,
 						},
 					},
@@ -7972,7 +7976,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Yaelle",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Ysera's Gift"] = {
 							["shielding"] = 0,
@@ -8125,21 +8130,11 @@ SkadaPerCharDB = {
 							["damage"] = 357,
 						},
 					},
-					["maxhp"] = 29967,
-					["damagetaken"] = 51476,
-					["power"] = {
-						[12] = {
-							["spells"] = {
-								[116694] = 12,
-								[115399] = 4,
-								[115151] = 2,
-								[115072] = 2,
-							},
-							["amount"] = 20,
-						},
-					},
-					["id"] = "Player-3693-07D3EE12",
 					["first"] = 1452287890,
+					["damagetaken"] = 51476,
+					["shielding"] = 0,
+					["id"] = "Player-3693-07D3EE12",
+					["maxhp"] = 29967,
 					["healing"] = 232705,
 					["damagetakenspells"] = {
 						["Crystallize"] = {
@@ -8148,13 +8143,13 @@ SkadaPerCharDB = {
 							["damage"] = 5012,
 							["max"] = 2513,
 							["name"] = "Crystallize",
-							["min"] = 2499,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2499,
 							["absorbed"] = 0,
 						},
 						["Crystalfire Breath"] = {
@@ -8163,13 +8158,13 @@ SkadaPerCharDB = {
 							["damage"] = 9214,
 							["max"] = 5528,
 							["name"] = "Crystalfire Breath",
-							["min"] = 1843,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1843,
 							["absorbed"] = 0,
 						},
 						["Frostbolt"] = {
@@ -8178,13 +8173,13 @@ SkadaPerCharDB = {
 							["damage"] = 14546,
 							["max"] = 7344,
 							["name"] = "Frostbolt",
-							["min"] = 7202,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 7202,
 							["absorbed"] = 0,
 						},
 						["Intense Cold"] = {
@@ -8193,13 +8188,13 @@ SkadaPerCharDB = {
 							["damage"] = 21579,
 							["max"] = 1134,
 							["name"] = "Intense Cold",
-							["min"] = 85,
+							["glancing"] = 0,
 							["multistrike"] = 5,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 47,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 85,
 							["absorbed"] = 0,
 						},
 						["Tail Sweep"] = {
@@ -8208,13 +8203,13 @@ SkadaPerCharDB = {
 							["damage"] = 1125,
 							["max"] = 1125,
 							["name"] = "Tail Sweep",
-							["min"] = 1125,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1125,
 							["absorbed"] = 0,
 						},
 					},
@@ -8257,11 +8252,12 @@ SkadaPerCharDB = {
 							["name"] = "Malicor",
 							["amount"] = 1267,
 						},
-						["Pet-0-3018-576-25824-1201-0D01EE0460"] = {
+						["Player-1169-06A1ACBD"] = {
+							["role"] = "DAMAGER",
+							["name"] = "Bracnar",
+							["amount"] = 15333,
+							["class"] = "HUNTER",
 							["shielding"] = 0,
-							["role"] = "NONE",
-							["name"] = "Malicor",
-							["amount"] = 2534,
 						},
 						["Player-1426-0754277A"] = {
 							["role"] = "DAMAGER",
@@ -8277,18 +8273,27 @@ SkadaPerCharDB = {
 							["class"] = "PALADIN",
 							["shielding"] = 0,
 						},
-						["Player-1169-06A1ACBD"] = {
-							["role"] = "DAMAGER",
-							["name"] = "Bracnar",
-							["amount"] = 15333,
-							["class"] = "HUNTER",
+						["Pet-0-3018-576-25824-1201-0D01EE0460"] = {
 							["shielding"] = 0,
+							["role"] = "NONE",
+							["name"] = "Malicor",
+							["amount"] = 2534,
 						},
 					},
 					["alertDamage"] = 0,
 					["name"] = "Wwmonk",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[12] = {
+							["spells"] = {
+								[116694] = 12,
+								[115399] = 4,
+								[115151] = 2,
+								[115072] = 2,
+							},
+							["amount"] = 20,
+						},
+					},
 					["healingspells"] = {
 						["Revival"] = {
 							["shielding"] = 0,
@@ -8489,10 +8494,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 614421,
+					["done"] = 180157,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 180157,
 				},
 				["Azure Magus"] = {
 					["players"] = {
@@ -8531,18 +8536,13 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 302314,
+					["done"] = 102376,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 102376,
 				},
 			},
-			["power"] = {
-				46, -- [1]
-				344, -- [2]
-				[9] = 34,
-				[12] = 20,
-			},
+			["gotboss"] = true,
 			["alertCount"] = 8,
 			["healing"] = 412192,
 			["overhealing"] = 100728.44140625,
@@ -8551,7 +8551,7 @@ SkadaPerCharDB = {
 			["shielding"] = 50182,
 			["name"] = "Keristrasza",
 			["mobname"] = "Keristrasza",
-			["gotboss"] = true,
+			["mobtaken"] = 916735,
 			["mobhdone"] = 0,
 			["last_action"] = 1452287888,
 			["endtime"] = 1452287965,
@@ -8663,20 +8663,11 @@ SkadaPerCharDB = {
 							["damage"] = 1336,
 						},
 					},
-					["maxhp"] = 37681,
-					["damagetaken"] = 8145,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[35395] = 1,
-								[98057] = 2,
-								[105427] = 1,
-							},
-							["amount"] = 4,
-						},
-					},
-					["id"] = "Player-1426-07672C5E",
 					["first"] = 1452287865,
+					["damagetaken"] = 8145,
+					["shielding"] = 7801,
+					["id"] = "Player-1426-07672C5E",
+					["maxhp"] = 37681,
 					["healing"] = 9099,
 					["damagetakenspells"] = {
 						["Attack"] = {
@@ -8685,13 +8676,13 @@ SkadaPerCharDB = {
 							["damage"] = 8145,
 							["max"] = 4050,
 							["name"] = "Attack",
-							["min"] = 275,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 2336,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 275,
 							["absorbed"] = 7801,
 						},
 					},
@@ -8707,7 +8698,16 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Arestotle",
 					["alertCount"] = 0,
-					["shielding"] = 7801,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[35395] = 1,
+								[98057] = 2,
+								[105427] = 1,
+							},
+							["amount"] = 4,
+						},
+					},
 					["healingspells"] = {
 						["Sacred Shield"] = {
 							["shielding"] = 3604,
@@ -8841,18 +8841,11 @@ SkadaPerCharDB = {
 							["damage"] = 32951,
 						},
 					},
-					["maxhp"] = 30164,
-					["damagetaken"] = 0,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[77443] = 42,
-							},
-							["amount"] = 42,
-						},
-					},
-					["id"] = "Player-1169-06A1ACBD",
 					["first"] = 1452287865,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1ACBD",
+					["maxhp"] = 30164,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -8868,7 +8861,14 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Bracnar",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[77443] = 42,
+							},
+							["amount"] = 42,
+						},
+					},
 					["healingspells"] = {
 						["Chimaera Shot"] = {
 							["shielding"] = 0,
@@ -9049,19 +9049,11 @@ SkadaPerCharDB = {
 							["damage"] = 3985,
 						},
 					},
-					["maxhp"] = 30115,
-					["damagetaken"] = 3935,
-					["power"] = {
-						{
-							["spells"] = {
-								[109128] = 35,
-								[165672] = 10,
-							},
-							["amount"] = 45,
-						}, -- [1]
-					},
-					["id"] = "Player-11-09B497BC",
 					["first"] = 1452287865,
+					["damagetaken"] = 3935,
+					["shielding"] = 0,
+					["id"] = "Player-11-09B497BC",
+					["maxhp"] = 30115,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 						["Thunderclap"] = {
@@ -9070,13 +9062,13 @@ SkadaPerCharDB = {
 							["damage"] = 1640,
 							["max"] = 1640,
 							["name"] = "Thunderclap",
-							["min"] = 1640,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1640,
 							["absorbed"] = 0,
 						},
 						["Crystal Chains"] = {
@@ -9085,13 +9077,13 @@ SkadaPerCharDB = {
 							["damage"] = 2295,
 							["max"] = 2295,
 							["name"] = "Crystal Chains",
-							["min"] = 2295,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2295,
 							["absorbed"] = 0,
 						},
 					},
@@ -9107,7 +9099,15 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Executions",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						{
+							["spells"] = {
+								[109128] = 35,
+								[165672] = 10,
+							},
+							["amount"] = 45,
+						}, -- [1]
+					},
 					["healingspells"] = {
 						["Victory Rush"] = {
 							["shielding"] = 0,
@@ -9169,18 +9169,11 @@ SkadaPerCharDB = {
 							["damage"] = 985,
 						},
 					},
-					["maxhp"] = 29967,
-					["damagetaken"] = 0,
-					["power"] = {
-						[12] = {
-							["spells"] = {
-								[116694] = 1,
-							},
-							["amount"] = 1,
-						},
-					},
-					["id"] = "Player-3693-07D3EE12",
 					["first"] = 1452287865,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-3693-07D3EE12",
+					["maxhp"] = 29967,
 					["healing"] = 5910,
 					["damagetakenspells"] = {
 					},
@@ -9224,7 +9217,14 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Wwmonk",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[12] = {
+							["spells"] = {
+								[116694] = 1,
+							},
+							["amount"] = 1,
+						},
+					},
 					["healingspells"] = {
 						["Surging Mist"] = {
 							["shielding"] = 0,
@@ -9367,12 +9367,11 @@ SkadaPerCharDB = {
 							["damage"] = 4476,
 						},
 					},
-					["maxhp"] = 29917,
-					["damagetaken"] = 0,
-					["power"] = {
-					},
-					["id"] = "Player-1426-0754277A",
 					["first"] = 1452287867,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1426-0754277A",
+					["maxhp"] = 29917,
 					["healing"] = 4786,
 					["damagetakenspells"] = {
 					},
@@ -9395,7 +9394,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Yaelle",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Ysera's Gift"] = {
 							["shielding"] = 0,
@@ -9456,10 +9456,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 127631,
+					["done"] = 12080,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 12080,
 				},
 			},
 			["power"] = {
@@ -9639,20 +9639,11 @@ SkadaPerCharDB = {
 							["damage"] = 2975,
 						},
 					},
-					["maxhp"] = 37681,
-					["damagetaken"] = 15559,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[105427] = 1,
-								[53595] = 1,
-								[35395] = 1,
-							},
-							["amount"] = 3,
-						},
-					},
-					["id"] = "Player-1426-07672C5E",
 					["first"] = 1452287849,
+					["damagetaken"] = 15559,
+					["shielding"] = 9239,
+					["id"] = "Player-1426-07672C5E",
+					["maxhp"] = 37681,
 					["healing"] = 12494,
 					["damagetakenspells"] = {
 						["Crystal Strike"] = {
@@ -9661,13 +9652,13 @@ SkadaPerCharDB = {
 							["damage"] = 3236,
 							["max"] = 3236,
 							["name"] = "Crystal Strike",
-							["min"] = 3236,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 2158,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 3236,
 							["absorbed"] = 0,
 						},
 						["Attack"] = {
@@ -9676,13 +9667,13 @@ SkadaPerCharDB = {
 							["damage"] = 12323,
 							["max"] = 3458,
 							["name"] = "Attack",
-							["min"] = 1054,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 1346,
 							["totalhits"] = 5,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1054,
 							["absorbed"] = 3633,
 						},
 					},
@@ -9698,7 +9689,16 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Arestotle",
 					["alertCount"] = 0,
-					["shielding"] = 9239,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[105427] = 1,
+								[53595] = 1,
+								[35395] = 1,
+							},
+							["amount"] = 3,
+						},
+					},
 					["healingspells"] = {
 						["Sacred Shield"] = {
 							["shielding"] = 6027,
@@ -9895,18 +9895,11 @@ SkadaPerCharDB = {
 							["damage"] = 2513,
 						},
 					},
-					["maxhp"] = 30115,
-					["damagetaken"] = 0,
-					["power"] = {
-						{
-							["spells"] = {
-								[163201] = -30,
-							},
-							["amount"] = -30,
-						}, -- [1]
-					},
-					["id"] = "Player-11-09B497BC",
 					["first"] = 1452287849,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-11-09B497BC",
+					["maxhp"] = 30115,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -9915,7 +9908,14 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Executions",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						{
+							["spells"] = {
+								[163201] = -30,
+							},
+							["amount"] = -30,
+						}, -- [1]
+					},
 					["healingspells"] = {
 					},
 					["alert"] = {
@@ -10007,19 +10007,11 @@ SkadaPerCharDB = {
 							["damage"] = 7767,
 						},
 					},
-					["maxhp"] = 30164,
-					["damagetaken"] = 0,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[77443] = 14,
-								[157722] = 40,
-							},
-							["amount"] = 54,
-						},
-					},
-					["id"] = "Player-1169-06A1ACBD",
 					["first"] = 1452287849,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1ACBD",
+					["maxhp"] = 30164,
 					["healing"] = 1632,
 					["damagetakenspells"] = {
 					},
@@ -10035,7 +10027,15 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Bracnar",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[77443] = 14,
+								[157722] = 40,
+							},
+							["amount"] = 54,
+						},
+					},
 					["healingspells"] = {
 						["Kill Shot"] = {
 							["shielding"] = 0,
@@ -10155,12 +10155,11 @@ SkadaPerCharDB = {
 							["damage"] = 4035,
 						},
 					},
-					["maxhp"] = 29917,
-					["damagetaken"] = 0,
-					["power"] = {
-					},
-					["id"] = "Player-1426-0754277A",
 					["first"] = 1452287850,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1426-0754277A",
+					["maxhp"] = 29917,
 					["healing"] = 2033,
 					["damagetakenspells"] = {
 					},
@@ -10183,7 +10182,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Yaelle",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Ysera's Gift"] = {
 							["shielding"] = 0,
@@ -10249,19 +10249,11 @@ SkadaPerCharDB = {
 					["damage"] = 0,
 					["damagespells"] = {
 					},
-					["maxhp"] = 29967,
-					["damagetaken"] = 0,
-					["power"] = {
-						[12] = {
-							["spells"] = {
-								[116694] = 2,
-								[115151] = 1,
-							},
-							["amount"] = 3,
-						},
-					},
-					["id"] = "Player-3693-07D3EE12",
 					["first"] = 1452287850,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-3693-07D3EE12",
+					["maxhp"] = 29967,
 					["healing"] = 20210,
 					["damagetakenspells"] = {
 					},
@@ -10305,7 +10297,15 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Wwmonk",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[12] = {
+							["spells"] = {
+								[116694] = 2,
+								[115151] = 1,
+							},
+							["amount"] = 3,
+						},
+					},
 					["healingspells"] = {
 						["Chi Torpedo"] = {
 							["shielding"] = 0,
@@ -10430,10 +10430,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 76877,
+					["done"] = 10493,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 10493,
 				},
 				["Crystalline Tender"] = {
 					["players"] = {
@@ -10466,10 +10466,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 64664,
+					["done"] = 5066,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 5066,
 				},
 			},
 			["power"] = {
@@ -10500,7 +10500,12 @@ SkadaPerCharDB = {
 			["interrupts"] = 0,
 			["multistrikes"] = 19,
 			["damagetaken"] = 115591,
-			["mobtaken"] = 530916,
+			["power"] = {
+				15, -- [1]
+				234, -- [2]
+				[9] = 22,
+				[12] = 7,
+			},
 			["damage"] = 530916,
 			["players"] = {
 				{
@@ -10519,11 +10524,11 @@ SkadaPerCharDB = {
 							["uptime"] = 21,
 							["auratype"] = "BUFF",
 						},
-						["Avenger's Reprieve"] = {
-							["name"] = "Avenger's Reprieve",
+						["Grand Crusader"] = {
+							["name"] = "Grand Crusader",
 							["active"] = 0,
-							["id"] = 185676,
-							["uptime"] = 10,
+							["id"] = 85416,
+							["uptime"] = 16,
 							["auratype"] = "BUFF",
 						},
 						["Uther's Insight"] = {
@@ -10533,11 +10538,11 @@ SkadaPerCharDB = {
 							["uptime"] = 38,
 							["auratype"] = "BUFF",
 						},
-						["Grand Crusader"] = {
-							["name"] = "Grand Crusader",
+						["Avenger's Reprieve"] = {
+							["name"] = "Avenger's Reprieve",
 							["active"] = 0,
-							["id"] = 85416,
-							["uptime"] = 16,
+							["id"] = 185676,
+							["uptime"] = 10,
 							["auratype"] = "BUFF",
 						},
 						["Reckoning"] = {
@@ -10661,20 +10666,11 @@ SkadaPerCharDB = {
 							["damage"] = 14106,
 						},
 					},
-					["maxhp"] = 37681,
-					["damagetaken"] = 66663,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[35395] = 9,
-								[98057] = 7,
-								[105427] = 6,
-							},
-							["amount"] = 22,
-						},
-					},
-					["id"] = "Player-1426-07672C5E",
 					["first"] = 1452287785,
+					["damagetaken"] = 66663,
+					["shielding"] = 20174,
+					["id"] = "Player-1426-07672C5E",
+					["maxhp"] = 37681,
 					["healing"] = 44364,
 					["damagetakenspells"] = {
 						["Trample"] = {
@@ -10683,13 +10679,13 @@ SkadaPerCharDB = {
 							["damage"] = 5072,
 							["max"] = 2162,
 							["name"] = "Trample",
-							["min"] = 1415,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 944,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1415,
 							["absorbed"] = 0,
 						},
 						["Avenger's Shield"] = {
@@ -10698,13 +10694,13 @@ SkadaPerCharDB = {
 							["damage"] = 162,
 							["max"] = 162,
 							["name"] = "Avenger's Shield",
-							["min"] = 162,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 162,
 							["absorbed"] = 1969,
 						},
 						["Attack"] = {
@@ -10713,13 +10709,13 @@ SkadaPerCharDB = {
 							["damage"] = 61429,
 							["max"] = 10221,
 							["name"] = "Attack",
-							["min"] = 854,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 14272,
 							["totalhits"] = 13,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 854,
 							["absorbed"] = 15688,
 						},
 					},
@@ -10735,7 +10731,16 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Arestotle",
 					["alertCount"] = 0,
-					["shielding"] = 20174,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[35395] = 9,
+								[98057] = 7,
+								[105427] = 6,
+							},
+							["amount"] = 22,
+						},
+					},
 					["healingspells"] = {
 						["Uther's Insight"] = {
 							["shielding"] = 0,
@@ -10926,21 +10931,11 @@ SkadaPerCharDB = {
 							["damage"] = 618,
 						},
 					},
-					["maxhp"] = 29967,
-					["damagetaken"] = 18248,
-					["power"] = {
-						[12] = {
-							["spells"] = {
-								[116694] = 2,
-								[115399] = 2,
-								[115151] = 2,
-								[115072] = 1,
-							},
-							["amount"] = 7,
-						},
-					},
-					["id"] = "Player-3693-07D3EE12",
 					["first"] = 1452287785,
+					["damagetaken"] = 18248,
+					["shielding"] = 0,
+					["id"] = "Player-3693-07D3EE12",
+					["maxhp"] = 29967,
 					["healing"] = 54028,
 					["damagetakenspells"] = {
 						["Trample"] = {
@@ -10949,13 +10944,13 @@ SkadaPerCharDB = {
 							["damage"] = 5417,
 							["max"] = 5417,
 							["name"] = "Trample",
-							["min"] = 5417,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 5417,
 							["absorbed"] = 0,
 						},
 						["Crystal Spike"] = {
@@ -10964,13 +10959,13 @@ SkadaPerCharDB = {
 							["damage"] = 12831,
 							["max"] = 12831,
 							["name"] = "Crystal Spike",
-							["min"] = 12831,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 12831,
 							["absorbed"] = 0,
 						},
 					},
@@ -11014,7 +11009,17 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Wwmonk",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[12] = {
+							["spells"] = {
+								[116694] = 2,
+								[115399] = 2,
+								[115151] = 2,
+								[115072] = 1,
+							},
+							["amount"] = 7,
+						},
+					},
 					["healingspells"] = {
 						["Expel Harm"] = {
 							["shielding"] = 0,
@@ -11253,19 +11258,11 @@ SkadaPerCharDB = {
 							["damage"] = 52566,
 						},
 					},
-					["maxhp"] = 30164,
-					["damagetaken"] = 1929,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[77443] = 154,
-								[157722] = 80,
-							},
-							["amount"] = 234,
-						},
-					},
-					["id"] = "Player-1169-06A1ACBD",
 					["first"] = 1452287785,
+					["damagetaken"] = 1929,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1ACBD",
+					["maxhp"] = 30164,
 					["healing"] = 1229,
 					["damagetakenspells"] = {
 						["Attack"] = {
@@ -11274,13 +11271,13 @@ SkadaPerCharDB = {
 							["damage"] = 1929,
 							["max"] = 702,
 							["name"] = "Attack",
-							["min"] = 569,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 569,
 							["absorbed"] = 0,
 						},
 					},
@@ -11320,7 +11317,15 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Bracnar",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[77443] = 154,
+								[157722] = 80,
+							},
+							["amount"] = 234,
+						},
+					},
 					["healingspells"] = {
 						["Mirror Image: Leech"] = {
 							["shielding"] = 0,
@@ -11581,18 +11586,11 @@ SkadaPerCharDB = {
 							["damage"] = 11259,
 						},
 					},
-					["maxhp"] = 30115,
-					["damagetaken"] = 10917,
-					["power"] = {
-						{
-							["spells"] = {
-								[165672] = 15,
-							},
-							["amount"] = 15,
-						}, -- [1]
-					},
-					["id"] = "Player-11-09B497BC",
 					["first"] = 1452287785,
+					["damagetaken"] = 10917,
+					["shielding"] = 0,
+					["id"] = "Player-11-09B497BC",
+					["maxhp"] = 30115,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 						["Trample"] = {
@@ -11601,13 +11599,13 @@ SkadaPerCharDB = {
 							["damage"] = 10917,
 							["max"] = 4848,
 							["name"] = "Trample",
-							["min"] = 3017,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 3017,
 							["absorbed"] = 0,
 						},
 					},
@@ -11616,7 +11614,14 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Executions",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						{
+							["spells"] = {
+								[165672] = 15,
+							},
+							["amount"] = 15,
+						}, -- [1]
+					},
 					["healingspells"] = {
 					},
 					["alert"] = {
@@ -11666,6 +11671,13 @@ SkadaPerCharDB = {
 							["uptime"] = 3,
 							["auratype"] = "BUFF",
 						},
+						["Lunar Empowerment"] = {
+							["name"] = "Lunar Empowerment",
+							["active"] = 1,
+							["id"] = 164547,
+							["uptime"] = 18,
+							["auratype"] = "BUFF",
+						},
 						["Sunfire"] = {
 							["name"] = "Sunfire",
 							["active"] = 0,
@@ -11678,13 +11690,6 @@ SkadaPerCharDB = {
 							["active"] = 1,
 							["id"] = 774,
 							["uptime"] = 10,
-							["auratype"] = "BUFF",
-						},
-						["Lunar Empowerment"] = {
-							["name"] = "Lunar Empowerment",
-							["active"] = 1,
-							["id"] = 164547,
-							["uptime"] = 18,
 							["auratype"] = "BUFF",
 						},
 						["Incarnation: Chosen of Elune"] = {
@@ -11750,12 +11755,11 @@ SkadaPerCharDB = {
 							["damage"] = 11696,
 						},
 					},
-					["maxhp"] = 29917,
-					["damagetaken"] = 17834,
-					["power"] = {
-					},
-					["id"] = "Player-1426-0754277A",
 					["first"] = 1452287785,
+					["damagetaken"] = 17834,
+					["shielding"] = 0,
+					["id"] = "Player-1426-0754277A",
+					["maxhp"] = 29917,
 					["healing"] = 6523,
 					["damagetakenspells"] = {
 						["Attack"] = {
@@ -11764,13 +11768,13 @@ SkadaPerCharDB = {
 							["damage"] = 3845,
 							["max"] = 1157,
 							["name"] = "Attack",
-							["min"] = 480,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 2,
 							["blocked"] = 0,
 							["totalhits"] = 5,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 480,
 							["absorbed"] = 0,
 						},
 						["Starfire"] = {
@@ -11779,13 +11783,13 @@ SkadaPerCharDB = {
 							["damage"] = 7470,
 							["max"] = 7470,
 							["name"] = "Starfire",
-							["min"] = 7470,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 7470,
 							["absorbed"] = 0,
 						},
 						["Starsurge"] = {
@@ -11794,13 +11798,13 @@ SkadaPerCharDB = {
 							["damage"] = 6519,
 							["max"] = 6519,
 							["name"] = "Starsurge",
-							["min"] = 6519,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 6519,
 							["absorbed"] = 0,
 						},
 					},
@@ -11830,7 +11834,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Yaelle",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Ysera's Gift"] = {
 							["shielding"] = 0,
@@ -11899,10 +11904,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 6244,
+					["done"] = 5774,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 5774,
 				},
 				["Crystalline Frayer"] = {
 					["players"] = {
@@ -11919,6 +11924,8 @@ SkadaPerCharDB = {
 						},
 					},
 					["taken"] = 0,
+					["done"] = 0,
+					["htaken"] = 31331,
 					["htakenspell"] = {
 						["Seed Pod"] = {
 							["min"] = 0,
@@ -11929,8 +11936,6 @@ SkadaPerCharDB = {
 							["hits"] = 100,
 						},
 					},
-					["htaken"] = 31331,
-					["done"] = 0,
 				},
 				["Ormorok the Tree-Shaper"] = {
 					["players"] = {
@@ -11969,18 +11974,13 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 524672,
+					["done"] = 82835,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 82835,
 				},
 			},
-			["power"] = {
-				15, -- [1]
-				234, -- [2]
-				[9] = 22,
-				[12] = 7,
-			},
+			["gotboss"] = true,
 			["alertCount"] = 0,
 			["healing"] = 106144,
 			["overhealing"] = 78736.8088378906,
@@ -11989,7 +11989,7 @@ SkadaPerCharDB = {
 			["shielding"] = 20174,
 			["name"] = "Ormorok the Tree-Shaper",
 			["mobname"] = "Ormorok the Tree-Shaper",
-			["gotboss"] = true,
+			["mobtaken"] = 530916,
 			["mobhdone"] = 31331,
 			["last_action"] = 1452287785,
 			["endtime"] = 1452287828,
@@ -12092,19 +12092,11 @@ SkadaPerCharDB = {
 							["damage"] = 35550,
 						},
 					},
-					["maxhp"] = 30164,
-					["damagetaken"] = 0,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[157722] = 20,
-								[77443] = 14,
-							},
-							["amount"] = 34,
-						},
-					},
-					["id"] = "Player-1169-06A1ACBD",
 					["first"] = 1452287763,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1ACBD",
+					["maxhp"] = 30164,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -12120,7 +12112,15 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Bracnar",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[157722] = 20,
+								[77443] = 14,
+							},
+							["amount"] = 34,
+						},
+					},
 					["healingspells"] = {
 						["Leech"] = {
 							["shielding"] = 0,
@@ -12172,10 +12172,10 @@ SkadaPerCharDB = {
 							["uptime"] = 10,
 							["auratype"] = "BUFF",
 						},
-						["Avenger's Reprieve"] = {
-							["name"] = "Avenger's Reprieve",
-							["active"] = 1,
-							["id"] = 185676,
+						["Grand Crusader"] = {
+							["name"] = "Grand Crusader",
+							["active"] = 0,
+							["id"] = 85416,
 							["uptime"] = 8,
 							["auratype"] = "BUFF",
 						},
@@ -12186,10 +12186,10 @@ SkadaPerCharDB = {
 							["uptime"] = 10,
 							["auratype"] = "BUFF",
 						},
-						["Grand Crusader"] = {
-							["name"] = "Grand Crusader",
-							["active"] = 0,
-							["id"] = 85416,
+						["Avenger's Reprieve"] = {
+							["name"] = "Avenger's Reprieve",
+							["active"] = 1,
+							["id"] = 185676,
 							["uptime"] = 8,
 							["auratype"] = "BUFF",
 						},
@@ -12308,20 +12308,11 @@ SkadaPerCharDB = {
 							["damage"] = 4792,
 						},
 					},
-					["maxhp"] = 37681,
-					["damagetaken"] = 10478,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[105427] = 2,
-								[98057] = 3,
-								[53595] = 2,
-							},
-							["amount"] = 7,
-						},
-					},
-					["id"] = "Player-1426-07672C5E",
 					["first"] = 1452287763,
+					["damagetaken"] = 10478,
+					["shielding"] = 16938,
+					["id"] = "Player-1426-07672C5E",
+					["maxhp"] = 37681,
 					["healing"] = 42340,
 					["damagetakenspells"] = {
 						["Crystal Strike"] = {
@@ -12330,13 +12321,13 @@ SkadaPerCharDB = {
 							["damage"] = 347,
 							["max"] = 347,
 							["name"] = "Crystal Strike",
-							["min"] = 347,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 347,
 							["absorbed"] = 2973,
 						},
 						["Ensnare"] = {
@@ -12345,13 +12336,13 @@ SkadaPerCharDB = {
 							["damage"] = 64,
 							["max"] = 64,
 							["name"] = "Ensnare",
-							["min"] = 64,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 64,
 							["absorbed"] = 0,
 						},
 						["Attack"] = {
@@ -12360,13 +12351,13 @@ SkadaPerCharDB = {
 							["damage"] = 10067,
 							["max"] = 2500,
 							["name"] = "Attack",
-							["min"] = 920,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 1869,
 							["totalhits"] = 7,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 920,
 							["absorbed"] = 799,
 						},
 					},
@@ -12382,7 +12373,16 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Arestotle",
 					["alertCount"] = 0,
-					["shielding"] = 16938,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[105427] = 2,
+								[98057] = 3,
+								[53595] = 2,
+							},
+							["amount"] = 7,
+						},
+					},
 					["healingspells"] = {
 						["Avenger's Reprieve"] = {
 							["shielding"] = 16938,
@@ -12555,18 +12555,11 @@ SkadaPerCharDB = {
 							["damage"] = 1956,
 						},
 					},
-					["maxhp"] = 30115,
-					["damagetaken"] = 0,
-					["power"] = {
-						{
-							["spells"] = {
-								[163201] = -60,
-							},
-							["amount"] = -60,
-						}, -- [1]
-					},
-					["id"] = "Player-11-09B497BC",
 					["first"] = 1452287763,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-11-09B497BC",
+					["maxhp"] = 30115,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -12575,7 +12568,14 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Executions",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						{
+							["spells"] = {
+								[163201] = -60,
+							},
+							["amount"] = -60,
+						}, -- [1]
+					},
 					["healingspells"] = {
 					},
 					["alert"] = {
@@ -12648,12 +12648,11 @@ SkadaPerCharDB = {
 							["damage"] = 5975,
 						},
 					},
-					["maxhp"] = 29917,
-					["damagetaken"] = 0,
-					["power"] = {
-					},
-					["id"] = "Player-1426-0754277A",
 					["first"] = 1452287763,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1426-0754277A",
+					["maxhp"] = 29917,
 					["healing"] = 1644,
 					["damagetakenspells"] = {
 					},
@@ -12676,7 +12675,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Yaelle",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Ysera's Gift"] = {
 							["shielding"] = 0,
@@ -12752,19 +12752,11 @@ SkadaPerCharDB = {
 							["damage"] = 283,
 						},
 					},
-					["maxhp"] = 29967,
-					["damagetaken"] = 0,
-					["power"] = {
-						[12] = {
-							["spells"] = {
-								[115151] = 1,
-								[115072] = 1,
-							},
-							["amount"] = 2,
-						},
-					},
-					["id"] = "Player-3693-07D3EE12",
 					["first"] = 1452287763,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-3693-07D3EE12",
+					["maxhp"] = 29967,
 					["healing"] = 4022,
 					["damagetakenspells"] = {
 					},
@@ -12801,7 +12793,15 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Wwmonk",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[12] = {
+							["spells"] = {
+								[115151] = 1,
+								[115072] = 1,
+							},
+							["amount"] = 2,
+						},
+					},
 					["healingspells"] = {
 						["Expel Harm"] = {
 							["shielding"] = 0,
@@ -12918,10 +12918,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 132344,
+					["done"] = 4149,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 4149,
 				},
 				["Crystalline Keeper"] = {
 					["players"] = {
@@ -12960,10 +12960,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 124492,
+					["done"] = 6265,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 6265,
 				},
 				["Crystalline Frayer"] = {
 					["players"] = {
@@ -13004,6 +13004,8 @@ SkadaPerCharDB = {
 						},
 					},
 					["taken"] = 31689,
+					["done"] = 64,
+					["htaken"] = 19302,
 					["htakenspell"] = {
 						["Seed Pod"] = {
 							["min"] = 0,
@@ -13014,8 +13016,6 @@ SkadaPerCharDB = {
 							["hits"] = 54,
 						},
 					},
-					["htaken"] = 19302,
-					["done"] = 64,
 				},
 			},
 			["power"] = {
@@ -13080,6 +13080,13 @@ SkadaPerCharDB = {
 							["uptime"] = 16,
 							["auratype"] = "BUFF",
 						},
+						["Grand Crusader"] = {
+							["name"] = "Grand Crusader",
+							["active"] = 0,
+							["id"] = 85416,
+							["uptime"] = 3,
+							["auratype"] = "BUFF",
+						},
 						["Avenger's Reprieve"] = {
 							["name"] = "Avenger's Reprieve",
 							["active"] = 1,
@@ -13093,13 +13100,6 @@ SkadaPerCharDB = {
 							["id"] = 31935,
 							["uptime"] = 0,
 							["auratype"] = "DEBUFF",
-						},
-						["Grand Crusader"] = {
-							["name"] = "Grand Crusader",
-							["active"] = 0,
-							["id"] = 85416,
-							["uptime"] = 3,
-							["auratype"] = "BUFF",
 						},
 						["Dazed - Avenger's Shield"] = {
 							["name"] = "Dazed - Avenger's Shield",
@@ -13198,6 +13198,14 @@ SkadaPerCharDB = {
 							["max"] = 547,
 							["damage"] = 11286,
 						},
+						["Avenger's Shield"] = {
+							["min"] = 2420,
+							["hit"] = 9,
+							["totalhits"] = 9,
+							["id"] = 31935,
+							["max"] = 2791,
+							["damage"] = 23630,
+						},
 						["Crusader Strike"] = {
 							["min"] = 882,
 							["multistrike"] = 1,
@@ -13206,14 +13214,6 @@ SkadaPerCharDB = {
 							["id"] = 35395,
 							["max"] = 882,
 							["damage"] = 1147,
-						},
-						["Avenger's Shield"] = {
-							["min"] = 2420,
-							["hit"] = 9,
-							["totalhits"] = 9,
-							["id"] = 31935,
-							["max"] = 2791,
-							["damage"] = 23630,
 						},
 						["Holy Wrath"] = {
 							["min"] = 1108,
@@ -13225,22 +13225,11 @@ SkadaPerCharDB = {
 							["damage"] = 4766,
 						},
 					},
-					["maxhp"] = 37681,
-					["damagetaken"] = 17958,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[105427] = 3,
-								[53595] = 3,
-								[98057] = 2,
-								[174040] = 1,
-								[35395] = 1,
-							},
-							["amount"] = 10,
-						},
-					},
-					["id"] = "Player-1426-07672C5E",
 					["first"] = 1452287734,
+					["damagetaken"] = 17958,
+					["shielding"] = 15692,
+					["id"] = "Player-1426-07672C5E",
+					["maxhp"] = 37681,
 					["healing"] = 27853,
 					["damagetakenspells"] = {
 						["Crystal Strike"] = {
@@ -13249,13 +13238,13 @@ SkadaPerCharDB = {
 							["damage"] = 118,
 							["max"] = 118,
 							["name"] = "Crystal Strike",
-							["min"] = 118,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 2084,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 118,
 							["absorbed"] = 3007,
 						},
 						["Ensnare"] = {
@@ -13264,13 +13253,13 @@ SkadaPerCharDB = {
 							["damage"] = 86,
 							["max"] = 86,
 							["name"] = "Ensnare",
-							["min"] = 86,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 86,
 							["absorbed"] = 0,
 						},
 						["Shard Spray"] = {
@@ -13279,13 +13268,13 @@ SkadaPerCharDB = {
 							["damage"] = 3085,
 							["max"] = 3085,
 							["name"] = "Shard Spray",
-							["min"] = 3085,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 3085,
 							["absorbed"] = 0,
 						},
 						["Attack"] = {
@@ -13294,13 +13283,13 @@ SkadaPerCharDB = {
 							["damage"] = 14669,
 							["max"] = 2633,
 							["name"] = "Attack",
-							["min"] = 393,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 4014,
 							["totalhits"] = 9,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 393,
 							["absorbed"] = 3548,
 						},
 					},
@@ -13323,7 +13312,18 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Arestotle",
 					["alertCount"] = 0,
-					["shielding"] = 15692,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[105427] = 3,
+								[53595] = 3,
+								[98057] = 2,
+								[174040] = 1,
+								[35395] = 1,
+							},
+							["amount"] = 10,
+						},
+					},
 					["healingspells"] = {
 						["Sacred Shield"] = {
 							["shielding"] = 10578,
@@ -13549,19 +13549,11 @@ SkadaPerCharDB = {
 							["damage"] = 5143,
 						},
 					},
-					["maxhp"] = 30115,
-					["damagetaken"] = 1324,
-					["power"] = {
-						{
-							["spells"] = {
-								[163201] = -60,
-								[165672] = 5,
-							},
-							["amount"] = -55,
-						}, -- [1]
-					},
-					["id"] = "Player-11-09B497BC",
 					["first"] = 1452287734,
+					["damagetaken"] = 1324,
+					["shielding"] = 0,
+					["id"] = "Player-11-09B497BC",
+					["maxhp"] = 30115,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 						["Thunderclap"] = {
@@ -13570,13 +13562,13 @@ SkadaPerCharDB = {
 							["damage"] = 1324,
 							["max"] = 1324,
 							["name"] = "Thunderclap",
-							["min"] = 1324,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1324,
 							["absorbed"] = 0,
 						},
 					},
@@ -13592,7 +13584,15 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Executions",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						{
+							["spells"] = {
+								[163201] = -60,
+								[165672] = 5,
+							},
+							["amount"] = -55,
+						}, -- [1]
+					},
 					["healingspells"] = {
 						["Victory Rush"] = {
 							["shielding"] = 0,
@@ -13733,19 +13733,11 @@ SkadaPerCharDB = {
 							["damage"] = 42239,
 						},
 					},
-					["maxhp"] = 30164,
-					["damagetaken"] = 1999,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[77443] = 56,
-								[157722] = 20,
-							},
-							["amount"] = 76,
-						},
-					},
-					["id"] = "Player-1169-06A1ACBD",
 					["first"] = 1452287735,
+					["damagetaken"] = 1999,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1ACBD",
+					["maxhp"] = 30164,
 					["healing"] = 942,
 					["damagetakenspells"] = {
 						["Crystal Chains"] = {
@@ -13754,13 +13746,13 @@ SkadaPerCharDB = {
 							["damage"] = 1999,
 							["max"] = 1999,
 							["name"] = "Crystal Chains",
-							["min"] = 1999,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1999,
 							["absorbed"] = 0,
 						},
 					},
@@ -13800,7 +13792,15 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Bracnar",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[77443] = 56,
+								[157722] = 20,
+							},
+							["amount"] = 76,
+						},
+					},
 					["healingspells"] = {
 						["Mirror Image: Leech"] = {
 							["shielding"] = 0,
@@ -13952,12 +13952,11 @@ SkadaPerCharDB = {
 							["damage"] = 5269,
 						},
 					},
-					["maxhp"] = 29917,
-					["damagetaken"] = 0,
-					["power"] = {
-					},
-					["id"] = "Player-1426-0754277A",
 					["first"] = 1452287737,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1426-0754277A",
+					["maxhp"] = 29917,
 					["healing"] = 655,
 					["damagetakenspells"] = {
 					},
@@ -13973,7 +13972,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Yaelle",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Ysera's Gift"] = {
 							["shielding"] = 0,
@@ -14048,19 +14048,11 @@ SkadaPerCharDB = {
 							["damage"] = 77,
 						},
 					},
-					["maxhp"] = 29967,
-					["damagetaken"] = 0,
-					["power"] = {
-						[12] = {
-							["spells"] = {
-								[116694] = 1,
-								[115151] = 1,
-							},
-							["amount"] = 2,
-						},
-					},
-					["id"] = "Player-3693-07D3EE12",
 					["first"] = 1452287744,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-3693-07D3EE12",
+					["maxhp"] = 29967,
 					["healing"] = 6889,
 					["damagetakenspells"] = {
 					},
@@ -14090,7 +14082,15 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Wwmonk",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[12] = {
+							["spells"] = {
+								[116694] = 1,
+								[115151] = 1,
+							},
+							["amount"] = 2,
+						},
+					},
 					["healingspells"] = {
 						["Gift of the Serpent"] = {
 							["shielding"] = 0,
@@ -14203,6 +14203,8 @@ SkadaPerCharDB = {
 						},
 					},
 					["taken"] = 17224,
+					["done"] = 479,
+					["htaken"] = 29977,
 					["htakenspell"] = {
 						["Seed Pod"] = {
 							["min"] = 0,
@@ -14213,8 +14215,6 @@ SkadaPerCharDB = {
 							["hits"] = 83,
 						},
 					},
-					["htaken"] = 29977,
-					["done"] = 479,
 				},
 				["Crystalline Protector"] = {
 					["players"] = {
@@ -14253,6 +14253,8 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 152802,
+					["done"] = 12106,
+					["htaken"] = 2387,
 					["htakenspell"] = {
 						["Tranquility"] = {
 							["min"] = 2387,
@@ -14263,8 +14265,6 @@ SkadaPerCharDB = {
 							["hits"] = 1,
 						},
 					},
-					["htaken"] = 2387,
-					["done"] = 12106,
 				},
 				["Crystalline Tender"] = {
 					["players"] = {
@@ -14305,6 +14305,8 @@ SkadaPerCharDB = {
 						},
 					},
 					["taken"] = 65376,
+					["done"] = 3211,
+					["htaken"] = 2498,
 					["htakenspell"] = {
 						["Tranquility"] = {
 							["min"] = 2498,
@@ -14315,8 +14317,6 @@ SkadaPerCharDB = {
 							["hits"] = 1,
 						},
 					},
-					["htaken"] = 2498,
-					["done"] = 3211,
 				},
 				["Crystalline Keeper"] = {
 					["players"] = {
@@ -14349,6 +14349,8 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 134162,
+					["done"] = 5485,
+					["htaken"] = 1808,
 					["htakenspell"] = {
 						["Tranquility"] = {
 							["min"] = 1808,
@@ -14359,8 +14361,6 @@ SkadaPerCharDB = {
 							["hits"] = 1,
 						},
 					},
-					["htaken"] = 1808,
-					["done"] = 5485,
 				},
 			},
 			["power"] = {
@@ -14548,20 +14548,11 @@ SkadaPerCharDB = {
 							["damage"] = 6828,
 						},
 					},
-					["maxhp"] = 37681,
-					["damagetaken"] = 391,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[105427] = 3,
-								[98057] = 4,
-								[35395] = 5,
-							},
-							["amount"] = 12,
-						},
-					},
-					["id"] = "Player-1426-07672C5E",
 					["first"] = 1452287700,
+					["damagetaken"] = 391,
+					["shielding"] = 8209,
+					["id"] = "Player-1426-07672C5E",
+					["maxhp"] = 37681,
 					["healing"] = 8323,
 					["damagetakenspells"] = {
 						["Shard Spray"] = {
@@ -14570,13 +14561,13 @@ SkadaPerCharDB = {
 							["damage"] = 391,
 							["max"] = 391,
 							["name"] = "Shard Spray",
-							["min"] = 391,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 391,
 							["absorbed"] = 3228,
 						},
 					},
@@ -14592,7 +14583,16 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Arestotle",
 					["alertCount"] = 0,
-					["shielding"] = 8209,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[105427] = 3,
+								[98057] = 4,
+								[35395] = 5,
+							},
+							["amount"] = 12,
+						},
+					},
 					["healingspells"] = {
 						["Sacred Shield"] = {
 							["shielding"] = 4579,
@@ -14805,8 +14805,49 @@ SkadaPerCharDB = {
 							["damage"] = 6459,
 						},
 					},
-					["maxhp"] = 30115,
+					["first"] = 1452287700,
 					["damagetaken"] = 9568,
+					["shielding"] = 0,
+					["id"] = "Player-11-09B497BC",
+					["maxhp"] = 30115,
+					["healing"] = 0,
+					["damagetakenspells"] = {
+						["Ensnare"] = {
+							["crushing"] = 0,
+							["id"] = 48053,
+							["damage"] = 605,
+							["max"] = 212,
+							["name"] = "Ensnare",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 3,
+							["resisted"] = 0,
+							["min"] = 194,
+							["absorbed"] = 0,
+						},
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 8963,
+							["max"] = 1427,
+							["name"] = "Attack",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 9,
+							["resisted"] = 0,
+							["min"] = 762,
+							["absorbed"] = 0,
+						},
+					},
+					["healed"] = {
+					},
+					["alertDamage"] = 0,
+					["name"] = "Executions",
+					["alertCount"] = 0,
 					["power"] = {
 						{
 							["spells"] = {
@@ -14817,47 +14858,6 @@ SkadaPerCharDB = {
 							["amount"] = 11,
 						}, -- [1]
 					},
-					["id"] = "Player-11-09B497BC",
-					["first"] = 1452287700,
-					["healing"] = 0,
-					["damagetakenspells"] = {
-						["Ensnare"] = {
-							["crushing"] = 0,
-							["id"] = 48053,
-							["damage"] = 605,
-							["max"] = 212,
-							["name"] = "Ensnare",
-							["min"] = 194,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 3,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-						},
-						["Attack"] = {
-							["crushing"] = 0,
-							["id"] = 6603,
-							["damage"] = 8963,
-							["max"] = 1427,
-							["name"] = "Attack",
-							["min"] = 762,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 9,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-						},
-					},
-					["healed"] = {
-					},
-					["alertDamage"] = 0,
-					["name"] = "Executions",
-					["alertCount"] = 0,
-					["shielding"] = 0,
 					["healingspells"] = {
 					},
 					["alert"] = {
@@ -14940,19 +14940,11 @@ SkadaPerCharDB = {
 							["damage"] = 32221,
 						},
 					},
-					["maxhp"] = 30164,
-					["damagetaken"] = 5406,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[157722] = 40,
-								[77443] = 42,
-							},
-							["amount"] = 82,
-						},
-					},
-					["id"] = "Player-1169-06A1ACBD",
 					["first"] = 1452287701,
+					["damagetaken"] = 5406,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1ACBD",
+					["maxhp"] = 30164,
 					["healing"] = 513,
 					["damagetakenspells"] = {
 						["Shard Spray"] = {
@@ -14961,13 +14953,13 @@ SkadaPerCharDB = {
 							["damage"] = 3518,
 							["max"] = 3518,
 							["name"] = "Shard Spray",
-							["min"] = 3518,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 3518,
 							["absorbed"] = 0,
 						},
 						["Crystal Chains"] = {
@@ -14976,13 +14968,13 @@ SkadaPerCharDB = {
 							["damage"] = 1888,
 							["max"] = 1888,
 							["name"] = "Crystal Chains",
-							["min"] = 1888,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1888,
 							["absorbed"] = 0,
 						},
 					},
@@ -14998,7 +14990,15 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Bracnar",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[157722] = 40,
+								[77443] = 42,
+							},
+							["amount"] = 82,
+						},
+					},
 					["healingspells"] = {
 						["Chimaera Shot"] = {
 							["shielding"] = 0,
@@ -15111,19 +15111,11 @@ SkadaPerCharDB = {
 							["damage"] = 714,
 						},
 					},
-					["maxhp"] = 29967,
-					["damagetaken"] = 0,
-					["power"] = {
-						[12] = {
-							["spells"] = {
-								[115151] = 1,
-								[116694] = 1,
-							},
-							["amount"] = 2,
-						},
-					},
-					["id"] = "Player-3693-07D3EE12",
 					["first"] = 1452287701,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-3693-07D3EE12",
+					["maxhp"] = 29967,
 					["healing"] = 11712,
 					["damagetakenspells"] = {
 					},
@@ -15167,7 +15159,15 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Wwmonk",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[12] = {
+							["spells"] = {
+								[115151] = 1,
+								[116694] = 1,
+							},
+							["amount"] = 2,
+						},
+					},
 					["healingspells"] = {
 						["Chi Torpedo"] = {
 							["shielding"] = 0,
@@ -15343,12 +15343,11 @@ SkadaPerCharDB = {
 							["damage"] = 4879,
 						},
 					},
-					["maxhp"] = 29917,
-					["damagetaken"] = 1948,
-					["power"] = {
-					},
-					["id"] = "Player-1426-0754277A",
 					["first"] = 1452287702,
+					["damagetaken"] = 1948,
+					["shielding"] = 0,
+					["id"] = "Player-1426-0754277A",
+					["maxhp"] = 29917,
 					["healing"] = 4786,
 					["damagetakenspells"] = {
 						["Ensnare"] = {
@@ -15357,13 +15356,13 @@ SkadaPerCharDB = {
 							["damage"] = 184,
 							["max"] = 184,
 							["name"] = "Ensnare",
-							["min"] = 184,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 184,
 							["absorbed"] = 0,
 						},
 						["Attack"] = {
@@ -15372,13 +15371,13 @@ SkadaPerCharDB = {
 							["damage"] = 1764,
 							["max"] = 990,
 							["name"] = "Attack",
-							["min"] = 774,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 774,
 							["absorbed"] = 0,
 						},
 					},
@@ -15394,7 +15393,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Yaelle",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Ysera's Gift"] = {
 							["shielding"] = 0,
@@ -15457,6 +15457,8 @@ SkadaPerCharDB = {
 						},
 					},
 					["taken"] = 104286,
+					["done"] = 11516,
+					["htaken"] = 32779,
 					["htakenspell"] = {
 						["Seed Pod"] = {
 							["min"] = 281,
@@ -15467,8 +15469,6 @@ SkadaPerCharDB = {
 							["hits"] = 88,
 						},
 					},
-					["htaken"] = 32779,
-					["done"] = 11516,
 				},
 				["Crystalline Protector"] = {
 					["players"] = {
@@ -15489,10 +15489,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 140159,
+					["done"] = 5797,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 5797,
 				},
 			},
 			["power"] = {
@@ -15556,6 +15556,13 @@ SkadaPerCharDB = {
 							["uptime"] = 6,
 							["auratype"] = "BUFF",
 						},
+						["Avenger's Reprieve"] = {
+							["name"] = "Avenger's Reprieve",
+							["active"] = 0,
+							["id"] = 185676,
+							["uptime"] = 5,
+							["auratype"] = "BUFF",
+						},
 						["Avenger's Shield"] = {
 							["name"] = "Avenger's Shield",
 							["active"] = 0,
@@ -15568,13 +15575,6 @@ SkadaPerCharDB = {
 							["active"] = 0,
 							["id"] = 85416,
 							["uptime"] = 11,
-							["auratype"] = "BUFF",
-						},
-						["Avenger's Reprieve"] = {
-							["name"] = "Avenger's Reprieve",
-							["active"] = 0,
-							["id"] = 185676,
-							["uptime"] = 5,
 							["auratype"] = "BUFF",
 						},
 						["Dazed - Avenger's Shield"] = {
@@ -15697,21 +15697,11 @@ SkadaPerCharDB = {
 							["damage"] = 6156,
 						},
 					},
-					["maxhp"] = 37681,
-					["damagetaken"] = 20526,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[174040] = 1,
-								[105427] = 2,
-								[53595] = 5,
-								[98057] = 5,
-							},
-							["amount"] = 13,
-						},
-					},
-					["id"] = "Player-1426-07672C5E",
 					["first"] = 1452287661,
+					["damagetaken"] = 20526,
+					["shielding"] = 22978,
+					["id"] = "Player-1426-07672C5E",
+					["maxhp"] = 37681,
 					["healing"] = 23915,
 					["damagetakenspells"] = {
 						["Crystal Strike"] = {
@@ -15720,13 +15710,13 @@ SkadaPerCharDB = {
 							["damage"] = 3502,
 							["max"] = 3502,
 							["name"] = "Crystal Strike",
-							["min"] = 3502,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 3502,
 							["absorbed"] = 1860,
 						},
 						["Ensnare"] = {
@@ -15735,13 +15725,13 @@ SkadaPerCharDB = {
 							["damage"] = 168,
 							["max"] = 168,
 							["name"] = "Ensnare",
-							["min"] = 168,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 168,
 							["absorbed"] = 0,
 						},
 						["Attack"] = {
@@ -15750,13 +15740,13 @@ SkadaPerCharDB = {
 							["damage"] = 16856,
 							["max"] = 3260,
 							["name"] = "Attack",
-							["min"] = 185,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 3062,
 							["totalhits"] = 10,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 185,
 							["absorbed"] = 713,
 						},
 					},
@@ -15772,7 +15762,17 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Arestotle",
 					["alertCount"] = 0,
-					["shielding"] = 22978,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[174040] = 1,
+								[105427] = 2,
+								[53595] = 5,
+								[98057] = 5,
+							},
+							["amount"] = 13,
+						},
+					},
 					["healingspells"] = {
 						["Sacred Shield"] = {
 							["shielding"] = 11054,
@@ -15908,18 +15908,11 @@ SkadaPerCharDB = {
 							["damage"] = 44819,
 						},
 					},
-					["maxhp"] = 30164,
-					["damagetaken"] = 0,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[77443] = 56,
-							},
-							["amount"] = 56,
-						},
-					},
-					["id"] = "Player-1169-06A1ACBD",
 					["first"] = 1452287661,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1ACBD",
+					["maxhp"] = 30164,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -15935,7 +15928,14 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Bracnar",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[77443] = 56,
+							},
+							["amount"] = 56,
+						},
+					},
 					["healingspells"] = {
 						["Kill Shot"] = {
 							["shielding"] = 0,
@@ -16015,11 +16015,11 @@ SkadaPerCharDB = {
 							["uptime"] = 1,
 							["auratype"] = "BUFF",
 						},
-						["Mortal Wounds"] = {
-							["name"] = "Mortal Wounds",
+						["Warbringer"] = {
+							["name"] = "Warbringer",
 							["active"] = 0,
-							["id"] = 115804,
-							["uptime"] = 21,
+							["id"] = 7922,
+							["uptime"] = 2,
 							["auratype"] = "DEBUFF",
 						},
 						["Rend"] = {
@@ -16050,11 +16050,11 @@ SkadaPerCharDB = {
 							["uptime"] = 24,
 							["auratype"] = "BUFF",
 						},
-						["Warbringer"] = {
-							["name"] = "Warbringer",
+						["Mortal Wounds"] = {
+							["name"] = "Mortal Wounds",
 							["active"] = 0,
-							["id"] = 7922,
-							["uptime"] = 2,
+							["id"] = 115804,
+							["uptime"] = 21,
 							["auratype"] = "DEBUFF",
 						},
 						["Mark of Bleeding Hollow"] = {
@@ -16192,8 +16192,19 @@ SkadaPerCharDB = {
 							["damage"] = 3873,
 						},
 					},
-					["maxhp"] = 30115,
+					["first"] = 1452287665,
 					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-11-09B497BC",
+					["maxhp"] = 30115,
+					["healing"] = 0,
+					["damagetakenspells"] = {
+					},
+					["healed"] = {
+					},
+					["alertDamage"] = 0,
+					["name"] = "Executions",
+					["alertCount"] = 0,
 					["power"] = {
 						{
 							["spells"] = {
@@ -16203,17 +16214,6 @@ SkadaPerCharDB = {
 							["amount"] = 5,
 						}, -- [1]
 					},
-					["id"] = "Player-11-09B497BC",
-					["first"] = 1452287665,
-					["healing"] = 0,
-					["damagetakenspells"] = {
-					},
-					["healed"] = {
-					},
-					["alertDamage"] = 0,
-					["name"] = "Executions",
-					["alertCount"] = 0,
-					["shielding"] = 0,
 					["healingspells"] = {
 					},
 					["alert"] = {
@@ -16330,12 +16330,11 @@ SkadaPerCharDB = {
 							["damage"] = 12329,
 						},
 					},
-					["maxhp"] = 29917,
-					["damagetaken"] = 0,
-					["power"] = {
-					},
-					["id"] = "Player-1426-0754277A",
 					["first"] = 1452287668,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1426-0754277A",
+					["maxhp"] = 29917,
 					["healing"] = 3809,
 					["damagetakenspells"] = {
 					},
@@ -16358,7 +16357,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Yaelle",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Ysera's Gift"] = {
 							["shielding"] = 0,
@@ -16403,12 +16403,11 @@ SkadaPerCharDB = {
 					["damage"] = 0,
 					["damagespells"] = {
 					},
-					["maxhp"] = 29967,
-					["damagetaken"] = 0,
-					["power"] = {
-					},
-					["id"] = "Player-3693-07D3EE12",
 					["first"] = 1452287678,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-3693-07D3EE12",
+					["maxhp"] = 29967,
 					["healing"] = 9599,
 					["damagetakenspells"] = {
 					},
@@ -16424,7 +16423,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Wwmonk",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Soothing Mist"] = {
 							["shielding"] = 0,
@@ -16479,10 +16479,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 69240,
+					["done"] = 11202,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 11202,
 				},
 				["Crystalline Frayer"] = {
 					["players"] = {
@@ -16523,6 +16523,8 @@ SkadaPerCharDB = {
 						},
 					},
 					["taken"] = 71378,
+					["done"] = 1863,
+					["htaken"] = 10363,
 					["htakenspell"] = {
 						["Seed Pod"] = {
 							["min"] = 280,
@@ -16533,8 +16535,6 @@ SkadaPerCharDB = {
 							["hits"] = 28,
 						},
 					},
-					["htaken"] = 10363,
-					["done"] = 1863,
 				},
 				["Crystalline Keeper"] = {
 					["players"] = {
@@ -16567,10 +16567,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 151005,
+					["done"] = 7461,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 7461,
 				},
 			},
 			["power"] = {
@@ -16633,6 +16633,13 @@ SkadaPerCharDB = {
 							["uptime"] = 3,
 							["auratype"] = "DEBUFF",
 						},
+						["Avenger's Shield"] = {
+							["name"] = "Avenger's Shield",
+							["active"] = 0,
+							["id"] = 31935,
+							["uptime"] = 6,
+							["auratype"] = "DEBUFF",
+						},
 						["Avenger's Reprieve"] = {
 							["name"] = "Avenger's Reprieve",
 							["active"] = 0,
@@ -16646,13 +16653,6 @@ SkadaPerCharDB = {
 							["id"] = 85416,
 							["uptime"] = 1,
 							["auratype"] = "BUFF",
-						},
-						["Avenger's Shield"] = {
-							["name"] = "Avenger's Shield",
-							["active"] = 0,
-							["id"] = 31935,
-							["uptime"] = 6,
-							["auratype"] = "DEBUFF",
 						},
 						["Dazed - Avenger's Shield"] = {
 							["name"] = "Dazed - Avenger's Shield",
@@ -16762,20 +16762,11 @@ SkadaPerCharDB = {
 							["damage"] = 5622,
 						},
 					},
-					["maxhp"] = 37681,
-					["damagetaken"] = 15770,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[105427] = 2,
-								[98057] = 1,
-								[53595] = 4,
-							},
-							["amount"] = 7,
-						},
-					},
-					["id"] = "Player-1426-07672C5E",
 					["first"] = 1452287628,
+					["damagetaken"] = 15770,
+					["shielding"] = 14706,
+					["id"] = "Player-1426-07672C5E",
+					["maxhp"] = 37681,
 					["healing"] = 14886,
 					["damagetakenspells"] = {
 						["Chaotic Energy Burst"] = {
@@ -16784,13 +16775,13 @@ SkadaPerCharDB = {
 							["damage"] = 1342,
 							["max"] = 457,
 							["name"] = "Chaotic Energy Burst",
-							["min"] = 34,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 5,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 34,
 							["absorbed"] = 747,
 						},
 						["Brutal Strike"] = {
@@ -16799,13 +16790,13 @@ SkadaPerCharDB = {
 							["damage"] = 1793,
 							["max"] = 1793,
 							["name"] = "Brutal Strike",
-							["min"] = 1793,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 1196,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1793,
 							["absorbed"] = 0,
 						},
 						["Arcane Blast"] = {
@@ -16814,13 +16805,13 @@ SkadaPerCharDB = {
 							["damage"] = 6342,
 							["max"] = 6342,
 							["name"] = "Arcane Blast",
-							["min"] = 6342,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 6342,
 							["absorbed"] = 0,
 						},
 						["Attack"] = {
@@ -16829,13 +16820,13 @@ SkadaPerCharDB = {
 							["damage"] = 6293,
 							["max"] = 4339,
 							["name"] = "Attack",
-							["min"] = 1954,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 1303,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1954,
 							["absorbed"] = 0,
 						},
 					},
@@ -16851,7 +16842,16 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Arestotle",
 					["alertCount"] = 0,
-					["shielding"] = 14706,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[105427] = 2,
+								[98057] = 1,
+								[53595] = 4,
+							},
+							["amount"] = 7,
+						},
+					},
 					["healingspells"] = {
 						["Sacred Shield"] = {
 							["shielding"] = 7082,
@@ -16945,18 +16945,11 @@ SkadaPerCharDB = {
 					["damage"] = 0,
 					["damagespells"] = {
 					},
-					["maxhp"] = 29967,
-					["damagetaken"] = 0,
-					["power"] = {
-						[12] = {
-							["spells"] = {
-								[115151] = 1,
-							},
-							["amount"] = 1,
-						},
-					},
-					["id"] = "Player-3693-07D3EE12",
 					["first"] = 1452287629,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-3693-07D3EE12",
+					["maxhp"] = 29967,
 					["healing"] = 18472,
 					["damagetakenspells"] = {
 					},
@@ -17000,7 +16993,14 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Wwmonk",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[12] = {
+							["spells"] = {
+								[115151] = 1,
+							},
+							["amount"] = 1,
+						},
+					},
 					["healingspells"] = {
 						["Renewing Mist"] = {
 							["shielding"] = 0,
@@ -17138,12 +17138,11 @@ SkadaPerCharDB = {
 							["damage"] = 5139,
 						},
 					},
-					["maxhp"] = 29917,
-					["damagetaken"] = 757,
-					["power"] = {
-					},
-					["id"] = "Player-1426-0754277A",
 					["first"] = 1452287629,
+					["damagetaken"] = 757,
+					["shielding"] = 0,
+					["id"] = "Player-1426-0754277A",
+					["maxhp"] = 29917,
 					["healing"] = 2342,
 					["damagetakenspells"] = {
 						["Chaotic Energy Burst"] = {
@@ -17152,13 +17151,13 @@ SkadaPerCharDB = {
 							["damage"] = 757,
 							["max"] = 291,
 							["name"] = "Chaotic Energy Burst",
-							["min"] = 97,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 4,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 97,
 							["absorbed"] = 0,
 						},
 					},
@@ -17188,7 +17187,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Yaelle",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Ysera's Gift"] = {
 							["shielding"] = 0,
@@ -17381,8 +17381,34 @@ SkadaPerCharDB = {
 							["damage"] = 4089,
 						},
 					},
-					["maxhp"] = 30115,
+					["first"] = 1452287629,
 					["damagetaken"] = 671,
+					["shielding"] = 0,
+					["id"] = "Player-11-09B497BC",
+					["maxhp"] = 30115,
+					["healing"] = 0,
+					["damagetakenspells"] = {
+						["Chaotic Energy Burst"] = {
+							["crushing"] = 0,
+							["id"] = 47688,
+							["damage"] = 671,
+							["max"] = 288,
+							["name"] = "Chaotic Energy Burst",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 3,
+							["resisted"] = 0,
+							["min"] = 178,
+							["absorbed"] = 0,
+						},
+					},
+					["healed"] = {
+					},
+					["alertDamage"] = 0,
+					["name"] = "Executions",
+					["alertCount"] = 0,
 					["power"] = {
 						{
 							["spells"] = {
@@ -17393,32 +17419,6 @@ SkadaPerCharDB = {
 							["amount"] = -20,
 						}, -- [1]
 					},
-					["id"] = "Player-11-09B497BC",
-					["first"] = 1452287629,
-					["healing"] = 0,
-					["damagetakenspells"] = {
-						["Chaotic Energy Burst"] = {
-							["crushing"] = 0,
-							["id"] = 47688,
-							["damage"] = 671,
-							["max"] = 288,
-							["name"] = "Chaotic Energy Burst",
-							["min"] = 178,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 3,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-						},
-					},
-					["healed"] = {
-					},
-					["alertDamage"] = 0,
-					["name"] = "Executions",
-					["alertCount"] = 0,
-					["shielding"] = 0,
 					["healingspells"] = {
 					},
 					["alert"] = {
@@ -17511,18 +17511,11 @@ SkadaPerCharDB = {
 							["damage"] = 7894,
 						},
 					},
-					["maxhp"] = 30164,
-					["damagetaken"] = 249,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[77443] = 42,
-							},
-							["amount"] = 42,
-						},
-					},
-					["id"] = "Player-1169-06A1ACBD",
 					["first"] = 1452287629,
+					["damagetaken"] = 249,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1ACBD",
+					["maxhp"] = 30164,
 					["healing"] = 238,
 					["damagetakenspells"] = {
 						["Chaotic Energy Burst"] = {
@@ -17531,13 +17524,13 @@ SkadaPerCharDB = {
 							["damage"] = 249,
 							["max"] = 125,
 							["name"] = "Chaotic Energy Burst",
-							["min"] = 124,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 124,
 							["absorbed"] = 0,
 						},
 					},
@@ -17553,7 +17546,14 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Bracnar",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[77443] = 42,
+							},
+							["amount"] = 42,
+						},
+					},
 					["healingspells"] = {
 						["Kill Shot"] = {
 							["shielding"] = 0,
@@ -17636,10 +17636,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 157259,
+					["done"] = 8086,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 8086,
 				},
 				["Chaotic Rift"] = {
 					["players"] = {
@@ -17672,10 +17672,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 45305,
+					["done"] = 3019,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 3019,
 				},
 				["Azure Scale-Binder"] = {
 					["players"] = {
@@ -17702,10 +17702,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 70345,
+					["done"] = 6342,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 6342,
 				},
 			},
 			["power"] = {
