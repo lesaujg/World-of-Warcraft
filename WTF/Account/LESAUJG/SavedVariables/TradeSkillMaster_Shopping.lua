@@ -32,51 +32,51 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @savedSearches"] = {
 		{
 			["searchMode"] = "normal",
+			["lastSearch"] = 1452658017,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
+		}, -- [1]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1452657994,
+			["name"] = "arcane c",
+			["filter"] = "arcane c",
+		}, -- [2]
+		{
+			["searchMode"] = "normal",
 			["lastSearch"] = 1452570334,
 			["name"] = "Primal fire",
 			["filter"] = "Primal fire",
-		}, -- [1]
+		}, -- [3]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452570327,
 			["name"] = "Primal might",
 			["filter"] = "Primal might",
-		}, -- [2]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1452567136,
-			["name"] = "arcane c",
-			["filter"] = "arcane c",
-		}, -- [3]
+		}, -- [4]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452566206,
 			["name"] = "blackrock ore",
 			["filter"] = "blackrock ore",
-		}, -- [4]
+		}, -- [5]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452565837,
 			["name"] = "flask",
 			["filter"] = "flask",
-		}, -- [5]
+		}, -- [6]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452564980,
 			["name"] = "universal",
 			["filter"] = "universal",
-		}, -- [6]
+		}, -- [7]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452471365,
 			["name"] = "legion",
 			["filter"] = "legion",
-		}, -- [7]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1452471344,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
 		}, -- [8]
 		{
 			["searchMode"] = "normal",
