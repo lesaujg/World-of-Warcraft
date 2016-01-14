@@ -5,16 +5,19 @@ LM_OptionsDB = {
 	["excludedspells"] = {
 	},
 	["excludeNewMounts"] = {
+		false, -- [1]
 	},
 	["flagoverrides"] = {
 	},
 	["seenspells"] = {
 	},
 	["macro"] = {
+		"", -- [1]
 	},
 	["combatMacro"] = {
+		"", -- [1]
 	},
 	["copyTargetsMount"] = {
-		1, -- [1]
+		true, -- [1]
 	},
 }
