@@ -7,3 +7,4 @@ TradeSkillMaster_CoolDowns: disabled
 WeDontWipe: enabled
 WeDontWipe-WindwalkerMonk: enabled
 BaudManifest: enabled
+TradeSkillMaster_Destroying: disabled

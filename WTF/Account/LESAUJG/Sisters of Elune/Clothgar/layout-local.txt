@@ -1,8 +1,1 @@
 Version: 1
-Frame: TSMCraftingTradeSkillFrame
-FrameLevel: 47
-Anchor: TOP
-X: -251
-Y: -160
-W: 450
-H: 500

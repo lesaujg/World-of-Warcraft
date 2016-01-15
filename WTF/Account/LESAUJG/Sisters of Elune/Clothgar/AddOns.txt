@@ -145,7 +145,7 @@ MasterPlanA: disabled
 Pawn: disabled
 TradeSkillMaster_AppHelper: enabled
 TradeSkillMaster_CoolDowns: disabled
-TradeSkillMaster_Destroying: enabled
+TradeSkillMaster_Destroying: disabled
 DBM-GarrisonInvasions: disabled
 DBM-HellfireCitadel: disabled
 DBM-Party-Classic: disabled
