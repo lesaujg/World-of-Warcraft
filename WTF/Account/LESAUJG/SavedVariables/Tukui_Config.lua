@@ -81,6 +81,9 @@ TukuiConfigShared = {
 		["General"] = {
 			["UIScale"] = 0.64,
 		},
+		["Bags"] = {
+			["Enable"] = false,
+		},
 	},
 }
 TukuiConfigPerAccount = true

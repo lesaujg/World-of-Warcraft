@@ -8,16 +8,13 @@ VER 3 000000000000008E "BuyTradingPost" "INV_MISC_QUESTIONMARK"
 /run BuyMerchantItem(3) 
 END
 VER 3 0000000000000098 "Decursive" "INV_MISC_QUESTIONMARK"
-/stopcasting
-/cast [@mouseover,nomod,exists] Remove Corruption;  [@mouseover,exists,mod:ctrl] Cyclone; [@mouseover,exists,mod:shift] Remove Corruption
+/script DecursiveRootTable.Dcr:Println('No spell available')
 END
 VER 3 000000000000008A "Des" "ACHIEVEMENT_GUILDPERK_QUICK AND DEAD"
 /tar Des
 END
 VER 3 0000000000000097 "Entanglement" "INV_MISC_QUESTIONMARK"
 /tar entanglement
-END
-VER 3 000000000000008C "Garrison Report" "GARRISON_BUILDING_LUMBERMILL"
 END
 VER 3 0000000000000090 "GetKraken!" "ABILITY_HUNTER_EXPLOSIVESHOT"
 #showtooltip Flaming Spears
@@ -26,19 +23,6 @@ VER 3 0000000000000090 "GetKraken!" "ABILITY_HUNTER_EXPLOSIVESHOT"
 /cast [exists] Flaming Spears
 /cleartarget [dead]
 /run UIErrorsFrame:Clear()
-END
-VER 3 000000000000008F "Houlon" "SPELL_MAGIC_MANAGAIN"
-/tar Huolon
-/petattack
-/cast Arcane Shot
-END
-VER 3 0000000000000096 "Iskar" "INV_MISC_QUESTIONMARK"
-/target [@mouseover]
-/click ExtraActionButton1
-/targetlasttarget
-END
-VER 3 0000000000000089 "Kneel" "INV_MISC_QUESTIONMARK"
-/kneel
 END
 VER 3 000000000000008B "LiteMount" "INV_MISC_QUESTIONMARK"
 /cast [noswimming,mod:shift] Traveler's Tundra Mammoth
@@ -53,12 +37,13 @@ VER 3 0000000000000088 "MD+CS" "INV_MISC_QUESTIONMARK"
 /cast [@focus,help][@pet,nodead,exists] Misdirection
 END
 VER 3 0000000000000087 "RandomMount" "INV_MISC_QUESTIONMARK"
-/cast [mod:ctrl] Azure Water Strider
-/cast [mod:alt] Ashes of Al'ar
-/cast [noswimming,mod:shift] Traveler's Tundra Mammoth
-#showtooltip [nomod] White Ram
-/click [nobtn:2] LiteMount
-/click [btn:2] LiteMount RightButton
+/use [mod:ctrlshift]Grand Expedition Yak
+/use [mod:shift]Traveler's Tundra Mammoth
+/use [mod:ctrl]Azure Water Strider
+/use [mod:alt]Ashes of Al'ar
+#showtooltip [nomod]White Ram
+/click [nobtn:2]LiteMount
+/click [btn:2]LiteMount RightButton
 END
 VER 3 0000000000000095 "Salvage" "INV_MISC_QUESTIONMARK"
 /use Big Crate of Salvage
