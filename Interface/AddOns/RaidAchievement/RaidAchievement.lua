@@ -6,7 +6,7 @@ if GetLocale()=="deDE" or GetLocale()=="ruRU" or GetLocale()=="zhTW" or GetLocal
 end
 
 
-	raversion=6.225
+	raversion=6.226
 	local raverstiptext="alpha"
 	if string.len(raversion)==6 then
 		raverstiptext="beta"
@@ -148,7 +148,7 @@ end
 if ramsgwaiting>0 and racurrenttime>ramsgwaiting+1.5 then
   ramsgwaiting=0
   table.sort(racanannouncetable)
-  --тут аннонс и обнуление всех таблиц
+  --тут аннонс and обнуление всех таблиц
 
   local bililine=0
   for i,cc in ipairs(rabigmenuchatlisten) do 
@@ -463,7 +463,7 @@ t4:SetPoint("TOPLEFT",30,-207)
 
 	local atext="|cffff0000Important!|r\n\n|cff00ff00RaidAchievement|r need your help.\n\n|cff00ff00Highlight link and click  Ctrl+C  to copy|r"
   if GetLocale()=="ruRU" then
-    atext="|cffff0000Важно!|r\n\n|cff00ff00RaidAchievement|r нуждается в вашей поддержке.\n\n|cff00ff00Выделите ссылку и нажмите  Ctrl+C  чтобы скопировать|r"
+    atext="|cffff0000Важно!|r\n\n|cff00ff00RaidAchievement|r нуждается в вашей поддержке.\n\n|cff00ff00Выделите ссылку and нажмите  Ctrl+C  чтобы скопировать|r"
   end
   if GetLocale()=="itIT" then
     atext="|cff00ff00Messaggio importante!|r\n\nIl progetto |cff00ff00RaidAchievement|r forse sarà |cffff0000chiuso|r, per sappere cosa si può fare visita il sito\n\n|cff00ff00Evidenzia il link a clicca  Ctrl+C  per copiare|r"
@@ -2249,7 +2249,7 @@ if UnitInRaid("player")==nil and UnitInParty("player")==nil then
   --local text="|cff00ff00RaidAchievement|r |cffff0000important update:|r to track achieves from Cataclysm and WotLK you have to |cff00ff00download RaidAchievement_OldModules|r (from curse). |cff00ff00AchievementsReminder|r - is now a separate addon and will have new features soon, if you need it - take it from curse too."
   local text="|cff00ff00RaidAchievement|r > need your help, so addon will be available in |cff00ff00Warlords of Draenor|r too. More info: http://www.phoenixstyle.com/help"
   if GetLocale()=="ruRU" then
-    --text="|cff00ff00RaidAchievement|r |cffff0000важное обновление:|r для трекера достижений Катаклизма и ЛК требуется |cff00ff00скачать RaidAchievement_OldModules|r (с curse сайта). |cff00ff00AchievementsReminder|r - теперь отдельный независимый аддон, скоро с новыми функциями, если он вам тоже нужен - скачайте его отдельно."
+    --text="|cff00ff00RaidAchievement|r |cffff0000важное обновление:|r для трекера достижений Катаклизма and ЛК требуется |cff00ff00скачать RaidAchievement_OldModules|r (с curse сайта). |cff00ff00AchievementsReminder|r - теперь отдельный независимый аддон, скоро с новыми функциями, если он вам тоже нужен - скачайте его отдельно."
 	text="|cff00ff00RaidAchievement|r > требуется Ваша помощь, чтобы аддон продолжил свое существование в |cff00ff00Warlords of Draenor!|r Детальнее: http://www.phoenixstyle.com/help"
   end
   
@@ -2258,7 +2258,7 @@ if UnitInRaid("player")==nil and UnitInParty("player")==nil then
   if psdonaspanvar==nil then
     psdonaspanvar=1
   elseif psdonaspanvar and psdonaspanvar==1 then
-    psdonaspanvar=2 --2ка используется для аннонса РА после 20 декабря и после 1 января, только если 1 ВКЛ! иначе же РА сразу прыгает с 1 до 3
+    psdonaspanvar=2 --2ка используется для аннонса РА после 20 декабря and после 1 января, только если 1 ВКЛ! иначе же РА сразу прыгает с 1 до 3
   end
 else
   psnotproched=1

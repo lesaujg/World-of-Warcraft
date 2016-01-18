@@ -1,3 +1,6 @@
+v3.1.2
+*Fixed lag experienced during large group scans.
+
 v3.1.1
 *Fixed error which occurred when renaming a recent or favorite search.
 
