@@ -27,17 +27,3 @@ X: 0
 Y: 128
 W: 150
 H: 42
-Frame: _NPCScanOverlayKey
-FrameLevel: 24
-Anchor: CENTER
-X: -144
-Y: -77
-W: 201
-H: 80
-Frame: SavedInstancesDetachHeader
-FrameLevel: 100
-Anchor: CENTER
-X: 0
-Y: 0
-W: 237
-H: 305
