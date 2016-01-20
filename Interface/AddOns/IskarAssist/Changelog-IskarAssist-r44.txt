@@ -1,6 +1,14 @@
+2016-01-19  Tercioo  <Tercioo>
+
+[a07b2e50483f] [tip]
+* IskarAssist.lua, Libs/DF/cooltip.lua, Libs/DF/fw.lua:
+
+- framework update from v15 to v16.
+
+
 2016-01-02  Tercioo  <Tercioo>
 
-[f33d78296084] [tip]
+[f33d78296084]
 * IskarAssist.lua, Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua, Libs/DF/button.lua, Libs/DF/cooltip.lua, Libs/DF/dropdown.lua, Libs/DF/fw.lua, Libs/DF/label.lua, Libs/DF/normal_bar.lua, Libs/DF/panel.lua, Libs/DF/picture.lua, Libs/DF/slider.lua, Libs/DF/split_bar.lua, Libs/DF/textentry.lua, Libs/LibDBIcon-1.0/LibDBIcon-1.0.lua, Libs/LibDataBroker-1.1/LibDataBroker-1.1.lua, Libs/LibSharedMedia-3.0/lib.xml:
 
 - libs and framework updates.
@@ -231,13 +239,5 @@ v0.15 release
 * IskarAssist.lua:
 
 - Added Darkbindings aura.
-
-
-2015-07-13  Tercio  <Tercio>
-
-[9b761c5ff6b4]
-* IskarAssist.lua:
-
-- Added warlock dispell.
 
 
