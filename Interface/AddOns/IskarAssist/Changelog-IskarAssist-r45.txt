@@ -1,6 +1,14 @@
+2016-01-21  Tercioo  <Tercioo>
+
+[477f48d40ea2] [tip]
+* IskarAssist.lua, Libs/LibSharedMedia-3.0/LibSharedMedia-3.0.lua, Libs/LibSharedMedia-3.0/lib.xml:
+
+- Trying to fix a problem with a library.
+
+
 2016-01-19  Tercioo  <Tercioo>
 
-[a07b2e50483f] [tip]
+[a07b2e50483f]
 * IskarAssist.lua, Libs/DF/cooltip.lua, Libs/DF/fw.lua:
 
 - framework update from v15 to v16.
@@ -230,12 +238,6 @@ v0.15 release
 2015-07-16  Tercio  <Tercio>
 
 [b6eec63212cc]
-* IskarAssist.lua:
-
-- Added Darkbindings aura.
-
-
-[3ca3b642916f]
 * IskarAssist.lua:
 
 - Added Darkbindings aura.

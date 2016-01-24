@@ -1,6 +1,6 @@
 Version: 1
 Frame: BaudManifestDisplay1
-FrameLevel: 44
+FrameLevel: 63
 Anchor: RIGHT
 X: -88
 Y: -19
@@ -21,9 +21,9 @@ Y: 128
 W: 150
 H: 42
 Frame: TSMCraftingTradeSkillFrame
-FrameLevel: 65
-Anchor: TOPLEFT
-X: 35
-Y: -21
+FrameLevel: 80
+Anchor: TOP
+X: -285
+Y: -37
 W: 450
 H: 500

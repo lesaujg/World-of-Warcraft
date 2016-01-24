@@ -10,7 +10,7 @@ SkadaPerCharDB = {
 			["interrupts"] = 10,
 			["multistrikes"] = 6764,
 			["damagetaken"] = 109756511,
-			["mobtaken"] = 516682089,
+			["gotboss"] = true,
 			["damage"] = 512507450,
 			["players"] = {
 				{
@@ -667,18 +667,18 @@ SkadaPerCharDB = {
 							["name"] = "Killa",
 							["amount"] = 0,
 						},
-						["Player-76-08505E3B"] = {
-							["role"] = "DAMAGER",
-							["name"] = "Lucyanidelol-Sargeras",
-							["amount"] = 412882,
-							["class"] = "PRIEST",
-							["shielding"] = 25718,
-						},
 						["Creature-0-3133-1448-11610-92993-00001E982D"] = {
 							["shielding"] = 0,
 							["role"] = "NONE",
 							["name"] = "Mirror Image",
 							["amount"] = 0,
+						},
+						["Player-155-086D0D61"] = {
+							["role"] = "DAMAGER",
+							["name"] = "Cårliah-Deathwing",
+							["amount"] = 1101860,
+							["class"] = "DEATHKNIGHT",
+							["shielding"] = 20508,
 						},
 						["Creature-0-3133-1448-11610-19668-00001E97FA"] = {
 							["role"] = "NONE",
@@ -849,12 +849,12 @@ SkadaPerCharDB = {
 							["class"] = "WARRIOR",
 							["shielding"] = 0,
 						},
-						["Player-155-086D0D61"] = {
+						["Player-76-08505E3B"] = {
 							["role"] = "DAMAGER",
-							["name"] = "Cårliah-Deathwing",
-							["amount"] = 1101860,
-							["class"] = "DEATHKNIGHT",
-							["shielding"] = 20508,
+							["name"] = "Lucyanidelol-Sargeras",
+							["amount"] = 412882,
+							["class"] = "PRIEST",
+							["shielding"] = 25718,
 						},
 						["Pet-0-3133-1448-11610-26125-010255AA2B"] = {
 							["role"] = "NONE",
@@ -1206,18 +1206,18 @@ SkadaPerCharDB = {
 							["uptime"] = 0,
 							["auratype"] = "BUFF",
 						},
-						["Shadowfel Infusion"] = {
-							["name"] = "Shadowfel Infusion",
-							["active"] = 11,
-							["id"] = 184671,
-							["uptime"] = 381,
+						["Unleash Life"] = {
+							["name"] = "Unleash Life",
+							["active"] = 0,
+							["id"] = 73685,
+							["uptime"] = 3,
 							["auratype"] = "BUFF",
 						},
-						["Tidal Waves"] = {
-							["name"] = "Tidal Waves",
-							["active"] = 1,
-							["id"] = 53390,
-							["uptime"] = 365,
+						["Riptide"] = {
+							["name"] = "Riptide",
+							["active"] = 5,
+							["id"] = 61295,
+							["uptime"] = 399,
 							["auratype"] = "BUFF",
 						},
 						["Healing Stream Totem: Healing Stream Totem"] = {
@@ -1241,11 +1241,11 @@ SkadaPerCharDB = {
 							["uptime"] = 13,
 							["auratype"] = "BUFF",
 						},
-						["Riptide"] = {
-							["name"] = "Riptide",
-							["active"] = 5,
-							["id"] = 61295,
-							["uptime"] = 399,
+						["Tidal Waves"] = {
+							["name"] = "Tidal Waves",
+							["active"] = 1,
+							["id"] = 53390,
+							["uptime"] = 365,
 							["auratype"] = "BUFF",
 						},
 						["Ascendance"] = {
@@ -1255,11 +1255,11 @@ SkadaPerCharDB = {
 							["uptime"] = 15,
 							["auratype"] = "BUFF",
 						},
-						["Unleash Life"] = {
-							["name"] = "Unleash Life",
-							["active"] = 0,
-							["id"] = 73685,
-							["uptime"] = 3,
+						["Shadowfel Infusion"] = {
+							["name"] = "Shadowfel Infusion",
+							["active"] = 11,
+							["id"] = 184671,
+							["uptime"] = 381,
 							["auratype"] = "BUFF",
 						},
 						["Enhanced Unleash"] = {
@@ -2624,9 +2624,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1453234331.44001,
 									["amount"] = -51749,
+									["hp"] = 262185,
 									["spellid"] = 182076,
 									["srcname"] = "Mannoroth",
-									["hp"] = 262185,
 								}, -- [1]
 								{
 									["spellname"] = "Indigodawn dies",
@@ -2685,9 +2685,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1453234328.95809,
 									["amount"] = -132858,
+									["hp"] = 296245,
 									["spellid"] = 182077,
 									["srcname"] = "Mannoroth",
-									["hp"] = 296245,
 								}, -- [9]
 								{
 									["absorb"] = 0,
@@ -4195,7 +4195,7 @@ SkadaPerCharDB = {
 							["name"] = "Mirror Image",
 							["amount"] = 0,
 						},
-						["Creature-0-3133-1448-11610-92993-00011E982D"] = {
+						["Creature-0-3133-1448-11610-92993-00001E97F1"] = {
 							["shielding"] = 0,
 							["role"] = "NONE",
 							["name"] = "Mirror Image",
@@ -4207,7 +4207,7 @@ SkadaPerCharDB = {
 							["name"] = "Mirror Image",
 							["amount"] = 0,
 						},
-						["Creature-0-3133-1448-11610-92993-00009E97F1"] = {
+						["Creature-0-3133-1448-11610-92993-00019E982D"] = {
 							["shielding"] = 0,
 							["role"] = "NONE",
 							["name"] = "Mirror Image",
@@ -4226,13 +4226,13 @@ SkadaPerCharDB = {
 							["name"] = "Mirror Image",
 							["amount"] = 0,
 						},
-						["Creature-0-3133-1448-11610-92993-00019E982D"] = {
+						["Creature-0-3133-1448-11610-92993-00009E97F1"] = {
 							["shielding"] = 0,
 							["role"] = "NONE",
 							["name"] = "Mirror Image",
 							["amount"] = 0,
 						},
-						["Creature-0-3133-1448-11610-92993-00001E97F1"] = {
+						["Creature-0-3133-1448-11610-92993-00011E982D"] = {
 							["shielding"] = 0,
 							["role"] = "NONE",
 							["name"] = "Mirror Image",
@@ -4698,9 +4698,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1453234295.33108,
 									["amount"] = -39107,
+									["hp"] = 378133,
 									["spellid"] = 189280,
 									["srcname"] = "Mannoroth",
-									["hp"] = 378133,
 								}, -- [8]
 								{
 									["ts"] = 1453234295.50709,
@@ -5121,18 +5121,18 @@ SkadaPerCharDB = {
 							["class"] = "PALADIN",
 							["shielding"] = 0,
 						},
-						["Player-76-08505E3B"] = {
-							["role"] = "DAMAGER",
-							["name"] = "Lucyanidelol-Sargeras",
-							["amount"] = 687244,
-							["class"] = "PRIEST",
-							["shielding"] = 401083,
-						},
 						["Creature-0-3133-1448-11610-19668-00001E9876"] = {
 							["role"] = "NONE",
 							["name"] = "Shadowfiend",
 							["amount"] = 0,
 							["class"] = "PALADIN",
+							["shielding"] = 0,
+						},
+						["Player-155-086D0D61"] = {
+							["role"] = "DAMAGER",
+							["name"] = "Cårliah-Deathwing",
+							["amount"] = 11160,
+							["class"] = "DEATHKNIGHT",
 							["shielding"] = 0,
 						},
 						["Player-60-09BFA8CD"] = {
@@ -5216,12 +5216,12 @@ SkadaPerCharDB = {
 							["name"] = "Cat",
 							["amount"] = 0,
 						},
-						["Player-155-086D0D61"] = {
+						["Player-76-08505E3B"] = {
 							["role"] = "DAMAGER",
-							["name"] = "Cårliah-Deathwing",
-							["amount"] = 11160,
-							["class"] = "DEATHKNIGHT",
-							["shielding"] = 0,
+							["name"] = "Lucyanidelol-Sargeras",
+							["amount"] = 687244,
+							["class"] = "PRIEST",
+							["shielding"] = 401083,
 						},
 						["Pet-0-3133-1448-11610-26125-010255AA2B"] = {
 							["role"] = "NONE",
@@ -5764,17 +5764,17 @@ SkadaPerCharDB = {
 							["name"] = "Army of the Dead",
 							["amount"] = 0,
 						},
-						["Creature-0-3133-1448-11610-24207-00001E9738"] = {
+						["Creature-0-3133-1448-11610-24207-00009E9738"] = {
 							["shielding"] = 0,
 							["role"] = "NONE",
 							["name"] = "Army of the Dead",
-							["amount"] = 60,
+							["amount"] = 65,
 						},
-						["Creature-0-3133-1448-11610-24207-00009E9737"] = {
+						["Creature-0-3133-1448-11610-27893-00001E97C1"] = {
 							["shielding"] = 0,
 							["role"] = "NONE",
-							["name"] = "Army of the Dead",
-							["amount"] = 158,
+							["name"] = "Rune Weapon",
+							["amount"] = 2937,
 						},
 						["Creature-0-3133-1448-11610-27893-00001E9758"] = {
 							["shielding"] = 0,
@@ -5794,18 +5794,17 @@ SkadaPerCharDB = {
 							["name"] = "Rune Weapon",
 							["amount"] = 0,
 						},
-						["Player-55-088A11A3"] = {
-							["role"] = "TANK",
-							["name"] = "Lumilidor-Whisperwind",
-							["amount"] = 4645034,
-							["class"] = "DEATHKNIGHT",
-							["shielding"] = 2091693,
-						},
-						["Creature-0-3133-1448-11610-24207-00001E9737"] = {
+						["Creature-0-3133-1448-11610-24207-00001E9738"] = {
 							["shielding"] = 0,
 							["role"] = "NONE",
 							["name"] = "Army of the Dead",
-							["amount"] = 143,
+							["amount"] = 60,
+						},
+						["Creature-0-3133-1448-11610-24207-00009E9737"] = {
+							["shielding"] = 0,
+							["role"] = "NONE",
+							["name"] = "Army of the Dead",
+							["amount"] = 158,
 						},
 						["Creature-0-3133-1448-11610-24207-00001E9736"] = {
 							["shielding"] = 0,
@@ -5813,17 +5812,18 @@ SkadaPerCharDB = {
 							["name"] = "Army of the Dead",
 							["amount"] = 86,
 						},
-						["Creature-0-3133-1448-11610-27893-00001E97C1"] = {
-							["shielding"] = 0,
-							["role"] = "NONE",
-							["name"] = "Rune Weapon",
-							["amount"] = 2937,
-						},
-						["Creature-0-3133-1448-11610-24207-00009E9738"] = {
+						["Creature-0-3133-1448-11610-24207-00001E9737"] = {
 							["shielding"] = 0,
 							["role"] = "NONE",
 							["name"] = "Army of the Dead",
-							["amount"] = 65,
+							["amount"] = 143,
+						},
+						["Player-55-088A11A3"] = {
+							["role"] = "TANK",
+							["name"] = "Lumilidor-Whisperwind",
+							["amount"] = 4645034,
+							["class"] = "DEATHKNIGHT",
+							["shielding"] = 2091693,
 						},
 						["Creature-0-3133-1448-11610-27893-00001E981C"] = {
 							["shielding"] = 0,
@@ -8001,9 +8001,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1453233999.07711,
 									["amount"] = -148468,
+									["hp"] = 279452,
 									["spellid"] = 181102,
 									["srcname"] = "Shamizard-Sargeras",
-									["hp"] = 279452,
 								}, -- [11]
 								{
 									["absorb"] = 0,
@@ -8016,16 +8016,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1453233999.17813,
 									["amount"] = -144508,
+									["srcname"] = "Corbervo-Dalaran",
 									["spellid"] = 181102,
 									["hp"] = 136839,
-									["srcname"] = "Corbervo-Dalaran",
 								}, -- [13]
 								{
 									["ts"] = 1453233999.33614,
 									["amount"] = -146365,
+									["hp"] = 1,
 									["spellid"] = 181102,
 									["srcname"] = "Galm-Stormrage",
-									["hp"] = 1,
 								}, -- [14]
 								{
 									["spellname"] = "Ajay dies",
@@ -8735,20 +8735,20 @@ SkadaPerCharDB = {
 							["glancing"] = 0,
 							["absorbed"] = 0,
 						},
-						["Fel Hellfire"] = {
+						["Felseeker"] = {
 							["crushing"] = 0,
-							["id"] = 181192,
-							["damage"] = 1103929,
-							["max"] = 54572,
-							["name"] = "Fel Hellfire",
-							["min"] = 15186,
+							["id"] = 181738,
+							["damage"] = 272577,
+							["max"] = 135878,
+							["name"] = "Felseeker",
+							["min"] = 3929,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
-							["totalhits"] = 22,
+							["totalhits"] = 3,
 							["resisted"] = 0,
 							["glancing"] = 0,
-							["absorbed"] = 43485,
+							["absorbed"] = 223634,
 						},
 						["Spirit Link"] = {
 							["crushing"] = 0,
@@ -8765,20 +8765,20 @@ SkadaPerCharDB = {
 							["glancing"] = 0,
 							["absorbed"] = 0,
 						},
-						["Mannoroth's Gaze"] = {
+						["Fel Hellfire"] = {
 							["crushing"] = 0,
-							["id"] = 181617,
-							["damage"] = 316813,
-							["max"] = 96018,
-							["name"] = "Mannoroth's Gaze",
-							["min"] = 42760,
+							["id"] = 181192,
+							["damage"] = 1103929,
+							["max"] = 54572,
+							["name"] = "Fel Hellfire",
+							["min"] = 15186,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
-							["totalhits"] = 5,
+							["totalhits"] = 22,
 							["resisted"] = 0,
 							["glancing"] = 0,
-							["absorbed"] = 105410,
+							["absorbed"] = 43485,
 						},
 						["Mark Eruption"] = {
 							["crushing"] = 0,
@@ -8810,20 +8810,20 @@ SkadaPerCharDB = {
 							["glancing"] = 0,
 							["absorbed"] = 40676,
 						},
-						["Felseeker"] = {
+						["Mannoroth's Gaze"] = {
 							["crushing"] = 0,
-							["id"] = 181738,
-							["damage"] = 272577,
-							["max"] = 135878,
-							["name"] = "Felseeker",
-							["min"] = 3929,
+							["id"] = 181617,
+							["damage"] = 316813,
+							["max"] = 96018,
+							["name"] = "Mannoroth's Gaze",
+							["min"] = 42760,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
-							["totalhits"] = 3,
+							["totalhits"] = 5,
 							["resisted"] = 0,
 							["glancing"] = 0,
-							["absorbed"] = 223634,
+							["absorbed"] = 105410,
 						},
 					},
 					["healed"] = {
@@ -10152,11 +10152,11 @@ SkadaPerCharDB = {
 							["uptime"] = 0,
 							["auratype"] = "BUFF",
 						},
-						["Detonation"] = {
-							["name"] = "Detonation",
+						["Draenic Agility Potion"] = {
+							["name"] = "Draenic Agility Potion",
 							["active"] = 0,
-							["id"] = 177067,
-							["uptime"] = 80,
+							["id"] = 156423,
+							["uptime"] = 25,
 							["auratype"] = "BUFF",
 						},
 						["Countenance of Tyranny"] = {
@@ -10166,11 +10166,11 @@ SkadaPerCharDB = {
 							["uptime"] = 154,
 							["auratype"] = "BUFF",
 						},
-						["Draenic Agility Potion"] = {
-							["name"] = "Draenic Agility Potion",
+						["Thrill of the Hunt"] = {
+							["name"] = "Thrill of the Hunt",
 							["active"] = 0,
-							["id"] = 156423,
-							["uptime"] = 25,
+							["id"] = 34720,
+							["uptime"] = 226,
 							["auratype"] = "BUFF",
 						},
 						["Detonating"] = {
@@ -10201,11 +10201,11 @@ SkadaPerCharDB = {
 							["uptime"] = 294,
 							["auratype"] = "BUFF",
 						},
-						["Thrill of the Hunt"] = {
-							["name"] = "Thrill of the Hunt",
+						["Detonation"] = {
+							["name"] = "Detonation",
 							["active"] = 0,
-							["id"] = 34720,
-							["uptime"] = 226,
+							["id"] = 177067,
+							["uptime"] = 80,
 							["auratype"] = "BUFF",
 						},
 						["Barrage"] = {
@@ -11324,12 +11324,11 @@ SkadaPerCharDB = {
 							["class"] = "PALADIN",
 							["shielding"] = 0,
 						},
-						["Player-60-093E9A8C"] = {
-							["role"] = "DAMAGER",
-							["name"] = "Cliffer-Stormrage",
-							["amount"] = 660060,
-							["class"] = "DRUID",
-							["shielding"] = 62178,
+						["Creature-0-3133-1448-11610-92993-00011E98B0"] = {
+							["shielding"] = 0,
+							["role"] = "NONE",
+							["name"] = "Mirror Image",
+							["amount"] = 0,
 						},
 						["Creature-0-3133-1448-11610-94925-00001E98B4"] = {
 							["shielding"] = 0,
@@ -11351,7 +11350,7 @@ SkadaPerCharDB = {
 							["class"] = "WARLOCK",
 							["shielding"] = 67732,
 						},
-						["Creature-0-3133-1448-11610-92993-00011E98B0"] = {
+						["Creature-0-3133-1448-11610-92993-00019E98B0"] = {
 							["shielding"] = 0,
 							["role"] = "NONE",
 							["name"] = "Mirror Image",
@@ -11376,11 +11375,12 @@ SkadaPerCharDB = {
 							["name"] = "Killa",
 							["amount"] = 0,
 						},
-						["Creature-0-3133-1448-11610-92993-00019E98B0"] = {
-							["shielding"] = 0,
-							["role"] = "NONE",
-							["name"] = "Mirror Image",
-							["amount"] = 0,
+						["Player-60-093E9A8C"] = {
+							["role"] = "DAMAGER",
+							["name"] = "Cliffer-Stormrage",
+							["amount"] = 660060,
+							["class"] = "DRUID",
+							["shielding"] = 62178,
 						},
 						["Player-67-09193CB5"] = {
 							["role"] = "DAMAGER",
@@ -11762,18 +11762,18 @@ SkadaPerCharDB = {
 							["uptime"] = 1,
 							["auratype"] = "BUFF",
 						},
-						["Thrill of the Hunt"] = {
-							["name"] = "Thrill of the Hunt",
-							["active"] = 1,
-							["id"] = 34720,
-							["uptime"] = 193,
-							["auratype"] = "BUFF",
-						},
 						["Draenic Agility Potion"] = {
 							["name"] = "Draenic Agility Potion",
 							["active"] = 0,
 							["id"] = 156423,
 							["uptime"] = 25,
+							["auratype"] = "BUFF",
+						},
+						["Mirror Image: Felstorm"] = {
+							["name"] = "Mirror Image: Felstorm",
+							["active"] = 28,
+							["id"] = 184279,
+							["uptime"] = 403,
 							["auratype"] = "BUFF",
 						},
 						["Explosive Trap"] = {
@@ -11790,11 +11790,11 @@ SkadaPerCharDB = {
 							["uptime"] = 262,
 							["auratype"] = "BUFF",
 						},
-						["Mirror Image: Felstorm"] = {
-							["name"] = "Mirror Image: Felstorm",
-							["active"] = 28,
-							["id"] = 184279,
-							["uptime"] = 403,
+						["Thrill of the Hunt"] = {
+							["name"] = "Thrill of the Hunt",
+							["active"] = 1,
+							["id"] = 34720,
+							["uptime"] = 193,
 							["auratype"] = "BUFF",
 						},
 						["Barrage"] = {
@@ -14602,9 +14602,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1453234347.12303,
 									["amount"] = -22079,
+									["hp"] = 336201,
 									["spellid"] = 182031,
 									["srcname"] = "Mannoroth",
-									["hp"] = 336201,
 								}, -- [3]
 								{
 									["spellid"] = 182011,
@@ -14621,9 +14621,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1453234341.29406,
 									["amount"] = -38287,
+									["hp"] = 374107,
 									["spellid"] = 189280,
 									["srcname"] = "Mannoroth",
-									["hp"] = 374107,
 								}, -- [6]
 								{
 									["absorb"] = 0,
@@ -14652,23 +14652,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1453234343.7631,
 									["amount"] = -35225,
+									["hp"] = 405895,
 									["spellid"] = 189280,
 									["srcname"] = "Mannoroth",
-									["hp"] = 405895,
 								}, -- [10]
 								{
 									["ts"] = 1453234343.76311,
 									["amount"] = -35752,
+									["hp"] = 370143,
 									["spellid"] = 189280,
 									["srcname"] = "Mannoroth",
-									["hp"] = 370143,
 								}, -- [11]
 								{
 									["ts"] = 1453234343.83112,
 									["amount"] = -34761,
+									["hp"] = 335382,
 									["spellid"] = 189280,
 									["srcname"] = "Mannoroth",
-									["hp"] = 335382,
 								}, -- [12]
 								{
 									["absorb"] = 0,
@@ -15550,23 +15550,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1453233999.07804,
 									["amount"] = -147327,
+									["hp"] = 295053,
 									["spellid"] = 181102,
 									["srcname"] = "Shamizard-Sargeras",
-									["hp"] = 295053,
 								}, -- [4]
 								{
 									["ts"] = 1453233999.17905,
 									["amount"] = -147906,
+									["hp"] = 147147,
 									["spellid"] = 181102,
 									["srcname"] = "Corbervo-Dalaran",
-									["hp"] = 147147,
 								}, -- [5]
 								{
 									["ts"] = 1453233999.33706,
 									["amount"] = -148108,
+									["hp"] = 1,
 									["spellid"] = 181102,
 									["srcname"] = "Galm-Stormrage",
-									["hp"] = 1,
 								}, -- [6]
 								{
 									["spellname"] = "Ekate dies",
@@ -15575,10 +15575,10 @@ SkadaPerCharDB = {
 									["hp"] = 0,
 								}, -- [7]
 								{
-									["spellid"] = 95750,
-									["ts"] = 1453234015.755,
-									["srcname"] = "Galm-Stormrage",
 									["hp"] = 0,
+									["ts"] = 1453234015.755,
+									["spellid"] = 95750,
+									["srcname"] = "Galm-Stormrage",
 								}, -- [8]
 								["pos"] = 9,
 							},
@@ -16877,11 +16877,11 @@ SkadaPerCharDB = {
 							["class"] = "SHAMAN",
 							["shielding"] = 0,
 						},
-						["Player-76-08505E3B"] = {
-							["role"] = "DAMAGER",
-							["name"] = "Lucyanidelol-Sargeras",
+						["Creature-0-3133-1448-11610-63508-00001E9805"] = {
+							["role"] = "NONE",
+							["name"] = "Xuen",
 							["amount"] = 0,
-							["class"] = "PRIEST",
+							["class"] = "WARRIOR",
 							["shielding"] = 0,
 						},
 						["Player-3683-07D250BE"] = {
@@ -16898,11 +16898,11 @@ SkadaPerCharDB = {
 							["class"] = "MONK",
 							["shielding"] = 0,
 						},
-						["Creature-0-3133-1448-11610-63508-00001E9805"] = {
-							["role"] = "NONE",
-							["name"] = "Xuen",
-							["amount"] = 0,
-							["class"] = "WARRIOR",
+						["Player-155-086D0D61"] = {
+							["role"] = "DAMAGER",
+							["name"] = "Cårliah-Deathwing",
+							["amount"] = 4729,
+							["class"] = "DEATHKNIGHT",
 							["shielding"] = 0,
 						},
 						["Player-153-089E3959"] = {
@@ -16961,11 +16961,11 @@ SkadaPerCharDB = {
 							["class"] = "MONK",
 							["shielding"] = 0,
 						},
-						["Player-155-086D0D61"] = {
+						["Player-76-08505E3B"] = {
 							["role"] = "DAMAGER",
-							["name"] = "Cårliah-Deathwing",
-							["amount"] = 4729,
-							["class"] = "DEATHKNIGHT",
+							["name"] = "Lucyanidelol-Sargeras",
+							["amount"] = 0,
+							["class"] = "PRIEST",
 							["shielding"] = 0,
 						},
 						["Player-71-075CDAEA"] = {
@@ -17264,15 +17264,15 @@ SkadaPerCharDB = {
 							["max"] = 13678,
 							["damage"] = 998559,
 						},
-						["Frostfire Bolt"] = {
-							["min"] = 36475,
-							["multistrike"] = 31,
-							["critical"] = 26,
-							["hit"] = 7,
-							["totalhits"] = 33,
-							["id"] = 44614,
-							["max"] = 132935,
-							["damage"] = 3455053,
+						["Frost Nova"] = {
+							["min"] = 1679,
+							["multistrike"] = 10,
+							["critical"] = 4,
+							["hit"] = 13,
+							["totalhits"] = 17,
+							["id"] = 122,
+							["max"] = 3980,
+							["damage"] = 44130,
 						},
 						["Nithramus"] = {
 							["min"] = 37302,
@@ -17300,15 +17300,15 @@ SkadaPerCharDB = {
 							["max"] = 41773,
 							["damage"] = 1842587,
 						},
-						["Ice Lance"] = {
-							["min"] = 2604,
-							["multistrike"] = 161,
-							["critical"] = 61,
-							["hit"] = 77,
-							["totalhits"] = 138,
-							["id"] = 30455,
-							["max"] = 95624,
-							["damage"] = 5439732,
+						["Frostfire Bolt"] = {
+							["min"] = 36475,
+							["multistrike"] = 31,
+							["critical"] = 26,
+							["hit"] = 7,
+							["totalhits"] = 33,
+							["id"] = 44614,
+							["max"] = 132935,
+							["damage"] = 3455053,
 						},
 						["Icicle"] = {
 							["min"] = 1892,
@@ -17328,15 +17328,15 @@ SkadaPerCharDB = {
 							["max"] = 5777,
 							["damage"] = 18777,
 						},
-						["Frost Nova"] = {
-							["min"] = 1679,
-							["multistrike"] = 10,
-							["critical"] = 4,
-							["hit"] = 13,
-							["totalhits"] = 17,
-							["id"] = 122,
-							["max"] = 3980,
-							["damage"] = 44130,
+						["Ice Lance"] = {
+							["min"] = 2604,
+							["multistrike"] = 161,
+							["critical"] = 61,
+							["hit"] = 77,
+							["totalhits"] = 138,
+							["id"] = 30455,
+							["max"] = 95624,
+							["damage"] = 5439732,
 						},
 					},
 					["maxhp"] = 463800,
@@ -17699,19 +17699,19 @@ SkadaPerCharDB = {
 							["uptime"] = 169,
 							["auratype"] = "BUFF",
 						},
-						["Displacer Beast"] = {
-							["name"] = "Displacer Beast",
+						["Survival Instincts"] = {
+							["name"] = "Survival Instincts",
 							["active"] = 0,
-							["id"] = 137452,
-							["uptime"] = 4,
+							["id"] = 61336,
+							["uptime"] = 12,
 							["auratype"] = "BUFF",
 						},
-						["Dash"] = {
-							["name"] = "Dash",
+						["Thrash"] = {
+							["name"] = "Thrash",
 							["active"] = 0,
-							["id"] = 1850,
-							["uptime"] = 15,
-							["auratype"] = "BUFF",
+							["id"] = 106830,
+							["uptime"] = 51,
+							["auratype"] = "DEBUFF",
 						},
 						["Rip"] = {
 							["name"] = "Rip",
@@ -17727,12 +17727,12 @@ SkadaPerCharDB = {
 							["uptime"] = 202,
 							["auratype"] = "BUFF",
 						},
-						["Thrash"] = {
-							["name"] = "Thrash",
+						["Dash"] = {
+							["name"] = "Dash",
 							["active"] = 0,
-							["id"] = 106830,
-							["uptime"] = 51,
-							["auratype"] = "DEBUFF",
+							["id"] = 1850,
+							["uptime"] = 15,
+							["auratype"] = "BUFF",
 						},
 						["Rejuvenation"] = {
 							["name"] = "Rejuvenation",
@@ -17741,11 +17741,11 @@ SkadaPerCharDB = {
 							["uptime"] = 111,
 							["auratype"] = "BUFF",
 						},
-						["Survival Instincts"] = {
-							["name"] = "Survival Instincts",
+						["Displacer Beast"] = {
+							["name"] = "Displacer Beast",
 							["active"] = 0,
-							["id"] = 61336,
-							["uptime"] = 12,
+							["id"] = 137452,
+							["uptime"] = 4,
 							["auratype"] = "BUFF",
 						},
 						["Incarnation: King of the Jungle"] = {
@@ -19233,11 +19233,11 @@ SkadaPerCharDB = {
 						["Doom Lord Asrogol"] = 465598,
 					},
 					["auras"] = {
-						["Mirror Image: Felstorm"] = {
-							["name"] = "Mirror Image: Felstorm",
-							["active"] = 24,
-							["id"] = 184279,
-							["uptime"] = 405,
+						["Trueshot Aura"] = {
+							["name"] = "Trueshot Aura",
+							["active"] = 0,
+							["id"] = 19506,
+							["uptime"] = 0,
 							["auratype"] = "BUFF",
 						},
 						["Exhaustion"] = {
@@ -19247,11 +19247,11 @@ SkadaPerCharDB = {
 							["uptime"] = 51,
 							["auratype"] = "DEBUFF",
 						},
-						["Trueshot Aura"] = {
-							["name"] = "Trueshot Aura",
+						["Bombardment"] = {
+							["name"] = "Bombardment",
 							["active"] = 0,
-							["id"] = 19506,
-							["uptime"] = 0,
+							["id"] = 82921,
+							["uptime"] = 14,
 							["auratype"] = "BUFF",
 						},
 						["Rapid Fire"] = {
@@ -19275,11 +19275,11 @@ SkadaPerCharDB = {
 							["uptime"] = 240,
 							["auratype"] = "BUFF",
 						},
-						["Bombardment"] = {
-							["name"] = "Bombardment",
-							["active"] = 0,
-							["id"] = 82921,
-							["uptime"] = 14,
+						["Mirror Image: Felstorm"] = {
+							["name"] = "Mirror Image: Felstorm",
+							["active"] = 24,
+							["id"] = 184279,
+							["uptime"] = 405,
 							["auratype"] = "BUFF",
 						},
 						["Barrage"] = {
@@ -19517,9 +19517,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1453234313.12803,
 									["amount"] = -25393,
+									["hp"] = 414246,
 									["spellid"] = 182088,
 									["srcname"] = "Mannoroth",
-									["hp"] = 414246,
 								}, -- [3]
 								{
 									["absorb"] = 0,
@@ -19540,9 +19540,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1453234314.08406,
 									["amount"] = -25928,
+									["hp"] = 406269,
 									["spellid"] = 182088,
 									["srcname"] = "Mannoroth",
-									["hp"] = 406269,
 								}, -- [6]
 								{
 									["absorb"] = 0,
@@ -19555,16 +19555,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1453234315.11408,
 									["amount"] = -37765,
+									["hp"] = 396655,
 									["spellid"] = 182088,
 									["srcname"] = "Mannoroth",
-									["hp"] = 396655,
 								}, -- [8]
 								{
 									["ts"] = 1453234316.06909,
 									["amount"] = -37786,
+									["hp"] = 358869,
 									["spellid"] = 182088,
 									["srcname"] = "Mannoroth",
-									["hp"] = 358869,
 								}, -- [9]
 								{
 									["spellname"] = "Starkeeperz dies",
@@ -19607,9 +19607,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1453234312.03015,
 									["amount"] = -12994,
+									["hp"] = 427946,
 									["spellid"] = 182088,
 									["srcname"] = "Mannoroth",
-									["hp"] = 427946,
 								}, -- [15]
 								["pos"] = 11,
 							},
@@ -19939,11 +19939,11 @@ SkadaPerCharDB = {
 							["uptime"] = 214,
 							["auratype"] = "BUFF",
 						},
-						["Combo Breaker: Blackout Kick"] = {
-							["name"] = "Combo Breaker: Blackout Kick",
+						["Energizing Brew"] = {
+							["name"] = "Energizing Brew",
 							["active"] = 0,
-							["id"] = 116768,
-							["uptime"] = 80,
+							["id"] = 115288,
+							["uptime"] = 12,
 							["auratype"] = "BUFF",
 						},
 						["Storm, Earth, and Fire"] = {
@@ -19953,11 +19953,11 @@ SkadaPerCharDB = {
 							["uptime"] = 13,
 							["auratype"] = "BUFF",
 						},
-						["Spirit Shift"] = {
-							["name"] = "Spirit Shift",
+						["Combo Breaker: Blackout Kick"] = {
+							["name"] = "Combo Breaker: Blackout Kick",
 							["active"] = 0,
-							["id"] = 184293,
-							["uptime"] = 54,
+							["id"] = 116768,
+							["uptime"] = 80,
 							["auratype"] = "BUFF",
 						},
 						["Exhaustion"] = {
@@ -20044,11 +20044,11 @@ SkadaPerCharDB = {
 							["uptime"] = 335,
 							["auratype"] = "DEBUFF",
 						},
-						["Energizing Brew"] = {
-							["name"] = "Energizing Brew",
+						["Spirit Shift"] = {
+							["name"] = "Spirit Shift",
 							["active"] = 0,
-							["id"] = 115288,
-							["uptime"] = 12,
+							["id"] = 184293,
+							["uptime"] = 54,
 							["auratype"] = "BUFF",
 						},
 						["Storm Spirit: Storm, Earth, and Fire"] = {
@@ -20367,16 +20367,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1453234323.78103,
 									["amount"] = -39446,
+									["hp"] = 395734,
 									["spellid"] = 189280,
 									["srcname"] = "Mannoroth",
-									["hp"] = 395734,
 								}, -- [3]
 								{
 									["ts"] = 1453234323.78104,
 									["amount"] = -39664,
+									["hp"] = 356070,
 									["spellid"] = 189280,
 									["srcname"] = "Mannoroth",
-									["hp"] = 356070,
 								}, -- [4]
 								{
 									["absorb"] = 0,
@@ -20429,9 +20429,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1453234325.27611,
 									["amount"] = -390203,
+									["hp"] = 1,
 									["spellid"] = 185847,
 									["srcname"] = "Mannoroth",
-									["hp"] = 1,
 								}, -- [11]
 								{
 									["spellname"] = "Xinsu dies",
@@ -22464,11 +22464,11 @@ SkadaPerCharDB = {
 							["class"] = "HUNTER",
 							["role"] = "DAMAGER",
 						},
-						["Optistriker-Gorgonnash"] = {
-							["taken"] = 0,
-							["done"] = 406140,
-							["class"] = "DRUID",
-							["role"] = "HEALER",
+						["Lumilidor-Whisperwind"] = {
+							["taken"] = 213047,
+							["done"] = 0,
+							["class"] = "DEATHKNIGHT",
+							["role"] = "TANK",
 						},
 						["Salëën-Moonrunner"] = {
 							["taken"] = 1408523,
@@ -22482,11 +22482,11 @@ SkadaPerCharDB = {
 							["class"] = "MAGE",
 							["role"] = "DAMAGER",
 						},
-						["Chrisxd-Tichondrius"] = {
-							["taken"] = 3424097,
-							["done"] = 249214,
-							["class"] = "DEATHKNIGHT",
-							["role"] = "DAMAGER",
+						["Optistriker-Gorgonnash"] = {
+							["taken"] = 0,
+							["done"] = 406140,
+							["class"] = "DRUID",
+							["role"] = "HEALER",
 						},
 						["Shamizard-Sargeras"] = {
 							["taken"] = 36509,
@@ -22590,11 +22590,11 @@ SkadaPerCharDB = {
 							["class"] = "WARLOCK",
 							["role"] = "DAMAGER",
 						},
-						["Lumilidor-Whisperwind"] = {
-							["taken"] = 213047,
-							["done"] = 0,
+						["Chrisxd-Tichondrius"] = {
+							["taken"] = 3424097,
+							["done"] = 249214,
 							["class"] = "DEATHKNIGHT",
-							["role"] = "TANK",
+							["role"] = "DAMAGER",
 						},
 						["Cliffer-Stormrage"] = {
 							["taken"] = 1387099,
@@ -22686,11 +22686,11 @@ SkadaPerCharDB = {
 							["class"] = "PRIEST",
 							["role"] = "HEALER",
 						},
-						["Indigodawn-Dalaran"] = {
-							["taken"] = 40614,
-							["done"] = 154515,
-							["class"] = "MONK",
-							["role"] = "HEALER",
+						["Amånda-Hellscream"] = {
+							["taken"] = 210294,
+							["done"] = 202544,
+							["class"] = "SHAMAN",
+							["role"] = "DAMAGER",
 						},
 						["Xinsu-Stormrage"] = {
 							["taken"] = 219408,
@@ -22704,11 +22704,11 @@ SkadaPerCharDB = {
 							["class"] = "DRUID",
 							["role"] = "HEALER",
 						},
-						["Slamm-Sargeras"] = {
-							["taken"] = 9599578,
-							["done"] = 100017,
-							["class"] = "HUNTER",
-							["role"] = "DAMAGER",
+						["Indigodawn-Dalaran"] = {
+							["taken"] = 40614,
+							["done"] = 154515,
+							["class"] = "MONK",
+							["role"] = "HEALER",
 						},
 						["Starkeeperz-Shu'halo"] = {
 							["taken"] = 3480347,
@@ -22770,10 +22770,10 @@ SkadaPerCharDB = {
 							["class"] = "HUNTER",
 							["role"] = "DAMAGER",
 						},
-						["Amånda-Hellscream"] = {
-							["taken"] = 210294,
-							["done"] = 202544,
-							["class"] = "SHAMAN",
+						["Slamm-Sargeras"] = {
+							["taken"] = 9599578,
+							["done"] = 100017,
+							["class"] = "HUNTER",
 							["role"] = "DAMAGER",
 						},
 						["Galm-Stormrage"] = {
@@ -23274,11 +23274,11 @@ SkadaPerCharDB = {
 							["class"] = "DRUID",
 							["role"] = "HEALER",
 						},
-						["Amånda-Hellscream"] = {
-							["taken"] = 16658851,
-							["done"] = 2306029,
-							["class"] = "SHAMAN",
-							["role"] = "DAMAGER",
+						["Indigodawn-Dalaran"] = {
+							["taken"] = 569508,
+							["done"] = 1667573,
+							["class"] = "MONK",
+							["role"] = "HEALER",
 						},
 						["Starkeeperz-Shu'halo"] = {
 							["taken"] = 9636197,
@@ -23340,16 +23340,16 @@ SkadaPerCharDB = {
 							["class"] = "HUNTER",
 							["role"] = "DAMAGER",
 						},
-						["Indigodawn-Dalaran"] = {
-							["taken"] = 569508,
-							["done"] = 1667573,
-							["class"] = "MONK",
-							["role"] = "HEALER",
-						},
 						["Slamm-Sargeras"] = {
 							["taken"] = 11749864,
 							["done"] = 989791,
 							["class"] = "HUNTER",
+							["role"] = "DAMAGER",
+						},
+						["Amånda-Hellscream"] = {
+							["taken"] = 16658851,
+							["done"] = 2306029,
+							["class"] = "SHAMAN",
 							["role"] = "DAMAGER",
 						},
 						["Cliffer-Stormrage"] = {
@@ -23471,6 +23471,15 @@ SkadaPerCharDB = {
 					["done"] = 1083891,
 				},
 			},
+			["mobtaken"] = 516682089,
+			["alertCount"] = 0,
+			["healing"] = 128061414,
+			["overhealing"] = 167934559.679565,
+			["starttime"] = 1453233957,
+			["alertDamage"] = 0,
+			["shielding"] = 24591439,
+			["name"] = "Mannoroth",
+			["mobname"] = "Mannoroth",
 			["power"] = {
 				2690, -- [1]
 				7816, -- [2]
@@ -23483,15 +23492,6 @@ SkadaPerCharDB = {
 				[9] = 400,
 				[6] = 2577,
 			},
-			["alertCount"] = 0,
-			["healing"] = 128061414,
-			["overhealing"] = 167934559.679565,
-			["starttime"] = 1453233957,
-			["alertDamage"] = 0,
-			["shielding"] = 24591439,
-			["name"] = "Mannoroth",
-			["mobname"] = "Mannoroth",
-			["gotboss"] = true,
 			["mobhdone"] = 0,
 			["last_action"] = 1453233957,
 			["endtime"] = 1453234364,
@@ -23899,127 +23899,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 3898397,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 7575,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 350333,
-						["ts"] = 1453234365.877,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 9728,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 143924,
-						["hp"] = 360061,
-						["ts"] = 1453234365.877,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 17618,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 145109,
-						["hp"] = 304827,
-						["ts"] = 1453234362.774,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 6291,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 81269,
-						["hp"] = 311118,
-						["ts"] = 1453234363.118,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 37711,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 348829,
-						["ts"] = 1453234363.192,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 2900,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 143924,
-						["hp"] = 351729,
-						["ts"] = 1453234363.604,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 7574,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 359303,
-						["ts"] = 1453234363.709,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 2272,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 361575,
-						["ts"] = 1453234363.709,
-					}, -- [8]
-					{
-						["ts"] = 1453234364.074,
-						["amount"] = -38940,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 322635,
-					}, -- [9]
-					{
-						["ts"] = 1453234364.146,
-						["amount"] = -14846,
-						["spellid"] = 182088,
-						["srcname"] = "Mannoroth",
-						["hp"] = 307789,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 6042,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 774,
-						["hp"] = 313831,
-						["ts"] = 1453234364.484,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 3932,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 143924,
-						["hp"] = 317763,
-						["ts"] = 1453234364.693,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 7574,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 155777,
-						["hp"] = 325337,
-						["ts"] = 1453234364.866,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 2272,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 155777,
-						["hp"] = 327609,
-						["ts"] = 1453234364.866,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 15149,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 185019,
-						["hp"] = 342758,
-						["ts"] = 1453234365.135,
-					}, -- [15]
-					["pos"] = 3,
-				},
+				["shielding"] = 869320,
 				["id"] = "Player-60-06AD7E7A",
 				["maxhp"] = 440460,
 				["healing"] = 23364114,
@@ -24502,18 +24382,18 @@ SkadaPerCharDB = {
 						["name"] = "Killa",
 						["amount"] = 0,
 					},
-					["Player-76-08505E3B"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Lucyanidelol-Sargeras",
-						["amount"] = 412882,
-						["class"] = "PRIEST",
-						["shielding"] = 25718,
-					},
 					["Creature-0-3133-1448-11610-92993-00001E982D"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Mirror Image",
 						["amount"] = 0,
+					},
+					["Player-155-086D0D61"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Cårliah-Deathwing",
+						["amount"] = 1101860,
+						["class"] = "DEATHKNIGHT",
+						["shielding"] = 20508,
 					},
 					["Creature-0-3133-1448-11610-19668-00001E97FA"] = {
 						["role"] = "NONE",
@@ -24684,12 +24564,12 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
-					["Player-155-086D0D61"] = {
+					["Player-76-08505E3B"] = {
 						["role"] = "DAMAGER",
-						["name"] = "Cårliah-Deathwing",
-						["amount"] = 1101860,
-						["class"] = "DEATHKNIGHT",
-						["shielding"] = 20508,
+						["name"] = "Lucyanidelol-Sargeras",
+						["amount"] = 412882,
+						["class"] = "PRIEST",
+						["shielding"] = 25718,
 					},
 					["Pet-0-3133-1448-11610-26125-010255AA2B"] = {
 						["role"] = "NONE",
@@ -24708,8 +24588,128 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Rheomyst",
 				["alertCount"] = 0,
-				["shielding"] = 869320,
 				["power"] = {
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 7575,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 350333,
+						["ts"] = 1453234365.877,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 9728,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 143924,
+						["hp"] = 360061,
+						["ts"] = 1453234365.877,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 17618,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 145109,
+						["hp"] = 304827,
+						["ts"] = 1453234362.774,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 6291,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 81269,
+						["hp"] = 311118,
+						["ts"] = 1453234363.118,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 37711,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 348829,
+						["ts"] = 1453234363.192,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 2900,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 143924,
+						["hp"] = 351729,
+						["ts"] = 1453234363.604,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 7574,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 359303,
+						["ts"] = 1453234363.709,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 2272,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 361575,
+						["ts"] = 1453234363.709,
+					}, -- [8]
+					{
+						["ts"] = 1453234364.074,
+						["amount"] = -38940,
+						["hp"] = 322635,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [9]
+					{
+						["ts"] = 1453234364.146,
+						["amount"] = -14846,
+						["hp"] = 307789,
+						["spellid"] = 182088,
+						["srcname"] = "Mannoroth",
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 6042,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 774,
+						["hp"] = 313831,
+						["ts"] = 1453234364.484,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 3932,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 143924,
+						["hp"] = 317763,
+						["ts"] = 1453234364.693,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 7574,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 155777,
+						["hp"] = 325337,
+						["ts"] = 1453234364.866,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 2272,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 155777,
+						["hp"] = 327609,
+						["ts"] = 1453234364.866,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 15149,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 185019,
+						["hp"] = 342758,
+						["ts"] = 1453234365.135,
+					}, -- [15]
+					["pos"] = 3,
 				},
 				["alert"] = {
 				},
@@ -25146,125 +25146,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 7505197,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 1231,
-						["srcname"] = "Lumilidor-Whisperwind",
-						["spellid"] = 143924,
-						["hp"] = 680849,
-						["ts"] = 1453234363.192,
-					}, -- [1]
-					{
-						["ts"] = 1453234364.213,
-						["amount"] = -13074,
-						["spellid"] = 182088,
-						["srcname"] = "Mannoroth",
-						["hp"] = 667775,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 173,
-						["srcname"] = "Lumilidor-Whisperwind",
-						["spellid"] = 143924,
-						["hp"] = 667948,
-						["ts"] = 1453234364.355,
-					}, -- [3]
-					{
-						["ts"] = 1453234365.292,
-						["amount"] = -33149,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 636266,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 1943,
-						["srcname"] = "Ekate-Drakkari",
-						["spellid"] = 121148,
-						["hp"] = 605100,
-						["ts"] = 1453234354.894,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 25593,
-						["srcname"] = "Lumilidor-Whisperwind",
-						["spellid"] = 184968,
-						["hp"] = 635427,
-						["ts"] = 1453234355.196,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 1466,
-						["srcname"] = "Lumilidor-Whisperwind",
-						["spellid"] = 143924,
-						["hp"] = 636893,
-						["ts"] = 1453234355.387,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 7678,
-						["srcname"] = "Lumilidor-Whisperwind",
-						["spellid"] = 184968,
-						["hp"] = 644571,
-						["ts"] = 1453234355.526,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 455,
-						["srcname"] = "Lumilidor-Whisperwind",
-						["spellid"] = 143924,
-						["hp"] = 645026,
-						["ts"] = 1453234356.596,
-					}, -- [9]
-					{
-						["spellname"] = "Falling",
-						["ts"] = 1453234357.294,
-						["hp"] = 601846,
-						["amount"] = -43180,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 177,
-						["srcname"] = "Lumilidor-Whisperwind",
-						["spellid"] = 143924,
-						["hp"] = 602023,
-						["ts"] = 1453234357.829,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 121,
-						["srcname"] = "Lumilidor-Whisperwind",
-						["spellid"] = 143924,
-						["hp"] = 602144,
-						["ts"] = 1453234359.043,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 149,
-						["srcname"] = "Lumilidor-Whisperwind",
-						["spellid"] = 143924,
-						["hp"] = 602293,
-						["ts"] = 1453234360.265,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 121,
-						["srcname"] = "Lumilidor-Whisperwind",
-						["spellid"] = 143924,
-						["hp"] = 602414,
-						["ts"] = 1453234361.916,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 77204,
-						["srcname"] = "Lumilidor-Whisperwind",
-						["spellid"] = 45470,
-						["hp"] = 679618,
-						["ts"] = 1453234362.962,
-					}, -- [15]
-					["pos"] = 5,
-				},
+				["shielding"] = 2091693,
 				["id"] = "Player-55-088A11A3",
 				["maxhp"] = 592080,
 				["healing"] = 4648636,
@@ -25463,17 +25345,17 @@ SkadaPerCharDB = {
 						["name"] = "Army of the Dead",
 						["amount"] = 0,
 					},
-					["Creature-0-3133-1448-11610-24207-00001E9738"] = {
+					["Creature-0-3133-1448-11610-24207-00009E9738"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Army of the Dead",
-						["amount"] = 60,
+						["amount"] = 65,
 					},
-					["Creature-0-3133-1448-11610-24207-00009E9737"] = {
+					["Creature-0-3133-1448-11610-27893-00001E97C1"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Army of the Dead",
-						["amount"] = 158,
+						["name"] = "Rune Weapon",
+						["amount"] = 2937,
 					},
 					["Creature-0-3133-1448-11610-27893-00001E9758"] = {
 						["shielding"] = 0,
@@ -25493,18 +25375,17 @@ SkadaPerCharDB = {
 						["name"] = "Rune Weapon",
 						["amount"] = 0,
 					},
-					["Player-55-088A11A3"] = {
-						["role"] = "TANK",
-						["name"] = "Lumilidor-Whisperwind",
-						["amount"] = 4645034,
-						["class"] = "DEATHKNIGHT",
-						["shielding"] = 2091693,
-					},
-					["Creature-0-3133-1448-11610-24207-00001E9737"] = {
+					["Creature-0-3133-1448-11610-24207-00001E9738"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Army of the Dead",
-						["amount"] = 143,
+						["amount"] = 60,
+					},
+					["Creature-0-3133-1448-11610-24207-00009E9737"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Army of the Dead",
+						["amount"] = 158,
 					},
 					["Creature-0-3133-1448-11610-24207-00001E9736"] = {
 						["shielding"] = 0,
@@ -25512,17 +25393,18 @@ SkadaPerCharDB = {
 						["name"] = "Army of the Dead",
 						["amount"] = 86,
 					},
-					["Creature-0-3133-1448-11610-27893-00001E97C1"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Rune Weapon",
-						["amount"] = 2937,
-					},
-					["Creature-0-3133-1448-11610-24207-00009E9738"] = {
+					["Creature-0-3133-1448-11610-24207-00001E9737"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Army of the Dead",
-						["amount"] = 65,
+						["amount"] = 143,
+					},
+					["Player-55-088A11A3"] = {
+						["role"] = "TANK",
+						["name"] = "Lumilidor-Whisperwind",
+						["amount"] = 4645034,
+						["class"] = "DEATHKNIGHT",
+						["shielding"] = 2091693,
 					},
 					["Creature-0-3133-1448-11610-27893-00001E981C"] = {
 						["shielding"] = 0,
@@ -25534,7 +25416,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Lumilidor",
 				["alertCount"] = 0,
-				["shielding"] = 2091693,
 				["power"] = {
 					[6] = {
 						["spells"] = {
@@ -25543,6 +25424,125 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 1815,
 					},
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 1231,
+						["srcname"] = "Lumilidor-Whisperwind",
+						["spellid"] = 143924,
+						["hp"] = 680849,
+						["ts"] = 1453234363.192,
+					}, -- [1]
+					{
+						["ts"] = 1453234364.213,
+						["amount"] = -13074,
+						["hp"] = 667775,
+						["spellid"] = 182088,
+						["srcname"] = "Mannoroth",
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 173,
+						["srcname"] = "Lumilidor-Whisperwind",
+						["spellid"] = 143924,
+						["hp"] = 667948,
+						["ts"] = 1453234364.355,
+					}, -- [3]
+					{
+						["ts"] = 1453234365.292,
+						["amount"] = -33149,
+						["hp"] = 636266,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 1943,
+						["srcname"] = "Ekate-Drakkari",
+						["spellid"] = 121148,
+						["hp"] = 605100,
+						["ts"] = 1453234354.894,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 25593,
+						["srcname"] = "Lumilidor-Whisperwind",
+						["spellid"] = 184968,
+						["hp"] = 635427,
+						["ts"] = 1453234355.196,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 1466,
+						["srcname"] = "Lumilidor-Whisperwind",
+						["spellid"] = 143924,
+						["hp"] = 636893,
+						["ts"] = 1453234355.387,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 7678,
+						["srcname"] = "Lumilidor-Whisperwind",
+						["spellid"] = 184968,
+						["hp"] = 644571,
+						["ts"] = 1453234355.526,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 455,
+						["srcname"] = "Lumilidor-Whisperwind",
+						["spellid"] = 143924,
+						["hp"] = 645026,
+						["ts"] = 1453234356.596,
+					}, -- [9]
+					{
+						["spellname"] = "Falling",
+						["ts"] = 1453234357.294,
+						["hp"] = 601846,
+						["amount"] = -43180,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 177,
+						["srcname"] = "Lumilidor-Whisperwind",
+						["spellid"] = 143924,
+						["hp"] = 602023,
+						["ts"] = 1453234357.829,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 121,
+						["srcname"] = "Lumilidor-Whisperwind",
+						["spellid"] = 143924,
+						["hp"] = 602144,
+						["ts"] = 1453234359.043,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 149,
+						["srcname"] = "Lumilidor-Whisperwind",
+						["spellid"] = 143924,
+						["hp"] = 602293,
+						["ts"] = 1453234360.265,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 121,
+						["srcname"] = "Lumilidor-Whisperwind",
+						["spellid"] = 143924,
+						["hp"] = 602414,
+						["ts"] = 1453234361.916,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 77204,
+						["srcname"] = "Lumilidor-Whisperwind",
+						["spellid"] = 45470,
+						["hp"] = 679618,
+						["ts"] = 1453234362.962,
+					}, -- [15]
+					["pos"] = 5,
 				},
 				["alert"] = {
 				},
@@ -25645,18 +25645,18 @@ SkadaPerCharDB = {
 						["uptime"] = 0,
 						["auratype"] = "BUFF",
 					},
-					["Shadowfel Infusion"] = {
-						["name"] = "Shadowfel Infusion",
-						["active"] = 11,
-						["id"] = 184671,
-						["uptime"] = 381,
+					["Unleash Life"] = {
+						["name"] = "Unleash Life",
+						["active"] = 0,
+						["id"] = 73685,
+						["uptime"] = 3,
 						["auratype"] = "BUFF",
 					},
-					["Tidal Waves"] = {
-						["name"] = "Tidal Waves",
-						["active"] = 1,
-						["id"] = 53390,
-						["uptime"] = 365,
+					["Riptide"] = {
+						["name"] = "Riptide",
+						["active"] = 5,
+						["id"] = 61295,
+						["uptime"] = 399,
 						["auratype"] = "BUFF",
 					},
 					["Healing Stream Totem: Healing Stream Totem"] = {
@@ -25680,11 +25680,11 @@ SkadaPerCharDB = {
 						["uptime"] = 13,
 						["auratype"] = "BUFF",
 					},
-					["Riptide"] = {
-						["name"] = "Riptide",
-						["active"] = 5,
-						["id"] = 61295,
-						["uptime"] = 399,
+					["Tidal Waves"] = {
+						["name"] = "Tidal Waves",
+						["active"] = 1,
+						["id"] = 53390,
+						["uptime"] = 365,
 						["auratype"] = "BUFF",
 					},
 					["Ascendance"] = {
@@ -25694,11 +25694,11 @@ SkadaPerCharDB = {
 						["uptime"] = 15,
 						["auratype"] = "BUFF",
 					},
-					["Unleash Life"] = {
-						["name"] = "Unleash Life",
-						["active"] = 0,
-						["id"] = 73685,
-						["uptime"] = 3,
+					["Shadowfel Infusion"] = {
+						["name"] = "Shadowfel Infusion",
+						["active"] = 11,
+						["id"] = 184671,
+						["uptime"] = 381,
 						["auratype"] = "BUFF",
 					},
 					["Enhanced Unleash"] = {
@@ -25960,127 +25960,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 5331047,
-				["deathlog"] = {
-					{
-						["ts"] = 1453234364.213,
-						["amount"] = -15159,
-						["spellid"] = 182088,
-						["srcname"] = "Mannoroth",
-						["hp"] = 490881,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 7575,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 498456,
-						["ts"] = 1453234364.484,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 2272,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 500728,
-						["ts"] = 1453234364.484,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 2272,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 503000,
-						["ts"] = 1453234364.484,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 2898,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 143924,
-						["hp"] = 505898,
-						["ts"] = 1453234364.693,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 142,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 155777,
-						["hp"] = 506040,
-						["ts"] = 1453234365.135,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 155777,
-						["hp"] = 506040,
-						["ts"] = 1453234365.135,
-					}, -- [7]
-					{
-						["ts"] = 1453234365.292,
-						["amount"] = -39977,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 466063,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 4647,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 185875,
-						["hp"] = 470710,
-						["ts"] = 1453234365.831,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 2764,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 185875,
-						["hp"] = 473474,
-						["ts"] = 1453234365.831,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 1433,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 143924,
-						["hp"] = 480716,
-						["ts"] = 1453234365.877,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 4522,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 61295,
-						["hp"] = 485238,
-						["ts"] = 1453234365.928,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 1321,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 185875,
-						["hp"] = 496226,
-						["ts"] = 1453234363.557,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 9814,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 143924,
-						["hp"] = 506040,
-						["ts"] = 1453234363.604,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 61295,
-						["hp"] = 506040,
-						["ts"] = 1453234363.653,
-					}, -- [15]
-					["pos"] = 13,
-				},
+				["shielding"] = 1747439,
 				["id"] = "Player-76-08A90A61",
 				["maxhp"] = 506040,
 				["healing"] = 28953102,
@@ -26831,7 +26711,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Shamizard",
 				["alertCount"] = 0,
-				["shielding"] = 1747439,
 				["power"] = {
 					[0] = {
 						["spells"] = {
@@ -26839,6 +26718,127 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 38008,
 					},
+				},
+				["deathlog"] = {
+					{
+						["ts"] = 1453234364.213,
+						["amount"] = -15159,
+						["hp"] = 490881,
+						["spellid"] = 182088,
+						["srcname"] = "Mannoroth",
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 7575,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 498456,
+						["ts"] = 1453234364.484,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 2272,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 500728,
+						["ts"] = 1453234364.484,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 2272,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 503000,
+						["ts"] = 1453234364.484,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 2898,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 143924,
+						["hp"] = 505898,
+						["ts"] = 1453234364.693,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 142,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 155777,
+						["hp"] = 506040,
+						["ts"] = 1453234365.135,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 155777,
+						["hp"] = 506040,
+						["ts"] = 1453234365.135,
+					}, -- [7]
+					{
+						["ts"] = 1453234365.292,
+						["amount"] = -39977,
+						["hp"] = 466063,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 4647,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 185875,
+						["hp"] = 470710,
+						["ts"] = 1453234365.831,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 2764,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 185875,
+						["hp"] = 473474,
+						["ts"] = 1453234365.831,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 1433,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 143924,
+						["hp"] = 480716,
+						["ts"] = 1453234365.877,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 4522,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 61295,
+						["hp"] = 485238,
+						["ts"] = 1453234365.928,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 1321,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 185875,
+						["hp"] = 496226,
+						["ts"] = 1453234363.557,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 9814,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 143924,
+						["hp"] = 506040,
+						["ts"] = 1453234363.604,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 61295,
+						["hp"] = 506040,
+						["ts"] = 1453234363.653,
+					}, -- [15]
+					["pos"] = 13,
 				},
 				["alert"] = {
 				},
@@ -26941,8 +26941,7 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damage"] = 624482,
 				["damagespells"] = {
 					["Chi Burst"] = {
@@ -26983,9 +26982,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1453234331.44001,
 								["amount"] = -51749,
+								["hp"] = 262185,
 								["spellid"] = 182076,
 								["srcname"] = "Mannoroth",
-								["hp"] = 262185,
 							}, -- [1]
 							{
 								["spellname"] = "Indigodawn dies",
@@ -27044,9 +27043,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1453234328.95809,
 								["amount"] = -132858,
+								["hp"] = 296245,
 								["spellid"] = 182077,
 								["srcname"] = "Mannoroth",
-								["hp"] = 296245,
 							}, -- [9]
 							{
 								["absorb"] = 0,
@@ -27102,15 +27101,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 3053074,
-				["power"] = {
-					[12] = {
-						["spells"] = {
-							[116694] = 9,
-							[115399] = 2,
-							[115151] = 57,
-						},
-						["amount"] = 68,
-					},
+				["deathlog"] = {
 				},
 				["id"] = "Player-3683-07CA870F",
 				["maxhp"] = 431700,
@@ -27831,7 +27822,16 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Indigodawn",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+					[12] = {
+						["spells"] = {
+							[116694] = 9,
+							[115399] = 2,
+							[115151] = 57,
+						},
+						["amount"] = 68,
+					},
+				},
 				["healingspells"] = {
 					["Chi Burst"] = {
 						["shielding"] = 0,
@@ -28440,126 +28440,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 4893988,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 7574,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 349083,
-						["ts"] = 1453234365.557,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 1131,
-						["srcname"] = "Chrisxd-Tichondrius",
-						["spellid"] = 143924,
-						["hp"] = 375980,
-						["ts"] = 1453234361.916,
-					}, -- [2]
-					{
-						["ts"] = 1453234362.275,
-						["amount"] = -39138,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 336842,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 7574,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 344416,
-						["ts"] = 1453234362.557,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 7574,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 155777,
-						["hp"] = 351990,
-						["ts"] = 1453234363.043,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 2272,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 155777,
-						["hp"] = 354262,
-						["ts"] = 1453234363.043,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 6291,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 81269,
-						["hp"] = 360553,
-						["ts"] = 1453234363.118,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 12935,
-						["srcname"] = "Chrisxd-Tichondrius",
-						["spellid"] = 53365,
-						["hp"] = 373488,
-						["ts"] = 1453234363.118,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 4201,
-						["srcname"] = "Chrisxd-Tichondrius",
-						["spellid"] = 143924,
-						["hp"] = 377689,
-						["ts"] = 1453234363.192,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 7574,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 385263,
-						["ts"] = 1453234363.43,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 2272,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 387535,
-						["ts"] = 1453234363.43,
-					}, -- [11]
-					{
-						["ts"] = 1453234364.146,
-						["amount"] = -15024,
-						["spellid"] = 182088,
-						["srcname"] = "Mannoroth",
-						["hp"] = 372511,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 346,
-						["srcname"] = "Chrisxd-Tichondrius",
-						["spellid"] = 143924,
-						["hp"] = 372857,
-						["ts"] = 1453234364.355,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 7574,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 155777,
-						["hp"] = 380431,
-						["ts"] = 1453234365.183,
-					}, -- [14]
-					{
-						["ts"] = 1453234365.292,
-						["amount"] = -38922,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 341509,
-					}, -- [15]
-					["pos"] = 2,
-				},
+				["shielding"] = 762105,
 				["id"] = "Player-11-0A07FF6E",
 				["maxhp"] = 431160,
 				["healing"] = 1676144,
@@ -28835,7 +28716,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Chrisxd",
 				["alertCount"] = 0,
-				["shielding"] = 762105,
 				["power"] = {
 					[6] = {
 						["spells"] = {
@@ -28843,6 +28723,126 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 351,
 					},
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 7574,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 349083,
+						["ts"] = 1453234365.557,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 1131,
+						["srcname"] = "Chrisxd-Tichondrius",
+						["spellid"] = 143924,
+						["hp"] = 375980,
+						["ts"] = 1453234361.916,
+					}, -- [2]
+					{
+						["ts"] = 1453234362.275,
+						["amount"] = -39138,
+						["hp"] = 336842,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 7574,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 344416,
+						["ts"] = 1453234362.557,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 7574,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 155777,
+						["hp"] = 351990,
+						["ts"] = 1453234363.043,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 2272,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 155777,
+						["hp"] = 354262,
+						["ts"] = 1453234363.043,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 6291,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 81269,
+						["hp"] = 360553,
+						["ts"] = 1453234363.118,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 12935,
+						["srcname"] = "Chrisxd-Tichondrius",
+						["spellid"] = 53365,
+						["hp"] = 373488,
+						["ts"] = 1453234363.118,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 4201,
+						["srcname"] = "Chrisxd-Tichondrius",
+						["spellid"] = 143924,
+						["hp"] = 377689,
+						["ts"] = 1453234363.192,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 7574,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 385263,
+						["ts"] = 1453234363.43,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 2272,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 387535,
+						["ts"] = 1453234363.43,
+					}, -- [11]
+					{
+						["ts"] = 1453234364.146,
+						["amount"] = -15024,
+						["hp"] = 372511,
+						["spellid"] = 182088,
+						["srcname"] = "Mannoroth",
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 346,
+						["srcname"] = "Chrisxd-Tichondrius",
+						["spellid"] = 143924,
+						["hp"] = 372857,
+						["ts"] = 1453234364.355,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 7574,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 155777,
+						["hp"] = 380431,
+						["ts"] = 1453234365.183,
+					}, -- [14]
+					{
+						["ts"] = 1453234365.292,
+						["amount"] = -38922,
+						["hp"] = 341509,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [15]
+					["pos"] = 2,
 				},
 				["alert"] = {
 				},
@@ -29022,125 +29022,7 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 1,
 				["ccbreaks"] = 0,
-				["deathlog"] = {
-					{
-						["ts"] = 1453234357.161,
-						["amount"] = 4095,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 185019,
-						["hp"] = 391031,
-						["absorb"] = 0,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 50089,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 441120,
-						["ts"] = 1453234357.338,
-					}, -- [2]
-					{
-						["ts"] = 1453234357.338,
-						["amount"] = 0,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 441120,
-						["absorb"] = 0,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Amånda-Hellscream",
-						["spellid"] = 143924,
-						["hp"] = 441120,
-						["ts"] = 1453234357.829,
-					}, -- [4]
-					{
-						["ts"] = 1453234359.043,
-						["amount"] = 0,
-						["srcname"] = "Amånda-Hellscream",
-						["spellid"] = 143924,
-						["hp"] = 441120,
-						["absorb"] = 0,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Amånda-Hellscream",
-						["spellid"] = 143924,
-						["hp"] = 441120,
-						["ts"] = 1453234360.265,
-					}, -- [6]
-					{
-						["ts"] = 1453234360.772,
-						["amount"] = -39465,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 401655,
-					}, -- [7]
-					{
-						["ts"] = 1453234360.772,
-						["amount"] = -38981,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 362674,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 4203,
-						["srcname"] = "Amånda-Hellscream",
-						["spellid"] = 143924,
-						["hp"] = 366877,
-						["ts"] = 1453234361.508,
-					}, -- [9]
-					{
-						["ts"] = 1453234362.275,
-						["amount"] = -38582,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 328295,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 8910,
-						["srcname"] = "Amånda-Hellscream",
-						["spellid"] = 143924,
-						["hp"] = 337205,
-						["ts"] = 1453234362.774,
-					}, -- [11]
-					{
-						["ts"] = 1453234364.146,
-						["amount"] = -12750,
-						["spellid"] = 182088,
-						["srcname"] = "Mannoroth",
-						["hp"] = 324455,
-					}, -- [12]
-					{
-						["ts"] = 1453234364.355,
-						["amount"] = 5081,
-						["srcname"] = "Amånda-Hellscream",
-						["spellid"] = 143924,
-						["hp"] = 329536,
-						["absorb"] = 0,
-					}, -- [13]
-					{
-						["ts"] = 1453234365.183,
-						["amount"] = 15149,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 185019,
-						["hp"] = 344685,
-						["absorb"] = 0,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 27886,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 157982,
-						["hp"] = 386936,
-						["ts"] = 1453234356.71,
-					}, -- [15]
-					["pos"] = 15,
-				},
+				["shielding"] = 0,
 				["damage"] = 21553552,
 				["damagespells"] = {
 					["Lava Burst"] = {
@@ -29294,9 +29176,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1453234347.12303,
 								["amount"] = -22079,
+								["hp"] = 336201,
 								["spellid"] = 182031,
 								["srcname"] = "Mannoroth",
-								["hp"] = 336201,
 							}, -- [3]
 							{
 								["spellid"] = 182011,
@@ -29313,9 +29195,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1453234341.29406,
 								["amount"] = -38287,
+								["hp"] = 374107,
 								["spellid"] = 189280,
 								["srcname"] = "Mannoroth",
-								["hp"] = 374107,
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -29344,23 +29226,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1453234343.7631,
 								["amount"] = -35225,
+								["hp"] = 405895,
 								["spellid"] = 189280,
 								["srcname"] = "Mannoroth",
-								["hp"] = 405895,
 							}, -- [10]
 							{
 								["ts"] = 1453234343.76311,
 								["amount"] = -35752,
+								["hp"] = 370143,
 								["spellid"] = 189280,
 								["srcname"] = "Mannoroth",
-								["hp"] = 370143,
 							}, -- [11]
 							{
 								["ts"] = 1453234343.83112,
 								["amount"] = -34761,
+								["hp"] = 335382,
 								["spellid"] = 189280,
 								["srcname"] = "Mannoroth",
-								["hp"] = 335382,
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -29392,7 +29274,124 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 4253449,
-				["power"] = {
+				["deathlog"] = {
+					{
+						["ts"] = 1453234357.161,
+						["amount"] = 4095,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 185019,
+						["hp"] = 391031,
+						["absorb"] = 0,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 50089,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 441120,
+						["ts"] = 1453234357.338,
+					}, -- [2]
+					{
+						["ts"] = 1453234357.338,
+						["amount"] = 0,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 441120,
+						["absorb"] = 0,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Amånda-Hellscream",
+						["spellid"] = 143924,
+						["hp"] = 441120,
+						["ts"] = 1453234357.829,
+					}, -- [4]
+					{
+						["ts"] = 1453234359.043,
+						["amount"] = 0,
+						["srcname"] = "Amånda-Hellscream",
+						["spellid"] = 143924,
+						["hp"] = 441120,
+						["absorb"] = 0,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Amånda-Hellscream",
+						["spellid"] = 143924,
+						["hp"] = 441120,
+						["ts"] = 1453234360.265,
+					}, -- [6]
+					{
+						["ts"] = 1453234360.772,
+						["amount"] = -39465,
+						["hp"] = 401655,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [7]
+					{
+						["ts"] = 1453234360.772,
+						["amount"] = -38981,
+						["hp"] = 362674,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 4203,
+						["srcname"] = "Amånda-Hellscream",
+						["spellid"] = 143924,
+						["hp"] = 366877,
+						["ts"] = 1453234361.508,
+					}, -- [9]
+					{
+						["ts"] = 1453234362.275,
+						["amount"] = -38582,
+						["hp"] = 328295,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 8910,
+						["srcname"] = "Amånda-Hellscream",
+						["spellid"] = 143924,
+						["hp"] = 337205,
+						["ts"] = 1453234362.774,
+					}, -- [11]
+					{
+						["ts"] = 1453234364.146,
+						["amount"] = -12750,
+						["hp"] = 324455,
+						["spellid"] = 182088,
+						["srcname"] = "Mannoroth",
+					}, -- [12]
+					{
+						["ts"] = 1453234364.355,
+						["amount"] = 5081,
+						["srcname"] = "Amånda-Hellscream",
+						["spellid"] = 143924,
+						["hp"] = 329536,
+						["absorb"] = 0,
+					}, -- [13]
+					{
+						["ts"] = 1453234365.183,
+						["amount"] = 15149,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 185019,
+						["hp"] = 344685,
+						["absorb"] = 0,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 27886,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 157982,
+						["hp"] = 386936,
+						["ts"] = 1453234356.71,
+					}, -- [15]
+					["pos"] = 15,
 				},
 				["id"] = "Player-53-08BB8CF6",
 				["maxhp"] = 441120,
@@ -29835,7 +29834,8 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Amånda",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 					["Greater Fire Elemental: Leech"] = {
 						["shielding"] = 0,
@@ -30065,8 +30065,7 @@ SkadaPerCharDB = {
 				["interrupts"] = 1,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damage"] = 16146964,
 				["damagespells"] = {
 					["Attack"] = {
@@ -30356,21 +30355,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 2493860,
-				["power"] = {
-					[3] = {
-						["spells"] = {
-							[98440] = 1425,
-							[51637] = 1436,
-						},
-						["amount"] = 2861,
-					},
-					[4] = {
-						["spells"] = {
-							[115190] = 133,
-							[139546] = 9,
-						},
-						["amount"] = 142,
-					},
+				["deathlog"] = {
 				},
 				["id"] = "Player-67-09193CB5",
 				["maxhp"] = 428760,
@@ -30581,7 +30566,7 @@ SkadaPerCharDB = {
 						["name"] = "Mirror Image",
 						["amount"] = 0,
 					},
-					["Creature-0-3133-1448-11610-92993-00011E982D"] = {
+					["Creature-0-3133-1448-11610-92993-00001E97F1"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Mirror Image",
@@ -30593,7 +30578,7 @@ SkadaPerCharDB = {
 						["name"] = "Mirror Image",
 						["amount"] = 0,
 					},
-					["Creature-0-3133-1448-11610-92993-00009E97F1"] = {
+					["Creature-0-3133-1448-11610-92993-00019E982D"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Mirror Image",
@@ -30612,13 +30597,13 @@ SkadaPerCharDB = {
 						["name"] = "Mirror Image",
 						["amount"] = 0,
 					},
-					["Creature-0-3133-1448-11610-92993-00019E982D"] = {
+					["Creature-0-3133-1448-11610-92993-00009E97F1"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Mirror Image",
 						["amount"] = 0,
 					},
-					["Creature-0-3133-1448-11610-92993-00001E97F1"] = {
+					["Creature-0-3133-1448-11610-92993-00011E982D"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Mirror Image",
@@ -30665,7 +30650,22 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Jimlad",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+					[3] = {
+						["spells"] = {
+							[98440] = 1425,
+							[51637] = 1436,
+						},
+						["amount"] = 2861,
+					},
+					[4] = {
+						["spells"] = {
+							[115190] = 133,
+							[139546] = 9,
+						},
+						["amount"] = 142,
+					},
+				},
 				["healingspells"] = {
 					["Mirror Image: Leech"] = {
 						["shielding"] = 0,
@@ -30853,8 +30853,7 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 401083,
 				["damage"] = 16114126,
 				["damagespells"] = {
 					["Doom Nova"] = {
@@ -31051,9 +31050,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1453234295.33108,
 								["amount"] = -39107,
+								["hp"] = 378133,
 								["spellid"] = 189280,
 								["srcname"] = "Mannoroth",
-								["hp"] = 378133,
 							}, -- [8]
 							{
 								["ts"] = 1453234295.50709,
@@ -31114,14 +31113,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 3007424,
-				["power"] = {
-					[13] = {
-						["spells"] = {
-							[8092] = 48,
-							[125927] = 12,
-						},
-						["amount"] = 60,
-					},
+				["deathlog"] = {
 				},
 				["id"] = "Player-76-08505E3B",
 				["maxhp"] = 417240,
@@ -31474,18 +31466,18 @@ SkadaPerCharDB = {
 						["class"] = "PALADIN",
 						["shielding"] = 0,
 					},
-					["Player-76-08505E3B"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Lucyanidelol-Sargeras",
-						["amount"] = 687244,
-						["class"] = "PRIEST",
-						["shielding"] = 401083,
-					},
 					["Creature-0-3133-1448-11610-19668-00001E9876"] = {
 						["role"] = "NONE",
 						["name"] = "Shadowfiend",
 						["amount"] = 0,
 						["class"] = "PALADIN",
+						["shielding"] = 0,
+					},
+					["Player-155-086D0D61"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Cårliah-Deathwing",
+						["amount"] = 11160,
+						["class"] = "DEATHKNIGHT",
 						["shielding"] = 0,
 					},
 					["Player-60-09BFA8CD"] = {
@@ -31569,12 +31561,12 @@ SkadaPerCharDB = {
 						["name"] = "Cat",
 						["amount"] = 0,
 					},
-					["Player-155-086D0D61"] = {
+					["Player-76-08505E3B"] = {
 						["role"] = "DAMAGER",
-						["name"] = "Cårliah-Deathwing",
-						["amount"] = 11160,
-						["class"] = "DEATHKNIGHT",
-						["shielding"] = 0,
+						["name"] = "Lucyanidelol-Sargeras",
+						["amount"] = 687244,
+						["class"] = "PRIEST",
+						["shielding"] = 401083,
 					},
 					["Pet-0-3133-1448-11610-26125-010255AA2B"] = {
 						["role"] = "NONE",
@@ -31594,7 +31586,15 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Lucyanidelol",
 				["alertCount"] = 0,
-				["shielding"] = 401083,
+				["power"] = {
+					[13] = {
+						["spells"] = {
+							[8092] = 48,
+							[125927] = 12,
+						},
+						["amount"] = 60,
+					},
+				},
 				["healingspells"] = {
 					["Devouring Plague"] = {
 						["shielding"] = 0,
@@ -31984,129 +31984,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 6018632,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 730260,
-						["ts"] = 1453234364.355,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 33763,
-						["hp"] = 730260,
-						["ts"] = 1453234364.355,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 33763,
-						["hp"] = 730260,
-						["ts"] = 1453234365.045,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 33763,
-						["hp"] = 730260,
-						["ts"] = 1453234365.788,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 33778,
-						["hp"] = 730260,
-						["ts"] = 1453234362.071,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 188550,
-						["hp"] = 730260,
-						["ts"] = 1453234362.557,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 33778,
-						["hp"] = 730260,
-						["ts"] = 1453234362.557,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 33778,
-						["hp"] = 730260,
-						["ts"] = 1453234362.557,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 33778,
-						["hp"] = 730260,
-						["ts"] = 1453234362.557,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Abresax-Nemesis",
-						["spellid"] = 143924,
-						["hp"] = 730260,
-						["ts"] = 1453234362.774,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 33763,
-						["hp"] = 730260,
-						["ts"] = 1453234362.885,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 33763,
-						["hp"] = 730260,
-						["ts"] = 1453234362.885,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 33778,
-						["hp"] = 730260,
-						["ts"] = 1453234362.885,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 33763,
-						["hp"] = 730260,
-						["ts"] = 1453234363.653,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Abresax-Nemesis",
-						["spellid"] = 143924,
-						["hp"] = 730260,
-						["ts"] = 1453234364.355,
-					}, -- [15]
-					["pos"] = 5,
-				},
+				["shielding"] = 1615942,
 				["id"] = "Player-3208-081BBF24",
 				["maxhp"] = 730260,
 				["healing"] = 2238401,
@@ -32304,7 +32182,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Abresax",
 				["alertCount"] = 0,
-				["shielding"] = 1615942,
 				["power"] = {
 					{
 						["spells"] = {
@@ -32315,6 +32192,129 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 2690,
 					}, -- [1]
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 730260,
+						["ts"] = 1453234364.355,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 33763,
+						["hp"] = 730260,
+						["ts"] = 1453234364.355,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 33763,
+						["hp"] = 730260,
+						["ts"] = 1453234365.045,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 33763,
+						["hp"] = 730260,
+						["ts"] = 1453234365.788,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 33778,
+						["hp"] = 730260,
+						["ts"] = 1453234362.071,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 188550,
+						["hp"] = 730260,
+						["ts"] = 1453234362.557,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 33778,
+						["hp"] = 730260,
+						["ts"] = 1453234362.557,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 33778,
+						["hp"] = 730260,
+						["ts"] = 1453234362.557,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 33778,
+						["hp"] = 730260,
+						["ts"] = 1453234362.557,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Abresax-Nemesis",
+						["spellid"] = 143924,
+						["hp"] = 730260,
+						["ts"] = 1453234362.774,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 33763,
+						["hp"] = 730260,
+						["ts"] = 1453234362.885,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 33763,
+						["hp"] = 730260,
+						["ts"] = 1453234362.885,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 33778,
+						["hp"] = 730260,
+						["ts"] = 1453234362.885,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 33763,
+						["hp"] = 730260,
+						["ts"] = 1453234363.653,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Abresax-Nemesis",
+						["spellid"] = 143924,
+						["hp"] = 730260,
+						["ts"] = 1453234364.355,
+					}, -- [15]
+					["pos"] = 5,
 				},
 				["alert"] = {
 				},
@@ -32613,122 +32613,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 4272860,
-				["deathlog"] = {
-					{
-						["ts"] = 1453234363.899,
-						["amount"] = -38656,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 282978,
-					}, -- [1]
-					{
-						["ts"] = 1453234364.213,
-						["amount"] = -14363,
-						["spellid"] = 182088,
-						["srcname"] = "Mannoroth",
-						["hp"] = 268615,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 15149,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 185019,
-						["hp"] = 283764,
-						["ts"] = 1453234365.183,
-					}, -- [3]
-					{
-						["ts"] = 1453234365.292,
-						["amount"] = -39559,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 244205,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 6043,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 774,
-						["hp"] = 255375,
-						["ts"] = 1453234366.151,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 1813,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 774,
-						["hp"] = 257188,
-						["ts"] = 1453234366.151,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 8189,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 185019,
-						["hp"] = 417731,
-						["ts"] = 1453234356.45,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 27886,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 157982,
-						["hp"] = 445617,
-						["ts"] = 1453234356.71,
-					}, -- [8]
-					{
-						["ts"] = 1453234357.774,
-						["amount"] = -39566,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 406051,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 12583,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 81269,
-						["hp"] = 418634,
-						["ts"] = 1453234357.981,
-					}, -- [10]
-					{
-						["ts"] = 1453234358.979,
-						["amount"] = -39168,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 379466,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 15599,
-						["srcname"] = "Ekate-Drakkari",
-						["spellid"] = 33110,
-						["hp"] = 395065,
-						["ts"] = 1453234358.979,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 4680,
-						["srcname"] = "Ekate-Drakkari",
-						["spellid"] = 33110,
-						["hp"] = 399745,
-						["ts"] = 1453234358.979,
-					}, -- [13]
-					{
-						["ts"] = 1453234360.772,
-						["amount"] = -39883,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 359862,
-					}, -- [14]
-					{
-						["ts"] = 1453234362.275,
-						["amount"] = -38228,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 321634,
-					}, -- [15]
-					["pos"] = 7,
-				},
+				["shielding"] = 518489,
 				["id"] = "Player-155-086D0D61",
 				["maxhp"] = 446160,
 				["healing"] = 850795,
@@ -32941,7 +32826,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Cårliah",
 				["alertCount"] = 0,
-				["shielding"] = 518489,
 				["power"] = {
 					[6] = {
 						["spells"] = {
@@ -32949,6 +32833,122 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 226,
 					},
+				},
+				["deathlog"] = {
+					{
+						["ts"] = 1453234363.899,
+						["amount"] = -38656,
+						["hp"] = 282978,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [1]
+					{
+						["ts"] = 1453234364.213,
+						["amount"] = -14363,
+						["hp"] = 268615,
+						["spellid"] = 182088,
+						["srcname"] = "Mannoroth",
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 15149,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 185019,
+						["hp"] = 283764,
+						["ts"] = 1453234365.183,
+					}, -- [3]
+					{
+						["ts"] = 1453234365.292,
+						["amount"] = -39559,
+						["hp"] = 244205,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 6043,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 774,
+						["hp"] = 255375,
+						["ts"] = 1453234366.151,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 1813,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 774,
+						["hp"] = 257188,
+						["ts"] = 1453234366.151,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 8189,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 185019,
+						["hp"] = 417731,
+						["ts"] = 1453234356.45,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 27886,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 157982,
+						["hp"] = 445617,
+						["ts"] = 1453234356.71,
+					}, -- [8]
+					{
+						["ts"] = 1453234357.774,
+						["amount"] = -39566,
+						["hp"] = 406051,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 12583,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 81269,
+						["hp"] = 418634,
+						["ts"] = 1453234357.981,
+					}, -- [10]
+					{
+						["ts"] = 1453234358.979,
+						["amount"] = -39168,
+						["hp"] = 379466,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 15599,
+						["srcname"] = "Ekate-Drakkari",
+						["spellid"] = 33110,
+						["hp"] = 395065,
+						["ts"] = 1453234358.979,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 4680,
+						["srcname"] = "Ekate-Drakkari",
+						["spellid"] = 33110,
+						["hp"] = 399745,
+						["ts"] = 1453234358.979,
+					}, -- [13]
+					{
+						["ts"] = 1453234360.772,
+						["amount"] = -39883,
+						["hp"] = 359862,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [14]
+					{
+						["ts"] = 1453234362.275,
+						["amount"] = -38228,
+						["hp"] = 321634,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [15]
+					["pos"] = 7,
 				},
 				["alert"] = {
 				},
@@ -33205,126 +33205,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 3193482,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 185875,
-						["hp"] = 454380,
-						["ts"] = 1453234361.646,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 185875,
-						["hp"] = 454380,
-						["ts"] = 1453234361.646,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 454380,
-						["ts"] = 1453234362.144,
-					}, -- [3]
-					{
-						["ts"] = 1453234362.275,
-						["amount"] = -33884,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 420496,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 16616,
-						["srcname"] = "Salëën-Moonrunner",
-						["spellid"] = 143924,
-						["hp"] = 437112,
-						["ts"] = 1453234362.774,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 17268,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 454380,
-						["ts"] = 1453234363.192,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 454380,
-						["ts"] = 1453234363.192,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 454380,
-						["ts"] = 1453234363.192,
-					}, -- [8]
-					{
-						["ts"] = 1453234363.851,
-						["amount"] = -34538,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 419842,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 9268,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 185875,
-						["hp"] = 429110,
-						["ts"] = 1453234364.213,
-					}, -- [10]
-					{
-						["ts"] = 1453234364.213,
-						["amount"] = -12694,
-						["spellid"] = 182088,
-						["srcname"] = "Mannoroth",
-						["hp"] = 416416,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 7574,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 423990,
-						["ts"] = 1453234364.484,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 2272,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 426262,
-						["ts"] = 1453234364.484,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 2272,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 428534,
-						["ts"] = 1453234364.484,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Salëën-Moonrunner",
-						["spellid"] = 143924,
-						["hp"] = 454380,
-						["ts"] = 1453234361.508,
-					}, -- [15]
-					["pos"] = 15,
-				},
+				["shielding"] = 0,
 				["id"] = "Player-153-089E3959",
 				["maxhp"] = 454380,
 				["healing"] = 360445,
@@ -33681,7 +33562,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Salëën",
 				["alertCount"] = 0,
-				["shielding"] = 0,
 				["power"] = {
 					[2] = {
 						["spells"] = {
@@ -33690,6 +33570,126 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 852,
 					},
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 185875,
+						["hp"] = 454380,
+						["ts"] = 1453234361.646,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 185875,
+						["hp"] = 454380,
+						["ts"] = 1453234361.646,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 454380,
+						["ts"] = 1453234362.144,
+					}, -- [3]
+					{
+						["ts"] = 1453234362.275,
+						["amount"] = -33884,
+						["hp"] = 420496,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 16616,
+						["srcname"] = "Salëën-Moonrunner",
+						["spellid"] = 143924,
+						["hp"] = 437112,
+						["ts"] = 1453234362.774,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 17268,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 454380,
+						["ts"] = 1453234363.192,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 454380,
+						["ts"] = 1453234363.192,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 454380,
+						["ts"] = 1453234363.192,
+					}, -- [8]
+					{
+						["ts"] = 1453234363.851,
+						["amount"] = -34538,
+						["hp"] = 419842,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 9268,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 185875,
+						["hp"] = 429110,
+						["ts"] = 1453234364.213,
+					}, -- [10]
+					{
+						["ts"] = 1453234364.213,
+						["amount"] = -12694,
+						["hp"] = 416416,
+						["spellid"] = 182088,
+						["srcname"] = "Mannoroth",
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 7574,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 423990,
+						["ts"] = 1453234364.484,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 2272,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 426262,
+						["ts"] = 1453234364.484,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 2272,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 428534,
+						["ts"] = 1453234364.484,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Salëën-Moonrunner",
+						["spellid"] = 143924,
+						["hp"] = 454380,
+						["ts"] = 1453234361.508,
+					}, -- [15]
+					["pos"] = 15,
 				},
 				["alert"] = {
 				},
@@ -33813,8 +33813,7 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damage"] = 2319191,
 				["damagespells"] = {
 					["Exorcism"] = {
@@ -34023,9 +34022,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1453233999.07711,
 								["amount"] = -148468,
+								["hp"] = 279452,
 								["spellid"] = 181102,
 								["srcname"] = "Shamizard-Sargeras",
-								["hp"] = 279452,
 							}, -- [11]
 							{
 								["absorb"] = 0,
@@ -34038,16 +34037,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1453233999.17813,
 								["amount"] = -144508,
+								["srcname"] = "Corbervo-Dalaran",
 								["spellid"] = 181102,
 								["hp"] = 136839,
-								["srcname"] = "Corbervo-Dalaran",
 							}, -- [13]
 							{
 								["ts"] = 1453233999.33614,
 								["amount"] = -146365,
+								["hp"] = 1,
 								["spellid"] = 181102,
 								["srcname"] = "Galm-Stormrage",
-								["hp"] = 1,
 							}, -- [14]
 							{
 								["spellname"] = "Ajay dies",
@@ -34061,17 +34060,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 592009,
-				["power"] = {
-					[9] = {
-						["spells"] = {
-							[141459] = 7,
-							[35395] = 5,
-							[111528] = 3,
-							[147715] = 1,
-							[53595] = 1,
-						},
-						["amount"] = 17,
-					},
+				["deathlog"] = {
 				},
 				["id"] = "Player-12-08905007",
 				["maxhp"] = 427920,
@@ -34135,7 +34124,18 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Ajay",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+					[9] = {
+						["spells"] = {
+							[141459] = 7,
+							[35395] = 5,
+							[111528] = 3,
+							[147715] = 1,
+							[53595] = 1,
+						},
+						["amount"] = 17,
+					},
+				},
 				["healingspells"] = {
 					["Leech"] = {
 						["shielding"] = 0,
@@ -34316,8 +34316,7 @@ SkadaPerCharDB = {
 				["interrupts"] = 4,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 388476,
 				["damage"] = 13048939,
 				["damagespells"] = {
 					["Fel Blast"] = {
@@ -34653,14 +34652,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 3002452,
-				["power"] = {
-					[6] = {
-						["spells"] = {
-							[49088] = 165,
-							[50842] = 20,
-						},
-						["amount"] = 185,
-					},
+				["deathlog"] = {
 				},
 				["id"] = "Player-5-0A049B6F",
 				["maxhp"] = 466920,
@@ -34696,20 +34688,20 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Fel Hellfire"] = {
+					["Felseeker"] = {
 						["crushing"] = 0,
-						["id"] = 181192,
-						["damage"] = 1103929,
-						["max"] = 54572,
-						["name"] = "Fel Hellfire",
-						["min"] = 15186,
+						["id"] = 181738,
+						["damage"] = 272577,
+						["max"] = 135878,
+						["name"] = "Felseeker",
+						["min"] = 3929,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 22,
+						["totalhits"] = 3,
 						["resisted"] = 0,
 						["glancing"] = 0,
-						["absorbed"] = 43485,
+						["absorbed"] = 223634,
 					},
 					["Spirit Link"] = {
 						["crushing"] = 0,
@@ -34726,20 +34718,20 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Mannoroth's Gaze"] = {
+					["Fel Hellfire"] = {
 						["crushing"] = 0,
-						["id"] = 181617,
-						["damage"] = 316813,
-						["max"] = 96018,
-						["name"] = "Mannoroth's Gaze",
-						["min"] = 42760,
+						["id"] = 181192,
+						["damage"] = 1103929,
+						["max"] = 54572,
+						["name"] = "Fel Hellfire",
+						["min"] = 15186,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 5,
+						["totalhits"] = 22,
 						["resisted"] = 0,
 						["glancing"] = 0,
-						["absorbed"] = 105410,
+						["absorbed"] = 43485,
 					},
 					["Mark Eruption"] = {
 						["crushing"] = 0,
@@ -34771,20 +34763,20 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 40676,
 					},
-					["Felseeker"] = {
+					["Mannoroth's Gaze"] = {
 						["crushing"] = 0,
-						["id"] = 181738,
-						["damage"] = 272577,
-						["max"] = 135878,
-						["name"] = "Felseeker",
-						["min"] = 3929,
+						["id"] = 181617,
+						["damage"] = 316813,
+						["max"] = 96018,
+						["name"] = "Mannoroth's Gaze",
+						["min"] = 42760,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 3,
+						["totalhits"] = 5,
 						["resisted"] = 0,
 						["glancing"] = 0,
-						["absorbed"] = 223634,
+						["absorbed"] = 105410,
 					},
 				},
 				["healed"] = {
@@ -34806,7 +34798,15 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Teet",
 				["alertCount"] = 0,
-				["shielding"] = 388476,
+				["power"] = {
+					[6] = {
+						["spells"] = {
+							[49088] = 165,
+							[50842] = 20,
+						},
+						["amount"] = 185,
+					},
+				},
 				["healingspells"] = {
 					["Anti-Magic Shell"] = {
 						["shielding"] = 388476,
@@ -35210,123 +35210,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 3701366,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 157982,
-						["hp"] = 468840,
-						["ts"] = 1453234356.71,
-					}, -- [1]
-					{
-						["ts"] = 1453234357.774,
-						["amount"] = -32618,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 436222,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 6042,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 774,
-						["hp"] = 442264,
-						["ts"] = 1453234358.803,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 1813,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 774,
-						["hp"] = 444077,
-						["ts"] = 1453234358.803,
-					}, -- [4]
-					{
-						["ts"] = 1453234360.772,
-						["amount"] = -32580,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 411497,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 12084,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 774,
-						["hp"] = 423581,
-						["ts"] = 1453234360.965,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 1828,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 774,
-						["hp"] = 425409,
-						["ts"] = 1453234361.604,
-					}, -- [7]
-					{
-						["ts"] = 1453234362.275,
-						["amount"] = -31848,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 393561,
-					}, -- [8]
-					{
-						["ts"] = 1453234363.851,
-						["amount"] = -31608,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 361953,
-					}, -- [9]
-					{
-						["ts"] = 1453234364.213,
-						["amount"] = -13260,
-						["spellid"] = 182088,
-						["srcname"] = "Mannoroth",
-						["hp"] = 348693,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 157982,
-						["hp"] = 468840,
-						["ts"] = 1453234355.252,
-					}, -- [11]
-					{
-						["ts"] = 1453234356.283,
-						["amount"] = -32520,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 436320,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 8189,
-						["ts"] = 1453234356.45,
-						["spellid"] = 185019,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["hp"] = 444509,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 6042,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 774,
-						["hp"] = 450551,
-						["ts"] = 1453234356.651,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 18289,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 157982,
-						["hp"] = 468840,
-						["ts"] = 1453234356.71,
-					}, -- [15]
-					["pos"] = 11,
-				},
+				["shielding"] = 0,
 				["id"] = "Player-70-09878A84",
 				["maxhp"] = 468840,
 				["healing"] = 544831,
@@ -35539,7 +35423,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Denathus",
 				["alertCount"] = 0,
-				["shielding"] = 0,
 				["power"] = {
 					[9] = {
 						["spells"] = {
@@ -35550,6 +35433,123 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 201,
 					},
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 157982,
+						["hp"] = 468840,
+						["ts"] = 1453234356.71,
+					}, -- [1]
+					{
+						["ts"] = 1453234357.774,
+						["amount"] = -32618,
+						["hp"] = 436222,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 6042,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 774,
+						["hp"] = 442264,
+						["ts"] = 1453234358.803,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 1813,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 774,
+						["hp"] = 444077,
+						["ts"] = 1453234358.803,
+					}, -- [4]
+					{
+						["ts"] = 1453234360.772,
+						["amount"] = -32580,
+						["hp"] = 411497,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 12084,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 774,
+						["hp"] = 423581,
+						["ts"] = 1453234360.965,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 1828,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 774,
+						["hp"] = 425409,
+						["ts"] = 1453234361.604,
+					}, -- [7]
+					{
+						["ts"] = 1453234362.275,
+						["amount"] = -31848,
+						["hp"] = 393561,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [8]
+					{
+						["ts"] = 1453234363.851,
+						["amount"] = -31608,
+						["hp"] = 361953,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [9]
+					{
+						["ts"] = 1453234364.213,
+						["amount"] = -13260,
+						["hp"] = 348693,
+						["spellid"] = 182088,
+						["srcname"] = "Mannoroth",
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 157982,
+						["hp"] = 468840,
+						["ts"] = 1453234355.252,
+					}, -- [11]
+					{
+						["ts"] = 1453234356.283,
+						["amount"] = -32520,
+						["hp"] = 436320,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 8189,
+						["ts"] = 1453234356.45,
+						["spellid"] = 185019,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["hp"] = 444509,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 6042,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 774,
+						["hp"] = 450551,
+						["ts"] = 1453234356.651,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 18289,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 157982,
+						["hp"] = 468840,
+						["ts"] = 1453234356.71,
+					}, -- [15]
+					["pos"] = 11,
 				},
 				["alert"] = {
 				},
@@ -35827,125 +35827,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 2196713,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 43567,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 335509,
-						["ts"] = 1453234361.293,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 26140,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 361649,
-						["ts"] = 1453234361.293,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 13070,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 374719,
-						["ts"] = 1453234361.293,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 9941,
-						["srcname"] = "Galm-Stormrage",
-						["spellid"] = 143924,
-						["hp"] = 384660,
-						["ts"] = 1453234361.916,
-					}, -- [4]
-					{
-						["absorb"] = -22210,
-						["amount"] = -13550,
-						["srcname"] = "Mannoroth",
-						["spellid"] = 189280,
-						["hp"] = 371110,
-						["ts"] = 1453234362.275,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 2340,
-						["srcname"] = "Galm-Stormrage",
-						["spellid"] = 143924,
-						["hp"] = 373450,
-						["ts"] = 1453234363.192,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 15260,
-						["srcname"] = "Galm-Stormrage",
-						["spellid"] = 143924,
-						["hp"] = 388710,
-						["ts"] = 1453234364.355,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 16664,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 185019,
-						["hp"] = 421079,
-						["ts"] = 1453234365.183,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 61295,
-						["hp"] = 455220,
-						["ts"] = 1453234357.115,
-					}, -- [9]
-					{
-						["absorb"] = -3481,
-						["amount"] = -32068,
-						["srcname"] = "Mannoroth",
-						["spellid"] = 189280,
-						["hp"] = 423152,
-						["ts"] = 1453234357.774,
-					}, -- [10]
-					{
-						["ts"] = 1453234359.242,
-						["amount"] = -34639,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 388513,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 9105,
-						["srcname"] = "Galm-Stormrage",
-						["spellid"] = 108503,
-						["hp"] = 397618,
-						["ts"] = 1453234360.732,
-					}, -- [12]
-					{
-						["ts"] = 1453234360.772,
-						["amount"] = -34971,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 362647,
-					}, -- [13]
-					{
-						["ts"] = 1453234360.772,
-						["amount"] = -35688,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 326959,
-					}, -- [14]
-					{
-						["ts"] = 1453234360.772,
-						["amount"] = -35017,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 291942,
-					}, -- [15]
-					["pos"] = 9,
-				},
+				["shielding"] = 1089875,
 				["id"] = "Player-60-0A3594B3",
 				["maxhp"] = 455220,
 				["healing"] = 1379763,
@@ -36134,7 +36016,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Galm",
 				["alertCount"] = 0,
-				["shielding"] = 1089875,
 				["power"] = {
 					[14] = {
 						["spells"] = {
@@ -36142,6 +36023,125 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 17,
 					},
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 43567,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 335509,
+						["ts"] = 1453234361.293,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 26140,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 361649,
+						["ts"] = 1453234361.293,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 13070,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 374719,
+						["ts"] = 1453234361.293,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 9941,
+						["srcname"] = "Galm-Stormrage",
+						["spellid"] = 143924,
+						["hp"] = 384660,
+						["ts"] = 1453234361.916,
+					}, -- [4]
+					{
+						["absorb"] = -22210,
+						["amount"] = -13550,
+						["srcname"] = "Mannoroth",
+						["spellid"] = 189280,
+						["hp"] = 371110,
+						["ts"] = 1453234362.275,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 2340,
+						["srcname"] = "Galm-Stormrage",
+						["spellid"] = 143924,
+						["hp"] = 373450,
+						["ts"] = 1453234363.192,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 15260,
+						["srcname"] = "Galm-Stormrage",
+						["spellid"] = 143924,
+						["hp"] = 388710,
+						["ts"] = 1453234364.355,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 16664,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 185019,
+						["hp"] = 421079,
+						["ts"] = 1453234365.183,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 61295,
+						["hp"] = 455220,
+						["ts"] = 1453234357.115,
+					}, -- [9]
+					{
+						["absorb"] = -3481,
+						["amount"] = -32068,
+						["srcname"] = "Mannoroth",
+						["spellid"] = 189280,
+						["hp"] = 423152,
+						["ts"] = 1453234357.774,
+					}, -- [10]
+					{
+						["ts"] = 1453234359.242,
+						["amount"] = -34639,
+						["hp"] = 388513,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 9105,
+						["srcname"] = "Galm-Stormrage",
+						["spellid"] = 108503,
+						["hp"] = 397618,
+						["ts"] = 1453234360.732,
+					}, -- [12]
+					{
+						["ts"] = 1453234360.772,
+						["amount"] = -34971,
+						["hp"] = 362647,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [13]
+					{
+						["ts"] = 1453234360.772,
+						["amount"] = -35688,
+						["hp"] = 326959,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [14]
+					{
+						["ts"] = 1453234360.772,
+						["amount"] = -35017,
+						["hp"] = 291942,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [15]
+					["pos"] = 9,
 				},
 				["alert"] = {
 				},
@@ -36455,126 +36455,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 2889149,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ekate-Drakkari",
-						["spellid"] = 121148,
-						["hp"] = 431520,
-						["ts"] = 1453234357.011,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ekate-Drakkari",
-						["spellid"] = 121148,
-						["hp"] = 431520,
-						["ts"] = 1453234357.011,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 185019,
-						["hp"] = 431520,
-						["ts"] = 1453234360.596,
-					}, -- [3]
-					{
-						["ts"] = 1453234364.213,
-						["amount"] = -14473,
-						["spellid"] = 182088,
-						["srcname"] = "Mannoroth",
-						["hp"] = 417047,
-					}, -- [4]
-					{
-						["ts"] = 1453234365.292,
-						["amount"] = -36816,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 385194,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Corbervo-Dalaran",
-						["spellid"] = 143924,
-						["hp"] = 431520,
-						["ts"] = 1453234347.685,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Corbervo-Dalaran",
-						["spellid"] = 143924,
-						["hp"] = 431520,
-						["ts"] = 1453234348.855,
-					}, -- [7]
-					{
-						["ts"] = 1453234350.526,
-						["amount"] = -35298,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 396222,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 35298,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 157982,
-						["hp"] = 431520,
-						["ts"] = 1453234352.393,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 157982,
-						["hp"] = 431520,
-						["ts"] = 1453234353.861,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 157982,
-						["hp"] = 431520,
-						["ts"] = 1453234355.252,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ekate-Drakkari",
-						["spellid"] = 121148,
-						["hp"] = 431520,
-						["ts"] = 1453234356.071,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Ekate-Drakkari",
-						["spellid"] = 121148,
-						["hp"] = 431520,
-						["ts"] = 1453234356.501,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 157982,
-						["hp"] = 431520,
-						["ts"] = 1453234356.71,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 157982,
-						["hp"] = 431520,
-						["ts"] = 1453234356.71,
-					}, -- [15]
-					["pos"] = 6,
-				},
+				["shielding"] = 0,
 				["id"] = "Player-3683-07D250BE",
 				["maxhp"] = 431520,
 				["healing"] = 49909,
@@ -36946,7 +36827,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Corbervo",
 				["alertCount"] = 0,
-				["shielding"] = 0,
 				["power"] = {
 					[3] = {
 						["spells"] = {
@@ -36961,6 +36841,126 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 61,
 					},
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ekate-Drakkari",
+						["spellid"] = 121148,
+						["hp"] = 431520,
+						["ts"] = 1453234357.011,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ekate-Drakkari",
+						["spellid"] = 121148,
+						["hp"] = 431520,
+						["ts"] = 1453234357.011,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 185019,
+						["hp"] = 431520,
+						["ts"] = 1453234360.596,
+					}, -- [3]
+					{
+						["ts"] = 1453234364.213,
+						["amount"] = -14473,
+						["hp"] = 417047,
+						["spellid"] = 182088,
+						["srcname"] = "Mannoroth",
+					}, -- [4]
+					{
+						["ts"] = 1453234365.292,
+						["amount"] = -36816,
+						["hp"] = 385194,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Corbervo-Dalaran",
+						["spellid"] = 143924,
+						["hp"] = 431520,
+						["ts"] = 1453234347.685,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Corbervo-Dalaran",
+						["spellid"] = 143924,
+						["hp"] = 431520,
+						["ts"] = 1453234348.855,
+					}, -- [7]
+					{
+						["ts"] = 1453234350.526,
+						["amount"] = -35298,
+						["hp"] = 396222,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 35298,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 157982,
+						["hp"] = 431520,
+						["ts"] = 1453234352.393,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 157982,
+						["hp"] = 431520,
+						["ts"] = 1453234353.861,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 157982,
+						["hp"] = 431520,
+						["ts"] = 1453234355.252,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ekate-Drakkari",
+						["spellid"] = 121148,
+						["hp"] = 431520,
+						["ts"] = 1453234356.071,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Ekate-Drakkari",
+						["spellid"] = 121148,
+						["hp"] = 431520,
+						["ts"] = 1453234356.501,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 157982,
+						["hp"] = 431520,
+						["ts"] = 1453234356.71,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 157982,
+						["hp"] = 431520,
+						["ts"] = 1453234356.71,
+					}, -- [15]
+					["pos"] = 6,
 				},
 				["alert"] = {
 				},
@@ -36993,11 +36993,11 @@ SkadaPerCharDB = {
 						["uptime"] = 0,
 						["auratype"] = "BUFF",
 					},
-					["Detonation"] = {
-						["name"] = "Detonation",
+					["Draenic Agility Potion"] = {
+						["name"] = "Draenic Agility Potion",
 						["active"] = 0,
-						["id"] = 177067,
-						["uptime"] = 80,
+						["id"] = 156423,
+						["uptime"] = 25,
 						["auratype"] = "BUFF",
 					},
 					["Countenance of Tyranny"] = {
@@ -37007,11 +37007,11 @@ SkadaPerCharDB = {
 						["uptime"] = 154,
 						["auratype"] = "BUFF",
 					},
-					["Draenic Agility Potion"] = {
-						["name"] = "Draenic Agility Potion",
+					["Thrill of the Hunt"] = {
+						["name"] = "Thrill of the Hunt",
 						["active"] = 0,
-						["id"] = 156423,
-						["uptime"] = 25,
+						["id"] = 34720,
+						["uptime"] = 226,
 						["auratype"] = "BUFF",
 					},
 					["Detonating"] = {
@@ -37042,11 +37042,11 @@ SkadaPerCharDB = {
 						["uptime"] = 294,
 						["auratype"] = "BUFF",
 					},
-					["Thrill of the Hunt"] = {
-						["name"] = "Thrill of the Hunt",
+					["Detonation"] = {
+						["name"] = "Detonation",
 						["active"] = 0,
-						["id"] = 34720,
-						["uptime"] = 226,
+						["id"] = 177067,
+						["uptime"] = 80,
 						["auratype"] = "BUFF",
 					},
 					["Barrage"] = {
@@ -37063,8 +37063,7 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 1,
 				["ccbreaks"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damage"] = 26414666,
 				["damagespells"] = {
 					["Killa: Attack"] = {
@@ -37283,14 +37282,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 3079271,
-				["power"] = {
-					[2] = {
-						["spells"] = {
-							[157722] = 960,
-							[77443] = 1134,
-						},
-						["amount"] = 2094,
-					},
+				["deathlog"] = {
 				},
 				["id"] = "Player-76-05D9052E",
 				["maxhp"] = 473580,
@@ -37549,7 +37541,15 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Slamm",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+					[2] = {
+						["spells"] = {
+							[157722] = 960,
+							[77443] = 1134,
+						},
+						["amount"] = 2094,
+					},
+				},
 				["healingspells"] = {
 					["Kill Shot"] = {
 						["shielding"] = 0,
@@ -37981,126 +37981,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 3384005,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 6042,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 774,
-						["hp"] = 415475,
-						["ts"] = 1453234364.911,
-					}, -- [1]
-					{
-						["ts"] = 1453234365.292,
-						["amount"] = -38359,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 377116,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 102,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 143924,
-						["hp"] = 377218,
-						["ts"] = 1453234365.877,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 18883,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 145109,
-						["hp"] = 396101,
-						["ts"] = 1453234365.969,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 1846,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 143924,
-						["hp"] = 436598,
-						["ts"] = 1453234361.087,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 11566,
-						["srcname"] = "Drunkenfury-Kilrogg",
-						["spellid"] = 132463,
-						["hp"] = 448164,
-						["ts"] = 1453234361.508,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 3470,
-						["srcname"] = "Drunkenfury-Kilrogg",
-						["spellid"] = 132463,
-						["hp"] = 451634,
-						["ts"] = 1453234361.508,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 3470,
-						["srcname"] = "Drunkenfury-Kilrogg",
-						["spellid"] = 132463,
-						["hp"] = 455104,
-						["ts"] = 1453234361.508,
-					}, -- [8]
-					{
-						["ts"] = 1453234362.275,
-						["amount"] = -39675,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 415429,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 241,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 143924,
-						["hp"] = 415670,
-						["ts"] = 1453234362.365,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 6042,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 774,
-						["hp"] = 421712,
-						["ts"] = 1453234362.774,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 1813,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 774,
-						["hp"] = 423525,
-						["ts"] = 1453234362.774,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 585,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 143924,
-						["hp"] = 424110,
-						["ts"] = 1453234363.604,
-					}, -- [13]
-					{
-						["ts"] = 1453234364.213,
-						["amount"] = -14778,
-						["spellid"] = 182088,
-						["srcname"] = "Mannoroth",
-						["hp"] = 409332,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 101,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 143924,
-						["hp"] = 409433,
-						["ts"] = 1453234364.693,
-					}, -- [15]
-					["pos"] = 5,
-				},
+				["shielding"] = 1524636,
 				["id"] = "Player-71-075CDAEA",
 				["maxhp"] = 472080,
 				["healing"] = 24697553,
@@ -38494,12 +38375,11 @@ SkadaPerCharDB = {
 						["class"] = "PALADIN",
 						["shielding"] = 0,
 					},
-					["Player-60-093E9A8C"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Cliffer-Stormrage",
-						["amount"] = 660060,
-						["class"] = "DRUID",
-						["shielding"] = 62178,
+					["Creature-0-3133-1448-11610-92993-00011E98B0"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Mirror Image",
+						["amount"] = 0,
 					},
 					["Creature-0-3133-1448-11610-94925-00001E98B4"] = {
 						["shielding"] = 0,
@@ -38521,7 +38401,7 @@ SkadaPerCharDB = {
 						["class"] = "WARLOCK",
 						["shielding"] = 67732,
 					},
-					["Creature-0-3133-1448-11610-92993-00011E98B0"] = {
+					["Creature-0-3133-1448-11610-92993-00019E98B0"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Mirror Image",
@@ -38546,11 +38426,12 @@ SkadaPerCharDB = {
 						["name"] = "Killa",
 						["amount"] = 0,
 					},
-					["Creature-0-3133-1448-11610-92993-00019E98B0"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Mirror Image",
-						["amount"] = 0,
+					["Player-60-093E9A8C"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Cliffer-Stormrage",
+						["amount"] = 660060,
+						["class"] = "DRUID",
+						["shielding"] = 62178,
 					},
 					["Player-67-09193CB5"] = {
 						["role"] = "DAMAGER",
@@ -38675,8 +38556,127 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Optistriker",
 				["alertCount"] = 0,
-				["shielding"] = 1524636,
 				["power"] = {
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 6042,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 774,
+						["hp"] = 415475,
+						["ts"] = 1453234364.911,
+					}, -- [1]
+					{
+						["ts"] = 1453234365.292,
+						["amount"] = -38359,
+						["hp"] = 377116,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 102,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 143924,
+						["hp"] = 377218,
+						["ts"] = 1453234365.877,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 18883,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 145109,
+						["hp"] = 396101,
+						["ts"] = 1453234365.969,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 1846,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 143924,
+						["hp"] = 436598,
+						["ts"] = 1453234361.087,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 11566,
+						["srcname"] = "Drunkenfury-Kilrogg",
+						["spellid"] = 132463,
+						["hp"] = 448164,
+						["ts"] = 1453234361.508,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 3470,
+						["srcname"] = "Drunkenfury-Kilrogg",
+						["spellid"] = 132463,
+						["hp"] = 451634,
+						["ts"] = 1453234361.508,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 3470,
+						["srcname"] = "Drunkenfury-Kilrogg",
+						["spellid"] = 132463,
+						["hp"] = 455104,
+						["ts"] = 1453234361.508,
+					}, -- [8]
+					{
+						["ts"] = 1453234362.275,
+						["amount"] = -39675,
+						["hp"] = 415429,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 241,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 143924,
+						["hp"] = 415670,
+						["ts"] = 1453234362.365,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 6042,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 774,
+						["hp"] = 421712,
+						["ts"] = 1453234362.774,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 1813,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 774,
+						["hp"] = 423525,
+						["ts"] = 1453234362.774,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 585,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 143924,
+						["hp"] = 424110,
+						["ts"] = 1453234363.604,
+					}, -- [13]
+					{
+						["ts"] = 1453234364.213,
+						["amount"] = -14778,
+						["hp"] = 409332,
+						["spellid"] = 182088,
+						["srcname"] = "Mannoroth",
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 101,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 143924,
+						["hp"] = 409433,
+						["ts"] = 1453234364.693,
+					}, -- [15]
+					["pos"] = 5,
 				},
 				["alert"] = {
 				},
@@ -38716,18 +38716,18 @@ SkadaPerCharDB = {
 						["uptime"] = 1,
 						["auratype"] = "BUFF",
 					},
-					["Thrill of the Hunt"] = {
-						["name"] = "Thrill of the Hunt",
-						["active"] = 1,
-						["id"] = 34720,
-						["uptime"] = 193,
-						["auratype"] = "BUFF",
-					},
 					["Draenic Agility Potion"] = {
 						["name"] = "Draenic Agility Potion",
 						["active"] = 0,
 						["id"] = 156423,
 						["uptime"] = 25,
+						["auratype"] = "BUFF",
+					},
+					["Mirror Image: Felstorm"] = {
+						["name"] = "Mirror Image: Felstorm",
+						["active"] = 28,
+						["id"] = 184279,
+						["uptime"] = 403,
 						["auratype"] = "BUFF",
 					},
 					["Explosive Trap"] = {
@@ -38744,11 +38744,11 @@ SkadaPerCharDB = {
 						["uptime"] = 262,
 						["auratype"] = "BUFF",
 					},
-					["Mirror Image: Felstorm"] = {
-						["name"] = "Mirror Image: Felstorm",
-						["active"] = 28,
-						["id"] = 184279,
-						["uptime"] = 403,
+					["Thrill of the Hunt"] = {
+						["name"] = "Thrill of the Hunt",
+						["active"] = 1,
+						["id"] = 34720,
+						["uptime"] = 193,
 						["auratype"] = "BUFF",
 					},
 					["Barrage"] = {
@@ -38953,125 +38953,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 5170108,
-				["deathlog"] = {
-					{
-						["ts"] = 1453234362.275,
-						["amount"] = -39363,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 361558,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 10659,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["hp"] = 372217,
-						["ts"] = 1453234363.192,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 9399,
-						["srcname"] = "Bracnar",
-						["spellid"] = 53353,
-						["hp"] = 381616,
-						["ts"] = 1453234363.358,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 16569,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["hp"] = 398185,
-						["ts"] = 1453234364.355,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["hp"] = 469980,
-						["ts"] = 1453234355.387,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["hp"] = 469980,
-						["ts"] = 1453234356.596,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 157982,
-						["hp"] = 469980,
-						["ts"] = 1453234356.71,
-					}, -- [7]
-					{
-						["ts"] = 1453234357.774,
-						["amount"] = -38635,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 431345,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 2047,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["hp"] = 433392,
-						["ts"] = 1453234357.829,
-					}, -- [9]
-					{
-						["ts"] = 1453234358.979,
-						["amount"] = -39904,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 393488,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 7184,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["hp"] = 400672,
-						["ts"] = 1453234359.043,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 2854,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["hp"] = 403526,
-						["ts"] = 1453234360.265,
-					}, -- [12]
-					{
-						["ts"] = 1453234360.772,
-						["amount"] = -39360,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 364166,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 35714,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 399880,
-						["ts"] = 1453234361.293,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 1041,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["hp"] = 400921,
-						["ts"] = 1453234361.916,
-					}, -- [15]
-					["pos"] = 5,
-				},
+				["shielding"] = 0,
 				["id"] = "Player-1169-06A1ACBD",
 				["maxhp"] = 469980,
 				["healing"] = 567239,
@@ -39527,7 +39409,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Bracnar",
 				["alertCount"] = 0,
-				["shielding"] = 0,
 				["power"] = {
 					[2] = {
 						["spells"] = {
@@ -39536,6 +39417,125 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 1780,
 					},
+				},
+				["deathlog"] = {
+					{
+						["ts"] = 1453234362.275,
+						["amount"] = -39363,
+						["hp"] = 361558,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 10659,
+						["srcname"] = "Bracnar",
+						["spellid"] = 143924,
+						["hp"] = 372217,
+						["ts"] = 1453234363.192,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 9399,
+						["srcname"] = "Bracnar",
+						["spellid"] = 53353,
+						["hp"] = 381616,
+						["ts"] = 1453234363.358,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 16569,
+						["srcname"] = "Bracnar",
+						["spellid"] = 143924,
+						["hp"] = 398185,
+						["ts"] = 1453234364.355,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Bracnar",
+						["spellid"] = 143924,
+						["hp"] = 469980,
+						["ts"] = 1453234355.387,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Bracnar",
+						["spellid"] = 143924,
+						["hp"] = 469980,
+						["ts"] = 1453234356.596,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 157982,
+						["hp"] = 469980,
+						["ts"] = 1453234356.71,
+					}, -- [7]
+					{
+						["ts"] = 1453234357.774,
+						["amount"] = -38635,
+						["hp"] = 431345,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 2047,
+						["srcname"] = "Bracnar",
+						["spellid"] = 143924,
+						["hp"] = 433392,
+						["ts"] = 1453234357.829,
+					}, -- [9]
+					{
+						["ts"] = 1453234358.979,
+						["amount"] = -39904,
+						["hp"] = 393488,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 7184,
+						["srcname"] = "Bracnar",
+						["spellid"] = 143924,
+						["hp"] = 400672,
+						["ts"] = 1453234359.043,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 2854,
+						["srcname"] = "Bracnar",
+						["spellid"] = 143924,
+						["hp"] = 403526,
+						["ts"] = 1453234360.265,
+					}, -- [12]
+					{
+						["ts"] = 1453234360.772,
+						["amount"] = -39360,
+						["hp"] = 364166,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 35714,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 399880,
+						["ts"] = 1453234361.293,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 1041,
+						["srcname"] = "Bracnar",
+						["spellid"] = 143924,
+						["hp"] = 400921,
+						["ts"] = 1453234361.916,
+					}, -- [15]
+					["pos"] = 5,
 				},
 				["alert"] = {
 				},
@@ -39865,124 +39865,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 4111408,
-				["deathlog"] = {
-					{
-						["ts"] = 1453234362.275,
-						["amount"] = -36913,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 356919,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 47791,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 185875,
-						["hp"] = 404710,
-						["ts"] = 1453234363.192,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 45110,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 449820,
-						["ts"] = 1453234363.192,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 449820,
-						["ts"] = 1453234363.192,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Jonisten-Deathwing",
-						["spellid"] = 143924,
-						["hp"] = 449820,
-						["ts"] = 1453234363.604,
-					}, -- [5]
-					{
-						["ts"] = 1453234363.899,
-						["amount"] = -37603,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 412217,
-					}, -- [6]
-					{
-						["ts"] = 1453234364.146,
-						["amount"] = -14404,
-						["spellid"] = 182088,
-						["srcname"] = "Mannoroth",
-						["hp"] = 397813,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 221,
-						["srcname"] = "Jonisten-Deathwing",
-						["spellid"] = 143924,
-						["hp"] = 398034,
-						["ts"] = 1453234364.693,
-					}, -- [8]
-					{
-						["ts"] = 1453234365.183,
-						["amount"] = 15149,
-						["hp"] = 413183,
-						["spellid"] = 185019,
-						["srcname"] = "Rheomyst-Stormrage",
-						["absorb"] = 0,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 4657,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 185875,
-						["hp"] = 417840,
-						["ts"] = 1453234365.469,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 4080,
-						["srcname"] = "Ekate-Drakkari",
-						["spellid"] = 121148,
-						["hp"] = 416711,
-						["ts"] = 1453234356.71,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 33109,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 157982,
-						["hp"] = 449820,
-						["ts"] = 1453234356.71,
-					}, -- [12]
-					{
-						["ts"] = 1453234357.774,
-						["amount"] = -37698,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 412122,
-					}, -- [13]
-					{
-						["ts"] = 1453234358.979,
-						["amount"] = -36283,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 375839,
-					}, -- [14]
-					{
-						["ts"] = 1453234361.916,
-						["amount"] = 17993,
-						["srcname"] = "Jonisten-Deathwing",
-						["spellid"] = 115515,
-						["hp"] = 393832,
-						["absorb"] = 0,
-					}, -- [15]
-					["pos"] = 11,
-				},
+				["shielding"] = 0,
 				["id"] = "Player-155-077CA4CD",
 				["maxhp"] = 449820,
 				["healing"] = 536575,
@@ -40195,7 +40078,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Jonisten",
 				["alertCount"] = 0,
-				["shielding"] = 0,
 				["power"] = {
 					[9] = {
 						["spells"] = {
@@ -40207,6 +40089,124 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 182,
 					},
+				},
+				["deathlog"] = {
+					{
+						["ts"] = 1453234362.275,
+						["amount"] = -36913,
+						["hp"] = 356919,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 47791,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 185875,
+						["hp"] = 404710,
+						["ts"] = 1453234363.192,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 45110,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 449820,
+						["ts"] = 1453234363.192,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 449820,
+						["ts"] = 1453234363.192,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Jonisten-Deathwing",
+						["spellid"] = 143924,
+						["hp"] = 449820,
+						["ts"] = 1453234363.604,
+					}, -- [5]
+					{
+						["ts"] = 1453234363.899,
+						["amount"] = -37603,
+						["hp"] = 412217,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [6]
+					{
+						["ts"] = 1453234364.146,
+						["amount"] = -14404,
+						["hp"] = 397813,
+						["spellid"] = 182088,
+						["srcname"] = "Mannoroth",
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 221,
+						["srcname"] = "Jonisten-Deathwing",
+						["spellid"] = 143924,
+						["hp"] = 398034,
+						["ts"] = 1453234364.693,
+					}, -- [8]
+					{
+						["ts"] = 1453234365.183,
+						["amount"] = 15149,
+						["hp"] = 413183,
+						["spellid"] = 185019,
+						["srcname"] = "Rheomyst-Stormrage",
+						["absorb"] = 0,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 4657,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 185875,
+						["hp"] = 417840,
+						["ts"] = 1453234365.469,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 4080,
+						["srcname"] = "Ekate-Drakkari",
+						["spellid"] = 121148,
+						["hp"] = 416711,
+						["ts"] = 1453234356.71,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 33109,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 157982,
+						["hp"] = 449820,
+						["ts"] = 1453234356.71,
+					}, -- [12]
+					{
+						["ts"] = 1453234357.774,
+						["amount"] = -37698,
+						["hp"] = 412122,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [13]
+					{
+						["ts"] = 1453234358.979,
+						["amount"] = -36283,
+						["hp"] = 375839,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [14]
+					{
+						["ts"] = 1453234361.916,
+						["amount"] = 17993,
+						["srcname"] = "Jonisten-Deathwing",
+						["spellid"] = 115515,
+						["hp"] = 393832,
+						["absorb"] = 0,
+					}, -- [15]
+					["pos"] = 11,
 				},
 				["alert"] = {
 				},
@@ -40491,128 +40491,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 3662309,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 451680,
-						["ts"] = 1453234359.513,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Kittylove-Hyjal",
-						["spellid"] = 143924,
-						["hp"] = 451680,
-						["ts"] = 1453234360.265,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 185019,
-						["hp"] = 451680,
-						["ts"] = 1453234360.596,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Kittylove-Hyjal",
-						["spellid"] = 143924,
-						["hp"] = 451680,
-						["ts"] = 1453234361.508,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 451680,
-						["ts"] = 1453234361.834,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Kittylove-Hyjal",
-						["spellid"] = 143924,
-						["hp"] = 451680,
-						["ts"] = 1453234362.774,
-					}, -- [6]
-					{
-						["absorb"] = -9866,
-						["amount"] = -23561,
-						["srcname"] = "Mannoroth",
-						["spellid"] = 189280,
-						["hp"] = 428119,
-						["ts"] = 1453234363.851,
-					}, -- [7]
-					{
-						["ts"] = 1453234364.213,
-						["amount"] = -12658,
-						["spellid"] = 182088,
-						["srcname"] = "Mannoroth",
-						["hp"] = 415461,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 7574,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 423035,
-						["ts"] = 1453234364.355,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 451680,
-						["ts"] = 1453234357.161,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Kittylove-Hyjal",
-						["spellid"] = 143924,
-						["hp"] = 451680,
-						["ts"] = 1453234357.829,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Kittylove-Hyjal",
-						["spellid"] = 59543,
-						["hp"] = 451680,
-						["ts"] = 1453234357.892,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Kittylove-Hyjal",
-						["spellid"] = 53353,
-						["hp"] = 451680,
-						["ts"] = 1453234358.979,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Kittylove-Hyjal",
-						["spellid"] = 143924,
-						["hp"] = 451680,
-						["ts"] = 1453234359.043,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 451680,
-						["ts"] = 1453234359.513,
-					}, -- [15]
-					["pos"] = 10,
-				},
+				["shielding"] = 0,
 				["id"] = "Player-3661-0753B5FD",
 				["maxhp"] = 451680,
 				["healing"] = 451986,
@@ -40870,7 +40749,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Kittylove",
 				["alertCount"] = 0,
-				["shielding"] = 0,
 				["power"] = {
 					[2] = {
 						["spells"] = {
@@ -40879,6 +40757,128 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 1974,
 					},
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 451680,
+						["ts"] = 1453234359.513,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Kittylove-Hyjal",
+						["spellid"] = 143924,
+						["hp"] = 451680,
+						["ts"] = 1453234360.265,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 185019,
+						["hp"] = 451680,
+						["ts"] = 1453234360.596,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Kittylove-Hyjal",
+						["spellid"] = 143924,
+						["hp"] = 451680,
+						["ts"] = 1453234361.508,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 451680,
+						["ts"] = 1453234361.834,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Kittylove-Hyjal",
+						["spellid"] = 143924,
+						["hp"] = 451680,
+						["ts"] = 1453234362.774,
+					}, -- [6]
+					{
+						["absorb"] = -9866,
+						["amount"] = -23561,
+						["srcname"] = "Mannoroth",
+						["spellid"] = 189280,
+						["hp"] = 428119,
+						["ts"] = 1453234363.851,
+					}, -- [7]
+					{
+						["ts"] = 1453234364.213,
+						["amount"] = -12658,
+						["hp"] = 415461,
+						["spellid"] = 182088,
+						["srcname"] = "Mannoroth",
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 7574,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 423035,
+						["ts"] = 1453234364.355,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 451680,
+						["ts"] = 1453234357.161,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Kittylove-Hyjal",
+						["spellid"] = 143924,
+						["hp"] = 451680,
+						["ts"] = 1453234357.829,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Kittylove-Hyjal",
+						["spellid"] = 59543,
+						["hp"] = 451680,
+						["ts"] = 1453234357.892,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Kittylove-Hyjal",
+						["spellid"] = 53353,
+						["hp"] = 451680,
+						["ts"] = 1453234358.979,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Kittylove-Hyjal",
+						["spellid"] = 143924,
+						["hp"] = 451680,
+						["ts"] = 1453234359.043,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 451680,
+						["ts"] = 1453234359.513,
+					}, -- [15]
+					["pos"] = 10,
 				},
 				["alert"] = {
 				},
@@ -41200,124 +41200,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 4746840,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 2870,
-						["srcname"] = "Nacionalkid-Goldrinn",
-						["spellid"] = 143924,
-						["hp"] = 313466,
-						["ts"] = 1453234362.365,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 6291,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 81269,
-						["hp"] = 319757,
-						["ts"] = 1453234363.118,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 1888,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 81269,
-						["hp"] = 321645,
-						["ts"] = 1453234363.118,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 37557,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 359202,
-						["ts"] = 1453234363.192,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 11267,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 370469,
-						["ts"] = 1453234363.192,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 10017,
-						["srcname"] = "Nacionalkid-Goldrinn",
-						["spellid"] = 143924,
-						["hp"] = 380486,
-						["ts"] = 1453234363.604,
-					}, -- [6]
-					{
-						["ts"] = 1453234364.213,
-						["amount"] = -14822,
-						["spellid"] = 182088,
-						["srcname"] = "Mannoroth",
-						["hp"] = 365664,
-					}, -- [7]
-					{
-						["ts"] = 1453234359.242,
-						["amount"] = -36469,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 370738,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 34391,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 405129,
-						["ts"] = 1453234359.333,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 6291,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 81269,
-						["hp"] = 411420,
-						["ts"] = 1453234359.42,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 392,
-						["ts"] = 1453234359.462,
-						["spellid"] = 143924,
-						["srcname"] = "Nacionalkid-Goldrinn",
-						["hp"] = 411812,
-					}, -- [11]
-					{
-						["ts"] = 1453234360.772,
-						["amount"] = -35455,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 376357,
-					}, -- [12]
-					{
-						["ts"] = 1453234360.772,
-						["amount"] = -36309,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 340048,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 7660,
-						["srcname"] = "Nacionalkid-Goldrinn",
-						["spellid"] = 143924,
-						["hp"] = 347708,
-						["ts"] = 1453234361.087,
-					}, -- [14]
-					{
-						["ts"] = 1453234362.275,
-						["amount"] = -37112,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 310596,
-					}, -- [15]
-					["pos"] = 8,
-				},
+				["shielding"] = 250839,
 				["id"] = "Player-3207-055F6B2A",
 				["maxhp"] = 451980,
 				["healing"] = 861222,
@@ -41593,7 +41476,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Nacionalkid",
 				["alertCount"] = 0,
-				["shielding"] = 250839,
 				["power"] = {
 					[0] = {
 						["spells"] = {
@@ -41601,6 +41483,124 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 348061,
 					},
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 2870,
+						["srcname"] = "Nacionalkid-Goldrinn",
+						["spellid"] = 143924,
+						["hp"] = 313466,
+						["ts"] = 1453234362.365,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 6291,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 81269,
+						["hp"] = 319757,
+						["ts"] = 1453234363.118,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 1888,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 81269,
+						["hp"] = 321645,
+						["ts"] = 1453234363.118,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 37557,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 359202,
+						["ts"] = 1453234363.192,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 11267,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 370469,
+						["ts"] = 1453234363.192,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 10017,
+						["srcname"] = "Nacionalkid-Goldrinn",
+						["spellid"] = 143924,
+						["hp"] = 380486,
+						["ts"] = 1453234363.604,
+					}, -- [6]
+					{
+						["ts"] = 1453234364.213,
+						["amount"] = -14822,
+						["hp"] = 365664,
+						["spellid"] = 182088,
+						["srcname"] = "Mannoroth",
+					}, -- [7]
+					{
+						["ts"] = 1453234359.242,
+						["amount"] = -36469,
+						["hp"] = 370738,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 34391,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 405129,
+						["ts"] = 1453234359.333,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 6291,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 81269,
+						["hp"] = 411420,
+						["ts"] = 1453234359.42,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 392,
+						["ts"] = 1453234359.462,
+						["spellid"] = 143924,
+						["srcname"] = "Nacionalkid-Goldrinn",
+						["hp"] = 411812,
+					}, -- [11]
+					{
+						["ts"] = 1453234360.772,
+						["amount"] = -35455,
+						["hp"] = 376357,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [12]
+					{
+						["ts"] = 1453234360.772,
+						["amount"] = -36309,
+						["hp"] = 340048,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 7660,
+						["srcname"] = "Nacionalkid-Goldrinn",
+						["spellid"] = 143924,
+						["hp"] = 347708,
+						["ts"] = 1453234361.087,
+					}, -- [14]
+					{
+						["ts"] = 1453234362.275,
+						["amount"] = -37112,
+						["hp"] = 310596,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [15]
+					["pos"] = 8,
 				},
 				["alert"] = {
 				},
@@ -41759,6 +41759,115 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 1,
 				["ccbreaks"] = 0,
+				["shielding"] = 11943392,
+				["damage"] = 908553,
+				["damagespells"] = {
+					["Power Word: Solace"] = {
+						["min"] = 7,
+						["multistrike"] = 77,
+						["critical"] = 37,
+						["hit"] = 156,
+						["totalhits"] = 193,
+						["id"] = 129250,
+						["max"] = 37927,
+						["damage"] = 462896,
+					},
+					["Holy Nova"] = {
+						["min"] = 8564,
+						["critical"] = 1,
+						["totalhits"] = 1,
+						["id"] = 132157,
+						["max"] = 8564,
+						["damage"] = 8564,
+					},
+					["Penance"] = {
+						["min"] = 10889,
+						["multistrike"] = 6,
+						["critical"] = 3,
+						["hit"] = 11,
+						["totalhits"] = 14,
+						["id"] = 47666,
+						["max"] = 37460,
+						["damage"] = 280849,
+					},
+					["Smite"] = {
+						["min"] = 8388,
+						["multistrike"] = 8,
+						["critical"] = 2,
+						["hit"] = 11,
+						["totalhits"] = 13,
+						["id"] = 585,
+						["max"] = 16777,
+						["damage"] = 156244,
+					},
+				},
+				["deaths"] = {
+					{
+						["ts"] = 1453233999.66607,
+						["log"] = {
+							{
+								["absorb"] = 0,
+								["amount"] = 0,
+								["srcname"] = "Rheomyst-Stormrage",
+								["spellid"] = 185019,
+								["hp"] = 442380,
+								["ts"] = 1453233975.80901,
+							}, -- [1]
+							{
+								["absorb"] = 0,
+								["amount"] = 0,
+								["srcname"] = "Optistriker-Gorgonnash",
+								["spellid"] = 185019,
+								["hp"] = 442380,
+								["ts"] = 1453233992.20102,
+							}, -- [2]
+							{
+								["absorb"] = 0,
+								["amount"] = 0,
+								["srcname"] = "Rheomyst-Stormrage",
+								["spellid"] = 185019,
+								["hp"] = 442380,
+								["ts"] = 1453233995.66303,
+							}, -- [3]
+							{
+								["ts"] = 1453233999.07804,
+								["amount"] = -147327,
+								["hp"] = 295053,
+								["spellid"] = 181102,
+								["srcname"] = "Shamizard-Sargeras",
+							}, -- [4]
+							{
+								["ts"] = 1453233999.17905,
+								["amount"] = -147906,
+								["hp"] = 147147,
+								["spellid"] = 181102,
+								["srcname"] = "Corbervo-Dalaran",
+							}, -- [5]
+							{
+								["ts"] = 1453233999.33706,
+								["amount"] = -148108,
+								["hp"] = 1,
+								["spellid"] = 181102,
+								["srcname"] = "Galm-Stormrage",
+							}, -- [6]
+							{
+								["spellname"] = "Ekate dies",
+								["ts"] = 1453233999.66607,
+								["spellid"] = 41220,
+								["hp"] = 0,
+							}, -- [7]
+							{
+								["hp"] = 0,
+								["ts"] = 1453234015.755,
+								["spellid"] = 95750,
+								["srcname"] = "Galm-Stormrage",
+							}, -- [8]
+							["pos"] = 9,
+						},
+						["maxhp"] = 442380,
+					}, -- [1]
+				},
+				["damagetaken"] = 2433566,
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -41771,9 +41880,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1453234362.275,
 						["amount"] = -27016,
+						["hp"] = 401107,
 						["spellid"] = 189280,
 						["srcname"] = "Mannoroth",
-						["hp"] = 401107,
 					}, -- [2]
 					{
 						["absorb"] = 0,
@@ -41850,16 +41959,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1453234360.772,
 						["amount"] = -26912,
+						["hp"] = 415468,
 						["spellid"] = 189280,
 						["srcname"] = "Mannoroth",
-						["hp"] = 415468,
 					}, -- [12]
 					{
 						["ts"] = 1453234360.772,
 						["amount"] = -27761,
+						["hp"] = 387707,
 						["spellid"] = 189280,
 						["srcname"] = "Mannoroth",
-						["hp"] = 387707,
 					}, -- [13]
 					{
 						["absorb"] = 0,
@@ -41878,122 +41987,6 @@ SkadaPerCharDB = {
 						["ts"] = 1453234361.293,
 					}, -- [15]
 					["pos"] = 9,
-				},
-				["damage"] = 908553,
-				["damagespells"] = {
-					["Power Word: Solace"] = {
-						["min"] = 7,
-						["multistrike"] = 77,
-						["critical"] = 37,
-						["hit"] = 156,
-						["totalhits"] = 193,
-						["id"] = 129250,
-						["max"] = 37927,
-						["damage"] = 462896,
-					},
-					["Holy Nova"] = {
-						["min"] = 8564,
-						["critical"] = 1,
-						["totalhits"] = 1,
-						["id"] = 132157,
-						["max"] = 8564,
-						["damage"] = 8564,
-					},
-					["Penance"] = {
-						["min"] = 10889,
-						["multistrike"] = 6,
-						["critical"] = 3,
-						["hit"] = 11,
-						["totalhits"] = 14,
-						["id"] = 47666,
-						["max"] = 37460,
-						["damage"] = 280849,
-					},
-					["Smite"] = {
-						["min"] = 8388,
-						["multistrike"] = 8,
-						["critical"] = 2,
-						["hit"] = 11,
-						["totalhits"] = 13,
-						["id"] = 585,
-						["max"] = 16777,
-						["damage"] = 156244,
-					},
-				},
-				["deaths"] = {
-					{
-						["ts"] = 1453233999.66607,
-						["log"] = {
-							{
-								["absorb"] = 0,
-								["amount"] = 0,
-								["srcname"] = "Rheomyst-Stormrage",
-								["spellid"] = 185019,
-								["hp"] = 442380,
-								["ts"] = 1453233975.80901,
-							}, -- [1]
-							{
-								["absorb"] = 0,
-								["amount"] = 0,
-								["srcname"] = "Optistriker-Gorgonnash",
-								["spellid"] = 185019,
-								["hp"] = 442380,
-								["ts"] = 1453233992.20102,
-							}, -- [2]
-							{
-								["absorb"] = 0,
-								["amount"] = 0,
-								["srcname"] = "Rheomyst-Stormrage",
-								["spellid"] = 185019,
-								["hp"] = 442380,
-								["ts"] = 1453233995.66303,
-							}, -- [3]
-							{
-								["ts"] = 1453233999.07804,
-								["amount"] = -147327,
-								["spellid"] = 181102,
-								["srcname"] = "Shamizard-Sargeras",
-								["hp"] = 295053,
-							}, -- [4]
-							{
-								["ts"] = 1453233999.17905,
-								["amount"] = -147906,
-								["spellid"] = 181102,
-								["srcname"] = "Corbervo-Dalaran",
-								["hp"] = 147147,
-							}, -- [5]
-							{
-								["ts"] = 1453233999.33706,
-								["amount"] = -148108,
-								["spellid"] = 181102,
-								["srcname"] = "Galm-Stormrage",
-								["hp"] = 1,
-							}, -- [6]
-							{
-								["spellname"] = "Ekate dies",
-								["ts"] = 1453233999.66607,
-								["spellid"] = 41220,
-								["hp"] = 0,
-							}, -- [7]
-							{
-								["spellid"] = 95750,
-								["ts"] = 1453234015.755,
-								["srcname"] = "Galm-Stormrage",
-								["hp"] = 0,
-							}, -- [8]
-							["pos"] = 9,
-						},
-						["maxhp"] = 442380,
-					}, -- [1]
-				},
-				["damagetaken"] = 2433566,
-				["power"] = {
-					[0] = {
-						["spells"] = {
-							[129253] = 57600,
-						},
-						["amount"] = 57600,
-					},
 				},
 				["id"] = "Player-1425-021C0E05",
 				["maxhp"] = 442380,
@@ -42463,7 +42456,14 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Ekate",
 				["alertCount"] = 0,
-				["shielding"] = 11943392,
+				["power"] = {
+					[0] = {
+						["spells"] = {
+							[129253] = 57600,
+						},
+						["amount"] = 57600,
+					},
+				},
 				["healingspells"] = {
 					["Prayer of Healing"] = {
 						["shielding"] = 0,
@@ -43235,124 +43235,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 3887998,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 8366,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 157982,
-						["hp"] = 416601,
-						["ts"] = 1453234353.861,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 17524,
-						["srcname"] = "Cliffer-Stormrage",
-						["spellid"] = 145110,
-						["hp"] = 434125,
-						["ts"] = 1453234354.403,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 22835,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 157982,
-						["hp"] = 456960,
-						["ts"] = 1453234355.252,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 157982,
-						["hp"] = 456960,
-						["ts"] = 1453234355.252,
-					}, -- [4]
-					{
-						["ts"] = 1453234356.283,
-						["amount"] = -39459,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 417501,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 27886,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 157982,
-						["hp"] = 445387,
-						["ts"] = 1453234356.71,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 4095,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 185019,
-						["hp"] = 449482,
-						["ts"] = 1453234357.161,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 7478,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 185019,
-						["hp"] = 456960,
-						["ts"] = 1453234360.596,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 456960,
-						["ts"] = 1453234360.676,
-					}, -- [9]
-					{
-						["ts"] = 1453234362.774,
-						["amount"] = -38120,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 418840,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 7575,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 426415,
-						["ts"] = 1453234363.118,
-					}, -- [11]
-					{
-						["ts"] = 1453234364.213,
-						["amount"] = -38477,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 387938,
-					}, -- [12]
-					{
-						["ts"] = 1453234364.213,
-						["amount"] = -39692,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 348246,
-					}, -- [13]
-					{
-						["ts"] = 1453234364.355,
-						["amount"] = -14179,
-						["spellid"] = 182088,
-						["srcname"] = "Mannoroth",
-						["hp"] = 334067,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 15148,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 774,
-						["hp"] = 349215,
-						["ts"] = 1453234365.183,
-					}, -- [15]
-					["pos"] = 1,
-				},
+				["shielding"] = 280748,
 				["id"] = "Player-4-07422BF3",
 				["maxhp"] = 456960,
 				["healing"] = 826134,
@@ -43640,11 +43523,11 @@ SkadaPerCharDB = {
 						["class"] = "SHAMAN",
 						["shielding"] = 0,
 					},
-					["Player-76-08505E3B"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Lucyanidelol-Sargeras",
+					["Creature-0-3133-1448-11610-63508-00001E9805"] = {
+						["role"] = "NONE",
+						["name"] = "Xuen",
 						["amount"] = 0,
-						["class"] = "PRIEST",
+						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
 					["Player-3683-07D250BE"] = {
@@ -43661,11 +43544,11 @@ SkadaPerCharDB = {
 						["class"] = "MONK",
 						["shielding"] = 0,
 					},
-					["Creature-0-3133-1448-11610-63508-00001E9805"] = {
-						["role"] = "NONE",
-						["name"] = "Xuen",
-						["amount"] = 0,
-						["class"] = "WARRIOR",
+					["Player-155-086D0D61"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Cårliah-Deathwing",
+						["amount"] = 4729,
+						["class"] = "DEATHKNIGHT",
 						["shielding"] = 0,
 					},
 					["Player-153-089E3959"] = {
@@ -43724,11 +43607,11 @@ SkadaPerCharDB = {
 						["class"] = "MONK",
 						["shielding"] = 0,
 					},
-					["Player-155-086D0D61"] = {
+					["Player-76-08505E3B"] = {
 						["role"] = "DAMAGER",
-						["name"] = "Cårliah-Deathwing",
-						["amount"] = 4729,
-						["class"] = "DEATHKNIGHT",
+						["name"] = "Lucyanidelol-Sargeras",
+						["amount"] = 0,
+						["class"] = "PRIEST",
 						["shielding"] = 0,
 					},
 					["Player-71-075CDAEA"] = {
@@ -43749,7 +43632,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Drunkenfury",
 				["alertCount"] = 0,
-				["shielding"] = 280748,
 				["power"] = {
 					[12] = {
 						["spells"] = {
@@ -43767,6 +43649,124 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 294,
 					},
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 8366,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 157982,
+						["hp"] = 416601,
+						["ts"] = 1453234353.861,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 17524,
+						["srcname"] = "Cliffer-Stormrage",
+						["spellid"] = 145110,
+						["hp"] = 434125,
+						["ts"] = 1453234354.403,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 22835,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 157982,
+						["hp"] = 456960,
+						["ts"] = 1453234355.252,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 157982,
+						["hp"] = 456960,
+						["ts"] = 1453234355.252,
+					}, -- [4]
+					{
+						["ts"] = 1453234356.283,
+						["amount"] = -39459,
+						["hp"] = 417501,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 27886,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 157982,
+						["hp"] = 445387,
+						["ts"] = 1453234356.71,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 4095,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 185019,
+						["hp"] = 449482,
+						["ts"] = 1453234357.161,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 7478,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 185019,
+						["hp"] = 456960,
+						["ts"] = 1453234360.596,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 456960,
+						["ts"] = 1453234360.676,
+					}, -- [9]
+					{
+						["ts"] = 1453234362.774,
+						["amount"] = -38120,
+						["hp"] = 418840,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 7575,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 426415,
+						["ts"] = 1453234363.118,
+					}, -- [11]
+					{
+						["ts"] = 1453234364.213,
+						["amount"] = -38477,
+						["hp"] = 387938,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [12]
+					{
+						["ts"] = 1453234364.213,
+						["amount"] = -39692,
+						["hp"] = 348246,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [13]
+					{
+						["ts"] = 1453234364.355,
+						["amount"] = -14179,
+						["hp"] = 334067,
+						["spellid"] = 182088,
+						["srcname"] = "Mannoroth",
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 15148,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 774,
+						["hp"] = 349215,
+						["ts"] = 1453234365.183,
+					}, -- [15]
+					["pos"] = 1,
 				},
 				["alert"] = {
 				},
@@ -43982,15 +43982,15 @@ SkadaPerCharDB = {
 						["max"] = 13678,
 						["damage"] = 998559,
 					},
-					["Frostfire Bolt"] = {
-						["min"] = 36475,
-						["multistrike"] = 31,
-						["critical"] = 26,
-						["hit"] = 7,
-						["totalhits"] = 33,
-						["id"] = 44614,
-						["max"] = 132935,
-						["damage"] = 3455053,
+					["Frost Nova"] = {
+						["min"] = 1679,
+						["multistrike"] = 10,
+						["critical"] = 4,
+						["hit"] = 13,
+						["totalhits"] = 17,
+						["id"] = 122,
+						["max"] = 3980,
+						["damage"] = 44130,
 					},
 					["Nithramus"] = {
 						["min"] = 37302,
@@ -44018,15 +44018,15 @@ SkadaPerCharDB = {
 						["max"] = 41773,
 						["damage"] = 1842587,
 					},
-					["Ice Lance"] = {
-						["min"] = 2604,
-						["multistrike"] = 161,
-						["critical"] = 61,
-						["hit"] = 77,
-						["totalhits"] = 138,
-						["id"] = 30455,
-						["max"] = 95624,
-						["damage"] = 5439732,
+					["Frostfire Bolt"] = {
+						["min"] = 36475,
+						["multistrike"] = 31,
+						["critical"] = 26,
+						["hit"] = 7,
+						["totalhits"] = 33,
+						["id"] = 44614,
+						["max"] = 132935,
+						["damage"] = 3455053,
 					},
 					["Icicle"] = {
 						["min"] = 1892,
@@ -44046,137 +44046,20 @@ SkadaPerCharDB = {
 						["max"] = 5777,
 						["damage"] = 18777,
 					},
-					["Frost Nova"] = {
-						["min"] = 1679,
-						["multistrike"] = 10,
-						["critical"] = 4,
-						["hit"] = 13,
-						["totalhits"] = 17,
-						["id"] = 122,
-						["max"] = 3980,
-						["damage"] = 44130,
+					["Ice Lance"] = {
+						["min"] = 2604,
+						["multistrike"] = 161,
+						["critical"] = 61,
+						["hit"] = 77,
+						["totalhits"] = 138,
+						["id"] = 30455,
+						["max"] = 95624,
+						["damage"] = 5439732,
 					},
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 2721571,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 6291,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 81269,
-						["hp"] = 432079,
-						["ts"] = 1453234357.981,
-					}, -- [1]
-					{
-						["ts"] = 1453234359.242,
-						["amount"] = -39628,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 392451,
-					}, -- [2]
-					{
-						["ts"] = 1453234359.242,
-						["amount"] = -38446,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 354005,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 36051,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 390056,
-						["ts"] = 1453234359.333,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 12583,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 81269,
-						["hp"] = 402639,
-						["ts"] = 1453234359.42,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 875,
-						["srcname"] = "Turricon-Elune",
-						["spellid"] = 143924,
-						["hp"] = 403514,
-						["ts"] = 1453234359.839,
-					}, -- [6]
-					{
-						["ts"] = 1453234360.772,
-						["amount"] = -39729,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 363785,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 6291,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 81269,
-						["hp"] = 370076,
-						["ts"] = 1453234360.877,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 1783,
-						["srcname"] = "Turricon-Elune",
-						["spellid"] = 143924,
-						["hp"] = 371859,
-						["ts"] = 1453234361.087,
-					}, -- [9]
-					{
-						["ts"] = 1453234362.275,
-						["amount"] = -38586,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 333273,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 707,
-						["srcname"] = "Turricon-Elune",
-						["spellid"] = 143924,
-						["hp"] = 333980,
-						["ts"] = 1453234362.365,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 37310,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 371290,
-						["ts"] = 1453234363.192,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 874,
-						["srcname"] = "Turricon-Elune",
-						["spellid"] = 143924,
-						["hp"] = 372164,
-						["ts"] = 1453234363.604,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 157982,
-						["hp"] = 463800,
-						["ts"] = 1453234356.71,
-					}, -- [14]
-					{
-						["ts"] = 1453234357.774,
-						["amount"] = -38012,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 425788,
-					}, -- [15]
-					["pos"] = 14,
-				},
+				["shielding"] = 497736,
 				["id"] = "Player-67-09573B3F",
 				["maxhp"] = 463800,
 				["healing"] = 561697,
@@ -44381,8 +44264,125 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Turricon",
 				["alertCount"] = 0,
-				["shielding"] = 497736,
 				["power"] = {
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 6291,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 81269,
+						["hp"] = 432079,
+						["ts"] = 1453234357.981,
+					}, -- [1]
+					{
+						["ts"] = 1453234359.242,
+						["amount"] = -39628,
+						["hp"] = 392451,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [2]
+					{
+						["ts"] = 1453234359.242,
+						["amount"] = -38446,
+						["hp"] = 354005,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 36051,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 390056,
+						["ts"] = 1453234359.333,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 12583,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 81269,
+						["hp"] = 402639,
+						["ts"] = 1453234359.42,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 875,
+						["srcname"] = "Turricon-Elune",
+						["spellid"] = 143924,
+						["hp"] = 403514,
+						["ts"] = 1453234359.839,
+					}, -- [6]
+					{
+						["ts"] = 1453234360.772,
+						["amount"] = -39729,
+						["hp"] = 363785,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 6291,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 81269,
+						["hp"] = 370076,
+						["ts"] = 1453234360.877,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 1783,
+						["srcname"] = "Turricon-Elune",
+						["spellid"] = 143924,
+						["hp"] = 371859,
+						["ts"] = 1453234361.087,
+					}, -- [9]
+					{
+						["ts"] = 1453234362.275,
+						["amount"] = -38586,
+						["hp"] = 333273,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 707,
+						["srcname"] = "Turricon-Elune",
+						["spellid"] = 143924,
+						["hp"] = 333980,
+						["ts"] = 1453234362.365,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 37310,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 371290,
+						["ts"] = 1453234363.192,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 874,
+						["srcname"] = "Turricon-Elune",
+						["spellid"] = 143924,
+						["hp"] = 372164,
+						["ts"] = 1453234363.604,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 157982,
+						["hp"] = 463800,
+						["ts"] = 1453234356.71,
+					}, -- [14]
+					{
+						["ts"] = 1453234357.774,
+						["amount"] = -38012,
+						["hp"] = 425788,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [15]
+					["pos"] = 14,
 				},
 				["alert"] = {
 				},
@@ -44485,19 +44485,19 @@ SkadaPerCharDB = {
 						["uptime"] = 169,
 						["auratype"] = "BUFF",
 					},
-					["Displacer Beast"] = {
-						["name"] = "Displacer Beast",
+					["Survival Instincts"] = {
+						["name"] = "Survival Instincts",
 						["active"] = 0,
-						["id"] = 137452,
-						["uptime"] = 4,
+						["id"] = 61336,
+						["uptime"] = 12,
 						["auratype"] = "BUFF",
 					},
-					["Dash"] = {
-						["name"] = "Dash",
+					["Thrash"] = {
+						["name"] = "Thrash",
 						["active"] = 0,
-						["id"] = 1850,
-						["uptime"] = 15,
-						["auratype"] = "BUFF",
+						["id"] = 106830,
+						["uptime"] = 51,
+						["auratype"] = "DEBUFF",
 					},
 					["Rip"] = {
 						["name"] = "Rip",
@@ -44513,12 +44513,12 @@ SkadaPerCharDB = {
 						["uptime"] = 202,
 						["auratype"] = "BUFF",
 					},
-					["Thrash"] = {
-						["name"] = "Thrash",
+					["Dash"] = {
+						["name"] = "Dash",
 						["active"] = 0,
-						["id"] = 106830,
-						["uptime"] = 51,
-						["auratype"] = "DEBUFF",
+						["id"] = 1850,
+						["uptime"] = 15,
+						["auratype"] = "BUFF",
 					},
 					["Rejuvenation"] = {
 						["name"] = "Rejuvenation",
@@ -44527,11 +44527,11 @@ SkadaPerCharDB = {
 						["uptime"] = 111,
 						["auratype"] = "BUFF",
 					},
-					["Survival Instincts"] = {
-						["name"] = "Survival Instincts",
+					["Displacer Beast"] = {
+						["name"] = "Displacer Beast",
 						["active"] = 0,
-						["id"] = 61336,
-						["uptime"] = 12,
+						["id"] = 137452,
+						["uptime"] = 4,
 						["auratype"] = "BUFF",
 					},
 					["Incarnation: King of the Jungle"] = {
@@ -44725,126 +44725,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 4075873,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 3016,
-						["srcname"] = "Cliffer-Stormrage",
-						["spellid"] = 143924,
-						["hp"] = 403199,
-						["ts"] = 1453234363.192,
-					}, -- [1]
-					{
-						["ts"] = 1453234364.213,
-						["amount"] = -14720,
-						["spellid"] = 182088,
-						["srcname"] = "Mannoroth",
-						["hp"] = 388479,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 597,
-						["ts"] = 1453234364.355,
-						["spellid"] = 143924,
-						["srcname"] = "Cliffer-Stormrage",
-						["hp"] = 389076,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 17525,
-						["srcname"] = "Cliffer-Stormrage",
-						["spellid"] = 145109,
-						["hp"] = 406601,
-						["ts"] = 1453234364.484,
-					}, -- [4]
-					{
-						["ts"] = 1453234365.292,
-						["amount"] = -39330,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 367271,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 2516,
-						["srcname"] = "Cliffer-Stormrage",
-						["spellid"] = 143924,
-						["hp"] = 402807,
-						["ts"] = 1453234358.239,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 17525,
-						["srcname"] = "Cliffer-Stormrage",
-						["spellid"] = 145109,
-						["hp"] = 420332,
-						["ts"] = 1453234359.381,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 2662,
-						["srcname"] = "Cliffer-Stormrage",
-						["spellid"] = 143924,
-						["hp"] = 422994,
-						["ts"] = 1453234359.462,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 9826,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 185019,
-						["hp"] = 432820,
-						["ts"] = 1453234360.596,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 5300,
-						["srcname"] = "Cliffer-Stormrage",
-						["spellid"] = 143924,
-						["hp"] = 438120,
-						["ts"] = 1453234360.676,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Cliffer-Stormrage",
-						["spellid"] = 5185,
-						["hp"] = 438120,
-						["ts"] = 1453234361.417,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Cliffer-Stormrage",
-						["spellid"] = 5185,
-						["hp"] = 438120,
-						["ts"] = 1453234361.417,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Cliffer-Stormrage",
-						["spellid"] = 68285,
-						["hp"] = 438120,
-						["ts"] = 1453234361.562,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Cliffer-Stormrage",
-						["spellid"] = 143924,
-						["hp"] = 438120,
-						["ts"] = 1453234361.916,
-					}, -- [14]
-					{
-						["ts"] = 1453234362.275,
-						["amount"] = -37937,
-						["spellid"] = 189280,
-						["srcname"] = "Mannoroth",
-						["hp"] = 400183,
-					}, -- [15]
-					["pos"] = 6,
-				},
+				["shielding"] = 0,
 				["id"] = "Player-60-093E9A8C",
 				["maxhp"] = 438120,
 				["healing"] = 2094150,
@@ -45203,7 +45084,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Cliffer",
 				["alertCount"] = 0,
-				["shielding"] = 0,
 				["power"] = {
 					[3] = {
 						["spells"] = {
@@ -45212,6 +45092,126 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 305,
 					},
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 3016,
+						["srcname"] = "Cliffer-Stormrage",
+						["spellid"] = 143924,
+						["hp"] = 403199,
+						["ts"] = 1453234363.192,
+					}, -- [1]
+					{
+						["ts"] = 1453234364.213,
+						["amount"] = -14720,
+						["hp"] = 388479,
+						["spellid"] = 182088,
+						["srcname"] = "Mannoroth",
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 597,
+						["ts"] = 1453234364.355,
+						["spellid"] = 143924,
+						["srcname"] = "Cliffer-Stormrage",
+						["hp"] = 389076,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 17525,
+						["srcname"] = "Cliffer-Stormrage",
+						["spellid"] = 145109,
+						["hp"] = 406601,
+						["ts"] = 1453234364.484,
+					}, -- [4]
+					{
+						["ts"] = 1453234365.292,
+						["amount"] = -39330,
+						["hp"] = 367271,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 2516,
+						["srcname"] = "Cliffer-Stormrage",
+						["spellid"] = 143924,
+						["hp"] = 402807,
+						["ts"] = 1453234358.239,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 17525,
+						["srcname"] = "Cliffer-Stormrage",
+						["spellid"] = 145109,
+						["hp"] = 420332,
+						["ts"] = 1453234359.381,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 2662,
+						["srcname"] = "Cliffer-Stormrage",
+						["spellid"] = 143924,
+						["hp"] = 422994,
+						["ts"] = 1453234359.462,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 9826,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 185019,
+						["hp"] = 432820,
+						["ts"] = 1453234360.596,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 5300,
+						["srcname"] = "Cliffer-Stormrage",
+						["spellid"] = 143924,
+						["hp"] = 438120,
+						["ts"] = 1453234360.676,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Cliffer-Stormrage",
+						["spellid"] = 5185,
+						["hp"] = 438120,
+						["ts"] = 1453234361.417,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Cliffer-Stormrage",
+						["spellid"] = 5185,
+						["hp"] = 438120,
+						["ts"] = 1453234361.417,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Cliffer-Stormrage",
+						["spellid"] = 68285,
+						["hp"] = 438120,
+						["ts"] = 1453234361.562,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Cliffer-Stormrage",
+						["spellid"] = 143924,
+						["hp"] = 438120,
+						["ts"] = 1453234361.916,
+					}, -- [14]
+					{
+						["ts"] = 1453234362.275,
+						["amount"] = -37937,
+						["hp"] = 400183,
+						["spellid"] = 189280,
+						["srcname"] = "Mannoroth",
+					}, -- [15]
+					["pos"] = 6,
 				},
 				["alert"] = {
 				},
@@ -45458,129 +45458,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 3581198,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 15600,
-						["srcname"] = "Ekate-Drakkari",
-						["spellid"] = 33110,
-						["hp"] = 427164,
-						["ts"] = 1453234357.774,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 4680,
-						["srcname"] = "Ekate-Drakkari",
-						["spellid"] = 33110,
-						["hp"] = 431844,
-						["ts"] = 1453234357.774,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 5783,
-						["srcname"] = "Drunkenfury-Kilrogg",
-						["spellid"] = 132463,
-						["hp"] = 437627,
-						["ts"] = 1453234358.845,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 3469,
-						["srcname"] = "Drunkenfury-Kilrogg",
-						["spellid"] = 132463,
-						["hp"] = 441096,
-						["ts"] = 1453234358.845,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 1735,
-						["srcname"] = "Drunkenfury-Kilrogg",
-						["spellid"] = 132463,
-						["hp"] = 442831,
-						["ts"] = 1453234358.845,
-					}, -- [5]
-					{
-						["absorb"] = -2787,
-						["amount"] = -37177,
-						["srcname"] = "Mannoroth",
-						["spellid"] = 189280,
-						["hp"] = 405654,
-						["ts"] = 1453234359.242,
-					}, -- [6]
-					{
-						["absorb"] = -2787,
-						["amount"] = -36912,
-						["srcname"] = "Mannoroth",
-						["spellid"] = 189280,
-						["hp"] = 368742,
-						["ts"] = 1453234360.772,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 6291,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 81269,
-						["hp"] = 375033,
-						["ts"] = 1453234360.877,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 1888,
-						["ts"] = 1453234360.877,
-						["spellid"] = 81269,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["hp"] = 376921,
-					}, -- [9]
-					{
-						["absorb"] = -2787,
-						["amount"] = -35719,
-						["srcname"] = "Mannoroth",
-						["spellid"] = 189280,
-						["hp"] = 341202,
-						["ts"] = 1453234362.275,
-					}, -- [10]
-					{
-						["absorb"] = -2787,
-						["amount"] = -11924,
-						["srcname"] = "Mannoroth",
-						["spellid"] = 182088,
-						["hp"] = 329278,
-						["ts"] = 1453234364.213,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 15149,
-						["srcname"] = "Rheomyst-Stormrage",
-						["spellid"] = 185019,
-						["hp"] = 344427,
-						["ts"] = 1453234365.183,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 8365,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 157982,
-						["hp"] = 443611,
-						["ts"] = 1453234356.71,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 4095,
-						["srcname"] = "Optistriker-Gorgonnash",
-						["spellid"] = 185019,
-						["hp"] = 447706,
-						["ts"] = 1453234357.161,
-					}, -- [14]
-					{
-						["absorb"] = -2787,
-						["amount"] = -36142,
-						["srcname"] = "Mannoroth",
-						["spellid"] = 189280,
-						["hp"] = 411564,
-						["ts"] = 1453234357.774,
-					}, -- [15]
-					["pos"] = 13,
-				},
+				["shielding"] = 261978,
 				["id"] = "Player-60-062230D3",
 				["maxhp"] = 455460,
 				["healing"] = 344561,
@@ -45755,8 +45633,130 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Grinkot",
 				["alertCount"] = 0,
-				["shielding"] = 261978,
 				["power"] = {
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 15600,
+						["srcname"] = "Ekate-Drakkari",
+						["spellid"] = 33110,
+						["hp"] = 427164,
+						["ts"] = 1453234357.774,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 4680,
+						["srcname"] = "Ekate-Drakkari",
+						["spellid"] = 33110,
+						["hp"] = 431844,
+						["ts"] = 1453234357.774,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 5783,
+						["srcname"] = "Drunkenfury-Kilrogg",
+						["spellid"] = 132463,
+						["hp"] = 437627,
+						["ts"] = 1453234358.845,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 3469,
+						["srcname"] = "Drunkenfury-Kilrogg",
+						["spellid"] = 132463,
+						["hp"] = 441096,
+						["ts"] = 1453234358.845,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 1735,
+						["srcname"] = "Drunkenfury-Kilrogg",
+						["spellid"] = 132463,
+						["hp"] = 442831,
+						["ts"] = 1453234358.845,
+					}, -- [5]
+					{
+						["absorb"] = -2787,
+						["amount"] = -37177,
+						["srcname"] = "Mannoroth",
+						["spellid"] = 189280,
+						["hp"] = 405654,
+						["ts"] = 1453234359.242,
+					}, -- [6]
+					{
+						["absorb"] = -2787,
+						["amount"] = -36912,
+						["srcname"] = "Mannoroth",
+						["spellid"] = 189280,
+						["hp"] = 368742,
+						["ts"] = 1453234360.772,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 6291,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 81269,
+						["hp"] = 375033,
+						["ts"] = 1453234360.877,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 1888,
+						["ts"] = 1453234360.877,
+						["spellid"] = 81269,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["hp"] = 376921,
+					}, -- [9]
+					{
+						["absorb"] = -2787,
+						["amount"] = -35719,
+						["srcname"] = "Mannoroth",
+						["spellid"] = 189280,
+						["hp"] = 341202,
+						["ts"] = 1453234362.275,
+					}, -- [10]
+					{
+						["absorb"] = -2787,
+						["amount"] = -11924,
+						["srcname"] = "Mannoroth",
+						["spellid"] = 182088,
+						["hp"] = 329278,
+						["ts"] = 1453234364.213,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 15149,
+						["srcname"] = "Rheomyst-Stormrage",
+						["spellid"] = 185019,
+						["hp"] = 344427,
+						["ts"] = 1453234365.183,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 8365,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 157982,
+						["hp"] = 443611,
+						["ts"] = 1453234356.71,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 4095,
+						["srcname"] = "Optistriker-Gorgonnash",
+						["spellid"] = 185019,
+						["hp"] = 447706,
+						["ts"] = 1453234357.161,
+					}, -- [14]
+					{
+						["absorb"] = -2787,
+						["amount"] = -36142,
+						["srcname"] = "Mannoroth",
+						["spellid"] = 189280,
+						["hp"] = 411564,
+						["ts"] = 1453234357.774,
+					}, -- [15]
+					["pos"] = 13,
 				},
 				["alert"] = {
 				},
@@ -45824,11 +45824,11 @@ SkadaPerCharDB = {
 						["uptime"] = 214,
 						["auratype"] = "BUFF",
 					},
-					["Combo Breaker: Blackout Kick"] = {
-						["name"] = "Combo Breaker: Blackout Kick",
+					["Energizing Brew"] = {
+						["name"] = "Energizing Brew",
 						["active"] = 0,
-						["id"] = 116768,
-						["uptime"] = 80,
+						["id"] = 115288,
+						["uptime"] = 12,
 						["auratype"] = "BUFF",
 					},
 					["Storm, Earth, and Fire"] = {
@@ -45838,11 +45838,11 @@ SkadaPerCharDB = {
 						["uptime"] = 13,
 						["auratype"] = "BUFF",
 					},
-					["Spirit Shift"] = {
-						["name"] = "Spirit Shift",
+					["Combo Breaker: Blackout Kick"] = {
+						["name"] = "Combo Breaker: Blackout Kick",
 						["active"] = 0,
-						["id"] = 184293,
-						["uptime"] = 54,
+						["id"] = 116768,
+						["uptime"] = 80,
 						["auratype"] = "BUFF",
 					},
 					["Exhaustion"] = {
@@ -45929,11 +45929,11 @@ SkadaPerCharDB = {
 						["uptime"] = 335,
 						["auratype"] = "DEBUFF",
 					},
-					["Energizing Brew"] = {
-						["name"] = "Energizing Brew",
+					["Spirit Shift"] = {
+						["name"] = "Spirit Shift",
 						["active"] = 0,
-						["id"] = 115288,
-						["uptime"] = 12,
+						["id"] = 184293,
+						["uptime"] = 54,
 						["auratype"] = "BUFF",
 					},
 					["Storm Spirit: Storm, Earth, and Fire"] = {
@@ -45950,8 +45950,7 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 1,
 				["ccbreaks"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 257237,
 				["damage"] = 24980246,
 				["damagespells"] = {
 					["Fists of Fury"] = {
@@ -46154,16 +46153,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1453234323.78103,
 								["amount"] = -39446,
+								["hp"] = 395734,
 								["spellid"] = 189280,
 								["srcname"] = "Mannoroth",
-								["hp"] = 395734,
 							}, -- [3]
 							{
 								["ts"] = 1453234323.78104,
 								["amount"] = -39664,
+								["hp"] = 356070,
 								["spellid"] = 189280,
 								["srcname"] = "Mannoroth",
-								["hp"] = 356070,
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -46216,9 +46215,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1453234325.27611,
 								["amount"] = -390203,
+								["hp"] = 1,
 								["spellid"] = 185847,
 								["srcname"] = "Mannoroth",
-								["hp"] = 1,
 							}, -- [11]
 							{
 								["spellname"] = "Xinsu dies",
@@ -46256,23 +46255,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 2913696,
-				["power"] = {
-					[12] = {
-						["spells"] = {
-							[157558] = 42,
-							[115399] = 14,
-							[115687] = 138,
-							[115072] = 20,
-							[129881] = 6,
-						},
-						["amount"] = 220,
-					},
-					[3] = {
-						["spells"] = {
-							[115288] = 120,
-						},
-						["amount"] = 120,
-					},
+				["deathlog"] = {
 				},
 				["id"] = "Player-60-09BFA8CD",
 				["maxhp"] = 435180,
@@ -46997,7 +46980,24 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Xinsu",
 				["alertCount"] = 0,
-				["shielding"] = 257237,
+				["power"] = {
+					[12] = {
+						["spells"] = {
+							[157558] = 42,
+							[115399] = 14,
+							[115687] = 138,
+							[115072] = 20,
+							[129881] = 6,
+						},
+						["amount"] = 220,
+					},
+					[3] = {
+						["spells"] = {
+							[115288] = 120,
+						},
+						["amount"] = 120,
+					},
+				},
 				["healingspells"] = {
 					["Expel Harm"] = {
 						["shielding"] = 0,
@@ -47108,11 +47108,11 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["auras"] = {
-					["Mirror Image: Felstorm"] = {
-						["name"] = "Mirror Image: Felstorm",
-						["active"] = 24,
-						["id"] = 184279,
-						["uptime"] = 405,
+					["Trueshot Aura"] = {
+						["name"] = "Trueshot Aura",
+						["active"] = 0,
+						["id"] = 19506,
+						["uptime"] = 0,
 						["auratype"] = "BUFF",
 					},
 					["Exhaustion"] = {
@@ -47122,11 +47122,11 @@ SkadaPerCharDB = {
 						["uptime"] = 51,
 						["auratype"] = "DEBUFF",
 					},
-					["Trueshot Aura"] = {
-						["name"] = "Trueshot Aura",
+					["Bombardment"] = {
+						["name"] = "Bombardment",
 						["active"] = 0,
-						["id"] = 19506,
-						["uptime"] = 0,
+						["id"] = 82921,
+						["uptime"] = 14,
 						["auratype"] = "BUFF",
 					},
 					["Rapid Fire"] = {
@@ -47150,11 +47150,11 @@ SkadaPerCharDB = {
 						["uptime"] = 240,
 						["auratype"] = "BUFF",
 					},
-					["Bombardment"] = {
-						["name"] = "Bombardment",
-						["active"] = 0,
-						["id"] = 82921,
-						["uptime"] = 14,
+					["Mirror Image: Felstorm"] = {
+						["name"] = "Mirror Image: Felstorm",
+						["active"] = 24,
+						["id"] = 184279,
+						["uptime"] = 405,
 						["auratype"] = "BUFF",
 					},
 					["Barrage"] = {
@@ -47171,8 +47171,7 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damage"] = 17777185,
 				["damagespells"] = {
 					["Auto Shot"] = {
@@ -47308,9 +47307,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1453234313.12803,
 								["amount"] = -25393,
+								["hp"] = 414246,
 								["spellid"] = 182088,
 								["srcname"] = "Mannoroth",
-								["hp"] = 414246,
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -47331,9 +47330,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1453234314.08406,
 								["amount"] = -25928,
+								["hp"] = 406269,
 								["spellid"] = 182088,
 								["srcname"] = "Mannoroth",
-								["hp"] = 406269,
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -47346,16 +47345,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1453234315.11408,
 								["amount"] = -37765,
+								["hp"] = 396655,
 								["spellid"] = 182088,
 								["srcname"] = "Mannoroth",
-								["hp"] = 396655,
 							}, -- [8]
 							{
 								["ts"] = 1453234316.06909,
 								["amount"] = -37786,
+								["hp"] = 358869,
 								["spellid"] = 182088,
 								["srcname"] = "Mannoroth",
-								["hp"] = 358869,
 							}, -- [9]
 							{
 								["spellname"] = "Starkeeperz dies",
@@ -47398,9 +47397,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1453234312.03015,
 								["amount"] = -12994,
+								["hp"] = 427946,
 								["spellid"] = 182088,
 								["srcname"] = "Mannoroth",
-								["hp"] = 427946,
 							}, -- [15]
 							["pos"] = 11,
 						},
@@ -47408,14 +47407,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 2234740,
-				["power"] = {
-					[2] = {
-						["spells"] = {
-							[157722] = 500,
-							[77443] = 616,
-						},
-						["amount"] = 1116,
-					},
+				["deathlog"] = {
 				},
 				["id"] = "Player-47-06A42F9A",
 				["maxhp"] = 440940,
@@ -47656,7 +47648,15 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Starkeeperz",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+					[2] = {
+						["spells"] = {
+							[157722] = 500,
+							[77443] = 616,
+						},
+						["amount"] = 1116,
+					},
+				},
 				["healingspells"] = {
 					["Kill Shot"] = {
 						["shielding"] = 0,
@@ -48029,129 +48029,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 3450829,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 511680,
-						["ts"] = 1453234363.192,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Camii-Kel'Thuzad",
-						["spellid"] = 143924,
-						["hp"] = 511680,
-						["ts"] = 1453234363.604,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 185875,
-						["hp"] = 511680,
-						["ts"] = 1453234364.213,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Camii-Kel'Thuzad",
-						["spellid"] = 143924,
-						["hp"] = 511680,
-						["ts"] = 1453234358.654,
-					}, -- [4]
-					{
-						["ts"] = 1453234359.333,
-						["amount"] = 0,
-						["hp"] = 511680,
-						["spellid"] = 1064,
-						["srcname"] = "Shamizard-Sargeras",
-						["absorb"] = 0,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 511680,
-						["ts"] = 1453234359.333,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 185875,
-						["hp"] = 511680,
-						["ts"] = 1453234359.603,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 185875,
-						["hp"] = 511680,
-						["ts"] = 1453234359.603,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Camii-Kel'Thuzad",
-						["spellid"] = 143924,
-						["hp"] = 511680,
-						["ts"] = 1453234359.839,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Camii-Kel'Thuzad",
-						["spellid"] = 143924,
-						["hp"] = 511680,
-						["ts"] = 1453234361.087,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 511680,
-						["ts"] = 1453234361.293,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 511680,
-						["ts"] = 1453234361.293,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 185875,
-						["hp"] = 511680,
-						["ts"] = 1453234361.874,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Camii-Kel'Thuzad",
-						["spellid"] = 143924,
-						["hp"] = 511680,
-						["ts"] = 1453234362.365,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Shamizard-Sargeras",
-						["spellid"] = 1064,
-						["hp"] = 511680,
-						["ts"] = 1453234363.192,
-					}, -- [15]
-					["pos"] = 4,
-				},
+				["shielding"] = 90451,
 				["id"] = "Player-3693-079A5104",
 				["maxhp"] = 511680,
 				["healing"] = 456630,
@@ -48355,7 +48233,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Camii",
 				["alertCount"] = 0,
-				["shielding"] = 90451,
 				["power"] = {
 					[14] = {
 						["spells"] = {
@@ -48363,6 +48240,129 @@ SkadaPerCharDB = {
 						},
 						["amount"] = 42,
 					},
+				},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 511680,
+						["ts"] = 1453234363.192,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Camii-Kel'Thuzad",
+						["spellid"] = 143924,
+						["hp"] = 511680,
+						["ts"] = 1453234363.604,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 185875,
+						["hp"] = 511680,
+						["ts"] = 1453234364.213,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Camii-Kel'Thuzad",
+						["spellid"] = 143924,
+						["hp"] = 511680,
+						["ts"] = 1453234358.654,
+					}, -- [4]
+					{
+						["ts"] = 1453234359.333,
+						["amount"] = 0,
+						["hp"] = 511680,
+						["spellid"] = 1064,
+						["srcname"] = "Shamizard-Sargeras",
+						["absorb"] = 0,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 511680,
+						["ts"] = 1453234359.333,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 185875,
+						["hp"] = 511680,
+						["ts"] = 1453234359.603,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 185875,
+						["hp"] = 511680,
+						["ts"] = 1453234359.603,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Camii-Kel'Thuzad",
+						["spellid"] = 143924,
+						["hp"] = 511680,
+						["ts"] = 1453234359.839,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Camii-Kel'Thuzad",
+						["spellid"] = 143924,
+						["hp"] = 511680,
+						["ts"] = 1453234361.087,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 511680,
+						["ts"] = 1453234361.293,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 511680,
+						["ts"] = 1453234361.293,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 185875,
+						["hp"] = 511680,
+						["ts"] = 1453234361.874,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Camii-Kel'Thuzad",
+						["spellid"] = 143924,
+						["hp"] = 511680,
+						["ts"] = 1453234362.365,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Shamizard-Sargeras",
+						["spellid"] = 1064,
+						["hp"] = 511680,
+						["ts"] = 1453234363.192,
+					}, -- [15]
+					["pos"] = 4,
 				},
 				["alert"] = {
 				},
@@ -48409,11 +48409,11 @@ SkadaPerCharDB = {
 						["class"] = "HUNTER",
 						["role"] = "DAMAGER",
 					},
-					["Optistriker-Gorgonnash"] = {
-						["taken"] = 0,
-						["done"] = 406140,
-						["class"] = "DRUID",
-						["role"] = "HEALER",
+					["Lumilidor-Whisperwind"] = {
+						["taken"] = 213047,
+						["done"] = 0,
+						["class"] = "DEATHKNIGHT",
+						["role"] = "TANK",
 					},
 					["Salëën-Moonrunner"] = {
 						["taken"] = 1408523,
@@ -48427,11 +48427,11 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["role"] = "DAMAGER",
 					},
-					["Chrisxd-Tichondrius"] = {
-						["taken"] = 3424097,
-						["done"] = 249214,
-						["class"] = "DEATHKNIGHT",
-						["role"] = "DAMAGER",
+					["Optistriker-Gorgonnash"] = {
+						["taken"] = 0,
+						["done"] = 406140,
+						["class"] = "DRUID",
+						["role"] = "HEALER",
 					},
 					["Shamizard-Sargeras"] = {
 						["taken"] = 36509,
@@ -48535,11 +48535,11 @@ SkadaPerCharDB = {
 						["class"] = "WARLOCK",
 						["role"] = "DAMAGER",
 					},
-					["Lumilidor-Whisperwind"] = {
-						["taken"] = 213047,
-						["done"] = 0,
+					["Chrisxd-Tichondrius"] = {
+						["taken"] = 3424097,
+						["done"] = 249214,
 						["class"] = "DEATHKNIGHT",
-						["role"] = "TANK",
+						["role"] = "DAMAGER",
 					},
 					["Cliffer-Stormrage"] = {
 						["taken"] = 1387099,
@@ -48631,11 +48631,11 @@ SkadaPerCharDB = {
 						["class"] = "PRIEST",
 						["role"] = "HEALER",
 					},
-					["Indigodawn-Dalaran"] = {
-						["taken"] = 40614,
-						["done"] = 154515,
-						["class"] = "MONK",
-						["role"] = "HEALER",
+					["Amånda-Hellscream"] = {
+						["taken"] = 210294,
+						["done"] = 202544,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
 					},
 					["Xinsu-Stormrage"] = {
 						["taken"] = 219408,
@@ -48649,11 +48649,11 @@ SkadaPerCharDB = {
 						["class"] = "DRUID",
 						["role"] = "HEALER",
 					},
-					["Slamm-Sargeras"] = {
-						["taken"] = 9599578,
-						["done"] = 100017,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
+					["Indigodawn-Dalaran"] = {
+						["taken"] = 40614,
+						["done"] = 154515,
+						["class"] = "MONK",
+						["role"] = "HEALER",
 					},
 					["Starkeeperz-Shu'halo"] = {
 						["taken"] = 3480347,
@@ -48715,10 +48715,10 @@ SkadaPerCharDB = {
 						["class"] = "HUNTER",
 						["role"] = "DAMAGER",
 					},
-					["Amånda-Hellscream"] = {
-						["taken"] = 210294,
-						["done"] = 202544,
-						["class"] = "SHAMAN",
+					["Slamm-Sargeras"] = {
+						["taken"] = 9599578,
+						["done"] = 100017,
+						["class"] = "HUNTER",
 						["role"] = "DAMAGER",
 					},
 					["Galm-Stormrage"] = {
@@ -49219,11 +49219,11 @@ SkadaPerCharDB = {
 						["class"] = "DRUID",
 						["role"] = "HEALER",
 					},
-					["Amånda-Hellscream"] = {
-						["taken"] = 16658851,
-						["done"] = 2306029,
-						["class"] = "SHAMAN",
-						["role"] = "DAMAGER",
+					["Indigodawn-Dalaran"] = {
+						["taken"] = 569508,
+						["done"] = 1667573,
+						["class"] = "MONK",
+						["role"] = "HEALER",
 					},
 					["Starkeeperz-Shu'halo"] = {
 						["taken"] = 9636197,
@@ -49285,16 +49285,16 @@ SkadaPerCharDB = {
 						["class"] = "HUNTER",
 						["role"] = "DAMAGER",
 					},
-					["Indigodawn-Dalaran"] = {
-						["taken"] = 569508,
-						["done"] = 1667573,
-						["class"] = "MONK",
-						["role"] = "HEALER",
-					},
 					["Slamm-Sargeras"] = {
 						["taken"] = 11749864,
 						["done"] = 989791,
 						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Amånda-Hellscream"] = {
+						["taken"] = 16658851,
+						["done"] = 2306029,
+						["class"] = "SHAMAN",
 						["role"] = "DAMAGER",
 					},
 					["Cliffer-Stormrage"] = {

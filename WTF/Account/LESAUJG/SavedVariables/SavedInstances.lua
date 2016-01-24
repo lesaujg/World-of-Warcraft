@@ -159,7 +159,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 343545,
 			["Faction"] = "Alliance",
 			["ILe"] = 655.799987792969,
-			["DailyResetTime"] = 1453546783,
+			["DailyResetTime"] = 1453719584,
 			["Quests"] = {
 			},
 			["Zone"] = "Town Hall",
@@ -313,7 +313,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 18549,
 			["Faction"] = "Alliance",
 			["ILe"] = 525.599975585938,
-			["DailyResetTime"] = 1453546783,
+			["DailyResetTime"] = 1453719584,
 			["Quests"] = {
 			},
 			["Race"] = "Dwarf",
@@ -465,7 +465,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 2875686,
 			["Faction"] = "Alliance",
 			["ILe"] = 45,
-			["DailyResetTime"] = 1453546783,
+			["DailyResetTime"] = 1453719584,
 			["Quests"] = {
 			},
 			["WeeklyResetTime"] = 1453805987,
@@ -615,7 +615,7 @@ SavedInstancesDB = {
 			["Skills"] = {
 			},
 			["ILe"] = 3.59999990463257,
-			["DailyResetTime"] = 1453546783,
+			["DailyResetTime"] = 1453719584,
 			["Quests"] = {
 			},
 			["IL"] = 4.93333339691162,
@@ -623,7 +623,7 @@ SavedInstancesDB = {
 		["Bracnar - Sisters of Elune"] = {
 			["lastbossyell"] = "Gul'dan: Heroic",
 			["IL"] = 729.866638183594,
-			["LastSeen"] = 1453492089,
+			["LastSeen"] = 1453638369,
 			["Class"] = "HUNTER",
 			["currency"] = {
 				[402] = {
@@ -651,7 +651,7 @@ SavedInstancesDB = {
 					["earnedThisWeek"] = 0,
 				},
 				[823] = {
-					["amount"] = 167783,
+					["amount"] = 167874,
 					["weeklyMax"] = 0,
 					["totalMax"] = 0,
 					["earnedThisWeek"] = 0,
@@ -663,7 +663,7 @@ SavedInstancesDB = {
 					["earnedThisWeek"] = 0,
 				},
 				[824] = {
-					["amount"] = 2418,
+					["amount"] = 3269,
 					["weeklyMax"] = 0,
 					["totalMax"] = 10000,
 					["earnedThisWeek"] = 0,
@@ -717,7 +717,7 @@ SavedInstancesDB = {
 					["earnedThisWeek"] = 0,
 				},
 				[1101] = {
-					["amount"] = 54665,
+					["amount"] = 54160,
 					["weeklyMax"] = 0,
 					["totalMax"] = 100000,
 					["earnedThisWeek"] = 0,
@@ -759,11 +759,11 @@ SavedInstancesDB = {
 			["LClass"] = "Hunter",
 			["RBGrating"] = 0,
 			["Race"] = "Dwarf",
-			["PlayedTotal"] = 30095698,
+			["PlayedTotal"] = 30096477,
 			["lastbosstime"] = 1453234361,
 			["lastbossyelltime"] = 1453234437,
-			["Money"] = 412712170,
-			["DailyResetTime"] = 1453546783,
+			["Money"] = 1789523190,
+			["DailyResetTime"] = 1453719584,
 			["lastboss"] = "Mannoroth: Heroic",
 			["BonusRoll"] = {
 				{
@@ -815,15 +815,15 @@ SavedInstancesDB = {
 					["currencyID"] = 1129,
 				}, -- [8]
 				{
-					["name"] = "Gorefiend: Heroic",
 					["item"] = "|cffa335ee|Hitem:124290:0:0:0:0:0:0:0:100:254:4:5:1:566:529|h[Mitts of Eternal Famishment]|h|r",
 					["time"] = 1452048368,
+					["name"] = "Gorefiend: Heroic",
 					["currencyID"] = 1129,
 				}, -- [9]
 				{
-					["item"] = "|cffa335ee|Hitem:124210:0:0:0:0:0:0:0:100:254:4:5:3:561:41:566:529|h[Choker of the Great Betrayer]|h|r",
 					["time"] = 1451420719,
 					["name"] = "Archimonde: Heroic",
+					["item"] = "|cffa335ee|Hitem:124210:0:0:0:0:0:0:0:100:254:4:5:3:561:41:566:529|h[Choker of the Great Betrayer]|h|r",
 					["currencyID"] = 1129,
 				}, -- [10]
 				{
@@ -833,9 +833,9 @@ SavedInstancesDB = {
 					["currencyID"] = 1129,
 				}, -- [11]
 				{
-					["name"] = "Tyrant Velhari: Heroic",
 					["item"] = "|cffa335ee|Hitem:124287:0:0:0:0:0:0:0:100:254:4:5:2:561:566:529|h[Spiked Throatcrusher Boots]|h|r",
 					["time"] = 1451364790,
+					["name"] = "Tyrant Velhari: Heroic",
 					["currencyID"] = 1129,
 				}, -- [12]
 				{
@@ -881,9 +881,9 @@ SavedInstancesDB = {
 					["currencyID"] = 697,
 				}, -- [19]
 				{
-					["time"] = 1450709971,
 					["name"] = "Feng the Accursed: 10 Player",
 					["item"] = "|cffa335ee|Hitem:85980:0:0:0:0:0:0:0:100:253:4:0:0:445|h[Wildfire Worldwalkers]|h|r",
+					["time"] = 1450709971,
 					["currencyID"] = 697,
 				}, -- [20]
 				{
@@ -899,9 +899,9 @@ SavedInstancesDB = {
 					["currencyID"] = 697,
 				}, -- [22]
 				{
-					["time"] = 1450206844,
 					["name"] = "Tyrant Velhari: Heroic",
 					["item"] = "|cffa335ee|Hitem:124300:0:0:0:0:0:0:0:100:254:4:5:1:566:529|h[Haughty Chain Legguards]|h|r",
+					["time"] = 1450206844,
 					["currencyID"] = 1129,
 				}, -- [23]
 				{
@@ -917,12 +917,12 @@ SavedInstancesDB = {
 					["currencyID"] = 1129,
 				}, -- [25]
 			},
-			["PlayedLevel"] = 3328959,
+			["PlayedLevel"] = 3329738,
 			["Faction"] = "Alliance",
 			["ILe"] = 729.866638183594,
 			["Skills"] = {
 				[169092] = {
-					["Expires"] = 1453546787,
+					["Expires"] = 1453719584,
 					["Title"] = "Enchanting: Temporal Crystal",
 					["Link"] = "|cffffd000|Henchant:169092|h[Enchanting: Temporal Crystal]|h|r",
 				},
@@ -1089,7 +1089,7 @@ SavedInstancesDB = {
 			["Zone"] = "Stormwind City",
 			["Race"] = "Human",
 			["Show"] = "saved",
-			["DailyResetTime"] = 1453546783,
+			["DailyResetTime"] = 1453719584,
 			["PlayedLevel"] = 103216,
 			["Faction"] = "Alliance",
 			["ILe"] = 0.200000002980232,
@@ -1240,7 +1240,7 @@ SavedInstancesDB = {
 			["lastbossyelltime"] = 1453092489,
 			["Money"] = 41245400,
 			["WeeklyResetTime"] = 1453805987,
-			["DailyResetTime"] = 1453546783,
+			["DailyResetTime"] = 1453719584,
 			["lastboss"] = "Conclave of Wind: 25 Player",
 			["Show"] = "saved",
 			["lastbosstime"] = 1453092381,
@@ -1821,7 +1821,7 @@ SavedInstancesDB = {
 					["Locked"] = false,
 				},
 				[15] = {
-					["Expires"] = 1453823979,
+					["Expires"] = 1453823976,
 					["Extended"] = false,
 					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06A1ACBD:1448:15:2560|h[Hellfire Citadel]|h|r",
 					["ID"] = 608046599,
@@ -2115,11 +2115,11 @@ SavedInstancesDB = {
 			["RecLevel"] = 80,
 			["Show"] = "saved",
 		},
-		["Siege of Orgrimmar"] = {
-			["LFDID"] = 766,
-			["Expansion"] = 4,
-			["Raid"] = true,
-			["RecLevel"] = 90,
+		["Lost City of the Tol'vir"] = {
+			["LFDID"] = 1151,
+			["Expansion"] = 3,
+			["Raid"] = false,
+			["RecLevel"] = 84,
 			["Show"] = "saved",
 		},
 		["Supreme Lord Kazzak"] = {
@@ -2143,21 +2143,12 @@ SavedInstancesDB = {
 			["RecLevel"] = 62,
 			["Show"] = "saved",
 		},
-		["Trial of the Champion"] = {
-			["Show"] = "saved",
-			["Expansion"] = 2,
-			["LFDID"] = 249,
+		["Stratholme - Service Entrance"] = {
+			["LFDID"] = 274,
+			["Expansion"] = 0,
+			["RecLevel"] = 50,
 			["Raid"] = false,
-			["Bracnar - Sisters of Elune"] = {
-				[2] = {
-					["Expires"] = 0,
-					["Extended"] = false,
-					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06A1ACBD:650:2:7|h[Trial of the Champion]|h|r",
-					["ID"] = 160784069,
-					["Locked"] = false,
-				},
-			},
-			["RecLevel"] = 80,
+			["Show"] = "saved",
 		},
 		["Throne of the Tides"] = {
 			["LFDID"] = 1150,
@@ -2180,11 +2171,11 @@ SavedInstancesDB = {
 			["RecLevel"] = 80,
 			["Show"] = "saved",
 		},
-		["Stratholme - Service Entrance"] = {
-			["LFDID"] = 274,
-			["Expansion"] = 0,
-			["RecLevel"] = 50,
-			["Raid"] = false,
+		["Siege of Orgrimmar"] = {
+			["LFDID"] = 766,
+			["Expansion"] = 4,
+			["Raid"] = true,
+			["RecLevel"] = 90,
 			["Show"] = "saved",
 		},
 		["Auchindoun"] = {
@@ -2203,11 +2194,11 @@ SavedInstancesDB = {
 			},
 			["RecLevel"] = 96,
 		},
-		["Lost City of the Tol'vir"] = {
-			["LFDID"] = 1151,
-			["Expansion"] = 3,
+		["Halls of Lightning"] = {
+			["LFDID"] = 1018,
+			["Expansion"] = 2,
 			["Raid"] = false,
-			["RecLevel"] = 84,
+			["RecLevel"] = 80,
 			["Show"] = "saved",
 		},
 		["Slave Pens"] = {
@@ -2732,12 +2723,21 @@ SavedInstancesDB = {
 			["Raid"] = false,
 			["Show"] = "saved",
 		},
-		["Halls of Lightning"] = {
-			["LFDID"] = 1018,
-			["Expansion"] = 2,
-			["Raid"] = false,
-			["RecLevel"] = 80,
+		["Trial of the Champion"] = {
 			["Show"] = "saved",
+			["Expansion"] = 2,
+			["LFDID"] = 249,
+			["Raid"] = false,
+			["Bracnar - Sisters of Elune"] = {
+				[2] = {
+					["Expires"] = 0,
+					["Extended"] = false,
+					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06A1ACBD:650:2:7|h[Trial of the Champion]|h|r",
+					["ID"] = 160784069,
+					["Locked"] = false,
+				},
+			},
+			["RecLevel"] = 80,
 		},
 		["Heart of Fear"] = {
 			["LFDID"] = 534,
@@ -2932,7 +2932,7 @@ SavedInstancesDB = {
 			[39020] = 971,
 			[39021] = 971,
 			[32640] = -1,
-			["expires"] = 1453805987,
+			["expires"] = 1453805984,
 			[32641] = -1,
 			[36054] = 1009,
 			[36055] = 1009,
@@ -2953,10 +2953,10 @@ SavedInstancesDB = {
 			[37453] = -1,
 		},
 		["AccountWeekly"] = {
-			["expires"] = 1453805987,
+			["expires"] = 1453805984,
 		},
 	},
-	["DailyResetTime"] = 1453546783,
+	["DailyResetTime"] = 1453719584,
 	["Quests"] = {
 	},
 	["Indicators"] = {
@@ -3016,8 +3016,8 @@ SavedInstancesDB = {
 			0, -- [2]
 			0, -- [3]
 		},
+		["R7Indicator"] = "BLANK",
 		["R2Text"] = "KILLED/TOTAL",
-		["R8Text"] = "KILLED/TOTALM",
 		["R8Indicator"] = "BLANK",
 		["R0Text"] = "KILLED/TOTAL",
 		["R0Color"] = {
@@ -3025,12 +3025,12 @@ SavedInstancesDB = {
 			0.6, -- [2]
 			0, -- [3]
 		},
+		["R1Indicator"] = "BLANK",
 		["R2Color"] = {
 			0.6, -- [1]
 			0, -- [2]
 			0, -- [3]
 		},
-		["R6Text"] = "KILLED/TOTAL",
 		["R3Indicator"] = "BLANK",
 		["R7ClassColor"] = true,
 		["R5Indicator"] = "BLANK",
@@ -3044,13 +3044,13 @@ SavedInstancesDB = {
 		["R3ClassColor"] = true,
 		["R3Text"] = "KILLED/TOTALH",
 		["R5ClassColor"] = true,
-		["R1Indicator"] = "BLANK",
+		["R6Text"] = "KILLED/TOTAL",
 		["D3Color"] = {
 			1, -- [1]
 			0, -- [2]
 			0, -- [3]
 		},
-		["R7Indicator"] = "BLANK",
+		["R8Text"] = "KILLED/TOTALM",
 		["D2Text"] = "KILLED/TOTALH",
 		["D3Text"] = "KILLED/TOTALM",
 		["R2Indicator"] = "BLANK",
