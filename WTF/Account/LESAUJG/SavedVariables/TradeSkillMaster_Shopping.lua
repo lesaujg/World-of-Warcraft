@@ -1,8 +1,16 @@
 
 TradeSkillMaster_ShoppingDB = {
-	["g@ @sniperCustomPrice"] = "0c",
-	["g@ @maxDeSearchPercent"] = 1,
-	["g@ @postUndercut"] = "1c",
+	["_currentProfile"] = {
+		["Orig - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
+	},
+	["_version"] = 3,
+	["g@ @sniperVendorPrice"] = true,
 	["g@ @postBidPercent"] = 0.95,
 	["_scopeKeys"] = {
 		["char"] = {
@@ -14,93 +22,96 @@ TradeSkillMaster_ShoppingDB = {
 			"Ghiaccioli - Sisters of Elune", -- [6]
 			"Herbinator - Sisters of Elune", -- [7]
 		},
-		["realm"] = {
-			"Sisters of Elune", -- [1]
+		["factionrealm"] = {
+			"Alliance - Sisters of Elune", -- [1]
 		},
 		["profile"] = {
 			"Default", -- [1]
 		},
-		["factionrealm"] = {
-			"Alliance - Sisters of Elune", -- [1]
+		["realm"] = {
+			"Sisters of Elune", -- [1]
 		},
 	},
 	["g@ @helpPlatesShown"] = {
 		["auction"] = true,
 	},
-	["g@ @sniperVendorPrice"] = true,
-	["_hash"] = 1861581,
+	["g@ @postUndercut"] = "1c",
+	["g@ @minDeSearchLvl"] = 1,
+	["g@ @maxDeSearchLvl"] = 735,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1453638565,
-			["name"] = "hexweave bag",
-			["filter"] = "hexweave bag",
+			["lastSearch"] = 1453693059,
+			["name"] = "universal",
+			["filter"] = "universal",
 		}, -- [1]
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1453638548,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
+			["lastSearch"] = 1453693040,
+			["name"] = "arcane c",
+			["filter"] = "arcane c",
 		}, -- [2]
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1453638458,
-			["name"] = "arcane c",
-			["filter"] = "arcane c",
+			["lastSearch"] = 1453693025,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
 		}, -- [3]
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1453638448,
-			["name"] = "universal",
-			["filter"] = "universal",
+			["lastSearch"] = 1453693021,
+			["name"] = "hexweave bag",
+			["filter"] = "hexweave bag",
 		}, -- [4]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1453692479,
+			["name"] = "sorcerous",
+			["filter"] = "sorcerous",
+		}, -- [5]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1453006657,
 			["name"] = "Mounts/Miscellaneous/Mount/usable",
 			["filter"] = "Mounts/Miscellaneous/Mount/usable",
-		}, -- [5]
+		}, -- [6]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1453005351,
 			["name"] = "essence of air",
 			["filter"] = "essence of air",
-		}, -- [6]
+		}, -- [7]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452570334,
 			["name"] = "Primal fire",
 			["filter"] = "Primal fire",
-		}, -- [7]
+		}, -- [8]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452570327,
 			["name"] = "Primal might",
 			["filter"] = "Primal might",
-		}, -- [8]
+		}, -- [9]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452566206,
 			["name"] = "blackrock ore",
 			["filter"] = "blackrock ore",
-		}, -- [9]
+		}, -- [10]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452565837,
 			["name"] = "flask",
 			["filter"] = "flask",
-		}, -- [10]
+		}, -- [11]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452471365,
 			["name"] = "legion",
 			["filter"] = "legion",
-		}, -- [11]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1452040768,
-			["name"] = "sorcerous",
-			["filter"] = "sorcerous",
 		}, -- [12]
 		{
 			["searchMode"] = "normal",
@@ -127,19 +138,8 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "saberfish",
 		}, -- [16]
 	},
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
-	["g@ @marketValueSource"] = "dbmarket",
-	["g@ @maxDeSearchLvl"] = 735,
-	["g@ @minDeSearchLvl"] = 1,
+	["_hash"] = 1861581,
 	["g@ @normalPostPrice"] = "150% dbmarket",
-	["_version"] = 3,
-	["_currentProfile"] = {
-		["Uldaris - Sisters of Elune"] = "Default",
-		["Galinar - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Orig - Sisters of Elune"] = "Default",
-	},
+	["g@ @maxDeSearchPercent"] = 1,
+	["g@ @sniperCustomPrice"] = "0c",
 }
