@@ -22,7 +22,7 @@ local LibParse = LibStub("LibParse")
 local baseItemLookup = { update = 0 }
 
 local settingsInfo = {
-	version = 1,
+	version = 2,
 	global = {
 		displayTransfers = { type = "boolean", default = true, lastModifiedVersion = 1 },
 		trackTrades = { type = "boolean", default = true, lastModifiedVersion = 1 },
@@ -43,6 +43,8 @@ local settingsInfo = {
 		csvCancelled = { type = "string", default = "", lastModifiedVersion = 1 },
 		saveTimeSales = { type = "string", default = "", lastModifiedVersion = 1 },
 		saveTimeBuys = { type = "string", default = "", lastModifiedVersion = 1 },
+		saveTimeExpires = { type = "string", default = "", lastModifiedVersion = 2 },
+		saveTimeCancels = { type = "string", default = "", lastModifiedVersion = 2 },
 		goldGraphCharacter = { type = "string", default = nil, lastModifiedVersion = 1 },
 		goldGraphTimeframe = { type = "number", default = 30, lastModifiedVersion = 1 },
 		goldLog = { type = "table", default = {}, lastModifiedVersion = 1 },
@@ -252,15 +254,13 @@ function TSM:LoadTooltip(itemString, quantity, options, moneyCoins, lines)
 	end
 end
 
-function TSM:OnTSMDBShutdown(appDB)
+function TSM:OnTSMDBShutdown()
 	-- process items
-	local appDBSales = {}
 	local sales, buys, cancels, expires = {}, {}, {}, {}
-	local saveTimeSales, saveTimeBuys = {}, {}
+	local saveTimeSales, saveTimeBuys, saveTimeExpires, saveTimeCancels = {}, {}, {}, {}
 	for itemString, data in pairs(TSM.items) do
 		local name = data.itemName or TSMAPI.Item:GetInfo(itemString) or TSM:GetItemName(itemString) or "?"
 		name = gsub(name, ",", "") -- can't have commas in the itemNames in the CSV
-		local itemAppData = {}
 
 		-- process sales
 		for _, record in ipairs(data.sales) do
@@ -272,7 +272,6 @@ function TSM:OnTSMDBShutdown(appDB)
 			if record.key == "Auction" then
 				record.saveTime = record.saveTime or time()
 				tinsert(saveTimeSales, record.saveTime)
-				tinsert(itemAppData, { record.copper, record.quantity, record.time, record.saveTime, 2 })
 			end
 			tinsert(sales, record)
 		end
@@ -287,20 +286,8 @@ function TSM:OnTSMDBShutdown(appDB)
 			if record.key == "Auction" then
 				record.saveTime = record.saveTime or time()
 				tinsert(saveTimeBuys, record.saveTime)
-				tinsert(itemAppData, { record.copper, record.quantity, record.time, record.saveTime, 3 })
 			end
 			tinsert(buys, record)
-		end
-		local itemID = TSMAPI.Item:ToItemID(itemString)
-		if itemID and #itemAppData > 0 then
-			itemID = tostring(itemID)
-			if appDBSales[itemID] then
-				for i = 1, #itemAppData do
-					tinsert(appDBSales[itemID], itemAppData[i])
-				end
-			else
-				appDBSales[itemID] = itemAppData
-			end
 		end
 
 		-- process auctions
@@ -308,8 +295,12 @@ function TSM:OnTSMDBShutdown(appDB)
 			record.itemString = itemString
 			record.itemName = name
 			if record.key == "Cancel" then
+				record.saveTime = record.saveTime or time()
+				tinsert(saveTimeCancels, record.saveTime)
 				tinsert(cancels, record)
 			elseif record.key == "Expire" then
+				record.saveTime = record.saveTime or time()
+				tinsert(saveTimeExpires, record.saveTime)
 				tinsert(expires, record)
 			end
 		end
@@ -328,6 +319,8 @@ function TSM:OnTSMDBShutdown(appDB)
 
 	TSM.db.realm.saveTimeSales = table.concat(saveTimeSales, ",")
 	TSM.db.realm.saveTimeBuys = table.concat(saveTimeBuys, ",")
+	TSM.db.realm.saveTimeExpires = table.concat(saveTimeExpires, ",")
+	TSM.db.realm.saveTimeCancels = table.concat(saveTimeCancels, ",")
 	TSM.db.realm.csvSales = LibParse:CSVEncode(TSM.SELL_KEYS, sales)
 	TSM.db.realm.csvBuys = LibParse:CSVEncode(TSM.BUY_KEYS, buys)
 	TSM.db.realm.csvCancelled = LibParse:CSVEncode(TSM.CANCELLED_KEYS, cancels)
@@ -374,12 +367,6 @@ function TSM:OnTSMDBShutdown(appDB)
 		if type(data) == "table" then
 			TSM.db.realm.goldLog[player] = LibParse:CSVEncode(TSM.GOLD_LOG_KEYS, data)
 		end
-	end
-
-	-- TODO: remove and clean up when the new app is released
-	if not appDB and TSM.appDB then
-		TSM.appDB.realm.sales = appDBSales
-		TradeSkillMasterAppDB.version = max(TradeSkillMasterAppDB.version, 9)
 	end
 end
 
