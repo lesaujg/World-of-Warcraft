@@ -22,7 +22,7 @@ SkadaDB = {
 					["y"] = 244.000579833984,
 					["x"] = 26.9963970184326,
 					["point"] = "BOTTOMLEFT",
-					["mode"] = "Damage",
+					["mode"] = "Healing",
 				}, -- [1]
 			},
 			["icon"] = {
