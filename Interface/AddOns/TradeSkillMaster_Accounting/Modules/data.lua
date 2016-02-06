@@ -80,8 +80,7 @@ function private:LoadItemRecords(csvData, recordType, key)
 	for _, record in ipairs(select(2, LibParse:CSVDecode(csvData)) or {}) do
 		local itemString = TSMAPI.Item:ToItemString(record.itemString)
 		if itemString and type(record.time) == "number" then
-			local itemName = (record.itemName ~= "?") and record.itemName or nil
-			itemName = itemName or TSMAPI.Item:GetInfo(itemString) or TSM:GetItemName(itemString)
+			local itemName = TSMAPI.Item:GetInfo(itemString) or TSM:GetItemName(itemString)
 			record.key = key or record.source or "Auction"
 			private:CleanRecord(record)
 			if saveTimes and (record.key == "Auction" or record.key == "Expire" or record.key == "Cancel") then

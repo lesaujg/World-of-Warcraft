@@ -9,12 +9,12 @@
 -- register this file with Ace Libraries
 local TSM = select(2, ...)
 TSM = LibStub("AceAddon-3.0"):NewAddon(TSM, "TSM_Accounting", "AceEvent-3.0", "AceConsole-3.0")
-TSM.SELL_KEYS = { "itemString", "itemName", "stackSize", "quantity", "price", "buyer", "player", "time", "source" }
-TSM.BUY_KEYS = { "itemString", "itemName", "stackSize", "quantity", "price", "seller", "player", "time", "source" }
+TSM.SELL_KEYS = { "itemString", "stackSize", "quantity", "price", "buyer", "player", "time", "source" }
+TSM.BUY_KEYS = { "itemString", "stackSize", "quantity", "price", "seller", "player", "time", "source" }
 TSM.INCOME_KEYS = { "type", "amount", "source", "player", "time" }
 TSM.EXPENSE_KEYS = { "type", "amount", "destination", "player", "time" }
-TSM.EXPIRED_KEYS = { "itemString", "itemName", "stackSize", "quantity", "player", "time" }
-TSM.CANCELLED_KEYS = { "itemString", "itemName", "stackSize", "quantity", "player", "time" }
+TSM.EXPIRED_KEYS = { "itemString", "stackSize", "quantity", "player", "time" }
+TSM.CANCELLED_KEYS = { "itemString", "stackSize", "quantity", "player", "time" }
 TSM.GOLD_LOG_KEYS = { "startMinute", "endMinute", "copper" }
 local MAX_CSV_RECORDS = 55000
 local L = LibStub("AceLocale-3.0"):GetLocale("TradeSkillMaster_Accounting") -- loads the localization table
@@ -260,12 +260,11 @@ function TSM:OnTSMDBShutdown()
 	local saveTimeSales, saveTimeBuys, saveTimeExpires, saveTimeCancels = {}, {}, {}, {}
 	for itemString, data in pairs(TSM.items) do
 		local name = data.itemName or TSMAPI.Item:GetInfo(itemString) or TSM:GetItemName(itemString) or "?"
-		name = gsub(name, ",", "") -- can't have commas in the itemNames in the CSV
+		TSM.db.global.itemStrings[name] = TSM.db.global.itemStrings[name] or itemString
 
 		-- process sales
 		for _, record in ipairs(data.sales) do
 			record.itemString = itemString
-			record.itemName = name
 			record.buyer = record.otherPlayer
 			record.source = record.key
 			record.price = record.copper
@@ -279,7 +278,6 @@ function TSM:OnTSMDBShutdown()
 		-- process buys
 		for _, record in ipairs(data.buys) do
 			record.itemString = itemString
-			record.itemName = name
 			record.seller = record.otherPlayer
 			record.source = record.key
 			record.price = record.copper
@@ -293,7 +291,6 @@ function TSM:OnTSMDBShutdown()
 		-- process auctions
 		for _, record in ipairs(data.auctions) do
 			record.itemString = itemString
-			record.itemName = name
 			if record.key == "Cancel" then
 				record.saveTime = record.saveTime or time()
 				tinsert(saveTimeCancels, record.saveTime)

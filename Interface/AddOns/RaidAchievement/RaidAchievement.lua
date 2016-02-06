@@ -6,7 +6,7 @@ if GetLocale()=="deDE" or GetLocale()=="ruRU" or GetLocale()=="zhTW" or GetLocal
 end
 
 
-	raversion=6.226
+	raversion=6.227
 	local raverstiptext="alpha"
 	if string.len(raversion)==6 then
 		raverstiptext="beta"
@@ -20,6 +20,7 @@ end
 	if wherereportraidach==nil then wherereportraidach="raid" end
 	if wherereportpartyach==nil then wherereportpartyach="party" end
 	if raminibutshowt==nil then raminibutshowt=true end
+	if raannouncerun==nil then raannouncerun=0 end
 	if RA_Settings==nil then RA_Settings = {RAMinimapPos = -176} end
 	rabigmenuchatlisten={"raid", "raid_warning", "officer", "party", "guild", "say", "yell", "sebe"}
 	ralowmenuchatlisten={"party", "officer", "guild", "say", "yell", "sebe"}
@@ -2242,15 +2243,31 @@ if radonateq1<50 then
 	radonateq1=radonateq1+1
 end
 
+
+--инфо о ДР
+local _, month, day, year = CalendarGetDate()
+if (year==2016 and month==2 and (day==12 or day==13) and raannouncerun==0) then
+	local text=""
+	text="|cff00ff00RaidAchievement|r > Hello. |cff00ff00It's my birthday today! :)|r If you like this addon and would like to see it in the |cff00ff00Legion|r - please help to maintain it. In 2015 I got just 70 euro of donations and I don't play anymore.. More info: http://www.phoenixstyle.com/"
+	
+	out (text)
+	
+	raannouncerun=1
+	psDoNotShowOtherAnnounces=1
+end
+
+
+
+
 if radonateq1==50 then
-if UnitInRaid("player")==nil and UnitInParty("player")==nil then
+if UnitInRaid("player")==nil and UnitInParty("player")==nil and psDoNotShowOtherAnnounces==nil then
   radonateq1=radonateq1+1
   --сообщение
   --local text="|cff00ff00RaidAchievement|r |cffff0000important update:|r to track achieves from Cataclysm and WotLK you have to |cff00ff00download RaidAchievement_OldModules|r (from curse). |cff00ff00AchievementsReminder|r - is now a separate addon and will have new features soon, if you need it - take it from curse too."
-  local text="|cff00ff00RaidAchievement|r > need your help, so addon will be available in |cff00ff00Warlords of Draenor|r too. More info: http://www.phoenixstyle.com/help"
+  local text="|cff00ff00RaidAchievement|r > need your help, so addon will be available in |cff00ff00Legion|r too. More info: http://www.phoenixstyle.com/help"
   if GetLocale()=="ruRU" then
     --text="|cff00ff00RaidAchievement|r |cffff0000важное обновление:|r для трекера достижений Катаклизма and ЛК требуется |cff00ff00скачать RaidAchievement_OldModules|r (с curse сайта). |cff00ff00AchievementsReminder|r - теперь отдельный независимый аддон, скоро с новыми функциями, если он вам тоже нужен - скачайте его отдельно."
-	text="|cff00ff00RaidAchievement|r > требуется Ваша помощь, чтобы аддон продолжил свое существование в |cff00ff00Warlords of Draenor!|r Детальнее: http://www.phoenixstyle.com/help"
+	text="|cff00ff00RaidAchievement|r > требуется Ваша помощь, чтобы аддон продолжил свое существование в |cff00ff00Легионе!|r Детальнее: http://www.phoenixstyle.com/help"
   end
   
   out(text)

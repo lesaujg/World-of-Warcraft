@@ -1,3 +1,6 @@
+v3.0.3
+*Changed how Accounting data is stored.
+
 v3.0.2
 *Various changes to prepare for r303 of the TSM Desktop Application.
 *Removed a bunch of dead code.

@@ -1,3 +1,6 @@
+v3.0.5
+*Increase max slider values to 5k for reset scan options.
+
 v3.0.4
 *Fixed issue with item auctions not properly updating.
 *Fixed visual issue with log tooltip for reset scan.

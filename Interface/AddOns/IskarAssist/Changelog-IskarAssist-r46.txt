@@ -1,6 +1,14 @@
+2016-02-04  Tercioo  <Tercioo>
+
+[a238e4892422] [tip]
+* IskarAssist.lua:
+
+- iskar assist title text fix.
+
+
 2016-01-21  Tercioo  <Tercioo>
 
-[477f48d40ea2] [tip]
+[477f48d40ea2]
 * IskarAssist.lua, Libs/LibSharedMedia-3.0/LibSharedMedia-3.0.lua, Libs/LibSharedMedia-3.0/lib.xml:
 
 - Trying to fix a problem with a library.
@@ -233,13 +241,5 @@ v0.15 release
 * IskarAssist.lua, Libs/DF/button.lua, Libs/DF/panel.lua:
 
 - update on lib details framework.
-
-
-2015-07-16  Tercio  <Tercio>
-
-[b6eec63212cc]
-* IskarAssist.lua:
-
-- Added Darkbindings aura.
 
 
