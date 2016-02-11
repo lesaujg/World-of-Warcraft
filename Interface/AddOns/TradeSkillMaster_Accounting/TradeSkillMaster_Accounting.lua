@@ -367,12 +367,16 @@ function TSM:OnTSMDBShutdown()
 	end
 end
 
+local itemNameCache = {}
+local itemNameCacheTime = 0
 function TSM:GetItemName(item)
-	for itemName, itemString in pairs(TSM.db.global.itemStrings) do
-		if itemString == item then
-			return itemName
+	if itemNameCacheTime ~= GetTime() then
+		for itemName, itemString in pairs(TSM.db.global.itemStrings) do
+			itemNameCache[itemString] = itemName
 		end
+		itemNameCacheTime = GetTime()
 	end
+	return itemNameCache[item]
 end
 
 function TSM:UpdateBaseItemLookup()

@@ -6,7 +6,7 @@ if GetLocale()=="deDE" or GetLocale()=="ruRU" or GetLocale()=="zhTW" or GetLocal
 end
 
 
-	raversion=6.227
+	raversion=6.228
 	local raverstiptext="alpha"
 	if string.len(raversion)==6 then
 		raverstiptext="beta"
@@ -2248,7 +2248,7 @@ end
 local _, month, day, year = CalendarGetDate()
 if (year==2016 and month==2 and (day==12 or day==13) and raannouncerun==0) then
 	local text=""
-	text="|cff00ff00RaidAchievement|r > Hello. |cff00ff00It's my birthday today! :)|r If you like this addon and would like to see it in the |cff00ff00Legion|r - please help to maintain it. In 2015 I got just 70 euro of donations and I don't play anymore.. More info: http://www.phoenixstyle.com/"
+	text="|cff00ff00RaidAchievement|r > Hello. |cff00ff00It's my birthday today! :)|r If you like this addon and would like to see it in the |cff00ff00Legion|r - please help to maintain it. In 2015 I got just 70 euro of donations and I don't play anymore.. More info: http://www.phoenixstyle.com/ (or on curse.com)"
 	
 	out (text)
 	

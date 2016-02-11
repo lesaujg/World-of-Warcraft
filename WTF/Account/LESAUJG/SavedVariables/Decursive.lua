@@ -34,12 +34,12 @@ DecursiveDB = {
 		},
 		["PALADIN"] = {
 			["CureOrder"] = {
-				-11, -- [1]
+				nil, -- [1]
 				-15, -- [2]
 				nil, -- [3]
 				-14, -- [4]
-				[8] = -12,
-				[16] = -13,
+				[8] = 2,
+				[16] = 3,
 				[32] = -16,
 			},
 		},
@@ -78,7 +78,7 @@ DecursiveDB = {
 		},
 	},
 	["global"] = {
-		["LastVersionAnnounce"] = 1454297503,
+		["LastVersionAnnounce"] = 1455133347,
 	},
 	["profiles"] = {
 		["Default"] = {

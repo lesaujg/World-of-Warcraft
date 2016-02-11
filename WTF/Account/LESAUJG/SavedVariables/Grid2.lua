@@ -19,8 +19,8 @@ Grid2DB = {
 					["minimapIcon"] = {
 						["minimapPos"] = 321.418909836338,
 					},
-					["PosX"] = 499.999910699131,
 					["PosY"] = -200.00007365465,
+					["PosX"] = 499.999910699131,
 				},
 			},
 		},
@@ -318,97 +318,6 @@ Grid2DB = {
 			},
 		},
 		["Galinar - Sisters of Elune"] = {
-			["statuses"] = {
-				["debuff-Forbearance"] = {
-					["type"] = "debuff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0,
-						["g"] = 0,
-						["r"] = 1,
-					},
-					["spellName"] = 25771,
-				},
-				["buff-BeaconOfLight-mine"] = {
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
-					["type"] = "buff",
-					["mine"] = true,
-					["spellName"] = 53563,
-				},
-				["buff-DivineProtection-mine"] = {
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
-					["type"] = "buff",
-					["mine"] = true,
-					["spellName"] = 498,
-				},
-				["buff-BeaconOfLight"] = {
-					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 0.7,
-					},
-					["spellName"] = 53563,
-				},
-				["buff-HandOfProtection-mine"] = {
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
-					["type"] = "buff",
-					["mine"] = true,
-					["spellName"] = 1022,
-				},
-				["buff-HandOfSalvation"] = {
-					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
-					["spellName"] = 1038,
-				},
-				["buff-HandOfSalvation-mine"] = {
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0.7,
-						["g"] = 0.8,
-						["r"] = 0.8,
-					},
-					["type"] = "buff",
-					["mine"] = true,
-					["spellName"] = 1038,
-				},
-				["buff-DivineShield-mine"] = {
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
-					["type"] = "buff",
-					["mine"] = true,
-					["spellName"] = 642,
-				},
-			},
-			["versions"] = {
-				["Grid2"] = 5,
-				["Grid2RaidDebuffs"] = 1,
-			},
 			["indicators"] = {
 				["corner-top-left"] = {
 					["type"] = "text",
@@ -706,6 +615,97 @@ Grid2DB = {
 					["death"] = 95,
 				},
 			},
+			["versions"] = {
+				["Grid2"] = 5,
+				["Grid2RaidDebuffs"] = 1,
+			},
+			["statuses"] = {
+				["debuff-Forbearance"] = {
+					["type"] = "debuff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0,
+						["g"] = 0,
+						["r"] = 1,
+					},
+					["spellName"] = 25771,
+				},
+				["buff-BeaconOfLight-mine"] = {
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["type"] = "buff",
+					["mine"] = true,
+					["spellName"] = 53563,
+				},
+				["buff-HandOfSalvation-mine"] = {
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0.7,
+						["g"] = 0.8,
+						["r"] = 0.8,
+					},
+					["type"] = "buff",
+					["mine"] = true,
+					["spellName"] = 1038,
+				},
+				["buff-HandOfProtection-mine"] = {
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["type"] = "buff",
+					["mine"] = true,
+					["spellName"] = 1022,
+				},
+				["buff-HandOfSalvation"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["spellName"] = 1038,
+				},
+				["buff-BeaconOfLight"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 0.7,
+					},
+					["spellName"] = 53563,
+				},
+				["buff-DivineShield-mine"] = {
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["type"] = "buff",
+					["mine"] = true,
+					["spellName"] = 642,
+				},
+				["buff-DivineProtection-mine"] = {
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["type"] = "buff",
+					["mine"] = true,
+					["spellName"] = 498,
+				},
+			},
 		},
 		["Ghiaccioli - Sisters of Elune"] = {
 			["statuses"] = {
@@ -981,17 +981,6 @@ Grid2DB = {
 						["b"] = 0.2,
 					},
 				},
-				["buff-Rejuvenation-mine"] = {
-					["spellName"] = 774,
-					["type"] = "buff",
-					["mine"] = true,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 0,
-						["b"] = 0.6,
-					},
-				},
 				["buff-Regrowth-mine"] = {
 					["spellName"] = 8936,
 					["type"] = "buff",
@@ -1001,6 +990,17 @@ Grid2DB = {
 						["r"] = 0.5,
 						["g"] = 1,
 						["b"] = 0,
+					},
+				},
+				["buff-Rejuvenation-mine"] = {
+					["spellName"] = 774,
+					["type"] = "buff",
+					["mine"] = true,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 0,
+						["b"] = 0.6,
 					},
 				},
 				["buff-Lifebloom-mine"] = {
@@ -1922,6 +1922,45 @@ Grid2DB = {
 			},
 		},
 		["Orig - Sisters of Elune"] = {
+			["statuses"] = {
+				["buff-RenewingMist-mine"] = {
+					["type"] = "buff",
+					["spellName"] = 119611,
+					["useSpellId"] = true,
+					["mine"] = true,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 0.5,
+						["g"] = 1,
+						["b"] = 0,
+					},
+				},
+				["buff-EnvelopingMist-mine"] = {
+					["spellName"] = 124682,
+					["type"] = "buff",
+					["mine"] = true,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 0.2,
+						["g"] = 1,
+						["b"] = 0.2,
+					},
+				},
+				["buff-LifeCocoon"] = {
+					["type"] = "buff",
+					["spellName"] = 116849,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 0.4,
+						["g"] = 0,
+						["b"] = 0.8,
+					},
+				},
+			},
+			["versions"] = {
+				["Grid2"] = 5,
+				["Grid2RaidDebuffs"] = 1,
+			},
 			["indicators"] = {
 				["corner-top-left"] = {
 					["location"] = {
@@ -2167,45 +2206,6 @@ Grid2DB = {
 					["ready-check"] = 150,
 					["raid-debuffs"] = 155,
 					["death"] = 155,
-				},
-			},
-			["versions"] = {
-				["Grid2"] = 5,
-				["Grid2RaidDebuffs"] = 1,
-			},
-			["statuses"] = {
-				["buff-EnvelopingMist-mine"] = {
-					["spellName"] = 124682,
-					["type"] = "buff",
-					["mine"] = true,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 0.2,
-						["g"] = 1,
-						["b"] = 0.2,
-					},
-				},
-				["buff-RenewingMist-mine"] = {
-					["type"] = "buff",
-					["spellName"] = 119611,
-					["useSpellId"] = true,
-					["mine"] = true,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 0.5,
-						["g"] = 1,
-						["b"] = 0,
-					},
-				},
-				["buff-LifeCocoon"] = {
-					["type"] = "buff",
-					["spellName"] = 116849,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 0.4,
-						["g"] = 0,
-						["b"] = 0.8,
-					},
 				},
 			},
 		},

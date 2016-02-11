@@ -333,10 +333,13 @@ function WeakAuras.ActivateAuraEnvironment(id)
   end
 end
 
+local env_getglobal
 local exec_env = setmetatable({}, { __index =
   function(t, k)
     if k == "_G" then
       return t
+    elseif k == "getglobal" then
+      return env_getglobal
     elseif k == "aura_env" then
       return current_aura_env;
     elseif blockedFunctions[k] then
@@ -348,6 +351,10 @@ local exec_env = setmetatable({}, { __index =
     end
   end
 })
+
+function env_getglobal(k)
+  return exec_env[k]
+end
 
 local function_cache = {};
 function WeakAuras.LoadFunction(string)
@@ -1845,6 +1852,7 @@ function WeakAuras.SetRegion(data, cloneId)
         else
         if((not regions[id]) or (not regions[id].region) or regions[id].regionType ~= regionType) then
           region = regionTypes[regionType].create(frame, data);
+          region:Hide();
           regions[id] = {
             regionType = regionType,
             region = region
@@ -1893,10 +1901,21 @@ function WeakAuras.SetRegion(data, cloneId)
         WeakAuras.Animate("display", data, "main", data.animation.main, region, false, nil, true, cloneId);
       end
 
-      local hideRegion = function()
-        region:Hide();
-        if (cloneId) then
+      local hideRegion;
+      if(data.parent and db.displays[data.parent] and db.displays[data.parent].regionType == "dynamicgroup") then
+        hideRegion = function()
+          region:Hide();
+          if (cloneId) then
             WeakAuras.ReleaseClone(id, cloneId, regionType);
+          end
+          parent:ControlChildren();
+        end
+      else
+        hideRegion = function()
+          region:Hide();
+          if (cloneId) then
+            WeakAuras.ReleaseClone(id, cloneId, regionType);
+          end
         end
       end
 
@@ -1905,63 +1924,67 @@ function WeakAuras.SetRegion(data, cloneId)
           parent:PositionChildren();
         end
         function region:Collapse()
-          region.toShow = false;
-          if(region:IsVisible()) then
-            region.toHide = true;
-            WeakAuras.PerformActions(data, "finish");
-            WeakAuras.Animate("display", data, "finish", data.animation.finish, region, false, hideRegion, nil, cloneId)
-            parent:ControlChildren();
+          if (not region.toShow) then
+            return;
           end
+          region.toShow = false;
+
+          WeakAuras.PerformActions(data, "finish");
+          WeakAuras.Animate("display", data, "finish", data.animation.finish, region, false, hideRegion, nil, cloneId);
+          parent:ControlChildren();
         end
         function region:Expand()
-          region.toHide = false;
-
-          if(WeakAuras.IsAnimating(region) == "finish" or region.groupHiding or (not region:IsVisible() or (cloneId and region.justCreated))) then
-            if(region.PreShow) then
-              region:PreShow();
-            end
-            region.toShow = true;
-            parent:EnsureTrays();
-            region.justCreated = nil;
-            WeakAuras.PerformActions(data, "start");
-            if not(WeakAuras.Animate("display", data, "start", data.animation.start, region, true, startMainAnimation, nil, cloneId)) then
-              startMainAnimation();
-            end
-            parent:ControlChildren();
+          if (region.toShow) then
+            return;
           end
+          region.toShow = true;
+
+          if(region.PreShow) then
+            region:PreShow();
+          end
+
+          parent:EnsureTrays();
+          region.justCreated = nil;
+          WeakAuras.PerformActions(data, "start");
+          if not(WeakAuras.Animate("display", data, "start", data.animation.start, region, true, startMainAnimation, nil, cloneId)) then
+            startMainAnimation();
+          end
+          parent:ControlChildren();
         end
       elseif not(data.controlledChildren) then
         function region:Collapse()
+          if (not region.toShow) then
+            return;
+          end
           region.toShow = false;
-          if(region:IsVisible()) then
-            region.toHide = true;
-            WeakAuras.PerformActions(data, "finish");
-            if not(WeakAuras.Animate("display", data, "finish", data.animation.finish, region, false, hideRegion, nil, cloneId)) then
-              region:Hide();
-            end
 
-            if data.parent and db.displays[data.parent] and db.displays[data.parent].regionType == "group" then
-              parent:UpdateBorder(region);
-            end
+          WeakAuras.PerformActions(data, "finish");
+          if (not WeakAuras.Animate("display", data, "finish", data.animation.finish, region, false, hideRegion, nil, cloneId)) then
+            region:Hide();
+          end
+
+          if data.parent and db.displays[data.parent] and db.displays[data.parent].regionType == "group" then
+            parent:UpdateBorder(region);
           end
         end
         function region:Expand()
-          region.toHide = false;
-          if(WeakAuras.IsAnimating(region) == "finish" or (not region:IsVisible() or (cloneId and region.justCreated))) then
-            region.toShow = true;
-            region.justCreated = nil;
-            if(region.PreShow) then
-              region:PreShow();
-            end
-            region:Show();
-            WeakAuras.PerformActions(data, "start");
-            if not(WeakAuras.Animate("display", data, "start", data.animation.start, region, true, startMainAnimation, nil, cloneId)) then
-              startMainAnimation();
-            end
+          if (region.toShow) then
+            return;
+          end
+          region.toShow = true;
 
-            if data.parent and db.displays[data.parent] and db.displays[data.parent].regionType == "group" then
-              parent:UpdateBorder(region);
-            end
+          region.justCreated = nil;
+          if(region.PreShow) then
+            region:PreShow();
+          end
+          region:Show();
+          WeakAuras.PerformActions(data, "start");
+          if not(WeakAuras.Animate("display", data, "start", data.animation.start, region, true, startMainAnimation, nil, cloneId)) then
+            startMainAnimation();
+          end
+
+          if data.parent and db.displays[data.parent] and db.displays[data.parent].regionType == "group" then
+            parent:UpdateBorder(region);
           end
         end
       end
@@ -2048,6 +2071,7 @@ function WeakAuras.EnsureClone(id, cloneId)
       clones[id][cloneId] = tremove(clonePool[data.regionType]);
     else
       clones[id][cloneId] = regionTypes[data.regionType].create(frame, data);
+      clones[id][cloneId]:Hide();
     end
     WeakAuras.SetRegion(data, cloneId);
     clones[id][cloneId].justCreated = true;

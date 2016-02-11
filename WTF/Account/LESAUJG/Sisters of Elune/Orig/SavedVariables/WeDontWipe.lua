@@ -7,17 +7,6 @@ WeDontWipeDB = {
 		["iconPosY"] = 255,
 		["alwaysShow"] = 0,
 		["showRangeText"] = 1,
-		["showDispelOff"] = 1,
-		["showCooldowns"] = 1,
-		["iconSize"] = 74,
-		["showCharges"] = 1,
-		["rotation"] = {
-			["modID"] = "Taraezor MonkWindwalker",
-			["rotName"] = "Single",
-		},
-		["showDispelDef"] = 1,
-		["debug"] = 0,
-		["greet"] = 1,
 		["showCDs"] = {
 			121817, -- [1]
 			115399, -- [2]
@@ -31,20 +20,31 @@ WeDontWipeDB = {
 			137562, -- [10]
 			115288, -- [11]
 		},
+		["showCooldowns"] = 1,
+		["greet"] = 1,
+		["showDispelOff"] = 1,
+		["iconPosX"] = -184.000595092773,
+		["showDispelDef"] = 1,
+		["showCharges"] = 1,
+		["iconSize"] = 74,
+		["debug"] = 0,
 		["excludeCDs"] = {
 		},
 		["updateFrequency"] = 0.09,
-		["fixedGCD"] = 1.5,
-		["alwaysRangeAndClass"] = 1,
+		["version"] = 4,
+		["showMainQueue"] = 1,
 		["iconRelP"] = "BOTTOM",
 		["queueLength"] = 4,
 		["cooldownCountdown"] = 10,
-		["missingBuffs"] = 1,
+		["fixedGCD"] = 1.5,
 		["positionLocked"] = 0,
-		["iconPosX"] = -184.000595092773,
+		["missingBuffs"] = 1,
 		["showClassType"] = 1,
-		["showMainQueue"] = 1,
-		["version"] = 4,
+		["alwaysRangeAndClass"] = 1,
+		["rotation"] = {
+			["modID"] = "Taraezor MonkWindwalker",
+			["rotName"] = "Single",
+		},
 	},
 	["defaults"] = {
 		["iconSizeFactor"] = 0.8,

@@ -79,12 +79,15 @@ end
 do -- spec:id/name
 	local _, _, cid = UnitClass("player")
 	local function sync()
-		local idx, s = GetSpecialization()
+		local sg, idx, s = GetActiveSpecGroup(), GetSpecialization(), "-1/unspec"
 		if idx then
 			local id, name = GetSpecializationInfoForClassID(cid, idx)
-			s = idx .. "/" .. (id or idx) .. "/" .. (name or idx)
-		else
-			s = "-1/unspec"
+			if id and name then
+				s = id .. "/" .. name
+			end
+		end
+		if sg then
+			s = s .. "/" .. sg
 		end
 		KR:SetStateConditionalValue("spec", s)
 	end
