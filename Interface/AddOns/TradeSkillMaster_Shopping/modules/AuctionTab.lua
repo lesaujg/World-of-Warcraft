@@ -1118,7 +1118,7 @@ function private.AuctionTabThread(self)
 				TSM:Print(L["Purchased the maximum quantity of this item!"])
 			end
 			private.frame.UpdateConfirmation()
-			private.frame.content.result.rt:SetDatabase(auctionInfo.database, function(record) return private.ValidateDatabaseRecord(record, auctionInfo) end)
+			private.frame.content.result.rt:SetDatabase(auctionInfo.database, dbFilterFunc)
 
 			if private.extraInfo.searchType == "sniper" then
 				-- resume the sniper scan
