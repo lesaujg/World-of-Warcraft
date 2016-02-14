@@ -1,8 +1,6 @@
 
 TradeSkillMaster_AuctionDBDB = {
 	["g@ @showAHTab"] = true,
-	["g@ @scanDataEU"] = "",
-	["r@Sisters of Elune@lastSaveTime"] = 1454870482,
 	["_scopeKeys"] = {
 		["char"] = {
 			"Clothgar - Sisters of Elune", -- [1]
@@ -13,16 +11,18 @@ TradeSkillMaster_AuctionDBDB = {
 			"Ghiaccioli - Sisters of Elune", -- [6]
 			"Herbinator - Sisters of Elune", -- [7]
 		},
-		["factionrealm"] = {
-			"Alliance - Sisters of Elune", -- [1]
+		["realm"] = {
+			"Sisters of Elune", -- [1]
 		},
 		["profile"] = {
 			"Default", -- [1]
 		},
-		["realm"] = {
-			"Sisters of Elune", -- [1]
+		["factionrealm"] = {
+			"Alliance - Sisters of Elune", -- [1]
 		},
 	},
+	["r@Sisters of Elune@lastSaveTime"] = 1454870482,
+	["g@ @scanDataEU"] = "",
 	["g@ @helpPlatesShown"] = {
 		["auction"] = true,
 	},
@@ -32,16 +32,16 @@ TradeSkillMaster_AuctionDBDB = {
 	["_hash"] = 6312798,
 	["g@ @lastUpdateEU"] = 1454723260,
 	["r@Sisters of Elune@lastCompleteScan"] = 1454798311,
-	["g@ @lastUpdateUS"] = 1454750590,
 	["r@Sisters of Elune@hasAppData"] = true,
+	["g@ @lastUpdateUS"] = 1454750590,
 	["_version"] = 2,
 	["_currentProfile"] = {
-		["Orig - Sisters of Elune"] = "Default",
-		["Galinar - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
 		["Uldaris - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Orig - Sisters of Elune"] = "Default",
 	},
 }

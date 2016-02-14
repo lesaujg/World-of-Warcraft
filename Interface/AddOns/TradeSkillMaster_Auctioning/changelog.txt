@@ -1,3 +1,6 @@
+v3.0.6
+*Added two new module APIs for third-party addons to use.
+
 v3.0.5
 *Increase max slider values to 5k for reset scan options.
 
