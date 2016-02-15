@@ -57,11 +57,13 @@ PawnLocal =
 	TooltipBestAnnotation = "%s  |cff8ec3e6(최상)|r",
 	TooltipBestAnnotationSimple = "%s  최상",
 	TooltipBigUpgradeAnnotation = "%s  |TInterface\\AddOns\\Pawn\\Textures\\UpgradeArrow:0|t|cff00ff00 업그레이드%s|r",
+	TooltipDowngradeAnnotation = "%s  |TInterface\\\\AddOns\\\\Pawn\\\\Textures\\\\UpgradeArrow:0|t|cff00ff00-%.0f%% 다운그레이드%s|r",
 	TooltipSecondBestAnnotation = "%s  |cff8ec3e6(두번째 순위)|r",
 	TooltipSecondBestAnnotationSimple = "%s  두번째 순위",
 	TooltipUpgradeAnnotation = "%s  |TInterface\\AddOns\\Pawn\\Textures\\UpgradeArrow:0|t|cff00ff00+%.0f%% 업그레이드%s|r",
 	TooltipUpgradeFor1H = " 한손 세트",
 	TooltipUpgradeFor2H = " 양손",
+	TooltipUpgradeNeedsEnhancementsAnnotation = "%s  |TInterface\\AddOns\\Pawn\\Textures\\UpgradeArrow:0|t|cff00ff00+%.0f%% 업그레이드%s|r", -- Needs review
 	TooltipVersusLine = "%s|n  vs. |c%s%s|r",
 	TotalValueMessage = "   ---- Total: %g",
 	UnenchantedStatsHeader = "(기본값)",
@@ -221,7 +223,7 @@ Pawn 사용자 설정의 더 자세한 정보는, 애드온에 포함된 help �
 		AllStats = "^모든 능력치 %+?([%d%.,]+)$",
 		Ap = "^전투력 %+?([%d%.,]+)$",
 		Armor = "^방어도 %+?([%d%.,]+)$",
-		Armor2 = "^UNUSED$", -- Requires localization
+		Armor2 = "^UNUSED$", -- Needs review
 		Avoidance = "^광역회피 %+([%d%.,]+)$",
 		Axe = "^도끼$",
 		BagSlots = "^%d+칸.+$", -- Needs review
@@ -232,13 +234,13 @@ Pawn 사용자 설정의 더 자세한 정보는, 애드온에 포함된 help �
 		Cloth = "^천$",
 		CooldownRemaining = "^재사용 대기시간:",
 		Crit = "^치명타 및 극대화 %+?([%d%.,]+)$",
-		Crit2 = "^UNUSED$", -- Requires localization
+		Crit2 = "^UNUSED$", -- Needs review
 		Crossbow = "^석궁$",
 		Dagger = "^단검$",
 		Design = "디자인:",
 		DisenchantingRequires = "^마력 추출 요구 사항", -- Needs review
 		Dodge = "^회피 %+?([%d%.,]+)$",
-		Dodge2 = "^UNUSED$", -- Requires localization
+		Dodge2 = "^UNUSED$", -- Needs review
 		Dps = "^%(초당 공격력 ([%d%.,]+)%)$",
 		DpsAdd = "^초당 공격력 ([%d%.,]+) 추가$", -- Needs review
 		Duration = "^지속시간:",
@@ -257,10 +259,10 @@ Pawn 사용자 설정의 더 자세한 정보는, 애드온에 포함된 help �
 		Formula = "주문식:",
 		Gun = "^총$",
 		Haste = "^가속 %+?([%d%.,]+)$",
-		Haste2 = "^UNUSED$", -- Requires localization
+		Haste2 = "^UNUSED$", -- Needs review
 		HeirloomLevelRange = "^요구 레벨: %d+ %- (%d+)",
 		HeirloomXpBoost = "^착용 효과: 경험치 획득량이", -- Needs review
-		HeirloomXpBoost2 = "^UNUSED$", -- Requires localization
+		HeirloomXpBoost2 = "^UNUSED$", -- Needs review
 		Heroic = "^상급$",
 		HeroicElite = "^정예 상급$",
 		HeroicThunderforged = "^천둥벼림 상급$",
@@ -268,7 +270,7 @@ Pawn 사용자 설정의 더 자세한 정보는, 애드온에 포함된 help �
 		Hp5 = "^착용 효과: 5초마다 ([%d%.,]+)의 생명력이 회복됩니다%.$",
 		Hp52 = "^Equip: Restores ([%d%.,]+) health per 5 sec%.$", -- Needs review
 		Hp53 = "^5초당 생명력 %+?([%d%.,]+)$",
-		Hp54 = "^UNUSED$", -- Requires localization
+		Hp54 = "^UNUSED$", -- Needs review
 		Intellect = "^지능 %+?([-%d%.,]+)$",
 		Leather = "^가죽$",
 		Leech = "^생기흡수 %+([%d%.,]+)$",
@@ -276,14 +278,14 @@ Pawn 사용자 설정의 더 자세한 정보는, 애드온에 포함된 help �
 		Mail = "^사슬$",
 		Manual = "처방전:",
 		Mastery = "^특화 %+?([%d%.,]+)$",
-		Mastery2 = "^UNUSED$", -- Requires localization
+		Mastery2 = "^UNUSED$", -- Needs review
 		MetaGemRequirements = "|cff%x%x%x%x%x%x필요 조건:",
 		MovementSpeed = "^이동 속도 %+([%d%.,]+)$",
 		MultiStatSeparator1 = "/",
 		Multistrike = "^연속타격 %+([%d%.,]+)$",
 		NormalizationEnchant = "^마법부여: (.*)$",
 		Parry = "^무기 막기 %+?([%d%.,]+)$",
-		Parry2 = "^UNUSED$", -- Requires localization
+		Parry2 = "^UNUSED$", -- Needs review
 		Pattern = "도안:",
 		Plans = "도면:",
 		Plate = "^판금$",
@@ -291,9 +293,9 @@ Pawn 사용자 설정의 더 자세한 정보는, 애드온에 포함된 help �
 		PvPPower = "^PvP 위력 %+?([%d%.,]+)$",
 		RaidFinder = "^공격대 찾기$",
 		Recipe = "제조법:",
-		Requires2 = "^UNUSED$", -- Requires localization
+		Requires2 = "^UNUSED$", -- Needs review
 		Resilience = "^PvP 탄력 %+?([%d%.,]+)$",
-		Resilience2 = "^UNUSED$", -- Requires localization
+		Resilience2 = "^UNUSED$", -- Needs review
 		Schematic = "설계도:",
 		Scope = "^조준경 %(공격력 %+([%d%.,]+)%)$", -- Needs review
 		ScopeCrit = "^조준경 %(치명타 %+([%d%.,]+)%)$", -- Needs review
@@ -301,7 +303,7 @@ Pawn 사용자 설정의 더 자세한 정보는, 애드온에 포함된 help �
 		Shield = "^방패$",
 		SocketBonusPrefix = "보석 장착 보너스:",
 		Speed = "^속도 ([%d%.,]+)$",
-		Speed2 = "^UNUSED$", -- Requires localization
+		Speed2 = "^UNUSED$", -- Needs review
 		SpellPower = "^주문력 %+?([%d%.,]+)$",
 		Spirit = "^정신력 %+?([-%d%.,]+)$",
 		Staff = "^지팡이$",
@@ -436,12 +438,12 @@ Pawn은 각 직업과 특성 별로 미리 만들어진 능력치 크기를 가�
 체크하면, Pawn 보석장착 조언가는 저레벨 아이템에 적당한 보석을 추천하지만 보석 홈은 계산에서 제외되며 보석이 장착된 아이템은 종종 업그레이드로 보여지지 않습니다.
 
 체크하지 않으면, 아이템 레벨에 상관없이 보석 홈에 최상의 보석을 장착한 것으로 가정하고 값을 계산하게 됩니다.]=],
-		OptionsIgnoreItemUpgradesCheck = "Ignore valor and baleful upgrades",
-		OptionsIgnoreItemUpgradesCheckTooltip = [=[Enable this option to have Pawn ignore the potential for Valor upgrades and Empowered Baleful items when calculating item values.
+		OptionsIgnoreItemUpgradesCheck = "용맹 점수와 불길한 장비 강화 무시",
+		OptionsIgnoreItemUpgradesCheckTooltip = [=[Pawn이 아이템 수치를 계산할 때 불길한 장비의 강화와 용맹 점수 업그레이드의 잠재성을 무시하게 하려면 이 옵션을 활성화하세요.
 
-If checked, Pawn will treat upgradeable items as they are and will not assume that you would use Valor and Empowered Apexis Fragments to improve the item when determining whether an item is better than what you currently have.
+체크하면, 업그레이드 가능한 아이템을 당신이 가지고 있는 것보다 더 좋은지 판단할 때 용맹 점수 강화나 힘이 깃든 에펙시스 파편을 사용하지 않은 것으로 가정합니다.
 
-If unchecked, Pawn will treat those items assuming that you would maximize their potential with Valor and Empowered Apexis Fragments.  This could cause a level 650 baleful item to appear as a significant upgrade over a level 670 item from Blackrock Foundry, since the baleful item could potentially be improved to level 705 through valor and Apexis.]=],
+체크하지 않으면, 업그레이드 할 수 있는 아이템들의 잠재성을 용맹 점수나 힘이 깃든 에펙시스 파편으로 극대화시킨 것으로 가정합니다. 불길한 장비는 용맹 점수와 에펙시스를 통해 705 레벨까지 강화할 수 있기 때문에 650 레벨의 불길한 장비가 670 레벨의 검은바위 용광로 아이템보다 더 좋은 아이템으로 나타나게 됩니다.]=],
 		OptionsInventoryIcon = "인벤토리 아이콘 표시",
 		OptionsInventoryIconTooltip = "이 옵션을 켜면 아이템 링크 창 옆에 인벤토리 아이콘을 표시합니다.",
 		OptionsItemIDs = "아이템 ID 표시",

@@ -8,7 +8,7 @@
 ------------------------------------------------------------
 
 
-PawnVersion = 1.922
+PawnVersion = 1.923
 
 -- Pawn requires this version of VgerCore:
 local PawnVgerCoreVersionRequired = 1.09
@@ -318,7 +318,7 @@ function PawnInitialize()
 		end)
 	hooksecurefunc(ItemRefShoppingTooltip1, "SetCompareItem",
 		function(self, ...)
-			local _, ItemLink1 = ShoppingTooltip1:GetItem()
+			local _, ItemLink1 = ItemRefShoppingTooltip1:GetItem()
 			PawnUpdateTooltip("ItemRefShoppingTooltip1", "SetCompareItem", ItemLink1, ...)
 			PawnAttachIconToTooltip(ItemRefShoppingTooltip1, true)
 			local _, ItemLink2 = ItemRefShoppingTooltip2:GetItem()
@@ -1210,8 +1210,8 @@ function PawnUpdateTooltip(TooltipName, MethodName, Param1, ...)
 	-- If there's no item data, then something failed, so we can't update this tooltip.
 	if not Item then return end
 	-- Is this an upgrade?
-	local UpgradeInfo, BestItemFor, SecondBestItemFor
-	if PawnCommon.ShowUpgradesOnTooltips then UpgradeInfo, BestItemFor, SecondBestItemFor = PawnIsItemAnUpgrade(Item) end
+	local UpgradeInfo, BestItemFor, SecondBestItemFor, NeedsEnhancements
+	if PawnCommon.ShowUpgradesOnTooltips then UpgradeInfo, BestItemFor, SecondBestItemFor, NeedsEnhancements = PawnIsItemAnUpgrade(Item) end
 	
 	-- If this is the main GameTooltip, remember the item that was hovered over.
 	-- AtlasLoot compatibility: enable hover comparison for AtlasLoot tooltips too.
@@ -1231,7 +1231,7 @@ function PawnUpdateTooltip(TooltipName, MethodName, Param1, ...)
 	
 	-- Add the scale values to the tooltip.
 	if AddSpace and #Item.Values > 0 and (UpgradeInfo or BestItemFor or SecondBestItemFor or not PawnCommon.ShowValuesForUpgradesOnly) then Tooltip:AddLine(" ") AddSpace = false end
-	PawnAddValuesToTooltip(Tooltip, Item.Values, UpgradeInfo, BestItemFor, SecondBestItemFor, Item.InvType)
+	PawnAddValuesToTooltip(Tooltip, Item.Values, UpgradeInfo, BestItemFor, SecondBestItemFor, NeedsEnhancements, Item.InvType)
 	if PawnCommon.ColorTooltipBorder then
 		if UpgradeInfo then Tooltip:SetBackdropBorderColor(0, 1, 0) else Tooltip:SetBackdropBorderColor(1, 1, 1) end
 	end
@@ -1317,9 +1317,10 @@ end
 -- 	ItemValues: An array of item values to use to annotate the tooltip, in the format returned by PawnGetAllItemValues.
 --	UpgradeInfo: An array of item upgrade information, in the format returned by PawnIsItemAnUpgrade.
 --	BestItemFor, SecondBestItemFor: A table of scales for which this is the best or second-best item available, in the format returned by PawnIsItemAnUpgrade.
+-- 	NeedsEnhancements: True if the item needs enhancements.
 --	InvType: Optionally, the type of item this is.
 --	OnlyFirstValue: If true, only the first value (the "enchanted" one) is used, regardless of the user's settings.
-function PawnAddValuesToTooltip(Tooltip, ItemValues, UpgradeInfo, BestItemFor, SecondBestItemFor, InvType, OnlyFirstValue)
+function PawnAddValuesToTooltip(Tooltip, ItemValues, UpgradeInfo, BestItemFor, SecondBestItemFor, NeedsEnhancements, InvType, OnlyFirstValue)
 	-- First, check input arguments.
 	if type(Tooltip) ~= "table" then
 		VgerCore.Fail("Tooltip must be a valid tooltip, not '" .. type(Tooltip) .. "'.")
@@ -1371,6 +1372,8 @@ function PawnAddValuesToTooltip(Tooltip, ItemValues, UpgradeInfo, BestItemFor, S
 						if ThisUpgrade.PercentUpgrade >= PawnBigUpgradeThreshold then -- 100 = 10,000%
 							-- For particularly huge upgrades, don't say ridiculous things like "999999999% upgrade"
 							TooltipText = format(PawnLocal.TooltipBigUpgradeAnnotation, TooltipText, SetAnnotation)
+						elseif NeedsEnhancements then
+							TooltipText = format(PawnLocal.TooltipUpgradeNeedsEnhancementsAnnotation, TooltipText, 100 * ThisUpgrade.PercentUpgrade, SetAnnotation)
 						else
 							TooltipText = format(PawnLocal.TooltipUpgradeAnnotation, TooltipText, 100 * ThisUpgrade.PercentUpgrade, SetAnnotation)
 						end
@@ -2357,8 +2360,10 @@ local function PawnDoValorUpgrade(UpgradeLevel)
 	end
 end
 
--- Returns a new item link that represents an unenchanted version of the original item link, or
--- nil if unsuccessful or the item is not enchanted.
+-- Returns a new item link that represents an unenchanted version of the original item link.
+-- Return values:
+--		ItemLink - The unenchanted item link, or nil if unsuccessful or the item is not unenchanted.
+--		WasUpgraded - True if the item was upgraded while being "unenchanted."  (Always false if "ignore valor and baleful upgrades" is off.)
 -- (But if EvenIfNotEnchanted is true, the item link will be processed even if the item wasn't enchanted.)
 function PawnUnenchantItemLink(ItemLink, EvenIfNotEnchanted)
 	local TrimmedItemLink = PawnStripLeftOfItemLink(ItemLink)
@@ -2457,7 +2462,7 @@ function PawnUnenchantItemLink(ItemLink, EvenIfNotEnchanted)
 			if BonusID3 == nil or BonusID3 == "" then BonusID3 = "0" end
 			if BonusID4 == nil or BonusID4 == "" then BonusID4 = "0" end
 			if BonusID5 == nil or BonusID5 == "" then BonusID5 = "0" end
-			return "item:" .. ItemID .. ":0:0:0:0:0:" .. SuffixID .. ":" .. MoreInfo .. ":" .. 0 .. ":" .. SpecializationID .. ":" .. UpgradeLevel1 .. ":" .. Difficulty .. ":" .. NumBonusIDs .. ":" .. BonusID1 .. ":" .. BonusID2 .. ":" .. BonusID3 .. ":" .. BonusID4 .. ":" .. BonusID5
+			return "item:" .. ItemID .. ":0:0:0:0:0:" .. SuffixID .. ":" .. MoreInfo .. ":" .. 0 .. ":" .. SpecializationID .. ":" .. UpgradeLevel1 .. ":" .. Difficulty .. ":" .. NumBonusIDs .. ":" .. BonusID1 .. ":" .. BonusID2 .. ":" .. BonusID3 .. ":" .. BonusID4 .. ":" .. BonusID5, WasUpgraded
 		else
 			-- This item is not enchanted.  Return nil.
 			return nil
@@ -2907,7 +2912,7 @@ end
 --	Item: The item table for the item in question.
 --	DoNotRescan: If best item data is not available, just return nil instead of rescanning.
 -- Returns nothing if the item is not an upgrade and is not one of the player's best items.  Otherwise:
---	UpgradeInfo, BestItemFor, SecondBestItemFor
+--	UpgradeInfo, BestItemFor, SecondBestItemFor, NeedsEnhancements
 --	UpgradeInfo: a sorted table of upgrades, with each element being another table:
 --		{ { ScaleName, LocalizedScaleName, PercentUpgrade, ExistingItem }, ... }
 --		ScaleName: the raw scale name.
@@ -2916,6 +2921,7 @@ end
 --		ExistingItemLink: the item that would be replaced if the user upgraded to the item passed in, in its unenchanted (not display-ready) form.
 --	BestItemFor, SecondBestItemFor: a table of scales for which this item is already the player's best or second-best item, or nil if none.
 --		{ ["Scale1"] = true, ["Scale2"] = true }
+--	NeedsEnhancements: true if the item requires enhancements (Valor or Empowered Apexis Fragment).
 function PawnIsItemAnUpgrade(Item, DoNotRescan)
 
 	-- Before we begin, check for unsupported item types and bail out early if appropriate.
@@ -2925,7 +2931,7 @@ function PawnIsItemAnUpgrade(Item, DoNotRescan)
 	end
 	local InvType = Item.InvType
 	if not InvType or InvType == "" or InvType == "INVTYPE_TRINKET" or InvType == "INVTYPE_BAG" or InvType == "INVTYPE_QUIVER" or InvType == "INVTYPE_TABARD" or InvType == "INVTYPE_BODY" or InvType == "INVTYPE_THROWN" or InvType == "INVTYPE_AMMO" or InvType == "INVTYPE_RELIC" then return nil end
-	local UnenchantedItemLink = PawnUnenchantItemLink(Item.Link, true)
+	local UnenchantedItemLink, NeedsEnhancements = PawnUnenchantItemLink(Item.Link, true)
 	VgerCore.Assert(UnenchantedItemLink ~= nil, "PawnIsItemAnUpgrade failed to get an item link for item " .. tostring(Item.ID))
 
 	-- If the user doesn't want to see upgrades for 2H items when they're using 1H items or vice-versa, do that
@@ -3080,7 +3086,7 @@ function PawnIsItemAnUpgrade(Item, DoNotRescan)
 	--	end
 	--end
 	
-	return UpgradeTable, BestItemTable, SecondBestItemTable
+	return UpgradeTable, BestItemTable, SecondBestItemTable, NeedsEnhancements
 end
 
 -- Comparer function for tables with subtables including a LocalizedScaleName entry.

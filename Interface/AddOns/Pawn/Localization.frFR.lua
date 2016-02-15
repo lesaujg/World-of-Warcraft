@@ -62,6 +62,7 @@ PawnLocal =
 	TooltipSecondBestAnnotation = "%s  |cff8ec3e6(second meilleur)|r", -- Needs review
 	TooltipSecondBestAnnotationSimple = "%s  votre second meilleur", -- Needs review
 	TooltipUpgradeAnnotation = "%s  |TInterface\\AddOns\\Pawn\\Textures\\UpgradeArrow:0|t|cff00ff00+%.0f%% am\195\169lioration%s|r", -- Needs review
+	TooltipUpgradeNeedsEnhancementsAnnotation = "%s  |TInterface\\AddOns\\Pawn\\Textures\\UpgradeArrow:0|t|cff00ff00+%.0f%% am\195\169lioration%s|r", -- Needs review
 	TooltipUpgradeFor1H = "pour ensemble 1 main", -- Needs review
 	TooltipUpgradeFor2H = "pour 2 mains", -- Needs review
 	TooltipVersusLine = "%s|n  vs. |c%s%s|r",
