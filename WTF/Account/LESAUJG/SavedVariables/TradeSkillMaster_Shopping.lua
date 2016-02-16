@@ -1,8 +1,16 @@
 
 TradeSkillMaster_ShoppingDB = {
-	["g@ @sniperCustomPrice"] = "0c",
-	["g@ @maxDeSearchPercent"] = 1,
-	["g@ @postUndercut"] = "1c",
+	["_currentProfile"] = {
+		["Orig - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
+	},
+	["_version"] = 3,
+	["g@ @sniperVendorPrice"] = true,
 	["g@ @postBidPercent"] = 0.95,
 	["_scopeKeys"] = {
 		["char"] = {
@@ -14,51 +22,54 @@ TradeSkillMaster_ShoppingDB = {
 			"Ghiaccioli - Sisters of Elune", -- [6]
 			"Herbinator - Sisters of Elune", -- [7]
 		},
-		["realm"] = {
-			"Sisters of Elune", -- [1]
+		["factionrealm"] = {
+			"Alliance - Sisters of Elune", -- [1]
 		},
 		["profile"] = {
 			"Default", -- [1]
 		},
-		["factionrealm"] = {
-			"Alliance - Sisters of Elune", -- [1]
+		["realm"] = {
+			"Sisters of Elune", -- [1]
 		},
 	},
 	["g@ @helpPlatesShown"] = {
 		["auction"] = true,
 	},
-	["g@ @sniperVendorPrice"] = true,
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["g@ @postUndercut"] = "1c",
+	["g@ @minDeSearchLvl"] = 1,
+	["g@ @maxDeSearchLvl"] = 735,
+	["_hash"] = 1861581,
+	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1455631274,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
+		}, -- [1]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1455631266,
+			["name"] = "universal",
+			["filter"] = "universal",
+		}, -- [2]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1455631256,
+			["name"] = "arcane c",
+			["filter"] = "arcane c",
+		}, -- [3]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1455461471,
 			["name"] = "blackrock ore",
 			["filter"] = "blackrock ore",
-		}, -- [1]
+		}, -- [4]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1455460805,
 			["name"] = "fireweed",
 			["filter"] = "fireweed",
-		}, -- [2]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1455460504,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
-		}, -- [3]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1455460497,
-			["name"] = "universal",
-			["filter"] = "universal",
-		}, -- [4]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1455460488,
-			["name"] = "arcane c",
-			["filter"] = "arcane c",
 		}, -- [5]
 		{
 			["searchMode"] = "normal",
@@ -133,19 +144,8 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "saberfish",
 		}, -- [17]
 	},
-	["_hash"] = 1861581,
-	["g@ @marketValueSource"] = "dbmarket",
-	["g@ @maxDeSearchLvl"] = 735,
-	["g@ @minDeSearchLvl"] = 1,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @normalPostPrice"] = "150% dbmarket",
-	["_version"] = 3,
-	["_currentProfile"] = {
-		["Uldaris - Sisters of Elune"] = "Default",
-		["Galinar - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Orig - Sisters of Elune"] = "Default",
-	},
+	["g@ @maxDeSearchPercent"] = 1,
+	["g@ @sniperCustomPrice"] = "0c",
 }
