@@ -5,11 +5,11 @@ LM_GlobalOptionsDB = {
 	},
 	["excludedspells"] = {
 	},
-	["seenspells"] = {
-	},
 	["excludeNewMounts"] = {
 	},
 	["flagoverrides"] = {
+	},
+	["seenspells"] = {
 	},
 	["macro"] = {
 	},
