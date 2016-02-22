@@ -34,18 +34,18 @@ TradeSkillMaster_CraftingDB = {
 	["f@Alliance - Sisters of Elune@gathering"] = {
 		["shortItems"] = {
 		},
-		["extraMats"] = {
+		["availableMats"] = {
 		},
-		["destroyingMats"] = {
+		["neededMats"] = {
 		},
 		["selectedSources"] = {
 		},
-		["neededMats"] = {
+		["destroyingMats"] = {
 		},
 		["selectedSourceStatus"] = {
 		},
 		["gatheredMats"] = false,
-		["availableMats"] = {
+		["extraMats"] = {
 		},
 	},
 	["_version"] = 1,
@@ -59,7 +59,7 @@ TradeSkillMaster_CraftingDB = {
 		["Uldaris - Sisters of Elune"] = "Default",
 	},
 	["g@ @defaultCraftPriceMethod"] = "first(dbminbuyout, dbmarket)",
-	["f@Alliance - Sisters of Elune@ignoreIntermediate"] = false,
+	["g@ @ignoreCDCraftCost"] = true,
 	["f@Alliance - Sisters of Elune@crafts"] = {
 		[28558] = {
 			["mats"] = {
@@ -826,10 +826,10 @@ TradeSkillMaster_CraftingDB = {
 		},
 		[25073] = {
 			["mats"] = {
-				["i:38682"] = 1,
-				["i:22448"] = 3,
-				["i:14344"] = 10,
 				["i:12808"] = 6,
+				["i:38682"] = 1,
+				["i:14344"] = 10,
+				["i:22448"] = 3,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
@@ -1326,10 +1326,10 @@ TradeSkillMaster_CraftingDB = {
 		[18453] = {
 			["mats"] = {
 				["i:14048"] = 7,
-				["i:8170"] = 4,
-				["i:12662"] = 2,
 				["i:14341"] = 2,
 				["i:14256"] = 3,
+				["i:8170"] = 4,
+				["i:12662"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
@@ -2025,19 +2025,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Long Silken Cloak",
 		},
-		[3865] = {
+		[161002] = {
 			["mats"] = {
-				["i:4338"] = 4,
+				["i:109137"] = 5,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:4339",
+			["profession"] = "Cooking",
+			["itemString"] = "i:111456",
 			["players"] = {
-				["Ghiaccioli"] = true,
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Bolt of Mageweave",
+			["name"] = "Grilled Saberfish",
 		},
 		[13421] = {
 			["mats"] = {
@@ -2067,18 +2066,24 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:39908",
 		},
-		[7752] = {
-			["mats"] = {
-				["i:6303"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:787",
+		[53780] = {
 			["players"] = {
 				["Bracnar"] = true,
 			},
+			["numResult"] = 1,
+			["cooldownTimes"] = {
+				["Bracnar"] = {
+					["endTime"] = 0,
+				},
+			},
+			["hasCD"] = true,
+			["mats"] = {
+				["i:35627"] = 1,
+			},
+			["itemString"] = "i:35625",
+			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["name"] = "Slitherskin Mackerel",
+			["name"] = "Eternal Life",
 		},
 		[124032] = {
 			["mats"] = {
@@ -3161,10 +3166,10 @@ TradeSkillMaster_CraftingDB = {
 		},
 		[60691] = {
 			["mats"] = {
-				["i:34055"] = 6,
-				["i:34054"] = 40,
 				["i:34057"] = 6,
 				["i:38682"] = 1,
+				["i:34055"] = 6,
+				["i:34054"] = 40,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
@@ -3297,19 +3302,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:52224",
 		},
-		[25620] = {
+		[32801] = {
 			["mats"] = {
-				["i:6037"] = 1,
-				["i:20963"] = 2,
+				["i:2836"] = 8,
 			},
 			["numResult"] = 1,
 			["profession"] = "Jewelcrafting",
-			["name"] = "Engraved Truesilver Ring",
+			["name"] = "Coarse Stone Statue",
 			["players"] = {
 				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:20960",
+			["itemString"] = "i:25880",
 		},
 		[104442] = {
 			["mats"] = {
@@ -3326,18 +3330,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:74728",
 		},
-		[32801] = {
+		[25620] = {
 			["mats"] = {
-				["i:2836"] = 8,
+				["i:6037"] = 1,
+				["i:20963"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Jewelcrafting",
-			["name"] = "Coarse Stone Statue",
+			["name"] = "Engraved Truesilver Ring",
 			["players"] = {
 				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:25880",
+			["itemString"] = "i:20960",
 		},
 		[6417] = {
 			["mats"] = {
@@ -3719,21 +3724,6 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:5631",
 		},
-		[28563] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:22789"] = 2,
-				["i:22790"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Heroic Potion",
-			["players"] = {
-				["Bracnar"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:22837",
-		},
 		[75295] = {
 			["mats"] = {
 				["i:52326"] = 4,
@@ -3748,6 +3738,21 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["queued"] = 0,
 			["name"] = "Vicious Embersilk Gloves",
+		},
+		[28563] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:22789"] = 2,
+				["i:22790"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Heroic Potion",
+			["players"] = {
+				["Bracnar"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:22837",
 		},
 		[73376] = {
 			["mats"] = {
@@ -4042,18 +4047,21 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:74700",
 		},
-		[21175] = {
+		[2394] = {
 			["mats"] = {
-				["i:12205"] = 2,
+				["i:6260"] = 1,
+				["i:2320"] = 1,
+				["i:2996"] = 2,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:17222",
+			["profession"] = "Tailoring",
+			["itemString"] = "i:2577",
 			["players"] = {
-				["Bracnar"] = true,
+				["Ghiaccioli"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Spider Sausage",
+			["name"] = "Blue Linen Shirt",
 		},
 		[73250] = {
 			["mats"] = {
@@ -4113,21 +4121,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:38811",
 		},
-		[2394] = {
+		[21175] = {
 			["mats"] = {
-				["i:6260"] = 1,
-				["i:2320"] = 1,
-				["i:2996"] = 2,
+				["i:12205"] = 2,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:2577",
+			["profession"] = "Cooking",
+			["itemString"] = "i:17222",
 			["players"] = {
-				["Ghiaccioli"] = true,
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Blue Linen Shirt",
+			["name"] = "Spider Sausage",
 		},
 		[107639] = {
 			["mats"] = {
@@ -4173,18 +4178,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Gray Woolen Shirt",
 		},
-		[107665] = {
+		[46684] = {
 			["mats"] = {
-				["i:76130"] = 1,
+				["i:35562"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Tenuous Tiger Opal",
+			["profession"] = "Cooking",
+			["itemString"] = "i:35563",
 			["players"] = {
-				["Uldaris"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:76544",
+			["name"] = "Charred Bear Kabobs",
 		},
 		[66571] = {
 			["mats"] = {
@@ -4598,19 +4603,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:76545",
 		},
-		[175866] = {
+		[45022] = {
 			["mats"] = {
-				["i:109143"] = 3,
-				["i:109123"] = 1,
+				["i:34412"] = 1,
+				["i:17196"] = 1,
+				["i:17194"] = 1,
 			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Draenic Water Breathing Elixir",
+			["numResult"] = 2,
+			["profession"] = "Cooking",
+			["itemString"] = "i:34411",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:116271",
+			["name"] = "Hot Apple Cider",
 		},
 		[44510] = {
 			["mats"] = {
@@ -4724,20 +4730,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:34085",
 		},
-		[45022] = {
+		[175866] = {
 			["mats"] = {
-				["i:34412"] = 1,
-				["i:17196"] = 1,
-				["i:17194"] = 1,
+				["i:109143"] = 3,
+				["i:109123"] = 1,
 			},
-			["numResult"] = 2,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34411",
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Draenic Water Breathing Elixir",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Hot Apple Cider",
+			["itemString"] = "i:116271",
 		},
 		[56010] = {
 			["mats"] = {
@@ -4915,10 +4920,10 @@ TradeSkillMaster_CraftingDB = {
 		},
 		[47901] = {
 			["mats"] = {
-				["i:34055"] = 2,
-				["i:34054"] = 10,
 				["i:34052"] = 2,
 				["i:38682"] = 1,
+				["i:34055"] = 2,
+				["i:34054"] = 10,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
@@ -5159,18 +5164,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Crocolisk Gumbo",
 		},
-		[171264] = {
+		[73382] = {
 			["mats"] = {
-				["i:110609"] = 50,
+				["i:52192"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Leatherworking",
-			["name"] = "Traveling Tunic",
+			["profession"] = "Jewelcrafting",
+			["name"] = "Puissant Dream Emerald",
 			["players"] = {
 				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:116168",
+			["itemString"] = "i:52231",
 		},
 		[116497] = {
 			["mats"] = {
@@ -5228,6 +5233,33 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:41375",
 		},
+		[94748] = {
+			["mats"] = {
+				["i:52328"] = 2,
+			},
+			["numResult"] = 2,
+			["profession"] = "Engineering",
+			["itemString"] = "i:67749",
+			["players"] = {
+				["Galinar"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Electrified Ether",
+		},
+		[7457] = {
+			["mats"] = {
+				["i:10940"] = 3,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["name"] = "Minor Stamina",
+			["players"] = {
+				["Bracnar"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:38771",
+		},
 		[17562] = {
 			["players"] = {
 				["Bracnar"] = true,
@@ -5246,33 +5278,6 @@ TradeSkillMaster_CraftingDB = {
 			["profession"] = "Alchemy",
 			["queued"] = 0,
 			["name"] = "Essence of Air",
-		},
-		[7457] = {
-			["mats"] = {
-				["i:10940"] = 3,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Minor Stamina",
-			["players"] = {
-				["Bracnar"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38771",
-		},
-		[94748] = {
-			["mats"] = {
-				["i:52328"] = 2,
-			},
-			["numResult"] = 2,
-			["profession"] = "Engineering",
-			["itemString"] = "i:67749",
-			["players"] = {
-				["Galinar"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Electrified Ether",
 		},
 		[171265] = {
 			["mats"] = {
@@ -5775,18 +5780,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:38772",
 		},
-		[7753] = {
+		[22808] = {
 			["mats"] = {
-				["i:6289"] = 1,
+				["i:3371"] = 1,
+				["i:7972"] = 1,
+				["i:8831"] = 2,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:4592",
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of Greater Water Breathing",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Longjaw Mud Snapper",
+			["itemString"] = "i:18294",
 		},
 		[53852] = {
 			["mats"] = {
@@ -5912,6 +5919,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Dreamcloth",
 		},
+		[64727] = {
+			["mats"] = {
+				["i:36927"] = 2,
+				["i:41163"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Jewelcrafting",
+			["name"] = "Runed Mana Band",
+			["players"] = {
+				["Uldaris"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:45808",
+		},
 		[13631] = {
 			["mats"] = {
 				["i:11083"] = 1,
@@ -5927,20 +5948,6 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:38805",
 		},
-		[64727] = {
-			["mats"] = {
-				["i:36927"] = 2,
-				["i:41163"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Runed Mana Band",
-			["players"] = {
-				["Uldaris"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:45808",
-		},
 		[107764] = {
 			["mats"] = {
 				["i:76132"] = 1,
@@ -5954,20 +5961,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:76894",
 		},
-		[7857] = {
+		[13663] = {
 			["mats"] = {
+				["i:11135"] = 1,
 				["i:38682"] = 1,
-				["i:10998"] = 1,
-				["i:10940"] = 4,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Health",
+			["name"] = "Greater Mana",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38782",
+			["itemString"] = "i:38818",
 		},
 		[107636] = {
 			["mats"] = {
@@ -6244,19 +6250,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:115812",
 		},
-		[55900] = {
+		[27958] = {
 			["mats"] = {
-				["i:41510"] = 2,
-				["i:34054"] = 2,
+				["i:34054"] = 3,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:41511",
+			["profession"] = "Enchanting",
+			["name"] = "Exceptional Mana",
 			["players"] = {
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Bolt of Imbued Frostweave",
+			["itemString"] = "i:38912",
 		},
 		[28022] = {
 			["mats"] = {
@@ -6367,32 +6373,33 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Black Mageweave Vest",
 		},
-		[176392] = {
+		[20026] = {
 			["mats"] = {
-				["i:110609"] = 5,
+				["i:14343"] = 2,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Leatherworking (Garrison)",
-			["name"] = "Fine Blue and Gold Tent",
-			["players"] = {
-				["Uldaris"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:116986",
-		},
-		[58523] = {
-			["mats"] = {
-				["i:22577"] = 1,
-				["i:36782"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:43491",
+			["profession"] = "Enchanting",
+			["name"] = "Major Health",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Bad Clams",
+			["itemString"] = "i:38866",
+		},
+		[56476] = {
+			["mats"] = {
+				["i:36913"] = 12,
+				["i:39681"] = 2,
+			},
+			["numResult"] = 8,
+			["profession"] = "Engineering",
+			["itemString"] = "i:37567",
+			["players"] = {
+				["Galinar"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Healing Injector Kit",
 		},
 		[64728] = {
 			["mats"] = {
@@ -6437,18 +6444,24 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:116181",
 		},
-		[73260] = {
-			["mats"] = {
-				["i:52181"] = 1,
+		[28566] = {
+			["players"] = {
+				["Bracnar"] = true,
 			},
 			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Inscribed Hessonite",
-			["players"] = {
-				["Uldaris"] = true,
+			["cooldownTimes"] = {
+				["Bracnar"] = {
+					["endTime"] = 0,
+				},
 			},
+			["hasCD"] = true,
+			["mats"] = {
+				["i:22451"] = 1,
+			},
+			["itemString"] = "i:21884",
+			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["itemString"] = "i:52108",
+			["name"] = "Primal Fire",
 		},
 		[28588] = {
 			["mats"] = {
@@ -6480,20 +6493,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Spiritmend Robe",
 		},
-		[188676] = {
+		[55389] = {
 			["mats"] = {
-				["i:108996"] = 350,
-				["i:113261"] = 60,
-				["i:127759"] = 60,
+				["i:41266"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Elemental Distillate",
+			["profession"] = "Jewelcrafting",
+			["name"] = "Chaotic Skyflare Diamond",
 			["players"] = {
-				["Bracnar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:128159",
+			["itemString"] = "i:41285",
 		},
 		[120045] = {
 			["mats"] = {
@@ -6526,24 +6537,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:20002",
 		},
-		[28566] = {
-			["players"] = {
-				["Bracnar"] = true,
+		[73260] = {
+			["mats"] = {
+				["i:52181"] = 1,
 			},
 			["numResult"] = 1,
-			["cooldownTimes"] = {
-				["Bracnar"] = {
-					["endTime"] = 0,
-				},
+			["profession"] = "Jewelcrafting",
+			["name"] = "Inscribed Hessonite",
+			["players"] = {
+				["Uldaris"] = true,
 			},
-			["hasCD"] = true,
-			["mats"] = {
-				["i:22451"] = 1,
-			},
-			["itemString"] = "i:21884",
-			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["name"] = "Primal Fire",
+			["itemString"] = "i:52108",
 		},
 		[173323] = {
 			["mats"] = {
@@ -6560,46 +6565,6 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:118015",
 		},
-		[57436] = {
-			["mats"] = {
-				["i:43007"] = 1,
-				["i:43012"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:42995",
-			["players"] = {
-				["Bracnar"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Hearty Rhino",
-		},
-		[55389] = {
-			["mats"] = {
-				["i:41266"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Chaotic Skyflare Diamond",
-			["players"] = {
-				["Uldaris"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:41285",
-		},
-		[32808] = {
-			["mats"] = {
-				["i:7912"] = 10,
-			},
-			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Solid Stone Statue",
-			["players"] = {
-				["Uldaris"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:25882",
-		},
 		[127122] = {
 			["mats"] = {
 				["i:76142"] = 1,
@@ -6614,6 +6579,48 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["queued"] = 0,
 			["name"] = "Specialized Retinal Armor",
+		},
+		[188676] = {
+			["mats"] = {
+				["i:108996"] = 350,
+				["i:113261"] = 60,
+				["i:127759"] = 60,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Elemental Distillate",
+			["players"] = {
+				["Bracnar"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:128159",
+		},
+		[32808] = {
+			["mats"] = {
+				["i:7912"] = 10,
+			},
+			["numResult"] = 1,
+			["profession"] = "Jewelcrafting",
+			["name"] = "Solid Stone Statue",
+			["players"] = {
+				["Uldaris"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:25882",
+		},
+		[57436] = {
+			["mats"] = {
+				["i:43007"] = 1,
+				["i:43012"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["itemString"] = "i:42995",
+			["players"] = {
+				["Bracnar"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Hearty Rhino",
 		},
 		[170707] = {
 			["mats"] = {
@@ -6676,18 +6683,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:116183",
 		},
-		[124052] = {
+		[53854] = {
 			["mats"] = {
-				["i:74845"] = 1,
+				["i:36923"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:75026",
+			["profession"] = "Jewelcrafting",
+			["name"] = "Rigid Chalcedony",
 			["players"] = {
-				["Bracnar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Ginseng Tea",
+			["itemString"] = "i:39915",
 		},
 		[12091] = {
 			["mats"] = {
@@ -6719,18 +6726,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:21768",
 		},
-		[53854] = {
+		[124052] = {
 			["mats"] = {
-				["i:36923"] = 1,
+				["i:74845"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Rigid Chalcedony",
+			["profession"] = "Cooking",
+			["itemString"] = "i:75026",
 			["players"] = {
-				["Uldaris"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:39915",
+			["name"] = "Ginseng Tea",
 		},
 		[53918] = {
 			["mats"] = {
@@ -6877,20 +6884,6 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Frostguard Drape",
 		},
-		[171279] = {
-			["mats"] = {
-				["i:109119"] = 5,
-				["i:110611"] = 100,
-			},
-			["numResult"] = 1,
-			["profession"] = "Leatherworking",
-			["name"] = "Wayfaring Helm",
-			["players"] = {
-				["Uldaris"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:116188",
-		},
 		[60763] = {
 			["mats"] = {
 				["i:38682"] = 1,
@@ -6905,6 +6898,20 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["queued"] = 0,
 			["itemString"] = "i:44469",
+		},
+		[171279] = {
+			["mats"] = {
+				["i:109119"] = 5,
+				["i:110611"] = 100,
+			},
+			["numResult"] = 1,
+			["profession"] = "Leatherworking",
+			["name"] = "Wayfaring Helm",
+			["players"] = {
+				["Uldaris"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:116188",
 		},
 		[124053] = {
 			["mats"] = {
@@ -6935,19 +6942,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:3382",
 		},
-		[17180] = {
+		[3174] = {
 			["mats"] = {
-				["i:12359"] = 1,
-				["i:11176"] = 3,
+				["i:2453"] = 1,
+				["i:1288"] = 1,
+				["i:3371"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Enchanted Thorium Bar",
+			["profession"] = "Alchemy",
+			["name"] = "Potion of Curing",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:12655",
+			["itemString"] = "i:3386",
 		},
 		[176397] = {
 			["mats"] = {
@@ -6962,19 +6970,6 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:116987",
 		},
-		[55390] = {
-			["mats"] = {
-				["i:41266"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Destructive Skyflare Diamond",
-			["players"] = {
-				["Uldaris"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:41307",
-		},
 		[127124] = {
 			["mats"] = {
 				["i:4470"] = 1,
@@ -6988,6 +6983,19 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["queued"] = 0,
 			["name"] = "Locksmith's Powderkeg",
+		},
+		[55390] = {
+			["mats"] = {
+				["i:41266"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Jewelcrafting",
+			["name"] = "Destructive Skyflare Diamond",
+			["players"] = {
+				["Uldaris"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:41307",
 		},
 		[73262] = {
 			["mats"] = {
@@ -7061,18 +7069,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:25883",
 		},
-		[6418] = {
+		[57437] = {
 			["mats"] = {
-				["i:5470"] = 1,
+				["i:41808"] = 3,
+				["i:43007"] = 1,
 			},
-			["numResult"] = 2,
+			["numResult"] = 1,
 			["profession"] = "Cooking",
-			["itemString"] = "i:5479",
+			["itemString"] = "i:42996",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Crispy Lizard Tail",
+			["name"] = "Snapper Extreme",
 		},
 		[107762] = {
 			["mats"] = {
@@ -7443,8 +7452,8 @@ TradeSkillMaster_CraftingDB = {
 			["mats"] = {
 				["i:14048"] = 6,
 				["i:12810"] = 4,
-				["i:14344"] = 4,
 				["i:14227"] = 4,
+				["i:14344"] = 4,
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
@@ -7601,19 +7610,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:116194",
 		},
-		[55904] = {
+		[62045] = {
 			["mats"] = {
-				["i:41510"] = 3,
-				["i:38426"] = 1,
+				["i:44853"] = 2,
+				["i:44834"] = 1,
+				["i:44835"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:44211",
+			["profession"] = "Cooking",
+			["itemString"] = "i:44838",
 			["players"] = {
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Frostwoven Gloves",
+			["name"] = "Slow-Roasted Turkey",
 		},
 		[26872] = {
 			["mats"] = {
@@ -7657,19 +7667,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:39918",
 		},
-		[130325] = {
+		[53920] = {
 			["mats"] = {
-				["i:82441"] = 5,
-				["i:76061"] = 3,
+				["i:36932"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:82447",
+			["profession"] = "Jewelcrafting",
+			["name"] = "Forceful Dark Jade",
 			["players"] = {
-				["Galinar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Imperial Silk",
+			["itemString"] = "i:39978",
 		},
 		[56031] = {
 			["mats"] = {
@@ -7715,20 +7724,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:128014",
 		},
-		[3450] = {
+		[171288] = {
 			["mats"] = {
-				["i:3371"] = 1,
-				["i:3355"] = 1,
-				["i:3821"] = 1,
+				["i:113263"] = 10,
+				["i:110611"] = 50,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Elixir of Fortitude",
+			["profession"] = "Leatherworking",
+			["name"] = "Burnished Leather Bag",
 			["players"] = {
-				["Bracnar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:3825",
+			["itemString"] = "i:116259",
 		},
 		[58527] = {
 			["mats"] = {
@@ -7790,20 +7798,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Armor Plated Combat Shotgun",
 		},
-		[62045] = {
+		[55904] = {
 			["mats"] = {
-				["i:44853"] = 2,
-				["i:44834"] = 1,
-				["i:44835"] = 1,
+				["i:41510"] = 3,
+				["i:38426"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:44838",
+			["profession"] = "Tailoring",
+			["itemString"] = "i:44211",
 			["players"] = {
-				["Bracnar"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Slow-Roasted Turkey",
+			["name"] = "Frostwoven Gloves",
 		},
 		[13648] = {
 			["mats"] = {
@@ -7863,8 +7870,8 @@ TradeSkillMaster_CraftingDB = {
 			["mats"] = {
 				["i:3371"] = 4,
 				["i:36901"] = 10,
-				["i:36903"] = 10,
 				["i:36907"] = 4,
+				["i:36903"] = 10,
 			},
 			["itemString"] = "i:115460",
 			["profession"] = "Alchemy",
@@ -7940,34 +7947,33 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:52113",
 		},
-		[171288] = {
-			["mats"] = {
-				["i:113263"] = 10,
-				["i:110611"] = 50,
-			},
-			["numResult"] = 1,
-			["profession"] = "Leatherworking",
-			["name"] = "Burnished Leather Bag",
-			["players"] = {
-				["Uldaris"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:116259",
-		},
-		[3454] = {
+		[3450] = {
 			["mats"] = {
 				["i:3371"] = 1,
-				["i:3819"] = 2,
-				["i:3358"] = 4,
+				["i:3355"] = 1,
+				["i:3821"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["name"] = "Frost Oil",
+			["name"] = "Elixir of Fortitude",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:3829",
+			["itemString"] = "i:3825",
+		},
+		[15855] = {
+			["mats"] = {
+				["i:12184"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["itemString"] = "i:12210",
+			["players"] = {
+				["Bracnar"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Roast Raptor",
 		},
 		[2385] = {
 			["mats"] = {
@@ -7998,32 +8004,32 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Volatile Blasting Trigger",
 		},
-		[55392] = {
+		[57439] = {
 			["mats"] = {
-				["i:41266"] = 1,
+				["i:41801"] = 1,
+				["i:43007"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Ember Skyflare Diamond",
+			["profession"] = "Cooking",
+			["itemString"] = "i:42998",
 			["players"] = {
-				["Uldaris"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:41333",
+			["name"] = "Cuttlesteak",
 		},
-		[58143] = {
+		[73267] = {
 			["mats"] = {
-				["i:35624"] = 1,
-				["i:36926"] = 2,
+				["i:52181"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Jewelcrafting",
-			["name"] = "Earthshadow Ring",
+			["name"] = "Skillful Hessonite",
 			["players"] = {
 				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:43246",
+			["itemString"] = "i:52114",
 		},
 		[15935] = {
 			["mats"] = {
@@ -8131,19 +8137,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:38913",
 		},
-		[180757] = {
+		[53921] = {
 			["mats"] = {
-				["i:109141"] = 12,
-				["i:109137"] = 6,
+				["i:36926"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:122344",
+			["profession"] = "Jewelcrafting",
+			["name"] = "Purified Shadow Crystal",
 			["players"] = {
-				["Bracnar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Salty Squid Roll",
+			["itemString"] = "i:39979",
 		},
 		[60357] = {
 			["mats"] = {
@@ -8160,18 +8165,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:44329",
 		},
-		[73267] = {
+		[58143] = {
 			["mats"] = {
-				["i:52181"] = 1,
+				["i:35624"] = 1,
+				["i:36926"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Jewelcrafting",
-			["name"] = "Skillful Hessonite",
+			["name"] = "Earthshadow Ring",
 			["players"] = {
 				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52114",
+			["itemString"] = "i:43246",
 		},
 		[171290] = {
 			["mats"] = {
@@ -8755,10 +8761,10 @@ TradeSkillMaster_CraftingDB = {
 		},
 		[60767] = {
 			["mats"] = {
-				["i:34055"] = 6,
-				["i:34054"] = 6,
 				["i:34052"] = 1,
 				["i:38682"] = 1,
+				["i:34055"] = 6,
+				["i:34054"] = 6,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
@@ -8935,18 +8941,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Blackened Dragonfin",
 		},
-		[176415] = {
+		[53859] = {
 			["mats"] = {
-				["i:110609"] = 5,
+				["i:36926"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Leatherworking (Garrison)",
-			["name"] = "Deathweaver's Hovel",
+			["profession"] = "Jewelcrafting",
+			["name"] = "Sovereign Shadow Crystal",
 			["players"] = {
 				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:117000",
+			["itemString"] = "i:39934",
 		},
 		[80508] = {
 			["mats"] = {
@@ -8999,25 +9005,25 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Great Banquet of the Pot",
 		},
-		[53859] = {
+		[176415] = {
 			["mats"] = {
-				["i:36926"] = 1,
+				["i:110609"] = 5,
 			},
 			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Sovereign Shadow Crystal",
+			["profession"] = "Leatherworking (Garrison)",
+			["name"] = "Deathweaver's Hovel",
 			["players"] = {
 				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:39934",
+			["itemString"] = "i:117000",
 		},
 		[23803] = {
 			["mats"] = {
-				["i:14344"] = 6,
-				["i:38682"] = 1,
-				["i:16203"] = 4,
 				["i:16204"] = 12,
+				["i:38682"] = 1,
+				["i:14344"] = 6,
+				["i:16203"] = 4,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
@@ -9042,19 +9048,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:38937",
 		},
-		[55906] = {
+		[27961] = {
 			["mats"] = {
-				["i:41510"] = 4,
-				["i:38426"] = 1,
+				["i:22445"] = 8,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:41520",
+			["profession"] = "Enchanting",
+			["name"] = "Major Armor",
 			["players"] = {
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Frostwoven Boots",
+			["itemString"] = "i:38914",
 		},
 		[53923] = {
 			["mats"] = {
@@ -9087,18 +9093,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Gyro-Balanced Khorium Destroyer",
 		},
-		[58145] = {
+		[93741] = {
 			["mats"] = {
-				["i:35624"] = 2,
+				["i:67229"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Stoneguard Band",
+			["profession"] = "Cooking",
+			["itemString"] = "i:67230",
 			["players"] = {
-				["Uldaris"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:43248",
+			["name"] = "Venison Jerky",
 		},
 		[107654] = {
 			["mats"] = {
@@ -9192,19 +9198,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Banquet of the Steamer",
 		},
-		[57442] = {
+		[55395] = {
 			["mats"] = {
-				["i:41807"] = 1,
-				["i:43007"] = 1,
+				["i:41266"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:43000",
+			["profession"] = "Jewelcrafting",
+			["name"] = "Thundering Skyflare Diamond",
 			["players"] = {
-				["Bracnar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Dragonfin Filet",
+			["itemString"] = "i:41400",
 		},
 		[176417] = {
 			["mats"] = {
@@ -9233,20 +9238,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:7277",
 		},
-		[127134] = {
+		[57442] = {
 			["mats"] = {
-				["i:72988"] = 12,
-				["i:77467"] = 8,
-				["i:77468"] = 4,
+				["i:41807"] = 1,
+				["i:43007"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["itemString"] = "i:77530",
+			["profession"] = "Cooking",
+			["itemString"] = "i:43000",
 			["players"] = {
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Ghost Iron Dragonling",
+			["name"] = "Dragonfin Filet",
 		},
 		[19791] = {
 			["mats"] = {
@@ -9262,18 +9266,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Thorium Widget",
 		},
-		[178208] = {
+		[44584] = {
 			["mats"] = {
-				["i:110609"] = 5,
+				["i:34056"] = 2,
+				["i:34054"] = 4,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Leatherworking",
-			["name"] = "Drums of Fury",
+			["profession"] = "Enchanting",
+			["name"] = "Greater Vitality",
 			["players"] = {
-				["Uldaris"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:120257",
+			["itemString"] = "i:38974",
 		},
 		[18238] = {
 			["mats"] = {
@@ -9381,34 +9387,33 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Handstitched Linen Britches",
 		},
-		[55907] = {
+		[53860] = {
 			["mats"] = {
-				["i:41510"] = 5,
-				["i:38426"] = 1,
+				["i:36926"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:41521",
+			["profession"] = "Jewelcrafting",
+			["name"] = "Shifting Shadow Crystal",
 			["players"] = {
-				["Galinar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Frostwoven Cowl",
+			["itemString"] = "i:39935",
 		},
-		[3850] = {
+		[127134] = {
 			["mats"] = {
-				["i:2997"] = 5,
-				["i:2321"] = 4,
+				["i:72988"] = 12,
+				["i:77467"] = 8,
+				["i:77468"] = 4,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:4316",
+			["profession"] = "Engineering",
+			["itemString"] = "i:77530",
 			["players"] = {
-				["Ghiaccioli"] = true,
 				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Heavy Woolen Pants",
+			["name"] = "Ghost Iron Dragonling",
 		},
 		[58146] = {
 			["mats"] = {
@@ -9498,31 +9503,32 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:20964",
 		},
-		[7754] = {
+		[28953] = {
 			["mats"] = {
-				["i:6317"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:6316",
-			["players"] = {
-				["Bracnar"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Loch Frenzy Delight",
-		},
-		[53860] = {
-			["mats"] = {
-				["i:36926"] = 1,
+				["i:23117"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Jewelcrafting",
-			["name"] = "Shifting Shadow Crystal",
+			["name"] = "Sparkling Azure Moonstone",
 			["players"] = {
 				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:39935",
+			["itemString"] = "i:23119",
+		},
+		[55907] = {
+			["mats"] = {
+				["i:41510"] = 5,
+				["i:38426"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Tailoring",
+			["itemString"] = "i:41521",
+			["players"] = {
+				["Galinar"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Frostwoven Cowl",
 		},
 		[127135] = {
 			["mats"] = {
@@ -9665,20 +9671,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Handful of Copper Bolts",
 		},
-		[25659] = {
+		[176422] = {
 			["mats"] = {
-				["i:8150"] = 1,
-				["i:9061"] = 1,
-				["i:21024"] = 1,
+				["i:110609"] = 5,
 			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:21023",
+			["numResult"] = 1,
+			["profession"] = "Leatherworking (Garrison)",
+			["name"] = "Ornate Alliance Tent",
 			["players"] = {
-				["Bracnar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Dirge's Kickin' Chimaerok Chops",
+			["itemString"] = "i:117006",
 		},
 		[125600] = {
 			["mats"] = {
@@ -9821,18 +9825,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Hot Wolf Ribs",
 		},
-		[176422] = {
+		[25659] = {
 			["mats"] = {
-				["i:110609"] = 5,
+				["i:8150"] = 1,
+				["i:9061"] = 1,
+				["i:21024"] = 1,
 			},
-			["numResult"] = 1,
-			["profession"] = "Leatherworking (Garrison)",
-			["name"] = "Ornate Alliance Tent",
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["itemString"] = "i:21023",
 			["players"] = {
-				["Uldaris"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:117006",
+			["name"] = "Dirge's Kickin' Chimaerok Chops",
 		},
 		[13841] = {
 			["mats"] = {
@@ -9849,19 +9855,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:38831",
 		},
-		[57443] = {
+		[3978] = {
 			["mats"] = {
-				["i:43009"] = 1,
-				["i:43007"] = 1,
+				["i:1206"] = 1,
+				["i:4371"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:43001",
+			["profession"] = "Engineering",
+			["itemString"] = "i:4406",
 			["players"] = {
-				["Bracnar"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Tracker Snacks",
+			["name"] = "Standard Scope",
 		},
 		[60621] = {
 			["mats"] = {
@@ -9941,10 +9947,10 @@ TradeSkillMaster_CraftingDB = {
 		},
 		[23804] = {
 			["mats"] = {
-				["i:14344"] = 6,
-				["i:38682"] = 1,
-				["i:16203"] = 5,
 				["i:16204"] = 20,
+				["i:38682"] = 1,
+				["i:14344"] = 6,
+				["i:16203"] = 5,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
@@ -10089,20 +10095,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Black Mageweave Robe",
 		},
-		[12066] = {
+		[20030] = {
 			["mats"] = {
-				["i:4339"] = 3,
-				["i:8343"] = 2,
-				["i:2604"] = 2,
+				["i:38682"] = 1,
+				["i:16204"] = 10,
+				["i:14344"] = 4,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["name"] = "Red Mageweave Gloves",
+			["profession"] = "Enchanting",
+			["name"] = "Superior Impact",
 			["players"] = {
-				["Ghiaccioli"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:10018",
+			["itemString"] = "i:38869",
 		},
 		[12082] = {
 			["mats"] = {
@@ -10393,10 +10399,10 @@ TradeSkillMaster_CraftingDB = {
 		},
 		[22749] = {
 			["mats"] = {
-				["i:14344"] = 4,
-				["i:38682"] = 1,
-				["i:16203"] = 6,
 				["i:13926"] = 2,
+				["i:38682"] = 1,
+				["i:14344"] = 4,
+				["i:16203"] = 6,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
@@ -10769,46 +10775,6 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:40150",
 		},
-		[84409] = {
-			["mats"] = {
-				["i:67749"] = 2,
-				["i:60224"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["itemString"] = "i:60853",
-			["players"] = {
-				["Galinar"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Volatile Seaforium Blastpack",
-		},
-		[6419] = {
-			["mats"] = {
-				["i:5471"] = 1,
-			},
-			["numResult"] = 2,
-			["profession"] = "Cooking",
-			["itemString"] = "i:5480",
-			["players"] = {
-				["Bracnar"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Lean Venison",
-		},
-		[107627] = {
-			["mats"] = {
-				["i:76135"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Accurate Roguestone",
-			["players"] = {
-				["Uldaris"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:76549",
-		},
 		[8772] = {
 			["mats"] = {
 				["i:4305"] = 4,
@@ -10826,18 +10792,59 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Crimson Silk Belt",
 		},
-		[66498] = {
+		[55398] = {
 			["mats"] = {
-				["i:36925"] = 1,
+				["i:41334"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Jewelcrafting",
-			["name"] = "Sparkling Majestic Zircon",
+			["name"] = "Eternal Earthsiege Diamond",
 			["players"] = {
 				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:40120",
+			["itemString"] = "i:41396",
+		},
+		[107627] = {
+			["mats"] = {
+				["i:76135"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Jewelcrafting",
+			["name"] = "Accurate Roguestone",
+			["players"] = {
+				["Uldaris"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:76549",
+		},
+		[84409] = {
+			["mats"] = {
+				["i:67749"] = 2,
+				["i:60224"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:60853",
+			["players"] = {
+				["Galinar"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Volatile Seaforium Blastpack",
+		},
+		[27899] = {
+			["mats"] = {
+				["i:22445"] = 6,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["name"] = "Brawn",
+			["players"] = {
+				["Bracnar"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:38897",
 		},
 		[8804] = {
 			["mats"] = {
@@ -10875,19 +10882,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:13503",
 		},
-		[27899] = {
+		[66498] = {
 			["mats"] = {
-				["i:22445"] = 6,
-				["i:38682"] = 1,
+				["i:36925"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Brawn",
+			["profession"] = "Jewelcrafting",
+			["name"] = "Sparkling Majestic Zircon",
 			["players"] = {
-				["Bracnar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38897",
+			["itemString"] = "i:40120",
 		},
 		[62051] = {
 			["mats"] = {
@@ -11087,19 +11093,6 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:116182",
 		},
-		[66499] = {
-			["mats"] = {
-				["i:36925"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Stormy Majestic Zircon",
-			["players"] = {
-				["Uldaris"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:40122",
-		},
 		[44524] = {
 			["mats"] = {
 				["i:36860"] = 4,
@@ -11114,6 +11107,19 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["queued"] = 0,
 			["itemString"] = "i:38965",
+		},
+		[66499] = {
+			["mats"] = {
+				["i:36925"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Jewelcrafting",
+			["name"] = "Stormy Majestic Zircon",
+			["players"] = {
+				["Uldaris"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:40122",
 		},
 		[44588] = {
 			["mats"] = {
@@ -11160,10 +11166,10 @@ TradeSkillMaster_CraftingDB = {
 		},
 		[56196] = {
 			["mats"] = {
-				["i:35624"] = 1,
-				["i:36920"] = 2,
 				["i:36923"] = 1,
 				["i:36917"] = 1,
+				["i:35624"] = 1,
+				["i:36920"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Jewelcrafting",
@@ -11496,20 +11502,21 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:52195",
 		},
-		[13698] = {
+		[62948] = {
 			["mats"] = {
-				["i:7392"] = 3,
+				["i:34057"] = 6,
 				["i:38682"] = 1,
-				["i:11137"] = 1,
+				["i:34052"] = 6,
+				["i:34054"] = 40,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Skinning",
+			["name"] = "Greater Spellpower",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38823",
+			["itemString"] = "i:45056",
 		},
 		[2387] = {
 			["mats"] = {
@@ -11526,19 +11533,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Linen Cloak",
 		},
-		[104299] = {
+		[47048] = {
 			["mats"] = {
-				["i:74856"] = 1,
-				["i:74848"] = 5,
+				["i:30183"] = 2,
+				["i:21884"] = 6,
+				["i:13503"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:74645",
+			["profession"] = "Alchemy",
+			["name"] = "Sorcerer's Alchemist Stone",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Eternal Blossom Fish",
+			["itemString"] = "i:35749",
 		},
 		[2395] = {
 			["mats"] = {
@@ -11572,21 +11580,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Green Woolen Vest",
 		},
-		[62948] = {
+		[13698] = {
 			["mats"] = {
-				["i:34052"] = 6,
-				["i:34054"] = 40,
-				["i:34057"] = 6,
+				["i:7392"] = 3,
 				["i:38682"] = 1,
+				["i:11137"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Spellpower",
+			["name"] = "Skinning",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:45056",
+			["itemString"] = "i:38823",
 		},
 		[44589] = {
 			["mats"] = {
@@ -11632,20 +11639,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:38825",
 		},
-		[47048] = {
+		[104299] = {
 			["mats"] = {
-				["i:30183"] = 2,
-				["i:21884"] = 6,
-				["i:13503"] = 1,
+				["i:74856"] = 1,
+				["i:74848"] = 5,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Sorcerer's Alchemist Stone",
+			["profession"] = "Cooking",
+			["itemString"] = "i:74645",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:35749",
+			["name"] = "Eternal Blossom Fish",
 		},
 		[66501] = {
 			["mats"] = {
@@ -11721,19 +11727,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:31679",
 		},
-		[13858] = {
+		[55400] = {
 			["mats"] = {
-				["i:11137"] = 6,
-				["i:38682"] = 1,
+				["i:41334"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Superior Health",
+			["profession"] = "Jewelcrafting",
+			["name"] = "Relentless Earthsiege Diamond",
 			["players"] = {
-				["Bracnar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38833",
+			["itemString"] = "i:41398",
 		},
 		[66583] = {
 			["mats"] = {
@@ -11859,18 +11864,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:76526",
 		},
-		[28028] = {
+		[43758] = {
 			["mats"] = {
-				["i:22450"] = 2,
+				["i:27678"] = 1,
+				["i:13757"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Void Sphere",
+			["profession"] = "Cooking",
+			["itemString"] = "i:33866",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:22459",
+			["name"] = "Stormchops",
 		},
 		[80246] = {
 			["mats"] = {
@@ -11917,21 +11923,22 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:38923",
 		},
-		[20032] = {
+		[12067] = {
 			["mats"] = {
-				["i:14344"] = 4,
-				["i:12808"] = 4,
-				["i:12803"] = 4,
-				["i:38682"] = 1,
+				["i:4339"] = 4,
+				["i:8343"] = 2,
+				["i:10286"] = 2,
+				["i:8153"] = 4,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Lifestealing",
+			["profession"] = "Tailoring",
+			["itemString"] = "i:10019",
 			["players"] = {
-				["Bracnar"] = true,
+				["Ghiaccioli"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38871",
+			["name"] = "Dreamweave Gloves",
 		},
 		[37836] = {
 			["mats"] = {
@@ -11947,22 +11954,21 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Spice Bread",
 		},
-		[12067] = {
+		[20032] = {
 			["mats"] = {
-				["i:8343"] = 2,
-				["i:4339"] = 4,
-				["i:8153"] = 4,
-				["i:10286"] = 2,
+				["i:12803"] = 4,
+				["i:38682"] = 1,
+				["i:14344"] = 4,
+				["i:12808"] = 4,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:10019",
+			["profession"] = "Enchanting",
+			["name"] = "Lifestealing",
 			["players"] = {
-				["Ghiaccioli"] = true,
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Dreamweave Gloves",
+			["itemString"] = "i:38871",
 		},
 		[93935] = {
 			["mats"] = {
@@ -12157,20 +12163,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:40168",
 		},
-		[38961] = {
+		[7179] = {
 			["mats"] = {
 				["i:3371"] = 1,
-				["i:22793"] = 1,
-				["i:22792"] = 2,
+				["i:6370"] = 2,
+				["i:3820"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["name"] = "Fel Mana Potion",
+			["name"] = "Elixir of Water Breathing",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:31677",
+			["itemString"] = "i:5996",
 		},
 		[55401] = {
 			["mats"] = {
@@ -12363,19 +12369,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Brightcloth Robe",
 		},
-		[75255] = {
+		[28553] = {
 			["mats"] = {
-				["i:53643"] = 3,
-				["i:52326"] = 6,
+				["i:3371"] = 1,
+				["i:22785"] = 2,
+				["i:22789"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:54449",
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of Major Agility",
 			["players"] = {
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Ghostly Spellthread",
+			["itemString"] = "i:22831",
 		},
 		[25086] = {
 			["mats"] = {
@@ -12458,20 +12465,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Elementium Toolbox",
 		},
-		[28553] = {
+		[75255] = {
 			["mats"] = {
-				["i:3371"] = 1,
-				["i:22785"] = 2,
-				["i:22789"] = 1,
+				["i:53643"] = 3,
+				["i:52326"] = 6,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Elixir of Major Agility",
+			["profession"] = "Tailoring",
+			["itemString"] = "i:54449",
 			["players"] = {
-				["Bracnar"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:22831",
+			["name"] = "Ghostly Spellthread",
 		},
 		[25278] = {
 			["mats"] = {
@@ -13139,10 +13145,10 @@ TradeSkillMaster_CraftingDB = {
 		},
 		[59625] = {
 			["mats"] = {
-				["i:34055"] = 6,
-				["i:38682"] = 1,
-				["i:34052"] = 6,
 				["i:34057"] = 6,
+				["i:38682"] = 1,
+				["i:34055"] = 6,
+				["i:34052"] = 6,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
@@ -13359,20 +13365,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:31079",
 		},
-		[84420] = {
+		[13635] = {
 			["mats"] = {
-				["i:54849"] = 4,
-				["i:67749"] = 2,
-				["i:53039"] = 5,
+				["i:11083"] = 3,
+				["i:38682"] = 1,
+				["i:11138"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["itemString"] = "i:59598",
+			["profession"] = "Enchanting",
+			["name"] = "Defense",
 			["players"] = {
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Finely-Tuned Throat Needler",
+			["itemString"] = "i:38806",
 		},
 		[60969] = {
 			["mats"] = {
@@ -13836,10 +13842,10 @@ TradeSkillMaster_CraftingDB = {
 		},
 		[60714] = {
 			["mats"] = {
-				["i:34052"] = 6,
-				["i:34054"] = 30,
 				["i:34057"] = 6,
 				["i:38682"] = 1,
+				["i:34052"] = 6,
+				["i:34054"] = 30,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
@@ -14026,33 +14032,33 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Feast of the Waters",
 		},
-		[12089] = {
+		[60606] = {
 			["mats"] = {
-				["i:4339"] = 4,
-				["i:8343"] = 3,
+				["i:34056"] = 4,
+				["i:34054"] = 4,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["name"] = "Tuxedo Pants",
-			["players"] = {
-				["Ghiaccioli"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:10035",
-		},
-		[156577] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:109125"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Draenic Agility Potion",
+			["profession"] = "Enchanting",
+			["name"] = "Assault",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:109217",
+			["itemString"] = "i:44449",
+		},
+		[118237] = {
+			["mats"] = {
+				["i:74250"] = 1,
+			},
+			["numResult"] = 3,
+			["profession"] = "Enchanting",
+			["name"] = "Spirit Dust",
+			["players"] = {
+				["Bracnar"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:74249",
 		},
 		[26751] = {
 			["mats"] = {
@@ -14169,20 +14175,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:39919",
 		},
-		[33995] = {
+		[30311] = {
 			["mats"] = {
-				["i:22446"] = 1,
-				["i:38682"] = 1,
-				["i:22445"] = 12,
+				["i:23781"] = 1,
+				["i:23783"] = 2,
+				["i:23446"] = 4,
 			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Major Strength",
+			["numResult"] = 3,
+			["profession"] = "Engineering",
+			["itemString"] = "i:23737",
 			["players"] = {
-				["Bracnar"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38933",
+			["name"] = "Adamantite Grenade",
 		},
 		[107619] = {
 			["mats"] = {
@@ -14212,20 +14218,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:38998",
 		},
-		[61483] = {
+		[6412] = {
 			["mats"] = {
-				["i:36913"] = 8,
-				["i:33568"] = 2,
-				["i:35627"] = 1,
+				["i:5465"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["itemString"] = "i:44742",
+			["profession"] = "Cooking",
+			["itemString"] = "i:5472",
 			["players"] = {
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Mechanized Snow Goggles",
+			["name"] = "Kaldorei Spider Kabob",
 		},
 		[88006] = {
 			["mats"] = {
@@ -14240,18 +14244,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Blackened Surprise",
 		},
-		[54017] = {
+		[156577] = {
 			["mats"] = {
-				["i:36917"] = 1,
+				["i:3371"] = 1,
+				["i:109125"] = 3,
 			},
 			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Precise Bloodstone",
+			["profession"] = "Alchemy",
+			["name"] = "Draenic Agility Potion",
 			["players"] = {
-				["Uldaris"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:39910",
+			["itemString"] = "i:109217",
 		},
 		[80496] = {
 			["mats"] = {
@@ -14328,20 +14333,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:20818",
 		},
-		[60606] = {
+		[12089] = {
 			["mats"] = {
-				["i:34056"] = 4,
-				["i:34054"] = 4,
-				["i:38682"] = 1,
+				["i:4339"] = 4,
+				["i:8343"] = 3,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Assault",
+			["profession"] = "Tailoring",
+			["name"] = "Tuxedo Pants",
 			["players"] = {
-				["Bracnar"] = true,
+				["Ghiaccioli"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:44449",
+			["itemString"] = "i:10035",
 		},
 		[3171] = {
 			["mats"] = {
@@ -14429,18 +14433,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["numResult"] = 1,
 		},
-		[3371] = {
+		[53872] = {
 			["mats"] = {
-				["i:3173"] = 1,
+				["i:36929"] = 1,
 			},
-			["numResult"] = 2,
-			["profession"] = "Cooking",
-			["itemString"] = "i:3220",
+			["numResult"] = 1,
+			["profession"] = "Jewelcrafting",
+			["name"] = "Inscribed Huge Citrine",
 			["players"] = {
-				["Bracnar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Blood Sausage",
+			["itemString"] = "i:39947",
 		},
 		[75597] = {
 			["mats"] = {
@@ -14475,31 +14479,34 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:38876",
 		},
-		[6412] = {
+		[61483] = {
 			["mats"] = {
-				["i:5465"] = 1,
+				["i:36913"] = 8,
+				["i:33568"] = 2,
+				["i:35627"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:5472",
+			["profession"] = "Engineering",
+			["itemString"] = "i:44742",
 			["players"] = {
-				["Bracnar"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Kaldorei Spider Kabob",
+			["name"] = "Mechanized Snow Goggles",
 		},
-		[118237] = {
+		[75250] = {
 			["mats"] = {
-				["i:74250"] = 1,
+				["i:53643"] = 3,
+				["i:52325"] = 6,
 			},
-			["numResult"] = 3,
-			["profession"] = "Enchanting",
-			["name"] = "Spirit Dust",
+			["numResult"] = 1,
+			["profession"] = "Tailoring",
+			["itemString"] = "i:54447",
 			["players"] = {
-				["Bracnar"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74249",
+			["name"] = "Enchanted Spellthread",
 		},
 		[8758] = {
 			["mats"] = {
@@ -14702,19 +14709,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:44322",
 		},
-		[104389] = {
+		[88013] = {
 			["mats"] = {
-				["i:74248"] = 3,
-				["i:38682"] = 1,
+				["i:62786"] = 1,
+				["i:30817"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Super Intellect",
+			["profession"] = "Cooking",
+			["itemString"] = "i:62680",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74703",
+			["name"] = "Chocolate Cookie",
 		},
 		[20035] = {
 			["mats"] = {
@@ -14792,37 +14799,33 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:52762",
 		},
-		[53872] = {
+		[3371] = {
 			["mats"] = {
-				["i:36929"] = 1,
+				["i:3173"] = 1,
 			},
-			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Inscribed Huge Citrine",
+			["numResult"] = 2,
+			["profession"] = "Cooking",
+			["itemString"] = "i:3220",
 			["players"] = {
-				["Uldaris"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:39947",
+			["name"] = "Blood Sausage",
 		},
-		[131690] = {
-			["players"] = {
-				["Uldaris"] = true,
+		[13620] = {
+			["mats"] = {
+				["i:11083"] = 1,
+				["i:6370"] = 3,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
-			["cooldownTimes"] = {
-				["Uldaris"] = {
-					["endTime"] = 0,
-				},
+			["profession"] = "Enchanting",
+			["name"] = "Fishing",
+			["players"] = {
+				["Bracnar"] = true,
 			},
-			["hasCD"] = true,
-			["mats"] = {
-				["i:76140"] = 3,
-			},
-			["itemString"] = "i:90400",
-			["profession"] = "Jewelcrafting",
 			["queued"] = 0,
-			["name"] = "Facets of Research",
+			["itemString"] = "i:38802",
 		},
 		[60653] = {
 			["mats"] = {
@@ -15015,22 +15018,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:3823",
 		},
-		[18437] = {
+		[104389] = {
 			["mats"] = {
-				["i:14048"] = 2,
-				["i:14256"] = 2,
-				["i:8170"] = 2,
-				["i:14341"] = 1,
+				["i:74248"] = 3,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:14108",
+			["profession"] = "Enchanting",
+			["name"] = "Super Intellect",
 			["players"] = {
-				["Ghiaccioli"] = true,
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Felcloth Boots",
+			["itemString"] = "i:74703",
 		},
 		[24801] = {
 			["mats"] = {
@@ -15045,33 +15045,33 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Smoked Desert Dumplings",
 		},
-		[26880] = {
+		[45556] = {
 			["mats"] = {
-				["i:12359"] = 1,
+				["i:43009"] = 2,
+				["i:43007"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Thorium Setting",
-			["players"] = {
-				["Uldaris"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:21752",
-		},
-		[11465] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:3358"] = 1,
-				["i:8839"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Elixir of Greater Intellect",
+			["profession"] = "Cooking",
+			["itemString"] = "i:34755",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:9179",
+			["name"] = "Tender Shoveltusk Steak",
+		},
+		[75248] = {
+			["mats"] = {
+				["i:53643"] = 2,
+				["i:38426"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Tailoring",
+			["itemString"] = "i:54471",
+			["players"] = {
+				["Galinar"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Deathsilk Belt",
 		},
 		[55919] = {
 			["mats"] = {
@@ -15101,20 +15101,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:40213",
 		},
-		[11461] = {
+		[43765] = {
 			["mats"] = {
-				["i:3371"] = 1,
-				["i:8839"] = 1,
-				["i:3821"] = 1,
+				["i:27682"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Arcane Elixir",
+			["profession"] = "Cooking",
+			["itemString"] = "i:33872",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:9155",
+			["name"] = "Spicy Hot Talbuk",
 		},
 		[11477] = {
 			["mats"] = {
@@ -15131,18 +15129,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:9224",
 		},
-		[74964] = {
+		[55921] = {
 			["mats"] = {
-				["i:53010"] = 5,
+				["i:41510"] = 10,
+				["i:38426"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
-			["itemString"] = "i:53643",
+			["itemString"] = "i:41549",
 			["players"] = {
 				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Bolt of Embersilk Cloth",
+			["name"] = "Duskweave Robe",
 		},
 		[80719] = {
 			["mats"] = {
@@ -15160,20 +15159,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:58085",
 		},
-		[12053] = {
+		[114751] = {
 			["mats"] = {
-				["i:8343"] = 2,
-				["i:4339"] = 2,
+				["i:3371"] = 1,
+				["i:72234"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:10003",
+			["profession"] = "Alchemy",
+			["name"] = "Alchemist's Rejuvenation",
 			["players"] = {
-				["Ghiaccioli"] = true,
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Black Mageweave Gloves",
+			["itemString"] = "i:76094",
 		},
 		[3399] = {
 			["mats"] = {
@@ -15188,35 +15186,39 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Tasty Lion Steak",
 		},
-		[156571] = {
+		[28551] = {
 			["mats"] = {
-				["i:108996"] = 5,
-				["i:113261"] = 1,
-				["i:109147"] = 5,
-			},
-			["numResult"] = 5,
-			["profession"] = "Alchemy",
-			["name"] = "Greater Draenic Intellect Flask",
-			["players"] = {
-				["Bracnar"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:109155",
-		},
-		[13620] = {
-			["mats"] = {
-				["i:11083"] = 1,
-				["i:6370"] = 3,
-				["i:38682"] = 1,
+				["i:3371"] = 1,
+				["i:22791"] = 2,
+				["i:22785"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Fishing",
+			["profession"] = "Alchemy",
+			["name"] = "Super Healing Potion",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38802",
+			["itemString"] = "i:22829",
+		},
+		[131690] = {
+			["players"] = {
+				["Uldaris"] = true,
+			},
+			["numResult"] = 1,
+			["cooldownTimes"] = {
+				["Uldaris"] = {
+					["endTime"] = 0,
+				},
+			},
+			["hasCD"] = true,
+			["mats"] = {
+				["i:76140"] = 3,
+			},
+			["itemString"] = "i:90400",
+			["profession"] = "Jewelcrafting",
+			["queued"] = 0,
+			["name"] = "Facets of Research",
 		},
 		[74193] = {
 			["mats"] = {
@@ -15312,19 +15314,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:52747",
 		},
-		[104391] = {
+		[88015] = {
 			["mats"] = {
-				["i:74248"] = 3,
-				["i:38682"] = 1,
+				["i:2596"] = 2,
+				["i:2595"] = 1,
 			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Greater Agility",
+			["numResult"] = 4,
+			["profession"] = "Cooking",
+			["itemString"] = "i:62790",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74705",
+			["name"] = "Darkbrew Lager",
 		},
 		[131691] = {
 			["players"] = {
@@ -15390,19 +15392,22 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:3826",
 		},
-		[88013] = {
+		[32766] = {
 			["mats"] = {
-				["i:62786"] = 1,
-				["i:30817"] = 1,
+				["i:23117"] = 3,
+				["i:21929"] = 3,
+				["i:22451"] = 2,
+				["i:21884"] = 2,
+				["i:23077"] = 3,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62680",
+			["profession"] = "Alchemy",
+			["name"] = "Skyfire Diamond",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Chocolate Cookie",
+			["itemString"] = "i:25868",
 		},
 		[88011] = {
 			["mats"] = {
@@ -15445,19 +15450,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Very Burnt Worg",
 		},
-		[45559] = {
+		[33277] = {
 			["mats"] = {
-				["i:43007"] = 1,
-				["i:43012"] = 2,
+				["i:23676"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Cooking",
-			["itemString"] = "i:34758",
+			["itemString"] = "i:24105",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Mighty Rhino Dogs",
+			["name"] = "Roasted Moongraze Tenderloin",
 		},
 		[84429] = {
 			["mats"] = {
@@ -15489,19 +15493,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:13454",
 		},
-		[75248] = {
+		[11465] = {
 			["mats"] = {
-				["i:53643"] = 2,
-				["i:38426"] = 2,
+				["i:3371"] = 1,
+				["i:3358"] = 1,
+				["i:8839"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:54471",
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of Greater Intellect",
 			["players"] = {
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Deathsilk Belt",
+			["itemString"] = "i:9179",
 		},
 		[17637] = {
 			["mats"] = {
@@ -15548,19 +15553,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:8949",
 		},
-		[55920] = {
+		[53873] = {
 			["mats"] = {
-				["i:41510"] = 8,
-				["i:38426"] = 1,
+				["i:36926"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:41551",
+			["profession"] = "Jewelcrafting",
+			["name"] = "Etched Shadow Crystal",
 			["players"] = {
-				["Galinar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Duskweave Wristwraps",
+			["itemString"] = "i:39948",
 		},
 		[53937] = {
 			["mats"] = {
@@ -15618,18 +15622,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:76512",
 		},
-		[168853] = {
+		[75247] = {
 			["mats"] = {
-				["i:111557"] = 50,
+				["i:53010"] = 6,
 			},
-			["numResult"] = 1,
+			["numResult"] = 3,
 			["profession"] = "Tailoring",
-			["itemString"] = "i:114829",
+			["itemString"] = "i:54442",
 			["players"] = {
 				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Sumptuous Robes",
+			["name"] = "Embersilk Net",
 		},
 		[88012] = {
 			["mats"] = {
@@ -15644,19 +15648,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Broiled Mountain Trout",
 		},
-		[114751] = {
+		[12053] = {
 			["mats"] = {
-				["i:3371"] = 1,
-				["i:72234"] = 1,
+				["i:8343"] = 2,
+				["i:4339"] = 2,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Alchemist's Rejuvenation",
+			["profession"] = "Tailoring",
+			["itemString"] = "i:10003",
 			["players"] = {
-				["Bracnar"] = true,
+				["Ghiaccioli"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:76094",
+			["name"] = "Black Mageweave Gloves",
 		},
 		[20036] = {
 			["mats"] = {
@@ -15791,24 +15796,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Lobster Stew",
 		},
-		[131695] = {
-			["players"] = {
-				["Uldaris"] = true,
+		[24418] = {
+			["mats"] = {
+				["i:3667"] = 2,
 			},
 			["numResult"] = 1,
-			["cooldownTimes"] = {
-				["Uldaris"] = {
-					["endTime"] = 0,
-				},
+			["profession"] = "Cooking",
+			["itemString"] = "i:20074",
+			["players"] = {
+				["Bracnar"] = true,
 			},
-			["hasCD"] = true,
-			["mats"] = {
-				["i:76142"] = 3,
-			},
-			["itemString"] = "i:90398",
-			["profession"] = "Jewelcrafting",
 			["queued"] = 0,
-			["name"] = "Facets of Research",
+			["name"] = "Heavy Crocolisk Stew",
 		},
 		[28544] = {
 			["mats"] = {
@@ -15868,22 +15867,22 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:14046",
 		},
-		[32766] = {
+		[18437] = {
 			["mats"] = {
-				["i:23117"] = 3,
-				["i:21929"] = 3,
-				["i:22451"] = 2,
-				["i:21884"] = 2,
-				["i:23077"] = 3,
+				["i:14048"] = 2,
+				["i:14256"] = 2,
+				["i:8170"] = 2,
+				["i:14341"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Skyfire Diamond",
+			["profession"] = "Tailoring",
+			["itemString"] = "i:14108",
 			["players"] = {
-				["Bracnar"] = true,
+				["Ghiaccioli"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:25868",
+			["name"] = "Felcloth Boots",
 		},
 		[114752] = {
 			["mats"] = {
@@ -15914,19 +15913,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:5762",
 		},
-		[145310] = {
+		[27911] = {
 			["mats"] = {
-				["i:102536"] = 5,
-				["i:102543"] = 1,
+				["i:22446"] = 4,
+				["i:38682"] = 1,
+				["i:21886"] = 4,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:101749",
+			["profession"] = "Enchanting",
+			["name"] = "Superior Healing",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Stuffed Lushrooms",
+			["itemString"] = "i:38900",
 		},
 		[84431] = {
 			["mats"] = {
@@ -15945,19 +15945,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Overpowered Chicken Splitter",
 		},
-		[88015] = {
+		[104391] = {
 			["mats"] = {
-				["i:2596"] = 2,
-				["i:2595"] = 1,
+				["i:74248"] = 3,
+				["i:38682"] = 1,
 			},
-			["numResult"] = 4,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62790",
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["name"] = "Greater Agility",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Darkbrew Lager",
+			["itemString"] = "i:74705",
 		},
 		[59759] = {
 			["mats"] = {
@@ -16060,18 +16060,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Crimson Silk Vest",
 		},
-		[33277] = {
+		[45559] = {
 			["mats"] = {
-				["i:23676"] = 1,
+				["i:43007"] = 1,
+				["i:43012"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Cooking",
-			["itemString"] = "i:24105",
+			["itemString"] = "i:34758",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Roasted Moongraze Tenderloin",
+			["name"] = "Mighty Rhino Dogs",
 		},
 		[28583] = {
 			["players"] = {
@@ -16137,20 +16138,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:76090",
 		},
-		[28551] = {
+		[156571] = {
 			["mats"] = {
-				["i:3371"] = 1,
-				["i:22791"] = 2,
-				["i:22785"] = 1,
+				["i:108996"] = 5,
+				["i:113261"] = 1,
+				["i:109147"] = 5,
 			},
-			["numResult"] = 1,
+			["numResult"] = 5,
 			["profession"] = "Alchemy",
-			["name"] = "Super Healing Potion",
+			["name"] = "Greater Draenic Intellect Flask",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:22829",
+			["itemString"] = "i:109155",
 		},
 		[162403] = {
 			["mats"] = {
@@ -16196,19 +16197,21 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Stewed Trout",
 		},
-		[104393] = {
+		[18438] = {
 			["mats"] = {
-				["i:74249"] = 4,
-				["i:38682"] = 1,
+				["i:14048"] = 5,
+				["i:14227"] = 2,
+				["i:14341"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Mighty Spirit",
+			["profession"] = "Tailoring",
+			["itemString"] = "i:13865",
 			["players"] = {
-				["Bracnar"] = true,
+				["Ghiaccioli"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74707",
+			["name"] = "Runecloth Pants",
 		},
 		[7748] = {
 			["mats"] = {
@@ -16238,51 +16241,47 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:76514",
 		},
-		[7788] = {
+		[11478] = {
 			["mats"] = {
-				["i:10978"] = 1,
-				["i:38682"] = 1,
-				["i:10939"] = 1,
-				["i:10940"] = 2,
+				["i:3371"] = 1,
+				["i:8846"] = 2,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Minor Striking",
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of Detect Demon",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38780",
+			["itemString"] = "i:9233",
 		},
-		[45571] = {
+		[145310] = {
 			["mats"] = {
-				["i:43007"] = 1,
-				["i:41813"] = 1,
+				["i:102536"] = 5,
+				["i:102543"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Cooking",
-			["itemString"] = "i:34768",
+			["itemString"] = "i:101749",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Spicy Blue Nettlefish",
+			["name"] = "Stuffed Lushrooms",
 		},
-		[18406] = {
+		[65454] = {
 			["mats"] = {
-				["i:14048"] = 5,
-				["i:14227"] = 1,
-				["i:14341"] = 1,
+				["i:1179"] = 1,
+				["i:30817"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:13858",
+			["profession"] = "Cooking",
+			["itemString"] = "i:46691",
 			["players"] = {
-				["Ghiaccioli"] = true,
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Runecloth Robe",
+			["name"] = "Bread of the Dead",
 		},
 		[125526] = {
 			["mats"] = {
@@ -16485,76 +16484,75 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:74719",
 		},
-		[55922] = {
+		[3755] = {
 			["mats"] = {
-				["i:41510"] = 9,
-				["i:38426"] = 1,
+				["i:2320"] = 3,
+				["i:2996"] = 3,
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
-			["itemString"] = "i:41545",
+			["itemString"] = "i:4238",
+			["players"] = {
+				["Ghiaccioli"] = true,
+				["Galinar"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Linen Bag",
+		},
+		[53939] = {
+			["mats"] = {
+				["i:37705"] = 2,
+				["i:3371"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Mighty Fire Protection Potion",
+			["players"] = {
+				["Bracnar"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:40214",
+		},
+		[104393] = {
+			["mats"] = {
+				["i:74249"] = 4,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["name"] = "Mighty Spirit",
+			["players"] = {
+				["Bracnar"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:74707",
+		},
+		[114756] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:72235"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of Weaponry",
+			["players"] = {
+				["Bracnar"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:76077",
+		},
+		[125525] = {
+			["mats"] = {
+				["i:82441"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Tailoring",
+			["itemString"] = "i:82399",
 			["players"] = {
 				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Duskweave Gloves",
-		},
-		[25954] = {
-			["mats"] = {
-				["i:21153"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:21217",
-			["players"] = {
-				["Bracnar"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Sagefish Delight",
-		},
-		[88017] = {
-			["mats"] = {
-				["i:62785"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62673",
-			["players"] = {
-				["Bracnar"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Feathered Lure",
-		},
-		[3847] = {
-			["mats"] = {
-				["i:2321"] = 1,
-				["i:2997"] = 4,
-				["i:2318"] = 2,
-				["i:2604"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["name"] = "Red Woolen Boots",
-			["players"] = {
-				["Ghiaccioli"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4313",
-		},
-		[17580] = {
-			["mats"] = {
-				["i:3371"] = 1,
-				["i:13467"] = 2,
-				["i:13463"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Major Mana Potion",
-			["players"] = {
-				["Bracnar"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:13444",
+			["name"] = "Windwool Tunic",
 		},
 		[3859] = {
 			["mats"] = {
@@ -16571,20 +16569,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Azure Silk Vest",
 		},
-		[104392] = {
+		[88016] = {
 			["mats"] = {
-				["i:38682"] = 1,
-				["i:74249"] = 3,
-				["i:74250"] = 1,
+				["i:53072"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Super Resilience",
+			["profession"] = "Cooking",
+			["itemString"] = "i:62666",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74706",
+			["name"] = "Delicious Sagefish Tail",
 		},
 		[114755] = {
 			["mats"] = {
@@ -16655,34 +16651,34 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Duskweave Shoulders",
 		},
-		[11478] = {
+		[7788] = {
 			["mats"] = {
-				["i:3371"] = 1,
-				["i:8846"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Elixir of Detect Demon",
-			["players"] = {
-				["Bracnar"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:9233",
-		},
-		[27911] = {
-			["mats"] = {
-				["i:22446"] = 4,
+				["i:10978"] = 1,
 				["i:38682"] = 1,
-				["i:21886"] = 4,
+				["i:10939"] = 1,
+				["i:10940"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Superior Healing",
+			["name"] = "Minor Striking",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38900",
+			["itemString"] = "i:38780",
+		},
+		[33289] = {
+			["mats"] = {
+				["i:27682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["itemString"] = "i:27660",
+			["players"] = {
+				["Bracnar"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Talbuk Steak",
 		},
 		[62959] = {
 			["mats"] = {
@@ -16699,19 +16695,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:45060",
 		},
-		[3919] = {
+		[7836] = {
 			["mats"] = {
-				["i:2589"] = 1,
-				["i:4357"] = 1,
+				["i:6358"] = 2,
 			},
 			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["itemString"] = "i:4358",
+			["profession"] = "Alchemy",
+			["name"] = "Blackmouth Oil",
 			["players"] = {
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Rough Dynamite",
+			["itemString"] = "i:6370",
 		},
 		[18246] = {
 			["mats"] = {
@@ -16784,78 +16779,80 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:38807",
 		},
-		[65454] = {
+		[18406] = {
 			["mats"] = {
-				["i:1179"] = 1,
-				["i:30817"] = 1,
+				["i:14048"] = 5,
+				["i:14227"] = 1,
+				["i:14341"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Tailoring",
+			["itemString"] = "i:13858",
+			["players"] = {
+				["Ghiaccioli"] = true,
+				["Galinar"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Runecloth Robe",
+		},
+		[88017] = {
+			["mats"] = {
+				["i:62785"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Cooking",
-			["itemString"] = "i:46691",
+			["itemString"] = "i:62673",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Bread of the Dead",
+			["name"] = "Feathered Lure",
 		},
-		[3843] = {
+		[3847] = {
 			["mats"] = {
-				["i:2997"] = 3,
 				["i:2321"] = 1,
+				["i:2997"] = 4,
+				["i:2318"] = 2,
+				["i:2604"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
-			["itemString"] = "i:4310",
+			["name"] = "Red Woolen Boots",
 			["players"] = {
 				["Ghiaccioli"] = true,
-				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Heavy Woolen Gloves",
+			["itemString"] = "i:4313",
 		},
-		[114756] = {
+		[17580] = {
 			["mats"] = {
 				["i:3371"] = 1,
-				["i:72235"] = 2,
+				["i:13467"] = 2,
+				["i:13463"] = 3,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["name"] = "Elixir of Weaponry",
+			["name"] = "Major Mana Potion",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:76077",
+			["itemString"] = "i:13444",
 		},
-		[125525] = {
+		[9271] = {
 			["mats"] = {
-				["i:82441"] = 5,
+				["i:2841"] = 2,
+				["i:4364"] = 1,
+				["i:6530"] = 1,
 			},
-			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:82399",
+			["numResult"] = 3,
+			["profession"] = "Engineering",
+			["itemString"] = "i:6533",
 			["players"] = {
 				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Windwool Tunic",
-		},
-		[3855] = {
-			["mats"] = {
-				["i:5500"] = 2,
-				["i:4305"] = 2,
-				["i:2319"] = 4,
-				["i:3182"] = 4,
-			},
-			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:4320",
-			["players"] = {
-				["Ghiaccioli"] = true,
-				["Galinar"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Spidersilk Boots",
+			["name"] = "Aquadynamic Fish Attractor",
 		},
 		[74200] = {
 			["mats"] = {
@@ -16899,19 +16896,21 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:14530",
 		},
-		[80725] = {
+		[3871] = {
 			["mats"] = {
-				["i:3371"] = 1,
-				["i:52986"] = 5,
+				["i:2321"] = 1,
+				["i:2324"] = 2,
+				["i:4305"] = 3,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Potion of Deepholm",
+			["profession"] = "Tailoring",
+			["itemString"] = "i:4334",
 			["players"] = {
-				["Bracnar"] = true,
+				["Ghiaccioli"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:58487",
+			["name"] = "Formal White Shirt",
 		},
 		[45560] = {
 			["mats"] = {
@@ -17066,18 +17065,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Brown Linen Shirt",
 		},
-		[7836] = {
+		[3919] = {
 			["mats"] = {
-				["i:6358"] = 2,
+				["i:2589"] = 1,
+				["i:4357"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Blackmouth Oil",
+			["profession"] = "Engineering",
+			["itemString"] = "i:4358",
 			["players"] = {
-				["Bracnar"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:6370",
+			["name"] = "Rough Dynamite",
 		},
 		[74201] = {
 			["mats"] = {
@@ -17217,20 +17217,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Explosive Sheep",
 		},
-		[17575] = {
+		[187489] = {
 			["mats"] = {
-				["i:13463"] = 1,
-				["i:7070"] = 1,
-				["i:3371"] = 1,
+				["i:127759"] = 30,
+				["i:113262"] = 30,
+				["i:110611"] = 175,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Greater Frost Protection Potion",
+			["profession"] = "Leatherworking",
+			["name"] = "Mighty Burnished Essence",
 			["players"] = {
-				["Bracnar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:13456",
+			["itemString"] = "i:127712",
 		},
 		[3963] = {
 			["mats"] = {
@@ -17334,20 +17334,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:52753",
 		},
-		[187489] = {
+		[17575] = {
 			["mats"] = {
-				["i:127759"] = 30,
-				["i:113262"] = 30,
-				["i:110611"] = 175,
+				["i:13463"] = 1,
+				["i:7070"] = 1,
+				["i:3371"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Leatherworking",
-			["name"] = "Mighty Burnished Essence",
+			["profession"] = "Alchemy",
+			["name"] = "Greater Frost Protection Potion",
 			["players"] = {
-				["Uldaris"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:127712",
+			["itemString"] = "i:13456",
 		},
 		[53941] = {
 			["mats"] = {
@@ -17516,22 +17516,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:76078",
 		},
-		[12070] = {
+		[125122] = {
 			["mats"] = {
-				["i:8343"] = 2,
-				["i:4339"] = 6,
-				["i:8153"] = 6,
-				["i:10286"] = 2,
+				["i:74851"] = 1,
+				["i:74852"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:10021",
+			["profession"] = "Cooking",
+			["itemString"] = "i:86069",
 			["players"] = {
-				["Ghiaccioli"] = true,
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Dreamweave Vest",
+			["name"] = "Rice Pudding",
 		},
 		[30305] = {
 			["mats"] = {
@@ -17617,20 +17614,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:74708",
 		},
-		[104397] = {
+		[18439] = {
 			["mats"] = {
-				["i:38682"] = 1,
-				["i:74249"] = 4,
-				["i:74250"] = 1,
+				["i:14048"] = 6,
+				["i:3577"] = 4,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Superior Stamina",
+			["profession"] = "Tailoring",
+			["name"] = "Brightcloth Pants",
 			["players"] = {
-				["Bracnar"] = true,
+				["Ghiaccioli"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74709",
+			["itemString"] = "i:14104",
 		},
 		[18247] = {
 			["mats"] = {
@@ -17673,34 +17669,34 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:22826",
 		},
-		[28578] = {
+		[14293] = {
 			["mats"] = {
-				["i:3371"] = 1,
-				["i:22791"] = 1,
-				["i:22793"] = 1,
+				["i:4470"] = 1,
+				["i:10938"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Elixir of Empowerment",
+			["profession"] = "Enchanting",
+			["name"] = "Lesser Magic Wand",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:22848",
+			["itemString"] = "i:11287",
 		},
-		[18439] = {
+		[104397] = {
 			["mats"] = {
-				["i:14048"] = 6,
-				["i:3577"] = 4,
+				["i:38682"] = 1,
+				["i:74249"] = 4,
+				["i:74250"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["name"] = "Brightcloth Pants",
+			["profession"] = "Enchanting",
+			["name"] = "Superior Stamina",
 			["players"] = {
-				["Ghiaccioli"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:14104",
+			["itemString"] = "i:74709",
 		},
 		[18407] = {
 			["mats"] = {
@@ -17824,19 +17820,6 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Secret of Draenor Jewelcrafting",
 		},
-		[45562] = {
-			["mats"] = {
-				["i:41812"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34761",
-			["players"] = {
-				["Bracnar"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Sauteed Goby",
-		},
 		[26883] = {
 			["mats"] = {
 				["i:7910"] = 1,
@@ -17850,6 +17833,19 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["queued"] = 0,
 			["itemString"] = "i:21764",
+		},
+		[45562] = {
+			["mats"] = {
+				["i:41812"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["itemString"] = "i:34761",
+			["players"] = {
+				["Bracnar"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Sauteed Goby",
 		},
 		[124228] = {
 			["mats"] = {
@@ -17922,19 +17918,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:22830",
 		},
-		[88022] = {
+		[182121] = {
 			["mats"] = {
-				["i:58265"] = 1,
-				["i:159"] = 1,
+				["i:120945"] = 1,
+				["i:110609"] = 10,
 			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62674",
+			["numResult"] = 2,
+			["profession"] = "Leatherworking",
+			["name"] = "Burnished Leather",
 			["players"] = {
-				["Bracnar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Highland Spirits",
+			["itemString"] = "i:110611",
 		},
 		[25124] = {
 			["mats"] = {
@@ -17950,20 +17946,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:20744",
 		},
-		[60403] = {
+		[88022] = {
 			["mats"] = {
-				["i:37921"] = 20,
-				["i:40195"] = 12,
-				["i:36908"] = 1,
+				["i:58265"] = 1,
+				["i:159"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Indestructible Alchemist Stone",
+			["profession"] = "Cooking",
+			["itemString"] = "i:62674",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:44323",
+			["name"] = "Highland Spirits",
 		},
 		[114761] = {
 			["mats"] = {
@@ -18095,20 +18090,22 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:2304",
 		},
-		[99537] = {
+		[42620] = {
 			["mats"] = {
-				["i:52326"] = 6,
-				["i:52325"] = 6,
-				["i:53643"] = 10,
+				["i:22446"] = 4,
+				["i:22449"] = 6,
+				["i:22445"] = 8,
+				["i:22451"] = 2,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:75065",
+			["profession"] = "Enchanting",
+			["name"] = "Greater Agility",
 			["players"] = {
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Vicious Embersilk Cape",
+			["itemString"] = "i:38947",
 		},
 		[124229] = {
 			["mats"] = {
@@ -18270,25 +18267,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:13458",
 		},
-		[66658] = {
-			["players"] = {
-				["Bracnar"] = true,
+		[107598] = {
+			["mats"] = {
+				["i:76137"] = 1,
 			},
 			["numResult"] = 1,
-			["cooldownTimes"] = {
-				["Bracnar"] = {
-					["endTime"] = 0,
-				},
+			["profession"] = "Jewelcrafting",
+			["name"] = "Balanced Alexandrite",
+			["players"] = {
+				["Uldaris"] = true,
 			},
-			["hasCD"] = true,
-			["mats"] = {
-				["i:36930"] = 1,
-				["i:35627"] = 1,
-			},
-			["itemString"] = "i:36931",
-			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["name"] = "Ametrine",
+			["itemString"] = "i:76513",
 		},
 		[6501] = {
 			["mats"] = {
@@ -18317,18 +18307,25 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Grilled Sculpin",
 		},
-		[107598] = {
-			["mats"] = {
-				["i:76137"] = 1,
+		[66658] = {
+			["players"] = {
+				["Bracnar"] = true,
 			},
 			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Balanced Alexandrite",
-			["players"] = {
-				["Uldaris"] = true,
+			["cooldownTimes"] = {
+				["Bracnar"] = {
+					["endTime"] = 0,
+				},
 			},
+			["hasCD"] = true,
+			["mats"] = {
+				["i:36930"] = 1,
+				["i:35627"] = 1,
+			},
+			["itemString"] = "i:36931",
+			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["itemString"] = "i:76513",
+			["name"] = "Ametrine",
 		},
 		[27971] = {
 			["mats"] = {
@@ -18492,20 +18489,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:52754",
 		},
-		[33991] = {
+		[30309] = {
 			["mats"] = {
-				["i:22445"] = 2,
-				["i:38682"] = 1,
-				["i:22447"] = 2,
+				["i:23448"] = 2,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Restore Mana Prime",
+			["profession"] = "Engineering",
+			["itemString"] = "i:23787",
 			["players"] = {
-				["Bracnar"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38929",
+			["name"] = "Felsteel Stabilizer",
 		},
 		[104401] = {
 			["mats"] = {
@@ -18521,26 +18516,21 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:74711",
 		},
-		[169080] = {
+		[2392] = {
+			["mats"] = {
+				["i:2604"] = 1,
+				["i:2320"] = 1,
+				["i:2996"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Tailoring",
+			["itemString"] = "i:2575",
 			["players"] = {
+				["Ghiaccioli"] = true,
 				["Galinar"] = true,
 			},
-			["numResult"] = 4,
-			["cooldownTimes"] = {
-				["Galinar"] = {
-					["endTime"] = 1455177646,
-					["prompt"] = true,
-				},
-			},
-			["hasCD"] = true,
-			["mats"] = {
-				["i:109118"] = 15,
-				["i:109119"] = 15,
-			},
-			["itemString"] = "i:111366",
-			["profession"] = "Engineering",
 			["queued"] = 0,
-			["name"] = "Gearspring Parts",
+			["name"] = "Red Linen Shirt",
 		},
 		[26916] = {
 			["mats"] = {
@@ -18557,18 +18547,25 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:21779",
 		},
-		[107599] = {
-			["mats"] = {
-				["i:76137"] = 1,
+		[66659] = {
+			["players"] = {
+				["Bracnar"] = true,
 			},
 			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Effulgent Alexandrite",
-			["players"] = {
-				["Uldaris"] = true,
+			["cooldownTimes"] = {
+				["Bracnar"] = {
+					["endTime"] = 0,
+				},
 			},
+			["hasCD"] = true,
+			["mats"] = {
+				["i:36860"] = 1,
+				["i:36918"] = 1,
+			},
+			["itemString"] = "i:36919",
+			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["itemString"] = "i:76511",
+			["name"] = "Cardinal Ruby",
 		},
 		[99539] = {
 			["mats"] = {
@@ -18599,18 +18596,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Green Curry Fish",
 		},
-		[53880] = {
+		[99540] = {
 			["mats"] = {
-				["i:36929"] = 1,
+				["i:52326"] = 8,
+				["i:52195"] = 4,
+				["i:52188"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Jewelcrafting",
-			["name"] = "Deft Huge Citrine",
+			["name"] = "Vicious Amberjewel Band",
 			["players"] = {
 				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:39955",
+			["itemString"] = "i:75068",
 		},
 		[28579] = {
 			["mats"] = {
@@ -18627,18 +18626,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:22849",
 		},
-		[30309] = {
+		[33991] = {
 			["mats"] = {
-				["i:23448"] = 2,
+				["i:22445"] = 2,
+				["i:38682"] = 1,
+				["i:22447"] = 2,
 			},
 			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["itemString"] = "i:23787",
+			["profession"] = "Enchanting",
+			["name"] = "Restore Mana Prime",
 			["players"] = {
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Felsteel Stabilizer",
+			["itemString"] = "i:38929",
 		},
 		[18408] = {
 			["mats"] = {
@@ -18714,21 +18715,26 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:76098",
 		},
-		[2392] = {
-			["mats"] = {
-				["i:2604"] = 1,
-				["i:2320"] = 1,
-				["i:2996"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:2575",
+		[169080] = {
 			["players"] = {
-				["Ghiaccioli"] = true,
 				["Galinar"] = true,
 			},
+			["numResult"] = 4,
+			["cooldownTimes"] = {
+				["Galinar"] = {
+					["endTime"] = 1455177646,
+					["prompt"] = true,
+				},
+			},
+			["hasCD"] = true,
+			["mats"] = {
+				["i:109118"] = 15,
+				["i:109119"] = 15,
+			},
+			["itemString"] = "i:111366",
+			["profession"] = "Engineering",
 			["queued"] = 0,
-			["name"] = "Red Linen Shirt",
+			["name"] = "Gearspring Parts",
 		},
 		[80477] = {
 			["mats"] = {
@@ -18759,18 +18765,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:2456",
 		},
-		[107602] = {
+		[4942] = {
 			["mats"] = {
-				["i:76137"] = 1,
+				["i:3371"] = 1,
+				["i:3821"] = 1,
+				["i:3858"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Jagged Alexandrite",
+			["profession"] = "Alchemy",
+			["name"] = "Lesser Stoneshield Potion",
 			["players"] = {
-				["Uldaris"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:76520",
+			["itemString"] = "i:4623",
 		},
 		[45564] = {
 			["mats"] = {
@@ -18798,20 +18806,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:76519",
 		},
-		[99540] = {
+		[53880] = {
 			["mats"] = {
-				["i:52326"] = 8,
-				["i:52195"] = 4,
-				["i:52188"] = 1,
+				["i:36929"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Jewelcrafting",
-			["name"] = "Vicious Amberjewel Band",
+			["name"] = "Deft Huge Citrine",
 			["players"] = {
 				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:75068",
+			["itemString"] = "i:39955",
 		},
 		[124232] = {
 			["mats"] = {
@@ -18887,19 +18893,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:13461",
 		},
-		[182129] = {
+		[60405] = {
 			["mats"] = {
-				["i:120945"] = 1,
-				["i:111245"] = 1,
+				["i:36904"] = 15,
+				["i:36903"] = 15,
+				["i:36908"] = 1,
 			},
-			["numResult"] = 2,
-			["profession"] = "Enchanting",
-			["name"] = "Fractured Temporal Crystal",
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Mighty Alchemist Stone",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:115504",
+			["itemString"] = "i:44324",
 		},
 		[25125] = {
 			["mats"] = {
@@ -18945,33 +18952,33 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:38803",
 		},
-		[12055] = {
+		[20008] = {
 			["mats"] = {
-				["i:4339"] = 3,
-				["i:8343"] = 1,
-				["i:10285"] = 2,
+				["i:16202"] = 3,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:10004",
-			["players"] = {
-				["Galinar"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Shadoweave Robe",
-		},
-		[42302] = {
-			["mats"] = {
-				["i:27515"] = 1,
-			},
-			["numResult"] = 6,
-			["profession"] = "Cooking",
-			["itemString"] = "i:33052",
+			["profession"] = "Enchanting",
+			["name"] = "Greater Intellect",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Fisherman's Feast",
+			["itemString"] = "i:38852",
+		},
+		[80478] = {
+			["mats"] = {
+				["i:52984"] = 2,
+				["i:3371"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Earthen Potion",
+			["players"] = {
+				["Bracnar"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:58090",
 		},
 		[2396] = {
 			["mats"] = {
@@ -19002,20 +19009,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:20827",
 		},
-		[4942] = {
+		[107602] = {
 			["mats"] = {
-				["i:3371"] = 1,
-				["i:3821"] = 1,
-				["i:3858"] = 1,
+				["i:76137"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Lesser Stoneshield Potion",
+			["profession"] = "Jewelcrafting",
+			["name"] = "Jagged Alexandrite",
 			["players"] = {
-				["Bracnar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:4623",
+			["itemString"] = "i:76520",
 		},
 		[131211] = {
 			["mats"] = {
@@ -19200,19 +19205,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:58142",
 		},
-		[20008] = {
+		[12055] = {
 			["mats"] = {
-				["i:16202"] = 3,
-				["i:38682"] = 1,
+				["i:4339"] = 3,
+				["i:8343"] = 1,
+				["i:10285"] = 2,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Greater Intellect",
+			["profession"] = "Tailoring",
+			["itemString"] = "i:10004",
 			["players"] = {
-				["Bracnar"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38852",
+			["name"] = "Shadoweave Robe",
 		},
 		[26277] = {
 			["mats"] = {
@@ -19242,18 +19248,25 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Poached Nettlefish",
 		},
-		[131213] = {
-			["mats"] = {
-				["i:72096"] = 2,
+		[66662] = {
+			["players"] = {
+				["Bracnar"] = true,
 			},
 			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["itemString"] = "i:77543",
-			["players"] = {
-				["Galinar"] = true,
+			["cooldownTimes"] = {
+				["Bracnar"] = {
+					["endTime"] = 0,
+				},
 			},
+			["hasCD"] = true,
+			["mats"] = {
+				["i:35627"] = 1,
+				["i:36927"] = 1,
+			},
+			["itemString"] = "i:36928",
+			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["name"] = "Precise Tinker's Gear",
+			["name"] = "Dreadstone",
 		},
 		[99542] = {
 			["mats"] = {
@@ -19298,18 +19311,25 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Bolt of Woolen Cloth",
 		},
-		[131215] = {
-			["mats"] = {
-				["i:72096"] = 2,
+		[66663] = {
+			["players"] = {
+				["Bracnar"] = true,
 			},
 			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["itemString"] = "i:77545",
-			["players"] = {
-				["Galinar"] = true,
+			["cooldownTimes"] = {
+				["Bracnar"] = {
+					["endTime"] = 0,
+				},
 			},
+			["hasCD"] = true,
+			["mats"] = {
+				["i:35623"] = 1,
+				["i:36924"] = 1,
+			},
+			["itemString"] = "i:36925",
+			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["name"] = "Rigid Tinker's Gear",
+			["name"] = "Majestic Zircon",
 		},
 		[2540] = {
 			["mats"] = {
@@ -19353,18 +19373,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:74713",
 		},
-		[131214] = {
+		[114767] = {
 			["mats"] = {
-				["i:72096"] = 2,
+				["i:72238"] = 1,
+				["i:76137"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["itemString"] = "i:77542",
+			["profession"] = "Alchemy",
+			["name"] = "Wild Jade",
 			["players"] = {
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Quick Tinker's Gear",
+			["itemString"] = "i:76139",
 		},
 		[12071] = {
 			["mats"] = {
@@ -19425,24 +19446,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:58089",
 		},
-		[66664] = {
-			["players"] = {
-				["Bracnar"] = true,
+		[131217] = {
+			["mats"] = {
+				["i:72096"] = 2,
 			},
 			["numResult"] = 1,
-			["cooldownTimes"] = {
-				["Bracnar"] = {
-					["endTime"] = 0,
-				},
+			["profession"] = "Engineering",
+			["itemString"] = "i:77546",
+			["players"] = {
+				["Galinar"] = true,
 			},
-			["hasCD"] = true,
-			["mats"] = {
-				["i:36933"] = 3,
-			},
-			["itemString"] = "i:36934",
-			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["name"] = "Eye of Zul",
+			["name"] = "Sparkling Tinker's Gear",
 		},
 		[7213] = {
 			["mats"] = {
@@ -19471,25 +19486,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:43569",
 		},
-		[66663] = {
-			["players"] = {
-				["Bracnar"] = true,
+		[131215] = {
+			["mats"] = {
+				["i:72096"] = 2,
 			},
 			["numResult"] = 1,
-			["cooldownTimes"] = {
-				["Bracnar"] = {
-					["endTime"] = 0,
-				},
+			["profession"] = "Engineering",
+			["itemString"] = "i:77545",
+			["players"] = {
+				["Galinar"] = true,
 			},
-			["hasCD"] = true,
-			["mats"] = {
-				["i:35623"] = 1,
-				["i:36924"] = 1,
-			},
-			["itemString"] = "i:36925",
-			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["name"] = "Majestic Zircon",
+			["name"] = "Rigid Tinker's Gear",
 		},
 		[99543] = {
 			["mats"] = {
@@ -19609,18 +19617,21 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Smooth Tinker's Gear",
 		},
-		[53882] = {
+		[99544] = {
 			["mats"] = {
-				["i:36929"] = 1,
+				["i:52326"] = 6,
+				["i:52327"] = 8,
+				["i:52190"] = 5,
+				["i:52188"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Jewelcrafting",
-			["name"] = "Potent Huge Citrine",
+			["name"] = "Vicious Ruby Choker",
 			["players"] = {
 				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:39956",
+			["itemString"] = "i:75078",
 		},
 		[131218] = {
 			["mats"] = {
@@ -19695,18 +19706,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:13459",
 		},
-		[33284] = {
+		[45566] = {
 			["mats"] = {
-				["i:27674"] = 1,
+				["i:41810"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Cooking",
-			["itemString"] = "i:27655",
+			["itemString"] = "i:34765",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Ravager Dog",
+			["name"] = "Pickled Fangtooth",
 		},
 		[107604] = {
 			["mats"] = {
@@ -19721,21 +19732,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:76509",
 		},
-		[99544] = {
+		[53882] = {
 			["mats"] = {
-				["i:52326"] = 6,
-				["i:52327"] = 8,
-				["i:52190"] = 5,
-				["i:52188"] = 1,
+				["i:36929"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Jewelcrafting",
-			["name"] = "Vicious Ruby Choker",
+			["name"] = "Potent Huge Citrine",
 			["players"] = {
 				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:75078",
+			["itemString"] = "i:39956",
 		},
 		[53946] = {
 			["mats"] = {
@@ -19763,18 +19771,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Clamlette Magnifique",
 		},
-		[53883] = {
+		[45695] = {
 			["mats"] = {
-				["i:36926"] = 1,
+				["i:2596"] = 1,
+				["i:2594"] = 1,
 			},
-			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Veiled Shadow Crystal",
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["itemString"] = "i:34832",
 			["players"] = {
-				["Uldaris"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:39957",
+			["name"] = "Captain Rumsey's Lager",
 		},
 		[181625] = {
 			["mats"] = {
@@ -20182,19 +20191,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:93706",
 		},
-		[45695] = {
+		[53883] = {
 			["mats"] = {
-				["i:2596"] = 1,
-				["i:2594"] = 1,
+				["i:36926"] = 1,
 			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34832",
+			["numResult"] = 1,
+			["profession"] = "Jewelcrafting",
+			["name"] = "Veiled Shadow Crystal",
 			["players"] = {
-				["Bracnar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Captain Rumsey's Lager",
+			["itemString"] = "i:39957",
 		},
 		[114773] = {
 			["mats"] = {
@@ -20274,20 +20282,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:28101",
 		},
-		[104408] = {
+		[32259] = {
 			["mats"] = {
-				["i:38682"] = 1,
-				["i:74249"] = 2,
-				["i:74250"] = 1,
+				["i:2835"] = 8,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Greater Precision",
+			["profession"] = "Jewelcrafting",
+			["name"] = "Rough Stone Statue",
 			["players"] = {
-				["Bracnar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:74716",
+			["itemString"] = "i:25498",
 		},
 		[114771] = {
 			["mats"] = {
@@ -20353,7 +20359,7 @@ TradeSkillMaster_CraftingDB = {
 			["numResult"] = 1,
 			["cooldownTimes"] = {
 				["Bracnar"] = {
-					["endTime"] = 1455955264,
+					["endTime"] = 1456128082,
 					["prompt"] = true,
 				},
 			},
@@ -20859,18 +20865,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:38819",
 		},
-		[32259] = {
+		[104408] = {
 			["mats"] = {
-				["i:2835"] = 8,
+				["i:38682"] = 1,
+				["i:74249"] = 2,
+				["i:74250"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Rough Stone Statue",
+			["profession"] = "Enchanting",
+			["name"] = "Greater Precision",
 			["players"] = {
-				["Uldaris"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:25498",
+			["itemString"] = "i:74716",
 		},
 		[107609] = {
 			["mats"] = {
@@ -20929,18 +20937,24 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:20746",
 		},
-		[131217] = {
-			["mats"] = {
-				["i:72096"] = 2,
+		[66664] = {
+			["players"] = {
+				["Bracnar"] = true,
 			},
 			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["itemString"] = "i:77546",
-			["players"] = {
-				["Galinar"] = true,
+			["cooldownTimes"] = {
+				["Bracnar"] = {
+					["endTime"] = 0,
+				},
 			},
+			["hasCD"] = true,
+			["mats"] = {
+				["i:36933"] = 3,
+			},
+			["itemString"] = "i:36934",
+			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["name"] = "Sparkling Tinker's Gear",
+			["name"] = "Eye of Zul",
 		},
 		[181635] = {
 			["mats"] = {
@@ -21011,18 +21025,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Heavy Kodo Stew",
 		},
-		[45566] = {
+		[33284] = {
 			["mats"] = {
-				["i:41810"] = 1,
+				["i:27674"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Cooking",
-			["itemString"] = "i:34765",
+			["itemString"] = "i:27655",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Pickled Fangtooth",
+			["name"] = "Ravager Dog",
 		},
 		[156560] = {
 			["mats"] = {
@@ -21120,19 +21134,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:39959",
 		},
-		[114767] = {
+		[131214] = {
 			["mats"] = {
-				["i:72238"] = 1,
-				["i:76137"] = 1,
+				["i:72096"] = 2,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Wild Jade",
+			["profession"] = "Engineering",
+			["itemString"] = "i:77542",
 			["players"] = {
-				["Bracnar"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:76139",
+			["name"] = "Quick Tinker's Gear",
 		},
 		[156561] = {
 			["mats"] = {
@@ -21176,25 +21189,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:113263",
 		},
-		[66662] = {
-			["players"] = {
-				["Bracnar"] = true,
+		[131213] = {
+			["mats"] = {
+				["i:72096"] = 2,
 			},
 			["numResult"] = 1,
-			["cooldownTimes"] = {
-				["Bracnar"] = {
-					["endTime"] = 0,
-				},
+			["profession"] = "Engineering",
+			["itemString"] = "i:77543",
+			["players"] = {
+				["Galinar"] = true,
 			},
-			["hasCD"] = true,
-			["mats"] = {
-				["i:35627"] = 1,
-				["i:36927"] = 1,
-			},
-			["itemString"] = "i:36928",
-			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["name"] = "Dreadstone",
+			["name"] = "Precise Tinker's Gear",
 		},
 		[88036] = {
 			["mats"] = {
@@ -21256,20 +21262,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Cindercloth Boots",
 		},
-		[60405] = {
+		[182129] = {
 			["mats"] = {
-				["i:36904"] = 15,
-				["i:36903"] = 15,
-				["i:36908"] = 1,
+				["i:120945"] = 1,
+				["i:111245"] = 1,
 			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Mighty Alchemist Stone",
+			["numResult"] = 2,
+			["profession"] = "Enchanting",
+			["name"] = "Fractured Temporal Crystal",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:44324",
+			["itemString"] = "i:115504",
 		},
 		[80488] = {
 			["mats"] = {
@@ -21285,19 +21290,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:58093",
 		},
-		[80478] = {
+		[42302] = {
 			["mats"] = {
-				["i:52984"] = 2,
-				["i:3371"] = 1,
+				["i:27515"] = 1,
 			},
-			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Earthen Potion",
+			["numResult"] = 6,
+			["profession"] = "Cooking",
+			["itemString"] = "i:33052",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:58090",
+			["name"] = "Fisherman's Feast",
 		},
 		[182127] = {
 			["mats"] = {
@@ -21314,25 +21318,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:115524",
 		},
-		[66659] = {
-			["players"] = {
-				["Bracnar"] = true,
+		[107599] = {
+			["mats"] = {
+				["i:76137"] = 1,
 			},
 			["numResult"] = 1,
-			["cooldownTimes"] = {
-				["Bracnar"] = {
-					["endTime"] = 0,
-				},
+			["profession"] = "Jewelcrafting",
+			["name"] = "Effulgent Alexandrite",
+			["players"] = {
+				["Uldaris"] = true,
 			},
-			["hasCD"] = true,
-			["mats"] = {
-				["i:36860"] = 1,
-				["i:36918"] = 1,
-			},
-			["itemString"] = "i:36919",
-			["profession"] = "Alchemy",
 			["queued"] = 0,
-			["name"] = "Cardinal Ruby",
+			["itemString"] = "i:76511",
 		},
 		[107611] = {
 			["mats"] = {
@@ -21524,22 +21521,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Windwool Hood",
 		},
-		[42620] = {
+		[99537] = {
 			["mats"] = {
-				["i:22446"] = 4,
-				["i:22449"] = 6,
-				["i:22445"] = 8,
-				["i:22451"] = 2,
-				["i:38682"] = 1,
+				["i:52326"] = 6,
+				["i:52325"] = 6,
+				["i:53643"] = 10,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Greater Agility",
+			["profession"] = "Tailoring",
+			["itemString"] = "i:75065",
 			["players"] = {
-				["Bracnar"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38947",
+			["name"] = "Vicious Embersilk Cape",
 		},
 		[22761] = {
 			["mats"] = {
@@ -21581,20 +21576,6 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:76518",
 		},
-		[182121] = {
-			["mats"] = {
-				["i:120945"] = 1,
-				["i:110609"] = 10,
-			},
-			["numResult"] = 2,
-			["profession"] = "Leatherworking",
-			["name"] = "Burnished Leather",
-			["players"] = {
-				["Uldaris"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:110611",
-		},
 		[104398] = {
 			["mats"] = {
 				["i:74249"] = 7,
@@ -21608,6 +21589,21 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["queued"] = 0,
 			["itemString"] = "i:74710",
+		},
+		[60403] = {
+			["mats"] = {
+				["i:37921"] = 20,
+				["i:40195"] = 12,
+				["i:36908"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Indestructible Alchemist Stone",
+			["players"] = {
+				["Bracnar"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:44323",
 		},
 		[43779] = {
 			["mats"] = {
@@ -21715,19 +21711,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Gold Power Core",
 		},
-		[14293] = {
+		[28578] = {
 			["mats"] = {
-				["i:4470"] = 1,
-				["i:10938"] = 1,
+				["i:3371"] = 1,
+				["i:22791"] = 1,
+				["i:22793"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Lesser Magic Wand",
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of Empowerment",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:11287",
+			["itemString"] = "i:22848",
 		},
 		[168848] = {
 			["mats"] = {
@@ -21818,19 +21815,22 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:3388",
 		},
-		[125122] = {
+		[12070] = {
 			["mats"] = {
-				["i:74851"] = 1,
-				["i:74852"] = 1,
+				["i:4339"] = 6,
+				["i:8343"] = 2,
+				["i:10286"] = 2,
+				["i:8153"] = 6,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:86069",
+			["profession"] = "Tailoring",
+			["itemString"] = "i:10021",
 			["players"] = {
-				["Bracnar"] = true,
+				["Ghiaccioli"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Rice Pudding",
+			["name"] = "Dreamweave Vest",
 		},
 		[3839] = {
 			["mats"] = {
@@ -21980,20 +21980,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:109152",
 		},
-		[80491] = {
+		[10841] = {
 			["mats"] = {
-				["i:3371"] = 1,
-				["i:52983"] = 1,
-				["i:52986"] = 1,
+				["i:4338"] = 2,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Elixir of Impossible Accuracy",
+			["profession"] = "First Aid",
+			["name"] = "Heavy Mageweave Bandage",
 			["players"] = {
-				["Bracnar"] = true,
+				["Ghiaccioli"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:58094",
+			["itemString"] = "i:8545",
 		},
 		[3923] = {
 			["mats"] = {
@@ -22025,18 +22023,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Spicy Salmon",
 		},
-		[33289] = {
+		[45571] = {
 			["mats"] = {
-				["i:27682"] = 1,
+				["i:43007"] = 1,
+				["i:41813"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Cooking",
-			["itemString"] = "i:27660",
+			["itemString"] = "i:34768",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Talbuk Steak",
+			["name"] = "Spicy Blue Nettlefish",
 		},
 		[107614] = {
 			["mats"] = {
@@ -22066,21 +22065,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:38921",
 		},
-		[3871] = {
+		[80725] = {
 			["mats"] = {
-				["i:2321"] = 1,
-				["i:2324"] = 2,
-				["i:4305"] = 3,
+				["i:3371"] = 1,
+				["i:52986"] = 5,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:4334",
+			["profession"] = "Alchemy",
+			["name"] = "Potion of Deepholm",
 			["players"] = {
-				["Ghiaccioli"] = true,
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Formal White Shirt",
+			["itemString"] = "i:58487",
 		},
 		[156569] = {
 			["mats"] = {
@@ -22097,49 +22094,52 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:109153",
 		},
-		[9271] = {
+		[3855] = {
 			["mats"] = {
-				["i:2841"] = 2,
-				["i:4364"] = 1,
-				["i:6530"] = 1,
-			},
-			["numResult"] = 3,
-			["profession"] = "Engineering",
-			["itemString"] = "i:6533",
-			["players"] = {
-				["Galinar"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Aquadynamic Fish Attractor",
-		},
-		[10841] = {
-			["mats"] = {
-				["i:4338"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "First Aid",
-			["name"] = "Heavy Mageweave Bandage",
-			["players"] = {
-				["Ghiaccioli"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:8545",
-		},
-		[18438] = {
-			["mats"] = {
-				["i:14048"] = 5,
-				["i:14227"] = 2,
-				["i:14341"] = 1,
+				["i:5500"] = 2,
+				["i:4305"] = 2,
+				["i:2319"] = 4,
+				["i:3182"] = 4,
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
-			["itemString"] = "i:13865",
+			["itemString"] = "i:4320",
 			["players"] = {
 				["Ghiaccioli"] = true,
 				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Runecloth Pants",
+			["name"] = "Spidersilk Boots",
+		},
+		[80491] = {
+			["mats"] = {
+				["i:3371"] = 1,
+				["i:52983"] = 1,
+				["i:52986"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of Impossible Accuracy",
+			["players"] = {
+				["Bracnar"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:58094",
+		},
+		[3843] = {
+			["mats"] = {
+				["i:2997"] = 3,
+				["i:2321"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Tailoring",
+			["itemString"] = "i:4310",
+			["players"] = {
+				["Ghiaccioli"] = true,
+				["Galinar"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Heavy Woolen Gloves",
 		},
 		[145311] = {
 			["mats"] = {
@@ -22200,18 +22200,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:38931",
 		},
-		[168852] = {
+		[60668] = {
 			["mats"] = {
-				["i:111557"] = 50,
+				["i:34054"] = 15,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:114828",
+			["profession"] = "Enchanting",
+			["name"] = "Crusher",
 			["players"] = {
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Sumptuous Cowl",
+			["itemString"] = "i:44458",
 		},
 		[80492] = {
 			["mats"] = {
@@ -22255,18 +22256,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:38951",
 		},
-		[88016] = {
+		[104392] = {
 			["mats"] = {
-				["i:53072"] = 1,
+				["i:38682"] = 1,
+				["i:74249"] = 3,
+				["i:74250"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62666",
+			["profession"] = "Enchanting",
+			["name"] = "Super Resilience",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Delicious Sagefish Tail",
+			["itemString"] = "i:74706",
 		},
 		[15255] = {
 			["mats"] = {
@@ -22283,47 +22286,45 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Mechanical Repair Kit",
 		},
-		[53939] = {
+		[25954] = {
 			["mats"] = {
-				["i:37705"] = 2,
-				["i:3371"] = 1,
+				["i:21153"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Mighty Fire Protection Potion",
+			["profession"] = "Cooking",
+			["itemString"] = "i:21217",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:40214",
+			["name"] = "Sagefish Delight",
 		},
-		[3755] = {
+		[55922] = {
 			["mats"] = {
-				["i:2320"] = 3,
-				["i:2996"] = 3,
+				["i:41510"] = 9,
+				["i:38426"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
-			["itemString"] = "i:4238",
+			["itemString"] = "i:41545",
 			["players"] = {
-				["Ghiaccioli"] = true,
 				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Linen Bag",
+			["name"] = "Duskweave Gloves",
 		},
-		[75247] = {
+		[168853] = {
 			["mats"] = {
-				["i:53010"] = 6,
+				["i:111557"] = 50,
 			},
-			["numResult"] = 3,
+			["numResult"] = 1,
 			["profession"] = "Tailoring",
-			["itemString"] = "i:54442",
+			["itemString"] = "i:114829",
 			["players"] = {
 				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Embersilk Net",
+			["name"] = "Sumptuous Robes",
 		},
 		[53056] = {
 			["mats"] = {
@@ -22402,19 +22403,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Living Steel",
 		},
-		[60668] = {
+		[168852] = {
 			["mats"] = {
-				["i:34054"] = 15,
-				["i:38682"] = 1,
+				["i:111557"] = 50,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Crusher",
+			["profession"] = "Tailoring",
+			["itemString"] = "i:114828",
 			["players"] = {
-				["Bracnar"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:44458",
+			["name"] = "Sumptuous Cowl",
 		},
 		[80237] = {
 			["mats"] = {
@@ -22565,19 +22565,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Secret of Draenor Enchanting",
 		},
-		[55921] = {
+		[74964] = {
 			["mats"] = {
-				["i:41510"] = 10,
-				["i:38426"] = 1,
+				["i:53010"] = 5,
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
-			["itemString"] = "i:41549",
+			["itemString"] = "i:53643",
 			["players"] = {
 				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Duskweave Robe",
+			["name"] = "Bolt of Embersilk Cloth",
 		},
 		[181649] = {
 			["mats"] = {
@@ -22623,31 +22622,39 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Skewered Eel",
 		},
-		[3400] = {
+		[25129] = {
 			["mats"] = {
-				["i:3712"] = 1,
+				["i:3371"] = 1,
+				["i:14344"] = 2,
+				["i:4625"] = 3,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:3729",
+			["profession"] = "Enchanting",
+			["name"] = "Brilliant Wizard Oil",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Soothing Turtle Bisque",
+			["itemString"] = "i:20749",
 		},
-		[24418] = {
-			["mats"] = {
-				["i:3667"] = 2,
+		[131695] = {
+			["players"] = {
+				["Uldaris"] = true,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:20074",
-			["players"] = {
-				["Bracnar"] = true,
+			["cooldownTimes"] = {
+				["Uldaris"] = {
+					["endTime"] = 0,
+				},
 			},
+			["hasCD"] = true,
+			["mats"] = {
+				["i:76142"] = 3,
+			},
+			["itemString"] = "i:90398",
+			["profession"] = "Jewelcrafting",
 			["queued"] = 0,
-			["name"] = "Heavy Crocolisk Stew",
+			["name"] = "Facets of Research",
 		},
 		[33994] = {
 			["mats"] = {
@@ -22711,9 +22718,9 @@ TradeSkillMaster_CraftingDB = {
 		[25321] = {
 			["mats"] = {
 				["i:1705"] = 3,
-				["i:3827"] = 2,
-				["i:11083"] = 4,
 				["i:2842"] = 4,
+				["i:11083"] = 4,
+				["i:3827"] = 2,
 				["i:5498"] = 3,
 			},
 			["numResult"] = 1,
@@ -22725,18 +22732,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:20832",
 		},
-		[53873] = {
+		[55920] = {
 			["mats"] = {
-				["i:36926"] = 1,
+				["i:41510"] = 8,
+				["i:38426"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Etched Shadow Crystal",
+			["profession"] = "Tailoring",
+			["itemString"] = "i:41551",
 			["players"] = {
-				["Uldaris"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:39948",
+			["name"] = "Duskweave Wristwraps",
 		},
 		[107617] = {
 			["mats"] = {
@@ -22765,20 +22773,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Goblin Glider Kit",
 		},
-		[25129] = {
+		[3400] = {
 			["mats"] = {
-				["i:3371"] = 1,
-				["i:14344"] = 2,
-				["i:4625"] = 3,
+				["i:3712"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Brilliant Wizard Oil",
+			["profession"] = "Cooking",
+			["itemString"] = "i:3729",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:20749",
+			["name"] = "Soothing Turtle Bisque",
 		},
 		[75249] = {
 			["mats"] = {
@@ -22871,18 +22877,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:76092",
 		},
-		[43765] = {
+		[11461] = {
 			["mats"] = {
-				["i:27682"] = 1,
+				["i:3371"] = 1,
+				["i:8839"] = 1,
+				["i:3821"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:33872",
+			["profession"] = "Alchemy",
+			["name"] = "Arcane Elixir",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Spicy Hot Talbuk",
+			["itemString"] = "i:9155",
 		},
 		[59582] = {
 			["mats"] = {
@@ -22915,34 +22923,31 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:109160",
 		},
-		[80495] = {
+		[125529] = {
 			["mats"] = {
-				["i:3371"] = 1,
-				["i:52988"] = 1,
-				["i:52984"] = 1,
+				["i:82441"] = 4,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Potion of the Tol'vir",
+			["profession"] = "Tailoring",
+			["itemString"] = "i:82403",
 			["players"] = {
-				["Bracnar"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:58145",
+			["name"] = "Windwool Boots",
 		},
-		[45556] = {
+		[26880] = {
 			["mats"] = {
-				["i:43009"] = 2,
-				["i:43007"] = 1,
+				["i:12359"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34755",
+			["profession"] = "Jewelcrafting",
+			["name"] = "Thorium Setting",
 			["players"] = {
-				["Bracnar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Tender Shoveltusk Steak",
+			["itemString"] = "i:21752",
 		},
 		[145062] = {
 			["mats"] = {
@@ -23016,19 +23021,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:22449",
 		},
-		[75250] = {
+		[54017] = {
 			["mats"] = {
-				["i:53643"] = 3,
-				["i:52325"] = 6,
+				["i:36917"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:54447",
+			["profession"] = "Jewelcrafting",
+			["name"] = "Precise Bloodstone",
 			["players"] = {
-				["Galinar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Enchanted Spellthread",
+			["itemString"] = "i:39910",
 		},
 		[158880] = {
 			["mats"] = {
@@ -23044,18 +23048,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:110634",
 		},
-		[125529] = {
+		[80495] = {
 			["mats"] = {
-				["i:82441"] = 4,
+				["i:3371"] = 1,
+				["i:52988"] = 1,
+				["i:52984"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:82403",
+			["profession"] = "Alchemy",
+			["name"] = "Potion of the Tol'vir",
 			["players"] = {
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Windwool Boots",
+			["itemString"] = "i:58145",
 		},
 		[60350] = {
 			["mats"] = {
@@ -23115,20 +23121,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Black Mageweave Boots",
 		},
-		[30311] = {
+		[33995] = {
 			["mats"] = {
-				["i:23781"] = 1,
-				["i:23783"] = 2,
-				["i:23446"] = 4,
+				["i:22446"] = 1,
+				["i:38682"] = 1,
+				["i:22445"] = 12,
 			},
-			["numResult"] = 3,
-			["profession"] = "Engineering",
-			["itemString"] = "i:23737",
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["name"] = "Major Strength",
 			["players"] = {
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Adamantite Grenade",
+			["itemString"] = "i:38933",
 		},
 		[156578] = {
 			["mats"] = {
@@ -23703,20 +23709,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:38878",
 		},
-		[13635] = {
+		[84420] = {
 			["mats"] = {
-				["i:11083"] = 3,
-				["i:38682"] = 1,
-				["i:11138"] = 1,
+				["i:54849"] = 4,
+				["i:67749"] = 2,
+				["i:53039"] = 5,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Defense",
+			["profession"] = "Engineering",
+			["itemString"] = "i:59598",
 			["players"] = {
-				["Bracnar"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38806",
+			["name"] = "Finely-Tuned Throat Needler",
 		},
 		[75253] = {
 			["mats"] = {
@@ -24197,7 +24203,7 @@ TradeSkillMaster_CraftingDB = {
 			["numResult"] = 1,
 			["cooldownTimes"] = {
 				["Bracnar"] = {
-					["endTime"] = 1455177670,
+					["endTime"] = 1456128067,
 					["prompt"] = true,
 				},
 			},
@@ -24481,20 +24487,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Charbroiled Tiger Steak",
 		},
-		[7179] = {
+		[38961] = {
 			["mats"] = {
 				["i:3371"] = 1,
-				["i:6370"] = 2,
-				["i:3820"] = 1,
+				["i:22793"] = 1,
+				["i:22792"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["name"] = "Elixir of Water Breathing",
+			["name"] = "Fel Mana Potion",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:5996",
+			["itemString"] = "i:31677",
 		},
 		[7928] = {
 			["mats"] = {
@@ -24538,19 +24544,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:44456",
 		},
-		[43758] = {
+		[28028] = {
 			["mats"] = {
-				["i:27678"] = 1,
-				["i:13757"] = 1,
+				["i:22450"] = 2,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:33866",
+			["profession"] = "Enchanting",
+			["name"] = "Void Sphere",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Stormchops",
+			["itemString"] = "i:22459",
 		},
 		[158893] = {
 			["mats"] = {
@@ -24641,18 +24646,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:68134",
 		},
-		[55400] = {
+		[13858] = {
 			["mats"] = {
-				["i:41334"] = 1,
+				["i:11137"] = 6,
+				["i:38682"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Relentless Earthsiege Diamond",
+			["profession"] = "Enchanting",
+			["name"] = "Superior Health",
 			["players"] = {
-				["Uldaris"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:41398",
+			["itemString"] = "i:38833",
 		},
 		[3956] = {
 			["mats"] = {
@@ -25088,18 +25094,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Glacial Slippers",
 		},
-		[55398] = {
+		[6419] = {
 			["mats"] = {
-				["i:41334"] = 1,
+				["i:5471"] = 1,
 			},
-			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Eternal Earthsiege Diamond",
+			["numResult"] = 2,
+			["profession"] = "Cooking",
+			["itemString"] = "i:5480",
 			["players"] = {
-				["Uldaris"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:41396",
+			["name"] = "Lean Venison",
 		},
 		[73497] = {
 			["mats"] = {
@@ -25485,20 +25491,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:110647",
 		},
-		[20030] = {
+		[12066] = {
 			["mats"] = {
-				["i:38682"] = 1,
-				["i:16204"] = 10,
-				["i:14344"] = 4,
+				["i:4339"] = 3,
+				["i:8343"] = 2,
+				["i:2604"] = 2,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Superior Impact",
+			["profession"] = "Tailoring",
+			["name"] = "Red Mageweave Gloves",
 			["players"] = {
-				["Bracnar"] = true,
+				["Ghiaccioli"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38869",
+			["itemString"] = "i:10018",
 		},
 		[2402] = {
 			["mats"] = {
@@ -25596,19 +25602,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:11289",
 		},
-		[3978] = {
+		[57443] = {
 			["mats"] = {
-				["i:1206"] = 1,
-				["i:4371"] = 1,
+				["i:43009"] = 1,
+				["i:43007"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["itemString"] = "i:4406",
+			["profession"] = "Cooking",
+			["itemString"] = "i:43001",
 			["players"] = {
-				["Galinar"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Standard Scope",
+			["name"] = "Tracker Snacks",
 		},
 		[104303] = {
 			["mats"] = {
@@ -25713,18 +25719,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:110649",
 		},
-		[28953] = {
+		[7754] = {
 			["mats"] = {
-				["i:23117"] = 1,
+				["i:6317"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Sparkling Azure Moonstone",
+			["profession"] = "Cooking",
+			["itemString"] = "i:6316",
 			["players"] = {
-				["Uldaris"] = true,
+				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:23119",
+			["name"] = "Loch Frenzy Delight",
 		},
 		[66434] = {
 			["mats"] = {
@@ -25778,18 +25784,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:76897",
 		},
-		[55395] = {
+		[3850] = {
 			["mats"] = {
-				["i:41266"] = 1,
+				["i:2997"] = 5,
+				["i:2321"] = 4,
 			},
 			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Thundering Skyflare Diamond",
+			["profession"] = "Tailoring",
+			["itemString"] = "i:4316",
 			["players"] = {
-				["Uldaris"] = true,
+				["Ghiaccioli"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:41400",
+			["name"] = "Heavy Woolen Pants",
 		},
 		[75262] = {
 			["mats"] = {
@@ -25805,20 +25813,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Spiritmend Gloves",
 		},
-		[44584] = {
+		[178208] = {
 			["mats"] = {
-				["i:34056"] = 2,
-				["i:34054"] = 4,
-				["i:38682"] = 1,
+				["i:110609"] = 5,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Greater Vitality",
+			["profession"] = "Leatherworking",
+			["name"] = "Drums of Fury",
 			["players"] = {
-				["Bracnar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38974",
+			["itemString"] = "i:120257",
 		},
 		[73471] = {
 			["mats"] = {
@@ -25875,18 +25881,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:38859",
 		},
-		[93741] = {
+		[58145] = {
 			["mats"] = {
-				["i:67229"] = 1,
+				["i:35624"] = 2,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:67230",
+			["profession"] = "Jewelcrafting",
+			["name"] = "Stoneguard Band",
 			["players"] = {
-				["Bracnar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Venison Jerky",
+			["itemString"] = "i:43248",
 		},
 		[28267] = {
 			["mats"] = {
@@ -25929,19 +25935,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Ultimate Gnomish Army Knife",
 		},
-		[27961] = {
+		[55906] = {
 			["mats"] = {
-				["i:22445"] = 8,
-				["i:38682"] = 1,
+				["i:41510"] = 4,
+				["i:38426"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Major Armor",
+			["profession"] = "Tailoring",
+			["itemString"] = "i:41520",
 			["players"] = {
-				["Bracnar"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38914",
+			["name"] = "Frostwoven Boots",
 		},
 		[44492] = {
 			["mats"] = {
@@ -26336,32 +26342,34 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:46098",
 		},
-		[53921] = {
+		[180757] = {
 			["mats"] = {
-				["i:36926"] = 1,
+				["i:109141"] = 12,
+				["i:109137"] = 6,
 			},
 			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Purified Shadow Crystal",
-			["players"] = {
-				["Uldaris"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:39979",
-		},
-		[34002] = {
-			["mats"] = {
-				["i:22445"] = 6,
-				["i:38682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Lesser Assault",
+			["profession"] = "Cooking",
+			["itemString"] = "i:122344",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38938",
+			["name"] = "Salty Squid Roll",
+		},
+		[56519] = {
+			["mats"] = {
+				["i:36901"] = 1,
+				["i:36905"] = 2,
+				["i:3371"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Alchemy",
+			["name"] = "Elixir of Mighty Mageblood",
+			["players"] = {
+				["Bracnar"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:40109",
 		},
 		[13642] = {
 			["mats"] = {
@@ -26424,19 +26432,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Woolen Boots",
 		},
-		[57439] = {
+		[55392] = {
 			["mats"] = {
-				["i:41801"] = 1,
-				["i:43007"] = 1,
+				["i:41266"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:42998",
+			["profession"] = "Jewelcrafting",
+			["name"] = "Ember Skyflare Diamond",
 			["players"] = {
-				["Bracnar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Cuttlesteak",
+			["itemString"] = "i:41333",
 		},
 		[44621] = {
 			["mats"] = {
@@ -26453,40 +26460,41 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:38988",
 		},
-		[56519] = {
+		[34002] = {
 			["mats"] = {
-				["i:36901"] = 1,
-				["i:36905"] = 2,
+				["i:22445"] = 6,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["name"] = "Lesser Assault",
+			["players"] = {
+				["Bracnar"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:38938",
+		},
+		[3454] = {
+			["mats"] = {
 				["i:3371"] = 1,
+				["i:3819"] = 2,
+				["i:3358"] = 4,
 			},
 			["numResult"] = 1,
 			["profession"] = "Alchemy",
-			["name"] = "Elixir of Mighty Mageblood",
+			["name"] = "Frost Oil",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:40109",
-		},
-		[15855] = {
-			["mats"] = {
-				["i:12184"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:12210",
-			["players"] = {
-				["Bracnar"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Roast Raptor",
+			["itemString"] = "i:3829",
 		},
 		[75265] = {
 			["mats"] = {
-				["i:34055"] = 4,
 				["i:34052"] = 1,
-				["i:52555"] = 8,
+				["i:34055"] = 4,
 				["i:53643"] = 9,
+				["i:52555"] = 8,
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
@@ -26552,18 +26560,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:20955",
 		},
-		[53920] = {
+		[130325] = {
 			["mats"] = {
-				["i:36932"] = 1,
+				["i:82441"] = 5,
+				["i:76061"] = 3,
 			},
 			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Forceful Dark Jade",
+			["profession"] = "Tailoring",
+			["itemString"] = "i:82447",
 			["players"] = {
-				["Uldaris"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:39978",
+			["name"] = "Imperial Silk",
 		},
 		[62044] = {
 			["mats"] = {
@@ -26734,19 +26743,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:52226",
 		},
-		[57437] = {
+		[6418] = {
 			["mats"] = {
-				["i:41808"] = 3,
-				["i:43007"] = 1,
+				["i:5470"] = 1,
 			},
-			["numResult"] = 1,
+			["numResult"] = 2,
 			["profession"] = "Cooking",
-			["itemString"] = "i:42996",
+			["itemString"] = "i:5479",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Snapper Extreme",
+			["name"] = "Crispy Lizard Tail",
 		},
 		[104308] = {
 			["mats"] = {
@@ -26762,20 +26770,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Fire Spirit Salmon",
 		},
-		[3174] = {
+		[17180] = {
 			["mats"] = {
-				["i:2453"] = 1,
-				["i:1288"] = 1,
-				["i:3371"] = 1,
+				["i:12359"] = 1,
+				["i:11176"] = 3,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Potion of Curing",
+			["profession"] = "Enchanting",
+			["name"] = "Enchanted Thorium Bar",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:3386",
+			["itemString"] = "i:12655",
 		},
 		[20016] = {
 			["mats"] = {
@@ -27038,33 +27045,32 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:5997",
 		},
-		[20026] = {
+		[176392] = {
 			["mats"] = {
-				["i:14343"] = 2,
-				["i:38682"] = 1,
+				["i:110609"] = 5,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Major Health",
+			["profession"] = "Leatherworking (Garrison)",
+			["name"] = "Fine Blue and Gold Tent",
+			["players"] = {
+				["Uldaris"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:116986",
+		},
+		[58523] = {
+			["mats"] = {
+				["i:22577"] = 1,
+				["i:36782"] = 1,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["itemString"] = "i:43491",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38866",
-		},
-		[56476] = {
-			["mats"] = {
-				["i:36913"] = 12,
-				["i:39681"] = 2,
-			},
-			["numResult"] = 8,
-			["profession"] = "Engineering",
-			["itemString"] = "i:37567",
-			["players"] = {
-				["Galinar"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Healing Injector Kit",
+			["name"] = "Bad Clams",
 		},
 		[26765] = {
 			["mats"] = {
@@ -27107,19 +27113,19 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:40045",
 		},
-		[27958] = {
+		[55900] = {
 			["mats"] = {
-				["i:34054"] = 3,
-				["i:38682"] = 1,
+				["i:41510"] = 2,
+				["i:34054"] = 2,
 			},
 			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Exceptional Mana",
+			["profession"] = "Tailoring",
+			["itemString"] = "i:41511",
 			["players"] = {
-				["Bracnar"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38912",
+			["name"] = "Bolt of Imbued Frostweave",
 		},
 		[66568] = {
 			["mats"] = {
@@ -27162,19 +27168,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:24077",
 		},
-		[13663] = {
+		[7857] = {
 			["mats"] = {
-				["i:11135"] = 1,
 				["i:38682"] = 1,
+				["i:10998"] = 1,
+				["i:10940"] = 4,
 			},
 			["numResult"] = 1,
 			["profession"] = "Enchanting",
-			["name"] = "Greater Mana",
+			["name"] = "Health",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:38818",
+			["itemString"] = "i:38782",
 		},
 		[75268] = {
 			["mats"] = {
@@ -27262,20 +27269,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Pandaria Fireworks",
 		},
-		[22808] = {
+		[7753] = {
 			["mats"] = {
-				["i:3371"] = 1,
-				["i:7972"] = 1,
-				["i:8831"] = 2,
+				["i:6289"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Alchemy",
-			["name"] = "Elixir of Greater Water Breathing",
+			["profession"] = "Cooking",
+			["itemString"] = "i:4592",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:18294",
+			["name"] = "Longjaw Mud Snapper",
 		},
 		[12603] = {
 			["mats"] = {
@@ -27526,18 +27531,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Mirror Scope",
 		},
-		[73382] = {
+		[171264] = {
 			["mats"] = {
-				["i:52192"] = 1,
+				["i:110609"] = 50,
 			},
 			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Puissant Dream Emerald",
+			["profession"] = "Leatherworking",
+			["name"] = "Traveling Tunic",
 			["players"] = {
 				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:52231",
+			["itemString"] = "i:116168",
 		},
 		[74246] = {
 			["mats"] = {
@@ -27634,20 +27639,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:76891",
 		},
-		[19825] = {
+		[53963] = {
 			["mats"] = {
-				["i:10500"] = 1,
-				["i:12364"] = 2,
-				["i:12810"] = 4,
+				["i:36927"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["itemString"] = "i:16008",
+			["profession"] = "Jewelcrafting",
+			["name"] = "Shifting Twilight Opal",
 			["players"] = {
-				["Galinar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Master Engineer's Goggles",
+			["itemString"] = "i:40023",
 		},
 		[75270] = {
 			["mats"] = {
@@ -27664,18 +27667,20 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["name"] = "Vicious Embersilk Bracers",
 		},
-		[53963] = {
+		[19825] = {
 			["mats"] = {
-				["i:36927"] = 1,
+				["i:10500"] = 1,
+				["i:12364"] = 2,
+				["i:12810"] = 4,
 			},
 			["numResult"] = 1,
-			["profession"] = "Jewelcrafting",
-			["name"] = "Shifting Twilight Opal",
+			["profession"] = "Engineering",
+			["itemString"] = "i:16008",
 			["players"] = {
-				["Uldaris"] = true,
+				["Galinar"] = true,
 			},
 			["queued"] = 0,
-			["itemString"] = "i:40023",
+			["name"] = "Master Engineer's Goggles",
 		},
 		[56202] = {
 			["mats"] = {
@@ -27864,18 +27869,18 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:6263",
 		},
-		[46684] = {
+		[107665] = {
 			["mats"] = {
-				["i:35562"] = 1,
+				["i:76130"] = 1,
 			},
 			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:35563",
+			["profession"] = "Jewelcrafting",
+			["name"] = "Tenuous Tiger Opal",
 			["players"] = {
-				["Bracnar"] = true,
+				["Uldaris"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Charred Bear Kabobs",
+			["itemString"] = "i:76544",
 		},
 		[28557] = {
 			["mats"] = {
@@ -28684,8 +28689,8 @@ TradeSkillMaster_CraftingDB = {
 				["i:6037"] = 1,
 				["i:1529"] = 1,
 				["i:4339"] = 8,
-				["i:10286"] = 2,
 				["i:8153"] = 4,
+				["i:10286"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
@@ -28713,37 +28718,32 @@ TradeSkillMaster_CraftingDB = {
 			["queued"] = 0,
 			["itemString"] = "i:52780",
 		},
-		[53780] = {
-			["players"] = {
-				["Bracnar"] = true,
-			},
-			["numResult"] = 1,
-			["cooldownTimes"] = {
-				["Bracnar"] = {
-					["endTime"] = 0,
-				},
-			},
-			["hasCD"] = true,
+		[7752] = {
 			["mats"] = {
-				["i:35627"] = 1,
-			},
-			["itemString"] = "i:35625",
-			["profession"] = "Alchemy",
-			["queued"] = 0,
-			["name"] = "Eternal Life",
-		},
-		[161002] = {
-			["mats"] = {
-				["i:109137"] = 5,
+				["i:6303"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Cooking",
-			["itemString"] = "i:111456",
+			["itemString"] = "i:787",
 			["players"] = {
 				["Bracnar"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Grilled Saberfish",
+			["name"] = "Slitherskin Mackerel",
+		},
+		[3865] = {
+			["mats"] = {
+				["i:4338"] = 4,
+			},
+			["numResult"] = 1,
+			["profession"] = "Tailoring",
+			["itemString"] = "i:4339",
+			["players"] = {
+				["Ghiaccioli"] = true,
+				["Galinar"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Bolt of Mageweave",
 		},
 		[60874] = {
 			["mats"] = {
@@ -28844,7 +28844,7 @@ TradeSkillMaster_CraftingDB = {
 	},
 	["g@ @priceColumn"] = 1,
 	["f@Alliance - Sisters of Elune@ignoreDECheckBox"] = true,
-	["f@Alliance - Sisters of Elune@disableCheckBox"] = false,
+	["g@ @showingDefaultFrame"] = false,
 	["f@Alliance - Sisters of Elune@playerProfessions"] = {
 		["Bracnar"] = {
 			["Alchemy"] = {
@@ -28940,11 +28940,11 @@ TradeSkillMaster_CraftingDB = {
 			},
 			["Leatherworking (Garrison)"] = {
 				["maxLevel"] = 0,
-				["isSecondary"] = false,
 				["garrisonBuildingID"] = 122,
-				["isGarrison"] = true,
-				["prompted"] = true,
+				["isSecondary"] = false,
 				["level"] = 0,
+				["prompted"] = true,
+				["isGarrison"] = true,
 			},
 			["Jewelcrafting"] = {
 				["prompted"] = true,
@@ -29105,8 +29105,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:34056"] = {
 			["name"] = "Lesser Cosmic Essence",
 		},
-		["i:23573"] = {
-			["name"] = "Hardened Adamantite Bar",
+		["i:41802"] = {
+			["name"] = "Imperial Manta Ray",
 		},
 		["i:36908"] = {
 			["name"] = "Frost Lotus",
@@ -29132,8 +29132,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:41808"] = {
 			["name"] = "Bonescale Snapper",
 		},
-		["i:2924"] = {
-			["name"] = "Crocolisk Meat",
+		["i:8153"] = {
+			["name"] = "Wildvine",
 		},
 		["i:109135"] = {
 			["name"] = "Raw Riverbeast Meat",
@@ -29183,8 +29183,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:41809"] = {
 			["name"] = "Glacial Salmon",
 		},
-		["i:2589"] = {
-			["name"] = "Linen Cloth",
+		["i:4382"] = {
+			["name"] = "Bronze Framework",
 		},
 		["i:34052"] = {
 			["name"] = "Dream Shard",
@@ -29198,8 +29198,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:6359"] = {
 			["name"] = "Firefin Snapper",
 		},
-		["i:8343"] = {
-			["name"] = "Heavy Silken Thread",
+		["i:15994"] = {
+			["name"] = "Thorium Widget",
 		},
 		["i:36933"] = {
 			["name"] = "Forest Emerald",
@@ -29307,8 +29307,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:10500"] = {
 			["name"] = "Fire Goggles",
 		},
-		["i:10939"] = {
-			["name"] = "Greater Magic Essence",
+		["i:8838"] = {
+			["name"] = "Sungrass",
 		},
 		["i:72095"] = {
 			["name"] = "Trillium Bar",
@@ -29325,8 +29325,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:7077"] = {
 			["name"] = "Heart of Fire",
 		},
-		["i:33447"] = {
-			["name"] = "Runic Healing Potion",
+		["i:12204"] = {
+			["name"] = "Heavy Kodo Meat",
 		},
 		["i:22456"] = {
 			["name"] = "Primal Shadow",
@@ -29334,8 +29334,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:5500"] = {
 			["name"] = "Iridescent Pearl",
 		},
-		["i:74838"] = {
-			["name"] = "Raw Crab Meat",
+		["i:2901"] = {
+			["name"] = "Mining Pick",
 		},
 		["i:7080"] = {
 			["name"] = "Essence of Water",
@@ -29346,8 +29346,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:43012"] = {
 			["name"] = "Rhino Meat",
 		},
-		["i:36903"] = {
-			["name"] = "Adder's Tongue",
+		["i:74841"] = {
+			["name"] = "Juicycrunch Carrot",
 		},
 		["i:4406"] = {
 			["name"] = "Standard Scope",
@@ -29403,8 +29403,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:22790"] = {
 			["name"] = "Ancient Lichen",
 		},
-		["i:109127"] = {
-			["name"] = "Starflower",
+		["i:74832"] = {
+			["name"] = "Barley",
 		},
 		["i:76134"] = {
 			["name"] = "Sunstone",
@@ -29445,8 +29445,9 @@ TradeSkillMaster_CraftingDB = {
 		["i:37663"] = {
 			["name"] = "Titansteel Bar",
 		},
-		["i:818"] = {
-			["name"] = "Tigerseye",
+		["i:22449"] = {
+			["name"] = "Large Prismatic Shard",
+			["customValue"] = "min(dbmarket, vendorbuy, convert(dbmarket))",
 		},
 		["i:10285"] = {
 			["name"] = "Shadow Silk",
@@ -29469,20 +29470,20 @@ TradeSkillMaster_CraftingDB = {
 		["i:109217"] = {
 			["name"] = "Draenic Agility Potion",
 		},
-		["i:102541"] = {
-			["name"] = "Aged Balsamic Vinegar",
+		["i:10559"] = {
+			["name"] = "Mithril Tube",
 		},
 		["i:35949"] = {
 			["name"] = "Tundra Berries",
 		},
-		["i:31670"] = {
-			["name"] = "Raptor Ribs",
+		["i:2324"] = {
+			["name"] = "Bleach",
 		},
 		["i:83089"] = {
 			["name"] = "Sunstone Panther",
 		},
-		["i:6361"] = {
-			["name"] = "Raw Rainbow Fin Albacore",
+		["i:74865"] = {
+			["name"] = "Krasarang Paddlefish",
 		},
 		["i:53067"] = {
 			["name"] = "Striped Lurker",
@@ -29565,8 +29566,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:58086"] = {
 			["name"] = "Flask of the Draconic Mind",
 		},
-		["i:27515"] = {
-			["name"] = "Huge Spotted Feltail",
+		["i:39690"] = {
+			["name"] = "Volatile Blasting Trigger",
 		},
 		["i:4338"] = {
 			["name"] = "Mageweave Cloth",
@@ -29604,8 +29605,9 @@ TradeSkillMaster_CraftingDB = {
 		["i:33824"] = {
 			["name"] = "Crescent-Tail Skullfish",
 		},
-		["i:77467"] = {
-			["name"] = "Ghost Iron Bolts",
+		["i:22448"] = {
+			["name"] = "Small Prismatic Shard",
+			["customValue"] = "min(dbmarket, vendorbuy, convert(dbmarket))",
 		},
 		["i:74656"] = {
 			["name"] = "Chun Tian Spring Rolls",
@@ -29625,8 +29627,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:36924"] = {
 			["name"] = "Sky Sapphire",
 		},
-		["i:74644"] = {
-			["name"] = "Swirling Mist Soup",
+		["i:52191"] = {
+			["name"] = "Ocean Sapphire",
 		},
 		["i:109138"] = {
 			["name"] = "Jawless Skulker Flesh",
@@ -29795,21 +29797,20 @@ TradeSkillMaster_CraftingDB = {
 		["i:3859"] = {
 			["name"] = "Steel Bar",
 		},
-		["i:74247"] = {
-			["name"] = "Ethereal Shard",
-			["customValue"] = "min(dbmarket, vendorbuy, convert(dbmarket))",
+		["i:2842"] = {
+			["name"] = "Silver Bar",
 		},
 		["i:6371"] = {
 			["name"] = "Fire Oil",
 		},
-		["i:5471"] = {
-			["name"] = "Stag Meat",
+		["i:9061"] = {
+			["name"] = "Goblin Rocket Fuel",
 		},
-		["i:27681"] = {
-			["name"] = "Warped Flesh",
+		["i:2447"] = {
+			["name"] = "Peacebloom",
 		},
-		["i:20817"] = {
-			["name"] = "Bronze Setting",
+		["i:115805"] = {
+			["name"] = "Mastery Taladite",
 		},
 		["i:23782"] = {
 			["name"] = "Fel Iron Casing",
@@ -29835,8 +29836,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:83064"] = {
 			["name"] = "Spinefish",
 		},
-		["i:79250"] = {
-			["name"] = "Fresh Pomfruit",
+		["i:44958"] = {
+			["name"] = "Ethereal Oil",
 		},
 		["i:6260"] = {
 			["name"] = "Blue Dye",
@@ -29853,8 +29854,9 @@ TradeSkillMaster_CraftingDB = {
 		["i:13758"] = {
 			["name"] = "Raw Redgill",
 		},
-		["i:40195"] = {
-			["name"] = "Pygmy Oil",
+		["i:21884"] = {
+			["name"] = "Primal Fire",
+			["customValue"] = "min(dbmarket, vendorbuy, convert(dbmarket))",
 		},
 		["i:74648"] = {
 			["name"] = "Sea Mist Rice Noodles",
@@ -29863,9 +29865,8 @@ TradeSkillMaster_CraftingDB = {
 			["name"] = "Alchemical Catalyst",
 			["customValue"] = "(50*dbmarket(item:109124)+10*dbmarket(item:109118))/(6*1+5)",
 		},
-		["i:22448"] = {
-			["name"] = "Small Prismatic Shard",
-			["customValue"] = "min(dbmarket, vendorbuy, convert(dbmarket))",
+		["i:41803"] = {
+			["name"] = "Rockfin Grouper",
 		},
 		["i:723"] = {
 			["name"] = "Goretusk Liver",
@@ -29897,8 +29898,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:12203"] = {
 			["name"] = "Red Wolf Meat",
 		},
-		["i:9210"] = {
-			["name"] = "Ghost Dye",
+		["i:24479"] = {
+			["name"] = "Shadow Pearl",
 		},
 		["i:58142"] = {
 			["name"] = "Deathblood Venom",
@@ -29912,8 +29913,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:54849"] = {
 			["name"] = "Obsidium Bar",
 		},
-		["i:21881"] = {
-			["name"] = "Netherweb Spider Silk",
+		["i:12184"] = {
+			["name"] = "Raptor Flesh",
 		},
 		["i:38425"] = {
 			["name"] = "Heavy Borean Leather",
@@ -29924,17 +29925,17 @@ TradeSkillMaster_CraftingDB = {
 		["i:2321"] = {
 			["name"] = "Fine Thread",
 		},
-		["i:74660"] = {
-			["name"] = "Pandaren Peach",
+		["i:10502"] = {
+			["name"] = "Spellpower Goggles Xtreme",
 		},
 		["i:102536"] = {
 			["name"] = "Fresh Lushroom",
 		},
-		["i:52191"] = {
-			["name"] = "Ocean Sapphire",
+		["i:4387"] = {
+			["name"] = "Iron Strut",
 		},
-		["i:39690"] = {
-			["name"] = "Volatile Blasting Trigger",
+		["i:79250"] = {
+			["name"] = "Fresh Pomfruit",
 		},
 		["i:109119"] = {
 			["name"] = "True Iron Ore",
@@ -29951,8 +29952,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:111366"] = {
 			["name"] = "Gearspring Parts",
 		},
-		["i:18255"] = {
-			["name"] = "Runn Tum Tuber",
+		["i:27516"] = {
+			["name"] = "Enormous Barbed Gill Trout",
 		},
 		["i:109219"] = {
 			["name"] = "Draenic Strength Potion",
@@ -29970,8 +29971,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:41807"] = {
 			["name"] = "Dragonfin Angelfish",
 		},
-		["i:43009"] = {
-			["name"] = "Shoveltusk Flank",
+		["i:27669"] = {
+			["name"] = "Bat Flesh",
 		},
 		["i:785"] = {
 			["name"] = "Mageroyal",
@@ -29988,75 +29989,74 @@ TradeSkillMaster_CraftingDB = {
 		["i:74851"] = {
 			["name"] = "Rice",
 		},
-		["i:10546"] = {
-			["name"] = "Deadly Scope",
+		["i:27515"] = {
+			["name"] = "Huge Spotted Feltail",
 		},
-		["i:10559"] = {
-			["name"] = "Mithril Tube",
-		},
-		["i:4387"] = {
-			["name"] = "Iron Strut",
-		},
-		["i:3860"] = {
-			["name"] = "Mithril Bar",
-		},
-		["i:74865"] = {
-			["name"] = "Krasarang Paddlefish",
-		},
-		["i:44958"] = {
-			["name"] = "Ethereal Oil",
-		},
-		["i:85585"] = {
-			["name"] = "Red Beans",
-		},
-		["i:111446"] = {
-			["name"] = "Skulker Chowder",
-		},
-		["i:12799"] = {
-			["name"] = "Large Opal",
-		},
-		["i:115804"] = {
-			["name"] = "Haste Taladite",
-		},
-		["i:23437"] = {
-			["name"] = "Talasite",
-		},
-		["i:23447"] = {
-			["name"] = "Eternium Bar",
-		},
-		["i:74863"] = {
-			["name"] = "Jewel Danio",
-		},
-		["i:115813"] = {
-			["name"] = "Greater Multistrike Taladite",
-		},
-		["i:109148"] = {
-			["name"] = "Draenic Strength Flask",
-		},
-		["i:23784"] = {
-			["name"] = "Adamantite Frame",
-		},
-		["i:10560"] = {
-			["name"] = "Unstable Trigger",
-		},
-		["i:39683"] = {
-			["name"] = "Froststeel Tube",
-		},
-		["i:22449"] = {
-			["name"] = "Large Prismatic Shard",
-			["customValue"] = "min(dbmarket, vendorbuy, convert(dbmarket))",
+		["i:31670"] = {
+			["name"] = "Raptor Ribs",
 		},
 		["i:52984"] = {
 			["name"] = "Stormvine",
 		},
-		["i:74832"] = {
-			["name"] = "Barley",
+		["i:74846"] = {
+			["name"] = "Witchberries",
 		},
-		["i:43102"] = {
-			["name"] = "Frozen Orb",
+		["i:74660"] = {
+			["name"] = "Pandaren Peach",
 		},
-		["i:2604"] = {
-			["name"] = "Red Dye",
+		["i:6361"] = {
+			["name"] = "Raw Rainbow Fin Albacore",
+		},
+		["i:85585"] = {
+			["name"] = "Red Beans",
+		},
+		["i:7071"] = {
+			["name"] = "Iron Buckle",
+		},
+		["i:12799"] = {
+			["name"] = "Large Opal",
+		},
+		["i:102541"] = {
+			["name"] = "Aged Balsamic Vinegar",
+		},
+		["i:23437"] = {
+			["name"] = "Talasite",
+		},
+		["i:818"] = {
+			["name"] = "Tigerseye",
+		},
+		["i:74863"] = {
+			["name"] = "Jewel Danio",
+		},
+		["i:23447"] = {
+			["name"] = "Eternium Bar",
+		},
+		["i:109148"] = {
+			["name"] = "Draenic Strength Flask",
+		},
+		["i:22447"] = {
+			["name"] = "Lesser Planar Essence",
+		},
+		["i:10560"] = {
+			["name"] = "Unstable Trigger",
+		},
+		["i:115813"] = {
+			["name"] = "Greater Multistrike Taladite",
+		},
+		["i:23784"] = {
+			["name"] = "Adamantite Frame",
+		},
+		["i:36930"] = {
+			["name"] = "Monarch Topaz",
+		},
+		["i:12811"] = {
+			["name"] = "Righteous Orb",
+		},
+		["i:10546"] = {
+			["name"] = "Deadly Scope",
+		},
+		["i:109127"] = {
+			["name"] = "Starflower",
 		},
 		["i:109124"] = {
 			["name"] = "Frostweed",
@@ -30064,8 +30064,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:2595"] = {
 			["name"] = "Jug of Badlands Bourbon",
 		},
-		["i:5465"] = {
-			["name"] = "Small Spider Leg",
+		["i:60224"] = {
+			["name"] = "Handful of Obsidium Bolts",
 		},
 		["i:85584"] = {
 			["name"] = "Silkworm Pupa",
@@ -30073,23 +30073,23 @@ TradeSkillMaster_CraftingDB = {
 		["i:27438"] = {
 			["name"] = "Golden Darter",
 		},
-		["i:27671"] = {
-			["name"] = "Buzzard Meat",
+		["i:109128"] = {
+			["name"] = "Nagrand Arrowbloom",
 		},
-		["i:14047"] = {
-			["name"] = "Runecloth",
+		["i:159"] = {
+			["name"] = "Refreshing Spring Water",
 		},
 		["i:53069"] = {
 			["name"] = "Murglesnout",
 		},
-		["i:2901"] = {
-			["name"] = "Mining Pick",
+		["i:2604"] = {
+			["name"] = "Red Dye",
 		},
 		["i:20816"] = {
 			["name"] = "Delicate Copper Wire",
 		},
-		["i:74846"] = {
-			["name"] = "Witchberries",
+		["i:3860"] = {
+			["name"] = "Mithril Bar",
 		},
 		["i:24243"] = {
 			["name"] = "Adamantite Powder",
@@ -30097,8 +30097,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:111445"] = {
 			["name"] = "Fiery Calamari",
 		},
-		["i:9224"] = {
-			["name"] = "Elixir of Demonslaying",
+		["i:36903"] = {
+			["name"] = "Adder's Tongue",
 		},
 		["i:74843"] = {
 			["name"] = "Scallions",
@@ -30124,12 +30124,11 @@ TradeSkillMaster_CraftingDB = {
 		["i:12202"] = {
 			["name"] = "Tiger Meat",
 		},
-		["i:2449"] = {
-			["name"] = "Earthroot",
+		["i:9224"] = {
+			["name"] = "Elixir of Demonslaying",
 		},
-		["i:35624"] = {
-			["name"] = "Eternal Earth",
-			["customValue"] = "min(dbmarket, vendorbuy, convert(dbmarket))",
+		["i:22787"] = {
+			["name"] = "Ragveil",
 		},
 		["i:76136"] = {
 			["name"] = "Pandarian Garnet",
@@ -30137,8 +30136,9 @@ TradeSkillMaster_CraftingDB = {
 		["i:111442"] = {
 			["name"] = "Sturgeon Stew",
 		},
-		["i:109128"] = {
-			["name"] = "Nagrand Arrowbloom",
+		["i:35624"] = {
+			["name"] = "Eternal Earth",
+			["customValue"] = "min(dbmarket, vendorbuy, convert(dbmarket))",
 		},
 		["i:120945"] = {
 			["name"] = "Primal Spirit",
@@ -30171,14 +30171,14 @@ TradeSkillMaster_CraftingDB = {
 		["i:12662"] = {
 			["name"] = "Demonic Rune",
 		},
-		["i:74841"] = {
-			["name"] = "Juicycrunch Carrot",
+		["i:77468"] = {
+			["name"] = "High-Explosive Gunpowder",
 		},
-		["i:22787"] = {
-			["name"] = "Ragveil",
+		["i:27671"] = {
+			["name"] = "Buzzard Meat",
 		},
-		["i:12811"] = {
-			["name"] = "Righteous Orb",
+		["i:74652"] = {
+			["name"] = "Fire Spirit Salmon",
 		},
 		["i:11291"] = {
 			["name"] = "Star Wood",
@@ -30189,8 +30189,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:52718"] = {
 			["name"] = "Lesser Celestial Essence",
 		},
-		["i:77468"] = {
-			["name"] = "High-Explosive Gunpowder",
+		["i:33447"] = {
+			["name"] = "Runic Healing Potion",
 		},
 		["i:72235"] = {
 			["name"] = "Silkweed",
@@ -30198,20 +30198,20 @@ TradeSkillMaster_CraftingDB = {
 		["i:102539"] = {
 			["name"] = "Fresh Strawberries",
 		},
-		["i:74652"] = {
-			["name"] = "Fire Spirit Salmon",
+		["i:41810"] = {
+			["name"] = "Fangtooth Herring",
 		},
-		["i:31671"] = {
-			["name"] = "Serpent Flesh",
+		["i:19943"] = {
+			["name"] = "Massive Mojo",
 		},
-		["i:12204"] = {
-			["name"] = "Heavy Kodo Meat",
+		["i:10939"] = {
+			["name"] = "Greater Magic Essence",
 		},
 		["i:5051"] = {
 			["name"] = "Dig Rat",
 		},
-		["i:22457"] = {
-			["name"] = "Primal Mana",
+		["i:21024"] = {
+			["name"] = "Chimaerok Tenderloin",
 		},
 		["i:23676"] = {
 			["name"] = "Moongraze Stag Tenderloin",
@@ -30222,14 +30222,14 @@ TradeSkillMaster_CraftingDB = {
 		["i:52988"] = {
 			["name"] = "Whiptail",
 		},
-		["i:8838"] = {
-			["name"] = "Sungrass",
+		["i:44853"] = {
+			["name"] = "Honey",
 		},
 		["i:13756"] = {
 			["name"] = "Raw Summer Bass",
 		},
-		["i:115803"] = {
-			["name"] = "Critical Strike Taladite",
+		["i:23440"] = {
+			["name"] = "Dawnstone",
 		},
 		["i:36904"] = {
 			["name"] = "Tiger Lily",
@@ -30240,17 +30240,17 @@ TradeSkillMaster_CraftingDB = {
 		["i:53064"] = {
 			["name"] = "Highland Guppy",
 		},
-		["i:44853"] = {
-			["name"] = "Honey",
-		},
-		["i:5635"] = {
-			["name"] = "Sharp Claw",
+		["i:4603"] = {
+			["name"] = "Raw Spotted Yellowtail",
 		},
 		["i:37705"] = {
 			["name"] = "Crystallized Water",
 		},
-		["i:11178"] = {
-			["name"] = "Large Radiant Shard",
+		["i:43009"] = {
+			["name"] = "Shoveltusk Flank",
+		},
+		["i:11137"] = {
+			["name"] = "Vision Dust",
 		},
 		["i:52985"] = {
 			["name"] = "Azshara's Veil",
@@ -30261,11 +30261,11 @@ TradeSkillMaster_CraftingDB = {
 		["i:25867"] = {
 			["name"] = "Earthstorm Diamond",
 		},
-		["i:11137"] = {
-			["name"] = "Vision Dust",
+		["i:62781"] = {
+			["name"] = "Giant Turtle Tongue",
 		},
-		["i:109129"] = {
-			["name"] = "Talador Orchid",
+		["i:11178"] = {
+			["name"] = "Large Radiant Shard",
 		},
 		["i:2319"] = {
 			["name"] = "Medium Leather",
@@ -30282,11 +30282,11 @@ TradeSkillMaster_CraftingDB = {
 		["i:21840"] = {
 			["name"] = "Bolt of Netherweave",
 		},
-		["i:7005"] = {
-			["name"] = "Skinning Knife",
+		["i:2838"] = {
+			["name"] = "Heavy Stone",
 		},
-		["i:79010"] = {
-			["name"] = "Snow Lily",
+		["i:22786"] = {
+			["name"] = "Dreaming Glory",
 		},
 		["i:38682"] = {
 			["name"] = "Enchanting Vellum",
@@ -30294,8 +30294,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:2596"] = {
 			["name"] = "Skin of Dwarven Stout",
 		},
-		["i:19943"] = {
-			["name"] = "Massive Mojo",
+		["i:7070"] = {
+			["name"] = "Elemental Water",
 		},
 		["i:2453"] = {
 			["name"] = "Bruiseweed",
@@ -30303,8 +30303,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:21153"] = {
 			["name"] = "Raw Greater Sagefish",
 		},
-		["i:22786"] = {
-			["name"] = "Dreaming Glory",
+		["i:33470"] = {
+			["name"] = "Frostweave Cloth",
 		},
 		["i:13446"] = {
 			["name"] = "Major Healing Potion",
@@ -30312,11 +30312,11 @@ TradeSkillMaster_CraftingDB = {
 		["i:5956"] = {
 			["name"] = "Blacksmith Hammer",
 		},
-		["i:9260"] = {
-			["name"] = "Volatile Rum",
+		["i:76061"] = {
+			["name"] = "Spirit of Harmony",
 		},
-		["i:3356"] = {
-			["name"] = "Kingsblood",
+		["i:36926"] = {
+			["name"] = "Shadow Crystal",
 		},
 		["i:2677"] = {
 			["name"] = "Boar Ribs",
@@ -30330,8 +30330,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:6370"] = {
 			["name"] = "Blackmouth Oil",
 		},
-		["i:25868"] = {
-			["name"] = "Skyfire Diamond",
+		["i:62791"] = {
+			["name"] = "Blood Shrimp",
 		},
 		["i:35622"] = {
 			["name"] = "Eternal Water",
@@ -30346,35 +30346,35 @@ TradeSkillMaster_CraftingDB = {
 		["i:23439"] = {
 			["name"] = "Noble Topaz",
 		},
-		["i:76061"] = {
-			["name"] = "Spirit of Harmony",
+		["i:8343"] = {
+			["name"] = "Heavy Silken Thread",
 		},
 		["i:44834"] = {
 			["name"] = "Wild Turkey",
 		},
-		["i:15994"] = {
-			["name"] = "Thorium Widget",
+		["i:2589"] = {
+			["name"] = "Linen Cloth",
 		},
-		["i:3667"] = {
-			["name"] = "Tender Crocolisk Meat",
+		["i:9260"] = {
+			["name"] = "Volatile Rum",
 		},
 		["i:52180"] = {
 			["name"] = "Nightstone",
 		},
-		["i:23572"] = {
-			["name"] = "Primal Nether",
+		["i:3667"] = {
+			["name"] = "Tender Crocolisk Meat",
 		},
 		["i:7079"] = {
 			["name"] = "Globe of Water",
 		},
-		["i:62784"] = {
-			["name"] = "Crocolisk Tail",
+		["i:23572"] = {
+			["name"] = "Primal Nether",
 		},
 		["i:1705"] = {
 			["name"] = "Lesser Moonstone",
 		},
-		["i:2838"] = {
-			["name"] = "Heavy Stone",
+		["i:62784"] = {
+			["name"] = "Crocolisk Tail",
 		},
 		["i:23446"] = {
 			["name"] = "Adamantite Bar",
@@ -30382,14 +30382,14 @@ TradeSkillMaster_CraftingDB = {
 		["i:79011"] = {
 			["name"] = "Fool's Cap",
 		},
-		["i:109145"] = {
-			["name"] = "Draenic Agility Flask",
+		["i:111446"] = {
+			["name"] = "Skulker Chowder",
 		},
-		["i:53063"] = {
-			["name"] = "Mountain Trout",
+		["i:2605"] = {
+			["name"] = "Green Dye",
 		},
-		["i:41802"] = {
-			["name"] = "Imperial Manta Ray",
+		["i:18255"] = {
+			["name"] = "Runn Tum Tuber",
 		},
 		["i:62779"] = {
 			["name"] = "Monstrous Claw",
@@ -30397,35 +30397,35 @@ TradeSkillMaster_CraftingDB = {
 		["i:2672"] = {
 			["name"] = "Stringy Wolf Meat",
 		},
-		["i:74856"] = {
-			["name"] = "Jade Lungfish",
+		["i:53072"] = {
+			["name"] = "Deepsea Sagefish",
 		},
 		["i:62783"] = {
 			["name"] = "Basilisk \"Liver\"",
 		},
-		["i:2605"] = {
-			["name"] = "Green Dye",
+		["i:79010"] = {
+			["name"] = "Snow Lily",
 		},
-		["i:12184"] = {
-			["name"] = "Raptor Flesh",
+		["i:74662"] = {
+			["name"] = "Rice Flour",
 		},
 		["i:12361"] = {
 			["name"] = "Blue Sapphire",
 		},
-		["i:7070"] = {
-			["name"] = "Elemental Water",
+		["i:53063"] = {
+			["name"] = "Mountain Trout",
 		},
-		["i:24479"] = {
-			["name"] = "Shadow Pearl",
-		},
-		["i:22789"] = {
-			["name"] = "Terocone",
+		["i:21881"] = {
+			["name"] = "Netherweb Spider Silk",
 		},
 		["i:52719"] = {
 			["name"] = "Greater Celestial Essence",
 		},
-		["i:9061"] = {
-			["name"] = "Goblin Rocket Fuel",
+		["i:9210"] = {
+			["name"] = "Ghost Dye",
+		},
+		["i:5471"] = {
+			["name"] = "Stag Meat",
 		},
 		["i:76138"] = {
 			["name"] = "River's Heart",
@@ -30433,20 +30433,20 @@ TradeSkillMaster_CraftingDB = {
 		["i:53062"] = {
 			["name"] = "Sharptooth",
 		},
-		["i:62781"] = {
-			["name"] = "Giant Turtle Tongue",
+		["i:35948"] = {
+			["name"] = "Savory Snowplum",
+		},
+		["i:31671"] = {
+			["name"] = "Serpent Flesh",
 		},
 		["i:13503"] = {
 			["name"] = "Alchemist Stone",
 		},
-		["i:2447"] = {
-			["name"] = "Peacebloom",
-		},
 		["i:9149"] = {
 			["name"] = "Philosopher's Stone",
 		},
-		["i:115805"] = {
-			["name"] = "Mastery Taladite",
+		["i:27681"] = {
+			["name"] = "Warped Flesh",
 		},
 		["i:33568"] = {
 			["name"] = "Borean Leather",
@@ -30457,14 +30457,15 @@ TradeSkillMaster_CraftingDB = {
 		["i:44854"] = {
 			["name"] = "Tangy Wetland Cranberries",
 		},
+		["i:20817"] = {
+			["name"] = "Bronze Setting",
+		},
+		["i:74247"] = {
+			["name"] = "Ethereal Shard",
+			["customValue"] = "min(dbmarket, vendorbuy, convert(dbmarket))",
+		},
 		["i:2996"] = {
 			["name"] = "Bolt of Linen Cloth",
-		},
-		["i:2842"] = {
-			["name"] = "Silver Bar",
-		},
-		["i:53072"] = {
-			["name"] = "Deepsea Sagefish",
 		},
 		["i:74653"] = {
 			["name"] = "Steamed Crab Surprise",
@@ -30476,8 +30477,8 @@ TradeSkillMaster_CraftingDB = {
 			["name"] = "Temporal Crystal",
 			["customValue"] = "55g",
 		},
-		["i:3730"] = {
-			["name"] = "Big Bear Meat",
+		["i:85506"] = {
+			["name"] = "Viseclaw Meat",
 		},
 		["i:23079"] = {
 			["name"] = "Deep Peridot",
@@ -30898,14 +30899,14 @@ TradeSkillMaster_CraftingDB = {
 		["i:3827"] = {
 			["name"] = "Mana Potion",
 		},
-		["i:35948"] = {
-			["name"] = "Savory Snowplum",
+		["i:25868"] = {
+			["name"] = "Skyfire Diamond",
 		},
 		["i:58088"] = {
 			["name"] = "Flask of Titanic Strength",
 		},
-		["i:109147"] = {
-			["name"] = "Draenic Intellect Flask",
+		["i:2449"] = {
+			["name"] = "Earthroot",
 		},
 		["i:3355"] = {
 			["name"] = "Wild Steelbloom",
@@ -30914,8 +30915,8 @@ TradeSkillMaster_CraftingDB = {
 			["name"] = "Sha Crystal",
 			["customValue"] = "min(dbmarket, vendorbuy, convert(dbmarket))",
 		},
-		["i:85506"] = {
-			["name"] = "Viseclaw Meat",
+		["i:3730"] = {
+			["name"] = "Big Bear Meat",
 		},
 		["i:58087"] = {
 			["name"] = "Flask of the Winds",
@@ -30926,8 +30927,11 @@ TradeSkillMaster_CraftingDB = {
 		["i:22824"] = {
 			["name"] = "Elixir of Major Strength",
 		},
-		["i:27669"] = {
-			["name"] = "Bat Flesh",
+		["i:36916"] = {
+			["name"] = "Cobalt Bar",
+		},
+		["i:72104"] = {
+			["name"] = "Living Steel",
 		},
 		["i:36931"] = {
 			["name"] = "Ametrine",
@@ -30936,15 +30940,11 @@ TradeSkillMaster_CraftingDB = {
 			["name"] = "Sorcerous Water",
 			["customValue"] = "3g",
 		},
-		["i:7076"] = {
-			["name"] = "Essence of Earth",
-			["customValue"] = "min(dbmarket, vendorbuy, convert(dbmarket))",
+		["i:41510"] = {
+			["name"] = "Bolt of Frostweave",
 		},
 		["i:77529"] = {
 			["name"] = "Lord Blastington's Scope of Doom",
-		},
-		["i:33470"] = {
-			["name"] = "Frostweave Cloth",
 		},
 		["i:111438"] = {
 			["name"] = "Clefthoof Sausages",
@@ -30952,14 +30952,14 @@ TradeSkillMaster_CraftingDB = {
 		["i:8365"] = {
 			["name"] = "Raw Mithril Head Trout",
 		},
-		["i:74662"] = {
-			["name"] = "Rice Flour",
+		["i:22789"] = {
+			["name"] = "Terocone",
 		},
 		["i:14342"] = {
 			["name"] = "Mooncloth",
 		},
-		["i:27516"] = {
-			["name"] = "Enormous Barbed Gill Trout",
+		["i:23573"] = {
+			["name"] = "Hardened Adamantite Bar",
 		},
 		["i:32423"] = {
 			["name"] = "Icy Blasting Primers",
@@ -30967,11 +30967,11 @@ TradeSkillMaster_CraftingDB = {
 		["i:53066"] = {
 			["name"] = "Blackbelly Mudfish",
 		},
-		["i:8153"] = {
-			["name"] = "Wildvine",
+		["i:2924"] = {
+			["name"] = "Crocolisk Meat",
 		},
-		["i:7071"] = {
-			["name"] = "Iron Buckle",
+		["i:74856"] = {
+			["name"] = "Jade Lungfish",
 		},
 		["i:3577"] = {
 			["name"] = "Gold Bar",
@@ -30979,17 +30979,17 @@ TradeSkillMaster_CraftingDB = {
 		["i:62778"] = {
 			["name"] = "Toughened Flesh",
 		},
+		["i:109145"] = {
+			["name"] = "Draenic Agility Flask",
+		},
+		["i:109129"] = {
+			["name"] = "Talador Orchid",
+		},
 		["i:33448"] = {
 			["name"] = "Runic Mana Potion",
 		},
-		["i:4382"] = {
-			["name"] = "Bronze Framework",
-		},
 		["i:53071"] = {
 			["name"] = "Algaefin Rockfish",
-		},
-		["i:41510"] = {
-			["name"] = "Bolt of Frostweave",
 		},
 		["i:13759"] = {
 			["name"] = "Raw Nightfin Snapper",
@@ -30998,8 +30998,9 @@ TradeSkillMaster_CraftingDB = {
 			["name"] = "Living Essence",
 			["customValue"] = "min(dbmarket, vendorbuy, convert(dbmarket))",
 		},
-		["i:36916"] = {
-			["name"] = "Cobalt Bar",
+		["i:7076"] = {
+			["name"] = "Essence of Earth",
+			["customValue"] = "min(dbmarket, vendorbuy, convert(dbmarket))",
 		},
 		["i:7974"] = {
 			["name"] = "Zesty Clam Meat",
@@ -31014,14 +31015,14 @@ TradeSkillMaster_CraftingDB = {
 		["i:23436"] = {
 			["name"] = "Living Ruby",
 		},
-		["i:72104"] = {
-			["name"] = "Living Steel",
+		["i:5635"] = {
+			["name"] = "Sharp Claw",
 		},
-		["i:4603"] = {
-			["name"] = "Raw Spotted Yellowtail",
+		["i:109147"] = {
+			["name"] = "Draenic Intellect Flask",
 		},
-		["i:23440"] = {
-			["name"] = "Dawnstone",
+		["i:7005"] = {
+			["name"] = "Skinning Knife",
 		},
 		["i:109123"] = {
 			["name"] = "Crescent Oil",
@@ -31032,14 +31033,14 @@ TradeSkillMaster_CraftingDB = {
 		["i:13757"] = {
 			["name"] = "Lightning Eel",
 		},
-		["i:21024"] = {
-			["name"] = "Chimaerok Tenderloin",
+		["i:22457"] = {
+			["name"] = "Primal Mana",
 		},
 		["i:22792"] = {
 			["name"] = "Nightmare Vine",
 		},
-		["i:41810"] = {
-			["name"] = "Fangtooth Herring",
+		["i:115803"] = {
+			["name"] = "Critical Strike Taladite",
 		},
 		["i:7069"] = {
 			["name"] = "Elemental Air",
@@ -31050,14 +31051,14 @@ TradeSkillMaster_CraftingDB = {
 		["i:3818"] = {
 			["name"] = "Fadeleaf",
 		},
-		["i:62791"] = {
-			["name"] = "Blood Shrimp",
+		["i:74838"] = {
+			["name"] = "Raw Crab Meat",
 		},
-		["i:36926"] = {
-			["name"] = "Shadow Crystal",
+		["i:3356"] = {
+			["name"] = "Kingsblood",
 		},
-		["i:4400"] = {
-			["name"] = "Heavy Stock",
+		["i:3575"] = {
+			["name"] = "Iron Bar",
 		},
 		["i:7078"] = {
 			["name"] = "Essence of Fire",
@@ -31066,8 +31067,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:43013"] = {
 			["name"] = "Chilled Meat",
 		},
-		["i:60224"] = {
-			["name"] = "Handful of Obsidium Bolts",
+		["i:62782"] = {
+			["name"] = "Dragon Flank",
 		},
 		["i:27435"] = {
 			["name"] = "Figluster's Mudfish",
@@ -31100,11 +31101,11 @@ TradeSkillMaster_CraftingDB = {
 		["i:41806"] = {
 			["name"] = "Musselback Sculpin",
 		},
-		["i:3575"] = {
-			["name"] = "Iron Bar",
+		["i:5465"] = {
+			["name"] = "Small Spider Leg",
 		},
-		["i:36930"] = {
-			["name"] = "Monarch Topaz",
+		["i:4400"] = {
+			["name"] = "Heavy Stock",
 		},
 		["i:34057"] = {
 			["name"] = "Abyss Crystal",
@@ -31115,30 +31116,29 @@ TradeSkillMaster_CraftingDB = {
 		["i:62786"] = {
 			["name"] = "Cocoa Beans",
 		},
-		["i:22447"] = {
-			["name"] = "Lesser Planar Essence",
+		["i:40195"] = {
+			["name"] = "Pygmy Oil",
 		},
-		["i:41803"] = {
-			["name"] = "Rockfin Grouper",
+		["i:58265"] = {
+			["name"] = "Highland Pomegranate",
 		},
 		["i:52188"] = {
 			["name"] = "Jeweler's Setting",
 		},
-		["i:62782"] = {
-			["name"] = "Dragon Flank",
+		["i:1179"] = {
+			["name"] = "Ice Cold Milk",
 		},
-		["i:2324"] = {
-			["name"] = "Bleach",
+		["i:14047"] = {
+			["name"] = "Runecloth",
 		},
 		["i:74859"] = {
 			["name"] = "Emperor Salmon",
 		},
-		["i:159"] = {
-			["name"] = "Refreshing Spring Water",
+		["i:74845"] = {
+			["name"] = "Ginseng",
 		},
-		["i:21884"] = {
-			["name"] = "Primal Fire",
-			["customValue"] = "min(dbmarket, vendorbuy, convert(dbmarket))",
+		["i:43102"] = {
+			["name"] = "Frozen Orb",
 		},
 		["i:4385"] = {
 			["name"] = "Green Tinted Goggles",
@@ -31146,14 +31146,17 @@ TradeSkillMaster_CraftingDB = {
 		["i:74834"] = {
 			["name"] = "Mushan Ribs",
 		},
-		["i:67229"] = {
-			["name"] = "Stag Flank",
-		},
-		["i:52722"] = {
-			["name"] = "Maelstrom Crystal",
+		["i:39683"] = {
+			["name"] = "Froststeel Tube",
 		},
 		["i:11174"] = {
 			["name"] = "Lesser Nether Essence",
+		},
+		["i:77467"] = {
+			["name"] = "Ghost Iron Bolts",
+		},
+		["i:115804"] = {
+			["name"] = "Haste Taladite",
 		},
 		["i:33823"] = {
 			["name"] = "Bloodfin Catfish",
@@ -31162,9 +31165,6 @@ TradeSkillMaster_CraftingDB = {
 			["name"] = "Taladite Crystal",
 			["customValue"] = "(50*dbmarket(item:109118)+10*dbmarket(item:109119))/(6*1+5)",
 		},
-		["i:58265"] = {
-			["name"] = "Highland Pomegranate",
-		},
 		["i:113264"] = {
 			["name"] = "Sorcerous Air",
 			["customValue"] = "3g",
@@ -31172,8 +31172,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:23427"] = {
 			["name"] = "Eternium Ore",
 		},
-		["i:1179"] = {
-			["name"] = "Ice Cold Milk",
+		["i:72238"] = {
+			["name"] = "Golden Lotus",
 		},
 		["i:12363"] = {
 			["name"] = "Arcane Crystal",
@@ -31184,8 +31184,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:109140"] = {
 			["name"] = "Blind Lake Sturgeon Flesh",
 		},
-		["i:10502"] = {
-			["name"] = "Spellpower Goggles Xtreme",
+		["i:52722"] = {
+			["name"] = "Maelstrom Crystal",
 		},
 		["i:12205"] = {
 			["name"] = "White Spider Meat",
@@ -31193,8 +31193,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:21842"] = {
 			["name"] = "Bolt of Imbued Netherweave",
 		},
-		["i:74845"] = {
-			["name"] = "Ginseng",
+		["i:74644"] = {
+			["name"] = "Swirling Mist Soup",
 		},
 		["i:74250"] = {
 			["name"] = "Mysterious Essence",
@@ -31203,8 +31203,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:6889"] = {
 			["name"] = "Small Egg",
 		},
-		["i:72238"] = {
-			["name"] = "Golden Lotus",
+		["i:67229"] = {
+			["name"] = "Stag Flank",
 		},
 		["i:42225"] = {
 			["name"] = "Dragon's Eye",
@@ -31237,8 +31237,8 @@ TradeSkillMaster_CraftingDB = {
 			["Alchemy"] = false,
 		},
 	},
-	["g@ @showingDefaultFrame"] = false,
-	["g@ @ignoreCDCraftCost"] = true,
+	["f@Alliance - Sisters of Elune@disableCheckBox"] = false,
+	["f@Alliance - Sisters of Elune@ignoreIntermediate"] = false,
 	["f@Alliance - Sisters of Elune@professionScanCache"] = {
 		["GhiaccioliFirst Aid"] = {
 			["numTradeSkills"] = 15,
@@ -31250,7 +31250,7 @@ TradeSkillMaster_CraftingDB = {
 		},
 		["BracnarEnchanting"] = {
 			["numTradeSkills"] = 393,
-			["scanTime"] = 1455893195,
+			["scanTime"] = 1456116557,
 		},
 		["UldarisJewelcrafting"] = {
 			["numTradeSkills"] = 453,
@@ -31262,7 +31262,7 @@ TradeSkillMaster_CraftingDB = {
 		},
 		["ClothgarFirst Aid"] = {
 			["numTradeSkills"] = 3,
-			["scanTime"] = 1455893014,
+			["scanTime"] = 1456116457,
 		},
 		["UldarisLeatherworking"] = {
 			["numTradeSkills"] = 63,
@@ -31282,7 +31282,7 @@ TradeSkillMaster_CraftingDB = {
 		},
 		["BracnarAlchemy"] = {
 			["numTradeSkills"] = 385,
-			["scanTime"] = 1455133266,
+			["scanTime"] = 1456116724,
 		},
 	},
 	["g@ @ignoreGuilds"] = {
