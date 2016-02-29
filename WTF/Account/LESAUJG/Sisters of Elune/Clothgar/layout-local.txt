@@ -1,8 +1,1 @@
 Version: 1
-Frame: BaudManifestDisplay1
-FrameLevel: 18
-Anchor: RIGHT
-X: -61
-Y: -85
-W: 250
-H: 417
