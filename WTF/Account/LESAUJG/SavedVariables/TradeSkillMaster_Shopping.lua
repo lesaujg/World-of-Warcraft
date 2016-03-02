@@ -28,25 +28,25 @@ TradeSkillMaster_ShoppingDB = {
 		["auction"] = true,
 	},
 	["g@ @sniperVendorPrice"] = true,
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @savedSearches"] = {
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1456695776,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
+			["lastSearch"] = 1456898919,
+			["name"] = "universal",
+			["filter"] = "universal",
 		}, -- [1]
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1456537344,
-			["name"] = "universal",
-			["filter"] = "universal",
+			["lastSearch"] = 1456898907,
+			["name"] = "arcane c",
+			["filter"] = "arcane c",
 		}, -- [2]
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1456537335,
-			["name"] = "arcane c",
-			["filter"] = "arcane c",
+			["lastSearch"] = 1456898893,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
 		}, -- [3]
 		{
 			["searchMode"] = "normal",
@@ -133,7 +133,7 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "saberfish",
 		}, -- [17]
 	},
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @maxDeSearchLvl"] = 735,
 	["g@ @minDeSearchLvl"] = 1,
