@@ -43,99 +43,99 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @savedSearches"] = {
 		{
 			["searchMode"] = "normal",
+			["lastSearch"] = 1457101076,
+			["name"] = "frostweed",
+			["filter"] = "frostweed",
+		}, -- [1]
+		{
+			["searchMode"] = "normal",
 			["lastSearch"] = 1456980722,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
-		}, -- [1]
+		}, -- [2]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1456980711,
 			["name"] = "arcane c",
 			["filter"] = "arcane c",
-		}, -- [2]
+		}, -- [3]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1456980705,
 			["name"] = "universal",
 			["filter"] = "universal",
-		}, -- [3]
+		}, -- [4]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1455461471,
 			["name"] = "blackrock ore",
 			["filter"] = "blackrock ore",
-		}, -- [4]
+		}, -- [5]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1455460805,
 			["name"] = "fireweed",
 			["filter"] = "fireweed",
-		}, -- [5]
+		}, -- [6]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1455133723,
 			["name"] = "raw beast",
 			["filter"] = "raw beast",
-		}, -- [6]
+		}, -- [7]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1453693021,
 			["name"] = "hexweave bag",
 			["filter"] = "hexweave bag",
-		}, -- [7]
+		}, -- [8]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1453692479,
 			["name"] = "sorcerous",
 			["filter"] = "sorcerous",
-		}, -- [8]
+		}, -- [9]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1453006657,
 			["name"] = "Mounts/Miscellaneous/Mount/usable",
 			["filter"] = "Mounts/Miscellaneous/Mount/usable",
-		}, -- [9]
+		}, -- [10]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1453005351,
 			["name"] = "essence of air",
 			["filter"] = "essence of air",
-		}, -- [10]
+		}, -- [11]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452570334,
 			["name"] = "Primal fire",
 			["filter"] = "Primal fire",
-		}, -- [11]
+		}, -- [12]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452570327,
 			["name"] = "Primal might",
 			["filter"] = "Primal might",
-		}, -- [12]
+		}, -- [13]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452565837,
 			["name"] = "flask",
 			["filter"] = "flask",
-		}, -- [13]
+		}, -- [14]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452471365,
 			["name"] = "legion",
 			["filter"] = "legion",
-		}, -- [14]
+		}, -- [15]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1451421774,
 			["name"] = "temporal",
 			["filter"] = "temporal",
-		}, -- [15]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1450676744,
-			["name"] = "frostweed",
-			["filter"] = "frostweed",
 		}, -- [16]
 		{
 			["searchMode"] = "normal",
