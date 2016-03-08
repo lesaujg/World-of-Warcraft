@@ -8,7 +8,7 @@
 ------------------------------------------------------------
 
 
-PawnVersion = 1.923
+PawnVersion = 1.924
 
 -- Pawn requires this version of VgerCore:
 local PawnVgerCoreVersionRequired = 1.09
@@ -208,6 +208,7 @@ function PawnInitialize()
 	hooksecurefunc(GameTooltip, "SetBuybackItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetBuybackItem", ...) end)
 	hooksecurefunc(GameTooltip, "SetExistingSocketGem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetExistingSocketGem", ...) end)
 	hooksecurefunc(GameTooltip, "SetGuildBankItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetGuildBankItem", ...) end)
+	hooksecurefunc(GameTooltip, "SetHeirloomByItemID", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetHeirloomByItemID", ...) end)
 	hooksecurefunc(GameTooltip, "SetHyperlink", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetHyperlink", ...) end)
 	hooksecurefunc(GameTooltip, "SetInboxItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetInboxItem", ...) end)
 	hooksecurefunc(GameTooltip, "SetInventoryItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetInventoryItem", ...) end)

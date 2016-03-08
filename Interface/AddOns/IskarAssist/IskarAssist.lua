@@ -34,7 +34,7 @@ local anzu_texture
 local player_class
 local block_backdrop_eye = {bgFile = [[Interface\RaidFrame\Raid-Bar-Hp-Fill]], tile = true, tileSize = 16, insets = {left = 0, right = 0, top = 0, bottom = 0},
 edgeFile = "Interface\\AddOns\\IskarAssist\\border_2", edgeSize = 20}
-local iskar_version = "v0.16.4e"
+local iskar_version = "v0.16.6b"
 
 local iskar_encounter_id = 1788 --iskar
 local iskar_npcid = 90316 --iskar
@@ -158,6 +158,7 @@ local config_table = {
 	}
 }
 local IKA = DF:CreateAddOn ("ShadowLordIskarAssist", "IskarAssistDB", config_table)
+IKA.MaxGroups = 6
 
 function IKA:ScheduleCreateFrames (show)
 	if (UnitAffectingCombat ("player") or InCombatLockdown()) then
@@ -800,7 +801,7 @@ function IKA:CreateFrames (show_after_cretion)
 	end
 	
 	function f:BuildInGroupOrder (groups)
-		for g = 1, 6 do
+		for g = 1, IKA.MaxGroups do
 			local a = 0
 			for i = 1, GetNumGroupMembers() do
 				local _, _, subgroup = GetRaidRosterInfo (i)
@@ -858,7 +859,7 @@ function IKA:CreateFrames (show_after_cretion)
 
 			for i = 1, GetNumGroupMembers() do
 				local name, rank, subgroup, level, class, fileName, zone, online, isDead, role, isML, assignedRole = GetRaidRosterInfo (i)
-				if (subgroup < 7) then
+				if (subgroup < (IKA.MaxGroups+1)) then
 					local unitid = "raid" .. i
 					local fullname = GetUnitName (unitid, true)
 					tinsert (allplayers, fullname)
@@ -2269,6 +2270,18 @@ function SlashCmdList.IskarAssist (msg, editbox)
 	if (command == "users") then
 		IKA:GetUserList()
 	
+	elseif (command == "maxgroups") then
+		IKA.MaxGroups = tonumber (rest) or 6
+		if (IKA.MaxGroups < 2) then
+			IKA.MaxGroups = 2
+		elseif (IKA.MaxGroups > 8) then
+			IKA.MaxGroups = 8
+		end
+		print ("|cFFFFAA00Iskar Assist|r:", "max groups set to: ", IKA.MaxGroups)
+		print ("|cFFFFAA00Iskar Assist|r:", "max groups isn't saving at the moment, re-run this command again after a /reload.")
+		print ("|cFFFFAA00Iskar Assist|r:", "we are working to make it a fixed option, thank you!")
+		f:SortGroups()
+	
 	elseif (command == "options") then
 		if (f) then
 			f.OpenOptionsPanel()
@@ -2290,6 +2303,7 @@ function SlashCmdList.IskarAssist (msg, editbox)
 		print ("|cFFFFAA00Iskar Assist|r:", "/iskar |cFFFFFF00users|r: show who in the raid group is using this addon.")
 		print ("|cFFFFAA00Iskar Assist|r:", "/iskar |cFFFFFF00resetpos|r: reset the frame position.")
 		print ("|cFFFFAA00Iskar Assist|r:", "/iskar |cFFFFFF00options|r: open options panel.")
+		print ("|cFFFFAA00Iskar Assist|r:", "/iskar |cFFFFFF00maxgroups <amount>|r: set the max groups shown.")
 
 		if (not f) then
 			IKA:ScheduleCreateFrames (true)

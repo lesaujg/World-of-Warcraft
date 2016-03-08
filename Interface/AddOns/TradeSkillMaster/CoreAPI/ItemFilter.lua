@@ -9,7 +9,7 @@
 -- This file contains APIs for advanced item filtering
 
 local TSM = select(2, ...)
-local private = {classLookup={}, subClassLookup={}}
+local private = {classLookup={}, subClassLookup={}, equipSlotLookup={}}
 
 
 
@@ -48,6 +48,8 @@ function TSMAPI.ItemFilter:Parse(str)
 			filterInfo.class = private:ItemClassToIndex(part)
 		elseif private:ItemSubClassToIndex(part, filterInfo.class) then
 			filterInfo.subClass = private:ItemSubClassToIndex(part, filterInfo.class)
+		elseif private:ItemEquipSlotToGlobal(part) then
+			filterInfo.equipSlot = private:ItemEquipSlotToGlobal(part)
 		elseif private:ItemRarityToIndex(part) then
 			filterInfo.rarity = private:ItemRarityToIndex(part)
 		elseif TSMAPI:MoneyFromString(part) then
@@ -70,7 +72,7 @@ function TSMAPI.ItemFilter:Parse(str)
 			return
 		end
 	end
-	
+
 	-- setup some defaults
 	filterInfo.str = filterInfo.str or ""
 	filterInfo.escapedStr = TSMAPI.Util:StrEscape(filterInfo.str)
@@ -84,20 +86,20 @@ function TSMAPI.ItemFilter:Parse(str)
 end
 
 function TSMAPI.ItemFilter:MatchesFilter(filterInfo, item, price)
-	local name, _, iRarity, ilvl, lvl, class, subClass = TSMAPI.Item:GetInfo(item)
-	
+	local name, _, iRarity, ilvl, lvl, class, subClass, _, equipSlot = TSMAPI.Item:GetInfo(item)
+
 	-- check the name
 	if not strfind(strlower(name), filterInfo.escapedStr) then
 		return
 	elseif filterInfo.exactOnly and name ~= filterInfo.str then
 		return
 	end
-	
+
 	-- check the rarity
 	if filterInfo.rarity and iRarity ~= filterInfo.rarity then
 		return
 	end
-	
+
 	-- check the item level
 	if ilvl < filterInfo.minILevel or ilvl > filterInfo.maxILevel then
 		return
@@ -107,25 +109,30 @@ function TSMAPI.ItemFilter:MatchesFilter(filterInfo, item, price)
 	if lvl < filterInfo.minLevel or lvl > filterInfo.maxLevel then
 		return
 	end
-	
+
 	-- check the item class
 	class = private:ItemClassToIndex(class) or 0
 	if filterInfo.class and class ~= filterInfo.class then
 		return
 	end
-	
+
 	-- check the item subclass
 	subClass = private:ItemSubClassToIndex(subClass, class) or 0
 	if filterInfo.subClass and subClass ~= filterInfo.subClass then
 		return
 	end
-	
+
+	-- check the equip slot
+	if filterInfo.equipSlot and private.equipSlotLookup[equipSlot] and equipSlot ~= filterInfo.equipSlot then
+		return
+	end
+
 	-- check the price
 	price = price or 0
 	if price < filterInfo.minPrice or price > filterInfo.maxPrice then
 		return
 	end
-	
+
 	-- it passed!
 	return true
 end
@@ -142,6 +149,12 @@ do
 	for i in pairs(private.classLookup) do
 		private.subClassLookup[i] = {GetAuctionItemSubClasses(i)}
 	end
+
+	local auctionInvTypes = {GetAuctionInvTypes(2,1)}
+	for i=1, #auctionInvTypes, 2 do
+		TSMAPI:Assert(type(auctionInvTypes[i]) == "string")
+		private.equipSlotLookup[auctionInvTypes[i]] = strlower(_G[auctionInvTypes[i]])
+	end
 end
 
 
@@ -149,6 +162,15 @@ end
 -- ============================================================================
 -- Helper Functions
 -- ============================================================================
+
+function private:ItemEquipSlotToGlobal(str)
+	str = strlower(str)
+	for equipSlot, equipSlotStr in pairs(private.equipSlotLookup) do
+		if str == private.equipSlotLookup[equipSlot] then
+			return equipSlot
+		end
+	end
+end
 
 function private:ItemClassToIndex(str)
 	for i, class in pairs(private.classLookup) do

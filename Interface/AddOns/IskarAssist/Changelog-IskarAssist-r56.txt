@@ -1,6 +1,82 @@
+2016-03-05  Tercioo  <Tercioo>
+
+[43da715ec23a] [tip]
+* IskarAssist.lua, Libs/AceSerializer-3.0/AceSerializer-3.0.lua, Libs/AceSerializer-3.0/AceSerializer-3.0.xml:
+
+- Trying to fix the miss library problem.
+
+
+2016-03-01  Tercioo  <Tercioo>
+
+[552381476118]
+* IskarAssist.lua:
+
+- added the maxgroups description when using the slash command /iskar.
+
+
+2016-02-25  Tercioo  <Tercioo>
+
+[4f85c70b7ecc]
+* .pkgmeta, IskarAssist.lua:
+
+- make sure the group limit isn't bigger than 8 and lower than 2.
+
+
+2016-02-24  Tercioo  <Tercioo>
+
+[d6a300aba07e]
+* .pkgmeta, IskarAssist.lua:
+
+- warning about the non saving maxgroups.
+
+
+2016-02-23  Tercioo  <Tercioo>
+
+[a4036137e41a]
+* IskarAssist.lua, IskarAssist.toc:
+
+- tagging as relelase v0.16.4n.
+
+
+2016-02-20  Tercioo  <Tercioo>
+
+[b854c37170a8]
+* IskarAssist.lua:
+
+- added command /iskar maxgroups X
+
+
+2016-02-19  Tercioo  <Tercioo>
+
+[d5c407017399]
+* Libs/DF/slider.lua, Libs/libs.xml:
+
+- fix a startup error.
+
+
+2016-02-12  Tercioo  <Tercioo>
+
+[2ff9867fa8c0]
+* RaidAssist.toc:
+
+- raidassist integration.
+
+
+[af5fd20336cc]
+* IskarAssist.lua:
+
+- raidassist integration.
+
+
+[f60c89b6484d]
+* API.lua, IskarAssist.toc, Libs/LibGroupInSpecT-1.1/LibGroupInSpecT-1.1.lua, Libs/LibGroupInSpecT-1.1/lib.xml, Libs/libs.xml, Loot.lua, OptionsAnchor.lua, OptionsPanel.lua, RaidAssist.lua, RaidAssist.toc, Templates.lua, fonts/Accidental Presidency.ttf, locales/enUS.lua, media/attendance_menu_icon.tga, media/bar_serenity.tga, media/bar_skyline.tga, media/border_2.tga, plugins/attendance.lua, plugins/battleres.lua, plugins/bislist.lua, plugins/boards.lua, plugins/cooldowns.lua, plugins/invite.lua, plugins/meters.lua, plugins/notes.lua, plugins/playercheck.lua, plugins/raidbislist.lua:
+
+- raidassist integration.
+
+
 2016-02-04  Tercioo  <Tercioo>
 
-[a238e4892422] [tip]
+[a238e4892422]
 * IskarAssist.lua:
 
 - iskar assist title text fix.
@@ -154,92 +230,5 @@
 * IskarAssist.lua:
 
 - stack number was a bit to high.
-
-
-2015-08-05  Tercio  <Tercio>
-
-[bbadc16c3831]
-* IskarAssist.lua:
-
-- increased the stack font size.
-- removed some debug lines.
-
-
-2015-08-04  Tercio  <Tercio>
-
-[0a41e62d6f85]
-* IskarAssist.lua:
-
-v0.15 release
-
-
-2015-07-30  Tercio  <Tercio>
-
-[c7925503470d]
-* IskarAssist.lua:
-
-- Fixed the purple border for the chains debuff.
-- Health bars now works when the player is affected by phantasmal wounds.
-- Added options for change the strata level.
-- Added stack count for the radiance of anzu debuff.
-
-
-2015-07-26  Tercio  <Tercio>
-
-[0995ebcc10c8]
-* IskarAssist.lua:
-
-- improved the archimonde radar.
-- removed the cooldown bars for fel bomb and conduit.
-- details framework update.
-
-
-[61082dfeb984]
-* IskarAssist.lua, Libs/DF/addon.lua, Libs/DF/button.lua, Libs/DF/colors.lua, Libs/DF/cooltip.lua, Libs/DF/dropdown.lua, Libs/DF/fw.lua, Libs/DF/help.lua, Libs/DF/label.lua, Libs/DF/normal_bar.lua, Libs/DF/panel.lua, Libs/DF/picture.lua, Libs/DF/pictureedit.lua, Libs/DF/scrollbar.lua, Libs/DF/slider.lua, Libs/DF/split_bar.lua, Libs/DF/textentry.lua, gl/gl2.lua:
-
-- improved the archimonde radar.
-- removed the cooldown bars for fel bomb and conduit.
-- details framework update.
-
-
-2015-07-22  Tercio  <Tercio>
-
-[80968bedc123]
-* IskarAssist.lua:
-
-- fixed an error with the new cooldown timers.
-
-
-[e56d339c06d8]
-* IskarAssist.lua:
-
-- fixed fel condiut timer when the encounter is gone.
-
-
-2015-07-21  Tercio  <Tercio>
-
-[c492fa7a797c]
-* IskarAssist.lua, IskarAssist.toc, gl/1-1.tga, gl/1-128.tga, gl/1-16.tga, gl/1-2.tga, gl/1-32.tga, gl/1-4.tga, gl/1-64.tga, gl/1-8.tga, gl/balls.tga, gl/gl2.lua, gl/line.tga, gl/sline.tga, gl/smallline.tga, gl/thinline.tga, gl/triangle.tga:
-
-- added a radar for archimonde encounter.
-- added cooldown bars for fel conduit and bomb drop.
-
-
-2015-07-20  Tercio  <Tercio>
-
-[cb4fe43431fa]
-* IskarAssist.lua, Libs/DF/all_addons.psd, Libs/DF/icons.psd:
-
-- added a close button for users panel.
-- removed zone_changed event.
-- few improvements on show/hide rules.
-
-
-2015-07-18  Tercio  <Tercio>
-
-[3da7f901fe48]
-* IskarAssist.lua, Libs/DF/button.lua, Libs/DF/panel.lua:
-
-- update on lib details framework.
 
 

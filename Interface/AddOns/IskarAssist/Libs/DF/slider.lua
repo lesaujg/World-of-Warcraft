@@ -17,12 +17,12 @@ local SharedMedia = LibStub:GetLibrary("LibSharedMedia-3.0")
 
 local cleanfunction = function() end
 local APISliderFunctions = false
-local SliderMetaFunctions = {}
+DFSliderMetaFunctions = DFSliderMetaFunctions or {}
 
 ------------------------------------------------------------------------------------------------------------
 --> metatables
 
-	SliderMetaFunctions.__call = function (_table, value)
+	DFSliderMetaFunctions.__call = function (_table, value)
 		if (not value) then
 			if (_table.isSwitch) then
 			
@@ -97,7 +97,7 @@ local SliderMetaFunctions = {}
 		["value"] = gmember_value,
 	}
 
-	SliderMetaFunctions.__index = function (_table, _member_requested)
+	DFSliderMetaFunctions.__index = function (_table, _member_requested)
 
 		local func = get_members_function_index [_member_requested]
 		if (func) then
@@ -109,7 +109,7 @@ local SliderMetaFunctions = {}
 			return fromMe
 		end
 		
-		return SliderMetaFunctions [_member_requested]
+		return DFSliderMetaFunctions [_member_requested]
 	end
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -175,7 +175,7 @@ local SliderMetaFunctions = {}
 		["value"] = smember_value,
 	}
 	
-	SliderMetaFunctions.__newindex = function (_table, _key, _value)
+	DFSliderMetaFunctions.__newindex = function (_table, _key, _value)
 		local func = set_members_function_index [_key]
 		if (func) then
 			return func (_table, _value)
@@ -188,28 +188,28 @@ local SliderMetaFunctions = {}
 --> methods
 
 --> show & hide
-	function SliderMetaFunctions:IsShown()
+	function DFSliderMetaFunctions:IsShown()
 		return self.slider:IsShown()
 	end
-	function SliderMetaFunctions:Show()
+	function DFSliderMetaFunctions:Show()
 		return self.slider:Show()
 	end
-	function SliderMetaFunctions:Hide()
+	function DFSliderMetaFunctions:Hide()
 		return self.slider:Hide()
 	end
 	
 --> fixed value
-	function SliderMetaFunctions:SetFixedParameter (value)
+	function DFSliderMetaFunctions:SetFixedParameter (value)
 		_rawset (self, "FixedValue", value)
 	end
 	
 --> set value
-	function SliderMetaFunctions:SetValue (value)
+	function DFSliderMetaFunctions:SetValue (value)
 		return self (value)
 	end
 	
 -- thumb size
-	function SliderMetaFunctions:SetThumbSize (w, h)
+	function DFSliderMetaFunctions:SetThumbSize (w, h)
 		if (not w) then
 			w = self.thumb:GetWidth()
 		end
@@ -221,7 +221,7 @@ local SliderMetaFunctions = {}
 	
 	
 -- setpoint
-	function SliderMetaFunctions:SetPoint (v1, v2, v3, v4, v5)
+	function DFSliderMetaFunctions:SetPoint (v1, v2, v3, v4, v5)
 		v1, v2, v3, v4, v5 = DF:CheckPoints (v1, v2, v3, v4, v5, self)
 		if (not v1) then
 			print ("Invalid parameter for SetPoint")
@@ -231,7 +231,7 @@ local SliderMetaFunctions = {}
 	end
 
 -- sizes
-	function SliderMetaFunctions:SetSize (w, h)
+	function DFSliderMetaFunctions:SetSize (w, h)
 		if (w) then
 			self.slider:SetWidth (w)
 		end
@@ -241,22 +241,22 @@ local SliderMetaFunctions = {}
 	end
 	
 -- tooltip
-	function SliderMetaFunctions:SetTooltip (tooltip)
+	function DFSliderMetaFunctions:SetTooltip (tooltip)
 		if (tooltip) then
 			return _rawset (self, "have_tooltip", tooltip)
 		else
 			return _rawset (self, "have_tooltip", nil)
 		end
 	end
-	function SliderMetaFunctions:GetTooltip()
+	function DFSliderMetaFunctions:GetTooltip()
 		return _rawget (self, "have_tooltip")
 	end
 	
 -- frame levels
-	function SliderMetaFunctions:GetFrameLevel()
+	function DFSliderMetaFunctions:GetFrameLevel()
 		return self.slider:GetFrameLevel()
 	end
-	function SliderMetaFunctions:SetFrameLevel (level, frame)
+	function DFSliderMetaFunctions:SetFrameLevel (level, frame)
 		if (not frame) then
 			return self.slider:SetFrameLevel (level)
 		else
@@ -266,10 +266,10 @@ local SliderMetaFunctions = {}
 	end
 
 -- frame stratas
-	function SliderMetaFunctions:SetFrameStrata()
+	function DFSliderMetaFunctions:SetFrameStrata()
 		return self.slider:GetFrameStrata()
 	end
-	function SliderMetaFunctions:SetFrameStrata (strata)
+	function DFSliderMetaFunctions:SetFrameStrata (strata)
 		if (_type (strata) == "table") then
 			self.slider:SetFrameStrata (strata:GetFrameStrata())
 		else
@@ -278,10 +278,10 @@ local SliderMetaFunctions = {}
 	end
 	
 -- enabled
-	function SliderMetaFunctions:IsEnabled()
+	function DFSliderMetaFunctions:IsEnabled()
 		return not _rawget (self, "lockdown")
 	end
-	function SliderMetaFunctions:Enable()
+	function DFSliderMetaFunctions:Enable()
 		self.slider:Enable()
 		if (not self.lock_texture) then
 			DF:NewImage (self, [[Interface\PetBattles\PetBattle-LockIcon]], 12, 12, "overlay", {0.0546875, 0.9453125, 0.0703125, 0.9453125}, "lock_texture", "$parentLockTexture")
@@ -294,7 +294,7 @@ local SliderMetaFunctions = {}
 		return _rawset (self, "lockdown", false)
 	end
 	
-	function SliderMetaFunctions:Disable()
+	function DFSliderMetaFunctions:Disable()
 	
 		self.slider:Disable()
 		self.slider.amt:Hide()
@@ -311,7 +311,7 @@ local SliderMetaFunctions = {}
 	end
 
 --> hooks
-	function SliderMetaFunctions:SetHook (hookType, func)
+	function DFSliderMetaFunctions:SetHook (hookType, func)
 		if (func) then
 			_rawset (self, hookType.."Hook", func)
 		else
@@ -469,23 +469,23 @@ local SliderMetaFunctions = {}
 	local plus_button_script = function()
 
 		local current = f.host.value
-		local editbox = SliderMetaFunctions.editbox_typevalue
+		local editbox = DFSliderMetaFunctions.editbox_typevalue
 		
 		if (f.host.fine_tuning) then
 			f.host:SetValue (current + f.host.fine_tuning)
-			if (editbox and SliderMetaFunctions.editbox_typevalue:IsShown()) then
-				SliderMetaFunctions.editbox_typevalue:SetText (tostring (string.format ("%.2f", current + f.host.fine_tuning)))
+			if (editbox and DFSliderMetaFunctions.editbox_typevalue:IsShown()) then
+				DFSliderMetaFunctions.editbox_typevalue:SetText (tostring (string.format ("%.2f", current + f.host.fine_tuning)))
 			end
 		else
 			if (f.host.useDecimals) then
 				f.host:SetValue (current + 0.1)
-				if (editbox and SliderMetaFunctions.editbox_typevalue:IsShown()) then
-					SliderMetaFunctions.editbox_typevalue:SetText (string.format ("%.2f", current + 0.1))
+				if (editbox and DFSliderMetaFunctions.editbox_typevalue:IsShown()) then
+					DFSliderMetaFunctions.editbox_typevalue:SetText (string.format ("%.2f", current + 0.1))
 				end
 			else
 				f.host:SetValue (current + 1)
-				if (editbox and SliderMetaFunctions.editbox_typevalue:IsShown()) then
-					SliderMetaFunctions.editbox_typevalue:SetText (tostring (math.floor (current + 1)))
+				if (editbox and DFSliderMetaFunctions.editbox_typevalue:IsShown()) then
+					DFSliderMetaFunctions.editbox_typevalue:SetText (tostring (math.floor (current + 1)))
 				end
 			end
 		end
@@ -521,23 +521,23 @@ local SliderMetaFunctions = {}
 	
 	local minor_button_script = function()
 		local current = f.host.value
-		local editbox = SliderMetaFunctions.editbox_typevalue
+		local editbox = DFSliderMetaFunctions.editbox_typevalue
 		
 		if (f.host.fine_tuning) then
 			f.host:SetValue (current - f.host.fine_tuning)
-			if (editbox and SliderMetaFunctions.editbox_typevalue:IsShown()) then
-				SliderMetaFunctions.editbox_typevalue:SetText (tostring (string.format ("%.2f", current - f.host.fine_tuning)))
+			if (editbox and DFSliderMetaFunctions.editbox_typevalue:IsShown()) then
+				DFSliderMetaFunctions.editbox_typevalue:SetText (tostring (string.format ("%.2f", current - f.host.fine_tuning)))
 			end
 		else
 			if (f.host.useDecimals) then
 				f.host:SetValue (current - 0.1)
-				if (editbox and SliderMetaFunctions.editbox_typevalue:IsShown()) then
-					SliderMetaFunctions.editbox_typevalue:SetText (string.format ("%.2f", current - 0.1))
+				if (editbox and DFSliderMetaFunctions.editbox_typevalue:IsShown()) then
+					DFSliderMetaFunctions.editbox_typevalue:SetText (string.format ("%.2f", current - 0.1))
 				end
 			else
 				f.host:SetValue (current - 1)
-				if (editbox and SliderMetaFunctions.editbox_typevalue:IsShown()) then
-					SliderMetaFunctions.editbox_typevalue:SetText (tostring (math.floor (current - 1)))
+				if (editbox and DFSliderMetaFunctions.editbox_typevalue:IsShown()) then
+					DFSliderMetaFunctions.editbox_typevalue:SetText (tostring (math.floor (current - 1)))
 				end
 			end
 		end
@@ -568,10 +568,10 @@ local SliderMetaFunctions = {}
 		self:SetScript ("OnUpdate", on_update)
 	end)
 	
-	function SliderMetaFunctions:TypeValue()
+	function DFSliderMetaFunctions:TypeValue()
 		if (not self.isSwitch) then
 		
-			if (not SliderMetaFunctions.editbox_typevalue) then
+			if (not DFSliderMetaFunctions.editbox_typevalue) then
 			
 				local editbox = CreateFrame ("EditBox", "DetailsFrameworkSliderEditBox", UIParent)
 				
@@ -606,7 +606,7 @@ local SliderMetaFunctions = {}
 					--print ()
 				end)
 				
-				SliderMetaFunctions.editbox_typevalue = editbox
+				DFSliderMetaFunctions.editbox_typevalue = editbox
 			end
 			
 			local pvalue = self.previous_value [2]
@@ -615,21 +615,21 @@ local SliderMetaFunctions = {}
 			self.typing_value = true
 			self.typing_value_started = pvalue
 			
-			SliderMetaFunctions.editbox_typevalue:SetSize (self.width, self.height)
-			SliderMetaFunctions.editbox_typevalue:SetPoint ("center", self.widget, "center")
-			SliderMetaFunctions.editbox_typevalue:SetFocus()
-			SliderMetaFunctions.editbox_typevalue:SetParent (self.widget)
-			SliderMetaFunctions.editbox_typevalue:SetFrameLevel (self.widget:GetFrameLevel()+1)
+			DFSliderMetaFunctions.editbox_typevalue:SetSize (self.width, self.height)
+			DFSliderMetaFunctions.editbox_typevalue:SetPoint ("center", self.widget, "center")
+			DFSliderMetaFunctions.editbox_typevalue:SetFocus()
+			DFSliderMetaFunctions.editbox_typevalue:SetParent (self.widget)
+			DFSliderMetaFunctions.editbox_typevalue:SetFrameLevel (self.widget:GetFrameLevel()+1)
 			
 			if (self.useDecimals) then
-				SliderMetaFunctions.editbox_typevalue:SetText (tostring (string.format ("%.1f", self.value)))
+				DFSliderMetaFunctions.editbox_typevalue:SetText (tostring (string.format ("%.1f", self.value)))
 			else
-				SliderMetaFunctions.editbox_typevalue:SetText (tostring (math.floor (self.value)))
+				DFSliderMetaFunctions.editbox_typevalue:SetText (tostring (math.floor (self.value)))
 			end
 			
-			SliderMetaFunctions.editbox_typevalue:HighlightText()
+			DFSliderMetaFunctions.editbox_typevalue:HighlightText()
 			
-			SliderMetaFunctions.editbox_typevalue:Show()
+			DFSliderMetaFunctions.editbox_typevalue:Show()
 		end
 	end
 	
@@ -656,8 +656,8 @@ local SliderMetaFunctions = {}
 		end
 		
 		if (slider.MyObject.typing_value) then
-			SliderMetaFunctions.editbox_typevalue:ClearFocus()
-			SliderMetaFunctions.editbox_typevalue:SetText ("")
+			DFSliderMetaFunctions.editbox_typevalue:ClearFocus()
+			DFSliderMetaFunctions.editbox_typevalue:SetText ("")
 			slider.MyObject.typing_valu = false
 		end
 	end
@@ -904,7 +904,7 @@ function DF:NewSwitch (parent, container, name, member, w, h, ltext, rtext, defa
 	slider.Disable = switch_disable
 	slider.Enable = switch_enable
 	slider.SetAsCheckBox = set_as_checkbok
-	slider.SetTemplate = SliderMetaFunctions.SetTemplate
+	slider.SetTemplate = DFSliderMetaFunctions.SetTemplate
 	
 	if (member) then
 		parent [member] = slider
@@ -955,7 +955,7 @@ function DF:NewSwitch (parent, container, name, member, w, h, ltext, rtext, defa
 	return slider, with_label
 end
 
-function SliderMetaFunctions:SetTemplate (template)
+function DFSliderMetaFunctions:SetTemplate (template)
 
 	--slider e switch
 	if (template.width) then
@@ -1088,8 +1088,8 @@ function DF:NewSlider (parent, container, name, member, w, h, min, max, step, de
 		APISliderFunctions = true
 		local idx = getmetatable (SliderObject.slider).__index
 		for funcName, funcAddress in pairs (idx) do 
-			if (not SliderMetaFunctions [funcName]) then
-				SliderMetaFunctions [funcName] = function (object, ...)
+			if (not DFSliderMetaFunctions [funcName]) then
+				DFSliderMetaFunctions [funcName] = function (object, ...)
 					local x = loadstring ( "return _G['"..object.slider:GetName().."']:"..funcName.."(...)")
 					return x (...)
 				end
@@ -1149,7 +1149,7 @@ function DF:NewSlider (parent, container, name, member, w, h, min, max, step, de
 		SliderObject.slider:SetScript ("OnMouseUp", OnMouseUp)
 		
 		
-	_setmetatable (SliderObject, SliderMetaFunctions)
+	_setmetatable (SliderObject, DFSliderMetaFunctions)
 	
 	if (with_label) then
 		local label = DF:CreateLabel (SliderObject.slider, with_label, nil, nil, nil, "label", nil, "overlay")
