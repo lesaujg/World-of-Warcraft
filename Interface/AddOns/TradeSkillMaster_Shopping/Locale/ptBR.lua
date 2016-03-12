@@ -77,6 +77,7 @@ L["Invalid custom price source for %s. %s"] = "Fonte de preço personalizado pra
 L["Invalid Even Only Filter"] = "'Mesmo filtro apenas' inválido" -- Needs review
 L["Invalid Exact Only Filter"] = "Filtro exato inválido" -- Needs review
 L["Invalid Filter"] = "Filtro inválido"
+-- L["Invalid Item Inventory Type"] = ""
 L["Invalid Item Level"] = "Nível do item inválido"
 L["Invalid Item Rarity"] = "Raridade do item Inválido"
 L["Invalid Item SubType"] = "Subtipo do item inválido"

@@ -1,4 +1,4 @@
-local Type, Version = "WeakAurasDisplayButton", 21
+local Type, Version = "WeakAurasDisplayButton", 22
 local AceGUI = LibStub and LibStub("AceGUI-3.0", true)
 if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then return end
 
@@ -1009,7 +1009,7 @@ local function Constructor()
     loaded:SetPoint("BOTTOM", button, "BOTTOM");
     loaded:SetPoint("LEFT", icon, "RIGHT", 0, 0);
     loaded:SetNormalTexture("Interface\\BUTTONS\\UI-GuildButton-OfficerNote-Up.blp");
-    loaded:SetDisabledTexture("Interface\\BUTTONS\\UI-GuildButton-OfficerNote-Down.blp");
+    loaded:SetDisabledTexture("Interface\\BUTTONS\\UI-GuildButton-OfficerNote-Disabled.blp");
     --loaded:SetHighlightTexture("Interface\\BUTTONS\\UI-Panel-MinimizeButton-Highlight.blp");
     loaded.title = L["Loaded"];
     loaded.desc = L["This display is currently loaded"];

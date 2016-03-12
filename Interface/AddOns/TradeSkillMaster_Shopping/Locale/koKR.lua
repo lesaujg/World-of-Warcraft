@@ -77,6 +77,7 @@ L["Invalid custom price source for %s. %s"] = "잘못된 사용자 가격 출처
 L["Invalid Even Only Filter"] = "잘못된 필터" -- Needs review
 L["Invalid Exact Only Filter"] = "잘못된 필터"
 L["Invalid Filter"] = "잘못된 필터"
+-- L["Invalid Item Inventory Type"] = ""
 L["Invalid Item Level"] = "잘못된 아이템 레벨"
 L["Invalid Item Rarity"] = "잘못된 아이템 품질"
 L["Invalid Item SubType"] = "잘못된 보조 형식"

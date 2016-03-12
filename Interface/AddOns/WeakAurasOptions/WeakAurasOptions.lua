@@ -4728,8 +4728,54 @@ function WeakAuras.ReloadTriggerOptions(data)
       order = 0,
       hidden = function() return not (data.additional_triggers and #data.additional_triggers > 0) end,
       values = WeakAuras.trigger_require_types,
-      get = function() return data.disjunctive and "any" or "all" end,
-      set = function(info, v) data.disjunctive = (v == "any") end
+      get = function() return data.disjunctive end,
+      set = function(info, v) data.disjunctive = v end
+    },
+    custom_trigger_combination = {
+      type = "input",
+      name = L["Custom"],
+      order = 0.1,
+      multiline = true,
+      width = "normal",
+      hidden = function() return not (data.disjunctive == "custom") end,
+      get = function() return data.customTriggerLogic end,
+      set = function(info, v)
+      data.customTriggerLogic = v;
+        WeakAuras.Add(data);
+      end
+    },
+    custom_trigger_combination_expand = {
+      type = "execute",
+      order = 0.15,
+      name = L["Expand Text Editor"],
+      func = function()
+        WeakAuras.TextEditor(data, {"customTriggerLogic"})
+      end,
+      hidden = function() return not (data.disjunctive == "custom") end,
+    },
+    custom_trigger_combination_error = {
+      type = "description",
+      name = function()
+        if not(data.customTriggerLogic) then
+          return "";
+        end
+        local _, errorString = loadstring("return "..data.customTriggerLogic);
+        return errorString and "|cFFFF0000"..errorString or "";
+      end,
+      width = "double",
+      order = 0.2,
+      hidden = function()
+        if not(data.disjunctive == "custom" and data.customTriggerLogic) then
+          return true;
+        else
+          local loadedFunction, errorString = loadstring("return "..data.customTriggerLogic);
+          if(errorString and not loadedFunction) then
+            return false;
+          else
+            return true;
+          end
+        end
+      end
     },
     addTrigger = {
       type = "execute",
@@ -7145,7 +7191,7 @@ function WeakAuras.CreateFrame()
     if frame.window == "codereview" then
       return
     end
-    
+
     self.data = data;
 
     self.codeTree:SetTree(data);
@@ -7550,7 +7596,7 @@ function WeakAuras.CreateFrame()
     moversizer:ScaleCorners(region:GetWidth(), region:GetHeight());
 
     mover.startMoving = function()
-      WeakAuras.CancelAnimation("display", data.id, true, true, true, true, true);
+      WeakAuras.CancelAnimation(region, true, true, true, true, true);
       mover:ClearAllPoints();
       if(data.regionType == "group") then
         mover:SetPoint(mover.selfPoint, region, mover.anchorPoint, region.blx, region.bly);
@@ -7611,7 +7657,7 @@ function WeakAuras.CreateFrame()
     if(region:IsResizable()) then
       moversizer.startSizing = function(point)
         mover.isMoving = true;
-        WeakAuras.CancelAnimation("display", data.id, true, true, true, true, true);
+        WeakAuras.CancelAnimation(region, true, true, true, true, true);
         local rSelfPoint, rAnchor, rAnchorPoint, rXOffset, rYOffset = region:GetPoint(1);
         region:StartSizing(point);
         local textpoint, anchorpoint;

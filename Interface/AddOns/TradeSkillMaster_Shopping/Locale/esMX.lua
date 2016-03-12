@@ -77,6 +77,7 @@ if not L then return end
 -- L["Invalid Even Only Filter"] = ""
 -- L["Invalid Exact Only Filter"] = ""
 -- L["Invalid Filter"] = ""
+-- L["Invalid Item Inventory Type"] = ""
 -- L["Invalid Item Level"] = ""
 -- L["Invalid Item Rarity"] = ""
 -- L["Invalid Item SubType"] = ""

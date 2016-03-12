@@ -8,7 +8,7 @@
 ------------------------------------------------------------
 
 
-PawnVersion = 1.924
+PawnVersion = 1.925
 
 -- Pawn requires this version of VgerCore:
 local PawnVgerCoreVersionRequired = 1.09
@@ -2422,6 +2422,8 @@ function PawnUnenchantItemLink(ItemLink, EvenIfNotEnchanted)
 					BalefulID1 = BalefulID2
 					BalefulID2 = BalefulIDTemp
 				end
+				-- If 653 is the lower ID, it's equivalent to if it's 652.  (The only known exceptions are if it's a lower number and 653.)
+				if BalefulID1 == 653 then BalefulID1 = 652 end
 			
 				if
 					(BalefulID1 == 647 and BalefulID2 == 652) or -- ilvl 650

@@ -1,0 +1,69 @@
+tag 2.1.0.22
+777d41b0d6b9292b96f5434d1a750772ace0c545
+Benjamin Staneck <staneck@gmail.com>
+2016-03-11 14:32:06 +0100
+
+
+
+--------------------
+
+Benjamin Staneck:
+	- block macro creation
+	- Indents
+	- add LibSpellRange-1.0 to the optdeps
+	- Revert "Fix a typo"
+	This reverts commit 36fe4627673059114e694b618ddeb85d4d27bb15.
+	- Fix a typo
+Infus:
+	- Circle dynamicgroup: Fix placement of children
+	Before afbce7f696587552b0dace3650006e2a992435f6
+	numVisible was counted by code inside a
+	"if data.grow == "HORIZONTAL" or data.grow == "VERTICAL"
+	
+	That patch moved the code to be always run, but forgot to remove
+	code for the CIRCLE case that counted the children.
+	
+	Ticket-number: 491
+Benjamin Staneck:
+	- derp
+	- add LibSpellRange-1.0 to pkgmeta
+Infus:
+	- Use LibSpellInRange to check for spell in range
+	Checking with the spell name doesn't actually work reliable,
+	the library contains a map from spellnames to spell book ids,
+	which works better.
+	
+	Ticket-number: 484
+Tyler:
+	- WeakAura Ticket 480 Add capability to specify a custom trigger combination function that will be run to decide whether the overall aura is triggered based on the status of the individual triggers. This enhances the current funcitonality of ANY or ALL triggers to allow complex logic, such as "Trigger 1 AND (Trigger 2 OR Trigger 3)"
+	http://pastebin.com/Dw1nVVJs is an example aura using this change.
+	
+	Additionally, this change REMOVES the checks in Tranmission.lua:scamCheck that only showed code int the code review if the code was enabled. With this change, if their is custom code present in the WA when transmitted, the code is shown.
+	
+	remove checks in scamCheck that only showed enabled code. All code is shown in the transmitted aura
+	
+	http://pastebin.com/ki2heZzx is an example of an aura that (in today's client) would show as having no code, but after this change, exposes it has a large number of functions defined, but disabled.
+	- CancelAnimation has a different signature now
+Benjamin Staneck:
+	- also block hash_SlashCmdList
+	- also block DevTools_DumpCommand
+	- fix indenting
+	- Fix a leaked global
+	- Block SlashCmdList, too
+Infus:
+	- Circular Progress: Fix various bugs
+	Also make the background use start and end angle
+	Make the options code use the exact same code as the texture
+	And lots of tweaks I forgot
+	- Circular Progres: Fix display of 100% duration
+	Ticket-number: 486
+Benjamin Staneck:
+	- Bump minor of the widget
+Tyler:
+	- WeakAuras Ticket 482
+	correct the texture name for disabled from UI-GuildButton-OfficerNote-Down.blp to UI-GuildButton-OfficerNote-Disabled.blp
+Benjamin Staneck:
+	- Fix Show Code Button Stuck on ItemRefTooltip After Aura Import
+	Ticket: 481
+Infus:
+	- Progress Texture: Add circular progress

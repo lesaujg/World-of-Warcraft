@@ -77,6 +77,7 @@ L["Invalid custom price source for %s. %s"] = "Ungültige benutzerdefinierte Pre
 L["Invalid Even Only Filter"] = "Ungültiger Filter für 'Nur gerade'" -- Needs review
 L["Invalid Exact Only Filter"] = "Ungültiger Filter für 'Exakte Übereinstimmung'" -- Needs review
 L["Invalid Filter"] = "Ungültiger Filter" -- Needs review
+-- L["Invalid Item Inventory Type"] = ""
 L["Invalid Item Level"] = "Ungültige Gegenstandsstufe" -- Needs review
 L["Invalid Item Rarity"] = "Ungültige Seltenheitsstufe" -- Needs review
 L["Invalid Item SubType"] = "Ungültiger Untertyp" -- Needs review

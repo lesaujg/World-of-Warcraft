@@ -46,12 +46,12 @@ L["Background"] = "배경"
 L["Background Color"] = "배경 색상"
 L["Background Inset"] = "배경 축소"
 L["Background Offset"] = "배경 오프셋"
-L["Background Texture"] = "배경 텍스쳐"
+L["Background Texture"] = "배경 무늬"
 L["Bar Alpha"] = "바 투명도"
 L["Bar Color"] = "바 색상"
 L["Bar Color Settings"] = "바 색상 설정"
 L["Bar in Front"] = "바를 테두리 앞으로"
-L["Bar Texture"] = "바 텍스쳐"
+L["Bar Texture"] = "바 무늬"
 L["Battle"] = "전투"
 L["Bear"] = "곰"
 L["Berserker"] = "광폭"
@@ -104,20 +104,23 @@ L["Crop X"] = "X 자르기"
 L["Crop Y"] = "Y 자르기"
 L["Crusader"] = "성전사"
 L["Custom Code"] = "사용자 설정 코드"
-L["Custom Trigger"] = "활성 조건 사용자 설정"
-L["Custom trigger event tooltip"] = [=[사용자 설정 활성 조건을 체크할 이벤트를 선택하세요.
+L["Custom Trigger"] = "사용자 설정 활성 조건"
+L["Custom trigger event tooltip"] = [=[
+사용자 설정 활성 조건을 확인할 이벤트를 선택하세요.
 콤마와 공백을 사용해 여러 이벤트를 선택할 수 있습니다.
 
 |cFF4444FF예제:|r
 UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
-L["Custom trigger status tooltip"] = [=[사용자 설정 활성 조건을 체크할 이벤트를 선택하세요.
+L["Custom trigger status tooltip"] = [=[
+사용자 설정 활성 조건을 확인할 이벤트를 선택하세요.
 상태 형식 조건이면 특정 이벤트는 독립 변수없이 WeakAuras에 의해 불러와집니다.
 콤마와 공백을 사용해 여러 이벤트를 선택할 수 있습니다.
 
 |cFF4444FF예제:|r
 UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
-L["Custom Untrigger"] = "비활성 조건 사용자 설정"
-L["Custom untrigger event tooltip"] = [=[사용자 설정 비활성 조건을 체크할 이벤트를 선택하세요.
+L["Custom Untrigger"] = "사용자 설정 비활성 조건"
+L["Custom untrigger event tooltip"] = [=[
+사용자 설정 비활성 조건을 확인할 이벤트를 선택하세요.
 활성 조건과 다른 이벤트도 상관 없습니다.
 콤마와 공백을 사용해 여러 이벤트를 선택할 수 있습니다.
 
@@ -156,6 +159,7 @@ L["Dynamic text tooltip"] = [=[이 텍스트를 유동적으로 만들 수 있�
 |cFFFF0000%s|r - 중첩 - 오라의 중첩 횟수 (보통)
 |cFFFF0000%c|r - 사용자 설정 - 표시할 string 값을 반환하는 사용자 설정 Lua 함수 정의를 허용합니다]=]
 L["Enabled"] = "활성화됨"
+L["End Angle"] = "종료 각도"
 L["Enter an aura name, partial aura name, or spell id"] = "오라 이름 / 오라의 부분 이름 / 주문ID를 입력하세요,"
 L["Event Type"] = "이벤트 유형"
 L["Expand"] = "확장"
@@ -175,7 +179,7 @@ L["Font Flags"] = "글꼴 효과"
 L["Font Size"] = "글꼴 크기"
 L["Font Type"] = "글꼴 종류"
 L["Foreground Color"] = "앞면 색상"
-L["Foreground Texture"] = "앞면 텍스쳐"
+L["Foreground Texture"] = "앞면 무늬"
 L["Form (Druid)"] = "변신"
 L["Form (Priest)"] = "형상"
 L["Form (Shaman)"] = "변신"
@@ -269,7 +273,7 @@ L["Presence (Rogue)"] = "상태"
 L["Prevents duration information from decreasing when an aura refreshes. May cause problems if used with multiple auras with different durations."] = "오라가 갱신 됐을 때 지속시간이 감소 하지 않게 합니다. 다른 지속시간을 가진 여러 오라를 사용할 때 문제가 발생할 수 있습니다."
 L["Primary"] = "주"
 L["Progress Bar"] = "진행 바"
-L["Progress Texture"] = "진행 텍스쳐"
+L["Progress Texture"] = "진행 무늬"
 L["Put this display in a group"] = "이 디스플레이를 그룹에 포함시키기"
 L["Ready For Use"] = "사용 가능"
 L["Re-center X"] = "내부 X 좌표"
@@ -301,10 +305,10 @@ L["Shift-click to create chat link"] = "Shift-클릭 - |cFF8800FF[채팅 링크]
 L["Show all matches (Auto-clone)"] = "모든 일치 표시 (자동복제)"
 L["Show players that are |cFFFF0000not affected"] = "|cFFFF0000영향받지 않은|r 플레이어 표시"
 L["Shows a 3D model from the game files"] = "게임 데이터의 3D 모델 보이기"
-L["Shows a custom texture"] = "개인추가 텍스쳐 보이기"
+L["Shows a custom texture"] = "사용자 설정 무늬 표시"
 L["Shows a progress bar with name, timer, and icon"] = "이름 / 타이머 / 아이콘의 진행 바 보이기"
 L["Shows a spell icon with an optional a cooldown overlay"] = "선택적 쿨다운 오버레이로 주문 아이콘 표시"
-L["Shows a texture that changes based on duration"] = "지속시간에 따라 변화하는 텍스쳐 보이기"
+L["Shows a texture that changes based on duration"] = "지속시간에 따라 변화하는 무늬 보이기"
 L["Shows one or more lines of text, which can include dynamic information such as progress or stacks"] = "여러 줄의 문자를 표시합니다, 진행 시간 또는 중첩과 같은 여러 정보를 포함할 수 있습니다"
 L["Shows the remaining or expended time for an aura or timed event"] = "오라 또는 지속 이벤트의 남은 시간 또는 진행 시간을 표시합니다"
 L["Show this group's children"] = "이 그룹의 자식 보이기"
@@ -333,6 +337,7 @@ L["Stacks Settings"] = "중첩 설정"
 L["Stagger"] = "계단식 배치"
 L["Stance (Warrior)"] = "태세"
 L["Start"] = "시작"
+L["Start Angle"] = "시작 각도"
 L["Stealable"] = "훔치기 가능"
 L["Stealthed"] = "은신 중"
 L["Sticky Duration"] = "지속시간 고정"
@@ -341,8 +346,8 @@ L["Text"] = "텍스트"
 L["Text Color"] = "텍스트 색상"
 L["Text Position"] = "텍스트 위치"
 L["Text Settings"] = "텍스트 설정"
-L["Texture"] = "텍스쳐"
-L["Texture Info"] = "텍스쳐 정보"
+L["Texture"] = "무늬"
+L["Texture Info"] = "무늬 정보"
 L["The children of this group have different display types, so their display options cannot be set as a group."] = "이 그룹의 자식들은 다른 디스플레이 형식을 가지고 있어서, 디스플레이 옵션을 그룹으로 설정할 수 없습니다."
 L["The duration of the animation in seconds."] = "애니메이션 지속시간 (초)"
 L["The type of trigger"] = "활성 조건의 유형"
@@ -375,7 +380,7 @@ L["Unholy"] = "부정"
 L["Unit Exists"] = "유닛 존재"
 L["Unlike the start or finish animations, the main animation will loop over and over until the display is hidden."] = "시작 또는 종료 애니메이션과 달리 메인 애니메이션은 디스플레이가 숨겨질 때까지 계속 반복됩니다."
 L["Unstealthed"] = "은신 안함"
-L["Update Custom Text On..."] = "개인추가 텍스트 갱신 중..."
+L["Update Custom Text On..."] = "사용자 설정 문자 갱신 중..."
 L["Use Full Scan (High CPU)"] = "전체 스캔 사용 (높은 CPU 사용률)"
 L["Use tooltip \"size\" instead of stacks"] = "중첩 대신 툴팁 \"크기\" 사용"
 L["Vertical Align"] = "수직 정렬"

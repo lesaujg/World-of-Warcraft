@@ -116,8 +116,8 @@ Mehrere Events können durch Komma oder Leerzeichen getrennt werden.
 
 |cFF4444FFBeispiel:|r
 UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
-L["Custom Untrigger"] = "Benutzerdefinierter Umkehr-Auslöser"
-L["Custom untrigger event tooltip"] = [=[Wähle die Events, die den benutzerdefinierten Umkehr-Auslöser aufrufen sollen.
+L["Custom Untrigger"] = "Benutzerdefinierter Umkehrauslöser"
+L["Custom untrigger event tooltip"] = [=[Wähle die Events, die den benutzerdefinierten Umkehrauslöser aufrufen sollen.
 Diese Events müssen nicht denen der benutzerdefinierten Auslöser entsprechen.
 Mehrere Events können durch Komma oder Leerzeichen getrennt werden.
 
@@ -156,6 +156,7 @@ L["Dynamic text tooltip"] = [=[Es werden einige spezielle Codes für dynamischen
 |cFFFF0000%s|r - Stapel - Die Anzahl der Stapel
 |cFFFF0000%c|r - Benutzerdefiniert - Verwendet den String-Rückgabewert der benutzerdefinierten Lua-Funktion]=]
 L["Enabled"] = "Aktivieren"
+L["End Angle"] = "Endewinkel" -- Needs review
 L["Enter an aura name, partial aura name, or spell id"] = "Auraname, Teilname oder Zauber-ID"
 L["Event Type"] = "Ereignistyp"
 L["Expand"] = "Erweitern"
@@ -248,7 +249,7 @@ L["New"] = "Neu"
 L["Next"] = "Weiter"
 L["No"] = "Nein"
 L["No Children"] = "Keine Kinder"
-L["Not all children have the same value for this option"] = "Nicht alle Kinder besitzten den selben Wert"
+L["Not all children have the same value for this option"] = "Nicht alle Kinder besitzen denselben Wert"
 L["Not Loaded"] = "Nicht geladen"
 L["No tooltip text"] = "Kein Tooltip"
 L["% of Progress"] = "Fortschritt in %"
@@ -322,13 +323,12 @@ L["Space"] = "Abstand"
 L["Space Horizontally"] = "Horizontaler Abstand"
 L["Space Vertically"] = "Vertikaler Abstand"
 L["Spell ID"] = "Zauber-ID"
-L["Spell ID dialog"] = [=[
-Es wurde eine Aura/Zauber/ect. über |cFFFF0000Spell-ID|r definiert.
+L["Spell ID dialog"] = [=[Es wurde eine Aura/Zauber/ect. über |cFFFF0000Zauber-ID|r definiert.
 
-|cFF8800FFWeakAuras|r kann standardmäßig aus Performancegründen nicht zwischen Auren/Zaubern/ect. mit selben Namen aber unterschiedlichen |cFFFF0000Spell-IDs|r unterscheiden.
-Wird allerdings |cFFFF0000Alle Auren scannen (CPU-Intensiv)|r aktiviert kann |cFF8800FFWeakAuras|r explizit nach bestimmten |cFFFF0000Spell-IDs|r suchen.
+|cFF8800FFWeakAuras|r kann standardmäßig aus Performancegründen nicht zwischen Auren/Zaubern/ect. mit selben Namen aber unterschiedlichen |cFFFF0000Zauber-IDs|r unterscheiden.
+Wird allerdings |cFFFF0000Alle Auren scannen (CPU-Intensiv)|r aktiviert kann |cFF8800FFWeakAuras|r explizit nach bestimmten |cFFFF0000Zauber-IDs|r suchen.
 
-Soll |cFFFF0000Alle Auren scannen (CPU-Intensiv)|r aktiviert werden um diese |cFFFF0000Spell-ID|r zu finden?]=]
+Soll |cFFFF0000Alle Auren scannen (CPU-Intensiv)|r aktiviert werden um diese |cFFFF0000Zauber-ID|r zu finden?]=]
 L["Stack Count"] = "Stapelanzahl"
 L["Stack Count Position"] = "Stapelanzahlposition"
 L["Stack Info"] = "Stapelinfo"
@@ -336,6 +336,7 @@ L["Stacks Settings"] = "Stapeleinstellungen"
 L["Stagger"] = "Taumeln"
 L["Stance (Warrior)"] = "Haltung (Krieger)"
 L["Start"] = "Start"
+L["Start Angle"] = "Startwinkel" -- Needs review
 L["Stealable"] = "Zauberraub"
 L["Stealthed"] = "Getarnt"
 L["Sticky Duration"] = "Tesa-Dauer"

@@ -1,3 +1,6 @@
+v3.2
+*Added support for filtering by equipment slot.
+
 v3.1.5
 *Fixed error when TSM_AuctionDB is not present.
 

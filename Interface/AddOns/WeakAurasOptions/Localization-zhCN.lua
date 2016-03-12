@@ -153,6 +153,7 @@ L["Dynamic text tooltip"] = [=[这里有几个特别的编码允许文字动态�
 |cFFFF0000%s|r - 堆叠 - 光环堆叠数量(通常)
 |cFFFF0000%c|r - 自定义 - 允许你自定义一个Lua函数并返回一个用于显示的字符串]=]
 L["Enabled"] = "启用"
+-- L["End Angle"] = ""
 L["Enter an aura name, partial aura name, or spell id"] = "键入一个法术名，或者法术ID"
 L["Event Type"] = "事件类型"
 L["Expand"] = "展开"
@@ -328,6 +329,7 @@ L["Stacks Settings"] = "层数设置" -- Needs review
 L["Stagger"] = "交错"
 L["Stance (Warrior)"] = "姿态"
 L["Start"] = "开始"
+-- L["Start Angle"] = ""
 L["Stealable"] = "可偷取"
 L["Stealthed"] = "潜行"
 L["Sticky Duration"] = "持续时间置顶"

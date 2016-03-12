@@ -81,6 +81,7 @@ L["Invalid custom price source for %s. %s"] = true
 L["Invalid Even Only Filter"] = true
 L["Invalid Exact Only Filter"] = true
 L["Invalid Filter"] = true
+L["Invalid Item Inventory Type"] = true
 L["Invalid Item Level"] = true
 L["Invalid Item Rarity"] = true
 L["Invalid Item SubType"] = true

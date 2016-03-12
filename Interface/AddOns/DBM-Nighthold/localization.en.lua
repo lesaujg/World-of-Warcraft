@@ -28,14 +28,34 @@ L= DBM:GetModLocalization(1725)
 L= DBM:GetModLocalization(1731)
 
 ------------------
+-- Spellblade Aluriel --
+------------------
+L= DBM:GetModLocalization(1751)
+
+------------------
+-- Tichondrius --
+------------------
+L= DBM:GetModLocalization(1762)
+
+------------------
 -- Krosus --
 ------------------
 L= DBM:GetModLocalization(1713)
 
 ------------------
--- Star Augur Estraeus --
+-- High Botanist Tel'arn --
+------------------
+L= DBM:GetModLocalization(1761)
+
+------------------
+-- Star Augur Etraeus --
 ------------------
 L= DBM:GetModLocalization(1732)
+
+------------------
+-- Grand Magistrix Elisande --
+------------------
+L= DBM:GetModLocalization(1743)
 
 ------------------
 -- Gul'dan --

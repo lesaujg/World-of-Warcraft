@@ -1,9 +1,9 @@
-local mod	= DBM:NewMod(1725, "DBM-Suramar", nil, 786)
+local mod	= DBM:NewMod(1761, "DBM-Nighthold", nil, 786)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 14743 $"):sub(12, -3))
---mod:SetCreatureID(102672, 103160)
-mod:SetEncounterID(1865)
+mod:SetRevision(("$Revision: 14837 $"):sub(12, -3))
+--mod:SetCreatureID(103769)
+mod:SetEncounterID(1886)
 mod:SetZone()
 --mod:SetUsedIcons(8, 7, 6, 3, 2, 1)
 --mod:SetHotfixNoticeRev(12324)

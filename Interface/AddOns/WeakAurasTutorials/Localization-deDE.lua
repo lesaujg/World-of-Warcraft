@@ -103,22 +103,22 @@ L["New in 1.4 Text1"] = [=[Version 1.4 von |cFF8800FFWeakAuras|r führt mehrere 
 Diese Einführung bietet einen Überblick der wichtigsten neuen Funktionen und deren Nutzung.]=]
 L["New in 1.4 Text2"] = "Lege zunächst eine neue Anzeige zu Demonstrationszwecken an."
 L["Previous"] = "Zurück"
-L["Trigger Options: 1/4"] = "Auslöser Einstellungen: 1/4"
-L["Trigger Options 1/4 Text"] = [=[Zusätzlich zu \"Mehrfachziel\" gibt es eine neue Option für die Einheiten Einstellung: Konkrete Einheit.
+L["Trigger Options: 1/4"] = "Auslöseroptionen: 1/4"
+L["Trigger Options 1/4 Text"] = [=[Zusätzlich zu \"Mehrfachziel\" gibt es eine neue Option für die Einheiteneinstellung: Konkrete Einheit.
 
 Wähle sie aus, um ein neues Textfeld anlegen zu können.]=]
-L["Trigger Options: 2/4"] = "Auslöser Einstellungen: 2/4"
-L["Trigger Options 2/4 Text"] = [=[In diesem Feld kannst du den Namen eines beliebigen Spielers in deiner Gruppe, oder eine spezielle Unit ID angeben. Unit IDs wie \"boss1\", \"boss2\", usw. sind besonders für Schlachtzugsbegegnungen sehr hilfreich.
+L["Trigger Options: 2/4"] = "Auslöseroptionen: 2/4"
+L["Trigger Options 2/4 Text"] = [=[In diesem Feld kannst du den Namen eines beliebigen Spielers in deiner Gruppe, oder eine spezielle Einheiten-ID angeben. Einheiten-IDs wie \"boss1\", \"boss2\", usw. sind besonders für Schlachtzugsbegegnungen sehr hilfreich.
 
-Alle Auslöser, die die Angabe einer Einheit ermöglichen (nicht nur Aura Auslöser) unterstützen nun die Konkrete Einheit Einstellung.]=]
-L["Trigger Options: 3/4"] = "Auslöser Einstellungen: 3/4"
-L["Trigger Options 3/4 Text"] = [=[|cFF8800FFWeakAuras 1.4|r bringt auch ein paar neue Auslöser-Typen mit sich.
+Alle Auslöser, die die Angabe einer Einheit ermöglichen (nicht nur Aura-Auslöser) unterstützen nun die Option 'Konkrete Einheit'.]=]
+L["Trigger Options: 3/4"] = "Auslöseroptionen: 3/4"
+L["Trigger Options 3/4 Text"] = [=[|cFF8800FFWeakAuras 1.4|r bringt auch ein paar neue Auslösertypen mit sich.
 
-Wähle die Status Kategorie um einen Blick auf sie zu werfen.]=]
-L["Trigger Options: 4/4"] = "Auslöser Einstellungen: 4/4"
-L["Trigger Options 4/4 Text"] = [=[Der |cFFFFFFFFEinheitencharakteristik|r Auslöser erlaubt dir das testen von Namen, Klasse, Feindseligkeit und ob es sich um einen Spieler- oder Nicht-Spieler-Charakter handelt.
+Wähle die Kategorie Status, um einen Blick auf sie zu werfen.]=]
+L["Trigger Options: 4/4"] = "Auslöseroptionen: 4/4"
+L["Trigger Options 4/4 Text"] = [=[Der |cFFFFFFFFEinheitencharakteristik|r-Auslöser erlaubt dir das Testen von Namen, Klasse und Gesinnung des Spielers und ob es sich um einen Spieler- oder Nicht-Spieler-Charakter handelt.
 
-Auslöser für |cFFFFFFFFGlobale Abklingzeit|r und |cFFFFFFFFSwing Timer|r ergänzen den Zauber Auslöser.]=]
+Auslöser für |cFFFFFFFFGlobale Abklingzeit|r und |cFFFFFFFFSwing Timer|r ergänzen den Zauberwirkungsauslöser.]=]
 L["WeakAuras Tutorials"] = "WeakAuras Einführungen"
 L["Welcome"] = "Willkommen"
 L["Welcome Text"] = [=[Willkommen zur |cFF8800FFWeakAuras|r Einführung.

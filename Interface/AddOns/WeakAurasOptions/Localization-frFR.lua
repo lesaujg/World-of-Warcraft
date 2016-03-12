@@ -164,6 +164,7 @@ Il y a plusieurs codes spéciaux disponibles pour rendre ce texte dynamique :
 |cFFFF0000%s|r - Pile - La taille de la pile d'une aura (généralement)
 |cFFFF0000%c|r - Personnalisé - Vous permet de définir une fonction Lua personnalisée qui donne un texte à afficher]=]
 L["Enabled"] = "Activé"
+-- L["End Angle"] = ""
 L["Enter an aura name, partial aura name, or spell id"] = "Entrez un nom d'aura, nom d'aura partiel ou ID de sort"
 L["Event Type"] = "Type d'évènement"
 L["Expand"] = "Agrandir"
@@ -344,6 +345,7 @@ L["Stacks Settings"] = "Réglages de Piles"
 L["Stagger"] = "Report"
 L["Stance (Warrior)"] = "Posture"
 L["Start"] = "Début"
+-- L["Start Angle"] = ""
 L["Stealable"] = "Volable"
 L["Stealthed"] = "Furtif"
 L["Sticky Duration"] = "Durée épinglée"

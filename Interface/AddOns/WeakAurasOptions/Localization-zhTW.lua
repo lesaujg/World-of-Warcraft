@@ -155,6 +155,7 @@ L["Dynamic text tooltip"] = [=[這裡有幾個特別的編碼允許用到文字�
 |cFFFF0000%s|r - 堆疊 - 光環堆疊數量(通常)
 |cFFFF0000%c|r - 自訂 - 允許你定義一個自訂的Lua回傳字傳數值到顯示的函數]=]
 L["Enabled"] = "啟用"
+-- L["End Angle"] = ""
 L["Enter an aura name, partial aura name, or spell id"] = "輸入光環名稱，部分光環名稱，或是法術編號"
 L["Event Type"] = "事件類型"
 L["Expand"] = "擴展"
@@ -331,6 +332,7 @@ L["Stacks Settings"] = "堆疊設定"
 L["Stagger"] = "交錯"
 L["Stance (Warrior)"] = "姿態"
 L["Start"] = "開始"
+-- L["Start Angle"] = ""
 L["Stealable"] = "可法術竊取"
 L["Stealthed"] = "潛行"
 L["Sticky Duration"] = "置頂時間"

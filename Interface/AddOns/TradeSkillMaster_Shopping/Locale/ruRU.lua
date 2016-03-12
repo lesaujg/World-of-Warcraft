@@ -77,6 +77,7 @@ L["General Settings"] = "Общие Параметры" -- Needs review
 -- L["Invalid Even Only Filter"] = ""
 -- L["Invalid Exact Only Filter"] = ""
 L["Invalid Filter"] = "Недействительный фильтр" -- Needs review
+-- L["Invalid Item Inventory Type"] = ""
 L["Invalid Item Level"] = "Недействительный уровень предмета"
 L["Invalid Item Rarity"] = "Недействительное качество предмета"
 -- L["Invalid Item SubType"] = ""

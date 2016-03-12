@@ -120,6 +120,18 @@ local function GetItemSubClass(str, class)
 	end
 end
 
+local auctionInvTypes = {GetAuctionInvTypes(2,1)}
+local inventoryTypeLookup = {}
+for i=1, #auctionInvTypes, 2 do
+	TSMAPI:Assert(type(auctionInvTypes[i]) == "string")
+	inventoryTypeLookup[strlower(_G[auctionInvTypes[i]])] = (i + 1) / 2
+end
+local function GetItemInventoryType(str)
+	if not str then return end
+	str = strlower(str)
+	return inventoryTypeLookup[str]
+end
+
 local function GetItemRarity(str)
 	for i=0, 4 do
 		local text =  _G["ITEM_QUALITY"..i.."_DESC"]
@@ -131,7 +143,7 @@ end
 
 local function GetSearchFilterOptions(searchTerm)
 	local parts = {("/"):split(searchTerm)}
-	local queryString, class, subClass, minLevel, maxLevel, minILevel, maxILevel, rarity, usableOnly, exactOnly, evenOnly, maxQuantity, maxPrice
+	local queryString, class, subClass, invType, minLevel, maxLevel, minILevel, maxILevel, rarity, usableOnly, exactOnly, evenOnly, maxQuantity, maxPrice
 
 	if #parts == 0 then
 		return false, L["Invalid Filter"]
@@ -187,6 +199,12 @@ local function GetSearchFilterOptions(searchTerm)
 			else
 				return false, L["Invalid Item SubType"]
 			end
+		elseif GetItemInventoryType(str) then
+			if not invType then
+				invType = GetItemInventoryType(str)
+			else
+				return false, L["Invalid Item Inventory Type"]
+			end
 		elseif GetItemRarity(str) then
 			if not rarity then
 				rarity = GetItemRarity(str)
@@ -232,7 +250,7 @@ local function GetSearchFilterOptions(searchTerm)
 		minILevel = oldMaxILevel
 	end
 
-	return true, queryString or "", class or 0, subClass or 0, minLevel or 0, maxLevel or 0, minILevel or 0, maxILevel or 0, rarity or 0, usableOnly or 0, exactOnly or nil, evenOnly or nil, maxQuantity or math.huge, maxPrice
+	return true, queryString or "", class or 0, subClass or 0, invType or 0, minLevel or 0, maxLevel or 0, minILevel or 0, maxILevel or 0, rarity or 0, usableOnly or 0, exactOnly or nil, evenOnly or nil, maxQuantity or math.huge, maxPrice
 end
 
 -- gets all the filters for a given search term (possibly semicolon-deliminated list of search terms)
@@ -248,7 +266,7 @@ function AuctionTabUtil:ParseFilterString(searchQuery)
 				tinsert(filters, filter)
 			end
 		else
-			local isValid, queryString, class, subClass, minLevel, maxLevel, minILevel, maxILevel, rarity, usableOnly, exactOnly, evenOnly, maxQuantity, maxPrice = GetSearchFilterOptions(searchTerm)
+			local isValid, queryString, class, subClass, invType, minLevel, maxLevel, minILevel, maxILevel, rarity, usableOnly, exactOnly, evenOnly, maxQuantity, maxPrice = GetSearchFilterOptions(searchTerm)
 
 			if not isValid then
 				TSM:Print(L["Skipped the following search term because it's invalid."])
@@ -260,7 +278,7 @@ function AuctionTabUtil:ParseFilterString(searchQuery)
 			end
 
 			if isValid then
-				tinsert(filters, {name=queryString, usable=usableOnly, minLevel=minLevel, maxLevel=maxLevel, quality=rarity, class=class, subClass=subClass, minILevel=minILevel, maxILevel=maxILevel, exact=exactOnly, evenOnly=evenOnly, maxQuantity=maxQuantity, maxPrice=maxPrice})
+				tinsert(filters, {name=queryString, usable=usableOnly, minLevel=minLevel, maxLevel=maxLevel, quality=rarity, class=class, subClass=subClass, invType=invType, minILevel=minILevel, maxILevel=maxILevel, exact=exactOnly, evenOnly=evenOnly, maxQuantity=maxQuantity, maxPrice=maxPrice})
 			end
 		end
 	end
@@ -270,11 +288,12 @@ end
 
 function AuctionTabUtil:GetMatchingFilter(queries, itemString)
 	-- figure out which query this item matches
-	local name, _, quality, _, level, class, subClass = TSMAPI.Item:GetInfo(itemString)
+	local name, _, quality, _, level, class, subClass, _, equipSlot = TSMAPI.Item:GetInfo(itemString)
 	if not name then return end
 	name = strlower(name)
 	class = GetItemClass(class) or 0
 	subClass = GetItemSubClass(subClass, class) or 0
+	local invType = GetItemInventoryType(_G[equipSlot]) or 0
 	for _, query in ipairs(queries) do
 		local isValid = strfind(name, TSMAPI.Util:StrEscape(strlower(query.name))) and true or false
 		isValid = isValid and (not query.quality or query.quality == 0 or quality >= query.quality)
@@ -282,6 +301,7 @@ function AuctionTabUtil:GetMatchingFilter(queries, itemString)
 		isValid = isValid and (not query.maxLevel or query.maxLevel == 0 or level <= query.maxLevel)
 		isValid = isValid and (not query.class or query.class == 0 or class == query.class)
 		isValid = isValid and (not query.subClass or query.subClass == 0 or subClass == query.subClass)
+		isValid = isValid and (not query.invType or query.invType == 0 or invType == query.invType)
 		if isValid then
 			return query
 		end
