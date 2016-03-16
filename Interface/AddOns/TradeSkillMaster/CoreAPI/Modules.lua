@@ -197,14 +197,20 @@ function Modules:OnEnable()
 				local fullName = gsub(obj.name, "TSM_", "TradeSkillMaster_")
 				local currentVersion = private:VersionStrToInt(obj._version)
 				if currentVersion and addonVersions[fullName] and currentVersion < addonVersions[fullName] then
-					StaticPopupDialogs["TSMUpdatePopup_"..fullName] = {
-						text = format(L["|cffffff00Important Note:|r An update is available for %s. You should update as soon as possible to ensure TSM continues to function properly."], fullName),
-						button1 = L["I'll Go Update!"],
-						timeout = 0,
-						whileDead = true,
-					}
-					TSMAPI.Util:ShowStaticPopupDialog("TSMUpdatePopup_"..fullName)
-					private.hasOutdatedAddons = true
+					TSM.db.global.pendingAddonUpdate[fullName] = TSM.db.global.pendingAddonUpdate[fullName] or time()
+					if TSM.db.global.pendingAddonUpdate[fullName] + 48 * 60 * 60 < time() then
+						TSM.db.global.pendingAddonUpdate[fullName] = time()
+						StaticPopupDialogs["TSMUpdatePopup_"..fullName] = {
+							text = format(L["|cffffff00Important Note:|r An update is available for %s. You should update as soon as possible to ensure TSM continues to function properly."], fullName),
+							button1 = L["I'll Go Update!"],
+							timeout = 0,
+							whileDead = true,
+						}
+						TSMAPI.Util:ShowStaticPopupDialog("TSMUpdatePopup_"..fullName)
+						private.hasOutdatedAddons = true
+					end
+				else
+					TSM.db.global.pendingAddonUpdate[fullName] = nil
 				end
 			end
 		end
