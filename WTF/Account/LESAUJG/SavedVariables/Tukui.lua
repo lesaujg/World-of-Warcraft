@@ -11,7 +11,7 @@ TukuiData = {
 			["Belrath"] = 98013973,
 			["Uldaris"] = 666899213,
 			["Sanjuri"] = 11460,
-			["Clothgar"] = 9932728920,
+			["Clothgar"] = 9302093106,
 		},
 	},
 	["Sisters of Elune"] = {
