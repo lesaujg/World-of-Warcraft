@@ -32,7 +32,7 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @savedSearches"] = {
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1458217488,
+			["lastSearch"] = 1458233427,
 			["name"] = "arcane c",
 			["filter"] = "arcane c",
 		}, -- [1]
