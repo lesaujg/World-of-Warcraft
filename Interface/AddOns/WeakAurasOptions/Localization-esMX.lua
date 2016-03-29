@@ -271,6 +271,7 @@ L["Shows a 3D model from the game files"] = "Shows a 3D model from the game file
 L["Sound"] = "Sound"
 L["Sound Channel"] = "Sound Channel"
 -- L["Sound File Path"] = ""
+-- L["Sound Kit ID"] = ""
 -- L["Space"] = ""
 -- L["Space Horizontally"] = ""
 -- L["Space Vertically"] = ""

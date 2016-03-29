@@ -14,7 +14,7 @@ local maxdiff = 23 -- max number of instance difficulties
 local maxcol = 4 -- max columns per player+instance
 
 addon.svnrev = {}
-addon.svnrev["SavedInstances.lua"] = tonumber(("$Revision: 476 $"):match("%d+"))
+addon.svnrev["SavedInstances.lua"] = tonumber(("$Revision: 483 $"):match("%d+"))
 
 -- local (optimal) references to provided functions
 local table, math, bit, string, pairs, ipairs, unpack, strsplit, time, type, wipe, tonumber, select, strsub = 
@@ -341,6 +341,35 @@ local function abbreviate(iname)
   return iname
 end
 
+function addon:formatNumber(num)
+  num = tonumber(num)
+  if not num then return "" end
+  if vars.db.Tooltip.NumberFormat then
+    local str = ""
+    local neg = num < 0
+    num = math.abs(num)
+    local int = math.floor(num)
+    local dec = num - int
+    local t = tostring(int)
+    if #t > 4 then -- leave 4 digit numbers
+      while #t > 3 do
+        str = LARGE_NUMBER_SEPERATOR .. t:sub(-3) .. str
+        t = t:sub(1,-4)
+      end
+    end
+    str = t..str
+    if dec > 0 then
+      str = str..string.format("%15g",dec):match("(%..*)$")
+    end
+    if neg then
+      str = "-"..str
+    end
+    return str
+  else
+    return num
+  end
+end
+
 vars.defaultDB = {
 	DBVersion = 12,
 	History = { }, -- for tracking 5 instance per hour limit
@@ -445,7 +474,6 @@ vars.defaultDB = {
 		R8ClassColor = true,
 	},
 	Tooltip = {
-		Details = false,
 		ReverseInstances = false,
 		ShowExpired = false,
 		ShowHoliday = true,
@@ -457,13 +485,14 @@ vars.defaultDB = {
 		ShowCategories = false,
 		CategorySpaces = false,
 		RowHighlight = 0.1,
+		Scale = 1,
+		FitToScreen = true,
 		NewFirst = true,
 		RaidsFirst = true,
+		NumberFormat = true,
 		CategorySort = "EXPANSION", -- "EXPANSION", "TYPE"
 		ShowSoloCategory = false,
 		ShowHints = true,
-		ColumnStyle = "NORMAL", -- "NORMAL", "CLASS", "ALTERNATING"
-		AltColumnColor = { 0.2, 0.2, 0.2, 1, }, -- grey
 		ReportResets = true,
 		LimitWarn = true,
 		HistoryText = false,
@@ -474,6 +503,11 @@ vars.defaultDB = {
 		SelfAlways = false,
 		TrackLFG = true,
 		TrackDeserter = true,
+		TrackSkills = true,
+		TrackFarm = true,
+		TrackBonus = false,
+		AugmentBonus = true,
+		CurrencyValueColor = true,
 		Currency776 = false, -- Warforged Seals
 		Currency738 = false, -- Lesser Charm of Good Fortune
 		Currency823 = true,  -- Apexis Crystal
@@ -574,8 +608,9 @@ end
 
 local function CurrencyColor(amt, max)
   amt = amt or 0
+  local samt = addon:formatNumber(amt)
   if max == nil or max == 0 then
-    return amt
+    return samt
   end
   if vars.db.Tooltip.CurrencyValueColor then
     local pct = amt / max
@@ -585,9 +620,9 @@ local function CurrencyColor(amt, max)
     elseif pct > 0.75 then
       color = GOLDFONT
     end
-    amt = color .. amt .. FONTEND
+    samt = color .. samt .. FONTEND
   end
-  return amt
+  return samt
 end
 
 local function TableLen(table)
@@ -649,7 +684,7 @@ function addon:GetNextDailyResetTime()
   local serverHour, serverMinute = GetGameTime()
   local serverResetTime = (serverHour*3600 + serverMinute*60 + resettime) % 86400 -- GetGameTime of the reported reset
   local diff = serverResetTime - 10800 -- how far from 3AM server
-  if math.abs(diff) > 18000  -- more than 5 hours - ignore TZ differences of US continental servers
+  if math.abs(diff) > 3.5*3600  -- more than 3.5 hours - ignore TZ differences of US continental servers
      and addon:GetRegion() == "US" then
      local diffhours = math.floor((diff + 1800)/3600)
      resettime = resettime - diffhours*3600
@@ -1483,7 +1518,7 @@ function addon:UpdateToonData()
 	        ti.Quests[id] = nil
 	      end
 	    end
-	    ti.DailyResetTime = nextreset
+	    ti.DailyResetTime = (ti.DailyResetTime and ti.DailyResetTime + 24*3600) or nextreset
           end 
 	 end
 	 if not db.DailyResetTime or (db.DailyResetTime < time()) then -- AccountDaily reset
@@ -1524,7 +1559,7 @@ function addon:UpdateToonData()
 	      ti.currency[idx] = ti.currency[idx] or {}
 	      ti.currency[idx].earnedThisWeek = 0
 	    end
-	    ti.WeeklyResetTime = nextreset
+	    ti.WeeklyResetTime = (ti.WeeklyResetTime and ti.WeeklyResetTime + 7*24*3600) or nextreset
           end 
 	 end
 	end
@@ -2111,8 +2146,10 @@ end
 local colorpat = "\124c%c%c%c%c%c%c%c%c"
 local weeklycap = CURRENCY_WEEKLY_CAP:gsub("%%%d*\$?([ds])","%%%1")
 local weeklycap_scan = weeklycap:gsub("%%d","(%%d+)"):gsub("%%s","(\124c%%x%%x%%x%%x%%x%%x%%x%%x)")
+weeklycap = weeklycap:gsub("%%d","%%s")
 local totalcap = CURRENCY_TOTAL_CAP:gsub("%%%d*\$?([ds])","%%%1")
 local totalcap_scan = totalcap:gsub("%%d","(%%d+)"):gsub("%%s","(\124c%%x%%x%%x%%x%%x%%x%%x%%x)")
+totalcap = totalcap:gsub("%%d","%%s")
 local season_scan = CURRENCY_SEASON_TOTAL:gsub("%%%d*\$?([ds])","(%%%1*)")
 
 function addon:GetSeasonCurrency(idx) 
@@ -2154,30 +2191,41 @@ local function ShowCurrencyTooltip(cell, arg, ...)
   local name,_,tex = GetCurrencyInfo(idx)
   tex = " \124T"..tex..":0\124t"
   openIndicator(2, "LEFT","RIGHT")
-  indicatortip:AddHeader(ClassColorise(vars.db.Toons[toon].Class, strsplit(' ', toon)), (ci.amount or "0")..tex)
+  indicatortip:AddHeader(ClassColorise(vars.db.Toons[toon].Class, strsplit(' ', toon)), CurrencyColor(ci.amount or 0,ci.totalMax)..tex)
 
   scantt:SetOwner(UIParent,"ANCHOR_NONE")
   scantt:SetCurrencyByID(idx)
   local name = scantt:GetName()
+  local spacer
   for i=1,scantt:NumLines() do
     local left = _G[name.."TextLeft"..i]
-    if left:GetText():find(weeklycap_scan) or 
-       left:GetText():find(totalcap_scan) or
-       left:GetText():find(season_scan) then
+    local text = left:GetText()
+    if text:find(weeklycap_scan) or 
+       text:find(totalcap_scan) or
+       text:find(season_scan) then
       -- omit player's values
     else
       indicatortip:AddLine("")
       indicatortip:SetCell(indicatortip:GetLineCount(),1,coloredText(left), nil, "LEFT",2, nil, nil, nil, 250)
+      spacer = #strtrim(text) == 0
     end
   end
   if ci.weeklyMax and ci.weeklyMax > 0 then
-    indicatortip:AddLine(weeklycap:format("", (ci.earnedThisWeek or 0), (ci.weeklyMax or 0)))
+    if not spacer then indicatortip:AddLine(" "); spacer = true end
+    indicatortip:AddLine(weeklycap:format("", CurrencyColor(ci.earnedThisWeek or 0,ci.weeklyMax), addon:formatNumber(ci.weeklyMax)))
   end
   if ci.totalMax and ci.totalMax > 0 then
-    indicatortip:AddLine(totalcap:format("", (ci.amount or 0), (ci.totalMax or 0)))
+    if not spacer then indicatortip:AddLine(" "); spacer = true end
+    indicatortip:AddLine(totalcap:format("", CurrencyColor(ci.amount or 0,ci.totalMax), addon:formatNumber(ci.totalMax)))
   end
   if ci.season and #ci.season > 0 then
-    indicatortip:AddLine(ci.season)
+    if not spacer then indicatortip:AddLine(" "); spacer = true end
+    local str = ci.season
+    local num = str:match("(%d+)")
+    if num then
+      str = str:gsub(num,addon:formatNumber(num))
+    end
+    indicatortip:AddLine(str)
   end
   finishIndicator()
 end
@@ -2193,8 +2241,8 @@ function core:toonInit()
 	ti.Show = ti.Show or "saved"
 	ti.Quests = ti.Quests or {}
 	ti.Skills = ti.Skills or {}
-	ti.DailyResetTime = ti.DailyResetTime or addon:GetNextDailyResetTime()
-	ti.WeeklyResetTime = ti.WeeklyResetTime or addon:GetNextWeeklyResetTime()
+	ti.DailyResetTime = addon:GetNextDailyResetTime()
+	ti.WeeklyResetTime = addon:GetNextWeeklyResetTime()
 end
 
 function core:OnInitialize()
@@ -2214,27 +2262,10 @@ function core:OnInitialize()
 	db.Lockouts = nil -- deprecated
 	db.History = db.History or {}
 	db.Quests = db.Quests or vars.defaultDB.Quests
-	db.Tooltip.ReportResets = (db.Tooltip.ReportResets == nil and true) or db.Tooltip.ReportResets
-	db.Tooltip.LimitWarn = (db.Tooltip.LimitWarn == nil and true) or db.Tooltip.LimitWarn
-	db.Tooltip.HistoryText = (db.Tooltip.HistoryText == nil and false) or db.Tooltip.HistoryText
-	db.Tooltip.ShowHoliday = (db.Tooltip.ShowHoliday == nil and true) or db.Tooltip.ShowHoliday
-	db.Tooltip.ShowRandom = (db.Tooltip.ShowRandom == nil and true) or db.Tooltip.ShowRandom
-	db.Tooltip.CombineLFR = (db.Tooltip.CombineLFR == nil and true) or db.Tooltip.CombineLFR
-	db.Tooltip.TrackSkills = (db.Tooltip.TrackSkills == nil and true) or db.Tooltip.TrackSkills
-	db.Tooltip.TrackFarm = (db.Tooltip.TrackFarm == nil and true) or db.Tooltip.TrackFarm
-	db.Tooltip.TrackBonus = (db.Tooltip.TrackBonus == nil and false) or db.Tooltip.TrackBonus
-	db.Tooltip.AugmentBonus = (db.Tooltip.AugmentBonus == nil and true) or db.Tooltip.AugmentBonus
-	db.Tooltip.TrackDailyQuests = (db.Tooltip.TrackDailyQuests == nil and true) or db.Tooltip.TrackDailyQuests
-	db.Tooltip.TrackWeeklyQuests = (db.Tooltip.TrackWeeklyQuests == nil and true) or db.Tooltip.TrackWeeklyQuests
-	db.Tooltip.ServerSort = (db.Tooltip.ServerSort == nil and true) or db.Tooltip.ServerSort
-	db.Tooltip.ServerOnly = (db.Tooltip.ServerOnly == nil and false) or db.Tooltip.ServerOnly
-	db.Tooltip.SelfFirst = (db.Tooltip.SelfFirst == nil and true) or db.Tooltip.SelfFirst
-	db.Tooltip.SelfAlways = (db.Tooltip.SelfAlways == nil and false) or db.Tooltip.SelfAlways
-	db.Tooltip.CurrencyValueColor = (db.Tooltip.CurrencyValueColor == nil and true) or db.Tooltip.CurrencyValueColor
-	db.Tooltip.RowHighlight = db.Tooltip.RowHighlight or 0.1
-	db.Tooltip.Scale = db.Tooltip.Scale or 1
-	db.Tooltip.FitToScreen = (db.Tooltip.FitToScreen == nil and true) or db.Tooltip.FitToScreen
 	db.QuestDB = db.QuestDB or vars.defaultDB.QuestDB
+	for name,default in pairs(vars.defaultDB.Tooltip) do
+	  db.Tooltip[name] = (db.Tooltip[name]==nil and default) or db.Tooltip[name]
+	end
 	for _, id in ipairs(addon.currency) do
 	  local name = "Currency"..id
 	  db.Tooltip[name] = (db.Tooltip[name]==nil and  vars.defaultDB.Tooltip[name]) or db.Tooltip[name]
@@ -2270,6 +2301,7 @@ function core:OnInitialize()
 		OnLeave = function(frame) end,
 		OnClick = function(frame, button)
 			if button == "MiddleButton" then
+				if InCombatLockdown() then return end
 				ToggleFriendsFrame(4) -- open Blizzard Raid window
 				RaidInfoFrame:Show()
 			elseif button == "LeftButton" then
@@ -3634,10 +3666,10 @@ function core:ShowTooltip(anchorframe)
 		   local earned, weeklymax, totalmax = "","",""
 		   if vars.db.Tooltip.CurrencyMax then
 		     if (ci.weeklyMax or 0) > 0 then
-		       weeklymax = "/"..ci.weeklyMax
+		       weeklymax = "/"..addon:formatNumber(ci.weeklyMax)
 		     end
 		     if (ci.totalMax or 0) > 0 then
-		       totalmax = "/"..ci.totalMax
+		       totalmax = "/"..addon:formatNumber(ci.totalMax)
 		     end
 		   end
 		   if vars.db.Tooltip.CurrencyEarned or showall then
@@ -3746,15 +3778,6 @@ function core:ShowTooltip(anchorframe)
 		  end
 		end
 	end
-	-- tooltip column colours
-	if vars.db.Tooltip.ColumnStyle == "CLASS" then
-		for toondiff, col in pairs(columns) do
-			local toon = strsub(toondiff, 1, #toondiff-1)
-			local diff = strsub(toondiff, #toondiff, #toondiff)
-			local color = RAID_CLASS_COLORS[vars.db.Toons[toon].Class]
-			tooltip:SetColumnColor(col, color.r, color.g, color.b)
-		end 
-	end						
 
         -- cache check
         local fail = false

@@ -5,8 +5,9 @@
 local RA = RaidAssist
 local L = LibStub ("AceLocale-3.0"):GetLocale ("RaidAssistAddon")
 local _
+local default_priority = 6
 
-local Notepad = {version = "v0.1", pluginname = "Notes"}
+local Notepad = {version = 1, pluginname = "Notes"}
 local default_config = {
 	notes = {},
 	currently_shown = false,
@@ -20,11 +21,27 @@ local default_config = {
 	hide_on_combat = false,
 }
 
+local icon_texture
+local icon_texcoord = {l=4/32, r=28/32, t=4/32, b=28/32}
+local text_color_enabled = {r=1, g=1, b=1, a=1}
+local text_color_disabled = {r=0.5, g=0.5, b=0.5, a=1}
+
+local COMM_QUERY_SEED = "NOQI"
+local COMM_QUERY_NOTE = "NOQN"
+local COMM_RECEIVED_SEED = "NORI"
+local COMM_RECEIVED_FULLNOTE = "NOFN"
+
+if (UnitFactionGroup("player") == "Horde") then
+	icon_texture = [[Interface\WorldStateFrame\HordeFlag]]
+else
+	icon_texture = [[Interface\WorldStateFrame\AllianceFlag]]
+end
+
 Notepad.menu_text = function (plugin)
 	if (Notepad.db.enabled) then
-		return [[Interface\AddOns\RaidAssist\Media\attendance_menu_icon]], icon_texcoord, "Raid Assignments", text_color_enabled
+		return icon_texture, icon_texcoord, "Raid Assignments", text_color_enabled
 	else
-		return [[Interface\AddOns\RaidAssist\Media\attendance_menu_icon]], icon_texcoord, "Raid Assignments", text_color_disabled
+		return icon_texture, icon_texcoord, "Raid Assignments", text_color_disabled
 	end
 end
 
@@ -47,6 +64,8 @@ Notepad.menu_on_click = function (plugin)
 end
 
 Notepad.OnInstall = function (plugin)
+	
+	Notepad.db.menu_priority = default_priority
 	
 	local popup_frame = Notepad.popup_frame
 	
@@ -81,18 +100,46 @@ Notepad.OnInstall = function (plugin)
 	end)
 	screen_frame.lock = lock
 	
+	local close = CreateFrame ("button", "NotepadScreenFrameCloseButton", screen_frame)
+	close:SetSize (16, 16)
+	close:SetNormalTexture (Notepad:GetFrameworkFolder() .. "icons")
+	close:SetHighlightTexture (Notepad:GetFrameworkFolder() .. "icons")
+	close:SetPushedTexture (Notepad:GetFrameworkFolder() .. "icons")
+	close:SetAlpha (0.7)
+	close:GetPushedTexture():SetTexCoord (0/128, 16/128, 0, 1)
+	close:GetNormalTexture():SetTexCoord (0/128, 16/128, 0, 1)
+	close:GetHighlightTexture():SetTexCoord (0/128, 16/128, 0, 1)
+	close:SetScript ("OnClick", function()
+		Notepad.UnshowNoteOnScreen()
+	end)
+	screen_frame.close = close
+	
 	Notepad:UpdateScreenFrameSettings()
 	
 	--C_Timer.After (2, function() Notepad.BuildOptions(); Notepad.options_built = true; Notepad.main_frame:Show() end)
 	
 	Notepad.in_group = IsInGroup()
 	
+	local _, instanceType = GetInstanceInfo()
+	Notepad.current_instanceType = instanceType
+	
 	Notepad:RegisterEvent ("GROUP_ROSTER_UPDATE")
 	Notepad:RegisterEvent ("ZONE_CHANGED_NEW_AREA")
 	Notepad:RegisterEvent ("PLAYER_REGEN_DISABLED")
 	Notepad:RegisterEvent ("PLAYER_REGEN_ENABLED")
-
-	Notepad:ValidateNoteCurrentlyShown()
+	
+	if (Notepad.db.currently_shown) then
+		--print (Notepad.db.currently_shown)
+		Notepad:ValidateNoteCurrentlyShown() --only removes, zone_changed has been removed
+	end
+	
+	C_Timer.After (10, function()
+		local _, instanceType, DifficultyID = GetInstanceInfo()
+		if (instanceType == "raid" and Notepad.in_group and DifficultyID ~= 17) then
+			Notepad:AskForEnabledNote()
+		end
+	end)
+	
 end
 
 function Notepad:UpdateScreenFrameBackground()
@@ -130,6 +177,9 @@ function Notepad:UpdateScreenFrameSettings()
 		Notepad.screen_frame.lock:GetHighlightTexture():SetTexCoord (16/128, 32/128, 0, 1)
 		Notepad.screen_frame.lock:GetPushedTexture():SetTexCoord (16/128, 32/128, 0, 1)
 		Notepad.screen_frame.lock:SetAlpha (0.15)
+		
+		Notepad.screen_frame.close:SetAlpha (0.15)
+		
 		Notepad.screen_frame:SetBackdrop (nil)
 	else
 		Notepad.screen_frame:EnableMouse (true)
@@ -137,6 +187,7 @@ function Notepad:UpdateScreenFrameSettings()
 		Notepad.screen_frame.lock:GetHighlightTexture():SetTexCoord (32/128, 48/128, 0, 1)
 		Notepad.screen_frame.lock:GetPushedTexture():SetTexCoord (32/128, 48/128, 0, 1)
 		Notepad.screen_frame.lock:SetAlpha (1)
+		Notepad.screen_frame.close:SetAlpha (1)
 		Notepad.screen_frame:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true})
 		Notepad.screen_frame:SetBackdropColor (0, 0, 0, 0.8)
 		Notepad.screen_frame:SetBackdropBorderColor (0, 0, 0, 1)
@@ -146,12 +197,15 @@ function Notepad:UpdateScreenFrameSettings()
 	Notepad.screen_frame.text:SetJustifyH (Notepad.db.text_justify)	
 	Notepad.screen_frame.text:ClearAllPoints()
 	Notepad.screen_frame.lock:ClearAllPoints()
+	Notepad.screen_frame.close:ClearAllPoints()
 	
 	if (Notepad.db.text_justify == "left") then
 		Notepad.screen_frame.lock:SetPoint ("left", Notepad.screen_frame, "left", 0, 0)
+		Notepad.screen_frame.close:SetPoint ("left", Notepad.screen_frame.lock, "right", 2, 0)
 		Notepad.screen_frame.text:SetPoint ("topleft", Notepad.screen_frame, "bottomleft", 5, 0)
 	elseif (Notepad.db.text_justify == "right") then
 		Notepad.screen_frame.lock:SetPoint ("right", Notepad.screen_frame, "right", 0, 0)
+		Notepad.screen_frame.close:SetPoint ("right", Notepad.screen_frame.lock, "left", 2, 0)
 		Notepad.screen_frame.text:SetPoint ("topright", Notepad.screen_frame, "bottomright", -5, 0)
 	end
 	
@@ -251,15 +305,18 @@ function Notepad:SaveCurrentEditingNote()
 end
 
 function Notepad.DeleteCurrentNote()
-	Notepad.db.notes [Notepad.notepad_editing_id] = nil
-
-	--> check if the note is enabled.
-	Notepad:CancelNoteEditing()
-	
 	--> check if the note isn't the one currently showing on screen.
 	if (Notepad.db.currently_shown == Notepad.notepad_editing_id) then
 		Notepad:UnshowNoteOnScreen()
 	end
+	
+	local id = Notepad.notepad_editing_id
+	
+	--> check if the note is enabled.
+	Notepad:CancelNoteEditing()
+	
+	--> erase it
+	Notepad.db.notes [id] = nil
 end
 
 function Notepad:SetCurrentEditingNote (note_id)
@@ -344,12 +401,14 @@ function Notepad:UnshowNoteOnScreen()
 		if (Notepad.main_frame.frame_note_shown) then
 			Notepad.main_frame.frame_note_shown:Hide()
 		end
+		
+		Notepad:SendUnShowNote()
 	end
 end
 
 function Notepad:ValidateNoteCurrentlyShown()
 	if (IsInRaid()) then
-		return Notepad:ZONE_CHANGED_NEW_AREA()
+		return Notepad:ZONE_CHANGED_NEW_AREA() --has been removed
 	elseif (not IsInRaid()) then
 		return Notepad:UnshowNoteOnScreen()
 	end
@@ -361,17 +420,25 @@ function Notepad:GROUP_ROSTER_UPDATE()
 		Notepad:UnshowNoteOnScreen()
 	elseif (not Notepad.in_group and IsInGroup()) then
 		--> joined a group
-		Notepad:AskForEnabledNote()
+		local _, instanceType = GetInstanceInfo()
+		if (instanceType and instanceType == "raid") then
+			Notepad:AskForEnabledNote()
+		end
 	end
+	Notepad.in_group = IsInGroup()
 end
 
 function Notepad:ZONE_CHANGED_NEW_AREA()
-	local _, instanceType = GetInstanceInfo()
-	if (instanceType == "raid" and Notepad.in_group) then
-		Notepad:AskForEnabledNote()
-	else
-		Notepad:UnshowNoteOnScreen()
-	end
+--	local _, instanceType = GetInstanceInfo()
+	
+--	if (Notepad.in_group and Notepad.current_instanceType ~= "raid") then -- instanceType == "raid" and 
+--		Notepad:AskForEnabledNote()
+--	else
+--		Notepad:UnshowNoteOnScreen()
+--	end
+	
+--	local _, instanceType = GetInstanceInfo()
+--	Notepad.current_instanceType = instanceType
 end
 
 function Notepad:PLAYER_REGEN_DISABLED()
@@ -717,20 +784,193 @@ end
 
 local install_status = RA:InstallPlugin ("Raid Assignments", "RANotepad", Notepad, default_config)
 
+-- new feature: quick note
+
+--> mandar primeiro o a nota/texto
+--> depois mandar o id para mostrar
+
+
 function NotepadRefreshScreenFrame (boss_id, note_id)
 	-- refresh the screen frame options
 end
 
+--> when the user enters in the raid instance or after /reload or logon
+local do_ask_for_enabled_note = function()
+	local raidLeader = Notepad:GetRaidLeader()
+	if (raidLeader) then
+		Notepad:SendPluginCommWhisperMessage (COMM_QUERY_SEED, raidLeader, nil, nil, Notepad:GetPlayerNameWithRealm())
+	end
+end
 function Notepad:AskForEnabledNote()
-	-- when we enter in a raid group or enter in the raid instance or after /reload or logon
+	local zoneName, zoneType, _, _, _, _, _, zoneMapID = GetInstanceInfo()
+	if (IsInRaid()) then -- zoneType == "raid" and 
+		--> make it safe calling with a delay in case many users enter/connect at the same time
+		C_Timer.After (math.random (3), do_ask_for_enabled_note) -- 15
+	end
 end
 
-function Notepad.OnReceiveComm()
-	-- check if it comes from a raid assistant
-	-- Adde note received
-	-- Notepad:ShowNoteOnScreen (note_id)
+local is_raid_leader = function (sourceUnit)
+	if (type (sourceUnit) == "string") then
+		return UnitIsGroupLeader (sourceUnit) or UnitIsGroupLeader (sourceUnit:gsub ("%-.*", ""))
+	end
+end
+local is_connected = function (sourceUnit)
+	if (type (sourceUnit) == "string") then
+		return UnitIsConnected (sourceUnit) or UnitIsConnected (sourceUnit:gsub ("%-.*", ""))
+	end
+end
+
+function Notepad.OnReceiveComm (prefix, sourcePluginVersion, sourceUnit, fullNote, noteSeed, noteDate)
+	
+	--print ("received comm:", prefix, sourcePluginVersion, sourceUnit, fullNote, noteSeed, noteDate)
+
+	--> Full Note - the user received a note from the Raid Leader
+	if (prefix == COMM_RECEIVED_FULLNOTE) then
+		--> check if the sender is the raid leader
+
+		if (not IsInRaid() or not is_raid_leader (sourceUnit)) then
+			return
+		end
+		
+		--> validade the note
+		if (not fullNote) then
+			--> hide any note shown
+			local current_note = Notepad.db.currently_shown
+			if (current_note) then
+				Notepad.UnshowNoteOnScreen()
+			end
+			return
+		end
+		
+		if (not fullNote.seed or not fullNote.last_edit_date) then
+			return
+		end	
+		
+		local noteSeed, noteDate = fullNote.seed, fullNote.last_edit_date
+
+		--> update the note and show it on the screen
+		Notepad.db.notes [noteSeed] = fullNote
+		
+		if (Notepad.main_frame and Notepad.main_frame:IsShown()) then
+			Notepad.main_frame.dropdown_notes:Refresh()
+			Notepad.main_frame.dropdown_notes:Select (noteSeed)
+		end
+		
+		Notepad:ShowNoteOnScreen (noteSeed)
+		
+	--> Query note current status - the user sent to the raid leader a query about the current note
+	elseif (prefix == COMM_QUERY_SEED) then --"NOQI"
+		--> check if I'm the raid leader
+		if (not IsInRaid() or not is_raid_leader ("player")) then
+			return
+		end
+		
+		--> sent the current state for the player
+		if (is_connected (sourceUnit)) then
+			local current_note = Notepad.db.currently_shown
+			if (current_note) then
+				local note = Notepad:GetNote (current_note)
+				Notepad:SendPluginCommWhisperMessage (COMM_RECEIVED_SEED, sourceUnit, nil, nil, Notepad:GetPlayerNameWithRealm(), nil, note.seed, note.last_edit_date)
+			else
+				Notepad:SendPluginCommWhisperMessage (COMM_RECEIVED_FULLNOTE, sourceUnit, nil, nil, Notepad:GetPlayerNameWithRealm())
+			end
+		end
+
+	--> Query hasn been answered by the raid leader - the user now has the current note state
+	elseif (prefix == COMM_RECEIVED_SEED) then --"NORI"
+		--> check if the answer came from the raid leader
+		if (not IsInRaid() or not is_raid_leader (sourceUnit)) then
+			return
+		end
+		
+		--> no note is currently shown
+		if (not noteSeed or type (noteSeed) ~= "number" or not noteDate or type (noteDate) ~= "number") then
+			return
+		end
+
+		--> check if we have the current note
+		local note = Notepad:GetNote (noteSeed)
+		if (not note) then
+			--> if not, we have to request the note from the raid leader
+			local raidLeader = Notepad:GetRaidLeader()
+			if (raidLeader and is_connected (raidLeader)) then
+				Notepad:SendPluginCommWhisperMessage (COMM_QUERY_NOTE, raidLeader, nil, nil, Notepad:GetPlayerNameWithRealm())
+			end
+			return
+		end
+	
+		--> check if the note we have is up to date
+		if (note.last_edit_date < noteDate) then
+			--> if not, we have to request the note from the raid leader
+			local raidLeader = Notepad:GetRaidLeader()
+			if (raidLeader and is_connected (raidLeader)) then
+				Notepad:SendPluginCommWhisperMessage (COMM_QUERY_NOTE, raidLeader, nil, nil, Notepad:GetPlayerNameWithRealm())
+			end
+			return
+		end
+		
+		--> we have the note and it is up to date, show it on the screen
+		Notepad:ShowNoteOnScreen (noteSeed)
+		
+	--> Request Note - the user received the current state and doesn't have the current note, request it from the raid leader
+	elseif (prefix == COMM_QUERY_NOTE) then --"NOQN"
+		--> check if I'm the raid leader
+		if (not IsInRaid() or not is_raid_leader ("player")) then
+			return
+		end
+		
+		if (is_connected (sourceUnit)) then
+			local current_note = Notepad.db.currently_shown
+			if (current_note) then
+				local note = Notepad:GetNote (current_note)
+				Notepad:SendPluginCommWhisperMessage (COMM_RECEIVED_FULLNOTE, sourceUnit, nil, nil, Notepad:GetPlayerNameWithRealm(), note)
+			else
+				--> if no note is shown, just send an empty FULLNOTE
+				Notepad:SendPluginCommWhisperMessage (COMM_RECEIVED_FULLNOTE, sourceUnit, nil, nil, Notepad:GetPlayerNameWithRealm())
+			end
+		end
+		
+	end
+
+end
+
+--> send and receive notes:
+	-- Full Note - the raid leader sent a note to be shown on the screen
+	RA:RegisterPluginComm (COMM_RECEIVED_FULLNOTE, Notepad.OnReceiveComm)
+--> query a Note or ID and Time:
+	-- Request Current ID - received by the raid leader, asking about the current note state (id and time)
+	RA:RegisterPluginComm (COMM_QUERY_SEED, Notepad.OnReceiveComm)
+	-- Received Current ID - raid leader response with the current note id and time
+	RA:RegisterPluginComm (COMM_RECEIVED_SEED, Notepad.OnReceiveComm)
+	-- Request Note - request a full note with a ID
+	RA:RegisterPluginComm (COMM_QUERY_NOTE, Notepad.OnReceiveComm)
+
+function Notepad:SendUnShowNote()
+	-- send a signal to hide the current note shown
+	
+	-- is raid leader?
+	if (is_raid_leader ("player") and IsInRaid()) then
+		Notepad:SendPluginCommMessage (COMM_RECEIVED_FULLNOTE, "RAID", nil, nil, Notepad:GetPlayerNameWithRealm(), nil)
+	end
 end
 
 function Notepad:SendNote (note_id)
 	-- send the note for other people in the raid
+	
+	-- is raid leader?
+	if (is_raid_leader ("player") and IsInRaid()) then
+	
+		local ZoneName, InstanceType, DifficultyID, _, _, _, _, ZoneMapID = GetInstanceInfo()
+		if (DifficultyID and DifficultyID == 17) then
+			--> it's raid finder
+			return
+		end
+	
+		-- send the note?
+		local note = Notepad:GetNote (note_id)
+		if (note) then
+			Notepad:SendPluginCommMessage (COMM_RECEIVED_FULLNOTE, "RAID", nil, nil, Notepad:GetPlayerNameWithRealm(), note)
+		end
+	end
+	
 end

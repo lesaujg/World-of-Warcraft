@@ -3,8 +3,12 @@
 local RA = RaidAssist
 local L = LibStub ("AceLocale-3.0"):GetLocale ("RaidAssistAddon")
 local _
+local default_priority = 0
 
 local StopMeters = {version = "v0.1", pluginname = "Meters"}
+StopMeters.IsDisabled = true
+
+
 local default_config = {
 	enabled = true,
 	stop_recount = true,
@@ -12,11 +16,18 @@ local default_config = {
 	stop_details = true,
 }
 
+local icon_texcoord = {l=32/512, r=64/512, t=0, b=1}
+local text_color_enabled = {r=1, g=1, b=1, a=1}
+local text_color_disabled = {r=0.5, g=0.5, b=0.5, a=1}
+local icon_texture = [[Interface\AddOns\IskarAssist\media\plugin_icons]]
+
+local can_install = false
+
 StopMeters.menu_text = function (plugin)
 	if (StopMeters.db.enabled) then
-		return [[Interface\AddOns\RaidAssist\Media\attendance_menu_icon]], icon_texcoord, "Stop Meters", text_color_enabled
+		return icon_texture, icon_texcoord, "Stop Meters", text_color_enabled
 	else
-		return [[Interface\AddOns\RaidAssist\Media\attendance_menu_icon]], icon_texcoord, "Stop Meters", text_color_disabled
+		return icon_texture, icon_texcoord, "Stop Meters", text_color_disabled
 	end
 end
 
@@ -68,6 +79,9 @@ function StopMeters.PluginCommReceived (data)
 end
 
 StopMeters.OnInstall = function (plugin)
+
+	StopMeters.db.menu_priority = default_priority
+
 	StopMeters:RegisterPluginComm ("SM", StopMeters.PluginCommReceived)
 	StopMeters:RegisterEvent ("ENCOUNTER_START")
 	StopMeters:RegisterEvent ("ENCOUNTER_STOP")
@@ -114,7 +128,9 @@ function StopMeters.BuildOptions (frame)
 
 end
 
-local install_status = RA:InstallPlugin ("Stop Meters", "RAStopMeters", StopMeters, default_config)
+if (can_install) then
+	local install_status = RA:InstallPlugin ("Stop Meters", "RAStopMeters", StopMeters, default_config)
+end
 
 SLASH_StopMeters1, SLASH_StopMeters2 = "/stop", "/stopmeters"
 function SlashCmdList.StopMeters (msg, editbox)

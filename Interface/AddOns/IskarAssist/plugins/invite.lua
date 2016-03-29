@@ -1,30 +1,33 @@
+-- InviteUnit/AcceptGroup
 
 
 local RA = RaidAssist
 local L = LibStub ("AceLocale-3.0"):GetLocale ("RaidAssistAddon")
 local _
+local default_priority = 8
 
 local Invite = {version = "v0.1", pluginname = "Invites"}
 
 local default_config = {
 	presets = {},
 	invite_msg = "[RA]: invites in 5 seconds.",
-	auto_invite = true,
+	auto_invite = false,
 	auto_invite_limited = true,
 	auto_invite_keywords = {},
-	auto_accept_invites = true,
+	auto_accept_invites = false,
 	auto_accept_invites_limited = true,
 }
 
-local icon_texcoord = {l=0.078125, r=0.921875, t=0.078125, b=0.921875}
+local icon_texcoord = {l=1, r=0, t=0, b=1}
 local text_color_enabled = {r=1, g=1, b=1, a=1}
 local text_color_disabled = {r=0.5, g=0.5, b=0.5, a=1}
+local icon_texture = [[Interface\CURSOR\Cast]]
 
 Invite.menu_text = function (plugin)
 	if (Invite.db.enabled) then
-		return [[Interface\AddOns\RaidAssist\Media\attendance_menu_icon]], icon_texcoord, "Invites", text_color_enabled
+		return icon_texture, icon_texcoord, "Invites", text_color_enabled
 	else
-		return [[Interface\AddOns\RaidAssist\Media\attendance_menu_icon]], icon_texcoord, "Invites", text_color_disabled
+		return icon_texture, icon_texcoord, "Invites", text_color_disabled
 	end
 end
 
@@ -42,8 +45,6 @@ Invite.menu_on_click = function (plugin)
 	--	Invite.BuildOptions()
 	--	Invite.options_built = true
 	--end
-	
-	
 	--Invite.main_frame:Show()
 	
 	RA.OpenMainOptions (Invite)
@@ -53,6 +54,8 @@ Invite.menu_on_click = function (plugin)
 end
 
 Invite.OnInstall = function (plugin)
+
+	Invite.db.menu_priority = default_priority
 
 	if (not Invite.db.first_run) then
 		tinsert (Invite.db.auto_invite_keywords, "inv")
@@ -65,9 +68,12 @@ Invite.OnInstall = function (plugin)
 	Invite:RegisterEvent ("PARTY_INVITE_REQUEST")
 	Invite:RegisterEvent ("CHAT_MSG_WHISPER")
 	Invite:RegisterEvent ("CHAT_MSG_BN_WHISPER")
-	
+
 	C_Timer.After (20, Invite.CheckForAutoInvites)
-	
+
+	--Invite.db.auto_invite = false
+	--Invite.db.auto_accept_invites = false
+
 	--debug
 	--C_Timer.After (1, Invite.menu_on_click)
 end
@@ -144,7 +150,7 @@ local accept_group = function (from, source)
 	AcceptGroup()
 	StaticPopup_Hide ("PARTY_INVITE")
 	StaticPopup_Hide ("PARTY_INVITE_XREALM")
-	Invite:Msg ("invite from " .. from .. " accepted (" .. (source == 1 and "|cFFFF5555accepting all invites|r") or (source == 2 and "|cff82c5ffbnet friend|r") or (source == 3 and "|cfffee05bfriend|r") or (source == 4 and "|cff40fb40guild member|r") .. ")")
+--	Invite:Msg ("invite from " .. from .. " accepted (" .. (source == 1 and "|cFFFF5555accepting all invites|r") or (source == 2 and "|cff82c5ffbnet friend|r") or (source == 3 and "|cfffee05bfriend|r") or (source == 4 and "|cff40fb40guild member|r") .. ")")
 end
 
 function Invite:PARTY_INVITE_REQUEST (from)
@@ -182,6 +188,14 @@ end
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+function Invite:GetScheduleCores()
+	local RaidSchedule = _G ["RaidAssistRaidSchedule"]
+	if (RaidSchedule) then
+		return RaidSchedule.db.cores
+	else
+		return {}
+	end
+end
 
 local empty_func = function()end
 
@@ -201,19 +215,24 @@ function Invite.BuildOptions (frame)
 	Invite.main_frame = frame
 	main_frame:SetSize (400, 500)
 
-	function Invite:BuildCreatePanel()
-		local panel = RA:CreatePluginFrame (Invite, "InviteNewProfileFrame", "Create New Invite Preset")
-		panel:SetSize (485, 410)
+	--- create panel precisa ser passado para dentro da janela, ficaria no lado esquerdo
+	function Invite:CleanNewInviteFrames()
+	
+	end
+
+	----------create new invite frames
+	
+		local panel = main_frame
 		
 		--preset name
 		local label_preset_name = RA:CreateLabel (panel, "Preset Name" .. ": ", Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 		local editbox_preset_name = RA:CreateTextEntry (panel, empty_func, 160, 20, "editbox_preset_name", _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
-		label_preset_name:SetPoint ("topleft", panel, "topleft", 10, -40)
+		label_preset_name:SetPoint ("topleft", panel, "topleft", 10, -0)
 		editbox_preset_name:SetPoint ("left", label_preset_name, "right", 2, 0)
 
 		--guild rank to invite
 		local welcome_text_create1 = RA:CreateLabel (panel, "Select here, which ranks will be invited, the raid difficulty and who is the master looter (if any):", Invite:GetTemplate ("font", "ORANGE_FONT_TEMPLATE"))
-		welcome_text_create1:SetPoint ("topleft", panel, "topleft", 10, -70)
+		welcome_text_create1:SetPoint ("topleft", panel, "topleft", 10, -35)
 		
 		local switchers = {}
 		function Invite:UpdateRanksOnProfileCreation()
@@ -226,7 +245,7 @@ function Invite.BuildOptions (frame)
 				s.rank_label:Hide()
 			end
 			
-			local x, y, b, i = 10, -100, 5, 1
+			local x, y, b, i = 10, -60, 4, 1
 			for rank_index, rank_name in pairs (ranks) do
 			
 				local switch = switchers [i]
@@ -271,23 +290,23 @@ function Invite.BuildOptions (frame)
 		local label_diff = RA:CreateLabel (panel, "Raid Difficulty" .. ": ", Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 		local dropdown_diff = RA:CreateDropDown (panel, dropdown_diff_fill, 1, 160, 20, "dropdown_diff_preset", _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
 		dropdown_diff:SetPoint ("left", label_diff, "right", 2, 0)
-		label_diff:SetPoint (10, -160)
+		label_diff:SetPoint (10, -130)
 		
 		--master loot
 		local label_masterloot_name = RA:CreateLabel (panel, "Master Loot" .. ": ", Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 		local editbox_masterloot_name = RA:CreateTextEntry (panel, empty_func, 160, 20, "editbox_masterloot_name", _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
-		label_masterloot_name:SetPoint ("topleft", panel, "topleft", 10, -185)
+		label_masterloot_name:SetPoint ("topleft", panel, "topleft", 10, -155)
 		editbox_masterloot_name:SetPoint ("left", label_masterloot_name, "right", 2, 0)
-		
+
 		--raid leader
 		local label_raidleader_name = RA:CreateLabel (panel, "Raid Leader" .. ": ", Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 		local editbox_raidleader_name = RA:CreateTextEntry (panel, empty_func, 160, 20, "editbox_raidleader_name", _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
-		label_raidleader_name:SetPoint ("topleft", panel, "topleft", 10, -210)
+		label_raidleader_name:SetPoint ("topleft", panel, "topleft", 10, -180)
 		editbox_raidleader_name:SetPoint ("left", label_raidleader_name, "right", 2, 0)		
 		
 		--keep auto inviting for X minutes
-		local welcome_text_create2 = RA:CreateLabel (panel, "The addon can keep auto inviting for you every minute for a period of time, or even start inviting by its own when it's near your raid scheduele time.", Invite:GetTemplate ("font", "ORANGE_FONT_TEMPLATE"))
-		welcome_text_create2:SetPoint ("topleft", panel, "topleft", 10, -245)
+		local welcome_text_create2 = RA:CreateLabel (panel, "Auto Invite Settings:", Invite:GetTemplate ("font", "ORANGE_FONT_TEMPLATE"))
+		welcome_text_create2:SetPoint ("topleft", panel, "topleft", 10, -215)
 		
 		local keep_auto_invite_table = {{value = 0, label = "disabled", onclick = empty_func}}
 		for i = 2, 30 do
@@ -299,19 +318,19 @@ function Invite.BuildOptions (frame)
 		local label_keep_auto_invite = RA:CreateLabel (panel, "Keep Inviting For" .. ": ", Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 		local dropdown_keep_auto_invite = RA:CreateDropDown (panel, keep_auto_invite_fill, 1, 160, 20, "dropdown_keep_invites", _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
 		dropdown_keep_auto_invite:SetPoint ("left", label_keep_auto_invite, "right", 2, 0)
-		label_keep_auto_invite:SetPoint (10, -280)
+		label_keep_auto_invite:SetPoint (10, -250)
 		
 		--auto start inviting
 		local auto_invite_switch, auto_invite_label = RA:CreateSwitch (panel, empty_func, false, _, _, _, _, "switch_auto_invite", _, _, _, _, "Auto Start Invites", Invite:GetTemplate ("switch", "OPTIONS_CHECKBOX_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 		auto_invite_switch:SetAsCheckBox()
-		auto_invite_label:SetPoint ("topleft", panel, "topleft", 10, -315)	
+		auto_invite_label:SetPoint ("topleft", panel, "topleft", 10, -285)	
 		
 		local schedule_fill = function()
 			local t = {}
-			if (_G ["RaidAssistAttendance"]) then
-				local all_cores = _G ["RaidAssistAttendance"]:GetAllRegisteredCores()
-				for i = 1, #all_cores do
-					t [#t+1] = {value = i, label = all_cores[i].core_name, onclick = empty_func}
+			if (_G ["RaidAssistRaidSchedule"]) then
+				local all_cores = Invite:GetScheduleCores()
+				for i, core in pairs (all_cores) do
+					t [#t+1] = {value = i, label = core.core_name, onclick = empty_func}
 				end
 			end
 			return t
@@ -319,7 +338,7 @@ function Invite.BuildOptions (frame)
 		local label_schedule_select = RA:CreateLabel (panel, "Using this Raid Schedule" .. ": ", Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 		local dropdown_schedule_select = RA:CreateDropDown (panel, schedule_fill, 1, 160, 20, "dropdown_schedule", _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
 		dropdown_schedule_select:SetPoint ("left", label_schedule_select, "right", 2, 0)
-		label_schedule_select:SetPoint (10, -345)
+		label_schedule_select:SetPoint (10, -305)
 		
 		function Invite:ResetNewPresetPanel()
 			editbox_preset_name.text = ""
@@ -335,6 +354,32 @@ function Invite.BuildOptions (frame)
 			dropdown_schedule_select:Select (1, true)
 			
 			panel.button_create_preset:SetText ("Create")
+		end
+		
+		function Invite:ShowPreset (preset)
+			editbox_preset_name.text = preset.name
+			
+			for i = 1, #switchers do
+				local switch = switchers [i]
+				switch:SetValue (false)
+			end
+			for this_rank, _ in pairs (preset.ranks) do
+				for i = 1, #switchers do
+					local switch = switchers [i]
+					if (switch.rank == this_rank) then
+						switch:SetValue (true)
+						break
+					end
+				end
+			end
+			
+			dropdown_diff:Select (preset.difficulty)
+			editbox_masterloot_name.text = preset.masterloot or ""
+			editbox_raidleader_name.text = preset.raidleader or ""
+			
+			dropdown_keep_auto_invite:Select (preset.keepinvites)
+			auto_invite_switch:SetValue (preset.autostart)
+			dropdown_schedule_select:Select (preset.autostartcore)
 		end
 		
 		function Invite:EditPreset (preset)
@@ -377,11 +422,13 @@ function Invite.BuildOptions (frame)
 			local auto_start_invites = auto_invite_switch:GetValue()
 			local auto_start_core
 			
-			if (_G ["RaidAssistAttendance"]) then
-				auto_start_core = _G ["RaidAssistAttendance"]:GetAllRegisteredCores()[dropdown_schedule_select:GetValue()].core_name
+			if (_G ["RaidAssistRaidSchedule"]) then
+				local cores = Invite:GetScheduleCores()
+				local dropdown_value = dropdown_schedule_select:GetValue()
+				local coreTable = cores [dropdown_value]
+				local coreName = coreTable and coreTable.core_name
+				auto_start_core = coreName
 			end
-			
-			print ("ML:",master_loot, "RL:",raid_leader)
 			
 			local got_rank_selected
 			for i = 1, #switchers do
@@ -422,20 +469,23 @@ function Invite.BuildOptions (frame)
 			
 			Invite.is_editing = nil
 			Invite.is_editing_table = nil
+
+			Invite:DisableCreatePanel()
+			Invite:EnableInviteButtons()
 			
-			InviteNewProfileFrame:Hide()
 			main_frame:RefreshPresetButtons()
 		end
 		
 		--create button (confirm) // edit button is 'save'
 		local create_button = RA:CreateButton (panel, Invite.create_or_edit_preset, 160, 20, "Create Preset", _, _, _, "button_create_preset", _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 		create_button:SetPoint ("topleft", panel, "topleft", 10 , -375)
-		
-	end
+	
+	------------------------ fim	
+
 
 	Invite.create_new_preset = function()
 		if (not Invite.create_preset_panel_built) then
-			Invite:BuildCreatePanel()
+			Invite:CleanNewInviteFrames()
 			Invite.create_preset_panel_built = true
 		end
 		
@@ -444,7 +494,9 @@ function Invite.BuildOptions (frame)
 		
 		Invite:ResetNewPresetPanel()
 		Invite:UpdateRanksOnProfileCreation()
-		InviteNewProfileFrame:Show()
+		
+		Invite:EnableCreatePanel()
+		Invite:DisableInviteButtons()
 	end
 	
 	local edit_preset = function()
@@ -454,214 +506,293 @@ function Invite.BuildOptions (frame)
 			Invite.is_editing_table = Invite:GetPreset (dropdown_value)
 			
 			if (not Invite.EditPreset) then
-				Invite:BuildCreatePanel()
+				Invite:CleanNewInviteFrames()
 			end
 			Invite:UpdateRanksOnProfileCreation()
 			
+			Invite:EnableCreatePanel()
 			Invite:EditPreset (Invite.is_editing_table)
+			Invite:DisableInviteButtons()
 		end
 	end
 	
-	--> welcome text
-	local welcome_text1 = RA:CreateLabel (main_frame, "Select the preset you want to use to start the invites.", Invite:GetTemplate ("font", "ORANGE_FONT_TEMPLATE"))
-	welcome_text1:SetPoint ("topleft", main_frame, "topleft", 10, -40)
 	
-	--> hold all preset buttons created
-	local preset_buttons = {}
-	
-	--> no preset created yet
-	local no_preset_text1 = RA:CreateLabel (main_frame, "There is no preset created yet.", Invite:GetTemplate ("font", "ORANGE_FONT_TEMPLATE"))
-	no_preset_text1.color = "red"
-	no_preset_text1:SetPoint ("topleft", main_frame, "topleft", 10, -70)
-	
-	local select_preset_start_inviting = function (_, _, preset_number)
-		Invite:StartInvites (preset_number)
-	end
-	
-	--> update preset buttons when on frame show()
-	function main_frame:RefreshPresetButtons()
-		for i = 1, #preset_buttons do
-			preset_buttons[i]:Hide()
+	-------- Main widgets frames
+		local x_start = 400
+		
+		--> welcome text
+		local welcome_text1 = RA:CreateLabel (main_frame, "Select the preset you want to use to start the invites.", Invite:GetTemplate ("font", "ORANGE_FONT_TEMPLATE"))
+		welcome_text1:SetPoint ("topleft", main_frame, "topleft", x_start, 0)
+		
+		--> hold all preset buttons created
+		local preset_buttons = {}
+		
+		--> no preset created yet
+		local no_preset_text1 = RA:CreateLabel (main_frame, "There is no preset created yet.", Invite:GetTemplate ("font", "ORANGE_FONT_TEMPLATE"))
+		no_preset_text1.color = "red"
+		no_preset_text1:SetPoint ("topleft", main_frame, "topleft", x_start, -70)
+		
+		local select_preset_start_inviting = function (_, _, preset_number)
+			Invite:StartInvites (preset_number)
 		end
 		
-		local got_one
-		local x, y = 10, -70
-		
-		for i = 1, #Invite.db.presets do
-			local preset = Invite.db.presets[i]
-			local button = preset_buttons[i]
-			if (not button) then
-				button = RA:CreateButton (main_frame, select_preset_start_inviting, 110, 20, "", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+		--> update preset buttons when on frame show()
+		function main_frame:RefreshPresetButtons()
+			for i = 1, #preset_buttons do
+				preset_buttons[i]:Hide()
+			end
+			
+			local got_one
+			local x, y = x_start, -70
+			
+			for i = 1, #Invite.db.presets do
+				local preset = Invite.db.presets[i]
+				local button = preset_buttons[i]
+				if (not button) then
+					button = RA:CreateButton (main_frame, select_preset_start_inviting, 110, 20, "", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+					preset_buttons[i] = button
+				end
+				button:Show()
+				button:SetText (preset.name)
+				button:SetClickFunction (select_preset_start_inviting, i)
+				
+				button:ClearAllPoints()
 				button:SetPoint ("topleft", main_frame, "topleft", x, y)
 				x = x + 120
 				if (i == 3 or i == 6) then
 					y = y - 25
-					x = 10
+					x = x_start
 				end
-				preset_buttons[i] = button
+				
+				got_one = true
 			end
-			button:Show()
-			button:SetText (preset.name)
-			button:SetClickFunction (select_preset_start_inviting, i)
-			got_one = true
+			
+			if (got_one) then
+				no_preset_text1:Hide()
+			else
+				no_preset_text1:Show()
+			end
+			
+			main_frame.dropdown_edit_preset:Refresh()
+			main_frame.dropdown_edit_preset:Select (1, true)
+			main_frame.dropdown_remove_preset:Refresh()
+			main_frame.dropdown_remove_preset:Select (1, true)
 		end
 		
-		if (got_one) then
-			no_preset_text1:Hide()
-		else
-			no_preset_text1:Show()
-		end
+		--> welcome text 2
+		local welcome_text2 = RA:CreateLabel (main_frame, "Create, edit or remove a preset.", Invite:GetTemplate ("font", "ORANGE_FONT_TEMPLATE"))
+		welcome_text2:SetPoint ("topleft", main_frame, "topleft", x_start, -145)
 		
-		main_frame.dropdown_edit_preset:Refresh()
-		main_frame.dropdown_edit_preset:Select (1, true)
-		main_frame.dropdown_remove_preset:Refresh()
-		main_frame.dropdown_remove_preset:Select (1, true)
-	end
-	
-	--> welcome text 2
-	local welcome_text2 = RA:CreateLabel (main_frame, "Here you can create, edit or remove a preset.", Invite:GetTemplate ("font", "ORANGE_FONT_TEMPLATE"))
-	welcome_text2:SetPoint ("topleft", main_frame, "topleft", 10, -145)
-	
-	local create_button = RA:CreateButton (main_frame, Invite.create_new_preset, 160, 20, "Create Preset", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	create_button:SetPoint ("topleft", main_frame, "topleft", 10 , -165)
+		local create_button = RA:CreateButton (main_frame, Invite.create_new_preset, 160, 20, "Create Preset", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+		create_button:SetPoint ("topleft", main_frame, "topleft", x_start , -165)
 
-	--> edit dropdown
-	local dropdown_edit_fill = function()
-		local t = {}
-		for i, preset in ipairs (Invite.db.presets) do
-			t [#t+1] = {value = i, label = preset.name, onclick = empty_func}
+		--> edit dropdown
+		local on_edit_select = function (_, _, preset)
+			Invite:ShowPreset (Invite:GetPreset (preset))
+			Invite:DisableCreatePanel()
 		end
-		return t
-	end
-	local label_edit = RA:CreateLabel (main_frame, "Edit" .. ": ", Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	local dropdown_edit = RA:CreateDropDown (main_frame, dropdown_edit_fill, _, 160, 20, "dropdown_edit_preset", _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
-	dropdown_edit:SetPoint ("left", label_edit, "right", 2, 0)
-	
-	local button_edit = RA:CreateButton (main_frame, edit_preset, 60, 18, "edit", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	button_edit:SetPoint ("left", dropdown_edit, "right", 2, 0)
-	
-	--> remove dropdown
-	local dropdown_remove_fill = function()
-		local t = {}
-		for i, preset in ipairs (Invite.db.presets) do
-			t [#t+1] = {value = i, label = preset.name, onclick = empty_func}
+		local dropdown_edit_fill = function()
+			local t = {}
+			for i, preset in ipairs (Invite.db.presets) do
+				t [#t+1] = {value = i, label = preset.name, onclick = on_edit_select}
+			end
+			return t
 		end
-		return t
-	end
-	local label_remove = RA:CreateLabel (main_frame, "Remove" .. ": ", Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	local dropdown_remove = RA:CreateDropDown (main_frame, dropdown_remove_fill, _, 160, 20, "dropdown_remove_preset", _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
-	dropdown_remove:SetPoint ("left", label_remove, "right", 2, 0)
+		local label_edit = RA:CreateLabel (main_frame, "Edit" .. ": ", Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+		local dropdown_edit = RA:CreateDropDown (main_frame, dropdown_edit_fill, _, 160, 20, "dropdown_edit_preset", _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
+		dropdown_edit:SetPoint ("left", label_edit, "right", 2, 0)
+		
+		local button_edit = RA:CreateButton (main_frame, edit_preset, 60, 18, "edit", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+		button_edit:SetPoint ("left", dropdown_edit, "right", 2, 0)
+		
+		--> remove dropdown
+		local dropdown_remove_fill = function()
+			local t = {}
+			for i, preset in ipairs (Invite.db.presets) do
+				t [#t+1] = {value = i, label = preset.name, onclick = empty_func}
+			end
+			return t
+		end
+		local label_remove = RA:CreateLabel (main_frame, "Remove" .. ": ", Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+		local dropdown_remove = RA:CreateDropDown (main_frame, dropdown_remove_fill, _, 160, 20, "dropdown_remove_preset", _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
+		dropdown_remove:SetPoint ("left", label_remove, "right", 2, 0)
 
-	local remove_preset_table = function()
-		local preset_number = dropdown_remove.value
-		if (preset_number) then
-			local preset = Invite:GetPreset (preset_number)
-			if (preset) then
-				if (Invite.is_editing and Invite.is_editing_table == preset) then
-					InviteNewProfileFrame:Hide()
-					Invite.is_editing = nil
-					Invite.is_editing_table = nil
+		local remove_preset_table = function()
+			local preset_number = dropdown_remove.value
+			if (preset_number) then
+				local preset = Invite:GetPreset (preset_number)
+				if (preset) then
+					if (Invite.is_editing and Invite.is_editing_table == preset) then
+						InviteNewProfileFrame:Hide()
+						Invite.is_editing = nil
+						Invite.is_editing_table = nil
+					end
+					Invite:DeletePreset (preset_number)
+					main_frame:RefreshPresetButtons()
+					dropdown_remove:Refresh()
+					dropdown_remove:Select (1, true)
+					dropdown_edit:Refresh()
+					dropdown_edit:Select (1, true)
 				end
-				Invite:DeletePreset (preset_number)
-				main_frame:RefreshPresetButtons()
-				dropdown_remove:Refresh()
-				dropdown_remove:Select (1, true)
-				dropdown_edit:Refresh()
-				dropdown_edit:Select (1, true)
 			end
+			
 		end
 		
-	end
-	
-	local button_remove = RA:CreateButton (main_frame, remove_preset_table, 60, 18, "remove", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	button_remove:SetPoint ("left", dropdown_remove, "right", 2, 0)
-	
-	label_edit:SetPoint ("topleft", main_frame, "topleft", 10, -190)
-	label_remove:SetPoint ("topleft", main_frame, "topleft", 10, -210)
-	
-	--> auto invite on whisper
-	--> welcome msg
-	local welcome_text3 = RA:CreateLabel (main_frame, "On receiving a whisper with a specific keyword, the addon auto invite the person who whispered.", Invite:GetTemplate ("font", "ORANGE_FONT_TEMPLATE"))
-	welcome_text3:SetPoint ("topleft", main_frame, "topleft", 10, -240)
-	
-	--> enabled
-	local on_auto_invite_switch = function (_, _, value)
-		Invite.db.auto_invite = value
-	end
-	local auto_invite_switch, auto_invite_label = RA:CreateSwitch (main_frame, on_auto_invite_switch, Invite.db.auto_invite, _, _, _, _, "switch_auto_invite", _, _, _, _, "Enabled", Invite:GetTemplate ("switch", "OPTIONS_CHECKBOX_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	auto_invite_switch:SetAsCheckBox()
-	auto_invite_label:SetPoint ("topleft", main_frame, "topleft", 10, -260)
-	
-	--> only from guild
-	local on_auto_invite_guild_switch = function (_, _, value)
-		Invite.db.auto_invite_limited = value
-	end
-	local auto_invite_guild_switch, auto_invite_guild_label = RA:CreateSwitch (main_frame, on_auto_invite_guild_switch, Invite.db.auto_invite, _, _, _, _, "switch_auto_invite_guild", _, _, _, _, "Only Guild and Friends", Invite:GetTemplate ("switch", "OPTIONS_CHECKBOX_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	auto_invite_guild_switch:SetAsCheckBox()
-	auto_invite_guild_label:SetPoint ("topleft", main_frame, "topleft", 10, -280)	
-	
-	--> key words
-	--add
-	local editbox_add_keyword, label_add_keyword = RA:CreateTextEntry (main_frame, empty_func, 120, 20, "entry_add_keyword", _, "Add Keyword", Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	label_add_keyword:SetPoint ("topleft", main_frame, "topleft", 10, -300)	
-	
-	local add_key_word_func = function()
-		local keyword = editbox_add_keyword.text
-		if (keyword ~= "") then
-			tinsert (Invite.db.auto_invite_keywords, keyword)
+		local button_remove = RA:CreateButton (main_frame, remove_preset_table, 60, 18, "remove", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+		button_remove:SetPoint ("left", dropdown_remove, "right", 2, 0)
+		
+		label_edit:SetPoint ("topleft", main_frame, "topleft", x_start, -190)
+		label_remove:SetPoint ("topleft", main_frame, "topleft", x_start, -210)
+		
+		
+		--> auto invite on whisper
+		--> welcome msg
+		local welcome_text3 = RA:CreateLabel (main_frame, "On receiving a whisper with a specific keyword, should auto invite the person?.", Invite:GetTemplate ("font", "ORANGE_FONT_TEMPLATE"))
+		welcome_text3:SetPoint ("topleft", main_frame, "topleft", x_start, -240)
+		
+		--> enabled
+		local on_auto_invite_switch = function (_, _, value)
+			Invite.db.auto_invite = value
 		end
-		editbox_add_keyword.text = ""
-		editbox_add_keyword:ClearFocus()
-		main_frame.dropdown_keyword_remove:Refresh()
-		main_frame.dropdown_keyword_remove:Select (1, true)
-	end
-	local button_add_keyword = RA:CreateButton (main_frame, add_key_word_func, 60, 18, "add", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	button_add_keyword:SetPoint ("left", editbox_add_keyword, "right", 2, 0)
-	
-	--remove
-	local dropdown_keyword_erase_fill = function()
-		local t = {}
-		for i, keyword in ipairs (Invite.db.auto_invite_keywords) do
-			t [#t+1] = {value = i, label = keyword, onclick = empty_func}
+		local auto_invite_switch, auto_invite_label = RA:CreateSwitch (main_frame, on_auto_invite_switch, Invite.db.auto_invite, _, _, _, _, "switch_auto_invite2", _, _, _, _, "Enabled", Invite:GetTemplate ("switch", "OPTIONS_CHECKBOX_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+		auto_invite_switch:SetAsCheckBox()
+		auto_invite_label:SetPoint ("topleft", main_frame, "topleft", x_start, -260)
+		
+		--> only from guild
+		local on_auto_invite_guild_switch = function (_, _, value)
+			Invite.db.auto_invite_limited = value
 		end
-		return t
-	end
-	local label_keyword_remove = RA:CreateLabel (main_frame, "Erase Keyword" .. ": ", Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	local dropdown_keyword_remove = RA:CreateDropDown (main_frame, dropdown_keyword_erase_fill, _, 160, 20, "dropdown_keyword_remove", _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
-	dropdown_keyword_remove:SetPoint ("left", label_keyword_remove, "right", 2, 0)
+		local auto_invite_guild_switch, auto_invite_guild_label = RA:CreateSwitch (main_frame, on_auto_invite_guild_switch, Invite.db.auto_invite_limited, _, _, _, _, "switch_auto_invite_guild", _, _, _, _, "Only Guild and Friends", Invite:GetTemplate ("switch", "OPTIONS_CHECKBOX_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+		auto_invite_guild_switch:SetAsCheckBox()
+		auto_invite_guild_label:SetPoint ("topleft", main_frame, "topleft", x_start, -280)	
+		
+		--> key words
+		--add
+		local editbox_add_keyword, label_add_keyword = RA:CreateTextEntry (main_frame, empty_func, 120, 20, "entry_add_keyword", _, "Add Keyword", Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+		label_add_keyword:SetPoint ("topleft", main_frame, "topleft", x_start, -300)	
+		
+		local add_key_word_func = function()
+			local keyword = editbox_add_keyword.text
+			if (keyword ~= "") then
+				tinsert (Invite.db.auto_invite_keywords, keyword)
+			end
+			editbox_add_keyword.text = ""
+			editbox_add_keyword:ClearFocus()
+			main_frame.dropdown_keyword_remove:Refresh()
+			main_frame.dropdown_keyword_remove:Select (1, true)
+		end
+		local button_add_keyword = RA:CreateButton (main_frame, add_key_word_func, 60, 18, "add", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+		button_add_keyword:SetPoint ("left", editbox_add_keyword, "right", 2, 0)
+		
+		--remove
+		local dropdown_keyword_erase_fill = function()
+			local t = {}
+			for i, keyword in ipairs (Invite.db.auto_invite_keywords) do
+				t [#t+1] = {value = i, label = keyword, onclick = empty_func}
+			end
+			return t
+		end
+		local label_keyword_remove = RA:CreateLabel (main_frame, "Erase Keyword" .. ": ", Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+		local dropdown_keyword_remove = RA:CreateDropDown (main_frame, dropdown_keyword_erase_fill, _, 160, 20, "dropdown_keyword_remove", _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
+		dropdown_keyword_remove:SetPoint ("left", label_keyword_remove, "right", 2, 0)
 
-	local keyword_remove = function()
-		local value = dropdown_keyword_remove.value
-		tremove (Invite.db.auto_invite_keywords, value)
-		dropdown_keyword_remove:Refresh()
-		dropdown_keyword_remove:Select (1, true)
+		local keyword_remove = function()
+			local value = dropdown_keyword_remove.value
+			tremove (Invite.db.auto_invite_keywords, value)
+			dropdown_keyword_remove:Refresh()
+			dropdown_keyword_remove:Select (1, true)
+		end
+		local button_keyword_remove = RA:CreateButton (main_frame, keyword_remove, 60, 18, "remove", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+		button_keyword_remove:SetPoint ("left", dropdown_keyword_remove, "right", 2, 0)
+		label_keyword_remove:SetPoint ("topleft", main_frame, "topleft", x_start, -320)
+		
+		--> auto accept invites
+		
+		--> welcome msg
+		local welcome_text4 = RA:CreateLabel (main_frame, "When a friend or guild member send a group invite, auto accept it?", Invite:GetTemplate ("font", "ORANGE_FONT_TEMPLATE"))
+		welcome_text4:SetPoint ("topleft", main_frame, "topleft", x_start, -360)
+		
+		--> enabled
+		local on_auto_ainvite_switch = function (_, _, value)
+			Invite.db.auto_accept_invites = value
+		end
+		local auto_ainvite_switch, auto_ainvite_label = RA:CreateSwitch (main_frame, on_auto_ainvite_switch, Invite.db.auto_accept_invites, _, _, _, _, "switch_auto_ainvite", _, _, _, _, "Enabled", Invite:GetTemplate ("switch", "OPTIONS_CHECKBOX_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+		auto_ainvite_switch:SetAsCheckBox()
+		auto_ainvite_label:SetPoint ("topleft", main_frame, "topleft", x_start, -380)
+		
+		--> only from guild
+		local on_auto_ainvite_guild_switch = function (_, _, value)
+			Invite.db.auto_accept_invites_limited = value
+		end
+		local auto_ainvite_guild_switch, auto_ainvite_guild_label = RA:CreateSwitch (main_frame, on_auto_ainvite_guild_switch, Invite.db.auto_accept_invites_limited, _, _, _, _, "switch_auto_ainvite_guild", _, _, _, _, "Only From Guild and Friends", Invite:GetTemplate ("switch", "OPTIONS_CHECKBOX_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+		auto_ainvite_guild_switch:SetAsCheckBox()
+		auto_ainvite_guild_label:SetPoint ("topleft", main_frame, "topleft", x_start, -400)
+	
+	-------------- fim
+	
+	------- functions
+	
+	--> create panel
+	function Invite:DisableCreatePanel()
+		panel.button_create_preset:Disable()
+		editbox_preset_name:Disable()
+		dropdown_diff:Disable()
+		editbox_masterloot_name:Disable()
+		editbox_raidleader_name:Disable()
+		
+		dropdown_keep_auto_invite:Disable()
+		panel.switch_auto_invite:Disable()
+		dropdown_schedule_select:Disable()
+		
+		for _, switch in ipairs (switchers) do
+			switch:Disable()
+		end
 	end
-	local button_keyword_remove = RA:CreateButton (main_frame, keyword_remove, 60, 18, "remove", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	button_keyword_remove:SetPoint ("left", dropdown_keyword_remove, "right", 2, 0)
-	label_keyword_remove:SetPoint ("topleft", main_frame, "topleft", 10, -320)
 	
-	--> auto accept invites
+	function Invite:EnableCreatePanel()
+		panel.button_create_preset:Enable()
+		editbox_preset_name:Enable()
+		dropdown_diff:Enable()
+		editbox_masterloot_name:Enable()
+		editbox_raidleader_name:Enable()
+		
+		dropdown_keep_auto_invite:Enable()
+		panel.switch_auto_invite:Enable()
+		dropdown_schedule_select:Enable()
+		
+		for _, switch in ipairs (switchers) do
+			switch:Enable()
+		end
+		
+		panel.dropdown_schedule:Refresh()
+	end	
 	
-	--> welcome msg
-	local welcome_text4 = RA:CreateLabel (main_frame, "When a friend or guild member send a group invite, the addon auto accept it for you.", Invite:GetTemplate ("font", "ORANGE_FONT_TEMPLATE"))
-	welcome_text4:SetPoint ("topleft", main_frame, "topleft", 10, -360)
-	
-	--> enabled
-	local on_auto_ainvite_switch = function (_, _, value)
-		Invite.db.auto_accept_invites = value
+	function Invite:DisableInviteButtons()
+		for i = 1, #preset_buttons do
+			preset_buttons[i]:Disable()
+		end
+		create_button:Disable()
+		button_edit:Disable()
+		button_remove:Disable()
+		dropdown_edit:Disable()
+		dropdown_remove:Disable()
 	end
-	local auto_ainvite_switch, auto_ainvite_label = RA:CreateSwitch (main_frame, on_auto_ainvite_switch, Invite.db.auto_accept_invites, _, _, _, _, "switch_auto_ainvite", _, _, _, _, "Enabled", Invite:GetTemplate ("switch", "OPTIONS_CHECKBOX_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	auto_ainvite_switch:SetAsCheckBox()
-	auto_ainvite_label:SetPoint ("topleft", main_frame, "topleft", 10, -380)
 	
-	--> only from guild
-	local on_auto_ainvite_guild_switch = function (_, _, value)
-		Invite.db.auto_accept_invites_limited = value
+	function Invite:EnableInviteButtons()
+		for i = 1, #preset_buttons do
+			preset_buttons[i]:Enable()
+		end
+		create_button:Enable()
+		button_edit:Enable()
+		button_remove:Enable()
+		dropdown_edit:Enable()
+		dropdown_remove:Enable()
 	end
-	local auto_ainvite_guild_switch, auto_ainvite_guild_label = RA:CreateSwitch (main_frame, on_auto_ainvite_guild_switch, Invite.db.auto_accept_invites_limited, _, _, _, _, "switch_auto_ainvite_guild", _, _, _, _, "Only From Guild and Friends", Invite:GetTemplate ("switch", "OPTIONS_CHECKBOX_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	auto_ainvite_guild_switch:SetAsCheckBox()
-	auto_ainvite_guild_label:SetPoint ("topleft", main_frame, "topleft", 10, -400)
-
+	
+	--disable the create panel at menu creation
+	Invite:DisableCreatePanel()
+	main_frame:RefreshPresetButtons()
+	
 end
 
 
@@ -737,6 +868,11 @@ end
 
 function Invite.DoInvitesForPreset (preset)
 
+	if (not preset) then
+		Invite:Msg ("Invite thread is invalid, please cancel and re-start.")
+		return
+	end
+
 	local my_name = UnitName ("player")
 	local is_showing_all = GetGuildRosterShowOffline()
 
@@ -747,14 +883,14 @@ function Invite.DoInvitesForPreset (preset)
 
 	if (not in_raid) then
 		--> we should invite few guys, converto on raid and invite everyone else after that.
-		print ("Sending only 4 invites...")
+--		print ("Sending only 4 invites...")
 		local invites_sent = 0
 		for i = 1, select (is_showing_all and 1 or 2, GetNumGuildMembers()) do
 			local name, rank, rankIndex, level, classDisplayName, zone, note, officernote, isOnline = GetGuildRosterInfo (i) --, status, class, achievementPoints, achievementRank, isMobile, canSoR, repStanding
 			if (preset.ranks [rankIndex+1] and isOnline and not isMobile) then
 				if (my_name ~= name and ((in_raid and not UnitInRaid (Ambiguate (name, "none"))) or (in_group and not UnitInParty (Ambiguate (name, "none"))) or (not in_raid and not in_group))) then
 					InviteUnit (name)
-					print ("Inviting", name)
+					--print ("Inviting", name)
 					invites_sent = invites_sent + 1
 					if (invites_sent >= 4) then
 						break
@@ -813,6 +949,7 @@ function Invite:StopAutoInvites()
 	Invite.invite_preset = nil
 	Invite.auto_invite_frame:Hide()
 	Invite:UnregisterEvent ("GROUP_ROSTER_UPDATE")
+	Invite:EnableInviteButtons()
 end
 
 local do_first_wave = function()
@@ -870,6 +1007,7 @@ end
 local finish_invite_wave = function()
 	Invite.invite_preset = nil
 	Invite.invites_in_progress = nil
+	Invite:EnableInviteButtons()
 end
 
 function Invite:StartInvites (preset_number)
@@ -879,7 +1017,11 @@ function Invite:StartInvites (preset_number)
 	
 	local preset = Invite:GetPreset (preset_number)
 	if (preset) then
+	
+		Invite:DisableInviteButtons()
+	
 		if (preset.keepinvites and preset.keepinvites > 0) then
+			--Invite.invites_in_progress = true
 			local invite_time = preset.keepinvites * 60
 			return Invite:StartInvitesAuto (preset, invite_time)
 		else
@@ -900,15 +1042,15 @@ function Invite.CheckForAutoInvites()
 
 	-- print ("[RA] Checking invite schedules.")
 	
-	local Attendance = _G ["RaidAssistAttendance"]
-	if (Attendance) then
+	local RaidSchedule = _G ["RaidAssistRaidSchedule"]
+	if (RaidSchedule) then
 		local now = time()
 		for index, preset in ipairs (Invite:GetAllPresets()) do 
 			if (preset.autostart) then
 				
-				local core, index = Attendance:GetAttendanceTableByName (preset.autostartcore)
+				local core, index = RaidSchedule:GetRaidScheduleTableByName (preset.autostartcore)
 				if (core) then
-					local next_event_in, start_time, end_time, day, month_number, month_day = Attendance:GetNextEventTime (index)
+					local next_event_in, start_time, end_time, day, month_number, month_day = RaidSchedule:GetNextEventTime (index)
 					
 					local keep_invites = preset.keepinvites or 15
 					

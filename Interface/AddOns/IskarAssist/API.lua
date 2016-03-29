@@ -145,6 +145,11 @@ end
 	callback_param (any value), param to be added within callback.
 	... all parameter to be send within the comm.
 --]=]
+
+function RA:SendPluginCommWhisperMessage (prefix, target, callback, callback_param, ...)
+	RA:SendCommMessage (RA.comm_prefix, RA:Serialize (prefix, self.version or "", ...), "WHISPER", target, nil, callback, callback_param)
+end
+
 function RA:SendPluginCommMessage (prefix, channel, callback, callback_param, ...)
 	assert (type (prefix) == "string", "SendPluginCommMessage expects a string on parameter 1.")
 	if (callback) then
@@ -152,26 +157,26 @@ function RA:SendPluginCommMessage (prefix, channel, callback, callback_param, ..
 	end
 	if (channel == "RAID-NOINSTANCE") then
 		if (IsInRaid (LE_PARTY_CATEGORY_HOME)) then
-			RA:SendCommMessage (prefix, RA:Serialize (self.version or "", ...), "RAID", nil, nil, callback, callback_param)
+			RA:SendCommMessage (RA.comm_prefix, RA:Serialize (prefix, self.version or "", ...), "RAID", nil, nil, callback, callback_param)
 		end
 	elseif (channel == "RAID") then
 		if (IsInRaid (LE_PARTY_CATEGORY_INSTANCE)) then
-			RA:SendCommMessage (prefix, RA:Serialize (self.version or "", ...), "INSTANCE_CHAT", nil, nil, callback, callback_param)
+			RA:SendCommMessage (RA.comm_prefix, RA:Serialize (prefix, self.version or "", ...), "INSTANCE_CHAT", nil, nil, callback, callback_param)
 		else
-			RA:SendCommMessage (prefix, RA:Serialize (self.version or "", ...), "RAID", nil, nil, callback, callback_param)
+			RA:SendCommMessage (RA.comm_prefix, RA:Serialize (prefix, self.version or "", ...), "RAID", nil, nil, callback, callback_param)
 		end
 	elseif (channel == "PARTY-NOINSTANCE") then
 		if (IsInGroup (LE_PARTY_CATEGORY_HOME)) then
-			RA:SendCommMessage (prefix, RA:Serialize (self.version or "", ...), "PARTY", nil, nil, callback, callback_param)
+			RA:SendCommMessage (RA.comm_prefix, RA:Serialize (prefix, self.version or "", ...), "PARTY", nil, nil, callback, callback_param)
 		end
 	elseif (channel == "PARTY") then
 		if (IsInGroup (LE_PARTY_CATEGORY_INSTANCE)) then
-			RA:SendCommMessage (prefix, RA:Serialize (self.version or "", ...), "INSTANCE_CHAT", nil, nil, callback, callback_param)
+			RA:SendCommMessage (RA.comm_prefix, RA:Serialize (prefix, self.version or "", ...), "INSTANCE_CHAT", nil, nil, callback, callback_param)
 		else
-			RA:SendCommMessage (prefix, RA:Serialize (self.version or "", ...), "PARTY", nil, nil, callback, callback_param)
+			RA:SendCommMessage (RA.comm_prefix, RA:Serialize (prefix, self.version or "", ...), "PARTY", nil, nil, callback, callback_param)
 		end
 	else
-		RA:SendCommMessage (prefix, RA:Serialize (self.version, ...), channel, nil, nil, callback, callback_param)
+		RA:SendCommMessage (RA.comm_prefix, RA:Serialize (prefix, self.version or "", ...), channel, nil, nil, callback, callback_param)
 	end
 end
 
@@ -506,4 +511,20 @@ end
 --]=]
 function RA:UnitHasAssist (unit)
 	return IsInRaid() and (UnitIsGroupAssistant (unit) or UnitIsGroupLeader (unit))
+end
+
+--[=[
+	GetRaidLeader()
+	return the raid leader name and raidunitid
+--]=]
+function RA:GetRaidLeader()
+	if (IsInRaid()) then
+		for i = 1, GetNumGroupMembers() do
+			local name, rank = GetRaidRosterInfo (i)
+			if (rank == 2) then
+				return name, "raid" .. i
+			end
+		end
+	end
+	return false
 end

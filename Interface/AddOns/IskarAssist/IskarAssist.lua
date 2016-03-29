@@ -34,7 +34,7 @@ local anzu_texture
 local player_class
 local block_backdrop_eye = {bgFile = [[Interface\RaidFrame\Raid-Bar-Hp-Fill]], tile = true, tileSize = 16, insets = {left = 0, right = 0, top = 0, bottom = 0},
 edgeFile = "Interface\\AddOns\\IskarAssist\\border_2", edgeSize = 20}
-local iskar_version = "v0.16.6b"
+local iskar_version = "v0.17"
 
 local iskar_encounter_id = 1788 --iskar
 local iskar_npcid = 90316 --iskar
@@ -136,8 +136,8 @@ local config_table = {
 		bartexture = "Iskar Serenity",
 		barwidth = 100,
 		barheight = 20,
-		barwidth_grid = 100,
-		barheight_grid = 20,
+		barwidth_grid = 55,
+		barheight_grid = 55,
 		textfont = "Accidental Presidency",
 		textsize = 14,
 		textshadow = true,
@@ -1882,6 +1882,13 @@ function IKA:CreateFrames (show_after_cretion)
 	end
 
 	f.OpenOptionsPanel = function()
+		
+		local RA = RaidAssist
+		if (RA) then
+			RA.OpenMainOptions (IKA)
+			return
+		end
+	
 		if (UnitAffectingCombat ("player") or InCombatLockdown()) then
 			IKA:Msg ("options will be opened after the combat.")
 			IKA.schedule_open_options = true
@@ -2313,7 +2320,400 @@ function SlashCmdList.IskarAssist (msg, editbox)
 	end
 end
 
-------------------
+------------------------------------------------------------------------
+
+function IKA.BuildOptions (frame)
+	
+	if (not frame.FirstRun) then
+		frame.FirstRun = true
+	
+		local set_bar_texture = function (_, _, value) 
+			IKA.db.profile.bartexture = value
+			f:SetPlayerBlockConfig()
+		end
+		
+		local texture_icon = [[Interface\TARGETINGFRAME\UI-PhasingIcon]]
+		local texture_icon_size = {14, 14}
+		local texture_texcoord = {0, 1, 0, 1}
+		
+		local textures = SharedMedia:HashTable ("statusbar")
+		local texTable = {}
+		for name, texturePath in pairs (textures) do 
+			texTable[#texTable+1] = {value = name, label = name, iconsize = texture_icon_size, statusbar = texturePath, onclick = set_bar_texture, icon = texture_icon, texcoord = texture_texcoord}
+		end
+		table.sort (texTable, function (t1, t2) return t1.label < t2.label end)
+		---
+		local set_font_face= function (_, _, value)
+			IKA.db.profile.textfont = value
+			f:SetPlayerBlockConfig()
+		end
+		local fontObjects = SharedMedia:HashTable ("font")
+		local fontTable = {}
+		for name, fontPath in pairs (fontObjects) do 
+			fontTable[#fontTable+1] = {value = name, label = name, icon = texture_icon, iconsize = texture_icon_size, texcoord = texture_texcoord, onclick = set_font_face, font = fontPath, descfont = name}
+		end
+		table.sort (fontTable, function (t1, t2) return t1.label < t2.label end)
+		---
+		local set_group_sort= function (_, _, value)
+			IKA.db.profile.group_sorting = value
+			if (value == 1 or value == 2) then
+				--alphabetical and groups
+				if (IskarAssistOptionsPanelWidget1) then
+					IskarAssistOptionsPanelWidget1.MyObject:SetValue (IKA.db.profile.barwidth)
+					IskarAssistOptionsPanelWidget2.MyObject:SetValue (IKA.db.profile.barheight)
+				end
+			elseif (value == 3) then
+				--grid
+				if (IskarAssistOptionsPanelWidget1) then
+					IskarAssistOptionsPanelWidget1.MyObject:SetValue (IKA.db.profile.barwidth_grid)
+					IskarAssistOptionsPanelWidget2.MyObject:SetValue (IKA.db.profile.barheight_grid)
+				end
+			end
+			f:SortGroups()
+		end
+		local groupTable = {}
+		groupTable [1] = {value = 1, label = "Vertical (alphabetical)", iconsize = texture_icon_size, statusbar = texturePath, onclick = set_group_sort, icon = texture_icon, texcoord = texture_texcoord}
+		groupTable [2] = {value = 2, label = "Vertical (by groups)", iconsize = texture_icon_size, statusbar = texturePath, onclick = set_group_sort, icon = texture_icon, texcoord = texture_texcoord}
+		groupTable [3] = {value = 3, label = "Grid (by groups)", iconsize = texture_icon_size, statusbar = texturePath, onclick = set_group_sort, icon = texture_icon, texcoord = texture_texcoord}
+		---
+		local set_frame_strata = function (_, _, strata)
+			IKA.db.profile.MainPanel_strata = strata
+			f:SortGroups()
+		end
+		local strataTable = {}
+		strataTable [1] = {value = "BACKGROUND", label = "BACKGROUND", iconsize = texture_icon_size, statusbar = texturePath, onclick = set_frame_strata, icon = texture_icon, texcoord = texture_texcoord}
+		strataTable [2] = {value = "LOW", label = "LOW", iconsize = texture_icon_size, statusbar = texturePath, onclick = set_frame_strata, icon = texture_icon, texcoord = texture_texcoord}
+		strataTable [3] = {value = "MEDIUM", label = "MEDIUM", iconsize = texture_icon_size, statusbar = texturePath, onclick = set_frame_strata, icon = texture_icon, texcoord = texture_texcoord}
+		strataTable [4] = {value = "HIGH", label = "HIGH", iconsize = texture_icon_size, statusbar = texturePath, onclick = set_frame_strata, icon = texture_icon, texcoord = texture_texcoord}
+		strataTable [5] = {value = "DIALOG", label = "DIALOG", iconsize = texture_icon_size, statusbar = texturePath, onclick = set_frame_strata, icon = texture_icon, texcoord = texture_texcoord}
+		-- endd
+		
+		local set_stack_anchor = function (_, _, value)
+			IKA.db.profile.stack_count_anchor = value
+			f:SetPlayerBlockConfig()
+		end
+		local stackTable = {}
+		stackTable [1] = {value = "top", label = "TOP", iconsize = texture_icon_size, statusbar = texturePath, onclick = set_stack_anchor, icon = texture_icon, texcoord = texture_texcoord}
+		stackTable [2] = {value = "bottom", label = "BOTTOM", iconsize = texture_icon_size, statusbar = texturePath, onclick = set_stack_anchor, icon = texture_icon, texcoord = texture_texcoord}
+		stackTable [3] = {value = "left", label = "LEFT", iconsize = texture_icon_size, statusbar = texturePath, onclick = set_stack_anchor, icon = texture_icon, texcoord = texture_texcoord}
+		stackTable [4] = {value = "right", label = "RIGHT", iconsize = texture_icon_size, statusbar = texturePath, onclick = set_stack_anchor, icon = texture_icon, texcoord = texture_texcoord}
+		--
+	
+		local options_list = {
+		
+			{type = "label", get = function() return "Frame:" end, text_template = DF:GetTemplate ("font", "ORANGE_FONT_TEMPLATE")},
+		
+			{
+				type = "select",
+				get = function() return IKA.db.profile.group_sorting end,
+				values = function() return groupTable end,
+				desc = "The way the player are sorted.",
+				name = "|cFFFF9900Frame Type|r"
+			},
+			{
+				type = "select",
+				get = function() return IKA.db.profile.MainPanel_strata end,
+				values = function() return strataTable end,
+				desc = "How high the frame is placed on your screen.\n\nLowering make the frame be behind backpack, talent frame, etc.",
+				name = "Frame Strata"
+			},
+			{
+				type = "select",
+				get = function() return IKA.db.profile.stack_count_anchor end,
+				values = function() return stackTable end,
+				desc = "Where the stack of ".. aura_radiance_of_anzu .. " is attached relative to player's name.",
+				name = "Stack Anchor"
+			},
+			{
+				type = "range",
+				get = function() 
+					if (IKA.db.profile.group_sorting < 3) then
+						return IKA.db.profile.barwidth 
+					elseif (IKA.db.profile.group_sorting == 3) then	
+						return IKA.db.profile.barwidth_grid
+					end
+				end,
+				set = function (self, fixedparam, value) 
+					if (IKA.db.profile.group_sorting < 3) then
+						IKA.db.profile.barwidth = value
+					elseif (IKA.db.profile.group_sorting == 3) then
+						IKA.db.profile.barwidth_grid = value
+					end
+					f:SetPlayerBlockConfig()
+					f:SortGroups()
+				end,
+				min = 20,
+				max = 200,
+				step = 1,
+				desc = "The width of each player frame.",
+				name = "Width",
+			},
+			{
+				type = "range",
+				get = function() 
+					if (IKA.db.profile.group_sorting < 3) then
+						return IKA.db.profile.barheight
+					elseif (IKA.db.profile.group_sorting == 3) then
+						return IKA.db.profile.barheight_grid
+					end
+				end,
+				set = function (self, fixedparam, value) 
+					if (IKA.db.profile.group_sorting < 3) then
+						IKA.db.profile.barheight = value
+					elseif (IKA.db.profile.group_sorting == 3) then
+						IKA.db.profile.barheight_grid = value
+					end
+					f:SetPlayerBlockConfig()
+					f:SortGroups()
+				end,
+				
+				min = 8,
+				max = 60,
+				step = 1,
+				desc = "The height of each player frame.",
+				name = "Height",
+			},
+			{
+				type = "select",
+				get = function() return IKA.db.profile.bartexture end,
+				values = function() return texTable end,
+				desc = "Choose the texture used on tank blocks.",
+				name = "Texture"
+			},
+			
+			{type = "blank"},
+			{type = "label", get = function() return "Text:" end, text_template = DF:GetTemplate ("font", "ORANGE_FONT_TEMPLATE")},
+			
+			{
+				type = "range",
+				get = function() return IKA.db.profile.textsize end,
+				set = function (self, fixedparam, value) IKA.db.profile.textsize = value; f:SetPlayerBlockConfig(); end,
+				min = 8,
+				max = 24,
+				step = 1,
+				desc = "Size of the player name.",
+				name = "Text Size",
+			},
+			{
+				type = "select",
+				get = function() return IKA.db.profile.textfont end,
+				values = function() return fontTable end,
+				desc = "Font used on player name.",
+				name = "Text Font"
+			},
+			{
+				type = "toggle",
+				get = function() return IKA.db.profile.textshadow end,
+				set = function (self, fixedparam, value) 
+					IKA.db.profile.textshadow = not IKA.db.profile.textshadow
+					f:SetPlayerBlockConfig()
+				end,
+				desc = "Draw shadow on player name.",
+				name = "Text Shadow"		
+			},
+			
+	----------------------------------------
+	
+			{type = "blank"},
+			{type = "label", get = function() return "Debuff:" end, text_template = DF:GetTemplate ("font", "ORANGE_FONT_TEMPLATE")},
+	
+			{
+				type = "toggle",
+				get = function() return IKA.db.profile.eye_flash_anim end,
+				set = function (self, fixedparam, value) 
+					IKA.db.profile.eye_flash_anim = not IKA.db.profile.eye_flash_anim
+				end,
+				desc = "Play a flash animation on the player that just received the Eye of Anzu.",
+				name = "Flash Enabled"
+			},
+			{
+				type = "toggle",
+				get = function() return IKA.db.profile.right_side_debuffs end,
+				set = function (self, fixedparam, value) 
+					IKA.db.profile.right_side_debuffs = not IKA.db.profile.right_side_debuffs
+				end,
+				desc = "When enabled and |cFFFFFF00not showing as Grid|r, debuffs are placed on the right side of player blocks.",
+				name = "Debuffs on Right"
+			},
+			{
+				type = "toggle",
+				get = function() return IKA.db.profile.dispel_ready end,
+				set = function (self, fixedparam, value) 
+					IKA.db.profile.dispel_ready = not IKA.db.profile.dispel_ready
+				end,
+				desc = "Shows an icon on the right side of a healer bar telling if has a dispel ready to use.",
+				name = "Dispel Ready"
+			},
+			{
+				type = "toggle",
+				get = function() return IKA.db.profile.cooldown end,
+				set = function (self, fixedparam, value) 
+					IKA.db.profile.cooldown = not IKA.db.profile.cooldown
+				end,
+				desc = "Shows the cooldown animation on debuffs.\n\nNot recommended, become hard to see which debuff are.",
+				name = "Debuff Duration"
+			},
+
+			--debuffs
+			{
+				type = "toggle",
+				get = function() return IKA.db.profile.debuff_phantasmal_wounds end,
+				set = function (self, fixedparam, value) 
+					IKA.db.profile.debuff_phantasmal_wounds = not IKA.db.profile.debuff_phantasmal_wounds
+					f:SetEnabledDebuffs()
+				end,
+				desc = "Show " .. aura_phantasmal_wounds .. " aura.",
+				name = "|T" .. phantasmal_wounds_icon .. ":14:14:0:0:64:64:5:59:5:59|t" .. " " .. aura_phantasmal_wounds
+			},
+			{
+				type = "toggle",
+				get = function() return IKA.db.profile.debuff_phantasmal_winds end,
+				set = function (self, fixedparam, value) 
+					IKA.db.profile.debuff_phantasmal_winds = not IKA.db.profile.debuff_phantasmal_winds
+					f:SetEnabledDebuffs()
+				end,
+				desc = "Show " .. aura_phantasmal_winds .. " aura.",
+				name = "|T" .. phantasmal_winds_icon .. ":14:14:0:0:64:64:5:59:5:59|t" .. " " .. aura_phantasmal_winds
+			},
+			{
+				type = "toggle",
+				get = function() return IKA.db.profile.debuff_fel_chakram end,
+				set = function (self, fixedparam, value) 
+					IKA.db.profile.debuff_fel_chakram = not IKA.db.profile.debuff_fel_chakram
+					f:SetEnabledDebuffs()
+				end,
+				desc = "Show " .. aura_fel_chakram .. " aura.\n\n|cFFFFFF00Important|r: only works on vertical alignment.",
+				name = "|T" .. fel_chakram_icon .. ":14:14:0:0:64:64:5:59:5:59|t" .. " " .. aura_fel_chakram
+			},
+			{
+				type = "toggle",
+				get = function() return IKA.db.profile.debuff_phantasmal_corruption end,
+				set = function (self, fixedparam, value) 
+					IKA.db.profile.debuff_phantasmal_corruption = not IKA.db.profile.debuff_phantasmal_corruption
+					f:SetEnabledDebuffs()
+				end,
+				desc = "Show " .. aura_phantasmal_corruption .. " aura.",
+				name = "|T" .. phantasmal_corruption_icon .. ":14:14:0:0:64:64:5:59:5:59|t" .. " " .. aura_phantasmal_corruption
+			},
+			{
+				type = "toggle",
+				get = function() return IKA.db.profile.debuff_fel_bomb end,
+				set = function (self, fixedparam, value) 
+					IKA.db.profile.debuff_fel_bomb = not IKA.db.profile.debuff_fel_bomb
+					f:SetEnabledDebuffs()
+				end,
+				desc = "Show " .. aura_fel_bomb .. " aura.",
+				name = "|T" .. fel_bomb_icon .. ":14:14:0:0:64:64:5:59:5:59|t" .. " " .. aura_fel_bomb
+			},
+			{
+				type = "toggle",
+				get = function() return IKA.db.profile.debuff_phantasmal_bomb end,
+				set = function (self, fixedparam, value) 
+					IKA.db.profile.debuff_phantasmal_bomb = not IKA.db.profile.debuff_phantasmal_bomb
+					f:SetEnabledDebuffs()
+				end,
+				desc = "Show " .. aura_phantasmal_bomb .. " aura.\n\n|cFFFFFF00Important|r: only works on vertical alignment.",
+				name = "|T" .. phantasmal_bomb_icon .. ":14:14:0:0:64:64:5:59:5:59|t" .. " " .. aura_phantasmal_bomb
+			},
+			
+			{type = "blank"},
+			{type = "blank"},
+			{type = "label", get = function() return "Miscellaneous:" end, text_template = DF:GetTemplate ("font", "ORANGE_FONT_TEMPLATE")},			
+			
+			--feedback
+			{
+				type = "execute",
+				func = function() 
+					IKA.OpenReportWindow()
+				end,
+				desc = "Get the link for our MMO-Champion forum thread, post bugs or feature suggestions.",
+				name = "Report Bug",
+			},
+			
+			--archimonde radar
+			{
+				type = "toggle",
+				get = function() return IKA.db.profile.archimonde_radar end,
+				set = function (self, fixedparam, value) 
+					IKA.db.profile.archimonde_radar = not IKA.db.profile.archimonde_radar
+				end,
+				desc = "Show " .. aura_focused_chaos .. " radar for archimonde encounter.",
+				name = "|T" .. aura_focused_chaos_icon .. ":14:14:0:0:64:64:5:59:5:59|t" .. " " .. aura_focused_chaos .. " (Archimonde)"
+			},
+
+		}
+	
+		local options_text_template = DF:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE")
+		local options_dropdown_template = DF:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE")
+		local options_switch_template = DF:GetTemplate ("switch", "OPTIONS_CHECKBOX_TEMPLATE")
+		local options_slider_template = DF:GetTemplate ("slider", "OPTIONS_SLIDER_TEMPLATE")
+		local options_button_template = DF:GetTemplate ("button", "OPTIONS_BUTTON_TEMPLATE")
+		
+		DF:BuildMenu (frame, options_list, 0, 0, 235, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+	
+	end
+
+end
+
+C_Timer.After (2, function()
+	local RA = RaidAssist
+	if (RA) then
+	
+		IKA.menu_text = function (plugin)
+			local _, _, icon = GetSpellInfo (179202) --Eye of Anzu
+		
+			if (IKA.db.enabled) then
+				return icon, icon_texcoord, "Iskar Assist", text_color_enabled
+			else
+				return icon, icon_texcoord, "Iskar Assist", text_color_disabled
+			end
+		end
+	
+		IKA.pluginname = "Iskar Assist"
+	
+		IKA.IsBossMod = true
+		IKA.IsBossMod_MapId = 1448
+		IKA.IsBossMod_EncounterId = 1788
+		IKA.IsBossMod_EjId = 669
+		IKA.IsBossMod_EjEncounterIndex = 7
+		
+		function IKA.OnShowOnOptionsPanel()
+			local OptionsPanel = IKA.OptionsPanel
+			IKA.BuildOptions (OptionsPanel)
+		end
+		
+		local current_config_table
+		if (DF and IskarAssistDB and not IskarAssistDB.ExportedConfig) then
+			local profile = IskarAssistDB.profiles and IskarAssistDB.profiles.Default
+			if (profile) then
+				current_config_table = DF.table.copy ({}, profile)
+			end
+		end
+		
+		local install_status = RA:InstallPlugin ("Iskar Assist", "RAIskarAssistFrame", IKA, config_table)
+		
+		if (current_config_table) then
+			IskarAssistDB.ExportedConfig = true
+			
+			local RAIskar = RADataBase and RADataBase.profiles and RADataBase.profiles.Default and RADataBase.profiles.Default.plugins and RADataBase.profiles.Default.plugins ["Iskar Assist"] and RADataBase.profiles.Default.plugins ["Iskar Assist"].profile
+			if (RAIskar) then
+				DF.table.copy (RAIskar, current_config_table)
+				
+				local RAInvite = RADataBase and RADataBase.profiles and RADataBase.profiles.Default and RADataBase.profiles.Default.plugins and RADataBase.profiles.Default.plugins ["Invites"]
+				if (RAInvite) then
+					RAInvite ["auto_accept_invites"] = false
+					RAInvite ["auto_invite"] = false
+					
+					--print ("Settings auto invite OFF.")
+				end
+			end
+		end
+		
+	end
+end)
+
+
+------------------------------------------------------------------------
 -- /run ShadowLordIskarAssist:DumpAuras()
 function IKA:DumpAuras()
 	for name, value in pairs (track_auras) do

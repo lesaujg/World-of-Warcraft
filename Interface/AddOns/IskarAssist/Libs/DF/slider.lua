@@ -281,16 +281,23 @@ DFSliderMetaFunctions = DFSliderMetaFunctions or {}
 	function DFSliderMetaFunctions:IsEnabled()
 		return not _rawget (self, "lockdown")
 	end
+		
 	function DFSliderMetaFunctions:Enable()
 		self.slider:Enable()
-		if (not self.lock_texture) then
-			DF:NewImage (self, [[Interface\PetBattles\PetBattle-LockIcon]], 12, 12, "overlay", {0.0546875, 0.9453125, 0.0703125, 0.9453125}, "lock_texture", "$parentLockTexture")
-			self.lock_texture:SetDesaturated (true)
-			self.lock_texture:SetPoint ("center", self.amt, "center")
+		if (not self.is_checkbox) then
+			if (not self.lock_texture) then
+				DF:NewImage (self, [[Interface\PetBattles\PetBattle-LockIcon]], 12, 12, "overlay", {0.0546875, 0.9453125, 0.0703125, 0.9453125}, "lock_texture", "$parentLockTexture")
+				self.lock_texture:SetDesaturated (true)
+				self.lock_texture:SetPoint ("center", self.amt, "center")
+			end
+			self.lock_texture:Hide()
 		end
-		self.lock_texture:Hide()
 		self.slider.amt:Show()
 		self:SetAlpha (1)
+		
+		if (self.is_checkbox) then
+			self.checked_texture:Show()
+		end
 		return _rawset (self, "lockdown", false)
 	end
 	
@@ -299,16 +306,25 @@ DFSliderMetaFunctions = DFSliderMetaFunctions or {}
 		self.slider:Disable()
 		self.slider.amt:Hide()
 		self:SetAlpha (.4)
-		
-		if (not self.lock_texture) then
-			DF:NewImage (self, [[Interface\PetBattles\PetBattle-LockIcon]], 12, 12, "overlay", {0.0546875, 0.9453125, 0.0703125, 0.9453125}, "lock_texture", "$parentLockTexture")
-			self.lock_texture:SetDesaturated (true)
-			self.lock_texture:SetPoint ("center", self.amt, "center")
+
+		if (not self.is_checkbox) then
+			if (not self.lock_texture) then
+				DF:NewImage (self, [[Interface\PetBattles\PetBattle-LockIcon]], 12, 12, "overlay", {0.0546875, 0.9453125, 0.0703125, 0.9453125}, "lock_texture", "$parentLockTexture")
+				self.lock_texture:SetDesaturated (true)
+				self.lock_texture:SetPoint ("center", self.amt, "center")
+			end
+			self.lock_texture:Show()
 		end
-		self.lock_texture:Show()
+		
+		if (self.is_checkbox) then
+			self.checked_texture:Show()
+		end
+		
+		--print ("result 2:", self.checked_texture:IsShown(), self.checked_texture:GetAlpha(), self.checked_texture:GetSize())
 		
 		return _rawset (self, "lockdown", true)
 	end
+	--print ("iskar disable:", DFSliderMetaFunctions.Disable)
 
 --> hooks
 	function DFSliderMetaFunctions:SetHook (hookType, func)
@@ -796,29 +812,23 @@ local switch_set_fixparameter = function (self, value)
 end
 
 local switch_disable = function (self)	
-	if (not self.lock_texture) then
-		DF:NewImage (self, [[Interface\PetBattles\PetBattle-LockIcon]], 12, 12, "overlay", {0.0546875, 0.9453125, 0.0703125, 0.9453125}, "lock_texture", "$parentLockTexture")
-		self.lock_texture:SetDesaturated (true)
-		self.lock_texture:SetPoint ("center", self._thumb, "center")
-	end
 	
 	if (self.is_checkbox) then
 		self.checked_texture:Hide()
 	else
 		self._text:Hide()
+		if (not self.lock_texture) then
+			DF:NewImage (self, [[Interface\PetBattles\PetBattle-LockIcon]], 12, 12, "overlay", {0.0546875, 0.9453125, 0.0703125, 0.9453125}, "lock_texture", "$parentLockTexture")
+			self.lock_texture:SetDesaturated (true)
+			self.lock_texture:SetPoint ("center", self._thumb, "center")
+		end
+		self.lock_texture:Show()
 	end
 	
-	self.lock_texture:Show()
 	self:SetAlpha (.4)
 	_rawset (self, "lockdown", true)
 end
 local switch_enable = function (self)
-	if (not self.lock_texture) then
-		DF:NewImage (self, [[Interface\PetBattles\PetBattle-LockIcon]], 12, 12, "overlay", {0.0546875, 0.9453125, 0.0703125, 0.9453125}, "lock_texture", "$parentLockTexture")
-		self.lock_texture:SetDesaturated (true)
-		self.lock_texture:SetPoint ("center", self._thumb, "center")
-	end
-	
 	if (self.is_checkbox) then
 		if (_rawget (self, "value")) then
 			self.checked_texture:Show()
@@ -826,16 +836,21 @@ local switch_enable = function (self)
 			self.checked_texture:Hide()
 		end
 	else
+		if (not self.lock_texture) then
+			DF:NewImage (self, [[Interface\PetBattles\PetBattle-LockIcon]], 12, 12, "overlay", {0.0546875, 0.9453125, 0.0703125, 0.9453125}, "lock_texture", "$parentLockTexture")
+			self.lock_texture:SetDesaturated (true)
+			self.lock_texture:SetPoint ("center", self._thumb, "center")
+		end
+		self.lock_texture:Hide()
 		self._text:Show()
 	end
 	
-	self.lock_texture:Hide()
 	self:SetAlpha (1)
 	return _rawset (self, "lockdown", false)
 end
 
 local set_as_checkbok = function (self)
-	local checked = self:CreateTexture (nil, "overlay")
+	local checked = self:CreateTexture (self:GetName() .. "CheckTexture", "overlay")
 	checked:SetTexture ([[Interface\Buttons\UI-CheckBox-Check]])
 	checked:SetPoint ("center", self.button, "center", -1, -1)
 	local size_pct = self:GetWidth()/32
@@ -862,6 +877,7 @@ local set_as_checkbok = function (self)
 			self:SetBackdropColor (0, 0, 1, 0.4)
 		end
 	end
+
 end
 
 function DF:CreateSwitch (parent, on_switch, default_value, w, h, ltext, rtext, member, name, color_inverted, switch_func, return_func, with_label, switch_template, label_template)

@@ -1,7 +1,7 @@
 
 local RA = RaidAssist
 local L = LibStub ("AceLocale-3.0"):GetLocale ("RaidAssistAddon")
-
+local default_priority = 0
 local _ 
 
 local default_config = {
@@ -11,18 +11,21 @@ local default_config = {
 	maps = {},
 }
 
+local icon_texture = [[Interface\MINIMAP\TRACKING\Profession]]
 local icon_texcoord = {l=0.078125, r=0.921875, t=0.078125, b=0.921875}
 local text_color_enabled = {r=1, g=1, b=1, a=1}
 local text_color_disabled = {r=0.5, g=0.5, b=0.5, a=1}
 
-
 local Boards = {version = "v0.1", pluginname = "Boards"}
+Boards.IsDisabled = true
+
+local can_install = false
 
 Boards.menu_text = function (plugin)
 	if (Boards.db.enabled) then
-		return [[Interface\AddOns\RaidAssist\Media\attendance_menu_icon]], icon_texcoord, L["S_PLUGIN_BOARDS_NAME"], text_color_enabled
+		return icon_texture, icon_texcoord, L["S_PLUGIN_BOARDS_NAME"], text_color_enabled
 	else
-		return [[Interface\AddOns\RaidAssist\Media\attendance_menu_icon]], icon_texcoord, L["S_PLUGIN_BOARDS_NAME"], text_color_disabled
+		return icon_texture, icon_texcoord, L["S_PLUGIN_BOARDS_NAME"], text_color_disabled
 	end
 end
 
@@ -46,6 +49,7 @@ end
 
 Boards.OnInstall = function (plugin)
 
+	Boards.db.menu_priority = default_priority
 
 	--C_Timer.After (1, function()Boards.BuildMainPanel(); Boards.main_frame:Show() end)
 	
@@ -376,4 +380,6 @@ function Boards.BuildMainPanel()
 	Boards.FillMap (map)
 end
 
-local install_status = RA:InstallPlugin (L["S_PLUGIN_BOARDS_NAME"], "RABoards", Boards, default_config)
+if (can_install) then
+	local install_status = RA:InstallPlugin (L["S_PLUGIN_BOARDS_NAME"], "RABoards", Boards, default_config)
+end

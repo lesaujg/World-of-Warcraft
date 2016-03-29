@@ -1,3 +1,18 @@
+v3.3.11
+*Fixed bug with some WoD crafted items not being handled properly by TSM.
+
+v3.3.10
+*Removed debug print which was spamming chat.
+
+v3.3.9
+*Fixed crash with previous release.
+
+v3.3.8
+*Fixed bug with some items gaining incorrect bonusIds.
+
+v3.3.7
+*Fixed bug with including a dash in a group filter.
+
 v3.3.6
 *Added a delay and minimum quiet-period to update notifications.
 

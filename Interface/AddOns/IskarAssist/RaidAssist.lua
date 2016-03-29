@@ -345,9 +345,13 @@ function RA:CommReceived (_, data)
 	local func = RA.comm [prefix]
 	if (func) then
 		local values = {RA:Deserialize (data)}
-		tremove (values, 1)
-		tremove (values, 1)
-		pcall (func, geterrorhandler(), values)
+		if (values [1]) then
+			tremove (values, 1) --remove the Deserialize state
+			local state, errortext = pcall (func, unpack (values))
+			if (not state) then
+				RA:Msg ("error on CommPCall: ".. errortext)
+			end
+		end
 	end
 end
 
@@ -372,3 +376,8 @@ CLEU_frame:SetScript ("OnEvent", function (self, _, time, token, ...)
 	end
 end)
 
+
+SLASH_RaidAssist1 = "/raa"
+function SlashCmdList.RaidAssist (msg, editbox)
+	RA.OpenMainOptions()
+end

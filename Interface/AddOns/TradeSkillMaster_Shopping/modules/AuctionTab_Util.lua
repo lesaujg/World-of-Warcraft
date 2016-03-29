@@ -165,7 +165,9 @@ local function GetSearchFilterOptions(searchTerm)
 	for i, str in ipairs(parts) do
 		str = str:trim()
 
-		if tonumber(str) then
+		if i == 1 then
+			queryString = str
+		elseif tonumber(str) then
 			if not minLevel then
 				minLevel = tonumber(str)
 			elseif not maxLevel then
@@ -231,8 +233,6 @@ local function GetSearchFilterOptions(searchTerm)
 			end
 		elseif TSMAPI:MoneyFromString(str) then
 			maxPrice = TSMAPI:MoneyFromString(str)
-		elseif i == 1 then
-			queryString = str
 		else
 			return false, L["Unknown Filter"]
 		end

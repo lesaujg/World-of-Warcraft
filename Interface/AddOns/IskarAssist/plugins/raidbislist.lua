@@ -2,6 +2,7 @@
 local RA = RaidAssist
 local L = LibStub ("AceLocale-3.0"):GetLocale ("RaidAssistAddon")
 local _ 
+local default_priority = 1
 
 --battle res default config
 local default_config = {
@@ -11,21 +12,26 @@ local default_config = {
 	latest_raid_map = 1448,
 }
 
+local icon_texture = [[Interface\PaperDollInfoFrame\UI-EquipmentManager-Toggle]]
 local icon_texcoord = {l=0.078125, r=0.921875, t=0.078125, b=0.921875}
 local text_color_enabled = {r=1, g=1, b=1, a=1}
 local text_color_disabled = {r=0.5, g=0.5, b=0.5, a=1}
 
 local BisListRaid = {version = "v0.1", pluginname = "BisListRaid"}
+BisListRaid.IsDisabled = true
+
 local BisList = _G ["RaidAssistBisList"]
+
+local can_install = false
 
 BisListRaid.last_data_request = 0
 BisListRaid.last_data_sent = 0
 
 BisListRaid.menu_text = function (plugin)
 	if (BisListRaid.db.enabled) then
-		return [[Interface\AddOns\RaidAssist\Media\attendance_menu_icon]], icon_texcoord, "Loot (Raid List)", text_color_enabled
+		return icon_texture, icon_texcoord, "Loot (Raid List)", text_color_enabled
 	else
-		return [[Interface\AddOns\RaidAssist\Media\attendance_menu_icon]], icon_texcoord, "Loot (Raid List)", text_color_disabled
+		return icon_texture, icon_texcoord, "Loot (Raid List)", text_color_disabled
 	end
 end
 
@@ -48,6 +54,9 @@ BisListRaid.menu_on_click = function (plugin)
 end
 
 BisListRaid.OnInstall = function (plugin)
+
+	BisListRaid.db.menu_priority = default_priority
+
 	BisListRaid:RegisterPluginComm ("BLR", BisListRaid.PluginCommReceived)
 	BisListRaid:RegisterPluginComm ("BLC", BisListRaid.PluginCommReceived)
 
@@ -130,6 +139,11 @@ function BisListRaid.StoreReceivedBisList (player_name, item_string)
 end
 
 function BisListRaid.PluginCommReceived (data)
+
+	if (true) then
+		return
+	end
+
 	local _, prefix, player_name, item_string = unpack (data)
 	if (prefix == "BLR") then
 		BisListRaid.SendMyBisList (player_name)
@@ -202,5 +216,6 @@ function BisListRaid.BuildOptions (frame)
 
 end
 
-
-local install_status = RA:InstallPlugin ("BisListRaid", "RABisListRaid", BisListRaid, default_config)
+if (can_install) then
+	local install_status = RA:InstallPlugin ("BisListRaid", "RABisListRaid", BisListRaid, default_config)
+end

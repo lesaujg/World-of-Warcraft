@@ -3,11 +3,12 @@
 local RA = RaidAssist
 local L = LibStub ("AceLocale-3.0"):GetLocale ("RaidAssistAddon")
 local _ 
+local default_priority = 10
 
 --battle res default config
 local default_config = {
 	enabled = false,
-	menu_priority = 1,
+	menu_priority = 3,
 	panel_show_res = true,
 	panel_locked = false,
 	panel_width = 130,
@@ -20,7 +21,7 @@ local default_config = {
 	background_border_color = {r=0, g=0, b=0, a=1},
 }
 
-local icon_texcoord = {l=0.078125, r=0.921875, t=0.078125, b=0.921875}
+local icon_texcoord = {l=0, r=32/64, t=0, b=33/64}
 local text_color_enabled = {r=1, g=1, b=1, a=1}
 local text_color_disabled = {r=0.5, g=0.5, b=0.5, a=1}
 local rebirth_spellid = 20484
@@ -29,9 +30,9 @@ local BattleRes = {version = "v0.1", pluginname = "BattleResMonitor"}
 
 BattleRes.menu_text = function (plugin)
 	if (BattleRes.db.enabled) then
-		return [[Interface\AddOns\RaidAssist\Media\attendance_menu_icon]], icon_texcoord, L["S_PLUGIN_BRES_NAME"], text_color_enabled
+		return [[Interface\WorldStateFrame\SkullBones]], icon_texcoord, L["S_PLUGIN_BRES_NAME"], text_color_enabled
 	else
-		return [[Interface\AddOns\RaidAssist\Media\attendance_menu_icon]], icon_texcoord, L["S_PLUGIN_BRES_NAME"], text_color_disabled
+		return [[Interface\WorldStateFrame\SkullBones]], icon_texcoord, L["S_PLUGIN_BRES_NAME"], text_color_disabled
 	end
 end
 
@@ -55,6 +56,8 @@ BattleRes.OnInstall = function (plugin)
 	label:SetPoint ("center", popup_frame, "center")
 	label.width = 130
 	label.height = 30
+	
+	BattleRes.db.menu_priority = default_priority
 
 	--options frame
 	local options_frame = BattleRes.main_frame
@@ -258,11 +261,25 @@ function BattleRes.BuildOptions (frame)
 		frame:SetScript ("OnShow", function()
 			if (not BattleRes.OnEncounter) then
 				BattleRes.OnEncounterStart()
+				
+				if (not BattleRes.AlertFrame) then
+					BattleRes.AlertFrame = CreateFrame ("frame", "RaidAssistBattleResAlert", BattleRes.bres_frame, "ActionBarButtonSpellActivationAlert")
+					BattleRes.AlertFrame:SetFrameStrata ("FULLSCREEN")
+					BattleRes.AlertFrame:Hide()
+					BattleRes.AlertFrame:SetPoint ("topleft", BattleRes.bres_frame, "topleft", -60, 6)
+					BattleRes.AlertFrame:SetPoint ("bottomright", BattleRes.bres_frame, "bottomright", 40, -6)
+					BattleRes.AlertFrame:SetAlpha (0.2)
+				end
+				
+				BattleRes.AlertFrame.animOut:Stop()
+				BattleRes.AlertFrame.animIn:Play()
+				C_Timer.After (0.5, function() BattleRes.AlertFrame.animIn:Stop(); BattleRes.AlertFrame.animOut:Play() end)
 			end
 		end)
 		frame:SetScript ("OnHide", function()
 			if (not BattleRes.OnEncounter) then
 				BattleRes.OnEncounterEnd()
+				
 			end
 		end)
 

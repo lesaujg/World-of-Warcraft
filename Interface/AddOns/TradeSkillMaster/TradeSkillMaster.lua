@@ -15,6 +15,7 @@ TSM.NO_SOUND_KEY = "TSM_NO_SOUND" -- this can never change
 TSM.moduleObjects = {} -- PRIVATE: reference will be removed once loading completes
 TSM.moduleNames = {} -- PRIVATE: reference will be removed once loading completes
 TSM.moduleOperationInfo = {} -- PRIVATE: reference will be removed once loading completes
+TSM.exportedForTesting = {} -- PRIVATE: reference will be removed once loading completes - used by test infrastructure code
 local L = LibStub("AceLocale-3.0"):GetLocale("TradeSkillMaster") -- loads the localization table
 local private = {cachedConnectedRealms=nil, appInfo=nil}
 TSMAPI = {Auction={}, GUI={}, Design={}, Debug={}, Item={}, ItemFilter={}, Conversions={}, Delay={}, Player={}, Inventory={}, Threading={}, Groups={}, Operations={}, Util={}, Settings={}}
@@ -152,6 +153,7 @@ function TSM:OnInitialize()
 	TSM.moduleObjects = nil
 	TSM.moduleNames = nil
 	TSM.moduleOperationInfo = nil
+	TSM.exportedForTesting = nil
 
 	-- load settings
 	TSM.db = TSMAPI.Settings:Init("TradeSkillMasterDB", settingsInfo)
@@ -190,6 +192,22 @@ function TSM:OnInitialize()
 		end
 		for _, itemString in ipairs(toFix) do
 			local newItemString = strmatch(itemString, "^p:%d+")
+			local oldGroup = TSM.db.profile.items[itemString]
+			TSM.db.profile.items[itemString] = nil
+			TSM.db.profile.items[newItemString] = TSM.db.profile.items[newItemString] or oldGroup
+		end
+
+		-- fix some bad variant itemStrings (fixed in 3.3.8)
+		wipe(toFix)
+		for itemString, groupPath in pairs(TSM.db.profile.items) do
+			local itemId = TSMAPI.Item:ToItemID(itemString)
+			if itemId and itemId < 105000 and strmatch(itemString, "^i:[0-9]+:[%-0-9]+:") then
+				-- the item has bonusIds and shouldn't
+				tinsert(toFix, itemString)
+			end
+		end
+		for _, itemString in ipairs(toFix) do
+			local newItemString = TSMAPI.Item:ToItemString(strmatch(itemString, "^i:[0-9]+:[0-9%-]+"))
 			local oldGroup = TSM.db.profile.items[itemString]
 			TSM.db.profile.items[itemString] = nil
 			TSM.db.profile.items[newItemString] = TSM.db.profile.items[newItemString] or oldGroup
@@ -370,6 +388,9 @@ function TSM:RegisterModule()
 		{ key = "price", label = L["Allows for testing of custom prices."], callback = "TestPriceSource" },
 		{ key = "profile", label = L["Changes to the specified profile (i.e. '/tsm profile Default' changes to the 'Default' profile)"], callback = "ChangeProfile" },
 		{ key = "debug", label = L["Some debug commands for TSM."], callback = "Debug:SlashCommandHandler", hidden = true },
+		--[===[@debug@
+		{ key = "test", label = "", callback = "Testing:SlashCommandHandler", hidden = true },
+		--@end-debug@]===]
 	}
 
 	TSMAPI:NewModule(TSM)
@@ -425,6 +446,13 @@ function TSM:OnTSMDBShutdown(appDB)
 	if TSM.Features.blackMarket then
 		local hash = TSMAPI.Util:CalculateHash(TSM.Features.blackMarket..":"..TSM.Features.blackMarketTime)
 		appDB.blackMarket[realmName] = {data=TSM.Features.blackMarket, key=hash, updateTime=TSM.Features.blackMarketTime}
+	end
+
+	-- save wow token
+	appDB.wowToken = appDB.wowToken or {}
+	if TSM.Features.wowToken then
+		local hash = TSMAPI.Util:CalculateHash(TSM.Features.wowToken..":"..TSM.Features.wowTokenTime)
+		appDB.wowToken[region] = {data=TSM.Features.wowToken, key=hash, updateTime=TSM.Features.wowTokenTime}
 	end
 end
 

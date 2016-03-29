@@ -1,0 +1,53 @@
+------------------------------------------------------------------------
+r485 | oscarucb | 2016-03-15 22:31:27 +0000 (Tue, 15 Mar 2016) | 1 line
+Changed paths:
+   A /tags/6.2.8 (from /trunk:484)
+
+Tagging as 6.2.8
+------------------------------------------------------------------------
+r484 | oscarucb | 2016-03-15 22:08:51 +0000 (Tue, 15 Mar 2016) | 2 lines
+Changed paths:
+   M /trunk/SavedInstances.toc
+
+toc tweak
+
+------------------------------------------------------------------------
+r483 | oscarucb | 2016-03-15 00:37:53 +0000 (Tue, 15 Mar 2016) | 3 lines
+Changed paths:
+   M /trunk/SavedInstances.lua
+
+another tweak for Brazilian server reset
+Daylight savings is a tool of Satan.
+
+------------------------------------------------------------------------
+r482 | oscarucb | 2016-02-26 01:21:38 +0000 (Fri, 26 Feb 2016) | 2 lines
+Changed paths:
+   M /trunk/SavedInstances.lua
+
+another reset time tweak for Brazilian region
+
+------------------------------------------------------------------------
+r481 | oscarucb | 2016-02-25 01:54:56 +0000 (Thu, 25 Feb 2016) | 2 lines
+Changed paths:
+   M /trunk/SavedInstances.lua
+
+fix incorrect daily/weekly reset time for accounts with characters in multiple regions
+
+------------------------------------------------------------------------
+r480 | oscarucb | 2016-02-17 05:36:51 +0000 (Wed, 17 Feb 2016) | 4 lines
+Changed paths:
+   M /trunk/SavedInstances.lua
+   M /trunk/config.lua
+
+New setting to format large currency numbers for easier reading
+Move currency settings into their own config subsection
+Remove some dead code and misc config cleanup
+
+------------------------------------------------------------------------
+r479 | oscarucb | 2016-02-09 22:29:13 +0000 (Tue, 09 Feb 2016) | 2 lines
+Changed paths:
+   M /trunk/SavedInstances.lua
+
+don't try to open the raid lockout pane in combat
+
+------------------------------------------------------------------------

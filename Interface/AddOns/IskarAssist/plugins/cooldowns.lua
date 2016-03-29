@@ -2,7 +2,7 @@
 local RA = RaidAssist
 local L = LibStub ("AceLocale-3.0"):GetLocale ("RaidAssistAddon")
 local LibGroupInSpecT = LibStub:GetLibrary ("LibGroupInSpecT-1.1")
-
+local default_priority = 9
 local _ 
 
 local GetUnitName = GetUnitName
@@ -51,15 +51,16 @@ local default_config = {
 	panel_background_border_color = {r=0, g=0, b=0, a=1},
 	
 	only_in_group = true,
-	only_inside_instances = true,
-	only_in_raid_group = false,
+	only_inside_instances = false,
+	only_in_raid_group = true,
 	only_in_combat = false,
 	only_in_raid_encounter = false,
 }
 
-local icon_texcoord = {l=0.078125, r=0.921875, t=0.078125, b=0.921875}
+local icon_texcoord = {l=0, r=32/512, t=0, b=1}
 local text_color_enabled = {r=1, g=1, b=1, a=1}
 local text_color_disabled = {r=0.5, g=0.5, b=0.5, a=1}
+local icon_texture = [[Interface\AddOns\IskarAssist\media\plugin_icons]]
 
 local Cooldowns = {version = "v0.1", pluginname = "Cooldowns"}
 Cooldowns.ScreenPanels = {}
@@ -237,9 +238,9 @@ local spell_list = {
 
 Cooldowns.menu_text = function (plugin)
 	if (Cooldowns.db.enabled) then
-		return [[Interface\AddOns\RaidAssist\Media\attendance_menu_icon]], icon_texcoord, "Cooldown Monitor", text_color_enabled
+		return icon_texture, icon_texcoord, "Cooldown Monitor", text_color_enabled
 	else
-		return [[Interface\AddOns\RaidAssist\Media\attendance_menu_icon]], icon_texcoord, "Cooldown Monitor", text_color_disabled
+		return icon_texture, icon_texcoord, "Cooldown Monitor", text_color_disabled
 	end
 end
 
@@ -263,6 +264,8 @@ Cooldowns.menu_on_click = function (plugin)
 end
 
 Cooldowns.OnInstall = function (plugin)
+
+	Cooldowns.db.menu_priority = default_priority
 
 	Cooldowns:RegisterForEnterRaidGroup (Cooldowns.OnEnterRaidGroup)
 	Cooldowns:RegisterForLeaveRaidGroup (Cooldowns.OnLeaveRaidGroup)
@@ -311,16 +314,18 @@ function Cooldowns.CheckForShowPanels (event)
 
 	local show = true
 
-	if (Cooldowns.db.only_inside_instances and not Cooldowns.in_instance) then
-		show = false
-	elseif (Cooldowns.db.only_in_raid_group and not Cooldowns.in_raid) then
-		show = false
-	elseif (Cooldowns.db.only_in_group and not Cooldowns.in_party and not Cooldowns.in_raid) then
-		show = false
-	elseif (Cooldowns.db.only_in_combat and not Cooldowns.in_combat) then
-		show = false
-	elseif (Cooldowns.db.only_in_raid_encounter and not Cooldowns.in_raid_encounter) then
-		show = false
+	if (not Cooldowns.OptionsFrame or not Cooldowns.OptionsFrame:IsShown()) then
+		if (Cooldowns.db.only_inside_instances and not Cooldowns.in_instance) then
+			show = false
+		elseif (Cooldowns.db.only_in_raid_group and not Cooldowns.in_raid) then
+			show = false
+		elseif (Cooldowns.db.only_in_group and not Cooldowns.in_party and not Cooldowns.in_raid) then
+			show = false
+		elseif (Cooldowns.db.only_in_combat and not Cooldowns.in_combat) then
+			show = false
+		elseif (Cooldowns.db.only_in_raid_encounter and not Cooldowns.in_raid_encounter) then
+			show = false
+		end
 	end
 
 	for index, panel in ipairs (Cooldowns.db.cooldowns_panels) do
@@ -422,14 +427,14 @@ function Cooldowns.CheckForRosterReset (event)
 		if (instance_type ~= Cooldowns.InstanceType) then
 			if (instance_type == "pvp" or instance_type == "arena") then
 				--> player entered into an battleground or arena
-				print ("===> Reseting the Roster", event)
+				--print ("===> Reseting the Roster", event)
 				Cooldowns.RosterUpdate (true)
 			end
 		end
 		Cooldowns.InstanceType = instance_type
 		
 	elseif (event == "ENCOUNTER_END" or event == "PANEL_OPTIONS_UPDATE") then
-		print ("===> Reseting the Roster", event)
+		--print ("===> Reseting the Roster", event)
 		Cooldowns.RosterUpdate (true)
 	end
 end
@@ -743,6 +748,21 @@ function Cooldowns.GetPanelInScreen (id)
 		
 		new_screen_panel.support_frame = CreateFrame ("frame", "CooldownsScreenFrame" .. id .. "Support", new_screen_panel)
 		new_screen_panel.support_frame:SetFrameLevel (new_screen_panel:GetFrameLevel()+2)
+		
+		new_screen_panel.AlertFrame = CreateFrame ("frame", "CooldownsScreenFrame" .. id .. "Alert", new_screen_panel, "ActionBarButtonSpellActivationAlert")
+		new_screen_panel.AlertFrame:SetFrameStrata ("FULLSCREEN")
+		new_screen_panel.AlertFrame:SetPoint ("topleft", new_screen_panel, "topleft", -60, 46)
+		new_screen_panel.AlertFrame:SetPoint ("bottomright", new_screen_panel, "bottomright", 60, -46)
+		new_screen_panel.AlertFrame:SetAlpha (0.2)
+		new_screen_panel.AlertFrame:Hide()
+		
+		new_screen_panel:SetScript ("OnShow", function()
+			if (Cooldowns.OptionsFrame and Cooldowns.OptionsFrame:IsShown()) then
+				new_screen_panel.AlertFrame.animOut:Stop()
+				new_screen_panel.AlertFrame.animIn:Play()
+				C_Timer.After (0.5, function() new_screen_panel.AlertFrame.animIn:Stop(); new_screen_panel.AlertFrame.animOut:Play() end)
+			end
+		end)
 		
 		Cooldowns.ScreenPanels [id] = new_screen_panel
 		Cooldowns.UpdatePanels()
@@ -1090,7 +1110,7 @@ function Cooldowns.BarControl (update_type, unitid, spellid)
 				end
 			end
 			
-			panel:SetHeight (((bar_index-1) * (Cooldowns.db.bar_height+1)) + 3)
+			panel:SetHeight (max ( ((bar_index-1) * (Cooldowns.db.bar_height+1)) + 3, 20))
 			
 			panel:CleanUp (bar_index)
 		end
@@ -1114,6 +1134,14 @@ function Cooldowns.BuildOptions (frame)
 	
 	local main_frame = frame
 	main_frame:SetSize (822, 480)
+	Cooldowns.OptionsFrame = frame
+	
+	Cooldowns.OptionsFrame:SetScript ("OnShow", function()
+		Cooldowns.CheckForShowPanels ("ON_OPTIONS_SHOW")
+	end)
+	Cooldowns.OptionsFrame:SetScript ("OnHide", function()
+		Cooldowns.CheckForShowPanels ("ON_OPTIONS_HIDE")
+	end)
 
 	Cooldowns.CheckIfNoPanel()
 
@@ -1257,7 +1285,7 @@ function Cooldowns.BuildOptions (frame)
 		},
 		
 		{type = "blank"},
-		{type = "label", get = function() return "Show in:" end, text_template = Cooldowns:GetTemplate ("font", "ORANGE_FONT_TEMPLATE")},
+		{type = "label", get = function() return "Show Cooldown Panels When:" end, text_template = Cooldowns:GetTemplate ("font", "ORANGE_FONT_TEMPLATE")},
 		
 		{
 			type = "toggle",

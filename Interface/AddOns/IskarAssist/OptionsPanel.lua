@@ -13,14 +13,24 @@ function RA.OpenMainOptions (plugin)
 	end
 
 	RA.db.options_panel = RA.db.options_panel or {}
-	local f = RA:CreateStandardFrame (UIParent, 1000, 500, "Raid Assist", "RaidAssistOptionsPanel", RA.db.options_panel)
+	local f = RA:CreateStandardFrame (UIParent, 1000, 500, "Iskar Assist", "RaidAssistOptionsPanel", RA.db.options_panel)
+	
+	local label_plugins = RA:CreateLabel (f, "Plugins:")
+	label_plugins:SetPoint (10, -35)	
+	local label_mods = RA:CreateLabel (f, "Boss Mods:")
+	label_mods:SetPoint (10, -335)
 	
 	f.Menu = {}
+	f.Mods = {}
 	f.Main = {}
 	f.Menu.x = 10
-	f.Menu.y = -40
+	f.Menu.y = -50
 	f.Menu.button_width = 140
 	f.Menu.button_height = 16
+	f.Mods.button_width = 140
+	f.Mods.button_height = 16
+	f.Mods.x = 10
+	f.Mods.y = -350
 	f.Main.x = 190
 	f.Main.y = -40
 	f.AllOptionsButtons = {}
@@ -70,10 +80,15 @@ function RA.OpenMainOptions (plugin)
 			button:SetIcon (icon_texture, 16, 16, "overlay", {0, 1, 0, 1}, nil, 2, 2)
 		end
 		
-		button:SetPoint (f.Menu.x, f.Menu.y)
-		f.Menu.y = f.Menu.y - (f.Menu.button_height+1)
+		if (not plugin.IsBossMod) then
+			button:SetPoint (f.Menu.x, f.Menu.y)
+			f.Menu.y = f.Menu.y - (f.Menu.button_height+1)		
+		else
+			button:SetPoint (f.Mods.x, f.Mods.y)
+			f.Mods.y = f.Mods.y - (f.Mods.button_height+1)	
+		end
 		
-		local options_frame = CreateFrame ("frame", "RaidAssistOptionsPanel" .. (plugin.pluginname or math.random (1, 10000)), f)
+		local options_frame = CreateFrame ("frame", "RaidAssistOptionsPanel" .. (plugin.pluginname or math.random (1, 1000000)), f)
 		options_frame:Hide()
 		options_frame:SetSize (1, 1)
 		options_frame:SetPoint ("topleft", f, "topleft", f.Main.x, f.Main.y)
@@ -82,6 +97,10 @@ function RA.OpenMainOptions (plugin)
 		
 		f.AllOptionsPanels [plugin] = options_frame
 		f.AllOptionsButtons [plugin] = button
+		
+		if (plugin.IsDisabled) then
+			button:Disable()
+		end
 	end
 	
 	--> hide all panels for all addons
@@ -96,7 +115,27 @@ function RA.OpenMainOptions (plugin)
 	
 	--> load the plugins
 	local plugins_list = RA:GetSortedPluginsInPriorityOrder()
+	local plugins_sorted_list = {}
+	local bossmods_sorted_list = {}
+	
 	for _, plugin in pairs (plugins_list) do
+		if (not plugin.IsBossMod) then
+			plugin.db.menu_priority = plugin.db.menu_priority or 1
+			tinsert (plugins_sorted_list, plugin)
+		elseif (plugin.IsBossMod) then
+			plugin.db.menu_priority = plugin.db.menu_priority or 1
+			tinsert (bossmods_sorted_list, plugin)
+		end
+	end
+	
+	table.sort (plugins_sorted_list, function (plugin1, plugin2) return ( (plugin1 and plugin1.db.menu_priority) or 1) > ( (plugin2 and plugin2.db.menu_priority) or 1) end)
+	table.sort (bossmods_sorted_list, function (plugin1, plugin2) return ( (plugin1 and plugin1.db.menu_priority) or 1) > ( (plugin2 and plugin2.db.menu_priority) or 1) end)
+	
+	for _, plugin in pairs (plugins_sorted_list) do
+		f:CreatePluginButtonOnMenu (plugin)
+	end
+	
+	for _, plugin in pairs (bossmods_sorted_list) do
 		f:CreatePluginButtonOnMenu (plugin)
 	end
 	

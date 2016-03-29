@@ -1,3 +1,6 @@
+v3.2.1
+*Fixed bug with inline search filters.
+
 v3.2
 *Added support for filtering by equipment slot.
 

@@ -2,6 +2,7 @@
 local RA = RaidAssist
 local L = LibStub ("AceLocale-3.0"):GetLocale ("RaidAssistAddon")
 local _
+local default_priority = 1
 
 --battle res default config
 local default_config = {
@@ -10,18 +11,23 @@ local default_config = {
 	characters = {},
 }
 
-local icon_texcoord = {l=0.078125, r=0.921875, t=0.078125, b=0.921875}
+local icon_texture = [[Interface\GUILDFRAME\GuildLogo-NoLogo]]
+local icon_texcoord = {l=10/64, r=54/64, t=10/64, b=54/64}
 local text_color_enabled = {r=1, g=1, b=1, a=1}
 local text_color_disabled = {r=0.5, g=0.5, b=0.5, a=1}
 
 local BisList = {version = "v0.1", pluginname = "BisList"}
+BisList.IsDisabled = true
+
+local can_install = false
+
 _G ["RaidAssistBisList"] = BisList
 
 BisList.menu_text = function (plugin)
 	if (BisList.db.enabled) then
-		return [[Interface\AddOns\RaidAssist\Media\attendance_menu_icon]], icon_texcoord, "Loot (My Bis List)", text_color_enabled
+		return icon_texture, icon_texcoord, "Loot (My Bis List)", text_color_enabled
 	else
-		return [[Interface\AddOns\RaidAssist\Media\attendance_menu_icon]], icon_texcoord, "Loot (My Bis List)", text_color_disabled
+		return icon_texture, icon_texcoord, "Loot (My Bis List)", text_color_disabled
 	end
 end
 
@@ -45,6 +51,7 @@ end
 
 BisList.OnInstall = function (plugin)
 	--C_Timer.After (5, BisList.menu_on_click)
+	BisList.db.menu_priority = default_priority
 end
 
 BisList.OnEnable = function (plugin)
@@ -169,14 +176,15 @@ end
 local GetPlayerArmorType = function()	
 	local _, cloth, lether, mail, plate = GetAuctionItemSubClasses (2)
 	local armor = {[cloth] = true, [lether] = true, [mail] = true, [plate] = true}
-	print (cloth, lether, mail, plate)
+	--print (cloth, lether, mail, plate)
 	for i = 1, 3 do
 		local link = GetInventoryItemLink ("player", i)
 		if (link) then
 			GameTooltip:SetOwner (UIParent)
 			GameTooltip:SetHyperlink (link)
 			for o = 1, 10 do
-				local text = _G ["GameTooltipTextRight" .. o]:GetText()
+				local text = _G ["GameTooltipTextRight" .. o] and _G ["GameTooltipTextRight" .. o]:GetText()
+				GameTooltip:Hide()
 				if (text and armor [text]) then
 					return text, armor
 				end
@@ -435,6 +443,8 @@ function BisList.BuildOptions (frame)
 
 end
 
-local install_status = RA:InstallPlugin ("BisList", "RABisList", BisList, default_config)
+if (can_install) then
+	local install_status = RA:InstallPlugin ("BisList", "RABisList", BisList, default_config)
+end
 
 

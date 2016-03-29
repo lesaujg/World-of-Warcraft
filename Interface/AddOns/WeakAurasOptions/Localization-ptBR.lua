@@ -277,6 +277,7 @@ L["Sort"] = "Ordenar"
 L["Sound"] = "Som"
 L["Sound Channel"] = "Canal de som"
 L["Sound File Path"] = "Caminho do arquivo de som"
+-- L["Sound Kit ID"] = ""
 L["Space"] = "Espaço"
 L["Space Horizontally"] = "Espaço horizontal"
 L["Space Vertically"] = "Espaçar Verticalmente" -- Needs review

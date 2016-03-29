@@ -82,6 +82,7 @@
 	<Script file="MageNuggets.lua"/>
 	<Script file="MinimalArchaeology.lua"/>
 	<Script file="MasterLootManagerRemix.lua"/>
+	<Script file="MasterPlan.lua"/>
 	<Script file="MiscFixes.lua"/>
 	<Script file="MogIt.lua"/>
 	<Script file="MoveAnything.lua"/>
@@ -122,6 +123,7 @@
 	<Script file="RCLootCouncil.lua"/>
 	<Script file="ReagentMaker.lua"/>
 	<Script file="Recount.lua"/>
+	<Script file="ServerHop.lua"/>
 	<Script file="Scrap.lua"/>
 	<Script file="SearingPlasmaTracker.lua"/>
 	<Script file="ShieldBars.lua"/>

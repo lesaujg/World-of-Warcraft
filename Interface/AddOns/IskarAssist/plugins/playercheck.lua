@@ -3,6 +3,7 @@
 local RA = RaidAssist
 local L = LibStub ("AceLocale-3.0"):GetLocale ("RaidAssistAddon")
 local _ 
+local default_priority = 1
 
 local PlayerCheck = {
 	last_data_sent = 0,
@@ -10,16 +11,24 @@ local PlayerCheck = {
 	version = "v0.1",
 	pluginname = "PlayerCheck"
 }
+PlayerCheck.IsDisabled = true
+
 local default_config = {
 	leader_request_interval = 180,
-	
 }
+
+local icon_texcoord = {l=0, r=1, t=0, b=1}
+local icon_texture = [[Interface\CURSOR\thumbsup]]
+local text_color_enabled = {r=1, g=1, b=1, a=1}
+local text_color_disabled = {r=0.5, g=0.5, b=0.5, a=1}
+
+local can_install = false
 
 PlayerCheck.menu_text = function (plugin)
 	if (PlayerCheck.db.enabled) then
-		return [[Interface\AddOns\RaidAssist\Media\attendance_menu_icon]], icon_texcoord, "Player Check", text_color_enabled
+		return icon_texture, icon_texcoord, "Player Check", text_color_enabled
 	else
-		return [[Interface\AddOns\RaidAssist\Media\attendance_menu_icon]], icon_texcoord, "Player Check", text_color_disabled
+		return icon_texture, icon_texcoord, "Player Check", text_color_disabled
 	end
 end
 
@@ -101,6 +110,9 @@ function PlayerCheck:GroupUpdate()
 end
 
 PlayerCheck.OnInstall = function (plugin)
+
+	PlayerCheck.db.menu_priority = default_priority
+
 	local popup_frame = PlayerCheck.popup_frame
 	local main_frame = PlayerCheck.main_frame
 	
@@ -185,6 +197,11 @@ end
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 function PlayerCheck:SendData()
+
+	if (true) then
+		return
+	end
+
 	if (PlayerCheck.last_data_sent+20 < time()) then
 		local data = PlayerCheck:BuildDataToSend()
 		PlayerCheck:SendPluginCommMessage ("PCD", "RAID-NOINSTANCE", _, _, PlayerCheck:GetPlayerNameWithRealm(), unpack (data))
@@ -193,6 +210,11 @@ function PlayerCheck:SendData()
 end
 
 function PlayerCheck.PluginCommReceived (data)
+
+	if (true) then
+		return
+	end
+
 	local null, prefix, player_name, ilvl_e, ilvl_t, lag_w, lag_l, repair, missing_adds, spec_stalents, ra_version = unpack (data)
 	
 	player_name = Ambiguate (player_name, "none")
@@ -236,6 +258,6 @@ function PlayerCheck.BuildOptions (frame)
 
 end
 
-
-local install_status = RA:InstallPlugin ("Player Check", "RAPlayerCheck", PlayerCheck, default_config)
-
+if (can_install) then
+	local install_status = RA:InstallPlugin ("Player Check", "RAPlayerCheck", PlayerCheck, default_config)
+end
