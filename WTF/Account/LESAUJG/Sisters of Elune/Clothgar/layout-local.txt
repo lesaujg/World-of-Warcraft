@@ -1,8 +1,8 @@
 Version: 1
-Frame: AuctionFrame
-FrameLevel: 29
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 832
-H: 447
+Frame: TSMCraftingTradeSkillFrame
+FrameLevel: 52
+Anchor: TOP
+X: -271
+Y: -40
+W: 450
+H: 500
