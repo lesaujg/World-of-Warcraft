@@ -298,9 +298,9 @@ TradeSkillMasterDB = {
 			["Stuff"] = true,
 			["Mounts`110k-200k"] = true,
 			["Enchant mats`Draenic Dust"] = true,
-			["Craft enchants`x2`Breath Enchants"] = true,
 			["Stuff`Old Enchant`Old"] = true,
 			["Professions`Alchemy"] = true,
+			["Craft enchants`x2`Breath Enchants"] = true,
 			["Professions`Enchanting"] = true,
 			["Enchant mats"] = true,
 			["Craft enchants`Old"] = true,
@@ -383,8 +383,8 @@ TradeSkillMasterDB = {
 			["Craft enchants`x2"] = true,
 			["Stuff`Stacks"] = true,
 			["Craft enchants`x2`Breath Enchants"] = true,
-			["Arcane Crystal AH"] = true,
 			["Medallion of the Legion"] = true,
+			["Leather/Fur"] = true,
 			["Craft enchants`Old"] = true,
 			["Stuff`Old Enchant`Old"] = true,
 			["Stuff`x05"] = true,
@@ -392,7 +392,7 @@ TradeSkillMasterDB = {
 			["Craft Pots`Keep"] = false,
 			["Mounts"] = false,
 			["Leather"] = true,
-			["Leather/Fur"] = true,
+			["Arcane Crystal AH"] = true,
 			["Savage Blood"] = true,
 			["Lens"] = true,
 			["Craft Flasks"] = true,
@@ -627,7 +627,8 @@ TradeSkillMasterDB = {
 	},
 	["c@Clothgar - Sisters of Elune@auctionMessages"] = {
 		["A buyer has been found for your auction of Enchant Ring - Gift of Multistrike."] = "|cff0070dd|Hitem:110641:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Multistrike]|h|r",
-		["A buyer has been found for your auction of Enchant Ring - Gift of Haste."] = "|cff0070dd|Hitem:110639:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Haste]|h|r",
+		["A buyer has been found for your auction of Arcane Crystal Module."] = "|cff1eff00|Hitem:118375:0:0:0:0:0:0:0:1:0:0:0:0|h[Arcane Crystal Module]|h|r",
+		["A buyer has been found for your auction of Enchant Neck - Gift of Versatility."] = "|cff0070dd|Hitem:110649:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Versatility]|h|r",
 		["A buyer has been found for your auction of Enchant Ring - Breath of Mastery."] = "|cffffffff|Hitem:110619:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Mastery]|h|r",
 		["A buyer has been found for your auction of Enchant Neck - Breath of Multistrike."] = "|cffffffff|Hitem:110627:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Multistrike]|h|r",
 		["A buyer has been found for your auction of Enchant Weapon - Mark of the Shattered Hand."] = "|cff0070dd|Hitem:112093:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Shattered Hand]|h|r",
@@ -640,35 +641,34 @@ TradeSkillMasterDB = {
 		["A buyer has been found for your auction of Enchant Ring - Breath of Versatility."] = "|cffffffff|Hitem:110621:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Versatility]|h|r",
 		["A buyer has been found for your auction of Enchant Neck - Gift of Critical Strike."] = "|cff0070dd|Hitem:110645:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Critical Strike]|h|r",
 		["A buyer has been found for your auction of Enchant Cloak - Breath of Haste."] = "|cffffffff|Hitem:110632:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Haste]|h|r",
-		["A buyer has been found for your auction of Enchant Weapon - Mark of the Frostwolf."] = "|cff0070dd|Hitem:112165:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Frostwolf]|h|r",
+		["A buyer has been found for your auction of Enchant Cloak - Gift of Versatility."] = "|cff0070dd|Hitem:110656:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Versatility]|h|r",
 		["A buyer has been found for your auction of Enchant Neck - Breath of Critical Strike."] = "|cffffffff|Hitem:110624:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Critical Strike]|h|r",
 		["A buyer has been found for your auction of Enchant Cloak - Gift of Mastery."] = "|cff0070dd|Hitem:110654:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Mastery]|h|r",
 		["A buyer has been found for your auction of Enchant Cloak - Breath of Versatility."] = "|cffffffff|Hitem:110635:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Versatility]|h|r",
+		["A buyer has been found for your auction of Enchant Weapon - Mark of the Frostwolf."] = "|cff0070dd|Hitem:112165:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Frostwolf]|h|r",
 		["A buyer has been found for your auction of Enchant Neck - Breath of Haste."] = "|cffffffff|Hitem:110625:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Haste]|h|r",
-		["A buyer has been found for your auction of Enchant Weapon - Mark of Bleeding Hollow."] = "|cff0070dd|Hitem:118015:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Bleeding Hollow]|h|r",
 		["A buyer has been found for your auction of Enchant Ring - Breath of Multistrike."] = "|cffffffff|Hitem:110620:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Multistrike]|h|r",
+		["A buyer has been found for your auction of Enchant Ring - Gift of Versatility."] = "|cff0070dd|Hitem:110642:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Versatility]|h|r",
+		["A buyer has been found for your auction of Enchant Weapon - Mark of Bleeding Hollow."] = "|cff0070dd|Hitem:118015:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Bleeding Hollow]|h|r",
 		["A buyer has been found for your auction of Enchant Neck - Breath of Versatility."] = "|cffffffff|Hitem:110628:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Versatility]|h|r",
+		["A buyer has been found for your auction of Enchant Cloak - Breath of Mastery."] = "|cffffffff|Hitem:110633:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Mastery]|h|r",
 		["A buyer has been found for your auction of Enchant Neck - Breath of Mastery."] = "|cffffffff|Hitem:110626:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Mastery]|h|r",
 		["A buyer has been found for your auction of Enchant Ring - Breath of Haste."] = "|cffffffff|Hitem:110618:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Haste]|h|r",
 		["A buyer has been found for your auction of Enchant Ring - Gift of Critical Strike."] = "|cff0070dd|Hitem:110638:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Critical Strike]|h|r",
 		["A buyer has been found for your auction of Enchant Weapon - Mark of Shadowmoon."] = "|cff0070dd|Hitem:112115:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Shadowmoon]|h|r",
-		["A buyer has been found for your auction of Enchant Cloak - Gift of Haste."] = "|cff0070dd|Hitem:110653:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Haste]|h|r",
+		["A buyer has been found for your auction of Enchant Ring - Gift of Haste."] = "|cff0070dd|Hitem:110639:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Haste]|h|r",
 		["A buyer has been found for your auction of Enchant Cloak - Breath of Critical Strike."] = "|cffffffff|Hitem:110631:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Critical Strike]|h|r",
+		["A buyer has been found for your auction of Enchant Cloak - Gift of Multistrike."] = "|cff0070dd|Hitem:110655:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Multistrike]|h|r",
 		["A buyer has been found for your auction of Enchant Ring - Gift of Mastery."] = "|cff0070dd|Hitem:110640:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Mastery]|h|r",
 		["A buyer has been found for your auction of Enchant Ring - Breath of Critical Strike."] = "|cffffffff|Hitem:110617:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Critical Strike]|h|r",
 		["A buyer has been found for your auction of Enchant Cloak - Breath of Multistrike."] = "|cffffffff|Hitem:110634:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Multistrike]|h|r",
 		["A buyer has been found for your auction of Enchant Weapon - Mark of Blackrock."] = "|cff0070dd|Hitem:112160:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Blackrock]|h|r",
-		["A buyer has been found for your auction of Enchant Cloak - Gift of Multistrike."] = "|cff0070dd|Hitem:110655:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Multistrike]|h|r",
-		["A buyer has been found for your auction of Enchant Neck - Gift of Versatility."] = "|cff0070dd|Hitem:110649:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Versatility]|h|r",
-		["A buyer has been found for your auction of Bulging Barrel of Oil."] = "|cff0070dd|Hitem:128316:0:0:0:0:0:0:0:1:0:0:1:0|h[Bulging Barrel of Oil]|h|r",
-		["A buyer has been found for your auction of Enchant Ring - Gift of Versatility."] = "|cff0070dd|Hitem:110642:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Versatility]|h|r",
-		["A buyer has been found for your auction of Enchant Cloak - Breath of Mastery."] = "|cffffffff|Hitem:110633:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Mastery]|h|r",
-		["A buyer has been found for your auction of Enchant Cloak - Gift of Versatility."] = "|cff0070dd|Hitem:110656:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Versatility]|h|r",
+		["A buyer has been found for your auction of Enchant Cloak - Gift of Haste."] = "|cff0070dd|Hitem:110653:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Haste]|h|r",
 	},
 	["f@Alliance - Sisters of Elune@syncMetadata"] = {
 		["TSM_INVENTORY"] = {
 			["Bracnar"] = {
-				["lastUpdate"] = 1459209673,
+				["lastUpdate"] = 1459542039,
 				["owner"] = "Sisters of Elune1060230216",
 			},
 			["Ghiaccioli"] = {
@@ -692,7 +692,7 @@ TradeSkillMasterDB = {
 				["owner"] = "Sisters of Elune1060230216",
 			},
 			["Clothgar"] = {
-				["lastUpdate"] = 1459460117,
+				["lastUpdate"] = 1459558567,
 				["owner"] = "Sisters of Elune1060230216",
 			},
 		},
@@ -740,7 +740,7 @@ TradeSkillMasterDB = {
 		},
 		["CRAFTING_PROFESSIONS"] = {
 			["Bracnar"] = {
-				["lastUpdate"] = 1459209531,
+				["lastUpdate"] = 1459541915,
 				["owner"] = "Sisters of Elune1060230216",
 			},
 			["Ghiaccioli"] = {
@@ -760,7 +760,7 @@ TradeSkillMasterDB = {
 				["owner"] = "Sisters of Elune1060230216",
 			},
 			["Clothgar"] = {
-				["lastUpdate"] = 1459460125,
+				["lastUpdate"] = 1459558219,
 				["owner"] = "Sisters of Elune1060230216",
 			},
 		},
@@ -1659,11 +1659,11 @@ TradeSkillMasterDB = {
 				["vsMarketValue"] = "dbmarket",
 				["ignoreFactionrealm"] = {
 				},
-				["vsDestroyValue"] = "Destroy",
-				["enableBuy"] = true,
 				["vsMaxMarketValue"] = "0c",
-				["sellAfterExpired"] = 20,
+				["enableBuy"] = true,
 				["qsPreference"] = 1,
+				["sellAfterExpired"] = 20,
+				["vsDestroyValue"] = "Destroy",
 				["restockSources"] = {
 				},
 				["restockQty"] = 0,
@@ -1768,17 +1768,17 @@ TradeSkillMasterDB = {
 			["1StuffStuff`Old EnchantStuff`Old Enchant`Old"] = true,
 			["1Low level enchant mats"] = true,
 			["1Stuff"] = true,
-			["1StuffStuff`Old EnchantStuff`Old Enchant`Bags"] = true,
+			["1Arcane Crystal Focusing Lens"] = true,
 			["1StuffStuff`PlansStuff`Plans`Rare"] = true,
 			["1MountsMounts`75k-125kMounts`75k-125k`90k-135k"] = true,
 			["1Gems"] = true,
-			["1Arcane Crystal Focusing Lens"] = true,
+			["1Craft enchantsCraft enchants`x1"] = true,
 			["1StuffStuff`Old Enchant"] = true,
 			["1StuffStuff`x 5"] = true,
 			["1Craft enchantsCraft enchants`x5Craft enchants`x5`x10"] = true,
 			["1StuffStuff`x1"] = true,
 			["1Leather/Fur"] = true,
-			["1Craft enchantsCraft enchants`x1"] = true,
+			["1StuffStuff`Old EnchantStuff`Old Enchant`Bags"] = true,
 			["1Craft enchantsCraft enchants`x1Craft enchants`x1`Tmp"] = true,
 			["1ProfessionsProfessions`EnchantingProfessions`Enchanting`Old"] = true,
 			["1Low level enchant matsLow level enchant mats`Sorcerous"] = true,
@@ -1793,7 +1793,7 @@ TradeSkillMasterDB = {
 		},
 		["scrollvalue"] = 0,
 		["fullwidth"] = 946.000061035156,
-		["selected"] = 1,
+		["selected"] = "1Arcane Crystal AH",
 		["treewidth"] = 175,
 		["treesizable"] = true,
 	},
@@ -1867,6 +1867,7 @@ TradeSkillMasterDB = {
 		["i:110626"] = "Craft enchants`x2`Breath Enchants",
 		["i:52766"] = "Stuff`Old Enchant`Bags",
 		["i:38987"] = "Stuff`Old Enchant`Bags",
+		["i:118375"] = "Arcane Crystal AH",
 		["i:38807"] = "Stuff`Old Enchant`Bags",
 		["i:45105"] = "Stuff`Plans & Recipe",
 		["i:52749"] = "Stuff`Old Enchant",
@@ -2094,12 +2095,12 @@ TradeSkillMasterDB = {
 		["i:109152"] = "Low level enchant mats",
 		["i:52762"] = "Stuff`Old Enchant`Bags",
 		["i:11178"] = "Low level enchant mats",
-		["i:38975"] = "Stuff`Old Enchant`Bags",
+		["i:52748"] = "Stuff`Old Enchant",
 		["i:45103"] = "Stuff`Plans & Recipe",
 		["i:52771"] = "Stuff`Old Enchant",
-		["i:22449"] = "Low level enchant mats",
+		["i:34054"] = "Low level enchant mats",
 		["i:38778"] = "Stuff`Old Enchant",
-		["i:38897"] = "Stuff`Old Enchant`Bags",
+		["i:22449"] = "Low level enchant mats",
 		["i:47634"] = "Stuff`Plans & Recipe",
 		["i:22447"] = "Low level enchant mats",
 		["i:38829"] = "Stuff`Old Enchant`Bags",
@@ -2113,11 +2114,11 @@ TradeSkillMasterDB = {
 		["i:38830"] = "Stuff`Old Enchant`Bags",
 		["i:38980"] = "Stuff`Old Enchant`Bags",
 		["i:52785"] = "Stuff`Old Enchant",
-		["i:74712"] = "Stuff`Old Enchant`Bags",
-		["i:118377"] = "Universal AH",
+		["i:38989"] = "Stuff`Old Enchant`Bags",
+		["i:38797"] = "Stuff`Old Enchant`Bags",
 		["i:115990"] = "Disenchant",
 		["i:72013"] = "Stuff`Plans & Recipe",
-		["i:38797"] = "Stuff`Old Enchant`Bags",
+		["i:46026"] = "Stuff`Old Enchant",
 		["i:38874"] = "Stuff`Old Enchant",
 		["i:29734"] = "Stuff`Plans & Recipe",
 		["i:45628"] = "Stuff`Old Enchant`Bags",
@@ -2188,19 +2189,19 @@ TradeSkillMasterDB = {
 		["i:112164"] = "Craft enchants`x5",
 		["i:38885"] = "Stuff`Old Enchant`Bags",
 		["i:38844"] = "Stuff`Old Enchant`Bags",
-		["i:46026"] = "Stuff`Old Enchant",
+		["i:118377"] = "Universal AH",
 		["i:74248"] = "Low level enchant mats",
 		["i:52719"] = "Low level enchant mats",
-		["i:38989"] = "Stuff`Old Enchant`Bags",
+		["i:44469"] = "Stuff`Old Enchant`Bags",
 		["i:38869"] = "Stuff`Old Enchant",
 		["i:74250"] = "Low level enchant mats",
-		["i:44469"] = "Stuff`Old Enchant`Bags",
+		["i:74712"] = "Stuff`Old Enchant`Bags",
 		["i:74722"] = "Stuff`Old Enchant",
 		["i:127796"] = "Baleful`Leather",
-		["i:34054"] = "Low level enchant mats",
+		["i:38897"] = "Stuff`Old Enchant`Bags",
 		["i:38805"] = "Stuff`Old Enchant`Bags",
-		["i:52748"] = "Stuff`Old Enchant",
 		["i:52745"] = "Stuff`Old Enchant`Bags",
+		["i:38975"] = "Stuff`Old Enchant`Bags",
 		["i:110639"] = "Craft enchants`x5",
 		["i:52769"] = "Stuff`Old Enchant`Bags",
 		["i:110638"] = "Craft enchants`x5",
@@ -2362,8 +2363,8 @@ TradeSkillMasterDB = {
 			["hasLoaded"] = true,
 		},
 		["TSMCraftingTradeSkillFrame"] = {
-			["y"] = 660.488830566406,
-			["x"] = 463.630126953125,
+			["y"] = 671.1083984375,
+			["x"] = 470.001861572266,
 			["hasLoaded"] = true,
 			["height"] = 499.999725341797,
 			["defaults"] = {
@@ -2393,7 +2394,6 @@ TradeSkillMasterDB = {
 		["TSMCraftingGatherFrame"] = {
 			["y"] = 774.490905761719,
 			["x"] = 1306.07019042969,
-			["hasLoaded"] = true,
 			["height"] = 400,
 			["defaults"] = {
 				["y"] = 300,
@@ -2410,7 +2410,7 @@ TradeSkillMasterDB = {
 		["Bracnar"] = {
 			["reagentBank"] = {
 				["i:108996"] = 1048,
-				["i:109118"] = 372,
+				["i:109118"] = 220,
 				["i:109133"] = 37,
 				["i:109136"] = 5,
 				["i:109135"] = 10,
@@ -2422,26 +2422,26 @@ TradeSkillMasterDB = {
 				["i:22450"] = 2,
 				["i:109128"] = 726,
 				["i:109143"] = 10,
-				["i:109693"] = 3035,
+				["i:109693"] = 2475,
 				["i:109125"] = 530,
 				["i:111601"] = 47,
 				["i:52719"] = 4,
 				["i:109129"] = 1541,
 				["i:109131"] = 26,
 				["i:87399"] = 30,
-				["i:109124"] = 718,
+				["i:109124"] = 538,
 				["i:3371"] = 75,
-				["i:109119"] = 760,
+				["i:109119"] = 608,
 				["i:109137"] = 14,
 				["i:111673"] = 18,
 				["i:120945"] = 1617,
-				["i:111366"] = 2880,
+				["i:111366"] = 3032,
 				["i:109144"] = 5,
 				["i:109123"] = 170,
 			},
 			["bag"] = {
 				["i:128503"] = 1,
-				["i:122591"] = 5,
+				["i:122591"] = 2,
 				["i:109076"] = 20,
 				["i:44050"] = 1,
 				["i:122272"] = 1,
@@ -2451,13 +2451,13 @@ TradeSkillMasterDB = {
 				["i:63206"] = 1,
 				["i:114128"] = 2,
 				["i:109153"] = 119,
-				["i:128320"] = 1,
+				["i:108439"] = 1,
 				["i:122273"] = 2,
 				["i:46874"] = 1,
 				["i:113542"] = 1,
 				["i:79249"] = 132,
 				["i:65360"] = 1,
-				["i:127810"] = 1,
+				["i:127669"] = 1,
 				["i:6948"] = 1,
 				["i:109167"] = 1,
 				["i:124292"] = 1,
@@ -2467,58 +2467,56 @@ TradeSkillMasterDB = {
 				["i:109168"] = 1,
 				["i:119151"] = 1,
 				["i:124099"] = 917,
-				["i:115800"] = 1,
 				["i:122345"] = 6,
-				["i:114622"] = 3,
 				["i:116276"] = 9,
 				["i:34334"] = 1,
-				["i:8383"] = 2,
+				["i:127783"] = 1,
 				["i:119093"] = 1,
 				["i:63352"] = 1,
-				["i:114822"] = 5,
+				["i:115800"] = 1,
 				["i:103678"] = 1,
-				["i:118663"] = 1,
+				["i:37901"] = 1,
 				["i:6263"] = 1,
-				["i:114094"] = 1,
+				["i:114622"] = 3,
 				["i:124295"] = 1,
-				["i:116268"] = 10,
+				["i:118663"] = 1,
 				["i:115463"] = 1,
 				["i:128453"] = 1,
 				["i:118100"] = 5,
-				["i:124223"] = 1,
-				["i:114131"] = 6,
+				["i:128320"] = 1,
+				["i:8383"] = 2,
 				["i:116120"] = 1,
-				["i:94288"] = 432,
-				["i:118354"] = 3,
-				["i:113543"] = 1,
-				["i:122590"] = 5,
+				["i:116268"] = 10,
+				["i:109217"] = 14,
+				["i:116916"] = 1,
+				["i:122590"] = 2,
 				["i:120257"] = 17,
 				["i:118897"] = 9,
-				["i:127779"] = 1,
+				["i:114822"] = 5,
 				["i:118711"] = 8,
-				["i:19019"] = 1,
+				["i:113681"] = 1000,
 				["i:127662"] = 2,
 				["i:129295"] = 1,
 				["i:128024"] = 1,
-				["i:128312"] = 1,
+				["i:113543"] = 1,
 				["i:110560"] = 1,
 				["i:117398"] = 1,
 				["i:107640"] = 4,
-				["i:114808"] = 4,
+				["i:118354"] = 3,
 				["i:122618"] = 7,
+				["i:19019"] = 1,
+				["i:114808"] = 4,
 				["i:127770"] = 1,
 				["i:85500"] = 1,
 				["i:118099"] = 45,
 				["i:58487"] = 7,
-				["i:133597"] = 1,
 				["i:128353"] = 1,
-				["i:33820"] = 1,
-				["i:120302"] = 1,
-				["i:124546"] = 1,
-				["i:118903"] = 2,
-				["i:64399"] = 1,
 				["i:124515"] = 1,
-				["i:123857"] = 1,
+				["i:133597"] = 1,
+				["i:118903"] = 2,
+				["i:33820"] = 1,
+				["i:124546"] = 1,
+				["i:64399"] = 1,
 				["i:32757"] = 1,
 				["i:51560"] = 1,
 				["i:113540"] = 1,
@@ -2526,16 +2524,16 @@ TradeSkillMasterDB = {
 				["i:52723"] = 1,
 				["i:116271"] = 18,
 				["i:118922"] = 1,
-				["i:113681"] = 1000,
+				["i:94288"] = 432,
 				["i:124300"] = 1,
 				["i:118576"] = 74,
-				["i:109217"] = 14,
-				["i:116916"] = 1,
+				["i:114131"] = 7,
+				["i:127785"] = 2,
 				["i:116266"] = 9,
 				["i:109253"] = 1,
+				["i:114094"] = 1,
+				["i:124223"] = 1,
 				["i:114746"] = 5,
-				["i:127785"] = 2,
-				["i:127669"] = 1,
 				["i:109223"] = 18,
 				["i:116913"] = 1,
 			},
@@ -2771,14 +2769,14 @@ TradeSkillMasterDB = {
 				["i:52720"] = 4,
 				["i:2772"] = 14,
 				["i:13446"] = 13,
-				["i:127780"] = 1,
+				["i:109148"] = 3,
 				["i:14344"] = 66,
 				["i:11134"] = 7,
 				["i:34056"] = 125,
 				["i:13465"] = 12,
 				["i:34057"] = 17,
 				["i:11139"] = 1,
-				["i:109148"] = 3,
+				["i:11174"] = 2,
 				["i:52328"] = 80,
 				["i:16204"] = 15,
 				["i:10978"] = 2,
@@ -2810,7 +2808,7 @@ TradeSkillMasterDB = {
 				["i:11083"] = 21,
 				["i:34055"] = 29,
 				["i:11177"] = 52,
-				["i:11174"] = 2,
+				["i:127780"] = 1,
 				["i:127805"] = 1,
 				["i:74249"] = 84,
 				["i:52722"] = 222,
@@ -2865,8 +2863,8 @@ TradeSkillMasterDB = {
 				["i:30748"] = 1,
 				["i:19440"] = 10,
 				["i:15280"] = 1,
+				["i:128365"] = 1,
 				["i:3419"] = 1,
-				["i:22248"] = 2,
 				["i:2820"] = 1,
 				["i:10036"] = 1,
 				["i:127779"] = 8,
@@ -2874,7 +2872,7 @@ TradeSkillMasterDB = {
 				["i:128319"] = 1,
 				["i:127810"] = 11,
 				["i:30747"] = 1,
-				["i:128365"] = 1,
+				["i:22248"] = 2,
 				["i:8623"] = 1,
 				["i:10444"] = 1,
 				["i:4102"] = 1,
@@ -2905,10 +2903,10 @@ TradeSkillMasterDB = {
 				["i:118428"] = 1,
 				["i:27944"] = 1,
 				["i:114943"] = 1,
-				["i:119299"] = 17,
+				["i:36053"] = 1,
 				["i:111366"] = 207,
 				["i:6948"] = 1,
-				["i:122349"] = 1,
+				["i:119299"] = 17,
 				["i:87216"] = 5,
 				["i:128365"] = 1,
 				["i:118472"] = 2,
@@ -2928,7 +2926,7 @@ TradeSkillMasterDB = {
 				["i:110560"] = 1,
 				["i:128507"] = 1,
 				["i:19222"] = 3,
-				["i:36053"] = 1,
+				["i:122349"] = 1,
 				["i:128505"] = 1,
 			},
 			["mail"] = {
@@ -3108,11 +3106,11 @@ TradeSkillMasterDB = {
 				["i:115524"] = 1184,
 				["i:12840"] = 4,
 				["i:128510"] = 1,
-				["i:15778"] = 1,
+				["i:21215"] = 20,
 				["i:18706"] = 1,
 				["i:34685"] = 1,
-				["i:21215"] = 20,
 				["i:44731"] = 1,
+				["i:15778"] = 1,
 				["i:34683"] = 1,
 				["i:110609"] = 519,
 				["i:115806"] = 4,
@@ -3282,18 +3280,18 @@ TradeSkillMasterDB = {
 				["i:74848"] = 94,
 			},
 			["bag"] = {
-				["i:115504"] = 305,
+				["i:115504"] = 57,
+				["i:113264"] = 1143,
+				["i:113588"] = 2018,
 				["i:113263"] = 71,
-				["i:113264"] = 1145,
-				["i:38682"] = 967,
-				["i:113262"] = 1373,
-				["i:113588"] = 1824,
-				["i:113261"] = 966,
+				["i:113262"] = 1370,
+				["i:113261"] = 946,
+				["i:38682"] = 960,
 			},
 			["mail"] = {
 			},
 			["auction"] = {
-				["i:110621"] = 2,
+				["i:110621"] = 1,
 				["i:110653"] = 5,
 				["i:110627"] = 2,
 				["i:112115"] = 5,
@@ -3302,35 +3300,35 @@ TradeSkillMasterDB = {
 				["i:110655"] = 5,
 				["i:110626"] = 2,
 				["i:112164"] = 5,
-				["i:128316"] = 1,
-				["i:110624"] = 2,
 				["i:110654"] = 5,
+				["i:112093"] = 5,
+				["i:110624"] = 2,
+				["i:110625"] = 2,
+				["i:110633"] = 2,
 				["i:110640"] = 5,
+				["i:110647"] = 5,
+				["i:110638"] = 5,
 				["i:112160"] = 5,
-				["i:110619"] = 2,
-				["i:112165"] = 5,
 				["i:110620"] = 2,
+				["i:112165"] = 5,
+				["i:110619"] = 2,
 				["i:110656"] = 5,
 				["i:110632"] = 2,
+				["i:110642"] = 5,
 				["i:110648"] = 5,
 				["i:110634"] = 3,
-				["i:110649"] = 5,
+				["i:110641"] = 5,
+				["i:118375"] = 1,
+				["i:110652"] = 5,
 				["i:110635"] = 2,
 				["i:110618"] = 2,
-				["i:110652"] = 5,
-				["i:110647"] = 5,
-				["i:110625"] = 2,
 				["i:110639"] = 5,
 				["i:110628"] = 2,
 				["i:110682"] = 5,
-				["i:110638"] = 5,
 				["i:110617"] = 2,
 				["i:110646"] = 5,
-				["i:110642"] = 5,
-				["i:110641"] = 5,
 				["i:110631"] = 2,
-				["i:110633"] = 2,
-				["i:112093"] = 5,
+				["i:110649"] = 5,
 			},
 			["bank"] = {
 				["i:122384"] = 1,
@@ -3652,8 +3650,8 @@ TradeSkillMasterDB = {
 	["_version"] = 5,
 	["g@ @auctionSaleEnabled"] = true,
 	["g@ @ignoreRandomEnchants"] = false,
-	["p@Default@millTooltip"] = true,
-	["p@Default@vendorSellTooltip"] = false,
+	["p@Default@isBankui"] = false,
+	["p@Default@openAllBags"] = true,
 	["p@Default@auctionFrameMovable"] = true,
 	["_scopeKeys"] = {
 		["char"] = {
@@ -4310,8 +4308,8 @@ TradeSkillMasterDB = {
 	["p@Default@operationTooltips"] = {
 	},
 	["p@Default@gotoNewCustomPriceSource"] = true,
-	["p@Default@openAllBags"] = true,
-	["p@Default@isBankui"] = false,
+	["p@Default@vendorSellTooltip"] = false,
+	["p@Default@millTooltip"] = true,
 	["p@Default@pricePerUnit"] = true,
 	["f@Alliance - Sisters of Elune@accountKey"] = "Sisters of Elune1060230216",
 	["g@ @bankUITab"] = "Warehousing",
@@ -4356,134 +4354,130 @@ TradeSkillMasterDB = {
 	["c@Bracnar - Sisters of Elune@auctionMessages"] = {
 	},
 	["c@Clothgar - Sisters of Elune@auctionPrices"] = {
-		["|cff0070dd|Hitem:128316:0:0:0:0:0:0:0:1:0:0:1:0|h[Bulging Barrel of Oil]|h|r"] = {
-			9985000, -- [1]
+		["|cff0070dd|Hitem:110649:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Versatility]|h|r"] = {
+			2707500, -- [1]
+			2707500, -- [2]
+			2707500, -- [3]
+			2707500, -- [4]
+			2707500, -- [5]
 		},
 		["|cff0070dd|Hitem:110641:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Multistrike]|h|r"] = {
-			3167500, -- [1]
-			3167500, -- [2]
-			3167500, -- [3]
-			3167500, -- [4]
-			3167500, -- [5]
+			2407732, -- [1]
+			2407732, -- [2]
+			2407732, -- [3]
+			2407732, -- [4]
+			2407732, -- [5]
 		},
 		["|cff0070dd|Hitem:110639:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Haste]|h|r"] = {
-			2290000, -- [1]
-			2290000, -- [2]
-			2290000, -- [3]
-			2290000, -- [4]
-			2290000, -- [5]
+			2185000, -- [1]
+			2185000, -- [2]
+			2185000, -- [3]
+			2185000, -- [4]
+			2185000, -- [5]
 		},
 		["|cff0070dd|Hitem:110654:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Mastery]|h|r"] = {
-			3290000, -- [1]
-			3290000, -- [2]
-			3290000, -- [3]
-			3290000, -- [4]
-			3290000, -- [5]
+			2292500, -- [1]
+			2292500, -- [2]
+			2292500, -- [3]
+			2292500, -- [4]
+			2292500, -- [5]
 		},
 		["|cff0070dd|Hitem:112164:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Warsong]|h|r"] = {
-			8385000, -- [1]
-			8385000, -- [2]
+			8245000, -- [1]
+			8245000, -- [2]
 			8385000, -- [3]
 			8385000, -- [4]
 			8385000, -- [5]
 		},
 		["|cff0070dd|Hitem:110656:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Versatility]|h|r"] = {
-			4042500, -- [1]
-			4042500, -- [2]
-			4042500, -- [3]
-			4042500, -- [4]
-			4042500, -- [5]
+			3937500, -- [1]
+			3937500, -- [2]
+			3937500, -- [3]
+			3937500, -- [4]
+			3937500, -- [5]
 		},
 		["|cff0070dd|Hitem:110640:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Mastery]|h|r"] = {
-			4747500, -- [1]
-			4747500, -- [2]
-			4747500, -- [3]
-			4747500, -- [4]
-			4747500, -- [5]
+			3897499, -- [1]
+			3897499, -- [2]
+			3897499, -- [3]
+			3897499, -- [4]
+			3897499, -- [5]
 		},
 		["|cffffffff|Hitem:110619:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Mastery]|h|r"] = {
-			885999, -- [1]
-			885999, -- [2]
+			874000, -- [1]
+			874000, -- [2]
 		},
 		["|cffffffff|Hitem:110625:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Haste]|h|r"] = {
-			789000, -- [1]
-			789000, -- [2]
+			783000, -- [1]
+			783000, -- [2]
 		},
 		["|cff0070dd|Hitem:110655:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Multistrike]|h|r"] = {
-			2830000, -- [1]
-			2830000, -- [2]
-			2830000, -- [3]
-			2830000, -- [4]
-			2830000, -- [5]
+			2184660, -- [1]
+			2184660, -- [2]
+			2184660, -- [3]
+			2184660, -- [4]
+			2184660, -- [5]
 		},
 		["|cff0070dd|Hitem:110646:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Haste]|h|r"] = {
-			2939999, -- [1]
-			2939999, -- [2]
-			2939999, -- [3]
-			2939999, -- [4]
-			2939999, -- [5]
+			2200000, -- [1]
+			2200000, -- [2]
+			2200000, -- [3]
+			2200000, -- [4]
+			2200000, -- [5]
 		},
 		["|cffffffff|Hitem:110618:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Haste]|h|r"] = {
-			410000, -- [1]
-			410000, -- [2]
+			402000, -- [1]
+			402000, -- [2]
 		},
 		["|cffffffff|Hitem:110632:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Haste]|h|r"] = {
-			783000, -- [1]
-			783000, -- [2]
+			771000, -- [1]
+			771000, -- [2]
 		},
 		["|cffffffff|Hitem:110627:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Multistrike]|h|r"] = {
-			746000, -- [1]
-			746000, -- [2]
+			740000, -- [1]
+			740000, -- [2]
 		},
 		["|cffffffff|Hitem:110626:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Mastery]|h|r"] = {
-			539000, -- [1]
-			539000, -- [2]
+			444000, -- [1]
+			444000, -- [2]
 		},
 		["|cff0070dd|Hitem:112093:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Shattered Hand]|h|r"] = {
-			905000, -- [1]
-			905000, -- [2]
-			905000, -- [3]
-			905000, -- [4]
-			905000, -- [5]
+			884000, -- [1]
+			884000, -- [2]
+			884000, -- [3]
+			884000, -- [4]
+			884000, -- [5]
 		},
 		["|cffffffff|Hitem:110624:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Critical Strike]|h|r"] = {
-			789000, -- [1]
-			789000, -- [2]
-		},
-		["|cffffffff|Hitem:110634:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Multistrike]|h|r"] = {
-			689000, -- [1]
-			689000, -- [2]
-			689000, -- [3]
-		},
-		["|cffffffff|Hitem:110628:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Versatility]|h|r"] = {
 			783000, -- [1]
 			783000, -- [2]
 		},
-		["|cff0070dd|Hitem:110638:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Critical Strike]|h|r"] = {
-			3085000, -- [1]
-			3085000, -- [2]
-			3085000, -- [3]
-			3085000, -- [4]
-			3085000, -- [5]
+		["|cffffffff|Hitem:110634:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Multistrike]|h|r"] = {
+			493000, -- [1]
+			493000, -- [2]
+			493000, -- [3]
 		},
-		["|cff0070dd|Hitem:110649:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Versatility]|h|r"] = {
-			2812500, -- [1]
-			2812500, -- [2]
-			2812500, -- [3]
-			2812500, -- [4]
-			2812500, -- [5]
+		["|cffffffff|Hitem:110628:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Breath of Versatility]|h|r"] = {
+			771000, -- [1]
+			771000, -- [2]
+		},
+		["|cff0070dd|Hitem:110638:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Critical Strike]|h|r"] = {
+			2482500, -- [1]
+			2482500, -- [2]
+			2482500, -- [3]
+			2482500, -- [4]
+			2482500, -- [5]
 		},
 		["|cffffffff|Hitem:110621:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Versatility]|h|r"] = {
-			602000, -- [1]
-			602000, -- [2]
+			596000, -- [1]
 		},
-		["|cffffffff|Hitem:110617:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Critical Strike]|h|r"] = {
-			378999, -- [1]
-			378999, -- [2]
+		["|cffffffff|Hitem:110633:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Mastery]|h|r"] = {
+			743000, -- [1]
+			743000, -- [2]
 		},
 		["|cffffffff|Hitem:110635:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Versatility]|h|r"] = {
-			689000, -- [1]
-			689000, -- [2]
+			494000, -- [1]
+			494000, -- [2]
 		},
 		["|cff0070dd|Hitem:110682:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Thunderlord]|h|r"] = {
 			9395000, -- [1]
@@ -4492,6 +4486,24 @@ TradeSkillMasterDB = {
 			9395000, -- [4]
 			9395000, -- [5]
 		},
+		["|cffffffff|Hitem:110617:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Critical Strike]|h|r"] = {
+			367000, -- [1]
+			367000, -- [2]
+		},
+		["|cff0070dd|Hitem:112115:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Shadowmoon]|h|r"] = {
+			4252500, -- [1]
+			4252500, -- [2]
+			4252500, -- [3]
+			4252500, -- [4]
+			4252500, -- [5]
+		},
+		["|cff0070dd|Hitem:110642:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Versatility]|h|r"] = {
+			3634999, -- [1]
+			3634999, -- [2]
+			3634999, -- [3]
+			3634999, -- [4]
+			3634999, -- [5]
+		},
 		["|cff0070dd|Hitem:110652:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Critical Strike]|h|r"] = {
 			2725000, -- [1]
 			2725000, -- [2]
@@ -4499,12 +4511,22 @@ TradeSkillMasterDB = {
 			2725000, -- [4]
 			2725000, -- [5]
 		},
-		["|cff0070dd|Hitem:112115:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Shadowmoon]|h|r"] = {
-			4270000, -- [1]
-			4270000, -- [2]
-			4270000, -- [3]
-			4270000, -- [4]
-			4270000, -- [5]
+		["|cff0070dd|Hitem:110653:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Haste]|h|r"] = {
+			2343660, -- [1]
+			2343660, -- [2]
+			2343660, -- [3]
+			2343660, -- [4]
+			2343660, -- [5]
+		},
+		["|cff0070dd|Hitem:110648:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Multistrike]|h|r"] = {
+			2817500, -- [1]
+			2817500, -- [2]
+			2817500, -- [3]
+			2817500, -- [4]
+			2817500, -- [5]
+		},
+		["|cff1eff00|Hitem:118375:0:0:0:0:0:0:0:1:0:0:0:0|h[Arcane Crystal Module]|h|r"] = {
+			354666280, -- [1]
 		},
 		["|cff0070dd|Hitem:118015:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Bleeding Hollow]|h|r"] = {
 			8163060, -- [1]
@@ -4513,55 +4535,23 @@ TradeSkillMasterDB = {
 			8163060, -- [4]
 			8163060, -- [5]
 		},
-		["|cff0070dd|Hitem:112160:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Blackrock]|h|r"] = {
-			1962060, -- [1]
-			1962060, -- [2]
-			1962060, -- [3]
-			1962060, -- [4]
-			1962060, -- [5]
-		},
-		["|cff0070dd|Hitem:110648:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Multistrike]|h|r"] = {
-			3527500, -- [1]
-			3527500, -- [2]
-			3527500, -- [3]
-			3527500, -- [4]
-			3527500, -- [5]
-		},
-		["|cff0070dd|Hitem:110642:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Gift of Versatility]|h|r"] = {
-			3732500, -- [1]
-			3732500, -- [2]
-			3732500, -- [3]
-			3732500, -- [4]
-			3732500, -- [5]
-		},
-		["|cff0070dd|Hitem:110653:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Gift of Haste]|h|r"] = {
-			2487042, -- [1]
-			2487042, -- [2]
-			2487042, -- [3]
-			2487042, -- [4]
-			2487042, -- [5]
-		},
 		["|cff0070dd|Hitem:110645:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Critical Strike]|h|r"] = {
-			3504999, -- [1]
-			3504999, -- [2]
-			3504999, -- [3]
-			3504999, -- [4]
-			3504999, -- [5]
-		},
-		["|cffffffff|Hitem:110633:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Mastery]|h|r"] = {
-			1099260, -- [1]
-			1099260, -- [2]
+			2775000, -- [1]
+			2775000, -- [2]
+			2775000, -- [3]
+			2775000, -- [4]
+			2775000, -- [5]
 		},
 		["|cffffffff|Hitem:110620:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Ring - Breath of Multistrike]|h|r"] = {
-			525999, -- [1]
-			525999, -- [2]
+			519000, -- [1]
+			519000, -- [2]
 		},
 		["|cff0070dd|Hitem:110647:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Neck - Gift of Mastery]|h|r"] = {
-			3347499, -- [1]
-			3347499, -- [2]
-			3347499, -- [3]
-			3347499, -- [4]
-			3347499, -- [5]
+			2802499, -- [1]
+			2802499, -- [2]
+			2802499, -- [3]
+			2802499, -- [4]
+			2802499, -- [5]
 		},
 		["|cff0070dd|Hitem:112165:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of the Frostwolf]|h|r"] = {
 			8163060, -- [1]
@@ -4571,8 +4561,15 @@ TradeSkillMasterDB = {
 			8163060, -- [5]
 		},
 		["|cffffffff|Hitem:110631:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Cloak - Breath of Critical Strike]|h|r"] = {
-			437000, -- [1]
-			437000, -- [2]
+			338000, -- [1]
+			338000, -- [2]
+		},
+		["|cff0070dd|Hitem:112160:0:0:0:0:0:0:0:1:0:0:0:0|h[Enchant Weapon - Mark of Blackrock]|h|r"] = {
+			1962060, -- [1]
+			1962060, -- [2]
+			1962060, -- [3]
+			1962060, -- [4]
+			1962060, -- [5]
 		},
 	},
 }

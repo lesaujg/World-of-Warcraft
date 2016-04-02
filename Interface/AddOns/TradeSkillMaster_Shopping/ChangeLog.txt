@@ -1,3 +1,10 @@
+v3.2.3
+*Fixed bug with post duration being set to 48 hours on subsequent posts if you did not change the duration dropdown.
+* NB - due to the way blizzard internally stores auction time left, items posted at 24 hours will display as 48 in shopping results.
+
+v3.2.2
+*Fixed bug with crafting search disenchanting items.
+
 v3.2.1
 *Fixed bug with inline search filters.
 

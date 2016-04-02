@@ -56,7 +56,7 @@ function AuctionTabUtil:GetCraftingFilterString(targetItem, ignoreDisenchant)
 			minRarities[info.itemType] = min(minRarities[info.itemType] or info.rarity, info.rarity)
 		end
 		for itemType, minRarity in pairs(minRarities) do
-			tinsert(filters, strjoin("/", itemType, _G["ITEM_QUALITY"..minRarity.."_DESC"], convertData.disenchant.minLevel, convertData.disenchant.maxLevel))
+			tinsert(filters, "/" .. strjoin("/", itemType, _G["ITEM_QUALITY"..minRarity.."_DESC"], convertData.disenchant.minLevel, convertData.disenchant.maxLevel))
 		end
 	end
 	return table.concat(filters, ";")

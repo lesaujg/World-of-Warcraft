@@ -419,9 +419,10 @@ function private.PostAuctionsThread(self, auctionInfo)
 	local inventoryItemString, inventoryRawItemLink = select(3, TSM.AuctionTabUtil:GetItemLocation(auctionRecord.itemString))
 	local maxStackSize = select(8, TSMAPI.Item:GetInfo(auctionRecord.itemLink))
 	local maxNumStacks = (maxStackSize == 1) and 1 or math.huge
+	local postDuration = postFrame.durationDropdown:GetValue() or 2
 
 	auctionBuyout = floor(auctionBuyout / auctionRecord.stackSize) * min(auctionRecord.stackSize, numInBags)
-	local postInfo = { buyout = auctionBuyout, stackSize = min(auctionRecord.stackSize, numInBags), numInBags = numInBags, numStacks = 1, duration = 2, updateBuyout = true, isDonePosting = nil, itemLink = TSMAPI.Item:ToItemLink(inventoryItemString), rawItemLink = inventoryRawItemLink }
+	local postInfo = { buyout = auctionBuyout, stackSize = min(auctionRecord.stackSize, numInBags), numInBags = numInBags, numStacks = 1, duration = postDuration, updateBuyout = true, isDonePosting = nil, itemLink = TSMAPI.Item:ToItemLink(inventoryItemString), rawItemLink = inventoryRawItemLink }
 	private.frame.UpdateConfirmation("post", auctionRecord, postInfo)
 	self:RegisterEvent("BAG_UPDATE", function() self:SendMsgToSelf("BAG_UPDATE") end)
 	self:RegisterEvent("CHAT_MSG_SYSTEM", function(_, msg) if postInfo.numStacks == 1 and msg == ERR_AUCTION_STARTED then self:SendMsgToSelf("AUCTION_POSTED", 1) end end)
