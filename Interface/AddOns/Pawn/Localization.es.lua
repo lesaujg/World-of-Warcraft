@@ -14,10 +14,8 @@ PawnLocal =
 	AverageItemLevelIgnoringRarityTooltipLine = "Nivel medio de objeto",
 	BackupCommand = "backup",
 	BaseValueWord = "base",
-	CogwheelName = "Engranaje",
 	CopyScaleEnterName = "Introduce un nombre para tu nueva escala, una copia de %s:",
 	CorrectGemsValueCalculationMessage = "   -- Las gemas correctas valdrán: %g",
-	CrystalOfFearName = "Cristal del Miedo",
 	DebugOffCommand = "debug off",
 	DebugOnCommand = "debug on",
 	DecimalSeparator = ",",
@@ -59,12 +57,13 @@ PawnLocal =
 	TooltipBestAnnotation = "%s  |cff8ec3e6(El mejor)|r",
 	TooltipBestAnnotationSimple = "%s  El mejor",
 	TooltipBigUpgradeAnnotation = "%s  |TInterface\\AddOns\\Pawn\\Textures\\UpgradeArrow:0|t|cff00ff00 mejora%s|r",
+	TooltipDowngradeAnnotation = "degradar", -- Needs review
 	TooltipSecondBestAnnotation = "%s  |cff8ec3e6(El segundo mejor)|r",
 	TooltipSecondBestAnnotationSimple = "%s  El segundo mejor",
 	TooltipUpgradeAnnotation = "%s  |TInterface\\AddOns\\Pawn\\Textures\\UpgradeArrow:0|t|cff00ff00+%.0f%% mejora%s|r",
-	TooltipUpgradeNeedsEnhancementsAnnotation = "%s  |TInterface\\AddOns\\Pawn\\Textures\\UpgradeArrow:0|t|cff00ff00+%.0f%% mejora%s|r",
 	TooltipUpgradeFor1H = " para armas 1H",
 	TooltipUpgradeFor2H = " para armas 2H",
+	TooltipUpgradeNeedsEnhancementsAnnotation = "%s  |TInterface\\AddOns\\Pawn\\Textures\\UpgradeArrow:0|t|cff00ff00+%.0f%% mejora potencial%s|r", -- Needs review
 	TooltipVersusLine = "%s|n  vs. |c%s%s|r",
 	TotalValueMessage = "   ---- Total: %g",
 	UnenchantedStatsHeader = "(Valor base)",
@@ -224,13 +223,12 @@ Para más información sobre como personalizar Pawn, por favor lee el archivo (R
 	TooltipParsing = {
 		Agility = "^%+?([-%d%.,]+) agilidad$",
 		AllStats = "^%+?([%d%.,]+) todas las estadísticas$",
-		Ap = "^%+?([%d%.,]+) poder de ataque$",
+		Ap = "^%+?([%d%.,]+) [Pp]oder de ataque$",
 		Armor = "^%+?([%d%.,]+) p. de armadura$",
 		Armor2 = "^UNUSED$",
 		Avoidance = "^%+([%d%.,]+) elusión$",
 		Axe = "^Hacha$",
 		BagSlots = "^%d+ casillas .+$",
-		BladesEdgeMountains = "^Montañas Filospada$",
 		BonusArmor = "^%+([%d%.,]+) bonus de armadura$",
 		Bow = "^Arco$",
 		ChanceOnHit = "Probabilidad al acertar:",
@@ -288,7 +286,6 @@ Para más información sobre como personalizar Pawn, por favor lee el archivo (R
 		MultiStatSeparator1 = "y",
 		Multistrike = "^%+([%d%.,]+) multigolpe$",
 		NormalizationEnchant = "^Encantado: (.*)$",
-		OnlyFitsInMetaGemSlot = "^\"Solo encaja en una ranura de gema meta%.\"$",
 		Parry = "^%+?([%d%.,]+) parada$",
 		Parry2 = "^UNUSED$",
 		Pattern = "Patrón:",
@@ -305,8 +302,6 @@ Para más información sobre como personalizar Pawn, por favor lee el archivo (R
 		Scope = "^Mira %(%+([%d%.,]+) daño%)$",
 		ScopeCrit = "^Scope %(%+([%d%.,]+) Critical Strike%)$",
 		ScopeRangedCrit = "^%+?([%d%.,]+) Golpe Crítico a distancia$",
-		Season = "^Temporada Warlords",
-		ShadowmoonValley = "^Valle Sombraluna$",
 		Shield = "^Escudo$",
 		SocketBonusPrefix = "Bonus ranura: ",
 		Speed = "^Velocidad ([%d%.,]+)$",
@@ -317,7 +312,6 @@ Para más información sobre como personalizar Pawn, por favor lee el archivo (R
 		Stamina = "^%+?([-%d%.,]+) aguante$",
 		Strength = "^%+?([-%d%.,]+) fuerza$",
 		Sword = "^Espada$",
-		TempestKeep = "^Castillo de la Tempestad$",
 		TemporaryBuffMinutes = "^.+%(%d+ min%)$",
 		TemporaryBuffSeconds = "^.+%(%d+ seg%)$",
 		Thunderforged = "^Forjas del Trueno$",
@@ -355,14 +349,12 @@ Para más información sobre como personalizar Pawn, por favor lee el archivo (R
 Valores de atributos de Wowhead usados con permiso—porfavor dirigir el feedback sobre los valores por defecto de las escalas a Wowhead.]=],
 		CompareClearItems = "Limpiar",
 		CompareClearItemsTooltip = "Quitar ambos objetos de la comparación.",
-		CompareCogwheelSockets = "Ranuras de engranaje",
-		CompareColoredSockets = "Ranuras coloreadas",
+		CompareColoredSockets = "Ranuras de color",
 		CompareEquipped = "Equipado",
 		CompareGemTotalValue = "Valor de gemas",
 		CompareHeader = "Compara objetos usando %s",
 		CompareMetaSockets = "Ranuras meta",
 		CompareOtherHeader = "Otro",
-		CompareShaTouchedSockets = "Tocado por Sha",
 		CompareSlotEmpty = "(vacío)",
 		CompareSocketBonus = "Bonus de ranura",
 		CompareSocketsHeader = "Ranuras",
@@ -448,12 +440,12 @@ Atajos:
 Si está seleccionado, el asistente de ranuras de Pawn sugerira gemas apropriadas para objetos de bajo nivel, pero algunas ranuras serán ignoradas en los calculos y los objetos con incrustaciones no se mostrarán como mejoras con tanta frecuancia. 
 
 Si está deseleccionado, Pawn calculará valores para objetos como si tuvieran las incrustaciones que maximizan el valor del objeto, independientemente del nivel del objeto.]=],
-		OptionsIgnoreItemUpgradesCheck = "Ignore valor and baleful upgrades",
-		OptionsIgnoreItemUpgradesCheckTooltip = [=[Enable this option to have Pawn ignore the potential for Valor upgrades and Empowered Baleful items when calculating item values.
+		OptionsIgnoreItemUpgradesCheck = "Ignorar las mejoras de valor y torvos", -- Needs review
+		OptionsIgnoreItemUpgradesCheckTooltip = [=[Activa esta opción para que Pawn ignore el potencial para las mejoras de Valor y los objetos Torvos Mejorados cuando calcule el valor de los objetos.
 
-If checked, Pawn will treat upgradeable items as they are and will not assume that you would use Valor and Empowered Apexis Fragments to improve the item when determining whether an item is better than what you currently have.
+Si esta marcado, Pawn tratará los objetos mejorables como son actualmente y no asumirá que usarás Valor y Fragmentos Apexis Mejorados para mejorar el objeto al determinar si el objeto es mejor que el que tienes actualmente.
 
-If unchecked, Pawn will treat those items assuming that you would maximize their potential with Valor and Empowered Apexis Fragments.  This could cause a level 650 baleful item to appear as a significant upgrade over a level 670 item from Blackrock Foundry, since the baleful item could potentially be improved to level 705 through valor and Apexis.]=],
+Si no esta marcado, Pawn tratará esos objetos asumiendo que maximizaras su potencial con Valor y Fragmentos Apexis Mejorados. Esto podría causar que un objeto torvo de nivel 650 apareciera como una mejora notable respecto a un objeto nivel 670 de Fundición Rocanegra, ya que el objeto torvo podría mejorarse potencialmente hasta el nivel 705 a través de Valor y Apexis.]=], -- Needs review
 		OptionsInventoryIcon = "Mostrar iconos de inventario",
 		OptionsInventoryIconTooltip = "Habilita ésta opción para mostrar el incono de los objetos enlazados en el chat.",
 		OptionsItemIDs = "Mostrar IDs de objetos",
