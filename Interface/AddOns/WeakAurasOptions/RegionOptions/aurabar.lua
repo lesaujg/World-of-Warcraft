@@ -370,7 +370,7 @@ local function createOptions(id, data)
             width = "half",
             order = 44.3,
             func = function()
-                WeakAuras.OpenTexturePick(data, "sparkTexture");
+                WeakAuras.OpenTexturePick(data, "sparkTexture", WeakAuras.texture_types);
             end,
             disabled = function() return not data.spark end,
             hidden = function() return not data.spark end,
@@ -453,6 +453,14 @@ local function createOptions(id, data)
             type = "toggle",
             name = L["Mirror"],
             order = 45.2,
+            disabled = function() return not data.spark end,
+            hidden = function() return not data.spark end,
+        },
+        sparkHidden = {
+            type = "select",
+            values = WeakAuras.spark_hide_types,
+            name = L["Hide on"],
+            order = 45.3,
             disabled = function() return not data.spark end,
             hidden = function() return not data.spark end,
         },

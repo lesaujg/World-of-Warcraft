@@ -5,13 +5,13 @@ end
 local L = WeakAuras.L
 
 -- Options translation
-L["Actions and Animations: 1/7"] = "행동 & 애니메이션: 1/7"
-L["Actions and Animations: 2/7"] = "행동 & 애니메이션: 2/7"
-L["Actions and Animations: 3/7"] = "행동 & 애니메이션: 3/7"
-L["Actions and Animations: 4/7"] = "행동 & 애니메이션: 4/7"
-L["Actions and Animations: 5/7"] = "행동 & 애니메이션: 5/7"
-L["Actions and Animations: 6/7"] = "행동 & 애니메이션: 6/7"
-L["Actions and Animations: 7/7"] = "행동 & 애니메이션: 7/7"
+L["Actions and Animations: 1/7"] = "동작 & 애니메이션: 1/7"
+L["Actions and Animations: 2/7"] = "동작 & 애니메이션: 2/7"
+L["Actions and Animations: 3/7"] = "동작 & 애니메이션: 3/7"
+L["Actions and Animations: 4/7"] = "동작 & 애니메이션: 4/7"
+L["Actions and Animations: 5/7"] = "동작 & 애니메이션: 5/7"
+L["Actions and Animations: 6/7"] = "동작 & 애니메이션: 6/7"
+L["Actions and Animations: 7/7"] = "동작 & 애니메이션: 7/7"
 L["Actions and Animations Text"] = [=[애니메이션을 테스트합니다, 디스플레이를 숨겼다가 다시 표시해야 합니다. 디스플레이의 사이드바에 있는 보기 버튼을 사용하면 됩니다.
 
 시작 애니메이션을 보려면 여러번 클릭하세요.]=]

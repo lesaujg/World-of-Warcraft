@@ -292,7 +292,6 @@ local aura_types = WeakAuras.aura_types;
 local orientation_types = WeakAuras.orientation_types;
 local spec_types = WeakAuras.spec_types;
 local totem_types = WeakAuras.totem_types;
-local texture_types = WeakAuras.texture_types;
 local operator_types = WeakAuras.operator_types;
 local string_operator_types = WeakAuras.string_operator_types;
 local weapon_types = WeakAuras.weapon_types;
@@ -1965,7 +1964,7 @@ function WeakAuras.AddOption(id, data)
     regionOption = {
       unsupported = {
         type = "description",
-        name = L["This region of type \"%s\" has no configuration options."]:format(data.regionType)
+        name = L["This region of type \"%s\" is not supported."]:format(data.regionType)
       }
     };
   end
@@ -4948,9 +4947,15 @@ function WeakAuras.ReloadTriggerOptions(data)
       order = 7,
       width = "double",
       values = function()
-        if(trigger.type == "event") then
+        local type;
+        if (data.controlledChildren) then
+          type = getAll(data, {"trigger", "type"});
+        else
+          type = trigger.type;
+        end
+        if(type == "event") then
           return event_types;
-        elseif(trigger.type == "status") then
+        elseif(type == "status") then
           return status_types;
         end
       end,
@@ -5512,7 +5517,17 @@ function WeakAuras.ReloadTriggerOptions(data)
     replaceNameDescFuncs(displayOptions[id], data);
     replaceImageFuncs(displayOptions[id], data);
 
-    local regionOption = regionOptions[data.regionType].create(id, data);
+    local regionOption;
+    if (regionOptions[data.regionType]) then
+      regionOption = regionOptions[data.regionType].create(id, data);
+    else
+      regionOption = {
+        unsupported = {
+          type = "description",
+          name = L["This region of type \"%s\" is not supported."]:format(data.regionType)
+        }
+      };
+    end
     displayOptions[id].args.group = {
       type = "group",
       name = L["Group"],
@@ -5652,6 +5667,13 @@ function WeakAuras.ReloadGroupRegionOptions(data)
   if(regionType) then
     if(regionOptions[regionType]) then
       regionOption = regionOptions[regionType].create(id, data);
+    else
+      regionOption = {
+        unsupported = {
+          type = "description",
+          name = L["This region of type \"%s\" is not supported."]:format(data.regionType)
+        }
+      };
     end
   end
   if(regionOption) then
@@ -6342,14 +6364,19 @@ function WeakAuras.CreateFrame()
 
   local function texturePickGroupSelected(widget, event, uniquevalue)
     texturePickScroll:ReleaseChildren();
-    for texturePath, textureName in pairs(texture_types[uniquevalue]) do
+    for texturePath, textureName in pairs(texturePick.textures[uniquevalue]) do
       local textureWidget = AceGUI:Create("WeakAurasTextureButton");
-      textureWidget:SetTexture(texturePath, textureName);
+      if (texturePick.SetTextureFunc) then
+        texturePick.SetTextureFunc(textureWidget, texturePath, textureName);
+      else
+        textureWidget:SetTexture(texturePath, textureName);
+        local d = texturePick.textureData;
+        textureWidget:ChangeTexture(d.r, d.g, d.b, d.a, d.rotate, d.discrete_rotation, d.rotation, d.mirror, d.blendMode);
+      end
+
       textureWidget:SetClick(function()
         texturePick:Pick(texturePath);
       end);
-      local d = texturePick.textureData;
-      textureWidget:ChangeTexture(d.r, d.g, d.b, d.a, d.rotate, d.discrete_rotation, d.rotation, d.mirror, d.blendMode);
       texturePickScroll:AddChild(textureWidget);
       table.sort(texturePickScroll.children, function(a, b)
         local aPath, bPath = a:GetTexturePath(), b:GetTexturePath();
@@ -6369,7 +6396,7 @@ function WeakAuras.CreateFrame()
 
   function texturePick.UpdateList(self)
     wipe(texturePickDropdown.list);
-    for categoryName, category in pairs(texture_types) do
+    for categoryName, category in pairs(self.textures) do
       local match = false;
       for texturePath, textureName in pairs(category) do
         if(texturePath == self.data[self.field]) then
@@ -6393,6 +6420,7 @@ function WeakAuras.CreateFrame()
     if(pickedwidget) then
       pickedwidget:Pick();
     end
+
     if(self.data.controlledChildren) then
       setAll(self.data, {"region", self.field}, texturePath);
     else
@@ -6408,9 +6436,11 @@ function WeakAuras.CreateFrame()
     texturePickDropdown.dropdown:SetText(texturePickDropdown.list[status.selected]);
   end
 
-  function texturePick.Open(self, data, field)
+  function texturePick.Open(self, data, field, textures, SetTextureFunc)
     self.data = data;
     self.field = field;
+    self.textures = textures;
+    self.SetTextureFunc = SetTextureFunc
     if(data.controlledChildren) then
       self.givenPath = {};
       for index, childId in pairs(data.controlledChildren) do
@@ -6458,7 +6488,7 @@ function WeakAuras.CreateFrame()
       _, givenPath = next(self.givenPath);
     end
     WeakAuras.debug(givenPath, 3);
-    for categoryName, category in pairs(texture_types) do
+    for categoryName, category in pairs(self.textures) do
       if not(picked) then
         for texturePath, textureName in pairs(category) do
           if(texturePath == givenPath) then
@@ -6471,7 +6501,7 @@ function WeakAuras.CreateFrame()
       end
     end
     if not(picked) then
-      for categoryName, category in pairs(texture_types) do
+      for categoryName, category in pairs(self.textures) do
         texturePickDropdown:SetGroup(categoryName);
         break;
       end
@@ -7063,7 +7093,7 @@ function WeakAuras.CreateFrame()
     self.oldOnTextChanged = texteditorbox.editBox:GetScript("OnTextChanged");
     texteditorbox.editBox:SetScript("OnTextChanged", function(...)
       local str = texteditorbox.editBox:GetText();
-      if not(str) then
+      if not(str) or texteditorbox.combinedText == true then
         texteditorError:SetText("");
       else
         local _, errorString
@@ -7096,13 +7126,16 @@ function WeakAuras.CreateFrame()
         if not(combinedText == "") then
           combinedText = combinedText.."\n\n";
         end
-        combinedText = combinedText.."--"..childId.."\n";
+
+        combinedText = combinedText.. L["-- Do not remove this comment, it is part of this trigger: "] .. childId .. "\n";
         combinedText = combinedText..(text or "");
       end
       if(sameTexts) then
         texteditorbox:SetText(singleText or "");
+        texteditorbox.combinedText = false;
       else
         texteditorbox:SetText(combinedText);
+        texteditorbox.combinedText = true;
       end
     else
       if(addReturn) then
@@ -7124,14 +7157,48 @@ function WeakAuras.CreateFrame()
     frame.window = "default";
   end
 
+  local function extractTexts(input, ids)
+    local texts = {};
+
+    local currentPos, id, startIdLine, startId, endId, endIdLine;
+    while (true) do
+      startIdLine, startId = string.find(input, L["-- Do not remove this comment, it is part of this trigger: "], currentPos);
+      if (not startId) then break end
+
+      endId, endIdLine = string.find(input, "\n", startId);
+      if (not endId) then break end;
+
+      if (currentPos) then
+        local trimmedPosition = startIdLine - 1;
+        while (string.sub(input, trimmedPosition, trimmedPosition) == "\n") do
+          trimmedPosition = trimmedPosition - 1;
+        end
+
+        texts[id] = string.sub(input, currentPos, trimmedPosition);
+      end
+
+      id = string.sub(input, startId + 1, endId - 1);
+
+      currentPos = endIdLine + 1;
+    end
+
+    if (id) then
+      texts[id] = string.sub(input, currentPos, string.len(input));
+    end
+
+    return texts;
+  end
+
   function texteditor.Close(self)
     if(self.data.controlledChildren) then
+      local textById = texteditorbox.combinedText and extractTexts(texteditorbox:GetText(), self.data.controlledChildren);
       for index, childId in pairs(self.data.controlledChildren) do
+        local text = texteditorbox.combinedText and (textById[childId] or "") or texteditorbox:GetText();
         local childData = WeakAuras.GetData(childId);
         if(self.addReturn) then
-          valueToPath(childData, self.path, "return "..texteditorbox:GetText());
+          valueToPath(childData, self.path, "return "..text);
         else
-          valueToPath(childData, self.path, texteditorbox:GetText());
+          valueToPath(childData, self.path, text);
         end
         WeakAuras.Add(childData);
       end
@@ -8508,12 +8575,7 @@ function WeakAuras.UpdateDisplayButton(data)
   if not(button) then
     error("Button for "..id.." was not found!");
   else
-    if(regionOptions[data.regionType]) then
-      button:SetIcon(WeakAuras.SetThumbnail(data));
-    else
-      button:SetIcon("Interface\\Icons\\INV_Misc_QuestionMark");
-    end
-
+    button:SetIcon(WeakAuras.SetThumbnail(data));
   end
 end
 
@@ -8523,39 +8585,34 @@ function WeakAuras.SetThumbnail(data)
   if not(regionType) then
     error("Improper arguments to WeakAuras.SetThumbnail - regionType not defined");
   else
-    if(regionTypes[regionType]) then
-      local id = data.id;
-      if not(id) then
-        error("Improper arguments to WeakAuras.SetThumbnail - id not defined");
+    local id = data.id;
+    local button = displayButtons[id];
+    local thumbnail;
+    if((not thumbnails[id]) or (not thumbnails[id].region) or thumbnails[id].regionType ~= regionType) then
+      if(regionOptions[regionType] and regionOptions[regionType].createThumbnail and regionOptions[regionType].modifyThumbnail) then
+        thumbnail = regionOptions[regionType].createThumbnail(button.frame, regionTypes[regionType].create);
       else
-        local button = displayButtons[id];
-        local thumbnail, region;
-        if(regionOptions[regionType].createThumbnail and regionOptions[regionType].modifyThumbnail) then
-          if((not thumbnails[id]) or (not thumbnails[id].region) or thumbnails[id].regionType ~= regionType) then
-            thumbnail = regionOptions[regionType].createThumbnail(button.frame, regionTypes[regionType].create);
-            thumbnails[id] = {
-              regionType = regionType,
-              region = thumbnail
-            };
-          else
-            thumbnail = thumbnails[id].region;
-          end
-          WeakAuras.validate(data, regionTypes[regionType].default);
-          regionOptions[regionType].modifyThumbnail(button.frame, thumbnail, data, regionTypes[regionType].modify);
-        else
-          thumbnail = regionOptions[regionType].icon;
-        end
-
-        return thumbnail;
+        thumbnail = button.frame:CreateTexture();
+        thumbnail:SetTexture("Interface\\Icons\\INV_Misc_QuestionMark");
       end
-    else
-      error("Improper arguments to WeakAuras.SetThumbnail - regionType \""..data.regionType.."\" is not supported and no custom region was supplied");
+      thumbnails[id] = {
+        regionType = regionType,
+        region = thumbnail
+      };
     end
+
+    thumbnail = thumbnails[id].region;
+    if(regionOptions[regionType] and regionOptions[regionType].modifyThumbnail) then
+       WeakAuras.validate(data, regionTypes[regionType].default);
+      regionOptions[regionType].modifyThumbnail(button.frame, thumbnail, data, regionTypes[regionType].modify);
+    end
+
+    return thumbnail;
   end
 end
 
-function WeakAuras.OpenTexturePick(data, field)
-  frame.texturePick:Open(data, field);
+function WeakAuras.OpenTexturePick(data, field, textures, stopMotion)
+  frame.texturePick:Open(data, field, textures, stopMotion);
 end
 
 function WeakAuras.OpenIconPick(data, field)

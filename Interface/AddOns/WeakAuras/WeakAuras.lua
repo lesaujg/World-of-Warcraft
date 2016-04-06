@@ -613,6 +613,7 @@ frame:SetAllPoints(UIParent);
 local loadedFrame = CreateFrame("FRAME");
 WeakAuras.frames["Addon Initialization Handler"] = loadedFrame;
 loadedFrame:RegisterEvent("ADDON_LOADED");
+loadedFrame:RegisterEvent("PLAYER_LOGIN");
 loadedFrame:RegisterEvent("PLAYER_ENTERING_WORLD");
 loadedFrame:SetScript("OnEvent", function(self, event, addon)
   if(event == "ADDON_LOADED") then
@@ -635,34 +636,35 @@ loadedFrame:SetScript("OnEvent", function(self, event, addon)
 
       WeakAuras.UpdateCurrentInstanceType();
       WeakAuras.SyncParentChildRelationships();
-
-      local toAdd = {};
-      for id, data in pairs(db.displays) do
-      if(id ~= data.id) then
-        print("|cFF8800FFWeakAuras|r detected a corrupt entry in WeakAuras saved displays - '"..tostring(id).."' vs '"..tostring(data.id).."'" );
-        data.id = id;
-      end
-      tinsert(toAdd, data);
-      end
-      WeakAuras.AddMany(toAdd);
-      WeakAuras.AddManyFromAddons(from_files);
-      WeakAuras.RegisterDisplay = WeakAuras.AddFromAddon;
-
-      WeakAuras.ResolveCollisions(function() registeredFromAddons = true; end);
-      WeakAuras.FixGroupChildrenOrder();
-
-      for _, triggerSystem in pairs(triggerSystems) do
-        if (triggerSystem.AllAdded) then
-          triggerSystem.AllAdded();
-        end
-      end
-      -- check in case of a disconnect during an encounter.
-      if (db.CurrentEncounter) then
-        WeakAuras.CheckForPreviousEncounter()
-      end
-
-      WeakAuras.Resume();
     end
+  elseif(event == "PLAYER_LOGIN") then
+    local toAdd = {};
+    for id, data in pairs(db.displays) do
+    if(id ~= data.id) then
+      print("|cFF8800FFWeakAuras|r detected a corrupt entry in WeakAuras saved displays - '"..tostring(id).."' vs '"..tostring(data.id).."'" );
+      data.id = id;
+    end
+    tinsert(toAdd, data);
+    end
+    WeakAuras.AddMany(toAdd);
+    WeakAuras.AddManyFromAddons(from_files);
+    WeakAuras.RegisterDisplay = WeakAuras.AddFromAddon;
+
+    WeakAuras.ResolveCollisions(function() registeredFromAddons = true; end);
+    WeakAuras.FixGroupChildrenOrder();
+
+    for _, triggerSystem in pairs(triggerSystems) do
+      if (triggerSystem.AllAdded) then
+        triggerSystem.AllAdded();
+      end
+    end
+    -- check in case of a disconnect during an encounter.
+    if (db.CurrentEncounter) then
+      WeakAuras.CheckForPreviousEncounter()
+    end
+
+    WeakAuras.RegisterLoadEvents();
+    WeakAuras.Resume();
   elseif(event == "PLAYER_ENTERING_WORLD") then
     -- Schedule events that need to be handled some time after login
     timer:ScheduleTimer(function() squelch_actions = false; end, db.login_squelch_time);      -- No sounds while loading
@@ -1050,6 +1052,9 @@ function WeakAuras.ScanForLoads(self, event, arg1)
   local _, size, difficulty, instanceType, difficultyIndex;
   local incombat = UnitAffectingCombat("player") -- or UnitAffectingCombat("pet");
   local inpetbattle = C_PetBattles.IsInBattle()
+  local vehicle = UnitInVehicle('player');
+  local vehicleUi = UnitHasVehicleUI('player');
+
   if (inInstance) then
     _, instanceType, difficultyIndex = GetInstanceInfo();
     size = Type
@@ -1098,6 +1103,9 @@ function WeakAuras.ScanForLoads(self, event, arg1)
     elseif difficultyIndex == 17 then
       size = "flexible"
       difficulty = "lfr"
+    elseif difficultyIndex == 23 then
+      size = "party"
+      difficulty = "mythic"
     end
   else
     size = "none"
@@ -1109,8 +1117,8 @@ function WeakAuras.ScanForLoads(self, event, arg1)
   for id, data in pairs(db.displays) do
     if (data and data.trigger) then
       local loadFunc = loadFuncs[id];
-      shouldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", incombat, inpetbattle, player, realm, class, spec, race, faction, playerLevel, zone, zoneId, encounter_id, size, difficulty, role);
-      couldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", true, true, player, realm, class, spec, race, faction, playerLevel, zone, zoneId, encounter_id, size, difficulty, role);
+      shouldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", incombat, inpetbattle, vehicle, vehicleUi, player, realm, class, spec, race, faction, playerLevel, zone, zoneId, encounter_id, size, difficulty, role);
+      couldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", true, true, vehicle, vehicleUi, player, realm, class, spec, race, faction, playerLevel, zone, zoneId, encounter_id, size, difficulty, role);
 
       if(shouldBeLoaded and not loaded[id]) then
         WeakAuras.LoadDisplay(id);
@@ -1163,21 +1171,26 @@ local loadFrame = CreateFrame("FRAME");
 WeakAuras.loadFrame = loadFrame;
 WeakAuras.frames["Display Load Handling"] = loadFrame;
 
-loadFrame:RegisterEvent("ENCOUNTER_START");
-loadFrame:RegisterEvent("ENCOUNTER_END");
+function WeakAuras.RegisterLoadEvents()
+  loadFrame:RegisterEvent("ENCOUNTER_START");
+  loadFrame:RegisterEvent("ENCOUNTER_END");
 
-loadFrame:RegisterEvent("PLAYER_TALENT_UPDATE");
-loadFrame:RegisterEvent("ZONE_CHANGED");
-loadFrame:RegisterEvent("ZONE_CHANGED_INDOORS");
-loadFrame:RegisterEvent("ZONE_CHANGED_NEW_AREA");
-loadFrame:RegisterEvent("PLAYER_LEVEL_UP");
-loadFrame:RegisterEvent("PLAYER_REGEN_DISABLED");
-loadFrame:RegisterEvent("PLAYER_REGEN_ENABLED");
+  loadFrame:RegisterEvent("PLAYER_TALENT_UPDATE");
+  loadFrame:RegisterEvent("ZONE_CHANGED");
+  loadFrame:RegisterEvent("ZONE_CHANGED_INDOORS");
+  loadFrame:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+  loadFrame:RegisterEvent("PLAYER_LEVEL_UP");
+  loadFrame:RegisterEvent("PLAYER_REGEN_DISABLED");
+  loadFrame:RegisterEvent("PLAYER_REGEN_ENABLED");
 
-loadFrame:RegisterEvent("PLAYER_ROLES_ASSIGNED");
-loadFrame:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
-loadFrame:RegisterEvent("PET_BATTLE_OPENING_START");
-loadFrame:RegisterEvent("PET_BATTLE_CLOSE");
+  loadFrame:RegisterEvent("PLAYER_ROLES_ASSIGNED");
+  loadFrame:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
+  loadFrame:RegisterEvent("PET_BATTLE_OPENING_START");
+  loadFrame:RegisterEvent("PET_BATTLE_CLOSE");
+  loadFrame:RegisterEvent("UNIT_ENTERED_VEHICLE");
+  loadFrame:RegisterEvent("UNIT_EXITED_VEHICLE");
+  loadFrame:RegisterEvent("GLYPH_UPDATED");
+end
 
 loadFrame:SetScript("OnEvent", WeakAuras.ScanForLoads);
 
@@ -1554,7 +1567,7 @@ function WeakAuras.Modernize(data)
     load.talent.single = talent;
     load.talent.multi = {}
   end
-  
+
   --upgrade to support custom trigger combination logic
   if (data.disjunctive == true) then
     data.disjunctive = "any";
@@ -1809,6 +1822,27 @@ function WeakAuras.Add(data)
   -- end
 end
 
+function removeSpellNames(data)
+  local trigger
+  for triggernum=0,(data.numTriggers or 9) do
+    if(triggernum == 0) then
+      trigger = data.trigger;
+    elseif(data.additional_triggers and data.additional_triggers[triggernum]) then
+      trigger = data.additional_triggers[triggernum].trigger;
+    end
+    if (trigger.spellId) then
+      trigger.name = GetSpellInfo(trigger.spellId) or trigger.name;
+    end
+    if (trigger.spellIds) then
+      for i = 1, 10 do
+        if (trigger.spellIds[i]) then
+          trigger.names[i] = GetSpellInfo(trigger.spellIds[i]) or trigger.names[i];
+        end
+      end
+    end
+  end
+end
+
 function WeakAuras.pAdd(data)
   local id = data.id;
   if not(id) then
@@ -1854,6 +1888,7 @@ function WeakAuras.pAdd(data)
     end
   end
 
+  removeSpellNames(data);
   db.displays[id] = data;
 end
 
@@ -1862,15 +1897,19 @@ function WeakAuras.SetRegion(data, cloneId)
   if not(regionType) then
     error("Improper arguments to WeakAuras.SetRegion - regionType not defined");
   else
-    if(regionTypes[regionType]) then
-      local id = data.id;
-      if not(id) then
-        error("Improper arguments to WeakAuras.SetRegion - id not defined");
+    if(not regionTypes[regionType]) then
+      regionType = "fallback";
+      print("Improper arguments to WeakAuras.CreateRegion - regionType \""..data.regionType.."\" is not supported");
+    end
+
+    local id = data.id;
+    if not(id) then
+      error("Improper arguments to WeakAuras.SetRegion - id not defined");
+    else
+      local region;
+      if(cloneId) then
+        region = clones[id][cloneId];
       else
-        local region;
-        if(cloneId) then
-          region = clones[id][cloneId];
-        else
         if((not regions[id]) or (not regions[id].region) or regions[id].regionType ~= regionType) then
           region = regionTypes[regionType].create(frame, data);
           region.toShow = true;
@@ -2086,11 +2125,7 @@ function WeakAuras.SetRegion(data, cloneId)
       if(anim_cancelled) then
         startMainAnimation();
       end
-
       return region;
-      end
-    else
-      error("Improper arguments to WeakAuras.CreateRegion - regionType \""..data.regionType.."\" is not supported");
     end
   end
 end

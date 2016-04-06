@@ -6,7 +6,7 @@ local L = WeakAuras.L
 
 -- Options translation
 L["1 Match"] = "1개 일치"
-L["Actions"] = "행동"
+L["Actions"] = "동작"
 L["Activate when the given aura(s) |cFFFF0000can't|r be found"] = "주어진 오라가 |cFFFF0000없을 때|r 활성화"
 L["Add a new display"] = "새 디스플레이 추가"
 L["Add Dynamic Text"] = "유동적 텍스트 추가"
@@ -14,23 +14,24 @@ L["Addon"] = "애드온"
 L["Addons"] = "애드온"
 L["Add to group %s"] = "%s 그룹에 추가"
 L["Add to new Dynamic Group"] = "새 유동적 그룹에 추가"
-L["Add to new Group"] = "새 그룹 추가"
+L["Add to new Group"] = "새 그룹에 추가"
 L["Add Trigger"] = "활성 조건 추가"
 L["A group that dynamically controls the positioning of its children"] = "포함된 개체들의 배열을 유동적으로 조절하는 그룹"
 L["Align"] = "정렬"
-L["Allow Full Rotation"] = "완전 회전 허용"
+L["Allow Full Rotation"] = "전체 회전 허용"
 L["Alpha"] = "투명도"
-L["Anchor"] = "기준점"
+L["Anchor"] = "기준"
 L["Anchor Point"] = "기준점"
 L["Angle"] = "각도"
 L["Animate"] = "애니메이션"
 L["Animated Expand and Collapse"] = "확장 / 접기 애니메이션"
-L["Animation relative duration description"] = [=[애니메이션의 지속시간은 디스플레이의 지속시간에 상대적입니다, 분수 (1/2), 백분율 (50%), 또는 소수 (0.5)로 나타내집니다.
-|cFFFF0000참고:|r 디스플레이가 진행 시간이 없으면 (비-지속적 이벤트 조건, 지속시간이 없는 오라, 기타.), 애니메이션은 재생되지 않습니다.
+L["Animation relative duration description"] = [=[
+애니메이션의 지속시간은 디스플레이의 지속시간에 상대적입니다, 분수 (1/2), 백분율 (50%), 또는 소수 (0.5)로 표현합니다.
+|cFFFF0000참고:|r 디스플레이가 진행 시간이 없으면 (비-지속적 이벤트 활성 조건, 지속시간이 없는 오라, 등등), 애니메이션은 재생되지 않습니다.
 
 |cFF4444FF예제:|r
-애니메이션의 지속시간을 |cFF00CC0010%|r로 설정하고, 디스플레이의 조건이 20초 지속 버프일 때, 시작 애니메이션은 2초 동안 재생됩니다.
-애니메이션의 지속시간을 |cFF00CC0010%|r로 설정하고, 디스플레이의 조건이 지속시간이 없는 버프일 때, 시작 애니메이션은 재생되지 않습니다 (지속시간을 따로 설정했더라도)."
+애니메이션의 지속시간을 |cFF00CC0010%|r로 설정하고, 디스플레이의 활성 조건이 20초 지속 버프일 때, 시작 애니메이션은 2초 동안 재생됩니다.
+애니메이션의 지속시간을 |cFF00CC0010%|r로 설정하고, 디스플레이의 활성 조건이 지속시간이 없는 버프일 때, 시작 애니메이션은 재생되지 않습니다 (지속시간을 따로 설정했더라도)."
 ]=]
 L["Animations"] = "애니메이션"
 L["Animation Sequence"] = "애니메이션 순서"
@@ -45,7 +46,7 @@ L["Backdrop Style"] = "배경 스타일"
 L["Background"] = "배경"
 L["Background Color"] = "배경 색상"
 L["Background Inset"] = "배경 축소"
-L["Background Offset"] = "배경 오프셋"
+L["Background Offset"] = "배경 위치"
 L["Background Texture"] = "배경 무늬"
 L["Bar Alpha"] = "바 투명도"
 L["Bar Color"] = "바 색상"
@@ -60,10 +61,10 @@ L["Blood"] = "혈기"
 L["Border"] = "테두리"
 L["Border Color"] = "테두리 색상"
 L["Border Inset"] = "테두리 삽입"
-L["Border Offset"] = "테두리 오프셋"
+L["Border Offset"] = "테두리 위치"
 L["Border Settings"] = "테두리 설정"
 L["Border Size"] = "테두리 크기"
-L["Border Style"] = "테두리 스타일"
+L["Border Style"] = "테두리 모양"
 L["Bottom Text"] = "아래쪽 텍스트"
 L["Button Glow"] = "버튼 반짝임"
 L["Can be a name or a UID (e.g., party1). Only works on friendly players in your group."] = "이름이나 유닛ID (예. party1) 가능. 그룹에 있는 아군 플레이어만 작동합니다."
@@ -71,11 +72,12 @@ L["Cancel"] = "취소"
 L["Cat"] = "표범"
 L["Change the name of this display"] = "이 디스플레이의 이름 변경"
 L["Channel Number"] = "채널 번호"
-L["Check On..."] = "체크..."
+L["Check On..."] = "확인..."
 L["Choose"] = "선택"
 L["Choose Trigger"] = "활성 조건 선택"
-L["Choose whether the displayed icon is automatic or defined manually"] = "아이콘을 자동으로 표시할 지 또는 수동 지정할 지 선택"
-L["Clone option enabled dialog"] = [=[|cFFFF0000자동복제|r 옵션을 활성화 했습니다.
+L["Choose whether the displayed icon is automatic or defined manually"] = "아이콘을 자동으로 표시할 지 또는 수동 지정할 지 선택하세요"
+L["Clone option enabled dialog"] = [=[
+|cFFFF0000자동복제|r 옵션을 활성화 했습니다.
 
 |cFFFF0000자동복제|r는 디스플레이를 자동으로 복사하여 여러 정보를 표시하게 합니다.
 이 디스플레이를 |cFF22AA22유동적 그룹|r에 넣을 때까지, 복제된 모든 디스플레이가 표시됩니다.
@@ -83,16 +85,16 @@ L["Clone option enabled dialog"] = [=[|cFFFF0000자동복제|r 옵션을 활성�
 이 디스플레이를 새로운 |cFF22AA22유동적 그룹|r으로 옮길까요?]=]
 L["Close"] = "닫기"
 L["Collapse"] = "접기"
-L["Collapse all loaded displays"] = "로드된 모든 디스플레이 접기"
-L["Collapse all non-loaded displays"] = "로드되지 않은 모든 디스플레이 접기"
+L["Collapse all loaded displays"] = "불러온 모든 디스플레이 접기"
+L["Collapse all non-loaded displays"] = "불러오지 않은 모든 디스플레이 접기"
 L["Color"] = "색상"
 L["Compress"] = "누르기"
 L["Concentration"] = "집중"
 L["Constant Factor"] = "고정 요소"
-L["Control-click to select multiple displays"] = "Control-click - 여러 디스플레이 선택"
+L["Control-click to select multiple displays"] = "Control-클릭 - 여러 디스플레이 선택"
 L["Controls the positioning and configuration of multiple displays at the same time"] = "동시에 여러 디스플레이의 위치와 설정을 조절합니다"
 L["Convert to..."] = "...로 변환하기"
-L["Cooldown"] = "쿨다운"
+L["Cooldown"] = "재사용 대기시간"
 L["Copy"] = "복사"
 L["Copy settings from..."] = "...로 부터 설정 복사"
 L["Copy settings from another display"] = "다른 디스플레이에서 설정 복사"
@@ -128,7 +130,7 @@ L["Custom untrigger event tooltip"] = [=[
 UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 L["Death"] = "죽음"
 L["Death Rune"] = "죽음의 룬"
-L["Debuff Type"] = "디버프 유형"
+L["Debuff Type"] = "약화 효과 유형"
 L["Defensive"] = "방어"
 L["Delete"] = "삭제"
 L["Delete all"] = "모두 삭제"
@@ -146,11 +148,13 @@ L["Distribute Horizontally"] = "가로로 퍼뜨리기"
 L["Distribute Vertically"] = "세로로 퍼뜨리기"
 L["Do not copy any settings"] = "설정을 복사하지 않음"
 L["Do not group this display"] = "이 디스플레이 그룹화하지 않음"
+L["-- Do not remove this comment, it is part of this trigger: "] = "-- 이 주석을 삭제하지 마세요, 다음 디스플레이의 조건 코드입니다: "
 L["Duplicate"] = "복사"
 L["Duration Info"] = "지속시간 정보"
 L["Duration (s)"] = "지속시간 (초)"
 L["Dynamic Group"] = "유동적 그룹"
-L["Dynamic text tooltip"] = [=[이 텍스트를 유동적으로 만들 수 있는 특별 코드들입니다:
+L["Dynamic text tooltip"] = [=[
+이 텍스트를 유동적으로 만들 수 있는 특별 코드들입니다:
 
 |cFFFF0000%p|r - 진행 - 타이머의 남은 시간, 또는 비-타이머 값
 |cFFFF0000%t|r - 전체 - 타이머의 최대 지속시간, 또는 최대 비-타이머 값
@@ -160,11 +164,11 @@ L["Dynamic text tooltip"] = [=[이 텍스트를 유동적으로 만들 수 있�
 |cFFFF0000%c|r - 사용자 설정 - 표시할 string 값을 반환하는 사용자 설정 Lua 함수 정의를 허용합니다]=]
 L["Enabled"] = "활성화됨"
 L["End Angle"] = "종료 각도"
-L["Enter an aura name, partial aura name, or spell id"] = "오라 이름 / 오라의 부분 이름 / 주문ID를 입력하세요,"
+L["Enter an aura name, partial aura name, or spell id"] = "오라 이름 / 오라의 부분 이름 / 주문ID를 입력하세요"
 L["Event Type"] = "이벤트 유형"
 L["Expand"] = "확장"
-L["Expand all loaded displays"] = "로드된 모든 디스플레이 확장"
-L["Expand all non-loaded displays"] = "로드되지 않은 모드 디스플레이 확장"
+L["Expand all loaded displays"] = "불러온 모든 디스플레이 확장"
+L["Expand all non-loaded displays"] = "불러오지 않은 모드 디스플레이 확장"
 L["Expand Text Editor"] = "텍스트 편집창 확장"
 L["Expansion is disabled because this group has no children"] = "이 그룹은 자식이 없기 떄문에 확장이 비활성화되었습니다"
 L["Export"] = "내보내기"
@@ -185,12 +189,12 @@ L["Form (Priest)"] = "형상"
 L["Form (Shaman)"] = "변신"
 L["Form (Warlock)"] = "변신"
 L["Frame"] = "프레임"
-L["Frame Strata"] = "프레임 표시순위"
+L["Frame Strata"] = "프레임 우선순위"
 L["Frost"] = "냉기"
 L["Frost Resistance"] = "냉기 저항"
 L["Full Scan"] = "전체 스캔"
 L["Ghost Wolf"] = "늑대 정령"
-L["Glow Action"] = "반짝임 행동"
+L["Glow Action"] = "반짝임 동작"
 L["Group aura count description"] = [=[디스플레이 조건을 충족하기 위해 주어진 오라에 영향을 받는 한명 이상의 %s 멤버의 숫자.
 정수를 입력하면 (예. 5), 영향을 받는 공격대원의 숫자를 입력된 숫자와 비교합니다.
 소수 (예. 0.5), 분수 (예. 1/2), 또는 백분율 (예. 50%%)을 입력하면, %s중 일부가 영향을 받아야 합니다.
@@ -206,21 +210,22 @@ L["Group aura count description"] = [=[디스플레이 조건을 충족하기 �
 L["Group Member Count"] = "그룹원 수"
 L["Group (verb)"] = "그룹화하기"
 L["Height"] = "높이"
+L["Hide On"] = "숨기기 옵션"
 L["Hide this group's children"] = "이 그룹의 자식 숨기기"
 L["Hide When Not In Group"] = "파티중이 아닐 때 숨기기"
 L["Horizontal Align"] = "가로 정렬"
 L["Icon Color"] = "아이콘 색상"
 L["Icon Info"] = "아이콘 정보"
-L["Icon Inset"] = "아이콘 축소"
+L["Icon Inset"] = "아이템 축소"
 L["Ignored"] = "무시됨"
-L["Ignore GCD"] = "글로벌CD 무시"
-L["%i Matches"] = "%i 일치"
+L["Ignore GCD"] = "GCD 무시"
+L["%i Matches"] = "%i개 일치"
 L["Import"] = "가져오기"
 L["Import a display from an encoded string"] = "암호화된 문자열에서 디스플레이 가져오기"
 L["Justify"] = "정렬"
 L["Left Text"] = "왼쪽 텍스트"
 L["Load"] = "불러오기"
-L["Loaded"] = "로드됨"
+L["Loaded"] = "불러옴"
 L["Main"] = "메인"
 L["Main Trigger"] = "메인 활성 조건"
 L["Mana (%)"] = "마나 (%)"
@@ -237,11 +242,14 @@ L["Move this display up in its group's order"] = "그룹에서 이 디스플레�
 L["Move Up"] = "위로 이동"
 L["Multiple Displays"] = "다중 디스플레이"
 L["Multiple Triggers"] = "다중 활성 조건"
-L["Multiselect ignored tooltip"] = [=[|cFFFF0000무시|r - |cFF777777단일|r - |cFF777777다중|r
+L["Multiselect ignored tooltip"] = [=[
+|cFFFF0000무시|r - |cFF777777단일|r - |cFF777777다중|r
 디스플레이를 불러오는 데 영향을 주지 않습니다]=]
-L["Multiselect multiple tooltip"] = [=[|cFF777777무시|r - |cFF777777단일|r - |cFF00FF00다중|r
-선택한 것중 하나라도 일치할 때 불러옴]=]
-L["Multiselect single tooltip"] = [=[|cFF777777무시|r - |cFF00FF00단일|r - |cFF777777다중|r
+L["Multiselect multiple tooltip"] = [=[
+|cFF777777무시|r - |cFF777777단일|r - |cFF00FF00다중|r
+선택한 것중 하나라도 일치할 때 불러옵니다]=]
+L["Multiselect single tooltip"] = [=[
+|cFF777777무시|r - |cFF00FF00단일|r - |cFF777777다중|r
 선택한 한가지만 일치할 때 불러옴]=]
 L["Must be spelled correctly!"] = "철자가 정확해야 합니다!"
 L["Name Info"] = "이름 정보"
@@ -251,14 +259,14 @@ L["Next"] = "다음"
 L["No"] = "아니오"
 L["No Children"] = "자식 없음"
 L["Not all children have the same value for this option"] = "모든 자식의 이 옵션 값이 같지 않습니다"
-L["Not Loaded"] = "로드되지 않음"
+L["Not Loaded"] = "불러오지 않음"
 L["No tooltip text"] = "툴팁 텍스트 없음"
 L["% of Progress"] = "% 진행"
 L["Okay"] = "확인"
-L["On Hide"] = "숨겨짐"
+L["On Hide"] = "숨겨질 때"
 L["Only match auras cast by people other than the player"] = "플레이어가 아닌 다른 사람이 시전한 오라와 일치할때만"
 L["Only match auras cast by the player"] = "플레이어가 시전한 오라와 일치할때만"
-L["On Show"] = "보여짐"
+L["On Show"] = "표시될 때"
 L["Operator"] = "연산자"
 L["or"] = "혹은"
 L["Orientation"] = "방향"
@@ -307,7 +315,7 @@ L["Show players that are |cFFFF0000not affected"] = "|cFFFF0000영향받지 않�
 L["Shows a 3D model from the game files"] = "게임 데이터의 3D 모델 보이기"
 L["Shows a custom texture"] = "사용자 설정 무늬 표시"
 L["Shows a progress bar with name, timer, and icon"] = "이름 / 타이머 / 아이콘의 진행 바 보이기"
-L["Shows a spell icon with an optional a cooldown overlay"] = "선택적 쿨다운 오버레이로 주문 아이콘 표시"
+L["Shows a spell icon with an optional a cooldown overlay"] = "재사용 대기시간 오버레이를 표시할 수 있는 주문 아이콘 표시"
 L["Shows a texture that changes based on duration"] = "지속시간에 따라 변화하는 무늬 보이기"
 L["Shows one or more lines of text, which can include dynamic information such as progress or stacks"] = "여러 줄의 문자를 표시합니다, 진행 시간 또는 중첩과 같은 여러 정보를 포함할 수 있습니다"
 L["Shows the remaining or expended time for an aura or timed event"] = "오라 또는 지속 이벤트의 남은 시간 또는 진행 시간을 표시합니다"
@@ -353,16 +361,16 @@ L["The children of this group have different display types, so their display opt
 L["The duration of the animation in seconds."] = "애니메이션 지속시간 (초)"
 L["The type of trigger"] = "활성 조건의 유형"
 L["This condition will not be tested"] = "이 상태는 테스트되지 않음"
-L["This display is currently loaded"] = "이 디스플레이 현재 로드됨"
-L["This display is not currently loaded"] = "이 디스플레이 현재 로드되지 않음"
-L["This display will only show when |cFF00FF00%s"] = "|cFF00FF00%s 일때만 이 디스플레이 보임"
-L["This display will only show when |cFFFF0000 Not %s"] = "|cFFFF0000 Not %s 일때만 이 디스플레이 보임"
+L["This display is currently loaded"] = "이 디스플레이는 현재 불러왔습니다"
+L["This display is not currently loaded"] = "이 디스플레이는 현재 불러오지 않았습니다"
+L["This display will only show when |cFF00FF00%s"] = "이 디스플레이는 |cFF00FF00%s|r일 때만 표시됩니다"
+L["This display will only show when |cFFFF0000 Not %s"] = "이 디스플레이는 |cFFFF0000%s|r|1이;가; 아닐 때만 표시됩니다"
 L["This region of type \"%s\" has no configuration options."] = "\"%s\" 형식은 설정 옵션이 없습니다."
 L["Time in"] = "시간 단위"
 L["Timer"] = "타이머"
 L["Timer Settings"] = "타이머 설정"
-L["Toggle the visibility of all loaded displays"] = "로드된 모든 디스플레이 표시 전환"
-L["Toggle the visibility of all non-loaded displays"] = "로드되지 않은 모든 디스플레이 표시 토글"
+L["Toggle the visibility of all loaded displays"] = "불러온 모든 디스플레이 표시 전환"
+L["Toggle the visibility of all non-loaded displays"] = "불러오지 않은 모든 디스플레이 표시 토글"
 L["Toggle the visibility of this display"] = "이 디스플레이 표시 전환"
 L["to group's"] = "그룹 기준"
 L["Tooltip"] = "툴팁"
