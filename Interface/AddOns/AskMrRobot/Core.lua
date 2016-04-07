@@ -567,7 +567,7 @@ function Amr:SendAmrCommMessage(message, channel)
 	local v = GetAddOnMetadata(Amr.ADDON_NAME, "Version")
 	message = v .. "\r" .. message
 	
-	Amr:SendCommMessage(Amr.ChatPrefix, message, channel or "RAID")
+	Amr:SendCommMessage(Amr.ChatPrefix, message, channel or (IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and "INSTANCE_CHAT" or "RAID"))
 end
 
 function Amr:OnCommReceived(prefix, message, distribution, sender)
