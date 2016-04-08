@@ -1,8 +1,15 @@
 Version: 1
 Frame: BaudManifestDisplay1
-FrameLevel: 44
+FrameLevel: 30
 Anchor: BOTTOM
 X: -166
 Y: 95
 W: 250
 H: 417
+Frame: AuctionFrame
+FrameLevel: 36
+Anchor: TOPLEFT
+X: 19
+Y: -106
+W: 832
+H: 447

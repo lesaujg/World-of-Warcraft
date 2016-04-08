@@ -203,6 +203,7 @@ L[ [=[Fishing Lure / Weapon Enchant (Old)
 -- L["Frost Rune #2"] = ""
 -- L["Frost Runes"] = ""
 -- L["Full"] = ""
+-- L["Full/Empty"] = ""
 -- L["Glancing"] = ""
 -- L["Global Cooldown"] = ""
 -- L["Glow"] = ""
