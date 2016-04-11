@@ -188,6 +188,7 @@ Schwarzfelsgießerei:
 L["Energize"] = "Aufladen (ENERGIZE)"
 L["Energy"] = "Energie"
 L["Enrage"] = "Wut"
+-- L["Enter a glpyh ID\\n"] = ""
 L["Environmental"] = "Umgebung (ENVIRONMENTAL)"
 L["Environment Type"] = "Umgebungstyp"
 L["Evade"] = "Entkommen (EVADE)"
@@ -448,6 +449,7 @@ L["Spiral"] = "Winden"
 L["Spiral In And Out"] = "Ein- und Auswinden"
 L["%s Rotate Animation"] = "%s Rotationsanimation"
 L["%s Scale Animation"] = "%s Skalierungsanimation"
+-- L["%s: %s\\n"] = ""
 L["%s Stacks Function"] = "%s Stapelfunktion"
 L["%s - Start"] = "%s - Start" -- Needs review
 L["%s - Start Action"] = "%s - Startaktion" -- Needs review

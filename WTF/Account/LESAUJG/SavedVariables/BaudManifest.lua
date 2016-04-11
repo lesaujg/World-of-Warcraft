@@ -53,7 +53,7 @@ BaudManifestData = {
 					}, -- [9]
 					{
 						["ItemString"] = "item:120945:0:0:0:0:0:0:0:100:254:0:0:0",
-						["Count"] = 110,
+						["Count"] = 130,
 					}, -- [10]
 					{
 						["ItemString"] = "item:108996:0:0:0:0:0:0:0:100:254:0:0:0",
@@ -63,7 +63,11 @@ BaudManifestData = {
 						["Count"] = 1,
 						["ItemString"] = "item:127819:0:0:0:0:0:0:0:100:254:0:1:0",
 					}, -- [12]
-					["SlotsUsed"] = 125,
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:115012:0:0:0:0:0:0:0:100:254:0:0:0",
+					}, -- [13]
+					["SlotsUsed"] = 127,
 				}, -- [1]
 				{
 					{
@@ -111,6 +115,7 @@ BaudManifestData = {
 				{
 					{
 						["ItemString"] = "item:122580:0:0:0:0:0:0:0:100:254:0:0:0",
+						["Count"] = 1,
 					}, -- [1]
 					{
 						["ItemString"] = "item:122272:0:0:0:0:0:0:0:100:254:0:0:0",
@@ -165,7 +170,7 @@ BaudManifestData = {
 					["Expanded"] = true,
 					["Path"] = "Consumables\\Followers",
 					["Name"] = "Followers",
-					["SlotsUsed"] = 11,
+					["SlotsUsed"] = 12,
 				}, -- [3]
 				{
 					{
@@ -321,7 +326,7 @@ BaudManifestData = {
 					["Expanded"] = false,
 					["Path"] = "Consumables",
 					["Name"] = "Consumables",
-					["SlotsUsed"] = 39,
+					["SlotsUsed"] = 40,
 				}, -- [7]
 				{
 					{
@@ -801,7 +806,7 @@ BaudManifestData = {
 					0.5, -- [3]
 					0.7, -- [4]
 				},
-				["SlotEmpty"] = 24,
+				["SlotEmpty"] = 22,
 				["BGTexture"] = "Bumpy",
 				["ShowBags"] = false,
 				["SpecialEmpty"] = 0,
@@ -1844,7 +1849,7 @@ BaudManifestData = {
 				[0] = 1,
 			},
 			["Class"] = "HUNTER",
-			["Money"] = 3464519457,
+			["Money"] = 3473919007,
 		},
 		["Ghiaccioli"] = {
 			{
@@ -2555,10 +2560,10 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [49]
 					{
-						["Slots"] = 2,
 						["Count"] = 4,
-						["ItemString"] = "item:21843:0:0:0:0:0:0:596659377:50:0:0:0:0",
+						["Slots"] = 2,
 						["Equipped"] = 2,
+						["ItemString"] = "item:21843:0:0:0:0:0:0:596659377:50:0:0:0:0",
 					}, -- [50]
 					{
 						["ItemString"] = "item:30747:0:0:0:0:0:0:0:50:0:0:0:0",
@@ -5010,27 +5015,27 @@ BaudManifestData = {
 				{
 					{
 						["Slots"] = 9,
-						["Count"] = 1659,
+						["Count"] = 1639,
 						["ItemString"] = "item:38682:0:0:0:0:0:0:0:1:0:0:0:0",
 					}, -- [1]
 					{
-						["Slots"] = 7,
+						["Slots"] = 9,
 						["ItemString"] = "item:113588:0:0:0:0:0:0:0:1:0:0:0:0",
-						["Count"] = 1252,
+						["Count"] = 1633,
 					}, -- [2]
 					{
-						["Slots"] = 7,
-						["Count"] = 1255,
+						["Slots"] = 10,
+						["Count"] = 1892,
 						["ItemString"] = "item:113261:0:0:0:0:0:0:0:1:0:0:0:0",
 					}, -- [3]
 					{
 						["Slots"] = 8,
-						["Count"] = 1410,
+						["Count"] = 1463,
 						["ItemString"] = "item:113262:0:0:0:0:0:0:0:1:0:0:0:0",
 					}, -- [4]
 					{
-						["Slots"] = 4,
-						["Count"] = 793,
+						["Slots"] = 7,
+						["Count"] = 1340,
 						["ItemString"] = "item:113264:0:0:0:0:0:0:0:1:0:0:0:0",
 					}, -- [5]
 					{
@@ -5080,27 +5085,9 @@ BaudManifestData = {
 					}, -- [14]
 					{
 						["ItemString"] = "item:113263:0:0:0:0:0:0:0:1:0:0:0:0",
-						["Count"] = 112,
+						["Count"] = 97,
 					}, -- [15]
-					{
-						["ItemString"] = "item:110639:0:0:0:0:0:0:0:1:0:0:0:0",
-					}, -- [16]
-					{
-						["ItemString"] = "item:110638:0:0:0:0:0:0:0:1:0:0:0:0",
-					}, -- [17]
-					{
-						["ItemString"] = "item:110640:0:0:0:0:0:0:0:1:0:0:0:0",
-					}, -- [18]
-					{
-						["ItemString"] = "item:110647:0:0:0:0:0:0:0:1:0:0:0:0",
-					}, -- [19]
-					{
-						["ItemString"] = "item:110642:0:0:0:0:0:0:0:1:0:0:0:0",
-					}, -- [20]
-					{
-						["ItemString"] = "item:112093:0:0:0:0:0:0:0:1:0:0:0:0",
-					}, -- [21]
-					["SlotsUsed"] = 51,
+					["SlotsUsed"] = 53,
 				}, -- [1]
 				["BGColor"] = {
 					0.5, -- [1]
@@ -5108,7 +5095,7 @@ BaudManifestData = {
 					0.5, -- [3]
 					0.7, -- [4]
 				},
-				["SlotEmpty"] = 68,
+				["SlotEmpty"] = 60,
 				["BGTexture"] = "Bumpy",
 				["SpecialEmpty"] = 0,
 				["SpecialTotal"] = 0,
@@ -5177,10 +5164,10 @@ BaudManifestData = {
 						["ItemString"] = "item:14155:0:0:0:0:0:0:682475689:1:0:0:0:0",
 					}, -- [14]
 					{
-						["Equipped"] = 6,
 						["ItemString"] = "item:4500:0:0:0:0:0:0:0:1:0:0:0:0",
-						["Slots"] = 4,
+						["Equipped"] = 6,
 						["Count"] = 10,
+						["Slots"] = 4,
 					}, -- [15]
 					{
 						["ItemString"] = "item:49667:0:0:0:0:0:0:575518851:1:0:0:0:0",
@@ -5649,7 +5636,7 @@ BaudManifestData = {
 				[0] = 1,
 			},
 			["Class"] = "WARLOCK",
-			["Money"] = 9886781868,
+			["Money"] = 9943497277,
 		},
 	},
 }
