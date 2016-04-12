@@ -1,6 +1,50 @@
+2016-04-11  Tercio  <Tercio>
+
+[ace75c15d495] [tip]
+* IskarAssist.lua, plugins/cooldowns.lua:
+
+- more tweaks on cooldowns plugins.
+
+
+2016-04-07  Tercio  <Tercio>
+
+[5545ee2bb378]
+* IskarAssist.lua:
+
+- small fix.
+
+
+[c0be85779b18]
+* plugins/notes.lua:
+
+- small fix.
+
+
+[c040dabc4d1a]
+* API.lua, IskarAssist.lua, plugins/notes.lua:
+
+- small fixes.
+
+
+2016-03-31  Tercio  <Tercio>
+
+[a77889cbcf50]
+* IskarAssist.toc, indent.lua, plugins/cooldowns.lua, plugins/notes.lua:
+
+- few changes on the notepad plugin for the new project.
+
+
+2016-03-30  Tercio  <Tercio>
+
+[51dc71d59257]
+* API.lua, IskarAssist.lua, plugins/playercheck.lua:
+
+- playercheck plugin updated.
+
+
 2016-03-27  Tercio  <Tercio>
 
-[d83901e0382f] [tip]
+[d83901e0382f]
 * IskarAssist.lua, plugins/notes.lua:
 
 - Version ++
@@ -171,51 +215,5 @@
 * IskarAssist.lua:
 
 - raidassist integration.
-
-
-[f60c89b6484d]
-* API.lua, IskarAssist.toc, Libs/LibGroupInSpecT-1.1/LibGroupInSpecT-1.1.lua, Libs/LibGroupInSpecT-1.1/lib.xml, Libs/libs.xml, Loot.lua, OptionsAnchor.lua, OptionsPanel.lua, RaidAssist.lua, RaidAssist.toc, Templates.lua, fonts/Accidental Presidency.ttf, locales/enUS.lua, media/attendance_menu_icon.tga, media/bar_serenity.tga, media/bar_skyline.tga, media/border_2.tga, plugins/attendance.lua, plugins/battleres.lua, plugins/bislist.lua, plugins/boards.lua, plugins/cooldowns.lua, plugins/invite.lua, plugins/meters.lua, plugins/notes.lua, plugins/playercheck.lua, plugins/raidbislist.lua:
-
-- raidassist integration.
-
-
-2016-02-04  Tercioo  <Tercioo>
-
-[a238e4892422]
-* IskarAssist.lua:
-
-- iskar assist title text fix.
-
-
-2016-01-21  Tercioo  <Tercioo>
-
-[477f48d40ea2]
-* IskarAssist.lua, Libs/LibSharedMedia-3.0/LibSharedMedia-3.0.lua, Libs/LibSharedMedia-3.0/lib.xml:
-
-- Trying to fix a problem with a library.
-
-
-2016-01-19  Tercioo  <Tercioo>
-
-[a07b2e50483f]
-* IskarAssist.lua, Libs/DF/cooltip.lua, Libs/DF/fw.lua:
-
-- framework update from v15 to v16.
-
-
-2016-01-02  Tercioo  <Tercioo>
-
-[f33d78296084]
-* IskarAssist.lua, Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua, Libs/DF/button.lua, Libs/DF/cooltip.lua, Libs/DF/dropdown.lua, Libs/DF/fw.lua, Libs/DF/label.lua, Libs/DF/normal_bar.lua, Libs/DF/panel.lua, Libs/DF/picture.lua, Libs/DF/slider.lua, Libs/DF/split_bar.lua, Libs/DF/textentry.lua, Libs/LibDBIcon-1.0/LibDBIcon-1.0.lua, Libs/LibDataBroker-1.1/LibDataBroker-1.1.lua, Libs/LibSharedMedia-3.0/lib.xml:
-
-- libs and framework updates.
-
-
-2015-12-22  Tercioo  <Tercioo>
-
-[f061f4334742]
-* IskarAssist.lua, Libs/DF/button.lua, Libs/DF/fw.lua, Libs/DF/panel.lua:
-
-- framework update
 
 

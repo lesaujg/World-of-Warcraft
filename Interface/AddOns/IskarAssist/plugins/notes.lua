@@ -19,6 +19,8 @@ local default_config = {
 	locked = false,
 	background = {r=0, g=0, b=0, a=0.5, show = false},
 	hide_on_combat = false,
+	auto_format = true,
+	auto_complete = true,
 }
 
 local icon_texture
@@ -69,20 +71,106 @@ Notepad.OnInstall = function (plugin)
 	
 	local popup_frame = Notepad.popup_frame
 	
+	-- title frame
 	local screen_frame = RA:CreateCleanFrame (Notepad, "NotepadScreenFrame")
 	Notepad.screen_frame = screen_frame
 	screen_frame:SetSize (250, 20)
+	screen_frame:SetClampedToScreen (true)
 	screen_frame:Hide()
 	
-	local text = screen_frame:CreateFontString (nil, "overlay", "GameFontNormal")
-	text:SetTextColor (1, 1, 1, 1)
-	screen_frame.text = text
+	-------
 	
-	local background = screen_frame:CreateTexture (nil, "background")
-	background:SetPoint ("topleft", screen_frame, "bottomleft")
-	background:SetPoint ("topright", screen_frame, "bottomright")
+	local title_text = screen_frame:CreateFontString (nil, "overlay", "GameFontNormal")
+	title_text:SetText ("Raid Assignments")
+	title_text:SetTextColor (.8, .8, .8, 1)
+	title_text:SetPoint ("center", screen_frame, "center")
+	screen_frame.title_text = title_text
+	-------
+	
+	-- edit box
+	local editbox_notes = Notepad:NewSpecialLuaEditorEntry (screen_frame, 250, 200, "editbox_notes", "RaidAssignmentsNoteEditboxScreen", true)
+	editbox_notes:SetPoint ("topleft", screen_frame, "bottomleft", 0, 0)
+	editbox_notes:SetPoint ("topright", screen_frame, "bottomright", 0, 0)
+	editbox_notes:SetBackdrop (nil)
+	editbox_notes:SetFrameLevel (screen_frame:GetFrameLevel()+1)
+	editbox_notes:SetResizable (true)
+	editbox_notes:SetMaxResize (600, 1024)
+	editbox_notes:SetMinResize (150, 50)
+	
+	screen_frame.text = editbox_notes
+	
+	editbox_notes.editbox:SetTextInsets (2, 2, 3, 3)
+	editbox_notes.scroll:ClearAllPoints()
+	editbox_notes.scroll:SetPoint ("topleft", editbox_notes, "topleft", 0, 0)
+	editbox_notes.scroll:SetPoint ("bottomright", editbox_notes, "bottomright", -26, 0)
+	local f, h, fl = editbox_notes.editbox:GetFont()
+	editbox_notes.editbox:SetFont (f, 12, fl)
+	
+	-- background
+	local background = editbox_notes:CreateTexture (nil, "background")
+	background:SetPoint ("topleft", editbox_notes, "topleft", 0, 0)
+	background:SetPoint ("bottomright", editbox_notes, "bottomright", 0, -5)
 	screen_frame.background = background
 	
+	-- resize button
+	local resize_button = CreateFrame ("button", nil, screen_frame)
+	resize_button:SetPoint ("topleft", editbox_notes, "bottomleft")
+	resize_button:SetPoint ("topright", editbox_notes, "bottomright")
+	resize_button:SetHeight (16)
+	resize_button:SetFrameLevel (screen_frame:GetFrameLevel()+5)
+	resize_button:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true})
+	resize_button:SetBackdropColor (0, 0, 0, 0.6)
+	resize_button:SetBackdropBorderColor (0, 0, 0, 0)
+	screen_frame.resize_button = resize_button
+	
+	local resize_texture = resize_button:CreateTexture (nil, "overlay")
+	resize_texture:SetTexture ([[Interface\CHATFRAME\UI-ChatIM-SizeGrabber-Down]])
+	resize_texture:SetPoint ("topleft", resize_button, "topleft", 0, 0)
+	resize_texture:SetSize (16, 16)
+	resize_texture:SetTexCoord (1, 0, 0, 1)
+	screen_frame.resize_texture = resize_texture
+	
+	resize_button:SetScript ("OnMouseDown", function()
+		editbox_notes:StartSizing ("bottomleft")
+	end)
+	resize_button:SetScript ("OnMouseUp", function()
+		editbox_notes:StopMovingOrSizing()
+		screen_frame:SetWidth (editbox_notes:GetWidth())
+		editbox_notes:SetPoint ("topleft", screen_frame, "bottomleft", 0, 0)
+		editbox_notes:SetPoint ("topright", screen_frame, "bottomright", 0, 0)
+	end)
+	
+	resize_button:SetScript ("OnSizeChanged", function()
+		screen_frame:SetWidth (editbox_notes:GetWidth())
+		editbox_notes:SetPoint ("topleft", screen_frame, "bottomleft", 0, 0)
+		editbox_notes:SetPoint ("topright", screen_frame, "bottomright", 0, 0)
+		Notepad.update_scroll_bar()
+	end)
+	
+	RaidAssignmentsNoteEditboxScreenScrollBarThumbTexture:SetTexture (0, 0, 0, 0.4)
+	RaidAssignmentsNoteEditboxScreenScrollBarThumbTexture:SetSize (14, 17)
+	
+	RaidAssignmentsNoteEditboxScreenScrollBarScrollUpButton:SetNormalTexture ([[Interface\Buttons\Arrow-Up-Up]])
+	RaidAssignmentsNoteEditboxScreenScrollBarScrollUpButton:SetHighlightTexture ([[Interface\Buttons\Arrow-Up-Up]])
+	RaidAssignmentsNoteEditboxScreenScrollBarScrollUpButton:SetPushedTexture ([[Interface\Buttons\Arrow-Up-Down]])
+	RaidAssignmentsNoteEditboxScreenScrollBarScrollUpButton:SetDisabledTexture ([[Interface\Buttons\Arrow-Up-Disabled]])
+	
+	RaidAssignmentsNoteEditboxScreenScrollBarScrollDownButton:SetNormalTexture ([[Interface\Buttons\Arrow-Down-Up]])
+	RaidAssignmentsNoteEditboxScreenScrollBarScrollDownButton:SetHighlightTexture ([[Interface\Buttons\Arrow-Down-Up]])
+	RaidAssignmentsNoteEditboxScreenScrollBarScrollDownButton:SetPushedTexture ([[Interface\Buttons\Arrow-Down-Down]])
+	RaidAssignmentsNoteEditboxScreenScrollBarScrollDownButton:SetDisabledTexture ([[Interface\Buttons\Arrow-Down-Disabled]])
+
+	RaidAssignmentsNoteEditboxScreenScrollBarScrollUpButton.Normal:SetTexCoord (0, 1, 0, 1)
+	RaidAssignmentsNoteEditboxScreenScrollBarScrollUpButton.Disabled:SetTexCoord (0, 1, 0, 1)
+	RaidAssignmentsNoteEditboxScreenScrollBarScrollUpButton.Highlight:SetTexCoord (0, 1, 0, 1)
+	RaidAssignmentsNoteEditboxScreenScrollBarScrollUpButton.Pushed:SetTexCoord (0, 1, 0, 1)
+	RaidAssignmentsNoteEditboxScreenScrollBarScrollDownButton.Normal:SetTexCoord (0, 1, 0, 1)
+	RaidAssignmentsNoteEditboxScreenScrollBarScrollDownButton.Disabled:SetTexCoord (0, 1, 0, 1)
+	RaidAssignmentsNoteEditboxScreenScrollBarScrollDownButton.Highlight:SetTexCoord (0, 1, 0, 1)
+	RaidAssignmentsNoteEditboxScreenScrollBarScrollDownButton.Pushed:SetTexCoord (0, 1, 0, 1)
+	
+	-------
+
 	local lock = CreateFrame ("button", "NotepadScreenFrameLockButton", screen_frame)
 	lock:SetSize (16, 16)
 	lock:SetNormalTexture (Notepad:GetFrameworkFolder() .. "icons")
@@ -113,6 +201,57 @@ Notepad.OnInstall = function (plugin)
 		Notepad.UnshowNoteOnScreen()
 	end)
 	screen_frame.close = close
+	
+	---------------
+	
+	local f_anim = CreateFrame ("frame", nil, screen_frame)
+	local t = f_anim:CreateTexture (nil, "overlay")
+	t:SetTexture (1, 1, 1, 0.25)
+	t:SetAllPoints()
+	t:SetBlendMode ("ADD")
+	local animation = t:CreateAnimationGroup()
+	local anim1 = animation:CreateAnimation ("Alpha")
+	local anim2 = animation:CreateAnimation ("Alpha")
+	local anim3 = animation:CreateAnimation ("Alpha")
+	local anim4 = animation:CreateAnimation ("Alpha")
+	local anim5 = animation:CreateAnimation ("Alpha")
+	
+	anim1:SetOrder (1)
+	anim1:SetChange (-1)
+	anim1:SetDuration (0.0)
+	
+	anim4:SetOrder (2)
+	anim4:SetChange (1)
+	anim4:SetDuration (0.2)
+	
+	anim5:SetOrder (3)
+	anim5:SetChange (-1)
+	anim5:SetDuration (3)
+
+	animation:SetScript ("OnFinished", function (self)
+		f_anim:Hide()
+	end)
+	
+	Notepad.DoFlashAnim = function()
+		f_anim:Show()
+		f_anim:SetParent (block)
+		f_anim:SetPoint ("topleft", editbox_notes, "topleft")
+		f_anim:SetPoint ("bottomright", editbox_notes, "bottomright")
+		animation:Play()
+
+		if (Notepad.PlayerAFKTicker and Notepad.MouseCursorX and Notepad.MouseCursorY and Notepad.CharacterX and Notepad.CharacterY) then
+			local x, y = GetCursorPosition()
+			local xx, yy = GetPlayerMapPosition ("player")
+			if (Notepad.MouseCursorX ~= x or Notepad.MouseCursorY ~= y or Notepad.CharacterX ~= xx or Notepad.CharacterY ~= yy) then
+				if (not Notepad.PlayerAFKTicker._cancelled) then
+					Notepad.PlayerAFKTicker:Cancel()
+				end
+				Notepad.PlayerAFKTicker = nil
+			end
+		end
+	end
+
+	------------------	
 	
 	Notepad:UpdateScreenFrameSettings()
 	
@@ -156,13 +295,13 @@ function Notepad:UpdateScreenFrameSettings()
 	--font face
 	local SharedMedia = LibStub:GetLibrary ("LibSharedMedia-3.0")
 	local font = SharedMedia:Fetch ("font", Notepad.db.text_font)
-	Notepad:SetFontFace (Notepad.screen_frame.text, font)
+	Notepad:SetFontFace (Notepad.screen_frame.text.editbox, font)
 	
 	--font size
-	Notepad:SetFontSize (Notepad.screen_frame.text, Notepad.db.text_size)
+	Notepad:SetFontSize (Notepad.screen_frame.text.editbox, Notepad.db.text_size)
 	
 	-- font shadow
-	Notepad:SetFontOutline (Notepad.screen_frame.text, Notepad.db.text_shadow)
+	Notepad:SetFontOutline (Notepad.screen_frame.text.editbox, Notepad.db.text_shadow)
 	
 	--frame strata
 	Notepad.screen_frame:SetFrameStrata (Notepad.db.framestrata)
@@ -177,10 +316,14 @@ function Notepad:UpdateScreenFrameSettings()
 		Notepad.screen_frame.lock:GetHighlightTexture():SetTexCoord (16/128, 32/128, 0, 1)
 		Notepad.screen_frame.lock:GetPushedTexture():SetTexCoord (16/128, 32/128, 0, 1)
 		Notepad.screen_frame.lock:SetAlpha (0.15)
-		
 		Notepad.screen_frame.close:SetAlpha (0.15)
 		
 		Notepad.screen_frame:SetBackdrop (nil)
+		
+		Notepad.screen_frame.resize_button:Hide()
+		Notepad.screen_frame.resize_texture:Hide()
+		
+		Notepad.screen_frame.title_text:SetTextColor (.8, .8, .8, 0.15)
 	else
 		Notepad.screen_frame:EnableMouse (true)
 		Notepad.screen_frame.lock:GetNormalTexture():SetTexCoord (32/128, 48/128, 0, 1)
@@ -191,10 +334,14 @@ function Notepad:UpdateScreenFrameSettings()
 		Notepad.screen_frame:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true})
 		Notepad.screen_frame:SetBackdropColor (0, 0, 0, 0.8)
 		Notepad.screen_frame:SetBackdropBorderColor (0, 0, 0, 1)
+		Notepad.screen_frame.resize_button:Show()
+		Notepad.screen_frame.resize_texture:Show()
+		
+		Notepad.screen_frame.title_text:SetTextColor (.8, .8, .8, 1)
 	end
 
 	--text justify and lock butotn
-	Notepad.screen_frame.text:SetJustifyH (Notepad.db.text_justify)	
+	Notepad.screen_frame.text.editbox:SetJustifyH (Notepad.db.text_justify)	
 	Notepad.screen_frame.text:ClearAllPoints()
 	Notepad.screen_frame.lock:ClearAllPoints()
 	Notepad.screen_frame.close:ClearAllPoints()
@@ -202,12 +349,15 @@ function Notepad:UpdateScreenFrameSettings()
 	if (Notepad.db.text_justify == "left") then
 		Notepad.screen_frame.lock:SetPoint ("left", Notepad.screen_frame, "left", 0, 0)
 		Notepad.screen_frame.close:SetPoint ("left", Notepad.screen_frame.lock, "right", 2, 0)
-		Notepad.screen_frame.text:SetPoint ("topleft", Notepad.screen_frame, "bottomleft", 5, 0)
+		Notepad.screen_frame.text:SetPoint ("topleft", Notepad.screen_frame, "bottomleft", 0, 0)
 	elseif (Notepad.db.text_justify == "right") then
 		Notepad.screen_frame.lock:SetPoint ("right", Notepad.screen_frame, "right", 0, 0)
 		Notepad.screen_frame.close:SetPoint ("right", Notepad.screen_frame.lock, "left", 2, 0)
-		Notepad.screen_frame.text:SetPoint ("topright", Notepad.screen_frame, "bottomright", -5, 0)
+		Notepad.screen_frame.text:SetPoint ("topright", Notepad.screen_frame, "bottomright", -0, 0)
 	end
+	
+	Notepad.screen_frame.text:EnableMouse (false)
+	Notepad.screen_frame.text.editbox:EnableMouse (false)
 	
 end
 
@@ -336,10 +486,19 @@ function Notepad:SetCurrentEditingNote (note_id)
 	main_frame.dropdown_boss:Disable()
 	
 	local note = Notepad:GetNote (note_id)
-	main_frame.editbox_notes:SetText (note.text)
 	
+	main_frame.editbox_notes:SetText (note.text)
+	Notepad:FormatText()
+
 	Notepad.main_frame.editbox_notes:Show()
 	Notepad.main_frame.toptions_panel:Hide()
+
+	if (string.len (note.text) == 0) then
+		main_frame.editbox_notes.editbox:SetText ("\n\n\n")
+	end
+	
+	main_frame.editbox_notes.editbox:SetFocus (true)
+	main_frame.editbox_notes.editbox:SetCursorPosition (0)
 end
 
 function Notepad:GetCurrentEditingNote()
@@ -372,6 +531,28 @@ end
 
 -- UnitIsGroupAssistant
 
+local update_scroll_bar = function()
+	if (RaidAssignmentsNoteEditboxScreenScrollBarScrollDownButton:IsEnabled()) then
+		RaidAssignmentsNoteEditboxScreenScrollBar:Show()
+	else
+		RaidAssignmentsNoteEditboxScreenScrollBar:Hide()
+	end
+	RaidAssignmentsNoteEditboxScreenScrollBarScrollDownButton:SetScript ("OnUpdate", nil)
+end
+Notepad.update_scroll_bar = update_scroll_bar
+
+local track_mouse_position = function()
+	local x, y = GetCursorPosition()
+	xx, yy = GetPlayerMapPosition ("player")
+
+	if (Notepad.MouseCursorX == x and Notepad.MouseCursorY == y and Notepad.CharacterX == xx and Notepad.CharacterY == yy) then
+		--> player afk?
+		if (not Notepad.PlayerAFKTicker) then
+			Notepad.PlayerAFKTicker = C_Timer.NewTicker (5, Notepad.DoFlashAnim)
+		end
+	end
+end
+
 function Notepad:ShowNoteOnScreen (note_id)
 	local note = Notepad:GetNote (note_id)
 	if (note) then
@@ -382,7 +563,30 @@ function Notepad:ShowNoteOnScreen (note_id)
 		end
 		
 		Notepad.screen_frame:Show()
-		Notepad.screen_frame.text:SetText (note.text)
+		
+		local formated_text = Notepad:FormatText (note.text)
+		local player_name = UnitName ("player")
+		
+		local locclass, class = UnitClass ("player")
+		local unitclasscolor = RAID_CLASS_COLORS [class] and RAID_CLASS_COLORS [class].colorStr
+		if (unitclasscolor) then
+			formated_text = formated_text:gsub (player_name, "|cFFFFFF00[|r|c" .. unitclasscolor .. string.upper (player_name) .. "|r|cFFFFFF00]|r")
+			formated_text = formated_text:gsub (string.lower (player_name), "|cFFFFFF00[|r|c" .. unitclasscolor .. string.upper (player_name) .. "|r|cFFFFFF00]|r")
+		end
+		
+		Notepad.screen_frame.text:SetText (formated_text)
+		
+		RaidAssignmentsNoteEditboxScreenScrollBarScrollDownButton:SetScript ("OnUpdate", update_scroll_bar)
+		C_Timer.After (0.5, update_scroll_bar)
+		
+		RaidAssignmentsNoteEditboxScreenScrollBar:SetValue (0)
+		
+		Notepad.DoFlashAnim()
+		
+		Notepad.MouseCursorX, Notepad.MouseCursorY = GetCursorPosition()
+		Notepad.CharacterX, Notepad.CharacterY = GetPlayerMapPosition ("player")
+		
+		C_Timer.After (3, track_mouse_position)
 		
 		Notepad:UpdateScreenFrameBackground()
 	end
@@ -706,6 +910,19 @@ function Notepad.BuildOptions (frame)
 	local editbox_notes = Notepad:NewSpecialLuaEditorEntry (main_frame, 446, 375, "editbox_notes", "RaidAssignmentsNoteEditbox", true)
 	editbox_notes:SetPoint ("topleft", dropdown_boss.widget, "topright", 10, 0)
 	editbox_notes:SetTemplate (Notepad:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
+	editbox_notes:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, tileSize = 64, tile = true, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]]})
+	editbox_notes:SetBackdropBorderColor (0, 0, 0, 0)
+	editbox_notes:SetBackdropColor (0.4, 0.4, 0.4, 0.4)
+	
+	-- .scroll .editbox
+	
+	editbox_notes.editbox:SetTextInsets (2, 2, 3, 3)
+	editbox_notes.scroll:ClearAllPoints()
+	editbox_notes.scroll:SetPoint ("topleft", editbox_notes, "topleft", 0, 0)
+	editbox_notes.scroll:SetPoint ("bottomright", editbox_notes, "bottomright", -24, 0)
+	local f, h, fl = editbox_notes.editbox:GetFont()
+	editbox_notes.editbox:SetFont (f, 12, fl)
+	
 	editbox_notes:Hide()
 	
 	local cancel_edition = function()
@@ -744,13 +961,17 @@ function Notepad.BuildOptions (frame)
 	--create new note "New"
 	local buttons_y, buttons_width = -425, 70
 	
+	
 	local create_button = Notepad:CreateButton (main_frame, Notepad.CreateNewNotepad, buttons_width, 20, "New", _, _, _, "button_create", _, _, Notepad:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	create_button:SetPoint ("topleft", main_frame, "topleft", 10 , buttons_y)
+	create_button:SetPoint ("topleft", main_frame, "topleft", 10 , -90)
 	
 	--delete note "Erase"
 	local erase_button =  Notepad:CreateButton (main_frame, Notepad.DeleteCurrentNote, buttons_width, 20, "Erase Note", _, _, _, "button_erase", _, _, Notepad:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	erase_button:SetPoint ("topleft", main_frame, "topleft", 90 , buttons_y)
+	erase_button:SetPoint ("topleft", main_frame, "topleft", 90 , -90)
 
+	
+	
+	
 	--clear "Clear"
 	local clear_button =  Notepad:CreateButton (main_frame, clear_editbox, buttons_width, 20, "Clear Text", _, _, _, "button_clear", _, _, Notepad:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 	clear_button:SetPoint ("topleft", main_frame, "topleft", 310 , buttons_y)
@@ -773,11 +994,634 @@ function Notepad.BuildOptions (frame)
 	main_frame.button_save2:Disable()
 	main_frame.editbox_notes:Disable()
 	
+	
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--> text format
+
+	--color
+	local colors_panel = CreateFrame ("frame", nil, editbox_notes)
+	
+	
+	local get_color_hash = function (t)
+		local r = RA:Hex (floor (t[1]*255))
+		local g = RA:Hex (floor (t[2]*255))
+		local b = RA:Hex (floor (t[3]*255))
+		return r .. g .. b
+	end
+	
+	local color_pool
+
+	-- code author Saiket from  http://www.wowinterface.com/forums/showpost.php?p=245759&postcount=6
+	--- @return StartPos, EndPos of highlight in this editbox.
+	local function GetTextHighlight ( self )
+		local Text, Cursor = self:GetText(), self:GetCursorPosition();
+		self:Insert( "" ); -- Delete selected text
+		local TextNew, CursorNew = self:GetText(), self:GetCursorPosition();
+		-- Restore previous text
+		self:SetText( Text );
+		self:SetCursorPosition( Cursor );
+		local Start, End = CursorNew, #Text - ( #TextNew - CursorNew );
+		self:HighlightText( Start, End );
+		return Start, End;
+	end
+	local StripColors;
+	do
+		local CursorPosition, CursorDelta;
+		--- Callback for gsub to remove unescaped codes.
+		local function StripCodeGsub ( Escapes, Code, End )
+			if ( #Escapes % 2 == 0 ) then -- Doesn't escape Code
+				if ( CursorPosition and CursorPosition >= End - 1 ) then
+					CursorDelta = CursorDelta - #Code;
+				end
+				return Escapes;
+			end
+		end
+		--- Removes a single escape sequence.
+		local function StripCode ( Pattern, Text, OldCursor )
+			CursorPosition, CursorDelta = OldCursor, 0;
+			return Text:gsub( Pattern, StripCodeGsub ), OldCursor and CursorPosition + CursorDelta;
+		end
+		--- Strips Text of all color escape sequences.
+		-- @param Cursor  Optional cursor position to keep track of.
+		-- @return Stripped text, and the updated cursor position if Cursor was given.
+		function StripColors ( Text, Cursor )
+			Text, Cursor = StripCode( "(|*)(|c%x%x%x%x%x%x%x%x)()", Text, Cursor );
+			return StripCode( "(|*)(|r)()", Text, Cursor );
+		end
+	end
+	
+	local COLOR_END = "|r";
+	--- Wraps this editbox's selected text with the given color.
+	local function ColorSelection ( self, ColorCode )
+		local Start, End = GetTextHighlight( self );
+		local Text, Cursor = self:GetText(), self:GetCursorPosition();
+		if ( Start == End ) then -- Nothing selected
+			--Start, End = Cursor, Cursor; -- Wrap around cursor
+			return; -- Wrapping the cursor in a color code and hitting backspace crashes the client!
+		end
+		-- Find active color code at the end of the selection
+		local ActiveColor;
+		if ( End < #Text ) then -- There is text to color after the selection
+			local ActiveEnd;
+			local CodeEnd, _, Escapes, Color = 0;
+			while ( true ) do
+				_, CodeEnd, Escapes, Color = Text:find( "(|*)(|c%x%x%x%x%x%x%x%x)", CodeEnd + 1 );
+				if ( not CodeEnd or CodeEnd > End ) then
+					break;
+				end
+				if ( #Escapes % 2 == 0 ) then -- Doesn't escape Code
+					ActiveColor, ActiveEnd = Color, CodeEnd;
+				end
+			end
+       
+			if ( ActiveColor ) then
+				-- Check if color gets terminated before selection ends
+				CodeEnd = 0;
+				while ( true ) do
+					_, CodeEnd, Escapes = Text:find( "(|*)|r", CodeEnd + 1 );
+					if ( not CodeEnd or CodeEnd > End ) then
+						break;
+					end
+					if ( CodeEnd > ActiveEnd and #Escapes % 2 == 0 ) then -- Terminates ActiveColor
+						ActiveColor = nil;
+						break;
+					end
+				end
+			end
+		end
+     
+		local Selection = Text:sub( Start + 1, End );
+		-- Remove color codes from the selection
+		local Replacement, CursorReplacement = StripColors( Selection, Cursor - Start );
+     
+		self:SetText( ( "" ):join(
+			Text:sub( 1, Start ),
+			ColorCode, Replacement, COLOR_END,
+			ActiveColor or "", Text:sub( End + 1 )
+		) );
+     
+		-- Restore cursor and highlight, adjusting for wrapper text
+		Cursor = Start + CursorReplacement;
+		if ( CursorReplacement > 0 ) then -- Cursor beyond start of color code
+			Cursor = Cursor + #ColorCode;
+		end
+		if ( CursorReplacement >= #Replacement ) then -- Cursor beyond end of color
+			Cursor = Cursor + #COLOR_END;
+		end
+		
+		self:SetCursorPosition( Cursor );
+		-- Highlight selection and wrapper
+		self:HighlightText( Start, #ColorCode + ( #Replacement - #Selection ) + #COLOR_END + End );
+	end	
+------------------------------------------------------------------------------------------
+	
+	local label_colors = Notepad:CreateLabel (colors_panel, "Color" .. ":", Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	local on_color_selection = function (self, fixed_value, color_name)
+		local DF = _G ["DetailsFramework"]
+		local color_table = DF.alias_text_colors [color_name]
+		if (color_table) then
+
+			local startpos, endpos = GetTextHighlight ( main_frame.editbox_notes.editbox )
+		
+			local color = "|cFF" .. get_color_hash (color_table)
+			local endcolor = "|r"
+			
+			if (startpos == endpos) then
+				--> no selection
+				--ColorSelection ( main_frame.editbox_notes.editbox, color )
+				main_frame.editbox_notes.editbox:Insert (color .. endcolor)
+				main_frame.editbox_notes.editbox:SetCursorPosition (startpos + 10)
+			else
+				--> has selection
+				ColorSelection ( main_frame.editbox_notes.editbox, color )
+				
+			end
+		end
+	end
+	
+	local build_color_list = function()
+		if (not color_pool) then
+			color_pool = {}
+			local DF = _G ["DetailsFramework"]
+			for color_name, color_table in pairs (DF.alias_text_colors) do
+				color_pool [#color_pool+1] = {color_name, color_table}
+			end
+			table.sort (color_pool, function (t1, t2)
+				return t1[1] < t2[1]
+			end)
+			tinsert (color_pool, 1, {"Default Color", {1, 1, 1}})
+		end
+	
+		local t = {}
+		for index, color_table in ipairs (color_pool) do
+			local color_name, color = unpack (color_table)
+			t [#t+1] = {label = "|cFF" .. get_color_hash (color) .. color_name .. "|r", value = color_name, onclick = on_color_selection}
+		end
+		return t
+	end
+	local dropdown_colors = Notepad:CreateDropDown (colors_panel, build_color_list, 1, 160, 20, "dropdown_colors", _, Notepad:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
+	label_colors:SetPoint ("topleft", editbox_notes, "topright", 10, 0)
+	dropdown_colors:SetPoint ("topleft", label_colors, "bottomleft", 0, -5)
+	
+	local index = 1
+	local colors = {"white", "silver", "gray", "HUNTER", "WARLOCK", "PRIEST", "PALADIN", "MAGE", "ROGUE", "DRUID", "SHAMAN", "WARRIOR", "DEATHKNIGHT", "MONK", --14
+	"darkseagreen", "green", "lime", "yellow", "gold", "orange", "orangered", "red", "magenta", "pink", "deeppink", "violet", "mistyrose", "blue", "darkcyan", "cyan", "lightskyblue", "maroon",
+	"peru", "plum", "tan", "wheat"} --4
+	for o = 1, 4 do
+		for i = 1, 9 do
+			local color_button =  Notepad:CreateButton (colors_panel, on_color_selection, 16, 16, "", colors [index], _, _, "button_color" .. index, _, _, Notepad:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+			color_button:SetPoint ("topleft", editbox_notes, "topright", 10 + ((i-1)*17), -20 + (o*17*-1))
+			local color_texture = color_button:CreateTexture (nil, "background")
+			color_texture:SetTexture (Notepad:ParseColors (colors [index]))
+			color_texture:SetAlpha (0.7)
+			color_texture:SetAllPoints()
+			index = index + 1
+		end
+	end
+	
+	local current_color = Notepad:CreateLabel (colors_panel, "A", 14, "white", nil, "current_font")
+	current_color:SetPoint ("bottomright", dropdown_colors, "topright")
+	local do_text_format = function (self, elapsed)
+	
+		--> color
+		local pos = main_frame.editbox_notes.editbox:GetCursorPosition()
+		local text = main_frame.editbox_notes.editbox:GetText()
+
+		local cutoff = text:sub (-text:len(), -(text:len() - pos))
+		if (cutoff) then
+			local i = 0
+			local find_color
+			local find_end
+			while (find_color == nil and find_end == nil and i > -cutoff:len()) do
+				i = i - 1
+				find_color = cutoff:find ("|cFF", i)
+				find_end = cutoff:find ("|r", i)
+			end
+			
+			if (find_end or not find_color) then
+				current_color:SetText ("|cFFFFFFFFA|r")
+			else
+				local color = cutoff:match (".*cFF(.*)")
+				if (color) then
+					color = color:match ("%x%x%x%x%x%x")
+					current_color:SetText ("|cFF" .. color .. "A|r")
+				else
+					current_color:SetText ("|cFFFFFFFFA|r")
+				end
+			end
+		else
+			current_color:SetText ("|cFFFFFFFFA|r")
+		end
+		
+		--> icons
+		
+	end
+	
+	
+	--raid targets
+	local label_raidtargets = Notepad:CreateLabel (colors_panel, "Targets" .. ":", Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	label_raidtargets:SetPoint ("topleft", editbox_notes, "topright", 10, -110)
+	
+	--http://wowwiki.wikia.com/wiki/UI_escape_sequences
+	
+	--local icon_path = [[|TInterface\TargetingFrame\UI-RaidTargetingIcon_ICONINDEX:12:12|t]]
+	--local icon_path = [[|TInterface\TargetingFrame\UI-RaidTargetingIcon_ICONINDEX:12:12:0:-7:64:64:0:64:0:64|t]]
+	local icon_path = [[|TInterface\TargetingFrame\UI-RaidTargetingIcon_ICONINDEX:0|t]]
+	
+	local on_raidtarget_selection = function (self, button, icon_index)
+		local startpos, endpos = GetTextHighlight ( main_frame.editbox_notes.editbox )
+		local icon = icon_path:gsub ([[ICONINDEX]], icon_index)
+		main_frame.editbox_notes.editbox:Insert (icon .. " ")
+	end
+	
+	local index = 1
+	for o = 1, 1 do
+		for i = 1, 8 do
+			local raidtarget =  Notepad:CreateButton (colors_panel, on_raidtarget_selection, 20, 20, "", index, _, _, "button_raidtarget" .. index, _, _, Notepad:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+			raidtarget:SetPoint ("topleft", editbox_notes, "topright", 10 + ((i-1)*20), -101 + (o*21*-1))
+			local color_texture = raidtarget:CreateTexture (nil, "overlay")
+			color_texture:SetTexture ("Interface\\TARGETINGFRAME\\UI-RaidTargetingIcon_" .. index)
+			color_texture:SetAlpha (0.7)
+			color_texture:SetAllPoints()
+			index = index + 1
+		end
+	end
+
+	--cooldowns
+	local label_iconcooldowns = Notepad:CreateLabel (colors_panel, "Cooldowns" .. ":", Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	label_iconcooldowns:SetPoint ("topleft", editbox_notes, "topright", 10, -147)
+	
+	--local cooldown_icon_path = [[|TICONPATH:12:12:0:0:64:64:5:59:5:59|t]]
+	local cooldown_icon_path = [[|TICONPATH:0|t]]
+	local on_spellcooldown_selection = function (self, button, spellid)
+		local spellname, rank, iconpath = GetSpellInfo (spellid)
+		main_frame.editbox_notes.editbox:Insert (cooldown_icon_path:gsub ([[ICONPATH]], iconpath) .. " " .. spellname)
+	end
+	
+	local i, o, index = 1, 1, 1
+	local spell_added = {} --can be repeated
+	
+	local button_cooldown_backdrop = {edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, tileSize = 64, tile = true}
+	
+	local on_enter_cooldown = function (self)
+		local button = self.MyObject
+		GameTooltip:SetOwner (self, "ANCHOR_RIGHT")
+		GameTooltip:SetSpellByID (button.spellid)
+		GameTooltip:Show()
+	end
+	
+	local on_leave_cooldown = function (self)
+		GameTooltip:Hide()
+	end
+	
+	local class_cooldowns = _G ["RaidAssistCooldowns"].spell_list
+	for class, class_table in pairs (class_cooldowns) do
+		for spec, spells in pairs (class_table) do 
+			for spellid, spellinfo in pairs (spells) do
+				
+				if (not spell_added [spellid]) then
+					local spellname, rank, spellicon = GetSpellInfo (spellid)
+				
+					local spell =  Notepad:CreateButton (colors_panel, on_spellcooldown_selection, 18, 18, "", spellid, _, _, "button_cooldown" .. index)
+					spell:SetBackdrop (button_cooldown_backdrop)
+					spell:SetPoint ("topleft", editbox_notes, "topright", 10 + ((i-1)*19), -141 + (o*19*-1))
+					spell:SetHook ("OnEnter", on_enter_cooldown)
+					spell:SetHook ("OnLeave", on_leave_cooldown)
+					spell.spellid = spellid
+					local spell_texture = spell:CreateTexture (nil, "background")
+					spell_texture:SetTexture (spellicon)
+					spell_texture:SetTexCoord (5/65, 59/64, 5/65, 59/64)
+					spell_texture:SetAlpha (0.7)
+					spell_texture:SetAllPoints()
+					
+					local class_color = RAID_CLASS_COLORS [class]
+					spell:SetBackdropBorderColor (class_color.r, class_color.g, class_color.b)
+					
+					index = index + 1
+					i = i +1
+					if (i == 10) then
+						i = 1
+						o = o + 1
+					end
+					spell_added [spellid] = true
+				end
+			end
+		end
+	end
+	
+	--boss spells
+	local label_iconbossspells = Notepad:CreateLabel (colors_panel, "Boss Abilities" .. ":", Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	label_iconbossspells:SetPoint ("topleft", editbox_notes, "topright", 10, -223)
+	
+	--local bossspell_icon_path = [[|TICONPATH:12:12:0:0:64:64:5:59:5:59|t]]
+	local bossspell_icon_path = [[|TICONPATH:0|t]]
+	local bossspell_icon_path_noformat = [[||TICONPATH:0||t]]
+	local on_bossspell_selection = function (self, button)
+		local spellname, rank, iconpath = GetSpellInfo (self.MyObject.spellid)
+		if (Notepad.db.auto_format) then
+			main_frame.editbox_notes.editbox:Insert (bossspell_icon_path:gsub ([[ICONPATH]], iconpath) .. " " .. spellname)
+		else
+			main_frame.editbox_notes.editbox:Insert (bossspell_icon_path_noformat:gsub ([[ICONPATH]], iconpath) .. " " .. spellname)
+		end
+	end	
+	
+	local button_bossspell_backdrop = {edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, tileSize = 64, tile = true}
+	
+	local on_enter_bossspell = function (self)
+		local button = self.MyObject
+		GameTooltip:SetOwner (self, "ANCHOR_RIGHT")
+		GameTooltip:SetSpellByID (button.spellid)
+		GameTooltip:Show()
+	end
+	
+	local on_leave_bossspell = function (self)
+		GameTooltip:Hide()
+	end
+	
+	local boss_abilities_buttons = {}
+	function Notepad:UpdateBossAbilities()
+		for buttonid, button in ipairs (boss_abilities_buttons) do
+			button:Hide()
+		end
+		local bossid = Notepad.boss_editing_id and Notepad.boss_editing_id:gsub (".*_", "")
+		bossid = tonumber (bossid)
+		if (bossid) then
+			local ejid, combatlogid = Notepad:GetBossIds (bossid)
+			local spells = Notepad:GetBossSpellList (ejid)
+			if (spells) then
+				local button_index = 1
+				local i, o = 1, 1
+				for index, spellid in ipairs (spells) do
+					
+					local button = boss_abilities_buttons [button_index]
+					if (not button) then
+						button =  Notepad:CreateButton (colors_panel, on_bossspell_selection, 18, 18, "", spellid, _, _, "button_bossspell" .. button_index)
+						button.spell_texture = button:CreateTexture (nil, "background")
+						boss_abilities_buttons [button_index] = button
+					end
+					
+					button:SetBackdrop (button_bossspell_backdrop)
+					button:SetPoint ("topleft", editbox_notes, "topright", 10 + ((i-1)*19), -218 + (o*19*-1))
+					button:SetHook ("OnEnter", on_enter_bossspell)
+					button:SetHook ("OnLeave", on_leave_bossspell)
+					button.spellid = spellid
+					
+					local spellname, rank, spellicon = GetSpellInfo (spellid)
+					
+					button.spell_texture:SetTexture (spellicon)
+					button.spell_texture:SetTexCoord (5/65, 59/64, 5/65, 59/64)
+					button.spell_texture:SetAlpha (0.7)
+					button.spell_texture:SetAllPoints()
+					
+					button:Show()
+					
+					button_index = button_index + 1
+					i = i +1
+					if (i == 10) then
+						i = 1
+						o = o + 1
+					end
+				end
+			end
+		end
+	end
+
+	
+	--keywords
+	local label_keywords = Notepad:CreateLabel (colors_panel, "Keywords" .. ":", Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	label_keywords:SetPoint ("topleft", editbox_notes, "topright", 10, -318)
+	
+	local localized_keywords = {"Cooldowns", "Phase", "Dispell", "Interrupt", "Adds", "Sequence", "Second Pot At", "Tanks", "Dps", "Healers", "Transition"}
+	
+	if (UnitFactionGroup("player") == "Horde") then
+		tinsert (localized_keywords, "Bloodlust At")
+	else
+		tinsert (localized_keywords, "Heroism")
+	end
+	
+	local on_keyword_selection = function (self, button, keyword)
+		main_frame.editbox_notes.editbox:Insert (keyword .. ":")
+	end
+	
+	local i, o, index = 1, 1, 1
+	local button_keyword_backdrop = {edgeSize = 1, tileSize = 64, tile = true, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]]}
+	
+	local on_enter_keyword = function (self)
+		local button = self.MyObject
+		button.textcolor = "orange"
+	end
+	
+	local on_leave_keyword = function (self)
+		local button = self.MyObject
+		button.textcolor = "white"
+	end
+	
+	for index, keyword in pairs (localized_keywords) do
+		local keyword_button =  Notepad:CreateButton (colors_panel, on_keyword_selection, 80, 12, keyword, keyword, _, _, "button_keyword" .. index, nil, 1) --short method 1
+		keyword_button:SetBackdrop (button_keyword_backdrop)
+		keyword_button:SetBackdropColor (0, 0, 0, 0.4)
+		keyword_button:SetPoint ("topleft", editbox_notes, "topright", 8 + ((i-1)*85), -320 + (o*13*-1))
+		keyword_button:SetHook ("OnEnter", on_enter_keyword)
+		keyword_button:SetHook ("OnLeave", on_leave_keyword)
+		keyword_button.textsize = 10
+		keyword_button.textface = "Friz Quadrata TT"
+		keyword_button.textcolor = "white"
+		keyword_button.textalign = "<"
+		keyword_button.keyword = keyword
+
+		index = index + 1
+		i = i +1
+		if (i == 3) then
+			i = 1
+			o = o + 1
+		end
+	end
+	
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	function Notepad:FormatText (mytext)
+		local text = mytext
+		if (not text) then
+			text = main_frame.editbox_notes.editbox:GetText()
+		end
+		
+		if (Notepad.db.auto_format or mytext) then
+			-- format the text, show icons
+			text = text:gsub ("{Star}", [[|TInterface\TargetingFrame\UI-RaidTargetingIcon_1:0|t]])
+			text = text:gsub ("{Circle}", [[|TInterface\TargetingFrame\UI-RaidTargetingIcon_2:0|t]])
+			text = text:gsub ("{Diamond}", [[|TInterface\TargetingFrame\UI-RaidTargetingIcon_3:0|t]])
+			text = text:gsub ("{Triangle}", [[|TInterface\TargetingFrame\UI-RaidTargetingIcon_4:0|t]])
+			text = text:gsub ("{Moon}", [[|TInterface\TargetingFrame\UI-RaidTargetingIcon_5:0|t]])
+			text = text:gsub ("{Square}", [[|TInterface\TargetingFrame\UI-RaidTargetingIcon_6:0|t]])
+			text = text:gsub ("{Cross}", [[|TInterface\TargetingFrame\UI-RaidTargetingIcon_7:0|t]])
+			text = text:gsub ("{Skull}", [[|TInterface\TargetingFrame\UI-RaidTargetingIcon_8:0|t]])
+			text = text:gsub ("{rt1}", [[|TInterface\TargetingFrame\UI-RaidTargetingIcon_1:0|t]])
+			text = text:gsub ("{rt2}", [[|TInterface\TargetingFrame\UI-RaidTargetingIcon_2:0|t]])
+			text = text:gsub ("{rt3}", [[|TInterface\TargetingFrame\UI-RaidTargetingIcon_3:0|t]])
+			text = text:gsub ("{rt4}", [[|TInterface\TargetingFrame\UI-RaidTargetingIcon_4:0|t]])
+			text = text:gsub ("{rt5}", [[|TInterface\TargetingFrame\UI-RaidTargetingIcon_5:0|t]])
+			text = text:gsub ("{rt6}", [[|TInterface\TargetingFrame\UI-RaidTargetingIcon_6:0|t]])
+			text = text:gsub ("{rt7}", [[|TInterface\TargetingFrame\UI-RaidTargetingIcon_7:0|t]])
+			text = text:gsub ("{rt8}", [[|TInterface\TargetingFrame\UI-RaidTargetingIcon_8:0|t]])
+			
+			text = text:gsub ("||c", "|c")
+			text = text:gsub ("||r", "|r")
+			text = text:gsub ("||t", "|t")
+			text = text:gsub ("||T", "|T")
+			
+		else
+			--> show plain text
+			--> replace the raid target icons:
+			text = text:gsub ([[|TInterface\TargetingFrame\UI%-RaidTargetingIcon_1:0|t]], "{Star}")
+			text = text:gsub ([[|TInterface\TargetingFrame\UI%-RaidTargetingIcon_2:0|t]], "{Circle}")
+			text = text:gsub ([[|TInterface\TargetingFrame\UI%-RaidTargetingIcon_3:0|t]], "{Diamond}")
+			text = text:gsub ([[|TInterface\TargetingFrame\UI%-RaidTargetingIcon_4:0|t]], "{Triangle}")
+			text = text:gsub ([[|TInterface\TargetingFrame\UI%-RaidTargetingIcon_5:0|t]], "{Moon}")
+			text = text:gsub ([[|TInterface\TargetingFrame\UI%-RaidTargetingIcon_6:0|t]], "{Square}")
+			text = text:gsub ([[|TInterface\TargetingFrame\UI%-RaidTargetingIcon_7:0|t]], "{Cross}")
+			text = text:gsub ([[|TInterface\TargetingFrame\UI%-RaidTargetingIcon_8:0|t]], "{Skull}")
+
+			--> escape sequences
+			text = text:gsub ("|c", "||c")
+			text = text:gsub ("|r", "||r")
+			text = text:gsub ("|t", "||t")
+			text = text:gsub ("|T", "||T")
+		end
+
+		--> passed a text, so just return a formated text
+		if (mytext) then
+			return text
+		else
+			main_frame.editbox_notes.editbox:SetText (text)
+		end
+	end
+
+	local func = function (self, fixedparam, value) 
+		Notepad.db.auto_format = value
+		Notepad:FormatText()
+	end
+	local checkbox = Notepad:CreateSwitch (colors_panel, func, Notepad.db.auto_format, _, _, _, _, _, "NotepadFormatCheckBox", _, _, _, _, Notepad:GetTemplate ("switch", "OPTIONS_CHECKBOX_TEMPLATE"), Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	checkbox:SetAsCheckBox()
+	checkbox.tooltip = "auto format text"
+	checkbox:SetPoint ("bottomleft", editbox_notes, "topleft")
+	checkbox:SetValue (Notepad.db.auto_format)
+	local label_autoformat = Notepad:CreateLabel (colors_panel, "Auto Format Text (|cFFC0C0C0can't copy/paste icons|r)", Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	label_autoformat:SetPoint ("left", checkbox, "right", 2, 0)
+	
+	local func = function (self, fixedparam, value) 
+		Notepad.db.auto_complete = value
+	end
+	local checkbox2 = Notepad:CreateSwitch (colors_panel, func, Notepad.db.auto_complete, _, _, _, _, _, "NotepadAutoCompleteCheckBox", _, _, _, _, Notepad:GetTemplate ("switch", "OPTIONS_CHECKBOX_TEMPLATE"), Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	checkbox2:SetAsCheckBox()
+	checkbox2.tooltip = "auto format text"
+	checkbox2:SetPoint ("bottomleft", editbox_notes, "topleft", 250, 0)
+	checkbox2:SetValue (Notepad.db.auto_complete)
+	local label_autocomplete = Notepad:CreateLabel (colors_panel, "Auto Complete Player Names", Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	label_autocomplete:SetPoint ("left", checkbox2, "right", 2, 0)
+	
+	
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	editbox_notes:SetScript ("OnShow", function()
+		colors_panel:SetScript ("OnUpdate", do_text_format)
+		Notepad:UpdateBossAbilities()
+	end)
+	editbox_notes:SetScript ("OnHide", function()
+		colors_panel:SetScript ("OnUpdate", nil)
+	end)
+	
 	dropdown_boss:Refresh()
 	dropdown_boss:Select (1, true)
 	Notepad.boss_editing_id = dropdown_boss.value
 	dropdown_notes:Refresh()
 	dropdown_notes:Select (false)
+	
+	local lastword, characters_count = "", 0
+
+	local get_last_word = function()
+		lastword = ""
+		local cursor_pos = main_frame.editbox_notes.editbox:GetCursorPosition()
+		local text = main_frame.editbox_notes.editbox:GetText()
+		for i = cursor_pos, 1, -1 do
+			local character = text:sub (i, i)
+			if (character:match ("%a")) then
+				lastword = character .. lastword
+			else
+				break
+			end
+		end
+	end
+	
+	editbox_notes.editbox:SetScript ("OnTextChanged", function (self)
+		local chars_now = main_frame.editbox_notes.editbox:GetText():len()
+		--> backspace
+		if (chars_now == characters_count -1) then
+			lastword = lastword:sub (1, lastword:len()-1)
+		--> delete lots of text
+		elseif (chars_now < characters_count) then
+			main_frame.editbox_notes.editbox.end_selection = nil
+			get_last_word()
+		end
+		characters_count = chars_now
+	end)
+	
+	editbox_notes.editbox:SetScript ("OnSpacePressed", function (self)
+		main_frame.editbox_notes.editbox.end_selection = nil
+	end)
+	editbox_notes.editbox:HookScript ("OnEscapePressed", function (self) 
+		main_frame.editbox_notes.editbox.end_selection = nil
+	end)
+	
+	editbox_notes.editbox:SetScript ("OnEnterPressed", function (self) 
+		if (main_frame.editbox_notes.editbox.end_selection) then
+			main_frame.editbox_notes.editbox:SetCursorPosition (main_frame.editbox_notes.editbox.end_selection)
+			main_frame.editbox_notes.editbox:HighlightText (0, 0)
+			main_frame.editbox_notes.editbox.end_selection = nil
+			main_frame.editbox_notes.editbox:Insert (" ")
+		else
+			main_frame.editbox_notes.editbox:Insert ("\n")
+		end
+		
+		lastword = ""
+	end)
+	
+	editbox_notes.editbox:SetScript ("OnEditFocusGained", function (self) 
+		get_last_word()
+		main_frame.editbox_notes.editbox.end_selection = nil
+		characters_count = main_frame.editbox_notes.editbox:GetText():len()
+	end)
+
+	editbox_notes.editbox:SetScript ("OnChar", function (self, char) 
+		main_frame.editbox_notes.editbox.end_selection = nil
+	
+		if (main_frame.editbox_notes.editbox.ignore_input) then
+			return
+		end
+		if (char:match ("%a")) then
+			lastword = lastword .. char
+		else
+			lastword = ""
+		end
+		
+		main_frame.editbox_notes.editbox.ignore_input = true
+		if (lastword:len() >= 2 and Notepad.db.auto_complete) then
+			for i = 1, GetNumGroupMembers() do
+				local name = UnitName ("raid" .. i)
+				--print (name, string.find ("keyspell", "^key"))
+				if (name:find ("^" .. lastword) or name:lower():find ("^" .. lastword)) then
+					local rest = name:gsub (lastword, "")
+					rest = rest:lower():gsub (lastword, "")
+					local cursor_pos = self:GetCursorPosition()
+					main_frame.editbox_notes.editbox:Insert (rest)
+					main_frame.editbox_notes.editbox:HighlightText (cursor_pos, cursor_pos + rest:len())
+					main_frame.editbox_notes.editbox:SetCursorPosition (cursor_pos)
+					main_frame.editbox_notes.editbox.end_selection = cursor_pos + rest:len()
+					break
+				end
+			end
+		end
+		main_frame.editbox_notes.editbox.ignore_input = false
+	end)
 	
 end
 
@@ -822,8 +1666,11 @@ end
 
 function Notepad.OnReceiveComm (prefix, sourcePluginVersion, sourceUnit, fullNote, noteSeed, noteDate)
 	
-	--print ("received comm:", prefix, sourcePluginVersion, sourceUnit, fullNote, noteSeed, noteDate)
-
+	local ZoneName, InstanceType, DifficultyID = GetInstanceInfo()
+	if (DifficultyID and DifficultyID == 17) then
+		return
+	end
+	
 	--> Full Note - the user received a note from the Raid Leader
 	if (prefix == COMM_RECEIVED_FULLNOTE) then
 		--> check if the sender is the raid leader

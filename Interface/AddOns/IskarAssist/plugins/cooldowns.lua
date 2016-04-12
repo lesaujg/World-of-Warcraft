@@ -71,6 +71,8 @@ Cooldowns.RosterIsEnabled = false
 Cooldowns.InstanceType = "none"
 local TrackingSpells = {}
 
+_G ["RaidAssistCooldowns"] = Cooldowns
+
 local get_unit_name = function (unitid)
 	local name = GetUnitName (unitid, true)
 	return Ambiguate (name, "none")
@@ -174,8 +176,8 @@ local spell_list = {
 			[47788] = {cooldown = 180, type = "external"}, --guardian spirit
 			
 			--> testing the addon:
-			[586] = {cooldown = 30, type = "external"}, --fade
-			[121536] = {cooldown = 10, type = "external", charges = 3}, --angelic feather
+			--[586] = {cooldown = 30, type = "external"}, --fade
+			--[121536] = {cooldown = 10, type = "external", charges = 3}, --angelic feather
 			
 		},
 		[258] = { --shadow
@@ -235,6 +237,8 @@ local spell_list = {
 		},
 	},
 }
+
+Cooldowns.spell_list = spell_list
 
 Cooldowns.menu_text = function (plugin)
 	if (Cooldowns.db.enabled) then
@@ -1250,6 +1254,18 @@ function Cooldowns.BuildOptions (frame)
 		texTable[#texTable+1] = {value = name, label = name, statusbar = texturePath, onclick = set_bar_texture}
 	end
 	table.sort (texTable, function (t1, t2) return t1.label < t2.label end)
+	
+	
+	local advise_panel = CreateFrame ("frame", nil, f)
+	advise_panel:SetPoint ("topleft", f, "topleft", 120, -22)
+	advise_panel:SetSize (260, 58)
+	advise_panel:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true})
+	advise_panel:SetBackdropColor (1, 1, 1, .5)
+	advise_panel:SetBackdropBorderColor (0, 0, 0, 1)
+	local advise_panel_text = advise_panel:CreateFontString (nil, "overlay", "GameFontNormal")
+	advise_panel_text:SetPoint ("center", advise_panel, "center")
+	advise_panel_text:SetText ("You may create a new panel if you want\nto separate Raid Cooldowns and\nExternal Cooldowns in two panels.")
+	Cooldowns:SetFontSize (advise_panel_text, 11)
 	
 	--> options:
 	local options_list = {
