@@ -8,7 +8,8 @@ VER 3 000000000000008E "BuyTradingPost" "INV_MISC_QUESTIONMARK"
 /run BuyMerchantItem(3) 
 END
 VER 3 0000000000000098 "Decursive" "INV_MISC_QUESTIONMARK"
-/script DecursiveRootTable.Dcr:Println('No spell available')
+/stopcasting
+/cast [@mouseover,nomod,exists] Hand of Sacrifice;  [@mouseover,exists,mod:ctrl] Cleanse; [@mouseover,exists,mod:shift] Hand of Sacrifice
 END
 VER 3 000000000000008A "Des" "ACHIEVEMENT_GUILDPERK_QUICK AND DEAD"
 /tar Des

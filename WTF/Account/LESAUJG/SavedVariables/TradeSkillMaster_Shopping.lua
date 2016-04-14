@@ -38,32 +38,32 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @postUndercut"] = "1c",
 	["g@ @minDeSearchLvl"] = 1,
 	["g@ @maxDeSearchLvl"] = 735,
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1460257150,
+			["lastSearch"] = 1460605339,
+			["name"] = "arcane c",
+			["filter"] = "arcane c",
+		}, -- [1]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1460603808,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
-		}, -- [1]
+		}, -- [2]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1460593363,
+			["name"] = "universal",
+			["filter"] = "universal",
+		}, -- [3]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1460212738,
 			["name"] = "fireweed",
 			["filter"] = "fireweed",
-		}, -- [2]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1460212340,
-			["name"] = "arcane c",
-			["filter"] = "arcane c",
-		}, -- [3]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1460212331,
-			["name"] = "universal",
-			["filter"] = "universal",
 		}, -- [4]
 		{
 			["searchMode"] = "normal",
@@ -144,7 +144,7 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "saberfish",
 		}, -- [17]
 	},
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @normalPostPrice"] = "150% dbmarket",
 	["g@ @maxDeSearchPercent"] = 1,
 	["g@ @sniperCustomPrice"] = "0c",
