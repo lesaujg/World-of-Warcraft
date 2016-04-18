@@ -1,31 +1,37 @@
 
 _NPCScanOverlayOptions = {
-	["Modules"] = {
-		["Minimap"] = true,
-		["OmegaMap"] = true,
-		["BattlefieldMinimap"] = true,
-		["WorldMap"] = true,
-	},
+	["ShowKey"] = false,
+	["KeyFontSize"] = 12,
+	["LockSwap"] = false,
 	["ModulesAlpha"] = {
 		["Minimap"] = 0.5,
 		["OmegaMap"] = 0.5,
 		["BattlefieldMinimap"] = 0.800000011920929,
 		["WorldMap"] = 0.5,
 	},
-	["Version"] = "5.4.8.5",
-	["ShowKey"] = false,
+	["Modules"] = {
+		["Minimap"] = true,
+		["OmegaMap"] = true,
+		["BattlefieldMinimap"] = true,
+		["WorldMap"] = true,
+	},
 	["MiniMapIcon"] = {
 	},
+	["Version"] = "5.4.8.5",
+	["KeyAutoHideAlpha"] = 0.25,
+	["ShowAll"] = true,
 	["ModulesExtra"] = {
 		["Minimap"] = {
 			["RangeRing"] = true,
+			["DetectionRing"] = true,
 		},
 		["WorldMap"] = {
 			["RangeRing"] = true,
+			["DetectionRing"] = true,
 		},
 	},
-	["LockSwap"] = false,
-	["ShowAll"] = true,
+	["KeyMaxSize"] = 0.75,
+	["KeyFont"] = "ChatFontNormal",
 }
 _NPCScanMiniMapIcon = {
 }

@@ -422,13 +422,19 @@ function PlayerCheck.BuildOptions (frame)
 				
 				local talents = ""
 				for i = 2, #t[7] do
-					local talentID, name, texture, selected, available = GetTalentInfoByID (t[7][i])
-					talents = talents ..  " |T" .. texture .. ":" .. 15 .. ":" .. 15 ..":0:0:64:64:4:60:4:60|t"
+					local talentID, name, texture, selected, available = GetTalentInfoByID (t[7][i] or 0)
+					if (texture) then
+						talents = talents ..  " |T" .. texture .. ":" .. 15 .. ":" .. 15 ..":0:0:64:64:4:60:4:60|t"
+					end
 				end
-				
+
 				local spec_id, spec_name, spec_description, spec_icon, spec_background, spec_role, spec_class = GetSpecializationInfoByID (t[7][1] or 0)
-				name = "|T" .. spec_icon .. ":" .. 16 .. ":" .. 16 ..":0:0:64:64:4:60:4:60|t " .. name
-				
+				if (spec_icon) then
+					name = "|T" .. spec_icon .. ":" .. 16 .. ":" .. 16 ..":0:0:64:64:4:60:4:60|t " .. (name or "Unknown")
+				else
+					name = name or "Unknown"
+				end
+
 				return {name, latency, item_level, repair, missing_enchants_amt, talents}
 			end)
 			frame.fill_panel:SetTotalFunction (function() return #alphabetical_players end)

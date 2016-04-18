@@ -58,7 +58,10 @@ end
 Attendance.StartUp = function()
 	Attendance.player_name = GetUnitName ("player")
 	
-	--Attendance:Msg ("Attendance.StartUp() -> is capturing:", Attendance.is_capturing)
+	if (not Attendance.player_name) then
+		C_Timer.After (0.5, function() Attendance.StartUp() end)
+		return
+	end
 	RaidSchedule = _G ["RaidAssistRaidSchedule"]
 	if (not RaidSchedule) then
 		C_Timer.After (0.5, function() Attendance.StartUp() end)
@@ -66,7 +69,7 @@ Attendance.StartUp = function()
 	end
 	
 	Attendance:CheckForNextEvent()
-	Attendance:CheckOldTables()
+	--Attendance:CheckOldTables()
 	Attendance.need_popup_update = true
 end
 
@@ -79,7 +82,7 @@ Attendance.OnInstall = function (plugin)
 	
 	Attendance.db.menu_priority = default_priority
 	
-	C_Timer.After (20, Attendance.StartUp)
+	C_Timer.After (2, Attendance.StartUp)
 end
 
 function Attendance:CheckOldTables()
@@ -93,7 +96,7 @@ function Attendance:CheckOldTables()
 		end
 	end
 
-	Attendance:Msg ("Removed", removed, "attendance tables outdated.")
+	--Attendance:Msg ("Removed", removed, "attendance tables outdated.")
 end
 
 Attendance.OnEnable = function (plugin)
@@ -142,19 +145,25 @@ function Attendance.BuildOptions (frame)
 	end
 	frame.FirstRun = true
 	
-	local fill_panel = Attendance:CreateFillPanel (frame, {}, 790, 460, false, false, false, {rowheight = 16}, "fill_panel", "AttendanceFillPanel")
-	fill_panel:SetPoint ("topleft", frame, "topleft", 10, 0)
+	local fill_panel = Attendance:CreateFillPanel (frame, {}, 790, 400, false, false, false, {rowheight = 16}, "fill_panel", "AttendanceFillPanel")
+	fill_panel:SetPoint ("topleft", frame, "topleft", 10, -30)
 	
-	-- captura toda e qualquer attendance de todos os cores registrados
-	-- precisa estar em guilda
-	
-	--dropdown to select which attendance to show
-	
+	local advise_panel = CreateFrame ("frame", nil, frame)
+	advise_panel:SetPoint ("center", frame, "center", 790/2, -400/2)
+	advise_panel:SetSize (460, 68)
+	advise_panel:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true})
+	advise_panel:SetBackdropColor (1, 1, 1, .5)
+	advise_panel:SetBackdropBorderColor (0, 0, 0, 1)
+	local advise_panel_text = advise_panel:CreateFontString (nil, "overlay", "GameFontNormal")
+	advise_panel_text:SetPoint ("center", advise_panel, "center")
+	Attendance:SetFontSize (advise_panel_text, 11)
 	
 	--box with the attendance tables
 	Attendance.update_attendance = function()
 	
-		local _, current_db = next (Attendance.db.raidschedules) -- Attendance.db.raidschedules = scheduleId - days table
+		local scheduleId = frame.dropdown_schedule_list:GetValue()
+		local current_db = Attendance.db.raidschedules [scheduleId] -- Attendance.db.raidschedules = scheduleId - days table
+		--local _, current_db = next (Attendance.db.raidschedules) -- Attendance.db.raidschedules = scheduleId - days table
 
 		if (current_db) then
 		
@@ -179,7 +188,7 @@ function Attendance.BuildOptions (frame)
 			local sort = table.sort
 			
 			for i, table in ipairs (alphabetical_months) do
-				
+
 				local month = table [1]
 				local att_table = table [2]
 			
@@ -234,21 +243,79 @@ function Attendance.BuildOptions (frame)
 			frame.fill_panel:SetTotalFunction (function() return #players end)
 			
 			--frame:SetSize (math.min (GetScreenWidth()-200, #header*100), (#players*16) + 32)
-			frame:SetSize (math.min (GetScreenWidth()-200, (#header*60) + 60), 450)
+			frame:SetSize (math.min (GetScreenWidth()-200, (#header*60) + 60), 425)
 			--frame.fill_panel:SetSize (math.min (GetScreenWidth()-200, #header*100), (#players*16) + 32)
-			frame.fill_panel:SetSize (math.min (GetScreenWidth()-200, (#header*60) + 60), 450)
+			frame.fill_panel:SetSize (math.min (GetScreenWidth()-200, (#header*60) + 60), 425)
 			
 			frame.fill_panel:UpdateRows (header)
 			frame.fill_panel:Refresh()
 
+			advise_panel:Hide()
+			frame.fill_panel:Show()
 		else
+			if (RaidSchedule and next (RaidSchedule.db.cores)) then
+				advise_panel_text:SetText ("No attendance has been recorded yet.")
+			else
+				advise_panel_text:SetText ("No attendance has been recorded yet, make sure to create a Raid Schedule.\nAttendance is automatically captured during your raid once a schedule is set.")
+			end
 			
+			advise_panel:Show()
+			frame.fill_panel:Hide()
 		end
 
 	end
 	
+	local on_select_schedule = function (_, _, scheduleId)
+		Attendance.update_attendance()
+	end
+	
+	local build_schedule_list = function()
+		local t = {}
+		for raidschedule_index, schedule_table in pairs (Attendance.db.raidschedules) do
+			local schedule = RaidSchedule:GetRaidScheduleTable (raidschedule_index)
+			if (schedule) then
+				tinsert (t, {value = raidschedule_index, label = schedule.core_name, onclick = on_select_schedule})
+			end
+		end
+		return t
+	end
+	
+	local label_raidschedule = Attendance:CreateLabel (frame, "Schedule" .. ": ", Attendance:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	local dropdown_raidschedule = Attendance:CreateDropDown (frame, build_schedule_list, 1, 160, 20, "dropdown_schedule_list", _, Attendance:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
+	dropdown_raidschedule:SetPoint ("left", label_raidschedule, "right", 2, 0)
+	label_raidschedule:SetPoint (10, -10)
+	dropdown_raidschedule:Refresh()
+	dropdown_raidschedule:Select (1, true)
+	
+	local reset_func_callback = function (text)
+		--if (YES:lower() == text:lower()) then
+			--> wipe
+			local scheduleId = frame.dropdown_schedule_list:GetValue()
+			if (not scheduleId) then
+				return
+			end
+			
+			local current_db = Attendance.db.raidschedules [scheduleId]
+			if (current_db) then
+				for key, table in pairs (current_db) do
+					current_db [key] = nil
+				end
+			end
+			
+			Attendance.update_attendance()
+		--end
+	end
+	local reset_func = function()
+		Attendance:ShowPromptPanel ("Are you sure you want to reset?", reset_func_callback, empty_func)
+		--Attendance:ShowTextPromptPanel ("Are you sure you want to reset? (type 'yes')", reset_func_callback)
+	end
+	local reset_button =  Attendance:CreateButton (frame, reset_func, 80, 20, "Reset", _, _, _, "button_reset", _, _, Attendance:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Attendance:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	reset_button:SetPoint ("left", dropdown_raidschedule, "right", 10, 0)
+	
 	frame:SetScript ("OnShow", function()
 		Attendance.update_attendance()
+		dropdown_raidschedule:Refresh()
+		--dropdown_raidschedule:Select (1, true)
 	end)
 	
 	Attendance.update_attendance()
@@ -263,7 +330,6 @@ local install_status = RA:InstallPlugin (L["S_PLUGIN_ATTENDANCE_NAME"], "RAAtten
 function Attendance:CheckForNextEvent()
 	local next_event_in, start_time, end_time, day, month_number, month_day, index = RaidSchedule:GetNextEventTime()
 	if (next_event_in) then
-	
 		Attendance:Msg ("Attendance Next Event:", next_event_in)
 		
 		local now = time()
@@ -279,6 +345,8 @@ function Attendance:CheckForNextEvent()
 				Attendance:StartNewCapture (start_time, end_time, now, day, month_number, month_day, index)
 			end
 		end
+	else
+		C_Timer.After (60, Attendance.CheckForNextEvent)
 	end
 end
 
@@ -317,23 +385,23 @@ function Attendance:StartNewCapture (start_time, end_time, now, day, month_numbe
 		db = Attendance.db.raidschedules [raidschedule_index]
 	end
 
-	--> get 'todays' ket id
+	--> get 'todays' key id
 	local key = "" .. month_number .. "-" .. month_day
-
+	
 	--> get the GUID table with the 'todays' attendance
 	local ctable = db [key]
 	if (not ctable) then
 		db [key] = {t = time(), players = {}}
 		ctable = db [key]
 	end
-
+	
 	Attendance.is_capturing = true
 	Attendance.db_table = db
 	Attendance.player_table = ctable
 	Attendance.guild_name = GetGuildInfo ("player")
 	
-	local ticks = floor ((end_time - start_time) / 60)
-
+	local ticks = floor ((end_time - time()) / 60) -- usava 'start_time' ao invés de time(), mas se der /reload ou entrar na já em andamento vai zuar o tempo total da captura.
+	
 	Attendance:StartCapture (ticks)
 	
 	Attendance:Msg ("Raid time started.", ticks)

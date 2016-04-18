@@ -1,6 +1,14 @@
+2016-04-14  Tercio  <Tercio>
+
+[72c9b751ec4f] [tip]
+* IskarAssist.lua, plugins/attendance.lua, plugins/playercheck.lua:
+
+- updates on the assist project.
+
+
 2016-04-11  Tercio  <Tercio>
 
-[ace75c15d495] [tip]
+[ace75c15d495]
 * IskarAssist.lua, plugins/cooldowns.lua:
 
 - more tweaks on cooldowns plugins.
@@ -207,12 +215,6 @@
 
 [2ff9867fa8c0]
 * RaidAssist.toc:
-
-- raidassist integration.
-
-
-[af5fd20336cc]
-* IskarAssist.lua:
 
 - raidassist integration.
 
