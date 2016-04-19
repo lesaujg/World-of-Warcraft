@@ -33,8 +33,6 @@ _NPCScanOverlayOptions = {
 	["KeyMaxSize"] = 0.75,
 	["KeyFont"] = "ChatFontNormal",
 }
-_NPCScanMiniMapIcon = {
-}
 _NPCScanOverlayKeyColors = {
 	{
 		["r"] = 0,
