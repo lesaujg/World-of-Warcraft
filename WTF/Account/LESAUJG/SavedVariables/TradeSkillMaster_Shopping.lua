@@ -31,52 +31,56 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @savedSearches"] = {
 		{
+			["lastSearch"] = 1461150761,
+			["name"] = "hexweave bag",
+			["filter"] = "hexweave bag",
 			["searchMode"] = "normal",
-			["lastSearch"] = 1461035341,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
+			["isFavorite"] = true,
 		}, -- [1]
 		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1461035321,
-			["name"] = "arcane c",
-			["filter"] = "arcane c",
-		}, -- [2]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1461035316,
+			["lastSearch"] = 1461150754,
 			["name"] = "universal",
 			["filter"] = "universal",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [2]
+		{
+			["lastSearch"] = 1461150739,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
 		}, -- [3]
+		{
+			["lastSearch"] = 1461150736,
+			["name"] = "arcane c",
+			["filter"] = "arcane c",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [4]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1460212738,
 			["name"] = "fireweed",
 			["filter"] = "fireweed",
-		}, -- [4]
+		}, -- [5]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1457493614,
 			["name"] = "frostweed",
 			["filter"] = "frostweed",
-		}, -- [5]
+		}, -- [6]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1455461471,
 			["name"] = "blackrock ore",
 			["filter"] = "blackrock ore",
-		}, -- [6]
+		}, -- [7]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1455133723,
 			["name"] = "raw beast",
 			["filter"] = "raw beast",
-		}, -- [7]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1453693021,
-			["name"] = "hexweave bag",
-			["filter"] = "hexweave bag",
 		}, -- [8]
 		{
 			["searchMode"] = "normal",
