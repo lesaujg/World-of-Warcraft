@@ -1193,6 +1193,11 @@ GTFO.SpellID["181498"] = {
 	affirmingDebuffSpellID = 182008; -- Latent Energy
 };
 
+GTFO.SpellID["185426"] = {
+	--desc = "Ring of Destruction (Fel Lord Zakuun)";
+	sound = 3;
+};
+
 GTFO.SpellID["189596"] = {
 	--desc = "Protocol: Crowd Control (Construct Peacekeeper)";
 	sound = 3;
@@ -1207,5 +1212,12 @@ GTFO.SpellID["188500"] = {
 GTFO.SpellID["182900"] = {
 	--desc = "Virulent Haunt (Socrethar)";
 	sound = 3;
+	applicationOnly = true;
+};
+
+GTFO.SpellID["184422"] = {
+	--desc = "Shockwave (Shao'ghun)";
+	sound = 3;
+	test = true;
 	applicationOnly = true;
 };

@@ -1356,3 +1356,7 @@ GTFO.SpellID["186510"] = {
 	sound = 1;
 };
 
+GTFO.SpellID["189550"] = {
+	--desc = "Rain of Fire (Azgalor)";
+	sound = 1;
+};
