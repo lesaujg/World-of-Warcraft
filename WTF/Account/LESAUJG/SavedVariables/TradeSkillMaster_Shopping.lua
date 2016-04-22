@@ -42,30 +42,30 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1461203745,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [1]
-		{
-			["lastSearch"] = 1461183015,
-			["name"] = "universal",
-			["filter"] = "universal",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [2]
-		{
-			["lastSearch"] = 1461183006,
+			["lastSearch"] = 1461289262,
 			["name"] = "hexweave bag",
 			["filter"] = "hexweave bag",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [3]
+		}, -- [1]
 		{
-			["lastSearch"] = 1461182998,
+			["lastSearch"] = 1461289241,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [2]
+		{
+			["lastSearch"] = 1461288890,
 			["name"] = "arcane c",
 			["filter"] = "arcane c",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [3]
+		{
+			["lastSearch"] = 1461183015,
+			["name"] = "universal",
+			["filter"] = "universal",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [4]
