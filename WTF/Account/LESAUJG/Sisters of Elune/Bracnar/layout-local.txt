@@ -20,3 +20,17 @@ X: 0
 Y: 128
 W: 150
 H: 42
+Frame: TSMCraftingTradeSkillFrame
+FrameLevel: 51
+Anchor: TOP
+X: -236
+Y: -18
+W: 450
+H: 500
+Frame: AuctionFrame
+FrameLevel: 67
+Anchor: TOP
+X: -71
+Y: -139
+W: 832
+H: 447

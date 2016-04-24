@@ -31,111 +31,117 @@ TradeSkillMaster_ShoppingDB = {
 	["_hash"] = 1861581,
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1461289262,
-			["name"] = "hexweave bag",
-			["filter"] = "hexweave bag",
 			["searchMode"] = "normal",
-			["isFavorite"] = true,
+			["lastSearch"] = 1461467943,
+			["name"] = "true iron ore",
+			["filter"] = "true iron ore",
 		}, -- [1]
 		{
-			["lastSearch"] = 1461289241,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [2]
-		{
-			["lastSearch"] = 1461288890,
+			["lastSearch"] = 1461467576,
 			["name"] = "arcane c",
 			["filter"] = "arcane c",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
+		}, -- [2]
+		{
+			["lastSearch"] = 1461467569,
+			["name"] = "hexweave bag",
+			["filter"] = "hexweave bag",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
 		}, -- [3]
+		{
+			["lastSearch"] = 1461467541,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [4]
 		{
 			["lastSearch"] = 1461183015,
 			["name"] = "universal",
 			["filter"] = "universal",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [4]
+		}, -- [5]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1460212738,
 			["name"] = "fireweed",
 			["filter"] = "fireweed",
-		}, -- [5]
+		}, -- [6]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1457493614,
 			["name"] = "frostweed",
 			["filter"] = "frostweed",
-		}, -- [6]
+		}, -- [7]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1455461471,
 			["name"] = "blackrock ore",
 			["filter"] = "blackrock ore",
-		}, -- [7]
+		}, -- [8]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1455133723,
 			["name"] = "raw beast",
 			["filter"] = "raw beast",
-		}, -- [8]
+		}, -- [9]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1453692479,
 			["name"] = "sorcerous",
 			["filter"] = "sorcerous",
-		}, -- [9]
+		}, -- [10]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1453006657,
 			["name"] = "Mounts/Miscellaneous/Mount/usable",
 			["filter"] = "Mounts/Miscellaneous/Mount/usable",
-		}, -- [10]
+		}, -- [11]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1453005351,
 			["name"] = "essence of air",
 			["filter"] = "essence of air",
-		}, -- [11]
+		}, -- [12]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452570334,
 			["name"] = "Primal fire",
 			["filter"] = "Primal fire",
-		}, -- [12]
+		}, -- [13]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452570327,
 			["name"] = "Primal might",
 			["filter"] = "Primal might",
-		}, -- [13]
+		}, -- [14]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452565837,
 			["name"] = "flask",
 			["filter"] = "flask",
-		}, -- [14]
+		}, -- [15]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452471365,
 			["name"] = "legion",
 			["filter"] = "legion",
-		}, -- [15]
+		}, -- [16]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1451421774,
 			["name"] = "temporal",
 			["filter"] = "temporal",
-		}, -- [16]
+		}, -- [17]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1450325729,
 			["name"] = "saberfish",
 			["filter"] = "saberfish",
-		}, -- [17]
+		}, -- [18]
 	},
 	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @marketValueSource"] = "dbmarket",
