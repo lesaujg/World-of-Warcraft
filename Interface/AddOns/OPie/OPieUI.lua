@@ -305,7 +305,7 @@ mainFrame:SetScript("OnHide", function(self)
 end)
 
 local api, iapi = {}, {}
-function iapi:Show(ringName, fcSlice, fastOpen)
+function iapi:Show(_ringName, fcSlice, fastOpen)
 	_, mainFrame.count, mainFrame.offset = OneRingLib:GetOpenRing(configCache)
 	mainFrame.radius = CalculateRingRadius(mainFrame.count or 3, 48, 48, 95, 90-(mainFrame.offset or 0))
 	mainFrame:SetScript("OnUpdate", OnUpdate_ZoomIn)

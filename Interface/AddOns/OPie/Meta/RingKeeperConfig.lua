@@ -1,7 +1,6 @@
 local api, L, RK, conf, ORI, _, T = {}, OneRingLib.lang, OneRingLib.ext.RingKeeper, OneRingLib.ext.config, OneRingLib.ext.OPieUI, ...
 local AB = assert(T.ActionBook:compatible(2,14), "A compatible version of ActionBook is required")
 local gfxBase, EV = ([[Interface\AddOns\%s\gfx\]]):format((...)), T.Evie
-_ = T.Toboe and T.Toboe()
 
 local FULLNAME, SHORTNAME do
 	function EV.PLAYER_LOGIN()
@@ -531,8 +530,9 @@ sliceDetail = CreateFrame("Frame", nil, ringContainer) do
 				self.Up:SetEnabled(value > 1)
 				self.Down:SetEnabled(icontex[value + #icons + 1] ~= nil)
 				for i=0,#icons do
-					local tex = "Interface/Icons/" .. (icontex[i+value] or "Temp")
-					icons[i].tex:SetTexture(tex)
+					local ico = icons[i].tex
+					ico:SetToFileData(icontex[i+value])
+					local tex = ico:GetTexture()
 					icons[i]:SetChecked(f.selection == tex)
 					selectedIcon = f.selection == tex and icons[i] or selectedIcon
 				end

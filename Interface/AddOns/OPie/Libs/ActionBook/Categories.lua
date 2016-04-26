@@ -2,7 +2,6 @@ local _, T = ...
 if T.SkipLocalActionBook then return end
 local AB, mark = assert(T.ActionBook:compatible(2, 14), "A compatible version of ActionBook is required"), {}
 local RW = assert(T.ActionBook:compatible("Rewire", 1,4), "A compatible version of Rewire is required")
-_ = T.Toboe and T.Toboe()
 
 do -- spellbook
 	local function addEntry(add, at, ok, st, sid, ...)

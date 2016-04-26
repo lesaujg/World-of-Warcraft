@@ -2,8 +2,8 @@
 OneRing_Config = {
 	["CharProfiles"] = {
 	},
-	["_GameVersion"] = "6.2.4.21463",
-	["_OPieVersion"] = "Tomato 6 (3.83)",
+	["_GameVersion"] = "6.2.4",
+	["_OPieVersion"] = "Tomato 6 (3.84)",
 	["ProfileStorage"] = {
 		["default"] = {
 			["ClickActivation"] = true,

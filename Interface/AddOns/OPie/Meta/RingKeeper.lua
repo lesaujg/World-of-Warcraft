@@ -1,7 +1,6 @@
 local RingKeeper, _, T = {}, ...
 local RK_RingDesc, RK_CollectionIDs, RK_Version, RK_Rev, EV, SV = {}, {}, 2, 44, T.Evie
 local unlocked, queue, RK_DeletedRings, RK_FlagStore, sharedCollection = false, {}, {}, {}, {}
-_ = T.Toboe and T.Toboe()
 
 local function assert(condition, text, level, ...)
 	return (not condition) and error(tostring(text):format(...), 1 + (level or 1)) or condition

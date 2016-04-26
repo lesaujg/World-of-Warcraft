@@ -1,4 +1,4 @@
-local versionMajor, versionRev, L, ADDON, T, ORI = 3, 83, newproxy(true), ...
+local versionMajor, versionRev, L, ADDON, T, ORI = 3, 84, newproxy(true), ...
 local api, OR_Rings, OR_ModifierLockState, TL, EV, OR_LoadedState = {ext={ActionBook=T.ActionBook},lang=L}, {}, nil, T.L, T.Evie, 1
 local defaultConfig = {ClickActivation=false, IndicationOffsetX=0, IndicationOffsetY=0, RingAtMouse=false, RingScale=1, ClickPriority=true, CenterAction=false, MouseBucket=1, NoClose=false, SliceBinding=false, SliceBindingString="1 2 3 4 5 6 7 8 9 0", SelectedSliceBind="", PrimaryButton="BUTTON4", SecondaryButton="BUTTON5", OpenNestedRingButton="BUTTON3", ScrollNestedRingUpButton="", ScrollNestedRingDownButton="", UseDefaultBindings=true}
 local configRoot, configInstance, activeProfile, PersistentStorageInfo, optionValidators, optionsMeta = {}, nil, nil, {}, {}, {__index=defaultConfig}
@@ -507,7 +507,7 @@ local OR_FindFinalAction do
 		wipe(seen)
 	end
 end
-function OR_SecCore:NotifyState(state, ringName, collection, ...)
+function OR_SecCore:NotifyState(state, _ringName, collection, ...)
 	if state == "open" then
 		MouselookStop()
 		local bind, fastClick, fastOpen, ms = OR_SecEnv.activeBind or "", ...
@@ -591,7 +591,7 @@ local function OR_InitConfigState()
 		if type(configRoot[t]) ~= "table" then configRoot[t] = {}; end
 	end
 	
-	local gameVersion = ("%s.%s"):format(GetBuildInfo())
+	local gameVersion = GetBuildInfo()
 	if configRoot._GameVersion ~= gameVersion then
 		for k,v in pairs(configRoot.ProfileStorage) do
 			if type(v) == "table" then

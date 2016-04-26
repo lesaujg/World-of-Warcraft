@@ -58,7 +58,7 @@ local cap = CreateFrame("Frame", nil, frame)
 		if b:IsEnabled() and not btnUnbind:IsEnabled() then b:Click() end
 	end)
 
-local ringBindings = {map={}, name="Ring Bindings", caption="Ring"}
+local ringBindings = {map={}, name=L"Ring Bindings", caption=L"Ring"}
 function ringBindings:refresh()
 	local pos, map = 1, self.map
 	for i=1,OneRingLib:GetNumRings() do
@@ -120,9 +120,9 @@ function ringBindings:altClick() -- self is the binding button
 	self:ToggleAlternateEditor(OneRingLib:GetRingBinding(ringBindings.map[self:GetID()]))
 end
 
-local sysBindings = {count=5, name="Other Bindings", caption="Action",
+local sysBindings = {count=5, name=L"Other Bindings", caption=L"Action",
 	options={"PrimaryButton", "SecondaryButton", "OpenNestedRingButton", "ScrollNestedRingUpButton", "ScrollNestedRingDownButton"},
-	optionNames={"Primary default binding button", "Secondary default binding button", "Open nested ring", "Scroll nested ring (up)", "Scroll nested ring (down)"}}
+	optionNames={L"Primary default binding button", L"Secondary default binding button", L"Open nested ring", L"Scroll nested ring (up)", L"Scroll nested ring (down)"}}
 function sysBindings:get(id)
 	local value, setting = OneRingLib:GetOption(self.options[id])
 	return value, self.optionNames[id], setting and "|cffffffff" or nil
@@ -137,7 +137,7 @@ function sysBindings:default()
 	end
 end
 
-local subBindings = {count=0, name="Slice Bindings", caption="Slice", t={}}
+local subBindings = {count=0, name=L"Slice Bindings", caption=L"Slice", t={}}
 function subBindings:refresh(scope)
 	self.scope, self.nameSuffix = scope, scope and (" (|cffaaffff" ..  (OneRingLib:GetRingInfo(scope or 1) or "") .. "|r)") or (" (" .. L"Defaults" .. ")")
 	local t, ni = self.t, 1
@@ -195,7 +195,7 @@ function subBindings:scopes(info, level, checked)
 	for i=1,OneRingLib:GetNumRings() do
 		local name, key, _, internal = OneRingLib:GetRingInfo(i)
 		if internal < 2 then
-			info.text, info.arg2, info.checked = L("Ring: %s"):format("|cffaaffff" .. (name or key) .. "|r"), key, checked and key == self.scope
+			info.text, info.arg2, info.checked = (L"Ring: %s"):format("|cffaaffff" .. (name or key) .. "|r"), key, checked and key == self.scope
 			UIDropDownMenu_AddButton(info, level)
 		end
 	end
@@ -228,9 +228,9 @@ local function updatePanelContent()
 	end
 	btnDown:SetEnabled(#bindLines + currentBase < m)
 	btnUp:SetEnabled(currentBase > 0)
-	lRing:SetText(L(currentOwner.caption or "Action"))
+	lRing:SetText(currentOwner.caption)
 	frame.OnBindingAltClick = currentOwner.altClick
-	UIDropDownMenu_SetText(bindSet, L(currentOwner.name) .. (currentOwner.nameSuffix or ""))
+	UIDropDownMenu_SetText(bindSet, currentOwner.name .. (currentOwner.nameSuffix or ""))
 end
 function frame.SetBinding(buttonOrId, binding)
 	local id = type(buttonOrId) == "number" and buttonOrId or buttonOrId:GetID()
@@ -253,7 +253,7 @@ function bindSet:initialize(level, menuList)
 		return menuList:scopes(info, level, menuList == currentOwner)
 	end
 	for _, v in ipairs(bindingTypes) do
-		info.text, info.arg1, info.checked, info.hasArrow, info.menuList = L(v.name), v, v == currentOwner, v.scopes, v.scopes and v
+		info.text, info.arg1, info.checked, info.hasArrow, info.menuList = v.name, v, v == currentOwner, v.scopes, v.scopes and v
 		UIDropDownMenu_AddButton(info, level)
 	end
 end

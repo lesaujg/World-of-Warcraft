@@ -1,7 +1,7 @@
 local _, T = ...
 if T.SkipLocalActionBook then return end
 local KR, EV = assert(T.ActionBook:compatible("Kindred", 1,7), "A compatible version of Kindred is required"), T.Evie
-local _, playerClassLocal, playerClass = T.Toboe and T.Toboe(), UnitClass("player")
+local playerClassLocal, playerClass = UnitClass("player")
 
 local safequote do
 	local r = {u="\\117", ["{"]="\\123", ["}"]="\\125"}
@@ -374,11 +374,14 @@ end
 do -- combo:count
 	local power, powerMap = 4, {[265]=7, [267]=14, [258]=13, PALADIN=9, MONK=12}
 	local defaultPower = powerMap[playerClass] or 4
-	KR:SetNonSecureConditional("combo", function(_name, args, target)
+	KR:SetNonSecureConditional("combo", function(_name, args)
 		return UnitPower("player", power) >= (tonumber(args) or 1)
 	end)
 	local function sync()
 		power = powerMap[GetSpecializationInfo(GetSpecialization() or 0)] or defaultPower
 	end
 	EV.PLAYER_SPECIALIZATION_CHANGED, EV.PLAYER_LOGIN = sync, sync
+end
+do -- race:token
+	KR:SetStateConditionalValue("race", (select(2,UnitRace("player"))))
 end

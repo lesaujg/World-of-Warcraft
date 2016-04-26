@@ -6,3 +6,10 @@ X: -196
 Y: -105
 W: 250
 H: 487
+Frame: TSMMainFrame1
+FrameLevel: 29
+Anchor: LEFT
+X: 49
+Y: -70
+W: 968
+H: 621

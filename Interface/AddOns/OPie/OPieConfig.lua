@@ -374,32 +374,32 @@ function config.checkSVState(frame)
 end
 
 local OPC_OptionSets = {
-	{ "Behavior",
-		{"bool", "RingAtMouse", caption="Center rings at mouse"},
-		{"bool", "CenterAction", caption="Quick action at ring center"},
-		{"bool", "ClickPriority", caption="Make rings top-most"},
-		{"bool", "SliceBinding", caption="Per-slice bindings"},
-		{"bool", "ClickActivation", caption="Activate on left click"},
-		{"bool", "NoClose", caption="Leave open after use", depOn="ClickActivation", depValue=true, otherwise=false},
-		{"bool", "UseDefaultBindings", caption="Use default ring bindings"},
-		{"range", "IndicationOffsetX", -500, 500, 50, caption="Move rings right", suffix="(%d)"},
-		{"range", "IndicationOffsetY", -300, 300, 50, caption="Move rings down", suffix="(%d)"},
-		{"range", "MouseBucket", 5, 1, 1, caption="Scroll wheel sensitivity", stdLabels=true},
-		{"range", "RingScale", 0.1, 2, caption="Ring scale", suffix="(%0.1f)"},
-	}, { "Appearance",
-		{"bool", "GhostMIRings", caption="Nested rings"},
-		{"bool", "ShowKeys", caption="Per-slice bindings", depOn="SliceBinding", depValue=true, otherwise=false},
-		{"bool", "ShowCooldowns", caption="Show cooldown numbers"},
-		{"bool", "ShowRecharge", caption="Show recharge numbers"},
-		{"bool", "UseGameTooltip", caption="Show tooltips"},
-		{"bool", "HideStanceBar", caption="Hide stance bar", global=true},
-	}, { "Animation",
-		{"bool", "MIScale", caption="Enlarge selected slice"},
-		{"bool", "MISpinOnHide", caption="Outward spiral on hide"},
-		{"range", "XTScaleSpeed", -4, 4, 0.2, caption="Scale animation speed"},
-		{"range", "XTPointerSpeed", -4, 4, 0.2, caption="Pointer rotation speed"},
-		{"range", "XTZoomTime", 0, 1, 0.1, caption="Zoom-in/out time", suffix="(%.1f sec)"},
-		{"range", "XTRotationPeriod", 1, 10, 0.2, caption="Rotation period", suffix="(%.1f sec)"}
+	{ L"Behavior",
+		{"bool", "RingAtMouse", caption=L"Center rings at mouse"},
+		{"bool", "CenterAction", caption=L"Quick action at ring center"},
+		{"bool", "ClickPriority", caption=L"Make rings top-most"},
+		{"bool", "SliceBinding", caption=L"Per-slice bindings"},
+		{"bool", "ClickActivation", caption=L"Activate on left click"},
+		{"bool", "NoClose", caption=L"Leave open after use", depOn="ClickActivation", depValue=true, otherwise=false},
+		{"bool", "UseDefaultBindings", caption=L"Use default ring bindings"},
+		{"range", "IndicationOffsetX", -500, 500, 50, caption=L"Move rings right", suffix="(%d)"},
+		{"range", "IndicationOffsetY", -300, 300, 50, caption=L"Move rings down", suffix="(%d)"},
+		{"range", "MouseBucket", 5, 1, 1, caption=L"Scroll wheel sensitivity", stdLabels=true},
+		{"range", "RingScale", 0.1, 2, caption=L"Ring scale", suffix="(%0.1f)"},
+	}, { L"Appearance",
+		{"bool", "GhostMIRings", caption=L"Nested rings"},
+		{"bool", "ShowKeys", caption=L"Per-slice bindings", depOn="SliceBinding", depValue=true, otherwise=false},
+		{"bool", "ShowCooldowns", caption=L"Show cooldown numbers"},
+		{"bool", "ShowRecharge", caption=L"Show recharge numbers"},
+		{"bool", "UseGameTooltip", caption=L"Show tooltips"},
+		{"bool", "HideStanceBar", caption=L"Hide stance bar", global=true},
+	}, { L"Animation",
+		{"bool", "MIScale", caption=L"Enlarge selected slice"},
+		{"bool", "MISpinOnHide", caption=L"Outward spiral on hide"},
+		{"range", "XTScaleSpeed", -4, 4, 0.2, caption=L"Scale animation speed"},
+		{"range", "XTPointerSpeed", -4, 4, 0.2, caption=L"Pointer rotation speed"},
+		{"range", "XTZoomTime", 0, 1, 0.1, caption=L"Zoom-in/out time", suffix=L"(%.1f sec)"},
+		{"range", "XTRotationPeriod", 1, 10, 0.2, caption=L"Rotation period", suffix=L"(%.1f sec)"}
 	}
 };
 
@@ -470,9 +470,9 @@ function OPC_AlterOption(widget, option, newval, ...)
 	OneRingLib:SetOption(option, newval, OR_CurrentOptionsDomain);
 	local setval = OneRingLib:GetOption(option, OR_CurrentOptionsDomain);
 	if widget:IsObjectType("Slider") then
-		local text = L(widget.desc.caption)
+		local text = widget.desc.caption
 		if widget.desc.suffix then
-			text = text .. " |cffffd500" .. L(widget.desc.suffix):format(setval) .. "|r"
+			text = text .. " |cffffd500" .. widget.desc.suffix:format(setval) .. "|r"
 		end
 		widget.text:SetText(text);
 		OPC_BlockInput = true; widget:SetValue(setval * (widget.control[3] > widget.control[4] and -1 or 1)); OPC_BlockInput = false;
@@ -550,9 +550,9 @@ function frame.refresh()
 	OPC_BlockInput = true;
 	frame.desc:SetText(L"Customize OPie's appearance and behavior. Right clicking a checkbox restores it to its default state." .. "\n" .. L"Profiles activate automatically when you switch between your primary and secondary specializations.");
 	for i, v in pairs(OPC_OptionSets) do
-		v.label:SetText(L(v[1]));
+		v.label:SetText(v[1])
 		for j=2,#v do
-			v[j].widget.text:SetText(L(v.caption));
+			v[j].widget.text:SetText(v.caption)
 		end
 	end
 	local label = L"Defaults for all rings";
@@ -566,14 +566,14 @@ function frame.refresh()
 		local v, opttype, option = set[j], set[j][1], set[j][2];
 		if opttype == "range" then
 			v.widget:SetValue(OneRingLib:GetOption(option) * (v[3] < v[4] and 1 or -1));
-			local text = L(v.caption)
+			local text = v.caption
 			if v.suffix then
-				text = text .. " |cffffd500" .. L(v.suffix):format(v.widget:GetValue()) .. "|r"
+				text = text .. " |cffffd500" .. v.suffix:format(v.widget:GetValue()) .. "|r"
 			end
 			v.widget.text:SetText(text);
 		elseif opttype == "bool" then
 			v.widget:SetChecked(OneRingLib:GetOption(option, OR_CurrentOptionsDomain) or nil);
-			v.widget.text:SetText(L(v.caption))
+			v.widget.text:SetText(v.caption)
 		end
 		if v.depOn then
 			local match = OneRingLib:GetOption(v.depOn, OR_CurrentOptionsDomain) == v.depValue;
