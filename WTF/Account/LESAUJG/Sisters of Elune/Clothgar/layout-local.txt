@@ -1,15 +1,8 @@
 Version: 1
 Frame: BaudManifestDisplay1
-FrameLevel: 25
+FrameLevel: 21
 Anchor: RIGHT
 X: -196
 Y: -105
 W: 250
 H: 487
-Frame: TSMMainFrame1
-FrameLevel: 29
-Anchor: LEFT
-X: 49
-Y: -70
-W: 968
-H: 621
