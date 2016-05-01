@@ -1264,7 +1264,7 @@ function Cooldowns.BuildOptions (frame)
 	advise_panel:SetBackdropBorderColor (0, 0, 0, 1)
 	local advise_panel_text = advise_panel:CreateFontString (nil, "overlay", "GameFontNormal")
 	advise_panel_text:SetPoint ("center", advise_panel, "center")
-	advise_panel_text:SetText ("You may create a new panel if you want\nto separate Raid Cooldowns and\nExternal Cooldowns in two panels.")
+	advise_panel_text:SetText ("You may create a new panel if you want\nseparate Raid Cooldowns and\nExternal Cooldowns in two panels.")
 	Cooldowns:SetFontSize (advise_panel_text, 11)
 	
 	--> options:

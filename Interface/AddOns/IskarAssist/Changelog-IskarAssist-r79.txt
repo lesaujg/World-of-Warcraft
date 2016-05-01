@@ -1,6 +1,14 @@
+2016-04-23  Tercio  <Tercio>
+
+[64ede574aff4] [tip]
+* API.lua, IskarAssist.lua, IskarAssist.toc, plugins/bislist.lua, plugins/cooldowns.lua, plugins/raidbislist.lua, plugins/raidgroups.lua, plugins/readycheck.lua:
+
+- fixes.
+
+
 2016-04-14  Tercio  <Tercio>
 
-[72c9b751ec4f] [tip]
+[72c9b751ec4f]
 * IskarAssist.lua, plugins/attendance.lua, plugins/playercheck.lua:
 
 - updates on the assist project.
@@ -209,13 +217,5 @@
 * Libs/DF/slider.lua, Libs/libs.xml:
 
 - fix a startup error.
-
-
-2016-02-12  Tercioo  <Tercioo>
-
-[2ff9867fa8c0]
-* RaidAssist.toc:
-
-- raidassist integration.
 
 

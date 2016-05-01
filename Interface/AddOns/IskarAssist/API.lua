@@ -654,7 +654,7 @@ local combat_log_ids = {
 	[1800] = 1447, --"Xhul'horac"
 	[1784] = 1394, --"Tyrant Velhari"
 	[1795] = 1395, --"Mannoroth"
-	[1799] = 1438, c
+	[1799] = 1438, --c
 }
 
 function RA:GetBossIds (bossid)

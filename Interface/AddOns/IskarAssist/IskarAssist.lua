@@ -34,7 +34,7 @@ local anzu_texture
 local player_class
 local block_backdrop_eye = {bgFile = [[Interface\RaidFrame\Raid-Bar-Hp-Fill]], tile = true, tileSize = 16, insets = {left = 0, right = 0, top = 0, bottom = 0},
 edgeFile = "Interface\\AddOns\\IskarAssist\\border_2", edgeSize = 20}
-local iskar_version = "v0.17e"
+local iskar_version = "v0.17f"
 
 local iskar_encounter_id = 1788 --iskar
 local iskar_npcid = 90316 --iskar
@@ -1131,7 +1131,9 @@ function IKA:CreateFrames (show_after_cretion)
 	anim1:SetOrder (1)
 	anim1:SetChange (1)
 	anim1:SetDuration (0.1)
-	
+	--SetToAlpha() and SetFromAlpha()
+	--SetFromAlpha() is where you start from.
+	--SetToAlpha() is where you end at.	
 	anim2:SetOrder (2)
 	anim2:SetChange (-1)
 	anim2:SetDuration (0.2)

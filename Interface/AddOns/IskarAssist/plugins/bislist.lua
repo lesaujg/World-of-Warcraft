@@ -18,8 +18,10 @@ local text_color_disabled = {r=0.5, g=0.5, b=0.5, a=1}
 
 local BisList = {version = "v0.1", pluginname = "BisList"}
 BisList.IsDisabled = true
+BisList.IsDisabled = false
 
 local can_install = false
+local can_install = true
 
 _G ["RaidAssistBisList"] = BisList
 
@@ -40,12 +42,6 @@ BisList.menu_popup_hide = function (plugin, ct_frame, param1, param2)
 end
 
 BisList.menu_on_click = function (plugin)
-	--if (not BisList.options_built) then
-	--	BisList.BuildOptions()
-	--	BisList.options_built = true
-	--end
-	--BisList.main_frame:Show()
-	
 	RA.OpenMainOptions (BisList)
 end
 
@@ -60,7 +56,6 @@ end
 
 BisList.OnDisable = function (plugin)
 	-- disabled from the options panel.
-
 end
 
 BisList.OnProfileChanged = function (plugin)
@@ -81,6 +76,7 @@ function BisList:GetCharacterItemList()
 	
 	if (not db) then
 		BisList.db.characters [guid] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+		db = BisList.db.characters [guid]
 	end
 	
 	return db
