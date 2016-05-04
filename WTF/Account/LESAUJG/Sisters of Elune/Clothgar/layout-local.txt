@@ -6,10 +6,10 @@ X: -196
 Y: -105
 W: 250
 H: 487
-Frame: AuctionFrame
+Frame: TSMMainFrame1
 FrameLevel: 24
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 832
-H: 447
+Anchor: LEFT
+X: 105
+Y: -65
+W: 968
+H: 621
