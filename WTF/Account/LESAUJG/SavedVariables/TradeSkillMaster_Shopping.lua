@@ -28,10 +28,10 @@ TradeSkillMaster_ShoppingDB = {
 		["auction"] = true,
 	},
 	["g@ @sniperVendorPrice"] = true,
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1462451918,
+			["lastSearch"] = 1462503932,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
@@ -143,7 +143,7 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "saberfish",
 		}, -- [18]
 	},
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @maxDeSearchLvl"] = 735,
 	["g@ @minDeSearchLvl"] = 1,
