@@ -151,7 +151,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 52615,
 			["Faction"] = "Alliance",
 			["ILe"] = 655,
-			["DailyResetTime"] = 1462615182,
+			["DailyResetTime"] = 1462787982,
 			["Quests"] = {
 			},
 			["Race"] = "Gnome",
@@ -297,7 +297,7 @@ SavedInstancesDB = {
 			["lastbossyelltime"] = 1450209780,
 			["Money"] = 82596623,
 			["Zone"] = "Lunarfall",
-			["DailyResetTime"] = 1462615146,
+			["DailyResetTime"] = 1462787946,
 			["Show"] = "saved",
 			["lastboss"] = "Conclave of Wind: 10 Player",
 			["WeeklyResetTime"] = 1462874346,
@@ -455,7 +455,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 103216,
 			["Faction"] = "Alliance",
 			["ILe"] = 0.200000002980232,
-			["DailyResetTime"] = 1462615182,
+			["DailyResetTime"] = 1462787982,
 			["Quests"] = {
 			},
 			["Zone"] = "Stormwind City",
@@ -463,153 +463,153 @@ SavedInstancesDB = {
 		["Bracnar - Sisters of Elune"] = {
 			["lastbossyell"] = "Enslaved Miner: Heroic",
 			["IL"] = 729.866638183594,
-			["LastSeen"] = 1462591347,
+			["LastSeen"] = 1462709010,
 			["Class"] = "HUNTER",
 			["currency"] = {
 				[402] = {
-					["weeklyMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 0,
 					["totalMax"] = 0,
 					["amount"] = 17,
 				},
 				[789] = {
-					["weeklyMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 0,
 					["totalMax"] = 0,
 					["amount"] = 0,
 				},
 				[697] = {
-					["weeklyMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 0,
 					["totalMax"] = 20,
 					["amount"] = 1,
 				},
 				[776] = {
-					["weeklyMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 0,
 					["totalMax"] = 20,
 					["amount"] = 4,
 				},
 				[823] = {
-					["weeklyMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 0,
 					["totalMax"] = 0,
 					["amount"] = 248199,
 				},
 				[241] = {
-					["weeklyMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 0,
 					["totalMax"] = 0,
 					["amount"] = 21,
 				},
 				[824] = {
-					["weeklyMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 0,
 					["totalMax"] = 10000,
-					["amount"] = 5331,
+					["amount"] = 5231,
 				},
 				[515] = {
-					["weeklyMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 0,
 					["totalMax"] = 0,
 					["amount"] = 116,
 				},
 				[390] = {
-					["weeklyMax"] = 37700,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 37700,
 					["totalMax"] = 0,
 					["amount"] = 0,
 				},
 				[1191] = {
-					["weeklyMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 0,
 					["totalMax"] = 5000,
 					["amount"] = 1700,
 				},
 				[391] = {
-					["weeklyMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 0,
 					["totalMax"] = 0,
 					["amount"] = 7,
 				},
 				[1129] = {
-					["weeklyMax"] = 3,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 3,
 					["totalMax"] = 10,
 					["amount"] = 8,
 				},
 				[994] = {
-					["weeklyMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 0,
 					["totalMax"] = 20,
 					["amount"] = 12,
 				},
 				[752] = {
-					["weeklyMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 0,
 					["totalMax"] = 0,
 					["amount"] = 0,
 				},
 				[392] = {
-					["weeklyMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 0,
 					["totalMax"] = 4000,
 					["amount"] = 0,
 				},
 				[1166] = {
-					["weeklyMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 0,
 					["totalMax"] = 0,
 					["amount"] = 3800,
 				},
 				[738] = {
-					["weeklyMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 0,
 					["totalMax"] = 0,
 					["amount"] = 1738,
 				},
 				[416] = {
-					["weeklyMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 0,
 					["totalMax"] = 0,
 					["amount"] = 12,
 				},
 				[1101] = {
-					["weeklyMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 0,
 					["totalMax"] = 100000,
-					["amount"] = 56575,
+					["amount"] = 56310,
 				},
 				[81] = {
-					["weeklyMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 0,
 					["totalMax"] = 0,
 					["amount"] = 215,
 				},
 				[777] = {
-					["weeklyMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["weeklyMax"] = 0,
 					["totalMax"] = 0,
 					["amount"] = 149388,
 				},
 			},
+			["lastboss"] = "The Crown Chemical Co.: Normal",
+			["PlayedTotal"] = 30155377,
 			["Level"] = 100,
 			["LClass"] = "Hunter",
 			["RBGrating"] = 0,
 			["Race"] = "Dwarf",
-			["PlayedTotal"] = 30154596,
-			["Zone"] = "Lunarfall",
+			["lastbosstime"] = 1456543941,
+			["WeeklyResetTime"] = 1462874406,
 			["lastbossyelltime"] = 1456707599,
-			["Money"] = 4318597979,
+			["Money"] = 4324446809,
 			["Skills"] = {
 				[169092] = {
-					["Expires"] = 1462615217,
+					["Expires"] = 1462788011,
 					["Title"] = "Enchanting: Temporal Crystal",
 					["Link"] = "|cffffd000|Henchant:169092|h[Enchanting: Temporal Crystal]|h|r",
 				},
 			},
-			["lastbosstime"] = 1456543941,
-			["lastboss"] = "The Crown Chemical Co.: Normal",
 			["Show"] = "saved",
 			["BonusRoll"] = {
 				{
@@ -667,15 +667,15 @@ SavedInstancesDB = {
 					["currencyID"] = 1129,
 				}, -- [9]
 				{
-					["name"] = "Gorefiend: Heroic",
 					["item"] = "|cffa335ee|Hitem:124290:0:0:0:0:0:0:0:100:254:4:5:1:566:529|h[Mitts of Eternal Famishment]|h|r",
 					["time"] = 1452048368,
+					["name"] = "Gorefiend: Heroic",
 					["currencyID"] = 1129,
 				}, -- [10]
 				{
-					["item"] = "|cffa335ee|Hitem:124210:0:0:0:0:0:0:0:100:254:4:5:3:561:41:566:529|h[Choker of the Great Betrayer]|h|r",
 					["time"] = 1451420719,
 					["name"] = "Archimonde: Heroic",
+					["item"] = "|cffa335ee|Hitem:124210:0:0:0:0:0:0:0:100:254:4:5:3:561:41:566:529|h[Choker of the Great Betrayer]|h|r",
 					["currencyID"] = 1129,
 				}, -- [11]
 				{
@@ -685,9 +685,9 @@ SavedInstancesDB = {
 					["currencyID"] = 1129,
 				}, -- [12]
 				{
-					["name"] = "Tyrant Velhari: Heroic",
 					["item"] = "|cffa335ee|Hitem:124287:0:0:0:0:0:0:0:100:254:4:5:2:561:566:529|h[Spiked Throatcrusher Boots]|h|r",
 					["time"] = 1451364790,
+					["name"] = "Tyrant Velhari: Heroic",
 					["currencyID"] = 1129,
 				}, -- [13]
 				{
@@ -733,9 +733,9 @@ SavedInstancesDB = {
 					["currencyID"] = 697,
 				}, -- [20]
 				{
-					["time"] = 1450709971,
 					["name"] = "Feng the Accursed: 10 Player",
 					["item"] = "|cffa335ee|Hitem:85980:0:0:0:0:0:0:0:100:253:4:0:0:445|h[Wildfire Worldwalkers]|h|r",
+					["time"] = 1450709971,
 					["currencyID"] = 697,
 				}, -- [21]
 				{
@@ -751,9 +751,9 @@ SavedInstancesDB = {
 					["currencyID"] = 697,
 				}, -- [23]
 				{
-					["time"] = 1450206844,
 					["name"] = "Tyrant Velhari: Heroic",
 					["item"] = "|cffa335ee|Hitem:124300:0:0:0:0:0:0:0:100:254:4:5:1:566:529|h[Haughty Chain Legguards]|h|r",
+					["time"] = 1450206844,
 					["currencyID"] = 1129,
 				}, -- [24]
 				{
@@ -763,13 +763,13 @@ SavedInstancesDB = {
 					["currencyID"] = 1129,
 				}, -- [25]
 			},
-			["PlayedLevel"] = 3387857,
+			["PlayedLevel"] = 3388638,
 			["Faction"] = "Alliance",
 			["ILe"] = 728.866638183594,
-			["DailyResetTime"] = 1462615212,
+			["DailyResetTime"] = 1462788006,
 			["Quests"] = {
 			},
-			["WeeklyResetTime"] = 1462874412,
+			["Zone"] = "Lunarfall",
 		},
 		["Clothgar - Sisters of Elune"] = {
 			["lastbossyell"] = "Baradin Guard",
@@ -913,7 +913,7 @@ SavedInstancesDB = {
 			["Show"] = "saved",
 			["IL"] = 4.93333339691162,
 			["PlayedLevel"] = 1568159,
-			["DailyResetTime"] = 1462615182,
+			["DailyResetTime"] = 1462787982,
 			["ILe"] = 3.59999990463257,
 			["Skills"] = {
 			},
@@ -1063,7 +1063,7 @@ SavedInstancesDB = {
 			["Zone"] = "Stormwind City",
 			["WeeklyResetTime"] = 1462874382,
 			["Show"] = "saved",
-			["DailyResetTime"] = 1462615182,
+			["DailyResetTime"] = 1462787982,
 			["PlayedLevel"] = 2875929,
 			["Faction"] = "Alliance",
 			["ILe"] = 45,
@@ -1076,147 +1076,147 @@ SavedInstancesDB = {
 		["Uldaris - Sisters of Elune"] = {
 			["lastbossyell"] = "Mannoroth: Looking For Raid",
 			["IL"] = 692.133361816406,
-			["LastSeen"] = 1462591640,
+			["LastSeen"] = 1462645846,
 			["Class"] = "DRUID",
 			["currency"] = {
 				[402] = {
-					["amount"] = 0,
 					["weeklyMax"] = 0,
-					["totalMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 0,
+					["amount"] = 0,
 				},
 				[789] = {
-					["amount"] = 0,
 					["weeklyMax"] = 0,
-					["totalMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 0,
+					["amount"] = 0,
 				},
 				[697] = {
-					["amount"] = 0,
 					["weeklyMax"] = 0,
-					["totalMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 0,
+					["amount"] = 0,
 				},
 				[776] = {
-					["amount"] = 0,
 					["weeklyMax"] = 0,
-					["totalMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 0,
+					["amount"] = 0,
 				},
 				[823] = {
-					["amount"] = 61056,
 					["weeklyMax"] = 0,
-					["totalMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 0,
+					["amount"] = 61056,
 				},
 				[241] = {
-					["amount"] = 0,
 					["weeklyMax"] = 0,
-					["totalMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 0,
+					["amount"] = 0,
 				},
 				[824] = {
-					["amount"] = 4893,
 					["weeklyMax"] = 0,
-					["totalMax"] = 10000,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 10000,
+					["amount"] = 4720,
 				},
 				[515] = {
-					["amount"] = 0,
 					["weeklyMax"] = 0,
-					["totalMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 0,
+					["amount"] = 0,
 				},
 				[390] = {
-					["amount"] = 0,
 					["weeklyMax"] = 37700,
-					["totalMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 0,
+					["amount"] = 0,
 				},
 				[777] = {
-					["amount"] = 2651,
 					["weeklyMax"] = 0,
-					["totalMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 0,
+					["amount"] = 2651,
 				},
 				[391] = {
-					["amount"] = 0,
 					["weeklyMax"] = 0,
-					["totalMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 0,
+					["amount"] = 0,
 				},
 				[1191] = {
-					["amount"] = 650,
 					["weeklyMax"] = 0,
-					["totalMax"] = 5000,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 5000,
+					["amount"] = 650,
 				},
 				[994] = {
-					["amount"] = 12,
 					["weeklyMax"] = 0,
-					["totalMax"] = 20,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 20,
+					["amount"] = 12,
 				},
 				[752] = {
-					["amount"] = 0,
 					["weeklyMax"] = 0,
-					["totalMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 0,
+					["amount"] = 0,
 				},
 				[392] = {
-					["amount"] = 775,
 					["weeklyMax"] = 0,
-					["totalMax"] = 4000,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 4000,
+					["amount"] = 775,
 				},
 				[1101] = {
-					["amount"] = 0,
 					["weeklyMax"] = 0,
-					["totalMax"] = 100000,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 100000,
+					["amount"] = 0,
 				},
 				[738] = {
-					["amount"] = 26,
 					["weeklyMax"] = 0,
-					["totalMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 0,
+					["amount"] = 26,
 				},
 				[1166] = {
-					["amount"] = 2895,
 					["weeklyMax"] = 0,
-					["totalMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 0,
+					["amount"] = 2895,
 				},
 				[416] = {
-					["amount"] = 0,
 					["weeklyMax"] = 0,
-					["totalMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 0,
+					["amount"] = 0,
 				},
 				[81] = {
-					["amount"] = 38,
 					["weeklyMax"] = 0,
-					["totalMax"] = 0,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 0,
+					["amount"] = 38,
 				},
 				[1129] = {
-					["amount"] = 7,
 					["weeklyMax"] = 3,
-					["totalMax"] = 10,
 					["earnedThisWeek"] = 0,
+					["totalMax"] = 10,
+					["amount"] = 7,
 				},
 			},
-			["Show"] = "saved",
-			["PlayedTotal"] = 2991127,
 			["Level"] = 100,
 			["LClass"] = "Druid",
 			["RBGrating"] = 0,
-			["WeeklyResetTime"] = 1462874417,
-			["lastbosstime"] = 1456708674,
-			["Zone"] = "Lunarfall",
+			["Zone"] = "Town Hall",
+			["PlayedTotal"] = 2991313,
+			["WeeklyResetTime"] = 1462874410,
 			["lastbossyelltime"] = 1454297373,
-			["Money"] = 925279067,
-			["DailyResetTime"] = 1462615217,
+			["Money"] = 935174044,
+			["DailyResetTime"] = 1462788010,
+			["lastbosstime"] = 1456708674,
+			["Show"] = "saved",
 			["lastboss"] = "The Crown Chemical Co.: Normal",
 			["BonusRoll"] = {
 				{
@@ -1244,23 +1244,12 @@ SavedInstancesDB = {
 					["currencyID"] = 1129,
 				}, -- [4]
 			},
-			["PlayedLevel"] = 378891,
+			["PlayedLevel"] = 379077,
 			["Faction"] = "Alliance",
 			["ILe"] = 689.799987792969,
 			["Skills"] = {
-				[170700] = {
-					["Expires"] = 1462615221,
-					["Title"] = "Jewelcrafting: Taladite Crystal",
-					["Link"] = "|cffffd000|Henchant:170700|h[Jewelcrafting: Taladite Crystal]|h|r",
-				},
 			},
 			["Quests"] = {
-				[37319] = {
-					["Title"] = "Jewelcrafting Special Order:  Wedding Bands",
-					["Link"] = "|cff40c040|Hquest:37319:90|h[Jewelcrafting Special Order:  Wedding Bands]|h|r",
-					["Zone"] = "Lunarfall",
-					["isDaily"] = true,
-				},
 			},
 			["Race"] = "Night Elf",
 		},
@@ -2698,8 +2687,8 @@ SavedInstancesDB = {
 			0, -- [2]
 			0, -- [3]
 		},
+		["R7Indicator"] = "BLANK",
 		["R2Text"] = "KILLED/TOTAL",
-		["R8Text"] = "KILLED/TOTALM",
 		["D3Color"] = {
 			1, -- [1]
 			0, -- [2]
@@ -2711,12 +2700,12 @@ SavedInstancesDB = {
 			0.6, -- [2]
 			0, -- [3]
 		},
+		["R1Indicator"] = "BLANK",
 		["R2Color"] = {
 			0.6, -- [1]
 			0, -- [2]
 			0, -- [3]
 		},
-		["R6Text"] = "KILLED/TOTAL",
 		["R3Indicator"] = "BLANK",
 		["R7ClassColor"] = true,
 		["R3Text"] = "KILLED/TOTALH",
@@ -2730,9 +2719,9 @@ SavedInstancesDB = {
 		["R3ClassColor"] = true,
 		["R5Indicator"] = "BLANK",
 		["R5ClassColor"] = true,
-		["R1Indicator"] = "BLANK",
+		["R6Text"] = "KILLED/TOTAL",
 		["R8Indicator"] = "BLANK",
-		["R7Indicator"] = "BLANK",
+		["R8Text"] = "KILLED/TOTALM",
 		["D1Color"] = {
 			0, -- [1]
 			0.6, -- [2]
@@ -2749,7 +2738,7 @@ SavedInstancesDB = {
 		["minimapPos"] = 1.33226395003267,
 		["hide"] = false,
 	},
-	["DailyResetTime"] = 1462615217,
+	["DailyResetTime"] = 1462788011,
 	["QuestDB"] = {
 		["Daily"] = {
 			[14102] = 492,
@@ -2789,7 +2778,7 @@ SavedInstancesDB = {
 			[39020] = 971,
 			[39021] = 971,
 			[32640] = -1,
-			["expires"] = 1462874421,
+			["expires"] = 1462874411,
 			[32641] = -1,
 			[36054] = 1009,
 			[36055] = 1009,
@@ -2810,7 +2799,7 @@ SavedInstancesDB = {
 			[36058] = -1,
 		},
 		["AccountWeekly"] = {
-			["expires"] = 1462874421,
+			["expires"] = 1462874411,
 		},
 	},
 	["histGeneration"] = 282,
