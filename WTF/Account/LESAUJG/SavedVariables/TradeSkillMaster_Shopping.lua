@@ -28,33 +28,33 @@ TradeSkillMaster_ShoppingDB = {
 		["auction"] = true,
 	},
 	["g@ @sniperVendorPrice"] = true,
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1462752647,
-			["name"] = "hexweave bag",
-			["filter"] = "hexweave bag",
+			["lastSearch"] = 1462840125,
+			["name"] = "universal",
+			["filter"] = "universal",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [1]
 		{
-			["lastSearch"] = 1462752626,
+			["lastSearch"] = 1462840113,
 			["name"] = "arcane c",
 			["filter"] = "arcane c",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [2]
 		{
-			["lastSearch"] = 1462751624,
+			["lastSearch"] = 1462840095,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [3]
 		{
-			["lastSearch"] = 1462667880,
-			["name"] = "universal",
-			["filter"] = "universal",
+			["lastSearch"] = 1462752647,
+			["name"] = "hexweave bag",
+			["filter"] = "hexweave bag",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [4]
@@ -143,7 +143,7 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "saberfish",
 		}, -- [18]
 	},
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @maxDeSearchLvl"] = 735,
 	["g@ @minDeSearchLvl"] = 1,
