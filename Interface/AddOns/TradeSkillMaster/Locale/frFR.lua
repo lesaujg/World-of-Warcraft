@@ -69,6 +69,7 @@ L["Cancelled - Bags and Bank / Guild Vault are full"] = "Annulé - Sacs et Banqu
 L["Cancelled - Bags are full"] = "Annulé - Les sacs sont pleins"
 L["Cancelled - Bank / Guild Vault is full"] = "Annulé - Banque / Banque de Guilde est plein." -- Needs review
 L["Cancelled - You must be at a bank or GuildVault"] = "Annulé - Vous devez être à la banque ou à la Banque de Guilde." -- Needs review
+-- L["Can't load TSM tooltip while in combat"] = ""
 L["Cash Register"] = "Caisse" -- Needs review
 L["Category Text 2 (Requires Reload)"] = "Texte de la Catégorie 2 (nécessite de recharger votre interface /reload)" -- Needs review
 L["Category Text (Requires Reload)"] = "Texte de la Catégorie (nécessite de recharger votre interface /reload)" -- Needs review

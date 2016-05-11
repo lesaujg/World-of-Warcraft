@@ -100,6 +100,7 @@ function private:SendOffMailThread(self, target, codPerItem)
 	-- send the mail and wait for it to be sent
 	SendMail(target, SendMailSubjectEditBox:GetText() or "TSM_Mailing", "")
 
+	local sendMsg = nil
 	if TSM.db.global.sendMessages then
 		local items = {}
 		for i = 1, attachments do
@@ -117,9 +118,9 @@ function private:SendOffMailThread(self, target, codPerItem)
 		end
 		local cod = GetSendMailCOD()
 		if cod and cod > 0 then
-			TSM:Printf(L["Sent %s to %s with a COD of %s."], table.concat(temp, ", "), target, TSMAPI:MoneyToString(cod))
+			sendMsg = format(L["Sent %s to %s with a COD of %s."], table.concat(temp, ", "), target, TSMAPI:MoneyToString(cod))
 		else
-			TSM:Printf(L["Sent %s to %s."], table.concat(temp, ", "), target)
+			sendMsg = format(L["Sent %s to %s."], table.concat(temp, ", "), target)
 		end
 	end
 
@@ -132,22 +133,22 @@ function private:SendOffMailThread(self, target, codPerItem)
 			inventoryQuantities[itemString] = max(TSMAPI.Inventory:GetBagQuantity(itemString) - count, 0)
 		end
 	end
-	local eventStatus = nil
+	local errorEvent = nil
 	self:RegisterEvent("UI_ERROR_MESSAGE", function(_, msg)
-		if msg == ERR_NOT_ENOUGH_MONEY then
+		if msg == ERR_NOT_ENOUGH_MONEY or msg == ERR_MAIL_TARGET_NOT_FOUND or msg == ERR_REALM_NOT_FOUND then
 			-- not enough money to send mail
-			eventStatus = true
+			errorEvent = msg
 		end
 	end)
 	while private:HasPendingAttachments() do
 		self:Yield(true)
-		if eventStatus then
-			-- return when player doesn't have enough funds to send a mail
+		if errorEvent then
+			-- bail when we can't send the mail
 			while private:HasPendingAttachments() do
 				ClearSendMail()
 				self:Yield(true)
 			end
-			TSM:Print(L["Could not send mail due to not having enough funds."])
+			TSM:Print(L["Failed to send mail:"].." "..errorEvent)
 			self:Exit(true)
 		end
 	end
@@ -163,6 +164,9 @@ function private:SendOffMailThread(self, target, codPerItem)
 		end
 		if isDone then break end
 		self:Yield(true)
+	end
+	if sendMsg then
+		TSM:Print(sendMsg)
 	end
 end
 
@@ -197,7 +201,7 @@ end
 function private.SendMailThread(self, args)
 	self:SetThreadName("MAILING_SEND_MAIL")
 	local numToSend, target, codPerItem, isDryRun = unpack(args)
-	
+
 	if isDryRun then
 		TSM:Printf(L["Mailing would send the following items to %s:"], target)
 		local numSent = {}

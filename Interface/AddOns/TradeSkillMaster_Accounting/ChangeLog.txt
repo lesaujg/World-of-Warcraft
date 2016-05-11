@@ -1,3 +1,7 @@
+v3.0.6
+*Fixed error seen in some situations after clearing old data.
+*Fixed error from gold tracking.
+
 v3.0.5
 *Fixed another issue with Accounting taking a long time to load.
 

@@ -40,7 +40,6 @@ L["Click this button to send excess gold to the specified character (Maximum of 
 L["COD Amount (per Item):"] = true
 L["COD: %s | %s | (%s) | %s | %s"] = true
 L["Could not loot item from mail because your bags are full."] = true
-L["Could not send mail due to not having enough funds."] = true
 L["Could not send mail due to not having free bag space available to split a stack of items."] = true
 L["Default Mailing Page"] = true
 L["Delete Empty NPC Mail"] = true
@@ -55,6 +54,7 @@ L["Enter the name of the player you want to send excess gold to."] = true
 L["Enter the name of the player you want to send this item to."] = true
 L["Expired: %s | %s"] = true
 L["Expires"] = true
+L["Failed to send mail:"] = true
 L["General"] = true
 L["General Settings"] = true
 L["Here you can select groups with TSM_Mailing operations to be automatically mailed to other characters."] = true

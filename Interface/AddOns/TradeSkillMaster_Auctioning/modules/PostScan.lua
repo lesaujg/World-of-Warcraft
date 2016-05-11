@@ -51,11 +51,11 @@ function Post:OnEnable()
 		tinsert(priceSources, "wowuctionmarket")
 		tinsert(priceSources, "wowuctionregionmarket")
 	end
-	
+
 	if #priceSources == 0 then
 		tinsert(priceSources, "vendorsell")
 	end
-	
+
 	QUICK_POST_OPERATION.minPrice = format("max(0.25*avg(%s), 1.5*vendorsell)", table.concat(priceSources, ","))
 	QUICK_POST_OPERATION.maxPrice = format("max(5*avg(%s), 30*vendorsell)", table.concat(priceSources, ","))
 	QUICK_POST_OPERATION.normalPrice = format("max(2*avg(%s), 12*vendorsell)", table.concat(priceSources, ","))
@@ -117,7 +117,7 @@ function Post:StartScan(isGroup, scanInfo)
 			end
 		end
 	end
-	
+
 	TSM.GUI:UpdateSTData()
 	if #scanList == 0 then return false end
 	private.threadId = TSMAPI.Threading:Start(private.PostScanThread, 0.7, TSM.Manage.StopScan, scanList)
@@ -173,7 +173,7 @@ function private:ValidateOperation(itemString, operation, silent)
 	elseif prices.maxPrice < prices.minPrice then
 		errMsg = format(L["Did not post %s because your maximum price (%s) is lower than your minimum price (%s). Check your settings."], TSMAPI.Item:ToItemLink(itemString), operation.maxPrice, operation.minPrice)
 	end
-	
+
 	if errMsg then
 		if not silent and not TSM.db.global.disableInvalidMsg then
 			TSM:Print(errMsg)
@@ -273,7 +273,7 @@ function private.PostScanThread(self, scanList)
 			if not noRetry then
 				tinsert(failedQueue, info)
 			end
-			TSM:LOG_INFO("Posting auction %d failed (itemString=%s, bid=%d, buyout=%d, stackSize=%d, numStacks=%d, postTime=%d)", numConfirmed, info.itemString, info.bid, info.buyout, info.stackSize, info.numStacks, info.postTime)
+			TSM:LOG_INFO("Posting auction %d failed (itemString=%s, bid=%s, buyout=%s, stackSize=%d, numStacks=%d, postTime=%d)", numConfirmed, info.itemString, info.bid, info.buyout, info.stackSize, info.numStacks, info.postTime)
 		elseif event == "SKIP_BUTTON" then
 			-- skip the current item
 			for i=#private.queue, 1, -1 do
@@ -296,7 +296,7 @@ function private.PostScanThread(self, scanList)
 		else
 			error("Unpexected message: "..tostring(event))
 		end
-		
+
 		if private.postInfo.doneScanning and numConfirmed == numToPost and #failedQueue > 0 then
 			TSM:Printf(L["Blizzard failed to properly post %d auction(s). They have been re-added to the post queue so you can try posting them again."], #failedQueue)
 			for i=1, #failedQueue do
@@ -307,7 +307,7 @@ function private.PostScanThread(self, scanList)
 			wipe(pendingBagChanges)
 			private:GetBagState(true)
 		end
-		
+
 		-- update the current item / button state
 		ClearCursor()
 		private.postInfo.currentItem = #private.queue > 0 and private.queue[1] or nil
@@ -317,7 +317,7 @@ function private.PostScanThread(self, scanList)
 			TSM.Manage:UpdateStatus("manage", numPosted, numToPost)
 			TSM.Manage:UpdateStatus("confirm", numConfirmed, numToPost)
 		end
-		
+
 		if private.postInfo.doneScanning and numConfirmed == numToPost then
 			-- we're done posting
 			TSMAPI:DoPlaySound(TSM.db.global.confirmCompleteSound)
@@ -366,7 +366,7 @@ function private:ProcessItem(itemString, queueIndex)
 		end
 	end
 	TSM.GUI:UpdateSTData()
-	
+
 	return numToPost
 end
 
@@ -377,7 +377,7 @@ function private:ShouldPost(itemString, operation, numInBags, pendingPosts)
 	end
 	local perAuction = min(operation.stackSize, maxStackSize)
 	local maxCanPost = min(floor(numInBags / perAuction), operation.postCap)
-	
+
 	if maxCanPost == 0 then
 		if operation.stackSizeIsCap then
 			perAuction = numInBags
@@ -390,7 +390,7 @@ function private:ShouldPost(itemString, operation, numInBags, pendingPosts)
 
 	local lowestAuction = TSM.Scan:GetLowestAuction(itemString, operation)
 	local prices = TSM.Util:GetItemPrices(operation, itemString, {minPrice=true, maxPrice=true, normalPrice=true, resetPrice=true, undercut=true, aboveMax=true})
-	
+
 	local reason, bid, buyout
 	local activeAuctions = 0
 	if not lowestAuction then
@@ -457,7 +457,7 @@ function private:ShouldPost(itemString, operation, numInBags, pendingPosts)
 		buyout = max(buyout, prices.minPrice)
 		bid = max(bid or buyout * operation.bidPercent, prices.minPrice)
 	end
-	
+
 	-- check if we can't post anymore
 	for _, info in ipairs(pendingPosts) do
 		if info.stackSize == perAuction and info.buyout/info.stackSize == buyout then
@@ -468,7 +468,7 @@ function private:ShouldPost(itemString, operation, numInBags, pendingPosts)
 	if maxCanPost <= 0 then
 		return "tooManyPosted"
 	end
-	
+
 	local extraStack = (maxCanPost < operation.postCap and operation.stackSizeIsCap and (numInBags % perAuction)) or 0
 	local posts = {}
 	tinsert(posts, {perAuction, maxCanPost, bid*perAuction, buyout*perAuction})

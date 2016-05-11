@@ -1,0 +1,62 @@
+------------------------------------------------------------------------
+r502 | oscarucb | 2016-05-10 21:59:09 +0000 (Tue, 10 May 2016) | 15 lines
+Changed paths:
+   A /tags/6.3.0 (from /trunk:501)
+
+Tagging as 6.3.0
+
+New in Addon version 6.3.0:
+New feature: Account summary tooltip (mouseover the addon name in the top-left)
+New feature: Currency summary tooltip (mouseover currency row header on left-hand side)
+New feature: Custom character sorting, via sort order field
+Connected realms are now grouped together in server sorting by default
+Re-format character config pane
+Add an button to delete a specific character (should only be used for deleted or renamed characters)
+Clean up miscellaneous tracking config pane
+Add a set all widget to instance config
+Add option to suppress /played
+Don't use checkmark for expired lockouts
+Don't show "never" instances with alt
+Add a localization warning for missing phrases
+------------------------------------------------------------------------
+r500 | oscarucb | 2016-04-26 13:33:59 +0000 (Tue, 26 Apr 2016) | 5 lines
+Changed paths:
+   M /trunk/SavedInstances.lua
+   M /trunk/config.lua
+
+Clean up miscellaneous tracking config pane, some updates to locale strings
+Add option to suppress /played
+Remove some dead code
+Remove many obsolete localization phrases
+
+------------------------------------------------------------------------
+r498 | oscarucb | 2016-04-19 23:44:50 +0000 (Tue, 19 Apr 2016) | 2 lines
+Changed paths:
+   M /trunk/locale.lua
+
+add a missing translation warning
+
+------------------------------------------------------------------------
+r496 | oscarucb | 2016-04-16 17:43:10 +0000 (Sat, 16 Apr 2016) | 2 lines
+Changed paths:
+   M /trunk/SavedInstances.lua
+
+don't show "never" instances with alt
+
+------------------------------------------------------------------------
+r495 | oscarucb | 2016-04-13 08:29:30 +0000 (Wed, 13 Apr 2016) | 2 lines
+Changed paths:
+   M /trunk/SavedInstances.lua
+
+ticket 213: don't use checkmark for expired lockouts
+
+------------------------------------------------------------------------
+r493 | oscarucb | 2016-04-04 19:59:25 +0000 (Mon, 04 Apr 2016) | 3 lines
+Changed paths:
+   M /trunk/SavedInstances.lua
+   M /trunk/config.lua
+
+New feature: Custom character sorting, via sort order field
+Connected realms are now grouped together in server sorting by default
+
+------------------------------------------------------------------------

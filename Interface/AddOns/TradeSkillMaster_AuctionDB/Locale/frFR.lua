@@ -110,4 +110,5 @@ L["Scanning the auction house in game is no longer necessary!"] = "Scanner l'hô
 -- L["Show AuctionDB AH Tab (Requires Reload)"] = ""
 -- L["This button will scan just the items in the groups you have selected."] = ""
 -- L["This will do a slow auction house scan of every item in the selected groups and update their AuctionDB prices. This may take several minutes."] = ""
+-- L["You must select at least one group before starting the group scan."] = ""
  

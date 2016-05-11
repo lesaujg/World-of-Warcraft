@@ -110,4 +110,5 @@ L["Scan Selected Groups"] = "Сканировать группы"
 L["Show AuctionDB AH Tab (Requires Reload)"] = "Отобразить вкладку AuctionDB (требуется перезагрузка)"
 L["This button will scan just the items in the groups you have selected."] = "Нажатие данной кнопки просканирует только те группы предметов, которые вы выбрали."
 L["This will do a slow auction house scan of every item in the selected groups and update their AuctionDB prices. This may take several minutes."] = "Медленное сканирование и обновление AuctionDB цен предметов содержащихся в группах выбранных слева. Это может занять несколько минут или более."
+-- L["You must select at least one group before starting the group scan."] = ""
  

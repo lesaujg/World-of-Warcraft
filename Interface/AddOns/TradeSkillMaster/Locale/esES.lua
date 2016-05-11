@@ -69,6 +69,7 @@ L["Buy from Vendor"] = "Comprar al Vendedor"
 L["Cancelled - Bags are full"] = "Cancelado - Bolsas están llenas"
 -- L["Cancelled - Bank / Guild Vault is full"] = ""
 -- L["Cancelled - You must be at a bank or GuildVault"] = ""
+-- L["Can't load TSM tooltip while in combat"] = ""
 L["Cash Register"] = "Transacción registrada." -- Needs review
 L["Category Text 2 (Requires Reload)"] = "Categoria de Texto 2 (Requiere Reload)"
 L["Category Text (Requires Reload)"] = "Categoria de Texto (Requiere Reload)"

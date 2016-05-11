@@ -69,6 +69,7 @@ if not L then return end
 -- L["Cancelled - Bags are full"] = ""
 -- L["Cancelled - Bank / Guild Vault is full"] = ""
 -- L["Cancelled - You must be at a bank or GuildVault"] = ""
+-- L["Can't load TSM tooltip while in combat"] = ""
 -- L["Cash Register"] = ""
 -- L["Category Text 2 (Requires Reload)"] = ""
 -- L["Category Text (Requires Reload)"] = ""

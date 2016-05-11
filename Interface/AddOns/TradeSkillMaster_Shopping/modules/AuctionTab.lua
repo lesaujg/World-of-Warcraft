@@ -992,7 +992,11 @@ function private.AuctionTabThread(self)
 				private.frame.UpdateSearchInProgress(true, true)
 				if private.extraInfo.searchType == "item" or private.extraInfo.searchType == "filter" then
 					if searchInfo.searchMode == "crafting" then
-						TSM.AuctionTabSaved:AddRecentSearch(TSMAPI.Item:GetInfo(private.targetItem), searchInfo.searchMode)
+						if searchInfo.filter then
+							TSM.AuctionTabSaved:AddRecentSearch(searchInfo.filter, searchInfo.searchMode)
+						else
+							TSM.AuctionTabSaved:AddRecentSearch(TSMAPI.Item:GetInfo(private.targetItem), searchInfo.searchMode)
+						end
 					else
 						TSM.AuctionTabSaved:AddRecentSearch(searchFilter, searchInfo.searchMode)
 					end

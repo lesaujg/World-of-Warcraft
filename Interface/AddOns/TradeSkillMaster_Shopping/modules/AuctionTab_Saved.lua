@@ -114,7 +114,7 @@ function private.UpdateSTData()
 		end
 		tinsert(recentRows, row)
 	end
-	
+
 	sort(favoriteRows, function(a, b) return strlower(a.name) < strlower(b.name) end)
 	private.frame.saved.recentST:SetData(recentRows)
 	private.frame.saved.favoriteST:SetData(favoriteRows)
@@ -164,12 +164,12 @@ function private:StartGroupScan(groupTree)
 			end
 		end
 	end
-	
+
 	local itemList = {}
 	for itemString in pairs(itemOperations) do
 		tinsert(itemList, itemString)
 	end
-	
+
 	if #itemList == 0 then
 		TSM:Print(L["Nothing to search for!"])
 		return
@@ -183,7 +183,7 @@ end
 
 function AuctionTabSaved:AddRecentSearch(filter, searchMode)
 	local name = (#filter > 53) and (strsub(filter, 1, 50).."...") or filter
-	
+
 	-- check if this recent search already exists
 	for i, data in ipairs(TSM.db.global.savedSearches) do
 		if data.searchMode == searchMode and strlower(data.filter) == strlower(filter) then
@@ -193,10 +193,10 @@ function AuctionTabSaved:AddRecentSearch(filter, searchMode)
 			return
 		end
 	end
-	
+
 	tinsert(TSM.db.global.savedSearches, {searchMode=searchMode, filter=filter, name=name, lastSearch=time()})
 	sort(TSM.db.global.savedSearches, private.SavedSearchSort)
-	
+
 	-- only keep 100 recent searches
 	local numRecent = 0
 	local toRemove = {}
@@ -295,7 +295,7 @@ function AuctionTabSaved:GetFrameInfo()
 			GameTooltip:Hide()
 		end
 	}
-	
+
 	local BFC = TSMAPI.GUI:GetBuildFrameConstants()
 	local frameInfo = {
 		type = "Frame",

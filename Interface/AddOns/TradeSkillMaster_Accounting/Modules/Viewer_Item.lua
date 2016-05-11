@@ -76,7 +76,7 @@ function Item:DrawLookup(container, itemString, returnTab, returnSubTab)
 	for i = 1, min(#sellers, 5) do
 		sellersText = sellersText .. "|cffffffff" .. sellers[i].name .. "|r" .. color .. "(" .. sellers[i].quantity .. ")|r, "
 	end
-	
+
 	local stCols = {
 		{
 			name = L["Activity Type"],
@@ -333,7 +333,7 @@ end
 
 function private.GetItemSummarySTData(filters)
 	local stData = {}
-	
+
 	for itemString, data in pairs(TSM.items) do
 		if not TSM.ViewerUtil:IsItemFiltered(itemString, filters) then
 			local sellTotal, sellNum = 0, 0
@@ -357,7 +357,7 @@ function private.GetItemSummarySTData(filters)
 				end
 			end
 			local avgBuy = TSMAPI.Util:Round(buyTotal / buyNum) or 0
-			
+
 			local failedSinceLastSold = 0
 			for _, record in ipairs(data.auctions) do
 				if record.key == "Cancel" and record.time > lastSold then

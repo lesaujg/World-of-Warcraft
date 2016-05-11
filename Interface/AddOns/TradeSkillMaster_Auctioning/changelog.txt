@@ -1,3 +1,6 @@
+v3.0.7
+*Fixed bug with internal logging message.
+
 v3.0.6
 *Added two new module APIs for third-party addons to use.
 

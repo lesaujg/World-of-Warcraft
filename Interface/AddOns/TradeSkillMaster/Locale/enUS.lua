@@ -73,6 +73,7 @@ L["Cancelled - Bags and Bank / Guild Vault are full"] = true
 L["Cancelled - Bags are full"] = true
 L["Cancelled - Bank / Guild Vault is full"] = true
 L["Cancelled - You must be at a bank or GuildVault"] = true
+L["Can't load TSM tooltip while in combat"] = true
 L["Cash Register"] = true
 L["Category Text 2 (Requires Reload)"] = true
 L["Category Text (Requires Reload)"] = true

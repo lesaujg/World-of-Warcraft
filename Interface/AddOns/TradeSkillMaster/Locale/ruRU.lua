@@ -69,6 +69,7 @@ L["Cancelled - Bags and Bank / Guild Vault are full"] = "Отменено - су
 L["Cancelled - Bags are full"] = "Отмена - Сумки заполнены"
 L["Cancelled - Bank / Guild Vault is full"] = "Отменено - банк / гильдейский банк полны"
 L["Cancelled - You must be at a bank or GuildVault"] = "Отменено - Вы должны быть в банке или гильдейском банке"
+-- L["Can't load TSM tooltip while in combat"] = ""
 L["Cash Register"] = "Сумма зарегистрированна"
 L["Category Text 2 (Requires Reload)"] = "Текст категории 2 (требуется перезагрузка)"
 L["Category Text (Requires Reload)"] = "Текст Категории (требуется перезагрузка)"

@@ -115,6 +115,7 @@ function ViewerUtil:RemoveOldData(daysOld)
 		end
 	end
 
+	TSM:UpdateBaseItemLookup(true)
 	TSM:Printf(L["Removed a total of %s old records and %s items with no remaining records."], numRecords, numItems)
 end
 

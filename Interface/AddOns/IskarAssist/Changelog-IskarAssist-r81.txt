@@ -1,6 +1,22 @@
+2016-05-09  Tercio  <Tercio>
+
+[0eb6c456a8c4] [tip]
+* IskarAssist.lua, IskarAssist.toc, plugins/addonscheck.lua:
+
+- Updates for the Legion assist project.
+
+
+2016-05-06  Tercio  <Tercio>
+
+[2d06a7ccac59]
+* IskarAssist.lua, IskarAssist.toc, media/world_markers_icons.tga, plugins/toolbar.lua:
+
+- uploading new pluing to test purposes.
+
+
 2016-04-23  Tercio  <Tercio>
 
-[64ede574aff4] [tip]
+[64ede574aff4]
 * API.lua, IskarAssist.lua, IskarAssist.toc, plugins/bislist.lua, plugins/cooldowns.lua, plugins/raidbislist.lua, plugins/raidgroups.lua, plugins/readycheck.lua:
 
 - fixes.
@@ -201,21 +217,5 @@
 * IskarAssist.lua, IskarAssist.toc:
 
 - tagging as relelase v0.16.4n.
-
-
-2016-02-20  Tercioo  <Tercioo>
-
-[b854c37170a8]
-* IskarAssist.lua:
-
-- added command /iskar maxgroups X
-
-
-2016-02-19  Tercioo  <Tercioo>
-
-[d5c407017399]
-* Libs/DF/slider.lua, Libs/libs.xml:
-
-- fix a startup error.
 
 

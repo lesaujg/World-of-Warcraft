@@ -41,7 +41,7 @@ function private.TrackerThread(self)
 	if not TSM.goldLog[private.playerName] then
 		TSM.goldLog[private.playerName] = {}
 	end
-	
+
 	while true do
 		private.guildName = GetGuildInfo("player")
 		if private.guildName and not TSM.goldLog[private.guildName] then
@@ -70,8 +70,12 @@ function private:LogGold(goldLog, copper, minute)
 		prevRecord.copper = copper
 	else
 		-- amount of gold changed and we're in a new minute, so insert a new record
+		while prevRecord and prevRecord.startMinute > minute - 1 do
+			-- their clock may have changed - just delete everything that's too recent
+			tremove(goldLog)
+			prevRecord = #goldLog > 0 and goldLog[#goldLog]
+		end
 		if prevRecord then
-			TSMAPI:Assert(prevRecord.startMinute <= minute - 1)
 			prevRecord.endMinute = minute - 1
 		end
 		tinsert(goldLog, {startMinute=minute, endMinute=minute, copper=copper})

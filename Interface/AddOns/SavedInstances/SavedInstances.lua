@@ -14,7 +14,7 @@ local maxdiff = 23 -- max number of instance difficulties
 local maxcol = 4 -- max columns per player+instance
 
 addon.svnrev = {}
-addon.svnrev["SavedInstances.lua"] = tonumber(("$Revision: 483 $"):match("%d+"))
+addon.svnrev["SavedInstances.lua"] = tonumber(("$Revision: 500 $"):match("%d+"))
 
 -- local (optimal) references to provided functions
 local table, math, bit, string, pairs, ipairs, unpack, strsplit, time, type, wipe, tonumber, select, strsub = 
@@ -286,6 +286,7 @@ end
 local function chatMsg(...)
      DEFAULT_CHAT_FRAME:AddMessage("\124cFFFF0000"..addonName.."\124r: "..string.format(...))
 end
+addon.chatMsg = chatMsg
 local function debug(...)
   --addon.db.dbg = true
   if addon.db.dbg then
@@ -341,9 +342,17 @@ local function abbreviate(iname)
   return iname
 end
 
-function addon:formatNumber(num)
+function addon:formatNumber(num,ismoney)
   num = tonumber(num)
   if not num then return "" end
+  local post = ""
+  if ismoney then
+    if num < 1000*10000 then -- less than 1k, show it all
+      return GetMoneyString(num)
+    end
+    num = math.floor(num / 10000)
+    post = " \124TInterface\\MoneyFrame\\UI-GoldIcon:0:0:2:0\124t"
+  end
   if vars.db.Tooltip.NumberFormat then
     local str = ""
     local neg = num < 0
@@ -364,9 +373,9 @@ function addon:formatNumber(num)
     if neg then
       str = "-"..str
     end
-    return str
+    return str..post
   else
-    return num
+    return num..post
   end
 end
 
@@ -499,6 +508,7 @@ vars.defaultDB = {
 		ShowServer = false,
 		ServerSort = true,
 		ServerOnly = false,
+		ConnectedRealms = "group",
 		SelfFirst = true,
 		SelfAlways = false,
 		TrackLFG = true,
@@ -506,6 +516,7 @@ vars.defaultDB = {
 		TrackSkills = true,
 		TrackFarm = true,
 		TrackBonus = false,
+		TrackPlayed = true,
 		AugmentBonus = true,
 		CurrencyValueColor = true,
 		Currency776 = false, -- Warforged Seals
@@ -548,14 +559,7 @@ vars.defaultDB = {
 		AccountDaily = {},
 		AccountWeekly = {},
 	},
-	--[[ REMOVED
-	Lockouts = {	-- table key: lockout ID; value:
-						-- Name: string
-						-- Members: table "Toon name" = "Class"
-						-- REMOVED Encounters[GUID : integer] = boolean
-						-- Note: string
-	},
-	--]]
+	RealmMap = {},
 }
 
 -- skinning support
@@ -604,6 +608,17 @@ local function ClassColorise(class, targetstring)
 	  c = ColorCodeOpen( c )
 	end
 	return c .. targetstring .. FONTEND
+end
+
+function addon.ColoredToon(toon, fullname)
+  local str = (fullname and toon) or strsplit(' ',toon)
+  local t = vars.db.Toons[toon]
+  local class = t and t.Class
+  if class then
+    return ClassColorise(class, str)
+  else
+    return str
+  end
 end
 
 local function CurrencyColor(amt, max)
@@ -658,6 +673,10 @@ function addon:GetRegion()
     reg = GetCVar("portal")
     if reg == "public-test" then -- PTR uses US region resets, despite the misleading realm name suffix
       reg = "US"
+    end
+    if not reg or #reg ~= 2 then
+      local gcr = GetCurrentRegion()
+      reg = gcr and ({ "US", "KR", "EU", "TW", "CN" })[gcr]
     end
     if not reg or #reg ~= 2 then
       reg = (GetCVar("realmList") or ""):match("^(%a+)%.")
@@ -1199,7 +1218,7 @@ local function DifficultyString(instance, diff, toon, expired, killoverride, tot
 	  if killed == 0 and total == 0 then -- boss kill info missing
 	    killed = "*"
 	    total = "*"
-	  elseif killed == 1 and total == 1 then
+	  elseif killed == 1 and total == 1 and not expired then
 	    text = "\124T"..READY_CHECK_READY_TEXTURE..":0|t" -- checkmark
 	  end
 	  text = text:gsub("KILLED",killed)
@@ -1556,8 +1575,10 @@ function addon:UpdateToonData()
 	  if not ti.WeeklyResetTime or (ti.WeeklyResetTime < time()) then 
 	    ti.currency = ti.currency or {}
 	    for _,idx in ipairs(currency) do
-	      ti.currency[idx] = ti.currency[idx] or {}
-	      ti.currency[idx].earnedThisWeek = 0
+	      local ci = ti.currency[idx]
+	      if ci and ci.earnedThisWeek then
+	        ci.earnedThisWeek = 0
+	      end
 	    end
 	    ti.WeeklyResetTime = (ti.WeeklyResetTime and ti.WeeklyResetTime + 7*24*3600) or nextreset
           end 
@@ -1599,10 +1620,17 @@ function addon:UpdateCurrency()
 	if addon.logout then return end -- currency is unreliable during logout
 	local t = vars.db.Toons[thisToon]
 	t.Money = GetMoney()
-	t.currency = t.currency or {}
-	for _,idx in pairs(currency) do
+	t.currency = wipe(t.currency or {})
+	for _,idx in ipairs(currency) do
+	 local _, amount, _, earnedThisWeek, weeklyMax, totalMax, discovered = GetCurrencyInfo(idx)
+         if idx == 390 and amount == 0 then
+          discovered = false -- discovery flag broken for conquest points
+         end
+	 if not discovered then
+	  t.currency[idx] = nil
+	 else
 	  local ci = t.currency[idx] or {}
-	  _, ci.amount, _, ci.earnedThisWeek, ci.weeklyMax, ci.totalMax = GetCurrencyInfo(idx)
+	  ci.amount, ci.earnedThisWeek, ci.weeklyMax, ci.totalMax = amount, earnedThisWeek, weeklyMax, totalMax
           if idx == 396 then -- VP has a weekly max scaled by 100
             ci.weeklyMax = ci.weeklyMax and math.floor(ci.weeklyMax/100)
           end
@@ -1622,7 +1650,11 @@ function addon:UpdateCurrency()
 	    end
 	  end
           ci.season = addon:GetSeasonCurrency(idx)
+	  if ci.weeklyMax == 0 then ci.weeklyMax = nil end -- don't store useless info
+	  if ci.totalMax == 0 then ci.totalMax = nil end -- don't store useless info
+	  if ci.earnedThisWeek == 0 then ci.earnedThisWeek = nil end -- don't store useless info
 	  t.currency[idx] = ci
+	 end
 	end
 end
 
@@ -1768,7 +1800,7 @@ local function ShowToonTooltip(cell, arg, ...)
 	  indicatortip:AddLine(BATTLEGROUND_RATING, t.RBGrating)
 	end
 	if t.Money then
-	  indicatortip:AddLine(MONEY,GetMoneyString(t.Money))
+	  indicatortip:AddLine(MONEY,addon:formatNumber(t.Money,true))
 	end
 	if t.Zone then
 	  indicatortip:AddLine(ZONE,t.Zone)
@@ -1782,7 +1814,7 @@ local function ShowToonTooltip(cell, arg, ...)
 	  local when = date("%c",t.LastSeen)
 	  indicatortip:AddLine(L["Last updated"],when)
 	end
-	if t.PlayedTotal and t.PlayedLevel and ChatFrame_TimeBreakDown then
+	if vars.db.Tooltip.TrackPlayed and t.PlayedTotal and t.PlayedLevel and ChatFrame_TimeBreakDown then
 	  --indicatortip:AddLine((TIME_PLAYED_TOTAL):format((TIME_DAYHOURMINUTESECOND):format(ChatFrame_TimeBreakDown(t.PlayedTotal))))
 	  --indicatortip:AddLine((TIME_PLAYED_LEVEL):format((TIME_DAYHOURMINUTESECOND):format(ChatFrame_TimeBreakDown(t.PlayedLevel))))
 	  indicatortip:AddLine((TIME_PLAYED_TOTAL):format(""),SecondsToTime(t.PlayedTotal))
@@ -1954,9 +1986,47 @@ local function ShowBonusTooltip(cell, arg, ...)
         finishIndicator(parent)
 end
 
-local function ShowHistoryTooltip(cell, arg, ...)
-        addon:HistoryUpdate()
+local function ShowAccountSummary(cell, arg, ...)
 	openIndicator(2, "LEFT","RIGHT")
+        indicatortip:SetCell(indicatortip:AddHeader(),1,GOLDFONT..L["Account Summary"]..FONTEND,"LEFT",2)
+  
+	local tmoney = 0
+	local ttime = 0
+	local ttoons = 0
+	local tmaxtoons = 0
+  	local r = {}
+  	for toon, t in pairs(vars.db.Toons) do -- deliberately include ALL toons
+	  local realm = toon:match(" %- (.+)$")
+	  local money = t.Money or 0
+	  tmoney = tmoney + money
+	  local ri = r[realm] or { ["realm"] = realm, ["money"] = 0, ["cnt"] = 0 }
+	  ri.money = ri.money + money
+	  ri.cnt = ri.cnt + 1
+	  r[realm] = ri
+	  ttime = ttime + (t.PlayedTotal or 0)
+	  ttoons = ttoons + 1
+	  if t.Level == maxlvl then
+	    tmaxtoons = tmaxtoons + 1
+	  end
+	end
+	indicatortip:AddLine(L["Characters"], ttoons)
+	indicatortip:AddLine(string.format(L["Level %d Characters"],maxlvl), tmaxtoons)
+	if vars.db.Tooltip.TrackPlayed then
+          indicatortip:AddLine((TIME_PLAYED_TOTAL):format(""),SecondsToTime(ttime))
+	end
+        indicatortip:AddLine(TOTAL.." "..MONEY,addon:formatNumber(tmoney,true))
+	local rmoney = {}
+	for _,ri in pairs(r) do table.insert(rmoney,ri) end
+	table.sort(rmoney,function(a,b) return a.money > b.money end)
+	for _,ri in ipairs(rmoney) do
+	  if ri.money > 10000*10000 and ri.cnt > 1 then -- show multi-toon servers with over 10k wealth
+            indicatortip:AddLine(ri.realm.." "..MONEY,addon:formatNumber(ri.money,true))
+	  end
+	end
+
+	-- history information
+        indicatortip:AddLine("")
+        addon:HistoryUpdate()
         local tmp = {}
         local cnt = 0
         for _,ii in pairs(db.History) do
@@ -2230,6 +2300,52 @@ local function ShowCurrencyTooltip(cell, arg, ...)
   finishIndicator()
 end
 
+local function ShowCurrencySummary(cell, arg, ...)
+  local idx = arg
+  if not idx then return end
+  local name,_,tex = GetCurrencyInfo(idx)
+  tex = " \124T"..tex..":0\124t"
+  openIndicator(2, "LEFT","RIGHT")
+  indicatortip:AddHeader(name, "")
+  local total = 0
+  local tmax
+  local temp = {}
+  for toon, t in pairs(vars.db.Toons) do -- deliberately include ALL toons
+    local ci = t.currency and t.currency[idx]
+    if ci and ci.amount then
+      tmax = tmax or ci.totalMax
+      table.insert(temp, { ["toon"] = toon, ["amount"] = ci.amount, 
+                     ["str1"] = ClassColorise(t.Class, toon),
+                     ["str2"] = CurrencyColor(ci.amount or 0,tmax)..tex,
+		   })
+      total = total + ci.amount
+    end
+  end
+  indicatortip:SetCell(1,2,CurrencyColor(total,0)..tex)
+  --indicatortip:AddLine(TOTAL, CurrencyColor(total,tmax)..tex)
+  --indicatortip:AddLine(" ")
+  addon.currency_sort = addon.currency_sort or function(a,b)
+    if a.amount > b.amount then 
+      return true
+    elseif a.amount < b.amount then
+      return false
+    end
+    local an, as = a.toon:match('^(.*) [-] (.*)$')
+    local bn, bs = b.toon:match('^(.*) [-] (.*)$')
+    if db.Tooltip.ServerSort and as ~= bs then
+      return as < bs
+    else
+      return a.toon < b.toon
+    end
+  end
+  table.sort(temp, addon.currency_sort)
+  for _,t in ipairs(temp) do
+    indicatortip:AddLine(t.str1, t.str2)
+  end
+
+  finishIndicator()
+end
+
 
 -- global addon code below
 
@@ -2270,6 +2386,22 @@ function core:OnInitialize()
 	  local name = "Currency"..id
 	  db.Tooltip[name] = (db.Tooltip[name]==nil and  vars.defaultDB.Tooltip[name]) or db.Tooltip[name]
 	end
+	local currtmp = {}
+	for _,idx in ipairs(currency) do currtmp[idx] = true end
+        for toon, t in pairs(vars.db.Toons) do
+	  t.Order = t.Order or 50
+	  if t.currency then -- clean old undiscovered currency entries
+	    for idx, ci in pairs(t.currency) do
+	      -- detect outdated entries because new version doesn't explicitly store max zeros
+	      if (ci.amount == 0 and (ci.weeklyMax == 0 or ci.totalMax == 0))
+	         or ci.amount == nil -- another outdated entry type created by old weekly reset logic
+		 or not currtmp[idx] -- removed currency
+	      then 
+	        t.currency[idx] = nil
+	      end
+	    end
+	  end
+        end
 	for qid, _ in pairs(db.QuestDB.Daily) do
 	  if db.QuestDB.AccountDaily[qid] then
 	    debug("Removing duplicate questDB entry: "..qid)
@@ -2389,6 +2521,7 @@ function core:OnEnable()
         RegisterAddonMessagePrefix(addonName)
 	addon:HistoryEvent("PLAYER_ENTERING_WORLD") -- update after initial load
         addon:specialQuests()
+	core:updateRealmMap()
 end
 
 function core:ADDON_LOADED()
@@ -2444,6 +2577,42 @@ function core:CheckSystemMessage(event, msg)
 	   then
 	   core:RefreshLockInfo()
 	end
+end
+
+function core:updateRealmMap()
+  local realm = GetRealmName():gsub("%s+","")
+  local lmap = GetAutoCompleteRealms()
+  local rmap = vars.db.RealmMap or {}
+  vars.db.RealmMap = rmap
+  if lmap and next(lmap) then -- connected realms detected
+    table.sort(lmap)
+    local mapid = rmap[realm] -- find existing map
+    if not mapid then
+      for _,r in ipairs(lmap) do
+        mapid = mapid or rmap[r]
+      end
+    end
+    if mapid then -- check for possible expansion
+      local oldmap = rmap[mapid]
+      if oldmap and #lmap > #oldmap then
+        rmap[mapid] = lmap
+      end
+    else -- new map
+      mapid = #rmap + 1
+      rmap[mapid] = lmap
+    end
+    for _,r in ipairs(rmap[mapid]) do -- maintain inverse mapping
+      rmap[r] = mapid
+    end
+  end
+end
+
+function core:getRealmGroup(realm)
+  -- returns realm-group-id, { realm1, realm2, ...} for connected realm, or nil,nil for unconnected
+  realm = realm:gsub("%s+","")
+  local rmap = vars.db.RealmMap
+  local gid = rmap and rmap[realm]
+  return gid, gid and rmap[gid]
 end
 
 function core:CHAT_MSG_MONSTER_YELL(event, msg, bossname)
@@ -2930,45 +3099,108 @@ end
 -- sorted traversal function for character table
 local cpairs
 do
-local cnext_sorted_names = {}
+local cnext_list = {}
 local cnext_pos
+local cnext_ekey
 local function cnext(t,i)
-   local n = cnext_sorted_names[cnext_pos]
-   if not n then
+   local e = cnext_list[cnext_pos]
+   if not e then
      return nil
    else
      cnext_pos = cnext_pos + 1
+     local n = e[cnext_ekey]
      return n, t[n]
    end
 end
+
 local function cpairs_sort(a,b)
-  local an, as = a:match('^(.*) [-] (.*)$')
-  local bn, bs = b:match('^(.*) [-] (.*)$')
-  if db.Tooltip.SelfFirst and b == thisToon then
-    return false
-  elseif db.Tooltip.SelfFirst and a == thisToon then
-    return true
-  elseif db.Tooltip.ServerSort and as ~= bs then
-    return as < bs
-  else
-    return a < b
-  end
-end
-cpairs = function(t, usecache)
- if not usecache then
-  wipe(cnext_sorted_names)
-  for n,_ in pairs(t) do
-    local tn, ts = n:match('^(.*) [-] (.*)$')
-    if vars.db.Toons[n] and 
-       (vars.db.Toons[n].Show ~= "never" or 
-        (n == thisToon and vars.db.Tooltip.SelfAlways))  and
-       (ts == GetRealmName() or not db.Tooltip.ServerOnly) then
-      table.insert(cnext_sorted_names, n)
+  -- generic multi-key sort
+  for k,av in ipairs(a) do
+    local bv = b[k]
+    if av ~= bv then
+      return av < bv
     end
   end
-  table.sort(cnext_sorted_names, cpairs_sort)
+  return false -- required for sort stability when a==a
+end
+
+cpairs = function(t, usecache)
+ local settings = db.Tooltip
+ local realmgroup_key
+ local realmgroup_min
+ if not usecache then
+  local thisrealm = GetRealmName()
+  if settings.ConnectedRealms ~= "ignore" then
+    local group = core:getRealmGroup(thisrealm) 
+    thisrealm = group or thisrealm
+  end
+  wipe(cnext_list)
+  cnext_pos = 1
+  for n,_ in pairs(t) do
+    local t = vars.db.Toons[n]
+    local tn, tr = n:match('^(.*) [-] (.*)$')
+    if t and 
+       (t.Show ~= "never" or (n == thisToon and settings.SelfAlways))  and
+       (not settings.ServerOnly 
+         or thisrealm == tr
+	 or thisrealm == core:getRealmGroup(tr)) 
+    then
+      local e = {}
+      cnext_ekey = 1
+
+      if settings.SelfFirst then
+        if n == thisToon then
+	  e[cnext_ekey] = 1
+	else
+	  e[cnext_ekey] = 2
+	end
+        cnext_ekey = cnext_ekey + 1
+      end
+
+      if settings.ServerSort then
+	if settings.ConnectedRealms == "ignore" then
+          e[cnext_ekey] = tr
+	  cnext_ekey = cnext_ekey + 1
+	else
+	  local rgroup = core:getRealmGroup(tr)
+	  if rgroup then -- connected realm
+	    realmgroup_min = realmgroup_min or {}
+	    if not realmgroup_min[rgroup] or tr < realmgroup_min[rgroup] then
+	      realmgroup_min[rgroup] = tr -- lowest active realm in group
+	    end
+	  else
+	    rgroup = tr
+	  end
+	  realmgroup_key = cnext_ekey
+	  e[cnext_ekey] = rgroup
+	  cnext_ekey = cnext_ekey + 1
+
+	  if settings.ConnectedRealms == "group" then
+            e[cnext_ekey] = tr
+	    cnext_ekey = cnext_ekey + 1
+	  end
+	end
+      end
+
+      e[cnext_ekey] = t.Order
+      cnext_ekey = cnext_ekey + 1
+
+      e[cnext_ekey] = n
+      cnext_list[cnext_pos] = e
+      cnext_pos = cnext_pos + 1
+    end
+  end
+  if realmgroup_key then -- second pass, convert group id to min name
+    for _,e in ipairs(cnext_list) do
+      local id = e[realmgroup_key]
+      if type(id) == "number" then
+        e[realmgroup_key] = realmgroup_min[id]
+      end
+    end
+  end
+  table.sort(cnext_list, cpairs_sort)
+  --myprint(cnext_list)
  end
-  --myprint(cnext_sorted_names)
   cnext_pos = 1
   return cnext, t, nil
 end
@@ -3151,7 +3383,7 @@ function core:ShowTooltip(anchorframe)
 	  headText = string.format("%s%s%s",GOLDFONT,addonName,FONTEND)
 	end
 	local headLine = tooltip:AddHeader(headText)
-	tooltip:SetCellScript(headLine, 1, "OnEnter", ShowHistoryTooltip )
+	tooltip:SetCellScript(headLine, 1, "OnEnter", ShowAccountSummary )
 	tooltip:SetCellScript(headLine, 1, "OnLeave", CloseTooltips)
 	addon:UpdateToonData()
 	local columns = localarr("columns")
@@ -3181,7 +3413,7 @@ function core:ShowTooltip(anchorframe)
 			if inst.Show == "always" then
 			   categoryshown[category] = true
 			end
-			if inst.Show ~= "never" or showall then
+			if inst.Show ~= "never" then
 			    if wbcons and inst.WorldBoss and inst.Expansion <= GetExpansionLevel() then
 			      if vars.db.Tooltip.ReverseInstances then
 			        table.insert(worldbosses, instance)
@@ -3255,7 +3487,7 @@ function core:ShowTooltip(anchorframe)
 				if inst.Show == "always" then
 			  	   instancerow[instance] = instancerow[instance] or tooltip:AddLine()
 				end
-				if inst.Show ~= "never" or showall then
+				if inst.Show ~= "never" then
 				    for toon, t in cpairs(vars.db.Toons, true) do
 					for diff = 1, maxdiff do
 					        if inst[toon] and inst[toon][diff] and (inst[toon][diff].Expires > 0 or showexpired) then
@@ -3658,7 +3890,11 @@ function core:ShowTooltip(anchorframe)
 			firstcurrency = false
 		end
 		currLine = tooltip:AddLine(YELLOWFONT .. show .. FONTEND)		
-
+		tooltip:SetLineScript(currLine, "OnMouseDown", OpenCurrency)
+		tooltip:SetCellScript(currLine, 1, "OnEnter", ShowCurrencySummary, idx)
+		tooltip:SetCellScript(currLine, 1, "OnLeave", CloseTooltips)
+		tooltip:SetCellScript(currLine, 1, "OnMouseDown", OpenCurrency)
+                
    	      for toon, t in cpairs(vars.db.Toons, true) do
                 local ci = t.currency and t.currency[idx] 
 		local col = columns[toon..1]
@@ -3691,7 +3927,6 @@ function core:ShowTooltip(anchorframe)
 		   tooltip:SetCellScript(currLine, col, "OnEnter", ShowCurrencyTooltip, {toon, idx, ci})
 		   tooltip:SetCellScript(currLine, col, "OnLeave", CloseTooltips)
 		   tooltip:SetCellScript(currLine, col, "OnMouseDown", OpenCurrency)
-		   tooltip:SetLineScript(currLine, "OnMouseDown", OpenCurrency)
 		  end
                 end
               end
@@ -3872,6 +4107,38 @@ StaticPopupDialogs["SAVEDINSTANCES_RESET"] = {
   button1 = OKAY,
   button2 = CANCEL,
   OnAccept = ResetConfirmed,
+  timeout = 0,
+  whileDead = true,
+  hideOnEscape = true,
+  enterClicksFirstButton = false,
+  showAlert = true,
+}
+
+local function DeleteCharacter(toon)
+  if toon == thisToon or not vars.db.Toons[toon] then
+    chatMsg("ERROR: Failed to delete "..toon..". Character is active or does not exist.")
+    return
+  end
+  debug("Deleting character: "..toon)
+  if addon:IsDetached() then
+    addon:HideDetached()
+  end
+  -- clear saves
+  for instance, i in pairs(vars.db.Instances) do
+  	i[toon] = nil
+  end
+  vars.db.Toons[toon] = nil
+  vars.config:BuildOptions() -- refresh config table
+  vars.config:ReopenConfigDisplay(vars.config.ftoon)
+end
+
+StaticPopupDialogs["SAVEDINSTANCES_DELETE_CHARACTER"] = {
+  preferredIndex = 3, -- reduce the chance of UI taint
+  text = string.format(L["Are you sure you want to remove %s from the SavedInstances character database?"],"\n\n%s%s\n\n").."\n\n"..
+         L["This should only be used for characters who have been renamed or deleted, as characters will be re-populated when you log into them."],
+  button1 = OKAY,
+  button2 = CANCEL,
+  OnAccept = function(self,data) DeleteCharacter(data) end,
   timeout = 0,
   whileDead = true,
   hideOnEscape = true,

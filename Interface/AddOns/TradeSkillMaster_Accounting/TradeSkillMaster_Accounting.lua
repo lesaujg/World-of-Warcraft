@@ -379,9 +379,10 @@ function TSM:GetItemName(item)
 	return itemNameCache[item]
 end
 
-function TSM:UpdateBaseItemLookup()
-	if time() - baseItemLookup.update < 30 then return end
-	baseItemLookup = { update = time() }
+function TSM:UpdateBaseItemLookup(force)
+	if time() - baseItemLookup.update < 30 and not force then return end
+	wipe(baseItemLookup)
+	baseItemLookup.update = time()
 	for itemString in pairs(TSM.items) do
 		local baseItemString = TSMAPI.Item:ToBaseItemString(itemString)
 		if baseItemString ~= itemString then

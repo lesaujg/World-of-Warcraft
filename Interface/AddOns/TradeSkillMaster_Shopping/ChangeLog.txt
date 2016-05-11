@@ -1,3 +1,6 @@
+v3.2.4
+*Fixed bug with extra filters not being included in recent / favorite searches for crafting mode.
+
 v3.2.3
 *Fixed bug with post duration being set to 48 hours on subsequent posts if you did not change the duration dropdown.
 * NB - due to the way blizzard internally stores auction time left, items posted at 24 hours will display as 48 in shopping results.

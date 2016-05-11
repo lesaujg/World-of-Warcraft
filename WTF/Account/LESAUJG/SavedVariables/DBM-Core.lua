@@ -141,17 +141,13 @@ DBM_AllSavedOptions = {
 		["HPFrameMaxEntries"] = 5,
 		["SpecialWarningSound4"] = "Sound\\Creature\\HoodWolf\\HoodWolfTransformPlayer01.ogg",
 		["HideApplicantAlerts"] = 0,
-		["DontShowRespawn"] = false,
+		["SpecialWarningFlashDura4"] = 0.7,
 		["DisableSFX"] = false,
 		["AutologBosses"] = false,
-		["SpecialWarningFlashDura4"] = 0.7,
+		["DontShowRespawn"] = false,
 		["DontShowBossAnnounces"] = false,
 		["SpecialWarningSound2"] = "Sound\\Creature\\AlgalonTheObserver\\UR_Algalon_BHole01.ogg",
-		["SpecialWarningFlashCol3"] = {
-			1, -- [1]
-			0, -- [2]
-			0, -- [3]
-		},
+		["HUDSize4"] = 5,
 		["WarningColors"] = {
 			{
 				["r"] = 0.411764705882353,
@@ -178,25 +174,25 @@ DBM_AllSavedOptions = {
 		["SWarningAlphabetical"] = true,
 		["HUDTexture4"] = "highlight",
 		["BlockNoteShare"] = false,
-		["FilterSelfHud"] = true,
-		["WarningY"] = 260,
-		["SpecialWarningFont"] = "Interface\\Addons\\Tukui\\medias\\fonts\\normal_font.ttf",
-		["ModelSoundValue"] = "Short",
 		["HUDColor3"] = {
 			1, -- [1]
 			0.5, -- [2]
 			0, -- [3]
 		},
+		["RaidWarningSound"] = "Sound\\Doodad\\BellTollNightElf.ogg",
+		["SpecialWarningFont"] = "Interface\\Addons\\Tukui\\medias\\fonts\\normal_font.ttf",
+		["ModelSoundValue"] = "Short",
+		["FilterSelfHud"] = true,
 		["WarningDuration"] = 4,
-		["FilterInterrupt"] = true,
+		["HUDTexture2"] = "highlight",
 		["RangeFrameRadarPoint"] = "CENTER",
 		["SpecialWarningY"] = 75,
 		["CustomSounds"] = 0,
 		["SpecialWarningFlashRepeat3"] = true,
 		["RangeFrameUpdates"] = "Average",
-		["AutoCorrectTimer"] = false,
+		["CountdownVoice3v2"] = "HoTS_R",
 		["HUDAlphaOverride"] = false,
-		["RaidWarningSound"] = "Sound\\Doodad\\BellTollNightElf.ogg",
+		["WarningY"] = 260,
 		["DontRestoreRange"] = false,
 		["HideGarrisonUpdates"] = true,
 		["ShowTranscriptorMessage"] = true,
@@ -246,11 +242,15 @@ DBM_AllSavedOptions = {
 		["VoiceOverSpecW"] = false,
 		["InfoFrameShowSelf"] = false,
 		["WarningFontShadow"] = true,
-		["CountdownVoice3v2"] = "HoTS_R",
-		["HUDTexture2"] = "highlight",
+		["AutoCorrectTimer"] = false,
+		["FilterInterrupt"] = true,
 		["DontShowBossTimers"] = false,
 		["HelpMessageShown3"] = false,
-		["HUDSize4"] = 5,
+		["SpecialWarningFlashCol3"] = {
+			1, -- [1]
+			0, -- [2]
+			0, -- [3]
+		},
 		["ChatFrame"] = "DEFAULT_CHAT_FRAME",
 		["SpecialWarningSound3"] = "Sound\\Creature\\KilJaeden\\KILJAEDEN02.ogg",
 		["WorldBossNearAlert"] = false,

@@ -114,3 +114,4 @@ L["Scan Selected Groups"] = true
 L["Show AuctionDB AH Tab (Requires Reload)"] = true
 L["This button will scan just the items in the groups you have selected."] = true
 L["This will do a slow auction house scan of every item in the selected groups and update their AuctionDB prices. This may take several minutes."] = true
+L["You must select at least one group before starting the group scan."] = true
