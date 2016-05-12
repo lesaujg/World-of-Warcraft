@@ -2,19 +2,19 @@
 WeDontWipeDB = {
 	["Windwalker"] = {
 		["iconSizeFactor"] = 0.8,
+		["showInterrupt"] = 1,
 		["autoAdjustGCD"] = 1,
 		["updateFrequency"] = 0.09,
 		["iconPosY"] = 255,
 		["alwaysShow"] = 0,
+		["showRangeText"] = 1,
 		["showDispelDef"] = 1,
-		["debug"] = 0,
 		["showCooldowns"] = 1,
 		["iconSize"] = 74,
-		["showCharges"] = 1,
-		["showRangeText"] = 1,
-		["fixedGCD"] = 1.5,
-		["greet"] = 1,
 		["showDispelOff"] = 1,
+		["positionLocked"] = 0,
+		["greet"] = 1,
+		["showCharges"] = 1,
 		["showCDs"] = {
 			121817, -- [1]
 			115399, -- [2]
@@ -31,8 +31,8 @@ WeDontWipeDB = {
 		["excludeCDs"] = {
 		},
 		["iconRelP"] = "BOTTOM",
-		["showInterrupt"] = 1,
-		["positionLocked"] = 0,
+		["fixedGCD"] = 1.5,
+		["debug"] = 0,
 		["showMainQueue"] = 1,
 		["queueLength"] = 4,
 		["cooldownCountdown"] = 10,
