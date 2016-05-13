@@ -27,17 +27,3 @@ X: 0
 Y: 128
 W: 150
 H: 42
-Frame: TSMCraftingTradeSkillFrame
-FrameLevel: 86
-Anchor: TOP
-X: -235
-Y: -15
-W: 450
-H: 500
-Frame: AmrUiFrame1
-FrameLevel: 1
-Anchor: TOP
-X: 199
-Y: -96
-W: 1000
-H: 700

@@ -1,4 +1,4 @@
-local versionMajor, versionRev, L, ADDON, T, ORI = 3, 84, newproxy(true), ...
+local versionMajor, versionRev, L, ADDON, T, ORI = 3, 85, newproxy(true), ...
 local api, OR_Rings, OR_ModifierLockState, TL, EV, OR_LoadedState = {ext={ActionBook=T.ActionBook},lang=L}, {}, nil, T.L, T.Evie, 1
 local defaultConfig = {ClickActivation=false, IndicationOffsetX=0, IndicationOffsetY=0, RingAtMouse=false, RingScale=1, ClickPriority=true, CenterAction=false, MouseBucket=1, NoClose=false, SliceBinding=false, SliceBindingString="1 2 3 4 5 6 7 8 9 0", SelectedSliceBind="", PrimaryButton="BUTTON4", SecondaryButton="BUTTON5", OpenNestedRingButton="BUTTON3", ScrollNestedRingUpButton="", ScrollNestedRingDownButton="", UseDefaultBindings=true}
 local configRoot, configInstance, activeProfile, PersistentStorageInfo, optionValidators, optionsMeta = {}, nil, nil, {}, {}, {__index=defaultConfig}
@@ -429,7 +429,7 @@ local function OR_DeleteRing(name, data)
 		local ringName, internalId, actionId = %s, %d, %d
 		self:SetAttribute("state-r" .. internalId, nil)
 		ORL_KnownCollections[actionId], ORL_RingData[internalId], ORL_RingDataN[ringName] = nil
-		KR:SetAttribute("frameref-UnregisterBindingDriver-target", self:GetFrameRef("proxy" .. internalId)
+		KR:SetAttribute("frameref-UnregisterBindingDriver-target", self:GetFrameRef("proxy" .. internalId))
 		KR:RunAttribute("UnregisterBindingDriver", "r" .. internalId)
 	]], safequote(name), data.internalID, data.action or 0)
 
