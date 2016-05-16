@@ -22,13 +22,17 @@ SkadaPerCharDB = {
 				["overhealing"] = 0,
 				["healingspells"] = {
 				},
+				["shielding"] = 0,
+				["damage"] = 0,
+				["damagespells"] = {
+				},
 				["deathlog"] = {
 					{
 						["ts"] = 1456707598.749,
 						["amount"] = -30568,
+						["spellid"] = 151541,
 						["srcname"] = "Bloodmaul Enforcer",
 						["hp"] = 464024,
-						["spellid"] = 151541,
 					}, -- [1]
 					{
 						["absorb"] = 0,
@@ -41,9 +45,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1456707599.968,
 						["amount"] = -30362,
+						["spellid"] = 151541,
 						["srcname"] = "Bloodmaul Enforcer",
 						["hp"] = 436165,
-						["spellid"] = 151541,
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -79,13 +83,9 @@ SkadaPerCharDB = {
 					}, -- [7]
 					["pos"] = 8,
 				},
-				["damage"] = 0,
-				["damagespells"] = {
-				},
+				["damagetaken"] = 60930,
 				["power"] = {
 				},
-				["damagetaken"] = 60930,
-				["shielding"] = 0,
 				["id"] = "Player-1169-06A1ACBD",
 				["maxhp"] = 494592,
 				["healing"] = 0,
@@ -130,20 +130,42 @@ SkadaPerCharDB = {
 				["overhealing"] = 0,
 				["healingspells"] = {
 				},
+				["shielding"] = 0,
+				["damage"] = 368452,
+				["damagespells"] = {
+					["Supernova"] = {
+						["min"] = 83669,
+						["hit"] = 1,
+						["totalhits"] = 1,
+						["id"] = 157980,
+						["max"] = 83669,
+						["damage"] = 83669,
+					},
+					["Arcane Missiles"] = {
+						["min"] = 18539,
+						["multistrike"] = 3,
+						["critical"] = 4,
+						["hit"] = 6,
+						["totalhits"] = 10,
+						["max"] = 38912,
+						["id"] = 7268,
+						["damage"] = 284783,
+					},
+				},
 				["deathlog"] = {
 					{
 						["ts"] = 1456707598.749,
 						["amount"] = -36481,
+						["spellid"] = 151541,
 						["srcname"] = "Bloodmaul Enforcer",
 						["hp"] = 424853,
-						["spellid"] = 151541,
 					}, -- [1]
 					{
 						["ts"] = 1456707599.53,
 						["amount"] = -35836,
+						["spellid"] = 88163,
 						["srcname"] = "Bloodmaul Enforcer",
 						["hp"] = 424853,
-						["spellid"] = 88163,
 					}, -- [2]
 					{
 						["absorb"] = 0,
@@ -156,16 +178,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1456707599.968,
 						["amount"] = -36142,
+						["spellid"] = 151541,
 						["srcname"] = "Bloodmaul Enforcer",
 						["hp"] = 354126,
-						["spellid"] = 151541,
 					}, -- [4]
 					{
 						["ts"] = 1456707601.546,
 						["amount"] = -38400,
+						["spellid"] = 88163,
 						["srcname"] = "Bloodmaul Enforcer",
 						["hp"] = 354126,
-						["spellid"] = 88163,
 					}, -- [5]
 					{
 						["absorb"] = 0,
@@ -193,31 +215,9 @@ SkadaPerCharDB = {
 					}, -- [8]
 					["pos"] = 9,
 				},
-				["damage"] = 368452,
-				["damagespells"] = {
-					["Supernova"] = {
-						["min"] = 83669,
-						["hit"] = 1,
-						["totalhits"] = 1,
-						["id"] = 157980,
-						["max"] = 83669,
-						["damage"] = 83669,
-					},
-					["Arcane Missiles"] = {
-						["min"] = 18539,
-						["multistrike"] = 3,
-						["critical"] = 4,
-						["hit"] = 6,
-						["totalhits"] = 10,
-						["max"] = 38912,
-						["id"] = 7268,
-						["damage"] = 284783,
-					},
-				},
+				["damagetaken"] = 146859,
 				["power"] = {
 				},
-				["damagetaken"] = 146859,
-				["shielding"] = 0,
 				["id"] = "Player-106-0200B977",
 				["maxhp"] = 461334,
 				["healing"] = 0,
@@ -319,6 +319,10 @@ SkadaPerCharDB = {
 						["multistrikes"] = 0,
 					},
 				},
+				["shielding"] = 0,
+				["damage"] = 0,
+				["damagespells"] = {
+				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -370,13 +374,9 @@ SkadaPerCharDB = {
 					}, -- [6]
 					["pos"] = 7,
 				},
-				["damage"] = 0,
-				["damagespells"] = {
-				},
+				["damagetaken"] = 0,
 				["power"] = {
 				},
-				["damagetaken"] = 0,
-				["shielding"] = 0,
 				["id"] = "Player-3726-09EFAE83",
 				["maxhp"] = 389643,
 				["healing"] = 30448,
@@ -462,6 +462,47 @@ SkadaPerCharDB = {
 						["multistrikes"] = 0,
 					},
 				},
+				["shielding"] = 5518,
+				["damage"] = 75360,
+				["damagespells"] = {
+					["Thrash"] = {
+						["min"] = 4059,
+						["multistrike"] = 1,
+						["critical"] = 2,
+						["hit"] = 3,
+						["totalhits"] = 5,
+						["id"] = 77758,
+						["max"] = 8117,
+						["damage"] = 35786,
+					},
+					["Maul"] = {
+						["min"] = 17073,
+						["critical"] = 1,
+						["totalhits"] = 1,
+						["id"] = 6807,
+						["max"] = 17073,
+						["damage"] = 17073,
+					},
+					["Lacerate"] = {
+						["min"] = 947,
+						["multistrike"] = 2,
+						["critical"] = 2,
+						["hit"] = 1,
+						["totalhits"] = 3,
+						["id"] = 33745,
+						["max"] = 1893,
+						["damage"] = 5585,
+					},
+					["Attack"] = {
+						["min"] = 5877,
+						["critical"] = 1,
+						["hit"] = 1,
+						["totalhits"] = 2,
+						["id"] = 6603,
+						["max"] = 11039,
+						["damage"] = 16916,
+					},
+				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -537,46 +578,7 @@ SkadaPerCharDB = {
 					}, -- [9]
 					["pos"] = 10,
 				},
-				["damage"] = 75360,
-				["damagespells"] = {
-					["Thrash"] = {
-						["min"] = 4059,
-						["multistrike"] = 1,
-						["critical"] = 2,
-						["hit"] = 3,
-						["totalhits"] = 5,
-						["id"] = 77758,
-						["max"] = 8117,
-						["damage"] = 35786,
-					},
-					["Maul"] = {
-						["min"] = 17073,
-						["critical"] = 1,
-						["totalhits"] = 1,
-						["id"] = 6807,
-						["max"] = 17073,
-						["damage"] = 17073,
-					},
-					["Lacerate"] = {
-						["min"] = 947,
-						["multistrike"] = 2,
-						["critical"] = 2,
-						["hit"] = 1,
-						["totalhits"] = 3,
-						["id"] = 33745,
-						["max"] = 1893,
-						["damage"] = 5585,
-					},
-					["Attack"] = {
-						["min"] = 5877,
-						["critical"] = 1,
-						["hit"] = 1,
-						["totalhits"] = 2,
-						["id"] = 6603,
-						["max"] = 11039,
-						["damage"] = 16916,
-					},
-				},
+				["damagetaken"] = 13937,
 				["power"] = {
 					{
 						["amount"] = 21,
@@ -586,8 +588,6 @@ SkadaPerCharDB = {
 						},
 					}, -- [1]
 				},
-				["damagetaken"] = 13937,
-				["shielding"] = 5518,
 				["id"] = "Player-162-08B568F2",
 				["maxhp"] = 576389,
 				["healing"] = 5518,
@@ -660,6 +660,53 @@ SkadaPerCharDB = {
 						["multistrikes"] = 0,
 					},
 				},
+				["shielding"] = 0,
+				["damage"] = 88695,
+				["damagespells"] = {
+					["Rupture"] = {
+						["min"] = 1306,
+						["multistrike"] = 1,
+						["critical"] = 1,
+						["hit"] = 1,
+						["totalhits"] = 2,
+						["id"] = 1943,
+						["max"] = 2611,
+						["damage"] = 4700,
+					},
+					["Deadly Poison"] = {
+						["min"] = 2536,
+						["hit"] = 2,
+						["totalhits"] = 2,
+						["id"] = 2818,
+						["max"] = 4929,
+						["damage"] = 7465,
+					},
+					["Dispatch"] = {
+						["min"] = 17990,
+						["critical"] = 1,
+						["hit"] = 1,
+						["totalhits"] = 2,
+						["id"] = 111240,
+						["max"] = 34716,
+						["damage"] = 52706,
+					},
+					["Venomous Wound"] = {
+						["min"] = 7941,
+						["critical"] = 1,
+						["hit"] = 1,
+						["totalhits"] = 2,
+						["id"] = 79136,
+						["max"] = 15883,
+						["damage"] = 23824,
+					},
+					["Attack"] = {
+						["max"] = 0,
+						["totalhits"] = 1,
+						["id"] = 6603,
+						["MISS"] = 1,
+						["damage"] = 0,
+					},
+				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -727,52 +774,7 @@ SkadaPerCharDB = {
 					}, -- [8]
 					["pos"] = 9,
 				},
-				["damage"] = 88695,
-				["damagespells"] = {
-					["Rupture"] = {
-						["min"] = 1306,
-						["multistrike"] = 1,
-						["critical"] = 1,
-						["hit"] = 1,
-						["totalhits"] = 2,
-						["id"] = 1943,
-						["max"] = 2611,
-						["damage"] = 4700,
-					},
-					["Deadly Poison"] = {
-						["min"] = 2536,
-						["hit"] = 2,
-						["totalhits"] = 2,
-						["id"] = 2818,
-						["max"] = 4929,
-						["damage"] = 7465,
-					},
-					["Dispatch"] = {
-						["min"] = 17990,
-						["critical"] = 1,
-						["hit"] = 1,
-						["totalhits"] = 2,
-						["id"] = 111240,
-						["max"] = 34716,
-						["damage"] = 52706,
-					},
-					["Venomous Wound"] = {
-						["min"] = 7941,
-						["critical"] = 1,
-						["hit"] = 1,
-						["totalhits"] = 2,
-						["id"] = 79136,
-						["max"] = 15883,
-						["damage"] = 23824,
-					},
-					["Attack"] = {
-						["max"] = 0,
-						["totalhits"] = 1,
-						["id"] = 6603,
-						["MISS"] = 1,
-						["damage"] = 0,
-					},
-				},
+				["damagetaken"] = 0,
 				["power"] = {
 					[3] = {
 						["amount"] = 29,
@@ -781,8 +783,6 @@ SkadaPerCharDB = {
 						},
 					},
 				},
-				["damagetaken"] = 0,
-				["shielding"] = 0,
 				["id"] = "Player-1129-069DDA64",
 				["maxhp"] = 495972,
 				["healing"] = 0,
