@@ -1231,6 +1231,38 @@ local PawnGemData100Epic =
 
 
 --========================================
+-- Level 110 crafted uncommon prismatic gems
+--========================================
+local PawnGemData110Uncommon =
+{
+
+
+{ 130215, true, true, true, "CritRating", 900 }, -- Deadly Deep Amber
+{ 130216, true, true, true, "HasteRating", 900 }, -- Quick Azsunite
+{ 130217, true, true, true, "Versatility", 900 }, -- Versatile Skystone
+{ 130218, true, true, true, "MasteryRating", 900 }, -- Masterful Queen's Opal
+
+
+}
+
+
+--========================================
+-- Level 110 crafted rare prismatic gems
+--========================================
+local PawnGemData110Rare =
+{
+
+
+{ 130219, true, true, true, "CritRating", 1200 }, -- Deadly Eye of Prophecy
+{ 130220, true, true, true, "HasteRating", 1200 }, -- Quick Dawnlight
+{ 130221, true, true, true, "Versatility", 1200 }, -- Versatile Maelstrom Sapphire
+{ 130222, true, true, true, "MasteryRating", 1200 }, -- Masterful Shadowruby
+
+
+}
+
+
+--========================================
 
 -- The master list of all tables of Pawn gem data
 
@@ -1244,6 +1276,8 @@ local PawnGemData100Epic =
 
 PawnGemQualityLevels =
 {
+	{ 850, PawnGemData110Rare }, -- Legion raid gear
+	{ 720, PawnGemData110Uncommon }, -- Higher than Mythic Hellfire Citadel gear
 	{ 695, PawnGemData100Epic }, -- Warlords of Draenor Mythic Blackrock Foundry / Heroic Hellfire Citadel
 	{ 680, PawnGemData100Rare }, -- Warlords of Draenor Mythic Highmaul / Heroic Blackrock Foundry / Raid Finder Hellfire Citadel end bosses
 	{ 600, PawnGemData100Uncommon }, -- Actual gem requirement
@@ -1267,3 +1301,9 @@ PawnMetaGemQualityLevels =
 	{ 200, PawnMetaGemData80Rare }, -- Helmet of the Shrine
 	{ 0, PawnMetaGemData70Rare }, -- Exorcist's
 }
+
+if not PawnIsLegion() then
+	-- *** If the player is on live realms, remove the Legion gems.
+	tremove(PawnGemQualityLevels, 1)
+	tremove(PawnGemQualityLevels, 1)
+end

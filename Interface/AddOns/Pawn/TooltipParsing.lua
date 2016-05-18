@@ -84,6 +84,7 @@ PawnRegexes =
 	-- ========================================
 	-- Common strings that are ignored (rare ones are at the bottom of the file)
 	-- ========================================
+	{L.HaventCollectedAppearance or "^UNUSED$"}, -- You haven't collected this appearance. -- *** new in 7.0; remove hack after localization
 	{PawnGameConstant(ITEM_QUALITY0_DESC)}, -- Poor
 	{PawnGameConstant(ITEM_QUALITY1_DESC)}, -- Common
 	{PawnGameConstant(ITEM_QUALITY2_DESC)}, -- Uncommon
@@ -269,6 +270,7 @@ PawnRightHandRegexes =
 	{L.Polearm, "IsPolearm", 1, PawnMultipleStatsFixed},
 	{L.Staff, "IsStaff", 1, PawnMultipleStatsFixed},
 	{L.Sword, "IsSword", 1, PawnMultipleStatsFixed},
+	{L.Warglaives or "Warglaives", "IsWarglaive", 1, PawnMultipleStatsFixed}, -- *** remove hack when localizations are in
 	{L.Wand, "IsWand", 1, PawnMultipleStatsFixed},
 	{L.Cloth, "IsCloth", 1, PawnMultipleStatsFixed},
 	{L.Leather, "IsLeather", 1, PawnMultipleStatsFixed},

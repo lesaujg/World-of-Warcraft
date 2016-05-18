@@ -76,6 +76,7 @@ PawnStats =
 	{L.WeaponType1HSword, "IsSword", L.WeaponType1HSwordInfo},
 	{L.WeaponType2HSword, "Is2HSword", L.WeaponType2HSwordInfo},
 	{L.WeaponTypeWand, "IsWand", L.WeaponTypeWandInfo},
+	{L.WeaponTypeWarglaive, "IsWarglaive", L.WeaponTypeWarglaiveInfo},
 	{L.WeaponTypeOffHand, "IsOffHand", L.WeaponTypeOffHandInfo},
 	{L.WeaponTypeFrill, "IsFrill", L.WeaponTypeFrillInfo},
 

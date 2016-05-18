@@ -590,23 +590,76 @@ and Pawn.</p>
 	</ul>
 	</li>
 </ul>
-<h3>Features that I may remove in Pawn 2.0 and Legion</h3>
+<h3>Things I need to do for Legion compatibility</h3>
 <ul>
-		<li>All support for PvP Power and PvP Resilience.&nbsp; (If those stats 
-		stay on items, I'll probably have Pawn just interpret them as Stamina, 
+		<li>Get various new strings translated.<ul>
+			<li>Stats.WeaponTypeWarglaive</li>
+			<li>Stats.WeaponTypeWarglaiveInfo</li>
+			<li>TooltipParsing.HaventCollectedAppearance</li>
+			<li>TooltipParsing.Warglaives</li>
+			<li>Wowhead.DemonHunterHavoc</li>
+			<li>Wowhead.DemonHunterVengeance<ul>
+				<li>I might not need these DH scale names, depending on another feature that I 
+				plan on adding.</li>
+			</ul>
+			</li>
+			<li>"Multiple Stats" (legacy secondary color gems)</li>
+		</ul>
+		</li>
+		<li>Make a snazzy new green and purple theme for the UI, of course.</li>
+		<li>Make it so that other weapons are never shown as upgrades to 
+		artifacts.</li>
+		<li>Reset all built-in scales back to simple starter values (instead of 
+		using Wowhead numbers).</li>
+		<li>Remove Spirit, Bonus Armor, and Multistrike, as those stats are 
+		removed, even from old items.<ul>
+			<li>Dodge and Parry on low-level items are currently interpreted as 
+			Bonus Armor, so I'll have to switch those over to Stamina.</li>
+		</ul>
+		</li>
+		<li>Remove PvP Power and PvP Resilience.&nbsp; (Currently, old items 
+		such as Dreadful Gladiator still have those stats. I'll probably have Pawn just interpret them as Stamina, 
 		and remove them as distinct stats from the Values tab.)</li>
+		<li>Remove the ability to track both 1H and 2H weapons at once—specs will no 
+		longer have the choice between 1H+OH and 2H in Legion content, and 
+		frequently swapping between the two isn't going to be common at lower 
+		levels either.</li>
+</ul>
+<h3>Things I might remove in upcoming versions of Pawn</h3>
+<ul>
+		<li>I might remove the "special effects not included" warning message 
+		since it's not really relevant most of the time; it usually just shows 
+		up on trinkets and enchantments, and trinkets don't get Pawn values and 
+		enchantments aren't applicable if item current values are disabled.</li>
 	<li>The concept of the "current" state of an item, versus "base" (I'll just 
 	use base values for everything).&nbsp; BUT right now it isn't hurting 
 	anything being there, and some people like that feature.&nbsp; (I'd rather 
 	get rid of it when I can get some use out of it, such as by switching to 
 	GetItemStats instead of parsing tooltips.&nbsp; Pawn would lose some 
 	functionality if I did that though.)</li>
-		<li>I might remove the "special effects not included" warning message 
-		since it's not really relevant most of the time; it usually just shows 
-		up on trinkets and enchantments, and trinkets don't get Pawn values and 
-		enchantments aren't applicable if item current values are disabled.</li>
+</ul>
+<h3>Features I might add soon</h3>
+<ul>
+	<li>Integration with Storyline</li>
 </ul>
 <h2>Updates</h2>
+<h3>Version 1.9.28</h3>
+<ul>
+	<li>Added support for the new Legion gems.&nbsp; (But you can't see them on 
+	the live realms.)</li>
+	<li>Warglaives will no longer show up as usable for any class except demon 
+	hunter.</li>
+	<li>More minor tweaks to the basic starting scale for demon hunters.</li>
+</ul>
+<h3>Version 1.9.27</h3>
+<ul>
+	<li>A few quick tweaks to make Pawn work better on the Legion beta realms.<ul>
+		<li>There's plenty of stuff yet to do, like removing obsolete stats, and 
+		adding support for artifact weapons—that will come soon.</li>
+	</ul>
+	</li>
+	<li>Added a basic starting scale for demon hunters.</li>
+</ul>
 <h3>Version 1.9.26</h3>
 <ul>
 	<li>Updated Spanish and Simplified Chinese translations.</li>

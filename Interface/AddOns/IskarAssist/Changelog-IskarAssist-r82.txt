@@ -1,6 +1,14 @@
+2016-05-16  Tercio  <Tercio>
+
+[75270d7781b2] [tip]
+* IskarAssist.lua, plugins/addonscheck.lua:
+
+- fixed a background color on addon check plugin.
+
+
 2016-05-09  Tercio  <Tercio>
 
-[0eb6c456a8c4] [tip]
+[0eb6c456a8c4]
 * IskarAssist.lua, IskarAssist.toc, plugins/addonscheck.lua:
 
 - Updates for the Legion assist project.
@@ -209,13 +217,5 @@
 * .pkgmeta, IskarAssist.lua:
 
 - warning about the non saving maxgroups.
-
-
-2016-02-23  Tercioo  <Tercioo>
-
-[a4036137e41a]
-* IskarAssist.lua, IskarAssist.toc:
-
-- tagging as relelase v0.16.4n.
 
 

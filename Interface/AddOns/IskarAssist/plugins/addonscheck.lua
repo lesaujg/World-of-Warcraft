@@ -189,7 +189,7 @@ function AddonsCheck.BuildOptions (frame)
 	manage_panel:SetPoint ("topleft", frame, "topleft", -10, -30)
 	manage_panel:SetSize (790, 410)
 	manage_panel:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true})
-	manage_panel:SetBackdropColor (1, 1, 1, 1)
+	manage_panel:SetBackdropColor (.5, .5, .5, 1)
 	manage_panel:SetBackdropBorderColor (0, 0, 0, 1)
 	manage_panel:Hide()
 

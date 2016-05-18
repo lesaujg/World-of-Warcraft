@@ -8,7 +8,7 @@
 ------------------------------------------------------------
 
 
-PawnVersion = 1.925
+PawnVersion = 1.927
 
 -- Pawn requires this version of VgerCore:
 local PawnVgerCoreVersionRequired = 1.09
@@ -216,7 +216,9 @@ function PawnInitialize()
 	hooksecurefunc(GameTooltip, "SetLootItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetLootItem", ...) end)
 	hooksecurefunc(GameTooltip, "SetLootRollItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetLootRollItem", ...) end)
 	hooksecurefunc(GameTooltip, "SetMerchantItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetMerchantItem", ...) end)
-	hooksecurefunc(GameTooltip, "SetMissingLootItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetMissingLootItem", ...) end)
+	if GameTooltip.SetMissingLootItem then -- *** Removed in 7.0
+		hooksecurefunc(GameTooltip, "SetMissingLootItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetMissingLootItem", ...) end)
+	end
 	hooksecurefunc(GameTooltip, "SetQuestItem",
 		function(self, ...)
 			-- BUG IN WoW 6.2: This item will come through with an item ID of 0 and we'll fail to get stats from it normally.
@@ -242,12 +244,14 @@ function PawnInitialize()
 	hooksecurefunc(GameTooltip, "SetSendMailItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetSendMailItem", ...) end)
 	hooksecurefunc(GameTooltip, "SetSocketGem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetSocketGem", ...) end)
 	hooksecurefunc(GameTooltip, "SetTradePlayerItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetTradePlayerItem", ...) end)
-	hooksecurefunc(GameTooltip, "SetTradeSkillItem",
-		function(self, Index, ReagentIndex)
-			if ReagentIndex then return end -- Don't show annotations on tooltips for reagents, only the target craftable item.
-			local ItemLink = GetTradeSkillItemLink(Index)
-			if ItemLink then PawnUpdateTooltip("GameTooltip", "SetHyperlink", ItemLink) end
-		end)
+	if GameTooltip.SetTradeSkillItem then -- *** removed in 7.0
+		hooksecurefunc(GameTooltip, "SetTradeSkillItem",
+			function(self, Index, ReagentIndex)
+				if ReagentIndex then return end -- Don't show annotations on tooltips for reagents, only the target craftable item.
+				local ItemLink = GetTradeSkillItemLink(Index)
+				if ItemLink then PawnUpdateTooltip("GameTooltip", "SetHyperlink", ItemLink) end
+			end)
+	end			
 	hooksecurefunc(GameTooltip, "SetTradeTargetItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetTradeTargetItem", ...) end)
 	hooksecurefunc(GameTooltip, "SetVoidItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetVoidItem", ...) end)
 	hooksecurefunc(GameTooltip, "SetVoidDepositItem", function(self, ...) PawnUpdateTooltip("GameTooltip", "SetVoidDepositItem", ...) end)
@@ -3530,14 +3534,14 @@ function PawnIsArmorBestTypeForPlayer(Item)
 	-- At level 40 some classes learn a new type of armor.
 	-- Before level 50 it's fine if the player is wearing the wrong type of armor.
 	local Level = UnitLevel("player")
-	local IsLevelForBestArmorType = (Level >= 40)
+	local IsLevelForBestArmorType = (Level >= 40) or PawnIsLegion()
 	local IsLevelForSpecialization = (Level >= 50)
 	-- Now, the rest depends on the user's class.
 	local _, Class = UnitClass("player")
 	if Class == "MAGE" or Class == "PRIEST" or Class == "WARLOCK" then
 		-- Cloth classes are easy!
 		if Stats.IsCloth then return true else return false end
-	elseif Class == "DRUID" or Class == "ROGUE" or Class == "MONK" then
+	elseif Class == "DRUID" or Class == "ROGUE" or Class == "MONK" or Class == "DEMONHUNTER" then
 		if Stats.IsLeather then
 			return true
 		elseif Stats.IsCloth then
@@ -4155,7 +4159,7 @@ end
 -- Gets whether a stat is a 1-handed weapon stat, a 2-handed weapon stat, or neither.  (Only tracks things that go into either the main hand
 -- or off-hand slot.  Ranged weapons are neither.)
 function PawnGetWeaponSetForStat(StatName)
-	if StatName == "IsAxe" or StatName == "IsDagger" or StatName == "IsFist" or StatName == "IsMace" or StatName == "IsSword" or StatName == "IsOffHand" or StatName == "IsFrill" then
+	if StatName == "IsAxe" or StatName == "IsDagger" or StatName == "IsFist" or StatName == "IsMace" or StatName == "IsSword" or StatName == "IsWarglaive" or StatName == "IsOffHand" or StatName == "IsFrill" then
 		return 1
 	elseif StatName == "Is2HAxe" or StatName == "Is2HMace" or StatName == "IsPolearm" or StatName == "IsStaff" or StatName == "Is2HSword" then
 		return 2

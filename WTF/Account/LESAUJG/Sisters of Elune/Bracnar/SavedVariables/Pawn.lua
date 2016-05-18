@@ -5,5 +5,5 @@ PawnOptions = {
 }
 PawnWowheadScaleProviderOptions = {
 	["LastClass"] = "HUNTER",
-	["LastAdded"] = 3,
+	["LastAdded"] = 4,
 }
