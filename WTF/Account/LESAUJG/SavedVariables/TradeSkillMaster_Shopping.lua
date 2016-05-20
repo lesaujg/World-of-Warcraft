@@ -38,41 +38,41 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @postUndercut"] = "1c",
 	["g@ @minDeSearchLvl"] = 1,
 	["g@ @maxDeSearchLvl"] = 735,
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
+		{
+			["lastSearch"] = 1463611721,
+			["name"] = "universal",
+			["filter"] = "universal",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [1]
+		{
+			["lastSearch"] = 1463611686,
+			["name"] = "arcane c",
+			["filter"] = "arcane c",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [2]
 		{
 			["lastSearch"] = 1463535858,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [1]
+		}, -- [3]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1463341660,
 			["name"] = "draenic dust",
 			["filter"] = "draenic dust",
-		}, -- [2]
+		}, -- [4]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1463341641,
 			["name"] = "dust",
 			["filter"] = "dust",
-		}, -- [3]
-		{
-			["lastSearch"] = 1463138693,
-			["name"] = "universal",
-			["filter"] = "universal",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [4]
-		{
-			["lastSearch"] = 1463138675,
-			["name"] = "arcane c",
-			["filter"] = "arcane c",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
 		}, -- [5]
 		{
 			["searchMode"] = "normal",
@@ -178,7 +178,7 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "saberfish",
 		}, -- [22]
 	},
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @normalPostPrice"] = "150% dbmarket",
 	["g@ @maxDeSearchPercent"] = 1,
 	["g@ @sniperCustomPrice"] = "0c",

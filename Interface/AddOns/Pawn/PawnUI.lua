@@ -852,7 +852,11 @@ end
 function PawnUIFrame_ScaleColorSwatch_Update()
 	if PawnUICurrentScale ~= PawnLocal.NoScale then
 		local r, g, b = PawnUIFrame_GetCurrentScaleColor()
-		PawnUIFrame_ScaleColorSwatch_Color:SetTexture(r, g, b)
+		if PawnUIFrame_ScaleColorSwatch_Color.SetColorTexture then
+			PawnUIFrame_ScaleColorSwatch_Color:SetColorTexture(r, g, b)
+		else -- *** for WoW 6.x compatibility
+			PawnUIFrame_ScaleColorSwatch_Color:SetTexture(r, g, b)
+		end
 		PawnUIFrame_ScaleColorSwatch_Label:Show()
 		PawnUIFrame_ScaleColorSwatch:Show()
 	else
