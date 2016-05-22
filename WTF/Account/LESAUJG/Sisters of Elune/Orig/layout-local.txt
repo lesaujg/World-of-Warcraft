@@ -27,3 +27,10 @@ X: 0
 Y: 128
 W: 150
 H: 42
+Frame: TSMMainFrame1
+FrameLevel: 64
+Anchor: CENTER
+X: -66
+Y: 111
+W: 968
+H: 621
