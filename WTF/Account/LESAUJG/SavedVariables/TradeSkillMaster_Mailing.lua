@@ -2,8 +2,9 @@
 TradeSkillMaster_MailingDB = {
 	["g@ @sendDelay"] = 0.5,
 	["g@ @helpPlatesShown"] = {
-		["inbox"] = true,
+		["other"] = true,
 		["groups"] = true,
+		["inbox"] = true,
 	},
 	["_hash"] = 3711258,
 	["c@Clothgar - Sisters of Elune@goldMailTarget"] = "",
@@ -54,10 +55,10 @@ TradeSkillMaster_MailingDB = {
 	["c@Orig - Sisters of Elune@goldMailTarget"] = "",
 	["g@ @deleteEmptyNPCMail"] = false,
 	["g@ @defaultPage"] = 1,
-	["g@ @keepMailSpace"] = 0,
+	["c@Bracnar - Sisters of Elune@goldMailTarget"] = "",
 	["g@ @openMailSound"] = "TSM_NO_SOUND",
 	["c@Galinar - Sisters of Elune@goldMailTarget"] = "",
-	["c@Bracnar - Sisters of Elune@goldMailTarget"] = "",
+	["g@ @keepMailSpace"] = 0,
 	["g@ @sendMessages"] = true,
 	["g@ @autoCheck"] = true,
 	["c@Uldaris - Sisters of Elune@goldKeepAmount"] = 1000000,
