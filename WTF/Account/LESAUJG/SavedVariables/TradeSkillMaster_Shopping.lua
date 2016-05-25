@@ -42,31 +42,31 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
 		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1464096856,
-			["name"] = "flytrap",
-			["filter"] = "flytrap",
-		}, -- [1]
-		{
-			["lastSearch"] = 1464057465,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [2]
-		{
-			["lastSearch"] = 1463913022,
+			["lastSearch"] = 1464141154,
 			["name"] = "universal",
 			["filter"] = "universal",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [3]
+		}, -- [1]
 		{
-			["lastSearch"] = 1463913008,
+			["lastSearch"] = 1464141139,
 			["name"] = "arcane c",
 			["filter"] = "arcane c",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
+		}, -- [2]
+		{
+			["lastSearch"] = 1464139494,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [3]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1464096856,
+			["name"] = "flytrap",
+			["filter"] = "flytrap",
 		}, -- [4]
 		{
 			["lastSearch"] = 1463800061,
