@@ -372,7 +372,7 @@ function FIZ_InitEnFactionGains(guildName)
 	ToBeDone.Max_n_d = 3	
 	ToBeDone.max_ndq_is = 4
 
-	--375	
+	--375
 	if (FIZ_IsAlliance) then	
 	-- Aliance Cities	
 	-- Darnassus 69	
@@ -2294,6 +2294,14 @@ function FIZ_InitEnFactionGains(guildName)
 		FIZ:AddQuest(1358, 1, 8, 31443, 600, {[86542] = 1})
 		FIZ:AddQuest(1358, 1, 8, 31446, 600, {[86545] = 1})
 		FIZ:AddQuest(1358, 1, 8, 31444, 600, {[86544] = 1})
+		FIZ:AddQuest(1358, 1, 8, 36804, 350, {[116820] = 1})
+		FIZ:AddQuest(1358, 1, 8, 39283, 350, {[127994] = 1})
+		FIZ:AddQuest(1358, 1, 8, 36800, 350, {[116819] = 1})
+		FIZ:AddQuest(1358, 1, 8, 36802, 350, {[116818] = 1})
+		FIZ:AddQuest(1358, 1, 8, 36805, 350, {[116821] = 1})
+		FIZ:AddQuest(1358, 1, 8, 38406, 350, {[122696] = 1})
+		FIZ:AddQuest(1358, 1, 8, 36803, 350, {[116817] = 1})
+		FIZ:AddQuest(1358, 1, 8, 36806, 350, {[116822] = 1})
 	-- The Tillers (group)	
 	-- The Tillers 1272	
 		FIZ:AddGeneral(1272, 1, 8, "1", 50, "1", "00", nil, 0)

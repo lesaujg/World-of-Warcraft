@@ -116,7 +116,7 @@ function private:ShowError(msg, isVerify, isUnofficial)
 	l:SetFullWidth(true)
 	l:SetFontObject(GameFontNormal)
 	if isVerify then
-		l:SetText(L["Looks like TradeSkillMaster has detected an error with your configuration. Please address this in order to ensure TSM remains functional."].."\n"..L["|cffffff00DO NOT report this as an error to the developers.|r If you require assistance with this, make a post on the TSM forums instead."].."|r")
+		l:SetText(L["Looks like TradeSkillMaster has detected an error with your configuration. Please address this in order to ensure TSM remains functional."].."\n"..L["|cffffff00DO NOT report this as an error to the developers.|r If you require assistance with this, join our IRC channel or make a post on the TSM forums instead."].."|r")
 	elseif isUnofficial then
 		l:SetText(L["Looks like an |cffff0000unofficial|r TSM module has encountered an error. Please do not report this to the TSM team, but instead report it to the author of the addon. If it's affecting the operation of TSM, you may want to disable it."])
 	elseif TSM.Modules:HasOutdatedAddons() then
@@ -272,10 +272,13 @@ function private.ErrorHandler(msg, thread)
 
 	-- show the error message if applicable
 	if not private.isErrorFrameVisible then
-		TSM:LOG_ERR(msg)
-		TSM:Print(L["Looks like TradeSkillMaster has encountered an error. Please help the author fix this error by following the instructions shown."])
 		local author = GetAddOnMetadata(addonName, "Author")
 		local isOfficial = author and strfind(author, "^Sapu94")
+		if isOfficial and TSM.LOG_ERR and TSM.AnalyticsEvent then
+			TSM:LOG_ERR(msg)
+			TSM:AnalyticsEvent("ERROR", msg)
+		end
+		TSM:Print(L["Looks like TradeSkillMaster has encountered an error. Please help the author fix this error by following the instructions shown."])
 		private:ShowError(TSMERRORLOG[#TSMERRORLOG], nil, not isOfficial)
 	elseif private.isErrorFrameVisible == true then
 		TSM:LOG_ERR(msg)
@@ -301,8 +304,8 @@ do
 		end
 		local isTSMError = false
 		local tsmErrMsg = tostring(errMsg):trim()
-		-- ignore auc-stat-wowuction errors or non-TSM errors
-		if private.ignoreErrors or strmatch(tsmErrMsg, "auc%-stat%-wowuction") or (not strmatch(tsmErrMsg, "TradeSkillMaster") and not (strmatch(tsmErrMsg, "^%.%.%.T?r?a?d?e?S?k?i?l?lMaster_[A-Z][a-z]+[\\/]") or strmatch(tsmErrMsg, "AddOn TradeSkillMaster[_a-zA-Z]* attempted"))) then
+		-- ignore auc-stat-wowuction errors or non-TSM errors or corrupt SV errors
+		if private.ignoreErrors or strmatch(tsmErrMsg, "auc%-stat%-wowuction") or (not strmatch(tsmErrMsg, "TradeSkillMaster") and not (strmatch(tsmErrMsg, "^%.%.%.T?r?a?d?e?S?k?i?l?lMaster_[A-Z][a-z]+[\\/]") or strmatch(tsmErrMsg, "AddOn TradeSkillMaster[_a-zA-Z]* attempted"))) or strmatch(tsmErrMsg, "\\SavedVariables\\TradeSkillMaster") then
 			tsmErrMsg = nil
 		end
 		if tsmErrMsg then

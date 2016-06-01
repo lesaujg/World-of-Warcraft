@@ -183,18 +183,17 @@ L["Frost Resistance"] = "Resistencia al Frío"
 L["Full Scan"] = "Escaneo Completo"
 L["Ghost Wolf"] = "Lobo Fantasma"
 L["Glow Action"] = "Acción de Destello"
-L["Group aura count description"] = [=[La cantidad de %s miembros que deben ser afectados por el aura para que el activador se dispare.
-Si el número introducido es un entero (p.ej. 5), lo interpretaré como el número absoluto de gente afectada el la banda.
-Si el número introducido es una fracción (1/2), decimal (0.5), o un porcentaje (50%%), lo interpretaré como el porcentaje de jugadores afectados en la banda.
+L["Group aura count description"] = [=[La cantidad de miembros del grupo o banda que deben estar afectados por las auras indicadas para la activación.
+Si el número introducido es un entero (ej. 5), la cantidad de miembros del grupo o banda que deben estar afectados será absoluta.
+Si el número introducido es una fracción (1/2), decimal (0.5) o porcentaje (50%%), se interpretará como que la cantidad de miembros del grupo o banda que deben estar afectados es una fracción del total.
 
 |cFF4444FFPor ejemplo:|r
-|cFF00CC00> 0|r se activa cuando cualquier persona en la banda %s esté afectada
-|cFF00CC00= 100%%|r se activa cuando todo el mundo en la banda %s esté afectado
-|cFF00CC00!= 2|r se activa cuando el numero de personas %s afectadas no es 2
-|cFF00CC00<= 0.8|r se activa cuando menos del 80%% de la banda %s está afectada (4 de 5 en grupos, 8 de 10 o 20 de 25 en bandas)
-|cFF00CC00> 1/2|r se activa cuando más de la mitad de jugadores %s están afectados
-|cFF00CC00>= 0|r siempre se activa
-]=] -- Needs review
+Con |cFF00CC00> 0|r se activará cuando cualquier miembro del grupo o banda esté afectado.
+Con |cFF00CC00= 100%%|r se activará cuando todos los miembros del grupo o banda estén afectados.
+Con |cFF00CC00!= 2|r se activará cuando el número de miembros del grupo o banda afectados no sea 2.
+Con |cFF00CC00<= 0.8|r se activará cuando menos del 80%% del grupo o banda esté afectado (4 de 5 miembros en grupos, 8 de 10 ó 20 de 25 en bandas).
+Con |cFF00CC00> 1/2|r se activará cuando más de la mitad de miembros del grupo o banda estén afectados.
+Con |cFF00CC00>= 0|r se activará siempre.]=]
 L["Group Member Count"] = "Contador del Miembro de Grupo"
 L["Group (verb)"] = "Agrupar"
 L["Height"] = "Alto"

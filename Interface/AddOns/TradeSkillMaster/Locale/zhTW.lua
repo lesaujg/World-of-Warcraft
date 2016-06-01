@@ -76,7 +76,7 @@ L["Category Text (Requires Reload)"] = "分類文字（需重載）" -- Needs re
 -- L["|cff99ffffValue:|r "] = ""
 -- L["|cffff0000IMPORTANT:|r Your TSM profile has been reset to the 'Default' profile as part of a recent update. None of your settings have been lost, but on characters where you wish to use another profile, you'll need to manually change it back."] = ""
 -- L["|cffff0000Your TSM addons are out of date!|r Please DO NOT report this error, but instead update your TSM addons from here:"] = ""
-L["|cffffff00DO NOT report this as an error to the developers.|r If you require assistance with this, make a post on the TSM forums instead."] = "|cffffff0不要把這個作為錯誤回報給開發者。|r如果你需要這個的更多幫助，可在TSM論壇發貼尋求指導。" -- Needs review
+-- L["|cffffff00DO NOT report this as an error to the developers.|r If you require assistance with this, join our IRC channel or make a post on the TSM forums instead."] = ""
 -- L["|cffffff00Important Note:|r An update is available for %s. You should update as soon as possible to ensure TSM continues to function properly."] = ""
 L[ [=[|cffffff00Important Note:|r You do not currently have any modules installed / enabled for TradeSkillMaster! |cff77ccffYou must download modules for TradeSkillMaster to have some useful functionality!|r
 

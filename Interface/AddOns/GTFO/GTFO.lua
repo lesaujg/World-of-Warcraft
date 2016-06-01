@@ -890,6 +890,14 @@ Change Log:
 		- Added Legion spells for Vault of the Wardens
 		- Added Legion spells for Eye of Azshara
 		- Added Legion spells for Neltharion's Lair
+	v4.38.1
+		- Added Wrath spells for Dalaran
+		- Added Legion spells for Dalaran
+		- Added Legion spells for The Broken Shore
+		- Added Legion spells for The Broken Isles (world)
+		- Added Legion spells for The Nexus
+		- Fixed Legion spells for Eye of Azshara
+		- Added Legion spells for Neltharion's Lair
 		
 		
 ]]--
@@ -908,7 +916,7 @@ GTFO = {
 		IgnoreOptions = { };
 		TrivialDamagePercent = 2; -- Minimum % of HP lost required for an alert to be trivial
 	};
-	Version = "4.38"; -- Version number (text format)
+	Version = "4.38.1"; -- Version number (text format)
 	VersionNumber = 43800; -- Numeric version number for checking out-of-date clients
 	DataLogging = nil; -- Indicate whether or not the addon needs to run the datalogging function (for hooking)
 	DataCode = "4"; -- Saved Variable versioning, change this value to force a reset to default

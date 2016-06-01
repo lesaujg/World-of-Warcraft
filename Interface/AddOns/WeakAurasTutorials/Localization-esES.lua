@@ -54,9 +54,9 @@ L["Dynamic Group Options 2/4 Text"] = [=[La mayor mejora de los |cFFFFFFFGrupos 
 
 Selecciona \"Circular\" para verlo en acción.]=]
 L["Dynamic Group Options: 3/4"] = "Opciones de Grupos Dinámicos: 3/4"
-L["Dynamic Group Options 3/4 Text"] = [=[Las opciones de la constante de factor te permite controlar como crece tu grupo circular.
+L["Dynamic Group Options 3/4 Text"] = [=[La opción de Factor constante te permite ajustar cómo crecen los grupos circulares.
 
-En un grupo circular con espaciado constante crece su radio a medida que se añaden mas auras, mientras que una visualización de radio constante simplemente causa que las auras se junten a medida que más son añadidas.]=] -- Needs review
+Los grupos circulares con espaciado constante aumentan su radio conforme se van añadiendo auras, mientras que un radio constante hace que las auras se vayan acercando al centro conforme se van añadiendo más.]=]
 L["Dynamic Group Options: 4/4"] = "Opciones de Grupos Dinámicos: 4/4"
 L["Dynamic Group Options 4/4 Text"] = [=[Los grupos dinámicos ahora pueden tener sus hijos automáticamente ordenados por el tiempo restante.
 

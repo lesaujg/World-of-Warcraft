@@ -146,6 +146,9 @@ function TSMAPI:NewModule(obj)
 	local Printf = obj.Printf
 	obj.Printf = function(self, ...) Printf(self, TSMAPI:GetChatFrame(), ...) end
 
+	-- embed analytics functions
+	TSM.Analytics:Embed(obj)
+
 	-- embed debug logging functions
 	TSM.Debug:EmbedLogging(obj)
 	obj:LOG_RAISE_STACK() -- do the logging on behalf of the calling function

@@ -203,7 +203,7 @@ Falls die Zahl als Dezimalzahl (z.B. 0.5), Bruch (z.B. 1/2) oder Prozentsatz (z.
 L["Group Member Count"] = "Gruppengröße"
 L["Group (verb)"] = "Gruppe"
 L["Height"] = "Höhe"
--- L["Hide On"] = ""
+L["Hide On"] = "Ausblenden, wenn"
 L["Hide this group's children"] = "Kinder dieser Gruppe verbergen"
 L["Hide When Not In Group"] = "Ausblenden, wenn ich gruppenlos bin"
 L["Horizontal Align"] = "Horizontale Ausrichtung"

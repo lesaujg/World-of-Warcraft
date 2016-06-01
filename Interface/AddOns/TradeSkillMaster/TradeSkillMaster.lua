@@ -305,6 +305,10 @@ function TSM:OnInitialize()
 	for i=1, C_PetJournal.GetNumPets() do C_PetJournal.GetPetInfoByIndex(i) end
 	-- force a garbage collection
 	collectgarbage()
+
+	if not TSM.Analytics then
+		TSM:ShowConfigError("A recent update to TSM requires you to restart WoW completely. Failure to do so may lead to errors.")
+	end
 end
 
 function TSM:OnEnable()
@@ -457,6 +461,9 @@ function TSM:OnTSMDBShutdown(appDB)
 		local hash = TSMAPI.Util:CalculateHash(TSM.Features.wowToken..":"..TSM.Features.wowTokenTime)
 		appDB.wowToken[region] = {data=TSM.Features.wowToken, key=hash, updateTime=TSM.Features.wowTokenTime}
 	end
+
+	-- save analytics
+	TSM.Analytics:Save(appDB)
 end
 
 

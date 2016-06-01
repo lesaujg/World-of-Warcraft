@@ -82,6 +82,18 @@ GTFO.SpellID["221090"] = {
   sound = 3;
 };
 
+GTFO.SpellID["184044"] = {
+  --desc = "Summon Felblaze Infernal (Dread Commander Arganoth)";
+  sound = 3;
+};
+
+GTFO.SpellID["200465"] = {
+  --desc = "Fel Crack (Dread Commander Arganoth)";
+  sound = 3;
+};
+
+
+
 
 -- ************************
 -- * Vault of the Wardens *
@@ -233,11 +245,6 @@ GTFO.SpellID["192794"] = {
   sound = 3;
 };
 
-GTFO.SpellID["197165"] = {
-  --desc = "Heaving Sands (Wrath of Azshara)";
-  sound = 3;
-};
-
 GTFO.SpellID["192675"] = {
   --desc = "Mystic Tornado (Wrath of Azshara)";
   sound = 3;
@@ -267,10 +274,78 @@ GTFO.SpellID["202089"] = {
   sound = 3;
 };
 
--- TODO: Rancid Maw (Naraxas) - Fail/FF alert if you're not the initial target
-
 GTFO.SpellID["200338"] = {
   --desc = "Crystal Wall (Dargrul)";
   sound = 3;
 };
+
+GTFO.SpellID["198475"] = {
+  --desc = "Strike of the Mountain (Ularogg Cragshaper)";
+  sound = 3;
+};
+
+GTFO.SpellID["183088"] = {
+  --desc = "Avalanche (Mightstone Breaker)";
+  sound = 3;
+  test = true; -- one of these is avoidable...not sure which one
+};
+
+GTFO.SpellID["183100"] = {
+  --desc = "Avalanche (Mightstone Breaker)";
+  sound = 3;
+  test = true; -- one of these is avoidable...not sure which one
+};
+
+GTFO.SpellID["226406"] = {
+  --desc = "Ember Swipe (Emberhusk Dominator)";
+  sound = 3;
+  tankSound = 0;
+};
+
+-- *************
+-- * The Nexus *
+-- *************
+
+GTFO.SpellID["209852"] = {
+  --desc = "Arcane Orb (Scion of Magic)";
+  sound = 3;
+};
+
+GTFO.SpellID["206750"] = {
+  --desc = "Breaching Flames (nil)";
+  sound = 3;
+};
+
+GTFO.SpellID["209871"] = {
+  --desc = "Gravity Bomb (Nexus-Prince Bilaal)";
+  sound = 3;
+};
+
+GTFO.SpellID["209867"] = {
+  --desc = "Crosswind";
+  sound = 3;
+};
+
+
+--- ********************
+--- * The Broken Isles *
+--- ********************
+
+GTFO.SpellID["225574"] = {
+  --desc = "Trespasser!";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["225512"] = {
+  --desc = "Trespasser!";
+  applicationOnly = true;
+  sound = 3;
+};
+
+
+
+
+
+
 

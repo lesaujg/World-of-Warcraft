@@ -5,7 +5,7 @@ SavedInstancesDB = {
 		["Uldaris - Sisters of Elune"] = {
 			["lastbossyell"] = "Mannoroth: Looking For Raid",
 			["IL"] = 692.133361816406,
-			["LastSeen"] = 1464229880,
+			["LastSeen"] = 1464789452,
 			["Order"] = 50,
 			["Class"] = "DRUID",
 			["currency"] = {
@@ -14,7 +14,7 @@ SavedInstancesDB = {
 				},
 				[824] = {
 					["totalMax"] = 10000,
-					["amount"] = 3949,
+					["amount"] = 5345,
 				},
 				[738] = {
 					["amount"] = 26,
@@ -26,12 +26,13 @@ SavedInstancesDB = {
 				[402] = {
 					["amount"] = 0,
 				},
-				[994] = {
-					["totalMax"] = 20,
-					["amount"] = 14,
+				[1129] = {
+					["weeklyMax"] = 3,
+					["totalMax"] = 10,
+					["amount"] = 7,
 				},
 				[823] = {
-					["amount"] = 65213,
+					["amount"] = 70855,
 				},
 				[1166] = {
 					["amount"] = 2895,
@@ -40,31 +41,35 @@ SavedInstancesDB = {
 					["totalMax"] = 4000,
 					["amount"] = 775,
 				},
-				[1129] = {
-					["weeklyMax"] = 3,
-					["totalMax"] = 10,
-					["amount"] = 7,
+				[994] = {
+					["totalMax"] = 20,
+					["amount"] = 14,
 				},
 				[1101] = {
 					["totalMax"] = 100000,
-					["amount"] = 170,
+					["amount"] = 105,
 				},
 				[777] = {
 					["amount"] = 2651,
 				},
 			},
+			["lastboss"] = "The Crown Chemical Co.: Normal",
+			["lastbosstime"] = 1456708674,
 			["Level"] = 100,
 			["LClass"] = "Druid",
 			["RBGrating"] = 0,
-			["WeeklyResetTime"] = 1464688806,
-			["PlayedTotal"] = 2997429,
-			["Zone"] = "Gem Boutique",
+			["WeeklyResetTime"] = 1465293600,
+			["PlayedTotal"] = 2999606,
+			["Zone"] = "Town Hall",
 			["lastbossyelltime"] = 1454297373,
-			["Money"] = 1035817036,
+			["Money"] = 1054906027,
 			["Skills"] = {
+				[170700] = {
+					["Expires"] = 1464861600,
+					["Title"] = "Jewelcrafting: Taladite Crystal",
+					["Link"] = "|cffffd000|Henchant:170700|h[Jewelcrafting: Taladite Crystal]|h|r",
+				},
 			},
-			["lastbosstime"] = 1456708674,
-			["lastboss"] = "The Crown Chemical Co.: Normal",
 			["Show"] = "saved",
 			["BonusRoll"] = {
 				{
@@ -92,10 +97,10 @@ SavedInstancesDB = {
 					["currencyID"] = 1129,
 				}, -- [4]
 			},
-			["PlayedLevel"] = 385193,
+			["PlayedLevel"] = 387370,
 			["Faction"] = "Alliance",
 			["ILe"] = 689.799987792969,
-			["DailyResetTime"] = 1464688806,
+			["DailyResetTime"] = 1464861600,
 			["Quests"] = {
 			},
 			["Race"] = "Night Elf",
@@ -124,11 +129,11 @@ SavedInstancesDB = {
 			},
 			["lastboss"] = "Conclave of Wind: 10 Player",
 			["Show"] = "saved",
-			["WeeklyResetTime"] = 1464688805,
+			["WeeklyResetTime"] = 1465293605,
 			["PlayedLevel"] = 18824,
 			["Faction"] = "Alliance",
 			["ILe"] = 525.599975585938,
-			["DailyResetTime"] = 1464688805,
+			["DailyResetTime"] = 1464861605,
 			["Quests"] = {
 			},
 			["Race"] = "Dwarf",
@@ -148,21 +153,21 @@ SavedInstancesDB = {
 			["lastbossyelltime"] = 1450402790,
 			["Money"] = 352508611,
 			["Race"] = "Gnome",
-			["WeeklyResetTime"] = 1464688782,
+			["WeeklyResetTime"] = 1465293582,
 			["Show"] = "saved",
 			["Skills"] = {
 			},
 			["PlayedLevel"] = 2875929,
 			["Faction"] = "Alliance",
 			["ILe"] = 45,
-			["DailyResetTime"] = 1464688782,
+			["DailyResetTime"] = 1464861582,
 			["Quests"] = {
 			},
 			["Zone"] = "Stormwind City",
 		},
 		["Clothgar - Sisters of Elune"] = {
 			["lastbossyell"] = "Baradin Guard",
-			["WeeklyResetTime"] = 1464688782,
+			["WeeklyResetTime"] = 1465293582,
 			["LastSeen"] = 1450149881,
 			["Order"] = 50,
 			["Class"] = "WARLOCK",
@@ -180,7 +185,7 @@ SavedInstancesDB = {
 			["Skills"] = {
 			},
 			["ILe"] = 3.59999990463257,
-			["DailyResetTime"] = 1464688782,
+			["DailyResetTime"] = 1464861582,
 			["Quests"] = {
 			},
 			["IL"] = 4.93333339691162,
@@ -188,7 +193,7 @@ SavedInstancesDB = {
 		["Bracnar - Sisters of Elune"] = {
 			["lastbossyell"] = "Enslaved Miner: Heroic",
 			["IL"] = 729.866638183594,
-			["LastSeen"] = 1464665484,
+			["LastSeen"] = 1464787576,
 			["Order"] = 50,
 			["Class"] = "HUNTER",
 			["currency"] = {
@@ -211,25 +216,26 @@ SavedInstancesDB = {
 				},
 				[824] = {
 					["totalMax"] = 10000,
-					["amount"] = 4689,
+					["amount"] = 6017,
 				},
 				[515] = {
 					["amount"] = 116,
 				},
-				[241] = {
-					["amount"] = 21,
-				},
 				[391] = {
 					["amount"] = 7,
-				},
-				[1191] = {
-					["totalMax"] = 5000,
-					["amount"] = 1700,
 				},
 				[1129] = {
 					["weeklyMax"] = 3,
 					["totalMax"] = 10,
 					["amount"] = 8,
+				},
+				[994] = {
+					["totalMax"] = 20,
+					["amount"] = 12,
+				},
+				[1191] = {
+					["totalMax"] = 5000,
+					["amount"] = 1700,
 				},
 				[392] = {
 					["totalMax"] = 4000,
@@ -237,7 +243,7 @@ SavedInstancesDB = {
 				},
 				[1101] = {
 					["totalMax"] = 100000,
-					["amount"] = 57465,
+					["amount"] = 57950,
 				},
 				[738] = {
 					["amount"] = 1738,
@@ -251,22 +257,21 @@ SavedInstancesDB = {
 				[81] = {
 					["amount"] = 215,
 				},
-				[994] = {
-					["totalMax"] = 20,
-					["amount"] = 12,
+				[241] = {
+					["amount"] = 21,
 				},
 			},
-			["Show"] = "saved",
-			["WeeklyResetTime"] = 1464688801,
 			["Level"] = 100,
 			["LClass"] = "Hunter",
 			["RBGrating"] = 0,
 			["Zone"] = "Lunarfall",
 			["lastbosstime"] = 1456543941,
-			["PlayedTotal"] = 30170710,
+			["PlayedTotal"] = 30172200,
 			["lastbossyelltime"] = 1456707599,
-			["Money"] = 4599961501,
-			["DailyResetTime"] = 1464688801,
+			["Money"] = 4620414013,
+			["DailyResetTime"] = 1464861609,
+			["WeeklyResetTime"] = 1465293609,
+			["Show"] = "saved",
 			["lastboss"] = "The Crown Chemical Co.: Normal",
 			["BonusRoll"] = {
 				{
@@ -324,15 +329,15 @@ SavedInstancesDB = {
 					["currencyID"] = 1129,
 				}, -- [9]
 				{
-					["item"] = "|cffa335ee|Hitem:124290:0:0:0:0:0:0:0:100:254:4:5:1:566:529|h[Mitts of Eternal Famishment]|h|r",
 					["time"] = 1452048368,
 					["name"] = "Gorefiend: Heroic",
+					["item"] = "|cffa335ee|Hitem:124290:0:0:0:0:0:0:0:100:254:4:5:1:566:529|h[Mitts of Eternal Famishment]|h|r",
 					["currencyID"] = 1129,
 				}, -- [10]
 				{
-					["time"] = 1451420719,
 					["name"] = "Archimonde: Heroic",
 					["item"] = "|cffa335ee|Hitem:124210:0:0:0:0:0:0:0:100:254:4:5:3:561:41:566:529|h[Choker of the Great Betrayer]|h|r",
+					["time"] = 1451420719,
 					["currencyID"] = 1129,
 				}, -- [11]
 				{
@@ -342,9 +347,9 @@ SavedInstancesDB = {
 					["currencyID"] = 1129,
 				}, -- [12]
 				{
-					["item"] = "|cffa335ee|Hitem:124287:0:0:0:0:0:0:0:100:254:4:5:2:561:566:529|h[Spiked Throatcrusher Boots]|h|r",
 					["time"] = 1451364790,
 					["name"] = "Tyrant Velhari: Heroic",
+					["item"] = "|cffa335ee|Hitem:124287:0:0:0:0:0:0:0:100:254:4:5:2:561:566:529|h[Spiked Throatcrusher Boots]|h|r",
 					["currencyID"] = 1129,
 				}, -- [13]
 				{
@@ -390,9 +395,9 @@ SavedInstancesDB = {
 					["currencyID"] = 697,
 				}, -- [20]
 				{
-					["name"] = "Feng the Accursed: 10 Player",
 					["item"] = "|cffa335ee|Hitem:85980:0:0:0:0:0:0:0:100:253:4:0:0:445|h[Wildfire Worldwalkers]|h|r",
 					["time"] = 1450709971,
+					["name"] = "Feng the Accursed: 10 Player",
 					["currencyID"] = 697,
 				}, -- [21]
 				{
@@ -408,9 +413,9 @@ SavedInstancesDB = {
 					["currencyID"] = 697,
 				}, -- [23]
 				{
-					["name"] = "Tyrant Velhari: Heroic",
 					["item"] = "|cffa335ee|Hitem:124300:0:0:0:0:0:0:0:100:254:4:5:1:566:529|h[Haughty Chain Legguards]|h|r",
 					["time"] = 1450206844,
+					["name"] = "Tyrant Velhari: Heroic",
 					["currencyID"] = 1129,
 				}, -- [24]
 				{
@@ -420,12 +425,12 @@ SavedInstancesDB = {
 					["currencyID"] = 1129,
 				}, -- [25]
 			},
-			["PlayedLevel"] = 3403971,
+			["PlayedLevel"] = 3405461,
 			["Faction"] = "Alliance",
 			["ILe"] = 728.866638183594,
 			["Skills"] = {
 				[169092] = {
-					["Expires"] = 1464688806,
+					["Expires"] = 1464861609,
 					["Title"] = "Enchanting: Temporal Crystal",
 					["Link"] = "|cffffd000|Henchant:169092|h[Enchanting: Temporal Crystal]|h|r",
 				},
@@ -449,7 +454,7 @@ SavedInstancesDB = {
 			["Zone"] = "Stormwind City",
 			["Race"] = "Human",
 			["Show"] = "saved",
-			["DailyResetTime"] = 1464688782,
+			["DailyResetTime"] = 1464861582,
 			["PlayedLevel"] = 103216,
 			["Faction"] = "Alliance",
 			["ILe"] = 0.200000002980232,
@@ -457,7 +462,7 @@ SavedInstancesDB = {
 			},
 			["Quests"] = {
 			},
-			["WeeklyResetTime"] = 1464688782,
+			["WeeklyResetTime"] = 1465293582,
 		},
 		["Orig - Sisters of Elune"] = {
 			["lastbossyell"] = "Al'Akir: 25 Player",
@@ -494,8 +499,8 @@ SavedInstancesDB = {
 			["Race"] = "Gnome",
 			["lastbossyelltime"] = 1453092489,
 			["Money"] = 62411643,
-			["WeeklyResetTime"] = 1464688804,
-			["DailyResetTime"] = 1464688804,
+			["WeeklyResetTime"] = 1465293604,
+			["DailyResetTime"] = 1464861604,
 			["lastboss"] = "The Crown Chemical Co.: Normal",
 			["Show"] = "saved",
 			["lastbosstime"] = 1456708434,
@@ -532,7 +537,7 @@ SavedInstancesDB = {
 		["Currency824"] = true,
 		["ShowHoliday"] = true,
 		["ShowHints"] = true,
-		["ServerOnly"] = false,
+		["TrackDeserter"] = true,
 		["TrackLFG"] = true,
 		["CategorySpaces"] = false,
 		["TrackDailyQuests"] = true,
@@ -563,7 +568,7 @@ SavedInstancesDB = {
 		["ShowRandom"] = true,
 		["ReportResets"] = true,
 		["Currency1166"] = true,
-		["TrackDeserter"] = true,
+		["ServerOnly"] = false,
 	},
 	["spelltip"] = {
 		[71041] = {
@@ -892,13 +897,6 @@ SavedInstancesDB = {
 			["Raid"] = true,
 			["RecLevel"] = 80,
 		},
-		["LFR: Halls of Blood"] = {
-			["LFDID"] = 983,
-			["Expansion"] = 5,
-			["RecLevel"] = 100,
-			["Raid"] = true,
-			["Show"] = "saved",
-		},
 		["Molten Core"] = {
 			["LFDID"] = 48,
 			["Expansion"] = 0,
@@ -914,18 +912,18 @@ SavedInstancesDB = {
 			["Random"] = true,
 			["Raid"] = false,
 		},
+		["LFR: Halls of Blood"] = {
+			["LFDID"] = 983,
+			["Expansion"] = 5,
+			["RecLevel"] = 100,
+			["Raid"] = true,
+			["Show"] = "saved",
+		},
 		["LFR: Last Stand of the Zandalari"] = {
 			["LFDID"] = 835,
 			["Expansion"] = 4,
 			["Raid"] = true,
 			["RecLevel"] = 90,
-			["Show"] = "saved",
-		},
-		["Baradin Hold"] = {
-			["LFDID"] = 329,
-			["Expansion"] = 3,
-			["Raid"] = true,
-			["RecLevel"] = 85,
 			["Show"] = "saved",
 		},
 		["LFR: The Siege of Wyrmrest Temple"] = {
@@ -949,11 +947,11 @@ SavedInstancesDB = {
 			["RecLevel"] = 80,
 			["Show"] = "saved",
 		},
-		["The Forge of Souls"] = {
-			["LFDID"] = 252,
-			["Expansion"] = 2,
-			["Raid"] = false,
-			["RecLevel"] = 80,
+		["Baradin Hold"] = {
+			["LFDID"] = 329,
+			["Expansion"] = 3,
+			["Raid"] = true,
+			["RecLevel"] = 85,
 			["Show"] = "saved",
 		},
 		["Opening of the Dark Portal"] = {
@@ -969,6 +967,13 @@ SavedInstancesDB = {
 			["WorldBoss"] = 725,
 			["RecLevel"] = 90,
 			["Raid"] = true,
+		},
+		["The Forge of Souls"] = {
+			["LFDID"] = 252,
+			["Expansion"] = 2,
+			["Raid"] = false,
+			["RecLevel"] = 80,
+			["Show"] = "saved",
 		},
 		["Grand Ambassador Flamelash"] = {
 			["LFDID"] = 308,
@@ -1917,7 +1922,7 @@ SavedInstancesDB = {
 			[38175] = 971,
 		},
 		["Darkmoon"] = {
-			["expires"] = 1462777140,
+			["expires"] = 1465801140,
 		},
 		["AccountDaily"] = {
 			[31752] = -1,
@@ -1927,7 +1932,7 @@ SavedInstancesDB = {
 			[39020] = 971,
 			[39021] = 971,
 			[32640] = -1,
-			["expires"] = 1464688806,
+			["expires"] = 1465293600,
 			[32641] = -1,
 			[36054] = 1009,
 			[36055] = 1009,
@@ -1948,14 +1953,14 @@ SavedInstancesDB = {
 			[37453] = -1,
 		},
 		["AccountWeekly"] = {
-			["expires"] = 1464688806,
+			["expires"] = 1465293600,
 		},
 	},
 	["MinimapIcon"] = {
 		["minimapPos"] = 1.33226395003267,
 		["hide"] = false,
 	},
-	["DailyResetTime"] = 1464688806,
+	["DailyResetTime"] = 1464861609,
 	["Quests"] = {
 	},
 	["Indicators"] = {
@@ -2015,8 +2020,8 @@ SavedInstancesDB = {
 			0, -- [2]
 			0, -- [3]
 		},
+		["R8Text"] = "KILLED/TOTALM",
 		["R7Indicator"] = "BLANK",
-		["R2Text"] = "KILLED/TOTAL",
 		["R8Indicator"] = "BLANK",
 		["R0Text"] = "KILLED/TOTAL",
 		["R0Color"] = {
@@ -2024,12 +2029,8 @@ SavedInstancesDB = {
 			0.6, -- [2]
 			0, -- [3]
 		},
+		["R6Text"] = "KILLED/TOTAL",
 		["R1Indicator"] = "BLANK",
-		["R2Color"] = {
-			0.6, -- [1]
-			0, -- [2]
-			0, -- [3]
-		},
 		["R3Indicator"] = "BLANK",
 		["R7ClassColor"] = true,
 		["R5Indicator"] = "BLANK",
@@ -2043,13 +2044,17 @@ SavedInstancesDB = {
 		["R3ClassColor"] = true,
 		["R3Text"] = "KILLED/TOTALH",
 		["R5ClassColor"] = true,
-		["R6Text"] = "KILLED/TOTAL",
+		["R2Color"] = {
+			0.6, -- [1]
+			0, -- [2]
+			0, -- [3]
+		},
 		["D3Color"] = {
 			1, -- [1]
 			0, -- [2]
 			0, -- [3]
 		},
-		["R8Text"] = "KILLED/TOTALM",
+		["R2Text"] = "KILLED/TOTAL",
 		["D3Text"] = "KILLED/TOTALM",
 		["D2Text"] = "KILLED/TOTALH",
 		["R2Indicator"] = "BLANK",

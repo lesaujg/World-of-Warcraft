@@ -1,3 +1,7 @@
+v3.3.17
+*Disabled no-lib creation.
+*Added analytics framework.
+
 v3.3.16
 *Fixed bug with groups page.
 

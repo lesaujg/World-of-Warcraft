@@ -89,6 +89,10 @@ GTFO.SpellID["222588"] = {
   sound = 1;
 };
 
+GTFO.SpellID["183737"] = {
+  --desc = "Felblaze (Felblaze Infernal)";
+  sound = 1;
+};
 
 
 
@@ -136,7 +140,7 @@ GTFO.SpellID["193055"] = {
 -- *********************
 
 GTFO.SpellID["183407"] = {
-  --desc = "Acid Splatter (nil)";
+  --desc = "Acid Splatter";
   sound = 1;
 };
 
@@ -150,6 +154,23 @@ GTFO.SpellID["183566"] = {
   sound = 1;
 };
 
+GTFO.SpellID["186576"] = {
+  --desc = "Petrifying Cloud";
+  applicationOnly = true;
+  sound = 1;
+};
+
+GTFO.SpellID["188494"] = {
+  --desc = "Rancid Maw (Naraxas)";
+  applicationOnly = true;
+  sound = 1;
+};
+
+GTFO.SpellID["188493"] = {
+  --desc = "Rancid Maw (Naraxas)";
+  sound = 1;
+};
+
 GTFO.SpellID["210166"] = {
   --desc = "Toxic Wretch (Naraxas)";
   sound = 1;
@@ -159,4 +180,28 @@ GTFO.SpellID["217090"] = {
   --desc = "Magma Wave (Dargrul)";
   sound = 1;
 };
+
+-- *************
+-- * The Nexus *
+-- *************
+
+GTFO.SpellID["209848"] = {
+  --desc = "Icicle Barrage (Scion of Ice)";
+  sound = 1;
+};
+
+GTFO.SpellID["207556"] = {
+  --desc = "Heated Ground";
+  sound = 1;
+};
+
+GTFO.SpellID["209839"] = {
+  --desc = "Burning Diffusion (Diffusion)";
+  sound = 1;
+};
+
+
+--- ********************
+--- * The Broken Isles *
+--- ********************
 

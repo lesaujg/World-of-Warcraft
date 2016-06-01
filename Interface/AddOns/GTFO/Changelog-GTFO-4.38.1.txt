@@ -1,19 +1,38 @@
 ------------------------------------------------------------------------
-r203 | zensunim | 2016-05-16 22:53:22 +0000 (Mon, 16 May 2016) | 11 lines
+r206 | zensunim | 2016-05-27 22:27:07 +0000 (Fri, 27 May 2016) | 8 lines
 Changed paths:
-   A /tags/4.38 (from /trunk:202)
+   A /tags/4.38.1 (from /trunk:205)
 
-4.38
-* Fixed UI bug with some configuration options saving when hitting cancel
-* Added support for Legion
-* Added Legion spells for Mardum
-* Added Legion spells for Vault of the Wardens
+4.38.1
+* Added Wrath spells for Dalaran
+* Added Legion spells for Dalaran
 * Added Legion spells for The Broken Shore
-* Added Legion spells for The Violet Hold
-* Added Legion spells for Darkheart Thicket
-* Added Legion spells for Vault of the Wardens
-* Added Legion spells for Eye of Azshara
+* Added Legion spells for The Broken Isles (world)
+* Added Legion spells for The Nexus
+* Fixed Legion spells for Eye of Azshara
 * Added Legion spells for Neltharion's Lair
+------------------------------------------------------------------------
+r205 | zensunim | 2016-05-27 22:26:36 +0000 (Fri, 27 May 2016) | 1 line
+Changed paths:
+   M /trunk/GTFO.lua
+   M /trunk/GTFO.toc
+   M /trunk/GTFO_Fail_LGN.lua
+   M /trunk/GTFO_Fail_LK.lua
+   M /trunk/GTFO_Spells_LGN.lua
+
+4.38.1 release
+------------------------------------------------------------------------
+r204 | zensunim | 2016-05-22 07:54:26 +0000 (Sun, 22 May 2016) | 4 lines
+Changed paths:
+   M /trunk/GTFO.lua
+   M /trunk/GTFO.toc
+   M /trunk/GTFO_Fail_LGN.lua
+   M /trunk/GTFO_Spells_LGN.lua
+
+* Added Legion spells for The Broken Shore
+* Added Legion spells for The Broken Isles (world)
+* Added Legion spells for The Nexus
+* Fixed Legion spells for Eye of Azshara
 ------------------------------------------------------------------------
 r202 | zensunim | 2016-05-16 22:52:20 +0000 (Mon, 16 May 2016) | 1 line
 Changed paths:
@@ -51,33 +70,4 @@ Changed paths:
 - Added Legion spells for The Violet Hold
 - Added Legion spells for Darkheart Thicket
 - Added Legion spells for Vault of the Wardens
-------------------------------------------------------------------------
-r198 | zensunim | 2016-04-24 04:38:17 +0000 (Sun, 24 Apr 2016) | 3 lines
-Changed paths:
-   M /trunk/GTFO.lua
-   M /trunk/GTFO.toc
-   M /trunk/GTFO.xml
-   A /trunk/GTFO_FF_LGN.lua
-   A /trunk/GTFO_Fail_LGN.lua
-   M /trunk/GTFO_Ignore.lua
-   A /trunk/GTFO_Spells_LGN.lua
-   M /trunk/GTFO_Spells_WOD.lua
-
-* Added support for Legion
-* Added Legion spells for Mardum
-* Added Legion spells for Vault of the Wardens
-------------------------------------------------------------------------
-r196 | zensunim | 2016-04-20 07:15:14 +0000 (Wed, 20 Apr 2016) | 1 line
-Changed paths:
-   M /trunk/GTFO.lua
-   M /trunk/GTFO.toc
-   M /trunk/GTFO_Spells_WOD.lua
-
-4.37.7 release prep
-------------------------------------------------------------------------
-r195 | zensunim | 2016-02-21 21:58:02 +0000 (Sun, 21 Feb 2016) | 1 line
-Changed paths:
-   M /trunk/GTFO_Fail_WOD.lua
-
-* Added WoD spells for Hellfire Citadel
 ------------------------------------------------------------------------
