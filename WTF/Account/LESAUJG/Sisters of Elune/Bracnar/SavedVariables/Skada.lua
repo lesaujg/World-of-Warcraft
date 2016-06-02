@@ -595,7 +595,8 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 60930,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["id"] = "Player-1169-06A1ACBD",
 				["maxhp"] = 494592,
 				["healing"] = 0,
@@ -621,15 +622,13 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Bracnar",
 				["alertCount"] = 0,
-				["power"] = {
-				},
 				["deathlog"] = {
 					{
 						["ts"] = 1456707598.749,
 						["amount"] = -30568,
+						["srcname"] = "Bloodmaul Enforcer",
 						["hp"] = 464024,
 						["spellid"] = 151541,
-						["srcname"] = "Bloodmaul Enforcer",
 					}, -- [1]
 					{
 						["absorb"] = 0,
@@ -642,9 +641,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1456707599.968,
 						["amount"] = -30362,
+						["srcname"] = "Bloodmaul Enforcer",
 						["hp"] = 436165,
 						["spellid"] = 151541,
-						["srcname"] = "Bloodmaul Enforcer",
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -680,6 +679,7 @@ SkadaPerCharDB = {
 					}, -- [7]
 					["pos"] = 8,
 				},
+				["shielding"] = 0,
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -721,7 +721,8 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 146859,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["id"] = "Player-106-0200B977",
 				["maxhp"] = 461334,
 				["healing"] = 0,
@@ -762,22 +763,20 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Scorchy",
 				["alertCount"] = 0,
-				["power"] = {
-				},
 				["deathlog"] = {
 					{
 						["ts"] = 1456707598.749,
 						["amount"] = -36481,
+						["srcname"] = "Bloodmaul Enforcer",
 						["hp"] = 424853,
 						["spellid"] = 151541,
-						["srcname"] = "Bloodmaul Enforcer",
 					}, -- [1]
 					{
 						["ts"] = 1456707599.53,
 						["amount"] = -35836,
+						["srcname"] = "Bloodmaul Enforcer",
 						["hp"] = 424853,
 						["spellid"] = 88163,
-						["srcname"] = "Bloodmaul Enforcer",
 					}, -- [2]
 					{
 						["absorb"] = 0,
@@ -790,16 +789,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1456707599.968,
 						["amount"] = -36142,
+						["srcname"] = "Bloodmaul Enforcer",
 						["hp"] = 354126,
 						["spellid"] = 151541,
-						["srcname"] = "Bloodmaul Enforcer",
 					}, -- [4]
 					{
 						["ts"] = 1456707601.546,
 						["amount"] = -38400,
+						["srcname"] = "Bloodmaul Enforcer",
 						["hp"] = 354126,
 						["spellid"] = 88163,
-						["srcname"] = "Bloodmaul Enforcer",
 					}, -- [5]
 					{
 						["absorb"] = 0,
@@ -827,6 +826,7 @@ SkadaPerCharDB = {
 					}, -- [8]
 					["pos"] = 9,
 				},
+				["shielding"] = 0,
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -892,7 +892,8 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["id"] = "Player-3726-09EFAE83",
 				["maxhp"] = 389643,
 				["healing"] = 30448,
@@ -938,8 +939,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Chibos",
 				["alertCount"] = 0,
-				["power"] = {
-				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -991,6 +990,7 @@ SkadaPerCharDB = {
 					}, -- [6]
 					["pos"] = 7,
 				},
+				["shielding"] = 0,
 				["alert"] = {
 				},
 				["multistrikes"] = 10,
@@ -1072,7 +1072,15 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 13937,
-				["shielding"] = 5518,
+				["power"] = {
+					{
+						["spells"] = {
+							[158723] = 5,
+							[16959] = 16,
+						},
+						["amount"] = 21,
+					}, -- [1]
+				},
 				["id"] = "Player-162-08B568F2",
 				["maxhp"] = 576389,
 				["healing"] = 5518,
@@ -1105,15 +1113,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Amuse",
 				["alertCount"] = 0,
-				["power"] = {
-					{
-						["spells"] = {
-							[158723] = 5,
-							[16959] = 16,
-						},
-						["amount"] = 21,
-					}, -- [1]
-				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -1189,6 +1188,7 @@ SkadaPerCharDB = {
 					}, -- [9]
 					["pos"] = 10,
 				},
+				["shielding"] = 5518,
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
@@ -1276,7 +1276,14 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+					[3] = {
+						["spells"] = {
+							[51637] = 29,
+						},
+						["amount"] = 29,
+					},
+				},
 				["id"] = "Player-1129-069DDA64",
 				["maxhp"] = 495972,
 				["healing"] = 0,
@@ -1294,14 +1301,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Snookiegal",
 				["alertCount"] = 0,
-				["power"] = {
-					[3] = {
-						["spells"] = {
-							[51637] = 29,
-						},
-						["amount"] = 29,
-					},
-				},
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -1369,6 +1368,7 @@ SkadaPerCharDB = {
 					}, -- [8]
 					["pos"] = 9,
 				},
+				["shielding"] = 0,
 				["alert"] = {
 				},
 				["multistrikes"] = 0,
