@@ -19,7 +19,7 @@ function Cancel:StartScan(isGroup, scanInfo)
 	private.specialScanOptions = nil
 	TSM.operationNameLookup[CANCEL_ALL_OPERATION] = "|cffff0000"..L["Cancel All"].."|r"
 	local processedItems, scanList = {}, {}
-	
+
 	for i=1, GetNumAuctionItems("owner") do
 		local name, _, quantity, _, _, _, _, _, _, _, bid, _, _, _, _, isSold = GetAuctionItemInfo("owner", i)
 		local itemString
@@ -89,9 +89,18 @@ function Cancel:StartScan(isGroup, scanInfo)
 			end
 		end
 	end
-	
+
 	if #scanList == 0 then return false end
 	private.specialScanOptions = not isGroup and scanInfo
+	if isGroup then
+		TSM:AnalyticsEvent("CANCEL_GROUP_START")
+	elseif scanInfo.cancelAll then
+		TSM:AnalyticsEvent("CANCEL_ALL_START")
+	elseif scanInfo.duration then
+		TSM:AnalyticsEvent("CANCEL_DURATION_START", scanInfo.duration)
+	elseif scanInfo.filter then
+		TSM:AnalyticsEvent("CANCEL_FILTER_START")
+	end
 	private.threadId = TSMAPI.Threading:Start(private.CancelScanThread, 0.7, TSM.Manage.StopScan, scanList)
 	return true
 end
@@ -116,7 +125,7 @@ function private:ValidateOperation(itemString, operation)
 	elseif prices.normalPrice < prices.minPrice then
 		errMsg = format(L["Did not cancel %s because your normal price (%s) is lower than your minimum price (%s). Check your settings."], TSMAPI.Item:ToItemLink(itemString), operation.normalPrice, operation.minPrice)
 	end
-	
+
 	if errMsg then
 		if not TSM.db.global.disableInvalidMsg then
 			TSM:Print(errMsg)
@@ -136,7 +145,7 @@ function private.CancelScanThread(self, scanList)
 	TSM.GUI:SetScanThreadId(self:GetThreadId())
 	self:RegisterEvent("CHAT_MSG_SYSTEM", function(_, msg) if msg == ERR_AUCTION_REMOVED then self:SendMsgToSelf("ACTION_CONFIRMED") end end)
 	self:RegisterEvent("UI_ERROR_MESSAGE", function(_, msg) if msg == ERR_ITEM_NOT_FOUND then self:SendMsgToSelf("ACTION_FAILED") end end)
-	
+
 	if private.specialScanOptions then
 		for _, itemString in ipairs(scanList) do
 			self:SendMsgToSelf("PROCESS_ITEM", itemString)
@@ -147,7 +156,7 @@ function private.CancelScanThread(self, scanList)
 	else
 		TSM.Scan:StartItemScan(scanList, self:GetThreadId())
 	end
-	
+
 	while true do
 		local args = self:ReceiveMsg()
 		local event = tremove(args, 1)
@@ -211,7 +220,7 @@ function private.CancelScanThread(self, scanList)
 		else
 			error("Unpexected message: "..tostring(event))
 		end
-		
+
 		-- update the current item / button state
 		currentItem = #private.queue > 0 and private.queue[1] or nil
 		TSM.GUI:SetButtonsEnabled(currentItem and true or false)
@@ -220,7 +229,7 @@ function private.CancelScanThread(self, scanList)
 			TSM.Manage:UpdateStatus("manage", numCanceled, numToCancel)
 			TSM.Manage:UpdateStatus("confirm", numConfirmed, numToCancel)
 		end
-		
+
 		if doneScanning and numConfirmed == numToCancel then
 			if #failedCancels > 0 then
 				numCanceled = numToCancel
@@ -291,7 +300,7 @@ function private:ProcessItem(self, itemString, noLog)
 				end
 				self:Yield()
 			end
-			
+
 			local numKept = 0
 			sort(cancelAuctions, function(a, b) return a.buyout < b.buyout end)
 			for i=#cancelAuctions, 1, -1 do
@@ -306,7 +315,7 @@ function private:ProcessItem(self, itemString, noLog)
 					tinsert(private.queue, auction)
 				end
 			end
-			
+
 			if not noLog then
 				if toCancel then
 					TSM.Log:AddLogRecord(itemString, "cancel", "Cancel", reasonToCancel, operation, lowBuyout)
@@ -326,11 +335,11 @@ function private:ShouldCancel(index, itemString, operation)
 	if operation.matchStackSize and quantity ~= operation.stackSize then
 		return
 	end
-	
+
 	local cancelData = {itemString=itemString, stackSize=quantity, buyout=buyout, bid=bid, index=index, numStacks=1, operation=operation}
 	local lowestAuction = TSM.Scan:GetLowestAuction(itemString, operation)
 	local prices = TSM.Util:GetItemPrices(operation, itemString, {minPrice=true, normalPrice=true, maxPrice=true, resetPrice=true, cancelRepostThreshold=true, undercut=true, aboveMax=true})
-	
+
 	if not lowestAuction then
 		-- all auctions which are posted (including ours) have been ignored, so we should cancel to post higher
 		if operation.cancelRepost and prices.normalPrice - buyoutPerItem > prices.cancelRepostThreshold then
@@ -342,12 +351,12 @@ function private:ShouldCancel(index, itemString, operation)
 		TSM:Printf(L["The seller name of the lowest auction for %s was not given by the server. Skipping this item."], GetAuctionItemLink("owner", index))
 		return false, "invalidSeller"
 	end
-	
+
 	if not TSM.db.global.cancelWithBid and activeBid > 0 then
 		-- Don't cancel an auction if it has a bid and we're set to not cancel those
 		return false, "bid"
 	end
-	
+
 	local secondLowestBuyout = TSM.Scan:GetNextLowest(itemString, lowestAuction.buyout, operation) or 0
 	if buyoutPerItem < prices.minPrice and not lowestAuction.isBlacklist then
 		-- this auction is below min price
@@ -401,7 +410,7 @@ function private:ShouldCancel(index, itemString, operation)
 			return cancelData, "whitelistUndercut"
 		end
 	end
-	
+
 	error("unexpectedly reached end", buyoutPerItem, lowestAuction.buyout, lowestAuction.isWhitelist, lowestAuction.isPlayer, prices.minPrice)
 end
 

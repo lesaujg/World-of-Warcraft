@@ -1,3 +1,6 @@
+v3.0.8
+*Added some analytics events.
+
 v3.0.7
 *Fixed bug with internal logging message.
 

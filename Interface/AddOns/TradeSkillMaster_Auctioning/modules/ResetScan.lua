@@ -41,7 +41,7 @@ function Reset:StartScan(scanInfo)
 	wipe(TSM.operationLookup)
 	wipe(private.summarySTCache)
 	local scanList = {}
-	
+
 	for itemString, operations in pairs(scanInfo) do
 		local validOperations = {}
 		local hasInvalidOperation = false
@@ -60,8 +60,9 @@ function Reset:StartScan(scanInfo)
 			tinsert(scanList, itemString)
 		end
 	end
-	
+
 	if #scanList == 0 then return false end
+	TSM:AnalyticsEvent("RESET_START")
 	private.threadId = TSMAPI.Threading:Start(private.ResetScanThread, 0.7, TSM.Manage.StopScan, scanList)
 	return true
 end
@@ -160,12 +161,12 @@ function private:CreateResetFrame(parent)
 					local prices = TSM.Util:GetItemPrices(data.operation, data.itemString, {resetMaxCost=true, resetMinProfit=true})
 					GameTooltip:SetOwner(self, "ANCHOR_NONE")
 					GameTooltip:SetPoint("BOTTOMLEFT", self, "TOPLEFT")
-					GameTooltip:AddLine(data.itemLink)				
+					GameTooltip:AddLine(data.itemLink)
 					GameTooltip:AddLine(L["Max Cost:"].." "..(TSMAPI:MoneyToString(prices.resetMaxCost, "|cffffffff") or "---"))
 					GameTooltip:AddLine(L["Min Profit:"].." "..(TSMAPI:MoneyToString(prices.resetMinProfit, "|cffffffff") or "---"))
 					GameTooltip:AddLine(L["Max Quantity:"].." |cffffffff"..data.operation.resetMaxQuantity.."|r")
 					GameTooltip:AddLine(L["Max Price Per:"].." "..(TSMAPI:MoneyToString(data.operation.resetMaxPricePer, "|cffffffff") or "---"))
-					
+
 					if self.enabled then
 						GameTooltip:AddLine(TSMAPI.Design:GetInlineColor("link2").."\n"..L["Click to show auctions for this item."].."|r")
 						GameTooltip:AddLine(TSMAPI.Design:GetInlineColor("link2")..L["Shift-Right-Click to show the options for this item's Auctioning group."].."|r")
@@ -426,7 +427,7 @@ function private.ResetScanThread(self, scanList)
 		else
 			error("Unpexected message: "..tostring(event))
 		end
-		
+
 		if currentItem and currentItem.shouldRemove then
 			currentItem.shouldRemove = nil
 			local row = private.frame.auctionST.rowData[private.frame.auctionST:GetSelection()]
@@ -450,7 +451,7 @@ function private.ResetScanThread(self, scanList)
 				end
 			end
 		end
-		
+
 		TSM.Manage:UpdateStatus("manage", numReset, numToReset)
 		TSM.Manage:UpdateStatus("confirm", numReset, numToReset)
 		if doneScanning and numReset == numToReset and numToReset > 0 then
@@ -475,13 +476,13 @@ function private:ProcessItemOperation(itemString, operation)
 	local records = dbView:Execute()
 	private.filterItem = nil
 	if #records == 0 then return 0 end
-	
+
 	local numAdded = 0
 	local prices = TSM.Util:GetItemPrices(operation, itemString, {minPrice=true, maxPrice=true, normalPrice=true, resetMaxCost=true, resetMinProfit=true, resetResolution=true, resetMaxItemCost=true, undercut=true})
 	local priceLevels = {}
 	local addNormal, isFirstItem = true, true
 	local currentPriceLevel = -math.huge
-	
+
 	for _, record in ipairs(records) do
 		if record.itemBuyout > 0 then
 			if not isFirstItem and record.itemBuyout > prices.minPrice and record.itemBuyout < prices.maxPrice and record.itemBuyout > (currentPriceLevel + prices.resetResolution) then
@@ -494,11 +495,11 @@ function private:ProcessItemOperation(itemString, operation)
 			isFirstItem = false
 		end
 	end
-	
+
 	if addNormal then
 		tinsert(priceLevels, prices.normalPrice)
 	end
-	
+
 	for _, targetPrice in ipairs(priceLevels) do
 		local playerCost, cost, quantity, maxItemCost, playerQuantity = 0, 0, 0, 0, 0
 		for _, record in ipairs(records) do
@@ -518,14 +519,14 @@ function private:ProcessItemOperation(itemString, operation)
 				quantity = quantity + record.stackSize
 			end
 		end
-		
+
 		local profit = (targetPrice * quantity - (cost + playerCost)) / quantity
 		if quantity > 0 and profit >= prices.resetMinProfit and cost <= prices.resetMaxCost and maxItemCost <= prices.resetMaxItemCost and quantity <= operation.resetMaxQuantity and quantity <= (operation.resetMaxInventory - TSMAPI.Inventory:GetTotalQuantity(itemString)) then
 			tinsert(private.queue, {prices=prices, itemString=itemString, targetPrice=targetPrice, cost=cost, quantity=quantity, profit=profit, maxItemCost=maxItemCost, playerQuantity=playerQuantity, operation=operation})
 			numAdded = numAdded + 1
 		end
 	end
-	
+
 	return numAdded
 end
 
@@ -562,7 +563,7 @@ function private:ValidateOperation(itemString, operation)
 	elseif prices.normalPrice < prices.minPrice then
 		errMsg = format(L["Did not reset %s because your normal price (%s) is lower than your minimum price (%s). Check your settings."], itemLink, operation.normalPrice, operation.minPrice)
 	end
-	
+
 	if errMsg then
 		if not TSM.db.global.disableInvalidMsg then
 			TSM:Print(errMsg)

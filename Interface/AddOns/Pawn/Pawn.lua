@@ -7,7 +7,6 @@
 -- Main non-UI code
 ------------------------------------------------------------
 
-
 PawnVersion = 1.927
 
 -- Pawn requires this version of VgerCore:
@@ -2837,6 +2836,11 @@ end
 --		GemList: A table of gems of that value.  Each item in the list is in the standard Pawn item table format, and
 --			the list is sorted alphabetically by name.
 function PawnFindBestGems(ScaleName, GemTable, FindRed, FindYellow, FindBlue)
+	-- *** This doesn't work in WoW 7.0.  Bail out now.  This will cause gems to have no value.
+	if PawnIsLegion() then
+		return 0, {}
+	end
+
 	local BestScore = 0
 	local BestItems = { }
 

@@ -16,14 +16,14 @@ TSMAPI.Auction:GetTabShowFunction("Auctioning") -- not currently used, but preve
 
 function private:CreateSelectionFrame(parent)
 	if private.selectionFrame then return end
-	
+
 	local actionBtnWidth = (parent.content:GetWidth() - 240) / 3
 	local durationList = {}
 	local durationText = {L["Under 30min"], L["30min to 2hrs"], L["2 to 12 hrs"]} -- use our own short-hand strings
 	for i=1, 3 do -- go up to long duration
 		durationList[i] = format("%s (%s)", _G["AUCTION_TIME_LEFT"..i], durationText[i])
 	end
-	
+
 	local BFC = TSMAPI.GUI:GetBuildFrameConstants()
 	local frameInfo = {
 		type = "Frame",
@@ -208,12 +208,12 @@ function private:CreateSelectionFrame(parent)
 			},
 		},
 	}
-	
+
 	local frame = TSMAPI.GUI:BuildFrame(frameInfo)
 	TSMAPI.Design:SetFrameBackdropColor(frame)
 	TSMAPI.Design:SetFrameColor(frame.customScanFrame)
 	private.selectionFrame = frame
-	
+
 	local helpPlateInfo = {
 		FramePos = {x=0, y=0},
 		FrameSize = {width=frame:GetWidth(), height=frame:GetHeight()},
@@ -242,18 +242,18 @@ function private:CreateSelectionFrame(parent)
 			ToolTipText = L["This button lets you quickly post items from your bags without setting up groups / operations for them."]
 		},
 	}
-	
+
 	local mainHelpBtn = CreateFrame("Button", nil, frame, "MainHelpPlateButton")
 	mainHelpBtn:SetPoint("TOP", frame, -300, 70)
 	mainHelpBtn:SetScript("OnClick", function() private:ToggleHelpPlate(frame, helpPlateInfo, mainHelpBtn, true) end)
 	mainHelpBtn:SetScript("OnHide", function() if HelpPlate_IsShowing(helpPlateInfo) then private:ToggleHelpPlate(frame, helpPlateInfo, mainHelpBtn, false) end end)
-	
+
 	if not TSM.db.global.helpPlatesShown.selection then
 		TSM.db.global.helpPlatesShown.selection = true
 		private:ToggleHelpPlate(frame, helpPlateInfo, mainHelpBtn, false)
 	end
 end
-	
+
 function private:ToggleHelpPlate(frame, info, btn, isUser)
 	if not HelpPlate_IsShowing(info) then
 		HelpPlate:SetParent(frame)
@@ -541,7 +541,7 @@ function private:CreateScanFrame(parent)
 					OnEnter = function(_, data, self)
 						if not data.operation or not data.operation.minPrice then return end
 						local prices = TSM.Util:GetItemPrices(data.operation, data.itemString, {minPrice=true, maxPrice=true, normalPrice=true})
-						
+
 						GameTooltip:SetOwner(self, "ANCHOR_NONE")
 						GameTooltip:SetPoint("BOTTOMLEFT", self, "TOPLEFT")
 						GameTooltip:AddLine(data.link)
@@ -729,7 +729,7 @@ function private:CreateScanFrame(parent)
 			},
 		},
 	}
-	
+
 	private.scanFrame = TSMAPI.GUI:BuildFrame(frameInfo)
 	TSMAPI.Design:SetFrameColor(private.scanFrame.content)
 	TSMAPI.Design:SetFrameBackdropColor(private.scanFrame.editPriceFrame)
@@ -829,7 +829,7 @@ function private:UpdateLogSTData()
 				lowestAuction = TSM.Scan:GetLowestAuction(record.itemString, record.operation) or {}
 				shownBuyout = TSM.db.global.priceColumn == 1 and record.buyout or lowestAuction.buyout
 			end
-			
+
 			local sellerText
 			if lowestAuction.seller then
 				if lowestAuction.isPlayer then
@@ -842,10 +842,10 @@ function private:UpdateLogSTData()
 			else
 				sellerText = "|cffffffff---|r"
 			end
-			
+
 			local color = TSM.Log:GetColor(record.mode, record.reason)
 			local infoText = (color or "|cffffffff")..(record.info or "---").."|r"
-			
+
 			row = {
 				cols = {
 					{
@@ -881,13 +881,13 @@ function private:UpdateLogSTData()
 				seller = lowestAuction.seller,
 				info = infoText,
 			}
-			
+
 			private.scanFrame.content.logST.cache[record] = row
 		end
 		tinsert(rows, row)
 	end
 	private.scanFrame.content.logST:SetData(rows)
-	
+
 	if #private.scanFrame.content.logST.rowData > private.scanFrame.content.logST:GetNumRows() then
 		TSMAPI.Delay:AfterFrame("logSTOffset", 2, function() private.scanFrame.content.logST:SetScrollOffset(#private.scanFrame.content.logST.rowData - private.scanFrame.content.logST:GetNumRows()) end)
 	end
@@ -895,7 +895,7 @@ end
 
 function private:UpdateLogSTHighlight(currentItem)
 	if not currentItem then return private.scanFrame.content.logST:SetHighlighted() end
-	
+
 	if not next(private.logSTCache) then
 		for i, data in ipairs(private.scanFrame.content.logST.rowData) do
 			private.logSTCache[data.itemString.."@"..tostring(data.operation)] = i
@@ -941,7 +941,7 @@ function private:StartScan(frame, mode, options)
 	private.scanFrame.content.logST:SetData({})
 	private.scanFrame.content.logST.cache = {}
 	private:UpdateScanMode()
-	
+
 	if private.mode == "Reset" then
 		private.scanFrame.actionButtonsFrame:Hide()
 		private.scanFrame.contentButtonsFrame:Hide()
@@ -949,7 +949,7 @@ function private:StartScan(frame, mode, options)
 		private.scanFrame.content.logST:Hide()
 		TSM.Reset:Show(frame)
 	end
-	
+
 	local isGroup = false
 	if not options then
 		-- it's a group scan
@@ -974,7 +974,7 @@ function private:StartScan(frame, mode, options)
 			end
 		end
 	end
-	
+
 	TSM.Log:Clear()
 	TSM.Scan:Clear()
 	GUI:UpdateSTData()
@@ -1020,7 +1020,7 @@ end
 function GUI:SetInfo(info)
 	if not info then return private:UpdateLogSTHighlight() end
 	private:UpdateAuctionsSTData()
-	
+
 	if type(info) == "string" then
 		private.scanFrame.infoTextFrame.icon:Hide()
 		private.scanFrame.infoTextFrame.linkText:Hide()
@@ -1029,7 +1029,7 @@ function GUI:SetInfo(info)
 		private.scanFrame.infoTextFrame.buyoutText:Hide()
 		private.scanFrame.infoTextFrame.quantityText:Hide()
 		private.scanFrame.infoTextFrame.statusText:Show()
-		
+
 		local status, _, gold, gold2 = ("\n"):split(info)
 		if gold then
 			private.scanFrame.infoTextFrame.goldText:Show()
@@ -1050,12 +1050,12 @@ function GUI:SetInfo(info)
 		private.scanFrame.infoTextFrame.statusText:Hide()
 		private.scanFrame.infoTextFrame.goldText:Hide()
 		private.scanFrame.infoTextFrame.goldText2:Hide()
-		
+
 		local itemID = TSMAPI.Item:ToItemID(info.itemString)
 		local total = TSMAPI.Inventory:GetTotalQuantity(info.itemString)
 		private.scanFrame.infoTextFrame.quantityText:Show()
 		private.scanFrame.infoTextFrame.quantityText:SetText(TSMAPI.Design:GetInlineColor("link")..L["Currently Owned:"].."|r "..total)
-		
+
 		local _,link,_,_,_,_,_,_,_,texture = TSMAPI.Item:GetInfo(info.itemString)
 		private.scanFrame.infoTextFrame.linkText:SetText(link)
 		if private.scanFrame.infoTextFrame.linkText:GetFontString():GetStringWidth() > 200 then
@@ -1078,7 +1078,7 @@ function GUI:SetInfo(info)
 		private.scanFrame.infoTextFrame.quantityText:Hide()
 		private.scanFrame.infoTextFrame.goldText:Hide()
 		private.scanFrame.infoTextFrame.goldText2:Hide()
-	
+
 		local link, texture = TSMAPI.Util:Select({2, 10}, TSMAPI.Item:GetInfo(info.itemString))
 		private.scanFrame.infoTextFrame.linkText:SetText(link)
 		if private.scanFrame.infoTextFrame.linkText:GetFontString():GetStringWidth() > 200 then
@@ -1088,17 +1088,17 @@ function GUI:SetInfo(info)
 		end
 		private.scanFrame.infoTextFrame.icon.link = link
 		private.scanFrame.infoTextFrame.icon:SetTexture(texture)
-		
+
 		local sText = format("%s "..TSMAPI.Design:GetInlineColor("link")..L["auctions of|r %s"], info.numStacks, info.stackSize)
 		private.scanFrame.infoTextFrame.stackText:SetText(sText)
-		
+
 		private.scanFrame.infoTextFrame.bidText:SetText(TSMAPI.Design:GetInlineColor("link")..BID..":|r "..TSMAPI:MoneyToString(info.bid, "OPT_ICON"))
 		private.scanFrame.infoTextFrame.buyoutText:SetText(TSMAPI.Design:GetInlineColor("link")..BUYOUT..":|r "..TSMAPI:MoneyToString(info.buyout, "OPT_ICON"))
 
 		private.scanFrame.contentButtonsFrame.editPriceButton:Enable()
 		private.scanFrame.editPriceFrame.itemString = info.itemString
 		private.scanFrame.editPriceFrame.info = {itemString=info.itemString, link=link, buyout=info.buyout, operation=info.operation}
-		
+
 		TSMAPI.Delay:AfterFrame(2, function() private:UpdateLogSTHighlight(TSM.Manage:GetCurrentItem()) end)
 	end
 end
@@ -1122,7 +1122,7 @@ function GUI:Stopped(notDone)
 	GUI:SetButtonsEnabled(false)
 	private.scanFrame.content.statusBar:UpdateStatus(100, 100)
 	private.scanFrame.contentButtonsFrame.currAuctionsButton:Hide()
-	
+
 	if private.mode == "Post" then
 		TSMAPI.Delay:AfterTime(0.5, private.SetGoldText)
 		private.SetGoldText()

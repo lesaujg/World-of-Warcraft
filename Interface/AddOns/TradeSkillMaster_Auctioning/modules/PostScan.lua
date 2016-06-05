@@ -120,6 +120,11 @@ function Post:StartScan(isGroup, scanInfo)
 
 	TSM.GUI:UpdateSTData()
 	if #scanList == 0 then return false end
+	if isGroup then
+		TSM:AnalyticsEvent("POST_GROUP_START")
+	else
+		TSM:AnalyticsEvent("QUICK_POST_START")
+	end
 	private.threadId = TSMAPI.Threading:Start(private.PostScanThread, 0.7, TSM.Manage.StopScan, scanList)
 	return true
 end

@@ -2088,9 +2088,13 @@ end
 function PawnUI_OnQuestInfo_Display(template)
 	if not PawnCommon or not PawnPlayerFullName then return end
 	VgerCore.Assert(QuestInfoFrame, "QuestInfoFrame should exist by the time that PawnUI_OnQuestInfo_Display is called.")
+	
+	-- There are a variety of QUEST_TEMPLATE_* tables in QuestInfo.lua.  Instead of hooking QuestInfo_ShowRewards directly,
+	-- wait until after QuestInfo_Display is finished, and then call our QuestInfo_ShowRewards hook if QuestInfo_ShowRewards
+	-- was ever called.  (I don't remember why...) 
 	local i = 1
 	while template.elements[i] do
-		if template.elements[i] == QuestInfo_ShowRewards then PawnUI_OnQuestInfo_ShowRewards() end
+		if template.elements[i] == QuestInfo_ShowRewards then PawnUI_OnQuestInfo_ShowRewards() return end
 		i = i + 3
 	end
 end
@@ -2123,6 +2127,7 @@ function PawnUI_OnQuestInfo_ShowRewards()
 		GetRewardInfoFunction = function(Index) return GetQuestItemInfo("reward", Index) end
 		GetChoiceInfoFunction = function(Index) return GetQuestItemInfo("choice", Index) end
 	end
+	-- BUG: In 7.0, sometimes when turning in a quest (the "else" case above), these numbers are still 0 by the time that this is called.  Calling GetNumQuest*() too early apparently prevents the reward from getting shown at all...?
 	if StaticRewards + RewardChoices == 0 then return end
 	if not QuestInfo_GetRewardButton(QuestInfoFrame.rewardsFrame, 1) then
 		VgerCore.Fail("Failed to annotate quest info because we couldn't find the reward button.  (Is a quest log mod interfering with Pawn?)")
@@ -2137,7 +2142,7 @@ function PawnUI_OnQuestInfo_ShowRewards()
 			local _, _, _, _, Usable = GetRewardInfoFunction(i)
 			tinsert(QuestRewards, { ["Item"] = Item, ["RewardType"] = "reward", ["Usable"] = Usable, ["Index"] = i + RewardChoices })
 		else
-			--VgerCore.Fail("Pawn can't display upgrade information because the server hasn't given us item stats yet.")
+			--VgerCore.Fail("Pawn can't display upgrade information because the server hasn't given us item stats for fixed rewards yet.")
 			-- TODO: Queue this up and retry these calculations later...
 			return
 		end
@@ -2148,7 +2153,7 @@ function PawnUI_OnQuestInfo_ShowRewards()
 			local _, _, _, _, Usable = GetChoiceInfoFunction(i)
 			tinsert(QuestRewards, { ["Item"] = Item, ["RewardType"] = "choice", ["Usable"] = Usable, ["Index"] = i })
 		else
-			--VgerCore.Fail("Pawn can't display upgrade information because the server hasn't given us item stats yet.")
+			--VgerCore.Fail("Pawn can't display upgrade information because the server hasn't given us item stats for reward choices yet.")
 			-- TODO: Queue this up and retry these calculations later...
 			return
 		end
