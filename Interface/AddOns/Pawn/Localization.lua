@@ -287,6 +287,7 @@ For more information on customizing Pawn, please see the help file (Readme.htm) 
 		Mastery2 = "^UNUSED$",
 		MetaGemRequirements = "|cff%x%x%x%x%x%xRequires",
 		MovementSpeed = "^%+([%d%.,]+) Speed$",
+		MultiStatHeading = "^Multiple Stats$",
 		MultiStatSeparator1 = "and",
 		Multistrike = "^%+([%d%.,]+) Multistrike$",
 		NormalizationEnchant = "^Enchanted: (.*)$",

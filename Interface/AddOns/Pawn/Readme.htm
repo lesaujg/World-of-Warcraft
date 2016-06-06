@@ -596,6 +596,7 @@ and Pawn.</p>
 			<li>Stats.WeaponTypeWarglaive</li>
 			<li>Stats.WeaponTypeWarglaiveInfo</li>
 			<li>TooltipParsing.HaventCollectedAppearance</li>
+			<li>TooltipParsing.MultiStatHeading</li>
 			<li>TooltipParsing.Warglaives</li>
 			<li>Wowhead.DemonHunterHavoc</li>
 			<li>Wowhead.DemonHunterVengeance<ul>
@@ -603,7 +604,6 @@ and Pawn.</p>
 				plan on adding.</li>
 			</ul>
 			</li>
-			<li>"Multiple Stats" (legacy secondary color gems)</li>
 		</ul>
 		</li>
 		<li>Make a snazzy new green and purple theme for the UI, of course.</li>
@@ -627,6 +627,9 @@ and Pawn.</p>
 		<li>Remove support for colored gems, since all sockets are now 
 		prismatic.&nbsp; (I probably might as well remove support for meta gems 
 		and cogwheels too while I'm at it.)</li>
+		<li>Update gem stats (some gems changed from Spirit to Versatility, for 
+		example).</li>
+		<li>Update PawnMinimumItemLevelToConsiderGems to something appropriate.</li>
 		<li>Move the Pawn button on the character sheet to the right, since the 
 		button to expand and collapse the secondary panel is no longer present.</li>
 </ul>
@@ -648,6 +651,13 @@ and Pawn.</p>
 	<li>Integration with Storyline</li>
 </ul>
 <h2>Updates</h2>
+<h3>Version 1.9.31</h3>
+<ul>
+	<li>Partial gem support has been restored on the Legion beta.&nbsp; The new 
+	Legion gems will be used in all calculations regardless of the level of the 
+	item.&nbsp; It'll probably stay this way until close to the Legion release 
+	date.</li>
+</ul>
 <h3>Version 1.9.30</h3>
 <ul>
 	<li>Due to a problem with Pawn's gem calculations interacting poorly with 

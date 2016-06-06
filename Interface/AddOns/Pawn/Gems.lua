@@ -1274,25 +1274,37 @@ local PawnGemData110Rare =
 -- The rows must be specified in descending MinItemLevel order, with the last row
 -- in each table having MinItemLevel 0.
 
-PawnGemQualityLevels =
-{
-	{ 850, PawnGemData110Rare }, -- Legion Normal Nighthold and Emerald Nightmare
-	{ 720, PawnGemData110Uncommon }, -- Higher than Mythic Hellfire Citadel gear
-	{ 695, PawnGemData100Epic }, -- Warlords of Draenor Mythic Blackrock Foundry / Heroic Hellfire Citadel
-	{ 680, PawnGemData100Rare }, -- Warlords of Draenor Mythic Highmaul / Heroic Blackrock Foundry / Raid Finder Hellfire Citadel end bosses
-	{ 600, PawnGemData100Uncommon }, -- Actual gem requirement
-	{ 463, PawnGemData90Rare }, -- Mists of Pandaria heroics
-	{ 417, PawnGemData90Uncommon }, -- Actual gem requirement
-	{ 397, PawnGemData85Epic }, -- Dragon Soul normal mode
-	{ 346, PawnGemData85Rare }, -- Wrath heroics
-	{ 308, PawnGemData85Uncommon }, -- Wrath of the Lich King dungeons
-	{ 232, PawnGemData80Epic }, -- Tier 9 epics
-	{ 200, PawnGemData80Rare }, -- Wrath of the Lich King heroics
-	{ 145, PawnGemData80Uncommon }, -- Sea King's Crown, worst Wrath socketed green
-	{ 141, PawnGemData70Epic }, -- Tier 5 epics
-	{ 112, PawnGemData70Rare }, -- Burning Crusade level 70 non-heroics
-	{ 0, PawnGemData70Uncommon },
-}
+if PawnIsLegion() then
+	-- *** Fix when 7.0 is closer to release and backward compatibility is not required.  (Merge these two tables when the time is right.)
+	-- On Legion, the stats on the lower-level gems (except the super-terrible ones for some reason) are wrong, and
+	-- cause problems with calculations and the quest UI. 
+	PawnGemQualityLevels =
+	{
+		{ 850, PawnGemData110Rare }, -- Legion Normal Nighthold and Emerald Nightmare
+		{ 0, PawnGemData110Uncommon }, -- Higher than Mythic Hellfire Citadel gear -- *** change to 720 when merging table
+	}
+	
+	-- Good test case to verify if the gem data is screwing anything up: visit Chromie at Wyrmrest Temple and then /reload.
+	-- If the quest rewards don't show up the first time, the bug is present.  If they do, everything's okay.
+else
+	PawnGemQualityLevels =
+	{
+		{ 695, PawnGemData100Epic }, -- Warlords of Draenor Mythic Blackrock Foundry / Heroic Hellfire Citadel
+		{ 680, PawnGemData100Rare }, -- Warlords of Draenor Mythic Highmaul / Heroic Blackrock Foundry / Raid Finder Hellfire Citadel end bosses
+		{ 600, PawnGemData100Uncommon }, -- Actual gem requirement
+		{ 463, PawnGemData90Rare }, -- Mists of Pandaria heroics
+		{ 417, PawnGemData90Uncommon }, -- Actual gem requirement
+		{ 397, PawnGemData85Epic }, -- Dragon Soul normal mode
+		{ 346, PawnGemData85Rare }, -- Wrath heroics
+		{ 308, PawnGemData85Uncommon }, -- Wrath of the Lich King dungeons
+		{ 232, PawnGemData80Epic }, -- Tier 9 epics
+		{ 200, PawnGemData80Rare }, -- Wrath of the Lich King heroics
+		{ 145, PawnGemData80Uncommon }, -- Sea King's Crown, worst Wrath socketed green
+		{ 141, PawnGemData70Epic }, -- Tier 5 epics
+		{ 112, PawnGemData70Rare }, -- Burning Crusade level 70 non-heroics
+		{ 0, PawnGemData70Uncommon },
+	}
+end
 
 PawnMetaGemQualityLevels =
 {
@@ -1301,9 +1313,3 @@ PawnMetaGemQualityLevels =
 	{ 200, PawnMetaGemData80Rare }, -- Helmet of the Shrine
 	{ 0, PawnMetaGemData70Rare }, -- Exorcist's
 }
-
-if not PawnIsLegion() then
-	-- *** If the player is on live realms, remove the Legion gems.
-	tremove(PawnGemQualityLevels, 1)
-	tremove(PawnGemQualityLevels, 1)
-end

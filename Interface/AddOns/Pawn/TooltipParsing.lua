@@ -118,6 +118,8 @@ PawnRegexes =
 	{"^" .. PawnGameConstantUnwrapped(ITEM_UNIQUE_EQUIPPABLE)}, -- Unique-Equipped; leave off the $ for Unique-Equipped: Curios of the Shado-Pan Assault (1)
 	{"^" .. PawnGameConstantUnwrapped(ITEM_BIND_QUEST)}, -- Leave off the $ for MonkeyQuest mod compatibility
 	{PawnGameConstant(ITEM_STARTS_QUEST)}, -- This Item Begins a Quest
+	{L.MultiStatHeading or "^Multiple Stats$"}, -- Multiple stats (Zen Wild Jade) -- *** new in 7.0; remove hack after localization
+	{PawnGameConstant(PROFESSIONS_USED_IN_COOKING)}, -- Crafting Reagent
 	{PawnGameConstant(ITEM_CONJURED)}, -- Conjured Item
 	{PawnGameConstant(ITEM_PROSPECTABLE)}, -- Prospectable
 	{PawnGameConstant(ITEM_MILLABLE)}, -- Millable
