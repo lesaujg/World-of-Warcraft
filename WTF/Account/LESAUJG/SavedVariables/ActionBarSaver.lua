@@ -15,7 +15,7 @@ ActionBarSaverDB = {
 		},
 		["WARLOCK"] = {
 		},
-		["PALADIN"] = {
+		["ROGUE"] = {
 		},
 		["HUNTER"] = {
 			["hunter"] = {
@@ -154,25 +154,25 @@ ActionBarSaverDB = {
 				[68] = "spell|1850||Dash||",
 				[74] = "spell|106832||Thrash||",
 				[117] = "spell|6603||Auto Attack||",
-				[99] = "spell|22842||Frenzied Regeneration||",
-				[85] = "spell|5221||Shred||",
-				[69] = "spell|1126||Mark of the Wild||",
-				[53] = "spell|50769||Revive||",
-				[75] = "spell|22568||Ferocious Bite||",
-				[67] = "spell|5185||Healing Touch||",
+				[114] = "spell|31252||Prospecting||",
+				[98] = "spell|106832||Thrash||",
 				[100] = "spell|6795||Growl||",
-				[52] = "item|109167||Findle's Loot-A-Rang",
 				[73] = "spell|5221||Shred||",
 				[54] = "spell|18960||Teleport: Moonglade||",
+				[67] = "spell|5185||Healing Touch||",
+				[69] = "spell|1126||Mark of the Wild||",
+				[52] = "item|109167||Findle's Loot-A-Rang",
+				[53] = "spell|50769||Revive||",
+				[75] = "spell|22568||Ferocious Bite||",
 				[55] = "spell|33891||Incarnation: Tree of Life|Talent, Shapeshift|",
 				[110] = "companion|23338|||MOUNT|",
-				[98] = "spell|106832||Thrash||",
-				[114] = "spell|31252||Prospecting||",
+				[85] = "spell|5221||Shred||",
+				[99] = "spell|22842||Frenzied Regeneration||",
 			},
 		},
 		["MONK"] = {
 		},
-		["ROGUE"] = {
+		["PALADIN"] = {
 		},
 	},
 	["spellSubs"] = {
