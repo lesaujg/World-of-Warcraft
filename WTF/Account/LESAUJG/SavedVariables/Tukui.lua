@@ -1116,7 +1116,7 @@ TukuiData = {
 			["Herbinator"] = 5469865,
 			["Galinar"] = 82596233,
 			["Belrath"] = 98013973,
-			["Clothgar"] = 8751956985,
+			["Clothgar"] = 8753835294,
 			["Sanjuri"] = 11460,
 			["Uldaris"] = 1168979627,
 		},
