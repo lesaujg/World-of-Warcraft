@@ -10,10 +10,10 @@ SkadaPerCharDB = {
 			["endtime"] = 1456708677,
 			["multistrikes"] = 80,
 			["power"] = {
-				[2] = 136,
 				[13] = 7,
-				[12] = 10,
+				[2] = 136,
 				[9] = 12,
+				[12] = 10,
 			},
 			["damage"] = 5312117,
 			["players"] = {
@@ -168,14 +168,6 @@ SkadaPerCharDB = {
 							["max"] = 2496,
 							["damage"] = 33796,
 						},
-						["Hand of Light"] = {
-							["min"] = 2917,
-							["hit"] = 12,
-							["totalhits"] = 12,
-							["id"] = 96172,
-							["max"] = 22740,
-							["damage"] = 133005,
-						},
 						["Final Verdict"] = {
 							["min"] = 21429,
 							["multistrike"] = 1,
@@ -194,6 +186,14 @@ SkadaPerCharDB = {
 							["max"] = 7502,
 							["damage"] = 22059,
 						},
+						["Hand of Light"] = {
+							["min"] = 2917,
+							["hit"] = 12,
+							["totalhits"] = 12,
+							["id"] = 96172,
+							["max"] = 22740,
+							["damage"] = 133005,
+						},
 						["Attack"] = {
 							["min"] = 4358,
 							["critical"] = 1,
@@ -204,6 +204,8 @@ SkadaPerCharDB = {
 							["damage"] = 53628,
 						},
 					},
+					["shielding"] = 0,
+					["damagetaken"] = 189678,
 					["power"] = {
 						[9] = {
 							["amount"] = 12,
@@ -214,19 +216,17 @@ SkadaPerCharDB = {
 							},
 						},
 					},
-					["damagetaken"] = 189678,
-					["shielding"] = 0,
 					["id"] = "Player-3721-092B9537",
-					["first"] = 1456708637,
+					["maxhp"] = 288420,
 					["healing"] = 15931,
 					["damagetakenspells"] = {
 						["Alluring Perfume"] = {
 							["crushing"] = 0,
 							["id"] = 68641,
 							["absorbed"] = 0,
-							["min"] = 2012,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 2012,
 							["multistrike"] = 0,
 							["name"] = "Alluring Perfume",
 							["blocked"] = 0,
@@ -239,9 +239,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68934,
 							["absorbed"] = 0,
-							["min"] = 265,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 265,
 							["multistrike"] = 0,
 							["name"] = "Concentrated Irresistible Cologne Spill",
 							["blocked"] = 0,
@@ -254,9 +254,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68607,
 							["absorbed"] = 0,
-							["min"] = 12787,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 12787,
 							["multistrike"] = 0,
 							["name"] = "Alluring Perfume Spray",
 							["blocked"] = 0,
@@ -269,9 +269,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68947,
 							["absorbed"] = 0,
-							["min"] = 2101,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 2101,
 							["multistrike"] = 0,
 							["name"] = "Irresistible Cologne",
 							["blocked"] = 0,
@@ -284,9 +284,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68948,
 							["absorbed"] = 0,
-							["min"] = 12787,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 12787,
 							["multistrike"] = 0,
 							["name"] = "Irresistible Cologne Spray",
 							["blocked"] = 0,
@@ -299,9 +299,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 6603,
 							["absorbed"] = 0,
-							["min"] = 6370,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 6370,
 							["multistrike"] = 0,
 							["name"] = "Attack",
 							["blocked"] = 0,
@@ -323,7 +323,7 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Arcadeos",
 					["alertCount"] = 0,
-					["maxhp"] = 288420,
+					["first"] = 1456708637,
 					["dispells"] = 0,
 					["alert"] = {
 					},
@@ -498,21 +498,21 @@ SkadaPerCharDB = {
 							["damage"] = 17786,
 						},
 					},
+					["shielding"] = 0,
+					["damagetaken"] = 15153,
 					["power"] = {
 					},
-					["damagetaken"] = 15153,
-					["shielding"] = 0,
 					["id"] = "Player-1169-06A1AD17",
-					["first"] = 1456708638,
+					["maxhp"] = 338640,
 					["healing"] = 514364,
 					["damagetakenspells"] = {
 						["Irresistible Cologne"] = {
 							["crushing"] = 0,
 							["id"] = 68947,
 							["absorbed"] = 0,
-							["min"] = 2332,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 2332,
 							["multistrike"] = 0,
 							["name"] = "Irresistible Cologne",
 							["blocked"] = 0,
@@ -525,9 +525,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68934,
 							["absorbed"] = 0,
-							["min"] = 311,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 311,
 							["multistrike"] = 0,
 							["name"] = "Concentrated Irresistible Cologne Spill",
 							["blocked"] = 0,
@@ -540,9 +540,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68641,
 							["absorbed"] = 0,
-							["min"] = 2187,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 2187,
 							["multistrike"] = 0,
 							["name"] = "Alluring Perfume",
 							["blocked"] = 0,
@@ -593,13 +593,6 @@ SkadaPerCharDB = {
 							["name"] = "Pancake",
 							["shielding"] = 0,
 						},
-						["Player-1169-06A1AD17"] = {
-							["role"] = "HEALER",
-							["name"] = "Uldaris",
-							["amount"] = 15153,
-							["class"] = "DRUID",
-							["shielding"] = 0,
-						},
 						["Creature-0-3766-33-637-63508-0000539C23"] = {
 							["role"] = "NONE",
 							["name"] = "Xuen",
@@ -607,11 +600,18 @@ SkadaPerCharDB = {
 							["class"] = "WARRIOR",
 							["shielding"] = 0,
 						},
+						["Player-1169-06A1AD17"] = {
+							["role"] = "HEALER",
+							["name"] = "Uldaris",
+							["amount"] = 15153,
+							["class"] = "DRUID",
+							["shielding"] = 0,
+						},
 					},
 					["alertDamage"] = 0,
 					["name"] = "Uldaris",
 					["alertCount"] = 0,
-					["maxhp"] = 338640,
+					["first"] = 1456708638,
 					["dispells"] = 0,
 					["alert"] = {
 					},
@@ -649,19 +649,19 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 22,
 						},
-						["Twist of Fate"] = {
-							["name"] = "Twist of Fate",
-							["active"] = 1,
-							["id"] = 123254,
-							["auratype"] = "BUFF",
-							["uptime"] = 36,
-						},
 						["Shadow Word: Pain"] = {
 							["name"] = "Shadow Word: Pain",
 							["active"] = 0,
 							["id"] = 589,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 18,
+						},
+						["Twist of Fate"] = {
+							["name"] = "Twist of Fate",
+							["active"] = 1,
+							["id"] = 123254,
+							["auratype"] = "BUFF",
+							["uptime"] = 36,
 						},
 						["Mind Flay"] = {
 							["name"] = "Mind Flay",
@@ -790,6 +790,8 @@ SkadaPerCharDB = {
 							["damage"] = 805264,
 						},
 					},
+					["shielding"] = 0,
+					["damagetaken"] = 112940,
 					["power"] = {
 						[13] = {
 							["amount"] = 7,
@@ -799,19 +801,17 @@ SkadaPerCharDB = {
 							},
 						},
 					},
-					["damagetaken"] = 112940,
-					["shielding"] = 0,
 					["id"] = "Player-1168-0699E53C",
-					["first"] = 1456708638,
+					["maxhp"] = 385740,
 					["healing"] = 47221,
 					["damagetakenspells"] = {
 						["Irresistible Cologne"] = {
 							["crushing"] = 0,
 							["id"] = 68947,
 							["absorbed"] = 0,
-							["min"] = 2263,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 2263,
 							["multistrike"] = 0,
 							["name"] = "Irresistible Cologne",
 							["blocked"] = 0,
@@ -824,9 +824,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68948,
 							["absorbed"] = 0,
-							["min"] = 13481,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 13481,
 							["multistrike"] = 0,
 							["name"] = "Irresistible Cologne Spray",
 							["blocked"] = 0,
@@ -839,9 +839,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 6603,
 							["absorbed"] = 0,
-							["min"] = 9130,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 9130,
 							["multistrike"] = 0,
 							["name"] = "Attack",
 							["blocked"] = 0,
@@ -863,7 +863,7 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Wannablaze",
 					["alertCount"] = 0,
-					["maxhp"] = 385740,
+					["first"] = 1456708638,
 					["dispells"] = 0,
 					["alert"] = {
 					},
@@ -914,19 +914,19 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 3,
 						},
-						["Rising Sun Kick"] = {
-							["name"] = "Rising Sun Kick",
-							["active"] = 0,
-							["id"] = 130320,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 0,
-						},
 						["Tigereye Brew"] = {
 							["name"] = "Tigereye Brew",
 							["active"] = 1,
 							["id"] = 125195,
 							["auratype"] = "BUFF",
 							["uptime"] = 15,
+						},
+						["Death Note"] = {
+							["name"] = "Death Note",
+							["active"] = 0,
+							["id"] = 121125,
+							["auratype"] = "BUFF",
+							["uptime"] = 6,
 						},
 						["Xuen: Tiger Lust"] = {
 							["name"] = "Xuen: Tiger Lust",
@@ -935,12 +935,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 8,
 						},
-						["Death Note"] = {
-							["name"] = "Death Note",
+						["Rising Sun Kick"] = {
+							["name"] = "Rising Sun Kick",
 							["active"] = 0,
-							["id"] = 121125,
-							["auratype"] = "BUFF",
-							["uptime"] = 6,
+							["id"] = 130320,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 0,
 						},
 					},
 					["role"] = "DAMAGER",
@@ -1027,6 +1027,8 @@ SkadaPerCharDB = {
 							["damage"] = 27839,
 						},
 					},
+					["shielding"] = 0,
+					["damagetaken"] = 39162,
 					["power"] = {
 						[12] = {
 							["amount"] = 10,
@@ -1035,19 +1037,17 @@ SkadaPerCharDB = {
 							},
 						},
 					},
-					["damagetaken"] = 39162,
-					["shielding"] = 0,
 					["id"] = "Player-1169-066139A2",
-					["first"] = 1456708638,
+					["maxhp"] = 172260,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 						["Alluring Perfume"] = {
 							["crushing"] = 0,
 							["id"] = 68641,
 							["absorbed"] = 0,
-							["min"] = 2242,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 2242,
 							["multistrike"] = 0,
 							["name"] = "Alluring Perfume",
 							["blocked"] = 0,
@@ -1060,9 +1060,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68947,
 							["absorbed"] = 0,
-							["min"] = 2292,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 2292,
 							["multistrike"] = 0,
 							["name"] = "Irresistible Cologne",
 							["blocked"] = 0,
@@ -1077,7 +1077,7 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Sotaki",
 					["alertCount"] = 0,
-					["maxhp"] = 172260,
+					["first"] = 1456708638,
 					["dispells"] = 0,
 					["alert"] = {
 					},
@@ -1259,6 +1259,8 @@ SkadaPerCharDB = {
 							["damage"] = 121508,
 						},
 					},
+					["shielding"] = 0,
+					["damagetaken"] = 76017,
 					["power"] = {
 						[2] = {
 							["amount"] = 136,
@@ -1268,19 +1270,17 @@ SkadaPerCharDB = {
 							},
 						},
 					},
-					["damagetaken"] = 76017,
-					["shielding"] = 0,
 					["id"] = "Player-3675-071130E6",
-					["first"] = 1456708640,
+					["maxhp"] = 358860,
 					["healing"] = 14355,
 					["damagetakenspells"] = {
 						["Irresistible Cologne"] = {
 							["crushing"] = 0,
 							["id"] = 68947,
 							["absorbed"] = 0,
-							["min"] = 1968,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 1968,
 							["multistrike"] = 0,
 							["name"] = "Irresistible Cologne",
 							["blocked"] = 0,
@@ -1293,9 +1293,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68948,
 							["absorbed"] = 0,
-							["min"] = 12946,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 12946,
 							["multistrike"] = 0,
 							["name"] = "Irresistible Cologne Spray",
 							["blocked"] = 0,
@@ -1308,9 +1308,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 6603,
 							["absorbed"] = 0,
-							["min"] = 9001,
-							["critical"] = 1,
 							["glancing"] = 0,
+							["critical"] = 1,
+							["min"] = 9001,
 							["multistrike"] = 0,
 							["name"] = "Attack",
 							["blocked"] = 0,
@@ -1332,7 +1332,7 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Mulberry",
 					["alertCount"] = 0,
-					["maxhp"] = 358860,
+					["first"] = 1456708640,
 					["dispells"] = 0,
 					["alert"] = {
 					},
@@ -1375,10 +1375,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 0,
+					["taken"] = 1469194,
 					["htakenspell"] = {
 					},
-					["taken"] = 1469194,
-					["done"] = 0,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -1417,10 +1417,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 158456,
+					["taken"] = 1601408,
 					["htakenspell"] = {
 					},
-					["taken"] = 1601408,
-					["done"] = 158456,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -1435,10 +1435,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 0,
+					["taken"] = 742719,
 					["htakenspell"] = {
 					},
-					["taken"] = 742719,
-					["done"] = 0,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -1477,10 +1477,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 273603,
+					["taken"] = 1498796,
 					["htakenspell"] = {
 					},
-					["taken"] = 1498796,
-					["done"] = 273603,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -1607,126 +1607,15 @@ SkadaPerCharDB = {
 						["multistrikes"] = 0,
 					},
 				},
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708672.05,
-						["hp"] = 288420,
-						["spellid"] = 155777,
-						["srcname"] = "Uldaris",
-					}, -- [1]
-					{
-						["ts"] = 1456708674.643,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 288420,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708674.643,
-						["hp"] = 288420,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708674.643,
-						["hp"] = 288420,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [4]
-					{
-						["ts"] = 1456708676.332,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 288420,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [5]
-					{
-						["ts"] = 1456708664.122,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 288420,
-						["spellid"] = 155777,
-						["srcname"] = "Uldaris",
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708666.674,
-						["hp"] = 288420,
-						["spellid"] = 155777,
-						["srcname"] = "Uldaris",
-					}, -- [7]
-					{
-						["ts"] = 1456708667.926,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 288420,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [8]
-					{
-						["hp"] = 288155,
-						["ts"] = 1456708668.987,
-						["spellid"] = 68934,
-						["amount"] = -265,
-					}, -- [9]
-					{
-						["ts"] = 1456708669.167,
-						["amount"] = 265,
-						["absorb"] = 0,
-						["hp"] = 288420,
-						["spellid"] = 155777,
-						["srcname"] = "Uldaris",
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708669.167,
-						["hp"] = 288420,
-						["spellid"] = 155777,
-						["srcname"] = "Uldaris",
-					}, -- [11]
-					{
-						["ts"] = 1456708669.167,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 288420,
-						["spellid"] = 155777,
-						["srcname"] = "Uldaris",
-					}, -- [12]
-					{
-						["ts"] = 1456708671.277,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 288420,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [13]
-					{
-						["ts"] = 1456708671.693,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 288420,
-						["spellid"] = 155777,
-						["srcname"] = "Uldaris",
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708672.05,
-						["hp"] = 288420,
-						["spellid"] = 155777,
-						["srcname"] = "Uldaris",
-					}, -- [15]
-					["pos"] = 6,
+				["power"] = {
+					[9] = {
+						["amount"] = 12,
+						["spells"] = {
+							[147715] = 3,
+							[35395] = 3,
+							[111528] = 6,
+						},
+					},
 				},
 				["damage"] = 651141,
 				["damagespells"] = {
@@ -1777,14 +1666,6 @@ SkadaPerCharDB = {
 						["max"] = 2496,
 						["damage"] = 33796,
 					},
-					["Hand of Light"] = {
-						["min"] = 2917,
-						["hit"] = 12,
-						["totalhits"] = 12,
-						["id"] = 96172,
-						["max"] = 22740,
-						["damage"] = 133005,
-					},
 					["Final Verdict"] = {
 						["min"] = 21429,
 						["multistrike"] = 1,
@@ -1803,6 +1684,14 @@ SkadaPerCharDB = {
 						["max"] = 7502,
 						["damage"] = 22059,
 					},
+					["Hand of Light"] = {
+						["min"] = 2917,
+						["hit"] = 12,
+						["totalhits"] = 12,
+						["id"] = 96172,
+						["max"] = 22740,
+						["damage"] = 133005,
+					},
 					["Attack"] = {
 						["min"] = 4358,
 						["critical"] = 1,
@@ -1813,18 +1702,129 @@ SkadaPerCharDB = {
 						["damage"] = 53628,
 					},
 				},
-				["power"] = {
-					[9] = {
-						["amount"] = 12,
-						["spells"] = {
-							[147715] = 3,
-							[35395] = 3,
-							[111528] = 6,
-						},
-					},
-				},
-				["damagetaken"] = 189678,
 				["shielding"] = 0,
+				["damagetaken"] = 189678,
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708672.05,
+						["hp"] = 288420,
+						["srcname"] = "Uldaris",
+						["spellid"] = 155777,
+					}, -- [1]
+					{
+						["ts"] = 1456708674.643,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 288420,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708674.643,
+						["hp"] = 288420,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708674.643,
+						["hp"] = 288420,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [4]
+					{
+						["ts"] = 1456708676.332,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 288420,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [5]
+					{
+						["ts"] = 1456708664.122,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 288420,
+						["srcname"] = "Uldaris",
+						["spellid"] = 155777,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708666.674,
+						["hp"] = 288420,
+						["srcname"] = "Uldaris",
+						["spellid"] = 155777,
+					}, -- [7]
+					{
+						["ts"] = 1456708667.926,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 288420,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [8]
+					{
+						["hp"] = 288155,
+						["ts"] = 1456708668.987,
+						["spellid"] = 68934,
+						["amount"] = -265,
+					}, -- [9]
+					{
+						["ts"] = 1456708669.167,
+						["amount"] = 265,
+						["absorb"] = 0,
+						["hp"] = 288420,
+						["srcname"] = "Uldaris",
+						["spellid"] = 155777,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708669.167,
+						["hp"] = 288420,
+						["srcname"] = "Uldaris",
+						["spellid"] = 155777,
+					}, -- [11]
+					{
+						["ts"] = 1456708669.167,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 288420,
+						["srcname"] = "Uldaris",
+						["spellid"] = 155777,
+					}, -- [12]
+					{
+						["ts"] = 1456708671.277,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 288420,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [13]
+					{
+						["ts"] = 1456708671.693,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 288420,
+						["srcname"] = "Uldaris",
+						["spellid"] = 155777,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708672.05,
+						["hp"] = 288420,
+						["srcname"] = "Uldaris",
+						["spellid"] = 155777,
+					}, -- [15]
+					["pos"] = 6,
+				},
 				["id"] = "Player-3721-092B9537",
 				["maxhp"] = 288420,
 				["healing"] = 15931,
@@ -1833,9 +1833,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68641,
 						["absorbed"] = 0,
-						["min"] = 2012,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 2012,
 						["multistrike"] = 0,
 						["name"] = "Alluring Perfume",
 						["blocked"] = 0,
@@ -1848,9 +1848,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68934,
 						["absorbed"] = 0,
-						["min"] = 265,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 265,
 						["multistrike"] = 0,
 						["name"] = "Concentrated Irresistible Cologne Spill",
 						["blocked"] = 0,
@@ -1863,9 +1863,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68607,
 						["absorbed"] = 0,
-						["min"] = 12787,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 12787,
 						["multistrike"] = 0,
 						["name"] = "Alluring Perfume Spray",
 						["blocked"] = 0,
@@ -1878,9 +1878,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68947,
 						["absorbed"] = 0,
-						["min"] = 2101,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 2101,
 						["multistrike"] = 0,
 						["name"] = "Irresistible Cologne",
 						["blocked"] = 0,
@@ -1893,9 +1893,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68948,
 						["absorbed"] = 0,
-						["min"] = 12787,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 12787,
 						["multistrike"] = 0,
 						["name"] = "Irresistible Cologne Spray",
 						["blocked"] = 0,
@@ -1908,9 +1908,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 6603,
 						["absorbed"] = 0,
-						["min"] = 6370,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 6370,
 						["multistrike"] = 0,
 						["name"] = "Attack",
 						["blocked"] = 0,
@@ -2084,124 +2084,7 @@ SkadaPerCharDB = {
 						["multistrikes"] = 0,
 					},
 				},
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708658.425,
-						["hp"] = 338640,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708660.087,
-						["hp"] = 338640,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [2]
-					{
-						["ts"] = 1456708661.486,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 338640,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708661.486,
-						["hp"] = 338640,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708661.486,
-						["hp"] = 338640,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [5]
-					{
-						["ts"] = 1456708655.05,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 338640,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708655.408,
-						["hp"] = 338640,
-						["spellid"] = 48438,
-						["srcname"] = "Uldaris",
-					}, -- [7]
-					{
-						["ts"] = 1456708656.262,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 338640,
-						["spellid"] = 48438,
-						["srcname"] = "Uldaris",
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708656.262,
-						["hp"] = 338640,
-						["spellid"] = 48438,
-						["srcname"] = "Uldaris",
-					}, -- [9]
-					{
-						["ts"] = 1456708656.55,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 338640,
-						["spellid"] = 48438,
-						["srcname"] = "Uldaris",
-					}, -- [10]
-					{
-						["ts"] = 1456708656.731,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 338640,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [11]
-					{
-						["hp"] = 338325,
-						["ts"] = 1456708656.765,
-						["spellid"] = 68934,
-						["amount"] = -315,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 315,
-						["ts"] = 1456708657.739,
-						["hp"] = 338640,
-						["spellid"] = 145109,
-						["srcname"] = "Uldaris",
-					}, -- [13]
-					{
-						["hp"] = 338329,
-						["ts"] = 1456708657.739,
-						["spellid"] = 68934,
-						["amount"] = -311,
-					}, -- [14]
-					{
-						["ts"] = 1456708658.425,
-						["amount"] = 311,
-						["absorb"] = 0,
-						["hp"] = 338640,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [15]
-					["pos"] = 6,
+				["power"] = {
 				},
 				["damage"] = 25561,
 				["damagespells"] = {
@@ -2223,10 +2106,127 @@ SkadaPerCharDB = {
 						["damage"] = 17786,
 					},
 				},
-				["power"] = {
-				},
-				["damagetaken"] = 15153,
 				["shielding"] = 0,
+				["damagetaken"] = 15153,
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708658.425,
+						["hp"] = 338640,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708660.087,
+						["hp"] = 338640,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [2]
+					{
+						["ts"] = 1456708661.486,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 338640,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708661.486,
+						["hp"] = 338640,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708661.486,
+						["hp"] = 338640,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [5]
+					{
+						["ts"] = 1456708655.05,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 338640,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708655.408,
+						["hp"] = 338640,
+						["srcname"] = "Uldaris",
+						["spellid"] = 48438,
+					}, -- [7]
+					{
+						["ts"] = 1456708656.262,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 338640,
+						["srcname"] = "Uldaris",
+						["spellid"] = 48438,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708656.262,
+						["hp"] = 338640,
+						["srcname"] = "Uldaris",
+						["spellid"] = 48438,
+					}, -- [9]
+					{
+						["ts"] = 1456708656.55,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 338640,
+						["srcname"] = "Uldaris",
+						["spellid"] = 48438,
+					}, -- [10]
+					{
+						["ts"] = 1456708656.731,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 338640,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [11]
+					{
+						["hp"] = 338325,
+						["ts"] = 1456708656.765,
+						["spellid"] = 68934,
+						["amount"] = -315,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 315,
+						["ts"] = 1456708657.739,
+						["hp"] = 338640,
+						["srcname"] = "Uldaris",
+						["spellid"] = 145109,
+					}, -- [13]
+					{
+						["hp"] = 338329,
+						["ts"] = 1456708657.739,
+						["spellid"] = 68934,
+						["amount"] = -311,
+					}, -- [14]
+					{
+						["ts"] = 1456708658.425,
+						["amount"] = 311,
+						["absorb"] = 0,
+						["hp"] = 338640,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [15]
+					["pos"] = 6,
+				},
 				["id"] = "Player-1169-06A1AD17",
 				["maxhp"] = 338640,
 				["healing"] = 514364,
@@ -2235,9 +2235,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68947,
 						["absorbed"] = 0,
-						["min"] = 2332,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 2332,
 						["multistrike"] = 0,
 						["name"] = "Irresistible Cologne",
 						["blocked"] = 0,
@@ -2250,9 +2250,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68934,
 						["absorbed"] = 0,
-						["min"] = 311,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 311,
 						["multistrike"] = 0,
 						["name"] = "Concentrated Irresistible Cologne Spill",
 						["blocked"] = 0,
@@ -2265,9 +2265,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68641,
 						["absorbed"] = 0,
-						["min"] = 2187,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 2187,
 						["multistrike"] = 0,
 						["name"] = "Alluring Perfume",
 						["blocked"] = 0,
@@ -2318,18 +2318,18 @@ SkadaPerCharDB = {
 						["name"] = "Pancake",
 						["shielding"] = 0,
 					},
-					["Player-1169-06A1AD17"] = {
-						["role"] = "HEALER",
-						["name"] = "Uldaris",
-						["amount"] = 15153,
-						["class"] = "DRUID",
-						["shielding"] = 0,
-					},
 					["Creature-0-3766-33-637-63508-0000539C23"] = {
 						["role"] = "NONE",
 						["name"] = "Xuen",
 						["amount"] = 43093,
 						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+					["Player-1169-06A1AD17"] = {
+						["role"] = "HEALER",
+						["name"] = "Uldaris",
+						["amount"] = 15153,
+						["class"] = "DRUID",
 						["shielding"] = 0,
 					},
 				},
@@ -2383,26 +2383,12 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 3,
 					},
-					["Rising Sun Kick"] = {
-						["name"] = "Rising Sun Kick",
-						["active"] = 0,
-						["id"] = 130320,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 0,
-					},
 					["Tigereye Brew"] = {
 						["name"] = "Tigereye Brew",
 						["active"] = 1,
 						["id"] = 125195,
 						["auratype"] = "BUFF",
 						["uptime"] = 15,
-					},
-					["Xuen: Tiger Lust"] = {
-						["name"] = "Xuen: Tiger Lust",
-						["active"] = 0,
-						["id"] = 124009,
-						["auratype"] = "BUFF",
-						["uptime"] = 8,
 					},
 					["Death Note"] = {
 						["name"] = "Death Note",
@@ -2411,6 +2397,20 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 6,
 					},
+					["Xuen: Tiger Lust"] = {
+						["name"] = "Xuen: Tiger Lust",
+						["active"] = 0,
+						["id"] = 124009,
+						["auratype"] = "BUFF",
+						["uptime"] = 8,
+					},
+					["Rising Sun Kick"] = {
+						["name"] = "Rising Sun Kick",
+						["active"] = 0,
+						["id"] = 130320,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 0,
+					},
 				},
 				["role"] = "DAMAGER",
 				["time"] = 38,
@@ -2418,125 +2418,13 @@ SkadaPerCharDB = {
 				["overhealing"] = 0,
 				["healingspells"] = {
 				},
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 1011,
-						["ts"] = 1456708666.244,
-						["hp"] = 172260,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708666.244,
-						["hp"] = 172260,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [2]
-					{
-						["ts"] = 1456708676.332,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 172260,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [3]
-					{
-						["ts"] = 1456708655.05,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 172260,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708655.05,
-						["hp"] = 172260,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708655.408,
-						["hp"] = 172260,
-						["spellid"] = 48438,
-						["srcname"] = "Uldaris",
-					}, -- [6]
-					{
-						["ts"] = 1456708655.408,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 172260,
-						["spellid"] = 48438,
-						["srcname"] = "Uldaris",
-					}, -- [7]
-					{
-						["ts"] = 1456708656.262,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 172260,
-						["spellid"] = 48438,
-						["srcname"] = "Uldaris",
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708656.55,
-						["hp"] = 172260,
-						["spellid"] = 48438,
-						["srcname"] = "Uldaris",
-					}, -- [9]
-					{
-						["ts"] = 1456708656.731,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 172260,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [10]
-					{
-						["ts"] = 1456708660.02,
-						["amount"] = -2292,
-						["srcname"] = "Apothecary Baxter",
-						["hp"] = 169968,
-						["spellid"] = 68947,
-					}, -- [11]
-					{
-						["ts"] = 1456708661.004,
-						["amount"] = -2641,
-						["srcname"] = "Apothecary Baxter",
-						["hp"] = 167327,
-						["spellid"] = 68947,
-					}, -- [12]
-					{
-						["ts"] = 1456708662.034,
-						["amount"] = -2740,
-						["srcname"] = "Apothecary Baxter",
-						["hp"] = 164587,
-						["spellid"] = 68947,
-					}, -- [13]
-					{
-						["ts"] = 1456708664.548,
-						["amount"] = 4164,
-						["absorb"] = 0,
-						["hp"] = 168751,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 2498,
-						["ts"] = 1456708664.548,
-						["hp"] = 171249,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [15]
-					["pos"] = 4,
+				["power"] = {
+					[12] = {
+						["amount"] = 10,
+						["spells"] = {
+							[115698] = 10,
+						},
+					},
 				},
 				["damage"] = 274568,
 				["damagespells"] = {
@@ -2615,16 +2503,128 @@ SkadaPerCharDB = {
 						["damage"] = 27839,
 					},
 				},
-				["power"] = {
-					[12] = {
-						["amount"] = 10,
-						["spells"] = {
-							[115698] = 10,
-						},
-					},
-				},
-				["damagetaken"] = 39162,
 				["shielding"] = 0,
+				["damagetaken"] = 39162,
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 1011,
+						["ts"] = 1456708666.244,
+						["hp"] = 172260,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708666.244,
+						["hp"] = 172260,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [2]
+					{
+						["ts"] = 1456708676.332,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 172260,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [3]
+					{
+						["ts"] = 1456708655.05,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 172260,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708655.05,
+						["hp"] = 172260,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708655.408,
+						["hp"] = 172260,
+						["srcname"] = "Uldaris",
+						["spellid"] = 48438,
+					}, -- [6]
+					{
+						["ts"] = 1456708655.408,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 172260,
+						["srcname"] = "Uldaris",
+						["spellid"] = 48438,
+					}, -- [7]
+					{
+						["ts"] = 1456708656.262,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 172260,
+						["srcname"] = "Uldaris",
+						["spellid"] = 48438,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708656.55,
+						["hp"] = 172260,
+						["srcname"] = "Uldaris",
+						["spellid"] = 48438,
+					}, -- [9]
+					{
+						["ts"] = 1456708656.731,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 172260,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [10]
+					{
+						["ts"] = 1456708660.02,
+						["amount"] = -2292,
+						["hp"] = 169968,
+						["spellid"] = 68947,
+						["srcname"] = "Apothecary Baxter",
+					}, -- [11]
+					{
+						["ts"] = 1456708661.004,
+						["amount"] = -2641,
+						["hp"] = 167327,
+						["spellid"] = 68947,
+						["srcname"] = "Apothecary Baxter",
+					}, -- [12]
+					{
+						["ts"] = 1456708662.034,
+						["amount"] = -2740,
+						["hp"] = 164587,
+						["spellid"] = 68947,
+						["srcname"] = "Apothecary Baxter",
+					}, -- [13]
+					{
+						["ts"] = 1456708664.548,
+						["amount"] = 4164,
+						["absorb"] = 0,
+						["hp"] = 168751,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 2498,
+						["ts"] = 1456708664.548,
+						["hp"] = 171249,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [15]
+					["pos"] = 4,
+				},
 				["id"] = "Player-1169-066139A2",
 				["maxhp"] = 172260,
 				["healing"] = 0,
@@ -2633,9 +2633,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68641,
 						["absorbed"] = 0,
-						["min"] = 2242,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 2242,
 						["multistrike"] = 0,
 						["name"] = "Alluring Perfume",
 						["blocked"] = 0,
@@ -2648,9 +2648,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68947,
 						["absorbed"] = 0,
-						["min"] = 2292,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 2292,
 						["multistrike"] = 0,
 						["name"] = "Irresistible Cologne",
 						["blocked"] = 0,
@@ -2698,19 +2698,19 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 22,
 					},
-					["Twist of Fate"] = {
-						["name"] = "Twist of Fate",
-						["active"] = 1,
-						["id"] = 123254,
-						["auratype"] = "BUFF",
-						["uptime"] = 36,
-					},
 					["Shadow Word: Pain"] = {
 						["name"] = "Shadow Word: Pain",
 						["active"] = 0,
 						["id"] = 589,
 						["auratype"] = "DEBUFF",
 						["uptime"] = 18,
+					},
+					["Twist of Fate"] = {
+						["name"] = "Twist of Fate",
+						["active"] = 1,
+						["id"] = 123254,
+						["auratype"] = "BUFF",
+						["uptime"] = 36,
 					},
 					["Mind Flay"] = {
 						["name"] = "Mind Flay",
@@ -2754,128 +2754,14 @@ SkadaPerCharDB = {
 						["multistrikes"] = 0,
 					},
 				},
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708670.799,
-						["hp"] = 385740,
-						["spellid"] = 127626,
-						["srcname"] = "Wannablaze-Cenarius",
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708671.555,
-						["hp"] = 385740,
-						["spellid"] = 127626,
-						["srcname"] = "Wannablaze-Cenarius",
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708672.322,
-						["hp"] = 385740,
-						["spellid"] = 127626,
-						["srcname"] = "Wannablaze-Cenarius",
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708672.38,
-						["hp"] = 385740,
-						["spellid"] = 155777,
-						["srcname"] = "Uldaris",
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708672.964,
-						["hp"] = 385740,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [5]
-					{
-						["ts"] = 1456708672.964,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 385740,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [6]
-					{
-						["ts"] = 1456708673.021,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 385740,
-						["spellid"] = 774,
-						["srcname"] = "Uldaris",
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708673.376,
-						["hp"] = 385740,
-						["spellid"] = 774,
-						["srcname"] = "Uldaris",
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708673.376,
-						["hp"] = 385740,
-						["spellid"] = 774,
-						["srcname"] = "Uldaris",
-					}, -- [9]
-					{
-						["ts"] = 1456708673.376,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 385740,
-						["spellid"] = 774,
-						["srcname"] = "Uldaris",
-					}, -- [10]
-					{
-						["ts"] = 1456708674.643,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 385740,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [11]
-					{
-						["ts"] = 1456708674.895,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 385740,
-						["spellid"] = 155777,
-						["srcname"] = "Uldaris",
-					}, -- [12]
-					{
-						["ts"] = 1456708674.895,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 385740,
-						["spellid"] = 155777,
-						["srcname"] = "Uldaris",
-					}, -- [13]
-					{
-						["ts"] = 1456708670.49,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 385740,
-						["spellid"] = 774,
-						["srcname"] = "Uldaris",
-					}, -- [14]
-					{
-						["ts"] = 1456708670.49,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 385740,
-						["spellid"] = 774,
-						["srcname"] = "Uldaris",
-					}, -- [15]
-					["pos"] = 14,
+				["power"] = {
+					[13] = {
+						["amount"] = 7,
+						["spells"] = {
+							[8092] = 6,
+							[125927] = 1,
+						},
+					},
 				},
 				["damage"] = 2251044,
 				["damagespells"] = {
@@ -2961,17 +2847,131 @@ SkadaPerCharDB = {
 						["damage"] = 805264,
 					},
 				},
-				["power"] = {
-					[13] = {
-						["amount"] = 7,
-						["spells"] = {
-							[8092] = 6,
-							[125927] = 1,
-						},
-					},
-				},
-				["damagetaken"] = 112940,
 				["shielding"] = 0,
+				["damagetaken"] = 112940,
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708670.799,
+						["hp"] = 385740,
+						["srcname"] = "Wannablaze-Cenarius",
+						["spellid"] = 127626,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708671.555,
+						["hp"] = 385740,
+						["srcname"] = "Wannablaze-Cenarius",
+						["spellid"] = 127626,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708672.322,
+						["hp"] = 385740,
+						["srcname"] = "Wannablaze-Cenarius",
+						["spellid"] = 127626,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708672.38,
+						["hp"] = 385740,
+						["srcname"] = "Uldaris",
+						["spellid"] = 155777,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708672.964,
+						["hp"] = 385740,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [5]
+					{
+						["ts"] = 1456708672.964,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 385740,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [6]
+					{
+						["ts"] = 1456708673.021,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 385740,
+						["srcname"] = "Uldaris",
+						["spellid"] = 774,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708673.376,
+						["hp"] = 385740,
+						["srcname"] = "Uldaris",
+						["spellid"] = 774,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708673.376,
+						["hp"] = 385740,
+						["srcname"] = "Uldaris",
+						["spellid"] = 774,
+					}, -- [9]
+					{
+						["ts"] = 1456708673.376,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 385740,
+						["srcname"] = "Uldaris",
+						["spellid"] = 774,
+					}, -- [10]
+					{
+						["ts"] = 1456708674.643,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 385740,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [11]
+					{
+						["ts"] = 1456708674.895,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 385740,
+						["srcname"] = "Uldaris",
+						["spellid"] = 155777,
+					}, -- [12]
+					{
+						["ts"] = 1456708674.895,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 385740,
+						["srcname"] = "Uldaris",
+						["spellid"] = 155777,
+					}, -- [13]
+					{
+						["ts"] = 1456708670.49,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 385740,
+						["srcname"] = "Uldaris",
+						["spellid"] = 774,
+					}, -- [14]
+					{
+						["ts"] = 1456708670.49,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 385740,
+						["srcname"] = "Uldaris",
+						["spellid"] = 774,
+					}, -- [15]
+					["pos"] = 14,
+				},
 				["id"] = "Player-1168-0699E53C",
 				["maxhp"] = 385740,
 				["healing"] = 47221,
@@ -2980,9 +2980,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68947,
 						["absorbed"] = 0,
-						["min"] = 2263,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 2263,
 						["multistrike"] = 0,
 						["name"] = "Irresistible Cologne",
 						["blocked"] = 0,
@@ -2995,9 +2995,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68948,
 						["absorbed"] = 0,
-						["min"] = 13481,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 13481,
 						["multistrike"] = 0,
 						["name"] = "Irresistible Cologne Spray",
 						["blocked"] = 0,
@@ -3010,9 +3010,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 6603,
 						["absorbed"] = 0,
-						["min"] = 9130,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 9130,
 						["multistrike"] = 0,
 						["name"] = "Attack",
 						["blocked"] = 0,
@@ -3109,128 +3109,14 @@ SkadaPerCharDB = {
 						["multistrikes"] = 0,
 					},
 				},
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708669.856,
-						["hp"] = 358860,
-						["spellid"] = 774,
-						["srcname"] = "Uldaris",
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708669.856,
-						["hp"] = 358860,
-						["spellid"] = 774,
-						["srcname"] = "Uldaris",
-					}, -- [2]
-					{
-						["ts"] = 1456708672.826,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 358860,
-						["spellid"] = 53353,
-						["srcname"] = "Mulberry-MoonGuard",
-					}, -- [3]
-					{
-						["ts"] = 1456708672.964,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 358860,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708672.964,
-						["hp"] = 358860,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708674.643,
-						["hp"] = 358860,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708674.643,
-						["hp"] = 358860,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708676.332,
-						["hp"] = 358860,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708666.244,
-						["hp"] = 358860,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708666.987,
-						["hp"] = 358860,
-						["spellid"] = 774,
-						["srcname"] = "Uldaris",
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708666.987,
-						["hp"] = 358860,
-						["spellid"] = 774,
-						["srcname"] = "Uldaris",
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708669.534,
-						["hp"] = 358860,
-						["spellid"] = 774,
-						["srcname"] = "Uldaris",
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708669.534,
-						["hp"] = 358860,
-						["spellid"] = 774,
-						["srcname"] = "Uldaris",
-					}, -- [13]
-					{
-						["ts"] = 1456708669.592,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 358860,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [14]
-					{
-						["ts"] = 1456708669.592,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 358860,
-						["spellid"] = 81269,
-						["srcname"] = "Uldaris",
-					}, -- [15]
-					["pos"] = 9,
+				["power"] = {
+					[2] = {
+						["amount"] = 136,
+						["spells"] = {
+							[77443] = 56,
+							[157722] = 80,
+						},
+					},
 				},
 				["damage"] = 2109803,
 				["damagespells"] = {
@@ -3334,17 +3220,131 @@ SkadaPerCharDB = {
 						["damage"] = 121508,
 					},
 				},
-				["power"] = {
-					[2] = {
-						["amount"] = 136,
-						["spells"] = {
-							[77443] = 56,
-							[157722] = 80,
-						},
-					},
-				},
-				["damagetaken"] = 76017,
 				["shielding"] = 0,
+				["damagetaken"] = 76017,
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708669.856,
+						["hp"] = 358860,
+						["srcname"] = "Uldaris",
+						["spellid"] = 774,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708669.856,
+						["hp"] = 358860,
+						["srcname"] = "Uldaris",
+						["spellid"] = 774,
+					}, -- [2]
+					{
+						["ts"] = 1456708672.826,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 358860,
+						["srcname"] = "Mulberry-MoonGuard",
+						["spellid"] = 53353,
+					}, -- [3]
+					{
+						["ts"] = 1456708672.964,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 358860,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708672.964,
+						["hp"] = 358860,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708674.643,
+						["hp"] = 358860,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708674.643,
+						["hp"] = 358860,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708676.332,
+						["hp"] = 358860,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708666.244,
+						["hp"] = 358860,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708666.987,
+						["hp"] = 358860,
+						["srcname"] = "Uldaris",
+						["spellid"] = 774,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708666.987,
+						["hp"] = 358860,
+						["srcname"] = "Uldaris",
+						["spellid"] = 774,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708669.534,
+						["hp"] = 358860,
+						["srcname"] = "Uldaris",
+						["spellid"] = 774,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708669.534,
+						["hp"] = 358860,
+						["srcname"] = "Uldaris",
+						["spellid"] = 774,
+					}, -- [13]
+					{
+						["ts"] = 1456708669.592,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 358860,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [14]
+					{
+						["ts"] = 1456708669.592,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 358860,
+						["srcname"] = "Uldaris",
+						["spellid"] = 81269,
+					}, -- [15]
+					["pos"] = 9,
+				},
 				["id"] = "Player-3675-071130E6",
 				["maxhp"] = 358860,
 				["healing"] = 14355,
@@ -3353,9 +3353,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68947,
 						["absorbed"] = 0,
-						["min"] = 1968,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 1968,
 						["multistrike"] = 0,
 						["name"] = "Irresistible Cologne",
 						["blocked"] = 0,
@@ -3368,9 +3368,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68948,
 						["absorbed"] = 0,
-						["min"] = 12946,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 12946,
 						["multistrike"] = 0,
 						["name"] = "Irresistible Cologne Spray",
 						["blocked"] = 0,
@@ -3383,9 +3383,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 6603,
 						["absorbed"] = 0,
-						["min"] = 9001,
-						["critical"] = 1,
 						["glancing"] = 0,
+						["critical"] = 1,
+						["min"] = 9001,
 						["multistrike"] = 0,
 						["name"] = "Attack",
 						["blocked"] = 0,
@@ -3450,10 +3450,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 1469194,
 				["htakenspell"] = {
 				},
-				["taken"] = 1469194,
-				["done"] = 0,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -3492,10 +3492,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 158456,
+				["taken"] = 1601408,
 				["htakenspell"] = {
 				},
-				["taken"] = 1601408,
-				["done"] = 158456,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -3510,10 +3510,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 742719,
 				["htakenspell"] = {
 				},
-				["taken"] = 742719,
-				["done"] = 0,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -3552,20 +3552,20 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 273603,
+				["taken"] = 1498796,
 				["htakenspell"] = {
 				},
-				["taken"] = 1498796,
-				["done"] = 273603,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
 			},
 		},
 		["power"] = {
-			[2] = 136,
 			[13] = 7,
-			[12] = 10,
+			[2] = 136,
 			[9] = 12,
+			[12] = 10,
 		},
 		["mobtaken"] = 5312117,
 		["healing"] = 591871,
