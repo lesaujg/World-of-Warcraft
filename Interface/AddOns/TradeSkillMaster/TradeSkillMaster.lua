@@ -305,10 +305,6 @@ function TSM:OnInitialize()
 	for i=1, C_PetJournal.GetNumPets() do C_PetJournal.GetPetInfoByIndex(i) end
 	-- force a garbage collection
 	collectgarbage()
-
-	if not TSM.Analytics then
-		TSM:ShowConfigError("A recent update to TSM requires you to restart WoW completely. Failure to do so may lead to errors.")
-	end
 end
 
 function TSM:OnEnable()
@@ -407,7 +403,7 @@ function TSM:OnTSMDBShutdown(appDB)
 	if not appDB then return end
 
 	-- store region
-	local region = LibRealmInfo:GetCurrentRegion() or "PTR"
+	local region = TSMAPI:GetRegion()
 	appDB.region = region
 
 	local function GetShoppingMaxPrice(itemString, groupPath)
@@ -833,4 +829,9 @@ function TSMAPI:GetConnectedRealms()
 		private.cachedConnectedRealms = {}
 		return private.cachedConnectedRealms
 	end
+end
+
+function TSMAPI:GetRegion()
+	local cVar = GetCVar("Portal")
+	return LibStub("LibRealmInfo"):GetCurrentRegion() or (cVar ~= "public-test" and cVar) or "PTR"
 end

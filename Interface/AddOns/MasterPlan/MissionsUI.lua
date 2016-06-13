@@ -3395,9 +3395,9 @@ do -- Ships
 			f[i == 1 and "outer" or "inner"] = t
 		end
 		local t = f:CreateTexture(nil, "ARWORK", nil, 3)
-		t:SetSize(12, 6)
+		t:SetSize(12, 5)
 		t:SetTexture("Interface\\CharacterFrame\\TempPortraitAlphaMaskSmall")
-		t:SetTexCoord(0, 1, 5/10, 1)
+		t:SetTexCoord(0, 1, 7/12, 1)
 		t:SetPoint("BOTTOM", f.inner, "BOTTOM")
 		f.innerLow = t
 		f.outer:SetVertexColor(0.2, 0.2, 0.2)
@@ -3467,10 +3467,12 @@ do -- Ships
 			end
 		end)
 	end
-	local function getGroupColor(s, r,g,b)
+	local function getGroupColor(s)
 		local c = T.config
 		if not s then
 			return 0.4, 0.4, 0.4
+		elseif s == 100 then
+			return 0.2, 0.7, 1
 		elseif c.ship4 > s then
 			return 0.6, 0, 0
 		elseif c.ship3 > s then
@@ -3479,8 +3481,6 @@ do -- Ships
 			return 1, 0.9, 0
 		elseif c.ship1 > s then
 			return 0.2, 1, 0.2
-		else
-			return r,g,b
 		end
 	end
 	local function UpdateShipMissionMap()
@@ -3496,7 +3496,7 @@ do -- Ships
 				fg = fg and not G.GetMissionGroupDeparture(fg, mission) and fg
 				lg = lg and lg ~= fg and G.GetMissionGroupDeparture(lg, mission) and lg
 
-				local nt, r, g, b = G.HasTentativeParty(mission.missionID), 0.2, 0.7, 1
+				local nt, r, g, b, r2, g2, b2 = G.HasTentativeParty(mission.missionID)
 				if nt == mission.numFollowers then
 					r,g,b = 1, 0.2, 0.6
 				elseif nt > 0 then
@@ -3504,10 +3504,11 @@ do -- Ships
 				elseif (mission.cost or 0) > oil then
 					r,g,b = 1/4, 1/4, 1/4
 				else
-					r,g,b = getGroupColor(fg and fg[1], r,g,b)
+					r,g,b = getGroupColor(fg and fg[1])
+					r2, g2, b2 = getGroupColor(lg and lg[1] or fg and fg[1])
 				end
 				ui.inner:SetVertexColor(r,g,b)
-				ui.innerLow:SetVertexColor(getGroupColor(lg and lg[1] or fg and fg[1], r,g,b))
+				ui.innerLow:SetVertexColor(r2 or r, g2 or g, b2 or b)
 				ui:Show()
 			elseif frame.MPUI then
 				frame.MPUI:Hide()

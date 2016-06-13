@@ -33,6 +33,7 @@ L["AuctionDB - Region Market Value Average (via TSM App)"] = true
 L["AuctionDB - Region Minimum Buyout Average (via TSM App)"] = true
 L["AuctionDB - Region Sale Average (via TSM App)"] = true
 L["Can't run a GetAll scan right now."] = true
+L["|cffff0000WARNING:|r TSM_AuctionDB doesn't currently have any pricing data for your realm. Either download the TSM Desktop Application from |cff99ffffhttp://tradeskillmaster.com|r to automatically update TSM_AuctionDB's data, or run a manual scan in-game."] = true
 L["%d auctions"] = true
 L["Display global historical price (via TSM Application) in the tooltip."] = true
 L["Display global market value avg (via TSM Application) in the tooltip."] = true

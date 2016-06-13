@@ -431,7 +431,10 @@ local CreateClassSpecButton, ClassSpecButton_Set do
 	end
 end
 function EV:FXUI_GARRISON_FOLLOWER_LIST_SHOW_FOLLOWER(tab, followerID)
-	local et, ab, at, ct, _hasMissions = T.EquivTrait,  tab.AbilitiesFrame.Abilities, G.GetFollowerRerollConstraints(followerID)
+	local et, ab, at, ct = T.EquivTrait, tab.AbilitiesFrame.Abilities
+	if not T.config.ignore[followerID] then
+		at, ct = G.GetFollowerRerollConstraints(followerID)
+	end
 	for i=1, #ab do
 		local button = ab[i]
 		local abid, isFree = button.IconButton.abilityID
@@ -543,6 +546,9 @@ local SpecAffinityFrame = CreateFrame("Frame") do
 					GameTooltip:AddLine(" ")
 					GameTooltip:AddLine(L"Abilities may be retrained.")
 				end
+			elseif T.config.ignore[fid] then
+				GameTooltip:SetText(L"Ignored")
+				GameTooltip:AddLine(L"Ignored followers are not included in Missions of Interest groups.", 1,1,1, 1)
 			else
 				GameTooltip:SetText(L"Redundant")
 				GameTooltip:AddLine((L"%s is not required by any Missions of Interest."):format(C_Garrison.GetFollowerName(fid)), 1,1,1, 1)
@@ -592,6 +598,7 @@ local SpecAffinityFrame = CreateFrame("Frame") do
 			end
 			self.Missions.followerID = fid
 			self.Missions:SetNormalTexture(f .. r)
+			self.Missions:GetNormalTexture():SetDesaturated(not not T.config.ignore[fid])
 			self.Missions:Show()
 			loader:Hide()
 		else

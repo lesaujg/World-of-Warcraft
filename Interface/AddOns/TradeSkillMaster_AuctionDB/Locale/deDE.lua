@@ -29,6 +29,7 @@ L["AuctionDB - Minimum Buyout"] = "AuctionDB - Mindestpreis"
 -- L["AuctionDB - Region Minimum Buyout Average (via TSM App)"] = ""
 -- L["AuctionDB - Region Sale Average (via TSM App)"] = ""
 L["Can't run a GetAll scan right now."] = "Momentan kann ein GetAll-Scan nicht durchgeführt werden."
+-- L["|cffff0000WARNING:|r TSM_AuctionDB doesn't currently have any pricing data for your realm. Either download the TSM Desktop Application from |cff99ffffhttp://tradeskillmaster.com|r to automatically update TSM_AuctionDB's data, or run a manual scan in-game."] = ""
 L["%d auctions"] = "%d Auktionen"
 L["Display global historical price (via TSM Application) in the tooltip."] = "Zeige globalen historischen Preis avg (via TSM Application) im Tooltip." -- Needs review
 L["Display global market value avg (via TSM Application) in the tooltip."] = "Zeige globalen Marktwert avg (via TSM Application) im Tooltip." -- Needs review

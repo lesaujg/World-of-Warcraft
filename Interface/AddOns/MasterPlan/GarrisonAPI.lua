@@ -1852,11 +1852,11 @@ end
 
 local FollowerEstimator, ShipEstimator, FTraitStack, STraitStack = {}, {}, T.TraitStack, T.ShipTraitStack
 local EnvironmentCounters, EnvironmentGhosts, EnvironmentBonus = T.EnvironmentCounters, T.EnvironmentGhosts, T.EnvironmentBonus
-function FollowerEstimator.GetMemberPool(includeInactive, moreFollowers)
+function FollowerEstimator.GetMemberPool(includeInactive, moreFollowers, forceInclude)
 	local f, ni, et = C_Garrison.GetFollowers(1), 1, T.EquivTrait
 	for i=1,#f do
 		local fi = f[i]
-		if fi.isCollected and (includeInactive or fi.status ~= GARRISON_FOLLOWER_INACTIVE) and not T.config.ignore[fi.followerID] then
+		if fi.isCollected and (includeInactive or fi.status ~= GARRISON_FOLLOWER_INACTIVE) and (forceInclude and fi.followerID == forceInclude or not T.config.ignore[fi.followerID]) then
 			local fid, affinity = fi.followerID, T.Affinities[fi.garrFollowerID] or 0
 			local counters, traits = {}, {-affinity}
 			for i=1,3 do
@@ -3250,7 +3250,7 @@ do -- api.GetBestGroupInfo()
 			mm = {(synthFollower(C_Garrison.GetFollowerInfo(fid), C_Garrison.GetFollowerAbilities(fid)))}
 			fid = mm[1].followerID
 		end
-		local ft, me = api.GetGroupMemberPool(1, isInactive, mm)
+		local ft, me = api.GetGroupMemberPool(1, isInactive, mm, fid)
 		for i=1,#ft do
 			if ft[i].followerID == fid then
 				me, ft[i], ft[#ft] = ft[i], i < #ft and ft[#ft] or nil
