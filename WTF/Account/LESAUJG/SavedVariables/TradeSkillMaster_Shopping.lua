@@ -38,21 +38,21 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @postUndercut"] = "1c",
 	["g@ @minDeSearchLvl"] = 1,
 	["g@ @maxDeSearchLvl"] = 735,
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
+		{
+			["lastSearch"] = 1465873141,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [1]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1465772753,
 			["name"] = "fur",
 			["filter"] = "fur",
-		}, -- [1]
-		{
-			["lastSearch"] = 1465609543,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
 		}, -- [2]
 		{
 			["lastSearch"] = 1464791352,
@@ -178,7 +178,7 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "saberfish",
 		}, -- [22]
 	},
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @normalPostPrice"] = "150% dbmarket",
 	["g@ @maxDeSearchPercent"] = 1,
 	["g@ @sniperCustomPrice"] = "0c",

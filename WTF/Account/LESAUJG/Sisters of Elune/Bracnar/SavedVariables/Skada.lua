@@ -22,17 +22,20 @@ SkadaPerCharDB = {
 				["overhealing"] = 0,
 				["healingspells"] = {
 				},
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
+				["shielding"] = 0,
+				["damagetaken"] = 60930,
 				["deathlog"] = {
 					{
 						["ts"] = 1456707598.749,
 						["amount"] = -30568,
+						["hp"] = 464024,
 						["spellid"] = 151541,
 						["srcname"] = "Bloodmaul Enforcer",
-						["hp"] = 464024,
 					}, -- [1]
 					{
 						["absorb"] = 0,
@@ -45,9 +48,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1456707599.968,
 						["amount"] = -30362,
+						["hp"] = 436165,
 						["spellid"] = 151541,
 						["srcname"] = "Bloodmaul Enforcer",
-						["hp"] = 436165,
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -82,9 +85,6 @@ SkadaPerCharDB = {
 						["spellid"] = 119611,
 					}, -- [7]
 					["pos"] = 8,
-				},
-				["damagetaken"] = 60930,
-				["power"] = {
 				},
 				["id"] = "Player-1169-06A1ACBD",
 				["maxhp"] = 494592,
@@ -130,7 +130,8 @@ SkadaPerCharDB = {
 				["overhealing"] = 0,
 				["healingspells"] = {
 				},
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["damage"] = 368452,
 				["damagespells"] = {
 					["Supernova"] = {
@@ -152,20 +153,22 @@ SkadaPerCharDB = {
 						["damage"] = 284783,
 					},
 				},
+				["shielding"] = 0,
+				["damagetaken"] = 146859,
 				["deathlog"] = {
 					{
 						["ts"] = 1456707598.749,
 						["amount"] = -36481,
+						["hp"] = 424853,
 						["spellid"] = 151541,
 						["srcname"] = "Bloodmaul Enforcer",
-						["hp"] = 424853,
 					}, -- [1]
 					{
 						["ts"] = 1456707599.53,
 						["amount"] = -35836,
+						["hp"] = 424853,
 						["spellid"] = 88163,
 						["srcname"] = "Bloodmaul Enforcer",
-						["hp"] = 424853,
 					}, -- [2]
 					{
 						["absorb"] = 0,
@@ -178,16 +181,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1456707599.968,
 						["amount"] = -36142,
+						["hp"] = 354126,
 						["spellid"] = 151541,
 						["srcname"] = "Bloodmaul Enforcer",
-						["hp"] = 354126,
 					}, -- [4]
 					{
 						["ts"] = 1456707601.546,
 						["amount"] = -38400,
+						["hp"] = 354126,
 						["spellid"] = 88163,
 						["srcname"] = "Bloodmaul Enforcer",
-						["hp"] = 354126,
 					}, -- [5]
 					{
 						["absorb"] = 0,
@@ -214,9 +217,6 @@ SkadaPerCharDB = {
 						["spellid"] = 119611,
 					}, -- [8]
 					["pos"] = 9,
-				},
-				["damagetaken"] = 146859,
-				["power"] = {
 				},
 				["id"] = "Player-106-0200B977",
 				["maxhp"] = 461334,
@@ -319,10 +319,13 @@ SkadaPerCharDB = {
 						["multistrikes"] = 0,
 					},
 				},
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
+				["shielding"] = 0,
+				["damagetaken"] = 0,
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -373,9 +376,6 @@ SkadaPerCharDB = {
 						["spellid"] = 119611,
 					}, -- [6]
 					["pos"] = 7,
-				},
-				["damagetaken"] = 0,
-				["power"] = {
 				},
 				["id"] = "Player-3726-09EFAE83",
 				["maxhp"] = 389643,
@@ -462,7 +462,15 @@ SkadaPerCharDB = {
 						["multistrikes"] = 0,
 					},
 				},
-				["shielding"] = 5518,
+				["power"] = {
+					{
+						["amount"] = 21,
+						["spells"] = {
+							[158723] = 5,
+							[16959] = 16,
+						},
+					}, -- [1]
+				},
 				["damage"] = 75360,
 				["damagespells"] = {
 					["Thrash"] = {
@@ -503,6 +511,8 @@ SkadaPerCharDB = {
 						["damage"] = 16916,
 					},
 				},
+				["shielding"] = 5518,
+				["damagetaken"] = 13937,
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -578,16 +588,6 @@ SkadaPerCharDB = {
 					}, -- [9]
 					["pos"] = 10,
 				},
-				["damagetaken"] = 13937,
-				["power"] = {
-					{
-						["amount"] = 21,
-						["spells"] = {
-							[158723] = 5,
-							[16959] = 16,
-						},
-					}, -- [1]
-				},
 				["id"] = "Player-162-08B568F2",
 				["maxhp"] = 576389,
 				["healing"] = 5518,
@@ -660,7 +660,14 @@ SkadaPerCharDB = {
 						["multistrikes"] = 0,
 					},
 				},
-				["shielding"] = 0,
+				["power"] = {
+					[3] = {
+						["amount"] = 29,
+						["spells"] = {
+							[51637] = 29,
+						},
+					},
+				},
 				["damage"] = 88695,
 				["damagespells"] = {
 					["Rupture"] = {
@@ -707,6 +714,8 @@ SkadaPerCharDB = {
 						["damage"] = 0,
 					},
 				},
+				["shielding"] = 0,
+				["damagetaken"] = 0,
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -773,15 +782,6 @@ SkadaPerCharDB = {
 						["spellid"] = 119611,
 					}, -- [8]
 					["pos"] = 9,
-				},
-				["damagetaken"] = 0,
-				["power"] = {
-					[3] = {
-						["amount"] = 29,
-						["spells"] = {
-							[51637] = 29,
-						},
-					},
 				},
 				["id"] = "Player-1129-069DDA64",
 				["maxhp"] = 495972,
