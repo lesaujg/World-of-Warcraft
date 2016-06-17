@@ -1,6 +1,6 @@
 
 _NPCScanOverlayOptions = {
-	["ShowKey"] = false,
+	["ShowKey"] = true,
 	["KeyFontSize"] = 12,
 	["LockSwap"] = false,
 	["Modules"] = {
