@@ -1,16 +1,8 @@
 
 TradeSkillMaster_ShoppingDB = {
-	["_currentProfile"] = {
-		["Orig - Sisters of Elune"] = "Default",
-		["Galinar - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
-	},
-	["_version"] = 3,
-	["g@ @sniperVendorPrice"] = true,
+	["g@ @sniperCustomPrice"] = "0c",
+	["g@ @maxDeSearchPercent"] = 1,
+	["g@ @postUndercut"] = "1c",
 	["g@ @postBidPercent"] = 0.95,
 	["_scopeKeys"] = {
 		["char"] = {
@@ -22,64 +14,61 @@ TradeSkillMaster_ShoppingDB = {
 			"Ghiaccioli - Sisters of Elune", -- [6]
 			"Herbinator - Sisters of Elune", -- [7]
 		},
-		["factionrealm"] = {
-			"Alliance - Sisters of Elune", -- [1]
+		["realm"] = {
+			"Sisters of Elune", -- [1]
 		},
 		["profile"] = {
 			"Default", -- [1]
 		},
-		["realm"] = {
-			"Sisters of Elune", -- [1]
+		["factionrealm"] = {
+			"Alliance - Sisters of Elune", -- [1]
 		},
 	},
 	["g@ @helpPlatesShown"] = {
 		["auction"] = true,
 	},
-	["g@ @postUndercut"] = "1c",
-	["g@ @minDeSearchLvl"] = 1,
-	["g@ @maxDeSearchLvl"] = 735,
-	["_hash"] = 1861581,
-	["g@ @marketValueSource"] = "dbmarket",
+	["g@ @sniperVendorPrice"] = true,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1466218750,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
+			["lastSearch"] = 1466394684,
+			["name"] = "hexweave bag",
+			["filter"] = "hexweave bag",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [1]
 		{
-			["lastSearch"] = 1466133580,
+			["lastSearch"] = 1466394673,
 			["name"] = "universal",
 			["filter"] = "universal",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [2]
 		{
-			["lastSearch"] = 1466133565,
+			["lastSearch"] = 1466394649,
 			["name"] = "arcane c",
 			["filter"] = "arcane c",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [3]
 		{
+			["lastSearch"] = 1466390080,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [4]
+		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1465772753,
 			["name"] = "fur",
 			["filter"] = "fur",
-		}, -- [4]
+		}, -- [5]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1464096856,
 			["name"] = "flytrap",
 			["filter"] = "flytrap",
-		}, -- [5]
-		{
-			["lastSearch"] = 1463800061,
-			["name"] = "hexweave bag",
-			["filter"] = "hexweave bag",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
 		}, -- [6]
 		{
 			["searchMode"] = "normal",
@@ -178,8 +167,19 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "saberfish",
 		}, -- [22]
 	},
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
+	["g@ @marketValueSource"] = "dbmarket",
+	["g@ @maxDeSearchLvl"] = 735,
+	["g@ @minDeSearchLvl"] = 1,
 	["g@ @normalPostPrice"] = "150% dbmarket",
-	["g@ @maxDeSearchPercent"] = 1,
-	["g@ @sniperCustomPrice"] = "0c",
+	["_version"] = 3,
+	["_currentProfile"] = {
+		["Uldaris - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Orig - Sisters of Elune"] = "Default",
+	},
 }

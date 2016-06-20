@@ -44,39 +44,73 @@ Grid2DB = {
 	},
 	["profiles"] = {
 		["Orig - Sisters of Elune"] = {
-			["statuses"] = {
-				["buff-RenewingMist-mine"] = {
-					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0,
-						["g"] = 1,
-						["r"] = 0.5,
-					},
-					["useSpellId"] = true,
-					["mine"] = true,
-					["spellName"] = 119611,
+			["statusMap"] = {
+				["corner-top-left"] = {
+					["buff-EnvelopingMist-mine"] = 99,
 				},
-				["buff-EnvelopingMist-mine"] = {
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0.2,
-						["g"] = 1,
-						["r"] = 0.2,
-					},
-					["type"] = "buff",
-					["mine"] = true,
-					["spellName"] = 124682,
+				["heals"] = {
+					["heals-incoming"] = 99,
 				},
-				["buff-LifeCocoon"] = {
-					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0.8,
-						["g"] = 0,
-						["r"] = 0.4,
-					},
-					["spellName"] = 116849,
+				["side-top"] = {
+					["buff-LifeCocoon"] = 99,
+				},
+				["text-down"] = {
+					["name"] = 99,
+				},
+				["heals-color"] = {
+					["classcolor"] = 99,
+				},
+				["icon-left"] = {
+					["raid-icon-player"] = 155,
+				},
+				["alpha"] = {
+					["offline"] = 97,
+					["range"] = 99,
+					["death"] = 98,
+				},
+				["corner-top-right"] = {
+					["buff-RenewingMist-mine"] = 99,
+				},
+				["text-down-color"] = {
+					["classcolor"] = 99,
+				},
+				["text-up"] = {
+					["charmed"] = 65,
+					["feign-death"] = 96,
+					["health-deficit"] = 50,
+					["offline"] = 93,
+					["vehicle"] = 70,
+					["death"] = 95,
+				},
+				["health"] = {
+					["health-current"] = 99,
+				},
+				["border"] = {
+					["debuff-Disease"] = 80,
+					["health-low"] = 55,
+					["debuff-Poison"] = 90,
+					["target"] = 50,
+					["debuff-Magic"] = 70,
+					["debuff-Curse"] = 60,
+				},
+				["corner-bottom-left"] = {
+					["threat"] = 99,
+				},
+				["text-up-color"] = {
+					["charmed"] = 65,
+					["feign-death"] = 96,
+					["health-deficit"] = 50,
+					["offline"] = 93,
+					["vehicle"] = 70,
+					["death"] = 95,
+				},
+				["health-color"] = {
+					["classcolor"] = 99,
+				},
+				["icon-center"] = {
+					["ready-check"] = 150,
+					["raid-debuffs"] = 155,
+					["death"] = 155,
 				},
 			},
 			["versions"] = {
@@ -261,73 +295,39 @@ Grid2DB = {
 					["size"] = 5,
 				},
 			},
-			["statusMap"] = {
-				["corner-top-left"] = {
-					["buff-EnvelopingMist-mine"] = 99,
+			["statuses"] = {
+				["buff-RenewingMist-mine"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0,
+						["g"] = 1,
+						["r"] = 0.5,
+					},
+					["useSpellId"] = true,
+					["mine"] = true,
+					["spellName"] = 119611,
 				},
-				["heals"] = {
-					["heals-incoming"] = 99,
+				["buff-EnvelopingMist-mine"] = {
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0.2,
+						["g"] = 1,
+						["r"] = 0.2,
+					},
+					["type"] = "buff",
+					["mine"] = true,
+					["spellName"] = 124682,
 				},
-				["side-top"] = {
-					["buff-LifeCocoon"] = 99,
-				},
-				["text-down"] = {
-					["name"] = 99,
-				},
-				["heals-color"] = {
-					["classcolor"] = 99,
-				},
-				["icon-left"] = {
-					["raid-icon-player"] = 155,
-				},
-				["alpha"] = {
-					["offline"] = 97,
-					["range"] = 99,
-					["death"] = 98,
-				},
-				["corner-top-right"] = {
-					["buff-RenewingMist-mine"] = 99,
-				},
-				["text-down-color"] = {
-					["classcolor"] = 99,
-				},
-				["text-up"] = {
-					["charmed"] = 65,
-					["feign-death"] = 96,
-					["health-deficit"] = 50,
-					["offline"] = 93,
-					["vehicle"] = 70,
-					["death"] = 95,
-				},
-				["health"] = {
-					["health-current"] = 99,
-				},
-				["border"] = {
-					["debuff-Disease"] = 80,
-					["health-low"] = 55,
-					["debuff-Poison"] = 90,
-					["target"] = 50,
-					["debuff-Magic"] = 70,
-					["debuff-Curse"] = 60,
-				},
-				["corner-bottom-left"] = {
-					["threat"] = 99,
-				},
-				["text-up-color"] = {
-					["charmed"] = 65,
-					["feign-death"] = 96,
-					["health-deficit"] = 50,
-					["offline"] = 93,
-					["vehicle"] = 70,
-					["death"] = 95,
-				},
-				["health-color"] = {
-					["classcolor"] = 99,
-				},
-				["icon-center"] = {
-					["ready-check"] = 150,
-					["raid-debuffs"] = 155,
-					["death"] = 155,
+				["buff-LifeCocoon"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0.8,
+						["g"] = 0,
+						["r"] = 0.4,
+					},
+					["spellName"] = 116849,
 				},
 			},
 		},
@@ -1319,88 +1319,63 @@ Grid2DB = {
 			},
 		},
 		["Uldaris - Sisters of Elune"] = {
-			["statusMap"] = {
-				["corner-top-left"] = {
-					["buff-Lifebloom-mine"] = 99,
+			["statuses"] = {
+				["buff-WildGrowth-mine"] = {
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0.2,
+						["g"] = 0.9,
+						["r"] = 0.2,
+					},
+					["type"] = "buff",
+					["mine"] = true,
+					["spellName"] = 48438,
 				},
-				["side-top"] = {
-					["buff-Regrowth-mine"] = 99,
+				["buff-Rejuvenation-mine"] = {
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0.6,
+						["g"] = 0,
+						["r"] = 1,
+					},
+					["type"] = "buff",
+					["mine"] = true,
+					["spellName"] = 774,
 				},
-				["corner-bottom-right"] = {
-					["buff-WildGrowth-mine"] = 99,
+				["buff-Regrowth-mine"] = {
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0,
+						["g"] = 1,
+						["r"] = 0.5,
+					},
+					["type"] = "buff",
+					["mine"] = true,
+					["spellName"] = 8936,
 				},
-				["text-down"] = {
-					["name"] = 99,
-				},
-				["icon-left"] = {
-					["raid-icon-player"] = 155,
-				},
-				["border"] = {
-					["debuff-Disease"] = 60,
-					["health-low"] = 55,
-					["debuff-Poison"] = 80,
-					["target"] = 50,
-					["debuff-Magic"] = 90,
-					["debuff-Curse"] = 70,
-				},
-				["corner-top-right-color"] = {
-					["buff-Rejuvenation-mine"] = 99,
-				},
-				["text-down-color"] = {
-					["classcolor"] = 99,
-				},
-				["side-top-color"] = {
-					["buff-Regrowth-mine"] = 99,
-				},
-				["icon-center"] = {
-					["debuff-Poison"] = 157,
-					["death"] = 155,
-					["debuff-Curse"] = 156,
-					["raid-debuffs"] = 155,
-					["ready-check"] = 150,
-					["debuff-Magic"] = 158,
-				},
-				["health-color"] = {
-					["classcolor"] = 99,
-				},
-				["corner-top-right"] = {
-					["buff-Rejuvenation-mine"] = 99,
-				},
-				["heals-color"] = {
-					["classcolor"] = 99,
-				},
-				["alpha"] = {
-					["offline"] = 97,
-					["range"] = 99,
-					["death"] = 98,
-				},
-				["health"] = {
-					["health-current"] = 99,
-				},
-				["heals"] = {
-					["heals-incoming"] = 99,
-				},
-				["corner-bottom-left"] = {
-					["threat"] = 99,
-				},
-				["text-up-color"] = {
-					["charmed"] = 65,
-					["feign-death"] = 96,
-					["health-deficit"] = 50,
-					["offline"] = 93,
-					["vehicle"] = 70,
-					["death"] = 95,
-				},
-				["corner-top-left-color"] = {
-					["buff-Lifebloom-mine"] = 99,
-				},
-				["text-up"] = {
-					["charmed"] = 65,
-					["feign-death"] = 96,
-					["health-deficit"] = 50,
-					["offline"] = 93,
-					["vehicle"] = 70,
-					["death"] = 95,
+				["buff-Lifebloom-mine"] = {
+					["color2"] = {
+						["a"] = 1,
+						["b"] = 0.6,
+						["g"] = 0.9,
+						["r"] = 0.6,
+					},
+					["type"] = "buff",
+					["color3"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0.2,
+						["g"] = 0.7,
+						["r"] = 0.2,
+					},
+					["colorCount"] = 3,
+					["mine"] = true,
+					["spellName"] = 33763,
 				},
 			},
 			["versions"] = {
@@ -1614,63 +1589,88 @@ Grid2DB = {
 					["texture"] = "Gradient",
 				},
 			},
-			["statuses"] = {
-				["buff-WildGrowth-mine"] = {
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0.2,
-						["g"] = 0.9,
-						["r"] = 0.2,
-					},
-					["type"] = "buff",
-					["mine"] = true,
-					["spellName"] = 48438,
+			["statusMap"] = {
+				["corner-top-left"] = {
+					["buff-Lifebloom-mine"] = 99,
 				},
-				["buff-Regrowth-mine"] = {
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0,
-						["g"] = 1,
-						["r"] = 0.5,
-					},
-					["type"] = "buff",
-					["mine"] = true,
-					["spellName"] = 8936,
+				["side-top"] = {
+					["buff-Regrowth-mine"] = 99,
 				},
-				["buff-Rejuvenation-mine"] = {
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0.6,
-						["g"] = 0,
-						["r"] = 1,
-					},
-					["type"] = "buff",
-					["mine"] = true,
-					["spellName"] = 774,
+				["corner-bottom-right"] = {
+					["buff-WildGrowth-mine"] = 99,
 				},
-				["buff-Lifebloom-mine"] = {
-					["color2"] = {
-						["a"] = 1,
-						["b"] = 0.6,
-						["g"] = 0.9,
-						["r"] = 0.6,
-					},
-					["type"] = "buff",
-					["color3"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0.2,
-						["g"] = 0.7,
-						["r"] = 0.2,
-					},
-					["colorCount"] = 3,
-					["mine"] = true,
-					["spellName"] = 33763,
+				["text-down"] = {
+					["name"] = 99,
+				},
+				["icon-left"] = {
+					["raid-icon-player"] = 155,
+				},
+				["border"] = {
+					["debuff-Disease"] = 60,
+					["health-low"] = 55,
+					["debuff-Poison"] = 80,
+					["target"] = 50,
+					["debuff-Magic"] = 90,
+					["debuff-Curse"] = 70,
+				},
+				["corner-top-right-color"] = {
+					["buff-Rejuvenation-mine"] = 99,
+				},
+				["text-down-color"] = {
+					["classcolor"] = 99,
+				},
+				["side-top-color"] = {
+					["buff-Regrowth-mine"] = 99,
+				},
+				["icon-center"] = {
+					["debuff-Poison"] = 157,
+					["death"] = 155,
+					["debuff-Curse"] = 156,
+					["raid-debuffs"] = 155,
+					["ready-check"] = 150,
+					["debuff-Magic"] = 158,
+				},
+				["health-color"] = {
+					["classcolor"] = 99,
+				},
+				["corner-top-right"] = {
+					["buff-Rejuvenation-mine"] = 99,
+				},
+				["heals-color"] = {
+					["classcolor"] = 99,
+				},
+				["alpha"] = {
+					["offline"] = 97,
+					["range"] = 99,
+					["death"] = 98,
+				},
+				["health"] = {
+					["health-current"] = 99,
+				},
+				["heals"] = {
+					["heals-incoming"] = 99,
+				},
+				["corner-bottom-left"] = {
+					["threat"] = 99,
+				},
+				["text-up-color"] = {
+					["charmed"] = 65,
+					["feign-death"] = 96,
+					["health-deficit"] = 50,
+					["offline"] = 93,
+					["vehicle"] = 70,
+					["death"] = 95,
+				},
+				["corner-top-left-color"] = {
+					["buff-Lifebloom-mine"] = 99,
+				},
+				["text-up"] = {
+					["charmed"] = 65,
+					["feign-death"] = 96,
+					["health-deficit"] = 50,
+					["offline"] = 93,
+					["vehicle"] = 70,
+					["death"] = 95,
 				},
 			},
 		},
