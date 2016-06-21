@@ -55,7 +55,7 @@ function TSMAPI.Settings:Init(svTableName, settingsInfo)
 		_G[svTableName] = {}
 		local newSettingsDB = private.SettingsDB(svTableName, settingsInfo)
 		local context = private.context[newSettingsDB]
-		
+
 		-- create all the scopes
 		for scopeType, scopeSettings in pairs(settingsInfo) do
 			local oldDBSettings = nil
@@ -125,14 +125,14 @@ private.SettingsDB = setmetatable({}, {
 		TSMAPI:Assert(type(rawSettingsInfo) == "table")
 		local version = rawSettingsInfo.version
 		TSMAPI:Assert(type(version) == "number" and version >= 1)
-		
+
 		-- get (and create if necessary) the global table
 		local db = _G[name]
 		if not db then
 			db = {}
 			_G[name] = db
 		end
-		
+
 		-- flatten and validate rawSettingsInfo and generate hash data
 		local settingsInfo = CopyTable(rawSettingsInfo)
 		local hashDataParts = {}
@@ -165,7 +165,7 @@ private.SettingsDB = setmetatable({}, {
 			end
 		end
 		sort(hashDataParts)
-		
+
 		-- reset the DB if it's not valid
 		local hash = TSMAPI.Util:CalculateHash(table.concat(hashDataParts, ";"))
 		local isValid = true
@@ -175,15 +175,15 @@ private.SettingsDB = setmetatable({}, {
 			isValid = false
 		elseif not private:ValidateDB(db) then
 			-- corrupted DB
-			TSMAPI:Assert(GetAddOnMetadata("TradeSkillMaster", "version") ~= "v3.3.18", "DB is not valid!")
+			TSMAPI:Assert(GetAddOnMetadata("TradeSkillMaster", "version") ~= "v3.3.19", "DB is not valid!")
 			isValid = false
 		elseif db._version == version and db._hash ~= hash then
 			-- the hash didn't match
-			TSMAPI:Assert(GetAddOnMetadata("TradeSkillMaster", "version") ~= "v3.3.18", "Invalid settings hash! Did you forget to increase the version?")
+			TSMAPI:Assert(GetAddOnMetadata("TradeSkillMaster", "version") ~= "v3.3.19", "Invalid settings hash! Did you forget to increase the version?")
 			isValid = false
 		elseif db._version > version then
 			-- this is a downgrade
-			TSMAPI:Assert(GetAddOnMetadata("TradeSkillMaster", "version") ~= "v3.3.18", "Unexpected DB version! If you really want to downgrade, comment out this line (remember to uncomment before committing).")
+			TSMAPI:Assert(GetAddOnMetadata("TradeSkillMaster", "version") ~= "v3.3.19", "Unexpected DB version! If you really want to downgrade, comment out this line (remember to uncomment before committing).")
 			isValid = false
 		end
 		if not isValid then
@@ -194,7 +194,7 @@ private.SettingsDB = setmetatable({}, {
 			end
 		end
 		db._hash = hash
-		
+
 		-- setup current scope keys and set defaults for new keys
 		db._currentProfile[SCOPE_KEYS.char] = db._currentProfile[SCOPE_KEYS.char] or DEFAULT_PROFILE_NAME
 		local currentScopeKeys = CopyTable(SCOPE_KEYS)
@@ -205,7 +205,7 @@ private.SettingsDB = setmetatable({}, {
 				private:SetScropeDefaults(db, settingsInfo, strjoin(KEY_SEP, SCOPE_TYPES[scopeType], TSMAPI.Util:StrEscape(scopeKey), ".+"))
 			end
 		end
-		
+
 		-- do any necessary upgrading or downgrading if the version changed
 		local removedKeys = {}
 		if version ~= db._version then
@@ -243,7 +243,7 @@ private.SettingsDB = setmetatable({}, {
 		end
 		local oldVersion = db._version
 		db._version = version
-		
+
 		-- make the db table protected
 		setmetatable(db, {
 			__newindex = function(self, key, value)
@@ -252,7 +252,7 @@ private.SettingsDB = setmetatable({}, {
 			end,
 			__metatable = false
 		})
-		
+
 		-- create the new object and return it
 		local new = setmetatable({}, getmetatable(private.SettingsDB))
 		private.context[new] = {db=db, settingsInfo=settingsInfo, currentScopeKeys=currentScopeKeys, callbacks={}, scopeProxies={}}
@@ -261,7 +261,7 @@ private.SettingsDB = setmetatable({}, {
 				private.context[new].scopeProxies[scopeType] = private.SettingsDBScopeProxy(new, scopeType)
 			end
 		end
-		
+
 		-- if this is an upgrade, call the upgrade callback for each of the keys which were changed / removed
 		if isValid and version > oldVersion and upgradeCallback then
 			for key, oldValue in pairs(removedKeys) do
@@ -271,7 +271,7 @@ private.SettingsDB = setmetatable({}, {
 		end
 		return new, oldVersion
 	end,
-	
+
 	-- getter
 	__index = function(self, key)
 		if private.SettingsDBMethods[key] then
@@ -282,7 +282,7 @@ private.SettingsDB = setmetatable({}, {
 			TSMAPI:Assert(false, "Invalid scope: "..tostring(key), 1)
 		end
 	end,
-	
+
 	-- setter
 	__newindex = function(self, key, value) TSMAPI:Assert(false, "You cannot set values in this table! You're probably missing a scope.", 1) end,
 })
@@ -299,32 +299,32 @@ private.SettingsDBMethods = {
 		TSMAPI:Assert(type(callback) == "function")
 		private.context[self].callbacks[event] = callback
 	end,
-	
+
 	IsValidProfileName = function(self, name)
 		return name ~= "" and not strfind(name, KEY_SEP)
 	end,
-	
+
 	GetCurrentProfile = function(self)
 		return private.context[self].currentScopeKeys.profile
 	end,
-	
+
 	GetScopeKeys = function(self, scope)
 		return CopyTable(private.context[self].db._scopeKeys[scope])
 	end,
-	
+
 	GetProfiles = function(self)
 		return self:GetScopeKeys("profile")
 	end,
-	
+
 	SetProfile = function(self, profileName)
 		TSMAPI:Assert(type(profileName) == "string", tostring(profileName))
 		TSMAPI:Assert(not strfind(profileName, KEY_SEP))
 		local context = private.context[self]
-		
+
 		-- change the current profile for this character
 		context.db._currentProfile[SCOPE_KEYS.char] = profileName
 		context.currentScopeKeys.profile = context.db._currentProfile[SCOPE_KEYS.char]
-		
+
 		local isNew = false
 		if not tContains(context.db._scopeKeys.profile, profileName) then
 			tinsert(context.db._scopeKeys.profile, profileName)
@@ -332,12 +332,12 @@ private.SettingsDBMethods = {
 			private:SetScropeDefaults(context.db, context.settingsInfo, strjoin(KEY_SEP, SCOPE_TYPES.profile, TSMAPI.Util:StrEscape(profileName), ".+"))
 			isNew = true
 		end
-		
+
 		if context.callbacks.OnProfileUpdated then
 			context.callbacks.OnProfileUpdated(isNew)
 		end
 	end,
-	
+
 	ResetProfile = function(self)
 		local context = private.context[self]
 		private:SetScropeDefaults(context.db, context.settingsInfo, strjoin(KEY_SEP, SCOPE_TYPES.profile, TSMAPI.Util:StrEscape(context.currentScopeKeys.profile), ".+"))
@@ -345,31 +345,31 @@ private.SettingsDBMethods = {
 			context.callbacks.OnProfileUpdated(true)
 		end
 	end,
-	
+
 	CopyProfile = function(self, sourceProfileName)
 		TSMAPI:Assert(type(sourceProfileName) == "string")
 		TSMAPI:Assert(not strfind(sourceProfileName, KEY_SEP))
 		local context = private.context[self]
 		TSMAPI:Assert(sourceProfileName ~= context.currentScopeKeys.profile)
-		
+
 		-- copy all the settings from the source profile to the current one
 		for settingKey, info in pairs(context.settingsInfo.profile) do
 			local srcKey = strjoin(KEY_SEP, SCOPE_TYPES.profile, sourceProfileName, settingKey)
 			local destKey = strjoin(KEY_SEP, SCOPE_TYPES.profile, context.currentScopeKeys.profile, settingKey)
 			private:SetDBKeyValue(context.db, destKey, private:CopyData(context.db[srcKey]))
 		end
-		
+
 		if context.callbacks.OnProfileUpdated then
 			context.callbacks.OnProfileUpdated(false)
 		end
 	end,
-	
+
 	DeleteScope = function(self, scopeType, scopeKey)
 		TSMAPI:Assert(SCOPE_TYPES[scopeType])
 		TSMAPI:Assert(type(scopeKey) == "string")
 		local context = private.context[self]
 		TSMAPI:Assert(scopeKey ~= context.currentScopeKeys[scopeType])
-		
+
 		-- remove all settings for the specified profile
 		local searchPattern = strjoin(KEY_SEP, SCOPE_TYPES[scopeType], TSMAPI.Util:StrEscape(scopeKey), ".+")
 		for key in pairs(context.db) do
@@ -377,7 +377,7 @@ private.SettingsDBMethods = {
 				private:SetDBKeyValue(context.db, key, nil)
 			end
 		end
-		
+
 		-- remove the scope key from the list
 		for i=1, #context.db._scopeKeys[scopeType] do
 			if context.db._scopeKeys[scopeType][i] == scopeKey then
@@ -386,11 +386,11 @@ private.SettingsDBMethods = {
 			end
 		end
 	end,
-	
+
 	DeleteProfile = function(self, profileName)
 		self:DeleteScope("profile", profileName)
 	end,
-	
+
 	GetConnectedRealmIterator = function(self, scope)
 		TSMAPI:Assert(scope == "factionrealm" or scope == "realm")
 		local faction = UnitFactionGroup("player")
@@ -425,7 +425,7 @@ private.SettingsDBScopeProxy = setmetatable({}, {
 		private.proxies[new] = {settingsDB=settingsDB, scope=scope, scopeKey=scopeKey}
 		return new
 	end,
-	
+
 	-- getter
 	__index = function(self, key)
 		TSMAPI:Assert(type(key) == "string", "Invalid setting key type!", 1)
@@ -434,7 +434,7 @@ private.SettingsDBScopeProxy = setmetatable({}, {
 		TSMAPI:Assert(context.settingsInfo[proxyInfo.scope][key], "Setting does not exist!", 1)
 		return context.db[strjoin(KEY_SEP, SCOPE_TYPES[proxyInfo.scope], proxyInfo.scopeKey or context.currentScopeKeys[proxyInfo.scope], key)]
 	end,
-	
+
 	-- setter
 	__newindex = function(self, key, value)
 		TSMAPI:Assert(type(key) == "string", "Invalid setting key type!", 1)
@@ -504,7 +504,7 @@ function private:SetScropeDefaults(db, settingsInfo, searchPattern, removedKeys)
 			private:SetDBKeyValue(db, key, nil)
 		end
 	end
-	
+
 	local scopeTypeShort = strsub(searchPattern, 1, 1)
 	local scopeType = private:ScopeReverseLookup(scopeTypeShort)
 	TSMAPI:Assert(scopeType, "Couldn't find scopeType: "..tostring(scopeTypeShort))
@@ -515,7 +515,7 @@ function private:SetScropeDefaults(db, settingsInfo, searchPattern, removedKeys)
 		scopeKeys = db._scopeKeys[scopeType]
 		TSMAPI:Assert(scopeKeys, "Couldn't find scopeKeys for type: "..tostring(scopeTypeShort))
 	end
-	
+
 	-- set any matching keys to their default values
 	if not settingsInfo[scopeType] then return end
 	for settingKey, info in pairs(settingsInfo[scopeType]) do

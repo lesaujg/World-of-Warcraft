@@ -225,6 +225,9 @@ function Modules:HasOutdatedAddons()
 end
 
 function Modules:ProfileUpdated(isReset)
+	if Modules.ignoreProfileUpdated then
+		return
+	end
 	if isReset then
 		-- reset tooltip options
 		for moduleName, obj in pairs(moduleObjects) do

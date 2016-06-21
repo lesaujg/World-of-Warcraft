@@ -379,15 +379,10 @@ function RA:IsFriend (who)
 	end
 end
 
+
 function RA:IsGuildFriend (who)
 	if (IsInGuild()) then
-		local is_showing_all = GetGuildRosterShowOffline()
-		for i = 1, select (is_showing_all and 1 or 2, GetNumGuildMembers()) do
-			local name = GetGuildRosterInfo (i)
-			if (RA:RemoveRealName (name) == who) then
-				return true
-			end
-		end
+		return UnitIsInMyGuild (who) or UnitIsInMyGuild (who:gsub ("%-.*", ""))
 	end
 end
 
@@ -662,3 +657,78 @@ function RA:GetBossIds (bossid)
 	local combatlog = combat_log_ids [bossid] or bossid
 	return ejid, combatlog
 end
+
+--[=[
+	GetWeakAuras2Object()
+	return the weakaura addon object if installed and enabled
+--]=]
+
+function RA:GetWeakAuras2Object()
+	local WeakAuras_Object = _G.WeakAuras
+	local WeakAuras_SavedVar = _G.WeakAurasSaved
+	return WeakAuras_Object, WeakAuras_SavedVar
+end
+
+--/run _G.WeakAuras.Delete (_G.WeakAurasSaved.displays ["Rip Target"])
+
+--[=[
+	GetWeakAuraTable (auraName)
+	return the aura table of a specific aura
+--]=]
+
+function RA:GetWeakAuraTable (auraName)
+	local WeakAuras_Object, WeakAuras_SavedVar = RA:GetWeakAuras2Object()
+	if (WeakAuras_SavedVar) then
+		return WeakAuras_SavedVar.displays [auraName]
+	end
+end
+
+--[=[
+	GetAllWeakAurasIds()
+	return a table with all weak auras ids (names)
+--]=]
+
+function RA:GetAllWeakAurasNames()
+	local AllAuras = RA:GetAllWeakAuras()
+	if (AllAuras) then
+		local t = {}
+		for auraName, auraTable in pairs (AllAuras) do
+			t [#t+1] = auraName
+		end
+		return t
+	end
+end
+
+--[=[
+	GetAllWeakAuras()
+	return a table with all weak auras
+--]=]
+
+function RA:GetAllWeakAuras()
+	local WeakAuras_Object, WeakAuras_SavedVar = RA:GetWeakAuras2Object()
+	return WeakAuras_SavedVar and WeakAuras_SavedVar.displays
+end
+
+--[=[
+	InstallWeakAura (auraTable)
+	install a weakaura into WeakAuras2 addon
+--]=]
+
+function RA:InstallWeakAura (auraTable)
+	if (not auraTable.id) then
+		return
+	end
+	local WeakAuras_Object, WeakAuras_SavedVar = RA:GetWeakAuras2Object()
+	if (WeakAuras_Object) then
+		if (not RA:GetWeakAuraTable (auraTable.id)) then
+			WeakAuras.Add (auraTable)
+			return 1
+		else
+			return 1
+		end
+	else
+		return -1
+	end
+end
+
+

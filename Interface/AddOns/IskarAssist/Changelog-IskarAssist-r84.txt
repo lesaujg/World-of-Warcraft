@@ -1,6 +1,22 @@
+2016-06-16  Tercio  <Tercio>
+
+[e96ae4b68d95] [tip]
+* plugins/readycheck.lua, plugins/toolbar.lua:
+
+- testing two more plugins for the raid leader assist project.
+
+
+2016-06-13  Tercio  <Tercio>
+
+[a9b64ea396d6]
+* API.lua, plugins/addonscheck.lua:
+
+tagging release
+
+
 2016-05-16  Tercio  <Tercio>
 
-[75270d7781b2] [tip]
+[75270d7781b2]
 * IskarAssist.lua, plugins/addonscheck.lua:
 
 - fixed a background color on addon check plugin.
@@ -201,21 +217,5 @@
 * IskarAssist.lua:
 
 - added the maxgroups description when using the slash command /iskar.
-
-
-2016-02-25  Tercioo  <Tercioo>
-
-[4f85c70b7ecc]
-* .pkgmeta, IskarAssist.lua:
-
-- make sure the group limit isn't bigger than 8 and lower than 2.
-
-
-2016-02-24  Tercioo  <Tercioo>
-
-[d6a300aba07e]
-* .pkgmeta, IskarAssist.lua:
-
-- warning about the non saving maxgroups.
 
 

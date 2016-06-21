@@ -1,8 +1,10 @@
 
+
+
 local RA = RaidAssist
 local L = LibStub ("AceLocale-3.0"):GetLocale ("RaidAssistAddon")
 local _ 
-local default_priority = 1
+local default_priority = 25
 
 local default_config = {
 	enabled = true,
@@ -19,10 +21,19 @@ local text_color_disabled = {r=0.5, g=0.5, b=0.5, a=1}
 local toolbar_icon = [[Interface\CHATFRAME\UI-ChatIcon-Share]]
 local icon_texcoord = {l=0, r=1, t=0, b=1}
 
+if (_G ["RaidAssistAddonsCheck"]) then
+	return
+end
 local AddonsCheck = {version = "v0.1", pluginname = "Check Addons"}
+_G ["RaidAssistAddonsCheck"] = AddonsCheck
 
 local COMM_SYNC_RECEIVED = "ACR" --when someone receives a sync response
 local COMM_SYNC_REQUEST = "ACS" --the raid leader requested the sync from all users
+
+local RESPONSE_TYPE_HAVE = 1
+local RESPONSE_TYPE_NOT_HAVE = 0
+local RESPONSE_TYPE_WAITING = -2
+local RESPONSE_TYPE_OFFLINE = -3
 
 --store ["playerName"] = addonsTable {0, 1, 0, 1, 1, 0}
 AddonsCheck.PlayerUsingAddons = {}
@@ -52,9 +63,9 @@ AddonsCheck.AddonsList = {
 
 AddonsCheck.menu_text = function (plugin)
 	if (AddonsCheck.db.enabled) then
-		return toolbar_icon, icon_texcoord, "Check Addons", text_color_enabled
+		return toolbar_icon, icon_texcoord, "Addons Check", text_color_enabled
 	else
-		return toolbar_icon, icon_texcoord, "Check Addons", text_color_disabled
+		return toolbar_icon, icon_texcoord, "Addons Check", text_color_disabled
 	end
 end
 
@@ -93,13 +104,13 @@ AddonsCheck.OnProfileChanged = function (plugin)
 
 end
 
+function AddonsCheck.manageAddOns()
+
+end
+
 function AddonsCheck.OnShowOnOptionsPanel()
 	local OptionsPanel = AddonsCheck.OptionsPanel
 	AddonsCheck.BuildOptions (OptionsPanel)
-end
-
-function AddonsCheck.manageAddOns()
-
 end
 
 function AddonsCheck.BuildOptions (frame)
@@ -108,11 +119,20 @@ function AddonsCheck.BuildOptions (frame)
 		return
 	end
 	frame.FirstRun = true
-	
-	local fill_panel = AddonsCheck:CreateFillPanel (frame, {}, 790, 460, false, false, false, {rowheight = 16}, "fill_panel", "RaidAssistAddOnsCheckFillPanel")
-	fill_panel:SetPoint ("topleft", frame, "topleft", -10, -35)
-	AddonsCheck.fill_panel = fill_panel
 
+	local fillPanel = AddonsCheck:CreateFillPanel (frame:GetParent(), {}, 790, 460, false, false, false, {rowheight = 16}, _, "RAAddOnsCheckFP")
+	--fillPanel:SetPoint ("topleft", frame, "topleft", -10, -35)
+	fillPanel:SetPoint ("topleft", frame, "topleft", 0, -30)
+	AddonsCheck.fillPanel = fillPanel
+
+	local dummy = CreateFrame ("frame", nil, frame)
+	dummy:SetScript ("OnShow", function()
+		fillPanel:Show()
+	end)
+	dummy:SetScript ("OnHide", function()
+		fillPanel:Hide()
+	end)
+	
 	function AddonsCheck.UpdateFillPanel()
 		
 		--> alphabetical order
@@ -120,40 +140,45 @@ function AddonsCheck.BuildOptions (frame)
 		for playername, table in pairs (AddonsCheck.PlayerUsingAddons) do
 			tinsert (alphabetical_players, {playername, table})
 		end
-		
 		table.sort (alphabetical_players, function (t1, t2) return t2[1] < t1[1] end)
 		
+		--> build the player name and addon name header
 		local header = {
 			{name = "Player Name", type = "text", width = 120},
 		}
-		
 		for index, addonName in ipairs (AddonsCheck.LatestSyncAddonNames) do
+			local text = addonName
+			while (#text > 12) do
+				text = text:sub (1, -2)
+			end
+			addonName = text
 			tinsert (header, {name = addonName, type = "text", width = 80})
 		end
 		
-		fill_panel:SetFillFunction (function (index)
+		fillPanel:SetFillFunction (function (index)
 			local name = Ambiguate (alphabetical_players [index][1], "none")
 			local t = alphabetical_players [index][2]
 			return {name, unpack (t)}
 		end)
 
-		fill_panel:SetTotalFunction (function() return #alphabetical_players end)
-		fill_panel:SetSize (math.min (GetScreenWidth()-200, (#header*60) + 60), 450)
-		fill_panel:UpdateRows (header)
-		fill_panel:Refresh()
+		fillPanel:SetTotalFunction (function() return #alphabetical_players end)
+		fillPanel:SetSize (590, 450)
+		fillPanel:UpdateRows (header)
+		fillPanel:Refresh()
 		
 	end
 	
 	--Sync Button
 	local sync_func = function()
 		AddonsCheck.ManageAddOnsFrame:Hide()
-		fill_panel:Show()
+		fillPanel:Show()
 		frame.button_add.text = "Add AddOn"
 		AddonsCheck.RequestData()
 	end
-	local sync_button = AddonsCheck:CreateButton (frame, sync_func, 80, 20, "Sync", _, _, _, "button_sync", _, _, AddonsCheck:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), AddonsCheck:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	sync_button:SetPoint ("topleft", frame, "topleft", 10, -10)
-
+	local sync_button = AddonsCheck:CreateButton (frame, sync_func, 100, 18, "Sync", _, _, _, "button_sync", _, _, AddonsCheck:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), AddonsCheck:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	sync_button:SetPoint ("topleft", frame, "topleft", 0, 5)
+	sync_button:SetIcon ([[Interface\BUTTONS\UI-RefreshButton]], 14, 14, "overlay", {0, 1, 0, 1}, {1, 1, 1}, 2, 1, 0)
+	
 	--Open Management Button
 	local add_func = function()
 		if (AddonsCheck.ManageAddOnsFrame:IsShown()) then
@@ -164,13 +189,35 @@ function AddonsCheck.BuildOptions (frame)
 		AddonsCheck.ManageAddOnsFrame:Show()
 		frame.button_add.text = "Done"
 	end
-	local addaddons_button = AddonsCheck:CreateButton (frame, add_func, 80, 20, "Add AddOn", _, _, _, "button_add", _, _, AddonsCheck:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), AddonsCheck:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	local addaddons_button = AddonsCheck:CreateButton (frame, add_func, 100, 18, "Add AddOn", _, _, _, "button_add", _, _, AddonsCheck:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), AddonsCheck:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 	addaddons_button:SetPoint ("left", sync_button, "right", 2, 0)
+	addaddons_button:SetIcon ([[Interface\BUTTONS\UI-GuildButton-PublicNote-Up]], 14, 14, "overlay", {0, 1, 0, 1}, {1, 1, 1}, 2, 1, 0)
 	
 	--Current tracking addons string
 	local addons_string = AddonsCheck:CreateLabel (frame, "Tracking:", AddonsCheck:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 	addons_string:SetPoint ("left", addaddons_button, "right", 2, 0)
+	addons_string:Hide()
 	frame.addons_string = addons_string
+	
+	--statusbar
+	local statusBar = AddonsCheck:CreateBar (frame, LibStub:GetLibrary ("LibSharedMedia-3.0"):Fetch ("statusbar", "Iskar Serenity"), 589, 16, 100, "statusBarWorking", "AddonCheckerStatusBar")
+	statusBar:SetPoint ("left", addaddons_button, "right", 2, 0)
+	statusBar.RightTextIsTimer = true
+	statusBar.BarIsInverse = false
+	statusBar.fontsize = 11
+	statusBar.fontface = "Accidental Presidency"
+	statusBar.fontcolor = "darkorange"
+	statusBar.color = "gray"
+	statusBar.texture = "Iskar Serenity"
+	statusBar.lefttext = "Ready!"
+	statusBar:SetHook ("OnTimerEnd", function()
+		statusBar.lefttext = "Ready!"
+		statusBar.value = 100
+		statusBar.shown = true
+		statusBar.div_timer:Hide()
+		return true
+	end)
+	AddonsCheck.StatusBar = statusBar
 	
 	function AddonsCheck.UpdateAddonsString()
 		local s = "Tracking: "
@@ -182,8 +229,7 @@ function AddonsCheck.BuildOptions (frame)
 	end
 	
 	AddonsCheck.UpdateAddonsString()
-	
-	
+
 	--Management frame
 	local manage_panel = CreateFrame ("frame", nil, frame)
 	manage_panel:SetPoint ("topleft", frame, "topleft", -10, -30)
@@ -289,10 +335,10 @@ function AddonsCheck.BuildOptions (frame)
 	AddonsCheck.ManageAddOnsFrame = manage_panel
 	AddonsCheck.ManageAddOnsFrame:SetScript ("OnShow", function()
 		manage_panel:UpdateCheckingAddOns()
-		fill_panel:Hide()
+		fillPanel:Hide()
 	end)
 	AddonsCheck.ManageAddOnsFrame:SetScript ("OnHide", function()
-		fill_panel:Show()
+		fillPanel:Show()
 		frame.button_add.text = "Addon AddOn"
 	end)
 	
@@ -317,7 +363,7 @@ function AddonsCheck.RequestData()
 	if (not AddonsCheck:UnitIsRaidLeader (UnitName ("player"))) then
 		AddonsCheck:Msg ("you aren't the raid leader.")
 		return
-	elseif (AddonsCheck.last_data_request + 20 > time()) then
+	elseif (AddonsCheck.last_data_request + 5 > time()) then
 		AddonsCheck:Msg ("a check still ongoing, please wait.")
 		return
 	end
@@ -329,27 +375,61 @@ function AddonsCheck.RequestData()
 		tinsert (addonsNames, addonName)
 	end
 	
-	wipe (AddonsCheck.PlayerUsingAddons)
+	AddonsCheck.StatusBar.lefttext = "Working..."
+	AddonsCheck.StatusBar:SetTimer (5)
 	
 	--send a numeric table, the users answer with a numeric table with 1 or 0
 	AddonsCheck:SendPluginCommMessage (COMM_SYNC_REQUEST, "RAID-NOINSTANCE", _, _, AddonsCheck:GetPlayerNameWithRealm(), addonsNames)
+	
+	--pre fill the result table
+	wipe (AddonsCheck.PlayerUsingAddons)
+	
+	AddonsCheck.LatestSyncAddonNames = addonsNames
+	
+	local myName = UnitName ("player") .. "-" .. GetRealmName()
+	for i = 1, GetNumGroupMembers() do
+		local playerName, realmName = UnitFullName ("raid" .. i)
+		if (realmName == "" or realmName == nil) then
+			realmName = GetRealmName()
+		end
+		playerName = playerName .. "-" .. realmName
+		
+		--constroi a tabela
+		AddonsCheck.PlayerUsingAddons [playerName] = AddonsCheck.PlayerUsingAddons [playerName] or {}
+		
+		--preenche
+		for index, addonName in ipairs (addonsNames) do
+			if (myName == playerName) then
+				
+				AddonsCheck.PlayerUsingAddons [playerName] [index] = RESPONSE_TYPE_HAVE
+			else
+				if (UnitIsConnected ("raid" .. i)) then
+					AddonsCheck.PlayerUsingAddons [playerName] [index] = RESPONSE_TYPE_WAITING
+				else
+					AddonsCheck.PlayerUsingAddons [playerName] [index] = RESPONSE_TYPE_OFFLINE
+				end
+			end
+		end
+		
+		--formata
+		AddonsCheck.PlayerUsingAddons [playerName] = AddonsCheck.FormatReceivedList (AddonsCheck.PlayerUsingAddons [playerName])
+	end
+	
+	AddonsCheck.UpdateFillPanel()
 end
 
 function AddonsCheck.BuildAddonList()
-	local addonsList = AddonsCheck.LatestSyncAddonNames
-	local addonsInstalled = {}
+	local addonsList = AddonsCheck.LatestSyncAddonNames --tabela numerica com os nomes dos addons
+	local addonsInstalled = {} --tabela hash com os nomes dos addons e se esta instalado ou não
 	for i = 1, GetNumAddOns() do
-		local name = GetAddOnInfo (i)
-		addonsInstalled [name] = true
+		local name, title, notes, loadable, reason, security, newVersion = GetAddOnInfo (i)
+		addonsInstalled [name] = loadable and RESPONSE_TYPE_HAVE or RESPONSE_TYPE_NOT_HAVE
 	end
 	
 	local returnTable = {}
-	for index, addonName in pairs (addonsList) do
-		if (addonsInstalled [addonName]) then
-			tinsert (returnTable, 1)
-		else
-			tinsert (returnTable, 0)
-		end
+	--insere o resultado em uma tabela numera para enviar
+	for index, addonName in ipairs (addonsList) do
+		tinsert (returnTable, addonsInstalled [addonName] or RESPONSE_TYPE_NOT_HAVE)
 	end
 	
 	return returnTable
@@ -374,7 +454,7 @@ function AddonsCheck:PostponeSendData()
 end
 
 function AddonsCheck:SendData()
-	if (AddonsCheck.last_data_sent + 20 < time()) then
+	if (AddonsCheck.last_data_sent + 5 < time()) then
 		local data = AddonsCheck.BuildAddonList()
 		AddonsCheck:SendPluginCommMessage (COMM_SYNC_RECEIVED, "RAID-NOINSTANCE", _, _, AddonsCheck:GetPlayerNameWithRealm(), data)
 		AddonsCheck.last_data_sent = time()
@@ -383,6 +463,15 @@ function AddonsCheck:SendData()
 	end
 end
 
+function AddonsCheck.FormatReceivedList (addonsList)
+	for i = 1, #addonsList do
+		addonsList [i] = (addonsList [i] == RESPONSE_TYPE_HAVE and "|cFF55FF55ok|r") or  --have
+					(addonsList [i] == RESPONSE_TYPE_NOT_HAVE and "|cFFFF5555-|r") or --not have
+					(addonsList [i] == RESPONSE_TYPE_WAITING and "|cFF888888?|r") or --still waiting the user answer
+					(addonsList [i] == RESPONSE_TYPE_OFFLINE and "|cFFFF0000offline|r") --the user is offline	
+	end
+	return addonsList
+end
 
 function AddonsCheck.PluginCommReceived (prefix, sourcePluginVersion, playerName, addonsList)
 	if (type (playerName) ~= "string" or type (addonsList) ~= "table") then
@@ -393,8 +482,8 @@ function AddonsCheck.PluginCommReceived (prefix, sourcePluginVersion, playerName
 	if (prefix == COMM_SYNC_RECEIVED) then
 		AddonsCheck.PlayerUsingAddons [playerName] = AddonsCheck.PlayerUsingAddons [playerName] or {}
 		wipe (AddonsCheck.PlayerUsingAddons [playerName])
-		AddonsCheck.PlayerUsingAddons [playerName] = addonsList
-		if (AddonsCheck.fill_panel and AddonsCheck.fill_panel:IsShown()) then
+		AddonsCheck.PlayerUsingAddons [playerName] = AddonsCheck.FormatReceivedList (addonsList)
+		if (AddonsCheck.fillPanel and AddonsCheck.fillPanel:IsShown()) then
 			AddonsCheck.UpdateFillPanel()
 		end
 	
@@ -402,10 +491,15 @@ function AddonsCheck.PluginCommReceived (prefix, sourcePluginVersion, playerName
 	elseif (prefix == COMM_SYNC_REQUEST) then
 		--check if is raid leader
 		if (AddonsCheck:UnitIsRaidLeader (playerName)) then
+			--check if the sender isnt 'me'
+			if (Ambiguate (playerName, "none") == UnitName ("player")) then
+				return
+			end
 			AddonsCheck.LatestSyncAddonNames = addonsList
 			wipe (AddonsCheck.PlayerUsingAddons)
-			C_Timer.After (0.1, AddonsCheck.SendData)
+			C_Timer.After (0.3, AddonsCheck.SendData)
 		end
 	end
 end
 
+--doo

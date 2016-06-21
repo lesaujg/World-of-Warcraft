@@ -2,7 +2,7 @@
 local RA = RaidAssist
 local L = LibStub ("AceLocale-3.0"):GetLocale ("RaidAssistAddon")
 local _ 
-local default_priority = 1
+local default_priority = 15
 
 local default_config = {
 	enabled = false,
@@ -22,7 +22,11 @@ local text_color_disabled = {r=0.5, g=0.5, b=0.5, a=1}
 local toolbar_icon = [[Interface\CastingBar\UI-CastingBar-Border]]
 local icon_texcoord = {l=25/256, r=80/256, t=14/64, b=49/64}
 
+if (_G ["RaidAssistLeaderToolbar"]) then
+	return
+end
 local LeaderToolbar = {version = "v0.1", pluginname = "Leader Toolbar"}
+_G ["RaidAssistLeaderToolbar"] = LeaderToolbar
 
 LeaderToolbar.menu_text = function (plugin)
 	if (LeaderToolbar.db.enabled) then

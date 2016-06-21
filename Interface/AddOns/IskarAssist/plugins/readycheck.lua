@@ -18,7 +18,12 @@ local icon_texcoord = {l=0.078125, r=0.921875, t=0.078125, b=0.921875}
 local text_color_enabled = {r=1, g=1, b=1, a=1}
 local text_color_disabled = {r=0.5, g=0.5, b=0.5, a=1}
 
+if (_G ["RaidAssistReadyCheck"]) then
+	return
+end
 local ReadyCheck = {version = "v0.1", pluginname = "Ready Check"}
+_G ["RaidAssistReadyCheck"] = ReadyCheck
+
 ReadyCheck.debug = false
 
 ReadyCheck.menu_text = function (plugin)
@@ -317,7 +322,9 @@ local check_onupdate = function (self, elapsed)
 end
 
 function ReadyCheck:READY_CHECK (event, player, timeout)
-
+	
+	--print (timeout)
+	
 	--ready check started
 	if (ReadyCheck.db.enabled) then
 		ReadyCheck.AnswerTable = ReadyCheck.AnswerTable or {}

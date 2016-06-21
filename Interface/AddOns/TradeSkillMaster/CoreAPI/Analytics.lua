@@ -50,7 +50,8 @@ private.embeds = {
 		arg = "\""..tostring(arg).."\""
 		moduleEvent = "\""..moduleEvent.."\""
 		local moduleName = "\""..TSM.Modules:GetName(obj).."\""
-		tinsert(private.events, "["..strjoin(",", moduleName, moduleEvent, arg, time()).."]")
+		local moduleVersion = "\""..(obj._version or "").."\""
+		tinsert(private.events, "["..strjoin(",", moduleName, moduleEvent, moduleVersion, arg, time()).."]")
 		private.lastEventTime = time()
 	end,
 }

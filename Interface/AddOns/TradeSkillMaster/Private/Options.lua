@@ -43,7 +43,7 @@ function Options:Load(parent)
 	end
 	private.treeGroup:SetStatusTable(TSM.db.global.optionsTreeStatus)
 	parent:AddChild(private.treeGroup)
-	
+
 	local moduleChildren = {}
 	for name, callback in pairs(private.moduleOptions) do
 		tinsert(moduleChildren, {value=name, text=name})
@@ -155,7 +155,7 @@ function private:LoadOptionsPage(container)
 		tinsert(guildList, guild)
 		tinsert(guildValues, TSM.db.factionrealm.ignoreGuilds[guild])
 	end
-	
+
 	local chatFrameList = {}
 	local chatFrameValue, defaultValue
 	for i=1, NUM_CHAT_WINDOWS do
@@ -208,7 +208,9 @@ function private:LoadOptionsPage(container)
 									timeout = 0,
 									hideOnEscape = true,
 									OnAccept = function()
-										TSM.db.global.globalOperations = value
+										-- we shouldn't be running the OnProfileUpdated callback while switching profiles
+										TSM.Modules.ignoreProfileUpdated = true
+										TSM.db.global.globalOperations = StaticPopupDialogs["TSM_GLOBAL_OPERATIONS"].newValue
 										if TSM.db.global.globalOperations then
 											-- move current profile to global
 											TSM.db.global.operations = CopyTable(TSM.db.profile.operations)
@@ -224,12 +226,14 @@ function private:LoadOptionsPage(container)
 											-- clear out old operations
 											TSM.db.global.operations = nil
 										end
+										TSM.Modules.ignoreProfileUpdated = false
 										TSM.Modules:ProfileUpdated()
 										if container.frame:IsVisible() then
 											container:Reload()
 										end
 									end,
 								}
+								StaticPopupDialogs["TSM_GLOBAL_OPERATIONS"].newValue = value
 								container:Reload()
 								TSMAPI.Util:ShowStaticPopupDialog("TSM_GLOBAL_OPERATIONS")
 							end,
@@ -845,7 +849,7 @@ function private:LoadMultiAccountPage(parent)
 			},
 		},
 	}
-	
+
 	if next(TSM.db.factionrealm.syncAccounts) then
 		local widgets = {
 			{
@@ -991,7 +995,7 @@ function private:LoadMiscFeatures(container)
 				},
 				{
 					type = "Spacer"
-				},				
+				},
 				{
 					type = "InlineGroup",
 					layout = "Flow",
