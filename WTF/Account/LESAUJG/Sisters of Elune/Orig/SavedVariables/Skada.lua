@@ -29,12 +29,12 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 36,
 					},
-					["Reckoning"] = {
-						["name"] = "Reckoning",
+					["Divine Purpose"] = {
+						["name"] = "Divine Purpose",
 						["active"] = 0,
-						["id"] = 62124,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 3,
+						["id"] = 90174,
+						["auratype"] = "BUFF",
+						["uptime"] = 2,
 					},
 					["Grand Crusader"] = {
 						["name"] = "Grand Crusader",
@@ -43,12 +43,12 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 279,
 					},
-					["Divine Purpose"] = {
-						["name"] = "Divine Purpose",
+					["Reckoning"] = {
+						["name"] = "Reckoning",
 						["active"] = 0,
-						["id"] = 90174,
-						["auratype"] = "BUFF",
-						["uptime"] = 2,
+						["id"] = 62124,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 3,
 					},
 					["Avenger's Shield"] = {
 						["name"] = "Avenger's Shield",
@@ -148,7 +148,117 @@ SkadaPerCharDB = {
 						["multistrikes"] = 0,
 					},
 				},
-				["shielding"] = 113650,
+				["deathlog"] = {
+					{
+						["hp"] = 426369,
+						["ts"] = 1456708425.221,
+						["spellid"] = 68934,
+						["amount"] = -291,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 291,
+						["ts"] = 1456708426.117,
+						["hp"] = 426660,
+						["srcname"] = "Ninemist-Aggramar",
+						["spellid"] = 20167,
+					}, -- [2]
+					{
+						["absorb"] = -107,
+						["amount"] = -162,
+						["ts"] = 1456708426.256,
+						["spellid"] = 68934,
+						["hp"] = 426498,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 162,
+						["ts"] = 1456708426.365,
+						["hp"] = 426660,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 77489,
+					}, -- [4]
+					{
+						["hp"] = 426579,
+						["ts"] = 1456708426.568,
+						["spellid"] = 68934,
+						["amount"] = -81,
+					}, -- [5]
+					{
+						["ts"] = 1456708426.847,
+						["amount"] = -6621,
+						["srcname"] = "Apothecary Frye",
+						["hp"] = 426579,
+						["spellid"] = 88163,
+					}, -- [6]
+					{
+						["absorb"] = -108,
+						["amount"] = -164,
+						["ts"] = 1456708427.226,
+						["spellid"] = 68934,
+						["hp"] = 426415,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 2815,
+						["ts"] = 1456708428.137,
+						["hp"] = 422609,
+						["srcname"] = "Ninemist-Aggramar",
+						["spellid"] = 20167,
+					}, -- [8]
+					{
+						["hp"] = 422343,
+						["ts"] = 1456708428.224,
+						["spellid"] = 68934,
+						["amount"] = -266,
+					}, -- [9]
+					{
+						["absorb"] = -116,
+						["amount"] = -174,
+						["ts"] = 1456708429.244,
+						["spellid"] = 68934,
+						["hp"] = 422169,
+					}, -- [10]
+					{
+						["ts"] = 1456708429.356,
+						["amount"] = 2960,
+						["absorb"] = 0,
+						["hp"] = 425129,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 77489,
+					}, -- [11]
+					{
+						["hp"] = 424851,
+						["ts"] = 1456708430.246,
+						["spellid"] = 68934,
+						["amount"] = -278,
+					}, -- [12]
+					{
+						["ts"] = 1456708431.317,
+						["amount"] = 1809,
+						["absorb"] = 0,
+						["hp"] = 426660,
+						["srcname"] = "Ninemist-Aggramar",
+						["spellid"] = 20167,
+					}, -- [13]
+					{
+						["ts"] = 1456708431.491,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 426660,
+						["srcname"] = "Ninemist-Aggramar",
+						["spellid"] = 20167,
+					}, -- [14]
+					{
+						["ts"] = 1456708431.692,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["hp"] = 426660,
+						["srcname"] = "Ninemist-Aggramar",
+						["spellid"] = 20167,
+					}, -- [15]
+					["pos"] = 1,
+				},
 				["damage"] = 1422844,
 				["damagespells"] = {
 					["Holy Prism"] = {
@@ -206,24 +316,6 @@ SkadaPerCharDB = {
 						["max"] = 3757,
 						["damage"] = 51532,
 					},
-					["Crusader Strike"] = {
-						["min"] = 11089,
-						["critical"] = 1,
-						["totalhits"] = 1,
-						["id"] = 35395,
-						["max"] = 11089,
-						["damage"] = 11089,
-					},
-					["Consecration"] = {
-						["min"] = 1587,
-						["multistrike"] = 27,
-						["critical"] = 16,
-						["hit"] = 109,
-						["totalhits"] = 125,
-						["id"] = 159561,
-						["max"] = 3664,
-						["damage"] = 242238,
-					},
 					["Avenger's Shield"] = {
 						["min"] = 16613,
 						["multistrike"] = 3,
@@ -244,6 +336,24 @@ SkadaPerCharDB = {
 						["max"] = 13170,
 						["damage"] = 276431,
 					},
+					["Crusader Strike"] = {
+						["min"] = 11089,
+						["critical"] = 1,
+						["totalhits"] = 1,
+						["id"] = 35395,
+						["max"] = 11089,
+						["damage"] = 11089,
+					},
+					["Consecration"] = {
+						["min"] = 1587,
+						["multistrike"] = 27,
+						["critical"] = 16,
+						["hit"] = 109,
+						["totalhits"] = 125,
+						["id"] = 159561,
+						["max"] = 3664,
+						["damage"] = 242238,
+					},
 					["Attack"] = {
 						["min"] = 4426,
 						["multistrike"] = 4,
@@ -255,129 +365,19 @@ SkadaPerCharDB = {
 						["damage"] = 164565,
 					},
 				},
-				["deathlog"] = {
-					{
-						["hp"] = 426369,
-						["ts"] = 1456708425.221,
-						["spellid"] = 68934,
-						["amount"] = -291,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 291,
-						["ts"] = 1456708426.117,
-						["hp"] = 426660,
-						["spellid"] = 20167,
-						["srcname"] = "Ninemist-Aggramar",
-					}, -- [2]
-					{
-						["absorb"] = -107,
-						["amount"] = -162,
-						["ts"] = 1456708426.256,
-						["hp"] = 426498,
-						["spellid"] = 68934,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 162,
-						["ts"] = 1456708426.365,
-						["hp"] = 426660,
-						["spellid"] = 77489,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [4]
-					{
-						["hp"] = 426579,
-						["ts"] = 1456708426.568,
-						["spellid"] = 68934,
-						["amount"] = -81,
-					}, -- [5]
-					{
-						["ts"] = 1456708426.847,
-						["amount"] = -6621,
-						["spellid"] = 88163,
-						["srcname"] = "Apothecary Frye",
-						["hp"] = 426579,
-					}, -- [6]
-					{
-						["absorb"] = -108,
-						["amount"] = -164,
-						["ts"] = 1456708427.226,
-						["hp"] = 426415,
-						["spellid"] = 68934,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 2815,
-						["ts"] = 1456708428.137,
-						["hp"] = 422609,
-						["spellid"] = 20167,
-						["srcname"] = "Ninemist-Aggramar",
-					}, -- [8]
-					{
-						["hp"] = 422343,
-						["ts"] = 1456708428.224,
-						["spellid"] = 68934,
-						["amount"] = -266,
-					}, -- [9]
-					{
-						["absorb"] = -116,
-						["amount"] = -174,
-						["ts"] = 1456708429.244,
-						["hp"] = 422169,
-						["spellid"] = 68934,
-					}, -- [10]
-					{
-						["ts"] = 1456708429.356,
-						["amount"] = 2960,
-						["absorb"] = 0,
-						["hp"] = 425129,
-						["spellid"] = 77489,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [11]
-					{
-						["hp"] = 424851,
-						["ts"] = 1456708430.246,
-						["spellid"] = 68934,
-						["amount"] = -278,
-					}, -- [12]
-					{
-						["ts"] = 1456708431.317,
-						["amount"] = 1809,
-						["absorb"] = 0,
-						["hp"] = 426660,
-						["spellid"] = 20167,
-						["srcname"] = "Ninemist-Aggramar",
-					}, -- [13]
-					{
-						["ts"] = 1456708431.491,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 426660,
-						["spellid"] = 20167,
-						["srcname"] = "Ninemist-Aggramar",
-					}, -- [14]
-					{
-						["ts"] = 1456708431.692,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["hp"] = 426660,
-						["spellid"] = 20167,
-						["srcname"] = "Ninemist-Aggramar",
-					}, -- [15]
-					["pos"] = 1,
-				},
-				["damagetaken"] = 537408,
 				["power"] = {
 					[9] = {
 						["amount"] = 33,
 						["spells"] = {
-							[35395] = 1,
 							[105427] = 15,
-							[53595] = 14,
+							[35395] = 1,
 							[98057] = 3,
+							[53595] = 14,
 						},
 					},
 				},
+				["damagetaken"] = 537408,
+				["shielding"] = 113650,
 				["id"] = "Player-106-02FDDD11",
 				["maxhp"] = 426660,
 				["healing"] = 549222,
@@ -386,9 +386,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68641,
 						["absorbed"] = 8380,
-						["min"] = 1327,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 1327,
 						["multistrike"] = 0,
 						["name"] = "Alluring Perfume",
 						["blocked"] = 0,
@@ -401,9 +401,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68934,
 						["absorbed"] = 802,
-						["min"] = 50,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 50,
 						["multistrike"] = 2,
 						["name"] = "Concentrated Irresistible Cologne Spill",
 						["blocked"] = 0,
@@ -416,9 +416,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68607,
 						["absorbed"] = 20907,
-						["min"] = 7244,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 7244,
 						["multistrike"] = 0,
 						["name"] = "Alluring Perfume Spray",
 						["blocked"] = 0,
@@ -431,9 +431,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68821,
 						["absorbed"] = 17634,
-						["min"] = 13213,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 13213,
 						["multistrike"] = 0,
 						["name"] = "Chain Reaction",
 						["blocked"] = 0,
@@ -446,9 +446,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68947,
 						["absorbed"] = 13241,
-						["min"] = 1194,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 1194,
 						["multistrike"] = 0,
 						["name"] = "Irresistible Cologne",
 						["blocked"] = 0,
@@ -461,9 +461,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68927,
 						["absorbed"] = 121,
-						["min"] = 183,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 183,
 						["multistrike"] = 0,
 						["name"] = "Concentrated Alluring Perfume Spill",
 						["blocked"] = 0,
@@ -476,9 +476,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68948,
 						["absorbed"] = 52565,
-						["min"] = 7296,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 7296,
 						["multistrike"] = 0,
 						["name"] = "Irresistible Cologne Spray",
 						["blocked"] = 0,
@@ -491,9 +491,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 6603,
 						["absorbed"] = 3307,
-						["min"] = 1737,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 1737,
 						["multistrike"] = 0,
 						["name"] = "Attack",
 						["blocked"] = 4637,
@@ -667,7 +667,120 @@ SkadaPerCharDB = {
 						["multistrikes"] = 0,
 					},
 				},
-				["shielding"] = 0,
+				["deathlog"] = {
+					{
+						["ts"] = 1456708421.579,
+						["amount"] = 1883,
+						["absorb"] = 0,
+						["hp"] = 344262,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 77489,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 8898,
+						["ts"] = 1456708422.783,
+						["hp"] = 353160,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 64844,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708424.602,
+						["hp"] = 353160,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 77489,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708427.595,
+						["hp"] = 353160,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 77489,
+					}, -- [4]
+					{
+						["hp"] = 352847,
+						["ts"] = 1456708430.301,
+						["spellid"] = 68934,
+						["amount"] = -313,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 313,
+						["ts"] = 1456708430.574,
+						["hp"] = 353160,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 77489,
+					}, -- [6]
+					{
+						["hp"] = 352857,
+						["ts"] = 1456708431.317,
+						["spellid"] = 68934,
+						["amount"] = -303,
+					}, -- [7]
+					{
+						["hp"] = 352403,
+						["ts"] = 1456708432.296,
+						["spellid"] = 68934,
+						["amount"] = -454,
+					}, -- [8]
+					{
+						["ts"] = 1456708415.513,
+						["amount"] = -13159,
+						["srcname"] = "Apothecary Baxter",
+						["hp"] = 321144,
+						["spellid"] = 68948,
+					}, -- [9]
+					{
+						["ts"] = 1456708415.576,
+						["amount"] = -2252,
+						["srcname"] = "Apothecary Baxter",
+						["hp"] = 318892,
+						["spellid"] = 68947,
+					}, -- [10]
+					{
+						["ts"] = 1456708416.507,
+						["amount"] = -13468,
+						["srcname"] = "Apothecary Baxter",
+						["hp"] = 305424,
+						["spellid"] = 68948,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 10277,
+						["ts"] = 1456708418.533,
+						["hp"] = 315701,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 64844,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 11304,
+						["ts"] = 1456708419.958,
+						["hp"] = 327005,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 64844,
+					}, -- [13]
+					{
+						["ts"] = 1456708421.381,
+						["amount"] = 11304,
+						["absorb"] = 0,
+						["hp"] = 338309,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 64844,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 4070,
+						["ts"] = 1456708421.381,
+						["hp"] = 342379,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 64844,
+					}, -- [15]
+					["pos"] = 9,
+				},
 				["damage"] = 851025,
 				["damagespells"] = {
 					["Exorcism"] = {
@@ -752,121 +865,6 @@ SkadaPerCharDB = {
 						["damage"] = 95956,
 					},
 				},
-				["deathlog"] = {
-					{
-						["ts"] = 1456708421.579,
-						["amount"] = 1883,
-						["absorb"] = 0,
-						["hp"] = 344262,
-						["spellid"] = 77489,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 8898,
-						["ts"] = 1456708422.783,
-						["hp"] = 353160,
-						["spellid"] = 64844,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708424.602,
-						["hp"] = 353160,
-						["spellid"] = 77489,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708427.595,
-						["hp"] = 353160,
-						["spellid"] = 77489,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [4]
-					{
-						["hp"] = 352847,
-						["ts"] = 1456708430.301,
-						["spellid"] = 68934,
-						["amount"] = -313,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 313,
-						["ts"] = 1456708430.574,
-						["hp"] = 353160,
-						["spellid"] = 77489,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [6]
-					{
-						["hp"] = 352857,
-						["ts"] = 1456708431.317,
-						["spellid"] = 68934,
-						["amount"] = -303,
-					}, -- [7]
-					{
-						["hp"] = 352403,
-						["ts"] = 1456708432.296,
-						["spellid"] = 68934,
-						["amount"] = -454,
-					}, -- [8]
-					{
-						["ts"] = 1456708415.513,
-						["amount"] = -13159,
-						["spellid"] = 68948,
-						["srcname"] = "Apothecary Baxter",
-						["hp"] = 321144,
-					}, -- [9]
-					{
-						["ts"] = 1456708415.576,
-						["amount"] = -2252,
-						["spellid"] = 68947,
-						["srcname"] = "Apothecary Baxter",
-						["hp"] = 318892,
-					}, -- [10]
-					{
-						["ts"] = 1456708416.507,
-						["amount"] = -13468,
-						["spellid"] = 68948,
-						["srcname"] = "Apothecary Baxter",
-						["hp"] = 305424,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 10277,
-						["ts"] = 1456708418.533,
-						["hp"] = 315701,
-						["spellid"] = 64844,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 11304,
-						["ts"] = 1456708419.958,
-						["hp"] = 327005,
-						["spellid"] = 64844,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [13]
-					{
-						["ts"] = 1456708421.381,
-						["amount"] = 11304,
-						["absorb"] = 0,
-						["hp"] = 338309,
-						["spellid"] = 64844,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 4070,
-						["ts"] = 1456708421.381,
-						["hp"] = 342379,
-						["spellid"] = 64844,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [15]
-					["pos"] = 9,
-				},
-				["damagetaken"] = 91236,
 				["power"] = {
 					[9] = {
 						["amount"] = 21,
@@ -878,6 +876,8 @@ SkadaPerCharDB = {
 						},
 					},
 				},
+				["damagetaken"] = 91236,
+				["shielding"] = 0,
 				["id"] = "Player-106-029D5EEE",
 				["maxhp"] = 353160,
 				["healing"] = 4871,
@@ -886,9 +886,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68641,
 						["absorbed"] = 0,
-						["min"] = 2164,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 2164,
 						["multistrike"] = 0,
 						["name"] = "Alluring Perfume",
 						["blocked"] = 0,
@@ -901,9 +901,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68934,
 						["absorbed"] = 0,
-						["min"] = 303,
-						["critical"] = 1,
 						["glancing"] = 0,
+						["critical"] = 1,
+						["min"] = 303,
 						["multistrike"] = 0,
 						["name"] = "Concentrated Irresistible Cologne Spill",
 						["blocked"] = 0,
@@ -916,9 +916,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68927,
 						["absorbed"] = 0,
-						["min"] = 317,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 317,
 						["multistrike"] = 0,
 						["name"] = "Concentrated Alluring Perfume Spill",
 						["blocked"] = 0,
@@ -931,9 +931,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68947,
 						["absorbed"] = 0,
-						["min"] = 1987,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 1987,
 						["multistrike"] = 0,
 						["name"] = "Irresistible Cologne",
 						["blocked"] = 0,
@@ -946,9 +946,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68948,
 						["absorbed"] = 0,
-						["min"] = 13159,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 13159,
 						["multistrike"] = 0,
 						["name"] = "Irresistible Cologne Spray",
 						["blocked"] = 0,
@@ -1087,28 +1087,102 @@ SkadaPerCharDB = {
 						["multistrikes"] = 0,
 					},
 				},
-				["shielding"] = 1267,
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 10758,
+						["ts"] = 1456708413.184,
+						["hp"] = 356100,
+						["srcname"] = "Ninemist-Aggramar",
+						["spellid"] = 114852,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708418.533,
+						["hp"] = 356100,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 64844,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708419.958,
+						["hp"] = 356100,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 64844,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708421.381,
+						["hp"] = 356100,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 64844,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708421.579,
+						["hp"] = 356100,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 77489,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708422.783,
+						["hp"] = 356100,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 64844,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708424.602,
+						["hp"] = 356100,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 77489,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708427.595,
+						["hp"] = 356100,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 77489,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708430.574,
+						["hp"] = 356100,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 77489,
+					}, -- [9]
+					["pos"] = 10,
+				},
 				["damage"] = 1189853,
 				["damagespells"] = {
-					["Svelinia-Fizzcrank: Frostbolt"] = {
-						["min"] = 3415,
-						["multistrike"] = 68,
-						["critical"] = 13,
-						["hit"] = 63,
-						["totalhits"] = 76,
-						["id"] = 59638,
-						["max"] = 7513,
-						["damage"] = 413517,
+					["Water Elemental: Waterbolt"] = {
+						["min"] = 3947,
+						["multistrike"] = 19,
+						["critical"] = 4,
+						["hit"] = 16,
+						["totalhits"] = 20,
+						["id"] = 31707,
+						["max"] = 10043,
+						["damage"] = 137981,
 					},
-					["Frostfire Bolt"] = {
-						["min"] = 11760,
-						["multistrike"] = 3,
-						["critical"] = 1,
-						["hit"] = 3,
-						["totalhits"] = 4,
-						["id"] = 44614,
-						["max"] = 23683,
-						["damage"] = 75801,
+					["Water Elemental: Water Jet"] = {
+						["min"] = 2285,
+						["multistrike"] = 15,
+						["critical"] = 2,
+						["hit"] = 8,
+						["totalhits"] = 10,
+						["id"] = 135029,
+						["max"] = 5335,
+						["damage"] = 45406,
 					},
 					["Icicle"] = {
 						["min"] = 509,
@@ -1128,15 +1202,15 @@ SkadaPerCharDB = {
 						["max"] = 15275,
 						["damage"] = 156563,
 					},
-					["Water Elemental: Water Jet"] = {
-						["min"] = 2285,
-						["multistrike"] = 15,
-						["critical"] = 2,
-						["hit"] = 8,
-						["totalhits"] = 10,
-						["id"] = 135029,
-						["max"] = 5335,
-						["damage"] = 45406,
+					["Frostfire Bolt"] = {
+						["min"] = 11760,
+						["multistrike"] = 3,
+						["critical"] = 1,
+						["hit"] = 3,
+						["totalhits"] = 4,
+						["id"] = 44614,
+						["max"] = 23683,
+						["damage"] = 75801,
 					},
 					["Ice Lance"] = {
 						["min"] = 1717,
@@ -1148,15 +1222,15 @@ SkadaPerCharDB = {
 						["max"] = 36507,
 						["damage"] = 210450,
 					},
-					["Water Elemental: Waterbolt"] = {
-						["min"] = 3947,
-						["multistrike"] = 19,
-						["critical"] = 4,
-						["hit"] = 16,
-						["totalhits"] = 20,
-						["id"] = 31707,
-						["max"] = 10043,
-						["damage"] = 137981,
+					["Svelinia-Fizzcrank: Frostbolt"] = {
+						["min"] = 3415,
+						["multistrike"] = 68,
+						["critical"] = 13,
+						["hit"] = 63,
+						["totalhits"] = 76,
+						["id"] = 59638,
+						["max"] = 7513,
+						["damage"] = 413517,
 					},
 					["Frozen Orb"] = {
 						["min"] = 3658,
@@ -1169,84 +1243,10 @@ SkadaPerCharDB = {
 						["damage"] = 120372,
 					},
 				},
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 10758,
-						["ts"] = 1456708413.184,
-						["hp"] = 356100,
-						["spellid"] = 114852,
-						["srcname"] = "Ninemist-Aggramar",
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708418.533,
-						["hp"] = 356100,
-						["spellid"] = 64844,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708419.958,
-						["hp"] = 356100,
-						["spellid"] = 64844,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708421.381,
-						["hp"] = 356100,
-						["spellid"] = 64844,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708421.579,
-						["hp"] = 356100,
-						["spellid"] = 77489,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708422.783,
-						["hp"] = 356100,
-						["spellid"] = 64844,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708424.602,
-						["hp"] = 356100,
-						["spellid"] = 77489,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708427.595,
-						["hp"] = 356100,
-						["spellid"] = 77489,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708430.574,
-						["hp"] = 356100,
-						["spellid"] = 77489,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [9]
-					["pos"] = 10,
-				},
-				["damagetaken"] = 0,
 				["power"] = {
 				},
+				["damagetaken"] = 0,
+				["shielding"] = 1267,
 				["id"] = "Player-106-05FD55DA",
 				["maxhp"] = 356100,
 				["healing"] = 1267,
@@ -1514,7 +1514,109 @@ SkadaPerCharDB = {
 						["multistrikes"] = 0,
 					},
 				},
-				["shielding"] = 72282,
+				["deathlog"] = {
+					{
+						["hp"] = 312848,
+						["ts"] = 1456708431.373,
+						["spellid"] = 68927,
+						["amount"] = -292,
+					}, -- [1]
+					{
+						["hp"] = 312743,
+						["ts"] = 1456708431.692,
+						["spellid"] = 68927,
+						["amount"] = -105,
+					}, -- [2]
+					{
+						["hp"] = 312417,
+						["ts"] = 1456708432.369,
+						["spellid"] = 68927,
+						["amount"] = -326,
+					}, -- [3]
+					{
+						["hp"] = 312104,
+						["ts"] = 1456708433.373,
+						["spellid"] = 68927,
+						["amount"] = -313,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708421.552,
+						["hp"] = 313140,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 77489,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1456708422.783,
+						["hp"] = 313140,
+						["srcname"] = "Secondcoming-Gundrak",
+						["spellid"] = 64844,
+					}, -- [6]
+					{
+						["ts"] = 1456708424.541,
+						["amount"] = 0,
+						["absorb"] = 0,
+						["srcname"] = "Secondcoming-Gundrak",
+						["hp"] = 313140,
+						["spellid"] = 77489,
+					}, -- [7]
+					{
+						["spellid"] = 68927,
+						["ts"] = 1456708426.365,
+						["hp"] = 312858,
+						["amount"] = -282,
+					}, -- [8]
+					{
+						["spellid"] = 68927,
+						["ts"] = 1456708427.365,
+						["hp"] = 312530,
+						["amount"] = -328,
+					}, -- [9]
+					{
+						["ts"] = 1456708427.542,
+						["amount"] = 610,
+						["absorb"] = 0,
+						["srcname"] = "Secondcoming-Gundrak",
+						["hp"] = 313140,
+						["spellid"] = 77489,
+					}, -- [10]
+					{
+						["spellid"] = 68927,
+						["ts"] = 1456708428.363,
+						["hp"] = 312855,
+						["amount"] = -285,
+					}, -- [11]
+					{
+						["spellid"] = 68927,
+						["ts"] = 1456708428.691,
+						["hp"] = 312752,
+						["amount"] = -103,
+					}, -- [12]
+					{
+						["spellid"] = 68927,
+						["ts"] = 1456708429.356,
+						["hp"] = 312453,
+						["amount"] = -299,
+					}, -- [13]
+					{
+						["hp"] = 312123,
+						["ts"] = 1456708430.359,
+						["spellid"] = 68927,
+						["amount"] = -330,
+					}, -- [14]
+					{
+						["ts"] = 1456708430.547,
+						["amount"] = 1017,
+						["absorb"] = 0,
+						["srcname"] = "Secondcoming-Gundrak",
+						["hp"] = 313140,
+						["spellid"] = 77489,
+					}, -- [15]
+					["pos"] = 5,
+				},
 				["damage"] = 307512,
 				["damagespells"] = {
 					["Shadow Word: Pain"] = {
@@ -1558,112 +1660,10 @@ SkadaPerCharDB = {
 						["damage"] = 47571,
 					},
 				},
-				["deathlog"] = {
-					{
-						["hp"] = 312848,
-						["ts"] = 1456708431.373,
-						["spellid"] = 68927,
-						["amount"] = -292,
-					}, -- [1]
-					{
-						["hp"] = 312743,
-						["ts"] = 1456708431.692,
-						["spellid"] = 68927,
-						["amount"] = -105,
-					}, -- [2]
-					{
-						["hp"] = 312417,
-						["ts"] = 1456708432.369,
-						["spellid"] = 68927,
-						["amount"] = -326,
-					}, -- [3]
-					{
-						["hp"] = 312104,
-						["ts"] = 1456708433.373,
-						["spellid"] = 68927,
-						["amount"] = -313,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708421.552,
-						["hp"] = 313140,
-						["spellid"] = 77489,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1456708422.783,
-						["hp"] = 313140,
-						["spellid"] = 64844,
-						["srcname"] = "Secondcoming-Gundrak",
-					}, -- [6]
-					{
-						["ts"] = 1456708424.541,
-						["amount"] = 0,
-						["absorb"] = 0,
-						["srcname"] = "Secondcoming-Gundrak",
-						["spellid"] = 77489,
-						["hp"] = 313140,
-					}, -- [7]
-					{
-						["spellid"] = 68927,
-						["ts"] = 1456708426.365,
-						["hp"] = 312858,
-						["amount"] = -282,
-					}, -- [8]
-					{
-						["spellid"] = 68927,
-						["ts"] = 1456708427.365,
-						["hp"] = 312530,
-						["amount"] = -328,
-					}, -- [9]
-					{
-						["ts"] = 1456708427.542,
-						["amount"] = 610,
-						["absorb"] = 0,
-						["srcname"] = "Secondcoming-Gundrak",
-						["spellid"] = 77489,
-						["hp"] = 313140,
-					}, -- [10]
-					{
-						["spellid"] = 68927,
-						["ts"] = 1456708428.363,
-						["hp"] = 312855,
-						["amount"] = -285,
-					}, -- [11]
-					{
-						["spellid"] = 68927,
-						["ts"] = 1456708428.691,
-						["hp"] = 312752,
-						["amount"] = -103,
-					}, -- [12]
-					{
-						["spellid"] = 68927,
-						["ts"] = 1456708429.356,
-						["hp"] = 312453,
-						["amount"] = -299,
-					}, -- [13]
-					{
-						["hp"] = 312123,
-						["ts"] = 1456708430.359,
-						["spellid"] = 68927,
-						["amount"] = -330,
-					}, -- [14]
-					{
-						["ts"] = 1456708430.547,
-						["amount"] = 1017,
-						["absorb"] = 0,
-						["srcname"] = "Secondcoming-Gundrak",
-						["spellid"] = 77489,
-						["hp"] = 313140,
-					}, -- [15]
-					["pos"] = 5,
-				},
-				["damagetaken"] = 43052,
 				["power"] = {
 				},
+				["damagetaken"] = 43052,
+				["shielding"] = 72282,
 				["id"] = "Player-3728-096C56FB",
 				["maxhp"] = 313140,
 				["healing"] = 707262,
@@ -1672,9 +1672,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68927,
 						["absorbed"] = 0,
-						["min"] = 102,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 102,
 						["multistrike"] = 5,
 						["name"] = "Concentrated Alluring Perfume Spill",
 						["blocked"] = 0,
@@ -1687,9 +1687,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68948,
 						["absorbed"] = 0,
-						["min"] = 11130,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 11130,
 						["multistrike"] = 0,
 						["name"] = "Irresistible Cologne Spray",
 						["blocked"] = 0,
@@ -1933,7 +1933,116 @@ SkadaPerCharDB = {
 						["multistrikes"] = 0,
 					},
 				},
-				["shielding"] = 0,
+				["deathlog"] = {
+					{
+						["ts"] = 1466045816.628,
+						["amount"] = -1447,
+						["srcname"] = "Al'Akir",
+						["spellid"] = 89641,
+						["hp"] = 239796,
+					}, -- [1]
+					{
+						["ts"] = 1466045816.673,
+						["amount"] = -1420,
+						["hp"] = 238376,
+						["spellid"] = 89641,
+						["srcname"] = "Al'Akir",
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 23524,
+						["ts"] = 1466045819.473,
+						["srcname"] = "Orig",
+						["hp"] = 261900,
+						["spellid"] = 115072,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["ts"] = 1466045819.473,
+						["srcname"] = "Orig",
+						["hp"] = 261900,
+						["spellid"] = 115072,
+					}, -- [4]
+					{
+						["ts"] = 1466045820.628,
+						["amount"] = -1463,
+						["srcname"] = "Al'Akir",
+						["spellid"] = 89641,
+						["hp"] = 260437,
+					}, -- [5]
+					{
+						["ts"] = 1466045820.668,
+						["amount"] = -1415,
+						["hp"] = 259022,
+						["spellid"] = 89641,
+						["srcname"] = "Al'Akir",
+					}, -- [6]
+					{
+						["ts"] = 1466045824.635,
+						["amount"] = -1474,
+						["hp"] = 257548,
+						["spellid"] = 89641,
+						["srcname"] = "Al'Akir",
+					}, -- [7]
+					{
+						["ts"] = 1466045824.635,
+						["amount"] = -1425,
+						["hp"] = 256123,
+						["spellid"] = 89641,
+						["srcname"] = "Al'Akir",
+					}, -- [8]
+					{
+						["ts"] = 1466373659.407,
+						["amount"] = -8,
+						["hp"] = 261900,
+						["spellid"] = 88163,
+						["srcname"] = "Avian Ripper",
+					}, -- [9]
+					{
+						["ts"] = 1466373659.407,
+						["amount"] = -7,
+						["spellid"] = 88163,
+						["srcname"] = "Avian Ripper",
+						["hp"] = 261900,
+					}, -- [10]
+					{
+						["ts"] = 1466045804.305,
+						["amount"] = -2133,
+						["hp"] = 245492,
+						["spellid"] = 88163,
+						["srcname"] = "Al'Akir",
+					}, -- [11]
+					{
+						["ts"] = 1466045804.414,
+						["amount"] = -49,
+						["hp"] = 245443,
+						["spellid"] = 88301,
+						["srcname"] = "Al'Akir",
+					}, -- [12]
+					{
+						["ts"] = 1466045805.413,
+						["amount"] = -49,
+						["hp"] = 243261,
+						["spellid"] = 88301,
+						["srcname"] = "Al'Akir",
+					}, -- [13]
+					{
+						["ts"] = 1466045805.808,
+						["amount"] = -1969,
+						["hp"] = 243261,
+						["spellid"] = 88163,
+						["srcname"] = "Al'Akir",
+					}, -- [14]
+					{
+						["ts"] = 1466045806.422,
+						["amount"] = -49,
+						["hp"] = 241243,
+						["spellid"] = 88301,
+						["srcname"] = "Al'Akir",
+					}, -- [15]
+					["pos"] = 11,
+				},
 				["damage"] = 40870577,
 				["damagespells"] = {
 					["Fists of Fury"] = {
@@ -2056,117 +2165,6 @@ SkadaPerCharDB = {
 						["damage"] = 6439365,
 					},
 				},
-				["deathlog"] = {
-					{
-						["ts"] = 1466045816.628,
-						["amount"] = -1447,
-						["hp"] = 239796,
-						["srcname"] = "Al'Akir",
-						["spellid"] = 89641,
-					}, -- [1]
-					{
-						["ts"] = 1466045816.673,
-						["amount"] = -1420,
-						["srcname"] = "Al'Akir",
-						["hp"] = 238376,
-						["spellid"] = 89641,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 23524,
-						["ts"] = 1466045819.473,
-						["srcname"] = "Orig",
-						["spellid"] = 115072,
-						["hp"] = 261900,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["ts"] = 1466045819.473,
-						["srcname"] = "Orig",
-						["spellid"] = 115072,
-						["hp"] = 261900,
-					}, -- [4]
-					{
-						["ts"] = 1466045820.628,
-						["amount"] = -1463,
-						["hp"] = 260437,
-						["srcname"] = "Al'Akir",
-						["spellid"] = 89641,
-					}, -- [5]
-					{
-						["ts"] = 1466045820.668,
-						["amount"] = -1415,
-						["srcname"] = "Al'Akir",
-						["hp"] = 259022,
-						["spellid"] = 89641,
-					}, -- [6]
-					{
-						["ts"] = 1466045824.635,
-						["amount"] = -1474,
-						["srcname"] = "Al'Akir",
-						["hp"] = 257548,
-						["spellid"] = 89641,
-					}, -- [7]
-					{
-						["ts"] = 1466045824.635,
-						["amount"] = -1425,
-						["srcname"] = "Al'Akir",
-						["hp"] = 256123,
-						["spellid"] = 89641,
-					}, -- [8]
-					{
-						["ts"] = 1466373659.407,
-						["amount"] = -8,
-						["srcname"] = "Avian Ripper",
-						["hp"] = 261900,
-						["spellid"] = 88163,
-					}, -- [9]
-					{
-						["ts"] = 1466373659.407,
-						["amount"] = -7,
-						["hp"] = 261900,
-						["spellid"] = 88163,
-						["srcname"] = "Avian Ripper",
-					}, -- [10]
-					{
-						["ts"] = 1466045804.305,
-						["amount"] = -2133,
-						["srcname"] = "Al'Akir",
-						["hp"] = 245492,
-						["spellid"] = 88163,
-					}, -- [11]
-					{
-						["ts"] = 1466045804.414,
-						["amount"] = -49,
-						["srcname"] = "Al'Akir",
-						["hp"] = 245443,
-						["spellid"] = 88301,
-					}, -- [12]
-					{
-						["ts"] = 1466045805.413,
-						["amount"] = -49,
-						["srcname"] = "Al'Akir",
-						["hp"] = 243261,
-						["spellid"] = 88301,
-					}, -- [13]
-					{
-						["ts"] = 1466045805.808,
-						["amount"] = -1969,
-						["srcname"] = "Al'Akir",
-						["hp"] = 243261,
-						["spellid"] = 88163,
-					}, -- [14]
-					{
-						["ts"] = 1466045806.422,
-						["amount"] = -49,
-						["srcname"] = "Al'Akir",
-						["hp"] = 241243,
-						["spellid"] = 88301,
-					}, -- [15]
-					["pos"] = 11,
-				},
-				["damagetaken"] = 405862,
 				["power"] = {
 					[12] = {
 						["amount"] = 88,
@@ -2174,11 +2172,13 @@ SkadaPerCharDB = {
 							[129881] = 7,
 							[115399] = 10,
 							[157558] = 7,
-							[115072] = 8,
 							[115695] = 56,
+							[115072] = 8,
 						},
 					},
 				},
+				["damagetaken"] = 405862,
+				["shielding"] = 0,
 				["id"] = "Player-1169-076A3790",
 				["maxhp"] = 270780,
 				["healing"] = 67847,
@@ -2187,9 +2187,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 18392,
 						["absorbed"] = 0,
-						["min"] = 142,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 142,
 						["multistrike"] = 0,
 						["name"] = "Fireball",
 						["blocked"] = 0,
@@ -2202,9 +2202,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68927,
 						["absorbed"] = 0,
-						["min"] = 92,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 92,
 						["multistrike"] = 5,
 						["name"] = "Concentrated Alluring Perfume Spill",
 						["blocked"] = 0,
@@ -2217,9 +2217,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68868,
 						["absorbed"] = 0,
-						["min"] = 775,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 775,
 						["multistrike"] = 0,
 						["name"] = "Cleave",
 						["blocked"] = 0,
@@ -2232,9 +2232,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68947,
 						["absorbed"] = 0,
-						["min"] = 2201,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 2201,
 						["multistrike"] = 0,
 						["name"] = "Irresistible Cologne",
 						["blocked"] = 0,
@@ -2247,9 +2247,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 88301,
 						["absorbed"] = 0,
-						["min"] = 24,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 24,
 						["multistrike"] = 0,
 						["name"] = "Acid Rain",
 						["blocked"] = 0,
@@ -2262,9 +2262,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 86081,
 						["absorbed"] = 0,
-						["min"] = 1106,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 1106,
 						["multistrike"] = 0,
 						["name"] = "Permafrost",
 						["blocked"] = 0,
@@ -2273,28 +2273,13 @@ SkadaPerCharDB = {
 						["max"] = 1299,
 						["damage"] = 7274,
 					},
-					["Alluring Perfume"] = {
-						["crushing"] = 0,
-						["id"] = 68641,
-						["absorbed"] = 0,
-						["min"] = 2250,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["multistrike"] = 0,
-						["name"] = "Alluring Perfume",
-						["blocked"] = 0,
-						["totalhits"] = 17,
-						["resisted"] = 0,
-						["max"] = 2691,
-						["damage"] = 42560,
-					},
 					["Irresistible Cologne Spray"] = {
 						["crushing"] = 0,
 						["id"] = 68948,
 						["absorbed"] = 10340,
-						["min"] = 3438,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 3438,
 						["multistrike"] = 0,
 						["name"] = "Irresistible Cologne Spray",
 						["blocked"] = 0,
@@ -2303,13 +2288,28 @@ SkadaPerCharDB = {
 						["max"] = 16493,
 						["damage"] = 151785,
 					},
+					["Alluring Perfume"] = {
+						["crushing"] = 0,
+						["id"] = 68641,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 2250,
+						["multistrike"] = 0,
+						["name"] = "Alluring Perfume",
+						["blocked"] = 0,
+						["totalhits"] = 17,
+						["resisted"] = 0,
+						["max"] = 2691,
+						["damage"] = 42560,
+					},
 					["Lightning"] = {
 						["crushing"] = 0,
 						["id"] = 89641,
 						["absorbed"] = 0,
-						["min"] = 1415,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 1415,
 						["multistrike"] = 0,
 						["name"] = "Lightning",
 						["blocked"] = 0,
@@ -2322,9 +2322,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 68607,
 						["absorbed"] = 0,
-						["min"] = 14784,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 14784,
 						["multistrike"] = 0,
 						["name"] = "Alluring Perfume Spray",
 						["blocked"] = 0,
@@ -2337,9 +2337,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 93168,
 						["absorbed"] = 0,
-						["min"] = 23,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 23,
 						["multistrike"] = 0,
 						["name"] = "Withering Winds",
 						["blocked"] = 0,
@@ -2352,9 +2352,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 93163,
 						["absorbed"] = 0,
-						["min"] = 23,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 23,
 						["multistrike"] = 0,
 						["name"] = "Chilling Winds",
 						["blocked"] = 0,
@@ -2367,9 +2367,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 86182,
 						["absorbed"] = 0,
-						["min"] = 920,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 920,
 						["multistrike"] = 0,
 						["name"] = "Slicing Gale",
 						["blocked"] = 0,
@@ -2382,9 +2382,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 84645,
 						["absorbed"] = 0,
-						["min"] = 373,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 373,
 						["multistrike"] = 0,
 						["name"] = "Wind Chill",
 						["blocked"] = 0,
@@ -2397,9 +2397,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 6603,
 						["absorbed"] = 0,
-						["min"] = 7,
-						["critical"] = 2,
 						["glancing"] = 0,
+						["critical"] = 2,
+						["min"] = 7,
 						["multistrike"] = 0,
 						["name"] = "Attack",
 						["blocked"] = 0,
@@ -2463,21 +2463,21 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 79895,
 				["htakenspell"] = {
 				},
-				["taken"] = 79895,
-				["done"] = 0,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
 			},
 			["Apothecary Hummel"] = {
 				["players"] = {
-					["Secondcoming-Gundrak"] = {
-						["taken"] = 169210,
-						["done"] = 0,
-						["role"] = "HEALER",
-						["class"] = "PRIEST",
+					["Ninemist-Aggramar"] = {
+						["taken"] = 343608,
+						["done"] = 166233,
+						["role"] = "TANK",
+						["class"] = "PALADIN",
 					},
 					["Svelinia-Fizzcrank"] = {
 						["taken"] = 330335,
@@ -2485,10 +2485,16 @@ SkadaPerCharDB = {
 						["role"] = "DAMAGER",
 						["class"] = "MAGE",
 					},
-					["Ninemist-Aggramar"] = {
-						["taken"] = 343608,
-						["done"] = 166233,
-						["role"] = "TANK",
+					["Secondcoming-Gundrak"] = {
+						["taken"] = 169210,
+						["done"] = 0,
+						["role"] = "HEALER",
+						["class"] = "PRIEST",
+					},
+					["Bluemist-Aggramar"] = {
+						["taken"] = 471063,
+						["done"] = 21291,
+						["role"] = "DAMAGER",
 						["class"] = "PALADIN",
 					},
 					["Orig"] = {
@@ -2497,18 +2503,12 @@ SkadaPerCharDB = {
 						["role"] = "DAMAGER",
 						["class"] = "MONK",
 					},
-					["Bluemist-Aggramar"] = {
-						["taken"] = 471063,
-						["done"] = 21291,
-						["role"] = "DAMAGER",
-						["class"] = "PALADIN",
-					},
 				},
 				["hdone"] = 0,
+				["done"] = 275945,
+				["taken"] = 1550517,
 				["htakenspell"] = {
 				},
-				["taken"] = 1550517,
-				["done"] = 275945,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -2523,10 +2523,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 130169,
 				["htakenspell"] = {
 				},
-				["taken"] = 130169,
-				["done"] = 0,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -2541,10 +2541,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 247,
+				["taken"] = 4621730,
 				["htakenspell"] = {
 				},
-				["taken"] = 4621730,
-				["done"] = 247,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -2559,10 +2559,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
-				["done"] = 0,
-				["taken"] = 120682,
 				["htakenspell"] = {
 				},
+				["taken"] = 120682,
+				["done"] = 0,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -2577,10 +2577,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 21507,
+				["taken"] = 4057172,
 				["htakenspell"] = {
 				},
-				["taken"] = 4057172,
-				["done"] = 21507,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -2595,10 +2595,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 3745,
+				["taken"] = 1617402,
 				["htakenspell"] = {
 				},
-				["taken"] = 1617402,
-				["done"] = 3745,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -2616,18 +2616,18 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 109787,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Apothecary Baxter"] = {
 				["players"] = {
-					["Bluemist-Aggramar"] = {
-						["taken"] = 200254,
-						["done"] = 68558,
+					["Orig"] = {
+						["taken"] = 133610,
+						["done"] = 198894,
 						["role"] = "DAMAGER",
-						["class"] = "PALADIN",
+						["class"] = "MONK",
 					},
 					["Svelinia-Fizzcrank"] = {
 						["taken"] = 546663,
@@ -2635,74 +2635,50 @@ SkadaPerCharDB = {
 						["role"] = "DAMAGER",
 						["class"] = "MAGE",
 					},
-					["Secondcoming-Gundrak"] = {
-						["taken"] = 82253,
-						["done"] = 36096,
-						["role"] = "HEALER",
-						["class"] = "PRIEST",
-					},
-					["Orig"] = {
-						["taken"] = 133610,
-						["done"] = 198894,
-						["role"] = "DAMAGER",
-						["class"] = "MONK",
-					},
 					["Ninemist-Aggramar"] = {
 						["taken"] = 509508,
 						["done"] = 343356,
 						["role"] = "TANK",
 						["class"] = "PALADIN",
 					},
+					["Bluemist-Aggramar"] = {
+						["taken"] = 200254,
+						["done"] = 68558,
+						["role"] = "DAMAGER",
+						["class"] = "PALADIN",
+					},
+					["Secondcoming-Gundrak"] = {
+						["taken"] = 82253,
+						["done"] = 36096,
+						["role"] = "HEALER",
+						["class"] = "PRIEST",
+					},
 				},
 				["hdone"] = 0,
+				["done"] = 646904,
+				["taken"] = 1472288,
 				["htakenspell"] = {
 				},
-				["taken"] = 1472288,
-				["done"] = 646904,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
 			},
-			["Apothecary Frye"] = {
+			["Anzu"] = {
 				["players"] = {
-					["Secondcoming-Gundrak"] = {
-						["taken"] = 56049,
-						["done"] = 0,
-						["role"] = "HEALER",
-						["class"] = "PRIEST",
-					},
-					["Svelinia-Fizzcrank"] = {
-						["taken"] = 312855,
-						["done"] = 0,
-						["role"] = "DAMAGER",
-						["class"] = "MAGE",
-					},
-					["Ninemist-Aggramar"] = {
-						["taken"] = 569728,
-						["done"] = 24672,
-						["role"] = "TANK",
-						["class"] = "PALADIN",
-					},
-					["Bluemist-Aggramar"] = {
-						["taken"] = 179708,
-						["done"] = 0,
-						["role"] = "DAMAGER",
-						["class"] = "PALADIN",
-					},
 					["Orig"] = {
-						["taken"] = 352132,
+						["taken"] = 655093,
 						["done"] = 0,
-						["role"] = "DAMAGER",
 						["class"] = "MONK",
+						["role"] = "NONE",
 					},
 				},
 				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 1470472,
-				["done"] = 24672,
-				["htaken"] = 0,
 				["hdonespell"] = {
+				},
+				["taken"] = 655093,
+				["done"] = 0,
+				["htaken"] = 0,
+				["htakenspell"] = {
 				},
 			},
 			["Onyxia"] = {
@@ -2715,10 +2691,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 3146,
+				["taken"] = 11308752,
 				["htakenspell"] = {
 				},
-				["taken"] = 11308752,
-				["done"] = 3146,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -2733,10 +2709,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 39066,
 				["htakenspell"] = {
 				},
-				["taken"] = 39066,
-				["done"] = 0,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -2751,10 +2727,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 37519,
 				["htakenspell"] = {
 				},
-				["taken"] = 37519,
-				["done"] = 0,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -2772,10 +2748,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 115833,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Anshal"] = {
 				["players"] = {
@@ -2787,6 +2763,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 42831,
+				["taken"] = 2019037,
 				["htakenspell"] = {
 					["Soothing Breeze"] = {
 						["min"] = 0,
@@ -2797,8 +2775,6 @@ SkadaPerCharDB = {
 						["hits"] = 53,
 					},
 				},
-				["taken"] = 2019037,
-				["done"] = 42831,
 				["htaken"] = 49400,
 				["hdonespell"] = {
 				},
@@ -2816,16 +2792,16 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 258339,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
-			["Al'Akir"] = {
+			["Adder"] = {
 				["players"] = {
 					["Orig"] = {
-						["taken"] = 9623916,
-						["done"] = 39903,
+						["taken"] = 216452,
+						["done"] = 0,
 						["role"] = "NONE",
 						["class"] = "MONK",
 					},
@@ -2833,8 +2809,8 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["htakenspell"] = {
 				},
-				["taken"] = 9623916,
-				["done"] = 39903,
+				["taken"] = 216452,
+				["done"] = 0,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -2849,31 +2825,31 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
-				["done"] = 15,
-				["taken"] = 1836488,
 				["htakenspell"] = {
 				},
+				["taken"] = 1836488,
+				["done"] = 15,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
 			},
-			["Sethekk Initiate"] = {
+			["Sethekk Guard"] = {
 				["players"] = {
 					["Orig"] = {
-						["taken"] = 37149,
+						["taken"] = 564134,
 						["done"] = 0,
-						["class"] = "MONK",
 						["role"] = "NONE",
+						["class"] = "MONK",
 					},
 				},
 				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 37149,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
+				["taken"] = 564134,
 				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
 			},
 			["Time-Lost Scryer"] = {
 				["players"] = {
@@ -2888,23 +2864,23 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 116016,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
-			["Adder"] = {
+			["Al'Akir"] = {
 				["players"] = {
 					["Orig"] = {
-						["taken"] = 216452,
-						["done"] = 0,
+						["taken"] = 9623916,
+						["done"] = 39903,
 						["role"] = "NONE",
 						["class"] = "MONK",
 					},
 				},
 				["hdone"] = 0,
-				["done"] = 0,
-				["taken"] = 216452,
+				["done"] = 39903,
+				["taken"] = 9623916,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
@@ -2924,27 +2900,27 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 49825,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
-			["Sethekk Guard"] = {
+			["Sethekk Initiate"] = {
 				["players"] = {
 					["Orig"] = {
-						["taken"] = 564134,
+						["taken"] = 37149,
 						["done"] = 0,
-						["role"] = "NONE",
 						["class"] = "MONK",
+						["role"] = "NONE",
 					},
 				},
 				["hdone"] = 0,
-				["done"] = 0,
-				["taken"] = 564134,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
 				["hdonespell"] = {
+				},
+				["taken"] = 37149,
+				["done"] = 0,
+				["htaken"] = 0,
+				["htakenspell"] = {
 				},
 			},
 			["Onyxian Warder"] = {
@@ -2957,31 +2933,55 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 526,
+				["taken"] = 2534078,
 				["htakenspell"] = {
 				},
-				["taken"] = 2534078,
-				["done"] = 526,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
 			},
-			["Anzu"] = {
+			["Apothecary Frye"] = {
 				["players"] = {
-					["Orig"] = {
-						["taken"] = 655093,
+					["Ninemist-Aggramar"] = {
+						["taken"] = 569728,
+						["done"] = 24672,
+						["role"] = "TANK",
+						["class"] = "PALADIN",
+					},
+					["Svelinia-Fizzcrank"] = {
+						["taken"] = 312855,
 						["done"] = 0,
+						["role"] = "DAMAGER",
+						["class"] = "MAGE",
+					},
+					["Secondcoming-Gundrak"] = {
+						["taken"] = 56049,
+						["done"] = 0,
+						["role"] = "HEALER",
+						["class"] = "PRIEST",
+					},
+					["Orig"] = {
+						["taken"] = 352132,
+						["done"] = 0,
+						["role"] = "DAMAGER",
 						["class"] = "MONK",
-						["role"] = "NONE",
+					},
+					["Bluemist-Aggramar"] = {
+						["taken"] = 179708,
+						["done"] = 0,
+						["role"] = "DAMAGER",
+						["class"] = "PALADIN",
 					},
 				},
 				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 655093,
+				["done"] = 24672,
+				["taken"] = 1470472,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
-				["done"] = 0,
+				["hdonespell"] = {
+				},
 			},
 		},
 		["power"] = {
@@ -3009,8 +3009,8 @@ SkadaPerCharDB = {
 			["time"] = 9,
 			["interrupts"] = 0,
 			["mobdone"] = 0,
-			["mobtaken"] = 565431,
 			["multistrikes"] = 0,
+			["mobtaken"] = 565431,
 			["damage"] = 565431,
 			["players"] = {
 				{
@@ -3038,7 +3038,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["overhealing"] = 0,
-					["maxhp"] = 261900,
+					["dispells"] = 0,
 					["damage"] = 565431,
 					["damagespells"] = {
 						["Spinning Crane Kick"] = {
@@ -3051,18 +3051,11 @@ SkadaPerCharDB = {
 							["damage"] = 565431,
 						},
 					},
-					["dispells"] = 0,
-					["damagetaken"] = 0,
-					["power"] = {
-						[12] = {
-							["spells"] = {
-								[129881] = 1,
-							},
-							["amount"] = 1,
-						},
-					},
-					["id"] = "Player-1169-076A3790",
 					["first"] = 1466341450,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1169-076A3790",
+					["maxhp"] = 261900,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -3071,7 +3064,14 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Orig",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[12] = {
+							["spells"] = {
+								[129881] = 1,
+							},
+							["amount"] = 1,
+						},
+					},
 					["healingspells"] = {
 					},
 					["alert"] = {
@@ -3094,10 +3094,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 186646,
+					["done"] = 0,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 0,
 				},
 				["Sethekk Initiate"] = {
 					["players"] = {
@@ -3112,10 +3112,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 37149,
+					["done"] = 0,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 0,
 				},
 				["Time-Lost Scryer"] = {
 					["players"] = {
@@ -3130,10 +3130,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 116016,
+					["done"] = 0,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 0,
 				},
 				["Sethekk Oracle"] = {
 					["players"] = {
@@ -3148,10 +3148,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 115833,
+					["done"] = 0,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 0,
 				},
 				["Time-Lost Controller"] = {
 					["players"] = {
@@ -3166,10 +3166,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 109787,
+					["done"] = 0,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 0,
 				},
 			},
 			["power"] = {
@@ -3236,12 +3236,12 @@ SkadaPerCharDB = {
 							["damage"] = 149901,
 						},
 					},
-					["shielding"] = 0,
-					["damagetaken"] = 0,
 					["power"] = {
 					},
+					["damagetaken"] = 0,
+					["shielding"] = 0,
 					["id"] = "Player-1169-076A3790",
-					["maxhp"] = 261900,
+					["first"] = 1466220140,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -3250,7 +3250,7 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Orig",
 					["alertCount"] = 0,
-					["first"] = 1466220140,
+					["maxhp"] = 261900,
 					["dispells"] = 0,
 					["alert"] = {
 					},
@@ -3269,10 +3269,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
-					["done"] = 0,
-					["taken"] = 41252,
 					["htakenspell"] = {
 					},
+					["taken"] = 41252,
+					["done"] = 0,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -3287,10 +3287,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
-					["done"] = 0,
-					["taken"] = 108649,
 					["htakenspell"] = {
 					},
+					["taken"] = 108649,
+					["done"] = 0,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -3329,10 +3329,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 39903,
+					["taken"] = 9623916,
 					["htakenspell"] = {
 					},
-					["taken"] = 9623916,
-					["done"] = 39903,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -3347,18 +3347,16 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 0,
+					["taken"] = 130169,
 					["htakenspell"] = {
 					},
-					["taken"] = 130169,
-					["done"] = 0,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
 				},
 			},
-			["power"] = {
-				[12] = 21,
-			},
+			["gotboss"] = true,
 			["damage"] = 9754085,
 			["players"] = {
 				{
@@ -3555,6 +3553,8 @@ SkadaPerCharDB = {
 							["damage"] = 1416898,
 						},
 					},
+					["shielding"] = 0,
+					["damagetaken"] = 39903,
 					["power"] = {
 						[12] = {
 							["amount"] = 21,
@@ -3565,19 +3565,17 @@ SkadaPerCharDB = {
 							},
 						},
 					},
-					["damagetaken"] = 39903,
-					["shielding"] = 0,
 					["id"] = "Player-1169-076A3790",
-					["first"] = 1466045780,
+					["maxhp"] = 261900,
 					["healing"] = 36147,
 					["damagetakenspells"] = {
 						["Lightning"] = {
 							["crushing"] = 0,
 							["id"] = 89641,
 							["absorbed"] = 0,
-							["min"] = 1415,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 1415,
 							["multistrike"] = 0,
 							["name"] = "Lightning",
 							["blocked"] = 0,
@@ -3590,9 +3588,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 88301,
 							["absorbed"] = 0,
-							["min"] = 24,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 24,
 							["multistrike"] = 0,
 							["name"] = "Acid Rain",
 							["blocked"] = 0,
@@ -3605,9 +3603,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 6603,
 							["absorbed"] = 0,
-							["min"] = 1710,
-							["critical"] = 2,
 							["glancing"] = 0,
+							["critical"] = 2,
+							["min"] = 1710,
 							["multistrike"] = 0,
 							["name"] = "Attack",
 							["blocked"] = 0,
@@ -3629,7 +3627,7 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Orig",
 					["alertCount"] = 0,
-					["maxhp"] = 261900,
+					["first"] = 1466045780,
 					["dispells"] = 0,
 					["alert"] = {
 					},
@@ -3638,7 +3636,7 @@ SkadaPerCharDB = {
 			},
 			["deaths"] = 0,
 			["damagetaken"] = 39903,
-			["gotboss"] = true,
+			["mobtaken"] = 9754085,
 			["mobname"] = "Al'Akir",
 			["healing"] = 36147,
 			["overhealing"] = 6269,
@@ -3647,7 +3645,9 @@ SkadaPerCharDB = {
 			["starttime"] = 1466045780,
 			["name"] = "Al'Akir",
 			["alertCount"] = 0,
-			["mobtaken"] = 9754085,
+			["power"] = {
+				[12] = 21,
+			},
 			["mobhdone"] = 0,
 			["last_action"] = 1466045780,
 			["mobdone"] = 39903,
@@ -3671,10 +3671,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 21507,
+					["taken"] = 4057172,
 					["htakenspell"] = {
 					},
-					["taken"] = 4057172,
-					["done"] = 21507,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -3689,10 +3689,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 3745,
+					["taken"] = 1617402,
 					["htakenspell"] = {
 					},
-					["taken"] = 1617402,
-					["done"] = 3745,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -3707,6 +3707,8 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 42831,
+					["taken"] = 2019037,
 					["htakenspell"] = {
 						["Soothing Breeze"] = {
 							["min"] = 0,
@@ -3717,16 +3719,12 @@ SkadaPerCharDB = {
 							["hits"] = 53,
 						},
 					},
-					["taken"] = 2019037,
-					["done"] = 42831,
 					["htaken"] = 49400,
 					["hdonespell"] = {
 					},
 				},
 			},
-			["power"] = {
-				[12] = 20,
-			},
+			["gotboss"] = true,
 			["damage"] = 7693611,
 			["players"] = {
 				{
@@ -3887,6 +3885,8 @@ SkadaPerCharDB = {
 							["damage"] = 1578640,
 						},
 					},
+					["shielding"] = 0,
+					["damagetaken"] = 68083,
 					["power"] = {
 						[12] = {
 							["amount"] = 20,
@@ -3897,19 +3897,17 @@ SkadaPerCharDB = {
 							},
 						},
 					},
-					["damagetaken"] = 68083,
-					["shielding"] = 0,
 					["id"] = "Player-1169-076A3790",
-					["first"] = 1466045655,
+					["maxhp"] = 261900,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 						["Chilling Winds"] = {
 							["crushing"] = 0,
 							["id"] = 93163,
 							["absorbed"] = 0,
-							["min"] = 23,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 23,
 							["multistrike"] = 0,
 							["name"] = "Chilling Winds",
 							["blocked"] = 0,
@@ -3922,9 +3920,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 86182,
 							["absorbed"] = 0,
-							["min"] = 920,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 920,
 							["multistrike"] = 0,
 							["name"] = "Slicing Gale",
 							["blocked"] = 0,
@@ -3937,9 +3935,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 86081,
 							["absorbed"] = 0,
-							["min"] = 1106,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 1106,
 							["multistrike"] = 0,
 							["name"] = "Permafrost",
 							["blocked"] = 0,
@@ -3952,9 +3950,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 93168,
 							["absorbed"] = 0,
-							["min"] = 23,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 23,
 							["multistrike"] = 0,
 							["name"] = "Withering Winds",
 							["blocked"] = 0,
@@ -3967,9 +3965,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 84645,
 							["absorbed"] = 0,
-							["min"] = 373,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 373,
 							["multistrike"] = 0,
 							["name"] = "Wind Chill",
 							["blocked"] = 0,
@@ -3982,9 +3980,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 6603,
 							["absorbed"] = 0,
-							["min"] = 1208,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 1208,
 							["multistrike"] = 0,
 							["name"] = "Attack",
 							["blocked"] = 0,
@@ -3999,7 +3997,7 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Orig",
 					["alertCount"] = 0,
-					["maxhp"] = 261900,
+					["first"] = 1466045655,
 					["dispells"] = 0,
 					["alert"] = {
 					},
@@ -4008,7 +4006,7 @@ SkadaPerCharDB = {
 			},
 			["deaths"] = 0,
 			["damagetaken"] = 68083,
-			["gotboss"] = true,
+			["mobtaken"] = 7693611,
 			["mobname"] = "Conclave of Wind",
 			["healing"] = 0,
 			["overhealing"] = 0,
@@ -4017,7 +4015,9 @@ SkadaPerCharDB = {
 			["starttime"] = 1466045655,
 			["name"] = "Conclave of Wind",
 			["alertCount"] = 0,
-			["mobtaken"] = 7693611,
+			["power"] = {
+				[12] = 20,
+			},
 			["mobhdone"] = 49400,
 			["last_action"] = 1466045655,
 			["mobdone"] = 68083,
@@ -4041,10 +4041,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 247,
+					["taken"] = 4621730,
 					["htakenspell"] = {
 					},
-					["taken"] = 4621730,
-					["done"] = 247,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -4059,18 +4059,16 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 3146,
+					["taken"] = 11308752,
 					["htakenspell"] = {
 					},
-					["taken"] = 11308752,
-					["done"] = 3146,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
 				},
 			},
-			["power"] = {
-				[12] = 10,
-			},
+			["gotboss"] = true,
 			["damage"] = 15930482,
 			["players"] = {
 				{
@@ -4103,12 +4101,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 13,
 						},
-						["Tigereye Brew"] = {
-							["name"] = "Tigereye Brew",
+						["Death Note"] = {
+							["name"] = "Death Note",
 							["active"] = 1,
-							["id"] = 125195,
+							["id"] = 121125,
 							["auratype"] = "BUFF",
-							["uptime"] = 43,
+							["uptime"] = 3,
 						},
 						["Tiger Power"] = {
 							["name"] = "Tiger Power",
@@ -4138,12 +4136,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 5,
 						},
-						["Rising Sun Kick"] = {
-							["name"] = "Rising Sun Kick",
-							["active"] = 0,
-							["id"] = 130320,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 27,
+						["Tigereye Brew"] = {
+							["name"] = "Tigereye Brew",
+							["active"] = 1,
+							["id"] = 125195,
+							["auratype"] = "BUFF",
+							["uptime"] = 43,
 						},
 						["Crackling Jade Lightning"] = {
 							["name"] = "Crackling Jade Lightning",
@@ -4152,12 +4150,12 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["uptime"] = 2,
 						},
-						["Death Note"] = {
-							["name"] = "Death Note",
-							["active"] = 1,
-							["id"] = 121125,
-							["auratype"] = "BUFF",
-							["uptime"] = 3,
+						["Rising Sun Kick"] = {
+							["name"] = "Rising Sun Kick",
+							["active"] = 0,
+							["id"] = 130320,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 27,
 						},
 						["Xuen: Tiger Lust"] = {
 							["name"] = "Xuen: Tiger Lust",
@@ -4272,6 +4270,8 @@ SkadaPerCharDB = {
 							["damage"] = 1843142,
 						},
 					},
+					["shielding"] = 0,
+					["damagetaken"] = 3393,
 					["power"] = {
 						[12] = {
 							["amount"] = 10,
@@ -4282,19 +4282,17 @@ SkadaPerCharDB = {
 							},
 						},
 					},
-					["damagetaken"] = 3393,
-					["shielding"] = 0,
 					["id"] = "Player-1169-076A3790",
-					["first"] = 1466045000,
+					["maxhp"] = 261900,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 						["Fireball"] = {
 							["crushing"] = 0,
 							["id"] = 18392,
 							["absorbed"] = 0,
-							["min"] = 142,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 142,
 							["multistrike"] = 0,
 							["name"] = "Fireball",
 							["blocked"] = 0,
@@ -4307,9 +4305,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68868,
 							["absorbed"] = 0,
-							["min"] = 775,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 775,
 							["multistrike"] = 0,
 							["name"] = "Cleave",
 							["blocked"] = 0,
@@ -4322,9 +4320,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 6603,
 							["absorbed"] = 0,
-							["min"] = 31,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 31,
 							["multistrike"] = 0,
 							["name"] = "Attack",
 							["blocked"] = 0,
@@ -4339,7 +4337,7 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Orig",
 					["alertCount"] = 0,
-					["maxhp"] = 261900,
+					["first"] = 1466045000,
 					["dispells"] = 0,
 					["alert"] = {
 					},
@@ -4348,7 +4346,7 @@ SkadaPerCharDB = {
 			},
 			["deaths"] = 0,
 			["damagetaken"] = 3393,
-			["gotboss"] = true,
+			["mobtaken"] = 15930482,
 			["mobname"] = "Onyxia",
 			["healing"] = 0,
 			["overhealing"] = 0,
@@ -4357,7 +4355,9 @@ SkadaPerCharDB = {
 			["starttime"] = 1466044999,
 			["name"] = "Onyxia",
 			["alertCount"] = 0,
-			["mobtaken"] = 15930482,
+			["power"] = {
+				[12] = 10,
+			},
 			["mobhdone"] = 0,
 			["last_action"] = 1466044999,
 			["mobdone"] = 3393,
@@ -4433,6 +4433,8 @@ SkadaPerCharDB = {
 							["damage"] = 551455,
 						},
 					},
+					["shielding"] = 0,
+					["damagetaken"] = 526,
 					["power"] = {
 						[12] = {
 							["amount"] = 2,
@@ -4441,19 +4443,17 @@ SkadaPerCharDB = {
 							},
 						},
 					},
-					["damagetaken"] = 526,
-					["shielding"] = 0,
 					["id"] = "Player-1169-076A3790",
-					["first"] = 1466044963,
+					["maxhp"] = 261900,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 						["Attack"] = {
 							["crushing"] = 0,
 							["id"] = 6603,
 							["absorbed"] = 0,
-							["min"] = 526,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 526,
 							["multistrike"] = 0,
 							["name"] = "Attack",
 							["blocked"] = 0,
@@ -4468,7 +4468,7 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Orig",
 					["alertCount"] = 0,
-					["maxhp"] = 261900,
+					["first"] = 1466044963,
 					["dispells"] = 0,
 					["alert"] = {
 					},
@@ -4487,10 +4487,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 526,
+					["taken"] = 1001185,
 					["htakenspell"] = {
 					},
-					["taken"] = 1001185,
-					["done"] = 526,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -4548,12 +4548,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 36,
 						},
-						["Reckoning"] = {
-							["name"] = "Reckoning",
+						["Divine Purpose"] = {
+							["name"] = "Divine Purpose",
 							["active"] = 0,
-							["id"] = 62124,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 3,
+							["id"] = 90174,
+							["auratype"] = "BUFF",
+							["uptime"] = 2,
 						},
 						["Grand Crusader"] = {
 							["name"] = "Grand Crusader",
@@ -4562,12 +4562,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 13,
 						},
-						["Divine Purpose"] = {
-							["name"] = "Divine Purpose",
+						["Reckoning"] = {
+							["name"] = "Reckoning",
 							["active"] = 0,
-							["id"] = 90174,
-							["auratype"] = "BUFF",
-							["uptime"] = 2,
+							["id"] = 62124,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 3,
 						},
 						["Avenger's Shield"] = {
 							["name"] = "Avenger's Shield",
@@ -4725,24 +4725,6 @@ SkadaPerCharDB = {
 							["max"] = 3757,
 							["damage"] = 51532,
 						},
-						["Crusader Strike"] = {
-							["min"] = 11089,
-							["critical"] = 1,
-							["totalhits"] = 1,
-							["id"] = 35395,
-							["max"] = 11089,
-							["damage"] = 11089,
-						},
-						["Consecration"] = {
-							["min"] = 1587,
-							["multistrike"] = 27,
-							["critical"] = 16,
-							["hit"] = 109,
-							["totalhits"] = 125,
-							["id"] = 159561,
-							["max"] = 3664,
-							["damage"] = 242238,
-						},
 						["Avenger's Shield"] = {
 							["min"] = 16613,
 							["multistrike"] = 3,
@@ -4763,6 +4745,24 @@ SkadaPerCharDB = {
 							["max"] = 13170,
 							["damage"] = 276431,
 						},
+						["Crusader Strike"] = {
+							["min"] = 11089,
+							["critical"] = 1,
+							["totalhits"] = 1,
+							["id"] = 35395,
+							["max"] = 11089,
+							["damage"] = 11089,
+						},
+						["Consecration"] = {
+							["min"] = 1587,
+							["multistrike"] = 27,
+							["critical"] = 16,
+							["hit"] = 109,
+							["totalhits"] = 125,
+							["id"] = 159561,
+							["max"] = 3664,
+							["damage"] = 242238,
+						},
 						["Attack"] = {
 							["min"] = 4426,
 							["multistrike"] = 4,
@@ -4774,30 +4774,30 @@ SkadaPerCharDB = {
 							["damage"] = 164565,
 						},
 					},
+					["shielding"] = 113650,
+					["damagetaken"] = 537408,
 					["power"] = {
 						[9] = {
 							["amount"] = 33,
 							["spells"] = {
-								[35395] = 1,
 								[105427] = 15,
-								[53595] = 14,
+								[35395] = 1,
 								[98057] = 3,
+								[53595] = 14,
 							},
 						},
 					},
-					["damagetaken"] = 537408,
-					["shielding"] = 113650,
 					["id"] = "Player-106-02FDDD11",
-					["first"] = 1456708369,
+					["maxhp"] = 426660,
 					["healing"] = 549222,
 					["damagetakenspells"] = {
 						["Alluring Perfume"] = {
 							["crushing"] = 0,
 							["id"] = 68641,
 							["absorbed"] = 8380,
-							["min"] = 1327,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 1327,
 							["multistrike"] = 0,
 							["name"] = "Alluring Perfume",
 							["blocked"] = 0,
@@ -4810,9 +4810,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68934,
 							["absorbed"] = 802,
-							["min"] = 50,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 50,
 							["multistrike"] = 2,
 							["name"] = "Concentrated Irresistible Cologne Spill",
 							["blocked"] = 0,
@@ -4825,9 +4825,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68607,
 							["absorbed"] = 20907,
-							["min"] = 7244,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 7244,
 							["multistrike"] = 0,
 							["name"] = "Alluring Perfume Spray",
 							["blocked"] = 0,
@@ -4840,9 +4840,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68821,
 							["absorbed"] = 17634,
-							["min"] = 13213,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 13213,
 							["multistrike"] = 0,
 							["name"] = "Chain Reaction",
 							["blocked"] = 0,
@@ -4855,9 +4855,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68947,
 							["absorbed"] = 13241,
-							["min"] = 1194,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 1194,
 							["multistrike"] = 0,
 							["name"] = "Irresistible Cologne",
 							["blocked"] = 0,
@@ -4870,9 +4870,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68927,
 							["absorbed"] = 121,
-							["min"] = 183,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 183,
 							["multistrike"] = 0,
 							["name"] = "Concentrated Alluring Perfume Spill",
 							["blocked"] = 0,
@@ -4885,9 +4885,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68948,
 							["absorbed"] = 52565,
-							["min"] = 7296,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 7296,
 							["multistrike"] = 0,
 							["name"] = "Irresistible Cologne Spray",
 							["blocked"] = 0,
@@ -4900,9 +4900,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 6603,
 							["absorbed"] = 3307,
-							["min"] = 1737,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 1737,
 							["multistrike"] = 0,
 							["name"] = "Attack",
 							["blocked"] = 4637,
@@ -4952,7 +4952,7 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Ninemist",
 					["alertCount"] = 0,
-					["maxhp"] = 426660,
+					["first"] = 1456708369,
 					["dispells"] = 0,
 					["alert"] = {
 					},
@@ -5165,6 +5165,8 @@ SkadaPerCharDB = {
 							["damage"] = 95956,
 						},
 					},
+					["shielding"] = 0,
+					["damagetaken"] = 91236,
 					["power"] = {
 						[9] = {
 							["amount"] = 21,
@@ -5176,19 +5178,17 @@ SkadaPerCharDB = {
 							},
 						},
 					},
-					["damagetaken"] = 91236,
-					["shielding"] = 0,
 					["id"] = "Player-106-029D5EEE",
-					["first"] = 1456708370,
+					["maxhp"] = 353160,
 					["healing"] = 4871,
 					["damagetakenspells"] = {
 						["Alluring Perfume"] = {
 							["crushing"] = 0,
 							["id"] = 68641,
 							["absorbed"] = 0,
-							["min"] = 2164,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 2164,
 							["multistrike"] = 0,
 							["name"] = "Alluring Perfume",
 							["blocked"] = 0,
@@ -5201,9 +5201,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68934,
 							["absorbed"] = 0,
-							["min"] = 303,
-							["critical"] = 1,
 							["glancing"] = 0,
+							["critical"] = 1,
+							["min"] = 303,
 							["multistrike"] = 0,
 							["name"] = "Concentrated Irresistible Cologne Spill",
 							["blocked"] = 0,
@@ -5216,9 +5216,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68927,
 							["absorbed"] = 0,
-							["min"] = 317,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 317,
 							["multistrike"] = 0,
 							["name"] = "Concentrated Alluring Perfume Spill",
 							["blocked"] = 0,
@@ -5231,9 +5231,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68947,
 							["absorbed"] = 0,
-							["min"] = 1987,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 1987,
 							["multistrike"] = 0,
 							["name"] = "Irresistible Cologne",
 							["blocked"] = 0,
@@ -5246,9 +5246,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68948,
 							["absorbed"] = 0,
-							["min"] = 13159,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 13159,
 							["multistrike"] = 0,
 							["name"] = "Irresistible Cologne Spray",
 							["blocked"] = 0,
@@ -5270,7 +5270,7 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Bluemist",
 					["alertCount"] = 0,
-					["maxhp"] = 353160,
+					["first"] = 1456708370,
 					["dispells"] = 0,
 					["alert"] = {
 					},
@@ -5394,25 +5394,25 @@ SkadaPerCharDB = {
 					},
 					["damage"] = 1189853,
 					["damagespells"] = {
-						["Svelinia-Fizzcrank: Frostbolt"] = {
-							["min"] = 3415,
-							["multistrike"] = 68,
-							["critical"] = 13,
-							["hit"] = 63,
-							["totalhits"] = 76,
-							["id"] = 59638,
-							["max"] = 7513,
-							["damage"] = 413517,
+						["Water Elemental: Waterbolt"] = {
+							["min"] = 3947,
+							["multistrike"] = 19,
+							["critical"] = 4,
+							["hit"] = 16,
+							["totalhits"] = 20,
+							["id"] = 31707,
+							["max"] = 10043,
+							["damage"] = 137981,
 						},
-						["Frostfire Bolt"] = {
-							["min"] = 11760,
-							["multistrike"] = 3,
-							["critical"] = 1,
-							["hit"] = 3,
-							["totalhits"] = 4,
-							["id"] = 44614,
-							["max"] = 23683,
-							["damage"] = 75801,
+						["Water Elemental: Water Jet"] = {
+							["min"] = 2285,
+							["multistrike"] = 15,
+							["critical"] = 2,
+							["hit"] = 8,
+							["totalhits"] = 10,
+							["id"] = 135029,
+							["max"] = 5335,
+							["damage"] = 45406,
 						},
 						["Icicle"] = {
 							["min"] = 509,
@@ -5432,15 +5432,15 @@ SkadaPerCharDB = {
 							["max"] = 15275,
 							["damage"] = 156563,
 						},
-						["Water Elemental: Water Jet"] = {
-							["min"] = 2285,
-							["multistrike"] = 15,
-							["critical"] = 2,
-							["hit"] = 8,
-							["totalhits"] = 10,
-							["id"] = 135029,
-							["max"] = 5335,
-							["damage"] = 45406,
+						["Frostfire Bolt"] = {
+							["min"] = 11760,
+							["multistrike"] = 3,
+							["critical"] = 1,
+							["hit"] = 3,
+							["totalhits"] = 4,
+							["id"] = 44614,
+							["max"] = 23683,
+							["damage"] = 75801,
 						},
 						["Ice Lance"] = {
 							["min"] = 1717,
@@ -5452,15 +5452,15 @@ SkadaPerCharDB = {
 							["max"] = 36507,
 							["damage"] = 210450,
 						},
-						["Water Elemental: Waterbolt"] = {
-							["min"] = 3947,
-							["multistrike"] = 19,
-							["critical"] = 4,
-							["hit"] = 16,
-							["totalhits"] = 20,
-							["id"] = 31707,
-							["max"] = 10043,
-							["damage"] = 137981,
+						["Svelinia-Fizzcrank: Frostbolt"] = {
+							["min"] = 3415,
+							["multistrike"] = 68,
+							["critical"] = 13,
+							["hit"] = 63,
+							["totalhits"] = 76,
+							["id"] = 59638,
+							["max"] = 7513,
+							["damage"] = 413517,
 						},
 						["Frozen Orb"] = {
 							["min"] = 3658,
@@ -5473,12 +5473,12 @@ SkadaPerCharDB = {
 							["damage"] = 120372,
 						},
 					},
+					["shielding"] = 1267,
+					["damagetaken"] = 0,
 					["power"] = {
 					},
-					["damagetaken"] = 0,
-					["shielding"] = 1267,
 					["id"] = "Player-106-05FD55DA",
-					["first"] = 1456708370,
+					["maxhp"] = 356100,
 					["healing"] = 1267,
 					["damagetakenspells"] = {
 					},
@@ -5494,7 +5494,7 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Svelinia",
 					["alertCount"] = 0,
-					["maxhp"] = 356100,
+					["first"] = 1456708370,
 					["dispells"] = 0,
 					["alert"] = {
 					},
@@ -5792,21 +5792,21 @@ SkadaPerCharDB = {
 							["damage"] = 47571,
 						},
 					},
+					["shielding"] = 72282,
+					["damagetaken"] = 43052,
 					["power"] = {
 					},
-					["damagetaken"] = 43052,
-					["shielding"] = 72282,
 					["id"] = "Player-3728-096C56FB",
-					["first"] = 1456708370,
+					["maxhp"] = 313140,
 					["healing"] = 707262,
 					["damagetakenspells"] = {
 						["Concentrated Alluring Perfume Spill"] = {
 							["crushing"] = 0,
 							["id"] = 68927,
 							["absorbed"] = 0,
-							["min"] = 102,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 102,
 							["multistrike"] = 5,
 							["name"] = "Concentrated Alluring Perfume Spill",
 							["blocked"] = 0,
@@ -5819,9 +5819,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68948,
 							["absorbed"] = 0,
-							["min"] = 11130,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 11130,
 							["multistrike"] = 0,
 							["name"] = "Irresistible Cologne Spray",
 							["blocked"] = 0,
@@ -5906,7 +5906,7 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Secondcoming",
 					["alertCount"] = 0,
-					["maxhp"] = 313140,
+					["first"] = 1456708370,
 					["dispells"] = 0,
 					["alert"] = {
 					},
@@ -5971,6 +5971,13 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["uptime"] = 5,
 						},
+						["Tigereye Brew"] = {
+							["name"] = "Tigereye Brew",
+							["active"] = 1,
+							["id"] = 125195,
+							["auratype"] = "BUFF",
+							["uptime"] = 53,
+						},
 						["Rising Sun Kick"] = {
 							["name"] = "Rising Sun Kick",
 							["active"] = 0,
@@ -5984,13 +5991,6 @@ SkadaPerCharDB = {
 							["id"] = 121125,
 							["auratype"] = "BUFF",
 							["uptime"] = 19,
-						},
-						["Tigereye Brew"] = {
-							["name"] = "Tigereye Brew",
-							["active"] = 1,
-							["id"] = 125195,
-							["auratype"] = "BUFF",
-							["uptime"] = 53,
 						},
 						["Combo Breaker: Tiger Palm"] = {
 							["name"] = "Combo Breaker: Tiger Palm",
@@ -6119,6 +6119,8 @@ SkadaPerCharDB = {
 							["damage"] = 134686,
 						},
 					},
+					["shielding"] = 0,
+					["damagetaken"] = 293942,
 					["power"] = {
 						[12] = {
 							["amount"] = 28,
@@ -6129,19 +6131,17 @@ SkadaPerCharDB = {
 							},
 						},
 					},
-					["damagetaken"] = 293942,
-					["shielding"] = 0,
 					["id"] = "Player-1169-076A3790",
-					["first"] = 1456708373,
+					["maxhp"] = 270780,
 					["healing"] = 31700,
 					["damagetakenspells"] = {
 						["Alluring Perfume"] = {
 							["crushing"] = 0,
 							["id"] = 68641,
 							["absorbed"] = 0,
-							["min"] = 2250,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 2250,
 							["multistrike"] = 0,
 							["name"] = "Alluring Perfume",
 							["blocked"] = 0,
@@ -6154,9 +6154,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68607,
 							["absorbed"] = 0,
-							["min"] = 14784,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 14784,
 							["multistrike"] = 0,
 							["name"] = "Alluring Perfume Spray",
 							["blocked"] = 0,
@@ -6169,9 +6169,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68947,
 							["absorbed"] = 0,
-							["min"] = 2201,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 2201,
 							["multistrike"] = 0,
 							["name"] = "Irresistible Cologne",
 							["blocked"] = 0,
@@ -6184,9 +6184,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68927,
 							["absorbed"] = 0,
-							["min"] = 92,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 92,
 							["multistrike"] = 5,
 							["name"] = "Concentrated Alluring Perfume Spill",
 							["blocked"] = 0,
@@ -6199,9 +6199,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 68948,
 							["absorbed"] = 10340,
-							["min"] = 3438,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 3438,
 							["multistrike"] = 0,
 							["name"] = "Irresistible Cologne Spray",
 							["blocked"] = 0,
@@ -6223,7 +6223,7 @@ SkadaPerCharDB = {
 					["alertDamage"] = 194208,
 					["name"] = "Orig",
 					["alertCount"] = 13,
-					["maxhp"] = 270780,
+					["first"] = 1456708373,
 					["dispells"] = 0,
 					["alert"] = {
 						["High"] = {
@@ -6257,11 +6257,11 @@ SkadaPerCharDB = {
 			["mobs"] = {
 				["Apothecary Frye"] = {
 					["players"] = {
-						["Secondcoming-Gundrak"] = {
-							["taken"] = 56049,
-							["done"] = 0,
-							["role"] = "HEALER",
-							["class"] = "PRIEST",
+						["Ninemist-Aggramar"] = {
+							["taken"] = 569728,
+							["done"] = 24672,
+							["role"] = "TANK",
+							["class"] = "PALADIN",
 						},
 						["Svelinia-Fizzcrank"] = {
 							["taken"] = 312855,
@@ -6269,17 +6269,11 @@ SkadaPerCharDB = {
 							["role"] = "DAMAGER",
 							["class"] = "MAGE",
 						},
-						["Ninemist-Aggramar"] = {
-							["taken"] = 569728,
-							["done"] = 24672,
-							["role"] = "TANK",
-							["class"] = "PALADIN",
-						},
-						["Bluemist-Aggramar"] = {
-							["taken"] = 179708,
+						["Secondcoming-Gundrak"] = {
+							["taken"] = 56049,
 							["done"] = 0,
-							["role"] = "DAMAGER",
-							["class"] = "PALADIN",
+							["role"] = "HEALER",
+							["class"] = "PRIEST",
 						},
 						["Orig"] = {
 							["taken"] = 352132,
@@ -6287,23 +6281,29 @@ SkadaPerCharDB = {
 							["role"] = "DAMAGER",
 							["class"] = "MONK",
 						},
+						["Bluemist-Aggramar"] = {
+							["taken"] = 179708,
+							["done"] = 0,
+							["role"] = "DAMAGER",
+							["class"] = "PALADIN",
+						},
 					},
 					["hdone"] = 0,
+					["done"] = 24672,
+					["taken"] = 1470472,
 					["htakenspell"] = {
 					},
-					["taken"] = 1470472,
-					["done"] = 24672,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
 				},
 				["Apothecary Hummel"] = {
 					["players"] = {
-						["Secondcoming-Gundrak"] = {
-							["taken"] = 169210,
-							["done"] = 0,
-							["role"] = "HEALER",
-							["class"] = "PRIEST",
+						["Ninemist-Aggramar"] = {
+							["taken"] = 343608,
+							["done"] = 166233,
+							["role"] = "TANK",
+							["class"] = "PALADIN",
 						},
 						["Svelinia-Fizzcrank"] = {
 							["taken"] = 330335,
@@ -6311,10 +6311,16 @@ SkadaPerCharDB = {
 							["role"] = "DAMAGER",
 							["class"] = "MAGE",
 						},
-						["Ninemist-Aggramar"] = {
-							["taken"] = 343608,
-							["done"] = 166233,
-							["role"] = "TANK",
+						["Secondcoming-Gundrak"] = {
+							["taken"] = 169210,
+							["done"] = 0,
+							["role"] = "HEALER",
+							["class"] = "PRIEST",
+						},
+						["Bluemist-Aggramar"] = {
+							["taken"] = 471063,
+							["done"] = 21291,
+							["role"] = "DAMAGER",
 							["class"] = "PALADIN",
 						},
 						["Orig"] = {
@@ -6323,29 +6329,23 @@ SkadaPerCharDB = {
 							["role"] = "DAMAGER",
 							["class"] = "MONK",
 						},
-						["Bluemist-Aggramar"] = {
-							["taken"] = 471063,
-							["done"] = 21291,
-							["role"] = "DAMAGER",
-							["class"] = "PALADIN",
-						},
 					},
 					["hdone"] = 0,
+					["done"] = 275945,
+					["taken"] = 1550517,
 					["htakenspell"] = {
 					},
-					["taken"] = 1550517,
-					["done"] = 275945,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
 				},
 				["Apothecary Baxter"] = {
 					["players"] = {
-						["Bluemist-Aggramar"] = {
-							["taken"] = 200254,
-							["done"] = 68558,
+						["Orig"] = {
+							["taken"] = 133610,
+							["done"] = 198894,
 							["role"] = "DAMAGER",
-							["class"] = "PALADIN",
+							["class"] = "MONK",
 						},
 						["Svelinia-Fizzcrank"] = {
 							["taken"] = 546663,
@@ -6353,30 +6353,30 @@ SkadaPerCharDB = {
 							["role"] = "DAMAGER",
 							["class"] = "MAGE",
 						},
-						["Secondcoming-Gundrak"] = {
-							["taken"] = 82253,
-							["done"] = 36096,
-							["role"] = "HEALER",
-							["class"] = "PRIEST",
-						},
-						["Orig"] = {
-							["taken"] = 133610,
-							["done"] = 198894,
-							["role"] = "DAMAGER",
-							["class"] = "MONK",
-						},
 						["Ninemist-Aggramar"] = {
 							["taken"] = 509508,
 							["done"] = 343356,
 							["role"] = "TANK",
 							["class"] = "PALADIN",
 						},
+						["Bluemist-Aggramar"] = {
+							["taken"] = 200254,
+							["done"] = 68558,
+							["role"] = "DAMAGER",
+							["class"] = "PALADIN",
+						},
+						["Secondcoming-Gundrak"] = {
+							["taken"] = 82253,
+							["done"] = 36096,
+							["role"] = "HEALER",
+							["class"] = "PRIEST",
+						},
 					},
 					["hdone"] = 0,
+					["done"] = 646904,
+					["taken"] = 1472288,
 					["htakenspell"] = {
 					},
-					["taken"] = 1472288,
-					["done"] = 646904,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},

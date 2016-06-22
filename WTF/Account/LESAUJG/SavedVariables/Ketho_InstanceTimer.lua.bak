@@ -1,0 +1,23 @@
+
+KethoInstanceTimerDB = {
+	["char"] = {
+		["Clothgar - Sisters of Elune"] = {
+			["startDate"] = "",
+			["TimeInstanceList"] = {
+			},
+			["startTime"] = "",
+			["timeInstance"] = 0,
+		},
+	},
+	["global"] = {
+		["version"] = "2.6",
+		["build"] = "Release",
+	},
+	["profileKeys"] = {
+		["Clothgar - Sisters of Elune"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

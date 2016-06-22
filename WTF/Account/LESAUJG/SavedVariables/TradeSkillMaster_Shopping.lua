@@ -31,141 +31,147 @@ TradeSkillMaster_ShoppingDB = {
 	["_hash"] = 1861581,
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1466483843,
-			["name"] = "universal",
-			["filter"] = "universal",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [1]
-		{
-			["lastSearch"] = 1466483831,
+			["lastSearch"] = 1466563731,
 			["name"] = "arcane c",
 			["filter"] = "arcane c",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
+		}, -- [1]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1466557855,
+			["name"] = "essence",
+			["filter"] = "essence",
 		}, -- [2]
 		{
-			["lastSearch"] = 1466483781,
-			["name"] = "hexweave bag",
-			["filter"] = "hexweave bag",
 			["searchMode"] = "normal",
-			["isFavorite"] = true,
+			["lastSearch"] = 1466557849,
+			["name"] = "essence of air",
+			["filter"] = "essence of air",
 		}, -- [3]
 		{
-			["lastSearch"] = 1466483752,
+			["lastSearch"] = 1466556667,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [4]
 		{
+			["lastSearch"] = 1466483843,
+			["name"] = "universal",
+			["filter"] = "universal",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [5]
+		{
+			["lastSearch"] = 1466483781,
+			["name"] = "hexweave bag",
+			["filter"] = "hexweave bag",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [6]
+		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1465772753,
 			["name"] = "fur",
 			["filter"] = "fur",
-		}, -- [5]
+		}, -- [7]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1464096856,
 			["name"] = "flytrap",
 			["filter"] = "flytrap",
-		}, -- [6]
+		}, -- [8]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1463341660,
 			["name"] = "draenic dust",
 			["filter"] = "draenic dust",
-		}, -- [7]
+		}, -- [9]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1463341641,
 			["name"] = "dust",
 			["filter"] = "dust",
-		}, -- [8]
+		}, -- [10]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1461467943,
 			["name"] = "true iron ore",
 			["filter"] = "true iron ore",
-		}, -- [9]
+		}, -- [11]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1460212738,
 			["name"] = "fireweed",
 			["filter"] = "fireweed",
-		}, -- [10]
+		}, -- [12]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1457493614,
 			["name"] = "frostweed",
 			["filter"] = "frostweed",
-		}, -- [11]
+		}, -- [13]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1455461471,
 			["name"] = "blackrock ore",
 			["filter"] = "blackrock ore",
-		}, -- [12]
+		}, -- [14]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1455133723,
 			["name"] = "raw beast",
 			["filter"] = "raw beast",
-		}, -- [13]
+		}, -- [15]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1453692479,
 			["name"] = "sorcerous",
 			["filter"] = "sorcerous",
-		}, -- [14]
+		}, -- [16]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1453006657,
 			["name"] = "Mounts/Miscellaneous/Mount/usable",
 			["filter"] = "Mounts/Miscellaneous/Mount/usable",
-		}, -- [15]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1453005351,
-			["name"] = "essence of air",
-			["filter"] = "essence of air",
-		}, -- [16]
+		}, -- [17]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452570334,
 			["name"] = "Primal fire",
 			["filter"] = "Primal fire",
-		}, -- [17]
+		}, -- [18]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452570327,
 			["name"] = "Primal might",
 			["filter"] = "Primal might",
-		}, -- [18]
+		}, -- [19]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452565837,
 			["name"] = "flask",
 			["filter"] = "flask",
-		}, -- [19]
+		}, -- [20]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452471365,
 			["name"] = "legion",
 			["filter"] = "legion",
-		}, -- [20]
+		}, -- [21]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1451421774,
 			["name"] = "temporal",
 			["filter"] = "temporal",
-		}, -- [21]
+		}, -- [22]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1450325729,
 			["name"] = "saberfish",
 			["filter"] = "saberfish",
-		}, -- [22]
+		}, -- [23]
 	},
 	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @marketValueSource"] = "dbmarket",
