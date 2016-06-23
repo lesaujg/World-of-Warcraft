@@ -2,19 +2,19 @@
 WeDontWipeDB = {
 	["Windwalker"] = {
 		["iconSizeFactor"] = 0.8,
-		["greet"] = 1,
+		["fixedGCD"] = 1.5,
 		["autoAdjustGCD"] = 1,
-		["iconRelP"] = "BOTTOM",
+		["showDispelOff"] = 1,
 		["iconPosY"] = 255,
 		["alwaysShow"] = 0,
-		["showDispelDef"] = 1,
 		["showRangeText"] = 1,
+		["debug"] = 0,
 		["showCooldowns"] = 1,
-		["showInterrupt"] = 1,
-		["showCharges"] = 1,
-		["positionLocked"] = 0,
 		["iconSize"] = 74,
-		["showDispelOff"] = 1,
+		["showCharges"] = 1,
+		["showDispelDef"] = 1,
+		["updateFrequency"] = 0.09,
+		["greet"] = 1,
 		["showCDs"] = {
 			121817, -- [1]
 			115399, -- [2]
@@ -30,13 +30,13 @@ WeDontWipeDB = {
 		},
 		["excludeCDs"] = {
 		},
-		["updateFrequency"] = 0.09,
-		["version"] = 4,
-		["debug"] = 0,
+		["iconRelP"] = "BOTTOM",
+		["showInterrupt"] = 1,
+		["positionLocked"] = 0,
 		["showMainQueue"] = 1,
 		["queueLength"] = 4,
 		["cooldownCountdown"] = 10,
-		["fixedGCD"] = 1.5,
+		["version"] = 4,
 		["iconPosX"] = -184.000595092773,
 		["rotation"] = {
 			["modID"] = "Taraezor MonkWindwalker",
