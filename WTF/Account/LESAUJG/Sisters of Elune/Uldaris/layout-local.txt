@@ -27,17 +27,3 @@ X: 0
 Y: 128
 W: 150
 H: 42
-Frame: AmrUiFrame1
-FrameLevel: 29
-Anchor: CENTER
-X: 8
-Y: 101
-W: 1000
-H: 700
-Frame: AmrUiFrame2
-FrameLevel: 24
-Anchor: RIGHT
-X: -55
-Y: -49
-W: 500
-H: 500

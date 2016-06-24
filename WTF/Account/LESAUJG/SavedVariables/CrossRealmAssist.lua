@@ -14,5 +14,6 @@ CrossRealmAssistDB = {
 			["x"] = -23.7876091003418,
 			["to"] = "BOTTOM",
 		},
+		["quickJoinHint"] = false,
 	},
 }
