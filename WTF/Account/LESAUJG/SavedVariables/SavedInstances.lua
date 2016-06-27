@@ -5,7 +5,7 @@ SavedInstancesDB = {
 		["Uldaris - Sisters of Elune"] = {
 			["lastbossyell"] = "Grand Vizier Ertan: Timewalking",
 			["IL"] = 691.733337402344,
-			["LastSeen"] = 1466696445,
+			["LastSeen"] = 1466967375,
 			["Order"] = 50,
 			["Class"] = "DRUID",
 			["currency"] = {
@@ -14,7 +14,7 @@ SavedInstancesDB = {
 				},
 				[824] = {
 					["totalMax"] = 10000,
-					["amount"] = 3759,
+					["amount"] = 4893,
 				},
 				[738] = {
 					["amount"] = 26,
@@ -30,7 +30,7 @@ SavedInstancesDB = {
 					["amount"] = 2651,
 				},
 				[823] = {
-					["amount"] = 75840,
+					["amount"] = 75883,
 				},
 				[1166] = {
 					["amount"] = 2895,
@@ -39,31 +39,31 @@ SavedInstancesDB = {
 					["totalMax"] = 4000,
 					["amount"] = 775,
 				},
-				[994] = {
-					["totalMax"] = 20,
-					["amount"] = 14,
-				},
-				[1101] = {
-					["totalMax"] = 100000,
-					["amount"] = 325,
-				},
 				[1129] = {
 					["weeklyMax"] = 3,
 					["totalMax"] = 10,
 					["amount"] = 7,
 				},
+				[1101] = {
+					["totalMax"] = 100000,
+					["amount"] = 385,
+				},
+				[994] = {
+					["totalMax"] = 20,
+					["amount"] = 14,
+				},
 			},
 			["Level"] = 100,
 			["LClass"] = "Druid",
 			["RBGrating"] = 0,
-			["WeeklyResetTime"] = 1467107990,
+			["WeeklyResetTime"] = 1467108013,
 			["lastbosstime"] = 1466696393,
-			["PlayedTotal"] = 3016404,
+			["Race"] = "Night Elf",
 			["lastbossyelltime"] = 1466696255,
-			["Money"] = 1331023516,
+			["Money"] = 1342030881,
 			["Skills"] = {
 			},
-			["Zone"] = "Lunarfall",
+			["PlayedTotal"] = 3016616,
 			["lastboss"] = "Grand Vizier Ertan",
 			["Show"] = "saved",
 			["BonusRoll"] = {
@@ -92,24 +92,30 @@ SavedInstancesDB = {
 					["currencyID"] = 1129,
 				}, -- [4]
 			},
-			["PlayedLevel"] = 404168,
+			["PlayedLevel"] = 404380,
 			["Faction"] = "Alliance",
 			["ILe"] = 689.400024414063,
-			["DailyResetTime"] = 1467021590,
+			["DailyResetTime"] = 1467021613,
 			["Quests"] = {
+				[37320] = {
+					["isDaily"] = true,
+					["Zone"] = "Lunarfall",
+					["Title"] = "Jewelcrafting Special Order:  A Fine Choker",
+					["Link"] = "|cff40c040|Hquest:37320:90|h[Jewelcrafting Special Order:  A Fine Choker]|h|r",
+				},
 			},
-			["Race"] = "Night Elf",
+			["Zone"] = "Lunarfall",
 		},
 		["Galinar - Sisters of Elune"] = {
 			["lastbossyell"] = "Gorg the Host",
 			["IL"] = 581.466674804688,
-			["LastSeen"] = 1466835782,
+			["LastSeen"] = 1466967616,
 			["Order"] = 50,
 			["Class"] = "PALADIN",
 			["currency"] = {
 				[824] = {
 					["totalMax"] = 10000,
-					["amount"] = 4074,
+					["amount"] = 4284,
 				},
 				[241] = {
 					["amount"] = 5,
@@ -118,20 +124,40 @@ SavedInstancesDB = {
 			["Level"] = 100,
 			["LClass"] = "Paladin",
 			["RBGrating"] = 0,
-			["PlayedTotal"] = 124143,
+			["PlayedTotal"] = 124338,
 			["lastbosstime"] = 1466652235,
 			["lastbossyelltime"] = 1466693177,
-			["Money"] = 7791789,
-			["Zone"] = "Lunarfall",
+			["Money"] = 7945789,
+			["Zone"] = "Town Hall",
 			["Skills"] = {
+				[168835] = {
+					["Expires"] = 1467021611,
+					["Title"] = "Tailoring: Hexweave Cloth",
+					["Link"] = "|cffffd000|Henchant:168835|h[Tailoring: Hexweave Cloth]|h|r",
+				},
+				[176058] = {
+					["Expires"] = 1467021611,
+					["Title"] = "Tailoring: Secrets of Draenor Tailoring",
+					["Link"] = "|cffffd000|Henchant:176058|h[Tailoring: Secrets of Draenor Tailoring]|h|r",
+				},
+				[177054] = {
+					["Expires"] = 1467021611,
+					["Title"] = "Engineering: Secrets of Draenor Engineering",
+					["Link"] = "|cffffd000|Henchant:177054|h[Engineering: Secrets of Draenor Engineering]|h|r",
+				},
+				[169080] = {
+					["Expires"] = 1467021611,
+					["Title"] = "Engineering: Gearspring Parts",
+					["Link"] = "|cffffd000|Henchant:169080|h[Engineering: Gearspring Parts]|h|r",
+				},
 			},
 			["lastboss"] = "Argent Confessor Paletress: Heroic",
 			["Show"] = "saved",
-			["WeeklyResetTime"] = 1467108009,
-			["PlayedLevel"] = 341,
+			["WeeklyResetTime"] = 1467108011,
+			["PlayedLevel"] = 536,
 			["Faction"] = "Alliance",
 			["ILe"] = 534.599975585938,
-			["DailyResetTime"] = 1467021609,
+			["DailyResetTime"] = 1467021611,
 			["Quests"] = {
 			},
 			["Race"] = "Dwarf",
@@ -195,7 +221,7 @@ SavedInstancesDB = {
 		["Bracnar - Sisters of Elune"] = {
 			["lastbossyell"] = "War-God Jalak: 10 Player",
 			["IL"] = 729.866638183594,
-			["LastSeen"] = 1466947227,
+			["LastSeen"] = 1466994388,
 			["Order"] = 50,
 			["Class"] = "HUNTER",
 			["currency"] = {
@@ -211,28 +237,29 @@ SavedInstancesDB = {
 					["amount"] = 4,
 				},
 				[823] = {
-					["amount"] = 294862,
+					["amount"] = 295262,
 				},
 				[777] = {
 					["amount"] = 149388,
 				},
 				[824] = {
 					["totalMax"] = 10000,
-					["amount"] = 405,
+					["amount"] = 691,
 				},
 				[515] = {
 					["amount"] = 116,
-				},
-				[241] = {
-					["amount"] = 85,
-				},
-				[391] = {
-					["amount"] = 7,
 				},
 				[1129] = {
 					["weeklyMax"] = 3,
 					["totalMax"] = 10,
 					["amount"] = 8,
+				},
+				[391] = {
+					["amount"] = 7,
+				},
+				[1191] = {
+					["totalMax"] = 5000,
+					["amount"] = 1700,
 				},
 				[994] = {
 					["totalMax"] = 20,
@@ -244,7 +271,7 @@ SavedInstancesDB = {
 				},
 				[1101] = {
 					["totalMax"] = 100000,
-					["amount"] = 60580,
+					["amount"] = 60665,
 				},
 				[738] = {
 					["amount"] = 1741,
@@ -258,22 +285,21 @@ SavedInstancesDB = {
 				[81] = {
 					["amount"] = 215,
 				},
-				[1191] = {
-					["totalMax"] = 5000,
-					["amount"] = 1700,
+				[241] = {
+					["amount"] = 85,
 				},
 			},
 			["Show"] = "saved",
-			["lastbosstime"] = 1466702639,
+			["Race"] = "Dwarf",
 			["Level"] = 100,
 			["LClass"] = "Hunter",
 			["RBGrating"] = 0,
-			["Race"] = "Dwarf",
-			["PlayedTotal"] = 30221325,
-			["Zone"] = "Lunarfall",
+			["WeeklyResetTime"] = 1467108011,
+			["lastbosstime"] = 1466702639,
+			["PlayedTotal"] = 30222315,
 			["lastbossyelltime"] = 1466702591,
-			["Money"] = 5008226487,
-			["DailyResetTime"] = 1467021609,
+			["Money"] = 5018975707,
+			["DailyResetTime"] = 1467021611,
 			["lastboss"] = "Horridon: 10 Player",
 			["BonusRoll"] = {
 				{
@@ -337,15 +363,15 @@ SavedInstancesDB = {
 					["currencyID"] = 1129,
 				}, -- [10]
 				{
+					["name"] = "Gorefiend: Heroic",
 					["item"] = "|cffa335ee|Hitem:124290:0:0:0:0:0:0:0:100:254:4:5:1:566:529|h[Mitts of Eternal Famishment]|h|r",
 					["time"] = 1452048368,
-					["name"] = "Gorefiend: Heroic",
 					["currencyID"] = 1129,
 				}, -- [11]
 				{
+					["item"] = "|cffa335ee|Hitem:124210:0:0:0:0:0:0:0:100:254:4:5:3:561:41:566:529|h[Choker of the Great Betrayer]|h|r",
 					["time"] = 1451420719,
 					["name"] = "Archimonde: Heroic",
-					["item"] = "|cffa335ee|Hitem:124210:0:0:0:0:0:0:0:100:254:4:5:3:561:41:566:529|h[Choker of the Great Betrayer]|h|r",
 					["currencyID"] = 1129,
 				}, -- [12]
 				{
@@ -355,9 +381,9 @@ SavedInstancesDB = {
 					["currencyID"] = 1129,
 				}, -- [13]
 				{
+					["name"] = "Tyrant Velhari: Heroic",
 					["item"] = "|cffa335ee|Hitem:124287:0:0:0:0:0:0:0:100:254:4:5:2:561:566:529|h[Spiked Throatcrusher Boots]|h|r",
 					["time"] = 1451364790,
-					["name"] = "Tyrant Velhari: Heroic",
 					["currencyID"] = 1129,
 				}, -- [14]
 				{
@@ -403,9 +429,9 @@ SavedInstancesDB = {
 					["currencyID"] = 697,
 				}, -- [21]
 				{
+					["time"] = 1450709971,
 					["name"] = "Feng the Accursed: 10 Player",
 					["item"] = "|cffa335ee|Hitem:85980:0:0:0:0:0:0:0:100:253:4:0:0:445|h[Wildfire Worldwalkers]|h|r",
-					["time"] = 1450709971,
 					["currencyID"] = 697,
 				}, -- [22]
 				{
@@ -421,25 +447,25 @@ SavedInstancesDB = {
 					["currencyID"] = 697,
 				}, -- [24]
 				{
+					["time"] = 1450206844,
 					["name"] = "Tyrant Velhari: Heroic",
 					["item"] = "|cffa335ee|Hitem:124300:0:0:0:0:0:0:0:100:254:4:5:1:566:529|h[Haughty Chain Legguards]|h|r",
-					["time"] = 1450206844,
 					["currencyID"] = 1129,
 				}, -- [25]
 			},
-			["PlayedLevel"] = 3454586,
+			["PlayedLevel"] = 3455576,
 			["Faction"] = "Alliance",
 			["ILe"] = 728.866638183594,
 			["Skills"] = {
 				[169092] = {
-					["Expires"] = 1467021609,
+					["Expires"] = 1467021611,
 					["Title"] = "Enchanting: Temporal Crystal",
 					["Link"] = "|cffffd000|Henchant:169092|h[Enchanting: Temporal Crystal]|h|r",
 				},
 			},
 			["Quests"] = {
 			},
-			["WeeklyResetTime"] = 1467108009,
+			["Zone"] = "Lunarfall",
 		},
 		["Herbinator - Sisters of Elune"] = {
 			["IL"] = 0.266666680574417,
@@ -469,13 +495,13 @@ SavedInstancesDB = {
 		["Orig - Sisters of Elune"] = {
 			["lastbossyell"] = "Al'Akir: 25 Player",
 			["IL"] = 665.3125,
-			["LastSeen"] = 1466835649,
+			["LastSeen"] = 1466967094,
 			["Order"] = 50,
 			["Class"] = "MONK",
 			["currency"] = {
 				[824] = {
 					["totalMax"] = 10000,
-					["amount"] = 29,
+					["amount"] = 1305,
 				},
 				[994] = {
 					["totalMax"] = 20,
@@ -487,7 +513,7 @@ SavedInstancesDB = {
 					["amount"] = 6,
 				},
 				[823] = {
-					["amount"] = 13810,
+					["amount"] = 14253,
 				},
 				[1101] = {
 					["totalMax"] = 100000,
@@ -497,23 +523,44 @@ SavedInstancesDB = {
 			["Level"] = 100,
 			["LClass"] = "Monk",
 			["RBGrating"] = 0,
-			["PlayedTotal"] = 81380,
+			["PlayedTotal"] = 81725,
 			["Race"] = "Gnome",
 			["lastbossyelltime"] = 1466640574,
-			["Money"] = 124889927,
-			["WeeklyResetTime"] = 1467108010,
-			["DailyResetTime"] = 1467021610,
+			["Money"] = 127239927,
+			["WeeklyResetTime"] = 1467108021,
+			["DailyResetTime"] = 1467021621,
 			["lastboss"] = "Conclave of Wind: 25 Player",
 			["Show"] = "saved",
 			["lastbosstime"] = 1466640505,
-			["PlayedLevel"] = 81380,
+			["PlayedLevel"] = 81725,
 			["Faction"] = "Alliance",
 			["ILe"] = 665.3125,
 			["Skills"] = {
+				[168835] = {
+					["Expires"] = 1467021621,
+					["Title"] = "Tailoring: Hexweave Cloth",
+					["Link"] = "|cffffd000|Henchant:168835|h[Tailoring: Hexweave Cloth]|h|r",
+				},
+				[176058] = {
+					["Expires"] = 1467021621,
+					["Title"] = "Tailoring: Secrets of Draenor Tailoring",
+					["Link"] = "|cffffd000|Henchant:176058|h[Tailoring: Secrets of Draenor Tailoring]|h|r",
+				},
+				[169092] = {
+					["Expires"] = 1467021621,
+					["Title"] = "Enchanting: Temporal Crystal",
+					["Link"] = "|cffffd000|Henchant:169092|h[Enchanting: Temporal Crystal]|h|r",
+				},
 			},
 			["Quests"] = {
+				[38175] = {
+					["Link"] = "|cffffff00|Hquest:38175:-1|h[Scrap Meltdown]|h|r",
+					["Zone"] = "Lunarfall",
+					["Title"] = "Scrap Meltdown",
+					["isDaily"] = true,
+				},
 			},
-			["Zone"] = "Town Hall",
+			["Zone"] = "Lunarfall",
 		},
 	},
 	["Tooltip"] = {
@@ -594,10 +641,10 @@ SavedInstancesDB = {
 			["Raid"] = true,
 		},
 		["Icecrown Citadel"] = {
-			["Show"] = "saved",
-			["Expansion"] = 2,
 			["LFDID"] = 280,
-			["Raid"] = true,
+			["Expansion"] = 2,
+			["Show"] = "saved",
+			["RecLevel"] = 80,
 			["Bracnar - Sisters of Elune"] = {
 				[4] = {
 					["Expires"] = 0,
@@ -607,7 +654,7 @@ SavedInstancesDB = {
 					["Locked"] = false,
 				},
 			},
-			["RecLevel"] = 80,
+			["Raid"] = true,
 		},
 		["Razorfen Downs"] = {
 			["LFDID"] = 20,
@@ -764,7 +811,7 @@ SavedInstancesDB = {
 				[2] = {
 					true, -- [1]
 					["ID"] = -1,
-					["Expires"] = 1467108009,
+					["Expires"] = 1467108011,
 				},
 			},
 			["Raid"] = true,
@@ -828,20 +875,20 @@ SavedInstancesDB = {
 			["Show"] = "saved",
 		},
 		["Throne of Thunder"] = {
-			["LFDID"] = 634,
-			["Expansion"] = 4,
 			["Show"] = "saved",
-			["RecLevel"] = 90,
+			["Expansion"] = 4,
+			["LFDID"] = 634,
+			["Raid"] = true,
 			["Bracnar - Sisters of Elune"] = {
 				[3] = {
-					["Expires"] = 1467129599,
+					["Expires"] = 1467129598,
 					["Extended"] = false,
 					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06A1ACBD:1098:3:640|h[Throne of Thunder]|h|r",
 					["ID"] = 172624286,
 					["Locked"] = true,
 				},
 			},
-			["Raid"] = true,
+			["RecLevel"] = 90,
 		},
 		["Mogu'shan Vaults"] = {
 			["Show"] = "saved",
@@ -921,7 +968,7 @@ SavedInstancesDB = {
 			["Expansion"] = 2,
 			["Galinar - Sisters of Elune"] = {
 				[3] = {
-					["Expires"] = 1467129599,
+					["Expires"] = 1467129600,
 					["Extended"] = false,
 					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06EEB51C:249:3:1|h[Onyxia's Lair]|h|r",
 					["ID"] = 172487467,
@@ -930,7 +977,7 @@ SavedInstancesDB = {
 			},
 			["Orig - Sisters of Elune"] = {
 				[4] = {
-					["Expires"] = 1467129600,
+					["Expires"] = 1467129598,
 					["Extended"] = false,
 					["Link"] = "|cffff8000|Hinstancelock:Player-1169-076A3790:249:4:1|h[Onyxia's Lair]|h|r",
 					["ID"] = 172564726,
@@ -943,7 +990,7 @@ SavedInstancesDB = {
 			["RecLevel"] = 80,
 			["Bracnar - Sisters of Elune"] = {
 				[4] = {
-					["Expires"] = 1467129599,
+					["Expires"] = 1467129598,
 					["Extended"] = false,
 					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06A1ACBD:249:4:1|h[Onyxia's Lair]|h|r",
 					["ID"] = 172491400,
@@ -952,7 +999,7 @@ SavedInstancesDB = {
 			},
 			["Uldaris - Sisters of Elune"] = {
 				[4] = {
-					["Expires"] = 1467129591,
+					["Expires"] = 1467129600,
 					["Extended"] = false,
 					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06A1AD17:249:4:1|h[Onyxia's Lair]|h|r",
 					["ID"] = 172560642,
@@ -1033,7 +1080,7 @@ SavedInstancesDB = {
 				[2] = {
 					true, -- [1]
 					["ID"] = -1,
-					["Expires"] = 1467108009,
+					["Expires"] = 1467108011,
 				},
 			},
 			["Raid"] = true,
@@ -1062,7 +1109,7 @@ SavedInstancesDB = {
 				[2] = {
 					true, -- [1]
 					["ID"] = -1,
-					["Expires"] = 1467108009,
+					["Expires"] = 1467108011,
 				},
 			},
 			["Raid"] = true,
@@ -1399,7 +1446,7 @@ SavedInstancesDB = {
 			["Show"] = "saved",
 		},
 		["Trial of the Champion"] = {
-			["Show"] = "saved",
+			["LFDID"] = 249,
 			["Expansion"] = 2,
 			["Galinar - Sisters of Elune"] = {
 				[2] = {
@@ -1410,8 +1457,8 @@ SavedInstancesDB = {
 					["Locked"] = false,
 				},
 			},
-			["LFDID"] = 249,
-			["RecLevel"] = 80,
+			["Show"] = "saved",
+			["Raid"] = false,
 			["Bracnar - Sisters of Elune"] = {
 				[2] = {
 					["Expires"] = 0,
@@ -1421,7 +1468,7 @@ SavedInstancesDB = {
 					["Locked"] = false,
 				},
 			},
-			["Raid"] = false,
+			["RecLevel"] = 80,
 		},
 		["Slave Pens"] = {
 			["LFDID"] = 1015,
@@ -1845,10 +1892,10 @@ SavedInstancesDB = {
 			["LFDID"] = 1004,
 		},
 		["Ulduar"] = {
-			["LFDID"] = 244,
-			["Expansion"] = 2,
 			["Show"] = "saved",
-			["Raid"] = true,
+			["Expansion"] = 2,
+			["LFDID"] = 244,
+			["RecLevel"] = 80,
 			["Bracnar - Sisters of Elune"] = {
 				[4] = {
 					["Expires"] = 0,
@@ -1858,7 +1905,7 @@ SavedInstancesDB = {
 					["Locked"] = false,
 				},
 			},
-			["RecLevel"] = 80,
+			["Raid"] = true,
 		},
 		["Magtheridon's Lair"] = {
 			["LFDID"] = 176,
@@ -2002,7 +2049,7 @@ SavedInstancesDB = {
 				[2] = {
 					true, -- [1]
 					["ID"] = -1,
-					["Expires"] = 1467108009,
+					["Expires"] = 1467108011,
 				},
 			},
 			["Raid"] = true,
@@ -2018,7 +2065,7 @@ SavedInstancesDB = {
 			["Expansion"] = 3,
 			["Galinar - Sisters of Elune"] = {
 				[3] = {
-					["Expires"] = 1467129599,
+					["Expires"] = 1467129600,
 					["Extended"] = false,
 					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06EEB51C:754:3:3|h[Throne of the Four Winds]|h|r",
 					["ID"] = 172488624,
@@ -2027,7 +2074,7 @@ SavedInstancesDB = {
 			},
 			["Orig - Sisters of Elune"] = {
 				[4] = {
-					["Expires"] = 1467129600,
+					["Expires"] = 1467129598,
 					["Extended"] = false,
 					["Link"] = "|cffff8000|Hinstancelock:Player-1169-076A3790:754:4:3|h[Throne of the Four Winds]|h|r",
 					["ID"] = 172566142,
@@ -2040,7 +2087,7 @@ SavedInstancesDB = {
 			["RecLevel"] = 85,
 			["Bracnar - Sisters of Elune"] = {
 				[6] = {
-					["Expires"] = 1467129599,
+					["Expires"] = 1467129598,
 					["Extended"] = false,
 					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06A1ACBD:754:6:3|h[Throne of the Four Winds]|h|r",
 					["ID"] = 172491898,
@@ -2049,7 +2096,7 @@ SavedInstancesDB = {
 			},
 			["Uldaris - Sisters of Elune"] = {
 				[3] = {
-					["Expires"] = 1467129591,
+					["Expires"] = 1467129600,
 					["Extended"] = false,
 					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06A1AD17:754:3:3|h[Throne of the Four Winds]|h|r",
 					["ID"] = 172561162,
@@ -2087,13 +2134,13 @@ SavedInstancesDB = {
 			[37319] = 971,
 			[37320] = 971,
 			[37321] = 971,
-			[13671] = 492,
+			[14105] = 492,
 			[39648] = 971,
 			[37324] = 971,
 			[37325] = 971,
 			[39651] = 971,
 			[13625] = 492,
-			[14105] = 492,
+			[14074] = 492,
 			[13789] = 492,
 			[14107] = 492,
 			[37323] = 971,
@@ -2102,7 +2149,7 @@ SavedInstancesDB = {
 			[14108] = 492,
 			[13682] = 492,
 			[14076] = 492,
-			[14074] = 492,
+			[13671] = 492,
 			[13861] = 492,
 			[14090] = 492,
 			[14077] = 492,
@@ -2119,7 +2166,7 @@ SavedInstancesDB = {
 			[39020] = 971,
 			[39021] = 971,
 			[32640] = -1,
-			["expires"] = 1467108009,
+			["expires"] = 1467108011,
 			[32641] = -1,
 			[36054] = 1009,
 			[36055] = 1009,
@@ -2140,7 +2187,7 @@ SavedInstancesDB = {
 			[37453] = -1,
 		},
 		["AccountWeekly"] = {
-			["expires"] = 1467108009,
+			["expires"] = 1467108011,
 		},
 	},
 	["MinimapIcon"] = {
@@ -2207,8 +2254,8 @@ SavedInstancesDB = {
 			0, -- [2]
 			0, -- [3]
 		},
-		["R7Indicator"] = "BLANK",
 		["R2Text"] = "KILLED/TOTAL",
+		["R8Text"] = "KILLED/TOTALM",
 		["R8Indicator"] = "BLANK",
 		["R0Text"] = "KILLED/TOTAL",
 		["R0Color"] = {
@@ -2216,12 +2263,12 @@ SavedInstancesDB = {
 			0.6, -- [2]
 			0, -- [3]
 		},
-		["R1Indicator"] = "BLANK",
 		["R2Color"] = {
 			0.6, -- [1]
 			0, -- [2]
 			0, -- [3]
 		},
+		["R6Text"] = "KILLED/TOTAL",
 		["R3Indicator"] = "BLANK",
 		["R7ClassColor"] = true,
 		["R5Indicator"] = "BLANK",
@@ -2235,13 +2282,13 @@ SavedInstancesDB = {
 		["R3ClassColor"] = true,
 		["R3Text"] = "KILLED/TOTALH",
 		["R5ClassColor"] = true,
-		["R6Text"] = "KILLED/TOTAL",
+		["R1Indicator"] = "BLANK",
 		["D3Color"] = {
 			1, -- [1]
 			0, -- [2]
 			0, -- [3]
 		},
-		["R8Text"] = "KILLED/TOTALM",
+		["R7Indicator"] = "BLANK",
 		["D2Text"] = "KILLED/TOTALH",
 		["D3Text"] = "KILLED/TOTALM",
 		["R2Indicator"] = "BLANK",
