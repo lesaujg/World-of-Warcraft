@@ -9,7 +9,7 @@ VER 3 000000000000008E "BuyTradingPost" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000098 "Decursive" "INV_MISC_QUESTIONMARK"
 /stopcasting
-/cast [@mouseover,nomod,exists] Nature's Cure;  [@mouseover,exists,mod:ctrl] Cyclone; [@mouseover,exists,mod:shift] Nature's Cure
+/cast [@mouseover,nomod,exists] Diffuse Magic;  [@mouseover,exists,mod:ctrl] Detox; [@mouseover,exists,mod:shift] Diffuse Magic
 END
 VER 3 000000000000008A "Des" "ACHIEVEMENT_GUILDPERK_QUICK AND DEAD"
 /tar Des
@@ -20,7 +20,7 @@ END
 VER 3 0000000000000090 "GetKraken!" "ABILITY_HUNTER_EXPLOSIVESHOT"
 #showtooltip Flaming Spears
 /targetexact [nodead,nomod:ctrl] Kvaldir Deepcaller
-/targetexact [nodead,nomod:alt] North Sea Kraken
+/targetexact [nodead,nomod:shift] North Sea Kraken
 /cast [exists] Flaming Spears
 /cleartarget [dead]
 /run UIErrorsFrame:Clear()

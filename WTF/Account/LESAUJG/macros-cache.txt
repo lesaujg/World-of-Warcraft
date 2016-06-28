@@ -20,7 +20,7 @@ END
 VER 3 0000000000000090 "GetKraken!" "ABILITY_HUNTER_EXPLOSIVESHOT"
 #showtooltip Flaming Spears
 /targetexact [nodead,nomod:ctrl] Kvaldir Deepcaller
-/targetexact [nodead,nomod:alt] North Sea Kraken
+/targetexact [nodead,nomod:shift] North Sea Kraken
 /cast [exists] Flaming Spears
 /cleartarget [dead]
 /run UIErrorsFrame:Clear()

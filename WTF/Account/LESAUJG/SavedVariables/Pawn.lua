@@ -159,9 +159,6 @@ PawnCommon = {
 		},
 		["\"Wowhead\":PaladinTank"] = {
 			["PerCharacterOptions"] = {
-				["Herbinator-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
@@ -229,6 +226,9 @@ PawnCommon = {
 							99, -- [3]
 						},
 					},
+				},
+				["Herbinator-Sisters of Elune"] = {
+					["Visible"] = true,
 				},
 			},
 			["Color"] = "f58cba",
@@ -342,9 +342,6 @@ PawnCommon = {
 		},
 		["\"Wowhead\":PaladinHoly"] = {
 			["PerCharacterOptions"] = {
-				["Herbinator-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
@@ -412,6 +409,9 @@ PawnCommon = {
 							99, -- [3]
 						},
 					},
+				},
+				["Herbinator-Sisters of Elune"] = {
+					["Visible"] = true,
 				},
 			},
 			["Color"] = "f58cba",
@@ -847,14 +847,14 @@ PawnCommon = {
 							"item:129502:0:0:0:0:0:0:0:0:269:0:0:0:0:0:0:0:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_CLOAK"] = {
-							65.2262210796915, -- [1]
-							"item:129508:0:0:0:0:0:0:0:0:269:0:0:0:0:0:0:0:0", -- [2]
-							0, -- [3]
-						},
 						["INVTYPE_CHEST"] = {
 							168.318766066838, -- [1]
 							"item:113951:0:0:0:0:0:0:0:0:269:0:3:0:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_CLOAK"] = {
+							65.2262210796915, -- [1]
+							"item:129508:0:0:0:0:0:0:0:0:269:0:0:0:0:0:0:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_FINGER"] = {
@@ -1110,9 +1110,6 @@ PawnCommon = {
 		},
 		["\"Wowhead\":PaladinRetribution"] = {
 			["PerCharacterOptions"] = {
-				["Herbinator-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 					["BestItems"] = {
@@ -1180,6 +1177,9 @@ PawnCommon = {
 							99, -- [3]
 						},
 					},
+				},
+				["Herbinator-Sisters of Elune"] = {
+					["Visible"] = true,
 				},
 			},
 			["Color"] = "f58cba",
@@ -1473,14 +1473,14 @@ PawnCommon = {
 							"item:129502:0:0:0:0:0:0:0:0:269:0:0:0:0:0:0:0:0", -- [2]
 							0, -- [3]
 						},
-						["INVTYPE_CLOAK"] = {
-							59.3772672309553, -- [1]
-							"item:129508:0:0:0:0:0:0:0:0:269:0:0:0:0:0:0:0:0", -- [2]
-							0, -- [3]
-						},
 						["INVTYPE_CHEST"] = {
 							144.459492140266, -- [1]
 							"item:113870:0:0:0:0:0:0:0:0:269:0:3:0:0:0:0:0:0", -- [2]
+							0, -- [3]
+						},
+						["INVTYPE_CLOAK"] = {
+							59.3772672309553, -- [1]
+							"item:129508:0:0:0:0:0:0:0:0:269:0:0:0:0:0:0:0:0", -- [2]
 							0, -- [3]
 						},
 						["INVTYPE_FINGER"] = {
