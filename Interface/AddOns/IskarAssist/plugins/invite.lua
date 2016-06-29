@@ -4,9 +4,13 @@
 local RA = RaidAssist
 local L = LibStub ("AceLocale-3.0"):GetLocale ("RaidAssistAddon")
 local _
-local default_priority = 8
+local default_priority = 16
 
+if (_G ["RaidAssistInvite"]) then
+	return
+end
 local Invite = {version = "v0.1", pluginname = "Invites"}
+_G ["RaidAssistInvite"] = Invite
 
 local default_config = {
 	presets = {},
@@ -478,6 +482,8 @@ function Invite.BuildOptions (frame)
 		
 		--create button (confirm) // edit button is 'save'
 		local create_button = RA:CreateButton (panel, Invite.create_or_edit_preset, 160, 20, "Create Preset", _, _, _, "button_create_preset", _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+		--create_button:SetIcon ([[Interface\AddOns\IskarAssist\media\plus]], 12, 12, "overlay", {0, 1, 0, 1}, {1, 1, 1}, 2, 1, 0)
+		
 		create_button:SetPoint ("topleft", panel, "topleft", 10 , -375)
 	
 	------------------------ fim	
@@ -584,8 +590,9 @@ function Invite.BuildOptions (frame)
 		welcome_text2:SetPoint ("topleft", main_frame, "topleft", x_start, -145)
 		
 		local create_button = RA:CreateButton (main_frame, Invite.create_new_preset, 160, 20, "Create Preset", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+		create_button:SetIcon ([[Interface\AddOns\IskarAssist\media\plus]], 10, 10, "overlay", {0, 1, 0, 1}, {1, 1, 1}, 3, 1, 0)
 		create_button:SetPoint ("topleft", main_frame, "topleft", x_start , -165)
-
+		
 		--> edit dropdown
 		local on_edit_select = function (_, _, preset)
 			Invite:ShowPreset (Invite:GetPreset (preset))
@@ -602,8 +609,9 @@ function Invite.BuildOptions (frame)
 		local dropdown_edit = RA:CreateDropDown (main_frame, dropdown_edit_fill, _, 160, 20, "dropdown_edit_preset", _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
 		dropdown_edit:SetPoint ("left", label_edit, "right", 2, 0)
 		
-		local button_edit = RA:CreateButton (main_frame, edit_preset, 60, 18, "edit", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+		local button_edit = RA:CreateButton (main_frame, edit_preset, 80, 18, "Edit", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 		button_edit:SetPoint ("left", dropdown_edit, "right", 2, 0)
+		button_edit:SetIcon ([[Interface\BUTTONS\UI-OptionsButton]], 12, 12, "overlay", {0, 1, 0, 1}, {1, 1, 1}, 2, 1, 0)
 		
 		--> remove dropdown
 		local dropdown_remove_fill = function()
@@ -638,8 +646,9 @@ function Invite.BuildOptions (frame)
 			
 		end
 		
-		local button_remove = RA:CreateButton (main_frame, remove_preset_table, 60, 18, "remove", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+		local button_remove = RA:CreateButton (main_frame, remove_preset_table, 80, 18, "Remove", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 		button_remove:SetPoint ("left", dropdown_remove, "right", 2, 0)
+		button_remove:SetIcon ([[Interface\BUTTONS\UI-StopButton]], 14, 14, "overlay", {0, 1, 0, 1}, {1, 1, 1}, 2, 1, 0)
 		
 		label_edit:SetPoint ("topleft", main_frame, "topleft", x_start, -190)
 		label_remove:SetPoint ("topleft", main_frame, "topleft", x_start, -210)
@@ -681,8 +690,9 @@ function Invite.BuildOptions (frame)
 			main_frame.dropdown_keyword_remove:Refresh()
 			main_frame.dropdown_keyword_remove:Select (1, true)
 		end
-		local button_add_keyword = RA:CreateButton (main_frame, add_key_word_func, 60, 18, "add", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+		local button_add_keyword = RA:CreateButton (main_frame, add_key_word_func, 60, 18, "Add", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 		button_add_keyword:SetPoint ("left", editbox_add_keyword, "right", 2, 0)
+		button_add_keyword:SetIcon ([[Interface\AddOns\IskarAssist\media\plus]], 10, 10, "overlay", {0, 1, 0, 1}, {1, 1, 1}, 3, 1, 0)
 		
 		--remove
 		local dropdown_keyword_erase_fill = function()
@@ -702,8 +712,9 @@ function Invite.BuildOptions (frame)
 			dropdown_keyword_remove:Refresh()
 			dropdown_keyword_remove:Select (1, true)
 		end
-		local button_keyword_remove = RA:CreateButton (main_frame, keyword_remove, 60, 18, "remove", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+		local button_keyword_remove = RA:CreateButton (main_frame, keyword_remove, 60, 18, "Remove", _, _, _, _, _, _, Invite:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Invite:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 		button_keyword_remove:SetPoint ("left", dropdown_keyword_remove, "right", 2, 0)
+		button_keyword_remove:SetIcon ([[Interface\BUTTONS\UI-StopButton]], 14, 14, "overlay", {0, 1, 0, 1}, {1, 1, 1}, 2, 1, 0)
 		label_keyword_remove:SetPoint ("topleft", main_frame, "topleft", x_start, -320)
 		
 		--> auto accept invites

@@ -5,9 +5,14 @@
 local RA = RaidAssist
 local L = LibStub ("AceLocale-3.0"):GetLocale ("RaidAssistAddon")
 local _
-local default_priority = 6
+local default_priority = 20
 
+if (_G ["RaidAssistNotepad"]) then
+	return
+end
 local Notepad = {version = 1, pluginname = "Notes"}
+_G ["RaidAssistNotepad"] = Notepad
+
 local default_config = {
 	notes = {},
 	currently_shown = false,
@@ -961,31 +966,43 @@ function Notepad.BuildOptions (frame)
 	--create new note "New"
 	local buttons_y, buttons_width = -425, 70
 	
-	
 	local create_button = Notepad:CreateButton (main_frame, Notepad.CreateNewNotepad, buttons_width, 20, "New", _, _, _, "button_create", _, _, Notepad:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 	create_button:SetPoint ("topleft", main_frame, "topleft", 10 , -90)
+	create_button:SetIcon ([[Interface\AddOns\IskarAssist\media\plus]], 10, 10, "overlay", {0, 1, 0, 1}, {1, 1, 1}, 3, 1, 0)
 	
 	--delete note "Erase"
 	local erase_button =  Notepad:CreateButton (main_frame, Notepad.DeleteCurrentNote, buttons_width, 20, "Erase Note", _, _, _, "button_erase", _, _, Notepad:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 	erase_button:SetPoint ("topleft", main_frame, "topleft", 90 , -90)
-
+	erase_button:SetIcon ([[Interface\BUTTONS\UI-StopButton]], 14, 14, "overlay", {0, 1, 0, 1}, {1, 1, 1}, 2, 1, 0)
 	
-	
+	local ww = 100
 	
 	--clear "Clear"
-	local clear_button =  Notepad:CreateButton (main_frame, clear_editbox, buttons_width, 20, "Clear Text", _, _, _, "button_clear", _, _, Notepad:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	clear_button:SetPoint ("topleft", main_frame, "topleft", 310 , buttons_y)
+	local clear_button =  Notepad:CreateButton (main_frame, clear_editbox, ww, 20, "Clear Text", _, _, _, "button_clear", _, _, Notepad:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	--clear_button:SetPoint ("topleft", main_frame, "topleft", 310 , buttons_y)
+	clear_button:SetIcon ([[Interface\Glues\LOGIN\Glues-CheckBox-Check]])
 	
 	--save "Save"
-	local save_button =  Notepad:CreateButton (main_frame, save_changes, buttons_width, 20, "Save", _, _, _, "button_save", _, _, Notepad:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	save_button:SetPoint ("topleft", main_frame, "topleft", 390, buttons_y)
+	local save_button =  Notepad:CreateButton (main_frame, save_changes, ww, 20, "Save", _, _, _, "button_save", _, _, Notepad:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	--save_button:SetPoint ("topleft", main_frame, "topleft", 390, buttons_y)
+	--save_button:SetIcon ([[Interface\AddOns\IskarAssist\media\save]], 10, 10, "overlay", {0, 1, 0, 1}, {1, 1, 1}, 4, 1, 0)
+	save_button:SetIcon ([[Interface\BUTTONS\UI-CheckBox-Check]], 16, 16, "overlay", {0, 1, 0, 28/32}, {1, 1, 1}, 2, 1, 0)
 	
-	--save and send "Save and Send"
-	local save2_button =  Notepad:CreateButton (main_frame, save_changes_and_send, buttons_width, 20, "Send", _, _, _, "button_save2", _, _, Notepad:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	save2_button:SetPoint ("topleft", main_frame, "topleft", 470 , buttons_y)
-	--cancel edition "Cancel"
-	local cancel_button =  Notepad:CreateButton (main_frame, save_changes_and_close, buttons_width, 20, "Done", _, _, _, "button_cancel", _, _, Notepad:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	cancel_button:SetPoint ("topleft", main_frame, "topleft", 550 , buttons_y)	
+	--save and send "Send"
+	local save2_button =  Notepad:CreateButton (main_frame, save_changes_and_send, ww, 20, "Send", _, _, _, "button_save2", _, _, Notepad:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	--save2_button:SetPoint ("topleft", main_frame, "topleft", 470 , buttons_y)
+	save2_button:SetIcon ([[Interface\BUTTONS\JumpUpArrow]], 14, 12, "overlay", {0, 1, 0, 32/32}, {1, 1, 1}, 2, 1, 0)
+	
+	--cancel edition "Done"
+	local cancel_button =  Notepad:CreateButton (main_frame, save_changes_and_close, ww, 20, "Done", _, _, _, "button_cancel", _, _, Notepad:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Notepad:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	cancel_button:SetIcon ([[Interface\BUTTONS\UI-CheckBox-Check]], 16, 16, "overlay", {0, 1, 0, 28/32}, {1, 0.8, 0}, 2, 1, 0)
+	
+	--set points
+	cancel_button:SetPoint ("topleft", main_frame, "topleft", 528 , buttons_y)
+	save2_button:SetPoint ("right", cancel_button, "left", -2 , 0)
+	save_button:SetPoint ("right", save2_button, "left", -2 , 0)
+	clear_button:SetPoint ("right", save_button, "left", -2 , 0)
+	
 	
 	main_frame.button_erase:Disable()
 	main_frame.button_cancel:Disable()
@@ -1606,9 +1623,9 @@ function Notepad.BuildOptions (frame)
 		main_frame.editbox_notes.editbox.ignore_input = true
 		if (lastword:len() >= 2 and Notepad.db.auto_complete) then
 			for i = 1, GetNumGroupMembers() do
-				local name = UnitName ("raid" .. i)
+				local name = UnitName ("raid" .. i) or UnitName ("party" .. i)
 				--print (name, string.find ("keyspell", "^key"))
-				if (name:find ("^" .. lastword) or name:lower():find ("^" .. lastword)) then
+				if (name and (name:find ("^" .. lastword) or name:lower():find ("^" .. lastword))) then
 					local rest = name:gsub (lastword, "")
 					rest = rest:lower():gsub (lastword, "")
 					local cursor_pos = self:GetCursorPosition()

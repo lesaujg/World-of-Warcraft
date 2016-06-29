@@ -62,7 +62,12 @@ local text_color_enabled = {r=1, g=1, b=1, a=1}
 local text_color_disabled = {r=0.5, g=0.5, b=0.5, a=1}
 local icon_texture = [[Interface\AddOns\IskarAssist\media\plugin_icons]]
 
+if (_G ["RaidAssistCooldowns"]) then
+	return
+end
 local Cooldowns = {version = "v0.1", pluginname = "Cooldowns"}
+_G ["RaidAssistCooldowns"] = Cooldowns
+
 Cooldowns.ScreenPanels = {}
 Cooldowns.Roster = {}
 Cooldowns.Deaths = {}
@@ -70,8 +75,6 @@ Cooldowns.CooldownSchedules = {}
 Cooldowns.RosterIsEnabled = false
 Cooldowns.InstanceType = "none"
 local TrackingSpells = {}
-
-_G ["RaidAssistCooldowns"] = Cooldowns
 
 local get_unit_name = function (unitid)
 	local name = GetUnitName (unitid, true)
@@ -1186,8 +1189,9 @@ function Cooldowns.BuildOptions (frame)
 		update_panels_config()
 		Cooldowns.RefreshMainDropdown()
 	end
-	local button_create_panel = Cooldowns:CreateButton (main_frame, create_func, 50, 20, "New", _, _, _, "button_create", _, _, Cooldowns:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Cooldowns:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	local button_create_panel = Cooldowns:CreateButton (main_frame, create_func, 80, 20, "New Panel", _, _, _, "button_create", _, _, Cooldowns:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Cooldowns:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 	button_create_panel:SetPoint ("left", dropdown_cooldown_panel, "right", 10 , 0)
+	button_create_panel:SetIcon ([[Interface\BUTTONS\UI-CheckBox-Up]], 16, 16, "overlay", {3/32, 28/32, 4/32, 27/32}, {1, 1, 1}, 2, 1, 0)
 	
 	--> delete button
 	function Cooldowns.DeletePanel (self, button, param1)
@@ -1200,8 +1204,10 @@ function Cooldowns.BuildOptions (frame)
 		update_panels_config()
 		Cooldowns.RefreshMainDropdown()
 	end
-	local button_delete_panel = Cooldowns:CreateButton (main_frame, Cooldowns.DeletePanel, 50, 20, "Remove", _, _, _, "button_delete", _, _, Cooldowns:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Cooldowns:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	local button_delete_panel = Cooldowns:CreateButton (main_frame, Cooldowns.DeletePanel, 80, 20, "Remove", _, _, _, "button_delete", _, _, Cooldowns:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Cooldowns:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 	button_delete_panel:SetPoint ("left", button_create_panel, "right", 10 , 0)
+	button_delete_panel:SetIcon ([[Interface\BUTTONS\UI-StopButton]], 14, 14, "overlay", {0, 1, 0, 1}, {1, 1, 1}, 2, 1, 0)
+	
 	
 	local f = CreateFrame ("frame", "CooldownsOptionsHolder1", main_frame)
 	f:SetSize (1, 1)

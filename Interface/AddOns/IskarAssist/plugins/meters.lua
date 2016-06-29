@@ -5,9 +5,13 @@ local L = LibStub ("AceLocale-3.0"):GetLocale ("RaidAssistAddon")
 local _
 local default_priority = 0
 
+if (_G ["RaidAssistStopMeters"]) then
+	return
+end
 local StopMeters = {version = "v0.1", pluginname = "Meters"}
-StopMeters.IsDisabled = true
+_G ["RaidAssistStopMeters"] = StopMeters
 
+StopMeters.IsDisabled = true
 
 local default_config = {
 	enabled = true,

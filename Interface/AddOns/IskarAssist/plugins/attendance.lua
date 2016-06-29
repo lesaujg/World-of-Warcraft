@@ -4,7 +4,7 @@
 local RA = RaidAssist
 local L = LibStub ("AceLocale-3.0"):GetLocale ("RaidAssistAddon")
 local _
-local default_priority = 5
+local default_priority = 17
 
 local GetUnitName = GetUnitName
 local GetGuildInfo = GetGuildInfo
@@ -19,13 +19,16 @@ local default_config = {
 	menu_priority = 2,
 }
 
+if (_G ["RaidAssistAttendance"]) then
+	return
+end
 local Attendance = {version = "v0.1", pluginname = "Attendance"}
+_G ["RaidAssistAttendance"] = Attendance
+
 Attendance.debug = false
 --Attendance.debug = true
 
 local RaidSchedule
-
-_G ["RaidAssistAttendance"] = Attendance
 
 local icon_texcoord = {l=50/512, r=86/512, t=362/512, b=406/512}
 local icon_texture = [[Interface\Scenarios\ScenariosParts]]
@@ -311,6 +314,7 @@ function Attendance.BuildOptions (frame)
 	end
 	local reset_button =  Attendance:CreateButton (frame, reset_func, 80, 20, "Reset", _, _, _, "button_reset", _, _, Attendance:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), Attendance:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 	reset_button:SetPoint ("left", dropdown_raidschedule, "right", 10, 0)
+	reset_button:SetIcon ([[Interface\BUTTONS\UI-StopButton]], 14, 14, "overlay", {0, 1, 0, 1}, {1, 1, 1}, 2, 1, 0)
 	
 	frame:SetScript ("OnShow", function()
 		Attendance.update_attendance()

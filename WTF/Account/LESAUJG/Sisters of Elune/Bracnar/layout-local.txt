@@ -13,3 +13,10 @@ X: 0
 Y: 128
 W: 150
 H: 42
+Frame: TSMMainFrame1
+FrameLevel: 86
+Anchor: RIGHT
+X: -118
+Y: 52
+W: 968
+H: 621

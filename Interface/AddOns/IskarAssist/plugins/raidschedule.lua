@@ -19,9 +19,11 @@ local default_config = {
 	next_db_number = 1,
 }
 
+if (_G ["RaidAssistRaidSchedule"]) then
+	return
+end
 local RaidSchedule = {version = "v0.1", pluginname = "RaidSchedule"}
 RaidSchedule.debug = false
-
 _G ["RaidAssistRaidSchedule"] = RaidSchedule
 
 local icon_texture = [[Interface\Calendar\UI-Calendar-Button]]
@@ -507,10 +509,12 @@ function RaidSchedule.BuildOptions (frame)
 	local dropdown_edit = RA:CreateDropDown (main_frame, dropdown_edit_fill, _, 160, 20, "dropdown_edit_attendance", _, RaidSchedule:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
 	dropdown_edit:SetPoint ("left", label_edit, "right", 2, 0)
 
-	local button_edit = RA:CreateButton (main_frame, edit_attendance_table, 60, 18, "edit", _, _, _, _, _, _, RaidSchedule:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), RaidSchedule:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	local button_edit = RA:CreateButton (main_frame, edit_attendance_table, 60, 18, "Edit", _, _, _, _, _, _, RaidSchedule:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), RaidSchedule:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 	button_edit:SetPoint ("left", dropdown_edit, "right", 2, 0)
-	local button_remove = RA:CreateButton (main_frame, remove_attendance_table, 60, 18, "remove", _, _, _, _, _, _, RaidSchedule:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), RaidSchedule:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	local button_remove = RA:CreateButton (main_frame, remove_attendance_table, 60, 18, "Remove", _, _, _, _, _, _, RaidSchedule:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), RaidSchedule:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 	button_remove:SetPoint ("left", button_edit, "right", 2, 0)
+	button_edit:SetIcon ([[Interface\BUTTONS\UI-OptionsButton]], 12, 12, "overlay", {0, 1, 0, 1}, {1, 1, 1}, 2, 1, 0)
+	button_remove:SetIcon ([[Interface\BUTTONS\UI-StopButton]], 14, 14, "overlay", {0, 1, 0, 1}, {1, 1, 1}, 2, 1, 0)
 	
 	local dropdown_selected_db = function (self, fixed_param, value)
 		RaidSchedule:SetCharacterRaidScheduleTable (value)
@@ -553,6 +557,7 @@ function RaidSchedule.BuildOptions (frame)
 	end
 	
 	local new_schedule_button = RA:CreateButton (panel, create_new, 180, 20, "Create New Core Schedule", _, _, _, "new_schedule_button", _, _, RaidSchedule:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), RaidSchedule:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	new_schedule_button:SetIcon ([[Interface\AddOns\IskarAssist\media\plus]], 10, 10, "overlay", {0, 1, 0, 1}, {1, 1, 1}, 4, 1, 0)
 	
 	local x = 470
 	local y = 0

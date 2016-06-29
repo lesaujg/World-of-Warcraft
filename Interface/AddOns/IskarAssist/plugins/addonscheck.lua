@@ -4,7 +4,7 @@
 local RA = RaidAssist
 local L = LibStub ("AceLocale-3.0"):GetLocale ("RaidAssistAddon")
 local _ 
-local default_priority = 25
+local default_priority = 24
 
 local default_config = {
 	enabled = true,

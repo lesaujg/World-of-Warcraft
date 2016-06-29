@@ -2,7 +2,7 @@
 local RA = RaidAssist
 local L = LibStub ("AceLocale-3.0"):GetLocale ("RaidAssistAddon")
 local _
-local default_priority = 1
+local default_priority = 13
 
 --battle res default config
 local default_config = {
@@ -16,14 +16,17 @@ local icon_texcoord = {l=10/64, r=54/64, t=10/64, b=54/64}
 local text_color_enabled = {r=1, g=1, b=1, a=1}
 local text_color_disabled = {r=0.5, g=0.5, b=0.5, a=1}
 
+if (_G ["RaidAssistBisList"]) then
+	return
+end
 local BisList = {version = "v0.1", pluginname = "BisList"}
+_G ["RaidAssistBisList"] = BisList
+
 BisList.IsDisabled = true
 BisList.IsDisabled = false
 
 local can_install = false
 local can_install = true
-
-_G ["RaidAssistBisList"] = BisList
 
 BisList.menu_text = function (plugin)
 	if (BisList.db.enabled) then

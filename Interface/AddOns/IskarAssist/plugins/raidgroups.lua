@@ -3,9 +3,14 @@
 local RA = RaidAssist
 local L = LibStub ("AceLocale-3.0"):GetLocale ("RaidAssistAddon")
 local _
-local default_priority = 0
+local default_priority = 23
 
+if (_G ["RaidAssistRaidGroups"]) then
+	return
+end
 local RaidGroups = {version = "v0.1", pluginname = "RaidGroups"}
+_G ["RaidAssistRaidGroups"] = RaidGroups
+
 RaidGroups.IsDisabled = false
 
 local ROSTER_PLAYERNAME = 1
@@ -665,17 +670,19 @@ function RaidGroups.BuildOptions (frame)
 	
 	local right_panel_x = 490
 	
-	local apply_button =  RaidGroups:CreateButton (frame, apply_func, 80, 20, "Apply", _, _, _, "button_apply", _, _, RaidGroups:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), RaidGroups:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	local apply_button =  RaidGroups:CreateButton (frame, apply_func, 100, 20, "Apply", _, _, _, "button_apply", _, _, RaidGroups:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), RaidGroups:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 	apply_button:SetPoint ("topleft", frame, "topleft", right_panel_x, 0)
 	apply_button:SetScript ("OnUpdate", apply_onupdate)
-	
+	apply_button:SetIcon ([[Interface\BUTTONS\UI-CheckBox-Check]], 16, 16, "overlay", {0, 1, 0, 28/32}, {1, 1, 1}, 2, 1, 0)
+
 	local sync_func = function()
 		RaidGroups.lock_frame:Show()
 		RaidGroups.Sync()
 		RaidGroups.lock_frame:Hide()
 	end
-	local sync_button =  RaidGroups:CreateButton (frame, sync_func, 80, 20, "Sync", _, _, _, "button_sync", _, _, RaidGroups:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), RaidGroups:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	local sync_button =  RaidGroups:CreateButton (frame, sync_func, 100, 20, "Sync", _, _, _, "button_sync", _, _, RaidGroups:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), RaidGroups:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 	sync_button:SetPoint ("left", apply_button, "right", 6, 0)
+	sync_button:SetIcon ([[Interface\BUTTONS\UI-RefreshButton]], 14, 14, "overlay", {0, 1, 0, 1}, {1, 1, 1}, 2, 1, 0)
 
 	local alert_incombat_label = RaidGroups:CreateLabel (frame, "Raid Member In Combat", RaidGroups:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"), _, _, "label_filter1")
 	alert_incombat_label:SetPoint ("left", sync_button, "right", 20, 0)

@@ -2,7 +2,7 @@
 local RA = RaidAssist
 local L = LibStub ("AceLocale-3.0"):GetLocale ("RaidAssistAddon")
 local _ 
-local default_priority = 1
+local default_priority = 14
 
 --battle res default config
 local default_config = {
@@ -24,7 +24,12 @@ local icon_texcoord = {l=0.078125, r=0.921875, t=0.078125, b=0.921875}
 local text_color_enabled = {r=1, g=1, b=1, a=1}
 local text_color_disabled = {r=0.5, g=0.5, b=0.5, a=1}
 
+if (_G ["RaidAssistBisListRaid"]) then
+	return
+end
 local BisListRaid = {version = "v0.1", pluginname = "BisListRaid"}
+_G ["RaidAssistBisListRaid"] = BisListRaid
+
 BisListRaid.IsDisabled = true
 BisListRaid.IsDisabled = false
 
@@ -278,8 +283,10 @@ function BisListRaid.BuildOptions (frame)
 	local sync_func = function()
 		BisListRaid:SendPluginCommMessage (COMM_QUERY_RAIDLIST, "RAID", nil, nil, BisListRaid:GetPlayerNameWithRealm())
 	end
-	local sync_button =  BisListRaid:CreateButton (main_frame, sync_func, 80, 20, "Sync", _, _, _, "button_sync", _, _, BisListRaid:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), BisListRaid:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
+	local sync_button =  BisListRaid:CreateButton (main_frame, sync_func, 100, 20, "Sync", _, _, _, "button_sync", _, _, BisListRaid:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"), BisListRaid:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
 	sync_button:SetPoint ("left", dropdown_boss, "right", 2, 0)
+	sync_button:SetIcon ([[Interface\BUTTONS\UI-RefreshButton]], 14, 14, "overlay", {0, 1, 0, 1}, {1, 1, 1}, 2, 1, 0)
+	
 	
 	dropdown_boss:Select (1, true)
 	main_frame:Refresh()

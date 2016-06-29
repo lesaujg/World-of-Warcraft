@@ -3,16 +3,20 @@
 local RA = RaidAssist
 local L = LibStub ("AceLocale-3.0"):GetLocale ("RaidAssistAddon")
 local _ 
-local default_priority = 1
+local default_priority = 19
 
 local LibGroupInSpecT = LibStub:GetLibrary ("LibGroupInSpecT-1.1")
 
+if (_G ["RaidAssistPlayerCheck"]) then
+	return
+end
 local PlayerCheck = {
 	last_data_sent = 0,
 	player_data = {},
 	version = "v0.1",
 	pluginname = "PlayerCheck"
 }
+_G ["RaidAssistPlayerCheck"] = PlayerCheck
 
 --PlayerCheck.IsDisabled = true
 local can_install = false
@@ -273,8 +277,8 @@ function PlayerCheck.PluginCommReceived (prefix, sourcePluginVersion, player_nam
 		PlayerCheck.player_data [player_name] = t
 		
 		if (PlayerCheckFillPanel and PlayerCheckFillPanel:IsShown()) then
-			if (PlayerCheck.update_PlayerCheck) then
-				PlayerCheck.update_PlayerCheck()
+			if (PlayerCheck.update_PlayerCheck and PlayerCheck.fill_panel) then
+				PlayerCheck.update_PlayerCheck (PlayerCheck.fill_panel)
 			end
 		end
 		
@@ -293,8 +297,8 @@ function PlayerCheck.PluginCommReceived (prefix, sourcePluginVersion, player_nam
 		PlayerCheck.player_data [player_name] = t
 		
 		if (PlayerCheckFillPanel and PlayerCheckFillPanel:IsShown()) then
-			if (PlayerCheck.update_PlayerCheck) then
-				PlayerCheck.update_PlayerCheck()
+			if (PlayerCheck.update_PlayerCheck and PlayerCheck.fill_panel) then
+				PlayerCheck.update_PlayerCheck (PlayerCheck.fill_panel)
 			end
 		end
 	end
@@ -325,8 +329,8 @@ function PlayerCheck:LibGroupInSpecT_UpdateReceived (event, guid, unitid, info)
 		t [7] = talents
 		
 		if (PlayerCheckFillPanel and PlayerCheckFillPanel:IsShown()) then
-			if (PlayerCheck.update_PlayerCheck) then
-				PlayerCheck.update_PlayerCheck()
+			if (PlayerCheck.update_PlayerCheck and PlayerCheck.fill_panel) then
+				PlayerCheck.update_PlayerCheck (PlayerCheck.fill_panel)
 			end
 		end
 	end
@@ -339,6 +343,101 @@ function PlayerCheck.OnShowOnOptionsPanel()
 	PlayerCheck.BuildOptions (OptionsPanel)
 end
 
+PlayerCheck.update_PlayerCheck = function (fill_panel, export)
+
+	local current_db = PlayerCheck.player_data
+	if (current_db) then
+	
+		--> alphabetical order
+		local alphabetical_players = {}
+		for playername, table in pairs (current_db) do
+			tinsert (alphabetical_players, {playername, table})
+		end
+		
+		table.sort (alphabetical_players, function (t1, t2) return t2[1] < t1[1] end)			
+
+		--add the two initial headers for player name and total PlayerCheck
+		local header = {
+			{name = "Player Name", type = "text", width = 120},
+			{name = "Latency", type = "text", width = 60},
+			{name = "Item Level", type = "text", width = 60},
+			{name = "Repair %", type = "text", width = 60},
+			{name = "No Enchant/Gem", type = "text", width = 120},
+			{name = "Talents", type = "text", width = 120},
+		}
+
+		local get_latency_color = function (latency)
+			if (latency < 300) then
+				return "|cFF33FF33" .. latency .. "|r"
+			elseif (latency < 600) then
+				return "|cFFFFFF33" .. latency .. "|r"
+			else
+				return "|cFFFF3333" .. latency .. "|r"
+			end
+		end
+		
+		local get_repair_color = function (repair_percent)
+			local r, g, b = PlayerCheck:PercentColor (repair_percent)
+			r = RA:Hex (floor (r*255))
+			g = RA:Hex (floor (g*255))
+			b = RA:Hex (floor (b*255))
+			return "|cFF" .. r .. g .. b .. repair_percent .. "|r"
+		end
+		
+		local get_missing_color = function (amt)
+			if (amt == 0) then
+				return ""
+			elseif (amt < 3) then
+				return "|cFFFFFF33" .. amt .. "|r"
+			else
+				return "|cFFFF3333" .. amt .. "|r"
+			end
+		end
+		
+		fill_panel:SetFillFunction (function (index) 
+			
+			local name = Ambiguate (alphabetical_players [index][1], "none")
+			local t = alphabetical_players [index][2]
+			
+			local latency = get_latency_color (t[3] or 0) .. " | " .. get_latency_color (t[4] or 0)
+			
+			local item_level = floor (t[1] or 0) .. " | " .. floor (t[2] or 0)
+			local repair = get_repair_color (floor (t[5] or 0))
+			
+			local missing_enchants = ""
+			local missing_enchants_amt = 0
+			for index, slot in ipairs (t [6] or {}) do
+				missing_enchants = missing_enchants .. slot .. " "
+				missing_enchants_amt = missing_enchants_amt + 1
+			end
+			
+			missing_enchants_amt = get_missing_color (missing_enchants_amt)
+			
+			local talents = ""
+			for i = 2, #t[7] do
+				local talentID, name, texture, selected, available = GetTalentInfoByID (t[7][i] or 0)
+				if (texture) then
+					talents = talents ..  " |T" .. texture .. ":" .. 15 .. ":" .. 15 ..":0:0:64:64:4:60:4:60|t"
+				end
+			end
+
+			local spec_id, spec_name, spec_description, spec_icon, spec_background, spec_role, spec_class = GetSpecializationInfoByID (t[7][1] or 0)
+			if (spec_icon) then
+				name = "|T" .. spec_icon .. ":" .. 16 .. ":" .. 16 ..":0:0:64:64:4:60:4:60|t " .. (name or "Unknown")
+			else
+				name = name or "Unknown"
+			end
+
+			return {name, latency, item_level, repair, missing_enchants_amt, talents}
+		end)
+
+		fill_panel:SetTotalFunction (function() return #alphabetical_players end)
+		fill_panel:SetSize (math.min (GetScreenWidth()-200, (#header*60) + 60), 450)
+		fill_panel:UpdateRows (header)
+		fill_panel:Refresh()
+	end
+end
+
 function PlayerCheck.BuildOptions (frame)
 	
 	if (frame.FirstRun) then
@@ -347,114 +446,14 @@ function PlayerCheck.BuildOptions (frame)
 	frame.FirstRun = true
 	
 	local fill_panel = PlayerCheck:CreateFillPanel (frame, {}, 790, 460, false, false, false, {rowheight = 16}, "fill_panel", "PlayerCheckFillPanel")
+	PlayerCheck.fill_panel = fill_panel
 	fill_panel:SetPoint ("topleft", frame, "topleft", 10, 0)
-	
-	
-	PlayerCheck.update_PlayerCheck = function()
-	
-		local current_db = PlayerCheck.player_data
-		if (current_db) then
-		
-			--> alphabetical order
-			local alphabetical_players = {}
-			for playername, table in pairs (current_db) do
-				tinsert (alphabetical_players, {playername, table})
-			end
-			
-			table.sort (alphabetical_players, function (t1, t2) return t2[1] < t1[1] end)			
-	
-			--add the two initial headers for player name and total PlayerCheck
-			local header = {
-				{name = "Player Name", type = "text", width = 120},
-				{name = "Latency", type = "text", width = 60},
-				{name = "Item Level", type = "text", width = 60},
-				{name = "Repair %", type = "text", width = 60},
-				{name = "No Enchant/Gem", type = "text", width = 120},
-				{name = "Talents", type = "text", width = 120},
-			}
 
-			local get_latency_color = function (latency)
-				if (latency < 300) then
-					return "|cFF33FF33" .. latency .. "|r"
-				elseif (latency < 600) then
-					return "|cFFFFFF33" .. latency .. "|r"
-				else
-					return "|cFFFF3333" .. latency .. "|r"
-				end
-			end
-			
-			local get_repair_color = function (repair_percent)
-				local r, g, b = PlayerCheck:PercentColor (repair_percent)
-				r = RA:Hex (floor (r*255))
-				g = RA:Hex (floor (g*255))
-				b = RA:Hex (floor (b*255))
-				return "|cFF" .. r .. g .. b .. repair_percent .. "|r"
-			end
-			
-			local get_missing_color = function (amt)
-				if (amt == 0) then
-					return ""
-				elseif (amt < 3) then
-					return "|cFFFFFF33" .. amt .. "|r"
-				else
-					return "|cFFFF3333" .. amt .. "|r"
-				end
-			end
-			
-			frame.fill_panel:SetFillFunction (function (index) 
-				
-				local name = Ambiguate (alphabetical_players [index][1], "none")
-				local t = alphabetical_players [index][2]
-				
-				local latency = get_latency_color (t[3] or 0) .. " | " .. get_latency_color (t[4] or 0)
-				
-				local item_level = floor (t[1] or 0) .. " | " .. floor (t[2] or 0)
-				local repair = get_repair_color (floor (t[5] or 0))
-				
-				local missing_enchants = ""
-				local missing_enchants_amt = 0
-				for index, slot in ipairs (t [6] or {}) do
-					missing_enchants = missing_enchants .. slot .. " "
-					missing_enchants_amt = missing_enchants_amt + 1
-				end
-				
-				missing_enchants_amt = get_missing_color (missing_enchants_amt)
-				
-				local talents = ""
-				for i = 2, #t[7] do
-					local talentID, name, texture, selected, available = GetTalentInfoByID (t[7][i] or 0)
-					if (texture) then
-						talents = talents ..  " |T" .. texture .. ":" .. 15 .. ":" .. 15 ..":0:0:64:64:4:60:4:60|t"
-					end
-				end
-
-				local spec_id, spec_name, spec_description, spec_icon, spec_background, spec_role, spec_class = GetSpecializationInfoByID (t[7][1] or 0)
-				if (spec_icon) then
-					name = "|T" .. spec_icon .. ":" .. 16 .. ":" .. 16 ..":0:0:64:64:4:60:4:60|t " .. (name or "Unknown")
-				else
-					name = name or "Unknown"
-				end
-
-				return {name, latency, item_level, repair, missing_enchants_amt, talents}
-			end)
-			frame.fill_panel:SetTotalFunction (function() return #alphabetical_players end)
-			
-			frame:SetSize (math.min (GetScreenWidth()-200, (#header*60) + 60), 450)
-			frame.fill_panel:SetSize (math.min (GetScreenWidth()-200, (#header*60) + 60), 450)
-			
-			frame.fill_panel:UpdateRows (header)
-			frame.fill_panel:Refresh()
-			
-		end
-
-	end
-	
 	frame:SetScript ("OnShow", function()
-		PlayerCheck.update_PlayerCheck()
+		PlayerCheck.update_PlayerCheck (PlayerCheck.fill_panel)
 	end)
 	
-	PlayerCheck.update_PlayerCheck()
-	
+	PlayerCheck.update_PlayerCheck (PlayerCheck.fill_panel)
 end
 
 if (can_install) then

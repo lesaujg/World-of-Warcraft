@@ -26,7 +26,11 @@ local text_color_enabled = {r=1, g=1, b=1, a=1}
 local text_color_disabled = {r=0.5, g=0.5, b=0.5, a=1}
 local rebirth_spellid = 20484
 
+if (_G ["RaidAssistBattleRes"]) then
+	return
+end
 local BattleRes = {version = "v0.1", pluginname = "BattleResMonitor"}
+_G ["RaidAssistBattleRes"] = BattleRes
 
 BattleRes.menu_text = function (plugin)
 	if (BattleRes.db.enabled) then
