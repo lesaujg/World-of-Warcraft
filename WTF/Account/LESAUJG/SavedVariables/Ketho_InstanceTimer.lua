@@ -394,6 +394,28 @@ KethoInstanceTimerDB = {
 					["zone"] = "Trial of the Champion",
 					["start"] = "21:34",
 				}, -- [9]
+				{
+					["difficulty"] = 2,
+					["party"] = {
+					},
+					["time"] = 317,
+					["end"] = "23:31",
+					["date"] = "2016.07.04",
+					["instanceType"] = "party",
+					["zone"] = "Trial of the Champion",
+					["start"] = "23:26",
+				}, -- [10]
+				{
+					["difficulty"] = 4,
+					["party"] = {
+					},
+					["time"] = 1166,
+					["end"] = "00:08",
+					["date"] = "2016.07.04",
+					["start"] = "23:49",
+					["zone"] = "Ulduar",
+					["instanceType"] = "raid",
+				}, -- [11]
 			},
 			["startTime"] = "",
 			["timeInstance"] = 0,

@@ -3,6 +3,10 @@
 local RA = RaidAssist
 local _
 
+if (_G.RaidAssistLoadDeny) then
+	return
+end
+
 local plugin_frame_backdrop = {edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true}
 local plugin_title_backdrop = {edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\DialogFrame\UI-DialogBox-Background-Dark]], tileSize = 64, tile = true}
 local plugin_frame_backdrop_color = {0, 0, 0, 0.8}

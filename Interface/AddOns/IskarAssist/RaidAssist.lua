@@ -7,6 +7,17 @@ if (not DF) then
 	return
 end
 
+local DATABASE = "RADataBase"
+
+-- já existe uma versão do raidassist instaldo.
+if (_G.RaidAssist) then
+	print ("|cFFFFAA00RaidAssist|r: Another addon is using RaidAssist namespace.")
+	_G.RaidAssistLoadDeny = true
+	return
+else
+	_G.RaidAssistLoadDeny = nil
+end
+
 local SharedMedia = LibStub:GetLibrary ("LibSharedMedia-3.0")
 SharedMedia:Register ("font", "Accidental Presidency", [[Interface\Addons\RaidAssist\fonts\Accidental Presidency.ttf]])
 SharedMedia:Register ("statusbar", "Iskar Serenity", [[Interface\Addons\RaidAssist\media\bar_serenity]])
@@ -19,6 +30,7 @@ local default_config = {
 			anchor_side = "left",
 			anchor_size = 50,
 			anchor_color = {r = 0.5, g = 0.5, b = 0.5, a = 1},
+			show_shortcuts = true,
 			
 			--when on vertical (left or right)
 			anchor_y = -100,
@@ -46,14 +58,12 @@ local options_table = {
 	}
 }
 
-local RA = DF:CreateAddOn ("RaidAssist", "RADataBase", default_config, options_table)
+local RA = DF:CreateAddOn ("RaidAssist", DATABASE, default_config, options_table)
 
 do
 	local serialize = LibStub ("AceSerializer-3.0")
 	serialize:Embed (RA)
-	
 	local LGIST = LibStub:GetLibrary("LibGroupInSpecT-1.1")
-	
 end
 
 RA.__index = RA
@@ -113,7 +123,9 @@ function RA.OnInit (self)
 	RA.db.RegisterCallback (RA, "OnProfileChanged", "ProfileChanged")
 	RA.db.RegisterCallback (RA, "OnProfileCopied", "ProfileChanged")
 	RA.db.RegisterCallback (RA, "OnProfileReset", "ProfileChanged")
-
+	
+	RA.DATABASE = _G [DATABASE]
+	
 	for _, plugin_table in ipairs (RA.schedule_install) do
 		local name, frame_name, plugin_object, default_config = unpack (plugin_table)
 		RA:InstallPlugin (name, frame_name, plugin_object, default_config)
@@ -233,6 +245,25 @@ function RA.OnInit (self)
 	end)
 	
 	RA:RefreshMainAnchor()
+	
+	RA:RefreshMacros()
+	
+end
+
+local redo_refreshmacros = function()
+	RA:RefreshMacros()
+end
+function RA:RefreshMacros()
+	if (InCombatLockdown()) then
+		return C_Timer.After (1, redo_refreshmacros)
+	end
+	if (RA.DATABASE.OptionsKeybind and RA.DATABASE.OptionsKeybind ~= "") then
+		local macro = GetMacroInfo ("RAOpenOptions")
+		if (not macro) then
+			local n = CreateMacro ("RAOpenOptions", "WoW_Store", "/raa")
+		end
+		SetBinding (RA.DATABASE.OptionsKeybind, "MACRO RAOpenOptions")
+	end
 end
 
 --

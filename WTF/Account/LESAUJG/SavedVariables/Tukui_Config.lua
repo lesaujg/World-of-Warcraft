@@ -78,14 +78,11 @@ TukuiConfigShared = {
 		},
 	},
 	["Account"] = {
-		["Bags"] = {
-			["Enable"] = false,
-		},
 		["General"] = {
 			["UIScale"] = 0.64,
 		},
-		["DataTexts"] = {
-			["LocalTime"] = false,
+		["Bags"] = {
+			["Enable"] = false,
 		},
 	},
 }

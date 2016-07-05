@@ -1,6 +1,10 @@
 
 local RA = RaidAssist
 
+if (_G.RaidAssistLoadDeny) then
+	return
+end
+
 function RA:OpenAnchorOptionsPanel()
 	if (not RaidAssistAnchorOptionsPanel) then
 		local f = RA:CreateOptionsFrame ("RaidAssistAnchorOptionsPanel", "Raid Assist Anchor Options", 1)

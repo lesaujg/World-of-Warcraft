@@ -1,5 +1,9 @@
 local RA = RaidAssist
 
+if (_G.RaidAssistLoadDeny) then
+	return
+end
+
 RA.LootList = {
 InstanceIds = {669},
 [6] = { --"Waist"
