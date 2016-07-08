@@ -42,43 +42,43 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1467851634,
+			["lastSearch"] = 1467952398,
+			["name"] = "universal",
+			["filter"] = "universal",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [1]
+		{
+			["lastSearch"] = 1467952379,
+			["name"] = "arcane c",
+			["filter"] = "arcane c",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [2]
+		{
+			["lastSearch"] = 1467946358,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [1]
+		}, -- [3]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1467688596,
 			["name"] = "insignia",
 			["filter"] = "insignia",
-		}, -- [2]
+		}, -- [4]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1467688574,
 			["name"] = "fallen",
 			["filter"] = "fallen",
-		}, -- [3]
+		}, -- [5]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1467688563,
 			["name"] = "journal",
 			["filter"] = "journal",
-		}, -- [4]
-		{
-			["lastSearch"] = 1467604528,
-			["name"] = "universal",
-			["filter"] = "universal",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [5]
-		{
-			["lastSearch"] = 1467604518,
-			["name"] = "arcane c",
-			["filter"] = "arcane c",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
 		}, -- [6]
 		{
 			["searchMode"] = "normal",

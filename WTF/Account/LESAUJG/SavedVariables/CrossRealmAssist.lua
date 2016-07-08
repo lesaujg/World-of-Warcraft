@@ -10,9 +10,9 @@ CrossRealmAssistDB = {
 	},
 	["global"] = {
 		["widgetPos"] = {
-			["y"] = 169.999938964844,
-			["x"] = -23.7876091003418,
-			["to"] = "BOTTOM",
+			["y"] = -140.560073852539,
+			["x"] = -57.3875274658203,
+			["to"] = "TOPRIGHT",
 		},
 		["quickJoinHint"] = false,
 	},
