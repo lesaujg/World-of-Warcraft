@@ -14,7 +14,7 @@ local maxdiff = 23 -- max number of instance difficulties
 local maxcol = 4 -- max columns per player+instance
 
 addon.svnrev = {}
-addon.svnrev["SavedInstances.lua"] = tonumber(("$Revision: 503 $"):match("%d+"))
+addon.svnrev["SavedInstances.lua"] = tonumber(("$Revision: 506 $"):match("%d+"))
 
 -- local (optimal) references to provided functions
 local table, math, bit, string, pairs, ipairs, unpack, strsplit, time, type, wipe, tonumber, select, strsub = 
@@ -240,6 +240,7 @@ local QuestExceptions = {
   -- some quests are misidentified in scope
   [7905]  = "Regular", -- Darkmoon Faire referral -- old addon versions misidentified this as monthly
   [7926]  = "Regular", -- Darkmoon Faire referral
+  [37819] = "Regular", -- Darkmoon Faire races referral
   [31752] = "AccountDaily", -- Blingtron
   [34774] = "AccountDaily", -- Blingtron 5000
   -- also pre-populate a few important quests
@@ -846,6 +847,7 @@ addon.transInstance = {
   [560] = 183,  -- Escape from Durnholde Keep: ticket 124 deDE
   [531] = 161,  -- AQ temple: ticket 137 frFR
   [1228] = 897, -- Highmaul: ticket 175 ruRU
+  [552] = 1011, -- Arcatraz: ticket 216 frFR
 }
 
 -- some instances (like sethekk halls) are named differently by GetSavedInstanceInfo() and LFGGetDungeonInfoByID()
@@ -1662,7 +1664,9 @@ end
 
 function addon:QuestIsDarkmoonMonthly()
   if QuestIsDaily() then return false end
-  if GetQuestID() == 7905 or GetQuestID() == 7926 then return false end -- one-time referral quest
+  local id = GetQuestID()
+  local scope = id and QuestExceptions[id]
+  if scope and scope ~= "Darkmoon" then return false end -- one-time referral quests
   for i=1,GetNumRewardCurrencies() do
     local name,texture,amount = GetQuestCurrencyInfo("reward",i)
     if texture:find("_ticket_darkmoon_") then
