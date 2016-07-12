@@ -1,6 +1,6 @@
 Version: 1
 Frame: BaudManifestDisplay1
-FrameLevel: 46
+FrameLevel: 48
 Anchor: BOTTOM
 X: -258
 Y: 129
@@ -27,3 +27,10 @@ X: 0
 Y: 128
 W: 150
 H: 42
+Frame: DBMKalFrameDrag
+FrameLevel: 102
+Anchor: CENTER
+X: 150
+Y: -50
+W: 100
+H: 20

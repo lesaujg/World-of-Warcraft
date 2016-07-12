@@ -1,7 +1,14 @@
 
 DecursiveDB = {
-	["global"] = {
-		["LastVersionAnnounce"] = 1468204511,
+	["profileKeys"] = {
+		["Orig - Sisters of Elune"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
+		["Guldahka - Turalyon"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
 	},
 	["class"] = {
 		["HUNTER"] = {
@@ -70,15 +77,20 @@ DecursiveDB = {
 				[32] = -16,
 			},
 		},
+		["DEATHKNIGHT"] = {
+			["CureOrder"] = {
+				-11, -- [1]
+				-15, -- [2]
+				nil, -- [3]
+				-12, -- [4]
+				[8] = -13,
+				[16] = -14,
+				[32] = -16,
+			},
+		},
 	},
-	["profileKeys"] = {
-		["Clothgar - Sisters of Elune"] = "Default",
-		["Galinar - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Orig - Sisters of Elune"] = "Default",
+	["global"] = {
+		["LastVersionAnnounce"] = 1468283032,
 	},
 	["profiles"] = {
 		["Default"] = {
