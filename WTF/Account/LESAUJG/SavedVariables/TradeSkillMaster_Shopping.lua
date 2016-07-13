@@ -46,116 +46,116 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1468325966,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
-			["isFavorite"] = true,
+			["lastSearch"] = 1468377379,
+			["name"] = "frostweed",
+			["filter"] = "frostweed",
 		}, -- [1]
 		{
-			["lastSearch"] = 1468288908,
-			["name"] = "hexweave bag",
-			["filter"] = "hexweave bag",
 			["searchMode"] = "normal",
-			["isFavorite"] = true,
+			["lastSearch"] = 1468377332,
+			["name"] = "blackrock ore",
+			["filter"] = "blackrock ore",
 		}, -- [2]
 		{
-			["lastSearch"] = 1468288902,
+			["lastSearch"] = 1468355857,
 			["name"] = "universal",
 			["filter"] = "universal",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [3]
 		{
-			["lastSearch"] = 1468288889,
+			["lastSearch"] = 1468355821,
 			["name"] = "arcane c",
 			["filter"] = "arcane c",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [4]
 		{
+			["lastSearch"] = 1468355794,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [5]
+		{
+			["lastSearch"] = 1468288908,
+			["name"] = "hexweave bag",
+			["filter"] = "hexweave bag",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [6]
+		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1467688596,
 			["name"] = "insignia",
 			["filter"] = "insignia",
-		}, -- [5]
+		}, -- [7]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1467688574,
 			["name"] = "fallen",
 			["filter"] = "fallen",
-		}, -- [6]
+		}, -- [8]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1467688563,
 			["name"] = "journal",
 			["filter"] = "journal",
-		}, -- [7]
+		}, -- [9]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1466709433,
 			["name"] = "rapid mind",
 			["filter"] = "rapid mind",
-		}, -- [8]
+		}, -- [10]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1466557855,
 			["name"] = "essence",
 			["filter"] = "essence",
-		}, -- [9]
+		}, -- [11]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1466557849,
 			["name"] = "essence of air",
 			["filter"] = "essence of air",
-		}, -- [10]
+		}, -- [12]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1465772753,
 			["name"] = "fur",
 			["filter"] = "fur",
-		}, -- [11]
+		}, -- [13]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1464096856,
 			["name"] = "flytrap",
 			["filter"] = "flytrap",
-		}, -- [12]
+		}, -- [14]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1463341660,
 			["name"] = "draenic dust",
 			["filter"] = "draenic dust",
-		}, -- [13]
+		}, -- [15]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1463341641,
 			["name"] = "dust",
 			["filter"] = "dust",
-		}, -- [14]
+		}, -- [16]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1461467943,
 			["name"] = "true iron ore",
 			["filter"] = "true iron ore",
-		}, -- [15]
+		}, -- [17]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1460212738,
 			["name"] = "fireweed",
 			["filter"] = "fireweed",
-		}, -- [16]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1457493614,
-			["name"] = "frostweed",
-			["filter"] = "frostweed",
-		}, -- [17]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1455461471,
-			["name"] = "blackrock ore",
-			["filter"] = "blackrock ore",
 		}, -- [18]
 		{
 			["searchMode"] = "normal",
