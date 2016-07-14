@@ -4,15 +4,17 @@ TradeSkillMaster_AuctioningDB = {
 	["g@ @roundNormalPrice"] = false,
 	["f@Alliance - Sisters of Elune@whitelist"] = {
 	},
-	["_currentProfile"] = {
-		["Orig - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Galinar - Sisters of Elune"] = "Default",
-		["Guldahka - Turalyon"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
+	["f@Alliance - Sisters of Elune@player"] = {
+		["Bracnar"] = true,
+		["Ghiaccioli"] = true,
+		["Mandelbrot"] = true,
+		["Orig"] = true,
+		["Herbinator"] = true,
+		["Galinar"] = true,
+		["Belrath"] = true,
+		["Uldaris"] = true,
+		["Sanjuri"] = true,
+		["Clothgar"] = true,
 	},
 	["_scopeKeys"] = {
 		["char"] = {
@@ -25,16 +27,16 @@ TradeSkillMaster_AuctioningDB = {
 			"Herbinator - Sisters of Elune", -- [7]
 			"Guldahka - Turalyon", -- [8]
 		},
-		["factionrealm"] = {
-			"Alliance - Sisters of Elune", -- [1]
-			"Horde - Turalyon", -- [2]
+		["realm"] = {
+			"Sisters of Elune", -- [1]
+			"Turalyon", -- [2]
 		},
 		["profile"] = {
 			"Default", -- [1]
 		},
-		["realm"] = {
-			"Sisters of Elune", -- [1]
-			"Turalyon", -- [2]
+		["factionrealm"] = {
+			"Alliance - Sisters of Elune", -- [1]
+			"Horde - Turalyon", -- [2]
 		},
 	},
 	["f@Horde - Turalyon@player"] = {
@@ -42,26 +44,24 @@ TradeSkillMaster_AuctioningDB = {
 	},
 	["f@Horde - Turalyon@whitelist"] = {
 	},
-	["g@ @helpPlatesShown"] = {
-		["selection"] = true,
-	},
-	["g@ @cancelWithBid"] = false,
+	["g@ @priceColumn"] = 1,
+	["g@ @scanCompleteSound"] = "TSM_NO_SOUND",
 	["_hash"] = 5870975,
 	["g@ @matchWhitelist"] = true,
 	["g@ @disableInvalidMsg"] = false,
-	["g@ @scanCompleteSound"] = "TSM_NO_SOUND",
-	["g@ @priceColumn"] = 1,
+	["g@ @cancelWithBid"] = false,
+	["g@ @helpPlatesShown"] = {
+		["selection"] = true,
+	},
 	["_version"] = 1,
-	["f@Alliance - Sisters of Elune@player"] = {
-		["Bracnar"] = true,
-		["Ghiaccioli"] = true,
-		["Mandelbrot"] = true,
-		["Orig"] = true,
-		["Herbinator"] = true,
-		["Galinar"] = true,
-		["Belrath"] = true,
-		["Clothgar"] = true,
-		["Sanjuri"] = true,
-		["Uldaris"] = true,
+	["_currentProfile"] = {
+		["Uldaris - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
+		["Guldahka - Turalyon"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Orig - Sisters of Elune"] = "Default",
 	},
 }

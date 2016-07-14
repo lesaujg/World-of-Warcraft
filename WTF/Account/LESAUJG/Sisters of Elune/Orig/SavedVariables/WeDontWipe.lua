@@ -11,7 +11,7 @@ WeDontWipeDB = {
 		["showCooldowns"] = 1,
 		["greet"] = 1,
 		["showCharges"] = 1,
-		["positionLocked"] = 0,
+		["iconPosX"] = -184.000595092773,
 		["showRangeText"] = 1,
 		["showDispelOff"] = 1,
 		["showInterrupt"] = 1,
@@ -19,7 +19,7 @@ WeDontWipeDB = {
 		["excludeCDs"] = {
 		},
 		["iconRelP"] = "BOTTOM",
-		["version"] = 4,
+		["missingBuffs"] = 1,
 		["showMainQueue"] = 1,
 		["showCDs"] = {
 			121817, -- [1]
@@ -36,9 +36,9 @@ WeDontWipeDB = {
 		},
 		["queueLength"] = 4,
 		["cooldownCountdown"] = 10,
-		["missingBuffs"] = 1,
-		["iconPosX"] = -184.000595092773,
 		["fixedGCD"] = 1.5,
+		["positionLocked"] = 0,
+		["version"] = 4,
 		["showClassType"] = 1,
 		["alwaysRangeAndClass"] = 1,
 		["rotation"] = {
