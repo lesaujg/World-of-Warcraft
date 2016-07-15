@@ -22,18 +22,18 @@ SkadaPerCharDB = {
 						["uptime"] = 4,
 						["auratype"] = "DEBUFF",
 					},
-					["Brain Freeze"] = {
-						["name"] = "Brain Freeze",
+					["Chilled"] = {
+						["name"] = "Chilled",
 						["active"] = 0,
-						["id"] = 57761,
-						["uptime"] = 22,
-						["auratype"] = "BUFF",
+						["id"] = 7321,
+						["uptime"] = 5,
+						["auratype"] = "DEBUFF",
 					},
-					["Ice Floes"] = {
-						["name"] = "Ice Floes",
+					["Icy Veins"] = {
+						["name"] = "Icy Veins",
 						["active"] = 0,
-						["id"] = 108839,
-						["uptime"] = 4,
+						["id"] = 12472,
+						["uptime"] = 20,
 						["auratype"] = "BUFF",
 					},
 					["Frostbolt"] = {
@@ -57,12 +57,12 @@ SkadaPerCharDB = {
 						["uptime"] = 16,
 						["auratype"] = "DEBUFF",
 					},
-					["Chilled"] = {
-						["name"] = "Chilled",
+					["Brain Freeze"] = {
+						["name"] = "Brain Freeze",
 						["active"] = 0,
-						["id"] = 7321,
-						["uptime"] = 5,
-						["auratype"] = "DEBUFF",
+						["id"] = 57761,
+						["uptime"] = 22,
+						["auratype"] = "BUFF",
 					},
 					["Now is the time!"] = {
 						["name"] = "Now is the time!",
@@ -106,11 +106,11 @@ SkadaPerCharDB = {
 						["uptime"] = 257,
 						["auratype"] = "BUFF",
 					},
-					["Icy Veins"] = {
-						["name"] = "Icy Veins",
+					["Ice Floes"] = {
+						["name"] = "Ice Floes",
 						["active"] = 0,
-						["id"] = 12472,
-						["uptime"] = 20,
+						["id"] = 108839,
+						["uptime"] = 4,
 						["auratype"] = "BUFF",
 					},
 				},
@@ -120,7 +120,8 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["shielding"] = 13219,
+				["deathlog"] = {
+				},
 				["damage"] = 919130,
 				["damagespells"] = {
 					["Ice Nova"] = {
@@ -219,97 +220,97 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 29,
-								["srcname"] = "Ushnark-Sargeras",
 								["spellid"] = 143924,
+								["srcname"] = "Ushnark-Sargeras",
 								["hp"] = 3128,
 								["ts"] = 1466696360.29101,
 							}, -- [1]
 							{
 								["absorb"] = 0,
 								["amount"] = 81,
-								["srcname"] = "Ushnark-Sargeras",
 								["spellid"] = 143924,
+								["srcname"] = "Ushnark-Sargeras",
 								["hp"] = 3209,
 								["ts"] = 1466696361.49902,
 							}, -- [2]
 							{
 								["absorb"] = 0,
 								["amount"] = 148,
-								["srcname"] = "Ushnark-Sargeras",
 								["spellid"] = 143924,
+								["srcname"] = "Ushnark-Sargeras",
 								["hp"] = 3357,
 								["ts"] = 1466696362.70703,
 							}, -- [3]
 							{
 								["ts"] = 1466696363.92204,
 								["amount"] = 210,
-								["srcname"] = "Ushnark-Sargeras",
 								["spellid"] = 143924,
+								["srcname"] = "Ushnark-Sargeras",
 								["hp"] = 3567,
 								["absorb"] = 0,
 							}, -- [4]
 							{
 								["absorb"] = 0,
 								["amount"] = 178,
-								["srcname"] = "Ushnark-Sargeras",
 								["spellid"] = 143924,
+								["srcname"] = "Ushnark-Sargeras",
 								["hp"] = 3745,
 								["ts"] = 1466696365.13805,
 							}, -- [5]
 							{
 								["absorb"] = 0,
 								["amount"] = 760,
-								["srcname"] = "Ushnark-Sargeras",
 								["spellid"] = 143924,
+								["srcname"] = "Ushnark-Sargeras",
 								["hp"] = 4505,
 								["ts"] = 1466696366.34006,
 							}, -- [6]
 							{
 								["absorb"] = 0,
 								["amount"] = 72,
-								["srcname"] = "Ushnark-Sargeras",
 								["spellid"] = 143924,
+								["srcname"] = "Ushnark-Sargeras",
 								["hp"] = 4577,
 								["ts"] = 1466696367.56307,
 							}, -- [7]
 							{
 								["absorb"] = 0,
 								["amount"] = 80,
-								["srcname"] = "Ushnark-Sargeras",
 								["spellid"] = 143924,
+								["srcname"] = "Ushnark-Sargeras",
 								["hp"] = 4657,
 								["ts"] = 1466696369.18608,
 							}, -- [8]
 							{
 								["absorb"] = 0,
 								["amount"] = 86,
-								["srcname"] = "Ushnark-Sargeras",
 								["spellid"] = 143924,
+								["srcname"] = "Ushnark-Sargeras",
 								["hp"] = 4743,
 								["ts"] = 1466696371.20209,
 							}, -- [9]
 							{
 								["absorb"] = 0,
 								["amount"] = 192,
-								["srcname"] = "Ushnark-Sargeras",
 								["spellid"] = 143924,
+								["srcname"] = "Ushnark-Sargeras",
 								["hp"] = 4935,
 								["ts"] = 1466696372.8371,
 							}, -- [10]
 							{
 								["absorb"] = 0,
 								["amount"] = 106,
-								["srcname"] = "Ushnark-Sargeras",
 								["spellid"] = 143924,
+								["srcname"] = "Ushnark-Sargeras",
 								["hp"] = 5041,
 								["ts"] = 1466696374.02911,
 							}, -- [11]
 							{
 								["ts"] = 1466696374.24612,
 								["amount"] = -5214,
-								["hp"] = 1,
 								["spellid"] = 89105,
 								["srcname"] = "Lurking Tempest",
+								["hp"] = 1,
 							}, -- [12]
 							{
 								["spellname"] = "Ushnark dies",
@@ -320,15 +321,15 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1466696357.13614,
 								["amount"] = -4346,
-								["hp"] = 3032,
 								["spellid"] = 89105,
 								["srcname"] = "Lurking Tempest",
+								["hp"] = 3032,
 							}, -- [14]
 							{
 								["absorb"] = 0,
 								["amount"] = 67,
-								["srcname"] = "Ushnark-Sargeras",
 								["spellid"] = 143924,
+								["srcname"] = "Ushnark-Sargeras",
 								["hp"] = 3099,
 								["ts"] = 1466696359.07815,
 							}, -- [15]
@@ -338,7 +339,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 110750,
-				["deathlog"] = {
+				["power"] = {
 				},
 				["id"] = "Player-76-05ED4BEA",
 				["maxhp"] = 37889,
@@ -350,13 +351,13 @@ SkadaPerCharDB = {
 						["damage"] = 5211,
 						["max"] = 2606,
 						["name"] = "Typhoon",
-						["min"] = 2605,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 2,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2605,
 						["absorbed"] = 0,
 					},
 					["Storm's Edge"] = {
@@ -365,13 +366,13 @@ SkadaPerCharDB = {
 						["damage"] = 77851,
 						["max"] = 3313,
 						["name"] = "Storm's Edge",
-						["min"] = 1857,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 26,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1857,
 						["absorbed"] = 1882,
 					},
 					["Attack"] = {
@@ -380,13 +381,13 @@ SkadaPerCharDB = {
 						["damage"] = 4522,
 						["max"] = 4522,
 						["name"] = "Attack",
-						["min"] = 4522,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 4522,
 						["absorbed"] = 0,
 					},
 					["Lightning Bolt"] = {
@@ -395,13 +396,13 @@ SkadaPerCharDB = {
 						["damage"] = 16799,
 						["max"] = 5214,
 						["name"] = "Lightning Bolt",
-						["min"] = 3419,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 4,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 3419,
 						["absorbed"] = 0,
 					},
 					["Cyclone Shield"] = {
@@ -410,13 +411,13 @@ SkadaPerCharDB = {
 						["damage"] = 6367,
 						["max"] = 6367,
 						["name"] = "Cyclone Shield",
-						["min"] = 6367,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 6367,
 						["absorbed"] = 52,
 					},
 				},
@@ -432,8 +433,7 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Ushnark",
 				["alertCount"] = 0,
-				["power"] = {
-				},
+				["shielding"] = 13219,
 				["healingspells"] = {
 					["Ice Barrier"] = {
 						["shielding"] = 13219,
@@ -600,11 +600,11 @@ SkadaPerCharDB = {
 						["uptime"] = 2,
 						["auratype"] = "DEBUFF",
 					},
-					["Last Stand"] = {
-						["name"] = "Last Stand",
+					["Spell Reflection"] = {
+						["name"] = "Spell Reflection",
 						["active"] = 0,
-						["id"] = 12975,
-						["uptime"] = 15,
+						["id"] = 23920,
+						["uptime"] = 2,
 						["auratype"] = "BUFF",
 					},
 					["Charge"] = {
@@ -614,11 +614,11 @@ SkadaPerCharDB = {
 						["uptime"] = 11,
 						["auratype"] = "BUFF",
 					},
-					["Spell Reflection"] = {
-						["name"] = "Spell Reflection",
+					["Last Stand"] = {
+						["name"] = "Last Stand",
 						["active"] = 0,
-						["id"] = 23920,
-						["uptime"] = 2,
+						["id"] = 12975,
+						["uptime"] = 15,
 						["auratype"] = "BUFF",
 					},
 					["Enraged Regeneration"] = {
@@ -663,7 +663,8 @@ SkadaPerCharDB = {
 				["interrupts"] = 1,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["shielding"] = 48790,
+				["deathlog"] = {
+				},
 				["damage"] = 1032147,
 				["damagespells"] = {
 					["Shield Slam"] = {
@@ -778,52 +779,52 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1466696378.65101,
 								["amount"] = -1296,
-								["hp"] = 8721,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 8721,
 							}, -- [1]
 							{
 								["ts"] = 1466696379.64402,
 								["amount"] = -2261,
-								["hp"] = 6460,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 6460,
 							}, -- [2]
 							{
 								["ts"] = 1466696380.27503,
 								["amount"] = -2002,
-								["hp"] = 4458,
 								["spellid"] = 89105,
 								["srcname"] = "Lurking Tempest",
+								["hp"] = 4458,
 							}, -- [3]
 							{
 								["absorb"] = 0,
 								["amount"] = 4789,
-								["srcname"] = "Branon-Kael'thas",
 								["spellid"] = 55694,
+								["srcname"] = "Branon-Kael'thas",
 								["hp"] = 9247,
 								["ts"] = 1466696380.46704,
 							}, -- [4]
 							{
 								["ts"] = 1466696380.66105,
 								["amount"] = -2197,
-								["hp"] = 7050,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 7050,
 							}, -- [5]
 							{
 								["ts"] = 1466696380.68106,
 								["amount"] = -3828,
-								["hp"] = 3222,
 								["spellid"] = 86331,
 								["srcname"] = "Grand Vizier Ertan",
+								["hp"] = 3222,
 							}, -- [6]
 							{
 								["ts"] = 1466696381.03307,
 								["amount"] = -4179,
-								["hp"] = 1,
 								["spellid"] = 89105,
 								["srcname"] = "Lurking Tempest",
+								["hp"] = 1,
 							}, -- [7]
 							{
 								["spellname"] = "Branon dies",
@@ -834,53 +835,53 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 479,
-								["srcname"] = "Branon-Kael'thas",
 								["spellid"] = 159363,
+								["srcname"] = "Branon-Kael'thas",
 								["hp"] = 20945,
 								["ts"] = 1466696368.45509,
 							}, -- [9]
 							{
 								["absorb"] = 0,
 								["amount"] = 479,
-								["srcname"] = "Branon-Kael'thas",
 								["spellid"] = 159363,
+								["srcname"] = "Branon-Kael'thas",
 								["hp"] = 21424,
 								["ts"] = 1466696369.4441,
 							}, -- [10]
 							{
 								["ts"] = 1466696370.39911,
 								["amount"] = -3603,
-								["hp"] = 17821,
 								["spellid"] = 86331,
 								["srcname"] = "Grand Vizier Ertan",
+								["hp"] = 17821,
 							}, -- [11]
 							{
 								["ts"] = 1466696372.83612,
 								["amount"] = -2240,
-								["hp"] = 15581,
 								["spellid"] = 86331,
 								["srcname"] = "Grand Vizier Ertan",
+								["hp"] = 15581,
 							}, -- [12]
 							{
 								["ts"] = 1466696376.29413,
 								["amount"] = -2347,
-								["hp"] = 13234,
 								["spellid"] = 89105,
 								["srcname"] = "Lurking Tempest",
+								["hp"] = 13234,
 							}, -- [13]
 							{
 								["ts"] = 1466696377.61814,
 								["amount"] = -1928,
-								["hp"] = 11306,
 								["spellid"] = 86331,
 								["srcname"] = "Grand Vizier Ertan",
+								["hp"] = 11306,
 							}, -- [14]
 							{
 								["ts"] = 1466696377.66315,
 								["amount"] = -1289,
-								["hp"] = 10017,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 10017,
 							}, -- [15]
 							["pos"] = 9,
 						},
@@ -896,104 +897,104 @@ SkadaPerCharDB = {
 								["spellid"] = 41220,
 							}, -- [1]
 							{
-								["hp"] = 0,
-								["ts"] = 1466696298.435,
 								["spellid"] = 20484,
+								["ts"] = 1466696298.435,
 								["srcname"] = "Uldaris",
+								["hp"] = 0,
 							}, -- [2]
 							{
 								["ts"] = 1466696284.92703,
 								["amount"] = -2313,
-								["hp"] = 30420,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 30420,
 							}, -- [3]
 							{
 								["ts"] = 1466696285.10904,
 								["amount"] = -5749,
-								["hp"] = 24671,
 								["spellid"] = 86292,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 24671,
 							}, -- [4]
 							{
 								["ts"] = 1466696285.50505,
 								["amount"] = -2886,
-								["hp"] = 21785,
 								["spellid"] = 86331,
 								["srcname"] = "Grand Vizier Ertan",
+								["hp"] = 21785,
 							}, -- [5]
 							{
 								["ts"] = 1466696285.92306,
 								["amount"] = -2449,
-								["hp"] = 19336,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 19336,
 							}, -- [6]
 							{
 								["absorb"] = 0,
 								["amount"] = 939,
-								["srcname"] = "Uldaris",
 								["spellid"] = 81269,
+								["srcname"] = "Uldaris",
 								["hp"] = 20275,
 								["ts"] = 1466696285.95007,
 							}, -- [7]
 							{
 								["absorb"] = 0,
 								["amount"] = 903,
-								["srcname"] = "Uldaris",
 								["spellid"] = 155777,
+								["srcname"] = "Uldaris",
 								["hp"] = 21178,
 								["ts"] = 1466696286.00608,
 							}, -- [8]
 							{
 								["ts"] = 1466696286.11809,
 								["amount"] = -5288,
-								["hp"] = 15890,
 								["spellid"] = 86292,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 15890,
 							}, -- [9]
 							{
 								["ts"] = 1466696286.9271,
 								["amount"] = -2565,
-								["hp"] = 13325,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 13325,
 							}, -- [10]
 							{
 								["ts"] = 1466696287.11411,
 								["amount"] = -5576,
-								["hp"] = 7749,
 								["spellid"] = 86292,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 7749,
 							}, -- [11]
 							{
 								["ts"] = 1466696287.69912,
 								["amount"] = 939,
-								["srcname"] = "Uldaris",
 								["spellid"] = 81269,
+								["srcname"] = "Uldaris",
 								["hp"] = 8688,
 								["absorb"] = 0,
 							}, -- [12]
 							{
 								["ts"] = 1466696287.93713,
 								["amount"] = -2491,
-								["hp"] = 6197,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 6197,
 							}, -- [13]
 							{
 								["ts"] = 1466696287.96714,
 								["amount"] = -3355,
-								["hp"] = 2842,
 								["spellid"] = 86331,
 								["srcname"] = "Grand Vizier Ertan",
+								["hp"] = 2842,
 							}, -- [14]
 							{
 								["ts"] = 1466696288.12115,
 								["amount"] = -5538,
-								["hp"] = 1,
 								["spellid"] = 86292,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 1,
 							}, -- [15]
 							["pos"] = 3,
 						},
@@ -1001,7 +1002,16 @@ SkadaPerCharDB = {
 					}, -- [2]
 				},
 				["damagetaken"] = 529375,
-				["deathlog"] = {
+				["power"] = {
+					{
+						["spells"] = {
+							[109128] = 40,
+							[23922] = 820,
+							[12880] = 230,
+							[6572] = 600,
+						},
+						["amount"] = 1690,
+					}, -- [1]
 				},
 				["id"] = "Player-1069-091F0214",
 				["maxhp"] = 46321,
@@ -1013,13 +1023,13 @@ SkadaPerCharDB = {
 						["damage"] = 4752,
 						["max"] = 4752,
 						["name"] = "Gale Strike",
-						["min"] = 4752,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 7129,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 4752,
 						["absorbed"] = 0,
 					},
 					["Starfall"] = {
@@ -1028,13 +1038,13 @@ SkadaPerCharDB = {
 						["damage"] = 23767,
 						["max"] = 2762,
 						["name"] = "Starfall",
-						["min"] = 2531,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 9,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2531,
 						["absorbed"] = 0,
 					},
 					["Lightning Bolt"] = {
@@ -1043,13 +1053,13 @@ SkadaPerCharDB = {
 						["damage"] = 211097,
 						["max"] = 4179,
 						["name"] = "Lightning Bolt",
-						["min"] = 105,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 86,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 105,
 						["absorbed"] = 7345,
 					},
 					["Cyclone Shield"] = {
@@ -1058,13 +1068,13 @@ SkadaPerCharDB = {
 						["damage"] = 33123,
 						["max"] = 5749,
 						["name"] = "Cyclone Shield",
-						["min"] = 5288,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 6,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 5288,
 						["absorbed"] = 0,
 					},
 					["Typhoon"] = {
@@ -1073,13 +1083,13 @@ SkadaPerCharDB = {
 						["damage"] = 15402,
 						["max"] = 2201,
 						["name"] = "Typhoon",
-						["min"] = 2200,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 7,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2200,
 						["absorbed"] = 0,
 					},
 					["Storm's Edge"] = {
@@ -1088,13 +1098,13 @@ SkadaPerCharDB = {
 						["damage"] = 45507,
 						["max"] = 2565,
 						["name"] = "Storm's Edge",
-						["min"] = 1289,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 20,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1289,
 						["absorbed"] = 0,
 					},
 					["Air Nova"] = {
@@ -1103,13 +1113,13 @@ SkadaPerCharDB = {
 						["damage"] = 33291,
 						["max"] = 5814,
 						["name"] = "Air Nova",
-						["min"] = 5361,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 6,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 5361,
 						["absorbed"] = 0,
 					},
 					["Wind Blast"] = {
@@ -1118,13 +1128,13 @@ SkadaPerCharDB = {
 						["damage"] = 29814,
 						["max"] = 2889,
 						["name"] = "Wind Blast",
-						["min"] = 2356,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 11,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2356,
 						["absorbed"] = 0,
 					},
 					["Attack"] = {
@@ -1133,13 +1143,13 @@ SkadaPerCharDB = {
 						["damage"] = 132622,
 						["max"] = 4217,
 						["name"] = "Attack",
-						["min"] = 41,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 43729,
 						["totalhits"] = 82,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 41,
 						["absorbed"] = 1791,
 					},
 				},
@@ -1155,17 +1165,7 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Branon",
 				["alertCount"] = 0,
-				["power"] = {
-					{
-						["spells"] = {
-							[109128] = 40,
-							[23922] = 820,
-							[12880] = 230,
-							[6572] = 600,
-						},
-						["amount"] = 1690,
-					}, -- [1]
-				},
+				["shielding"] = 48790,
 				["healingspells"] = {
 					["Blood Craze"] = {
 						["shielding"] = 0,
@@ -1297,7 +1297,8 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["shielding"] = 0,
+				["deathlog"] = {
+				},
 				["damage"] = 630191,
 				["damagespells"] = {
 					["Steady Shot"] = {
@@ -1381,106 +1382,106 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1466696269.90102,
 								["amount"] = -3281,
-								["hp"] = 14427,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 14427,
 							}, -- [2]
 							{
 								["absorb"] = 0,
 								["amount"] = 949,
-								["srcname"] = "Uldaris",
 								["spellid"] = 774,
+								["srcname"] = "Uldaris",
 								["hp"] = 15376,
 								["ts"] = 1466696270.03203,
 							}, -- [3]
 							{
 								["absorb"] = 0,
 								["amount"] = 614,
-								["srcname"] = "Uldaris",
 								["spellid"] = 48438,
+								["srcname"] = "Uldaris",
 								["hp"] = 15990,
 								["ts"] = 1466696270.48704,
 							}, -- [4]
 							{
 								["absorb"] = 0,
 								["amount"] = 6292,
-								["srcname"] = "Uldaris",
 								["spellid"] = 5185,
+								["srcname"] = "Uldaris",
 								["hp"] = 22282,
 								["ts"] = 1466696270.82905,
 							}, -- [5]
 							{
 								["ts"] = 1466696270.90606,
 								["amount"] = -3327,
-								["hp"] = 18955,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 18955,
 							}, -- [6]
 							{
 								["ts"] = 1466696271.89007,
 								["amount"] = -3347,
-								["hp"] = 15608,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 15608,
 							}, -- [7]
 							{
 								["absorb"] = 0,
 								["amount"] = 949,
-								["srcname"] = "Uldaris",
 								["spellid"] = 774,
+								["srcname"] = "Uldaris",
 								["hp"] = 16557,
 								["ts"] = 1466696272.38808,
 							}, -- [8]
 							{
 								["ts"] = 1466696272.89709,
 								["amount"] = -3355,
-								["hp"] = 13202,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 13202,
 							}, -- [9]
 							{
 								["ts"] = 1466696273.1141,
 								["amount"] = -7405,
-								["hp"] = 5797,
 								["spellid"] = 86292,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 5797,
 							}, -- [10]
 							{
 								["absorb"] = 0,
 								["amount"] = 6289,
-								["srcname"] = "Uldaris",
 								["spellid"] = 5185,
+								["srcname"] = "Uldaris",
 								["hp"] = 12086,
 								["ts"] = 1466696273.30311,
 							}, -- [11]
 							{
 								["ts"] = 1466696273.89412,
 								["amount"] = -2961,
-								["hp"] = 9125,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 9125,
 							}, -- [12]
 							{
 								["ts"] = 1466696274.11913,
 								["amount"] = -7132,
-								["hp"] = 1993,
 								["spellid"] = 86292,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 1993,
 							}, -- [13]
 							{
 								["absorb"] = 0,
 								["amount"] = 949,
-								["srcname"] = "Uldaris",
 								["spellid"] = 774,
+								["srcname"] = "Uldaris",
 								["hp"] = 2942,
 								["ts"] = 1466696274.72814,
 							}, -- [14]
 							{
 								["ts"] = 1466696274.91015,
 								["amount"] = -2972,
-								["hp"] = 1,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 1,
 							}, -- [15]
 							["pos"] = 2,
 						},
@@ -1488,7 +1489,13 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 93157,
-				["deathlog"] = {
+				["power"] = {
+					[2] = {
+						["spells"] = {
+							[77443] = 98,
+						},
+						["amount"] = 98,
+					},
 				},
 				["id"] = "Player-1071-0918CE89",
 				["maxhp"] = 37673,
@@ -1500,13 +1507,13 @@ SkadaPerCharDB = {
 						["damage"] = 5868,
 						["max"] = 2934,
 						["name"] = "Typhoon",
-						["min"] = 2934,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 2,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2934,
 						["absorbed"] = 0,
 					},
 					["Storm's Edge"] = {
@@ -1515,13 +1522,13 @@ SkadaPerCharDB = {
 						["damage"] = 56287,
 						["max"] = 3355,
 						["name"] = "Storm's Edge",
-						["min"] = 2870,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 18,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2870,
 						["absorbed"] = 0,
 					},
 					["Attack"] = {
@@ -1530,13 +1537,13 @@ SkadaPerCharDB = {
 						["damage"] = 670,
 						["max"] = 188,
 						["name"] = "Attack",
-						["min"] = 149,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 4,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 149,
 						["absorbed"] = 0,
 					},
 					["Lightning Bolt"] = {
@@ -1545,13 +1552,13 @@ SkadaPerCharDB = {
 						["damage"] = 15795,
 						["max"] = 5412,
 						["name"] = "Lightning Bolt",
-						["min"] = 5042,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 3,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 5042,
 						["absorbed"] = 0,
 					},
 					["Cyclone Shield"] = {
@@ -1560,13 +1567,13 @@ SkadaPerCharDB = {
 						["damage"] = 14537,
 						["max"] = 7405,
 						["name"] = "Cyclone Shield",
-						["min"] = 7132,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 2,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 7132,
 						["absorbed"] = 0,
 					},
 				},
@@ -1588,14 +1595,7 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Rhonwynn",
 				["alertCount"] = 0,
-				["power"] = {
-					[2] = {
-						["spells"] = {
-							[77443] = 98,
-						},
-						["amount"] = 98,
-					},
-				},
+				["shielding"] = 0,
 				["healingspells"] = {
 					["Paladin Protector: Leech"] = {
 						["shielding"] = 0,
@@ -1776,7 +1776,8 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["shielding"] = 0,
+				["deathlog"] = {
+				},
 				["damage"] = 848855,
 				["damagespells"] = {
 					["Exorcism"] = {
@@ -1859,16 +1860,6 @@ SkadaPerCharDB = {
 						["max"] = 2989,
 						["damage"] = 69852,
 					},
-					["Crusader Strike"] = {
-						["min"] = 1283,
-						["multistrike"] = 6,
-						["critical"] = 4,
-						["hit"] = 23,
-						["totalhits"] = 27,
-						["id"] = 35395,
-						["max"] = 3517,
-						["damage"] = 49716,
-					},
 					["Hand of Light"] = {
 						["min"] = 74,
 						["hit"] = 176,
@@ -1885,6 +1876,16 @@ SkadaPerCharDB = {
 						["id"] = 85256,
 						["max"] = 6768,
 						["damage"] = 48217,
+					},
+					["Crusader Strike"] = {
+						["min"] = 1283,
+						["multistrike"] = 6,
+						["critical"] = 4,
+						["hit"] = 23,
+						["totalhits"] = 27,
+						["id"] = 35395,
+						["max"] = 3517,
+						["damage"] = 49716,
 					},
 					["Seal of Truth"] = {
 						["min"] = 201,
@@ -1904,68 +1905,68 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1466696318.50601,
 								["amount"] = -2714,
-								["hp"] = 11376,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 11376,
 							}, -- [1]
 							{
 								["absorb"] = 0,
 								["amount"] = 4660,
-								["srcname"] = "Zeraen-CenarionCircle",
 								["spellid"] = 19750,
+								["srcname"] = "Zeraen-CenarionCircle",
 								["hp"] = 16036,
 								["ts"] = 1466696318.78802,
 							}, -- [2]
 							{
 								["ts"] = 1466696319.49503,
 								["amount"] = -2627,
-								["hp"] = 13409,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 13409,
 							}, -- [3]
 							{
 								["ts"] = 1466696322.10604,
 								["amount"] = -6775,
-								["hp"] = 6634,
 								["spellid"] = 86292,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 6634,
 							}, -- [4]
 							{
 								["ts"] = 1466696326.09105,
 								["amount"] = 1581,
-								["srcname"] = "Zeraen-CenarionCircle",
 								["spellid"] = 115515,
+								["srcname"] = "Zeraen-CenarionCircle",
 								["hp"] = 8215,
 								["absorb"] = 0,
 							}, -- [5]
 							{
 								["absorb"] = 0,
 								["amount"] = 5077,
-								["srcname"] = "Zeraen-CenarionCircle",
 								["spellid"] = 19750,
+								["srcname"] = "Zeraen-CenarionCircle",
 								["hp"] = 13292,
 								["ts"] = 1466696342.46006,
 							}, -- [6]
 							{
 								["ts"] = 1466696346.08507,
 								["amount"] = -2729,
-								["hp"] = 10563,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 10563,
 							}, -- [7]
 							{
 								["ts"] = 1466696346.10908,
 								["amount"] = -6929,
-								["hp"] = 3634,
 								["spellid"] = 86292,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 3634,
 							}, -- [8]
 							{
 								["ts"] = 1466696346.13009,
 								["amount"] = -7179,
-								["hp"] = 1,
 								["spellid"] = 86292,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 1,
 							}, -- [9]
 							{
 								["spellname"] = "Zeraen dies",
@@ -1976,38 +1977,38 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 704,
-								["srcname"] = "Zeraen-CenarionCircle",
 								["spellid"] = 119952,
+								["srcname"] = "Zeraen-CenarionCircle",
 								["hp"] = 25225,
 								["ts"] = 1466696314.41011,
 							}, -- [11]
 							{
 								["ts"] = 1466696314.50612,
 								["amount"] = -2805,
-								["hp"] = 22420,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 22420,
 							}, -- [12]
 							{
 								["ts"] = 1466696315.50913,
 								["amount"] = -2926,
-								["hp"] = 19494,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 19494,
 							}, -- [13]
 							{
 								["ts"] = 1466696316.49314,
 								["amount"] = -2879,
-								["hp"] = 16615,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 16615,
 							}, -- [14]
 							{
 								["ts"] = 1466696317.50215,
 								["amount"] = -2525,
-								["hp"] = 14090,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 14090,
 							}, -- [15]
 							["pos"] = 11,
 						},
@@ -2015,7 +2016,17 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 236642,
-				["deathlog"] = {
+				["power"] = {
+					[9] = {
+						["spells"] = {
+							[141459] = 25,
+							[35395] = 27,
+							[53595] = 9,
+							[147715] = 15,
+							[111528] = 27,
+						},
+						["amount"] = 103,
+					},
 				},
 				["id"] = "Player-1169-073A4900",
 				["maxhp"] = 39511,
@@ -2027,13 +2038,13 @@ SkadaPerCharDB = {
 						["damage"] = 32279,
 						["max"] = 3655,
 						["name"] = "Starfall",
-						["min"] = 2993,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 10,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2993,
 						["absorbed"] = 0,
 					},
 					["Air Nova"] = {
@@ -2042,13 +2053,13 @@ SkadaPerCharDB = {
 						["damage"] = 42441,
 						["max"] = 7770,
 						["name"] = "Air Nova",
-						["min"] = 6607,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 6,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 6607,
 						["absorbed"] = 0,
 					},
 					["Cyclone Shield"] = {
@@ -2057,13 +2068,13 @@ SkadaPerCharDB = {
 						["damage"] = 41093,
 						["max"] = 7179,
 						["name"] = "Cyclone Shield",
-						["min"] = 6422,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 6,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 6422,
 						["absorbed"] = 0,
 					},
 					["Typhoon"] = {
@@ -2072,13 +2083,13 @@ SkadaPerCharDB = {
 						["damage"] = 15932,
 						["max"] = 2920,
 						["name"] = "Typhoon",
-						["min"] = 2500,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 6,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2500,
 						["absorbed"] = 0,
 					},
 					["Storm's Edge"] = {
@@ -2087,13 +2098,13 @@ SkadaPerCharDB = {
 						["damage"] = 46024,
 						["max"] = 3372,
 						["name"] = "Storm's Edge",
-						["min"] = 2525,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 16,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2525,
 						["absorbed"] = 0,
 					},
 					["Wind Shock"] = {
@@ -2102,13 +2113,13 @@ SkadaPerCharDB = {
 						["damage"] = 4565,
 						["max"] = 1591,
 						["name"] = "Wind Shock",
-						["min"] = 1408,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 3,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1408,
 						["absorbed"] = 0,
 					},
 					["Wind Blast"] = {
@@ -2117,13 +2128,13 @@ SkadaPerCharDB = {
 						["damage"] = 9942,
 						["max"] = 3636,
 						["name"] = "Wind Blast",
-						["min"] = 3115,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 3,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 3115,
 						["absorbed"] = 0,
 					},
 					["Lightning Bolt"] = {
@@ -2132,13 +2143,13 @@ SkadaPerCharDB = {
 						["damage"] = 34901,
 						["max"] = 4772,
 						["name"] = "Lightning Bolt",
-						["min"] = 3452,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 9,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 3452,
 						["absorbed"] = 0,
 					},
 					["Attack"] = {
@@ -2147,13 +2158,13 @@ SkadaPerCharDB = {
 						["damage"] = 9465,
 						["max"] = 6381,
 						["name"] = "Attack",
-						["min"] = 161,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 1,
 						["blocked"] = 0,
 						["totalhits"] = 3,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 161,
 						["absorbed"] = 0,
 					},
 				},
@@ -2176,18 +2187,7 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Zeraen",
 				["alertCount"] = 0,
-				["power"] = {
-					[9] = {
-						["spells"] = {
-							[141459] = 25,
-							[35395] = 27,
-							[53595] = 9,
-							[147715] = 15,
-							[111528] = 27,
-						},
-						["amount"] = 103,
-					},
-				},
+				["shielding"] = 0,
 				["healingspells"] = {
 					["Flash of Light"] = {
 						["shielding"] = 0,
@@ -2347,7 +2347,8 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 2,
 				["ccbreaks"] = 0,
-				["shielding"] = 0,
+				["deathlog"] = {
+				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
@@ -2358,53 +2359,53 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 1533,
-								["srcname"] = "Uldaris",
 								["spellid"] = 145109,
+								["srcname"] = "Uldaris",
 								["hp"] = 14190,
 								["ts"] = 1466696320.62101,
 							}, -- [1]
 							{
 								["ts"] = 1466696321.52702,
 								["amount"] = -3240,
-								["hp"] = 10950,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 10950,
 							}, -- [2]
 							{
 								["ts"] = 1466696322.53603,
 								["amount"] = -3353,
-								["hp"] = 7597,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 7597,
 							}, -- [3]
 							{
 								["absorb"] = 0,
 								["amount"] = 904,
-								["srcname"] = "Uldaris",
 								["spellid"] = 774,
+								["srcname"] = "Uldaris",
 								["hp"] = 8501,
 								["ts"] = 1466696323.08104,
 							}, -- [4]
 							{
 								["ts"] = 1466696323.51905,
 								["amount"] = -3171,
-								["hp"] = 5330,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 5330,
 							}, -- [5]
 							{
 								["ts"] = 1466696324.50406,
 								["amount"] = -3129,
-								["hp"] = 2201,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 2201,
 							}, -- [6]
 							{
 								["ts"] = 1466696325.55107,
 								["amount"] = -2887,
-								["hp"] = 1,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 1,
 							}, -- [7]
 							{
 								["spellname"] = "Uldaris dies",
@@ -2415,53 +2416,53 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 1533,
-								["srcname"] = "Uldaris",
 								["spellid"] = 145109,
+								["srcname"] = "Uldaris",
 								["hp"] = 27316,
 								["ts"] = 1466696315.58609,
 							}, -- [9]
 							{
 								["ts"] = 1466696316.5281,
 								["amount"] = -3237,
-								["hp"] = 24079,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 24079,
 							}, -- [10]
 							{
 								["ts"] = 1466696317.50211,
 								["amount"] = -2905,
-								["hp"] = 21174,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 21174,
 							}, -- [11]
 							{
 								["absorb"] = 0,
 								["amount"] = 752,
-								["srcname"] = "Uldaris",
 								["spellid"] = 774,
+								["srcname"] = "Uldaris",
 								["hp"] = 21926,
 								["ts"] = 1466696317.77212,
 							}, -- [12]
 							{
 								["ts"] = 1466696318.50513,
 								["amount"] = -3263,
-								["hp"] = 18663,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 18663,
 							}, -- [13]
 							{
 								["ts"] = 1466696319.49414,
 								["amount"] = -3099,
-								["hp"] = 15564,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 15564,
 							}, -- [14]
 							{
 								["ts"] = 1466696320.50215,
 								["amount"] = -2907,
-								["hp"] = 12657,
 								["spellid"] = 86309,
 								["srcname"] = "Ertan's Vortex",
+								["hp"] = 12657,
 							}, -- [15]
 							["pos"] = 9,
 						},
@@ -2469,7 +2470,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 102524,
-				["deathlog"] = {
+				["power"] = {
 				},
 				["id"] = "Player-1169-06A1AD17",
 				["maxhp"] = 38321,
@@ -2481,13 +2482,13 @@ SkadaPerCharDB = {
 						["damage"] = 8665,
 						["max"] = 2889,
 						["name"] = "Typhoon",
-						["min"] = 2888,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 3,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2888,
 						["absorbed"] = 0,
 					},
 					["Storm's Edge"] = {
@@ -2496,13 +2497,13 @@ SkadaPerCharDB = {
 						["damage"] = 65432,
 						["max"] = 3371,
 						["name"] = "Storm's Edge",
-						["min"] = 2887,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 21,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2887,
 						["absorbed"] = 0,
 					},
 					["Wind Shock"] = {
@@ -2511,13 +2512,13 @@ SkadaPerCharDB = {
 						["damage"] = 2586,
 						["max"] = 1340,
 						["name"] = "Wind Shock",
-						["min"] = 1246,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 2,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1246,
 						["absorbed"] = 0,
 					},
 					["Wind Blast"] = {
@@ -2526,13 +2527,13 @@ SkadaPerCharDB = {
 						["damage"] = 11177,
 						["max"] = 3797,
 						["name"] = "Wind Blast",
-						["min"] = 3599,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 3,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 3599,
 						["absorbed"] = 0,
 					},
 					["Cyclone Shield"] = {
@@ -2541,13 +2542,13 @@ SkadaPerCharDB = {
 						["damage"] = 14664,
 						["max"] = 7348,
 						["name"] = "Cyclone Shield",
-						["min"] = 7316,
+						["glancing"] = 0,
 						["multistrike"] = 0,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 2,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 7316,
 						["absorbed"] = 0,
 					},
 				},
@@ -2604,8 +2605,7 @@ SkadaPerCharDB = {
 				["alertDamage"] = 14664,
 				["name"] = "Uldaris",
 				["alertCount"] = 5,
-				["power"] = {
-				},
+				["shielding"] = 0,
 				["healingspells"] = {
 					["Lifebloom"] = {
 						["shielding"] = 0,
@@ -2802,10 +2802,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 720874,
+				["done"] = 129481,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 129481,
 			},
 			["Ertan's Vortex"] = {
 				["players"] = {
@@ -2844,10 +2844,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 400885,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 400885,
 			},
 			["Gust Soldier"] = {
 				["players"] = {
@@ -2886,10 +2886,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 702749,
+				["done"] = 198844,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 198844,
 			},
 			["Whipping Wind"] = {
 				["players"] = {
@@ -2922,10 +2922,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 180095,
+				["done"] = 14559,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 14559,
 			},
 			["Lurking Tempest"] = {
 				["players"] = {
@@ -2958,10 +2958,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 106434,
+				["done"] = 33883,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 33883,
 			},
 			["Cloud Prince"] = {
 				["players"] = {
@@ -3000,10 +3000,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 706859,
+				["done"] = 165625,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 165625,
 			},
 			["Grand Vizier Ertan"] = {
 				["players"] = {
@@ -3030,10 +3030,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 842567,
+				["done"] = 110677,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 110677,
 			},
 			["Armored Mistral"] = {
 				["players"] = {
@@ -3066,10 +3066,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 170745,
+				["done"] = 18494,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 18494,
 			},
 		},
 		["power"] = {
@@ -3100,7 +3100,7 @@ SkadaPerCharDB = {
 			["interrupts"] = 0,
 			["multistrikes"] = 89,
 			["damagetaken"] = 677401,
-			["gotboss"] = true,
+			["mobtaken"] = 1554541,
 			["damage"] = 1554541,
 			["players"] = {
 				{
@@ -3332,7 +3332,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["dispells"] = 0,
-					["maxhp"] = 46321,
+					["first"] = 1466696196,
 					["damage"] = 448231,
 					["damagespells"] = {
 						["Shield Slam"] = {
@@ -3446,52 +3446,52 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1466696378.65101,
 									["amount"] = -1296,
-									["hp"] = 8721,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 8721,
 								}, -- [1]
 								{
 									["ts"] = 1466696379.64402,
 									["amount"] = -2261,
-									["hp"] = 6460,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 6460,
 								}, -- [2]
 								{
 									["ts"] = 1466696380.27503,
 									["amount"] = -2002,
-									["hp"] = 4458,
 									["spellid"] = 89105,
 									["srcname"] = "Lurking Tempest",
+									["hp"] = 4458,
 								}, -- [3]
 								{
 									["absorb"] = 0,
 									["amount"] = 4789,
-									["srcname"] = "Branon-Kael'thas",
 									["spellid"] = 55694,
+									["srcname"] = "Branon-Kael'thas",
 									["hp"] = 9247,
 									["ts"] = 1466696380.46704,
 								}, -- [4]
 								{
 									["ts"] = 1466696380.66105,
 									["amount"] = -2197,
-									["hp"] = 7050,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 7050,
 								}, -- [5]
 								{
 									["ts"] = 1466696380.68106,
 									["amount"] = -3828,
-									["hp"] = 3222,
 									["spellid"] = 86331,
 									["srcname"] = "Grand Vizier Ertan",
+									["hp"] = 3222,
 								}, -- [6]
 								{
 									["ts"] = 1466696381.03307,
 									["amount"] = -4179,
-									["hp"] = 1,
 									["spellid"] = 89105,
 									["srcname"] = "Lurking Tempest",
+									["hp"] = 1,
 								}, -- [7]
 								{
 									["spellname"] = "Branon dies",
@@ -3502,53 +3502,53 @@ SkadaPerCharDB = {
 								{
 									["absorb"] = 0,
 									["amount"] = 479,
-									["srcname"] = "Branon-Kael'thas",
 									["spellid"] = 159363,
+									["srcname"] = "Branon-Kael'thas",
 									["hp"] = 20945,
 									["ts"] = 1466696368.45509,
 								}, -- [9]
 								{
 									["absorb"] = 0,
 									["amount"] = 479,
-									["srcname"] = "Branon-Kael'thas",
 									["spellid"] = 159363,
+									["srcname"] = "Branon-Kael'thas",
 									["hp"] = 21424,
 									["ts"] = 1466696369.4441,
 								}, -- [10]
 								{
 									["ts"] = 1466696370.39911,
 									["amount"] = -3603,
-									["hp"] = 17821,
 									["spellid"] = 86331,
 									["srcname"] = "Grand Vizier Ertan",
+									["hp"] = 17821,
 								}, -- [11]
 								{
 									["ts"] = 1466696372.83612,
 									["amount"] = -2240,
-									["hp"] = 15581,
 									["spellid"] = 86331,
 									["srcname"] = "Grand Vizier Ertan",
+									["hp"] = 15581,
 								}, -- [12]
 								{
 									["ts"] = 1466696376.29413,
 									["amount"] = -2347,
-									["hp"] = 13234,
 									["spellid"] = 89105,
 									["srcname"] = "Lurking Tempest",
+									["hp"] = 13234,
 								}, -- [13]
 								{
 									["ts"] = 1466696377.61814,
 									["amount"] = -1928,
-									["hp"] = 11306,
 									["spellid"] = 86331,
 									["srcname"] = "Grand Vizier Ertan",
+									["hp"] = 11306,
 								}, -- [14]
 								{
 									["ts"] = 1466696377.66315,
 									["amount"] = -1289,
-									["hp"] = 10017,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 10017,
 								}, -- [15]
 								["pos"] = 9,
 							},
@@ -3564,104 +3564,104 @@ SkadaPerCharDB = {
 									["spellid"] = 41220,
 								}, -- [1]
 								{
-									["hp"] = 0,
-									["ts"] = 1466696298.435,
 									["spellid"] = 20484,
+									["ts"] = 1466696298.435,
 									["srcname"] = "Uldaris",
+									["hp"] = 0,
 								}, -- [2]
 								{
 									["ts"] = 1466696284.92703,
 									["amount"] = -2313,
-									["hp"] = 30420,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 30420,
 								}, -- [3]
 								{
 									["ts"] = 1466696285.10904,
 									["amount"] = -5749,
-									["hp"] = 24671,
 									["spellid"] = 86292,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 24671,
 								}, -- [4]
 								{
 									["ts"] = 1466696285.50505,
 									["amount"] = -2886,
-									["hp"] = 21785,
 									["spellid"] = 86331,
 									["srcname"] = "Grand Vizier Ertan",
+									["hp"] = 21785,
 								}, -- [5]
 								{
 									["ts"] = 1466696285.92306,
 									["amount"] = -2449,
-									["hp"] = 19336,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 19336,
 								}, -- [6]
 								{
 									["absorb"] = 0,
 									["amount"] = 939,
-									["srcname"] = "Uldaris",
 									["spellid"] = 81269,
+									["srcname"] = "Uldaris",
 									["hp"] = 20275,
 									["ts"] = 1466696285.95007,
 								}, -- [7]
 								{
 									["absorb"] = 0,
 									["amount"] = 903,
-									["srcname"] = "Uldaris",
 									["spellid"] = 155777,
+									["srcname"] = "Uldaris",
 									["hp"] = 21178,
 									["ts"] = 1466696286.00608,
 								}, -- [8]
 								{
 									["ts"] = 1466696286.11809,
 									["amount"] = -5288,
-									["hp"] = 15890,
 									["spellid"] = 86292,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 15890,
 								}, -- [9]
 								{
 									["ts"] = 1466696286.9271,
 									["amount"] = -2565,
-									["hp"] = 13325,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 13325,
 								}, -- [10]
 								{
 									["ts"] = 1466696287.11411,
 									["amount"] = -5576,
-									["hp"] = 7749,
 									["spellid"] = 86292,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 7749,
 								}, -- [11]
 								{
 									["ts"] = 1466696287.69912,
 									["amount"] = 939,
-									["srcname"] = "Uldaris",
 									["spellid"] = 81269,
+									["srcname"] = "Uldaris",
 									["hp"] = 8688,
 									["absorb"] = 0,
 								}, -- [12]
 								{
 									["ts"] = 1466696287.93713,
 									["amount"] = -2491,
-									["hp"] = 6197,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 6197,
 								}, -- [13]
 								{
 									["ts"] = 1466696287.96714,
 									["amount"] = -3355,
-									["hp"] = 2842,
 									["spellid"] = 86331,
 									["srcname"] = "Grand Vizier Ertan",
+									["hp"] = 2842,
 								}, -- [14]
 								{
 									["ts"] = 1466696288.12115,
 									["amount"] = -5538,
-									["hp"] = 1,
 									["spellid"] = 86292,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 1,
 								}, -- [15]
 								["pos"] = 3,
 							},
@@ -3669,19 +3669,9 @@ SkadaPerCharDB = {
 						}, -- [2]
 					},
 					["damagetaken"] = 249158,
-					["power"] = {
-						{
-							["spells"] = {
-								[109128] = 20,
-								[6572] = 300,
-								[12880] = 140,
-								[23922] = 490,
-							},
-							["amount"] = 950,
-						}, -- [1]
-					},
+					["shielding"] = 45568,
 					["id"] = "Player-1069-091F0214",
-					["first"] = 1466696196,
+					["maxhp"] = 46321,
 					["healing"] = 69482,
 					["damagetakenspells"] = {
 						["Typhoon"] = {
@@ -3690,13 +3680,13 @@ SkadaPerCharDB = {
 							["damage"] = 11002,
 							["max"] = 2201,
 							["name"] = "Typhoon",
-							["min"] = 2200,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 5,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2200,
 							["absorbed"] = 0,
 						},
 						["Storm's Edge"] = {
@@ -3705,13 +3695,13 @@ SkadaPerCharDB = {
 							["damage"] = 45507,
 							["max"] = 2565,
 							["name"] = "Storm's Edge",
-							["min"] = 1289,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 20,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1289,
 							["absorbed"] = 0,
 						},
 						["Starfall"] = {
@@ -3720,13 +3710,13 @@ SkadaPerCharDB = {
 							["damage"] = 23767,
 							["max"] = 2762,
 							["name"] = "Starfall",
-							["min"] = 2531,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 9,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2531,
 							["absorbed"] = 0,
 						},
 						["Attack"] = {
@@ -3735,13 +3725,13 @@ SkadaPerCharDB = {
 							["damage"] = 40408,
 							["max"] = 4211,
 							["name"] = "Attack",
-							["min"] = 41,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 20026,
 							["totalhits"] = 21,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 41,
 							["absorbed"] = 1791,
 						},
 						["Lightning Bolt"] = {
@@ -3750,13 +3740,13 @@ SkadaPerCharDB = {
 							["damage"] = 95351,
 							["max"] = 4179,
 							["name"] = "Lightning Bolt",
-							["min"] = 105,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 39,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 105,
 							["absorbed"] = 6994,
 						},
 						["Cyclone Shield"] = {
@@ -3765,13 +3755,13 @@ SkadaPerCharDB = {
 							["damage"] = 33123,
 							["max"] = 5749,
 							["name"] = "Cyclone Shield",
-							["min"] = 5288,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 6,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 5288,
 							["absorbed"] = 0,
 						},
 					},
@@ -3787,7 +3777,17 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Branon",
 					["alertCount"] = 0,
-					["shielding"] = 45568,
+					["power"] = {
+						{
+							["spells"] = {
+								[109128] = 20,
+								[6572] = 300,
+								[12880] = 140,
+								[23922] = 490,
+							},
+							["amount"] = 950,
+						}, -- [1]
+					},
 					["overhealing"] = 43443.4375,
 					["alert"] = {
 					},
@@ -4004,7 +4004,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["dispells"] = 0,
-					["maxhp"] = 38321,
+					["first"] = 1466696196,
 					["damage"] = 0,
 					["damagespells"] = {
 					},
@@ -4015,53 +4015,53 @@ SkadaPerCharDB = {
 								{
 									["absorb"] = 0,
 									["amount"] = 1533,
-									["srcname"] = "Uldaris",
 									["spellid"] = 145109,
+									["srcname"] = "Uldaris",
 									["hp"] = 14190,
 									["ts"] = 1466696320.62101,
 								}, -- [1]
 								{
 									["ts"] = 1466696321.52702,
 									["amount"] = -3240,
-									["hp"] = 10950,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 10950,
 								}, -- [2]
 								{
 									["ts"] = 1466696322.53603,
 									["amount"] = -3353,
-									["hp"] = 7597,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 7597,
 								}, -- [3]
 								{
 									["absorb"] = 0,
 									["amount"] = 904,
-									["srcname"] = "Uldaris",
 									["spellid"] = 774,
+									["srcname"] = "Uldaris",
 									["hp"] = 8501,
 									["ts"] = 1466696323.08104,
 								}, -- [4]
 								{
 									["ts"] = 1466696323.51905,
 									["amount"] = -3171,
-									["hp"] = 5330,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 5330,
 								}, -- [5]
 								{
 									["ts"] = 1466696324.50406,
 									["amount"] = -3129,
-									["hp"] = 2201,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 2201,
 								}, -- [6]
 								{
 									["ts"] = 1466696325.55107,
 									["amount"] = -2887,
-									["hp"] = 1,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 1,
 								}, -- [7]
 								{
 									["spellname"] = "Uldaris dies",
@@ -4072,53 +4072,53 @@ SkadaPerCharDB = {
 								{
 									["absorb"] = 0,
 									["amount"] = 1533,
-									["srcname"] = "Uldaris",
 									["spellid"] = 145109,
+									["srcname"] = "Uldaris",
 									["hp"] = 27316,
 									["ts"] = 1466696315.58609,
 								}, -- [9]
 								{
 									["ts"] = 1466696316.5281,
 									["amount"] = -3237,
-									["hp"] = 24079,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 24079,
 								}, -- [10]
 								{
 									["ts"] = 1466696317.50211,
 									["amount"] = -2905,
-									["hp"] = 21174,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 21174,
 								}, -- [11]
 								{
 									["absorb"] = 0,
 									["amount"] = 752,
-									["srcname"] = "Uldaris",
 									["spellid"] = 774,
+									["srcname"] = "Uldaris",
 									["hp"] = 21926,
 									["ts"] = 1466696317.77212,
 								}, -- [12]
 								{
 									["ts"] = 1466696318.50513,
 									["amount"] = -3263,
-									["hp"] = 18663,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 18663,
 								}, -- [13]
 								{
 									["ts"] = 1466696319.49414,
 									["amount"] = -3099,
-									["hp"] = 15564,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 15564,
 								}, -- [14]
 								{
 									["ts"] = 1466696320.50215,
 									["amount"] = -2907,
-									["hp"] = 12657,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 12657,
 								}, -- [15]
 								["pos"] = 9,
 							},
@@ -4126,10 +4126,9 @@ SkadaPerCharDB = {
 						}, -- [1]
 					},
 					["damagetaken"] = 85872,
-					["power"] = {
-					},
+					["shielding"] = 0,
 					["id"] = "Player-1169-06A1AD17",
-					["first"] = 1466696196,
+					["maxhp"] = 38321,
 					["healing"] = 320448,
 					["damagetakenspells"] = {
 						["Typhoon"] = {
@@ -4138,13 +4137,13 @@ SkadaPerCharDB = {
 							["damage"] = 5776,
 							["max"] = 2888,
 							["name"] = "Typhoon",
-							["min"] = 2888,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2888,
 							["absorbed"] = 0,
 						},
 						["Storm's Edge"] = {
@@ -4153,13 +4152,13 @@ SkadaPerCharDB = {
 							["damage"] = 65432,
 							["max"] = 3371,
 							["name"] = "Storm's Edge",
-							["min"] = 2887,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 21,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2887,
 							["absorbed"] = 0,
 						},
 						["Cyclone Shield"] = {
@@ -4168,13 +4167,13 @@ SkadaPerCharDB = {
 							["damage"] = 14664,
 							["max"] = 7348,
 							["name"] = "Cyclone Shield",
-							["min"] = 7316,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 7316,
 							["absorbed"] = 0,
 						},
 					},
@@ -4231,7 +4230,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 14664,
 					["name"] = "Uldaris",
 					["alertCount"] = 4,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["overhealing"] = 208026,
 					["alert"] = {
 						["Fail"] = {
@@ -4398,7 +4398,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["dispells"] = 0,
-					["maxhp"] = 37889,
+					["first"] = 1466696196,
 					["damage"] = 545252,
 					["damagespells"] = {
 						["Ice Nova"] = {
@@ -4497,97 +4497,97 @@ SkadaPerCharDB = {
 								{
 									["absorb"] = 0,
 									["amount"] = 29,
-									["srcname"] = "Ushnark-Sargeras",
 									["spellid"] = 143924,
+									["srcname"] = "Ushnark-Sargeras",
 									["hp"] = 3128,
 									["ts"] = 1466696360.29101,
 								}, -- [1]
 								{
 									["absorb"] = 0,
 									["amount"] = 81,
-									["srcname"] = "Ushnark-Sargeras",
 									["spellid"] = 143924,
+									["srcname"] = "Ushnark-Sargeras",
 									["hp"] = 3209,
 									["ts"] = 1466696361.49902,
 								}, -- [2]
 								{
 									["absorb"] = 0,
 									["amount"] = 148,
-									["srcname"] = "Ushnark-Sargeras",
 									["spellid"] = 143924,
+									["srcname"] = "Ushnark-Sargeras",
 									["hp"] = 3357,
 									["ts"] = 1466696362.70703,
 								}, -- [3]
 								{
 									["ts"] = 1466696363.92204,
 									["amount"] = 210,
-									["srcname"] = "Ushnark-Sargeras",
 									["spellid"] = 143924,
+									["srcname"] = "Ushnark-Sargeras",
 									["hp"] = 3567,
 									["absorb"] = 0,
 								}, -- [4]
 								{
 									["absorb"] = 0,
 									["amount"] = 178,
-									["srcname"] = "Ushnark-Sargeras",
 									["spellid"] = 143924,
+									["srcname"] = "Ushnark-Sargeras",
 									["hp"] = 3745,
 									["ts"] = 1466696365.13805,
 								}, -- [5]
 								{
 									["absorb"] = 0,
 									["amount"] = 760,
-									["srcname"] = "Ushnark-Sargeras",
 									["spellid"] = 143924,
+									["srcname"] = "Ushnark-Sargeras",
 									["hp"] = 4505,
 									["ts"] = 1466696366.34006,
 								}, -- [6]
 								{
 									["absorb"] = 0,
 									["amount"] = 72,
-									["srcname"] = "Ushnark-Sargeras",
 									["spellid"] = 143924,
+									["srcname"] = "Ushnark-Sargeras",
 									["hp"] = 4577,
 									["ts"] = 1466696367.56307,
 								}, -- [7]
 								{
 									["absorb"] = 0,
 									["amount"] = 80,
-									["srcname"] = "Ushnark-Sargeras",
 									["spellid"] = 143924,
+									["srcname"] = "Ushnark-Sargeras",
 									["hp"] = 4657,
 									["ts"] = 1466696369.18608,
 								}, -- [8]
 								{
 									["absorb"] = 0,
 									["amount"] = 86,
-									["srcname"] = "Ushnark-Sargeras",
 									["spellid"] = 143924,
+									["srcname"] = "Ushnark-Sargeras",
 									["hp"] = 4743,
 									["ts"] = 1466696371.20209,
 								}, -- [9]
 								{
 									["absorb"] = 0,
 									["amount"] = 192,
-									["srcname"] = "Ushnark-Sargeras",
 									["spellid"] = 143924,
+									["srcname"] = "Ushnark-Sargeras",
 									["hp"] = 4935,
 									["ts"] = 1466696372.8371,
 								}, -- [10]
 								{
 									["absorb"] = 0,
 									["amount"] = 106,
-									["srcname"] = "Ushnark-Sargeras",
 									["spellid"] = 143924,
+									["srcname"] = "Ushnark-Sargeras",
 									["hp"] = 5041,
 									["ts"] = 1466696374.02911,
 								}, -- [11]
 								{
 									["ts"] = 1466696374.24612,
 									["amount"] = -5214,
-									["hp"] = 1,
 									["spellid"] = 89105,
 									["srcname"] = "Lurking Tempest",
+									["hp"] = 1,
 								}, -- [12]
 								{
 									["spellname"] = "Ushnark dies",
@@ -4598,15 +4598,15 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1466696357.13614,
 									["amount"] = -4346,
-									["hp"] = 3032,
 									["spellid"] = 89105,
 									["srcname"] = "Lurking Tempest",
+									["hp"] = 3032,
 								}, -- [14]
 								{
 									["absorb"] = 0,
 									["amount"] = 67,
-									["srcname"] = "Ushnark-Sargeras",
 									["spellid"] = 143924,
+									["srcname"] = "Ushnark-Sargeras",
 									["hp"] = 3099,
 									["ts"] = 1466696359.07815,
 								}, -- [15]
@@ -4616,10 +4616,9 @@ SkadaPerCharDB = {
 						}, -- [1]
 					},
 					["damagetaken"] = 96384,
-					["power"] = {
-					},
+					["shielding"] = 13219,
 					["id"] = "Player-76-05ED4BEA",
-					["first"] = 1466696196,
+					["maxhp"] = 37889,
 					["healing"] = 32128,
 					["damagetakenspells"] = {
 						["Typhoon"] = {
@@ -4628,13 +4627,13 @@ SkadaPerCharDB = {
 							["damage"] = 2606,
 							["max"] = 2606,
 							["name"] = "Typhoon",
-							["min"] = 2606,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2606,
 							["absorbed"] = 0,
 						},
 						["Storm's Edge"] = {
@@ -4643,13 +4642,13 @@ SkadaPerCharDB = {
 							["damage"] = 77851,
 							["max"] = 3313,
 							["name"] = "Storm's Edge",
-							["min"] = 1857,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 26,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1857,
 							["absorbed"] = 1882,
 						},
 						["Lightning Bolt"] = {
@@ -4658,13 +4657,13 @@ SkadaPerCharDB = {
 							["damage"] = 9560,
 							["max"] = 5214,
 							["name"] = "Lightning Bolt",
-							["min"] = 4346,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 4346,
 							["absorbed"] = 0,
 						},
 						["Cyclone Shield"] = {
@@ -4673,13 +4672,13 @@ SkadaPerCharDB = {
 							["damage"] = 6367,
 							["max"] = 6367,
 							["name"] = "Cyclone Shield",
-							["min"] = 6367,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 6367,
 							["absorbed"] = 52,
 						},
 					},
@@ -4695,7 +4694,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Ushnark",
 					["alertCount"] = 0,
-					["shielding"] = 13219,
+					["power"] = {
+					},
 					["overhealing"] = 7074,
 					["alert"] = {
 					},
@@ -4874,7 +4874,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["dispells"] = 0,
-					["maxhp"] = 39511,
+					["first"] = 1466696196,
 					["damage"] = 415625,
 					["damagespells"] = {
 						["Exorcism"] = {
@@ -4953,15 +4953,6 @@ SkadaPerCharDB = {
 							["max"] = 2989,
 							["damage"] = 39856,
 						},
-						["Templar's Verdict"] = {
-							["min"] = 2601,
-							["critical"] = 1,
-							["hit"] = 9,
-							["totalhits"] = 10,
-							["id"] = 85256,
-							["max"] = 5269,
-							["damage"] = 32419,
-						},
 						["Hand of Light"] = {
 							["min"] = 74,
 							["hit"] = 74,
@@ -4979,6 +4970,15 @@ SkadaPerCharDB = {
 							["id"] = 35395,
 							["max"] = 2999,
 							["damage"] = 33153,
+						},
+						["Templar's Verdict"] = {
+							["min"] = 2601,
+							["critical"] = 1,
+							["hit"] = 9,
+							["totalhits"] = 10,
+							["id"] = 85256,
+							["max"] = 5269,
+							["damage"] = 32419,
 						},
 						["Seal of Truth"] = {
 							["min"] = 201,
@@ -4998,68 +4998,68 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1466696318.50601,
 									["amount"] = -2714,
-									["hp"] = 11376,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 11376,
 								}, -- [1]
 								{
 									["absorb"] = 0,
 									["amount"] = 4660,
-									["srcname"] = "Zeraen-CenarionCircle",
 									["spellid"] = 19750,
+									["srcname"] = "Zeraen-CenarionCircle",
 									["hp"] = 16036,
 									["ts"] = 1466696318.78802,
 								}, -- [2]
 								{
 									["ts"] = 1466696319.49503,
 									["amount"] = -2627,
-									["hp"] = 13409,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 13409,
 								}, -- [3]
 								{
 									["ts"] = 1466696322.10604,
 									["amount"] = -6775,
-									["hp"] = 6634,
 									["spellid"] = 86292,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 6634,
 								}, -- [4]
 								{
 									["ts"] = 1466696326.09105,
 									["amount"] = 1581,
-									["srcname"] = "Zeraen-CenarionCircle",
 									["spellid"] = 115515,
+									["srcname"] = "Zeraen-CenarionCircle",
 									["hp"] = 8215,
 									["absorb"] = 0,
 								}, -- [5]
 								{
 									["absorb"] = 0,
 									["amount"] = 5077,
-									["srcname"] = "Zeraen-CenarionCircle",
 									["spellid"] = 19750,
+									["srcname"] = "Zeraen-CenarionCircle",
 									["hp"] = 13292,
 									["ts"] = 1466696342.46006,
 								}, -- [6]
 								{
 									["ts"] = 1466696346.08507,
 									["amount"] = -2729,
-									["hp"] = 10563,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 10563,
 								}, -- [7]
 								{
 									["ts"] = 1466696346.10908,
 									["amount"] = -6929,
-									["hp"] = 3634,
 									["spellid"] = 86292,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 3634,
 								}, -- [8]
 								{
 									["ts"] = 1466696346.13009,
 									["amount"] = -7179,
-									["hp"] = 1,
 									["spellid"] = 86292,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 1,
 								}, -- [9]
 								{
 									["spellname"] = "Zeraen dies",
@@ -5070,38 +5070,38 @@ SkadaPerCharDB = {
 								{
 									["absorb"] = 0,
 									["amount"] = 704,
-									["srcname"] = "Zeraen-CenarionCircle",
 									["spellid"] = 119952,
+									["srcname"] = "Zeraen-CenarionCircle",
 									["hp"] = 25225,
 									["ts"] = 1466696314.41011,
 								}, -- [11]
 								{
 									["ts"] = 1466696314.50612,
 									["amount"] = -2805,
-									["hp"] = 22420,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 22420,
 								}, -- [12]
 								{
 									["ts"] = 1466696315.50913,
 									["amount"] = -2926,
-									["hp"] = 19494,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 19494,
 								}, -- [13]
 								{
 									["ts"] = 1466696316.49314,
 									["amount"] = -2879,
-									["hp"] = 16615,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 16615,
 								}, -- [14]
 								{
 									["ts"] = 1466696317.50215,
 									["amount"] = -2525,
-									["hp"] = 14090,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 14090,
 								}, -- [15]
 								["pos"] = 11,
 							},
@@ -5109,20 +5109,9 @@ SkadaPerCharDB = {
 						}, -- [1]
 					},
 					["damagetaken"] = 158242,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[141459] = 14,
-								[53595] = 2,
-								[111528] = 15,
-								[147715] = 7,
-								[35395] = 18,
-							},
-							["amount"] = 56,
-						},
-					},
+					["shielding"] = 0,
 					["id"] = "Player-1169-073A4900",
-					["first"] = 1466696196,
+					["maxhp"] = 39511,
 					["healing"] = 57083,
 					["damagetakenspells"] = {
 						["Typhoon"] = {
@@ -5131,13 +5120,13 @@ SkadaPerCharDB = {
 							["damage"] = 10804,
 							["max"] = 2920,
 							["name"] = "Typhoon",
-							["min"] = 2628,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 4,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2628,
 							["absorbed"] = 0,
 						},
 						["Storm's Edge"] = {
@@ -5146,13 +5135,13 @@ SkadaPerCharDB = {
 							["damage"] = 46024,
 							["max"] = 3372,
 							["name"] = "Storm's Edge",
-							["min"] = 2525,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 16,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2525,
 							["absorbed"] = 0,
 						},
 						["Starfall"] = {
@@ -5161,13 +5150,13 @@ SkadaPerCharDB = {
 							["damage"] = 29286,
 							["max"] = 3655,
 							["name"] = "Starfall",
-							["min"] = 3022,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 9,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 3022,
 							["absorbed"] = 0,
 						},
 						["Attack"] = {
@@ -5176,13 +5165,13 @@ SkadaPerCharDB = {
 							["damage"] = 161,
 							["max"] = 161,
 							["name"] = "Attack",
-							["min"] = 161,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 161,
 							["absorbed"] = 0,
 						},
 						["Lightning Bolt"] = {
@@ -5191,13 +5180,13 @@ SkadaPerCharDB = {
 							["damage"] = 30874,
 							["max"] = 4772,
 							["name"] = "Lightning Bolt",
-							["min"] = 3452,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 8,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 3452,
 							["absorbed"] = 0,
 						},
 						["Cyclone Shield"] = {
@@ -5206,13 +5195,13 @@ SkadaPerCharDB = {
 							["damage"] = 41093,
 							["max"] = 7179,
 							["name"] = "Cyclone Shield",
-							["min"] = 6422,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 6,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 6422,
 							["absorbed"] = 0,
 						},
 					},
@@ -5235,7 +5224,18 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Zeraen",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[141459] = 14,
+								[53595] = 2,
+								[111528] = 15,
+								[147715] = 7,
+								[35395] = 18,
+							},
+							["amount"] = 56,
+						},
+					},
 					["overhealing"] = 11200,
 					["alert"] = {
 					},
@@ -5371,7 +5371,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ccbreaks"] = 0,
 					["dispells"] = 0,
-					["maxhp"] = 37673,
+					["first"] = 1466696197,
 					["damage"] = 145433,
 					["damagespells"] = {
 						["Steady Shot"] = {
@@ -5443,106 +5443,106 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1466696269.90102,
 									["amount"] = -3281,
-									["hp"] = 14427,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 14427,
 								}, -- [2]
 								{
 									["absorb"] = 0,
 									["amount"] = 949,
-									["srcname"] = "Uldaris",
 									["spellid"] = 774,
+									["srcname"] = "Uldaris",
 									["hp"] = 15376,
 									["ts"] = 1466696270.03203,
 								}, -- [3]
 								{
 									["absorb"] = 0,
 									["amount"] = 614,
-									["srcname"] = "Uldaris",
 									["spellid"] = 48438,
+									["srcname"] = "Uldaris",
 									["hp"] = 15990,
 									["ts"] = 1466696270.48704,
 								}, -- [4]
 								{
 									["absorb"] = 0,
 									["amount"] = 6292,
-									["srcname"] = "Uldaris",
 									["spellid"] = 5185,
+									["srcname"] = "Uldaris",
 									["hp"] = 22282,
 									["ts"] = 1466696270.82905,
 								}, -- [5]
 								{
 									["ts"] = 1466696270.90606,
 									["amount"] = -3327,
-									["hp"] = 18955,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 18955,
 								}, -- [6]
 								{
 									["ts"] = 1466696271.89007,
 									["amount"] = -3347,
-									["hp"] = 15608,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 15608,
 								}, -- [7]
 								{
 									["absorb"] = 0,
 									["amount"] = 949,
-									["srcname"] = "Uldaris",
 									["spellid"] = 774,
+									["srcname"] = "Uldaris",
 									["hp"] = 16557,
 									["ts"] = 1466696272.38808,
 								}, -- [8]
 								{
 									["ts"] = 1466696272.89709,
 									["amount"] = -3355,
-									["hp"] = 13202,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 13202,
 								}, -- [9]
 								{
 									["ts"] = 1466696273.1141,
 									["amount"] = -7405,
-									["hp"] = 5797,
 									["spellid"] = 86292,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 5797,
 								}, -- [10]
 								{
 									["absorb"] = 0,
 									["amount"] = 6289,
-									["srcname"] = "Uldaris",
 									["spellid"] = 5185,
+									["srcname"] = "Uldaris",
 									["hp"] = 12086,
 									["ts"] = 1466696273.30311,
 								}, -- [11]
 								{
 									["ts"] = 1466696273.89412,
 									["amount"] = -2961,
-									["hp"] = 9125,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 9125,
 								}, -- [12]
 								{
 									["ts"] = 1466696274.11913,
 									["amount"] = -7132,
-									["hp"] = 1993,
 									["spellid"] = 86292,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 1993,
 								}, -- [13]
 								{
 									["absorb"] = 0,
 									["amount"] = 949,
-									["srcname"] = "Uldaris",
 									["spellid"] = 774,
+									["srcname"] = "Uldaris",
 									["hp"] = 2942,
 									["ts"] = 1466696274.72814,
 								}, -- [14]
 								{
 									["ts"] = 1466696274.91015,
 									["amount"] = -2972,
-									["hp"] = 1,
 									["spellid"] = 86309,
 									["srcname"] = "Ertan's Vortex",
+									["hp"] = 1,
 								}, -- [15]
 								["pos"] = 2,
 							},
@@ -5550,16 +5550,9 @@ SkadaPerCharDB = {
 						}, -- [1]
 					},
 					["damagetaken"] = 87745,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[77443] = 42,
-							},
-							["amount"] = 42,
-						},
-					},
+					["shielding"] = 0,
 					["id"] = "Player-1071-0918CE89",
-					["first"] = 1466696197,
+					["maxhp"] = 37673,
 					["healing"] = 11614,
 					["damagetakenspells"] = {
 						["Typhoon"] = {
@@ -5568,13 +5561,13 @@ SkadaPerCharDB = {
 							["damage"] = 5868,
 							["max"] = 2934,
 							["name"] = "Typhoon",
-							["min"] = 2934,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2934,
 							["absorbed"] = 0,
 						},
 						["Storm's Edge"] = {
@@ -5583,13 +5576,13 @@ SkadaPerCharDB = {
 							["damage"] = 56287,
 							["max"] = 3355,
 							["name"] = "Storm's Edge",
-							["min"] = 2870,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 18,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2870,
 							["absorbed"] = 0,
 						},
 						["Attack"] = {
@@ -5598,13 +5591,13 @@ SkadaPerCharDB = {
 							["damage"] = 670,
 							["max"] = 188,
 							["name"] = "Attack",
-							["min"] = 149,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 4,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 149,
 							["absorbed"] = 0,
 						},
 						["Lightning Bolt"] = {
@@ -5613,13 +5606,13 @@ SkadaPerCharDB = {
 							["damage"] = 10383,
 							["max"] = 5341,
 							["name"] = "Lightning Bolt",
-							["min"] = 5042,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 5042,
 							["absorbed"] = 0,
 						},
 						["Cyclone Shield"] = {
@@ -5628,13 +5621,13 @@ SkadaPerCharDB = {
 							["damage"] = 14537,
 							["max"] = 7405,
 							["name"] = "Cyclone Shield",
-							["min"] = 7132,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 7132,
 							["absorbed"] = 0,
 						},
 					},
@@ -5656,7 +5649,14 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Rhonwynn",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[77443] = 42,
+							},
+							["amount"] = 42,
+						},
+					},
 					["overhealing"] = 4084,
 					["alert"] = {
 					},
@@ -5696,46 +5696,40 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 106434,
+					["done"] = 28471,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 28471,
 				},
-				["Whipping Wind"] = {
+				["Grand Vizier Ertan"] = {
 					["players"] = {
-						["Ushnark-Sargeras"] = {
-							["taken"] = 34736,
-							["done"] = 0,
-							["class"] = "MAGE",
-							["role"] = "DAMAGER",
-						},
-						["Rhonwynn-Sentinels"] = {
-							["taken"] = 44173,
-							["done"] = 670,
-							["class"] = "HUNTER",
-							["role"] = "DAMAGER",
+						["Branon-Kael'thas"] = {
+							["taken"] = 232164,
+							["done"] = 79803,
+							["class"] = "WARRIOR",
+							["role"] = "TANK",
 						},
 						["Zeraen-CenarionCircle"] = {
-							["taken"] = 24971,
-							["done"] = 161,
+							["taken"] = 279404,
+							["done"] = 30874,
 							["class"] = "PALADIN",
 							["role"] = "DAMAGER",
 						},
-						["Branon-Kael'thas"] = {
-							["taken"] = 23898,
-							["done"] = 7334,
-							["class"] = "WARRIOR",
-							["role"] = "TANK",
+						["Ushnark-Sargeras"] = {
+							["taken"] = 330999,
+							["done"] = 0,
+							["class"] = "MAGE",
+							["role"] = "DAMAGER",
 						},
 					},
 					["hdone"] = 0,
 					["hdonespell"] = {
 					},
-					["taken"] = 127778,
+					["taken"] = 842567,
+					["done"] = 110677,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 8165,
 				},
 				["Cloud Prince"] = {
 					["players"] = {
@@ -5774,40 +5768,46 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 477762,
+					["done"] = 129203,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 129203,
 				},
-				["Grand Vizier Ertan"] = {
+				["Whipping Wind"] = {
 					["players"] = {
-						["Branon-Kael'thas"] = {
-							["taken"] = 232164,
-							["done"] = 79803,
-							["class"] = "WARRIOR",
-							["role"] = "TANK",
-						},
-						["Zeraen-CenarionCircle"] = {
-							["taken"] = 279404,
-							["done"] = 30874,
-							["class"] = "PALADIN",
-							["role"] = "DAMAGER",
-						},
 						["Ushnark-Sargeras"] = {
-							["taken"] = 330999,
+							["taken"] = 34736,
 							["done"] = 0,
 							["class"] = "MAGE",
 							["role"] = "DAMAGER",
+						},
+						["Rhonwynn-Sentinels"] = {
+							["taken"] = 44173,
+							["done"] = 670,
+							["class"] = "HUNTER",
+							["role"] = "DAMAGER",
+						},
+						["Zeraen-CenarionCircle"] = {
+							["taken"] = 24971,
+							["done"] = 161,
+							["class"] = "PALADIN",
+							["role"] = "DAMAGER",
+						},
+						["Branon-Kael'thas"] = {
+							["taken"] = 23898,
+							["done"] = 7334,
+							["class"] = "WARRIOR",
+							["role"] = "TANK",
 						},
 					},
 					["hdone"] = 0,
 					["hdonespell"] = {
 					},
-					["taken"] = 842567,
+					["taken"] = 127778,
+					["done"] = 8165,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 110677,
 				},
 				["Ertan's Vortex"] = {
 					["players"] = {
@@ -5846,13 +5846,17 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 0,
+					["done"] = 400885,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 400885,
 				},
 			},
-			["mobtaken"] = 1554541,
+			["power"] = {
+				950, -- [1]
+				42, -- [2]
+				[9] = 56,
+			},
 			["alertCount"] = 4,
 			["healing"] = 490755,
 			["overhealing"] = 273827.4375,
@@ -5861,11 +5865,7 @@ SkadaPerCharDB = {
 			["shielding"] = 58787,
 			["name"] = "Grand Vizier Ertan",
 			["mobname"] = "Grand Vizier Ertan",
-			["power"] = {
-				950, -- [1]
-				42, -- [2]
-				[9] = 56,
-			},
+			["gotboss"] = true,
 			["mobhdone"] = 0,
 			["last_action"] = 1466696196,
 			["endtime"] = 1466696383,
@@ -6007,12 +6007,11 @@ SkadaPerCharDB = {
 							["damage"] = 7207,
 						},
 					},
-					["maxhp"] = 37889,
-					["damagetaken"] = 6024,
-					["power"] = {
-					},
-					["id"] = "Player-76-05ED4BEA",
 					["first"] = 1466696145,
+					["damagetaken"] = 6024,
+					["shielding"] = 0,
+					["id"] = "Player-76-05ED4BEA",
+					["maxhp"] = 37889,
 					["healing"] = 494,
 					["damagetakenspells"] = {
 						["Lightning Bolt"] = {
@@ -6021,13 +6020,13 @@ SkadaPerCharDB = {
 							["damage"] = 3419,
 							["max"] = 3419,
 							["name"] = "Lightning Bolt",
-							["min"] = 3419,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 3419,
 							["absorbed"] = 0,
 						},
 						["Typhoon"] = {
@@ -6036,13 +6035,13 @@ SkadaPerCharDB = {
 							["damage"] = 2605,
 							["max"] = 2605,
 							["name"] = "Typhoon",
-							["min"] = 2605,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2605,
 							["absorbed"] = 0,
 						},
 					},
@@ -6058,7 +6057,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Ushnark",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Leech"] = {
 							["shielding"] = 0,
@@ -6145,12 +6145,11 @@ SkadaPerCharDB = {
 					["damage"] = 0,
 					["damagespells"] = {
 					},
-					["maxhp"] = 38321,
-					["damagetaken"] = 2889,
-					["power"] = {
-					},
-					["id"] = "Player-1169-06A1AD17",
 					["first"] = 1466696145,
+					["damagetaken"] = 2889,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1AD17",
+					["maxhp"] = 38321,
 					["healing"] = 86292,
 					["damagetakenspells"] = {
 						["Typhoon"] = {
@@ -6159,13 +6158,13 @@ SkadaPerCharDB = {
 							["damage"] = 2889,
 							["max"] = 2889,
 							["name"] = "Typhoon",
-							["min"] = 2889,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2889,
 							["absorbed"] = 0,
 						},
 					},
@@ -6216,7 +6215,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Uldaris",
 					["alertCount"] = 1,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Ysera's Gift"] = {
 							["shielding"] = 0,
@@ -6522,20 +6522,11 @@ SkadaPerCharDB = {
 							["damage"] = 5254,
 						},
 					},
-					["maxhp"] = 46321,
-					["damagetaken"] = 65768,
-					["power"] = {
-						{
-							["spells"] = {
-								[6572] = 120,
-								[12880] = 30,
-								[23922] = 85,
-							},
-							["amount"] = 235,
-						}, -- [1]
-					},
-					["id"] = "Player-1069-091F0214",
 					["first"] = 1466696145,
+					["damagetaken"] = 65768,
+					["shielding"] = 3222,
+					["id"] = "Player-1069-091F0214",
+					["maxhp"] = 46321,
 					["healing"] = 3222,
 					["damagetakenspells"] = {
 						["Typhoon"] = {
@@ -6544,13 +6535,13 @@ SkadaPerCharDB = {
 							["damage"] = 4400,
 							["max"] = 2200,
 							["name"] = "Typhoon",
-							["min"] = 2200,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2200,
 							["absorbed"] = 0,
 						},
 						["Lightning Bolt"] = {
@@ -6559,13 +6550,13 @@ SkadaPerCharDB = {
 							["damage"] = 41249,
 							["max"] = 2984,
 							["name"] = "Lightning Bolt",
-							["min"] = 679,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 21,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 679,
 							["absorbed"] = 351,
 						},
 						["Attack"] = {
@@ -6574,13 +6565,13 @@ SkadaPerCharDB = {
 							["damage"] = 20119,
 							["max"] = 4217,
 							["name"] = "Attack",
-							["min"] = 42,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 3851,
 							["totalhits"] = 12,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 42,
 							["absorbed"] = 0,
 						},
 					},
@@ -6596,7 +6587,16 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Branon",
 					["alertCount"] = 0,
-					["shielding"] = 3222,
+					["power"] = {
+						{
+							["spells"] = {
+								[6572] = 120,
+								[12880] = 30,
+								[23922] = 85,
+							},
+							["amount"] = 235,
+						}, -- [1]
+					},
 					["healingspells"] = {
 						["Shield Barrier"] = {
 							["shielding"] = 3222,
@@ -6764,14 +6764,6 @@ SkadaPerCharDB = {
 							["max"] = 2600,
 							["damage"] = 6227,
 						},
-						["Templar's Verdict"] = {
-							["min"] = 2852,
-							["hit"] = 1,
-							["totalhits"] = 1,
-							["id"] = 85256,
-							["max"] = 2852,
-							["damage"] = 2852,
-						},
 						["Hand of Light"] = {
 							["min"] = 111,
 							["hit"] = 29,
@@ -6788,6 +6780,14 @@ SkadaPerCharDB = {
 							["max"] = 1615,
 							["damage"] = 3078,
 						},
+						["Templar's Verdict"] = {
+							["min"] = 2852,
+							["hit"] = 1,
+							["totalhits"] = 1,
+							["id"] = 85256,
+							["max"] = 2852,
+							["damage"] = 2852,
+						},
 						["Seal of Truth"] = {
 							["min"] = 218,
 							["multistrike"] = 4,
@@ -6799,22 +6799,11 @@ SkadaPerCharDB = {
 							["damage"] = 3918,
 						},
 					},
-					["maxhp"] = 39511,
-					["damagetaken"] = 9687,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[141459] = 2,
-								[53595] = 2,
-								[35395] = 2,
-								[147715] = 2,
-								[111528] = 2,
-							},
-							["amount"] = 10,
-						},
-					},
-					["id"] = "Player-1169-073A4900",
 					["first"] = 1466696146,
+					["damagetaken"] = 9687,
+					["shielding"] = 0,
+					["id"] = "Player-1169-073A4900",
+					["maxhp"] = 39511,
 					["healing"] = 3162,
 					["damagetakenspells"] = {
 						["Typhoon"] = {
@@ -6823,13 +6812,13 @@ SkadaPerCharDB = {
 							["damage"] = 5128,
 							["max"] = 2628,
 							["name"] = "Typhoon",
-							["min"] = 2500,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2500,
 							["absorbed"] = 0,
 						},
 						["Starfall"] = {
@@ -6838,13 +6827,13 @@ SkadaPerCharDB = {
 							["damage"] = 2993,
 							["max"] = 2993,
 							["name"] = "Starfall",
-							["min"] = 2993,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2993,
 							["absorbed"] = 0,
 						},
 						["Wind Shock"] = {
@@ -6853,13 +6842,13 @@ SkadaPerCharDB = {
 							["damage"] = 1566,
 							["max"] = 1566,
 							["name"] = "Wind Shock",
-							["min"] = 1566,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1566,
 							["absorbed"] = 0,
 						},
 					},
@@ -6875,7 +6864,18 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Zeraen",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[141459] = 2,
+								[53595] = 2,
+								[35395] = 2,
+								[147715] = 2,
+								[111528] = 2,
+							},
+							["amount"] = 10,
+						},
+					},
 					["healingspells"] = {
 						["Glyph of Divine Storm"] = {
 							["shielding"] = 0,
@@ -6997,18 +6997,11 @@ SkadaPerCharDB = {
 							["damage"] = 18730,
 						},
 					},
-					["maxhp"] = 37673,
-					["damagetaken"] = 5412,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[77443] = 28,
-							},
-							["amount"] = 28,
-						},
-					},
-					["id"] = "Player-1071-0918CE89",
 					["first"] = 1466696147,
+					["damagetaken"] = 5412,
+					["shielding"] = 0,
+					["id"] = "Player-1071-0918CE89",
+					["maxhp"] = 37673,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 						["Lightning Bolt"] = {
@@ -7017,13 +7010,13 @@ SkadaPerCharDB = {
 							["damage"] = 5412,
 							["max"] = 5412,
 							["name"] = "Lightning Bolt",
-							["min"] = 5412,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 5412,
 							["absorbed"] = 0,
 						},
 					},
@@ -7039,7 +7032,14 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Rhonwynn",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[77443] = 28,
+							},
+							["amount"] = 28,
+						},
+					},
 					["healingspells"] = {
 						["Chimaera Shot"] = {
 							["shielding"] = 0,
@@ -7108,10 +7108,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 154086,
+					["done"] = 41552,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 41552,
 				},
 				["Cloud Prince"] = {
 					["players"] = {
@@ -7150,10 +7150,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 229097,
+					["done"] = 36422,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 36422,
 				},
 				["Whipping Wind"] = {
 					["players"] = {
@@ -7186,10 +7186,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 52317,
+					["done"] = 6394,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 6394,
 				},
 				["Lurking Tempest"] = {
 					["players"] = {
@@ -7204,10 +7204,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 0,
+					["done"] = 5412,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 5412,
 				},
 			},
 			["power"] = {
@@ -7401,35 +7401,41 @@ SkadaPerCharDB = {
 							["damage"] = 4898,
 						},
 					},
-					["maxhp"] = 46321,
-					["damagetaken"] = 48789,
-					["power"] = {
-						{
-							["spells"] = {
-								[6572] = 40,
-								[12880] = 10,
-								[23922] = 95,
-							},
-							["amount"] = 145,
-						}, -- [1]
-					},
-					["id"] = "Player-1069-091F0214",
 					["first"] = 1466696105,
+					["damagetaken"] = 48789,
+					["shielding"] = 0,
+					["id"] = "Player-1069-091F0214",
+					["maxhp"] = 46321,
 					["healing"] = 1391,
 					["damagetakenspells"] = {
+						["Lightning Bolt"] = {
+							["crushing"] = 0,
+							["id"] = 88032,
+							["damage"] = 35372,
+							["max"] = 3234,
+							["name"] = "Lightning Bolt",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 12,
+							["resisted"] = 0,
+							["min"] = 2532,
+							["absorbed"] = 0,
+						},
 						["Air Nova"] = {
 							["crushing"] = 0,
 							["id"] = 87933,
 							["damage"] = 5361,
 							["max"] = 5361,
 							["name"] = "Air Nova",
-							["min"] = 5361,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 5361,
 							["absorbed"] = 0,
 						},
 						["Wind Blast"] = {
@@ -7438,28 +7444,13 @@ SkadaPerCharDB = {
 							["damage"] = 2889,
 							["max"] = 2889,
 							["name"] = "Wind Blast",
-							["min"] = 2889,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-						},
-						["Lightning Bolt"] = {
-							["crushing"] = 0,
-							["id"] = 88032,
-							["damage"] = 35372,
-							["max"] = 3234,
-							["name"] = "Lightning Bolt",
-							["min"] = 2532,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 12,
-							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2889,
 							["absorbed"] = 0,
 						},
 						["Attack"] = {
@@ -7468,13 +7459,13 @@ SkadaPerCharDB = {
 							["damage"] = 5167,
 							["max"] = 2107,
 							["name"] = "Attack",
-							["min"] = 1344,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 576,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1344,
 							["absorbed"] = 0,
 						},
 					},
@@ -7490,7 +7481,16 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Branon",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						{
+							["spells"] = {
+								[6572] = 40,
+								[12880] = 10,
+								[23922] = 95,
+							},
+							["amount"] = 145,
+						}, -- [1]
+					},
 					["healingspells"] = {
 						["Blood Craze"] = {
 							["shielding"] = 0,
@@ -7621,18 +7621,11 @@ SkadaPerCharDB = {
 							["damage"] = 48696,
 						},
 					},
-					["maxhp"] = 37673,
-					["damagetaken"] = 0,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[77443] = 14,
-							},
-							["amount"] = 14,
-						},
-					},
-					["id"] = "Player-1071-0918CE89",
 					["first"] = 1466696105,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1071-0918CE89",
+					["maxhp"] = 37673,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -7648,7 +7641,14 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Rhonwynn",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[77443] = 14,
+							},
+							["amount"] = 14,
+						},
+					},
 					["healingspells"] = {
 						["Leech"] = {
 							["shielding"] = 0,
@@ -7735,12 +7735,11 @@ SkadaPerCharDB = {
 					["damage"] = 0,
 					["damagespells"] = {
 					},
-					["maxhp"] = 38321,
-					["damagetaken"] = 6383,
-					["power"] = {
-					},
-					["id"] = "Player-1169-06A1AD17",
 					["first"] = 1466696105,
+					["damagetaken"] = 6383,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1AD17",
+					["maxhp"] = 38321,
 					["healing"] = 59784,
 					["damagetakenspells"] = {
 						["Wind Blast"] = {
@@ -7749,13 +7748,13 @@ SkadaPerCharDB = {
 							["damage"] = 3797,
 							["max"] = 3797,
 							["name"] = "Wind Blast",
-							["min"] = 3797,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 3797,
 							["absorbed"] = 0,
 						},
 						["Wind Shock"] = {
@@ -7764,13 +7763,13 @@ SkadaPerCharDB = {
 							["damage"] = 2586,
 							["max"] = 1340,
 							["name"] = "Wind Shock",
-							["min"] = 1246,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1246,
 							["absorbed"] = 0,
 						},
 					},
@@ -7800,7 +7799,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Uldaris",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Ysera's Gift"] = {
 							["shielding"] = 0,
@@ -7970,12 +7970,11 @@ SkadaPerCharDB = {
 							["damage"] = 11833,
 						},
 					},
-					["maxhp"] = 37889,
-					["damagetaken"] = 0,
-					["power"] = {
-					},
-					["id"] = "Player-76-05ED4BEA",
 					["first"] = 1466696105,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-76-05ED4BEA",
+					["maxhp"] = 37889,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -7991,7 +7990,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Ushnark",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Leech"] = {
 							["shielding"] = 0,
@@ -8186,22 +8186,11 @@ SkadaPerCharDB = {
 							["damage"] = 3869,
 						},
 					},
-					["maxhp"] = 39511,
-					["damagetaken"] = 8270,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[141459] = 2,
-								[111528] = 2,
-								[53595] = 1,
-								[147715] = 2,
-								[35395] = 1,
-							},
-							["amount"] = 8,
-						},
-					},
-					["id"] = "Player-1169-073A4900",
 					["first"] = 1466696106,
+					["damagetaken"] = 8270,
+					["shielding"] = 0,
+					["id"] = "Player-1169-073A4900",
+					["maxhp"] = 39511,
 					["healing"] = 1580,
 					["damagetakenspells"] = {
 						["Air Nova"] = {
@@ -8210,13 +8199,13 @@ SkadaPerCharDB = {
 							["damage"] = 6679,
 							["max"] = 6679,
 							["name"] = "Air Nova",
-							["min"] = 6679,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 6679,
 							["absorbed"] = 0,
 						},
 						["Wind Shock"] = {
@@ -8225,13 +8214,13 @@ SkadaPerCharDB = {
 							["damage"] = 1591,
 							["max"] = 1591,
 							["name"] = "Wind Shock",
-							["min"] = 1591,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1591,
 							["absorbed"] = 0,
 						},
 					},
@@ -8247,7 +8236,18 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Zeraen",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[141459] = 2,
+								[111528] = 2,
+								[53595] = 1,
+								[147715] = 2,
+								[35395] = 1,
+							},
+							["amount"] = 8,
+						},
+					},
 					["healingspells"] = {
 						["Glyph of Divine Storm"] = {
 							["shielding"] = 0,
@@ -8308,10 +8308,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 97004,
+					["done"] = 23893,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 23893,
 				},
 				["Wild Vortex"] = {
 					["players"] = {
@@ -8350,10 +8350,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 257023,
+					["done"] = 39549,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 39549,
 				},
 			},
 			["power"] = {
@@ -8542,37 +8542,41 @@ SkadaPerCharDB = {
 							["damage"] = 2541,
 						},
 					},
-					["maxhp"] = 39511,
-					["damagetaken"] = 29880,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[141459] = 1,
-								[53595] = 1,
-								[111528] = 2,
-								[147715] = 1,
-								[35395] = 1,
-							},
-							["amount"] = 6,
-						},
-					},
-					["id"] = "Player-1169-073A4900",
 					["first"] = 1466696079,
+					["damagetaken"] = 29880,
+					["shielding"] = 0,
+					["id"] = "Player-1169-073A4900",
+					["maxhp"] = 39511,
 					["healing"] = 23212,
 					["damagetakenspells"] = {
+						["Lightning Bolt"] = {
+							["crushing"] = 0,
+							["id"] = 88032,
+							["damage"] = 4027,
+							["max"] = 4027,
+							["name"] = "Lightning Bolt",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 1,
+							["resisted"] = 0,
+							["min"] = 4027,
+							["absorbed"] = 0,
+						},
 						["Air Nova"] = {
 							["crushing"] = 0,
 							["id"] = 87933,
 							["damage"] = 6607,
 							["max"] = 6607,
 							["name"] = "Air Nova",
-							["min"] = 6607,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 6607,
 							["absorbed"] = 0,
 						},
 						["Wind Blast"] = {
@@ -8581,28 +8585,13 @@ SkadaPerCharDB = {
 							["damage"] = 9942,
 							["max"] = 3636,
 							["name"] = "Wind Blast",
-							["min"] = 3115,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-						},
-						["Lightning Bolt"] = {
-							["crushing"] = 0,
-							["id"] = 88032,
-							["damage"] = 4027,
-							["max"] = 4027,
-							["name"] = "Lightning Bolt",
-							["min"] = 4027,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 1,
-							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 3115,
 							["absorbed"] = 0,
 						},
 						["Attack"] = {
@@ -8611,13 +8600,13 @@ SkadaPerCharDB = {
 							["damage"] = 9304,
 							["max"] = 6381,
 							["name"] = "Attack",
-							["min"] = 2923,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 1,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2923,
 							["absorbed"] = 0,
 						},
 					},
@@ -8640,7 +8629,18 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Zeraen",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[141459] = 1,
+								[53595] = 1,
+								[111528] = 2,
+								[147715] = 1,
+								[35395] = 1,
+							},
+							["amount"] = 6,
+						},
+					},
 					["healingspells"] = {
 						["Flash of Light"] = {
 							["shielding"] = 0,
@@ -8727,12 +8727,11 @@ SkadaPerCharDB = {
 					["damage"] = 0,
 					["damagespells"] = {
 					},
-					["maxhp"] = 38321,
-					["damagetaken"] = 0,
-					["power"] = {
-					},
-					["id"] = "Player-1169-06A1AD17",
 					["first"] = 1466696079,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1AD17",
+					["maxhp"] = 38321,
 					["healing"] = 41245,
 					["damagetakenspells"] = {
 					},
@@ -8762,7 +8761,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Uldaris",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Ysera's Gift"] = {
 							["shielding"] = 0,
@@ -8971,35 +8971,41 @@ SkadaPerCharDB = {
 							["damage"] = 6693,
 						},
 					},
-					["maxhp"] = 46321,
-					["damagetaken"] = 37699,
-					["power"] = {
-						{
-							["spells"] = {
-								[6572] = 40,
-								[12880] = 20,
-								[23922] = 20,
-							},
-							["amount"] = 80,
-						}, -- [1]
-					},
-					["id"] = "Player-1069-091F0214",
 					["first"] = 1466696079,
+					["damagetaken"] = 37699,
+					["shielding"] = 0,
+					["id"] = "Player-1069-091F0214",
+					["maxhp"] = 46321,
 					["healing"] = 1389,
 					["damagetakenspells"] = {
+						["Lightning Bolt"] = {
+							["crushing"] = 0,
+							["id"] = 88032,
+							["damage"] = 5347,
+							["max"] = 2748,
+							["name"] = "Lightning Bolt",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 2,
+							["resisted"] = 0,
+							["min"] = 2599,
+							["absorbed"] = 0,
+						},
 						["Air Nova"] = {
 							["crushing"] = 0,
 							["id"] = 87933,
 							["damage"] = 5691,
 							["max"] = 5691,
 							["name"] = "Air Nova",
-							["min"] = 5691,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 5691,
 							["absorbed"] = 0,
 						},
 						["Wind Blast"] = {
@@ -9008,28 +9014,13 @@ SkadaPerCharDB = {
 							["damage"] = 7928,
 							["max"] = 2838,
 							["name"] = "Wind Blast",
-							["min"] = 2356,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-						},
-						["Lightning Bolt"] = {
-							["crushing"] = 0,
-							["id"] = 88032,
-							["damage"] = 5347,
-							["max"] = 2748,
-							["name"] = "Lightning Bolt",
-							["min"] = 2599,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 2,
-							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2356,
 							["absorbed"] = 0,
 						},
 						["Attack"] = {
@@ -9038,13 +9029,13 @@ SkadaPerCharDB = {
 							["damage"] = 18733,
 							["max"] = 2113,
 							["name"] = "Attack",
-							["min"] = 603,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 6820,
 							["totalhits"] = 14,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 603,
 							["absorbed"] = 0,
 						},
 					},
@@ -9060,7 +9051,16 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Branon",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						{
+							["spells"] = {
+								[6572] = 40,
+								[12880] = 20,
+								[23922] = 20,
+							},
+							["amount"] = 80,
+						}, -- [1]
+					},
 					["healingspells"] = {
 						["Blood Craze"] = {
 							["shielding"] = 0,
@@ -9165,12 +9165,11 @@ SkadaPerCharDB = {
 							["damage"] = 32923,
 						},
 					},
-					["maxhp"] = 37673,
-					["damagetaken"] = 0,
-					["power"] = {
-					},
-					["id"] = "Player-1071-0918CE89",
 					["first"] = 1466696080,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1071-0918CE89",
+					["maxhp"] = 37673,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -9186,7 +9185,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Rhonwynn",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Chimaera Shot"] = {
 							["shielding"] = 0,
@@ -9265,18 +9265,18 @@ SkadaPerCharDB = {
 							["uptime"] = 10,
 							["auratype"] = "DEBUFF",
 						},
-						["Archmage's Incandescence"] = {
-							["name"] = "Archmage's Incandescence",
-							["active"] = 1,
-							["id"] = 177159,
-							["uptime"] = 3,
-							["auratype"] = "BUFF",
-						},
 						["Flowing Thoughts"] = {
 							["name"] = "Flowing Thoughts",
 							["active"] = 1,
 							["id"] = 156150,
 							["uptime"] = 5,
+							["auratype"] = "BUFF",
+						},
+						["Archmage's Incandescence"] = {
+							["name"] = "Archmage's Incandescence",
+							["active"] = 1,
+							["id"] = 177159,
+							["uptime"] = 3,
 							["auratype"] = "BUFF",
 						},
 					},
@@ -9341,12 +9341,11 @@ SkadaPerCharDB = {
 							["damage"] = 10980,
 						},
 					},
-					["maxhp"] = 37889,
-					["damagetaken"] = 0,
-					["power"] = {
-					},
-					["id"] = "Player-76-05ED4BEA",
 					["first"] = 1466696080,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-76-05ED4BEA",
+					["maxhp"] = 37889,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -9362,7 +9361,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Ushnark",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Leech"] = {
 							["shielding"] = 0,
@@ -9417,10 +9417,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 240429,
+					["done"] = 58205,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 58205,
 				},
 				["Wild Vortex"] = {
 					["players"] = {
@@ -9453,10 +9453,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 79023,
+					["done"] = 9374,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 9374,
 				},
 			},
 			["power"] = {
@@ -9585,18 +9585,11 @@ SkadaPerCharDB = {
 							["damage"] = 29715,
 						},
 					},
-					["maxhp"] = 37673,
-					["damagetaken"] = 0,
-					["power"] = {
-						[2] = {
-							["spells"] = {
-								[77443] = 14,
-							},
-							["amount"] = 14,
-						},
-					},
-					["id"] = "Player-1071-0918CE89",
 					["first"] = 1466696051,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1071-0918CE89",
+					["maxhp"] = 37673,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -9612,7 +9605,14 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Rhonwynn",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[2] = {
+							["spells"] = {
+								[77443] = 14,
+							},
+							["amount"] = 14,
+						},
+					},
 					["healingspells"] = {
 						["Leech"] = {
 							["shielding"] = 0,
@@ -9770,8 +9770,79 @@ SkadaPerCharDB = {
 							["damage"] = 838,
 						},
 					},
-					["maxhp"] = 46321,
+					["first"] = 1466696051,
 					["damagetaken"] = 62262,
+					["shielding"] = 0,
+					["id"] = "Player-1069-091F0214",
+					["maxhp"] = 46321,
+					["healing"] = 0,
+					["damagetakenspells"] = {
+						["Lightning Bolt"] = {
+							["crushing"] = 0,
+							["id"] = 88032,
+							["damage"] = 6202,
+							["max"] = 3242,
+							["name"] = "Lightning Bolt",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 2,
+							["resisted"] = 0,
+							["min"] = 2960,
+							["absorbed"] = 0,
+						},
+						["Air Nova"] = {
+							["crushing"] = 0,
+							["id"] = 87933,
+							["damage"] = 16425,
+							["max"] = 5561,
+							["name"] = "Air Nova",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 3,
+							["resisted"] = 0,
+							["min"] = 5431,
+							["absorbed"] = 0,
+						},
+						["Wind Blast"] = {
+							["crushing"] = 0,
+							["id"] = 87923,
+							["damage"] = 13836,
+							["max"] = 2823,
+							["name"] = "Wind Blast",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 5,
+							["resisted"] = 0,
+							["min"] = 2698,
+							["absorbed"] = 0,
+						},
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 25799,
+							["max"] = 2076,
+							["name"] = "Attack",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 9264,
+							["totalhits"] = 19,
+							["resisted"] = 0,
+							["min"] = 587,
+							["absorbed"] = 0,
+						},
+					},
+					["healed"] = {
+					},
+					["alertDamage"] = 0,
+					["name"] = "Branon",
+					["alertCount"] = 0,
 					["power"] = {
 						{
 							["spells"] = {
@@ -9782,77 +9853,6 @@ SkadaPerCharDB = {
 							["amount"] = 140,
 						}, -- [1]
 					},
-					["id"] = "Player-1069-091F0214",
-					["first"] = 1466696051,
-					["healing"] = 0,
-					["damagetakenspells"] = {
-						["Air Nova"] = {
-							["crushing"] = 0,
-							["id"] = 87933,
-							["damage"] = 16425,
-							["max"] = 5561,
-							["name"] = "Air Nova",
-							["min"] = 5431,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 3,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-						},
-						["Wind Blast"] = {
-							["crushing"] = 0,
-							["id"] = 87923,
-							["damage"] = 13836,
-							["max"] = 2823,
-							["name"] = "Wind Blast",
-							["min"] = 2698,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 5,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-						},
-						["Lightning Bolt"] = {
-							["crushing"] = 0,
-							["id"] = 88032,
-							["damage"] = 6202,
-							["max"] = 3242,
-							["name"] = "Lightning Bolt",
-							["min"] = 2960,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 2,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-						},
-						["Attack"] = {
-							["crushing"] = 0,
-							["id"] = 6603,
-							["damage"] = 25799,
-							["max"] = 2076,
-							["name"] = "Attack",
-							["min"] = 587,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 9264,
-							["totalhits"] = 19,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-						},
-					},
-					["healed"] = {
-					},
-					["alertDamage"] = 0,
-					["name"] = "Branon",
-					["alertCount"] = 0,
-					["shielding"] = 0,
 					["healingspells"] = {
 					},
 					["alert"] = {
@@ -9960,12 +9960,11 @@ SkadaPerCharDB = {
 							["damage"] = 3813,
 						},
 					},
-					["maxhp"] = 37889,
-					["damagetaken"] = 0,
-					["power"] = {
-					},
-					["id"] = "Player-76-05ED4BEA",
 					["first"] = 1466696051,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-76-05ED4BEA",
+					["maxhp"] = 37889,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -9981,7 +9980,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Ushnark",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Leech"] = {
 							["shielding"] = 0,
@@ -10054,12 +10054,11 @@ SkadaPerCharDB = {
 					["damage"] = 0,
 					["damagespells"] = {
 					},
-					["maxhp"] = 38321,
-					["damagetaken"] = 7380,
-					["power"] = {
-					},
-					["id"] = "Player-1169-06A1AD17",
 					["first"] = 1466696051,
+					["damagetaken"] = 7380,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1AD17",
+					["maxhp"] = 38321,
 					["healing"] = 63313,
 					["damagetakenspells"] = {
 						["Wind Blast"] = {
@@ -10068,13 +10067,13 @@ SkadaPerCharDB = {
 							["damage"] = 7380,
 							["max"] = 3781,
 							["name"] = "Wind Blast",
-							["min"] = 3599,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 3599,
 							["absorbed"] = 0,
 						},
 					},
@@ -10125,7 +10124,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Uldaris",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Ysera's Gift"] = {
 							["shielding"] = 0,
@@ -10239,13 +10239,6 @@ SkadaPerCharDB = {
 							["uptime"] = 11,
 							["auratype"] = "BUFF",
 						},
-						["Archmage's Incandescence"] = {
-							["name"] = "Archmage's Incandescence",
-							["active"] = 1,
-							["id"] = 177160,
-							["uptime"] = 3,
-							["auratype"] = "BUFF",
-						},
 						["Glyph of Templar's Verdict"] = {
 							["name"] = "Glyph of Templar's Verdict",
 							["active"] = 0,
@@ -10257,6 +10250,13 @@ SkadaPerCharDB = {
 							["name"] = "Divine Crusader",
 							["active"] = 0,
 							["id"] = 144595,
+							["uptime"] = 3,
+							["auratype"] = "BUFF",
+						},
+						["Archmage's Incandescence"] = {
+							["name"] = "Archmage's Incandescence",
+							["active"] = 1,
+							["id"] = 177160,
 							["uptime"] = 3,
 							["auratype"] = "BUFF",
 						},
@@ -10357,22 +10357,11 @@ SkadaPerCharDB = {
 							["damage"] = 2214,
 						},
 					},
-					["maxhp"] = 39511,
-					["damagetaken"] = 22153,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[141459] = 2,
-								[111528] = 2,
-								[53595] = 1,
-								[147715] = 1,
-								[35395] = 1,
-							},
-							["amount"] = 7,
-						},
-					},
-					["id"] = "Player-1169-073A4900",
 					["first"] = 1466696051,
+					["damagetaken"] = 22153,
+					["shielding"] = 0,
+					["id"] = "Player-1169-073A4900",
+					["maxhp"] = 39511,
 					["healing"] = 1580,
 					["damagetakenspells"] = {
 						["Air Nova"] = {
@@ -10381,13 +10370,13 @@ SkadaPerCharDB = {
 							["damage"] = 22153,
 							["max"] = 7770,
 							["name"] = "Air Nova",
-							["min"] = 6984,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 3,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 6984,
 							["absorbed"] = 0,
 						},
 					},
@@ -10403,7 +10392,18 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Zeraen",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[141459] = 2,
+								[111528] = 2,
+								[53595] = 1,
+								[147715] = 1,
+								[35395] = 1,
+							},
+							["amount"] = 7,
+						},
+					},
 					["healingspells"] = {
 						["Glyph of Divine Storm"] = {
 							["shielding"] = 0,
@@ -10464,10 +10464,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 240473,
+					["done"] = 85593,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 85593,
 				},
 				["Wild Vortex"] = {
 					["players"] = {
@@ -10500,10 +10500,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 78480,
+					["done"] = 6202,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 6202,
 				},
 			},
 			["power"] = {
@@ -10629,18 +10629,11 @@ SkadaPerCharDB = {
 							["damage"] = 2081,
 						},
 					},
-					["maxhp"] = 46321,
-					["damagetaken"] = 7355,
-					["power"] = {
-						{
-							["spells"] = {
-								[23922] = 45,
-							},
-							["amount"] = 45,
-						}, -- [1]
-					},
-					["id"] = "Player-1069-091F0214",
 					["first"] = 1466696024,
+					["damagetaken"] = 7355,
+					["shielding"] = 0,
+					["id"] = "Player-1069-091F0214",
+					["maxhp"] = 46321,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 						["Gale Strike"] = {
@@ -10649,13 +10642,13 @@ SkadaPerCharDB = {
 							["damage"] = 4752,
 							["max"] = 4752,
 							["name"] = "Gale Strike",
-							["min"] = 4752,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 7129,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 4752,
 							["absorbed"] = 0,
 						},
 						["Attack"] = {
@@ -10664,13 +10657,13 @@ SkadaPerCharDB = {
 							["damage"] = 2603,
 							["max"] = 1364,
 							["name"] = "Attack",
-							["min"] = 1239,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 1116,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1239,
 							["absorbed"] = 0,
 						},
 					},
@@ -10679,7 +10672,14 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Branon",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						{
+							["spells"] = {
+								[23922] = 45,
+							},
+							["amount"] = 45,
+						}, -- [1]
+					},
 					["healingspells"] = {
 					},
 					["alert"] = {
@@ -10798,14 +10798,6 @@ SkadaPerCharDB = {
 							["max"] = 545,
 							["damage"] = 3226,
 						},
-						["Templar's Verdict"] = {
-							["min"] = 6768,
-							["critical"] = 1,
-							["totalhits"] = 1,
-							["id"] = 85256,
-							["max"] = 6768,
-							["damage"] = 6768,
-						},
 						["Hand of Light"] = {
 							["min"] = 498,
 							["hit"] = 6,
@@ -10822,6 +10814,14 @@ SkadaPerCharDB = {
 							["max"] = 3517,
 							["damage"] = 3517,
 						},
+						["Templar's Verdict"] = {
+							["min"] = 6768,
+							["critical"] = 1,
+							["totalhits"] = 1,
+							["id"] = 85256,
+							["max"] = 6768,
+							["damage"] = 6768,
+						},
 						["Attack"] = {
 							["min"] = 1434,
 							["multistrike"] = 1,
@@ -10832,8 +10832,19 @@ SkadaPerCharDB = {
 							["damage"] = 3299,
 						},
 					},
-					["maxhp"] = 39511,
+					["first"] = 1466696024,
 					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1169-073A4900",
+					["maxhp"] = 39511,
+					["healing"] = 0,
+					["damagetakenspells"] = {
+					},
+					["healed"] = {
+					},
+					["alertDamage"] = 0,
+					["name"] = "Zeraen",
+					["alertCount"] = 0,
 					["power"] = {
 						[9] = {
 							["spells"] = {
@@ -10846,17 +10857,6 @@ SkadaPerCharDB = {
 							["amount"] = 6,
 						},
 					},
-					["id"] = "Player-1169-073A4900",
-					["first"] = 1466696024,
-					["healing"] = 0,
-					["damagetakenspells"] = {
-					},
-					["healed"] = {
-					},
-					["alertDamage"] = 0,
-					["name"] = "Zeraen",
-					["alertCount"] = 0,
-					["shielding"] = 0,
 					["healingspells"] = {
 					},
 					["alert"] = {
@@ -10930,12 +10930,11 @@ SkadaPerCharDB = {
 							["damage"] = 3324,
 						},
 					},
-					["maxhp"] = 37889,
-					["damagetaken"] = 4522,
-					["power"] = {
-					},
-					["id"] = "Player-76-05ED4BEA",
 					["first"] = 1466696024,
+					["damagetaken"] = 4522,
+					["shielding"] = 0,
+					["id"] = "Player-76-05ED4BEA",
+					["maxhp"] = 37889,
 					["healing"] = 320,
 					["damagetakenspells"] = {
 						["Attack"] = {
@@ -10944,13 +10943,13 @@ SkadaPerCharDB = {
 							["damage"] = 4522,
 							["max"] = 4522,
 							["name"] = "Attack",
-							["min"] = 4522,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 4522,
 							["absorbed"] = 0,
 						},
 					},
@@ -10966,7 +10965,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Ushnark",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Leech"] = {
 							["shielding"] = 0,
@@ -11054,12 +11054,11 @@ SkadaPerCharDB = {
 							["damage"] = 7939,
 						},
 					},
-					["maxhp"] = 37673,
-					["damagetaken"] = 0,
-					["power"] = {
-					},
-					["id"] = "Player-1071-0918CE89",
 					["first"] = 1466696024,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1071-0918CE89",
+					["maxhp"] = 37673,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -11075,7 +11074,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Rhonwynn",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Leech"] = {
 							["shielding"] = 0,
@@ -11134,12 +11134,11 @@ SkadaPerCharDB = {
 					["damage"] = 0,
 					["damagespells"] = {
 					},
-					["maxhp"] = 38321,
-					["damagetaken"] = 0,
-					["power"] = {
-					},
-					["id"] = "Player-1169-06A1AD17",
 					["first"] = 1466696024,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1AD17",
+					["maxhp"] = 38321,
 					["healing"] = 8801,
 					["damagetakenspells"] = {
 					},
@@ -11176,7 +11175,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Uldaris",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Ysera's Gift"] = {
 							["shielding"] = 0,
@@ -11273,10 +11273,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 107433,
+					["done"] = 11877,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 11877,
 				},
 			},
 			["power"] = {
@@ -11421,12 +11421,11 @@ SkadaPerCharDB = {
 							["damage"] = 22583,
 						},
 					},
-					["maxhp"] = 37889,
-					["damagetaken"] = 3820,
-					["power"] = {
-					},
-					["id"] = "Player-76-05ED4BEA",
 					["first"] = 1466695985,
+					["damagetaken"] = 3820,
+					["shielding"] = 0,
+					["id"] = "Player-76-05ED4BEA",
+					["maxhp"] = 37889,
 					["healing"] = 1720,
 					["damagetakenspells"] = {
 						["Lightning Bolt"] = {
@@ -11435,13 +11434,13 @@ SkadaPerCharDB = {
 							["damage"] = 3820,
 							["max"] = 3820,
 							["name"] = "Lightning Bolt",
-							["min"] = 3820,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 3820,
 							["absorbed"] = 0,
 						},
 					},
@@ -11457,7 +11456,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Ushnark",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Leech"] = {
 							["shielding"] = 0,
@@ -11603,36 +11603,41 @@ SkadaPerCharDB = {
 							["damage"] = 10573,
 						},
 					},
-					["maxhp"] = 46321,
-					["damagetaken"] = 58344,
-					["power"] = {
-						{
-							["spells"] = {
-								[109128] = 20,
-								[23922] = 45,
-								[12880] = 10,
-								[6572] = 20,
-							},
-							["amount"] = 95,
-						}, -- [1]
-					},
-					["id"] = "Player-1069-091F0214",
 					["first"] = 1466695985,
+					["damagetaken"] = 58344,
+					["shielding"] = 0,
+					["id"] = "Player-1069-091F0214",
+					["maxhp"] = 46321,
 					["healing"] = 2782,
 					["damagetakenspells"] = {
+						["Lightning Bolt"] = {
+							["crushing"] = 0,
+							["id"] = 88032,
+							["damage"] = 27576,
+							["max"] = 3018,
+							["name"] = "Lightning Bolt",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 10,
+							["resisted"] = 0,
+							["min"] = 2502,
+							["absorbed"] = 0,
+						},
 						["Air Nova"] = {
 							["crushing"] = 0,
 							["id"] = 87933,
 							["damage"] = 5814,
 							["max"] = 5814,
 							["name"] = "Air Nova",
-							["min"] = 5814,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 5814,
 							["absorbed"] = 0,
 						},
 						["Wind Blast"] = {
@@ -11641,28 +11646,13 @@ SkadaPerCharDB = {
 							["damage"] = 5161,
 							["max"] = 2635,
 							["name"] = "Wind Blast",
-							["min"] = 2526,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 2,
 							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-						},
-						["Lightning Bolt"] = {
-							["crushing"] = 0,
-							["id"] = 88032,
-							["damage"] = 27576,
-							["max"] = 3018,
-							["name"] = "Lightning Bolt",
-							["min"] = 2502,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 10,
-							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 2526,
 							["absorbed"] = 0,
 						},
 						["Attack"] = {
@@ -11671,13 +11661,13 @@ SkadaPerCharDB = {
 							["damage"] = 19793,
 							["max"] = 2358,
 							["name"] = "Attack",
-							["min"] = 591,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 2076,
 							["totalhits"] = 11,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 591,
 							["absorbed"] = 0,
 						},
 					},
@@ -11693,7 +11683,17 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Branon",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						{
+							["spells"] = {
+								[109128] = 20,
+								[23922] = 45,
+								[12880] = 10,
+								[6572] = 20,
+							},
+							["amount"] = 95,
+						}, -- [1]
+					},
 					["healingspells"] = {
 						["Blood Craze"] = {
 							["shielding"] = 0,
@@ -11828,12 +11828,11 @@ SkadaPerCharDB = {
 							["damage"] = 20546,
 						},
 					},
-					["maxhp"] = 37673,
-					["damagetaken"] = 0,
-					["power"] = {
-					},
-					["id"] = "Player-1071-0918CE89",
 					["first"] = 1466695985,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1071-0918CE89",
+					["maxhp"] = 37673,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 					},
@@ -11849,7 +11848,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Rhonwynn",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Leech"] = {
 							["shielding"] = 0,
@@ -11908,6 +11908,13 @@ SkadaPerCharDB = {
 							["uptime"] = 4,
 							["auratype"] = "BUFF",
 						},
+						["Divine Crusader"] = {
+							["name"] = "Divine Crusader",
+							["active"] = 0,
+							["id"] = 144595,
+							["uptime"] = 1,
+							["auratype"] = "BUFF",
+						},
 						["Glyph of Templar's Verdict"] = {
 							["name"] = "Glyph of Templar's Verdict",
 							["active"] = 1,
@@ -11920,13 +11927,6 @@ SkadaPerCharDB = {
 							["active"] = 1,
 							["id"] = 177160,
 							["uptime"] = 15,
-							["auratype"] = "BUFF",
-						},
-						["Divine Crusader"] = {
-							["name"] = "Divine Crusader",
-							["active"] = 0,
-							["id"] = 144595,
-							["uptime"] = 1,
 							["auratype"] = "BUFF",
 						},
 						["Pursuit of Justice"] = {
@@ -12005,15 +12005,6 @@ SkadaPerCharDB = {
 							["max"] = 1273,
 							["damage"] = 7097,
 						},
-						["Crusader Strike"] = {
-							["min"] = 1492,
-							["multistrike"] = 1,
-							["hit"] = 3,
-							["totalhits"] = 3,
-							["id"] = 35395,
-							["max"] = 1626,
-							["damage"] = 5086,
-						},
 						["Hand of Light"] = {
 							["min"] = 292,
 							["hit"] = 16,
@@ -12030,6 +12021,15 @@ SkadaPerCharDB = {
 							["max"] = 3155,
 							["damage"] = 6178,
 						},
+						["Crusader Strike"] = {
+							["min"] = 1492,
+							["multistrike"] = 1,
+							["hit"] = 3,
+							["totalhits"] = 3,
+							["id"] = 35395,
+							["max"] = 1626,
+							["damage"] = 5086,
+						},
 						["Seal of Truth"] = {
 							["min"] = 218,
 							["multistrike"] = 3,
@@ -12041,22 +12041,11 @@ SkadaPerCharDB = {
 							["damage"] = 4305,
 						},
 					},
-					["maxhp"] = 39511,
-					["damagetaken"] = 8410,
-					["power"] = {
-						[9] = {
-							["spells"] = {
-								[141459] = 2,
-								[35395] = 3,
-								[53595] = 1,
-								[147715] = 1,
-								[111528] = 3,
-							},
-							["amount"] = 10,
-						},
-					},
-					["id"] = "Player-1169-073A4900",
 					["first"] = 1466695985,
+					["damagetaken"] = 8410,
+					["shielding"] = 0,
+					["id"] = "Player-1169-073A4900",
+					["maxhp"] = 39511,
 					["healing"] = 0,
 					["damagetakenspells"] = {
 						["Air Nova"] = {
@@ -12065,13 +12054,13 @@ SkadaPerCharDB = {
 							["damage"] = 7002,
 							["max"] = 7002,
 							["name"] = "Air Nova",
-							["min"] = 7002,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 7002,
 							["absorbed"] = 0,
 						},
 						["Wind Shock"] = {
@@ -12080,13 +12069,13 @@ SkadaPerCharDB = {
 							["damage"] = 1408,
 							["max"] = 1408,
 							["name"] = "Wind Shock",
-							["min"] = 1408,
+							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 1,
 							["resisted"] = 0,
-							["glancing"] = 0,
+							["min"] = 1408,
 							["absorbed"] = 0,
 						},
 					},
@@ -12102,7 +12091,18 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Zeraen",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+						[9] = {
+							["spells"] = {
+								[141459] = 2,
+								[35395] = 3,
+								[53595] = 1,
+								[147715] = 1,
+								[111528] = 3,
+							},
+							["amount"] = 10,
+						},
+					},
 					["healingspells"] = {
 						["Glyph of Divine Storm"] = {
 							["shielding"] = 0,
@@ -12203,12 +12203,11 @@ SkadaPerCharDB = {
 					["damage"] = 0,
 					["damagespells"] = {
 					},
-					["maxhp"] = 38321,
-					["damagetaken"] = 0,
-					["power"] = {
-					},
-					["id"] = "Player-1169-06A1AD17",
 					["first"] = 1466695986,
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-1169-06A1AD17",
+					["maxhp"] = 38321,
 					["healing"] = 84202,
 					["damagetakenspells"] = {
 					},
@@ -12259,7 +12258,8 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["name"] = "Uldaris",
 					["alertCount"] = 0,
-					["shielding"] = 0,
+					["power"] = {
+					},
 					["healingspells"] = {
 						["Lifebloom"] = {
 							["shielding"] = 0,
@@ -12398,10 +12398,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 152262,
+					["done"] = 32804,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 32804,
 				},
 				["Gust Soldier"] = {
 					["players"] = {
@@ -12434,10 +12434,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 124843,
+					["done"] = 31153,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 31153,
 				},
 				["Armored Mistral"] = {
 					["players"] = {
@@ -12470,10 +12470,10 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 63312,
+					["done"] = 6617,
+					["htaken"] = 0,
 					["htakenspell"] = {
 					},
-					["htaken"] = 0,
-					["done"] = 6617,
 				},
 			},
 			["power"] = {

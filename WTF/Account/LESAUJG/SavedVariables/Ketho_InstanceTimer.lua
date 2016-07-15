@@ -287,6 +287,17 @@ KethoInstanceTimerDB = {
 					["zone"] = "Trial of the Champion",
 					["instanceType"] = "party",
 				}, -- [14]
+				{
+					["difficulty"] = 2,
+					["party"] = {
+					},
+					["time"] = 385,
+					["end"] = "21:05",
+					["date"] = "2016.07.14",
+					["instanceType"] = "party",
+					["zone"] = "Trial of the Champion",
+					["start"] = "20:59",
+				}, -- [15]
 			},
 			["startTime"] = "",
 			["timeInstance"] = 0,
@@ -574,6 +585,17 @@ KethoInstanceTimerDB = {
 					["zone"] = "Trial of the Champion",
 					["instanceType"] = "party",
 				}, -- [23]
+				{
+					["difficulty"] = 2,
+					["party"] = {
+					},
+					["time"] = 239,
+					["end"] = "21:40",
+					["date"] = "2016.07.14",
+					["instanceType"] = "party",
+					["zone"] = "Trial of the Champion",
+					["start"] = "21:36",
+				}, -- [24]
 			},
 			["startTime"] = "",
 			["timeInstance"] = 0,

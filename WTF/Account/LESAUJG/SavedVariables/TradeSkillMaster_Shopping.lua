@@ -34,37 +34,37 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @savedSearches"] = {
 		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1468377379,
-			["name"] = "frostweed",
-			["filter"] = "frostweed",
-		}, -- [1]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1468377332,
-			["name"] = "blackrock ore",
-			["filter"] = "blackrock ore",
-		}, -- [2]
-		{
-			["lastSearch"] = 1468355857,
+			["lastSearch"] = 1468548093,
 			["name"] = "universal",
 			["filter"] = "universal",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [3]
+		}, -- [1]
 		{
-			["lastSearch"] = 1468355821,
+			["lastSearch"] = 1468548081,
 			["name"] = "arcane c",
 			["filter"] = "arcane c",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [4]
+		}, -- [2]
 		{
-			["lastSearch"] = 1468355794,
+			["lastSearch"] = 1468548059,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
+		}, -- [3]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1468542181,
+			["name"] = "blackrock ore",
+			["filter"] = "blackrock ore",
+		}, -- [4]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1468542175,
+			["name"] = "frostweed",
+			["filter"] = "frostweed",
 		}, -- [5]
 		{
 			["lastSearch"] = 1468288908,
