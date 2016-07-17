@@ -1,7 +1,7 @@
 
 DecursiveDB = {
 	["global"] = {
-		["LastVersionAnnounce"] = 1468673822,
+		["LastVersionAnnounce"] = 1468720838,
 	},
 	["class"] = {
 		["HUNTER"] = {

@@ -134,7 +134,7 @@ WeakAurasSaved = {
 			},
 		},
 		["GlaiveUp"] = {
-			["xOffset"] = 120,
+			["parent"] = "G1_MM_MainBar",
 			["untrigger"] = {
 				["spellName"] = 117050,
 			},
@@ -220,16 +220,16 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
-			["parent"] = "G1_MM_MainBar",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["xOffset"] = 120,
 			["id"] = "GlaiveUp",
 			["additional_triggers"] = {
 			},
@@ -332,11 +332,8 @@ WeakAurasSaved = {
 						[3] = true,
 					},
 				},
+				["use_class"] = true,
 				["use_name"] = false,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -351,7 +348,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["use_class"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -1069,13 +1069,13 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["use_power"] = true,
 				["ownOnly"] = true,
-				["custom_hide"] = "timed",
+				["debuffType"] = "HELPFUL",
 				["use_powertype"] = true,
-				["spellName"] = 19434,
-				["power"] = "50",
+				["custom_hide"] = "timed",
+				["subeventSuffix"] = "_CAST_START",
 				["type"] = "status",
 				["count"] = "3",
-				["unevent"] = "auto",
+				["power"] = "50",
 				["power_operator"] = ">=",
 				["event"] = "Power",
 				["countOperator"] = "==",
@@ -1086,8 +1086,8 @@ WeakAurasSaved = {
 				["use_spellName"] = true,
 				["spellIds"] = {
 				},
-				["subeventSuffix"] = "_CAST_START",
-				["debuffType"] = "HELPFUL",
+				["unevent"] = "auto",
+				["spellName"] = 19434,
 				["unit"] = "player",
 				["percentpower"] = "50",
 				["percentpower_operator"] = ">=",
@@ -1363,7 +1363,12 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 		},
 		["ChimShotUpNoRange"] = {
-			["parent"] = "G1_MM_MainBar",
+			["color"] = {
+				1, -- [1]
+				0, -- [2]
+				0.101960784313725, -- [3]
+				1, -- [4]
+			},
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
@@ -1441,16 +1446,11 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
-			["color"] = {
-				1, -- [1]
-				0, -- [2]
-				0.101960784313725, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["xOffset"] = 0,
+			["parent"] = "G1_MM_MainBar",
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -2094,8 +2094,8 @@ WeakAurasSaved = {
 					"Tiro Explosivo", -- [1]
 				},
 				["showOn"] = "showOnCooldown",
+				["custom_hide"] = "timed",
 				["debuffType"] = "HARMFUL",
-				["spellName"] = 53301,
 				["count"] = "0",
 				["type"] = "status",
 				["use_spellName"] = true,
@@ -2108,7 +2108,7 @@ WeakAurasSaved = {
 				["use_spellId"] = true,
 				["spellIds"] = {
 				},
-				["custom_hide"] = "timed",
+				["spellName"] = 53301,
 				["remOperator"] = "<=",
 				["autoclone"] = false,
 				["remaining_operator"] = "<=",
@@ -2134,11 +2134,8 @@ WeakAurasSaved = {
 						[3] = true,
 					},
 				},
+				["use_class"] = true,
 				["use_name"] = false,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -2153,7 +2150,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["use_class"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -2916,12 +2916,12 @@ WeakAurasSaved = {
 				["names"] = {
 				},
 				["remaining"] = "0",
-				["spellName"] = 53351,
 				["debuffType"] = "HELPFUL",
+				["custom_hide"] = "timed",
 				["charges"] = "0",
 				["type"] = "status",
 				["use_attackable"] = true,
-				["custom_hide"] = "timed",
+				["spellName"] = 53351,
 				["charges_operator"] = "==",
 				["use_remaining"] = true,
 				["use_health"] = false,
@@ -2960,11 +2960,8 @@ WeakAurasSaved = {
 						true, -- [2]
 					},
 				},
+				["use_class"] = true,
 				["use_name"] = false,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -2979,7 +2976,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["use_class"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -4805,19 +4805,19 @@ WeakAurasSaved = {
 				["type"] = "aura",
 				["use_inverse"] = true,
 				["subeventSuffix"] = "_CAST_START",
+				["subeventPrefix"] = "SPELL",
+				["ownOnly"] = true,
+				["event"] = "Cooldown Progress (Spell)",
 				["names"] = {
 					"Black Arrow", -- [1]
 				},
-				["ownOnly"] = true,
-				["event"] = "Cooldown Progress (Spell)",
-				["use_unit"] = true,
 				["unit"] = "target",
 				["use_spellName"] = true,
 				["inverse"] = true,
 				["spellName"] = 3674,
 				["spellIds"] = {
 				},
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["unevent"] = "auto",
 				["custom_hide"] = "timed",
 			},
@@ -4841,11 +4841,8 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_name"] = false,
 				["use_class"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -4860,7 +4857,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -5050,12 +5050,7 @@ WeakAurasSaved = {
 			},
 		},
 		["Aimed50NoFocus"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "G1_MM_MainBar",
 			["untrigger"] = {
 				["spellName"] = 19434,
 			},
@@ -5127,11 +5122,16 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
-			["parent"] = "G1_MM_MainBar",
+			["xOffset"] = 40,
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["xOffset"] = 40,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -5861,11 +5861,8 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_name"] = false,
 				["use_class"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -5880,7 +5877,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -5915,7 +5915,7 @@ WeakAurasSaved = {
 			},
 		},
 		["DeterrenceUp2"] = {
-			["xOffset"] = 80,
+			["parent"] = "G1_MM_MainBar",
 			["yOffset"] = -68,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
@@ -5994,16 +5994,16 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
-			["parent"] = "G1_MM_MainBar",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["xOffset"] = 80,
 			["additional_triggers"] = {
 			},
 			["icon"] = true,
@@ -6579,11 +6579,8 @@ WeakAurasSaved = {
 						true, -- [1]
 					},
 				},
+				["use_name"] = false,
 				["use_class"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -6598,7 +6595,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -6713,8 +6713,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["use_name"] = false,
-				["use_class"] = true,
 				["race"] = {
 					["multi"] = {
 					},
@@ -6729,10 +6732,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
+				["use_class"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -7806,12 +7806,7 @@ WeakAurasSaved = {
 			},
 		},
 		["Aimed50"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "G1_MM_MainBar",
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
@@ -7890,11 +7885,16 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
-			["parent"] = "G1_MM_MainBar",
+			["xOffset"] = 40,
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["xOffset"] = 40,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -8358,12 +8358,7 @@ WeakAurasSaved = {
 			},
 		},
 		["BarrageUp"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "G1_MM_MainBar",
 			["untrigger"] = {
 				["spellName"] = 120360,
 			},
@@ -8449,11 +8444,16 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
-			["parent"] = "G1_MM_MainBar",
+			["xOffset"] = 120,
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["xOffset"] = 120,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["additional_triggers"] = {
 			},
 			["id"] = "BarrageUp",
@@ -8524,9 +8524,9 @@ WeakAurasSaved = {
 				["use_character"] = false,
 				["use_unit"] = true,
 				["ownOnly"] = true,
-				["use_mounted"] = false,
+				["debuffType"] = "HELPFUL",
 				["use_HasPet"] = false,
-				["custom_hide"] = "timed",
+				["use_mounted"] = false,
 				["names"] = {
 					"Aspecto do Falcão", -- [1]
 					"Aspecto da Águia de Ferro", -- [2]
@@ -8545,7 +8545,7 @@ WeakAurasSaved = {
 				["unit"] = "pet",
 				["check"] = "event",
 				["subeventSuffix"] = "_CAST_START",
-				["debuffType"] = "HELPFUL",
+				["custom_hide"] = "timed",
 				["subeventPrefix"] = "SPELL",
 			},
 			["desaturate"] = false,
@@ -9149,26 +9149,14 @@ WeakAurasSaved = {
 				},
 			},
 			["sort"] = "none",
-			["trigger"] = {
-				["unit"] = "player",
-				["type"] = "aura",
-				["spellIds"] = {
-				},
-				["subeventSuffix"] = "_CAST_START",
-				["debuffType"] = "HELPFUL",
-				["names"] = {
-				},
-				["event"] = "Health",
-				["subeventPrefix"] = "SPELL",
-			},
+			["align"] = "RIGHT",
 			["space"] = 9,
 			["background"] = "None",
 			["expanded"] = false,
 			["constantFactor"] = "RADIUS",
 			["selfPoint"] = "BOTTOMRIGHT",
 			["borderOffset"] = 16,
-			["additional_triggers"] = {
-			},
+			["id"] = "G2_7_Hunter Trinkets Bar",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -9183,14 +9171,26 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["align"] = "RIGHT",
+			["trigger"] = {
+				["unit"] = "player",
+				["type"] = "aura",
+				["spellIds"] = {
+				},
+				["subeventSuffix"] = "_CAST_START",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+				},
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
+			},
 			["stagger"] = 0,
 			["frameStrata"] = 1,
 			["width"] = 100,
 			["rotation"] = 0,
 			["radius"] = 200,
 			["numTriggers"] = 1,
-			["id"] = "G2_7_Hunter Trinkets Bar",
+			["additional_triggers"] = {
+			},
 			["height"] = 576.000061035156,
 			["backgroundInset"] = 0,
 			["load"] = {
@@ -9823,7 +9823,7 @@ WeakAurasSaved = {
 			["id"] = "G1_MM_MainBar",
 		},
 		["BarrageUpNoFocus"] = {
-			["xOffset"] = 120,
+			["parent"] = "G1_MM_MainBar",
 			["untrigger"] = {
 				["spellName"] = 120360,
 			},
@@ -9904,16 +9904,16 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
-			["parent"] = "G1_MM_MainBar",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["xOffset"] = 120,
 			["additional_triggers"] = {
 			},
 			["icon"] = true,
@@ -10893,16 +10893,8 @@ WeakAurasSaved = {
 				},
 			},
 			["radius"] = 200,
-			["additional_triggers"] = {
-			},
+			["id"] = "G2_1_Hunter Avisos",
 			["selfPoint"] = "TOPLEFT",
-			["align"] = "LEFT",
-			["stagger"] = 0,
-			["frameStrata"] = 1,
-			["width"] = 30,
-			["rotation"] = 0,
-			["backgroundInset"] = 0,
-			["numTriggers"] = 1,
 			["trigger"] = {
 				["unit"] = "player",
 				["type"] = "aura",
@@ -10915,8 +10907,16 @@ WeakAurasSaved = {
 				["event"] = "Health",
 				["subeventPrefix"] = "SPELL",
 			},
+			["stagger"] = 0,
+			["frameStrata"] = 1,
+			["width"] = 30,
+			["rotation"] = 0,
+			["backgroundInset"] = 0,
+			["numTriggers"] = 1,
+			["align"] = "LEFT",
 			["height"] = 404.000030517578,
-			["id"] = "G2_1_Hunter Avisos",
+			["additional_triggers"] = {
+			},
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -11157,11 +11157,8 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
 				["use_name"] = false,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -11176,7 +11173,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["use_class"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -12577,7 +12577,7 @@ WeakAurasSaved = {
 			},
 		},
 		["StampedeNotUsable"] = {
-			["xOffset"] = 200,
+			["parent"] = "G1_MM_MainBar",
 			["untrigger"] = {
 				["spellName"] = 121818,
 			},
@@ -12656,16 +12656,16 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
-			["parent"] = "G1_MM_MainBar",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["xOffset"] = 200,
 			["additional_triggers"] = {
 			},
 			["icon"] = true,
@@ -13764,11 +13764,8 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_name"] = false,
 				["use_class"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -13783,7 +13780,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -14456,18 +14456,18 @@ WeakAurasSaved = {
 				["ownOnly"] = true,
 				["count"] = "3",
 				["custom_hide"] = "timed",
-				["power"] = "50",
+				["subeventSuffix"] = "_CAST_START",
 				["use_powertype"] = false,
 				["spellName"] = 19434,
 				["countOperator"] = "==",
 				["type"] = "status",
 				["use_health"] = false,
-				["unevent"] = "auto",
+				["power"] = "50",
 				["power_operator"] = ">=",
 				["percenthealth"] = "80",
 				["event"] = "Health",
 				["use_percentpower"] = false,
-				["subeventSuffix"] = "_CAST_START",
+				["unevent"] = "auto",
 				["use_spellName"] = true,
 				["spellIds"] = {
 				},
@@ -15206,12 +15206,12 @@ WeakAurasSaved = {
 				},
 				["destunit"] = "player",
 				["subeventPrefix"] = "SPELL",
+				["spellName"] = "\"Lucky\" Flip",
 				["custom_hide"] = "timed",
-				["debuffType"] = "HELPFUL",
-				["auraType"] = "BUFF",
-				["type"] = "event",
 				["unevent"] = "timed",
+				["type"] = "event",
 				["subeventSuffix"] = "_AURA_REMOVED",
+				["auraType"] = "BUFF",
 				["use_unit"] = true,
 				["itemName"] = 104476,
 				["event"] = "Combat Log",
@@ -15222,7 +15222,7 @@ WeakAurasSaved = {
 				},
 				["use_sourceunit"] = true,
 				["use_destunit"] = true,
-				["spellName"] = "\"Lucky\" Flip",
+				["debuffType"] = "HELPFUL",
 				["unit"] = "player",
 				["use_auraType"] = true,
 			},
@@ -15351,10 +15351,10 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["unit"] = "player",
 				["spellName"] = 0,
-				["unevent"] = "auto",
+				["subeventSuffix"] = "_CAST_START",
 				["type"] = "aura",
 				["use_combopoints"] = true,
-				["power"] = "5",
+				["unevent"] = "auto",
 				["power_operator"] = "==",
 				["countOperator"] = "<",
 				["event"] = "Combo Points",
@@ -15365,7 +15365,7 @@ WeakAurasSaved = {
 				},
 				["custom_hide"] = "timed",
 				["combopoints_operator"] = "==",
-				["subeventSuffix"] = "_CAST_START",
+				["power"] = "5",
 				["debuffType"] = "HELPFUL",
 				["combopoints"] = "5",
 			},
@@ -15390,11 +15390,8 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
 				["use_name"] = false,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -15409,7 +15406,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["use_class"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -15444,12 +15444,7 @@ WeakAurasSaved = {
 			},
 		},
 		["RapidFireUp"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "G1_MM_MainBar",
 			["untrigger"] = {
 				["spellName"] = 3045,
 			},
@@ -15533,11 +15528,16 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
-			["parent"] = "G1_MM_MainBar",
+			["xOffset"] = 160,
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["xOffset"] = 160,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["additional_triggers"] = {
 			},
 			["id"] = "RapidFireUp",
@@ -15682,17 +15682,17 @@ WeakAurasSaved = {
 				["event"] = "Combat Log",
 				["duration"] = "20",
 				["use_source"] = false,
-				["names"] = {
-					"Hemet's Heartseeker", -- [1]
-				},
+				["unit"] = "player",
 				["custom_hide"] = "timed",
 				["use_spellName"] = true,
 				["spellIds"] = {
 				},
 				["use_sourceunit"] = true,
 				["type"] = "aura",
-				["unit"] = "player",
 				["subeventPrefix"] = "SPELL",
+				["names"] = {
+					"Hemet's Heartseeker", -- [1]
+				},
 				["debuffType"] = "HELPFUL",
 			},
 			["text"] = true,
@@ -16016,7 +16016,7 @@ WeakAurasSaved = {
 			},
 		},
 		["GlaiveUpNoFocus"] = {
-			["xOffset"] = 120,
+			["parent"] = "G1_MM_MainBar",
 			["untrigger"] = {
 				["spellName"] = 117050,
 			},
@@ -16103,16 +16103,16 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
-			["parent"] = "G1_MM_MainBar",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["xOffset"] = 120,
 			["additional_triggers"] = {
 			},
 			["id"] = "GlaiveUpNoFocus",
@@ -16423,7 +16423,7 @@ WeakAurasSaved = {
 			},
 		},
 		["DisengageUp"] = {
-			["xOffset"] = 120,
+			["parent"] = "G1_MM_MainBar",
 			["untrigger"] = {
 				["spellName"] = 781,
 			},
@@ -16501,16 +16501,16 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
-			["parent"] = "G1_MM_MainBar",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["xOffset"] = 120,
 			["additional_triggers"] = {
 			},
 			["icon"] = true,
@@ -16876,11 +16876,8 @@ WeakAurasSaved = {
 						true, -- [1]
 					},
 				},
+				["use_name"] = false,
 				["use_class"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -16895,7 +16892,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -17069,7 +17069,7 @@ WeakAurasSaved = {
 					["scaley"] = 1,
 					["use_color"] = true,
 					["x"] = 0,
-					["duration_type"] = "seconds",
+					["scalex"] = 1,
 					["alpha"] = 0,
 					["colorB"] = 0,
 					["y"] = 0,
@@ -17078,8 +17078,8 @@ WeakAurasSaved = {
 					["colorA"] = 1,
 					["colorFunc"] = "return function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n    return r,g,b,a\nend",
 					["rotate"] = 0,
-					["scalex"] = 1,
 					["duration"] = "",
+					["duration_type"] = "seconds",
 				},
 				["finish"] = {
 					["type"] = "none",
@@ -17093,9 +17093,9 @@ WeakAurasSaved = {
 					"Longview", -- [1]
 				},
 				["use_unit"] = true,
-				["debuffType"] = "HELPFUL",
+				["spellName"] = "Sanha",
 				["use_attackable"] = true,
-				["custom_hide"] = "timed",
+				["debuffType"] = "HELPFUL",
 				["ownOnly"] = true,
 				["type"] = "aura",
 				["unevent"] = "auto",
@@ -17111,7 +17111,7 @@ WeakAurasSaved = {
 				["use_sourceunit"] = true,
 				["check"] = "event",
 				["unit"] = "player",
-				["spellName"] = "Sanha",
+				["custom_hide"] = "timed",
 				["subeventPrefix"] = "SPELL",
 			},
 			["text"] = true,
@@ -17341,17 +17341,17 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["use_destunit"] = true,
 				["unit"] = "player",
-				["custom_hide"] = "timed",
 				["debuffType"] = "HELPFUL",
 				["spellName"] = "Burning Mirror",
-				["unevent"] = "auto",
+				["custom_hide"] = "timed",
+				["subeventSuffix"] = "_AURA_REMOVED",
 				["use_remaining"] = true,
 				["event"] = "Cooldown Progress (Item)",
-				["auraType"] = "BUFF",
+				["unevent"] = "auto",
 				["use_source"] = false,
 				["remaining_operator"] = "<",
 				["use_itemName"] = true,
-				["subeventSuffix"] = "_AURA_REMOVED",
+				["auraType"] = "BUFF",
 				["type"] = "status",
 				["use_spellName"] = true,
 				["spellIds"] = {
@@ -17958,7 +17958,7 @@ WeakAurasSaved = {
 				["use_auraType"] = true,
 				["duration"] = "95",
 				["unit"] = "player",
-				["debuffType"] = "HELPFUL",
+				["custom_hide"] = "timed",
 				["subeventPrefix"] = "SPELL",
 				["type"] = "event",
 				["names"] = {
@@ -17975,8 +17975,8 @@ WeakAurasSaved = {
 				},
 				["use_sourceunit"] = true,
 				["use_destunit"] = true,
-				["custom_hide"] = "timed",
 				["spellName"] = "Spirit of the Warlords",
+				["debuffType"] = "HELPFUL",
 				["destunit"] = "player",
 			},
 			["desaturate"] = true,
@@ -18521,12 +18521,7 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 		},
 		["ChimShotUpNoFocus"] = {
-			["color"] = {
-				0.96078431372549, -- [1]
-				1, -- [2]
-				0.964705882352941, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "G1_MM_MainBar",
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
@@ -18597,11 +18592,16 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
-			["parent"] = "G1_MM_MainBar",
+			["xOffset"] = 0,
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["xOffset"] = 0,
+			["color"] = {
+				0.96078431372549, -- [1]
+				1, -- [2]
+				0.964705882352941, -- [3]
+				1, -- [4]
+			},
 			["additional_triggers"] = {
 			},
 			["id"] = "ChimShotUpNoFocus",
@@ -18644,12 +18644,7 @@ WeakAurasSaved = {
 			},
 		},
 		["StampedeUp"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "G1_MM_MainBar",
 			["untrigger"] = {
 				["spellName"] = 121818,
 			},
@@ -18733,11 +18728,16 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
-			["parent"] = "G1_MM_MainBar",
+			["xOffset"] = 200,
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["xOffset"] = 200,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["additional_triggers"] = {
 			},
 			["id"] = "StampedeUp",
@@ -19378,8 +19378,8 @@ WeakAurasSaved = {
 				["useCount"] = true,
 				["specificUnit"] = "pet",
 				["subeventPrefix"] = "SPELL",
+				["custom_hide"] = "timed",
 				["spellName"] = 0,
-				["debuffType"] = "HELPFUL",
 				["unit"] = "player",
 				["type"] = "aura",
 				["unevent"] = "auto",
@@ -19395,7 +19395,7 @@ WeakAurasSaved = {
 				["event"] = "Combo Points",
 				["combopoints_operator"] = "==",
 				["subeventSuffix"] = "_CAST_START",
-				["custom_hide"] = "timed",
+				["debuffType"] = "HELPFUL",
 				["combopoints"] = "5",
 			},
 			["desaturate"] = false,
@@ -19418,11 +19418,8 @@ WeakAurasSaved = {
 						true, -- [1]
 					},
 				},
+				["use_name"] = false,
 				["use_class"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -19437,7 +19434,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -19893,19 +19893,19 @@ WeakAurasSaved = {
 				["type"] = "aura",
 				["use_inverse"] = true,
 				["subeventSuffix"] = "_CAST_START",
-				["use_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["ownOnly"] = true,
 				["event"] = "Cooldown Progress (Spell)",
-				["names"] = {
-					"Steady Focus", -- [1]
-				},
+				["use_unit"] = true,
 				["spellName"] = 0,
 				["use_spellName"] = true,
 				["inverse"] = true,
 				["unit"] = "player",
 				["spellIds"] = {
 				},
-				["subeventPrefix"] = "SPELL",
+				["names"] = {
+					"Steady Focus", -- [1]
+				},
 				["unevent"] = "auto",
 				["debuffType"] = "HELPFUL",
 			},
@@ -20898,11 +20898,8 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_name"] = false,
 				["use_class"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -20917,7 +20914,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -21035,11 +21035,11 @@ WeakAurasSaved = {
 				["rem"] = "4",
 				["countOperator"] = "==",
 				["unit"] = "target",
-				["count"] = "0",
-				["use_spellId"] = true,
-				["inverse"] = true,
 				["spellIds"] = {
 				},
+				["use_spellId"] = true,
+				["count"] = "0",
+				["inverse"] = true,
 				["remOperator"] = "<=",
 				["event"] = "Health",
 				["subeventSuffix"] = "_CAST_START",
@@ -21064,11 +21064,8 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_name"] = false,
 				["use_class"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -21083,7 +21080,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -22305,9 +22305,9 @@ WeakAurasSaved = {
 				["sourceunit"] = "player",
 				["unit"] = "player",
 				["use_destunit"] = true,
-				["debuffType"] = "HELPFUL",
 				["custom_hide"] = "timed",
 				["spellName"] = "Burning Mirror",
+				["debuffType"] = "HELPFUL",
 				["type"] = "status",
 				["use_remaining"] = true,
 				["duration"] = "40",
@@ -22574,10 +22574,10 @@ WeakAurasSaved = {
 				["custom_hide"] = "timed",
 				["event"] = "Health",
 				["subeventPrefix"] = "SPELL",
-				["events"] = "CHECK_PET",
-				["custom"] = "function() return not WA_Pet_attack end",
 				["spellIds"] = {
 				},
+				["events"] = "CHECK_PET",
+				["custom"] = "function() return not WA_Pet_attack end",
 				["subeventSuffix"] = "_CAST_START",
 				["check"] = "event",
 				["unit"] = "player",
@@ -22790,17 +22790,17 @@ WeakAurasSaved = {
 				["use_source"] = false,
 				["duration"] = "20",
 				["event"] = "Combat Log",
-				["names"] = {
-					"Oglethorpe's Missile Splitter", -- [1]
-				},
+				["unit"] = "player",
 				["custom_hide"] = "timed",
 				["use_spellName"] = true,
 				["spellIds"] = {
 				},
 				["use_sourceunit"] = true,
 				["type"] = "aura",
-				["unit"] = "player",
 				["subeventPrefix"] = "SPELL",
+				["names"] = {
+					"Oglethorpe's Missile Splitter", -- [1]
+				},
 				["debuffType"] = "HELPFUL",
 			},
 			["text"] = true,
@@ -23089,11 +23089,8 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_name"] = false,
 				["use_class"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -23108,7 +23105,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -23251,12 +23251,7 @@ WeakAurasSaved = {
 			["id"] = "G1_MM_Sniper",
 		},
 		["ChimShotUp"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "G1_MM_MainBar",
 			["untrigger"] = {
 				["spellName"] = 53209,
 			},
@@ -23307,11 +23302,8 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_name"] = false,
 				["use_class"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["role"] = {
 					["multi"] = {
 					},
@@ -23326,7 +23318,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -23335,11 +23330,16 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
-			["parent"] = "G1_MM_MainBar",
+			["xOffset"] = 0,
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
 			["auto"] = true,
-			["xOffset"] = 0,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -23652,17 +23652,17 @@ WeakAurasSaved = {
 				["use_source"] = false,
 				["duration"] = "20",
 				["event"] = "Combat Log",
-				["names"] = {
-					"Megawatt Filament", -- [1]
-				},
+				["unit"] = "player",
 				["spellName"] = "Sanha",
 				["use_spellName"] = true,
 				["spellIds"] = {
 				},
 				["use_sourceunit"] = true,
 				["type"] = "aura",
-				["unit"] = "player",
 				["subeventPrefix"] = "SPELL",
+				["names"] = {
+					"Megawatt Filament", -- [1]
+				},
 				["debuffType"] = "HELPFUL",
 			},
 			["text"] = true,
@@ -24457,17 +24457,7 @@ WeakAurasSaved = {
 				},
 			},
 			["sort"] = "none",
-			["trigger"] = {
-				["unit"] = "player",
-				["type"] = "aura",
-				["spellIds"] = {
-				},
-				["subeventSuffix"] = "_CAST_START",
-				["debuffType"] = "HELPFUL",
-				["names"] = {
-				},
-				["event"] = "Health",
-				["subeventPrefix"] = "SPELL",
+			["additional_triggers"] = {
 			},
 			["space"] = 9,
 			["background"] = "None",
@@ -24488,9 +24478,19 @@ WeakAurasSaved = {
 				},
 			},
 			["radius"] = 200,
-			["id"] = "G2_6_Hunter Trinkets",
+			["align"] = "CENTER",
 			["selfPoint"] = "BOTTOM",
-			["additional_triggers"] = {
+			["trigger"] = {
+				["unit"] = "player",
+				["type"] = "aura",
+				["spellIds"] = {
+				},
+				["subeventSuffix"] = "_CAST_START",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+				},
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
 			},
 			["stagger"] = 0,
 			["frameStrata"] = 1,
@@ -24498,7 +24498,7 @@ WeakAurasSaved = {
 			["rotation"] = 0,
 			["backgroundInset"] = 0,
 			["numTriggers"] = 1,
-			["align"] = "CENTER",
+			["id"] = "G2_6_Hunter Trinkets",
 			["height"] = 576.000061035156,
 			["borderOffset"] = 16,
 			["load"] = {
@@ -24581,19 +24581,19 @@ WeakAurasSaved = {
 				["type"] = "aura",
 				["use_inverse"] = true,
 				["subeventSuffix"] = "_CAST_START",
+				["subeventPrefix"] = "SPELL",
+				["ownOnly"] = true,
+				["event"] = "Cooldown Progress (Spell)",
 				["names"] = {
 					"Thrill of the Hunt", -- [1]
 				},
-				["ownOnly"] = true,
-				["event"] = "Cooldown Progress (Spell)",
-				["use_unit"] = true,
 				["useCount"] = true,
 				["use_spellName"] = true,
 				["spellIds"] = {
 				},
 				["custom_hide"] = "timed",
 				["unit"] = "player",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["unevent"] = "auto",
 				["debuffType"] = "HELPFUL",
 			},
@@ -25019,17 +25019,17 @@ WeakAurasSaved = {
 				["use_source"] = false,
 				["duration"] = "20",
 				["event"] = "Combat Log",
-				["names"] = {
-					"Focus Fire", -- [1]
-				},
+				["unit"] = "player",
 				["custom_hide"] = "timed",
 				["use_spellName"] = true,
 				["spellIds"] = {
 				},
 				["use_sourceunit"] = true,
 				["type"] = "aura",
-				["unit"] = "player",
 				["subeventPrefix"] = "SPELL",
+				["names"] = {
+					"Focus Fire", -- [1]
+				},
 				["debuffType"] = "HELPFUL",
 			},
 			["text"] = true,
@@ -25114,6 +25114,14 @@ WeakAurasSaved = {
 				},
 			},
 			["sort"] = "none",
+			["selfPoint"] = "LEFT",
+			["space"] = 0,
+			["background"] = "None",
+			["expanded"] = true,
+			["constantFactor"] = "RADIUS",
+			["regionType"] = "dynamicgroup",
+			["backgroundInset"] = 0,
+			["borderOffset"] = 16,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -25128,16 +25136,8 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["space"] = 0,
-			["background"] = "None",
-			["expanded"] = true,
-			["constantFactor"] = "RADIUS",
-			["regionType"] = "dynamicgroup",
-			["borderOffset"] = 16,
-			["yOffset"] = 212.765991210938,
-			["selfPoint"] = "LEFT",
 			["id"] = "Raid Assist Imported",
-			["backgroundInset"] = 0,
+			["yOffset"] = 212.765991210938,
 			["frameStrata"] = 1,
 			["stagger"] = 0,
 			["radius"] = 200,

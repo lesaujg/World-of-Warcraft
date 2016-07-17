@@ -59,6 +59,17 @@ KethoInstanceTimerDB = {
 					["zone"] = "Onyxia's Lair",
 					["start"] = "08:56",
 				}, -- [5]
+				{
+					["difficulty"] = 4,
+					["party"] = {
+					},
+					["time"] = 270,
+					["end"] = "10:13",
+					["date"] = "2016.07.16",
+					["start"] = "10:08",
+					["zone"] = "Throne of the Four Winds",
+					["instanceType"] = "raid",
+				}, -- [6]
 			},
 			["startTime"] = "",
 			["timeInstance"] = 0,
@@ -342,6 +353,28 @@ KethoInstanceTimerDB = {
 					["zone"] = "Trial of the Champion",
 					["instanceType"] = "party",
 				}, -- [16]
+				{
+					["difficulty"] = 2,
+					["party"] = {
+					},
+					["time"] = 260,
+					["end"] = "21:38",
+					["date"] = "2016.07.16",
+					["instanceType"] = "party",
+					["zone"] = "Trial of the Champion",
+					["start"] = "21:34",
+				}, -- [17]
+				{
+					["difficulty"] = 4,
+					["party"] = {
+					},
+					["time"] = 217,
+					["end"] = "21:58",
+					["date"] = "2016.07.16",
+					["instanceType"] = "raid",
+					["zone"] = "Throne of the Four Winds",
+					["start"] = "21:55",
+				}, -- [18]
 			},
 			["startTime"] = "",
 			["timeInstance"] = 0,
@@ -665,6 +698,17 @@ KethoInstanceTimerDB = {
 					["zone"] = "Trial of the Champion",
 					["start"] = "21:46",
 				}, -- [25]
+				{
+					["difficulty"] = 2,
+					["party"] = {
+					},
+					["time"] = 256,
+					["end"] = "21:02",
+					["date"] = "2016.07.16",
+					["start"] = "20:57",
+					["zone"] = "Trial of the Champion",
+					["instanceType"] = "party",
+				}, -- [26]
 			},
 			["startTime"] = "",
 			["timeInstance"] = 0,
