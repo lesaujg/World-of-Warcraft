@@ -375,6 +375,17 @@ KethoInstanceTimerDB = {
 					["zone"] = "Throne of the Four Winds",
 					["start"] = "21:55",
 				}, -- [18]
+				{
+					["difficulty"] = 2,
+					["party"] = {
+					},
+					["time"] = 255,
+					["end"] = "21:01",
+					["date"] = "2016.07.17",
+					["start"] = "20:56",
+					["zone"] = "Trial of the Champion",
+					["instanceType"] = "party",
+				}, -- [19]
 			},
 			["startTime"] = "",
 			["timeInstance"] = 0,
@@ -709,6 +720,17 @@ KethoInstanceTimerDB = {
 					["zone"] = "Trial of the Champion",
 					["instanceType"] = "party",
 				}, -- [26]
+				{
+					["difficulty"] = 4,
+					["party"] = {
+					},
+					["time"] = 205,
+					["end"] = "21:51",
+					["date"] = "2016.07.17",
+					["start"] = "21:48",
+					["zone"] = "Ulduar",
+					["instanceType"] = "raid",
+				}, -- [27]
 			},
 			["startTime"] = "",
 			["timeInstance"] = 0,

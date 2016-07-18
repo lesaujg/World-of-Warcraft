@@ -49,73 +49,39 @@ Grid2DB = {
 	},
 	["profiles"] = {
 		["Orig - Sisters of Elune"] = {
-			["statusMap"] = {
-				["corner-top-left"] = {
-					["buff-EnvelopingMist-mine"] = 99,
+			["statuses"] = {
+				["buff-RenewingMist-mine"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0,
+						["g"] = 1,
+						["r"] = 0.5,
+					},
+					["useSpellId"] = true,
+					["mine"] = true,
+					["spellName"] = 119611,
 				},
-				["heals"] = {
-					["heals-incoming"] = 99,
+				["buff-EnvelopingMist-mine"] = {
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0.2,
+						["g"] = 1,
+						["r"] = 0.2,
+					},
+					["type"] = "buff",
+					["mine"] = true,
+					["spellName"] = 124682,
 				},
-				["side-top"] = {
-					["buff-LifeCocoon"] = 99,
-				},
-				["text-down"] = {
-					["name"] = 99,
-				},
-				["heals-color"] = {
-					["classcolor"] = 99,
-				},
-				["icon-left"] = {
-					["raid-icon-player"] = 155,
-				},
-				["alpha"] = {
-					["offline"] = 97,
-					["range"] = 99,
-					["death"] = 98,
-				},
-				["corner-top-right"] = {
-					["buff-RenewingMist-mine"] = 99,
-				},
-				["text-down-color"] = {
-					["classcolor"] = 99,
-				},
-				["text-up"] = {
-					["charmed"] = 65,
-					["feign-death"] = 96,
-					["health-deficit"] = 50,
-					["offline"] = 93,
-					["vehicle"] = 70,
-					["death"] = 95,
-				},
-				["health"] = {
-					["health-current"] = 99,
-				},
-				["border"] = {
-					["debuff-Disease"] = 80,
-					["health-low"] = 55,
-					["debuff-Poison"] = 90,
-					["target"] = 50,
-					["debuff-Magic"] = 70,
-					["debuff-Curse"] = 60,
-				},
-				["corner-bottom-left"] = {
-					["threat"] = 99,
-				},
-				["text-up-color"] = {
-					["charmed"] = 65,
-					["feign-death"] = 96,
-					["health-deficit"] = 50,
-					["offline"] = 93,
-					["vehicle"] = 70,
-					["death"] = 95,
-				},
-				["health-color"] = {
-					["classcolor"] = 99,
-				},
-				["icon-center"] = {
-					["ready-check"] = 150,
-					["raid-debuffs"] = 155,
-					["death"] = 155,
+				["buff-LifeCocoon"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0.8,
+						["g"] = 0,
+						["r"] = 0.4,
+					},
+					["spellName"] = 116849,
 				},
 			},
 			["versions"] = {
@@ -300,39 +266,73 @@ Grid2DB = {
 					["fontSize"] = 8,
 				},
 			},
-			["statuses"] = {
-				["buff-RenewingMist-mine"] = {
-					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0,
-						["g"] = 1,
-						["r"] = 0.5,
-					},
-					["useSpellId"] = true,
-					["mine"] = true,
-					["spellName"] = 119611,
+			["statusMap"] = {
+				["corner-top-left"] = {
+					["buff-EnvelopingMist-mine"] = 99,
 				},
-				["buff-EnvelopingMist-mine"] = {
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0.2,
-						["g"] = 1,
-						["r"] = 0.2,
-					},
-					["type"] = "buff",
-					["mine"] = true,
-					["spellName"] = 124682,
+				["heals"] = {
+					["heals-incoming"] = 99,
 				},
-				["buff-LifeCocoon"] = {
-					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0.8,
-						["g"] = 0,
-						["r"] = 0.4,
-					},
-					["spellName"] = 116849,
+				["side-top"] = {
+					["buff-LifeCocoon"] = 99,
+				},
+				["text-down"] = {
+					["name"] = 99,
+				},
+				["heals-color"] = {
+					["classcolor"] = 99,
+				},
+				["icon-left"] = {
+					["raid-icon-player"] = 155,
+				},
+				["alpha"] = {
+					["offline"] = 97,
+					["range"] = 99,
+					["death"] = 98,
+				},
+				["corner-top-right"] = {
+					["buff-RenewingMist-mine"] = 99,
+				},
+				["text-down-color"] = {
+					["classcolor"] = 99,
+				},
+				["text-up"] = {
+					["charmed"] = 65,
+					["feign-death"] = 96,
+					["health-deficit"] = 50,
+					["offline"] = 93,
+					["vehicle"] = 70,
+					["death"] = 95,
+				},
+				["health"] = {
+					["health-current"] = 99,
+				},
+				["border"] = {
+					["debuff-Disease"] = 80,
+					["health-low"] = 55,
+					["debuff-Poison"] = 90,
+					["target"] = 50,
+					["debuff-Magic"] = 70,
+					["debuff-Curse"] = 60,
+				},
+				["corner-bottom-left"] = {
+					["threat"] = 99,
+				},
+				["text-up-color"] = {
+					["charmed"] = 65,
+					["feign-death"] = 96,
+					["health-deficit"] = 50,
+					["offline"] = 93,
+					["vehicle"] = 70,
+					["death"] = 95,
+				},
+				["health-color"] = {
+					["classcolor"] = 99,
+				},
+				["icon-center"] = {
+					["ready-check"] = 150,
+					["raid-debuffs"] = 155,
+					["death"] = 155,
 				},
 			},
 		},
@@ -935,97 +935,6 @@ Grid2DB = {
 					["font"] = "Friz Quadrata TT",
 				},
 			},
-			["statuses"] = {
-				["debuff-Forbearance"] = {
-					["type"] = "debuff",
-					["spellName"] = 25771,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 0,
-						["b"] = 0,
-					},
-				},
-				["buff-BeaconOfLight-mine"] = {
-					["spellName"] = 53563,
-					["type"] = "buff",
-					["mine"] = true,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 1,
-					},
-				},
-				["buff-HandOfSalvation-mine"] = {
-					["spellName"] = 1038,
-					["type"] = "buff",
-					["mine"] = true,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 0.8,
-						["g"] = 0.8,
-						["b"] = 0.7,
-					},
-				},
-				["buff-HandOfProtection-mine"] = {
-					["spellName"] = 1022,
-					["type"] = "buff",
-					["mine"] = true,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 1,
-					},
-				},
-				["buff-HandOfSalvation"] = {
-					["type"] = "buff",
-					["spellName"] = 1038,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 1,
-					},
-				},
-				["buff-BeaconOfLight"] = {
-					["type"] = "buff",
-					["spellName"] = 53563,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 0.7,
-						["g"] = 1,
-						["b"] = 1,
-					},
-				},
-				["buff-DivineShield-mine"] = {
-					["spellName"] = 642,
-					["type"] = "buff",
-					["mine"] = true,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 1,
-					},
-				},
-				["buff-DivineProtection-mine"] = {
-					["spellName"] = 498,
-					["type"] = "buff",
-					["mine"] = true,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 1,
-					},
-				},
-			},
-			["versions"] = {
-				["Grid2"] = 5,
-				["Grid2RaidDebuffs"] = 1,
-			},
 			["statusMap"] = {
 				["corner-top-left"] = {
 					["buff-BeaconOfLight"] = 99,
@@ -1113,6 +1022,97 @@ Grid2DB = {
 				},
 				["heals"] = {
 					["heals-incoming"] = 99,
+				},
+			},
+			["versions"] = {
+				["Grid2"] = 5,
+				["Grid2RaidDebuffs"] = 1,
+			},
+			["statuses"] = {
+				["debuff-Forbearance"] = {
+					["type"] = "debuff",
+					["spellName"] = 25771,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 0,
+						["b"] = 0,
+					},
+				},
+				["buff-BeaconOfLight-mine"] = {
+					["spellName"] = 53563,
+					["type"] = "buff",
+					["mine"] = true,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["buff-DivineProtection-mine"] = {
+					["spellName"] = 498,
+					["type"] = "buff",
+					["mine"] = true,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["buff-HandOfProtection-mine"] = {
+					["spellName"] = 1022,
+					["type"] = "buff",
+					["mine"] = true,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["buff-HandOfSalvation"] = {
+					["type"] = "buff",
+					["spellName"] = 1038,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["buff-BeaconOfLight"] = {
+					["type"] = "buff",
+					["spellName"] = 53563,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 0.7,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["buff-DivineShield-mine"] = {
+					["spellName"] = 642,
+					["type"] = "buff",
+					["mine"] = true,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["buff-HandOfSalvation-mine"] = {
+					["spellName"] = 1038,
+					["type"] = "buff",
+					["mine"] = true,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 0.8,
+						["g"] = 0.8,
+						["b"] = 0.7,
+					},
 				},
 			},
 		},
@@ -1543,17 +1543,6 @@ Grid2DB = {
 					["mine"] = true,
 					["spellName"] = 48438,
 				},
-				["buff-Rejuvenation-mine"] = {
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0.6,
-						["g"] = 0,
-						["r"] = 1,
-					},
-					["type"] = "buff",
-					["mine"] = true,
-					["spellName"] = 774,
-				},
 				["buff-Regrowth-mine"] = {
 					["color1"] = {
 						["a"] = 1,
@@ -1564,6 +1553,17 @@ Grid2DB = {
 					["type"] = "buff",
 					["mine"] = true,
 					["spellName"] = 8936,
+				},
+				["buff-Rejuvenation-mine"] = {
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0.6,
+						["g"] = 0,
+						["r"] = 1,
+					},
+					["type"] = "buff",
+					["mine"] = true,
+					["spellName"] = 774,
 				},
 				["buff-Lifebloom-mine"] = {
 					["color2"] = {

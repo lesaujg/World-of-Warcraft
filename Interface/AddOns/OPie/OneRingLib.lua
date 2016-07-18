@@ -1,4 +1,5 @@
-local versionMajor, versionRev, L, ADDON, T, ORI = 3, 85, newproxy(true), ...
+local versionMajor, versionRev, L, ADDON, T, ORI = 3, 86, newproxy(true), ...
+local is7 = select(4, GetBuildInfo()) >= 7e4
 local api, OR_Rings, OR_ModifierLockState, TL, EV, OR_LoadedState = {ext={ActionBook=T.ActionBook},lang=L}, {}, nil, T.L, T.Evie, 1
 local defaultConfig = {ClickActivation=false, IndicationOffsetX=0, IndicationOffsetY=0, RingAtMouse=false, RingScale=1, ClickPriority=true, CenterAction=false, MouseBucket=1, NoClose=false, SliceBinding=false, SliceBindingString="1 2 3 4 5 6 7 8 9 0", SelectedSliceBind="", PrimaryButton="BUTTON4", SecondaryButton="BUTTON5", OpenNestedRingButton="BUTTON3", ScrollNestedRingUpButton="", ScrollNestedRingDownButton="", UseDefaultBindings=true}
 local configRoot, configInstance, activeProfile, PersistentStorageInfo, optionValidators, optionsMeta = {}, nil, nil, {}, {}, {__index=defaultConfig}
@@ -48,7 +49,7 @@ local function tostringf(b)
 	return b and "true" or "nil"
 end
 local function getSpecCharIdent()
-	local tg = GetActiveSpecGroup()
+	local tg = is7 and GetSpecialization() or GetActiveSpecGroup()
 	return (tg == 1 and "%s" or "%s-%d"):format(charId, tg)
 end
 local safequote do

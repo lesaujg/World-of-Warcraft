@@ -1,6 +1,7 @@
 local api, L, RK, conf, ORI, _, T = {}, OneRingLib.lang, OneRingLib.ext.RingKeeper, OneRingLib.ext.config, OneRingLib.ext.OPieUI, ...
 local AB = assert(T.ActionBook:compatible(2,14), "A compatible version of ActionBook is required")
 local gfxBase, EV = ([[Interface\AddOns\%s\gfx\]]):format((...)), T.Evie
+local is7 = select(4, GetBuildInfo()) >= 7e4
 
 local FULLNAME, SHORTNAME do
 	function EV.PLAYER_LOGIN()
@@ -82,7 +83,8 @@ local function CreateButton(parent, width)
 end
 local function setIcon(self, path, ext, slice)
 	if type(slice) == "table" and slice[1] == "macrotext" and type(slice[2]) == "string" then
-		local lp = (path or "interface/icons/temp"):gsub("\\", "/"):lower()
+		local p2 = path or "interface/icons/temp"
+		local lp = type(p2) == "string" and p2:gsub("\\", "/"):lower()
 		if lp == "interface/icons/temp" or lp == "interface/icons/inv_misc_questionmark" then
 			for sidlist in slice[2]:gmatch("{{spell:([%d/]+)}}") do
 				for sid in sidlist:gmatch("%d+") do
@@ -335,7 +337,10 @@ ringDetail = CreateFrame("Frame", nil, ringContainer) do
 	ringDetail.name = CreateFrame("EditBox", nil, ringDetail)
 	ringDetail.name:SetHeight(20) ringDetail.name:SetPoint("TOPLEFT", 7, -7) ringDetail.name:SetPoint("TOPRIGHT", -7, -7) ringDetail.name:SetFontObject(GameFontNormalLarge) ringDetail.name:SetAutoFocus(false)
 	prepEditBox(ringDetail.name, function(self) api.setRingProperty("name", self:GetText()) end)
-	local tex = ringDetail.name:CreateTexture() tex:SetPoint("BOTTOMLEFT", 0, -2) tex:SetPoint("BOTTOMRIGHT", 0, -2) tex:SetHeight(1) tex:SetTexture(1,0.82,0,0.5)
+	local tex = ringDetail.name:CreateTexture()
+	tex:SetHeight(1) tex:SetPoint("BOTTOMLEFT", 0, -2) tex:SetPoint("BOTTOMRIGHT", 0, -2)
+	tex[is7 and "SetColorTexture" or "SetTexture"](tex, 1,0.82,0)
+	tex:SetAlpha(0.5)
 	ringDetail.scope = CreateFrame("Frame", "RKC_RingScopeDropDown", ringDetail, "UIDropDownMenuTemplate")
 	ringDetail.scope:SetPoint("TOPLEFT", 250, -37) UIDropDownMenu_SetWidth(ringDetail.scope, 250)
 	ringDetail.scope.label = ringDetail.scope:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
@@ -463,7 +468,8 @@ sliceDetail = CreateFrame("Frame", nil, ringContainer) do
 		local b = sliceDetail.color.button
 		b:SetSize(14, 14) b:SetPoint("LEFT")
 		b.bg = sliceDetail.color.button:CreateTexture(nil, "BACKGROUND")
-		b.bg:SetSize(12, 12) b.bg:SetPoint("CENTER") b.bg:SetTexture(1,1,1)
+		b.bg:SetSize(12, 12) b.bg:SetPoint("CENTER")
+		b.bg[is7 and "SetColorTexture" or "SetTexture"](b.bg, 1,1,1)
 		b:SetNormalTexture("Interface/ChatFrame/ChatFrameColorSwatch")
 		b:SetScript("OnEnter", function(self) self.bg:SetVertexColor(NORMAL_FONT_COLOR.r, NORMAL_FONT_COLOR.g, NORMAL_FONT_COLOR.b) end)
 		b:SetScript("OnLeave", function(self) self.bg:SetVertexColor(1, 1, 1) end)
@@ -531,13 +537,14 @@ sliceDetail = CreateFrame("Frame", nil, ringContainer) do
 				self.Down:SetEnabled(icontex[value + #icons + 1] ~= nil)
 				for i=0,#icons do
 					local ico = icons[i].tex
-					ico:SetToFileData(icontex[i+value])
+					ico[is7 and "SetTexture" or "SetToFileData"](ico, icontex[i+value])
 					local tex = ico:GetTexture()
 					icons[i]:SetChecked(f.selection == tex)
 					selectedIcon = f.selection == tex and icons[i] or selectedIcon
 				end
 			end)
 		frame:SetScript("OnShow", function(self)
+			frame:SetFrameLevel(sliceDetail.icon:GetFrameLevel()+4)
 			icontex = GetMacroIcons()
 			GetMacroItemIcons(icontex)
 			slider:SetMinMaxValues(1, #icontex-#icons)
@@ -718,7 +725,8 @@ newSlice = CreateFrame("Frame", nil, ringContainer) do
 	
 	local catbg = newSlice:CreateTexture(nil, "BACKGROUND")
 	catbg:SetPoint("TOPLEFT", 2, -2) catbg:SetPoint("RIGHT", newSlice, "RIGHT", -2, 0) catbg:SetPoint("BOTTOM", 0, 2)
-	catbg:SetTexture(0,0,0,0.65)
+	catbg[is7 and "SetColorTexture" or "SetTexture"](catbg, 0,0,0)
+	catbg:SetAlpha(0.65)
 	local function onClick(self) PlaySound("UChatScrollButton") selectCategory(self:GetID()) end
 	for i=1,22 do
 		local b = CreateFrame("Button", nil, newSlice)

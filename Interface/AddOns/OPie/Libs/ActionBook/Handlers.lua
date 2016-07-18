@@ -1,5 +1,6 @@
 local _, T = ...
 if T.SkipLocalActionBook then return end
+local is7 = select(4, GetBuildInfo()) >= 7e4
 local AB = assert(T.ActionBook:compatible(2,14), "A compatible version of ActionBook is required")
 local RW = assert(AB:compatible("Rewire",1,2), "A compatible version of Rewire is required")
 local EV = assert(T.Evie)
@@ -21,12 +22,15 @@ do -- spell: spell ID + mount spell ID
 		id, n = GetShapeshiftFormInfo(id)
 		return n
 	end
+	local GetMountInfo = is7 and C_MountJournal.GetMountInfoByID or C_MountJournal.GetMountInfo
 	local actionMap, spellMap, mountMap, spellMountID = {}, {}, {}, {}
 	local companionUpdate do -- maintain mountMap/spellMountID
 		function companionUpdate(_event)
 			local changed, myFactionId = false, UnitFactionGroup("player") == "Horde" and 0 or 1
-			for i=1, C_MountJournal.GetNumMounts() do
-				local exists, oldMap, _1, sid, _3, _4, _5, _6, _7, factionLocked, factionId, hide, have = false, nil, C_MountJournal.GetMountInfo(i)
+			local idm = is7 and C_MountJournal.GetMountIDs()
+			for i=1, idm and #idm or C_MountJournal.GetNumMounts() do
+				i = idm and idm[i] or i
+				local exists, oldMap, _1, sid, _3, _4, _5, _6, _7, factionLocked, factionId, hide, have = false, nil, GetMountInfo(i)
 				spellMountID[sid], oldMap, mountMap[sid] = i, mountMap[sid], nil
 				if not hide and (not factionLocked or factionId == myFactionId) then
 					local sname, srank, rname = GetSpellInfo(sid)
@@ -40,8 +44,8 @@ do -- spell: spell ID + mount spell ID
 		end
 		local rname, _, ricon = GetSpellInfo(150544)
 		mountMap[150544], actionMap[150544] = 150544, AB:CreateActionSlot(function()
-			return HasFullControl() and not IsIndoors(), 0, ricon, rname, 0, 0, 0, GameTooltip.SetMountBySpellID, 150544
-		end, nil, "func", C_MountJournal.Summon, 0)
+			return HasFullControl() and not IsIndoors(), 0, ricon, rname, 0, 0, 0, GameTooltip[is7 and "SetSpellByID" or "SetMountBySpellID"], 150544
+		end, nil, "func", C_MountJournal[is7 and "SummonByID" or "Summon"], 0)
 		EV.RegisterEvent("COMPANION_LEARNED", companionUpdate)
 		EV.RegisterEvent("PLAYER_ENTERING_WORLD", companionUpdate)
 		EV.RegisterEvent("MOUNT_JOURNAL_USABILITY_CHANGED", companionUpdate)
@@ -56,10 +60,10 @@ do -- spell: spell ID + mount spell ID
 		if csid then
 			local usable = (not (InCombatLockdown() or IsIndoors())) and HasFullControl() and not UnitIsDeadOrGhost("player")
 			local cdStart, cdLength = GetSpellCooldown(csid)
-			local cname, acsid, icon, active, usable2 = C_MountJournal.GetMountInfo(spellMountID[csid])
+			local cname, acsid, icon, active, usable2 = GetMountInfo(spellMountID[csid])
 			if acsid ~= csid then
 				companionUpdate()
-				cname, acsid, icon, active, usable2 = C_MountJournal.GetMountInfo(spellMountID[csid])
+				cname, acsid, icon, active, usable2 = GetMountInfo(spellMountID[csid])
 			end
 			return usable and cdStart == 0 and usable2, active and 1 or 0, icon, cname, 0, (cdStart or 0) > 0 and (cdStart+cdLength-time) or 0, cdLength, GameTooltip.SetMountBySpellID, csid
 		end
@@ -397,7 +401,7 @@ end
 do -- equipmentset: equipment sets by name
 	local setMap, tex = {}, UIParent:CreateTexture()
 	local function resolveIcon(fid)
-		return type(fid) == "number" and (tex:SetToFileData(fid) and nil or tex:GetTexture()) or ("Interface/Icons/" .. (fid or "INV_Misc_QuestionMark"))
+		return type(fid) == "number" and (is7 and fid or tex:SetToFileData(fid) and nil or tex:GetTexture()) or ("Interface/Icons/" .. (fid or "INV_Misc_QuestionMark"))
 	end
 	local function equipmentsetHint(name)
 		local icon, _, active, total, equipped, available = GetEquipmentSetInfoByName(name)

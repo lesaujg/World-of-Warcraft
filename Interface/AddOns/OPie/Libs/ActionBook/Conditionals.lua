@@ -1,5 +1,6 @@
 local _, T = ...
 if T.SkipLocalActionBook then return end
+local is7 = select(4, GetBuildInfo()) >= 7e4
 local KR, EV = assert(T.ActionBook:compatible("Kindred", 1,7), "A compatible version of Kindred is required"), T.Evie
 local playerClassLocal, playerClass = UnitClass("player")
 
@@ -86,8 +87,8 @@ do -- spec:id/name
 				s = id .. "/" .. name
 			end
 		end
-		if sg then
-			s = s .. "/" .. sg
+		if sg and (idx or not is7) then
+			s = s .. "/" .. (is7 and idx or sg)
 		end
 		KR:SetStateConditionalValue("spec", s)
 	end
@@ -201,7 +202,9 @@ do -- outpost
 	EV.RegisterEvent("SPELLS_CHANGED", sync)
 	sync()
 end
-do -- glyph:name/glyph id
+if is7 then
+	KR:SetStateConditionalValue("glyph", "")
+else -- glyph:name/glyph id
 	local names = {} do
 		local nameFilter = ""
 		hooksecurefunc("SetGlyphNameFilter", function(name)

@@ -2,6 +2,7 @@ local _, T = ...
 if T.SkipLocalActionBook then return end
 local AB, mark = assert(T.ActionBook:compatible(2, 14), "A compatible version of ActionBook is required"), {}
 local RW = assert(T.ActionBook:compatible("Rewire", 1,4), "A compatible version of Rewire is required")
+local is7 = select(4, GetBuildInfo()) >= 7e4
 
 do -- spellbook
 	local function addEntry(add, at, ok, st, sid, ...)
@@ -61,7 +62,7 @@ AB:AugmentCategory("Items", function(_, add)
 		end
 	end
 end)
-do -- Battle pets
+if not is7 then -- Battle pets
 	local running, sourceFilters, typeFilters, flagFilters, search = false, {}, {}, {[LE_PET_JOURNAL_FLAG_COLLECTED]=1, [LE_PET_JOURNAL_FLAG_NOT_COLLECTED]=1}, ""
 	hooksecurefunc(C_PetJournal, "SetSearchFilter", function(filter) search = filter end)
 	hooksecurefunc(C_PetJournal, "ClearSearchFilter", function() if not running then search = "" end end)
@@ -112,8 +113,10 @@ end
 AB:AugmentCategory("Mounts", function(_, add)
 	if GetSpellInfo(150544) then add("spell", 150544) end
 	local myFactionId = UnitFactionGroup("player") == "Horde" and 0 or 1
-	for i=1, C_MountJournal.GetNumMounts() do
-		local _1, sid, _3, _4, _5, _6, _7, factionLocked, factionId, hide, have = C_MountJournal.GetMountInfo(i)
+	local idm = is7 and C_MountJournal.GetMountIDs()
+	local gmi = is7 and C_MountJournal.GetMountInfoByID or C_MountJournal.GetMountInfo
+	for i=1, idm and #idm or C_MountJournal.GetNumMounts() do
+		local _1, sid, _3, _4, _5, _6, _7, factionLocked, factionId, hide, have = gmi(idm and idm[i] or i)
 		local sname = GetSpellInfo(sid)
 		if have and not hide and (not factionLocked or factionId == myFactionId) and GetSpellInfo(sname) ~= nil then
 			add("spell", sid)
@@ -174,29 +177,63 @@ do -- data broker launchers
 		end
 	end)
 end
-if C_ToyBox then
-	local tx, fs, search = C_ToyBox, {}
+do -- toys
+	local tx, search, push, pop = C_ToyBox
 	hooksecurefunc(C_ToyBox, "SetFilterString", function(s) search = s end) -- No corresponding Get
-	AB:AugmentCategory("Toys", function(_, add)
-		local ns, search = C_PetJournal.GetNumPetSources(), search, tx.SetFilterString("")
-		local fc = tx.GetFilterCollected(), tx.SetFilterCollected(true)
-		local fu = tx.GetFilterUncollected(), tx.SetFilterUncollected(false)
-		for i=1,ns do
-			fs[i] = tx.IsSourceTypeFiltered(i), tx.SetFilterSourceType(i, false)
+	if is7 then
+		local fs, fc, fu, fsearch = {}
+		function push()
+			local ns = C_PetJournal.GetNumPetSources()
+			fsearch = search, tx.SetFilterString("")
+			fc = tx.GetCollectedShown(), tx.SetCollectedShown(true)
+			fu = tx.GetUncollectedShown(), tx.SetUncollectedShown(false)
+			for i=1,ns do
+				fs[i] = tx.IsSourceTypeFilterChecked(i)
+			end
+			tx.SetAllSourceTypeFilters(true)
+			tx.ForceToyRefilter()
 		end
-		C_ToyBox.FilterToys()
+		function pop()
+			local ns = C_PetJournal.GetNumPetSources()
+			tx.SetFilterString(fsearch or "")
+			tx.SetCollectedShown(fc)
+			tx.SetUncollectedShown(fu)
+			for i=1,ns do
+				tx.SetSourceTypeFilter(i, not fs[i])
+			end
+			tx.ForceToyRefilter()
+		end
+	else
+		local fs, fc, fu, fsearch = {}
+		function push()
+			local ns = C_PetJournal.GetNumPetSources()
+			fsearch = search, tx.SetFilterString("")
+			fc = tx.GetFilterCollected(), tx.SetFilterCollected(true)
+			fu = tx.GetFilterUncollected(), tx.SetFilterUncollected(false)
+			for i=1,ns do
+				fs[i] = tx.IsSourceTypeFiltered(i), tx.SetFilterSourceType(i, false)
+			end
+			tx.FilterToys()
+		end
+		function pop()
+			local ns = C_PetJournal.GetNumPetSources()
+			tx.SetFilterCollected(fc)
+			tx.SetFilterUncollected(fu)
+			for i=1,ns do
+				tx.SetFilterSourceType(i, fs[i])
+			end
+			tx.SetFilterString(fsearch or "")
+			tx.FilterToys()
+		end
+	end
+	AB:AugmentCategory("Toys", function(_, add)
+		push()
 		for i=1,C_ToyBox.GetNumFilteredToys() do
 			local iid = C_ToyBox.GetToyFromIndex(i)
 			if iid > 0 and PlayerHasToy(iid) then
 				add("toy", iid)
 			end
 		end
-		tx.SetFilterCollected(fc)
-		tx.SetFilterUncollected(fu)
-		for i=1,ns do
-			tx.SetFilterSourceType(i, fs[i])
-		end
-		tx.SetFilterString(search or "")
-		C_ToyBox.FilterToys()
+		pop()
 	end)
 end
