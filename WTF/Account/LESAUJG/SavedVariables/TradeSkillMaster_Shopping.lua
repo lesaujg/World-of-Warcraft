@@ -1,17 +1,8 @@
 
 TradeSkillMaster_ShoppingDB = {
-	["_currentProfile"] = {
-		["Orig - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Galinar - Sisters of Elune"] = "Default",
-		["Guldahka - Turalyon"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
-	},
-	["_version"] = 3,
-	["g@ @sniperVendorPrice"] = true,
+	["g@ @sniperCustomPrice"] = "0c",
+	["g@ @maxDeSearchPercent"] = 1,
+	["g@ @postUndercut"] = "1c",
 	["g@ @postBidPercent"] = 0.95,
 	["_scopeKeys"] = {
 		["char"] = {
@@ -24,208 +15,241 @@ TradeSkillMaster_ShoppingDB = {
 			"Herbinator - Sisters of Elune", -- [7]
 			"Guldahka - Turalyon", -- [8]
 		},
-		["factionrealm"] = {
-			"Alliance - Sisters of Elune", -- [1]
-			"Horde - Turalyon", -- [2]
+		["realm"] = {
+			"Sisters of Elune", -- [1]
+			"Turalyon", -- [2]
 		},
 		["profile"] = {
 			"Default", -- [1]
 		},
-		["realm"] = {
-			"Sisters of Elune", -- [1]
-			"Turalyon", -- [2]
+		["factionrealm"] = {
+			"Alliance - Sisters of Elune", -- [1]
+			"Horde - Turalyon", -- [2]
 		},
 	},
 	["g@ @helpPlatesShown"] = {
 		["auction"] = true,
 	},
-	["g@ @postUndercut"] = "1c",
-	["g@ @minDeSearchLvl"] = 1,
-	["g@ @maxDeSearchLvl"] = 735,
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
-	["g@ @marketValueSource"] = "dbmarket",
+	["g@ @sniperVendorPrice"] = true,
+	["_hash"] = 1861581,
 	["g@ @savedSearches"] = {
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1468887051,
+			["name"] = "Sha Crystal/exact",
+			["filter"] = "Sha Crystal/exact",
+		}, -- [1]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1468887048,
+			["name"] = "Void Crystal/exact",
+			["filter"] = "Void Crystal/exact",
+		}, -- [2]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1468887038,
+			["name"] = "Maelstrom Crystal/exact",
+			["filter"] = "Maelstrom Crystal/exact",
+		}, -- [3]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1468887033,
+			["name"] = "Abyss Crystal/exact",
+			["filter"] = "Abyss Crystal/exact",
+		}, -- [4]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1468872935,
+			["name"] = "true iron ore",
+			["filter"] = "true iron ore",
+		}, -- [5]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1468801908,
 			["name"] = "starflower",
 			["filter"] = "starflower",
-		}, -- [1]
+		}, -- [6]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1468672175,
 			["name"] = "flytrap",
 			["filter"] = "flytrap",
-		}, -- [2]
+		}, -- [7]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1468627084,
 			["name"] = "Sumptuous Fur/exact",
 			["filter"] = "Sumptuous Fur/exact",
-		}, -- [3]
+		}, -- [8]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1468627054,
 			["name"] = "fur",
 			["filter"] = "fur",
-		}, -- [4]
+		}, -- [9]
 		{
 			["lastSearch"] = 1468626546,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [5]
+		}, -- [10]
 		{
 			["lastSearch"] = 1468548093,
 			["name"] = "universal",
 			["filter"] = "universal",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [6]
+		}, -- [11]
 		{
 			["lastSearch"] = 1468548081,
 			["name"] = "arcane c",
 			["filter"] = "arcane c",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [7]
+		}, -- [12]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1468542181,
 			["name"] = "blackrock ore",
 			["filter"] = "blackrock ore",
-		}, -- [8]
+		}, -- [13]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1468542175,
 			["name"] = "frostweed",
 			["filter"] = "frostweed",
-		}, -- [9]
+		}, -- [14]
 		{
 			["lastSearch"] = 1468288908,
 			["name"] = "hexweave bag",
 			["filter"] = "hexweave bag",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [10]
+		}, -- [15]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1467688596,
 			["name"] = "insignia",
 			["filter"] = "insignia",
-		}, -- [11]
+		}, -- [16]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1467688574,
 			["name"] = "fallen",
 			["filter"] = "fallen",
-		}, -- [12]
+		}, -- [17]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1467688563,
 			["name"] = "journal",
 			["filter"] = "journal",
-		}, -- [13]
+		}, -- [18]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1466709433,
 			["name"] = "rapid mind",
 			["filter"] = "rapid mind",
-		}, -- [14]
+		}, -- [19]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1466557855,
 			["name"] = "essence",
 			["filter"] = "essence",
-		}, -- [15]
+		}, -- [20]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1466557849,
 			["name"] = "essence of air",
 			["filter"] = "essence of air",
-		}, -- [16]
+		}, -- [21]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1463341660,
 			["name"] = "draenic dust",
 			["filter"] = "draenic dust",
-		}, -- [17]
+		}, -- [22]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1463341641,
 			["name"] = "dust",
 			["filter"] = "dust",
-		}, -- [18]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1461467943,
-			["name"] = "true iron ore",
-			["filter"] = "true iron ore",
-		}, -- [19]
+		}, -- [23]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1460212738,
 			["name"] = "fireweed",
 			["filter"] = "fireweed",
-		}, -- [20]
+		}, -- [24]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1455133723,
 			["name"] = "raw beast",
 			["filter"] = "raw beast",
-		}, -- [21]
+		}, -- [25]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1453692479,
 			["name"] = "sorcerous",
 			["filter"] = "sorcerous",
-		}, -- [22]
+		}, -- [26]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1453006657,
 			["name"] = "Mounts/Miscellaneous/Mount/usable",
 			["filter"] = "Mounts/Miscellaneous/Mount/usable",
-		}, -- [23]
+		}, -- [27]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452570334,
 			["name"] = "Primal fire",
 			["filter"] = "Primal fire",
-		}, -- [24]
+		}, -- [28]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452570327,
 			["name"] = "Primal might",
 			["filter"] = "Primal might",
-		}, -- [25]
+		}, -- [29]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452565837,
 			["name"] = "flask",
 			["filter"] = "flask",
-		}, -- [26]
+		}, -- [30]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1452471365,
 			["name"] = "legion",
 			["filter"] = "legion",
-		}, -- [27]
+		}, -- [31]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1451421774,
 			["name"] = "temporal",
 			["filter"] = "temporal",
-		}, -- [28]
+		}, -- [32]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1450325729,
 			["name"] = "saberfish",
 			["filter"] = "saberfish",
-		}, -- [29]
+		}, -- [33]
 	},
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["g@ @marketValueSource"] = "dbmarket",
+	["g@ @maxDeSearchLvl"] = 735,
+	["g@ @minDeSearchLvl"] = 1,
 	["g@ @normalPostPrice"] = "150% dbmarket",
-	["g@ @maxDeSearchPercent"] = 1,
-	["g@ @sniperCustomPrice"] = "0c",
+	["_version"] = 3,
+	["_currentProfile"] = {
+		["Uldaris - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
+		["Guldahka - Turalyon"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Orig - Sisters of Elune"] = "Default",
+	},
 }

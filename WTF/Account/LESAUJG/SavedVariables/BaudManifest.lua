@@ -86,9 +86,9 @@ BaudManifestData = {
 				},
 				["SlotEmpty"] = 62,
 				["BGTexture"] = "Bumpy",
-				["SlotTotal"] = 64,
-				["SpecialTotal"] = 0,
 				["SpecialEmpty"] = 0,
+				["SpecialTotal"] = 0,
+				["SlotTotal"] = 64,
 			}, -- [1]
 			{
 				{
@@ -168,11 +168,19 @@ BaudManifestData = {
 						["ItemString"] = "item:122591:0:0:0:0:0:0:0:100:254:0:0:0",
 						["Count"] = 14,
 					}, -- [7]
-					["SlotsUsed"] = 124,
+					{
+						["Count"] = 2,
+						["ItemString"] = "item:122576:0:0:0:0:0:0:0:100:254:0:0:0",
+					}, -- [8]
+					{
+						["ItemString"] = "item:122590:0:0:0:0:0:0:0:100:254:0:0:0",
+						["Count"] = 3,
+					}, -- [9]
+					["SlotsUsed"] = 113,
 				}, -- [1]
 				{
 					{
-						["Count"] = 73,
+						["Count"] = 72,
 						["Slots"] = 4,
 						["ItemString"] = "item:109153:0:0:0:0:0:0:0:100:254:0:0:0",
 					}, -- [1]
@@ -212,9 +220,9 @@ BaudManifestData = {
 						["Count"] = 20,
 						["ItemString"] = "item:122452:0:0:0:0:0:0:0:100:254:0:0:0",
 					}, -- [10]
-					["Name"] = "Potions",
-					["Path"] = "Consumables\\Potions",
 					["Expanded"] = false,
+					["Path"] = "Consumables\\Potions",
+					["Name"] = "Potions",
 					["SlotsUsed"] = 13,
 				}, -- [2]
 				{
@@ -229,55 +237,40 @@ BaudManifestData = {
 						["Count"] = 2,
 					}, -- [3]
 					{
-						["Count"] = 24,
-						["Slots"] = 2,
 						["ItemString"] = "item:114822:0:0:0:0:0:0:0:100:254:0:0:0",
 					}, -- [4]
 					{
-						["Count"] = 1,
-						["ItemString"] = "item:118475:0:0:0:0:0:0:0:100:254:0:0:0",
+						["ItemString"] = "item:114622:0:0:0:0:0:0:0:100:254:0:0:0",
 					}, -- [5]
 					{
-						["ItemString"] = "item:114622:0:0:0:0:0:0:0:100:254:0:0:0",
-						["Count"] = 1,
+						["ItemString"] = "item:114128:0:0:0:0:0:0:0:100:254:0:0:0",
 					}, -- [6]
 					{
-						["ItemString"] = "item:114128:0:0:0:0:0:0:0:100:254:0:0:0",
-						["Count"] = 16,
+						["ItemString"] = "item:114129:0:0:0:0:0:0:0:100:254:0:0:0",
 					}, -- [7]
 					{
-						["ItemString"] = "item:114129:0:0:0:0:0:0:0:100:254:0:0:0",
-						["Slots"] = 2,
-						["Count"] = 23,
+						["ItemString"] = "item:114131:0:0:0:0:0:0:0:100:254:0:0:0",
 					}, -- [8]
 					{
-						["Count"] = 23,
-						["Slots"] = 2,
-						["ItemString"] = "item:114131:0:0:0:0:0:0:0:100:254:0:0:0",
+						["ItemString"] = "item:114746:0:0:0:0:0:0:0:100:254:0:0:0",
 					}, -- [9]
 					{
-						["Count"] = 1,
-						["ItemString"] = "item:114746:0:0:0:0:0:0:0:100:254:0:0:0",
+						["ItemString"] = "item:114807:0:0:0:0:0:0:0:100:254:0:0:0",
 					}, -- [10]
 					{
-						["ItemString"] = "item:114807:0:0:0:0:0:0:0:100:254:0:0:0",
-					}, -- [11]
-					{
-						["Count"] = 9,
 						["ItemString"] = "item:114745:0:0:0:0:0:0:0:100:254:0:0:0",
-					}, -- [12]
+					}, -- [11]
 					{
 						["Count"] = 1,
 						["ItemString"] = "item:122273:0:0:0:0:0:0:0:100:254:0:0:0",
-					}, -- [13]
+					}, -- [12]
 					{
-						["Count"] = 2,
 						["ItemString"] = "item:114808:0:0:0:0:0:0:0:100:254:0:0:0",
-					}, -- [14]
-					["Name"] = "Followers",
+					}, -- [13]
+					["Expanded"] = true,
 					["Path"] = "Consumables\\Followers",
-					["Expanded"] = false,
-					["SlotsUsed"] = 14,
+					["Name"] = "Followers",
+					["SlotsUsed"] = 2,
 				}, -- [3]
 				{
 					{
@@ -307,9 +300,9 @@ BaudManifestData = {
 					{
 						["ItemString"] = "item:127882:0:0:0:0:0:0:0:100:254:0:0:0",
 					}, -- [8]
-					["Name"] = "Naval",
-					["Path"] = "Consumables\\Naval",
 					["Expanded"] = false,
+					["Path"] = "Consumables\\Naval",
+					["Name"] = "Naval",
 					["SlotsUsed"] = 3,
 				}, -- [4]
 				{
@@ -357,9 +350,9 @@ BaudManifestData = {
 						["Count"] = 1,
 						["ItemString"] = "item:37863:0:0:0:0:0:0:-1947320832:100:253:0:0:0",
 					}, -- [11]
-					["Name"] = "Teleport",
-					["Path"] = "Useful Items\\Teleport",
 					["Expanded"] = true,
+					["Path"] = "Useful Items\\Teleport",
+					["Name"] = "Teleport",
 					["SlotsUsed"] = 11,
 				}, -- [5]
 				{
@@ -381,8 +374,8 @@ BaudManifestData = {
 					}, -- [4]
 					{
 						["Slots"] = 2,
-						["ItemString"] = "item:8383:0:0:0:0:0:0:0:100:254:0:0:0",
 						["Count"] = 2,
+						["ItemString"] = "item:8383:0:0:0:0:0:0:0:100:254:0:0:0",
 					}, -- [5]
 					{
 						["ItemString"] = "item:127785:0:0:0:0:0:0:0:100:254:0:5:0",
@@ -391,9 +384,9 @@ BaudManifestData = {
 						["ItemString"] = "item:45038:0:0:0:0:0:0:0:100:254:0:0:0",
 						["Count"] = 7,
 					}, -- [7]
-					["Name"] = "Mementos",
-					["Path"] = "Mementos",
 					["Expanded"] = false,
+					["Path"] = "Mementos",
+					["Name"] = "Mementos",
 					["SlotsUsed"] = 7,
 				}, -- [6]
 				{
@@ -437,10 +430,10 @@ BaudManifestData = {
 					{
 						["ItemString"] = "item:5512:0:0:0:0:0:0:0:100:254:0:4:0",
 					}, -- [11]
-					["Name"] = "Consumables",
-					["Path"] = "Consumables",
 					["Expanded"] = false,
-					["SlotsUsed"] = 42,
+					["Path"] = "Consumables",
+					["Name"] = "Consumables",
+					["SlotsUsed"] = 30,
 				}, -- [7]
 				{
 					{
@@ -457,9 +450,9 @@ BaudManifestData = {
 					{
 						["ItemString"] = "item:118897:0:0:0:0:0:0:0:100:254:0:0:0",
 					}, -- [4]
-					["Name"] = "Gathering",
-					["Path"] = "Useful Items\\Gathering",
 					["Expanded"] = false,
+					["Path"] = "Useful Items\\Gathering",
+					["Name"] = "Gathering",
 					["SlotsUsed"] = 2,
 				}, -- [8]
 				{
@@ -524,9 +517,9 @@ BaudManifestData = {
 						["ItemString"] = "item:128503:0:0:0:0:0:0:0:100:254:0:14:0",
 						["Count"] = 1,
 					}, -- [17]
-					["Name"] = "Useful Items",
-					["Path"] = "Useful Items",
 					["Expanded"] = false,
+					["Path"] = "Useful Items",
+					["Name"] = "Useful Items",
 					["SlotsUsed"] = 42,
 				}, -- [9]
 				{
@@ -591,8 +584,8 @@ BaudManifestData = {
 					}, -- [19]
 					{
 						["Equipped"] = 1,
-						["Count"] = 1,
 						["ItemString"] = "item:3342:0:0:0:0:0:0:1896880256:100:254:0:0:0",
+						["Count"] = 1,
 					}, -- [20]
 					{
 						["Count"] = 1,
@@ -600,8 +593,8 @@ BaudManifestData = {
 					}, -- [21]
 					{
 						["Equipped"] = 1,
-						["ItemString"] = "item:116194:0:0:0:0:0:0:0:100:254:4:13:3:618:536:80:531",
 						["Count"] = 1,
+						["ItemString"] = "item:116194:0:0:0:0:0:0:0:100:254:4:13:3:618:536:80:531",
 					}, -- [22]
 					{
 						["ItemString"] = "item:115546:0:0:0:0:0:0:0:100:254:0:5:1:566",
@@ -617,8 +610,8 @@ BaudManifestData = {
 					}, -- [26]
 					{
 						["Equipped"] = 1,
-						["Count"] = 1,
 						["ItemString"] = "item:124636:5324:0:0:0:0:0:0:100:254:0:11:2:649:641",
+						["Count"] = 1,
 					}, -- [27]
 					{
 						["ItemString"] = "item:124224:0:0:0:0:0:0:0:100:254:4:3:0:529",
@@ -635,18 +628,18 @@ BaudManifestData = {
 					}, -- [31]
 					{
 						["Equipped"] = 1,
-						["Count"] = 1,
 						["ItemString"] = "item:28788:0:0:0:0:0:0:320225150:100:254:0:0:0",
+						["Count"] = 1,
 					}, -- [32]
 					{
 						["Equipped"] = 3,
-						["ItemString"] = "item:114821:0:0:0:0:0:0:0:100:254:0:0:0",
 						["Count"] = 3,
+						["ItemString"] = "item:114821:0:0:0:0:0:0:0:100:254:0:0:0",
 					}, -- [33]
 					{
 						["Equipped"] = 1,
-						["Count"] = 1,
 						["ItemString"] = "item:18714:0:0:0:0:0:0:178012994:100:254:0:0:0",
+						["Count"] = 1,
 					}, -- [34]
 					{
 						["ItemString"] = "item:124188:5324:0:0:0:0:0:0:100:254:0:3:0",
@@ -699,8 +692,8 @@ BaudManifestData = {
 					}, -- [49]
 					{
 						["Equipped"] = 1,
-						["Count"] = 1,
 						["ItemString"] = "item:124545:0:0:0:0:0:0:0:100:254:4:3:1:41:531",
+						["Count"] = 1,
 					}, -- [50]
 					{
 						["ItemString"] = "item:124291:0:0:0:0:0:0:0:100:254:0:3:1:560",
@@ -710,8 +703,8 @@ BaudManifestData = {
 					}, -- [52]
 					{
 						["Equipped"] = 1,
-						["ItemString"] = "item:124291:0:0:0:0:0:0:0:100:254:4:5:1:566:531",
 						["Count"] = 1,
+						["ItemString"] = "item:124291:0:0:0:0:0:0:0:100:254:4:5:1:566:531",
 					}, -- [53]
 					{
 						["ItemString"] = "item:124545:0:0:0:0:0:0:0:100:254:0:3:0",
@@ -722,8 +715,8 @@ BaudManifestData = {
 					}, -- [55]
 					{
 						["Equipped"] = 1,
-						["Count"] = 1,
 						["ItemString"] = "item:124284:0:0:0:0:0:0:0:100:254:4:5:1:566:531",
+						["Count"] = 1,
 					}, -- [56]
 					{
 						["ItemString"] = "item:124135:5310:5346:0:0:0:0:0:100:253:4:3:1:563:529",
@@ -750,57 +743,57 @@ BaudManifestData = {
 					}, -- [63]
 					{
 						["Equipped"] = 1,
-						["ItemString"] = "item:115796:5324:0:0:0:0:0:0:100:254:4:13:4:618:540:79:540:531",
 						["Count"] = 1,
+						["ItemString"] = "item:115796:5324:0:0:0:0:0:0:100:254:4:13:4:618:540:79:540:531",
 					}, -- [64]
 					{
 						["Equipped"] = 1,
-						["ItemString"] = "item:124307:0:0:0:0:0:0:0:100:254:4:5:1:566:531",
 						["Count"] = 1,
+						["ItemString"] = "item:124307:0:0:0:0:0:0:0:100:254:4:5:1:566:531",
 					}, -- [65]
 					{
 						["Equipped"] = 1,
-						["ItemString"] = "item:124296:0:0:0:0:0:0:0:100:254:4:5:1:566:531",
 						["Count"] = 1,
+						["ItemString"] = "item:124296:0:0:0:0:0:0:0:100:254:4:5:1:566:531",
 					}, -- [66]
 					{
 						["Equipped"] = 1,
-						["ItemString"] = "item:124224:0:0:0:0:0:0:0:100:254:4:5:1:566:531",
 						["Count"] = 1,
+						["ItemString"] = "item:124224:0:0:0:0:0:0:0:100:254:4:5:1:566:531",
 					}, -- [67]
 					{
 						["Equipped"] = 1,
-						["Count"] = 1,
 						["ItemString"] = "item:124301:0:0:0:0:0:0:0:100:254:4:5:1:566:531",
+						["Count"] = 1,
 					}, -- [68]
 					{
 						["Equipped"] = 1,
-						["ItemString"] = "item:116174:5310:0:0:0:0:0:0:100:254:4:13:3:618:536:76:531",
 						["Count"] = 1,
+						["ItemString"] = "item:116174:5310:0:0:0:0:0:0:100:254:4:13:3:618:536:76:531",
 					}, -- [69]
 					{
 						["Equipped"] = 1,
-						["Count"] = 1,
 						["ItemString"] = "item:124287:0:0:0:0:0:0:0:100:254:4:5:2:561:566:531",
+						["Count"] = 1,
 					}, -- [70]
 					{
 						["Equipped"] = 1,
-						["ItemString"] = "item:124210:5317:0:0:0:0:0:0:100:254:4:5:3:561:41:566:531",
 						["Count"] = 1,
+						["ItemString"] = "item:124210:5317:0:0:0:0:0:0:100:254:4:5:3:561:41:566:531",
 					}, -- [71]
 					{
 						["Equipped"] = 1,
-						["ItemString"] = "item:124314:0:5413:0:0:0:0:0:100:254:4:5:3:561:564:566:531",
 						["Count"] = 1,
+						["ItemString"] = "item:124314:0:5413:0:0:0:0:0:100:254:4:5:3:561:564:566:531",
 					}, -- [72]
 					{
 						["Equipped"] = 1,
-						["ItemString"] = "item:124361:5276:0:0:0:0:0:0:100:254:4:5:2:42:566:531",
 						["Count"] = 1,
+						["ItemString"] = "item:124361:5276:0:0:0:0:0:0:100:254:4:5:2:42:566:531",
 					}, -- [73]
-					["Name"] = "Gear",
-					["Path"] = "Gear",
 					["Expanded"] = false,
+					["Path"] = "Gear",
+					["Name"] = "Gear",
 					["SlotsUsed"] = 30,
 				}, -- [10]
 				{
@@ -824,9 +817,9 @@ BaudManifestData = {
 						["ItemString"] = "item:127669:0:0:0:0:0:0:0:100:254:0:0:0",
 						["Count"] = 1,
 					}, -- [5]
-					["Name"] = "Movement",
-					["Path"] = "Useful Items\\Movement",
 					["Expanded"] = false,
+					["Path"] = "Useful Items\\Movement",
+					["Name"] = "Movement",
 					["SlotsUsed"] = 5,
 				}, -- [11]
 				{
@@ -846,9 +839,9 @@ BaudManifestData = {
 						["ItemString"] = "item:6263:41:0:0:0:0:0:500442290:100:254:0:0:0",
 						["Count"] = 1,
 					}, -- [4]
-					["Name"] = "Fishing",
-					["Path"] = "Useful Items\\Fishing",
 					["Expanded"] = false,
+					["Path"] = "Useful Items\\Fishing",
+					["Name"] = "Fishing",
 					["SlotsUsed"] = 4,
 				}, -- [12]
 				{
@@ -881,9 +874,9 @@ BaudManifestData = {
 						["Count"] = 7,
 						["ItemString"] = "item:122618:0:0:0:0:0:0:0:100:254:0:0:0",
 					}, -- [7]
-					["Name"] = "Collectables",
-					["Path"] = "Useful Items\\Collectables",
 					["Expanded"] = false,
+					["Path"] = "Useful Items\\Collectables",
+					["Name"] = "Collectables",
 					["SlotsUsed"] = 8,
 				}, -- [13]
 				{
@@ -895,9 +888,9 @@ BaudManifestData = {
 						["ItemString"] = "item:128453:0:0:0:0:0:0:0:100:254:0:14:0",
 						["Count"] = 1,
 					}, -- [2]
-					["Name"] = "Standards",
-					["Path"] = "Useful Items\\Standards",
 					["Expanded"] = false,
+					["Path"] = "Useful Items\\Standards",
+					["Name"] = "Standards",
 					["SlotsUsed"] = 2,
 				}, -- [14]
 				{
@@ -916,9 +909,9 @@ BaudManifestData = {
 						["ItemString"] = "item:116120:0:0:0:0:0:0:0:100:254:0:0:0",
 						["Count"] = 1,
 					}, -- [4]
-					["Name"] = "Permanent",
-					["Path"] = "Consumables\\Permanent",
 					["Expanded"] = false,
+					["Path"] = "Consumables\\Permanent",
+					["Name"] = "Permanent",
 					["SlotsUsed"] = 3,
 				}, -- [15]
 				["BGColor"] = {
@@ -927,13 +920,13 @@ BaudManifestData = {
 					0.5, -- [3]
 					0.7, -- [4]
 				},
-				["SlotEmpty"] = 25,
+				["SlotEmpty"] = 35,
 				["BGTexture"] = "Bumpy",
 				["ShowBags"] = false,
-				["SlotTotal"] = 130,
+				["SpecialEmpty"] = 0,
 				["SpecialTotal"] = 0,
 				["LockSize"] = true,
-				["SpecialEmpty"] = 0,
+				["SlotTotal"] = 130,
 			}, -- [1]
 			{
 				{
@@ -965,45 +958,31 @@ BaudManifestData = {
 						["Count"] = 1,
 						["ItemString"] = "item:128513:0:0:0:0:0:0:0:100:254:0:0:0",
 					}, -- [9]
-					["SlotsUsed"] = 208,
+					["SlotsUsed"] = 176,
 				}, -- [1]
 				{
 					{
 						["ItemString"] = "item:114622:0:0:0:0:0:0:0:100:254:0:0:0",
-						["Count"] = 18,
 					}, -- [1]
 					{
 						["ItemString"] = "item:114746:0:0:0:0:0:0:0:100:254:0:0:0",
-						["Count"] = 15,
 					}, -- [2]
 					{
-						["Count"] = 44,
 						["ItemString"] = "item:114822:0:0:0:0:0:0:0:100:254:0:0:0",
-						["Slots"] = 3,
 					}, -- [3]
 					{
 						["ItemString"] = "item:114131:0:0:0:0:0:0:0:100:254:0:0:0",
-						["Count"] = 47,
-						["Slots"] = 3,
 					}, -- [4]
 					{
-						["Count"] = 74,
 						["ItemString"] = "item:114808:0:0:0:0:0:0:0:100:254:0:0:0",
-						["Slots"] = 4,
 					}, -- [5]
 					{
-						["Count"] = 74,
 						["ItemString"] = "item:114129:0:0:0:0:0:0:0:100:254:0:0:0",
-						["Slots"] = 4,
 					}, -- [6]
 					{
-						["Count"] = 139,
 						["ItemString"] = "item:114128:0:0:0:0:0:0:0:100:254:0:0:0",
-						["Slots"] = 7,
 					}, -- [7]
 					{
-						["Count"] = 180,
-						["Slots"] = 9,
 						["ItemString"] = "item:114745:0:0:0:0:0:0:0:100:254:0:0:0",
 					}, -- [8]
 					{
@@ -1100,10 +1079,10 @@ BaudManifestData = {
 						["ItemString"] = "item:116117:0:0:0:0:0:0:0:100:253:0:0:0",
 						["Count"] = 1,
 					}, -- [32]
-					["Expanded"] = true,
-					["Path"] = "Consumable",
 					["Name"] = "Consumable",
-					["SlotsUsed"] = 54,
+					["Path"] = "Consumable",
+					["Expanded"] = false,
+					["SlotsUsed"] = 22,
 				}, -- [2]
 				{
 					{
@@ -1163,9 +1142,9 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [14]
 					{
-						["ItemString"] = "item:19901:0:0:0:0:0:0:1557241280:100:254:0:0:0",
-						["Slots"] = 2,
 						["Count"] = 2,
+						["Slots"] = 2,
+						["ItemString"] = "item:19901:0:0:0:0:0:0:1557241280:100:254:0:0:0",
 					}, -- [15]
 					{
 						["ItemString"] = "item:19910:0:0:0:0:0:0:1424354560:100:254:0:0:0",
@@ -1187,9 +1166,9 @@ BaudManifestData = {
 						["ItemString"] = "item:45073:0:0:0:0:0:0:0:100:254:0:0:0",
 						["Count"] = 1,
 					}, -- [20]
-					["Expanded"] = false,
-					["Path"] = "Weapon",
 					["Name"] = "Weapon",
+					["Path"] = "Weapon",
+					["Expanded"] = false,
 					["SlotsUsed"] = 21,
 				}, -- [3]
 				{
@@ -1518,9 +1497,9 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [81]
 					{
-						["ItemString"] = "item:43300:0:0:0:0:0:0:82134528:100:254:0:0:0",
-						["Slots"] = 2,
 						["Count"] = 2,
+						["Slots"] = 2,
+						["ItemString"] = "item:43300:0:0:0:0:0:0:82134528:100:254:0:0:0",
 					}, -- [82]
 					{
 						["ItemString"] = "item:40643:0:0:0:0:0:0:1337248000:100:254:0:0:0",
@@ -1550,9 +1529,9 @@ BaudManifestData = {
 						["ItemString"] = "item:31404:0:0:0:0:0:0:0:100:254:0:0:0",
 						["Count"] = 1,
 					}, -- [89]
-					["Expanded"] = false,
-					["Path"] = "Armor",
 					["Name"] = "Armor",
+					["Path"] = "Armor",
+					["Expanded"] = false,
 					["SlotsUsed"] = 90,
 				}, -- [4]
 				{
@@ -1576,9 +1555,9 @@ BaudManifestData = {
 						["Count"] = 7,
 						["ItemString"] = "item:108439:0:0:0:0:0:0:0:100:254:0:0:0",
 					}, -- [5]
-					["Name"] = "Trade Goods",
-					["Path"] = "Trade Goods",
 					["Expanded"] = false,
+					["Path"] = "Trade Goods",
+					["Name"] = "Trade Goods",
 					["SlotsUsed"] = 5,
 				}, -- [5]
 				{
@@ -1595,18 +1574,18 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [3]
 					{
-						["ItemString"] = "item:82446:0:0:0:0:0:0:675767040:100:254:0:0:0",
-						["Equipped"] = 3,
 						["Count"] = 3,
+						["Equipped"] = 3,
+						["ItemString"] = "item:82446:0:0:0:0:0:0:675767040:100:254:0:0:0",
 					}, -- [4]
 					{
-						["ItemString"] = "item:51809:0:0:0:0:0:0:0:100:254:0:0:0",
-						["Equipped"] = 4,
 						["Count"] = 4,
+						["Equipped"] = 4,
+						["ItemString"] = "item:51809:0:0:0:0:0:0:0:100:254:0:0:0",
 					}, -- [5]
-					["Expanded"] = false,
-					["Path"] = "Container",
 					["Name"] = "Container",
+					["Path"] = "Container",
+					["Expanded"] = false,
 					["SlotsUsed"] = 5,
 				}, -- [6]
 				{
@@ -1626,9 +1605,9 @@ BaudManifestData = {
 						["ItemString"] = "item:5462:0:0:0:0:0:0:87667981:100:254:0:0:0",
 						["Count"] = 1,
 					}, -- [4]
-					["Name"] = "Quest",
-					["Path"] = "Quest",
 					["Expanded"] = false,
+					["Path"] = "Quest",
+					["Name"] = "Quest",
 					["SlotsUsed"] = 4,
 				}, -- [7]
 				{
@@ -1742,9 +1721,9 @@ BaudManifestData = {
 						["ItemString"] = "item:81231:0:0:0:0:0:0:1107396480:100:254:0:0:0",
 						["Count"] = 1,
 					}, -- [28]
-					["Expanded"] = true,
-					["Path"] = "Miscellaneous",
 					["Name"] = "Miscellaneous",
+					["Path"] = "Miscellaneous",
+					["Expanded"] = false,
 					["SlotsUsed"] = 26,
 				}, -- [8]
 				{
@@ -1756,9 +1735,9 @@ BaudManifestData = {
 						["ItemString"] = "item:31655:0:0:0:0:0:0:896032248:100:254:0:0:0",
 						["Count"] = 1,
 					}, -- [2]
-					["Expanded"] = false,
-					["Path"] = "Key",
 					["Name"] = "Key",
+					["Path"] = "Key",
+					["Expanded"] = false,
 					["SlotsUsed"] = 2,
 				}, -- [9]
 				["BGColor"] = {
@@ -1767,129 +1746,136 @@ BaudManifestData = {
 					0.5, -- [3]
 					0.7, -- [4]
 				},
-				["SlotEmpty"] = 2,
+				["SlotEmpty"] = 34,
 				["BGTexture"] = "Bumpy",
 				["ShowBags"] = false,
-				["SpecialEmpty"] = 0,
-				["SpecialTotal"] = 0,
 				["SlotTotal"] = 208,
+				["SpecialTotal"] = 0,
+				["SpecialEmpty"] = 0,
 			}, -- [2]
 			{
 				{
 					{
 						["ItemString"] = "item:108996:0:0:0:0:0:0:0:100:254:0:0:0",
-						["Count"] = 811,
-						["Slots"] = 5,
 					}, -- [1]
 					{
-						["Count"] = 170,
 						["ItemString"] = "item:109123:0:0:0:0:0:0:0:100:254:0:0:0",
+						["Count"] = 170,
 					}, -- [2]
 					{
-						["ItemString"] = "item:111366:0:0:0:0:0:0:0:100:254:0:0:0",
 						["Count"] = 4308,
+						["ItemString"] = "item:111366:0:0:0:0:0:0:0:100:254:0:0:0",
 						["Slots"] = 22,
 					}, -- [3]
 					{
-						["Count"] = 2009,
 						["ItemString"] = "item:109693:0:0:0:0:0:0:0:100:254:0:0:0",
-						["Slots"] = 11,
+						["Count"] = 2689,
+						["Slots"] = 14,
 					}, -- [4]
 					{
+						["Count"] = 709,
 						["ItemString"] = "item:109124:0:0:0:0:0:0:0:100:254:0:0:0",
-						["Count"] = 729,
 						["Slots"] = 4,
 					}, -- [5]
 					{
-						["Count"] = 31,
 						["ItemString"] = "item:87399:0:0:0:0:0:0:0:100:254:0:0:0",
+						["Count"] = 31,
 					}, -- [6]
 					{
-						["ItemString"] = "item:3371:0:0:0:0:0:0:0:100:254:0:0:0",
 						["Count"] = 75,
+						["ItemString"] = "item:3371:0:0:0:0:0:0:0:100:254:0:0:0",
 					}, -- [7]
 					{
-						["Count"] = 2907,
 						["ItemString"] = "item:120945:0:0:0:0:0:0:0:100:254:0:0:0",
+						["Count"] = 2957,
 						["Slots"] = 3,
 					}, -- [8]
 					{
-						["ItemString"] = "item:109129:0:0:0:0:0:0:0:100:254:0:0:0",
 						["Count"] = 676,
+						["ItemString"] = "item:109129:0:0:0:0:0:0:0:100:254:0:0:0",
 						["Slots"] = 4,
 					}, -- [9]
 					{
-						["ItemString"] = "item:109128:0:0:0:0:0:0:0:100:254:0:0:0",
 						["Count"] = 546,
+						["ItemString"] = "item:109128:0:0:0:0:0:0:0:100:254:0:0:0",
 						["Slots"] = 3,
 					}, -- [10]
 					{
-						["Count"] = 4,
 						["ItemString"] = "item:109127:0:0:0:0:0:0:0:100:254:0:0:0",
+						["Count"] = 103,
 					}, -- [11]
 					{
-						["ItemString"] = "item:109125:0:0:0:0:0:0:0:100:254:0:0:0",
 						["Count"] = 440,
+						["ItemString"] = "item:109125:0:0:0:0:0:0:0:100:254:0:0:0",
 						["Slots"] = 3,
 					}, -- [12]
 					{
-						["ItemString"] = "item:109126:0:0:0:0:0:0:0:100:254:0:0:0",
 						["Count"] = 917,
+						["ItemString"] = "item:109126:0:0:0:0:0:0:0:100:254:0:0:0",
 						["Slots"] = 5,
 					}, -- [13]
 					{
-						["Count"] = 10,
 						["ItemString"] = "item:109135:0:0:0:0:0:0:0:100:254:0:0:0",
+						["Count"] = 10,
 					}, -- [14]
 					{
-						["Count"] = 17,
 						["ItemString"] = "item:109134:0:0:0:0:0:0:0:100:254:0:0:0",
+						["Count"] = 17,
 					}, -- [15]
 					{
-						["Count"] = 37,
 						["ItemString"] = "item:109133:0:0:0:0:0:0:0:100:254:0:0:0",
+						["Count"] = 37,
 					}, -- [16]
 					{
-						["Count"] = 5,
 						["ItemString"] = "item:109136:0:0:0:0:0:0:0:100:254:0:0:0",
+						["Count"] = 5,
 					}, -- [17]
 					{
-						["Count"] = 30,
 						["ItemString"] = "item:109132:0:0:0:0:0:0:0:100:254:0:0:0",
+						["Count"] = 30,
 					}, -- [18]
 					{
-						["Count"] = 26,
 						["ItemString"] = "item:109131:0:0:0:0:0:0:0:100:254:0:0:0",
+						["Count"] = 26,
 					}, -- [19]
 					{
-						["Count"] = 10,
 						["ItemString"] = "item:109143:0:0:0:0:0:0:0:100:254:0:0:0",
+						["Count"] = 10,
 					}, -- [20]
 					{
-						["Count"] = 14,
 						["ItemString"] = "item:109137:0:0:0:0:0:0:0:100:254:0:0:0",
+						["Count"] = 14,
 					}, -- [21]
 					{
-						["Count"] = 5,
 						["ItemString"] = "item:109144:0:0:0:0:0:0:0:100:254:0:0:0",
+						["Count"] = 5,
 					}, -- [22]
 					{
-						["Count"] = 18,
 						["ItemString"] = "item:111673:0:0:0:0:0:0:0:100:254:0:0:0",
+						["Count"] = 18,
 					}, -- [23]
 					{
-						["Count"] = 13,
 						["ItemString"] = "item:111671:0:0:0:0:0:0:0:100:254:0:0:0",
+						["Count"] = 13,
 					}, -- [24]
 					{
-						["Count"] = 47,
 						["ItemString"] = "item:111601:0:0:0:0:0:0:0:100:254:0:0:0",
+						["Count"] = 47,
 					}, -- [25]
 					{
+						["Count"] = 2950,
 						["ItemString"] = "item:109118:0:0:0:0:0:0:0:100:254:0:0:0",
-						["Count"] = 2960,
 						["Slots"] = 15,
 					}, -- [26]
+					{
+						["ItemString"] = "item:49908:0:0:0:0:0:0:0:100:254:0:0:0",
+						["Count"] = 3,
+					}, -- [27]
+					{
+						["Count"] = 1116,
+						["ItemString"] = "item:109119:0:0:0:0:0:0:0:100:254:0:0:0",
+						["Slots"] = 6,
+					}, -- [28]
 					["SlotsUsed"] = 84,
 				}, -- [1]
 				["BGColor"] = {
@@ -1898,11 +1884,11 @@ BaudManifestData = {
 					0.5, -- [3]
 					0.7, -- [4]
 				},
-				["SlotEmpty"] = 7,
+				["SlotEmpty"] = 2,
 				["BGTexture"] = "Bumpy",
-				["SpecialEmpty"] = 0,
-				["SpecialTotal"] = 0,
 				["SlotTotal"] = 98,
+				["SpecialTotal"] = 0,
+				["SpecialEmpty"] = 0,
 			}, -- [3]
 			["AutoSell"] = 1,
 			["BankBag"] = {
@@ -1943,175 +1929,279 @@ BaudManifestData = {
 				[0] = 1,
 			},
 			["Class"] = "HUNTER",
-			["Money"] = 5339367660,
+			["Money"] = 5422661212,
 		},
 		["Ghiaccioli"] = {
 			{
 				{
 					{
-						["Equipped"] = 4,
 						["Count"] = 4,
 						["ItemString"] = "item:114821:0:0:0:0:0:0:0:50:0:0:0:0",
+						["Equipped"] = 4,
 					}, -- [1]
 					{
-						["Count"] = 3,
 						["ItemString"] = "item:109152:0:0:0:0:0:0:0:50:0:0:0:0",
+						["Count"] = 3,
 					}, -- [2]
 					{
-						["Count"] = 3,
 						["ItemString"] = "item:109148:0:0:0:0:0:0:0:50:0:0:0:0",
+						["Count"] = 3,
 					}, -- [3]
 					{
-						["Count"] = 2,
 						["ItemString"] = "item:33448:0:0:0:0:0:0:0:50:0:0:0:0",
+						["Count"] = 2,
 					}, -- [4]
 					{
-						["Count"] = 19,
 						["ItemString"] = "item:13444:0:0:0:0:0:0:0:50:0:0:0:0",
+						["Count"] = 19,
 					}, -- [5]
 					{
-						["Count"] = 13,
 						["ItemString"] = "item:13446:0:0:0:0:0:0:0:50:0:0:0:0",
+						["Count"] = 13,
 					}, -- [6]
 					{
-						["ItemString"] = "item:9224:0:0:0:0:0:0:0:50:0:0:0:0",
 						["Count"] = 3,
+						["ItemString"] = "item:9224:0:0:0:0:0:0:0:50:0:0:0:0",
 					}, -- [7]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:105718:0:0:0:0:0:0:0:50:0:0:0:0",
+						["Count"] = 1,
 					}, -- [8]
 					{
-						["Equipped"] = 1,
 						["Count"] = 1,
 						["ItemString"] = "item:15274:723:0:0:0:0:-19:945291286:50:0:0:0:0",
+						["Equipped"] = 1,
 					}, -- [9]
 					{
-						["Equipped"] = 1,
 						["Count"] = 1,
 						["ItemString"] = "item:8254:0:0:0:0:0:0:-1641116578:50:0:0:0:0",
+						["Equipped"] = 1,
 					}, -- [10]
 					{
-						["Equipped"] = 1,
 						["Count"] = 1,
 						["ItemString"] = "item:1714:0:0:0:0:0:0:0:50:0:0:0:0",
+						["Equipped"] = 1,
 					}, -- [11]
 					{
-						["Equipped"] = 1,
 						["Count"] = 1,
 						["ItemString"] = "item:14296:0:0:0:0:0:-19:1789132817:50:0:0:0:0",
+						["Equipped"] = 1,
 					}, -- [12]
 					{
-						["Equipped"] = 1,
 						["Count"] = 1,
 						["ItemString"] = "item:6096:0:0:0:0:0:0:0:50:0:0:0:0",
+						["Equipped"] = 1,
 					}, -- [13]
 					{
-						["Equipped"] = 1,
 						["Count"] = 1,
 						["ItemString"] = "item:6787:0:0:0:0:0:0:1197168640:50:0:0:0:0",
+						["Equipped"] = 1,
 					}, -- [14]
 					{
-						["Equipped"] = 1,
 						["Count"] = 1,
 						["ItemString"] = "item:13856:0:0:0:0:0:0:774071298:50:0:0:0:0",
+						["Equipped"] = 1,
 					}, -- [15]
 					{
-						["Equipped"] = 1,
 						["Count"] = 1,
 						["ItemString"] = "item:10009:0:0:0:0:0:0:1163950766:50:0:0:0:0",
+						["Equipped"] = 1,
 					}, -- [16]
 					{
-						["Equipped"] = 1,
 						["Count"] = 1,
 						["ItemString"] = "item:9845:464:0:0:0:0:-9:1702232075:50:0:0:0:0",
+						["Equipped"] = 1,
 					}, -- [17]
 					{
-						["Equipped"] = 1,
 						["Count"] = 1,
 						["ItemString"] = "item:9937:1884:0:0:0:0:-19:1037172747:50:0:0:0:0",
+						["Equipped"] = 1,
 					}, -- [18]
 					{
-						["Equipped"] = 1,
 						["Count"] = 1,
 						["ItemString"] = "item:10019:930:0:0:0:0:0:445929559:50:0:0:0:0",
+						["Equipped"] = 1,
 					}, -- [19]
 					{
-						["Equipped"] = 1,
 						["Count"] = 1,
 						["ItemString"] = "item:30422:0:0:0:0:0:0:548534912:50:0:0:0:0",
+						["Equipped"] = 1,
 					}, -- [20]
 					{
-						["Equipped"] = 1,
 						["Count"] = 1,
 						["ItemString"] = "item:11988:0:0:0:0:0:-9:1160577035:50:0:0:0:0",
+						["Equipped"] = 1,
 					}, -- [21]
 					{
-						["Equipped"] = 1,
 						["Count"] = 1,
 						["ItemString"] = "item:11122:0:0:0:0:0:0:1182101544:50:0:0:0:0",
+						["Equipped"] = 1,
 					}, -- [22]
 					{
-						["Equipped"] = 1,
 						["Count"] = 1,
 						["ItemString"] = "item:19141:0:0:0:0:0:0:242570491:50:0:0:0:0",
+						["Equipped"] = 1,
 					}, -- [23]
 					{
-						["Equipped"] = 1,
 						["Count"] = 1,
 						["ItemString"] = "item:14300:0:0:0:0:0:-19:909639692:50:0:0:0:0",
+						["Equipped"] = 1,
 					}, -- [24]
 					{
 						["ItemString"] = "item:6948:0:0:0:0:0:0:0:50:0:0:0:0",
 						["Count"] = 1,
 					}, -- [25]
 					{
-						["Slots"] = 10,
+						["Count"] = 11,
 						["ItemString"] = "item:127783:0:0:0:0:0:0:0:50:0:0:1:0",
-						["Count"] = 10,
+						["Slots"] = 11,
 					}, -- [26]
 					{
-						["Slots"] = 8,
-						["ItemString"] = "item:127780:0:0:0:0:0:0:0:50:0:0:1:0",
 						["Count"] = 8,
+						["ItemString"] = "item:127780:0:0:0:0:0:0:0:50:0:0:1:0",
+						["Slots"] = 8,
 					}, -- [27]
 					{
-						["Slots"] = 17,
-						["ItemString"] = "item:127779:0:0:0:0:0:0:0:50:0:0:1:0",
 						["Count"] = 17,
+						["ItemString"] = "item:127779:0:0:0:0:0:0:0:50:0:0:1:0",
+						["Slots"] = 17,
 					}, -- [28]
 					{
-						["Slots"] = 2,
-						["ItemString"] = "item:128319:0:0:0:0:0:0:0:50:0:0:1:0",
 						["Count"] = 2,
+						["ItemString"] = "item:128319:0:0:0:0:0:0:0:50:0:0:1:0",
+						["Slots"] = 2,
 					}, -- [29]
 					{
-						["Slots"] = 17,
-						["ItemString"] = "item:127784:0:0:0:0:0:0:0:50:0:0:1:0",
 						["Count"] = 17,
+						["ItemString"] = "item:127784:0:0:0:0:0:0:0:50:0:0:1:0",
+						["Slots"] = 17,
 					}, -- [30]
 					{
 						["ItemString"] = "item:117385:0:0:0:0:0:0:0:50:0:0:1:0",
 						["Count"] = 1,
 					}, -- [31]
 					{
-						["Slots"] = 4,
-						["ItemString"] = "item:127784:0:0:0:0:0:0:0:50:0:0:0:0",
 						["Count"] = 4,
+						["ItemString"] = "item:127784:0:0:0:0:0:0:0:50:0:0:0:0",
+						["Slots"] = 4,
 					}, -- [32]
 					{
 						["ItemString"] = "item:127779:0:0:0:0:0:0:0:50:0:0:0:0",
 						["Count"] = 1,
 					}, -- [33]
 					{
-						["ItemString"] = "item:128312:0:0:0:0:0:0:0:50:0:0:0:0",
 						["Count"] = 1,
+						["ItemString"] = "item:128312:0:0:0:0:0:0:0:50:0:0:0:0",
 					}, -- [34]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:86574:0:0:0:0:0:0:0:50:0:0:0:0",
+						["Count"] = 3,
 					}, -- [35]
-					["SlotsUsed"] = 87,
+					{
+						["Count"] = 200,
+						["ItemString"] = "item:33470:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [36]
+					{
+						["Count"] = 112,
+						["ItemString"] = "item:34057:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [37]
+					{
+						["Count"] = 14,
+						["ItemString"] = "item:43102:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [38]
+					{
+						["Count"] = 49,
+						["ItemString"] = "item:34054:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [39]
+					{
+						["Count"] = 7,
+						["ItemString"] = "item:34055:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [40]
+					{
+						["Count"] = 21,
+						["ItemString"] = "item:89112:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [41]
+					{
+						["Count"] = 41,
+						["ItemString"] = "item:74249:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [42]
+					{
+						["Count"] = 25,
+						["ItemString"] = "item:74248:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [43]
+					{
+						["Count"] = 20,
+						["ItemString"] = "item:80433:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [44]
+					{
+						["Count"] = 5,
+						["ItemString"] = "item:74250:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [45]
+					{
+						["Count"] = 13,
+						["ItemString"] = "item:72988:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [46]
+					{
+						["Count"] = 23,
+						["ItemString"] = "item:22445:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [47]
+					{
+						["Count"] = 58,
+						["ItemString"] = "item:52722:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [48]
+					{
+						["Count"] = 11,
+						["ItemString"] = "item:22450:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [49]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:32228:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [50]
+					{
+						["Count"] = 3,
+						["ItemString"] = "item:32249:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [51]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:32227:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [52]
+					{
+						["Count"] = 59,
+						["ItemString"] = "item:21877:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [53]
+					{
+						["Count"] = 2,
+						["ItemString"] = "item:32229:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [54]
+					{
+						["Count"] = 4,
+						["ItemString"] = "item:34664:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [55]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:36934:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [56]
+					{
+						["Count"] = 4,
+						["ItemString"] = "item:94289:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [57]
+					{
+						["Count"] = 2,
+						["ItemString"] = "item:35625:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [58]
+					{
+						["Count"] = 2,
+						["ItemString"] = "item:36908:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [59]
+					{
+						["Count"] = 10,
+						["ItemString"] = "item:45087:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [60]
+					{
+						["Count"] = 5,
+						["ItemString"] = "item:53010:0:0:0:0:0:0:0:50:0:0:0:0",
+					}, -- [61]
+					["SlotsUsed"] = 114,
 				}, -- [1]
 				["BGColor"] = {
 					0.5, -- [1]
@@ -2119,12 +2209,12 @@ BaudManifestData = {
 					0.5, -- [3]
 					0.7, -- [4]
 				},
-				["SlotEmpty"] = 66,
+				["SlotEmpty"] = 39,
 				["BGTexture"] = "Bumpy",
 				["ShowBags"] = false,
-				["SpecialEmpty"] = 0,
-				["SpecialTotal"] = 0,
 				["SlotTotal"] = 136,
+				["SpecialTotal"] = 0,
+				["SpecialEmpty"] = 0,
 			}, -- [1]
 			{
 				{
@@ -2247,10 +2337,10 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [29]
 					{
+						["Equipped"] = 2,
+						["Count"] = 4,
 						["Slots"] = 2,
 						["ItemString"] = "item:21843:0:0:0:0:0:0:596659377:50:0:0:0:0",
-						["Count"] = 4,
-						["Equipped"] = 2,
 					}, -- [30]
 					{
 						["ItemString"] = "item:30747:0:0:0:0:0:0:0:50:0:0:0:0",
@@ -2338,9 +2428,9 @@ BaudManifestData = {
 				},
 				["SlotEmpty"] = 93,
 				["BGTexture"] = "Bumpy",
-				["SpecialEmpty"] = 0,
-				["SpecialTotal"] = 0,
 				["SlotTotal"] = 144,
+				["SpecialTotal"] = 0,
+				["SpecialEmpty"] = 0,
 			}, -- [2]
 			{
 				{
@@ -2701,9 +2791,9 @@ BaudManifestData = {
 				},
 				["SlotEmpty"] = 7,
 				["BGTexture"] = "Bumpy",
-				["SpecialEmpty"] = 0,
-				["SpecialTotal"] = 0,
 				["SlotTotal"] = 98,
+				["SpecialTotal"] = 0,
+				["SpecialEmpty"] = 0,
 			}, -- [3]
 			["AutoSell"] = 1,
 			["BankBag"] = {
@@ -2765,9 +2855,9 @@ BaudManifestData = {
 						["Category"] = 5,
 					}, -- [5]
 					{
-						["Count"] = 4,
 						["ItemString"] = "item:54443:0:0:0:0:0:0:0:91:70:0:0:0",
 						["Equipped"] = 4,
+						["Count"] = 4,
 					}, -- [6]
 					{
 						["Category"] = 3,
@@ -2787,49 +2877,19 @@ BaudManifestData = {
 						["ItemString"] = "item:110560:0:0:0:0:0:0:0:91:70:0:11:0",
 					}, -- [11]
 					{
-						["ItemString"] = "item:33470:0:0:0:0:0:0:0:100:70:0:0:0",
-						["Count"] = 47,
-					}, -- [12]
-					{
-						["Count"] = 9,
-						["ItemString"] = "item:113262:0:0:0:0:0:0:0:100:70:0:0:0",
-					}, -- [13]
-					{
-						["Count"] = 17,
-						["ItemString"] = "item:113264:0:0:0:0:0:0:0:100:70:0:0:0",
-					}, -- [14]
-					{
-						["Count"] = 10,
-						["ItemString"] = "item:113261:0:0:0:0:0:0:0:100:70:0:0:0",
-					}, -- [15]
-					{
-						["ItemString"] = "item:117374:0:0:0:0:0:0:0:100:70:0:1:1:555",
 						["Count"] = 1,
 						["Equipped"] = 1,
-					}, -- [16]
+						["ItemString"] = "item:117374:0:0:0:0:0:0:0:100:70:0:1:1:555",
+					}, -- [12]
 					{
 						["Count"] = 7,
 						["ItemString"] = "item:17202:0:0:0:0:0:0:0:100:70:0:0:0",
-					}, -- [17]
+					}, -- [13]
 					{
 						["ItemString"] = "item:97985:0:0:0:0:0:0:0:100:70:0:0:0",
 						["Count"] = 1,
-					}, -- [18]
-					{
-						["Slots"] = 5,
-						["ItemString"] = "item:111557:0:0:0:0:0:0:0:100:70:0:0:0",
-						["Count"] = 932,
-					}, -- [19]
-					{
-						["Slots"] = 2,
-						["ItemString"] = "item:109126:0:0:0:0:0:0:0:100:70:0:0:0",
-						["Count"] = 370,
-					}, -- [20]
-					{
-						["ItemString"] = "item:53010:0:0:0:0:0:0:0:100:70:0:0:0",
-						["Count"] = 5,
-					}, -- [21]
-					["SlotsUsed"] = 72,
+					}, -- [14]
+					["SlotsUsed"] = 51,
 				}, -- [1]
 				{
 					{
@@ -2855,9 +2915,9 @@ BaudManifestData = {
 						["Count"] = 1,
 						["ItemString"] = "item:109167:0:0:0:0:0:0:0:91:70:0:1:0",
 					}, -- [7]
-					["Expanded"] = false,
-					["Path"] = "Useful Items",
 					["Name"] = "Useful Items",
+					["Path"] = "Useful Items",
+					["Expanded"] = false,
 					["SlotsUsed"] = 2,
 				}, -- [2]
 				{
@@ -2874,30 +2934,30 @@ BaudManifestData = {
 						["ItemString"] = "item:117194:0:0:0:0:0:0:0:91:70:0:0:0",
 					}, -- [4]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:122263:0:0:0:0:0:0:0:91:70:0:0:1:583",
 						["Equipped"] = 1,
+						["Count"] = 1,
 					}, -- [5]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:122667:0:0:0:0:0:0:0:91:70:0:0:1:583",
 						["Equipped"] = 1,
+						["Count"] = 1,
 					}, -- [6]
 					{
 						["ItemString"] = "item:122355:0:0:0:0:0:0:0:91:70:0:0:1:583",
 					}, -- [7]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:122381:0:0:0:0:0:0:0:91:70:0:0:1:583",
 						["Equipped"] = 1,
+						["Count"] = 1,
 					}, -- [8]
 					{
 						["ItemString"] = "item:101792:0:0:0:0:0:-347:1378549828:91:70:4:0:0:491",
 					}, -- [9]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:122251:0:0:0:0:0:0:0:91:70:0:0:1:583",
 						["Equipped"] = 1,
+						["Count"] = 1,
 					}, -- [10]
 					{
 						["ItemString"] = "item:101797:0:0:0:0:0:-371:929038404:91:70:4:0:0:491",
@@ -2909,22 +2969,22 @@ BaudManifestData = {
 						["ItemString"] = "item:112811:0:0:0:0:0:0:0:91:70:0:1:0",
 					}, -- [13]
 					{
-						["ItemString"] = "item:112799:0:0:0:0:0:0:0:91:70:0:1:0",
 						["Count"] = 1,
 						["Equipped"] = 1,
+						["ItemString"] = "item:112799:0:0:0:0:0:0:0:91:70:0:1:0",
 					}, -- [14]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:118764:0:0:0:0:0:0:0:91:70:0:11:0",
 						["Equipped"] = 1,
+						["Count"] = 1,
 					}, -- [15]
 					{
 						["ItemString"] = "item:128318:0:0:0:0:0:0:0:91:70:0:1:0",
 					}, -- [16]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:118779:0:0:0:0:0:0:0:91:70:0:0:0",
 						["Equipped"] = 1,
+						["Count"] = 1,
 					}, -- [17]
 					{
 						["Count"] = 1,
@@ -2977,9 +3037,9 @@ BaudManifestData = {
 						["ItemString"] = "item:117384:0:0:0:0:0:0:0:91:70:0:1:0",
 					}, -- [33]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:116453:0:0:0:0:0:0:0:91:70:4:13:3:229:525:549:529",
 						["Equipped"] = 1,
+						["Count"] = 1,
 					}, -- [34]
 					{
 						["ItemString"] = "item:116502:0:0:0:0:0:0:0:91:70:0:0:1:163",
@@ -2990,9 +3050,9 @@ BaudManifestData = {
 					{
 						["ItemString"] = "item:108901:0:0:0:0:0:0:0:92:70:0:0:0",
 					}, -- [37]
-					["Expanded"] = false,
-					["Path"] = "Gear",
 					["Name"] = "Gear",
+					["Path"] = "Gear",
+					["Expanded"] = false,
 					["SlotsUsed"] = 10,
 				}, -- [3]
 				{
@@ -3042,9 +3102,9 @@ BaudManifestData = {
 						["ItemString"] = "item:118414:0:0:0:0:0:0:0:93:70:0:0:0",
 					}, -- [13]
 					{
-						["ItemString"] = "item:87216:0:0:0:0:0:0:0:91:70:0:11:0",
 						["Count"] = 4,
 						["Slots"] = 4,
+						["ItemString"] = "item:87216:0:0:0:0:0:0:0:91:70:0:11:0",
 					}, -- [14]
 					{
 						["ItemString"] = "item:118705:0:0:0:0:0:0:0:95:70:0:0:0",
@@ -3073,9 +3133,9 @@ BaudManifestData = {
 						["Count"] = 1,
 						["ItemString"] = "item:115463:0:0:0:0:0:0:0:99:70:0:0:0",
 					}, -- [21]
-					["Expanded"] = false,
-					["Path"] = "Consumable",
 					["Name"] = "Consumable",
+					["Path"] = "Consumable",
+					["Expanded"] = false,
 					["SlotsUsed"] = 16,
 				}, -- [4]
 				{
@@ -3097,9 +3157,9 @@ BaudManifestData = {
 						["ItemString"] = "item:35279:0:0:0:0:0:0:0:100:70:0:11:0",
 						["Count"] = 1,
 					}, -- [5]
-					["Name"] = "Miscellaneous",
-					["Path"] = "Miscellaneous",
 					["Expanded"] = false,
+					["Path"] = "Miscellaneous",
+					["Name"] = "Miscellaneous",
 					["SlotsUsed"] = 3,
 				}, -- [5]
 				{
@@ -3131,9 +3191,9 @@ BaudManifestData = {
 					{
 						["ItemString"] = "item:116835:0:0:0:0:0:0:0:99:70:0:0:0",
 					}, -- [9]
-					["Expanded"] = false,
-					["Path"] = "Weapon",
 					["Name"] = "Weapon",
+					["Path"] = "Weapon",
+					["Expanded"] = false,
 					["SlotsUsed"] = 1,
 				}, -- [6]
 				{
@@ -3144,9 +3204,9 @@ BaudManifestData = {
 						["Count"] = 1,
 						["ItemString"] = "item:115454:0:0:0:0:0:0:0:94:70:0:0:0",
 					}, -- [2]
-					["Name"] = "Quest",
-					["Path"] = "Quest",
 					["Expanded"] = false,
+					["Path"] = "Quest",
+					["Name"] = "Quest",
 					["SlotsUsed"] = 1,
 				}, -- [7]
 				{
@@ -3167,14 +3227,14 @@ BaudManifestData = {
 						["ItemString"] = "item:106519:0:0:0:0:0:0:0:96:70:0:0:1:134",
 					}, -- [5]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:106662:0:0:0:0:0:0:0:97:70:0:0:1:114",
 						["Equipped"] = 1,
+						["Count"] = 1,
 					}, -- [6]
 					{
-						["ItemString"] = "item:120337:0:0:0:0:0:0:0:97:70:0:0:0",
 						["Count"] = 1,
 						["Equipped"] = 1,
+						["ItemString"] = "item:120337:0:0:0:0:0:0:0:97:70:0:0:0",
 					}, -- [7]
 					{
 						["Count"] = 1,
@@ -3200,50 +3260,46 @@ BaudManifestData = {
 						["ItemString"] = "item:124594:0:0:0:0:0:0:0:100:70:4:1:3:73:647:652:529",
 					}, -- [14]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:124594:0:0:0:0:0:0:0:100:70:4:1:3:189:653:648:529",
 						["Equipped"] = 1,
+						["Count"] = 1,
 					}, -- [15]
 					{
 						["ItemString"] = "item:124590:0:0:0:0:0:0:0:100:70:4:1:3:180:763:653:529",
 					}, -- [16]
 					{
-						["ItemString"] = "item:124578:0:0:0:0:0:0:0:100:70:4:1:3:75:652:648:529",
 						["Count"] = 1,
 						["Equipped"] = 1,
+						["ItemString"] = "item:124578:0:0:0:0:0:0:0:100:70:4:1:3:75:652:648:529",
 					}, -- [17]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:124574:0:0:0:0:0:0:0:100:70:4:1:3:190:653:648:529",
 						["Equipped"] = 1,
+						["Count"] = 1,
 					}, -- [18]
 					{
-						["ItemString"] = "item:124590:0:0:0:0:0:0:0:100:70:4:0:3:175:652:648:529",
 						["Count"] = 1,
 						["Equipped"] = 1,
+						["ItemString"] = "item:124590:0:0:0:0:0:0:0:100:70:4:0:3:175:652:648:529",
 					}, -- [19]
-					["Name"] = "Armor",
-					["Path"] = "Armor",
 					["Expanded"] = false,
+					["Path"] = "Armor",
+					["Name"] = "Armor",
 					["SlotsUsed"] = 9,
 				}, -- [8]
 				{
 					{
-						["Slots"] = 3,
 						["ItemString"] = "item:111556:0:0:0:0:0:0:0:94:70:0:0:0",
-						["Count"] = 427,
 					}, -- [1]
 					{
 						["ItemString"] = "item:118722:0:0:0:0:0:0:0:94:70:0:0:0",
-						["Count"] = 19,
+						["Count"] = 20,
 					}, -- [2]
 					{
 						["ItemString"] = "item:119299:0:0:0:0:0:0:0:94:70:0:0:0",
-						["Count"] = 17,
+						["Count"] = 18,
 					}, -- [3]
 					{
-						["Slots"] = 2,
-						["Count"] = 316,
 						["ItemString"] = "item:111366:0:0:0:0:0:0:0:94:70:0:0:0",
 					}, -- [4]
 					{
@@ -3252,22 +3308,18 @@ BaudManifestData = {
 					}, -- [5]
 					{
 						["ItemString"] = "item:109133:0:0:0:0:0:0:0:97:70:0:0:0",
-						["Count"] = 1,
 					}, -- [6]
 					{
-						["Count"] = 10,
 						["ItemString"] = "item:109125:0:0:0:0:0:0:0:99:70:0:0:0",
 					}, -- [7]
 					{
 						["ItemString"] = "item:43102:0:0:0:0:0:0:0:100:70:0:0:0",
-						["Count"] = 7,
 					}, -- [8]
 					{
 						["ItemString"] = "item:109693:0:0:0:0:0:0:0:100:70:0:0:0",
 					}, -- [9]
 					{
 						["ItemString"] = "item:115504:0:0:0:0:0:0:0:100:70:0:0:0",
-						["Count"] = 38,
 					}, -- [10]
 					{
 						["ItemString"] = "item:111245:0:0:0:0:0:0:0:100:70:0:0:0",
@@ -3275,10 +3327,10 @@ BaudManifestData = {
 					{
 						["ItemString"] = "item:113588:0:0:0:0:0:0:0:100:70:0:0:0",
 					}, -- [12]
-					["Expanded"] = false,
-					["Path"] = "Trade Goods",
 					["Name"] = "Trade Goods",
-					["SlotsUsed"] = 12,
+					["Path"] = "Trade Goods",
+					["Expanded"] = false,
+					["SlotsUsed"] = 3,
 				}, -- [9]
 				["BGColor"] = {
 					0.5, -- [1]
@@ -3288,24 +3340,24 @@ BaudManifestData = {
 				},
 				["SpecialTotal"] = 0,
 				["BGTexture"] = "Bumpy",
-				["SlotTotal"] = 104,
-				["SlotEmpty"] = 48,
 				["SpecialEmpty"] = 0,
+				["SlotEmpty"] = 69,
+				["SlotTotal"] = 104,
 			}, -- [1]
 			{
 				{
 					{
-						["ItemString"] = "item:49295:0:0:0:0:0:0:0:91:70:0:0:0",
 						["Count"] = 1,
 						["Equipped"] = 1,
+						["ItemString"] = "item:49295:0:0:0:0:0:0:0:91:70:0:0:0",
 					}, -- [1]
 					{
-						["Count"] = 19,
 						["ItemString"] = "item:119299:0:0:0:0:0:0:0:94:70:0:0:0",
+						["Count"] = 19,
 					}, -- [2]
 					{
-						["Count"] = 9,
 						["ItemString"] = "item:118722:0:0:0:0:0:0:0:94:70:0:0:0",
+						["Count"] = 9,
 					}, -- [3]
 					{
 						["ItemString"] = "item:128510:0:0:0:0:0:0:0:94:70:0:0:0",
@@ -3341,61 +3393,72 @@ BaudManifestData = {
 				},
 				["SlotEmpty"] = 42,
 				["BGTexture"] = "Bumpy",
-				["SlotTotal"] = 50,
-				["SpecialTotal"] = 0,
 				["SpecialEmpty"] = 0,
+				["SpecialTotal"] = 0,
+				["SlotTotal"] = 50,
 			}, -- [2]
 			{
 				{
 					{
-						["Count"] = 276,
-						["Slots"] = 2,
 						["ItemString"] = "item:111366:0:0:0:0:0:0:0:91:70:0:0:0",
+						["Count"] = 611,
+						["Slots"] = 4,
 					}, -- [1]
 					{
+						["Count"] = 368,
 						["ItemString"] = "item:109126:0:0:0:0:0:0:0:91:70:0:0:0",
-						["Count"] = 88,
+						["Slots"] = 2,
 					}, -- [2]
 					{
-						["ItemString"] = "item:109141:0:0:0:0:0:0:0:91:70:0:0:0",
 						["Count"] = 35,
+						["ItemString"] = "item:109141:0:0:0:0:0:0:0:91:70:0:0:0",
 					}, -- [3]
 					{
-						["Count"] = 938,
-						["Slots"] = 5,
+						["Count"] = 678,
 						["ItemString"] = "item:109119:0:0:0:0:0:0:0:91:70:0:0:0",
+						["Slots"] = 4,
 					}, -- [4]
 					{
-						["Count"] = 1504,
-						["Slots"] = 8,
+						["Count"] = 1309,
 						["ItemString"] = "item:109118:0:0:0:0:0:0:0:91:70:0:0:0",
+						["Slots"] = 7,
 					}, -- [5]
 					{
+						["Count"] = 625,
 						["ItemString"] = "item:111556:0:0:0:0:0:0:0:91:70:0:0:0",
-						["Count"] = 142,
+						["Slots"] = 4,
 					}, -- [6]
 					{
-						["Count"] = 1136,
-						["Slots"] = 6,
+						["Count"] = 1548,
 						["ItemString"] = "item:111557:0:0:0:0:0:0:0:91:70:0:0:0",
+						["Slots"] = 8,
 					}, -- [7]
 					{
-						["ItemString"] = "item:90146:0:0:0:0:0:0:0:91:70:0:0:0",
 						["Count"] = 1,
+						["ItemString"] = "item:90146:0:0:0:0:0:0:0:91:70:0:0:0",
 					}, -- [8]
 					{
 						["ItemString"] = "item:109693:0:0:0:0:0:0:0:94:70:0:0:0",
-						["Slots"] = 9,
-						["Count"] = 1630,
+						["Count"] = 2840,
+						["Slots"] = 15,
 					}, -- [9]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:43102:0:0:0:0:0:0:0:94:70:0:0:0",
+						["Count"] = 1,
 					}, -- [10]
 					{
-						["Count"] = 10,
 						["ItemString"] = "item:33470:0:0:0:0:0:0:0:94:70:0:0:0",
+						["Count"] = 10,
 					}, -- [11]
+					{
+						["Count"] = 10,
+						["ItemString"] = "item:109125:0:0:0:0:0:0:0:100:70:0:0:0",
+					}, -- [12]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:109133:0:0:0:0:0:0:0:100:70:0:0:0",
+					}, -- [13]
+					["SlotsUsed"] = 50,
 				}, -- [1]
 				["BGColor"] = {
 					0.5, -- [1]
@@ -3403,11 +3466,11 @@ BaudManifestData = {
 					0.5, -- [3]
 					0.7, -- [4]
 				},
-				["SlotEmpty"] = 62,
+				["SlotEmpty"] = 48,
 				["BGTexture"] = "Bumpy",
-				["SlotTotal"] = 98,
-				["SpecialTotal"] = 0,
 				["SpecialEmpty"] = 0,
+				["SpecialTotal"] = 0,
+				["SlotTotal"] = 98,
 			}, -- [3]
 			["AutoSell"] = 1,
 			["BankBag"] = {
@@ -3442,103 +3505,1086 @@ BaudManifestData = {
 				[0] = 1,
 			},
 			["Class"] = "PALADIN",
-			["Money"] = 27502817,
+			["Money"] = 28766761,
 		},
-		["Clothgar"] = {
+		["Uldaris"] = {
 			{
 				{
 					{
-						["Slots"] = 3,
-						["Count"] = 533,
-						["ItemString"] = "item:38682:0:0:0:0:0:0:0:1:0:0:0:0",
+						["Category"] = 7,
 					}, -- [1]
 					{
-						["Slots"] = 7,
-						["ItemString"] = "item:113588:0:0:0:0:0:0:0:1:0:0:0:0",
-						["Count"] = 1351,
+						["Category"] = 6,
 					}, -- [2]
 					{
-						["Slots"] = 8,
-						["Count"] = 1409,
-						["ItemString"] = "item:113261:0:0:0:0:0:0:0:1:0:0:0:0",
+						["Category"] = 5,
 					}, -- [3]
 					{
-						["Slots"] = 11,
-						["Count"] = 2187,
-						["ItemString"] = "item:113262:0:0:0:0:0:0:0:1:0:0:0:0",
+						["Category"] = 4,
 					}, -- [4]
 					{
-						["Slots"] = 5,
-						["Count"] = 986,
-						["ItemString"] = "item:113264:0:0:0:0:0:0:0:1:0:0:0:0",
+						["Category"] = 3,
 					}, -- [5]
 					{
-						["Count"] = 1,
-						["ItemString"] = "item:45998:0:0:0:0:0:0:-790816284:1:0:0:0:0",
-						["Equipped"] = 1,
+						["Category"] = 2,
 					}, -- [6]
 					{
 						["Count"] = 1,
-						["ItemString"] = "item:69863:0:0:0:0:0:0:1441199488:1:0:0:0:0",
-						["Equipped"] = 1,
+						["ItemString"] = "item:6948:0:0:0:0:0:0:0:100:103:0:0:0",
 					}, -- [7]
 					{
 						["Count"] = 1,
-						["ItemString"] = "item:6833:0:0:0:0:0:0:1703133722:1:0:0:0:0",
+						["ItemString"] = "item:110560:0:0:0:0:0:0:0:100:103:0:11:0",
+					}, -- [8]
+					{
+						["Count"] = 4,
+						["ItemString"] = "item:114821:0:0:0:0:0:0:0:100:103:0:0:0",
+						["Equipped"] = 4,
+					}, -- [9]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:114877:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [10]
+					{
+						["ItemString"] = "item:50741:0:0:0:0:0:0:0:100:105:0:1:0",
+						["Count"] = 1,
+					}, -- [11]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:113107:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [12]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:50446:0:0:0:0:0:0:0:100:105:0:1:0",
+					}, -- [13]
+					{
+						["ItemString"] = "item:109693:0:0:0:0:0:0:0:100:102:0:0:0",
+						["Count"] = 2000,
+						["Slots"] = 10,
+					}, -- [14]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:112100:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [15]
+					{
+						["Slots"] = 2,
+						["ItemString"] = "item:109127:0:0:0:0:0:0:0:100:102:0:0:0",
+						["Count"] = 310,
+					}, -- [16]
+					{
+						["ItemString"] = "item:122590:0:0:0:0:0:0:0:100:102:0:0:0",
+						["Count"] = 2,
+					}, -- [17]
+					{
+						["ItemString"] = "item:122592:0:0:0:0:0:0:0:100:102:0:0:0",
+						["Count"] = 3,
+					}, -- [18]
+					{
+						["ItemString"] = "item:89317:0:0:0:0:0:0:0:100:102:0:0:0",
+						["Count"] = 1,
+					}, -- [19]
+					{
+						["ItemString"] = "item:95567:0:0:0:0:0:0:0:100:102:0:11:0",
+						["Count"] = 1,
+					}, -- [20]
+					{
+						["ItemString"] = "item:40615:0:0:0:0:0:0:-1804990336:100:102:0:0:0",
+						["Count"] = 1,
+					}, -- [21]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:114806:0:0:0:0:0:0:0:100:102:0:0:0",
+					}, -- [22]
+					{
+						["ItemString"] = "item:120302:0:0:0:0:0:0:0:100:102:0:1:0",
+						["Count"] = 1,
+					}, -- [23]
+					{
+						["Count"] = 50,
+						["ItemString"] = "item:120945:0:0:0:0:0:0:0:100:102:0:0:0",
+					}, -- [24]
+					{
+						["ItemString"] = "item:114616:0:0:0:0:0:0:0:100:102:0:0:0",
+						["Count"] = 1,
+					}, -- [25]
+					["SlotsUsed"] = 131,
+				}, -- [1]
+				{
+					{
+						["ItemString"] = "item:116395:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [1]
+					{
+						["ItemString"] = "item:116394:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [2]
+					{
+						["ItemString"] = "item:104286:0:0:0:0:0:0:0:100:103:0:0:0",
+						["Count"] = 13,
+					}, -- [3]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:113540:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [4]
+					{
+						["Count"] = 132,
+						["ItemString"] = "item:79249:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [5]
+					{
+						["ItemString"] = "item:113681:0:0:0:0:0:0:0:100:103:0:0:0",
+						["Count"] = 879,
+					}, -- [6]
+					{
+						["ItemString"] = "item:118100:0:0:0:0:0:0:0:100:103:0:0:0",
+						["Count"] = 12,
+					}, -- [7]
+					{
+						["ItemString"] = "item:127823:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [8]
+					{
+						["ItemString"] = "item:127810:0:0:0:0:0:0:0:100:105:0:0:0",
+					}, -- [9]
+					{
+						["ItemString"] = "item:114057:0:0:0:0:0:0:0:100:103:0:1:0",
+					}, -- [10]
+					{
+						["ItemString"] = "item:114058:0:0:0:0:0:0:0:100:103:0:1:0",
+					}, -- [11]
+					{
+						["ItemString"] = "item:113478:0:0:0:0:0:0:0:100:103:0:0:0",
+						["Count"] = 6,
+					}, -- [12]
+					{
+						["ItemString"] = "item:128373:0:0:0:0:0:0:0:100:103:0:0:0",
+						["Count"] = 2,
+					}, -- [13]
+					{
+						["Count"] = 200,
+						["ItemString"] = "item:124099:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [14]
+					["Name"] = "g",
+					["Path"] = "g",
+					["Expanded"] = false,
+					["SlotsUsed"] = 8,
+				}, -- [2]
+				{
+					{
+						["Slots"] = 11,
+						["ItemString"] = "item:115524:0:0:0:0:0:0:0:100:103:0:0:0",
+						["Count"] = 2146,
+					}, -- [1]
+					{
+						["ItemString"] = "item:118721:0:0:0:0:0:0:0:100:103:0:0:0",
+						["Count"] = 2,
+					}, -- [2]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:20815:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [3]
+					{
+						["ItemString"] = "item:109119:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [4]
+					{
+						["Slots"] = 9,
+						["Count"] = 1718,
+						["ItemString"] = "item:109118:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [5]
+					{
+						["Slots"] = 3,
+						["Count"] = 540,
+						["ItemString"] = "item:110611:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [6]
+					{
+						["ItemString"] = "item:111557:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [7]
+					{
+						["ItemString"] = "item:118007:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [8]
+					{
+						["ItemString"] = "item:110609:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [9]
+					["Name"] = "Trade Goods",
+					["Path"] = "Trade Goods",
+					["Expanded"] = false,
+					["SlotsUsed"] = 25,
+				}, -- [3]
+				{
+					{
+						["Category"] = 10,
+					}, -- [1]
+					{
+						["Category"] = 9,
+					}, -- [2]
+					{
+						["Count"] = 6,
+						["ItemString"] = "item:113405:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [3]
+					{
+						["ItemString"] = "item:38577:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [4]
+					{
+						["Count"] = 5,
+						["ItemString"] = "item:31451:0:0:0:0:0:0:1696314948:100:103:0:0:0",
+					}, -- [5]
+					{
+						["ItemString"] = "item:114120:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [6]
+					{
+						["ItemString"] = "item:114116:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [7]
+					{
+						["ItemString"] = "item:86574:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [8]
+					{
+						["ItemString"] = "item:119449:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [9]
+					{
+						["ItemString"] = "item:120182:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [10]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:119348:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [11]
+					{
+						["ItemString"] = "item:81054:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [12]
+					{
+						["Count"] = 6,
+						["ItemString"] = "item:109076:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [13]
+					{
+						["ItemString"] = "item:116917:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [14]
+					{
+						["ItemString"] = "item:118428:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [15]
+					{
+						["ItemString"] = "item:111436:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [16]
+					{
+						["ItemString"] = "item:118897:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [17]
+					{
+						["ItemString"] = "item:109147:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [18]
+					{
+						["ItemString"] = "item:6662:0:0:0:0:0:0:0:100:103:0:0:0",
+						["Count"] = 260,
+						["Slots"] = 13,
+					}, -- [19]
+					{
+						["Count"] = 3,
+						["ItemString"] = "item:109222:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [20]
+					{
+						["ItemString"] = "item:118006:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [21]
+					{
+						["ItemString"] = "item:109223:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [22]
+					{
+						["ItemString"] = "item:113585:0:0:0:0:0:0:0:100:103:0:0:0",
+						["Count"] = 6,
+					}, -- [23]
+					{
+						["ItemString"] = "item:109217:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [24]
+					{
+						["ItemString"] = "item:118630:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [25]
+					{
+						["Slots"] = 5,
+						["Count"] = 92,
+						["ItemString"] = "item:109155:0:0:0:0:0:0:0:100:105:0:0:0",
+					}, -- [26]
+					["Name"] = "Consumable",
+					["Path"] = "Consumable",
+					["Expanded"] = false,
+					["SlotsUsed"] = 32,
+				}, -- [4]
+				{
+					{
+						["Category"] = 8,
+					}, -- [1]
+					{
+						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:103:0:1:3:110:647:652",
+					}, -- [2]
+					{
+						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:103:0:0:3:227:647:652",
+					}, -- [3]
+					{
+						["ItemString"] = "item:114502:0:0:0:0:0:0:0:100:103:0:1:1:223",
+					}, -- [4]
+					{
+						["ItemString"] = "item:114497:0:0:0:0:0:0:0:100:103:0:1:1:123",
+					}, -- [5]
+					{
+						["ItemString"] = "item:114436:0:0:0:0:0:0:0:100:103:0:1:1:222",
+					}, -- [6]
+					{
+						["ItemString"] = "item:113634:0:0:0:0:0:0:0:100:103:0:3:0",
+					}, -- [7]
+					{
+						["ItemString"] = "item:118851:0:0:0:0:0:0:0:100:105:0:0:0",
+					}, -- [8]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:115798:0:0:0:0:0:0:0:100:102:4:13:3:125:525:540:529",
+					}, -- [9]
+					{
+						["ItemString"] = "item:113951:0:0:0:0:0:0:0:100:103:0:3:0",
+					}, -- [10]
+					{
+						["ItemString"] = "item:114494:0:0:0:0:0:0:0:100:103:0:1:1:161",
+					}, -- [11]
+					{
+						["ItemString"] = "item:118255:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [12]
+					{
+						["ItemString"] = "item:114537:0:0:0:0:0:0:0:100:103:0:1:2:138:41",
+					}, -- [13]
+					{
+						["ItemString"] = "item:114538:0:0:0:0:0:0:0:100:102:0:1:1:69",
+					}, -- [14]
+					{
+						["ItemString"] = "item:114494:0:0:0:0:0:0:0:100:102:0:1:1:227",
+					}, -- [15]
+					{
+						["ItemString"] = "item:114494:0:0:0:0:0:0:0:100:102:0:1:2:126:563",
+					}, -- [16]
+					{
+						["ItemString"] = "item:114497:0:0:0:0:0:0:0:100:102:0:1:2:58:40",
+					}, -- [17]
+					{
+						["ItemString"] = "item:114433:0:0:0:0:0:0:0:100:102:0:1:2:486:563",
+					}, -- [18]
+					{
+						["ItemString"] = "item:124592:0:0:0:0:0:0:0:100:102:0:1:3:88:647:652",
+					}, -- [19]
+					{
+						["ItemString"] = "item:114396:0:0:0:0:0:0:0:100:102:0:1:1:185",
+					}, -- [20]
+					{
+						["ItemString"] = "item:114457:0:0:0:0:0:0:0:100:102:0:1:1:155",
+					}, -- [21]
+					{
+						["ItemString"] = "item:114477:0:0:0:0:0:0:0:100:102:0:1:1:103",
+					}, -- [22]
+					{
+						["ItemString"] = "item:114323:0:0:0:0:0:0:0:100:102:0:1:1:229",
+					}, -- [23]
+					{
+						["ItemString"] = "item:114380:0:0:0:0:0:0:0:100:102:0:1:1:110",
+					}, -- [24]
+					{
+						["ItemString"] = "item:114380:0:0:0:0:0:0:0:100:102:0:1:2:191:560",
+					}, -- [25]
+					{
+						["ItemString"] = "item:114380:0:0:0:0:0:0:0:100:102:0:1:1:189",
+					}, -- [26]
+					{
+						["ItemString"] = "item:114380:0:0:0:0:0:0:0:100:102:0:1:1:148",
+					}, -- [27]
+					{
+						["ItemString"] = "item:113661:0:0:0:0:0:0:0:100:103:0:3:0",
+					}, -- [28]
+					{
+						["ItemString"] = "item:128350:0:0:0:0:0:0:0:100:103:0:0:3:197:651:652",
+					}, -- [29]
+					{
+						["ItemString"] = "item:124631:0:0:0:0:0:0:0:100:102:4:14:3:180:653:648:529",
+					}, -- [30]
+					{
+						["ItemString"] = "item:124546:0:0:0:0:0:0:0:100:102:4:3:0:529",
+						["Count"] = 1,
+					}, -- [31]
+					{
+						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:102:4:0:3:138:651:653:529",
+					}, -- [32]
+					{
+						["ItemString"] = "item:113634:0:0:0:0:0:0:0:100:103:0:3:1:560",
+					}, -- [33]
+					{
+						["ItemString"] = "item:113889:0:0:0:0:0:0:0:100:105:0:3:0",
+					}, -- [34]
+					{
+						["ItemString"] = "item:115332:0:0:0:0:0:0:0:100:103:0:1:1:132",
+					}, -- [35]
+					{
+						["ItemString"] = "item:128054:0:0:0:0:0:0:0:100:102:4:4:0:529",
+					}, -- [36]
+					{
+						["ItemString"] = "item:113598:0:0:0:0:0:0:0:100:105:0:3:0",
+					}, -- [37]
+					{
+						["ItemString"] = "item:127665:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [38]
+					{
+						["ItemString"] = "item:128220:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [39]
+					{
+						["ItemString"] = "item:113877:0:0:0:0:0:0:0:100:103:0:3:0",
+					}, -- [40]
+					{
+						["ItemString"] = "item:128034:0:0:0:0:0:0:0:100:102:4:4:1:560:529",
+					}, -- [41]
+					{
+						["ItemString"] = "item:113985:0:0:0:0:0:0:0:100:103:0:3:1:563",
+					}, -- [42]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:116174:0:0:0:0:0:0:0:100:102:4:13:3:176:525:536:529",
+					}, -- [43]
+					{
+						["ItemString"] = "item:113851:0:0:0:0:0:0:0:100:103:0:3:0",
+					}, -- [44]
+					{
+						["ItemString"] = "item:124580:0:0:0:0:0:0:0:100:102:4:0:3:163:647:653:529",
+					}, -- [45]
+					{
+						["ItemString"] = "item:113611:0:0:0:0:0:0:0:100:103:0:3:0",
+					}, -- [46]
+					{
+						["ItemString"] = "item:128150:0:0:0:0:0:0:0:100:102:4:4:0:529",
+					}, -- [47]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:116178:0:0:0:0:0:0:0:100:102:4:13:3:51:525:535:529",
+					}, -- [48]
+					{
+						["ItemString"] = "item:124608:0:0:0:0:0:0:0:100:102:4:1:3:126:647:653:529",
+					}, -- [49]
+					{
+						["ItemString"] = "item:115325:0:0:0:0:0:0:0:100:102:0:1:1:142",
+					}, -- [50]
+					{
+						["ItemString"] = "item:114367:0:0:0:0:0:0:0:100:102:0:1:0",
+					}, -- [51]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:116179:0:0:0:0:0:0:0:100:102:4:13:3:83:525:536:529",
+					}, -- [52]
+					{
+						["ItemString"] = "item:114550:0:0:0:0:0:0:0:100:102:0:1:0",
+					}, -- [53]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:116175:0:0:0:0:0:0:0:100:102:4:13:3:48:525:536:529",
+					}, -- [54]
+					{
+						["ItemString"] = "item:119509:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [55]
+					{
+						["ItemString"] = "item:128039:0:0:0:0:0:0:0:100:102:4:4:0:529",
+					}, -- [56]
+					{
+						["ItemString"] = "item:116824:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [57]
+					{
+						["ItemString"] = "item:114549:0:0:0:0:0:0:0:100:103:0:1:1:560",
+					}, -- [58]
+					{
+						["ItemString"] = "item:128190:0:0:0:0:0:0:0:100:102:4:4:0:529",
+					}, -- [59]
+					{
+						["ItemString"] = "item:117360:0:0:0:0:0:0:0:100:105:0:1:1:710",
+					}, -- [60]
+					{
+						["ItemString"] = "item:116379:0:0:0:0:0:0:0:100:105:0:4:0",
+					}, -- [61]
+					{
+						["ItemString"] = "item:117391:0:0:0:0:0:0:0:100:105:0:1:1:710",
+					}, -- [62]
+					{
+						["ItemString"] = "item:127412:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [63]
+					{
+						["ItemString"] = "item:113664:0:0:0:0:0:0:0:100:105:0:3:1:560",
+						["Count"] = 1,
+					}, -- [64]
+					{
+						["ItemString"] = "item:117359:0:0:0:0:0:0:0:100:105:0:1:1:710",
+					}, -- [65]
+					{
+						["ItemString"] = "item:124601:0:0:0:0:0:0:0:100:102:4:14:3:181:647:653:529",
+					}, -- [66]
+					{
+						["ItemString"] = "item:128152:0:0:0:0:0:0:0:100:105:4:4:0:529",
+					}, -- [67]
+					["Name"] = "Gear",
+					["Path"] = "Gear",
+					["Expanded"] = false,
+					["SlotsUsed"] = 29,
+				}, -- [5]
+				{
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:116913:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [1]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:33820:0:0:0:0:0:0:1675953280:100:103:0:0:0",
+					}, -- [2]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:63206:0:0:0:0:0:0:0:100:103:0:14:0",
+					}, -- [3]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:2820:0:0:0:0:0:0:652230831:100:103:0:0:0",
+					}, -- [4]
+					{
+						["ItemString"] = "item:40586:0:0:0:0:0:0:0:100:103:0:14:0",
+						["Count"] = 1,
+					}, -- [5]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:109167:0:0:0:0:0:0:0:100:103:0:1:0",
+					}, -- [6]
+					{
+						["ItemString"] = "item:128353:0:0:0:0:0:0:0:100:105:0:0:0",
+						["Count"] = 1,
+					}, -- [7]
+					["Name"] = "Useful Items",
+					["Path"] = "Useful Items",
+					["Expanded"] = false,
+					["SlotsUsed"] = 7,
+				}, -- [6]
+				{
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:71086:0:0:0:0:0:0:0:100:102:0:11:0",
+					}, -- [1]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:46017:0:0:0:0:0:0:0:100:102:0:11:0",
+					}, -- [2]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:118084:0:0:0:0:0:0:0:100:103:0:11:0",
+					}, -- [3]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:118365:0:0:0:0:0:0:0:100:103:0:11:0",
+					}, -- [4]
+					{
+						["ItemString"] = "item:45038:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [5]
+					{
+						["ItemString"] = "item:71016:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [6]
+					{
+						["ItemString"] = "item:71008:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [7]
+					{
+						["ItemString"] = "item:71017:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [8]
+					{
+						["ItemString"] = "item:71001:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [9]
+					{
+						["ItemString"] = "item:71084:0:0:0:0:0:0:0:100:103:0:11:0",
+					}, -- [10]
+					{
+						["ItemString"] = "item:69815:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [11]
+					{
+						["ItemString"] = "item:71085:0:0:0:0:0:0:0:100:102:0:11:0",
+					}, -- [12]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:69897:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [13]
+					{
+						["ItemString"] = "item:45896:0:0:0:0:0:0:0:100:102:0:11:0",
+					}, -- [14]
+					["Name"] = "Mementos",
+					["Path"] = "Mementos",
+					["Expanded"] = false,
+					["SlotsUsed"] = 5,
+				}, -- [7]
+				{
+					{
+						["ItemString"] = "item:114694:0:0:0:0:0:0:0:100:103:0:11:1:577",
+					}, -- [1]
+					{
+						["ItemString"] = "item:122254:0:0:0:0:0:0:0:100:103:0:0:1:583",
+					}, -- [2]
+					{
+						["ItemString"] = "item:114502:0:0:0:0:0:0:0:100:103:0:1:2:32:560",
+					}, -- [3]
+					{
+						["ItemString"] = "item:118253:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [4]
+					{
+						["ItemString"] = "item:122261:0:0:0:0:0:0:0:100:103:0:0:1:583",
+					}, -- [5]
+					{
+						["ItemString"] = "item:114518:0:0:0:0:0:0:0:100:103:0:1:1:133",
+					}, -- [6]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:69210:0:0:0:0:0:0:0:100:103:0:14:0",
+						["Equipped"] = 1,
+					}, -- [7]
+					{
+						["ItemString"] = "item:128137:0:0:0:0:0:0:0:100:102:4:4:0:529",
+						["Count"] = 2,
 						["Equipped"] = 1,
 					}, -- [8]
 					{
 						["Count"] = 1,
-						["ItemString"] = "item:10035:0:0:0:0:0:0:870556352:1:0:0:0:0",
+						["ItemString"] = "item:124545:0:5348:0:0:0:0:0:100:105:4:3:1:563:529",
 						["Equipped"] = 1,
 					}, -- [9]
 					{
+						["ItemString"] = "item:124603:5326:0:0:0:0:0:0:100:105:4:14:3:375:652:648:529",
 						["Count"] = 1,
-						["ItemString"] = "item:59:0:0:0:0:0:0:0:1:0:0:0:0",
 						["Equipped"] = 1,
 					}, -- [10]
 					{
-						["Count"] = 1,
-						["ItemString"] = "item:69865:0:0:0:0:0:0:1951996160:1:0:0:0:0",
 						["Equipped"] = 1,
+						["Count"] = 3,
+						["Slots"] = 2,
+						["ItemString"] = "item:113964:0:0:0:0:0:0:0:100:103:0:3:0",
 					}, -- [11]
 					{
+						["ItemString"] = "item:128065:0:0:0:0:0:0:0:100:102:4:4:1:560:529",
 						["Count"] = 1,
-						["ItemString"] = "item:45861:0:0:0:0:0:0:-529786634:1:0:0:0:0",
-						["Equipped"] = 1,
 					}, -- [12]
 					{
-						["Count"] = 1,
-						["ItemString"] = "item:5976:0:0:0:0:0:0:0:1:0:0:0:0",
-						["Equipped"] = 1,
+						["ItemString"] = "item:113907:0:0:0:0:0:0:0:100:105:0:3:0",
+						["Count"] = 2,
+						["Slots"] = 2,
 					}, -- [13]
 					{
-						["Count"] = 4,
-						["ItemString"] = "item:54443:0:0:0:0:0:0:1283787392:1:0:0:0:0",
-						["Equipped"] = 4,
+						["Count"] = 1,
+						["ItemString"] = "item:124609:5319:0:0:0:0:0:0:100:105:4:1:3:488:653:648:529",
+						["Equipped"] = 1,
 					}, -- [14]
 					{
-						["ItemString"] = "item:113263:0:0:0:0:0:0:0:1:0:0:0:0",
-						["Count"] = 95,
+						["ItemString"] = "item:127973:5311:0:0:0:0:0:0:100:105:4:3:0:529",
+						["Count"] = 1,
 					}, -- [15]
 					{
-						["Slots"] = 6,
-						["Count"] = 1176,
-						["ItemString"] = "item:115504:0:0:0:0:0:0:0:1:0:0:0:0",
+						["Count"] = 1,
+						["ItemString"] = "item:6833:0:0:0:0:0:0:-1269268830:100:103:0:0:0",
+						["Equipped"] = 1,
 					}, -- [16]
 					{
-						["ItemString"] = "item:118632:0:0:0:0:0:0:0:1:0:0:0:0",
+						["Count"] = 1,
+						["ItemString"] = "item:128131:0:0:0:0:0:0:0:100:102:4:4:1:42:529",
+						["Equipped"] = 1,
 					}, -- [17]
 					{
-						["ItemString"] = "item:118472:0:0:0:0:0:0:0:1:0:0:0:0",
+						["Count"] = 1,
+						["ItemString"] = "item:127982:0:0:0:0:0:0:0:100:102:4:3:0:529",
+						["Equipped"] = 1,
 					}, -- [18]
 					{
-						["ItemString"] = "item:45101:0:0:0:0:0:0:0:1:0:0:0:0",
+						["ItemString"] = "item:124630:5384:0:0:0:0:0:0:100:105:4:14:3:188:653:648:529",
+						["Count"] = 1,
+						["Equipped"] = 1,
 					}, -- [19]
 					{
-						["ItemString"] = "item:45097:0:0:0:0:0:0:0:1:0:0:0:0",
+						["ItemString"] = "item:124602:5326:0:0:0:0:0:0:100:105:4:14:3:226:764:652:529",
+						["Count"] = 1,
+						["Equipped"] = 1,
 					}, -- [20]
-					["SlotsUsed"] = 55,
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:128125:0:5348:0:0:0:0:0:100:105:4:4:1:563:529",
+						["Equipped"] = 1,
+					}, -- [21]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:113948:0:0:0:0:0:0:0:100:102:0:3:0",
+						["Equipped"] = 1,
+					}, -- [22]
+					{
+						["ItemString"] = "item:128046:0:0:0:0:0:0:0:100:102:4:4:0:529",
+						["Count"] = 1,
+						["Equipped"] = 1,
+					}, -- [23]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:124251:0:5348:0:0:0:0:0:100:105:4:3:1:563:529",
+						["Equipped"] = 1,
+					}, -- [24]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:128104:5312:0:0:0:0:0:0:100:102:4:4:1:40:529",
+						["Equipped"] = 1,
+					}, -- [25]
+					{
+						["ItemString"] = "item:128034:0:5348:0:0:0:0:0:100:105:4:4:1:563:529",
+						["Count"] = 1,
+						["Equipped"] = 1,
+					}, -- [26]
+					["Name"] = "Equipped",
+					["Path"] = "Gear\\Equipped",
+					["Expanded"] = false,
+					["SlotsUsed"] = 22,
+				}, -- [8]
+				{
+					{
+						["ItemString"] = "item:114128:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [1]
+					{
+						["ItemString"] = "item:114745:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [2]
+					{
+						["ItemString"] = "item:114129:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [3]
+					{
+						["ItemString"] = "item:114808:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [4]
+					{
+						["ItemString"] = "item:114822:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [5]
+					{
+						["ItemString"] = "item:114131:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [6]
+					{
+						["ItemString"] = "item:114746:0:0:0:0:0:0:0:100:105:0:0:0",
+					}, -- [7]
+					{
+						["ItemString"] = "item:114622:0:0:0:0:0:0:0:100:105:0:0:0",
+					}, -- [8]
+					{
+						["ItemString"] = "item:118475:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [9]
+					{
+						["ItemString"] = "item:122584:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [10]
+					{
+						["ItemString"] = "item:122273:0:0:0:0:0:0:0:100:102:0:0:0",
+						["Count"] = 2,
+					}, -- [11]
+					{
+						["ItemString"] = "item:118474:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [12]
+					{
+						["Count"] = 9,
+						["ItemString"] = "item:118354:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [13]
+					{
+						["ItemString"] = "item:122580:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [14]
+					{
+						["ItemString"] = "item:122272:0:0:0:0:0:0:0:100:105:0:0:0",
+						["Count"] = 3,
+					}, -- [15]
+					["Expanded"] = false,
+					["Path"] = "Consumable\\Follower",
+					["Name"] = "Follower",
+					["SlotsUsed"] = 3,
+				}, -- [9]
+				{
+					{
+						["ItemString"] = "item:127880:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [1]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:127883:0:0:0:0:0:0:0:100:105:0:0:0",
+					}, -- [2]
+					{
+						["ItemString"] = "item:127881:0:0:0:0:0:0:0:100:105:0:0:0",
+						["Count"] = 2,
+					}, -- [3]
+					{
+						["ItemString"] = "item:127882:0:0:0:0:0:0:0:100:105:0:0:0",
+					}, -- [4]
+					{
+						["ItemString"] = "item:127884:0:0:0:0:0:0:0:100:102:0:0:0",
+						["Count"] = 2,
+					}, -- [5]
+					{
+						["ItemString"] = "item:127662:0:0:0:0:0:0:0:100:105:0:0:0",
+						["Count"] = 3,
+					}, -- [6]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:125787:0:0:0:0:0:0:0:100:102:0:0:0",
+					}, -- [7]
+					["Name"] = "Naval",
+					["Path"] = "Consumable\\Naval",
+					["Expanded"] = false,
+					["SlotsUsed"] = 5,
+				}, -- [10]
+				["BGColor"] = {
+					0.5, -- [1]
+					0.5, -- [2]
+					0.5, -- [3]
+					0.7, -- [4]
+				},
+				["SpecialTotal"] = 0,
+				["BGTexture"] = "Bumpy",
+				["ShowBags"] = false,
+				["SpecialEmpty"] = 0,
+				["SlotEmpty"] = 17,
+				["SlotTotal"] = 136,
+			}, -- [1]
+			{
+				{
+					{
+						["ItemString"] = "item:31437:0:0:0:0:0:0:1381900645:100:103:0:0:0",
+						["Count"] = 5,
+					}, -- [1]
+					{
+						["Count"] = 20,
+						["ItemString"] = "item:21215:0:0:0:0:0:0:1392214658:100:103:0:0:0",
+					}, -- [2]
+					{
+						["ItemString"] = "item:8529:0:0:0:0:0:0:332352234:100:103:0:0:0",
+						["Count"] = 5,
+					}, -- [3]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:46725:0:0:0:0:0:0:999178330:100:103:0:0:0",
+					}, -- [4]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:15778:0:0:0:0:0:0:770262101:100:103:0:0:0",
+					}, -- [5]
+					{
+						["Count"] = 5,
+						["ItemString"] = "item:31450:0:0:0:0:0:0:256424726:100:103:0:0:0",
+					}, -- [6]
+					{
+						["ItemString"] = "item:21537:0:0:0:0:0:0:0:100:103:0:0:0",
+						["Count"] = 16,
+					}, -- [7]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:37863:0:0:0:0:0:0:1929499237:100:103:0:0:0",
+					}, -- [8]
+					{
+						["Slots"] = 3,
+						["ItemString"] = "item:44792:0:0:0:0:0:0:-1044611044:100:103:0:0:0",
+						["Count"] = 3,
+					}, -- [9]
+					{
+						["Count"] = 40,
+						["ItemString"] = "item:34599:0:0:0:0:0:0:1265171456:100:103:0:0:0",
+					}, -- [10]
+					{
+						["ItemString"] = "item:34068:0:0:0:0:0:0:110043216:100:103:0:0:0",
+						["Count"] = 17,
+					}, -- [11]
+					{
+						["ItemString"] = "item:29735:0:0:0:0:0:0:988337464:100:103:0:0:0",
+						["Count"] = 1,
+					}, -- [12]
+					{
+						["ItemString"] = "item:24421:0:0:0:0:0:0:1462909754:100:103:0:0:0",
+						["Count"] = 17,
+					}, -- [13]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:12650:0:0:0:0:0:0:80608408:100:103:0:0:0",
+					}, -- [14]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:37892:0:0:0:0:0:0:1245467008:100:103:0:0:0",
+					}, -- [15]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:44731:0:0:0:0:0:0:906283088:100:103:0:0:0",
+					}, -- [16]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:23587:0:0:0:0:0:0:1152949973:100:103:0:0:0",
+					}, -- [17]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:33292:0:0:0:0:0:0:2008424057:100:103:0:0:0",
+					}, -- [18]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:46723:0:0:0:0:0:0:310181760:100:103:0:0:0",
+					}, -- [19]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:44803:0:0:0:0:0:0:-1040285671:100:103:0:0:0",
+					}, -- [20]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:46800:0:0:0:0:0:0:557735232:100:103:0:0:0",
+					}, -- [21]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:44800:0:0:0:0:0:0:-442269671:100:103:0:0:0",
+					}, -- [22]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:34685:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [23]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:21541:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [24]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:34683:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [25]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:44597:0:0:0:0:0:0:941147264:100:103:0:0:0",
+					}, -- [26]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:32481:0:0:0:0:0:0:212233872:100:103:0:0:0",
+					}, -- [27]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:10455:0:0:0:0:0:0:1939913195:100:103:0:0:0",
+					}, -- [28]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:19141:0:0:0:0:0:0:1863395700:100:103:0:0:0",
+					}, -- [29]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:11122:0:0:0:0:0:0:719396220:100:103:0:0:0",
+					}, -- [30]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:65906:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [31]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:31666:0:0:0:0:0:0:544603172:100:103:0:0:0",
+					}, -- [32]
+					{
+						["ItemString"] = "item:115808:0:0:0:0:0:0:0:100:103:0:0:0",
+						["Count"] = 9,
+					}, -- [33]
+					{
+						["ItemString"] = "item:115807:0:0:0:0:0:0:0:100:103:0:0:0",
+						["Count"] = 3,
+					}, -- [34]
+					{
+						["ItemString"] = "item:115806:0:0:0:0:0:0:0:100:103:0:0:0",
+						["Count"] = 4,
+					}, -- [35]
+					{
+						["ItemString"] = "item:115804:0:0:0:0:0:0:0:100:103:0:0:0",
+						["Count"] = 5,
+					}, -- [36]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:17720:0:0:0:0:0:0:1873231960:100:103:0:0:0",
+					}, -- [37]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:18706:0:0:0:0:0:0:-1337081235:100:103:0:0:0",
+					}, -- [38]
+					{
+						["ItemString"] = "item:12841:0:0:0:0:0:0:1829866862:100:103:0:0:0",
+						["Count"] = 3,
+					}, -- [39]
+					{
+						["ItemString"] = "item:12840:0:0:0:0:0:0:1982144392:100:103:0:0:0",
+						["Count"] = 4,
+					}, -- [40]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:11108:0:0:0:0:0:0:789552814:100:103:0:0:0",
+					}, -- [41]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:3898:0:0:0:0:0:0:1857245646:100:103:0:0:0",
+					}, -- [42]
+					{
+						["ItemString"] = "item:21213:0:0:0:0:0:0:1216903925:100:103:0:0:0",
+						["Count"] = 9,
+					}, -- [43]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:90078:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [44]
+					{
+						["ItemString"] = "item:22524:0:0:0:0:0:0:1481369260:100:103:0:0:0",
+						["Count"] = 3,
+					}, -- [45]
+					{
+						["ItemString"] = "item:22523:0:0:0:0:0:0:516418764:100:103:0:0:0",
+						["Count"] = 2,
+					}, -- [46]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:32454:0:0:0:0:0:0:-1519225502:100:103:0:0:0",
+					}, -- [47]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:25978:0:0:0:0:0:0:1225558204:100:103:0:0:0",
+					}, -- [48]
+					{
+						["Equipped"] = 1,
+						["Count"] = 1,
+						["ItemString"] = "item:41597:0:0:0:0:0:0:1566020608:100:103:0:0:0",
+					}, -- [49]
+					{
+						["Equipped"] = 5,
+						["Count"] = 5,
+						["ItemString"] = "item:54443:0:0:0:0:0:0:516613312:100:103:0:0:0",
+					}, -- [50]
+					{
+						["Equipped"] = 1,
+						["Count"] = 1,
+						["ItemString"] = "item:49295:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [51]
+					{
+						["ItemString"] = "item:128365:0:0:0:0:0:0:0:100:105:0:0:0",
+						["Count"] = 1,
+					}, -- [52]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:128510:0:0:0:0:0:0:0:100:105:0:0:0",
+					}, -- [53]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:128507:0:0:0:0:0:0:0:100:105:0:0:0",
+					}, -- [54]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:128318:0:0:0:0:0:0:0:100:105:0:1:0",
+					}, -- [55]
+					{
+						["Count"] = 784,
+						["Slots"] = 4,
+						["ItemString"] = "item:115524:0:0:0:0:0:0:0:100:105:0:0:0",
+					}, -- [56]
+					{
+						["Count"] = 2,
+						["ItemString"] = "item:109118:0:0:0:0:0:0:0:100:105:0:0:0",
+					}, -- [57]
+					{
+						["Slots"] = 2,
+						["ItemString"] = "item:110609:0:0:0:0:0:0:0:100:105:0:0:0",
+						["Count"] = 400,
+					}, -- [58]
+					{
+						["ItemString"] = "item:110611:0:0:0:0:0:0:0:100:105:0:0:0",
+						["Slots"] = 2,
+						["Count"] = 396,
+					}, -- [59]
+					{
+						["ItemString"] = "item:109125:0:0:0:0:0:0:0:100:102:0:0:0",
+						["Count"] = 200,
+					}, -- [60]
+					{
+						["ItemString"] = "item:11482:0:0:0:0:0:0:175250977:100:102:0:0:0",
+						["Count"] = 1,
+					}, -- [61]
+					{
+						["ItemString"] = "item:24475:0:0:0:0:0:0:353282374:100:102:0:0:0",
+						["Count"] = 1,
+					}, -- [62]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:117492:0:0:0:0:0:0:0:100:102:0:0:0",
+					}, -- [63]
+					["SlotsUsed"] = 70,
 				}, -- [1]
 				["BGColor"] = {
 					0.5, -- [1]
@@ -3546,11 +4592,993 @@ BaudManifestData = {
 					0.5, -- [3]
 					0.7, -- [4]
 				},
-				["SlotEmpty"] = 63,
+				["SlotEmpty"] = 115,
 				["BGTexture"] = "Bumpy",
-				["SlotTotal"] = 104,
+				["ShowBags"] = false,
+				["SlotTotal"] = 182,
 				["SpecialTotal"] = 0,
 				["SpecialEmpty"] = 0,
+			}, -- [2]
+			{
+				{
+					{
+						["ItemString"] = "item:115524:0:0:0:0:0:0:0:100:103:0:0:0",
+						["Slots"] = 35,
+						["Count"] = 6963,
+					}, -- [1]
+					{
+						["Count"] = 1711,
+						["Slots"] = 2,
+						["ItemString"] = "item:120945:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [2]
+					{
+						["ItemString"] = "item:109119:0:0:0:0:0:0:0:100:103:0:0:0",
+						["Slots"] = 11,
+						["Count"] = 2113,
+					}, -- [3]
+					{
+						["Count"] = 94,
+						["ItemString"] = "item:110609:0:0:0:0:0:0:0:100:103:0:0:0",
+					}, -- [4]
+					{
+						["Count"] = 5798,
+						["Slots"] = 29,
+						["ItemString"] = "item:110611:0:0:0:0:0:0:0:100:105:0:0:0",
+					}, -- [5]
+					{
+						["ItemString"] = "item:109127:0:0:0:0:0:0:0:100:105:0:0:0",
+						["Slots"] = 2,
+						["Count"] = 366,
+					}, -- [6]
+					{
+						["ItemString"] = "item:109125:0:0:0:0:0:0:0:100:105:0:0:0",
+						["Slots"] = 2,
+						["Count"] = 336,
+					}, -- [7]
+					{
+						["ItemString"] = "item:109129:0:0:0:0:0:0:0:100:105:0:0:0",
+						["Count"] = 128,
+					}, -- [8]
+					{
+						["Count"] = 53,
+						["ItemString"] = "item:109124:0:0:0:0:0:0:0:100:102:0:0:0",
+					}, -- [9]
+					{
+						["Count"] = 224,
+						["Slots"] = 2,
+						["ItemString"] = "item:109128:0:0:0:0:0:0:0:100:102:0:0:0",
+					}, -- [10]
+					{
+						["ItemString"] = "item:109126:0:0:0:0:0:0:0:100:102:0:0:0",
+						["Slots"] = 4,
+						["Count"] = 720,
+					}, -- [11]
+					{
+						["ItemString"] = "item:109693:0:0:0:0:0:0:0:100:102:0:0:0",
+						["Count"] = 1400,
+						["Slots"] = 7,
+					}, -- [12]
+					["SlotsUsed"] = 97,
+				}, -- [1]
+				["BGColor"] = {
+					0.5, -- [1]
+					0.5, -- [2]
+					0.5, -- [3]
+					0.7, -- [4]
+				},
+				["SlotEmpty"] = 1,
+				["BGTexture"] = "Bumpy",
+				["SlotTotal"] = 98,
+				["SpecialTotal"] = 0,
+				["SpecialEmpty"] = 0,
+			}, -- [3]
+			["AutoSell"] = 1,
+			["BankBag"] = {
+				{
+					["Count"] = 0,
+					["Link"] = "|cffa335ee|Hitem:49295:0:0:0:0:0:0:0:100:102:0:0:0|h[Enlarged Onyxia Hide Backpack]|h|r",
+				}, -- [1]
+				{
+					["Count"] = 0,
+					["Link"] = "|cff0070dd|Hitem:41597:0:0:0:0:0:0:2064321280:100:102:0:0:0|h[Abyssal Bag]|h|r",
+				}, -- [2]
+				{
+					["Count"] = 0,
+					["Link"] = "|cff1eff00|Hitem:54443:0:0:0:0:0:0:516613312:100:102:0:0:0|h[Embersilk Bag]|h|r",
+				}, -- [3]
+				{
+					["Count"] = 0,
+					["Link"] = "|cff1eff00|Hitem:54443:0:0:0:0:0:0:315499936:100:102:0:0:0|h[Embersilk Bag]|h|r",
+				}, -- [4]
+				{
+					["Count"] = 0,
+					["Link"] = "|cff1eff00|Hitem:54443:0:0:0:0:0:0:1898956160:100:102:0:0:0|h[Embersilk Bag]|h|r",
+				}, -- [5]
+				{
+					["Count"] = 0,
+					["Link"] = "|cff1eff00|Hitem:54443:0:0:0:0:0:0:1731663104:100:102:0:0:0|h[Embersilk Bag]|h|r",
+				}, -- [6]
+				{
+					["Count"] = 0,
+					["Link"] = "|cff1eff00|Hitem:54443:0:0:0:0:0:0:795608960:100:102:0:0:0|h[Embersilk Bag]|h|r",
+				}, -- [7]
+			},
+			["PutQuality"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				[0] = 1,
+			},
+			["Class"] = "DRUID",
+			["Money"] = 1550467957,
+		},
+		["Herbinator"] = {
+			{
+				{
+					{
+						["ItemString"] = "item:115301:0:0:0:0:0:0:0:1:0:0:0:0",
+						["Count"] = 1,
+					}, -- [1]
+					{
+						["ItemString"] = "item:128365:0:0:0:0:0:0:0:1:0:0:0:0",
+						["Count"] = 1,
+					}, -- [2]
+					{
+						["ItemString"] = "item:45:0:0:0:0:0:0:0:1:0:0:0:0",
+						["Count"] = 1,
+						["Equipped"] = 1,
+					}, -- [3]
+					{
+						["ItemString"] = "item:44:0:0:0:0:0:0:0:1:0:0:0:0",
+						["Count"] = 1,
+						["Equipped"] = 1,
+					}, -- [4]
+					{
+						["ItemString"] = "item:43:0:0:0:0:0:0:0:1:0:0:0:0",
+						["Count"] = 1,
+						["Equipped"] = 1,
+					}, -- [5]
+					{
+						["ItemString"] = "item:2361:0:0:0:0:0:0:0:1:0:0:0:0",
+						["Count"] = 1,
+						["Equipped"] = 1,
+					}, -- [6]
+					{
+						["ItemString"] = "item:41599:0:0:0:0:0:0:70012008:1:0:0:0:0",
+						["Count"] = 4,
+						["Equipped"] = 4,
+					}, -- [7]
+					["SlotsUsed"] = 7,
+				}, -- [1]
+				["BGColor"] = {
+					0.5, -- [1]
+					0.5, -- [2]
+					0.5, -- [3]
+					0.7, -- [4]
+				},
+				["SlotEmpty"] = 94,
+				["BGTexture"] = "Bumpy",
+				["SpecialEmpty"] = 0,
+				["SpecialTotal"] = 0,
+				["SlotTotal"] = 96,
+			}, -- [1]
+			{
+				{
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:113815:0:0:0:0:0:0:0:1:0:0:14:0",
+					}, -- [1]
+					{
+						["Count"] = 2,
+						["Slots"] = 2,
+						["ItemString"] = "item:113816:0:0:0:0:0:0:0:1:0:0:14:0",
+					}, -- [2]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:113818:0:0:0:0:0:0:0:1:0:0:14:0",
+					}, -- [3]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:113814:0:0:0:0:0:0:0:1:0:0:14:0",
+					}, -- [4]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:49362:0:0:0:0:0:0:397192736:1:0:0:0:0",
+					}, -- [5]
+					{
+						["ItemString"] = "item:4500:0:0:0:0:0:0:0:1:0:0:0:0",
+						["Equipped"] = 3,
+						["Count"] = 3,
+					}, -- [6]
+					{
+						["ItemString"] = "item:14155:0:0:0:0:0:0:394844678:1:0:0:0:0",
+						["Equipped"] = 4,
+						["Count"] = 4,
+					}, -- [7]
+					["SlotsUsed"] = 8,
+				}, -- [1]
+				["BGColor"] = {
+					0.5, -- [1]
+					0.5, -- [2]
+					0.5, -- [3]
+					0.7, -- [4]
+				},
+				["SlotEmpty"] = 134,
+				["BGTexture"] = "Bumpy",
+				["SlotTotal"] = 140,
+				["SpecialTotal"] = 0,
+				["SpecialEmpty"] = 0,
+			}, -- [2]
+			{
+				{
+				}, -- [1]
+				["BGColor"] = {
+					0.5, -- [1]
+					0.5, -- [2]
+					0.5, -- [3]
+					0.7, -- [4]
+				},
+				["SlotEmpty"] = 98,
+				["BGTexture"] = "Bumpy",
+				["SlotTotal"] = 98,
+				["SpecialTotal"] = 0,
+				["SpecialEmpty"] = 0,
+			}, -- [3]
+			["AutoSell"] = 1,
+			["BankBag"] = {
+				{
+					["Count"] = 0,
+					["Link"] = "|cff1eff00|Hitem:4500:0:0:0:0:0:0:0:1:0:0:0:0|h[Traveler's Backpack]|h|r",
+				}, -- [1]
+				{
+					["Count"] = 0,
+					["Link"] = "|cff1eff00|Hitem:4500:0:0:0:0:0:0:1915026348:1:0:0:0:0|h[Traveler's Backpack]|h|r",
+				}, -- [2]
+				{
+					["Count"] = 0,
+					["Link"] = "|cff1eff00|Hitem:4500:0:0:0:0:0:0:0:1:0:0:0:0|h[Traveler's Backpack]|h|r",
+				}, -- [3]
+				{
+					["Count"] = 0,
+					["Link"] = "|cff1eff00|Hitem:14155:0:0:0:0:0:0:394844678:1:0:0:0:0|h[Mooncloth Bag]|h|r",
+				}, -- [4]
+				{
+					["Count"] = 0,
+					["Link"] = "|cff1eff00|Hitem:14155:0:0:0:0:0:0:656594946:1:0:0:0:0|h[Mooncloth Bag]|h|r",
+				}, -- [5]
+				{
+					["Count"] = 0,
+					["Link"] = "|cff1eff00|Hitem:14155:0:0:0:0:0:0:798396894:1:0:0:0:0|h[Mooncloth Bag]|h|r",
+				}, -- [6]
+				{
+					["Count"] = 0,
+					["Link"] = "|cff1eff00|Hitem:14155:0:0:0:0:0:0:1078460500:1:0:0:0:0|h[Mooncloth Bag]|h|r",
+				}, -- [7]
+			},
+			["PutQuality"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				[0] = 1,
+			},
+			["Class"] = "PALADIN",
+			["Money"] = 5469865,
+		},
+		["Orig"] = {
+			{
+				{
+					{
+						["Category"] = 6,
+					}, -- [1]
+					{
+						["Category"] = 4,
+					}, -- [2]
+					{
+						["Category"] = 3,
+					}, -- [3]
+					{
+						["Category"] = 2,
+					}, -- [4]
+					{
+						["ItemString"] = "item:6948:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Count"] = 1,
+					}, -- [5]
+					{
+						["ItemString"] = "item:110560:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Count"] = 1,
+					}, -- [6]
+					{
+						["Count"] = 15,
+						["ItemString"] = "item:118722:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [7]
+					{
+						["ItemString"] = "item:34498:0:0:0:0:0:0:0:100:269:0:11:0",
+						["Count"] = 1,
+					}, -- [8]
+					{
+						["ItemString"] = "item:118100:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Count"] = 1,
+					}, -- [9]
+					{
+						["ItemString"] = "item:113929:0:0:0:0:0:0:0:100:269:0:3:0",
+						["Equipped"] = 1,
+						["Count"] = 1,
+					}, -- [10]
+					{
+						["Count"] = 198,
+						["ItemString"] = "item:111556:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [11]
+					{
+						["ItemString"] = "item:109127:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Count"] = 305,
+						["Slots"] = 2,
+					}, -- [12]
+					{
+						["Count"] = 459,
+						["ItemString"] = "item:109693:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Slots"] = 3,
+					}, -- [13]
+					{
+						["Count"] = 6,
+						["ItemString"] = "item:94288:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [14]
+					{
+						["ItemString"] = "item:95567:0:0:0:0:0:0:0:100:269:0:11:0",
+						["Count"] = 1,
+					}, -- [15]
+					["SlotsUsed"] = 73,
+				}, -- [1]
+				{
+					{
+						["Count"] = 60,
+						["ItemString"] = "item:79249:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [1]
+					{
+						["ItemString"] = "item:113681:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Count"] = 947,
+					}, -- [2]
+					{
+						["Count"] = 40,
+						["Slots"] = 2,
+						["ItemString"] = "item:128632:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [3]
+					{
+						["ItemString"] = "item:128510:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Count"] = 1,
+					}, -- [4]
+					{
+						["ItemString"] = "item:128507:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Count"] = 1,
+					}, -- [5]
+					["Name"] = "Miscellaneous",
+					["Path"] = "Miscellaneous",
+					["Expanded"] = false,
+					["SlotsUsed"] = 6,
+				}, -- [2]
+				{
+					{
+						["ItemString"] = "item:130192:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Count"] = 20,
+					}, -- [1]
+					{
+						["ItemString"] = "item:114746:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Count"] = 1,
+					}, -- [2]
+					{
+						["ItemString"] = "item:114622:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [3]
+					{
+						["ItemString"] = "item:128506:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Count"] = 1,
+					}, -- [4]
+					{
+						["ItemString"] = "item:128505:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Count"] = 1,
+					}, -- [5]
+					{
+						["Count"] = 4,
+						["ItemString"] = "item:114822:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [6]
+					{
+						["Count"] = 4,
+						["ItemString"] = "item:114131:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [7]
+					{
+						["ItemString"] = "item:114129:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [8]
+					{
+						["ItemString"] = "item:128312:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [9]
+					{
+						["ItemString"] = "item:114128:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Count"] = 12,
+					}, -- [10]
+					{
+						["ItemString"] = "item:114745:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Count"] = 6,
+					}, -- [11]
+					{
+						["Count"] = 3,
+						["ItemString"] = "item:114808:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [12]
+					{
+						["ItemString"] = "item:122272:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [13]
+					{
+						["ItemString"] = "item:122273:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Count"] = 1,
+					}, -- [14]
+					{
+						["ItemString"] = "item:118354:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Count"] = 1,
+					}, -- [15]
+					["Expanded"] = false,
+					["Path"] = "Consumable",
+					["Name"] = "Consumable",
+					["SlotsUsed"] = 11,
+				}, -- [3]
+				{
+					{
+						["ItemString"] = "item:129483:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [1]
+					{
+						["ItemString"] = "item:129504:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [2]
+					{
+						["ItemString"] = "item:129485:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [3]
+					{
+						["ItemString"] = "item:129486:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [4]
+					{
+						["ItemString"] = "item:129484:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [5]
+					{
+						["ItemString"] = "item:129481:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [6]
+					{
+						["ItemString"] = "item:129482:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [7]
+					{
+						["ItemString"] = "item:129505:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [8]
+					{
+						["ItemString"] = "item:129506:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [9]
+					{
+						["ItemString"] = "item:129503:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [10]
+					{
+						["ItemString"] = "item:129507:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [11]
+					{
+						["ItemString"] = "item:113601:0:0:0:0:0:0:0:100:269:0:3:0",
+					}, -- [12]
+					{
+						["Category"] = 5,
+					}, -- [13]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:114311:0:0:0:0:0:0:0:100:269:0:1:1:86",
+					}, -- [14]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:124592:0:0:0:0:0:0:0:100:269:4:1:3:183:764:652:529",
+					}, -- [15]
+					{
+						["ItemString"] = "item:113845:0:0:0:0:0:0:0:100:269:0:3:0",
+						["Count"] = 1,
+					}, -- [16]
+					{
+						["ItemString"] = "item:124592:0:0:0:0:0:0:0:100:269:4:1:3:216:647:653:529",
+					}, -- [17]
+					{
+						["ItemString"] = "item:124592:0:0:0:0:0:0:0:100:269:4:1:3:216:765:652:529",
+					}, -- [18]
+					{
+						["ItemString"] = "item:124592:0:0:0:0:0:0:0:100:269:4:1:3:80:647:652:529",
+					}, -- [19]
+					{
+						["ItemString"] = "item:124592:0:0:0:0:0:0:0:100:269:4:1:3:94:647:652:529",
+					}, -- [20]
+					{
+						["ItemString"] = "item:124592:0:0:0:0:0:0:0:100:269:4:1:3:210:651:653:529",
+					}, -- [21]
+					{
+						["ItemString"] = "item:124592:0:0:0:0:0:0:0:100:269:4:1:3:145:647:652:529",
+					}, -- [22]
+					{
+						["ItemString"] = "item:124592:0:0:0:0:0:0:0:100:269:4:1:3:85:647:652:529",
+						["Count"] = 1,
+					}, -- [23]
+					{
+						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:91:647:653:529",
+					}, -- [24]
+					{
+						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:72:647:653:529",
+						["Count"] = 1,
+					}, -- [25]
+					{
+						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:112:647:652:529",
+					}, -- [26]
+					{
+						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:55:647:653:529",
+					}, -- [27]
+					{
+						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:113:647:652:529",
+					}, -- [28]
+					{
+						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:176:762:652:529",
+					}, -- [29]
+					{
+						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:0:3:153:647:653:529",
+					}, -- [30]
+					{
+						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:0:3:204:647:653:529",
+					}, -- [31]
+					{
+						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:58:763:653:529",
+					}, -- [32]
+					{
+						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:0:3:196:647:652:529",
+					}, -- [33]
+					{
+						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:90:647:652:529",
+						["Count"] = 1,
+					}, -- [34]
+					{
+						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:50:647:653:529",
+					}, -- [35]
+					{
+						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:232:647:653:529",
+						["Count"] = 1,
+					}, -- [36]
+					{
+						["ItemString"] = "item:124576:0:0:0:0:0:0:0:100:269:4:1:3:80:647:653:529",
+						["Count"] = 1,
+					}, -- [37]
+					{
+						["ItemString"] = "item:124576:0:0:0:0:0:0:0:100:269:4:1:3:199:647:652:529",
+					}, -- [38]
+					{
+						["ItemString"] = "item:124576:0:0:0:0:0:0:0:100:269:4:1:3:165:763:653:529",
+					}, -- [39]
+					{
+						["ItemString"] = "item:124576:0:0:0:0:0:0:0:100:269:4:1:3:215:651:652:529",
+					}, -- [40]
+					{
+						["ItemString"] = "item:124576:0:0:0:0:0:0:0:100:269:4:1:3:67:647:653:529",
+						["Count"] = 1,
+					}, -- [41]
+					{
+						["ItemString"] = "item:124576:0:0:0:0:0:0:0:100:269:4:1:3:235:647:653:529",
+					}, -- [42]
+					{
+						["ItemString"] = "item:124576:0:0:0:0:0:0:0:100:269:4:1:3:57:764:652:529",
+					}, -- [43]
+					{
+						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:269:4:1:3:103:762:653:529",
+					}, -- [44]
+					{
+						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:269:4:1:3:133:762:652:529",
+					}, -- [45]
+					{
+						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:269:4:1:3:183:647:653:529",
+					}, -- [46]
+					{
+						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:269:4:0:3:58:764:653:529",
+					}, -- [47]
+					{
+						["ItemString"] = "item:124607:0:0:0:0:0:0:0:100:269:4:1:3:134:647:652:529",
+					}, -- [48]
+					{
+						["ItemString"] = "item:124607:0:0:0:0:0:0:0:100:269:4:1:3:127:647:652:529",
+					}, -- [49]
+					{
+						["ItemString"] = "item:124607:0:0:0:0:0:0:0:100:269:4:1:3:131:647:653:529",
+					}, -- [50]
+					{
+						["ItemString"] = "item:124607:0:0:0:0:0:0:0:100:269:4:1:3:45:647:652:529",
+					}, -- [51]
+					{
+						["ItemString"] = "item:124607:0:0:0:0:0:0:0:100:269:4:1:3:163:647:652:529",
+					}, -- [52]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:113612:0:0:0:0:0:0:0:100:269:0:3:0",
+					}, -- [53]
+					{
+						["ItemString"] = "item:128365:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Count"] = 1,
+					}, -- [54]
+					{
+						["Count"] = 2,
+						["Slots"] = 2,
+						["ItemString"] = "item:113856:0:0:0:0:0:0:0:100:269:0:3:0",
+					}, -- [55]
+					{
+						["ItemString"] = "item:124576:0:0:0:0:0:0:0:100:269:4:1:3:233:647:652:529",
+						["Count"] = 1,
+					}, -- [56]
+					{
+						["ItemString"] = "item:124576:0:0:0:0:0:0:0:100:269:4:1:3:70:647:653:529",
+						["Count"] = 1,
+					}, -- [57]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:269:4:1:3:24:764:653:529",
+					}, -- [58]
+					{
+						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:269:4:1:3:139:647:652:529",
+						["Count"] = 1,
+					}, -- [59]
+					{
+						["ItemString"] = "item:114319:0:0:0:0:0:0:0:100:269:0:1:1:155",
+						["Count"] = 1,
+					}, -- [60]
+					{
+						["ItemString"] = "item:113892:0:0:0:0:0:0:0:100:269:0:3:1:560",
+						["Count"] = 1,
+					}, -- [61]
+					{
+						["ItemString"] = "item:114335:0:0:0:0:0:0:0:100:269:0:1:1:209",
+						["Count"] = 1,
+					}, -- [62]
+					{
+						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:269:4:1:3:146:647:653:529",
+						["Count"] = 1,
+					}, -- [63]
+					{
+						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:269:4:1:3:106:647:652:529",
+						["Count"] = 1,
+					}, -- [64]
+					["Expanded"] = false,
+					["Path"] = "Gear",
+					["Name"] = "Gear",
+					["SlotsUsed"] = 39,
+				}, -- [4]
+				{
+					{
+						["ItemString"] = "item:129502:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [1]
+					{
+						["Count"] = 1,
+						["Equipped"] = 1,
+						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:269:4:1:3:94:765:653:529",
+					}, -- [2]
+					{
+						["ItemString"] = "item:113634:0:0:0:0:0:0:0:100:269:0:3:0",
+						["Equipped"] = 1,
+						["Count"] = 1,
+					}, -- [3]
+					{
+						["Count"] = 1,
+						["Equipped"] = 1,
+						["ItemString"] = "item:113880:0:0:0:0:0:0:0:100:269:0:3:0",
+					}, -- [4]
+					{
+						["Count"] = 1,
+						["Equipped"] = 1,
+						["ItemString"] = "item:113853:0:0:0:0:0:0:0:100:269:0:3:0",
+					}, -- [5]
+					{
+						["Count"] = 1,
+						["Equipped"] = 1,
+						["ItemString"] = "item:113989:0:0:0:0:0:0:0:100:269:0:3:0",
+					}, -- [6]
+					{
+						["ItemString"] = "item:118365:0:0:0:0:0:0:0:100:269:0:11:0",
+						["Equipped"] = 1,
+						["Count"] = 1,
+					}, -- [7]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:129508:5313:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [8]
+					{
+						["Count"] = 1,
+						["Equipped"] = 1,
+						["ItemString"] = "item:127976:5320:0:0:0:0:0:0:100:269:4:3:0:529",
+					}, -- [9]
+					{
+						["ItemString"] = "item:124576:0:0:0:0:0:0:0:100:269:4:1:3:189:764:653:529",
+						["Equipped"] = 1,
+						["Count"] = 1,
+					}, -- [10]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:113843:0:0:0:0:0:0:0:100:269:0:3:0",
+					}, -- [11]
+					{
+						["ItemString"] = "item:118114:0:0:0:0:0:0:0:100:269:0:3:0",
+						["Equipped"] = 1,
+						["Count"] = 1,
+					}, -- [12]
+					{
+						["ItemString"] = "item:113877:5327:0:0:0:0:0:0:100:269:0:3:0",
+						["Equipped"] = 1,
+						["Count"] = 1,
+					}, -- [13]
+					{
+						["ItemString"] = "item:113870:0:0:0:0:0:0:0:100:269:0:3:0",
+						["Equipped"] = 1,
+						["Count"] = 1,
+					}, -- [14]
+					{
+						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:67:761:652:529",
+						["Equipped"] = 1,
+						["Count"] = 1,
+					}, -- [15]
+					{
+						["Count"] = 1,
+						["Equipped"] = 1,
+						["ItemString"] = "item:124592:0:0:0:0:0:0:0:100:269:4:1:3:220:764:653:529",
+					}, -- [16]
+					{
+						["ItemString"] = "item:113843:5327:0:0:0:0:0:0:100:269:0:3:0",
+						["Equipped"] = 1,
+						["Count"] = 1,
+					}, -- [17]
+					{
+						["ItemString"] = "item:129502:5337:0:0:0:0:0:0:100:269:0:0:0",
+						["Equipped"] = 2,
+						["Count"] = 2,
+					}, -- [18]
+					["Expanded"] = false,
+					["Path"] = "Gear\\Equiped",
+					["Name"] = "Equiped",
+					["SlotsUsed"] = 17,
+				}, -- [5]
+				{
+					{
+						["Count"] = 4,
+						["Equipped"] = 4,
+						["ItemString"] = "item:54443:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [1]
+					{
+						["ItemString"] = "item:49295:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Count"] = 1,
+					}, -- [2]
+					{
+						["ItemString"] = "item:109167:0:0:0:0:0:0:0:100:269:0:1:0",
+						["Count"] = 1,
+					}, -- [3]
+					["Name"] = "Useful Items",
+					["Path"] = "Useful Items",
+					["Expanded"] = false,
+					["SlotsUsed"] = 3,
+				}, -- [6]
+				["BGColor"] = {
+					0.5, -- [1]
+					0.5, -- [2]
+					0.5, -- [3]
+					0.7, -- [4]
+				},
+				["SlotEmpty"] = 48,
+				["BGTexture"] = "Bumpy",
+				["ShowBags"] = false,
+				["SpecialEmpty"] = 0,
+				["SpecialTotal"] = 0,
+				["SlotTotal"] = 104,
+			}, -- [1]
+			{
+				{
+					{
+						["Count"] = 31,
+						["ItemString"] = "item:118722:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [1]
+					{
+						["Count"] = 2,
+						["ItemString"] = "item:119293:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [2]
+					{
+						["Count"] = 1,
+						["ItemString"] = "item:118100:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [3]
+					["SlotsUsed"] = 3,
+				}, -- [1]
+				["BGColor"] = {
+					0.5, -- [1]
+					0.5, -- [2]
+					0.5, -- [3]
+					0.7, -- [4]
+				},
+				["SlotEmpty"] = 25,
+				["BGTexture"] = "Bumpy",
+				["SlotTotal"] = 28,
+				["SpecialTotal"] = 0,
+				["SpecialEmpty"] = 0,
+			}, -- [2]
+			{
+				{
+					{
+						["ItemString"] = "item:109127:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Count"] = 1309,
+						["Slots"] = 7,
+					}, -- [1]
+					{
+						["Count"] = 101,
+						["ItemString"] = "item:109125:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [2]
+					{
+						["Count"] = 282,
+						["ItemString"] = "item:109129:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Slots"] = 2,
+					}, -- [3]
+					{
+						["Count"] = 191,
+						["ItemString"] = "item:109128:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [4]
+					{
+						["Count"] = 577,
+						["ItemString"] = "item:109126:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Slots"] = 3,
+					}, -- [5]
+					{
+						["Count"] = 834,
+						["ItemString"] = "item:111557:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Slots"] = 5,
+					}, -- [6]
+					{
+						["Count"] = 2379,
+						["ItemString"] = "item:111556:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Slots"] = 12,
+					}, -- [7]
+					{
+						["Count"] = 140,
+						["ItemString"] = "item:120945:0:0:0:0:0:0:0:100:269:0:0:0",
+					}, -- [8]
+					{
+						["ItemString"] = "item:109693:0:0:0:0:0:0:0:100:269:0:0:0",
+						["Count"] = 1489,
+						["Slots"] = 8,
+					}, -- [9]
+					["SlotsUsed"] = 40,
+				}, -- [1]
+				["BGColor"] = {
+					0.5, -- [1]
+					0.5, -- [2]
+					0.5, -- [3]
+					0.7, -- [4]
+				},
+				["SlotEmpty"] = 58,
+				["BGTexture"] = "Bumpy",
+				["SlotTotal"] = 98,
+				["SpecialTotal"] = 0,
+				["SpecialEmpty"] = 0,
+			}, -- [3]
+			["AutoSell"] = 1,
+			["BankBag"] = {
+				{
+					["Count"] = 1,
+				}, -- [1]
+				{
+					["Count"] = 1,
+				}, -- [2]
+				{
+					["Count"] = 1,
+				}, -- [3]
+				{
+					["Count"] = 1,
+				}, -- [4]
+				{
+					["Count"] = 1,
+				}, -- [5]
+				{
+					["Count"] = 1,
+				}, -- [6]
+				{
+					["Count"] = 1,
+				}, -- [7]
+			},
+			["PutQuality"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				[0] = 1,
+			},
+			["Class"] = "MONK",
+			["Money"] = 166546633,
+		},
+		["Clothgar"] = {
+			{
+				{
+					{
+						["Count"] = 527,
+						["Slots"] = 3,
+						["ItemString"] = "item:38682:0:0:0:0:0:0:0:1:0:0:0:0",
+					}, -- [1]
+					{
+						["ItemString"] = "item:113588:0:0:0:0:0:0:0:1:0:0:0:0",
+						["Slots"] = 7,
+						["Count"] = 1329,
+					}, -- [2]
+					{
+						["ItemString"] = "item:113261:0:0:0:0:0:0:0:1:0:0:0:0",
+						["Slots"] = 6,
+						["Count"] = 1156,
+					}, -- [3]
+					{
+						["Count"] = 1395,
+						["Slots"] = 7,
+						["ItemString"] = "item:113262:0:0:0:0:0:0:0:1:0:0:0:0",
+					}, -- [4]
+					{
+						["Count"] = 1014,
+						["Slots"] = 6,
+						["ItemString"] = "item:113264:0:0:0:0:0:0:0:1:0:0:0:0",
+					}, -- [5]
+					{
+						["Equipped"] = 1,
+						["Count"] = 1,
+						["ItemString"] = "item:45998:0:0:0:0:0:0:-790816284:1:0:0:0:0",
+					}, -- [6]
+					{
+						["Equipped"] = 1,
+						["Count"] = 1,
+						["ItemString"] = "item:69863:0:0:0:0:0:0:1441199488:1:0:0:0:0",
+					}, -- [7]
+					{
+						["Equipped"] = 1,
+						["Count"] = 1,
+						["ItemString"] = "item:6833:0:0:0:0:0:0:1703133722:1:0:0:0:0",
+					}, -- [8]
+					{
+						["Equipped"] = 1,
+						["Count"] = 1,
+						["ItemString"] = "item:10035:0:0:0:0:0:0:870556352:1:0:0:0:0",
+					}, -- [9]
+					{
+						["Equipped"] = 1,
+						["Count"] = 1,
+						["ItemString"] = "item:59:0:0:0:0:0:0:0:1:0:0:0:0",
+					}, -- [10]
+					{
+						["Equipped"] = 1,
+						["Count"] = 1,
+						["ItemString"] = "item:69865:0:0:0:0:0:0:1951996160:1:0:0:0:0",
+					}, -- [11]
+					{
+						["Equipped"] = 1,
+						["Count"] = 1,
+						["ItemString"] = "item:45861:0:0:0:0:0:0:-529786634:1:0:0:0:0",
+					}, -- [12]
+					{
+						["Equipped"] = 1,
+						["Count"] = 1,
+						["ItemString"] = "item:5976:0:0:0:0:0:0:0:1:0:0:0:0",
+					}, -- [13]
+					{
+						["Equipped"] = 4,
+						["Count"] = 4,
+						["ItemString"] = "item:54443:0:0:0:0:0:0:1283787392:1:0:0:0:0",
+					}, -- [14]
+					{
+						["Count"] = 1494,
+						["Slots"] = 8,
+						["ItemString"] = "item:113263:0:0:0:0:0:0:0:1:0:0:0:0",
+					}, -- [15]
+					{
+						["Count"] = 1252,
+						["Slots"] = 7,
+						["ItemString"] = "item:115504:0:0:0:0:0:0:0:1:0:0:0:0",
+					}, -- [16]
+					["SlotsUsed"] = 53,
+				}, -- [1]
+				["BGColor"] = {
+					0.5, -- [1]
+					0.5, -- [2]
+					0.5, -- [3]
+					0.7, -- [4]
+				},
+				["SlotEmpty"] = 60,
+				["BGTexture"] = "Bumpy",
+				["SpecialEmpty"] = 0,
+				["SpecialTotal"] = 0,
+				["SlotTotal"] = 104,
 			}, -- [1]
 			{
 				{
@@ -3615,10 +5643,10 @@ BaudManifestData = {
 						["Count"] = 5,
 					}, -- [14]
 					{
+						["Equipped"] = 6,
+						["ItemString"] = "item:4500:0:0:0:0:0:0:0:1:0:0:0:0",
 						["Slots"] = 4,
 						["Count"] = 10,
-						["ItemString"] = "item:4500:0:0:0:0:0:0:0:1:0:0:0:0",
-						["Equipped"] = 6,
 					}, -- [15]
 					{
 						["ItemString"] = "item:49667:0:0:0:0:0:0:575518851:1:0:0:0:0",
@@ -3755,9 +5783,9 @@ BaudManifestData = {
 				},
 				["SlotEmpty"] = 42,
 				["BGTexture"] = "Bumpy",
-				["SlotTotal"] = 124,
-				["SpecialTotal"] = 28,
 				["SpecialEmpty"] = 23,
+				["SpecialTotal"] = 28,
+				["SlotTotal"] = 124,
 			}, -- [2]
 			{
 				{
@@ -4044,9 +6072,9 @@ BaudManifestData = {
 				},
 				["SlotEmpty"] = 25,
 				["BGTexture"] = "Bumpy",
-				["SlotTotal"] = 98,
-				["SpecialTotal"] = 0,
 				["SpecialEmpty"] = 0,
+				["SpecialTotal"] = 0,
+				["SlotTotal"] = 98,
 			}, -- [3]
 			["AutoSell"] = 1,
 			["BankBag"] = {
@@ -4087,1998 +6115,7 @@ BaudManifestData = {
 				[0] = 1,
 			},
 			["Class"] = "WARLOCK",
-			["Money"] = 9299805839,
-		},
-		["Herbinator"] = {
-			{
-				{
-					{
-						["ItemString"] = "item:115301:0:0:0:0:0:0:0:1:0:0:0:0",
-						["Count"] = 1,
-					}, -- [1]
-					{
-						["ItemString"] = "item:128365:0:0:0:0:0:0:0:1:0:0:0:0",
-						["Count"] = 1,
-					}, -- [2]
-					{
-						["ItemString"] = "item:45:0:0:0:0:0:0:0:1:0:0:0:0",
-						["Count"] = 1,
-						["Equipped"] = 1,
-					}, -- [3]
-					{
-						["ItemString"] = "item:44:0:0:0:0:0:0:0:1:0:0:0:0",
-						["Count"] = 1,
-						["Equipped"] = 1,
-					}, -- [4]
-					{
-						["ItemString"] = "item:43:0:0:0:0:0:0:0:1:0:0:0:0",
-						["Count"] = 1,
-						["Equipped"] = 1,
-					}, -- [5]
-					{
-						["ItemString"] = "item:2361:0:0:0:0:0:0:0:1:0:0:0:0",
-						["Count"] = 1,
-						["Equipped"] = 1,
-					}, -- [6]
-					{
-						["ItemString"] = "item:41599:0:0:0:0:0:0:70012008:1:0:0:0:0",
-						["Count"] = 4,
-						["Equipped"] = 4,
-					}, -- [7]
-					["SlotsUsed"] = 7,
-				}, -- [1]
-				["BGColor"] = {
-					0.5, -- [1]
-					0.5, -- [2]
-					0.5, -- [3]
-					0.7, -- [4]
-				},
-				["SlotEmpty"] = 94,
-				["BGTexture"] = "Bumpy",
-				["SlotTotal"] = 96,
-				["SpecialTotal"] = 0,
-				["SpecialEmpty"] = 0,
-			}, -- [1]
-			{
-				{
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:113815:0:0:0:0:0:0:0:1:0:0:14:0",
-					}, -- [1]
-					{
-						["Count"] = 2,
-						["Slots"] = 2,
-						["ItemString"] = "item:113816:0:0:0:0:0:0:0:1:0:0:14:0",
-					}, -- [2]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:113818:0:0:0:0:0:0:0:1:0:0:14:0",
-					}, -- [3]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:113814:0:0:0:0:0:0:0:1:0:0:14:0",
-					}, -- [4]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:49362:0:0:0:0:0:0:397192736:1:0:0:0:0",
-					}, -- [5]
-					{
-						["ItemString"] = "item:4500:0:0:0:0:0:0:0:1:0:0:0:0",
-						["Equipped"] = 3,
-						["Count"] = 3,
-					}, -- [6]
-					{
-						["ItemString"] = "item:14155:0:0:0:0:0:0:394844678:1:0:0:0:0",
-						["Equipped"] = 4,
-						["Count"] = 4,
-					}, -- [7]
-					["SlotsUsed"] = 8,
-				}, -- [1]
-				["BGColor"] = {
-					0.5, -- [1]
-					0.5, -- [2]
-					0.5, -- [3]
-					0.7, -- [4]
-				},
-				["SlotEmpty"] = 134,
-				["BGTexture"] = "Bumpy",
-				["SpecialEmpty"] = 0,
-				["SpecialTotal"] = 0,
-				["SlotTotal"] = 140,
-			}, -- [2]
-			{
-				{
-				}, -- [1]
-				["BGColor"] = {
-					0.5, -- [1]
-					0.5, -- [2]
-					0.5, -- [3]
-					0.7, -- [4]
-				},
-				["SlotEmpty"] = 98,
-				["BGTexture"] = "Bumpy",
-				["SpecialEmpty"] = 0,
-				["SpecialTotal"] = 0,
-				["SlotTotal"] = 98,
-			}, -- [3]
-			["AutoSell"] = 1,
-			["BankBag"] = {
-				{
-					["Count"] = 0,
-					["Link"] = "|cff1eff00|Hitem:4500:0:0:0:0:0:0:0:1:0:0:0:0|h[Traveler's Backpack]|h|r",
-				}, -- [1]
-				{
-					["Count"] = 0,
-					["Link"] = "|cff1eff00|Hitem:4500:0:0:0:0:0:0:1915026348:1:0:0:0:0|h[Traveler's Backpack]|h|r",
-				}, -- [2]
-				{
-					["Count"] = 0,
-					["Link"] = "|cff1eff00|Hitem:4500:0:0:0:0:0:0:0:1:0:0:0:0|h[Traveler's Backpack]|h|r",
-				}, -- [3]
-				{
-					["Count"] = 0,
-					["Link"] = "|cff1eff00|Hitem:14155:0:0:0:0:0:0:394844678:1:0:0:0:0|h[Mooncloth Bag]|h|r",
-				}, -- [4]
-				{
-					["Count"] = 0,
-					["Link"] = "|cff1eff00|Hitem:14155:0:0:0:0:0:0:656594946:1:0:0:0:0|h[Mooncloth Bag]|h|r",
-				}, -- [5]
-				{
-					["Count"] = 0,
-					["Link"] = "|cff1eff00|Hitem:14155:0:0:0:0:0:0:798396894:1:0:0:0:0|h[Mooncloth Bag]|h|r",
-				}, -- [6]
-				{
-					["Count"] = 0,
-					["Link"] = "|cff1eff00|Hitem:14155:0:0:0:0:0:0:1078460500:1:0:0:0:0|h[Mooncloth Bag]|h|r",
-				}, -- [7]
-			},
-			["PutQuality"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				[0] = 1,
-			},
-			["Class"] = "PALADIN",
-			["Money"] = 5469865,
-		},
-		["Orig"] = {
-			{
-				{
-					{
-						["Category"] = 6,
-					}, -- [1]
-					{
-						["Category"] = 4,
-					}, -- [2]
-					{
-						["Category"] = 3,
-					}, -- [3]
-					{
-						["Category"] = 2,
-					}, -- [4]
-					{
-						["ItemString"] = "item:6948:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 1,
-					}, -- [5]
-					{
-						["ItemString"] = "item:110560:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 1,
-					}, -- [6]
-					{
-						["Count"] = 40,
-						["Slots"] = 2,
-						["ItemString"] = "item:6662:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [7]
-					{
-						["Count"] = 14,
-						["ItemString"] = "item:118722:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [8]
-					{
-						["ItemString"] = "item:109184:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 2,
-					}, -- [9]
-					{
-						["ItemString"] = "item:34498:0:0:0:0:0:0:0:100:269:0:11:0",
-						["Count"] = 1,
-					}, -- [10]
-					{
-						["ItemString"] = "item:118100:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 1,
-					}, -- [11]
-					{
-						["Equipped"] = 1,
-						["Count"] = 1,
-						["ItemString"] = "item:113929:0:0:0:0:0:0:0:100:269:0:3:0",
-					}, -- [12]
-					{
-						["Count"] = 188,
-						["ItemString"] = "item:111556:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [13]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:33448:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [14]
-					{
-						["ItemString"] = "item:36925:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 1,
-					}, -- [15]
-					{
-						["ItemString"] = "item:114081:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 1,
-					}, -- [16]
-					{
-						["ItemString"] = "item:109127:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Slots"] = 2,
-						["Count"] = 305,
-					}, -- [17]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:114807:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [18]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:120301:0:0:0:0:0:0:0:100:269:0:11:0",
-					}, -- [19]
-					["SlotsUsed"] = 73,
-				}, -- [1]
-				{
-					{
-						["Count"] = 40,
-						["ItemString"] = "item:79249:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [1]
-					{
-						["ItemString"] = "item:113681:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 959,
-					}, -- [2]
-					{
-						["Slots"] = 2,
-						["Count"] = 40,
-						["ItemString"] = "item:128632:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [3]
-					{
-						["ItemString"] = "item:128510:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 1,
-					}, -- [4]
-					{
-						["ItemString"] = "item:128507:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 1,
-					}, -- [5]
-					["Expanded"] = false,
-					["Path"] = "Miscellaneous",
-					["Name"] = "Miscellaneous",
-					["SlotsUsed"] = 6,
-				}, -- [2]
-				{
-					{
-						["ItemString"] = "item:130192:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 20,
-					}, -- [1]
-					{
-						["ItemString"] = "item:114746:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 1,
-					}, -- [2]
-					{
-						["ItemString"] = "item:114622:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [3]
-					{
-						["ItemString"] = "item:128506:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 1,
-					}, -- [4]
-					{
-						["ItemString"] = "item:128505:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 1,
-					}, -- [5]
-					{
-						["Count"] = 3,
-						["ItemString"] = "item:114822:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [6]
-					{
-						["Count"] = 4,
-						["ItemString"] = "item:114131:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [7]
-					{
-						["ItemString"] = "item:114129:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [8]
-					{
-						["ItemString"] = "item:128312:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [9]
-					{
-						["ItemString"] = "item:114128:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 11,
-					}, -- [10]
-					{
-						["ItemString"] = "item:114745:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 4,
-					}, -- [11]
-					{
-						["Count"] = 3,
-						["ItemString"] = "item:114808:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [12]
-					{
-						["ItemString"] = "item:122272:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [13]
-					{
-						["ItemString"] = "item:122273:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 1,
-					}, -- [14]
-					{
-						["ItemString"] = "item:118354:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [15]
-					["Name"] = "Consumable",
-					["Path"] = "Consumable",
-					["Expanded"] = false,
-					["SlotsUsed"] = 10,
-				}, -- [3]
-				{
-					{
-						["ItemString"] = "item:129483:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [1]
-					{
-						["ItemString"] = "item:129504:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [2]
-					{
-						["ItemString"] = "item:129485:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [3]
-					{
-						["ItemString"] = "item:129486:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [4]
-					{
-						["ItemString"] = "item:129484:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [5]
-					{
-						["ItemString"] = "item:129481:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [6]
-					{
-						["ItemString"] = "item:129482:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [7]
-					{
-						["ItemString"] = "item:129505:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [8]
-					{
-						["ItemString"] = "item:129506:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [9]
-					{
-						["ItemString"] = "item:129503:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [10]
-					{
-						["ItemString"] = "item:129507:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [11]
-					{
-						["ItemString"] = "item:113601:0:0:0:0:0:0:0:100:269:0:3:0",
-					}, -- [12]
-					{
-						["Category"] = 5,
-					}, -- [13]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:114311:0:0:0:0:0:0:0:100:269:0:1:1:86",
-					}, -- [14]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:124592:0:0:0:0:0:0:0:100:269:4:1:3:183:764:652:529",
-					}, -- [15]
-					{
-						["ItemString"] = "item:113845:0:0:0:0:0:0:0:100:269:0:3:0",
-						["Count"] = 1,
-					}, -- [16]
-					{
-						["ItemString"] = "item:124592:0:0:0:0:0:0:0:100:269:4:1:3:216:647:653:529",
-					}, -- [17]
-					{
-						["ItemString"] = "item:124592:0:0:0:0:0:0:0:100:269:4:1:3:216:765:652:529",
-					}, -- [18]
-					{
-						["ItemString"] = "item:124592:0:0:0:0:0:0:0:100:269:4:1:3:80:647:652:529",
-					}, -- [19]
-					{
-						["ItemString"] = "item:124592:0:0:0:0:0:0:0:100:269:4:1:3:94:647:652:529",
-					}, -- [20]
-					{
-						["ItemString"] = "item:124592:0:0:0:0:0:0:0:100:269:4:1:3:210:651:653:529",
-					}, -- [21]
-					{
-						["ItemString"] = "item:124592:0:0:0:0:0:0:0:100:269:4:1:3:145:647:652:529",
-					}, -- [22]
-					{
-						["ItemString"] = "item:124592:0:0:0:0:0:0:0:100:269:4:1:3:85:647:652:529",
-						["Count"] = 1,
-					}, -- [23]
-					{
-						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:91:647:653:529",
-					}, -- [24]
-					{
-						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:72:647:653:529",
-						["Count"] = 1,
-					}, -- [25]
-					{
-						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:112:647:652:529",
-					}, -- [26]
-					{
-						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:55:647:653:529",
-					}, -- [27]
-					{
-						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:113:647:652:529",
-					}, -- [28]
-					{
-						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:176:762:652:529",
-					}, -- [29]
-					{
-						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:0:3:153:647:653:529",
-					}, -- [30]
-					{
-						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:0:3:204:647:653:529",
-					}, -- [31]
-					{
-						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:58:763:653:529",
-					}, -- [32]
-					{
-						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:0:3:196:647:652:529",
-					}, -- [33]
-					{
-						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:90:647:652:529",
-						["Count"] = 1,
-					}, -- [34]
-					{
-						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:50:647:653:529",
-					}, -- [35]
-					{
-						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:232:647:653:529",
-						["Count"] = 1,
-					}, -- [36]
-					{
-						["ItemString"] = "item:124576:0:0:0:0:0:0:0:100:269:4:1:3:80:647:653:529",
-						["Count"] = 1,
-					}, -- [37]
-					{
-						["ItemString"] = "item:124576:0:0:0:0:0:0:0:100:269:4:1:3:199:647:652:529",
-					}, -- [38]
-					{
-						["ItemString"] = "item:124576:0:0:0:0:0:0:0:100:269:4:1:3:165:763:653:529",
-					}, -- [39]
-					{
-						["ItemString"] = "item:124576:0:0:0:0:0:0:0:100:269:4:1:3:215:651:652:529",
-					}, -- [40]
-					{
-						["ItemString"] = "item:124576:0:0:0:0:0:0:0:100:269:4:1:3:67:647:653:529",
-						["Count"] = 1,
-					}, -- [41]
-					{
-						["ItemString"] = "item:124576:0:0:0:0:0:0:0:100:269:4:1:3:235:647:653:529",
-					}, -- [42]
-					{
-						["ItemString"] = "item:124576:0:0:0:0:0:0:0:100:269:4:1:3:57:764:652:529",
-					}, -- [43]
-					{
-						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:269:4:1:3:103:762:653:529",
-					}, -- [44]
-					{
-						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:269:4:1:3:133:762:652:529",
-					}, -- [45]
-					{
-						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:269:4:1:3:183:647:653:529",
-					}, -- [46]
-					{
-						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:269:4:0:3:58:764:653:529",
-					}, -- [47]
-					{
-						["ItemString"] = "item:124607:0:0:0:0:0:0:0:100:269:4:1:3:134:647:652:529",
-					}, -- [48]
-					{
-						["ItemString"] = "item:124607:0:0:0:0:0:0:0:100:269:4:1:3:127:647:652:529",
-					}, -- [49]
-					{
-						["ItemString"] = "item:124607:0:0:0:0:0:0:0:100:269:4:1:3:131:647:653:529",
-					}, -- [50]
-					{
-						["ItemString"] = "item:124607:0:0:0:0:0:0:0:100:269:4:1:3:45:647:652:529",
-					}, -- [51]
-					{
-						["ItemString"] = "item:124607:0:0:0:0:0:0:0:100:269:4:1:3:163:647:652:529",
-					}, -- [52]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:113612:0:0:0:0:0:0:0:100:269:0:3:0",
-					}, -- [53]
-					{
-						["ItemString"] = "item:128365:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 1,
-					}, -- [54]
-					{
-						["Slots"] = 2,
-						["Count"] = 2,
-						["ItemString"] = "item:113856:0:0:0:0:0:0:0:100:269:0:3:0",
-					}, -- [55]
-					{
-						["ItemString"] = "item:124576:0:0:0:0:0:0:0:100:269:4:1:3:233:647:652:529",
-						["Count"] = 1,
-					}, -- [56]
-					{
-						["ItemString"] = "item:124576:0:0:0:0:0:0:0:100:269:4:1:3:70:647:653:529",
-						["Count"] = 1,
-					}, -- [57]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:269:4:1:3:24:764:653:529",
-					}, -- [58]
-					{
-						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:269:4:1:3:139:647:652:529",
-						["Count"] = 1,
-					}, -- [59]
-					{
-						["ItemString"] = "item:114319:0:0:0:0:0:0:0:100:269:0:1:1:155",
-						["Count"] = 1,
-					}, -- [60]
-					{
-						["ItemString"] = "item:113892:0:0:0:0:0:0:0:100:269:0:3:1:560",
-						["Count"] = 1,
-					}, -- [61]
-					{
-						["ItemString"] = "item:114335:0:0:0:0:0:0:0:100:269:0:1:1:209",
-						["Count"] = 1,
-					}, -- [62]
-					{
-						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:269:4:1:3:146:647:653:529",
-						["Count"] = 1,
-					}, -- [63]
-					{
-						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:269:4:1:3:106:647:652:529",
-						["Count"] = 1,
-					}, -- [64]
-					["Name"] = "Gear",
-					["Path"] = "Gear",
-					["Expanded"] = false,
-					["SlotsUsed"] = 39,
-				}, -- [4]
-				{
-					{
-						["ItemString"] = "item:129502:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [1]
-					{
-						["Equipped"] = 1,
-						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:269:4:1:3:94:765:653:529",
-						["Count"] = 1,
-					}, -- [2]
-					{
-						["Equipped"] = 1,
-						["Count"] = 1,
-						["ItemString"] = "item:113634:0:0:0:0:0:0:0:100:269:0:3:0",
-					}, -- [3]
-					{
-						["Equipped"] = 1,
-						["ItemString"] = "item:113880:0:0:0:0:0:0:0:100:269:0:3:0",
-						["Count"] = 1,
-					}, -- [4]
-					{
-						["Equipped"] = 1,
-						["ItemString"] = "item:113853:0:0:0:0:0:0:0:100:269:0:3:0",
-						["Count"] = 1,
-					}, -- [5]
-					{
-						["Equipped"] = 1,
-						["ItemString"] = "item:113989:0:0:0:0:0:0:0:100:269:0:3:0",
-						["Count"] = 1,
-					}, -- [6]
-					{
-						["Equipped"] = 1,
-						["Count"] = 1,
-						["ItemString"] = "item:118365:0:0:0:0:0:0:0:100:269:0:11:0",
-					}, -- [7]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:129508:5313:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [8]
-					{
-						["Equipped"] = 1,
-						["ItemString"] = "item:127976:5320:0:0:0:0:0:0:100:269:4:3:0:529",
-						["Count"] = 1,
-					}, -- [9]
-					{
-						["Equipped"] = 1,
-						["Count"] = 1,
-						["ItemString"] = "item:124576:0:0:0:0:0:0:0:100:269:4:1:3:189:764:653:529",
-					}, -- [10]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:113843:0:0:0:0:0:0:0:100:269:0:3:0",
-					}, -- [11]
-					{
-						["Equipped"] = 1,
-						["Count"] = 1,
-						["ItemString"] = "item:118114:0:0:0:0:0:0:0:100:269:0:3:0",
-					}, -- [12]
-					{
-						["Equipped"] = 1,
-						["Count"] = 1,
-						["ItemString"] = "item:113877:5327:0:0:0:0:0:0:100:269:0:3:0",
-					}, -- [13]
-					{
-						["Equipped"] = 1,
-						["Count"] = 1,
-						["ItemString"] = "item:113870:0:0:0:0:0:0:0:100:269:0:3:0",
-					}, -- [14]
-					{
-						["Equipped"] = 1,
-						["Count"] = 1,
-						["ItemString"] = "item:124588:0:0:0:0:0:0:0:100:269:4:1:3:67:761:652:529",
-					}, -- [15]
-					{
-						["Equipped"] = 1,
-						["ItemString"] = "item:124592:0:0:0:0:0:0:0:100:269:4:1:3:220:764:653:529",
-						["Count"] = 1,
-					}, -- [16]
-					{
-						["Equipped"] = 1,
-						["Count"] = 1,
-						["ItemString"] = "item:113843:5327:0:0:0:0:0:0:100:269:0:3:0",
-					}, -- [17]
-					{
-						["Equipped"] = 2,
-						["Count"] = 2,
-						["ItemString"] = "item:129502:5337:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [18]
-					["Name"] = "Equiped",
-					["Path"] = "Gear\\Equiped",
-					["Expanded"] = false,
-					["SlotsUsed"] = 17,
-				}, -- [5]
-				{
-					{
-						["Equipped"] = 4,
-						["ItemString"] = "item:54443:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 4,
-					}, -- [1]
-					{
-						["ItemString"] = "item:49295:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 1,
-					}, -- [2]
-					{
-						["ItemString"] = "item:109167:0:0:0:0:0:0:0:100:269:0:1:0",
-						["Count"] = 1,
-					}, -- [3]
-					["Expanded"] = false,
-					["Path"] = "Useful Items",
-					["Name"] = "Useful Items",
-					["SlotsUsed"] = 3,
-				}, -- [6]
-				["BGColor"] = {
-					0.5, -- [1]
-					0.5, -- [2]
-					0.5, -- [3]
-					0.7, -- [4]
-				},
-				["SlotEmpty"] = 46,
-				["BGTexture"] = "Bumpy",
-				["ShowBags"] = false,
-				["SlotTotal"] = 104,
-				["SpecialTotal"] = 0,
-				["SpecialEmpty"] = 0,
-			}, -- [1]
-			{
-				{
-					{
-						["Count"] = 31,
-						["ItemString"] = "item:118722:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [1]
-					{
-						["Count"] = 2,
-						["ItemString"] = "item:119293:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [2]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:118100:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [3]
-					["SlotsUsed"] = 3,
-				}, -- [1]
-				["BGColor"] = {
-					0.5, -- [1]
-					0.5, -- [2]
-					0.5, -- [3]
-					0.7, -- [4]
-				},
-				["SlotEmpty"] = 25,
-				["BGTexture"] = "Bumpy",
-				["SpecialEmpty"] = 0,
-				["SpecialTotal"] = 0,
-				["SlotTotal"] = 28,
-			}, -- [2]
-			{
-				{
-					{
-						["ItemString"] = "item:109127:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 1309,
-						["Slots"] = 7,
-					}, -- [1]
-					{
-						["Count"] = 101,
-						["ItemString"] = "item:109125:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [2]
-					{
-						["Count"] = 282,
-						["ItemString"] = "item:109129:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Slots"] = 2,
-					}, -- [3]
-					{
-						["Count"] = 191,
-						["ItemString"] = "item:109128:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [4]
-					{
-						["Count"] = 577,
-						["ItemString"] = "item:109126:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Slots"] = 3,
-					}, -- [5]
-					{
-						["Count"] = 834,
-						["ItemString"] = "item:111557:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Slots"] = 5,
-					}, -- [6]
-					{
-						["Count"] = 2379,
-						["ItemString"] = "item:111556:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Slots"] = 12,
-					}, -- [7]
-					{
-						["Count"] = 140,
-						["ItemString"] = "item:120945:0:0:0:0:0:0:0:100:269:0:0:0",
-					}, -- [8]
-					{
-						["ItemString"] = "item:109693:0:0:0:0:0:0:0:100:269:0:0:0",
-						["Count"] = 1489,
-						["Slots"] = 8,
-					}, -- [9]
-					["SlotsUsed"] = 40,
-				}, -- [1]
-				["BGColor"] = {
-					0.5, -- [1]
-					0.5, -- [2]
-					0.5, -- [3]
-					0.7, -- [4]
-				},
-				["SlotEmpty"] = 58,
-				["BGTexture"] = "Bumpy",
-				["SpecialEmpty"] = 0,
-				["SpecialTotal"] = 0,
-				["SlotTotal"] = 98,
-			}, -- [3]
-			["AutoSell"] = 1,
-			["BankBag"] = {
-				{
-					["Count"] = 1,
-				}, -- [1]
-				{
-					["Count"] = 1,
-				}, -- [2]
-				{
-					["Count"] = 1,
-				}, -- [3]
-				{
-					["Count"] = 1,
-				}, -- [4]
-				{
-					["Count"] = 1,
-				}, -- [5]
-				{
-					["Count"] = 1,
-				}, -- [6]
-				{
-					["Count"] = 1,
-				}, -- [7]
-			},
-			["PutQuality"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				[0] = 1,
-			},
-			["Class"] = "MONK",
-			["Money"] = 160967786,
-		},
-		["Uldaris"] = {
-			{
-				{
-					{
-						["Category"] = 7,
-					}, -- [1]
-					{
-						["Category"] = 6,
-					}, -- [2]
-					{
-						["Category"] = 5,
-					}, -- [3]
-					{
-						["Category"] = 4,
-					}, -- [4]
-					{
-						["Category"] = 3,
-					}, -- [5]
-					{
-						["Category"] = 2,
-					}, -- [6]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:6948:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [7]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:110560:0:0:0:0:0:0:0:100:103:0:11:0",
-					}, -- [8]
-					{
-						["Count"] = 4,
-						["Equipped"] = 4,
-						["ItemString"] = "item:114821:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [9]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:114877:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [10]
-					{
-						["ItemString"] = "item:50741:0:0:0:0:0:0:0:100:105:0:1:0",
-						["Count"] = 1,
-					}, -- [11]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:117368:0:0:0:0:0:0:0:100:105:0:1:1:710",
-					}, -- [12]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:113107:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [13]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:50446:0:0:0:0:0:0:0:100:105:0:1:0",
-					}, -- [14]
-					{
-						["Count"] = 1682,
-						["ItemString"] = "item:109693:0:0:0:0:0:0:0:100:102:0:0:0",
-						["Slots"] = 9,
-					}, -- [15]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:112100:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [16]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:125787:0:0:0:0:0:0:0:100:102:0:0:0",
-					}, -- [17]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:36925:0:0:0:0:0:0:0:100:102:0:0:0",
-					}, -- [18]
-					{
-						["ItemString"] = "item:114806:0:0:0:0:0:0:0:100:102:0:0:0",
-						["Count"] = 1,
-					}, -- [19]
-					{
-						["ItemString"] = "item:109127:0:0:0:0:0:0:0:100:102:0:0:0",
-						["Count"] = 310,
-						["Slots"] = 2,
-					}, -- [20]
-					{
-						["ItemString"] = "item:114323:0:0:0:0:0:0:0:100:102:0:1:1:204",
-						["Count"] = 1,
-					}, -- [21]
-					["SlotsUsed"] = 142,
-				}, -- [1]
-				{
-					{
-						["ItemString"] = "item:116395:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [1]
-					{
-						["ItemString"] = "item:116394:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [2]
-					{
-						["ItemString"] = "item:104286:0:0:0:0:0:0:0:100:103:0:0:0",
-						["Count"] = 13,
-					}, -- [3]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:113540:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [4]
-					{
-						["Count"] = 132,
-						["ItemString"] = "item:79249:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [5]
-					{
-						["ItemString"] = "item:113681:0:0:0:0:0:0:0:100:103:0:0:0",
-						["Count"] = 879,
-					}, -- [6]
-					{
-						["ItemString"] = "item:118100:0:0:0:0:0:0:0:100:103:0:0:0",
-						["Count"] = 12,
-					}, -- [7]
-					{
-						["ItemString"] = "item:127823:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [8]
-					{
-						["ItemString"] = "item:127810:0:0:0:0:0:0:0:100:105:0:0:0",
-					}, -- [9]
-					{
-						["ItemString"] = "item:114057:0:0:0:0:0:0:0:100:103:0:1:0",
-					}, -- [10]
-					{
-						["ItemString"] = "item:114058:0:0:0:0:0:0:0:100:103:0:1:0",
-					}, -- [11]
-					{
-						["ItemString"] = "item:113478:0:0:0:0:0:0:0:100:103:0:0:0",
-						["Count"] = 6,
-					}, -- [12]
-					{
-						["ItemString"] = "item:128373:0:0:0:0:0:0:0:100:103:0:0:0",
-						["Count"] = 2,
-					}, -- [13]
-					{
-						["Count"] = 200,
-						["ItemString"] = "item:124099:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [14]
-					["Expanded"] = false,
-					["Path"] = "g",
-					["Name"] = "g",
-					["SlotsUsed"] = 8,
-				}, -- [2]
-				{
-					{
-						["ItemString"] = "item:115524:0:0:0:0:0:0:0:100:103:0:0:0",
-						["Count"] = 2126,
-						["Slots"] = 11,
-					}, -- [1]
-					{
-						["ItemString"] = "item:118721:0:0:0:0:0:0:0:100:103:0:0:0",
-						["Count"] = 2,
-					}, -- [2]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:20815:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [3]
-					{
-						["ItemString"] = "item:109119:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [4]
-					{
-						["Count"] = 1738,
-						["ItemString"] = "item:109118:0:0:0:0:0:0:0:100:103:0:0:0",
-						["Slots"] = 9,
-					}, -- [5]
-					{
-						["Count"] = 520,
-						["ItemString"] = "item:110611:0:0:0:0:0:0:0:100:103:0:0:0",
-						["Slots"] = 3,
-					}, -- [6]
-					{
-						["ItemString"] = "item:111557:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [7]
-					{
-						["ItemString"] = "item:118007:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [8]
-					{
-						["ItemString"] = "item:110609:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [9]
-					["Expanded"] = false,
-					["Path"] = "Trade Goods",
-					["Name"] = "Trade Goods",
-					["SlotsUsed"] = 25,
-				}, -- [3]
-				{
-					{
-						["Category"] = 10,
-					}, -- [1]
-					{
-						["Category"] = 9,
-					}, -- [2]
-					{
-						["Count"] = 6,
-						["ItemString"] = "item:113405:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [3]
-					{
-						["ItemString"] = "item:38577:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [4]
-					{
-						["Count"] = 5,
-						["ItemString"] = "item:31451:0:0:0:0:0:0:1696314948:100:103:0:0:0",
-					}, -- [5]
-					{
-						["ItemString"] = "item:114120:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [6]
-					{
-						["ItemString"] = "item:114116:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [7]
-					{
-						["Count"] = 2,
-						["ItemString"] = "item:86574:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [8]
-					{
-						["ItemString"] = "item:119449:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [9]
-					{
-						["ItemString"] = "item:120182:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [10]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:119348:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [11]
-					{
-						["ItemString"] = "item:81054:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [12]
-					{
-						["Count"] = 6,
-						["ItemString"] = "item:109076:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [13]
-					{
-						["ItemString"] = "item:116917:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [14]
-					{
-						["ItemString"] = "item:118428:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [15]
-					{
-						["ItemString"] = "item:111436:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [16]
-					{
-						["ItemString"] = "item:118897:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [17]
-					{
-						["ItemString"] = "item:109147:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [18]
-					{
-						["ItemString"] = "item:6662:0:0:0:0:0:0:0:100:103:0:0:0",
-						["Count"] = 250,
-						["Slots"] = 13,
-					}, -- [19]
-					{
-						["Count"] = 3,
-						["ItemString"] = "item:109222:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [20]
-					{
-						["ItemString"] = "item:118006:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [21]
-					{
-						["ItemString"] = "item:109223:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [22]
-					{
-						["ItemString"] = "item:113585:0:0:0:0:0:0:0:100:103:0:0:0",
-						["Count"] = 6,
-					}, -- [23]
-					{
-						["ItemString"] = "item:109217:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [24]
-					{
-						["ItemString"] = "item:118630:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [25]
-					{
-						["Count"] = 92,
-						["ItemString"] = "item:109155:0:0:0:0:0:0:0:100:105:0:0:0",
-						["Slots"] = 5,
-					}, -- [26]
-					["Expanded"] = false,
-					["Path"] = "Consumable",
-					["Name"] = "Consumable",
-					["SlotsUsed"] = 43,
-				}, -- [4]
-				{
-					{
-						["Category"] = 8,
-					}, -- [1]
-					{
-						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:103:0:1:3:110:647:652",
-					}, -- [2]
-					{
-						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:103:0:0:3:227:647:652",
-					}, -- [3]
-					{
-						["ItemString"] = "item:114502:0:0:0:0:0:0:0:100:103:0:1:1:223",
-					}, -- [4]
-					{
-						["ItemString"] = "item:114497:0:0:0:0:0:0:0:100:103:0:1:1:123",
-					}, -- [5]
-					{
-						["ItemString"] = "item:114436:0:0:0:0:0:0:0:100:103:0:1:1:222",
-					}, -- [6]
-					{
-						["ItemString"] = "item:113634:0:0:0:0:0:0:0:100:103:0:3:0",
-					}, -- [7]
-					{
-						["ItemString"] = "item:118851:0:0:0:0:0:0:0:100:105:0:0:0",
-					}, -- [8]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:115798:0:0:0:0:0:0:0:100:102:4:13:3:125:525:540:529",
-					}, -- [9]
-					{
-						["ItemString"] = "item:113951:0:0:0:0:0:0:0:100:103:0:3:0",
-					}, -- [10]
-					{
-						["ItemString"] = "item:114494:0:0:0:0:0:0:0:100:103:0:1:1:161",
-					}, -- [11]
-					{
-						["ItemString"] = "item:118255:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [12]
-					{
-						["ItemString"] = "item:114537:0:0:0:0:0:0:0:100:103:0:1:2:138:41",
-					}, -- [13]
-					{
-						["ItemString"] = "item:114538:0:0:0:0:0:0:0:100:102:0:1:1:69",
-					}, -- [14]
-					{
-						["ItemString"] = "item:114494:0:0:0:0:0:0:0:100:102:0:1:1:227",
-					}, -- [15]
-					{
-						["ItemString"] = "item:114494:0:0:0:0:0:0:0:100:102:0:1:2:126:563",
-					}, -- [16]
-					{
-						["ItemString"] = "item:114497:0:0:0:0:0:0:0:100:102:0:1:2:58:40",
-					}, -- [17]
-					{
-						["ItemString"] = "item:114433:0:0:0:0:0:0:0:100:102:0:1:2:486:563",
-					}, -- [18]
-					{
-						["ItemString"] = "item:124592:0:0:0:0:0:0:0:100:102:0:1:3:88:647:652",
-					}, -- [19]
-					{
-						["ItemString"] = "item:114396:0:0:0:0:0:0:0:100:102:0:1:1:185",
-					}, -- [20]
-					{
-						["ItemString"] = "item:114457:0:0:0:0:0:0:0:100:102:0:1:1:155",
-					}, -- [21]
-					{
-						["ItemString"] = "item:114477:0:0:0:0:0:0:0:100:102:0:1:1:103",
-					}, -- [22]
-					{
-						["ItemString"] = "item:114323:0:0:0:0:0:0:0:100:102:0:1:1:229",
-					}, -- [23]
-					{
-						["ItemString"] = "item:114380:0:0:0:0:0:0:0:100:102:0:1:1:110",
-					}, -- [24]
-					{
-						["ItemString"] = "item:114380:0:0:0:0:0:0:0:100:102:0:1:2:191:560",
-					}, -- [25]
-					{
-						["ItemString"] = "item:114380:0:0:0:0:0:0:0:100:102:0:1:1:189",
-					}, -- [26]
-					{
-						["ItemString"] = "item:114380:0:0:0:0:0:0:0:100:102:0:1:1:148",
-					}, -- [27]
-					{
-						["ItemString"] = "item:113661:0:0:0:0:0:0:0:100:103:0:3:0",
-					}, -- [28]
-					{
-						["ItemString"] = "item:128350:0:0:0:0:0:0:0:100:103:0:0:3:197:651:652",
-					}, -- [29]
-					{
-						["ItemString"] = "item:124631:0:0:0:0:0:0:0:100:102:4:14:3:180:653:648:529",
-					}, -- [30]
-					{
-						["ItemString"] = "item:124546:0:0:0:0:0:0:0:100:102:4:3:0:529",
-						["Count"] = 1,
-					}, -- [31]
-					{
-						["ItemString"] = "item:124572:0:0:0:0:0:0:0:100:102:4:0:3:138:651:653:529",
-					}, -- [32]
-					{
-						["ItemString"] = "item:113634:0:0:0:0:0:0:0:100:103:0:3:1:560",
-					}, -- [33]
-					{
-						["ItemString"] = "item:113889:0:0:0:0:0:0:0:100:105:0:3:0",
-					}, -- [34]
-					{
-						["ItemString"] = "item:115332:0:0:0:0:0:0:0:100:103:0:1:1:132",
-					}, -- [35]
-					{
-						["ItemString"] = "item:128054:0:0:0:0:0:0:0:100:102:4:4:0:529",
-					}, -- [36]
-					{
-						["ItemString"] = "item:113598:0:0:0:0:0:0:0:100:105:0:3:0",
-					}, -- [37]
-					{
-						["ItemString"] = "item:127665:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [38]
-					{
-						["ItemString"] = "item:128220:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [39]
-					{
-						["ItemString"] = "item:113877:0:0:0:0:0:0:0:100:103:0:3:0",
-					}, -- [40]
-					{
-						["ItemString"] = "item:128034:0:0:0:0:0:0:0:100:102:4:4:1:560:529",
-					}, -- [41]
-					{
-						["ItemString"] = "item:113985:0:0:0:0:0:0:0:100:103:0:3:1:563",
-					}, -- [42]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:116174:0:0:0:0:0:0:0:100:102:4:13:3:176:525:536:529",
-					}, -- [43]
-					{
-						["ItemString"] = "item:113851:0:0:0:0:0:0:0:100:103:0:3:0",
-					}, -- [44]
-					{
-						["ItemString"] = "item:124580:0:0:0:0:0:0:0:100:102:4:0:3:163:647:653:529",
-					}, -- [45]
-					{
-						["ItemString"] = "item:113611:0:0:0:0:0:0:0:100:103:0:3:0",
-					}, -- [46]
-					{
-						["ItemString"] = "item:128150:0:0:0:0:0:0:0:100:102:4:4:0:529",
-					}, -- [47]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:116178:0:0:0:0:0:0:0:100:102:4:13:3:51:525:535:529",
-					}, -- [48]
-					{
-						["ItemString"] = "item:124608:0:0:0:0:0:0:0:100:102:4:1:3:126:647:653:529",
-					}, -- [49]
-					{
-						["ItemString"] = "item:115325:0:0:0:0:0:0:0:100:102:0:1:1:142",
-					}, -- [50]
-					{
-						["ItemString"] = "item:114367:0:0:0:0:0:0:0:100:102:0:1:0",
-					}, -- [51]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:116179:0:0:0:0:0:0:0:100:102:4:13:3:83:525:536:529",
-					}, -- [52]
-					{
-						["ItemString"] = "item:114550:0:0:0:0:0:0:0:100:102:0:1:0",
-					}, -- [53]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:116175:0:0:0:0:0:0:0:100:102:4:13:3:48:525:536:529",
-					}, -- [54]
-					{
-						["ItemString"] = "item:119509:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [55]
-					{
-						["ItemString"] = "item:128039:0:0:0:0:0:0:0:100:102:4:4:0:529",
-					}, -- [56]
-					{
-						["ItemString"] = "item:116824:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [57]
-					{
-						["ItemString"] = "item:114549:0:0:0:0:0:0:0:100:103:0:1:1:560",
-					}, -- [58]
-					{
-						["ItemString"] = "item:128190:0:0:0:0:0:0:0:100:102:4:4:0:529",
-					}, -- [59]
-					{
-						["ItemString"] = "item:117360:0:0:0:0:0:0:0:100:105:0:1:1:710",
-					}, -- [60]
-					{
-						["ItemString"] = "item:116379:0:0:0:0:0:0:0:100:105:0:4:0",
-					}, -- [61]
-					{
-						["ItemString"] = "item:117391:0:0:0:0:0:0:0:100:105:0:1:1:710",
-					}, -- [62]
-					{
-						["ItemString"] = "item:127412:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [63]
-					{
-						["ItemString"] = "item:113664:0:0:0:0:0:0:0:100:105:0:3:1:560",
-						["Count"] = 1,
-					}, -- [64]
-					{
-						["ItemString"] = "item:117359:0:0:0:0:0:0:0:100:105:0:1:1:710",
-					}, -- [65]
-					{
-						["ItemString"] = "item:124601:0:0:0:0:0:0:0:100:102:4:14:3:181:647:653:529",
-					}, -- [66]
-					{
-						["ItemString"] = "item:128152:0:0:0:0:0:0:0:100:105:4:4:0:529",
-					}, -- [67]
-					["Expanded"] = false,
-					["Path"] = "Gear",
-					["Name"] = "Gear",
-					["SlotsUsed"] = 29,
-				}, -- [5]
-				{
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:116913:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [1]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:33820:0:0:0:0:0:0:1675953280:100:103:0:0:0",
-					}, -- [2]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:63206:0:0:0:0:0:0:0:100:103:0:14:0",
-					}, -- [3]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:2820:0:0:0:0:0:0:652230831:100:103:0:0:0",
-					}, -- [4]
-					{
-						["ItemString"] = "item:40586:0:0:0:0:0:0:0:100:103:0:14:0",
-						["Count"] = 1,
-					}, -- [5]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:109167:0:0:0:0:0:0:0:100:103:0:1:0",
-					}, -- [6]
-					{
-						["ItemString"] = "item:128353:0:0:0:0:0:0:0:100:105:0:0:0",
-						["Count"] = 1,
-					}, -- [7]
-					["Expanded"] = false,
-					["Path"] = "Useful Items",
-					["Name"] = "Useful Items",
-					["SlotsUsed"] = 7,
-				}, -- [6]
-				{
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:71086:0:0:0:0:0:0:0:100:102:0:11:0",
-					}, -- [1]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:46017:0:0:0:0:0:0:0:100:102:0:11:0",
-					}, -- [2]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:118084:0:0:0:0:0:0:0:100:103:0:11:0",
-					}, -- [3]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:118365:0:0:0:0:0:0:0:100:103:0:11:0",
-					}, -- [4]
-					{
-						["ItemString"] = "item:45038:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [5]
-					{
-						["ItemString"] = "item:71016:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [6]
-					{
-						["ItemString"] = "item:71008:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [7]
-					{
-						["ItemString"] = "item:71017:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [8]
-					{
-						["ItemString"] = "item:71001:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [9]
-					{
-						["ItemString"] = "item:71084:0:0:0:0:0:0:0:100:103:0:11:0",
-					}, -- [10]
-					{
-						["ItemString"] = "item:69815:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [11]
-					{
-						["ItemString"] = "item:71085:0:0:0:0:0:0:0:100:102:0:11:0",
-					}, -- [12]
-					{
-						["ItemString"] = "item:69897:0:0:0:0:0:0:0:100:103:0:0:0",
-						["Slots"] = 2,
-						["Count"] = 2,
-					}, -- [13]
-					{
-						["ItemString"] = "item:45896:0:0:0:0:0:0:0:100:102:0:11:0",
-					}, -- [14]
-					["Expanded"] = false,
-					["Path"] = "Mementos",
-					["Name"] = "Mementos",
-					["SlotsUsed"] = 6,
-				}, -- [7]
-				{
-					{
-						["ItemString"] = "item:114694:0:0:0:0:0:0:0:100:103:0:11:1:577",
-					}, -- [1]
-					{
-						["ItemString"] = "item:122254:0:0:0:0:0:0:0:100:103:0:0:1:583",
-					}, -- [2]
-					{
-						["ItemString"] = "item:114502:0:0:0:0:0:0:0:100:103:0:1:2:32:560",
-					}, -- [3]
-					{
-						["ItemString"] = "item:118253:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [4]
-					{
-						["ItemString"] = "item:122261:0:0:0:0:0:0:0:100:103:0:0:1:583",
-					}, -- [5]
-					{
-						["ItemString"] = "item:114518:0:0:0:0:0:0:0:100:103:0:1:1:133",
-					}, -- [6]
-					{
-						["Count"] = 1,
-						["Equipped"] = 1,
-						["ItemString"] = "item:69210:0:0:0:0:0:0:0:100:103:0:14:0",
-					}, -- [7]
-					{
-						["Count"] = 2,
-						["Equipped"] = 1,
-						["ItemString"] = "item:128137:0:0:0:0:0:0:0:100:102:4:4:0:529",
-					}, -- [8]
-					{
-						["Count"] = 1,
-						["Equipped"] = 1,
-						["ItemString"] = "item:124545:0:5348:0:0:0:0:0:100:105:4:3:1:563:529",
-					}, -- [9]
-					{
-						["ItemString"] = "item:124603:5326:0:0:0:0:0:0:100:105:4:14:3:375:652:648:529",
-						["Equipped"] = 1,
-						["Count"] = 1,
-					}, -- [10]
-					{
-						["ItemString"] = "item:113964:0:0:0:0:0:0:0:100:103:0:3:0",
-						["Slots"] = 2,
-						["Equipped"] = 1,
-						["Count"] = 3,
-					}, -- [11]
-					{
-						["ItemString"] = "item:128065:0:0:0:0:0:0:0:100:102:4:4:1:560:529",
-						["Count"] = 1,
-					}, -- [12]
-					{
-						["ItemString"] = "item:113907:0:0:0:0:0:0:0:100:105:0:3:0",
-						["Slots"] = 2,
-						["Count"] = 2,
-					}, -- [13]
-					{
-						["Count"] = 1,
-						["Equipped"] = 1,
-						["ItemString"] = "item:124609:5319:0:0:0:0:0:0:100:105:4:1:3:488:653:648:529",
-					}, -- [14]
-					{
-						["ItemString"] = "item:127973:5311:0:0:0:0:0:0:100:105:4:3:0:529",
-						["Count"] = 1,
-					}, -- [15]
-					{
-						["Count"] = 1,
-						["Equipped"] = 1,
-						["ItemString"] = "item:6833:0:0:0:0:0:0:-1269268830:100:103:0:0:0",
-					}, -- [16]
-					{
-						["Count"] = 1,
-						["Equipped"] = 1,
-						["ItemString"] = "item:128131:0:0:0:0:0:0:0:100:102:4:4:1:42:529",
-					}, -- [17]
-					{
-						["Count"] = 1,
-						["Equipped"] = 1,
-						["ItemString"] = "item:127982:0:0:0:0:0:0:0:100:102:4:3:0:529",
-					}, -- [18]
-					{
-						["ItemString"] = "item:124630:5384:0:0:0:0:0:0:100:105:4:14:3:188:653:648:529",
-						["Equipped"] = 1,
-						["Count"] = 1,
-					}, -- [19]
-					{
-						["ItemString"] = "item:124602:5326:0:0:0:0:0:0:100:105:4:14:3:226:764:652:529",
-						["Equipped"] = 1,
-						["Count"] = 1,
-					}, -- [20]
-					{
-						["Count"] = 1,
-						["Equipped"] = 1,
-						["ItemString"] = "item:128125:0:5348:0:0:0:0:0:100:105:4:4:1:563:529",
-					}, -- [21]
-					{
-						["Count"] = 1,
-						["Equipped"] = 1,
-						["ItemString"] = "item:113948:0:0:0:0:0:0:0:100:102:0:3:0",
-					}, -- [22]
-					{
-						["ItemString"] = "item:128046:0:0:0:0:0:0:0:100:102:4:4:0:529",
-						["Equipped"] = 1,
-						["Count"] = 1,
-					}, -- [23]
-					{
-						["Count"] = 1,
-						["Equipped"] = 1,
-						["ItemString"] = "item:124251:0:5348:0:0:0:0:0:100:105:4:3:1:563:529",
-					}, -- [24]
-					{
-						["Count"] = 1,
-						["Equipped"] = 1,
-						["ItemString"] = "item:128104:5312:0:0:0:0:0:0:100:102:4:4:1:40:529",
-					}, -- [25]
-					{
-						["ItemString"] = "item:128034:0:5348:0:0:0:0:0:100:105:4:4:1:563:529",
-						["Equipped"] = 1,
-						["Count"] = 1,
-					}, -- [26]
-					["Expanded"] = false,
-					["Path"] = "Gear\\Equipped",
-					["Name"] = "Equipped",
-					["SlotsUsed"] = 22,
-				}, -- [8]
-				{
-					{
-						["Count"] = 21,
-						["ItemString"] = "item:114128:0:0:0:0:0:0:0:100:103:0:0:0",
-						["Slots"] = 2,
-					}, -- [1]
-					{
-						["ItemString"] = "item:114745:0:0:0:0:0:0:0:100:103:0:0:0",
-						["Count"] = 39,
-						["Slots"] = 2,
-					}, -- [2]
-					{
-						["Count"] = 13,
-						["ItemString"] = "item:114129:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [3]
-					{
-						["Count"] = 13,
-						["ItemString"] = "item:114808:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [4]
-					{
-						["Count"] = 4,
-						["ItemString"] = "item:114822:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [5]
-					{
-						["ItemString"] = "item:114131:0:0:0:0:0:0:0:100:103:0:0:0",
-						["Count"] = 3,
-					}, -- [6]
-					{
-						["ItemString"] = "item:114746:0:0:0:0:0:0:0:100:105:0:0:0",
-						["Count"] = 3,
-					}, -- [7]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:114622:0:0:0:0:0:0:0:100:105:0:0:0",
-					}, -- [8]
-					{
-						["ItemString"] = "item:118475:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [9]
-					{
-						["ItemString"] = "item:122584:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [10]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:122583:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [11]
-					{
-						["ItemString"] = "item:122273:0:0:0:0:0:0:0:100:102:0:0:0",
-						["Count"] = 2,
-					}, -- [12]
-					{
-						["ItemString"] = "item:118474:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [13]
-					{
-						["Count"] = 9,
-						["ItemString"] = "item:118354:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [14]
-					{
-						["ItemString"] = "item:122580:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [15]
-					{
-						["ItemString"] = "item:122272:0:0:0:0:0:0:0:100:105:0:0:0",
-						["Count"] = 3,
-					}, -- [16]
-					["Name"] = "Follower",
-					["Path"] = "Consumable\\Follower",
-					["Expanded"] = false,
-					["SlotsUsed"] = 14,
-				}, -- [9]
-				{
-					{
-						["ItemString"] = "item:127880:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [1]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:127883:0:0:0:0:0:0:0:100:105:0:0:0",
-					}, -- [2]
-					{
-						["ItemString"] = "item:127881:0:0:0:0:0:0:0:100:105:0:0:0",
-						["Count"] = 2,
-					}, -- [3]
-					{
-						["ItemString"] = "item:127882:0:0:0:0:0:0:0:100:105:0:0:0",
-					}, -- [4]
-					{
-						["ItemString"] = "item:127884:0:0:0:0:0:0:0:100:102:0:0:0",
-						["Count"] = 2,
-					}, -- [5]
-					{
-						["ItemString"] = "item:127662:0:0:0:0:0:0:0:100:105:0:0:0",
-						["Count"] = 3,
-					}, -- [6]
-					["Expanded"] = false,
-					["Path"] = "Consumable\\Naval",
-					["Name"] = "Naval",
-					["SlotsUsed"] = 4,
-				}, -- [10]
-				["BGColor"] = {
-					0.5, -- [1]
-					0.5, -- [2]
-					0.5, -- [3]
-					0.7, -- [4]
-				},
-				["SpecialTotal"] = 0,
-				["BGTexture"] = "Bumpy",
-				["ShowBags"] = false,
-				["SlotTotal"] = 136,
-				["SlotEmpty"] = 10,
-				["SpecialEmpty"] = 0,
-			}, -- [1]
-			{
-				{
-					{
-						["Count"] = 5,
-						["ItemString"] = "item:31437:0:0:0:0:0:0:1381900645:100:103:0:0:0",
-					}, -- [1]
-					{
-						["Count"] = 20,
-						["ItemString"] = "item:21215:0:0:0:0:0:0:1392214658:100:103:0:0:0",
-					}, -- [2]
-					{
-						["Count"] = 5,
-						["ItemString"] = "item:8529:0:0:0:0:0:0:332352234:100:103:0:0:0",
-					}, -- [3]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:46725:0:0:0:0:0:0:999178330:100:103:0:0:0",
-					}, -- [4]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:15778:0:0:0:0:0:0:770262101:100:103:0:0:0",
-					}, -- [5]
-					{
-						["Count"] = 5,
-						["ItemString"] = "item:31450:0:0:0:0:0:0:256424726:100:103:0:0:0",
-					}, -- [6]
-					{
-						["Count"] = 16,
-						["ItemString"] = "item:21537:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [7]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:37863:0:0:0:0:0:0:1929499237:100:103:0:0:0",
-					}, -- [8]
-					{
-						["ItemString"] = "item:44792:0:0:0:0:0:0:-1044611044:100:103:0:0:0",
-						["Count"] = 3,
-						["Slots"] = 3,
-					}, -- [9]
-					{
-						["Count"] = 40,
-						["ItemString"] = "item:34599:0:0:0:0:0:0:1265171456:100:103:0:0:0",
-					}, -- [10]
-					{
-						["Count"] = 17,
-						["ItemString"] = "item:34068:0:0:0:0:0:0:110043216:100:103:0:0:0",
-					}, -- [11]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:29735:0:0:0:0:0:0:988337464:100:103:0:0:0",
-					}, -- [12]
-					{
-						["Count"] = 17,
-						["ItemString"] = "item:24421:0:0:0:0:0:0:1462909754:100:103:0:0:0",
-					}, -- [13]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:12650:0:0:0:0:0:0:80608408:100:103:0:0:0",
-					}, -- [14]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:37892:0:0:0:0:0:0:1245467008:100:103:0:0:0",
-					}, -- [15]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:44731:0:0:0:0:0:0:906283088:100:103:0:0:0",
-					}, -- [16]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:23587:0:0:0:0:0:0:1152949973:100:103:0:0:0",
-					}, -- [17]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:33292:0:0:0:0:0:0:2008424057:100:103:0:0:0",
-					}, -- [18]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:46723:0:0:0:0:0:0:310181760:100:103:0:0:0",
-					}, -- [19]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:44803:0:0:0:0:0:0:-1040285671:100:103:0:0:0",
-					}, -- [20]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:46800:0:0:0:0:0:0:557735232:100:103:0:0:0",
-					}, -- [21]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:44800:0:0:0:0:0:0:-442269671:100:103:0:0:0",
-					}, -- [22]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:34685:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [23]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:21541:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [24]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:34683:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [25]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:44597:0:0:0:0:0:0:941147264:100:103:0:0:0",
-					}, -- [26]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:32481:0:0:0:0:0:0:212233872:100:103:0:0:0",
-					}, -- [27]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:10455:0:0:0:0:0:0:1939913195:100:103:0:0:0",
-					}, -- [28]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:19141:0:0:0:0:0:0:1863395700:100:103:0:0:0",
-					}, -- [29]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:11122:0:0:0:0:0:0:719396220:100:103:0:0:0",
-					}, -- [30]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:65906:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [31]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:31666:0:0:0:0:0:0:544603172:100:103:0:0:0",
-					}, -- [32]
-					{
-						["Count"] = 9,
-						["ItemString"] = "item:115808:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [33]
-					{
-						["Count"] = 3,
-						["ItemString"] = "item:115807:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [34]
-					{
-						["Count"] = 4,
-						["ItemString"] = "item:115806:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [35]
-					{
-						["Count"] = 5,
-						["ItemString"] = "item:115804:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [36]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:17720:0:0:0:0:0:0:1873231960:100:103:0:0:0",
-					}, -- [37]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:18706:0:0:0:0:0:0:-1337081235:100:103:0:0:0",
-					}, -- [38]
-					{
-						["Count"] = 3,
-						["ItemString"] = "item:12841:0:0:0:0:0:0:1829866862:100:103:0:0:0",
-					}, -- [39]
-					{
-						["Count"] = 4,
-						["ItemString"] = "item:12840:0:0:0:0:0:0:1982144392:100:103:0:0:0",
-					}, -- [40]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:11108:0:0:0:0:0:0:789552814:100:103:0:0:0",
-					}, -- [41]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:3898:0:0:0:0:0:0:1857245646:100:103:0:0:0",
-					}, -- [42]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:40615:0:0:0:0:0:0:-1804990336:100:103:0:0:0",
-					}, -- [43]
-					{
-						["Count"] = 9,
-						["ItemString"] = "item:21213:0:0:0:0:0:0:1216903925:100:103:0:0:0",
-					}, -- [44]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:90078:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [45]
-					{
-						["Count"] = 3,
-						["ItemString"] = "item:22524:0:0:0:0:0:0:1481369260:100:103:0:0:0",
-					}, -- [46]
-					{
-						["Count"] = 2,
-						["ItemString"] = "item:22523:0:0:0:0:0:0:516418764:100:103:0:0:0",
-					}, -- [47]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:32454:0:0:0:0:0:0:-1519225502:100:103:0:0:0",
-					}, -- [48]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:25978:0:0:0:0:0:0:1225558204:100:103:0:0:0",
-					}, -- [49]
-					{
-						["ItemString"] = "item:41597:0:0:0:0:0:0:1566020608:100:103:0:0:0",
-						["Count"] = 1,
-						["Equipped"] = 1,
-					}, -- [50]
-					{
-						["ItemString"] = "item:54443:0:0:0:0:0:0:516613312:100:103:0:0:0",
-						["Count"] = 5,
-						["Equipped"] = 5,
-					}, -- [51]
-					{
-						["ItemString"] = "item:49295:0:0:0:0:0:0:0:100:103:0:0:0",
-						["Count"] = 1,
-						["Equipped"] = 1,
-					}, -- [52]
-					{
-						["ItemString"] = "item:128365:0:0:0:0:0:0:0:100:105:0:0:0",
-						["Count"] = 1,
-					}, -- [53]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:128510:0:0:0:0:0:0:0:100:105:0:0:0",
-					}, -- [54]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:128507:0:0:0:0:0:0:0:100:105:0:0:0",
-					}, -- [55]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:128318:0:0:0:0:0:0:0:100:105:0:1:0",
-					}, -- [56]
-					{
-						["Slots"] = 4,
-						["ItemString"] = "item:115524:0:0:0:0:0:0:0:100:105:0:0:0",
-						["Count"] = 784,
-					}, -- [57]
-					{
-						["ItemString"] = "item:109118:0:0:0:0:0:0:0:100:105:0:0:0",
-						["Count"] = 2,
-					}, -- [58]
-					{
-						["ItemString"] = "item:110609:0:0:0:0:0:0:0:100:105:0:0:0",
-						["Count"] = 400,
-						["Slots"] = 2,
-					}, -- [59]
-					{
-						["Slots"] = 2,
-						["Count"] = 396,
-						["ItemString"] = "item:110611:0:0:0:0:0:0:0:100:105:0:0:0",
-					}, -- [60]
-					{
-						["ItemString"] = "item:109125:0:0:0:0:0:0:0:100:102:0:0:0",
-						["Count"] = 200,
-					}, -- [61]
-					{
-						["ItemString"] = "item:11482:0:0:0:0:0:0:175250977:100:102:0:0:0",
-						["Count"] = 1,
-					}, -- [62]
-					{
-						["ItemString"] = "item:24475:0:0:0:0:0:0:353282374:100:102:0:0:0",
-						["Count"] = 1,
-					}, -- [63]
-					{
-						["ItemString"] = "item:117492:0:0:0:0:0:0:0:100:102:0:0:0",
-						["Count"] = 1,
-					}, -- [64]
-					["SlotsUsed"] = 71,
-				}, -- [1]
-				["BGColor"] = {
-					0.5, -- [1]
-					0.5, -- [2]
-					0.5, -- [3]
-					0.7, -- [4]
-				},
-				["SlotEmpty"] = 114,
-				["BGTexture"] = "Bumpy",
-				["ShowBags"] = false,
-				["SpecialEmpty"] = 0,
-				["SpecialTotal"] = 0,
-				["SlotTotal"] = 182,
-			}, -- [2]
-			{
-				{
-					{
-						["Slots"] = 35,
-						["ItemString"] = "item:115524:0:0:0:0:0:0:0:100:103:0:0:0",
-						["Count"] = 6963,
-					}, -- [1]
-					{
-						["Slots"] = 2,
-						["Count"] = 1711,
-						["ItemString"] = "item:120945:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [2]
-					{
-						["Slots"] = 12,
-						["Count"] = 2273,
-						["ItemString"] = "item:109119:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [3]
-					{
-						["Count"] = 174,
-						["ItemString"] = "item:110609:0:0:0:0:0:0:0:100:103:0:0:0",
-					}, -- [4]
-					{
-						["Slots"] = 29,
-						["ItemString"] = "item:110611:0:0:0:0:0:0:0:100:105:0:0:0",
-						["Count"] = 5798,
-					}, -- [5]
-					{
-						["Slots"] = 2,
-						["Count"] = 366,
-						["ItemString"] = "item:109127:0:0:0:0:0:0:0:100:105:0:0:0",
-					}, -- [6]
-					{
-						["Slots"] = 2,
-						["Count"] = 336,
-						["ItemString"] = "item:109125:0:0:0:0:0:0:0:100:105:0:0:0",
-					}, -- [7]
-					{
-						["ItemString"] = "item:109129:0:0:0:0:0:0:0:100:105:0:0:0",
-						["Count"] = 128,
-					}, -- [8]
-					{
-						["Count"] = 53,
-						["ItemString"] = "item:109124:0:0:0:0:0:0:0:100:102:0:0:0",
-					}, -- [9]
-					{
-						["Slots"] = 2,
-						["ItemString"] = "item:109128:0:0:0:0:0:0:0:100:102:0:0:0",
-						["Count"] = 224,
-					}, -- [10]
-					{
-						["Slots"] = 4,
-						["Count"] = 760,
-						["ItemString"] = "item:109126:0:0:0:0:0:0:0:100:102:0:0:0",
-					}, -- [11]
-					{
-						["ItemString"] = "item:109693:0:0:0:0:0:0:0:100:102:0:0:0",
-						["Count"] = 1400,
-						["Slots"] = 7,
-					}, -- [12]
-					["SlotsUsed"] = 98,
-				}, -- [1]
-				["BGColor"] = {
-					0.5, -- [1]
-					0.5, -- [2]
-					0.5, -- [3]
-					0.7, -- [4]
-				},
-				["SlotEmpty"] = 0,
-				["BGTexture"] = "Bumpy",
-				["SpecialEmpty"] = 0,
-				["SpecialTotal"] = 0,
-				["SlotTotal"] = 98,
-			}, -- [3]
-			["AutoSell"] = 1,
-			["BankBag"] = {
-				{
-					["Count"] = 0,
-					["Link"] = "|cffa335ee|Hitem:49295:0:0:0:0:0:0:0:100:102:0:0:0|h[Enlarged Onyxia Hide Backpack]|h|r",
-				}, -- [1]
-				{
-					["Count"] = 0,
-					["Link"] = "|cff0070dd|Hitem:41597:0:0:0:0:0:0:2064321280:100:102:0:0:0|h[Abyssal Bag]|h|r",
-				}, -- [2]
-				{
-					["Count"] = 0,
-					["Link"] = "|cff1eff00|Hitem:54443:0:0:0:0:0:0:516613312:100:102:0:0:0|h[Embersilk Bag]|h|r",
-				}, -- [3]
-				{
-					["Count"] = 0,
-					["Link"] = "|cff1eff00|Hitem:54443:0:0:0:0:0:0:315499936:100:102:0:0:0|h[Embersilk Bag]|h|r",
-				}, -- [4]
-				{
-					["Count"] = 0,
-					["Link"] = "|cff1eff00|Hitem:54443:0:0:0:0:0:0:1898956160:100:102:0:0:0|h[Embersilk Bag]|h|r",
-				}, -- [5]
-				{
-					["Count"] = 0,
-					["Link"] = "|cff1eff00|Hitem:54443:0:0:0:0:0:0:1731663104:100:102:0:0:0|h[Embersilk Bag]|h|r",
-				}, -- [6]
-				{
-					["Count"] = 0,
-					["Link"] = "|cff1eff00|Hitem:54443:0:0:0:0:0:0:795608960:100:102:0:0:0|h[Embersilk Bag]|h|r",
-				}, -- [7]
-			},
-			["PutQuality"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				[0] = 1,
-			},
-			["Class"] = "DRUID",
-			["Money"] = 1535551086,
+			["Money"] = 9318250205,
 		},
 	},
 	["Global"] = {
@@ -6087,13 +6124,13 @@ BaudManifestData = {
 		["ShowArrows"] = true,
 		["ShowBank"] = true,
 		["Scale"] = 126.595878601074,
-		["HideBlizBank"] = true,
+		["ReplaceBlizBags"] = true,
 		["HideEquipped"] = true,
 		["AutoShowInv"] = true,
 		["HideBlizInv"] = true,
 		["Combine"] = true,
 		["ItemNameFirst"] = false,
-		["ReplaceBlizBags"] = true,
+		["HideBlizBank"] = true,
 		["CharSpecific"] = true,
 	},
 }
