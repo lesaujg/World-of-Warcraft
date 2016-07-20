@@ -1,0 +1,17 @@
+tag 7.0.1
+df71ed211420a717207613089ae72acd1da9d2e0
+Mike "Xodiv" Battersby <mib@post.com>
+2016-07-20 10:51:09 +1000
+
+Make mount scanning totally independent of the blizzard mount UI.
+
+
+--------------------
+
+Mike "Xodiv" Battersby:
+	- Use C_MountJournal.GetMountIDs() Don't show the other faction's Nagrand Garrison Ability mount.
+	- Reverting this again. I give up for now. Derp herpa derp.
+	Revert "Have Action return a list and ActionButton do the random."
+	
+	This reverts commit 476d738ff964d77a3951a86ef7355d9e54d802c5.
+	- Have Action return a list and ActionButton do the random. In prep for action expressions. This commit almost certainly does not work. I am not that smart.

@@ -229,9 +229,9 @@ local function GetItemString(Link)
   if not Link then return; end
 
   if strmatch(Link, "battlepet:") then
-    return strmatch(Link, "(battlepet:%d+:%d+:%d+:%d+:%d+:%d+:%d+)|");
+    return strmatch(Link, "(battlepet:%d*:%d*:%d*:%d*:%d*:%d*:%d*)|");
   else
-    return strmatch(Link, "(item:%d+:%d+:%d+:%d+:%d+:%d+:%-?%d+:%-?%d+:%d+:%d+:[%d:]+)|");
+    return strmatch(Link, "(item:%d*:%d*:%d*:%d*:%d*:%d*:%-?%d*:%-?%d*:%d*:%d*:[%d:]+)|");
   end
 end
 
@@ -242,23 +242,23 @@ end
 local function CleanItemString(ItemString)
   if not ItemString then return; end
 
-  if strmatch(ItemString, "battlepet:") then
-    return ItemString;
+  -- We might have a saved item string from pre-7.0 that still has zero fields.
+  local CleanItemString = gsub(ItemString, ":0:", "::");
+
+  if strmatch(CleanItemString, "battlepet:") then
+    return CleanItemString;
   end
 
---((item:itemID:enchant:gem1:gem2:gem3:gem4):(suffixID):(uniqueID):)level:specializationID:(upgradeId:instanceDifficultyID:numBonusIDs:bonusID1:bonusID2...)
-  local Prefix, First, SuffixID, UniqueID, Rest = strmatch(ItemString, "((item:%d+:%d+:%d+:%d+:%d+:%d+):(%-?%d+):(%-?%d+):)%d+:%d+:([%d:]+)");
-  if not Prefix then
-    -- back compat
-    if strmatch(ItemString, "item:%d+:%d+:%d+:%d+:%d+:%d+:%-?%d+") then
-      return ItemString..":0:0:0:0";
-    end
-  elseif (tonumber(SuffixID) < 0) then
-    -- Need to keep UniqueID, since it contains part of the item's identity.
-    return Prefix..Rest
-  else
-    -- Need to clear the UniqueID, so that the item will stack in the manifest.
-    return First..":"..SuffixID..":0:"..Rest;
+  --((item:itemID:enchant:gem1:gem2:gem3:gem4):(suffixID):(uniqueID):)level:specializationID:(upgradeId:instanceDifficultyID:numBonusIDs:bonusID1:bonusID2...)
+  local Prefix, First, SuffixID, UniqueID, Rest = strmatch(CleanItemString, "((item:%d*:%d*:%d*:%d*:%d*:%d*):(%-?%d*):(%-?%d*):)%d*:%d*:([%d:]+)");
+  if Prefix then
+     if (SuffixID ~= '' and tonumber(SuffixID) < 0) then
+        -- Need to keep UniqueID, since it contains part of the item's identity.
+        return Prefix..Rest
+     else
+        -- Need to clear the UniqueID, so that the item will stack in the manifest.
+        return First..":"..SuffixID.."::"..Rest;
+     end
   end
 end
 
@@ -307,9 +307,9 @@ local function UpdateCharList()
       Text:SetPoint("LEFT", 2, 0);
     else
       Texture = _G[Entry:GetName() .. "Texture"];
-      Coords = CLASS_BUTTONS[strupper(RealmData[Value].Class or "")];
+      Coords = CLASS_ICON_TCOORDS[strupper(RealmData[Value].Class or "")];
       if Coords then
-    	  Texture:SetTexture("Interface\\WorldStateFrame\\Icons-Classes");
+        Texture:SetTexture("Interface\\WorldStateFrame\\Icons-Classes");
         Texture:SetTexCoord(unpack(Coords));
         Texture:Show();
       end
@@ -1736,6 +1736,10 @@ function BaudManifestDisplay_OnHide(self)
     CloseBankFrame();
   end
   self.AutoShown = nil;
+
+  --if ArtifactRelicHelpBox:IsShown() and ArtifactRelicHelpBox.owner == self then
+  --  ArtifactRelicHelpBox:Hide();
+  --end
 end
 
 ------------------------------------
@@ -1980,7 +1984,7 @@ function BaudManifestItemEntry_OnEnter(self, NotUpdate)
   if NotUpdate then
     --if this is updated repeatedly, it causes flickering
     local itemId = select(2, strsplit(":", ItemInfo.ItemString));
-    CooldownFrame_SetTimer(BaudManifestTooltipIconCooldown, GetItemCooldown(itemId));
+    CooldownFrame_Set(BaudManifestTooltipIconCooldown, GetItemCooldown(itemId));
   end
 
   if (self:GetCenter() < UIParent:GetCenter()) then
@@ -2175,8 +2179,8 @@ function BaudManifestPickupDragRemain(MoveMethod, QuickSplit)
   end
 
   local BestBag, BestSlot, BestCount, BestPriority, SplitBag, SplitSlot, SplitCount;
-  local Link, Count, Locked, Priority, Family; 
-  local ItemString = DragItem.String;  
+  local Link, Count, Locked, Priority, Family;
+  local ItemString = DragItem.String;
   local ItemID = strmatch(DragItem.String, "item:(%d+):");
   local ItemFamily = GetItemFamily(tonumber(ItemID)) or 0;
   local Moving;
@@ -2723,7 +2727,7 @@ local function UpdateSlotFunc(Bag, Slot)
   if not Link then
     return;
   end
-  
+
   ItemString = GetItemString(Link);
   ItemID = strmatch(ItemString, "item:(%d+):");
   if not ItemID then
@@ -2944,7 +2948,7 @@ function BaudManifestUpdateList(Display)
   end
 
   for Key, Value in ipairs(AddItems) do
-    Quality = select(3, GetItemInfo(Value.ItemString)) or strmatch(Value.ItemString, "battlepet:%d+:%d+:(%d+)");
+    Quality = select(3, GetItemInfo(Value.ItemString)) or strmatch(Value.ItemString, "battlepet:%d+:%d*:(%d+)");
     tinsert(DisplayData[(Display:GetID() == 1) and Quality and PlayerData.PutQuality[Quality] or 1], Value);
     AddItems[Key] = nil;
   end
@@ -3213,9 +3217,9 @@ function BaudManifestScrollBar_Update(Display)
         Button:SetPushedTexture("");
         Button:SetHighlightTexture("");
         Name, _, Quality, _, _, _, _, MaxCount, _, Texture = GetItemInfo(ItemInfo.ItemString);
-        local itemId = select(2, strsplit(":", ItemInfo.ItemString));        
+        local itemId = select(2, strsplit(":", ItemInfo.ItemString));
         if strmatch(ItemInfo.ItemString, "battlepet:") then
-          SpeciesID, Quality = strmatch(ItemInfo.ItemString, "battlepet:(%d+):%d+:(%d+):");
+          SpeciesID, Quality = strmatch(ItemInfo.ItemString, "battlepet:(%d+):%d*:(%d+):");
           Name, Texture = C_PetJournal.GetPetInfoBySpeciesID(tonumber(SpeciesID));
           MaxCount = 1;
           itemId = "82800";
@@ -3227,7 +3231,7 @@ function BaudManifestScrollBar_Update(Display)
           Display.RefreshFrame:Show();
         end
 
-        CooldownFrame_SetTimer(Button.Cooldown, GetItemCooldown(itemId));
+        CooldownFrame_Set(Button.Cooldown, GetItemCooldown(itemId));
 
         if not Access or not ItemInfo.Slot then
           Button.BlizItem:Hide();
@@ -3973,7 +3977,7 @@ end
 -------------------------------------
 
 function BaudManifestQualityDropDown_OnClick(self)
-  local DropDown = UIDROPDOWNMENU_OPEN_MENU;
+  local DropDown = UIDropDownMenu_GetCurrentDropDown();
   PlayerData.PutQuality[DropDown:GetID()] = self.value;
   UIDropDownMenu_SetSelectedValue(DropDown, self.value);
 end
@@ -3990,7 +3994,7 @@ end
 
 function BaudManifestAutoSellDropDown_OnClick(self)
   PlayerData.AutoSell = self.value;
-  UIDropDownMenu_SetSelectedValue(UIDROPDOWNMENU_OPEN_MENU, PlayerData.AutoSell);
+  UIDropDownMenu_SetSelectedValue(BaudManifestAutoSellDropDown, self.value);
 end
 
 -------------------------------------
@@ -4038,7 +4042,7 @@ function BaudManifestAutoSellItems()
         return;
       end
       for Key, Value in ipairs(AutoSell) do
-        if (Value.ItemString == Item) then
+        if (ItemsAreEquivalent(Value.ItemString, Item)) then
           TooltipMoney = nil;
           Tooltip:SetOwner(WorldFrame, "ANCHOR_NONE");
           Tooltip:SetBagItem(Bag, Slot);

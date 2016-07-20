@@ -6,6 +6,23 @@
 --    All Rights Reserved* - Detailed license information included with addon.    --
 -- ------------------------------------------------------------------------------ --
 
+if select(4, GetBuildInfo()) < 70000 then
+	-- don't support 6.x and prevent errors when the files load
+	message("This version of TradeSkillMaster_Crafting is for patch 7.0.3 and won't work on older patches.")
+	local TSM = select(2, ...)
+	local moduleTemplate = {}
+	moduleTemplate.NewModule = function(self, name)
+		self[name] = CopyTable(moduleTemplate)
+		return self[name]
+	end
+	moduleTemplate.GetModule = function(self, name)
+		return self[name]
+	end
+	for i, v in pairs(moduleTemplate) do
+		TSM[i] = v
+	end
+	return
+end
 -- register this file with Ace Libraries
 local TSM = select(2, ...)
 TSM = LibStub("AceAddon-3.0"):NewAddon(TSM, "TSM_Crafting", "AceEvent-3.0", "AceConsole-3.0")
@@ -13,11 +30,19 @@ local L = LibStub("AceLocale-3.0"):GetLocale("TradeSkillMaster_Crafting") -- loa
 
 TSM.MINING_SPELLID = 2575
 TSM.SMELTING_SPELLID = 2656
+TSM.MASS_MILLING_RECIPES = {
+	[190381] = "i:114931",  -- Frostweed
+	[190382] = "i:114931",  -- Fireweed
+	[190383] = "i:114931",  -- Gorgrond Flytrap
+	[190384] = "i:114931",  -- Starflower
+	[190385] = "i:114931",  -- Nargrand Arrowbloom
+	[190386] = "i:114931",  -- Talador Orchid
+}
 
 
 -- default values for the savedDB
 local settingsInfo = {
-	version = 1,
+	version = 5,
 	global = {
 		ignoreCDCraftCost = { type = "boolean", default = true, lastModifiedVersion = 1 },
 		questSmartCrafting = { type = "boolean", default = true, lastModifiedVersion = 1 },
@@ -37,12 +62,15 @@ local settingsInfo = {
 		ignoreIntermediate = { type = "boolean", default = false, lastModifiedVersion = 1 },
 		disableCheckBox = { type = "boolean", default = false, lastModifiedVersion = 1 },
 		ignoreDECheckBox = { type = "boolean", default = false, lastModifiedVersion = 1 },
+		evenStacks = { type = "boolean", default = false, lastModifiedVersion = 1 },
 		playerProfessions = { type = "table", default = {}, lastModifiedVersion = 1 },
 		professionScanCache = { type = "table", default = {}, lastModifiedVersion = 1 },
 		crafts = { type = "table", default = {}, lastModifiedVersion = 1 },
 		mats = { type = "table", default = {}, lastModifiedVersion = 1 },
-		gathering = { type = "table", default = { crafter = nil, professions = {}, neededMats = {}, shortItems = {}, availableMats = {}, extraMats = {}, selectedSources = {}, selectedSourceStatus = {}, gatheredMats = false, destroyingMats = {} }, lastModifiedVersion = 1 },
+		gathering = { type = "table", default = { crafter = nil, professions = {}, neededMats = {}, shortItems = {}, availableMats = {}, extraMats = {}, selectedSources = {}, selectedSourceStatus = {}, gatheredMats = false, destroyingMats = {}, sessionOptions = {} }, lastModifiedVersion = 2 },
 		queueStatus = { type = "table", default = { collapsed = {} }, lastModifiedVersion = 1 },
+		inkTrade = { type = "boolean", default = false, lastModifiedVersion = 3 },
+		buyAH = { type = "boolean", default = false, lastModifiedVersion = 5 },
 	},
 }
 TSM.defaultMatCostMethod = settingsInfo.global.defaultMatCostMethod.default
@@ -65,7 +93,7 @@ TSM.operationDefaults = operationDefaults
 function TSM:OnInitialize()
 	-- load settings
 	TSM.db = TSMAPI.Settings:Init("TradeSkillMaster_CraftingDB", settingsInfo)
-	
+
 	-- create shortcuts to TradeSkillMaster_Crafting's modules
 	for moduleName, module in pairs(TSM.modules) do
 		TSM[moduleName] = module
@@ -127,7 +155,7 @@ function TSM:OnInitialize()
 			sourceItem = itemString
 			rate = data.numResult / num
 		end
-		if numMats == 1 and not data.hasCD and not TSM.MassMillingRecipe[spell] then
+		if numMats == 1 and not data.hasCD and not TSM.MASS_MILLING_RECIPES[spell] then
 			TSMAPI.Conversions:Add(data.itemString, sourceItem, rate, "craft")
 		end
 	end
@@ -326,20 +354,21 @@ function TSM:RestockHelp(link)
 	print(L["This item will be added to the queue when you restock its group. If this isn't happening, make a post on the TSM forums with a screenshot of the item's tooltip, operation settings, and your general TSM_Crafting options."])
 end
 
-function TSM:GetSpellID(linkOrIndex)
-	if type(linkOrIndex) == "number" then
-		-- it's an index
-		linkOrIndex = GetTradeSkillRecipeLink(linkOrIndex)
-	end
-	return type(linkOrIndex) == "string" and tonumber(strmatch(linkOrIndex, ":(%d+)\124h")) or nil
+function TSM:GetSpellId(link)
+	TSMAPI:Assert(type(linkOrIndex) == "string")
+	return tonumber(strmatch(linkOrIndex, ":(%d+)\124h"))
 end
 
 function TSM:GetCurrentProfessionName()
-	local name = GetTradeSkillLine()
-	if IsNPCCrafting() and name ~= "UNKNOWN" then
-		return name .. L[" (Garrison)"]
+	local _, name = C_TradeSkillUI.GetTradeSkillLine()
+	if name and C_TradeSkillUI.IsNPCCrafting() then
+		return name .. " (" .. GARRISON_LOCATION_TOOLTIP..")"
 	end
-	return name
+	return name or "UNKNOWN"
+end
+
+function TSM:IsCurrentProfessionEnchanting()
+	return select(2, C_TradeSkillUI.GetTradeSkillLine()) == GetSpellInfo(7411)
 end
 
 function TSM:GetInventoryTotals()

@@ -969,6 +969,7 @@ function private.ImportGroup(importStr, groupPath)
 					-- validate this pet import
 					isValid = TSMAPI.Item:GetInfo(itemString) and true
 				elseif strmatch(itemString, "^i:") then
+					itemString = gsub(itemString, ":0:", "::") -- remove empty parts from before patch 7.0.x
 					isValid = TSMAPI.Item:ToItemString(itemString) == itemString
 				end
 				if isValid then

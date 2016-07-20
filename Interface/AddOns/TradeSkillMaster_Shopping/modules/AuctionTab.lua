@@ -54,6 +54,10 @@ function AuctionTab:Hide()
 end
 
 function AuctionTab:StartSearch(searchInfo)
+	-- fix a bug in Blizzard's code as of 7.0.x caused by auctions missing from the AH pages
+	if not ITEM_QUALITY_COLORS[-1] then
+		ITEM_QUALITY_COLORS[-1] = {r=0, b=0, g=0}
+	end
 	if private.searchInProgress then return end
 	private:ShowAHTab()
 	TSMAPI:Assert(TSMAPI.Auction:IsTabVisible("Shopping"))
@@ -746,6 +750,7 @@ function private:SetMaxQuantity(itemString, value)
 end
 
 function private.ValidateDatabaseRecord(record, auctionInfo)
+	if not record.itemString then return end
 	local maxPrice = nil
 	-- filter sniping results
 	if private.extraInfo.searchType == "sniper" then

@@ -20,6 +20,24 @@ local private = {filters={}}
 -- ============================================================================
 
 function Options:Load(container)
+	local tg = AceGUI:Create("TSMTabGroup")
+	tg:SetLayout("Fill")
+	tg:SetFullHeight(true)
+	tg:SetFullWidth(true)
+	tg:SetTabs({{value=1, text=L["General"]}, {value=2, text=L["Gathering"]}})
+	tg:SetCallback("OnGroupSelected", function(self, _, value)
+		self:ReleaseChildren()
+		if value == 1 then
+			private:DrawGeneralSettings(self)
+		elseif value == 2 then
+			private:DrawGatheringSettings(self)
+		end
+	end)
+	container:AddChild(tg)
+	tg:SelectTab(1)
+end
+
+function private:DrawGeneralSettings(container)
 	-- inventory tracking characters / guilds
 	local altCharacters, altGuilds = {}, {}
 	for name in pairs(TSMAPI.Player:GetCharacters()) do
@@ -213,6 +231,126 @@ function Options:Load(container)
 	TSMAPI.GUI:BuildOptions(container, page)
 end
 
+function private:DrawGatheringSettings(container)
+	local professions = {}
+	for player, info in pairs(TSM.db.factionrealm.playerProfessions) do
+		for profession, data in pairs(info) do
+			professions[profession] = professions[profession] or {}
+			tinsert(professions[profession], player)
+		end
+	end
+
+	local page = {
+		{
+			type = "ScrollFrame",
+			layout = "List",
+			children = {
+				{
+					type = "SimpleGroup",
+					layout = "Flow",
+					children = {
+						{
+							type = "Label",
+							text = L["You can set the global default gathering options here, some of these can be overriden per gathering session."],
+							relativeWidth = 1,
+						},
+						{
+							type = "HeadingLine",
+						},
+					},
+				},
+				{
+					type = "InlineGroup",
+					layout = "flow",
+					title = L["Auction House"],
+					children = {
+						{
+							type = "CheckBox",
+							label = L["Disable Crafting AH Search"],
+							relativeWidth = 0.33,
+							tooltip = L["Toggle to switch between Crafting and Normal searches at the Auction House. A Crafting search will look for any disenchantable / prospectable / millable / craftable items that will provide the target item wheras a normal search will look just for the target item"],
+							settingInfo = { TSM.db.factionrealm, "disableCheckBox" },
+						},
+						{
+							type = "CheckBox",
+							label = L["Disable DE Search"],
+							relativeWidth = 0.33,
+							tooltip = L["If enabled the crafting search at the Auction House will ignore Disenchantable Items."],
+							settingInfo = { TSM.db.factionrealm, "ignoreDECheckBox" },
+						},
+						{
+							type = "CheckBox",
+							label = L["Even Stacks Only"],
+							relativeWidth = 0.34,
+							tooltip = L["If enabled the crafting search will only search for multiples of 5."],
+							settingInfo = { TSM.db.factionrealm, "evenStacks" },
+						},
+						{
+							type = "CheckBox",
+							label = L["Always Buy from AH"],
+							relativeWidth = 0.34,
+							tooltip = L["If enabled, buying from AH will always be suggested even if you have enough via other sources. If disabled only short items will be searched for at the AH"],
+							settingInfo = { TSM.db.factionrealm, "buyAH" },
+						},
+					},
+				},
+				{
+					type = "Spacer"
+				},
+				{
+					type = "InlineGroup",
+					layout = "flow",
+					title = L["Characters"],
+					children = {
+						{
+							type = "CheckBox",
+							label = L["Ignore Alts"],
+							relativeWidth = 1,
+							tooltip = L["Toggle to ignore gathering from Alts and only gather from the crafter."],
+							settingInfo = { TSM.db.factionrealm, "ignoreAlts" },
+						},
+					},
+				},
+				{
+					type = "Spacer"
+				},
+				{
+					type = "InlineGroup",
+					layout = "flow",
+					title = L["Intermediate Crafting"],
+					children = {
+						{
+							type = "CheckBox",
+							label = L["Ignore Intermediate Crafting"],
+							relativeWidth = 1,
+							tooltip = L["Toggle to ignore intermediate crafting."],
+							settingInfo = { TSM.db.factionrealm, "ignoreIntermediate" },
+						},
+					},
+				},
+				{
+					type = "Spacer"
+				},
+				{
+					type = "InlineGroup",
+					layout = "flow",
+					title = L["Ink Trader"],
+					children = {
+						{
+							type = "CheckBox",
+							label = L["Trade Inks at the vendor"],
+							relativeWidth = 1,
+							tooltip = L["Toggle to suggest trading inks at the vendor."],
+							settingInfo = { TSM.db.factionrealm, "inkTrade" },
+						},
+					},
+				},
+			},
+		},
+	}
+
+	TSMAPI.GUI:BuildOptions(container, page)
+end
 
 
 -- ============================================================================
@@ -413,7 +551,7 @@ function Options:LoadCrafting(parent)
 	tg:SetLayout("Fill")
 	tg:SetFullHeight(true)
 	tg:SetFullWidth(true)
-	tg:SetTabs({ { value = 1, text = L["Crafts"] }, { value = 2, text = L["Materials"] } , { value = 3, text = L["Cooldowns"] } })
+	tg:SetTabs({ { value = 1, text = L["Crafts"] }, { value = 2, text = L["Materials"] } , { value = 3, text = L["Cooldowns"] }})
 	tg:SetCallback("OnGroupSelected", function(self, _, value)
 		tg:ReleaseChildren()
 		if Options.OpenWindow then Options.OpenWindow:Hide() end

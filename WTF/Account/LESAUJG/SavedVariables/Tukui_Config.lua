@@ -87,6 +87,7 @@ TukuiConfigShared = {
 		},
 		["Bags"] = {
 			["Enable"] = false,
+			["BagFilter"] = true,
 		},
 	},
 }

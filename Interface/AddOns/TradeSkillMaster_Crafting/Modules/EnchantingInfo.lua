@@ -9,15 +9,14 @@
 -- load the parent file (TSM) into a local variable
 local TSM = select(2, ...)
 
-TSM.enchantingName = GetSpellInfo(7411)
 TSM.VELLUM_ITEM_STRING = "i:38682"
 
 -- looks up the itemString of the scroll that the enchant makes
 -- index = spellID of the enchant
 -- value = itemString of scroll
 TSM.enchantingItemIDs = {
-	-- Scraped from Wowhead using the following javascript:
-	-- for (i=0; i<listviewitems.length; i++) console.log("["+listviewitems[i].sourcemore[0].ti+"] = \"i:"+listviewitems[i].id+"\", -- "+listviewitems[i].name.substr(1));
+	-- Scraped from Wowhead (http://www.wowhead.com/items/consumables/item-enhancements-permanent?filter=86;4;0) using the following javascript:
+	-- for (i=0; i<listviewitems.length; i++) console.log("["+listviewitems[i].sourcemore[0].ti+"] = \"i:"+listviewitems[i].id+"\",  -- "+listviewitems[i].name.substr(1));
 	[158914] = "i:110638",  -- Enchant Ring - Gift of Critical Strike
 	[158915] = "i:110639",  -- Enchant Ring - Gift of Haste
 	[158916] = "i:110640",  -- Enchant Ring - Gift of Mastery
@@ -371,4 +370,9 @@ TSM.enchantingItemIDs = {
 	[44506] = "i:38960",  -- Enchant Gloves - Gatherer
 	[63746] = "i:45628",  -- Enchant Boots - Lesser Accuracy
 	[71692] = "i:50816",  -- Enchant Gloves - Angler
+	[190954] = "i:128554",  -- Enchant Shoulder - Boon of the Scavenger
+	[190988] = "i:128558",  -- Enchant Gloves - Legion Herbalism
+	[190989] = "i:128559",  -- Enchant Gloves - Legion Mining
+	[190990] = "i:128560",  -- Enchant Gloves - Legion Skinning
+	[190991] = "i:128561",  -- Enchant Gloves - Legion Surveying
 }

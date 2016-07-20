@@ -4,7 +4,7 @@
 
   Information about a mount from the mount journal.
 
-  Copyright 2011-2015 Mike Battersby
+  Copyright 2011-2016 Mike Battersby
 
 ----------------------------------------------------------------------------]]--
 
@@ -20,27 +20,27 @@ LM_Journal.__index = LM_Journal
 --  [7] isFavorite,
 --  [8] isFactionSpecific,
 --  [9] faction,
--- [10] hideOnChar,
--- [11] isCollected = C_MountJournal.GetMountInfo(index)
+-- [10] isFiltered,
+-- [11] isCollected,
+-- [12] mountID = C_MountJournal.GetMountInfoByID(mountID)
 
---  [1]creatureDisplayID,
---  [2]descriptionText,
---  [3]sourceText,
---  [4]isSelfMount,
---  [5]mountType = C_MountJournal.GetMountInfoExtra(index)
+--  [1] creatureDisplayID,
+--  [2] descriptionText,
+--  [3] sourceText,
+--  [4] isSelfMount,
+--  [5] mountType = C_MountJournal.GetMountInfoExtraByID(mountID)
 
-function LM_Journal:Get(mountIndex)
-    local name, spellId, icon, _, _, _, _, _, faction, hideOnChar, isCollected = C_MountJournal.GetMountInfo(mountIndex)
-    local modelId, _, _, isSelfMount, mountType = C_MountJournal.GetMountInfoExtra(mountIndex)
+function LM_Journal:Get(id)
+    local name, spellID, icon, _, _, _, _, _, faction, isFiltered, isCollected, mountID = C_MountJournal.GetMountInfoByID(id)
+    local modelID, _, _, isSelfMount, mountType = C_MountJournal.GetMountInfoExtraByID(mountID)
 
     if not name then
-        LM_Debug(format("LM_Mount: Failed GetMountInfo #%d (of %d)",
-                        mountIndex, C_MountJournal:GetNumMounts()))
+        LM_Debug(format("LM_Mount: Failed GetMountInfo for ID = #%d", id))
         return
     end
 
     -- Exclude mounts not collected and ones Blizzard decide are hidden
-    if hideOnChar or not isCollected then return end
+    if isFiltered or not isCollected then return end
 
     if self.cacheByName[name] then
         return self.cacheByName[name]
@@ -49,9 +49,10 @@ function LM_Journal:Get(mountIndex)
     local m = setmetatable(LM_Mount:new(), LM_Journal)
 
     m.journalIndex  = mountIndex
-    m.modelId       = modelId
+    m.modelID       = modelID
     m.name          = name
-    m.spellId       = spellId
+    m.spellID       = spellID
+    m.mountID       = mountID
     m.icon          = icon
     m.isSelfMount   = isSelfMount
     m.mountType     = mountType
@@ -67,7 +68,7 @@ function LM_Journal:Get(mountIndex)
     if m:Type() == 230 then -- ground mount
         m.flags = bit.bor(LM_FLAG_BIT_RUN)
     elseif m:Type() == 231 then -- riding/sea turtle
-        m.flags = bit.bor(LM_FLAG_BIT_WALK)
+        m.flags = 0
     elseif m:Type() == 232 then -- Vashj'ir Seahorse
         m.flags = bit.bor(LM_FLAG_BIT_VASHJIR)
     elseif m:Type() == 241 then -- AQ-only bugs
@@ -87,19 +88,19 @@ function LM_Journal:Get(mountIndex)
     end
     -- LM_Debug("LM_Mount flags for "..m.name.." are ".. m.flags)
 
-    local spellName, _, _, _, _, _, castTime = GetSpellInfo(m.spellId)
+    local spellName, _, _, _, _, _, castTime = GetSpellInfo(m.spellID)
     m.spellName = spellName
     m.castTime = castTime
 
     self.cacheByName[m:Name()] = m
-    self.cacheBySpellId[m:SpellId()] = m
+    self.cacheBySpellID[m:SpellID()] = m
 
     return m
 end
 
 function LM_Journal:IsUsable()
-    local usable = select(5, C_MountJournal.GetMountInfo(self:JournalIndex()))
+    local usable = select(5, C_MountJournal.GetMountInfoByID(self:MountID()))
     if not usable then return end
-    if not IsUsableSpell(self:SpellId()) then return end
+    if not IsUsableSpell(self:SpellID()) then return end
     return LM_Mount.IsUsable(self)
 end

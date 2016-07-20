@@ -12,6 +12,44 @@ local L = LibStub("AceLocale-3.0"):GetLocale("TradeSkillMaster_Crafting") -- loa
 local private = { priceTextCache = { lastClear = 0 }, scanThreadId = nil, scanThreadCallback = nil, updateThreadId = nil }
 local MAX_SCAN_YIELDS = 20
 
+-- lookup table for garrion profession building info
+-- index = buildingID
+-- value = profession spell id (for looking up localized name)
+private.GARRISON_PROFESSION_BUILDINGS = {
+	-- Alchemy
+	[76] = 2259,
+	[119] = 2259,
+	[120] = 2259,
+	-- Enchanting
+	[93] = 7411,
+	[125] = 7411,
+	[126] = 7411,
+	-- Engineering
+	[91] = 4036,
+	[123] = 4036,
+	[124] = 4036,
+	-- Jewelcrafting
+	[96] = 25229,
+	[131] = 25229,
+	[132] = 25229,
+	-- Inscription
+	[95] = 45357,
+	[129] = 45357,
+	[130] = 45357,
+	-- Tailoring
+	[94] = 3908,
+	[127] = 3908,
+	[128] = 3908,
+	-- Blacksmithing
+	[60] = 2018,
+	[117] = 2018,
+	[118] = 2018,
+	-- Leatherworking
+	[90] = 2108,
+	[121] = 2108,
+	[122] = 2108,
+}
+
 
 function TradeSkillScanner:OnEnable()
 	private.updateThreadId = TSMAPI.Threading:Start(private.UpdatePlayerTradeSkillsThread, 0.4, function() private.updateThreadId = nil end)
@@ -38,21 +76,23 @@ end
 function private.ScanCurrentProfessionThread(self, args)
 	self:SetThreadName("CRAFTING_PROFESSION_SCAN")
 	local professionName, playerName, isLinked = unpack(args)
-	local numTradeSkills = GetNumTradeSkills()
+	local numTradeSkills = #C_TradeSkillUI.GetFilteredRecipeIDs()
 
 	-- whenever we yield there's a chance that the profession may change
 	-- set a yield invariant so that the thread will be killed if it does
-	self:SetYieldInvariant(function() return IsTradeSkillLinked() == isLinked and TSM:GetCurrentProfessionName() == professionName and GetNumTradeSkills() == numTradeSkills end)
+	self:SetYieldInvariant(function()
+		return C_TradeSkillUI.IsTradeSkillLinked() == isLinked and TSM:GetCurrentProfessionName() == professionName and #C_TradeSkillUI.GetFilteredRecipeIDs() == numTradeSkills
+	end)
 	self:Yield(true) -- do an initial check
 
 	if not isLinked then
 		 -- check if this player (probably) doesn't have any professions in which case don't scan any others to avoid errors
 		if not TSM.db.factionrealm.playerProfessions[playerName] then return end
 		-- if it's a garrison profession, then add the profession against this player
-		if IsNPCCrafting() then
+		if C_TradeSkillUI.IsNPCCrafting() then
 			-- make sure it's not Ahm, which we don't want to scan
-			for i = 1, GetNumTradeSkills() do
-				local itemLink = GetTradeSkillItemLink(i)
+			for _, spellId in ipairs(C_TradeSkillUI.GetFilteredRecipeIDs()) do
+				local itemLink = C_TradeSkillUI.GetRecipeItemLink(spellId)
 				if itemLink and strmatch(itemLink, "enchant:177355") then
 					if private.scanThreadCallback then
 						private.scanThreadCallback()
@@ -77,14 +117,14 @@ function private.ScanCurrentProfessionThread(self, args)
 			TSM.db.factionrealm.playerProfessions[playerName][professionName] = info
 			TSMAPI.Sync:KeyUpdated(TSM.db.factionrealm.playerProfessions, playerName)
 		elseif TSM.db.factionrealm.playerProfessions[playerName][professionName] then
-			TSM.db.factionrealm.playerProfessions[playerName][professionName].link = GetTradeSkillListLink()
+			TSM.db.factionrealm.playerProfessions[playerName][professionName].link = C_TradeSkillUI.GetTradeSkillListLink()
 			TSMAPI.Sync:KeyUpdated(TSM.db.factionrealm.playerProfessions, playerName)
 		end
 	end
 
 	-- check if we've scanned this profession successfully within the past 2 hours and it hasn't changed
 	local cacheInfo = TSM.db.factionrealm.professionScanCache[playerName .. professionName]
-	if (not IsNPCCrafting()) and cacheInfo and cacheInfo.numTradeSkills == numTradeSkills and cacheInfo.scanTime > time() - 2 * 60 * 60 then
+	if (not C_TradeSkillUI.IsNPCCrafting()) and cacheInfo and cacheInfo.numTradeSkills == numTradeSkills and cacheInfo.scanTime > time() - 2 * 60 * 60 then
 		if private.scanThreadCallback then
 			private.scanThreadCallback()
 		end
@@ -96,9 +136,9 @@ function private.ScanCurrentProfessionThread(self, args)
 	local numYields = 0
 	while true do
 		local numMissing = 0
-		for index = 1, numTradeSkills do
-			professionCrafts[index] = professionCrafts[index] or private:GetCraftInfo(index)
-			if not professionCrafts[index] then
+		for _, spellId in ipairs(C_TradeSkillUI.GetFilteredRecipeIDs()) do
+			professionCrafts[spellId] = professionCrafts[spellId] or private:GetCraftInfo(spellId)
+			if not professionCrafts[spellId] then
 				numMissing = numMissing + 1
 			end
 			self:Yield()
@@ -106,7 +146,6 @@ function private.ScanCurrentProfessionThread(self, args)
 		if numMissing == 0 then
 			break
 		elseif numYields >= MAX_SCAN_YIELDS then
-			TSM:Print(L["Crafting failed to scan your profession. Please close and re-open it to to allow Crafting to scan and provide pricing info for this profession."])
 			return
 		end
 		numYields = numYields + 1
@@ -115,67 +154,71 @@ function private.ScanCurrentProfessionThread(self, args)
 
 	-- scan the profession
 	local scanResult = { crafts = {}, mats = {} }
-	for index, data in ipairs(professionCrafts) do
+	local isEnchanting = TSM:IsCurrentProfessionEnchanting()
+	if isEnchanting then
+		self:WaitForItemInfo(TSM.VELLUM_ITEM_STRING)
+	end
+	for spellId, data in pairs(professionCrafts) do
 		TSMAPI:Assert(data, "Invalid profession spell")
 		if type(data) == "table" then
 			-- it should be a valid craft
-			local itemLink, spellLink, itemString, spellID, craftName, mats = unpack(data)
-			scanResult.crafts[spellID] = { name = craftName, itemString = itemString, mats = {}, profession = professionName }
-			local lNum, hNum = GetTradeSkillNumMade(index)
-			--workaround for incorrect values returned for Temporal Crystal
-			if spellID == 169092 and itemString == "i:113588" then
-				lNum, hNum = 1,1
+			local itemLink, spellLink, itemString, spellId, craftName, mats = unpack(data)
+			scanResult.crafts[spellId] = { name = craftName, itemString = itemString, mats = {}, profession = professionName }
+			local lNum, hNum = C_TradeSkillUI.GetRecipeNumItemsProduced(spellId)
+			-- workaround for incorrect values returned for Temporal Crystal
+			if spellId == 169092 and itemString == "i:113588" then
+				lNum, hNum = 1, 1
 			end
-			--workaround for incorrect values returned for new mass milling recipes
-			if TSM.MassMillingRecipe[spellID] then
-				lNum, hNum = 8,8.8
+			-- workaround for incorrect values returned for new mass milling recipes
+			if TSM.MASS_MILLING_RECIPES[spellId] then
+				lNum, hNum = 8, 8.8
 			end
-			scanResult.crafts[spellID].numResult = floor(((lNum or 1) + (hNum or 1)) / 2)
-			scanResult.crafts[spellID].hasCD = select(2, GetTradeSkillCooldown(index)) and true or nil
+			scanResult.crafts[spellId].numResult = floor(((lNum or 1) + (hNum or 1)) / 2)
+			scanResult.crafts[spellId].hasCD = select(2, C_TradeSkillUI.GetRecipeCooldown(spellId)) and true or nil
 
 			-- add the mat info to this craft
 			for matItemString, matData in pairs(mats) do
-				scanResult.crafts[spellID].mats[matItemString] = matData.quantity
+				scanResult.crafts[spellId].mats[matItemString] = matData.quantity
 				scanResult.mats[matItemString] = { name = matData.name }
 			end
 
 			-- if this is an enchant, add a vellum to the list of mats
-			if (professionName == TSM.enchantingName or professionName == TSM.enchantingName .. " (Garrison)") and strfind(itemLink, "enchant:") then
-				scanResult.crafts[spellID].mats[TSM.VELLUM_ITEM_STRING] = 1
-				local name = TSMAPI.Item:GetInfo(TSM.VELLUM_ITEM_STRING) or (GetLocale() == "enUS" and "Enchanting Vellum") or nil
+			if isEnchanting and strfind(itemLink, "enchant:") then
+				scanResult.crafts[spellId].mats[TSM.VELLUM_ITEM_STRING] = 1
+				local name = TSMAPI.Item:GetInfo(TSM.VELLUM_ITEM_STRING)
 				scanResult.mats[TSM.VELLUM_ITEM_STRING] = scanResult.mats[TSM.VELLUM_ITEM_STRING] or {}
 				scanResult.mats[TSM.VELLUM_ITEM_STRING].name = scanResult.mats[TSM.VELLUM_ITEM_STRING].name or name
-				scanResult.crafts[spellID].numResult = 1
+				scanResult.crafts[spellId].numResult = 1
 			end
 		end
 		self:Yield()
 	end
 
 	-- clear out old data for this profession
-	for spellID, data in pairs(TSM.db.factionrealm.crafts) do
-		if data.profession == professionName and not scanResult.crafts[spellID] then
+	for spellId, data in pairs(TSM.db.factionrealm.crafts) do
+		if data.profession == professionName and not scanResult.crafts[spellId] then
 			data.players[playerName] = nil
 			if not next(data.players) then
-				TSM.db.factionrealm.crafts[spellID] = nil
+				TSM.db.factionrealm.crafts[spellId] = nil
 			end
 		end
 		self:Yield()
 	end
 
 	-- merge profession scan data into database
-	for spellID, data in pairs(scanResult.crafts) do
-		if TSM.db.factionrealm.crafts[spellID] then
-			TSM.db.factionrealm.crafts[spellID].profession = data.profession
-			TSM.db.factionrealm.crafts[spellID].name = data.name
-			TSM.db.factionrealm.crafts[spellID].itemString = data.itemString
-			TSM.db.factionrealm.crafts[spellID].mats = data.mats
-			TSM.db.factionrealm.crafts[spellID].numResult = data.numResult
+	for spellId, data in pairs(scanResult.crafts) do
+		if TSM.db.factionrealm.crafts[spellId] then
+			TSM.db.factionrealm.crafts[spellId].profession = data.profession
+			TSM.db.factionrealm.crafts[spellId].name = data.name
+			TSM.db.factionrealm.crafts[spellId].itemString = data.itemString
+			TSM.db.factionrealm.crafts[spellId].mats = data.mats
+			TSM.db.factionrealm.crafts[spellId].numResult = data.numResult
 		else
 			data.players = {}
 			data.queued = 0
-			TSM.db.factionrealm.crafts[spellID] = data
+			TSM.db.factionrealm.crafts[spellId] = data
 		end
-		TSM.db.factionrealm.crafts[spellID].players[playerName] = true
+		TSM.db.factionrealm.crafts[spellId].players[playerName] = true
 		self:Yield()
 	end
 	local matsWithLoop = {}
@@ -235,35 +278,35 @@ function private.ScanCurrentProfessionThread(self, args)
 	end
 end
 
-function private:GetCraftInfo(index)
-	local itemLink = GetTradeSkillItemLink(index)
-	local spellLink = GetTradeSkillRecipeLink(index)
-	if not itemLink then return "header" end
+function private:GetCraftInfo(spellId)
+	local itemLink = C_TradeSkillUI.GetRecipeItemLink(spellId)
+	local spellLink = C_TradeSkillUI.GetRecipeLink(spellId)
+	TSMAPI:Assert(itemLink and spellLink)
 
-	local itemString, spellID, craftName
+	local itemString, craftName
 	TSMAPI:Assert(spellLink and strfind(spellLink, "enchant:"), "Invalid profession spell.")
 	if strfind(itemLink, "enchant:") then
 		-- result of craft is enchant
-		spellID = TSM:GetSpellID(spellLink)
-		itemString = TSM.enchantingItemIDs[spellID] or TSM.MassMillingRecipe[spellID]
-		craftName = GetSpellInfo(spellID)
-		-- check if this craft does not result in an item
-		if not itemString then return "skip" end
+		itemString = TSM.enchantingItemIDs[spellId] or TSM.MASS_MILLING_RECIPES[spellId]
+		craftName = GetSpellInfo(spellId)
+		if not itemString then
+			-- this craft does not result in an item but we need to return something that evalulates to true
+			return "skip"
+		end
 	elseif strfind(itemLink, "item:") then
 		-- result of craft is item
 		itemString = TSMAPI.Item:ToItemString(itemLink)
 		craftName = TSMAPI.Item:GetInfo(itemLink)
-		spellID = TSM:GetSpellID(spellLink)
 	else
 		TSMAPI:Assert(false, "Invalid profession spell.")
 	end
-	if not itemString or not spellID then return end
+	if not itemString then return end
 
 	local mats = {}
 	local haveInvalidMats = false
-	for i = 1, GetTradeSkillNumReagents(index) do
-		local name, _, quantity = GetTradeSkillReagentInfo(index, i)
-		local matItemString = TSMAPI.Item:ToItemString(GetTradeSkillReagentItemLink(index, i))
+	for i = 1, C_TradeSkillUI.GetRecipeNumReagents(spellId) do
+		local name, _, quantity = C_TradeSkillUI.GetRecipeReagentInfo(spellId, i)
+		local matItemString = TSMAPI.Item:ToItemString(C_TradeSkillUI.GetRecipeReagentItemLink(spellId, i))
 		if name and matItemString and quantity then
 			mats[matItemString] = { quantity = quantity, name = name }
 		else
@@ -273,7 +316,7 @@ function private:GetCraftInfo(index)
 	end
 	if haveInvalidMats then return end
 
-	return { itemLink, spellLink, itemString, spellID, craftName, mats }
+	return { itemLink, spellLink, itemString, spellId, craftName, mats }
 end
 
 
@@ -291,53 +334,15 @@ function TradeSkillScanner:GetProfessionList()
 	return list
 end
 
-
--- lookup table for garrion profession building info
--- index = buildingID
--- value = profession spell id (for looking up localized name)
-local GARRISON_PROFESSION_BUILDINGS = {
-	-- Alchemy
-	[76] = 2259,
-	[119] = 2259,
-	[120] = 2259,
-	-- Enchanting
-	[93] = 7411,
-	[125] = 7411,
-	[126] = 7411,
-	-- Engineering
-	[91] = 4036,
-	[123] = 4036,
-	[124] = 4036,
-	-- Jewelcrafting
-	[96] = 25229,
-	[131] = 25229,
-	[132] = 25229,
-	-- Inscription
-	[95] = 45357,
-	[129] = 45357,
-	[130] = 45357,
-	-- Tailoring
-	[94] = 3908,
-	[127] = 3908,
-	[128] = 3908,
-	-- Blacksmithing
-	[60] = 2018,
-	[117] = 2018,
-	[118] = 2018,
-	-- Leatherworking
-	[90] = 2108,
-	[121] = 2108,
-	[122] = 2108,
-}
 function private:GetGarrisonBuildingID()
 	local playerGarrisonBuildings = {}
-	for _, buildingInfo in pairs(C_Garrison.GetBuildings()) do
+	for _, buildingInfo in pairs(C_Garrison.GetBuildings(LE_GARRISON_TYPE_6_0)) do
 		playerGarrisonBuildings[buildingInfo.buildingID] = true
 	end
-	local professionName = GetTradeSkillLine() -- just want the raw name
-	for buildingID, spellID in pairs(GARRISON_PROFESSION_BUILDINGS) do
-		if GetSpellInfo(spellID) == professionName and playerGarrisonBuildings[buildingID] then
-			return buildingID
+	local professionName = select(2, C_TradeSkillUI.GetTradeSkillLine()) -- just want the raw name
+	for buildingId, spellId in pairs(private.GARRISON_PROFESSION_BUILDINGS) do
+		if GetSpellInfo(spellId) == professionName and playerGarrisonBuildings[buildingId] then
+			return buildingId
 		end
 	end
 end
@@ -381,7 +386,7 @@ function private.UpdatePlayerTradeSkillsThread(self)
 		-- wait to make sure the garrison buildings API is giving good data
 		local garrisonBuildings = nil
 		for i=1, 1000 do
-			garrisonBuildings = self:WaitForFunction(C_Garrison.GetBuildings)
+			garrisonBuildings = self:WaitForFunction(function() return C_Garrison.GetBuildings(LE_GARRISON_TYPE_6_0) end)
 			if #garrisonBuildings > 0 then
 				break
 			elseif #garrisonBuildings == 0 then
@@ -402,7 +407,7 @@ function private.UpdatePlayerTradeSkillsThread(self)
 
 	-- tidy up crafts which are no longer known
 	local craftsToRemove = {}
-	for spellID, data in pairs(TSM.db.factionrealm.crafts) do
+	for spellId, data in pairs(TSM.db.factionrealm.crafts) do
 		local playersToRemove = {}
 		for player in pairs(data.players) do
 			-- check if the player still exists and still has this profession
@@ -414,12 +419,12 @@ function private.UpdatePlayerTradeSkillsThread(self)
 			data.players[player] = nil
 		end
 		if not next(data.players) then
-			tinsert(craftsToRemove, spellID)
+			tinsert(craftsToRemove, spellId)
 		end
 		self:Yield()
 	end
-	for _, spellID in ipairs(craftsToRemove) do
-		TSM.db.factionrealm.crafts[spellID] = nil
+	for _, spellId in ipairs(craftsToRemove) do
+		TSM.db.factionrealm.crafts[spellId] = nil
 	end
 end
 
@@ -430,7 +435,7 @@ function TradeSkillScanner:CreatePresetGroups()
 	local groupInfo = {}
 	local craftsGroupPath = TSMAPI.Groups:JoinPath("Professions", professionName, "Crafts")
 	local matsGroupPath = TSMAPI.Groups:JoinPath("Professions", professionName, "Materials")
-	for spellID, data in pairs(TSM.db.factionrealm.crafts) do
+	for _, data in pairs(TSM.db.factionrealm.crafts) do
 		if data.profession == professionName and data.players[playerName] then
 			-- prefer items being materials over crafts
 			groupInfo[data.itemString] = groupInfo[data.itemString] or craftsGroupPath
@@ -443,12 +448,3 @@ function TradeSkillScanner:CreatePresetGroups()
 	TSM:Printf(L["Created profession group for %s."], professionName)
 	TSMAPI.Groups:CreatePreset(groupInfo)
 end
-
-TSM.MassMillingRecipe = {
-	[190381] = "i:114931",  -- Frostweed
-	[190382] = "i:114931",  -- Fireweed
-	[190383] = "i:114931",  -- Gorgrond Flytrap
-	[190384] = "i:114931",  -- Starflower
-	[190385] = "i:114931",  -- Nargrand Arrowbloom
-	[190386] = "i:114931",  -- Talador Orchid
-	}

@@ -39,7 +39,7 @@ local settingsInfo = {
 function TSM:OnInitialize()
 	-- load settings
 	TSM.db = TSMAPI.Settings:Init("TradeSkillMaster_DestroyingDB", settingsInfo)
-	
+
 	-- create shortcuts to all the modules
 	for moduleName, module in pairs(TSM.modules) do
 		TSM[moduleName] = module
@@ -83,6 +83,15 @@ function TSM:RegisterModule()
 end
 
 -- determines if an item is millable or prospectable
+local TRADE_GOODS, METAL_AND_STONE, HERB = nil, nil, nil
+if select(4, GetBuildInfo()) >= 70000 then
+	TRADE_GOODS = GetItemClassInfo(LE_ITEM_CLASS_TRADEGOODS)
+	METAL_AND_STONE = GetItemSubClassInfo(LE_ITEM_CLASS_TRADEGOODS, 7)
+	HERB = GetItemSubClassInfo(LE_ITEM_CLASS_TRADEGOODS, 9)
+else
+	TRADE_GOODS = select(6, GetAuctionItemClasses())
+	METAL_AND_STONE, HERB = TSMAPI.Util:Select({ 4, 6 }, GetAuctionItemSubClasses(6))
+end
 local destroyCache = {}
 function TSM:IsDestroyable(itemString)
 	if destroyCache[itemString] then
@@ -96,8 +105,6 @@ function TSM:IsDestroyable(itemString)
 		return unpack(destroyCache[itemString])
 	end
 
-	local TRADE_GOODS = select(6, GetAuctionItemClasses())
-	local METAL_AND_STONE, HERB = TSMAPI.Util:Select({ 4, 6 }, GetAuctionItemSubClasses(6))
 	if iType ~= TRADE_GOODS or (iSubType ~= METAL_AND_STONE and iSubType ~= HERB) then
 		destroyCache[itemString] = {}
 		return unpack(destroyCache[itemString])

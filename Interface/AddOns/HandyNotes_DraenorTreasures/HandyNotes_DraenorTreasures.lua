@@ -1751,6 +1751,8 @@ end
 
 function DraenorTreasures:LoginMessage()
 	if isHN_LRTloaded == false then
-	 print("|cff00E5EE<|cffFFC125HN:DraenorTreasures|cff00E5EE>|cff00ff00In preparation for the legion release the treasures and rares for the |cffA330C9Demon Hunter|cff00ff00 starting experience have been added to this addon. These together with all the treasures and rares in the new legion zones can be found in the new addon |cffff0000Handynotes_LegionRares&Treasures |cff00ff00available through Curse.com")
-	end --print("|cff00ccffhttp://www.curse.com/addons/wow/handynotes_legionrarestreasures")
+	print("|cff00E5EE<|cffFFC125HN:DraenorTreasures|cff00E5EE>|cff00ff00In preparation for the legion release the treasures and rares for the |cffA330C9Demon Hunter|cff00ff00 starting experience have been temporarily added to this addon.")
+	--print("|cff00ff00These together with all the treasures and rares in the new legion zones can be found in the new addon |cffff0000Handynotes_LegionRares&Treasures |cff00ff00available through Curse.com")
+	--print("|cff00ccffhttp://www.curse.com/addons/wow/handynotes_legionrarestreasures")
+	end 
 end

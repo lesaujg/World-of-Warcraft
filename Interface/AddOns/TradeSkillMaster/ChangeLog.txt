@@ -1,3 +1,27 @@
+v3.4.6
+*Fixed issue affecting items with bonus ids.
+
+v3.4.5
+*Fixed error with default mail frame and other mail addons.
+
+v3.4.4
+*Fixed bug with other addon errors showing up as a TSM error.
+*Fixed error when return mail.
+*Fixed bug with imports containing items with bonus ids.
+
+v3.4.3
+*Fixed issue with inventory data not being reliable due to bugs on Blizzard's end by adding some workarounds.
+
+v3.4.2
+*Fixed another bug with the mail inbox.
+
+v3.4.1
+*Fixed some bugs with the mail inbox.
+
+v3.4
+*Updated for patch 7.0.3.
+*Fixed bug with moving non-group items.
+
 v3.3.19
 *Fixed error when storing operations globally.
 

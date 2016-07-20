@@ -10,9 +10,7 @@ local TSM = select(2, ...)
 local TradeSkill = TSM:GetModule("TradeSkill")
 local Queue = TradeSkill:NewModule("Queue")
 local L = LibStub("AceLocale-3.0"):GetLocale("TradeSkillMaster_Crafting") -- loads the localization table
-local private = {craftNextInfo=nil}
-
-
+local private = { craftNextInfo = nil }
 
 -- ============================================================================
 -- Methods to Add to the TradeSkill Module
@@ -24,61 +22,61 @@ function Queue:GetFrameInfo()
 		type = "Frame",
 		key = "queue",
 		hidden = true,
-		size = {300, 0},
-		points = {{"TOPLEFT", BFC.PARENT, "TOPRIGHT", 2, 0}, {"BOTTOMLEFT", BFC.PARENT, "BOTTOMRIGHT", 2, 0}},
-		scripts = {"OnMouseDown", "OnMouseUp", "OnShow"},
+		size = { 300, 0 },
+		points = { { "TOPLEFT", BFC.PARENT, "TOPRIGHT", 2, 0 }, { "BOTTOMLEFT", BFC.PARENT, "BOTTOMRIGHT", 2, 0 } },
+		scripts = { "OnMouseDown", "OnMouseUp", "OnShow" },
 		children = {
 			{
 				type = "ScrollingTableFrame",
 				key = "craftST",
 				headFontSize = 14,
-				stCols = {{name = L["Craft Queue"], width = 1}},
+				stCols = { { name = L["Craft Queue"], width = 1 } },
 				stDisableSelection = true,
-				points = {{"TOPLEFT", 5, -5}, {"BOTTOMRIGHT", BFC.PARENT, "RIGHT", -5, 5}},
-				scripts = {"OnEnter", "OnLeave", "OnClick"},
+				points = { { "TOPLEFT", 5, -5 }, { "BOTTOMRIGHT", BFC.PARENT, "RIGHT", -5, 5 } },
+				scripts = { "OnEnter", "OnLeave", "OnClick" },
 			},
 			{
 				type = "HLine",
 				offset = 0,
-				size = {0, 2},
-				points = {{"LEFT"}, {"RIGHT"}},
+				size = { 0, 2 },
+				points = { { "LEFT" }, { "RIGHT" } },
 			},
 			{
 				type = "ScrollingTableFrame",
 				key = "matST",
 				headFontSize = 12,
-				stCols = {{name = L["Material Name"], width = 0.49}, {name = L["Need"], width = 0.115}, {name = L["Total"], width = 0.115}, {name = L["Cost"], width = 0.28}},
+				stCols = { { name = L["Material Name"], width = 0.49 }, { name = L["Need"], width = 0.115 }, { name = L["Total"], width = 0.115 }, { name = L["Cost"], width = 0.28 } },
 				stDisableSelection = true,
-				points = {{"TOPLEFT", BFC.PARENT, "LEFT", 5, -5}, {"BOTTOMRIGHT", -5, 68}},
-				scripts = {"OnEnter", "OnLeave", "OnClick"},
+				points = { { "TOPLEFT", BFC.PARENT, "LEFT", 5, -5 }, { "BOTTOMRIGHT", -5, 68 } },
+				scripts = { "OnEnter", "OnLeave", "OnClick" },
 			},
 			{
 				type = "HLine",
 				offset = 0,
-				size = {0, 2},
-				points = {{"BOTTOMLEFT", 0, 63}, {"BOTTOMRIGHT", 0, 63}},
+				size = { 0, 2 },
+				points = { { "BOTTOMLEFT", 0, 63 }, { "BOTTOMRIGHT", 0, 63 } },
 			},
 			{
 				type = "Text",
 				key = "profitLabel",
 				textSize = "medium",
-				justify = {"LEFT", "CENTER"},
-				points = {{"TOPLEFT", "matSTContainer", "BOTTOMLEFT", 0, -7}, {"TOPRIGHT", "matSTContainer", "BOTTOMRIGHT", 0, -7}},
+				justify = { "LEFT", "CENTER" },
+				points = { { "TOPLEFT", "matSTContainer", "BOTTOMLEFT", 0, -7 }, { "TOPRIGHT", "matSTContainer", "BOTTOMRIGHT", 0, -7 } },
 			},
 			{
 				type = "HLine",
 				offset = 0,
-				size = {0, 2},
-				points = {{"BOTTOMLEFT", 0, 28}, {"BOTTOMRIGHT", 0, 28}},
+				size = { 0, 2 },
+				points = { { "BOTTOMLEFT", 0, 28 }, { "BOTTOMRIGHT", 0, 28 } },
 			},
 			{
 				type = "Button",
 				key = "clearBtn",
 				text = L["Clear Queue"],
 				textHeight = 14,
-				size = {120, 20},
-				points = {{"BOTTOMLEFT", 5, 5}},
-				scripts = {"OnClick"},
+				size = { 120, 20 },
+				points = { { "BOTTOMLEFT", 5, 5 } },
+				scripts = { "OnClick" },
 			},
 			{
 				type = "Button",
@@ -87,9 +85,9 @@ function Queue:GetFrameInfo()
 				isSecure = true,
 				text = L["Craft Next"],
 				textHeight = 18,
-				size = {0, 20},
-				points = {{"BOTTOMLEFT", BFC.PREV, "BOTTOMRIGHT", 5, 0}, {"BOTTOMRIGHT", -5, 5}},
-				scripts = {"OnClick", "OnUpdate"},
+				size = { 0, 20 },
+				points = { { "BOTTOMLEFT", BFC.PREV, "BOTTOMRIGHT", 5, 0 }, { "BOTTOMRIGHT", -5, 5 } },
+				scripts = { "OnClick", "OnUpdate" },
 			},
 		},
 		handlers = {
@@ -105,10 +103,10 @@ function Queue:GetFrameInfo()
 			end,
 			craftST = {
 				OnEnter = function(self, data)
-					if not data.spellID then return end
+					if not data.spellId then return end
 					local color
 					local profit, totalProfit
-					local numResult = TSM.db.factionrealm.crafts[data.spellID].numResult or 1
+					local numResult = TSM.db.factionrealm.crafts[data.spellId].numResult or 1
 					if data.profit then
 						profit = data.profit * numResult
 						totalProfit = data.numQueued * data.profit * numResult
@@ -120,9 +118,9 @@ function Queue:GetFrameInfo()
 					end
 					GameTooltip:SetOwner(self, "ANCHOR_NONE")
 					GameTooltip:SetPoint("LEFT", self, "RIGHT")
-					GameTooltip:AddLine(TSM.db.factionrealm.crafts[data.spellID].name .. " (x" .. data.numQueued .. ")")
+					GameTooltip:AddLine((TSM.db.factionrealm.crafts[data.spellId].name or "?") .. " (x" .. data.numQueued .. ")")
 					GameTooltip:AddLine(L["Profit (Total Profit):"] .. " " .. (TSMAPI:MoneyToString(profit, color) or "---") .. "(" .. (TSMAPI:MoneyToString(totalProfit, color) or "---") .. ")")
-					for itemString, matQuantity in pairs(TSM.db.factionrealm.crafts[data.spellID].mats) do
+					for itemString, matQuantity in pairs(TSM.db.factionrealm.crafts[data.spellId].mats) do
 						local name = TSMAPI.Item:GetInfo(itemString) or (TSM.db.factionrealm.mats[itemString] and TSM.db.factionrealm.mats[itemString].name) or "?"
 						local inventory = TSMAPI.Inventory:GetBagQuantity(itemString) + TSMAPI.Inventory:GetReagentBankQuantity(itemString)
 						local need = matQuantity * data.numQueued
@@ -137,19 +135,17 @@ function Queue:GetFrameInfo()
 					GameTooltip:Hide()
 				end,
 				OnClick = function(self, data, _, button)
-					if button == "RightButton" and data.index then
+					if button == "RightButton" and data.spellId then
 						if data.profession == TSM:GetCurrentProfessionName() then
-							TradeSkillFrame_SetSelection(data.index)
-							TradeSkillFrame_Update()
-							TradeSkill:UpdateSelectedTradeSkill(true)
-							private.frame.professionsTab.st:SetScrollOffset(max(0, data.index - 1))
+							TradeSkill.Professions:SetSelectedTradeSkill(data.spellId)
+							--private.frame.professionsTab.st:SetScrollOffset(max(0, data.index - 1)) -- FIXME
 						end
 					else
 						if data.isTitle then
 							TSM.db.factionrealm.queueStatus.collapsed[data.profession] = not TSM.db.factionrealm.queueStatus.collapsed[data.profession]
 							Queue.Update()
-						elseif data.index then
-							TradeSkill:CastTradeSkill(data.index, min(data.canCraft, data.numQueued), data.velName)
+						elseif data.spellId then
+							TradeSkill:CastTradeSkill(data.spellId, min(data.canCraft, data.numQueued), data.velName)
 						end
 					end
 				end,
@@ -180,7 +176,10 @@ function Queue:GetFrameInfo()
 			craftNextBtn = {
 				OnClick = function(self)
 					if not private.craftNextInfo or not self:IsVisible() or not TSMAPI.Util:UseHardwareEvent() then return end
-					TradeSkill:CastTradeSkill(private.craftNextInfo.index, private.craftNextInfo.quantity, private.craftNextInfo.velName)
+					if GetShapeshiftForm(true) > 0 then
+						CancelShapeshiftForm()
+					end
+					TradeSkill:CastTradeSkill(private.craftNextInfo.spellId, private.craftNextInfo.quantity, private.craftNextInfo.velName)
 				end,
 				OnUpdate = function(self)
 					if UnitCastingInfo("player") or not private.craftNextInfo then
@@ -241,7 +240,7 @@ function private.SortQueue(a, b)
 		if TSM.db.global.queueSort == 1 then
 			if a.canCraft > 0 and b.canCraft > 0 then
 				if a.profit == b.profit then
-					return a.spellID > b.spellID
+					return a.spellId > b.spellId
 				end
 				return (a.profit or -math.huge) > (b.profit or -math.huge)
 			elseif a.canCraft > 0 then
@@ -249,12 +248,12 @@ function private.SortQueue(a, b)
 			elseif b.canCraft > 0 then
 				return false
 			else
-				return a.spellID > b.spellID
+				return a.spellId > b.spellId
 			end
 		elseif TSM.db.global.queueSort == 2 then
 			if a.profit == b.profit then
 				if a.canCraft == b.canCraft then
-					return a.spellID > b.spellID
+					return a.spellId > b.spellId
 				end
 				return a.canCraft > b.canCraft
 			end
@@ -262,7 +261,7 @@ function private.SortQueue(a, b)
 		elseif TSM.db.global.queueSort == 3 then
 			if a.canCraft == b.canCraft then
 				if a.profit == b.profit then
-					return a.spellID > b.spellID
+					return a.spellId > b.spellId
 				end
 				return (a.profit or -math.huge) > (b.profit or -math.huge)
 			end
@@ -280,27 +279,24 @@ function Queue:Update()
 	if not TradeSkill:GetVisibilityInfo().queue then return end
 	TSM:UpdateCraftReverseLookup()
 
-	local skillIndexLookup = {}
-	for i = 1, GetNumTradeSkills() do
-		local spellID = TSM:GetSpellID(i)
-		if spellID then
-			skillIndexLookup[spellID] = i
-		end
+	local visibleSpellIds = {}
+	for _, spellId in ipairs(C_TradeSkillUI.GetFilteredRecipeIDs()) do
+		visibleSpellIds[spellId] = true
 	end
 
 	local stData = {}
 	local bagTotals = TSM:GetInventoryTotals()
-	local currentProfession = gsub(TSM:GetCurrentProfessionName(), TSMAPI.Util:StrEscape(" (" .. L["Garrison"] .. ")"), "")
+	local currentProfession = gsub(TSM:GetCurrentProfessionName(), TSMAPI.Util:StrEscape(" (" .. GARRISON_LOCATION_TOOLTIP..")"), "")
 	local queueCrafts, queueMats, totalCost, totalProfit = TSM.Queue:GetStatus()
 
 	-- update estimated total cost / profit labels
-	totalCost = totalCost and TSMAPI:MoneyToString(totalCost, TSMAPI.Design:GetInlineColor("link")) or (TSMAPI.Design:GetInlineColor("link").."---|r")
-	totalProfit = totalProfit and (totalProfit < 0 and "|cffff0000-|r"..TSMAPI:MoneyToString(-totalProfit, "|cffff0000") or TSMAPI:MoneyToString(totalProfit, "|cff00ff00")) or TSMAPI.Design:GetInlineColor("link").."---|r"
+	totalCost = totalCost and TSMAPI:MoneyToString(totalCost, TSMAPI.Design:GetInlineColor("link")) or (TSMAPI.Design:GetInlineColor("link") .. "---|r")
+	totalProfit = totalProfit and (totalProfit < 0 and "|cffff0000-|r" .. TSMAPI:MoneyToString(-totalProfit, "|cffff0000") or TSMAPI:MoneyToString(totalProfit, "|cff00ff00")) or TSMAPI.Design:GetInlineColor("link") .. "---|r"
 	private.frame.queue.profitLabel:SetText(format(L["Estimated Cost: %s\nEstimated Profit: %s"], totalCost, totalProfit))
 
 	for profession, crafts in pairs(queueCrafts) do
 		-- get all the players with this profession or the garrison building
-		local garrisonProfession = profession .. " (".. L["Garrison"] ..")"
+		local garrisonProfession = profession .. " (" .. GARRISON_LOCATION_TOOLTIP..")"
 
 		local players = {}
 		for player, data in pairs(TSM.db.factionrealm.playerProfessions) do
@@ -325,12 +321,12 @@ function Queue:Update()
 
 		-- add header row for profession
 		local professionIsCollapsed = TSM.db.factionrealm.queueStatus.collapsed[profession]
-		local headerText = format("%s (%s) %s%s|r", professionColor..profession.."|r", playerColor..table.concat(players, ", ").."|r", TSMAPI.Design:GetInlineColor("link"), professionIsCollapsed and "[+]" or "[-]")
-		tinsert(stData, {cols = {{value = headerText}}, isTitle = true, profession = profession})
+		local headerText = format("%s (%s) %s%s|r", professionColor .. profession .. "|r", playerColor .. table.concat(players, ", ") .. "|r", TSMAPI.Design:GetInlineColor("link"), professionIsCollapsed and "[+]" or "[-]")
+		tinsert(stData, { cols = { { value = headerText } }, isTitle = true, profession = profession })
 
 		if not professionIsCollapsed then
-			for spellID, numQueued in pairs(crafts) do
-				local craft = TSM.db.factionrealm.crafts[spellID]
+			for spellId, numQueued in pairs(crafts) do
+				local craft = TSM.db.factionrealm.crafts[spellId]
 				-- figure out how many we can craft with mats in our bags
 				local numCanCraft = math.huge
 				for itemString, quantity in pairs(craft.mats) do
@@ -338,29 +334,28 @@ function Queue:Update()
 				end
 
 				local leader, craftStatus
-				local craftIndex = skillIndexLookup[spellID]
 				if numCanCraft >= numQueued then
 					-- green (can craft all)
-					leader = craftIndex and "|cff00ff00" or "|cff008800"
+					leader = visibleSpellIds[spellId] and "|cff00ff00" or "|cff008800"
 				elseif numCanCraft > 0 then
 					-- blue (can craft some)
-					leader = craftIndex and "|cff5599ff" or "|cff224488"
+					leader = visibleSpellIds[spellId] and "|cff5599ff" or "|cff224488"
 				else
 					-- orange (can't craft any)
-					leader = craftIndex and "|cffff7700" or "|cff883300"
+					leader = visibleSpellIds[spellId] and "|cffff7700" or "|cff883300"
 				end
 
-				if not craftIndex and craft.players[UnitName("player")] and craft.profession == currentProfession then
-					leader = L["|cffff0000[Filtered]|r "]..leader
+				if not visibleSpellIds[spellId] and craft.players[UnitName("player")] and craft.profession == currentProfession then
+					leader = L["|cffff0000[Filtered]|r "] .. leader
 				end
 
 				-- add leading space
-				leader = "    "..leader
+				leader = "    " .. leader
 				-- add row to temporary table for this profession
-				local rowText = format("%s[%d] %s|r", leader, numQueued, TSM.db.factionrealm.crafts[spellID].name)
+				local rowText = format("%s[%d] %s|r", leader, numQueued, TSM.db.factionrealm.crafts[spellId].name or "?")
 				local velName = craft.mats[TSM.VELLUM_ITEM_STRING] and (GetItemInfo(TSM.VELLUM_ITEM_STRING) or TSM.db.factionrealm.mats[TSM.VELLUM_ITEM_STRING].name) or nil
-				local craftProfit = select(3, TSM.Cost:GetSpellCraftPrices(spellID))
-				tinsert(stData, {cols={{value=rowText}}, spellID=spellID, canCraft=numCanCraft, numQueued=numQueued, index=craftIndex, velName=velName, profit=craftProfit, profession=profession})
+				local craftProfit = select(3, TSM.Cost:GetSpellCraftPrices(spellId))
+				tinsert(stData, { cols = { { value = rowText } }, spellId = spellId, canCraft = numCanCraft, numQueued = numQueued, velName = velName, profit = craftProfit, profession = profession })
 			end
 		end
 	end
@@ -368,8 +363,8 @@ function Queue:Update()
 	private.craftNextInfo = nil
 	for _, row in ipairs(stData) do
 		-- set the craftNextInfo to the first thing we can craft in the queue
-		if row.index and row.canCraft > 0 then
-			private.craftNextInfo = {index=row.index, quantity=min(row.numQueued, row.canCraft), velName=row.velName}
+		if row.spellId and row.canCraft > 0 then
+			private.craftNextInfo = { spellId = row.spellId, quantity = min(row.numQueued, row.canCraft), velName = row.velName }
 			break
 		end
 	end
@@ -396,10 +391,10 @@ function Queue:Update()
 
 		tinsert(stData, {
 			cols = {
-				{value = color..TSM.db.factionrealm.mats[itemString].name.."|r"},
-				{value = color..numNeeded.."|r"},
-				{value = color..quantity.."|r"},
-				{value = TSMAPI:MoneyToString(matCost) or "---"},
+				{ value = color .. TSM.db.factionrealm.mats[itemString].name .. "|r" },
+				{ value = color .. numNeeded .. "|r" },
+				{ value = color .. quantity .. "|r" },
+				{ value = TSMAPI:MoneyToString(matCost) or "---" },
 			},
 			itemString = itemString,
 			name = TSM.db.factionrealm.mats[itemString].name,

@@ -1,9 +1,0 @@
-## Interface: 60200
-## Version: 2.10
-## Title: We Don't Wipe - Windwalker Monk
-## Author: Taraezor
-## Notes: Windwalker Monk module for the We Don't Wipe AddOn
-## SavedVariablesPerCharacter: WDW_WindwalkerMonkDB
-## RequiredDeps: WeDontWipe
-
-WindwalkerMonk.lua

@@ -4,7 +4,7 @@
 
   Mounting actions.
 
-  Copyright 2011-2015 Mike Battersby
+  Copyright 2011-2016 Mike Battersby
 
 ----------------------------------------------------------------------------]]--
 
@@ -87,17 +87,17 @@ function LM_Action:DefaultCombatMacro()
     return mt
 end
 
-function LM_Action:Spell(spellId)
-    local name = GetSpellInfo(spellId)
+function LM_Action:Spell(spellID)
+    local name = GetSpellInfo(spellID)
     LM_Debug("Setting action to " .. name .. ".")
     return LM_ActionAsMount:Spell(name)
 end
 
-function LM_Action:Zone(zoneId)
-    if not LM_Location:IsZone(zoneId) then return end
+function LM_Action:Zone(zoneID)
+    if not LM_Location:IsZone(zoneID) then return end
 
-    LM_Debug(format("Trying zone mount for %s (%d).", LM_Location:GetName(), LM_Location:GetId()))
-    return LM_PlayerMounts:GetZoneMount(zoneId)
+    LM_Debug(format("Trying zone mount for %s (%d).", LM_Location:GetName(), LM_Location:GetID()))
+    return LM_PlayerMounts:GetZoneMount(zoneID)
 end
 
 -- In vehicle -> exit it
@@ -216,7 +216,7 @@ function LM_Action:Combat()
 
     if LM_Options:UseCombatMacro() then
         return LM_ActionAsMount:Macro(LM_Options:GetCombatMacro())
-    else 
+    else
         return LM_ActionAsMount:Macro(self:DefaultCombatMacro())
     end
 end

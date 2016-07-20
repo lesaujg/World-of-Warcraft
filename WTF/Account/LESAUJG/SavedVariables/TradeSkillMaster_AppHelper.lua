@@ -2,28 +2,31 @@
 TradeSkillMaster_AppHelperDB = {
 	["blackMarket"] = {
 		["Sisters of Elune"] = {
-			["key"] = 14297287,
-			["data"] = "[[12,43953,1,2,68875,3200,65675,6,1468892238],[13,44970,1,3,11570,550,11020,4,1468892238],[19,87412,1,2,1050,50,1000,1,1468892238],[77,110672,1,2,7350,350,7000,5,1468892238]]",
-			["updateTime"] = 1468892238,
+			["data"] = "[[13,48118,1,0,1000,0,0,0,1468984547],[22,125895,1,0,10000,0,0,0,1468984547],[17,22419,1,2,62899,2900,59999,1,1468984547],[23,126402,1,0,10000,0,0,0,1468984547]]",
+			["key"] = 1633085,
+			["updateTime"] = 1468984547,
 		},
 	},
 	["region"] = "US",
 	["shoppingMaxPrices"] = {
 		["Default"] = {
-			["updateTime"] = 1468899165,
-			["Craft enchants`x2`Breath Enchants"] = "[[110621,201000],[110617,201000],[110627,201000],[110626,201000],[110634,201000],[110628,201000],[110625,201000],[110624,201000],[110619,201000],[110633,201000],[110635,201000],[110631,201000],[110620,201000],[110632,201000],[110618,201000]]",
-			["Craft enchants`x5"] = "[[110655,831000],[110640,831000],[112165,3101000],[110648,831000],[110652,831000],[110641,951000],[110639,831000],[110649,831000],[110653,951000],[110647,951000],[110682,3101000],[110654,831000],[110645,831000],[112164,3101000],[110638,831000],[110646,831000],[112093,201000],[112160,851000],[110642,831000],[112115,651000],[110656,831000],[118015,3101000]]",
+			["Enchant mats"] = "[[113588,231416],[111245,208196],[115504,43523],[38682,1073710]]",
+			["Craft enchants`x5"] = "[[110640,831000],[112165,3101000],[110652,831000],[110649,831000],[110639,831000],[110653,951000],[118015,3101000],[110647,951000],[110682,3101000],[110645,831000],[112115,651000],[112164,3101000],[112160,851000],[110642,831000],[110638,831000],[112093,201000],[110646,831000],[110654,831000],[110656,831000]]",
+			["Enchant mats`Draenic Dust"] = "[[109693,12362]]",
+			["updateTime"] = 1468995574,
+			["Sorcerous"] = "[[113263,48540],[113264,10696],[113261,11833],[113262,15524]]",
+			["Craft enchants`x2`Breath Enchants"] = "[[110621,201000],[110617,201000],[110618,201000],[110626,201000],[110628,201000],[110625,201000],[110624,201000],[110633,201000],[110635,201000],[110631,201000],[110632,201000],[110619,201000]]",
 		},
 	},
 	["wowToken"] = {
 		["US"] = {
-			["key"] = 13166099,
-			["data"] = 45412,
-			["updateTime"] = 1468887028,
+			["key"] = 10459515,
+			["data"] = 40608,
+			["updateTime"] = 1468995565,
 		},
 		["PTR"] = {
-			["data"] = 46899,
 			["key"] = 9014272,
+			["data"] = 46899,
 			["updateTime"] = 1465009785,
 		},
 	},
@@ -295,7 +298,140 @@ TradeSkillMaster_AppHelperDB = {
 			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.8\",\"\",1468876607]", -- [264]
 			"[\"Auctioning\",\"CANCEL_GROUP_START\",\"v3.0.8\",\"\",1468886301]", -- [265]
 			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.8\",\"\",1468886458]", -- [266]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468978172]", -- [267]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468978187]", -- [268]
+			"[\"Auctioning\",\"CANCEL_GROUP_START\",\"v3.0.9\",\"\",1468978306]", -- [269]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468978454]", -- [270]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468979110]", -- [271]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468979130]", -- [272]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468979161]", -- [273]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468979236]", -- [274]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468979266]", -- [275]
+			"[\"Auctioning\",\"CANCEL_GROUP_START\",\"v3.0.9\",\"\",1468983841]", -- [276]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468983991]", -- [277]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...Ons\\TradeSkillMaster_Auctioning\\modules\\PostScan.lua:258: Usage: StartAuction(minBid, buyoutPrice, runTime, count)\",1468984015]", -- [278]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984020]", -- [279]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984021]", -- [280]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984022]", -- [281]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984022]", -- [282]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984022]", -- [283]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984022]", -- [284]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984022]", -- [285]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984022]", -- [286]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984026]", -- [287]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984026]", -- [288]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984026]", -- [289]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984026]", -- [290]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984026]", -- [291]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984029]", -- [292]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984029]", -- [293]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984029]", -- [294]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984029]", -- [295]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984029]", -- [296]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984030]", -- [297]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984030]", -- [298]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984030]", -- [299]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984030]", -- [300]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984030]", -- [301]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984031]", -- [302]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984031]", -- [303]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984031]", -- [304]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984031]", -- [305]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984031]", -- [306]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984032]", -- [307]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984032]", -- [308]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984032]", -- [309]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984032]", -- [310]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984032]", -- [311]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984033]", -- [312]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984033]", -- [313]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984033]", -- [314]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984033]", -- [315]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984033]", -- [316]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984034]", -- [317]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984034]", -- [318]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984034]", -- [319]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984034]", -- [320]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984034]", -- [321]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984035]", -- [322]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984044]", -- [323]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984044]", -- [324]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984044]", -- [325]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984045]", -- [326]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984045]", -- [327]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984045]", -- [328]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984045]", -- [329]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468984055]", -- [330]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468984096]", -- [331]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...Ons\\TradeSkillMaster_Auctioning\\modules\\PostScan.lua:258: Usage: StartAuction(minBid, buyoutPrice, runTime, count)\",1468984114]", -- [332]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984116]", -- [333]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468984123]", -- [334]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...Ons\\TradeSkillMaster_Auctioning\\modules\\PostScan.lua:258: Usage: StartAuction(minBid, buyoutPrice, runTime, count)\",1468984140]", -- [335]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984143]", -- [336]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984144]", -- [337]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984144]", -- [338]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984144]", -- [339]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984144]", -- [340]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984145]", -- [341]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468984153]", -- [342]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...Ons\\TradeSkillMaster_Auctioning\\modules\\PostScan.lua:258: Usage: StartAuction(minBid, buyoutPrice, runTime, count)\",1468984169]", -- [343]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984171]", -- [344]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984173]", -- [345]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984173]", -- [346]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468984178]", -- [347]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468984209]", -- [348]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...Ons\\TradeSkillMaster_Auctioning\\modules\\PostScan.lua:258: Usage: StartAuction(minBid, buyoutPrice, runTime, count)\",1468984238]", -- [349]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468984240]", -- [350]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468984257]", -- [351]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468984338]", -- [352]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468985512]", -- [353]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...Ons\\TradeSkillMaster_Auctioning\\modules\\PostScan.lua:258: Usage: StartAuction(minBid, buyoutPrice, runTime, count)\",1468985545]", -- [354]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468985547]", -- [355]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468985558]", -- [356]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468985560]", -- [357]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468985606]", -- [358]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...Ons\\TradeSkillMaster_Auctioning\\modules\\PostScan.lua:258: Usage: StartAuction(minBid, buyoutPrice, runTime, count)\",1468985639]", -- [359]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468985832]", -- [360]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468985871]", -- [361]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468986138]", -- [362]
+			"[\"Auctioning\",\"CANCEL_GROUP_START\",\"v3.0.9\",\"\",1468987597]", -- [363]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.9\",\"\",1468987679]", -- [364]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468987950]", -- [365]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...Ons\\TradeSkillMaster_Auctioning\\modules\\PostScan.lua:258: Usage: StartAuction(minBid, buyoutPrice, runTime, count)\",1468988079]", -- [366]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468988083]", -- [367]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468988084]", -- [368]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468988116]", -- [369]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...Ons\\TradeSkillMaster_Auctioning\\modules\\PostScan.lua:258: Usage: StartAuction(minBid, buyoutPrice, runTime, count)\",1468988209]", -- [370]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468988215]", -- [371]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468988246]", -- [372]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...Ons\\TradeSkillMaster_Auctioning\\modules\\PostScan.lua:258: Usage: StartAuction(minBid, buyoutPrice, runTime, count)\",1468988299]", -- [373]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468988301]", -- [374]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468988302]", -- [375]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468988375]", -- [376]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468988471]", -- [377]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468989543]", -- [378]
+			"[\"Auctioning\",\"CANCEL_GROUP_START\",\"v3.0.9\",\"\",1468989719]", -- [379]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468990025]", -- [380]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...\\AddOns\\TradeSkillMaster_Crafting\\Modules\\Gather.lua:416: attempt to index field '?' (a nil value)\",1468992371]", -- [381]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...\\AddOns\\TradeSkillMaster_Crafting\\Modules\\Gather.lua:416: attempt to index field '?' (a nil value)\",1468992439]", -- [382]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...radeSkillMaster_Shopping\\modules\\AuctionTab_Util.lua:50: attempt to concatenate a nil value\",1468992443]", -- [383]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468992444]", -- [384]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468992469]", -- [385]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468992469]", -- [386]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468992470]", -- [387]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468992470]", -- [388]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468992470]", -- [389]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468993479]", -- [390]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...Ons\\TradeSkillMaster_Auctioning\\modules\\PostScan.lua:258: Usage: StartAuction(minBid, buyoutPrice, runTime, count)\",1468993494]", -- [391]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468993498]", -- [392]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.4.2\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:413: Thread in unexpected state!\",1468993503]", -- [393]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468993509]", -- [394]
+			"[\"Auctioning\",\"CANCEL_GROUP_START\",\"v3.0.9\",\"\",1468993531]", -- [395]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468993712]", -- [396]
+			"[\"Auctioning\",\"CANCEL_GROUP_START\",\"v3.0.9\",\"\",1468994948]", -- [397]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468995032]", -- [398]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.9\",\"\",1468995263]", -- [399]
 		},
-		["updateTime"] = 1468886458,
+		["updateTime"] = 1468995263,
 	},
 }

@@ -29,7 +29,7 @@ end
 
 function private:StartFilterSearch()
 	local filter = private.frame.filter.filterInputBox:GetText()
-	
+
 	local minLevel = private.frame.filter.levelMinBox:GetNumber()
 	local maxLevel = private.frame.filter.levelMaxBox:GetNumber()
 	if maxLevel > 0 then
@@ -37,7 +37,7 @@ function private:StartFilterSearch()
 	elseif minLevel > 0 then
 		filter = format("%s/%d", filter, minLevel)
 	end
-	
+
 	local minItemLevel = private.frame.filter.itemLevelMinBox:GetNumber()
 	local maxItemLevel = private.frame.filter.itemLevelMaxBox:GetNumber()
 	if maxItemLevel > 0 then
@@ -45,36 +45,36 @@ function private:StartFilterSearch()
 	elseif minItemLevel > 0 then
 		filter = format("%s/i%d", filter, minItemLevel)
 	end
-	
+
 	local class = private.frame.filter.classDropdown:GetValue()
 	if class then
-		local classes = {GetAuctionItemClasses()}
+		local classes = TSMAPI.Item:GetItemClasses()
 		filter = format("%s/%s", filter, classes[class])
 		local subClass = private.frame.filter.subClassDropdown:GetValue()
 		if subClass then
-			local subClasses = {GetAuctionItemSubClasses(class)}
+			local subClasses = TSMAPI.Item:GetItemSubClasses(class)
 			filter = format("%s/%s", filter, subClasses[subClass])
 		end
 	end
-	
+
 	local rarity = private.frame.filter.rarityDropdown:GetValue()
 	if rarity then
 		filter = format("%s/%s", filter,  _G["ITEM_QUALITY"..rarity.."_DESC"])
 	end
-	
+
 	if private.frame.filter.usableCheckBox:GetValue() then
 		filter = format("%s/usable", filter)
 	end
-	
+
 	if private.frame.filter.exactCheckBox:GetValue() then
 		filter = format("%s/exact", filter)
 	end
-	
+
 	local maxQty = private.frame.filter.maxQtyBox:GetNumber()
 	if maxQty > 0 then
 		filter = format("%s/x%d", filter, maxQty)
 	end
-	
+
 	local searchInfo = {searchMode="normal", extraInfo={searchType="filter"}, filter=filter}
 	TSM.AuctionTab:StartSearch(searchInfo)
 end
@@ -84,21 +84,21 @@ end
 function private.StartSearchThread(self, mode)
 	self:SetThreadName("SHOPPING_START_OTHER_SEARCH")
 	TSMAPI:Assert(mode == "vendor" or mode == "disenchant")
-	
+
 	local lastScanTime = TSMAPI:ModuleAPI("AuctionDB", "lastCompleteScanTime")
 	local lastScanData = TSMAPI:ModuleAPI("AuctionDB", "lastCompleteScan")
 	if not lastScanData or lastScanTime < time() - 60 * 60 * 12 or not next(lastScanData) then
 		TSM:Print(L["No recent AuctionDB scan data found."])
 		return
 	end
-	
+
 	local items = {}
 	for itemString in pairs(lastScanData) do
 		tinsert(items, TSMAPI.Item:ToItemString(itemString))
 		self:Yield()
 	end
 	self:WaitForItemInfo(items)
-	
+
 	local itemList = {}
 	local searchBoxText = nil
 	if mode == "vendor" then
@@ -124,12 +124,12 @@ function private.StartSearchThread(self, mode)
 		end
 		searchBoxText = "~"..L["disenchant search"].."~"
 	end
-	
+
 	if #itemList == 0 then
 		TSM:Print(L["Nothing to search for!"])
 		return
 	end
-	
+
 	local searchInfo = {searchMode="normal", item=itemList, searchBoxText=searchBoxText, extraInfo={searchType=mode}}
 	TSM.AuctionTab:StartSearch(searchInfo)
 	-- need a sleep here since it will take a few frames for the scan to actually start and until then this thread shouldn't exit
@@ -286,7 +286,7 @@ function AuctionTabOther:GetFrameInfo()
 						type = "Dropdown",
 						key = "classDropdown",
 						label = L["Item Class"],
-						list = {GetAuctionItemClasses()},
+						list = TSMAPI.Item:GetItemClasses(),
 						points = {{"TOPLEFT", 5, -132}, {"TOPRIGHT", BFC.PARENT, "TOP", 0, -132}},
 						scripts = {"OnValueChanged"},
 					},
@@ -528,7 +528,7 @@ function AuctionTabOther:GetFrameInfo()
 				classDropdown = {
 					OnValueChanged = function(_, value)
 						private.frame.filter.subClassDropdown:SetValue()
-						private.frame.filter.subClassDropdown:SetList({GetAuctionItemSubClasses(value)})
+						private.frame.filter.subClassDropdown:SetList(TSMAPI.Item:GetItemSubClasses(value))
 						private.frame.filter.subClassDropdown:SetDisabled(false)
 					end,
 				},

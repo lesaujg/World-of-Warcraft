@@ -25,26 +25,26 @@ function Cost:GetMatCost(itemString)
 		private.loopCheck.visitCount = private.loopCheck.visitCount + 1
 	end
 	if private.matsVisited[itemString] then return end
-	
+
 	private.matsVisited[itemString] = true
 	local cost = TSMAPI:GetCustomPriceValue(TSM.db.factionrealm.mats[itemString].customValue or TSM.db.global.defaultMatCostMethod, itemString)
 	private.matsVisited[itemString] = nil
-	
+
 	return cost
 end
 
 -- checks if a mat has a loop in its mat cost custom price
 function Cost:MatCostHasLoop(itemString)
 	if not TSM.db.factionrealm.mats[itemString] then return end
-	
+
 	private.loopCheck.item = itemString
 	private.loopCheck.visitCount = 0
-	
+
 	Cost:GetMatCost(itemString)
-	
+
 	private.loopCheck.item = nil
 	TSMAPI:Assert(private.loopCheck.visitCount > 0) -- should be visited at least once
-	
+
 	return private.loopCheck.visitCount > 1
 end
 
@@ -65,7 +65,7 @@ end
 function Cost:GetItemCraftPrices(itemString)
 	local spellIds = TSM.craftReverseLookup[itemString]
 	if not spellIds then return end
-	
+
 	local lowestCost, cheapestSpellId = nil, nil
 	for _, spellId in ipairs(spellIds) do
 		local cost = private:GetSpellCraftingCost(spellId)
@@ -112,7 +112,7 @@ end
 -- gets the value of a crafted item
 function private:GetCraftValue(itemString)
 	if not itemString then return end
-	
+
 	local priceMethod = TSM.db.global.defaultCraftPriceMethod
 	local operation = TSMAPI.Operations:GetFirstByItem(itemString, "Crafting")
 	if operation and TSM.operations[operation] then

@@ -1,3 +1,15 @@
+v3.0.11
+*Fixed bug when opening mail with above 1M gold.
+
+v3.0.10
+*Fixed bug in last version.
+
+v3.0.8
+*Fixed bug caused by 7.0.x changes.
+
+v3.0.7
+*Bumped TOC version for patch 7.0.x.
+
 v3.0.6
 *Fixed error seen in some situations after clearing old data.
 *Fixed error from gold tracking.

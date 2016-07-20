@@ -16,7 +16,7 @@ if not L then return end
 L["Accounting has not yet collected enough information for this tab. This is likely due to not having recorded enough data points or not seeing any significant fluctuations (over 1k gold) in your gold on hand."] = "账户还没有收集到足够的信息来显示到此页面，您的金币可能由于还没有记录足够的数据或有重大的波动（超过1000G）" -- Needs review
 L["Activity Type"] = "活动类别"
 L["All"] = "所有"
-L["Amount"] = "合计" -- Needs review
+L["Amount"] = "总额"
 L["Aucs"] = "曲线"
 L["Average Prices:"] = "平均价："
 L["Avg Buy"] = "平均购买" -- Needs review
@@ -29,14 +29,14 @@ L["Balance"] = "结算"
 L[ [=[Below is a graph of the your character's gold on hand over time.
 
 The x-axis is time and goes from %s to %s
-The y-axis is thousands of gold.]=] ] = [=[以下图表是您角色的金币走势
-X轴代表时间从%s 到%s
-Y轴代表千金]=] -- Needs review
+The y-axis is thousands of gold.]=] ] = [=[以下图表是您角色的金币走势。
+X轴代表从%s 到%s的时间
+Y轴代表金币，单位为一千金。]=]
 L["Bought"] = "已买入"
 L["Buyer/Seller"] = "买家/卖家"
 L["Cancelled"] = "已取消"
 L["Cancelled Since Last Sale:"] = "自上次售出之后取消拍卖:"
--- L["|cffff0000IMPORTANT:|r When TSM_Accounting last saved data for this realm, it was too big for WoW to handle, so old data was automatically trimmed in order to avoid corruption of the saved variables. The last %s of %s data has been preserved."] = ""
+L["|cffff0000IMPORTANT:|r When TSM_Accounting last saved data for this realm, it was too big for WoW to handle, so old data was automatically trimmed in order to avoid corruption of the saved variables. The last %s of %s data has been preserved."] = "|cffff0000重要通知:|r 当TSM_Accounting在本国度最后的存储数据对WOW来说太大难以处理，旧的数据将被整理以避免损坏已保存的参数。最后%s 的 %s 数据已保存。" -- Needs review
 L["Character/Guild to Graph"] = "角色/公会图表" -- Needs review
 L["Character to Graph"] = "角色图表" -- Needs review
 L["Clear Old Data"] = "清除旧数据"
@@ -53,7 +53,7 @@ L["Expenses"] = "支出"
 L["Expired"] = "已流拍"
 L["Expired Since Last Sale:"] = "自上次售出之后的流拍:"
 L["Failed Auctions"] = "拍卖失败"
--- L["Failed Since Last Sale"] = ""
+L["Failed Since Last Sale"] = "自上次卖出后失败"
 L["Failed Since Last Sale (Expired/Cancelled):"] = "自上次售出之后的失败(流拍/取消):"
 L["General Options"] = "通用选项" -- Needs review
 L["Gold Earned:"] = "赚取金币："
@@ -62,7 +62,7 @@ L["Group"] = "分组"
 L["_ Hr _ Min ago"] = "_ 小时 _ 分钟之前"
 L["If checked, Money Transfers will be included in income / expense and summary. Accounting will still track these if disabled but will not show them."] = "如果勾选，金币交易量将包括收入/支出 和摘要，如果不勾选，账户将仍然追踪这些记录，但不会显示出来" -- Needs review
 L["If checked, poor quality items will be shown in sales data. They will still be included in gold earned totals on the summary tab regardless of this setting"] = "如果勾选,灰色品质物品将会在销售数据里显示。无论勾选与否,他们都将加进赚取金币总额里。"
--- L["If checked, the average purchase price that shows in the tooltip will be the average price for the most recent X you have purchased, where X is the number you have in your bags / bank / guild vault. Otherwise, a simple average of all purchases will be used."] = ""
+L["If checked, the average purchase price that shows in the tooltip will be the average price for the most recent X you have purchased, where X is the number you have in your bags / bank / guild vault. Otherwise, a simple average of all purchases will be used."] = "如果勾选，在鼠标提示中显示的平均买入价将是你曾经买入的最接近X的均价，X是你背包/银行/公会仓库中的物品数量。否则，将使用所有买入价格的均价。" -- Needs review
 L["If checked, the number of cancelled auctions since the last sale will show as up as failed auctions in an item's tooltip. if no sales then the total number of cancelled auctions will be shown."] = "如果勾选, 取消拍卖次数会作为自上次售出以来的失败拍卖显示在物品鼠标提示中. 如果没有售出的情况下,显示的次数就是取消拍卖次数。"
 L["If checked, the number of expired auctions since the last sale will show as up as failed auctions in an item's tooltip. if no sales then the total number of expired auctions will be shown."] = "如果勾选, 流拍次数会作为自上次售出以来的失败拍卖显示在物品鼠标提示中. 如果没有售出的情况下,显示的次数就是流拍次数。"
 L[ [=[If checked, the number you have purchased and the average purchase price will show up in an item's tooltip.
@@ -78,7 +78,7 @@ L["If checked, whenever you buy or sell any quantity of a single item via trade,
 L["If checked, you won't get a popup confirmation about whether or not to track trades."] = "如果勾选,将不会弹出是否追踪交易的确认框。"
 L["Item Name"] = "物品名称"
 L["Items"] = "物品"
-L["Items/Resale Price Format"] = "物品/转售价格格式" -- Needs review
+L["Items/Resale Price Format"] = "物品/转卖价格格式"
 L["Last %d Days"] = "过去%d 天" -- Needs review
 L["Last Purchased:"] = "上次购买:"
 L["Last Sold:"] = "上次售出:"
@@ -132,31 +132,31 @@ L["Source"] = "来源"
 L["Spent Per Day:"] = "日花费:"
 L["Stack"] = "堆叠"
 L["Summary"] = "摘要"
--- L["Sum of All Characters/Guilds"] = ""
+L["Sum of All Characters/Guilds"] = "所有角色/公会数量"
 L["There is no purchase data for this item."] = "该物品无购买数据。"
 L["There is no sale data for this item."] = "该物品无销售数据。"
 L["Time"] = "时间"
 L["Time Format"] = "时间格式"
--- L["Timeframe (Days)"] = ""
+L["Timeframe (Days)"] = "时间表（天）"
 L["Timeframe Filter"] = "时间筛选器"
 L["Today"] = "今天"
 L["Top Buyers:"] = "最高出价者："
--- L["Top Expense by Gold / Quantity:"] = ""
--- L["Top Income by Gold / Quantity:"] = ""
--- L["Top Item by Gold / Quantity:"] = ""
+L["Top Expense by Gold / Quantity:"] = "最高花费 金币/数量："
+L["Top Income by Gold / Quantity:"] = "最高收入 金币/数量："
+L["Top Item by Gold / Quantity:"] = "最高价物品 金币/数量："
 L["Top Sellers:"] = "卖家排名:"
 L["Total:"] = "总计："
--- L["Total Buy"] = ""
+L["Total Buy"] = "总计购买"
 L["Total Buy Price"] = "买入总价"
 L["Total Price"] = "总价"
--- L["Total Sale"] = ""
+L["Total Sale"] = "总计卖出"
 L["Total Sale Price"] = "出售总价"
 L["Total Spent:"] = "总花费:"
 L["Total Value"] = "总价值" -- Needs review
--- L["Track Sales/Purchases via Trade"] = ""
+L["Track Sales/Purchases via Trade"] = "通过交易追踪 卖出/买入"
 L["TSM_Accounting detected that you just traded %s %s in return for %s. Would you like Accounting to store a record of this trade?"] = "TSM_Accounting 检测到您进行了一笔%s %s的交易, 交易金额为%s。您希望保留此次交易记录吗?"
 L["Type"] = "类型"
--- L["Use Smart Average for Purchase Price"] = ""
+L["Use Smart Average for Purchase Price"] = "使用智能均价作为购买价"
 L["Yesterday"] = "昨天"
 L[ [=[You can use the options below to clear old data. It is recommened to occasionally clear your old data to keep Accounting running smoothly. Select the minimum number of days old to be removed in the dropdown, then click the button.
 

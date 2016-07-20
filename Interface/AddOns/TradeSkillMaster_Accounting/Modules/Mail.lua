@@ -52,7 +52,7 @@ function private:RequestSellerInfo()
 end
 
 function private:CanLootMailIndex(index, copper)
-	local MAX_COPPER = 9999999999
+	local MAX_COPPER = 99999999999
 	local currentMoney = GetMoney()
 	TSMAPI:Assert(currentMoney <= MAX_COPPER)
 	-- check if this would put them over the gold cap
@@ -62,7 +62,12 @@ function private:CanLootMailIndex(index, copper)
 	for j = 1, ATTACHMENTS_MAX_RECEIVE do
 		local link = GetInboxItemLink(index, j)
 		local itemString = TSMAPI.Item:ToItemString(link)
-		local quantity = select(3, GetInboxItem(index, j))
+		local quantity = nil
+		if select(4, GetBuildInfo()) >= 70000 then
+			quantity = select(4, GetInboxItem(index, j)) or 0
+		else
+			quantity = select(3, GetInboxItem(index, j))
+		end
 		local space = 0
 		if itemString then
 			for bag = 0, NUM_BAG_SLOTS do
@@ -133,7 +138,10 @@ function Mail:ScanCollectedMail(oFunc, attempt, index, subIndex)
 			local stacks = 0
 			local ignore = false
 			for i = 1, ATTACHMENTS_MAX_RECEIVE do
-				local nameCheck, _, count, _, _ = GetInboxItem(index, i)
+				local nameCheck, _, count, count2 = GetInboxItem(index, i)
+				if select(4, GetBuildInfo()) >= 70000 then
+					count = count2
+				end
 
 				if nameCheck and count then
 					if nameCheck == name then
@@ -193,7 +201,12 @@ function Mail:ScanCollectedMail(oFunc, attempt, index, subIndex)
 		local daysLeft = select(7, GetInboxHeaderInfo(index))
 		local expiredTime = (time() + (daysLeft - 30) * SECONDS_PER_DAY)
 		local link = (subIndex or 1) == 1 and private:GetFirstInboxItemLink(index) or GetInboxItemLink(index, subIndex)
-		local qty = select(3, GetInboxItem(index, subIndex or 1))
+		local qty = nil
+		if select(4, GetBuildInfo()) >= 70000 then
+			qty = select(4, GetInboxItem(index, subIndex or 1)) or 0
+		else
+			qty = select(3, GetInboxItem(index, subIndex or 1))
+		end
 		local itemString = TSMAPI.Item:ToItemString(link)
 		if private:CanLootMailIndex(index, 0) then
 			TSM.Data:InsertItemAuctionRecord(itemString, "Expire", qty, expiredTime)
@@ -202,7 +215,12 @@ function Mail:ScanCollectedMail(oFunc, attempt, index, subIndex)
 		local daysLeft = select(7, GetInboxHeaderInfo(index))
 		local cancelledTime = (time() + (daysLeft - 30) * SECONDS_PER_DAY)
 		local link = (subIndex or 1) == 1 and private:GetFirstInboxItemLink(index) or GetInboxItemLink(index, subIndex)
-		local qty = select(3, GetInboxItem(index, subIndex or 1))
+		local qty = nil
+		if select(4, GetBuildInfo()) >= 70000 then
+			qty = select(4, GetInboxItem(index, subIndex or 1)) or 0
+		else
+			qty = select(3, GetInboxItem(index, subIndex or 1))
+		end
 		local itemString = TSMAPI.Item:ToItemString(link)
 		if private:CanLootMailIndex(index, 0) then
 			TSM.Data:InsertItemAuctionRecord(itemString, "Cancel", qty, cancelledTime)

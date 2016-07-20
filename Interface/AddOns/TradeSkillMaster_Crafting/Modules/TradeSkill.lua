@@ -10,8 +10,7 @@
 local TSM = select(2, ...)
 local TradeSkill = TSM:NewModule("TradeSkill", "AceEvent-3.0", "AceHook-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("TradeSkillMaster_Crafting") -- loads the localization table
-local private = {frame=nil, switchBtn=nil, currentProfession=nil, showThreadId=nil, noHide=nil, noShow=nil}
-
+local private = {frame=nil, switchBtn=nil, currentProfession=nil, currentProfessionId=nil, managerThreadId=nil, noHide=nil, noShow=nil, scanSuccess=nil}
 
 
 -- ============================================================================
@@ -23,9 +22,10 @@ function TradeSkill:OnInitialize()
 		TradeSkill[name] = module
 	end
 	TradeSkill:RegisterEvent("TRADE_SKILL_SHOW", "EventHandler")
+	TradeSkill:RegisterEvent("TRADE_SKILL_DATA_SOURCE_CHANGED", "EventHandler")
 	TradeSkill:RegisterEvent("TRADE_SKILL_CLOSE", "EventHandler")
 	TradeSkill:RegisterEvent("GARRISON_TRADESKILL_NPC_CLOSED", "EventHandler")
-	TradeSkill:RegisterEvent("TRADE_SKILL_UPDATE", "EventHandler")
+	TradeSkill:RegisterEvent("TRADE_SKILL_LIST_UPDATE", "EventHandler")
 	TradeSkill:RegisterEvent("TRADE_SKILL_FILTER_UPDATE", "EventHandler")
 	TradeSkill:RegisterEvent("UPDATE_TRADESKILL_RECAST", "EventHandler")
 	TradeSkill:RegisterEvent("CHAT_MSG_SKILL", "EventHandler")
@@ -35,7 +35,11 @@ function TradeSkill:OnInitialize()
 	TradeSkill:RegisterEvent("UNIT_SPELLCAST_FAILED_QUIET", "EventHandler")
 	TradeSkill:RegisterEvent("BAG_UPDATE", "EventHandler")
 	TSMAPI.Inventory:RegisterCallback(private.OnProfessionUpdate)
+	private.managerThreadId = TSMAPI.Threading:StartImmortal(private.ProfessionWindowManagerThread, 0.5)
 	TSMAPI.Threading:StartImmortal(private.LinkedProfessionScanThread, 0.5)
+
+	-- we'll implement UIParent's event handler directly when necessary for TRADE_SKILL_SHOW
+	UIParent:UnregisterEvent("TRADE_SKILL_SHOW")
 end
 
 
@@ -46,40 +50,28 @@ end
 
 function TradeSkill:EventHandler(event, ...)
 	-- deal with TRADE_SKILL_SHOW / TRADE_SKILL_CLOSE specially
-	if event == "TRADE_SKILL_SHOW" then
-		private.OnShowThreadDone()
-		private.showThreadId = TSMAPI.Threading:Start(private.ShowProfessionWindowThread, 0.8, private.OnShowThreadDone)
-		if private.noShow then
-			-- run it right away so we don't leave the tradeskillframe visible for one frame
-			TSMAPI.Threading:Run(private.showThreadId)
-		end
+	if event == "TRADE_SKILL_SHOW" or event == "TRADE_SKILL_DATA_SOURCE_CHANGED" then
+		TSMAPI.Threading:SendMsg(private.managerThreadId, "SHOW")
 		return
 	elseif event == "TRADE_SKILL_CLOSE" or event == "GARRISON_TRADESKILL_NPC_CLOSED" then
-		TradeSkill.HideTradeSkill("EVENT")
+		TSMAPI.Threading:SendMsg(private.managerThreadId, "HIDE")
 		return
 	end
 
 	-- if we are changing professions or not currently shown, just ignore this event
 	if not private.currentProfession or not TradeSkill:GetVisibilityInfo().frame or TSM:GetCurrentProfessionName() ~= private.currentProfession then return end
 
-	if event == "TRADE_SKILL_UPDATE" or event == "TRADE_SKILL_FILTER_UPDATE" then
-		local currentSelection = GetTradeSkillSelectionIndex()
-		if event ~= "TRADE_SKILL_FILTER_UPDATE" and currentSelection > 1 and currentSelection <= GetNumTradeSkills() then
-			TradeSkillFrame_SetSelection(currentSelection)
-		else
-			TradeSkillFrame_SetSelection(GetFirstTradeSkill())
-		end
-		TradeSkillFrame_Update()
+	if event == "TRADE_SKILL_LIST_UPDATE" or event == "TRADE_SKILL_FILTER_UPDATE" then
 		private:OnProfessionUpdate()
 		private:UpdateCooldownsFrame()
 	elseif event == "UPDATE_TRADESKILL_RECAST" then
-		private.frame.professionsTab.craftInfoFrame.buttonsFrame.inputBox:SetNumber(GetTradeskillRepeatCount())
+		private.frame.professionsTab.craftInfoFrame.buttonsFrame.inputBox:SetNumber(C_TradeSkillUI.GetRecipeRepeatCount())
 	elseif event == "CHAT_MSG_SKILL" then
 		-- update the skill level of the player's tradeskill
-		if IsTradeSkillGuild() or IsNPCCrafting() then return end
+		if C_TradeSkillUI.IsTradeSkillGuild() or C_TradeSkillUI.IsNPCCrafting() then return end
 		local skillName = TSM:GetCurrentProfessionName()
-		local level, maxLevel = select(2, GetTradeSkillLine())
-		local isLinked, linkedPlayer = IsTradeSkillLinked()
+		local level, maxLevel = select(3, C_TradeSkillUI.GetTradeSkillLine())
+		local isLinked, linkedPlayer = C_TradeSkillUI.IsTradeSkillLinked()
 		local playerName = linkedPlayer or UnitName("player")
 		if skillName and skillName ~= "UNKNOWN" and not isLinked and TSM.db.factionrealm.playerProfessions[playerName] and TSM.db.factionrealm.playerProfessions[playerName][skillName] then
 			TSM.db.factionrealm.playerProfessions[playerName][skillName].level = level
@@ -87,20 +79,20 @@ function TradeSkill:EventHandler(event, ...)
 			TSMAPI.Sync:KeyUpdated(TSM.db.factionrealm.playerProfessions, playerName)
 		end
 	elseif event == "UNIT_SPELLCAST_SUCCEEDED" then
-		local unit, spellID = TSMAPI.Util:Select({1, 5}, ...)
-		if unit ~= "player" or not TSM.db.factionrealm.crafts[spellID] then return end
-		if not TradeSkill.isCrafting or TradeSkill.isCrafting.spellID ~= spellID then return end
+		local unit, _, _, _, spellId = ...
+		if unit ~= "player" or not TSM.db.factionrealm.crafts[spellId] then return end
+		if not TradeSkill.isCrafting or TradeSkill.isCrafting.spellId ~= spellId then return end
 		-- remove one from the queue
-		if TSM.Queue:Remove(spellID, 1) then
+		if TSM.Queue:Remove(spellId, 1) then
 			private:UpdateCooldownsFrame()
 			private:OnProfessionUpdate()
 		end
 		TradeSkill.isCrafting.quantity = TradeSkill.isCrafting.quantity - 1
 	elseif event == "UNIT_SPELLCAST_INTERRUPTED" or event == "UNIT_SPELLCAST_FAILED" or event == "UNIT_SPELLCAST_FAILED_QUIET" then
-		local unit, spellID = TSMAPI.Util:Select({1, 5}, ...)
+		local unit, _, _, _, spellId = ...
 		if unit ~= "player" then return end
 
-		if TradeSkill.isCrafting and spellID == TradeSkill.isCrafting.spellID then
+		if TradeSkill.isCrafting and spellId == TradeSkill.isCrafting.spellId then
 			TradeSkill.isCrafting.quantity = 0
 		end
 	elseif event == "BAG_UPDATE" then
@@ -298,13 +290,18 @@ function private:Create()
 			TradeSkill.Professions:GetFrameInfo(),
 			TradeSkill.Groups:GetFrameInfo(),
 			TradeSkill.Queue:GetFrameInfo(),
+			TradeSkill.Gather:GetFrameInfo(),
 		},
 		handlers = {
-			OnHide = TradeSkill.HideTradeSkill,
+			OnHide = function()
+				if private.noHide then return end
+				private.CloseProfession()
+			end,
 			-- navigation button handlers
 			closeBtn = {
 				OnClick = function(self)
-					private.frame:Hide()
+					TSMAPI.Threading:SendMsg(private.managerThreadId, "HIDE")
+                    TSM.TradeSkill.Gather:ResetSessionOptions()
 				end,
 			},
 			professionsBtn = {
@@ -319,7 +316,7 @@ function private:Create()
 			},
 			gatherBtn = {
 				OnClick = function(self)
-					TradeSkill.Gather:OnButtonClicked()
+					TradeSkill.Gather:OnButtonClicked(private.frame)
 				end,
 			},
 			queueBtn = {
@@ -372,7 +369,7 @@ function private:Create()
 				},
 				craftST = {
 					OnClick = function(self, data, _, button)
-						TradeSkill:CastTradeSkill(data.index, data.quantity)
+						TradeSkill:CastTradeSkill(data.spellId, data.quantity)
 					end,
 				},
 			},
@@ -396,6 +393,11 @@ function private:Create()
 	-- queue frame
 	frame.queue:EnableMouse(true)
 	TSMAPI.Design:SetFrameBackdropColor(frame.queue)
+
+	-- gather frame
+	frame.gather:SetFrameStrata("HIGH")
+	frame.gather:EnableMouse(true)
+	TSMAPI.Design:SetFrameBackdropColor(frame.gather)
 
 	-- professions tab
 	TSMAPI.Design:SetFrameColor(frame.professionsTab.craftInfoFrame)
@@ -423,17 +425,8 @@ function private:CreateSwitchButton()
 		scripts = {"OnClick"},
 		handlers = {
 			OnClick = function(self)
-				private.noHide = true
-				if TSM.db.global.showingDefaultFrame then
-					TSM.db.global.showingDefaultFrame = nil
-					TradeSkill:EventHandler("TRADE_SKILL_SHOW")
-				else
-					TSM.db.global.showingDefaultFrame = true
-					ShowUIPanel(TradeSkillFrame)
-					private.frame:Hide()
-				end
-				private.noHide = nil
-				self:Update()
+				TSM.db.global.showingDefaultFrame = not TSM.db.global.showingDefaultFrame or nil
+				TSMAPI.Threading:SendMsg(private.managerThreadId, "SWITCH")
 			end,
 		},
 	}
@@ -443,25 +436,23 @@ function private:CreateSwitchButton()
 	-- can't specify an OnShow handler on a button built via TSMAPI.GUI:BuildFrame(), so let's hook it
 	TradeSkill:HookScript(btn, "OnShow", function() btn:Update() end)
 	btn.Update = function(self)
+		local parent = TSM.db.global.showingDefaultFrame and TradeSkillFrame or private.frame
+		if not parent then return end
+		self:ClearAllPoints()
+		self:SetParent(parent)
+		local color, text = nil, nil
 		if TSM.db.global.showingDefaultFrame then
-			self:ClearAllPoints()
-			self:SetParent(TradeSkillFrame)
 			self:SetPoint("TOPLEFT", 55, -3)
-			self:SetWidth(60)
-			self:SetHeight(18)
-			self:SetText(TSMAPI.Design:GetInlineColor("link").."TSM|r")
+			color = TSMAPI.Design:GetInlineColor("link")
+			text = "TSM"
 		else
-			if not TradeSkill:GetVisibilityInfo().frame then
-				TSMAPI.Delay:AfterFrame("craftingSwitchBtn", 2, function() self:Update() end)
-				return
-			end
-			self:ClearAllPoints()
-			self:SetParent(private.frame)
 			self:SetPoint("TOPLEFT", 25, -4)
-			self:SetWidth(60)
-			self:SetHeight(18)
-			self:SetText("|cffff0000"..DEFAULT.."|r")
+			color = "|cffff0000"
+			text = DEFAULT
 		end
+		self:SetWidth(60)
+		self:SetHeight(18)
+		self:SetText(color..text.."|r")
 		self:Show()
 	end
 	private.switchBtn = btn
@@ -480,7 +471,7 @@ function private:UpdateCooldownsFrame()
 			local title, level, suggestedGroup, isHeader = GetQuestLogTitle(q)
 			if not isHeader then
 				for l = 1, GetNumQuestLeaderBoards(q) do
-					local text, type, finished = GetQuestLogLeaderBoard(l,q)
+					local text, type, finished = GetQuestLogLeaderBoard(l, q)
 
 					if not finished and type == "item" then
 						local have, need, item = string.match(text,"(%d+)/(%d+) (.+)")
@@ -496,35 +487,33 @@ function private:UpdateCooldownsFrame()
 		end
 	end
 
-	for i=1, GetNumTradeSkills() do
-		local name, _, numAvailable = GetTradeSkillInfo(i)
-		local spellID = TSM:GetSpellID(i)
-		local craft = spellID and TSM.db.factionrealm.crafts[spellID]
-		local cooldown, hasCD = GetTradeSkillCooldown(i)
-		if not cooldown and hasCD and craft and craft.cooldownTimes and craft.cooldownTimes[currentPlayer] and craft.cooldownTimes[currentPlayer].prompt then
+	for _, spellId in ipairs(C_TradeSkillUI.GetFilteredRecipeIDs()) do
+		local info = C_TradeSkillUI.GetRecipeInfo(spellId)
+		local numAvailable = info.numAvailable
+		local craft = TSM.db.factionrealm.crafts[spellId]
+		local cooldown, isDaily = C_TradeSkillUI.GetRecipeCooldown(spellId)
+		if not cooldown and isDaily and craft and craft.cooldownTimes and craft.cooldownTimes[currentPlayer] and craft.cooldownTimes[currentPlayer].prompt then
 			if numAvailable > 0 then
-				tinsert(stData, {cols={{value="|cff00ff00"..name.."|r"}}, index=i, quantity = 1})
+				tinsert(stData, {cols={{value="|cff00ff00"..info.name.."|r"}}, spellId = spellId, quantity = 1})
 				numAvailable = numAvailable - 1
 			else
 				-- we don't have the mats on-hand, so add it to the queue
-				TSM.Queue:SetNumQueued(spellID, 1)
+				TSM.Queue:SetNumQueued(spellId, 1)
 			end
 		end
 
 		local totalNeeded = 0
-		for _,pc in pairs(potentialCrafts) do
-			if pc.item == name then
+		for _, pc in pairs(potentialCrafts) do
+			if pc.item == info.name then
 				totalNeeded = totalNeeded + pc.need
 			end
 		end
 
 		if totalNeeded > 0 then
-			local spellID = TSM:GetSpellID(i)
-
 			if numAvailable >= totalNeeded then
-				tinsert(stData, {cols={{value=format("|cff00ff00%s|r%s",name,totalNeeded == 1 and '' or ' ('..tostring(totalNeeded)..')') }}, index=i, quantity = totalNeeded})
+				tinsert(stData, {cols={{value=format("|cff00ff00%s|r%s",info.name,totalNeeded == 1 and '' or ' ('..tostring(totalNeeded)..')') }}, spellId = spellId, quantity = totalNeeded})
 			else
-				TSM.Queue:SetNumQueued(spellID, totalNeeded)
+				TSM.Queue:SetNumQueued(spellId, totalNeeded)
 			end
 		end
 	end
@@ -545,130 +534,148 @@ end
 -- TradeSkill Show / Hide Functions
 -- ============================================================================
 
-function private.ShowProfessionWindowThread(self)
-	self:SetThreadName("SHOW_PROFESSION_WINDOW")
-	-- wait for the the trade skill to load
-	private.currentProfession = nil
-	while not TradeSkillFrame or not GetNumTradeSkills() or TSM:GetCurrentProfessionName() == "UNKNOWN" or InCombatLockdown() do self:Yield(true) end
+function private.BlizzardProfessionFrameOnHide()
+	if private.noHide then return end
+	private.CloseProfession()
+end
 
-	-- hide our frame if it's currently visible
-	if TradeSkill:GetVisibilityInfo().frame then
+function private.SetBlizzardProfessionFrameVisible(visible)
+	if visible and not (TradeSkillFrame and TradeSkillFrame:IsVisible()) then
+		TradeSkillFrame_LoadUI()
+		TradeSkillFrame:SetScript("OnHide", private.BlizzardProfessionFrameOnHide)
+		ShowUIPanel(TradeSkillFrame)
+		private:CreateSwitchButton()
+		private.switchBtn:Show()
+		private.switchBtn:Update()
+	elseif not visible and TradeSkillFrame then
+		private.noHide = true
+		HideUIPanel(TradeSkillFrame)
+		private.noHide = nil
+	end
+end
+
+function private.SetTSMCraftingProfessionFrameVisible(visible)
+	if visible and not (private.frame and private.frame:IsVisible()) then
+		private:Create()
+		private:CreateSwitchButton()
+		private.frame:Show()
+		private.switchBtn:Show()
+		private.switchBtn:Update()
+		private.frame.professionsBtn:Enable()
+		TradeSkill.Queue:UpdateFrameStatus(private.frame)
+		local isLinked, linkedPlayer = C_TradeSkillUI.IsTradeSkillLinked()
+		local playerName = linkedPlayer or UnitName("player")
+		local professionName = TSM:GetCurrentProfessionName()
+		if not isLinked and TSM.db.factionrealm.playerProfessions[playerName][professionName] and not TSM.db.factionrealm.playerProfessions[playerName][professionName].prompted then
+			private.frame.prompt:Show()
+		else
+			-- show the cooldowns frame first, the profession frame will show automatically if there's no CD crafts to prompt for
+			private.frame.cooldowns:Show()
+			private:UpdateCooldownsFrame()
+		end
+	elseif not visible and private.frame then
 		private.noHide = true
 		private.frame:Hide()
 		private.noHide = nil
 	end
-	
-	-- create the switch button if it doesn't exist and then show it
-	private:CreateSwitchButton()
-	private.switchBtn:Show()
-		
-	-- check if we it's runeforging or a guild profession
-	local isLinked, linkedPlayer = IsTradeSkillLinked()
-	if TSM:GetCurrentProfessionName() == GetSpellInfo(53428) or IsTradeSkillGuild() or (isLinked and (not TSMAPI.Player:GetCharacters()[linkedPlayer] or IsNPCCrafting())) then
-		-- don't show the TSM_Crafting frame
-		TSM:LOG_INFO("Aborting for unsupported profession (isRuneforging=%s, isGuild=%s, linkedPlayer=%s)", TSM:GetCurrentProfessionName() == GetSpellInfo(53428), IsTradeSkillGuild(), tostring(linkedPlayer))
-		private.switchBtn:Hide()
-		private.noShow = nil
-		return
-	end
+end
 
-	-- if we are showing the default frame then return here
-	if TSM.db.global.showingDefaultFrame then
-		TSM:LOG_INFO("Showing default frame")
-		private.noShow = nil
-		return
-	end
+function private.CloseProfession()
+	if not C_TradeSkillUI.GetTradeSkillLine() then return end
+	C_TradeSkillUI.CloseTradeSkill()
+	C_Garrison.CloseGarrisonTradeskillNPC()
+end
 
-	-- we will be showing our crafting frame, so hide Blizzard's
-	TradeSkillFrame:SetScript("OnHide", nil)
-	HideUIPanel(TradeSkillFrame)
-	TradeSkillFrame:SetScript("OnHide", TradeSkill.HideTradeSkill)
+function private.ProfessionScanCompleteCallback()
+	private.scanSuccess = true
+end
 
-	-- clear filters and then wait for the profession to fully load
+function private.ScanOpenProfessionThread(self)
+	-- clear filters
 	TradeSkill:ClearFilters()
-	while TradeSkillCollapseAllButton.collapsed do TradeSkill:ClearFilters() self:Yield(true) end
-	while TSM:GetCurrentProfessionName() == "UNKNOWN" or GetNumTradeSkills() <= 0 do self:Yield(true) end
 
-	-- scan profession
+	-- scan the profession
+	local isLinked, linkedPlayer = C_TradeSkillUI.IsTradeSkillLinked()
 	local playerName = linkedPlayer or UnitName("player")
 	local professionName = TSM:GetCurrentProfessionName()
-	local scanSuccess = nil
-	local scanThreadId = TSM.TradeSkillScanner:ScanProfession(professionName, playerName, isLinked, function() scanSuccess = true end)
-	self:WaitForThread(scanThreadId)
-	TSM:LOG_INFO("TradeSkill scanned (success=%s)", tostring(scanSuccess))
-	if not scanSuccess and not private.noShow then
+	private.scanSuccess = nil
+	self:WaitForThread(TSM.TradeSkillScanner:ScanProfession(professionName, playerName, isLinked, private.ProfessionScanCompleteCallback))
+	TSM:LOG_INFO("TradeSkill scanned (success=%s)", tostring(private.scanSuccess))
+	if not private.scanSuccess and not private.noShow then
 		TSM:Print(L["Crafting failed to scan your profession. Please close and re-open it to to allow Crafting to scan and provide pricing info for this profession."])
 	end
+end
+
+function private.ProfessionWindowManagerHandleShowThread(self)
+	if TSM:GetCurrentProfessionName() ~= "UNKNOWN" and not InCombatLockdown() and C_TradeSkillUI.GetTradeSkillLine() == private.currentProfessionId then return end
+
+	if not TradeSkillFrame then
+		-- need to make sure Blizzard_TradeSkillUI is loaded cause we rely on some of its tables
+		TradeSkillFrame_LoadUI()
+		TradeSkillFrame:SetScript("OnHide", nil)
+		HideUIPanel(TradeSkillFrame)
+		TradeSkillFrame.RecipeList.collapsedCategories = {}
+	end
+
+	-- hide any currently-visible frames
+	private.SetBlizzardProfessionFrameVisible(false)
+	private.SetTSMCraftingProfessionFrameVisible(false)
+
+	-- wait for the the profession to actually load
+	while TSM:GetCurrentProfessionName() == "UNKNOWN" or InCombatLockdown() do self:Yield(true) end
+	private.currentProfessionId = C_TradeSkillUI.GetTradeSkillLine()
+
+	-- check if it's a profession we don't support showing our frame for (runeforging, guild profession, or random linked profession)
+	local isLinked, linkedPlayer = C_TradeSkillUI.IsTradeSkillLinked()
+	if TSM:GetCurrentProfessionName() == GetSpellInfo(53428) or C_TradeSkillUI.IsTradeSkillGuild() or (isLinked and (not TSMAPI.Player:GetCharacters()[linkedPlayer] or C_TradeSkillUI.IsNPCCrafting())) then
+		-- we don't support this profession, so show Blizzard's frame without the switch button
+		TSM:LOG_INFO("Aborting for unsupported profession (isRuneforging=%s, isGuild=%s, linkedPlayer=%s)", TSM:GetCurrentProfessionName() == GetSpellInfo(53428), C_TradeSkillUI.IsTradeSkillGuild(), tostring(linkedPlayer))
+		private.SetBlizzardProfessionFrameVisible(true)
+		TSMAPI:Assert(not private.noShow)
+		return
+	end
+
+	-- scan the profession
+	private.ScanOpenProfessionThread(self)
 
 	if private.noShow then
-		TradeSkill.HideTradeSkill(TradeSkillFrame)
+		private.CloseProfession()
 		private.noShow = nil
 		return
 	end
 
-	private.currentProfession = professionName
-	-- create GUI if it doesn't exist
-	private:Create()
-	-- open GUI to the profession tab
-	private.frame:Show()
-	private.frame.professionsBtn:Enable()
-	TradeSkill.Queue:UpdateFrameStatus(private.frame)
-	if not isLinked and TSM.db.factionrealm.playerProfessions[playerName][professionName] and not TSM.db.factionrealm.playerProfessions[playerName][professionName].prompted then
-		private.frame.prompt:Show()
+	if TSM.db.global.showingDefaultFrame then
+		-- we should just show Blizzard's frame
+		TSM:LOG_INFO("Showing default profession frame")
+		private.SetBlizzardProfessionFrameVisible(true)
 	else
-		-- show the cooldowns frame first, the profession frame will show automatically if there's no CD crafts to prompt for
-		private.frame.cooldowns:Show()
-		private:UpdateCooldownsFrame()
+		-- show our profession window
+		TSM:LOG_INFO("Showing our profession frame")
+		private.SetTSMCraftingProfessionFrameVisible(true)
 	end
-	private.switchBtn:Update()
+	private.currentProfession = TSM:GetCurrentProfessionName()
 end
 
-function private.ShowProfessionWindowNoProfessionThread(self)
-	self:SetThreadName("SHOW_PROFESSION_WINDOW_NONE")
-	private.currentProfession = nil
+function private.ProfessionWindowManagerThread(self)
+	self:SetThreadName("PROFESSION_WINDOW_MANAGER")
 
-	-- hide the switch button since there's no actual profession being shown
-	if private.switchBtn then
-		private.switchBtn:Hide()
-	end
-
-	local playerName = UnitName("player")
-	if not TSM.db.factionrealm.playerProfessions[playerName] then
-		TSMAPI.Sync:SetKeyValue(TSM.db.factionrealm.playerProfessions, playerName, {})
-	end
-	private.currentProfession = "UNKNOWN"
-
-	-- create GUI if it doesn't exist
-	private:Create()
-	-- open GUI to the groups tab
-	private.frame:Show()
-	private.frame.professionsBtn:Disable()
-	private.frame.groupsTab:Show()
-	TradeSkill.Queue:UpdateFrameStatus(private.frame)
-end
-
-function private.OnShowThreadDone()
-	TSMAPI.Threading:Kill(private.showThreadId)
-	private.showThreadId = nil
-end
-
-function TradeSkill.HideTradeSkill(source)
-	if private.noHide then return end
-	if source == TSMCraftingTradeSkillFrame then
-		Lib_CloseDropDownMenus()
-		private.frame:Hide()
-		if TradeSkillFrame then
-			TradeSkillFrame:Show()
-			TradeSkillFrame:Hide()
+	while true do
+		local event = self:ReceiveMsg()
+		if event == "SHOW" then
+			private.ProfessionWindowManagerHandleShowThread(self)
+		elseif event == "SWITCH" then
+			private.SetBlizzardProfessionFrameVisible(TSM.db.global.showingDefaultFrame)
+			private.SetTSMCraftingProfessionFrameVisible(not TSM.db.global.showingDefaultFrame)
+		elseif event == "HIDE" then
+			-- hide any currently-visible frames
+			private.SetBlizzardProfessionFrameVisible(false)
+			private.SetTSMCraftingProfessionFrameVisible(false)
+			private.CloseProfession()
+			private.currentProfessionId = nil
+			private.currentProfession = nil
+		else
+			TSMAPI:Assert(false, "Unexpected event: "..tostring(event))
 		end
-	elseif source == "EVENT" then
-		if not private.frame or not private.frame:IsVisible() then return end
-		private.frame:Hide()
-	elseif source == TradeSkillFrame then
-		CloseTradeSkill()
-		C_Garrison.CloseGarrisonTradeskillNPC()
-	else
-		TSMAPI:Assert(false, "Window was hidden from an unexpected source: "..tostring(source))
 	end
 end
 
@@ -685,24 +692,11 @@ end
 
 function TradeSkill:ClearFilters()
 	Lib_CloseDropDownMenus()
-	local id = TradeSkillLinkDropDown:GetID()
-	local skillupButton = _G["DropDownList" .. id .. "Button1"]
-	if skillupButton and skillupButton.checked and skillupButton.value == CRAFT_IS_MAKEABLE then
-		UIDropDownMenuButton_OnClick(skillupButton)
-	end
-	local makeableButton = _G["DropDownList" .. id .. "Button2"]
-	if makeableButton and makeableButton.checked and makeableButton.value == TRADESKILL_FILTER_HAS_SKILL_UP then
-		UIDropDownMenuButton_OnClick(makeableButton)
-	end
-	TradeSkillOnlyShowMakeable(false)
-	TradeSkillOnlyShowSkillUps(false)
-	TradeSkillSetFilter(-1, -1)
-	SetTradeSkillItemNameFilter("")
-	if TradeSkillCollapseAllButton.collapsed then
-		TradeSkillCollapseAllButton:Click()
-	end
-	ExpandTradeSkillSubClass(0)
-	TradeSkillFrame_Update()
+	C_TradeSkillUI.ClearInventorySlotFilter()
+	C_TradeSkillUI.ClearRecipeCategoryFilter()
+	C_TradeSkillUI.ClearRecipeSourceTypeFilter()
+	C_TradeSkillUI.SetOnlyShowMakeableRecipes(false)
+	C_TradeSkillUI.SetOnlyShowSkillUpRecipes(false)
 	if private.frame then
 		-- reset the search bar
 		private.frame.professionsTab.searchBar:SetTextColor(1, 1, 1, 0.5)
@@ -711,11 +705,11 @@ function TradeSkill:ClearFilters()
 	end
 end
 
-function TradeSkill:CastTradeSkill(index, quantity, vellum)
-	SelectTradeSkill(index)
+function TradeSkill:CastTradeSkill(spellId, quantity, vellum)
+	TradeSkill.Professions:SetSelectedTradeSkill(spellId)
 	quantity = vellum and 1 or quantity
-	DoTradeSkill(index, quantity)
-	TradeSkill.isCrafting = {quantity=quantity, spellID=TSM:GetSpellID(index)}
+	C_TradeSkillUI.CraftRecipe(spellId, quantity)
+	TradeSkill.isCrafting = {quantity=quantity, spellId=spellId}
 	if vellum then
 		UseItemByName(vellum)
 	end
@@ -740,8 +734,7 @@ function TradeSkill:OpenFirstProfession()
 		return
 	end
 	-- they don't have any professions
-	private.OnShowThreadDone()
-	private.showThreadId = TSMAPI.Threading:Start(private.ShowProfessionWindowNoProfessionThread, 0.8, private.OnShowThreadDone)
+	-- FIXME: opening the TSM crafting window without a profession was removed for legion
 end
 
 

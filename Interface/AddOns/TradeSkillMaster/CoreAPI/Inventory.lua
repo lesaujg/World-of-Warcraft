@@ -33,49 +33,42 @@ local GUILD_VAULT_SLOTS_PER_TAB = 98
 -- ============================================================================
 
 function TSMAPI.Inventory:BagIterator(autoBaseItems, includeSoulbound, includeBOA)
-	local bags, b, s = {}, 1, 0
-	for bag = 0, NUM_BAG_SLOTS do
-		if private:IsValidBag(bag) then
-			tinsert(bags, bag)
-		end
-	end
+	local b, s = 0, 0
 
 	local iter
 	iter = function()
-		if bags[b] then
-			if s < GetContainerNumSlots(bags[b]) then
-				s = s + 1
-			else
-				s = 1
-				b = b + 1
-				if not bags[b] then return end
-			end
-
-			local link = GetContainerItemLink(bags[b], s)
-			if not link then
-				-- no item here, try the next slot
-				return iter()
-			end
-			local itemString
-			if autoBaseItems then
-				itemString = TSMAPI.Item:ToBaseItemString(link, true)
-			else
-				itemString = TSMAPI.Item:ToItemString(link)
-			end
-
-			if not itemString then
-				-- ignore invalid item
-				return iter()
-			end
-
-			if not includeSoulbound and TSMAPI.Item:IsSoulbound(bags[b], s, includeBOA) then
-				-- ignore soulbound item
-				return iter()
-			end
-
-			local _, quantity, locked = GetContainerItemInfo(bags[b], s)
-			return bags[b], s, itemString, quantity, locked
+		if s < GetContainerNumSlots(b) then
+			s = s + 1
+		else
+			s = 1
+			b = b + 1
+			if b > NUM_BAG_SLOTS then return end
 		end
+
+		local link = GetContainerItemLink(b, s)
+		if not link then
+			-- no item here, try the next slot
+			return iter()
+		end
+		local itemString
+		if autoBaseItems then
+			itemString = TSMAPI.Item:ToBaseItemString(link, true)
+		else
+			itemString = TSMAPI.Item:ToItemString(link)
+		end
+
+		if not itemString then
+			-- ignore invalid item
+			return iter()
+		end
+
+		if not includeSoulbound and TSMAPI.Item:IsSoulbound(b, s, includeBOA) then
+			-- ignore soulbound item
+			return iter()
+		end
+
+		local _, quantity, locked = GetContainerItemInfo(b, s)
+		return b, s, itemString, quantity, locked
 	end
 
 	return iter
@@ -88,9 +81,7 @@ function TSMAPI.Inventory:BankIterator(autoBaseItems, includeSoulbound, includeB
 		tinsert(bags, REAGENTBANK_CONTAINER)
 	end
 	for bag = NUM_BAG_SLOTS + 1, NUM_BAG_SLOTS + NUM_BANKBAGSLOTS do
-		if private:IsValidBag(bag) then
-			tinsert(bags, bag)
-		end
+		tinsert(bags, bag)
 	end
 
 	local iter
@@ -619,9 +610,14 @@ function private.MailThread(self)
 		if not altName then return end
 		local items = {}
 		for i = 1, ATTACHMENTS_MAX_SEND do
-			local itemString = TSMAPI.Item:ToBaseItemString(GetInboxItemLink(i))
+			local itemString = TSMAPI.Item:ToBaseItemString(GetInboxItemLink(index, i))
 			if itemString then
-				items[itemString] = (items[itemString] or 0) + select(3, GetInboxItem(i))
+				local quantity = nil
+				if select(4, GetBuildInfo()) >= 70000 then
+					items[itemString] = (items[itemString] or 0) + (select(4, GetInboxItem(index, i)) or 0)
+				else
+					items[itemString] = (items[itemString] or 0) + select(3, GetInboxItem(index, i))
+				end
 			end
 		end
 		private:InsertPendingMail(altName, "return_mail", items, time())
@@ -722,9 +718,7 @@ function private:ScanBag(dataTbl)
 	if not private.bagIndexList.bag then
 		private.bagIndexList.bag = {}
 		for bag = 0, NUM_BAG_SLOTS do
-			if private:IsValidBag(bag) then
-				tinsert(private.bagIndexList.bag, bag)
-			end
+			tinsert(private.bagIndexList.bag, bag)
 		end
 	end
 	for _, bag in ipairs(private.bagIndexList.bag) do
@@ -742,9 +736,7 @@ function private:ScanBank(dataTbl)
 	if not private.bagIndexList.bank then
 		private.bagIndexList.bank = { -1 }
 		for bag = NUM_BAG_SLOTS + 1, NUM_BAG_SLOTS + NUM_BANKBAGSLOTS do
-			if private:IsValidBag(bag) then
-				tinsert(private.bagIndexList.bank, bag)
-			end
+			tinsert(private.bagIndexList.bank, bag)
 		end
 	end
 	for _, bag in ipairs(private.bagIndexList.bank) do
@@ -807,7 +799,12 @@ function private:ScanMail(dataTbl)
 			for j = 1, ATTACHMENTS_MAX_RECEIVE do
 				local itemString = TSMAPI.Item:ToBaseItemString(GetInboxItemLink(i, j))
 				if itemString then
-					local _, _, quantity = GetInboxItem(i, j)
+					local quantity = nil
+					if select(4, GetBuildInfo()) >= 70000 then
+						quantity = select(4, GetInboxItem(i, j)) or 0
+					else
+						quantity = select(3, GetInboxItem(i, j))
+					end
 					dataTbl[itemString] = (dataTbl[itemString] or 0) + quantity
 				end
 			end
@@ -820,15 +817,6 @@ end
 -- ============================================================================
 -- Helper Functions
 -- ============================================================================
-
--- Makes sure this bag is an actual bag and not an ammo, soul shard, etc bag
-function private:IsValidBag(bag)
-	if bag == 0 or bag == -1 then return true end
-
-	-- family 0 = bag with no type, family 1/2/4 are special bags that can only hold certain types of items
-	local itemFamily = GetItemFamily(GetInventoryItemLink("player", ContainerIDToInventoryID(bag)))
-	return itemFamily and (itemFamily == 0 or itemFamily > 4)
-end
 
 function private:InsertPendingMail(player, mailType, items, arrivalTime)
 	TSM.db.factionrealm.pendingMail[player] = TSM.db.factionrealm.pendingMail[player] or {}

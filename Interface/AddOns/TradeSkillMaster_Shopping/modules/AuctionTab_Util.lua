@@ -97,39 +97,9 @@ local function GetItemLevel(str)
 	end
 end
 
-local classLookup = {GetAuctionItemClasses()}
-local function GetItemClass(str)
-	for i, class in pairs(classLookup) do
-		if strlower(str) == strlower(class) then
-			return i
-		end
-	end
-end
-
-local subClassLookup = {}
-for i in pairs(classLookup) do
-	subClassLookup[i] = {GetAuctionItemSubClasses(i)}
-end
-local function GetItemSubClass(str, class)
-	if not class or not subClassLookup[class] then return end
-
-	for i, subClass in pairs(subClassLookup[class]) do
-		if strlower(str) == strlower(subClass) then
-			return i
-		end
-	end
-end
-
-local auctionInvTypes = {GetAuctionInvTypes(2,1)}
-local inventoryTypeLookup = {}
-for i=1, #auctionInvTypes, 2 do
-	TSMAPI:Assert(type(auctionInvTypes[i]) == "string")
-	inventoryTypeLookup[strlower(_G[auctionInvTypes[i]])] = (i + 1) / 2
-end
 local function GetItemInventoryType(str)
 	if not str then return end
-	str = strlower(str)
-	return inventoryTypeLookup[str]
+	return TSMAPI.Item:GetInventorySlotIdFromInventorySlotString(str)
 end
 
 local function GetItemRarity(str)
@@ -189,15 +159,15 @@ local function GetSearchFilterOptions(searchTerm)
 			else
 				return false, L["Invalid Item Level"]
 			end
-		elseif not class and GetItemClass(str) then
+		elseif not class and TSMAPI.Item:GetClassIdFromClassString(str) then
 			if not class then
-				class = GetItemClass(str)
+				class = TSMAPI.Item:GetClassIdFromClassString(str)
 			else
 				return false, L["Invalid Item Type"]
 			end
-		elseif GetItemSubClass(str, class) then
+		elseif class and TSMAPI.Item:GetSubClassIdFromSubClassString(str, class) then
 			if not subClass then
-				subClass = GetItemSubClass(str, class)
+				subClass = TSMAPI.Item:GetSubClassIdFromSubClassString(str, class)
 			else
 				return false, L["Invalid Item SubType"]
 			end
@@ -250,7 +220,7 @@ local function GetSearchFilterOptions(searchTerm)
 		minILevel = oldMaxILevel
 	end
 
-	return true, queryString or "", class or 0, subClass or 0, invType or 0, minLevel or 0, maxLevel or 0, minILevel or 0, maxILevel or 0, rarity or 0, usableOnly or 0, exactOnly or nil, evenOnly or nil, maxQuantity or math.huge, maxPrice
+	return true, queryString or "", class or nil, subClass or nil, invType or nil, minLevel or 0, maxLevel or 0, minILevel or 0, maxILevel or 0, rarity or 0, usableOnly or 0, exactOnly or nil, evenOnly or nil, maxQuantity or math.huge, maxPrice
 end
 
 -- gets all the filters for a given search term (possibly semicolon-deliminated list of search terms)
@@ -291,17 +261,17 @@ function AuctionTabUtil:GetMatchingFilter(queries, itemString)
 	local name, _, quality, _, level, class, subClass, _, equipSlot = TSMAPI.Item:GetInfo(itemString)
 	if not name then return end
 	name = strlower(name)
-	class = GetItemClass(class) or 0
-	subClass = GetItemSubClass(subClass, class) or 0
-	local invType = GetItemInventoryType(_G[equipSlot]) or 0
+	class = TSMAPI.Item:GetClassIdFromClassString(class)
+	subClass = TSMAPI.Item:GetSubClassIdFromSubClassString(subClass, class)
+	local invType = GetItemInventoryType(_G[equipSlot])
 	for _, query in ipairs(queries) do
 		local isValid = strfind(name, TSMAPI.Util:StrEscape(strlower(query.name))) and true or false
 		isValid = isValid and (not query.quality or query.quality == 0 or quality >= query.quality)
 		isValid = isValid and (not query.minLevel or query.minLevel == 0 or level >= query.minLevel)
 		isValid = isValid and (not query.maxLevel or query.maxLevel == 0 or level <= query.maxLevel)
-		isValid = isValid and (not query.class or query.class == 0 or class == query.class)
-		isValid = isValid and (not query.subClass or query.subClass == 0 or subClass == query.subClass)
-		isValid = isValid and (not query.invType or query.invType == 0 or invType == query.invType)
+		isValid = isValid and (query.class == nil or class == query.class)
+		isValid = isValid and (query.subClass == nil or subClass == query.subClass)
+		isValid = isValid and (query.invType == nil or invType == query.invType)
 		if isValid then
 			return query
 		end

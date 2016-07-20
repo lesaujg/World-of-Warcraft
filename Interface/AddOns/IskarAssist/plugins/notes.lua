@@ -222,15 +222,18 @@ Notepad.OnInstall = function (plugin)
 	local anim5 = animation:CreateAnimation ("Alpha")
 	
 	anim1:SetOrder (1)
-	anim1:SetChange (-1)
+	anim1:SetFromAlpha (1)
+	anim1:SetToAlpha (0)
 	anim1:SetDuration (0.0)
 	
 	anim4:SetOrder (2)
-	anim4:SetChange (1)
+	anim4:SetFromAlpha (0)
+	anim4:SetToAlpha (1)
 	anim4:SetDuration (0.2)
 	
 	anim5:SetOrder (3)
-	anim5:SetChange (-1)
+	anim5:SetFromAlpha (1)
+	anim5:SetToAlpha (0)
 	anim5:SetDuration (3)
 
 	animation:SetScript ("OnFinished", function (self)

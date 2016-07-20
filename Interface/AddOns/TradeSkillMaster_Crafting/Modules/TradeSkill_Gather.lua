@@ -12,6 +12,7 @@ local Gather = TradeSkill:NewModule("Gather", "AceEvent-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("TradeSkillMaster_Crafting") -- loads the localization table
 local private = { gatherSelection = {} }
 
+
 function Gather:OnEnable()
 	Gather:RegisterEvent("GUILDBANKFRAME_OPENED", "EventHandler")
 	Gather:RegisterEvent("GUILDBANKFRAME_CLOSED", "EventHandler")
@@ -47,7 +48,6 @@ function Gather:ShowGatheringFrame()
 		private.gatherSelection.player = TSM.db.factionrealm.gathering.crafter
 		private.gatherSelection.professions = TSM.db.factionrealm.gathering.professions
 		private.gatheringFrame:Show()
-		private:UpdateGatherSelection(true)
 		if AuctionFrame and AuctionFrame:IsVisible() then
 			Gather:EventHandler("AUCTION_HOUSE_SHOW")
 		elseif BankFrame and BankFrame:IsVisible() then
@@ -63,11 +63,42 @@ function Gather:ShowGatheringFrame()
 	end
 end
 
-function Gather:OnButtonClicked()
-	private.gatheringFrame:Show()
-	private:UpdateGatherSelection()
+function Gather:OnButtonClicked(frame)
+	private.selectionFrame = private.selectionFrame or frame
+	if not TradeSkill:GetVisibilityInfo().frame or TSM.Queue:GetNumItems() == 0 then return end
+	if TradeSkill:GetVisibilityInfo().queue then
+		private.selectionFrame.gather:SetPoint("TOPLEFT", private.selectionFrame.queue, "TOPRIGHT", 2, 0)
+	else
+		private.selectionFrame.gather:SetPoint("TOPLEFT", private.selectionFrame, "TOPRIGHT", 2, 0)
+	end
+
+	private.selectionFrame.gather.disableCheckBox:SetValue(TSM.db.factionrealm.disableCheckBox)
+	private.selectionFrame.gather.ignoreDECheckBox:SetValue(TSM.db.factionrealm.ignoreDECheckBox)
+	private.selectionFrame.gather.evenStacksCheckBox:SetValue(TSM.db.factionrealm.evenStacks)
+	private.selectionFrame.gather.ignoreAlts:SetValue(TSM.db.factionrealm.ignoreAlts)
+	private.selectionFrame.gather.ignoreIntermediate:SetValue(TSM.db.factionrealm.ignoreIntermediate)
+	private.selectionFrame.gather.inkTrade:SetValue(TSM.db.factionrealm.inkTrade)
+
+	if TradeSkill:GetVisibilityInfo().gather then
+		private.selectionFrame.gatherBtn:UnlockHighlight()
+		private.selectionFrame.gather:Hide()
+	else
+		private.selectionFrame.gatherBtn:LockHighlight()
+		private.selectionFrame.gather:Show()
+		private:UpdateGatherSelectionWindow()
+	end
+	private:UpdateGatherSelectionWindow()
 end
 
+function Gather:ResetSessionOptions()
+	if not private.selectionFrame then return end
+	private.selectionFrame.gather.disableCheckBox:SetValue(TSM.db.factionrealm.disableCheckBox)
+	private.selectionFrame.gather.ignoreDECheckBox:SetValue(TSM.db.factionrealm.ignoreDECheckBox)
+	private.selectionFrame.gather.evenStacksCheckBox:SetValue(TSM.db.factionrealm.evenStacks)
+	private.selectionFrame.gather.ignoreAlts:SetValue(TSM.db.factionrealm.ignoreAlts)
+	private.selectionFrame.gather.ignoreIntermediate:SetValue(TSM.db.factionrealm.ignoreIntermediate)
+	private.selectionFrame.gather.inkTrade:SetValue(TSM.db.factionrealm.inkTrade)
+end
 function Gather:ResetGathering(hide)
 	if private.gatheringFrame and hide then
 		private.gatheringFrame:Hide()
@@ -81,7 +112,251 @@ function Gather:ResetGathering(hide)
 	TSM.db.factionrealm.gathering.selectedSourceStatus = {}
 	TSM.db.factionrealm.gathering.selectedSources = {}
 	TSM.db.factionrealm.gathering.shortItems = {}
+	TSM.db.factionrealm.gathering.sessionOptions = {}
 	private.currentSource = nil
+end
+
+function Gather:GetFrameInfo()
+	local BFC = TSMAPI.GUI:GetBuildFrameConstants()
+
+	return {
+		type = "Frame",
+		key = "gather",
+		hidden = true,
+		size = { 300, 450 },
+		points = { { "TOPLEFT", BFC.PARENT, "TOPRIGHT", 2, 0 } },
+		scripts = { "OnMouseDown", "OnMouseUp", "OnShow" },
+		children = {
+			{
+				type = "Text",
+				text = "TSM_Crafting - " .. L["Gathering"],
+				size = { 0, 20 },
+				points = { { "TOPLEFT" }, { "TOPRIGHT" } },
+			},
+			{
+				type = "HLine",
+				offset = -25,
+			},
+			{
+				type = "Text",
+				key = "instructions",
+				text = L["First select a crafter"],
+				size = { 0, 20 },
+				justify = { "CENTER", "CENTER" },
+				points = { { "TOPLEFT", 5, -28 }, { "TOPRIGHT", -5, -28 } },
+			},
+			{
+				type = "HLine",
+				offset = -52,
+			},
+			{
+				type = "Dropdown",
+				key = "playerDropdown",
+				label = L["Crafter"],
+				points = { { "TOPLEFT", 5, -55 }, { "TOPRIGHT", -5, -55 } },
+				scripts = { "OnValueChanged" },
+			},
+			{
+				type = "Dropdown",
+				key = "professionDropdown",
+				label = L["Professions"],
+				multiselect = true,
+				points = { { "TOPLEFT", 5, -100 }, { "TOPRIGHT", -5, -100 } },
+				scripts = { "OnValueChanged" },
+			},
+			{
+				type = "HLine",
+				offset = -150,
+			},
+			{
+				type = "Text",
+				text = L["Override global options for the session"],
+				size = { 0, 20 },
+				justify = { "CENTER", "CENTER" },
+				points = { { "TOPLEFT", BFC.PREV, "BOTTOMLEFT" }, { "TOPRIGHT", BFC.PREV, "BOTTOMRIGHT" } },
+			},
+			{
+				type = "CheckBox",
+				key = "disableCheckBox",
+				label = L["Disable Crafting AH Search"],
+				value = TSM.db.factionrealm.disableCheckBox,
+				tooltip = L["Toggle to switch between Crafting and Normal searches at the Auction House."],
+				size = { 190, 25 },
+				points = { { "TOPLEFT", BFC.PREV, "BOTTOMLEFT" } },
+				--scripts = { "OnValueChanged" },
+			},
+			{
+				type = "CheckBox",
+				key = "ignoreDECheckBox",
+				value = TSM.db.factionrealm.ignoreDECheckBox,
+				label = L["Disable DE Search"],
+				tooltip = L["If enabled the crafting search at the Auction House will ignore Disenchantable Items."],
+				size = { 155, 25 },
+				points = { { "TOPLEFT", BFC.PREV, "BOTTOMLEFT" } },
+				--scripts = { "OnValueChanged" },
+			},
+			{
+				type = "CheckBox",
+				key = "evenStacksCheckBox",
+				value = TSM.db.factionrealm.evenStacks,
+				label = L["Even Stacks Only"],
+				tooltip = L["If enabled the crafting search will only search for multiples of 5."],
+				size = { 190, 25 },
+				points = { { "TOPLEFT", BFC.PREV, "BOTTOMLEFT" } },
+				--scripts = { "OnValueChanged" },
+			},
+			{
+				type = "CheckBox",
+				key = "ignoreAlts",
+				value = TSM.db.factionrealm.ignoreAlts,
+				label = L["Ignore Alts"],
+				tooltip = L["Toggle to ignore gathering from Alts."],
+				size = { 190, 25 },
+				points = { { "TOPLEFT", BFC.PREV, "BOTTOMLEFT" } },
+				--scripts = { "OnValueChanged" },
+			},
+			{
+				type = "CheckBox",
+				key = "ignoreIntermediate",
+				value = TSM.db.factionrealm.ignoreIntermediate,
+				label = L["Ignore Intermediate Crafting"],
+				tooltip = L["Toggle to ignore intermediate crafting."],
+				size = { 210, 25 },
+				points = { { "TOPLEFT", BFC.PREV, "BOTTOMLEFT" } },
+				--scripts = { "OnValueChanged" },
+			},
+			{
+				type = "CheckBox",
+				key = "inkTrade",
+				value = TSM.db.factionrealm.inkTrade,
+				label = L["Trade Inks at the vendor"],
+				tooltip = L["Toggle to suggest trading inks at the vendor."],
+				size = { 190, 25 },
+				points = { { "TOPLEFT", BFC.PREV, "BOTTOMLEFT" } },
+				--scripts = { "OnValueChanged" },
+			},
+			{
+				type = "CheckBox",
+				key = "buyAH",
+				value = TSM.db.factionrealm.buyAH,
+				label = L["Always Buy from AH"],
+				tooltip = L["If enabled, buying from AH will always be suggested even if you have enough via other sources. If disabled only short items will be searched for at the AH"],
+				size = { 190, 25 },
+				points = { { "TOPLEFT", BFC.PREV, "BOTTOMLEFT" } },
+			},
+			{
+				type = "Button",
+				key = "gatherSelectionButton",
+				text = L["Start Gathering"],
+				textHeight = 24,
+				size = { 0, 40 },
+				points = { { "BOTTOMLEFT", 5, 5 }, { "BOTTOMRIGHT", -5, 5 } },
+				scripts = { "OnClick" },
+			},
+		},
+		handlers = {
+			OnShow = function(self)
+				if not self.helpBtn then
+					local helpPlateInfo = {
+						FramePos = { x = 0, y = 0 },
+						FrameSize = { width = private.selectionFrame.gather:GetWidth(), height = private.selectionFrame.gather:GetHeight() },
+						{
+							ButtonPos = { x = 100, y = -50 },
+							HighLightBox = { x = 0, y = -50, width = private.selectionFrame.gather:GetWidth(), height = 50 },
+							ToolTipDir = "RIGHT",
+							ToolTipText = L["You can use this dropdown to switch between crafters."]
+						},
+						{
+							ButtonPos = { x = 100, y = -100 },
+							HighLightBox = { x = 0, y = -100, width = private.selectionFrame.gather:GetWidth(), height = 50 },
+							ToolTipDir = "RIGHT",
+							ToolTipText = L["Once a crafter is selected, you can use this dropdown to select the profession(s) you want to gather for."]
+						},
+						{
+							ButtonPos = { x = 100, y = -150 },
+							HighLightBox = { x = 0, y = -150, width = private.selectionFrame.gather:GetWidth(), height = 50 },
+							ToolTipDir = "RIGHT",
+							ToolTipText = L["Once a crafter and profession(s) are selected, Click this button to start gathering."]
+						},
+					}
+
+					self.helpBtn = CreateFrame("Button", nil, private.selectionFrame.gather, "MainHelpPlateButton")
+					self.helpBtn:SetPoint("CENTER", private.selectionFrame.gather, "TOPRIGHT", 0, 0)
+					self.helpBtn:SetScript("OnClick", function() TradeSkill:ToggleHelpPlate(private.selectionFrame.gather, helpPlateInfo, self.helpBtn, true) end)
+					self.helpBtn:SetScript("OnHide", function() if HelpPlate_IsShowing(helpPlateInfo) then TradeSkill:ToggleHelpPlate(private.selectionFrame.gather, helpPlateInfo, self.helpBtn, false) end end)
+					if not TSM.db.global.helpPlatesShown.gatherSelection then
+						TSM.db.global.helpPlatesShown.gatherSelection = true
+						TradeSkill:ToggleHelpPlate(private.selectionFrame.gather, helpPlateInfo, self.helpBtn, false)
+					end
+				end
+				private:UpdateGatherSelectionWindow()
+			end,
+			OnMouseDown = function(self)
+				self:GetParent():StartMoving()
+			end,
+			OnMouseUp = function(self)
+				self:GetParent():StopMovingOrSizing()
+			end,
+			playerDropdown = {
+				OnValueChanged = function(self, value)
+					private.gatherSelection.player = value
+					private.gatherSelection.professions = nil
+					private:UpdateGatherSelectionWindow()
+				end,
+			},
+			professionDropdown = {
+				OnValueChanged = function(self, profession, value)
+					private.gatherSelection.professions[profession] = value or nil
+					private:UpdateGatherSelectionWindow()
+				end,
+			},
+			disableCheckBox = {
+				OnValueChanged = function(self, value)
+					TSM.db.factionrealm.gathering.sessionOptions.disableCheckBox = value
+				end,
+			},
+			ignoreDECheckBox = {
+				OnValueChanged = function(self, value)
+					TSM.db.factionrealm.gathering.sessionOptions.ignoreDECheckBox = value
+				end,
+			},
+			evenStacksCheckBox = {
+				OnValueChanged = function(self, value)
+					TSM.db.factionrealm.gathering.sessionOptions.evenStacks = value
+				end,
+			},
+			ignoreAlts = {
+				OnValueChanged = function(self, value)
+					TSM.db.factionrealm.gathering.sessionOptions.ignoreAlts = value
+				end,
+			},
+			ignoreIntermediate = {
+				OnValueChanged = function(self, value)
+					TSM.db.factionrealm.gathering.sessionOptions.ignoreIntermediate = value
+				end,
+			},
+			inkTrade = {
+				OnValueChanged = function(self, value)
+					TSM.db.factionrealm.gathering.sessionOptions.inkTrade = value
+				end,
+			},
+			gatherSelectionButton = {
+				OnClick = function(self)
+					TSM.db.factionrealm.gathering.sessionOptions = {
+						disableCheckBox = private.selectionFrame.gather.disableCheckBox:GetValue(),
+						ignoreDECheckBox = private.selectionFrame.gather.ignoreDECheckBox:GetValue(),
+						evenStacks = private.selectionFrame.gather.evenStacksCheckBox:GetValue(),
+						ignoreAlts = private.selectionFrame.gather.ignoreAlts:GetValue(),
+						ignoreIntermediate = private.selectionFrame.gather.ignoreIntermediate:GetValue(),
+						inkTrade = private.selectionFrame.gather.inkTrade:GetValue(),
+						buyAH = private.selectionFrame.gather.buyAH:GetValue()
+					}
+					Gather:StartGathering(private.gatherSelection.player, private.gatherSelection.professions)
+					private.gatherSelection = {}
+				end,
+			},
+		},
+	}
 end
 
 function Gather:CreateMainFrame()
@@ -107,79 +382,78 @@ function Gather:CreateMainFrame()
 				textFont = { TSMAPI.Design:GetContentFont(), 16 },
 				points = { { "TOP", BFC.PARENT, 0, -5 } },
 			},
-			Gather:CreateOptionsFrame(),
 			{
 				type = "Button",
-				key = "optionsBtn",
-				text = L["<< Show Options"],
+				key = "modeToggleBtn",
+				text = L["Intermediate Crafting"],
 				textHeight = 14,
-				size = {120, 30},
-				points = { { "TOPLEFT", BFC.PARENT, 10, -30 } },
-				scripts = {"OnClick"},
-			},
-			{
-				type = "Text",
-				text = "",
-				key = "label",
-				textFont = { TSMAPI.Design:GetContentFont(), 16 },
-				points = { { "TOP", BFC.PARENT, 0, -30 } },
+				size = { 105, 30 },
+				points = { { "TOPLEFT", 5, -35 }, { "RIGHT", BFC.PARENT, "CENTER", -5, 0 } },
+				scripts = { "OnClick" },
 			},
 			{
 				type = "HLine",
 				offset = -70,
 			},
 			{
-				type = "ScrollingTableFrame",
-				key = "matST",
-				headFontSize = 16,
-				stCols = { { name = L["Available Sources"], width = 1 } },
-				stDisableSelection = true,
-				points = { { "TOPLEFT", 5, -73 }, { "BOTTOMLEFT", 5, 73 }, { "RIGHT", BFC.PARENT, "CENTER", -3, 0 } },
-				scripts = { "OnClick" },
-			},
-			{
-				type = "VLine",
-				offset = 0,
-				points = { { "TOPLEFT", "matST", "TOPRIGHT", 2, 3 }, { "BOTTOMLEFT", "matST", "BOTTOMRIGHT", 2, -2 } },
-			},
-			{
-				type = "ScrollingTableFrame",
-				key = "sourceST",
-				headFontSize = 16,
-				stCols = { { name = L["Selected Sources"], width = 1 } },
-				stDisableSelection = true,
-				points = { { "TOPLEFT", "matST", "TOPRIGHT", 6, 0 }, { "BOTTOMLEFT", "matST", "BOTTOMRIGHT", 6, 0 }, { "TOPRIGHT", -5, -5 } },
-				scripts = { "OnClick", "OnEnter", "OnLeave" },
-			},
-			{
-				type = "HLine",
-				offset = 0,
-				size = { 0, 2 },
-				points = { { "TOPLEFT", "matST", "BOTTOMLEFT", -5, -2 }, { "TOPRIGHT", "sourceST", "BOTTOMRIGHT", 5, -2 } },
-			},
-			{
 				type = "Frame",
-				key = "buttonsFrame",
-				points = { { "TOPLEFT", BFC.PREV, "BOTTOMLEFT", 5, -10 }, { "BOTTOMRIGHT", BFC.PARENT, "BOTTOMRIGHT", -5, 33 } },
+				key = "mainFrame",
+				points = { { "TOPLEFT", 5, -73 }, { "BOTTOMLEFT", 5, 33 }, { "RIGHT", BFC.PARENT, "RIGHT", -3, 0 } },
 				children = {
 					{
-						type = "Button",
-						key = "gatherItemsBtn",
-						text = L["Gather Items"],
-						disabled = true,
-						textHeight = 18,
-						size = { 105, 30 },
-						points = { { "LEFT", 2, 0 }, { "RIGHT", BFC.PARENT, "CENTER", -2, 0 } },
+						type = "ScrollingTableFrame",
+						key = "matST",
+						headFontSize = 16,
+						stCols = { { name = L["Sources"], width = 1 } },
+						stDisableSelection = true,
+						points = { { "TOPLEFT", BFC.PARENT, "TOPLEFT" }, { "BOTTOMLEFT", BFC.PARENT, "BOTTOMLEFT", -3, 33 }, { "RIGHT", BFC.PARENT, "CENTER", -3, 33 } },
 						scripts = { "OnClick" },
 					},
 					{
-						type = "Button",
-						key = "gatherStopBtn",
-						text = L["Stop Gathering"],
-						textHeight = 18,
-						size = { 105, 30 },
-						points = { { "LEFT", BFC.PARENT, "CENTER", 2, 0 }, { "RIGHT", -2, 0 } },
-						scripts = { "OnClick" },
+						type = "VLine",
+						offset = 0,
+						points = { { "TOPLEFT", "matST", "TOPRIGHT", 2, 3 }, { "BOTTOMLEFT", "matST", "BOTTOMRIGHT", 2, -2 } },
+					},
+					{
+						type = "ScrollingTableFrame",
+						key = "sourceST",
+						headFontSize = 16,
+						stCols = { { name = L["Current Source"], width = 1 } },
+						stDisableSelection = true,
+						points = { { "TOPLEFT", "matST", "TOPRIGHT", 6, 0 }, { "BOTTOMLEFT", "matST", "BOTTOMRIGHT", 6, 0 }, { "TOPRIGHT", -5, -5 } },
+						scripts = { "OnClick", "OnEnter", "OnLeave" },
+					},
+					{
+						type = "HLine",
+						offset = 0,
+						size = { 0, 2 },
+						points = { { "TOPLEFT", "matST", "BOTTOMLEFT", -5, -2 }, { "TOPRIGHT", "sourceST", "BOTTOMRIGHT", 5, -2 } },
+					},
+					{
+						type = "Frame",
+						key = "buttonsFrame",
+						points = { { "TOPLEFT", BFC.PREV, "BOTTOMLEFT", 5, -10 }, { "BOTTOMRIGHT", BFC.PARENT, "BOTTOMRIGHT", -5, 5 } },
+						children = {
+							{
+								type = "Button",
+								key = "gatherItemsBtn",
+								text = L["Gather Items"],
+								disabled = true,
+								textHeight = 18,
+								size = { 105, 30 },
+								points = { { "LEFT", 2, 0 }, { "RIGHT", BFC.PARENT, "CENTER", -2, 0 } },
+								scripts = { "OnClick" },
+							},
+							{
+								type = "Button",
+								key = "gatherStopBtn",
+								text = L["Stop Gathering"],
+								textHeight = 18,
+								size = { 105, 30 },
+								points = { { "LEFT", BFC.PARENT, "CENTER", 2, 0 }, { "RIGHT", -2, 0 } },
+								scripts = { "OnClick" },
+							},
+						},
 					},
 				},
 			},
@@ -198,66 +472,116 @@ function Gather:CreateMainFrame()
 					},
 				},
 			},
+			{
+				type = "Frame",
+				key = "interFrame",
+				hidden = true,
+				points = { { "TOPLEFT", 5, -73 }, { "BOTTOMLEFT", 5, 33 }, { "RIGHT", BFC.PARENT, "RIGHT", -3, 0 } },
+				children = {
+					{
+						type = "ScrollingTableFrame",
+						key = "interSelST",
+						headFontSize = 16,
+						stCols = { { name = L["Selection"], width = 1 } },
+						stDisableSelection = true,
+						points = { { "TOPLEFT", BFC.PARENT, "TOPLEFT" }, { "BOTTOMLEFT", BFC.PARENT, "BOTTOMLEFT", -3, 33 }, { "RIGHT", BFC.PARENT, "CENTER", -3, 33 } },
+						--scripts = { "OnClick" },
+					},
+					{
+						type = "VLine",
+						offset = 0,
+						points = { { "TOPLEFT", "interSelST", "TOPRIGHT", 2, 3 }, { "BOTTOMLEFT", "interSelST", "BOTTOMRIGHT", 2, -2 } },
+					},
+					{
+						type = "ScrollingTableFrame",
+						key = "interCraftST",
+						headFontSize = 16,
+						stCols = { { name = L["Craftable"], width = 1 } },
+						stDisableSelection = true,
+						points = { { "TOPLEFT", "interSelST", "TOPRIGHT", 6, 0 }, { "BOTTOMLEFT", "interSelST", "BOTTOMRIGHT", 6, 0 }, { "TOPRIGHT", -5, -5 } },
+						--scripts = { "OnClick", "OnEnter", "OnLeave" },
+					},
+					{
+						type = "HLine",
+						offset = 0,
+						size = { 0, 2 },
+						points = { { "TOPLEFT", "interSelST", "BOTTOMLEFT", -5, -2 }, { "TOPRIGHT", "interCraftST", "BOTTOMRIGHT", 5, -2 } },
+					},
+					{
+						type = "Frame",
+						key = "interBtnFrame",
+						points = { { "TOPLEFT", BFC.PREV, "BOTTOMLEFT", 5, -10 }, { "BOTTOMRIGHT", BFC.PARENT, "BOTTOMRIGHT", -5, 5 } },
+						children = {
+
+						},
+					},
+				},
+			},
 		},
 		handlers = {
-			optionsBtn = {
-				OnClick = function(self)
-					if private.gatheringFrame.gatheroptions:IsShown() then
-						private.gatheringFrame.gatheroptions:Hide()
-						private.gatheringFrame.optionsBtn:SetText(L["<< Show Options"])
+			modeToggleBtn = {
+				OnClick = function()
+					if private.gatheringFrame.mainFrame:IsShown() then
+						private.gatheringFrame.mainFrame:Hide()
+						private.gatheringFrame.interFrame:Show()
+						private.gatheringFrame.modeToggleBtn:SetText(L["Gathering"])
 					else
-						private.gatheringFrame.gatheroptions:Show()
-						private.gatheringFrame.optionsBtn:SetText(L[">> Hide Options"])
+						private.gatheringFrame.interFrame:Hide()
+						private.gatheringFrame.mainFrame:Show()
+						private.gatheringFrame.modeToggleBtn:SetText(L["Intermediate Crafting"])
 					end
 				end,
 			},
-			matST = {
-				OnClick = function(self, data)
-					if not (data.isTitle or data.isSubTitle) and data.sourceName ~= "none" then
-						TSM.Gather:updateSelectedSource(data.sourceName, data.itemString, data.quantity, data.spellID, data.spellQty)
-						Gather.Update()
-					end
-				end,
-			},
-			sourceST = {
-				OnClick = function(self, data, _, button)
-					if not data.isTitle and data.sourceName == "auction" then
-						if TSMAPI.Auction:IsTabVisible("Shopping") then
-							local disableCrafting = TSM.db.factionrealm.disableCheckBox
-							local ignoreDE = TSM.db.factionrealm.ignoreDECheckBox
-							if button == "LeftButton" then
-								TSM.Gather:ShoppingSearch(data.itemString, data.quantity, disableCrafting, ignoreDE)
-							elseif button == "RightButton" then
-								TSM.Gather:ShoppingSearch(data.itemString, math.huge, disableCrafting, ignoreDE)
-							end
-						else
-							TSM:Printf(L["Please switch to the Shopping Tab at the AH to perform the gathering search."])
+			mainFrame = {
+				matST = {
+					OnClick = function(self, data)
+						if not (data.isTitle or data.isSubTitle) and data.sourceName ~= "none" then
+							TSM.Gather:updateSelectedSource(data.sourceName, data.itemString, data.quantity, data.spellID, data.spellQty)
+							Gather.Update()
 						end
-					end
-				end,
-				OnEnter = function(self, data)
-					if data.isTitle or data.sourceName ~= "auction" then return end
-					GameTooltip:SetOwner(self, "ANCHOR_NONE")
-					GameTooltip:SetPoint("LEFT", self, "RIGHT")
-					GameTooltip:AddLine(L["Perform a manual AH search for this item"])
-					GameTooltip:AddLine(L["Left click will set max quantity as quantity required"])
-					GameTooltip:AddLine(L["Right click will search with no max quantity"])
-					GameTooltip:Show()
-				end,
-				OnLeave = function()
-					GameTooltip:Hide()
-				end,
-			},
-			buttonsFrame = {
-				gatherItemsBtn = {
-					OnClick = function(self)
-						TSM.Gather:gatherItems(private.currentSource, private.currentTask, TSM.db.factionrealm.disableCheckBox, TSM.db.factionrealm.ignoreDECheckBox)
 					end,
 				},
-				gatherStopBtn = {
-					OnClick = function(self)
-						TradeSkill.Gather:ResetGathering(true)
+				sourceST = {
+					OnClick = function(self, data, _, button)
+						if not data.isTitle and data.sourceName == "auction" then
+							if TSMAPI.Auction:IsTabVisible("Shopping") then
+								local disableCrafting = TSM.db.factionrealm.gathering.sessionOptions.disableCheckBox
+								local ignoreDE = TSM.db.factionrealm.gathering.sessionOptions.ignoreDECheckBox
+								local evenStacks = TSM.db.factionrealm.gathering.sessionOptions.evenStacks
+								if button == "LeftButton" then
+									TSM.Gather:ShoppingSearch(data.itemString, data.quantity, disableCrafting, ignoreDE, evenStacks)
+								elseif button == "RightButton" then
+									TSM.Gather:ShoppingSearch(data.itemString, math.huge, disableCrafting, ignoreDE, evenStacks)
+								end
+							else
+								TSM:Printf(L["Please switch to the Shopping Tab at the AH to perform the gathering search."])
+							end
+						end
 					end,
+					OnEnter = function(self, data)
+						if data.isTitle or data.sourceName ~= "auction" then return end
+						GameTooltip:SetOwner(self, "ANCHOR_NONE")
+						GameTooltip:SetPoint("LEFT", self, "BOTTOM")
+						GameTooltip:AddLine(L["Perform a manual AH search for this item"])
+						GameTooltip:AddLine(L["Left click will set max quantity as quantity required"])
+						GameTooltip:AddLine(L["Right click will search with no max quantity"])
+						GameTooltip:Show()
+					end,
+					OnLeave = function()
+						GameTooltip:Hide()
+					end,
+				},
+				buttonsFrame = {
+					gatherItemsBtn = {
+						OnClick = function(self)
+							TSM.Gather:gatherItems(private.currentSource, private.currentTask, TSM.db.factionrealm.gathering.sessionOptions.disableCheckBox, TSM.db.factionrealm.gathering.sessionOptionsignoreDECheckBox, TSM.db.factionrealm.gathering.sessionOptions.evenStacks)
+						end,
+					},
+					gatherStopBtn = {
+						OnClick = function(self)
+							TradeSkill.Gather:ResetGathering(true)
+						end,
+					},
 				},
 			},
 			optionsFrame = {
@@ -276,24 +600,9 @@ function Gather:CreateMainFrame()
 	private.gatheringFrame = TSMAPI.GUI:BuildFrame(frameInfo)
 	TSMAPI.Design:SetFrameBackdropColor(private.gatheringFrame)
 
-	-- options frame
-	private.gatheringFrame.gatheroptions:EnableMouse(true)
-	private.gatheringFrame.gatheroptions:SetFrameStrata("HIGH")
-	TSMAPI.Design:SetFrameBackdropColor(private.gatheringFrame.gatheroptions)
-
-	private.gatheringFrame.gatheroptions.disableCheckBox:SetValue(TSM.db.factionrealm.disableCheckBox)
-	private.gatheringFrame.gatheroptions.ignoreDECheckBox:SetValue(TSM.db.factionrealm.ignoreDECheckBox)
-	private.gatheringFrame.gatheroptions.ignoreIntermediate:SetValue(TSM.db.factionrealm.ignoreIntermediate)
-
 	local helpPlateInfo = {
 		FramePos = { x = 0, y = 0 },
 		FrameSize = { width = private.gatheringFrame:GetWidth(), height = private.gatheringFrame:GetHeight() },
-		{
-			ButtonPos = { x = 50, y = -23 },
-			HighLightBox = { x = 10, y = -30, width = 120, height = 30 },
-			ToolTipDir = "UP",
-			ToolTipText = L["This toggles the display of the options frame."]
-		},
 		{
 			ButtonPos = { x = 100, y = -180 },
 			HighLightBox = { x = 0, y = -70, width = private.gatheringFrame:GetWidth() / 2, height = private.gatheringFrame:GetHeight() - 140 },
@@ -337,124 +646,13 @@ function Gather:CreateMainFrame()
 	end
 end
 
-function Gather:CreateOptionsFrame()
-	local BFC = TSMAPI.GUI:GetBuildFrameConstants()
-	return {
-		type = "Frame",
-		key = "gatheroptions",
-		hidden = true,
-		size = { 420, 300 },
-		points = { { "TOPRIGHT", BFC.PARENT, "TOPLEFT", -2, 0 } },
-		scripts = { "OnMouseDown", "OnMouseUp" },
-		children = {
-			{
-				type = "CheckBox",
-				key = "disableCheckBox",
-				label = L[" Disable Crafting AH Search"],
-				tooltip = L["Toggle to switch between Crafting and Normal searches at the Auction House."],
-				size = { 190, 25 },
-				points = { { "TOPLEFT", 5, -5} },
-				scripts = { "OnValueChanged" },
-			},
-			{
-				type = "CheckBox",
-				key = "ignoreDECheckBox",
-				label = L[" Disable DE Search"],
-				tooltip = L["If enabled the crafting search at the Auction House will ignore Disenchantable Items."],
-				size = { 155, 25 },
-				points = { { "TOPLEFT", BFC.PREV, "BOTTOMLEFT" } },
-				scripts = { "OnValueChanged" },
-			},
-			{
-				type = "CheckBox",
-				key = "ignoreAlts",
-				label = L[" Ignore Alts"],
-				tooltip = L["Toggle to ignore gathering from Alts."],
-				size = { 190, 25 },
-				points = { { "TOPLEFT", BFC.PREV, "BOTTOMLEFT" } },
-				scripts = { "OnValueChanged" },
-			},
-			{
-				type = "CheckBox",
-				key = "ignoreIntermediate",
-				label = L[" Ignore Intermediate Crafting"],
-				tooltip = L["Toggle to ignore intermediate crafting."],
-				size = { 190, 25 },
-				points = { { "TOPLEFT", BFC.PREV, "BOTTOMLEFT" } },
-				scripts = { "OnValueChanged" },
-			},
-			{
-				type = "HLine",
-				offset = -200,
-			},
-			{
-				type = "Dropdown",
-				key = "playerDropdown",
-				label = L["Select a Crafter"],
-				points = { { "TOPLEFT", BFC.PREV, "BOTTOMLEFT" } },
-				scripts = { "OnValueChanged" },
-			},
-			{
-				type = "Dropdown",
-				key = "professionDropdown",
-				label = L["Select one or more Professions"],
-				multiselect = true,
-				points = { { "TOPLEFT", BFC.PREV, "TOPRIGHT" } },
-				scripts = { "OnValueChanged" },
-			},
-		},
-		handlers = {
-			OnMouseDown = function(self)
-				self:GetParent():StartMoving()
-			end,
-			OnMouseUp = function(self)
-				self:GetParent():StopMovingOrSizing()
-			end,
-			playerDropdown = {
-				OnValueChanged = function(self, value)
-					private.gatherSelection.player = value
-					private.gatherSelection.professions = nil
-					private:UpdateGatherSelection()
-				end,
-			},
-			professionDropdown = {
-				OnValueChanged = function(self, profession, value)
-					private.gatherSelection.professions[profession] = value or nil
-					private:UpdateGatherSelection()
-				end,
-			},
-			disableCheckBox = {
-				OnValueChanged = function(self, value)
-					TSM.db.factionrealm.disableCheckBox = value
-				end,
-			},
-			ignoreDECheckBox = {
-				OnValueChanged = function(self, value)
-					TSM.db.factionrealm.ignoreDECheckBox = value
-				end,
-			},
-			ignoreAlts = {
-				OnValueChanged = function(self, value)
-					TSM.db.factionrealm.ignoreAlts = value
-					Gather:Update(true)
-				end,
-			},
-			ignoreIntermediate = {
-				OnValueChanged = function(self, value)
-					TSM.db.factionrealm.ignoreIntermediate = value
-					Gather:Update(true)
-				end,
-			},
-		},
-	}
-end
-
 -- ============================================================================
 -- Gather Selection Frame Update Functions
 -- ============================================================================
 
-function private:UpdateGatherSelection(onEnable)
-	if not private.gatheringFrame then return end
+function private:UpdateGatherSelectionWindow()
+	if not TradeSkill:GetVisibilityInfo().gather then return end
+
 	-- create table of crafters
 	local queuedCrafts = TSM.Queue:GetStatus()
 
@@ -474,18 +672,20 @@ function private:UpdateGatherSelection(onEnable)
 			end
 		end
 	end
-	private.gatherSelection.player = private.gatherSelection.player or (hasCurrentPlayer and currentPlayerName) or next(crafters)
-	private.gatheringFrame.gatheroptions.playerDropdown:SetList(crafters)
-	private.gatheringFrame.gatheroptions.playerDropdown:SetValue(private.gatherSelection.player)
+	private.gatherSelection.player = private.gatherSelection.player or (hasCurrentPlayer and currentPlayerName) or (numCrafters == 1 and next(crafters))
+	private.selectionFrame.gather.playerDropdown:SetList(crafters)
+	private.selectionFrame.gather.playerDropdown:SetValue(private.gatherSelection.player)
 	if not private.gatherSelection.player then
 		-- wait for user to choose a player
-		private.gatheringFrame.gatheroptions.playerDropdown:SetValue()
-		private.gatheringFrame.gatheroptions.professionDropdown:SetDisabled(true)
-		private.gatheringFrame.gatheroptions.professionDropdown:SetValue({})
-		--private.gatheringFrame.gatheroptions.gatherSelectionButton:Disable()
+		private.selectionFrame.gather.instructions:SetText(L["First select a crafter"])
+		private.selectionFrame.gather.playerDropdown:SetValue()
+		private.selectionFrame.gather.professionDropdown:SetDisabled(true)
+		private.selectionFrame.gather.professionDropdown:SetValue({})
+		private.selectionFrame.gather.gatherSelectionButton:Disable()
 		return
 	end
 
+	private.selectionFrame.gather.instructions:SetText(L["Select profession(s) and click start"])
 	-- create table of professions
 	local professions = {}
 	for profession in pairs(queuedCrafts) do
@@ -493,7 +693,7 @@ function private:UpdateGatherSelection(onEnable)
 			professions[profession] = profession
 		end
 	end
-	private.gatheringFrame.gatheroptions.professionDropdown:SetList(professions)
+	private.selectionFrame.gather.professionDropdown:SetList(professions)
 	if not private.gatherSelection.professions then
 		private.gatherSelection.professions = {}
 		for profession in pairs(professions) do
@@ -506,21 +706,24 @@ function private:UpdateGatherSelection(onEnable)
 		private.gatherSelection.professions[currentProfession] = true
 	end
 
-	if next(private.gatherSelection.professions) and not onEnable then
-		Gather:StartGathering(private.gatherSelection.player, private.gatherSelection.professions)
+	if next(private.gatherSelection.professions) then
+		private.selectionFrame.gather.gatherSelectionButton:Enable()
+	else
+		private.selectionFrame.gather.gatherSelectionButton:Disable()
 	end
-	private.gatheringFrame.gatheroptions.professionDropdown:SetDisabled(false)
+	private.selectionFrame.gather.professionDropdown:SetDisabled(false)
 	for profession in pairs(professions) do
-		private.gatheringFrame.gatheroptions.professionDropdown:SetItemValue(profession, private.gatherSelection.professions[profession])
+		private.selectionFrame.gather.professionDropdown:SetItemValue(profession, private.gatherSelection.professions[profession])
 	end
 end
+
 
 -- ============================================================================
 -- Gathering Frame Update Functions
 -- ============================================================================
 
 function Gather:StartGathering(player, professions)
-	Gather:ResetGathering()
+	private.gatheringFrame:Hide()
 	TSM.db.factionrealm.gathering.gatheredMats = false
 	local queuedMats = TSM.Queue:GetMatsByProfession(professions)
 
@@ -538,6 +741,7 @@ function Gather:StartGathering(player, professions)
 		TSM.db.factionrealm.gathering.crafter = player
 		TSM.db.factionrealm.gathering.professions = professions
 		TSM.db.factionrealm.gathering.neededMats = neededMats
+		private.gatheringFrame:Show()
 		Gather:Update(true)
 	end
 end
@@ -573,14 +777,13 @@ end
 
 function Gather:QueueUpdate()
 	if not private.gatheringFrame or not private.gatheringFrame:IsVisible() then return end
-	private:UpdateGatherSelection(true)
 	Gather:Update()
 end
 
 function Gather:Update(firstRun)
 	if not private.gatheringFrame or not private.gatheringFrame:IsVisible() then return end
 	if not TSM.db.factionrealm.gathering.crafter or not next(TSM.db.factionrealm.gathering.neededMats) then return end
-
+	private.gatheringFrame.modeToggleBtn:SetDisabled(TSM.db.factionrealm.gathering.sessionOptions.ignoreIntermediate)
 	-- recheck the craft queue and update neededMats
 	local queuedMats = TSM.Queue:GetMatsByProfession(TSM.db.factionrealm.gathering.professions)
 	local neededMats = {}
@@ -622,87 +825,14 @@ function Gather:Update(firstRun)
 		TSM.db.factionrealm.gathering.shortItems = shortItems
 	end
 
-	--select sources automatically on firstRun
-	if firstRun then
-		for item, source in pairs(sources) do
-			for sourceName, data in pairs(source) do
-				if sourceName ~= "crafting" and sourceName ~= "transform" and sourceName ~= "vendorTrade" then
-					local total = 0
-					for task, taskQuantity in pairs(data) do
-						total = total + taskQuantity
-					end
-					TSM.Gather:updateSelectedSource(sourceName, item, total)
-				end
-			end
-		end
-		for item, source in pairs(sources) do
-			local lastSourceName, lastTotal
-			local count = 0
-			for sourceName, data in pairs(source) do
-				if sourceName ~= "crafting" then
-					local total = 0
-					count = count + 1
-					lastSourceName = sourceName
-					for task, taskQuantity in pairs(data) do
-						total = total + taskQuantity
-					end
-					lastTotal = total
-				end
-			end
-			if count == 1 and not TSM.db.factionrealm.gathering.selectedSourceStatus[lastSourceName .. "|" .. item] then
-				TSM.Gather:updateSelectedSource(lastSourceName, item, lastTotal)
-			end
-		end
-	end
-
-	--auto select from crafter
-	for item, source in pairs(sources) do
-		for sourceName, data in pairs(source) do
-			if sourceName == crafter then
-				local total = 0
-				for task, taskQuantity in pairs(data) do
-					total = total + taskQuantity
-				end
-				if not TSM.db.factionrealm.gathering.selectedSourceStatus[sourceName .. "|" .. item] then
-					TSM.Gather:updateSelectedSource(sourceName, item, total)
-				end
-			end
-		end
-	end
-
-	--tidy up old selections that are no longer valid
-	for selected in pairs(TSM.db.factionrealm.gathering.selectedSourceStatus) do
-		local sourceName, itemString = strsplit("|", selected)
-		if not TSM.db.factionrealm.gathering.selectedSources[itemString] or not TSM.db.factionrealm.gathering.selectedSources[itemString][sourceName] then
-			TSM.Gather:updateSelectedSource(sourceName, itemString)
-		end
-	end
-	for itemString, sources in pairs(TSM.db.factionrealm.gathering.selectedSources) do
-		local total = 0
-		TSM.db.factionrealm.gathering.selectedSources[itemString]["AH"] = false
-		for source, quantity in pairs(sources) do
-			if source ~= "total" and source ~= "AH" then
-				total = total + quantity
-			end
-			if source == "auction" then
-				TSM.db.factionrealm.gathering.selectedSources[itemString]["AH"] = true
-			end
-		end
-		if total > 0 then
-			TSM.db.factionrealm.gathering.selectedSources[itemString]["total"] = total
-		else
-			TSM.db.factionrealm.gathering.selectedSources[itemString] = nil
-		end
-	end
-
 	for itemString, quantity in pairs(neededMats) do
 		local need = max(quantity - TSMAPI.Inventory:GetTotalQuantity(itemString), 0)
 		local color
 		local crafterQty = TSMAPI.Inventory:GetBagQuantity(itemString, crafter) + TSMAPI.Inventory:GetReagentBankQuantity(itemString, crafter)
 
 		if crafterQty < quantity then
-			local selectedQuantity = TSM.db.factionrealm.gathering.selectedSources[itemString] and TSM.db.factionrealm.gathering.selectedSources[itemString]["total"] or 0
-			local selectedAH = TSM.db.factionrealm.gathering.selectedSources[itemString] and TSM.db.factionrealm.gathering.selectedSources[itemString]["AH"]
+			local selectedQuantity = sources[itemString] and sources[itemString]["selected"] or 0
+			local selectedAH = sources[itemString] and sources[itemString]["ahQty"]
 			if selectedAH and selectedQuantity >= (quantity - crafterQty) then
 				color = "|cff00ff00"
 			elseif selectedQuantity >= (quantity - crafterQty) then
@@ -718,46 +848,40 @@ function Gather:Update(firstRun)
 			for item, source in pairs(sources) do
 				if item == itemString then
 					local rowText, subRowText
-					local leader
+					local leader = "     "
 					local quantity = 0
 					for sourceName, data in pairs(source) do
-						if TSM.db.factionrealm.gathering.selectedSourceStatus[sourceName .. "|" .. item] then
-							leader = "     "
-						else
-							leader = "|cffaaaaaa     "
-						end
-						local total = 0
-						for task, taskQuantity in pairs(data) do
-							total = total + taskQuantity
-						end
-						quantity = total
-						if sourceName == "crafting" then
-							rowText = format("%s|r", leader .. L["Intermediate Craft"])
-							tinsert(stData, { cols = { { value = rowText } }, isSubTitle = true, itemString = itemString, name = itemName, sourceName = sourceName, quantity = quantity })
-							rowInserted = true
-							for spellID, taskQuantity in pairs(data) do
-								local spellData = TSM.db.factionrealm.crafts[spellID]
-								local spellQuantity = ceil(quantity / spellData.numResult)
-								if TSM.db.factionrealm.gathering.selectedSourceStatus[spellID .. "|" .. item] then
-									leader = "     "
-								end
-								subRowText = format("%s|r", leader .. "     " .. GetSpellInfo(spellID))
-								tinsert(stData, { cols = { { value = subRowText } }, isTitle = false, spellID = spellID, spellQty = spellQuantity, itemString = itemString, name = itemName, sourceName = sourceName, quantity = quantity })
+						if sourceName ~= "selected" and sourceName ~= "ahQty" then
+							local total = 0
+							for task, taskQuantity in pairs(data) do
+								total = total + taskQuantity
 							end
-						else
-							if sourceName == "auction" then
-								rowText = format("%s|r", leader .. L["Buy From AH"])
-							elseif sourceName == "vendorBuy" then
-								rowText = format("%s|r", leader .. L["Buy From Vendor"])
-							elseif sourceName == "vendorTrade" then
-								rowText = format("%s|r", leader .. L["Vendor Trade"])
-							elseif sourceName == "transform" then
-								rowText = format("%s|r", leader .. L["Transform"])
+							quantity = total
+							if sourceName == "crafting" then
+								rowText = format("%s|r", leader .. L["Intermediate Craft"])
+								tinsert(stData, { cols = { { value = rowText } }, isSubTitle = true, itemString = itemString, name = itemName, sourceName = sourceName, quantity = quantity })
+								rowInserted = true
+--								for spellID, taskQuantity in pairs(data) do
+--									local spellData = TSM.db.factionrealm.crafts[spellID]
+--									local spellQuantity = ceil(quantity / spellData.numResult)
+--									subRowText = format("%s|r", leader .. "     " .. GetSpellInfo(spellID) .. " (" .. spellQuantity .. ")")
+--									tinsert(stData, { cols = { { value = subRowText } }, isTitle = false, spellID = spellID, spellQty = spellQuantity, itemString = itemString, name = itemName, sourceName = sourceName, quantity = quantity })
+--								end
 							else
-								rowText = format("%s|r", leader .. L["Retrieve From "] .. sourceName .. " (" .. min(shortItems[item], quantity) .. ")")
+								if sourceName == "auction" then
+									rowText = format("%s|r", leader .. L["Buy From AH"])
+								elseif sourceName == "vendorBuy" then
+									rowText = format("%s|r", leader .. L["Buy From Vendor"])
+								elseif sourceName == "vendorTrade" then
+									rowText = format("%s|r", leader .. L["Vendor Trade"])
+								elseif sourceName == "transform" then
+									rowText = format("%s|r", leader .. L["Transform"])
+								else
+									rowText = format("%s|r", leader .. L["Retrieve From "] .. sourceName .. " (" .. min(shortItems[item], quantity) .. ")")
+								end
+								tinsert(stData, { cols = { { value = rowText } }, isTitle = false, itemString = itemString, name = itemName, sourceName = sourceName, quantity = quantity })
+								rowInserted = true
 							end
-							tinsert(stData, { cols = { { value = rowText } }, isTitle = false, itemString = itemString, name = itemName, sourceName = sourceName, quantity = quantity })
-							rowInserted = true
 						end
 					end
 				end
@@ -771,7 +895,7 @@ function Gather:Update(firstRun)
 	sort(stData, private.SortSources)
 
 
-	private.gatheringFrame.matST:SetData(stData)
+	private.gatheringFrame.mainFrame.matST:SetData(stData)
 
 	-- populate the selected sources
 	stData = {}
@@ -782,7 +906,7 @@ function Gather:Update(firstRun)
 		local altTasks = {}
 		for item, source in pairs(sources) do
 			for sourceName, data in pairs(source) do
-				if TSM.db.factionrealm.gathering.selectedSourceStatus[sourceName .. "|" .. item] then
+				if sourceName ~= "selected" and sourceName ~= "ahQty" then
 					for task, taskQuantity in pairs(data) do
 						if sourceName == "auction" then
 							auctions[item] = taskQuantity
@@ -832,7 +956,7 @@ function Gather:Update(firstRun)
 	end
 
 	-- store the selected sources and create availableMats
-	--TSM.db.factionrealm.gathering.selectedSources = CopyTable(tempData)
+	TSM.db.factionrealm.gathering.selectedSources = tempData
 	TSM.db.factionrealm.gathering.availableMats = {}
 	local availableMats = {}
 
@@ -858,9 +982,6 @@ function Gather:Update(firstRun)
 					else
 						locationText = L["Mail To "] .. crafter
 					end
-					if private.currentSource == charName and private.currentTask == location then
-						color = "|cff00ff00"
-					end
 					local rowAdded = false
 					for item, quantity in pairs(items) do
 						local rowQty = min(quantity, (location ~= "bags" and (shortItems[item] or quantity) - TSMAPI.Inventory:GetBagQuantity(item, charName)) or quantity)
@@ -871,6 +992,13 @@ function Gather:Update(firstRun)
 								headerAdded = true
 							end
 							if not rowAdded then
+								if private.currentSource == charName and private.currentTask == location then
+									color = "|cff00ff00"
+								elseif private.currentSource == charName and private.currentTask == "mail" and location == "bags" then
+									color = "|cff00ff00"
+								else
+									color = ""
+								end
 								rowText = format(" %s|r", color .. leader .. locationText)
 								tinsert(stData, { cols = { { value = rowText } }, location = location, sourceName = data.source })
 								rowAdded = true
@@ -900,6 +1028,8 @@ function Gather:Update(firstRun)
 				end
 				if private.currentSource == crafter and private.currentTask == location then
 					color = "|cff00ff00"
+				else
+					color = ""
 				end
 				rowText = format(" %s|r", color .. leader .. locationText)
 				tinsert(stData, { cols = { { value = rowText } }, location = location, sourceName = data.source })
@@ -957,9 +1087,6 @@ function Gather:Update(firstRun)
 				else
 					methodText = L["Convert"]
 				end
-				--				if private.currentSource == crafter and private.currentTask == location then
-				--					color = "|cff00ff00"
-				--				end
 				rowText = format(" %s|r", color .. leader .. methodText)
 				tinsert(stData, { cols = { { value = rowText } }, location = method, sourceName = data.source })
 				for item, quantity in pairs(items) do
@@ -991,18 +1118,24 @@ function Gather:Update(firstRun)
 		end
 	end
 
-	private.gatheringFrame.sourceST:SetData(stData)
+	private.gatheringFrame.mainFrame.sourceST:SetData(stData)
+
+	-- populate intermediate crafts
+--	stData = {}
+--	for item, source in pairs(sources) do
+--		for sourceName, data in pairs(source) do
+--			if sourceName == "crafting" then
+--				for task, taskQuantity in pairs(data) do
 
 	-- update available mats if at a valid source
 	if private.currentSource and private.currentTask then
 		if private.currentSource ~= crafter and private.currentTask == "mail" and availableMats[private.currentSource] and availableMats[private.currentSource]["bags"] then
-			TSM.db.factionrealm.gathering.availableMats = CopyTable(availableMats[private.currentSource]["bags"])
+			TSM.db.factionrealm.gathering.availableMats = availableMats[private.currentSource]["bags"]
 		elseif private.currentSource == "crafting" and availableMats["crafting"] and availableMats["crafting"][TSM:GetCurrentProfessionName()] then
 			local craftingMats = {}
 			local bagTotals = TSM:GetInventoryTotals()
-			for i = 1, GetNumTradeSkills() do
-				local spellID = TSM:GetSpellID(i)
-				if spellID and availableMats["crafting"][TSM:GetCurrentProfessionName()][spellID] then
+			for _, spellID in ipairs(C_TradeSkillUI.GetFilteredRecipeIDs()) do
+				if availableMats["crafting"][TSM:GetCurrentProfessionName()][spellID] then
 					local bagTotals = TSM:GetInventoryTotals()
 					local craft = TSM.db.factionrealm.crafts[spellID]
 					-- figure out how many we can craft with mats in our bags
@@ -1016,35 +1149,34 @@ function Gather:Update(firstRun)
 				end
 			end
 			if next(craftingMats) then
-				TSM.db.factionrealm.gathering.availableMats = CopyTable(craftingMats)
+				TSM.db.factionrealm.gathering.availableMats = craftingMats
 			end
 		elseif availableMats[private.currentSource] and availableMats[private.currentSource][private.currentTask] then
-			TSM.db.factionrealm.gathering.availableMats = CopyTable(availableMats[private.currentSource][private.currentTask])
+			TSM.db.factionrealm.gathering.availableMats = availableMats[private.currentSource][private.currentTask]
 		end
 	end
 
-	private.gatheringFrame.buttonsFrame.gatherItemsBtn:SetText(L["Gather Items"])
+	private.gatheringFrame.mainFrame.buttonsFrame.gatherItemsBtn:SetText(L["Gather Items"])
 	if next(TSM.db.factionrealm.gathering.availableMats) then
-		private.gatheringFrame.buttonsFrame.gatherItemsBtn:Enable()
+		private.gatheringFrame.mainFrame.buttonsFrame.gatherItemsBtn:Enable()
 		if private.currentSource == "vendor" then
-			private.gatheringFrame.buttonsFrame.gatherItemsBtn:SetText(L["Buy Vendor Items"])
+			private.gatheringFrame.mainFrame.buttonsFrame.gatherItemsBtn:SetText(L["Buy Vendor Items"])
 		elseif private.currentSource ~= crafter and private.currentTask == "mail" then
-			private.gatheringFrame.buttonsFrame.gatherItemsBtn:SetText(L["Mail Items"])
+			private.gatheringFrame.mainFrame.buttonsFrame.gatherItemsBtn:SetText(L["Mail Items"])
 		elseif private.currentTask == "buy" then
-			private.gatheringFrame.buttonsFrame.gatherItemsBtn:SetText(L["Buy Items"])
+			private.gatheringFrame.mainFrame.buttonsFrame.gatherItemsBtn:SetText(L["Buy Items"])
 		elseif private.currentSource == "crafting" then
-			private.gatheringFrame.buttonsFrame.gatherItemsBtn:SetText(L["Craft Next"])
+			private.gatheringFrame.mainFrame.buttonsFrame.gatherItemsBtn:SetText(L["Craft Next"])
 		elseif private.currentSource == "bags" and private.currentTask == "transform" then
-			private.gatheringFrame.buttonsFrame.gatherItemsBtn:SetText(L["Transform Next"])
+			private.gatheringFrame.mainFrame.buttonsFrame.gatherItemsBtn:SetText(L["Transform Next"])
 		end
 	else
-		private.gatheringFrame.buttonsFrame.gatherItemsBtn:Disable()
+		private.gatheringFrame.mainFrame.buttonsFrame.gatherItemsBtn:Disable()
 	end
 end
 
 function Gather:EventHandler(event)
-	if not private.gatheringFrame then return
-	end
+	if not private.gatheringFrame then return end
 
 	if event == "GUILDBANKFRAME_OPENED" then
 		private.currentSource = UnitName("player")
@@ -1052,28 +1184,28 @@ function Gather:EventHandler(event)
 	elseif event == "GUILDBANKFRAME_CLOSED" then
 		private.currentSource = nil
 		private.currentTask = nil
-		private.gatheringFrame.buttonsFrame.gatherItemsBtn:Disable()
+		private.gatheringFrame.mainFrame.buttonsFrame.gatherItemsBtn:Disable()
 	elseif event == "BANKFRAME_OPENED" then
 		private.currentSource = UnitName("player")
 		private.currentTask = "bank"
 	elseif event == "BANKFRAME_CLOSED" then
 		private.currentSource = nil
 		private.currentTask = nil
-		private.gatheringFrame.buttonsFrame.gatherItemsBtn:Disable()
+		private.gatheringFrame.mainFrame.buttonsFrame.gatherItemsBtn:Disable()
 	elseif event == "MERCHANT_SHOW" then
 		private.currentSource = "vendor"
 		private.currentTask = "buy"
 	elseif event == "MERCHANT_CLOSED" then
 		private.currentSource = nil
 		private.currentTask = nil
-		private.gatheringFrame.buttonsFrame.gatherItemsBtn:Disable()
+		private.gatheringFrame.mainFrame.buttonsFrame.gatherItemsBtn:Disable()
 	elseif event == "MAIL_SHOW" then
 		private.currentSource = UnitName("player")
 		private.currentTask = "mail"
 	elseif event == "MAIL_CLOSED" then
 		private.currentSource = nil
 		private.currentTask = nil
-		private.gatheringFrame.buttonsFrame.gatherItemsBtn:Disable()
+		private.gatheringFrame.mainFrame.buttonsFrame.gatherItemsBtn:Disable()
 	elseif event == "AUCTION_HOUSE_SHOW" then
 		TSM.Gather.gatherQuantity = nil
 		TSM.Gather.gatherItem = nil
@@ -1084,14 +1216,14 @@ function Gather:EventHandler(event)
 		TSM.Gather.gatherItem = nil
 		private.currentSource = nil
 		private.currentTask = nil
-		private.gatheringFrame.buttonsFrame.gatherItemsBtn:Disable()
+		private.gatheringFrame.mainFrame.buttonsFrame.gatherItemsBtn:Disable()
 	elseif event == "TRADE_SKILL_SHOW" then
 		private.currentSource = "crafting"
 		private.currentTask = "craft"
 	elseif event == "TRADE_SKILL_CLOSE" then
 		private.currentSource = nil
 		private.currentTask = nil
-		private.gatheringFrame.buttonsFrame.gatherItemsBtn:Disable()
+		private.gatheringFrame.mainFrame.buttonsFrame.gatherItemsBtn:Disable()
 	elseif event == "BAG_UPDATE" then
 		if not private.currentSource then
 			if private:canTransform() then

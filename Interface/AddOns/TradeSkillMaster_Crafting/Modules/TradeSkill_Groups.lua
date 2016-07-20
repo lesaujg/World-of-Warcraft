@@ -13,7 +13,6 @@ local L = LibStub("AceLocale-3.0"):GetLocale("TradeSkillMaster_Crafting") -- loa
 local private = {}
 
 
-
 -- ============================================================================
 -- Module Functions
 -- ============================================================================
@@ -91,7 +90,7 @@ function Groups:GetFrameInfo()
 							ToolTipText = L["Click here to restock the selected groups based on their Crafting operations."]
 						},
 					}
-					
+
 					self.helpBtn = CreateFrame("Button", nil, private.frame.groupsTab, "MainHelpPlateButton")
 					self.helpBtn:SetPoint("CENTER", private.frame, "TOPLEFT", 0, 0)
 					self.helpBtn:SetScript("OnClick", function() TradeSkill:ToggleHelpPlate(private.frame, helpPlateInfo, self.helpBtn, true) end)
@@ -101,7 +100,7 @@ function Groups:GetFrameInfo()
 						TradeSkill:ToggleHelpPlate(private.frame, helpPlateInfo, self.helpBtn, false)
 					end
 				end
-				self.createBtn:SetDisabled(IsTradeSkillLinked())
+				self.createBtn:SetDisabled(C_TradeSkillUI.IsTradeSkillLinked())
 				private.frame.groupsBtn:LockHighlight()
 				private.frame.professionsBtn:UnlockHighlight()
 				private.frame.professionsTab:Hide()

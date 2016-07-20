@@ -1067,7 +1067,7 @@ function lib:GenerateTooltipMethodTable() -- Sets up hooks to give the quantity 
 			OnTooltipCleared(self)
 			local reg = tooltipRegistry[self]
 			reg.ignoreOnCleared = true
-			local _,_,q,_,cu = GetInboxItem(index)
+			local _,_,_,q,_,cu = GetInboxItem(index, 1)
 			reg.quantity = q
 			reg.additional.event = "SetInboxItem"
 			reg.additional.eventIndex = index
