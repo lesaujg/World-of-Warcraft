@@ -342,7 +342,8 @@ function private:InboxUpdate()
 			end
 			local itemDesc = (quantity > 0 and format("%s (%d)", itemLink, quantity)) or (quantity == -1 and L["Multiple Items"]) or "---"
 
-			if hasItem == 1 and itemLink and strfind(subject, "^" .. TSMAPI.Util:StrEscape(format(AUCTION_EXPIRED_MAIL_SUBJECT, TSMAPI.Item:GetInfo(itemLink)))) then
+			local name = TSMAPI.Item:GetInfo(itemLink) or "?"
+			if hasItem == 1 and itemLink and strfind(subject, "^" .. TSMAPI.Util:StrEscape(format(AUCTION_EXPIRED_MAIL_SUBJECT, name))) then
 				mailInfo[i] = format(L["Expired: %s | %s"], itemDesc, FormatDaysLeft(daysLeft, i))
 			elseif cod > 0 then
 				mailInfo[i] = format(L["COD: %s | %s | (%s) | %s | %s"], itemDesc, TSMAPI:MoneyToString(cod, redColor), quantity > 0 and TSMAPI:MoneyToString(floor(cod / quantity + 0.5), redColor) or "---", sender or "---", FormatDaysLeft(daysLeft, i))
@@ -437,7 +438,7 @@ function private:CanLootMailIndex(index, force)
 		for j = 1, ATTACHMENTS_MAX_RECEIVE do
 			local link = GetInboxItemLink(index, j)
 			local itemString = TSMAPI.Item:ToItemString(link)
-			local qantity = nil
+			local quantity = nil
 			if select(4, GetBuildInfo()) >= 70000 then
 				quantity = select(4, GetInboxItem(index, j)) or 0
 			else

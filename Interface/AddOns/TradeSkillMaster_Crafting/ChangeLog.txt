@@ -1,3 +1,6 @@
+v3.1.5
+*Fixed bug with profession searching.
+
 v3.1.4
 *Removed some debug prints.
 

@@ -257,7 +257,7 @@ function private.CheckSendMail(destination, currentSubject, ...)
 
 	if codAmount ~= 0 then
 		for i = 1, 12 do
-			local itemName, _, count = GetSendMailItem(i)
+			local itemName, _, _, count = GetSendMailItem(i)
 			if itemName and count then
 				if not subject then
 					subject = itemName

@@ -1,6 +1,7 @@
 CrossRealmAssist = LibStub("AceAddon-3.0"):NewAddon("CrossRealmAssist", "AceEvent-3.0", "AceConsole-3.0", "AceTimer-3.0")
 local addon = CrossRealmAssist;
 local wholib = LibStub:GetLibrary('LibWho-2.0'):Library()
+local realmInfo = LibStub:GetLibrary('LibRealmInfo')
 local ScrollingTable = LibStub("ScrollingTable");
 local ldb = LibStub("LibDataBroker-1.1")
 local minimapIcon = LibStub("LibDBIcon-1.0")
@@ -9,18 +10,22 @@ local db
 local homeRealm, realmSep, gui, btRefresh, btSettings, btQuick, btManual, lbRealm, lbStatus, playerName, lfgui, lfgTabSelected, lfgTable, lbThrottle, curLfgGroup, sheduledScan, wasInGroup, inInstance
 local settingsMenu
 local hintShown
-local cbHideGroups, cbHideRaids, cbHideNoAutoinv
+local btFilterCount, cbHideNoAutoinv, edFilterText
 
 local tabs = {}
-local curRealmStat, curPartyStat
+local curRealmStat
 local scanstate=0
 local recentRealms={}
 local recentgroups={}
 local autoScanGroups={}
 local active=false
 local allLanguageTable={}
+local extraColumns
+local tableTemplate
+local filterString
+local filterByCountId=1
 
-local lfgGroups={
+addon.lfgGroups={
     6, -- Custom
     10, -- Ashran
     1, -- Quests
@@ -44,13 +49,35 @@ local SettingsDefaults={
         minimap = {},
         widgetPos=DefaultWidgetPos,
         quickJoinHint = true,
-        quickJoin={[6]=1,[10]=1},
-        allLanguages = true
+        quickJoin={[6]=1},
+        allLanguages = true,
+        stoplist = {"no hop","nohop","no realm","kick"},
+        priorityList = {"realm hop","realmhop","garrison"},
+        lfgPanelScale = 1.0, uiScale = 1.0, listItemCount=15,
+        extraColumns = {}
     }
+}
+local filterByCountList = {
+    {text="Any number of players",min=1,max=40},
+    {text="Groups (1-5)",min=1,max=5},
+    {text="Raids (6-40)",min=6,max=40},
+    {text="Non-full groups (1-4)",min=1,max=4},
+    {text="Non-full raids (6-35)",min=6,max=35}
 }
 
 
 -- Utils functions
+
+
+local function searchInList(name, list)
+    if list and name then
+        local lname = string.lower(name);
+        for i=1, #list do
+            if string.find(lname, list[i], 1, true) then return true end
+        end
+    end
+    return false;
+end
 
 local function PlayerName(fullname)
     fullname = fullname or "???-???"
@@ -63,8 +90,12 @@ local function canJoinGroup()
     return (not IsInGroup()) or (UnitIsGroupLeader('player') and not IsInRaid())
 end
 
-local function sortByWeight(a,b)
-    return b.weight < a.weight
+local function sortByTypeAndName(a,b)
+    if a.type == b.type then
+		return a.name < b.name
+	else 
+		return a.type < b.type;
+	end
 end
 
 
@@ -161,19 +192,29 @@ local function addTooltipLineIcon(predicat, text, icon, r, g, b, wrap)
     end
 end
 
+local function getJoinedAgo(name)
+    if recentgroups[name] then
+        return GetTime() - recentgroups[name].time
+    end
+end
+
 local function WeightLfgItem(id, forAutoJoin)
-    local _, action, caption, desc, voice, ilvl, time, bnetfr, charfr, guild, delisted, fullname, pcount, autoinv = C_LFGList.GetSearchResultInfo(id)
+    local _, action, caption, desc, voice, ilvl, unk1, time, bnetfr, charfr, guild, delisted, fullname, pcount, autoinv = C_LFGList.GetSearchResultInfo(id)
     if delisted then return 0 end
     local name,realm = PlayerName(fullname);
+    local ldesc = caption .. "|" .. desc;
+    if searchInList(ldesc, db.global.stoplist) then return 0 end
+    local isHopGroup = searchInList(ldesc, db.global.priorityList);
     if forAutoJoin then
-        if not autoinv or pcount >= 35 or pcount <= 5 or recentgroups[fullname] then return 0 end
+        if not autoinv or recentgroups[fullname] or (not isHopGroup and (pcount >= 35 or pcount <= 5)) then return 0 end
     end
 
     local autoinvWeight = autoinv and 5 or 2
+    local hopCoef = isHopGroup and 3 or 1
 
     local visCoef = 1
     if recentgroups[fullname] then
-        local ago = GetTime() - recentgroups[fullname].time;
+        local ago = getJoinedAgo(fullname)
         visCoef = math.min(1,ago/600)
     end
 
@@ -186,20 +227,21 @@ local function WeightLfgItem(id, forAutoJoin)
     end
 
     local countWeight = 4 -- count weight
-    if pcount >= 39 or pcount <= 1 then countWeight = 1
-    elseif pcount >= 35 or pcount <= 5 then countWeight = 2
-    elseif pcount >= 30 or pcount <= 10 then countWeight = 3
-    else countWeight = 4 end
+    if not isHopGroup then
+        if pcount >= 39 or pcount <= 1 then countWeight = 1
+        elseif pcount >= 35 or pcount <= 5 then countWeight = 2
+        elseif pcount >= 30 or pcount <= 10 then countWeight = 3 end
+    end
 
     local ageWeight = 2
     if time > 1200 then ageWeight = 4
     elseif time > 300 then ageWeight = 3 end
 
-    return leaderRealm * countWeight * visCoef * autoinvWeight * ageWeight;
+    return leaderRealm * countWeight * visCoef * autoinvWeight * ageWeight * hopCoef;
 end
 
 local function AddLfgGroupInfo(id, short)
-    local _, action, caption, desc, voice, ilvl, time, bnetfr, charfr, guild, delisted, fullname, pcount, autoinv = C_LFGList.GetSearchResultInfo(id)
+    local _, action, caption, desc, voice, ilvl, unk1, time, bnetfr, charfr, guild, delisted, fullname, pcount, autoinv = C_LFGList.GetSearchResultInfo(id)
     local friends = bnetfr+charfr+guild
     GameTooltip:ClearLines()
     GameTooltip:AddLine(caption,1,1,1)
@@ -218,7 +260,7 @@ local function AddLfgGroupInfo(id, short)
         addTooltipLineIcon(ilvl > 0, "Min. ilvl: "..ilvl, READY_CHECK_WAITING_TEXTURE, 1, 1, 0)
         addTooltipLineIcon(voice ~= "", "Voice: "..voice, READY_CHECK_WAITING_TEXTURE, 1, 1, 0)
         addTooltipLineIcon(friends > 0, "Friends: "..friends, READY_CHECK_WAITING_TEXTURE, 1, 1, 0)
-        addTooltipLineIcon(autoinv, "Autoinvite!", READY_CHECK_READY_TEXTURE, 0, 1, 0)
+        addTooltipLineIcon(autoinv, "Autoaccept!", READY_CHECK_READY_TEXTURE, 0, 1, 0)
         local visitinfo = recentgroups[fullname]
         if visitinfo then
             local ago = GetTime() - visitinfo.time;
@@ -240,7 +282,7 @@ local function updateTableData(rowFrame, cellFrame, data, cols, row, realrow, co
     if fShow then
         local rowdata = table:GetRow(realrow);
         local icons = cellFrame.icons
-        local _, action, caption, desc, voice, ilvl, time, bnetfr, charfr, guild, delisted, fullname, pcount, autoinv = C_LFGList.GetSearchResultInfo(rowdata.id)
+        local _, action, caption, desc, voice, ilvl, unk1, time, bnetfr, charfr, guild, delisted, fullname, pcount, autoinv = C_LFGList.GetSearchResultInfo(rowdata.id)
         if not icons then
             local miscdata = createIcon(cellFrame,READY_CHECK_WAITING_TEXTURE,0)
             local autoinv = createIcon(cellFrame,READY_CHECK_READY_TEXTURE, 1)
@@ -259,36 +301,111 @@ local function updateGroupName(id)
     return select(3, C_LFGList.GetSearchResultInfo(id))
 end
 
+local function updateRealmType(id)
+    local name = select(13, C_LFGList.GetSearchResultInfo(id))
+    local pname, realm = PlayerName(name);
+    return select(4, realmInfo:GetRealmInfo(realm)) or "???"
+end
+
+local function updateGroupAge(id)
+    local age = select(8, C_LFGList.GetSearchResultInfo(id))
+    return SecondsToTime(age, false, false, 1, false)
+end
+
+local function sortBase(col, value)
+    local column = lfgTable.cols[col];
+    local direction = column.sort or column.defaultsort or "asc"
+    if direction == "asc" then
+        return value
+    else
+        return not value;
+    end
+end
+
+
+local function sortByAge(self, rowa, rowb, sortbycol)
+    if rowa == nil or rowb == nil then return false end; -- wtf ScrollingTable???
+    local row1 = lfgTable:GetRow(rowa);
+    local row2 = lfgTable:GetRow(rowb);
+    local age1 = select(8, C_LFGList.GetSearchResultInfo(row1.id));
+    local age2 = select(8, C_LFGList.GetSearchResultInfo(row2.id));
+    return sortBase(sortbycol, age1<age2);
+end
+
+local function updateJoinAge(id)
+    local name = select(13, C_LFGList.GetSearchResultInfo(id))
+    local ago = getJoinedAgo(name);
+    if ago then
+        return SecondsToTime(ago, false, false, 1, false)
+    else
+        return ""
+    end
+end
+
+local function sortByJoinAge(self, rowa, rowb, sortbycol)
+    if rowa == nil or rowb == nil then return false end; -- wtf ScrollingTable???
+    local row1 = lfgTable:GetRow(rowa);
+    local row2 = lfgTable:GetRow(rowb);
+    local joinAge1 = getJoinedAgo(select(13, C_LFGList.GetSearchResultInfo(row1.id))) or 1e10;
+    local joinAge2 = getJoinedAgo(select(13, C_LFGList.GetSearchResultInfo(row2.id))) or 1e10;
+    return sortBase(sortbycol, joinAge1<joinAge2);
+end
+
+local function sortByScore(self, rowa, rowb, sortbycol)
+    if rowa == nil or rowb == nil then return false end; -- wtf ScrollingTable???
+    local row1 = lfgTable:GetRow(rowa);
+    local row2 = lfgTable:GetRow(rowb);
+    return row1.weight > row2.weight;
+end
+
 local function updateGroupCount(id)
-    return select(13, C_LFGList.GetSearchResultInfo(id))
+    return select(14, C_LFGList.GetSearchResultInfo(id))
 end
 
 local function updateGroupRealm(id)
-    local name = select(12, C_LFGList.GetSearchResultInfo(id))
+    local name = select(13, C_LFGList.GetSearchResultInfo(id))
     local pname, realm = PlayerName(name);
-    return realm
+    return realm;
 end
 
 local COLOR_YELLOW = {r=1,g=1,b=0,a=1}
+local COLOR_WHITE = {r=1,g=1,b=1,a=1}
 local COLOR_GREEN = {r=0,g=1,b=0,a=1}
+local COLOR_RED = {r=1,g=0,b=0,a=1}
+local COLOR_GREY = {r=0.5,g=0.5,b=0.5,a=1}
 local function updateRealmColor(id)
-    local name = select(12, C_LFGList.GetSearchResultInfo(id))
+    local name = select(13, C_LFGList.GetSearchResultInfo(id))
     local pname, realm = PlayerName(name);
     return recentRealms[realm] and COLOR_YELLOW or COLOR_GREEN;
 end
 
+local function updateNameColor(id)
+    local name = select(3, C_LFGList.GetSearchResultInfo(id))
+    if searchInList(name, db.global.highlightList) then return COLOR_GREEN end;
+    if searchInList(name, db.global.stoplist) then return COLOR_GREY end;
+    if searchInList(name, db.global.priorityList) then return COLOR_YELLOW end;
+    return COLOR_WHITE;
+end
+
 local function filterTable(self, row)
-    local _, _, _, _, _, _, _, _, _, _, delisted, _, pcount, autoinv = C_LFGList.GetSearchResultInfo(row.id)
+    local _, _, caption, desc, _, _, _, _, _, _, _, delisted, _, pcount, autoinv = C_LFGList.GetSearchResultInfo(row.id)
     if delisted then return false end;
-    if pcount > 5 and cbHideRaids:GetChecked() then return false end;
-    if pcount <= 5 and cbHideGroups:GetChecked() then return false end;
+    if filterByCountId > 1 then
+        local fobj = filterByCountList[filterByCountId];
+        if pcount < fobj.min or pcount > fobj.max then return false end;
+    end
     if not autoinv and cbHideNoAutoinv:GetChecked() then return false end;
+    if filterString then
+        caption = string.lower(caption);
+        desc = string.lower(desc);
+        if not (string.find(caption, filterString, 1, true) or string.find(desc, filterString, 1, true))then return false end
+    end
     return true;
 end
 
 function addon:UpdateResponseData(event, result)
     if not lfgTable then return end
-    if select(11, C_LFGList.GetSearchResultInfo(result)) then
+    if select(12, C_LFGList.GetSearchResultInfo(result)) then
         lfgTable:SetFilter(filterTable)
     end
     hasLfgListChanges = true
@@ -298,19 +415,25 @@ local function refreshLFGList()
     if lfgScanInProgress or not lfgTable then return end
     local count, list = C_LFGList.GetSearchResults()
     local tableData = {}
+    local extraColumnId = 4;
+
     for i = 1,count do
         local rid = list[i];
         if not rid then break end
         local data = list[i];
         local cols = {}
         local row = {rid}
-        cols[1] = {value=updateGroupName,args=row}
-        cols[2] = {value=updateGroupCount,args=row}
-        cols[3] = {value=updateGroupRealm,args=row,color=updateRealmColor,colorargs=row}
-        cols[4] = {}
+        for i=1, #tableTemplate do
+            local item = tableTemplate[i];
+            local cell = {value=item.value, args=row }
+            if item.color then
+                cell.color = item.color;
+                cell.colorargs = row;
+            end
+            cols[i] = cell
+        end
         table.insert(tableData, {cols=cols,id=rid,weight=WeightLfgItem(rid)})
     end
-    table.sort(tableData, sortByWeight);
     lfgTable:SetData(tableData)
     if #tableData == 0 then
         lbThrottle:SetText("No groups found")
@@ -325,9 +448,13 @@ local function JoinGroup(rid)
 end
 
 local function TableCellClick(rowFrame, cellFrame, data, cols, row, realrow, column, scrollingTable, ...)
-    if not realrow or not canJoinGroup() then return end
+    if not realrow then return end
     local rowdata = scrollingTable:GetRow(realrow);
-    JoinGroup(rowdata.id)
+    if canJoinGroup() then
+        JoinGroup(rowdata.id)
+    else
+        LeaveParty()
+    end
 end
 
 
@@ -342,16 +469,9 @@ function addon.ShowMmTooltip(tooltip)
     tooltip:Show()
 end
 
---[[function addon.MmClick(self, button)
-    if button == "RightButton" then
-        addon.ShowSettings(self)
-    else
-        addon:Activate()
-    end
-end]]
-
 function addon:OnInitialize()
     db = LibStub("AceDB-3.0"):New("CrossRealmAssistDB", SettingsDefaults)
+    addon.db = db;
     local minimapData = ldb:NewDataObject("CrossRealmAssistMinimapIcon",{
         type = "data source",
         text = "Cross Realm Assist",
@@ -368,6 +488,9 @@ function addon:OnEnable()
     homeRealm = GetRealmName()
     addon:RegisterChatCommand("cra", "Activate")
     addon:RegisterChatCommand("crossrealmassist", "Activate")
+    if db.global.autoCreateHopGroup then
+        addon:RegisterEvent("PLAYER_FLAGS_CHANGED", "PlayerFlagsUpdate")
+    end
 end
 
 function addon:OnDisable()
@@ -424,7 +547,8 @@ local function stopMovingWidget()
 end
 
 function addon:CreateUI()
-    gui = setupWidget(CreateFrame("Frame","CrossRealmAssistMainUI",nil,"InsetFrameTemplate3"), {SetFrameStrata="LOW",SetWidth=208,SetHeight=60,EnableMouse=true,SetMovable=true,SetClampedToScreen=true})
+    local scale = db.global.uiScale or 1.0;
+    gui = setupWidget(CreateFrame("Frame","CrossRealmAssistMainUI",nil,"InsetFrameTemplate3"), {SetFrameStrata="LOW",SetWidth=208,SetHeight=60,EnableMouse=true,SetMovable=true,SetClampedToScreen=true,SetScale=scale})
     local title = setupWidget(CreateFrame("Frame",nil,gui), {SetWidth=190,SetHeight=18,EnableMouse=true,RegisterForDrag="LeftButton"}, 0, 6);
     title:SetScript("OnDragStart", function() gui:StartMoving() end)
     title:SetScript("OnDragStop", stopMovingWidget)
@@ -478,20 +602,66 @@ function addon.refreshList()
     lfgTable:SetFilter(filterTable)
 end
 
+local function updateFilter(self)
+    SearchBoxTemplate_OnTextChanged(self)
+    filterString = string.lower(edFilterText:GetText());
+    if filterString == "" then filterString = nil end;
+    addon.refreshList()
+end
+
+local function updateFilterByCount(btn, arg1, arg2, checked)
+    filterByCountId = arg1;
+    local filterObj = filterByCountList[arg1];
+    UIDropDownMenu_SetText(btFilterCount, "Count: "..filterObj.min.."-"..filterObj.max);
+    addon.refreshList()
+end
+
+local function numberFilter(self, level, menuList)
+    for i=1,#filterByCountList do
+        UIDropDownMenu_AddButton({text=filterByCountList[i].text, arg1=i,checked=(i==filterByCountId), func=updateFilterByCount}, level)
+    end
+end
+
+local function setHighlightColorMy(self, frame, color)
+    if not frame.highlight then
+        frame.highlight = frame:CreateTexture(nil, "OVERLAY");
+        frame.highlight:SetAllPoints(frame);
+    end
+    frame.highlight:SetColorTexture(color.r, color.g, color.b, color.a);
+end
+
 function addon:CreateLFGUI()
-    lfgui = setupWidget(CreateFrame("Frame","CrossRealmAssistJoinUI",nil,"UIPanelDialogTemplate"), {SetFrameStrata="DIALOG",SetWidth=405,SetHeight=323,EnableMouse=true,SetMovable=true})
+    local scale = db.global.lfgPanelScale or 1.0;
+    local itemCount = db.global.listItemCount;
+    local shift = itemCount * 16;
+
+    tableTemplate = {
+        {name="Title",width=160, value = updateGroupName, color = updateNameColor},
+        {name="#",width=30,align="CENTER",value = updateGroupCount},
+        {name="Realm",width=120,align="RIGHT",value = updateGroupRealm, color = updateRealmColor}
+    }
+
+    extraColumns = db.global.extraColumns;
+    if extraColumns.rtype then table.insert(tableTemplate, {name="Type",width=40,align="CENTER", value = updateRealmType}) end;
+    if extraColumns.groupAge then table.insert(tableTemplate, {name="Age",width=45,align="CENTER",comparesort=sortByAge, value = updateGroupAge}) end;
+    if extraColumns.joinTime then table.insert(tableTemplate, {name="Joined",width=45,align="CENTER",comparesort=sortByJoinAge, value = updateJoinAge}) end;
+    table.insert(tableTemplate, {name="Misc",width=50,DoCellUpdate=updateTableData,comparesort=sortByScore,align="RIGHT",sort="asc"})
+
+    local tableWidth = 0;
+    for i=1,#tableTemplate do
+        tableWidth = tableWidth + tableTemplate[i].width;
+    end
+
+
+    lfgui = setupWidget(CreateFrame("Frame","CrossRealmAssistJoinUI",nil,"UIPanelDialogTemplate"), {SetFrameStrata="HIGH",SetWidth=tableWidth+45,SetHeight=shift+95,EnableMouse=true,SetMovable=true,SetScale=scale})
     lfgui.title:SetText("Click to join group")
     lfgui:SetScript("OnUpdate",addon.lfgUpdate)
     local titlereg = lfgui:CreateTitleRegion()
     titlereg:SetAllPoints(lfgui.title)
     addon:CreateTabs()
 
-    lfgTable = ScrollingTable:CreateST({
-        {name="Title",width=160},
-        {name="#",width=30,align="CENTER"},
-        {name="Realm",width=120,align="RIGHT"},
-        {name="",width=50,DoCellUpdate=updateTableData}
-    },15,16,nil,lfgui);
+    lfgTable = ScrollingTable:CreateST(tableTemplate,itemCount,16,nil,lfgui);
+    lfgTable.SetHighLightColor = setHighlightColorMy; -- work around API changes in 7.0 (SetTexture -> SetColorTexture)
 
     lfgTable:RegisterEvents({OnEnter=ShowLfgInfo,OnLeave=HideTooltip,OnClick=TableCellClick})
 
@@ -500,41 +670,40 @@ function addon:CreateLFGUI()
     lfgui:SetPoint("CENTER",0,0)
     refreshLFGList()
 
-    lbThrottle = setupWidget(lfgui:CreateFontString(nil,"BACKGROUND", "GameFontHighlightSmall"), {SetWidth=300}, 50, 100)
+    lbThrottle = setupWidget(lfgui:CreateFontString(nil,"BACKGROUND", "GameFontHighlightSmall"), {SetWidth=tableWidth}, 0, 100)
     lbThrottle:Hide();
 
-    local btRefresh = setupWidget(CreateFrame("Button",nil,lfgui,"UIPanelSquareButton"),{SetWidth=22,SetHeight=22},379,27)
+    local btRefresh = setupWidget(CreateFrame("Button",nil,lfgui,"UIPanelSquareButton"),{SetWidth=22,SetHeight=22},tableWidth+19,27)
     btRefresh.icon:SetTexture("Interface/BUTTONS/UI-RefreshButton")
     btRefresh.icon:SetTexCoord(0,1,0,1);
     btRefresh:SetScript("OnClick",addon.refreshLfgCurrent)
 
-    setupWidget(CreateFrame("Frame",nil,lfgui,"HorizontalBarTemplate"),{SetWidth=392,SetHeight=2}, 8, 294)
-    local text = setupWidget(lfgui:CreateFontString(nil,"BACKGROUND", "GameFontHighlightSmall"), {SetText="Hide:"}, 20, 302)
+    setupWidget(CreateFrame("Frame",nil,lfgui,"HorizontalBarTemplate"),{SetWidth=tableWidth+32,SetHeight=2}, 8, shift+54)
+    local text = setupWidget(lfgui:CreateFontString(nil,"BACKGROUND", "GameFontHighlightSmall"), {SetText="Filters:"}, 20, shift+68)
 
-    cbHideGroups = setupWidget(CreateFrame("CheckButton",nil,lfgui,"UICheckButtonTemplate"),{SetWidth=22,SetHeight=22})
-    cbHideGroups:SetPoint("TOPLEFT",text,"TOPRIGHT",5,7)
-    cbHideGroups:SetScript("OnClick",addon.refreshList)
-    text = setupWidget(lfgui:CreateFontString(nil,"BACKGROUND", "GameFontHighlightSmall"), {SetText="5p Groups"})
-    text:SetPoint("TOPLEFT",cbHideGroups,"TOPRIGHT",0,-7)
-
-    cbHideRaids = setupWidget(CreateFrame("CheckButton",nil,lfgui,"UICheckButtonTemplate"),{SetWidth=22,SetHeight=22})
-    cbHideRaids:SetPoint("TOPLEFT",text,"TOPRIGHT",5,7)
-    cbHideRaids:SetScript("OnClick",addon.refreshList)
-    text = setupWidget(lfgui:CreateFontString(nil,"BACKGROUND", "GameFontHighlightSmall"), {SetText="Raids"})
-    text:SetPoint("TOPLEFT",cbHideRaids,"TOPRIGHT",0,-7)
+    btFilterCount = CreateFrame("FRAME", "CrossRealmAssistCountFilter", lfgui, "UIDropDownMenuTemplate")
+    UIDropDownMenu_SetWidth(btFilterCount, 90)
+    UIDropDownMenu_SetText(btFilterCount, "By count")
+    UIDropDownMenu_Initialize(btFilterCount, numberFilter)
+    btFilterCount:SetPoint("TOPLEFT",text,"TOPRIGHT",-10,10)
 
     cbHideNoAutoinv = setupWidget(CreateFrame("CheckButton",nil,lfgui,"UICheckButtonTemplate"),{SetWidth=22,SetHeight=22})
-    cbHideNoAutoinv:SetPoint("TOPLEFT",text,"TOPRIGHT",5,7)
+    cbHideNoAutoinv:SetPoint("TOPLEFT",btFilterCount,"TOPRIGHT",-10,-3)
     cbHideNoAutoinv:SetScript("OnClick",addon.refreshList)
-    text = setupWidget(lfgui:CreateFontString(nil,"BACKGROUND", "GameFontHighlightSmall"), {SetText="Groups w/o Autoinvite"})
+    text = setupWidget(lfgui:CreateFontString(nil,"BACKGROUND", "GameFontHighlightSmall"), {SetText="Autoaccept only"})
     text:SetPoint("TOPLEFT",cbHideNoAutoinv,"TOPRIGHT",0,-7)
+
+    edFilterText = setupWidget(CreateFrame("EditBox",nil,lfgui,"SearchBoxTemplate"),{SetHeight=22})
+    edFilterText:SetPoint("TOPLEFT",text,"TOPRIGHT",10,7)
+    edFilterText:SetPoint("TOPRIGHT",lfgui,"BOTTOMRIGHT",-10,0)
+    edFilterText:SetScript("OnTextChanged",updateFilter)
 end
 
 function addon:CreateTabs()
     local prevTab
-    for i=1,#lfgGroups do
+    for i=1,#addon.lfgGroups do
         local tab = CreateFrame("Button","$parentTab"..i,lfgui,"CharacterFrameTabButtonTemplate")
-        tab:SetText((C_LFGList.GetCategoryInfo(lfgGroups[i])));
+        tab:SetText((C_LFGList.GetCategoryInfo(addon.lfgGroups[i])));
         tab.searchID = i;
         tab:SetID(i);
         PanelTemplates_TabResize(tab, 0)
@@ -562,8 +731,8 @@ function addon.refreshLfgCurrent()
 end
 
 function addon.GetNextAutoScanCategory()
-    for i=1,#lfgGroups do
-        if not autoScanGroups[i] and db.global.quickJoin[lfgGroups[i]] and i ~= curLfgGroup then return i end
+    for i=1,#addon.lfgGroups do
+        if not autoScanGroups[i] and db.global.quickJoin[addon.lfgGroups[i]] and i ~= curLfgGroup then return i end
     end
     return nil
 end
@@ -576,7 +745,7 @@ function addon.LfgScan(group)
     lfgScanInProgress = true
     curLfgGroup = group
     local languages = db.global.allLanguages and allLanguageTable or C_LFGList.GetLanguageSearchFilter();
-    C_LFGList.Search(lfgGroups[curLfgGroup],"",nil,nil,languages)
+    C_LFGList.Search(addon.lfgGroups[curLfgGroup],"",nil,nil,languages)
 end
 
 function addon:LfgScanFailed(event, reason)
@@ -610,7 +779,7 @@ function addon:updateAppStatus(event, id, status, oldstatus)
 end
 
 function addon:SetGroupJoinStatus(id, status)
-    local name = select(12, C_LFGList.GetSearchResultInfo(id))
+    local name = select(13, C_LFGList.GetSearchResultInfo(id))
     if name then
         recentgroups[name] = {status=status, time=GetTime()}
     end
@@ -621,22 +790,9 @@ function addon:RealmVisited(realm, head)
 end
 
 function addon:updatePartyInfo()
-    curPartyStat = {}
-    local inGroup = IsInGroup()
-    if inGroup then
-        if IsInRaid() then
-            for i=1, MAX_RAID_MEMBERS do
-                addon:AddUnitIdStat("raid"..i, curPartyStat)
-            end
-        else
-            for i=1, MAX_PARTY_MEMBERS do
-                addon:AddUnitIdStat("party"..i, curPartyStat)
-            end
-        end
-    end
-    if inGroup ~= wasInGroup  then
+    if IsInGroup() ~= wasInGroup  then
         addon:RefreshZone(true)
-        wasInGroup = inGroup
+        wasInGroup = IsInGroup()
         addon:UpdateAutoButtonStatus()
     end
 end
@@ -669,7 +825,7 @@ function addon:RefreshZone(shedule)
         if scanstate == 0 then
             addon:ScanRealm()
         elseif shedule == true and scanstate == 2 then
-            addon:SetStatus("Rescan sheduled...")
+            addon:SetStatus("Rescan scheduled...")
             scanstate = 3
         end
     end
@@ -681,7 +837,7 @@ function addon:ScanRealm()
     if InCombatLockdown() then
         addon:RegisterEvent("PLAYER_REGEN_ENABLED","LeaveCombat")
         scanstate = 1
-        addon:SetStatus("Scan sheduled after combat...");
+        addon:SetStatus("Scan scheduled after combat...");
         return
     end
     scanstate = 2
@@ -775,10 +931,26 @@ end
 
 local action
 
+local function getPartyStat()
+    local curPartyStat = {}
+    if IsInGroup() then
+        if IsInRaid() then
+            for i=1, MAX_RAID_MEMBERS do
+                addon:AddUnitIdStat("raid"..i, curPartyStat)
+            end
+        else
+            for i=1, MAX_PARTY_MEMBERS do
+                addon:AddUnitIdStat("party"..i, curPartyStat)
+            end
+        end
+    end
+    return curPartyStat
+end
+
 local LeaveGroup = {
     func = LeaveParty;
     tooltip = function(self)
-        local partyStat = addon:GetRealmStat(curPartyStat)
+        local partyStat = addon:GetRealmStat(getPartyStat())
         GameTooltip:AddLine("Players in party "..partyStat.players)
         local max = partyStat.max;
         for i=1,#partyStat do
@@ -810,7 +982,7 @@ local QuickJoin = {
         if button == "RightButton" then
             addon:SetGroupJoinStatus(self.groupToJoin, "_skip")
         else
-            local delisted = select(11, C_LFGList.GetSearchResultInfo(self.groupToJoin))
+            local delisted = select(12, C_LFGList.GetSearchResultInfo(self.groupToJoin))
             if delisted == false then
                 JoinGroup(self.groupToJoin)
             else
@@ -847,7 +1019,7 @@ local ScanNext = {
         addon.LfgScan(self.category)
     end,
     tooltip = function(self)
-        GameTooltip:AddLine("Scan "..(C_LFGList.GetCategoryInfo(lfgGroups[self.category])))
+        GameTooltip:AddLine("Scan "..(C_LFGList.GetCategoryInfo(addon.lfgGroups[self.category])))
     end,
     text = "Scan more"
 }
@@ -855,6 +1027,7 @@ local ScanNext = {
 local NeedReset = {
     func = function()
         wipe(autoScanGroups);
+		curLfgGroup = 0;
         local categoryToScan = addon.GetNextAutoScanCategory()
         if categoryToScan then
             addon.LfgScan(categoryToScan)
@@ -874,7 +1047,7 @@ local ShowQuickHint = {
     text = "Quick Join",
     func = function()
         StaticPopupDialogs["CROSS_REALM_ASSIST"] = {
-            text = "Quick Join button will automatically join you to a random group with autoinvite and medium number of players. You never join same group twice, you need to clear join history to do so. This message can be disabled in options.",
+            text = "Quick Join button will automatically join you to a random group with autoaccept and medium number of players. You never join same group twice, you need to clear join history to do so. This message can be disabled in options.",
             button1 = OKAY,
             hideOnEscape = true,
             preferredIndex = 3,
@@ -936,19 +1109,38 @@ end
 
 
 
+-- Realm hop group
 
+local function CreateHopGroup()
+    if canJoinGroup() then
+        C_LFGList.CreateListing(16,"Realm hopping - "..homeRealm,0,"","",true)
+        addon:ScheduleTimer(ConvertToRaid, 5)
+    end
+end
+
+function addon:PlayerFlagsUpdate(event, target)
+    if target == "player" and UnitIsAFK("player") and C_Garrison.IsOnGarrisonMap() and db.global.autoCreateHopGroup then
+        CreateHopGroup()
+    end
+end
 
 -- Settings
 
-local function toggleMinimapIcon(btn, arg1, arg2, checked)
-    local hidden = not checked;
-    db.global.minimap.hide = hidden;
+function addon.toggleMinimapIcon(hidden)
     if hidden then
         DEFAULT_CHAT_FRAME:AddMessage("|cffff0000Type |cffffffff/cra |cffff0000in chat to open Cross Realm Assist without minimap button");
         minimapIcon:Hide("CrossRealmAssistMinimapIcon")
     else
         minimapIcon:Show("CrossRealmAssistMinimapIcon")
     end
+end
+
+function addon.updateLfgScale(scale)
+    if lfgui then lfgui:SetScale(scale) end;
+end
+
+function addon.updateUIScale(scale)
+    if gui then gui:SetScale(scale) end;
 end
 
 local function toggleQuickJoinHint(btn, arg1, arg2, checked)
@@ -967,39 +1159,82 @@ local function toggleApplyAsDD(btn, arg1, arg2, checked)
     db.global.applyAsDD = checked
 end
 
+local function toggleCreateHopGroup(btn, arg1, arg2, checked)
+    db.global.autoCreateHopGroup = checked
+    if checked then addon:RegisterEvent("PLAYER_FLAGS_CHANGED", "PlayerFlagsUpdate") end
+end
+
+local function joinFriendGroup(btn, rid)
+	JoinGroup(rid);
+end
+
 local function ClearJoinHistory()
     recentgroups = {}
     addon:UpdateAutoButtonStatus()
     if lfgTable then lfgTable:Refresh() end
 end
 
---[[local function resetPos()
-    db.global.widgetPos = DefaultWidgetPos
-    if gui then
-        gui:ClearAllPoints()
-        gui:SetPoint(DefaultWidgetPos.to,DefaultWidgetPos.x,DefaultWidgetPos.y)
-    end
-end]]
+local function QuickJoinStoplist()
+    StaticPopupDialogs["CROSS_REALM_ASSIST_STOPLIST"] = {
+        OnShow = function (self, data)
+            self.editBox:SetText(table.concat(db.global.stoplist or {}, ","))
+        end,
+        OnAccept=function(self)
+            local text = self.editBox:GetText();
+            local stoplist = {}
+            for item in string.gmatch(text, "[^, ][^,]*") do
+                table.insert(stoplist,string.lower(item))
+            end
+            db.global.stoplist = stoplist
+        end,
+        button1 = OKAY,
+        button2 = CANCEL,
+        editBoxWidth = 350,
+        hasEditBox=true,
+        text = "Ignore groups containing following words:\nSeparated by comma",
+        preferredIndex = 3
+    }
+    StaticPopup_Show("CROSS_REALM_ASSIST_STOPLIST")
+end
 
 local function initMenu(self, level)
     if not level then return end
     if level == 1 then
+		UIDropDownMenu_AddButton({text="Clear join history",notCheckable=1,func=ClearJoinHistory}, level)
         UIDropDownMenu_AddButton({text="Clear realm history",notCheckable=1,func=ClearRealmHistory}, level)
-        UIDropDownMenu_AddButton({text="Clear join history",notCheckable=1,func=ClearJoinHistory}, level)
         UIDropDownMenu_AddButton({disabled=1,notCheckable=1}, level)
-        UIDropDownMenu_AddButton({isTitle=1,text="Settings",notCheckable=1}, level)
-        UIDropDownMenu_AddButton({text="Show Minimap Button",checked=not db.global.minimap.hide, func=toggleMinimapIcon,keepShownOnClick=true,isNotRadio=true}, level)
-        UIDropDownMenu_AddButton({text="All language groups",checked=db.global.allLanguages, func=toggleAllLanguages,keepShownOnClick=true,isNotRadio=true}, level)
-        UIDropDownMenu_AddButton({text="Apply to groups as DD only",checked=db.global.applyAsDD, func=toggleApplyAsDD,keepShownOnClick=true,isNotRadio=true}, level)
+
+        UIDropDownMenu_AddButton({text="Cross Realm Assist Toolbox",notCheckable=1,func=CreateHopGroup,isTitle=1}, level)
         UIDropDownMenu_AddButton({text="Show Quick Join Hint",checked=db.global.quickJoinHint, func=toggleQuickJoinHint,keepShownOnClick=true,isNotRadio=true}, level)
-        UIDropDownMenu_AddButton({text="Quick join categories",notCheckable=1,hasArrow=1,value="qjc",keepShownOnClick=true}, level)
-    elseif level == 2 then
-        if UIDROPDOWNMENU_MENU_VALUE == "qjc" then
-            for i=1,#lfgGroups do
-                local groupId = lfgGroups[i]
-                UIDropDownMenu_AddButton({text=(C_LFGList.GetCategoryInfo(groupId)),checked=db.global.quickJoin[groupId],arg1=groupId,func=toggleQuickJoin,keepShownOnClick=true,isNotRadio=true}, level)
-            end
+		if canJoinGroup() then
+            UIDropDownMenu_AddButton({text="Create a group for realm hoppers",notCheckable=1,func=CreateHopGroup}, level)
+			UIDropDownMenu_AddButton({text="Join to a friend",notCheckable=1,hasArrow=1,value="jtf",keepShownOnClick=true}, level)
         end
+
+        UIDropDownMenu_AddButton({disabled=1,notCheckable=1}, level)
+        UIDropDownMenu_AddButton({text="Settings...",notCheckable=1,func=addon.showSettings}, level)
+    elseif level == 2 then
+        if UIDROPDOWNMENU_MENU_VALUE == "jtf" then
+			local count, list = C_LFGList.GetSearchResults()
+			local friends = {}
+			for i = 1,count do
+				local rid = list[i];
+				if not rid then break end
+				local bnf, chf, gf = C_LFGList.GetSearchResultFriends(rid)
+				for j=1,#bnf do	table.insert(friends,{name="|cFF00B1F0"..bnf[j],type=0,id=rid}) end
+				for j=1,#chf do	table.insert(friends,{name="|cFFFF80FF"..chf[j],type=1,id=rid}) end
+				for j=1,#gf do table.insert(friends,{name="|cFF40FF40"..gf[j],type=2,id=rid}) end
+			end
+			if #friends==0 then
+				UIDropDownMenu_AddButton({text="No friends found (click to refresh)",notCheckable=1,func=addon.refreshLfgCurrent}, level)
+			else
+				UIDropDownMenu_AddButton({text="Refresh",notCheckable=1,func=addon.refreshLfgCurrent}, level)
+				table.sort(friends, sortByTypeAndName);
+				for i=1,#friends do
+					UIDropDownMenu_AddButton({text=friends[i].name,notCheckable=1,func=joinFriendGroup,arg1=friends[i].id}, level)
+				end
+			end
+		end
     end
 end
 

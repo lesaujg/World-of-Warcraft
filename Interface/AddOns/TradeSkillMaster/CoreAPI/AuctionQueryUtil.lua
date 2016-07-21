@@ -30,9 +30,7 @@ function TSMAPI.Auction:GenerateQueries(itemList, callback)
 end
 
 function TSMAPI.Auction:GetItemQueryInfo(itemString)
-	local name, quality, level, classStr, subClassStr = TSMAPI.Util:Select({1, 3, 5, 6, 7}, TSMAPI.Item:GetInfo(itemString))
-	if not name then return end
-	local class, subClass = private:LookupClassSubClass(classStr, subClassStr)
+	local name, _, quality, _, level, _, _, _, _, _, _, class, subClass = TSMAPI.Item:GetInfo(itemString)
 	return {name=name, minLevel=level, maxLevel=level, invType=nil, class=class, subClass=subClass, quality=quality}
 end
 
@@ -217,7 +215,7 @@ function private.GenerateQueriesThread(self, itemList)
 	local badItems = {}
 	local itemListByClass = {}
 	for _, itemString in ipairs(itemStrings) do
-		local classIndex = private:LookupClassSubClass(select(6, TSMAPI.Item:GetInfo(itemString)))
+		local classIndex = select(12, TSMAPI.Item:GetInfo(itemString))
 		if classIndex and classIndex ~= BATTLE_PET_CLASS then
 			itemListByClass[classIndex] = itemListByClass[classIndex] or {}
 			tinsert(itemListByClass[classIndex], itemString)
@@ -370,7 +368,7 @@ end
 function private:GetCommonInfo(items)
 	local minQuality, minLevel, maxLevel = nil, nil, nil
 	for _, itemString in ipairs(items) do
-		local name, quality, level = TSMAPI.Util:Select({1, 3, 5}, TSMAPI.Item:GetInfo(itemString))
+		local _, _, quality, _, level = TSMAPI.Item:GetInfo(itemString)
 		minQuality = min(minQuality or quality, quality)
 		minLevel = min(minLevel or level, level)
 		maxLevel = max(maxLevel or level, level)

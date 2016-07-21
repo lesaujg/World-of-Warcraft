@@ -485,7 +485,7 @@ function Professions:GetFrameInfo()
 					if text == SEARCH then
 						text = ""
 					end
-					C_TradeSkillUI.SetRecipeItemNameFilter(text)
+					C_TradeSkillUI.SetRecipeItemNameFilter(strlower(text))
 				end,
 				OnEnterPressed = function(self)
 					self:ClearFocus()

@@ -1,3 +1,6 @@
+v3.0.12
+*Fixed bug with tracking of sent mail.
+
 v3.0.11
 *Fixed bug when opening mail with above 1M gold.
 

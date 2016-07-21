@@ -1,3 +1,10 @@
+v3.4.8
+*Fixed bug with detecting bag type.
+
+v3.4.7
+*Fixed bug with inventory tracking of sent mail.
+*Fixed bug in LibExtraTip.
+
 v3.4.6
 *Fixed issue affecting items with bonus ids.
 

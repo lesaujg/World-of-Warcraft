@@ -123,7 +123,7 @@ function TSMAPI.Inventory:ItemWillGoInBag(link, bag)
 	if not link or not bag then return end
 	if bag == 0 then return true end
 	local itemFamily = GetItemFamily(link)
-	local bagFamily = GetItemFamily(GetBagName(bag))
+	local _, bagFamily = GetContainerNumFreeSlots(bag)
 	if not bagFamily then return end
 	return bagFamily == 0 or bit.band(itemFamily, bagFamily) > 0
 end
@@ -591,7 +591,7 @@ function private.MailThread(self)
 		for i = 1, ATTACHMENTS_MAX_SEND do
 			local itemString = TSMAPI.Item:ToBaseItemString(GetSendMailItemLink(i))
 			if itemString then
-				items[itemString] = (items[itemString] or 0) + select(3, GetSendMailItem(i))
+				items[itemString] = (items[itemString] or 0) + select(4, GetSendMailItem(i))
 			end
 		end
 		private:InsertPendingMail(altName, "sent_mail", items, time())

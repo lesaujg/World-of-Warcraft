@@ -1,3 +1,9 @@
+v3.0.9
+*Fixed bug with getting the quantity of a mail attachment.
+
+v3.0.8
+*Fixed bug with chat messages after sending mail.
+
 v3.0.7
 *Fixed bug when opening mail with above 1M gold.
 

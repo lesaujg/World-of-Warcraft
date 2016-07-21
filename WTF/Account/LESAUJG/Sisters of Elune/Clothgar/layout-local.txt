@@ -1,15 +1,1 @@
 Version: 1
-Frame: TSMCraftingGatherFrame
-FrameLevel: 0
-Anchor: TOPRIGHT
-X: -382
-Y: -87
-W: 365
-H: 400
-Frame: AuctionFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 832
-H: 447
