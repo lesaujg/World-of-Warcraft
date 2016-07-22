@@ -1,3 +1,9 @@
+v3.1.7
+*Fixed bug with buyout from crafting search.
+
+v3.1.6
+*Fixed bug with the profession frame not opening.
+
 v3.1.5
 *Fixed bug with profession searching.
 

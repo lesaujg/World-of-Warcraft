@@ -103,7 +103,7 @@ function Bags:HideBlizzard()
 	BankClose:Hide()
 	BankPortraitTexture:Hide()
 	BagHelpBox:Kill()
-	BankFrame:EnableMouse(0)
+	BankFrame:EnableMouse(false)
 
 	for i = 1, 12 do
 		local CloseButton = _G["ContainerFrame"..i.."CloseButton"]
@@ -244,7 +244,7 @@ function Bags:CreateReagentContainer()
 
 	UnlockButton:SkinButton()
 
-	Movers:RegisterFrame(Reagent)
+	--Movers:RegisterFrame(Reagent)
 
 	self.Reagent = Reagent
 	-- Couldn't access these.
@@ -258,7 +258,7 @@ function Bags:CreateContainer(storagetype, ...)
 	Container:SetWidth(((ButtonSize + ButtonSpacing) * ItemsPerRow) + 22 - ButtonSpacing)
 	Container:SetPoint(...)
 	Container:SetFrameStrata("MEDIUM")
-	Container:SetFrameLevel(1)
+	Container:SetFrameLevel(50)
 	--Container:RegisterForDrag("LeftButton","RightButton")
 	--Container:SetScript("OnDragStart", function(self) self:StartMoving() end)
 	--Container:SetScript("OnDragStop", function(self) self:StopMovingOrSizing() end)
@@ -835,7 +835,7 @@ function Bags:OpenAllBankBags()
 		if not self.Bank.MoverAdded then
 			local Movers = T["Movers"]
 
-			Movers:RegisterFrame(self.Bank)
+			--Movers:RegisterFrame(self.Bank)
 
 			self.Bank.MoverAdded = true
 		end

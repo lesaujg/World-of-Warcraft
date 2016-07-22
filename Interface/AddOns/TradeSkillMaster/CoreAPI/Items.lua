@@ -16,15 +16,30 @@ local STATIC_DATA = {classLookup={}, classIdLookup={}, inventorySlotIdLookup={}}
 if select(4, GetBuildInfo()) >= 70000 then
 	STATIC_DATA.weaponClassName = GetItemClassInfo(LE_ITEM_CLASS_WEAPON)
 	STATIC_DATA.armorClassName = GetItemClassInfo(LE_ITEM_CLASS_ARMOR)
-	-- blizzard typo'd "_CLASSES" as "_CLASSS" - guard against them fixing it and breaking this
-	for i = 0, NUM_LE_ITEM_CLASSS or NUM_LE_ITEM_CLASSES do
-		local class = GetItemClassInfo(i)
+    -- Needed because NUM_LE_ITEM_CLASSS contains an erroneous value
+    local ITEM_CLASS_IDS = {
+        LE_ITEM_CLASS_WEAPON,
+        LE_ITEM_CLASS_ARMOR,
+        LE_ITEM_CLASS_CONTAINER,
+        LE_ITEM_CLASS_GEM,
+        LE_ITEM_CLASS_ITEM_ENHANCEMENT,
+        LE_ITEM_CLASS_CONSUMABLE,
+        LE_ITEM_CLASS_GLYPH,
+        LE_ITEM_CLASS_TRADEGOODS,
+        LE_ITEM_CLASS_RECIPE,
+        LE_ITEM_CLASS_BATTLEPET,
+        LE_ITEM_CLASS_QUESTITEM,
+        LE_ITEM_CLASS_MISCELLANEOUS
+    }
+	
+	for _, classId in ipairs(ITEM_CLASS_IDS) do
+		local class = GetItemClassInfo(classId)
 		if class then
-			STATIC_DATA.classIdLookup[strlower(class)] = i
+			STATIC_DATA.classIdLookup[strlower(class)] = classId
 			STATIC_DATA.classLookup[class] = {}
-			STATIC_DATA.classLookup[class]._index = i
-			for _, j in pairs({GetAuctionItemSubClasses(i)}) do
-				STATIC_DATA.classLookup[class][GetItemSubClassInfo(i, j)] = j
+			STATIC_DATA.classLookup[class]._index = classId
+			for _, subClassId in pairs({GetAuctionItemSubClasses(classId)}) do
+				STATIC_DATA.classLookup[class][GetItemSubClassInfo(classId, subClassId)] = subClassId
 			end
 		end
 	end

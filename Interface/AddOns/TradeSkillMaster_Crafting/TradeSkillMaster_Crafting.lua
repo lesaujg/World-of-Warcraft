@@ -42,7 +42,7 @@ TSM.MASS_MILLING_RECIPES = {
 
 -- default values for the savedDB
 local settingsInfo = {
-	version = 5,
+	version = 7,
 	global = {
 		ignoreCDCraftCost = { type = "boolean", default = true, lastModifiedVersion = 1 },
 		questSmartCrafting = { type = "boolean", default = true, lastModifiedVersion = 1 },

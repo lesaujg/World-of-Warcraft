@@ -3,8 +3,8 @@ Enchantrix-Barker: disabled
 Informant: disabled
 +Wowhead_Looter: disabled
 SlideBar: disabled
-_NPCScan: disabled
-_NPCScan.Overlay: disabled
+_NPCScan: enabled
+_NPCScan.Overlay: enabled
 AckisRecipeList: enabled
 AckisRecipeList_Alchemy: enabled
 AckisRecipeList_Blacksmithing: enabled
@@ -17,7 +17,7 @@ AckisRecipeList_Jewelcrafting: enabled
 AckisRecipeList_Leatherworking: enabled
 AckisRecipeList_Smelting: enabled
 AckisRecipeList_Tailoring: enabled
-ActionBarSaver: disabled
+ActionBarSaver: enabled
 Overachiever: enabled
 Overachiever_Tabs: enabled
 Overachiever_Trade: enabled
@@ -40,7 +40,7 @@ Postal: disabled
 Skada: enabled
 Stubby: enabled
 !Swatter: disabled
-AddOnSkins: disabled
+AddOnSkins: enabled
 Tukui_Config: enabled
 Tukui: enabled
 DBM-StatusBarTimers: enabled
@@ -84,7 +84,7 @@ BagBrother: disabled
 Basic_Resources: disabled
 Claw: disabled
 BittensSpellFlash_Hunter: disabled
-HandyNotes_DraenorTreasures: disabled
+HandyNotes_DraenorTreasures: enabled
 LiteMount: enabled
 MasterPlan: enabled
 OPie: enabled
@@ -137,7 +137,7 @@ Ovale: disabled
 Quartz: disabled
 BaudManifest: enabled
 AskMrRobot: enabled
-Factionizer: disabled
+Factionizer: enabled
 GTFO: enabled
 HandyNotes: enabled
 MacroToolkit: disabled
@@ -165,10 +165,14 @@ Grid2Options: disabled
 Decursive: disabled
 WeDontWipe: disabled
 WeDontWipe-WindwalkerMonk: disabled
-CrossRealmAssist: disabled
+CrossRealmAssist: enabled
 Ketho_InstanceTimer: disabled
-SavedInstances: disabled
-TeleportCloak: disabled
+SavedInstances: enabled
+TeleportCloak: enabled
 TradeSkillMaster_Vendoring: disabled
 DBM-Nighthold: enabled
 DBM-EmeraldNightmare: enabled
+AdvancedIconSelector: enabled
+IskarAssist: enabled
+DBM-BrokenIsles: enabled
+DBM-Party-Legion: enabled

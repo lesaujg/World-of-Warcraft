@@ -445,7 +445,7 @@ function private:IsDestroyable(itemString)
 
 	-- disenchanting
 	local _, _, quality, _, _, iType, iSubType = TSMAPI.Item:GetInfo(itemString)
-	if TSMAPI.Item:IsDisenchantable(itemString) and (quality >= 2 and quality <= TSM.db.global.deMaxQuality) then
+	if TSMAPI.Item:IsDisenchantable(itemString) then
 		destroyCache[itemString] = { IsSpellKnown(TSM.spells.disenchant) and GetSpellInfo(TSM.spells.disenchant), 1 }
 		return unpack(destroyCache[itemString])
 	end

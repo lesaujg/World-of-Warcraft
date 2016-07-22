@@ -52,7 +52,7 @@ function private:StartFilterSearch()
 		filter = format("%s/%s", filter, classes[class])
 		local subClass = private.frame.filter.subClassDropdown:GetValue()
 		if subClass then
-			local subClasses = TSMAPI.Item:GetItemSubClasses(class)
+			local subClasses = TSMAPI.Item:GetItemSubClasses(TSMAPI.Item:GetClassIdFromClassString(classes[class]))
 			filter = format("%s/%s", filter, subClasses[subClass])
 		end
 	end
@@ -176,6 +176,7 @@ end
 
 function AuctionTabOther:GetFrameInfo()
 	local rarityList = {}
+    local itemClasses = TSMAPI.Item:GetItemClasses()
 	for i = 1, 4 do tinsert(rarityList, _G["ITEM_QUALITY"..i.."_DESC"]) end
 	local BFC = TSMAPI.GUI:GetBuildFrameConstants()
 	local frameInfo = {
@@ -286,7 +287,7 @@ function AuctionTabOther:GetFrameInfo()
 						type = "Dropdown",
 						key = "classDropdown",
 						label = L["Item Class"],
-						list = TSMAPI.Item:GetItemClasses(),
+						list = itemClasses,
 						points = {{"TOPLEFT", 5, -132}, {"TOPRIGHT", BFC.PARENT, "TOP", 0, -132}},
 						scripts = {"OnValueChanged"},
 					},
@@ -493,9 +494,9 @@ function AuctionTabOther:GetFrameInfo()
 				private.frame = self
 				private:ResetFilters()
 				private.frame.filter.filterInputBox:SetFocus()
-				for itemID in pairs(TSMAPI:ModuleAPI("AuctionDB", "lastCompleteScan") or {}) do
-					TSMAPI.Item:QueryInfo(TSMAPI.Item:ToItemString(itemID))
-				end
+				-- for itemID in pairs(TSMAPI:ModuleAPI("AuctionDB", "lastCompleteScan") or {}) do
+				-- 	TSMAPI.Item:QueryInfo(TSMAPI.Item:ToItemString(itemID))
+				-- end
 				local appData = TSMAPI.AppHelper and TSMAPI.AppHelper:FetchData("SHOPPING_SEARCHES")
 				if appData then
 					for _, info in pairs(appData) do
@@ -528,7 +529,7 @@ function AuctionTabOther:GetFrameInfo()
 				classDropdown = {
 					OnValueChanged = function(_, value)
 						private.frame.filter.subClassDropdown:SetValue()
-						private.frame.filter.subClassDropdown:SetList(TSMAPI.Item:GetItemSubClasses(value))
+						private.frame.filter.subClassDropdown:SetList(TSMAPI.Item:GetItemSubClasses(TSMAPI.Item:GetClassIdFromClassString(itemClasses[value])))
 						private.frame.filter.subClassDropdown:SetDisabled(false)
 					end,
 				},

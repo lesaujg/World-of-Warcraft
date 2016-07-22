@@ -242,8 +242,8 @@ end
 local function CleanItemString(ItemString)
   if not ItemString then return; end
 
-  -- We might have a saved item string from pre-7.0 that still has zero fields.
-  local CleanItemString = gsub(ItemString, ":0:", "::");
+  -- We might have a saved item string from pre-7.0 that still has zero-fields.
+  local CleanItemString = gsub(ItemString, ":0", ":");
 
   if strmatch(CleanItemString, "battlepet:") then
     return CleanItemString;
@@ -3545,7 +3545,7 @@ end
 -------------------------------------
 
 function BaudManifestSortDropDown_OnClick(self)
-  BaudManifestSortDropDown_Set(UIDROPDOWNMENU_OPEN_MENU, self.value, true);
+  BaudManifestSortDropDown_Set(UIDROPDOWNMENU_INIT_MENU, self.value, true);
 end
 
 -------------------------------------
@@ -3628,7 +3628,7 @@ end
 -------------------------------------
 
 function BaudManifestFilterDropDown_OnClick(self)
-  BaudManifestFilterDropDown_Set(UIDROPDOWNMENU_OPEN_MENU, self.value, true);
+  BaudManifestFilterDropDown_Set(UIDROPDOWNMENU_INIT_MENU, self.value, true);
 end
 
 -------------------------------------

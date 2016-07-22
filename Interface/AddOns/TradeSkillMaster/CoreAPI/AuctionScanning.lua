@@ -329,15 +329,13 @@ end
 function private.ScanThreadDoQuery(self, query)
 	-- wait for the AH to be ready
 	while not CanSendAuctionQuery() do self:Yield(true) end
+
 	-- send the query
-	if select(4, GetBuildInfo()) >= 70000 then
-		if not query.filterInfoCache and (query.invType or query.subClass or query.invType) then
-			query.filterInfoCache = {{classID=query.class, subClassID=query.subClass, inventoryType=query.invType}}
-		end
-		QueryAuctionItems(query.name, query.minLevel, query.maxLevel, query.page, query.usable, query.quality, nil, query.exact, query.filterInfoCache)
-	else
-		QueryAuctionItems(query.name, query.minLevel, query.maxLevel, query.invType, query.class, query.subClass, query.page, query.usable, query.quality, nil, query.exact)
+	if not query.filterInfoCache and (query.class or query.subClass or query.invType) then
+		query.filterInfoCache = {{classID=query.class, subClassID=query.subClass, inventoryType=query.invType}}
 	end
+	QueryAuctionItems(query.name, query.minLevel, query.maxLevel, query.page, query.usable, query.quality, nil, query.exact, query.filterInfoCache)
+
 	-- wait for the update event
 	self:WaitForEvent("AUCTION_ITEM_LIST_UPDATE")
 end
@@ -484,7 +482,7 @@ function private.FindAuctionThread(self, targetInfo)
 	if self then self:SetThreadName("AUCTION_SCANNING_FIND_AUCTION") end
 	local name, _, rarity, _, minLevel, class, subClass = TSMAPI.Item:GetInfo(targetInfo.itemString)
 	local class = TSMAPI.Item:GetClassIdFromClassString(class)
-	local subClass = TSMAPI.Item:GetClassIdFromClassString(subClass, class)
+	local subClass = TSMAPI.Item:GetSubClassIdFromSubClassString(subClass, class)
 	local query = {name=name, minLevel=minLevel, maxLevel=minLevel, class=class, subClass=subClass, rarity=rarity, page=0, exact=true}
 	local keys = {"itemString", "stackSize", "displayBid", "buyout", "seller"}
 	local indexList = nil

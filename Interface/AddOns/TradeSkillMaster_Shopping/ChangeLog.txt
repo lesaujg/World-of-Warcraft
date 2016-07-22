@@ -1,3 +1,11 @@
+v3.3.3
+*Fixed bug with creating subclass filter searches
+
+v3.3.2
+*Fixed bug with "exact" filter always being set on searches.
+*Fixed issue with class / subclass dropdowns.
+*Temporarily disabled some code which was causing lag issues for some users due to Blizzard's item cache bugs.
+
 v3.3.1
 *Fixed bug affecting sniper searches which is caused by the last page of the AH missing items.
 

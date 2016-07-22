@@ -607,7 +607,7 @@ function private.ScanOpenProfessionThread(self)
 end
 
 function private.ProfessionWindowManagerHandleShowThread(self)
-	if TSM:GetCurrentProfessionName() ~= "UNKNOWN" and not InCombatLockdown() and C_TradeSkillUI.GetTradeSkillLine() == private.currentProfessionId then return end
+	if C_TradeSkillUI.GetTradeSkillLine() == private.currentProfessionId then return end
 
 	if not TradeSkillFrame then
 		-- need to make sure Blizzard_TradeSkillUI is loaded cause we rely on some of its tables
