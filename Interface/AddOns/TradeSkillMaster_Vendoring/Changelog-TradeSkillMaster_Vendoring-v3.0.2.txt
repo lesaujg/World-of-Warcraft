@@ -1,0 +1,11 @@
+tag v3.0.2
+c6636286a4d96d20cd1611195f77d7fe67866763
+TSMBot <admin@tradeskillmaster.com>
+2016-07-19 17:21:07 +0000
+
+
+
+--------------------
+
+Sapu94:
+	- Updated changelog.

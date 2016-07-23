@@ -153,6 +153,13 @@ X: 0
 Y: 0
 W: 100
 H: 80
+Frame: TSMCraftingTradeSkillFrame
+FrameLevel: 0
+Anchor: TOPLEFT
+X: 122
+Y: -98
+W: 450
+H: 500
 Frame: BaudManifestDisplay1
 FrameLevel: 45
 Anchor: CENTER
@@ -160,10 +167,3 @@ X: 276
 Y: 95
 W: 250
 H: 417
-Frame: AuctionFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 832
-H: 447

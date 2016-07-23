@@ -29,16 +29,16 @@ TradeSkillMaster_MailingDB = {
 			"Herbinator - Sisters of Elune", -- [7]
 			"Guldahka - Turalyon", -- [8]
 		},
-		["realm"] = {
-			"Sisters of Elune", -- [1]
-			"Turalyon", -- [2]
+		["factionrealm"] = {
+			"Alliance - Sisters of Elune", -- [1]
+			"Horde - Turalyon", -- [2]
 		},
 		["profile"] = {
 			"Default", -- [1]
 		},
-		["factionrealm"] = {
-			"Alliance - Sisters of Elune", -- [1]
-			"Horde - Turalyon", -- [2]
+		["realm"] = {
+			"Sisters of Elune", -- [1]
+			"Turalyon", -- [2]
 		},
 	},
 	["f@Alliance - Sisters of Elune@deMailTarget"] = "",
@@ -47,29 +47,29 @@ TradeSkillMaster_MailingDB = {
 	["c@Ghiaccioli - Sisters of Elune@goldKeepAmount"] = 1000000,
 	["g@ @defaultMailTab"] = true,
 	["_currentProfile"] = {
-		["Uldaris - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
+		["Orig - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
 		["Galinar - Sisters of Elune"] = "Default",
 		["Guldahka - Turalyon"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
 		["Clothgar - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Orig - Sisters of Elune"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
 	},
 	["g@ @resendDelay"] = 1,
 	["c@Orig - Sisters of Elune@goldKeepAmount"] = 1000000,
 	["g@ @sendItemsIndividually"] = false,
-	["c@Uldaris - Sisters of Elune@goldMailTarget"] = "",
-	["c@Clothgar - Sisters of Elune@goldKeepAmount"] = 1000000,
+	["c@Orig - Sisters of Elune@goldMailTarget"] = "",
+	["g@ @deleteEmptyNPCMail"] = false,
 	["g@ @defaultPage"] = 1,
-	["c@Uldaris - Sisters of Elune@goldKeepAmount"] = 1000000,
+	["c@Bracnar - Sisters of Elune@goldMailTarget"] = "",
 	["g@ @openMailSound"] = "TSM_NO_SOUND",
 	["c@Galinar - Sisters of Elune@goldMailTarget"] = "",
-	["c@Bracnar - Sisters of Elune@goldMailTarget"] = "",
-	["g@ @autoCheck"] = true,
-	["g@ @sendMessages"] = true,
 	["g@ @keepMailSpace"] = 0,
-	["g@ @deleteEmptyNPCMail"] = false,
-	["c@Orig - Sisters of Elune@goldMailTarget"] = "",
+	["g@ @sendMessages"] = true,
+	["g@ @autoCheck"] = true,
+	["c@Uldaris - Sisters of Elune@goldKeepAmount"] = 1000000,
+	["c@Clothgar - Sisters of Elune@goldKeepAmount"] = 1000000,
+	["c@Uldaris - Sisters of Elune@goldMailTarget"] = "",
 	["c@Bracnar - Sisters of Elune@goldKeepAmount"] = 1000000,
 }

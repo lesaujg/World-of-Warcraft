@@ -72,7 +72,7 @@ local MESSAGE_FOUND = "NpcOverlay_Found"
 -- @param Layer Draw layer for texture.
 -- @param ... Color and optional alpha to set texture to.
 local TextureCount = 0
-function private:TextureCreate(Layer, R, G, B, A)
+function private:TextureCreate(drawLayer, R, G, B, A)
 	TextureCount = TextureCount + 1
 
 	local texture = #TexturesUnused > 0 and TexturesUnused[#TexturesUnused]
@@ -80,13 +80,13 @@ function private:TextureCreate(Layer, R, G, B, A)
 		TexturesUnused[#TexturesUnused] = nil
 		texture.id = nil
 		texture:SetParent(self)
-		texture:SetDrawLayer(Layer)
+		texture:SetDrawLayer(drawLayer)
 		texture:ClearAllPoints()
-		texture:Show()
-
+		texture:SetAlpha(1)
 	else
-		texture = self:CreateTexture("ScannerOverlayMobTexture" .. TextureCount, Layer)
+		texture = self:CreateTexture("ScannerOverlayMobTexture" .. TextureCount, drawLayer)
 	end
+
 	texture:SetVertexColor(R, G, B, A or 1)
 	texture:SetBlendMode("BLEND")
 	texture.id = private.CurrentTextureMob
@@ -222,8 +222,7 @@ end
 function private:TextureRemoveAll()
 	for index = #self, 1, -1 do
 		local texture = self[index]
-		texture:Hide()
-		texture:SetParent(TexturesUnused)
+		texture:SetAlpha(0)
 
 		self[index] = nil
 		TexturesUnused[#TexturesUnused + 1] = texture
@@ -286,7 +285,8 @@ do
 	local RING_WIDTH = 1.14 -- Ratio of texture width to ring width
 
 	local textureIndex = 0
-	local FoundTextures = {}
+
+	private.FoundTextures = {}
 
 	-- Adds a found NPC's range circle onto a frame.
 	-- @param X..Y Relative coordinate to center circle on.  (0,0) is top-left, (1,1) is bottom-right.
@@ -294,13 +294,15 @@ do
 	function private:DrawFound(x, y, radiusX, layer, r, g, b)
 
 		local textureIndex = self.textureIndex or 0
-		local FoundTextures = self.FoundTextures or  {}
+		local foundTextures = self.FoundTextures
+
 		textureIndex = textureIndex + 1
+
 		if textureIndex > TEXTURE_INDEX_MAX then
 			textureIndex = 1
 		end
 
-		local oldTexture = FoundTextures[textureIndex]
+		local oldTexture = foundTextures[textureIndex]
 		if oldTexture then
 			oldTexture.ring:Hide()
 			oldTexture.glow:Hide()
@@ -327,15 +329,19 @@ do
 		foundGlow:SetSize(Size * GLOW_WIDTH, Size * GLOW_WIDTH)
 		foundGlow:Show()
 
-		FoundTextures[textureIndex] = {
-			ring = foundRing,
-			glow = foundGlow,
-		}
-	--end
-	self.textureIndex = textureIndex
-	self.FoundTextures = FoundTextures
-	private.SetAutoHideDelay(self, FoundTextures[textureIndex], RING_CLEAR_DELAY)
+		if oldTexture then
+			oldTexture.ring = foundRing
+			oldTexture.glow = foundGlow
+		else
+			foundTextures[textureIndex] = {
+				ring = foundRing,
+				glow = foundGlow,
+			}
+		end
 
+		self.textureIndex = textureIndex
+
+		private.SetAutoHideDelay(self, foundTextures[textureIndex], RING_CLEAR_DELAY)
 	end
 end
 
@@ -353,42 +359,48 @@ end
 
 -- Passes info for all enabled NPCs in a zone to a callback function.
 -- @param Callback  Function( self, PathData, [FoundX], [FoundY], R, G, B, NpcID )
-function private:ApplyZone(mapID, callbackFunc)
-	local mapData = private.PathData[mapID]
-	if not mapData then
-		return
-	end
+do
+	local alphaList = {} -- List of mob names to sort
+	local npcList = {} -- Index of Mob Name to MobIDs
 
-	local colorIndex = 0
-	local alphaList = {} --List of mob names to sort
-	local npcList = {} --Index of Mob Name to MobIDs
+	function private:ApplyZone(mapID, callbackFunc)
+		local mapData = private.PathData[mapID]
+		if not mapData then
+			return
+		end
+		table.wipe(alphaList)
+		table.wipe(npcList)
 
-	--Sorts Mobs in current zone by name
-	for npcID, _ in pairs(mapData) do
-		local npcName = AchievementNPCNames[npcID] or L.NPCs[tostring(npcID)] or npcID
-		npcList[npcName] = npcID
-		table.insert(alphaList, tostring(npcName))
-	end
-	table.sort(alphaList)
+		local colorIndex = 0
 
-	for _, npcName in pairs(alphaList) do
-		local npcID, pathData = npcList[npcName], mapData[npcList[npcName]]
-		colorIndex = colorIndex + 1
+		--Sorts Mobs in current zone by name
+		for npcID, _ in pairs(mapData) do
+			local npcName = AchievementNPCNames[npcID] or L.NPCs[tostring(npcID)] or npcID
+			npcList[npcName] = npcID
+			table.insert(alphaList, tostring(npcName))
+		end
 
-		if private.Options.ShowAll or private.NPCCounts[npcID] then
-			local color = assert(private.OverlayKeyColors[colorIndex], "Ran out of unique path colors.")
-			local found = private.NPCMaps[npcID][mapID]
-			local foundX, foundY
+		table.sort(alphaList)
 
-			if type(found) == "table" then
-				foundX, foundY = unpack(found)
+		for _, npcName in pairs(alphaList) do
+			local npcID, pathData = npcList[npcName], mapData[npcList[npcName]]
+			colorIndex = colorIndex + 1
+
+			if private.Options.ShowAll or private.NPCCounts[npcID] then
+				local color = assert(private.OverlayKeyColors[colorIndex], "Ran out of unique path colors.")
+				local found = private.NPCMaps[npcID][mapID]
+				local foundX, foundY
+
+				if type(found) == "table" then
+					foundX, foundY = unpack(found)
+				end
+
+				private.CurrentTextureMob = npcID;
+				callbackFunc(self, pathData, foundX, foundY, color.r, color.g, color.b)
 			end
-			private.CurrentTextureMob = npcID;
-			callbackFunc(self, pathData, foundX, foundY, color.r, color.g, color.b)
 		end
 	end
 end
-
 
 -- @return Aliased NPC ID, or original if not aliased.
 local function GetRealNpcID(NpcID)
@@ -772,9 +784,6 @@ end
 
 
 function private.ShowTooltip(self, Message)
-		--if LibQTip:IsAcquired(FOLDER_NAME) then
-			--return
-		--end
 	local tooltip = LibQTip:Acquire(FOLDER_NAME, 3)
 	tooltip:SetAutoHideDelay(0.1, self)
 	tooltip:SmartAnchorTo(self)
@@ -785,7 +794,6 @@ end
 
 
 function private.HideTooltip(self)
-	-- Release the tooltip
 	LibQTip:Release(self.tooltip)
 	self.tooltip = nil
 end
@@ -798,9 +806,6 @@ local frameHeap =  {}
 local function AcquireFrame(parent)
 	local frame = tremove(frameHeap) or CreateFrame("Frame")
 	frame:SetParent(parent)
-	--[===[@debug@
-	--usedFrames = usedFrames + 1
-	--@end-debug@]===]
 	return frame
 end
 
