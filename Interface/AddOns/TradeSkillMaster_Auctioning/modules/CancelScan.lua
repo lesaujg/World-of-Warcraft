@@ -111,19 +111,19 @@ function private:ValidateOperation(itemString, operation)
 
 	-- don't cancel this item if their settings are invalid
 	if not prices.minPrice then
-		errMsg = format(L["Did not cancel %s because your minimum price (%s) is invalid. Check your settings."], TSMAPI.Item:ToItemLink(itemString), operation.minPrice)
+		errMsg = format(L["Did not cancel %s because your minimum price (%s) is invalid. Check your settings."], TSMAPI.Item:GetLink(itemString), operation.minPrice)
 	elseif not prices.maxPrice then
-		errMsg = format(L["Did not cancel %s because your maximum price (%s) is invalid. Check your settings."], TSMAPI.Item:ToItemLink(itemString), operation.maxPrice)
+		errMsg = format(L["Did not cancel %s because your maximum price (%s) is invalid. Check your settings."], TSMAPI.Item:GetLink(itemString), operation.maxPrice)
 	elseif not prices.normalPrice then
-		errMsg = format(L["Did not cancel %s because your normal price (%s) is invalid. Check your settings."], TSMAPI.Item:ToItemLink(itemString), operation.normalPrice)
+		errMsg = format(L["Did not cancel %s because your normal price (%s) is invalid. Check your settings."], TSMAPI.Item:GetLink(itemString), operation.normalPrice)
 	elseif operation.cancelRepost and not prices.cancelRepostThreshold then
-		errMsg = format(L["Did not cancel %s because your cancel to repost threshold (%s) is invalid. Check your settings."], TSMAPI.Item:ToItemLink(itemString), operation.cancelRepostThreshold)
+		errMsg = format(L["Did not cancel %s because your cancel to repost threshold (%s) is invalid. Check your settings."], TSMAPI.Item:GetLink(itemString), operation.cancelRepostThreshold)
 	elseif not prices.undercut then
-		errMsg = format(L["Did not cancel %s because your undercut (%s) is invalid. Check your settings."], TSMAPI.Item:ToItemLink(itemString), operation.undercut)
+		errMsg = format(L["Did not cancel %s because your undercut (%s) is invalid. Check your settings."], TSMAPI.Item:GetLink(itemString), operation.undercut)
 	elseif prices.maxPrice < prices.minPrice then
-		errMsg = format(L["Did not cancel %s because your maximum price (%s) is lower than your minimum price (%s). Check your settings."], TSMAPI.Item:ToItemLink(itemString), operation.maxPrice, operation.minPrice)
+		errMsg = format(L["Did not cancel %s because your maximum price (%s) is lower than your minimum price (%s). Check your settings."], TSMAPI.Item:GetLink(itemString), operation.maxPrice, operation.minPrice)
 	elseif prices.normalPrice < prices.minPrice then
-		errMsg = format(L["Did not cancel %s because your normal price (%s) is lower than your minimum price (%s). Check your settings."], TSMAPI.Item:ToItemLink(itemString), operation.normalPrice, operation.minPrice)
+		errMsg = format(L["Did not cancel %s because your normal price (%s) is lower than your minimum price (%s). Check your settings."], TSMAPI.Item:GetLink(itemString), operation.normalPrice, operation.minPrice)
 	end
 
 	if errMsg then

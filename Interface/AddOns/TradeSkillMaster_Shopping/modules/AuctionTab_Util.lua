@@ -16,15 +16,8 @@ local L = LibStub("AceLocale-3.0"):GetLocale("TradeSkillMaster_Shopping") -- loa
 -- General Helper Functions
 -- ============================================================================
 
-function AuctionTabUtil:GetNumInBags(targetItemString)
-	targetItemString = TSMAPI.Item:ToBaseItemString(targetItemString)
-	local num = 0
-	for _, _, itemString, quantity in TSMAPI.Inventory:BagIterator() do
-		if TSMAPI.Item:ToBaseItemString(itemString) == targetItemString then
-			num = num + quantity
-		end
-	end
-	return num
+function AuctionTabUtil:GetNumInBags(itemString)
+	return TSMAPI.Inventory:GetBagQuantity(itemString)
 end
 
 function AuctionTabUtil:GetItemLocation(targetItemString)
@@ -44,10 +37,10 @@ function AuctionTabUtil:GetCraftingFilterString(targetItem, ignoreDisenchant)
 	if not targetItem then return end
 	local convertData = TSMAPI.Conversions:GetSourceItems(targetItem)
 	if not convertData then return end
-	local filters = {TSMAPI.Item:GetInfo(targetItem).."/exact"}
+	local filters = {TSMAPI.Item:GetName(targetItem).."/exact"}
 	if convertData.convert then
 		for itemString in pairs(convertData.convert) do
-			tinsert(filters, TSMAPI.Item:GetInfo(itemString).."/exact")
+			tinsert(filters, TSMAPI.Item:GetName(itemString).."/exact")
 		end
 	end
 	if convertData.disenchant and not ignoreDisenchant then
@@ -70,9 +63,11 @@ function AuctionTabUtil:GetConvertRate(targetItem, sourceItem)
 		return sourceItems.convert[sourceItem].rate, sourceItems.convert[sourceItem].requiresFive
 	elseif sourceItems and sourceItems.disenchant then
 		if not TSMAPI.Item:IsDisenchantable(sourceItem) then return end
-		local rarity, ilvl, _, iType = select(3, TSMAPI.Item:GetInfo(sourceItem))
+		local quality = TSMAPI.Item:GetQuality(sourceItem)
+		local ilvl = TSMAPI.Item:GetItemLevel(sourceItem)
+		local iType = GetItemClassInfo(TSMAPI.Item:GetClassId(sourceItem))
 		for _, deData in ipairs(sourceItems.disenchant.sourceInfo) do
-			if deData.itemType == iType and deData.rarity == rarity and ilvl >= deData.minItemLevel and ilvl <= deData.maxItemLevel then
+			if deData.itemType == iType and deData.rarity == quality and ilvl >= deData.minItemLevel and ilvl <= deData.maxItemLevel then
 				return deData.amountOfMats
 			end
 		end
@@ -126,7 +121,7 @@ local function GetSearchFilterOptions(searchTerm)
 		parts[1] = gsub(parts[1], "battlepet:", "p:")
 	end
 	if strmatch(parts[1], "^[ip]:%d+$") then
-		parts[1] = TSMAPI.Item:GetInfo(parts[1])
+		parts[1] = TSMAPI.Item:GetName(parts[1])
 		if not parts[1] then
 			return false, L["Invalid Filter"]
 		end
@@ -258,19 +253,21 @@ end
 
 function AuctionTabUtil:GetMatchingFilter(queries, itemString)
 	-- figure out which query this item matches
-	local name, _, quality, _, level, class, subClass, _, equipSlot = TSMAPI.Item:GetInfo(itemString)
+	local name = TSMAPI.Item:GetName(itemString)
 	if not name then return end
 	name = strlower(name)
-	class = TSMAPI.Item:GetClassIdFromClassString(class)
-	subClass = TSMAPI.Item:GetSubClassIdFromSubClassString(subClass, class)
-	local invType = GetItemInventoryType(_G[equipSlot])
+	local quality = TSMAPI.Item:GetQuality(itemString)
+	local level = TSMAPI.Item:GetMinLevel(itemString)
+	local classId = TSMAPI.Item:GetClassId(itemString)
+	local subClassId = TSMAPI.Item:GetSubClassId(itemString)
+	local invType = GetItemInventoryType(_G[TSMAPI.Item:GetEquipSlot(itemString)])
 	for _, query in ipairs(queries) do
 		local isValid = strfind(name, TSMAPI.Util:StrEscape(strlower(query.name))) and true or false
 		isValid = isValid and (not query.quality or query.quality == 0 or quality >= query.quality)
 		isValid = isValid and (not query.minLevel or query.minLevel == 0 or level >= query.minLevel)
 		isValid = isValid and (not query.maxLevel or query.maxLevel == 0 or level <= query.maxLevel)
-		isValid = isValid and (query.class == nil or class == query.class)
-		isValid = isValid and (query.subClass == nil or subClass == query.subClass)
+		isValid = isValid and (query.class == nil or classId == query.class)
+		isValid = isValid and (query.subClass == nil or subClassId == query.subClass)
 		isValid = isValid and (query.invType == nil or invType == query.invType)
 		if isValid then
 			return query

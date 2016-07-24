@@ -86,43 +86,46 @@ function TSMAPI.ItemFilter:Parse(str)
 end
 
 function TSMAPI.ItemFilter:MatchesFilter(filterInfo, item, price)
-	local name, _, iRarity, ilvl, lvl, class, subClass, _, equipSlot = TSMAPI.Item:GetInfo(item)
-
 	-- check the name
-	if not strfind(strlower(name), filterInfo.escapedStr) then
+	local name = TSMAPI.Item:GetName(item)
+	if not name or not strfind(strlower(name), filterInfo.escapedStr) then
 		return
 	elseif filterInfo.exactOnly and name ~= filterInfo.str then
 		return
 	end
 
 	-- check the rarity
+	local quality = TSMAPI.Item:GetQuality(item)
 	if filterInfo.rarity and iRarity ~= filterInfo.rarity then
 		return
 	end
 
 	-- check the item level
+	local ilvl = TSMAPI.Item:GetItemLevel(item)
 	if ilvl < filterInfo.minILevel or ilvl > filterInfo.maxILevel then
 		return
 	end
 
 	-- check the required level
+	local lvl = TSMAPI.Item:GetMinLevel(item)
 	if lvl < filterInfo.minLevel or lvl > filterInfo.maxLevel then
 		return
 	end
 
 	-- check the item class
-	class = TSMAPI.Item:GetClassIdFromClassString(class) or 0
+	local class = TSMAPI.Item:GetClassId(item) or 0
 	if filterInfo.class and class ~= filterInfo.class then
 		return
 	end
 
 	-- check the item subclass
-	subClass = TSMAPI.Item:GetSubClassIdFromSubClassString(subClass, class) or 0
+	local subClass = TSMAPI.Item:GetSubClassId(item) or 0
 	if filterInfo.subClass and subClass ~= filterInfo.subClass then
 		return
 	end
 
 	-- check the equip slot
+	local equipSlot = TSMAPI.Item:GetEquipSlot(item)
 	local invType = _G[equipSlot] and TSMAPI.Item:GetInventorySlotIdFromInventorySlotString(_G[equipSlot])
 	if filterInfo.invType and invType ~= filterInfo.invType then
 		return

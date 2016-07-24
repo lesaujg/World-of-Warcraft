@@ -156,7 +156,7 @@ function private.ScanCurrentProfessionThread(self, args)
 	local scanResult = { crafts = {}, mats = {} }
 	local isEnchanting = TSM:IsCurrentProfessionEnchanting()
 	if isEnchanting then
-		self:WaitForItemInfo(TSM.VELLUM_ITEM_STRING)
+		self:WaitForFunction(function() return TSMAPI.Item:GetName(TSM.VELLUM_ITEM_STRING) end)
 	end
 	for spellId, data in pairs(professionCrafts) do
 		TSMAPI:Assert(data, "Invalid profession spell")
@@ -185,7 +185,7 @@ function private.ScanCurrentProfessionThread(self, args)
 			-- if this is an enchant, add a vellum to the list of mats
 			if isEnchanting and strfind(itemLink, "enchant:") then
 				scanResult.crafts[spellId].mats[TSM.VELLUM_ITEM_STRING] = 1
-				local name = TSMAPI.Item:GetInfo(TSM.VELLUM_ITEM_STRING)
+				local name = TSMAPI.Item:GetName(TSM.VELLUM_ITEM_STRING)
 				scanResult.mats[TSM.VELLUM_ITEM_STRING] = scanResult.mats[TSM.VELLUM_ITEM_STRING] or {}
 				scanResult.mats[TSM.VELLUM_ITEM_STRING].name = scanResult.mats[TSM.VELLUM_ITEM_STRING].name or name
 				scanResult.crafts[spellId].numResult = 1
@@ -266,7 +266,7 @@ function private.ScanCurrentProfessionThread(self, args)
 		end
 		if not fixedMatCosts[itemString] then
 			-- the user will need to manually fix it
-			TSM:Printf(L["A loop was detected in the mat cost of %s. Please correct this in your settings. This is typically caused by having 'crafting' in the custom price of two mats which can be crafted into each other."], TSMAPI.Item:ToItemLink(itemString))
+			TSM:Printf(L["A loop was detected in the mat cost of %s. Please correct this in your settings. This is typically caused by having 'crafting' in the custom price of two mats which can be crafted into each other."], TSMAPI.Item:GetLink(itemString))
 		end
 	end
 	for itemString, fixedCustomPrice in pairs(fixedMatCosts) do
@@ -296,7 +296,7 @@ function private:GetCraftInfo(spellId)
 	elseif strfind(itemLink, "item:") then
 		-- result of craft is item
 		itemString = TSMAPI.Item:ToItemString(itemLink)
-		craftName = TSMAPI.Item:GetInfo(itemLink)
+		craftName = TSMAPI.Item:GetName(itemLink)
 	else
 		TSMAPI:Assert(false, "Invalid profession spell.")
 	end
@@ -307,6 +307,7 @@ function private:GetCraftInfo(spellId)
 	for i = 1, C_TradeSkillUI.GetRecipeNumReagents(spellId) do
 		local name, _, quantity = C_TradeSkillUI.GetRecipeReagentInfo(spellId, i)
 		local matItemString = TSMAPI.Item:ToItemString(C_TradeSkillUI.GetRecipeReagentItemLink(spellId, i))
+		TSMAPI.Item:FetchInfo(matItemString)
 		if name and matItemString and quantity then
 			mats[matItemString] = { quantity = quantity, name = name }
 		else

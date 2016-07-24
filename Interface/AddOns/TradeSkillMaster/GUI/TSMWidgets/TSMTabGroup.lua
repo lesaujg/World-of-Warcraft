@@ -133,11 +133,7 @@ local methods = {
 		tab.bottom = bottom
 		local highlight = tab:CreateTexture(nil, "HIGHLIGHT")
 		highlight:SetAllPoints()
-		if select(4, GetBuildInfo()) >= 70000 then
-			highlight:SetColorTexture(1, 1, 1, .2)
-		else
-			highlight:SetTexture(1, 1, 1, .2)
-		end
+		highlight:SetColorTexture(1, 1, 1, .2)
 		highlight:SetBlendMode("BLEND")
 		tab.highlight = highlight
 

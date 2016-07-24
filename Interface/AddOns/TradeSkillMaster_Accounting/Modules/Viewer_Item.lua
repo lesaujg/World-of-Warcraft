@@ -54,7 +54,7 @@ end
 
 function Item:DrawLookup(container, itemString, returnTab, returnSubTab)
 	container:ReleaseChildren()
-	local link = TSMAPI.Item:ToItemLink(itemString)
+	local link = TSMAPI.Item:GetLink(itemString)
 	local itemData = private:GetItemDetailData(itemString)
 
 	local color, color2 = TSMAPI.Design:GetInlineColor("link2"), TSMAPI.Design:GetInlineColor("category2")
@@ -379,7 +379,7 @@ function private.GetItemSummarySTData(filters)
 				local row = {
 					cols = {
 						{
-							value = select(2, TSMAPI.Item:GetInfo(itemString)) or data.name,
+							value = TSMAPI.Item:GetLink(itemString) or data.name,
 							sortArg = data.name or itemString,
 						},
 						{

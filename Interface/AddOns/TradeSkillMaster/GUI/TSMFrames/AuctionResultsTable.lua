@@ -229,18 +229,10 @@ local methods = {
 			tex:SetTexCoord(0.017, 1, 0.083, 0.909)
 			tex:SetAlpha(0.5)
 		end
-		if select(4, GetBuildInfo()) >= 70000 then
-			if rt.sortInfo.descending then
-				rt.headCells[rt.sortInfo.columnIndex]:GetNormalTexture():SetColorTexture(0.8, 0.6, 1, 0.8)
-			else
-				rt.headCells[rt.sortInfo.columnIndex]:GetNormalTexture():SetColorTexture(0.6, 0.8, 1, 0.8)
-			end
+		if rt.sortInfo.descending then
+			rt.headCells[rt.sortInfo.columnIndex]:GetNormalTexture():SetColorTexture(0.8, 0.6, 1, 0.8)
 		else
-			if rt.sortInfo.descending then
-				rt.headCells[rt.sortInfo.columnIndex]:GetNormalTexture():SetTexture(0.8, 0.6, 1, 0.8)
-			else
-				rt.headCells[rt.sortInfo.columnIndex]:GetNormalTexture():SetTexture(0.6, 0.8, 1, 0.8)
-			end
+			rt.headCells[rt.sortInfo.columnIndex]:GetNormalTexture():SetColorTexture(0.6, 0.8, 1, 0.8)
 		end
 
 		-- update the scroll frame
@@ -736,11 +728,7 @@ function TSM:CreateAuctionResultsTable(parent)
 		end
 		local highlight = row:CreateTexture()
 		highlight:SetAllPoints()
-		if select(4, GetBuildInfo()) >= 70000 then
-			highlight:SetColorTexture(1, .9, 0, .5)
-		else
-			highlight:SetTexture(1, .9, 0, .5)
-		end
+		highlight:SetColorTexture(1, .9, 0, .5)
 		highlight:Hide()
 		row.highlight = highlight
 		row.rt = rt
@@ -774,11 +762,7 @@ function TSM:CreateAuctionResultsTable(parent)
 			if j % 2 == 1 then
 				local tex = cell:CreateTexture()
 				tex:SetAllPoints()
-				if select(4, GetBuildInfo()) >= 70000 then
-					tex:SetColorTexture(0.3, 0.3, 0.3, 0.2)
-				else
-					tex:SetTexture(0.3, 0.3, 0.3, 0.2)
-				end
+				tex:SetColorTexture(0.3, 0.3, 0.3, 0.2)
 				cell:SetNormalTexture(tex)
 			end
 
@@ -817,11 +801,7 @@ function TSM:CreateAuctionResultsTable(parent)
 		if i % 2 == 0 then
 			local tex = row:CreateTexture()
 			tex:SetAllPoints()
-			if select(4, GetBuildInfo()) >= 70000 then
-				tex:SetColorTexture(0.3, 0.3, 0.3, 0.3)
-			else
-				tex:SetTexture(0.3, 0.3, 0.3, 0.3)
-			end
+			tex:SetColorTexture(0.3, 0.3, 0.3, 0.3)
 		end
 
 		tinsert(rt.rows, row)

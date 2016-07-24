@@ -49,7 +49,9 @@ local function UpdateScrollFrame(self)
 		parent.list = {}
 		local usedItems = {}
 		for _, itemString in ipairs(parent.items) do
-			local name, link, _, _, _, _, _, _, _, texture = TSMAPI.Item:GetInfo(itemString)
+			local name = TSMAPI.Item:GetName(itemString)
+			local link = TSMAPI.Item:GetLink(itemString)
+			local texture = TSMAPI.Item:GetTexture(itemString)
 			if itemString and name and texture and not usedItems[itemString] then
 				usedItems[itemString] = true
 				tinsert(parent.list, {value=itemString, link=link, icon=texture, sortText=strlower(name)})

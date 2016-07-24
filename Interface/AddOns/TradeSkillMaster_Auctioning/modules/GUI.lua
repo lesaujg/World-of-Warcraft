@@ -822,7 +822,8 @@ function private:UpdateLogSTData()
 		if private.scanFrame.content.logST.cache[record] then
 			row = private.scanFrame.content.logST.cache[record]
 		else
-			local name, link = TSMAPI.Item:GetInfo(record.itemString)
+			local name = TSMAPI.Item:GetName(record.itemString)
+			local link = TSMAPI.Item:GetLink(record.itemString)
 			local lowestAuction = {}
 			local shownBuyout = nil
 			if not TSM.Log:IsNoScanReason(record.mode, record.reason) then
@@ -1056,7 +1057,7 @@ function GUI:SetInfo(info)
 		private.scanFrame.infoTextFrame.quantityText:Show()
 		private.scanFrame.infoTextFrame.quantityText:SetText(TSMAPI.Design:GetInlineColor("link")..L["Currently Owned:"].."|r "..total)
 
-		local _,link,_,_,_,_,_,_,_,texture = TSMAPI.Item:GetInfo(info.itemString)
+		local link = TSMAPI.Item:GetLink(info.itemString)
 		private.scanFrame.infoTextFrame.linkText:SetText(link)
 		if private.scanFrame.infoTextFrame.linkText:GetFontString():GetStringWidth() > 200 then
 			private.scanFrame.infoTextFrame.linkText:SetWidth(200)
@@ -1064,7 +1065,7 @@ function GUI:SetInfo(info)
 			private.scanFrame.infoTextFrame.linkText:SetWidth(private.scanFrame.infoTextFrame.linkText:GetFontString():GetStringWidth())
 		end
 		private.scanFrame.infoTextFrame.icon.link = link
-		private.scanFrame.infoTextFrame.icon:SetTexture(texture)
+		private.scanFrame.infoTextFrame.icon:SetTexture(TSMAPI.Item:GetTexture(info.itemString))
 		private.scanFrame.infoTextFrame.stackText:SetText(format(L["%s item(s) to buy/cancel"], info.num..TSMAPI.Design:GetInlineColor("link")))
 		private.scanFrame.infoTextFrame.bidText:SetText(TSMAPI.Design:GetInlineColor("link")..L["Target Price:"].."|r "..TSMAPI:MoneyToString(info.targetPrice, "OPT_ICON"))
 		private.scanFrame.infoTextFrame.buyoutText:SetText(TSMAPI.Design:GetInlineColor("link")..L["Profit:"].."|r "..TSMAPI:MoneyToString(info.profit, "OPT_ICON"))
@@ -1079,7 +1080,7 @@ function GUI:SetInfo(info)
 		private.scanFrame.infoTextFrame.goldText:Hide()
 		private.scanFrame.infoTextFrame.goldText2:Hide()
 
-		local link, texture = TSMAPI.Util:Select({2, 10}, TSMAPI.Item:GetInfo(info.itemString))
+		local link = TSMAPI.Item:GetLink(info.itemString)
 		private.scanFrame.infoTextFrame.linkText:SetText(link)
 		if private.scanFrame.infoTextFrame.linkText:GetFontString():GetStringWidth() > 200 then
 			private.scanFrame.infoTextFrame.linkText:SetWidth(200)
@@ -1087,7 +1088,7 @@ function GUI:SetInfo(info)
 			private.scanFrame.infoTextFrame.linkText:SetWidth(private.scanFrame.infoTextFrame.linkText:GetFontString():GetStringWidth())
 		end
 		private.scanFrame.infoTextFrame.icon.link = link
-		private.scanFrame.infoTextFrame.icon:SetTexture(texture)
+		private.scanFrame.infoTextFrame.icon:SetTexture(TSMAPI.Item:GetTexture(info.itemString))
 
 		local sText = format("%s "..TSMAPI.Design:GetInlineColor("link")..L["auctions of|r %s"], info.numStacks, info.stackSize)
 		private.scanFrame.infoTextFrame.stackText:SetText(sText)

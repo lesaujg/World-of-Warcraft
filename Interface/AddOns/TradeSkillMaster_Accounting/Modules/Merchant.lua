@@ -82,7 +82,7 @@ function private.CheckMerchantSale(bag, slot, onSelf)
 	if MerchantFrame:IsShown() and not onSelf then
 		local itemString = TSMAPI.Item:ToItemString(GetContainerItemLink(bag, slot))
 		local quantity = select(2, GetContainerItemInfo(bag, slot))
-		local copper = select(11, TSMAPI.Item:GetInfo(itemString))
+		local copper = TSMAPI.Item:GetVendorPrice(itemString)
 		tinsert(private.pendingSales, {itemString, "Vendor", quantity, copper, "Merchant", insertTime=GetTime()})
 	end
 end

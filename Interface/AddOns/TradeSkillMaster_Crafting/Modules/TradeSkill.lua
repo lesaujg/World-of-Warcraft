@@ -474,7 +474,12 @@ function private:UpdateCooldownsFrame()
 					local text, type, finished = GetQuestLogLeaderBoard(l, q)
 
 					if not finished and type == "item" then
-						local have, need, item = string.match(text,"(%d+)/(%d+) (.+)")
+						local have, need, item
+						if GetLocale() == "ruRU" then
+							item, have, need = strmatch(text,"(.+): (%d+)/(%d+)")
+						else
+							have, need, item = strmatch(text,"(%d+)/(%d+) (.+)")
+						end
 
 						if have ~= nil and need ~= nil and item ~= nil then
 							if need - have > 0 then

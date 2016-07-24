@@ -72,7 +72,7 @@ function private.GetExpireSTData(filters)
 					local row = {
 						cols = {
 							{
-								value = select(2, TSMAPI.Item:GetInfo(itemString)) or data.name,
+								value = TSMAPI.Item:GetLink(itemString) or data.name,
 								sortArg = data.name or itemString,
 							},
 							{
@@ -111,7 +111,7 @@ function private.GetCancelSTData(filters)
 					local row = {
 						cols = {
 							{
-								value = select(2, TSMAPI.Item:GetInfo(itemString)) or data.name,
+								value = TSMAPI.Item:GetLink(itemString) or data.name,
 								sortArg = data.name or itemString,
 							},
 							{

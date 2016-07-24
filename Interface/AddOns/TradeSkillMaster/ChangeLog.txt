@@ -1,3 +1,19 @@
+v3.4.15
+*Fixed error when saving item links in item info cache.
+*Fixed error from group filtering.
+
+v3.4.14
+*Removed debug print.
+
+v3.4.13
+*Fixed error when fetching battle pet item info.
+*Fixed item info messages printing forever when invalid items were in groups.
+*Reduced initial login lag.
+
+v3.4.12
+*Potentially fixed a bunch of item info related issues by working around Blizzard's item caching issues.
+*Fixed scans always searching for individual items.
+
 v3.4.11
 *Fixed issue with item classes when finding auctions.
 

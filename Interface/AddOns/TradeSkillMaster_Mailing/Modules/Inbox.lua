@@ -326,11 +326,7 @@ function private:InboxUpdate()
 			for j = 1, hasItem do
 				local link = GetInboxItemLink(i, j)
 				itemLink = itemLink or link
-				if select(4, GetBuildInfo()) >= 70000 then
-					quantity = quantity + (select(4, GetInboxItem(i, j)) or 0)
-				else
-					quantity = quantity + select(3, GetInboxItem(i, j))
-				end
+				quantity = quantity + (select(4, GetInboxItem(i, j)) or 0)
 				if TSMAPI.Item:ToItemString(itemLink) ~= TSMAPI.Item:ToItemString(link) then
 					itemLink = L["Multiple Items"]
 					quantity = -1
@@ -342,7 +338,7 @@ function private:InboxUpdate()
 			end
 			local itemDesc = (quantity > 0 and format("%s (%d)", itemLink, quantity)) or (quantity == -1 and L["Multiple Items"]) or "---"
 
-			local name = TSMAPI.Item:GetInfo(itemLink) or "?"
+			local name = TSMAPI.Item:GetName(itemLink) or "?"
 			if hasItem == 1 and itemLink and strfind(subject, "^" .. TSMAPI.Util:StrEscape(format(AUCTION_EXPIRED_MAIL_SUBJECT, name))) then
 				mailInfo[i] = format(L["Expired: %s | %s"], itemDesc, FormatDaysLeft(daysLeft, i))
 			elseif cod > 0 then
@@ -401,12 +397,7 @@ function private:CanLootMailIndex(index, force)
 		for j = 1, ATTACHMENTS_MAX_RECEIVE do
 			local link = GetInboxItemLink(index, j)
 			local itemString = TSMAPI.Item:ToItemString(link)
-			local quantity = nil
-			if select(4, GetBuildInfo()) >= 70000 then
-				quantity = select(4, GetInboxItem(index, j)) or 0
-			else
-				quantity = select(3, GetInboxItem(index, j))
-			end
+			local quantity = select(4, GetInboxItem(index, j)) or 0
 			local space = 0
 			if itemString then
 				for bag = 0, NUM_BAG_SLOTS do
@@ -415,7 +406,7 @@ function private:CanLootMailIndex(index, force)
 							local iString = TSMAPI.Item:ToItemString(GetContainerItemLink(bag, slot))
 							if iString == itemString then
 								local stackSize = select(2, GetContainerItemInfo(bag, slot))
-								local maxStackSize = select(8, TSMAPI.Item:GetInfo(itemString))
+								local maxStackSize = TSMAPI.Item:GetMaxStack(itemString)
 								if (maxStackSize - stackSize) >= quantity then
 									return true
 								end
@@ -438,12 +429,7 @@ function private:CanLootMailIndex(index, force)
 		for j = 1, ATTACHMENTS_MAX_RECEIVE do
 			local link = GetInboxItemLink(index, j)
 			local itemString = TSMAPI.Item:ToItemString(link)
-			local quantity = nil
-			if select(4, GetBuildInfo()) >= 70000 then
-				quantity = select(4, GetInboxItem(index, j)) or 0
-			else
-				quantity = select(3, GetInboxItem(index, j))
-			end
+			local quantity = select(4, GetInboxItem(index, j)) or 0
 			local isDone = false
 			if itemString then
 				for bag = 0, NUM_BAG_SLOTS do
@@ -452,7 +438,7 @@ function private:CanLootMailIndex(index, force)
 							local iString = TSMAPI.Item:ToItemString(GetContainerItemLink(bag, slot))
 							if iString == itemString and (partSlots[bag] and partSlots[bag][slot]) then
 								local stackSize = select(2, GetContainerItemInfo(bag, slot))
-								local maxStackSize = select(8, TSMAPI.Item:GetInfo(itemString))
+								local maxStackSize = TSMAPI.Item:GetMaxStack(itemString)
 								if (maxStackSize - stackSize - (usedSlots[bag] and usedSlots[bag][slot] or 0)) >= quantity then
 									if stackSize + quantity == maxStackSize then
 										if partSlots[bag] and partSlots[bag][slot] then
@@ -546,7 +532,7 @@ function private:ShouldDeleteMail(index)
 end
 
 function private:ShouldOpenMail(index)
-	local subject, money, cod, numItems, isGM = TSMAPI.Util:Select({4, 5, 6, 8, 13}, GetInboxHeaderInfo(index))
+	local _, _, _, subject, money, cod, _, numItems, _, _, _, _, isGM = GetInboxHeaderInfo(index)
 	cod = cod or 0
 	money = money or 0
 	numItems = numItems or 0
@@ -567,14 +553,9 @@ function private:ShouldOpenMail(index)
 	elseif private.mode == "cancels" then
 		local isInvoice = select(4, GetInboxText(index))
 		if not isInvoice and numItems == 1 then
-			local itemName = TSMAPI.Item:GetInfo(private:GetFirstInboxItemLink(index))
+			local itemName = TSMAPI.Item:GetName(private:GetFirstInboxItemLink(index))
 			if itemName then
-				local qantity = nil
-				if select(4, GetBuildInfo()) >= 70000 then
-					quantity = select(4, GetInboxItem(index, 1))
-				else
-					quantity = select(3, GetInboxItem(index, 1))
-				end
+				local qantity = select(4, GetInboxItem(index, 1))
 				if quantity and quantity > 0 and (subject == format(AUCTION_REMOVED_MAIL_SUBJECT.." (%d)", itemName, quantity) or subject == format(AUCTION_REMOVED_MAIL_SUBJECT, itemName)) then
 					return true
 				end
@@ -583,7 +564,7 @@ function private:ShouldOpenMail(index)
 	elseif private.mode == "expires" then
 		local isInvoice = select(4, GetInboxText(index))
 		if not isInvoice and numItems == 1 then
-			local itemName = TSMAPI.Item:GetInfo(private:GetFirstInboxItemLink(index))
+			local itemName = TSMAPI.Item:GetName(private:GetFirstInboxItemLink(index))
 			if itemName and strfind(subject, "^" .. TSMAPI.Util:StrEscape(format(AUCTION_EXPIRED_MAIL_SUBJECT, itemName))) then
 				return true
 			end
@@ -612,11 +593,7 @@ function private:PrintOpenMailMessage(index)
 		for i = 1, hasItem do
 			local link = GetInboxItemLink(index, i)
 			itemLink = itemLink or link
-			if select(4, GetBuildInfo()) >= 70000 then
-				quantity = quantity + (select(4, GetInboxItem(index, i)) or 0)
-			else
-				quantity = quantity + select(3, GetInboxItem(index, i))
-			end
+			quantity = quantity + (select(4, GetInboxItem(index, i)) or 0)
 			if TSMAPI.Item:ToItemString(itemLink) ~= TSMAPI.Item:ToItemString(link) then
 				itemLink = L["Multiple Items"]
 				quantity = -1
@@ -626,9 +603,9 @@ function private:PrintOpenMailMessage(index)
 		if hasItem == 1 then
 			itemLink = private:GetFirstInboxItemLink(index) or itemLink
 		end
-		local itemName = TSMAPI.Item:GetInfo(itemLink)
+		local itemName = TSMAPI.Item:GetName(itemLink) or "?"
 		local itemDesc = (quantity > 0 and format("%s (%d)", itemLink, quantity)) or (quantity == -1 and "Multiple Items") or "?"
-		if hasItem == 1 and itemLink and strfind(subject, "^" .. TSMAPI.Util:StrEscape(format(AUCTION_EXPIRED_MAIL_SUBJECT, TSMAPI.Item:GetInfo(itemLink)))) then
+		if hasItem == 1 and itemLink and strfind(subject, "^" .. TSMAPI.Util:StrEscape(format(AUCTION_EXPIRED_MAIL_SUBJECT, itemName))) then
 			TSM:Printf(L["Your auction of %s expired"], itemDesc)
 		elseif hasItem == 1 and quantity > 0 and (subject == format(AUCTION_REMOVED_MAIL_SUBJECT.." (%d)", itemName, quantity) or subject == format(AUCTION_REMOVED_MAIL_SUBJECT, itemName)) then
 			TSM:Printf(L["Cancelled auction of %sx%d"], itemLink, quantity)
@@ -800,7 +777,7 @@ function private:GetFirstInboxItemLink(index)
 	local _, speciesId, level, breedQuality, maxHealth, power, speed, name = TSMMailingInboxTooltip:SetInboxItem(index)
 	local link = nil
 	if (speciesId or 0) > 0 then
-		link = TSMAPI.Item:ToItemLink(strjoin(":", "p", speciesId, level, breedQuality, maxHealth, power, speed))
+		link = TSMAPI.Item:GetLink(strjoin(":", "p", speciesId, level, breedQuality, maxHealth, power, speed))
 	else
 		link = GetInboxItemLink(index, 1)
 	end

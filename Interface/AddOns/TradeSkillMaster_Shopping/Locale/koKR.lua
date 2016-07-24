@@ -181,6 +181,7 @@ L["This is the default price Shopping will suggest to post items at when there's
 -- L["This is the maximum percentage of disenchant value that the Other > Disenchant search will display results for."] = ""
 -- L["This is the minimum item level that the Other > Disenchant search will display results for."] = ""
 L["This is the percentage of your buyout price that your bid will be set to when posting auctions with Shopping."] = "쇼핑에서 아이템을 등록할 때 여기서 설정한 즉시 구매가의 백분율로 입찰 가격이 지정됩니다." -- Needs review
+-- L["This searches the AH for all items found on the TSM Great Deals page (http://tradeskillmaster.com/great-deals)."] = ""
 -- L["This searches the AH for your current deals as displayed on the TSM website."] = ""
 -- L["Total Deposit:"] = ""
 -- L["Type in the new name for this saved search and hit the 'Save' button."] = ""

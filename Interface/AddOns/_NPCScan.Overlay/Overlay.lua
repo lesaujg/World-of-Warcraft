@@ -286,15 +286,13 @@ do
 
 	local textureIndex = 0
 
-	private.FoundTextures = {}
+	local FoundTextures = {}
 
 	-- Adds a found NPC's range circle onto a frame.
 	-- @param X..Y Relative coordinate to center circle on.  (0,0) is top-left, (1,1) is bottom-right.
 	-- @param RadiusX Radius relative to the frame's width.  That is, 0.5 for a circle as wide as the frame.
 	function private:DrawFound(x, y, radiusX, layer, r, g, b)
-
 		local textureIndex = self.textureIndex or 0
-		local foundTextures = self.FoundTextures
 
 		textureIndex = textureIndex + 1
 
@@ -302,7 +300,7 @@ do
 			textureIndex = 1
 		end
 
-		local oldTexture = foundTextures[textureIndex]
+		local oldTexture = FoundTextures[textureIndex]
 		if oldTexture then
 			oldTexture.ring:Hide()
 			oldTexture.glow:Hide()
@@ -333,7 +331,7 @@ do
 			oldTexture.ring = foundRing
 			oldTexture.glow = foundGlow
 		else
-			foundTextures[textureIndex] = {
+			FoundTextures[textureIndex] = {
 				ring = foundRing,
 				glow = foundGlow,
 			}
@@ -341,7 +339,7 @@ do
 
 		self.textureIndex = textureIndex
 
-		private.SetAutoHideDelay(self, foundTextures[textureIndex], RING_CLEAR_DELAY)
+		private.SetAutoHideDelay(self, FoundTextures[textureIndex], RING_CLEAR_DELAY)
 	end
 end
 

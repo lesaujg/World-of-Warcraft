@@ -1,3 +1,10 @@
+v3.1.9
+*Fixed bug with cooldowns frame for ruRU players.
+*Fixed bug with materials not showing for selected craft.
+
+v3.1.8
+*Using new APIs added to core TSM addon to workaround Blizzard's item caching issues.
+
 v3.1.7
 *Fixed bug with buyout from crafting search.
 

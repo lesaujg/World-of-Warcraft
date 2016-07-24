@@ -92,19 +92,26 @@ function private.StartSearchThread(self, mode)
 		return
 	end
 
-	local items = {}
 	for itemString in pairs(lastScanData) do
-		tinsert(items, TSMAPI.Item:ToItemString(itemString))
-		self:Yield()
+		TSMAPI.Item:FetchInfo(itemString)
 	end
-	self:WaitForItemInfo(items)
+	for i = 1, 30 do
+		local haveInfo = true
+		for itemString in pairs(lastScanData) do
+			if not TSMAPI.Item:GetName(itemString) then
+				haveInfo = false
+			end
+		end
+		if haveInfo then break end
+		self:Sleep(0.1)
+	end
 
 	local itemList = {}
 	local searchBoxText = nil
 	if mode == "vendor" then
 		for itemString, data in pairs(lastScanData) do
 			itemString = TSMAPI.Item:ToItemString(itemString)
-			local vendor = select(11, TSMAPI.Item:GetInfo(itemString)) or 0
+			local vendor = TSMAPI.Item:GetVendorPrice(itemString) or 0
 			if data.minBuyout and data.minBuyout > 0 and data.minBuyout < vendor then
 				tinsert(itemList, itemString)
 			end
@@ -113,7 +120,7 @@ function private.StartSearchThread(self, mode)
 		searchBoxText = "~"..L["vendor search"].."~"
 	elseif mode == "disenchant" then
 		for itemString, data in pairs(lastScanData) do
-			local iLvl = select(4, TSMAPI.Item:GetInfo(itemString)) or -1
+			local iLvl = TSMAPI.Item:GetItemLevel(itemString) or -1
 			if iLvl >= TSM.db.global.minDeSearchLvl and iLvl <= TSM.db.global.maxDeSearchLvl then
 				local deValue = TSMAPI.Conversions:GetValue(itemString, TSM.db.global.marketValueSource, "disenchant")
 				if deValue and data.minBuyout and data.minBuyout > 0 and (data.minBuyout / deValue) < (TSM.db.global.maxDeSearchPercent or 1) then
@@ -464,7 +471,7 @@ function AuctionTabOther:GetFrameInfo()
 								type = "Button",
 								key = "greatDealsBtn",
 								text = L["Great Deals"],
-								tooltip = "This searches the AH for all items found on the TSM Great Deals page (http://tradeskillmaster.com/great-deals).",
+								tooltip = L["This searches the AH for all items found on the TSM Great Deals page (http://tradeskillmaster.com/great-deals)."],
 								textHeight = 18,
 								size = {0, 25},
 								points = {{"TOPLEFT", 5, -35}, {"TOPRIGHT", -5, -35}},
@@ -494,9 +501,9 @@ function AuctionTabOther:GetFrameInfo()
 				private.frame = self
 				private:ResetFilters()
 				private.frame.filter.filterInputBox:SetFocus()
-				-- for itemID in pairs(TSMAPI:ModuleAPI("AuctionDB", "lastCompleteScan") or {}) do
-				-- 	TSMAPI.Item:QueryInfo(TSMAPI.Item:ToItemString(itemID))
-				-- end
+				for itemID in pairs(TSMAPI:ModuleAPI("AuctionDB", "lastCompleteScan") or {}) do
+					TSMAPI.Item:FetchInfo(TSMAPI.Item:ToItemString(itemID))
+				end
 				local appData = TSMAPI.AppHelper and TSMAPI.AppHelper:FetchData("SHOPPING_SEARCHES")
 				if appData then
 					for _, info in pairs(appData) do
@@ -513,7 +520,7 @@ function AuctionTabOther:GetFrameInfo()
 						-- populate item info cache
 						for _, item in ipairs({(";"):split(private.appData.greatDeals)}) do
 							item = ("/"):split(item)
-							TSMAPI.Item:QueryInfo(item)
+							TSMAPI.Item:FetchInfo(item)
 						end
 					else
 						private.frame.other.appData.greatDealsBtn:Disable()

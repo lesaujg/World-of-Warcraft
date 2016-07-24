@@ -105,14 +105,14 @@ function Post:StartScan(isGroup, scanInfo)
 				end
 			end
 		else
-			local quality = select(3, TSMAPI.Item:GetInfo(itemString))
+			local quality = TSMAPI.Item:GetQuality(itemString)
 			if quality > 0 and not TSMAPI.Operations:GetFirstByItem(itemString, "Auctioning") and private:HasEnoughToPost(itemString, QUICK_POST_OPERATION, numHave) then
 				if private:ValidateOperation(itemString, QUICK_POST_OPERATION, true) then
 					TSM.operationLookup[itemString] = {QUICK_POST_OPERATION}
 					tinsert(scanList, itemString)
 				else
 					-- assume it's invalid due to not having any pricing data
-					TSM:Printf(L["Could not post %s because there is no pricing data for this item. Please ensure that you have AuctionDB and/or WoWuction price data."], TSMAPI.Item:ToItemLink(itemString))
+					TSM:Printf(L["Could not post %s because there is no pricing data for this item. Please ensure that you have AuctionDB and/or WoWuction price data."], TSMAPI.Item:GetLink(itemString))
 				end
 			end
 		end
@@ -145,7 +145,7 @@ function private:GetBagState(forceUpdate)
 end
 
 function private:HasEnoughToPost(itemString, operation, numHave)
-	local maxStackSize = select(8, TSMAPI.Item:GetInfo(itemString)) or 1
+	local maxStackSize = TSMAPI.Item:GetMaxStack(itemString) or 1
 	local perAuction = min(maxStackSize, operation.stackSize)
 	local perAuctionIsCap = operation.stackSizeIsCap
 	local keepQuantity = operation.keepQuantity
@@ -162,21 +162,22 @@ end
 
 function private:ValidateOperation(itemString, operation, silent)
 	local errMsg = nil
-	local maxStackSize, _, _, vendorSellPrice = select(8, TSMAPI.Item:GetInfo(itemString))
+	local maxStackSize = TSMAPI.Item:GetMaxStack(itemString)
+	local vendorSellPrice = TSMAPI.Item:GetVendorPrice(itemString)
 	local prices = TSM.Util:GetItemPrices(operation, itemString, {minPrice=true, normalPrice=true, maxPrice=true, undercut=true})
 
 	if not prices.minPrice then
-		errMsg = format(L["Did not post %s because your minimum price (%s) is invalid. Check your settings."], TSMAPI.Item:ToItemLink(itemString), operation.minPrice)
+		errMsg = format(L["Did not post %s because your minimum price (%s) is invalid. Check your settings."], TSMAPI.Item:GetLink(itemString), operation.minPrice)
 	elseif not prices.maxPrice then
-		errMsg = format(L["Did not post %s because your maximum price (%s) is invalid. Check your settings."], TSMAPI.Item:ToItemLink(itemString), operation.maxPrice)
+		errMsg = format(L["Did not post %s because your maximum price (%s) is invalid. Check your settings."], TSMAPI.Item:GetLink(itemString), operation.maxPrice)
 	elseif not prices.normalPrice then
-		errMsg = format(L["Did not post %s because your normal price (%s) is invalid. Check your settings."], TSMAPI.Item:ToItemLink(itemString), operation.normalPrice)
+		errMsg = format(L["Did not post %s because your normal price (%s) is invalid. Check your settings."], TSMAPI.Item:GetLink(itemString), operation.normalPrice)
 	elseif not prices.undercut then
-		errMsg = format(L["Did not post %s because your undercut (%s) is invalid. Check your settings."], TSMAPI.Item:ToItemLink(itemString), operation.undercut)
+		errMsg = format(L["Did not post %s because your undercut (%s) is invalid. Check your settings."], TSMAPI.Item:GetLink(itemString), operation.undercut)
 	elseif prices.normalPrice < prices.minPrice then
-		errMsg = format(L["Did not post %s because your normal price (%s) is lower than your minimum price (%s). Check your settings."], TSMAPI.Item:ToItemLink(itemString), operation.normalPrice, operation.minPrice)
+		errMsg = format(L["Did not post %s because your normal price (%s) is lower than your minimum price (%s). Check your settings."], TSMAPI.Item:GetLink(itemString), operation.normalPrice, operation.minPrice)
 	elseif prices.maxPrice < prices.minPrice then
-		errMsg = format(L["Did not post %s because your maximum price (%s) is lower than your minimum price (%s). Check your settings."], TSMAPI.Item:ToItemLink(itemString), operation.maxPrice, operation.minPrice)
+		errMsg = format(L["Did not post %s because your maximum price (%s) is lower than your minimum price (%s). Check your settings."], TSMAPI.Item:GetLink(itemString), operation.maxPrice, operation.minPrice)
 	end
 
 	if errMsg then
@@ -188,7 +189,7 @@ function private:ValidateOperation(itemString, operation, silent)
 	else
 		if vendorSellPrice > 0 and prices.minPrice <= vendorSellPrice*1.05 then
 			-- just a warning, not an error
-			TSM:Printf(L["WARNING: You minimum price for %s is below its vendorsell price (with AH cut taken into account). Consider raising your minimum price, or vendoring the item."], TSMAPI.Item:ToItemLink(itemString))
+			TSM:Printf(L["WARNING: You minimum price for %s is below its vendorsell price (with AH cut taken into account). Consider raising your minimum price, or vendoring the item."], TSMAPI.Item:GetLink(itemString))
 		end
 		return true
 	end
@@ -376,7 +377,7 @@ function private:ProcessItem(itemString, queueIndex)
 end
 
 function private:ShouldPost(itemString, operation, numInBags, pendingPosts)
-	local maxStackSize = select(8, TSMAPI.Item:GetInfo(itemString))
+	local maxStackSize = TSMAPI.Item:GetMaxStack(itemString)
 	if operation.stackSize > maxStackSize and not operation.stackSizeIsCap then
 		return "notEnough"
 	end
@@ -404,13 +405,13 @@ function private:ShouldPost(itemString, operation, numInBags, pendingPosts)
 		buyout = prices.normalPrice
 	elseif lowestAuction.hasInvalidSeller then
 		-- we didn't get all the necessary seller info
-		TSM:Printf(L["The seller name of the lowest auction for %s was not given by the server. Skipping this item."], TSMAPI.Item:ToItemLink(itemString))
+		TSM:Printf(L["The seller name of the lowest auction for %s was not given by the server. Skipping this item."], TSMAPI.Item:GetLink(itemString))
 		return "invalidSeller"
 	elseif lowestAuction.isBlacklist and lowestAuction.isPlayer then
-		TSM:Printf(L["Did not post %s because you or one of your alts (%s) is on the blacklist which is not allowed. Remove this character from your blacklist."], TSMAPI.Item:ToItemLink(itemString), lowestAuction.seller)
+		TSM:Printf(L["Did not post %s because you or one of your alts (%s) is on the blacklist which is not allowed. Remove this character from your blacklist."], TSMAPI.Item:GetLink(itemString), lowestAuction.seller)
 		return "invalid"
 	elseif lowestAuction.isBlacklist and lowestAuction.isWhitelist then
-		TSM:Printf(L["Did not post %s because the owner of the lowest auction (%s) is on both the blacklist and whitelist which is not allowed. Adjust your settings to correct this issue."], TSMAPI.Item:ToItemLink(itemString), lowestAuction.seller)
+		TSM:Printf(L["Did not post %s because the owner of the lowest auction (%s) is on both the blacklist and whitelist which is not allowed. Adjust your settings to correct this issue."], TSMAPI.Item:GetLink(itemString), lowestAuction.seller)
 		return "invalid"
 	elseif lowestAuction.buyout <= prices.minPrice then
 		if prices.resetPrice then

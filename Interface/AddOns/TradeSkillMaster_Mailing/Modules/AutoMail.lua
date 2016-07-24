@@ -213,7 +213,7 @@ function private.SendMailThread(self, args)
 			end
 		end
 		for itemString, quantity in pairs(numSent) do
-			print(format("  %sx%d", TSMAPI.Item:ToItemLink(itemString), quantity))
+			print(format("  %sx%d", TSMAPI.Item:GetLink(itemString), quantity))
 		end
 		return
 	end

@@ -225,8 +225,8 @@ function private:UpdateSummaryST()
 			private.summarySTCache[key] = {
 				cols = {
 					{
-						value = TSMAPI.Item:ToItemLink(data.itemString),
-						sortArg = TSMAPI.Item:GetInfo(data.itemString),
+						value = TSMAPI.Item:GetLink(data.itemString),
+						sortArg = TSMAPI.Item:GetName(data.itemString),
 					},
 					{
 						value = data.operation and TSM.operationNameLookup[data.operation] or "---",
@@ -537,31 +537,30 @@ end
 -- ============================================================================
 
 function private:ValidateOperation(itemString, operation)
-	local itemLink = TSMAPI.Item:ToItemLink(itemString)
 	local prices = TSM.Util:GetItemPrices(operation, itemString, {minPrice=true, maxPrice=true, normalPrice=true, resetMaxCost=true, resetMinProfit=true, resetResolution=true, resetMaxItemCost=true, undercut=true})
 	local errMsg
 
 	-- don't reset this item if their settings are invalid
 	if not prices.minPrice then
-		errMsg = format(L["Did not reset %s because your minimum price (%s) is invalid. Check your settings."], itemLink, operation.minPrice)
+		errMsg = format(L["Did not reset %s because your minimum price (%s) is invalid. Check your settings."], TSMAPI.Item:GetLink(itemString), operation.minPrice)
 	elseif not prices.maxPrice then
-		errMsg = format(L["Did not reset %s because your maximum price (%s) is invalid. Check your settings."], itemLink, operation.maxPrice)
+		errMsg = format(L["Did not reset %s because your maximum price (%s) is invalid. Check your settings."], TSMAPI.Item:GetLink(itemString), operation.maxPrice)
 	elseif not prices.normalPrice then
-		errMsg = format(L["Did not reset %s because your normal price (%s) is invalid. Check your settings."], itemLink, operation.normalPrice)
+		errMsg = format(L["Did not reset %s because your normal price (%s) is invalid. Check your settings."], TSMAPI.Item:GetLink(itemString), operation.normalPrice)
 	elseif not prices.resetMaxCost then
-		errMsg = format(L["Did not reset %s because your reset max cost (%s) is invalid. Check your settings."], itemLink, operation.resetMaxCost)
+		errMsg = format(L["Did not reset %s because your reset max cost (%s) is invalid. Check your settings."], TSMAPI.Item:GetLink(itemString), operation.resetMaxCost)
 	elseif not prices.resetMinProfit then
-		errMsg = format(L["Did not reset %s because your reset min profit (%s) is invalid. Check your settings."], itemLink, operation.resetMinProfit)
+		errMsg = format(L["Did not reset %s because your reset min profit (%s) is invalid. Check your settings."], TSMAPI.Item:GetLink(itemString), operation.resetMinProfit)
 	elseif not prices.resetResolution then
-		errMsg = format(L["Did not reset %s because your reset resolution (%s) is invalid. Check your settings."], itemLink, operation.resetResolution)
+		errMsg = format(L["Did not reset %s because your reset resolution (%s) is invalid. Check your settings."], TSMAPI.Item:GetLink(itemString), operation.resetResolution)
 	elseif not prices.resetMaxItemCost then
-		errMsg = format(L["Did not reset %s because your reset max item cost (%s) is invalid. Check your settings."], itemLink, operation.resetMaxItemCost)
+		errMsg = format(L["Did not reset %s because your reset max item cost (%s) is invalid. Check your settings."], TSMAPI.Item:GetLink(itemString), operation.resetMaxItemCost)
 	elseif not prices.undercut then
-		errMsg = format(L["Did not reset %s because your undercut (%s) is invalid. Check your settings."], itemLink, operation.undercut)
+		errMsg = format(L["Did not reset %s because your undercut (%s) is invalid. Check your settings."], TSMAPI.Item:GetLink(itemString), operation.undercut)
 	elseif prices.maxPrice < prices.minPrice then
-		errMsg = format(L["Did not reset %s because your maximum price (%s) is lower than your minimum price (%s). Check your settings."], itemLink, operation.maxPrice, operation.minPrice)
+		errMsg = format(L["Did not reset %s because your maximum price (%s) is lower than your minimum price (%s). Check your settings."], TSMAPI.Item:GetLink(itemString), operation.maxPrice, operation.minPrice)
 	elseif prices.normalPrice < prices.minPrice then
-		errMsg = format(L["Did not reset %s because your normal price (%s) is lower than your minimum price (%s). Check your settings."], itemLink, operation.normalPrice, operation.minPrice)
+		errMsg = format(L["Did not reset %s because your normal price (%s) is lower than your minimum price (%s). Check your settings."], TSMAPI.Item:GetLink(itemString), operation.normalPrice, operation.minPrice)
 	end
 
 	if errMsg then

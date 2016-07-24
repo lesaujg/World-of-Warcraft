@@ -868,7 +868,7 @@ local rtPriceInfoDefaults = {
 			return TSMAPI:GetCustomPriceValue(private.extraInfo.itemOperations[itemString].maxPrice, itemString) or 0
 		end,
 		VendorGetMarketValue = function(itemString)
-			return select(11, TSMAPI.Item:GetInfo(itemString)) or 0
+			return TSMAPI.Item:GetVendorPrice(itemString) or 0
 		end,
 		DisenchantGetMarketValue = function(itemString)
 			return TSMAPI.Conversions:GetValue(itemString, TSM.db.global.marketValueSource, "disenchant")

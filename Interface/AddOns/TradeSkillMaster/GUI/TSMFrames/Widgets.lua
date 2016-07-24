@@ -23,11 +23,7 @@ function GUI:CreateButton(parent, textHeight, name, isSecure)
 	TSMAPI.Design:SetContentColor(btn)
 	local highlight = btn:CreateTexture(nil, "HIGHLIGHT")
 	highlight:SetAllPoints()
-	if select(4, GetBuildInfo()) >= 70000 then
-		highlight:SetColorTexture(1, 1, 1, .2)
-	else
-		highlight:SetTexture(1, 1, 1, .2)
-	end
+	highlight:SetColorTexture(1, 1, 1, .2)
 	highlight:SetBlendMode("BLEND")
 	btn.highlight = highlight
 	btn:SetScript("OnEnter", private.ShowTooltip)
@@ -163,12 +159,8 @@ function GUI:CreateStatusBar(parent, baseName)
 	local ag = statusBar:CreateAnimationGroup()
 	local alpha = ag:CreateAnimation("Alpha")
 	alpha:SetDuration(1)
-	if select(4, GetBuildInfo()) >= 70000 then
-		alpha:SetFromAlpha(0.7)
-		alpha:SetToAlpha(0.2)
-	else
-		alpha:SetChange(-0.5)
-	end
+	alpha:SetFromAlpha(0.7)
+	alpha:SetToAlpha(0.2)
 	ag:SetLooping("Bounce")
 	statusBar.ag = ag
 	frame.minorStatusBar = statusBar
@@ -184,12 +176,8 @@ function GUI:CreateStatusBar(parent, baseName)
 	local ag = statusBar:CreateAnimationGroup()
 	local alpha = ag:CreateAnimation("Alpha")
 	alpha:SetDuration(1)
-	if select(4, GetBuildInfo()) >= 70000 then
-		alpha:SetFromAlpha(0.9)
-		alpha:SetToAlpha(0.4)
-	else
-		alpha:SetChange(-0.5)
-	end
+	alpha:SetFromAlpha(0.9)
+	alpha:SetToAlpha(0.4)
 	ag:SetLooping("Bounce")
 	statusBar.ag = ag
 	frame.majorStatusBar = statusBar

@@ -61,19 +61,16 @@ function Options:UpdateLogST()
 			end
 		end
 	end
-	
+
 	local stData = {}
 	for spell, entries in pairs(TSM.db.global.history) do
 		for _, entry in ipairs(entries) do
 			local result = {}
 			for itemString, quantity in pairs(entry.result) do
-				local link = select(2, TSMAPI.Item:GetInfo(itemString)) or itemString
+				local link = TSMAPI.Item:GetLink(itemString) or itemString
 				tinsert(result, format("%sx%d", link, quantity))
 			end
 			sort(result, function(a,b) return a > b end)
-			local name, link = TSMAPI.Item:GetInfo(entry.item)
-			name = name or entry.item
-			link = link or entry.item
 			local resultStr = table.concat(result, ", ") or ""
 			local row = {
 				cols = {
@@ -82,8 +79,8 @@ function Options:UpdateLogST()
 						sortArg = spell,
 					},
 					{
-						value = link,
-						sortArg = spell,
+						value = TSMAPI.Item:GetLink(entry.item) or entry.item,
+						sortArg = TSMAPI.Item:GetName(entry.item) or entry.item,
 					},
 					{
 						value = resultStr,
@@ -120,7 +117,7 @@ function Options:LoadLog(container)
 			width = 0.14,
 		}
 	}
-	
+
 	local page = {
 		{
 			type = "SimpleGroup",
@@ -153,7 +150,7 @@ function Options:UpdateAverageST()
 			end
 		end
 	end
-	
+
 	local stData = {}
 	for destroyedItem, resultItems in pairs(items) do
 		local spell = resultItems.spell
@@ -162,14 +159,11 @@ function Options:UpdateAverageST()
 		resultItems.num = nil
 		local result = {}
 		for itemString, data in pairs(resultItems) do
-			local link = select(2, TSMAPI.Item:GetInfo(itemString)) or itemString
+			local link = TSMAPI.Item:GetLink(itemString)
 			local average = floor((data.total/totalNum) * 100 + 0.5) / 100
 			tinsert(result, format("%sx%.2f", link, average))
 		end
 		sort(result, function(a,b) return a > b end)
-		local name, link = TSMAPI.Item:GetInfo(destroyedItem)
-		name = name or destroyedItem
-		link = link or destroyedItem
 		local resultStr = table.concat(result, ", ") or ""
 		local row = {
 			cols = {
@@ -182,8 +176,8 @@ function Options:UpdateAverageST()
 					sortArg = totalNum,
 				},
 				{
-					value = link,
-					sortArg = name,
+					value = TSMAPI.Item:GetLink(destroyedItem) or destroyedItem,
+					sortArg = TSMAPI.Item:GetName(destroyedItem) or destroyedItem,
 				},
 				{
 					value = resultStr,
@@ -215,7 +209,7 @@ function Options:LoadAverages(container)
 			width = 0.45,
 		}
 	}
-	
+
 	local page = {
 		{
 			type = "SimpleGroup",
@@ -240,9 +234,8 @@ function Options:UpdateIgnoreST()
 	if not private.ignoreSTCreated then return end
 	local stData = {}
 	for itemString in pairs(TSM.db.global.ignore) do
-		local name, link = TSMAPI.Item:GetInfo(itemString)
-		name = name or itemString
-		link = link or itemString
+		local name = TSMAPI.Item:GetName(itemString) or itemString
+		local link = TSMAPI.Item:GetLink(itemString) or itemString
 		local row = {
 			cols = {
 				{
@@ -288,7 +281,7 @@ function Options:LoadIgnored(container)
 			end
 		end
 	}
-	
+
 	local page = {
 		{
 			type = "SimpleGroup",

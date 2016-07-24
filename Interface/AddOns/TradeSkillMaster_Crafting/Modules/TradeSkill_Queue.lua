@@ -121,7 +121,7 @@ function Queue:GetFrameInfo()
 					GameTooltip:AddLine((TSM.db.factionrealm.crafts[data.spellId].name or "?") .. " (x" .. data.numQueued .. ")")
 					GameTooltip:AddLine(L["Profit (Total Profit):"] .. " " .. (TSMAPI:MoneyToString(profit, color) or "---") .. "(" .. (TSMAPI:MoneyToString(totalProfit, color) or "---") .. ")")
 					for itemString, matQuantity in pairs(TSM.db.factionrealm.crafts[data.spellId].mats) do
-						local name = TSMAPI.Item:GetInfo(itemString) or (TSM.db.factionrealm.mats[itemString] and TSM.db.factionrealm.mats[itemString].name) or "?"
+						local name = TSMAPI.Item:GetName(itemString) or (TSM.db.factionrealm.mats[itemString] and TSM.db.factionrealm.mats[itemString].name) or "?"
 						local inventory = TSMAPI.Inventory:GetBagQuantity(itemString) + TSMAPI.Inventory:GetReagentBankQuantity(itemString)
 						local need = matQuantity * data.numQueued
 						local color
@@ -161,8 +161,7 @@ function Queue:GetFrameInfo()
 				end,
 				OnClick = function(self, data)
 					if IsModifiedClick() then
-						local link = select(2, TSMAPI.Item:GetInfo(data.itemString))
-						HandleModifiedItemClick(link or data.itemString)
+						HandleModifiedItemClick(TSMAPI.Item:GetLink(data.itemString) or data.itemString)
 					end
 				end,
 			},

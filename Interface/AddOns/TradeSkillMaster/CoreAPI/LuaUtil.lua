@@ -83,7 +83,7 @@ end
 
 function TSMAPI.Util:SafeTooltipLink(link)
 	if strmatch(link, "p:") then
-		link = TSMAPI.Item:ToItemLink(link)
+		link = TSMAPI.Item:GetLink(link)
 	end
 	if strmatch(link, "battlepet") then
 		local _, speciesID, level, breedQuality, maxHealth, power, speed, battlePetID = strsplit(":", link)
@@ -92,7 +92,7 @@ function TSMAPI.Util:SafeTooltipLink(link)
 		local currencyID = strmatch(link, "currency:(%d+)")
 		GameTooltip:SetCurrencyByID(currencyID)
 	else
-		link = TSMAPI.Item:ToItemLink(link)
+		link = TSMAPI.Item:GetLink(link)
 		GameTooltip:SetHyperlink(link)
 	end
 end

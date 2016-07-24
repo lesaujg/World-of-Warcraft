@@ -138,7 +138,7 @@ function Buy:CreateTab(parent)
 											},
 											buyStackBtn = {
 												OnClick = function(self)
-													local maxStackSize = select(8, TSMAPI.Item:GetInfo(GetMerchantItemLink(private.splitIndex)))
+													local maxStackSize = TSMAPI.Item:GetMaxStack(GetMerchantItemLink(private.splitIndex))
 													self:GetParent().quantityBox:SetNumber(maxStackSize)
 												end
 											},

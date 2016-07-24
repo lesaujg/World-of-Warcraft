@@ -354,11 +354,7 @@ local methods = {
 		button.toggle.button = button
 		button.toggle:SetScript("OnClick", Expand_OnClick)
 		local tex = button.toggle:CreateTexture()
-		if select(4, GetBuildInfo()) >= 70000 then
-			tex:SetColorTexture(0, 0, 0, 0)
-		else
-			tex:SetTexture(0, 0, 0, 0)
-		end
+		tex:SetColorTexture(0, 0, 0, 0)
 		button.toggle:SetNormalTexture(tex)
 		button.toggle:SetPushedTexture(tex)
 		HIGHLIGHT_COLOR[4] = 1

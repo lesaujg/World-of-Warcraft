@@ -184,11 +184,7 @@ local methods = {
 
 		local dark = btn:CreateTexture(nil, "OVERLAY")
 		dark:SetAllPoints(image)
-		if select(4, GetBuildInfo()) >= 70000 then
-			dark:SetColorTexture(0, 0, 0, .3)
-		else
-			dark:SetTexture(0, 0, 0, .3)
-		end
+		dark:SetColorTexture(0, 0, 0, .3)
 		dark:SetBlendMode("BLEND")
 		btn.dark = dark
 		btn:SetScript("OnEnter", Icon_OnEnter)
@@ -209,11 +205,7 @@ local methods = {
 
 		local highlight = btn:CreateTexture(nil, "HIGHLIGHT")
 		highlight:SetAllPoints(image)
-		if select(4, GetBuildInfo()) >= 70000 then
-			highlight:SetColorTexture(1, 1, 1, .2)
-		else
-			highlight:SetTexture(1, 1, 1, .2)
-		end
+		highlight:SetColorTexture(1, 1, 1, .2)
 		highlight:SetBlendMode("ADD")
 		btn.highlight = highlight
 

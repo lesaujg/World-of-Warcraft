@@ -149,11 +149,7 @@ local function Constructor()
 	local texture = frame:CreateTexture(nil, "BACKGROUND")
 	texture:SetWidth(16)
 	texture:SetHeight(16)
-	if select(4, GetBuildInfo()) >= 70000 then
-		texture:SetColorTexture(1, 1, 1)
-	else
-		texture:SetTexture(1, 1, 1)
-	end
+	texture:SetColorTexture(1, 1, 1)
 	texture:SetPoint("CENTER", colorSwatch)
 	texture:Show()
 

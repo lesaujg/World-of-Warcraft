@@ -361,11 +361,7 @@ local methods = {
 		end
 		local highlight = row:CreateTexture()
 		highlight:SetAllPoints()
-		if select(4, GetBuildInfo()) >= 70000 then
-			highlight:SetColorTexture(1, .9, .9, .1)
-		else
-			highlight:SetTexture(1, .9, .9, .1)
-		end
+		highlight:SetColorTexture(1, .9, .9, .1)
 		highlight:Hide()
 		row.highlight = highlight
 		row.st = st

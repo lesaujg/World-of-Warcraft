@@ -950,7 +950,7 @@ function private.ImportGroup(importStr, groupPath)
 			if strmatch(noSpaceStr, "^p:%d+$") or strmatch(noSpaceStr, "^p:%d+:%d+:%d+$") then
 				itemString = noSpaceStr
 				-- validate this pet import
-				if not TSMAPI.Item:GetInfo(itemString) then return end
+				if not TSMAPI.Item:GetName(itemString) then return end
 			end
 		elseif strmatch(noSpaceStr, "i:") then
 			itemString = noSpaceStr
@@ -967,7 +967,7 @@ function private.ImportGroup(importStr, groupPath)
 				local isValid = false
 				if strmatch(itemString, "^p:") then
 					-- validate this pet import
-					isValid = TSMAPI.Item:GetInfo(itemString) and true
+					isValid = TSMAPI.Item:GetName(itemString) and true
 				elseif strmatch(itemString, "^i:") then
 					itemString = gsub(itemString, ":0:", "::") -- remove empty parts from before patch 7.0.x
 					isValid = TSMAPI.Item:ToItemString(itemString) == itemString

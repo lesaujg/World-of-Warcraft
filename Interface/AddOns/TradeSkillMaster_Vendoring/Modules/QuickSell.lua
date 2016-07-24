@@ -358,10 +358,20 @@ function private:UpdateQuicksellST()
 	local stData = {}
 	for j, info in ipairs(private.sellInfo) do
 
-		tinsert(stData, { cols = { { value = format("|T%s:0|t %s", info.texture or "", info.itemLink), sortArg = info.name},
-								   { value = TSMAPI:MoneyToString(info.vendorValue), sortArg = info.vendorValue },
-								   { value = TSMAPI:MoneyToString(info.potentialValue), sortArg = info.potentialValue },
-								}, index = j, itemString = info.itemString, itemLink = info.itemLink, bag = info.bag, slot = info.slot, isTrash = info.isTrash, isExpired = info.isExpired })
+		tinsert(stData, {
+			cols = {
+				{ value = format("|T%s:0|t %s", info.texture or "", info.itemLink), sortArg = info.name},
+				{ value = TSMAPI:MoneyToString(info.vendorValue), sortArg = info.vendorValue },
+				{ value = TSMAPI:MoneyToString(info.potentialValue), sortArg = info.potentialValue },
+			},
+			index = j,
+			itemString = info.itemString,
+			itemLink = info.itemLink,
+			bag = info.bag,
+			slot = info.slot,
+			isTrash = info.isTrash,
+			isExpired = info.isExpired
+		})
 	end
 
 	private.frame.quicksellST:SetData(stData)
@@ -375,7 +385,9 @@ function private:ShouldSell(bag,slot,quantity)
 	end
 
 	local itemString = TSMAPI.Item:ToItemString(itemLink)
-	local name, texture, vendorValue = TSMAPI.Util:Select({1, 10, 11},TSMAPI.Item:GetInfo(itemLink))
+	local name = TSMAPI.Item:GetName(itemString)
+	local texture = TSMAPI.Item:GetTexture(itemString)
+	local vendorValue = TSMAPI.Item:GetVendorPrice(itemString) or 0
 
 	if vendorValue == 0 then
 		return

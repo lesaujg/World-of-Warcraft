@@ -580,7 +580,10 @@ function Options:UpdateCraftST()
 	local bagTotal, auctionTotal, otherTotal = TSM:GetInventoryTotals()
 	for spellID, data in pairs(TSM.db.factionrealm.crafts) do
 		local isFiltered
-		local name, link, _, ilvl, lvl = TSMAPI.Item:GetInfo(data.itemString)
+		local name = TSMAPI.Item:GetName(data.itemString)
+		local link = TSMAPI.Item:GetLink(data.itemString)
+		local ilvl = TSMAPI.Item:GetItemLevel(data.itemString)
+		local lvl = TSMAPI.Item:GetMinLevel(data.itemString)
 
 		if not name or not link then
 			isFiltered = true
@@ -923,7 +926,7 @@ function Options:UpdateMatST()
 			tinsert(stData, {
 				cols = {
 					{
-						value = select(2, TSMAPI.Item:GetInfo(itemString)) or name,
+						value = TSMAPI.Item:GetLink(itemString) or name,
 						sortArg = name,
 					},
 					{
@@ -1093,7 +1096,7 @@ function Options:ShowMatOptionsWindow(parent, itemString)
 	if Options.OpenWindow then Options.OpenWindow:Hide() end
 	local mat = TSM.db.factionrealm.mats[itemString]
 	if not mat then return end
-	local link = TSMAPI.Item:ToItemLink(itemString)
+	local link = TSMAPI.Item:GetLink(itemString)
 	local cost = TSMAPI:GetCustomPriceValue(mat.customValue or TSM.db.global.defaultMatCostMethod, itemString) or 0
 
 	local window = AceGUI:Create("TSMWindow")

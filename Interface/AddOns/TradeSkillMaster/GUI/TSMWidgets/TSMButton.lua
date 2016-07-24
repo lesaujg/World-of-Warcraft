@@ -87,11 +87,7 @@ local function Constructor()
 	TSMAPI.Design:SetContentColor(btn)
 	local highlight = btn:CreateTexture(nil, "HIGHLIGHT")
 	highlight:SetAllPoints()
-	if select(4, GetBuildInfo()) >= 70000 then
-		highlight:SetColorTexture(1, 1, 1, .2)
-	else
-		highlight:SetTexture(1, 1, 1, .2)
-	end
+	highlight:SetColorTexture(1, 1, 1, .2)
 	highlight:SetBlendMode("BLEND")
 	btn.highlight = highlight
 	btn:SetScript("OnClick", Button_OnClick)

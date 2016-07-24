@@ -123,16 +123,16 @@ function Util:GetMaxFit(index)
 
 	local itemLink = GetMerchantItemLink(index)
 	local itemString = TSMAPI.Item:ToItemString(itemLink)
-	local maxStackSize = select(8, TSMAPI.Item:GetInfo(itemString))
+	local maxStackSize = TSMAPI.Item:GetMaxStack(itemString)
 
 	local maxFit = 0
 
 	for bag = 0, NUM_BAG_SLOTS do
 		if TSMAPI.Inventory:ItemWillGoInBag(itemLink, bag) then
-			for slot = 1, GetContainerNumSlots(bag) do			
+			for slot = 1, GetContainerNumSlots(bag) do
 				local iString = TSMAPI.Item:ToItemString(GetContainerItemLink(bag, slot))
 				if iString == itemString then
-					local stackSize = select(2, GetContainerItemInfo(bag, slot))				
+					local stackSize = select(2, GetContainerItemInfo(bag, slot))
 					maxFit = maxFit + (maxStackSize - stackSize)
 				elseif not iString then
 					maxFit = maxFit + maxStackSize

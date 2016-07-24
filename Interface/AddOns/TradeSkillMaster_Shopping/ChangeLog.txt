@@ -1,3 +1,10 @@
+v3.3.5
+*Fixed bug with crafting mode searches not working in previous version.
+
+v3.3.4
+*Using new APIs added to core TSM addon to workaround Blizzard's item caching issues.
+*Fixed a bit of lag when selecting auction result rows.
+
 v3.3.3
 *Fixed bug with creating subclass filter searches
 

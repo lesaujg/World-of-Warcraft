@@ -632,7 +632,7 @@ end
 function private.InsertLinkHook(link)
 	local putIntoChat = Professions.hooks.ChatEdit_InsertLink(link)
 	if not putIntoChat and TradeSkill:GetVisibilityInfo().professionsTab and not strfind(GetMouseFocus() and GetMouseFocus():GetName() or "", "MerchantItem([0-9]+)ItemButton") then
-		local name = TSMAPI.Item:GetInfo(link)
+		local name = TSMAPI.Item:GetName(link)
 		if name then
 			private.frame.professionsTab.searchBar:SetText(name)
 			private.frame.professionsTab.searchBar:SetTextColor(1, 1, 1, 1)
@@ -974,7 +974,7 @@ function Professions:SetSelectedTradeSkill(spellId, forceUpdate)
 
 		for i, btn in ipairs(frame.craftInfoFrame.matsFrame.reagentButtons) do
 			local name, texture, needed, player = C_TradeSkillUI.GetRecipeReagentInfo(spellId, i)
-			if name then
+			if player ~= nil then
 				btn:Show()
 				btn.link = C_TradeSkillUI.GetRecipeReagentItemLink(spellId, i)
 				local linkText = (texture and "|T" .. texture .. ":0|t" or "") .. " " .. (btn.link or name)
@@ -988,7 +988,7 @@ function Professions:SetSelectedTradeSkill(spellId, forceUpdate)
 
 		if altVerb == ENSCRIBE then
 			frame.craftInfoFrame.buttonsFrame.createAllBtn:SetText(L["Enchant Vellum"])
-			frame.craftInfoFrame.buttonsFrame.createAllBtn.vellum = TSMAPI.Item:GetInfo(TSM.VELLUM_ITEM_STRING)
+			frame.craftInfoFrame.buttonsFrame.createAllBtn.vellum = TSMAPI.Item:GetName(TSM.VELLUM_ITEM_STRING)
 		else
 			frame.craftInfoFrame.buttonsFrame.createAllBtn:SetText(CREATE_ALL)
 			frame.craftInfoFrame.buttonsFrame.createAllBtn.vellum = nil

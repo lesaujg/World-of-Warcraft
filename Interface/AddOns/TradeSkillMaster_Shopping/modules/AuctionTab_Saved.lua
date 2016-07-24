@@ -158,7 +158,7 @@ function private:StartGroupScan(groupTree)
 					if isValid then
 						itemOperations[itemString] = opSettings
 					elseif err then
-						TSM:Printf(L["Invalid custom price source for %s. %s"], TSMAPI.Item:ToItemLink(itemString), err)
+						TSM:Printf(L["Invalid custom price source for %s. %s"], TSMAPI.Item:GetLink(itemString), err)
 					end
 				end
 			end

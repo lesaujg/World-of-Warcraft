@@ -27,7 +27,7 @@ function Summary:Draw(container)
 		wipe(private.filters) -- reset options on fresh update
 		private.filters.timeframe = 1
 	end
-	
+
 	-- get all the data
 	local goldData = {
 		sales = {total=0, month=0, week=0, topGold={}, topQuantity={}},
@@ -39,7 +39,7 @@ function Summary:Draw(container)
 		monthTime = 0,
 		weekTime = 0,
 	}
-	
+
 	-- determine current time frame
 	local timeframes = {"30/7", "90/7", "90/14", "7/1", "7/3"}
 	local timeframe1, timeframe2 = ("/"):split(timeframes[private.filters.timeframe])
@@ -52,10 +52,10 @@ function Summary:Draw(container)
 			private:ProcessSummaryItemData(data.buys, goldData.buys, itemString, goldData, timeframe1, timeframe2)
 		end
 	end
-	
+
 	private:ProcessSummaryMoneyData(TSM.money.income, goldData.income, goldData, timeframe1, timeframe2)
 	private:ProcessSummaryMoneyData(TSM.money.expense, goldData.expense, goldData, timeframe1, timeframe2)
-	
+
 	goldData.sales.topGold.link = private:GetItemDisplayLink(goldData.sales.topGold.itemString)
 	goldData.sales.topQuantity.link = private:GetItemDisplayLink(goldData.sales.topQuantity.itemString)
 	goldData.buys.topGold.link = private:GetItemDisplayLink(goldData.buys.topGold.itemString)
@@ -74,10 +74,10 @@ function Summary:Draw(container)
 	goldData.totalTime = ceil(goldData.totalTime / SECONDS_PER_DAY)
 	goldData.monthTime = ceil(goldData.monthTime / SECONDS_PER_DAY)
 	goldData.weekTime = ceil(goldData.weekTime / SECONDS_PER_DAY)
-	
+
 	local playerList = CopyTable(TSM.ViewerUtil.playerListCache)
 	playerList["all"] = L["All"]
-	
+
 	local color, color2 = TSMAPI.Design:GetInlineColor("link2"), TSMAPI.Design:GetInlineColor("category2")
 	local page = {
 		{
@@ -377,5 +377,5 @@ end
 
 function private:GetItemDisplayLink(itemString)
 	if not itemString then return L["none"] end
-	return select(2, TSMAPI.Item:GetInfo(itemString)) or (TSM.items[itemString] and TSM.items[itemString].name) or L["none"]
+	return TSMAPI.Item:GetLink(itemString) or (TSM.items[itemString] and TSM.items[itemString].name) or L["none"]
 end

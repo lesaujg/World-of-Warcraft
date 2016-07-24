@@ -69,9 +69,8 @@ private.AuctionRecord = setmetatable({}, {
 			self.itemBuyout = (self.buyout > 0 and floor(self.buyout / self.stackSize)) or 0
 			self.itemString = TSMAPI.Item:ToItemString(self.itemLink)
 			self.baseItemString = TSMAPI.Item:ToBaseItemString(self.itemString)
-			local name, _, _, itemLevel = TSMAPI.Item:GetInfo(self.itemLink)
-			self.name = name
-			self.itemLevel = itemLevel or 1
+			self.name = TSMAPI.Item:GetName(self.itemLink)
+			self.itemLevel = TSMAPI.Item:GetItemLevel(self.itemLink) or 1
 			self.hash = strjoin("~", self.itemLink, self.bid, self.displayedBid, self.buyout, self.timeLeft, self.stackSize)
 			self.hash2 = strjoin("~", self.itemLink, self.bid, self.displayedBid, self.buyout, self.timeLeft, self.stackSize, self.seller)
 			self.hash3 = strjoin("~", self.itemLink, self.minBid, self.minIncrement, self.buyout, self.bid, self.seller, self.timeLeft, self.stackSize, tostring(self.isHighBidder))
@@ -80,7 +79,7 @@ private.AuctionRecord = setmetatable({}, {
 			self._filterHash = nil
 			self._filterResult = nil
 		end,
-		
+
 		Filter = function(self, filterFunc, filterHash)
 			if not filterFunc then
 				self._filterHash = nil
@@ -100,7 +99,7 @@ private.AuctionRecord = setmetatable({}, {
 			end
 			local texture, stackSize, minBid, minIncrement, buyout, bid, isHighBidder, seller, seller_full = TSMAPI.Util:Select({2, 3, 8, 9, 10, 11, 12, 14, 15}, GetAuctionItemInfo(auctionType, index))
 			local timeLeft = GetAuctionItemTimeLeft(auctionType, index)
-			local itemLink = TSMAPI.Item:ToItemLink(TSMAPI.Item:ToItemString(GetAuctionItemLink(auctionType, index))) -- generalize the link
+			local itemLink = TSMAPI.Item:GetLink(TSMAPI.Item:ToItemString(GetAuctionItemLink(auctionType, index))) -- generalize the link
 			seller = TSM:GetAuctionPlayer(seller, seller_full) or "?"
 			isHighBidder = isHighBidder and true or false
 			local testAuction = {itemLink=itemLink, texture=texture, stackSize=stackSize, minBid=minBid, minIncrement=minIncrement, buyout=buyout, bid=bid, seller=seller, timeLeft=timeLeft, isHighBidder=isHighBidder, rawItemLink=self.rawItemLink}

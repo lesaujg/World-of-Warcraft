@@ -200,21 +200,13 @@ function private:CreateTSMAHTab(moduleName, callbackShow, callbackHide)
 	local ag = tab:CreateAnimationGroup()
 	local flash = ag:CreateAnimation("Alpha")
 	flash:SetOrder(1)
-	if select(4, GetBuildInfo()) >= 70000 then
-		flash:SetFromAlpha(1)
-		flash:SetToAlpha(0.5)
-	else
-		flash:SetChange(-0.5)
-	end
+	flash:SetFromAlpha(1)
+	flash:SetToAlpha(0.5)
 	flash:SetDuration(0.5)
 	local flash = ag:CreateAnimation("Alpha")
 	flash:SetOrder(2)
-	if select(4, GetBuildInfo()) >= 70000 then
-		flash:SetFromAlpha(0.5)
-		flash:SetToAlpha(1)
-	else
-		flash:SetChange(0.5)
-	end
+	flash:SetFromAlpha(0.5)
+	flash:SetToAlpha(1)
 	flash:SetDuration(0.5)
 	ag:SetLooping("REPEAT")
 	auctionTab.flash = ag

@@ -76,7 +76,7 @@ function private.OnChatMsg(_, msg)
 			if not itemString or not count then return
 			end
 			private.insertInfo = { type = "buys", itemString = itemString, count = count, price = private.tradeInfo.player.money / count }
-			private.insertInfo.gotText = select(2, TSMAPI.Item:GetInfo(itemString)) .. "x" .. count
+			private.insertInfo.gotText = TSMAPI.Item:GetLink(itemString) .. "x" .. count
 			private.insertInfo.gaveText = TSMAPI:MoneyToString(private.tradeInfo.player.money)
 		elseif private.tradeInfo.player.money == 0 and #private.tradeInfo.player > 0 and private.tradeInfo.target.money > 0 and #private.tradeInfo.target == 0 then
 			-- player sold items
@@ -95,13 +95,13 @@ function private.OnChatMsg(_, msg)
 			if not itemString or not count then return
 			end
 			private.insertInfo = { type = "sales", itemString = itemString, count = count, price = private.tradeInfo.target.money / count }
-			private.insertInfo.gaveText = select(2, TSMAPI.Item:GetInfo(itemString)) .. "x" .. count
+			private.insertInfo.gaveText = TSMAPI.Item:GetLink(itemString) .. "x" .. count
 			private.insertInfo.gotText = TSMAPI:MoneyToString(private.tradeInfo.target.money)
 		else
 			private.insertInfo = nil
 			return
 		end
-		
+
 		if TSM.db.global.autoTrackTrades then
 			private:DoInsert()
 		else

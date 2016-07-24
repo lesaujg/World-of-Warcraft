@@ -276,12 +276,12 @@ end
 
 function private.findExistingStackThread(self, itemLink, dest, quantity)
 	local itemString = TSMAPI.Item:ToBaseItemString(itemLink, true)
+	local maxStack = TSMAPI.Item:GetMaxStack(itemString)
 	for i, bag in ipairs(private.getContainerTableThread(self, dest)) do
 		if dest == "GuildVault" then
 			if bag == GetCurrentGuildBankTab() then
 				for slot = 1, private.getContainerNumSlotsDest(bag) do
 					if private.getContainerItemIDDest(bag, slot) == TSMAPI.Item:ToBaseItemString(itemString, true) then
-						local maxStack = select(8, TSMAPI.Item:GetInfo(itemString))
 						local _, currentQuantity = private.getContainerItemIDDest(bag, slot)
 						if currentQuantity and (currentQuantity + quantity) <= maxStack then
 							return bag, slot, currentQuantity
@@ -293,7 +293,6 @@ function private.findExistingStackThread(self, itemLink, dest, quantity)
 		else
 			for slot = 1, private.getContainerNumSlotsDest(bag) do
 				if private.getContainerItemIDDest(bag, slot) == TSMAPI.Item:ToBaseItemString(itemString, true) then
-					local maxStack = select(8, TSMAPI.Item:GetInfo(itemString))
 					local _, currentQuantity = private.getContainerItemIDDest(bag, slot)
 					if currentQuantity and (currentQuantity + quantity) <= maxStack then
 						return bag, slot, currentQuantity
@@ -553,14 +552,14 @@ function private.doTheMoveThread(self, source, destination, bag, slot, destBag, 
 	local itemLink = private.getContainerItemLinkSrc(bag, slot)
 	if itemLink then
 		if GetCursorInfo() == "item" then
-			TSM:LOG_WARN("Pickup Item failed cursor not empty: %s %s bag=%s slot=%s", tostring(source), tostring(TSMAPI.Item:GetInfo(itemLink) or "None"), tostring(bag), tostring(slot))
+			TSM:LOG_WARN("Pickup Item failed cursor not empty: %s %s bag=%s slot=%s", tostring(source), TSMAPI.Item:GetName(itemLink) or "None", tostring(bag), tostring(slot))
 		elseif split then
 			private.splitContainerItemSrc(bag, slot, need)
 			if GetCursorInfo() == "item" then
 				private.pickupContainerItemDest(destBag, destSlot)
 				moved = true
 			else
-				TSM:LOG_WARN("Pickup Item failed from: %s %s bag=%s slot=%s", tostring(source), tostring(TSMAPI.Item:GetInfo(itemLink) or "None"), tostring(bag), tostring(slot))
+				TSM:LOG_WARN("Pickup Item failed from: %s %s bag=%s slot=%s", tostring(source), TSMAPI.Item:GetName(itemLink) or "None", tostring(bag), tostring(slot))
 			end
 		elseif destBag == REAGENTBANK_CONTAINER then
 			private.pickupContainerItemSrc(bag, slot)
@@ -568,7 +567,7 @@ function private.doTheMoveThread(self, source, destination, bag, slot, destBag, 
 				private.pickupContainerItemDest(destBag, destSlot)
 				moved = true
 			else
-				TSM:LOG_WARN("Pickup Item failed from: %s %s bag=%s slot=%s", tostring(source), tostring(TSMAPI.Item:GetInfo(itemLink) or "None"), tostring(bag), tostring(slot))
+				TSM:LOG_WARN("Pickup Item failed from: %s %s bag=%s slot=%s", tostring(source), TSMAPI.Item:GetName(itemLink) or "None", tostring(bag), tostring(slot))
 			end
 		else
 			private.autoStoreItem(bag, slot)
@@ -590,7 +589,7 @@ function private.doTheMoveThread(self, source, destination, bag, slot, destBag, 
 				elseif private.getContainerItemInfoDest(destBag, destSlot) then
 					break
 				elseif numYields >= 100 then
-					TSM:LOG_WARN("Move Item failed from: %s %s bag=%s slot=%s", tostring(source), tostring(TSMAPI.Item:GetInfo(itemLink) or "None"), tostring(bag), tostring(slot))
+					TSM:LOG_WARN("Move Item failed from: %s %s bag=%s slot=%s", tostring(source), TSMAPI.Item:GetName(itemLink) or "None", tostring(bag), tostring(slot))
 					return
 				end
 				numYields = numYields + 1
@@ -601,11 +600,11 @@ function private.doTheMoveThread(self, source, destination, bag, slot, destBag, 
 			end
 			self:Yield(true)
 		else
-			TSM:LOG_WARN("Move Item failed from: %s %s bag=%s slot=%s", tostring(source), tostring(TSMAPI.Item:GetInfo(itemLink) or "None"), tostring(bag), tostring(slot))
+			TSM:LOG_WARN("Move Item failed from: %s %s bag=%s slot=%s", tostring(source), TSMAPI.Item:GetName(itemLink) or "None", tostring(bag), tostring(slot))
 			self:Yield(true)
 		end
 	else
-		TSM:LOG_WARN("Invalid Move attempted from: %s %s bag=%s slot=%s, split = %s", tostring(source), tostring(TSMAPI.Item:GetInfo(itemLink) or "None"), tostring(bag), tostring(slot), tostring(split))
+		TSM:LOG_WARN("Invalid Move attempted from: %s %s bag=%s slot=%s, split = %s", tostring(source), TSMAPI.Item:GetName(itemLink) or "None", tostring(bag), tostring(slot), tostring(split))
 		self:Yield(true)
 	end
 end

@@ -26,7 +26,7 @@ function AuctionTab:OnEnable()
 				if itemString == TSMAPI.Item:ToBaseItemString(itemString) then
 					AuctionTab:StartSearch({ searchMode = private.searchMode, extraInfo = { searchType = "item" }, item = itemString })
 				else
-					local name = TSMAPI.Item:GetInfo(TSMAPI.Item:ToBaseItemString(itemString))
+					local name = TSMAPI.Item:GetName(TSMAPI.Item:ToBaseItemString(itemString))
 					if not name then return false end
 					AuctionTab:StartSearch({ searchMode = private.searchMode, extraInfo = { searchType = "filter" }, filter = name, filterItem = itemString })
 				end
@@ -421,12 +421,12 @@ function private.PostAuctionsThread(self, auctionInfo)
 	end
 	local numInBags = TSM.AuctionTabUtil:GetNumInBags(auctionRecord.itemString)
 	local inventoryItemString, inventoryRawItemLink = select(3, TSM.AuctionTabUtil:GetItemLocation(auctionRecord.itemString))
-	local maxStackSize = select(8, TSMAPI.Item:GetInfo(auctionRecord.itemLink))
+	local maxStackSize = TSMAPI.Item:GetMaxStack(auctionRecord.itemLink)
 	local maxNumStacks = (maxStackSize == 1) and 1 or math.huge
 	local postDuration = postFrame.durationDropdown:GetValue() or 2
 
 	auctionBuyout = floor(auctionBuyout / auctionRecord.stackSize) * min(auctionRecord.stackSize, numInBags)
-	local postInfo = { buyout = auctionBuyout, stackSize = min(auctionRecord.stackSize, numInBags), numInBags = numInBags, numStacks = 1, duration = postDuration, updateBuyout = true, isDonePosting = nil, itemLink = TSMAPI.Item:ToItemLink(inventoryItemString), rawItemLink = inventoryRawItemLink }
+	local postInfo = { buyout = auctionBuyout, stackSize = min(auctionRecord.stackSize, numInBags), numInBags = numInBags, numStacks = 1, duration = postDuration, updateBuyout = true, isDonePosting = nil, itemLink = TSMAPI.Item:GetLink(inventoryItemString), rawItemLink = inventoryRawItemLink }
 	private.frame.UpdateConfirmation("post", auctionRecord, postInfo)
 	self:RegisterEvent("BAG_UPDATE", function() self:SendMsgToSelf("BAG_UPDATE") end)
 	self:RegisterEvent("CHAT_MSG_SYSTEM", function(_, msg) if postInfo.numStacks == 1 and msg == ERR_AUCTION_STARTED then self:SendMsgToSelf("AUCTION_POSTED", 1) end end)
@@ -757,7 +757,7 @@ function private.ValidateDatabaseRecord(record, auctionInfo)
 		-- we just want to apply price filters for sniper
 		-- check for below vendor price
 		local recordPrice = ((record.itemBuyout > 0) and record.itemBuyout or record.itemDisplayedBid)
-		if TSM.db.global.sniperVendorPrice and recordPrice < (select(11, TSMAPI.Item:GetInfo(record.itemString)) or 0) then
+		if TSM.db.global.sniperVendorPrice and recordPrice < (TSMAPI.Item:GetVendorPrice(record.itemString) or 0) then
 			return true
 		end
 		-- check group max prices
@@ -799,7 +799,7 @@ function private.ValidateDatabaseRecord(record, auctionInfo)
 			return
 		end
 	elseif private.extraInfo.searchType == "vendor" then
-		maxPrice = select(11, TSMAPI.Item:GetInfo(record.itemString)) or 0
+		maxPrice = TSMAPI.Item:GetVendorPrice(record.itemString) or 0
 	elseif private.extraInfo.searchType == "disenchant" then
 		maxPrice = TSMAPI:GetItemValue(record.itemLink, "Destroy") or 0
 		if maxPrice > 0 and record.itemBuyout > TSM.db.global.maxDeSearchPercent * maxPrice then
@@ -922,13 +922,26 @@ function private.AuctionTabThread(self)
 				elseif searchInfo.item then
 					TSMAPI:Assert(not searchInfo.filter) -- only one type of search is allowed
 					TSMAPI:Assert(type(searchInfo.item) == "table" or type(searchInfo.item) == "string")
-					self:WaitForItemInfo(searchInfo.item)
+					for i = 1, 30 do
+						if type(searchInfo.item) == "table" then
+							local isValid = true
+							for _, itemString in pairs(searchInfo.item) do
+								if not TSMAPI.Item:GetName(itemString) then
+									isValid = false
+								end
+							end
+							if isValid then break end
+						else
+							if TSMAPI.Item:GetName(searchInfo.item) then break end
+						end
+						self:Sleep(0.1)
+					end
 					if type(searchInfo.item) == "table" then
 						local names = {}
 						auctionInfo.searchItemsLookup = {}
 						for _, item in ipairs(searchInfo.item) do
 							auctionInfo.searchItemsLookup[item] = true
-							local name = TSMAPI.Item:GetInfo(item)
+							local name = TSMAPI.Item:GetName(item)
 							if name then
 								tinsert(names, name .. "/exact")
 							else
@@ -939,7 +952,7 @@ function private.AuctionTabThread(self)
 						auctionInfo.searchItems = searchInfo.item
 						scanThreadId = TSMAPI.Threading:Start(private.ItemScanThread, 0.7, nil, searchInfo.item, self:GetThreadId())
 					else
-						searchFilter = TSMAPI.Item:GetInfo(searchInfo.item) .. "/exact"
+						searchFilter = TSMAPI.Item:GetName(searchInfo.item) .. "/exact"
 						auctionInfo.searchItems = { searchInfo.item }
 						auctionInfo.searchItemsLookup = {}
 						auctionInfo.searchItemsLookup[searchInfo.item] = true
@@ -978,13 +991,23 @@ function private.AuctionTabThread(self)
 						end
 					end
 				end
-				if not targetItem or not self:WaitForItemInfo(targetItem) then
+				local isValidTargetItem = true
+				if not targetItem then
+					isValidTargetItem = false
+				else
+					for i = 1, 30 do
+						isValidTargetItem = TSMAPI.Item:GetName(targetItem)
+						if isValidTargetItem then break end
+						self:Sleep(0.1)
+					end
+				end
+				if not isValidTargetItem then
 					TSM:Print(L["This is not a valid target item."])
 				else
 					searchFilter = TSM.AuctionTabUtil:GetCraftingFilterString(targetItem, private.extraInfo.ignoreDisenchant)
 					if searchFilter then
 						private.targetItem = targetItem
-						private.frame.header.searchBox:SetText(TSMAPI.Item:GetInfo(targetItem) .. (private.extraInfo.evenOnly and "/even" or "") .. (private.extraInfo.maxQuantity and ("/x" .. private.extraInfo.maxQuantity) or "") .. (private.extraInfo.ignoreDisenchant and "/ignorede" or ""))
+						private.frame.header.searchBox:SetText(TSMAPI.Item:GetName(targetItem) .. (private.extraInfo.evenOnly and "/even" or "") .. (private.extraInfo.maxQuantity and ("/x" .. private.extraInfo.maxQuantity) or "") .. (private.extraInfo.ignoreDisenchant and "/ignorede" or ""))
 						scanThreadId = TSMAPI.Threading:Start(private.FilterScanThread, 0.7, nil, searchFilter, self:GetThreadId())
 					else
 						TSM:Print(L["Could not find crafting info for the specified item."])
@@ -1000,7 +1023,7 @@ function private.AuctionTabThread(self)
 						if searchInfo.filter then
 							TSM.AuctionTabSaved:AddRecentSearch(searchInfo.filter, searchInfo.searchMode)
 						else
-							TSM.AuctionTabSaved:AddRecentSearch(TSMAPI.Item:GetInfo(private.targetItem), searchInfo.searchMode)
+							TSM.AuctionTabSaved:AddRecentSearch(TSMAPI.Item:GetName(private.targetItem), searchInfo.searchMode)
 						end
 					else
 						TSM.AuctionTabSaved:AddRecentSearch(searchFilter, searchInfo.searchMode)
@@ -1024,7 +1047,8 @@ function private.AuctionTabThread(self)
 				-- there were no results, but we might have some to post from our bags
 				local numInBags = TSM.AuctionTabUtil:GetNumInBags(searchItem)
 				if numInBags > 0 then
-					local _, link, _, _, _, _, _, _, _, texture = TSMAPI.Item:GetInfo(searchItem)
+					local link = TSMAPI.Item:GetLink(searchItem)
+					local texture = TSMAPI.Item:GetTexture(searchItem)
 					local record = TSMAPI.Auction:NewRecord(link, texture, 1, 1, 0, 0, 0, "---", 1, false, link)
 					record.isFake = true
 					private.frame.content.result.rt:InsertAuctionRecord(1, record)
@@ -1038,7 +1062,7 @@ function private.AuctionTabThread(self)
 				local totalProfit, numAuctions = 0, 0
 				for _, record in ipairs(private.frame.content.result.rt.dbView:Execute()) do
 					if record.buyout > 0 then
-						local profit = (select(11, TSMAPI.Item:GetInfo(record.itemString)) or 0) * record.stackSize - record.buyout
+						local profit = (TSMAPI.Item:GetVendorPrice(record.itemString) or 0) * record.stackSize - record.buyout
 						if profit > 0 then
 							numAuctions = numAuctions + 1
 							totalProfit = totalProfit + profit

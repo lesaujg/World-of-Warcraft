@@ -183,7 +183,7 @@ function Other:CreateTab()
 						local hasItems
 						for bag, slot, itemString, quantity in TSMAPI.Inventory:BagIterator() do
 							if TSMAPI.Item:IsDisenchantable(itemString) and not TSMAPI.Groups:GetPath(TSMAPI.Item:ToBaseItemString(itemString, true)) and not TSMAPI.Item:IsSoulbound(bag, slot) then
-								local quality = select(3, TSMAPI.Item:GetInfo(itemString))
+								local quality = TSMAPI.Item:GetQuality(itemString)
 								if (quality >= 2 and quality <= TSM.db.global.deMaxQuality) then
 									items[itemString] = (items[itemString] or 0) + quantity
 									hasItems = true

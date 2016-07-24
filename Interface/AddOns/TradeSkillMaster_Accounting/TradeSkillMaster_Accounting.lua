@@ -259,7 +259,7 @@ function TSM:OnTSMDBShutdown()
 	local sales, buys, cancels, expires = {}, {}, {}, {}
 	local saveTimeSales, saveTimeBuys, saveTimeExpires, saveTimeCancels = {}, {}, {}, {}
 	for itemString, data in pairs(TSM.items) do
-		local name = data.itemName or TSMAPI.Item:GetInfo(itemString) or TSM:GetItemName(itemString) or "?"
+		local name = data.itemName or TSMAPI.Item:GetName(itemString) or TSM:GetItemName(itemString) or "?"
 		TSM.db.global.itemStrings[name] = TSM.db.global.itemStrings[name] or itemString
 
 		-- process sales

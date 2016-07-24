@@ -801,7 +801,7 @@ function Gather:Update(firstRun)
 	local shortItems = {}
 	for itemString, quantity in pairs(neededMats) do
 		-- query item info as early as possible
-		TSMAPI.Item:QueryInfo(itemString)
+		TSMAPI.Item:FetchInfo(itemString)
 		local numHave = TSMAPI.Inventory:GetBagQuantity(itemString, crafter)
 		if itemString ~= TSM.VELLUM_ITEM_STRING then
 			numHave = numHave + TSMAPI.Inventory:GetReagentBankQuantity(itemString, crafter)
@@ -840,8 +840,8 @@ function Gather:Update(firstRun)
 			else
 				color = "|cffff0000"
 			end
-			local itemName = TSM.db.factionrealm.mats[itemString] and TSM.db.factionrealm.mats[itemString].name or TSMAPI.Item:GetInfo(itemString)
-			local headerText = format(" %s %s|r", TSMAPI.Item:ToItemLink(itemString), color .. "(" .. min(selectedQuantity, (quantity - crafterQty)) .. "/" .. (quantity - crafterQty) .. ")")
+			local itemName = TSM.db.factionrealm.mats[itemString] and TSM.db.factionrealm.mats[itemString].name or TSMAPI.Item:GetName(itemString)
+			local headerText = format(" %s %s|r", TSMAPI.Item:GetLink(itemString), color .. "(" .. min(selectedQuantity, (quantity - crafterQty)) .. "/" .. (quantity - crafterQty) .. ")")
 			tinsert(stData, { cols = { { value = headerText } }, isTitle = true, itemString = itemString, name = itemName, need = need, quantity = quantity, selectedQuantity = selectedQuantity })
 
 			local rowInserted = false
@@ -1004,7 +1004,7 @@ function Gather:Update(firstRun)
 								rowAdded = true
 							end
 							availableMats[charName][location][item] = rowQty
-							local itemName = TSM.db.factionrealm.mats[item] and TSM.db.factionrealm.mats[item].name or TSMAPI.Item:GetInfo(item)
+							local itemName = TSM.db.factionrealm.mats[item] and TSM.db.factionrealm.mats[item].name or TSMAPI.Item:GetName(item)
 							subRowText = format("%s x %s|r", color .. leader2 .. itemName, color .. rowQty)
 							tinsert(stData, { cols = { { value = subRowText } }, itemString = item, quantity = rowQty, sourceName = data.source })
 						end
@@ -1035,7 +1035,7 @@ function Gather:Update(firstRun)
 				tinsert(stData, { cols = { { value = rowText } }, location = location, sourceName = data.source })
 				for item, quantity in pairs(items) do
 					availableMats[crafter][location][item] = quantity
-					local itemName = TSM.db.factionrealm.mats[item] and TSM.db.factionrealm.mats[item].name or TSMAPI.Item:GetInfo(item)
+					local itemName = TSM.db.factionrealm.mats[item] and TSM.db.factionrealm.mats[item].name or TSMAPI.Item:GetName(item)
 					subRowText = format("%s x %s|r", color .. leader2 .. itemName, color .. quantity)
 					tinsert(stData, { cols = { { value = subRowText } }, itemString = item, quantity = quantity, sourceName = data.source })
 				end
@@ -1052,7 +1052,7 @@ function Gather:Update(firstRun)
 			tinsert(stData, { cols = { { value = headerText } }, isTitle = true, sourceName = data.source })
 			for item, quantity in pairs(data.tasks) do
 				availableMats["vendor"]["buy"][item] = quantity
-				local itemName = TSM.db.factionrealm.mats[item] and TSM.db.factionrealm.mats[item].name or TSMAPI.Item:GetInfo(item)
+				local itemName = TSM.db.factionrealm.mats[item] and TSM.db.factionrealm.mats[item].name or TSMAPI.Item:GetName(item)
 				rowText = format("%s x %s|r", color .. leader .. itemName, color .. quantity)
 				tinsert(stData, { cols = { { value = rowText } }, itemString = item, quantity = quantity, sourceName = data.source })
 			end
@@ -1091,7 +1091,7 @@ function Gather:Update(firstRun)
 				tinsert(stData, { cols = { { value = rowText } }, location = method, sourceName = data.source })
 				for item, quantity in pairs(items) do
 					availableMats[data.source][method][item] = quantity
-					local itemName = TSM.db.factionrealm.mats[item] and TSM.db.factionrealm.mats[item].name or TSMAPI.Item:GetInfo(item)
+					local itemName = TSM.db.factionrealm.mats[item] and TSM.db.factionrealm.mats[item].name or TSMAPI.Item:GetName(item)
 					subRowText = format("%s x %s|r", color .. leader2 .. itemName, color .. quantity)
 					tinsert(stData, { cols = { { value = subRowText } }, itemString = item, quantity = quantity, sourceName = data.source })
 				end
@@ -1110,7 +1110,7 @@ function Gather:Update(firstRun)
 						headerAdded = true
 					end
 					availableMats[data.source]["buy"][item] = auctionQty
-					local itemName = TSM.db.factionrealm.mats[item] and TSM.db.factionrealm.mats[item].name or TSMAPI.Item:GetInfo(item)
+					local itemName = TSM.db.factionrealm.mats[item] and TSM.db.factionrealm.mats[item].name or TSMAPI.Item:GetName(item)
 					rowText = format("%s x %s|r", color .. leader .. itemName, color .. auctionQty)
 					tinsert(stData, { cols = { { value = rowText } }, itemString = item, quantity = auctionQty, sourceName = data.source })
 				end

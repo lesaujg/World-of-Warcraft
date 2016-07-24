@@ -20,20 +20,19 @@ local SECONDS_PER_DAY = 24 * 60 * 60
 -- ============================================================================
 
 function ViewerUtil:IsItemFiltered(itemString, filters)
-	local name, _, rarity = TSMAPI.Item:GetInfo(itemString)
-	name = name or TSM.items[itemString].name
-	rarity = rarity or 0
+	local name = TSMAPI.Item:GetName(itemString) or TSM.items[itemString].name
+	local quality = TSMAPI.Item:GetQuality(itemString) or 0
 	if not name then return true end
 
 	if filters.name and not strfind(strlower(name), strlower(filters.name)) then
 		return true
 	end
 
-	if filters.rarity and rarity ~= filters.rarity then
+	if filters.rarity and quality ~= filters.rarity then
 		return true
 	end
 
-	if not TSM.db.global.displayGreys and rarity == 0 then
+	if not TSM.db.global.displayGreys and quality == 0 then
 		return true
 	end
 

@@ -68,7 +68,7 @@ function private:DrawGeneralSettings(container)
 							label = L["Automatically Sell Vendor trash"],
 							settingInfo = {TSM.db.global, "autoSellTrash"},
 							tooltip = L["If checked, vendoring will automatically sell any grey items in your inventory when you visit a merchant."],
-						},						
+						},
 					}
 				},
 				{
@@ -90,7 +90,7 @@ function private:DrawGeneralSettings(container)
 						},
 						{
 							type = "Spacer"
-						},						
+						},
 						{
 							type = "EditBox",
 							label = L["Market Value"],
@@ -201,9 +201,8 @@ function Options:UpdateIgnoreST()
 	if not private.ignoreSTCreated then return end
 	local stData = {}
 	for itemString in pairs(TSM.db.global.ignore) do
-		local name, link = TSMAPI.Item:GetInfo(itemString)
-		name = name or itemString
-		link = link or itemString
+		local name = TSMAPI.Item:GetName(itemString) or itemString
+		local link = TSMAPI.Item:GetLink(itemString) or itemString
 		local row = {
 			cols = {
 				{
@@ -242,7 +241,7 @@ function Options:GetOperationOptionsInfo()
 			{key="vsMaxMarketValue", label=L["Max Market Value"]},
 			{key="vsDestroyValue", label=L["Destroy Value"]},
 			{key="vsMaxDestroyValue", label=L["Max Destroy Value"]},
-			{key="sellSoulbound", label=L["Sell soulbound items"]},			
+			{key="sellSoulbound", label=L["Sell soulbound items"]},
 		},
 	}
 	return description, tabInfo, relationshipInfo
@@ -269,10 +268,10 @@ function private.DrawOperationGeneral(container, operationName)
 							tooltip = L["If checked, this operation will be considered when clicking 'Buy Groups'"],
 							disabled = operationSettings.relationships.enableBuy,
 							callback = function() container:Reload() end,
-						},					
+						},
 						{
 							type = "Spacer"
-						},						
+						},
 						{
 							type = "Slider",
 							settingInfo = {operationSettings, "restockQty"},
@@ -282,7 +281,7 @@ function private.DrawOperationGeneral(container, operationName)
 							min = 0,
 							max = 5000,
 							step = 1,
-							relativeWidth = 0.5,							
+							relativeWidth = 0.5,
 							disabled = operationSettings.relationships.restockQty or not operationSettings.enableBuy
 						},
 						{
@@ -298,10 +297,10 @@ function private.DrawOperationGeneral(container, operationName)
 								if operationSettings.restockSources == nil then
 									operationSettings.restockSources = {}
 								end
-																							
+
 								operationSettings.restockSources[key] = value
 							end,
-						},				
+						},
 					},
 				},
 				{
@@ -316,10 +315,10 @@ function private.DrawOperationGeneral(container, operationName)
 							tooltip = L["If checked, this operation will be considered when clicking 'Sell Groups'"],
 							disabled = operationSettings.relationships.enableSell,
 							callback = function() container:Reload() end,
-						},					
+						},
 						{
 							type = "Spacer"
-						},						
+						},
 						{
 							type = "Slider",
 							settingInfo = {operationSettings, "keepQty"},
@@ -386,7 +385,7 @@ function private.DrawOperationGeneral(container, operationName)
 							settingInfo = {operationSettings, "sellSoulbound"},
 							tooltip = L["If checked, soulbound items will be sold"],
 							disabled = operationSettings.relationships.sellSoulbound or not operationSettings.enableSell
-						},												
+						},
 					},
 				}
 			},

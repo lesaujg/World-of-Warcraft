@@ -209,9 +209,9 @@ function TSM:OnEnable()
 		TSM.Compress:LoadRegionDataEU()
 	end
 
-	-- for itemString in pairs(TSM.realmData) do
-	-- 	TSMAPI.Item:QueryInfo(itemString)
-	-- end
+	for itemString in pairs(TSM.realmData) do
+		TSMAPI.Item:FetchInfo(itemString)
+	end
 	if not next(TSM.realmData) then
 		TSMAPI.Util:ShowStaticPopupDialog("TSM_AUCTIONDB_NO_DATA_POPUP")
 	end
@@ -331,9 +331,9 @@ function private.GetItemDataHelper(tbl, key, itemString)
 	if tbl[itemString] then
 		value = tbl[itemString][key]
 	else
-        local _, _, iRarity = TSMAPI.Item:GetInfo(itemString)
-        if iRarity and iRarity >= 3 then
-            if strmatch(itemString, "^i:[0-9]+:[0-9%-]+:") then return end
+		local quality = TSMAPI.Item:GetQuality(itemString)
+        if quality and quality >= 3 then
+            if strmatch(itemString, "^i:[0-9]+:[0-9%-]*:") then return end
         end
 		local baseItemString = TSMAPI.Item:ToBaseItemString(itemString)
 		if not baseItemString then return end

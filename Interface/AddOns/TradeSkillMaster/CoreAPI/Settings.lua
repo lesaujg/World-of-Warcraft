@@ -47,7 +47,7 @@ local DEFAULT_DB = {
 -- TSMAPI Functions
 -- ============================================================================
 
-function TSMAPI.Settings:Init(svTableName, settingsInfo)
+function TSMAPI.Settings:Init(svTableName, settingsInfo, upgradeCallback)
 	if _G[svTableName] and _G[svTableName].profileKeys then
 		-- this is an old AceDB table which we will convert to a SettingsDB
 		-- create a new SettingsDB with default values and then go through and set any applicable values found in the old AceDB table
@@ -108,7 +108,7 @@ function TSMAPI.Settings:Init(svTableName, settingsInfo)
 		end
 		return newSettingsDB
 	else
-		return private.SettingsDB(svTableName, settingsInfo)
+		return private.SettingsDB(svTableName, settingsInfo, upgradeCallback)
 	end
 end
 
@@ -175,15 +175,15 @@ private.SettingsDB = setmetatable({}, {
 			isValid = false
 		elseif not private:ValidateDB(db) then
 			-- corrupted DB
-			TSMAPI:Assert(GetAddOnMetadata("TradeSkillMaster", "version") ~= "v3.4.11", "DB is not valid!")
+			TSMAPI:Assert(GetAddOnMetadata("TradeSkillMaster", "version") ~= "v3.4.15", "DB is not valid!")
 			isValid = false
 		elseif db._version == version and db._hash ~= hash then
 			-- the hash didn't match
-			TSMAPI:Assert(GetAddOnMetadata("TradeSkillMaster", "version") ~= "v3.4.11", "Invalid settings hash! Did you forget to increase the version?")
+			TSMAPI:Assert(GetAddOnMetadata("TradeSkillMaster", "version") ~= "v3.4.15", "Invalid settings hash! Did you forget to increase the version?")
 			isValid = false
 		elseif db._version > version then
 			-- this is a downgrade
-			TSMAPI:Assert(GetAddOnMetadata("TradeSkillMaster", "version") ~= "v3.4.11", "Unexpected DB version! If you really want to downgrade, comment out this line (remember to uncomment before committing).")
+			TSMAPI:Assert(GetAddOnMetadata("TradeSkillMaster", "version") ~= "v3.4.15", "Unexpected DB version! If you really want to downgrade, comment out this line (remember to uncomment before committing).")
 			isValid = false
 		end
 		if not isValid then

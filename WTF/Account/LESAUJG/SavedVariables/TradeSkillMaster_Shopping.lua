@@ -1,17 +1,8 @@
 
 TradeSkillMaster_ShoppingDB = {
-	["_currentProfile"] = {
-		["Orig - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Galinar - Sisters of Elune"] = "Default",
-		["Guldahka - Turalyon"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
-	},
-	["_version"] = 3,
-	["g@ @sniperVendorPrice"] = true,
+	["g@ @sniperCustomPrice"] = "0c",
+	["g@ @maxDeSearchPercent"] = 1,
+	["g@ @postUndercut"] = "1c",
 	["g@ @postBidPercent"] = 0.95,
 	["_scopeKeys"] = {
 		["char"] = {
@@ -24,180 +15,177 @@ TradeSkillMaster_ShoppingDB = {
 			"Herbinator - Sisters of Elune", -- [7]
 			"Guldahka - Turalyon", -- [8]
 		},
-		["factionrealm"] = {
-			"Alliance - Sisters of Elune", -- [1]
-			"Horde - Turalyon", -- [2]
+		["realm"] = {
+			"Sisters of Elune", -- [1]
+			"Turalyon", -- [2]
 		},
 		["profile"] = {
 			"Default", -- [1]
 		},
-		["realm"] = {
-			"Sisters of Elune", -- [1]
-			"Turalyon", -- [2]
+		["factionrealm"] = {
+			"Alliance - Sisters of Elune", -- [1]
+			"Horde - Turalyon", -- [2]
 		},
 	},
 	["g@ @helpPlatesShown"] = {
 		["auction"] = true,
 	},
-	["g@ @postUndercut"] = "1c",
-	["g@ @minDeSearchLvl"] = 1,
-	["g@ @maxDeSearchLvl"] = 735,
+	["g@ @sniperVendorPrice"] = true,
 	["_hash"] = 1861581,
-	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1469336526,
+			["name"] = "Dream Shard/exact",
+			["filter"] = "Dream Shard/exact",
+		}, -- [1]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1469245249,
 			["name"] = "eternal water",
 			["filter"] = "eternal water",
-		}, -- [1]
+		}, -- [2]
 		{
 			["lastSearch"] = 1469243673,
 			["name"] = "hexweave bag",
 			["filter"] = "hexweave bag",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [2]
+		}, -- [3]
 		{
 			["lastSearch"] = 1469243666,
 			["name"] = "universal",
 			["filter"] = "universal",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [3]
+		}, -- [4]
 		{
 			["lastSearch"] = 1469243650,
 			["name"] = "arcane c",
 			["filter"] = "arcane c",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [4]
+		}, -- [5]
 		{
 			["lastSearch"] = 1469242033,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [5]
+		}, -- [6]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1469234451,
 			["name"] = "Frozen Orb/exact",
 			["filter"] = "Frozen Orb/exact",
-		}, -- [6]
+		}, -- [7]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1469234386,
 			["name"] = "Maelstrom Crystal",
 			["filter"] = "Maelstrom Crystal",
-		}, -- [7]
+		}, -- [8]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1469234344,
 			["name"] = "Abyss Crystal",
 			["filter"] = "Abyss Crystal",
-		}, -- [8]
+		}, -- [9]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1469234333,
 			["name"] = "Nexus Crystal",
 			["filter"] = "Nexus Crystal",
-		}, -- [9]
+		}, -- [10]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1469234236,
 			["name"] = "Sha Crystal",
 			["filter"] = "Sha Crystal",
-		}, -- [10]
+		}, -- [11]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1469151135,
 			["name"] = "mastery",
 			["filter"] = "mastery",
-		}, -- [11]
+		}, -- [12]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1469151118,
 			["name"] = "immaculate",
 			["filter"] = "immaculate",
-		}, -- [12]
+		}, -- [13]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1469151045,
 			["name"] = "Gift of Mastery",
 			["filter"] = "Gift of Mastery",
-		}, -- [13]
+		}, -- [14]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1469150921,
 			["name"] = "cloak mastery",
 			["filter"] = "cloak mastery",
-		}, -- [14]
+		}, -- [15]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1469150894,
 			["name"] = "hemet",
 			["filter"] = "hemet",
-		}, -- [15]
+		}, -- [16]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1468994252,
 			["name"] = "Vermilion Onyx/exact",
 			["filter"] = "Vermilion Onyx/exact",
-		}, -- [16]
+		}, -- [17]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1468994248,
 			["name"] = "Primordial Ruby/exact",
 			["filter"] = "Primordial Ruby/exact",
-		}, -- [17]
+		}, -- [18]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1468994114,
 			["name"] = "Heavenly Shard/exact",
 			["filter"] = "Heavenly Shard/exact",
-		}, -- [18]
+		}, -- [19]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1468994111,
 			["name"] = "Essence of Destruction/exact",
 			["filter"] = "Essence of Destruction/exact",
-		}, -- [19]
+		}, -- [20]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1468994047,
 			["name"] = "Essence of Undeath/exact",
 			["filter"] = "Essence of Undeath/exact",
-		}, -- [20]
+		}, -- [21]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1468994034,
 			["name"] = "Large Prismatic Shard/exact",
 			["filter"] = "Large Prismatic Shard/exact",
-		}, -- [21]
+		}, -- [22]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1468993953,
 			["name"] = "Sha Crystal/exact",
 			["filter"] = "Sha Crystal/exact",
-		}, -- [22]
+		}, -- [23]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1468993946,
 			["name"] = "Abyss Crystal/exact",
 			["filter"] = "Abyss Crystal/exact",
-		}, -- [23]
+		}, -- [24]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1468993938,
 			["name"] = "Ethereal Shard/exact",
 			["filter"] = "Ethereal Shard/exact",
-		}, -- [24]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1468993928,
-			["name"] = "Dream Shard/exact",
-			["filter"] = "Dream Shard/exact",
 		}, -- [25]
 		{
 			["searchMode"] = "normal",
@@ -435,7 +423,19 @@ TradeSkillMaster_ShoppingDB = {
 		}, -- [64]
 	},
 	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["g@ @marketValueSource"] = "dbmarket",
+	["g@ @maxDeSearchLvl"] = 735,
+	["g@ @minDeSearchLvl"] = 1,
 	["g@ @normalPostPrice"] = "150% dbmarket",
-	["g@ @maxDeSearchPercent"] = 1,
-	["g@ @sniperCustomPrice"] = "0c",
+	["_version"] = 3,
+	["_currentProfile"] = {
+		["Uldaris - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
+		["Guldahka - Turalyon"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Orig - Sisters of Elune"] = "Default",
+	},
 }

@@ -31,8 +31,8 @@ function TSMAPI.Conversions:Add(targetItem, sourceItem, rate, method)
 	end
 	if private.skippedConversions[targetItem..sourceItem] then return end
 	private.data[targetItem][sourceItem] = {rate=rate, method=method, hasItemInfo=nil}
-	TSMAPI.Item:QueryInfo(targetItem)
-	TSMAPI.Item:QueryInfo(sourceItem)
+	TSMAPI.Item:FetchInfo(targetItem)
+	TSMAPI.Item:FetchInfo(sourceItem)
 	private.targetItemNameLookup = nil
 	private.sourceItemCache = nil
 end
@@ -44,15 +44,15 @@ end
 function TSMAPI.Conversions:GetTargetItemByName(targetItemName)
 	targetItemName = strlower(targetItemName)
 	for itemString, data in pairs(private.data) do
-		local name = TSMAPI.Item:GetInfo(itemString)
-		if strlower(name) == targetItemName then
+		local name = TSMAPI.Item:GetName(itemString)
+		if name and strlower(name) == targetItemName then
 			return TSMAPI.Item:ToItemString(itemString)
 		end
 	end
 	for _, data in pairs(TSM.STATIC_DATA.disenchantInfo) do
 		for itemString in pairs(data) do
 			if itemString ~= "desc" then
-				local name = TSMAPI.Item:GetInfo(itemString)
+				local name = TSMAPI.Item:GetName(itemString)
 				if name and strlower(name) == targetItemName then
 					return TSMAPI.Item:ToItemString(itemString)
 				end
@@ -66,7 +66,7 @@ function TSMAPI.Conversions:GetTargetItemNames()
 	local result = {}
 	local completeResult = true
 	for itemString in pairs(private.data) do
-		local name = TSMAPI.Item:GetInfo(itemString)
+		local name = TSMAPI.Item:GetName(itemString)
 		if name then
 			tinsert(result, strlower(name))
 		else
@@ -76,7 +76,7 @@ function TSMAPI.Conversions:GetTargetItemNames()
 	for _, data in pairs(TSM.STATIC_DATA.disenchantInfo) do
 		for itemString in pairs(data) do
 			if itemString ~= "desc" then
-				local name = TSMAPI.Item:GetInfo(itemString)
+				local name = TSMAPI.Item:GetName(itemString)
 				if name then
 					tinsert(result, strlower(name))
 				else
@@ -138,16 +138,18 @@ end
 
 function TSMAPI.Conversions:GetValue(sourceItem, customPrice, method)
 	if not customPrice then return end
-	
+
 	-- calculate disenchant value first
 	if TSMAPI.Item:IsDisenchantable(sourceItem) and (not method or method == "disenchant") then
-		local rarity, ilvl, _, iType = select(3, TSMAPI.Item:GetInfo(sourceItem))
+		local quality = TSMAPI.Item:GetQuality(sourceItem)
+		local ilvl = TSMAPI.Item:GetItemLevel(sourceItem)
+		local iType = GetItemClassInfo(TSMAPI.Item:GetClassId(sourceItem))
 		local value = 0
 		for _, data in ipairs(TSM.STATIC_DATA.disenchantInfo) do
 			for itemString, itemData in pairs(data) do
 				if itemString ~= "desc" then
 					for _, deData in ipairs(itemData.sourceInfo) do
-						if deData.itemType == iType and deData.rarity == rarity and ilvl >= deData.minItemLevel and ilvl <= deData.maxItemLevel then
+						if deData.itemType == iType and deData.rarity == quality and ilvl >= deData.minItemLevel and ilvl <= deData.maxItemLevel then
 							local matValue = TSMAPI:GetCustomPriceValue(customPrice, itemString)
 							if not matValue or matValue == 0 then return end
 							value = value + matValue * deData.amountOfMats
@@ -156,13 +158,13 @@ function TSMAPI.Conversions:GetValue(sourceItem, customPrice, method)
 				end
 			end
 		end
-		
+
 		value = floor(value)
 		if value > 0 then
 			return value
 		end
 	end
-	
+
 	-- calculate other conversion values
 	local value = 0
 	for targetItem, items in pairs(private.data) do
@@ -171,7 +173,7 @@ function TSMAPI.Conversions:GetValue(sourceItem, customPrice, method)
 			value = value + (matValue or 0) * items[sourceItem].rate
 		end
 	end
-	
+
 	value = TSMAPI.Util:Round(value)
 	return value > 0 and value or nil
 end
@@ -191,7 +193,7 @@ function Conversions:OnInitialize()
 	for _, data in pairs(TSM.STATIC_DATA.disenchantInfo) do
 		for itemString in pairs(data) do
 			if itemString ~= "desc" then
-				TSMAPI.Item:QueryInfo(itemString)
+				TSMAPI.Item:FetchInfo(itemString)
 			end
 		end
 	end
@@ -200,7 +202,7 @@ end
 function Conversions:GetConvertCost(targetItem, priceSource)
 	local conversions = TSMAPI.Conversions:GetSourceItems(targetItem)
 	if not conversions or not conversions.convert then return end
-	
+
 	local minPrice = nil
 	for itemString, info in pairs(conversions.convert) do
 		if info.method ~= "craft" then -- ignore crafting conversions for convert cost

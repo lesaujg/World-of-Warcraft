@@ -11,7 +11,6 @@ local TSM = select(2, ...)
 local TradeSkill = TSM:GetModule("TradeSkill")
 local Gather = TSM:NewModule("Gather", "AceEvent-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("TradeSkillMaster_Crafting") -- loads the localization table
-if select(4, GetBuildInfo()) < 70000 then return end
 
 --Professions--
 TSM.spells = {
@@ -148,7 +147,7 @@ function Gather:CraftNext(spellList)
 				numCanCraft = max(min(numCanCraft, floor((bagTotals[itemString] or 0) / quantity)), 0)
 			end
 			if numCanCraft > 0 then
-				local velName = craft.mats[TSM.VELLUM_ITEM_STRING] and (TSMAPI.Item:GetInfo(TSM.VELLUM_ITEM_STRING) or TSM.db.factionrealm.mats[TSM.VELLUM_ITEM_STRING].name) or nil
+				local velName = craft.mats[TSM.VELLUM_ITEM_STRING] and (TSMAPI.Item:GetName(TSM.VELLUM_ITEM_STRING) or TSM.db.factionrealm.mats[TSM.VELLUM_ITEM_STRING].name) or nil
 				TradeSkill:CastTradeSkill(spellId, spellList[spellId], velName)
 				--TSM:Print(spellId, spellList[spellId])
 				return
@@ -161,7 +160,7 @@ function private.ShoppingCallback(boughtItem, boughtQty)
 	local convertQty
 	if not boughtItem then
 		if next(private.shoppingItems) then
-			TSM:Print(L["No Auctions found for"], TSMAPI.Item:ToItemLink(private.shoppingItems[1].itemString))
+			TSM:Printf(L["No Auctions found for %s"], TSMAPI.Item:GetLink(private.shoppingItems[1].itemString))
 			tremove(private.shoppingItems, 1)
 			TSMAPI.Delay:AfterTime("shoppingSearchThrottle", 0.5, private.ShoppingNextSearch)
 		end
@@ -214,8 +213,6 @@ function Gather:GetItemSources(crafter, neededMats)
 
 	-- add vendor items
 	for itemString, quantity in pairs(neededMats) do
-		-- query item info as early as possible
-		TSMAPI.Item:QueryInfo(itemString)
 		if TSMAPI.Item:GetVendorCost(itemString) then
 			local vendorNeed = quantity - (TSMAPI.Inventory:GetBagQuantity(itemString, crafter) + TSMAPI.Inventory:GetBankQuantity(itemString, crafter) + TSMAPI.Inventory:GetReagentBankQuantity(itemString, crafter) + TSMAPI.Inventory:GetMailQuantity(itemString, crafter))
 			if vendorNeed > 0 then
@@ -224,7 +221,6 @@ function Gather:GetItemSources(crafter, neededMats)
 				sources[itemString]["vendorBuy"]["buy"] = vendorNeed
 				sources[itemString]["selected"] = (sources[itemString]["selected"] or 0) + vendorNeed
 			end
-
 		elseif TSMAPI.Conversions:GetData(itemString) and TSM.db.factionrealm.gathering.sessionOptions.inkTrade then
 			for tradeItemString, info in pairs(TSMAPI.Conversions:GetData(itemString)) do
 				tradeItemString = TSMAPI.Item:ToItemString(tradeItemString)
@@ -249,7 +245,6 @@ function Gather:GetItemSources(crafter, neededMats)
 --		if TSMAPI.Conversions:GetData(itemString) then
 --			for srcItemString, info in pairs(TSMAPI.Conversions:GetData(itemString)) do
 --				srcItemString = TSMAPI.Item:ToItemString(srcItemString)
---				TSMAPI.Item:QueryInfo(srcItemString)
 --				if info.method == "transform" then
 --					local totalNum = TSMAPI.Inventory:GetTotalQuantity(itemString)
 --					if quantity > totalNum then
@@ -444,13 +439,14 @@ function private:IsDestroyable(itemString)
 	end
 
 	-- disenchanting
-	local _, _, quality, _, _, iType, iSubType = TSMAPI.Item:GetInfo(itemString)
 	if TSMAPI.Item:IsDisenchantable(itemString) then
 		destroyCache[itemString] = { IsSpellKnown(TSM.spells.disenchant) and GetSpellInfo(TSM.spells.disenchant), 1 }
 		return unpack(destroyCache[itemString])
 	end
 
-	if iType ~= TRADE_GOODS or (iSubType ~= METAL_AND_STONE and iSubType ~= HERB) then
+	local classId = TSMAPI.Item:GetClassId(itemString)
+	local subClassId = TSMAPI.Item:GetSubClassId(itemString)
+	if classId ~= LE_ITEM_CLASS_TRADEGOODS or (subClassId ~= 7 and subClassId ~= 9) then
 		destroyCache[itemString] = {}
 		return unpack(destroyCache[itemString])
 	end

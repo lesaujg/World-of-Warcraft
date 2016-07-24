@@ -267,7 +267,7 @@ function private:GetAuctionRecord(index)
 	local name, texture, stackSize, minBid, minIncrement, buyout, bid, highBidder, seller, seller_full = TSMAPI.Util:Select({1, 2, 3, 8, 9, 10, 11, 12, 14, 15}, GetAuctionItemInfo("list", index))
 	local timeLeft = GetAuctionItemTimeLeft("list", index)
 	local rawLink = GetAuctionItemLink("list", index)
-	local link = TSMAPI.Item:ToItemLink(TSMAPI.Item:ToItemString(rawLink)) -- generalize the link
+	local link = TSMAPI.Item:GetLink(TSMAPI.Item:ToItemString(rawLink)) -- generalize the link
 	seller = TSM:GetAuctionPlayer(seller, seller_full) or "?"
 	return TSMAPI.Auction:NewRecord(link, texture, stackSize, minBid, minIncrement, buyout, bid, seller, timeLeft, highBidder, rawLink)
 end
@@ -480,10 +480,17 @@ end
 
 function private.FindAuctionThread(self, targetInfo)
 	if self then self:SetThreadName("AUCTION_SCANNING_FIND_AUCTION") end
-	local name, _, rarity, _, minLevel, class, subClass = TSMAPI.Item:GetInfo(targetInfo.itemString)
-	local class = TSMAPI.Item:GetClassIdFromClassString(class)
-	local subClass = TSMAPI.Item:GetSubClassIdFromSubClassString(subClass, class)
-	local query = {name=name, minLevel=minLevel, maxLevel=minLevel, class=class, subClass=subClass, rarity=rarity, page=0, exact=true}
+	local minLevel = TSMAPI.Item:GetMinLevel(targetInfo.itemString)
+	local query = {
+		name = TSMAPI.Item:GetName(targetInfo.itemString),
+		minLevel = minLevel,
+		maxLevel = minLevel,
+		class = TSMAPI.Item:GetClassId(targetInfo.itemString),
+		subClass = TSMAPI.Item:GetSubClassId(targetInfo.itemString),
+		quality = TSMAPI.Item:GetQuality(targetInfo.itemString),
+		page = 0,
+		exact = true
+	}
 	local keys = {"itemString", "stackSize", "displayBid", "buyout", "seller"}
 	local indexList = nil
 	for i=#keys, 1, -1 do
@@ -601,11 +608,7 @@ function private.GetAllScanThread(self)
 	end
 
 	private:DoCallback("GETALL_QUERY_START")
-	if select(4, GetBuildInfo()) >= 70000 then
-		QueryAuctionItems("", 0, 0, 0, false, 0, true, false, nil)
-	else
-		QueryAuctionItems("", nil, nil, 0, 0, 0, 0, 0, 0, true)
-	end
+	QueryAuctionItems("", 0, 0, 0, false, 0, true, false, nil)
 	self:WaitForEvent("AUCTION_ITEM_LIST_UPDATE")
 	self:WaitForFunction(CanSendAuctionQuery)
 

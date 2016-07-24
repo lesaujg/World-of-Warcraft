@@ -34,7 +34,7 @@ function private.OnBagChange()
 	for bag=0, NUM_BAG_SLOTS do
 		for slot=1, GetContainerNumSlots(bag) do
 			local itemString = TSMAPI.Item:ToItemString(GetContainerItemLink(bag, slot))
-			local name = TSMAPI.Item:GetInfo(itemString)
+			local name = TSMAPI.Item:GetName(itemString)
 			if name then
 				TSM.db.global.itemStrings[name] = itemString
 			end

@@ -376,7 +376,7 @@ function TSM:RegisterModule()
 	tinsert(TSM.priceSources, { key = "VendorBuy", label = L["Buy from Vendor"], callback = function(itemString) return TSMAPI.Item:GetVendorCost(itemString) end, takeItemString = true })
 
 	-- Vendor Buy Price
-	tinsert(TSM.priceSources, { key = "VendorSell", label = L["Sell to Vendor"], callback = function(itemString) local sell = select(11, TSMAPI.Item:GetInfo(itemString)) return (sell or 0) > 0 and sell or nil end, takeItemString = true })
+	tinsert(TSM.priceSources, { key = "VendorSell", label = L["Sell to Vendor"], callback = function(itemString) local sell = TSMAPI.Item:GetVendorPrice(itemString) return (sell or 0) > 0 and sell or nil end, takeItemString = true })
 
 	-- Disenchant Value
 	tinsert(TSM.priceSources, { key = "Destroy", label = L["Destroy Value"], callback = function(itemString) return TSMAPI.Conversions:GetValue(itemString, TSM.db.profile.destroyValueSource) end, takeItemString = true })
@@ -507,16 +507,18 @@ function TSM:LoadTooltip(itemString, quantity, moneyCoins, lines)
 			local leftText = "  "..(quantity > 1 and format(L["Disenchant Value x%s:"], quantity) or L["Disenchant Value:"])
 			tinsert(lines, {left=leftText, right=TSMAPI:MoneyToString(value*quantity, "|cffffffff", "OPT_PAD", moneyCoins and "OPT_ICON" or nil)})
 			if TSM.db.profile.detailedDestroyTooltip then
-				local rarity, ilvl, _, iType = select(3, TSMAPI.Item:GetInfo(itemString))
+				local rarity = TSMAPI.Item:GetQuality(itemString)
+				local ilvl = TSMAPI.Item:GetItemLevel(itemString)
+				local iType = GetItemClassInfo(TSMAPI.Item:GetClassId(itemString))
 				for _, data in ipairs(TSM.STATIC_DATA.disenchantInfo) do
 					for targetItem, itemData in pairs(data) do
 						if targetItem ~= "desc" then
 							for _, deData in ipairs(itemData.sourceInfo) do
 								if deData.itemType == iType and deData.rarity == rarity and ilvl >= deData.minItemLevel and ilvl <= deData.maxItemLevel then
 									local matValue = (TSMAPI:GetCustomPriceValue(TSM.db.profile.destroyValueSource, targetItem) or 0) * deData.amountOfMats
-									local name, _, matQuality = TSMAPI.Item:GetInfo(targetItem)
+									local matQuality = TSMAPI.Item:GetQuality(targetItem)
 									if matQuality and matValue > 0 then
-										local colorName = format("|c%s%s x %s|r", select(4, GetItemQualityColor(matQuality)), name, deData.amountOfMats)
+										local colorName = format("|c%s%s x %s|r", select(4, GetItemQualityColor(matQuality)), TSMAPI.Item:GetName(targetItem), deData.amountOfMats)
 										tinsert(lines, {left="    "..colorName, right=TSMAPI:MoneyToString(matValue, "|cffffffff", "OPT_PAD", moneyCoins and "OPT_ICON" or nil)})
 									end
 								end
@@ -540,9 +542,9 @@ function TSM:LoadTooltip(itemString, quantity, moneyCoins, lines)
 					local herbs = TSMAPI.Conversions:GetData(targetItem)
 					if herbs[itemString] then
 						local value = (TSMAPI:GetCustomPriceValue(TSM.db.profile.destroyValueSource, targetItem) or 0) * herbs[itemString].rate
-						local name, _, matQuality = TSMAPI.Item:GetInfo(targetItem)
+						local matQuality = TSMAPI.Item:GetQuality(targetItem)
 						if matQuality then
-							local colorName = format("|c%s%s%s%s|r",select(4,GetItemQualityColor(matQuality)),name, " x ", herbs[itemString].rate * quantity)
+							local colorName = format("|c%s%s%s%s|r", select(4, GetItemQualityColor(matQuality)), TSMAPI.Item:GetName(targetItem), " x ", herbs[itemString].rate * quantity)
 							if value > 0 then
 								tinsert(lines, {left="    "..colorName, right=TSMAPI:MoneyToString(value*quantity, "|cffffffff", "OPT_PAD", moneyCoins and "OPT_ICON" or nil)})
 							end
@@ -565,9 +567,9 @@ function TSM:LoadTooltip(itemString, quantity, moneyCoins, lines)
 					local gems = TSMAPI.Conversions:GetData(targetItem)
 					if gems[itemString] then
 						local value = (TSMAPI:GetCustomPriceValue(TSM.db.profile.destroyValueSource, targetItem) or 0) * gems[itemString].rate
-						local name, _, matQuality = TSMAPI.Item:GetInfo(targetItem)
+						local matQuality = TSMAPI.Item:GetQuality(targetItem)
 						if matQuality then
-							local colorName = format("|c%s%s%s%s|r",select(4,GetItemQualityColor(matQuality)),name, " x ", gems[itemString].rate * quantity)
+							local colorName = format("|c%s%s%s%s|r", select(4, GetItemQualityColor(matQuality)), TSMAPI.Item:GetName(targetItem), " x ", gems[itemString].rate * quantity)
 							if value > 0 then
 								tinsert(lines, {left="    "..colorName, right=TSMAPI:MoneyToString(value*quantity, "|cffffffff", "OPT_PAD", moneyCoins and "OPT_ICON" or nil)})
 							end
@@ -590,9 +592,9 @@ function TSM:LoadTooltip(itemString, quantity, moneyCoins, lines)
 					local srcItems = TSMAPI.Conversions:GetData(targetItem)
 					if srcItems[itemString] then
 						local value = (TSMAPI:GetCustomPriceValue(TSM.db.profile.destroyValueSource, targetItem) or 0) * srcItems[itemString].rate
-						local name, _, matQuality = TSMAPI.Item:GetInfo(targetItem)
+						local matQuality = TSMAPI.Item:GetQuality(targetItem)
 						if matQuality then
-							local colorName = format("|c%s%s%s%s|r",select(4,GetItemQualityColor(matQuality)),name, " x ", srcItems[itemString].rate * quantity)
+							local colorName = format("|c%s%s%s%s|r",select(4, GetItemQualityColor(matQuality)), TSMAPI.Item:GetName(targetItem), " x ", srcItems[itemString].rate * quantity)
 							if value > 0 then
 								tinsert(lines, {left="    "..colorName, right=TSMAPI:MoneyToString(value*quantity, "|cffffffff", "OPT_PAD", moneyCoins and "OPT_ICON" or nil)})
 							end
@@ -614,7 +616,7 @@ function TSM:LoadTooltip(itemString, quantity, moneyCoins, lines)
 
 	-- add vendor sell price
 	if TSM.db.profile.vendorSellTooltip then
-		local value = select(11, TSMAPI.Item:GetInfo(itemString)) or 0
+		local value = TSMAPI.Item:GetVendorPrice(itemString) or 0
 		if value > 0 then
 			local leftText = "  "..(quantity > 1 and format(L["Vendor Sell Price x%s:"], quantity) or L["Vendor Sell Price:"])
 			tinsert(lines, {left=leftText, right=TSMAPI:MoneyToString(value*quantity, "|cffffffff", "OPT_PAD", moneyCoins and "OPT_ICON" or nil)})

@@ -6,23 +6,6 @@
 --    All Rights Reserved* - Detailed license information included with addon.    --
 -- ------------------------------------------------------------------------------ --
 
-if select(4, GetBuildInfo()) < 70000 then
-	-- don't support 6.x and prevent errors when the files load
-	message("This version of TradeSkillMaster_Crafting is for patch 7.0.3 and won't work on older patches.")
-	local TSM = select(2, ...)
-	local moduleTemplate = {}
-	moduleTemplate.NewModule = function(self, name)
-		self[name] = CopyTable(moduleTemplate)
-		return self[name]
-	end
-	moduleTemplate.GetModule = function(self, name)
-		return self[name]
-	end
-	for i, v in pairs(moduleTemplate) do
-		TSM[i] = v
-	end
-	return
-end
 -- register this file with Ace Libraries
 local TSM = select(2, ...)
 TSM = LibStub("AceAddon-3.0"):NewAddon(TSM, "TSM_Crafting", "AceEvent-3.0", "AceConsole-3.0")
@@ -223,11 +206,12 @@ function TSM:LoadTooltip(itemString, quantity, options, moneyCoins, lines)
 			local craftInfo = TSM.db.factionrealm.crafts[spellID]
 			if options.detailedMats and craftInfo then
 				for matItemString, matQuantity in pairs(craftInfo.mats) do
-					local name, _, quality = TSMAPI.Item:GetInfo(matItemString)
+					local name = TSMAPI.Item:GetName(matItemString)
 					local mat = TSM.db.factionrealm.mats[matItemString]
 					if name and mat then
 						local cost = TSMAPI:GetCustomPriceValue(mat.customValue or TSM.db.global.defaultMatCostMethod, matItemString)
 						if cost then
+							local quality = TSMAPI.Item:GetQuality(matItemString)
 							local colorName = format("|c%s%s%s%s|r", select(4, GetItemQualityColor(quality)), name, " x ", TSMAPI.Util:Round(matQuantity / craftInfo.numResult, 0.01))
 							tinsert(lines, { left = "    " .. colorName, right = TSMAPI:MoneyToString((cost * matQuantity) / craftInfo.numResult, "|cffffffff", "OPT_PAD", moneyCoins and "OPT_ICON" or nil) })
 						end

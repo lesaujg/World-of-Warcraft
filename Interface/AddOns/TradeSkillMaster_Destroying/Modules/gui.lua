@@ -470,7 +470,7 @@ function private.DestroyingThread(self)
 					if target then
 						if target.spell == GetSpellInfo(TSM.spells.milling) and TSMAPI.Inventory:GetBagQuantity("i:114942") > 0 then
 							-- use the draenic mortar
-							local mortarName = TSMAPI.Item:GetInfo("i:114942")
+							local mortarName = TSMAPI.Item:GetName("i:114942")
 							private.frame.destroyBtn:SetAttribute("macrotext1", format("/use %s;\n/use %d %d", mortarName, target.bag, target.slot))
 						else
 							private.frame.destroyBtn:SetAttribute("macrotext1", format("/cast %s;\n/use %d %d", target.spell, target.bag, target.slot))

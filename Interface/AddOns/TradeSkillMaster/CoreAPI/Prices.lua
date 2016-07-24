@@ -114,7 +114,7 @@ function TSMAPI:GetItemValue(itemString, key)
 	local info = private.itemValueKeyCache[key]
 	if not info.takeItemString then
 		-- this price source does not take an itemString, so pass it an itemLink instead
-		itemString = TSMAPI.Item:ToItemLink(itemString)
+		itemString = TSMAPI.Item:GetLink(itemString)
 		if not itemString then return end
 	end
 	local value = info.callback(itemString, info.arg)

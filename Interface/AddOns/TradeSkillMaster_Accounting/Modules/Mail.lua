@@ -62,12 +62,7 @@ function private:CanLootMailIndex(index, copper)
 	for j = 1, ATTACHMENTS_MAX_RECEIVE do
 		local link = GetInboxItemLink(index, j)
 		local itemString = TSMAPI.Item:ToItemString(link)
-		local quantity = nil
-		if select(4, GetBuildInfo()) >= 70000 then
-			quantity = select(4, GetInboxItem(index, j)) or 0
-		else
-			quantity = select(3, GetInboxItem(index, j))
-		end
+		local quantity = select(4, GetInboxItem(index, j)) or 0
 		local space = 0
 		if itemString then
 			for bag = 0, NUM_BAG_SLOTS do
@@ -76,7 +71,7 @@ function private:CanLootMailIndex(index, copper)
 						local iString = TSMAPI.Item:ToItemString(GetContainerItemLink(bag, slot))
 						if iString == itemString then
 							local stackSize = select(2, GetContainerItemInfo(bag, slot))
-							local maxStackSize = select(8, TSMAPI.Item:GetInfo(itemString))
+							local maxStackSize = TSMAPI.Item:GetMaxStack(itemString)
 							if (maxStackSize - stackSize) >= quantity then
 								return true
 							end
@@ -107,7 +102,7 @@ function Mail:ScanCollectedMail(oFunc, attempt, index, subIndex)
 	if invoiceType == "seller" and buyer and buyer ~= "" then -- AH Sales
 		local daysLeft = select(7, GetInboxHeaderInfo(index))
 		local saleTime = (time() + (daysLeft - 30) * SECONDS_PER_DAY)
-		local link = select(2, TSMAPI.Item:GetInfo(itemName))
+		local link = TSMAPI.Item:GetLink(itemName)
 		local itemString = TSM.db.global.itemStrings[itemName] or TSMAPI.Item:ToItemString(link)
 		if itemString and private:CanLootMailIndex(index, (bid - ahcut)) then
 			local copper = floor((bid - ahcut) / quantity + 0.5)
@@ -118,7 +113,7 @@ function Mail:ScanCollectedMail(oFunc, attempt, index, subIndex)
 		local itemString = TSMAPI.Item:ToItemString(link)
 		if itemString and private:CanLootMailIndex(index, 0) then
 			--might as well grab the name for future lookups
-			local name = TSMAPI.Item:GetInfo(link)
+			local name = TSMAPI.Item:GetName(link)
 			TSM.db.global.itemStrings[name] = itemString
 
 			local copper = floor(bid / quantity + 0.5)
@@ -131,18 +126,14 @@ function Mail:ScanCollectedMail(oFunc, attempt, index, subIndex)
 		local itemString = TSMAPI.Item:ToItemString(link)
 		if itemString then
 			--might as well grab the name for future lookups
-			local name = TSMAPI.Item:GetInfo(link)
+			local name = TSMAPI.Item:GetName(link)
 			TSM.db.global.itemStrings[name] = itemString
 
 			local total = 0
 			local stacks = 0
 			local ignore = false
 			for i = 1, ATTACHMENTS_MAX_RECEIVE do
-				local nameCheck, _, count, count2 = GetInboxItem(index, i)
-				if select(4, GetBuildInfo()) >= 70000 then
-					count = count2
-				end
-
+				local nameCheck, _, _, count = GetInboxItem(index, i)
 				if nameCheck and count then
 					if nameCheck == name then
 						total = total + count
@@ -157,7 +148,7 @@ function Mail:ScanCollectedMail(oFunc, attempt, index, subIndex)
 				local copper = floor(codAmount / total + 0.5)
 				local daysLeft = select(7, GetInboxHeaderInfo(index))
 				local buyTime = (time() + (daysLeft - 3) * SECONDS_PER_DAY)
-				local maxStack = select(8, TSMAPI.Item:GetInfo(link))
+				local maxStack = TSMAPI.Item:GetMaxStack(link)
 				for i = 1, stacks do
 					local stackSize = (total >= maxStack) and maxStack or total
 					TSM.Data:InsertItemBuyRecord(itemString, "COD", stackSize, copper, sender, buyTime)
@@ -183,7 +174,7 @@ function Mail:ScanCollectedMail(oFunc, attempt, index, subIndex)
 				local itemString = TSM.db.global.itemStrings[codName]
 				if itemString then
 					local copper = floor(money / qty + 0.5)
-					local maxStack = select(8, TSMAPI.Item:GetInfo(itemString)) or 1
+					local maxStack = TSMAPI.Item:GetMaxStack(itemString) or 1
 					local stacks = ceil(qty / maxStack)
 
 					for i = 1, stacks do
@@ -288,7 +279,7 @@ function private:GetFirstInboxItemLink(index)
 	local _, speciesId, level, breedQuality, maxHealth, power, speed, name = TSMAccountingMailTooltip:SetInboxItem(index)
 	local link = nil
 	if (speciesId or 0) > 0 then
-		link = TSMAPI.Item:ToItemLink(strjoin(":", "p", speciesId, level, breedQuality, maxHealth, power, speed))
+		link = TSMAPI.Item:GetLink(strjoin(":", "p", speciesId, level, breedQuality, maxHealth, power, speed))
 	else
 		link = GetInboxItemLink(index, 1)
 	end

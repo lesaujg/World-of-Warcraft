@@ -185,6 +185,7 @@ L["This is the maximum item level that the Other > Disenchant search will displa
 L["This is the maximum percentage of disenchant value that the Other > Disenchant search will display results for."] = true
 L["This is the minimum item level that the Other > Disenchant search will display results for."] = true
 L["This is the percentage of your buyout price that your bid will be set to when posting auctions with Shopping."] = true
+L["This searches the AH for all items found on the TSM Great Deals page (http://tradeskillmaster.com/great-deals)."] = true
 L["This searches the AH for your current deals as displayed on the TSM website."] = true
 L["Total Deposit:"] = true
 L["Type in the new name for this saved search and hit the 'Save' button."] = true

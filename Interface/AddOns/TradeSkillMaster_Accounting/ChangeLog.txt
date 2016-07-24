@@ -1,3 +1,6 @@
+v3.0.14
+*Using new APIs added to core TSM addon to workaround Blizzard's item caching issues.
+
 v3.0.13
 *Fixed error hit while opening mail.
 

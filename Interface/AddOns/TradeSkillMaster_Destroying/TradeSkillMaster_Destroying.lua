@@ -64,7 +64,7 @@ function TSM:OnInitialize()
 	local deSpellName = GetSpellInfo(TSM.spells.disenchant)
 	if deSpellName and TSM.db.global.history[deSpellName] then
 		for _, deInfo in ipairs(TSM.db.global.history[deSpellName]) do
-			TSMAPI.Item:GetInfo(deInfo.item)
+			TSMAPI.Item:FetchInfo(deInfo.item)
 		end
 	end
 end
@@ -83,15 +83,6 @@ function TSM:RegisterModule()
 end
 
 -- determines if an item is millable or prospectable
-local TRADE_GOODS, METAL_AND_STONE, HERB = nil, nil, nil
-if select(4, GetBuildInfo()) >= 70000 then
-	TRADE_GOODS = GetItemClassInfo(LE_ITEM_CLASS_TRADEGOODS)
-	METAL_AND_STONE = GetItemSubClassInfo(LE_ITEM_CLASS_TRADEGOODS, 7)
-	HERB = GetItemSubClassInfo(LE_ITEM_CLASS_TRADEGOODS, 9)
-else
-	TRADE_GOODS = select(6, GetAuctionItemClasses())
-	METAL_AND_STONE, HERB = TSMAPI.Util:Select({ 4, 6 }, GetAuctionItemSubClasses(6))
-end
 local destroyCache = {}
 function TSM:IsDestroyable(itemString)
 	if destroyCache[itemString] then
@@ -99,13 +90,15 @@ function TSM:IsDestroyable(itemString)
 	end
 
 	-- disenchanting
-	local quality, iType, iSubType = TSMAPI.Util:Select({ 3, 6, 7 }, TSMAPI.Item:GetInfo(itemString))
+	local quality = TSMAPI.Item:GetQuality(itemString)
 	if TSMAPI.Item:IsDisenchantable(itemString) and (quality >= 2 and quality <= TSM.db.global.deMaxQuality) then
 		destroyCache[itemString] = { IsSpellKnown(TSM.spells.disenchant) and GetSpellInfo(TSM.spells.disenchant), 1 }
 		return unpack(destroyCache[itemString])
 	end
 
-	if iType ~= TRADE_GOODS or (iSubType ~= METAL_AND_STONE and iSubType ~= HERB) then
+	local classId = TSMAPI.Item:GetClassId(itemString)
+	local subClassId = TSMAPI.Item:GetSubClassId(itemString)
+	if classId ~= LE_ITEM_CLASS_TRADEGOODS or (subClassId ~= 7 and subClassId ~= 9) then
 		destroyCache[itemString] = {}
 		return unpack(destroyCache[itemString])
 	end

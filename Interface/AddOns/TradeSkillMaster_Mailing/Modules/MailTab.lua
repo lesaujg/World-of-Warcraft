@@ -34,7 +34,7 @@ function private:OnMailShow()
 		private.didHook = true
 		MailTab:Hook("MailFrameTab_OnClick", private.OnOtherTabClick, true)
 	end
-	
+
 	local currentTab = PanelTemplates_GetSelectedTab(MailFrame)
 	if TSM.db.global.defaultMailTab then
 		for i=1, MailFrame.numTabs do
@@ -43,7 +43,7 @@ function private:OnMailShow()
 			end
 		end
 	end
-	
+
 	-- make sure the second tab gets loaded so we can send mail
 	MailFrameTab2:Click()
 	_G["MailFrameTab"..currentTab]:Click()
@@ -51,7 +51,7 @@ end
 
 function private:CreateMailTab()
 	if private.frame then return end
-	
+
 	local BFC = TSMAPI.GUI:GetBuildFrameConstants()
 	local frameInfo = {
 		type = "Frame",
@@ -160,7 +160,7 @@ function private:CreateMailTab()
 			},
 		},
 	}
-	
+
 	local frame = TSMAPI.GUI:BuildFrame(frameInfo)
 	TSMAPI.Design:SetFrameBackdropColor(frame)
 
@@ -177,11 +177,11 @@ function private:CreateMailTab()
 	PanelTemplates_SetNumTabs(MailFrame, n)
 	PanelTemplates_EnableTab(MailFrame, n)
 	frame.tab = tab
-	
+
 	TSMAPI.Design:SetFrameColor(frame.content.groupsTab.groupTreeContainer)
 	TSMAPI.Design:SetFrameColor(frame.content.otherTab.deBox)
 	TSMAPI.Design:SetFrameColor(frame.content.otherTab.sendGoldBox)
-	
+
 	private.frame = frame
 end
 
@@ -190,12 +190,9 @@ function private.OnTabClick(tabFrame)
 	ButtonFrameTemplate_HideButtonBar(MailFrame)
 	InboxFrame:Hide()
 	OpenMailFrame:Hide()
-	if select(4, GetBuildInfo()) < 70000 then
-		StationeryPopupFrame:Hide()
-	end
 	SendMailFrame:Hide()
 	SetSendMailShowing(false)
-	
+
 	MailFrameInset:Hide()
 	MailFramePortraitFrame:Hide()
 	MailFrameBg:Hide()
@@ -203,7 +200,7 @@ function private.OnTabClick(tabFrame)
 	MailFrameTitleBg:Hide()
 	MailFrameTitleText:Hide()
 	MailFrameCloseButton:Hide()
-	
+
 	MailFrameLeftBorder:Hide()
 	MailFrameTopBorder:Hide()
 	MailFrameRightBorder:Hide()
@@ -212,7 +209,7 @@ function private.OnTabClick(tabFrame)
 	MailFrameTopRightCorner:Hide()
 	MailFrameBotLeftCorner:Hide()
 	MailFrameBotRightCorner:Hide()
-	
+
 	private.frame:Show()
 	if TSM.db.global.defaultPage == 1 then
 		private.frame.inboxBtn:Click()
@@ -235,7 +232,7 @@ function private.OnOtherTabClick()
 	MailFrameTopRightCorner:Show()
 	MailFrameBotLeftCorner:Show()
 	MailFrameBotRightCorner:Show()
-	
+
 	MailFrameInset:Show()
 	MailFramePortraitFrame:Show()
 	MailFrameBg:Show()
@@ -250,7 +247,7 @@ function private.OnButtonClick(self)
 	private.frame.content.groupsTab:Hide()
 	private.frame.content.otherTab:Hide()
 	private.frame.content.quickSendTab:Hide()
-	
+
 	private.frame.inboxBtn:UnlockHighlight()
 	private.frame.groupsBtn:UnlockHighlight()
 	private.frame.otherBtn:UnlockHighlight()
