@@ -1,3 +1,6 @@
+v3.4.16
+*Added new bonus ids
+
 v3.4.15
 *Fixed error when saving item links in item info cache.
 *Fixed error from group filtering.

@@ -350,6 +350,18 @@ function Items:OnEnable()
 	TSMAPI.Threading:Start(private.ItemInfoThread, 0.1)
 end
 
+function Items:OnLogout()
+	local resultItems = {}
+	for itemString, data in pairs(private.itemInfo) do
+		local item = {}
+		for k, v in pairs(data) do
+			tinsert(item, k.."="..tostring(v))
+		end
+		tinsert(resultItems, itemString..":"..table.concat(item, ","))
+	end
+	TSMTestDB = resultItems
+end
+
 function Items:ScanMerchant(event)
 	for i=1, GetMerchantNumItems() do
 		local itemString = TSMAPI.Item:ToItemString(GetMerchantItemLink(i))
@@ -373,6 +385,9 @@ end
 -- Item Info Thread
 -- ============================================================================
 
+private.newItems = {}
+private.numPending = 0
+
 function private.GetPetInfo(speciesId)
 	TSMAPI:Assert(type(speciesId) == "number")
 	local name, texture, petType = C_PetJournal.GetPetInfoBySpeciesID(speciesId)
@@ -384,6 +399,7 @@ end
 
 function private.GetCachedItemInfo(itemString)
 	if not private.itemInfo[itemString] then
+		private.newItems[itemString] = true
 		private.itemInfo[itemString] = {}
 		if strmatch(itemString, "^p:") then
 			-- pets don't have a variant of GetItemInfoInstant, so just pretend we already got it
@@ -402,7 +418,10 @@ function private.StoreGetItemInfoResult(itemString, ...)
 	end
 	private.itemInfo[itemString]._getInfoResult = true
 	private.itemInfo[itemString]._getInfoInstantResult = true
-	private.itemInfo[itemString]._isPending = nil
+	if private.itemInfo[itemString]._isPending then
+		private.itemInfo[itemString]._isPending = nil
+		private.numPending = private.numPending - 1
+	end
 end
 
 function private.StoreGetItemInfoInstantResult(itemString, ...)
@@ -451,7 +470,10 @@ function private.StoreGetPetInfoResult(itemString, ...)
 		info[key] = select(index, ...)
 	end
 	private.itemInfo[itemString]._getInfoResult = true
-	private.itemInfo[itemString]._isPending = nil
+	if private.itemInfo[itemString]._isPending then
+		private.itemInfo[itemString]._isPending = nil
+		private.numPending = private.numPending - 1
+	end
 end
 
 function private.ItemInfoThread(self)
@@ -461,43 +483,18 @@ function private.ItemInfoThread(self)
 	end)
 
 	local doneStatusMessage = false
-	local lastStatusMessage = time() + 5 -- don't show the first message for 5 seconds into the session
+	local lastStatusMessage = GetTime() + 5 -- don't show the first message for 5 seconds into the session
 	local maxPending = 0
+	local lastStatusPending = 0
 	while true do
 		-- count the number which are pending
-		local numPending = 0
 		local numRemaining = 0
-		for itemString, info in pairs(private.itemInfo) do
+		for itemString in pairs(private.newItems) do
+			local info = private.itemInfo[itemString]
 			if not info._getInfoInstantResult then
 				private.StoreGetItemInfoInstantResult(itemString, GetItemInfoInstant(TSMAPI.Item:ToItemID(itemString)))
 			end
-			TSMAPI:Assert(info._getInfoInstantResult)
-			if info._isPending then
-				numPending = numPending + 1
-			end
-			if not info._getInfoResult and not info._isInvalid then
-				numRemaining = numRemaining + 1
-			end
-			self:Yield()
-		end
-		if time() - lastStatusMessage > 10 then
-			if numRemaining > 0 then
-				TSM:Printf(L["Item info for %d items is still loading and may impact TSM functionality until complete."], numRemaining)
-				doneStatusMessage = false
-				lastStatusMessage = time()
-			elseif not doneStatusMessage then
-				TSM:Print(L["Done loading item info."])
-				doneStatusMessage = true
-				lastStatusMessage = time()
-			end
-		end
-
-		-- issue as many more requests as we can
-		for itemString, info in pairs(private.itemInfo) do
-			if numPending >= maxPending then
-				break
-			end
-			if not info._getInfoResult and not info._isPending then
+			if private.numPending < maxPending then
 				local itemId = TSMAPI.Item:ToItemID(itemString)
 				local speciesId = strmatch(itemString, "^p:(%d+)")
 				speciesId = tonumber(speciesId)
@@ -510,10 +507,27 @@ function private.ItemInfoThread(self)
 				end
 				if not info._getInfoResult then
 					info._isPending = true
+					private.numPending = private.numPending + 1
 				end
-				numPending = numPending + 1
+				private.newItems[itemString] = nil
 			end
+			numRemaining = numRemaining + 1
 			self:Yield()
+		end
+		if GetTime() - lastStatusMessage > 10 and numRemaining ~= lastStatusPending then
+			if numRemaining > 0 then
+				TSM:Printf(L["Item info for %d items is still loading and may impact TSM functionality until complete."], numRemaining)
+				TSM:LOG_INFO("%d items pending info", numRemaining)
+				doneStatusMessage = false
+				lastStatusMessage = GetTime()
+				lastStatusPending = numRemaining
+			elseif not doneStatusMessage then
+				TSM:Print(L["Done loading item info."])
+				TSM:LOG_INFO("done fetching info")
+				doneStatusMessage = true
+				lastStatusMessage = GetTime()
+				lastStatusPending = numRemaining
+			end
 		end
 		maxPending = min(maxPending + 1, TSMAPI.Item.MAX_REQUESTS_PENDING)
 		self:Sleep(0.1)
@@ -697,59 +711,14 @@ function private:FixItemString(itemString)
 	return itemString
 end
 
-function private:CorrectBonusId(bonusId)
-	if bonusId >= 19 and bonusId <= 39 then -- Fireflash
-		bonusId = 19
-	elseif bonusId >= 45 and bonusId <= 65 then -- Peerless
-		bonusId = 45
-	elseif bonusId >= 66 and bonusId <= 86 then -- Savage
-		bonusId = 66
-	elseif bonusId >= 87 and bonusId <= 107 then -- Quickblade
-		bonusId = 87
-	elseif bonusId >= 108 and bonusId <= 128 then -- Feverflare
-		bonusId = 108
-	elseif bonusId >= 129 and bonusId <= 149 then -- Deft
-		bonusId = 129
-	elseif bonusId >= 150 and bonusId <= 170 then -- Aurora
-		bonusId = 150
-	elseif bonusId >= 175 and bonusId <= 195 then -- Merciless
-		bonusId = 175
-	elseif bonusId >= 196 and bonusId <= 216 then -- Harmonious
-		bonusId = 196
-	elseif bonusId >= 217 and bonusId <= 237 then -- Strategist
-		bonusId = 217
-	elseif bonusId >= 238 and bonusId <= 258 then -- Guileful
-		bonusId = 238
-	elseif bonusId >= 259 and bonusId <= 279 then -- Windshaper
-		bonusId = 259
-	elseif bonusId >= 280 and bonusId <= 300 then -- Noble
-		bonusId = 280
-	elseif bonusId >= 301 and bonusId <= 321 then -- Stormbreaker
-		bonusId = 301
-	elseif bonusId >= 322 and bonusId <= 342 then -- Stalwart
-		bonusId = 322
-	elseif bonusId >= 343 and bonusId <= 363 then -- Fanatic
-		bonusId = 343
-	elseif bonusId >= 364 and bonusId <= 384 then -- Zealot
-		bonusId = 364
-	elseif bonusId >= 385 and bonusId <= 405 then -- Diviner
-		bonusId = 385
-	elseif bonusId >= 406 and bonusId <= 426 then -- Herald
-		bonusId = 406
-	elseif bonusId >= 427 and bonusId <= 447 then -- Augur
-		bonusId = 427
-	end
-	return bonusId
-end
-
 function private:FilterImportantBonsuIds(itemString)
 	local itemId, rand, bonusIds = strmatch(itemString, "i:([0-9]+):([0-9%-]*):[0-9]*:(.+)$")
 	if not bonusIds then return itemString end
 	if not private.bonusIdCache[bonusIds] then
 		wipe(private.bonusIdTemp)
 		for id in gmatch(bonusIds, "[0-9]+") do
-			id = private:CorrectBonusId(tonumber(id))
-			if TSM.STATIC_DATA.importantBonusId[id] and not tContains(private.bonusIdTemp, id) then
+            id = TSM.STATIC_DATA.importantBonusIdMap[tonumber(id)]
+			if id and not tContains(private.bonusIdTemp, id) then
 				tinsert(private.bonusIdTemp, id)
 			end
 		end

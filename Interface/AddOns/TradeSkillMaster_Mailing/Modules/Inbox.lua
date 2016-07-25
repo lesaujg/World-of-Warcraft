@@ -406,7 +406,7 @@ function private:CanLootMailIndex(index, force)
 							local iString = TSMAPI.Item:ToItemString(GetContainerItemLink(bag, slot))
 							if iString == itemString then
 								local stackSize = select(2, GetContainerItemInfo(bag, slot))
-								local maxStackSize = TSMAPI.Item:GetMaxStack(itemString)
+								local maxStackSize = TSMAPI.Item:GetMaxStack(itemString) or 1
 								if (maxStackSize - stackSize) >= quantity then
 									return true
 								end
@@ -555,7 +555,7 @@ function private:ShouldOpenMail(index)
 		if not isInvoice and numItems == 1 then
 			local itemName = TSMAPI.Item:GetName(private:GetFirstInboxItemLink(index))
 			if itemName then
-				local qantity = select(4, GetInboxItem(index, 1))
+				local quantity = select(4, GetInboxItem(index, 1))
 				if quantity and quantity > 0 and (subject == format(AUCTION_REMOVED_MAIL_SUBJECT.." (%d)", itemName, quantity) or subject == format(AUCTION_REMOVED_MAIL_SUBJECT, itemName)) then
 					return true
 				end

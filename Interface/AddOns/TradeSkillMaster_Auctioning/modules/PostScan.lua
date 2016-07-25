@@ -105,7 +105,7 @@ function Post:StartScan(isGroup, scanInfo)
 				end
 			end
 		else
-			local quality = TSMAPI.Item:GetQuality(itemString)
+			local quality = TSMAPI.Item:GetQuality(itemString) or 0
 			if quality > 0 and not TSMAPI.Operations:GetFirstByItem(itemString, "Auctioning") and private:HasEnoughToPost(itemString, QUICK_POST_OPERATION, numHave) then
 				if private:ValidateOperation(itemString, QUICK_POST_OPERATION, true) then
 					TSM.operationLookup[itemString] = {QUICK_POST_OPERATION}
@@ -163,7 +163,7 @@ end
 function private:ValidateOperation(itemString, operation, silent)
 	local errMsg = nil
 	local maxStackSize = TSMAPI.Item:GetMaxStack(itemString)
-	local vendorSellPrice = TSMAPI.Item:GetVendorPrice(itemString)
+	local vendorSellPrice = TSMAPI.Item:GetVendorPrice(itemString) or 0
 	local prices = TSM.Util:GetItemPrices(operation, itemString, {minPrice=true, normalPrice=true, maxPrice=true, undercut=true})
 
 	if not prices.minPrice then

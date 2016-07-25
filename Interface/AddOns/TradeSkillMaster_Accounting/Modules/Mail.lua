@@ -71,7 +71,7 @@ function private:CanLootMailIndex(index, copper)
 						local iString = TSMAPI.Item:ToItemString(GetContainerItemLink(bag, slot))
 						if iString == itemString then
 							local stackSize = select(2, GetContainerItemInfo(bag, slot))
-							local maxStackSize = TSMAPI.Item:GetMaxStack(itemString)
+							local maxStackSize = TSMAPI.Item:GetMaxStack(itemString) or 1
 							if (maxStackSize - stackSize) >= quantity then
 								return true
 							end

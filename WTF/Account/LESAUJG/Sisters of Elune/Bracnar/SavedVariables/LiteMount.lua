@@ -4,11 +4,6 @@ LM_OptionsDB = {
 	},
 	["excludedspells"] = {
 	},
-	["excludeNewMounts"] = {
-		false, -- [1]
-	},
-	["flagoverrides"] = {
-	},
 	["seenspells"] = {
 		[75207] = true,
 		[63638] = true,
@@ -91,7 +86,7 @@ LM_OptionsDB = {
 		[126508] = true,
 		[171619] = true,
 		[35710] = true,
-		[69395] = true,
+		[120395] = true,
 		[17481] = true,
 		[171845] = true,
 		[97493] = true,
@@ -109,7 +104,7 @@ LM_OptionsDB = {
 		[142073] = true,
 		[130086] = true,
 		[101542] = true,
-		[97501] = true,
+		[39316] = true,
 		[8394] = true,
 		[113120] = true,
 		[75596] = true,
@@ -119,7 +114,7 @@ LM_OptionsDB = {
 		[34898] = true,
 		[72808] = true,
 		[88746] = true,
-		[84751] = true,
+		[97501] = true,
 		[171846] = true,
 		[171623] = true,
 		[35711] = true,
@@ -156,7 +151,7 @@ LM_OptionsDB = {
 		[60025] = true,
 		[35712] = true,
 		[39800] = true,
-		[41252] = true,
+		[23240] = true,
 		[59961] = true,
 		[130137] = true,
 		[65638] = true,
@@ -166,7 +161,7 @@ LM_OptionsDB = {
 		[88748] = true,
 		[32240] = true,
 		[17454] = true,
-		[171634] = true,
+		[41252] = true,
 		[32292] = true,
 		[190977] = true,
 		[171629] = true,
@@ -209,7 +204,7 @@ LM_OptionsDB = {
 		[23228] = true,
 		[24252] = true,
 		[60114] = true,
-		[23240] = true,
+		[171634] = true,
 		[41515] = true,
 		[63963] = true,
 		[127176] = true,
@@ -222,7 +217,7 @@ LM_OptionsDB = {
 		[39802] = true,
 		[34899] = true,
 		[44153] = true,
-		[39316] = true,
+		[84751] = true,
 		[65642] = true,
 		[129918] = true,
 		[129934] = true,
@@ -238,13 +233,13 @@ LM_OptionsDB = {
 		[127289] = true,
 		[127177] = true,
 		[59569] = true,
-		[39798] = true,
+		[69395] = true,
 		[65643] = true,
 		[32289] = true,
 		[171638] = true,
 		[63956] = true,
 		[24242] = true,
-		[120395] = true,
+		[39798] = true,
 		[121839] = true,
 		[6899] = true,
 		[98718] = true,
@@ -264,6 +259,11 @@ LM_OptionsDB = {
 		[23221] = true,
 		[102349] = true,
 		[54753] = true,
+	},
+	["excludeNewMounts"] = {
+		false, -- [1]
+	},
+	["flagoverrides"] = {
 	},
 	["macro"] = {
 		"/cast !Aspect of the Cheetah\n", -- [1]
