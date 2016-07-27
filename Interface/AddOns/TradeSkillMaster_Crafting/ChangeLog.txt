@@ -1,3 +1,6 @@
+v3.1.10
+*Fixed bug with gathering mats list still being clickable - source options are now set on the selection screen.
+
 v3.1.9
 *Fixed bug with cooldowns frame for ruRU players.
 *Fixed bug with materials not showing for selected craft.

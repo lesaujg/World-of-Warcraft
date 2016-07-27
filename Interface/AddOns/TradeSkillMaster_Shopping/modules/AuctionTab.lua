@@ -1054,7 +1054,7 @@ function private.AuctionTabThread(self)
 					private.frame.content.result.rt:InsertAuctionRecord(1, record)
 				end
 			end
-			if private.extraInfo and private.extraInfo.searchType == "apiGathering" and private.extraInfo.buyCallback and not auctionInfo.searchItems and auctionInfo.database and #auctionInfo.database.records == 0 then
+			if private.extraInfo and private.extraInfo.searchType == "apiGathering" and private.extraInfo.buyCallback and auctionInfo.database and #auctionInfo.database.records == 0 then
 				-- notify the module API user (i.e. Crafting's gathering feature) that we no auctions were found
 				private.extraInfo.buyCallback(nil)
 			end

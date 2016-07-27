@@ -106,7 +106,7 @@ function Cancel:StartScan(isGroup, scanInfo)
 end
 
 function private:ValidateOperation(itemString, operation)
-	local prices = TSM.Util:GetItemPrices(operation, itemString, {minPrice=true, normalPrice=true, maxPrice=true, cancelRepostThreshold=true, undercut=true})
+	local prices = TSM.Util:GetItemPrices(operation, itemString, false, {minPrice=true, normalPrice=true, maxPrice=true, cancelRepostThreshold=true, undercut=true})
 	local errMsg = nil
 
 	-- don't cancel this item if their settings are invalid
@@ -338,7 +338,7 @@ function private:ShouldCancel(index, itemString, operation)
 
 	local cancelData = {itemString=itemString, stackSize=quantity, buyout=buyout, bid=bid, index=index, numStacks=1, operation=operation}
 	local lowestAuction = TSM.Scan:GetLowestAuction(itemString, operation)
-	local prices = TSM.Util:GetItemPrices(operation, itemString, {minPrice=true, normalPrice=true, maxPrice=true, resetPrice=true, cancelRepostThreshold=true, undercut=true, aboveMax=true})
+	local prices = TSM.Util:GetItemPrices(operation, itemString, false, {minPrice=true, normalPrice=true, maxPrice=true, resetPrice=true, cancelRepostThreshold=true, undercut=true, aboveMax=true})
 
 	if not lowestAuction then
 		-- all auctions which are posted (including ours) have been ignored, so we should cancel to post higher

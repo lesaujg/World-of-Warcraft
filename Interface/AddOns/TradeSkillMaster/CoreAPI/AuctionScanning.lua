@@ -227,7 +227,7 @@ end
 -- ============================================================================
 
 function private:IsTargetAuction(index, targetInfo, keys)
-	local stackSize, minBid, buyout, bid, seller, seller_full = TSMAPI.Util:Select({3, 8, 10, 11, 14, 15}, GetAuctionItemInfo("list", index))
+	local _, _, stackSize, _, _, _, _, minBid, _, buyout, bid, _, _, seller, seller_full = GetAuctionItemInfo("list", index)
 	seller = TSM:GetAuctionPlayer(seller, seller_full)
 	local displayedBid = bid == 0 and minBid or bid
 	local itemString = TSMAPI.Item:ToItemString(GetAuctionItemLink("list", index))
@@ -248,7 +248,7 @@ function private:IsAuctionPageValid(resolveSellers)
 	for i=1, numAuctions do
 		-- checks to make sure all the data has been sent to the client
 		-- if not, the data is bad and we'll wait / try again
-		local stackSize, minBid, minIncrement, buyout, bid, highBidder, seller, seller_full = TSMAPI.Util:Select({3, 8, 9, 10, 11, 12, 14, 15}, GetAuctionItemInfo("list", i))
+		local _, _, stackSize, _, _, _, _, minBid, minIncrement, buyout, bid, highBidder, _, seller, seller_full = GetAuctionItemInfo("list", i)
 		seller = TSM:GetAuctionPlayer(seller, seller_full)
 		local timeLeft = GetAuctionItemTimeLeft("list", i)
 		local link = GetAuctionItemLink("list", i)
@@ -264,7 +264,7 @@ function private:IsAuctionPageValid(resolveSellers)
 end
 
 function private:GetAuctionRecord(index)
-	local name, texture, stackSize, minBid, minIncrement, buyout, bid, highBidder, seller, seller_full = TSMAPI.Util:Select({1, 2, 3, 8, 9, 10, 11, 12, 14, 15}, GetAuctionItemInfo("list", index))
+	local name, texture, stackSize, _, _, _, _, minBid, minIncrement, buyout, bid, highBidder, _, seller, seller_full = GetAuctionItemInfo("list", index)
 	local timeLeft = GetAuctionItemTimeLeft("list", index)
 	local rawLink = GetAuctionItemLink("list", index)
 	local link = TSMAPI.Item:GetLink(TSMAPI.Item:ToItemString(rawLink)) -- generalize the link
@@ -300,7 +300,7 @@ function private:SearchCurrentPageForTargetItem(targetInfo, keys)
 	-- check for the target item on this page
 	local indexList, firstAuction, lastAuction
 	for i=1, GetNumAuctionItems("list") do
-		local stackSize, minBid, buyout, bid, seller, seller_full = TSMAPI.Util:Select({3, 8, 10, 11, 14, 15}, GetAuctionItemInfo("list", i))
+		local _, _, stackSize, _, _, _, _, minBid, _, buyout, bid, _, _, seller, seller_full = GetAuctionItemInfo("list", i)
 		seller = TSM:GetAuctionPlayer(seller, seller_full)
 		local displayedBid = bid == 0 and minBid or bid
 		local itemString = TSMAPI.Item:ToItemString(GetAuctionItemLink("list", i))
@@ -622,7 +622,7 @@ function private.GetAllScanThread(self)
 	local scanData = {}
 	for i=1, numAuctions do
 		local itemString = TSMAPI.Item:ToBaseItemString(GetAuctionItemLink("list", i))
-		local stackSize, buyout = TSMAPI.Util:Select({3, 10}, GetAuctionItemInfo("list", i))
+		local _, _, stackSize, _, _, _, _, _, _, buyout = GetAuctionItemInfo("list", i)
 		if not itemString or not stackSize or not buyout then
 			return private:DoCallback("GETALL_BAD_DATA")
 		end

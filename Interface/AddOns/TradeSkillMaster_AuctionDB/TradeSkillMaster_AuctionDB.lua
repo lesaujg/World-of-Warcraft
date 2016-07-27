@@ -118,14 +118,18 @@ function TSM:OnEnable()
 	if appData then
 		for _, info in ipairs(appData) do
 			local realm, data = unpack(info)
-			TSM:LOG_INFO("Got AppData for %s (isCurrent=%s)", realm, tostring(TSMAPI.AppHelper:IsCurrentRealm(realm)))
+			local downloadTime = "?"
 			if realm == "US" then
 				regionAppDataUS = assert(loadstring(data))()
+				downloadTime = SecondsToTime(time() - regionAppDataUS.downloadTime).." ago"
 			elseif realm == "EU" then
 				regionAppDataEU = assert(loadstring(data))()
+				downloadTime = SecondsToTime(time() - regionAppDataEU.downloadTime).." ago"
 			elseif TSMAPI.AppHelper:IsCurrentRealm(realm) then
 				realmAppData = assert(loadstring(data))()
+				downloadTime = SecondsToTime(time() - realmAppData.downloadTime).." ago"
 			end
+			TSM:LOG_INFO("Got AppData for %s (isCurrent=%s, %s)", realm, tostring(TSMAPI.AppHelper:IsCurrentRealm(realm)), downloadTime)
 		end
 	end
 

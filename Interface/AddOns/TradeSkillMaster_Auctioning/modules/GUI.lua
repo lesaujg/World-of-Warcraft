@@ -540,7 +540,7 @@ function private:CreateScanFrame(parent)
 				logST = {
 					OnEnter = function(_, data, self)
 						if not data.operation or not data.operation.minPrice then return end
-						local prices = TSM.Util:GetItemPrices(data.operation, data.itemString, {minPrice=true, maxPrice=true, normalPrice=true})
+						local prices = TSM.Util:GetItemPrices(data.operation, data.itemString, false, {minPrice=true, maxPrice=true, normalPrice=true})
 
 						GameTooltip:SetOwner(self, "ANCHOR_NONE")
 						GameTooltip:SetPoint("BOTTOMLEFT", self, "TOPLEFT")

@@ -164,7 +164,7 @@ function private:ValidateOperation(itemString, operation, silent)
 	local errMsg = nil
 	local maxStackSize = TSMAPI.Item:GetMaxStack(itemString)
 	local vendorSellPrice = TSMAPI.Item:GetVendorPrice(itemString) or 0
-	local prices = TSM.Util:GetItemPrices(operation, itemString, {minPrice=true, normalPrice=true, maxPrice=true, undercut=true})
+	local prices = TSM.Util:GetItemPrices(operation, itemString, false, {minPrice=true, normalPrice=true, maxPrice=true, undercut=true})
 
 	if not prices.minPrice then
 		errMsg = format(L["Did not post %s because your minimum price (%s) is invalid. Check your settings."], TSMAPI.Item:GetLink(itemString), operation.minPrice)
@@ -395,7 +395,7 @@ function private:ShouldPost(itemString, operation, numInBags, pendingPosts)
 	end
 
 	local lowestAuction = TSM.Scan:GetLowestAuction(itemString, operation)
-	local prices = TSM.Util:GetItemPrices(operation, itemString, {minPrice=true, maxPrice=true, normalPrice=true, resetPrice=true, undercut=true, aboveMax=true})
+	local prices = TSM.Util:GetItemPrices(operation, itemString, false, {minPrice=true, maxPrice=true, normalPrice=true, resetPrice=true, undercut=true, aboveMax=true})
 
 	local reason, bid, buyout
 	local activeAuctions = 0

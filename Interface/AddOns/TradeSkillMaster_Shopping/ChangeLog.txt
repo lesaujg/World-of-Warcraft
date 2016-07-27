@@ -1,3 +1,10 @@
+v3.3.7
+*Fixed bug with notifying modules of no auction results found from a search (like crafting's gathering feature).
+*Fixed a bug with even stacks filter from crafting's gathering search.
+
+v3.3.6
+*Fixed bug with trying to post soulbound items.
+
 v3.3.5
 *Fixed bug with crafting mode searches not working in previous version.
 

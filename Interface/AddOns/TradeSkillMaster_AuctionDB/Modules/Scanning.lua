@@ -88,8 +88,13 @@ function private.FullScanThread(self)
 	end
 
 	TSM.GUI:UpdateStatus(L["Processing data..."], 100)
+	local success = true
 	local scanData = {}
 	for _, record in ipairs(database.records) do
+		if not record.itemString then
+			success = false
+			break
+		end
 		if not scanData[record.itemString] then
 			scanData[record.itemString] = {buyouts={}, minBuyout=0, numAuctions=0}
 		end
@@ -106,6 +111,11 @@ function private.FullScanThread(self)
 	end
 	private:ProcessScanDataThread(self, scanData)
 	TSM.GUI:UpdateStatus(L["Done Scanning"], 100)
+	if success then
+		private:ProcessScanDataThread(self, scanData, itemList)
+	else
+		TSM:Print(L["The scan did not run successfully due to issues on Blizzard's end. Using the TSM desktop application for your scans is recommended."])
+	end
 end
 
 function private.GroupScanThread(self, itemList)
@@ -159,8 +169,13 @@ function private.GroupScanThread(self, itemList)
 	end
 
 	TSM.GUI:UpdateStatus(L["Processing data..."], 100)
+	local success = true
 	local scanData = {}
 	for _, record in ipairs(database.records) do
+		if not record.itemString then
+			success = false
+			break
+		end
 		if not scanData[record.itemString] then
 			scanData[record.itemString] = {buyouts={}, minBuyout=0, numAuctions=0}
 		end
@@ -175,7 +190,11 @@ function private.GroupScanThread(self, itemList)
 		scanData[record.itemString].numAuctions = scanData[record.itemString].numAuctions + 1
 		self:Yield()
 	end
-	private:ProcessScanDataThread(self, scanData, itemList)
+	if success then
+		private:ProcessScanDataThread(self, scanData, itemList)
+	else
+		TSM:Print(L["The scan did not run successfully due to issues on Blizzard's end. Using the TSM desktop application for your scans is recommended."])
+	end
 	TSM.GUI:UpdateStatus(L["Done Scanning"], 100)
 end
 
@@ -203,7 +222,7 @@ function private.GetAllScanThread(self)
 			return
 		elseif event == "GETALL_BAD_DATA" then
 			-- got bad data from the server
-			TSM:Print(L["GetAll scan did not run successfully due to issues on Blizzard's end. Using the TSM desktop application for your scans is recommended."])
+			TSM:Print(L["The scan did not run successfully due to issues on Blizzard's end. Using the TSM desktop application for your scans is recommended."])
 			TSM.GUI:UpdateStatus(L["Done Scanning"], 100)
 			return
 		else

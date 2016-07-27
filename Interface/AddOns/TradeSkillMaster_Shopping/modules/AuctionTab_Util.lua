@@ -30,6 +30,7 @@ function AuctionTabUtil:GetItemLocation(targetItemString)
 			return bag, slot, itemString, GetContainerItemLink(bag, slot)
 		end
 	end
+	if not baseItemBag or not baseItemSlot then return end
 	return baseItemBag, baseItemSlot, baseItemString, GetContainerItemLink(baseItemBag, baseItemSlot)
 end
 

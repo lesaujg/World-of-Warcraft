@@ -1,0 +1,12 @@
+tag 7.0.3.6
+292af357dae46865c2ba13eb9f4c3c8ced409e34
+James D. Callahan III <jcallahan@curse.com>
+2016-07-26 12:31:05 -0500
+
+
+
+--------------------
+
+James D. Callahan III:
+	- Remove reference to Nameplates.lua from the ToC so people who aren't properly updating aren't attempting to load a file that hasn't existed for five versions. Pro tip: Completely delete an AddOn folder before updating.
+	- Add another iconID for vignette detection.

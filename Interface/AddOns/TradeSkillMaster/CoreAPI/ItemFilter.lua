@@ -96,7 +96,7 @@ function TSMAPI.ItemFilter:MatchesFilter(filterInfo, item, price)
 
 	-- check the rarity
 	local quality = TSMAPI.Item:GetQuality(item)
-	if filterInfo.rarity and iRarity ~= filterInfo.rarity then
+	if filterInfo.rarity and quality ~= filterInfo.rarity then
 		return
 	end
 

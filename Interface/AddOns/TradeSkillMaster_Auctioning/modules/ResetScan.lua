@@ -158,7 +158,7 @@ function private:CreateResetFrame(parent)
 			summaryST = {
 				OnEnter = function(self, data, self)
 					if not data.operation then return end
-					local prices = TSM.Util:GetItemPrices(data.operation, data.itemString, {resetMaxCost=true, resetMinProfit=true})
+					local prices = TSM.Util:GetItemPrices(data.operation, data.itemString, true, {resetMaxCost=true, resetMinProfit=true})
 					GameTooltip:SetOwner(self, "ANCHOR_NONE")
 					GameTooltip:SetPoint("BOTTOMLEFT", self, "TOPLEFT")
 					GameTooltip:AddLine(data.itemLink)
@@ -478,7 +478,7 @@ function private:ProcessItemOperation(itemString, operation)
 	if #records == 0 then return 0 end
 
 	local numAdded = 0
-	local prices = TSM.Util:GetItemPrices(operation, itemString, {minPrice=true, maxPrice=true, normalPrice=true, resetMaxCost=true, resetMinProfit=true, resetResolution=true, resetMaxItemCost=true, undercut=true})
+	local prices = TSM.Util:GetItemPrices(operation, itemString, true, {minPrice=true, maxPrice=true, normalPrice=true, resetMaxCost=true, resetMinProfit=true, resetResolution=true, resetMaxItemCost=true, undercut=true})
 	local priceLevels = {}
 	local addNormal, isFirstItem = true, true
 	local currentPriceLevel = -math.huge
@@ -537,7 +537,7 @@ end
 -- ============================================================================
 
 function private:ValidateOperation(itemString, operation)
-	local prices = TSM.Util:GetItemPrices(operation, itemString, {minPrice=true, maxPrice=true, normalPrice=true, resetMaxCost=true, resetMinProfit=true, resetResolution=true, resetMaxItemCost=true, undercut=true})
+	local prices = TSM.Util:GetItemPrices(operation, itemString, true, {minPrice=true, maxPrice=true, normalPrice=true, resetMaxCost=true, resetMinProfit=true, resetResolution=true, resetMaxItemCost=true, undercut=true})
 	local errMsg
 
 	-- don't reset this item if their settings are invalid

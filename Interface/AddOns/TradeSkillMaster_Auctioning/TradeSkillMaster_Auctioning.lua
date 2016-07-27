@@ -79,7 +79,7 @@ function TSM:OnInitialize()
 
 	-- Add this character to the alt list so it's not undercut by the player
 	TSM.db.factionrealm.player[UnitName("player")] = true
-	
+
 	-- register this module with TSM
 	TSM:RegisterModule()
 
@@ -169,13 +169,13 @@ function TSM:LoadTooltip(itemString, quantity, options, moneyCoins, lines)
 	if not options.operationPrices then return end -- only 1 tooltip option
 	itemString = TSMAPI.Item:ToBaseItemString(itemString, true)
 	local numStartingLines = #lines
-	
+
 	-- get operation
 	local operationName = TSMAPI.Operations:GetFirstByItem(itemString, "Auctioning")
 	if not operationName or not TSM.operations[operationName] then return end
 	TSMAPI.Operations:Update("Auctioning", operationName)
-	
-	local prices = TSM.Util:GetItemPrices(TSM.operations[operationName], itemString, {minPrice=true, maxPrice=true, normalPrice=true})
+
+	local prices = TSM.Util:GetItemPrices(TSM.operations[operationName], itemString, false, {minPrice=true, maxPrice=true, normalPrice=true})
 	if prices then
 		local minPrice = (TSMAPI:MoneyToString(prices.minPrice, "|cffffffff", moneyCoins and "OPT_ICON" or nil) or "|cffffffff---|r")
 		local normPrice = (TSMAPI:MoneyToString(prices.normalPrice, "|cffffffff", moneyCoins and "OPT_ICON" or nil) or "|cffffffff---|r")

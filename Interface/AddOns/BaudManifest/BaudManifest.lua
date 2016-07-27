@@ -146,10 +146,10 @@ local Sorts = {
   {Name = "Alphabetical", Func = function(ListItem) return select(1, GetItemInfo(ListItem.ItemString)); end},
   {Name = "Rarity", Func = function(ListItem) return select(3, GetItemInfo(ListItem.ItemString)); end},
   {Name = "Item Type", Func = function(ListItem)
-    local Name, _, _, _, _, Type, SubType, _, EquipLoc = GetItemInfo(ListItem.ItemString);
+    local _, _, _, _, _, Type, SubType, _, EquipLoc = GetItemInfo(ListItem.ItemString);
     if (EquipLoc == "INVTYPE_ROBE") then EquipLoc = "INVTYPE_CHEST";
     elseif (EquipLoc == "INVTYPE_THROWN") then EquipLoc = "INVTYPE_RANGED";
-    elseif (EquipLoc == "INVTYPE_HOLDABLE") or (EquipLoc=="INVTYPE_SHIELD") then EquipLoc = "INVTYPE_WEAPONOFFHAND2";
+    elseif (EquipLoc == "INVTYPE_HOLDABLE") or (EquipLoc == "INVTYPE_SHIELD") then EquipLoc = "INVTYPE_WEAPONOFFHAND2";
     end
     return Type .. EquipLoc .. SubType;
   end},
@@ -249,7 +249,7 @@ local function CleanItemString(ItemString)
     return CleanItemString;
   end
 
-  --((item:itemID:enchant:gem1:gem2:gem3:gem4):(suffixID):(uniqueID):)level:specializationID:(upgradeId:instanceDifficultyID:numBonusIDs:bonusID1:bonusID2...)
+  --((item:itemID:enchant:gem1:gem2:gem3:gem4):(suffixID):(uniqueID):)level:specializationID:(upgradeId:instDiffID:numBonusIDs:bID1:bID2...:upgradeValue)
   local Prefix, First, SuffixID, UniqueID, Rest = strmatch(CleanItemString, "((item:%d*:%d*:%d*:%d*:%d*:%d*):(%-?%d*):(%-?%d*):)%d*:%d*:([%d:]+)");
   if Prefix then
      if (SuffixID ~= '' and tonumber(SuffixID) < 0) then
@@ -259,6 +259,9 @@ local function CleanItemString(ItemString)
         -- Need to clear the UniqueID, so that the item will stack in the manifest.
         return First..":"..SuffixID.."::"..Rest;
      end
+  else
+    -- pre-6.0 format
+    return CleanItemString.."::::::";
   end
 end
 
@@ -399,7 +402,7 @@ EventFuncs = {
         PlayerData = GetCharData(PlayerName);
         BaudManifestRouteConfig();
         local Hash, Item, ItemIndex, Duplicates, Category;
-        for Index = 1, 3 do	
+        for Index = 1, 3 do
           local Display = Displays[Index];
           Display.Data = PlayerData[Index];
           BaudManifestUpdateBGTexture(Display);
@@ -430,13 +433,17 @@ EventFuncs = {
 
               if Item.ItemString then
                 local CleanedItemString = CleanItemString(Item.ItemString);
-                if not Hash[CleanedItemString] then
-                  Hash[CleanedItemString] = Item;
+                if not CleanedItemString then
+                  DebugMsg("Couldn't clean item string "..Item.ItemString);
                 else
-                  --Remove duplicate
-                  tremove(Category, ItemIndex);
-                  ItemIndex = ItemIndex - 1;
-                  Duplicates = true;
+                  if not Hash[CleanedItemString] then
+                    Hash[CleanedItemString] = Item;
+                  else
+                    --Remove duplicate
+                    tremove(Category, ItemIndex);
+                    ItemIndex = ItemIndex - 1;
+                    Duplicates = true;
+                  end
                 end
               end
               ItemIndex = ItemIndex + 1;
@@ -1048,8 +1055,8 @@ hooksecurefunc("PickupContainerItem", function(Bag,Slot)
 
   DragItem = GetItemString(DragItem);
 
-  DebugMsg("Item pickup from " .. Bag .. ", " .. Slot .. ": " .. DragItem);
-  
+  --DebugMsg("Item pickup from " .. Bag .. ", " .. Slot .. ": " .. DragItem);
+
   DragItem = {
     String = DragItem,
     Stack = select(2, GetContainerItemInfo(Bag, Slot)),
@@ -1122,7 +1129,7 @@ hooksecurefunc("PickupBagFromSlot", function(Slot)
   DragItem = GetItemString(DragItem);
 
   DragItem = {String = DragItem, MoveBag = Bag, Origin = Displays[Bag == -3 and 3 or ((Bag == -1) or (Bag > 4)) and 2 or 1]};
-  DebugMsg("Bag pickup from "..Bag);
+  --DebugMsg("Bag pickup from "..Bag);
 end);
 
 ------------------------
@@ -1259,7 +1266,7 @@ QueuedUpdateFrame:SetScript("OnUpdate", function(self)
         if CursorHasItem() then
           DragPending = nil;
         else
-          DebugMsg("Pending status finished.");
+          --DebugMsg("Pending status finished.");
           DragItem = DragPending;
           DragPending = nil;
           DragItem.Ready = nil;
@@ -1268,7 +1275,7 @@ QueuedUpdateFrame:SetScript("OnUpdate", function(self)
             --the bag is empty.
             BaudManifestEmptyBag(DragItem.Origin, DragItem.MoveBag, true);
           elseif DragItem.EquipBag then
-            --Used for equipping bags in place of the bag that contains them            
+            --Used for equipping bags in place of the bag that contains them
             local DestString = GetItemString(GetContainerItemLink(DragItem.Bag, DragItem.Slot) or "");
             if (DestString == DragItem.String) then
               IgnoreHooks = true;
@@ -2247,7 +2254,7 @@ function BaudManifestPickupDragRemain(MoveMethod, QuickSplit)
 
     if not BestSlot then
       DragItem = nil;
-      DebugMsg("Could not find item for drag - aborting.");
+      --DebugMsg("Could not find item for drag - aborting.");
       return Moving;
     end
 
@@ -2270,7 +2277,7 @@ function BaudManifestPickupDragRemain(MoveMethod, QuickSplit)
       end
 
       if (not BestBag or (DragItem.MoveMethod ~= true)) and not CursorHasItem() then
-        DebugMsg("Item move failed - aborting.");
+        --DebugMsg("Item move failed - aborting.");
         DragItem = nil;
         return Moving;
       end
@@ -2278,7 +2285,7 @@ function BaudManifestPickupDragRemain(MoveMethod, QuickSplit)
       Moving = true;
       DragItem.Stack = BestCount;
       DragItem.Remain = DragItem.Remain - BestCount;
-      DebugMsg("Picking up stack of " .. BestCount .. " from " .. (BestBag or "n/a") .. "," .. BestSlot .. " (" .. DragItem.Remain .. " remain)");
+      --DebugMsg("Picking up stack of " .. BestCount .. " from " .. (BestBag or "n/a") .. "," .. BestSlot .. " (" .. DragItem.Remain .. " remain)");
       if (DragItem.Remain <= 0) then
         DragItem.Remain = nil;
       end
@@ -2286,13 +2293,13 @@ function BaudManifestPickupDragRemain(MoveMethod, QuickSplit)
       if DragItem.QuickSplit then
         SplitCount = nil;
       end
-      DebugMsg("Splitting " .. DragItem.Remain .. " from stack at " .. BestBag .. "," .. BestSlot);
+      --DebugMsg("Splitting " .. DragItem.Remain .. " from stack at " .. BestBag .. "," .. BestSlot);
       IgnoreHooks = true;
       SplitContainerItem(BestBag, BestSlot, DragItem.Remain - (SplitCount or 0));
       IgnoreHooks = false;
 
       if not CursorHasItem() then
-        DebugMsg("Failure to split stack.");
+        --DebugMsg("Failure to split stack.");
         DragItem = nil;
         return Moving;
       end
@@ -2300,7 +2307,7 @@ function BaudManifestPickupDragRemain(MoveMethod, QuickSplit)
       Moving = true;
       if SplitCount then
         --When a stack must be split, the moving procedure will continue after the move is finished
-        DebugMsg("Placing split item at " .. SplitBag .. "," .. SplitSlot);
+        --DebugMsg("Placing split item at " .. SplitBag .. "," .. SplitSlot);
         IgnoreHooks = true;
         PickupContainerItem(SplitBag, SplitSlot);
         IgnoreHooks = false;
@@ -2323,7 +2330,7 @@ function BaudManifestPickupDragRemain(MoveMethod, QuickSplit)
 
     --if MoveMethod is set to move between displays, no item will be in the cursor unless the item cannot be moved by using it
     if (not BestBag or (DragItem.MoveMethod ~= true)) and not CursorHasItem() then
-      DebugMsg("Item move failed - aborting.");
+      --DebugMsg("Item move failed - aborting.");
       DragItem = nil;
       return Moving;
     end
@@ -2400,7 +2407,7 @@ function BaudManifestItemEntry_OnDragStart(Button)
     );
 
     if not BestStack then
-      DebugMsg("Failed to find dragged item.");
+      --DebugMsg("Failed to find dragged item.");
     else
       if BestBag then
         --Drag item will automatically be set up since ignore hooks is not set
@@ -2489,7 +2496,7 @@ function BaudManifestMoveListItem(Display)
   end
 
   local _, _, NewCategory, NewIndex = BaudManifestGetCursorPos(Display);
-  DebugMsg("Moving item to category " .. NewCategory .. ", index " .. (NewIndex or "-1"));
+  --DebugMsg("Moving item to category " .. NewCategory .. ", index " .. (NewIndex or "-1"));
 
   --Recursive function for seeing if a category drop location is within itself
   local function FindCategory(Source)
@@ -2530,7 +2537,7 @@ function BaudManifestMoveListItem(Display)
   GetOldItem();
 
   if not OldItem then
-    DebugMsg("Failed to find move item");
+    --DebugMsg("Failed to find move item");
     return;
   end
 
@@ -2550,7 +2557,7 @@ end
 function BaudManifestPutItem(Display, SkipBag)
   local Type, ItemID = GetCursorInfo();
   if (Type ~= "item") then
-    DebugMsg("Cursor is not carrying an item.");
+    --DebugMsg("Cursor is not carrying an item.");
     return;
   end
   local BestBag, BestPriority, Priority, Free, Family;
@@ -2584,7 +2591,7 @@ function BaudManifestPutItem(Display, SkipBag)
   );
 
   if not BestBag then
-    DebugMsg("Failed to find empty space. Dropping item into bag to likely give an error.");
+    --DebugMsg("Failed to find empty space. Dropping item into bag to likely give an error.");
     if (Display:GetID() == 1) then
       PutItemInBackpack();
     else
@@ -2597,7 +2604,7 @@ function BaudManifestPutItem(Display, SkipBag)
     return;
   end
 
-  DebugMsg("Dropping item in bag " .. BestBag .. ", priority " .. BestPriority);
+  --DebugMsg("Dropping item in bag " .. BestBag .. ", priority " .. BestPriority);
 
   --PutItemInBag() can be a problem if the item being dropped happens to be a bag.
   if (BestBag == 0) then
@@ -2742,15 +2749,15 @@ local function UpdateSlotFunc(Bag, Slot)
       for Index = 1, NumSpecials do
         if (bitand(SpecialBags[Index].Family, Family) > 0) and (SpecialBags[Index].Free > 0) and not Override[ItemID] then
           if (select(6, GetItemInfo(ItemID)) == LocaleContainer) then
-            DebugMsg("Override added for specialty bag");
+            --DebugMsg("Override added for specialty bag");
             Override[ItemID] = true;
           else
-            DebugMsg("Moving item into specialized bag.");
+            --DebugMsg("Moving item into specialized bag.");
             IgnoreHooks = true;
             PickupContainerItem(Bag, Slot);
             InvID = ContainerIDToInventoryID(SpecialBags[Index].Index);
             if CursorCanGoInSlot(InvBagsOffset + 1) then
-              DebugMsg("Cannot put item in bag since item is a bag.");
+              --DebugMsg("Cannot put item in bag since item is a bag.");
               ClearCursor();
               Override[ItemID] = true;
             else
@@ -2818,7 +2825,7 @@ local function UpdateSlotFunc(Bag, Slot)
 
       ItemInfo.ICount = nil;
       ClearCursor();
-      DebugMsg("Combining incomplete stacks.");
+      --DebugMsg("Combining incomplete stacks.");
       IgnoreHooks = true;
       PickupContainerItem(PickupBag, PickupSlot);
       if CursorHasItem() then
@@ -3082,7 +3089,11 @@ function BaudManifestUpdateDisplayList(Display)
         else
           AddCategory(Value.Category, 0);
         end
-      elseif Value.ItemString and (Value.Count or Value.Show or Value.Properties) and ((Config.HideEquipped == false) or HideCategories or (Display:GetID() > 3) or not Value.Equipped or (Value.Count > Value.Equipped)) and (BaudManifestCustomFilter(Value.ItemString, Display.CustomFilter) and ((Display.Filter == 1) or (Display.Filter == select(6, GetItemInfo(Value.ItemString))))) then
+      elseif Value.ItemString and
+             (Value.Count or Value.Show or Value.Properties) and
+             ((Config.HideEquipped == false) or HideCategories or (Display:GetID() > 3) or not Value.Equipped or (Value.Count > Value.Equipped)) and
+             (BaudManifestCustomFilter(Value.ItemString, Display.CustomFilter) and
+             ((Display.Filter == 1) or (Display.Filter == select(6, GetItemInfo(Value.ItemString))))) then
         AddEntry(Key, Category, Indent);
         if (Display.Sort ~= 1) then
           --Items that enter your backpack which the client has never seen before will not have a lot of GetItemInfo stuff, so
@@ -4234,7 +4245,7 @@ end
 -------------------------------------
 
 function BaudManifestEmptyBag(Display, BagToEmpty, Unequip)
-  DebugMsg("Emptying bag "..BagToEmpty);
+  --DebugMsg("Emptying bag "..BagToEmpty);
   BaudManifestReadSpecials(Display, BagToEmpty);
 
   local Link, BestBag, ItemID, ItemFamily, InvID, Free, Family;
@@ -4418,9 +4429,9 @@ function BaudManifestHookBlizBags()
 
   pre_ToggleBackpack = ToggleBackpack;
   ToggleBackpack = function(...)
-    DebugMsg("ToggleBackpack called.");
+    --DebugMsg("ToggleBackpack called.");
     if OpenAllBypass then
-      DebugMsg("Letting ToggleBackpack go through.");
+      --DebugMsg("Letting ToggleBackpack go through.");
       return pre_ToggleBackpack(...);
     else
        BaudManifestToggleDisplay(1);

@@ -2,7 +2,7 @@
 ## Title: Baud Manifest
 ## Notes: Allows you to manage your items as a list, instead of the standard bag system.
 ## Authors: Baudzilla, Erstyx
-## Version: 2.11
+## Version: 2.12
 ## SavedVariables: BaudManifestData
 
 BaudManifest.xml

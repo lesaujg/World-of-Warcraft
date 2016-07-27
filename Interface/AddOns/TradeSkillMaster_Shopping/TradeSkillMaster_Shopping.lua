@@ -110,9 +110,12 @@ function TSM:LoadTooltip(itemString, quantity, options, moneyCoins, lines)
 	end
 end
 
-function TSM:StartSearchGathering(itemString, quantity, callback, disableCrafting, ignoreDE)
+function TSM:StartSearchGathering(itemString, quantity, callback, disableCrafting, ignoreDE, even)
 	TSMAPI:Assert(itemString and quantity and callback)
 	local searchInfo = { item = itemString, extraInfo = { searchType = "apiGathering", maxQuantity = quantity, buyCallback = callback }, searchBoxText = "~"..L["gathering"].."~" }
+	if even then
+		searchInfo.extraInfo.evenOnly = true
+	end
 	if not disableCrafting and TSMAPI.Conversions:GetSourceItems(itemString) then
 		-- do crafting mode search
 		searchInfo.searchMode = "crafting"

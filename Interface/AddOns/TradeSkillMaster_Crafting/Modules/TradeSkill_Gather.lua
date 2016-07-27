@@ -407,7 +407,6 @@ function Gather:CreateMainFrame()
 						stCols = { { name = L["Sources"], width = 1 } },
 						stDisableSelection = true,
 						points = { { "TOPLEFT", BFC.PARENT, "TOPLEFT" }, { "BOTTOMLEFT", BFC.PARENT, "BOTTOMLEFT", -3, 33 }, { "RIGHT", BFC.PARENT, "CENTER", -3, 33 } },
-						scripts = { "OnClick" },
 					},
 					{
 						type = "VLine",
@@ -533,14 +532,6 @@ function Gather:CreateMainFrame()
 				end,
 			},
 			mainFrame = {
-				matST = {
-					OnClick = function(self, data)
-						if not (data.isTitle or data.isSubTitle) and data.sourceName ~= "none" then
-							TSM.Gather:updateSelectedSource(data.sourceName, data.itemString, data.quantity, data.spellID, data.spellQty)
-							Gather.Update()
-						end
-					end,
-				},
 				sourceST = {
 					OnClick = function(self, data, _, button)
 						if not data.isTitle and data.sourceName == "auction" then
@@ -607,7 +598,7 @@ function Gather:CreateMainFrame()
 			ButtonPos = { x = 100, y = -180 },
 			HighLightBox = { x = 0, y = -70, width = private.gatheringFrame:GetWidth() / 2, height = private.gatheringFrame:GetHeight() - 140 },
 			ToolTipDir = "UP",
-			ToolTipText = L["This displays the available sources for each item that is required, click a source to select or deselect that source. On opening the window, materials needed to be gathered from the crafter or have a single source are auto-selected"]
+			ToolTipText = L["This displays the available sources for each item that is required as per your session settings"]
 		},
 		{
 			ButtonPos = { x = 350, y = -180 },

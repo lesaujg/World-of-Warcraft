@@ -227,7 +227,7 @@ L["This area of the profession tab works similarly to the default profession UI,
 L["This button will automatically create some simple TSM groups based on the current profession."] = true
 L["This button will switch to the default profession UI. You can switch back by clicking a 'TSM' button at the top of the default profession UI."] = true
 L["This button will switch to the default profession UI. You can switch back by clicking the 'TSM' button at the top of the default profession UI."] = true
-L["This displays the available sources for each item that is required, click a source to select or deselect that source. On opening the window, materials needed to be gathered from the crafter or have a single source are auto-selected"] = true
+L["This displays the available sources for each item that is required as per your session settings"] = true
 L["This displays the tasks that you need to perform to gather the required materials from the selected sources."] = true
 L["This is the default method Crafting will use for determining material cost."] = true
 L["This is the default method Crafting will use for determining the value of crafted items."] = true

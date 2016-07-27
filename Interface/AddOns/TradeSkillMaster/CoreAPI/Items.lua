@@ -11,7 +11,7 @@
 local TSM = select(2, ...)
 local Items = TSM:NewModule("Items", "AceEvent-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("TradeSkillMaster") -- loads the localization table
-local private = {itemInfo={}, bonusIdCache={}, bonusIdTemp={}, scanTooltip=nil}
+local private = {itemInfo={}, bonusIdCache={}, bonusIdTemp={}, scanTooltip=nil, newItems={}, numPending=0}
 local STATIC_DATA = {classLookup={}, classIdLookup={}, inventorySlotIdLookup={}}
 STATIC_DATA.weaponClassName = GetItemClassInfo(LE_ITEM_CLASS_WEAPON)
 STATIC_DATA.armorClassName = GetItemClassInfo(LE_ITEM_CLASS_ARMOR)
@@ -348,18 +348,11 @@ function Items:OnEnable()
 		TSM.db.global.vendorItems[itemString] = TSM.db.global.vendorItems[itemString] or cost
 	end
 	TSMAPI.Threading:Start(private.ItemInfoThread, 0.1)
+	private.loadedItemInfo = private.LoadItemCache()
 end
 
 function Items:OnLogout()
-	local resultItems = {}
-	for itemString, data in pairs(private.itemInfo) do
-		local item = {}
-		for k, v in pairs(data) do
-			tinsert(item, k.."="..tostring(v))
-		end
-		tinsert(resultItems, itemString..":"..table.concat(item, ","))
-	end
-	TSMTestDB = resultItems
+	private.SaveItemCache()
 end
 
 function Items:ScanMerchant(event)
@@ -382,11 +375,138 @@ end
 
 
 -- ============================================================================
--- Item Info Thread
+-- ItemCacheDB Helper Functions
 -- ============================================================================
 
-private.newItems = {}
-private.numPending = 0
+function private.EncodeNumber(value, length)
+	if value == nil then
+		value = 2 ^ (8 * length) - 1
+	end
+	if length == 1 then
+		return strchar(value)
+	elseif length == 2 then
+		return strchar(value % 256, value / 256)
+	elseif length == 3 then
+		return strchar(value % 256, (value % 65536) / 256, value / 65536)
+	elseif length == 4 then
+		return strchar(value % 256, (value % 65536) / 256, (value % 16777216) / 65536, value / 16777216)
+	else
+		TSMAPI:Assert(false, "Invalid length: "..tostring(length))
+	end
+end
+
+function private.SaveItemCache()
+	local resultRows = {}
+	local resultNames = {}
+	for itemString, data in pairs(private.itemInfo) do
+		local itemId = strmatch(itemString, "^i:([0-9]+)")
+		if itemId and not data._isInvalid then
+			local row = nil
+			if data._getInfoResult then
+				row = strjoin("",
+					private.EncodeNumber(tonumber(itemId), 3), -- 3 bytes of itemId
+					private.EncodeNumber(data.quality, 1), -- 1 byte of quality
+					private.EncodeNumber(data.itemLevel, 2), -- 2 bytes of itemLevel
+					private.EncodeNumber(data.minLevel, 1), -- 1 byte of minLevel
+					private.EncodeNumber(data.maxStack, 2), -- 2 bytes of maxStack
+					private.EncodeNumber(data.vendorPrice, 4) -- 4 bytes of vendorPrice
+				)
+			elseif data._encodedData then
+				row = data._encodedData
+			end
+			if row then
+				tinsert(resultNames, data.name)
+				tinsert(resultRows, row)
+			end
+		end
+	end
+	local result = table.concat(resultRows)
+	TSMAPI:Assert(#result % 13 == 0)
+	-- prepend the binary data length and append the names
+	result = private.EncodeNumber(#result, 4) .. result .. table.concat(resultNames, "\0")
+	-- prepend the hash
+	result = private.EncodeNumber(TSMAPI.Util:CalculateHash(result), 4)..result
+	-- store the result
+	TSMItemCacheDB = result
+end
+
+function private.DecodeNumber(str, length, offset)
+	offset = (offset or 0) + 1
+	local value = nil
+	if length == 1 then
+		value = strbyte(str, offset)
+	elseif length == 2 then
+		value = strbyte(str, offset) + strbyte(str, offset + 1) * 256
+	elseif length == 3 then
+		value = strbyte(str, offset) + strbyte(str, offset + 1) * 256 + strbyte(str, offset + 2) * 65536
+	elseif length == 4 then
+		value = strbyte(str, offset) + strbyte(str, offset + 1) * 256 + strbyte(str, offset + 2) * 65536 + strbyte(str, offset + 3) * 16777216
+	else
+		TSMAPI:Assert(false, "Invalid length: "..tostring(length))
+	end
+	-- a mmax value indiciates nil
+	if value == 2 ^ (8 * length) - 1 then
+		return nil
+	end
+	return value
+end
+
+function private.LoadItemCache()
+	local str = TSMItemCacheDB
+	if type(str) ~= "string" or #str < 4 then return end
+
+	-- check the hash
+	local hash = private.DecodeNumber(str, 4)
+	str = strsub(str, 5)
+	if hash ~= TSMAPI.Util:CalculateHash(str) then
+		TSM:LOG_ERR("Invalid hash (%s, %s)", tostring(hash), tostring(TSMAPI.Util:CalculateHash(str)))
+		return
+	end
+
+	-- calculate and check the length of the binary data section
+	local binDataLength = private.DecodeNumber(str, 4)
+	str = strsub(str, 5)
+	if binDataLength % 13 ~= 0 or binDataLength > #str then
+		TSM:LOG_ERR("Invalid bin data length (%s, %s)", tostring(binDataLength), tostring(#str))
+		return
+	end
+	local binDataEntries = binDataLength / 13
+
+	-- load the names
+	local names = TSMAPI.Util:SafeStrSplit(strsub(str, 1 + binDataLength), "\0")
+	if #names ~= binDataEntries then
+		TSM:LOG_ERR("Invalid names (%s, %s)", tostring(#names), tostring(binDataEntries))
+		return
+	end
+
+	local result = {}
+	for i = 0, binDataEntries - 1 do
+		local rowData = strsub(str, i * 13 + 1, (i + 1) * 13)
+		local itemString = "i:"..private.DecodeNumber(rowData, 3) -- 3 bytes of itemId
+		if result[itemString] then
+			TSM:LOG_ERR("Duplicate entry (%s)", itemString)
+			return
+		end
+		result[itemString] = {
+			name = names[i + 1],
+			quality = private.DecodeNumber(rowData, 1, 3),  -- 1 byte of quality
+			itemLevel = private.DecodeNumber(rowData, 2, 4),  -- 2 bytes of itemLevel
+			minLevel = private.DecodeNumber(rowData, 1, 6),  -- 1 byte of minLevel
+			maxStack = private.DecodeNumber(rowData, 2, 7),  -- 2 bytes of maxStack
+			vendorPrice = private.DecodeNumber(rowData, 4, 9),  -- 4 bytes of vendorPrice
+			_encodedData = rowData
+		}
+	end
+
+	TSM:LOG_INFO("Loaded item data")
+	return result
+end
+
+
+
+-- ============================================================================
+-- Item Info Thread
+-- ============================================================================
 
 function private.GetPetInfo(speciesId)
 	TSMAPI:Assert(type(speciesId) == "number")
@@ -398,8 +518,9 @@ function private.GetPetInfo(speciesId)
 end
 
 function private.GetCachedItemInfo(itemString)
+	if not itemString then return end
 	if not private.itemInfo[itemString] then
-		private.newItems[itemString] = true
+		private.newItems[itemString] = 1
 		private.itemInfo[itemString] = {}
 		if strmatch(itemString, "^p:") then
 			-- pets don't have a variant of GetItemInfoInstant, so just pretend we already got it
@@ -482,10 +603,33 @@ function private.ItemInfoThread(self)
 		private.StoreGetItemInfoResult("i:"..itemId, GetItemInfo(itemId))
 	end)
 
+	-- import the loaded item data
+	local numImported = 0
+	if private.loadedItemInfo then
+		for itemString, data in pairs(private.loadedItemInfo) do
+			private.itemInfo[itemString] = data
+			private.itemInfo[itemString].link = TSMAPI.Item:GetLink(itemString)
+			if private.newItems[itemString] == 1 then
+				private.newItems[itemString] = nil
+			end
+			numImported = numImported + 1
+		end
+		-- get the instant item info after we load everything
+		for itemString in pairs(private.loadedItemInfo) do
+			local info = private.itemInfo[itemString]
+			if not info._getInfoInstantResult then
+				private.StoreGetItemInfoInstantResult(itemString, GetItemInfoInstant(TSMAPI.Item:ToItemID(itemString)))
+			end
+			self:Yield()
+		end
+	end
+	TSM:LOG_INFO("Imported %d items worth of data", numImported)
+
 	local doneStatusMessage = false
-	local lastStatusMessage = GetTime() + 5 -- don't show the first message for 5 seconds into the session
+	local lastStatusMessage = 0
 	local maxPending = 0
-	local lastStatusPending = 0
+	local lastStatusPending = -1
+	local toRemove = {}
 	while true do
 		-- count the number which are pending
 		local numRemaining = 0
@@ -509,20 +653,21 @@ function private.ItemInfoThread(self)
 					info._isPending = true
 					private.numPending = private.numPending + 1
 				end
-				private.newItems[itemString] = nil
+				tinsert(toRemove, itemString)
 			end
 			numRemaining = numRemaining + 1
 			self:Yield()
 		end
-		if GetTime() - lastStatusMessage > 10 and numRemaining ~= lastStatusPending then
+		while #toRemove > 0 do
+			private.newItems[tremove(toRemove)] = nil
+		end
+		if numRemaining ~= lastStatusPending and GetTime() - lastStatusMessage > 2 then
 			if numRemaining > 0 then
-				TSM:Printf(L["Item info for %d items is still loading and may impact TSM functionality until complete."], numRemaining)
 				TSM:LOG_INFO("%d items pending info", numRemaining)
 				doneStatusMessage = false
 				lastStatusMessage = GetTime()
 				lastStatusPending = numRemaining
 			elseif not doneStatusMessage then
-				TSM:Print(L["Done loading item info."])
 				TSM:LOG_INFO("done fetching info")
 				doneStatusMessage = true
 				lastStatusMessage = GetTime()
@@ -561,6 +706,9 @@ function TSMAPI.Item:GetName(itemString)
 	if not itemString then return end
 	local baseItemString = TSMAPI.Item:ToBaseItemString(itemString)
 	local info = private.GetCachedItemInfo(baseItemString)
+	if info and itemString ~= baseItemString and not info._getInfoResult then
+		private.newItems[baseItemString] = true
+	end
 	local name = nil
 	if strmatch(itemString, "^p:") or (info and itemString == baseItemString) then
 		if not info then
@@ -576,10 +724,16 @@ function TSMAPI.Item:GetName(itemString)
 		name = GetItemInfo(private.ToWoWItemString(itemString))
 	end
 	if not name then
-		-- if we got passed an item link, we can maybe extract the name from it
+		-- if we got passed an item link or this is a base item and we have the item link, we can maybe extract the name from it
 		name = strmatch(origItemString, "^\124cff[0-9a-z]+\124[Hh].+\124h%[(.+)%]\124h\124r$")
 		if name == "" then
 			name = nil
+		end
+		if not name and itemString == baseItemString and info and info.link then
+			name = strmatch(info.link, "^\124cff[0-9a-z]+\124[Hh].+\124h%[(.+)%]\124h\124r$")
+			if name == "" then
+				name = nil
+			end
 		end
 	end
 	return name
@@ -590,11 +744,14 @@ function TSMAPI.Item:GetLink(itemString)
 	if not itemString then return "?" end
 	local baseItemString = TSMAPI.Item:ToBaseItemString(itemString)
 	local info = private.GetCachedItemInfo(baseItemString)
-	local name = info and info.name
-	local link = nil
+	if info and itemString ~= baseItemString and not info._getInfoResult then
+		private.newItems[baseItemString] = true
+	end
+	local name, link = nil, nil
 	if info then
 		if itemString == baseItemString then
 			link = info.link
+			name = info.name
 		elseif info._getInfoResult and strmatch(itemString, "^i:") then
 			link = select(2, GetItemInfo(private.ToWoWItemString(itemString)))
 		end
@@ -608,7 +765,12 @@ function TSMAPI.Item:GetLink(itemString)
 		return ITEM_QUALITY_COLORS[tonumber(quality) or 0].hex .. "|Hbattlepet:" .. fullItemString .. "|h[" .. name .. "]|h|r"
 	elseif strmatch(itemString, "i:") then
 		name = name or "Unknown Item"
-		return "|cffff0000|H"..gsub(itemString, "i:", "item:").."|h["..name.."]|h|r"
+		local color = "|cffff0000"
+		if info and itemString == baseItemString and info.quality and info.quality >= 0 then
+			color = ITEM_QUALITY_COLORS[info.quality].hex
+		end
+		itemString = private.ToWoWItemString(itemString)
+		return color.."|H"..itemString.."|h["..name.."]|h|r"
 	end
 	return "?"
 end
@@ -681,13 +843,14 @@ end
 
 function private.ToWoWItemString(itemString)
 	local _, itemId, rand, numBonus = (":"):split(itemString)
-	if numBonus then
-		return "item:"..itemId.."::::::"..rand.."::::::"..strmatch(itemString, "i:[0-9]+:[0-9%-]*:(.*)")
-	elseif rand then
-		return "item:"..itemId.."::::::"..rand
+	local level = UnitLevel("player")
+	local spec = GetSpecialization()
+	if spec then
+		spec = GetSpecializationInfo(spec) or ""
 	else
-		return "item:"..itemId
+		spec = ""
 	end
+	return "item:"..itemId.."::::::"..(rand or "").."::"..level..":"..spec..":::"..(numBonus and strmatch(itemString, "i:[0-9]+:[0-9%-]*:(.*)") or "")..":::"
 end
 
 function private:FixItemString(itemString)

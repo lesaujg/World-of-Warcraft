@@ -300,6 +300,7 @@ function Modules:OnLogout()
 	end
 	-- ensure we're back on the correct profile
 	TSM.db:SetProfile(originalProfile)
+	TSM.Items:OnLogout()
 end
 
 function Modules:IsOperationIgnored(module, operationName)

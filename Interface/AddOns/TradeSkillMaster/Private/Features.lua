@@ -26,7 +26,9 @@ local private = {isLoaded={vendorBuy=nil, auctionSale=nil, auctionBuy=nil}, last
 function Features:OnEnable()
 	if TSM.db.global.auctionSaleEnabled then
 		ChatFrame_AddMessageEventFilter("CHAT_MSG_SYSTEM", private.FilterSystemMsg)
-		Features:RegisterEvent("AUCTION_OWNED_LIST_UPDATE", private.OnAuctionOwnedListUpdate)
+		Features:RegisterEvent("AUCTION_OWNED_LIST_UPDATE", function()
+			TSMAPI.Delay:AfterTime("featureSaleAuctionUpdate", 0, private.OnAuctionOwnedListUpdate)
+		end)
 		private.isLoaded.auctionSale = true
 	end
 	if TSM.db.global.auctionBuyEnabled then
@@ -67,7 +69,7 @@ function private:OnAuctionOwnedListUpdate()
 	for i = 1, GetNumAuctionItems("owner") do
 		local link = GetAuctionItemLink("owner", i)
 		local itemString = TSMAPI.Item:ToItemString(link)
-		local name, stackSize, buyout, wasSold = TSMAPI.Util:Select({1, 3, 10, 16}, GetAuctionItemInfo("owner", i))
+		local name, _, stackSize, _, _, _, _, _, _, buyout, _, _, _, _, _, wasSold = GetAuctionItemInfo("owner", i)
 		if wasSold == 0 and itemString then
 			if buyout and buyout > 0 then
 				auctionPrices[link] = auctionPrices[link] or { name = name }

@@ -1,3 +1,25 @@
+v3.4.23
+*Fixed issue with some bonus ids.
+
+v3.4.22
+*Fixed error showing up upon load for some users.
+
+v3.4.21
+*Fix for filtering grouped items by quality
+
+v3.4.20
+*Fix for missing bonus ids
+
+v3.4.19
+*Fixed bug affecting randomly enchanted items.
+
+v3.4.18
+*Fixed bug affecting item info.
+
+v3.4.17
+*Further workaround for Blizzard's item caching issues by storing item info between sessions.
+*Fixed some lag when opening the AH with the auction sales feature enabled.
+
 v3.4.16
 *Added new bonus ids
 
