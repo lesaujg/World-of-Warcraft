@@ -13,7 +13,7 @@ ActionBarSaverDB = {
 		},
 		["PRIEST"] = {
 		},
-		["ROGUE"] = {
+		["PALADIN"] = {
 		},
 		["WARLOCK"] = {
 		},
@@ -88,13 +88,13 @@ ActionBarSaverDB = {
 				[66] = "spell|1543||Flare||",
 				[115] = "item|28237||Medallion of the Alliance",
 				[67] = "spell|5384||Feign Death||",
-				[117] = "item|58145||Potion of the Tol'vir",
+				[70] = "item|109217||Draenic Agility Potion",
 				[98] = "item|32539||Skyguard's Drape",
-				[72] = "macro|72||MD+|132180|#show Misdirection/n/focus [button:2] target/n/clearfocus [button:2,mod:ctrl]/n/stopmacro [button:2][mod:ctrl]/n/cast [@focus,help,nodead][@pet,nodead,exists] Misdirection",
+				[117] = "item|58145||Potion of the Tol'vir",
 				[100] = "macro|100||Major Health|237050|/click TradeSkillCreateButton/n/use Enchanting Vellum",
 				[68] = "macro|68||_Clear Target|132092|/stopcasting/n/cleartarget/n/petfollow/n/petpassive",
 				[114] = "item|6948||Hearthstone",
-				[70] = "item|109217||Draenic Agility Potion",
+				[72] = "macro|72||MD+|132180|#show Misdirection/n/focus [button:2] target/n/clearfocus [button:2,mod:ctrl]/n/stopmacro [button:2][mod:ctrl]/n/cast [@focus,help,nodead][@pet,nodead,exists] Misdirection",
 			},
 		},
 		["DRUID"] = {
@@ -152,25 +152,25 @@ ActionBarSaverDB = {
 				[68] = "spell|1850||Dash||",
 				[74] = "spell|106832||Thrash||",
 				[117] = "spell|6603||Auto Attack||",
-				[114] = "spell|31252||Prospecting||",
-				[98] = "spell|106832||Thrash||",
-				[100] = "spell|6795||Growl||",
-				[73] = "spell|5221||Shred||",
-				[54] = "spell|18960||Teleport: Moonglade||",
-				[67] = "spell|5185||Healing Touch||",
+				[99] = "spell|22842||Frenzied Regeneration||",
+				[85] = "spell|5221||Shred||",
 				[69] = "spell|1126||Mark of the Wild||",
-				[52] = "item|109167||Findle's Loot-A-Rang",
 				[53] = "spell|50769||Revive||",
 				[75] = "spell|22568||Ferocious Bite||",
+				[98] = "spell|106832||Thrash||",
+				[100] = "spell|6795||Growl||",
+				[52] = "item|109167||Findle's Loot-A-Rang",
+				[73] = "spell|5221||Shred||",
+				[54] = "spell|18960||Teleport: Moonglade||",
 				[55] = "spell|33891||Incarnation: Tree of Life|Talent, Shapeshift|",
 				[110] = "companion|23338|||MOUNT|",
-				[85] = "spell|5221||Shred||",
-				[99] = "spell|22842||Frenzied Regeneration||",
+				[67] = "spell|5185||Healing Touch||",
+				[114] = "spell|31252||Prospecting||",
 			},
 		},
 		["MONK"] = {
 		},
-		["PALADIN"] = {
+		["ROGUE"] = {
 		},
 	},
 	["spellSubs"] = {

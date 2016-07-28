@@ -1,13 +1,13 @@
 
 CrossRealmAssistDB = {
 	["profileKeys"] = {
-		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
+		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
 		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
 		["Guldahka - Turalyon"] = "Guldahka - Turalyon",
-		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
-		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
 		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
-		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
+		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
+		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
 	},
 	["global"] = {
 		["minimap"] = {

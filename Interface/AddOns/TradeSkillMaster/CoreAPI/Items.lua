@@ -739,6 +739,19 @@ function TSMAPI.Item:GetName(itemString)
 	return name
 end
 
+function TSMAPI.Item:GeneralizeLink(itemLink)
+	local itemString = TSMAPI.Item:ToItemString(itemLink)
+	if not itemString then return end
+	if not strmatch(itemString, "p:") and not strmatch(itemString, "i:[0-9]+:[0-9%-]*:[0-9]*") then
+		-- swap out the itemString part of the link
+		local leader, quality, _, name, trailer, trailer2, extra = ("\124"):split(itemLink)
+		if trailer2 and not extra then
+			return strjoin("\124", leader, quality, "H"..private.ToWoWItemString(itemString), name, trailer, trailer2)
+		end
+	end
+	return TSMAPI.Item:GetLink(itemString)
+end
+
 function TSMAPI.Item:GetLink(itemString)
 	itemString = TSMAPI.Item:ToItemString(itemString)
 	if not itemString then return "?" end
@@ -766,7 +779,7 @@ function TSMAPI.Item:GetLink(itemString)
 	elseif strmatch(itemString, "i:") then
 		name = name or "Unknown Item"
 		local color = "|cffff0000"
-		if info and itemString == baseItemString and info.quality and info.quality >= 0 then
+		if info and info.quality and info.quality >= 0 and (itemString == baseItemString or not strmatch(itemString, "i:[0-9]+:[0-9%-]*:[0-9]*")) then
 			color = ITEM_QUALITY_COLORS[info.quality].hex
 		end
 		itemString = private.ToWoWItemString(itemString)

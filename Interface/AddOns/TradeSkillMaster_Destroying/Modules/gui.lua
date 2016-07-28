@@ -297,7 +297,7 @@ end
 
 function private:AutoShow()
 	if TSM.db.global.autoShow and not private.threadId and not private.hidden and not InCombatLockdown() then
-		GUI:ShowFrame()
+		TSMAPI.Delay:AfterTime("destroyingAutoShow", 0.1, GUI.ShowFrame)
 	end
 end
 

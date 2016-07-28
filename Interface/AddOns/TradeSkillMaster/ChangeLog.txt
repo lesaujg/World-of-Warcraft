@@ -1,3 +1,7 @@
+v3.4.24
+*Fixed "Unknown Item" showing up in scan results for randomly-enchanted items by adding another workaround for Blizzard's issues.
+*Fixed some lag by reducing the frequency of inventory scans.
+
 v3.4.23
 *Fixed issue with some bonus ids.
 
