@@ -83,7 +83,11 @@ function Bags:SkinBagButton()
 
 	self:SetNormalTexture("")
 	self:SetPushedTexture("")
-	self:SetTemplate()
+	self:SetBackdrop({
+	  edgeFile = C.Medias.Blank,
+	  edgeSize = T.Mult,
+	})
+	self:SetBackdropBorderColor(unpack(C.General.BorderColor))
 	self:StyleButton()
 
 	self.IsSkinned = true
@@ -532,9 +536,21 @@ function Bags:SlotUpdate(id, button)
 	end
 
 	local ItemLink = GetContainerItemLink(id, button:GetID())
-	local Texture, Count, Lock = GetContainerItemInfo(id, button:GetID())
-	local IsQuestItem, QuestId, IsActive = GetContainerItemQuestInfo(id, button:GetID())
+	
+	local Texture, Count, Lock, quality, _, _, _, _, _, ItemID = GetContainerItemInfo(id, button:GetID())
 	local IsNewItem = C_NewItems.IsNewItem(id, button:GetID())
+	
+	if IsNewItem ~= true and button.Animation and button.Animation:IsPlaying() then
+		button.Animation:Stop()
+	end
+	
+	if (button.ItemID == ItemID) then
+		return
+	end
+	
+	button.ItemID = ItemID
+	
+	local IsQuestItem, QuestId, IsActive = GetContainerItemQuestInfo(id, button:GetID())
 	local IsBattlePayItem = IsBattlePayItem(id, button:GetID())
 	local NewItem = button.NewItemTexture
 	local IsProfBag = self:IsProfessionBag(id)
@@ -568,44 +584,16 @@ function Bags:SlotUpdate(id, button)
 
 			button.Animation:Play()
 		end
-	else
-		if button.Animation and button.Animation:IsPlaying() then
-			button.Animation:Stop()
-		end
 	end
-
+	
 	if IsQuestItem then
-		if (button.BorderColor ~= QuestColor) then
-			button:SetBackdropBorderColor(1, 1, 0)
-
-			button.BorderColor = QuestColor
-		end
-
-		return
-	end
-
-	if ItemLink then
-		local Name, _, Rarity, _, _, Type = GetItemInfo(ItemLink)
-
-		if (not Lock and Rarity and Rarity > 1) then
-			if (button.BorderColor ~= GetItemQualityColor(Rarity)) then
-				button:SetBackdropBorderColor(GetItemQualityColor(Rarity))
-
-				button.BorderColor = GetItemQualityColor(Rarity)
-			end
-		else
-			if (button.BorderColor ~= C["General"].BorderColor) then
-				button:SetBackdropBorderColor(unpack(C["General"].BorderColor))
-
-				button.BorderColor = C["General"].BorderColor
-			end
-		end
+		button:SetBackdropBorderColor(1, 1, 0)
+	elseif ItemLink then
+		local Rarity = select(3, GetItemInfo(ItemLink))
+		
+		button:SetBackdropBorderColor(GetItemQualityColor(Rarity))
 	else
-		if (button.BorderColor ~= C["General"].BorderColor) then
-			button:SetBackdropBorderColor(unpack(C["General"].BorderColor))
-
-			button.BorderColor = C["General"].BorderColor
-		end
+		button:SetBackdropBorderColor(unpack(C["General"].BorderColor))
 	end
 end
 

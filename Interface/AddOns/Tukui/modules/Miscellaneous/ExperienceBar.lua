@@ -129,7 +129,7 @@ function Experience:Update(event, owner)
 		end
 		
 		if BarType == "XP" then
-			r, g, b = unpack(self.AFColor)
+			r, g, b = unpack(self.XPColor)
 		elseif BarType == "ARTIFACT" then
 			r, g, b = unpack(self.AFColor)
 		else
@@ -191,10 +191,6 @@ function Experience:Create()
 end
 
 function Experience:Enable()
-	if not C.Misc.XPBars then
-		return
-	end
-	
 	if not self.IsCreated then
 		self:Create()
 

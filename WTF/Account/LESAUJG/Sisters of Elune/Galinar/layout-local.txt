@@ -20,3 +20,10 @@ X: -218
 Y: 82
 W: 242
 H: 404
+Frame: _NPCScanOverlayKey
+FrameLevel: 121
+Anchor: CENTER
+X: -142
+Y: -78
+W: 207
+H: 76
