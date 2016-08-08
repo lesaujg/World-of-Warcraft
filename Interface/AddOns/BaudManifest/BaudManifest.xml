@@ -98,7 +98,7 @@
     </Scripts>
   </Button>
 
-  <EditBox name="BaudManifestCategoryEditBox" letters="40" autoFocus="true" parent="UIParent" hidden="true">
+  <EditBox name="BaudManifestCategoryEditBox" letters="40" autoFocus="false" parent="UIParent" hidden="true">
     <Size><AbsDimension y="16"/></Size>
     <FontString inherits="GameFontNormal"/>
     <Scripts>

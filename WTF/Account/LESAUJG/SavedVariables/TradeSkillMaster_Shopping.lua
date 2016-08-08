@@ -42,27 +42,27 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @postUndercut"] = "1c",
 	["g@ @minDeSearchLvl"] = 1,
 	["g@ @maxDeSearchLvl"] = 735,
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
+		{
+			["lastSearch"] = 1470661719,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [1]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1469799552,
 			["name"] = "savage blood",
 			["filter"] = "savage blood",
-		}, -- [1]
+		}, -- [2]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1469799327,
 			["name"] = "essence",
 			["filter"] = "essence",
-		}, -- [2]
-		{
-			["lastSearch"] = 1469793400,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
 		}, -- [3]
 		{
 			["lastSearch"] = 1469678988,
@@ -470,7 +470,7 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "saberfish",
 		}, -- [70]
 	},
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @normalPostPrice"] = "150% dbmarket",
 	["g@ @maxDeSearchPercent"] = 1,
 	["g@ @sniperCustomPrice"] = "0c",

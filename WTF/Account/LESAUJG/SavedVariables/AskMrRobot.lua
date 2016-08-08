@@ -2,12 +2,12 @@
 AskMrRobotDb3 = {
 	["char"] = {
 		["Galinar - Sisters of Elune"] = {
+			["Logging"] = {
+				["LastDiff"] = 1,
+				["LastZone"] = "SMV Alliance Garrison Level 3",
+			},
 			["Talents"] = {
 				[3] = "1213121",
-			},
-			["Logging"] = {
-				["LastDiff"] = 0,
-				["LastZone"] = "Northrend",
 			},
 			["Equipped"] = {
 				[3] = {
@@ -192,7 +192,7 @@ AskMrRobotDb3 = {
 		["Bracnar - Sisters of Elune"] = {
 			["Talents"] = {
 				"2312111", -- [1]
-				"3113321", -- [2]
+				"1113321", -- [2]
 				"2312322", -- [3]
 			},
 			["BankItems"] = {
@@ -621,8 +621,8 @@ AskMrRobotDb3 = {
 				[128353] = 1,
 				[116266] = 9,
 				[116268] = 10,
+				[44050] = 1,
 				[128482] = 1,
-				[118576] = 70,
 				[118711] = 8,
 				[116276] = 9,
 				[118099] = 45,
@@ -644,7 +644,7 @@ AskMrRobotDb3 = {
 				[109076] = 20,
 				[113681] = 1000,
 				[117398] = 1,
-				[44050] = 1,
+				[118576] = 70,
 				[124224] = 1,
 				[115463] = 1,
 				[109168] = 1,
@@ -1303,9 +1303,6 @@ AskMrRobotDb3 = {
 					[124296] = {
 						["id"] = 124296,
 					},
-					[124224] = {
-						["id"] = 124224,
-					},
 					[124284] = {
 						["id"] = 124284,
 					},
@@ -1314,6 +1311,9 @@ AskMrRobotDb3 = {
 						["socketColors"] = {
 							0, -- [1]
 						},
+					},
+					[124224] = {
+						["id"] = 124224,
 					},
 					[124210] = {
 						["id"] = 124210,
@@ -1472,8 +1472,8 @@ AskMrRobotDb3 = {
 		},
 		["Uldaris - Sisters of Elune"] = {
 			["Logging"] = {
-				["LastDiff"] = 1,
-				["LastZone"] = "SMV Alliance Garrison Level 3",
+				["LastDiff"] = 0,
+				["LastZone"] = "Pandaria",
 			},
 			["Talents"] = {
 				"3123233", -- [1]
@@ -1621,7 +1621,7 @@ AskMrRobotDb3 = {
 				[11082] = 27,
 				[10575] = 1,
 				[21790] = 1,
-				[68729] = 1,
+				[52718] = 80,
 				[34053] = 35,
 				[34057] = 169,
 				[17720] = 1,
@@ -1630,8 +1630,8 @@ AskMrRobotDb3 = {
 				[128513] = 1,
 				[39505] = 2,
 				[122260] = 1,
-				[52718] = 80,
 				[127784] = 21,
+				[68729] = 1,
 				[12803] = 1,
 				[52555] = 412,
 				[32228] = 1,
@@ -1768,12 +1768,12 @@ AskMrRobotDb3 = {
 		["Clothgar - Sisters of Elune"] = {
 		},
 		["Bracnar - Sisters of Elune"] = {
+			["options"] = {
+				["shopAh"] = true,
+			},
 			["window"] = {
 				["top"] = 1065,
 				["left"] = 923,
-			},
-			["options"] = {
-				["shopAh"] = true,
 			},
 			["minimap"] = {
 				["minimapPos"] = 346.798967440122,

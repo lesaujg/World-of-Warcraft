@@ -1,3 +1,6 @@
+v3.1.11
+*Fixed bug with filtered recipes in the craft queue being removed if you close the profession.
+
 v3.1.10
 *Fixed bug with gathering mats list still being clickable - source options are now set on the selection screen.
 

@@ -7,7 +7,7 @@
 -- Main non-UI code
 ------------------------------------------------------------
 
-PawnVersion = 2.0004
+PawnVersion = 2.0007
 
 -- Pawn requires this version of VgerCore:
 local PawnVgerCoreVersionRequired = 1.09
@@ -2207,7 +2207,7 @@ end
 -- (But if EvenIfNotEnchanted is true, the item link will be processed even if the item wasn't enchanted.)
 function PawnUnenchantItemLink(ItemLink, EvenIfNotEnchanted)
 	local TrimmedItemLink = PawnStripLeftOfItemLink(ItemLink)
-	local Pos, _, ItemID, EnchantID, GemID1, GemID2, GemID3, GemID4, SuffixID, MoreInfo, ViewAtLevel, SpecializationID, UpgradeLevel1, Difficulty, NumBonusIDs, BonusID1, BonusID2, BonusID3, BonusID4, BonusID5 = strfind(TrimmedItemLink, "^item:(%-?%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*)")
+	local Pos, _, ItemID, EnchantID, GemID1, GemID2, GemID3, GemID4, SuffixID, MoreInfo, ViewAtLevel, SpecializationID, UpgradeLevel1, Difficulty, NumBonusIDs, BonusID1, BonusID2, BonusID3, BonusID4, BonusID5, BonusID6 = strfind(TrimmedItemLink, "^item:(%-?%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*)")
 	-- Note: After the specified number of bonus IDs would be UpgradeLevel2, which could be the level at which the item was acquired for timewarped items, or
 	-- the Valor upgrade level.
 
@@ -2242,6 +2242,11 @@ function PawnUnenchantItemLink(ItemLink, EvenIfNotEnchanted)
 			elseif NumBonusIDs == 4 then
 				if BonusID5 == "529" or BonusID5 == "530" then
 					BonusID5 = "531"
+					WasUpgraded = true
+				end
+			elseif NumBonusIDs == 5 then
+				if BonusID6 == "529" or BonusID6 == "530" then
+					BonusID6 = "531"
 					WasUpgraded = true
 				end
 			else
@@ -2304,7 +2309,7 @@ function PawnUnenchantItemLink(ItemLink, EvenIfNotEnchanted)
 			if BonusID3 == nil or BonusID3 == "" then BonusID3 = "0" end
 			if BonusID4 == nil or BonusID4 == "" then BonusID4 = "0" end
 			if BonusID5 == nil or BonusID5 == "" then BonusID5 = "0" end
-			return "item:" .. ItemID .. ":0:0:0:0:0:" .. SuffixID .. ":" .. MoreInfo .. ":" .. 0 .. ":" .. SpecializationID .. ":" .. UpgradeLevel1 .. ":" .. Difficulty .. ":" .. NumBonusIDs .. ":" .. BonusID1 .. ":" .. BonusID2 .. ":" .. BonusID3 .. ":" .. BonusID4 .. ":" .. BonusID5, WasUpgraded
+			return "item:" .. ItemID .. ":0:0:0:0:0:" .. SuffixID .. ":" .. MoreInfo .. ":" .. 0 .. ":" .. SpecializationID .. ":" .. UpgradeLevel1 .. ":" .. Difficulty .. ":" .. NumBonusIDs .. ":" .. BonusID1 .. ":" .. BonusID2 .. ":" .. BonusID3 .. ":" .. BonusID4 .. ":" .. BonusID5 .. ":" .. BonusID6, WasUpgraded
 		else
 			-- This item is not enchanted.  Return nil.
 			return nil
@@ -2823,39 +2828,36 @@ function PawnIsItemAnUpgrade(Item, DoNotRescan)
 			local ThisValue = nil
 			local NewTableEntry = nil
 
-			--VgerCore.Message("*** InvType = " .. tostring(InvType) .. ", InvType2 = " .. tostring(InvType2))
-			
 			while InvType do
 				local BestData = nil
 				if PawnOptions.UpgradeTracking then
 					BestData = CharacterOptions.BestItems[InvType]
 				else
 					-- If upgrade tracking is disabled, manually create a BestData table based on the currently-equipped items for this slot.
-					local Slot1, Slot2, Item1, Item2
+					local Slot1, Slot2, Item1, Item2, ItemLink1, ItemLink2, Value1, Value2
 					Slot1 = PawnItemEquipLocToSlot1[InvType]
 					if Slot1 then Item1 = PawnGetItemDataForInventorySlot(Slot1, true) end
-					if Item1 and UnenchantedItemLink == PawnUnenchantItemLink(Item1.Link, true) then return end -- If this item is already equipped, it can't be an upgrade for any scale. 
-					Slot2 = PawnItemEquipLocToSlot2[InvType]
+					if Item1 then ItemLink1 = PawnUnenchantItemLink(Item1.Link, true) end
+					if not TwoSlotsForThisItemType and ItemLink1 and UnenchantedItemLink == ItemLink1 then return end -- If this item is already equipped, it can't be an upgrade for any scale. 
+					if TwoSlotsForThisItemType then Slot2 = PawnItemEquipLocToSlot2[InvType] end -- Don't check the off-hand slot for weapon upgrades if they can't dual-wield
 					if Slot2 then Item2 = PawnGetItemDataForInventorySlot(Slot2, true) end
-					if Item2 and UnenchantedItemLink == PawnUnenchantItemLink(Item2.Link, true) then return end
-					local Value1, Value2
+					if Item2 then ItemLink2 = PawnUnenchantItemLink(Item2.Link, true) end
+					if not TwoSlotsForThisItemType and ItemLink2 and UnenchantedItemLink == PawnUnenchantItemLink(Item2.Link, true) then return end
 					if Item1 then _, Value1 = PawnGetSingleValueFromItem(Item1, ScaleName) end
 					if Item2 then _, Value2 = PawnGetSingleValueFromItem(Item2, ScaleName) end
 
-					--VgerCore.Message("*** Equipped: " .. tostring(Value1) .. " and " .. tostring(Value2))
-
 					if Value1 and Value2 then
 						if Value1 >= Value2 then
-							BestData = { Value1, Item1, PawnGetMaxLevelItemIsUsefulHeirloom(Item1), Value2, Item2, PawnGetMaxLevelItemIsUsefulHeirloom(Item2) }
+							BestData = { Value1, ItemLink1, PawnGetMaxLevelItemIsUsefulHeirloom(Item1), Value2, ItemLink2, PawnGetMaxLevelItemIsUsefulHeirloom(Item2) }
 						else
-							BestData = { Value2, Item2, PawnGetMaxLevelItemIsUsefulHeirloom(Item2), Value1, Item1, PawnGetMaxLevelItemIsUsefulHeirloom(Item1) }
+							BestData = { Value2, ItemLink2, PawnGetMaxLevelItemIsUsefulHeirloom(Item2), Value1, ItemLink1, PawnGetMaxLevelItemIsUsefulHeirloom(Item1) }
 						end
 					elseif TwoSlotsForThisItemType then
 						-- If it's possible to equip two of these and the player only has one, then any new item is an upgrade.
 					elseif Value1 and not Value2 then
-						BestData = { Value1, Item1, PawnGetMaxLevelItemIsUsefulHeirloom(Item1) }
+						BestData = { Value1, ItemLink1, PawnGetMaxLevelItemIsUsefulHeirloom(Item1) }
 					elseif Value2 and not Value1 then
-						BestData = { Value2, Item2, PawnGetMaxLevelItemIsUsefulHeirloom(Item2) }
+						BestData = { Value2, ItemLink2, PawnGetMaxLevelItemIsUsefulHeirloom(Item2) }
 					end
 				end
 				if BestData then

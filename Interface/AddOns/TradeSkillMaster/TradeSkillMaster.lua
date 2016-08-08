@@ -53,8 +53,10 @@ TSM.designDefaults = {
 	},
 }
 
+-- Changelog:
+-- [6] added 'global.locale' key
 local settingsInfo = {
-	version = 5,
+	version = 6,
 	global = {
 		vendorItems = { type = "table", default = {}, lastModifiedVersion = 1 },
 		ignoreRandomEnchants = { type = "boolean", default = false, lastModifiedVersion = 1 },
@@ -76,6 +78,7 @@ local settingsInfo = {
 		tsmItemTweetEnabled = { type = "boolean", default = true, lastModifiedVersion = 1 },
 		moveDelay = { type = "number", default = 0, lastModifiedVersion = 1 },
 		appMessageId = { type = "number", default = 0, lastModifiedVersion = 4 },
+		locale = { type = "string", default = "", lastModifiedVersion = 6 },
 	},
 	profile = {
 		design = { type = "table", default = nil, lastModifiedVersion = 1 },
@@ -360,12 +363,11 @@ function TSM:RegisterModule()
 
 	-- TheUndermineJournal
 	if select(4, GetAddOnInfo("TheUndermineJournal")) and TUJMarketInfo then
-		local function GetTUJPrice(itemLink, key)
-			local itemID = TSMAPI.Item:ToItemID(itemLink)
-			local data = itemID and TUJMarketInfo(itemID)
-			if not data then return end
-			return data[key]
-		end
+        local function GetTUJPrice(itemLink, key)
+            local data = TUJMarketInfo(itemLink)
+            if not data then return end
+            return data[key]
+        end
 		tinsert(TSM.priceSources, { key = "TUJRecent", label = L["TUJ 3-Day Price"], callback = GetTUJPrice, arg = "recent" })
 		tinsert(TSM.priceSources, { key = "TUJMarket", label = L["TUJ 14-Day Price"], callback = GetTUJPrice, arg = "market" })
 		tinsert(TSM.priceSources, { key = "TUJGlobalMean", label = L["TUJ Global Mean"], callback = GetTUJPrice, arg = "globalMean" })

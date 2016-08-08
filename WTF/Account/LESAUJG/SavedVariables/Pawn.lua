@@ -650,6 +650,6 @@ PawnCommon = {
 	["ButtonPosition"] = 2,
 	["IgnoreGemsWhileLeveling"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["LastVersion"] = 2.0004,
+	["LastVersion"] = 2.0007,
 	["ShownGettingStarted"] = true,
 }

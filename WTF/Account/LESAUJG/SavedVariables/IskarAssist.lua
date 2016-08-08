@@ -54,7 +54,7 @@ RADataBase = {
 						["g"] = 0,
 						["r"] = 0,
 					},
-					["text_anchor"] = "center",
+					["panel_height"] = 30,
 					["RABattleResMainFrame"] = {
 						["IsLocked"] = false,
 						["position"] = {
@@ -62,7 +62,7 @@ RADataBase = {
 							["x"] = 0,
 						},
 					},
-					["panel_height"] = 30,
+					["text_anchor"] = "center",
 					["panel_show_res"] = true,
 					["text_color"] = {
 						["a"] = 1,
@@ -77,8 +77,8 @@ RADataBase = {
 						["g"] = 0,
 						["r"] = 0,
 					},
-					["panel_width"] = 130,
 					["panel_locked"] = false,
+					["panel_width"] = 130,
 				},
 				["RaidSchedule"] = {
 					["menu_priority"] = 4,
@@ -122,27 +122,25 @@ RADataBase = {
 						},
 					},
 				},
-				["Invites"] = {
-					["presets"] = {
-					},
-					["auto_invite_keywords"] = {
-						"inv", -- [1]
-						"invite", -- [2]
-					},
-					["invite_msg"] = "[RA]: invites in 5 seconds.",
-					["first_run"] = true,
-					["RAInviteMainFrame"] = {
+				["Raid Groups"] = {
+					["show_class_name"] = true,
+					["show_class_icon"] = true,
+					["text_size"] = 10,
+					["show_rank_icons"] = true,
+					["text_face"] = "Friz Quadrata TT",
+					["RARaidGroupsMainFrame"] = {
 						["IsLocked"] = false,
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
 					},
-					["auto_accept_invites_limited"] = true,
-					["auto_accept_invites"] = false,
-					["auto_invite_limited"] = true,
-					["menu_priority"] = 16,
-					["auto_invite"] = false,
+					["filter"] = false,
+					["show_level"] = true,
+					["enabled"] = true,
+					["text_shadow"] = false,
+					["menu_priority"] = 23,
+					["show_role_icon"] = true,
 				},
 				["Check Addons"] = {
 					["enabled"] = true,
@@ -159,25 +157,121 @@ RADataBase = {
 					},
 					["menu_priority"] = 24,
 				},
-				["Raid Groups"] = {
-					["show_class_name"] = true,
-					["show_class_icon"] = true,
-					["text_size"] = 10,
-					["show_rank_icons"] = true,
-					["text_face"] = "Friz Quadrata TT",
-					["RARaidGroupsMainFrame"] = {
+				["Invites"] = {
+					["presets"] = {
+					},
+					["auto_invite_keywords"] = {
+						"inv", -- [1]
+						"invite", -- [2]
+					},
+					["invite_msg"] = "[RA]: invites in 5 seconds.",
+					["first_run"] = true,
+					["RAInviteMainFrame"] = {
 						["IsLocked"] = false,
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
 					},
-					["show_level"] = true,
-					["filter"] = false,
-					["enabled"] = true,
+					["auto_accept_invites"] = false,
+					["auto_accept_invites_limited"] = true,
+					["auto_invite_limited"] = true,
+					["menu_priority"] = 16,
+					["auto_invite"] = false,
+				},
+				["Attendance"] = {
+					["RAAttendanceMainFrame"] = {
+						["IsLocked"] = false,
+						["position"] = {
+							["y"] = 0,
+							["x"] = 0,
+						},
+					},
+					["raidschedules"] = {
+					},
+					["playerids"] = {
+					},
+					["menu_priority"] = 17,
+				},
+				["Ready Check"] = {
+					["enabled"] = false,
+					["RAReadyCheckMainFrame"] = {
+						["IsLocked"] = false,
+						["position"] = {
+							["y"] = 0,
+							["x"] = 0,
+						},
+					},
+					["menu_priority"] = 1,
 					["text_shadow"] = false,
-					["menu_priority"] = 23,
-					["show_role_icon"] = true,
+					["text_size"] = 10,
+					["text_face"] = "Friz Quadrata TT",
+				},
+				["Iskar Assist"] = {
+					["profile"] = {
+						["group_sorting"] = 3,
+						["debuff_fel_chakram"] = false,
+						["debuff_phantasmal_wounds"] = true,
+						["eye_flash_anim"] = true,
+						["textshadow"] = true,
+						["archimonde_radar"] = false,
+						["debuff_phantasmal_corruption"] = true,
+						["right_side_debuffs"] = false,
+						["barwidth_grid"] = 70,
+						["stack_count_anchor"] = "top",
+						["show_cooldown_bars"] = false,
+						["bartexture"] = "Iskar Serenity",
+						["MainPanel"] = {
+							["position"] = {
+								["y"] = -342.999938964844,
+								["x"] = -14.0003662109375,
+							},
+							["IsLocked"] = true,
+						},
+						["barheight"] = 20,
+						["barheight_grid"] = 55,
+						["barwidth"] = 100,
+						["debuff_phantasmal_winds"] = true,
+						["debuff_phantasmal_bomb"] = false,
+						["MainPanel_strata"] = "DIALOG",
+						["debuff_fel_bomb"] = true,
+						["dispel_ready"] = false,
+						["textfont"] = "Accidental Presidency",
+						["cooldown"] = false,
+						["textsize"] = 14,
+					},
+					["RAIskarAssistFrameMainFrame"] = {
+						["IsLocked"] = false,
+						["position"] = {
+							["y"] = 0,
+							["x"] = 0,
+						},
+					},
+					["menu_priority"] = 1,
+				},
+				["BisList"] = {
+					["characters"] = {
+					},
+					["RABisListMainFrame"] = {
+						["IsLocked"] = false,
+						["position"] = {
+							["y"] = 0,
+							["x"] = 0,
+						},
+					},
+					["enabled"] = true,
+					["menu_priority"] = 13,
+				},
+				["Player Check"] = {
+					["RAPlayerCheckMainFrame"] = {
+						["IsLocked"] = false,
+						["position"] = {
+							["y"] = 0,
+							["x"] = 0,
+						},
+					},
+					["leader_request_interval"] = 600,
+					["menu_priority"] = 19,
 				},
 				["Cooldowns"] = {
 					["bar_grow_inverse"] = false,
@@ -250,65 +344,15 @@ RADataBase = {
 					},
 					["bar_texture"] = "Iskar Serenity",
 				},
-				["Ready Check"] = {
-					["enabled"] = false,
-					["RAReadyCheckMainFrame"] = {
-						["IsLocked"] = false,
-						["position"] = {
-							["y"] = 0,
-							["x"] = 0,
-						},
-					},
-					["menu_priority"] = 1,
-					["text_shadow"] = false,
-					["text_size"] = 10,
-					["text_face"] = "Friz Quadrata TT",
-				},
-				["Iskar Assist"] = {
-					["profile"] = {
-						["group_sorting"] = 3,
-						["debuff_fel_chakram"] = false,
-						["debuff_phantasmal_wounds"] = true,
-						["eye_flash_anim"] = true,
-						["textshadow"] = true,
-						["archimonde_radar"] = false,
-						["debuff_phantasmal_corruption"] = true,
-						["right_side_debuffs"] = false,
-						["barwidth_grid"] = 70,
-						["stack_count_anchor"] = "top",
-						["show_cooldown_bars"] = false,
-						["bartexture"] = "Iskar Serenity",
-						["MainPanel"] = {
-							["position"] = {
-								["y"] = -342.999938964844,
-								["x"] = -14.0003662109375,
-							},
-							["IsLocked"] = true,
-						},
-						["barheight"] = 20,
-						["barheight_grid"] = 55,
-						["barwidth"] = 100,
-						["debuff_phantasmal_winds"] = true,
-						["debuff_phantasmal_bomb"] = false,
-						["MainPanel_strata"] = "DIALOG",
-						["debuff_fel_bomb"] = true,
-						["dispel_ready"] = false,
-						["textfont"] = "Accidental Presidency",
-						["cooldown"] = false,
-						["textsize"] = 14,
-					},
-					["RAIskarAssistFrameMainFrame"] = {
-						["IsLocked"] = false,
-						["position"] = {
-							["y"] = 0,
-							["x"] = 0,
-						},
-					},
-					["menu_priority"] = 1,
-				},
 				["Raid Assignments"] = {
 					["notes"] = {
 					},
+					["auto_format"] = true,
+					["text_size"] = 12,
+					["currently_shown"] = false,
+					["hide_on_combat"] = false,
+					["auto_complete"] = true,
+					["text_face"] = "Friz Quadrata TT",
 					["background"] = {
 						["show"] = false,
 						["r"] = 0,
@@ -316,18 +360,6 @@ RADataBase = {
 						["g"] = 0,
 						["b"] = 0,
 					},
-					["NotepadScreenFrame"] = {
-						["IsLocked"] = false,
-						["position"] = {
-							["y"] = 0,
-							["x"] = 0,
-						},
-					},
-					["currently_shown"] = false,
-					["hide_on_combat"] = false,
-					["auto_complete"] = true,
-					["text_face"] = "Friz Quadrata TT",
-					["auto_format"] = true,
 					["locked"] = false,
 					["menu_priority"] = 20,
 					["framestrata"] = "DIALOG",
@@ -340,45 +372,13 @@ RADataBase = {
 							["x"] = 0,
 						},
 					},
-					["text_size"] = 12,
-				},
-				["Player Check"] = {
-					["RAPlayerCheckMainFrame"] = {
+					["NotepadScreenFrame"] = {
 						["IsLocked"] = false,
 						["position"] = {
 							["y"] = 0,
 							["x"] = 0,
 						},
 					},
-					["leader_request_interval"] = 600,
-					["menu_priority"] = 19,
-				},
-				["Attendance"] = {
-					["RAAttendanceMainFrame"] = {
-						["IsLocked"] = false,
-						["position"] = {
-							["y"] = 0,
-							["x"] = 0,
-						},
-					},
-					["raidschedules"] = {
-					},
-					["playerids"] = {
-					},
-					["menu_priority"] = 17,
-				},
-				["BisList"] = {
-					["characters"] = {
-					},
-					["RABisListMainFrame"] = {
-						["IsLocked"] = false,
-						["position"] = {
-							["y"] = 0,
-							["x"] = 0,
-						},
-					},
-					["enabled"] = true,
-					["menu_priority"] = 13,
 				},
 				["Leader Toolbar"] = {
 					["enabled"] = false,

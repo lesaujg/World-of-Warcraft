@@ -584,5 +584,5 @@ L["You cannot use %s within convert() as part of this custom price."] = "你不�
 L["You currently don't have any groups setup. Type '/tsm' and click on the 'TradeSkillMaster Groups' button to setup TSM groups."] = "您目前还没有任何分组设置。输入'/tsm'点击“分组”标签来设置TSM分组。"
 L["You have closed the bankui. Use '/tsm bankui' to view again."] = "您已经关闭了银行界面。输入'/tsm bankui'再次查看。"
 L["You must reload your UI for these settings to take effect. Reload now?"] = "你需要重载UI来使这些改动生效。是否现在重载？"
-L["Your auction of %s has sold for %s!"] = "你的%s拍卖已经被%s购买！" -- Needs review
+L["Your auction of %s has sold for %s!"] = "你的%s拍卖以%s的价格卖出！"
 L["You won an auction for %sx%d for %s"] = "你成功购买%sx%s从%s" -- Needs review

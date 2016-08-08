@@ -13,6 +13,22 @@ Shift key for forced arrangement
 
 BaudManifestDebug = false;
 
+-----------
+-- DebugMsg: print a debugging message to the chat frame
+-----------
+
+local function DebugMsg(Msg)
+  if BaudManifestDebug then DEFAULT_CHAT_FRAME:AddMessage(Msg); end
+end
+
+-----------
+-- DebugPrintLink: print an item link in readable form
+-----------
+
+local function DebugPrintLink(Link)
+   return gsub(Link, "\124", "\124\124");
+end
+
 --if extra backgrounds are added, they must be formatted to fit WoW's standards and the client must be restarted
 
 local Backgrounds = {
@@ -204,22 +220,6 @@ StaticPopupDialogs.BAUDMANIFEST_REMOVECHAR = {
   exclusive = true,
   hideOnEscape = true
 };
-
------------
--- DebugMsg: print a debugging message to the chat frame
------------
-
-local function DebugMsg(Msg)
-  if BaudManifestDebug then DEFAULT_CHAT_FRAME:AddMessage(Msg); end
-end
-
------------
--- DebugPrintLink: print an item link in readable form
------------
-
-local function DebugPrintLink(Link)
-   return gsub(Link, "\124", "\124\124");
-end
 
 ------------------
 -- GetItemString: get the item string from an item link
@@ -3688,6 +3688,7 @@ function BaudManifestResetButton_OnClick(Display)
   Display.FilterEdit:SetText("");
   BaudManifestFilterDropDown_Set(Display.FilterDrop, 1);
   BaudManifestSortDropDown_Set(Display.SortDrop, 1)
+  DebugMsg("Clearing focus due to reset button");
   ClearFocus:SetFocus();
   BaudManifestUpdateDisplayList(Display);
   BaudManifestResetButton_Update(Display);
@@ -3720,6 +3721,7 @@ function BaudManifestGenericClick(Button)
   if (Button == "RightButton") then
     BaudManifestClearVirtualDrag();
   end
+  DebugMsg("Clearing focus due to generic click");
   ClearFocus:SetFocus();
 end
 
