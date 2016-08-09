@@ -153,13 +153,6 @@ X: 0
 Y: 0
 W: 100
 H: 80
-Frame: _NPCScanOverlayKey
-FrameLevel: 121
-Anchor: CENTER
-X: -174
-Y: -99
-W: 143
-H: 34
 Frame: BaudManifestDisplay1
 FrameLevel: 45
 Anchor: RIGHT

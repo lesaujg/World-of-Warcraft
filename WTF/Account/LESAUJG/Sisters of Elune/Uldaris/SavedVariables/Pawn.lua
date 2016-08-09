@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0004,
+	["LastVersion"] = 2.0007,
 	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,

@@ -1,11 +1,4 @@
 Version: 1
-Frame: _NPCScanButton
-FrameLevel: 1
-Anchor: BOTTOM
-X: 0
-Y: 124
-W: 150
-H: 42
 Frame: DBMMinimapButton
 FrameLevel: 3
 Anchor: TOPRIGHT
@@ -13,6 +6,13 @@ X: -144
 Y: -119
 W: 32
 H: 32
+Frame: _NPCScanButton
+FrameLevel: 1
+Anchor: BOTTOM
+X: 0
+Y: 124
+W: 150
+H: 42
 Frame: BaudManifestDisplay1
 FrameLevel: 34
 Anchor: BOTTOMRIGHT
