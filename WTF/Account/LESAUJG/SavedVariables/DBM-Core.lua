@@ -152,14 +152,14 @@ DBM_AllSavedOptions = {
 		["SpecialWarningSound3"] = "Sound\\Creature\\KilJaeden\\KILJAEDEN02.ogg",
 		["DisableSFX"] = false,
 		["AutologBosses"] = false,
-		["DontShowRespawn"] = false,
+		["SpecialWarningFlashDura4"] = 0.7,
 		["ChatFrame"] = "DEFAULT_CHAT_FRAME",
-		["HUDSize4"] = 5,
 		["SpecialWarningFlashCol3"] = {
 			1, -- [1]
 			0, -- [2]
 			0, -- [3]
 		},
+		["HUDSize4"] = 5,
 		["WarningColors"] = {
 			{
 				["b"] = 0.941176470588235,
@@ -186,21 +186,25 @@ DBM_AllSavedOptions = {
 		["SWarningAlphabetical"] = true,
 		["HUDTexture4"] = "highlight",
 		["BlockNoteShare"] = false,
-		["HUDTexture2"] = "highlight",
-		["CountdownVoice3v2"] = "HoTS_R",
+		["FilterInterrupt"] = true,
+		["AutoCorrectTimer"] = false,
 		["WarningFontShadow"] = true,
 		["ModelSoundValue"] = "Short",
-		["FilterSelfHud"] = true,
+		["HUDColor3"] = {
+			1, -- [1]
+			0.5, -- [2]
+			0, -- [3]
+		},
 		["InfoFrameShowSelf"] = false,
-		["FilterInterrupt"] = true,
+		["HUDTexture2"] = "highlight",
 		["RangeFrameRadarPoint"] = "CENTER",
 		["SpecialWarningY"] = 75,
 		["DontRestoreRange"] = false,
 		["ShowTranscriptorMessage"] = true,
 		["RangeFrameUpdates"] = "Average",
-		["AutoCorrectTimer"] = false,
+		["CountdownVoice3v2"] = "HoTS_R",
 		["FilterTankSpec"] = true,
-		["WarningY"] = 260,
+		["RaidWarningSound"] = "Sound\\Doodad\\BellTollNightElf.ogg",
 		["CustomSounds"] = 0,
 		["ShortTimerText"] = true,
 		["SpecialWarningFlashRepeat3"] = true,
@@ -250,17 +254,13 @@ DBM_AllSavedOptions = {
 		["VoiceOverSpecW"] = false,
 		["WarningDuration"] = 4,
 		["SpecialWarningFont"] = "Interface\\Addons\\Tukui\\medias\\fonts\\normal_font.ttf",
-		["RaidWarningSound"] = "Sound\\Doodad\\BellTollNightElf.ogg",
-		["HUDColor3"] = {
-			1, -- [1]
-			0.5, -- [2]
-			0, -- [3]
-		},
+		["WarningY"] = 260,
+		["FilterSelfHud"] = true,
 		["DontShowBossTimers"] = false,
 		["DontShowFlexMessage"] = false,
 		["SpecialWarningSound2"] = "Sound\\Creature\\AlgalonTheObserver\\UR_Algalon_BHole01.ogg",
 		["DontShowBossAnnounces"] = false,
-		["SpecialWarningFlashDura4"] = 0.7,
+		["DontShowRespawn"] = false,
 		["WorldBossNearAlert"] = false,
 		["HPFrameMaxEntries"] = 5,
 		["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.ogg",

@@ -1,4 +1,11 @@
 Version: 1
+Frame: TSMCraftingGatherFrame
+FrameLevel: 0
+Anchor: RIGHT
+X: -288
+Y: 140
+W: 365
+H: 400
 Frame: BaudManifestDisplay2
 FrameLevel: 43
 Anchor: BOTTOMLEFT
@@ -20,13 +27,6 @@ X: 0
 Y: 128
 W: 150
 H: 42
-Frame: TSMMainFrame1
-FrameLevel: 0
-Anchor: CENTER
-X: 129
-Y: 121
-W: 968
-H: 621
 Frame: BaudManifestDisplay1
 FrameLevel: 34
 Anchor: CENTER

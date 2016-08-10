@@ -52,13 +52,6 @@ TukuiConfigShared = {
 		},
 		["Herbinator"] = {
 		},
-		["Galinar"] = {
-			["General"] = {
-				["UIScale"] = 0.64,
-			},
-		},
-		["Belrath"] = {
-		},
 		["Uldaris"] = {
 			["Bags"] = {
 				["Enable"] = false,
@@ -70,7 +63,16 @@ TukuiConfigShared = {
 				["HotKey"] = true,
 			},
 		},
+		["Galinar"] = {
+			["General"] = {
+				["UIScale"] = 0.64,
+			},
+		},
+		["Belrath"] = {
+		},
 		["Sanjuri"] = {
+		},
+		["Leanara"] = {
 		},
 		["Clothgar"] = {
 			["General"] = {
@@ -82,15 +84,12 @@ TukuiConfigShared = {
 		},
 	},
 	["Account"] = {
-		["Bags"] = {
-			["Enable"] = false,
-			["BagFilter"] = true,
-		},
 		["General"] = {
 			["UIScale"] = 0.64,
 		},
-		["NamePlates"] = {
+		["Bags"] = {
 			["Enable"] = false,
+			["BagFilter"] = true,
 		},
 	},
 }

@@ -5,13 +5,17 @@ TradeSkillMaster_AuctioningDB = {
 	["f@Alliance - Sisters of Elune@whitelist"] = {
 	},
 	["_currentProfile"] = {
-		["Orig - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
+		["Sanjuri - Sisters of Elune"] = "Default",
 		["Galinar - Sisters of Elune"] = "Default",
 		["Guldahka - Turalyon"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
 		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Orig - Sisters of Elune"] = "Default",
+		["Mandelbrot - Sisters of Elune"] = "Default",
+		["Leanara - Sisters of Elune"] = "Default",
+		["Belrath - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
 		["Herbinator - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
 		["Uldaris - Sisters of Elune"] = "Default",
 	},
 	["_scopeKeys"] = {
@@ -24,6 +28,10 @@ TradeSkillMaster_AuctioningDB = {
 			"Ghiaccioli - Sisters of Elune", -- [6]
 			"Herbinator - Sisters of Elune", -- [7]
 			"Guldahka - Turalyon", -- [8]
+			"Leanara - Sisters of Elune", -- [9]
+			"Belrath - Sisters of Elune", -- [10]
+			"Mandelbrot - Sisters of Elune", -- [11]
+			"Sanjuri - Sisters of Elune", -- [12]
 		},
 		["factionrealm"] = {
 			"Alliance - Sisters of Elune", -- [1]
@@ -58,10 +66,11 @@ TradeSkillMaster_AuctioningDB = {
 		["Mandelbrot"] = true,
 		["Orig"] = true,
 		["Herbinator"] = true,
+		["Clothgar"] = true,
 		["Galinar"] = true,
 		["Belrath"] = true,
-		["Clothgar"] = true,
 		["Sanjuri"] = true,
+		["Leanara"] = true,
 		["Uldaris"] = true,
 	},
 }

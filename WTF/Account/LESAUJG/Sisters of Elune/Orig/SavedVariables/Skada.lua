@@ -470,37 +470,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1469462923.43001,
 								["amount"] = -4555,
+								["spellid"] = 93168,
 								["srcname"] = "Anshal",
 								["hp"] = 9292,
-								["spellid"] = 93168,
 							}, -- [1]
 							{
 								["ts"] = 1469462923.74702,
 								["amount"] = -2498,
+								["spellid"] = 86081,
 								["srcname"] = "Nezir",
 								["hp"] = 6794,
-								["spellid"] = 86081,
 							}, -- [2]
 							{
 								["ts"] = 1469462924.42403,
 								["amount"] = -5074,
+								["spellid"] = 93168,
 								["srcname"] = "Anshal",
 								["hp"] = 1720,
-								["spellid"] = 93168,
 							}, -- [3]
 							{
 								["ts"] = 1469462925.44004,
 								["amount"] = -2399,
+								["spellid"] = 88163,
 								["srcname"] = "Nezir",
 								["hp"] = 1720,
-								["spellid"] = 88163,
 							}, -- [4]
 							{
 								["ts"] = 1469462925.44005,
 								["amount"] = -5374,
+								["spellid"] = 93168,
 								["srcname"] = "Anshal",
 								["hp"] = 1,
-								["spellid"] = 93168,
 							}, -- [5]
 							{
 								["spellname"] = "Orig dies",
@@ -511,65 +511,65 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1469462918.65407,
 								["amount"] = -948,
+								["spellid"] = 86111,
 								["srcname"] = "Ice Patch",
 								["hp"] = 35506,
-								["spellid"] = 86111,
 							}, -- [7]
 							{
 								["ts"] = 1469462919.39208,
 								["amount"] = -2756,
+								["spellid"] = 93168,
 								["srcname"] = "Anshal",
 								["hp"] = 32750,
-								["spellid"] = 93168,
 							}, -- [8]
 							{
 								["ts"] = 1469462919.42809,
 								["amount"] = -2136,
+								["spellid"] = 88163,
 								["srcname"] = "Nezir",
 								["hp"] = 32750,
-								["spellid"] = 88163,
 							}, -- [9]
 							{
 								["ts"] = 1469462919.5251,
 								["amount"] = -693,
+								["spellid"] = 84645,
 								["srcname"] = "Nezir",
 								["hp"] = 29921,
-								["spellid"] = 84645,
 							}, -- [10]
 							{
 								["ts"] = 1469462920.40711,
 								["amount"] = -3164,
+								["spellid"] = 93168,
 								["srcname"] = "Anshal",
 								["hp"] = 26757,
-								["spellid"] = 93168,
 							}, -- [11]
 							{
 								["ts"] = 1469462921.42312,
 								["amount"] = -3600,
+								["spellid"] = 93168,
 								["srcname"] = "Anshal",
 								["hp"] = 23157,
-								["spellid"] = 93168,
 							}, -- [12]
 							{
 								["ts"] = 1469462921.74313,
 								["amount"] = -2594,
+								["spellid"] = 86081,
 								["srcname"] = "Nezir",
 								["hp"] = 20563,
-								["spellid"] = 86081,
 							}, -- [13]
 							{
 								["ts"] = 1469462922.40514,
 								["amount"] = -4065,
+								["spellid"] = 93168,
 								["srcname"] = "Anshal",
 								["hp"] = 16498,
-								["spellid"] = 93168,
 							}, -- [14]
 							{
 								["ts"] = 1469462922.76415,
 								["amount"] = -2651,
+								["spellid"] = 86081,
 								["srcname"] = "Nezir",
 								["hp"] = 13847,
-								["spellid"] = 86081,
 							}, -- [15]
 							["pos"] = 7,
 						},
@@ -581,30 +581,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1469462698.95801,
 								["amount"] = -3306,
+								["spellid"] = 93166,
 								["srcname"] = "Rohash",
 								["hp"] = 15875,
-								["spellid"] = 93166,
 							}, -- [1]
 							{
 								["ts"] = 1469462699.51202,
 								["amount"] = -10574,
+								["spellid"] = 86367,
 								["srcname"] = "Nezir",
 								["hp"] = 5301,
-								["spellid"] = 86367,
 							}, -- [2]
 							{
 								["ts"] = 1469462699.94803,
 								["amount"] = -3398,
+								["spellid"] = 93166,
 								["srcname"] = "Rohash",
 								["hp"] = 1903,
-								["spellid"] = 93166,
 							}, -- [3]
 							{
 								["ts"] = 1469462700.54504,
 								["amount"] = -11198,
+								["spellid"] = 86367,
 								["srcname"] = "Nezir",
 								["hp"] = 1,
-								["spellid"] = 86367,
 							}, -- [4]
 							{
 								["spellname"] = "Orig dies",
@@ -615,72 +615,72 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1469462693.92806,
 								["amount"] = -2847,
+								["spellid"] = 93166,
 								["srcname"] = "Rohash",
 								["hp"] = 84769,
-								["spellid"] = 93166,
 							}, -- [6]
 							{
 								["ts"] = 1469462694.51007,
 								["amount"] = -10552,
+								["spellid"] = 86367,
 								["srcname"] = "Nezir",
 								["hp"] = 74217,
-								["spellid"] = 86367,
 							}, -- [7]
 							{
 								["ts"] = 1469462694.92508,
 								["amount"] = -2939,
+								["spellid"] = 93166,
 								["srcname"] = "Rohash",
 								["hp"] = 71278,
-								["spellid"] = 93166,
 							}, -- [8]
 							{
 								["ts"] = 1469462695.52909,
 								["amount"] = -10346,
+								["spellid"] = 86367,
 								["srcname"] = "Nezir",
 								["hp"] = 60932,
-								["spellid"] = 86367,
 							}, -- [9]
 							{
 								["ts"] = 1469462695.9351,
 								["amount"] = -3031,
+								["spellid"] = 93166,
 								["srcname"] = "Rohash",
 								["hp"] = 57901,
-								["spellid"] = 93166,
 							}, -- [10]
 							{
 								["ts"] = 1469462696.51911,
 								["amount"] = -10802,
+								["spellid"] = 86367,
 								["srcname"] = "Nezir",
 								["hp"] = 47099,
-								["spellid"] = 86367,
 							}, -- [11]
 							{
 								["ts"] = 1469462696.93112,
 								["amount"] = -3123,
+								["spellid"] = 93166,
 								["srcname"] = "Rohash",
 								["hp"] = 43976,
-								["spellid"] = 93166,
 							}, -- [12]
 							{
 								["ts"] = 1469462697.51913,
 								["amount"] = -10865,
+								["spellid"] = 86367,
 								["srcname"] = "Nezir",
 								["hp"] = 33111,
-								["spellid"] = 86367,
 							}, -- [13]
 							{
 								["ts"] = 1469462697.94414,
 								["amount"] = -3214,
+								["spellid"] = 93166,
 								["srcname"] = "Rohash",
 								["hp"] = 29897,
-								["spellid"] = 93166,
 							}, -- [14]
 							{
 								["ts"] = 1469462698.51915,
 								["amount"] = -10716,
+								["spellid"] = 86367,
 								["srcname"] = "Nezir",
 								["hp"] = 19181,
-								["spellid"] = 86367,
 							}, -- [15]
 							["pos"] = 6,
 						},
@@ -692,93 +692,93 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1469462502.65101,
 								["amount"] = -918,
+								["hp"] = 18692,
 								["spellid"] = 93166,
 								["srcname"] = "Rohash",
-								["hp"] = 18692,
 							}, -- [1]
 							{
 								["ts"] = 1469462503.64802,
 								["amount"] = -1010,
+								["hp"] = 17682,
 								["spellid"] = 93166,
 								["srcname"] = "Rohash",
-								["hp"] = 17682,
 							}, -- [2]
 							{
 								["ts"] = 1469462504.64203,
 								["amount"] = -1103,
+								["spellid"] = 93166,
 								["srcname"] = "Rohash",
 								["hp"] = 16579,
-								["spellid"] = 93166,
 							}, -- [3]
 							{
 								["ts"] = 1469462504.70304,
 								["amount"] = -2623,
+								["spellid"] = 88163,
 								["srcname"] = "Anshal",
 								["hp"] = 16579,
-								["spellid"] = 88163,
 							}, -- [4]
 							{
 								["ts"] = 1469462505.65105,
 								["amount"] = -1195,
+								["spellid"] = 93166,
 								["srcname"] = "Rohash",
 								["hp"] = 12761,
-								["spellid"] = 93166,
 							}, -- [5]
 							{
 								["ts"] = 1469462506.65906,
 								["amount"] = -1286,
+								["spellid"] = 93166,
 								["srcname"] = "Rohash",
 								["hp"] = 11475,
-								["spellid"] = 93166,
 							}, -- [6]
 							{
 								["ts"] = 1469462506.69807,
 								["amount"] = -2729,
+								["spellid"] = 88163,
 								["srcname"] = "Anshal",
 								["hp"] = 11475,
-								["spellid"] = 88163,
 							}, -- [7]
 							{
 								["ts"] = 1469462507.66608,
 								["amount"] = -1378,
+								["spellid"] = 93166,
 								["srcname"] = "Rohash",
 								["hp"] = 7368,
-								["spellid"] = 93166,
 							}, -- [8]
 							{
 								["ts"] = 1469462508.66609,
 								["amount"] = -1470,
+								["spellid"] = 93166,
 								["srcname"] = "Rohash",
 								["hp"] = 5898,
-								["spellid"] = 93166,
 							}, -- [9]
 							{
 								["ts"] = 1469462509.6711,
 								["amount"] = -1561,
+								["spellid"] = 93166,
 								["srcname"] = "Rohash",
 								["hp"] = 4337,
-								["spellid"] = 93166,
 							}, -- [10]
 							{
 								["ts"] = 1469462510.67611,
 								["amount"] = -1653,
+								["spellid"] = 93166,
 								["srcname"] = "Rohash",
 								["hp"] = 2684,
-								["spellid"] = 93166,
 							}, -- [11]
 							{
 								["ts"] = 1469462511.68412,
 								["amount"] = -1745,
+								["spellid"] = 93166,
 								["srcname"] = "Rohash",
 								["hp"] = 939,
-								["spellid"] = 93166,
 							}, -- [12]
 							{
 								["ts"] = 1469462512.71213,
 								["amount"] = -1837,
+								["spellid"] = 93166,
 								["srcname"] = "Rohash",
 								["hp"] = 1,
-								["spellid"] = 93166,
 							}, -- [13]
 							{
 								["spellname"] = "Orig dies",
@@ -789,9 +789,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1469462501.63315,
 								["amount"] = -827,
+								["spellid"] = 93166,
 								["srcname"] = "Rohash",
 								["hp"] = 19610,
-								["spellid"] = 93166,
 							}, -- [15]
 							["pos"] = 15,
 						},
@@ -799,18 +799,7 @@ SkadaPerCharDB = {
 					}, -- [3]
 				},
 				["damagetaken"] = 2229038,
-				["power"] = {
-					[12] = {
-						["spells"] = {
-							[157558] = 2,
-							[115399] = 4,
-							[121283] = 43,
-							[115695] = 8,
-							[100780] = 212,
-						},
-						["amount"] = 269,
-					},
-				},
+				["shielding"] = 0,
 				["id"] = "Player-1169-076A3790",
 				["maxhp"] = 267840,
 				["healing"] = 662129,
@@ -1128,7 +1117,6 @@ SkadaPerCharDB = {
 				["alertDamage"] = 10189,
 				["name"] = "Orig",
 				["alertCount"] = 2,
-				["shielding"] = 0,
 				["deathlog"] = {
 					{
 						["ts"] = 1470667098.69,
@@ -1147,9 +1135,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1470667093.458,
 						["amount"] = -3283,
+						["hp"] = 205743,
 						["spellid"] = 88858,
 						["srcname"] = "Al'Akir",
-						["hp"] = 205743,
 					}, -- [3]
 					{
 						["spellid"] = 89667,
@@ -1178,9 +1166,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1470667094.52,
 						["amount"] = -2057,
+						["spellid"] = 89641,
 						["srcname"] = "Al'Akir",
 						["hp"] = 191306,
-						["spellid"] = 89641,
 					}, -- [8]
 					{
 						["ts"] = 1470667094.691,
@@ -1219,9 +1207,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1470667097.52,
 						["amount"] = -2141,
+						["hp"] = 181964,
 						["spellid"] = 89641,
 						["srcname"] = "Al'Akir",
-						["hp"] = 181964,
 					}, -- [14]
 					{
 						["spellid"] = 89667,
@@ -1230,6 +1218,18 @@ SkadaPerCharDB = {
 						["amount"] = -3828,
 					}, -- [15]
 					["pos"] = 2,
+				},
+				["power"] = {
+					[12] = {
+						["spells"] = {
+							[157558] = 2,
+							[115399] = 4,
+							[121283] = 43,
+							[115695] = 8,
+							[100780] = 212,
+						},
+						["amount"] = 269,
+					},
 				},
 				["alert"] = {
 					["Low"] = {
@@ -1458,31 +1458,7 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["damagetaken"] = 12412,
-				["deathlog"] = {
-					{
-						["ts"] = 1468898493.634,
-						["amount"] = -6206,
-						["spellid"] = 121673,
-						["srcname"] = "Salyin Skirmisher",
-						["hp"] = 40687,
-					}, -- [1]
-					{
-						["ts"] = 1468898498.359,
-						["amount"] = -6206,
-						["spellid"] = 121673,
-						["srcname"] = "Salyin Skirmisher",
-						["hp"] = 34481,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 12412,
-						["spellid"] = 48743,
-						["srcname"] = "Cyraah-Aegwynn",
-						["hp"] = 46893,
-						["ts"] = 1468898515.65,
-					}, -- [3]
-					["pos"] = 4,
-				},
+				["shielding"] = 0,
 				["id"] = "Player-1136-04F138A1",
 				["maxhp"] = 46893,
 				["healing"] = 12412,
@@ -1515,8 +1491,32 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Cyraah",
 				["alertCount"] = 0,
-				["shielding"] = 0,
 				["power"] = {
+				},
+				["deathlog"] = {
+					{
+						["ts"] = 1468898493.634,
+						["amount"] = -6206,
+						["hp"] = 40687,
+						["spellid"] = 121673,
+						["srcname"] = "Salyin Skirmisher",
+					}, -- [1]
+					{
+						["ts"] = 1468898498.359,
+						["amount"] = -6206,
+						["hp"] = 34481,
+						["spellid"] = 121673,
+						["srcname"] = "Salyin Skirmisher",
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 12412,
+						["spellid"] = 48743,
+						["srcname"] = "Cyraah-Aegwynn",
+						["hp"] = 46893,
+						["ts"] = 1468898515.65,
+					}, -- [3]
+					["pos"] = 4,
 				},
 				["alert"] = {
 				},
@@ -1558,10 +1558,10 @@ SkadaPerCharDB = {
 						["damage"] = 894,
 					},
 				},
-				["shielding"] = 0,
-				["damagetaken"] = 0,
-				["deathlog"] = {
+				["power"] = {
 				},
+				["damagetaken"] = 0,
+				["shielding"] = 0,
 				["id"] = "Army of the Dead",
 				["maxhp"] = 0,
 				["healing"] = 0,
@@ -1572,7 +1572,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Army of the Dead",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 				},
@@ -1602,10 +1602,9 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-3132-754-4396-69792-00001637BA",
 				["maxhp"] = 0,
@@ -1617,7 +1616,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Earth Spirit",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 				},
 				["alert"] = {
@@ -1646,10 +1646,9 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-3132-754-4396-69791-00001637BA",
 				["maxhp"] = 0,
@@ -1661,7 +1660,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Fire Spirit",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 				},
 				["alert"] = {
@@ -1690,10 +1690,9 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-3132-754-4396-69792-0000163843",
 				["maxhp"] = 0,
@@ -1705,7 +1704,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Earth Spirit",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 				},
 				["alert"] = {
@@ -1734,10 +1734,9 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-3132-754-4396-69791-0000163843",
 				["maxhp"] = 0,
@@ -1749,7 +1748,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Fire Spirit",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 				},
 				["alert"] = {
@@ -1778,10 +1778,9 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-3132-754-4396-69792-000016388B",
 				["maxhp"] = 0,
@@ -1793,7 +1792,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Earth Spirit",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 				},
 				["alert"] = {
@@ -1822,10 +1822,9 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-3132-754-4396-69791-000016388B",
 				["maxhp"] = 0,
@@ -1837,7 +1836,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Fire Spirit",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 				},
 				["alert"] = {
@@ -1866,10 +1866,9 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-3132-754-4396-69792-000016391D",
 				["maxhp"] = 0,
@@ -1881,7 +1880,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Earth Spirit",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 				},
 				["alert"] = {
@@ -1910,10 +1910,9 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-3132-754-4396-69791-000016391D",
 				["maxhp"] = 0,
@@ -1925,7 +1924,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Fire Spirit",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 				},
 				["alert"] = {
@@ -1954,10 +1954,9 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-3132-754-4396-69792-0000163984",
 				["maxhp"] = 0,
@@ -1969,7 +1968,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Earth Spirit",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 				},
 				["alert"] = {
@@ -1998,10 +1998,9 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-3132-754-4396-69791-0000163984",
 				["maxhp"] = 0,
@@ -2013,7 +2012,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Fire Spirit",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 				},
 				["alert"] = {
@@ -2042,10 +2042,9 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-3132-754-4396-69792-00001639BA",
 				["maxhp"] = 0,
@@ -2057,7 +2056,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Earth Spirit",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 				},
 				["alert"] = {
@@ -2086,10 +2086,9 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-3132-754-4396-69791-00001639BA",
 				["maxhp"] = 0,
@@ -2101,7 +2100,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Fire Spirit",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 				},
 				["alert"] = {
@@ -2130,10 +2130,9 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-3132-754-4396-69792-0000163A73",
 				["maxhp"] = 0,
@@ -2145,7 +2144,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Earth Spirit",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 				},
 				["alert"] = {
@@ -2174,10 +2174,9 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Creature-0-3132-754-4396-69791-0000163A73",
 				["maxhp"] = 0,
@@ -2189,7 +2188,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Fire Spirit",
 				["alertCount"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["healingspells"] = {
 				},
 				["alert"] = {
@@ -3101,6 +3101,14 @@ SkadaPerCharDB = {
 				["done"] = 876267,
 				["htaken"] = 3765430,
 				["htakenspell"] = {
+					["Zephyr"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 342000,
+						["hits"] = 18,
+					},
 					["Soothing Breeze"] = {
 						["min"] = 0,
 						["crits"] = 0,
@@ -3116,14 +3124,6 @@ SkadaPerCharDB = {
 						["healing"] = 2720230,
 						["overhealing"] = 24925376,
 						["hits"] = 1,
-					},
-					["Zephyr"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 342000,
-						["hits"] = 18,
 					},
 				},
 			},
@@ -3461,11 +3461,11 @@ SkadaPerCharDB = {
 							["uptime"] = 11,
 							["auratype"] = "BUFF",
 						},
-						["Eye of the Tiger"] = {
-							["name"] = "Eye of the Tiger",
-							["active"] = 1,
-							["id"] = 196608,
-							["uptime"] = 71,
+						["Orig: Hit Combo"] = {
+							["name"] = "Orig: Hit Combo",
+							["active"] = 2,
+							["id"] = 196741,
+							["uptime"] = 69,
 							["auratype"] = "BUFF",
 						},
 						["Mark of Warsong"] = {
@@ -3482,12 +3482,12 @@ SkadaPerCharDB = {
 							["uptime"] = 22,
 							["auratype"] = "BUFF",
 						},
-						["Serenity"] = {
-							["name"] = "Serenity",
+						["Eye of the Tiger"] = {
+							["name"] = "Eye of the Tiger",
 							["active"] = 1,
-							["id"] = 89750,
-							["uptime"] = 1,
-							["auratype"] = "DEBUFF",
+							["id"] = 196608,
+							["uptime"] = 71,
+							["auratype"] = "BUFF",
 						},
 						["Orig: Mortal Wounds"] = {
 							["name"] = "Orig: Mortal Wounds",
@@ -3559,12 +3559,12 @@ SkadaPerCharDB = {
 							["uptime"] = 6,
 							["auratype"] = "DEBUFF",
 						},
-						["Orig: Hit Combo"] = {
-							["name"] = "Orig: Hit Combo",
-							["active"] = 2,
-							["id"] = 196741,
-							["uptime"] = 69,
-							["auratype"] = "BUFF",
+						["Serenity"] = {
+							["name"] = "Serenity",
+							["active"] = 1,
+							["id"] = 89750,
+							["uptime"] = 1,
+							["auratype"] = "DEBUFF",
 						},
 					},
 					["role"] = "NONE",
@@ -4240,21 +4240,6 @@ SkadaPerCharDB = {
 					["first"] = 1470666926,
 					["dispells"] = 0,
 					["damagetakenspells"] = {
-						["Chilling Winds"] = {
-							["crushing"] = 0,
-							["id"] = 93163,
-							["damage"] = 9734,
-							["max"] = 1286,
-							["name"] = "Chilling Winds",
-							["min"] = 91,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 15,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-						},
 						["Permafrost"] = {
 							["crushing"] = 0,
 							["id"] = 86081,
@@ -4266,6 +4251,21 @@ SkadaPerCharDB = {
 							["critical"] = 0,
 							["blocked"] = 0,
 							["totalhits"] = 6,
+							["resisted"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+						},
+						["Ice Patch"] = {
+							["crushing"] = 0,
+							["id"] = 86111,
+							["damage"] = 3454,
+							["max"] = 1203,
+							["name"] = "Ice Patch",
+							["min"] = 1114,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 3,
 							["resisted"] = 0,
 							["glancing"] = 0,
 							["absorbed"] = 0,
@@ -4285,17 +4285,17 @@ SkadaPerCharDB = {
 							["glancing"] = 0,
 							["absorbed"] = 0,
 						},
-						["Ice Patch"] = {
+						["Chilling Winds"] = {
 							["crushing"] = 0,
-							["id"] = 86111,
-							["damage"] = 3454,
-							["max"] = 1203,
-							["name"] = "Ice Patch",
-							["min"] = 1114,
+							["id"] = 93163,
+							["damage"] = 9734,
+							["max"] = 1286,
+							["name"] = "Chilling Winds",
+							["min"] = 91,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
-							["totalhits"] = 3,
+							["totalhits"] = 15,
 							["resisted"] = 0,
 							["glancing"] = 0,
 							["absorbed"] = 0,
@@ -5826,9 +5826,7 @@ SkadaPerCharDB = {
 			["interrupts"] = 0,
 			["multistrikes"] = 0,
 			["damagetaken"] = 308055,
-			["power"] = {
-				[12] = 46,
-			},
+			["mobtaken"] = 21112392,
 			["damage"] = 21112392,
 			["players"] = {
 				{
@@ -6414,7 +6412,9 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["gotboss"] = true,
+			["power"] = {
+				[12] = 46,
+			},
 			["alertCount"] = 1,
 			["healing"] = 158360,
 			["overhealing"] = 0,
@@ -6423,7 +6423,7 @@ SkadaPerCharDB = {
 			["shielding"] = 0,
 			["name"] = "Al'Akir",
 			["mobname"] = "Al'Akir",
-			["mobtaken"] = 21112392,
+			["gotboss"] = true,
 			["mobhdone"] = 0,
 			["last_action"] = 1469463090,
 			["endtime"] = 1469463185,
@@ -6437,9 +6437,7 @@ SkadaPerCharDB = {
 			["interrupts"] = 0,
 			["multistrikes"] = 0,
 			["damagetaken"] = 183102,
-			["power"] = {
-				[12] = 21,
-			},
+			["mobtaken"] = 11969947,
 			["damage"] = 11969947,
 			["players"] = {
 				{
@@ -6614,21 +6612,6 @@ SkadaPerCharDB = {
 					["maxhp"] = 267840,
 					["healing"] = 52492,
 					["damagetakenspells"] = {
-						["Chilling Winds"] = {
-							["crushing"] = 0,
-							["id"] = 93163,
-							["damage"] = 9739,
-							["max"] = 1286,
-							["name"] = "Chilling Winds",
-							["glancing"] = 0,
-							["multistrike"] = 0,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["totalhits"] = 15,
-							["resisted"] = 0,
-							["min"] = 92,
-							["absorbed"] = 0,
-						},
 						["Permafrost"] = {
 							["crushing"] = 0,
 							["id"] = 86081,
@@ -6642,6 +6625,21 @@ SkadaPerCharDB = {
 							["totalhits"] = 6,
 							["resisted"] = 0,
 							["min"] = 2325,
+							["absorbed"] = 0,
+						},
+						["Ice Patch"] = {
+							["crushing"] = 0,
+							["id"] = 86111,
+							["damage"] = 4385,
+							["max"] = 1171,
+							["name"] = "Ice Patch",
+							["glancing"] = 0,
+							["multistrike"] = 0,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["totalhits"] = 4,
+							["resisted"] = 0,
+							["min"] = 1014,
 							["absorbed"] = 0,
 						},
 						["Slicing Gale"] = {
@@ -6659,19 +6657,19 @@ SkadaPerCharDB = {
 							["min"] = 1488,
 							["absorbed"] = 0,
 						},
-						["Ice Patch"] = {
+						["Chilling Winds"] = {
 							["crushing"] = 0,
-							["id"] = 86111,
-							["damage"] = 4385,
-							["max"] = 1171,
-							["name"] = "Ice Patch",
+							["id"] = 93163,
+							["damage"] = 9739,
+							["max"] = 1286,
+							["name"] = "Chilling Winds",
 							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
-							["totalhits"] = 4,
+							["totalhits"] = 15,
 							["resisted"] = 0,
-							["min"] = 1014,
+							["min"] = 92,
 							["absorbed"] = 0,
 						},
 						["Withering Winds"] = {
@@ -6965,7 +6963,9 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["gotboss"] = true,
+			["power"] = {
+				[12] = 21,
+			},
 			["alertCount"] = 0,
 			["healing"] = 52492,
 			["overhealing"] = 0,
@@ -6974,7 +6974,7 @@ SkadaPerCharDB = {
 			["shielding"] = 0,
 			["name"] = "Conclave of Wind (4)",
 			["mobname"] = "Conclave of Wind",
-			["mobtaken"] = 11969947,
+			["gotboss"] = true,
 			["mobhdone"] = 208000,
 			["last_action"] = 1469462966,
 			["endtime"] = 1469463034,
@@ -6988,9 +6988,7 @@ SkadaPerCharDB = {
 			["interrupts"] = 0,
 			["multistrikes"] = 0,
 			["damagetaken"] = 388110,
-			["power"] = {
-				[12] = 36,
-			},
+			["mobtaken"] = 18322156,
 			["damage"] = 18322156,
 			["players"] = {
 				{
@@ -7266,37 +7264,37 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1469462923.43001,
 									["amount"] = -4555,
+									["spellid"] = 93168,
 									["srcname"] = "Anshal",
 									["hp"] = 9292,
-									["spellid"] = 93168,
 								}, -- [1]
 								{
 									["ts"] = 1469462923.74702,
 									["amount"] = -2498,
+									["spellid"] = 86081,
 									["srcname"] = "Nezir",
 									["hp"] = 6794,
-									["spellid"] = 86081,
 								}, -- [2]
 								{
 									["ts"] = 1469462924.42403,
 									["amount"] = -5074,
+									["spellid"] = 93168,
 									["srcname"] = "Anshal",
 									["hp"] = 1720,
-									["spellid"] = 93168,
 								}, -- [3]
 								{
 									["ts"] = 1469462925.44004,
 									["amount"] = -2399,
+									["spellid"] = 88163,
 									["srcname"] = "Nezir",
 									["hp"] = 1720,
-									["spellid"] = 88163,
 								}, -- [4]
 								{
 									["ts"] = 1469462925.44005,
 									["amount"] = -5374,
+									["spellid"] = 93168,
 									["srcname"] = "Anshal",
 									["hp"] = 1,
-									["spellid"] = 93168,
 								}, -- [5]
 								{
 									["spellname"] = "Orig dies",
@@ -7307,65 +7305,65 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1469462918.65407,
 									["amount"] = -948,
+									["spellid"] = 86111,
 									["srcname"] = "Ice Patch",
 									["hp"] = 35506,
-									["spellid"] = 86111,
 								}, -- [7]
 								{
 									["ts"] = 1469462919.39208,
 									["amount"] = -2756,
+									["spellid"] = 93168,
 									["srcname"] = "Anshal",
 									["hp"] = 32750,
-									["spellid"] = 93168,
 								}, -- [8]
 								{
 									["ts"] = 1469462919.42809,
 									["amount"] = -2136,
+									["spellid"] = 88163,
 									["srcname"] = "Nezir",
 									["hp"] = 32750,
-									["spellid"] = 88163,
 								}, -- [9]
 								{
 									["ts"] = 1469462919.5251,
 									["amount"] = -693,
+									["spellid"] = 84645,
 									["srcname"] = "Nezir",
 									["hp"] = 29921,
-									["spellid"] = 84645,
 								}, -- [10]
 								{
 									["ts"] = 1469462920.40711,
 									["amount"] = -3164,
+									["spellid"] = 93168,
 									["srcname"] = "Anshal",
 									["hp"] = 26757,
-									["spellid"] = 93168,
 								}, -- [11]
 								{
 									["ts"] = 1469462921.42312,
 									["amount"] = -3600,
+									["spellid"] = 93168,
 									["srcname"] = "Anshal",
 									["hp"] = 23157,
-									["spellid"] = 93168,
 								}, -- [12]
 								{
 									["ts"] = 1469462921.74313,
 									["amount"] = -2594,
+									["spellid"] = 86081,
 									["srcname"] = "Nezir",
 									["hp"] = 20563,
-									["spellid"] = 86081,
 								}, -- [13]
 								{
 									["ts"] = 1469462922.40514,
 									["amount"] = -4065,
+									["spellid"] = 93168,
 									["srcname"] = "Anshal",
 									["hp"] = 16498,
-									["spellid"] = 93168,
 								}, -- [14]
 								{
 									["ts"] = 1469462922.76415,
 									["amount"] = -2651,
+									["spellid"] = 86081,
 									["srcname"] = "Nezir",
 									["hp"] = 13847,
-									["spellid"] = 86081,
 								}, -- [15]
 								["pos"] = 7,
 							},
@@ -7829,6 +7827,14 @@ SkadaPerCharDB = {
 					["done"] = 201083,
 					["htaken"] = 3094630,
 					["htakenspell"] = {
+						["Gather Strength"] = {
+							["min"] = 2720230,
+							["crits"] = 0,
+							["max"] = 2720230,
+							["healing"] = 2720230,
+							["overhealing"] = 24925376,
+							["hits"] = 1,
+						},
 						["Soothing Breeze"] = {
 							["min"] = 0,
 							["crits"] = 0,
@@ -7844,14 +7850,6 @@ SkadaPerCharDB = {
 							["healing"] = 0,
 							["overhealing"] = 285000,
 							["hits"] = 15,
-						},
-						["Gather Strength"] = {
-							["min"] = 2720230,
-							["crits"] = 0,
-							["max"] = 2720230,
-							["healing"] = 2720230,
-							["overhealing"] = 24925376,
-							["hits"] = 1,
 						},
 					},
 				},
@@ -7890,7 +7888,9 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["gotboss"] = true,
+			["power"] = {
+				[12] = 36,
+			},
 			["alertCount"] = 0,
 			["healing"] = 114217,
 			["overhealing"] = 0,
@@ -7899,7 +7899,7 @@ SkadaPerCharDB = {
 			["shielding"] = 0,
 			["name"] = "Conclave of Wind (3)",
 			["mobname"] = "Conclave of Wind",
-			["mobtaken"] = 18322156,
+			["gotboss"] = true,
 			["mobhdone"] = 10745476,
 			["last_action"] = 1469462770,
 			["endtime"] = 1469462926,
@@ -7913,9 +7913,7 @@ SkadaPerCharDB = {
 			["interrupts"] = 0,
 			["multistrikes"] = 0,
 			["damagetaken"] = 345192,
-			["power"] = {
-				[12] = 30,
-			},
+			["mobtaken"] = 13383188,
 			["damage"] = 13383188,
 			["players"] = {
 				{
@@ -8266,30 +8264,30 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1469462698.95801,
 									["amount"] = -3306,
+									["spellid"] = 93166,
 									["srcname"] = "Rohash",
 									["hp"] = 15875,
-									["spellid"] = 93166,
 								}, -- [1]
 								{
 									["ts"] = 1469462699.51202,
 									["amount"] = -10574,
+									["spellid"] = 86367,
 									["srcname"] = "Nezir",
 									["hp"] = 5301,
-									["spellid"] = 86367,
 								}, -- [2]
 								{
 									["ts"] = 1469462699.94803,
 									["amount"] = -3398,
+									["spellid"] = 93166,
 									["srcname"] = "Rohash",
 									["hp"] = 1903,
-									["spellid"] = 93166,
 								}, -- [3]
 								{
 									["ts"] = 1469462700.54504,
 									["amount"] = -11198,
+									["spellid"] = 86367,
 									["srcname"] = "Nezir",
 									["hp"] = 1,
-									["spellid"] = 86367,
 								}, -- [4]
 								{
 									["spellname"] = "Orig dies",
@@ -8300,72 +8298,72 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1469462693.92806,
 									["amount"] = -2847,
+									["spellid"] = 93166,
 									["srcname"] = "Rohash",
 									["hp"] = 84769,
-									["spellid"] = 93166,
 								}, -- [6]
 								{
 									["ts"] = 1469462694.51007,
 									["amount"] = -10552,
+									["spellid"] = 86367,
 									["srcname"] = "Nezir",
 									["hp"] = 74217,
-									["spellid"] = 86367,
 								}, -- [7]
 								{
 									["ts"] = 1469462694.92508,
 									["amount"] = -2939,
+									["spellid"] = 93166,
 									["srcname"] = "Rohash",
 									["hp"] = 71278,
-									["spellid"] = 93166,
 								}, -- [8]
 								{
 									["ts"] = 1469462695.52909,
 									["amount"] = -10346,
+									["spellid"] = 86367,
 									["srcname"] = "Nezir",
 									["hp"] = 60932,
-									["spellid"] = 86367,
 								}, -- [9]
 								{
 									["ts"] = 1469462695.9351,
 									["amount"] = -3031,
+									["spellid"] = 93166,
 									["srcname"] = "Rohash",
 									["hp"] = 57901,
-									["spellid"] = 93166,
 								}, -- [10]
 								{
 									["ts"] = 1469462696.51911,
 									["amount"] = -10802,
+									["spellid"] = 86367,
 									["srcname"] = "Nezir",
 									["hp"] = 47099,
-									["spellid"] = 86367,
 								}, -- [11]
 								{
 									["ts"] = 1469462696.93112,
 									["amount"] = -3123,
+									["spellid"] = 93166,
 									["srcname"] = "Rohash",
 									["hp"] = 43976,
-									["spellid"] = 93166,
 								}, -- [12]
 								{
 									["ts"] = 1469462697.51913,
 									["amount"] = -10865,
+									["spellid"] = 86367,
 									["srcname"] = "Nezir",
 									["hp"] = 33111,
-									["spellid"] = 86367,
 								}, -- [13]
 								{
 									["ts"] = 1469462697.94414,
 									["amount"] = -3214,
+									["spellid"] = 93166,
 									["srcname"] = "Rohash",
 									["hp"] = 29897,
-									["spellid"] = 93166,
 								}, -- [14]
 								{
 									["ts"] = 1469462698.51915,
 									["amount"] = -10716,
+									["spellid"] = 86367,
 									["srcname"] = "Nezir",
 									["hp"] = 19181,
-									["spellid"] = 86367,
 								}, -- [15]
 								["pos"] = 6,
 							},
@@ -8792,7 +8790,9 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["gotboss"] = true,
+			["power"] = {
+				[12] = 30,
+			},
 			["alertCount"] = 1,
 			["healing"] = 65417,
 			["overhealing"] = 0,
@@ -8801,7 +8801,7 @@ SkadaPerCharDB = {
 			["shielding"] = 0,
 			["name"] = "Conclave of Wind (2)",
 			["mobname"] = "Conclave of Wind",
-			["mobtaken"] = 13383188,
+			["gotboss"] = true,
 			["mobhdone"] = 7994046,
 			["last_action"] = 1469462591,
 			["endtime"] = 1469462702,
@@ -8815,9 +8815,7 @@ SkadaPerCharDB = {
 			["interrupts"] = 0,
 			["multistrikes"] = 0,
 			["damagetaken"] = 271378,
-			["power"] = {
-				[12] = 20,
-			},
+			["mobtaken"] = 9179756,
 			["damage"] = 9179756,
 			["players"] = {
 				{
@@ -9039,93 +9037,93 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1469462502.65101,
 									["amount"] = -918,
+									["hp"] = 18692,
 									["spellid"] = 93166,
 									["srcname"] = "Rohash",
-									["hp"] = 18692,
 								}, -- [1]
 								{
 									["ts"] = 1469462503.64802,
 									["amount"] = -1010,
+									["hp"] = 17682,
 									["spellid"] = 93166,
 									["srcname"] = "Rohash",
-									["hp"] = 17682,
 								}, -- [2]
 								{
 									["ts"] = 1469462504.64203,
 									["amount"] = -1103,
+									["spellid"] = 93166,
 									["srcname"] = "Rohash",
 									["hp"] = 16579,
-									["spellid"] = 93166,
 								}, -- [3]
 								{
 									["ts"] = 1469462504.70304,
 									["amount"] = -2623,
+									["spellid"] = 88163,
 									["srcname"] = "Anshal",
 									["hp"] = 16579,
-									["spellid"] = 88163,
 								}, -- [4]
 								{
 									["ts"] = 1469462505.65105,
 									["amount"] = -1195,
+									["spellid"] = 93166,
 									["srcname"] = "Rohash",
 									["hp"] = 12761,
-									["spellid"] = 93166,
 								}, -- [5]
 								{
 									["ts"] = 1469462506.65906,
 									["amount"] = -1286,
+									["spellid"] = 93166,
 									["srcname"] = "Rohash",
 									["hp"] = 11475,
-									["spellid"] = 93166,
 								}, -- [6]
 								{
 									["ts"] = 1469462506.69807,
 									["amount"] = -2729,
+									["spellid"] = 88163,
 									["srcname"] = "Anshal",
 									["hp"] = 11475,
-									["spellid"] = 88163,
 								}, -- [7]
 								{
 									["ts"] = 1469462507.66608,
 									["amount"] = -1378,
+									["spellid"] = 93166,
 									["srcname"] = "Rohash",
 									["hp"] = 7368,
-									["spellid"] = 93166,
 								}, -- [8]
 								{
 									["ts"] = 1469462508.66609,
 									["amount"] = -1470,
+									["spellid"] = 93166,
 									["srcname"] = "Rohash",
 									["hp"] = 5898,
-									["spellid"] = 93166,
 								}, -- [9]
 								{
 									["ts"] = 1469462509.6711,
 									["amount"] = -1561,
+									["spellid"] = 93166,
 									["srcname"] = "Rohash",
 									["hp"] = 4337,
-									["spellid"] = 93166,
 								}, -- [10]
 								{
 									["ts"] = 1469462510.67611,
 									["amount"] = -1653,
+									["spellid"] = 93166,
 									["srcname"] = "Rohash",
 									["hp"] = 2684,
-									["spellid"] = 93166,
 								}, -- [11]
 								{
 									["ts"] = 1469462511.68412,
 									["amount"] = -1745,
+									["spellid"] = 93166,
 									["srcname"] = "Rohash",
 									["hp"] = 939,
-									["spellid"] = 93166,
 								}, -- [12]
 								{
 									["ts"] = 1469462512.71213,
 									["amount"] = -1837,
+									["spellid"] = 93166,
 									["srcname"] = "Rohash",
 									["hp"] = 1,
-									["spellid"] = 93166,
 								}, -- [13]
 								{
 									["spellname"] = "Orig dies",
@@ -9136,9 +9134,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1469462501.63315,
 									["amount"] = -827,
+									["spellid"] = 93166,
 									["srcname"] = "Rohash",
 									["hp"] = 19610,
-									["spellid"] = 93166,
 								}, -- [15]
 								["pos"] = 15,
 							},
@@ -9151,19 +9149,19 @@ SkadaPerCharDB = {
 					["maxhp"] = 270480,
 					["healing"] = 0,
 					["damagetakenspells"] = {
-						["Permafrost"] = {
+						["Chilling Winds"] = {
 							["crushing"] = 0,
-							["id"] = 86081,
-							["damage"] = 16575,
-							["max"] = 2997,
-							["name"] = "Permafrost",
+							["id"] = 93163,
+							["damage"] = 15806,
+							["max"] = 1653,
+							["name"] = "Chilling Winds",
 							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
-							["totalhits"] = 6,
+							["totalhits"] = 19,
 							["resisted"] = 0,
-							["min"] = 2562,
+							["min"] = 91,
 							["absorbed"] = 0,
 						},
 						["Deafening Winds"] = {
@@ -9181,19 +9179,19 @@ SkadaPerCharDB = {
 							["min"] = 91,
 							["absorbed"] = 0,
 						},
-						["Chilling Winds"] = {
+						["Ice Patch"] = {
 							["crushing"] = 0,
-							["id"] = 93163,
-							["damage"] = 15806,
-							["max"] = 1653,
-							["name"] = "Chilling Winds",
+							["id"] = 86111,
+							["damage"] = 2379,
+							["max"] = 1198,
+							["name"] = "Ice Patch",
 							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
-							["totalhits"] = 19,
+							["totalhits"] = 2,
 							["resisted"] = 0,
-							["min"] = 91,
+							["min"] = 1181,
 							["absorbed"] = 0,
 						},
 						["Slicing Gale"] = {
@@ -9211,19 +9209,19 @@ SkadaPerCharDB = {
 							["min"] = 1418,
 							["absorbed"] = 0,
 						},
-						["Ice Patch"] = {
+						["Permafrost"] = {
 							["crushing"] = 0,
-							["id"] = 86111,
-							["damage"] = 2379,
-							["max"] = 1198,
-							["name"] = "Ice Patch",
+							["id"] = 86081,
+							["damage"] = 16575,
+							["max"] = 2997,
+							["name"] = "Permafrost",
 							["glancing"] = 0,
 							["multistrike"] = 0,
 							["critical"] = 0,
 							["blocked"] = 0,
-							["totalhits"] = 2,
+							["totalhits"] = 6,
 							["resisted"] = 0,
-							["min"] = 1181,
+							["min"] = 2562,
 							["absorbed"] = 0,
 						},
 						["Withering Winds"] = {
@@ -9515,7 +9513,9 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["gotboss"] = true,
+			["power"] = {
+				[12] = 20,
+			},
 			["alertCount"] = 0,
 			["healing"] = 0,
 			["overhealing"] = 0,
@@ -9524,7 +9524,7 @@ SkadaPerCharDB = {
 			["shielding"] = 0,
 			["name"] = "Conclave of Wind",
 			["mobname"] = "Conclave of Wind",
-			["mobtaken"] = 9179756,
+			["gotboss"] = true,
 			["mobhdone"] = 2767327,
 			["last_action"] = 1469462419,
 			["endtime"] = 1469462513,
@@ -9538,7 +9538,7 @@ SkadaPerCharDB = {
 			["interrupts"] = 0,
 			["multistrikes"] = 0,
 			["damagetaken"] = 24568,
-			["mobtaken"] = 565140,
+			["gotboss"] = true,
 			["damage"] = 565140,
 			["players"] = {
 				{
@@ -9584,11 +9584,11 @@ SkadaPerCharDB = {
 							["uptime"] = 30,
 							["auratype"] = "BUFF",
 						},
-						["Tigereye Brew"] = {
-							["name"] = "Tigereye Brew",
-							["active"] = 1,
-							["id"] = 125195,
-							["uptime"] = 32,
+						["Death Note"] = {
+							["name"] = "Death Note",
+							["active"] = 0,
+							["id"] = 121125,
+							["uptime"] = 5,
 							["auratype"] = "BUFF",
 						},
 						["Mortal Wounds"] = {
@@ -9605,12 +9605,12 @@ SkadaPerCharDB = {
 							["uptime"] = 0,
 							["auratype"] = "DEBUFF",
 						},
-						["Death Note"] = {
-							["name"] = "Death Note",
+						["Rising Sun Kick"] = {
+							["name"] = "Rising Sun Kick",
 							["active"] = 0,
-							["id"] = 121125,
-							["uptime"] = 5,
-							["auratype"] = "BUFF",
+							["id"] = 130320,
+							["uptime"] = 24,
+							["auratype"] = "DEBUFF",
 						},
 						["Crackling Jade Lightning"] = {
 							["name"] = "Crackling Jade Lightning",
@@ -9619,12 +9619,12 @@ SkadaPerCharDB = {
 							["uptime"] = 0,
 							["auratype"] = "DEBUFF",
 						},
-						["Rising Sun Kick"] = {
-							["name"] = "Rising Sun Kick",
-							["active"] = 0,
-							["id"] = 130320,
-							["uptime"] = 24,
-							["auratype"] = "DEBUFF",
+						["Tigereye Brew"] = {
+							["name"] = "Tigereye Brew",
+							["active"] = 1,
+							["id"] = 125195,
+							["uptime"] = 32,
+							["auratype"] = "BUFF",
 						},
 						["Combo Breaker: Tiger Palm"] = {
 							["name"] = "Combo Breaker: Tiger Palm",
@@ -10611,9 +10611,7 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["power"] = {
-				[12] = 14,
-			},
+			["mobtaken"] = 565140,
 			["alertCount"] = 0,
 			["healing"] = 12412,
 			["overhealing"] = 30354.91796875,
@@ -10622,7 +10620,9 @@ SkadaPerCharDB = {
 			["shielding"] = 0,
 			["name"] = "Galleon",
 			["mobname"] = "Galleon",
-			["gotboss"] = true,
+			["power"] = {
+				[12] = 14,
+			},
 			["mobhdone"] = 173072,
 			["last_action"] = 1468898490,
 			["endtime"] = 1468898526,

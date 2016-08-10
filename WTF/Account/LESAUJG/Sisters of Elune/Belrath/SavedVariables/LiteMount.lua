@@ -4,10 +4,17 @@ LM_OptionsDB = {
 	},
 	["excludedspells"] = {
 	},
+	["macro"] = {
+	},
+	["seenspells"] = {
+	},
 	["flagoverrides"] = {
+	},
+	["excludeNewMounts"] = {
 	},
 	["combatMacro"] = {
 	},
-	["macro"] = {
+	["copyTargetsMount"] = {
+		1, -- [1]
 	},
 }

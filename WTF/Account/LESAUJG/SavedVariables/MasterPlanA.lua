@@ -8,9 +8,9 @@ MasterPlanAG = {
 	},
 	["Sisters of Elune"] = {
 		["Bracnar"] = {
-			["class"] = "HUNTER",
+			["curOil"] = 61865,
 			["summary"] = {
-				["lastOilTime"] = 1470661809,
+				["lastOilTime"] = 1470796588,
 				["tt2"] = 1470664808,
 				["tt3"] = 1469579828,
 				["ti1"] = 118531,
@@ -33,34 +33,21 @@ MasterPlanAG = {
 				},
 				["ti2"] = 122486,
 			},
-			["curOil"] = 61865,
+			["faction"] = "Alliance",
 			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1469579872,
-			["curRes"] = 7917,
-			["faction"] = "Alliance",
-		},
-		["Herbinator"] = {
-			["faction"] = "Alliance",
-			["class"] = "PALADIN",
-		},
-		["Mandelbrot"] = {
-		},
-		["Galinar"] = {
-			["class"] = "PALADIN",
-			["lastCacheTime"] = 1470691780,
-			["curRes"] = 880,
-			["faction"] = "Alliance",
-		},
-		["Clothgar"] = {
-			["faction"] = "Alliance",
-			["class"] = "WARLOCK",
+			["class"] = "HUNTER",
+			["curRes"] = 8917,
+			["lastCacheTime"] = 1470799558,
 		},
 		["Ghiaccioli"] = {
-			["faction"] = "Alliance",
 			["class"] = "MAGE",
+			["faction"] = "Alliance",
+		},
+		["Mandelbrot"] = {
+			["class"] = "ROGUE",
+			["faction"] = "Alliance",
 		},
 		["Orig"] = {
-			["faction"] = "Alliance",
 			["recruitTime"] = 1468376595,
 			["summary"] = {
 				["tt2"] = 1469583752,
@@ -78,19 +65,46 @@ MasterPlanAG = {
 				},
 				["ti2"] = 122484,
 			},
+			["faction"] = "Alliance",
 			["curOil"] = 2735,
-			["lastCacheTime"] = 1470667248,
-			["curRes"] = 7716,
 			["class"] = "MONK",
+			["curRes"] = 7716,
+			["lastCacheTime"] = 1470667248,
+		},
+		["Herbinator"] = {
+			["faction"] = "Alliance",
+			["class"] = "PALADIN",
+		},
+		["Clothgar"] = {
+			["faction"] = "Alliance",
+			["class"] = "WARLOCK",
+		},
+		["Sanjuri"] = {
+			["class"] = "MONK",
+			["faction"] = "Alliance",
+		},
+		["Belrath"] = {
+			["faction"] = "Alliance",
+			["class"] = "DEATHKNIGHT",
+		},
+		["Leanara"] = {
+			["class"] = "DEMONHUNTER",
+			["faction"] = "Alliance",
+		},
+		["Galinar"] = {
+			["lastCacheTime"] = 1470801228,
+			["class"] = "PALADIN",
+			["curRes"] = 1062,
+			["faction"] = "Alliance",
 		},
 		["Uldaris"] = {
-			["class"] = "DRUID",
+			["lastCacheTime"] = 1469580598,
 			["recruitTime"] = 1464140222,
 			["summary"] = {
 				["tt2"] = 1469583510,
 				["tt3"] = 1469242109,
-				["ti1"] = 118529,
 				["tt1"] = 1469472868,
+				["ti1"] = 118529,
 				["ti3"] = 128391,
 				["inProgress"] = {
 					[132] = 1469602171,
@@ -105,11 +119,11 @@ MasterPlanAG = {
 				},
 				["ti2"] = 122484,
 			},
-			["curOil"] = 990,
-			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1469580598,
-			["curRes"] = 5439,
 			["faction"] = "Alliance",
+			["cacheSize"] = 1000,
+			["class"] = "DRUID",
+			["curRes"] = 5439,
+			["curOil"] = 990,
 		},
 	},
 	["IgnoreRewards"] = {
