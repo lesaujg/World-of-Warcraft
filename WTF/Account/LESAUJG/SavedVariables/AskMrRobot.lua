@@ -31,22 +31,22 @@ AskMrRobotDb3 = {
 			},
 			["Equipped"] = {
 				[3] = {
-					"|cff00ccff|Hitem:122263::::::::100:70:::1:583:::|h[Burnished Helm of Might]|h|r", -- [1]
+					"|cff0070dd|Hitem:138155::::::::100:70:512:9:1:3387:100:::|h[Felforged Helmet]|h|r", -- [1]
 					"|cff00ccff|Hitem:122667::::::::100:70:::1:583:::|h[Eternal Emberfury Talisman]|h|r", -- [2]
 					"|cffa335ee|Hitem:124590::::::::100:70:4::3:175:652:648:529:::|h[Felbane Shoulderguard of the Feverflare]|h|r", -- [3]
 					nil, -- [4]
 					"|cff00ccff|Hitem:122381::::::::100:70:::1:583:::|h[Polished Breastplate of Valor]|h|r", -- [5]
 					"|cffa335ee|Hitem:124594::::::::100:70:4:1:3:189:653:648:529:::|h[Felbane Girdle of the Feverflare]|h|r", -- [6]
 					"|cff00ccff|Hitem:122251::::::::100:70:::1:583:::|h[Polished Legplates of Valor]|h|r", -- [7]
-					"|cffa335ee|Hitem:124574::::::::100:70:4:1:3:190:653:648:529:::|h[Felbane Greaves of the Feverflare]|h|r", -- [8]
+					"|cff0070dd|Hitem:138158::::::::100:70:512:9:1:3387:100:::|h[Felforged Warboots]|h|r", -- [8]
 					"|cff1eff00|Hitem:106662::::::::100:70:::1:114:::|h[Talon Guard Vambraces of the Feverflare]|h|r", -- [9]
 					"|cffa335ee|Hitem:124578::::::::100:70:4:1:3:75:652:648:529:::|h[Felbane Gauntlets of the Peerless]|h|r", -- [10]
-					"|cff0070dd|Hitem:112799::::::::100:70::1::::|h[Loop of Vile Lesions]|h|r", -- [11]
-					"|cff0070dd|Hitem:118764::::::::100:70::11::::|h[Ruby-Eye Seal]|h|r", -- [12]
+					"|cff0070dd|Hitem:139173::::::::100:70::14::::|h[Nether Twisted Band]|h|r", -- [11]
+					"|cff0070dd|Hitem:138450::::::::100:70:512:11:1:3387:100:::|h[Signet of Stormwind]|h|r", -- [12]
 					"|cff0070dd|Hitem:120337::::::::100:70::::::|h[Novice Rylak Hunter's Horn]|h|r", -- [13]
-					"|cffa335ee|Hitem:118779::::::::100:70::::::|h[Bladespike Charm]|h|r", -- [14]
+					"|cff0070dd|Hitem:138773::::::::100:70::11::::|h[Favor of House Wrynn]|h|r", -- [14]
 					"|cffa335ee|Hitem:117374::::::::100:70::1:1:555:::|h[Icebound Cloak]|h|r", -- [15]
-					"|cff0070dd|Hitem:116453::::::::100:70:4:13:3:229:525:549:529:::|h[Steelforged Greataxe of the Aurora]|h|r", -- [16]
+					"|cff0070dd|Hitem:138772::::::::100:70::11::::|h[Stormwind Vanguard Bonegrinder]|h|r", -- [16]
 				},
 			},
 		},
@@ -165,14 +165,14 @@ AskMrRobotDb3 = {
 				[36934] = 2,
 				[52555] = 412,
 				[12803] = 1,
-				[68729] = 1,
+				[52718] = 80,
 				[10444] = 1,
 				[34664] = 4,
-				[127784] = 21,
+				[68729] = 1,
 				[11082] = 27,
 				[10575] = 1,
 				[34053] = 35,
-				[52718] = 80,
+				[127784] = 21,
 				[21790] = 1,
 				[34057] = 169,
 				[39505] = 2,
@@ -353,7 +353,7 @@ AskMrRobotDb3 = {
 					"|cff0070dd|Hitem:128954::::::::100:577::11::::|h[Power Handler's Gloves]|h|r", -- [10]
 					"|cff0070dd|Hitem:128948::::::::100:577::::::|h[Nefarious Ring]|h|r", -- [11]
 					"|cff1eff00|Hitem:112460::::::::100:577::::::|h[Illidari Band]|h|r", -- [12]
-					"|cff0070dd|Hitem:133580::::::::100:577::::::|h[Brutarg's Sword Tip]|h|r", -- [13]
+					"|cff0070dd|Hitem:128959::::::::100:577::11::::|h[Seal of House Wrynn]|h|r", -- [13]
 					"|cff0070dd|Hitem:128958::::::::100:577::::::|h[Lekos' Leash]|h|r", -- [14]
 					"|cff0070dd|Hitem:128944::::::::100:577::::::|h[Voras' Silk Drape]|h|r", -- [15]
 					"|cff0070dd|Hitem:128956::::::::100:577::::::|h[Fel-Etched Glaive]|h|r", -- [16]
@@ -411,7 +411,7 @@ AskMrRobotDb3 = {
 		["Bracnar - Sisters of Elune"] = {
 			["Talents"] = {
 				"2312111", -- [1]
-				"3113321", -- [2]
+				"1113321", -- [2]
 				"2312322", -- [3]
 			},
 			["BankItems"] = {
@@ -840,8 +840,8 @@ AskMrRobotDb3 = {
 				[115463] = 1,
 				[116266] = 9,
 				[124224] = 1,
+				[128482] = 1,
 				[118576] = 70,
-				[44050] = 1,
 				[118711] = 8,
 				[117398] = 1,
 				[113681] = 1000,
@@ -863,7 +863,7 @@ AskMrRobotDb3 = {
 				[102218] = 2,
 				[118099] = 45,
 				[116276] = 9,
-				[128482] = 1,
+				[44050] = 1,
 				[116268] = 10,
 				[128353] = 1,
 				[65360] = 1,
@@ -948,17 +948,17 @@ AskMrRobotDb3 = {
 					[124296] = {
 						["id"] = 124296,
 					},
-					[124314] = {
-						["id"] = 124314,
-						["socketColors"] = {
-							0, -- [1]
-						},
-					},
 					[124224] = {
 						["id"] = 124224,
 					},
 					[124284] = {
 						["id"] = 124284,
+					},
+					[124314] = {
+						["id"] = 124314,
+						["socketColors"] = {
+							0, -- [1]
+						},
 					},
 					[124210] = {
 						["id"] = 124210,
@@ -972,8 +972,8 @@ AskMrRobotDb3 = {
 				}, -- [2]
 			},
 			["Logging"] = {
-				["LastDiff"] = 1,
-				["LastZone"] = "SMV Alliance Garrison Level 3",
+				["LastDiff"] = 0,
+				["LastZone"] = "Kalimdor",
 			},
 			["GearSets"] = {
 				{

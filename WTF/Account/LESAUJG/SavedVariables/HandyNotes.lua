@@ -9,10 +9,10 @@ HandyNotesDB = {
 		["Mandelbrot - Sisters of Elune"] = "Mandelbrot - Sisters of Elune",
 		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
 		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
-		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
 		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
 		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
-		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
+		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
 	},
 	["profiles"] = {
 		["Sanjuri - Sisters of Elune"] = {
@@ -31,13 +31,13 @@ HandyNotesDB = {
 		},
 		["Belrath - Sisters of Elune"] = {
 		},
-		["Clothgar - Sisters of Elune"] = {
+		["Uldaris - Sisters of Elune"] = {
 		},
 		["Ghiaccioli - Sisters of Elune"] = {
 		},
 		["Bracnar - Sisters of Elune"] = {
 		},
-		["Uldaris - Sisters of Elune"] = {
+		["Clothgar - Sisters of Elune"] = {
 		},
 	},
 }
@@ -51,10 +51,10 @@ HandyNotes_HandyNotesDB = {
 		["Mandelbrot - Sisters of Elune"] = "Mandelbrot - Sisters of Elune",
 		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
 		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
-		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
 		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
 		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
-		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
+		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
 	},
 	["profiles"] = {
 		["Sanjuri - Sisters of Elune"] = {
@@ -73,13 +73,13 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Belrath - Sisters of Elune"] = {
 		},
-		["Clothgar - Sisters of Elune"] = {
+		["Uldaris - Sisters of Elune"] = {
 		},
 		["Ghiaccioli - Sisters of Elune"] = {
 		},
 		["Bracnar - Sisters of Elune"] = {
 		},
-		["Uldaris - Sisters of Elune"] = {
+		["Clothgar - Sisters of Elune"] = {
 		},
 	},
 }

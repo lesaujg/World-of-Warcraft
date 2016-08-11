@@ -198,3 +198,8 @@ GTFO.SpellID["218507"] = {
   --desc = "Flames of Argus (Fragment of Argus)";
   sound = 3;
 };
+
+GTFO.SpellID["205307"] = {
+  --desc = "War Stomp (Fel Reaver)";
+  sound = 3;
+};

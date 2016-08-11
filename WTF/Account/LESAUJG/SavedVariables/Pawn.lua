@@ -106,9 +106,6 @@ PawnCommon = {
 			["UnenchantedColor"] = "809f56",
 			["IconTexturePath"] = "Interface\\Icons\\Ability_Hunter_FocusedAim",
 			["PerCharacterOptions"] = {
-				["Bracnar-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 			},
 			["ClassID"] = 3,
 			["UpgradesFollowSpecialization"] = true,
@@ -575,6 +572,9 @@ PawnCommon = {
 			["UnenchantedColor"] = "809f56",
 			["IconTexturePath"] = "INTERFACE\\ICONS\\ability_hunter_bestialdiscipline",
 			["PerCharacterOptions"] = {
+				["Bracnar-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["ClassID"] = 3,
 			["UpgradesFollowSpecialization"] = true,

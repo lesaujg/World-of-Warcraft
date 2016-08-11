@@ -911,6 +911,9 @@ Change Log:
 		- Added Legion spells for the Demon Invasion (Legion Event)
 	v4.38.3
 		- Updated for patch 7.0.3
+	v4.38.4
+		- Added Legion spells for Nighthold
+		- Added Legion spells for The Broken Shore
 		
 		
 ]]--
@@ -929,8 +932,8 @@ GTFO = {
 		IgnoreOptions = { };
 		TrivialDamagePercent = 2; -- Minimum % of HP lost required for an alert to be trivial
 	};
-	Version = "4.38.3"; -- Version number (text format)
-	VersionNumber = 43803; -- Numeric version number for checking out-of-date clients
+	Version = "4.38.4"; -- Version number (text format)
+	VersionNumber = 43804; -- Numeric version number for checking out-of-date clients
 	DataLogging = nil; -- Indicate whether or not the addon needs to run the datalogging function (for hooking)
 	DataCode = "4"; -- Saved Variable versioning, change this value to force a reset to default
 	CanTank = nil; -- The active character is capable of tanking

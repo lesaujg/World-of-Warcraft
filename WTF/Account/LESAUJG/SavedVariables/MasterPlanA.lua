@@ -88,12 +88,12 @@ MasterPlanAG = {
 			["class"] = "DEATHKNIGHT",
 		},
 		["Leanara"] = {
-			["class"] = "DEMONHUNTER",
 			["faction"] = "Alliance",
+			["class"] = "DEMONHUNTER",
 		},
 		["Galinar"] = {
-			["lastCacheTime"] = 1470801228,
 			["class"] = "PALADIN",
+			["lastCacheTime"] = 1470801228,
 			["curRes"] = 1062,
 			["faction"] = "Alliance",
 		},
