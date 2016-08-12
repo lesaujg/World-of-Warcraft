@@ -11,11 +11,6 @@ PawnCommon = {
 	["ShowTooltipIcons"] = true,
 	["LastVersion"] = 2.0007,
 	["ShowSocketingAdvisor"] = true,
-	["ShowSpecIcons"] = true,
-	["ShowLootUpgradeAdvisor"] = true,
-	["ButtonPosition"] = 2,
-	["IgnoreGemsWhileLeveling"] = true,
-	["ShowQuestUpgradeAdvisor"] = true,
 	["Scales"] = {
 		["\"Wowhead\":SHAMAN3"] = {
 			["Color"] = "0070de",
@@ -666,5 +661,10 @@ PawnCommon = {
 			["Role"] = "DAMAGER",
 		},
 	},
+	["ShowLootUpgradeAdvisor"] = true,
+	["ButtonPosition"] = 2,
+	["IgnoreGemsWhileLeveling"] = true,
+	["ShowQuestUpgradeAdvisor"] = true,
+	["ShowSpecIcons"] = true,
 	["ShowUpgradesOnTooltips"] = true,
 }
