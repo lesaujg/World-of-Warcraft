@@ -14,6 +14,37 @@ ActionBarSaverDB = {
 		["PRIEST"] = {
 		},
 		["PALADIN"] = {
+			["paladin"] = {
+				"spell|217020||Zeal||", -- [1]
+				"spell|20271||Judgment||", -- [2]
+				"spell|85256||Templar's Verdict||", -- [3]
+				[59] = "item|109167||Findle's Loot-A-Rang",
+				[60] = "macro|60||RandomMount|132248|/use [mod:ctrlshift]Grand Expedition Yak/n/use [mod:shift]Traveler's Tundra Mammoth/n/use [mod:ctrl]Azure Water Strider/n/use [mod:alt]Ashes of Al'ar/n#showtooltip [nomod]White Ram/n/click [nobtn:2]LiteMount/n/click [btn:2]LiteMount RightButton",
+				[61] = "spell|1022||Blessing of Protection||",
+				[62] = "spell|642||Divine Shield||",
+				[35] = "spell|20594||Stoneform|Racial|",
+				[36] = "flyout|105||Greater Blessings|",
+				[37] = "equipmentset|DPS|",
+				[38] = "spell|161691||Garrison Ability||",
+				[39] = "macro|39||c|926211|/tar Sergeant Crowler/n/script SetRaidTarget(\"target\",1)",
+				[40] = "item|46069||Alliance Lance",
+				[68] = "spell|31884||Avenging Wrath||",
+				[25] = "spell|53385||Divine Storm||",
+				[6] = "spell|96231||Rebuke||",
+				[12] = "macro|12||GetKraken!|236178|#showtooltip Flaming Spears/n/targetexact [nodead,nomod:ctrl] Kvaldir Deepcaller/n/targetexact [nodead,nomod:shift] North Sea Kraken/n/cast [exists] Flaming Spears/n/cleartarget [dead]/n/run UIErrorsFrame:Clear()",
+				[50] = "spell|7328||Redemption||",
+				[53] = "item|87216||Thermal Anvil",
+				[49] = "spell|213644||Cleanse Toxins||",
+				[67] = "spell|1044||Blessing of Freedom||",
+				[26] = "spell|198034||Divine Hammer||",
+				[7] = "spell|62124||Hand of Reckoning||",
+				[27] = "spell|215661||Justicar's Vengeance||",
+				[54] = "spell|190784||Divine Steed||",
+				[55] = "spell|19750||Flash of Light||",
+				[56] = "spell|633||Lay on Hands||",
+				[31] = "spell|183218||Hand of Hindrance||",
+				[30] = "spell|853||Hammer of Justice||",
+			},
 		},
 		["WARLOCK"] = {
 		},

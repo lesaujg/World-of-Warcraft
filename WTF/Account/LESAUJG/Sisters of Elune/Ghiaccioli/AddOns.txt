@@ -137,7 +137,7 @@ Ovale: disabled
 Quartz: disabled
 BaudManifest: enabled
 AskMrRobot: enabled
-Factionizer: enabled
+Factionizer: disabled
 GTFO: enabled
 HandyNotes: enabled
 MacroToolkit: disabled

@@ -48,6 +48,7 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 		["Orig"] = {
+			["faction"] = "Alliance",
 			["recruitTime"] = 1468376595,
 			["summary"] = {
 				["tt2"] = 1469583752,
@@ -65,7 +66,6 @@ MasterPlanAG = {
 				},
 				["ti2"] = 122484,
 			},
-			["faction"] = "Alliance",
 			["curOil"] = 2735,
 			["lastCacheTime"] = 1470667248,
 			["curRes"] = 7716,
@@ -88,12 +88,12 @@ MasterPlanAG = {
 			["class"] = "DEATHKNIGHT",
 		},
 		["Leanara"] = {
-			["faction"] = "Alliance",
 			["class"] = "DEMONHUNTER",
+			["faction"] = "Alliance",
 		},
 		["Galinar"] = {
-			["class"] = "PALADIN",
 			["lastCacheTime"] = 1470801228,
+			["class"] = "PALADIN",
 			["curRes"] = 1062,
 			["faction"] = "Alliance",
 		},

@@ -23,11 +23,12 @@ AskMrRobotDb3 = {
 		},
 		["Galinar - Sisters of Elune"] = {
 			["Logging"] = {
-				["LastDiff"] = 0,
-				["LastZone"] = "Pandaria",
+				["LastDiff"] = 1,
+				["LastZone"] = "SMV Alliance Garrison Level 3",
 			},
 			["Talents"] = {
 				[3] = "1213121",
+				[2] = "2231123",
 			},
 			["Equipped"] = {
 				[3] = {
@@ -47,6 +48,25 @@ AskMrRobotDb3 = {
 					"|cff0070dd|Hitem:138773::::::::100:70::11::::|h[Favor of House Wrynn]|h|r", -- [14]
 					"|cff0070dd|Hitem:138188::::::::100:70::14::::|h[Demon Commander's Drape]|h|r", -- [15]
 					"|cff0070dd|Hitem:141603::::::::100:70::9:3:1816:1814:3447:::|h[Fel Lord's Warmace]|h|r", -- [16]
+				},
+				[2] = {
+					"|cff0070dd|Hitem:138155::::::::100:66:512:9:1:3387:100:::|h[Felforged Helmet]|h|r", -- [1]
+					"|cff0070dd|Hitem:139172::::::::100:66::14::::|h[Legionnaire's Fel Pendant]|h|r", -- [2]
+					"|cff0070dd|Hitem:138157::::::::100:66:512:9:1:3387:100:::|h[Felforged Pauldrons]|h|r", -- [3]
+					nil, -- [4]
+					"|cff0070dd|Hitem:138152::::::::100:66:512:9:1:3387:100:::|h[Felforged Chestplate]|h|r", -- [5]
+					"|cff0070dd|Hitem:138154::::::::100:66:512:9:1:3387:100:::|h[Felforged Waistplate]|h|r", -- [6]
+					"|cff0070dd|Hitem:138156::::::::100:66:512:9:1:3387:100:::|h[Felforged Legplates]|h|r", -- [7]
+					"|cff0070dd|Hitem:138158::::::::100:66:512:9:1:3387:100:::|h[Felforged Warboots]|h|r", -- [8]
+					"|cff0070dd|Hitem:138159::::::::100:66:512:9:1:3387:100:::|h[Felforged Vambraces]|h|r", -- [9]
+					"|cff0070dd|Hitem:138153::::::::100:66:512:9:1:3387:100:::|h[Felforged Gauntlets]|h|r", -- [10]
+					"|cff0070dd|Hitem:139173::::::::100:66::14::::|h[Nether Twisted Band]|h|r", -- [11]
+					"|cff0070dd|Hitem:138450::::::::100:66:512:11:1:3387:100:::|h[Signet of Stormwind]|h|r", -- [12]
+					"|cff0070dd|Hitem:138161::::::::100:66::14::::|h[Mo'arg Clan Token]|h|r", -- [13]
+					"|cff0070dd|Hitem:138773::::::::100:66::11::::|h[Favor of House Wrynn]|h|r", -- [14]
+					"|cff0070dd|Hitem:138188::::::::100:66::14::::|h[Demon Commander's Drape]|h|r", -- [15]
+					"|cff0070dd|Hitem:116454::::::::100:66:4:13:3:146:525:549:529:::|h[Steelforged Saber of the Fireflash]|h|r", -- [16]
+					"|cffa335ee|Hitem:116647::::::::100:66:4:13:3:130:525:549:529:::|h[Steelforged Shield of the Fireflash]|h|r", -- [17]
 				},
 			},
 		},
@@ -194,9 +214,40 @@ AskMrRobotDb3 = {
 			},
 		},
 		["Orig - Sisters of Elune"] = {
-			["FirstUse"] = false,
 			["Talents"] = {
 				[3] = "2133132",
+			},
+			["FirstUse"] = false,
+			["BagItems"] = {
+				"|cff0070dd|Hitem:114311::::::::100:269::1:1:86:::|h[Shadow-Gorged Bracers of the Peerless]|h|r", -- [1]
+				"|cffa335ee|Hitem:49295::::::::100:269::::::|h[Enlarged Onyxia Hide Backpack]|h|r", -- [2]
+				"|cffa335ee|Hitem:113843::::::::100:269::3::::|h[Spell-Sink Signet]|h|r", -- [3]
+				"|cff0070dd|Hitem:140696::::::::100:269:512:11:1:3380:100:::|h[Sword of Singing Wind]|h|r", -- [4]
+				"|cff0070dd|Hitem:124576::::::::100:269:4:1:3:70:647:653:529:::|h[Bladefang Gauntlets of the Peerless]|h|r", -- [5]
+				"|cff1eff00|Hitem:129508:5313:::::::100:269::::::|h[Mistdancer Cloak of Rage]|h|r", -- [6]
+				"|cff0070dd|Hitem:124588::::::::100:269:4:1:3:72:647:653:529:::|h[Bladefang Spaulders of the Peerless]|h|r", -- [7]
+				"|cffa335ee|Hitem:113856::::::::100:269::3::::|h[Nether Blast Leggings]|h|r", -- [8]
+				"|cff0070dd|Hitem:124572::::::::100:269:4:1:3:146:647:653:529:::|h[Bladefang Boots of the Fireflash]|h|r", -- [9]
+				"|cff0070dd|Hitem:124572::::::::100:269:4:1:3:139:647:652:529:::|h[Bladefang Boots of the Fireflash]|h|r", -- [10]
+				"|cff0070dd|Hitem:124576::::::::100:269:4:1:3:67:647:653:529:::|h[Bladefang Gauntlets of the Peerless]|h|r", -- [11]
+				"|cff0070dd|Hitem:124576::::::::100:269:4:1:3:80:647:653:529:::|h[Bladefang Gauntlets of the Peerless]|h|r", -- [12]
+				"|cff0070dd|Hitem:124572::::::::100:269:4:1:3:106:647:652:529:::|h[Bladefang Boots of the Quickblade]|h|r", -- [13]
+				"|cffa335ee|Hitem:124572::::::::100:269:4:1:3:24:764:653:529:::|h[Bladefang Boots of the Fireflash]|h|r", -- [14]
+				"|cff0070dd|Hitem:124592::::::::100:269:4:1:3:85:647:652:529:::|h[Bladefang Belt of the Peerless]|h|r", -- [15]
+				"|cff0070dd|Hitem:140696::::::::100:269:512:11:1:3380:100:::|h[Sword of Singing Wind]|h|r", -- [16]
+				"|cffa335ee|Hitem:113845::::::::100:269::3::::|h[Rune-Enscribed Hood]|h|r", -- [17]
+				"|cffa335ee|Hitem:124592::::::::100:269:4:1:3:183:764:652:529:::|h[Bladefang Belt of the Feverflare]|h|r", -- [18]
+				"|cff1eff00|Hitem:129502:5337:::::::100:269::::::|h[Mistdancer Sword]|h|r", -- [19]
+				"|cffa335ee|Hitem:113856::::::::100:269::3::::|h[Nether Blast Leggings]|h|r", -- [20]
+				"|cff0070dd|Hitem:114319::::::::100:269::1:1:155:::|h[Shadow-Gorged Boots of the Aurora]|h|r", -- [21]
+				"|cff0070dd|Hitem:114335::::::::100:269::1:1:209:::|h[Shadow-Gorged Spaulders of the Harmonious]|h|r", -- [22]
+				"|cff1eff00|Hitem:128365::::::::100:269::::::|h[Fleet Commander's Hat]|h|r", -- [23]
+				"|cffa335ee|Hitem:113612::::::::100:269::3::::|h[Scales of Doom]|h|r", -- [24]
+				"|cff1eff00|Hitem:129502:5337:::::::100:269::::::|h[Mistdancer Sword]|h|r", -- [25]
+				"|cff0070dd|Hitem:124588::::::::100:269:4:1:3:232:647:653:529:::|h[Bladefang Spaulders of the Aurora]|h|r", -- [26]
+				"|cff0070dd|Hitem:124588::::::::100:269:4:1:3:90:647:652:529:::|h[Bladefang Spaulders of the Quickblade]|h|r", -- [27]
+				"|cffa335ee|Hitem:113892::::::::100:269::3:1:560:::|h[Engineer's Grounded Gorget]|h|r", -- [28]
+				"|cff0070dd|Hitem:124576::::::::100:269:4:1:3:233:647:652:529:::|h[Bladefang Gauntlets of the Aurora]|h|r", -- [29]
 			},
 			["BagItemsAndCounts"] = {
 				[114822] = 4,
@@ -245,60 +296,29 @@ AskMrRobotDb3 = {
 				[114745] = 6,
 			},
 			["Logging"] = {
-				["LastDiff"] = 1,
-				["LastZone"] = "SMV Alliance Garrison Level 3",
+				["LastDiff"] = 0,
+				["LastZone"] = "Eastern Kingdoms",
 			},
 			["Equipped"] = {
 				[3] = {
-					"|cffa335ee|Hitem:113880::::::::100:269::3::::|h[Acidic Jaws]|h|r", -- [1]
+					"|cff0070dd|Hitem:138167::::::::100:269:512:9:1:3387:100:::|h[Felshroud Hood]|h|r", -- [1]
 					"|cffa335ee|Hitem:127976:5320:::::::100:269:4:3::529:::|h[Choker of Reciprocity]|h|r", -- [2]
-					"|cffa335ee|Hitem:124588::::::::100:269:4:1:3:67:761:652:529:::|h[Bladefang Spaulders of the Peerless]|h|r", -- [3]
+					"|cff0070dd|Hitem:138168::::::::100:269:512:9:1:3387:100:::|h[Felshroud Shoulders]|h|r", -- [3]
 					nil, -- [4]
 					"|cffa335ee|Hitem:113870::::::::100:269::3::::|h[Vest of Forceful Fury]|h|r", -- [5]
-					"|cffa335ee|Hitem:124592::::::::100:269:4:1:3:220:764:653:529:::|h[Bladefang Belt of the Aurora]|h|r", -- [6]
-					"|cffa335ee|Hitem:113989::::::::100:269::3::::|h[Shattering Smash Leggings]|h|r", -- [7]
-					"|cffa335ee|Hitem:124572::::::::100:269:4:1:3:94:765:653:529:::|h[Bladefang Boots of the Quickblade]|h|r", -- [8]
+					"|cff0070dd|Hitem:138169::::::::100:269:512:9:1:3387:100:::|h[Felshroud Belt]|h|r", -- [6]
+					"|cff0070dd|Hitem:138165::::::::100:269:512:9:1:3387:100:::|h[Felshroud Pants]|h|r", -- [7]
+					"|cff0070dd|Hitem:138164::::::::100:269:512:9:1:3387:100:::|h[Felshroud Boots]|h|r", -- [8]
 					"|cffa335ee|Hitem:113634::::::::100:269::3::::|h[Bracers of Spare Skin]|h|r", -- [9]
-					"|cffa335ee|Hitem:124576::::::::100:269:4:1:3:189:764:653:529:::|h[Bladefang Gauntlets of the Feverflare]|h|r", -- [10]
-					"|cffa335ee|Hitem:113843:5327:::::::100:269::3::::|h[Spell-Sink Signet]|h|r", -- [11]
-					"|cffa335ee|Hitem:113877:5327:::::::100:269::3::::|h[Unexploded Explosive Shard]|h|r", -- [12]
-					"|cffa335ee|Hitem:118114::::::::100:269::3::::|h[Meaty Dragonspine Trophy]|h|r", -- [13]
-					"|cffa335ee|Hitem:113853::::::::100:269::3::::|h[Captive Micro-Aberration]|h|r", -- [14]
-					"|cffa335ee|Hitem:113929::::::::100:269::3::::|h[Cloak of Delving Secrets]|h|r", -- [15]
-					"|cff1eff00|Hitem:129502:5337:::::::100:269::::::|h[Mistdancer Sword]|h|r", -- [16]
-					"|cff1eff00|Hitem:129502:5337:::::::100:269::::::|h[Mistdancer Sword]|h|r", -- [17]
+					"|cff0070dd|Hitem:138166::::::::100:269:512:9:1:3387:100:::|h[Felshroud Gloves]|h|r", -- [10]
+					"|cff0070dd|Hitem:139173::::::::100:269::14::::|h[Nether Twisted Band]|h|r", -- [11]
+					"|cff0070dd|Hitem:138450::::::::100:269:512:11:1:3387:100:::|h[Signet of Stormwind]|h|r", -- [12]
+					"|cff0070dd|Hitem:128959::::::::100:269::11::::|h[Seal of House Wrynn]|h|r", -- [13]
+					"|cff0070dd|Hitem:138170::::::::100:269::14::::|h[Felstalker Spine]|h|r", -- [14]
+					"|cff0070dd|Hitem:138188::::::::100:269::14::::|h[Demon Commander's Drape]|h|r", -- [15]
+					"|cff0070dd|Hitem:141602::::::::100:269::9:3:1816:1815:3447:::|h[Eredar Splitter]|h|r", -- [16]
+					"|cff0070dd|Hitem:138768::::::::100:269::11::::|h[Stormwind Vanguard Quickblade]|h|r", -- [17]
 				},
-			},
-			["BagItems"] = {
-				"|cff0070dd|Hitem:114311::::::::100:269::1:1:86:::|h[Shadow-Gorged Bracers of the Peerless]|h|r", -- [1]
-				"|cffa335ee|Hitem:49295::::::::100:269::::::|h[Enlarged Onyxia Hide Backpack]|h|r", -- [2]
-				"|cffa335ee|Hitem:113843::::::::100:269::3::::|h[Spell-Sink Signet]|h|r", -- [3]
-				"|cff0070dd|Hitem:140696::::::::100:269:512:11:1:3380:100:::|h[Sword of Singing Wind]|h|r", -- [4]
-				"|cff0070dd|Hitem:124576::::::::100:269:4:1:3:70:647:653:529:::|h[Bladefang Gauntlets of the Peerless]|h|r", -- [5]
-				"|cff1eff00|Hitem:129508:5313:::::::100:269::::::|h[Mistdancer Cloak of Rage]|h|r", -- [6]
-				"|cff0070dd|Hitem:124588::::::::100:269:4:1:3:72:647:653:529:::|h[Bladefang Spaulders of the Peerless]|h|r", -- [7]
-				"|cffa335ee|Hitem:113856::::::::100:269::3::::|h[Nether Blast Leggings]|h|r", -- [8]
-				"|cff0070dd|Hitem:124572::::::::100:269:4:1:3:146:647:653:529:::|h[Bladefang Boots of the Fireflash]|h|r", -- [9]
-				"|cff0070dd|Hitem:124572::::::::100:269:4:1:3:139:647:652:529:::|h[Bladefang Boots of the Fireflash]|h|r", -- [10]
-				"|cff0070dd|Hitem:124576::::::::100:269:4:1:3:67:647:653:529:::|h[Bladefang Gauntlets of the Peerless]|h|r", -- [11]
-				"|cff0070dd|Hitem:124576::::::::100:269:4:1:3:80:647:653:529:::|h[Bladefang Gauntlets of the Peerless]|h|r", -- [12]
-				"|cff0070dd|Hitem:124572::::::::100:269:4:1:3:106:647:652:529:::|h[Bladefang Boots of the Quickblade]|h|r", -- [13]
-				"|cffa335ee|Hitem:124572::::::::100:269:4:1:3:24:764:653:529:::|h[Bladefang Boots of the Fireflash]|h|r", -- [14]
-				"|cff0070dd|Hitem:124592::::::::100:269:4:1:3:85:647:652:529:::|h[Bladefang Belt of the Peerless]|h|r", -- [15]
-				"|cff0070dd|Hitem:140696::::::::100:269:512:11:1:3380:100:::|h[Sword of Singing Wind]|h|r", -- [16]
-				"|cffa335ee|Hitem:113845::::::::100:269::3::::|h[Rune-Enscribed Hood]|h|r", -- [17]
-				"|cffa335ee|Hitem:124592::::::::100:269:4:1:3:183:764:652:529:::|h[Bladefang Belt of the Feverflare]|h|r", -- [18]
-				"|cff1eff00|Hitem:129502:5337:::::::100:269::::::|h[Mistdancer Sword]|h|r", -- [19]
-				"|cffa335ee|Hitem:113856::::::::100:269::3::::|h[Nether Blast Leggings]|h|r", -- [20]
-				"|cff0070dd|Hitem:114319::::::::100:269::1:1:155:::|h[Shadow-Gorged Boots of the Aurora]|h|r", -- [21]
-				"|cff0070dd|Hitem:114335::::::::100:269::1:1:209:::|h[Shadow-Gorged Spaulders of the Harmonious]|h|r", -- [22]
-				"|cff1eff00|Hitem:128365::::::::100:269::::::|h[Fleet Commander's Hat]|h|r", -- [23]
-				"|cffa335ee|Hitem:113612::::::::100:269::3::::|h[Scales of Doom]|h|r", -- [24]
-				"|cff1eff00|Hitem:129502:5337:::::::100:269::::::|h[Mistdancer Sword]|h|r", -- [25]
-				"|cff0070dd|Hitem:124588::::::::100:269:4:1:3:232:647:653:529:::|h[Bladefang Spaulders of the Aurora]|h|r", -- [26]
-				"|cff0070dd|Hitem:124588::::::::100:269:4:1:3:90:647:652:529:::|h[Bladefang Spaulders of the Quickblade]|h|r", -- [27]
-				"|cffa335ee|Hitem:113892::::::::100:269::3:1:560:::|h[Engineer's Grounded Gorget]|h|r", -- [28]
-				"|cff0070dd|Hitem:124576::::::::100:269:4:1:3:233:647:652:529:::|h[Bladefang Gauntlets of the Aurora]|h|r", -- [29]
 			},
 		},
 		["Mandelbrot - Sisters of Elune"] = {
@@ -334,10 +354,10 @@ AskMrRobotDb3 = {
 		["Leanara - Sisters of Elune"] = {
 			["Logging"] = {
 				["LastDiff"] = 0,
-				["LastZone"] = "Eastern Kingdoms",
+				["LastZone"] = "Pandaria",
 			},
 			["Talents"] = {
-				"0000000", -- [1]
+				"1100000", -- [1]
 			},
 			["Equipped"] = {
 				{
@@ -372,11 +392,12 @@ AskMrRobotDb3 = {
 		},
 		["Uldaris - Sisters of Elune"] = {
 			["Logging"] = {
-				["LastDiff"] = 1,
-				["LastZone"] = "SMV Alliance Garrison Level 3",
+				["LastDiff"] = 0,
+				["LastZone"] = "Pandaria",
 			},
 			["Talents"] = {
 				"3123233", -- [1]
+				[3] = "0000000",
 			},
 			["Equipped"] = {
 				{
@@ -1503,8 +1524,8 @@ AskMrRobotDb3 = {
 					"|cffa335ee|Hitem:124291::::::::100:253:4:5:1:566:531:::|h[Eredar Fel-Chain Gloves]|h|r", -- [10]
 					"|cffa335ee|Hitem:115796:5326:::::::100:253:4:13:3:618:540:79:531:::|h[Shifting Taladite Ring of the Peerless]|h|r", -- [11]
 					"|cffff8000|Hitem:124636:5326:::::::100:253::11:2:649:641:::|h[Maalus, the Blood Drinker]|h|r", -- [12]
-					"|cffa335ee|Hitem:124224::::::::100:253:4:5:1:566:531:::|h[Mirror of the Blademaster]|h|r", -- [13]
-					"|cffa335ee|Hitem:124545::::::::100:253:4:3:1:41:531:::|h[Chipped Soul Prism]|h|r", -- [14]
+					"|cffa335ee|Hitem:124515::::::::100:253:4:5:1:566:531:::|h[Talisman of the Master Tracker]|h|r", -- [13]
+					"|cff00ccff|Hitem:133597::::::::100:253::23::::|h[Infallible Tracking Charm]|h|r", -- [14]
 					"|cffa335ee|Hitem:116174:5312:::::::100:253:4:13:3:618:536:76:531:::|h[Nimble Burnished Cloak of the Peerless]|h|r", -- [15]
 					"|cffa335ee|Hitem:124361:5383:::::::100:253:4:5:2:42:566:531:::|h[Cursed Demonbone Longbow]|h|r", -- [16]
 				}, -- [1]
@@ -1885,12 +1906,12 @@ AskMrRobotDb3 = {
 		["Herbinator - Sisters of Elune"] = {
 		},
 		["Bracnar - Sisters of Elune"] = {
-			["options"] = {
-				["shopAh"] = true,
-			},
 			["window"] = {
 				["top"] = 1065,
 				["left"] = 923,
+			},
+			["options"] = {
+				["shopAh"] = true,
 			},
 			["minimap"] = {
 				["minimapPos"] = 346.798967440122,

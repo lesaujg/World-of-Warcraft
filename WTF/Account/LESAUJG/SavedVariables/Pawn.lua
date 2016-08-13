@@ -37,6 +37,9 @@ PawnCommon = {
 			["UnenchantedColor"] = "b7698b",
 			["IconTexturePath"] = "Interface\\Icons\\Ability_Paladin_ShieldoftheTemplar",
 			["PerCharacterOptions"] = {
+				["Galinar-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["ClassID"] = 2,
 			["UpgradesFollowSpecialization"] = true,
@@ -168,10 +171,10 @@ PawnCommon = {
 			["UnenchantedColor"] = "00bf70",
 			["IconTexturePath"] = "Interface\\Icons\\spell_monk_windwalker_spec",
 			["PerCharacterOptions"] = {
-				["Orig-Sisters of Elune"] = {
+				["Sanjuri-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
-				["Sanjuri-Sisters of Elune"] = {
+				["Orig-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
 			},
@@ -361,9 +364,6 @@ PawnCommon = {
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Holy_AuraOfLight",
 			["PerCharacterOptions"] = {
 				["Herbinator-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
-				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
 			},
