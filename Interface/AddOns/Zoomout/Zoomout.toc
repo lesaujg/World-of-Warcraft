@@ -1,4 +1,4 @@
-﻿## Interface: 60200
+﻿## Interface: 70000
 ## Author: Krappyzappy
 ## Title: Zoomout
 ## Notes: Executes the "/console cameradistancemaxfactor 2.6" command on login
