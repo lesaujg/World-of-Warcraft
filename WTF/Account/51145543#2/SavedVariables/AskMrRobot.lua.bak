@@ -1,0 +1,24 @@
+
+AskMrRobotDb3 = {
+	["char"] = {
+		["Magnara - Sisters of Elune"] = {
+			["Talents"] = {
+				"0000000", -- [1]
+			},
+			["Logging"] = {
+				["LastZone"] = "Outland",
+				["LastDiff"] = 0,
+			},
+		},
+	},
+	["global"] = {
+		["Region"] = "US",
+	},
+	["profileKeys"] = {
+		["Magnara - Sisters of Elune"] = "Magnara - Sisters of Elune",
+	},
+	["profiles"] = {
+		["Magnara - Sisters of Elune"] = {
+		},
+	},
+}

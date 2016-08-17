@@ -4,11 +4,11 @@ LM_OptionsDB = {
 	},
 	["excludedspells"] = {
 	},
-	["excludeNewMounts"] = {
-	},
 	["seenspells"] = {
 	},
 	["flagoverrides"] = {
+	},
+	["excludeNewMounts"] = {
 	},
 	["macro"] = {
 	},

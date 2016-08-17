@@ -8,10 +8,11 @@ RAchF_DB = {
 		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
 		["Mandelbrot - Sisters of Elune"] = "Mandelbrot - Sisters of Elune",
 		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
-		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
 		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
-		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
+		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
 		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
+		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
 		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
 	},
 	["profiles"] = {
@@ -35,11 +36,16 @@ RAchF_DB = {
 		},
 		["Leanara - Sisters of Elune"] = {
 		},
-		["Belrath - Sisters of Elune"] = {
-		},
 		["Clothgar - Sisters of Elune"] = {
 			["minimap"] = {
 				["hide"] = true,
+			},
+		},
+		["Belrath - Sisters of Elune"] = {
+		},
+		["Bracnar - Sisters of Elune"] = {
+			["minimap"] = {
+				["minimapPos"] = 37.4267762212435,
 			},
 		},
 		["Ghiaccioli - Sisters of Elune"] = {
@@ -47,10 +53,7 @@ RAchF_DB = {
 				["hide"] = true,
 			},
 		},
-		["Bracnar - Sisters of Elune"] = {
-			["minimap"] = {
-				["minimapPos"] = 37.4267762212435,
-			},
+		["Torinar - Sisters of Elune"] = {
 		},
 		["Uldaris - Sisters of Elune"] = {
 			["minimap"] = {

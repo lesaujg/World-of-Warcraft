@@ -8,25 +8,25 @@ MasterPlanAG = {
 	},
 	["Sisters of Elune"] = {
 		["Bracnar"] = {
-			["lastCacheTime"] = 1471355311,
+			["class"] = "HUNTER",
 			["summary"] = {
 				["lastOilTime"] = 1471315598,
+				["ti2"] = 122486,
 				["inProgress"] = {
 					[451] = 1471369551,
 					[683] = 1471376754,
 				},
 				["ti3"] = 127854,
-				["ti2"] = 122486,
-				["tt1"] = 1470664808,
 				["ti1"] = 118531,
+				["tt1"] = 1470664808,
 				["tt3"] = true,
 				["tt2"] = 1471134625,
 			},
-			["curOil"] = 61865,
-			["cacheSize"] = 1000,
-			["class"] = "HUNTER",
-			["curRes"] = 10000,
 			["faction"] = "Alliance",
+			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1471355311,
+			["curRes"] = 10000,
+			["curOil"] = 61865,
 		},
 		["Ghiaccioli"] = {
 			["faction"] = "Alliance",
@@ -35,6 +35,10 @@ MasterPlanAG = {
 		["Mandelbrot"] = {
 			["faction"] = "Alliance",
 			["class"] = "ROGUE",
+		},
+		["Torinar"] = {
+			["class"] = "WARRIOR",
+			["faction"] = "Alliance",
 		},
 		["Orig"] = {
 			["recruitTime"] = 1468376595,
@@ -54,18 +58,18 @@ MasterPlanAG = {
 				},
 				["tt2"] = 1469583752,
 			},
-			["faction"] = "Alliance",
-			["lastCacheTime"] = 1470667248,
-			["class"] = "MONK",
-			["curRes"] = 7716,
 			["curOil"] = 2735,
+			["class"] = "MONK",
+			["lastCacheTime"] = 1470667248,
+			["curRes"] = 7716,
+			["faction"] = "Alliance",
 		},
 		["Herbinator"] = {
 			["class"] = "PALADIN",
 			["faction"] = "Alliance",
 		},
 		["Uldaris"] = {
-			["curOil"] = 990,
+			["faction"] = "Alliance",
 			["recruitTime"] = 1464140222,
 			["summary"] = {
 				["ti2"] = 122484,
@@ -81,20 +85,20 @@ MasterPlanAG = {
 					[398] = 1469609379,
 				},
 				["ti3"] = 128391,
-				["tt1"] = 1469472868,
 				["ti1"] = 118529,
+				["tt1"] = 1469472868,
 				["tt3"] = 1469242109,
 				["tt2"] = 1469583510,
 			},
-			["faction"] = "Alliance",
+			["curOil"] = 990,
 			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1469580598,
-			["curRes"] = 5439,
 			["class"] = "DRUID",
+			["curRes"] = 5439,
+			["lastCacheTime"] = 1469580598,
 		},
 		["Sanjuri"] = {
-			["faction"] = "Alliance",
 			["class"] = "MONK",
+			["faction"] = "Alliance",
 		},
 		["Belrath"] = {
 			["class"] = "DEATHKNIGHT",
@@ -107,14 +111,12 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 		["Leanara"] = {
-			["faction"] = "Alliance",
 			["class"] = "DEMONHUNTER",
+			["faction"] = "Alliance",
 		},
 		["Clothgar"] = {
 			["class"] = "WARLOCK",
 			["faction"] = "Alliance",
 		},
-	},
-	["IgnoreRewards"] = {
 	},
 }
