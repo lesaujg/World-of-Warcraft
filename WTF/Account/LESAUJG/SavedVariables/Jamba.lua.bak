@@ -1,0 +1,61 @@
+
+JambaCoreProfileDB = {
+	["profileKeys"] = {
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+	},
+	["profiles"] = {
+		["Bracnar - Sisters of Elune"] = {
+			["showStartupMessage4000"] = false,
+		},
+	},
+}
+JambaCommunicationsProfileDB = {
+	["profileKeys"] = {
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+	},
+	["profiles"] = {
+		["Bracnar - Sisters of Elune"] = {
+		},
+	},
+}
+JambaTeamProfileDB = {
+	["profileKeys"] = {
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+	},
+	["profiles"] = {
+		["Bracnar - Sisters of Elune"] = {
+			["teamList"] = {
+				["Bracnar-SistersofElune"] = 1,
+			},
+			["master"] = "Bracnar-SistersofElune",
+			["characterOnline"] = {
+				["Bracnar-SistersofElune"] = true,
+			},
+		},
+	},
+}
+JambaTagProfileDB = {
+	["profileKeys"] = {
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+	},
+	["profiles"] = {
+		["Bracnar - Sisters of Elune"] = {
+			["tagList"] = {
+				["Bracnar-SistersofElune"] = {
+					"all", -- [1]
+					"justme", -- [2]
+					"master", -- [3]
+				},
+			},
+		},
+	},
+}
+JambaMessageProfileDB = {
+	["profileKeys"] = {
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+	},
+	["profiles"] = {
+		["Bracnar - Sisters of Elune"] = {
+		},
+	},
+}

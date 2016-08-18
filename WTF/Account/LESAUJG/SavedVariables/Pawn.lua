@@ -417,25 +417,6 @@ PawnCommon = {
 			["SpecID"] = 3,
 			["Role"] = "DAMAGER",
 		},
-		["\"Wowhead\":MAGE3"] = {
-			["Color"] = "3fc7eb",
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
-			["DoNotShow2HUpgrades"] = false,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "2f95b0",
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Frost_FrostBolt02",
-			["PerCharacterOptions"] = {
-				["Ghiaccioli-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
-			},
-			["ClassID"] = 8,
-			["UpgradesFollowSpecialization"] = true,
-			["LocalizedName"] = "Mage: Frost",
-			["SpecID"] = 3,
-			["Role"] = "DAMAGER",
-		},
 		["\"Wowhead\":PRIEST1"] = {
 			["Color"] = "ffffff",
 			["DoNotShow1HUpgrades"] = false,
@@ -468,20 +449,23 @@ PawnCommon = {
 			["SpecID"] = 1,
 			["Role"] = "HEALER",
 		},
-		["\"Wowhead\":DEMONHUNTER1"] = {
-			["Color"] = "a330c9",
+		["\"Wowhead\":MAGE3"] = {
+			["Color"] = "3fc7eb",
 			["DoNotShow1HUpgrades"] = false,
 			["NormalizationFactor"] = 1,
-			["DoNotShow2HUpgrades"] = true,
+			["DoNotShow2HUpgrades"] = false,
 			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "7a2496",
-			["IconTexturePath"] = "Interface\\Icons\\ability_demonhunter_specdps",
+			["UnenchantedColor"] = "2f95b0",
+			["IconTexturePath"] = "Interface\\Icons\\Spell_Frost_FrostBolt02",
 			["PerCharacterOptions"] = {
+				["Ghiaccioli-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
-			["ClassID"] = 12,
+			["ClassID"] = 8,
 			["UpgradesFollowSpecialization"] = true,
-			["LocalizedName"] = "Demon Hunter: Havoc",
-			["SpecID"] = 1,
+			["LocalizedName"] = "Mage: Frost",
+			["SpecID"] = 3,
 			["Role"] = "DAMAGER",
 		},
 		["\"Wowhead\":WARLOCK2"] = {
@@ -516,6 +500,19 @@ PawnCommon = {
 			["SpecID"] = 3,
 			["Role"] = "DAMAGER",
 		},
+		["SV - Single-Target"] = {
+			["PerCharacterOptions"] = {
+			},
+			["Values"] = {
+				["Agility"] = 1,
+				["HasteRating"] = 0.42,
+				["MasteryRating"] = 0.41,
+				["Versatility"] = 0.5,
+				["Dps"] = 1,
+				["CritRating"] = 0.49,
+			},
+			["UpgradesFollowSpecialization"] = true,
+		},
 		["\"Wowhead\":MAGE2"] = {
 			["Color"] = "3fc7eb",
 			["DoNotShow1HUpgrades"] = false,
@@ -532,18 +529,21 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["Role"] = "DAMAGER",
 		},
-		["SV - Single-Target"] = {
+		["\"Wowhead\":DEMONHUNTER1"] = {
+			["Color"] = "a330c9",
+			["DoNotShow1HUpgrades"] = false,
+			["NormalizationFactor"] = 1,
+			["DoNotShow2HUpgrades"] = true,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "7a2496",
+			["IconTexturePath"] = "Interface\\Icons\\ability_demonhunter_specdps",
 			["PerCharacterOptions"] = {
 			},
-			["Values"] = {
-				["Agility"] = 1,
-				["HasteRating"] = 0.42,
-				["MasteryRating"] = 0.41,
-				["Versatility"] = 0.5,
-				["Dps"] = 1,
-				["CritRating"] = 0.49,
-			},
+			["ClassID"] = 12,
 			["UpgradesFollowSpecialization"] = true,
+			["LocalizedName"] = "Demon Hunter: Havoc",
+			["SpecID"] = 1,
+			["Role"] = "DAMAGER",
 		},
 		["\"Wowhead\":DEATHKNIGHT1"] = {
 			["Color"] = "ff4d6b",

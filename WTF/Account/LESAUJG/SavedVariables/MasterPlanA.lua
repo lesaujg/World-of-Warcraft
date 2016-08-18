@@ -58,11 +58,11 @@ MasterPlanAG = {
 				},
 				["tt2"] = 1469583752,
 			},
-			["curOil"] = 2735,
+			["faction"] = "Alliance",
 			["class"] = "MONK",
 			["lastCacheTime"] = 1470667248,
 			["curRes"] = 7716,
-			["faction"] = "Alliance",
+			["curOil"] = 2735,
 		},
 		["Herbinator"] = {
 			["class"] = "PALADIN",
