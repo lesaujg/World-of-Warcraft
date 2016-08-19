@@ -1,14 +1,17 @@
 
 JambaTargetProfileDB = {
 	["profileKeys"] = {
-		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
 		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
+		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
 		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
 	},
 	["profiles"] = {
-		["Torinar - Sisters of Elune"] = {
-		},
 		["Bracnar - Sisters of Elune"] = {
+		},
+		["Leanara - Sisters of Elune"] = {
+		},
+		["Torinar - Sisters of Elune"] = {
 		},
 		["Orig - Sisters of Elune"] = {
 		},

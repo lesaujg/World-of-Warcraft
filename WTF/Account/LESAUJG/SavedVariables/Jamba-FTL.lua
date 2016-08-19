@@ -1,14 +1,41 @@
 
 JambaFTLProfileDB = {
 	["profileKeys"] = {
-		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
 		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
+		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
 		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
 	},
 	["profiles"] = {
+		["Bracnar - Sisters of Elune"] = {
+			["CharListWithModifiers"] = {
+				["Bracnar-SistersofElune"] = {
+					["ralt"] = false,
+					["useToon"] = false,
+					["rctrl"] = false,
+					["lshift"] = false,
+					["lctrl"] = false,
+					["rshift"] = false,
+					["lalt"] = false,
+				},
+			},
+		},
+		["Leanara - Sisters of Elune"] = {
+			["CharListWithModifiers"] = {
+				["Leanara-SistersofElune"] = {
+					["ralt"] = false,
+					["useToon"] = false,
+					["rctrl"] = false,
+					["lshift"] = false,
+					["lctrl"] = false,
+					["rshift"] = false,
+					["lalt"] = false,
+				},
+			},
+		},
 		["Torinar - Sisters of Elune"] = {
 			["CharListWithModifiers"] = {
-				["Torinar-SistersofElune"] = {
+				["Torinara-SistersofElune"] = {
 					["ralt"] = false,
 					["useToon"] = false,
 					["rctrl"] = false,
@@ -17,11 +44,7 @@ JambaFTLProfileDB = {
 					["lctrl"] = false,
 					["lalt"] = false,
 				},
-			},
-		},
-		["Bracnar - Sisters of Elune"] = {
-			["CharListWithModifiers"] = {
-				["Bracnar-SistersofElune"] = {
+				["Torinar-SistersofElune"] = {
 					["ralt"] = false,
 					["useToon"] = false,
 					["rctrl"] = false,
@@ -39,8 +62,8 @@ JambaFTLProfileDB = {
 					["useToon"] = false,
 					["rctrl"] = false,
 					["lshift"] = false,
-					["lctrl"] = false,
 					["rshift"] = false,
+					["lctrl"] = false,
 					["lalt"] = false,
 				},
 			},

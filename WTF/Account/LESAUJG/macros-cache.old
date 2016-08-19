@@ -9,7 +9,7 @@ VER 3 000000000000008E "BuyTradingPost" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000098 "Decursive" "INV_MISC_QUESTIONMARK"
 /stopcasting
-/cast [@mouseover,nomod,exists] Diffuse Magic;  [@mouseover,exists,mod:ctrl] Detox; [@mouseover,exists,mod:shift] Diffuse Magic
+/cast [@mouseover,nomod,exists] Remove Corruption;  [@mouseover,exists,mod:ctrl] Cyclone; [@mouseover,exists,mod:shift] Remove Corruption
 END
 VER 3 000000000000008A "Des" "ACHIEVEMENT_GUILDPERK_QUICK AND DEAD"
 /tar Des
@@ -38,13 +38,7 @@ VER 3 0000000000000088 "MD+CS" "INV_MISC_QUESTIONMARK"
 /cast [@focus,help][@pet,nodead,exists] Misdirection
 END
 VER 3 0000000000000087 "RandomMount" "INV_MISC_QUESTIONMARK"
-/use [mod:ctrlshift]Grand Expedition Yak
-/use [mod:shift]Traveler's Tundra Mammoth
-/use [mod:ctrl]Azure Water Strider
-/use [mod:alt]Ashes of Al'ar
-#showtooltip [nomod]White Ram
-/click [nobtn:2]LiteMount
-/click [btn:2]LiteMount RightButton
+m
 END
 VER 3 0000000000000095 "Salvage" "INV_MISC_QUESTIONMARK"
 /use Big Crate of Salvage

@@ -1,4 +1,11 @@
 Version: 1
+Frame: JambaItemUseWindowFrame
+FrameLevel: 1
+Anchor: BOTTOMRIGHT
+X: -26
+Y: 217
+W: 219
+H: 97
 Frame: DBMMinimapButton
 FrameLevel: 3
 Anchor: TOPRIGHT
@@ -125,6 +132,13 @@ X: 0
 Y: 0
 W: 100
 H: 80
+Frame: JambaTargetListWindowFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 180
+H: 179
 Frame: _NPCScanButton
 FrameLevel: 1
 Anchor: BOTTOM
@@ -139,3 +153,10 @@ X: 0
 Y: 0
 W: 100
 H: 80
+Frame: _NPCScanOverlayKey
+FrameLevel: 121
+Anchor: CENTER
+X: -101
+Y: -2
+W: 214
+H: 298

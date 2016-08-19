@@ -41,6 +41,6 @@ TradeSkillMaster_MailingDB = {
 	["g@ @showReloadBtn"] = true,
 	["g@ @sendMessages"] = true,
 	["g@ @deMaxQuality"] = 2,
-	["c@Torinara - Sisters of Elune@goldKeepAmount"] = 1000000,
 	["c@Torinara - Sisters of Elune@goldMailTarget"] = "",
+	["c@Torinara - Sisters of Elune@goldKeepAmount"] = 1000000,
 }
