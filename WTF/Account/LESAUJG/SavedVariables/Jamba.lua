@@ -1,68 +1,121 @@
 
 JambaCoreProfileDB = {
 	["profileKeys"] = {
-		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
 		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
-		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
+		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
 		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
 	},
 	["profiles"] = {
-		["Bracnar - Sisters of Elune"] = {
+		["Leanara - Sisters of Elune"] = {
 			["showStartupMessage4000"] = false,
 		},
-		["Leanara - Sisters of Elune"] = {
+		["Galinar - Sisters of Elune"] = {
+			["showStartupMessage4000"] = false,
+		},
+		["Belrath - Sisters of Elune"] = {
+			["showStartupMessage4000"] = false,
+		},
+		["Orig - Sisters of Elune"] = {
+			["showStartupMessage4000"] = false,
+		},
+		["Bracnar - Sisters of Elune"] = {
 			["showStartupMessage4000"] = false,
 		},
 		["Torinar - Sisters of Elune"] = {
 			["showStartupMessage4000"] = false,
 		},
-		["Orig - Sisters of Elune"] = {
+		["Uldaris - Sisters of Elune"] = {
 			["showStartupMessage4000"] = false,
 		},
 	},
 }
 JambaCommunicationsProfileDB = {
 	["profileKeys"] = {
-		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
 		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
-		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
+		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
 		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
 	},
 	["profiles"] = {
-		["Bracnar - Sisters of Elune"] = {
-		},
 		["Leanara - Sisters of Elune"] = {
+		},
+		["Galinar - Sisters of Elune"] = {
+		},
+		["Belrath - Sisters of Elune"] = {
+		},
+		["Orig - Sisters of Elune"] = {
+		},
+		["Bracnar - Sisters of Elune"] = {
 		},
 		["Torinar - Sisters of Elune"] = {
 		},
-		["Orig - Sisters of Elune"] = {
+		["Uldaris - Sisters of Elune"] = {
 		},
 	},
 }
 JambaTeamProfileDB = {
 	["profileKeys"] = {
-		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
 		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
-		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
+		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
 		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
 	},
 	["profiles"] = {
-		["Bracnar - Sisters of Elune"] = {
-			["master"] = "Bracnar-SistersofElune",
-			["characterOnline"] = {
-				["Bracnar-SistersofElune"] = true,
-			},
-			["teamList"] = {
-				["Bracnar-SistersofElune"] = 1,
-			},
-		},
 		["Leanara - Sisters of Elune"] = {
+			["master"] = "Leanara-SistersofElune",
 			["teamList"] = {
 				["Leanara-SistersofElune"] = 1,
 			},
-			["master"] = "Leanara-SistersofElune",
 			["characterOnline"] = {
 				["Leanara-SistersofElune"] = true,
+			},
+		},
+		["Galinar - Sisters of Elune"] = {
+			["master"] = "Galinar-SistersofElune",
+			["characterOnline"] = {
+				["Galinar-SistersofElune"] = true,
+			},
+			["teamList"] = {
+				["Galinar-SistersofElune"] = 1,
+			},
+		},
+		["Belrath - Sisters of Elune"] = {
+			["teamList"] = {
+				["Belrath-SistersofElune"] = 1,
+			},
+			["master"] = "Belrath-SistersofElune",
+			["characterOnline"] = {
+				["Belrath-SistersofElune"] = true,
+			},
+		},
+		["Orig - Sisters of Elune"] = {
+			["master"] = "Orig-SistersofElune",
+			["teamList"] = {
+				["Orig-SistersofElune"] = 1,
+			},
+			["characterOnline"] = {
+				["Orig-SistersofElune"] = true,
+			},
+		},
+		["Bracnar - Sisters of Elune"] = {
+			["master"] = "Bracnar-SistersofElune",
+			["teamList"] = {
+				["Bracnar-SistersofElune"] = 1,
+				["Torinara-SistersofElune"] = 2,
+			},
+			["characterOnline"] = {
+				["Bracnar-SistersofElune"] = true,
+				["Torinara-SistersofElune"] = false,
 			},
 		},
 		["Torinar - Sisters of Elune"] = {
@@ -77,25 +130,64 @@ JambaTeamProfileDB = {
 				["Torinar-SistersofElune"] = true,
 			},
 		},
-		["Orig - Sisters of Elune"] = {
-			["master"] = "Orig-SistersofElune",
-			["teamList"] = {
-				["Orig-SistersofElune"] = 1,
-			},
+		["Uldaris - Sisters of Elune"] = {
+			["master"] = "Uldaris-SistersofElune",
 			["characterOnline"] = {
-				["Orig-SistersofElune"] = true,
+				["Uldaris-SistersofElune"] = true,
+			},
+			["teamList"] = {
+				["Uldaris-SistersofElune"] = 1,
 			},
 		},
 	},
 }
 JambaTagProfileDB = {
 	["profileKeys"] = {
-		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
 		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
-		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
+		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
 		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
 	},
 	["profiles"] = {
+		["Leanara - Sisters of Elune"] = {
+			["tagList"] = {
+				["Leanara-SistersofElune"] = {
+					"all", -- [1]
+					"justme", -- [2]
+					"master", -- [3]
+				},
+			},
+		},
+		["Galinar - Sisters of Elune"] = {
+			["tagList"] = {
+				["Galinar-SistersofElune"] = {
+					"all", -- [1]
+					"justme", -- [2]
+					"master", -- [3]
+				},
+			},
+		},
+		["Belrath - Sisters of Elune"] = {
+			["tagList"] = {
+				["Belrath-SistersofElune"] = {
+					"all", -- [1]
+					"justme", -- [2]
+					"master", -- [3]
+				},
+			},
+		},
+		["Orig - Sisters of Elune"] = {
+			["tagList"] = {
+				["Orig-SistersofElune"] = {
+					"all", -- [1]
+					"justme", -- [2]
+					"master", -- [3]
+				},
+			},
+		},
 		["Bracnar - Sisters of Elune"] = {
 			["tagList"] = {
 				["Bracnar-SistersofElune"] = {
@@ -103,14 +195,10 @@ JambaTagProfileDB = {
 					"justme", -- [2]
 					"master", -- [3]
 				},
-			},
-		},
-		["Leanara - Sisters of Elune"] = {
-			["tagList"] = {
-				["Leanara-SistersofElune"] = {
+				["Torinara-SistersofElune"] = {
 					"all", -- [1]
 					"justme", -- [2]
-					"master", -- [3]
+					"minion", -- [3]
 				},
 			},
 		},
@@ -128,9 +216,9 @@ JambaTagProfileDB = {
 				},
 			},
 		},
-		["Orig - Sisters of Elune"] = {
+		["Uldaris - Sisters of Elune"] = {
 			["tagList"] = {
-				["Orig-SistersofElune"] = {
+				["Uldaris-SistersofElune"] = {
 					"all", -- [1]
 					"justme", -- [2]
 					"master", -- [3]
@@ -141,19 +229,28 @@ JambaTagProfileDB = {
 }
 JambaMessageProfileDB = {
 	["profileKeys"] = {
-		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
 		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
-		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
+		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
 		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
 	},
 	["profiles"] = {
-		["Bracnar - Sisters of Elune"] = {
-		},
 		["Leanara - Sisters of Elune"] = {
+		},
+		["Galinar - Sisters of Elune"] = {
+		},
+		["Belrath - Sisters of Elune"] = {
+		},
+		["Orig - Sisters of Elune"] = {
+		},
+		["Bracnar - Sisters of Elune"] = {
 		},
 		["Torinar - Sisters of Elune"] = {
 		},
-		["Orig - Sisters of Elune"] = {
+		["Uldaris - Sisters of Elune"] = {
 		},
 	},
 }

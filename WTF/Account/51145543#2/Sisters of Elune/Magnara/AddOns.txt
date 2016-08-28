@@ -1,5 +1,5 @@
 AchievementsReminder: disabled
-AskMrRobot: disabled
+AskMrRobot: enabled
 AdvancedIconSelector: disabled
 ActionBarSaver: disabled
 CrossRealmAssist: disabled

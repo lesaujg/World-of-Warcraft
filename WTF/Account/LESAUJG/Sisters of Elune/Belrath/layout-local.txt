@@ -125,6 +125,13 @@ X: 0
 Y: 0
 W: 100
 H: 80
+Frame: JambaTargetListWindowFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 180
+H: 179
 Frame: _NPCScanButton
 FrameLevel: 1
 Anchor: BOTTOM

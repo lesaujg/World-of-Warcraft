@@ -1,15 +1,24 @@
 
 JambaFollowProfileDB = {
 	["profileKeys"] = {
-		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
 		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
-		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
+		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
 		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
 	},
 	["profiles"] = {
-		["Bracnar - Sisters of Elune"] = {
-		},
 		["Leanara - Sisters of Elune"] = {
+		},
+		["Galinar - Sisters of Elune"] = {
+		},
+		["Belrath - Sisters of Elune"] = {
+		},
+		["Orig - Sisters of Elune"] = {
+		},
+		["Bracnar - Sisters of Elune"] = {
 		},
 		["Torinar - Sisters of Elune"] = {
 			["autoFollowAfterCombat"] = true,
@@ -18,7 +27,7 @@ JambaFollowProfileDB = {
 			["doNotWarnFollowStrobing"] = true,
 			["useFollowMaster"] = true,
 		},
-		["Orig - Sisters of Elune"] = {
+		["Uldaris - Sisters of Elune"] = {
 		},
 	},
 }

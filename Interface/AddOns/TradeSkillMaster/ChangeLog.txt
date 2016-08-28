@@ -1,3 +1,14 @@
+v3.5
+*Replaced LibExtraTip with built-in tooltip code to improve reliablity and fix various bugs.
+*Improved performance of importing large groups.
+*Added some automatic cleanup of app-related data which is no longer of any use.
+
+v3.4.31
+*Fixed some tooltip issues.
+
+v3.4.30
+*Fixed issue where moving random enchant / staged items were treated as base items.
+
 v3.4.29
 *No changes.
 
