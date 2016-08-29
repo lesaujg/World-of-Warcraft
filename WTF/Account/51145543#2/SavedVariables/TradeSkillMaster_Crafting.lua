@@ -30,9 +30,9 @@ TradeSkillMaster_CraftingDB = {
 	["f@Alliance - Sisters of Elune@evenStacks"] = false,
 	["f@Alliance - Sisters of Elune@buyAH"] = false,
 	["f@Alliance - Sisters of Elune@gathering"] = {
-		["selectedSources"] = {
+		["destroyingMats"] = {
 		},
-		["availableMats"] = {
+		["extraMats"] = {
 		},
 		["shortItems"] = {
 		},
@@ -40,14 +40,14 @@ TradeSkillMaster_CraftingDB = {
 		},
 		["selectedSourceStatus"] = {
 		},
-		["destroyingMats"] = {
+		["selectedSources"] = {
 		},
 		["professions"] = {
 		},
 		["neededMats"] = {
 		},
 		["gatheredMats"] = false,
-		["extraMats"] = {
+		["availableMats"] = {
 		},
 	},
 	["g@ @defaultCraftPriceMethod"] = "first(dbminbuyout, dbmarket)",
@@ -55,9 +55,9 @@ TradeSkillMaster_CraftingDB = {
 		["Magnara - Sisters of Elune"] = "Default",
 		["Torinara - Sisters of Elune"] = "Default",
 	},
-	["g@ @priceColumn"] = 1,
-	["g@ @ignoreCDCraftCost"] = true,
 	["g@ @showingDefaultFrame"] = false,
+	["f@Alliance - Sisters of Elune@ignoreIntermediate"] = false,
+	["g@ @priceColumn"] = 1,
 	["g@ @questSmartCrafting"] = true,
 	["f@Alliance - Sisters of Elune@ignoreDECheckBox"] = false,
 	["f@Alliance - Sisters of Elune@disableCheckBox"] = false,
@@ -72,7 +72,7 @@ TradeSkillMaster_CraftingDB = {
 		["collapsed"] = {
 		},
 	},
-	["f@Alliance - Sisters of Elune@ignoreIntermediate"] = false,
+	["g@ @ignoreCDCraftCost"] = true,
 	["f@Alliance - Sisters of Elune@crafts"] = {
 	},
 	["_version"] = 7,

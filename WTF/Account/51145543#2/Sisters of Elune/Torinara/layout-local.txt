@@ -19,7 +19,7 @@ Anchor: LEFT
 X: 3
 Y: 18
 W: 209
-H: 92
+H: 175
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: RIGHT

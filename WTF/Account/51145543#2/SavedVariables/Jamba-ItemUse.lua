@@ -6,6 +6,7 @@ JambaItemUseProfileDB = {
 	},
 	["profiles"] = {
 		["Magnara - Sisters of Elune"] = {
+			["frameYOffset"] = 143.999847412109,
 			["itemsAdvanced"] = {
 				{
 					["action"] = "empty",
@@ -88,6 +89,7 @@ JambaItemUseProfileDB = {
 					["kind"] = "empty",
 				}, -- [20]
 			},
+			["frameXOffset"] = -80.0002212524414,
 		},
 		["Torinara - Sisters of Elune"] = {
 			["frameYOffset"] = 196.000045776367,

@@ -32,24 +32,24 @@ JambaTeamProfileDB = {
 	},
 	["profiles"] = {
 		["Magnara - Sisters of Elune"] = {
+			["teamList"] = {
+				["Magnara-SistersofElune"] = 1,
+			},
 			["master"] = "Magnara-SistersofElune",
 			["characterOnline"] = {
 				["Magnara-SistersofElune"] = true,
 			},
-			["teamList"] = {
-				["Magnara-SistersofElune"] = 1,
-			},
 		},
 		["Torinara - Sisters of Elune"] = {
+			["masterChangePromoteLeader"] = true,
 			["master"] = "Torinara-SistersofElune",
 			["teamList"] = {
 				["Torinara-SistersofElune"] = 1,
 				["Torinar-SistersofElune"] = 2,
 			},
-			["masterChangePromoteLeader"] = true,
 			["characterOnline"] = {
 				["Torinara-SistersofElune"] = true,
-				["Torinar-SistersofElune"] = false,
+				["Torinar-SistersofElune"] = true,
 			},
 		},
 	},

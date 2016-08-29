@@ -4,10 +4,10 @@ JambaCurrProfileDB = {
 		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
 		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
 		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
-		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
-		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
-		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
 		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
+		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
 	},
 	["profiles"] = {
 		["Leanara - Sisters of Elune"] = {
@@ -16,15 +16,15 @@ JambaCurrProfileDB = {
 		},
 		["Belrath - Sisters of Elune"] = {
 		},
-		["Orig - Sisters of Elune"] = {
-		},
-		["Bracnar - Sisters of Elune"] = {
+		["Uldaris - Sisters of Elune"] = {
 		},
 		["Torinar - Sisters of Elune"] = {
 			["currencyMediaBorder"] = "Blizzard Tooltip",
 			["currencyMediaBackground"] = "Blizzard Dialog Background",
 		},
-		["Uldaris - Sisters of Elune"] = {
+		["Bracnar - Sisters of Elune"] = {
+		},
+		["Orig - Sisters of Elune"] = {
 		},
 	},
 }
