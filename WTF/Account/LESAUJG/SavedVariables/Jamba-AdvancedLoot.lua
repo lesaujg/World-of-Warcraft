@@ -20,8 +20,8 @@ JambaAdvancedLootProfileDB = {
 		},
 		["Torinar - Sisters of Elune"] = {
 			["advancedLoot"] = true,
-			["manageAutoLoot"] = true,
 			["autoCloseLootWindowOnSlaves"] = true,
+			["manageAutoLoot"] = true,
 		},
 		["Bracnar - Sisters of Elune"] = {
 		},

@@ -1,3 +1,12 @@
 VER 3 0000000000000001 "Decursive" "INV_MISC_QUESTIONMARK"
 /script DecursiveRootTable.Dcr:Println('No spell available')
 END
+VER 3 0000000000000002 "RandomMount" "INV_MISC_QUESTIONMARK"
+/use [mod:ctrlshift]Grand Expedition Yak
+/use [mod:shift]Traveler's Tundra Mammoth
+/use [mod:ctrl]Azure Water Strider
+/use [mod:alt]Ashes of Al'ar
+#showtooltip [nomod]White Ram
+/click [nobtn:2]LiteMount
+/click [btn:2]LiteMount RightButton
+END

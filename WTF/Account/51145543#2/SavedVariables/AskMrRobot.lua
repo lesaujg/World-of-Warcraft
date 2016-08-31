@@ -2,6 +2,10 @@
 AskMrRobotDb3 = {
 	["char"] = {
 		["Magnara - Sisters of Elune"] = {
+			["Logging"] = {
+				["LastDiff"] = 0,
+				["LastZone"] = "Outland",
+			},
 			["Talents"] = {
 				"0000000", -- [1]
 			},
@@ -9,18 +13,14 @@ AskMrRobotDb3 = {
 				{
 				}, -- [1]
 			},
-			["Logging"] = {
-				["LastDiff"] = 0,
-				["LastZone"] = "Outland",
-			},
 		},
 		["Torinara - Sisters of Elune"] = {
+			["Talents"] = {
+				[3] = "0000000",
+			},
 			["Logging"] = {
 				["LastDiff"] = 0,
 				["LastZone"] = "Eastern Kingdoms",
-			},
-			["Talents"] = {
-				[3] = "0000000",
 			},
 			["Equipped"] = {
 				[3] = {
@@ -45,12 +45,12 @@ AskMrRobotDb3 = {
 			},
 		},
 	},
+	["global"] = {
+		["Region"] = "US",
+	},
 	["profileKeys"] = {
 		["Magnara - Sisters of Elune"] = "Magnara - Sisters of Elune",
 		["Torinara - Sisters of Elune"] = "Torinara - Sisters of Elune",
-	},
-	["global"] = {
-		["Region"] = "US",
 	},
 	["profiles"] = {
 		["Magnara - Sisters of Elune"] = {

@@ -19,10 +19,10 @@ JambaFollowProfileDB = {
 		["Uldaris - Sisters of Elune"] = {
 		},
 		["Torinar - Sisters of Elune"] = {
-			["overrideStrobeTargetWithMaster"] = true,
-			["doNotWarnFollowStrobing"] = true,
 			["autoFollowAfterCombat"] = true,
+			["overrideStrobeTargetWithMaster"] = true,
 			["followMaster"] = 1,
+			["doNotWarnFollowStrobing"] = true,
 			["useFollowMaster"] = true,
 		},
 		["Bracnar - Sisters of Elune"] = {

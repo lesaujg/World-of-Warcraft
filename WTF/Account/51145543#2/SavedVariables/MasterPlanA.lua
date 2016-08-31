@@ -1,9 +1,13 @@
 
 MasterPlanAG = {
 	["Sisters of Elune"] = {
-		["Magnara"] = {
+		["Torinara"] = {
 			["class"] = "SHAMAN",
 			["faction"] = "Alliance",
+		},
+		["Magnara"] = {
+			["faction"] = "Alliance",
+			["class"] = "SHAMAN",
 		},
 	},
 }

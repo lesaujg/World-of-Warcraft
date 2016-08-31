@@ -10,8 +10,8 @@ JambaDisplayTeamProfileDB = {
 		},
 		["Torinara - Sisters of Elune"] = {
 			["frameYOffset"] = 18.0000305175781,
-			["teamListTitleHeight"] = 0,
 			["frameXOffset"] = 2.99999713897705,
+			["teamListTitleHeight"] = 0,
 		},
 	},
 }

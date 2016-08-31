@@ -84,9 +84,9 @@ BagBrother: disabled
 Basic_Resources: disabled
 Claw: disabled
 BittensSpellFlash_Hunter: disabled
-HandyNotes_DraenorTreasures: enabled
+HandyNotes_DraenorTreasures: disabled
 LiteMount: enabled
-MasterPlan: enabled
+MasterPlan: disabled
 OPie: enabled
 RaidAchievement_WoDHeroics: enabled
 RaidAchievement_WoDRaids: enabled
@@ -141,7 +141,7 @@ Factionizer: disabled
 GTFO: enabled
 HandyNotes: enabled
 MacroToolkit: disabled
-MasterPlanA: enabled
+MasterPlanA: disabled
 Pawn: enabled
 TradeSkillMaster_AppHelper: enabled
 TradeSkillMaster_CoolDowns: disabled
@@ -172,7 +172,9 @@ TeleportCloak: enabled
 TradeSkillMaster_Vendoring: disabled
 DBM-Nighthold: enabled
 DBM-EmeraldNightmare: enabled
-AdvancedIconSelector: enabled
-IskarAssist: enabled
+AdvancedIconSelector: disabled
+IskarAssist: disabled
 DBM-BrokenIsles: enabled
 DBM-Party-Legion: enabled
+Jamba: disabled
+Jamba-AdvancedLoot: enabled

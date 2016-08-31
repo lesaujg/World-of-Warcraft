@@ -438,8 +438,8 @@ JambaItemUseProfileDB = {
 			["frameYOffset"] = 130,
 			["itemsAdvanced"] = {
 				{
-					["action"] = "empty",
-					["kind"] = "empty",
+					["action"] = "item:141411",
+					["kind"] = "item",
 				}, -- [1]
 				{
 					["action"] = "empty",

@@ -56,8 +56,8 @@ function TukuiUnitFrames:DisableBlizzard()
 	end
 
 	if C["Raid"].Enable then
-		InterfaceOptionsFrameCategoriesButton11:SetScale(0.00001)
-		InterfaceOptionsFrameCategoriesButton11:SetAlpha(0)
+		InterfaceOptionsFrameCategoriesButton10:SetHeight(0.00001)
+		InterfaceOptionsFrameCategoriesButton10:SetAlpha(0)
 
 		if CompactRaidFrameManager then
 			CompactRaidFrameManager:SetParent(Panels.Hider)
@@ -89,11 +89,6 @@ function TukuiUnitFrames:DisableBlizzard()
 			HidePartyFrame = Noop
 		end
 	end
-
-	InterfaceOptionsFrameCategoriesButton9:SetHeight(0.00001)
-	InterfaceOptionsFrameCategoriesButton9:SetAlpha(0)
-	InterfaceOptionsFrameCategoriesButton10:SetHeight(0.00001)
-	InterfaceOptionsFrameCategoriesButton10:SetAlpha(0)
 end
 
 function TukuiUnitFrames:ShortValue()
@@ -402,6 +397,10 @@ local function clearbit(x, p)
 end
 
 function TukuiUnitFrames:UpdateTotemOverride(event, slot)
+	if slot > 4 then
+		return
+	end
+	
 	local Bar = self.Totems
 	local Priorities = Bar.__map
 

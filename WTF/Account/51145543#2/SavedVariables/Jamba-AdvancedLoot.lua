@@ -9,8 +9,8 @@ JambaAdvancedLootProfileDB = {
 		},
 		["Torinara - Sisters of Elune"] = {
 			["advancedLoot"] = true,
-			["autoCloseLootWindowOnSlaves"] = true,
 			["manageAutoLoot"] = true,
+			["autoCloseLootWindowOnSlaves"] = true,
 		},
 	},
 }

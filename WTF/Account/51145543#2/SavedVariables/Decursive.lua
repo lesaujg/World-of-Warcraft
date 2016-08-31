@@ -1,20 +1,22 @@
 
 DecursiveDB = {
+	["global"] = {
+		["LastVersionAnnounce"] = 1472574264,
+	},
 	["class"] = {
 		["SHAMAN"] = {
 			["CureOrder"] = {
-				-11, -- [1]
-				-15, -- [2]
-				nil, -- [3]
-				-12, -- [4]
-				[8] = -13,
-				[16] = -14,
-				[32] = -16,
+				nil, -- [1]
+				3, -- [2]
+				[8] = -15,
+				[16] = -16,
+				[32] = 4,
 			},
 		},
 	},
 	["profileKeys"] = {
 		["Magnara - Sisters of Elune"] = "Default",
+		["Torinara - Sisters of Elune"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

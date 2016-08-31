@@ -108,23 +108,23 @@ JambaTeamProfileDB = {
 			},
 		},
 		["Torinar - Sisters of Elune"] = {
+			["masterChangePromoteLeader"] = true,
 			["master"] = "Torinara-SistersofElune",
 			["teamList"] = {
 				["Torinara-SistersofElune"] = 1,
 				["Torinar-SistersofElune"] = 2,
 			},
-			["masterChangePromoteLeader"] = true,
 			["characterOnline"] = {
 				["Torinara-SistersofElune"] = false,
 				["Torinar-SistersofElune"] = true,
 			},
 		},
 		["Bracnar - Sisters of Elune"] = {
-			["master"] = "Bracnar-SistersofElune",
 			["teamList"] = {
 				["Bracnar-SistersofElune"] = 1,
 				["Torinara-SistersofElune"] = 2,
 			},
+			["master"] = "Bracnar-SistersofElune",
 			["characterOnline"] = {
 				["Bracnar-SistersofElune"] = true,
 				["Torinara-SistersofElune"] = false,

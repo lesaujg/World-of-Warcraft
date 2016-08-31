@@ -7,31 +7,33 @@ TradeSkillMaster_DestroyingDB = {
 	["_scopeKeys"] = {
 		["char"] = {
 			"Magnara - Sisters of Elune", -- [1]
-		},
-		["factionrealm"] = {
-			"Alliance - Sisters of Elune", -- [1]
-		},
-		["profile"] = {
-			"Default", -- [1]
+			"Torinara - Sisters of Elune", -- [2]
 		},
 		["realm"] = {
 			"Sisters of Elune", -- [1]
 		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["factionrealm"] = {
+			"Alliance - Sisters of Elune", -- [1]
+		},
 	},
 	["g@ @autoShow"] = true,
 	["g@ @autoStack"] = true,
-	["_currentProfile"] = {
-		["Magnara - Sisters of Elune"] = "Default",
-	},
-	["_version"] = 1,
+	["g@ @logDays"] = 14,
+	["g@ @deAbovePrice"] = "0c",
 	["g@ @history"] = {
 	},
 	["g@ @helpPlatesShown"] = {
 		["destroyingFrame"] = true,
 	},
-	["g@ @includeSoulbound"] = false,
 	["_hash"] = 14107345,
+	["g@ @includeSoulbound"] = false,
 	["g@ @deMaxQuality"] = 3,
-	["g@ @deAbovePrice"] = "0c",
-	["g@ @logDays"] = 14,
+	["_version"] = 1,
+	["_currentProfile"] = {
+		["Magnara - Sisters of Elune"] = "Default",
+		["Torinara - Sisters of Elune"] = "Default",
+	},
 }

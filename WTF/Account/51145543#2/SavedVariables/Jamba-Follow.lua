@@ -8,10 +8,10 @@ JambaFollowProfileDB = {
 		["Magnara - Sisters of Elune"] = {
 		},
 		["Torinara - Sisters of Elune"] = {
-			["autoFollowAfterCombat"] = true,
 			["overrideStrobeTargetWithMaster"] = true,
 			["doNotWarnFollowStrobing"] = true,
 			["followMaster"] = 1,
+			["autoFollowAfterCombat"] = true,
 		},
 	},
 }

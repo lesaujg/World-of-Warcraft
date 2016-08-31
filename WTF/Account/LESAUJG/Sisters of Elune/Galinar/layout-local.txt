@@ -27,17 +27,3 @@ X: 0
 Y: 124
 W: 150
 H: 42
-Frame: CrossRealmAssistJoinUI
-FrameLevel: 0
-Anchor: RIGHT
-X: -56
-Y: -105
-W: 405
-H: 335
-Frame: _NPCScanOverlayKey
-FrameLevel: 121
-Anchor: CENTER
-X: -117
-Y: -71
-W: 182
-H: 160
