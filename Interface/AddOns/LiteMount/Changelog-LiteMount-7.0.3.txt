@@ -1,0 +1,12 @@
+tag 7.0.3
+d60786bf1535545988d1e5b995a7374479f73d2b
+Mike "Xodiv" Battersby <mib@post.com>
+2016-09-01 09:10:26 +1000
+
+Tagging 7.0.3, fix bug with using empty unavailable macro.
+
+
+--------------------
+
+Mike "Xodiv" Battersby:
+	- Fix bug with always using unavailable macro

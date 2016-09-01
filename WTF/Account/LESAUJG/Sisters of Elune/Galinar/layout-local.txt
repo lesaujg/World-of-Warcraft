@@ -1,11 +1,4 @@
 Version: 1
-Frame: BaudManifestDisplay1
-FrameLevel: 34
-Anchor: BOTTOMRIGHT
-X: -218
-Y: 43
-W: 242
-H: 662
 Frame: DBMMinimapButton
 FrameLevel: 3
 Anchor: TOPRIGHT
@@ -13,13 +6,6 @@ X: -144
 Y: -119
 W: 32
 H: 32
-Frame: JambaTargetListWindowFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 0
-W: 180
-H: 179
 Frame: _NPCScanButton
 FrameLevel: 1
 Anchor: BOTTOM
@@ -27,3 +13,10 @@ X: 0
 Y: 124
 W: 150
 H: 42
+Frame: BaudManifestDisplay1
+FrameLevel: 34
+Anchor: BOTTOMRIGHT
+X: -218
+Y: 43
+W: 242
+H: 662

@@ -1,33 +1,33 @@
 
 SkadaPerCharDB = {
-	["sets"] = {
-	},
 	["total"] = {
 		["healingabsorbed"] = 0,
 		["dispells"] = 0,
 		["ccbreaks"] = 0,
 		["time"] = 0,
 		["interrupts"] = 0,
-		["power"] = {
-		},
+		["mobdone"] = 0,
 		["damage"] = 0,
 		["players"] = {
 		},
 		["deaths"] = 0,
 		["mobs"] = {
 		},
+		["power"] = {
+		},
 		["mobtaken"] = 0,
-		["multistrikes"] = 0,
 		["healing"] = 0,
 		["overhealing"] = 0,
-		["shielding"] = 0,
+		["damagetaken"] = 0,
 		["alertDamage"] = 0,
 		["starttime"] = 1472385280,
 		["name"] = "Total",
 		["alertCount"] = 0,
-		["damagetaken"] = 0,
+		["shielding"] = 0,
 		["mobhdone"] = 0,
 		["last_action"] = 1472385280,
-		["mobdone"] = 0,
+		["multistrikes"] = 0,
+	},
+	["sets"] = {
 	},
 }

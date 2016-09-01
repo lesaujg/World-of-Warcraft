@@ -1,0 +1,8 @@
+2016-08-31  yellowfive  <yellowfive>
+
+[8914581c912f] [v40]
+* AskMrRobot-Serializer/AskMrRobot-Serializer.lua, AskMrRobot.toc, Export.lua:
+
+update for scanning relics in bags
+
+
