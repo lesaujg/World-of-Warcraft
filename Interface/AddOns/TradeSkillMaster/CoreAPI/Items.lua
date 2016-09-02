@@ -197,9 +197,10 @@ function TSMAPI.Item:IsSoulbound(...)
 	if not TSMScanTooltip then
 		CreateFrame("GameTooltip", "TSMScanTooltip", UIParent, "GameTooltipTemplate")
 		-- set off the screen
-		TSMScanTooltip:SetPoint("LEFT", UIParent, "RIGHT")
-		TSMScanTooltip:SetOwner(UIParent, "ANCHOR_NONE")
+		TSMScanTooltip:SetOwner(UIParent, "ANCHOR_BOTTOMLEFT")
+		TSMScanTooltip:SetScript("OnUpdate", function(self) self:Hide() end)
 	end
+	TSMScanTooltip:Show()
 	TSMScanTooltip:ClearLines()
 
 	local result = nil
@@ -257,10 +258,10 @@ function TSMAPI.Item:IsCraftingReagent(itemLink)
 
 	if not TSMScanTooltip then
 		CreateFrame("GameTooltip", "TSMScanTooltip", UIParent, "GameTooltipTemplate")
+		TSMScanTooltip:SetOwner(UIParent, "ANCHOR_BOTTOMLEFT")
+		TSMScanTooltip:SetScript("OnUpdate", function(self) self:Hide() end)
 	end
-	TSMScanTooltip:SetOwner(UIParent, "ANCHOR_NONE")
-	-- set off the screen
-	TSMScanTooltip:SetPoint("LEFT", UIParent, "RIGHT")
+	TSMScanTooltip:Show()
 	TSMScanTooltip:ClearLines()
 	TSMScanTooltip:SetHyperlink(itemLink)
 

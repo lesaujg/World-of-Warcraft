@@ -86,37 +86,14 @@ TukuiConfigShared = {
 		},
 	},
 	["Account"] = {
-		["Raid"] = {
-			["MaxUnitPerColumn"] = 10,
-			["RangeAlpha"] = 0.3,
-		},
-		["Party"] = {
-			["RangeAlpha"] = 0.3,
+		["Bags"] = {
+			["Enable"] = false,
 		},
 		["General"] = {
 			["UIScale"] = 0.64,
 		},
 		["ActionBars"] = {
-			["NormalButtonSize"] = 27,
-			["ButtonSpacing"] = 4,
-			["PetButtonSize"] = 25,
-		},
-		["Chat"] = {
-			["ScrollByX"] = 3,
-		},
-		["Bags"] = {
-			["Enable"] = false,
-			["ItemsPerRow"] = 11,
-			["ButtonSize"] = 28,
-			["Spacing"] = 4,
-		},
-		["NamePlates"] = {
-			["Height"] = 6,
-			["CastHeight"] = 4,
-			["Width"] = 110,
-		},
-		["Auras"] = {
-			["BuffsPerRow"] = 12,
+			["HotKey"] = true,
 		},
 	},
 }

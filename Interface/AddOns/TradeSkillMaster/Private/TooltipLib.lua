@@ -240,7 +240,10 @@ do
 			reg.quantity = lNum == hNum and lNum or 1
 		end,
 		SetBagItem = function(self, ...) PreHookHelper(self, GetContainerItemInfo, 2, ...) end,
-		SetGuildBankItem = function(self, ...) PreHookHelper(self, GetGuildBankItemInfo, 2, ...) end,
+		SetGuildBankItem = function(self, ...)
+			local reg = PreHookHelper(self, GetGuildBankItemInfo, 2, ...)
+			reg.item = GetGuildBankItemLink(...)
+		end,
 		SetVoidItem = function(self, ...) PreHookHelper(self, 1) end,
 		SetVoidDepositItem = function(self, ...) PreHookHelper(self, 1) end,
 		SetVoidWithdrawalItem = function(self, ...) PreHookHelper(self, 1) end,

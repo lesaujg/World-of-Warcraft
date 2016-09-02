@@ -20,13 +20,6 @@ X: -149
 Y: -123
 W: 32
 H: 32
-Frame: JambaTargetListWindowFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 0
-W: 180
-H: 179
 Frame: _NPCScanButton
 FrameLevel: 1
 Anchor: BOTTOM
@@ -34,10 +27,3 @@ X: 0
 Y: 128
 W: 150
 H: 42
-Frame: SkadaBarWindowSkada
-FrameLevel: 5
-Anchor: BOTTOMLEFT
-X: 20
-Y: 162
-W: 240
-H: 200

@@ -1,3 +1,10 @@
+v3.5.2
+*Added prelimary disenchant ratios for crafting searches and destroy values.
+
+v3.5.1
+*Added missing bonus ids.
+*Fixed some tooltip issues.
+
 v3.5
 *Replaced LibExtraTip with built-in tooltip code to improve reliablity and fix various bugs.
 *Improved performance of importing large groups.
