@@ -1,8 +1,7 @@
 
 DecursiveDB = {
-	["profileKeys"] = {
-		["Magnara - Sisters of Elune"] = "Default",
-		["Torinara - Sisters of Elune"] = "Default",
+	["global"] = {
+		["LastVersionAnnounce"] = 1472875344,
 	},
 	["class"] = {
 		["SHAMAN"] = {
@@ -15,8 +14,9 @@ DecursiveDB = {
 			},
 		},
 	},
-	["global"] = {
-		["LastVersionAnnounce"] = 1472788268,
+	["profileKeys"] = {
+		["Magnara - Sisters of Elune"] = "Default",
+		["Torinara - Sisters of Elune"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

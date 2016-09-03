@@ -33,11 +33,11 @@ JambaTeamProfileDB = {
 	["profiles"] = {
 		["Magnara - Sisters of Elune"] = {
 			["master"] = "Magnara-SistersofElune",
-			["teamList"] = {
-				["Magnara-SistersofElune"] = 1,
-			},
 			["characterOnline"] = {
 				["Magnara-SistersofElune"] = true,
+			},
+			["teamList"] = {
+				["Magnara-SistersofElune"] = 1,
 			},
 		},
 		["Torinara - Sisters of Elune"] = {

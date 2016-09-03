@@ -6,8 +6,8 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 		["Magnara"] = {
-			["class"] = "SHAMAN",
 			["faction"] = "Alliance",
+			["class"] = "SHAMAN",
 		},
 	},
 }
