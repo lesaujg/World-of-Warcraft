@@ -1,5 +1,12 @@
+v3.5.4
+*Added workaround for item level issue with some legion items.
+
+v3.5.3
+*Added preliminary prospect / milling ratios for crafting searches and destroy values.
+*Fixed an issue with soulbound item detection.
+
 v3.5.2
-*Added prelimary disenchant ratios for crafting searches and destroy values.
+*Added preliminary disenchant ratios for crafting searches and destroy values.
 
 v3.5.1
 *Added missing bonus ids.

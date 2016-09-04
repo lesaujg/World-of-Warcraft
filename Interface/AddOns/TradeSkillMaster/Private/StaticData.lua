@@ -751,6 +751,15 @@ TSM.STATIC_DATA.predefinedConversions = {
 		{"i:109128", 0.42, "mill"},
 		{"i:109129", 0.42, "mill"},
 	},
+	["i:129032"] = { -- Roseate Pigment (no legion ink)
+		{"i:124101", 0.43, "mill"},
+		{"i:124102", 0.59, "mill"},
+		{"i:124103", 0.45, "mill"},
+		{"i:124104", 0.45, "mill"},
+		{"i:124105", 1.17, "mill"},
+		{"i:124106", 0.43, "mill"},
+		{"i:128304", 0.2, "mill"},
+	},
 	-- ======================================= Rare Pigments =======================================
 	["i:43109"] = { -- Icy Pigment (Snowfall Ink)
 		{"i:39969", 0.05, "mill"},
@@ -822,6 +831,15 @@ TSM.STATIC_DATA.predefinedConversions = {
 		{"i:2450", 0.05, "mill"},
 		{"i:785", 0.05, "mill"},
 		{"i:2452", 0.05, "mill"},
+	},
+	["i:129034"] = { -- Sallow Pigment (no legion ink)
+		{"i:124101", 0.041, "mill"},
+		{"i:124102", 0.058, "mill"},
+		{"i:124103", 0.053, "mill"},
+		{"i:124104", 0.041, "mill"},
+		{"i:124105", 0.038, "mill"},
+		{"i:124106", 2.225, "mill"},
+		{"i:128304", 0.001, "mill"},
 	},
 	-- ======================================== Vanilla Gems =======================================
 	["i:774"] = { -- Malachite
@@ -997,6 +1015,35 @@ TSM.STATIC_DATA.predefinedConversions = {
 		{"i:72103", 0.04, "prospect"},
 		{"i:72094", 0.04, "prospect"},
 	},
+	["i:130172"] = { -- Sangrite
+		{"i:123918", 0.008, "prospect"},
+		{"i:123919", 0.008, "prospect"},
+	},
+	["i:130173"] = { -- Deep Amber
+		{"i:123918", 0.01, "prospect"},
+		{"i:123919", 0.01, "prospect"},
+	},
+	["i:130174"] = { -- Azsunite
+		{"i:123918", 0.016, "prospect"},
+		{"i:123919", 0.016, "prospect"},
+	},
+	["i:130175"] = { -- Chaotic Spinel
+		{"i:123918", 0.006, "prospect"},
+		{"i:123919", 0.006, "prospect"},
+	},
+	["i:130176"] = { -- Skystone
+		{"i:123918", 0.012, "prospect"},
+		{"i:123919", 0.012, "prospect"},
+	},
+	["i:130177"] = { -- Queen's Opal
+		{"i:123918", 0.016, "prospect"},
+		{"i:123919", 0.016, "prospect"},
+	},
+	["i:129100"] = { -- Gem Chip - mostly trash but limited use in some professions
+		{"i:123918", 0.2, "prospect"},
+		{"i:123919", 0.2, "prospect"},
+		{"i:124101", 0.03, "mill"},
+	},
 	-- ========================================== Rare Gems ========================================
 	["i:23440"] = { -- Dawnstone
 		{"i:23424", 0.002, "prospect"},
@@ -1117,6 +1164,30 @@ TSM.STATIC_DATA.predefinedConversions = {
 		{"i:72093", 0.008, "prospect"},
 		{"i:72103", 0.03, "prospect"},
 		{"i:72094", 0.03, "prospect"},
+	},
+	["i:130178"] = { -- FuryStone
+		{"i:123918", 0.002, "prospect"},
+		{"i:123919", 0.002, "prospect"},
+	},
+	["i:130179"] = { -- Eye of Prophecy
+		{"i:123918", 0.002, "prospect"},
+		{"i:123919", 0.002, "prospect"},
+	},
+	["i:130180"] = { -- Dawnlight
+		{"i:123918", 0.002, "prospect"},
+		{"i:123919", 0.002, "prospect"},
+	},
+	["i:130181"] = { -- Pandemonite
+		{"i:123918", 0.002, "prospect"},
+		{"i:123919", 0.002, "prospect"},
+	},
+	["i:130182"] = { -- Maelstrom Sapphire
+		{"i:123918", 0.002, "prospect"},
+		{"i:123919", 0.002, "prospect"},
+	},
+	["i:130183"] = { -- Shadowruby
+		{"i:123918", 0.002, "prospect"},
+		{"i:123919", 0.002, "prospect"},
 	},
 	-- =========================================== Essences ========================================
 	["i:52719"] = {{"i:52718", 1/3, "transform"}}, -- Celestial Essence
