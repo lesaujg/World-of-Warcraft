@@ -866,10 +866,10 @@ end
 function private.GetScanTooltip()
 	if not TSMScanTooltip then
 		CreateFrame("GameTooltip", "TSMScanTooltip", UIParent, "GameTooltipTemplate")
-		TSMScanTooltip:SetScript("OnUpdate", function(self) self:Hide() end)
 	end
 	TSMScanTooltip:Show()
-	TSMScanTooltip:SetOwner(UIParent, "ANCHOR_BOTTOMLEFT")
+	TSMScanTooltip:SetClampedToScreen(false)
+	TSMScanTooltip:SetOwner(UIParent, "ANCHOR_BOTTOMRIGHT", 1000000, 100000)
 	return TSMScanTooltip
 end
 

@@ -1,3 +1,12 @@
+v3.1.14
+*Fixed issue with mapping for legion permanent enchants.
+
+v3.1.13
+*Fixed issues with ranked recipes.
+
+v3.1.12
+*Added mapping for legion permanent enchants.
+
 v3.1.11
 *Fixed bug with filtered recipes in the craft queue being removed if you close the profession.
 

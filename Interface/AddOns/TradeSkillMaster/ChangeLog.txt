@@ -1,3 +1,10 @@
+v3.5.6
+*Added soulbound materials added in Legion.
+
+v3.5.5
+*Fixed error caused by some Legion items (mainly with regards to TSM_Destroying).
+*Fixed issue with tooltip flashing in the bottom-left of the screen.
+
 v3.5.4
 *Added workaround for item level issue with some legion items.
 

@@ -8,6 +8,21 @@ VER 3 010000000000005B "_Bestial Wrath" "INV_MISC_QUESTIONMARK"
 /use [nogroup:raid] [mod] 12
 /castsequence reset=combat/10 Bestial Wrath, null
 END
+VER 3 010000000000005E "_Cobra Shot" "INV_MISC_QUESTIONMARK"
+/tar [exists];pettarget
+/cast Cobra Shot
+END
+VER 3 010000000000005C "_Kill Command" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petattack
+/petassist
+/tar [exists];pettarget
+/cast Kill Command
+END
+VER 3 010000000000005D "_Multi-Shot" "INV_MISC_QUESTIONMARK"
+/tar [exists];pettarget
+/cast Multi-Shot
+END
 VER 3 010000000000000E "_Pet Attack/Foll" "Ability_Druid_ChallangingRoar"
 #/tar Corrupted Blood
 /petfollow [button:2]
@@ -36,12 +51,6 @@ VER 3 010000000000005A "Disengage" "INV_MISC_QUESTIONMARK"
 /stopcasting
 /cast Disengage
 /cast Auto Shot
-END
-VER 3 010000000000005C "Kill Command" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/petattack
-/petassist
-/cast Kill Command
 END
 VER 3 010000000000004D "MD+" "INV_Misc_QuestionMark"
 #show Misdirection

@@ -139,6 +139,10 @@ TSM.STATIC_DATA.soulboundMats = {
 	["i:112377"] = true, -- War Paints
 	["i:115524"] = true, -- Taladite Crystal
 	["i:120945"] = true, -- Primal Spirit
+	["i:124124"] = true, -- Blood of Sargeras
+	["i:137595"] = true, -- Viscous Transmutagen
+	["i:137596"] = true, -- Black Transmutagen
+	["i:137597"] = true, -- Oily Transmutagen
 }
 
 
