@@ -17,6 +17,10 @@ END
 VER 3 0000000000000097 "Entanglement" "INV_MISC_QUESTIONMARK"
 /tar entanglement
 END
+VER 3 0000000000000099 "Fish" "INV_MISC_QUESTIONMARK"
+/equipset Fishing
+/use Fishing
+END
 VER 3 0000000000000090 "GetKraken!" "ABILITY_HUNTER_EXPLOSIVESHOT"
 #showtooltip Flaming Spears
 /targetexact [nodead,nomod:ctrl] Kvaldir Deepcaller
