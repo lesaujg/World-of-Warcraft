@@ -1,8 +1,22 @@
 
 TradeSkillMaster_ShoppingDB = {
-	["g@ @sniperCustomPrice"] = "0c",
-	["g@ @maxDeSearchPercent"] = 1,
-	["g@ @postUndercut"] = "1c",
+	["_currentProfile"] = {
+		["Sanjuri - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
+		["Guldahka - Turalyon"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Orig - Sisters of Elune"] = "Default",
+		["Mandelbrot - Sisters of Elune"] = "Default",
+		["Leanara - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+		["Belrath - Sisters of Elune"] = "Default",
+		["Torinar - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
+	},
+	["_version"] = 3,
+	["g@ @sniperVendorPrice"] = true,
 	["g@ @postBidPercent"] = 0.95,
 	["_scopeKeys"] = {
 		["char"] = {
@@ -20,110 +34,113 @@ TradeSkillMaster_ShoppingDB = {
 			"Sanjuri - Sisters of Elune", -- [12]
 			"Torinar - Sisters of Elune", -- [13]
 		},
-		["realm"] = {
-			"Sisters of Elune", -- [1]
-			"Turalyon", -- [2]
+		["factionrealm"] = {
+			"Alliance - Sisters of Elune", -- [1]
+			"Horde - Turalyon", -- [2]
 		},
 		["profile"] = {
 			"Default", -- [1]
 		},
-		["factionrealm"] = {
-			"Alliance - Sisters of Elune", -- [1]
-			"Horde - Turalyon", -- [2]
+		["realm"] = {
+			"Sisters of Elune", -- [1]
+			"Turalyon", -- [2]
 		},
 	},
 	["g@ @helpPlatesShown"] = {
 		["auction"] = true,
 	},
-	["g@ @sniperVendorPrice"] = true,
-	["_hash"] = 1861581,
+	["g@ @postUndercut"] = "1c",
+	["g@ @minDeSearchLvl"] = 1,
+	["g@ @maxDeSearchLvl"] = 735,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1473219557,
+			["name"] = "true iron ore",
+			["filter"] = "true iron ore",
+		}, -- [1]
+		{
+			["lastSearch"] = 1473219469,
+			["name"] = "Sumptuous Fur/exact",
+			["filter"] = "Sumptuous Fur/exact",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [2]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1473128676,
 			["name"] = "felslate",
 			["filter"] = "felslate",
-		}, -- [1]
+		}, -- [3]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1472874757,
 			["name"] = "vellum",
 			["filter"] = "vellum",
-		}, -- [2]
+		}, -- [4]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1472776571,
 			["name"] = "tube",
 			["filter"] = "tube",
-		}, -- [3]
+		}, -- [5]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1472774379,
 			["name"] = "blackrock ore",
 			["filter"] = "blackrock ore",
-		}, -- [4]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1472774357,
-			["name"] = "true iron ore",
-			["filter"] = "true iron ore",
-		}, -- [5]
+		}, -- [6]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1472774351,
 			["name"] = "loot",
 			["filter"] = "loot",
-		}, -- [6]
+		}, -- [7]
 		{
 			["lastSearch"] = 1472658141,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [7]
+		}, -- [8]
 		{
 			["lastSearch"] = 1471534982,
 			["name"] = "hexweave bag",
 			["filter"] = "hexweave bag",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [8]
+		}, -- [9]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1471530961,
 			["name"] = "knowledge",
 			["filter"] = "knowledge",
-		}, -- [9]
+		}, -- [10]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1471320424,
 			["name"] = "pocket",
 			["filter"] = "pocket",
-		}, -- [10]
+		}, -- [11]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1471235861,
 			["name"] = "temporal",
 			["filter"] = "temporal",
-		}, -- [11]
+		}, -- [12]
 		{
 			["lastSearch"] = 1470714433,
 			["name"] = "universal",
 			["filter"] = "universal",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [12]
+		}, -- [13]
 		{
 			["lastSearch"] = 1470714414,
 			["name"] = "arcane c",
 			["filter"] = "arcane c",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [13]
-		{
-			["lastSearch"] = 1470714394,
-			["name"] = "Sumptuous Fur/exact",
-			["filter"] = "Sumptuous Fur/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [14]
@@ -512,25 +529,8 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "saberfish",
 		}, -- [78]
 	},
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
-	["g@ @marketValueSource"] = "dbmarket",
-	["g@ @maxDeSearchLvl"] = 735,
-	["g@ @minDeSearchLvl"] = 1,
+	["_hash"] = 1861581,
 	["g@ @normalPostPrice"] = "150% dbmarket",
-	["_version"] = 3,
-	["_currentProfile"] = {
-		["Sanjuri - Sisters of Elune"] = "Default",
-		["Galinar - Sisters of Elune"] = "Default",
-		["Guldahka - Turalyon"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Orig - Sisters of Elune"] = "Default",
-		["Mandelbrot - Sisters of Elune"] = "Default",
-		["Leanara - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
-		["Belrath - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
-		["Torinar - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-	},
+	["g@ @maxDeSearchPercent"] = 1,
+	["g@ @sniperCustomPrice"] = "0c",
 }
