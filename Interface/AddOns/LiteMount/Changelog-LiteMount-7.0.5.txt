@@ -1,0 +1,12 @@
+tag 7.0.5
+b773af080d0edd66a2911ddf55389b0e4beb0e83
+Mike "Xodiv" Battersby <mib@post.com>
+2016-09-10 10:40:26 +1000
+
+Tagging 7.0.5, still fixing up class hall areas
+
+
+--------------------
+
+Mike "Xodiv" Battersby:
+	- Can't fly in Skyhold, warrior class hall area.
