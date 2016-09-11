@@ -178,3 +178,4 @@ DBM-BrokenIsles: enabled
 DBM-Party-Legion: enabled
 Jamba: disabled
 Jamba-AdvancedLoot: enabled
+!KalielsTracker: disabled

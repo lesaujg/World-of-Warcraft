@@ -178,3 +178,4 @@ AdvancedIconSelector: enabled
 IskarAssist: enabled
 DBM-BrokenIsles: enabled
 DBM-Party-Legion: enabled
+!KalielsTracker: disabled

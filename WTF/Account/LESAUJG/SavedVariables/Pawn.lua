@@ -9,6 +9,8 @@ PawnCommon = {
 	["ColorTooltipBorder"] = true,
 	["IgnoreItemUpgrades"] = true,
 	["ShowTooltipIcons"] = true,
+	["ShowSpecIcons"] = true,
+	["ShowSocketingAdvisor"] = true,
 	["Scales"] = {
 		["\"Wowhead\":SHAMAN3"] = {
 			["Color"] = "0070de",
@@ -710,8 +712,6 @@ PawnCommon = {
 			["Role"] = "DAMAGER",
 		},
 	},
-	["ShowSocketingAdvisor"] = true,
-	["ShowSpecIcons"] = true,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ButtonPosition"] = 2,
 	["IgnoreGemsWhileLeveling"] = true,
