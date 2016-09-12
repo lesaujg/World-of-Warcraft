@@ -25,16 +25,28 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
+		["date"] = "Sunday 9/11",
+		["rows"] = 6,
+	}, -- [1]
+	{
 		["date"] = "Saturday 9/10",
 		["rows"] = 3,
-	}, -- [1]
+	}, -- [2]
 }
 FactionAddictLogEntries = {
+	{
+		["The Nightfallen"] = 350,
+		["Valarjar"] = 1000,
+		["Highmountain Tribe"] = 660,
+		["The Wardens"] = 2525,
+		["Court of Farondis"] = 2275,
+		["Dreamweavers"] = 1950,
+	}, -- [1]
 	{
 		["The Nightfallen"] = 250,
 		["Court of Farondis"] = 250,
 		["Highmountain Tribe"] = 1235,
-	}, -- [1]
+	}, -- [2]
 }
 FactionAddictConfigIsInactive = {
 	[1737] = false,
