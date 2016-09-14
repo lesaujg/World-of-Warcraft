@@ -305,7 +305,7 @@ local function UpdateTameableRareNPCOptions()
 		for npcID in pairs(private.MapNPCs[mapID]) do
 			local npcData = private.NPCData[npcID]
 
-			if npcData.isTameable and not npcData.achievementID and npcData.factionGroup ~= private.PlayerFactionGroup then
+			if npcData.isTameable and npcData.factionGroup ~= private.PlayerFactionGroup then
 				npcNames[npcID] = npcData.name
 				npcIDs[#npcIDs + 1] = npcID
 			end
@@ -586,7 +586,8 @@ local function GetNPCOptions()
 								value = private.UnitTokenToCreatureID(value)
 							end
 
-							if tonumber(value) then
+							local numberValue = tonumber(value)
+							if numberValue and not private.NPCData[numberValue] then
 								return true
 							end
 						end,

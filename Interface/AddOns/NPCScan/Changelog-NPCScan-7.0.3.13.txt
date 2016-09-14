@@ -1,0 +1,12 @@
+tag 7.0.3.13
+a3902c43cf3eb4d56aa87325cd2ac52a8c56b9b5
+James D. Callahan III <jcallahan@curse.com>
+2016-09-13 10:29:50 -0500
+
+
+
+--------------------
+
+James D. Callahan III:
+	- Ignore achievementID for tameable NPCs so they'll show up as under the Tameable tab as well.
+	- Minor cleanup.

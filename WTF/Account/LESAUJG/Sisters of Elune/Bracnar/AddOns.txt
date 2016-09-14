@@ -126,9 +126,9 @@ DBM-TerraceofEndlessSpring: enabled
 DBM-TheEye: enabled
 DBM-ThroneFourWinds: enabled
 DBM-ThroneofThunder: enabled
-WeakAuras: disabled
-WeakAurasModelPaths: disabled
-WeakAurasOptions: disabled
+WeakAuras: enabled
+WeakAurasModelPaths: enabled
+WeakAurasOptions: enabled
 WeakAurasTutorials: disabled
 TradeSkillMaster_CompetitorTracker: disabled
 TomTom: disabled

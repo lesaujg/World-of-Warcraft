@@ -24,8 +24,8 @@ MasterPlanAG = {
 			["class"] = "HUNTER",
 		},
 		["Ghiaccioli"] = {
-			["class"] = "MAGE",
 			["faction"] = "Alliance",
+			["class"] = "MAGE",
 		},
 		["Mandelbrot"] = {
 			["class"] = "ROGUE",
