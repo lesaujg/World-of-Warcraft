@@ -628,8 +628,8 @@ GTFO.SpellID["209867"] = {
 GTFO.SpellID["198605"] = {
   --desc = "Thunderstrike (Valarjar Thundercaller)";
   sound = 3;
-  negatingBuffSpellID = 198599; 
-  negatingIgnoreTime = 5;
+  negatingDebuffSpellID = 198599; 
+  negatingIgnoreTime = 1;
 };
 
 GTFO.SpellID["198412"] = {

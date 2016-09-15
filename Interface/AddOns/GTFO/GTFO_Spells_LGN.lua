@@ -203,7 +203,10 @@ GTFO.SpellID["225682"] = {
   sound = 1;
 };
 
-
+GTFO.SpellID["215717"] = {
+  --desc = "Murky Secretion (Congealed Corruption)";
+  sound = 1;
+};
 
 -- **********
 -- * Mardum *
