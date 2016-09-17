@@ -86,7 +86,7 @@ Claw: disabled
 BittensSpellFlash_Hunter: disabled
 HandyNotes_DraenorTreasures: disabled
 LiteMount: enabled
-MasterPlan: enabled
+MasterPlan: disabled
 OPie: enabled
 RaidAchievement_WoDHeroics: enabled
 RaidAchievement_WoDRaids: enabled
@@ -141,7 +141,7 @@ Factionizer: disabled
 GTFO: enabled
 HandyNotes: enabled
 MacroToolkit: disabled
-MasterPlanA: enabled
+MasterPlanA: disabled
 Pawn: enabled
 TradeSkillMaster_AppHelper: enabled
 TradeSkillMaster_CoolDowns: disabled

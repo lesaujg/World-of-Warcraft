@@ -8,7 +8,7 @@ function legionhraonload()
 	raLegionModVers="not yet used"
 
 local _, a2 = GetInstanceInfo()
-if select(3,GetInstanceInfo())==2 and a2=="party" then
+if select(3,GetInstanceInfo())==23 then
 	RaidAchievement_legionhra:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 	RaidAchievement_legionhra:RegisterEvent("CHAT_MSG_MONSTER_YELL")
 	RaidAchievement_legionhra:RegisterEvent("CHAT_MSG_MONSTER_SAY")
@@ -30,6 +30,13 @@ legionhraspisokach5={
 10710,--http://www.wowhead.com/achievement=10710/black-rook-moan
 10544,--http://www.wowhead.com/achievement=10544/stag-party
 10875,--http://www.wowhead.com/achievement=10875/cant-eat-just-one
+
+10456,--http://ru.wowhead.com/achievement=10456/but-you-say-hes-just-a-friend
+10457,--http://ru.wowhead.com/achievement=10457/stay-salty
+10458,--http://ru.wowhead.com/achievement=10458/ready-for-raiding-v
+
+10766,--http://www.wowhead.com/achievement=10766/egg-cellent#comments
+10769,--http://ru.wowhead.com/achievement=10769/burning-down-the-house#comments
 
 }
 
@@ -94,9 +101,9 @@ legionhracounter1=0
 
 
 rawodonecounter1=nil
-wohbosskilled=nil
-wohspiderList=nil
-wohspiderList2=nil
+legionbosskilled=nil
+legionspiderList=nil
+legionspiderList2=nil
 
 
 if UnitGUID("boss1") and UnitName("boss1")~="" then
@@ -115,9 +122,9 @@ legionhraachdone1=true
 legionhracounter1=0
 
 rawodonecounter1=nil
-wohbosskilled=nil
-wohspiderList=nil
-wohspiderList2=nil
+legionbosskilled=nil
+legionspiderList=nil
+legionspiderList2=nil
 
 
 if UnitGUID("boss1") and UnitName("boss1")~="" then
@@ -191,11 +198,11 @@ end
 --Black Rook Hold
 if GetCurrentMapAreaID()==1081 then
 
-if arg2=="UNIT_DIED" and wohbosskilled==nil then
+if arg2=="UNIT_DIED" and legionbosskilled==nil then
   if legionhraspisokon[1]==1 and legionhraachdone1 then
   local id=raGetUnitID(arg7)
   if id==99663 then
-    legionhramyfailgood(1)
+    legionhraachcompl(1)
   end
   end
 end
@@ -207,16 +214,71 @@ end
 
 if arg2=="SPELL_AURA_APPLIED_DOSE" and arg10==207753 and arg14>9 then
 	if legionhraspisokon[2]==1 and legionhraachdone1 then
-		legionhramyfailgood(2)
+		legionhraachcompl(2)
 	end
 end
 
 if arg2=="SPELL_AURA_APPLIED_DOSE" and arg10==199246 and arg14>5 then
 	if legionhraspisokon[3]==1 and legionhraachdone1 then
-		legionhramyfailgood(3)
+		legionhraachcompl(3)
 	end
 end
 
+
+
+if arg2=="UNIT_DIED" and legionbosskilled==nil then
+  if legionhraspisokon[4]==1 and legionhraachdone1 and UnitGUID("boss1") then
+  local id=raGetUnitID(arg7)
+  if id==97264 then
+    legionhrafailnoreason(1)
+  end
+  end
+end
+
+
+
+if arg2=="UNIT_DIED" and legionbosskilled==nil then
+  if legionhraspisokon[5]==1 and legionhraachdone1 and UnitGUID("boss1") then
+  local id=raGetUnitID(arg7)
+  if id==98293 then
+	legionhracounter1=legionhracounter1+1
+  end
+  if legionhracounter1>10 then
+    legionhraachcompl(5)
+  end
+  end
+end
+
+
+
+
+if (arg2=="SPELL_AURA_APPLIED" and arg10==196665) or (arg2=="SPELL_DAMAGE" and arg10==196665) then
+	if legionhraspisokon[6]==1 and legionhraachdone1 and UnitGUID("boss1") then
+		legionhramyfail(6)
+	end
+end
+if (arg2=="SPELL_AURA_APPLIED" and arg10==196666) or (arg2=="SPELL_DAMAGE" and arg10==196666) then
+	if legionhraspisokon[6]==1 and legionhraachdone1 and UnitGUID("boss1") then
+		legionhramyfail(6)
+	end
+end
+
+
+
+if arg2=="UNIT_DIED" and legionbosskilled==nil then
+  if legionhraspisokon[7]==1 and legionhraachdone1 and UnitGUID("boss1") then
+  local id=raGetUnitID(arg7)
+  if id==111008 then
+    legionhraachcompl(7)
+  end
+  end
+end
+
+if arg2=="SPELL_AURA_APPLIED_DOSE" and arg10==199246 and arg14==10 then
+	if legionhraspisokon[8]==1 and legionhraachdone1 then
+		legionhraachcompl(8)
+	end
+end
 
 
 
