@@ -126,7 +126,7 @@ DBM-ThroneofThunder: enabled
 Basic_Resources: disabled
 Claw: disabled
 LiteMount: enabled
-WeakAuras: enabled
+WeakAuras: disabled
 WeakAurasModelPaths: enabled
 WeakAurasOptions: enabled
 WeakAurasTutorials: enabled
