@@ -381,7 +381,7 @@ ralltrack ={
 {1,1,0,0,0},--"Darkheart Thicket"
 {1,1,1,0,0,0},--"Eye of Azshara"
 {0,1,0,0,0,0},--"Halls of Valor"
-{0,0,0,0,0,0},--"Maw of Souls"
+{1,0,0,0,0,0},--"Maw of Souls"
 {0,1,0,0,0},--"Neltharion's Lair"
 {0,0,0,0},--"The Arcway"
 {0,0,0,0,0,0},--"Vault of the Wardens"

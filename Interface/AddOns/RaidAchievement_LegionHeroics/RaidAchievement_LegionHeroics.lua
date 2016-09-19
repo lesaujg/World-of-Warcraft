@@ -38,6 +38,7 @@ legionhraspisokach5={
 10766,--http://www.wowhead.com/achievement=10766/egg-cellent#comments
 10769,--http://ru.wowhead.com/achievement=10769/burning-down-the-house#comments
 
+10413, -- http://ru.wowhead.com/achievement=10413/instant-karma#english-comments
 }
 
 
@@ -280,6 +281,19 @@ if arg2=="SPELL_AURA_APPLIED_DOSE" and arg10==199246 and arg14==10 then
 	end
 end
 
+
+-- овердамаг, проверяю что убили моба
+if arg2=="SPELL_DAMAGE" and arg10==195033 and arg14>=0 then
+  if legionhraspisokon[9]==1 and legionhraachdone1 and UnitGUID("boss1") then
+  local id=raGetUnitID(arg7)
+  if id==98246 then
+	legionhracounter1=legionhracounter1+1
+  end
+  if legionhracounter1>5 then
+    legionhraachcompl(9)
+  end
+  end
+end
 
 
 
