@@ -179,3 +179,4 @@ DBM-Party-Legion: enabled
 Jamba: disabled
 Jamba-AdvancedLoot: enabled
 !KalielsTracker: disabled
+WorldQuestTracker: disabled

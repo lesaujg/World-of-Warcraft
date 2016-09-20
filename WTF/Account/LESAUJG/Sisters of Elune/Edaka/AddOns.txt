@@ -1,2 +1,3 @@
 !KalielsTracker: disabled
 WeakAuras: disabled
+WorldQuestTracker: disabled

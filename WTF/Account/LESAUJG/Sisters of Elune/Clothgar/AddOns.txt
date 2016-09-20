@@ -181,3 +181,4 @@ DBM-Party-Legion: disabled
 DBM-Nighthold: disabled
 Grid2AoeHeals: disabled
 !KalielsTracker: disabled
+WorldQuestTracker: disabled

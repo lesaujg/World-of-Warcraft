@@ -116,3 +116,4 @@ DBM-Ulduar: enabled
 DBM-VoA: enabled
 DBM-WorldEvents: enabled
 !KalielsTracker: disabled
+WorldQuestTracker: disabled
