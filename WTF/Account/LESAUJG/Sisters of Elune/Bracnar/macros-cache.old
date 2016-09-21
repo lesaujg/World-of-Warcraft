@@ -9,18 +9,24 @@ VER 3 010000000000005B "_Bestial Wrath" "INV_MISC_QUESTIONMARK"
 /castsequence reset=combat/10 Bestial Wrath, null
 END
 VER 3 010000000000005E "_Cobra Shot" "INV_MISC_QUESTIONMARK"
-/tar [exists];pettarget
+#showtooltip
+/target [noexists] pettarget
 /cast Cobra Shot
+END
+VER 3 010000000000005F "_Dire Beast" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/target [noexists] pettarget
+/cast Dire Beast
 END
 VER 3 010000000000005C "_Kill Command" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /petattack
 /petassist
-/tar [exists];pettarget
+/target [noexists] pettarget
 /cast Kill Command
 END
 VER 3 010000000000005D "_Multi-Shot" "INV_MISC_QUESTIONMARK"
-/tar [exists];pettarget
+/target [noexists] pettarget
 /cast Multi-Shot
 END
 VER 3 010000000000000E "_Pet Attack/Foll" "Ability_Druid_ChallangingRoar"
@@ -35,16 +41,11 @@ VER 3 010000000000000E "_Pet Attack/Foll" "Ability_Druid_ChallangingRoar"
 /cast Warp
 /cast Dash
 END
-VER 3 0100000000000010 "BOOM" "INV_MISC_QUESTIONMARK"
-/use Tabard of the Protector
-/use 13
-/use 14
-/castsequence reset=combat/10 Trueshot, null
-END
 VER 3 0100000000000059 "Counter Shot" "INV_Misc_QuestionMark"
 /stopcasting
 /stopcasting
 /cast Counter Shot
+/cast Auto Shot
 END
 VER 3 010000000000005A "Disengage" "INV_MISC_QUESTIONMARK"
 /stopcasting
@@ -66,12 +67,6 @@ VER 3 0100000000000054 "Pet_stuff" "INV_Misc_QuestionMark"
 /cast [button:2, pet, nodead] Dismiss Pet
 /cast [@pet, pet, dead] Revive Pet
 /cast [@pet, pet, nodead] Mend Pet
-END
-VER 3 0100000000000058 "Trap" "INV_MISC_QUESTIONMARK"
-#showtooltip Explosive trap
-/cast [nomod]!Trap Launcher
-/cancelaura [mod]Trap Launcher
-/cast !Explosive trap
 END
 VER 3 0100000000000055 "Trueshot" "INV_MISC_QUESTIONMARK"
 #showtooltip
