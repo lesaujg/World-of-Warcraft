@@ -126,7 +126,7 @@ DBM-TerraceofEndlessSpring: enabled
 DBM-TheEye: enabled
 DBM-ThroneFourWinds: enabled
 DBM-ThroneofThunder: enabled
-WeakAuras: disabled
+WeakAuras: enabled
 WeakAurasModelPaths: disabled
 WeakAurasOptions: disabled
 WeakAurasTutorials: disabled

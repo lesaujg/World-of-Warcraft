@@ -1,4 +1,4 @@
 Factionizer: disabled
 !KalielsTracker: disabled
-WeakAuras: disabled
+WeakAuras: enabled
 WorldQuestTracker: disabled

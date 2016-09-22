@@ -37,7 +37,7 @@ TeleportCloak: enabled
 TradeSkillMaster_Vendoring: disabled
 AddOnSkins: enabled
 Tukui_Config: enabled
-WeakAuras: disabled
+WeakAuras: enabled
 DBM-Nighthold: enabled
 DBM-EmeraldNightmare: enabled
 AskMrRobot: enabled
