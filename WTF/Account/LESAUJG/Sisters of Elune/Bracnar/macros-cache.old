@@ -74,6 +74,6 @@ VER 3 0100000000000055 "Trueshot" "INV_MISC_QUESTIONMARK"
 /use Tabard of the Protector
 /use 13
 /use 14
-/use /use [nogroup:raid] [mod] 12
+/use [nogroup:raid] [mod] 12
 /castsequence reset=combat/10 Trueshot, null
 END

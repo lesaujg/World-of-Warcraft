@@ -1,2 +1,10 @@
 
-LegionTreasuresDB = nil
+LegionRaresTreasuresDB = {
+	["profileKeys"] = {
+		["Torinara - Sisters of Elune"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

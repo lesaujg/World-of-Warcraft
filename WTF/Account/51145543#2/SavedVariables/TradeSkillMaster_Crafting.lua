@@ -28,16 +28,16 @@ TradeSkillMaster_CraftingDB = {
 	["f@Alliance - Sisters of Elune@evenStacks"] = false,
 	["f@Alliance - Sisters of Elune@buyAH"] = false,
 	["f@Alliance - Sisters of Elune@gathering"] = {
-		["extraMats"] = {
-		},
 		["availableMats"] = {
+		},
+		["extraMats"] = {
 		},
 		["shortItems"] = {
 		},
 		["gatheredMats"] = false,
 		["neededMats"] = {
 		},
-		["selectedSources"] = {
+		["destroyingMats"] = {
 		},
 		["professions"] = {
 		},
@@ -45,34 +45,34 @@ TradeSkillMaster_CraftingDB = {
 		},
 		["sessionOptions"] = {
 		},
-		["destroyingMats"] = {
+		["selectedSources"] = {
 		},
 	},
-	["g@ @defaultCraftPriceMethod"] = "first(dbminbuyout, dbmarket)",
 	["_currentProfile"] = {
 		["Magnara - Sisters of Elune"] = "Default",
 		["Torinara - Sisters of Elune"] = "Default",
 	},
-	["f@Alliance - Sisters of Elune@ignoreIntermediate"] = false,
+	["f@Alliance - Sisters of Elune@crafts"] = {
+	},
 	["g@ @ignoreCDCraftCost"] = true,
+	["f@Alliance - Sisters of Elune@ignoreIntermediate"] = false,
 	["f@Alliance - Sisters of Elune@disableCheckBox"] = false,
-	["g@ @questSmartCrafting"] = true,
+	["f@Alliance - Sisters of Elune@playerProfessions"] = {
+	},
 	["f@Alliance - Sisters of Elune@ignoreDECheckBox"] = false,
-	["g@ @priceColumn"] = 1,
-	["g@ @queueSort"] = 1,
+	["g@ @showingDefaultFrame"] = false,
+	["g@ @questSmartCrafting"] = true,
 	["f@Alliance - Sisters of Elune@mats"] = {
 	},
 	["g@ @defaultMatCostMethod"] = "min(dbmarket, crafting, vendorbuy, convert(dbmarket))",
-	["f@Alliance - Sisters of Elune@playerProfessions"] = {
-	},
+	["g@ @queueSort"] = 1,
 	["f@Alliance - Sisters of Elune@inkTrade"] = false,
 	["f@Alliance - Sisters of Elune@queueStatus"] = {
 		["collapsed"] = {
 		},
 	},
-	["g@ @showingDefaultFrame"] = false,
-	["f@Alliance - Sisters of Elune@crafts"] = {
-	},
+	["g@ @priceColumn"] = 1,
+	["g@ @defaultCraftPriceMethod"] = "first(dbminbuyout, dbmarket)",
 	["f@Alliance - Sisters of Elune@professionScanCache"] = {
 	},
 	["g@ @ignoreGuilds"] = {

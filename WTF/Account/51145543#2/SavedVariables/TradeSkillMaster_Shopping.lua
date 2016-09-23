@@ -28,17 +28,23 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @postUndercut"] = "1c",
 	["g@ @minDeSearchLvl"] = 1,
 	["g@ @maxDeSearchLvl"] = 735,
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1474587791,
+			["name"] = "deepholm",
+			["filter"] = "deepholm",
+		}, -- [1]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1471535066,
 			["name"] = "hexweave bag",
 			["filter"] = "hexweave bag",
-		}, -- [1]
+		}, -- [2]
 	},
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @normalPostPrice"] = "150% dbmarket",
 	["g@ @maxDeSearchPercent"] = 1,
 	["g@ @sniperCustomPrice"] = "0c",

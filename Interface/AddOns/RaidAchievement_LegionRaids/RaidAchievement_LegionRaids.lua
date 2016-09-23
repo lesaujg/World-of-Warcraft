@@ -6,7 +6,7 @@
 	rscupdhpcheckhr=GetTime()
 
 SetMapToCurrentZone()
-if GetCurrentMapAreaID()==999999999999999 or GetCurrentMapAreaID()==9999999999999999999 then
+if GetCurrentMapAreaID()==1094 or GetCurrentMapAreaID()==1088 then
 	RaidAchievement_legionrra:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 	RaidAchievement_legionrra:RegisterEvent("UNIT_POWER")
 	RaidAchievement_legionrra:RegisterEvent("CHAT_MSG_RAID_BOSS_EMOTE")
@@ -25,10 +25,10 @@ end
 
 legionrraspisokach25={
 
---8980, --http://www.wowhead.com/achievement=8980 Stamp Stamp Revolution
---8930, --http://www.wowhead.com/achievement=8930 Ya, We've got time
---8983, --http://www.wowhead.com/achievement=8983 Would you give me a hand
+10753, -- http://www.wowhead.com/achievement=10753/scare-bear
 
+10851, -- http://www.wowhead.com/achievement=10851/elementalry
+10704, -- http://www.wowhead.com/achievement=10704/not-for-you
 
 }
 
@@ -45,81 +45,7 @@ end
 function legionrra_OnUpdate(curtime)
 
 
-if rscupdhpcheckhr and GetTime()>rscupdhpcheckhr and GetCurrentMapAreaID()==1026 and UnitGUID("boss3") then
-	rscupdhpcheckhr=GetTime()+2
-	if legionrraspisokon[5]==1 and legionrraachdone1 then
-	if (raGetUnitID(UnitGUID("boss3"))==90018) then
-		local lhp1=UnitHealth("boss3")
-		local lhp2=UnitHealthMax("boss3")
-		if (lhp1 and lhp1>0 and lhp2 and lhp2>0) then
-			--считаем
-			if (lhp1<(lhp2*0.9)) then
-				legionrrafailnoreason(5)
-			end
-		end
-	end
-	if (raGetUnitID(UnitGUID("boss2"))==90018) then
-		local lhp1=UnitHealth("boss2")
-		local lhp2=UnitHealthMax("boss2")
-		if (lhp1 and lhp1>0 and lhp2 and lhp2>0) then
-			--считаем
-			if (lhp1<(lhp2*0.9)) then
-				legionrrafailnoreason(5)
-			end
-		end
-	end
-	end
-end
 
-
-
-
-if rpradelayzonech and curtime>rpradelayzonech then
-rpradelayzonech=nil
-SetMapToCurrentZone()
-if GetCurrentMapAreaID()==988 or GetCurrentMapAreaID()==1026 then
-RaidAchievement_legionrra:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
-RaidAchievement_legionrra:RegisterEvent("UNIT_POWER")
-RaidAchievement_legionrra:RegisterEvent("CHAT_MSG_RAID_BOSS_EMOTE")
-else
-RaidAchievement_legionrra:UnregisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
-RaidAchievement_legionrra:UnregisterEvent("UNIT_POWER")
-RaidAchievement_legionrra:UnregisterEvent("CHAT_MSG_RAID_BOSS_EMOTE")
-end
-end
-
-
--- Ya, We've got time
-if legionrratimerfurnace and GetTime()>legionrratimerfurnace then
-   legionrratimerfurnace=nil -- reset timer since achievement is failed
-   legionrrafailnoreason(3)
-end
-
--- Would you give me a hand
-if legionrratimerkromog and GetTime()>legionrratimerkromog then
-   legionrratimerkromog=nil -- reset timer since achievement is failed
-   legionrrafailnoreason(4,legionrracounter1)
-   legionrraachdone1=true --продолжаем следить за ачивкой
-   legionrracounter1=0
-end
-
-if rsprotossdb1 and #rsprotossdb1>0 and rastartprotosstimer and GetTime()>rastartprotosstimer then
-	rastartprotosstimer=GetTime()+1
-	for i=1,#rsprotossdb1 do
-		if rsprotossdb1[i] then
-			local ltime=GetTime()-rsprotossdb2[i]
-			if ltime>5.5 then
-				ltime=math.ceil(ltime*10)/10
-				if legionrraspisokon[9]==1 and legionrraachdone1 then
-					legionrrafailnoreason(9, rsprotossdb3[i].." (> "..ltime.." sec and STILL THERE)")
-					table.remove(rsprotossdb1,i)
-					table.remove(rsprotossdb2,i)
-					table.remove(rsprotossdb3,i)
-				end
-			end
-		end
-	end
-end
 
 
 
@@ -193,7 +119,7 @@ rpradelayzonech=GetTime()+2
 end
 
 if event == "ADDON_LOADED" then
-	if arg1=="RaidAchievement_WoDRaids" then
+	if arg1=="RaidAchievement_LegionRaids" then
 
 for i=1,#legionrraspisokach25 do
 if legionrraspisokon[i]==nil then legionrraspisokon[i]=1 end
@@ -220,6 +146,44 @@ local arg1, arg2, arg3,arg4,arg5,arg6,argNEW1,arg7,arg8,arg9,argNEW2,arg10,arg11
 
 --ТУТ АЧИВЫ
 
+if arg2=="UNIT_DIED" then
+  if legionrraspisokon[1]==1 and legionrraachdone1 and UnitGUID("boss1") then
+  local id=raGetUnitID(arg7)
+  if id==111263 then
+      legionrrafailnoreason(1)
+    end
+  end
+end
+
+
+if arg2=="UNIT_DIED" then
+  if legionrraspisokon[2]==1 and legionrraachdone1 and UnitGUID("boss1") then
+  local id=raGetUnitID(arg7)
+  if id==111595 then
+      legionrraachcompl(2)
+    end
+  end
+end
+
+if (arg2=="SPELL_DAMAGE" and arg10==213531) and arg4 and arg8 then
+   raunitisplayer(arg7,arg8)
+   if raunitplayertrue then
+      if legionrraspisokon[3]==1 and legionrraachdone1 then
+         legionrrafailnoreason(3,arg8)
+      end
+   end
+end
+
+
+
+
+
+
+
+
+
+-- OLD
+if (1==2) then
 --BRF (2 dung)
 if GetCurrentMapAreaID()==988 then
 
@@ -380,6 +344,8 @@ end
 
 end
 --
+end --OLD
+
 
 
 

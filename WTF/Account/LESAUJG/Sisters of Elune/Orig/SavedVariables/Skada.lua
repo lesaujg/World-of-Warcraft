@@ -235,14 +235,15 @@ SkadaPerCharDB = {
 						["max"] = 25923,
 						["damage"] = 440684,
 					},
-					["Crackling Jade Lightning"] = {
-						["min"] = 1111,
-						["critical"] = 2,
-						["hit"] = 6,
-						["totalhits"] = 8,
-						["id"] = 117952,
-						["max"] = 2222,
-						["damage"] = 11109,
+					["Orig: Whirling Dragon Punch"] = {
+						["min"] = 10446,
+						["PARRY"] = 1,
+						["critical"] = 6,
+						["hit"] = 11,
+						["totalhits"] = 18,
+						["id"] = 158221,
+						["max"] = 22099,
+						["damage"] = 246095,
 					},
 					["Rising Sun Kick"] = {
 						["min"] = 22467,
@@ -253,15 +254,14 @@ SkadaPerCharDB = {
 						["max"] = 56778,
 						["damage"] = 404197,
 					},
-					["Orig: Whirling Dragon Punch"] = {
-						["min"] = 10446,
-						["PARRY"] = 1,
-						["critical"] = 6,
-						["hit"] = 11,
-						["totalhits"] = 18,
-						["id"] = 158221,
-						["max"] = 22099,
-						["damage"] = 246095,
+					["Crackling Jade Lightning"] = {
+						["min"] = 1111,
+						["critical"] = 2,
+						["hit"] = 6,
+						["totalhits"] = 8,
+						["id"] = 117952,
+						["max"] = 2222,
+						["damage"] = 11109,
 					},
 					["Attack"] = {
 						["id"] = 6603,
@@ -283,24 +283,24 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1472516907.42801,
 								["amount"] = -32328,
-								["spellid"] = 88163,
 								["srcname"] = "Oondasta",
 								["hp"] = 44555,
+								["spellid"] = 88163,
 							}, -- [1]
 							{
 								["absorb"] = 0,
 								["amount"] = 2091,
 								["ts"] = 1472516907.84902,
 								["hp"] = 14318,
-								["srcname"] = "Orig",
 								["spellid"] = 196608,
+								["srcname"] = "Orig",
 							}, -- [2]
 							{
 								["ts"] = 1472516909.40203,
 								["amount"] = -39015,
-								["spellid"] = 88163,
 								["srcname"] = "Oondasta",
 								["hp"] = 14318,
+								["spellid"] = 88163,
 							}, -- [3]
 							{
 								["spellname"] = "Orig dies",
@@ -313,83 +313,83 @@ SkadaPerCharDB = {
 								["amount"] = 2091,
 								["ts"] = 1472516897.85305,
 								["hp"] = 148130,
-								["srcname"] = "Orig",
 								["spellid"] = 196608,
+								["srcname"] = "Orig",
 							}, -- [5]
 							{
 								["ts"] = 1472516898.08906,
 								["amount"] = -26501,
-								["spellid"] = 88163,
 								["srcname"] = "Oondasta",
 								["hp"] = 148130,
+								["spellid"] = 88163,
 							}, -- [6]
 							{
 								["ts"] = 1472516899.83107,
 								["amount"] = -43114,
-								["spellid"] = 137504,
 								["srcname"] = "Oondasta",
 								["hp"] = 78515,
+								["spellid"] = 137504,
 							}, -- [7]
 							{
 								["ts"] = 1472516899.83108,
 								["amount"] = 2091,
 								["absorb"] = 0,
 								["hp"] = 80606,
-								["srcname"] = "Orig",
 								["spellid"] = 196608,
+								["srcname"] = "Orig",
 							}, -- [8]
 							{
 								["ts"] = 1472516900.06209,
 								["amount"] = -38210,
-								["spellid"] = 88163,
 								["srcname"] = "Oondasta",
 								["hp"] = 80606,
+								["spellid"] = 88163,
 							}, -- [9]
 							{
 								["absorb"] = 0,
 								["amount"] = 50004,
 								["ts"] = 1472516900.1581,
 								["hp"] = 92400,
-								["srcname"] = "Orig",
 								["spellid"] = 122281,
+								["srcname"] = "Orig",
 							}, -- [10]
 							{
 								["ts"] = 1472516901.80011,
 								["amount"] = 4182,
 								["absorb"] = 0,
 								["hp"] = 96582,
-								["srcname"] = "Orig",
 								["spellid"] = 196608,
+								["srcname"] = "Orig",
 							}, -- [11]
 							{
 								["ts"] = 1472516902.14112,
 								["amount"] = -29580,
-								["spellid"] = 88163,
 								["srcname"] = "Oondasta",
 								["hp"] = 96582,
+								["spellid"] = 88163,
 							}, -- [12]
 							{
 								["absorb"] = 0,
 								["amount"] = 4182,
 								["ts"] = 1472516903.84913,
 								["hp"] = 71184,
-								["srcname"] = "Orig",
 								["spellid"] = 196608,
+								["srcname"] = "Orig",
 							}, -- [13]
 							{
 								["ts"] = 1472516905.42814,
 								["amount"] = -28720,
-								["spellid"] = 137457,
 								["srcname"] = "Oondasta",
 								["hp"] = 42464,
+								["spellid"] = 137457,
 							}, -- [14]
 							{
 								["absorb"] = 0,
 								["amount"] = 2091,
 								["ts"] = 1472516905.84615,
 								["hp"] = 44555,
-								["srcname"] = "Orig",
 								["spellid"] = 196608,
+								["srcname"] = "Orig",
 							}, -- [15]
 							["pos"] = 5,
 						},
@@ -400,104 +400,104 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1472516925.361,
 						["amount"] = -31812,
-						["spellid"] = 137511,
 						["srcname"] = "Oondasta",
 						["hp"] = 140663,
+						["spellid"] = 137511,
 					}, -- [1]
 					{
 						["absorb"] = 0,
 						["amount"] = 941,
 						["ts"] = 1472516929.553,
 						["hp"] = 141604,
-						["srcname"] = "Orig",
 						["spellid"] = 196608,
+						["srcname"] = "Orig",
 					}, -- [2]
 					{
 						["ts"] = 1472516930.981,
 						["amount"] = -31114,
-						["spellid"] = 137457,
 						["srcname"] = "Oondasta",
 						["hp"] = 110490,
+						["spellid"] = 137457,
 					}, -- [3]
 					{
 						["absorb"] = 0,
 						["amount"] = 941,
 						["ts"] = 1472516931.603,
 						["hp"] = 111431,
-						["srcname"] = "Orig",
 						["spellid"] = 196608,
+						["srcname"] = "Orig",
 					}, -- [4]
 					{
 						["absorb"] = 0,
 						["amount"] = 1882,
 						["ts"] = 1472516933.555,
 						["hp"] = 113313,
-						["srcname"] = "Orig",
 						["spellid"] = 196608,
+						["srcname"] = "Orig",
 					}, -- [5]
 					{
 						["absorb"] = 0,
 						["amount"] = 50004,
 						["ts"] = 1472516934.385,
 						["hp"] = 163317,
-						["srcname"] = "Orig",
 						["spellid"] = 122281,
+						["srcname"] = "Orig",
 					}, -- [6]
 					{
 						["absorb"] = 0,
 						["amount"] = 941,
 						["ts"] = 1472516935.621,
 						["hp"] = 164258,
-						["srcname"] = "Orig",
 						["spellid"] = 196608,
+						["srcname"] = "Orig",
 					}, -- [7]
 					{
 						["absorb"] = 0,
 						["amount"] = 17506,
 						["ts"] = 1472516936.453,
 						["hp"] = 181764,
-						["srcname"] = "Orig",
 						["spellid"] = 116694,
+						["srcname"] = "Orig",
 					}, -- [8]
 					{
 						["absorb"] = 0,
 						["amount"] = 941,
 						["ts"] = 1472516937.563,
 						["hp"] = 182705,
-						["srcname"] = "Orig",
 						["spellid"] = 196608,
+						["srcname"] = "Orig",
 					}, -- [9]
 					{
 						["absorb"] = 0,
 						["amount"] = 941,
 						["ts"] = 1472516939.534,
 						["hp"] = 183646,
-						["srcname"] = "Orig",
 						["spellid"] = 196608,
+						["srcname"] = "Orig",
 					}, -- [10]
 					{
 						["absorb"] = 0,
 						["amount"] = 941,
 						["ts"] = 1472516941.563,
 						["hp"] = 184587,
-						["srcname"] = "Orig",
 						["spellid"] = 196608,
+						["srcname"] = "Orig",
 					}, -- [11]
 					{
 						["absorb"] = 0,
 						["amount"] = 1882,
 						["ts"] = 1472516943.613,
 						["hp"] = 186469,
-						["srcname"] = "Orig",
 						["spellid"] = 196608,
+						["srcname"] = "Orig",
 					}, -- [12]
 					{
 						["absorb"] = 0,
 						["amount"] = 2091,
 						["ts"] = 1472516945.633,
 						["hp"] = 188560,
-						["srcname"] = "Orig",
 						["spellid"] = 196608,
+						["srcname"] = "Orig",
 					}, -- [13]
 					["pos"] = 14,
 				},
@@ -509,8 +509,8 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 137504,
 						["absorbed"] = 0,
-						["glancing"] = 0,
 						["min"] = 43114,
+						["glancing"] = 0,
 						["critical"] = 0,
 						["name"] = "Crush",
 						["blocked"] = 0,
@@ -523,8 +523,8 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 137457,
 						["absorbed"] = 0,
-						["glancing"] = 0,
 						["min"] = 23934,
+						["glancing"] = 0,
 						["critical"] = 0,
 						["name"] = "Piercing Roar",
 						["blocked"] = 0,
@@ -537,8 +537,8 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 137505,
 						["absorbed"] = 0,
-						["glancing"] = 0,
 						["min"] = 95734,
+						["glancing"] = 0,
 						["critical"] = 0,
 						["name"] = "Frill Blast",
 						["blocked"] = 0,
@@ -551,8 +551,8 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 137511,
 						["absorbed"] = 0,
-						["glancing"] = 0,
 						["min"] = 22823,
+						["glancing"] = 0,
 						["critical"] = 0,
 						["name"] = "Spiritfire Beam",
 						["blocked"] = 0,
@@ -565,8 +565,8 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 6603,
 						["absorbed"] = 0,
-						["glancing"] = 0,
 						["min"] = 24212,
+						["glancing"] = 0,
 						["critical"] = 0,
 						["name"] = "Attack",
 						["blocked"] = 0,
@@ -642,19 +642,19 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["auras"] = {
-					["Riposte"] = {
-						["name"] = "Riposte",
+					["Roll the Bones"] = {
+						["name"] = "Roll the Bones",
 						["active"] = 0,
-						["id"] = 199754,
+						["id"] = 193316,
 						["auratype"] = "BUFF",
-						["uptime"] = 21,
+						["uptime"] = 112,
 					},
-					["Pistol Shot"] = {
-						["name"] = "Pistol Shot",
+					["Killing Spree"] = {
+						["name"] = "Killing Spree",
 						["active"] = 0,
-						["id"] = 185763,
+						["id"] = 51690,
 						["auratype"] = "BUFF",
-						["uptime"] = 9,
+						["uptime"] = 6,
 					},
 					["Stealth"] = {
 						["name"] = "Stealth",
@@ -677,12 +677,12 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 46,
 					},
-					["Crimson Vial"] = {
-						["name"] = "Crimson Vial",
+					["Broadsides"] = {
+						["name"] = "Broadsides",
 						["active"] = 0,
-						["id"] = 185311,
+						["id"] = 193356,
 						["auratype"] = "BUFF",
-						["uptime"] = 18,
+						["uptime"] = 24,
 					},
 					["Marked for Death"] = {
 						["name"] = "Marked for Death",
@@ -691,19 +691,19 @@ SkadaPerCharDB = {
 						["auratype"] = "DEBUFF",
 						["uptime"] = 113,
 					},
-					["Killing Spree"] = {
-						["name"] = "Killing Spree",
+					["Pistol Shot"] = {
+						["name"] = "Pistol Shot",
 						["active"] = 0,
-						["id"] = 51690,
+						["id"] = 185763,
 						["auratype"] = "BUFF",
-						["uptime"] = 6,
+						["uptime"] = 9,
 					},
-					["Broadsides"] = {
-						["name"] = "Broadsides",
+					["Adrenaline Rush"] = {
+						["name"] = "Adrenaline Rush",
 						["active"] = 0,
-						["id"] = 193356,
+						["id"] = 13750,
 						["auratype"] = "BUFF",
-						["uptime"] = 24,
+						["uptime"] = 15,
 					},
 					["Grand Melee"] = {
 						["name"] = "Grand Melee",
@@ -719,12 +719,12 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 27,
 					},
-					["Adrenaline Rush"] = {
-						["name"] = "Adrenaline Rush",
+					["Crimson Vial"] = {
+						["name"] = "Crimson Vial",
 						["active"] = 0,
-						["id"] = 13750,
+						["id"] = 185311,
 						["auratype"] = "BUFF",
-						["uptime"] = 15,
+						["uptime"] = 18,
 					},
 					["Jolly Roger"] = {
 						["name"] = "Jolly Roger",
@@ -740,12 +740,12 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 45,
 					},
-					["Roll the Bones"] = {
-						["name"] = "Roll the Bones",
+					["Riposte"] = {
+						["name"] = "Riposte",
 						["active"] = 0,
-						["id"] = 193316,
+						["id"] = 199754,
 						["auratype"] = "BUFF",
-						["uptime"] = 112,
+						["uptime"] = 21,
 					},
 					["True Bearing"] = {
 						["name"] = "True Bearing",
@@ -870,112 +870,112 @@ SkadaPerCharDB = {
 						["amount"] = 16854,
 						["absorb"] = 0,
 						["hp"] = 324776,
-						["srcname"] = "Stat-Elune",
 						["spellid"] = 185311,
+						["srcname"] = "Stat-Elune",
 					}, -- [1]
 					{
 						["ts"] = 1472516930.981,
 						["amount"] = -31062,
-						["spellid"] = 137457,
 						["srcname"] = "Oondasta",
 						["hp"] = 293714,
+						["spellid"] = 137457,
 					}, -- [2]
 					{
 						["ts"] = 1472516931.392,
 						["amount"] = 16854,
 						["absorb"] = 0,
 						["hp"] = 310568,
-						["srcname"] = "Stat-Elune",
 						["spellid"] = 185311,
+						["srcname"] = "Stat-Elune",
 					}, -- [3]
 					{
 						["ts"] = 1472516933.047,
 						["amount"] = -25157,
-						["spellid"] = 88163,
 						["srcname"] = "Oondasta",
 						["hp"] = 310568,
+						["spellid"] = 88163,
 					}, -- [4]
 					{
 						["ts"] = 1472516935.023,
 						["amount"] = -36251,
-						["spellid"] = 88163,
 						["srcname"] = "Oondasta",
 						["hp"] = 285411,
+						["spellid"] = 88163,
 					}, -- [5]
 					{
 						["ts"] = 1472516938.354,
 						["amount"] = -36772,
-						["spellid"] = 88163,
 						["srcname"] = "Oondasta",
 						["hp"] = 249160,
+						["spellid"] = 88163,
 					}, -- [6]
 					{
 						["ts"] = 1472516942.029,
 						["amount"] = -124248,
-						["spellid"] = 137505,
 						["srcname"] = "Oondasta",
 						["hp"] = 88140,
+						["spellid"] = 137505,
 					}, -- [7]
 					{
 						["ts"] = 1472516943.999,
 						["amount"] = -35469,
-						["spellid"] = 88163,
 						["srcname"] = "Oondasta",
 						["hp"] = 88140,
+						["spellid"] = 88163,
 					}, -- [8]
 					{
 						["ts"] = 1472516923.345,
 						["amount"] = 27914,
 						["absorb"] = 0,
 						["hp"] = 296562,
-						["srcname"] = "Stat-Elune",
 						["spellid"] = 143924,
+						["srcname"] = "Stat-Elune",
 					}, -- [9]
 					{
 						["ts"] = 1472516924.379,
 						["amount"] = -30670,
-						["spellid"] = 88163,
 						["srcname"] = "Oondasta",
 						["hp"] = 296562,
+						["spellid"] = 88163,
 					}, -- [10]
 					{
 						["absorb"] = 0,
 						["amount"] = 16854,
 						["ts"] = 1472516926.432,
 						["hp"] = 282746,
-						["srcname"] = "Stat-Elune",
 						["spellid"] = 185311,
+						["srcname"] = "Stat-Elune",
 					}, -- [11]
 					{
 						["ts"] = 1472516927.44,
 						["amount"] = -25386,
-						["spellid"] = 88163,
 						["srcname"] = "Oondasta",
 						["hp"] = 282746,
+						["spellid"] = 88163,
 					}, -- [12]
 					{
 						["absorb"] = 0,
 						["amount"] = 16854,
 						["ts"] = 1472516927.44,
 						["hp"] = 274214,
-						["srcname"] = "Stat-Elune",
 						["spellid"] = 185311,
+						["srcname"] = "Stat-Elune",
 					}, -- [13]
 					{
 						["absorb"] = 0,
 						["amount"] = 16854,
 						["ts"] = 1472516928.407,
 						["hp"] = 291068,
-						["srcname"] = "Stat-Elune",
 						["spellid"] = 185311,
+						["srcname"] = "Stat-Elune",
 					}, -- [14]
 					{
 						["absorb"] = 0,
 						["amount"] = 16854,
 						["ts"] = 1472516929.413,
 						["hp"] = 307922,
-						["srcname"] = "Stat-Elune",
 						["spellid"] = 185311,
+						["srcname"] = "Stat-Elune",
 					}, -- [15]
 					["pos"] = 9,
 				},
@@ -987,8 +987,8 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 137504,
 						["absorbed"] = 0,
-						["glancing"] = 0,
 						["min"] = 31821,
+						["glancing"] = 0,
 						["critical"] = 0,
 						["name"] = "Crush",
 						["blocked"] = 0,
@@ -1001,8 +1001,8 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 137511,
 						["absorbed"] = 0,
-						["glancing"] = 0,
 						["min"] = 24655,
+						["glancing"] = 0,
 						["critical"] = 0,
 						["name"] = "Spiritfire Beam",
 						["blocked"] = 0,
@@ -1015,8 +1015,8 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 137505,
 						["absorbed"] = 0,
-						["glancing"] = 0,
 						["min"] = 105133,
+						["glancing"] = 0,
 						["critical"] = 0,
 						["name"] = "Frill Blast",
 						["blocked"] = 0,
@@ -1029,8 +1029,8 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 137457,
 						["absorbed"] = 0,
-						["glancing"] = 0,
 						["min"] = 23894,
+						["glancing"] = 0,
 						["critical"] = 0,
 						["name"] = "Piercing Roar",
 						["blocked"] = 0,
@@ -1043,8 +1043,8 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 6603,
 						["absorbed"] = 0,
-						["glancing"] = 0,
 						["min"] = 19170,
+						["glancing"] = 0,
 						["critical"] = 0,
 						["name"] = "Attack",
 						["blocked"] = 0,
@@ -1377,113 +1377,113 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1472516930.981,
 						["amount"] = -31200,
-						["spellid"] = 137457,
 						["srcname"] = "Oondasta",
 						["hp"] = 147904,
+						["spellid"] = 137457,
 					}, -- [1]
 					{
 						["ts"] = 1472516942.029,
 						["amount"] = -124800,
-						["spellid"] = 137505,
 						["srcname"] = "Oondasta",
 						["hp"] = 23104,
+						["spellid"] = 137505,
 					}, -- [2]
 					{
 						["absorb"] = 0,
 						["amount"] = 46903,
 						["ts"] = 1472516850.162,
 						["hp"] = 344940,
-						["srcname"] = "Anælövah-Ravenholdt",
 						["spellid"] = 109304,
+						["srcname"] = "Anælövah-Ravenholdt",
 					}, -- [3]
 					{
 						["ts"] = 1472516850.721,
 						["amount"] = -96000,
-						["spellid"] = 137505,
 						["srcname"] = "Oondasta",
 						["hp"] = 248940,
+						["spellid"] = 137505,
 					}, -- [4]
 					{
 						["absorb"] = 0,
 						["amount"] = 20696,
 						["ts"] = 1472516855.69,
 						["hp"] = 269636,
-						["srcname"] = "Anælövah-Ravenholdt",
 						["spellid"] = 59543,
+						["srcname"] = "Anælövah-Ravenholdt",
 					}, -- [5]
 					{
 						["absorb"] = 0,
 						["amount"] = 20696,
 						["ts"] = 1472516856.746,
 						["hp"] = 290332,
-						["srcname"] = "Anælövah-Ravenholdt",
 						["spellid"] = 59543,
+						["srcname"] = "Anælövah-Ravenholdt",
 					}, -- [6]
 					{
 						["absorb"] = 0,
 						["amount"] = 20697,
 						["ts"] = 1472516857.719,
 						["hp"] = 311029,
-						["srcname"] = "Anælövah-Ravenholdt",
 						["spellid"] = 59543,
+						["srcname"] = "Anælövah-Ravenholdt",
 					}, -- [7]
 					{
 						["absorb"] = 0,
 						["amount"] = 20697,
 						["ts"] = 1472516858.723,
 						["hp"] = 331726,
-						["srcname"] = "Anælövah-Ravenholdt",
 						["spellid"] = 59543,
+						["srcname"] = "Anælövah-Ravenholdt",
 					}, -- [8]
 					{
 						["ts"] = 1472516859.693,
 						["amount"] = -26874,
-						["spellid"] = 137508,
 						["srcname"] = "Oondasta",
 						["hp"] = 304852,
+						["spellid"] = 137508,
 					}, -- [9]
 					{
 						["absorb"] = 0,
 						["amount"] = 13798,
 						["ts"] = 1472516859.693,
 						["hp"] = 318650,
-						["srcname"] = "Anælövah-Ravenholdt",
 						["spellid"] = 59543,
+						["srcname"] = "Anælövah-Ravenholdt",
 					}, -- [10]
 					{
 						["ts"] = 1472516872.625,
 						["amount"] = -26400,
-						["spellid"] = 137457,
 						["srcname"] = "Oondasta",
 						["hp"] = 292250,
+						["spellid"] = 137457,
 					}, -- [11]
 					{
 						["ts"] = 1472516877.944,
 						["amount"] = -27191,
-						["spellid"] = 137508,
 						["srcname"] = "Oondasta",
 						["hp"] = 265059,
+						["spellid"] = 137508,
 					}, -- [12]
 					{
 						["ts"] = 1472516905.428,
 						["amount"] = -28800,
-						["spellid"] = 137457,
 						["srcname"] = "Oondasta",
 						["hp"] = 236259,
+						["spellid"] = 137457,
 					}, -- [13]
 					{
 						["ts"] = 1472516910.711,
 						["amount"] = -28187,
-						["spellid"] = 137508,
 						["srcname"] = "Oondasta",
 						["hp"] = 208072,
+						["spellid"] = 137508,
 					}, -- [14]
 					{
 						["ts"] = 1472516925.361,
 						["amount"] = -28968,
-						["spellid"] = 137511,
 						["srcname"] = "Oondasta",
 						["hp"] = 179104,
+						["spellid"] = 137511,
 					}, -- [15]
 					["pos"] = 3,
 				},
@@ -1495,8 +1495,8 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 137511,
 						["absorbed"] = 0,
-						["glancing"] = 0,
 						["min"] = 22903,
+						["glancing"] = 0,
 						["critical"] = 0,
 						["name"] = "Spiritfire Beam",
 						["blocked"] = 0,
@@ -1509,8 +1509,8 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 137457,
 						["absorbed"] = 0,
-						["glancing"] = 0,
 						["min"] = 24000,
+						["glancing"] = 0,
 						["critical"] = 0,
 						["name"] = "Piercing Roar",
 						["blocked"] = 0,
@@ -1523,8 +1523,8 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 137505,
 						["absorbed"] = 0,
-						["glancing"] = 0,
 						["min"] = 96000,
+						["glancing"] = 0,
 						["critical"] = 0,
 						["name"] = "Frill Blast",
 						["blocked"] = 0,
@@ -1600,12 +1600,12 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 1,
 					},
-					["Death from Above"] = {
-						["name"] = "Death from Above",
+					["Crimson Vial"] = {
+						["name"] = "Crimson Vial",
 						["active"] = 0,
-						["id"] = 152150,
+						["id"] = 185311,
 						["auratype"] = "BUFF",
-						["uptime"] = 4,
+						["uptime"] = 19,
 					},
 					["Roll the Bones"] = {
 						["name"] = "Roll the Bones",
@@ -1621,12 +1621,12 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 11,
 					},
-					["Crimson Vial"] = {
-						["name"] = "Crimson Vial",
+					["Adrenaline Rush"] = {
+						["name"] = "Adrenaline Rush",
 						["active"] = 0,
-						["id"] = 185311,
+						["id"] = 13750,
 						["auratype"] = "BUFF",
-						["uptime"] = 19,
+						["uptime"] = 15,
 					},
 					["Grand Melee"] = {
 						["name"] = "Grand Melee",
@@ -1642,19 +1642,19 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 32,
 					},
-					["Alacrity"] = {
-						["name"] = "Alacrity",
-						["active"] = 0,
-						["id"] = 193538,
-						["auratype"] = "BUFF",
-						["uptime"] = 112,
-					},
 					["Jolly Roger"] = {
 						["name"] = "Jolly Roger",
 						["active"] = 0,
 						["id"] = 199603,
 						["auratype"] = "BUFF",
 						["uptime"] = 19,
+					},
+					["Alacrity"] = {
+						["name"] = "Alacrity",
+						["active"] = 0,
+						["id"] = 193538,
+						["auratype"] = "BUFF",
+						["uptime"] = 112,
 					},
 					["Feint"] = {
 						["name"] = "Feint",
@@ -1670,12 +1670,12 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 91,
 					},
-					["Adrenaline Rush"] = {
-						["name"] = "Adrenaline Rush",
+					["Death from Above"] = {
+						["name"] = "Death from Above",
 						["active"] = 0,
-						["id"] = 13750,
+						["id"] = 152150,
 						["auratype"] = "BUFF",
-						["uptime"] = 15,
+						["uptime"] = 4,
 					},
 				},
 				["role"] = "DAMAGER",
@@ -1775,115 +1775,115 @@ SkadaPerCharDB = {
 						["amount"] = 17529,
 						["absorb"] = 0,
 						["hp"] = 52588,
-						["srcname"] = "Nachi-Malygos",
 						["spellid"] = 185311,
+						["srcname"] = "Nachi-Malygos",
 					}, -- [1]
 					{
 						["absorb"] = 0,
 						["amount"] = 17529,
 						["ts"] = 1472516919.022,
 						["hp"] = 70117,
-						["srcname"] = "Nachi-Malygos",
 						["spellid"] = 185311,
+						["srcname"] = "Nachi-Malygos",
 					}, -- [2]
 					{
 						["absorb"] = 0,
 						["amount"] = 17529,
 						["ts"] = 1472516919.97,
 						["hp"] = 87646,
-						["srcname"] = "Nachi-Malygos",
 						["spellid"] = 185311,
+						["srcname"] = "Nachi-Malygos",
 					}, -- [3]
 					{
 						["absorb"] = 0,
 						["amount"] = 17529,
 						["ts"] = 1472516921.026,
 						["hp"] = 105175,
-						["srcname"] = "Nachi-Malygos",
 						["spellid"] = 185311,
+						["srcname"] = "Nachi-Malygos",
 					}, -- [4]
 					{
 						["absorb"] = 0,
 						["amount"] = 17529,
 						["ts"] = 1472516921.977,
 						["hp"] = 122704,
-						["srcname"] = "Nachi-Malygos",
 						["spellid"] = 185311,
+						["srcname"] = "Nachi-Malygos",
 					}, -- [5]
 					{
 						["absorb"] = 0,
 						["amount"] = 17529,
 						["ts"] = 1472516923.028,
 						["hp"] = 140233,
-						["srcname"] = "Nachi-Malygos",
 						["spellid"] = 185311,
+						["srcname"] = "Nachi-Malygos",
 					}, -- [6]
 					{
 						["ts"] = 1472516930.981,
 						["amount"] = -31200,
-						["spellid"] = 137457,
 						["srcname"] = "Oondasta",
 						["hp"] = 109033,
+						["spellid"] = 137457,
 					}, -- [7]
 					{
 						["ts"] = 1472516936.351,
 						["amount"] = -29808,
-						["spellid"] = 137508,
 						["srcname"] = "Oondasta",
 						["hp"] = 79225,
+						["spellid"] = 137508,
 					}, -- [8]
 					{
 						["absorb"] = 0,
 						["amount"] = 17529,
 						["ts"] = 1472516888.862,
 						["hp"] = 63466,
-						["srcname"] = "Nachi-Malygos",
 						["spellid"] = 185311,
+						["srcname"] = "Nachi-Malygos",
 					}, -- [9]
 					{
 						["absorb"] = 0,
 						["amount"] = 17529,
 						["ts"] = 1472516889.844,
 						["hp"] = 84545,
-						["srcname"] = "Nachi-Malygos",
 						["spellid"] = 185311,
+						["srcname"] = "Nachi-Malygos",
 					}, -- [10]
 					{
 						["ts"] = 1472516890.898,
 						["amount"] = 17529,
 						["absorb"] = 0,
 						["hp"] = 102074,
-						["srcname"] = "Nachi-Malygos",
 						["spellid"] = 185311,
+						["srcname"] = "Nachi-Malygos",
 					}, -- [11]
 					{
 						["absorb"] = 0,
 						["amount"] = 17529,
 						["ts"] = 1472516891.936,
 						["hp"] = 119603,
-						["srcname"] = "Nachi-Malygos",
 						["spellid"] = 185311,
+						["srcname"] = "Nachi-Malygos",
 					}, -- [12]
 					{
 						["ts"] = 1472516892.517,
 						["amount"] = -28921,
-						["spellid"] = 137508,
 						["srcname"] = "Oondasta",
 						["hp"] = 90682,
+						["spellid"] = 137508,
 					}, -- [13]
 					{
 						["ts"] = 1472516896.131,
 						["amount"] = -26823,
-						["spellid"] = 137511,
 						["srcname"] = "Oondasta",
 						["hp"] = 63859,
+						["spellid"] = 137511,
 					}, -- [14]
 					{
 						["ts"] = 1472516905.428,
 						["amount"] = -28800,
-						["spellid"] = 137457,
 						["srcname"] = "Oondasta",
 						["hp"] = 35059,
+						["spellid"] = 137457,
 					}, -- [15]
 					["pos"] = 9,
 				},
@@ -1895,8 +1895,8 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 137504,
 						["absorbed"] = 0,
-						["glancing"] = 0,
 						["min"] = 36841,
+						["glancing"] = 0,
 						["critical"] = 0,
 						["name"] = "Crush",
 						["blocked"] = 0,
@@ -1909,8 +1909,8 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 137457,
 						["absorbed"] = 0,
-						["glancing"] = 0,
 						["min"] = 24000,
+						["glancing"] = 0,
 						["critical"] = 0,
 						["name"] = "Piercing Roar",
 						["blocked"] = 0,
@@ -1923,8 +1923,8 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 137505,
 						["absorbed"] = 0,
-						["glancing"] = 0,
 						["min"] = 96000,
+						["glancing"] = 0,
 						["critical"] = 0,
 						["name"] = "Frill Blast",
 						["blocked"] = 0,
@@ -1937,8 +1937,8 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 137508,
 						["absorbed"] = 0,
-						["glancing"] = 0,
 						["min"] = 26823,
+						["glancing"] = 0,
 						["critical"] = 0,
 						["name"] = "Spiritfire Beam",
 						["blocked"] = 0,
@@ -1951,8 +1951,8 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 6603,
 						["absorbed"] = 0,
-						["glancing"] = 0,
 						["min"] = 22774,
+						["glancing"] = 0,
 						["critical"] = 1,
 						["name"] = "Attack",
 						["blocked"] = 0,
@@ -2175,8 +2175,6 @@ SkadaPerCharDB = {
 				["players"] = {
 				},
 				["hdone"] = 17998,
-				["done"] = 0,
-				["taken"] = 0,
 				["htakenspell"] = {
 					["Echo of Light"] = {
 						["min"] = 665,
@@ -2203,6 +2201,8 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
+				["taken"] = 0,
+				["done"] = 0,
 				["htaken"] = 27269,
 				["hdonespell"] = {
 					["Bloodthirst Heal"] = {
@@ -2219,8 +2219,6 @@ SkadaPerCharDB = {
 				["players"] = {
 				},
 				["hdone"] = 45891,
-				["done"] = 0,
-				["taken"] = 0,
 				["htakenspell"] = {
 					["Renew"] = {
 						["min"] = 2912,
@@ -2271,6 +2269,8 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
+				["taken"] = 0,
+				["done"] = 0,
 				["htaken"] = 66084,
 				["hdonespell"] = {
 					["Soul Cleave"] = {
@@ -2303,8 +2303,6 @@ SkadaPerCharDB = {
 				["players"] = {
 				},
 				["hdone"] = 47676,
-				["done"] = 0,
-				["taken"] = 0,
 				["htakenspell"] = {
 					["Renew"] = {
 						["min"] = 2912,
@@ -2315,6 +2313,8 @@ SkadaPerCharDB = {
 						["hits"] = 2,
 					},
 				},
+				["taken"] = 0,
+				["done"] = 0,
 				["htaken"] = 5824,
 				["hdonespell"] = {
 					["Renew"] = {
@@ -2355,8 +2355,6 @@ SkadaPerCharDB = {
 				["players"] = {
 				},
 				["hdone"] = 28971,
-				["done"] = 0,
-				["taken"] = 0,
 				["htakenspell"] = {
 					["Healing Sphere"] = {
 						["min"] = 28971,
@@ -2375,6 +2373,8 @@ SkadaPerCharDB = {
 						["hits"] = 3,
 					},
 				},
+				["taken"] = 0,
+				["done"] = 0,
 				["htaken"] = 28971,
 				["hdonespell"] = {
 					["Healing Sphere"] = {
@@ -2399,8 +2399,6 @@ SkadaPerCharDB = {
 				["players"] = {
 				},
 				["hdone"] = 0,
-				["done"] = 0,
-				["taken"] = 0,
 				["htakenspell"] = {
 					["Echo of Light"] = {
 						["min"] = 3018,
@@ -2419,6 +2417,8 @@ SkadaPerCharDB = {
 						["hits"] = 2,
 					},
 				},
+				["taken"] = 0,
+				["done"] = 0,
 				["htaken"] = 12388,
 				["hdonespell"] = {
 				},
@@ -2451,10 +2451,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
-				["done"] = 2757835,
-				["taken"] = 12601385,
 				["htakenspell"] = {
 				},
+				["taken"] = 12601385,
+				["done"] = 2757835,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -2718,14 +2718,15 @@ SkadaPerCharDB = {
 							["max"] = 25923,
 							["damage"] = 440684,
 						},
-						["Crackling Jade Lightning"] = {
-							["min"] = 1111,
-							["critical"] = 2,
-							["hit"] = 6,
-							["totalhits"] = 8,
-							["id"] = 117952,
-							["max"] = 2222,
-							["damage"] = 11109,
+						["Orig: Whirling Dragon Punch"] = {
+							["min"] = 10446,
+							["PARRY"] = 1,
+							["critical"] = 6,
+							["hit"] = 11,
+							["totalhits"] = 18,
+							["id"] = 158221,
+							["max"] = 22099,
+							["damage"] = 246095,
 						},
 						["Rising Sun Kick"] = {
 							["min"] = 22467,
@@ -2736,15 +2737,14 @@ SkadaPerCharDB = {
 							["max"] = 56778,
 							["damage"] = 404197,
 						},
-						["Orig: Whirling Dragon Punch"] = {
-							["min"] = 10446,
-							["PARRY"] = 1,
-							["critical"] = 6,
-							["hit"] = 11,
-							["totalhits"] = 18,
-							["id"] = 158221,
-							["max"] = 22099,
-							["damage"] = 246095,
+						["Crackling Jade Lightning"] = {
+							["min"] = 1111,
+							["critical"] = 2,
+							["hit"] = 6,
+							["totalhits"] = 8,
+							["id"] = 117952,
+							["max"] = 2222,
+							["damage"] = 11109,
 						},
 						["Attack"] = {
 							["id"] = 6603,
@@ -2766,24 +2766,24 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1472516907.42801,
 									["amount"] = -32328,
-									["spellid"] = 88163,
 									["srcname"] = "Oondasta",
 									["hp"] = 44555,
+									["spellid"] = 88163,
 								}, -- [1]
 								{
 									["absorb"] = 0,
 									["amount"] = 2091,
 									["ts"] = 1472516907.84902,
 									["hp"] = 14318,
-									["srcname"] = "Orig",
 									["spellid"] = 196608,
+									["srcname"] = "Orig",
 								}, -- [2]
 								{
 									["ts"] = 1472516909.40203,
 									["amount"] = -39015,
-									["spellid"] = 88163,
 									["srcname"] = "Oondasta",
 									["hp"] = 14318,
+									["spellid"] = 88163,
 								}, -- [3]
 								{
 									["spellname"] = "Orig dies",
@@ -2796,83 +2796,83 @@ SkadaPerCharDB = {
 									["amount"] = 2091,
 									["ts"] = 1472516897.85305,
 									["hp"] = 148130,
-									["srcname"] = "Orig",
 									["spellid"] = 196608,
+									["srcname"] = "Orig",
 								}, -- [5]
 								{
 									["ts"] = 1472516898.08906,
 									["amount"] = -26501,
-									["spellid"] = 88163,
 									["srcname"] = "Oondasta",
 									["hp"] = 148130,
+									["spellid"] = 88163,
 								}, -- [6]
 								{
 									["ts"] = 1472516899.83107,
 									["amount"] = -43114,
-									["spellid"] = 137504,
 									["srcname"] = "Oondasta",
 									["hp"] = 78515,
+									["spellid"] = 137504,
 								}, -- [7]
 								{
 									["ts"] = 1472516899.83108,
 									["amount"] = 2091,
 									["absorb"] = 0,
 									["hp"] = 80606,
-									["srcname"] = "Orig",
 									["spellid"] = 196608,
+									["srcname"] = "Orig",
 								}, -- [8]
 								{
 									["ts"] = 1472516900.06209,
 									["amount"] = -38210,
-									["spellid"] = 88163,
 									["srcname"] = "Oondasta",
 									["hp"] = 80606,
+									["spellid"] = 88163,
 								}, -- [9]
 								{
 									["absorb"] = 0,
 									["amount"] = 50004,
 									["ts"] = 1472516900.1581,
 									["hp"] = 92400,
-									["srcname"] = "Orig",
 									["spellid"] = 122281,
+									["srcname"] = "Orig",
 								}, -- [10]
 								{
 									["ts"] = 1472516901.80011,
 									["amount"] = 4182,
 									["absorb"] = 0,
 									["hp"] = 96582,
-									["srcname"] = "Orig",
 									["spellid"] = 196608,
+									["srcname"] = "Orig",
 								}, -- [11]
 								{
 									["ts"] = 1472516902.14112,
 									["amount"] = -29580,
-									["spellid"] = 88163,
 									["srcname"] = "Oondasta",
 									["hp"] = 96582,
+									["spellid"] = 88163,
 								}, -- [12]
 								{
 									["absorb"] = 0,
 									["amount"] = 4182,
 									["ts"] = 1472516903.84913,
 									["hp"] = 71184,
-									["srcname"] = "Orig",
 									["spellid"] = 196608,
+									["srcname"] = "Orig",
 								}, -- [13]
 								{
 									["ts"] = 1472516905.42814,
 									["amount"] = -28720,
-									["spellid"] = 137457,
 									["srcname"] = "Oondasta",
 									["hp"] = 42464,
+									["spellid"] = 137457,
 								}, -- [14]
 								{
 									["absorb"] = 0,
 									["amount"] = 2091,
 									["ts"] = 1472516905.84615,
 									["hp"] = 44555,
-									["srcname"] = "Orig",
 									["spellid"] = 196608,
+									["srcname"] = "Orig",
 								}, -- [15]
 								["pos"] = 5,
 							},
@@ -2888,8 +2888,8 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 137504,
 							["absorbed"] = 0,
-							["glancing"] = 0,
 							["min"] = 43114,
+							["glancing"] = 0,
 							["critical"] = 0,
 							["name"] = "Crush",
 							["blocked"] = 0,
@@ -2902,8 +2902,8 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 137457,
 							["absorbed"] = 0,
-							["glancing"] = 0,
 							["min"] = 23934,
+							["glancing"] = 0,
 							["critical"] = 0,
 							["name"] = "Piercing Roar",
 							["blocked"] = 0,
@@ -2916,8 +2916,8 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 137505,
 							["absorbed"] = 0,
-							["glancing"] = 0,
 							["min"] = 95734,
+							["glancing"] = 0,
 							["critical"] = 0,
 							["name"] = "Frill Blast",
 							["blocked"] = 0,
@@ -2930,8 +2930,8 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 137511,
 							["absorbed"] = 0,
-							["glancing"] = 0,
 							["min"] = 22823,
+							["glancing"] = 0,
 							["critical"] = 0,
 							["name"] = "Spiritfire Beam",
 							["blocked"] = 0,
@@ -2944,8 +2944,8 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 6603,
 							["absorbed"] = 0,
-							["glancing"] = 0,
 							["min"] = 24212,
+							["glancing"] = 0,
 							["critical"] = 0,
 							["name"] = "Attack",
 							["blocked"] = 0,
@@ -3023,19 +3023,19 @@ SkadaPerCharDB = {
 						["Oondasta"] = 3526100,
 					},
 					["auras"] = {
-						["Riposte"] = {
-							["name"] = "Riposte",
+						["Roll the Bones"] = {
+							["name"] = "Roll the Bones",
 							["active"] = 0,
-							["id"] = 199754,
+							["id"] = 193316,
 							["auratype"] = "BUFF",
-							["uptime"] = 21,
+							["uptime"] = 106,
 						},
-						["Pistol Shot"] = {
-							["name"] = "Pistol Shot",
+						["Killing Spree"] = {
+							["name"] = "Killing Spree",
 							["active"] = 0,
-							["id"] = 185763,
+							["id"] = 51690,
 							["auratype"] = "BUFF",
-							["uptime"] = 9,
+							["uptime"] = 6,
 						},
 						["Stealth"] = {
 							["name"] = "Stealth",
@@ -3058,12 +3058,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 40,
 						},
-						["Crimson Vial"] = {
-							["name"] = "Crimson Vial",
+						["Broadsides"] = {
+							["name"] = "Broadsides",
 							["active"] = 0,
-							["id"] = 185311,
+							["id"] = 193356,
 							["auratype"] = "BUFF",
-							["uptime"] = 18,
+							["uptime"] = 24,
 						},
 						["Marked for Death"] = {
 							["name"] = "Marked for Death",
@@ -3072,19 +3072,19 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["uptime"] = 113,
 						},
-						["Killing Spree"] = {
-							["name"] = "Killing Spree",
+						["Pistol Shot"] = {
+							["name"] = "Pistol Shot",
 							["active"] = 0,
-							["id"] = 51690,
+							["id"] = 185763,
 							["auratype"] = "BUFF",
-							["uptime"] = 6,
+							["uptime"] = 9,
 						},
-						["Broadsides"] = {
-							["name"] = "Broadsides",
+						["Adrenaline Rush"] = {
+							["name"] = "Adrenaline Rush",
 							["active"] = 0,
-							["id"] = 193356,
+							["id"] = 13750,
 							["auratype"] = "BUFF",
-							["uptime"] = 24,
+							["uptime"] = 15,
 						},
 						["Grand Melee"] = {
 							["name"] = "Grand Melee",
@@ -3100,12 +3100,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 27,
 						},
-						["Adrenaline Rush"] = {
-							["name"] = "Adrenaline Rush",
+						["Crimson Vial"] = {
+							["name"] = "Crimson Vial",
 							["active"] = 0,
-							["id"] = 13750,
+							["id"] = 185311,
 							["auratype"] = "BUFF",
-							["uptime"] = 15,
+							["uptime"] = 18,
 						},
 						["Jolly Roger"] = {
 							["name"] = "Jolly Roger",
@@ -3121,12 +3121,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 45,
 						},
-						["Roll the Bones"] = {
-							["name"] = "Roll the Bones",
+						["Riposte"] = {
+							["name"] = "Riposte",
 							["active"] = 0,
-							["id"] = 193316,
+							["id"] = 199754,
 							["auratype"] = "BUFF",
-							["uptime"] = 106,
+							["uptime"] = 21,
 						},
 						["True Bearing"] = {
 							["name"] = "True Bearing",
@@ -3254,8 +3254,8 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 137504,
 							["absorbed"] = 0,
-							["glancing"] = 0,
 							["min"] = 31821,
+							["glancing"] = 0,
 							["critical"] = 0,
 							["name"] = "Crush",
 							["blocked"] = 0,
@@ -3268,8 +3268,8 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 137511,
 							["absorbed"] = 0,
-							["glancing"] = 0,
 							["min"] = 24655,
+							["glancing"] = 0,
 							["critical"] = 0,
 							["name"] = "Spiritfire Beam",
 							["blocked"] = 0,
@@ -3282,8 +3282,8 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 137505,
 							["absorbed"] = 0,
-							["glancing"] = 0,
 							["min"] = 105133,
+							["glancing"] = 0,
 							["critical"] = 0,
 							["name"] = "Frill Blast",
 							["blocked"] = 0,
@@ -3296,8 +3296,8 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 137457,
 							["absorbed"] = 0,
-							["glancing"] = 0,
 							["min"] = 23894,
+							["glancing"] = 0,
 							["critical"] = 0,
 							["name"] = "Piercing Roar",
 							["blocked"] = 0,
@@ -3310,8 +3310,8 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 6603,
 							["absorbed"] = 0,
-							["glancing"] = 0,
 							["min"] = 19170,
+							["glancing"] = 0,
 							["critical"] = 0,
 							["name"] = "Attack",
 							["blocked"] = 0,
@@ -3651,8 +3651,8 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 137511,
 							["absorbed"] = 0,
-							["glancing"] = 0,
 							["min"] = 22903,
+							["glancing"] = 0,
 							["critical"] = 0,
 							["name"] = "Spiritfire Beam",
 							["blocked"] = 0,
@@ -3665,8 +3665,8 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 137457,
 							["absorbed"] = 0,
-							["glancing"] = 0,
 							["min"] = 24000,
+							["glancing"] = 0,
 							["critical"] = 0,
 							["name"] = "Piercing Roar",
 							["blocked"] = 0,
@@ -3679,8 +3679,8 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 137505,
 							["absorbed"] = 0,
-							["glancing"] = 0,
 							["min"] = 96000,
+							["glancing"] = 0,
 							["critical"] = 0,
 							["name"] = "Frill Blast",
 							["blocked"] = 0,
@@ -3758,12 +3758,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 1,
 						},
-						["Death from Above"] = {
-							["name"] = "Death from Above",
+						["Crimson Vial"] = {
+							["name"] = "Crimson Vial",
 							["active"] = 0,
-							["id"] = 152150,
+							["id"] = 185311,
 							["auratype"] = "BUFF",
-							["uptime"] = 4,
+							["uptime"] = 19,
 						},
 						["Roll the Bones"] = {
 							["name"] = "Roll the Bones",
@@ -3779,12 +3779,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 11,
 						},
-						["Crimson Vial"] = {
-							["name"] = "Crimson Vial",
+						["Adrenaline Rush"] = {
+							["name"] = "Adrenaline Rush",
 							["active"] = 0,
-							["id"] = 185311,
+							["id"] = 13750,
 							["auratype"] = "BUFF",
-							["uptime"] = 19,
+							["uptime"] = 15,
 						},
 						["Grand Melee"] = {
 							["name"] = "Grand Melee",
@@ -3800,19 +3800,19 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 32,
 						},
-						["Alacrity"] = {
-							["name"] = "Alacrity",
-							["active"] = 0,
-							["id"] = 193538,
-							["auratype"] = "BUFF",
-							["uptime"] = 106,
-						},
 						["Jolly Roger"] = {
 							["name"] = "Jolly Roger",
 							["active"] = 0,
 							["id"] = 199603,
 							["auratype"] = "BUFF",
 							["uptime"] = 13,
+						},
+						["Alacrity"] = {
+							["name"] = "Alacrity",
+							["active"] = 0,
+							["id"] = 193538,
+							["auratype"] = "BUFF",
+							["uptime"] = 106,
 						},
 						["Feint"] = {
 							["name"] = "Feint",
@@ -3828,12 +3828,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 85,
 						},
-						["Adrenaline Rush"] = {
-							["name"] = "Adrenaline Rush",
+						["Death from Above"] = {
+							["name"] = "Death from Above",
 							["active"] = 0,
-							["id"] = 13750,
+							["id"] = 152150,
 							["auratype"] = "BUFF",
-							["uptime"] = 15,
+							["uptime"] = 4,
 						},
 					},
 					["role"] = "DAMAGER",
@@ -3936,8 +3936,8 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 137504,
 							["absorbed"] = 0,
-							["glancing"] = 0,
 							["min"] = 36841,
+							["glancing"] = 0,
 							["critical"] = 0,
 							["name"] = "Crush",
 							["blocked"] = 0,
@@ -3950,8 +3950,8 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 137457,
 							["absorbed"] = 0,
-							["glancing"] = 0,
 							["min"] = 24000,
+							["glancing"] = 0,
 							["critical"] = 0,
 							["name"] = "Piercing Roar",
 							["blocked"] = 0,
@@ -3964,8 +3964,8 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 137505,
 							["absorbed"] = 0,
-							["glancing"] = 0,
 							["min"] = 96000,
+							["glancing"] = 0,
 							["critical"] = 0,
 							["name"] = "Frill Blast",
 							["blocked"] = 0,
@@ -3978,8 +3978,8 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 137508,
 							["absorbed"] = 0,
-							["glancing"] = 0,
 							["min"] = 26823,
+							["glancing"] = 0,
 							["critical"] = 0,
 							["name"] = "Spiritfire Beam",
 							["blocked"] = 0,
@@ -3992,8 +3992,8 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 6603,
 							["absorbed"] = 0,
-							["glancing"] = 0,
 							["min"] = 22774,
+							["glancing"] = 0,
 							["critical"] = 1,
 							["name"] = "Attack",
 							["blocked"] = 0,
@@ -4240,10 +4240,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
-					["done"] = 2757835,
-					["taken"] = 12601385,
 					["htakenspell"] = {
 					},
+					["taken"] = 12601385,
+					["done"] = 2757835,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},

@@ -39,6 +39,12 @@ legionhraspisokach5={
 10769,--http://ru.wowhead.com/achievement=10769/burning-down-the-house#comments
 
 10413, -- http://ru.wowhead.com/achievement=10413/instant-karma#english-comments
+
+10543, -- http://www.wowhead.com/achievement=10543/surge-protector
+
+10773, -- http://www.wowhead.com/achievement=10773/arcanic-cling
+10776, -- http://www.wowhead.com/achievement=10776/no-time-to-waste
+
 }
 
 
@@ -155,7 +161,7 @@ if event == "ZONE_CHANGED_NEW_AREA" then
 legionhracheckzonedelay=GetTime()+2
 legionhracounter1=0
 
-
+fsdfdsfsdfsdfer=nil
 
 
 end
@@ -295,8 +301,28 @@ if arg2=="SPELL_DAMAGE" and arg10==195033 and arg14>=0 then
   end
 end
 
+if arg2=="SPELL_CAST_SUCCESS" and arg10==198750 then
+	if legionhraspisokon[9]==1 and legionhraachdone1 then
+		legionhrafailnoreason(9)
+	end
+end
+
+if (arg2=="SPELL_DAMAGE" and (arg10==220581 or arg10==220597 or arg10==220569)) then
+	if legionhraspisokon[10]==1 and legionhraachdone1 and UnitGUID("boss1") then
+		legionhramyfail(10)
+	end
+end
 
 
+if arg2=="UNIT_DIED" and legionbosskilled==nil then
+  if legionhraspisokon[11]==1 and legionhraachdone1 and fsdfdsfsdfsdfer==nil then
+  local id=raGetUnitID(arg7)
+  if id==103130 then
+    legionhrafailnoreason(11)
+	fsdfdsfsdfsdfer=1
+  end
+  end
+end
 
 
 

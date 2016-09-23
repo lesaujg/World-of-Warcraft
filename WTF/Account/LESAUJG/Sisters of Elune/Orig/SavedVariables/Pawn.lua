@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0009,
+	["LastVersion"] = 2.0011,
 	["LastPlayerFullName"] = "Orig-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,

@@ -8,7 +8,7 @@ PawnCommon = {
 	["ColorTooltipBorder"] = true,
 	["IgnoreItemUpgrades"] = true,
 	["ShowTooltipIcons"] = true,
-	["LastVersion"] = 2.0008,
+	["LastVersion"] = 2.0011,
 	["ShowSocketingAdvisor"] = true,
 	["Scales"] = {
 		["\"Wowhead\":SHAMAN3"] = {
@@ -481,22 +481,6 @@ PawnCommon = {
 			["SpecID"] = 1,
 			["ClassID"] = 4,
 		},
-		["\"Wowhead\":DEATHKNIGHT1"] = {
-			["Color"] = "ff4d6b",
-			["DoNotShow1HUpgrades"] = true,
-			["NormalizationFactor"] = 1,
-			["DoNotShow2HUpgrades"] = false,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "bf3950",
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Deathknight_BloodPresence",
-			["PerCharacterOptions"] = {
-			},
-			["LocalizedName"] = "Death Knight: Blood",
-			["UpgradesFollowSpecialization"] = true,
-			["Role"] = "TANK",
-			["SpecID"] = 1,
-			["ClassID"] = 6,
-		},
 		["\"Wowhead\":DEMONHUNTER1"] = {
 			["Color"] = "a330c9",
 			["DoNotShow1HUpgrades"] = false,
@@ -512,6 +496,22 @@ PawnCommon = {
 			["Role"] = "DAMAGER",
 			["SpecID"] = 1,
 			["ClassID"] = 12,
+		},
+		["\"Wowhead\":DEATHKNIGHT1"] = {
+			["Color"] = "ff4d6b",
+			["DoNotShow1HUpgrades"] = true,
+			["NormalizationFactor"] = 1,
+			["DoNotShow2HUpgrades"] = false,
+			["Provider"] = "Wowhead",
+			["UnenchantedColor"] = "bf3950",
+			["IconTexturePath"] = "Interface\\Icons\\Spell_Deathknight_BloodPresence",
+			["PerCharacterOptions"] = {
+			},
+			["LocalizedName"] = "Death Knight: Blood",
+			["UpgradesFollowSpecialization"] = true,
+			["Role"] = "TANK",
+			["SpecID"] = 1,
+			["ClassID"] = 6,
 		},
 		["\"Wowhead\":DRUID2"] = {
 			["Color"] = "ff7d0a",
