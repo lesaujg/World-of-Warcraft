@@ -1,5 +1,6 @@
 VER 3 0000000000000001 "Decursive" "INV_MISC_QUESTIONMARK"
-/script DecursiveRootTable.Dcr:Println('No spell available')
+/stopcasting
+/cast [@mouseover,nomod,exists] Purify Spirit;  [@mouseover,exists,mod:ctrl] Purge; [@mouseover,exists,mod:shift] Hex
 END
 VER 3 0000000000000002 "RandomMount" "INV_MISC_QUESTIONMARK"
 /use [mod:ctrlshift]Grand Expedition Yak
