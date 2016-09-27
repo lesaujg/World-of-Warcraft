@@ -17,3 +17,8 @@ VER 3 0000000000000002 "RandomMount" "INV_MISC_QUESTIONMARK"
 /click [nobtn:2]LiteMount
 /click [btn:2]LiteMount RightButton
 END
+VER 3 0000000000000004 "Test" "INV_MISC_QUESTIONMARK"
+/target Bound Water Elemental
+/focus
+/run if UnitName("Target") == "Bound Water Elemental" then PlaySoundFile([[Sound\Interface\PVPFlagTakenMono.ogg]], "Master"); print(date(), UnitName("Target"), "Found"); SetRaidTarget("target",8); end
+END
