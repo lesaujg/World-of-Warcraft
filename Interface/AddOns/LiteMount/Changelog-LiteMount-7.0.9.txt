@@ -1,0 +1,14 @@
+tag 7.0.9
+ddf9ba1e506dfe3caa312024836b6a7b5af39725
+Mike "Xodiv" Battersby <mib@post.com>
+2016-09-27 12:46:31 +1000
+
+Release 7.0.9.
+Only use Travel Form on the ground if you don't yet know Apprentice Riding.
+
+
+--------------------
+
+Mike "Xodiv" Battersby:
+	- Flag Travel Form as a "walking" mount only if you don't know how to ride at all yet. I assume you'll buy a mount straight away? Argh.
+	- Travel Form issues. Bleh. I liked it better when this was a real mount instead of a 40% weird thing.
