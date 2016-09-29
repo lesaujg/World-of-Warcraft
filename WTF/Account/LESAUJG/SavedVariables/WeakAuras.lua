@@ -563,10 +563,10 @@ WeakAurasSaved = {
 			["displayStacks"] = "%s",
 			["mirror"] = false,
 			["regionType"] = "icon",
-			["discrete_rotation"] = 0,
-			["blendMode"] = "ADD",
-			["selfPoint"] = "CENTER",
 			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
+			["blendMode"] = "ADD",
+			["discrete_rotation"] = 0,
+			["selfPoint"] = "CENTER",
 			["stickyDuration"] = false,
 			["texture"] = "Spells\\Agility_128",
 			["stacksContainment"] = "INSIDE",
@@ -1319,9 +1319,9 @@ WeakAurasSaved = {
 			["fontSize"] = 18,
 			["displayStacks"] = "%p",
 			["mirror"] = false,
-			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
-			["regionType"] = "icon",
 			["disjunctive"] = "all",
+			["regionType"] = "icon",
+			["stickyDuration"] = false,
 			["blendMode"] = "ADD",
 			["stacksPoint"] = "BOTTOM",
 			["selfPoint"] = "CENTER",
@@ -1387,7 +1387,7 @@ WeakAurasSaved = {
 			["untrigger"] = {
 				["spellName"] = 214579,
 			},
-			["stickyDuration"] = false,
+			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
 			["displayIcon"] = "Interface\\Icons\\Ability_hunter_serpentswiftness",
 			["cooldown"] = true,
 			["textColor"] = {
@@ -2096,10 +2096,10 @@ WeakAurasSaved = {
 			["displayStacks"] = " ",
 			["mirror"] = false,
 			["regionType"] = "icon",
-			["discrete_rotation"] = 0,
-			["blendMode"] = "ADD",
-			["selfPoint"] = "CENTER",
 			["parent"] = "Hunter-Focus Use-amiyuy.com",
+			["blendMode"] = "ADD",
+			["discrete_rotation"] = 0,
+			["selfPoint"] = "CENTER",
 			["stickyDuration"] = false,
 			["texture"] = "Spells\\Agility_128",
 			["stacksContainment"] = "INSIDE",
@@ -2614,12 +2614,12 @@ WeakAurasSaved = {
 				["spellName"] = "Stampede",
 				["message"] = "Stampede 20s",
 				["sourceName"] = "Tehstool",
-				["unevent"] = "timed",
 				["tooltip_operator"] = "==",
+				["subeventSuffix"] = "_CAST_SUCCESS",
 				["use_sourceName"] = true,
 				["name_operator"] = "==",
 				["event"] = "Combat Log",
-				["subeventSuffix"] = "_CAST_SUCCESS",
+				["unevent"] = "timed",
 				["use_name"] = true,
 				["use_spellId"] = true,
 				["name"] = "Focus Fire",
@@ -2895,11 +2895,11 @@ WeakAurasSaved = {
 				},
 			},
 			["trigger"] = {
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["remaining_operator"] = "<=",
+				["subeventPrefix"] = "SPELL",
 				["names"] = {
 				},
-				["use_unit"] = true,
 				["use_charges"] = true,
 				["powertype"] = 2,
 				["remaining"] = "1.5",
@@ -2982,9 +2982,9 @@ WeakAurasSaved = {
 			["fontSize"] = 18,
 			["displayStacks"] = "%p",
 			["mirror"] = false,
-			["selfPoint"] = "CENTER",
-			["regionType"] = "icon",
 			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
+			["regionType"] = "icon",
+			["stickyDuration"] = false,
 			["blendMode"] = "ADD",
 			["cooldown"] = true,
 			["untrigger"] = {
@@ -3033,7 +3033,7 @@ WeakAurasSaved = {
 			["disjunctive"] = "all",
 			["numTriggers"] = 2,
 			["id"] = "MM-Talent100-Sidewinders 2 Charges Almost",
-			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
 			["displayIcon"] = "Interface\\Icons\\Ability_hunter_serpentswiftness",
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
@@ -3440,7 +3440,7 @@ WeakAurasSaved = {
 			["expanded"] = false,
 			["constantFactor"] = "RADIUS",
 			["selfPoint"] = "LEFT",
-			["backgroundInset"] = 0,
+			["radius"] = 200,
 			["id"] = "Hunter-Active Buffs-amiyuy.com",
 			["animation"] = {
 				["start"] = {
@@ -3467,7 +3467,7 @@ WeakAurasSaved = {
 			["additional_triggers"] = {
 			},
 			["height"] = 49.9999694824219,
-			["borderOffset"] = 16,
+			["backgroundInset"] = 0,
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -3508,7 +3508,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["radius"] = 200,
+			["borderOffset"] = 16,
 		},
 		["Aspect of the Turtle Active"] = {
 			["textFlags"] = "None",
@@ -3604,8 +3604,8 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["debuffType"] = "HELPFUL",
-				["type"] = "aura",
 				["sourceName"] = "Tehstool",
+				["use_sourceName"] = true,
 				["subeventSuffix"] = "_CAST_SUCCESS",
 				["unevent"] = "timed",
 				["unit"] = "player",
@@ -3618,7 +3618,7 @@ WeakAurasSaved = {
 				},
 				["use_sourceUnit"] = true,
 				["use_message"] = true,
-				["use_sourceName"] = true,
+				["type"] = "aura",
 				["use_messageType"] = true,
 				["messageType"] = "CHAT_MSG_WHISPER",
 			},
@@ -3976,8 +3976,8 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["debuffType"] = "HELPFUL",
-				["type"] = "aura",
 				["use_sourceName"] = true,
+				["sourceName"] = "Tehstool",
 				["subeventSuffix"] = "_CAST_SUCCESS",
 				["unevent"] = "timed",
 				["unit"] = "player",
@@ -3990,7 +3990,7 @@ WeakAurasSaved = {
 				},
 				["use_sourceUnit"] = true,
 				["use_message"] = true,
-				["sourceName"] = "Tehstool",
+				["type"] = "aura",
 				["use_messageType"] = true,
 				["messageType"] = "CHAT_MSG_WHISPER",
 			},
@@ -4865,9 +4865,9 @@ WeakAurasSaved = {
 			["fontSize"] = 18,
 			["displayStacks"] = "%p",
 			["mirror"] = false,
-			["parent"] = "Hunter-Focus Use-amiyuy.com",
-			["regionType"] = "icon",
 			["rotation"] = 0,
+			["regionType"] = "icon",
+			["stickyDuration"] = false,
 			["blendMode"] = "ADD",
 			["cooldown"] = true,
 			["selfPoint"] = "CENTER",
@@ -4927,7 +4927,7 @@ WeakAurasSaved = {
 			["disjunctive"] = "all",
 			["numTriggers"] = 3,
 			["yOffset"] = -106,
-			["stickyDuration"] = false,
+			["parent"] = "Hunter-Focus Use-amiyuy.com",
 			["displayIcon"] = "Interface\\Icons\\Ability_hunter_serpentswiftness",
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
@@ -5599,8 +5599,8 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["debuffType"] = "HELPFUL",
-				["type"] = "aura",
 				["use_sourceName"] = true,
+				["sourceName"] = "Tehstool",
 				["subeventSuffix"] = "_CAST_SUCCESS",
 				["unevent"] = "timed",
 				["unit"] = "player",
@@ -5613,7 +5613,7 @@ WeakAurasSaved = {
 				},
 				["use_sourceUnit"] = true,
 				["use_message"] = true,
-				["sourceName"] = "Tehstool",
+				["type"] = "aura",
 				["use_messageType"] = true,
 				["messageType"] = "CHAT_MSG_WHISPER",
 			},
@@ -6237,10 +6237,10 @@ WeakAurasSaved = {
 			["selfPoint"] = "CENTER",
 			["yOffset"] = 0,
 			["init_completed"] = 1,
-			["zoom"] = 0.29,
-			["borderOffset"] = 5,
-			["stacksContainment"] = "INSIDE",
 			["model_z"] = 0,
+			["zoom"] = 0.29,
+			["stacksContainment"] = "INSIDE",
+			["borderOffset"] = 5,
 			["auto"] = false,
 			["additional_triggers"] = {
 			},
@@ -6946,14 +6946,9 @@ WeakAurasSaved = {
 			["desaturate"] = false,
 			["rotation"] = 0,
 			["font"] = "Tw_Cen_MT_Bold",
-			["sequence"] = 1,
+			["xOffset"] = 0,
 			["height"] = 50,
-			["borderColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
+			["parent"] = "Hunter-Active Buffs-amiyuy.com",
 			["load"] = {
 				["use_never"] = false,
 				["talent"] = {
@@ -7008,28 +7003,14 @@ WeakAurasSaved = {
 				0.5, -- [4]
 			},
 			["fontSize"] = 18,
-			["displayStacks"] = " %p",
-			["model_path"] = "Creature/Arthaslichking/arthaslichking.m2",
+			["sequence"] = 1,
+			["stickyDuration"] = false,
 			["scale"] = 1,
-			["parent"] = "Hunter-Active Buffs-amiyuy.com",
+			["selfPoint"] = "CENTER",
 			["border"] = false,
 			["borderEdge"] = "None",
 			["regionType"] = "icon",
 			["borderSize"] = 16,
-			["stickyDuration"] = false,
-			["numTriggers"] = 1,
-			["yOffset"] = 0,
-			["zoom"] = 0.29,
-			["model_z"] = 0,
-			["stacksContainment"] = "INSIDE",
-			["borderOffset"] = 5,
-			["auto"] = true,
-			["additional_triggers"] = {
-			},
-			["id"] = "BM-Beast Cleave Active",
-			["model_y"] = 0,
-			["frameStrata"] = 1,
-			["width"] = 50,
 			["actions"] = {
 				["start"] = {
 				},
@@ -7038,10 +7019,29 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
+			["numTriggers"] = 1,
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["borderOffset"] = 5,
+			["zoom"] = 0.29,
+			["stacksContainment"] = "INSIDE",
+			["model_z"] = 0,
+			["auto"] = true,
+			["additional_triggers"] = {
+			},
+			["id"] = "BM-Beast Cleave Active",
+			["model_y"] = 0,
+			["frameStrata"] = 1,
+			["width"] = 50,
+			["model_path"] = "Creature/Arthaslichking/arthaslichking.m2",
 			["borderInset"] = 11,
 			["inverse"] = true,
-			["selfPoint"] = "CENTER",
-			["xOffset"] = 0,
+			["displayStacks"] = " %p",
+			["yOffset"] = 0,
 			["displayIcon"] = "Interface\\Icons\\Ability_Hunter_MendPet",
 			["cooldown"] = false,
 			["textColor"] = {
@@ -7319,12 +7319,12 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["unit"] = "player",
+				["spellName"] = "Stampede",
 				["debuffType"] = "HELPFUL",
+				["sourceName"] = "Tehstool",
 				["custom_hide"] = "timed",
 				["spell"] = "Fury of the Eagle",
-				["spellName"] = "Stampede",
 				["type"] = "status",
-				["sourceName"] = "Tehstool",
 				["message"] = "Stampede 20s",
 				["unevent"] = "auto",
 				["subeventSuffix"] = "_CAST_SUCCESS",
@@ -7611,13 +7611,13 @@ WeakAurasSaved = {
 			["trigger"] = {
 				["debuffType"] = "HELPFUL",
 				["type"] = "status",
-				["subeventPrefix"] = "SPELL",
-				["use_targetRequired"] = false,
 				["names"] = {
 				},
+				["use_targetRequired"] = false,
+				["use_unit"] = true,
 				["use_inverse"] = false,
 				["event"] = "Action Usable",
-				["use_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["realSpellName"] = "Muzzle",
 				["use_spellName"] = true,
 				["spellIds"] = {
@@ -7883,8 +7883,8 @@ WeakAurasSaved = {
 				["unit"] = "target",
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
-				["debuffType"] = "HARMFUL",
 				["spellName"] = "Stampede",
+				["custom_hide"] = "timed",
 				["sourceName"] = "Tehstool",
 				["type"] = "aura",
 				["subeventSuffix"] = "_CAST_SUCCESS",
@@ -7901,7 +7901,7 @@ WeakAurasSaved = {
 				},
 				["use_sourceUnit"] = true,
 				["use_message"] = true,
-				["custom_hide"] = "timed",
+				["debuffType"] = "HARMFUL",
 				["use_messageType"] = true,
 				["messageType"] = "CHAT_MSG_WHISPER",
 			},
@@ -8057,8 +8057,8 @@ WeakAurasSaved = {
 				},
 				["subeventPrefix"] = "SPELL",
 				["use_messageType"] = true,
-				["custom_hide"] = "timed",
 				["spellName"] = "Stampede",
+				["debuffType"] = "HARMFUL",
 				["use_sourceName"] = true,
 				["sourceName"] = "Tehstool",
 				["type"] = "aura",
@@ -8073,7 +8073,7 @@ WeakAurasSaved = {
 				},
 				["use_sourceUnit"] = true,
 				["use_message"] = true,
-				["debuffType"] = "HARMFUL",
+				["custom_hide"] = "timed",
 				["sourceUnit"] = "player",
 				["messageType"] = "CHAT_MSG_WHISPER",
 			},
@@ -9375,10 +9375,10 @@ WeakAurasSaved = {
 			["displayStacks"] = " ",
 			["mirror"] = false,
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["blendMode"] = "ADD",
-			["parent"] = "Hunter-Focus Use-amiyuy.com",
 			["discrete_rotation"] = 0,
+			["blendMode"] = "ADD",
+			["selfPoint"] = "CENTER",
+			["parent"] = "Hunter-Focus Use-amiyuy.com",
 			["stickyDuration"] = false,
 			["texture"] = "Spells\\Agility_128",
 			["stacksContainment"] = "INSIDE",
@@ -9426,556 +9426,6 @@ WeakAurasSaved = {
 			["xOffset"] = 188,
 			["displayIcon"] = "Interface\\Icons\\inv_spear_07",
 			["stacksPoint"] = "BOTTOMRIGHT",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["SV-Talent15-Mok'Nathal Tactics Active Stacks"] = {
-			["user_y"] = 0,
-			["stacksSize"] = 12,
-			["user_x"] = 0,
-			["xOffset"] = -150,
-			["stacksFlags"] = "None",
-			["yOffset"] = -157,
-			["foregroundColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["borderColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["sameTexture"] = true,
-			["rotateText"] = "NONE",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
-			["fontFlags"] = "OUTLINE",
-			["selfPoint"] = "CENTER",
-			["barColor"] = {
-				1, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["desaturate"] = false,
-			["rotation"] = 0,
-			["font"] = "Tw_Cen_MT_Bold",
-			["load"] = {
-				["use_never"] = false,
-				["talent"] = {
-					["single"] = 3,
-					["multi"] = {
-					},
-				},
-				["use_class"] = true,
-				["class"] = {
-					["single"] = "HUNTER",
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_talent"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["use_spec"] = true,
-				["spec"] = {
-					["single"] = 3,
-					["multi"] = {
-					},
-				},
-				["use_combat"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["foregroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
-			["regionType"] = "icon",
-			["stacks"] = true,
-			["blendMode"] = "BLEND",
-			["texture"] = "Blizzard",
-			["textFont"] = "Friz Quadrata TT",
-			["borderOffset"] = 5,
-			["auto"] = true,
-			["compress"] = false,
-			["timerFont"] = "Friz Quadrata TT",
-			["alpha"] = 1,
-			["borderInset"] = 11,
-			["displayIcon"] = "Interface\\Icons\\",
-			["stacksPoint"] = "BOTTOM",
-			["backgroundOffset"] = 2,
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.743452787399292, -- [4]
-			},
-			["barInFront"] = true,
-			["desaturateBackground"] = false,
-			["activeTriggerMode"] = 0,
-			["customTextUpdate"] = "update",
-			["textSize"] = 12,
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
-			["trigger"] = {
-				["duration"] = "20",
-				["message_operator"] = "find('%s')",
-				["names"] = {
-					"Mok'Nathal Tactics", -- [1]
-				},
-				["subeventPrefix"] = "SPELL",
-				["sourceUnit"] = "player",
-				["debuffType"] = "HELPFUL",
-				["type"] = "aura",
-				["use_sourceName"] = true,
-				["subeventSuffix"] = "_CAST_SUCCESS",
-				["unevent"] = "timed",
-				["unit"] = "player",
-				["custom_hide"] = "timed",
-				["event"] = "Combat Log",
-				["spellName"] = "Stampede",
-				["message"] = "Stampede 20s",
-				["use_spellName"] = true,
-				["spellIds"] = {
-				},
-				["use_sourceUnit"] = true,
-				["use_message"] = true,
-				["sourceName"] = "Tehstool",
-				["use_messageType"] = true,
-				["messageType"] = "CHAT_MSG_WHISPER",
-			},
-			["text"] = true,
-			["stickyDuration"] = false,
-			["parent"] = "Hunter-Active Buffs-amiyuy.com",
-			["timer"] = true,
-			["timerFlags"] = "None",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["crop_y"] = 0.41,
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["fontSize"] = 18,
-			["displayStacks"] = "%s",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["border"] = false,
-			["inverse"] = false,
-			["mirror"] = false,
-			["borderEdge"] = "None",
-			["untrigger"] = {
-			},
-			["borderSize"] = 16,
-			["icon"] = true,
-			["icon_side"] = "RIGHT",
-			["height"] = 50,
-			["displayTextLeft"] = "%n",
-			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
-			["additional_triggers"] = {
-			},
-			["stacksContainment"] = "INSIDE",
-			["stacksColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["timerSize"] = 12,
-			["stacksFont"] = "Friz Quadrata TT",
-			["id"] = "SV-Talent15-Mok'Nathal Tactics Active Stacks",
-			["displayTextRight"] = "%p",
-			["frameStrata"] = 1,
-			["width"] = 50,
-			["textFlags"] = "None",
-			["anchorPoint"] = "CENTER",
-			["numTriggers"] = 1,
-			["desaturateForeground"] = false,
-			["orientation"] = "HORIZONTAL",
-			["crop_x"] = 0.41,
-			["zoom"] = 0.29,
-			["timerColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["BM-Artifact-Titan's Thunder Active"] = {
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.85773877799511, -- [4]
-			},
-			["untrigger"] = {
-				["spellName"] = 53351,
-			},
-			["anchorPoint"] = "CENTER",
-			["model_x"] = 0,
-			["activeTriggerMode"] = 0,
-			["customTextUpdate"] = "update",
-			["icon"] = true,
-			["fontFlags"] = "OUTLINE",
-			["advance"] = false,
-			["model_path"] = "Creature/Arthaslichking/arthaslichking.m2",
-			["trigger"] = {
-				["use_inverse"] = false,
-				["unit"] = "pet",
-				["remaining"] = "1.5",
-				["custom_hide"] = "timed",
-				["type"] = "aura",
-				["unevent"] = "auto",
-				["subeventPrefix"] = "SPELL",
-				["debuffType"] = "HELPFUL",
-				["event"] = "Cooldown Progress (Spell)",
-				["subeventSuffix"] = "_CAST_START",
-				["use_remaining"] = true,
-				["use_spellName"] = true,
-				["spellIds"] = {
-				},
-				["names"] = {
-					"Titan's Thunder", -- [1]
-				},
-				["remaining_operator"] = ">",
-				["use_unit"] = true,
-				["spellName"] = 53351,
-				["ownOnly"] = true,
-			},
-			["desaturate"] = false,
-			["rotation"] = 0,
-			["font"] = "Tw_Cen_MT_Bold",
-			["stickyDuration"] = false,
-			["height"] = 50,
-			["borderColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["load"] = {
-				["use_never"] = false,
-				["talent"] = {
-					["single"] = 11,
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["single"] = 1,
-					["multi"] = {
-						true, -- [1]
-					},
-				},
-				["class"] = {
-					["single"] = "HUNTER",
-					["multi"] = {
-					},
-				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_spec"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["use_class"] = true,
-				["use_combat"] = true,
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["stacksPoint"] = "BOTTOM",
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["fontSize"] = 18,
-			["sequence"] = 1,
-			["selfPoint"] = "CENTER",
-			["scale"] = 1,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["border"] = false,
-			["borderEdge"] = "None",
-			["regionType"] = "icon",
-			["borderSize"] = 16,
-			["xOffset"] = 0,
-			["numTriggers"] = 2,
-			["displayStacks"] = " %p",
-			["zoom"] = 0.29,
-			["model_z"] = 0,
-			["stacksContainment"] = "INSIDE",
-			["borderOffset"] = 5,
-			["auto"] = true,
-			["additional_triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "status",
-						["unevent"] = "auto",
-						["event"] = "Item Equipped",
-						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
-						["subeventSuffix"] = "_CAST_START",
-						["itemName"] = 128861,
-						["use_unit"] = true,
-						["use_itemName"] = true,
-					},
-					["untrigger"] = {
-						["itemName"] = 128861,
-					},
-				}, -- [1]
-			},
-			["id"] = "BM-Artifact-Titan's Thunder Active",
-			["model_y"] = 0,
-			["frameStrata"] = 1,
-			["width"] = 50,
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["preset"] = "bounceDecay",
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
-			["borderInset"] = 11,
-			["inverse"] = true,
-			["yOffset"] = 0,
-			["parent"] = "Hunter-Active Buffs-amiyuy.com",
-			["displayIcon"] = "Interface\\Icons\\Ability_Hunter_MendPet",
-			["cooldown"] = false,
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["BM-Talent90-Barrage Ready"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.781548127532005, -- [4]
-			},
-			["untrigger"] = {
-				["spellName"] = 120360,
-			},
-			["anchorPoint"] = "CENTER",
-			["activeTriggerMode"] = 0,
-			["customTextUpdate"] = "update",
-			["icon"] = true,
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
-			["trigger"] = {
-				["type"] = "status",
-				["debuffType"] = "HELPFUL",
-				["unevent"] = "auto",
-				["subeventPrefix"] = "SPELL",
-				["use_inverse"] = false,
-				["event"] = "Action Usable",
-				["use_unit"] = true,
-				["realSpellName"] = "Barrage",
-				["use_spellName"] = true,
-				["spellIds"] = {
-				},
-				["names"] = {
-				},
-				["subeventSuffix"] = "_CAST_START",
-				["unit"] = "player",
-				["custom_hide"] = "timed",
-				["spellName"] = 120360,
-			},
-			["desaturate"] = false,
-			["font"] = "Tw_Cen_MT_Bold",
-			["height"] = 50,
-			["load"] = {
-				["use_never"] = false,
-				["talent"] = {
-					["single"] = 17,
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["single"] = "HUNTER",
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["single"] = 1,
-					["multi"] = {
-						true, -- [1]
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["use_talent"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["use_spec"] = true,
-				["use_class"] = true,
-				["use_combat"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 14,
-			["displayStacks"] = "READY",
-			["regionType"] = "icon",
-			["parent"] = "Hunter-BM-Abilities-amiyuy.com",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0.29,
-			["auto"] = true,
-			["selfPoint"] = "CENTER",
-			["additional_triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "status",
-						["subeventSuffix"] = "_CAST_START",
-						["use_vehicle"] = false,
-						["event"] = "Conditions",
-						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
-						["use_unit"] = true,
-						["use_alive"] = true,
-						["unevent"] = "auto",
-						["custom_hide"] = "timed",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-			},
-			["id"] = "BM-Talent90-Barrage Ready",
-			["frameStrata"] = 1,
-			["width"] = 50,
-			["xOffset"] = 89,
-			["inverse"] = false,
-			["numTriggers"] = 2,
-			["stickyDuration"] = false,
-			["yOffset"] = -89,
-			["disjunctive"] = "all",
-			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -10137,6 +9587,484 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
+		["BM-Artifact-Titan's Thunder Active"] = {
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.85773877799511, -- [4]
+			},
+			["untrigger"] = {
+				["spellName"] = 53351,
+			},
+			["anchorPoint"] = "CENTER",
+			["model_x"] = 0,
+			["activeTriggerMode"] = 0,
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["advance"] = false,
+			["model_path"] = "Creature/Arthaslichking/arthaslichking.m2",
+			["trigger"] = {
+				["use_inverse"] = false,
+				["unit"] = "pet",
+				["remaining"] = "1.5",
+				["custom_hide"] = "timed",
+				["type"] = "aura",
+				["unevent"] = "auto",
+				["subeventPrefix"] = "SPELL",
+				["debuffType"] = "HELPFUL",
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventSuffix"] = "_CAST_START",
+				["use_remaining"] = true,
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["names"] = {
+					"Titan's Thunder", -- [1]
+				},
+				["remaining_operator"] = ">",
+				["use_unit"] = true,
+				["spellName"] = 53351,
+				["ownOnly"] = true,
+			},
+			["desaturate"] = false,
+			["rotation"] = 0,
+			["font"] = "Tw_Cen_MT_Bold",
+			["parent"] = "Hunter-Active Buffs-amiyuy.com",
+			["height"] = 50,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["single"] = 11,
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+						true, -- [1]
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["stacksPoint"] = "BOTTOM",
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["fontSize"] = 18,
+			["sequence"] = 1,
+			["xOffset"] = 0,
+			["scale"] = 1,
+			["yOffset"] = 0,
+			["border"] = false,
+			["borderEdge"] = "None",
+			["regionType"] = "icon",
+			["borderSize"] = 16,
+			["displayStacks"] = " %p",
+			["numTriggers"] = 2,
+			["stickyDuration"] = false,
+			["borderOffset"] = 5,
+			["zoom"] = 0.29,
+			["stacksContainment"] = "INSIDE",
+			["model_z"] = 0,
+			["auto"] = true,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["unevent"] = "auto",
+						["event"] = "Item Equipped",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
+						["subeventSuffix"] = "_CAST_START",
+						["itemName"] = 128861,
+						["use_unit"] = true,
+						["use_itemName"] = true,
+					},
+					["untrigger"] = {
+						["itemName"] = 128861,
+					},
+				}, -- [1]
+			},
+			["id"] = "BM-Artifact-Titan's Thunder Active",
+			["model_y"] = 0,
+			["frameStrata"] = 1,
+			["width"] = 50,
+			["selfPoint"] = "CENTER",
+			["borderInset"] = 11,
+			["inverse"] = true,
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["preset"] = "bounceDecay",
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["displayIcon"] = "Interface\\Icons\\Ability_Hunter_MendPet",
+			["cooldown"] = false,
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["BM-Talent90-Barrage Ready"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.781548127532005, -- [4]
+			},
+			["untrigger"] = {
+				["spellName"] = 120360,
+			},
+			["anchorPoint"] = "CENTER",
+			["activeTriggerMode"] = 0,
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["unevent"] = "auto",
+				["subeventPrefix"] = "SPELL",
+				["use_inverse"] = false,
+				["event"] = "Action Usable",
+				["use_unit"] = true,
+				["realSpellName"] = "Barrage",
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["names"] = {
+				},
+				["subeventSuffix"] = "_CAST_START",
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+				["spellName"] = 120360,
+			},
+			["desaturate"] = false,
+			["font"] = "Tw_Cen_MT_Bold",
+			["height"] = 50,
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["single"] = 17,
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+						true, -- [1]
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_talent"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["use_combat"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 14,
+			["displayStacks"] = "READY",
+			["regionType"] = "icon",
+			["parent"] = "Hunter-BM-Abilities-amiyuy.com",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0.29,
+			["auto"] = true,
+			["selfPoint"] = "CENTER",
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["subeventSuffix"] = "_CAST_START",
+						["use_vehicle"] = false,
+						["event"] = "Conditions",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
+						["use_unit"] = true,
+						["use_alive"] = true,
+						["unevent"] = "auto",
+						["custom_hide"] = "timed",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+			},
+			["id"] = "BM-Talent90-Barrage Ready",
+			["frameStrata"] = 1,
+			["width"] = 50,
+			["xOffset"] = 89,
+			["inverse"] = false,
+			["numTriggers"] = 2,
+			["stickyDuration"] = false,
+			["yOffset"] = -89,
+			["disjunctive"] = "all",
+			["stacksPoint"] = "BOTTOM",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["MM-Talent30-Black Arrow Ready"] = {
+			["disjunctive"] = "all",
+			["untrigger"] = {
+				["spellName"] = 194599,
+			},
+			["anchorPoint"] = "CENTER",
+			["activeTriggerMode"] = 0,
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "status",
+				["debuffType"] = "HELPFUL",
+				["unevent"] = "auto",
+				["subeventPrefix"] = "SPELL",
+				["use_inverse"] = false,
+				["event"] = "Action Usable",
+				["use_unit"] = true,
+				["realSpellName"] = "Black Arrow",
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["names"] = {
+				},
+				["subeventSuffix"] = "_CAST_START",
+				["unit"] = "player",
+				["spellName"] = 194599,
+				["custom_hide"] = "timed",
+			},
+			["desaturate"] = false,
+			["font"] = "Tw_Cen_MT_Bold",
+			["height"] = 50,
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["single"] = 5,
+					["multi"] = {
+						[11] = true,
+					},
+				},
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["use_talent"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 14,
+			["displayStacks"] = "READY",
+			["regionType"] = "icon",
+			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0.29,
+			["auto"] = true,
+			["selfPoint"] = "CENTER",
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["subeventSuffix"] = "_CAST_START",
+						["use_vehicle"] = false,
+						["event"] = "Conditions",
+						["subeventPrefix"] = "SPELL",
+						["use_unit"] = true,
+						["unevent"] = "auto",
+						["use_alive"] = true,
+						["unit"] = "player",
+						["custom_hide"] = "timed",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+			},
+			["id"] = "MM-Talent30-Black Arrow Ready",
+			["frameStrata"] = 1,
+			["width"] = 50,
+			["xOffset"] = -89,
+			["inverse"] = false,
+			["numTriggers"] = 2,
+			["stickyDuration"] = false,
+			["yOffset"] = -89,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.768850430846214, -- [4]
+			},
+			["stacksPoint"] = "BOTTOM",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
 		["BM/MM-Interrupt-Counter Shot"] = {
 			["xOffset"] = 232,
 			["untrigger"] = {
@@ -10165,13 +10093,13 @@ WeakAurasSaved = {
 			["trigger"] = {
 				["debuffType"] = "HELPFUL",
 				["type"] = "status",
-				["subeventPrefix"] = "SPELL",
-				["unevent"] = "auto",
 				["names"] = {
 				},
+				["unevent"] = "auto",
+				["use_unit"] = true,
 				["use_inverse"] = false,
 				["event"] = "Action Usable",
-				["use_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["realSpellName"] = "Counter Shot",
 				["use_spellName"] = true,
 				["spellIds"] = {
@@ -10560,10 +10488,10 @@ WeakAurasSaved = {
 			["displayStacks"] = " ",
 			["mirror"] = false,
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["blendMode"] = "ADD",
 			["parent"] = "Hunter-Focus Use-amiyuy.com",
+			["blendMode"] = "ADD",
 			["stickyDuration"] = false,
+			["selfPoint"] = "CENTER",
 			["actions"] = {
 				["start"] = {
 				},
@@ -11103,16 +11031,117 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
-		["MM-Talent30-Black Arrow Ready"] = {
-			["disjunctive"] = "all",
-			["untrigger"] = {
-				["spellName"] = 194599,
+		["SV-Talent15-Mok'Nathal Tactics Active Stacks"] = {
+			["user_y"] = 0,
+			["stacksSize"] = 12,
+			["user_x"] = 0,
+			["xOffset"] = -150,
+			["stacksFlags"] = "None",
+			["yOffset"] = -157,
+			["foregroundColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["anchorPoint"] = "CENTER",
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["sameTexture"] = true,
+			["rotateText"] = "NONE",
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
+			["fontFlags"] = "OUTLINE",
+			["selfPoint"] = "CENTER",
+			["barColor"] = {
+				1, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["desaturate"] = false,
+			["rotation"] = 0,
+			["font"] = "Tw_Cen_MT_Bold",
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["single"] = 3,
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["use_talent"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["foregroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
+			["regionType"] = "icon",
+			["stacks"] = true,
+			["blendMode"] = "BLEND",
+			["texture"] = "Blizzard",
+			["textFont"] = "Friz Quadrata TT",
+			["borderOffset"] = 5,
+			["auto"] = true,
+			["compress"] = false,
+			["timerFont"] = "Friz Quadrata TT",
+			["alpha"] = 1,
+			["borderInset"] = 11,
+			["displayIcon"] = "Interface\\Icons\\",
+			["stacksPoint"] = "BOTTOM",
+			["backgroundOffset"] = 2,
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.743452787399292, -- [4]
+			},
+			["barInFront"] = true,
+			["desaturateBackground"] = false,
 			["activeTriggerMode"] = 0,
 			["customTextUpdate"] = "update",
-			["icon"] = true,
-			["fontFlags"] = "OUTLINE",
+			["textSize"] = 12,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -11128,78 +11157,52 @@ WeakAurasSaved = {
 				},
 			},
 			["trigger"] = {
-				["type"] = "status",
-				["debuffType"] = "HELPFUL",
-				["unevent"] = "auto",
+				["duration"] = "20",
+				["message_operator"] = "find('%s')",
+				["names"] = {
+					"Mok'Nathal Tactics", -- [1]
+				},
 				["subeventPrefix"] = "SPELL",
-				["use_inverse"] = false,
-				["event"] = "Action Usable",
-				["use_unit"] = true,
-				["realSpellName"] = "Black Arrow",
+				["sourceUnit"] = "player",
+				["debuffType"] = "HELPFUL",
+				["use_sourceName"] = true,
+				["sourceName"] = "Tehstool",
+				["subeventSuffix"] = "_CAST_SUCCESS",
+				["unevent"] = "timed",
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+				["event"] = "Combat Log",
+				["spellName"] = "Stampede",
+				["message"] = "Stampede 20s",
 				["use_spellName"] = true,
 				["spellIds"] = {
 				},
-				["names"] = {
-				},
-				["subeventSuffix"] = "_CAST_START",
-				["unit"] = "player",
-				["spellName"] = 194599,
-				["custom_hide"] = "timed",
+				["use_sourceUnit"] = true,
+				["use_message"] = true,
+				["type"] = "aura",
+				["use_messageType"] = true,
+				["messageType"] = "CHAT_MSG_WHISPER",
 			},
-			["desaturate"] = false,
-			["font"] = "Tw_Cen_MT_Bold",
-			["height"] = 50,
-			["load"] = {
-				["use_never"] = false,
-				["talent"] = {
-					["single"] = 5,
-					["multi"] = {
-						[11] = true,
-					},
-				},
-				["spec"] = {
-					["single"] = 2,
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["single"] = "HUNTER",
-					["multi"] = {
-					},
-				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["use_talent"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["use_spec"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["use_class"] = true,
-				["use_combat"] = true,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
+			["text"] = true,
+			["stickyDuration"] = false,
+			["parent"] = "Hunter-Active Buffs-amiyuy.com",
+			["timer"] = true,
+			["timerFlags"] = "None",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["fontSize"] = 14,
-			["displayStacks"] = "READY",
-			["regionType"] = "icon",
-			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
+			["crop_y"] = 0.41,
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%s",
 			["actions"] = {
 				["start"] = {
 				},
@@ -11208,44 +11211,41 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0.29,
-			["auto"] = true,
-			["selfPoint"] = "CENTER",
-			["additional_triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "status",
-						["subeventSuffix"] = "_CAST_START",
-						["use_vehicle"] = false,
-						["event"] = "Conditions",
-						["subeventPrefix"] = "SPELL",
-						["use_unit"] = true,
-						["unevent"] = "auto",
-						["use_alive"] = true,
-						["unit"] = "player",
-						["custom_hide"] = "timed",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-			},
-			["id"] = "MM-Talent30-Black Arrow Ready",
-			["frameStrata"] = 1,
-			["width"] = 50,
-			["xOffset"] = -89,
+			["border"] = false,
 			["inverse"] = false,
-			["numTriggers"] = 2,
-			["stickyDuration"] = false,
-			["yOffset"] = -89,
-			["color"] = {
+			["mirror"] = false,
+			["borderEdge"] = "None",
+			["untrigger"] = {
+			},
+			["borderSize"] = 16,
+			["icon"] = true,
+			["icon_side"] = "RIGHT",
+			["height"] = 50,
+			["displayTextLeft"] = "%n",
+			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
+			["additional_triggers"] = {
+			},
+			["stacksContainment"] = "INSIDE",
+			["stacksColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
-				0.768850430846214, -- [4]
+				1, -- [4]
 			},
-			["stacksPoint"] = "BOTTOM",
-			["textColor"] = {
+			["timerSize"] = 12,
+			["stacksFont"] = "Friz Quadrata TT",
+			["id"] = "SV-Talent15-Mok'Nathal Tactics Active Stacks",
+			["displayTextRight"] = "%p",
+			["frameStrata"] = 1,
+			["width"] = 50,
+			["textFlags"] = "None",
+			["anchorPoint"] = "CENTER",
+			["numTriggers"] = 1,
+			["desaturateForeground"] = false,
+			["orientation"] = "HORIZONTAL",
+			["crop_x"] = 0.41,
+			["zoom"] = 0.29,
+			["timerColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
@@ -11610,8 +11610,8 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["debuffType"] = "HELPFUL",
-				["type"] = "aura",
 				["use_sourceName"] = true,
+				["sourceName"] = "Tehstool",
 				["unevent"] = "timed",
 				["subeventSuffix"] = "_CAST_SUCCESS",
 				["unit"] = "player",
@@ -11624,7 +11624,7 @@ WeakAurasSaved = {
 				},
 				["use_sourceUnit"] = true,
 				["use_message"] = true,
-				["sourceName"] = "Tehstool",
+				["type"] = "aura",
 				["use_messageType"] = true,
 				["messageType"] = "CHAT_MSG_WHISPER",
 			},
@@ -12214,10 +12214,10 @@ WeakAurasSaved = {
 			["displayStacks"] = " %s",
 			["mirror"] = false,
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["blendMode"] = "ADD",
-			["stickyDuration"] = false,
 			["parent"] = "Hunter-Focus Use-amiyuy.com",
+			["blendMode"] = "ADD",
+			["selfPoint"] = "CENTER",
+			["stickyDuration"] = false,
 			["untrigger"] = {
 			},
 			["texture"] = "Spells\\Agility_128",
@@ -12386,10 +12386,10 @@ WeakAurasSaved = {
 			["displayStacks"] = "%s",
 			["mirror"] = false,
 			["regionType"] = "icon",
-			["rotation"] = 0,
-			["blendMode"] = "ADD",
-			["selfPoint"] = "CENTER",
 			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
+			["blendMode"] = "ADD",
+			["rotation"] = 0,
+			["selfPoint"] = "CENTER",
 			["stickyDuration"] = false,
 			["texture"] = "Spells\\Agility_128",
 			["stacksContainment"] = "INSIDE",
@@ -13546,10 +13546,10 @@ WeakAurasSaved = {
 			["displayStacks"] = " ",
 			["mirror"] = false,
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["blendMode"] = "ADD",
 			["parent"] = "Hunter-Focus Use-amiyuy.com",
+			["blendMode"] = "ADD",
 			["discrete_rotation"] = 0,
+			["selfPoint"] = "CENTER",
 			["stickyDuration"] = false,
 			["texture"] = "Spells\\Agility_128",
 			["stacksContainment"] = "INSIDE",
@@ -15271,14 +15271,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = false,
 				["difficulty"] = {
 					["multi"] = {
 					},
@@ -15290,7 +15287,10 @@ WeakAurasSaved = {
 						[3] = true,
 					},
 				},
-				["use_spec"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -16663,10 +16663,10 @@ WeakAurasSaved = {
 			["displayStacks"] = "%s",
 			["mirror"] = false,
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["blendMode"] = "ADD",
-			["parent"] = "Hunter-Focus Use-amiyuy.com",
 			["stickyDuration"] = false,
+			["blendMode"] = "ADD",
+			["selfPoint"] = "CENTER",
+			["parent"] = "Hunter-Focus Use-amiyuy.com",
 			["actions"] = {
 				["start"] = {
 				},
@@ -16871,8 +16871,8 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["debuffType"] = "HELPFUL",
-				["type"] = "aura",
 				["use_sourceName"] = true,
+				["sourceName"] = "Tehstool",
 				["subeventSuffix"] = "_CAST_SUCCESS",
 				["unevent"] = "timed",
 				["unit"] = "player",
@@ -16885,7 +16885,7 @@ WeakAurasSaved = {
 				},
 				["use_sourceUnit"] = true,
 				["use_message"] = true,
-				["sourceName"] = "Tehstool",
+				["type"] = "aura",
 				["use_messageType"] = true,
 				["messageType"] = "CHAT_MSG_WHISPER",
 			},

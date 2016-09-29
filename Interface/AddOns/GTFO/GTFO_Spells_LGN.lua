@@ -10,6 +10,11 @@ Author: Zensunim of Malygos
 --- * The Broken Isles *
 --- ********************
 
+GTFO.SpellID["226512"] = {
+  --desc = "Sanguine Ichor (Mythic+ Keystone)";
+  sound = 1;
+};
+
 GTFO.SpellID["203114"] = {
   --desc = "Twilight Whirl (Twilight Bladetwister)";
   sound = 1;
@@ -66,13 +71,6 @@ GTFO.SpellID["193907"] = {
 GTFO.SpellID["202809"] = {
   --desc = "Fury of the Illidari (Varedis Felsoul)";
   sound = 1;
-};
-
-GTFO.SpellID["209928"] = {
-  --desc = "Creeping Nightmare (Gorebeak)";
-  applicationOnly = true;
-  sound = 1;
-  test = true; -- Unreliable... sometimes this is applied from unavoidable damage from mobs other than Gorebeak
 };
 
 GTFO.SpellID["192754"] = {
@@ -239,6 +237,18 @@ GTFO.SpellID["204478"] = {
   sound = 1;
 };
 
+GTFO.SpellID["206564"] = {
+  --desc = "Fel Storm (Eredar Portal-Lord)";
+  sound = 1;
+};
+
+GTFO.SpellID["202544"] = {
+  --desc = "Burning Rush (Herald Xarbizuld)";
+  sound = 1;
+};
+
+
+
 -- **********
 -- * Mardum *
 -- **********
@@ -335,6 +345,11 @@ GTFO.SpellID["183737"] = {
 
 GTFO.SpellID["198408"] = {
   --desc = "Nightfall (Archdruid Glaidalis)";
+  sound = 1;
+};
+
+GTFO.SpellID["218759"] = {
+  --desc = "Corruption Pool (Festerhide Grizzly)";
   sound = 1;
 };
 
@@ -703,6 +718,12 @@ GTFO.SpellID["213124"] = {
   sound = 1;
 };
 
+GTFO.SpellID["215489"] = {
+  --desc = "Venomous Pool";
+  sound = 1;
+  test = true;
+};
+
 GTFO.SpellID["212886"] = {
   --desc = "Nightmare Corruption (Il'gynoth)";
   sound = 1;
@@ -734,6 +755,27 @@ GTFO.SpellID["205611"] = {
   --desc = "Miasma (Ursoc)";
   sound = 1;
 };
+
+GTFO.SpellID["223596"] = {
+  --desc = "Darkfall (Dreadsoul Corruptor)";
+  sound = 1;
+};
+
+GTFO.SpellID["211196"] = {
+  --desc = "Rotten Breath (Rotten Drake - Cenarius)";
+  sound = 1;
+};
+
+GTFO.SpellID["210337"] = {
+  --desc = "Nightmare Brambles (Cenarius)";
+  sound = 1;
+};
+
+GTFO.SpellID["214712"] = {
+  --desc = "Nightmares (Cenarius)";
+  sound = 1;
+};
+
 
 -- *************
 -- * Nighthold *

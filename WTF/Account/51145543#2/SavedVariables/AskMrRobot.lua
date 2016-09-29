@@ -20,7 +20,7 @@ AskMrRobotDb3 = {
 			},
 			["Logging"] = {
 				["LastDiff"] = 0,
-				["LastZone"] = "Eastern Kingdoms",
+				["LastZone"] = "Deepholm",
 			},
 			["Equipped"] = {
 				[3] = {
@@ -56,6 +56,12 @@ AskMrRobotDb3 = {
 		["Magnara - Sisters of Elune"] = {
 		},
 		["Torinara - Sisters of Elune"] = {
+			["Logging"] = {
+				["Auto"] = {
+					[646] = {
+					},
+				},
+			},
 		},
 	},
 }
