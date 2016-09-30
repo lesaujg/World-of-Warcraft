@@ -1,14 +1,20 @@
 ------------------------------------------------------------------------
-r261 | zensunim | 2016-09-29 07:22:38 +0000 (Thu, 29 Sep 2016) | 6 lines
+r263 | zensunim | 2016-09-29 15:52:01 +0000 (Thu, 29 Sep 2016) | 3 lines
 Changed paths:
-   A /tags/4.40 (from /trunk:260)
+   A /tags/4.40.1 (from /trunk:262)
 
-4.40
-* Added sound override support
-* Added Legion spells for The Broken Isles (world)
-* Added Legion spells for The Emerald Nightmare
-* Added Legion spells for Darkheart Thicket
+4.40.1
+* Fixed Legion spells for The Emerald Nightmare
 
+------------------------------------------------------------------------
+r262 | zensunim | 2016-09-29 15:51:31 +0000 (Thu, 29 Sep 2016) | 1 line
+Changed paths:
+   M /trunk/GTFO.lua
+   M /trunk/GTFO.toc
+   M /trunk/GTFO_Fail_LGN.lua
+   M /trunk/ReadMe.txt
+
+4.40.1
 ------------------------------------------------------------------------
 r260 | zensunim | 2016-09-29 07:22:22 +0000 (Thu, 29 Sep 2016) | 1 line
 Changed paths:

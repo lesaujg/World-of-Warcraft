@@ -1136,3 +1136,6 @@ Change Log:
 * Added Legion spells for The Broken Isles (world)
 * Added Legion spells for The Emerald Nightmare
 * Added Legion spells for Darkheart Thicket
+
+4.40.1
+* Fixed Legion spells for The Emerald Nightmare

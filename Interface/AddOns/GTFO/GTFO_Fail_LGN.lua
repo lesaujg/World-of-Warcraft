@@ -897,17 +897,11 @@ GTFO.SpellID["224188"] = {
 -- * The Emerald Nightmare *
 -- *************************
 
-GTFO.SpellID["209471"] = {
-  --desc = "Nightmare Explosion (Nightmare Ichor)";
-  sound = 4;
-};
 
-GTFO.SpellID["215143"] = {
-  --desc = "Cursed Blood (Il'gynoth)";
+GTFO.SpellID["221029"] = {
+  --desc = "Unstable Decay";
   sound = 4;
-  negatingBuffSpellID = 215128; -- Cursed Blood
-  negatingIgnoreTime = 1;
-  ignoreSelfInflicted = true;
+  test = true; -- FF?  Negating?
 };
 
 GTFO.SpellID["214348"] = {
@@ -921,15 +915,15 @@ GTFO.SpellID["212853"] = {
   sound = 3;
 };
 
-GTFO.SpellID["225329"] = {
-  --desc = "Drake's Wrath (Drake's Fury)";
+GTFO.SpellID["210850"] = {
+  --desc = "Twisting Shadows (Elerethe Renferal)";
+  applicationOnly = true;
   sound = 3;
 };
 
-GTFO.SpellID["221029"] = {
-  --desc = "Unstable Decay";
+GTFO.SpellID["225329"] = {
+  --desc = "Drake's Wrath (Drake's Fury)";
   sound = 3;
-  test = true; -- FF?  Negating?
 };
 
 GTFO.SpellID["210781"] = {
@@ -937,22 +931,24 @@ GTFO.SpellID["210781"] = {
   sound = 3;
 };
 
+GTFO.SpellID["209471"] = {
+  --desc = "Nightmare Explosion (Nightmare Ichor - Il'gynoth)";
+  sound = 3;
+  negatingBuffSpellID = 209471; -- Nightmare Explosion
+};
+
+GTFO.SpellID["215143"] = {
+  --desc = "Cursed Blood (Il'gynoth)";
+  sound = 4;
+  negatingBuffSpellID = 215128; -- Cursed Blood
+  negatingIgnoreTime = 1;
+  ignoreSelfInflicted = true;
+};
+
 GTFO.SpellID["210984"] = {
-  --desc = "Eye of Fate (Nightmare Horror)";
+  --desc = "Eye of Fate (Nightmare Horror - Il'gynoth)";
   sound = 3;
   tankSound = 0;
-};
-
-GTFO.SpellID["208689"] = {
-  --desc = "Ground Slam (Dominator Tentacle)";
-  sound = 3;
-  test = true; -- Tank avoidable?
-};
-
-GTFO.SpellID["210850"] = {
-  --desc = "Twisting Shadows";
-  applicationOnly = true;
-  sound = 3;
 };
 
 GTFO.SpellID["223029"] = {
