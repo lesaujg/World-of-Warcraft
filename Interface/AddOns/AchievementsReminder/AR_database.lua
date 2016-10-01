@@ -388,7 +388,7 @@ ralltrack ={
 {1,0,0,0,0,0},--"Maw of Souls"
 {0,1,0,0,0},--"Neltharion's Lair"
 {1,0,1,0},--"The Arcway"
-{0,0,0,0,0,0},--"Vault of the Wardens"
+{0,0,1,0,0,0},--"Vault of the Wardens"
 {0,0,0,0,0},--"Violet Hold"
 {0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0},--"The Emerald Nightmare"
 {0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},--"The Nighthold"

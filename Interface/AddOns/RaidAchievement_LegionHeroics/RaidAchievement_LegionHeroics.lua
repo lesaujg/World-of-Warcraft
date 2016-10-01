@@ -45,6 +45,7 @@ legionhraspisokach5={
 10773, -- http://www.wowhead.com/achievement=10773/arcanic-cling
 10776, -- http://www.wowhead.com/achievement=10776/no-time-to-waste
 
+10680, -- http://www.wowhead.com/spell=197422/creeping-doom
 }
 
 
@@ -80,6 +81,37 @@ else
 end
 
 end
+
+
+
+-- tracker for 12 achieve.
+if rastarttrackingCrdana and GetTime()>rastarttrackingCrdana then
+	rastarttrackingCrdana = rastarttrackingCrdana+1
+	if legionhraspisokon[12]==1 and legionhraachdone1 then
+		rastarttrackingCrdana=GetTime()+1
+		local spbuf=GetSpellInfo(197941)
+		if UnitBuff("player", spbuf) or UnitDebuff("player", spbuf) then
+			legionhrafailnoreason(12, UnitName("player"))
+		end
+		if UnitBuff("party1", spbuf) or UnitDebuff("party1", spbuf) then
+			legionhrafailnoreason(12, UnitName("party1"))
+		end
+		if UnitBuff("party2", spbuf) or UnitDebuff("party2", spbuf) then
+			legionhrafailnoreason(12, UnitName("party2"))
+		end
+		if UnitBuff("party3", spbuf) or UnitDebuff("party3", spbuf) then
+			legionhrafailnoreason(12, UnitName("party3"))
+		end
+		if UnitBuff("party4", spbuf) or UnitDebuff("party4", spbuf) then
+			legionhrafailnoreason(12, UnitName("party4"))
+		end
+	else
+		rastarttrackingCrdana=nil
+	end
+end
+
+
+
 
 
 end
@@ -323,6 +355,43 @@ if arg2=="UNIT_DIED" and legionbosskilled==nil then
   end
   end
 end
+
+
+if arg2=="SPELL_AURA_APPLIED" and arg10==197422 then
+	if legionhraspisokon[12]==1 and legionhraachdone1 then
+		rastarttrackingCrdana=GetTime()+1
+		local spbuf=GetSpellInfo(197941)
+		if UnitBuff("player", spbuf) or UnitDebuff("player", spbuf) then
+			legionhrafailnoreason(12, UnitName("player"))
+		end
+		if UnitBuff("party1", spbuf) or UnitDebuff("party1", spbuf) then
+			legionhrafailnoreason(12, UnitName("party1"))
+		end
+		if UnitBuff("party2", spbuf) or UnitDebuff("party2", spbuf) then
+			legionhrafailnoreason(12, UnitName("party2"))
+		end
+		if UnitBuff("party3", spbuf) or UnitDebuff("party3", spbuf) then
+			legionhrafailnoreason(12, UnitName("party3"))
+		end
+		if UnitBuff("party4", spbuf) or UnitDebuff("party4", spbuf) then
+			legionhrafailnoreason(12, UnitName("party4"))
+		end
+	end
+end
+if arg2=="SPELL_AURA_REMOVED" and arg10==197422 then
+	rastarttrackingCrdana=nil
+end
+if arg2=="SPELL_DAMAGE" and arg10==197506 then
+	if legionhraspisokon[12]==1 and legionhraachdone1 then
+		raunitisplayer(arg7,arg8)
+		if raunitplayertrue then
+			legionhrafailnoreason(12, arg8)
+		end
+	end
+end
+
+
+
 
 
 

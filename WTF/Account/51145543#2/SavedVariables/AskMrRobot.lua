@@ -45,12 +45,12 @@ AskMrRobotDb3 = {
 			},
 		},
 	},
-	["global"] = {
-		["Region"] = "US",
-	},
 	["profileKeys"] = {
 		["Magnara - Sisters of Elune"] = "Magnara - Sisters of Elune",
 		["Torinara - Sisters of Elune"] = "Torinara - Sisters of Elune",
+	},
+	["global"] = {
+		["Region"] = "US",
 	},
 	["profiles"] = {
 		["Magnara - Sisters of Elune"] = {
