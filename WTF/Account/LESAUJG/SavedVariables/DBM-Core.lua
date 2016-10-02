@@ -78,10 +78,10 @@ DBM_AllSavedOptions = {
 		["ShowRespawn"] = true,
 		["HUDTexture3"] = "highlight",
 		["HUDAlpha2"] = 0.5,
-		["FilterDispel"] = true,
+		["LatencyThreshold"] = 250,
 		["HUDSize2"] = 5,
 		["ShowFakedRaidWarnings"] = false,
-		["LatencyThreshold"] = 250,
+		["FilterDispel"] = true,
 		["BlockVersionUpdateNotice"] = false,
 		["DontShowHealthFrame"] = false,
 		["LFDEnhance"] = true,
@@ -96,7 +96,7 @@ DBM_AllSavedOptions = {
 			1, -- [2]
 			0, -- [3]
 		},
-		["RLReadyCheckSound"] = true,
+		["AutoReplySound"] = true,
 		["HUDColor1"] = {
 			1, -- [1]
 			1, -- [2]
@@ -158,12 +158,12 @@ DBM_AllSavedOptions = {
 		["AutologBosses"] = false,
 		["DontShowRespawn"] = false,
 		["ChatFrame"] = "DEFAULT_CHAT_FRAME",
+		["HUDSize4"] = 5,
 		["SpecialWarningFlashCol3"] = {
 			1, -- [1]
 			0, -- [2]
 			0, -- [3]
 		},
-		["HUDSize4"] = 5,
 		["WarningColors"] = {
 			{
 				["b"] = 0.941176470588235,
@@ -204,15 +204,15 @@ DBM_AllSavedOptions = {
 		["RangeFrameRadarPoint"] = "TOPRIGHT",
 		["SpecialWarningY"] = 75,
 		["WarningY"] = 260,
-		["CustomSounds"] = 0,
+		["DontRestoreRange"] = false,
 		["RangeFrameUpdates"] = "Average",
 		["AutoCorrectTimer"] = false,
 		["SpecialWarningFlashRepeat3"] = true,
 		["RaidWarningSound"] = "Sound\\Doodad\\BellTollNightElf.ogg",
-		["DontRestoreRange"] = false,
+		["CustomSounds"] = 0,
 		["HideGarrisonUpdates"] = true,
 		["ShowTranscriptorMessage"] = true,
-		["ShortTimerText"] = true,
+		["RoleSpecAlert"] = true,
 		["WhisperStats"] = false,
 		["VoiceOverSpecW2"] = "None",
 		["DontPlayCountdowns"] = false,
@@ -240,8 +240,8 @@ DBM_AllSavedOptions = {
 		["SpecialWarningFlashRepeat4"] = false,
 		["RangeFrameLocked"] = false,
 		["CountdownVoice"] = "Corsica",
-		["SpecialWarningFlashRepeat2"] = false,
 		["DontShowUserTimers"] = false,
+		["SpecialWarningFlashRepeat2"] = false,
 		["SpecialWarningFlashRepeat5"] = true,
 		["AutoRespond"] = true,
 		["HealthFrameGrowUp"] = false,
@@ -250,7 +250,7 @@ DBM_AllSavedOptions = {
 		["HUDTexture1"] = "highlight",
 		["ShowBigBrotherOnCombatStart"] = false,
 		["SpecialWarningIcon"] = true,
-		["RoleSpecAlert"] = true,
+		["ShortTimerText"] = true,
 		["SpecialWarningFlashAlph1"] = 0.3,
 		["ShowDefeatMessage"] = true,
 		["HUDAlphaOverride"] = false,
@@ -279,7 +279,7 @@ DBM_AllSavedOptions = {
 		["AdvancedAutologBosses"] = false,
 		["HideTooltips"] = false,
 		["HelpMessageShown2"] = false,
-		["AutoReplySound"] = true,
+		["RLReadyCheckSound"] = true,
 		["Enabled"] = true,
 		["ShowGuildMessages"] = true,
 		["BCTWMessageShown"] = false,

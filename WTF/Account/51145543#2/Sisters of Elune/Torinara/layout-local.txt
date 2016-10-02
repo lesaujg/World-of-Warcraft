@@ -1,8 +1,8 @@
 Version: 1
-Frame: DBMMinimapButton
-FrameLevel: 3
-Anchor: TOPRIGHT
-X: -141
-Y: -119
-W: 32
-H: 32
+Frame: _NPCScanOverlayKey
+FrameLevel: 121
+Anchor: CENTER
+X: -98
+Y: -114
+W: 102
+H: 90

@@ -2,8 +2,8 @@
 TukuiConfigShared = {
 	["Sisters of Elune"] = {
 		["Torinara"] = {
-			["General"] = {
-				["UIScale"] = 0.75,
+			["ActionBars"] = {
+				["HotKey"] = true,
 			},
 		},
 		["Magnara"] = {

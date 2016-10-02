@@ -12,4 +12,4 @@ Anchor: BOTTOMRIGHT
 X: -74
 Y: 82
 W: 295
-H: 492
+H: 443

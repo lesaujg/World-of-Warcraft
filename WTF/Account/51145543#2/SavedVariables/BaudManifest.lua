@@ -395,9 +395,9 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [1]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:23389::::::::2:262::::::",
 						["Equipped"] = 1,
+						["Count"] = 1,
 					}, -- [2]
 					{
 						["Count"] = 3,
