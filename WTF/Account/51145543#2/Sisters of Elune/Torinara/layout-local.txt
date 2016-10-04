@@ -1,8 +1,1 @@
 Version: 1
-Frame: _NPCScanOverlayKey
-FrameLevel: 121
-Anchor: CENTER
-X: -98
-Y: -114
-W: 102
-H: 90
