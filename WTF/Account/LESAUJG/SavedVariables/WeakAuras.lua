@@ -125,7 +125,7 @@ WeakAurasSaved = {
 						true, -- [2]
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -134,7 +134,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -142,13 +142,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = false,
-				["use_class"] = true,
-				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["use_spec"] = false,
 				["size"] = {
 					["multi"] = {
 					},
@@ -163,6 +163,7 @@ WeakAurasSaved = {
 			["regionType"] = "icon",
 			["stacks"] = true,
 			["blendMode"] = "BLEND",
+			["init_completed"] = 1,
 			["texture"] = "Blizzard",
 			["textFont"] = "Friz Quadrata TT",
 			["borderOffset"] = 5,
@@ -208,7 +209,7 @@ WeakAurasSaved = {
 				["sourceUnit"] = "player",
 				["spellName"] = "A Murder of Crows",
 				["debuffType"] = "HELPFUL",
-				["sourceName"] = "Tehstool",
+				["use_sourceName"] = false,
 				["subeventSuffix"] = "_CAST_SUCCESS",
 				["unevent"] = "timed",
 				["custom_hide"] = "timed",
@@ -222,7 +223,7 @@ WeakAurasSaved = {
 				},
 				["use_sourceUnit"] = true,
 				["use_message"] = true,
-				["use_sourceName"] = false,
+				["sourceName"] = "Tehstool",
 				["use_messageType"] = true,
 				["messageType"] = "CHAT_MSG_WHISPER",
 			},
@@ -256,7 +257,7 @@ WeakAurasSaved = {
 				},
 			},
 			["inverse"] = false,
-			["mirror"] = false,
+			["border"] = false,
 			["borderEdge"] = "None",
 			["untrigger"] = {
 			},
@@ -274,17 +275,17 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["foregroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
 			["additional_triggers"] = {
 			},
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["stacksFont"] = "Friz Quadrata TT",
 			["anchorPoint"] = "CENTER",
 			["numTriggers"] = 1,
-			["border"] = false,
+			["mirror"] = false,
 			["orientation"] = "HORIZONTAL",
 			["crop_x"] = 0.41,
 			["textSize"] = 12,
@@ -363,7 +364,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -372,7 +373,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -380,13 +381,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["use_combat"] = true,
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -396,6 +397,7 @@ WeakAurasSaved = {
 			["displayStacks"] = "%p",
 			["regionType"] = "icon",
 			["xOffset"] = 89,
+			["init_completed"] = 1,
 			["cooldown"] = true,
 			["selfPoint"] = "CENTER",
 			["stacksContainment"] = "INSIDE",
@@ -530,7 +532,7 @@ WeakAurasSaved = {
 						true, -- [1]
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -539,7 +541,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -547,13 +549,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_class"] = true,
-				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -563,28 +565,17 @@ WeakAurasSaved = {
 			["displayStacks"] = "%s",
 			["mirror"] = false,
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["blendMode"] = "ADD",
 			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
+			["blendMode"] = "ADD",
 			["discrete_rotation"] = 0,
+			["selfPoint"] = "CENTER",
+			["init_completed"] = 1,
 			["stickyDuration"] = false,
 			["texture"] = "Spells\\Agility_128",
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0.29,
 			["auto"] = true,
 			["icon"] = true,
-			["id"] = "MM-Talent100-Sidewinders 2 Charges Ready",
-			["inverse"] = false,
-			["frameStrata"] = 4,
-			["width"] = 50,
-			["color"] = {
-				1, -- [1]
-				0.968627450980392, -- [2]
-				0.972549019607843, -- [3]
-				0.877313882112503, -- [4]
-			},
-			["yOffset"] = 0,
-			["numTriggers"] = 2,
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -603,6 +594,18 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["inverse"] = false,
+			["frameStrata"] = 4,
+			["width"] = 50,
+			["color"] = {
+				1, -- [1]
+				0.968627450980392, -- [2]
+				0.972549019607843, -- [3]
+				0.877313882112503, -- [4]
+			},
+			["yOffset"] = 0,
+			["numTriggers"] = 2,
+			["id"] = "MM-Talent100-Sidewinders 2 Charges Ready",
 			["xOffset"] = -140,
 			["displayIcon"] = "Interface\\Icons\\Ability_hunter_serpentswiftness",
 			["stacksPoint"] = "BOTTOM",
@@ -681,7 +684,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -690,18 +693,18 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
 				["use_class"] = true,
 				["use_combat"] = true,
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -727,19 +730,6 @@ WeakAurasSaved = {
 			["zoom"] = 0.29,
 			["auto"] = true,
 			["selfPoint"] = "CENTER",
-			["id"] = "BM-Talent30-Dire Frenzy Almost",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 50,
-			["numTriggers"] = 2,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.768850430846214, -- [4]
-			},
-			["inverse"] = true,
-			["disjunctive"] = "all",
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -759,6 +749,19 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["stickyDuration"] = false,
+			["frameStrata"] = 1,
+			["width"] = 50,
+			["numTriggers"] = 2,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.768850430846214, -- [4]
+			},
+			["inverse"] = true,
+			["disjunctive"] = "all",
+			["id"] = "BM-Talent30-Dire Frenzy Almost",
 			["yOffset"] = 89,
 			["cooldown"] = true,
 			["textColor"] = {
@@ -856,8 +859,8 @@ WeakAurasSaved = {
 				},
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
-				["debuffType"] = "HARMFUL",
 				["custom_hide"] = "timed",
+				["debuffType"] = "HARMFUL",
 				["use_sourceName"] = true,
 				["sourceName"] = "Tehstool",
 				["type"] = "aura",
@@ -912,8 +915,8 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["inverse"] = false,
-			["border"] = false,
 			["mirror"] = false,
+			["border"] = false,
 			["borderEdge"] = "None",
 			["icon"] = true,
 			["borderSize"] = 16,
@@ -932,20 +935,20 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["use_talent"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
@@ -956,7 +959,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -975,8 +978,8 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["timerSize"] = 12,
 			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["additional_triggers"] = {
 			},
 			["height"] = 50,
@@ -1046,7 +1049,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -1055,18 +1058,18 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
 				["use_class"] = true,
 				["use_combat"] = true,
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -1125,8 +1128,8 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["debuffType"] = "HELPFUL",
-				["use_sourceName"] = true,
 				["sourceName"] = "Tehstool",
+				["use_sourceName"] = true,
 				["type"] = "aura",
 				["unevent"] = "timed",
 				["unit"] = "player",
@@ -1174,7 +1177,7 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["inverse"] = false,
-			["mirror"] = false,
+			["border"] = false,
 			["borderEdge"] = "None",
 			["icon"] = true,
 			["borderSize"] = 16,
@@ -1196,17 +1199,17 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["stacksFont"] = "Friz Quadrata TT",
 			["additional_triggers"] = {
 			},
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["height"] = 50,
 			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
 			["numTriggers"] = 1,
-			["border"] = false,
+			["mirror"] = false,
 			["orientation"] = "HORIZONTAL",
 			["crop_x"] = 0.41,
 			["displayTextLeft"] = "%n",
@@ -1246,7 +1249,7 @@ WeakAurasSaved = {
 				["use_powertype"] = true,
 				["debuffType"] = "HELPFUL",
 				["unit"] = "player",
-				["use_remaining"] = true,
+				["type"] = "status",
 				["subeventSuffix"] = "_CAST_START",
 				["unevent"] = "auto",
 				["use_showOn"] = true,
@@ -1257,7 +1260,7 @@ WeakAurasSaved = {
 				["use_spellName"] = true,
 				["spellIds"] = {
 				},
-				["type"] = "status",
+				["use_remaining"] = true,
 				["showOn"] = "showOnCooldown",
 				["remaining"] = "1.5",
 				["percentpower"] = "70",
@@ -1287,27 +1290,27 @@ WeakAurasSaved = {
 						true, -- [1]
 					},
 				},
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["use_talent"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -1319,12 +1322,13 @@ WeakAurasSaved = {
 			["fontSize"] = 18,
 			["displayStacks"] = "%p",
 			["mirror"] = false,
-			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
+			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
-			["disjunctive"] = "all",
+			["stickyDuration"] = false,
 			["blendMode"] = "ADD",
 			["stacksPoint"] = "BOTTOM",
-			["selfPoint"] = "CENTER",
+			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
+			["init_completed"] = 1,
 			["actions"] = {
 				["start"] = {
 				},
@@ -1387,7 +1391,7 @@ WeakAurasSaved = {
 			["untrigger"] = {
 				["spellName"] = 214579,
 			},
-			["stickyDuration"] = false,
+			["disjunctive"] = "all",
 			["displayIcon"] = "Interface\\Icons\\Ability_hunter_serpentswiftness",
 			["cooldown"] = true,
 			["textColor"] = {
@@ -1463,26 +1467,26 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -1495,6 +1499,7 @@ WeakAurasSaved = {
 			["displayStacks"] = "%p",
 			["regionType"] = "icon",
 			["parent"] = "Hunter-BM-Abilities-amiyuy.com",
+			["init_completed"] = 1,
 			["stacksPoint"] = "BOTTOM",
 			["selfPoint"] = "CENTER",
 			["stacksContainment"] = "INSIDE",
@@ -1594,6 +1599,7 @@ WeakAurasSaved = {
 			["regionType"] = "icon",
 			["stacks"] = true,
 			["blendMode"] = "BLEND",
+			["init_completed"] = 1,
 			["texture"] = "Blizzard",
 			["textFont"] = "Friz Quadrata TT",
 			["zoom"] = 0.29,
@@ -1639,7 +1645,7 @@ WeakAurasSaved = {
 				["sourceUnit"] = "player",
 				["spellName"] = "Stampede",
 				["debuffType"] = "HELPFUL",
-				["sourceName"] = "Tehstool",
+				["type"] = "event",
 				["unevent"] = "timed",
 				["subeventSuffix"] = "_CAST_SUCCESS",
 				["custom_hide"] = "timed",
@@ -1653,7 +1659,7 @@ WeakAurasSaved = {
 				},
 				["use_sourceUnit"] = true,
 				["use_message"] = true,
-				["type"] = "event",
+				["sourceName"] = "Tehstool",
 				["use_messageType"] = true,
 				["messageType"] = "CHAT_MSG_WHISPER",
 			},
@@ -1687,7 +1693,7 @@ WeakAurasSaved = {
 				},
 			},
 			["inverse"] = false,
-			["border"] = false,
+			["mirror"] = false,
 			["borderEdge"] = "None",
 			["untrigger"] = {
 			},
@@ -1713,7 +1719,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -1722,7 +1728,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -1730,13 +1736,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_class"] = true,
-				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -1751,10 +1757,10 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["desaturateForeground"] = false,
 			["id"] = "BM-Talent100-Stampede Active",
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["timerColor"] = {
@@ -1765,7 +1771,7 @@ WeakAurasSaved = {
 			},
 			["anchorPoint"] = "CENTER",
 			["numTriggers"] = 1,
-			["mirror"] = false,
+			["border"] = false,
 			["orientation"] = "HORIZONTAL",
 			["crop_x"] = 0.41,
 			["displayTextLeft"] = "%n",
@@ -1825,26 +1831,26 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
 				["use_combat"] = true,
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -1862,6 +1868,7 @@ WeakAurasSaved = {
 			["regionType"] = "icon",
 			["stacks"] = true,
 			["blendMode"] = "BLEND",
+			["init_completed"] = 1,
 			["texture"] = "Blizzard",
 			["textFont"] = "Friz Quadrata TT",
 			["zoom"] = 0.29,
@@ -1908,8 +1915,8 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["debuffType"] = "HELPFUL",
-				["use_sourceName"] = true,
 				["sourceName"] = "Tehstool",
+				["use_sourceName"] = true,
 				["type"] = "aura",
 				["subeventSuffix"] = "_CAST_SUCCESS",
 				["unit"] = "player",
@@ -1954,9 +1961,9 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["border"] = false,
-			["inverse"] = false,
 			["mirror"] = false,
+			["inverse"] = false,
+			["border"] = false,
 			["borderEdge"] = "None",
 			["untrigger"] = {
 			},
@@ -1975,10 +1982,10 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["stacksFont"] = "Friz Quadrata TT",
 			["id"] = "MM-Marking Targets Active",
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["height"] = 50,
@@ -2064,26 +2071,26 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -2096,10 +2103,11 @@ WeakAurasSaved = {
 			["displayStacks"] = " ",
 			["mirror"] = false,
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["blendMode"] = "ADD",
 			["parent"] = "Hunter-Focus Use-amiyuy.com",
+			["blendMode"] = "ADD",
 			["discrete_rotation"] = 0,
+			["selfPoint"] = "CENTER",
+			["init_completed"] = 1,
 			["stickyDuration"] = false,
 			["texture"] = "Spells\\Agility_128",
 			["stacksContainment"] = "INSIDE",
@@ -2113,6 +2121,14 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
+			["id"] = "MM-Aimed Shot Target Vulernable Ready",
+			["inverse"] = false,
+			["frameStrata"] = 4,
+			["width"] = 50,
+			["untrigger"] = {
+			},
+			["disjunctive"] = "all",
+			["numTriggers"] = 3,
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -2150,14 +2166,6 @@ WeakAurasSaved = {
 					},
 				}, -- [2]
 			},
-			["inverse"] = false,
-			["frameStrata"] = 4,
-			["width"] = 50,
-			["untrigger"] = {
-			},
-			["disjunctive"] = "all",
-			["numTriggers"] = 3,
-			["id"] = "MM-Aimed Shot Target Vulernable Ready",
 			["xOffset"] = 188,
 			["displayIcon"] = "Interface\\Icons\\inv_spear_07",
 			["stacksPoint"] = "BOTTOMRIGHT",
@@ -2194,10 +2202,10 @@ WeakAurasSaved = {
 				["type"] = "status",
 				["debuffType"] = "HELPFUL",
 				["unevent"] = "auto",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["use_inverse"] = false,
 				["event"] = "Action Usable",
-				["use_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["realSpellName"] = "Dire Frenzy",
 				["use_spellName"] = true,
 				["spellIds"] = {
@@ -2230,7 +2238,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -2239,18 +2247,18 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
 				["use_class"] = true,
 				["use_combat"] = true,
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -2386,7 +2394,7 @@ WeakAurasSaved = {
 						true, -- [1]
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -2395,7 +2403,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -2403,13 +2411,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_class"] = true,
-				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -2419,6 +2427,7 @@ WeakAurasSaved = {
 			["displayStacks"] = "%p",
 			["regionType"] = "icon",
 			["parent"] = "Hunter-BM-Abilities-amiyuy.com",
+			["init_completed"] = 1,
 			["stacksPoint"] = "BOTTOM",
 			["selfPoint"] = "CENTER",
 			["stacksContainment"] = "INSIDE",
@@ -2559,6 +2568,7 @@ WeakAurasSaved = {
 			["regionType"] = "icon",
 			["stacks"] = true,
 			["blendMode"] = "BLEND",
+			["init_completed"] = 1,
 			["texture"] = "Blizzard",
 			["textFont"] = "Friz Quadrata TT",
 			["zoom"] = 0.29,
@@ -2605,8 +2615,8 @@ WeakAurasSaved = {
 				},
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
-				["debuffType"] = "HELPFUL",
 				["custom_hide"] = "timed",
+				["debuffType"] = "HELPFUL",
 				["type"] = "aura",
 				["spellIds"] = {
 				},
@@ -2614,12 +2624,12 @@ WeakAurasSaved = {
 				["spellName"] = "Stampede",
 				["message"] = "Stampede 20s",
 				["sourceName"] = "Tehstool",
-				["subeventSuffix"] = "_CAST_SUCCESS",
 				["unevent"] = "timed",
+				["tooltip_operator"] = "==",
 				["use_sourceName"] = true,
 				["name_operator"] = "==",
 				["event"] = "Combat Log",
-				["tooltip_operator"] = "==",
+				["subeventSuffix"] = "_CAST_SUCCESS",
 				["use_name"] = true,
 				["use_spellId"] = true,
 				["name"] = "Focus Fire",
@@ -2657,9 +2667,9 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["mirror"] = false,
-			["inverse"] = false,
 			["border"] = false,
+			["inverse"] = false,
+			["mirror"] = false,
 			["borderEdge"] = "None",
 			["untrigger"] = {
 			},
@@ -2678,10 +2688,10 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["fontSize"] = 18,
 			["id"] = "Talent45-Posthaste Active",
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["timerColor"] = {
@@ -2765,7 +2775,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -2773,7 +2783,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -2781,13 +2791,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["use_combat"] = true,
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -2797,6 +2807,7 @@ WeakAurasSaved = {
 			["displayStacks"] = "%p",
 			["regionType"] = "icon",
 			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
+			["init_completed"] = 1,
 			["cooldown"] = true,
 			["selfPoint"] = "CENTER",
 			["stacksContainment"] = "INSIDE",
@@ -2895,19 +2906,19 @@ WeakAurasSaved = {
 				},
 			},
 			["trigger"] = {
+				["subeventPrefix"] = "SPELL",
+				["remaining_operator"] = "<=",
 				["names"] = {
 				},
-				["remaining_operator"] = "<=",
 				["use_unit"] = true,
-				["subeventPrefix"] = "SPELL",
 				["use_charges"] = true,
 				["powertype"] = 2,
 				["remaining"] = "1.5",
-				["use_remaining"] = true,
-				["custom_hide"] = "timed",
 				["charges"] = "1",
+				["custom_hide"] = "timed",
+				["use_remaining"] = true,
 				["use_powertype"] = true,
-				["debuffType"] = "HELPFUL",
+				["spellName"] = 214579,
 				["charges_operator"] = "==",
 				["type"] = "status",
 				["subeventSuffix"] = "_CAST_START",
@@ -2920,7 +2931,7 @@ WeakAurasSaved = {
 				["use_spellName"] = true,
 				["spellIds"] = {
 				},
-				["spellName"] = 214579,
+				["debuffType"] = "HELPFUL",
 				["showOn"] = "showOnCooldown",
 				["unit"] = "player",
 				["percentpower"] = "70",
@@ -2950,7 +2961,7 @@ WeakAurasSaved = {
 						true, -- [1]
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -2959,7 +2970,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -2967,13 +2978,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_class"] = true,
-				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -2982,14 +2993,15 @@ WeakAurasSaved = {
 			["fontSize"] = 18,
 			["displayStacks"] = "%p",
 			["mirror"] = false,
-			["selfPoint"] = "CENTER",
-			["regionType"] = "icon",
-			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
-			["blendMode"] = "ADD",
-			["cooldown"] = true,
 			["untrigger"] = {
 				["spellName"] = 214579,
 			},
+			["regionType"] = "icon",
+			["stickyDuration"] = false,
+			["blendMode"] = "ADD",
+			["cooldown"] = true,
+			["selfPoint"] = "CENTER",
+			["init_completed"] = 1,
 			["actions"] = {
 				["start"] = {
 				},
@@ -3003,6 +3015,18 @@ WeakAurasSaved = {
 			["zoom"] = 0.29,
 			["auto"] = true,
 			["inverse"] = false,
+			["id"] = "MM-Talent100-Sidewinders 2 Charges Almost",
+			["rotation"] = 0,
+			["frameStrata"] = 4,
+			["width"] = 50,
+			["color"] = {
+				1, -- [1]
+				0.968627450980392, -- [2]
+				0.972549019607843, -- [3]
+				0.48948472738266, -- [4]
+			},
+			["disjunctive"] = "all",
+			["numTriggers"] = 2,
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -3021,19 +3045,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["rotation"] = 0,
-			["frameStrata"] = 4,
-			["width"] = 50,
-			["color"] = {
-				1, -- [1]
-				0.968627450980392, -- [2]
-				0.972549019607843, -- [3]
-				0.48948472738266, -- [4]
-			},
-			["disjunctive"] = "all",
-			["numTriggers"] = 2,
-			["id"] = "MM-Talent100-Sidewinders 2 Charges Almost",
-			["stickyDuration"] = false,
+			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
 			["displayIcon"] = "Interface\\Icons\\Ability_hunter_serpentswiftness",
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
@@ -3115,7 +3127,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -3123,7 +3135,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -3131,13 +3143,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_class"] = true,
-				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -3154,20 +3166,13 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
+			["init_completed"] = 1,
 			["cooldown"] = true,
 			["parent"] = "Hunter-BM-Abilities-amiyuy.com",
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0.29,
 			["auto"] = true,
 			["selfPoint"] = "CENTER",
-			["id"] = "BM-Artifact-Titan's Thunder Almost",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 60,
-			["inverse"] = true,
-			["disjunctive"] = "all",
-			["numTriggers"] = 3,
-			["xOffset"] = 0,
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -3205,6 +3210,14 @@ WeakAurasSaved = {
 					},
 				}, -- [2]
 			},
+			["stickyDuration"] = false,
+			["frameStrata"] = 1,
+			["width"] = 60,
+			["inverse"] = true,
+			["disjunctive"] = "all",
+			["numTriggers"] = 3,
+			["xOffset"] = 0,
+			["id"] = "BM-Artifact-Titan's Thunder Almost",
 			["untrigger"] = {
 				["spellName"] = 207068,
 			},
@@ -3279,26 +3292,26 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -3311,11 +3324,13 @@ WeakAurasSaved = {
 			["displayStacks"] = "READY",
 			["regionType"] = "icon",
 			["parent"] = "Hunter-BM-Abilities-amiyuy.com",
+			["init_completed"] = 1,
 			["stacksPoint"] = "BOTTOM",
 			["selfPoint"] = "CENTER",
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0.29,
 			["auto"] = true,
+			["id"] = "BM-Kill Command Ready",
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -3335,7 +3350,6 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["id"] = "BM-Kill Command Ready",
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
 			["width"] = 50,
@@ -3408,7 +3422,7 @@ WeakAurasSaved = {
 				"MM/SV-Talent75-Camouflage Active", -- [36]
 			},
 			["animate"] = false,
-			["anchorPoint"] = "CENTER",
+			["regionType"] = "dynamicgroup",
 			["xOffset"] = 25,
 			["actions"] = {
 				["start"] = {
@@ -3420,8 +3434,9 @@ WeakAurasSaved = {
 			},
 			["border"] = "None",
 			["yOffset"] = -157,
-			["regionType"] = "dynamicgroup",
-			["align"] = "CENTER",
+			["anchorPoint"] = "CENTER",
+			["additional_triggers"] = {
+			},
 			["sort"] = "none",
 			["activeTriggerMode"] = 0,
 			["space"] = 1,
@@ -3429,8 +3444,18 @@ WeakAurasSaved = {
 			["expanded"] = false,
 			["constantFactor"] = "RADIUS",
 			["selfPoint"] = "LEFT",
-			["borderOffset"] = 16,
-			["additional_triggers"] = {
+			["backgroundInset"] = 0,
+			["trigger"] = {
+				["subeventPrefix"] = "SPELL",
+				["type"] = "aura",
+				["spellIds"] = {
+				},
+				["subeventSuffix"] = "_CAST_START",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+				},
+				["event"] = "Health",
+				["unit"] = "player",
 			},
 			["animation"] = {
 				["start"] = {
@@ -3446,18 +3471,7 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["trigger"] = {
-				["subeventPrefix"] = "SPELL",
-				["type"] = "aura",
-				["spellIds"] = {
-				},
-				["subeventSuffix"] = "_CAST_START",
-				["debuffType"] = "HELPFUL",
-				["names"] = {
-				},
-				["event"] = "Health",
-				["unit"] = "player",
-			},
+			["id"] = "Hunter-Active Buffs-amiyuy.com",
 			["stagger"] = 0,
 			["frameStrata"] = 1,
 			["width"] = 1834.99993896484,
@@ -3465,9 +3479,9 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["numTriggers"] = 1,
-			["id"] = "Hunter-Active Buffs-amiyuy.com",
+			["align"] = "CENTER",
 			["height"] = 49.9999694824219,
-			["radius"] = 200,
+			["borderOffset"] = 16,
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -3508,7 +3522,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["backgroundInset"] = 0,
+			["radius"] = 200,
 		},
 		["Aspect of the Turtle Active"] = {
 			["textFlags"] = "None",
@@ -3558,6 +3572,7 @@ WeakAurasSaved = {
 			["regionType"] = "icon",
 			["stacks"] = true,
 			["blendMode"] = "BLEND",
+			["init_completed"] = 1,
 			["texture"] = "Blizzard",
 			["textFont"] = "Friz Quadrata TT",
 			["zoom"] = 0.29,
@@ -3604,8 +3619,8 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["debuffType"] = "HELPFUL",
-				["use_sourceName"] = true,
 				["type"] = "aura",
+				["sourceName"] = "Tehstool",
 				["subeventSuffix"] = "_CAST_SUCCESS",
 				["unevent"] = "timed",
 				["unit"] = "player",
@@ -3618,7 +3633,7 @@ WeakAurasSaved = {
 				},
 				["use_sourceUnit"] = true,
 				["use_message"] = true,
-				["sourceName"] = "Tehstool",
+				["use_sourceName"] = true,
 				["use_messageType"] = true,
 				["messageType"] = "CHAT_MSG_WHISPER",
 			},
@@ -3695,7 +3710,7 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["inverse"] = false,
-			["border"] = false,
+			["mirror"] = false,
 			["borderEdge"] = "None",
 			["icon"] = true,
 			["borderSize"] = 16,
@@ -3712,17 +3727,17 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
 			["additional_triggers"] = {
 			},
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["foregroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
 			["height"] = 50,
 			["numTriggers"] = 1,
-			["mirror"] = false,
+			["border"] = false,
 			["orientation"] = "HORIZONTAL",
 			["crop_x"] = 0.41,
 			["textSize"] = 12,
@@ -3801,7 +3816,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -3810,7 +3825,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -3818,13 +3833,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["use_combat"] = true,
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -3930,6 +3945,7 @@ WeakAurasSaved = {
 			["regionType"] = "icon",
 			["stacks"] = true,
 			["blendMode"] = "BLEND",
+			["init_completed"] = 1,
 			["texture"] = "Blizzard",
 			["textFont"] = "Friz Quadrata TT",
 			["zoom"] = 0.29,
@@ -3976,8 +3992,8 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["debuffType"] = "HELPFUL",
-				["sourceName"] = "Tehstool",
 				["type"] = "aura",
+				["use_sourceName"] = true,
 				["subeventSuffix"] = "_CAST_SUCCESS",
 				["unevent"] = "timed",
 				["unit"] = "player",
@@ -3990,7 +4006,7 @@ WeakAurasSaved = {
 				},
 				["use_sourceUnit"] = true,
 				["use_message"] = true,
-				["use_sourceName"] = true,
+				["sourceName"] = "Tehstool",
 				["use_messageType"] = true,
 				["messageType"] = "CHAT_MSG_WHISPER",
 			},
@@ -4049,7 +4065,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -4057,18 +4073,18 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
 				["use_class"] = true,
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -4085,11 +4101,11 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["border"] = false,
 			["additional_triggers"] = {
 			},
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
@@ -4171,7 +4187,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -4179,18 +4195,18 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
 				["use_class"] = true,
 				["use_combat"] = true,
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -4203,12 +4219,12 @@ WeakAurasSaved = {
 			["displayStacks"] = "READY",
 			["regionType"] = "icon",
 			["disjunctive"] = "all",
+			["init_completed"] = 1,
 			["stacksPoint"] = "BOTTOM",
 			["selfPoint"] = "CENTER",
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0.29,
 			["auto"] = true,
-			["id"] = "MM-Marked Shot Ready",
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -4227,6 +4243,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["id"] = "MM-Marked Shot Ready",
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
 			["width"] = 50,
@@ -4305,7 +4322,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -4313,7 +4330,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -4321,13 +4338,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["use_combat"] = true,
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -4388,8 +4405,8 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["debuffType"] = "HELPFUL",
-				["sourceName"] = "Tehstool",
 				["use_sourceName"] = true,
+				["sourceName"] = "Tehstool",
 				["type"] = "aura",
 				["subeventSuffix"] = "_CAST_SUCCESS",
 				["unit"] = "player",
@@ -4434,9 +4451,9 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["border"] = false,
-			["inverse"] = false,
 			["mirror"] = false,
+			["inverse"] = false,
+			["border"] = false,
 			["borderEdge"] = "None",
 			["untrigger"] = {
 			},
@@ -4455,10 +4472,10 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["stacksFont"] = "Friz Quadrata TT",
 			["id"] = "MM-Bombardment Active",
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["foregroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
@@ -4538,16 +4555,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = false,
-				["use_class"] = true,
-				["race"] = {
-					["multi"] = {
-					},
-				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = false,
 				["faction"] = {
 					["multi"] = {
 					},
@@ -4559,7 +4576,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -4572,6 +4589,7 @@ WeakAurasSaved = {
 			["displayStacks"] = " ",
 			["regionType"] = "icon",
 			["parent"] = "Hunter-Warnings-amiyuy.com",
+			["init_completed"] = 1,
 			["disjunctive"] = "all",
 			["selfPoint"] = "CENTER",
 			["stacksContainment"] = "INSIDE",
@@ -4790,9 +4808,9 @@ WeakAurasSaved = {
 				["powertype"] = 2,
 				["spellName"] = 214579,
 				["use_powertype"] = true,
-				["debuffType"] = "HELPFUL",
+				["custom_hide"] = "timed",
 				["unit"] = "player",
-				["use_remaining"] = true,
+				["type"] = "status",
 				["subeventSuffix"] = "_CAST_START",
 				["unevent"] = "auto",
 				["use_showOn"] = true,
@@ -4803,9 +4821,9 @@ WeakAurasSaved = {
 				["use_spellName"] = true,
 				["spellIds"] = {
 				},
-				["type"] = "status",
+				["use_remaining"] = true,
 				["showOn"] = "showOnCooldown",
-				["custom_hide"] = "timed",
+				["debuffType"] = "HELPFUL",
 				["percentpower"] = "70",
 				["percentpower_operator"] = "<=",
 			},
@@ -4833,7 +4851,7 @@ WeakAurasSaved = {
 						true, -- [1]
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -4842,7 +4860,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -4850,13 +4868,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_class"] = true,
-				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -4865,12 +4883,13 @@ WeakAurasSaved = {
 			["fontSize"] = 18,
 			["displayStacks"] = "%p",
 			["mirror"] = false,
-			["parent"] = "Hunter-Focus Use-amiyuy.com",
+			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
-			["rotation"] = 0,
+			["stickyDuration"] = false,
 			["blendMode"] = "ADD",
 			["cooldown"] = true,
-			["selfPoint"] = "CENTER",
+			["parent"] = "Hunter-Focus Use-amiyuy.com",
+			["init_completed"] = 1,
 			["actions"] = {
 				["start"] = {
 				},
@@ -4927,7 +4946,7 @@ WeakAurasSaved = {
 			["disjunctive"] = "all",
 			["numTriggers"] = 3,
 			["yOffset"] = -106,
-			["stickyDuration"] = false,
+			["rotation"] = 0,
 			["displayIcon"] = "Interface\\Icons\\Ability_hunter_serpentswiftness",
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
@@ -5004,7 +5023,7 @@ WeakAurasSaved = {
 						true, -- [1]
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -5013,7 +5032,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -5021,13 +5040,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["use_combat"] = true,
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["use_combat"] = true,
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -5042,7 +5061,6 @@ WeakAurasSaved = {
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0.29,
 			["auto"] = true,
-			["id"] = "BM-Talent30-Chimaera Shot Almost",
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -5062,6 +5080,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["id"] = "BM-Talent30-Chimaera Shot Almost",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -5124,10 +5143,10 @@ WeakAurasSaved = {
 				["type"] = "status",
 				["debuffType"] = "HELPFUL",
 				["unevent"] = "auto",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["use_inverse"] = false,
 				["event"] = "Action Usable",
-				["use_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["realSpellName"] = "Aspect of the Wild",
 				["use_spellName"] = true,
 				["spellIds"] = {
@@ -5159,7 +5178,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -5167,7 +5186,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -5175,13 +5194,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_class"] = true,
-				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -5190,6 +5209,7 @@ WeakAurasSaved = {
 			["fontSize"] = 14,
 			["displayStacks"] = "READY",
 			["regionType"] = "icon",
+			["init_completed"] = 1,
 			["parent"] = "Hunter-BM-Abilities-amiyuy.com",
 			["actions"] = {
 				["start"] = {
@@ -5334,7 +5354,7 @@ WeakAurasSaved = {
 				["unit"] = "player",
 				["debuffType"] = "HELPFUL",
 				["type"] = "aura",
-				["use_sourceName"] = true,
+				["sourceName"] = "Tehstool",
 				["unevent"] = "timed",
 				["subeventSuffix"] = "_CAST_SUCCESS",
 				["names"] = {
@@ -5349,7 +5369,7 @@ WeakAurasSaved = {
 				},
 				["use_sourceUnit"] = true,
 				["use_message"] = true,
-				["sourceName"] = "Tehstool",
+				["use_sourceName"] = true,
 				["sourceUnit"] = "player",
 				["messageType"] = "CHAT_MSG_WHISPER",
 			},
@@ -5381,9 +5401,9 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["mirror"] = false,
-			["inverse"] = false,
 			["border"] = false,
+			["inverse"] = false,
+			["mirror"] = false,
 			["borderEdge"] = "None",
 			["untrigger"] = {
 			},
@@ -5402,10 +5422,10 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["stacksFont"] = "Friz Quadrata TT",
 			["id"] = "MM-Talent100-Trick Shot Active",
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["zoom"] = 0.29,
@@ -5431,13 +5451,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
 				["use_talent"] = true,
 				["use_class"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -5445,17 +5465,17 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["spec"] = {
 					["single"] = 2,
 					["multi"] = {
 					},
 				},
 				["use_combat"] = true,
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -5516,7 +5536,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -5524,7 +5544,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -5532,13 +5552,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_class"] = true,
-				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -5553,6 +5573,7 @@ WeakAurasSaved = {
 			["regionType"] = "icon",
 			["stacks"] = true,
 			["blendMode"] = "BLEND",
+			["init_completed"] = 1,
 			["texture"] = "Blizzard",
 			["textFont"] = "Friz Quadrata TT",
 			["zoom"] = 0.29,
@@ -5599,8 +5620,8 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["debuffType"] = "HELPFUL",
-				["sourceName"] = "Tehstool",
 				["type"] = "aura",
+				["use_sourceName"] = true,
 				["subeventSuffix"] = "_CAST_SUCCESS",
 				["unevent"] = "timed",
 				["unit"] = "player",
@@ -5613,7 +5634,7 @@ WeakAurasSaved = {
 				},
 				["use_sourceUnit"] = true,
 				["use_message"] = true,
-				["use_sourceName"] = true,
+				["sourceName"] = "Tehstool",
 				["use_messageType"] = true,
 				["messageType"] = "CHAT_MSG_WHISPER",
 			},
@@ -5648,7 +5669,7 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["inverse"] = false,
-			["border"] = false,
+			["mirror"] = false,
 			["borderEdge"] = "None",
 			["icon"] = true,
 			["borderSize"] = 16,
@@ -5665,17 +5686,17 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["desaturateForeground"] = false,
 			["additional_triggers"] = {
 			},
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["foregroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
 			["crop_y"] = 0.41,
 			["numTriggers"] = 1,
-			["mirror"] = false,
+			["border"] = false,
 			["orientation"] = "HORIZONTAL",
 			["crop_x"] = 0.41,
 			["textSize"] = 12,
@@ -5770,8 +5791,8 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["debuffType"] = "HELPFUL",
-				["sourceName"] = "Tehstool",
 				["use_sourceName"] = true,
+				["sourceName"] = "Tehstool",
 				["type"] = "aura",
 				["subeventSuffix"] = "_CAST_SUCCESS",
 				["unit"] = "player",
@@ -5818,7 +5839,7 @@ WeakAurasSaved = {
 				},
 			},
 			["inverse"] = false,
-			["mirror"] = false,
+			["border"] = false,
 			["borderEdge"] = "None",
 			["untrigger"] = {
 			},
@@ -5841,11 +5862,11 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["stacksFont"] = "Friz Quadrata TT",
 			["additional_triggers"] = {
 			},
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["load"] = {
@@ -5864,17 +5885,17 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_talent"] = true,
-				["use_class"] = true,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_spec"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
@@ -5885,7 +5906,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -5896,7 +5917,7 @@ WeakAurasSaved = {
 			},
 			["anchorPoint"] = "CENTER",
 			["numTriggers"] = 1,
-			["border"] = false,
+			["mirror"] = false,
 			["orientation"] = "HORIZONTAL",
 			["crop_x"] = 0.41,
 			["displayTextLeft"] = "%n",
@@ -5956,13 +5977,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
 				["use_talent"] = true,
 				["use_class"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -5970,17 +5991,17 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["spec"] = {
 					["single"] = 2,
 					["multi"] = {
 					},
 				},
 				["use_combat"] = true,
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -6040,8 +6061,8 @@ WeakAurasSaved = {
 				},
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
-				["spellName"] = "Stampede",
 				["debuffType"] = "HARMFUL",
+				["spellName"] = "Stampede",
 				["type"] = "aura",
 				["sourceName"] = "Tehstool",
 				["unit"] = "target",
@@ -6110,10 +6131,10 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["mirror"] = false,
 			["id"] = "MM-Talent30-True Aim Active Progress",
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["timer"] = true,
@@ -6237,10 +6258,10 @@ WeakAurasSaved = {
 			["selfPoint"] = "CENTER",
 			["yOffset"] = 0,
 			["init_completed"] = 1,
-			["borderOffset"] = 5,
-			["model_z"] = 0,
-			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0.29,
+			["borderOffset"] = 5,
+			["stacksContainment"] = "INSIDE",
+			["model_z"] = 0,
 			["auto"] = false,
 			["additional_triggers"] = {
 			},
@@ -6355,7 +6376,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -6363,7 +6384,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -6371,13 +6392,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_class"] = true,
-				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -6387,6 +6408,7 @@ WeakAurasSaved = {
 			["displayStacks"] = "%p",
 			["regionType"] = "icon",
 			["parent"] = "Hunter-BM-Abilities-amiyuy.com",
+			["init_completed"] = 1,
 			["cooldown"] = true,
 			["selfPoint"] = "CENTER",
 			["stacksContainment"] = "INSIDE",
@@ -6471,10 +6493,10 @@ WeakAurasSaved = {
 				["type"] = "status",
 				["debuffType"] = "HELPFUL",
 				["unevent"] = "auto",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["use_inverse"] = false,
 				["event"] = "Action Usable",
-				["use_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["realSpellName"] = "Stampede",
 				["use_spellName"] = true,
 				["spellIds"] = {
@@ -6506,7 +6528,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -6515,7 +6537,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -6523,13 +6545,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_class"] = true,
-				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -6538,6 +6560,7 @@ WeakAurasSaved = {
 			["fontSize"] = 14,
 			["displayStacks"] = "READY",
 			["regionType"] = "icon",
+			["init_completed"] = 1,
 			["parent"] = "Hunter-BM-Abilities-amiyuy.com",
 			["actions"] = {
 				["start"] = {
@@ -6664,16 +6687,16 @@ WeakAurasSaved = {
 						[3] = true,
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -6683,7 +6706,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -6696,20 +6719,13 @@ WeakAurasSaved = {
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
 			["parent"] = "Hunter-Warnings-amiyuy.com",
+			["init_completed"] = 1,
 			["disjunctive"] = "all",
 			["selfPoint"] = "CENTER",
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0.29,
 			["auto"] = true,
 			["stickyDuration"] = false,
-			["id"] = "BM/Surv-No Pet",
-			["xOffset"] = -232,
-			["frameStrata"] = 1,
-			["width"] = 150,
-			["inverse"] = false,
-			["icon"] = true,
-			["numTriggers"] = 2,
-			["yOffset"] = 0,
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -6730,6 +6746,14 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["xOffset"] = -232,
+			["frameStrata"] = 1,
+			["width"] = 150,
+			["inverse"] = false,
+			["icon"] = true,
+			["numTriggers"] = 2,
+			["yOffset"] = 0,
+			["id"] = "BM/Surv-No Pet",
 			["displayIcon"] = "Interface\\Icons\\Ability_Hunter_BeastCall",
 			["stacksPoint"] = "BOTTOMRIGHT",
 			["textColor"] = {
@@ -6770,10 +6794,10 @@ WeakAurasSaved = {
 				["type"] = "status",
 				["debuffType"] = "HELPFUL",
 				["unevent"] = "auto",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["use_inverse"] = false,
 				["event"] = "Action Usable",
-				["use_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["realSpellName"] = "Trueshot",
 				["use_spellName"] = true,
 				["spellIds"] = {
@@ -6806,7 +6830,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -6814,18 +6838,18 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
 				["use_class"] = true,
 				["use_combat"] = true,
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -6837,6 +6861,7 @@ WeakAurasSaved = {
 			["fontSize"] = 14,
 			["displayStacks"] = "READY",
 			["regionType"] = "icon",
+			["init_completed"] = 1,
 			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
 			["xOffset"] = 140,
 			["stacksContainment"] = "INSIDE",
@@ -6849,17 +6874,6 @@ WeakAurasSaved = {
 				},
 				["finish"] = {
 				},
-			},
-			["id"] = "MM-Trueshot Ready",
-			["selfPoint"] = "CENTER",
-			["frameStrata"] = 1,
-			["width"] = 50,
-			["disjunctive"] = "all",
-			["inverse"] = false,
-			["numTriggers"] = 2,
-			["stickyDuration"] = false,
-			["untrigger"] = {
-				["spellName"] = 193526,
 			},
 			["additional_triggers"] = {
 				{
@@ -6879,6 +6893,17 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["selfPoint"] = "CENTER",
+			["frameStrata"] = 1,
+			["width"] = 50,
+			["disjunctive"] = "all",
+			["inverse"] = false,
+			["numTriggers"] = 2,
+			["stickyDuration"] = false,
+			["untrigger"] = {
+				["spellName"] = 193526,
+			},
+			["id"] = "MM-Trueshot Ready",
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
@@ -6946,16 +6971,9 @@ WeakAurasSaved = {
 			["desaturate"] = false,
 			["rotation"] = 0,
 			["font"] = "Tw_Cen_MT_Bold",
-			["yOffset"] = 0,
+			["displayStacks"] = " %p",
 			["height"] = 50,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["model_path"] = "Creature/Arthaslichking/arthaslichking.m2",
 			["load"] = {
 				["use_never"] = false,
 				["talent"] = {
@@ -6974,26 +6992,26 @@ WeakAurasSaved = {
 						true, -- [1]
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -7011,25 +7029,21 @@ WeakAurasSaved = {
 			},
 			["fontSize"] = 18,
 			["sequence"] = 1,
-			["parent"] = "Hunter-Active Buffs-amiyuy.com",
+			["yOffset"] = 0,
 			["scale"] = 1,
-			["selfPoint"] = "CENTER",
+			["parent"] = "Hunter-Active Buffs-amiyuy.com",
 			["border"] = false,
 			["borderEdge"] = "None",
 			["regionType"] = "icon",
 			["borderSize"] = 16,
-			["borderColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["numTriggers"] = 1,
-			["displayStacks"] = " %p",
-			["model_z"] = 0,
-			["borderOffset"] = 5,
-			["stacksContainment"] = "INSIDE",
+			["xOffset"] = 0,
+			["init_completed"] = 1,
 			["zoom"] = 0.29,
+			["model_z"] = 0,
+			["stacksContainment"] = "INSIDE",
+			["borderOffset"] = 5,
 			["auto"] = true,
 			["additional_triggers"] = {
 			},
@@ -7037,11 +7051,23 @@ WeakAurasSaved = {
 			["model_y"] = 0,
 			["frameStrata"] = 1,
 			["width"] = 50,
-			["model_path"] = "Creature/Arthaslichking/arthaslichking.m2",
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
 			["borderInset"] = 11,
 			["inverse"] = true,
-			["xOffset"] = 0,
 			["stickyDuration"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["displayIcon"] = "Interface\\Icons\\Ability_Hunter_MendPet",
 			["cooldown"] = false,
 			["textColor"] = {
@@ -7147,14 +7173,15 @@ WeakAurasSaved = {
 			["fontSize"] = 18,
 			["displayStacks"] = "%p",
 			["regionType"] = "icon",
+			["init_completed"] = 1,
 			["parent"] = "Hunter-Active Buffs-amiyuy.com",
 			["stacksPoint"] = "BOTTOM",
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0.29,
 			["auto"] = true,
-			["id"] = "Misdirection Active",
 			["additional_triggers"] = {
 			},
+			["id"] = "Misdirection Active",
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
 			["width"] = 50,
@@ -7239,16 +7266,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["use_spec"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
@@ -7259,7 +7286,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -7319,12 +7346,12 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["unit"] = "player",
+				["debuffType"] = "HELPFUL",
 				["custom_hide"] = "timed",
+				["spell"] = "Fury of the Eagle",
 				["spellName"] = "Stampede",
 				["type"] = "status",
-				["debuffType"] = "HELPFUL",
 				["sourceName"] = "Tehstool",
-				["spell"] = "Fury of the Eagle",
 				["message"] = "Stampede 20s",
 				["unevent"] = "auto",
 				["subeventSuffix"] = "_CAST_SUCCESS",
@@ -7373,7 +7400,7 @@ WeakAurasSaved = {
 			["inverse"] = false,
 			["untrigger"] = {
 			},
-			["border"] = false,
+			["mirror"] = false,
 			["borderEdge"] = "None",
 			["icon"] = true,
 			["borderSize"] = 16,
@@ -7390,8 +7417,8 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["displayTextRight"] = "%p",
 			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -7414,7 +7441,7 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["zoom"] = 0.29,
-			["mirror"] = false,
+			["border"] = false,
 			["numTriggers"] = 2,
 			["anchorPoint"] = "CENTER",
 			["orientation"] = "HORIZONTAL",
@@ -7507,7 +7534,7 @@ WeakAurasSaved = {
 						[3] = true,
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -7516,7 +7543,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -7524,13 +7551,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["use_combat"] = true,
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -7546,14 +7573,6 @@ WeakAurasSaved = {
 			["zoom"] = 0.29,
 			["auto"] = true,
 			["stickyDuration"] = false,
-			["id"] = "MM-No Pet",
-			["xOffset"] = -232,
-			["frameStrata"] = 1,
-			["width"] = 150,
-			["inverse"] = false,
-			["icon"] = true,
-			["numTriggers"] = 2,
-			["yOffset"] = 0,
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -7574,6 +7593,14 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["xOffset"] = -232,
+			["frameStrata"] = 1,
+			["width"] = 150,
+			["inverse"] = false,
+			["icon"] = true,
+			["numTriggers"] = 2,
+			["yOffset"] = 0,
+			["id"] = "MM-No Pet",
 			["displayIcon"] = "Interface\\Icons\\Ability_Hunter_BeastCall",
 			["stacksPoint"] = "BOTTOMRIGHT",
 			["textColor"] = {
@@ -7611,13 +7638,13 @@ WeakAurasSaved = {
 			["trigger"] = {
 				["debuffType"] = "HELPFUL",
 				["type"] = "status",
-				["use_unit"] = true,
-				["use_targetRequired"] = false,
 				["subeventPrefix"] = "SPELL",
-				["use_inverse"] = false,
-				["event"] = "Action Usable",
+				["unevent"] = "auto",
 				["names"] = {
 				},
+				["use_inverse"] = false,
+				["event"] = "Action Usable",
+				["use_unit"] = true,
 				["realSpellName"] = "Muzzle",
 				["use_spellName"] = true,
 				["spellIds"] = {
@@ -7625,7 +7652,7 @@ WeakAurasSaved = {
 				["subeventSuffix"] = "_CAST_START",
 				["unit"] = "player",
 				["custom_hide"] = "timed",
-				["unevent"] = "auto",
+				["use_targetRequired"] = false,
 				["spellName"] = 187707,
 			},
 			["desaturate"] = false,
@@ -7643,19 +7670,19 @@ WeakAurasSaved = {
 					},
 				},
 				["use_class"] = true,
-				["use_spec"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
@@ -7666,7 +7693,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -7803,7 +7830,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -7811,7 +7838,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -7819,13 +7846,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["use_combat"] = true,
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -7883,8 +7910,8 @@ WeakAurasSaved = {
 				["unit"] = "target",
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
-				["custom_hide"] = "timed",
 				["debuffType"] = "HARMFUL",
+				["spellName"] = "Stampede",
 				["sourceName"] = "Tehstool",
 				["type"] = "aura",
 				["subeventSuffix"] = "_CAST_SUCCESS",
@@ -7901,7 +7928,7 @@ WeakAurasSaved = {
 				},
 				["use_sourceUnit"] = true,
 				["use_message"] = true,
-				["spellName"] = "Stampede",
+				["custom_hide"] = "timed",
 				["use_messageType"] = true,
 				["messageType"] = "CHAT_MSG_WHISPER",
 			},
@@ -7933,9 +7960,9 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["border"] = false,
-			["inverse"] = false,
 			["mirror"] = false,
+			["inverse"] = false,
+			["border"] = false,
 			["borderEdge"] = "None",
 			["untrigger"] = {
 			},
@@ -7954,10 +7981,10 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["stacksFont"] = "Friz Quadrata TT",
 			["id"] = "SV-Lacerate Debuff Active",
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["foregroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
@@ -8057,8 +8084,8 @@ WeakAurasSaved = {
 				},
 				["subeventPrefix"] = "SPELL",
 				["use_messageType"] = true,
-				["debuffType"] = "HARMFUL",
 				["custom_hide"] = "timed",
+				["spellName"] = "Stampede",
 				["use_sourceName"] = true,
 				["sourceName"] = "Tehstool",
 				["type"] = "aura",
@@ -8073,7 +8100,7 @@ WeakAurasSaved = {
 				},
 				["use_sourceUnit"] = true,
 				["use_message"] = true,
-				["spellName"] = "Stampede",
+				["debuffType"] = "HARMFUL",
 				["sourceUnit"] = "player",
 				["messageType"] = "CHAT_MSG_WHISPER",
 			},
@@ -8125,11 +8152,11 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["stacksFont"] = "Friz Quadrata TT",
 			["additional_triggers"] = {
 			},
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["desaturateForeground"] = false,
@@ -8159,26 +8186,26 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -8254,7 +8281,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -8263,7 +8290,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -8271,13 +8298,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_class"] = true,
-				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -8287,6 +8314,7 @@ WeakAurasSaved = {
 			["displayStacks"] = "%p",
 			["regionType"] = "icon",
 			["parent"] = "Hunter-BM-Abilities-amiyuy.com",
+			["init_completed"] = 1,
 			["cooldown"] = true,
 			["selfPoint"] = "CENTER",
 			["stacksContainment"] = "INSIDE",
@@ -8555,8 +8583,8 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["debuffType"] = "HELPFUL",
-				["use_sourceName"] = true,
 				["sourceName"] = "Tehstool",
+				["use_sourceName"] = true,
 				["type"] = "aura",
 				["unevent"] = "timed",
 				["unit"] = "player",
@@ -8601,9 +8629,9 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["mirror"] = false,
-			["inverse"] = false,
 			["border"] = false,
+			["inverse"] = false,
+			["mirror"] = false,
 			["borderEdge"] = "None",
 			["untrigger"] = {
 			},
@@ -8627,17 +8655,17 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_talent"] = true,
 				["use_class"] = true,
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -8648,7 +8676,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -8666,11 +8694,11 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["stacksFont"] = "Friz Quadrata TT",
 			["additional_triggers"] = {
 			},
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["displayTextLeft"] = "%n",
@@ -8750,7 +8778,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -8759,7 +8787,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -8767,13 +8795,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["use_combat"] = true,
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -8788,7 +8816,6 @@ WeakAurasSaved = {
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0.29,
 			["auto"] = true,
-			["id"] = "MM-Talent90-A Murder of Crows Almost",
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -8807,6 +8834,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["id"] = "MM-Talent90-A Murder of Crows Almost",
 			["disjunctive"] = "all",
 			["frameStrata"] = 1,
 			["width"] = 50,
@@ -8926,6 +8954,7 @@ WeakAurasSaved = {
 			["regionType"] = "icon",
 			["stacks"] = true,
 			["blendMode"] = "BLEND",
+			["init_completed"] = 1,
 			["texture"] = "Blizzard",
 			["textFont"] = "Friz Quadrata TT",
 			["stacksFont"] = "Friz Quadrata TT",
@@ -8972,8 +9001,8 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["debuffType"] = "HELPFUL",
-				["sourceName"] = "Tehstool",
 				["use_sourceName"] = true,
+				["sourceName"] = "Tehstool",
 				["type"] = "aura",
 				["unevent"] = "timed",
 				["unit"] = "player",
@@ -9020,7 +9049,7 @@ WeakAurasSaved = {
 				},
 			},
 			["inverse"] = false,
-			["border"] = false,
+			["mirror"] = false,
 			["borderEdge"] = "None",
 			["untrigger"] = {
 			},
@@ -9038,17 +9067,17 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["timer"] = true,
 			["additional_triggers"] = {
 			},
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["anchorPoint"] = "CENTER",
 			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
 			["numTriggers"] = 1,
-			["mirror"] = false,
+			["border"] = false,
 			["orientation"] = "HORIZONTAL",
 			["crop_x"] = 0.41,
 			["borderOffset"] = 5,
@@ -9109,7 +9138,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -9118,7 +9147,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -9126,13 +9155,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_class"] = true,
-				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -9193,8 +9222,8 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["debuffType"] = "HELPFUL",
-				["sourceName"] = "Tehstool",
 				["use_sourceName"] = true,
+				["sourceName"] = "Tehstool",
 				["type"] = "aura",
 				["subeventSuffix"] = "_CAST_SUCCESS",
 				["unit"] = "player",
@@ -9239,9 +9268,9 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["border"] = false,
-			["inverse"] = false,
 			["mirror"] = false,
+			["inverse"] = false,
+			["border"] = false,
 			["borderEdge"] = "None",
 			["untrigger"] = {
 			},
@@ -9260,10 +9289,10 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["crop_y"] = 0.41,
 			["id"] = "SV-Talent15-Instincts of the Cheetah Active",
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["foregroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
@@ -9274,6 +9303,408 @@ WeakAurasSaved = {
 			["crop_x"] = 0.41,
 			["displayTextLeft"] = "%n",
 			["borderOffset"] = 5,
+		},
+		["BM-Artifact-Titan's Thunder Active"] = {
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.85773877799511, -- [4]
+			},
+			["untrigger"] = {
+				["spellName"] = 53351,
+			},
+			["anchorPoint"] = "CENTER",
+			["model_x"] = 0,
+			["activeTriggerMode"] = 0,
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["advance"] = false,
+			["model_path"] = "Creature/Arthaslichking/arthaslichking.m2",
+			["trigger"] = {
+				["use_inverse"] = false,
+				["unit"] = "pet",
+				["remaining"] = "1.5",
+				["custom_hide"] = "timed",
+				["type"] = "aura",
+				["unevent"] = "auto",
+				["subeventPrefix"] = "SPELL",
+				["debuffType"] = "HELPFUL",
+				["event"] = "Cooldown Progress (Spell)",
+				["subeventSuffix"] = "_CAST_START",
+				["use_remaining"] = true,
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["names"] = {
+					"Titan's Thunder", -- [1]
+				},
+				["remaining_operator"] = ">",
+				["use_unit"] = true,
+				["spellName"] = 53351,
+				["ownOnly"] = true,
+			},
+			["desaturate"] = false,
+			["rotation"] = 0,
+			["font"] = "Tw_Cen_MT_Bold",
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["height"] = 50,
+			["stickyDuration"] = false,
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["single"] = 11,
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+						true, -- [1]
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["stacksPoint"] = "BOTTOM",
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["fontSize"] = 18,
+			["sequence"] = 1,
+			["parent"] = "Hunter-Active Buffs-amiyuy.com",
+			["scale"] = 1,
+			["xOffset"] = 0,
+			["border"] = false,
+			["borderEdge"] = "None",
+			["regionType"] = "icon",
+			["borderSize"] = 16,
+			["selfPoint"] = "CENTER",
+			["numTriggers"] = 2,
+			["displayStacks"] = " %p",
+			["init_completed"] = 1,
+			["zoom"] = 0.29,
+			["model_z"] = 0,
+			["stacksContainment"] = "INSIDE",
+			["borderOffset"] = 5,
+			["auto"] = true,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["unevent"] = "auto",
+						["event"] = "Item Equipped",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
+						["subeventSuffix"] = "_CAST_START",
+						["itemName"] = 128861,
+						["use_unit"] = true,
+						["use_itemName"] = true,
+					},
+					["untrigger"] = {
+						["itemName"] = 128861,
+					},
+				}, -- [1]
+			},
+			["id"] = "BM-Artifact-Titan's Thunder Active",
+			["model_y"] = 0,
+			["frameStrata"] = 1,
+			["width"] = 50,
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["preset"] = "bounceDecay",
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["borderInset"] = 11,
+			["inverse"] = true,
+			["yOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["displayIcon"] = "Interface\\Icons\\Ability_Hunter_MendPet",
+			["cooldown"] = false,
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["SV-Talent15-Mok'Nathal Tactics Active Stacks"] = {
+			["user_y"] = 0,
+			["stacksSize"] = 12,
+			["user_x"] = 0,
+			["xOffset"] = -150,
+			["stacksFlags"] = "None",
+			["yOffset"] = -157,
+			["foregroundColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["sameTexture"] = true,
+			["rotateText"] = "NONE",
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
+			["fontFlags"] = "OUTLINE",
+			["selfPoint"] = "CENTER",
+			["barColor"] = {
+				1, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["desaturate"] = false,
+			["rotation"] = 0,
+			["font"] = "Tw_Cen_MT_Bold",
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["single"] = 3,
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_talent"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["use_spec"] = true,
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["foregroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
+			["regionType"] = "icon",
+			["stacks"] = true,
+			["blendMode"] = "BLEND",
+			["texture"] = "Blizzard",
+			["textFont"] = "Friz Quadrata TT",
+			["borderOffset"] = 5,
+			["auto"] = true,
+			["compress"] = false,
+			["timerFont"] = "Friz Quadrata TT",
+			["alpha"] = 1,
+			["borderInset"] = 11,
+			["displayIcon"] = "Interface\\Icons\\",
+			["stacksPoint"] = "BOTTOM",
+			["backgroundOffset"] = 2,
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.743452787399292, -- [4]
+			},
+			["barInFront"] = true,
+			["desaturateBackground"] = false,
+			["activeTriggerMode"] = 0,
+			["customTextUpdate"] = "update",
+			["textSize"] = 12,
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["duration"] = "20",
+				["message_operator"] = "find('%s')",
+				["names"] = {
+					"Mok'Nathal Tactics", -- [1]
+				},
+				["subeventPrefix"] = "SPELL",
+				["sourceUnit"] = "player",
+				["debuffType"] = "HELPFUL",
+				["type"] = "aura",
+				["use_sourceName"] = true,
+				["subeventSuffix"] = "_CAST_SUCCESS",
+				["unevent"] = "timed",
+				["unit"] = "player",
+				["custom_hide"] = "timed",
+				["event"] = "Combat Log",
+				["spellName"] = "Stampede",
+				["message"] = "Stampede 20s",
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["use_sourceUnit"] = true,
+				["use_message"] = true,
+				["sourceName"] = "Tehstool",
+				["use_messageType"] = true,
+				["messageType"] = "CHAT_MSG_WHISPER",
+			},
+			["text"] = true,
+			["stickyDuration"] = false,
+			["parent"] = "Hunter-Active Buffs-amiyuy.com",
+			["timer"] = true,
+			["timerFlags"] = "None",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["crop_y"] = 0.41,
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["fontSize"] = 18,
+			["displayStacks"] = "%s",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["mirror"] = false,
+			["inverse"] = false,
+			["border"] = false,
+			["borderEdge"] = "None",
+			["untrigger"] = {
+			},
+			["borderSize"] = 16,
+			["icon"] = true,
+			["icon_side"] = "RIGHT",
+			["height"] = 50,
+			["displayTextLeft"] = "%n",
+			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
+			["additional_triggers"] = {
+			},
+			["stacksContainment"] = "INSIDE",
+			["stacksColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["displayTextRight"] = "%p",
+			["stacksFont"] = "Friz Quadrata TT",
+			["id"] = "SV-Talent15-Mok'Nathal Tactics Active Stacks",
+			["timerSize"] = 12,
+			["frameStrata"] = 1,
+			["width"] = 50,
+			["textFlags"] = "None",
+			["anchorPoint"] = "CENTER",
+			["numTriggers"] = 1,
+			["desaturateForeground"] = false,
+			["orientation"] = "HORIZONTAL",
+			["crop_x"] = 0.41,
+			["zoom"] = 0.29,
+			["timerColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 		},
 		["MM-Aimed Shot Ready"] = {
 			["disjunctive"] = "all",
@@ -9343,7 +9774,7 @@ WeakAurasSaved = {
 						[3] = true,
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -9351,7 +9782,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -9359,13 +9790,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_class"] = true,
-				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -9375,10 +9806,11 @@ WeakAurasSaved = {
 			["displayStacks"] = " ",
 			["mirror"] = false,
 			["regionType"] = "icon",
-			["parent"] = "Hunter-Focus Use-amiyuy.com",
-			["blendMode"] = "ADD",
 			["discrete_rotation"] = 0,
+			["blendMode"] = "ADD",
 			["selfPoint"] = "CENTER",
+			["parent"] = "Hunter-Focus Use-amiyuy.com",
+			["init_completed"] = 1,
 			["stickyDuration"] = false,
 			["texture"] = "Spells\\Agility_128",
 			["stacksContainment"] = "INSIDE",
@@ -9392,24 +9824,7 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["additional_triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "status",
-						["subeventSuffix"] = "_CAST_START",
-						["use_vehicle"] = false,
-						["event"] = "Conditions",
-						["subeventPrefix"] = "SPELL",
-						["use_unit"] = true,
-						["unit"] = "player",
-						["use_alive"] = true,
-						["unevent"] = "auto",
-						["custom_hide"] = "timed",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-			},
+			["id"] = "MM-Aimed Shot Ready",
 			["inverse"] = false,
 			["frameStrata"] = 4,
 			["width"] = 50,
@@ -9422,126 +9837,6 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["numTriggers"] = 2,
-			["id"] = "MM-Aimed Shot Ready",
-			["xOffset"] = 188,
-			["displayIcon"] = "Interface\\Icons\\inv_spear_07",
-			["stacksPoint"] = "BOTTOMRIGHT",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["MM-Talent30-Black Arrow Ready"] = {
-			["disjunctive"] = "all",
-			["untrigger"] = {
-				["spellName"] = 194599,
-			},
-			["anchorPoint"] = "CENTER",
-			["activeTriggerMode"] = 0,
-			["customTextUpdate"] = "update",
-			["icon"] = true,
-			["fontFlags"] = "OUTLINE",
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
-			["trigger"] = {
-				["type"] = "status",
-				["debuffType"] = "HELPFUL",
-				["unevent"] = "auto",
-				["subeventPrefix"] = "SPELL",
-				["use_inverse"] = false,
-				["event"] = "Action Usable",
-				["use_unit"] = true,
-				["realSpellName"] = "Black Arrow",
-				["use_spellName"] = true,
-				["spellIds"] = {
-				},
-				["names"] = {
-				},
-				["subeventSuffix"] = "_CAST_START",
-				["unit"] = "player",
-				["spellName"] = 194599,
-				["custom_hide"] = "timed",
-			},
-			["desaturate"] = false,
-			["font"] = "Tw_Cen_MT_Bold",
-			["height"] = 50,
-			["load"] = {
-				["use_never"] = false,
-				["talent"] = {
-					["single"] = 5,
-					["multi"] = {
-						[11] = true,
-					},
-				},
-				["spec"] = {
-					["single"] = 2,
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["single"] = "HUNTER",
-					["multi"] = {
-					},
-				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["use_talent"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["use_spec"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["use_class"] = true,
-				["use_combat"] = true,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 14,
-			["displayStacks"] = "READY",
-			["regionType"] = "icon",
-			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0.29,
-			["auto"] = true,
-			["selfPoint"] = "CENTER",
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -9551,210 +9846,18 @@ WeakAurasSaved = {
 						["event"] = "Conditions",
 						["subeventPrefix"] = "SPELL",
 						["use_unit"] = true,
-						["unevent"] = "auto",
-						["use_alive"] = true,
 						["unit"] = "player",
+						["use_alive"] = true,
+						["unevent"] = "auto",
 						["custom_hide"] = "timed",
 					},
 					["untrigger"] = {
 					},
 				}, -- [1]
 			},
-			["id"] = "MM-Talent30-Black Arrow Ready",
-			["frameStrata"] = 1,
-			["width"] = 50,
-			["xOffset"] = -89,
-			["inverse"] = false,
-			["numTriggers"] = 2,
-			["stickyDuration"] = false,
-			["yOffset"] = -89,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.768850430846214, -- [4]
-			},
-			["stacksPoint"] = "BOTTOM",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["BM-Artifact-Titan's Thunder Active"] = {
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.85773877799511, -- [4]
-			},
-			["untrigger"] = {
-				["spellName"] = 53351,
-			},
-			["anchorPoint"] = "CENTER",
-			["model_x"] = 0,
-			["activeTriggerMode"] = 0,
-			["customTextUpdate"] = "update",
-			["icon"] = true,
-			["fontFlags"] = "OUTLINE",
-			["advance"] = false,
-			["model_path"] = "Creature/Arthaslichking/arthaslichking.m2",
-			["trigger"] = {
-				["use_inverse"] = false,
-				["unit"] = "pet",
-				["remaining"] = "1.5",
-				["custom_hide"] = "timed",
-				["type"] = "aura",
-				["unevent"] = "auto",
-				["subeventPrefix"] = "SPELL",
-				["debuffType"] = "HELPFUL",
-				["event"] = "Cooldown Progress (Spell)",
-				["subeventSuffix"] = "_CAST_START",
-				["use_remaining"] = true,
-				["use_spellName"] = true,
-				["spellIds"] = {
-				},
-				["names"] = {
-					"Titan's Thunder", -- [1]
-				},
-				["remaining_operator"] = ">",
-				["use_unit"] = true,
-				["spellName"] = 53351,
-				["ownOnly"] = true,
-			},
-			["desaturate"] = false,
-			["rotation"] = 0,
-			["font"] = "Tw_Cen_MT_Bold",
-			["parent"] = "Hunter-Active Buffs-amiyuy.com",
-			["height"] = 50,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["load"] = {
-				["use_never"] = false,
-				["talent"] = {
-					["single"] = 11,
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["single"] = 1,
-					["multi"] = {
-						true, -- [1]
-					},
-				},
-				["class"] = {
-					["single"] = "HUNTER",
-					["multi"] = {
-					},
-				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_spec"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["use_class"] = true,
-				["use_combat"] = true,
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["stacksPoint"] = "BOTTOM",
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["fontSize"] = 18,
-			["sequence"] = 1,
-			["xOffset"] = 0,
-			["scale"] = 1,
-			["selfPoint"] = "CENTER",
-			["border"] = false,
-			["borderEdge"] = "None",
-			["regionType"] = "icon",
-			["borderSize"] = 16,
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["preset"] = "bounceDecay",
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
-			["numTriggers"] = 2,
-			["borderColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["model_z"] = 0,
-			["borderOffset"] = 5,
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0.29,
-			["auto"] = true,
-			["additional_triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "status",
-						["unevent"] = "auto",
-						["event"] = "Item Equipped",
-						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
-						["subeventSuffix"] = "_CAST_START",
-						["itemName"] = 128861,
-						["use_unit"] = true,
-						["use_itemName"] = true,
-					},
-					["untrigger"] = {
-						["itemName"] = 128861,
-					},
-				}, -- [1]
-			},
-			["id"] = "BM-Artifact-Titan's Thunder Active",
-			["model_y"] = 0,
-			["frameStrata"] = 1,
-			["width"] = 50,
-			["stickyDuration"] = false,
-			["borderInset"] = 11,
-			["inverse"] = true,
-			["displayStacks"] = " %p",
-			["yOffset"] = 0,
-			["displayIcon"] = "Interface\\Icons\\Ability_Hunter_MendPet",
-			["cooldown"] = false,
+			["xOffset"] = 188,
+			["displayIcon"] = "Interface\\Icons\\inv_spear_07",
+			["stacksPoint"] = "BOTTOMRIGHT",
 			["textColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -9795,10 +9898,10 @@ WeakAurasSaved = {
 				["type"] = "status",
 				["debuffType"] = "HELPFUL",
 				["unevent"] = "auto",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["use_inverse"] = false,
 				["event"] = "Action Usable",
-				["use_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["realSpellName"] = "Barrage",
 				["use_spellName"] = true,
 				["spellIds"] = {
@@ -9831,7 +9934,7 @@ WeakAurasSaved = {
 						true, -- [1]
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -9840,7 +9943,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -9848,13 +9951,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_class"] = true,
-				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -9911,54 +10014,69 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
-		["SV-Talent15-Mok'Nathal Tactics Active Stacks"] = {
-			["user_y"] = 0,
-			["stacksSize"] = 12,
-			["user_x"] = 0,
-			["xOffset"] = -150,
-			["stacksFlags"] = "None",
-			["yOffset"] = -157,
-			["foregroundColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["borderColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["sameTexture"] = true,
-			["rotateText"] = "NONE",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+		["MM-Talent60-Sentinel Almost"] = {
+			["disjunctive"] = "all",
+			["yOffset"] = 89,
+			["anchorPoint"] = "CENTER",
+			["activeTriggerMode"] = 0,
+			["customTextUpdate"] = "update",
+			["icon"] = true,
 			["fontFlags"] = "OUTLINE",
-			["selfPoint"] = "CENTER",
-			["barColor"] = {
-				1, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
 			},
-			["desaturate"] = false,
-			["rotation"] = 0,
+			["trigger"] = {
+				["remaining_operator"] = "<=",
+				["use_unit"] = true,
+				["remaining"] = "1.5",
+				["custom_hide"] = "timed",
+				["type"] = "status",
+				["subeventPrefix"] = "SPELL",
+				["unevent"] = "auto",
+				["use_showOn"] = true,
+				["names"] = {
+				},
+				["event"] = "Cooldown Progress (Spell)",
+				["debuffType"] = "HELPFUL",
+				["realSpellName"] = "Sentinel",
+				["use_spellName"] = true,
+				["spellIds"] = {
+				},
+				["subeventSuffix"] = "_CAST_START",
+				["showOn"] = "showOnCooldown",
+				["use_remaining"] = true,
+				["unit"] = "player",
+				["spellName"] = 206817,
+			},
+			["desaturate"] = true,
 			["font"] = "Tw_Cen_MT_Bold",
+			["height"] = 50,
 			["load"] = {
 				["use_never"] = false,
 				["talent"] = {
-					["single"] = 3,
+					["single"] = 11,
+					["multi"] = {
+						[11] = true,
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["class"] = {
-					["single"] = "HUNTER",
+				["spec"] = {
+					["single"] = 2,
 					["multi"] = {
 					},
 				},
@@ -9979,110 +10097,61 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["spec"] = {
-					["single"] = 3,
-					["multi"] = {
-					},
-				},
-				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
 				},
 			},
-			["foregroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
+			["fontSize"] = 14,
+			["displayStacks"] = "%p",
 			["regionType"] = "icon",
-			["stacks"] = true,
-			["blendMode"] = "BLEND",
-			["texture"] = "Blizzard",
-			["textFont"] = "Friz Quadrata TT",
-			["borderOffset"] = 5,
+			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
+			["cooldown"] = true,
+			["selfPoint"] = "CENTER",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0.29,
 			["auto"] = true,
-			["compress"] = false,
-			["timerFont"] = "Friz Quadrata TT",
-			["alpha"] = 1,
-			["borderInset"] = 11,
-			["displayIcon"] = "Interface\\Icons\\",
-			["stacksPoint"] = "BOTTOM",
-			["backgroundOffset"] = 2,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["stickyDuration"] = false,
+			["id"] = "MM-Talent60-Sentinel Almost",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
-				0.743452787399292, -- [4]
+				0.768850430846214, -- [4]
 			},
-			["barInFront"] = true,
-			["desaturateBackground"] = false,
-			["activeTriggerMode"] = 0,
-			["customTextUpdate"] = "update",
-			["textSize"] = 12,
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
+			["frameStrata"] = 1,
+			["width"] = 50,
+			["inverse"] = true,
+			["xOffset"] = 89,
+			["numTriggers"] = 2,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["subeventSuffix"] = "_CAST_START",
+						["use_vehicle"] = false,
+						["event"] = "Conditions",
+						["subeventPrefix"] = "SPELL",
+						["unevent"] = "auto",
+						["unit"] = "player",
+						["use_alive"] = true,
+						["use_unit"] = true,
+						["custom_hide"] = "timed",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
 			},
-			["trigger"] = {
-				["duration"] = "20",
-				["message_operator"] = "find('%s')",
-				["names"] = {
-					"Mok'Nathal Tactics", -- [1]
-				},
-				["subeventPrefix"] = "SPELL",
-				["sourceUnit"] = "player",
-				["debuffType"] = "HELPFUL",
-				["sourceName"] = "Tehstool",
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_SUCCESS",
-				["unevent"] = "timed",
-				["unit"] = "player",
-				["custom_hide"] = "timed",
-				["event"] = "Combat Log",
-				["spellName"] = "Stampede",
-				["message"] = "Stampede 20s",
-				["use_spellName"] = true,
-				["spellIds"] = {
-				},
-				["use_sourceUnit"] = true,
-				["use_message"] = true,
-				["use_sourceName"] = true,
-				["use_messageType"] = true,
-				["messageType"] = "CHAT_MSG_WHISPER",
+			["untrigger"] = {
+				["spellName"] = 206817,
 			},
-			["text"] = true,
-			["stickyDuration"] = false,
-			["parent"] = "Hunter-Active Buffs-amiyuy.com",
-			["timer"] = true,
-			["timerFlags"] = "None",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["crop_y"] = 0.41,
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["fontSize"] = 18,
-			["displayStacks"] = "%s",
 			["actions"] = {
 				["start"] = {
 				},
@@ -10091,41 +10160,8 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["border"] = false,
-			["inverse"] = false,
-			["mirror"] = false,
-			["borderEdge"] = "None",
-			["untrigger"] = {
-			},
-			["borderSize"] = 16,
-			["icon"] = true,
-			["icon_side"] = "RIGHT",
-			["height"] = 50,
-			["displayTextLeft"] = "%n",
-			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
-			["additional_triggers"] = {
-			},
-			["stacksContainment"] = "INSIDE",
-			["stacksColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["timerSize"] = 12,
-			["stacksFont"] = "Friz Quadrata TT",
-			["id"] = "SV-Talent15-Mok'Nathal Tactics Active Stacks",
-			["displayTextRight"] = "%p",
-			["frameStrata"] = 1,
-			["width"] = 50,
-			["textFlags"] = "None",
-			["anchorPoint"] = "CENTER",
-			["numTriggers"] = 1,
-			["desaturateForeground"] = false,
-			["orientation"] = "HORIZONTAL",
-			["crop_x"] = 0.41,
-			["zoom"] = 0.29,
-			["timerColor"] = {
+			["stacksPoint"] = "BOTTOM",
+			["textColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
@@ -10160,13 +10196,13 @@ WeakAurasSaved = {
 			["trigger"] = {
 				["debuffType"] = "HELPFUL",
 				["type"] = "status",
-				["use_unit"] = true,
-				["unevent"] = "auto",
 				["subeventPrefix"] = "SPELL",
-				["use_inverse"] = false,
-				["event"] = "Action Usable",
+				["use_targetRequired"] = false,
 				["names"] = {
 				},
+				["use_inverse"] = false,
+				["event"] = "Action Usable",
+				["use_unit"] = true,
 				["realSpellName"] = "Counter Shot",
 				["use_spellName"] = true,
 				["spellIds"] = {
@@ -10174,7 +10210,7 @@ WeakAurasSaved = {
 				["subeventSuffix"] = "_CAST_START",
 				["unit"] = "player",
 				["spellName"] = 147362,
-				["use_targetRequired"] = false,
+				["unevent"] = "auto",
 				["custom_hide"] = "timed",
 			},
 			["desaturate"] = false,
@@ -10195,16 +10231,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = false,
-				["use_class"] = true,
-				["race"] = {
-					["multi"] = {
-					},
-				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -10217,7 +10253,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -10229,6 +10265,7 @@ WeakAurasSaved = {
 			["fontSize"] = 14,
 			["displayStacks"] = "INTERRUPT!",
 			["regionType"] = "icon",
+			["init_completed"] = 1,
 			["parent"] = "Hunter-Warnings-amiyuy.com",
 			["disjunctive"] = "all",
 			["stacksContainment"] = "INSIDE",
@@ -10326,10 +10363,10 @@ WeakAurasSaved = {
 				["type"] = "status",
 				["debuffType"] = "HELPFUL",
 				["unevent"] = "auto",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["use_inverse"] = false,
 				["event"] = "Action Usable",
-				["use_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["realSpellName"] = "Barrage",
 				["use_spellName"] = true,
 				["spellIds"] = {
@@ -10362,7 +10399,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -10371,7 +10408,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -10379,13 +10416,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["use_combat"] = true,
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -10394,6 +10431,7 @@ WeakAurasSaved = {
 			["fontSize"] = 14,
 			["displayStacks"] = "READY",
 			["regionType"] = "icon",
+			["init_completed"] = 1,
 			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
 			["actions"] = {
 				["start"] = {
@@ -10523,7 +10561,7 @@ WeakAurasSaved = {
 						true, -- [1]
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -10531,7 +10569,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -10539,13 +10577,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_class"] = true,
-				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -10555,10 +10593,10 @@ WeakAurasSaved = {
 			["displayStacks"] = " ",
 			["mirror"] = false,
 			["regionType"] = "icon",
-			["stickyDuration"] = false,
-			["blendMode"] = "ADD",
 			["selfPoint"] = "CENTER",
+			["blendMode"] = "ADD",
 			["parent"] = "Hunter-Focus Use-amiyuy.com",
+			["stickyDuration"] = false,
 			["actions"] = {
 				["start"] = {
 				},
@@ -10571,7 +10609,6 @@ WeakAurasSaved = {
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0.29,
 			["auto"] = true,
-			["id"] = "SV-Raptor Strike Ready",
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -10590,6 +10627,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["id"] = "SV-Raptor Strike Ready",
 			["inverse"] = false,
 			["frameStrata"] = 4,
 			["width"] = 50,
@@ -10607,7 +10645,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
-		["SV-Talent75-Sticky Bomb Debuff Active"] = {
+		["SV-Talent15-Instincts of the Mongoose Active"] = {
 			["textFlags"] = "None",
 			["stacksSize"] = 12,
 			["user_x"] = 0,
@@ -10645,7 +10683,52 @@ WeakAurasSaved = {
 			["desaturate"] = false,
 			["rotation"] = 0,
 			["font"] = "Tw_Cen_MT_Bold",
-			["crop_y"] = 0.41,
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["single"] = 1,
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_talent"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["use_combat"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
 			["timerColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -10663,7 +10746,7 @@ WeakAurasSaved = {
 			["timerFont"] = "Friz Quadrata TT",
 			["alpha"] = 1,
 			["borderInset"] = 11,
-			["displayIcon"] = "Interface\\Icons\\ability_hunter_murderofcrows",
+			["displayIcon"] = "Interface\\Icons\\Ability_Druid_FerociousBite",
 			["stacksPoint"] = "BOTTOM",
 			["backgroundOffset"] = 2,
 			["borderBackdrop"] = "Blizzard Tooltip",
@@ -10677,7 +10760,7 @@ WeakAurasSaved = {
 			["desaturateBackground"] = false,
 			["activeTriggerMode"] = 0,
 			["customTextUpdate"] = "update",
-			["textSize"] = 12,
+			["desaturateForeground"] = false,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -10693,53 +10776,44 @@ WeakAurasSaved = {
 				},
 			},
 			["trigger"] = {
-				["ownOnly"] = true,
+				["duration"] = "20",
 				["message_operator"] = "find('%s')",
-				["unit"] = "target",
+				["names"] = {
+					"Instincts of the Mongoose", -- [1]
+				},
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
-				["spellName"] = "A Murder of Crows",
-				["debuffType"] = "HARMFUL",
+				["debuffType"] = "HELPFUL",
 				["use_sourceName"] = true,
 				["sourceName"] = "Tehstool",
 				["type"] = "aura",
-				["unevent"] = "timed",
-				["custom_hide"] = "timed",
 				["subeventSuffix"] = "_CAST_SUCCESS",
+				["unit"] = "player",
+				["unevent"] = "timed",
 				["event"] = "Combat Log",
-				["duration"] = "15",
+				["spellName"] = "Stampede",
 				["message"] = "Stampede 20s",
 				["use_spellName"] = true,
 				["spellIds"] = {
 				},
 				["use_sourceUnit"] = true,
 				["use_message"] = true,
-				["names"] = {
-					"Sticky Bomb", -- [1]
-				},
+				["custom_hide"] = "timed",
 				["use_messageType"] = true,
 				["messageType"] = "CHAT_MSG_WHISPER",
 			},
 			["text"] = true,
 			["stickyDuration"] = false,
 			["parent"] = "Hunter-Active Buffs-amiyuy.com",
+			["timer"] = true,
+			["timerFlags"] = "None",
 			["textColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["height"] = 50,
-			["timerFlags"] = "None",
-			["displayTextLeft"] = "%n",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["textSize"] = 12,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -10748,20 +10822,28 @@ WeakAurasSaved = {
 			},
 			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
 			["displayStacks"] = "%p",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["mirror"] = false,
+			["inverse"] = false,
+			["border"] = false,
+			["borderEdge"] = "None",
 			["untrigger"] = {
 			},
-			["inverse"] = false,
-			["icon"] = true,
-			["mirror"] = false,
-			["borderEdge"] = "None",
-			["anchorPoint"] = "CENTER",
 			["borderSize"] = 16,
-			["fontSize"] = 18,
+			["icon"] = true,
 			["icon_side"] = "RIGHT",
-			["desaturateForeground"] = false,
+			["crop_y"] = 0.41,
+			["fontSize"] = 18,
 			["user_y"] = 0,
-			["id"] = "SV-Talent75-Sticky Bomb Debuff Active",
-			["stacksFont"] = "Friz Quadrata TT",
+			["additional_triggers"] = {
+			},
 			["stacksContainment"] = "INSIDE",
 			["stacksColor"] = {
 				1, -- [1]
@@ -10770,67 +10852,18 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["timerSize"] = 12,
+			["stacksFont"] = "Friz Quadrata TT",
+			["id"] = "SV-Talent15-Instincts of the Mongoose Active",
 			["displayTextRight"] = "%p",
-			["additional_triggers"] = {
-			},
-			["load"] = {
-				["use_never"] = false,
-				["talent"] = {
-					["single"] = 13,
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["single"] = 3,
-					["multi"] = {
-						true, -- [1]
-						true, -- [2]
-						true, -- [3]
-					},
-				},
-				["class"] = {
-					["single"] = "HUNTER",
-					["multi"] = {
-					},
-				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["use_talent"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["use_spec"] = true,
-				["use_class"] = true,
-				["use_combat"] = true,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["foregroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
-			["border"] = false,
+			["anchorPoint"] = "CENTER",
 			["numTriggers"] = 1,
-			["timer"] = true,
+			["height"] = 50,
 			["orientation"] = "HORIZONTAL",
 			["crop_x"] = 0.41,
-			["cooldown"] = false,
+			["displayTextLeft"] = "%n",
 			["borderOffset"] = 5,
 		},
 		["Hunter-Warnings-amiyuy.com"] = {
@@ -10982,10 +11015,10 @@ WeakAurasSaved = {
 				["type"] = "status",
 				["debuffType"] = "HELPFUL",
 				["unevent"] = "auto",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["use_inverse"] = false,
 				["event"] = "Action Usable",
-				["use_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["realSpellName"] = "Explosive Shot",
 				["use_spellName"] = true,
 				["spellIds"] = {
@@ -11018,7 +11051,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -11027,7 +11060,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -11035,13 +11068,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["use_combat"] = true,
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -11098,9 +11131,11 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
-		["MM-Talent60-Sentinel Almost"] = {
+		["MM-Talent30-Black Arrow Ready"] = {
 			["disjunctive"] = "all",
-			["yOffset"] = 89,
+			["untrigger"] = {
+				["spellName"] = 194599,
+			},
 			["anchorPoint"] = "CENTER",
 			["activeTriggerMode"] = 0,
 			["customTextUpdate"] = "update",
@@ -11121,42 +11156,33 @@ WeakAurasSaved = {
 				},
 			},
 			["trigger"] = {
-				["remaining_operator"] = "<=",
-				["use_unit"] = true,
-				["remaining"] = "1.5",
-				["custom_hide"] = "timed",
 				["type"] = "status",
-				["subeventPrefix"] = "SPELL",
-				["unevent"] = "auto",
-				["use_showOn"] = true,
-				["names"] = {
-				},
-				["event"] = "Cooldown Progress (Spell)",
 				["debuffType"] = "HELPFUL",
-				["realSpellName"] = "Sentinel",
+				["unevent"] = "auto",
+				["use_unit"] = true,
+				["use_inverse"] = false,
+				["event"] = "Action Usable",
+				["subeventPrefix"] = "SPELL",
+				["realSpellName"] = "Black Arrow",
 				["use_spellName"] = true,
 				["spellIds"] = {
 				},
+				["names"] = {
+				},
 				["subeventSuffix"] = "_CAST_START",
-				["showOn"] = "showOnCooldown",
-				["use_remaining"] = true,
 				["unit"] = "player",
-				["spellName"] = 206817,
+				["spellName"] = 194599,
+				["custom_hide"] = "timed",
 			},
-			["desaturate"] = true,
+			["desaturate"] = false,
 			["font"] = "Tw_Cen_MT_Bold",
 			["height"] = 50,
 			["load"] = {
 				["use_never"] = false,
 				["talent"] = {
-					["single"] = 11,
+					["single"] = 5,
 					["multi"] = {
 						[11] = true,
-					},
-				},
-				["class"] = {
-					["single"] = "HUNTER",
-					["multi"] = {
 					},
 				},
 				["spec"] = {
@@ -11164,10 +11190,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["class"] = {
+					["single"] = "HUNTER",
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["use_talent"] = true,
 				["difficulty"] = {
 					["multi"] = {
@@ -11181,10 +11209,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["use_class"] = true,
 				["use_combat"] = true,
-				["faction"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -11194,27 +11225,21 @@ WeakAurasSaved = {
 				},
 			},
 			["fontSize"] = 14,
-			["displayStacks"] = "%p",
+			["displayStacks"] = "READY",
 			["regionType"] = "icon",
 			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
-			["cooldown"] = true,
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0.29,
 			["auto"] = true,
-			["stickyDuration"] = false,
-			["id"] = "MM-Talent60-Sentinel Almost",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.768850430846214, -- [4]
-			},
-			["frameStrata"] = 1,
-			["width"] = 50,
-			["inverse"] = true,
-			["xOffset"] = 89,
-			["numTriggers"] = 2,
+			["selfPoint"] = "CENTER",
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -11223,26 +11248,29 @@ WeakAurasSaved = {
 						["use_vehicle"] = false,
 						["event"] = "Conditions",
 						["subeventPrefix"] = "SPELL",
-						["unevent"] = "auto",
-						["unit"] = "player",
-						["use_alive"] = true,
 						["use_unit"] = true,
+						["unevent"] = "auto",
+						["use_alive"] = true,
+						["unit"] = "player",
 						["custom_hide"] = "timed",
 					},
 					["untrigger"] = {
 					},
 				}, -- [1]
 			},
-			["untrigger"] = {
-				["spellName"] = 206817,
-			},
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["id"] = "MM-Talent30-Black Arrow Ready",
+			["frameStrata"] = 1,
+			["width"] = 50,
+			["xOffset"] = -89,
+			["inverse"] = false,
+			["numTriggers"] = 2,
+			["stickyDuration"] = false,
+			["yOffset"] = -89,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.768850430846214, -- [4]
 			},
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
@@ -11310,7 +11338,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -11319,7 +11347,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -11327,13 +11355,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["use_combat"] = true,
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -11393,8 +11421,8 @@ WeakAurasSaved = {
 				},
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
-				["spellName"] = "A Murder of Crows",
 				["debuffType"] = "HARMFUL",
+				["spellName"] = "A Murder of Crows",
 				["use_sourceName"] = true,
 				["sourceName"] = "Tehstool",
 				["type"] = "aura",
@@ -11444,8 +11472,8 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["inverse"] = false,
-			["mirror"] = false,
 			["border"] = false,
+			["mirror"] = false,
 			["borderEdge"] = "None",
 			["icon"] = true,
 			["borderSize"] = 16,
@@ -11462,8 +11490,8 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["displayTextRight"] = "%p",
 			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["additional_triggers"] = {
 			},
 			["height"] = 50,
@@ -11532,26 +11560,26 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -11564,6 +11592,7 @@ WeakAurasSaved = {
 			["regionType"] = "icon",
 			["stacks"] = true,
 			["blendMode"] = "BLEND",
+			["init_completed"] = 1,
 			["texture"] = "Blizzard",
 			["textFont"] = "Friz Quadrata TT",
 			["zoom"] = 0.29,
@@ -11610,8 +11639,8 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["debuffType"] = "HELPFUL",
-				["sourceName"] = "Tehstool",
 				["type"] = "aura",
+				["use_sourceName"] = true,
 				["unevent"] = "timed",
 				["subeventSuffix"] = "_CAST_SUCCESS",
 				["unit"] = "player",
@@ -11624,7 +11653,7 @@ WeakAurasSaved = {
 				},
 				["use_sourceUnit"] = true,
 				["use_message"] = true,
-				["use_sourceName"] = true,
+				["sourceName"] = "Tehstool",
 				["use_messageType"] = true,
 				["messageType"] = "CHAT_MSG_WHISPER",
 			},
@@ -11658,7 +11687,7 @@ WeakAurasSaved = {
 				},
 			},
 			["inverse"] = false,
-			["border"] = false,
+			["mirror"] = false,
 			["borderEdge"] = "None",
 			["untrigger"] = {
 			},
@@ -11676,7 +11705,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["timerColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -11685,13 +11714,13 @@ WeakAurasSaved = {
 			},
 			["additional_triggers"] = {
 			},
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["stacksFont"] = "Friz Quadrata TT",
 			["anchorPoint"] = "CENTER",
 			["numTriggers"] = 1,
-			["mirror"] = false,
+			["border"] = false,
 			["orientation"] = "HORIZONTAL",
 			["crop_x"] = 0.41,
 			["timer"] = true,
@@ -11786,8 +11815,8 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["debuffType"] = "HELPFUL",
-				["use_sourceName"] = true,
 				["sourceName"] = "Tehstool",
+				["use_sourceName"] = true,
 				["type"] = "aura",
 				["subeventSuffix"] = "_CAST_SUCCESS",
 				["unit"] = "player",
@@ -11859,8 +11888,8 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["timerSize"] = 12,
 			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["id"] = "SV-Mongoose Fury Progress",
 			["height"] = 50,
 			["frameStrata"] = 1,
@@ -11885,16 +11914,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -11905,7 +11934,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -11919,16 +11948,14 @@ WeakAurasSaved = {
 			["cooldown"] = true,
 			["stacksFont"] = "Friz Quadrata TT",
 		},
-		["BM-Cobra Shot Ready"] = {
+		["MM-Talent100-Piercing Shot Almost"] = {
 			["color"] = {
 				1, -- [1]
-				0.968627450980392, -- [2]
-				0.972549019607843, -- [3]
-				0.48948472738266, -- [4]
+				1, -- [2]
+				1, -- [3]
+				0.768850430846214, -- [4]
 			},
-			["untrigger"] = {
-				["spellName"] = 193455,
-			},
+			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["activeTriggerMode"] = 0,
 			["customTextUpdate"] = "update",
@@ -11949,44 +11976,37 @@ WeakAurasSaved = {
 				},
 			},
 			["trigger"] = {
-				["use_power"] = false,
+				["remaining_operator"] = "<=",
 				["use_unit"] = true,
-				["powertype"] = 2,
-				["use_powertype"] = true,
+				["remaining"] = "1.5",
 				["custom_hide"] = "timed",
 				["type"] = "status",
 				["subeventPrefix"] = "SPELL",
 				["unevent"] = "auto",
+				["use_showOn"] = true,
 				["names"] = {
 				},
+				["event"] = "Cooldown Progress (Spell)",
 				["debuffType"] = "HELPFUL",
-				["event"] = "Action Usable",
-				["use_percentpower"] = true,
-				["realSpellName"] = "Cobra Shot",
+				["realSpellName"] = "Piercing Shot",
 				["use_spellName"] = true,
 				["spellIds"] = {
 				},
 				["subeventSuffix"] = "_CAST_START",
-				["spellName"] = 193455,
+				["showOn"] = "showOnCooldown",
+				["use_remaining"] = true,
 				["unit"] = "player",
-				["percentpower"] = "70",
-				["percentpower_operator"] = ">=",
+				["spellName"] = 198670,
 			},
-			["desaturate"] = false,
-			["rotation"] = 0,
+			["desaturate"] = true,
 			["font"] = "Tw_Cen_MT_Bold",
 			["height"] = 50,
-			["rotate"] = true,
 			["load"] = {
 				["use_never"] = false,
 				["talent"] = {
+					["single"] = 20,
 					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["single"] = 1,
-					["multi"] = {
-						true, -- [1]
+						[11] = true,
 					},
 				},
 				["class"] = {
@@ -11994,10 +12014,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["spec"] = {
+					["single"] = 2,
 					["multi"] = {
 					},
 				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_talent"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
@@ -12006,14 +12032,14 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["use_class"] = true,
 				["use_combat"] = true,
-				["role"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -12022,27 +12048,21 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["fontSize"] = 18,
-			["displayStacks"] = " ",
-			["mirror"] = false,
+			["fontSize"] = 14,
+			["displayStacks"] = "%p",
 			["regionType"] = "icon",
+			["xOffset"] = -140,
+			["cooldown"] = true,
 			["selfPoint"] = "CENTER",
-			["blendMode"] = "ADD",
-			["parent"] = "Hunter-Focus Use-amiyuy.com",
-			["stickyDuration"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["texture"] = "Spells\\Agility_128",
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0.29,
 			["auto"] = true,
-			["id"] = "BM-Cobra Shot Ready",
+			["stickyDuration"] = false,
+			["id"] = "MM-Talent100-Piercing Shot Almost",
+			["disjunctive"] = "all",
+			["frameStrata"] = 1,
+			["width"] = 50,
+			["inverse"] = true,
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -12051,8 +12071,8 @@ WeakAurasSaved = {
 						["use_vehicle"] = false,
 						["event"] = "Conditions",
 						["subeventPrefix"] = "SPELL",
-						["unevent"] = "auto",
 						["use_unit"] = true,
+						["unevent"] = "auto",
 						["use_alive"] = true,
 						["unit"] = "player",
 						["custom_hide"] = "timed",
@@ -12060,42 +12080,21 @@ WeakAurasSaved = {
 					["untrigger"] = {
 					},
 				}, -- [1]
-				{
-					["trigger"] = {
-						["use_power"] = true,
-						["use_unit"] = true,
-						["powertype"] = 2,
-						["use_powertype"] = true,
-						["custom_hide"] = "timed",
-						["type"] = "status",
-						["power"] = "90",
-						["power_operator"] = ">=",
-						["event"] = "Power",
-						["use_percentpower"] = false,
-						["unit"] = "player",
-						["use_spellName"] = true,
-						["spellName"] = 193455,
-						["subeventSuffix"] = "_CAST_START",
-						["unevent"] = "auto",
-						["subeventPrefix"] = "SPELL",
-						["percentpower"] = "70",
-						["percentpower_operator"] = ">=",
-					},
-					["untrigger"] = {
-						["spellName"] = 193455,
-					},
-				}, -- [2]
 			},
-			["inverse"] = false,
-			["frameStrata"] = 4,
-			["width"] = 50,
-			["xOffset"] = 188,
-			["discrete_rotation"] = 0,
-			["numTriggers"] = 3,
-			["yOffset"] = -106,
-			["disjunctive"] = "all",
-			["displayIcon"] = "INTERFACE\\ICONS\\ability_hunter_cobrashot",
-			["stacksPoint"] = "BOTTOMRIGHT",
+			["numTriggers"] = 2,
+			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
+			["untrigger"] = {
+				["spellName"] = 198670,
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -12181,7 +12180,7 @@ WeakAurasSaved = {
 						[3] = true,
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -12190,18 +12189,18 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
 				["use_class"] = true,
 				["use_combat"] = true,
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -12214,17 +12213,17 @@ WeakAurasSaved = {
 			["displayStacks"] = " %s",
 			["mirror"] = false,
 			["regionType"] = "icon",
-			["stickyDuration"] = false,
-			["blendMode"] = "ADD",
 			["parent"] = "Hunter-Focus Use-amiyuy.com",
+			["blendMode"] = "ADD",
 			["selfPoint"] = "CENTER",
+			["stickyDuration"] = false,
+			["init_completed"] = 1,
 			["untrigger"] = {
 			},
 			["texture"] = "Spells\\Agility_128",
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0.29,
 			["auto"] = true,
-			["id"] = "MM-Talent30-Lock and Load Ready",
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -12243,6 +12242,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["id"] = "MM-Talent30-Lock and Load Ready",
 			["inverse"] = false,
 			["frameStrata"] = 4,
 			["width"] = 50,
@@ -12353,27 +12353,27 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["use_talent"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
 				["use_combat"] = true,
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -12386,16 +12386,24 @@ WeakAurasSaved = {
 			["displayStacks"] = "%s",
 			["mirror"] = false,
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["blendMode"] = "ADD",
 			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
+			["blendMode"] = "ADD",
 			["rotation"] = 0,
+			["selfPoint"] = "CENTER",
+			["init_completed"] = 1,
 			["stickyDuration"] = false,
 			["texture"] = "Spells\\Agility_128",
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0.29,
 			["auto"] = true,
 			["icon"] = true,
+			["id"] = "MM-Talent100-Sidewinders Marking Targets Buff Ready",
+			["inverse"] = false,
+			["frameStrata"] = 4,
+			["width"] = 50,
+			["xOffset"] = -140,
+			["yOffset"] = 0,
+			["numTriggers"] = 3,
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -12442,13 +12450,6 @@ WeakAurasSaved = {
 					},
 				}, -- [2]
 			},
-			["inverse"] = false,
-			["frameStrata"] = 4,
-			["width"] = 50,
-			["xOffset"] = -140,
-			["yOffset"] = 0,
-			["numTriggers"] = 3,
-			["id"] = "MM-Talent100-Sidewinders Marking Targets Buff Ready",
 			["disjunctive"] = "all",
 			["displayIcon"] = "Interface\\Icons\\Ability_hunter_serpentswiftness",
 			["stacksPoint"] = "BOTTOM",
@@ -12525,7 +12526,7 @@ WeakAurasSaved = {
 						true, -- [1]
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -12534,7 +12535,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -12542,13 +12543,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["use_combat"] = true,
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["use_combat"] = true,
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -12563,6 +12564,7 @@ WeakAurasSaved = {
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0.29,
 			["auto"] = true,
+			["id"] = "BM-Talent30-Chimaera Shot Ready",
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -12582,7 +12584,6 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["id"] = "BM-Talent30-Chimaera Shot Ready",
 			["stickyDuration"] = false,
 			["frameStrata"] = 1,
 			["width"] = 50,
@@ -12685,20 +12686,20 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["use_talent"] = false,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
@@ -12712,7 +12713,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -12825,11 +12826,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -12855,6 +12856,7 @@ WeakAurasSaved = {
 			},
 			["regionType"] = "aurabar",
 			["stacks"] = true,
+			["init_completed"] = 1,
 			["texture"] = "BantoBar",
 			["textFont"] = "Tw_Cen_MT_Bold",
 			["stacksFont"] = "Tw_Cen_MT_Bold",
@@ -12933,15 +12935,15 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkWidth"] = 10,
 			["sparkHeight"] = 30,
-			["sparkHidden"] = "NEVER",
 			["id"] = "Hunter-Focus",
+			["sparkHidden"] = "NEVER",
 			["stacksColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["timerSize"] = 14,
+			["displayTextRight"] = "%p",
 			["sparkOffsetX"] = 0,
 			["additional_triggers"] = {
 				{
@@ -12961,7 +12963,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["displayTextRight"] = "%p",
+			["timerSize"] = 14,
 			["frameStrata"] = 1,
 			["width"] = 325.000030517578,
 			["sparkColor"] = {
@@ -12985,14 +12987,16 @@ WeakAurasSaved = {
 			["height"] = 12,
 			["textSize"] = 14,
 		},
-		["MM-Talent90-A Murder of Crows Ready"] = {
+		["BM-Talent90-A Murder of Crows Ready"] = {
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.781548127532005, -- [4]
 			},
-			["yOffset"] = -89,
+			["untrigger"] = {
+				["spellName"] = 131894,
+			},
 			["anchorPoint"] = "CENTER",
 			["activeTriggerMode"] = 0,
 			["customTextUpdate"] = "update",
@@ -13016,10 +13020,10 @@ WeakAurasSaved = {
 				["type"] = "status",
 				["debuffType"] = "HELPFUL",
 				["unevent"] = "auto",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["use_inverse"] = false,
 				["event"] = "Action Usable",
-				["use_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["realSpellName"] = "A Murder of Crows",
 				["use_spellName"] = true,
 				["spellIds"] = {
@@ -13041,18 +13045,18 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["single"] = 2,
-					["multi"] = {
-						true, -- [1]
-					},
-				},
 				["class"] = {
 					["single"] = "HUNTER",
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+						true, -- [1]
+					},
+				},
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -13061,7 +13065,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -13084,7 +13088,8 @@ WeakAurasSaved = {
 			["fontSize"] = 14,
 			["displayStacks"] = "READY",
 			["regionType"] = "icon",
-			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
+			["init_completed"] = 1,
+			["parent"] = "Hunter-BM-Abilities-amiyuy.com",
 			["actions"] = {
 				["start"] = {
 				},
@@ -13115,17 +13120,15 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["id"] = "MM-Talent90-A Murder of Crows Ready",
+			["id"] = "BM-Talent90-A Murder of Crows Ready",
 			["frameStrata"] = 1,
 			["width"] = 50,
-			["disjunctive"] = "all",
+			["xOffset"] = 89,
 			["inverse"] = false,
 			["numTriggers"] = 2,
 			["stickyDuration"] = false,
-			["untrigger"] = {
-				["spellName"] = 131894,
-			},
-			["xOffset"] = 89,
+			["yOffset"] = -89,
+			["disjunctive"] = "all",
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
@@ -13201,27 +13204,27 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["use_talent"] = false,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -13234,6 +13237,7 @@ WeakAurasSaved = {
 			["displayStacks"] = "%p",
 			["regionType"] = "icon",
 			["parent"] = "Hunter-BM-Abilities-amiyuy.com",
+			["init_completed"] = 1,
 			["cooldown"] = true,
 			["selfPoint"] = "CENTER",
 			["stacksContainment"] = "INSIDE",
@@ -13318,10 +13322,10 @@ WeakAurasSaved = {
 				["type"] = "status",
 				["debuffType"] = "HELPFUL",
 				["unevent"] = "auto",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["use_inverse"] = false,
 				["event"] = "Action Usable",
-				["use_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["realSpellName"] = "Bestial Wrath",
 				["use_spellName"] = true,
 				["spellIds"] = {
@@ -13354,26 +13358,26 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -13385,6 +13389,7 @@ WeakAurasSaved = {
 			["fontSize"] = 14,
 			["displayStacks"] = "READY",
 			["regionType"] = "icon",
+			["init_completed"] = 1,
 			["parent"] = "Hunter-BM-Abilities-amiyuy.com",
 			["actions"] = {
 				["start"] = {
@@ -13513,7 +13518,7 @@ WeakAurasSaved = {
 						true, -- [1]
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -13522,18 +13527,18 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
 				["use_class"] = true,
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -13546,10 +13551,10 @@ WeakAurasSaved = {
 			["displayStacks"] = " ",
 			["mirror"] = false,
 			["regionType"] = "icon",
-			["discrete_rotation"] = 0,
-			["blendMode"] = "ADD",
 			["selfPoint"] = "CENTER",
+			["blendMode"] = "ADD",
 			["parent"] = "Hunter-Focus Use-amiyuy.com",
+			["discrete_rotation"] = 0,
 			["stickyDuration"] = false,
 			["texture"] = "Spells\\Agility_128",
 			["stacksContainment"] = "INSIDE",
@@ -13563,14 +13568,6 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["id"] = "MM-Arcane Shot Low Focus",
-			["inverse"] = false,
-			["frameStrata"] = 4,
-			["width"] = 50,
-			["disjunctive"] = "all",
-			["untrigger"] = {
-			},
-			["numTriggers"] = 2,
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -13589,6 +13586,14 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["inverse"] = false,
+			["frameStrata"] = 4,
+			["width"] = 50,
+			["disjunctive"] = "all",
+			["untrigger"] = {
+			},
+			["numTriggers"] = 2,
+			["id"] = "MM-Arcane Shot Low Focus",
 			["xOffset"] = -188,
 			["displayIcon"] = "Interface\\Icons\\ability_impalingbolt",
 			["stacksPoint"] = "BOTTOMRIGHT",
@@ -13654,27 +13659,27 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["use_talent"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
 				["use_combat"] = true,
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -13738,8 +13743,8 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["debuffType"] = "HELPFUL",
-				["use_sourceName"] = true,
 				["sourceName"] = "Tehstool",
+				["use_sourceName"] = true,
 				["type"] = "aura",
 				["subeventSuffix"] = "_CAST_SUCCESS",
 				["unit"] = "player",
@@ -13784,9 +13789,9 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["border"] = false,
-			["inverse"] = false,
 			["mirror"] = false,
+			["inverse"] = false,
+			["border"] = false,
 			["borderEdge"] = "None",
 			["untrigger"] = {
 			},
@@ -13805,10 +13810,10 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["stacksFont"] = "Friz Quadrata TT",
 			["id"] = "SV-Talent15-Instincts of the Raptor Active",
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["height"] = 50,
@@ -13848,10 +13853,10 @@ WeakAurasSaved = {
 				["type"] = "status",
 				["debuffType"] = "HELPFUL",
 				["unevent"] = "auto",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["use_inverse"] = false,
 				["event"] = "Action Usable",
-				["use_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["realSpellName"] = "Titan's Thunder",
 				["use_spellName"] = true,
 				["spellIds"] = {
@@ -13885,7 +13890,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -13893,7 +13898,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -13901,13 +13906,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_class"] = true,
-				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -13916,6 +13921,7 @@ WeakAurasSaved = {
 			["fontSize"] = 14,
 			["displayStacks"] = "READY",
 			["regionType"] = "icon",
+			["init_completed"] = 1,
 			["parent"] = "Hunter-BM-Abilities-amiyuy.com",
 			["xOffset"] = 0,
 			["stacksContainment"] = "INSIDE",
@@ -14042,26 +14048,26 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
 				["use_combat"] = true,
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -14079,6 +14085,7 @@ WeakAurasSaved = {
 			["regionType"] = "icon",
 			["stacks"] = true,
 			["blendMode"] = "BLEND",
+			["init_completed"] = 1,
 			["texture"] = "Blizzard",
 			["textFont"] = "Friz Quadrata TT",
 			["zoom"] = 0.29,
@@ -14122,8 +14129,8 @@ WeakAurasSaved = {
 				["unit"] = "target",
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
-				["spellName"] = "Stampede",
 				["custom_hide"] = "timed",
+				["spellName"] = "Stampede",
 				["type"] = "aura",
 				["debuffType"] = "HARMFUL",
 				["spellIds"] = {
@@ -14174,9 +14181,9 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["border"] = false,
-			["inverse"] = false,
 			["mirror"] = false,
+			["inverse"] = false,
+			["border"] = false,
 			["borderEdge"] = "None",
 			["untrigger"] = {
 			},
@@ -14195,10 +14202,10 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["stacksFont"] = "Friz Quadrata TT",
 			["id"] = "MM-Vulnerable Target",
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["height"] = 50,
@@ -14278,26 +14285,26 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -14310,6 +14317,7 @@ WeakAurasSaved = {
 			["displayStacks"] = "%p",
 			["regionType"] = "icon",
 			["parent"] = "Hunter-BM-Abilities-amiyuy.com",
+			["init_completed"] = 1,
 			["cooldown"] = true,
 			["selfPoint"] = "CENTER",
 			["stacksContainment"] = "INSIDE",
@@ -14436,7 +14444,7 @@ WeakAurasSaved = {
 						true, -- [1]
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -14445,7 +14453,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -14453,13 +14461,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_class"] = true,
-				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -14543,10 +14551,10 @@ WeakAurasSaved = {
 				["type"] = "status",
 				["debuffType"] = "HELPFUL",
 				["unevent"] = "auto",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["use_inverse"] = false,
 				["event"] = "Action Usable",
-				["use_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["realSpellName"] = "Windburst",
 				["use_spellName"] = true,
 				["spellIds"] = {
@@ -14580,7 +14588,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -14588,7 +14596,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -14596,13 +14604,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["use_combat"] = true,
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -14611,6 +14619,7 @@ WeakAurasSaved = {
 			["fontSize"] = 14,
 			["displayStacks"] = "READY",
 			["regionType"] = "icon",
+			["init_completed"] = 1,
 			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
 			["xOffset"] = 0,
 			["stacksContainment"] = "INSIDE",
@@ -14686,16 +14695,14 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
-		["BM-Talent90-A Murder of Crows Ready"] = {
+		["MM-Talent90-A Murder of Crows Ready"] = {
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.781548127532005, -- [4]
 			},
-			["untrigger"] = {
-				["spellName"] = 131894,
-			},
+			["yOffset"] = -89,
 			["anchorPoint"] = "CENTER",
 			["activeTriggerMode"] = 0,
 			["customTextUpdate"] = "update",
@@ -14719,10 +14726,10 @@ WeakAurasSaved = {
 				["type"] = "status",
 				["debuffType"] = "HELPFUL",
 				["unevent"] = "auto",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["use_inverse"] = false,
 				["event"] = "Action Usable",
-				["use_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["realSpellName"] = "A Murder of Crows",
 				["use_spellName"] = true,
 				["spellIds"] = {
@@ -14744,18 +14751,18 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["spec"] = {
+					["single"] = 2,
+					["multi"] = {
+						true, -- [1]
+					},
+				},
 				["class"] = {
 					["single"] = "HUNTER",
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["single"] = 1,
-					["multi"] = {
-						true, -- [1]
-					},
-				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -14764,7 +14771,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -14787,7 +14794,7 @@ WeakAurasSaved = {
 			["fontSize"] = 14,
 			["displayStacks"] = "READY",
 			["regionType"] = "icon",
-			["parent"] = "Hunter-BM-Abilities-amiyuy.com",
+			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
 			["actions"] = {
 				["start"] = {
 				},
@@ -14818,15 +14825,17 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["id"] = "BM-Talent90-A Murder of Crows Ready",
+			["id"] = "MM-Talent90-A Murder of Crows Ready",
 			["frameStrata"] = 1,
 			["width"] = 50,
-			["xOffset"] = 89,
+			["disjunctive"] = "all",
 			["inverse"] = false,
 			["numTriggers"] = 2,
 			["stickyDuration"] = false,
-			["yOffset"] = -89,
-			["disjunctive"] = "all",
+			["untrigger"] = {
+				["spellName"] = 131894,
+			},
+			["xOffset"] = 89,
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
@@ -14923,8 +14932,8 @@ WeakAurasSaved = {
 				},
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
-				["spellName"] = "Stampede",
 				["custom_hide"] = "timed",
+				["spellName"] = "Stampede",
 				["use_sourceName"] = true,
 				["sourceName"] = "Tehstool",
 				["type"] = "aura",
@@ -14973,7 +14982,7 @@ WeakAurasSaved = {
 				},
 			},
 			["inverse"] = false,
-			["mirror"] = false,
+			["border"] = false,
 			["borderEdge"] = "None",
 			["untrigger"] = {
 			},
@@ -14996,11 +15005,11 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["stacksFont"] = "Friz Quadrata TT",
 			["additional_triggers"] = {
 			},
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["load"] = {
@@ -15019,17 +15028,17 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_talent"] = true,
-				["use_class"] = true,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_spec"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
@@ -15040,7 +15049,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -15051,20 +15060,22 @@ WeakAurasSaved = {
 			},
 			["anchorPoint"] = "CENTER",
 			["numTriggers"] = 1,
-			["border"] = false,
+			["mirror"] = false,
 			["orientation"] = "HORIZONTAL",
 			["crop_x"] = 0.41,
 			["displayTextLeft"] = "%n",
 			["borderOffset"] = 5,
 		},
-		["MM-Talent100-Piercing Shot Almost"] = {
+		["BM-Cobra Shot Ready"] = {
 			["color"] = {
 				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.768850430846214, -- [4]
+				0.968627450980392, -- [2]
+				0.972549019607843, -- [3]
+				0.48948472738266, -- [4]
 			},
-			["yOffset"] = 0,
+			["untrigger"] = {
+				["spellName"] = 193455,
+			},
 			["anchorPoint"] = "CENTER",
 			["activeTriggerMode"] = 0,
 			["customTextUpdate"] = "update",
@@ -15085,37 +15096,44 @@ WeakAurasSaved = {
 				},
 			},
 			["trigger"] = {
-				["remaining_operator"] = "<=",
+				["use_power"] = false,
 				["use_unit"] = true,
-				["remaining"] = "1.5",
+				["powertype"] = 2,
+				["use_powertype"] = true,
 				["custom_hide"] = "timed",
 				["type"] = "status",
 				["subeventPrefix"] = "SPELL",
 				["unevent"] = "auto",
-				["use_showOn"] = true,
 				["names"] = {
 				},
-				["event"] = "Cooldown Progress (Spell)",
 				["debuffType"] = "HELPFUL",
-				["realSpellName"] = "Piercing Shot",
+				["event"] = "Action Usable",
+				["use_percentpower"] = true,
+				["realSpellName"] = "Cobra Shot",
 				["use_spellName"] = true,
 				["spellIds"] = {
 				},
 				["subeventSuffix"] = "_CAST_START",
-				["showOn"] = "showOnCooldown",
-				["use_remaining"] = true,
+				["spellName"] = 193455,
 				["unit"] = "player",
-				["spellName"] = 198670,
+				["percentpower"] = "70",
+				["percentpower_operator"] = ">=",
 			},
-			["desaturate"] = true,
+			["desaturate"] = false,
+			["rotation"] = 0,
 			["font"] = "Tw_Cen_MT_Bold",
 			["height"] = 50,
+			["rotate"] = true,
 			["load"] = {
 				["use_never"] = false,
 				["talent"] = {
-					["single"] = 20,
 					["multi"] = {
-						[11] = true,
+					},
+				},
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+						true, -- [1]
 					},
 				},
 				["class"] = {
@@ -15123,16 +15141,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["single"] = 2,
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_talent"] = true,
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
@@ -15151,50 +15160,24 @@ WeakAurasSaved = {
 				},
 				["use_class"] = true,
 				["use_combat"] = true,
-				["use_spec"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
 				},
 			},
-			["fontSize"] = 14,
-			["displayStacks"] = "%p",
+			["fontSize"] = 18,
+			["displayStacks"] = " ",
+			["mirror"] = false,
 			["regionType"] = "icon",
-			["xOffset"] = -140,
-			["cooldown"] = true,
-			["selfPoint"] = "CENTER",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0.29,
-			["auto"] = true,
+			["parent"] = "Hunter-Focus Use-amiyuy.com",
+			["blendMode"] = "ADD",
 			["stickyDuration"] = false,
-			["id"] = "MM-Talent100-Piercing Shot Almost",
-			["disjunctive"] = "all",
-			["frameStrata"] = 1,
-			["width"] = 50,
-			["inverse"] = true,
-			["additional_triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "status",
-						["subeventSuffix"] = "_CAST_START",
-						["use_vehicle"] = false,
-						["event"] = "Conditions",
-						["subeventPrefix"] = "SPELL",
-						["use_unit"] = true,
-						["unevent"] = "auto",
-						["use_alive"] = true,
-						["unit"] = "player",
-						["custom_hide"] = "timed",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-			},
-			["numTriggers"] = 2,
-			["parent"] = "Hunter-MM-Abilities-amiyuy.com",
-			["untrigger"] = {
-				["spellName"] = 198670,
-			},
+			["selfPoint"] = "CENTER",
+			["init_completed"] = 1,
 			["actions"] = {
 				["start"] = {
 				},
@@ -15203,7 +15186,64 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["stacksPoint"] = "BOTTOM",
+			["texture"] = "Spells\\Agility_128",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0.29,
+			["auto"] = true,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["subeventSuffix"] = "_CAST_START",
+						["use_vehicle"] = false,
+						["event"] = "Conditions",
+						["subeventPrefix"] = "SPELL",
+						["unevent"] = "auto",
+						["use_unit"] = true,
+						["use_alive"] = true,
+						["unit"] = "player",
+						["custom_hide"] = "timed",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["use_power"] = true,
+						["use_unit"] = true,
+						["powertype"] = 2,
+						["use_powertype"] = true,
+						["custom_hide"] = "timed",
+						["type"] = "status",
+						["power"] = "90",
+						["power_operator"] = ">=",
+						["event"] = "Power",
+						["use_percentpower"] = false,
+						["unit"] = "player",
+						["use_spellName"] = true,
+						["spellName"] = 193455,
+						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
+						["subeventPrefix"] = "SPELL",
+						["percentpower"] = "70",
+						["percentpower_operator"] = ">=",
+					},
+					["untrigger"] = {
+						["spellName"] = 193455,
+					},
+				}, -- [2]
+			},
+			["id"] = "BM-Cobra Shot Ready",
+			["inverse"] = false,
+			["frameStrata"] = 4,
+			["width"] = 50,
+			["xOffset"] = 188,
+			["discrete_rotation"] = 0,
+			["numTriggers"] = 3,
+			["yOffset"] = -106,
+			["disjunctive"] = "all",
+			["displayIcon"] = "INTERFACE\\ICONS\\ability_hunter_cobrashot",
+			["stacksPoint"] = "BOTTOMRIGHT",
 			["textColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -15271,8 +15311,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = false,
 				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -15287,10 +15330,7 @@ WeakAurasSaved = {
 						[3] = true,
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = false,
 				["size"] = {
 					["multi"] = {
 					},
@@ -15346,8 +15386,8 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["debuffType"] = "HELPFUL",
-				["sourceName"] = "Tehstool",
 				["use_sourceName"] = true,
+				["sourceName"] = "Tehstool",
 				["type"] = "aura",
 				["unevent"] = "timed",
 				["unit"] = "player",
@@ -15395,7 +15435,7 @@ WeakAurasSaved = {
 			["untrigger"] = {
 			},
 			["inverse"] = false,
-			["mirror"] = false,
+			["border"] = false,
 			["borderEdge"] = "None",
 			["icon"] = true,
 			["borderSize"] = 16,
@@ -15413,16 +15453,16 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["desaturateForeground"] = false,
 			["id"] = "MM/SV-Talent75-Camouflage Active",
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["timer"] = true,
 			["crop_y"] = 0.41,
 			["numTriggers"] = 1,
-			["border"] = false,
+			["mirror"] = false,
 			["orientation"] = "HORIZONTAL",
 			["crop_x"] = 0.41,
 			["displayTextLeft"] = "%n",
@@ -15433,7 +15473,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
-		["SV-Talent15-Instincts of the Mongoose Active"] = {
+		["SV-Talent75-Sticky Bomb Debuff Active"] = {
 			["textFlags"] = "None",
 			["stacksSize"] = 12,
 			["user_x"] = 0,
@@ -15471,52 +15511,7 @@ WeakAurasSaved = {
 			["desaturate"] = false,
 			["rotation"] = 0,
 			["font"] = "Tw_Cen_MT_Bold",
-			["load"] = {
-				["use_never"] = false,
-				["talent"] = {
-					["single"] = 1,
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["single"] = "HUNTER",
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["single"] = 3,
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_talent"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["use_class"] = true,
-				["use_combat"] = true,
-				["use_spec"] = true,
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
+			["crop_y"] = 0.41,
 			["timerColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -15534,7 +15529,7 @@ WeakAurasSaved = {
 			["timerFont"] = "Friz Quadrata TT",
 			["alpha"] = 1,
 			["borderInset"] = 11,
-			["displayIcon"] = "Interface\\Icons\\Ability_Druid_FerociousBite",
+			["displayIcon"] = "Interface\\Icons\\ability_hunter_murderofcrows",
 			["stacksPoint"] = "BOTTOM",
 			["backgroundOffset"] = 2,
 			["borderBackdrop"] = "Blizzard Tooltip",
@@ -15548,7 +15543,7 @@ WeakAurasSaved = {
 			["desaturateBackground"] = false,
 			["activeTriggerMode"] = 0,
 			["customTextUpdate"] = "update",
-			["desaturateForeground"] = false,
+			["textSize"] = 12,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -15564,52 +15559,45 @@ WeakAurasSaved = {
 				},
 			},
 			["trigger"] = {
-				["duration"] = "20",
+				["ownOnly"] = true,
 				["message_operator"] = "find('%s')",
-				["names"] = {
-					"Instincts of the Mongoose", -- [1]
-				},
+				["unit"] = "target",
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
-				["debuffType"] = "HELPFUL",
-				["sourceName"] = "Tehstool",
+				["debuffType"] = "HARMFUL",
+				["spellName"] = "A Murder of Crows",
 				["use_sourceName"] = true,
+				["sourceName"] = "Tehstool",
 				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_SUCCESS",
-				["unit"] = "player",
 				["unevent"] = "timed",
+				["custom_hide"] = "timed",
+				["subeventSuffix"] = "_CAST_SUCCESS",
 				["event"] = "Combat Log",
-				["spellName"] = "Stampede",
+				["duration"] = "15",
 				["message"] = "Stampede 20s",
 				["use_spellName"] = true,
 				["spellIds"] = {
 				},
 				["use_sourceUnit"] = true,
 				["use_message"] = true,
-				["custom_hide"] = "timed",
+				["names"] = {
+					"Sticky Bomb", -- [1]
+				},
 				["use_messageType"] = true,
 				["messageType"] = "CHAT_MSG_WHISPER",
 			},
 			["text"] = true,
 			["stickyDuration"] = false,
 			["parent"] = "Hunter-Active Buffs-amiyuy.com",
-			["timer"] = true,
-			["timerFlags"] = "None",
 			["textColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["textSize"] = 12,
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
-			["displayStacks"] = "%p",
+			["height"] = 50,
+			["timerFlags"] = "None",
+			["displayTextLeft"] = "%n",
 			["actions"] = {
 				["start"] = {
 				},
@@ -15618,20 +15606,28 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["border"] = false,
-			["inverse"] = false,
-			["mirror"] = false,
-			["borderEdge"] = "None",
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
+			["displayStacks"] = "%p",
 			["untrigger"] = {
 			},
-			["borderSize"] = 16,
+			["inverse"] = false,
 			["icon"] = true,
-			["icon_side"] = "RIGHT",
-			["crop_y"] = 0.41,
+			["border"] = false,
+			["borderEdge"] = "None",
+			["anchorPoint"] = "CENTER",
+			["borderSize"] = 16,
 			["fontSize"] = 18,
+			["icon_side"] = "RIGHT",
+			["desaturateForeground"] = false,
 			["user_y"] = 0,
-			["additional_triggers"] = {
-			},
+			["id"] = "SV-Talent75-Sticky Bomb Debuff Active",
+			["stacksFont"] = "Friz Quadrata TT",
 			["stacksContainment"] = "INSIDE",
 			["stacksColor"] = {
 				1, -- [1]
@@ -15640,18 +15636,67 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["displayTextRight"] = "%p",
-			["stacksFont"] = "Friz Quadrata TT",
-			["id"] = "SV-Talent15-Instincts of the Mongoose Active",
 			["timerSize"] = 12,
+			["additional_triggers"] = {
+			},
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["single"] = 13,
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						true, -- [1]
+						true, -- [2]
+						true, -- [3]
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["use_talent"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["use_combat"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["foregroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
-			["anchorPoint"] = "CENTER",
+			["mirror"] = false,
 			["numTriggers"] = 1,
-			["height"] = 50,
+			["timer"] = true,
 			["orientation"] = "HORIZONTAL",
 			["crop_x"] = 0.41,
-			["displayTextLeft"] = "%n",
+			["cooldown"] = false,
 			["borderOffset"] = 5,
 		},
 		["MM-Trueshot Almost"] = {
@@ -15720,7 +15765,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -15728,18 +15773,18 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
 				["use_class"] = true,
 				["use_combat"] = true,
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -15757,6 +15802,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.806945011019707, -- [4]
 			},
+			["init_completed"] = 1,
 			["cooldown"] = true,
 			["actions"] = {
 				["start"] = {
@@ -15864,7 +15910,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -15873,18 +15919,18 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
 				["use_class"] = true,
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -15947,7 +15993,7 @@ WeakAurasSaved = {
 				["sourceUnit"] = "player",
 				["spellName"] = "A Murder of Crows",
 				["debuffType"] = "HELPFUL",
-				["type"] = "event",
+				["sourceName"] = "Tehstool",
 				["subeventSuffix"] = "_CAST_SUCCESS",
 				["unevent"] = "timed",
 				["custom_hide"] = "timed",
@@ -15961,7 +16007,7 @@ WeakAurasSaved = {
 				},
 				["use_sourceUnit"] = true,
 				["use_message"] = true,
-				["sourceName"] = "Tehstool",
+				["type"] = "event",
 				["use_messageType"] = true,
 				["messageType"] = "CHAT_MSG_WHISPER",
 			},
@@ -15993,9 +16039,9 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["border"] = false,
-			["inverse"] = false,
 			["mirror"] = false,
+			["inverse"] = false,
+			["border"] = false,
 			["borderEdge"] = "None",
 			["untrigger"] = {
 			},
@@ -16013,11 +16059,11 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["desaturateForeground"] = false,
 			["additional_triggers"] = {
 			},
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["height"] = 50,
@@ -16117,8 +16163,8 @@ WeakAurasSaved = {
 				},
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
-				["spellName"] = "A Murder of Crows",
 				["debuffType"] = "HARMFUL",
+				["spellName"] = "A Murder of Crows",
 				["use_sourceName"] = true,
 				["sourceName"] = "Tehstool",
 				["type"] = "aura",
@@ -16178,7 +16224,7 @@ WeakAurasSaved = {
 			["mirror"] = false,
 			["textFlags"] = "None",
 			["id"] = "SV-Talent90-Serpent Sting Debuff Active",
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["stacksContainment"] = "INSIDE",
 			["stacksColor"] = {
 				1, -- [1]
@@ -16186,7 +16232,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
 			["additional_triggers"] = {
 			},
@@ -16213,7 +16259,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -16222,7 +16268,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -16230,13 +16276,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["use_combat"] = true,
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -16283,10 +16329,10 @@ WeakAurasSaved = {
 				["type"] = "status",
 				["debuffType"] = "HELPFUL",
 				["unevent"] = "auto",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["use_inverse"] = false,
 				["event"] = "Action Usable",
-				["use_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["realSpellName"] = "Sentinel",
 				["use_spellName"] = true,
 				["spellIds"] = {
@@ -16319,7 +16365,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -16328,7 +16374,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -16336,13 +16382,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_class"] = true,
-				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_combat"] = true,
+				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -16430,10 +16476,10 @@ WeakAurasSaved = {
 				["type"] = "status",
 				["debuffType"] = "HELPFUL",
 				["unevent"] = "auto",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["use_inverse"] = false,
 				["event"] = "Action Usable",
-				["use_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["realSpellName"] = "Dire Beast",
 				["use_spellName"] = true,
 				["spellIds"] = {
@@ -16467,27 +16513,27 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["use_talent"] = false,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -16499,6 +16545,7 @@ WeakAurasSaved = {
 			["fontSize"] = 14,
 			["displayStacks"] = "READY",
 			["regionType"] = "icon",
+			["init_completed"] = 1,
 			["parent"] = "Hunter-BM-Abilities-amiyuy.com",
 			["actions"] = {
 				["start"] = {
@@ -16630,7 +16677,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -16639,7 +16686,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -16647,13 +16694,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
+				["use_class"] = true,
+				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["use_combat"] = true,
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -16663,10 +16710,11 @@ WeakAurasSaved = {
 			["displayStacks"] = "%s",
 			["mirror"] = false,
 			["regionType"] = "icon",
-			["parent"] = "Hunter-Focus Use-amiyuy.com",
-			["blendMode"] = "ADD",
 			["stickyDuration"] = false,
+			["blendMode"] = "ADD",
 			["selfPoint"] = "CENTER",
+			["parent"] = "Hunter-Focus Use-amiyuy.com",
+			["init_completed"] = 1,
 			["actions"] = {
 				["start"] = {
 				},
@@ -16679,7 +16727,6 @@ WeakAurasSaved = {
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0.29,
 			["auto"] = true,
-			["id"] = "MM-Talent100-Sidewinders Low Focus Ready",
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -16720,6 +16767,7 @@ WeakAurasSaved = {
 					},
 				}, -- [2]
 			},
+			["id"] = "MM-Talent100-Sidewinders Low Focus Ready",
 			["inverse"] = false,
 			["frameStrata"] = 4,
 			["width"] = 50,
@@ -16793,7 +16841,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -16801,18 +16849,18 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
 				["use_class"] = true,
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -16871,8 +16919,8 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["sourceUnit"] = "player",
 				["debuffType"] = "HELPFUL",
-				["sourceName"] = "Tehstool",
 				["type"] = "aura",
+				["use_sourceName"] = true,
 				["subeventSuffix"] = "_CAST_SUCCESS",
 				["unevent"] = "timed",
 				["unit"] = "player",
@@ -16885,7 +16933,7 @@ WeakAurasSaved = {
 				},
 				["use_sourceUnit"] = true,
 				["use_message"] = true,
-				["use_sourceName"] = true,
+				["sourceName"] = "Tehstool",
 				["use_messageType"] = true,
 				["messageType"] = "CHAT_MSG_WHISPER",
 			},
@@ -16919,7 +16967,7 @@ WeakAurasSaved = {
 				},
 			},
 			["inverse"] = false,
-			["mirror"] = false,
+			["border"] = false,
 			["borderEdge"] = "None",
 			["untrigger"] = {
 			},
@@ -16942,17 +16990,17 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["displayTextRight"] = "%p",
+			["timerSize"] = 12,
 			["stacksFont"] = "Friz Quadrata TT",
 			["additional_triggers"] = {
 			},
-			["timerSize"] = 12,
+			["displayTextRight"] = "%p",
 			["frameStrata"] = 1,
 			["width"] = 50,
 			["anchorPoint"] = "CENTER",
 			["fontSize"] = 18,
 			["numTriggers"] = 1,
-			["border"] = false,
+			["mirror"] = false,
 			["orientation"] = "HORIZONTAL",
 			["crop_x"] = 0.41,
 			["textSize"] = 12,
@@ -17115,10 +17163,10 @@ WeakAurasSaved = {
 				["type"] = "status",
 				["debuffType"] = "HELPFUL",
 				["unevent"] = "auto",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["use_inverse"] = false,
 				["event"] = "Action Usable",
-				["use_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["realSpellName"] = "Piercing Shot",
 				["use_spellName"] = true,
 				["spellIds"] = {
@@ -17151,7 +17199,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -17160,18 +17208,18 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
 				["use_class"] = true,
 				["use_combat"] = true,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -17201,17 +17249,6 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["id"] = "MM-Talent100-Piercing Shot Ready",
-			["selfPoint"] = "CENTER",
-			["frameStrata"] = 1,
-			["width"] = 50,
-			["disjunctive"] = "all",
-			["inverse"] = false,
-			["numTriggers"] = 2,
-			["stickyDuration"] = false,
-			["untrigger"] = {
-				["spellName"] = 198670,
-			},
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -17230,6 +17267,17 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["selfPoint"] = "CENTER",
+			["frameStrata"] = 1,
+			["width"] = 50,
+			["disjunctive"] = "all",
+			["inverse"] = false,
+			["numTriggers"] = 2,
+			["stickyDuration"] = false,
+			["untrigger"] = {
+				["spellName"] = 198670,
+			},
+			["id"] = "MM-Talent100-Piercing Shot Ready",
 			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				1, -- [1]
@@ -17306,27 +17354,27 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["use_talent"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = true,
 				["use_combat"] = true,
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
