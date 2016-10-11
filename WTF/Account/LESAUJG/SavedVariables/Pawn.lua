@@ -11,11 +11,6 @@ PawnCommon = {
 	["ShowTooltipIcons"] = true,
 	["LastVersion"] = 2.0013,
 	["ShowSocketingAdvisor"] = true,
-	["ShowSpecIcons"] = true,
-	["ShowLootUpgradeAdvisor"] = true,
-	["ButtonPosition"] = 2,
-	["IgnoreGemsWhileLeveling"] = true,
-	["ShowQuestUpgradeAdvisor"] = true,
 	["Scales"] = {
 		["\"Wowhead\":SHAMAN3"] = {
 			["Color"] = "0070de",
@@ -717,5 +712,10 @@ PawnCommon = {
 			["UpgradesFollowSpecialization"] = true,
 		},
 	},
+	["ShowLootUpgradeAdvisor"] = true,
+	["ButtonPosition"] = 2,
+	["IgnoreGemsWhileLeveling"] = true,
+	["ShowQuestUpgradeAdvisor"] = true,
+	["ShowSpecIcons"] = true,
 	["ShowUpgradesOnTooltips"] = true,
 }

@@ -4,7 +4,7 @@
 --  This file is used to contain basic info about each faction. Including an
 --  icon, alliance/horde, faction id, category and type.
 --
---  (c) 2011-2015 gmz323(Greg)
+--  (c) 2011-2016 gmz323(Greg)
 -----------------------------------------------------------------------------
 
 
@@ -539,26 +539,26 @@ local faFactionDataSideValues = { -- column value descriptions - info only, no n
 };
 
 faFactionDataCategoryValues = { -- displayed in info window - NEED TO BE LOCALIZED
-	[0] = "Alliance",
-	[1] = "Alliance Forces",
-	[2] = "Alliance Vanguard",
-	[3] = "Cataclysm",
-	[4] = "Classic",
-	[5] = "Guild",
-	[6] = "Horde",
-	[7] = "Horde Expedition",
-	[8] = "Other",
-	[9] = "Shattrath City",
-	[10] = "Sholazar Basin",
-	[11] = "Steamwheedle Cartel",
-	[12] = "Other",
-	[13] = "The Burning Crusade",
-	[14] = "Wrath of the Lich King",
-	[15] = "Horde Forces",
-	[16] = "Mists of Pandaria",
-	[17] = "Warlords of Draenor",
-	[18] = "Barracks Bodyguards",
-	[19] = "Legion"
+	[0]  = L.CATEGORY_ALLIANCE_TXT,
+	[1]  = L.CATEGORY_ALLIANCEFORCES_TXT,
+	[2]  = L.CATEGORY_ALLIANCEVANGUARD_TXT,
+	[3]  = L.CATEGORY_CATACLYSM_TXT,
+	[4]  = L.CATEGORY_CLASSIC_TXT,
+	[5]  = L.CATEGORY_GUILD_TXT,
+	[6]  = L.CATEGORY_HORDE_TXT,
+	[7]  = L.CATEGORY_HORDEEXP_TXT,
+	[8]  = L.CATEGORY_OTHER_TXT,
+	[9]  = L.CATEGORY_SHATTRATH_TXT,
+	[10] = L.CATEGORY_SHOLAZAR_TXT,
+	[11] = L.CATEGORY_STEAMWHEEDLE_TXT,
+	[12] = L.CATEGORY_OTHER_TXT,
+	[13] = L.CATEGORY_TBC_TXT,
+	[14] = L.CATEGORY_WOTLK_TXT,
+	[15] = L.CATEGORY_HORDEFORCES_TXT,
+	[16] = L.CATEGORY_MOP_TXT,
+	[17] = L.CATEGORY_WOD_TXT,
+	[18] = L.CATEGORY_BARRACKSBODYGUARDS_TXT,
+	[19] = L.CATEGORY_LEGION_TXT
 };
 
 faStandingCapsTxt = {

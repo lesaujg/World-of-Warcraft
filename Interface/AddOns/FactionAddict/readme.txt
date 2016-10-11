@@ -4,7 +4,7 @@
 -- Desc: Addon for World of Warcraft
 --
 -- Author: gmz323(Greg)
--- current version: v1.35
+-- current version: v1.36
 -- (c) 2011-2016
 --
 =============================================================================
@@ -52,11 +52,12 @@ Files are in place for basic localization support. If you would like to help com
 
 In the FactionAddict\Locales addon folder are the following files for localization. They should be your starting point if you want to help out.
 * enUS.lua - english client (complete!)
-* deDE.lua - deutsch client (complete! Thanks Harry!)
-* esES.lua - spanish client
+* deDE.lua - deutsch client (Thanks Harry!)
+* esES.lua - spanish client (Thanks MrUrkaz!)
 * frFR.lua - french client
-* zhTW.lua - Chinese (traditional; Taiwan) (complete! Thanks Sop!)
-* zhCN.lua - Chinese (simplified; mainland China) (complete! Thanks Sop!)
+* zhTW.lua - Chinese (traditional; Taiwan) (Thanks Sop!)
+* zhCN.lua - Chinese (simplified; mainland China) (Thanks Sop!)
+* itIT.lua - Italian (Thanks Kemat1an!)
 
 My Other Addons:
 ================
@@ -65,6 +66,13 @@ My Other Addons:
 
 Changelog:
 ==========
+
+v1.36 (2016-10-09)
+------------------
+* Localization updates in this release!
+* Added Italian (itIT) Locale. Thanks to Kemat1an!
+* Added Spanish (esES) Locale. Thanks to MrUrkaz!
+* Can now also be localized (see locale files) - Category names shown in Info Window, Standing Filter (dropdown) text and number values, Date Format shown in Log section (Thanks MrUrkaz!) These new sections require localization. Feel free to get in touch if you have any updates. Thanks!
 
 v1.35 (2016-08-29)
 ------------------

@@ -68,7 +68,7 @@
 
 
 -- Constants
-local FACTION_ADDICT_VERSION = "1.35"
+local FACTION_ADDICT_VERSION = "1.36"
 local FACTION_ADDICT_LOGGING_VERSION = 1
 local FACTION_ADDICT_LOGGING_DAYS = 20
 local GUILD_FACTION_ID = 1168
@@ -134,15 +134,15 @@ local FactionAddictConfigDefaults =
 	
 local faGender = UnitSex("player")
 local ConfigMenuInfo = {
-		{ ["text"] = GetText("FACTION_STANDING_LABEL".."8", faGender) .. " (42,000+)", ["arg1"] = "CB_STANDING_EXALTED",  },
-		{ ["text"] = GetText("FACTION_STANDING_LABEL".."7", faGender) .. " (21,000 to 42,000)", ["arg1"] = "CB_STANDING_REVERED",  },
-		{ ["text"] = GetText("FACTION_STANDING_LABEL".."6", faGender) .. " (9,000 to 21,000)", ["arg1"] = "CB_STANDING_HONORED",  },
-		{ ["text"] = GetText("FACTION_STANDING_LABEL".."5", faGender) .. " (3,000 to 9,000)", ["arg1"] = "CB_STANDING_FRIENDLY", },
-		{ ["text"] = GetText("FACTION_STANDING_LABEL".."4", faGender) .. " (1 to 3,000)", ["arg1"] = "CB_STANDING_NEUTRAL1", },
-		{ ["text"] = GetText("FACTION_STANDING_LABEL".."4", faGender) .. " (=0)", ["arg1"] = "CB_STANDING_NEUTRAL0", },
-		{ ["text"] = GetText("FACTION_STANDING_LABEL".."3", faGender) .. " (-3,000 to 0)", ["arg1"] = "CB_STANDING_UNFRIENDLY", },
-		{ ["text"] = GetText("FACTION_STANDING_LABEL".."2", faGender) .. " (-6,000 to -3,000)" , ["arg1"] = "CB_STANDING_HOSTILE", },
-		{ ["text"] = GetText("FACTION_STANDING_LABEL".."1", faGender) .. " (-42,000 to -6,000)", ["arg1"] = "CB_STANDING_HATED", },
+		{ ["text"] = GetText("FACTION_STANDING_LABEL".."8", faGender) .. " "..L.STANDING_FILTER_LABEL_8_TXT,  ["arg1"] = "CB_STANDING_EXALTED",  },
+		{ ["text"] = GetText("FACTION_STANDING_LABEL".."7", faGender) .. " "..L.STANDING_FILTER_LABEL_7_TXT,  ["arg1"] = "CB_STANDING_REVERED",  },
+		{ ["text"] = GetText("FACTION_STANDING_LABEL".."6", faGender) .. " "..L.STANDING_FILTER_LABEL_6_TXT,  ["arg1"] = "CB_STANDING_HONORED",  },
+		{ ["text"] = GetText("FACTION_STANDING_LABEL".."5", faGender) .. " "..L.STANDING_FILTER_LABEL_5_TXT,  ["arg1"] = "CB_STANDING_FRIENDLY", },
+		{ ["text"] = GetText("FACTION_STANDING_LABEL".."4", faGender) .. " "..L.STANDING_FILTER_LABEL_4B_TXT, ["arg1"] = "CB_STANDING_NEUTRAL1", },
+		{ ["text"] = GetText("FACTION_STANDING_LABEL".."4", faGender) .. " "..L.STANDING_FILTER_LABEL_4A_TXT, ["arg1"] = "CB_STANDING_NEUTRAL0", },
+		{ ["text"] = GetText("FACTION_STANDING_LABEL".."3", faGender) .. " "..L.STANDING_FILTER_LABEL_3_TXT,  ["arg1"] = "CB_STANDING_UNFRIENDLY", },
+		{ ["text"] = GetText("FACTION_STANDING_LABEL".."2", faGender) .. " "..L.STANDING_FILTER_LABEL_2_TXT,  ["arg1"] = "CB_STANDING_HOSTILE", },
+		{ ["text"] = GetText("FACTION_STANDING_LABEL".."1", faGender) .. " "..L.STANDING_FILTER_LABEL_1_TXT,  ["arg1"] = "CB_STANDING_HATED", },
 	}
 
 local InfoWindow_Backdrop_Default = {
@@ -1849,6 +1849,7 @@ function FactionAddict_OnShow(self)
 
 	PlaySound("igCharacterInfoOpen")
 	fa_DebugOut("FactionAddict_OnShow: "..self:GetName())
+	fa_DebugOut(faSessionDate)
 	
 	-- set search widget back to default display
 	FactionAddictTab1.SearchBox:Hide()
@@ -2274,7 +2275,7 @@ function FactionAddict_ConfigMenu_OnLoad()
 	local info =  {}
 	local x
     info.isTitle = 1
-	info.text = "Standing Filter"
+	info.text = L.STANDING_FILTER_TITLE_TXT
 	info.notCheckable = 1
 	UIDropDownMenu_AddButton(info, 1)
 	
@@ -2372,9 +2373,11 @@ function FactionAddict_OnLoad(self)
 	-- set date to use for this session
 	local weekday = date("%A")
 	local sessiondate = date("*t")
-	faSessionDate = weekday .. " " .. sessiondate["month"] .. "/" .. sessiondate["day"]
-	fa_DebugOut("faSessionDate: "..faSessionDate)
-	
+    -- (thanks MrUrkaz!) 
+    -- 'D' weekday needs to be matched last since the matches with d/m/y may match a value in that day string. 
+    -- for example Sunday has characters that also match 'd' and 'y' gsubs if done prior to them.
+	faSessionDate = L.DATE_FORMAT:gsub("d", sessiondate["day"]):gsub("m", sessiondate["month"]):gsub("y", sessiondate["year"]):gsub("D", L[weekday])
+
 	FactionAddictTab2.faFactionsText2:SetText(L.TAB2_SESSIONTOTAL_TXT .. HIGHLIGHT_FONT_COLOR_CODE .. tostring(faSessionRepGain) .. FONT_COLOR_CODE_CLOSE)
 
 	-- make closable with escape
