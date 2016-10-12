@@ -1143,3 +1143,7 @@ Change Log:
 4.40.2
 * Added Legion spells for The Broken Isles (world)
 * Added Legion spells for The Emerald Nightmare
+
+4.40.3
+* Fixed Legion spells for Halls of Valor
+* Added Legion spells for The Emerald Nightmare

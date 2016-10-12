@@ -995,6 +995,18 @@ GTFO.SpellID["225296"] = {
   tankSound = 0;
 };
 
+GTFO.SpellID["198108"] = {
+  --desc = "Momentum (Ursoc)";
+  applicationOnly = true;
+  minimumStacks = 1;
+  sound = 3;
+};
+
+GTFO.SpellID["205870"] = {
+  --desc = "Gloom (Lethon)";
+  sound = 3;
+};
+
 -- *************
 -- * Nighthold *
 -- *************

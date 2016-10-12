@@ -511,7 +511,7 @@ GTFO.SpellID["199818"] = {
 GTFO.SpellID["200682"] = {
   --desc = "Eye of the Storm (Solsten)";
   sound = 1;
-  negatingBuffSpellID = 203963; -- Eye of the Storm
+  negatingDebuffSpellID = 203963; -- Eye of the Storm
 };
 
 GTFO.SpellID["193702"] = {
@@ -749,7 +749,7 @@ GTFO.SpellID["202978"] = {
   sound = 1;
 };
 
-GTFO.FFSpellID["203097"] = {
+GTFO.SpellID["203097"] = {
   --desc = "Rot (Nythendra)";
   sound = 4;
   negatingBuffSpellID = 203096; -- Rot
@@ -773,6 +773,11 @@ GTFO.SpellID["212238"] = {
 GTFO.SpellID["223596"] = {
   --desc = "Darkfall (Dreadsoul Corruptor)";
   sound = 1;
+};
+
+GTFO.SpellID["203788"] = {
+  --desc = "Volatile Infection (Emeriss)";
+  sound = 4;
 };
 
 GTFO.SpellID["211196"] = {
