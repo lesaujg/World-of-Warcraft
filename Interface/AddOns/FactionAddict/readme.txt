@@ -4,7 +4,7 @@
 -- Desc: Addon for World of Warcraft
 --
 -- Author: gmz323(Greg)
--- current version: v1.36
+-- current version: v1.37
 -- (c) 2011-2016
 --
 =============================================================================
@@ -57,7 +57,7 @@ In the FactionAddict\Locales addon folder are the following files for localizati
 * frFR.lua - french client
 * zhTW.lua - Chinese (traditional; Taiwan) (Thanks Sop!)
 * zhCN.lua - Chinese (simplified; mainland China) (Thanks Sop!)
-* itIT.lua - Italian (Thanks Kemat1an!)
+* itIT.lua - Italian client (Thanks Kemat1an!)
 
 My Other Addons:
 ================
@@ -66,6 +66,11 @@ My Other Addons:
 
 Changelog:
 ==========
+
+v1.37 (2016-10-12)
+------------------
+* updated Spanish (esES) Locale. Thanks MrUrkaz!
+* removed Operation: Aardvark faction that did not end up in the game.
 
 v1.36 (2016-10-09)
 ------------------

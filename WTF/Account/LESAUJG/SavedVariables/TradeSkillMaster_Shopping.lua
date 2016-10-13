@@ -57,7 +57,7 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @savedSearches"] = {
 		{
 			["searchMode"] = "crafting",
-			["lastSearch"] = 1476239762,
+			["lastSearch"] = 1476321251,
 			["name"] = "Arkhana/ignorede",
 			["filter"] = "Arkhana/ignorede",
 		}, -- [1]

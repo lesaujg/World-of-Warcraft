@@ -40,7 +40,6 @@ FactionAddictConfigIsInactive = {
 	[809] = false,
 	[1168] = false,
 	[1105] = false,
-	[1679] = false,
 	[1106] = false,
 	[470] = false,
 	[1171] = false,

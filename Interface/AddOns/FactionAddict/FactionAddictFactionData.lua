@@ -149,34 +149,34 @@ faFactionDataRow[1718]  = 134;
 faFactionDataRow[1717]  = 135;
 faFactionDataRow[1708]  = 136;
 faFactionDataRow[1741]  = 137;
-faFactionDataRow[1679]  = 138;
-faFactionDataRow[1710]  = 139;
-faFactionDataRow[1520]  = 140;
-faFactionDataRow[1732]  = 141;
-faFactionDataRow[1711]  = 142;
-faFactionDataRow[1737]  = 143;
-faFactionDataRow[1736]  = 144;
-faFactionDataRow[1739]  = 145;
-faFactionDataRow[1681]  = 146;
-faFactionDataRow[1682]  = 147;
-faFactionDataRow[1690]  = 148;
-faFactionDataRow[1691]  = 149;
-faFactionDataRow[1847]  = 150;
-faFactionDataRow[1849]  = 151;
-faFactionDataRow[1848]  = 152;
-faFactionDataRow[1850]  = 153;
 
-faFactionDataRow[1900]  = 154;
-faFactionDataRow[1883]  = 155;
-faFactionDataRow[1815]  = 156;
-faFactionDataRow[1828]  = 157;
-faFactionDataRow[1947]  = 158;
-faFactionDataRow[1888]  = 159;
-faFactionDataRow[1989]  = 160;
-faFactionDataRow[1984]  = 161;
-faFactionDataRow[1859]  = 162;
-faFactionDataRow[1894]  = 163;
-faFactionDataRow[1948]  = 164;
+faFactionDataRow[1710]  = 138;
+faFactionDataRow[1520]  = 139;
+faFactionDataRow[1732]  = 140;
+faFactionDataRow[1711]  = 141;
+faFactionDataRow[1737]  = 142;
+faFactionDataRow[1736]  = 143;
+faFactionDataRow[1739]  = 144;
+faFactionDataRow[1681]  = 145;
+faFactionDataRow[1682]  = 146;
+faFactionDataRow[1690]  = 147;
+faFactionDataRow[1691]  = 148;
+faFactionDataRow[1847]  = 149;
+faFactionDataRow[1849]  = 150;
+faFactionDataRow[1848]  = 151;
+faFactionDataRow[1850]  = 152;
+
+faFactionDataRow[1900]  = 153;
+faFactionDataRow[1883]  = 154;
+faFactionDataRow[1815]  = 155;
+faFactionDataRow[1828]  = 156;
+faFactionDataRow[1947]  = 157;
+faFactionDataRow[1888]  = 158;
+faFactionDataRow[1989]  = 159;
+faFactionDataRow[1984]  = 160;
+faFactionDataRow[1859]  = 161;
+faFactionDataRow[1894]  = 162;
+faFactionDataRow[1948]  = 163;
 
 
 faFactionData = {
@@ -458,8 +458,6 @@ faFactionData = {
 			5,2,17},
 	{1741, "Interface\\Garrison\\Portraits\\FollowerPortrait_61487",
 			5,0,18},
-	{1679, "Interface\\ICONS\\inv_misc_questionmark", -- not in game?
-			5,0,17},
 	{1710, "Interface\\ICONS\\inv_tabard_a_shataridefense",
 			5,1,17},
 	{1520, "Interface\\ICONS\\inv_helm_cloth_shadowmoonclan_b_01", 
@@ -500,7 +498,7 @@ faFactionData = {
 			6,0,19},
 	{1828, "Interface\\ICONS\\inv_tabard_a_87hightmountain",
 			6,0,19},
-	{1947, "Interface\\ICONS\\inv_helm_cloth_legionendgame_c_01", -- no icon
+	{1947, "Interface\\ICONS\\inv_tabard_a_84illidari",
 			6,0,19},
 	{1888, "Interface\\ICONS\\inv_misc_head_vrykul", -- no icon
 			6,0,19},
@@ -538,7 +536,7 @@ local faFactionDataSideValues = { -- column value descriptions - info only, no n
 	[2] = "Horde Only"
 };
 
-faFactionDataCategoryValues = { -- displayed in info window - NEED TO BE LOCALIZED
+faFactionDataCategoryValues = { -- displayed in info window - LOCALIZED
 	[0]  = L.CATEGORY_ALLIANCE_TXT,
 	[1]  = L.CATEGORY_ALLIANCEFORCES_TXT,
 	[2]  = L.CATEGORY_ALLIANCEVANGUARD_TXT,

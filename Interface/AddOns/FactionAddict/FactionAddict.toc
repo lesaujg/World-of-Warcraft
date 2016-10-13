@@ -1,6 +1,6 @@
 ## Interface: 70000
 ## Title: Faction Addict
-## Version: 1.36
+## Version: 1.37
 ## Author: gmz323(Greg)
 ## Notes: Provides additional faction information to your characters|nworking towards faction based achievements.
 ## SavedVariablesPerCharacter: FactionAddictConfig,FactionAddictLogVersion,FactionAddictLogData,FactionAddictLogEntries,FactionAddictConfigIsInactive
