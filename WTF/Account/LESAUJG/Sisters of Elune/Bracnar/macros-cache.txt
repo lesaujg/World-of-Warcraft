@@ -64,13 +64,15 @@ VER 3 010000000000004D "MD+" "INV_Misc_QuestionMark"
 /stopmacro [button:2][mod:ctrl]
 /cast [@focus,help,nodead][@pet,nodead,exists] Misdirection
 END
+VER 3 0100000000000061 "Pet" "INV_MISC_QUESTIONMARK"
+/use [nopet,nomod]Call Pet 3;[mod:ctrl,mod:alt]Dismiss Pet;[pet,nocombat,nomod]Fetch(Glyph);Revive Pet
+END
 VER 3 0100000000000054 "Pet_stuff" "INV_Misc_QuestionMark"
 #showtooltip
-/cast [nopet,button:2] Revive Pet
-/cast [nopet] Call Pet 2
+/cast [button:1, nopet] Call Pet 3
+/cast [button:2, nopet] Call Pet 4
 /cast [button:2, pet, nodead] Dismiss Pet
-/cast [@pet, pet, dead] Revive Pet
-/cast [@pet, pet, nodead] Mend Pet
+/cast [@pet,dead]Revive Pet; [nopet] Revive Pet; Mend Pet
 END
 VER 3 0100000000000055 "Trueshot" "INV_MISC_QUESTIONMARK"
 #showtooltip
