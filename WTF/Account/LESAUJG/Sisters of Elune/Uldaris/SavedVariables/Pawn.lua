@@ -1,12 +1,12 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0011,
+	["LastVersion"] = 2.01,
 	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
 	["LastKeybindingsSet"] = 1,
 }
-PawnWowheadScaleProviderOptions = {
+PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "DRUID",
-	["LastAdded"] = 5,
+	["LastAdded"] = 1,
 }

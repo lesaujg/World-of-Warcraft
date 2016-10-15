@@ -1,13 +1,12 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0013,
+	["LastVersion"] = 2.01,
 	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
 	["AutoSelectScales"] = false,
 	["UpgradeTracking"] = false,
 	["LastKeybindingsSet"] = 1,
 }
-PawnMrRobotScaleProviderOptions = nil
-PawnWowheadScaleProviderOptions = {
+PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",
-	["LastAdded"] = 5,
+	["LastAdded"] = 1,
 }

@@ -3,7 +3,6 @@ VER 3 0000000000000003 "Aeonaxx" "236230"
 /target aeonaxx
 /focus
 /run if UnitName("Target") == "Aeonaxx" then PlaySoundFile([[Sound\Interface\PVPFlagTakenMono.ogg]], "Master"); print(date(), UnitName("Target"), "Found"); SetRaidTarget("target",8); end
-/equipset Dressed
 END
 VER 3 0000000000000001 "Decursive" "INV_MISC_QUESTIONMARK"
 /stopcasting

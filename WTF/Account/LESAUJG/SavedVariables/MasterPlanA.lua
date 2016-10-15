@@ -8,7 +8,7 @@ MasterPlanAG = {
 	},
 	["Sisters of Elune"] = {
 		["Bracnar"] = {
-			["class"] = "HUNTER",
+			["lastCacheTime"] = 1471355311,
 			["summary"] = {
 				["ti2"] = 122486,
 				["ti3"] = 127854,
@@ -17,15 +17,15 @@ MasterPlanAG = {
 				["tt3"] = true,
 				["tt2"] = 1472352656,
 			},
-			["faction"] = "Alliance",
-			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1471355311,
-			["curRes"] = 10000,
 			["curOil"] = 61865,
+			["cacheSize"] = 1000,
+			["class"] = "HUNTER",
+			["curRes"] = 10000,
+			["faction"] = "Alliance",
 		},
 		["Ghiaccioli"] = {
-			["class"] = "MAGE",
 			["faction"] = "Alliance",
+			["class"] = "MAGE",
 		},
 		["Mandelbrot"] = {
 			["faction"] = "Alliance",
@@ -54,8 +54,8 @@ MasterPlanAG = {
 				["tt2"] = 1469583752,
 			},
 			["faction"] = "Alliance",
-			["class"] = "MONK",
 			["lastCacheTime"] = 1470667248,
+			["class"] = "MONK",
 			["curRes"] = 7716,
 			["curOil"] = 2735,
 		},
@@ -64,7 +64,7 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 		["Uldaris"] = {
-			["faction"] = "Alliance",
+			["curOil"] = 990,
 			["recruitTime"] = 1464140222,
 			["summary"] = {
 				["ti2"] = 122484,
@@ -80,16 +80,16 @@ MasterPlanAG = {
 					[398] = 1469609379,
 				},
 				["ti3"] = 128391,
-				["ti1"] = 118529,
 				["tt1"] = 1469472868,
+				["ti1"] = 118529,
 				["tt3"] = 1469242109,
 				["tt2"] = 1469583510,
 			},
-			["curOil"] = 990,
+			["faction"] = "Alliance",
 			["cacheSize"] = 1000,
-			["class"] = "DRUID",
-			["curRes"] = 5439,
 			["lastCacheTime"] = 1469580598,
+			["curRes"] = 5439,
+			["class"] = "DRUID",
 		},
 		["Sanjuri"] = {
 			["class"] = "MONK",
@@ -113,5 +113,7 @@ MasterPlanAG = {
 			["class"] = "WARLOCK",
 			["faction"] = "Alliance",
 		},
+	},
+	["IgnoreRewards"] = {
 	},
 }
