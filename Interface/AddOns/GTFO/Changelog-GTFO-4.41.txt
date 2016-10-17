@@ -1,11 +1,40 @@
 ------------------------------------------------------------------------
-r270 | zensunim | 2016-10-11 06:02:34 +0000 (Tue, 11 Oct 2016) | 3 lines
+r274 | zensunim | 2016-10-16 18:43:46 +0000 (Sun, 16 Oct 2016) | 4 lines
 Changed paths:
-   A /tags/4.40.3 (from /trunk:269)
+   A /tags/4.41 (from /trunk:273)
 
-4.40.3
-* Fixed Legion spells for Halls of Valor
+4.41
+* Fixed an issue with Warrior and Death Knight tanks not being properly detected
+* Added Legion spells for The Broken Isles (world)
 * Added Legion spells for The Emerald Nightmare
+------------------------------------------------------------------------
+r273 | zensunim | 2016-10-16 18:43:07 +0000 (Sun, 16 Oct 2016) | 1 line
+Changed paths:
+   M /trunk/GTFO.lua
+   M /trunk/GTFO.toc
+   M /trunk/GTFO_Fail_LGN.lua
+   M /trunk/ReadMe.txt
+
+4.41 release
+------------------------------------------------------------------------
+r272 | zensunim | 2016-10-16 18:00:15 +0000 (Sun, 16 Oct 2016) | 1 line
+Changed paths:
+   M /trunk/GTFO.lua
+   M /trunk/GTFO.toc
+   M /trunk/ReadMe.txt
+
+Fixed an issue with Warrior and Death Knight tanks not being properly detected
+------------------------------------------------------------------------
+r271 | zensunim | 2016-10-13 06:31:37 +0000 (Thu, 13 Oct 2016) | 2 lines
+Changed paths:
+   M /trunk/GTFO.lua
+   M /trunk/GTFO.toc
+   M /trunk/GTFO_Fail_LGN.lua
+   M /trunk/GTFO_Ignore.lua
+   M /trunk/ReadMe.txt
+
+Added Legion spells for The Emerald Nightmare
+
 ------------------------------------------------------------------------
 r269 | zensunim | 2016-10-11 06:02:16 +0000 (Tue, 11 Oct 2016) | 1 line
 Changed paths:
@@ -148,56 +177,4 @@ Changed paths:
 
 * Added Legion spells for The Broken Isles (world)
 * Added Legion spells for Maw of Souls
-------------------------------------------------------------------------
-r247 | zensunim | 2016-09-14 05:01:06 +0000 (Wed, 14 Sep 2016) | 1 line
-Changed paths:
-   M /trunk/GTFO.lua
-   M /trunk/GTFO.toc
-
-Prep for 4.38.8
-------------------------------------------------------------------------
-r246 | zensunim | 2016-09-12 22:52:27 +0000 (Mon, 12 Sep 2016) | 1 line
-Changed paths:
-   M /trunk/GTFO_Fail_LGN.lua
-
-Fixed Legion spells for Hall of Valor
-------------------------------------------------------------------------
-r245 | zensunim | 2016-09-12 00:43:47 +0000 (Mon, 12 Sep 2016) | 1 line
-Changed paths:
-   M /trunk/GTFO.lua
-   M /trunk/GTFO_Spells_LGN.lua
-
-Added Legion spells for The Broken Isles (world)
-------------------------------------------------------------------------
-r244 | zensunim | 2016-09-11 18:47:57 +0000 (Sun, 11 Sep 2016) | 1 line
-Changed paths:
-   M /trunk/GTFO.lua
-   M /trunk/GTFO.toc
-   M /trunk/GTFO_Spells_Special.lua
-
-Removed Fel Reaver's war-stomp from Legion Event (messes up A Falling Star)
-------------------------------------------------------------------------
-r242 | zensunim | 2016-09-11 08:18:11 +0000 (Sun, 11 Sep 2016) | 1 line
-Changed paths:
-   M /trunk/GTFO.lua
-   M /trunk/GTFO.toc
-   M /trunk/GTFO_Fail_LGN.lua
-   M /trunk/GTFO_Spells_LGN.lua
-
-Prep for 4.38.7 release
-------------------------------------------------------------------------
-r241 | zensunim | 2016-09-10 06:07:17 +0000 (Sat, 10 Sep 2016) | 1 line
-Changed paths:
-   M /trunk/GTFO_Fail_LGN.lua
-   M /trunk/GTFO_Spells_LGN.lua
-
-More Broken Isles spells
-------------------------------------------------------------------------
-r240 | zensunim | 2016-09-09 15:46:28 +0000 (Fri, 09 Sep 2016) | 1 line
-Changed paths:
-   M /trunk/GTFO.lua
-   M /trunk/GTFO_Fail_LGN.lua
-   M /trunk/GTFO_Spells_LGN.lua
-
-More Broken Isles and Violet Hold spells
 ------------------------------------------------------------------------

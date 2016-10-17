@@ -10,6 +10,11 @@ Author: Zensunim of Malygos
 --- * The Broken Isles *
 --- ********************
 
+GTFO.SpellID["209862"] = {
+  --desc = "Volcanic Plume (Mythic+ Keystone)";
+  sound = 3;
+};
+
 GTFO.SpellID["225574"] = {
   --desc = "Trespasser!";
   applicationOnly = true;
@@ -1002,10 +1007,36 @@ GTFO.SpellID["198108"] = {
   sound = 3;
 };
 
+GTFO.SpellID["225356"] = {
+  --desc = "Seeping Fog (Seeping Fog)";
+  applicationOnly = true;
+  sound = 3;
+};
+
 GTFO.SpellID["205870"] = {
   --desc = "Gloom (Lethon)";
   sound = 3;
 };
+
+GTFO.SpellID["203028"] = {
+  --desc = "Corrupted Breath (Ysondre)";
+  sound = 3;
+  tankSound = 0;
+};
+
+GTFO.SpellID["204767"] = {
+  --desc = "Corrupted Breath (Shade of Taerar)";
+  sound = 3;
+  tankSound = 0;
+};
+
+
+GTFO.SpellID["203110"] = {
+  --desc = "Slumbering Nightmare (Ysondre)";
+  applicationOnly = true;
+  sound = 3;
+};
+
 
 -- *************
 -- * Nighthold *
