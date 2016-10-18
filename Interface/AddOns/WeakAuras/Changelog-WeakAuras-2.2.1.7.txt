@@ -1,0 +1,57 @@
+tag 2.2.1.7
+ab9c7e69237a927a93b38465ddb81d96382e1279
+Benjamin Staneck <staneck@gmail.com>
+2016-10-17 19:32:29 +0200
+
+
+
+--------------------
+
+Infus:
+	- Fix ReleaseClone to actually store the clone into the right place
+	Ticket-Nr: Github 113
+	- Remove TODOs accidentaly left in the code
+	- Correctly set WeakAuras.frames for the cdReadyFrame
+	- Add Equipment Slot cooldown progress trigger
+	Can check a arbitary slot for its progress information.
+	
+	Ticket-Nr: 215
+	- Dynamic group Sorting: Add a check for a or b being nil
+	No idea why table.sort would give us nil values.
+	
+	Ticket-Nr: 759
+	- Model: Add a way to switch to the new SetTransform api
+	Which allwos for more degrees of rotation and also isn't affected
+	by the bug described in ticket: 696
+	
+	Ticket-Nr: 696
+	- Fix error on renaming auras
+	THe clones are released already and the clone table renamed.
+	
+	Ticket-Nr: 753
+	- Remove custom code on exporting if the trigger is not in custom code mode
+	Fixes slow transmissions and removes a few warnings for users importing
+	auras that have old no longer used custom code.
+	
+	Ticket-Nr: 742
+	- Use [[ ]] for most string interpolations
+	Some user input can contain " and ', but is much less likely to
+	contain [[ or ]]
+	
+	Ticket-Nr: 752, 505
+	- Add a line number display in the top right corner
+	Which can also be used to jump to a specific line. That isn't exactly
+	what Ticket 549 asked for. But adding line numbers looks to be pretty
+	complicated and this solves the problem of finding the line for a
+	specific error message.
+	
+	Ticket-Nr: 549
+	- Fix anchors of error message
+	- Fix sorting of dynamic groups without expiration times
+	Also introduced additional sort modes for hybrid.
+	
+	Ticket-Nr: 726 and 595
+	- Fix flickering for auras that have inverse conditions
+	Ticket-Nr: 691
+	- Add missing CHAT types
+	Ticket-Nr: 747
