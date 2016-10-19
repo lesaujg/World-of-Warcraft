@@ -5,11 +5,11 @@ BaudManifestData = {
 		["FillSpecials"] = true,
 		["ShowArrows"] = true,
 		["ShowBank"] = true,
-		["Combine"] = true,
+		["ItemNameFirst"] = false,
 		["HideEquipped"] = true,
 		["HideBlizBank"] = true,
 		["HideBlizInv"] = true,
-		["ItemNameFirst"] = false,
+		["Combine"] = true,
 		["AutoShowInv"] = true,
 		["ReplaceBlizBags"] = true,
 		["Scale"] = 100,
@@ -395,9 +395,9 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [1]
 					{
-						["ItemString"] = "item:23389::::::::2:262::::::",
 						["Equipped"] = 1,
 						["Count"] = 1,
+						["ItemString"] = "item:23389::::::::2:262::::::",
 					}, -- [2]
 					{
 						["Count"] = 3,

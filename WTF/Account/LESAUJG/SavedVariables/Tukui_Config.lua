@@ -86,8 +86,14 @@ TukuiConfigShared = {
 		},
 	},
 	["Account"] = {
+		["Raid"] = {
+			["ShowPets"] = false,
+		},
 		["Bags"] = {
 			["Enable"] = false,
+		},
+		["General"] = {
+			["UIScale"] = 0.64,
 		},
 		["ActionBars"] = {
 			["HotKey"] = true,
