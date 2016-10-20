@@ -39,20 +39,20 @@ FactionAddictLocalization["CONFIG_MENU_TT"] = "Filtro di Prestigio"
 FactionAddictLocalization["ACHIEVEMENT_TT_TITLE"] = "Imprese Osannato:"
 FactionAddictLocalization["SEARCH_TOGGLE"] = "Riquadro di Ricerca"
 
--- Scheda 1 - Testo Fazioni
+-- Scheda 1 - Testo della scheda Fazioni
 FactionAddictLocalization["TAB1_DESC_TXT"] = "Clicca una fazione per maggiori info."
 FactionAddictLocalization["KNOWN_TXT"] = "Conosciute: "
 FactionAddictLocalization["SHOWN_TXT"] = "Mostrate: "
 FactionAddictLocalization["EXALTED_TXT"] = "Osannate: "
 FactionAddictLocalization["NEXT_ACHIEV_TXT"] = "Prossima Impresa: "
 
--- Scheda 2 - Testo di Log
+-- Scheda 2 - Testo della scheda Log
 FactionAddictLocalization["TAB2_DESC_TXT"] = "Log Reputazione"
 FactionAddictLocalization["TAB2_LASTGAIN_TXT"] = "Ultimo ottenimento"
 FactionAddictLocalization["TAB2_NOGAIN_TXT"] = "Niente in questa sessione"
 FactionAddictLocalization["TAB2_SESSIONTOTAL_TXT"] = "Totale Sessione: "
 
--- Scheda 3 - Testo di Configurazione
+-- Scheda 3 - Testo della schedaConfigurazione
 FactionAddictLocalization["TAB3_DESC_TXT"] = "Configurazione"
 FactionAddictLocalization["TAB3_DISPLAY_CONFIG_TXT"] = "Quali fazioni devo mostrare?"
 FactionAddictLocalization["TAB3_DISPLAY_ORDER_TXT"] = "Ordina fazioni per"
@@ -72,40 +72,40 @@ FactionAddictLocalization["TAB3_CONFIG_HORDE_ONLY"] = "Mostra solo fazioni |cFFC
 FactionAddictLocalization["TAB3_CONFIG_AUTOBAR"] = "Cambia automaticamente la barra reputazione"
 FactionAddictLocalization["TAB3_CONFIG_HIDEINACTIVE"] = "Nascondi fazioni Inattive"
 
--- Scheda 4 - Testo voce About
+-- Scheda 4 - Testo della scheda About
 FactionAddictLocalization["TAB4_DESC_TXT"] = "About Faction Addict"
 FactionAddictLocalization["VERSION_TXT"] = "versione: "
-FactionAddictLocalization["ABOUT_TXT"] = "Faction Addict è un addon che aiuta il giocatore a visualizzare e tenere traccia facilmente delle informazioni relative alle varie fazioni nel gioco. Grandioso per coloro che puntano a osannare le reputazioni con fazioni differenti. |n|nUsa i comandi slash |cFFFF0000/fa|r oppure |cFFFF0000/factionaddict|r per aprire e/o chiudere la finestra. Il pannello ui predefinito ha un pulsante di lancio nell'angolo superiore destro.|n|nScarica gli aggiornamenti e lascia dei commenti su: |cFFFFFF00wowinterface.com|r e |cFFFFFF00wow.curse.com|r|n|nScritto da: |cFFFFFF00gmz323 (Greg)|r"
+FactionAddictLocalization["ABOUT_TXT"] = "Faction Addict è un addon che aiuta il giocatore a visualizzare e tenere traccia facilmente delle informazioni relative alle varie fazioni nel gioco. Grandioso per coloro che puntano a osannare le reputazioni con fazioni differenti. |n|nUsa i comandi slash |cFFFF0000/fa|r oppure |cFFFF0000/factionaddict|r per aprire e/o chiudere la finestra. Il pannello UI predefinito ha un pulsante di lancio nell'angolo superiore destro.|n|nScarica gli aggiornamenti e lascia dei commenti su: |cFFFFFF00wowinterface.com|r e |cFFFFFF00wow.curse.com|r|n|nScritto da: |cFFFFFF00gmz323 (Greg)|r"
 
 -- Finestra Informativa
 FactionAddictLocalization["LAUNCH_WATCH_PANEL_TXT"] = "Lancia Pannello di Osservazione"
 FactionAddictLocalization["FACTION_URL_TXT"] = "https://it.wowhead.com/faction="
-FactionAddictLocalization["PCT_TO_EXALTED_TXT"] = "Percentuale di Osannato: "
+FactionAddictLocalization["PCT_TO_EXALTED_TXT"] = "% di Osannato: "
 FactionAddictLocalization["CATEGORY_TXT"] = "Categoria: "
 
--- Info Window - Categories
-FactionAddictLocalization["CATEGORY_ALLIANCE_TXT"] = "Alliance"
-FactionAddictLocalization["CATEGORY_ALLIANCEFORCES_TXT"] = "Alliance Forces"
-FactionAddictLocalization["CATEGORY_ALLIANCEVANGUARD_TXT"] = "Alliance Vanguard"
+-- Finestra Informativa - Categorie
+FactionAddictLocalization["CATEGORY_ALLIANCE_TXT"] = "Alleanza"
+FactionAddictLocalization["CATEGORY_ALLIANCEFORCES_TXT"] = "Forze dell'Alleanza"
+FactionAddictLocalization["CATEGORY_ALLIANCEVANGUARD_TXT"] = "Avanguardia dell'Alleanza"
 FactionAddictLocalization["CATEGORY_CATACLYSM_TXT"] = "Cataclysm"
-FactionAddictLocalization["CATEGORY_CLASSIC_TXT"] = "Classic"
-FactionAddictLocalization["CATEGORY_GUILD_TXT"] = "Guild"
-FactionAddictLocalization["CATEGORY_HORDE_TXT"] = "Horde"
-FactionAddictLocalization["CATEGORY_HORDEEXP_TXT"] = "Horde Expedition"
-FactionAddictLocalization["CATEGORY_OTHER_TXT"] = "Other"
-FactionAddictLocalization["CATEGORY_SHATTRATH_TXT"] = "Shattrath City"
-FactionAddictLocalization["CATEGORY_SHOLAZAR_TXT"] = "Sholazar Basin"
-FactionAddictLocalization["CATEGORY_STEAMWHEEDLE_TXT"] = "Steamwheedle Cartel"
+FactionAddictLocalization["CATEGORY_CLASSIC_TXT"] = "Classiche"
+FactionAddictLocalization["CATEGORY_GUILD_TXT"] = "Gilda"
+FactionAddictLocalization["CATEGORY_HORDE_TXT"] = "Orda"
+FactionAddictLocalization["CATEGORY_HORDEEXP_TXT"] = "Spedizione dell'Orda"
+FactionAddictLocalization["CATEGORY_OTHER_TXT"] = "Altro"
+FactionAddictLocalization["CATEGORY_SHATTRATH_TXT"] = "Shattrath"
+FactionAddictLocalization["CATEGORY_SHOLAZAR_TXT"] = "Bacino di Sholazar"
+FactionAddictLocalization["CATEGORY_STEAMWHEEDLE_TXT"] = "Cartello degli Spargifumo"
 FactionAddictLocalization["CATEGORY_TBC_TXT"] = "The Burning Crusade"
 FactionAddictLocalization["CATEGORY_WOTLK_TXT"] = "Wrath of the Lich King"
-FactionAddictLocalization["CATEGORY_HORDEFORCES_TXT"] = "Horde Forces"
+FactionAddictLocalization["CATEGORY_HORDEFORCES_TXT"] = "Forze dell'Orda"
 FactionAddictLocalization["CATEGORY_MOP_TXT"] = "Mists of Pandaria"
 FactionAddictLocalization["CATEGORY_WOD_TXT"] = "Warlords of Draenor"
-FactionAddictLocalization["CATEGORY_BARRACKSBODYGUARDS_TXT"] = "Barracks Bodyguards"
+FactionAddictLocalization["CATEGORY_BARRACKSBODYGUARDS_TXT"] = "Guardie del Corpo della Caserma"
 FactionAddictLocalization["CATEGORY_LEGION_TXT"] = "Legion"
 
--- Standing Filter (Tab1 - dropdown)
-FactionAddictLocalization["STANDING_FILTER_TITLE_TXT"] =    "Standing Filter"
+-- FIltro di Prestigio (Scheda 1 - Menu a tendina)
+FactionAddictLocalization["STANDING_FILTER_TITLE_TXT"] =    "Filtro di Prestigio"
 FactionAddictLocalization["STANDING_FILTER_LABEL_8_TXT"] =  "(42,000+)"
 FactionAddictLocalization["STANDING_FILTER_LABEL_7_TXT"] =  "(21,000 to 42,000)"
 FactionAddictLocalization["STANDING_FILTER_LABEL_6_TXT"] =  "(9,000 to 21,000)"
@@ -116,13 +116,13 @@ FactionAddictLocalization["STANDING_FILTER_LABEL_3_TXT"] =  "(-3,000 to 0)"
 FactionAddictLocalization["STANDING_FILTER_LABEL_2_TXT"] =  "(-6,000 to -3,000)"
 FactionAddictLocalization["STANDING_FILTER_LABEL_1_TXT"] =  "(-42,000 to -6,000)"
 
--- Log date (Format: D = weekday, d = day, m = month, y = year)
-FactionAddictLocalization["Monday"] = "Lunedi"
+-- Data della scheda Log (Formato: D = giorno della settimana, d = giorno, m = mese, y = anno)
+FactionAddictLocalization["Monday"] = "Lunedì"
 FactionAddictLocalization["Tuesday"] = "Martedì"
 FactionAddictLocalization["Wednesday"] = "Mercoledì"
-FactionAddictLocalization["Thursday"] = "Giovedi"
+FactionAddictLocalization["Thursday"] = "Giovedì"
 FactionAddictLocalization["Friday"] = "Venerdì"
 FactionAddictLocalization["Saturday"] = "Sabato"
 FactionAddictLocalization["Sunday"] = "Domenica"
-FactionAddictLocalization["DATE_FORMAT"] = "D m/d"
+FactionAddictLocalization["DATE_FORMAT"] = "D d/m/y"
 end;

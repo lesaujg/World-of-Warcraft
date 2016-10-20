@@ -17,7 +17,7 @@ CrossRealmAssistDB = {
 	},
 	["global"] = {
 		["minimap"] = {
-			["minimapPos"] = 317.070125826845,
+			["minimapPos"] = 346.139047281167,
 		},
 		["widgetPos"] = {
 			["y"] = -139.862548828125,

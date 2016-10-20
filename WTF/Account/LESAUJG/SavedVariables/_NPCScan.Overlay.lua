@@ -17,6 +17,7 @@ _NPCScanOverlayOptions = {
 	},
 	["MiniMapIcon"] = {
 		["minimapPos"] = 331.742089198206,
+		["hide"] = true,
 	},
 	["Version"] = "5.4.8.5",
 	["KeyAutoHideAlpha"] = 0.25,
