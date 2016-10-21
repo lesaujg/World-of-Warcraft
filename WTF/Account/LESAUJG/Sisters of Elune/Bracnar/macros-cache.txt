@@ -72,7 +72,7 @@ VER 3 0100000000000054 "Pet_stuff" "INV_Misc_QuestionMark"
 /cast [button:1, nopet] Call Pet 3
 /cast [button:2, nopet] Call Pet 4
 /cast [button:2, pet, nodead] Dismiss Pet
-/cast [@pet,dead]Revive Pet; [nopet] Revive Pet; Mend Pet
+/cast [@pet,dead]Revive Pet; [nopet,mod] Revive Pet;Mend Pet
 END
 VER 3 0100000000000055 "Trueshot" "INV_MISC_QUESTIONMARK"
 #showtooltip

@@ -232,6 +232,7 @@ function TSM:ProcessAppData(rawData)
 	for _, part in ipairs(TSMAPI.Util:SafeStrSplit(itemData, "},{")) do
 		local entry = {(","):split(part)}
 		for j = 1, #entry do
+			entry[j] = entry[j]:trim("\"")
 			entry[j] = tonumber(entry[j]) or (entry[j] ~= "" and entry[j]) or nil
 		end
 		tinsert(__AUCTIONDB_IMPORT_TEMP, entry)

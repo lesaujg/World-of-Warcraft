@@ -45,7 +45,7 @@ function TSMAPI.Util:SafeStrSplit(str, sep)
 			tinsert(parts, strsub(str, s))
 			break
 		end
-		tinsert(parts, strsub(str, s, e - sepLength))
+		tinsert(parts, strsub(str, s, e - 1))
 		s = e + sepLength
 	end
 	return parts

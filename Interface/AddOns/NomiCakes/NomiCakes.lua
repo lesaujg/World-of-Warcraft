@@ -411,30 +411,42 @@ do -- Experimental work order stuff
 	local NumWorkOrdersOrdered, WorkOrderType = 0
 	local f = CreateFrame('frame')
 	f:SetScript('OnEvent', function(self, event, ...)
-		if event == 'SHIPMENT_CRAFTER_OPENED' and ... == 122 then
-			ShipmentOpenTime = time()
-			NumWorkOrdersOrdered = 0
-			self:RegisterEvent('SHIPMENT_UPDATE')
-			self:RegisterEvent('SHIPMENT_CRAFTER_CLOSED')
-			self:RegisterEvent('SHIPMENT_CRAFTER_INFO')
+		if event == 'SHIPMENT_CRAFTER_OPENED' then
+			if ... == 122 then -- we're talking to nomi
+				ShipmentOpenTime = time()
+				NumWorkOrdersOrdered = 0
+				self:RegisterEvent('SHIPMENT_UPDATE')
+				self:RegisterEvent('SHIPMENT_CRAFTER_CLOSED')
+				self:RegisterEvent('SHIPMENT_CRAFTER_INFO')
+			else -- these events shouldn't be registered, but make absolutely certain we don't respond to them when not talking to nomi
+				self:UnregisterEvent('SHIPMENT_UPDATE')
+				self:UnregisterEvent('SHIPMENT_CRAFTER_CLOSED')
+				self:UnregisterEvent('SHIPMENT_CRAFTER_INFO')
+			end
 		elseif event == 'SHIPMENT_CRAFTER_INFO' and ... then
 			-- shipment information should be available at this point, record it
 			self:UnregisterEvent('SHIPMENT_CRAFTER_INFO')
 			local success, pendingShipments, maxShipments, ownedShipments = ...
-			local now = time()
-			wipe(WorkOrders)
-			for i = 1, C_Garrison.GetNumPendingShipments() do
-				-- "name" is not guaranteed to exist, if the item info hasn't been cached yet it will return nil, so don't bother recording it
-				-- we might need to manually cache the names for all of our items using GET_ITEM_INFO_UPDATE so we can add them to the tooltip later
-				local name, texture, _, itemID, _, startDelta, timeRemaining = C_Garrison.GetPendingShipmentInfo(i)
-				local orderPlaced = now - startDelta -- time the work order was placed, not when the work order will start
-				local endTime = now + timeRemaining
-				-- local startTime = endTime - 14400 -- start time is end time of previous recipe, or endTime - 14400, which makes recording it kind of pointless
-				WorkOrders[i] = {WorkOrderItemIDs[itemID], orderPlaced, endTime}
+			if maxShipments == 0 then -- nomi is bugged (no work order window), we can't fetch work order data
+				print('|cffffff66Nomi is bugged, try again!|r') -- outputting a message might confuse people, but I think it's better than nothing
+				C_Garrison.CloseTradeskillCrafter() -- end interaction so we don't have to walk away from him
+			else
+				local now = time()
+				wipe(WorkOrders)
+				for i = 1, C_Garrison.GetNumPendingShipments() do
+					-- "name" is not guaranteed to exist, if the item info hasn't been cached yet it will return nil, so don't bother recording it
+					-- we might need to manually cache the names for all of our items using GET_ITEM_INFO_UPDATE so we can add them to the tooltip later
+					local name, texture, _, itemID, _, startDelta, timeRemaining = C_Garrison.GetPendingShipmentInfo(i)
+					local orderPlaced = now - startDelta -- time the work order was placed, not when the work order will start
+					local endTime = now + timeRemaining
+					-- local startTime = endTime - 14400 -- start time is end time of previous recipe, or endTime - 14400, which makes recording it kind of pointless
+					WorkOrders[i] = {WorkOrderItemIDs[itemID], orderPlaced, endTime}
+				end
 			end
 		elseif event == 'SHIPMENT_UPDATE' then
 			if ... then -- this will fire for each separate shipment if you queue multiple work orders at once
 				local name, texture, quality, itemID, followerID, duration = C_Garrison.GetShipmentItemInfo()
+				-- if itemID and WorkOrderItemIDs[itemID] then -- todo: sanity check if all else fails, but I would prefer this error out if something isn't working as expected
 				local numWorkOrders = #WorkOrders
 				local orderPlaced = time()
 				local startTime = numWorkOrders > 0 and WorkOrders[numWorkOrders][3] or orderPlaced
@@ -444,10 +456,11 @@ do -- Experimental work order stuff
 				NumWorkOrdersOrdered = NumWorkOrdersOrdered + 1
 				-- print(GetTime(), 'SHIPMENT_UPDATE', name, itemID, duration, 'started')
 			end
-		elseif event == 'SHIPMENT_CRAFTER_CLOSED' then
+		elseif event == 'SHIPMENT_CRAFTER_CLOSED' then -- if this event doesn't fire for some reason, we won't unregister events properly and will bug the next time the player talks to a work order npc
 			-- output what work orders were placed when the window is closed
 			self:UnregisterEvent('SHIPMENT_UPDATE')
 			self:UnregisterEvent('SHIPMENT_CRAFTER_CLOSED')
+			self:UnregisterEvent('SHIPMENT_CRAFTER_INFO') -- this shouldn't be necessary
 			if NumWorkOrdersOrdered > 0 then
 				local itemID = WorkOrderType
 				local name = LocalizedIngredientList[itemID] and LocalizedIngredientList[itemID][2] or '???'
@@ -460,8 +473,8 @@ do -- Experimental work order stuff
 		elseif event == 'ADDON_LOADED' and ... == addonName then
 			self:UnregisterEvent('ADDON_LOADED')
 			WorkOrders = NomiCakesDatas.WorkOrders
-			if not NomiCakesDatas.Version then
-				NomiCakesDatas.Version = 1
+			if NomiCakesDatas.Version ~= 2 then
+				NomiCakesDatas.Version = 2
 				wipe(NomiCakesDatas.WorkOrders)
 			end
 			self:RegisterEvent('SHIPMENT_CRAFTER_OPENED')
@@ -477,6 +490,9 @@ do -- Experimental work order stuff
 		local owner = self:GetOwner()
 		if owner and owner.containerID == 122 and WorkOrders then -- probably should add a better check for the tooltip owner than this
 			local numWorkOrders = #WorkOrders
+			
+			local name, texture, shipmentCapacity, shipmentsReady, shipmentsTotal, creationTime, duration, timeleftString, _, _, _, _, followerID = C_Garrison.GetLandingPageShipmentInfoByContainerID(122)
+			
 			if numWorkOrders > 0 then
 				--local endTime = WorkOrders[numWorkOrders][3]
 				--local timeLeft = endTime - time()
@@ -497,7 +513,7 @@ do -- Experimental work order stuff
 				local timeLeft = endTime - time()
 				if timeLeft > 0 then
 					self:AddDoubleLine(name, SecondsToTime(timeLeft), 1, 1, 0.4, 1, 1, 0.4)
-				else
+				elseif shipmentsReady > 0 then
 					self:AddDoubleLine(name, READY_FOR_PICKUP, 0.4, 1, 0.4, 0.4, 1, 0.4)
 				end
 			end

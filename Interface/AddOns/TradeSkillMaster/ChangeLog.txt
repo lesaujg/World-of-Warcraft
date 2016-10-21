@@ -1,3 +1,6 @@
+v3.6.11
+*Fixed bug causing AuctionDB to not properly load some region statistics.
+
 v3.6.10
 *Fixed a bug with parsing app data
 
