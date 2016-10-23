@@ -27,13 +27,6 @@ X: 0
 Y: 0
 W: 800
 H: 525
-Frame: AuctionFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: -17
-Y: -106
-W: 832
-H: 447
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: TOPRIGHT
