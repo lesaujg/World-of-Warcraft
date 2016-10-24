@@ -26,7 +26,7 @@ FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
 		["date"] = "Sunday 10/23",
-		["rows"] = 1,
+		["rows"] = 4,
 	}, -- [1]
 	{
 		["date"] = "Saturday 10/22",
@@ -107,7 +107,10 @@ FactionAddictLogData = {
 }
 FactionAddictLogEntries = {
 	{
-		["Court of Farondis"] = 250,
+		["The Wardens"] = 1025,
+		["Court of Farondis"] = 1150,
+		["Dreamweavers"] = 1875,
+		["Highmountain Tribe"] = 2125,
 	}, -- [1]
 	{
 		["Dreamweavers"] = 250,
