@@ -1,3 +1,4 @@
 !KalielsTracker: disabled
 WeakAuras: enabled
 WorldQuestTracker: disabled
+_NPCScan.Overlay: disabled

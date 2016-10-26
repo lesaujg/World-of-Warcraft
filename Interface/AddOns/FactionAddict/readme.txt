@@ -4,7 +4,7 @@
 -- Desc: Addon for World of Warcraft
 --
 -- Author: gmz323(Greg)
--- current version: v1.38
+-- current version: v1.39
 -- (c) 2011-2016
 --
 =============================================================================
@@ -58,6 +58,7 @@ In the FactionAddict\Locales addon folder are the following files for localizati
 * zhTW.lua - Chinese (traditional; Taiwan) (Thanks Sop!)
 * zhCN.lua - Chinese (simplified; mainland China) (Thanks Sop!)
 * itIT.lua - Italian client (Thanks Kemat1an!)
+* ptBR.lua - Portuguese client (Thanks Celso!)
 
 My Other Addons:
 ================
@@ -66,6 +67,11 @@ My Other Addons:
 
 Changelog:
 ==========
+
+v1.39 (2016-10-25)
+------------------
+* update for WoW 7.1 patch
+* added ptBR locale (Portuguese) - Thanks Celso!
 
 v1.38 (2016-10-19)
 ------------------

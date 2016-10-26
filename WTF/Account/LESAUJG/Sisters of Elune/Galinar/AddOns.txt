@@ -4,7 +4,7 @@ RareCoordinator: enabled
 BagBrother: disabled
 BittensSpellFlash_Hunter: disabled
 _NPCScan: enabled
-_NPCScan.Overlay: enabled
+_NPCScan.Overlay: disabled
 AchievementsReminder: disabled
 ActionBarSaver: enabled
 ArkInventory: disabled

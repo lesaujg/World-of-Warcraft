@@ -4,7 +4,7 @@ Informant: disabled
 +Wowhead_Looter: enabled
 SlideBar: disabled
 _NPCScan: enabled
-_NPCScan.Overlay: enabled
+_NPCScan.Overlay: disabled
 AckisRecipeList: enabled
 AckisRecipeList_Alchemy: enabled
 AckisRecipeList_Blacksmithing: enabled

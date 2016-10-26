@@ -1,6 +1,6 @@
-## Interface: 70000
+## Interface: 70100
 ## Title: Faction Addict
-## Version: 1.38
+## Version: 1.39
 ## Author: gmz323(Greg)
 ## Notes: Provides additional faction information to your characters|nworking towards faction based achievements.
 ## SavedVariablesPerCharacter: FactionAddictConfig,FactionAddictLogVersion,FactionAddictLogData,FactionAddictLogEntries,FactionAddictConfigIsInactive
@@ -11,6 +11,7 @@ Locales\frFR.lua
 Locales\zhCN.lua
 Locales\zhTW.lua
 Locales\itIT.lua
+Locales\ptBR.lua
 FactionAddictFactionData.lua
 FactionAddict.lua
 FactionAddict.xml

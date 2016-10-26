@@ -9,7 +9,7 @@ WeDontWipe-WindwalkerMonk: disabled
 BaudManifest: enabled
 TradeSkillMaster_Destroying: disabled
 _NPCScan: enabled
-_NPCScan.Overlay: enabled
+_NPCScan.Overlay: disabled
 AchievementsReminder: disabled
 BalanceSpellSuggest: disabled
 CrossRealmAssist: enabled

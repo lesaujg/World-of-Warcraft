@@ -1,8 +1,22 @@
 
 TradeSkillMaster_ShoppingDB = {
-	["g@ @sniperCustomPrice"] = "0c",
-	["g@ @maxDeSearchPercent"] = 1,
-	["g@ @postUndercut"] = "1c",
+	["_currentProfile"] = {
+		["Sanjuri - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
+		["Guldahka - Turalyon"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Orig - Sisters of Elune"] = "Default",
+		["Mandelbrot - Sisters of Elune"] = "Default",
+		["Leanara - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+		["Belrath - Sisters of Elune"] = "Default",
+		["Torinar - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
+	},
+	["_version"] = 3,
+	["g@ @sniperVendorPrice"] = true,
 	["g@ @postBidPercent"] = 0.95,
 	["_scopeKeys"] = {
 		["char"] = {
@@ -20,402 +34,405 @@ TradeSkillMaster_ShoppingDB = {
 			"Sanjuri - Sisters of Elune", -- [12]
 			"Torinar - Sisters of Elune", -- [13]
 		},
-		["realm"] = {
-			"Sisters of Elune", -- [1]
-			"Turalyon", -- [2]
+		["factionrealm"] = {
+			"Alliance - Sisters of Elune", -- [1]
+			"Horde - Turalyon", -- [2]
 		},
 		["profile"] = {
 			"Default", -- [1]
 		},
-		["factionrealm"] = {
-			"Alliance - Sisters of Elune", -- [1]
-			"Horde - Turalyon", -- [2]
+		["realm"] = {
+			"Sisters of Elune", -- [1]
+			"Turalyon", -- [2]
 		},
 	},
 	["g@ @helpPlatesShown"] = {
 		["auction"] = true,
 	},
-	["g@ @sniperVendorPrice"] = true,
+	["g@ @postUndercut"] = "1c",
+	["g@ @minDeSearchLvl"] = 1,
+	["g@ @maxDeSearchLvl"] = 735,
 	["_hash"] = 1861581,
+	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
+		{
+			["lastSearch"] = 1477452750,
+			["name"] = "Potion of Deadly Grace",
+			["filter"] = "Potion of Deadly Grace",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [1]
+		{
+			["lastSearch"] = 1477452744,
+			["name"] = "Nightborne Delicacy Platter",
+			["filter"] = "Nightborne Delicacy Platter",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [2]
+		{
+			["lastSearch"] = 1477452733,
+			["name"] = "Flask of the Seventh Demon",
+			["filter"] = "Flask of the Seventh Demon",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [3]
+		{
+			["lastSearch"] = 1477452700,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [4]
+		{
+			["searchMode"] = "crafting",
+			["lastSearch"] = 1477451629,
+			["name"] = "Wild Jade/ignorede",
+			["filter"] = "Wild Jade/ignorede",
+		}, -- [5]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1477370678,
 			["name"] = "inTREPID",
 			["filter"] = "inTREPID",
-		}, -- [1]
+		}, -- [6]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1477363666,
 			["name"] = "leylight shard",
 			["filter"] = "leylight shard",
-		}, -- [2]
+		}, -- [7]
 		{
 			["lastSearch"] = 1477279299,
 			["name"] = "Chaos Crystal/exact",
 			["filter"] = "Chaos Crystal/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [3]
+		}, -- [8]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1477276620,
 			["name"] = "dEMAR",
 			["filter"] = "dEMAR",
-		}, -- [4]
-		{
-			["lastSearch"] = 1477195159,
-			["name"] = "Flask of the Seventh Demon",
-			["filter"] = "Flask of the Seventh Demon",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [5]
-		{
-			["lastSearch"] = 1477195120,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [6]
+		}, -- [9]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1477194926,
 			["name"] = "daggermaw",
 			["filter"] = "daggermaw",
-		}, -- [7]
+		}, -- [10]
 		{
 			["lastSearch"] = 1477108883,
 			["name"] = "Obliterum/exact",
 			["filter"] = "Obliterum/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [8]
+		}, -- [11]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1477013717,
 			["name"] = "imperial amethyst",
 			["filter"] = "imperial amethyst",
-		}, -- [9]
+		}, -- [12]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1476931312,
 			["name"] = "Large Brilliant Shard/x4",
 			["filter"] = "Large Brilliant Shard/x4",
-		}, -- [10]
+		}, -- [13]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1476924884,
 			["name"] = "felhide",
 			["filter"] = "felhide",
-		}, -- [11]
+		}, -- [14]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1476924839,
 			["name"] = "stormscale",
 			["filter"] = "stormscale",
-		}, -- [12]
+		}, -- [15]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1476924781,
 			["name"] = "stonehide",
 			["filter"] = "stonehide",
-		}, -- [13]
-		{
-			["lastSearch"] = 1476919666,
-			["name"] = "Potion of Deadly Grace",
-			["filter"] = "Potion of Deadly Grace",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [14]
+		}, -- [16]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1476759045,
 			["name"] = "Heavenly Shard/ignorede",
 			["filter"] = "Heavenly Shard/ignorede",
-		}, -- [15]
+		}, -- [17]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1476744712,
 			["name"] = "Darkmoon Daggermaw/exact",
 			["filter"] = "Darkmoon Daggermaw/exact",
-		}, -- [16]
+		}, -- [18]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1476588189,
 			["name"] = "Arkhana/ignorede",
 			["filter"] = "Arkhana/ignorede",
-		}, -- [17]
+		}, -- [19]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1476537221,
 			["name"] = "luminous",
 			["filter"] = "luminous",
-		}, -- [18]
+		}, -- [20]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1476367217,
 			["name"] = "Arkhana",
 			["filter"] = "Arkhana",
-		}, -- [19]
+		}, -- [21]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1476229311,
 			["name"] = "Leylight Shard/x5",
 			["filter"] = "Leylight Shard/x5",
-		}, -- [20]
+		}, -- [22]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1475635379,
 			["name"] = "Chaos Crystal/x18",
 			["filter"] = "Chaos Crystal/x18",
-		}, -- [21]
+		}, -- [23]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1475623628,
 			["name"] = "Foxflower/exact",
 			["filter"] = "Foxflower/exact",
-		}, -- [22]
+		}, -- [24]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1475623621,
 			["name"] = "Fjarnskaggl/exact",
 			["filter"] = "Fjarnskaggl/exact",
-		}, -- [23]
+		}, -- [25]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1475623533,
 			["name"] = "Starlight Rose/exact",
 			["filter"] = "Starlight Rose/exact",
-		}, -- [24]
+		}, -- [26]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1475623295,
 			["name"] = "leylight shard",
 			["filter"] = "leylight shard",
-		}, -- [25]
+		}, -- [27]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1475548047,
 			["name"] = "felwort",
 			["filter"] = "felwort",
-		}, -- [26]
+		}, -- [28]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1475547536,
 			["name"] = "felslate",
 			["filter"] = "felslate",
-		}, -- [27]
+		}, -- [29]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1475546633,
 			["name"] = "Leylight Shard/x13",
 			["filter"] = "Leylight Shard/x13",
-		}, -- [28]
+		}, -- [30]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1475537937,
 			["name"] = "Leylight Shard/x64",
 			["filter"] = "Leylight Shard/x64",
-		}, -- [29]
+		}, -- [31]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1475419463,
 			["name"] = "Leylight Shard/x20",
 			["filter"] = "Leylight Shard/x20",
-		}, -- [30]
+		}, -- [32]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1475382570,
 			["name"] = "Large Prismatic Shard/x5/ignorede",
 			["filter"] = "Large Prismatic Shard/x5/ignorede",
-		}, -- [31]
+		}, -- [33]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1475367461,
 			["name"] = "Eternal Water/ignorede",
 			["filter"] = "Eternal Water/ignorede",
-		}, -- [32]
+		}, -- [34]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1475367426,
 			["name"] = "Sha Crystal/ignorede",
 			["filter"] = "Sha Crystal/ignorede",
-		}, -- [33]
+		}, -- [35]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1475367377,
 			["name"] = "Primal Mana/ignorede",
 			["filter"] = "Primal Mana/ignorede",
-		}, -- [34]
+		}, -- [36]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1475121745,
 			["name"] = "eternal air",
 			["filter"] = "eternal air",
-		}, -- [35]
+		}, -- [37]
 		{
 			["lastSearch"] = 1474424136,
 			["name"] = "Leylight Shard/exact",
 			["filter"] = "Leylight Shard/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [36]
+		}, -- [38]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1474424104,
 			["name"] = "Leylight Shard/exact/50",
 			["filter"] = "Leylight Shard/exact/50",
-		}, -- [37]
+		}, -- [39]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1474313515,
 			["name"] = "Arkhana/exact",
 			["filter"] = "Arkhana/exact",
-		}, -- [38]
-		{
-			["lastSearch"] = 1474313333,
-			["name"] = "Nightborne Delicacy Platter",
-			["filter"] = "Nightborne Delicacy Platter",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [39]
+		}, -- [40]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1473904132,
 			["name"] = "oblit",
 			["filter"] = "oblit",
-		}, -- [40]
+		}, -- [41]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1473644260,
 			["name"] = "temporal",
 			["filter"] = "temporal",
-		}, -- [41]
+		}, -- [42]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1473565899,
 			["name"] = "universal",
 			["filter"] = "universal",
-		}, -- [42]
+		}, -- [43]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1473565882,
 			["name"] = "arcane c",
 			["filter"] = "arcane c",
-		}, -- [43]
+		}, -- [44]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1473549767,
 			["name"] = "silver m",
 			["filter"] = "silver m",
-		}, -- [44]
+		}, -- [45]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1473549736,
 			["name"] = "silver",
 			["filter"] = "silver",
-		}, -- [45]
+		}, -- [46]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1473219557,
 			["name"] = "true iron ore",
 			["filter"] = "true iron ore",
-		}, -- [46]
+		}, -- [47]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1473219469,
 			["name"] = "Sumptuous Fur/exact",
 			["filter"] = "Sumptuous Fur/exact",
-		}, -- [47]
+		}, -- [48]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1472874757,
 			["name"] = "vellum",
 			["filter"] = "vellum",
-		}, -- [48]
+		}, -- [49]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1472776571,
 			["name"] = "tube",
 			["filter"] = "tube",
-		}, -- [49]
+		}, -- [50]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1472774379,
 			["name"] = "blackrock ore",
 			["filter"] = "blackrock ore",
-		}, -- [50]
+		}, -- [51]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1472774351,
 			["name"] = "loot",
 			["filter"] = "loot",
-		}, -- [51]
+		}, -- [52]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1471534982,
 			["name"] = "hexweave bag",
 			["filter"] = "hexweave bag",
-		}, -- [52]
+		}, -- [53]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1471530961,
 			["name"] = "knowledge",
 			["filter"] = "knowledge",
-		}, -- [53]
+		}, -- [54]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1471320424,
 			["name"] = "pocket",
 			["filter"] = "pocket",
-		}, -- [54]
+		}, -- [55]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1470709657,
 			["name"] = "primordial sa",
 			["filter"] = "primordial sa",
-		}, -- [55]
+		}, -- [56]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1470709615,
 			["name"] = "saronite",
 			["filter"] = "saronite",
-		}, -- [56]
+		}, -- [57]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1469799552,
 			["name"] = "savage blood",
 			["filter"] = "savage blood",
-		}, -- [57]
+		}, -- [58]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1469799327,
 			["name"] = "essence",
 			["filter"] = "essence",
-		}, -- [58]
+		}, -- [59]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1469678662,
 			["name"] = "Void Crystal/exact",
 			["filter"] = "Void Crystal/exact",
-		}, -- [59]
+		}, -- [60]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1469678535,
 			["name"] = "dream shard",
 			["filter"] = "dream shard",
-		}, -- [60]
+		}, -- [61]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1469592873,
 			["name"] = "Vermilion Onyx/ignorede",
 			["filter"] = "Vermilion Onyx/ignorede",
-		}, -- [61]
-		{
-			["searchMode"] = "crafting",
-			["lastSearch"] = 1469592824,
-			["name"] = "Wild Jade/ignorede",
-			["filter"] = "Wild Jade/ignorede",
 		}, -- [62]
 		{
 			["searchMode"] = "normal",
@@ -689,24 +706,7 @@ TradeSkillMaster_ShoppingDB = {
 		}, -- [107]
 	},
 	["g@ @sniperSound"] = "TSM_NO_SOUND",
-	["g@ @marketValueSource"] = "dbmarket",
-	["g@ @maxDeSearchLvl"] = 735,
-	["g@ @minDeSearchLvl"] = 1,
 	["g@ @normalPostPrice"] = "150% dbmarket",
-	["_version"] = 3,
-	["_currentProfile"] = {
-		["Sanjuri - Sisters of Elune"] = "Default",
-		["Galinar - Sisters of Elune"] = "Default",
-		["Guldahka - Turalyon"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Orig - Sisters of Elune"] = "Default",
-		["Mandelbrot - Sisters of Elune"] = "Default",
-		["Leanara - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
-		["Belrath - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
-		["Torinar - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-	},
+	["g@ @maxDeSearchPercent"] = 1,
+	["g@ @sniperCustomPrice"] = "0c",
 }
