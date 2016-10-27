@@ -1,0 +1,17 @@
+tag 7.1.1
+17f464e9271e4a8f4803a2aa09fef4e0eacc5bf7
+Mike "Xodiv" Battersby <mib@post.com>
+2016-10-27 12:26:02 +1100
+
+Tagging 7.1.1 for WoW 7.1 Return to Karazhan
+
+
+--------------------
+
+Mike "Xodiv" Battersby:
+	- Fix "cancel" on UI.
+	- Add: /lmt dumplocation
+	- Fix OnUpdate -> OnChanged error in macro frame.
+	- Remove the macro suggestion buttons, I could never keep them updated anyway.
+	- Fix bug with item summoned mounts in maint release.
+	- First cut of UI options save immediately with cancel reverts.

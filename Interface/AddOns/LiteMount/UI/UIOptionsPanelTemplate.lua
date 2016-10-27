@@ -43,7 +43,10 @@ end
 function LiteMountOptionsPanel_Refresh(self)
     LM_Debug("Panel_Refresh " .. self:GetName())
     for _,control in ipairs(self.controls or {}) do
-        control:SetControl(control:GetOption())
+        if control.oldValue == nil then
+            control.oldValue = control:GetOption()
+        end
+        control:SetControl(control.oldValue)
     end
 end
 
@@ -58,13 +61,19 @@ end
 
 function LiteMountOptionsPanel_Okay(self)
     LM_Debug("Panel_Okay " .. self:GetName())
-    for i,control in ipairs(self.controls or {}) do
-        control:SetOption(control:GetControl())
+    for _,control in ipairs(self.controls or {}) do
+        control.oldValue = nil
     end
 end
 
 function LiteMountOptionsPanel_Cancel(self)
     LM_Debug("Panel_Cancel " .. self:GetName())
+    for _,control in ipairs(self.controls or {}) do
+        if control.oldValue ~= nil then
+            control:SetOption(control.oldValue)
+            control.oldValue = nil
+        end
+    end
 end
 
 function LiteMountOptionsPanel_RegisterControl(control, parent)
@@ -77,6 +86,11 @@ function LiteMountOptionsPanel_OnShow(self)
     LM_Debug("Panel_OnShow " .. self:GetName())
     LiteMountOptions.CurrentOptionsPanel = self
     LiteMountOptionsPanel_Refresh(self)
+end
+
+function LiteMountOptionsPanel_OnHide(self)
+    LM_Debug("Panel_OnHide " .. self:GetName())
+    LiteMountOptionsPanel_Okay(self)
 end
 
 function LiteMountOptionsPanel_OnLoad(self)
@@ -102,6 +116,10 @@ function LiteMountOptionsPanel_OnLoad(self)
     LiteMountOptionsPanel_AutoLocalize(self)
 
     InterfaceOptions_AddCategory(self)
+end
+
+function LiteMountOptionsControl_OnChanged(self)
+    self:SetOption(self:GetControl())
 end
 
 function LiteMountOptionsControl_GetControl(self)

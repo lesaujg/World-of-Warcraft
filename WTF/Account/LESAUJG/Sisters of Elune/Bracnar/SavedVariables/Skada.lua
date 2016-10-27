@@ -2869,6 +2869,17 @@ SkadaPerCharDB = {
 							["id"] = 83381,
 							["hitamount"] = 148951,
 						},
+						["Volley"] = {
+							["criticalamount"] = 33982,
+							["max"] = 33982,
+							["min"] = 33982,
+							["criticalmax"] = 33982,
+							["critical"] = 1,
+							["totalhits"] = 1,
+							["criticalmin"] = 33982,
+							["id"] = 194392,
+							["damage"] = 33982,
+						},
 						["Addie Fizzlebog: Arcane Shot"] = {
 							["hitmin"] = 46479,
 							["max"] = 46479,
@@ -2879,17 +2890,6 @@ SkadaPerCharDB = {
 							["damage"] = 46479,
 							["id"] = 219674,
 							["hitamount"] = 46479,
-						},
-						["Auto Shot"] = {
-							["hitmin"] = 20606,
-							["max"] = 20606,
-							["min"] = 20606,
-							["hitmax"] = 20606,
-							["hit"] = 1,
-							["totalhits"] = 1,
-							["damage"] = 20606,
-							["id"] = 75,
-							["hitamount"] = 20606,
 						},
 						["Multi-Shot"] = {
 							["hitmin"] = 14918,
@@ -2913,16 +2913,16 @@ SkadaPerCharDB = {
 							["id"] = 6603,
 							["hitamount"] = 1441,
 						},
-						["Volley"] = {
-							["criticalamount"] = 33982,
-							["max"] = 33982,
-							["min"] = 33982,
-							["criticalmax"] = 33982,
-							["critical"] = 1,
+						["Auto Shot"] = {
+							["hitmin"] = 20606,
+							["max"] = 20606,
+							["min"] = 20606,
+							["hitmax"] = 20606,
+							["hit"] = 1,
 							["totalhits"] = 1,
-							["criticalmin"] = 33982,
-							["id"] = 194392,
-							["damage"] = 33982,
+							["damage"] = 20606,
+							["id"] = 75,
+							["hitamount"] = 20606,
 						},
 					},
 					["first"] = 1477450744,
@@ -4300,9 +4300,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1477450957.413,
 						["amount"] = -109914,
+						["srcname"] = "Risen Hound",
 						["hp"] = 1858560,
 						["spellid"] = 88163,
-						["srcname"] = "Risen Hound",
 					}, -- [5]
 					{
 						["ts"] = 1477450513.243,
@@ -4315,37 +4315,37 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1477450530.877,
 						["amount"] = -127100,
+						["srcname"] = "Thondrax",
 						["hp"] = 674848,
 						["spellid"] = 214184,
-						["srcname"] = "Thondrax",
 					}, -- [7]
 					{
 						["ts"] = 1477450531.707,
 						["amount"] = -61864,
+						["srcname"] = "Shadowflame Imp",
 						["hp"] = 612984,
 						["spellid"] = 214627,
-						["srcname"] = "Shadowflame Imp",
 					}, -- [8]
 					{
 						["ts"] = 1477450531.707,
 						["amount"] = -57942,
+						["srcname"] = "Shadowflame Imp",
 						["hp"] = 555042,
 						["spellid"] = 214627,
-						["srcname"] = "Shadowflame Imp",
 					}, -- [9]
 					{
 						["ts"] = 1477450535.49,
 						["amount"] = -57337,
+						["srcname"] = "Shadowflame Imp",
 						["hp"] = 497705,
 						["spellid"] = 214627,
-						["srcname"] = "Shadowflame Imp",
 					}, -- [10]
 					{
 						["ts"] = 1477450535.49,
 						["amount"] = -63072,
+						["srcname"] = "Shadowflame Imp",
 						["hp"] = 434633,
 						["spellid"] = 214627,
-						["srcname"] = "Shadowflame Imp",
 					}, -- [11]
 					{
 						["spellname"] = "Falling",
@@ -4356,16 +4356,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1477450613.181,
 						["amount"] = -43349,
+						["srcname"] = "Bay Thresher",
 						["hp"] = 421320,
 						["spellid"] = 88163,
-						["srcname"] = "Bay Thresher",
 					}, -- [13]
 					{
 						["ts"] = 1477450615.245,
 						["amount"] = -38641,
+						["srcname"] = "Bay Thresher",
 						["hp"] = 377971,
 						["spellid"] = 88163,
-						["srcname"] = "Bay Thresher",
 					}, -- [14]
 					{
 						["absorb"] = 0,
@@ -4919,44 +4919,44 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447741.44801,
 								["amount"] = -721234,
+								["srcname"] = "Xavius",
 								["hp"] = 721791,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [1]
 							{
 								["ts"] = 1477447741.79802,
 								["amount"] = -150389,
+								["srcname"] = "Xavius",
 								["hp"] = 521069,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [2]
 							{
 								["ts"] = 1477447742.02403,
 								["amount"] = -150389,
+								["srcname"] = "Xavius",
 								["hp"] = 370680,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [3]
 							{
 								["ts"] = 1477447742.62404,
 								["amount"] = -150389,
+								["srcname"] = "Xavius",
 								["hp"] = 220291,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [4]
 							{
 								["ts"] = 1477447742.77505,
 								["amount"] = -150389,
+								["srcname"] = "Xavius",
 								["hp"] = 69902,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [5]
 							{
 								["ts"] = 1477447742.95606,
 								["amount"] = -911944,
+								["srcname"] = "Xavius",
 								["hp"] = 69902,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [6]
 							{
 								["spellname"] = "Bracnar dies",
@@ -4975,16 +4975,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447704.02609,
 								["amount"] = -150389,
+								["srcname"] = "Xavius",
 								["hp"] = 1276006,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [9]
 							{
 								["ts"] = 1477447704.9411,
 								["amount"] = -150389,
+								["srcname"] = "Xavius",
 								["hp"] = 1125617,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [10]
 							{
 								["ts"] = 1477447707.12511,
@@ -4997,9 +4997,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447715.33912,
 								["amount"] = -439573,
+								["srcname"] = "Xavius",
 								["hp"] = 691273,
 								["spellid"] = 206369,
-								["srcname"] = "Xavius",
 							}, -- [12]
 							{
 								["spellid"] = 208385,
@@ -5018,9 +5018,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447740.84315,
 								["amount"] = -150389,
+								["srcname"] = "Xavius",
 								["hp"] = 721791,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [15]
 							["pos"] = 8,
 						},
@@ -5040,16 +5040,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446435.85302,
 								["amount"] = -246142,
+								["srcname"] = "Cenarius",
 								["hp"] = 381330,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [2]
 							{
 								["ts"] = 1477446437.86403,
 								["amount"] = -243962,
+								["srcname"] = "Cenarius",
 								["hp"] = 137368,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -5112,9 +5112,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446433.83312,
 								["amount"] = -244323,
+								["srcname"] = "Cenarius",
 								["hp"] = 577536,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -5170,9 +5170,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477445617.03404,
 								["amount"] = -5115,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 729791,
 								["spellid"] = 210228,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -5191,9 +5191,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477445618.04807,
 								["amount"] = -4825,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 348431,
 								["spellid"] = 210228,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [7]
 							{
 								["absorb"] = 0,
@@ -5228,9 +5228,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477445615.03312,
 								["amount"] = -5130,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 1099622,
 								["spellid"] = 210228,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [12]
 							{
 								["spellid"] = 233434,
@@ -5247,9 +5247,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477445616.08715,
 								["amount"] = -4846,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 666542,
 								["spellid"] = 210228,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [15]
 							["pos"] = 12,
 						},
@@ -5261,9 +5261,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442714.77501,
 								["amount"] = -338384,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 1,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [1]
 							{
 								["spellname"] = "Bracnar dies",
@@ -5274,9 +5274,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442708.76603,
 								["amount"] = -291711,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 1376650,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -5297,9 +5297,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442709.75206,
 								["amount"] = -303379,
+								["hp"] = 1217138,
 								["srcname"] = "Defiled Keeper",
 								["spellid"] = 225081,
-								["hp"] = 1217138,
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -5312,9 +5312,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442710.72008,
 								["amount"] = -315048,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 951381,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -5327,9 +5327,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442711.7671,
 								["amount"] = -326716,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 651346,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [10]
 							{
 								["ts"] = 1477442712.37711,
@@ -5342,16 +5342,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442712.71712,
 								["amount"] = -338384,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 369676,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [12]
 							{
 								["ts"] = 1477442713.71113,
 								["amount"] = -338384,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 31292,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [13]
 							{
 								["absorb"] = 0,
@@ -5402,12 +5402,12 @@ SkadaPerCharDB = {
 						["uptime"] = 0,
 						["auratype"] = "BUFF",
 					},
-					["Temporal Displacement"] = {
-						["name"] = "Temporal Displacement",
+					["Beast: Dire Beast"] = {
+						["name"] = "Beast: Dire Beast",
 						["active"] = 0,
-						["id"] = 80354,
-						["uptime"] = 609,
-						["auratype"] = "DEBUFF",
+						["id"] = 120694,
+						["uptime"] = 1152,
+						["auratype"] = "BUFF",
 					},
 					["McHealy: Spirit Mend"] = {
 						["name"] = "McHealy: Spirit Mend",
@@ -5444,12 +5444,12 @@ SkadaPerCharDB = {
 						["uptime"] = 11,
 						["auratype"] = "BUFF",
 					},
-					["Bullseye"] = {
-						["name"] = "Bullseye",
+					["Temporal Displacement"] = {
+						["name"] = "Temporal Displacement",
 						["active"] = 0,
-						["id"] = 204090,
-						["uptime"] = 0,
-						["auratype"] = "BUFF",
+						["id"] = 80354,
+						["uptime"] = 609,
+						["auratype"] = "DEBUFF",
 					},
 					["McSpidey: Solid Shell"] = {
 						["name"] = "McSpidey: Solid Shell",
@@ -5458,12 +5458,12 @@ SkadaPerCharDB = {
 						["uptime"] = 0,
 						["auratype"] = "BUFF",
 					},
-					["Infested Ground"] = {
-						["name"] = "Infested Ground",
+					["Aspect of the Turtle"] = {
+						["name"] = "Aspect of the Turtle",
 						["active"] = 0,
-						["id"] = 203045,
-						["uptime"] = 0,
-						["auratype"] = "DEBUFF",
+						["id"] = 186265,
+						["uptime"] = 8,
+						["auratype"] = "BUFF",
 					},
 					["Hunter's Mark"] = {
 						["uptime"] = 552,
@@ -5479,12 +5479,12 @@ SkadaPerCharDB = {
 						["uptime"] = 110,
 						["auratype"] = "BUFF",
 					},
-					["Beast: Dire Beast"] = {
-						["name"] = "Beast: Dire Beast",
+					["Trueshot"] = {
+						["uptime"] = 238,
 						["active"] = 0,
-						["id"] = 120694,
-						["uptime"] = 1152,
 						["auratype"] = "BUFF",
+						["id"] = 193526,
+						["name"] = "Trueshot",
 					},
 					["Aspect of the Wild"] = {
 						["name"] = "Aspect of the Wild",
@@ -5507,12 +5507,12 @@ SkadaPerCharDB = {
 						["uptime"] = 401,
 						["auratype"] = "DEBUFF",
 					},
-					["Trueshot"] = {
-						["uptime"] = 238,
+					["Goblin Glider"] = {
+						["name"] = "Goblin Glider",
 						["active"] = 0,
+						["id"] = 126389,
 						["auratype"] = "BUFF",
-						["id"] = 193526,
-						["name"] = "Trueshot",
+						["uptime"] = 3,
 					},
 					["Beast Cleave"] = {
 						["name"] = "Beast Cleave",
@@ -5521,10 +5521,10 @@ SkadaPerCharDB = {
 						["uptime"] = 31,
 						["auratype"] = "BUFF",
 					},
-					["Volley"] = {
-						["name"] = "Volley",
+					["Bullseye"] = {
+						["name"] = "Bullseye",
 						["active"] = 0,
-						["id"] = 194386,
+						["id"] = 204090,
 						["uptime"] = 0,
 						["auratype"] = "BUFF",
 					},
@@ -5563,12 +5563,12 @@ SkadaPerCharDB = {
 						["uptime"] = 322,
 						["auratype"] = "BUFF",
 					},
-					["Goblin Glider"] = {
-						["name"] = "Goblin Glider",
+					["Volley"] = {
+						["name"] = "Volley",
 						["active"] = 0,
-						["id"] = 126389,
+						["id"] = 194386,
+						["uptime"] = 0,
 						["auratype"] = "BUFF",
-						["uptime"] = 3,
 					},
 					["Vulnerable"] = {
 						["uptime"] = 2471,
@@ -5584,12 +5584,12 @@ SkadaPerCharDB = {
 						["id"] = 191342,
 						["name"] = "Rapid Killing",
 					},
-					["Aspect of the Turtle"] = {
-						["name"] = "Aspect of the Turtle",
+					["Infested Ground"] = {
+						["name"] = "Infested Ground",
 						["active"] = 0,
-						["id"] = 186265,
-						["uptime"] = 8,
-						["auratype"] = "BUFF",
+						["id"] = 203045,
+						["uptime"] = 0,
+						["auratype"] = "DEBUFF",
 					},
 					["Posthaste"] = {
 						["uptime"] = 35,
@@ -7219,12 +7219,12 @@ SkadaPerCharDB = {
 						["uptime"] = 877,
 						["auratype"] = "DEBUFF",
 					},
-					["Stolen Power"] = {
-						["uptime"] = 171,
+					["Soul Leech"] = {
+						["name"] = "Soul Leech",
 						["active"] = 0,
+						["id"] = 108366,
+						["uptime"] = 21,
 						["auratype"] = "BUFF",
-						["id"] = 211583,
-						["name"] = "Stolen Power",
 					},
 					["Doomguard: Ritual Enslavement"] = {
 						["name"] = "Doomguard: Ritual Enslavement",
@@ -7247,12 +7247,12 @@ SkadaPerCharDB = {
 						["uptime"] = 203,
 						["auratype"] = "BUFF",
 					},
-					["Siphon Life"] = {
-						["name"] = "Siphon Life",
+					["Stolen Power"] = {
+						["uptime"] = 171,
 						["active"] = 0,
-						["id"] = 63106,
-						["uptime"] = 0,
-						["auratype"] = "DEBUFF",
+						["auratype"] = "BUFF",
+						["id"] = 211583,
+						["name"] = "Stolen Power",
 					},
 					["Demonic Gateway"] = {
 						["name"] = "Demonic Gateway",
@@ -7324,12 +7324,12 @@ SkadaPerCharDB = {
 						["uptime"] = 24,
 						["auratype"] = "BUFF",
 					},
-					["Soul Leech"] = {
-						["name"] = "Soul Leech",
+					["Siphon Life"] = {
+						["name"] = "Siphon Life",
 						["active"] = 0,
-						["id"] = 108366,
-						["uptime"] = 21,
-						["auratype"] = "BUFF",
+						["id"] = 63106,
+						["uptime"] = 0,
+						["auratype"] = "DEBUFF",
 					},
 					["Skelkilig: Soul Link"] = {
 						["name"] = "Skelkilig: Soul Link",
@@ -7359,7 +7359,24 @@ SkadaPerCharDB = {
 				["interrupts"] = 6,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["shielding"] = 59618592,
+				["power"] = {
+					[7] = {
+						["spells"] = {
+							[17941] = 204,
+							[194379] = 33,
+							[31117] = 44,
+							[196300] = 508,
+							[193318] = 142,
+						},
+						["amount"] = 931,
+					},
+					[0] = {
+						["spells"] = {
+							[1454] = 36300000,
+						},
+						["amount"] = 36300000,
+					},
+				},
 				["damage"] = 889158856,
 				["damagespells"] = {
 					["Corruption"] = {
@@ -7583,21 +7600,6 @@ SkadaPerCharDB = {
 						["critical"] = 18,
 						["hitamount"] = 8559298,
 					},
-					["Compounding Horror"] = {
-						["hitmin"] = 10935,
-						["criticalamount"] = 451768,
-						["max"] = 113839,
-						["damage"] = 4093548,
-						["id"] = 231489,
-						["min"] = 10935,
-						["criticalmax"] = 113839,
-						["hitmax"] = 63840,
-						["hit"] = 113,
-						["totalhits"] = 121,
-						["criticalmin"] = 22768,
-						["critical"] = 8,
-						["hitamount"] = 3641780,
-					},
 					["Skelkilig: Legion Strike"] = {
 						["hitmin"] = 22414,
 						["criticalamount"] = 8951214,
@@ -7613,6 +7615,28 @@ SkadaPerCharDB = {
 						["critical"] = 127,
 						["PARRY"] = 1,
 						["hitamount"] = 28987268,
+					},
+					["Felguard: Axe Toss"] = {
+						["totalhits"] = 12,
+						["id"] = 89766,
+						["IMMUNE"] = 12,
+						["max"] = 0,
+						["damage"] = 0,
+					},
+					["Mark of the Hidden Satyr"] = {
+						["hitmin"] = 76622,
+						["criticalamount"] = 1192795,
+						["max"] = 175379,
+						["damage"] = 6321245,
+						["id"] = 191259,
+						["min"] = 76622,
+						["criticalmax"] = 175379,
+						["hitmax"] = 88839,
+						["hit"] = 62,
+						["totalhits"] = 69,
+						["criticalmin"] = 156214,
+						["critical"] = 7,
+						["hitamount"] = 5128450,
 					},
 					["Dreadstalker: Attack"] = {
 						["hitmin"] = 10307,
@@ -7630,35 +7654,21 @@ SkadaPerCharDB = {
 						["PARRY"] = 2,
 						["hitamount"] = 20402871,
 					},
-					["Thal'kiel's Consumption"] = {
-						["hitmin"] = 382226,
-						["criticalamount"] = 1429750,
-						["max"] = 1429750,
-						["damage"] = 15270196,
-						["id"] = 211715,
-						["min"] = 382226,
-						["criticalmax"] = 1429750,
-						["hitmax"] = 736058,
-						["hit"] = 24,
-						["totalhits"] = 25,
-						["criticalmin"] = 1429750,
-						["critical"] = 1,
-						["hitamount"] = 13840446,
-					},
-					["Mark of the Hidden Satyr"] = {
-						["hitmin"] = 76622,
-						["criticalamount"] = 1192795,
-						["max"] = 175379,
-						["damage"] = 6321245,
-						["id"] = 191259,
-						["min"] = 76622,
-						["criticalmax"] = 175379,
-						["hitmax"] = 88839,
-						["hit"] = 62,
-						["totalhits"] = 69,
-						["criticalmin"] = 156214,
-						["critical"] = 7,
-						["hitamount"] = 5128450,
+					["Skelkilig: Attack"] = {
+						["hitmin"] = 14008,
+						["criticalamount"] = 8016381,
+						["max"] = 51355,
+						["damage"] = 37744894,
+						["id"] = 6603,
+						["criticalmin"] = 30819,
+						["min"] = 14008,
+						["criticalmax"] = 51355,
+						["hitmax"] = 26214,
+						["hit"] = 1333,
+						["totalhits"] = 1516,
+						["critical"] = 181,
+						["PARRY"] = 2,
+						["hitamount"] = 29728513,
 					},
 					["Infernal: Attack"] = {
 						["hitmin"] = 13556,
@@ -7698,36 +7708,35 @@ SkadaPerCharDB = {
 						["id"] = 205260,
 						["hitamount"] = 30584595,
 					},
-					["Dark Blast"] = {
-						["hitmin"] = 169040,
-						["criticalamount"] = 1038438,
-						["max"] = 361758,
-						["damage"] = 14884971,
-						["id"] = 215407,
-						["min"] = 169040,
-						["criticalmax"] = 361758,
-						["hitmax"] = 198919,
-						["hit"] = 79,
-						["totalhits"] = 82,
-						["criticalmin"] = 338253,
-						["critical"] = 3,
-						["hitamount"] = 13846533,
+					["Compounding Horror"] = {
+						["hitmin"] = 10935,
+						["criticalamount"] = 451768,
+						["max"] = 113839,
+						["damage"] = 4093548,
+						["id"] = 231489,
+						["min"] = 10935,
+						["criticalmax"] = 113839,
+						["hitmax"] = 63840,
+						["hit"] = 113,
+						["totalhits"] = 121,
+						["criticalmin"] = 22768,
+						["critical"] = 8,
+						["hitamount"] = 3641780,
 					},
-					["Skelkilig: Attack"] = {
-						["hitmin"] = 14008,
-						["criticalamount"] = 8016381,
-						["max"] = 51355,
-						["damage"] = 37744894,
-						["id"] = 6603,
-						["criticalmin"] = 30819,
-						["min"] = 14008,
-						["criticalmax"] = 51355,
-						["hitmax"] = 26214,
-						["hit"] = 1333,
-						["totalhits"] = 1516,
-						["critical"] = 181,
-						["PARRY"] = 2,
-						["hitamount"] = 29728513,
+					["Thal'kiel's Consumption"] = {
+						["hitmin"] = 382226,
+						["criticalamount"] = 1429750,
+						["max"] = 1429750,
+						["damage"] = 15270196,
+						["id"] = 211715,
+						["min"] = 382226,
+						["criticalmax"] = 1429750,
+						["hitmax"] = 736058,
+						["hit"] = 24,
+						["totalhits"] = 25,
+						["criticalmin"] = 1429750,
+						["critical"] = 1,
+						["hitamount"] = 13840446,
 					},
 					["Demonbolt"] = {
 						["hitmin"] = 35425,
@@ -7861,6 +7870,21 @@ SkadaPerCharDB = {
 						["critical"] = 44,
 						["hitamount"] = 22643984,
 					},
+					["Dark Blast"] = {
+						["hitmin"] = 169040,
+						["criticalamount"] = 1038438,
+						["max"] = 361758,
+						["damage"] = 14884971,
+						["id"] = 215407,
+						["min"] = 169040,
+						["criticalmax"] = 361758,
+						["hitmax"] = 198919,
+						["hit"] = 79,
+						["totalhits"] = 82,
+						["criticalmin"] = 338253,
+						["critical"] = 3,
+						["hitamount"] = 13846533,
+					},
 					["Felguard: Pursuit"] = {
 						["hitmin"] = 28017,
 						["max"] = 28017,
@@ -7871,13 +7895,6 @@ SkadaPerCharDB = {
 						["damage"] = 28017,
 						["id"] = 30153,
 						["hitamount"] = 28017,
-					},
-					["Felguard: Axe Toss"] = {
-						["totalhits"] = 12,
-						["id"] = 89766,
-						["IMMUNE"] = 12,
-						["max"] = 0,
-						["damage"] = 0,
 					},
 					["Doomguard: Doom Bolt"] = {
 						["hitmin"] = 70442,
@@ -8187,10 +8204,10 @@ SkadaPerCharDB = {
 								["spellid"] = 41220,
 							}, -- [11]
 							{
-								["srcname"] = "Pawsydawn",
-								["ts"] = 1477444792.079,
-								["hp"] = 0,
 								["spellid"] = 20484,
+								["ts"] = 1477444792.079,
+								["srcname"] = "Pawsydawn",
+								["hp"] = 0,
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -8222,129 +8239,7 @@ SkadaPerCharDB = {
 					}, -- [2]
 				},
 				["damagetaken"] = 72851738,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 120692,
-						["srcname"] = "Zerra",
-						["hp"] = 2388228,
-						["ts"] = 1477448744.78,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 82456,
-						["spellid"] = 596,
-						["srcname"] = "Scop",
-						["hp"] = 1889463,
-						["ts"] = 1477448730.932,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 15223,
-						["spellid"] = 108447,
-						["srcname"] = "Cashonly",
-						["hp"] = 1904686,
-						["ts"] = 1477448730.964,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 5203,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1909889,
-						["ts"] = 1477448731.148,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 7634,
-						["spellid"] = 108447,
-						["srcname"] = "Cashonly",
-						["hp"] = 1917523,
-						["ts"] = 1477448731.98,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 18301,
-						["spellid"] = 108447,
-						["srcname"] = "Cashonly",
-						["hp"] = 1935824,
-						["ts"] = 1477448732.983,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 14308,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1950132,
-						["ts"] = 1477448733.957,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 4158,
-						["spellid"] = 108447,
-						["srcname"] = "Cashonly",
-						["hp"] = 1954290,
-						["ts"] = 1477448733.997,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 5204,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1959494,
-						["ts"] = 1477448734.153,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 1421,
-						["spellid"] = 108447,
-						["srcname"] = "Cashonly",
-						["hp"] = 1960915,
-						["ts"] = 1477448735.014,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 10406,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 2282829,
-						["ts"] = 1477448735.151,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 23552,
-						["spellid"] = 81269,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 2306381,
-						["ts"] = 1477448735.172,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 3528,
-						["spellid"] = 108447,
-						["srcname"] = "Cashonly",
-						["hp"] = 2309909,
-						["ts"] = 1477448736.004,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 78319,
-						["spellid"] = 6262,
-						["srcname"] = "Cashonly",
-						["hp"] = 2388228,
-						["ts"] = 1477448736.707,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 2388228,
-						["ts"] = 1477448736.961,
-					}, -- [15]
-					["pos"] = 2,
-				},
+				["shielding"] = 59618592,
 				["id"] = "Player-1169-06C159E1",
 				["maxhp"] = 2026260,
 				["healing"] = 87006392,
@@ -9162,23 +9057,128 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Cashonly",
 				["alertCount"] = 0,
-				["power"] = {
-					[7] = {
-						["spells"] = {
-							[17941] = 204,
-							[194379] = 33,
-							[31117] = 44,
-							[196300] = 508,
-							[193318] = 142,
-						},
-						["amount"] = 931,
-					},
-					[0] = {
-						["spells"] = {
-							[1454] = 36300000,
-						},
-						["amount"] = 36300000,
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 120692,
+						["srcname"] = "Zerra",
+						["hp"] = 2388228,
+						["ts"] = 1477448744.78,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 82456,
+						["spellid"] = 596,
+						["srcname"] = "Scop",
+						["hp"] = 1889463,
+						["ts"] = 1477448730.932,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 15223,
+						["spellid"] = 108447,
+						["srcname"] = "Cashonly",
+						["hp"] = 1904686,
+						["ts"] = 1477448730.964,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 5203,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1909889,
+						["ts"] = 1477448731.148,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 7634,
+						["spellid"] = 108447,
+						["srcname"] = "Cashonly",
+						["hp"] = 1917523,
+						["ts"] = 1477448731.98,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 18301,
+						["spellid"] = 108447,
+						["srcname"] = "Cashonly",
+						["hp"] = 1935824,
+						["ts"] = 1477448732.983,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 14308,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1950132,
+						["ts"] = 1477448733.957,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 4158,
+						["spellid"] = 108447,
+						["srcname"] = "Cashonly",
+						["hp"] = 1954290,
+						["ts"] = 1477448733.997,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 5204,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1959494,
+						["ts"] = 1477448734.153,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 1421,
+						["spellid"] = 108447,
+						["srcname"] = "Cashonly",
+						["hp"] = 1960915,
+						["ts"] = 1477448735.014,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 10406,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 2282829,
+						["ts"] = 1477448735.151,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 23552,
+						["spellid"] = 81269,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 2306381,
+						["ts"] = 1477448735.172,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 3528,
+						["spellid"] = 108447,
+						["srcname"] = "Cashonly",
+						["hp"] = 2309909,
+						["ts"] = 1477448736.004,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 78319,
+						["spellid"] = 6262,
+						["srcname"] = "Cashonly",
+						["hp"] = 2388228,
+						["ts"] = 1477448736.707,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 2388228,
+						["ts"] = 1477448736.961,
+					}, -- [15]
+					["pos"] = 2,
 				},
 				["healingspells"] = {
 					["Siphon Life"] = {
@@ -9486,7 +9486,14 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 63,
 				["ccbreaks"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+					[0] = {
+						["spells"] = {
+							[221837] = 335450,
+						},
+						["amount"] = 335450,
+					},
+				},
 				["damage"] = 13685696,
 				["damagespells"] = {
 					["Holy Fire"] = {
@@ -9612,37 +9619,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447740.84405,
 								["amount"] = -158639,
+								["srcname"] = "Xavius",
 								["hp"] = 619380,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [5]
 							{
 								["ts"] = 1477447741.59606,
 								["amount"] = -158639,
+								["srcname"] = "Xavius",
 								["hp"] = 460741,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [6]
 							{
 								["ts"] = 1477447741.79807,
 								["amount"] = -158640,
+								["srcname"] = "Xavius",
 								["hp"] = 302101,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [7]
 							{
 								["ts"] = 1477447742.02408,
 								["amount"] = -158640,
+								["srcname"] = "Xavius",
 								["hp"] = 143461,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [8]
 							{
 								["ts"] = 1477447742.62409,
 								["amount"] = -158640,
+								["srcname"] = "Xavius",
 								["hp"] = 0,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [9]
 							{
 								["spellname"] = "Scop dies",
@@ -9653,16 +9660,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447744.659,
 								["spellname"] = "Spirit of Redemption dies",
+								["srcname"] = "Scop",
 								["hp"] = 0,
 								["spellid"] = 41220,
-								["srcname"] = "Scop",
 							}, -- [11]
 							{
 								["ts"] = 1477447704.94112,
 								["amount"] = -158640,
+								["srcname"] = "Xavius",
 								["hp"] = 1120969,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -9767,9 +9774,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446423.86202,
 								["amount"] = -228672,
+								["srcname"] = "Cenarius",
 								["hp"] = 603350,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -9782,9 +9789,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446424.87304,
 								["amount"] = -208590,
+								["srcname"] = "Cenarius",
 								["hp"] = 420755,
 								["spellid"] = 214712,
-								["srcname"] = "Cenarius",
 							}, -- [4]
 							{
 								["spellid"] = 210337,
@@ -9815,9 +9822,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446419.84309,
 								["amount"] = -227154,
+								["srcname"] = "Cenarius",
 								["hp"] = 974218,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [9]
 							{
 								["absorb"] = 0,
@@ -9854,9 +9861,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446421.84014,
 								["amount"] = -230852,
+								["srcname"] = "Cenarius",
 								["hp"] = 769104,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -9876,9 +9883,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442715.68501,
 								["amount"] = -337182,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 159103,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [1]
 							{
 								["absorb"] = 0,
@@ -9915,9 +9922,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442716.74306,
 								["amount"] = -337182,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 279143,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [6]
 							{
 								["ts"] = 1477442716.78507,
@@ -9930,9 +9937,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442717.15308,
 								["amount"] = -44858,
+								["srcname"] = "Corrupted Gatewarden",
 								["hp"] = 409805,
 								["spellid"] = 225067,
-								["srcname"] = "Corrupted Gatewarden",
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -9945,9 +9952,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442719.1301,
 								["amount"] = -44857,
+								["srcname"] = "Corrupted Gatewarden",
 								["hp"] = 336280,
 								["spellid"] = 225067,
-								["srcname"] = "Corrupted Gatewarden",
 							}, -- [10]
 							{
 								["spellname"] = "Scop dies",
@@ -9966,9 +9973,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442714.72013,
 								["amount"] = -337183,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 408415,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [13]
 							{
 								["absorb"] = 0,
@@ -9981,9 +9988,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442715.30415,
 								["amount"] = -59810,
+								["srcname"] = "Corrupted Gatewarden",
 								["hp"] = 496285,
 								["spellid"] = 225067,
-								["srcname"] = "Corrupted Gatewarden",
 							}, -- [15]
 							["pos"] = 12,
 						},
@@ -9991,129 +9998,7 @@ SkadaPerCharDB = {
 					}, -- [4]
 				},
 				["damagetaken"] = 110829562,
-				["deathlog"] = {
-					{
-						["ts"] = 1477448747.837,
-						["amount"] = 33198,
-						["spellid"] = 139,
-						["srcname"] = "Scop",
-						["hp"] = 595007,
-						["absorb"] = 0,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 479499,
-						["spellid"] = 2061,
-						["srcname"] = "Scop",
-						["hp"] = 1074506,
-						["ts"] = 1477448749.857,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 33198,
-						["spellid"] = 139,
-						["srcname"] = "Scop",
-						["hp"] = 1431711,
-						["ts"] = 1477448750.385,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 22621,
-						["spellid"] = 139,
-						["srcname"] = "Scop",
-						["hp"] = 1479570,
-						["ts"] = 1477448752.605,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 83201,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1562771,
-						["ts"] = 1477448752.862,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 23216,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 1451480,
-						["ts"] = 1477448752.892,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 83201,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1534681,
-						["ts"] = 1477448755.858,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 5203,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1539884,
-						["ts"] = 1477448756.144,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 5204,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1590693,
-						["ts"] = 1477448760.141,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 11835,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 447801,
-						["ts"] = 1477448745.075,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 5203,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 453004,
-						["ts"] = 1477448745.219,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 28868,
-						["spellid"] = 139,
-						["srcname"] = "Scop",
-						["hp"] = 481872,
-						["ts"] = 1477448745.331,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 20003,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 501875,
-						["ts"] = 1477448745.871,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 30917,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 532792,
-						["ts"] = 1477448746.605,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 29017,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 561809,
-						["ts"] = 1477448747.757,
-					}, -- [15]
-					["pos"] = 10,
-				},
+				["shielding"] = 0,
 				["id"] = "Player-1169-06BDD347",
 				["maxhp"] = 1949100,
 				["healing"] = -1561755314,
@@ -10328,20 +10213,6 @@ SkadaPerCharDB = {
 						["min"] = 448696,
 						["absorbed"] = 0,
 					},
-					["Ground Slam"] = {
-						["crushing"] = 0,
-						["id"] = 208689,
-						["damage"] = 412731,
-						["max"] = 412731,
-						["glancing"] = 0,
-						["name"] = "Ground Slam",
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["min"] = 412731,
-						["absorbed"] = 0,
-					},
 					["Rot"] = {
 						["crushing"] = 0,
 						["id"] = 203097,
@@ -10354,6 +10225,20 @@ SkadaPerCharDB = {
 						["totalhits"] = 22,
 						["resisted"] = 0,
 						["min"] = 257450,
+						["absorbed"] = 0,
+					},
+					["Dread Impact"] = {
+						["crushing"] = 0,
+						["id"] = 223506,
+						["damage"] = 128766,
+						["max"] = 128766,
+						["glancing"] = 0,
+						["name"] = "Dread Impact",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 128766,
 						["absorbed"] = 0,
 					},
 					["Darkened Tainting"] = {
@@ -10454,6 +10339,20 @@ SkadaPerCharDB = {
 						["min"] = 362208,
 						["absorbed"] = 0,
 					},
+					["Nightmare Explosion"] = {
+						["crushing"] = 0,
+						["id"] = 209471,
+						["damage"] = 217810,
+						["max"] = 217810,
+						["glancing"] = 0,
+						["name"] = "Nightmare Explosion",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 217810,
+						["absorbed"] = 57697,
+					},
 					["Venomous Pool"] = {
 						["crushing"] = 0,
 						["id"] = 213124,
@@ -10468,32 +10367,18 @@ SkadaPerCharDB = {
 						["min"] = 130763,
 						["absorbed"] = 0,
 					},
-					["Haunting Burst"] = {
+					["Nightmare Gaze"] = {
 						["crushing"] = 0,
-						["id"] = 223650,
-						["damage"] = 510902,
-						["max"] = 77549,
+						["id"] = 210931,
+						["damage"] = 3069957,
+						["max"] = 618423,
 						["glancing"] = 0,
-						["name"] = "Haunting Burst",
+						["name"] = "Nightmare Gaze",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 10,
+						["totalhits"] = 5,
 						["resisted"] = 0,
-						["min"] = 32930,
-						["absorbed"] = 0,
-					},
-					["Tormenting Infection"] = {
-						["crushing"] = 0,
-						["id"] = 217987,
-						["damage"] = 811757,
-						["max"] = 811757,
-						["glancing"] = 0,
-						["name"] = "Tormenting Infection",
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["min"] = 811757,
+						["min"] = 609431,
 						["absorbed"] = 0,
 					},
 					["Barreling Impact"] = {
@@ -10510,19 +10395,19 @@ SkadaPerCharDB = {
 						["min"] = 422351,
 						["absorbed"] = 0,
 					},
-					["Nightmare Explosion"] = {
+					["Nightmare Bolt"] = {
 						["crushing"] = 0,
-						["id"] = 209471,
-						["damage"] = 217810,
-						["max"] = 217810,
+						["id"] = 206920,
+						["damage"] = 1403263,
+						["max"] = 215125,
 						["glancing"] = 0,
-						["name"] = "Nightmare Explosion",
+						["name"] = "Nightmare Bolt",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 1,
+						["totalhits"] = 17,
 						["resisted"] = 0,
-						["min"] = 217810,
-						["absorbed"] = 57697,
+						["min"] = 57776,
+						["absorbed"] = 0,
 					},
 					["Cursed Blood"] = {
 						["crushing"] = 0,
@@ -10594,18 +10479,18 @@ SkadaPerCharDB = {
 						["min"] = 514271,
 						["absorbed"] = 0,
 					},
-					["Momentum"] = {
+					["Tormenting Infection"] = {
 						["crushing"] = 0,
-						["id"] = 198099,
-						["damage"] = 306440,
-						["max"] = 306440,
+						["id"] = 217987,
+						["damage"] = 811757,
+						["max"] = 811757,
 						["glancing"] = 0,
-						["name"] = "Momentum",
+						["name"] = "Tormenting Infection",
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["min"] = 306440,
+						["min"] = 811757,
 						["absorbed"] = 0,
 					},
 					["Tainted Discharge"] = {
@@ -10650,18 +10535,18 @@ SkadaPerCharDB = {
 						["min"] = 309006,
 						["absorbed"] = 0,
 					},
-					["Nightmare Bolt"] = {
+					["Lurking Eruption"] = {
 						["crushing"] = 0,
-						["id"] = 206920,
-						["damage"] = 1403263,
-						["max"] = 215125,
+						["id"] = 205741,
+						["damage"] = 1320338,
+						["max"] = 446715,
 						["glancing"] = 0,
-						["name"] = "Nightmare Bolt",
+						["name"] = "Lurking Eruption",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 17,
+						["totalhits"] = 3,
 						["resisted"] = 0,
-						["min"] = 57776,
+						["min"] = 432534,
 						["absorbed"] = 0,
 					},
 					["Volatile Rot"] = {
@@ -10846,20 +10731,6 @@ SkadaPerCharDB = {
 						["min"] = 545057,
 						["absorbed"] = 0,
 					},
-					["Lurking Eruption"] = {
-						["crushing"] = 0,
-						["id"] = 205741,
-						["damage"] = 1320338,
-						["max"] = 446715,
-						["glancing"] = 0,
-						["name"] = "Lurking Eruption",
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 3,
-						["resisted"] = 0,
-						["min"] = 432534,
-						["absorbed"] = 0,
-					},
 					["Corruption: Crushing Shadows"] = {
 						["crushing"] = 0,
 						["id"] = 208860,
@@ -10872,6 +10743,20 @@ SkadaPerCharDB = {
 						["totalhits"] = 10,
 						["resisted"] = 0,
 						["min"] = 216774,
+						["absorbed"] = 0,
+					},
+					["Momentum"] = {
+						["crushing"] = 0,
+						["id"] = 198099,
+						["damage"] = 306440,
+						["max"] = 306440,
+						["glancing"] = 0,
+						["name"] = "Momentum",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 306440,
 						["absorbed"] = 0,
 					},
 					["Dripping Fangs"] = {
@@ -10888,18 +10773,18 @@ SkadaPerCharDB = {
 						["min"] = 609,
 						["absorbed"] = 9798,
 					},
-					["Nightmare Gaze"] = {
+					["Haunting Burst"] = {
 						["crushing"] = 0,
-						["id"] = 210931,
-						["damage"] = 3069957,
-						["max"] = 618423,
+						["id"] = 223650,
+						["damage"] = 510902,
+						["max"] = 77549,
 						["glancing"] = 0,
-						["name"] = "Nightmare Gaze",
+						["name"] = "Haunting Burst",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 5,
+						["totalhits"] = 10,
 						["resisted"] = 0,
-						["min"] = 609431,
+						["min"] = 32930,
 						["absorbed"] = 0,
 					},
 					["Nightmares"] = {
@@ -10916,18 +10801,18 @@ SkadaPerCharDB = {
 						["min"] = 208590,
 						["absorbed"] = 0,
 					},
-					["Dread Impact"] = {
+					["Ground Slam"] = {
 						["crushing"] = 0,
-						["id"] = 223506,
-						["damage"] = 128766,
-						["max"] = 128766,
+						["id"] = 208689,
+						["damage"] = 412731,
+						["max"] = 412731,
 						["glancing"] = 0,
-						["name"] = "Dread Impact",
+						["name"] = "Ground Slam",
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["min"] = 128766,
+						["min"] = 412731,
 						["absorbed"] = 0,
 					},
 					["Twisted Nova"] = {
@@ -11472,18 +11357,18 @@ SkadaPerCharDB = {
 						["class"] = "PALADIN",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-103636-000010093D"] = {
+					["Creature-0-3018-1520-19675-104096-0000900F9C"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Felanima",
+						["amount"] = 36844,
+						["class"] = "MAGE",
+						["shielding"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00000FFBE5"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Arcane Familiar",
+						["name"] = "Beast",
 						["amount"] = 0,
-					},
-					["Player-1169-06BEC7B2"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Grexxi",
-						["amount"] = -2143630373,
-						["class"] = "HUNTER",
-						["shielding"] = 0,
 					},
 					["Creature-0-3018-1520-19675-104096-0000100F9C"] = {
 						["role"] = "DAMAGER",
@@ -11524,12 +11409,6 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00001013EB"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
 					["Creature-0-3018-1520-19675-104096-0005900F9C"] = {
 						["role"] = "DAMAGER",
 						["name"] = "Rockan",
@@ -11544,11 +11423,18 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-17252-00001013DC"] = {
+					["Creature-0-3018-1520-19675-104096-0005901286"] = {
+						["role"] = "TANK",
+						["name"] = "Gronncho",
+						["amount"] = 0,
+						["class"] = "PALADIN",
+						["shielding"] = 0,
+					},
+					["Creature-0-3018-1520-19675-106551-00000FFF4D"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Felguard",
-						["amount"] = 0,
+						["name"] = "Hati",
+						["amount"] = 210150,
 					},
 					["Creature-0-3018-1520-19675-99904-0000100F8E"] = {
 						["shielding"] = 0,
@@ -11556,12 +11442,11 @@ SkadaPerCharDB = {
 						["name"] = "T'uure",
 						["amount"] = 0,
 					},
-					["Pet-0-3132-1220-14149-32517-050204A553"] = {
-						["role"] = "NONE",
-						["name"] = "Yuki",
-						["amount"] = 67304,
-						["class"] = "WARRIOR",
+					["Creature-0-3018-1520-19675-17252-00001013DC"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Felguard",
+						["amount"] = 0,
 					},
 					["Player-1169-06C011D7"] = {
 						["role"] = "DAMAGER",
@@ -11602,18 +11487,18 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-104096-0005901286"] = {
-						["role"] = "TANK",
-						["name"] = "Gronncho",
-						["amount"] = 0,
-						["class"] = "PALADIN",
-						["shielding"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-0000100B14"] = {
+					["Creature-0-3018-1520-19675-113347-00001013EF"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
+					},
+					["Pet-0-3132-1220-14149-32517-050204A553"] = {
+						["role"] = "NONE",
+						["name"] = "Yuki",
+						["amount"] = 67304,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
 					},
 					["Pet-0-3018-1520-19675-17252-020206FAA5"] = {
 						["role"] = "NONE",
@@ -11622,10 +11507,10 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-100820-0000100A65"] = {
+					["Vehicle-0-3018-1520-19675-98035-00001013F6"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Spirit Wolf",
+						["name"] = "Dreadstalker",
 						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-100820-0000900A65"] = {
@@ -11767,18 +11652,18 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
+					["Creature-0-3018-1520-19675-103636-00000FF967"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Arcane Familiar",
+						["amount"] = 76629,
+					},
 					["Creature-0-3018-1520-19675-104096-0000901338"] = {
 						["role"] = "DAMAGER",
 						["name"] = "Volan",
 						["amount"] = 0,
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00000FFF13"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
 					},
 					["Player-1169-06B51927"] = {
 						["role"] = "DAMAGER",
@@ -11806,11 +11691,11 @@ SkadaPerCharDB = {
 						["name"] = "Risen Skulker",
 						["amount"] = 22014,
 					},
-					["Creature-0-3018-1520-19675-103636-00000FF967"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFF13"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Arcane Familiar",
-						["amount"] = 76629,
+						["name"] = "Beast",
+						["amount"] = 0,
 					},
 					["Player-1169-06C13A05"] = {
 						["role"] = "HEALER",
@@ -11877,18 +11762,18 @@ SkadaPerCharDB = {
 						["name"] = "Shadowfiend",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-106551-00000FFF4D"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Hati",
-						["amount"] = 210150,
-					},
 					["Pet-0-3018-1520-19675-35189-0302050114"] = {
 						["role"] = "NONE",
 						["name"] = "Skoll",
 						["amount"] = 449466,
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
+					},
+					["Creature-0-3018-1520-19675-100820-0000100A65"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Spirit Wolf",
+						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-100820-00001004CE"] = {
 						["shielding"] = 0,
@@ -11915,24 +11800,11 @@ SkadaPerCharDB = {
 						["name"] = "T'uure",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00001013EF"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
 					["Player-1169-07D4DEFA"] = {
 						["role"] = "TANK",
 						["name"] = "Gronncho",
 						["amount"] = 51034455,
 						["class"] = "PALADIN",
-						["shielding"] = 0,
-					},
-					["Creature-0-3018-1520-19675-104096-0004100F9C"] = {
-						["role"] = "HEALER",
-						["name"] = "Pawsydawn",
-						["amount"] = 32684,
-						["class"] = "DRUID",
 						["shielding"] = 0,
 					},
 					["Vehicle-0-3018-1520-19675-98035-0000100A61"] = {
@@ -11941,6 +11813,13 @@ SkadaPerCharDB = {
 						["name"] = "Dreadstalker",
 						["amount"] = 23041,
 					},
+					["Creature-0-3018-1520-19675-104096-0004100F9C"] = {
+						["role"] = "HEALER",
+						["name"] = "Pawsydawn",
+						["amount"] = 32684,
+						["class"] = "DRUID",
+						["shielding"] = 0,
+					},
 					["Pet-0-3018-1520-19675-416-0401ED40E5"] = {
 						["role"] = "NONE",
 						["name"] = "Pizkin",
@@ -11948,10 +11827,16 @@ SkadaPerCharDB = {
 						["class"] = "WARLOCK",
 						["shielding"] = 0,
 					},
-					["Vehicle-0-3018-1520-19675-98035-00001013F6"] = {
+					["Creature-0-3018-1520-19675-113347-00001013EB"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Dreadstalker",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-0000100B14"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
 						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-47244-0001100F9D"] = {
@@ -11961,16 +11846,17 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["shielding"] = 0,
 					},
-					["Vehicle-0-3018-1520-19675-98035-000090075D"] = {
+					["Player-1169-06BEC7B2"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Grexxi",
+						["amount"] = -2143630373,
+						["class"] = "HUNTER",
 						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Dreadstalker",
-						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFBE5"] = {
+					["Creature-0-3018-1520-19675-103636-000010093D"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
+						["name"] = "Arcane Familiar",
 						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-106551-00001004EA"] = {
@@ -11979,12 +11865,11 @@ SkadaPerCharDB = {
 						["name"] = "Hati",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-104096-0000900F9C"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Felanima",
-						["amount"] = 36844,
-						["class"] = "MAGE",
+					["Vehicle-0-3018-1520-19675-98035-000090075D"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Dreadstalker",
+						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-104096-0001100F9C"] = {
 						["role"] = "DAMAGER",
@@ -12036,13 +11921,128 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Scop",
 				["alertCount"] = 0,
-				["power"] = {
-					[0] = {
-						["spells"] = {
-							[221837] = 335450,
-						},
-						["amount"] = 335450,
-					},
+				["deathlog"] = {
+					{
+						["ts"] = 1477448747.837,
+						["amount"] = 33198,
+						["spellid"] = 139,
+						["srcname"] = "Scop",
+						["hp"] = 595007,
+						["absorb"] = 0,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 479499,
+						["spellid"] = 2061,
+						["srcname"] = "Scop",
+						["hp"] = 1074506,
+						["ts"] = 1477448749.857,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 33198,
+						["spellid"] = 139,
+						["srcname"] = "Scop",
+						["hp"] = 1431711,
+						["ts"] = 1477448750.385,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 22621,
+						["spellid"] = 139,
+						["srcname"] = "Scop",
+						["hp"] = 1479570,
+						["ts"] = 1477448752.605,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 83201,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1562771,
+						["ts"] = 1477448752.862,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 23216,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 1451480,
+						["ts"] = 1477448752.892,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 83201,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1534681,
+						["ts"] = 1477448755.858,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 5203,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1539884,
+						["ts"] = 1477448756.144,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 5204,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1590693,
+						["ts"] = 1477448760.141,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 11835,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 447801,
+						["ts"] = 1477448745.075,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 5203,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 453004,
+						["ts"] = 1477448745.219,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 28868,
+						["spellid"] = 139,
+						["srcname"] = "Scop",
+						["hp"] = 481872,
+						["ts"] = 1477448745.331,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 20003,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 501875,
+						["ts"] = 1477448745.871,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 30917,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 532792,
+						["ts"] = 1477448746.605,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 29017,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 561809,
+						["ts"] = 1477448747.757,
+					}, -- [15]
+					["pos"] = 10,
 				},
 				["healingspells"] = {
 					["Renew"] = {
@@ -12115,6 +12115,20 @@ SkadaPerCharDB = {
 						["critical"] = 0,
 						["absorbed"] = 0,
 					},
+					["Holy Word: Sanctify"] = {
+						["shielding"] = 0,
+						["id"] = 34861,
+						["healing"] = 65821324,
+						["multistrikes"] = 0,
+						["min"] = 0,
+						["multistrike"] = 0,
+						["name"] = "Holy Word: Sanctify",
+						["hits"] = 336,
+						["overhealing"] = 36040166,
+						["max"] = 611134,
+						["critical"] = 71,
+						["absorbed"] = 0,
+					},
 					["T'uure: Blessed Light"] = {
 						["shielding"] = 0,
 						["id"] = 196813,
@@ -12127,20 +12141,6 @@ SkadaPerCharDB = {
 						["overhealing"] = 404461,
 						["max"] = 99846,
 						["critical"] = 1,
-						["absorbed"] = 0,
-					},
-					["Prayer of Mending"] = {
-						["shielding"] = 0,
-						["id"] = 33110,
-						["healing"] = 20113033,
-						["multistrikes"] = 0,
-						["min"] = 0,
-						["multistrike"] = 0,
-						["name"] = "Prayer of Mending",
-						["hits"] = 290,
-						["overhealing"] = 1970361,
-						["max"] = 151119,
-						["critical"] = 54,
 						["absorbed"] = 0,
 					},
 					["Holy Mending"] = {
@@ -12227,18 +12227,18 @@ SkadaPerCharDB = {
 						["critical"] = 14,
 						["absorbed"] = 0,
 					},
-					["Holy Word: Sanctify"] = {
+					["Prayer of Mending"] = {
 						["shielding"] = 0,
-						["id"] = 34861,
-						["healing"] = 65821324,
+						["id"] = 33110,
+						["healing"] = 20113033,
 						["multistrikes"] = 0,
 						["min"] = 0,
 						["multistrike"] = 0,
-						["name"] = "Holy Word: Sanctify",
-						["hits"] = 336,
-						["overhealing"] = 36040166,
-						["max"] = 611134,
-						["critical"] = 71,
+						["name"] = "Prayer of Mending",
+						["hits"] = 290,
+						["overhealing"] = 1970361,
+						["max"] = 151119,
+						["critical"] = 54,
 						["absorbed"] = 0,
 					},
 					["Echo of Light"] = {
@@ -12483,7 +12483,18 @@ SkadaPerCharDB = {
 				["interrupts"] = 9,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+					[11] = {
+						["spells"] = {
+							[190185] = 2040,
+							[187890] = 18535,
+							[204880] = 2060,
+							[188070] = -80,
+							[201897] = 8892,
+						},
+						["amount"] = 31447,
+					},
+				},
 				["damage"] = 612213944,
 				["damagespells"] = {
 					["Unleash Lightning"] = {
@@ -12849,30 +12860,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447701.90703,
 								["amount"] = -158827,
+								["srcname"] = "Xavius",
 								["hp"] = 1655369,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [3]
 							{
 								["ts"] = 1477447702.94904,
 								["amount"] = -158826,
+								["srcname"] = "Xavius",
 								["hp"] = 1496543,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [4]
 							{
 								["ts"] = 1477447703.90705,
 								["amount"] = -158826,
+								["srcname"] = "Xavius",
 								["hp"] = 1337717,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [5]
 							{
 								["ts"] = 1477447704.94106,
 								["amount"] = -158826,
+								["spellid"] = 209294,
 								["srcname"] = "Xavius",
 								["hp"] = 1178891,
-								["spellid"] = 209294,
 							}, -- [6]
 							{
 								["ts"] = 1477447715.10007,
@@ -12885,9 +12896,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447715.33908,
 								["amount"] = -278541,
+								["srcname"] = "Xavius",
 								["hp"] = 1017989,
 								["spellid"] = 206369,
-								["srcname"] = "Xavius",
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -12924,16 +12935,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447738.44313,
 								["amount"] = -924135,
+								["spellid"] = 88163,
 								["srcname"] = "Xavius",
 								["hp"] = 1488546,
-								["spellid"] = 88163,
 							}, -- [13]
 							{
 								["ts"] = 1477447739.93314,
 								["amount"] = -809156,
+								["spellid"] = 88163,
 								["srcname"] = "Xavius",
 								["hp"] = 564411,
-								["spellid"] = 88163,
 							}, -- [14]
 							{
 								["spellname"] = "Daerlith dies",
@@ -12947,8 +12958,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 106458971,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["id"] = "Player-1169-06C144D6",
 				["maxhp"] = 1946880,
 				["healing"] = 9713254,
@@ -13897,13 +13907,13 @@ SkadaPerCharDB = {
 						["name"] = "Spirit Wolf",
 						["amount"] = 4925,
 					},
-					["Creature-0-3018-1520-19675-100820-00000FF667"] = {
+					["Creature-0-3018-1520-19675-100820-00008FF667"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Spirit Wolf",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-100820-00000FF6F0"] = {
+					["Creature-0-3018-1520-19675-100820-00000FF667"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Spirit Wolf",
@@ -13915,7 +13925,7 @@ SkadaPerCharDB = {
 						["name"] = "Spirit Wolf",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-100820-00000FFFD3"] = {
+					["Creature-0-3018-1520-19675-100820-00000FF6F0"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Spirit Wolf",
@@ -13933,7 +13943,7 @@ SkadaPerCharDB = {
 						["name"] = "Spirit Wolf",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-100820-00008FF667"] = {
+					["Creature-0-3018-1520-19675-100820-00000FFFD3"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Spirit Wolf",
@@ -14058,17 +14068,7 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Daerlith",
 				["alertCount"] = 0,
-				["power"] = {
-					[11] = {
-						["spells"] = {
-							[190185] = 2040,
-							[187890] = 18535,
-							[204880] = 2060,
-							[188070] = -80,
-							[201897] = 8892,
-						},
-						["amount"] = 31447,
-					},
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 					["Gift of the Naaru"] = {
@@ -14355,7 +14355,8 @@ SkadaPerCharDB = {
 				["interrupts"] = 6,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["shielding"] = 94288236,
+				["power"] = {
+				},
 				["damage"] = 473627331,
 				["damagespells"] = {
 					["Stormlash"] = {
@@ -14728,10 +14729,10 @@ SkadaPerCharDB = {
 								["spellid"] = 41220,
 							}, -- [11]
 							{
-								["hp"] = 0,
-								["ts"] = 1477448568.657,
-								["spellid"] = 20484,
 								["srcname"] = "Pawsydawn",
+								["ts"] = 1477448568.657,
+								["hp"] = 0,
+								["spellid"] = 20484,
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -14951,10 +14952,10 @@ SkadaPerCharDB = {
 								["spellid"] = 41220,
 							}, -- [8]
 							{
-								["hp"] = 0,
-								["ts"] = 1477447578.843,
-								["spellid"] = 20484,
 								["srcname"] = "Pawsydawn",
+								["ts"] = 1477447578.843,
+								["hp"] = 0,
+								["spellid"] = 20484,
 							}, -- [9]
 							{
 								["absorb"] = -8436,
@@ -15134,8 +15135,7 @@ SkadaPerCharDB = {
 					}, -- [5]
 				},
 				["damagetaken"] = 427012810,
-				["deathlog"] = {
-				},
+				["shielding"] = 94288236,
 				["id"] = "Player-1169-07D4DEFA",
 				["maxhp"] = 3209645,
 				["healing"] = 151636385,
@@ -16732,24 +16732,24 @@ SkadaPerCharDB = {
 						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
-					["Player-1169-06C1070E"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Lenae",
-						["amount"] = 105587,
-						["class"] = "MAGE",
-						["shielding"] = 0,
-					},
 					["Creature-0-3018-1520-19675-113347-0000100C9E"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 2636,
 					},
-					["Player-1169-06C1D986"] = {
+					["Pet-0-3018-1520-19675-416-0301ED40E5"] = {
+						["role"] = "NONE",
+						["name"] = "Pizkin",
+						["amount"] = 0,
+						["class"] = "WARLOCK",
+						["shielding"] = 0,
+					},
+					["Player-1169-06C1070E"] = {
 						["role"] = "DAMAGER",
-						["name"] = "Tadakatsu",
-						["amount"] = 1034351,
-						["class"] = "WARRIOR",
+						["name"] = "Lenae",
+						["amount"] = 105587,
+						["class"] = "MAGE",
 						["shielding"] = 0,
 					},
 					["Pet-0-3018-1520-19675-26125-0101EDD695"] = {
@@ -16766,10 +16766,10 @@ SkadaPerCharDB = {
 						["class"] = "PALADIN",
 						["shielding"] = 94288236,
 					},
-					["Pet-0-3018-1520-19675-35189-0502050114"] = {
-						["role"] = "NONE",
-						["name"] = "Skoll",
-						["amount"] = 0,
+					["Player-1169-06C1D986"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Tadakatsu",
+						["amount"] = 1034351,
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
@@ -16785,11 +16785,11 @@ SkadaPerCharDB = {
 						["name"] = "Hati",
 						["amount"] = 11322,
 					},
-					["Pet-0-3018-1520-19675-416-0301ED40E5"] = {
+					["Pet-0-3018-1520-19675-35189-0502050114"] = {
 						["role"] = "NONE",
-						["name"] = "Pizkin",
+						["name"] = "Skoll",
 						["amount"] = 0,
-						["class"] = "WARLOCK",
+						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
 					["Pet-0-3132-1220-14149-32517-050204A553"] = {
@@ -16857,7 +16857,7 @@ SkadaPerCharDB = {
 						["name"] = "Spirit Wolf",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-000010075C"] = {
+					["Creature-0-3018-1520-19675-113347-00009007DC"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -16875,7 +16875,7 @@ SkadaPerCharDB = {
 						["name"] = "Spirit Wolf",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00001007DC"] = {
+					["Creature-0-3018-1520-19675-113347-000010075C"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -16931,10 +16931,10 @@ SkadaPerCharDB = {
 						["name"] = "Spirit Wolf",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00001012F3"] = {
+					["Creature-0-3018-1520-19675-100820-00001007E0"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
+						["name"] = "Spirit Wolf",
 						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-103636-00000FF967"] = {
@@ -16970,18 +16970,18 @@ SkadaPerCharDB = {
 						["name"] = "Risen Skulker",
 						["amount"] = 18013,
 					},
-					["Creature-0-3018-1520-19675-100820-00001007E0"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Spirit Wolf",
-						["amount"] = 0,
-					},
 					["Player-1169-06C13A05"] = {
 						["role"] = "HEALER",
 						["name"] = "Pawsydawn",
 						["amount"] = 294084,
 						["class"] = "DRUID",
 						["shielding"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00001012F3"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-100820-0000100759"] = {
 						["shielding"] = 0,
@@ -17071,7 +17071,7 @@ SkadaPerCharDB = {
 						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00009007DC"] = {
+					["Creature-0-3018-1520-19675-113347-00001007DC"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -17191,7 +17191,7 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Gronncho",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 					["Blessed Hammer"] = {
@@ -17583,7 +17583,17 @@ SkadaPerCharDB = {
 				["interrupts"] = 11,
 				["dispells"] = 2,
 				["ccbreaks"] = 0,
-				["shielding"] = 1369269,
+				["power"] = {
+					{
+						["spells"] = {
+							[163201] = -33,
+							[85288] = 3050,
+							[23881] = 6540,
+							[100] = 870,
+						},
+						["amount"] = 10427,
+					}, -- [1]
+				},
 				["damage"] = 887470160,
 				["damagespells"] = {
 					["Shockwave"] = {
@@ -17945,16 +17955,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447731.34602,
 								["amount"] = -107000,
+								["srcname"] = "Xavius",
 								["hp"] = 303101,
 								["spellid"] = 209158,
-								["srcname"] = "Xavius",
 							}, -- [2]
 							{
 								["ts"] = 1477447731.43403,
 								["amount"] = -876432,
+								["srcname"] = "Xavius",
 								["hp"] = 303101,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [3]
 							{
 								["spellname"] = "Tadakatsu dies",
@@ -17981,30 +17991,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447724.86107,
 								["amount"] = -860951,
+								["srcname"] = "Xavius",
 								["hp"] = 1059047,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [7]
 							{
 								["ts"] = 1477447726.37908,
 								["amount"] = -1369269,
+								["srcname"] = "Xavius",
 								["hp"] = 198096,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [8]
 							{
 								["ts"] = 1477447728.34509,
 								["amount"] = -107000,
+								["srcname"] = "Xavius",
 								["hp"] = 1882647,
 								["spellid"] = 209158,
-								["srcname"] = "Xavius",
 							}, -- [9]
 							{
 								["ts"] = 1477447728.3961,
 								["amount"] = -742172,
+								["srcname"] = "Xavius",
 								["hp"] = 1882647,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [10]
 							{
 								["absorb"] = 0,
@@ -18017,9 +18027,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447729.34412,
 								["amount"] = -107000,
+								["srcname"] = "Xavius",
 								["hp"] = 1135711,
 								["spellid"] = 209158,
-								["srcname"] = "Xavius",
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -18032,16 +18042,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447729.90414,
 								["amount"] = -629066,
+								["srcname"] = "Xavius",
 								["hp"] = 1137755,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [14]
 							{
 								["ts"] = 1477447730.37015,
 								["amount"] = -107000,
+								["srcname"] = "Xavius",
 								["hp"] = 401689,
 								["spellid"] = 209158,
-								["srcname"] = "Xavius",
 							}, -- [15]
 							["pos"] = 5,
 						},
@@ -18061,9 +18071,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446289.03602,
 								["amount"] = -80588,
+								["srcname"] = "Cenarius",
 								["hp"] = 946208,
 								["spellid"] = 210342,
-								["srcname"] = "Cenarius",
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -18076,30 +18086,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446289.69704,
 								["amount"] = -141013,
+								["spellid"] = 210342,
 								["srcname"] = "Cenarius",
 								["hp"] = 819568,
-								["spellid"] = 210342,
 							}, -- [4]
 							{
 								["ts"] = 1477446289.87605,
 								["amount"] = -167367,
+								["srcname"] = "Cenarius",
 								["hp"] = 652201,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [5]
 							{
 								["ts"] = 1477446290.34106,
 								["amount"] = -244856,
+								["srcname"] = "Cenarius",
 								["hp"] = 407345,
 								["spellid"] = 210342,
-								["srcname"] = "Cenarius",
 							}, -- [6]
 							{
 								["ts"] = 1477446290.34107,
 								["amount"] = -134977,
+								["srcname"] = "Cenarius",
 								["hp"] = 272368,
 								["spellid"] = 210342,
-								["srcname"] = "Cenarius",
 							}, -- [7]
 							{
 								["absorb"] = 0,
@@ -18120,16 +18130,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446291.3471,
 								["amount"] = -80668,
+								["srcname"] = "Cenarius",
 								["hp"] = 291651,
 								["spellid"] = 210342,
-								["srcname"] = "Cenarius",
 							}, -- [10]
 							{
 								["ts"] = 1477446291.51611,
 								["amount"] = -354375,
+								["srcname"] = "Cenarius",
 								["hp"] = 1,
 								["spellid"] = 210342,
-								["srcname"] = "Cenarius",
 							}, -- [11]
 							{
 								["spellname"] = "Tadakatsu dies",
@@ -18140,9 +18150,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446287.85913,
 								["amount"] = -159354,
+								["srcname"] = "Cenarius",
 								["hp"] = 977623,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [13]
 							{
 								["absorb"] = 0,
@@ -18155,9 +18165,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446288.43515,
 								["amount"] = -42462,
+								["srcname"] = "Cenarius",
 								["hp"] = 939714,
 								["spellid"] = 210342,
-								["srcname"] = "Cenarius",
 							}, -- [15]
 							["pos"] = 13,
 						},
@@ -18165,127 +18175,7 @@ SkadaPerCharDB = {
 					}, -- [2]
 				},
 				["damagetaken"] = 143156910,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 49909,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 1534264,
-						["ts"] = 1477448752.892,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 10407,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1574287,
-						["ts"] = 1477448755.129,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 4378,
-						["spellid"] = 143924,
-						["srcname"] = "Tadakatsu",
-						["hp"] = 1387760,
-						["ts"] = 1477448741.146,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 100723,
-						["spellid"] = 596,
-						["srcname"] = "Scop",
-						["hp"] = 1488483,
-						["ts"] = 1477448741.95,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 12296,
-						["spellid"] = 143924,
-						["srcname"] = "Tadakatsu",
-						["hp"] = 1500779,
-						["ts"] = 1477448742.329,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 82362,
-						["spellid"] = 1064,
-						["srcname"] = "Royalty",
-						["hp"] = 1583141,
-						["ts"] = 1477448742.775,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 30098,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 1771553,
-						["ts"] = 1477448742.98,
-					}, -- [7]
-					{
-						["ts"] = 1477448743.507,
-						["amount"] = -220000,
-						["hp"] = 1551553,
-						["spellid"] = 208860,
-						["srcname"] = "Dread Abomination",
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 6808,
-						["spellid"] = 143924,
-						["srcname"] = "Tadakatsu",
-						["hp"] = 1558361,
-						["ts"] = 1477448743.559,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 2327,
-						["spellid"] = 143924,
-						["srcname"] = "Tadakatsu",
-						["hp"] = 1560688,
-						["ts"] = 1477448744.755,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 17477,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1578165,
-						["ts"] = 1477448744.983,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 27859,
-						["spellid"] = 120692,
-						["srcname"] = "Zerra",
-						["hp"] = 1185712,
-						["ts"] = 1477448745.219,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 17477,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1203189,
-						["ts"] = 1477448747.962,
-					}, -- [13]
-					{
-						["ts"] = 1477448749.151,
-						["amount"] = -82275,
-						["hp"] = 1120914,
-						["spellid"] = 206920,
-						["srcname"] = "Nightmare Tentacle",
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 58763,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 1179677,
-						["ts"] = 1477448749.504,
-					}, -- [15]
-					["pos"] = 3,
-				},
+				["shielding"] = 1369269,
 				["id"] = "Player-1169-06C1D986",
 				["maxhp"] = 1853700,
 				["healing"] = 42153982,
@@ -18584,20 +18474,6 @@ SkadaPerCharDB = {
 						["min"] = 588506,
 						["absorbed"] = 0,
 					},
-					["Puncture Wound"] = {
-						["crushing"] = 0,
-						["id"] = 222786,
-						["damage"] = 850000,
-						["max"] = 60000,
-						["glancing"] = 0,
-						["name"] = "Puncture Wound",
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 16,
-						["resisted"] = 0,
-						["min"] = 50000,
-						["absorbed"] = 0,
-					},
 					["Screech"] = {
 						["crushing"] = 0,
 						["id"] = 223565,
@@ -18611,6 +18487,20 @@ SkadaPerCharDB = {
 						["resisted"] = 0,
 						["min"] = 157910,
 						["absorbed"] = 27275,
+					},
+					["Puncture Wound"] = {
+						["crushing"] = 0,
+						["id"] = 222786,
+						["damage"] = 850000,
+						["max"] = 60000,
+						["glancing"] = 0,
+						["name"] = "Puncture Wound",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 16,
+						["resisted"] = 0,
+						["min"] = 50000,
+						["absorbed"] = 0,
 					},
 					["Corrupting Nova"] = {
 						["crushing"] = 0,
@@ -18682,18 +18572,18 @@ SkadaPerCharDB = {
 						["min"] = 316365,
 						["absorbed"] = 0,
 					},
-					["Corruption: Crushing Shadows"] = {
+					["Tainted Discharge"] = {
 						["crushing"] = 0,
-						["id"] = 208860,
-						["damage"] = 3505236,
-						["max"] = 594635,
+						["id"] = 208385,
+						["damage"] = 8258686,
+						["max"] = 231120,
 						["glancing"] = 0,
-						["name"] = "Corruption: Crushing Shadows",
+						["name"] = "Tainted Discharge",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 12,
+						["totalhits"] = 41,
 						["resisted"] = 0,
-						["min"] = 220000,
+						["min"] = 173340,
 						["absorbed"] = 0,
 					},
 					["Nightmare Brambles"] = {
@@ -18822,18 +18712,18 @@ SkadaPerCharDB = {
 						["min"] = 311000,
 						["absorbed"] = 0,
 					},
-					["Nightmare Gaze"] = {
+					["Corruption: Crushing Shadows"] = {
 						["crushing"] = 0,
-						["id"] = 210931,
-						["damage"] = 7191836,
-						["max"] = 761595,
+						["id"] = 208860,
+						["damage"] = 3505236,
+						["max"] = 594635,
 						["glancing"] = 0,
-						["name"] = "Nightmare Gaze",
+						["name"] = "Corruption: Crushing Shadows",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 11,
+						["totalhits"] = 12,
 						["resisted"] = 0,
-						["min"] = 619718,
+						["min"] = 220000,
 						["absorbed"] = 0,
 					},
 					["Putrid Swarm"] = {
@@ -19018,18 +18908,18 @@ SkadaPerCharDB = {
 						["min"] = 62101,
 						["absorbed"] = 0,
 					},
-					["Tainted Discharge"] = {
+					["Nightmare Gaze"] = {
 						["crushing"] = 0,
-						["id"] = 208385,
-						["damage"] = 8258686,
-						["max"] = 231120,
+						["id"] = 210931,
+						["damage"] = 7191836,
+						["max"] = 761595,
 						["glancing"] = 0,
-						["name"] = "Tainted Discharge",
+						["name"] = "Nightmare Gaze",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 41,
+						["totalhits"] = 11,
 						["resisted"] = 0,
-						["min"] = 173340,
+						["min"] = 619718,
 						["absorbed"] = 0,
 					},
 					["Darkened Discharge"] = {
@@ -19060,20 +18950,6 @@ SkadaPerCharDB = {
 						["min"] = 504450,
 						["absorbed"] = 0,
 					},
-					["Creeping Nightmares"] = {
-						["crushing"] = 0,
-						["id"] = 210279,
-						["damage"] = 6839340,
-						["max"] = 167367,
-						["glancing"] = 0,
-						["name"] = "Creeping Nightmares",
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 89,
-						["resisted"] = 0,
-						["min"] = 16962,
-						["absorbed"] = 0,
-					},
 					["Shadow Volley"] = {
 						["crushing"] = 0,
 						["id"] = 222939,
@@ -19086,6 +18962,20 @@ SkadaPerCharDB = {
 						["totalhits"] = 1,
 						["resisted"] = 0,
 						["min"] = 377551,
+						["absorbed"] = 0,
+					},
+					["Creeping Nightmares"] = {
+						["crushing"] = 0,
+						["id"] = 210279,
+						["damage"] = 6839340,
+						["max"] = 167367,
+						["glancing"] = 0,
+						["name"] = "Creeping Nightmares",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 89,
+						["resisted"] = 0,
+						["min"] = 16962,
 						["absorbed"] = 0,
 					},
 					["Dripping Fangs"] = {
@@ -19171,32 +19061,128 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Tadakatsu",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 					{
-						["spells"] = {
-							[163201] = -33,
-							[85288] = 3050,
-							[23881] = 6540,
-							[100] = 870,
-						},
-						["amount"] = 10427,
+						["absorb"] = 0,
+						["amount"] = 49909,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 1534264,
+						["ts"] = 1477448752.892,
 					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 10407,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1574287,
+						["ts"] = 1477448755.129,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 4378,
+						["spellid"] = 143924,
+						["srcname"] = "Tadakatsu",
+						["hp"] = 1387760,
+						["ts"] = 1477448741.146,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 100723,
+						["spellid"] = 596,
+						["srcname"] = "Scop",
+						["hp"] = 1488483,
+						["ts"] = 1477448741.95,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 12296,
+						["spellid"] = 143924,
+						["srcname"] = "Tadakatsu",
+						["hp"] = 1500779,
+						["ts"] = 1477448742.329,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 82362,
+						["spellid"] = 1064,
+						["srcname"] = "Royalty",
+						["hp"] = 1583141,
+						["ts"] = 1477448742.775,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 30098,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 1771553,
+						["ts"] = 1477448742.98,
+					}, -- [7]
+					{
+						["ts"] = 1477448743.507,
+						["amount"] = -220000,
+						["srcname"] = "Dread Abomination",
+						["hp"] = 1551553,
+						["spellid"] = 208860,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 6808,
+						["spellid"] = 143924,
+						["srcname"] = "Tadakatsu",
+						["hp"] = 1558361,
+						["ts"] = 1477448743.559,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 2327,
+						["spellid"] = 143924,
+						["srcname"] = "Tadakatsu",
+						["hp"] = 1560688,
+						["ts"] = 1477448744.755,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 17477,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1578165,
+						["ts"] = 1477448744.983,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 27859,
+						["spellid"] = 120692,
+						["srcname"] = "Zerra",
+						["hp"] = 1185712,
+						["ts"] = 1477448745.219,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 17477,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1203189,
+						["ts"] = 1477448747.962,
+					}, -- [13]
+					{
+						["ts"] = 1477448749.151,
+						["amount"] = -82275,
+						["srcname"] = "Nightmare Tentacle",
+						["hp"] = 1120914,
+						["spellid"] = 206920,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 58763,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 1179677,
+						["ts"] = 1477448749.504,
+					}, -- [15]
+					["pos"] = 3,
 				},
 				["healingspells"] = {
-					["Dream Simulacrum"] = {
-						["shielding"] = 1369269,
-						["id"] = 206005,
-						["healing"] = 1369269,
-						["multistrikes"] = 0,
-						["min"] = 1369269,
-						["multistrike"] = 0,
-						["name"] = "Dream Simulacrum",
-						["hits"] = 1,
-						["overhealing"] = 0,
-						["max"] = 1369269,
-						["critical"] = 0,
-						["absorbed"] = 0,
-					},
 					["Healthstone"] = {
 						["shielding"] = 0,
 						["id"] = 6262,
@@ -19222,6 +19208,20 @@ SkadaPerCharDB = {
 						["hits"] = 654,
 						["overhealing"] = 40310524,
 						["max"] = 710685,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+					["Dream Simulacrum"] = {
+						["shielding"] = 1369269,
+						["id"] = 206005,
+						["healing"] = 1369269,
+						["multistrikes"] = 0,
+						["min"] = 1369269,
+						["multistrike"] = 0,
+						["name"] = "Dream Simulacrum",
+						["hits"] = 1,
+						["overhealing"] = 0,
+						["max"] = 1369269,
 						["critical"] = 0,
 						["absorbed"] = 0,
 					},
@@ -19565,7 +19565,39 @@ SkadaPerCharDB = {
 				["interrupts"] = 1,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["shielding"] = 16709490,
+				["power"] = {
+					[3] = {
+						["spells"] = {
+							[196263] = 3790,
+						},
+						["amount"] = 3790,
+					},
+					[6] = {
+						["spells"] = {
+							[195757] = 2337,
+							[85948] = 4480,
+							[49088] = 75,
+							[220890] = 20,
+							[195182] = 480,
+							[55090] = 6870,
+							[42650] = 120,
+							[130736] = 710,
+							[77575] = 1260,
+							[43265] = 290,
+							[210738] = 144,
+							[206930] = 705,
+							[195292] = 70,
+						},
+						["amount"] = 17561,
+					},
+					[5] = {
+						["spells"] = {
+							[220211] = 91,
+							[191492] = 45,
+						},
+						["amount"] = 136,
+					},
+				},
 				["damage"] = 496367437,
 				["damagespells"] = {
 					["Death and Decay"] = {
@@ -20343,86 +20375,86 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447741.59601,
 								["amount"] = -130239,
+								["srcname"] = "Xavius",
 								["hp"] = 405378,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [1]
 							{
 								["ts"] = 1477447741.79802,
 								["amount"] = -130240,
+								["srcname"] = "Xavius",
 								["hp"] = 275138,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [2]
 							{
 								["ts"] = 1477447742.02403,
 								["amount"] = -130240,
+								["hp"] = 144898,
 								["srcname"] = "Xavius",
 								["spellid"] = 209294,
-								["hp"] = 144898,
 							}, -- [3]
 							{
 								["ts"] = 1477447742.62404,
 								["amount"] = -130239,
+								["srcname"] = "Xavius",
 								["hp"] = 14659,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [4]
 							{
 								["ts"] = 1477447742.98105,
 								["amount"] = -130239,
+								["srcname"] = "Xavius",
 								["hp"] = 1517465,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [5]
 							{
 								["ts"] = 1477447743.19806,
 								["amount"] = -130239,
+								["srcname"] = "Xavius",
 								["hp"] = 1387226,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [6]
 							{
 								["ts"] = 1477447743.58107,
 								["amount"] = -130239,
+								["srcname"] = "Xavius",
 								["hp"] = 1256987,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [7]
 							{
 								["ts"] = 1477447743.75808,
 								["amount"] = -130239,
+								["srcname"] = "Xavius",
 								["hp"] = 1126748,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [8]
 							{
 								["ts"] = 1477447743.99609,
 								["amount"] = -130239,
+								["srcname"] = "Xavius",
 								["hp"] = 996509,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [9]
 							{
 								["ts"] = 1477447744.1941,
 								["amount"] = -130240,
+								["srcname"] = "Xavius",
 								["hp"] = 866269,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [10]
 							{
 								["ts"] = 1477447744.47611,
 								["amount"] = -849940,
+								["srcname"] = "Xavius",
 								["hp"] = 866269,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [11]
 							{
 								["ts"] = 1477447744.60212,
 								["amount"] = -130239,
+								["srcname"] = "Xavius",
 								["hp"] = 1,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [12]
 							{
 								["spellname"] = "Sorgon dies",
@@ -20433,9 +20465,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447740.84314,
 								["amount"] = -130240,
+								["srcname"] = "Xavius",
 								["hp"] = 388911,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -20451,129 +20483,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 135711028,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 10407,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1809636,
-						["ts"] = 1477448750.139,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 7133,
-						["spellid"] = 208899,
-						["srcname"] = "Royalty",
-						["hp"] = 2099009,
-						["ts"] = 1477448750.639,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 18140,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 2117149,
-						["ts"] = 1477448751.187,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 24706,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 2149243,
-						["ts"] = 1477448751.372,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 33383,
-						["spellid"] = 52042,
-						["srcname"] = "Royalty",
-						["hp"] = 1596127,
-						["ts"] = 1477448744.643,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 50652,
-						["spellid"] = 120692,
-						["srcname"] = "Zerra",
-						["hp"] = 1646779,
-						["ts"] = 1477448744.78,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 4312,
-						["spellid"] = 8936,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1651091,
-						["ts"] = 1477448744.948,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 146706,
-						["spellid"] = 53365,
-						["srcname"] = "Sorgon",
-						["hp"] = 1515557,
-						["ts"] = 1477448745.075,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 184965,
-						["spellid"] = 596,
-						["srcname"] = "Scop",
-						["hp"] = 1700522,
-						["ts"] = 1477448745.356,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 3362,
-						["spellid"] = 8936,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1703884,
-						["ts"] = 1477448746.311,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 7494,
-						["spellid"] = 208899,
-						["srcname"] = "Royalty",
-						["hp"] = 1711378,
-						["ts"] = 1477448746.642,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 38100,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 1749478,
-						["ts"] = 1477448747.757,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 32094,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1781572,
-						["ts"] = 1477448748.366,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 7250,
-						["spellid"] = 208899,
-						["srcname"] = "Royalty",
-						["hp"] = 1788822,
-						["ts"] = 1477448748.631,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 10407,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1799229,
-						["ts"] = 1477448749.151,
-					}, -- [15]
-					["pos"] = 5,
-				},
+				["shielding"] = 16709490,
 				["id"] = "Player-1169-06A13B86",
 				["maxhp"] = 1781460,
 				["healing"] = 51436530,
@@ -21539,38 +21449,128 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Sorgon",
 				["alertCount"] = 0,
-				["power"] = {
-					[3] = {
-						["spells"] = {
-							[196263] = 3790,
-						},
-						["amount"] = 3790,
-					},
-					[6] = {
-						["spells"] = {
-							[195757] = 2337,
-							[85948] = 4480,
-							[49088] = 75,
-							[220890] = 20,
-							[195182] = 480,
-							[55090] = 6870,
-							[42650] = 120,
-							[130736] = 710,
-							[77575] = 1260,
-							[43265] = 290,
-							[210738] = 144,
-							[206930] = 705,
-							[195292] = 70,
-						},
-						["amount"] = 17561,
-					},
-					[5] = {
-						["spells"] = {
-							[220211] = 91,
-							[191492] = 45,
-						},
-						["amount"] = 136,
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 10407,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1809636,
+						["ts"] = 1477448750.139,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 7133,
+						["spellid"] = 208899,
+						["srcname"] = "Royalty",
+						["hp"] = 2099009,
+						["ts"] = 1477448750.639,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 18140,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 2117149,
+						["ts"] = 1477448751.187,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 24706,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 2149243,
+						["ts"] = 1477448751.372,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 33383,
+						["spellid"] = 52042,
+						["srcname"] = "Royalty",
+						["hp"] = 1596127,
+						["ts"] = 1477448744.643,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 50652,
+						["spellid"] = 120692,
+						["srcname"] = "Zerra",
+						["hp"] = 1646779,
+						["ts"] = 1477448744.78,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 4312,
+						["spellid"] = 8936,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1651091,
+						["ts"] = 1477448744.948,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 146706,
+						["spellid"] = 53365,
+						["srcname"] = "Sorgon",
+						["hp"] = 1515557,
+						["ts"] = 1477448745.075,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 184965,
+						["spellid"] = 596,
+						["srcname"] = "Scop",
+						["hp"] = 1700522,
+						["ts"] = 1477448745.356,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 3362,
+						["spellid"] = 8936,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1703884,
+						["ts"] = 1477448746.311,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 7494,
+						["spellid"] = 208899,
+						["srcname"] = "Royalty",
+						["hp"] = 1711378,
+						["ts"] = 1477448746.642,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 38100,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 1749478,
+						["ts"] = 1477448747.757,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 32094,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1781572,
+						["ts"] = 1477448748.366,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 7250,
+						["spellid"] = 208899,
+						["srcname"] = "Royalty",
+						["hp"] = 1788822,
+						["ts"] = 1477448748.631,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 10407,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1799229,
+						["ts"] = 1477448749.151,
+					}, -- [15]
+					["pos"] = 5,
 				},
 				["healingspells"] = {
 					["Rune Weapon: Consumption"] = {
@@ -21657,6 +21657,20 @@ SkadaPerCharDB = {
 						["critical"] = 0,
 						["absorbed"] = 0,
 					},
+					["Anti-Magic Shell"] = {
+						["shielding"] = 2598829,
+						["id"] = 48707,
+						["healing"] = 2598829,
+						["multistrikes"] = 0,
+						["min"] = 0,
+						["multistrike"] = 0,
+						["name"] = "Anti-Magic Shell",
+						["hits"] = 41,
+						["overhealing"] = 8138484.5625,
+						["max"] = 315993,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
 					["Rune Weapon: Death Strike"] = {
 						["shielding"] = 0,
 						["id"] = 45470,
@@ -21668,20 +21682,6 @@ SkadaPerCharDB = {
 						["hits"] = 2,
 						["overhealing"] = 415474,
 						["max"] = 0,
-						["critical"] = 0,
-						["absorbed"] = 0,
-					},
-					["Bone Shield"] = {
-						["shielding"] = 6787691,
-						["id"] = 195181,
-						["healing"] = 6787691,
-						["multistrikes"] = 0,
-						["min"] = 142,
-						["multistrike"] = 0,
-						["name"] = "Bone Shield",
-						["hits"] = 282,
-						["overhealing"] = 0,
-						["max"] = 298167,
 						["critical"] = 0,
 						["absorbed"] = 0,
 					},
@@ -21741,17 +21741,17 @@ SkadaPerCharDB = {
 						["critical"] = 0,
 						["absorbed"] = 0,
 					},
-					["Anti-Magic Shell"] = {
-						["shielding"] = 2598829,
-						["id"] = 48707,
-						["healing"] = 2598829,
+					["Bone Shield"] = {
+						["shielding"] = 6787691,
+						["id"] = 195181,
+						["healing"] = 6787691,
 						["multistrikes"] = 0,
-						["min"] = 0,
+						["min"] = 142,
 						["multistrike"] = 0,
-						["name"] = "Anti-Magic Shell",
-						["hits"] = 41,
-						["overhealing"] = 8138484.5625,
-						["max"] = 315993,
+						["name"] = "Bone Shield",
+						["hits"] = 282,
+						["overhealing"] = 0,
+						["max"] = 298167,
 						["critical"] = 0,
 						["absorbed"] = 0,
 					},
@@ -21976,7 +21976,16 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 32,
 				["ccbreaks"] = 0,
-				["shielding"] = 94816883,
+				["power"] = {
+					[0] = {
+						["spells"] = {
+							[129253] = 1155000,
+							[215270] = 1221218,
+							[47755] = 1573000,
+						},
+						["amount"] = 3949218,
+					},
+				},
 				["damage"] = 268923684,
 				["damagespells"] = {
 					["Schism"] = {
@@ -22136,30 +22145,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447741.59601,
 								["amount"] = -140957,
+								["srcname"] = "Xavius",
 								["hp"] = 354143,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [1]
 							{
 								["ts"] = 1477447741.79802,
 								["amount"] = -140956,
+								["spellid"] = 209294,
 								["srcname"] = "Xavius",
 								["hp"] = 213187,
-								["spellid"] = 209294,
 							}, -- [2]
 							{
 								["ts"] = 1477447741.97603,
 								["amount"] = -140957,
+								["srcname"] = "Xavius",
 								["hp"] = 72230,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [3]
 							{
 								["ts"] = 1477447742.62404,
 								["amount"] = -140956,
+								["srcname"] = "Xavius",
 								["hp"] = 1,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [4]
 							{
 								["spellname"] = "Zerra dies",
@@ -22210,9 +22219,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447715.33911,
 								["amount"] = -412003,
+								["srcname"] = "Xavius",
 								["hp"] = 962844,
 								["spellid"] = 206369,
-								["srcname"] = "Xavius",
 							}, -- [11]
 							{
 								["spellid"] = 208385,
@@ -22237,9 +22246,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447740.76115,
 								["amount"] = -140957,
+								["srcname"] = "Xavius",
 								["hp"] = 495100,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [15]
 							["pos"] = 6,
 						},
@@ -22247,129 +22256,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 86049455,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 10407,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 803337,
-						["ts"] = 1477448748.152,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 14535,
-						["spellid"] = 94472,
-						["srcname"] = "Zerra",
-						["hp"] = 817872,
-						["ts"] = 1477448748.709,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 10407,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 828279,
-						["ts"] = 1477448749.151,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 41033,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 869312,
-						["ts"] = 1477448749.662,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 125574,
-						["spellid"] = 200829,
-						["srcname"] = "Zerra",
-						["hp"] = 1271003,
-						["ts"] = 1477448751.993,
-					}, -- [5]
-					{
-						["ts"] = 1477448752.138,
-						["amount"] = 10407,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1281410,
-						["absorb"] = 0,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 41032,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1342473,
-						["ts"] = 1477448752.67,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 10407,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1372892,
-						["ts"] = 1477448756.144,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 5203,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 399725,
-						["ts"] = 1477448745.219,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 4436,
-						["spellid"] = 81751,
-						["srcname"] = "Zerra",
-						["hp"] = 404161,
-						["ts"] = 1477448745.391,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 14535,
-						["spellid"] = 94472,
-						["srcname"] = "Zerra",
-						["hp"] = 418696,
-						["ts"] = 1477448745.531,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 263147,
-						["spellid"] = 34861,
-						["srcname"] = "Scop",
-						["hp"] = 681843,
-						["ts"] = 1477448745.871,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 41033,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 722876,
-						["ts"] = 1477448746.679,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 62787,
-						["spellid"] = 200829,
-						["srcname"] = "Zerra",
-						["hp"] = 785663,
-						["ts"] = 1477448747.048,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 7267,
-						["spellid"] = 81751,
-						["srcname"] = "Zerra",
-						["hp"] = 792930,
-						["ts"] = 1477448747.119,
-					}, -- [15]
-					["pos"] = 9,
-				},
+				["shielding"] = 94816883,
 				["id"] = "Player-1169-06C17145",
 				["maxhp"] = 1714320,
 				["healing"] = 391124692,
@@ -23427,12 +23314,11 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Pet-0-3018-1520-19675-32517-0101EE0465"] = {
-						["role"] = "NONE",
-						["name"] = "McHealy",
-						["amount"] = 36611,
-						["class"] = "WARRIOR",
+					["Creature-0-3018-1520-19675-106551-00000FFF4D"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Hati",
+						["amount"] = 21009,
 					},
 					["Player-1169-06BACF99"] = {
 						["role"] = "DAMAGER",
@@ -23454,11 +23340,11 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-106551-00000FFF4D"] = {
+					["Creature-0-3018-1520-19675-113347-00009004D8"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Hati",
-						["amount"] = 21009,
+						["name"] = "Beast",
+						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-103636-00000FF3CF"] = {
 						["shielding"] = 0,
@@ -23466,10 +23352,10 @@ SkadaPerCharDB = {
 						["name"] = "Arcane Familiar",
 						["amount"] = 20760,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FF853"] = {
+					["Vehicle-0-3018-1520-19675-98035-00001006E0"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
+						["name"] = "Dreadstalker",
 						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-113347-0000100F30"] = {
@@ -23478,12 +23364,12 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Player-1169-06C144D6"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Daerlith",
-						["amount"] = 7199173,
-						["class"] = "SHAMAN",
-						["shielding"] = 1147361,
+					["Pet-0-3018-1520-19675-32517-0101EE0465"] = {
+						["role"] = "NONE",
+						["name"] = "McHealy",
+						["amount"] = 36611,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
 					},
 					["Creature-0-3018-1520-19675-17252-00001006D6"] = {
 						["shielding"] = 0,
@@ -23510,11 +23396,12 @@ SkadaPerCharDB = {
 						["name"] = "Spirit Wolf",
 						["amount"] = 21009,
 					},
-					["Creature-0-3018-1520-19675-113347-00009004D8"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
+					["Creature-0-3018-1520-19675-47244-00009006CA"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Lenae",
 						["amount"] = 0,
+						["class"] = "MAGE",
+						["shielding"] = 0,
 					},
 					["Vehicle-0-3018-1520-19675-98035-00009007C9"] = {
 						["shielding"] = 0,
@@ -23528,7 +23415,7 @@ SkadaPerCharDB = {
 						["name"] = "Hati",
 						["amount"] = 78651,
 					},
-					["Vehicle-0-3018-1520-19675-98035-00001006E0"] = {
+					["Vehicle-0-3018-1520-19675-98035-00001007C9"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Dreadstalker",
@@ -23541,18 +23428,18 @@ SkadaPerCharDB = {
 						["class"] = "DRUID",
 						["shielding"] = 31921571,
 					},
-					["Creature-0-3018-1520-19675-47244-00009006CA"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Lenae",
-						["amount"] = 0,
-						["class"] = "MAGE",
-						["shielding"] = 0,
-					},
-					["Creature-0-3018-1520-19675-100820-00008FF667"] = {
+					["Creature-0-3018-1520-19675-100820-00001007FC"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Spirit Wolf",
 						["amount"] = 0,
+					},
+					["Player-1169-06C144D6"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Daerlith",
+						["amount"] = 7199173,
+						["class"] = "SHAMAN",
+						["shielding"] = 1147361,
 					},
 					["Creature-0-3018-1520-19675-113347-00000FF857"] = {
 						["shielding"] = 0,
@@ -23560,11 +23447,12 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FF6A1"] = {
-						["shielding"] = 0,
+					["Pet-0-3018-1520-19675-35189-0402050114"] = {
 						["role"] = "NONE",
-						["name"] = "Beast",
+						["name"] = "Skoll",
 						["amount"] = 0,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
 					},
 					["Player-1169-06C17145"] = {
 						["role"] = "HEALER",
@@ -23573,16 +23461,16 @@ SkadaPerCharDB = {
 						["class"] = "PRIEST",
 						["shielding"] = 9785463,
 					},
-					["Creature-0-3018-1520-19675-27829-00001006D4"] = {
+					["Creature-0-3018-1520-19675-100820-00009004CE"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Ebon Gargoyle",
+						["name"] = "Spirit Wolf",
 						["amount"] = 0,
 					},
-					["Vehicle-0-3018-1520-19675-98035-000010138D"] = {
+					["Creature-0-3018-1520-19675-100820-00008FF667"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Dreadstalker",
+						["name"] = "Spirit Wolf",
 						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-27829-00000FFBD7"] = {
@@ -23604,34 +23492,34 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 5762,
 					},
-					["Creature-0-3018-1520-19675-100820-00001004CE"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Spirit Wolf",
-						["amount"] = 0,
-					},
-					["Vehicle-0-3018-1520-19675-98035-00001007C9"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Dreadstalker",
-						["amount"] = 0,
-					},
-					["Vehicle-0-3018-1520-19675-98035-00001007FD"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Dreadstalker",
-						["amount"] = 0,
-					},
 					["Vehicle-0-3018-1520-19675-98035-00001012B0"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Dreadstalker",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-100820-00001007FC"] = {
+					["Creature-0-3018-1520-19675-113347-00001012E6"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Spirit Wolf",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-11859-0000101396"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Doomguard",
+						["amount"] = 0,
+					},
+					["Vehicle-0-3018-1520-19675-98035-0000100F34"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Dreadstalker",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-0000100A66"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
 						["amount"] = 0,
 					},
 					["Player-1169-06A1ACBD"] = {
@@ -23653,7 +23541,7 @@ SkadaPerCharDB = {
 						["name"] = "Hati",
 						["amount"] = 7421,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FF611"] = {
+					["Creature-0-3018-1520-19675-113347-00000FF6A1"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -23671,12 +23559,11 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Pet-0-3018-1520-19675-35189-0402050114"] = {
-						["role"] = "NONE",
-						["name"] = "Skoll",
-						["amount"] = 0,
-						["class"] = "WARRIOR",
+					["Creature-0-3018-1520-19675-27829-00001006D4"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Ebon Gargoyle",
+						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-47244-000090137C"] = {
 						["role"] = "DAMAGER",
@@ -23685,7 +23572,7 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["shielding"] = 0,
 					},
-					["Vehicle-0-3018-1520-19675-98035-000090138D"] = {
+					["Vehicle-0-3018-1520-19675-98035-000010138D"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Dreadstalker",
@@ -23698,7 +23585,7 @@ SkadaPerCharDB = {
 						["class"] = "SHAMAN",
 						["shielding"] = 981502,
 					},
-					["Creature-0-3018-1520-19675-100820-00009004CE"] = {
+					["Creature-0-3018-1520-19675-100820-00001004CE"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Spirit Wolf",
@@ -23716,10 +23603,10 @@ SkadaPerCharDB = {
 						["name"] = "Felguard",
 						["amount"] = 60501,
 					},
-					["Creature-0-3018-1520-19675-11859-0000101396"] = {
+					["Creature-0-3018-1520-19675-100820-00009007FC"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Doomguard",
+						["name"] = "Spirit Wolf",
 						["amount"] = 0,
 					},
 					["Player-1169-07982349"] = {
@@ -23736,11 +23623,12 @@ SkadaPerCharDB = {
 						["class"] = "WARLOCK",
 						["shielding"] = 417281,
 					},
-					["Creature-0-3018-1520-19675-100820-00009007FC"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Spirit Wolf",
-						["amount"] = 0,
+					["Player-1169-06C22E36"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Rockan",
+						["amount"] = 17296312,
+						["class"] = "DEATHKNIGHT",
+						["shielding"] = 2938739,
 					},
 					["Creature-0-3018-1520-19675-27829-00000FF5F6"] = {
 						["shielding"] = 0,
@@ -23767,19 +23655,18 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 26587,
 					},
-					["Player-1169-06C22E36"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Rockan",
-						["amount"] = 17296312,
-						["class"] = "DEATHKNIGHT",
-						["shielding"] = 2938739,
-					},
-					["Creature-0-3018-1520-19675-47244-00008FF5F9"] = {
+					["Creature-0-3018-1520-19675-47244-0000900F9D"] = {
 						["role"] = "DAMAGER",
 						["name"] = "Lenae",
 						["amount"] = 0,
 						["class"] = "MAGE",
 						["shielding"] = 0,
+					},
+					["Vehicle-0-3018-1520-19675-98035-0000100F7F"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Dreadstalker",
+						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-47244-00008FF9BA"] = {
 						["role"] = "DAMAGER",
@@ -23801,34 +23688,16 @@ SkadaPerCharDB = {
 						["class"] = "DEATHKNIGHT",
 						["shielding"] = 2700826,
 					},
-					["Vehicle-0-3018-1520-19675-98035-0000100F7F"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Dreadstalker",
-						["amount"] = 0,
-					},
 					["Vehicle-0-3018-1520-19675-98035-0000900F7F"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Dreadstalker",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-100820-00008FF669"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Spirit Wolf",
-						["amount"] = 0,
-					},
 					["Vehicle-0-3018-1520-19675-98035-0000900B23"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Dreadstalker",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00000FF66E"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
 						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-113347-0000100C8A"] = {
@@ -23841,6 +23710,12 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Arcane Familiar",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00000FF66E"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
 						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-47244-00000FF9BA"] = {
@@ -23856,19 +23731,31 @@ SkadaPerCharDB = {
 						["name"] = "Hati",
 						["amount"] = 79902,
 					},
+					["Creature-0-3018-1520-19675-100820-00000FF669"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Spirit Wolf",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-100820-0000100A8C"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Spirit Wolf",
+						["amount"] = 0,
+					},
 					["Creature-0-3018-1520-19675-19668-0000101353"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Shadowfiend",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000900C43"] = {
+					["Creature-0-3018-1520-19675-113347-00000FF88E"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-100820-00000FF669"] = {
+					["Creature-0-3018-1520-19675-100820-00008FF669"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Spirit Wolf",
@@ -23914,10 +23801,10 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["shielding"] = 1376887,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FF88E"] = {
+					["Creature-0-3018-1520-19675-106551-00000FFD6F"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
+						["name"] = "Hati",
 						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-113347-0000101422"] = {
@@ -23926,36 +23813,37 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-103636-0000100D21"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Arcane Familiar",
-						["amount"] = 46719,
-					},
-					["Creature-0-3018-1520-19675-100820-0000901350"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Spirit Wolf",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-100820-0000100A8C"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Spirit Wolf",
-						["amount"] = 0,
-					},
-					["Player-1169-07D4DEFA"] = {
-						["role"] = "TANK",
-						["name"] = "Gronncho",
-						["amount"] = 58001751,
-						["class"] = "PALADIN",
-						["shielding"] = 24187939,
-					},
 					["Creature-0-3018-1520-19675-100820-0000900A8C"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Spirit Wolf",
 						["amount"] = 0,
+					},
+					["Pet-0-3018-1520-19675-35189-0102050114"] = {
+						["role"] = "NONE",
+						["name"] = "Skoll",
+						["amount"] = 0,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+					["Creature-0-3018-1520-19675-47244-00008FF67D"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Lenae",
+						["amount"] = 0,
+						["class"] = "MAGE",
+						["shielding"] = 0,
+					},
+					["Creature-0-3018-1520-19675-106551-00001004ED"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Hati",
+						["amount"] = 26526,
+					},
+					["Vehicle-0-3018-1520-19675-98035-0000900CF2"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Dreadstalker",
+						["amount"] = 22000,
 					},
 					["Vehicle-0-3018-1520-19675-98035-0000100AE3"] = {
 						["shielding"] = 0,
@@ -23963,11 +23851,11 @@ SkadaPerCharDB = {
 						["name"] = "Dreadstalker",
 						["amount"] = 48401,
 					},
-					["Creature-0-3018-1520-19675-106551-00001004ED"] = {
+					["Creature-0-3018-1520-19675-103636-0000100D21"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Hati",
-						["amount"] = 26526,
+						["name"] = "Arcane Familiar",
+						["amount"] = 46719,
 					},
 					["Player-1169-06C22578"] = {
 						["role"] = "HEALER",
@@ -23982,23 +23870,10 @@ SkadaPerCharDB = {
 						["name"] = "Dreadstalker",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-417-00000FFBED"] = {
+					["Creature-0-3018-1520-19675-100820-0000901350"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Felhunter",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-47244-00008FF67D"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Lenae",
-						["amount"] = 0,
-						["class"] = "MAGE",
-						["shielding"] = 0,
-					},
-					["Creature-0-3018-1520-19675-106551-0000101087"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Hati",
+						["name"] = "Spirit Wolf",
 						["amount"] = 0,
 					},
 					["Player-1169-06C011D7"] = {
@@ -24008,11 +23883,24 @@ SkadaPerCharDB = {
 						["class"] = "HUNTER",
 						["shielding"] = 193751,
 					},
-					["Creature-0-3018-1520-19675-113347-00001013EB"] = {
+					["Creature-0-3018-1520-19675-106551-0000101087"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Hati",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-0000900CFB"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
+					},
+					["Player-1169-07D4DEFA"] = {
+						["role"] = "TANK",
+						["name"] = "Gronncho",
+						["amount"] = 58001751,
+						["class"] = "PALADIN",
+						["shielding"] = 24187939,
 					},
 					["Creature-0-3018-1520-19675-17252-000010134F"] = {
 						["shielding"] = 0,
@@ -24026,12 +23914,12 @@ SkadaPerCharDB = {
 						["name"] = "Dreadstalker",
 						["amount"] = 48401,
 					},
-					["Pet-0-3018-1520-19675-35189-0102050114"] = {
-						["role"] = "NONE",
-						["name"] = "Skoll",
-						["amount"] = 0,
+					["Player-1169-06C1D986"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Tadakatsu",
+						["amount"] = 9445137,
 						["class"] = "WARRIOR",
-						["shielding"] = 0,
+						["shielding"] = 972576,
 					},
 					["Creature-0-3018-1520-19675-113347-000010070F"] = {
 						["shielding"] = 0,
@@ -24045,11 +23933,11 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 19895,
 					},
-					["Creature-0-3018-1520-19675-17252-00001013DC"] = {
+					["Creature-0-3018-1520-19675-106551-00000FF707"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Felguard",
-						["amount"] = 0,
+						["name"] = "Hati",
+						["amount"] = 22474,
 					},
 					["Creature-0-3018-1520-19675-106548-00000FF738"] = {
 						["shielding"] = 0,
@@ -24075,17 +23963,17 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000101395"] = {
+					["Creature-0-3018-1520-19675-113347-0000101355"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Vehicle-0-3018-1520-19675-98035-0000900A61"] = {
+					["Vehicle-0-3018-1520-19675-98035-0000100CF2"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Dreadstalker",
-						["amount"] = 0,
+						["amount"] = 22001,
 					},
 					["Pet-0-3018-1520-19675-26125-0101EDD695"] = {
 						["role"] = "NONE",
@@ -24107,18 +23995,17 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FF893"] = {
+					["Creature-0-3018-1520-19675-113347-00000FF853"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Pet-0-3018-1520-19675-17252-020206FAA5"] = {
-						["role"] = "NONE",
-						["name"] = "Skelkilig",
-						["amount"] = 24060,
-						["class"] = "WARRIOR",
+					["Creature-0-3018-1520-19675-17252-00001013DC"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Felguard",
+						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-106551-00000FF33F"] = {
 						["shielding"] = 0,
@@ -24146,10 +24033,10 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 5510,
 					},
-					["Creature-0-3018-1520-19675-99541-0000100224"] = {
+					["Creature-0-3018-1520-19675-113347-0000101395"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Risen Skulker",
+						["name"] = "Beast",
 						["amount"] = 0,
 					},
 					["Pet-0-3777-1220-11124-26125-0101EDD695"] = {
@@ -24159,12 +24046,11 @@ SkadaPerCharDB = {
 						["class"] = "DEATHKNIGHT",
 						["shielding"] = 43352,
 					},
-					["Player-1169-06C1D986"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Tadakatsu",
-						["amount"] = 9445137,
-						["class"] = "WARRIOR",
-						["shielding"] = 972576,
+					["Creature-0-3018-1520-19675-113347-00000FF893"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-11859-00001006D4"] = {
 						["shielding"] = 0,
@@ -24193,10 +24079,10 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 25212,
 					},
-					["Creature-0-3018-1520-19675-113347-0000101355"] = {
+					["Creature-0-3018-1520-19675-99541-0000100224"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
+						["name"] = "Risen Skulker",
 						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-103636-00000FF822"] = {
@@ -24205,11 +24091,12 @@ SkadaPerCharDB = {
 						["name"] = "Arcane Familiar",
 						["amount"] = 19100,
 					},
-					["Creature-0-3018-1520-19675-106551-00000FF707"] = {
-						["shielding"] = 0,
+					["Pet-0-3018-1520-19675-17252-020206FAA5"] = {
 						["role"] = "NONE",
-						["name"] = "Hati",
-						["amount"] = 22474,
+						["name"] = "Skelkilig",
+						["amount"] = 24060,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
 					},
 					["Creature-0-3018-1520-19675-106551-00000FFA1A"] = {
 						["shielding"] = 0,
@@ -24217,16 +24104,16 @@ SkadaPerCharDB = {
 						["name"] = "Hati",
 						["amount"] = 0,
 					},
-					["Vehicle-0-3018-1520-19675-98035-0000900CF2"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Dreadstalker",
-						["amount"] = 22000,
-					},
-					["Creature-0-3018-1520-19675-113347-0000900CFB"] = {
+					["Creature-0-3018-1520-19675-113347-00001013EB"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Vehicle-0-3018-1520-19675-98035-0000900A61"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Dreadstalker",
 						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-113347-00000FFBF8"] = {
@@ -24261,18 +24148,18 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["shielding"] = 0,
 					},
-					["Vehicle-0-3018-1520-19675-98035-0000100CF2"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Dreadstalker",
-						["amount"] = 22001,
-					},
 					["Player-1169-069FE656"] = {
 						["role"] = "DAMAGER",
 						["name"] = "Senatus",
 						["amount"] = 4488209,
 						["class"] = "WARLOCK",
 						["shielding"] = 474781,
+					},
+					["Creature-0-3018-1520-19675-417-00000FFBED"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Felhunter",
+						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-103636-00000FF967"] = {
 						["shielding"] = 0,
@@ -24306,11 +24193,11 @@ SkadaPerCharDB = {
 						["name"] = "Risen Skulker",
 						["amount"] = 80291,
 					},
-					["Creature-0-3018-1520-19675-113347-0000900A66"] = {
+					["Vehicle-0-3018-1520-19675-98035-00009012E3"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
+						["name"] = "Dreadstalker",
+						["amount"] = 22914,
 					},
 					["Player-1169-06C13A05"] = {
 						["role"] = "HEALER",
@@ -24319,17 +24206,17 @@ SkadaPerCharDB = {
 						["class"] = "DRUID",
 						["shielding"] = 1194872,
 					},
-					["Creature-0-3018-1520-19675-106551-00000FFD6F"] = {
+					["Creature-0-3018-1520-19675-113347-0000900A66"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Hati",
+						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Vehicle-0-3018-1520-19675-98035-00009012E3"] = {
+					["Creature-0-3018-1520-19675-113347-0000900C43"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Dreadstalker",
-						["amount"] = 22914,
+						["name"] = "Beast",
+						["amount"] = 0,
 					},
 					["Player-1169-06BA0AE7"] = {
 						["role"] = "DAMAGER",
@@ -24363,12 +24250,11 @@ SkadaPerCharDB = {
 						["class"] = "HUNTER",
 						["shielding"] = 1175968,
 					},
-					["Creature-0-3018-1520-19675-47244-0000900F9D"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Lenae",
-						["amount"] = 0,
-						["class"] = "MAGE",
+					["Creature-0-3018-1520-19675-103636-0000101077"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Arcane Familiar",
+						["amount"] = 228941,
 					},
 					["Creature-0-3018-1520-19675-19668-00001013EF"] = {
 						["shielding"] = 0,
@@ -24376,17 +24262,18 @@ SkadaPerCharDB = {
 						["name"] = "Shadowfiend",
 						["amount"] = 0,
 					},
-					["Vehicle-0-3018-1520-19675-98035-0000900F34"] = {
+					["Creature-0-3018-1520-19675-113347-0000100AE4"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Dreadstalker",
+						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-103636-0000101077"] = {
+					["Creature-0-3018-1520-19675-47244-00008FF5F9"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Lenae",
+						["amount"] = 0,
+						["class"] = "MAGE",
 						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Arcane Familiar",
-						["amount"] = 228941,
 					},
 					["Pet-0-3018-1520-19675-416-0401ED40E5"] = {
 						["role"] = "NONE",
@@ -24395,19 +24282,13 @@ SkadaPerCharDB = {
 						["class"] = "WARLOCK",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000100F83"] = {
-						["shielding"] = 0,
+					["Creature-0-3018-1520-19675-106551-0000100B33"] = {
+						["shielding"] = 5860,
 						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
+						["name"] = "Hati",
+						["amount"] = 45826,
 					},
 					["Creature-0-3018-1520-19675-113347-0000100AE9"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-0000100AE4"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -24419,12 +24300,6 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-106551-0000100B33"] = {
-						["shielding"] = 5860,
-						["role"] = "NONE",
-						["name"] = "Hati",
-						["amount"] = 45826,
-					},
 					["Creature-0-3018-1520-19675-47244-0000100F9D"] = {
 						["role"] = "DAMAGER",
 						["name"] = "Lenae",
@@ -24432,10 +24307,10 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000100A66"] = {
+					["Vehicle-0-3018-1520-19675-98035-000090138D"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
+						["name"] = "Dreadstalker",
 						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-47244-000010137C"] = {
@@ -24445,7 +24320,19 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00001012E6"] = {
+					["Vehicle-0-3018-1520-19675-98035-0000900F34"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Dreadstalker",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00000FF611"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-0000100F83"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -24458,17 +24345,17 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["shielding"] = 0,
 					},
+					["Vehicle-0-3018-1520-19675-98035-00001007FD"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Dreadstalker",
+						["amount"] = 0,
+					},
 					["Creature-0-3018-1520-19675-106551-00001012F0"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Hati",
 						["amount"] = 10836,
-					},
-					["Vehicle-0-3018-1520-19675-98035-0000101309"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Dreadstalker",
-						["amount"] = 20050,
 					},
 					["Creature-0-3018-1520-19675-106551-00001004EA"] = {
 						["shielding"] = 0,
@@ -24476,16 +24363,16 @@ SkadaPerCharDB = {
 						["name"] = "Hati",
 						["amount"] = 25131,
 					},
+					["Vehicle-0-3018-1520-19675-98035-0000101309"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Dreadstalker",
+						["amount"] = 20050,
+					},
 					["Creature-0-3018-1520-19675-113347-0000101351"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Vehicle-0-3018-1520-19675-98035-0000100F34"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Dreadstalker",
 						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-100820-00001004CD"] = {
@@ -24528,15 +24415,128 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Zerra",
 				["alertCount"] = 0,
-				["power"] = {
-					[0] = {
-						["spells"] = {
-							[129253] = 1155000,
-							[215270] = 1221218,
-							[47755] = 1573000,
-						},
-						["amount"] = 3949218,
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 10407,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 803337,
+						["ts"] = 1477448748.152,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 14535,
+						["spellid"] = 94472,
+						["srcname"] = "Zerra",
+						["hp"] = 817872,
+						["ts"] = 1477448748.709,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 10407,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 828279,
+						["ts"] = 1477448749.151,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 41033,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 869312,
+						["ts"] = 1477448749.662,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 125574,
+						["spellid"] = 200829,
+						["srcname"] = "Zerra",
+						["hp"] = 1271003,
+						["ts"] = 1477448751.993,
+					}, -- [5]
+					{
+						["ts"] = 1477448752.138,
+						["amount"] = 10407,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1281410,
+						["absorb"] = 0,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 41032,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1342473,
+						["ts"] = 1477448752.67,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 10407,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1372892,
+						["ts"] = 1477448756.144,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 5203,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 399725,
+						["ts"] = 1477448745.219,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 4436,
+						["spellid"] = 81751,
+						["srcname"] = "Zerra",
+						["hp"] = 404161,
+						["ts"] = 1477448745.391,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 14535,
+						["spellid"] = 94472,
+						["srcname"] = "Zerra",
+						["hp"] = 418696,
+						["ts"] = 1477448745.531,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 263147,
+						["spellid"] = 34861,
+						["srcname"] = "Scop",
+						["hp"] = 681843,
+						["ts"] = 1477448745.871,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 41033,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 722876,
+						["ts"] = 1477448746.679,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 62787,
+						["spellid"] = 200829,
+						["srcname"] = "Zerra",
+						["hp"] = 785663,
+						["ts"] = 1477448747.048,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 7267,
+						["spellid"] = 81751,
+						["srcname"] = "Zerra",
+						["hp"] = 792930,
+						["ts"] = 1477448747.119,
+					}, -- [15]
+					["pos"] = 9,
 				},
 				["healingspells"] = {
 					["Power Word: Radiance"] = {
@@ -24858,7 +24858,28 @@ SkadaPerCharDB = {
 				["interrupts"] = 2,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["shielding"] = 19926005,
+				["power"] = {
+					[6] = {
+						["spells"] = {
+							[207230] = 4660,
+							[49020] = 7480,
+							[47568] = 225,
+							[194913] = 2570,
+							[49184] = 1260,
+							[196770] = 1430,
+							[49088] = 203,
+							[195617] = 1505,
+						},
+						["amount"] = 19333,
+					},
+					[5] = {
+						["spells"] = {
+							[193486] = 287,
+							[47568] = 54,
+						},
+						["amount"] = 341,
+					},
+				},
 				["damage"] = 857540352,
 				["damagespells"] = {
 					["Frost Strike Off-Hand"] = {
@@ -25348,9 +25369,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447703.9071,
 								["amount"] = -160557,
+								["srcname"] = "Xavius",
 								["hp"] = 1208591,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [10]
 							{
 								["absorb"] = -5514,
@@ -25379,16 +25400,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447715.85814,
 								["amount"] = -847499,
+								["srcname"] = "Xavius",
 								["hp"] = 17010,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [14]
 							{
 								["ts"] = 1477447717.33815,
 								["amount"] = -855312,
+								["srcname"] = "Xavius",
 								["hp"] = 1070022,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [15]
 							["pos"] = 3,
 						},
@@ -25400,9 +25421,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446370.94501,
 								["amount"] = -211741,
+								["srcname"] = "Cenarius",
 								["hp"] = 116255,
 								["spellid"] = 214712,
-								["srcname"] = "Cenarius",
 							}, -- [1]
 							{
 								["absorb"] = -11998,
@@ -25461,9 +25482,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446367.94209,
 								["amount"] = -214850,
+								["srcname"] = "Cenarius",
 								["hp"] = 671927,
 								["spellid"] = 214712,
-								["srcname"] = "Cenarius",
 							}, -- [9]
 							{
 								["absorb"] = 0,
@@ -25500,9 +25521,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446369.93014,
 								["amount"] = -217402,
+								["srcname"] = "Cenarius",
 								["hp"] = 135671,
 								["spellid"] = 214712,
-								["srcname"] = "Cenarius",
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -25518,8 +25539,7 @@ SkadaPerCharDB = {
 					}, -- [3]
 				},
 				["damagetaken"] = 120469234,
-				["deathlog"] = {
-				},
+				["shielding"] = 19926005,
 				["id"] = "Player-1169-06C22E36",
 				["maxhp"] = 1697880,
 				["healing"] = 21313065,
@@ -26510,27 +26530,7 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Rockan",
 				["alertCount"] = 0,
-				["power"] = {
-					[6] = {
-						["spells"] = {
-							[207230] = 4660,
-							[49020] = 7480,
-							[47568] = 225,
-							[194913] = 2570,
-							[49184] = 1260,
-							[196770] = 1430,
-							[49088] = 203,
-							[195617] = 1505,
-						},
-						["amount"] = 19333,
-					},
-					[5] = {
-						["spells"] = {
-							[193486] = 287,
-							[47568] = 54,
-						},
-						["amount"] = 341,
-					},
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 					["Anti-Magic Shell"] = {
@@ -26796,7 +26796,8 @@ SkadaPerCharDB = {
 				["interrupts"] = 1,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["shielding"] = 31352986,
+				["power"] = {
+				},
 				["damage"] = 788989333,
 				["damagespells"] = {
 					["Fireball"] = {
@@ -26978,23 +26979,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477448728.33201,
 								["amount"] = -75249,
+								["srcname"] = "Nightmare Tentacle",
 								["hp"] = 1455552,
 								["spellid"] = 206920,
-								["srcname"] = "Nightmare Tentacle",
 							}, -- [1]
 							{
 								["ts"] = 1477448728.38202,
 								["amount"] = -75630,
+								["srcname"] = "Nightmare Tentacle",
 								["hp"] = 1379922,
 								["spellid"] = 206920,
-								["srcname"] = "Nightmare Tentacle",
 							}, -- [2]
 							{
 								["ts"] = 1477448728.42103,
 								["amount"] = -780603,
+								["srcname"] = "Xavius",
 								["hp"] = 1379922,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -27015,9 +27016,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477448729.92406,
 								["amount"] = -974555,
+								["srcname"] = "Xavius",
 								["hp"] = 692626,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [6]
 							{
 								["spellname"] = "Felanima dies",
@@ -27084,9 +27085,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477448727.52015,
 								["amount"] = -79176,
+								["srcname"] = "Nightmare Tentacle",
 								["hp"] = 1530801,
 								["spellid"] = 206920,
-								["srcname"] = "Nightmare Tentacle",
 							}, -- [15]
 							["pos"] = 8,
 						},
@@ -27130,9 +27131,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447698.98805,
 								["amount"] = -103657,
+								["srcname"] = "Xavius",
 								["hp"] = 759786,
 								["spellid"] = 209158,
-								["srcname"] = "Xavius",
 							}, -- [5]
 							{
 								["absorb"] = 0,
@@ -27218,8 +27219,7 @@ SkadaPerCharDB = {
 					}, -- [2]
 				},
 				["damagetaken"] = 68224041,
-				["deathlog"] = {
-				},
+				["shielding"] = 31352986,
 				["id"] = "Player-1169-069B665C",
 				["maxhp"] = 2029260,
 				["healing"] = 33902605,
@@ -27532,20 +27532,6 @@ SkadaPerCharDB = {
 						["min"] = 11696,
 						["absorbed"] = 165516,
 					},
-					["Tainted Discharge"] = {
-						["crushing"] = 0,
-						["id"] = 208385,
-						["damage"] = 482971,
-						["max"] = 186581,
-						["glancing"] = 0,
-						["name"] = "Tainted Discharge",
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 3,
-						["resisted"] = 0,
-						["min"] = 109809,
-						["absorbed"] = 76772,
-					},
 					["Ground Slam"] = {
 						["crushing"] = 0,
 						["id"] = 208689,
@@ -27559,6 +27545,20 @@ SkadaPerCharDB = {
 						["resisted"] = 0,
 						["min"] = 51114,
 						["absorbed"] = 357541,
+					},
+					["Tainted Discharge"] = {
+						["crushing"] = 0,
+						["id"] = 208385,
+						["damage"] = 482971,
+						["max"] = 186581,
+						["glancing"] = 0,
+						["name"] = "Tainted Discharge",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 3,
+						["resisted"] = 0,
+						["min"] = 109809,
+						["absorbed"] = 76772,
 					},
 					["Barreling Impact"] = {
 						["crushing"] = 0,
@@ -28021,7 +28021,7 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Felanima",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 					["Cauterizing Blink"] = {
@@ -28210,7 +28210,23 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 2,
 				["ccbreaks"] = 0,
-				["shielding"] = 27804045,
+				["power"] = {
+					[7] = {
+						["spells"] = {
+							[193540] = 80,
+							[215942] = 103,
+							[17962] = 367,
+						},
+						["amount"] = 550,
+					},
+					[0] = {
+						["spells"] = {
+							[116858] = 91764750,
+							[5740] = 8085000,
+						},
+						["amount"] = 99849750,
+					},
+				},
 				["damage"] = 267527801,
 				["damagespells"] = {
 					["Stormlash"] = {
@@ -28761,129 +28777,7 @@ SkadaPerCharDB = {
 					}, -- [3]
 				},
 				["damagetaken"] = 76033980,
-				["deathlog"] = {
-					{
-						["absorb"] = -39790,
-						["amount"] = -41993,
-						["spellid"] = 206920,
-						["srcname"] = "Nightmare Tentacle",
-						["hp"] = 1182696,
-						["ts"] = 1477448744.46,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 50652,
-						["spellid"] = 120692,
-						["srcname"] = "Zerra",
-						["hp"] = 1233348,
-						["ts"] = 1477448744.876,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 56756,
-						["spellid"] = 81751,
-						["srcname"] = "Zerra",
-						["hp"] = 1064429,
-						["ts"] = 1477448745.075,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 91567,
-						["spellid"] = 596,
-						["srcname"] = "Scop",
-						["hp"] = 1155996,
-						["ts"] = 1477448745.356,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 4436,
-						["spellid"] = 81751,
-						["srcname"] = "Zerra",
-						["hp"] = 1160432,
-						["ts"] = 1477448745.391,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 14534,
-						["spellid"] = 94472,
-						["srcname"] = "Zerra",
-						["hp"] = 1174966,
-						["ts"] = 1477448745.549,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 31988,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1206954,
-						["ts"] = 1477448746.679,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 7268,
-						["spellid"] = 81751,
-						["srcname"] = "Zerra",
-						["hp"] = 1214222,
-						["ts"] = 1477448747.135,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 5203,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1219425,
-						["ts"] = 1477448748.152,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 14534,
-						["spellid"] = 94472,
-						["srcname"] = "Zerra",
-						["hp"] = 1233959,
-						["ts"] = 1477448748.733,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 31988,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1265947,
-						["ts"] = 1477448749.662,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 10406,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1276353,
-						["ts"] = 1477448750.139,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 31988,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1566823,
-						["ts"] = 1477448752.67,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 5203,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1572026,
-						["ts"] = 1477448753.136,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 5203,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1617408,
-						["ts"] = 1477448758.136,
-					}, -- [15]
-					["pos"] = 1,
-				},
+				["shielding"] = 27804045,
 				["id"] = "Player-1169-069FE656",
 				["maxhp"] = 1480620,
 				["healing"] = 30405625,
@@ -29238,19 +29132,19 @@ SkadaPerCharDB = {
 						["min"] = 234839,
 						["absorbed"] = 1094011,
 					},
-					["Nightmare Brambles"] = {
+					["Nightmare Corruption"] = {
 						["crushing"] = 0,
-						["id"] = 210315,
-						["damage"] = 369676,
-						["max"] = 236695,
+						["id"] = 212886,
+						["damage"] = 218771,
+						["max"] = 218771,
 						["glancing"] = 0,
-						["name"] = "Nightmare Brambles",
+						["name"] = "Nightmare Corruption",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 2,
+						["totalhits"] = 1,
 						["resisted"] = 0,
-						["min"] = 132981,
-						["absorbed"] = 188526,
+						["min"] = 218771,
+						["absorbed"] = 238089,
 					},
 					["Cursed Blood"] = {
 						["crushing"] = 0,
@@ -29406,19 +29300,19 @@ SkadaPerCharDB = {
 						["min"] = 128858,
 						["absorbed"] = 111717,
 					},
-					["Volatile Rot"] = {
+					["Nightmare Brambles"] = {
 						["crushing"] = 0,
-						["id"] = 204470,
-						["damage"] = 3251974,
-						["max"] = 535628,
+						["id"] = 210315,
+						["damage"] = 369676,
+						["max"] = 236695,
 						["glancing"] = 0,
-						["name"] = "Volatile Rot",
+						["name"] = "Nightmare Brambles",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 7,
+						["totalhits"] = 2,
 						["resisted"] = 0,
-						["min"] = 335735,
-						["absorbed"] = 730389,
+						["min"] = 132981,
+						["absorbed"] = 188526,
 					},
 					["Defiled Eruption"] = {
 						["crushing"] = 0,
@@ -29574,19 +29468,19 @@ SkadaPerCharDB = {
 						["min"] = 453810,
 						["absorbed"] = 433401,
 					},
-					["Nightmare Corruption"] = {
+					["Volatile Rot"] = {
 						["crushing"] = 0,
-						["id"] = 212886,
-						["damage"] = 218771,
-						["max"] = 218771,
+						["id"] = 204470,
+						["damage"] = 3251974,
+						["max"] = 535628,
 						["glancing"] = 0,
-						["name"] = "Nightmare Corruption",
+						["name"] = "Volatile Rot",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 1,
+						["totalhits"] = 7,
 						["resisted"] = 0,
-						["min"] = 218771,
-						["absorbed"] = 238089,
+						["min"] = 335735,
+						["absorbed"] = 730389,
 					},
 					["Lurking Eruption"] = {
 						["crushing"] = 0,
@@ -29688,12 +29582,11 @@ SkadaPerCharDB = {
 						["class"] = "WARLOCK",
 						["shielding"] = 0,
 					},
-					["Pet-0-3018-1520-19675-416-0401ED40E5"] = {
+					["Creature-0-3018-1520-19675-11859-00000FF5ED"] = {
+						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Pizkin",
-						["amount"] = 24773,
-						["class"] = "WARLOCK",
-						["shielding"] = 24773,
+						["name"] = "Unknown",
+						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-11859-0000100B1C"] = {
 						["shielding"] = 0,
@@ -29701,11 +29594,12 @@ SkadaPerCharDB = {
 						["name"] = "Doomguard",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-11859-00000FF5ED"] = {
-						["shielding"] = 0,
+					["Pet-0-3018-1520-19675-416-0301ED40E5"] = {
 						["role"] = "NONE",
-						["name"] = "Unknown",
-						["amount"] = 0,
+						["name"] = "Pizkin",
+						["amount"] = 309139,
+						["class"] = "WARLOCK",
+						["shielding"] = 309139,
 					},
 					["Creature-0-3018-1520-19675-11859-0000100FC3"] = {
 						["shielding"] = 0,
@@ -29733,12 +29627,12 @@ SkadaPerCharDB = {
 						["name"] = "Doomguard",
 						["amount"] = 0,
 					},
-					["Pet-0-3018-1520-19675-416-0301ED40E5"] = {
+					["Pet-0-3018-1520-19675-416-0401ED40E5"] = {
 						["role"] = "NONE",
 						["name"] = "Pizkin",
-						["amount"] = 309139,
+						["amount"] = 24773,
 						["class"] = "WARLOCK",
-						["shielding"] = 309139,
+						["shielding"] = 24773,
 					},
 					["Creature-0-3018-1520-19675-104096-0004900ED4"] = {
 						["role"] = "DAMAGER",
@@ -29776,22 +29670,128 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Senatus",
 				["alertCount"] = 0,
-				["power"] = {
-					[7] = {
-						["spells"] = {
-							[193540] = 80,
-							[215942] = 103,
-							[17962] = 367,
-						},
-						["amount"] = 550,
-					},
-					[0] = {
-						["spells"] = {
-							[116858] = 91764750,
-							[5740] = 8085000,
-						},
-						["amount"] = 99849750,
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = -39790,
+						["amount"] = -41993,
+						["spellid"] = 206920,
+						["srcname"] = "Nightmare Tentacle",
+						["hp"] = 1182696,
+						["ts"] = 1477448744.46,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 50652,
+						["spellid"] = 120692,
+						["srcname"] = "Zerra",
+						["hp"] = 1233348,
+						["ts"] = 1477448744.876,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 56756,
+						["spellid"] = 81751,
+						["srcname"] = "Zerra",
+						["hp"] = 1064429,
+						["ts"] = 1477448745.075,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 91567,
+						["spellid"] = 596,
+						["srcname"] = "Scop",
+						["hp"] = 1155996,
+						["ts"] = 1477448745.356,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 4436,
+						["spellid"] = 81751,
+						["srcname"] = "Zerra",
+						["hp"] = 1160432,
+						["ts"] = 1477448745.391,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 14534,
+						["spellid"] = 94472,
+						["srcname"] = "Zerra",
+						["hp"] = 1174966,
+						["ts"] = 1477448745.549,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 31988,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1206954,
+						["ts"] = 1477448746.679,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 7268,
+						["spellid"] = 81751,
+						["srcname"] = "Zerra",
+						["hp"] = 1214222,
+						["ts"] = 1477448747.135,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 5203,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1219425,
+						["ts"] = 1477448748.152,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 14534,
+						["spellid"] = 94472,
+						["srcname"] = "Zerra",
+						["hp"] = 1233959,
+						["ts"] = 1477448748.733,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 31988,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1265947,
+						["ts"] = 1477448749.662,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 10406,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1276353,
+						["ts"] = 1477448750.139,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 31988,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1566823,
+						["ts"] = 1477448752.67,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 5203,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1572026,
+						["ts"] = 1477448753.136,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 5203,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1617408,
+						["ts"] = 1477448758.136,
+					}, -- [15]
+					["pos"] = 1,
 				},
 				["healingspells"] = {
 					["Dark Pact"] = {
@@ -30064,7 +30064,16 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["shielding"] = 6657345,
+				["power"] = {
+					[9] = {
+						["spells"] = {
+							[218001] = 340,
+							[35395] = 909,
+							[184575] = 844,
+						},
+						["amount"] = 2093,
+					},
+				},
 				["damage"] = 628047468,
 				["damagespells"] = {
 					["Brutal Haymaker"] = {
@@ -30307,9 +30316,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447721.11606,
 								["amount"] = -73098,
+								["srcname"] = "Xavius",
 								["hp"] = 376545,
 								["spellid"] = 209158,
-								["srcname"] = "Xavius",
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -30322,9 +30331,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447721.85508,
 								["amount"] = -592945,
+								["srcname"] = "Xavius",
 								["hp"] = 380459,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -30388,129 +30397,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 137485286,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 1859,
-						["spellid"] = 143924,
-						["srcname"] = "Lealdade",
-						["hp"] = 865755,
-						["ts"] = 1477448745.569,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 10002,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 875757,
-						["ts"] = 1477448745.871,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 10406,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 886163,
-						["ts"] = 1477448746.15,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 10407,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 896570,
-						["ts"] = 1477448747.135,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 52694,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 949264,
-						["ts"] = 1477448749.504,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 105302,
-						["spellid"] = 596,
-						["srcname"] = "Scop",
-						["hp"] = 1396334,
-						["ts"] = 1477448751.594,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 18271,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1439178,
-						["ts"] = 1477448754.863,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 18272,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1506546,
-						["ts"] = 1477448757.627,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 5203,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1536310,
-						["ts"] = 1477448759.135,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 5203,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1541513,
-						["ts"] = 1477448760.141,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 13691,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1099655,
-						["ts"] = 1477448743.302,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 25530,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1125185,
-						["ts"] = 1477448744.203,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 18575,
-						["spellid"] = 143924,
-						["srcname"] = "Lealdade",
-						["hp"] = 1143760,
-						["ts"] = 1477448744.364,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 25326,
-						["spellid"] = 120692,
-						["srcname"] = "Zerra",
-						["hp"] = 1169086,
-						["ts"] = 1477448744.54,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 11835,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 863896,
-						["ts"] = 1477448745.075,
-					}, -- [15]
-					["pos"] = 11,
-				},
+				["shielding"] = 6657345,
 				["id"] = "Player-1169-06BACF99",
 				["maxhp"] = 2083260,
 				["healing"] = 15725306,
@@ -31508,15 +31395,128 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Lealdade",
 				["alertCount"] = 0,
-				["power"] = {
-					[9] = {
-						["spells"] = {
-							[218001] = 340,
-							[35395] = 909,
-							[184575] = 844,
-						},
-						["amount"] = 2093,
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 1859,
+						["spellid"] = 143924,
+						["srcname"] = "Lealdade",
+						["hp"] = 865755,
+						["ts"] = 1477448745.569,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 10002,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 875757,
+						["ts"] = 1477448745.871,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 10406,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 886163,
+						["ts"] = 1477448746.15,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 10407,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 896570,
+						["ts"] = 1477448747.135,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 52694,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 949264,
+						["ts"] = 1477448749.504,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 105302,
+						["spellid"] = 596,
+						["srcname"] = "Scop",
+						["hp"] = 1396334,
+						["ts"] = 1477448751.594,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 18271,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1439178,
+						["ts"] = 1477448754.863,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 18272,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1506546,
+						["ts"] = 1477448757.627,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 5203,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1536310,
+						["ts"] = 1477448759.135,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 5203,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1541513,
+						["ts"] = 1477448760.141,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 13691,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1099655,
+						["ts"] = 1477448743.302,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 25530,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1125185,
+						["ts"] = 1477448744.203,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 18575,
+						["spellid"] = 143924,
+						["srcname"] = "Lealdade",
+						["hp"] = 1143760,
+						["ts"] = 1477448744.364,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 25326,
+						["spellid"] = 120692,
+						["srcname"] = "Zerra",
+						["hp"] = 1169086,
+						["ts"] = 1477448744.54,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 11835,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 863896,
+						["ts"] = 1477448745.075,
+					}, -- [15]
+					["pos"] = 11,
 				},
 				["healingspells"] = {
 					["Divine Intervention"] = {
@@ -31649,19 +31649,19 @@ SkadaPerCharDB = {
 						["uptime"] = 0,
 						["auratype"] = "DEBUFF",
 					},
-					["Gathering Storms"] = {
-						["name"] = "Gathering Storms",
-						["active"] = 0,
-						["id"] = 198300,
-						["uptime"] = 182,
-						["auratype"] = "BUFF",
-					},
 					["Gift of the Naaru"] = {
 						["uptime"] = 35,
 						["active"] = 0,
 						["auratype"] = "BUFF",
 						["id"] = 59547,
 						["name"] = "Gift of the Naaru",
+					},
+					["Gathering Storms"] = {
+						["name"] = "Gathering Storms",
+						["active"] = 0,
+						["id"] = 198300,
+						["uptime"] = 182,
+						["auratype"] = "BUFF",
 					},
 					["Flametongue"] = {
 						["name"] = "Flametongue",
@@ -31824,7 +31824,18 @@ SkadaPerCharDB = {
 				["interrupts"] = 8,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+					[11] = {
+						["spells"] = {
+							[190185] = 2800,
+							[187890] = 25185,
+							[204880] = 960,
+							[188070] = -100,
+							[201897] = 12450,
+						},
+						["amount"] = 41295,
+					},
+				},
 				["damage"] = 948116827,
 				["damagespells"] = {
 					["Spirit Wolf: Frozen Bite"] = {
@@ -32230,9 +32241,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477448694.50602,
 								["amount"] = -79343,
+								["srcname"] = "Nightmare Tentacle",
 								["hp"] = 1015403,
 								["spellid"] = 206920,
-								["srcname"] = "Nightmare Tentacle",
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -32261,16 +32272,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477448695.57706,
 								["amount"] = -765769,
+								["srcname"] = "Xavius",
 								["hp"] = 1095648,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [6]
 							{
 								["ts"] = 1477448695.92107,
 								["amount"] = -105930,
+								["srcname"] = "Xavius",
 								["hp"] = 223949,
 								["spellid"] = 209158,
-								["srcname"] = "Xavius",
 							}, -- [7]
 							{
 								["absorb"] = 0,
@@ -32291,16 +32302,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477448696.9381,
 								["amount"] = -105930,
+								["srcname"] = "Xavius",
 								["hp"] = 353292,
 								["spellid"] = 209158,
-								["srcname"] = "Xavius",
 							}, -- [10]
 							{
 								["ts"] = 1477448697.07211,
 								["amount"] = -735578,
+								["srcname"] = "Xavius",
 								["hp"] = 353292,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [11]
 							{
 								["spellname"] = "Imenja dies",
@@ -32364,9 +32375,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447701.95004,
 								["amount"] = -159390,
+								["srcname"] = "Xavius",
 								["hp"] = 1534578,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -32379,23 +32390,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447702.94906,
 								["amount"] = -159390,
+								["srcname"] = "Xavius",
 								["hp"] = 1436629,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [6]
 							{
 								["ts"] = 1477447704.02607,
 								["amount"] = -159390,
+								["srcname"] = "Xavius",
 								["hp"] = 1277239,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [7]
 							{
 								["ts"] = 1477447704.94108,
 								["amount"] = -159390,
+								["srcname"] = "Xavius",
 								["hp"] = 1117849,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -32416,9 +32427,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447715.33911,
 								["amount"] = -465882,
+								["srcname"] = "Xavius",
 								["hp"] = 673289,
 								["spellid"] = 206369,
-								["srcname"] = "Xavius",
 							}, -- [11]
 							{
 								["absorb"] = 0,
@@ -32431,9 +32442,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447717.60813,
 								["amount"] = -220000,
+								["srcname"] = "Dread Abomination",
 								["hp"] = 463747,
 								["spellid"] = 208860,
-								["srcname"] = "Dread Abomination",
 							}, -- [13]
 							{
 								["spellid"] = 208385,
@@ -32444,9 +32455,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447728.51015,
 								["amount"] = -1226395,
+								["srcname"] = "Dread Abomination",
 								["hp"] = 1,
 								["spellid"] = 208860,
-								["srcname"] = "Dread Abomination",
 							}, -- [15]
 							["pos"] = 2,
 						},
@@ -32466,9 +32477,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442710.72102,
 								["amount"] = -315414,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 477504,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -32481,9 +32492,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442711.76804,
 								["amount"] = -327096,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 188927,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -32496,9 +32507,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442712.71806,
 								["amount"] = -338778,
+								["hp"] = 1,
 								["srcname"] = "Defiled Keeper",
 								["spellid"] = 225081,
-								["hp"] = 1,
 							}, -- [6]
 							{
 								["spellname"] = "Imenja dies",
@@ -32533,9 +32544,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442708.76611,
 								["amount"] = -292050,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 837067,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [11]
 							{
 								["absorb"] = 0,
@@ -32564,9 +32575,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442709.75215,
 								["amount"] = -303732,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 737928,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [15]
 							["pos"] = 8,
 						},
@@ -32574,8 +32585,7 @@ SkadaPerCharDB = {
 					}, -- [3]
 				},
 				["damagetaken"] = 122784545,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["id"] = "Player-1169-06A51BF3",
 				["maxhp"] = 1843800,
 				["healing"] = 9819186,
@@ -33503,17 +33513,7 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Imenja",
 				["alertCount"] = 0,
-				["power"] = {
-					[11] = {
-						["spells"] = {
-							[190185] = 2800,
-							[187890] = 25185,
-							[204880] = 960,
-							[188070] = -100,
-							[201897] = 12450,
-						},
-						["amount"] = 41295,
-					},
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 					["Elemental Healing"] = {
@@ -33723,7 +33723,8 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["shielding"] = 4008497,
+				["power"] = {
+				},
 				["damage"] = 207282385,
 				["damagespells"] = {
 					["Fireball"] = {
@@ -33959,23 +33960,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447702.95001,
 								["amount"] = -158300,
+								["srcname"] = "Xavius",
 								["hp"] = 558331,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [1]
 							{
 								["ts"] = 1477447704.02702,
 								["amount"] = -158299,
+								["srcname"] = "Xavius",
 								["hp"] = 400032,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [2]
 							{
 								["ts"] = 1477447704.94203,
 								["amount"] = -158299,
+								["srcname"] = "Xavius",
 								["hp"] = 241733,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -34004,37 +34005,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447716.83707,
 								["amount"] = -87055,
+								["srcname"] = "Lenae",
 								["hp"] = 355646,
 								["spellid"] = 87023,
-								["srcname"] = "Lenae",
 							}, -- [7]
 							{
 								["ts"] = 1477447718.34608,
 								["amount"] = -87055,
+								["srcname"] = "Lenae",
 								["hp"] = 268591,
 								["spellid"] = 87023,
-								["srcname"] = "Lenae",
 							}, -- [8]
 							{
 								["ts"] = 1477447719.84609,
 								["amount"] = -87055,
+								["srcname"] = "Lenae",
 								["hp"] = 181536,
 								["spellid"] = 87023,
-								["srcname"] = "Lenae",
 							}, -- [9]
 							{
 								["ts"] = 1477447721.3361,
 								["amount"] = -87055,
+								["srcname"] = "Lenae",
 								["hp"] = 94481,
 								["spellid"] = 87023,
-								["srcname"] = "Lenae",
 							}, -- [10]
 							{
 								["ts"] = 1477447740.84411,
 								["amount"] = -158299,
+								["srcname"] = "Xavius",
 								["hp"] = 1,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [11]
 							{
 								["spellname"] = "Lenae dies",
@@ -34061,9 +34062,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447701.90715,
 								["amount"] = -158300,
+								["srcname"] = "Xavius",
 								["hp"] = 716631,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [15]
 							["pos"] = 13,
 						},
@@ -34075,9 +34076,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446263.84001,
 								["amount"] = -274735,
+								["srcname"] = "Cenarius",
 								["hp"] = 759933,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [1]
 							{
 								["absorb"] = 0,
@@ -34124,9 +34125,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446259.85108,
 								["amount"] = -264888,
+								["srcname"] = "Cenarius",
 								["hp"] = 999972,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -34155,9 +34156,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446261.87212,
 								["amount"] = -275861,
+								["srcname"] = "Cenarius",
 								["hp"] = 894417,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -34257,9 +34258,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477445435.14809,
 								["amount"] = -343606,
+								["srcname"] = "Elerethe Renferal",
 								["hp"] = 210357,
 								["spellid"] = 212709,
-								["srcname"] = "Elerethe Renferal",
 							}, -- [9]
 							{
 								["absorb"] = 0,
@@ -34280,9 +34281,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477445435.64212,
 								["amount"] = -100113,
+								["srcname"] = "Lenae",
 								["hp"] = 136804,
 								["spellid"] = 87023,
-								["srcname"] = "Lenae",
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -34295,9 +34296,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477445436.04414,
 								["amount"] = -209660,
+								["srcname"] = "Elerethe Renferal",
 								["hp"] = 1,
 								["spellid"] = 212709,
-								["srcname"] = "Elerethe Renferal",
 							}, -- [14]
 							{
 								["spellname"] = "Lenae dies",
@@ -34323,9 +34324,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477444648.71502,
 								["amount"] = -404173,
+								["srcname"] = "Corruptor Tentacle",
 								["hp"] = 311251,
 								["spellid"] = 208929,
-								["srcname"] = "Corruptor Tentacle",
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -34354,9 +34355,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477444650.02806,
 								["amount"] = -59682,
+								["srcname"] = "Nightmare Ichor",
 								["hp"] = 383882,
 								["spellid"] = 209469,
-								["srcname"] = "Nightmare Ichor",
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -34377,23 +34378,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477444652.00209,
 								["amount"] = -59682,
+								["srcname"] = "Nightmare Ichor",
 								["hp"] = 394536,
 								["spellid"] = 209469,
-								["srcname"] = "Nightmare Ichor",
 							}, -- [9]
 							{
 								["ts"] = 1477444652.2121,
 								["amount"] = -87055,
+								["srcname"] = "Lenae",
 								["hp"] = 307481,
 								["spellid"] = 87023,
-								["srcname"] = "Lenae",
 							}, -- [10]
 							{
 								["ts"] = 1477444652.73211,
 								["amount"] = -404172,
+								["srcname"] = "Corruptor Tentacle",
 								["hp"] = 1,
 								["spellid"] = 208929,
-								["srcname"] = "Corruptor Tentacle",
 							}, -- [11]
 							{
 								["spellname"] = "Lenae dies",
@@ -34402,24 +34403,24 @@ SkadaPerCharDB = {
 								["spellid"] = 41220,
 							}, -- [12]
 							{
-								["hp"] = 0,
-								["ts"] = 1477444653.968,
-								["spellid"] = 20484,
 								["srcname"] = "Pawsydawn",
+								["ts"] = 1477444653.968,
+								["hp"] = 0,
+								["spellid"] = 20484,
 							}, -- [13]
 							{
 								["ts"] = 1477444647.97514,
 								["amount"] = -81572,
+								["srcname"] = "Nightmare Ichor",
 								["hp"] = 849469,
 								["spellid"] = 88163,
-								["srcname"] = "Nightmare Ichor",
 							}, -- [14]
 							{
 								["ts"] = 1477444648.02115,
 								["amount"] = -59682,
+								["srcname"] = "Nightmare Ichor",
 								["hp"] = 789787,
 								["spellid"] = 209469,
-								["srcname"] = "Nightmare Ichor",
 							}, -- [15]
 							["pos"] = 14,
 						},
@@ -34447,9 +34448,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442715.71703,
 								["amount"] = -336459,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 184102,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [3]
 							{
 								["ts"] = 1477442716.13004,
@@ -34462,9 +34463,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442716.22705,
 								["amount"] = -102366,
+								["srcname"] = "Lenae",
 								["hp"] = 101054,
 								["spellid"] = 87023,
-								["srcname"] = "Lenae",
 							}, -- [5]
 							{
 								["absorb"] = 0,
@@ -34477,9 +34478,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442716.74307,
 								["amount"] = -336460,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 1,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [7]
 							{
 								["spellname"] = "Lenae dies",
@@ -34490,16 +34491,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442710.72009,
 								["amount"] = -313255,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 1169793,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [9]
 							{
 								["ts"] = 1477442711.7671,
 								["amount"] = -324858,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 849204,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [10]
 							{
 								["absorb"] = 0,
@@ -34512,9 +34513,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442712.71712,
 								["amount"] = -336459,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 560737,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -34535,9 +34536,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442713.71115,
 								["amount"] = -336460,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 267358,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [15]
 							["pos"] = 9,
 						},
@@ -34645,9 +34646,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442426.07513,
 								["amount"] = -849056,
+								["srcname"] = "Ursoc",
 								["hp"] = 1,
 								["spellid"] = 198109,
-								["srcname"] = "Ursoc",
 							}, -- [13]
 							{
 								["spellname"] = "Lenae dies",
@@ -34656,10 +34657,10 @@ SkadaPerCharDB = {
 								["spellid"] = 41220,
 							}, -- [14]
 							{
-								["hp"] = 0,
-								["ts"] = 1477442441.379,
-								["spellid"] = 20484,
 								["srcname"] = "Pawsydawn",
+								["ts"] = 1477442441.379,
+								["hp"] = 0,
+								["spellid"] = 20484,
 							}, -- [15]
 							["pos"] = 1,
 						},
@@ -34667,128 +34668,7 @@ SkadaPerCharDB = {
 					}, -- [6]
 				},
 				["damagetaken"] = 109067738,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 10407,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 889236,
-						["ts"] = 1477448746.15,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 22154,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 911390,
-						["ts"] = 1477448747.757,
-					}, -- [2]
-					{
-						["ts"] = 1477448747.9,
-						["amount"] = -82927,
-						["hp"] = 828463,
-						["spellid"] = 206920,
-						["srcname"] = "Nightmare Tentacle",
-					}, -- [3]
-					{
-						["ts"] = 1477448748.959,
-						["amount"] = 58384,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 886847,
-						["absorb"] = 0,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 94950,
-						["spellid"] = 2061,
-						["srcname"] = "Scop",
-						["hp"] = 981797,
-						["ts"] = 1477448749.857,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 20616,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 1192142,
-						["ts"] = 1477448751.187,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 30444,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1237364,
-						["ts"] = 1477448751.964,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 5203,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1242567,
-						["ts"] = 1477448752.138,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 19881,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 1262448,
-						["ts"] = 1477448752.892,
-					}, -- [9]
-					{
-						["ts"] = 1477448754.958,
-						["amount"] = 30445,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1307570,
-						["absorb"] = 0,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 5204,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1312774,
-						["ts"] = 1477448755.129,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 30445,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1372587,
-						["ts"] = 1477448757.966,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 5203,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1377790,
-						["ts"] = 1477448758.136,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 263146,
-						["spellid"] = 34861,
-						["srcname"] = "Scop",
-						["hp"] = 820446,
-						["ts"] = 1477448745.871,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 58383,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 878829,
-						["ts"] = 1477448745.969,
-					}, -- [15]
-					["pos"] = 14,
-				},
+				["shielding"] = 4008497,
 				["id"] = "Player-1169-06C1070E",
 				["maxhp"] = 1264860,
 				["healing"] = 7901304,
@@ -35031,6 +34911,20 @@ SkadaPerCharDB = {
 						["min"] = 75652,
 						["absorbed"] = 364146,
 					},
+					["Tainted Discharge"] = {
+						["crushing"] = 0,
+						["id"] = 208385,
+						["damage"] = 568108,
+						["max"] = 189370,
+						["glancing"] = 0,
+						["name"] = "Tainted Discharge",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 3,
+						["resisted"] = 0,
+						["min"] = 189369,
+						["absorbed"] = 0,
+					},
 					["Shadow Volley"] = {
 						["crushing"] = 0,
 						["id"] = 222939,
@@ -35058,20 +34952,6 @@ SkadaPerCharDB = {
 						["resisted"] = 0,
 						["min"] = 433863,
 						["absorbed"] = 182073,
-					},
-					["Corruption: Crushing Shadows"] = {
-						["crushing"] = 0,
-						["id"] = 208860,
-						["damage"] = 888062,
-						["max"] = 507358,
-						["glancing"] = 0,
-						["name"] = "Corruption: Crushing Shadows",
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 3,
-						["resisted"] = 0,
-						["min"] = 190352,
-						["absorbed"] = 0,
 					},
 					["Burst of Corruption"] = {
 						["crushing"] = 0,
@@ -35157,18 +35037,18 @@ SkadaPerCharDB = {
 						["min"] = 60001,
 						["absorbed"] = 0,
 					},
-					["Nightmare Brambles"] = {
+					["Nightmare Corruption"] = {
 						["crushing"] = 0,
-						["id"] = 214308,
-						["damage"] = 1486740,
-						["max"] = 421396,
+						["id"] = 212886,
+						["damage"] = 456217,
+						["max"] = 456217,
 						["glancing"] = 0,
-						["name"] = "Nightmare Brambles",
+						["name"] = "Nightmare Corruption",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 6,
+						["totalhits"] = 1,
 						["resisted"] = 0,
-						["min"] = 69112,
+						["min"] = 456217,
 						["absorbed"] = 0,
 					},
 					["Barreling Impact"] = {
@@ -35283,18 +35163,18 @@ SkadaPerCharDB = {
 						["min"] = 269089,
 						["absorbed"] = 792375,
 					},
-					["Tainted Discharge"] = {
+					["Corruption: Crushing Shadows"] = {
 						["crushing"] = 0,
-						["id"] = 208385,
-						["damage"] = 568108,
-						["max"] = 189370,
+						["id"] = 208860,
+						["damage"] = 888062,
+						["max"] = 507358,
 						["glancing"] = 0,
-						["name"] = "Tainted Discharge",
+						["name"] = "Corruption: Crushing Shadows",
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 3,
 						["resisted"] = 0,
-						["min"] = 189369,
+						["min"] = 190352,
 						["absorbed"] = 0,
 					},
 					["Putrid Swarm"] = {
@@ -35353,18 +35233,18 @@ SkadaPerCharDB = {
 						["min"] = 221015,
 						["absorbed"] = 0,
 					},
-					["Volatile Rot"] = {
+					["Nightmare Brambles"] = {
 						["crushing"] = 0,
-						["id"] = 204470,
-						["damage"] = 3976752,
-						["max"] = 568108,
+						["id"] = 214308,
+						["damage"] = 1486740,
+						["max"] = 421396,
 						["glancing"] = 0,
-						["name"] = "Volatile Rot",
+						["name"] = "Nightmare Brambles",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 7,
+						["totalhits"] = 6,
 						["resisted"] = 0,
-						["min"] = 568107,
+						["min"] = 69112,
 						["absorbed"] = 0,
 					},
 					["Spew Ichor"] = {
@@ -35521,18 +35401,18 @@ SkadaPerCharDB = {
 						["min"] = 556513,
 						["absorbed"] = 0,
 					},
-					["Nightmare Corruption"] = {
+					["Volatile Rot"] = {
 						["crushing"] = 0,
-						["id"] = 212886,
-						["damage"] = 456217,
-						["max"] = 456217,
+						["id"] = 204470,
+						["damage"] = 3976752,
+						["max"] = 568108,
 						["glancing"] = 0,
-						["name"] = "Nightmare Corruption",
+						["name"] = "Volatile Rot",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 1,
+						["totalhits"] = 7,
 						["resisted"] = 0,
-						["min"] = 456217,
+						["min"] = 568107,
 						["absorbed"] = 0,
 					},
 					["Cauterize"] = {
@@ -35632,7 +35512,127 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Lenae",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 10407,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 889236,
+						["ts"] = 1477448746.15,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 22154,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 911390,
+						["ts"] = 1477448747.757,
+					}, -- [2]
+					{
+						["ts"] = 1477448747.9,
+						["amount"] = -82927,
+						["srcname"] = "Nightmare Tentacle",
+						["hp"] = 828463,
+						["spellid"] = 206920,
+					}, -- [3]
+					{
+						["ts"] = 1477448748.959,
+						["amount"] = 58384,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 886847,
+						["absorb"] = 0,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 94950,
+						["spellid"] = 2061,
+						["srcname"] = "Scop",
+						["hp"] = 981797,
+						["ts"] = 1477448749.857,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 20616,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 1192142,
+						["ts"] = 1477448751.187,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 30444,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1237364,
+						["ts"] = 1477448751.964,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 5203,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1242567,
+						["ts"] = 1477448752.138,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 19881,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 1262448,
+						["ts"] = 1477448752.892,
+					}, -- [9]
+					{
+						["ts"] = 1477448754.958,
+						["amount"] = 30445,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1307570,
+						["absorb"] = 0,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 5204,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1312774,
+						["ts"] = 1477448755.129,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 30445,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1372587,
+						["ts"] = 1477448757.966,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 5203,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1377790,
+						["ts"] = 1477448758.136,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 263146,
+						["spellid"] = 34861,
+						["srcname"] = "Scop",
+						["hp"] = 820446,
+						["ts"] = 1477448745.871,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 58383,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 878829,
+						["ts"] = 1477448745.969,
+					}, -- [15]
+					["pos"] = 14,
 				},
 				["healingspells"] = {
 					["Cauterizing Blink"] = {
@@ -35779,18 +35779,25 @@ SkadaPerCharDB = {
 						["uptime"] = 23,
 						["auratype"] = "BUFF",
 					},
-					["Nether Tempest"] = {
-						["name"] = "Nether Tempest",
-						["active"] = 0,
-						["id"] = 114923,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 2147,
-					},
 					["Quickening"] = {
 						["name"] = "Quickening",
 						["active"] = 0,
 						["id"] = 198924,
 						["uptime"] = 181,
+						["auratype"] = "BUFF",
+					},
+					["Mark of Aluneth"] = {
+						["name"] = "Mark of Aluneth",
+						["active"] = 0,
+						["id"] = 224968,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 265,
+					},
+					["Well Fed"] = {
+						["name"] = "Well Fed",
+						["active"] = 0,
+						["id"] = 225599,
+						["uptime"] = 335,
 						["auratype"] = "BUFF",
 					},
 					["Blink"] = {
@@ -35800,19 +35807,12 @@ SkadaPerCharDB = {
 						["id"] = 1953,
 						["name"] = "Blink",
 					},
-					["Well Fed"] = {
-						["name"] = "Well Fed",
+					["Nether Tempest"] = {
+						["name"] = "Nether Tempest",
 						["active"] = 0,
-						["id"] = 225599,
-						["uptime"] = 335,
-						["auratype"] = "BUFF",
-					},
-					["Mark of Aluneth"] = {
-						["name"] = "Mark of Aluneth",
-						["active"] = 0,
-						["id"] = 224968,
+						["id"] = 114923,
 						["auratype"] = "DEBUFF",
-						["uptime"] = 265,
+						["uptime"] = 2147,
 					},
 					["Displacement Beacon"] = {
 						["uptime"] = 218,
@@ -35863,7 +35863,23 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["shielding"] = 31490606,
+				["power"] = {
+					[16] = {
+						["spells"] = {
+							[208030] = 319,
+							[30451] = 573,
+							[1449] = 172,
+						},
+						["amount"] = 1064,
+					},
+					[0] = {
+						["spells"] = {
+							[12051] = 25629318,
+							[188018] = 240003,
+						},
+						["amount"] = 25869321,
+					},
+				},
 				["damage"] = 869659195,
 				["damagespells"] = {
 					["Arcane Blast"] = {
@@ -36110,9 +36126,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447736.92901,
 								["amount"] = -1039710,
+								["srcname"] = "Xavius",
 								["hp"] = 461573,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [1]
 							{
 								["spellname"] = "Silverstone dies",
@@ -36131,44 +36147,44 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447701.95004,
 								["amount"] = -152622,
+								["spellid"] = 209294,
 								["hp"] = 1875858,
 								["srcname"] = "Xavius",
-								["spellid"] = 209294,
 							}, -- [4]
 							{
 								["ts"] = 1477447702.94905,
 								["amount"] = -152622,
+								["srcname"] = "Xavius",
 								["hp"] = 1723236,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [5]
 							{
 								["ts"] = 1477447704.02606,
 								["amount"] = -152622,
+								["srcname"] = "Xavius",
 								["hp"] = 1570614,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [6]
 							{
 								["ts"] = 1477447704.94107,
 								["amount"] = -152622,
+								["srcname"] = "Xavius",
 								["hp"] = 1417992,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [7]
 							{
 								["ts"] = 1477447715.42108,
 								["amount"] = -446100,
+								["srcname"] = "Xavius",
 								["hp"] = 971892,
 								["spellid"] = 206369,
-								["srcname"] = "Xavius",
 							}, -- [8]
 							{
 								["ts"] = 1477447720.35909,
 								["amount"] = -952343,
+								["srcname"] = "Xavius",
 								["hp"] = 971892,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [9]
 							{
 								["absorb"] = 0,
@@ -36181,37 +36197,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447730.02911,
 								["amount"] = -134605,
+								["srcname"] = "Silverstone",
 								["hp"] = 575363,
 								["spellid"] = 87023,
-								["srcname"] = "Silverstone",
 							}, -- [11]
 							{
 								["ts"] = 1477447731.52412,
 								["amount"] = -134605,
+								["srcname"] = "Silverstone",
 								["hp"] = 440758,
 								["spellid"] = 87023,
-								["srcname"] = "Silverstone",
 							}, -- [12]
 							{
 								["ts"] = 1477447733.03713,
 								["amount"] = -134605,
+								["srcname"] = "Silverstone",
 								["hp"] = 306153,
 								["spellid"] = 87023,
-								["srcname"] = "Silverstone",
 							}, -- [13]
 							{
 								["ts"] = 1477447733.41914,
 								["amount"] = -835449,
+								["srcname"] = "Xavius",
 								["hp"] = 306153,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [14]
 							{
 								["ts"] = 1477447735.42715,
 								["amount"] = -958448,
+								["srcname"] = "Xavius",
 								["hp"] = 1420021,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [15]
 							["pos"] = 3,
 						},
@@ -36219,129 +36235,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 99252616,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 27383,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1051221,
-						["ts"] = 1477448743.302,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 12764,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1063985,
-						["ts"] = 1477448744.203,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 25326,
-						["spellid"] = 120692,
-						["srcname"] = "Zerra",
-						["hp"] = 1089311,
-						["ts"] = 1477448744.78,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 23671,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 808710,
-						["ts"] = 1477448745.075,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 10001,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 818711,
-						["ts"] = 1477448745.871,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 53313,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 872024,
-						["ts"] = 1477448747.757,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 26262,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 898286,
-						["ts"] = 1477448749.504,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 10407,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1283776,
-						["ts"] = 1477448757.141,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 35227,
-						["spellid"] = 189800,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 870003,
-						["ts"] = 1477448738.902,
-					}, -- [9]
-					{
-						["ts"] = 1477448739.701,
-						["amount"] = 60326,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 930329,
-						["absorb"] = 0,
-					}, -- [10]
-					{
-						["ts"] = 1477448739.764,
-						["amount"] = 17396,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 947725,
-						["absorb"] = 0,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 16466,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 964191,
-						["ts"] = 1477448740.657,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 29488,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 993679,
-						["ts"] = 1477448741.351,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 15544,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1009223,
-						["ts"] = 1477448741.542,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 14615,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1023838,
-						["ts"] = 1477448742.433,
-					}, -- [15]
-					["pos"] = 9,
-				},
+				["shielding"] = 31490606,
 				["id"] = "Player-1169-069B0279",
 				["maxhp"] = 2028480,
 				["healing"] = 35518721,
@@ -36640,18 +36534,18 @@ SkadaPerCharDB = {
 						["min"] = 81920,
 						["absorbed"] = 0,
 					},
-					["Nightmare Gaze"] = {
+					["Nightmare Javelin"] = {
 						["crushing"] = 0,
-						["id"] = 210931,
-						["damage"] = 3028239,
-						["max"] = 611570,
+						["id"] = 211507,
+						["damage"] = 473982,
+						["max"] = 68490,
 						["glancing"] = 0,
-						["name"] = "Nightmare Gaze",
+						["name"] = "Nightmare Javelin",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 5,
+						["totalhits"] = 7,
 						["resisted"] = 0,
-						["min"] = 590135,
+						["min"] = 66926,
 						["absorbed"] = 0,
 					},
 					["Spew Corruption"] = {
@@ -36696,20 +36590,6 @@ SkadaPerCharDB = {
 						["min"] = 324546,
 						["absorbed"] = 0,
 					},
-					["Nightmare Javelin"] = {
-						["crushing"] = 0,
-						["id"] = 211507,
-						["damage"] = 473982,
-						["max"] = 68490,
-						["glancing"] = 0,
-						["name"] = "Nightmare Javelin",
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 7,
-						["resisted"] = 0,
-						["min"] = 66926,
-						["absorbed"] = 0,
-					},
 					["Corrupting Nova"] = {
 						["crushing"] = 0,
 						["id"] = 207830,
@@ -36723,6 +36603,20 @@ SkadaPerCharDB = {
 						["resisted"] = 0,
 						["min"] = 355970,
 						["absorbed"] = 177697,
+					},
+					["Corruption: Crushing Shadows"] = {
+						["crushing"] = 0,
+						["id"] = 208860,
+						["damage"] = 4647975,
+						["max"] = 1202041,
+						["glancing"] = 0,
+						["name"] = "Corruption: Crushing Shadows",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 18,
+						["resisted"] = 0,
+						["min"] = 29189,
+						["absorbed"] = 243519,
 					},
 					["Nightmare Bolt"] = {
 						["crushing"] = 0,
@@ -36850,19 +36744,19 @@ SkadaPerCharDB = {
 						["min"] = 294816,
 						["absorbed"] = 0,
 					},
-					["Tainted Discharge"] = {
+					["Nightmare Gaze"] = {
 						["crushing"] = 0,
-						["id"] = 208385,
-						["damage"] = 2345919,
-						["max"] = 182578,
+						["id"] = 210931,
+						["damage"] = 3028239,
+						["max"] = 611570,
 						["glancing"] = 0,
-						["name"] = "Tainted Discharge",
+						["name"] = "Nightmare Gaze",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 13,
+						["totalhits"] = 5,
 						["resisted"] = 0,
-						["min"] = 154987,
-						["absorbed"] = 27591,
+						["min"] = 590135,
+						["absorbed"] = 0,
 					},
 					["Putrid Swarm"] = {
 						["crushing"] = 0,
@@ -37088,19 +36982,19 @@ SkadaPerCharDB = {
 						["min"] = 629321,
 						["absorbed"] = 0,
 					},
-					["Corruption: Crushing Shadows"] = {
+					["Tainted Discharge"] = {
 						["crushing"] = 0,
-						["id"] = 208860,
-						["damage"] = 4647975,
-						["max"] = 1202041,
+						["id"] = 208385,
+						["damage"] = 2345919,
+						["max"] = 182578,
 						["glancing"] = 0,
-						["name"] = "Corruption: Crushing Shadows",
+						["name"] = "Tainted Discharge",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 18,
+						["totalhits"] = 13,
 						["resisted"] = 0,
-						["min"] = 29189,
-						["absorbed"] = 243519,
+						["min"] = 154987,
+						["absorbed"] = 27591,
 					},
 					["Cauterize"] = {
 						["crushing"] = 0,
@@ -37213,22 +37107,128 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Silverstone",
 				["alertCount"] = 0,
-				["power"] = {
-					[16] = {
-						["spells"] = {
-							[208030] = 319,
-							[30451] = 573,
-							[1449] = 172,
-						},
-						["amount"] = 1064,
-					},
-					[0] = {
-						["spells"] = {
-							[12051] = 25629318,
-							[188018] = 240003,
-						},
-						["amount"] = 25869321,
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 27383,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1051221,
+						["ts"] = 1477448743.302,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 12764,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1063985,
+						["ts"] = 1477448744.203,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 25326,
+						["spellid"] = 120692,
+						["srcname"] = "Zerra",
+						["hp"] = 1089311,
+						["ts"] = 1477448744.78,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 23671,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 808710,
+						["ts"] = 1477448745.075,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 10001,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 818711,
+						["ts"] = 1477448745.871,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 53313,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 872024,
+						["ts"] = 1477448747.757,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 26262,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 898286,
+						["ts"] = 1477448749.504,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 10407,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1283776,
+						["ts"] = 1477448757.141,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 35227,
+						["spellid"] = 189800,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 870003,
+						["ts"] = 1477448738.902,
+					}, -- [9]
+					{
+						["ts"] = 1477448739.701,
+						["amount"] = 60326,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 930329,
+						["absorb"] = 0,
+					}, -- [10]
+					{
+						["ts"] = 1477448739.764,
+						["amount"] = 17396,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 947725,
+						["absorb"] = 0,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 16466,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 964191,
+						["ts"] = 1477448740.657,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 29488,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 993679,
+						["ts"] = 1477448741.351,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 15544,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1009223,
+						["ts"] = 1477448741.542,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 14615,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1023838,
+						["ts"] = 1477448742.433,
+					}, -- [15]
+					["pos"] = 9,
 				},
 				["healingspells"] = {
 					["Ice Barrier"] = {
@@ -37431,19 +37431,19 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 245,
 					},
-					["Enraged Regeneration"] = {
-						["uptime"] = 43,
-						["active"] = 0,
-						["auratype"] = "BUFF",
-						["id"] = 184364,
-						["name"] = "Enraged Regeneration",
-					},
 					["Battle Cry"] = {
 						["name"] = "Battle Cry",
 						["active"] = 0,
 						["id"] = 1719,
 						["auratype"] = "BUFF",
 						["uptime"] = 244,
+					},
+					["Berserking"] = {
+						["name"] = "Berserking",
+						["active"] = 0,
+						["id"] = 200953,
+						["uptime"] = 0,
+						["auratype"] = "BUFF",
 					},
 					["Infested Ground"] = {
 						["name"] = "Infested Ground",
@@ -37480,12 +37480,12 @@ SkadaPerCharDB = {
 						["uptime"] = 100,
 						["auratype"] = "BUFF",
 					},
-					["Berserking"] = {
-						["name"] = "Berserking",
+					["Enraged Regeneration"] = {
+						["uptime"] = 43,
 						["active"] = 0,
-						["id"] = 200953,
-						["uptime"] = 0,
 						["auratype"] = "BUFF",
+						["id"] = 184364,
+						["name"] = "Enraged Regeneration",
 					},
 					["Battle Scars"] = {
 						["name"] = "Battle Scars",
@@ -37522,7 +37522,17 @@ SkadaPerCharDB = {
 				["interrupts"] = 5,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+					{
+						["spells"] = {
+							[100] = 1125,
+							[85288] = 2625,
+							[23881] = 5580,
+							[218826] = 79,
+						},
+						["amount"] = 9409,
+					}, -- [1]
+				},
 				["damage"] = 755848620,
 				["damagespells"] = {
 					["Charge"] = {
@@ -37746,23 +37756,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447704.94201,
 								["amount"] = -177693,
+								["srcname"] = "Xavius",
 								["hp"] = 481383,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [1]
 							{
 								["ts"] = 1477447705.05602,
 								["amount"] = -118094,
+								["srcname"] = "Xavius",
 								["hp"] = 363289,
 								["spellid"] = 209158,
-								["srcname"] = "Xavius",
 							}, -- [2]
 							{
 								["ts"] = 1477447705.31503,
 								["amount"] = -675993,
+								["srcname"] = "Xavius",
 								["hp"] = 363289,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [3]
 							{
 								["spellname"] = "Volan dies",
@@ -37805,44 +37815,44 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447700.78809,
 								["amount"] = -609012,
+								["srcname"] = "Xavius",
 								["hp"] = 2489244,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [9]
 							{
 								["ts"] = 1477447701.9501,
 								["amount"] = -177693,
+								["srcname"] = "Xavius",
 								["hp"] = 1815352,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [10]
 							{
 								["ts"] = 1477447702.94911,
 								["amount"] = -177693,
+								["srcname"] = "Xavius",
 								["hp"] = 1637659,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [11]
 							{
 								["ts"] = 1477447703.80412,
 								["amount"] = -788340,
+								["srcname"] = "Xavius",
 								["hp"] = 1637659,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [12]
 							{
 								["ts"] = 1477447704.02613,
 								["amount"] = -177693,
+								["srcname"] = "Xavius",
 								["hp"] = 671626,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [13]
 							{
 								["ts"] = 1477447704.06914,
 								["amount"] = -118094,
+								["srcname"] = "Xavius",
 								["hp"] = 553532,
 								["spellid"] = 209158,
-								["srcname"] = "Xavius",
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -37862,16 +37872,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446373.87201,
 								["amount"] = -107456,
+								["srcname"] = "Cenarius",
 								["hp"] = 119990,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [1]
 							{
 								["ts"] = 1477446373.95302,
 								["amount"] = -144810,
+								["srcname"] = "Cenarius",
 								["hp"] = 1,
 								["spellid"] = 214712,
-								["srcname"] = "Cenarius",
 							}, -- [2]
 							{
 								["spellname"] = "Volan dies",
@@ -37890,16 +37900,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446367.85805,
 								["amount"] = -162537,
+								["srcname"] = "Cenarius",
 								["hp"] = 1262237,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [5]
 							{
 								["ts"] = 1477446367.94206,
 								["amount"] = -239976,
+								["srcname"] = "Cenarius",
 								["hp"] = 1022261,
 								["spellid"] = 214712,
-								["srcname"] = "Cenarius",
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -37912,9 +37922,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446368.92108,
 								["amount"] = -235579,
+								["srcname"] = "Cenarius",
 								["hp"] = 819880,
 								["spellid"] = 214712,
-								["srcname"] = "Cenarius",
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -37927,23 +37937,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446369.8451,
 								["amount"] = -170344,
+								["srcname"] = "Cenarius",
 								["hp"] = 679052,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [10]
 							{
 								["ts"] = 1477446369.93011,
 								["amount"] = -231089,
+								["spellid"] = 214712,
 								["hp"] = 447963,
 								["srcname"] = "Cenarius",
-								["spellid"] = 214712,
 							}, -- [11]
 							{
 								["ts"] = 1477446371.84312,
 								["amount"] = -105355,
+								["hp"] = 317251,
 								["srcname"] = "Cenarius",
 								["spellid"] = 210279,
-								["hp"] = 317251,
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -37956,9 +37966,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446372.92314,
 								["amount"] = -147541,
+								["srcname"] = "Cenarius",
 								["hp"] = 198578,
 								["spellid"] = 214712,
-								["srcname"] = "Cenarius",
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -37974,129 +37984,7 @@ SkadaPerCharDB = {
 					}, -- [2]
 				},
 				["damagetaken"] = 144907606,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 22011,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 1902107,
-						["ts"] = 1477448747.757,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 14535,
-						["spellid"] = 94472,
-						["srcname"] = "Zerra",
-						["hp"] = 1916642,
-						["ts"] = 1477448748.733,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 4997,
-						["spellid"] = 8936,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1921639,
-						["ts"] = 1477448749.075,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 34476,
-						["spellid"] = 774,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1956115,
-						["ts"] = 1477448749.395,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 21579,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 1977694,
-						["ts"] = 1477448749.504,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 24192,
-						["spellid"] = 61295,
-						["srcname"] = "Royalty",
-						["hp"] = 2001886,
-						["ts"] = 1477448749.504,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 4996,
-						["spellid"] = 8936,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 2429545,
-						["ts"] = 1477448750.841,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 34475,
-						["spellid"] = 774,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 2464020,
-						["ts"] = 1477448752.045,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 22961,
-						["spellid"] = 61295,
-						["srcname"] = "Royalty",
-						["hp"] = 2486981,
-						["ts"] = 1477448752.079,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 3896,
-						["spellid"] = 8936,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 2490877,
-						["ts"] = 1477448752.216,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 3563,
-						["spellid"] = 61295,
-						["srcname"] = "Royalty",
-						["hp"] = 2525102,
-						["ts"] = 1477448752.462,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 29756,
-						["spellid"] = 774,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 2440827,
-						["ts"] = 1477448754.863,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 29756,
-						["spellid"] = 774,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 2499552,
-						["ts"] = 1477448757.354,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 10407,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 2538843,
-						["ts"] = 1477448759.135,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 29756,
-						["spellid"] = 774,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 2568599,
-						["ts"] = 1477448760,
-					}, -- [15]
-					["pos"] = 1,
-				},
+				["shielding"] = 0,
 				["id"] = "Player-1169-069B6185",
 				["maxhp"] = 2489244,
 				["healing"] = 35308233,
@@ -39094,16 +38982,128 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Volan",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 					{
-						["spells"] = {
-							[100] = 1125,
-							[85288] = 2625,
-							[23881] = 5580,
-							[218826] = 79,
-						},
-						["amount"] = 9409,
+						["absorb"] = 0,
+						["amount"] = 22011,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 1902107,
+						["ts"] = 1477448747.757,
 					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 14535,
+						["spellid"] = 94472,
+						["srcname"] = "Zerra",
+						["hp"] = 1916642,
+						["ts"] = 1477448748.733,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 4997,
+						["spellid"] = 8936,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1921639,
+						["ts"] = 1477448749.075,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 34476,
+						["spellid"] = 774,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1956115,
+						["ts"] = 1477448749.395,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 21579,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 1977694,
+						["ts"] = 1477448749.504,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 24192,
+						["spellid"] = 61295,
+						["srcname"] = "Royalty",
+						["hp"] = 2001886,
+						["ts"] = 1477448749.504,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 4996,
+						["spellid"] = 8936,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 2429545,
+						["ts"] = 1477448750.841,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 34475,
+						["spellid"] = 774,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 2464020,
+						["ts"] = 1477448752.045,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 22961,
+						["spellid"] = 61295,
+						["srcname"] = "Royalty",
+						["hp"] = 2486981,
+						["ts"] = 1477448752.079,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 3896,
+						["spellid"] = 8936,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 2490877,
+						["ts"] = 1477448752.216,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 3563,
+						["spellid"] = 61295,
+						["srcname"] = "Royalty",
+						["hp"] = 2525102,
+						["ts"] = 1477448752.462,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 29756,
+						["spellid"] = 774,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 2440827,
+						["ts"] = 1477448754.863,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 29756,
+						["spellid"] = 774,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 2499552,
+						["ts"] = 1477448757.354,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 10407,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 2538843,
+						["ts"] = 1477448759.135,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 29756,
+						["spellid"] = 774,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 2568599,
+						["ts"] = 1477448760,
+					}, -- [15]
+					["pos"] = 1,
 				},
 				["healingspells"] = {
 					["Bloodthirst Heal"] = {
@@ -39187,11 +39187,11 @@ SkadaPerCharDB = {
 						["id"] = 188838,
 						["name"] = "Flame Shock",
 					},
-					["Infested Ground"] = {
-						["name"] = "Infested Ground",
+					["Temporal Displacement"] = {
+						["name"] = "Temporal Displacement",
 						["active"] = 0,
-						["id"] = 203045,
-						["uptime"] = 1,
+						["id"] = 80354,
+						["uptime"] = 708,
 						["auratype"] = "DEBUFF",
 					},
 					["Heroism"] = {
@@ -39201,12 +39201,12 @@ SkadaPerCharDB = {
 						["uptime"] = 40,
 						["auratype"] = "BUFF",
 					},
-					["Ancestral Vigor"] = {
-						["name"] = "Ancestral Vigor",
+					["Infested Ground"] = {
+						["name"] = "Infested Ground",
 						["active"] = 0,
-						["id"] = 207400,
-						["uptime"] = 0,
-						["auratype"] = "BUFF",
+						["id"] = 203045,
+						["uptime"] = 1,
+						["auratype"] = "DEBUFF",
 					},
 					["Ancestral Guidance"] = {
 						["uptime"] = 110,
@@ -39215,12 +39215,12 @@ SkadaPerCharDB = {
 						["id"] = 108281,
 						["name"] = "Ancestral Guidance",
 					},
-					["Temporal Displacement"] = {
-						["name"] = "Temporal Displacement",
+					["Ancestral Vigor"] = {
+						["name"] = "Ancestral Vigor",
 						["active"] = 0,
-						["id"] = 80354,
-						["uptime"] = 708,
-						["auratype"] = "DEBUFF",
+						["id"] = 207400,
+						["uptime"] = 0,
+						["auratype"] = "BUFF",
 					},
 					["Lava Surge"] = {
 						["name"] = "Lava Surge",
@@ -39341,7 +39341,16 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 32,
 				["ccbreaks"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+					[0] = {
+						["spells"] = {
+							[188017] = 158553,
+							[188030] = 240000,
+							[101033] = 2137104,
+						},
+						["amount"] = 2535657,
+					},
+				},
 				["damage"] = 14916367,
 				["damagespells"] = {
 					["Lava Burst"] = {
@@ -39420,30 +39429,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447701.90801,
 								["amount"] = -157102,
+								["srcname"] = "Xavius",
 								["hp"] = 1470556,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [1]
 							{
 								["ts"] = 1477447702.95002,
 								["amount"] = -157103,
+								["srcname"] = "Xavius",
 								["hp"] = 1313453,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [2]
 							{
 								["ts"] = 1477447703.90803,
 								["amount"] = -157102,
+								["srcname"] = "Xavius",
 								["hp"] = 1156351,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [3]
 							{
 								["ts"] = 1477447704.94204,
 								["amount"] = -157102,
+								["srcname"] = "Xavius",
 								["hp"] = 999249,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -39464,9 +39473,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447715.34007,
 								["amount"] = -459197,
+								["srcname"] = "Xavius",
 								["hp"] = 560967,
 								["spellid"] = 206369,
-								["srcname"] = "Xavius",
 							}, -- [7]
 							{
 								["absorb"] = 0,
@@ -39485,23 +39494,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447740.7621,
 								["amount"] = -157102,
+								["srcname"] = "Xavius",
 								["hp"] = 226385,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [10]
 							{
 								["ts"] = 1477447741.59611,
 								["amount"] = -157102,
+								["srcname"] = "Xavius",
 								["hp"] = 69283,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [11]
 							{
 								["ts"] = 1477447741.79812,
 								["amount"] = -157103,
+								["srcname"] = "Xavius",
 								["hp"] = 1,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [12]
 							{
 								["spellname"] = "Royalty dies",
@@ -39567,16 +39576,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477445434.56005,
 								["amount"] = -402679,
+								["srcname"] = "Elerethe Renferal",
 								["hp"] = 276853,
 								["spellid"] = 212709,
-								["srcname"] = "Elerethe Renferal",
 							}, -- [5]
 							{
 								["ts"] = 1477445435.47706,
 								["amount"] = -383228,
+								["srcname"] = "Elerethe Renferal",
 								["hp"] = 1,
 								["spellid"] = 212709,
-								["srcname"] = "Elerethe Renferal",
 							}, -- [6]
 							{
 								["spellname"] = "Royalty dies",
@@ -39616,9 +39625,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477445429.64404,
 								["amount"] = -389121,
+								["srcname"] = "Elerethe Renferal",
 								["hp"] = 1,
 								["spellid"] = 212709,
-								["srcname"] = "Elerethe Renferal",
 							}, -- [4]
 							{
 								["spellname"] = "Royalty dies",
@@ -39695,9 +39704,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477445428.57715,
 								["amount"] = -393803,
+								["srcname"] = "Elerethe Renferal",
 								["hp"] = 374647,
 								["spellid"] = 212709,
-								["srcname"] = "Elerethe Renferal",
 							}, -- [15]
 							["pos"] = 6,
 						},
@@ -39739,16 +39748,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442710.72005,
 								["amount"] = -310888,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 1132466,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [5]
 							{
 								["ts"] = 1477442711.76706,
 								["amount"] = -322403,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 817074,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -39761,9 +39770,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442712.71708,
 								["amount"] = -250437,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 621759,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -39776,9 +39785,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442713.7111,
 								["amount"] = -250438,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 399091,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [10]
 							{
 								["absorb"] = 0,
@@ -39807,16 +39816,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442714.72014,
 								["amount"] = -250437,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 231080,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [14]
 							{
 								["ts"] = 1477442715.75515,
 								["amount"] = -250437,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 1,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [15]
 							["pos"] = 2,
 						},
@@ -39824,129 +39833,7 @@ SkadaPerCharDB = {
 					}, -- [4]
 				},
 				["damagetaken"] = 108459660,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 61295,
-						["srcname"] = "Royalty",
-						["hp"] = 2171913,
-						["ts"] = 1477448754.985,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 2171913,
-						["ts"] = 1477448755.67,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 8936,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 2171913,
-						["ts"] = 1477448755.744,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 8936,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 2171913,
-						["ts"] = 1477448757.532,
-					}, -- [4]
-					{
-						["ts"] = 1477448757.598,
-						["amount"] = 0,
-						["spellid"] = 61295,
-						["srcname"] = "Royalty",
-						["hp"] = 2171913,
-						["absorb"] = 0,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 61295,
-						["srcname"] = "Royalty",
-						["hp"] = 2171913,
-						["ts"] = 1477448757.871,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 8936,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 2171913,
-						["ts"] = 1477448758.636,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 2171913,
-						["ts"] = 1477448758.686,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 82673,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1868423,
-						["ts"] = 1477448749.662,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 21651,
-						["spellid"] = 61295,
-						["srcname"] = "Royalty",
-						["hp"] = 1890074,
-						["ts"] = 1477448749.895,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 4312,
-						["spellid"] = 8936,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 2206008,
-						["ts"] = 1477448750.435,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 105302,
-						["spellid"] = 596,
-						["srcname"] = "Scop",
-						["hp"] = 2311310,
-						["ts"] = 1477448751.594,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 4313,
-						["spellid"] = 8936,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 2315623,
-						["ts"] = 1477448752.203,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 40933,
-						["spellid"] = 61295,
-						["srcname"] = "Royalty",
-						["hp"] = 2356556,
-						["ts"] = 1477448752.462,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 32548,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 2389104,
-						["ts"] = 1477448752.67,
-					}, -- [15]
-					["pos"] = 9,
-				},
+				["shielding"] = 0,
 				["id"] = "Player-1169-07982349",
 				["maxhp"] = 1888620,
 				["healing"] = 639192293,
@@ -40273,19 +40160,19 @@ SkadaPerCharDB = {
 						["min"] = 20726,
 						["absorbed"] = 0,
 					},
-					["Tainted Discharge"] = {
+					["Charge"] = {
 						["crushing"] = 0,
-						["id"] = 208385,
-						["damage"] = 569678,
-						["max"] = 187938,
+						["id"] = 59611,
+						["damage"] = 603139,
+						["max"] = 603139,
 						["glancing"] = 0,
-						["name"] = "Tainted Discharge",
+						["name"] = "Charge",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 4,
+						["totalhits"] = 1,
 						["resisted"] = 0,
-						["min"] = 5865,
-						["absorbed"] = 182073,
+						["min"] = 603139,
+						["absorbed"] = 0,
 					},
 					["Barreling Impact"] = {
 						["crushing"] = 0,
@@ -40357,19 +40244,19 @@ SkadaPerCharDB = {
 						["min"] = 10546,
 						["absorbed"] = 0,
 					},
-					["Charge"] = {
+					["Corruption: Crushing Shadows"] = {
 						["crushing"] = 0,
-						["id"] = 59611,
-						["damage"] = 603139,
-						["max"] = 603139,
+						["id"] = 208860,
+						["damage"] = 4537582,
+						["max"] = 339379,
 						["glancing"] = 0,
-						["name"] = "Charge",
+						["name"] = "Corruption: Crushing Shadows",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 1,
+						["totalhits"] = 20,
 						["resisted"] = 0,
-						["min"] = 603139,
-						["absorbed"] = 0,
+						["min"] = 195159,
+						["absorbed"] = 182073,
 					},
 					["Corrupting Nova"] = {
 						["crushing"] = 0,
@@ -40399,19 +40286,19 @@ SkadaPerCharDB = {
 						["min"] = 306537,
 						["absorbed"] = 0,
 					},
-					["Nightmare Gaze"] = {
+					["Tainted Discharge"] = {
 						["crushing"] = 0,
-						["id"] = 210931,
-						["damage"] = 1857108,
-						["max"] = 622542,
+						["id"] = 208385,
+						["damage"] = 569678,
+						["max"] = 187938,
 						["glancing"] = 0,
-						["name"] = "Nightmare Gaze",
+						["name"] = "Tainted Discharge",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 3,
+						["totalhits"] = 4,
 						["resisted"] = 0,
-						["min"] = 617069,
-						["absorbed"] = 0,
+						["min"] = 5865,
+						["absorbed"] = 182073,
 					},
 					["Trampling Slam"] = {
 						["crushing"] = 0,
@@ -40651,19 +40538,19 @@ SkadaPerCharDB = {
 						["min"] = 419035,
 						["absorbed"] = 0,
 					},
-					["Corruption: Crushing Shadows"] = {
+					["Nightmare Gaze"] = {
 						["crushing"] = 0,
-						["id"] = 208860,
-						["damage"] = 4537582,
-						["max"] = 339379,
+						["id"] = 210931,
+						["damage"] = 1857108,
+						["max"] = 622542,
 						["glancing"] = 0,
-						["name"] = "Corruption: Crushing Shadows",
+						["name"] = "Nightmare Gaze",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 20,
+						["totalhits"] = 3,
 						["resisted"] = 0,
-						["min"] = 195159,
-						["absorbed"] = 182073,
+						["min"] = 617069,
+						["absorbed"] = 0,
 					},
 					["Nightmare Javelin"] = {
 						["crushing"] = 0,
@@ -41018,12 +40905,11 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Pet-0-3780-1520-12561-416-0101ED40E5"] = {
-						["role"] = "NONE",
-						["name"] = "Pizkin",
-						["amount"] = 0,
-						["class"] = "WARLOCK",
+					["Creature-0-3018-1520-19675-113347-00001012DC"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-113347-0000100F1A"] = {
 						["shielding"] = 0,
@@ -41031,11 +40917,12 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 166327,
 					},
-					["Creature-0-3018-1520-19675-103636-00000FF3CF"] = {
-						["shielding"] = 0,
+					["Pet-0-3018-1520-19675-35189-0402050114"] = {
 						["role"] = "NONE",
-						["name"] = "Arcane Familiar",
-						["amount"] = 0,
+						["name"] = "Skoll",
+						["amount"] = 241664,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
 					},
 					["Creature-0-3018-1520-19675-106551-00000FFA6C"] = {
 						["shielding"] = 0,
@@ -41049,10 +40936,10 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00001012DC"] = {
+					["Creature-0-3018-1520-19675-103636-00000FF3CF"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
+						["name"] = "Arcane Familiar",
 						["amount"] = 0,
 					},
 					["Player-1169-06BACF99"] = {
@@ -41062,11 +40949,11 @@ SkadaPerCharDB = {
 						["class"] = "PALADIN",
 						["shielding"] = 0,
 					},
-					["Pet-0-3018-1520-19675-35189-0402050114"] = {
+					["Pet-0-3780-1520-12561-416-0101ED40E5"] = {
 						["role"] = "NONE",
-						["name"] = "Skoll",
-						["amount"] = 241664,
-						["class"] = "WARRIOR",
+						["name"] = "Pizkin",
+						["amount"] = 0,
+						["class"] = "WARLOCK",
 						["shielding"] = 0,
 					},
 					["Creature-0-3018-1520-19675-113347-00001004A7"] = {
@@ -41131,24 +41018,23 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Player-1169-06C144D6"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Daerlith",
-						["amount"] = 20761485,
-						["class"] = "SHAMAN",
-						["shielding"] = 0,
-					},
-					["Creature-0-3018-1520-19675-99541-00000FFF6E"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Risen Skulker",
-						["amount"] = 0,
-					},
 					["Creature-0-3018-1520-19675-100820-00009002E5"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Spirit Wolf",
 						["amount"] = 53899,
+					},
+					["Creature-0-3018-1520-19675-27829-0000100EDE"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Ebon Gargoyle",
+						["amount"] = 84306,
+					},
+					["Creature-0-3018-1520-19675-100820-00001002E5"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Spirit Wolf",
+						["amount"] = 53481,
 					},
 					["Vehicle-0-3018-1520-19675-98035-0000900A37"] = {
 						["shielding"] = 0,
@@ -41156,36 +41042,36 @@ SkadaPerCharDB = {
 						["name"] = "Dreadstalker",
 						["amount"] = 23041,
 					},
-					["Creature-0-3018-1520-19675-106551-00000FFF4D"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Hati",
-						["amount"] = 145433,
-					},
-					["Player-1169-06C17145"] = {
-						["role"] = "HEALER",
-						["name"] = "Zerra",
-						["amount"] = 15930875,
-						["class"] = "PRIEST",
-						["shielding"] = 0,
-					},
-					["Vehicle-0-3018-1520-19675-98035-0000100F22"] = {
+					["Vehicle-0-3018-1520-19675-98035-0000100F11"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Dreadstalker",
-						["amount"] = 0,
+						["amount"] = 42618,
 					},
-					["Creature-0-3018-1520-19675-113347-0000100F18"] = {
+					["Creature-0-3018-1520-19675-113347-0000101386"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
-						["amount"] = 163767,
+						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-27829-00000FFBD7"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Ebon Gargoyle",
 						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-99541-00000FFF6E"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Risen Skulker",
+						["amount"] = 0,
+					},
+					["Player-1169-06C144D6"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Daerlith",
+						["amount"] = 20761485,
+						["class"] = "SHAMAN",
+						["shielding"] = 0,
 					},
 					["Creature-0-3018-1520-19675-106551-00000FFF21"] = {
 						["shielding"] = 0,
@@ -41200,30 +41086,30 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-27829-0000100EDE"] = {
+					["Creature-0-3018-1520-19675-11859-00000FFBD8"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Ebon Gargoyle",
-						["amount"] = 84306,
+						["name"] = "Doomguard",
+						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000100FC6"] = {
+					["Creature-0-3018-1520-19675-113347-0000100F18"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
-						["amount"] = 0,
+						["amount"] = 163767,
 					},
-					["Player-1169-06C1070E"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Lenae",
-						["amount"] = 12441668,
-						["class"] = "MAGE",
-						["shielding"] = 0,
-					},
-					["Creature-0-3018-1520-19675-100820-00001003B4"] = {
+					["Creature-0-3018-1520-19675-113347-0000100CCD"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Spirit Wolf",
-						["amount"] = 34905,
+						["name"] = "Beast",
+						["amount"] = 17801,
+					},
+					["Pet-0-3018-1520-19675-17252-010206FAA5"] = {
+						["role"] = "NONE",
+						["name"] = "Skelkilig",
+						["amount"] = 281833,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
 					},
 					["Player-1169-06A1ACBD"] = {
 						["role"] = "DAMAGER",
@@ -41232,11 +41118,11 @@ SkadaPerCharDB = {
 						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-100820-00000FF5EA"] = {
+					["Creature-0-3018-1520-19675-106551-0000100C3C"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Spirit Wolf",
-						["amount"] = 22818,
+						["name"] = "Hati",
+						["amount"] = 508652,
 					},
 					["Creature-0-3018-1520-19675-27829-00001006D4"] = {
 						["shielding"] = 0,
@@ -41256,6 +41142,45 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
+					["Player-1169-06C22E36"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Rockan",
+						["amount"] = 29535951,
+						["class"] = "DEATHKNIGHT",
+						["shielding"] = 0,
+					},
+					["Creature-0-3018-1520-19675-100820-0000900AED"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Spirit Wolf",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00000FFE37"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Vehicle-0-3018-1520-19675-98035-0000100A37"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Dreadstalker",
+						["amount"] = 23042,
+					},
+					["Creature-0-3018-1520-19675-104096-0002901338"] = {
+						["role"] = "TANK",
+						["name"] = "Bluebaloo",
+						["amount"] = 15459,
+						["class"] = "DRUID",
+						["shielding"] = 0,
+					},
+					["Player-1169-06A51BF3"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Imenja",
+						["amount"] = 25927967,
+						["class"] = "SHAMAN",
+						["shielding"] = 0,
+					},
 					["Creature-0-3018-1520-19675-106551-0000100B33"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
@@ -41268,44 +41193,6 @@ SkadaPerCharDB = {
 						["amount"] = 125227,
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-000010138A"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-0000100CCD"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 17801,
-					},
-					["Creature-0-3018-1520-19675-103636-0000101077"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Arcane Familiar",
-						["amount"] = 408957,
-					},
-					["Player-1169-06A51BF3"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Imenja",
-						["amount"] = 25927967,
-						["class"] = "SHAMAN",
-						["shielding"] = 0,
-					},
-					["Pet-0-3018-1520-19675-17252-010206FAA5"] = {
-						["role"] = "NONE",
-						["name"] = "Skelkilig",
-						["amount"] = 281833,
-						["class"] = "WARRIOR",
-						["shielding"] = 0,
-					},
-					["Vehicle-0-3018-1520-19675-98035-0000100AFC"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Dreadstalker",
-						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-100820-00008FF5EA"] = {
 						["shielding"] = 0,
@@ -41333,11 +41220,11 @@ SkadaPerCharDB = {
 						["class"] = "WARLOCK",
 						["shielding"] = 0,
 					},
-					["Vehicle-0-3018-1520-19675-98035-0000900A49"] = {
+					["Creature-0-3018-1520-19675-103636-0000101077"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Dreadstalker",
-						["amount"] = 23041,
+						["name"] = "Arcane Familiar",
+						["amount"] = 408957,
 					},
 					["Creature-0-3018-1520-19675-113347-00000FFC91"] = {
 						["shielding"] = 0,
@@ -41364,18 +41251,17 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-000010036A"] = {
+					["Creature-0-3018-1520-19675-113347-000010138A"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Player-1169-06C22E36"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Rockan",
-						["amount"] = 29535951,
-						["class"] = "DEATHKNIGHT",
+					["Creature-0-3018-1520-19675-103636-000010093D"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Arcane Familiar",
+						["amount"] = 205494,
 					},
 					["Creature-0-3018-1520-19675-113347-00000FFBF0"] = {
 						["shielding"] = 0,
@@ -41408,23 +41294,23 @@ SkadaPerCharDB = {
 						["name"] = "Spirit Wolf",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFE37"] = {
+					["Creature-0-3018-1520-19675-113347-00001006E7"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Vehicle-0-3018-1520-19675-98035-0000100A37"] = {
+					["Vehicle-0-3018-1520-19675-98035-0000900AFC"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Dreadstalker",
-						["amount"] = 23042,
+						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-100820-0000900AED"] = {
+					["Vehicle-0-3018-1520-19675-98035-0000900A49"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Spirit Wolf",
-						["amount"] = 0,
+						["name"] = "Dreadstalker",
+						["amount"] = 23041,
 					},
 					["Creature-0-3018-1520-19675-100820-00000FFE8C"] = {
 						["shielding"] = 0,
@@ -41445,11 +41331,11 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFB6A"] = {
+					["Vehicle-0-3018-1520-19675-98035-0000100AFC"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 18087,
+						["name"] = "Dreadstalker",
+						["amount"] = 0,
 					},
 					["Vehicle-0-3018-1520-19675-98035-0000100A49"] = {
 						["shielding"] = 0,
@@ -41457,10 +41343,10 @@ SkadaPerCharDB = {
 						["name"] = "Dreadstalker",
 						["amount"] = 23042,
 					},
-					["Creature-0-3018-1520-19675-113347-00001006E7"] = {
+					["Creature-0-3018-1520-19675-100820-00008FFE8C"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
+						["name"] = "Spirit Wolf",
 						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-11859-00000FFB3E"] = {
@@ -41482,11 +41368,11 @@ SkadaPerCharDB = {
 						["class"] = "WARLOCK",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-103636-000010093D"] = {
+					["Creature-0-3018-1520-19675-113347-00000FF8FB"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Arcane Familiar",
-						["amount"] = 205494,
+						["name"] = "Beast",
+						["amount"] = 6439,
 					},
 					["Pet-0-3018-1520-19675-26125-0301EDD695"] = {
 						["role"] = "NONE",
@@ -41515,11 +41401,17 @@ SkadaPerCharDB = {
 						["name"] = "Hati",
 						["amount"] = 388394,
 					},
-					["Creature-0-3018-1520-19675-106551-0000101087"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFEDB"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Hati",
-						["amount"] = 74006,
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00008FFBAF"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-103636-0000100D21"] = {
 						["shielding"] = 0,
@@ -41527,35 +41419,29 @@ SkadaPerCharDB = {
 						["name"] = "Arcane Familiar",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-100820-00008FFE8C"] = {
+					["Creature-0-3018-1520-19675-106551-0000101087"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Hati",
+						["amount"] = 74006,
+					},
+					["Creature-0-3018-1520-19675-106551-00000FFA1A"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Hati",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-100820-00001003B4"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Spirit Wolf",
-						["amount"] = 0,
+						["amount"] = 34905,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFBE5"] = {
+					["Creature-0-3018-1520-19675-113347-0000100449"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-0000900AFE"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00000FFEDB"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00000FF8FB"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 6439,
 					},
 					["Creature-0-3018-1520-19675-106551-00001004ED"] = {
 						["shielding"] = 0,
@@ -41570,11 +41456,12 @@ SkadaPerCharDB = {
 						["class"] = "PALADIN",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00008FFBAF"] = {
+					["Player-1169-06C1070E"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Lenae",
+						["amount"] = 12441668,
+						["class"] = "MAGE",
 						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-17252-0000100FCE"] = {
 						["shielding"] = 0,
@@ -41582,11 +41469,11 @@ SkadaPerCharDB = {
 						["name"] = "Felguard",
 						["amount"] = 93123,
 					},
-					["Creature-0-3018-1520-19675-100820-0000100C35"] = {
+					["Creature-0-3018-1520-19675-106548-00000FF738"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Spirit Wolf",
-						["amount"] = 17522,
+						["name"] = "Hati",
+						["amount"] = 288962,
 					},
 					["Player-1169-069FE656"] = {
 						["role"] = "DAMAGER",
@@ -41601,12 +41488,11 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Player-1169-06C011D7"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Emelaine",
-						["amount"] = 15071944,
-						["class"] = "HUNTER",
+					["Creature-0-3018-1520-19675-100820-0000100C35"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Spirit Wolf",
+						["amount"] = 17522,
 					},
 					["Creature-0-3018-1520-19675-17252-000010134F"] = {
 						["shielding"] = 0,
@@ -41621,11 +41507,11 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-106548-00000FF738"] = {
+					["Creature-0-3018-1520-19675-100820-00009003B4"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Hati",
-						["amount"] = 288962,
+						["name"] = "Spirit Wolf",
+						["amount"] = 22645,
 					},
 					["Creature-0-3018-1520-19675-113347-00001013DB"] = {
 						["shielding"] = 0,
@@ -41639,7 +41525,7 @@ SkadaPerCharDB = {
 						["name"] = "Hati",
 						["amount"] = 18016,
 					},
-					["Creature-0-3018-1520-19675-113347-00001003D9"] = {
+					["Creature-0-3018-1520-19675-113347-00001013E9"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -41657,11 +41543,12 @@ SkadaPerCharDB = {
 						["name"] = "Spirit Wolf",
 						["amount"] = 17434,
 					},
-					["Creature-0-3018-1520-19675-100820-00009003B4"] = {
+					["Player-1169-06C011D7"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Emelaine",
+						["amount"] = 15071944,
+						["class"] = "HUNTER",
 						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Spirit Wolf",
-						["amount"] = 22645,
 					},
 					["Player-1169-06BFE556"] = {
 						["role"] = "DAMAGER",
@@ -41676,7 +41563,7 @@ SkadaPerCharDB = {
 						["name"] = "Hati",
 						["amount"] = 209536,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFE15"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFE05"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -41729,18 +41616,17 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00001013D9"] = {
+					["Creature-0-3018-1520-19675-113347-00001003D9"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Pet-0-3018-1520-19675-35189-0302050114"] = {
-						["role"] = "NONE",
-						["name"] = "Skoll",
-						["amount"] = 500694,
-						["class"] = "WARRIOR",
+					["Creature-0-3018-1520-19675-113347-00000FFE15"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-113347-0000101395"] = {
 						["shielding"] = 0,
@@ -41761,11 +41647,12 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 12931,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFE05"] = {
-						["shielding"] = 0,
+					["Pet-0-3018-1520-19675-35189-0302050114"] = {
 						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
+						["name"] = "Skoll",
+						["amount"] = 500694,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
 					},
 					["Pet-0-3018-1520-19675-35189-0502050114"] = {
 						["role"] = "NONE",
@@ -41799,16 +41686,16 @@ SkadaPerCharDB = {
 						["name"] = "Arcane Familiar",
 						["amount"] = 157080,
 					},
-					["Creature-0-3018-1520-19675-113347-00001013E9"] = {
+					["Creature-0-3018-1520-19675-113347-00000FF8C6"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-106551-00000FFA1A"] = {
+					["Creature-0-3018-1520-19675-113347-0000900AFE"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Hati",
+						["name"] = "Beast",
 						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-17252-00001013DC"] = {
@@ -41829,7 +41716,7 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000100449"] = {
+					["Creature-0-3018-1520-19675-113347-00001013D9"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -41848,11 +41735,11 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-99541-00000FF704"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFBE5"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Risen Skulker",
-						["amount"] = 101661,
+						["name"] = "Beast",
+						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-11859-0000100FC3"] = {
 						["shielding"] = 0,
@@ -41860,11 +41747,11 @@ SkadaPerCharDB = {
 						["name"] = "Doomguard",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FF8C6"] = {
+					["Creature-0-3018-1520-19675-99541-00000FF704"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
+						["name"] = "Risen Skulker",
+						["amount"] = 101661,
 					},
 					["Creature-0-3018-1520-19675-103636-00000FF967"] = {
 						["shielding"] = 0,
@@ -41899,11 +41786,11 @@ SkadaPerCharDB = {
 						["name"] = "Risen Skulker",
 						["amount"] = 65134,
 					},
-					["Vehicle-0-3018-1520-19675-98035-0000900AFC"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFB6A"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Dreadstalker",
-						["amount"] = 0,
+						["name"] = "Beast",
+						["amount"] = 18087,
 					},
 					["Player-1169-06C13A05"] = {
 						["role"] = "HEALER",
@@ -41912,12 +41799,11 @@ SkadaPerCharDB = {
 						["class"] = "DRUID",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-104096-0002901338"] = {
-						["role"] = "TANK",
-						["name"] = "Bluebaloo",
-						["amount"] = 15459,
-						["class"] = "DRUID",
+					["Creature-0-3018-1520-19675-113347-0000100FC9"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-99541-00000FFC5E"] = {
 						["shielding"] = 0,
@@ -41932,23 +41818,23 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
+					["Creature-0-3018-1520-19675-100820-00000FF5EA"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Spirit Wolf",
+						["amount"] = 22818,
+					},
+					["Creature-0-3018-1520-19675-113347-000010036A"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
 					["Creature-0-3018-1520-19675-100820-00009009E4"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Spirit Wolf",
 						["amount"] = 76289,
-					},
-					["Creature-0-3018-1520-19675-113347-00001004B5"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-0000100FC9"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
 					},
 					["Player-1169-06F79F42"] = {
 						["role"] = "DAMAGER",
@@ -41957,11 +41843,11 @@ SkadaPerCharDB = {
 						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-106551-0000100C3C"] = {
+					["Creature-0-3018-1520-19675-113347-00001004B5"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Hati",
-						["amount"] = 508652,
+						["name"] = "Beast",
+						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-113347-0000100FBE"] = {
 						["shielding"] = 0,
@@ -42013,11 +41899,11 @@ SkadaPerCharDB = {
 						["class"] = "DRUID",
 						["shielding"] = 0,
 					},
-					["Vehicle-0-3018-1520-19675-98035-0000100F11"] = {
+					["Creature-0-3018-1520-19675-113347-0000100FC6"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Dreadstalker",
-						["amount"] = 42618,
+						["name"] = "Beast",
+						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-104096-0000900ED4"] = {
 						["role"] = "HEALER",
@@ -42032,11 +41918,12 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-11859-00000FFBD8"] = {
+					["Player-1169-06C17145"] = {
+						["role"] = "HEALER",
+						["name"] = "Zerra",
+						["amount"] = 15930875,
+						["class"] = "PRIEST",
 						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Doomguard",
-						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-27829-0000100FF9"] = {
 						["shielding"] = 0,
@@ -42050,29 +41937,23 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-100820-00001002E5"] = {
+					["Vehicle-0-3018-1520-19675-98035-0000100F22"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Spirit Wolf",
-						["amount"] = 53481,
-					},
-					["Creature-0-3018-1520-19675-113347-0000101386"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
+						["name"] = "Dreadstalker",
 						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-106551-00000FFF4D"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Hati",
+						["amount"] = 145433,
 					},
 					["Creature-0-3018-1520-19675-106551-00001004EA"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Hati",
 						["amount"] = 117485,
-					},
-					["Creature-0-3018-1520-19675-113347-00000FFFE6"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-19668-0000100F20"] = {
 						["shielding"] = 0,
@@ -42081,6 +41962,12 @@ SkadaPerCharDB = {
 						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-113347-00001013E3"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00000FFFE6"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -42120,15 +42007,128 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Royalty",
 				["alertCount"] = 0,
-				["power"] = {
-					[0] = {
-						["spells"] = {
-							[188017] = 158553,
-							[188030] = 240000,
-							[101033] = 2137104,
-						},
-						["amount"] = 2535657,
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 61295,
+						["srcname"] = "Royalty",
+						["hp"] = 2171913,
+						["ts"] = 1477448754.985,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 2171913,
+						["ts"] = 1477448755.67,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 8936,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 2171913,
+						["ts"] = 1477448755.744,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 8936,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 2171913,
+						["ts"] = 1477448757.532,
+					}, -- [4]
+					{
+						["ts"] = 1477448757.598,
+						["amount"] = 0,
+						["spellid"] = 61295,
+						["srcname"] = "Royalty",
+						["hp"] = 2171913,
+						["absorb"] = 0,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 61295,
+						["srcname"] = "Royalty",
+						["hp"] = 2171913,
+						["ts"] = 1477448757.871,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 8936,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 2171913,
+						["ts"] = 1477448758.636,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 2171913,
+						["ts"] = 1477448758.686,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 82673,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1868423,
+						["ts"] = 1477448749.662,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 21651,
+						["spellid"] = 61295,
+						["srcname"] = "Royalty",
+						["hp"] = 1890074,
+						["ts"] = 1477448749.895,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 4312,
+						["spellid"] = 8936,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 2206008,
+						["ts"] = 1477448750.435,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 105302,
+						["spellid"] = 596,
+						["srcname"] = "Scop",
+						["hp"] = 2311310,
+						["ts"] = 1477448751.594,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 4313,
+						["spellid"] = 8936,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 2315623,
+						["ts"] = 1477448752.203,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 40933,
+						["spellid"] = 61295,
+						["srcname"] = "Royalty",
+						["hp"] = 2356556,
+						["ts"] = 1477448752.462,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 32548,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 2389104,
+						["ts"] = 1477448752.67,
+					}, -- [15]
+					["pos"] = 9,
 				},
 				["healingspells"] = {
 					["Gift of the Naaru"] = {
@@ -42555,7 +42555,15 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 31,
 				["ccbreaks"] = 0,
-				["shielding"] = 194702,
+				["power"] = {
+					[0] = {
+						["spells"] = {
+							[188030] = 1392000,
+							[188017] = 327504,
+						},
+						["amount"] = 1719504,
+					},
+				},
 				["damage"] = 1524519,
 				["damagespells"] = {
 					["Moonfire"] = {
@@ -42608,44 +42616,44 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447740.76203,
 								["amount"] = -141062,
+								["srcname"] = "Xavius",
 								["hp"] = 622651,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [3]
 							{
 								["ts"] = 1477447741.59604,
 								["amount"] = -141061,
+								["srcname"] = "Xavius",
 								["hp"] = 481590,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [4]
 							{
 								["ts"] = 1477447741.79805,
 								["amount"] = -141061,
+								["srcname"] = "Xavius",
 								["hp"] = 340529,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [5]
 							{
 								["ts"] = 1477447741.97606,
 								["amount"] = -141061,
+								["srcname"] = "Xavius",
 								["hp"] = 199468,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [6]
 							{
 								["ts"] = 1477447742.62407,
 								["amount"] = -141061,
+								["srcname"] = "Xavius",
 								["hp"] = 58407,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [7]
 							{
 								["ts"] = 1477447742.77508,
 								["amount"] = -141062,
+								["srcname"] = "Xavius",
 								["hp"] = 1,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [8]
 							{
 								["spellname"] = "Pawsydawn dies",
@@ -42662,9 +42670,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447717.60811,
 								["amount"] = -194702,
+								["srcname"] = "Dread Abomination",
 								["hp"] = 216413,
 								["spellid"] = 208860,
-								["srcname"] = "Dread Abomination",
 							}, -- [11]
 							{
 								["spellid"] = 208385,
@@ -42706,9 +42714,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442711.76801,
 								["amount"] = -301309,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 847950,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [1]
 							{
 								["absorb"] = 0,
@@ -42729,16 +42737,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442712.71804,
 								["amount"] = -234053,
+								["hp"] = 675866,
 								["srcname"] = "Defiled Keeper",
 								["spellid"] = 225081,
-								["hp"] = 675866,
 							}, -- [4]
 							{
 								["ts"] = 1477442713.71205,
 								["amount"] = -234053,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 441813,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [5]
 							{
 								["absorb"] = 0,
@@ -42759,16 +42767,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442714.72108,
 								["amount"] = -234052,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 290221,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [8]
 							{
 								["ts"] = 1477442715.71709,
 								["amount"] = -234053,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 56168,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [9]
 							{
 								["absorb"] = 0,
@@ -42789,9 +42797,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442716.71612,
 								["amount"] = -234053,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 1,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [12]
 							{
 								["spellname"] = "Pawsydawn dies",
@@ -42821,126 +42829,7 @@ SkadaPerCharDB = {
 					}, -- [2]
 				},
 				["damagetaken"] = 114394552,
-				["deathlog"] = {
-					{
-						["ts"] = 1477448745.894,
-						["amount"] = -76555,
-						["hp"] = 1268862,
-						["spellid"] = 206920,
-						["srcname"] = "Nightmare Tentacle",
-					}, -- [1]
-					{
-						["ts"] = 1477448748.611,
-						["amount"] = -75172,
-						["hp"] = 1193690,
-						["spellid"] = 206920,
-						["srcname"] = "Nightmare Tentacle",
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 45660,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1239350,
-						["ts"] = 1477448748.924,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 69036,
-						["spellid"] = 145109,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1608545,
-						["ts"] = 1477448750.605,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 105302,
-						["spellid"] = 596,
-						["srcname"] = "Scop",
-						["hp"] = 1737227,
-						["ts"] = 1477448751.594,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 27401,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1764628,
-						["ts"] = 1477448751.921,
-					}, -- [6]
-					{
-						["ts"] = 1477448752.892,
-						["amount"] = 42391,
-						["spellid"] = 73921,
-						["hp"] = 1807019,
-						["srcname"] = "Royalty",
-						["absorb"] = 0,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 27401,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1857640,
-						["ts"] = 1477448754.909,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 10407,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1868047,
-						["ts"] = 1477448755.129,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 69036,
-						["spellid"] = 145109,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1937083,
-						["ts"] = 1477448755.601,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 27401,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 2010945,
-						["ts"] = 1477448757.916,
-					}, -- [11]
-					{
-						["ts"] = 1477448744.674,
-						["amount"] = -75092,
-						["hp"] = 1297072,
-						["spellid"] = 206920,
-						["srcname"] = "Nightmare Tentacle",
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 25326,
-						["spellid"] = 120692,
-						["srcname"] = "Zerra",
-						["hp"] = 1322398,
-						["ts"] = 1477448744.78,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 60032,
-						["spellid"] = 145109,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1082271,
-						["ts"] = 1477448745.606,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 263146,
-						["spellid"] = 34861,
-						["srcname"] = "Scop",
-						["hp"] = 1345417,
-						["ts"] = 1477448745.871,
-					}, -- [15]
-					["pos"] = 12,
-				},
+				["shielding"] = 194702,
 				["id"] = "Player-1169-06C13A05",
 				["maxhp"] = 2001060,
 				["healing"] = 784243168,
@@ -43281,32 +43170,32 @@ SkadaPerCharDB = {
 						["min"] = 75988,
 						["absorbed"] = 0,
 					},
-					["Nightmare Gaze"] = {
+					["Creeping Nightmares"] = {
 						["crushing"] = 0,
-						["id"] = 210931,
-						["damage"] = 3705516,
-						["max"] = 586873,
+						["id"] = 210279,
+						["damage"] = 13079447,
+						["max"] = 210407,
 						["glancing"] = 0,
-						["name"] = "Nightmare Gaze",
+						["name"] = "Creeping Nightmares",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 7,
+						["totalhits"] = 161,
 						["resisted"] = 0,
-						["min"] = 405576,
-						["absorbed"] = 182073,
+						["min"] = 14799,
+						["absorbed"] = 41318,
 					},
-					["Tormenting Infection"] = {
+					["Momentum"] = {
 						["crushing"] = 0,
-						["id"] = 217987,
-						["damage"] = 1458589,
-						["max"] = 736736,
+						["id"] = 198099,
+						["damage"] = 286482,
+						["max"] = 286482,
 						["glancing"] = 0,
-						["name"] = "Tormenting Infection",
+						["name"] = "Momentum",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 2,
+						["totalhits"] = 1,
 						["resisted"] = 0,
-						["min"] = 721853,
+						["min"] = 286482,
 						["absorbed"] = 0,
 					},
 					["Barreling Impact"] = {
@@ -43323,19 +43212,19 @@ SkadaPerCharDB = {
 						["min"] = 443878,
 						["absorbed"] = 0,
 					},
-					["Nightmare Brambles"] = {
+					["Corruption: Crushing Shadows"] = {
 						["crushing"] = 0,
-						["id"] = 210337,
-						["damage"] = 1034192,
-						["max"] = 388222,
+						["id"] = 208860,
+						["damage"] = 5719068,
+						["max"] = 641916,
 						["glancing"] = 0,
-						["name"] = "Nightmare Brambles",
+						["name"] = "Corruption: Crushing Shadows",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 6,
+						["totalhits"] = 27,
 						["resisted"] = 0,
-						["min"] = 63634,
-						["absorbed"] = 0,
+						["min"] = 12629,
+						["absorbed"] = 182073,
 					},
 					["Cursed Blood"] = {
 						["crushing"] = 0,
@@ -43407,33 +43296,33 @@ SkadaPerCharDB = {
 						["min"] = 267504,
 						["absorbed"] = 182073,
 					},
-					["Momentum"] = {
+					["Tormenting Infection"] = {
 						["crushing"] = 0,
-						["id"] = 198099,
-						["damage"] = 286482,
-						["max"] = 286482,
+						["id"] = 217987,
+						["damage"] = 1458589,
+						["max"] = 736736,
 						["glancing"] = 0,
-						["name"] = "Momentum",
+						["name"] = "Tormenting Infection",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 1,
+						["totalhits"] = 2,
 						["resisted"] = 0,
-						["min"] = 286482,
+						["min"] = 721853,
 						["absorbed"] = 0,
 					},
-					["Tainted Discharge"] = {
+					["Nightmare Gaze"] = {
 						["crushing"] = 0,
-						["id"] = 208385,
-						["damage"] = 843740,
-						["max"] = 168748,
+						["id"] = 210931,
+						["damage"] = 3705516,
+						["max"] = 586873,
 						["glancing"] = 0,
-						["name"] = "Tainted Discharge",
+						["name"] = "Nightmare Gaze",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 5,
+						["totalhits"] = 7,
 						["resisted"] = 0,
-						["min"] = 168748,
-						["absorbed"] = 0,
+						["min"] = 405576,
+						["absorbed"] = 182073,
 					},
 					["Necrotic Venom"] = {
 						["crushing"] = 0,
@@ -43477,19 +43366,19 @@ SkadaPerCharDB = {
 						["min"] = 70989,
 						["absorbed"] = 0,
 					},
-					["Creeping Nightmares"] = {
+					["Nightmare Brambles"] = {
 						["crushing"] = 0,
-						["id"] = 210279,
-						["damage"] = 13079447,
-						["max"] = 210407,
+						["id"] = 210337,
+						["damage"] = 1034192,
+						["max"] = 388222,
 						["glancing"] = 0,
-						["name"] = "Creeping Nightmares",
+						["name"] = "Nightmare Brambles",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 161,
+						["totalhits"] = 6,
 						["resisted"] = 0,
-						["min"] = 14799,
-						["absorbed"] = 41318,
+						["min"] = 63634,
+						["absorbed"] = 0,
 					},
 					["Volatile Rot"] = {
 						["crushing"] = 0,
@@ -43673,19 +43562,19 @@ SkadaPerCharDB = {
 						["min"] = 382330,
 						["absorbed"] = 0,
 					},
-					["Corruption: Crushing Shadows"] = {
+					["Tainted Discharge"] = {
 						["crushing"] = 0,
-						["id"] = 208860,
-						["damage"] = 5719068,
-						["max"] = 641916,
+						["id"] = 208385,
+						["damage"] = 843740,
+						["max"] = 168748,
 						["glancing"] = 0,
-						["name"] = "Corruption: Crushing Shadows",
+						["name"] = "Tainted Discharge",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 27,
+						["totalhits"] = 5,
 						["resisted"] = 0,
-						["min"] = 12629,
-						["absorbed"] = 182073,
+						["min"] = 168748,
+						["absorbed"] = 0,
 					},
 					["Dripping Fangs"] = {
 						["crushing"] = 0,
@@ -43992,6 +43881,19 @@ SkadaPerCharDB = {
 						["name"] = "Arcane Familiar",
 						["amount"] = 0,
 					},
+					["Player-1169-06BACF99"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Lealdade",
+						["amount"] = 28233435,
+						["class"] = "PALADIN",
+						["shielding"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-0000101334"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
 					["Creature-0-3018-1520-19675-103636-00000FF3CF"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
@@ -44005,11 +43907,18 @@ SkadaPerCharDB = {
 						["class"] = "WARLOCK",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-106551-00000FFCCF"] = {
+					["Creature-0-3018-1520-19675-106551-00000FFA6C"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Hati",
-						["amount"] = 0,
+						["amount"] = 42427,
+					},
+					["Pet-0-3018-1520-19675-417-010206FAA7"] = {
+						["role"] = "NONE",
+						["name"] = "Zhaajhom",
+						["amount"] = 158331,
+						["class"] = "WARLOCK",
+						["shielding"] = 0,
 					},
 					["Creature-0-3018-1520-19675-113347-00000FF625"] = {
 						["shielding"] = 0,
@@ -44017,30 +43926,11 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-106551-00000FFA6C"] = {
+					["Creature-0-3018-1520-19675-106551-00000FFCCF"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Hati",
-						["amount"] = 42427,
-					},
-					["Vehicle-0-3018-1520-19675-98035-0000100707"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Dreadstalker",
 						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-27829-00000FFBD7"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Ebon Gargoyle",
-						["amount"] = 0,
-					},
-					["Player-1169-06BACF99"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Lealdade",
-						["amount"] = 28233435,
-						["class"] = "PALADIN",
-						["shielding"] = 0,
 					},
 					["Creature-0-3018-1520-19675-27829-00001003C0"] = {
 						["shielding"] = 0,
@@ -44055,13 +43945,13 @@ SkadaPerCharDB = {
 						["class"] = "DRUID",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FF7AE"] = {
+					["Creature-0-3018-1520-19675-113347-0000100F83"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-47244-00009013FA"] = {
+					["Creature-0-3018-1520-19675-47244-00001013FA"] = {
 						["role"] = "DAMAGER",
 						["name"] = "Lenae",
 						["amount"] = 0,
@@ -44094,7 +43984,7 @@ SkadaPerCharDB = {
 						["class"] = "DRUID",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000101334"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFE8A"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -44112,13 +44002,13 @@ SkadaPerCharDB = {
 						["name"] = "Dreadstalker",
 						["amount"] = 23042,
 					},
-					["Creature-0-3018-1520-19675-113347-0000100724"] = {
+					["Creature-0-3018-1520-19675-113347-0000100306"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FF6BC"] = {
+					["Creature-0-3018-1520-19675-113347-00000FF7B2"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -44130,16 +44020,16 @@ SkadaPerCharDB = {
 						["name"] = "Spirit Wolf",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000100306"] = {
+					["Vehicle-0-3018-1520-19675-98035-0000100F7F"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
+						["name"] = "Dreadstalker",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFB7B"] = {
+					["Creature-0-3018-1520-19675-27829-00000FFBD7"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
+						["name"] = "Ebon Gargoyle",
 						["amount"] = 0,
 					},
 					["Player-1169-06C17145"] = {
@@ -44149,14 +44039,13 @@ SkadaPerCharDB = {
 						["class"] = "PRIEST",
 						["shielding"] = 0,
 					},
-					["Pet-0-3018-1520-19675-417-010206FAA7"] = {
-						["role"] = "NONE",
-						["name"] = "Zhaajhom",
-						["amount"] = 158331,
-						["class"] = "WARLOCK",
+					["Creature-0-3018-1520-19675-113347-00000FF7AE"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000100F83"] = {
+					["Creature-0-3018-1520-19675-113347-0000100724"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -44182,11 +44071,11 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFE8A"] = {
+					["Vehicle-0-3018-1520-19675-98035-00009012B0"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
+						["name"] = "Dreadstalker",
+						["amount"] = 108312,
 					},
 					["Creature-0-3018-1520-19675-113347-0000100F78"] = {
 						["shielding"] = 0,
@@ -44194,16 +44083,16 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 167238,
 					},
-					["Vehicle-0-3018-1520-19675-98035-0000900CA5"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Dreadstalker",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00000FF7B2"] = {
+					["Creature-0-3018-1520-19675-113347-00000FF6BC"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Vehicle-0-3018-1520-19675-98035-0000100707"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Dreadstalker",
 						["amount"] = 0,
 					},
 					["Player-1169-06A1ACBD"] = {
@@ -44249,16 +44138,16 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-103636-00001006BC"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Arcane Familiar",
-						["amount"] = 473941,
-					},
-					["Vehicle-0-3018-1520-19675-98035-0000900707"] = {
+					["Vehicle-0-3018-1520-19675-98035-0000100A86"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Dreadstalker",
+						["amount"] = 46083,
+					},
+					["Creature-0-3018-1520-19675-113347-00000FFB7B"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
 						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-113347-0000100A06"] = {
@@ -44274,18 +44163,17 @@ SkadaPerCharDB = {
 						["class"] = "SHAMAN",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-100820-0000900A8C"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFBF0"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Spirit Wolf",
+						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-104096-0002100F9C"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Neôsyck",
-						["amount"] = 181775,
-						["class"] = "WARRIOR",
+					["Creature-0-3018-1520-19675-103636-0000101077"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Arcane Familiar",
+						["amount"] = 337049,
 					},
 					["Creature-0-3018-1520-19675-113347-000010128D"] = {
 						["shielding"] = 0,
@@ -44351,17 +44239,17 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00001007C4"] = {
+					["Creature-0-3018-1520-19675-113347-0000100F7C"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFBF0"] = {
+					["Creature-0-3018-1520-19675-113347-00000FF99B"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
-						["amount"] = 0,
+						["amount"] = 10753,
 					},
 					["Creature-0-3018-1520-19675-113347-0000100F0C"] = {
 						["shielding"] = 0,
@@ -44376,17 +44264,18 @@ SkadaPerCharDB = {
 						["class"] = "DEATHKNIGHT",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000100F7C"] = {
+					["Creature-0-3018-1520-19675-104096-0006100ED4"] = {
+						["role"] = "TANK",
+						["name"] = "Bluebaloo",
+						["amount"] = 108146,
+						["class"] = "DRUID",
 						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FF99B"] = {
+					["Creature-0-3018-1520-19675-103636-0000100C2B"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 10753,
+						["name"] = "Arcane Familiar",
+						["amount"] = 855462,
 					},
 					["Creature-0-3018-1520-19675-100820-00008FF5EA"] = {
 						["shielding"] = 0,
@@ -44413,17 +44302,17 @@ SkadaPerCharDB = {
 						["name"] = "Risen Skulker",
 						["amount"] = 0,
 					},
-					["Vehicle-0-3018-1520-19675-98035-0000100A86"] = {
+					["Creature-0-3018-1520-19675-103636-00001006BC"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Dreadstalker",
-						["amount"] = 46083,
+						["name"] = "Arcane Familiar",
+						["amount"] = 473941,
 					},
-					["Creature-0-3018-1520-19675-106551-0000100808"] = {
+					["Creature-0-3018-1520-19675-106551-0000100B33"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Hati",
-						["amount"] = 168899,
+						["amount"] = 319420,
 					},
 					["Vehicle-0-3018-1520-19675-98035-0000900AFC"] = {
 						["shielding"] = 0,
@@ -44431,11 +44320,12 @@ SkadaPerCharDB = {
 						["name"] = "Dreadstalker",
 						["amount"] = 0,
 					},
-					["Vehicle-0-3018-1520-19675-98035-00001009F7"] = {
-						["shielding"] = 0,
+					["Pet-0-3018-1520-19675-26125-0301EDD695"] = {
 						["role"] = "NONE",
-						["name"] = "Dreadstalker",
-						["amount"] = 23041,
+						["name"] = "Ratthief",
+						["amount"] = 620729,
+						["class"] = "DEATHKNIGHT",
+						["shielding"] = 0,
 					},
 					["Creature-0-3018-1520-19675-113347-0000100712"] = {
 						["shielding"] = 0,
@@ -44462,17 +44352,17 @@ SkadaPerCharDB = {
 						["class"] = "WARLOCK",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FF6CA"] = {
+					["Creature-0-3018-1520-19675-100820-0000900A8C"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
+						["name"] = "Spirit Wolf",
 						["amount"] = 0,
 					},
-					["Pet-0-3018-1520-19675-26125-0301EDD695"] = {
-						["role"] = "NONE",
-						["name"] = "Ratthief",
-						["amount"] = 620729,
-						["class"] = "DEATHKNIGHT",
+					["Creature-0-3018-1520-19675-104096-0002100F9C"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Neôsyck",
+						["amount"] = 181775,
+						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
 					["Pet-0-3018-1520-19675-35189-0202050114"] = {
@@ -44489,37 +44379,17 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-103636-0000100C2B"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Arcane Familiar",
-						["amount"] = 855462,
-					},
-					["Creature-0-3018-1520-19675-106551-0000100B33"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Hati",
-						["amount"] = 319420,
-					},
-					["Player-1169-06C011D7"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Emelaine",
-						["amount"] = 18484825,
-						["class"] = "HUNTER",
-						["shielding"] = 0,
-					},
 					["Creature-0-3018-1520-19675-106551-0000100C3C"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Hati",
 						["amount"] = 568217,
 					},
-					["Player-1169-069FE656"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Senatus",
-						["amount"] = 17921229,
-						["class"] = "WARLOCK",
+					["Creature-0-3018-1520-19675-103636-000010093D"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Arcane Familiar",
+						["amount"] = 183244,
 					},
 					["Pet-0-3018-1520-19675-35189-0102050114"] = {
 						["role"] = "NONE",
@@ -44528,11 +44398,29 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-103636-000010093D"] = {
+					["Vehicle-0-3018-1520-19675-98035-0000100AFC"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Arcane Familiar",
-						["amount"] = 183244,
+						["name"] = "Dreadstalker",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-106551-00001004ED"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Hati",
+						["amount"] = 43766,
+					},
+					["Vehicle-0-3018-1520-19675-98035-0000100C93"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Dreadstalker",
+						["amount"] = 79165,
+					},
+					["Creature-0-3018-1520-19675-106551-0000101087"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Hati",
+						["amount"] = 25981,
 					},
 					["Creature-0-3018-1520-19675-113347-0000100F02"] = {
 						["shielding"] = 0,
@@ -44540,11 +44428,11 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 24777,
 					},
-					["Creature-0-3018-1520-19675-106551-00001004ED"] = {
+					["Creature-0-3018-1520-19675-103636-0000100D21"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Hati",
-						["amount"] = 43766,
+						["name"] = "Arcane Familiar",
+						["amount"] = 745128,
 					},
 					["Player-1169-06C22578"] = {
 						["role"] = "HEALER",
@@ -44553,12 +44441,11 @@ SkadaPerCharDB = {
 						["class"] = "PALADIN",
 						["shielding"] = 0,
 					},
-					["Player-1169-06C22E36"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Rockan",
-						["amount"] = 24617746,
-						["class"] = "DEATHKNIGHT",
+					["Vehicle-0-3018-1520-19675-98035-0000900C93"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Dreadstalker",
+						["amount"] = 79165,
 					},
 					["Creature-0-3018-1520-19675-11859-00000FF5ED"] = {
 						["shielding"] = 0,
@@ -44572,23 +44459,25 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFB75"] = {
+					["Player-1169-069FE656"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Senatus",
+						["amount"] = 17921229,
+						["class"] = "WARLOCK",
+						["shielding"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00000FFEDC"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-100820-00009003B4"] = {
+					["Player-1169-06C011D7"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Emelaine",
+						["amount"] = 18484825,
+						["class"] = "HUNTER",
 						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Spirit Wolf",
-						["amount"] = 22667,
-					},
-					["Vehicle-0-3018-1520-19675-98035-0000100C93"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Dreadstalker",
-						["amount"] = 79165,
 					},
 					["Vehicle-0-3018-1520-19675-98035-0000100CA5"] = {
 						["shielding"] = 0,
@@ -44629,11 +44518,11 @@ SkadaPerCharDB = {
 						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFEDC"] = {
+					["Creature-0-3018-1520-19675-106548-00000FF738"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
+						["name"] = "Hati",
+						["amount"] = 240587,
 					},
 					["Creature-0-3018-1520-19675-100820-0000100C35"] = {
 						["shielding"] = 0,
@@ -44641,11 +44530,11 @@ SkadaPerCharDB = {
 						["name"] = "Spirit Wolf",
 						["amount"] = 6466,
 					},
-					["Vehicle-0-3018-1520-19675-98035-0000900C93"] = {
+					["Creature-0-3018-1520-19675-100820-00009003B4"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Dreadstalker",
-						["amount"] = 79165,
+						["name"] = "Spirit Wolf",
+						["amount"] = 22667,
 					},
 					["Creature-0-3018-1520-19675-113347-0000100C9B"] = {
 						["shielding"] = 0,
@@ -44672,11 +44561,11 @@ SkadaPerCharDB = {
 						["class"] = "DEATHKNIGHT",
 						["shielding"] = 0,
 					},
-					["Player-1169-06C1070E"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Lenae",
-						["amount"] = 22354337,
-						["class"] = "MAGE",
+					["Player-1169-07D4DEFA"] = {
+						["role"] = "TANK",
+						["name"] = "Gronncho",
+						["amount"] = 64710619,
+						["class"] = "PALADIN",
 						["shielding"] = 0,
 					},
 					["Creature-0-3018-1520-19675-113347-00001013FF"] = {
@@ -44812,11 +44701,11 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
-					["Player-1169-07D4DEFA"] = {
-						["role"] = "TANK",
-						["name"] = "Gronncho",
-						["amount"] = 64710619,
-						["class"] = "PALADIN",
+					["Player-1169-06C1070E"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Lenae",
+						["amount"] = 22354337,
+						["class"] = "MAGE",
 						["shielding"] = 0,
 					},
 					["Creature-0-3018-1520-19675-417-00000FFBED"] = {
@@ -44832,22 +44721,22 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-106548-00000FF738"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Hati",
-						["amount"] = 240587,
-					},
 					["Vehicle-0-3018-1520-19675-98035-00001013F6"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Dreadstalker",
 						["amount"] = 0,
 					},
-					["Vehicle-0-3018-1520-19675-98035-0000100AFC"] = {
+					["Vehicle-0-3018-1520-19675-98035-0000900CA5"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Dreadstalker",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00000FFB75"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
 						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-103636-00000FF967"] = {
@@ -44863,11 +44752,12 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
-					["Creature-0-3018-1520-19675-103636-0000100D21"] = {
+					["Player-1169-06C22E36"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Rockan",
+						["amount"] = 24617746,
+						["class"] = "DEATHKNIGHT",
 						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Arcane Familiar",
-						["amount"] = 745128,
 					},
 					["Pet-0-3018-1520-19675-417-020206FAA7"] = {
 						["role"] = "NONE",
@@ -44882,11 +44772,11 @@ SkadaPerCharDB = {
 						["name"] = "Risen Skulker",
 						["amount"] = 245126,
 					},
-					["Creature-0-3018-1520-19675-106551-0000101087"] = {
+					["Creature-0-3018-1520-19675-113347-00000FF6CA"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Hati",
-						["amount"] = 25981,
+						["name"] = "Beast",
+						["amount"] = 0,
 					},
 					["Player-1169-06C13A05"] = {
 						["role"] = "HEALER",
@@ -44919,12 +44809,11 @@ SkadaPerCharDB = {
 						["name"] = "Spirit Wolf",
 						["amount"] = 24521,
 					},
-					["Creature-0-3018-1520-19675-104096-0006100ED4"] = {
-						["role"] = "TANK",
-						["name"] = "Bluebaloo",
-						["amount"] = 108146,
-						["class"] = "DRUID",
+					["Vehicle-0-3018-1520-19675-98035-00001009F7"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Dreadstalker",
+						["amount"] = 23041,
 					},
 					["Creature-0-3018-1520-19675-113347-000010072D"] = {
 						["shielding"] = 0,
@@ -44952,30 +44841,30 @@ SkadaPerCharDB = {
 						["name"] = "Shadowfiend",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-103636-0000101077"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Arcane Familiar",
-						["amount"] = 337049,
-					},
-					["Creature-0-3018-1520-19675-113347-0000100C9E"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 54197,
-					},
-					["Creature-0-3018-1520-19675-47244-0001101328"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Lenae",
-						["amount"] = 0,
-						["class"] = "MAGE",
-						["shielding"] = 0,
-					},
 					["Creature-0-3018-1520-19675-113347-00001012BD"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-106551-0000100808"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Hati",
+						["amount"] = 168899,
+					},
+					["Creature-0-3018-1520-19675-113347-00001012B2"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 26089,
+					},
+					["Pet-0-3018-1520-19675-416-0401ED40E5"] = {
+						["role"] = "NONE",
+						["name"] = "Pizkin",
+						["amount"] = 0,
+						["class"] = "WARLOCK",
+						["shielding"] = 0,
 					},
 					["Creature-0-3018-1520-19675-17252-0000101289"] = {
 						["shielding"] = 0,
@@ -44983,19 +44872,19 @@ SkadaPerCharDB = {
 						["name"] = "Felguard",
 						["amount"] = 70658,
 					},
-					["Vehicle-0-3018-1520-19675-98035-0000900F7F"] = {
+					["Creature-0-3018-1520-19675-113347-0000100C9E"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Dreadstalker",
-						["amount"] = 0,
+						["name"] = "Beast",
+						["amount"] = 54197,
 					},
-					["Vehicle-0-3018-1520-19675-98035-0000100F7F"] = {
+					["Creature-0-3018-1520-19675-113347-00001007C4"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Dreadstalker",
+						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-47244-00011013FA"] = {
+					["Creature-0-3018-1520-19675-47244-0001101328"] = {
 						["role"] = "DAMAGER",
 						["name"] = "Lenae",
 						["amount"] = 0,
@@ -45008,11 +44897,24 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 54755,
 					},
-					["Vehicle-0-3018-1520-19675-98035-00009012B0"] = {
+					["Vehicle-0-3018-1520-19675-98035-0000900F7F"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Dreadstalker",
-						["amount"] = 108312,
+						["amount"] = 0,
+					},
+					["Vehicle-0-3018-1520-19675-98035-0000900707"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Dreadstalker",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-47244-00011013FA"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Lenae",
+						["amount"] = 0,
+						["class"] = "MAGE",
+						["shielding"] = 0,
 					},
 					["Creature-0-3018-1520-19675-47244-0000100F57"] = {
 						["role"] = "DAMAGER",
@@ -45034,24 +44936,30 @@ SkadaPerCharDB = {
 						["name"] = "Dreadstalker",
 						["amount"] = 26510,
 					},
-					["Creature-0-3018-1520-19675-113347-00001012B2"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 26089,
-					},
-					["Pet-0-3018-1520-19675-416-0401ED40E5"] = {
-						["role"] = "NONE",
-						["name"] = "Pizkin",
-						["amount"] = 0,
-						["class"] = "WARLOCK",
-						["shielding"] = 0,
-					},
 					["Creature-0-3018-1520-19675-106551-00001004EA"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Hati",
 						["amount"] = 47582,
+					},
+					["Creature-0-3018-1520-19675-17252-00001006D6"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Felguard",
+						["amount"] = 71372,
+					},
+					["Creature-0-3018-1520-19675-47244-00009013FA"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Lenae",
+						["amount"] = 0,
+						["class"] = "MAGE",
+						["shielding"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00001004A7"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
 					},
 					["Vehicle-0-3018-1520-19675-98035-0000901332"] = {
 						["shielding"] = 0,
@@ -45065,24 +44973,11 @@ SkadaPerCharDB = {
 						["name"] = "Dreadstalker",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-47244-00001013FA"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Lenae",
-						["amount"] = 0,
-						["class"] = "MAGE",
-						["shielding"] = 0,
-					},
 					["Creature-0-3018-1520-19675-113347-0000101331"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 51806,
-					},
-					["Creature-0-3018-1520-19675-113347-00001004A7"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-106551-00001012F0"] = {
 						["shielding"] = 0,
@@ -45096,24 +44991,129 @@ SkadaPerCharDB = {
 						["name"] = "Felguard",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-17252-00001006D6"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Felguard",
-						["amount"] = 71372,
-					},
 				},
 				["alertDamage"] = 0,
 				["name"] = "Pawsydawn",
 				["alertCount"] = 0,
-				["power"] = {
-					[0] = {
-						["spells"] = {
-							[188030] = 1392000,
-							[188017] = 327504,
-						},
-						["amount"] = 1719504,
-					},
+				["deathlog"] = {
+					{
+						["ts"] = 1477448745.894,
+						["amount"] = -76555,
+						["srcname"] = "Nightmare Tentacle",
+						["hp"] = 1268862,
+						["spellid"] = 206920,
+					}, -- [1]
+					{
+						["ts"] = 1477448748.611,
+						["amount"] = -75172,
+						["srcname"] = "Nightmare Tentacle",
+						["hp"] = 1193690,
+						["spellid"] = 206920,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 45660,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1239350,
+						["ts"] = 1477448748.924,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 69036,
+						["spellid"] = 145109,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1608545,
+						["ts"] = 1477448750.605,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 105302,
+						["spellid"] = 596,
+						["srcname"] = "Scop",
+						["hp"] = 1737227,
+						["ts"] = 1477448751.594,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 27401,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1764628,
+						["ts"] = 1477448751.921,
+					}, -- [6]
+					{
+						["ts"] = 1477448752.892,
+						["amount"] = 42391,
+						["spellid"] = 73921,
+						["hp"] = 1807019,
+						["srcname"] = "Royalty",
+						["absorb"] = 0,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 27401,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1857640,
+						["ts"] = 1477448754.909,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 10407,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1868047,
+						["ts"] = 1477448755.129,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 69036,
+						["spellid"] = 145109,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1937083,
+						["ts"] = 1477448755.601,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 27401,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 2010945,
+						["ts"] = 1477448757.916,
+					}, -- [11]
+					{
+						["ts"] = 1477448744.674,
+						["amount"] = -75092,
+						["srcname"] = "Nightmare Tentacle",
+						["hp"] = 1297072,
+						["spellid"] = 206920,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 25326,
+						["spellid"] = 120692,
+						["srcname"] = "Zerra",
+						["hp"] = 1322398,
+						["ts"] = 1477448744.78,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 60032,
+						["spellid"] = 145109,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1082271,
+						["ts"] = 1477448745.606,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 263146,
+						["spellid"] = 34861,
+						["srcname"] = "Scop",
+						["hp"] = 1345417,
+						["ts"] = 1477448745.871,
+					}, -- [15]
+					["pos"] = 12,
 				},
 				["healingspells"] = {
 					["Healing Touch"] = {
@@ -45505,7 +45505,17 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 2,
 				["ccbreaks"] = 0,
-				["shielding"] = 6933604,
+				["power"] = {
+					{
+						["spells"] = {
+							[100] = 1180,
+							[209553] = 743,
+							[163201] = -1722,
+							[173401] = 104,
+						},
+						["amount"] = 305,
+					}, -- [1]
+				},
 				["damage"] = 521011583,
 				["damagespells"] = {
 					["Charge"] = {
@@ -45796,23 +45806,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447760.93301,
 								["amount"] = -701160,
+								["srcname"] = "Xavius",
 								["hp"] = 568202,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [1]
 							{
 								["ts"] = 1477447761.25302,
 								["amount"] = -209423,
+								["srcname"] = "Dread Abomination",
 								["hp"] = 358779,
 								["spellid"] = 208860,
-								["srcname"] = "Dread Abomination",
 							}, -- [2]
 							{
 								["ts"] = 1477447762.43503,
 								["amount"] = -808688,
+								["srcname"] = "Xavius",
 								["hp"] = 568202,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [3]
 							{
 								["spellname"] = "Neôsyck dies",
@@ -45823,79 +45833,79 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447753.68205,
 								["amount"] = -153260,
+								["srcname"] = "Xavius",
 								["hp"] = 261682,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [5]
 							{
 								["ts"] = 1477447753.90806,
 								["amount"] = -153260,
+								["srcname"] = "Xavius",
 								["hp"] = 108422,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [6]
 							{
 								["ts"] = 1477447754.68707,
 								["amount"] = -153260,
+								["srcname"] = "Xavius",
 								["hp"] = 414942,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [7]
 							{
 								["ts"] = 1477447754.90708,
 								["amount"] = -153260,
+								["srcname"] = "Xavius",
 								["hp"] = 261682,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [8]
 							{
 								["ts"] = 1477447754.90709,
 								["amount"] = -837859,
+								["srcname"] = "Xavius",
 								["hp"] = 261682,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [9]
 							{
 								["ts"] = 1477447755.6831,
 								["amount"] = -153260,
+								["srcname"] = "Xavius",
 								["hp"] = 414942,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [10]
 							{
 								["ts"] = 1477447755.88911,
 								["amount"] = -153260,
+								["srcname"] = "Xavius",
 								["hp"] = 261682,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [11]
 							{
 								["ts"] = 1477447756.40612,
 								["amount"] = -722731,
+								["srcname"] = "Xavius",
 								["hp"] = 261682,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [12]
 							{
 								["ts"] = 1477447756.89813,
 								["amount"] = -153260,
+								["srcname"] = "Xavius",
 								["hp"] = 414942,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [13]
 							{
 								["ts"] = 1477447757.91214,
 								["amount"] = -779872,
+								["srcname"] = "Xavius",
 								["hp"] = 414942,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [14]
 							{
 								["ts"] = 1477447759.42015,
 								["amount"] = -665260,
+								["srcname"] = "Xavius",
 								["hp"] = 568202,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [15]
 							["pos"] = 5,
 						},
@@ -45907,9 +45917,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446372.92401,
 								["amount"] = -207278,
+								["srcname"] = "Cenarius",
 								["hp"] = 292522,
 								["spellid"] = 214712,
-								["srcname"] = "Cenarius",
 							}, -- [1]
 							{
 								["absorb"] = 0,
@@ -45922,16 +45932,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446373.87203,
 								["amount"] = -128038,
+								["srcname"] = "Cenarius",
 								["hp"] = 171793,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [3]
 							{
 								["ts"] = 1477446373.95304,
 								["amount"] = -204508,
+								["srcname"] = "Cenarius",
 								["hp"] = 1,
 								["spellid"] = 214712,
-								["srcname"] = "Cenarius",
 							}, -- [4]
 							{
 								["spellname"] = "Neôsyck dies",
@@ -45942,9 +45952,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446369.93006,
 								["amount"] = -207199,
+								["srcname"] = "Cenarius",
 								["hp"] = 761189,
 								["spellid"] = 214712,
-								["srcname"] = "Cenarius",
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -45981,9 +45991,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446370.94411,
 								["amount"] = -206233,
+								["srcname"] = "Cenarius",
 								["hp"] = 737382,
 								["spellid"] = 214712,
-								["srcname"] = "Cenarius",
 							}, -- [11]
 							{
 								["absorb"] = 0,
@@ -46004,16 +46014,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446371.84314,
 								["amount"] = -125275,
+								["srcname"] = "Cenarius",
 								["hp"] = 706975,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [14]
 							{
 								["ts"] = 1477446371.96115,
 								["amount"] = -207175,
+								["srcname"] = "Cenarius",
 								["hp"] = 499800,
 								["spellid"] = 214712,
-								["srcname"] = "Cenarius",
 							}, -- [15]
 							["pos"] = 6,
 						},
@@ -46025,16 +46035,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477445461.45201,
 								["amount"] = -13788,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 192167,
 								["spellid"] = 210228,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [1]
 							{
 								["ts"] = 1477445461.56502,
 								["amount"] = -96725,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 192167,
 								["spellid"] = 88163,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [2]
 							{
 								["spellname"] = "Neôsyck dies",
@@ -46043,17 +46053,17 @@ SkadaPerCharDB = {
 								["spellid"] = 41220,
 							}, -- [3]
 							{
-								["hp"] = 0,
-								["ts"] = 1477445543.171,
-								["spellid"] = 20484,
 								["srcname"] = "Pawsydawn",
+								["ts"] = 1477445543.171,
+								["hp"] = 0,
+								["spellid"] = 20484,
 							}, -- [4]
 							{
 								["ts"] = 1477445457.90805,
 								["amount"] = -78219,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 905532,
 								["spellid"] = 88163,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [5]
 							{
 								["spellid"] = 213936,
@@ -46070,58 +46080,58 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477445459.43208,
 								["amount"] = -67345,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 721196,
 								["spellid"] = 88163,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [8]
 							{
 								["ts"] = 1477445459.63309,
 								["amount"] = -80194,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 653851,
 								["spellid"] = 88163,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [9]
 							{
 								["ts"] = 1477445460.0921,
 								["amount"] = -95084,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 573657,
 								["spellid"] = 88163,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [10]
 							{
 								["ts"] = 1477445460.38411,
 								["amount"] = -89918,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 478573,
 								["spellid"] = 88163,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [11]
 							{
 								["ts"] = 1477445460.42712,
 								["amount"] = -97049,
+								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
 								["hp"] = 478573,
-								["spellid"] = 88163,
 							}, -- [12]
 							{
 								["ts"] = 1477445460.47213,
 								["amount"] = -9723,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 281883,
 								["spellid"] = 210228,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [13]
 							{
 								["ts"] = 1477445461.04814,
 								["amount"] = -75928,
+								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
 								["hp"] = 281883,
-								["spellid"] = 88163,
 							}, -- [14]
 							{
 								["ts"] = 1477445461.39615,
 								["amount"] = -105916,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 205955,
 								["spellid"] = 88163,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [15]
 							["pos"] = 5,
 						},
@@ -46141,16 +46151,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442709.75302,
 								["amount"] = -284385,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 550785,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [2]
 							{
 								["ts"] = 1477442710.44103,
 								["amount"] = -82775,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 468010,
 								["spellid"] = 225073,
-								["srcname"] = "Defiled Keeper",
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -46163,9 +46173,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442710.72105,
 								["amount"] = -295322,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 289682,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [5]
 							{
 								["absorb"] = 0,
@@ -46178,9 +46188,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442711.22807,
 								["amount"] = -82775,
+								["hp"] = 240440,
 								["srcname"] = "Defiled Keeper",
 								["spellid"] = 225073,
-								["hp"] = 240440,
 							}, -- [7]
 							{
 								["absorb"] = 0,
@@ -46201,9 +46211,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442711.7681,
 								["amount"] = -306260,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 1,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [10]
 							{
 								["spellname"] = "Neôsyck dies",
@@ -46230,9 +46240,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442709.26914,
 								["amount"] = -82775,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 779539,
 								["spellid"] = 225073,
-								["srcname"] = "Defiled Keeper",
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -46248,129 +46258,7 @@ SkadaPerCharDB = {
 					}, -- [4]
 				},
 				["damagetaken"] = 126373565,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 50652,
-						["spellid"] = 120692,
-						["srcname"] = "Zerra",
-						["hp"] = 433837,
-						["ts"] = 1477448745.075,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 32805,
-						["spellid"] = 61295,
-						["srcname"] = "Royalty",
-						["hp"] = 466642,
-						["ts"] = 1477448746.15,
-					}, -- [2]
-					{
-						["ts"] = 1477448746.485,
-						["amount"] = 4140,
-						["spellid"] = 61295,
-						["srcname"] = "Royalty",
-						["hp"] = 470782,
-						["absorb"] = 0,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 10407,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 481189,
-						["ts"] = 1477448747.135,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 210318,
-						["spellid"] = 61295,
-						["srcname"] = "Royalty",
-						["hp"] = 691507,
-						["ts"] = 1477448748.464,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 28864,
-						["spellid"] = 61295,
-						["srcname"] = "Royalty",
-						["hp"] = 1106106,
-						["ts"] = 1477448751.044,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 50816,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 1156922,
-						["ts"] = 1477448751.187,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 105301,
-						["spellid"] = 596,
-						["srcname"] = "Scop",
-						["hp"] = 1262223,
-						["ts"] = 1477448751.594,
-					}, -- [8]
-					{
-						["ts"] = 1477448752.138,
-						["amount"] = 10407,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1272630,
-						["absorb"] = 0,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 18271,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1318307,
-						["ts"] = 1477448754.863,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 10407,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1328714,
-						["ts"] = 1477448756.144,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 26816,
-						["spellid"] = 61295,
-						["srcname"] = "Royalty",
-						["hp"] = 1378531,
-						["ts"] = 1477448756.189,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 18271,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1396802,
-						["ts"] = 1477448757.627,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 26309,
-						["spellid"] = 61295,
-						["srcname"] = "Royalty",
-						["hp"] = 1316976,
-						["ts"] = 1477448758.754,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 10407,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 652690,
-						["ts"] = 1477448744.176,
-					}, -- [15]
-					["pos"] = 15,
-				},
+				["shielding"] = 6933604,
 				["id"] = "Player-1169-06B51927",
 				["maxhp"] = 1786860,
 				["healing"] = 10719662,
@@ -47333,16 +47221,128 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Neôsyck",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 					{
-						["spells"] = {
-							[100] = 1180,
-							[209553] = 743,
-							[163201] = -1722,
-							[173401] = 104,
-						},
-						["amount"] = 305,
+						["absorb"] = 0,
+						["amount"] = 50652,
+						["spellid"] = 120692,
+						["srcname"] = "Zerra",
+						["hp"] = 433837,
+						["ts"] = 1477448745.075,
 					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 32805,
+						["spellid"] = 61295,
+						["srcname"] = "Royalty",
+						["hp"] = 466642,
+						["ts"] = 1477448746.15,
+					}, -- [2]
+					{
+						["ts"] = 1477448746.485,
+						["amount"] = 4140,
+						["spellid"] = 61295,
+						["srcname"] = "Royalty",
+						["hp"] = 470782,
+						["absorb"] = 0,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 10407,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 481189,
+						["ts"] = 1477448747.135,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 210318,
+						["spellid"] = 61295,
+						["srcname"] = "Royalty",
+						["hp"] = 691507,
+						["ts"] = 1477448748.464,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 28864,
+						["spellid"] = 61295,
+						["srcname"] = "Royalty",
+						["hp"] = 1106106,
+						["ts"] = 1477448751.044,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 50816,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 1156922,
+						["ts"] = 1477448751.187,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 105301,
+						["spellid"] = 596,
+						["srcname"] = "Scop",
+						["hp"] = 1262223,
+						["ts"] = 1477448751.594,
+					}, -- [8]
+					{
+						["ts"] = 1477448752.138,
+						["amount"] = 10407,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1272630,
+						["absorb"] = 0,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 18271,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1318307,
+						["ts"] = 1477448754.863,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 10407,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1328714,
+						["ts"] = 1477448756.144,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 26816,
+						["spellid"] = 61295,
+						["srcname"] = "Royalty",
+						["hp"] = 1378531,
+						["ts"] = 1477448756.189,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 18271,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1396802,
+						["ts"] = 1477448757.627,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 26309,
+						["spellid"] = 61295,
+						["srcname"] = "Royalty",
+						["hp"] = 1316976,
+						["ts"] = 1477448758.754,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 10407,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 652690,
+						["ts"] = 1477448744.176,
+					}, -- [15]
+					["pos"] = 15,
 				},
 				["healingspells"] = {
 					["Sweet Souls"] = {
@@ -47552,7 +47552,15 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["shielding"] = 161000,
+				["power"] = {
+					[2] = {
+						["spells"] = {
+							[120694] = 6793,
+							[193530] = 2482,
+						},
+						["amount"] = 9275,
+					},
+				},
 				["damage"] = 657072133,
 				["damagespells"] = {
 					["Cobra Shot"] = {
@@ -47829,44 +47837,44 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447745.00501,
 								["amount"] = -161000,
+								["srcname"] = "Xavius",
 								["hp"] = 647547,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [1]
 							{
 								["ts"] = 1477447745.20502,
 								["amount"] = -161000,
+								["srcname"] = "Xavius",
 								["hp"] = 486547,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [2]
 							{
 								["ts"] = 1477447745.60303,
 								["amount"] = -161000,
+								["srcname"] = "Xavius",
 								["hp"] = 325547,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [3]
 							{
 								["ts"] = 1477447746.00104,
 								["amount"] = -161000,
+								["srcname"] = "Xavius",
 								["hp"] = 164547,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [4]
 							{
 								["ts"] = 1477447746.21205,
 								["amount"] = -161000,
+								["srcname"] = "Xavius",
 								["hp"] = 3547,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [5]
 							{
 								["ts"] = 1477447747.22206,
 								["amount"] = -161000,
+								["srcname"] = "Xavius",
 								["hp"] = 1,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [6]
 							{
 								["spellname"] = "Kurion dies",
@@ -47877,58 +47885,58 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447742.77408,
 								["amount"] = -161000,
+								["srcname"] = "Xavius",
 								["hp"] = 948360,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [8]
 							{
 								["ts"] = 1477447742.98009,
 								["amount"] = -161000,
+								["srcname"] = "Xavius",
 								["hp"] = 787360,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [9]
 							{
 								["ts"] = 1477447743.1971,
 								["amount"] = -161000,
+								["srcname"] = "Xavius",
 								["hp"] = 626360,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [10]
 							{
 								["ts"] = 1477447743.58011,
 								["amount"] = -161000,
+								["srcname"] = "Xavius",
 								["hp"] = 465360,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [11]
 							{
 								["ts"] = 1477447743.75712,
 								["amount"] = -161000,
+								["srcname"] = "Xavius",
 								["hp"] = 304360,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [12]
 							{
 								["ts"] = 1477447743.99513,
 								["amount"] = -161000,
+								["srcname"] = "Xavius",
 								["hp"] = 143360,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [13]
 							{
 								["ts"] = 1477447744.58014,
 								["amount"] = -161000,
+								["srcname"] = "Xavius",
 								["hp"] = 969547,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [14]
 							{
 								["ts"] = 1477447744.77115,
 								["amount"] = -161000,
+								["srcname"] = "Xavius",
 								["hp"] = 808547,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [15]
 							["pos"] = 8,
 						},
@@ -47948,9 +47956,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446439.83902,
 								["amount"] = -131419,
+								["srcname"] = "Cenarius",
 								["hp"] = 849320,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -47987,9 +47995,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446441.84807,
 								["amount"] = -134643,
+								["srcname"] = "Cenarius",
 								["hp"] = 802144,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [7]
 							{
 								["absorb"] = 0,
@@ -48002,9 +48010,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446443.86509,
 								["amount"] = -138296,
+								["srcname"] = "Cenarius",
 								["hp"] = 669051,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [9]
 							{
 								["spellid"] = 210337,
@@ -48029,9 +48037,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446445.85513,
 								["amount"] = -140155,
+								["srcname"] = "Cenarius",
 								["hp"] = 390733,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [13]
 							{
 								["spellid"] = 214308,
@@ -48051,125 +48059,7 @@ SkadaPerCharDB = {
 					}, -- [2]
 				},
 				["damagetaken"] = 94761787,
-				["deathlog"] = {
-					{
-						["ts"] = 1477448746.243,
-						["amount"] = -81141,
-						["hp"] = 1773352,
-						["spellid"] = 206920,
-						["srcname"] = "Nightmare Tentacle",
-					}, -- [1]
-					{
-						["ts"] = 1477448747.567,
-						["amount"] = -83514,
-						["hp"] = 1689838,
-						["spellid"] = 206920,
-						["srcname"] = "Nightmare Tentacle",
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 19453,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 1709291,
-						["ts"] = 1477448747.757,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 45660,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1754951,
-						["ts"] = 1477448748.924,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 5203,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1760154,
-						["ts"] = 1477448749.151,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 105301,
-						["spellid"] = 596,
-						["srcname"] = "Scop",
-						["hp"] = 2174976,
-						["ts"] = 1477448751.594,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 26538,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 2201514,
-						["ts"] = 1477448751.921,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 2201514,
-						["ts"] = 1477448754.909,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 2201514,
-						["ts"] = 1477448757.916,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 25326,
-						["spellid"] = 120692,
-						["srcname"] = "Zerra",
-						["hp"] = 2030392,
-						["ts"] = 1477448744.237,
-					}, -- [10]
-					{
-						["ts"] = 1477448744.948,
-						["amount"] = -83856,
-						["hp"] = 1946536,
-						["spellid"] = 206920,
-						["srcname"] = "Nightmare Tentacle",
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 5203,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1664585,
-						["ts"] = 1477448745.219,
-					}, -- [12]
-					{
-						["ts"] = 1477448745.871,
-						["amount"] = -78441,
-						["hp"] = 1586144,
-						["spellid"] = 206920,
-						["srcname"] = "Nightmare Tentacle",
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 263146,
-						["spellid"] = 34861,
-						["srcname"] = "Scop",
-						["hp"] = 1849290,
-						["ts"] = 1477448745.871,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 5203,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1854493,
-						["ts"] = 1477448746.15,
-					}, -- [15]
-					["pos"] = 10,
-				},
+				["shielding"] = 161000,
 				["id"] = "Player-1169-06BFE556",
 				["maxhp"] = 1895220,
 				["healing"] = 10255189,
@@ -48356,18 +48246,18 @@ SkadaPerCharDB = {
 						["min"] = 324609,
 						["absorbed"] = 0,
 					},
-					["Shadow Mend"] = {
+					["Dread Impact"] = {
 						["crushing"] = 0,
-						["id"] = 186439,
-						["damage"] = 5747,
-						["max"] = 5747,
+						["id"] = 223506,
+						["damage"] = 349221,
+						["max"] = 117437,
 						["glancing"] = 0,
-						["name"] = "Shadow Mend",
+						["name"] = "Dread Impact",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 1,
+						["totalhits"] = 3,
 						["resisted"] = 0,
-						["min"] = 5747,
+						["min"] = 115293,
 						["absorbed"] = 0,
 					},
 					["Nightmare Blades"] = {
@@ -48398,18 +48288,18 @@ SkadaPerCharDB = {
 						["min"] = 4396,
 						["absorbed"] = 62709,
 					},
-					["Rot"] = {
+					["Shadow Mend"] = {
 						["crushing"] = 0,
-						["id"] = 203097,
-						["damage"] = 5103128,
-						["max"] = 274181,
+						["id"] = 186439,
+						["damage"] = 5747,
+						["max"] = 5747,
 						["glancing"] = 0,
-						["name"] = "Rot",
+						["name"] = "Shadow Mend",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 19,
+						["totalhits"] = 1,
 						["resisted"] = 0,
-						["min"] = 260925,
+						["min"] = 5747,
 						["absorbed"] = 0,
 					},
 					["Dread Charge"] = {
@@ -48440,18 +48330,18 @@ SkadaPerCharDB = {
 						["min"] = 107150,
 						["absorbed"] = 350272,
 					},
-					["Dark Ruination"] = {
+					["Nightmare Javelin"] = {
 						["crushing"] = 0,
-						["id"] = 209294,
-						["damage"] = 6077750,
-						["max"] = 161000,
+						["id"] = 211507,
+						["damage"] = 501552,
+						["max"] = 72895,
 						["glancing"] = 0,
-						["name"] = "Dark Ruination",
+						["name"] = "Nightmare Javelin",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 38,
+						["totalhits"] = 7,
 						["resisted"] = 0,
-						["min"] = 120750,
+						["min"] = 70185,
 						["absorbed"] = 0,
 					},
 					["Darkfall"] = {
@@ -48468,18 +48358,18 @@ SkadaPerCharDB = {
 						["min"] = 190315,
 						["absorbed"] = 0,
 					},
-					["Nightmare Javelin"] = {
+					["Venomous Pool"] = {
 						["crushing"] = 0,
-						["id"] = 211507,
-						["damage"] = 501552,
-						["max"] = 72895,
+						["id"] = 213124,
+						["damage"] = 1091797,
+						["max"] = 182299,
 						["glancing"] = 0,
-						["name"] = "Nightmare Javelin",
+						["name"] = "Venomous Pool",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 7,
+						["totalhits"] = 11,
 						["resisted"] = 0,
-						["min"] = 70185,
+						["min"] = 60697,
 						["absorbed"] = 0,
 					},
 					["Hateful Rebuke"] = {
@@ -48496,18 +48386,18 @@ SkadaPerCharDB = {
 						["min"] = 43375,
 						["absorbed"] = 70521,
 					},
-					["Venomous Pool"] = {
+					["Corrupt"] = {
 						["crushing"] = 0,
-						["id"] = 213124,
-						["damage"] = 1091797,
-						["max"] = 182299,
+						["id"] = 225042,
+						["damage"] = 428400,
+						["max"] = 71400,
 						["glancing"] = 0,
-						["name"] = "Venomous Pool",
+						["name"] = "Corrupt",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 11,
+						["totalhits"] = 6,
 						["resisted"] = 0,
-						["min"] = 60697,
+						["min"] = 71400,
 						["absorbed"] = 0,
 					},
 					["Tormenting Infection"] = {
@@ -48524,20 +48414,6 @@ SkadaPerCharDB = {
 						["min"] = 799075,
 						["absorbed"] = 0,
 					},
-					["Nightmare Gaze"] = {
-						["crushing"] = 0,
-						["id"] = 210931,
-						["damage"] = 5046127,
-						["max"] = 642418,
-						["glancing"] = 0,
-						["name"] = "Nightmare Gaze",
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 8,
-						["resisted"] = 0,
-						["min"] = 615375,
-						["absorbed"] = 0,
-					},
 					["Corruption: Crushing Shadows"] = {
 						["crushing"] = 0,
 						["id"] = 208860,
@@ -48550,6 +48426,20 @@ SkadaPerCharDB = {
 						["totalhits"] = 5,
 						["resisted"] = 0,
 						["min"] = 198000,
+						["absorbed"] = 0,
+					},
+					["Nightmare Gaze"] = {
+						["crushing"] = 0,
+						["id"] = 210931,
+						["damage"] = 5046127,
+						["max"] = 642418,
+						["glancing"] = 0,
+						["name"] = "Nightmare Gaze",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 8,
+						["resisted"] = 0,
+						["min"] = 615375,
 						["absorbed"] = 0,
 					},
 					["Barreling Impact"] = {
@@ -48636,18 +48526,18 @@ SkadaPerCharDB = {
 						["min"] = 429329,
 						["absorbed"] = 0,
 					},
-					["Corrupting Nova"] = {
+					["Twisting Shadows"] = {
 						["crushing"] = 0,
-						["id"] = 207830,
-						["damage"] = 4233828,
-						["max"] = 554639,
+						["id"] = 210850,
+						["damage"] = 354828,
+						["max"] = 71424,
 						["glancing"] = 0,
-						["name"] = "Corrupting Nova",
+						["name"] = "Twisting Shadows",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 8,
+						["totalhits"] = 5,
 						["resisted"] = 0,
-						["min"] = 516079,
+						["min"] = 70542,
 						["absorbed"] = 0,
 					},
 					["Momentum"] = {
@@ -48902,18 +48792,18 @@ SkadaPerCharDB = {
 						["min"] = 580055,
 						["absorbed"] = 0,
 					},
-					["Twisting Shadows"] = {
+					["Corrupting Nova"] = {
 						["crushing"] = 0,
-						["id"] = 210850,
-						["damage"] = 354828,
-						["max"] = 71424,
+						["id"] = 207830,
+						["damage"] = 4233828,
+						["max"] = 554639,
 						["glancing"] = 0,
-						["name"] = "Twisting Shadows",
+						["name"] = "Corrupting Nova",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 5,
+						["totalhits"] = 8,
 						["resisted"] = 0,
-						["min"] = 70542,
+						["min"] = 516079,
 						["absorbed"] = 0,
 					},
 					["Tormenting Swipe"] = {
@@ -48944,18 +48834,18 @@ SkadaPerCharDB = {
 						["min"] = 4898,
 						["absorbed"] = 0,
 					},
-					["Corrupt"] = {
+					["Dark Ruination"] = {
 						["crushing"] = 0,
-						["id"] = 225042,
-						["damage"] = 428400,
-						["max"] = 71400,
+						["id"] = 209294,
+						["damage"] = 6077750,
+						["max"] = 161000,
 						["glancing"] = 0,
-						["name"] = "Corrupt",
+						["name"] = "Dark Ruination",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 6,
+						["totalhits"] = 38,
 						["resisted"] = 0,
-						["min"] = 71400,
+						["min"] = 120750,
 						["absorbed"] = 0,
 					},
 					["Nightmares"] = {
@@ -48972,18 +48862,18 @@ SkadaPerCharDB = {
 						["min"] = 211407,
 						["absorbed"] = 0,
 					},
-					["Dread Impact"] = {
+					["Rot"] = {
 						["crushing"] = 0,
-						["id"] = 223506,
-						["damage"] = 349221,
-						["max"] = 117437,
+						["id"] = 203097,
+						["damage"] = 5103128,
+						["max"] = 274181,
 						["glancing"] = 0,
-						["name"] = "Dread Impact",
+						["name"] = "Rot",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 3,
+						["totalhits"] = 19,
 						["resisted"] = 0,
-						["min"] = 115293,
+						["min"] = 260925,
 						["absorbed"] = 0,
 					},
 					["Attack"] = {
@@ -49083,14 +48973,124 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Kurion",
 				["alertCount"] = 0,
-				["power"] = {
-					[2] = {
-						["spells"] = {
-							[120694] = 6793,
-							[193530] = 2482,
-						},
-						["amount"] = 9275,
-					},
+				["deathlog"] = {
+					{
+						["ts"] = 1477448746.243,
+						["amount"] = -81141,
+						["srcname"] = "Nightmare Tentacle",
+						["hp"] = 1773352,
+						["spellid"] = 206920,
+					}, -- [1]
+					{
+						["ts"] = 1477448747.567,
+						["amount"] = -83514,
+						["srcname"] = "Nightmare Tentacle",
+						["hp"] = 1689838,
+						["spellid"] = 206920,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 19453,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 1709291,
+						["ts"] = 1477448747.757,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 45660,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1754951,
+						["ts"] = 1477448748.924,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 5203,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1760154,
+						["ts"] = 1477448749.151,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 105301,
+						["spellid"] = 596,
+						["srcname"] = "Scop",
+						["hp"] = 2174976,
+						["ts"] = 1477448751.594,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 26538,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 2201514,
+						["ts"] = 1477448751.921,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 2201514,
+						["ts"] = 1477448754.909,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 2201514,
+						["ts"] = 1477448757.916,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 25326,
+						["spellid"] = 120692,
+						["srcname"] = "Zerra",
+						["hp"] = 2030392,
+						["ts"] = 1477448744.237,
+					}, -- [10]
+					{
+						["ts"] = 1477448744.948,
+						["amount"] = -83856,
+						["srcname"] = "Nightmare Tentacle",
+						["hp"] = 1946536,
+						["spellid"] = 206920,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 5203,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1664585,
+						["ts"] = 1477448745.219,
+					}, -- [12]
+					{
+						["ts"] = 1477448745.871,
+						["amount"] = -78441,
+						["srcname"] = "Nightmare Tentacle",
+						["hp"] = 1586144,
+						["spellid"] = 206920,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 263146,
+						["spellid"] = 34861,
+						["srcname"] = "Scop",
+						["hp"] = 1849290,
+						["ts"] = 1477448745.871,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 5203,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1854493,
+						["ts"] = 1477448746.15,
+					}, -- [15]
+					["pos"] = 10,
 				},
 				["healingspells"] = {
 					["Exhilaration"] = {
@@ -49415,7 +49415,17 @@ SkadaPerCharDB = {
 				["interrupts"] = 3,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["shielding"] = 25082170,
+				["power"] = {
+					{
+						["spells"] = {
+							[33917] = 2776,
+							[77758] = 1632,
+							[8921] = 2020,
+							[17057] = 140,
+						},
+						["amount"] = 6568,
+					}, -- [1]
+				},
 				["damage"] = 486561022,
 				["damagespells"] = {
 					["Brambles"] = {
@@ -49585,9 +49595,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477448654.94901,
 								["amount"] = -5502,
+								["srcname"] = "Imenja",
 								["hp"] = 1761271,
 								["spellid"] = 210801,
-								["srcname"] = "Imenja",
 							}, -- [1]
 							{
 								["absorb"] = -5298,
@@ -49686,9 +49696,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477448654.88214,
 								["amount"] = -8458,
+								["srcname"] = "Silverstone",
 								["hp"] = 1967165,
 								["spellid"] = 114954,
-								["srcname"] = "Silverstone",
 							}, -- [14]
 							{
 								["absorb"] = -5298,
@@ -49770,9 +49780,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447673.47109,
 								["amount"] = -91071,
+								["srcname"] = "Xavius",
 								["hp"] = 2140153,
 								["spellid"] = 209158,
-								["srcname"] = "Xavius",
 							}, -- [9]
 							{
 								["absorb"] = -5272,
@@ -49817,9 +49827,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447674.47515,
 								["amount"] = -91071,
+								["srcname"] = "Xavius",
 								["hp"] = 816745,
 								["spellid"] = 209158,
-								["srcname"] = "Xavius",
 							}, -- [15]
 							["pos"] = 8,
 						},
@@ -49867,10 +49877,10 @@ SkadaPerCharDB = {
 								["spellid"] = 41220,
 							}, -- [5]
 							{
-								["hp"] = 0,
-								["ts"] = 1477447596.588,
-								["spellid"] = 20484,
 								["srcname"] = "Pawsydawn",
+								["ts"] = 1477447596.588,
+								["hp"] = 0,
+								["spellid"] = 20484,
 							}, -- [6]
 							{
 								["absorb"] = -71061,
@@ -49907,9 +49917,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447586.89911,
 								["amount"] = -181610,
+								["srcname"] = "Xavius",
 								["hp"] = 820760,
 								["spellid"] = 209158,
-								["srcname"] = "Xavius",
 							}, -- [11]
 							{
 								["absorb"] = 0,
@@ -50053,10 +50063,10 @@ SkadaPerCharDB = {
 								["spellid"] = 41220,
 							}, -- [13]
 							{
-								["hp"] = 0,
-								["ts"] = 1477445375.824,
-								["spellid"] = 20484,
 								["srcname"] = "Pawsydawn",
+								["ts"] = 1477445375.824,
+								["hp"] = 0,
+								["spellid"] = 20484,
 							}, -- [14]
 							{
 								["absorb"] = -12338,
@@ -50133,9 +50143,9 @@ SkadaPerCharDB = {
 								["ts"] = 1477444575.17708,
 								["amount"] = -1000000000,
 								["spellname"] = "Dark Reconstitution",
+								["srcname"] = "Il'gynoth",
 								["hp"] = 2497262,
 								["spellid"] = 210781,
-								["srcname"] = "Il'gynoth",
 							}, -- [8]
 							{
 								["spellname"] = "Bluebaloo dies",
@@ -50144,10 +50154,10 @@ SkadaPerCharDB = {
 								["spellid"] = 41220,
 							}, -- [9]
 							{
-								["hp"] = 0,
-								["ts"] = 1477444581.404,
-								["spellid"] = 20484,
 								["srcname"] = "Pawsydawn",
+								["ts"] = 1477444581.404,
+								["hp"] = 0,
+								["spellid"] = 20484,
 							}, -- [10]
 							{
 								["absorb"] = 0,
@@ -50195,8 +50205,7 @@ SkadaPerCharDB = {
 					}, -- [5]
 				},
 				["damagetaken"] = 584494517,
-				["deathlog"] = {
-				},
+				["shielding"] = 25082170,
 				["id"] = "Player-1169-06A8C6C8",
 				["maxhp"] = 3509804,
 				["healing"] = 188837467,
@@ -50971,19 +50980,19 @@ SkadaPerCharDB = {
 						["min"] = 655890,
 						["absorbed"] = 5298,
 					},
-					["Stomp"] = {
+					["Nightmare Bloom"] = {
 						["crushing"] = 0,
-						["id"] = 201754,
-						["damage"] = 153613,
-						["max"] = 92987,
+						["id"] = 203690,
+						["damage"] = 115866,
+						["max"] = 115866,
 						["glancing"] = 0,
-						["name"] = "Stomp",
+						["name"] = "Nightmare Bloom",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 2,
+						["totalhits"] = 1,
 						["resisted"] = 0,
-						["min"] = 60626,
-						["absorbed"] = 10596,
+						["min"] = 115866,
+						["absorbed"] = 5311,
 					},
 					["Rend Flesh"] = {
 						["crushing"] = 0,
@@ -50998,20 +51007,6 @@ SkadaPerCharDB = {
 						["resisted"] = 0,
 						["min"] = 109983,
 						["absorbed"] = 915087,
-					},
-					["Nightmare Bloom"] = {
-						["crushing"] = 0,
-						["id"] = 203690,
-						["damage"] = 115866,
-						["max"] = 115866,
-						["glancing"] = 0,
-						["name"] = "Nightmare Bloom",
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["min"] = 115866,
-						["absorbed"] = 5311,
 					},
 					["Dark Ruination"] = {
 						["crushing"] = 0,
@@ -51055,6 +51050,20 @@ SkadaPerCharDB = {
 						["min"] = 145824,
 						["absorbed"] = 330043,
 					},
+					["Gloom"] = {
+						["crushing"] = 0,
+						["id"] = 205870,
+						["damage"] = 959911,
+						["max"] = 370063,
+						["glancing"] = 0,
+						["name"] = "Gloom",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 3,
+						["resisted"] = 0,
+						["min"] = 289291,
+						["absorbed"] = 15933,
+					},
 					["Raking Talons"] = {
 						["crushing"] = 0,
 						["id"] = 215582,
@@ -51083,19 +51092,19 @@ SkadaPerCharDB = {
 						["min"] = 10040,
 						["absorbed"] = 10596,
 					},
-					["Gloom"] = {
+					["Stomp"] = {
 						["crushing"] = 0,
-						["id"] = 205870,
-						["damage"] = 959911,
-						["max"] = 370063,
+						["id"] = 201754,
+						["damage"] = 153613,
+						["max"] = 92987,
 						["glancing"] = 0,
-						["name"] = "Gloom",
+						["name"] = "Stomp",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 3,
+						["totalhits"] = 2,
 						["resisted"] = 0,
-						["min"] = 289291,
-						["absorbed"] = 15933,
+						["min"] = 60626,
+						["absorbed"] = 10596,
 					},
 					["Horrific Slam"] = {
 						["crushing"] = 0,
@@ -51153,20 +51162,6 @@ SkadaPerCharDB = {
 						["min"] = 698,
 						["absorbed"] = 0,
 					},
-					["Tyr's Enforcer"] = {
-						["crushing"] = 0,
-						["id"] = 209478,
-						["damage"] = 7439,
-						["max"] = 7439,
-						["glancing"] = 0,
-						["name"] = "Tyr's Enforcer",
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["min"] = 7439,
-						["absorbed"] = 5298,
-					},
 					["The Infinite Dark"] = {
 						["crushing"] = 0,
 						["id"] = 211634,
@@ -51180,6 +51175,20 @@ SkadaPerCharDB = {
 						["resisted"] = 0,
 						["min"] = 451405,
 						["absorbed"] = 0,
+					},
+					["Manifest Corruption"] = {
+						["crushing"] = 0,
+						["id"] = 210264,
+						["damage"] = 1715427,
+						["max"] = 439545,
+						["glancing"] = 0,
+						["name"] = "Manifest Corruption",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 4,
+						["resisted"] = 0,
+						["min"] = 410091,
+						["absorbed"] = 21192,
 					},
 					["Nightmare Brambles"] = {
 						["crushing"] = 0,
@@ -51209,19 +51218,19 @@ SkadaPerCharDB = {
 						["min"] = 620685,
 						["absorbed"] = 5284,
 					},
-					["Manifest Corruption"] = {
+					["Nightmare Explosion"] = {
 						["crushing"] = 0,
-						["id"] = 210264,
-						["damage"] = 1715427,
-						["max"] = 439545,
+						["id"] = 209471,
+						["damage"] = 487376,
+						["max"] = 243969,
 						["glancing"] = 0,
-						["name"] = "Manifest Corruption",
+						["name"] = "Nightmare Explosion",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 4,
+						["totalhits"] = 2,
 						["resisted"] = 0,
-						["min"] = 410091,
-						["absorbed"] = 21192,
+						["min"] = 243407,
+						["absorbed"] = 10596,
 					},
 					["Puncture Wound"] = {
 						["crushing"] = 0,
@@ -51237,19 +51246,19 @@ SkadaPerCharDB = {
 						["min"] = 40537,
 						["absorbed"] = 3831,
 					},
-					["Shadow Volley"] = {
+					["Tyr's Enforcer"] = {
 						["crushing"] = 0,
-						["id"] = 222939,
-						["damage"] = 304282,
-						["max"] = 304282,
+						["id"] = 209478,
+						["damage"] = 7439,
+						["max"] = 7439,
 						["glancing"] = 0,
-						["name"] = "Shadow Volley",
+						["name"] = "Tyr's Enforcer",
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["min"] = 304282,
-						["absorbed"] = 5311,
+						["min"] = 7439,
+						["absorbed"] = 5298,
 					},
 					["Meteor Burn"] = {
 						["crushing"] = 0,
@@ -51461,19 +51470,19 @@ SkadaPerCharDB = {
 						["min"] = 18691,
 						["absorbed"] = 21192,
 					},
-					["Nightmare Explosion"] = {
+					["Shadow Volley"] = {
 						["crushing"] = 0,
-						["id"] = 209471,
-						["damage"] = 487376,
-						["max"] = 243969,
+						["id"] = 222939,
+						["damage"] = 304282,
+						["max"] = 304282,
 						["glancing"] = 0,
-						["name"] = "Nightmare Explosion",
+						["name"] = "Shadow Volley",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 2,
+						["totalhits"] = 1,
 						["resisted"] = 0,
-						["min"] = 243407,
-						["absorbed"] = 10596,
+						["min"] = 304282,
+						["absorbed"] = 5311,
 					},
 					["Nightmare Corruption"] = {
 						["crushing"] = 0,
@@ -51799,10 +51808,10 @@ SkadaPerCharDB = {
 						["class"] = "WARLOCK",
 						["shielding"] = 0,
 					},
-					["Player-1169-06A51BF3"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Imenja",
-						["amount"] = 1200616,
+					["Player-1169-07982349"] = {
+						["role"] = "HEALER",
+						["name"] = "Royalty",
+						["amount"] = 750208,
 						["class"] = "SHAMAN",
 						["shielding"] = 0,
 					},
@@ -51813,10 +51822,10 @@ SkadaPerCharDB = {
 						["class"] = "DRUID",
 						["shielding"] = 0,
 					},
-					["Player-1169-07982349"] = {
-						["role"] = "HEALER",
-						["name"] = "Royalty",
-						["amount"] = 750208,
+					["Player-1169-06A51BF3"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Imenja",
+						["amount"] = 1200616,
 						["class"] = "SHAMAN",
 						["shielding"] = 0,
 					},
@@ -51936,16 +51945,7 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Bluebaloo",
 				["alertCount"] = 0,
-				["power"] = {
-					{
-						["spells"] = {
-							[33917] = 2776,
-							[77758] = 1632,
-							[8921] = 2020,
-							[17057] = 140,
-						},
-						["amount"] = 6568,
-					}, -- [1]
+				["deathlog"] = {
 				},
 				["healingspells"] = {
 					["Brambles"] = {
@@ -52309,7 +52309,16 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 42,
 				["ccbreaks"] = 0,
-				["shielding"] = 31703284,
+				["power"] = {
+					[0] = {
+						["spells"] = {
+							[188017] = 480803,
+							[88852] = 1718640,
+							[188030] = 216000,
+						},
+						["amount"] = 2415443,
+					},
+				},
 				["damage"] = 70711509,
 				["damagespells"] = {
 					["Attack"] = {
@@ -52411,9 +52420,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447715.34001,
 								["amount"] = -433256,
+								["srcname"] = "Xavius",
 								["hp"] = 296236,
 								["spellid"] = 206369,
-								["srcname"] = "Xavius",
 							}, -- [1]
 							{
 								["absorb"] = 0,
@@ -52432,9 +52441,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447717.60904,
 								["amount"] = -202547,
+								["srcname"] = "Dread Abomination",
 								["hp"] = 1,
 								["spellid"] = 208860,
-								["srcname"] = "Dread Abomination",
 							}, -- [4]
 							{
 								["spellname"] = "Milric dies",
@@ -52453,9 +52462,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447704.94107,
 								["amount"] = -148228,
+								["srcname"] = "Xavius",
 								["hp"] = 867873,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [7]
 							{
 								["absorb"] = 0,
@@ -52476,9 +52485,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447706.2571,
 								["amount"] = -202547,
+								["srcname"] = "Dread Abomination",
 								["hp"] = 678527,
 								["spellid"] = 208860,
-								["srcname"] = "Dread Abomination",
 							}, -- [10]
 							{
 								["absorb"] = 0,
@@ -52526,128 +52535,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["damagetaken"] = 108381238,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 5203,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1609600,
-						["ts"] = 1477448753.136,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 5203,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1668513,
-						["ts"] = 1477448757.141,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 5203,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1673716,
-						["ts"] = 1477448758.136,
-					}, -- [3]
-					{
-						["ts"] = 1477448743.661,
-						["amount"] = 184964,
-						["spellid"] = 596,
-						["srcname"] = "Scop",
-						["hp"] = 1539376,
-						["absorb"] = 0,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 27993,
-						["spellid"] = 81269,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1567369,
-						["ts"] = 1477448744.022,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 12765,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1580134,
-						["ts"] = 1477448744.203,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 34626,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1614760,
-						["ts"] = 1477448744.721,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 25326,
-						["spellid"] = 120692,
-						["srcname"] = "Zerra",
-						["hp"] = 1640086,
-						["ts"] = 1477448744.983,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 23671,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1281688,
-						["ts"] = 1477448745.075,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 10003,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1291691,
-						["ts"] = 1477448745.871,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 10407,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1302098,
-						["ts"] = 1477448747.135,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 34626,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1336724,
-						["ts"] = 1477448747.688,
-					}, -- [12]
-					{
-						["ts"] = 1477448750.245,
-						["amount"] = -74313,
-						["hp"] = 1644480,
-						["spellid"] = 206920,
-						["srcname"] = "Nightmare Tentacle",
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 34625,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1708939,
-						["ts"] = 1477448750.701,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 23801,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 1604397,
-						["ts"] = 1477448752.892,
-					}, -- [15]
-					["pos"] = 4,
-				},
+				["shielding"] = 31703284,
 				["id"] = "Player-1169-06C22578",
 				["maxhp"] = 2306739,
 				["healing"] = 637073979,
@@ -52946,18 +52834,18 @@ SkadaPerCharDB = {
 						["min"] = 210135,
 						["absorbed"] = 0,
 					},
-					["Nightmare Explosion"] = {
+					["Burst of Corruption"] = {
 						["crushing"] = 0,
-						["id"] = 209471,
-						["damage"] = 263287,
-						["max"] = 263287,
+						["id"] = 203646,
+						["damage"] = 480520,
+						["max"] = 480520,
 						["glancing"] = 0,
-						["name"] = "Nightmare Explosion",
+						["name"] = "Burst of Corruption",
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["min"] = 263287,
+						["min"] = 480520,
 						["absorbed"] = 0,
 					},
 					["Rotting Gasp"] = {
@@ -52974,18 +52862,18 @@ SkadaPerCharDB = {
 						["min"] = 642603,
 						["absorbed"] = 0,
 					},
-					["Barreling Impact"] = {
+					["Shadow Volley"] = {
 						["crushing"] = 0,
-						["id"] = 198109,
-						["damage"] = 2874102,
-						["max"] = 903451,
+						["id"] = 222939,
+						["damage"] = 316523,
+						["max"] = 316523,
 						["glancing"] = 0,
-						["name"] = "Barreling Impact",
+						["name"] = "Shadow Volley",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 5,
+						["totalhits"] = 1,
 						["resisted"] = 0,
-						["min"] = 461764,
+						["min"] = 316523,
 						["absorbed"] = 0,
 					},
 					["Darkfall"] = {
@@ -53002,19 +52890,19 @@ SkadaPerCharDB = {
 						["min"] = 1408,
 						["absorbed"] = 182073,
 					},
-					["Tainted Discharge"] = {
+					["Creeping Nightmares"] = {
 						["crushing"] = 0,
-						["id"] = 208385,
-						["damage"] = 354641,
-						["max"] = 177321,
+						["id"] = 210279,
+						["damage"] = 9449783,
+						["max"] = 119799,
 						["glancing"] = 0,
-						["name"] = "Tainted Discharge",
+						["name"] = "Creeping Nightmares",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 2,
+						["totalhits"] = 151,
 						["resisted"] = 0,
-						["min"] = 177320,
-						["absorbed"] = 0,
+						["min"] = 15412,
+						["absorbed"] = 24880,
 					},
 					["Hateful Rebuke"] = {
 						["crushing"] = 0,
@@ -53030,32 +52918,18 @@ SkadaPerCharDB = {
 						["min"] = 100681,
 						["absorbed"] = 0,
 					},
-					["Shadow Volley"] = {
+					["Nightmare Explosion"] = {
 						["crushing"] = 0,
-						["id"] = 222939,
-						["damage"] = 316523,
-						["max"] = 316523,
+						["id"] = 209471,
+						["damage"] = 263287,
+						["max"] = 263287,
 						["glancing"] = 0,
-						["name"] = "Shadow Volley",
+						["name"] = "Nightmare Explosion",
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["min"] = 316523,
-						["absorbed"] = 0,
-					},
-					["Wild Flail"] = {
-						["crushing"] = 0,
-						["id"] = 226935,
-						["damage"] = 111641,
-						["max"] = 57425,
-						["glancing"] = 0,
-						["name"] = "Wild Flail",
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 2,
-						["resisted"] = 0,
-						["min"] = 54216,
+						["min"] = 263287,
 						["absorbed"] = 0,
 					},
 					["Corrupting Poison"] = {
@@ -53084,6 +52958,20 @@ SkadaPerCharDB = {
 						["totalhits"] = 3,
 						["resisted"] = 0,
 						["min"] = 732551,
+						["absorbed"] = 0,
+					},
+					["Tainted Discharge"] = {
+						["crushing"] = 0,
+						["id"] = 208385,
+						["damage"] = 354641,
+						["max"] = 177321,
+						["glancing"] = 0,
+						["name"] = "Tainted Discharge",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["min"] = 177320,
 						["absorbed"] = 0,
 					},
 					["Venomous Pool"] = {
@@ -53380,20 +53268,6 @@ SkadaPerCharDB = {
 						["min"] = 77329,
 						["absorbed"] = 0,
 					},
-					["Creeping Nightmares"] = {
-						["crushing"] = 0,
-						["id"] = 210279,
-						["damage"] = 9449783,
-						["max"] = 119799,
-						["glancing"] = 0,
-						["name"] = "Creeping Nightmares",
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 151,
-						["resisted"] = 0,
-						["min"] = 15412,
-						["absorbed"] = 24880,
-					},
 					["Nightmare Javelin"] = {
 						["crushing"] = 0,
 						["id"] = 211507,
@@ -53406,6 +53280,20 @@ SkadaPerCharDB = {
 						["totalhits"] = 14,
 						["resisted"] = 0,
 						["min"] = 67039,
+						["absorbed"] = 0,
+					},
+					["Barreling Impact"] = {
+						["crushing"] = 0,
+						["id"] = 198109,
+						["damage"] = 2874102,
+						["max"] = 903451,
+						["glancing"] = 0,
+						["name"] = "Barreling Impact",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 5,
+						["resisted"] = 0,
+						["min"] = 461764,
 						["absorbed"] = 0,
 					},
 					["Roaring Cacophony"] = {
@@ -53436,18 +53324,18 @@ SkadaPerCharDB = {
 						["min"] = 431156,
 						["absorbed"] = 0,
 					},
-					["Burst of Corruption"] = {
+					["Wild Flail"] = {
 						["crushing"] = 0,
-						["id"] = 203646,
-						["damage"] = 480520,
-						["max"] = 480520,
+						["id"] = 226935,
+						["damage"] = 111641,
+						["max"] = 57425,
 						["glancing"] = 0,
-						["name"] = "Burst of Corruption",
+						["name"] = "Wild Flail",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 1,
+						["totalhits"] = 2,
 						["resisted"] = 0,
-						["min"] = 480520,
+						["min"] = 54216,
 						["absorbed"] = 0,
 					},
 					["Tormenting Swipe"] = {
@@ -53967,15 +53855,127 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Milric",
 				["alertCount"] = 0,
-				["power"] = {
-					[0] = {
-						["spells"] = {
-							[188017] = 480803,
-							[88852] = 1718640,
-							[188030] = 216000,
-						},
-						["amount"] = 2415443,
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 5203,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1609600,
+						["ts"] = 1477448753.136,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 5203,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1668513,
+						["ts"] = 1477448757.141,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 5203,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1673716,
+						["ts"] = 1477448758.136,
+					}, -- [3]
+					{
+						["ts"] = 1477448743.661,
+						["amount"] = 184964,
+						["spellid"] = 596,
+						["srcname"] = "Scop",
+						["hp"] = 1539376,
+						["absorb"] = 0,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 27993,
+						["spellid"] = 81269,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1567369,
+						["ts"] = 1477448744.022,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 12765,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1580134,
+						["ts"] = 1477448744.203,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 34626,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1614760,
+						["ts"] = 1477448744.721,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 25326,
+						["spellid"] = 120692,
+						["srcname"] = "Zerra",
+						["hp"] = 1640086,
+						["ts"] = 1477448744.983,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 23671,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1281688,
+						["ts"] = 1477448745.075,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 10003,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1291691,
+						["ts"] = 1477448745.871,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 10407,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1302098,
+						["ts"] = 1477448747.135,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 34626,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1336724,
+						["ts"] = 1477448747.688,
+					}, -- [12]
+					{
+						["ts"] = 1477448750.245,
+						["amount"] = -74313,
+						["srcname"] = "Nightmare Tentacle",
+						["hp"] = 1644480,
+						["spellid"] = 206920,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 34625,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1708939,
+						["ts"] = 1477448750.701,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 23801,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 1604397,
+						["ts"] = 1477448752.892,
+					}, -- [15]
+					["pos"] = 4,
 				},
 				["healingspells"] = {
 					["Holy Light"] = {
@@ -54283,7 +54283,14 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["shielding"] = 3866064,
+				["power"] = {
+					[2] = {
+						["spells"] = {
+							[214579] = 13900,
+						},
+						["amount"] = 13900,
+					},
+				},
 				["damage"] = 754786267,
 				["damagespells"] = {
 					["Pepper Breath"] = {
@@ -54460,16 +54467,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447702.94903,
 								["amount"] = -159344,
+								["srcname"] = "Xavius",
 								["hp"] = 1611685,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [3]
 							{
 								["ts"] = 1477447703.90704,
 								["amount"] = -159344,
+								["srcname"] = "Xavius",
 								["hp"] = 1452341,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -54482,9 +54489,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447704.94106,
 								["amount"] = -159344,
+								["srcname"] = "Xavius",
 								["hp"] = 1308942,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -54505,9 +54512,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447715.33909,
 								["amount"] = -465747,
+								["srcname"] = "Xavius",
 								["hp"] = 867112,
 								["spellid"] = 206369,
-								["srcname"] = "Xavius",
 							}, -- [9]
 							{
 								["spellid"] = 208385,
@@ -54518,37 +54525,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447740.76111,
 								["amount"] = -159343,
+								["srcname"] = "Xavius",
 								["hp"] = 517150,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [11]
 							{
 								["ts"] = 1477447741.59512,
 								["amount"] = -159344,
+								["srcname"] = "Xavius",
 								["hp"] = 357806,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [12]
 							{
 								["ts"] = 1477447741.79713,
 								["amount"] = -159344,
+								["spellid"] = 209294,
 								["hp"] = 198462,
 								["srcname"] = "Xavius",
-								["spellid"] = 209294,
 							}, -- [13]
 							{
 								["ts"] = 1477447741.97514,
 								["amount"] = -159344,
+								["spellid"] = 209294,
 								["hp"] = 39118,
 								["srcname"] = "Xavius",
-								["spellid"] = 209294,
 							}, -- [14]
 							{
 								["ts"] = 1477447742.58015,
 								["amount"] = -159344,
+								["srcname"] = "Xavius",
 								["hp"] = 1,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [15]
 							["pos"] = 2,
 						},
@@ -54576,9 +54583,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446405.84803,
 								["amount"] = -198861,
+								["srcname"] = "Cenarius",
 								["hp"] = 476024,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -54597,9 +54604,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446406.38306,
 								["amount"] = -209699,
+								["srcname"] = "Cenarius",
 								["hp"] = 227276,
 								["spellid"] = 214712,
-								["srcname"] = "Cenarius",
 							}, -- [6]
 							{
 								["spellid"] = 214308,
@@ -54650,9 +54657,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446403.85214,
 								["amount"] = -198630,
+								["srcname"] = "Cenarius",
 								["hp"] = 545537,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -54680,9 +54687,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442710.72102,
 								["amount"] = -315322,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 478864,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -54695,9 +54702,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442711.76804,
 								["amount"] = -327001,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 836502,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -54710,9 +54717,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442712.71806,
 								["amount"] = -338680,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 605921,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -54725,9 +54732,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442713.71208,
 								["amount"] = -338680,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 299255,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -54740,16 +54747,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442714.7211,
 								["amount"] = -338679,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 21791,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [10]
 							{
 								["ts"] = 1477442715.75611,
 								["amount"] = -338679,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 1,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [11]
 							{
 								["spellname"] = "Thorydan dies",
@@ -54768,9 +54775,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442709.75214,
 								["amount"] = -303644,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 706849,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -54786,127 +54793,7 @@ SkadaPerCharDB = {
 					}, -- [3]
 				},
 				["damagetaken"] = 112101304,
-				["deathlog"] = {
-					{
-						["ts"] = 1477448741.831,
-						["amount"] = 95517,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 913860,
-						["absorb"] = 0,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 91567,
-						["spellid"] = 596,
-						["srcname"] = "Scop",
-						["hp"] = 1005427,
-						["ts"] = 1477448741.95,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 10406,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1015833,
-						["ts"] = 1477448742.133,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 28716,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 1044549,
-						["ts"] = 1477448742.98,
-					}, -- [4]
-					{
-						["ts"] = 1477448743.507,
-						["amount"] = -217737,
-						["hp"] = 826812,
-						["spellid"] = 208860,
-						["srcname"] = "Dread Abomination",
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 15888,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 842700,
-						["ts"] = 1477448744.983,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 25326,
-						["spellid"] = 120692,
-						["srcname"] = "Zerra",
-						["hp"] = 579666,
-						["ts"] = 1477448745.274,
-					}, -- [7]
-					{
-						["ts"] = 1477448745.356,
-						["amount"] = 91566,
-						["spellid"] = 596,
-						["srcname"] = "Scop",
-						["hp"] = 671232,
-						["absorb"] = 0,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 15888,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 687120,
-						["ts"] = 1477448747.962,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 5204,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 692324,
-						["ts"] = 1477448748.152,
-					}, -- [10]
-					{
-						["ts"] = 1477448748.341,
-						["amount"] = -77380,
-						["hp"] = 614944,
-						["spellid"] = 206920,
-						["srcname"] = "Nightmare Tentacle",
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 27916,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 642860,
-						["ts"] = 1477448749.504,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 15888,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 969625,
-						["ts"] = 1477448750.966,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 10407,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 980032,
-						["ts"] = 1477448751.137,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 26060,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 1006092,
-						["ts"] = 1477448751.187,
-					}, -- [15]
-					["pos"] = 1,
-				},
+				["shielding"] = 3866064,
 				["id"] = "Player-1169-06F79F42",
 				["maxhp"] = 1922400,
 				["healing"] = 10036276,
@@ -55673,13 +55560,126 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Thorydan",
 				["alertCount"] = 0,
-				["power"] = {
-					[2] = {
-						["spells"] = {
-							[214579] = 13900,
-						},
-						["amount"] = 13900,
-					},
+				["deathlog"] = {
+					{
+						["ts"] = 1477448741.831,
+						["amount"] = 95517,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 913860,
+						["absorb"] = 0,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 91567,
+						["spellid"] = 596,
+						["srcname"] = "Scop",
+						["hp"] = 1005427,
+						["ts"] = 1477448741.95,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 10406,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1015833,
+						["ts"] = 1477448742.133,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 28716,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 1044549,
+						["ts"] = 1477448742.98,
+					}, -- [4]
+					{
+						["ts"] = 1477448743.507,
+						["amount"] = -217737,
+						["srcname"] = "Dread Abomination",
+						["hp"] = 826812,
+						["spellid"] = 208860,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 15888,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 842700,
+						["ts"] = 1477448744.983,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 25326,
+						["spellid"] = 120692,
+						["srcname"] = "Zerra",
+						["hp"] = 579666,
+						["ts"] = 1477448745.274,
+					}, -- [7]
+					{
+						["ts"] = 1477448745.356,
+						["amount"] = 91566,
+						["spellid"] = 596,
+						["srcname"] = "Scop",
+						["hp"] = 671232,
+						["absorb"] = 0,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 15888,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 687120,
+						["ts"] = 1477448747.962,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 5204,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 692324,
+						["ts"] = 1477448748.152,
+					}, -- [10]
+					{
+						["ts"] = 1477448748.341,
+						["amount"] = -77380,
+						["srcname"] = "Nightmare Tentacle",
+						["hp"] = 614944,
+						["spellid"] = 206920,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 27916,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 642860,
+						["ts"] = 1477448749.504,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 15888,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 969625,
+						["ts"] = 1477448750.966,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 10407,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 980032,
+						["ts"] = 1477448751.137,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 26060,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 1006092,
+						["ts"] = 1477448751.187,
+					}, -- [15]
+					["pos"] = 1,
 				},
 				["healingspells"] = {
 					["Exhilaration"] = {
@@ -55938,18 +55938,18 @@ SkadaPerCharDB = {
 						["uptime"] = 342,
 						["auratype"] = "BUFF",
 					},
-					["Cleansed Sister's Blessing"] = {
-						["name"] = "Cleansed Sister's Blessing",
-						["active"] = 0,
-						["id"] = 222519,
-						["uptime"] = 60,
-						["auratype"] = "BUFF",
-					},
 					["Enrage"] = {
 						["name"] = "Enrage",
 						["active"] = 0,
 						["id"] = 184362,
 						["uptime"] = 342,
+						["auratype"] = "BUFF",
+					},
+					["Cleansed Sister's Blessing"] = {
+						["name"] = "Cleansed Sister's Blessing",
+						["active"] = 0,
+						["id"] = 222519,
+						["uptime"] = 60,
 						["auratype"] = "BUFF",
 					},
 					["Cleansed Ancient's Blessing"] = {
@@ -55959,12 +55959,12 @@ SkadaPerCharDB = {
 						["id"] = 222517,
 						["name"] = "Cleansed Ancient's Blessing",
 					},
-					["Corrupted Blood of Zakajz"] = {
-						["name"] = "Corrupted Blood of Zakajz",
+					["Temporal Displacement"] = {
+						["name"] = "Temporal Displacement",
 						["active"] = 0,
-						["id"] = 209567,
-						["uptime"] = 37,
-						["auratype"] = "BUFF",
+						["id"] = 80354,
+						["uptime"] = 609,
+						["auratype"] = "DEBUFF",
 					},
 					["Enraged Regeneration"] = {
 						["name"] = "Enraged Regeneration",
@@ -55980,11 +55980,11 @@ SkadaPerCharDB = {
 						["id"] = 97463,
 						["name"] = "Commanding Shout",
 					},
-					["Taste for Blood"] = {
-						["name"] = "Taste for Blood",
+					["Corrupted Blood of Zakajz"] = {
+						["name"] = "Corrupted Blood of Zakajz",
 						["active"] = 0,
-						["id"] = 206333,
-						["uptime"] = 138,
+						["id"] = 209567,
+						["uptime"] = 37,
 						["auratype"] = "BUFF",
 					},
 					["Mortal Wounds"] = {
@@ -55994,12 +55994,12 @@ SkadaPerCharDB = {
 						["id"] = 115804,
 						["name"] = "Mortal Wounds",
 					},
-					["Temporal Displacement"] = {
-						["name"] = "Temporal Displacement",
+					["Taste for Blood"] = {
+						["name"] = "Taste for Blood",
 						["active"] = 0,
-						["id"] = 80354,
-						["uptime"] = 609,
-						["auratype"] = "DEBUFF",
+						["id"] = 206333,
+						["uptime"] = 138,
+						["auratype"] = "BUFF",
 					},
 					["Unrivaled Strength"] = {
 						["name"] = "Unrivaled Strength",
@@ -56120,7 +56120,19 @@ SkadaPerCharDB = {
 				["interrupts"] = 6,
 				["dispells"] = 2,
 				["ccbreaks"] = 0,
-				["shielding"] = 438042,
+				["power"] = {
+					{
+						["spells"] = {
+							[85288] = 680,
+							[173401] = 37,
+							[23881] = 1420,
+							[100] = 1330,
+							[209553] = 259,
+							[163201] = -772,
+						},
+						["amount"] = 2954,
+					}, -- [1]
+				},
 				["damage"] = 678667381,
 				["damagespells"] = {
 					["Shockwave"] = {
@@ -56649,9 +56661,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447740.84407,
 								["amount"] = -149865,
+								["srcname"] = "Xavius",
 								["hp"] = 362575,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [7]
 							{
 								["absorb"] = 0,
@@ -56664,23 +56676,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447741.59609,
 								["amount"] = -149865,
+								["srcname"] = "Xavius",
 								["hp"] = 212879,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [9]
 							{
 								["ts"] = 1477447741.7981,
 								["amount"] = -149865,
+								["srcname"] = "Xavius",
 								["hp"] = 63014,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [10]
 							{
 								["ts"] = 1477447742.02411,
 								["amount"] = -149865,
+								["srcname"] = "Xavius",
 								["hp"] = 1,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [11]
 							{
 								["spellname"] = "Envictuz dies",
@@ -56762,16 +56774,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446397.08306,
 								["amount"] = -206979,
+								["srcname"] = "Cenarius",
 								["hp"] = 349267,
 								["spellid"] = 214712,
-								["srcname"] = "Cenarius",
 							}, -- [6]
 							{
 								["ts"] = 1477446397.83707,
 								["amount"] = -165134,
+								["srcname"] = "Cenarius",
 								["hp"] = 184133,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [7]
 							{
 								["ts"] = 1477446397.98808,
@@ -56792,9 +56804,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446398.1021,
 								["amount"] = -208554,
+								["srcname"] = "Cenarius",
 								["hp"] = 1,
 								["spellid"] = 214712,
-								["srcname"] = "Cenarius",
 							}, -- [10]
 							{
 								["spellname"] = "Envictuz dies",
@@ -56813,9 +56825,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446395.84113,
 								["amount"] = -159442,
+								["srcname"] = "Cenarius",
 								["hp"] = 653730,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [13]
 							{
 								["absorb"] = 0,
@@ -56828,9 +56840,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446396.07615,
 								["amount"] = -214403,
+								["srcname"] = "Cenarius",
 								["hp"] = 454555,
 								["spellid"] = 214712,
-								["srcname"] = "Cenarius",
 							}, -- [15]
 							["pos"] = 12,
 						},
@@ -56842,9 +56854,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446240.77301,
 								["amount"] = -111795,
+								["srcname"] = "Cenarius",
 								["hp"] = 58076,
 								["spellid"] = 210342,
-								["srcname"] = "Cenarius",
 							}, -- [1]
 							{
 								["absorb"] = 0,
@@ -56857,9 +56869,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446241.86203,
 								["amount"] = -50551,
+								["srcname"] = "Cenarius",
 								["hp"] = 7985,
 								["spellid"] = 210279,
-								["srcname"] = "Cenarius",
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -56872,23 +56884,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446242.35505,
 								["amount"] = -60760,
+								["srcname"] = "Cenarius",
 								["hp"] = 200041,
 								["spellid"] = 210342,
-								["srcname"] = "Cenarius",
 							}, -- [5]
 							{
 								["ts"] = 1477446242.64606,
 								["amount"] = -30879,
+								["srcname"] = "Cenarius",
 								["hp"] = 169162,
 								["spellid"] = 210342,
-								["srcname"] = "Cenarius",
 							}, -- [6]
 							{
 								["ts"] = 1477446242.69907,
 								["amount"] = -25063,
+								["srcname"] = "Cenarius",
 								["hp"] = 144099,
 								["spellid"] = 210342,
-								["srcname"] = "Cenarius",
 							}, -- [7]
 							{
 								["absorb"] = 0,
@@ -56917,9 +56929,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477446243.17211,
 								["amount"] = -311441,
+								["srcname"] = "Cenarius",
 								["hp"] = 1,
 								["spellid"] = 210342,
-								["srcname"] = "Cenarius",
 							}, -- [11]
 							{
 								["spellname"] = "Envictuz dies",
@@ -56928,24 +56940,24 @@ SkadaPerCharDB = {
 								["spellid"] = 41220,
 							}, -- [12]
 							{
-								["hp"] = 0,
-								["ts"] = 1477446249.217,
-								["spellid"] = 20484,
 								["srcname"] = "Pawsydawn",
+								["ts"] = 1477446249.217,
+								["hp"] = 0,
+								["spellid"] = 20484,
 							}, -- [13]
 							{
 								["ts"] = 1477446240.63214,
 								["amount"] = -30879,
+								["srcname"] = "Cenarius",
 								["hp"] = 195835,
 								["spellid"] = 210342,
-								["srcname"] = "Cenarius",
 							}, -- [14]
 							{
 								["ts"] = 1477446240.66415,
 								["amount"] = -25964,
+								["srcname"] = "Cenarius",
 								["hp"] = 169871,
 								["spellid"] = 210342,
-								["srcname"] = "Cenarius",
 							}, -- [15]
 							["pos"] = 14,
 						},
@@ -56971,16 +56983,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477445567.47603,
 								["amount"] = -484275,
+								["srcname"] = "Elerethe Renferal",
 								["hp"] = 1267086,
 								["spellid"] = 214348,
-								["srcname"] = "Elerethe Renferal",
 							}, -- [3]
 							{
 								["ts"] = 1477445567.53804,
 								["amount"] = -3484924,
+								["srcname"] = "Silverstone",
 								["hp"] = 1,
 								["spellid"] = 233485,
-								["srcname"] = "Silverstone",
 							}, -- [4]
 							{
 								["spellname"] = "Envictuz dies",
@@ -57080,9 +57092,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442713.71202,
 								["amount"] = -252637,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 289281,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -57119,9 +57131,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442714.72107,
 								["amount"] = -252637,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 220286,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [7]
 							{
 								["absorb"] = 0,
@@ -57134,9 +57146,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442715.71709,
 								["amount"] = -252637,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 1,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [9]
 							{
 								["spellname"] = "Envictuz dies",
@@ -57147,9 +57159,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442711.76711,
 								["amount"] = -325233,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 699478,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [11]
 							{
 								["ts"] = 1477442712.18912,
@@ -57170,9 +57182,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442712.71714,
 								["amount"] = -252636,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 503516,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -57188,127 +57200,7 @@ SkadaPerCharDB = {
 					}, -- [5]
 				},
 				["damagetaken"] = 130131067,
-				["deathlog"] = {
-					{
-						["ts"] = 1477448749.605,
-						["amount"] = -75641,
-						["hp"] = 664121,
-						["spellid"] = 206920,
-						["srcname"] = "Nightmare Tentacle",
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 5204,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 669325,
-						["ts"] = 1477448750.139,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 44562,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1006810,
-						["ts"] = 1477448750.966,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 10407,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1017217,
-						["ts"] = 1477448751.137,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 25762,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 1042979,
-						["ts"] = 1477448751.187,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 50875,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 1116715,
-						["ts"] = 1477448752.892,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 5203,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1121918,
-						["ts"] = 1477448753.136,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 5204,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1272854,
-						["ts"] = 1477448759.135,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 5204,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 754525,
-						["ts"] = 1477448744.176,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 1885,
-						["spellid"] = 143924,
-						["srcname"] = "Envictuz",
-						["hp"] = 756410,
-						["ts"] = 1477448744.364,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 21185,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 777595,
-						["ts"] = 1477448744.983,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 25326,
-						["spellid"] = 120692,
-						["srcname"] = "Zerra",
-						["hp"] = 509998,
-						["ts"] = 1477448745.219,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 263146,
-						["spellid"] = 34861,
-						["srcname"] = "Scop",
-						["hp"] = 773144,
-						["ts"] = 1477448745.871,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 44563,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 817707,
-						["ts"] = 1477448747.962,
-					}, -- [14]
-					{
-						["ts"] = 1477448748.3,
-						["amount"] = -77945,
-						["hp"] = 739762,
-						["spellid"] = 206920,
-						["srcname"] = "Nightmare Tentacle",
-					}, -- [15]
-					["pos"] = 9,
-				},
+				["shielding"] = 438042,
 				["id"] = "Player-1169-06BA0AE7",
 				["maxhp"] = 2407824,
 				["healing"] = 17527836,
@@ -57607,18 +57499,18 @@ SkadaPerCharDB = {
 						["min"] = 243012,
 						["absorbed"] = 0,
 					},
-					["Puncture Wound"] = {
+					["Crushing Darkness"] = {
 						["crushing"] = 0,
-						["id"] = 222786,
-						["damage"] = 189490,
-						["max"] = 49218,
+						["id"] = 222043,
+						["damage"] = 510514,
+						["max"] = 510514,
 						["glancing"] = 0,
-						["name"] = "Puncture Wound",
+						["name"] = "Crushing Darkness",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 5,
+						["totalhits"] = 1,
 						["resisted"] = 0,
-						["min"] = 33222,
+						["min"] = 510514,
 						["absorbed"] = 0,
 					},
 					["Rotting Gasp"] = {
@@ -57635,18 +57527,18 @@ SkadaPerCharDB = {
 						["min"] = 798388,
 						["absorbed"] = 0,
 					},
-					["Crushing Darkness"] = {
+					["Dread Charge"] = {
 						["crushing"] = 0,
-						["id"] = 222043,
-						["damage"] = 510514,
-						["max"] = 510514,
+						["id"] = 223504,
+						["damage"] = 70352,
+						["max"] = 70352,
 						["glancing"] = 0,
-						["name"] = "Crushing Darkness",
+						["name"] = "Dread Charge",
 						["critical"] = 0,
 						["blocked"] = 0,
 						["totalhits"] = 1,
 						["resisted"] = 0,
-						["min"] = 510514,
+						["min"] = 70352,
 						["absorbed"] = 0,
 					},
 					["Burst of Corruption"] = {
@@ -57663,34 +57555,6 @@ SkadaPerCharDB = {
 						["min"] = 548305,
 						["absorbed"] = 0,
 					},
-					["Dread Charge"] = {
-						["crushing"] = 0,
-						["id"] = 223504,
-						["damage"] = 70352,
-						["max"] = 70352,
-						["glancing"] = 0,
-						["name"] = "Dread Charge",
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["min"] = 70352,
-						["absorbed"] = 0,
-					},
-					["Hateful Rebuke"] = {
-						["crushing"] = 0,
-						["id"] = 222086,
-						["damage"] = 6861787,
-						["max"] = 111663,
-						["glancing"] = 0,
-						["name"] = "Hateful Rebuke",
-						["critical"] = 0,
-						["blocked"] = 0,
-						["totalhits"] = 66,
-						["resisted"] = 0,
-						["min"] = 29812,
-						["absorbed"] = 153228,
-					},
 					["Nightmare Explosion"] = {
 						["crushing"] = 0,
 						["id"] = 209471,
@@ -57703,6 +57567,34 @@ SkadaPerCharDB = {
 						["totalhits"] = 3,
 						["resisted"] = 0,
 						["min"] = 245818,
+						["absorbed"] = 0,
+					},
+					["Puncture Wound"] = {
+						["crushing"] = 0,
+						["id"] = 222786,
+						["damage"] = 189490,
+						["max"] = 49218,
+						["glancing"] = 0,
+						["name"] = "Puncture Wound",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 5,
+						["resisted"] = 0,
+						["min"] = 33222,
+						["absorbed"] = 0,
+					},
+					["Shadow Volley"] = {
+						["crushing"] = 0,
+						["id"] = 222939,
+						["damage"] = 353510,
+						["max"] = 353510,
+						["glancing"] = 0,
+						["name"] = "Shadow Volley",
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["min"] = 353510,
 						["absorbed"] = 0,
 					},
 					["Roaring Cacophony"] = {
@@ -57733,18 +57625,18 @@ SkadaPerCharDB = {
 						["min"] = 65176,
 						["absorbed"] = 0,
 					},
-					["Corruption: Crushing Shadows"] = {
+					["Nightmare Gaze"] = {
 						["crushing"] = 0,
-						["id"] = 208860,
-						["damage"] = 1829341,
-						["max"] = 211544,
+						["id"] = 210931,
+						["damage"] = 3109432,
+						["max"] = 633195,
 						["glancing"] = 0,
-						["name"] = "Corruption: Crushing Shadows",
+						["name"] = "Nightmare Gaze",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 9,
+						["totalhits"] = 5,
 						["resisted"] = 0,
-						["min"] = 184306,
+						["min"] = 606498,
 						["absorbed"] = 0,
 					},
 					["Barreling Impact"] = {
@@ -57859,18 +57751,18 @@ SkadaPerCharDB = {
 						["min"] = 306136,
 						["absorbed"] = 0,
 					},
-					["Tainted Discharge"] = {
+					["Corruption: Crushing Shadows"] = {
 						["crushing"] = 0,
-						["id"] = 208385,
-						["damage"] = 5019823,
-						["max"] = 179280,
+						["id"] = 208860,
+						["damage"] = 1829341,
+						["max"] = 211544,
 						["glancing"] = 0,
-						["name"] = "Tainted Discharge",
+						["name"] = "Corruption: Crushing Shadows",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 28,
+						["totalhits"] = 9,
 						["resisted"] = 0,
-						["min"] = 179279,
+						["min"] = 184306,
 						["absorbed"] = 0,
 					},
 					["Necrotic Venom"] = {
@@ -58041,18 +57933,18 @@ SkadaPerCharDB = {
 						["min"] = 87903,
 						["absorbed"] = 0,
 					},
-					["Nightmare Gaze"] = {
+					["Tainted Discharge"] = {
 						["crushing"] = 0,
-						["id"] = 210931,
-						["damage"] = 3109432,
-						["max"] = 633195,
+						["id"] = 208385,
+						["damage"] = 5019823,
+						["max"] = 179280,
 						["glancing"] = 0,
-						["name"] = "Nightmare Gaze",
+						["name"] = "Tainted Discharge",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 5,
+						["totalhits"] = 28,
 						["resisted"] = 0,
-						["min"] = 606498,
+						["min"] = 179279,
 						["absorbed"] = 0,
 					},
 					["Corrupting Nova"] = {
@@ -58097,19 +57989,19 @@ SkadaPerCharDB = {
 						["min"] = 421722,
 						["absorbed"] = 0,
 					},
-					["Shadow Volley"] = {
+					["Hateful Rebuke"] = {
 						["crushing"] = 0,
-						["id"] = 222939,
-						["damage"] = 353510,
-						["max"] = 353510,
+						["id"] = 222086,
+						["damage"] = 6861787,
+						["max"] = 111663,
 						["glancing"] = 0,
-						["name"] = "Shadow Volley",
+						["name"] = "Hateful Rebuke",
 						["critical"] = 0,
 						["blocked"] = 0,
-						["totalhits"] = 1,
+						["totalhits"] = 66,
 						["resisted"] = 0,
-						["min"] = 353510,
-						["absorbed"] = 0,
+						["min"] = 29812,
+						["absorbed"] = 153228,
 					},
 					["Tormenting Swipe"] = {
 						["crushing"] = 0,
@@ -58222,18 +58114,126 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Envictuz",
 				["alertCount"] = 0,
-				["power"] = {
+				["deathlog"] = {
 					{
-						["spells"] = {
-							[85288] = 680,
-							[173401] = 37,
-							[23881] = 1420,
-							[100] = 1330,
-							[209553] = 259,
-							[163201] = -772,
-						},
-						["amount"] = 2954,
+						["ts"] = 1477448749.605,
+						["amount"] = -75641,
+						["srcname"] = "Nightmare Tentacle",
+						["hp"] = 664121,
+						["spellid"] = 206920,
 					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 5204,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 669325,
+						["ts"] = 1477448750.139,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 44562,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1006810,
+						["ts"] = 1477448750.966,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 10407,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1017217,
+						["ts"] = 1477448751.137,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 25762,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 1042979,
+						["ts"] = 1477448751.187,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 50875,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 1116715,
+						["ts"] = 1477448752.892,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 5203,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1121918,
+						["ts"] = 1477448753.136,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 5204,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1272854,
+						["ts"] = 1477448759.135,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 5204,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 754525,
+						["ts"] = 1477448744.176,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 1885,
+						["spellid"] = 143924,
+						["srcname"] = "Envictuz",
+						["hp"] = 756410,
+						["ts"] = 1477448744.364,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 21185,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 777595,
+						["ts"] = 1477448744.983,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 25326,
+						["spellid"] = 120692,
+						["srcname"] = "Zerra",
+						["hp"] = 509998,
+						["ts"] = 1477448745.219,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 263146,
+						["spellid"] = 34861,
+						["srcname"] = "Scop",
+						["hp"] = 773144,
+						["ts"] = 1477448745.871,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 44563,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 817707,
+						["ts"] = 1477448747.962,
+					}, -- [14]
+					{
+						["ts"] = 1477448748.3,
+						["amount"] = -77945,
+						["srcname"] = "Nightmare Tentacle",
+						["hp"] = 739762,
+						["spellid"] = 206920,
+					}, -- [15]
+					["pos"] = 9,
 				},
 				["healingspells"] = {
 					["Healthstone"] = {
@@ -58619,7 +58619,15 @@ SkadaPerCharDB = {
 				["interrupts"] = 3,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["shielding"] = 159345,
+				["power"] = {
+					[2] = {
+						["spells"] = {
+							[193530] = 2479,
+							[120694] = 6407,
+						},
+						["amount"] = 8886,
+					},
+				},
 				["damage"] = 766781160,
 				["damagespells"] = {
 					["Cobra Shot"] = {
@@ -58936,10 +58944,10 @@ SkadaPerCharDB = {
 								["spellid"] = 41220,
 							}, -- [1]
 							{
-								["hp"] = 0,
-								["ts"] = 1477448425.117,
-								["spellid"] = 20484,
 								["srcname"] = "Pawsydawn",
+								["ts"] = 1477448425.117,
+								["hp"] = 0,
+								["spellid"] = 20484,
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -58952,9 +58960,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477448414.21104,
 								["amount"] = -511730,
+								["srcname"] = "Corruption Horror",
 								["hp"] = 1452764,
 								["spellid"] = 207830,
-								["srcname"] = "Corruption Horror",
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -59007,9 +59015,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477448417.78611,
 								["amount"] = -418490,
+								["srcname"] = "Xavius",
 								["hp"] = 1201574,
 								["spellid"] = 205741,
-								["srcname"] = "Xavius",
 							}, -- [11]
 							{
 								["absorb"] = 0,
@@ -59022,9 +59030,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477448420.51813,
 								["amount"] = -564752,
+								["srcname"] = "Nightmare Blades",
 								["hp"] = 637402,
 								["spellid"] = 206656,
-								["srcname"] = "Nightmare Blades",
 							}, -- [13]
 							{
 								["absorb"] = 0,
@@ -59037,9 +59045,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477448421.49915,
 								["amount"] = -760931,
+								["srcname"] = "Lurking Terror",
 								["hp"] = 1,
 								["spellid"] = 217987,
-								["srcname"] = "Lurking Terror",
 							}, -- [15]
 							["pos"] = 3,
 						},
@@ -59051,65 +59059,65 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447744.77201,
 								["amount"] = -159346,
+								["srcname"] = "Xavius",
 								["hp"] = 1214827,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [1]
 							{
 								["ts"] = 1477447745.00502,
 								["amount"] = -159345,
+								["srcname"] = "Xavius",
 								["hp"] = 1055482,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [2]
 							{
 								["ts"] = 1477447745.20503,
 								["amount"] = -159346,
+								["srcname"] = "Xavius",
 								["hp"] = 896136,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [3]
 							{
 								["ts"] = 1477447745.60304,
 								["amount"] = -159345,
+								["srcname"] = "Xavius",
 								["hp"] = 736791,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [4]
 							{
 								["ts"] = 1477447746.00105,
 								["amount"] = -159346,
+								["srcname"] = "Xavius",
 								["hp"] = 577445,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [5]
 							{
 								["ts"] = 1477447746.21206,
 								["amount"] = -159346,
+								["srcname"] = "Xavius",
 								["hp"] = 418099,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [6]
 							{
 								["ts"] = 1477447747.18607,
 								["amount"] = -159346,
+								["srcname"] = "Xavius",
 								["hp"] = 258753,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [7]
 							{
 								["ts"] = 1477447747.67408,
 								["amount"] = -159345,
+								["srcname"] = "Xavius",
 								["hp"] = 99408,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [8]
 							{
 								["ts"] = 1477447748.72609,
 								["amount"] = -159346,
+								["srcname"] = "Xavius",
 								["hp"] = 1,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [9]
 							{
 								["spellname"] = "Emelaine dies",
@@ -59120,37 +59128,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447743.19711,
 								["amount"] = -159346,
+								["srcname"] = "Xavius",
 								["hp"] = 645964,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [11]
 							{
 								["ts"] = 1477447743.58012,
 								["amount"] = -159346,
+								["srcname"] = "Xavius",
 								["hp"] = 486618,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [12]
 							{
 								["ts"] = 1477447743.75713,
 								["amount"] = -159346,
+								["srcname"] = "Xavius",
 								["hp"] = 327272,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [13]
 							{
 								["ts"] = 1477447743.99514,
 								["amount"] = -159345,
+								["srcname"] = "Xavius",
 								["hp"] = 167927,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [14]
 							{
 								["ts"] = 1477447744.19315,
 								["amount"] = -159346,
+								["srcname"] = "Xavius",
 								["hp"] = 8581,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [15]
 							["pos"] = 11,
 						},
@@ -59194,9 +59202,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442716.74305,
 								["amount"] = -338684,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 1,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [5]
 							{
 								["spellname"] = "Emelaine dies",
@@ -59207,16 +59215,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442712.71707,
 								["amount"] = -338684,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 580794,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [7]
 							{
 								["ts"] = 1477442713.71108,
 								["amount"] = -338684,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 242110,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -59245,9 +59253,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442714.77412,
 								["amount"] = -338684,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 58116,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -59268,9 +59276,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477442715.71615,
 								["amount"] = -338684,
+								["srcname"] = "Defiled Keeper",
 								["hp"] = 117407,
 								["spellid"] = 225081,
-								["srcname"] = "Defiled Keeper",
 							}, -- [15]
 							["pos"] = 7,
 						},
@@ -59278,127 +59286,7 @@ SkadaPerCharDB = {
 					}, -- [3]
 				},
 				["damagetaken"] = 95201759,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 28640,
-						["spellid"] = 90361,
-						["srcname"] = "Kurion",
-						["hp"] = 1783890,
-						["ts"] = 1477448743.418,
-					}, -- [1]
-					{
-						["ts"] = 1477448743.507,
-						["amount"] = -195966,
-						["hp"] = 1587924,
-						["spellid"] = 208860,
-						["srcname"] = "Dread Abomination",
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 5203,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1593127,
-						["ts"] = 1477448744.176,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 12764,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1605891,
-						["ts"] = 1477448744.203,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 25326,
-						["spellid"] = 120692,
-						["srcname"] = "Zerra",
-						["hp"] = 1631217,
-						["ts"] = 1477448744.643,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 15888,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1647105,
-						["ts"] = 1477448744.983,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 11836,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1347874,
-						["ts"] = 1477448745.075,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 28640,
-						["spellid"] = 90361,
-						["srcname"] = "Kurion",
-						["hp"] = 1376514,
-						["ts"] = 1477448745.439,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 20003,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1396517,
-						["ts"] = 1477448745.871,
-					}, -- [9]
-					{
-						["ts"] = 1477448746.172,
-						["amount"] = -78619,
-						["hp"] = 1317898,
-						["spellid"] = 206920,
-						["srcname"] = "Nightmare Tentacle",
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 15888,
-						["spellid"] = 77489,
-						["srcname"] = "Scop",
-						["hp"] = 1333786,
-						["ts"] = 1477448747.962,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 5203,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1671188,
-						["ts"] = 1477448751.137,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 22189,
-						["spellid"] = 73921,
-						["srcname"] = "Royalty",
-						["hp"] = 1693377,
-						["ts"] = 1477448751.187,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 5204,
-						["spellid"] = 210291,
-						["srcname"] = "Milric",
-						["hp"] = 1770913,
-						["ts"] = 1477448757.141,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 27384,
-						["spellid"] = 48438,
-						["srcname"] = "Pawsydawn",
-						["hp"] = 1755250,
-						["ts"] = 1477448743.302,
-					}, -- [15]
-					["pos"] = 15,
-				},
+				["shielding"] = 159345,
 				["id"] = "Player-1169-06C011D7",
 				["maxhp"] = 2059620,
 				["healing"] = 24612058,
@@ -60500,7 +60388,7 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFDFA"] = {
+					["Creature-0-3018-1520-19675-113347-00001003CE"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -60512,7 +60400,7 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFE1E"] = {
+					["Creature-0-3018-1520-19675-113347-0000101392"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -60524,7 +60412,7 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00001003CE"] = {
+					["Creature-0-3018-1520-19675-113347-00001003EE"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -60536,30 +60424,6 @@ SkadaPerCharDB = {
 						["amount"] = 45707,
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00000FFFA3"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-0000101392"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00000FFC7A"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00001003EE"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-113347-000010135F"] = {
 						["shielding"] = 0,
@@ -60573,19 +60437,13 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFB8D"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 4983,
-					},
-					["Creature-0-3018-1520-19675-113347-00000FFFF0"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFC7A"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00001008F2"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFFF0"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -60603,37 +60461,7 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000100AF3"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00001002E4"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
 					["Creature-0-3018-1520-19675-113347-00001012D0"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00001013E3"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-0000100CA0"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-000010045C"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -60645,61 +60473,31 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
+					["Creature-0-3018-1520-19675-113347-00001008F2"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
 					["Creature-0-3018-1520-19675-113347-000010038B"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000100481"] = {
+					["Creature-0-3018-1520-19675-113347-0000101324"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00001004CC"] = {
+					["Creature-0-3018-1520-19675-113347-0000100AF3"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-106551-00000FFCCF"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Hati",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-000010058B"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-0000100437"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-000010133D"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00001003A6"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00000FFD16"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-0000100373"] = {
+					["Creature-0-3018-1520-19675-113347-00001002E4"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -60718,6 +60516,96 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
+					["Creature-0-3018-1520-19675-113347-0000100CA0"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00001004CC"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00001006D2"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-0000100705"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-0000100481"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00000FFE1E"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-106551-00000FFCCF"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Hati",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00001003F3"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-0000100437"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-000010133D"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-0000100321"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00000FFD16"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00001013E3"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-0000100766"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-0000100775"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
 					["Creature-0-3018-1520-19675-113347-00001006FE"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
@@ -60730,13 +60618,13 @@ SkadaPerCharDB = {
 						["name"] = "Hati",
 						["amount"] = 71338,
 					},
-					["Creature-0-3018-1520-19675-113347-00001006D2"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFBC6"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000100705"] = {
+					["Creature-0-3018-1520-19675-113347-00001007AE"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -60754,61 +60642,7 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000100321"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-0000100766"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00001003C6"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-0000100724"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-0000100775"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00000FFBC6"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-106551-00000FFF21"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Hati",
-						["amount"] = 21855,
-					},
-					["Creature-0-3018-1520-19675-113347-00001003C0"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00001007AE"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-0000100F86"] = {
+					["Creature-0-3018-1520-19675-113347-00001003A6"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -60820,7 +60654,7 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00001005BF"] = {
+					["Creature-0-3018-1520-19675-113347-00001003C6"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -60832,7 +60666,25 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00001007C4"] = {
+					["Creature-0-3018-1520-19675-113347-000010039B"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00000FFBBA"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-106551-00000FFF21"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Hati",
+						["amount"] = 21855,
+					},
+					["Creature-0-3018-1520-19675-113347-0000101000"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -60844,7 +60696,43 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFBBA"] = {
+					["Creature-0-3018-1520-19675-113347-0000100F86"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00001007C8"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00001005BF"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-0000901370"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00001003E3"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-0000100724"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00000FFFA3"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -60862,13 +60750,13 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000101310"] = {
+					["Creature-0-3018-1520-19675-113347-00001003C0"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFBED"] = {
+					["Creature-0-3018-1520-19675-113347-00001007F4"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -60880,13 +60768,13 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFE40"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFFDB"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00001007C8"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFBDD"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -60898,13 +60786,13 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00001003E3"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFC91"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00001007F4"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFFAE"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -60922,13 +60810,13 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFFDB"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFEA3"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFE64"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFDFA"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -60940,31 +60828,31 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
+					["Creature-0-3018-1520-19675-113347-0000100A1B"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
 					["Creature-0-3018-1520-19675-113347-00008FFBAF"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFB7F"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFB8D"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 4983,
+					},
+					["Creature-0-3018-1520-19675-113347-0000100EE5"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFBDD"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-0000100931"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00000FFC91"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFE64"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -60977,54 +60865,6 @@ SkadaPerCharDB = {
 						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-113347-0000100F7C"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00000FFEB0"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00000FFFAE"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-0000100A1B"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00000FFE04"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00001009E3"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00001007A3"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-0000100EE5"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00001003B9"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -61048,7 +60888,19 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00009007D2"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFE04"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00001009E3"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00000FFE40"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -61060,19 +60912,55 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000101305"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 4448,
-					},
 					["Creature-0-3018-1520-19675-113347-0000100AAB"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
+					["Creature-0-3018-1520-19675-113347-00000FFEB0"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-0000100931"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00001013C9"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 7232,
+					},
+					["Creature-0-3018-1520-19675-113347-00009007D2"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00001007A3"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-0000101305"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 4448,
+					},
 					["Creature-0-3018-1520-19675-113347-0000100369"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00001003B9"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -61156,7 +61044,7 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFB75"] = {
+					["Creature-0-3018-1520-19675-113347-0000100CD0"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -61168,7 +61056,7 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000100CD0"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFB75"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -61306,11 +61194,11 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00001013C9"] = {
+					["Creature-0-3018-1520-19675-113347-000010058B"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
-						["amount"] = 7232,
+						["amount"] = 0,
 					},
 					["Pet-0-3018-1520-19675-35189-0302050114"] = {
 						["role"] = "NONE",
@@ -61379,13 +61267,19 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
+					["Creature-0-3018-1520-19675-113347-0000100F0C"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
 					["Creature-0-3018-1520-19675-113347-0000100F78"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 7502,
 					},
-					["Creature-0-3018-1520-19675-113347-0000100F0C"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFBED"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -61397,19 +61291,19 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFEA3"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-0000100331"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFB7F"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
 					["Creature-0-3018-1520-19675-113347-00000FFFC5"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-0000100331"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -61433,13 +61327,13 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00001007FE"] = {
+					["Creature-0-3018-1520-19675-113347-00000FFF13"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00000FFF13"] = {
+					["Creature-0-3018-1520-19675-113347-00001007FE"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -61451,31 +61345,25 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
+					["Creature-0-3018-1520-19675-113347-0000101310"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00001007C4"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
 					["Creature-0-3018-1520-19675-113347-000010042B"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000901370"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
 					["Creature-0-3018-1520-19675-113347-0000100FF7"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-0000101000"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-000010039B"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -61547,19 +61435,7 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000100A52"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00001003F3"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3018-1520-19675-113347-00001012DA"] = {
+					["Creature-0-3018-1520-19675-113347-0000100373"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -61571,13 +61447,25 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
+					["Creature-0-3018-1520-19675-113347-0000100A52"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3018-1520-19675-113347-00001012DA"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
 					["Creature-0-3018-1520-19675-113347-00001012EE"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000100FB1"] = {
+					["Creature-0-3018-1520-19675-113347-000010045C"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -61589,13 +61477,13 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-00001012FA"] = {
+					["Creature-0-3018-1520-19675-113347-0000100FB1"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3018-1520-19675-113347-0000101324"] = {
+					["Creature-0-3018-1520-19675-113347-00001012FA"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -61683,14 +61571,126 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Emelaine",
 				["alertCount"] = 0,
-				["power"] = {
-					[2] = {
-						["spells"] = {
-							[193530] = 2479,
-							[120694] = 6407,
-						},
-						["amount"] = 8886,
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 28640,
+						["spellid"] = 90361,
+						["srcname"] = "Kurion",
+						["hp"] = 1783890,
+						["ts"] = 1477448743.418,
+					}, -- [1]
+					{
+						["ts"] = 1477448743.507,
+						["amount"] = -195966,
+						["srcname"] = "Dread Abomination",
+						["hp"] = 1587924,
+						["spellid"] = 208860,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 5203,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1593127,
+						["ts"] = 1477448744.176,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 12764,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1605891,
+						["ts"] = 1477448744.203,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 25326,
+						["spellid"] = 120692,
+						["srcname"] = "Zerra",
+						["hp"] = 1631217,
+						["ts"] = 1477448744.643,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 15888,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1647105,
+						["ts"] = 1477448744.983,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 11836,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1347874,
+						["ts"] = 1477448745.075,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 28640,
+						["spellid"] = 90361,
+						["srcname"] = "Kurion",
+						["hp"] = 1376514,
+						["ts"] = 1477448745.439,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 20003,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1396517,
+						["ts"] = 1477448745.871,
+					}, -- [9]
+					{
+						["ts"] = 1477448746.172,
+						["amount"] = -78619,
+						["srcname"] = "Nightmare Tentacle",
+						["hp"] = 1317898,
+						["spellid"] = 206920,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 15888,
+						["spellid"] = 77489,
+						["srcname"] = "Scop",
+						["hp"] = 1333786,
+						["ts"] = 1477448747.962,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 5203,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1671188,
+						["ts"] = 1477448751.137,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 22189,
+						["spellid"] = 73921,
+						["srcname"] = "Royalty",
+						["hp"] = 1693377,
+						["ts"] = 1477448751.187,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 5204,
+						["spellid"] = 210291,
+						["srcname"] = "Milric",
+						["hp"] = 1770913,
+						["ts"] = 1477448757.141,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 27384,
+						["spellid"] = 48438,
+						["srcname"] = "Pawsydawn",
+						["hp"] = 1755250,
+						["ts"] = 1477448743.302,
+					}, -- [15]
+					["pos"] = 15,
 				},
 				["healingspells"] = {
 					["Healthstone"] = {
@@ -62184,7 +62184,14 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["dispells"] = 0,
 				["ccbreaks"] = 0,
-				["shielding"] = 528432,
+				["power"] = {
+					[2] = {
+						["spells"] = {
+							[214579] = 6450,
+						},
+						["amount"] = 6450,
+					},
+				},
 				["damage"] = 413480062,
 				["damagespells"] = {
 					["Nightmare Essence"] = {
@@ -62371,9 +62378,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477448691.05603,
 								["amount"] = -844034,
+								["srcname"] = "Xavius",
 								["hp"] = 1236599,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -62394,9 +62401,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477448692.56606,
 								["amount"] = -683811,
+								["srcname"] = "Xavius",
 								["hp"] = 411798,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [6]
 							{
 								["spellname"] = "Grexxi dies",
@@ -62439,9 +62446,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477448689.57012,
 								["amount"] = -916245,
+								["srcname"] = "Xavius",
 								["hp"] = 1950412,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -62477,9 +62484,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447704.02701,
 								["amount"] = -149515,
+								["srcname"] = "Xavius",
 								["hp"] = 1471748,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [1]
 							{
 								["ts"] = 1477447704.13002,
@@ -62492,9 +62499,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447704.94203,
 								["amount"] = -149515,
+								["srcname"] = "Xavius",
 								["hp"] = 1327462,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -62507,9 +62514,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447706.82005,
 								["amount"] = -851114,
+								["srcname"] = "Xavius",
 								["hp"] = 1327832,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [5]
 							{
 								["absorb"] = 0,
@@ -62530,9 +62537,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447708.31908,
 								["amount"] = -1895101,
+								["srcname"] = "Xavius",
 								["hp"] = 1109823,
 								["spellid"] = 88163,
-								["srcname"] = "Xavius",
 							}, -- [8]
 							{
 								["spellname"] = "Grexxi dies",
@@ -62559,9 +62566,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447701.95012,
 								["amount"] = -149514,
+								["srcname"] = "Xavius",
 								["hp"] = 1758240,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -62574,9 +62581,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1477447702.94914,
 								["amount"] = -149514,
+								["srcname"] = "Xavius",
 								["hp"] = 1610141,
 								["spellid"] = 209294,
-								["srcname"] = "Xavius",
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -62592,8 +62599,7 @@ SkadaPerCharDB = {
 					}, -- [2]
 				},
 				["damagetaken"] = 41961907,
-				["deathlog"] = {
-				},
+				["shielding"] = 528432,
 				["id"] = "Player-1169-06BEC7B2",
 				["maxhp"] = 2071200,
 				["healing"] = 9169993,
@@ -62891,29 +62897,9 @@ SkadaPerCharDB = {
 				["alertDamage"] = 0,
 				["name"] = "Grexxi",
 				["alertCount"] = 0,
-				["power"] = {
-					[2] = {
-						["spells"] = {
-							[214579] = 6450,
-						},
-						["amount"] = 6450,
-					},
+				["deathlog"] = {
 				},
 				["healingspells"] = {
-					["Dream Simulacrum"] = {
-						["shielding"] = 528432,
-						["id"] = 206005,
-						["healing"] = 528432,
-						["multistrikes"] = 0,
-						["min"] = 528432,
-						["multistrike"] = 0,
-						["name"] = "Dream Simulacrum",
-						["hits"] = 1,
-						["overhealing"] = 0,
-						["max"] = 528432,
-						["critical"] = 0,
-						["absorbed"] = 0,
-					},
 					["Healthstone"] = {
 						["shielding"] = 0,
 						["id"] = 6262,
@@ -62939,6 +62925,20 @@ SkadaPerCharDB = {
 						["hits"] = 6,
 						["overhealing"] = 0,
 						["max"] = 732504,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+					["Dream Simulacrum"] = {
+						["shielding"] = 528432,
+						["id"] = 206005,
+						["healing"] = 528432,
+						["multistrikes"] = 0,
+						["min"] = 528432,
+						["multistrike"] = 0,
+						["name"] = "Dream Simulacrum",
+						["hits"] = 1,
+						["overhealing"] = 0,
+						["max"] = 528432,
 						["critical"] = 0,
 						["absorbed"] = 0,
 					},
@@ -67769,11 +67769,11 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["role"] = "DAMAGER",
 					},
-					["Kurion"] = {
+					["Pawsydawn"] = {
 						["taken"] = 0,
-						["done"] = 799075,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
+						["done"] = 1458589,
+						["class"] = "DRUID",
+						["role"] = "HEALER",
 					},
 					["Felanima"] = {
 						["taken"] = 0,
@@ -67781,9 +67781,9 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["role"] = "DAMAGER",
 					},
-					["Thorydan-CenarionCircle"] = {
+					["Kurion"] = {
 						["taken"] = 0,
-						["done"] = 4414613,
+						["done"] = 799075,
 						["class"] = "HUNTER",
 						["role"] = "DAMAGER",
 					},
@@ -67793,11 +67793,11 @@ SkadaPerCharDB = {
 						["class"] = "PRIEST",
 						["role"] = "HEALER",
 					},
-					["Pawsydawn"] = {
+					["Thorydan-CenarionCircle"] = {
 						["taken"] = 0,
-						["done"] = 1458589,
-						["class"] = "DRUID",
-						["role"] = "HEALER",
+						["done"] = 4414613,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
 					},
 					["Emelaine"] = {
 						["taken"] = 0,
@@ -72932,6 +72932,102 @@ SkadaPerCharDB = {
 					},
 				},
 			},
+			["Entangling Roots"] = {
+				["players"] = {
+					["Bracnar"] = {
+						["taken"] = 3953683,
+						["done"] = 0,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Senatus"] = {
+						["taken"] = 675628,
+						["done"] = 0,
+						["class"] = "WARLOCK",
+						["role"] = "DAMAGER",
+					},
+					["Grexxi"] = {
+						["taken"] = 203044,
+						["done"] = 0,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Zerra"] = {
+						["taken"] = 1414303,
+						["done"] = 0,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Silverstone"] = {
+						["taken"] = 2858750,
+						["done"] = 0,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Imenja"] = {
+						["taken"] = 59780,
+						["done"] = 0,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+					["Gronncho"] = {
+						["taken"] = 166455,
+						["done"] = 0,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Thorydan-CenarionCircle"] = {
+						["taken"] = 4461939,
+						["done"] = 0,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Daerlith"] = {
+						["taken"] = 234585,
+						["done"] = 0,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+					["Felanima"] = {
+						["taken"] = 3026895,
+						["done"] = 0,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Kurion"] = {
+						["taken"] = 2963370,
+						["done"] = 0,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Cashonly"] = {
+						["taken"] = 1168559,
+						["done"] = 0,
+						["class"] = "WARLOCK",
+						["role"] = "DAMAGER",
+					},
+					["Sorgon"] = {
+						["taken"] = 235285,
+						["done"] = 0,
+						["class"] = "DEATHKNIGHT",
+						["role"] = "TANK",
+					},
+					["Emelaine"] = {
+						["taken"] = 3212875,
+						["done"] = 0,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 24635151,
+				["done"] = 0,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
 			["Shadow Pounder"] = {
 				["players"] = {
 					["Bracnar"] = {
@@ -73090,102 +73186,6 @@ SkadaPerCharDB = {
 				},
 				["taken"] = 80349520,
 				["done"] = 8449098,
-				["htaken"] = 0,
-				["htakenspell"] = {
-				},
-			},
-			["Entangling Roots"] = {
-				["players"] = {
-					["Bracnar"] = {
-						["taken"] = 3953683,
-						["done"] = 0,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Senatus"] = {
-						["taken"] = 675628,
-						["done"] = 0,
-						["class"] = "WARLOCK",
-						["role"] = "DAMAGER",
-					},
-					["Grexxi"] = {
-						["taken"] = 203044,
-						["done"] = 0,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Zerra"] = {
-						["taken"] = 1414303,
-						["done"] = 0,
-						["class"] = "PRIEST",
-						["role"] = "HEALER",
-					},
-					["Silverstone"] = {
-						["taken"] = 2858750,
-						["done"] = 0,
-						["class"] = "MAGE",
-						["role"] = "DAMAGER",
-					},
-					["Imenja"] = {
-						["taken"] = 59780,
-						["done"] = 0,
-						["class"] = "SHAMAN",
-						["role"] = "DAMAGER",
-					},
-					["Gronncho"] = {
-						["taken"] = 166455,
-						["done"] = 0,
-						["class"] = "PALADIN",
-						["role"] = "TANK",
-					},
-					["Thorydan-CenarionCircle"] = {
-						["taken"] = 4461939,
-						["done"] = 0,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Daerlith"] = {
-						["taken"] = 234585,
-						["done"] = 0,
-						["class"] = "SHAMAN",
-						["role"] = "DAMAGER",
-					},
-					["Felanima"] = {
-						["taken"] = 3026895,
-						["done"] = 0,
-						["class"] = "MAGE",
-						["role"] = "DAMAGER",
-					},
-					["Kurion"] = {
-						["taken"] = 2963370,
-						["done"] = 0,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Cashonly"] = {
-						["taken"] = 1168559,
-						["done"] = 0,
-						["class"] = "WARLOCK",
-						["role"] = "DAMAGER",
-					},
-					["Sorgon"] = {
-						["taken"] = 235285,
-						["done"] = 0,
-						["class"] = "DEATHKNIGHT",
-						["role"] = "TANK",
-					},
-					["Emelaine"] = {
-						["taken"] = 3212875,
-						["done"] = 0,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 24635151,
-				["done"] = 0,
 				["htaken"] = 0,
 				["htakenspell"] = {
 				},
@@ -73667,6 +73667,62 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 			},
+			["Envien-CenarionCircle"] = {
+				["players"] = {
+				},
+				["hdone"] = 28357,
+				["hdonespell"] = {
+					["Greater Blessing of Wisdom"] = {
+						["min"] = 4051,
+						["crits"] = 0,
+						["max"] = 4051,
+						["healing"] = 28357,
+						["overhealing"] = 0,
+						["hits"] = 7,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 28357,
+				["htakenspell"] = {
+					["Greater Blessing of Wisdom"] = {
+						["min"] = 4051,
+						["crits"] = 0,
+						["max"] = 4051,
+						["healing"] = 28357,
+						["overhealing"] = 0,
+						["hits"] = 7,
+					},
+				},
+			},
+			["Well-Fed Bear"] = {
+				["players"] = {
+					["Bracnar"] = {
+						["taken"] = 3614153,
+						["done"] = 0,
+						["class"] = "HUNTER",
+						["role"] = "NONE",
+					},
+					["Addie Fizzlebog"] = {
+						["taken"] = 104955,
+						["done"] = 0,
+						["role"] = "NONE",
+					},
+					["Plucky"] = {
+						["taken"] = 6517,
+						["done"] = 0,
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 3725625,
+				["done"] = 0,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
 			["Dread Horror"] = {
 				["players"] = {
 					["Bracnar"] = {
@@ -73999,110 +74055,6 @@ SkadaPerCharDB = {
 				["done"] = 7278947,
 				["htaken"] = 0,
 				["htakenspell"] = {
-				},
-			},
-			["Walas-CenarionCircle"] = {
-				["players"] = {
-				},
-				["hdone"] = 504138,
-				["hdonespell"] = {
-					["Leech"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 8362,
-						["healing"] = 59659,
-						["overhealing"] = 11552,
-						["hits"] = 27,
-					},
-					["Aura of Mercy"] = {
-						["min"] = 3548,
-						["crits"] = 15,
-						["max"] = 11976,
-						["healing"] = 241369,
-						["overhealing"] = 0,
-						["hits"] = 36,
-					},
-					["Arcing Light"] = {
-						["min"] = 0,
-						["crits"] = 2,
-						["max"] = 31763,
-						["healing"] = 47527,
-						["overhealing"] = 46806,
-						["hits"] = 4,
-					},
-					["Judgment of Light"] = {
-						["min"] = 6599,
-						["crits"] = 3,
-						["max"] = 22273,
-						["healing"] = 155583,
-						["overhealing"] = 0,
-						["hits"] = 14,
-					},
-				},
-				["taken"] = 0,
-				["done"] = 0,
-				["htaken"] = 439471,
-				["htakenspell"] = {
-					["Leech"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 8362,
-						["healing"] = 59659,
-						["overhealing"] = 11552,
-						["hits"] = 27,
-					},
-					["Aura of Mercy"] = {
-						["min"] = 3548,
-						["crits"] = 10,
-						["max"] = 11976,
-						["healing"] = 176702,
-						["overhealing"] = 0,
-						["hits"] = 28,
-					},
-					["Arcing Light"] = {
-						["min"] = 0,
-						["crits"] = 2,
-						["max"] = 31763,
-						["healing"] = 47527,
-						["overhealing"] = 46806,
-						["hits"] = 4,
-					},
-					["Judgment of Light"] = {
-						["min"] = 6599,
-						["crits"] = 3,
-						["max"] = 22273,
-						["healing"] = 155583,
-						["overhealing"] = 0,
-						["hits"] = 14,
-					},
-				},
-			},
-			["Envien-CenarionCircle"] = {
-				["players"] = {
-				},
-				["hdone"] = 28357,
-				["hdonespell"] = {
-					["Greater Blessing of Wisdom"] = {
-						["min"] = 4051,
-						["crits"] = 0,
-						["max"] = 4051,
-						["healing"] = 28357,
-						["overhealing"] = 0,
-						["hits"] = 7,
-					},
-				},
-				["taken"] = 0,
-				["done"] = 0,
-				["htaken"] = 28357,
-				["htakenspell"] = {
-					["Greater Blessing of Wisdom"] = {
-						["min"] = 4051,
-						["crits"] = 0,
-						["max"] = 4051,
-						["healing"] = 28357,
-						["overhealing"] = 0,
-						["hits"] = 7,
-					},
 				},
 			},
 			["Venomous Spiderling"] = {
@@ -75385,32 +75337,80 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 			},
-			["Well-Fed Bear"] = {
+			["Walas-CenarionCircle"] = {
 				["players"] = {
-					["Bracnar"] = {
-						["taken"] = 3614153,
-						["done"] = 0,
-						["class"] = "HUNTER",
-						["role"] = "NONE",
-					},
-					["Addie Fizzlebog"] = {
-						["taken"] = 104955,
-						["done"] = 0,
-						["role"] = "NONE",
-					},
-					["Plucky"] = {
-						["taken"] = 6517,
-						["done"] = 0,
-						["role"] = "NONE",
-					},
 				},
-				["hdone"] = 0,
+				["hdone"] = 504138,
 				["hdonespell"] = {
+					["Leech"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 8362,
+						["healing"] = 59659,
+						["overhealing"] = 11552,
+						["hits"] = 27,
+					},
+					["Aura of Mercy"] = {
+						["min"] = 3548,
+						["crits"] = 15,
+						["max"] = 11976,
+						["healing"] = 241369,
+						["overhealing"] = 0,
+						["hits"] = 36,
+					},
+					["Arcing Light"] = {
+						["min"] = 0,
+						["crits"] = 2,
+						["max"] = 31763,
+						["healing"] = 47527,
+						["overhealing"] = 46806,
+						["hits"] = 4,
+					},
+					["Judgment of Light"] = {
+						["min"] = 6599,
+						["crits"] = 3,
+						["max"] = 22273,
+						["healing"] = 155583,
+						["overhealing"] = 0,
+						["hits"] = 14,
+					},
 				},
-				["taken"] = 3725625,
+				["taken"] = 0,
 				["done"] = 0,
-				["htaken"] = 0,
+				["htaken"] = 439471,
 				["htakenspell"] = {
+					["Leech"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 8362,
+						["healing"] = 59659,
+						["overhealing"] = 11552,
+						["hits"] = 27,
+					},
+					["Aura of Mercy"] = {
+						["min"] = 3548,
+						["crits"] = 10,
+						["max"] = 11976,
+						["healing"] = 176702,
+						["overhealing"] = 0,
+						["hits"] = 28,
+					},
+					["Arcing Light"] = {
+						["min"] = 0,
+						["crits"] = 2,
+						["max"] = 31763,
+						["healing"] = 47527,
+						["overhealing"] = 46806,
+						["hits"] = 4,
+					},
+					["Judgment of Light"] = {
+						["min"] = 6599,
+						["crits"] = 3,
+						["max"] = 22273,
+						["healing"] = 155583,
+						["overhealing"] = 0,
+						["hits"] = 14,
+					},
 				},
 			},
 			["Dominator Tentacle"] = {
