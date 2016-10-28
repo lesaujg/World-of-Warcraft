@@ -14,7 +14,7 @@ LM_Location = LM_CreateAutoEventFrame("Frame", "LM_Location")
 LM_Location:RegisterEvent("PLAYER_LOGIN")
 
 -- Magical develper only debugging-fu
-local I_AM_X = GetAddOnMetadata("LiteMount", "Version") == "7.1.1"
+local I_AM_X = GetAddOnMetadata("LiteMount", "Version") == "7.1.2"
 
 function LM_Location:Initialize()
     self.continent = -1
