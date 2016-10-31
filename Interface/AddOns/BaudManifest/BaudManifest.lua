@@ -66,7 +66,7 @@ local SplitHoldItem, SplitHoldExpire, SplitPending, SplitTimeout, IgnoreHooks, C
 local DisableCombine, DisableSpecial, UseSpecial;
 local CursorHover, PlayerName, SelectedChar;
 local RealmData, PlayerData, GlobalConfig, Config, AltConfig, AllCharData, AllCharHash, OtherCharMoney;
-local NumSpecials, LocaleContainer;
+local NumSpecials, LocaleContainer, RenamePending;
 local DisplayNames = {"Inventory", "Bank Box", "Reagent Bank"};
 
 --List will refresh on first OnUpdate
@@ -585,7 +585,9 @@ EventFuncs = {
 ---------------------
 
   BAG_UPDATE_COOLDOWN = function()
-    BaudManifestScrollBar_Update(Displays[1]);
+    if not RenamePending then
+      BaudManifestScrollBar_Update(Displays[1]);
+    end
   end,
 
 ---------------------
@@ -879,6 +881,7 @@ function BaudManifestCategoryEditBox_OnEditFocusLost(self)
   end
   self:Hide();
   BaudManifestScrollBar_Update(self.Display);
+  RenamePending = false;
 end
 
 -------------------------------
@@ -1933,6 +1936,7 @@ function BaudManifestItemEntry_OnClick(self, MouseButton, down)
       BaudManifestCategoryEditBox:Hide();
       local Text = self.Text;
       Text:Hide();
+      RenamePending = true;
       --Unless the parent is set, the edit box can fall behind the frame
       BaudManifestCategoryEditBox:SetParent(self);
       BaudManifestCategoryEditBox:SetFrameLevel(self:GetFrameLevel() + 1);
