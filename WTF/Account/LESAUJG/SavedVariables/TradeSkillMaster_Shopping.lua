@@ -56,101 +56,101 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
 		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1478054761,
-			["name"] = "inTREPID",
-			["filter"] = "inTREPID",
-		}, -- [1]
-		{
-			["lastSearch"] = 1478043629,
+			["lastSearch"] = 1478143661,
 			["name"] = "potion of Prolonged Power",
 			["filter"] = "potion of Prolonged Power",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
+		}, -- [1]
+		{
+			["lastSearch"] = 1478143653,
+			["name"] = "Potion of Deadly Grace",
+			["filter"] = "Potion of Deadly Grace",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
 		}, -- [2]
+		{
+			["lastSearch"] = 1478143646,
+			["name"] = "Flask of the Seventh Demon",
+			["filter"] = "Flask of the Seventh Demon",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [3]
+		{
+			["lastSearch"] = 1478143612,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [4]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1478143602,
+			["name"] = "inTREPID",
+			["filter"] = "inTREPID",
+		}, -- [5]
+		{
+			["lastSearch"] = 1478139448,
+			["name"] = "Chaos Crystal/exact",
+			["filter"] = "Chaos Crystal/exact",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [6]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1478016599,
 			["name"] = "Defiled Augment Rune/exact",
 			["filter"] = "Defiled Augment Rune/exact",
-		}, -- [3]
+		}, -- [7]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1478016591,
 			["name"] = "Flask of the Seventh Demon/exact",
 			["filter"] = "Flask of the Seventh Demon/exact",
-		}, -- [4]
+		}, -- [8]
 		{
 			["lastSearch"] = 1478016586,
 			["name"] = "Nightborne Delicacy Platter",
 			["filter"] = "Nightborne Delicacy Platter",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [5]
-		{
-			["lastSearch"] = 1478016578,
-			["name"] = "Flask of the Seventh Demon",
-			["filter"] = "Flask of the Seventh Demon",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [6]
+		}, -- [9]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1477965122,
 			["name"] = "Primal Fire/ignorede",
 			["filter"] = "Primal Fire/ignorede",
-		}, -- [7]
+		}, -- [10]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1477908612,
 			["name"] = "Vermilion Onyx/ignorede",
 			["filter"] = "Vermilion Onyx/ignorede",
-		}, -- [8]
+		}, -- [11]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1477873936,
 			["name"] = "stormscale",
 			["filter"] = "stormscale",
-		}, -- [9]
-		{
-			["lastSearch"] = 1477871463,
-			["name"] = "Potion of Deadly Grace",
-			["filter"] = "Potion of Deadly Grace",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [10]
-		{
-			["lastSearch"] = 1477871389,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [11]
+		}, -- [12]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1477797539,
 			["name"] = "leylight shard",
 			["filter"] = "leylight shard",
-		}, -- [12]
+		}, -- [13]
 		{
 			["lastSearch"] = 1477536634,
 			["name"] = "Obliterum/exact",
 			["filter"] = "Obliterum/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [13]
+		}, -- [14]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1477451629,
 			["name"] = "Wild Jade/ignorede",
 			["filter"] = "Wild Jade/ignorede",
-		}, -- [14]
-		{
-			["lastSearch"] = 1477279299,
-			["name"] = "Chaos Crystal/exact",
-			["filter"] = "Chaos Crystal/exact",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
 		}, -- [15]
 		{
 			["searchMode"] = "normal",

@@ -111,6 +111,12 @@ function AS:Embed_Check(Message)
 	end
 	AS:Embed_Toggle(Message)
 	AS:EmbedSystem_WindowResize()
+
+	for _, Window in pairs({EmbedSystem_MainWindow, EmbedSystem_LeftWindow, EmbedSystem_RightWindow}) do
+		Window:SetFrameStrata(strsub(AS:CheckOption('EmbedFrameStrata'), 3))
+		Window:SetFrameLevel(AS:CheckOption('EmbedFrameLevel'))
+	end
+
 	if AS:CheckEmbed('Details') then AS:Embed_Details() end
 	if AS:CheckEmbed('Omen') then AS:Embed_Omen() end
 	if AS:CheckEmbed('Skada') then AS:Embed_Skada() end
@@ -181,6 +187,7 @@ if AS:CheckAddOn('Recount') then
 		Recount_MainWindow:ClearAllPoints()
 		Recount_MainWindow:SetPoint('TOPLEFT', EmbedParent, 'TOPLEFT', 0, 6)
 		Recount_MainWindow:SetPoint('BOTTOMRIGHT', EmbedParent, 'BOTTOMRIGHT', 0, 0)
+		Recount_MainWindow:SetFrameLevel(AS:CheckOption('EmbedFrameLevel'))
 
 		if AS:CheckOption('Recount') then
 			if Recount_MainWindow.Backdrop then
@@ -196,6 +203,7 @@ if AS:CheckAddOn('Recount') then
 		Recount.db.profile.Locked = true
 		Recount.db.profile.Scaling = 1
 		Recount.db.profile.ClampToScreen = true
+		Recount.db.profile.FrameStrata = AS:CheckOption('EmbedFrameStrata')
 		Recount:SetStrataAndClamp()
 		Recount:LockWindows(true)
 		Recount:ResizeMainWindow()
@@ -231,10 +239,12 @@ if AS:CheckAddOn('Omen') then
 		db.profile.ShowWith.UseShowWith = false
 		db.profile.Locked = true
 		db.profile.TitleBar.ShowTitleBar = true
+		db.profile.FrameStrata = AS:CheckOption('EmbedFrameStrata')
 		Omen:OnProfileChanged(nil, db)
 
 		OmenAnchor:SetParent(EmbedParent)
 		OmenAnchor:SetTemplate()
+		OmenAnchor:SetFrameLevel(AS:CheckOption('EmbedFrameLevel'))
 		OmenAnchor:SetBackdropColor(0,0,0,0)
 		OmenAnchor:ClearAllPoints()
 		OmenAnchor:SetPoint('TOPLEFT', EmbedParent, 'TOPLEFT', 0, 0)
@@ -251,6 +261,8 @@ if AS:CheckAddOn('TinyDPS') then
 		AS:SkinFrame(tdpsFrame, AS:CheckOption('TransparentEmbed') and 'Transparent' or 'Default')
 
 		tdpsFrame:SetParent(EmbedParent)
+		tdpsFrame:SetFrameStrata(EmbedParent:GetFrameStrata())
+		tdpsFrame:SetFrameLevel(EmbedParent:GetFrameLevel())
 		tdpsAnchor:ClearAllPoints()
 		tdpsAnchor:Point('TOPLEFT', EmbedParent, 'TOPLEFT', 0, 0)
 		tdpsAnchor:Point('BOTTOMRIGHT', EmbedParent, 'BOTTOMRIGHT', 0, 0)
@@ -279,6 +291,8 @@ if AS:CheckAddOn('alDamageMeter') then
 		alDamageMeterFrame:ClearAllPoints()
 		alDamageMeterFrame:SetInside(EmbedParent, 2, 2)
 		alDamageMeterFrame:SetParent(EmbedParent)
+		alDamageMeterFrame:SetFrameStrata(EmbedParent:GetFrameStrata())
+		alDamageMeterFrame:SetFrameLevel(EmbedParent:GetFrameLevel())
 	end
 end
 
@@ -313,6 +327,8 @@ if AS:CheckAddOn('Skada') then
 			window.db.spark = false
 			window.db.barslocked = true
 			window.db.background.bordertexture = "None"
+			window.db.background.strata = relativeFrame:GetFrameStrata()
+			window.db.strata = relativeFrame:GetFrameStrata()
 			window.bargroup.ClearAllPoints = nil
 			window.bargroup:ClearAllPoints()
 			window.bargroup.ClearAllPoints = function() end
@@ -320,6 +336,7 @@ if AS:CheckAddOn('Skada') then
 			window.bargroup:SetPoint(point, relativeFrame, relativePoint, ofsx, -offsety)
 			window.bargroup.SetPoint = function() end
 			window.bargroup:SetParent(relativeFrame)
+			window.bargroup:SetFrameLevel(relativeFrame:GetFrameLevel())
 			window.bargroup:SetBackdrop(nil)
 			if window.bargroup.Backdrop then
 				window.bargroup.Backdrop:SetTemplate(AS:CheckOption('TransparentEmbed') and "Transparent" or 'Default')
@@ -417,6 +434,8 @@ if AS:CheckAddOn('Details') then
 			end
 
 			--> set the point and save the position
+			window:SetFrameStrata(relativeFrame:GetFrameStrata())
+			window:SetFrameLevel(relativeFrame:GetFrameLevel())
 			window.baseframe:ClearAllPoints()
 			window.baseframe:SetParent(relativeFrame)
 
