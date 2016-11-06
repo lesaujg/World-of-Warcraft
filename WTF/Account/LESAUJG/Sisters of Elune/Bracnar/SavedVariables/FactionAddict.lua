@@ -25,171 +25,176 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
+		["date"] = "Saturday 11/5",
+		["rows"] = 3,
+	}, -- [1]
+	{
 		["date"] = "Friday 11/4",
 		["rows"] = 2,
-	}, -- [1]
+	}, -- [2]
 	{
 		["date"] = "Thursday 11/3",
 		["rows"] = 3,
-	}, -- [2]
+	}, -- [3]
 	{
 		["date"] = "Wednesday 11/2",
 		["rows"] = 2,
-	}, -- [3]
+	}, -- [4]
 	{
 		["date"] = "Tuesday 11/1",
 		["rows"] = 5,
-	}, -- [4]
+	}, -- [5]
 	{
 		["date"] = "Monday 10/31",
 		["rows"] = 3,
-	}, -- [5]
+	}, -- [6]
 	{
 		["date"] = "Sunday 10/30",
 		["rows"] = 5,
-	}, -- [6]
+	}, -- [7]
 	{
 		["date"] = "Saturday 10/29",
 		["rows"] = 2,
-	}, -- [7]
+	}, -- [8]
 	{
 		["date"] = "Thursday 10/27",
 		["rows"] = 2,
-	}, -- [8]
+	}, -- [9]
 	{
 		["date"] = "Tuesday 10/25",
 		["rows"] = 3,
-	}, -- [9]
+	}, -- [10]
 	{
 		["date"] = "Monday 10/24",
 		["rows"] = 1,
-	}, -- [10]
+	}, -- [11]
 	{
 		["date"] = "Sunday 10/23",
 		["rows"] = 4,
-	}, -- [11]
+	}, -- [12]
 	{
 		["date"] = "Saturday 10/22",
 		["rows"] = 1,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Friday 10/21",
 		["rows"] = 2,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Thursday 10/20",
 		["rows"] = 5,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Wednesday 10/19",
 		["rows"] = 3,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Tuesday 10/18",
 		["rows"] = 4,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Monday 10/17",
 		["rows"] = 3,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Sunday 10/16",
 		["rows"] = 6,
-	}, -- [18]
+	}, -- [19]
 	{
 		["date"] = "Saturday 10/15",
 		["rows"] = 5,
-	}, -- [19]
-	{
-		["date"] = "Friday 10/14",
-		["rows"] = 3,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
 	{
+		["The Wardens"] = 1000,
+		["Valarjar"] = 1225,
+		["Dreamweavers"] = 1544,
+	}, -- [1]
+	{
 		["The Wardens"] = 225,
 		["Dreamweavers"] = 375,
-	}, -- [1]
+	}, -- [2]
 	{
 		["The Wardens"] = 450,
 		["Valarjar"] = 400,
 		["Dreamweavers"] = 475,
-	}, -- [2]
+	}, -- [3]
 	{
 		["The Wardens"] = 150,
 		["Dreamweavers"] = 225,
-	}, -- [3]
+	}, -- [4]
 	{
 		["Valarjar"] = 75,
 		["Highmountain Tribe"] = 400,
 		["The Wardens"] = 625,
 		["Shado-Pan Assault"] = 1800,
 		["Court of Farondis"] = 475,
-	}, -- [4]
+	}, -- [5]
 	{
 		["The Wardens"] = 225,
 		["Valarjar"] = 250,
 		["Highmountain Tribe"] = 225,
-	}, -- [5]
+	}, -- [6]
 	{
 		["Valarjar"] = 800,
 		["Highmountain Tribe"] = 150,
 		["The Wardens"] = 2775,
 		["Court of Farondis"] = 650,
 		["Dreamweavers"] = 300,
-	}, -- [6]
+	}, -- [7]
 	{
 		["Valarjar"] = 2050,
 		["Court of Farondis"] = 750,
-	}, -- [7]
+	}, -- [8]
 	{
 		["The Wardens"] = 250,
 		["Dreamweavers"] = 750,
-	}, -- [8]
+	}, -- [9]
 	{
 		["The Wardens"] = 2025,
 		["Highmountain Tribe"] = 450,
 		["Dreamweavers"] = 1725,
-	}, -- [9]
+	}, -- [10]
 	{
 		["The Wardens"] = 150,
-	}, -- [10]
+	}, -- [11]
 	{
 		["The Wardens"] = 1025,
 		["Court of Farondis"] = 1150,
 		["Dreamweavers"] = 1875,
 		["Highmountain Tribe"] = 2125,
-	}, -- [11]
+	}, -- [12]
 	{
 		["Dreamweavers"] = 250,
-	}, -- [12]
+	}, -- [13]
 	{
 		["The Wardens"] = 250,
 		["Dreamweavers"] = 400,
-	}, -- [13]
+	}, -- [14]
 	{
 		["Valarjar"] = 300,
 		["Highmountain Tribe"] = 300,
 		["The Wardens"] = 325,
 		["Court of Farondis"] = 325,
 		["Dreamweavers"] = 150,
-	}, -- [14]
+	}, -- [15]
 	{
 		["Court of Farondis"] = 75,
 		["Valarjar"] = 250,
 		["Highmountain Tribe"] = 1800,
-	}, -- [15]
+	}, -- [16]
 	{
 		["The Wardens"] = 400,
 		["Court of Farondis"] = 250,
 		["Valarjar"] = 500,
 		["Dreamweavers"] = 150,
-	}, -- [16]
+	}, -- [17]
 	{
 		["The Wardens"] = 150,
 		["Court of Farondis"] = 1875,
 		["The Nightfallen"] = 850,
-	}, -- [17]
+	}, -- [18]
 	{
 		["The Nightfallen"] = 875,
 		["Valarjar"] = 250,
@@ -197,18 +202,13 @@ FactionAddictLogEntries = {
 		["The Wardens"] = 250,
 		["Court of Farondis"] = 250,
 		["Dreamweavers"] = 1975,
-	}, -- [18]
+	}, -- [19]
 	{
 		["The Nightfallen"] = 1325,
 		["Valarjar"] = 400,
 		["Highmountain Tribe"] = 150,
 		["The Wardens"] = 325,
 		["Court of Farondis"] = 550,
-	}, -- [19]
-	{
-		["The Wardens"] = 250,
-		["The Nightfallen"] = 975,
-		["Highmountain Tribe"] = 250,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
@@ -314,9 +314,9 @@ FactionAddictConfigIsInactive = {
 	[1275] = false,
 	[1849] = false,
 	[576] = false,
-	[1085] = false,
-	[1276] = false,
 	[1850] = false,
+	[1276] = false,
+	[1085] = false,
 	[1098] = false,
 	[369] = false,
 	[1277] = false,

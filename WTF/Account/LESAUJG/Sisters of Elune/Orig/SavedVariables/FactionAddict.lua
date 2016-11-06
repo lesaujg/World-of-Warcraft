@@ -25,14 +25,21 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Tuesday 11/1",
+		["date"] = "Sunday 11/6",
 		["rows"] = 1,
 	}, -- [1]
+	{
+		["date"] = "Tuesday 11/1",
+		["rows"] = 1,
+	}, -- [2]
 }
 FactionAddictLogEntries = {
 	{
-		["Alliance Vanguard"] = 2776,
+		["Alliance Vanguard"] = 2843,
 	}, -- [1]
+	{
+		["Alliance Vanguard"] = 2776,
+	}, -- [2]
 }
 FactionAddictConfigIsInactive = {
 	[1737] = false,
@@ -137,9 +144,9 @@ FactionAddictConfigIsInactive = {
 	[1275] = false,
 	[1849] = false,
 	[576] = false,
-	[1085] = false,
-	[1276] = false,
 	[1850] = false,
+	[1276] = false,
+	[1085] = false,
 	[1098] = false,
 	[369] = false,
 	[1277] = false,

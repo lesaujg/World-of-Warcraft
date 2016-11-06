@@ -4,7 +4,7 @@ Informant: disabled
 +Wowhead_Looter: disabled
 SlideBar: disabled
 _NPCScan: enabled
-_NPCScan.Overlay: disabled
+_NPCScan.Overlay: enabled
 AckisRecipeList: enabled
 AckisRecipeList_Alchemy: enabled
 AckisRecipeList_Blacksmithing: enabled
@@ -180,3 +180,7 @@ Jamba: disabled
 Jamba-AdvancedLoot: enabled
 !KalielsTracker: disabled
 WorldQuestTracker: disabled
+AngryWorldQuests: enabled
+HandyNotes_LegionRaresTreasures: enabled
+NomiCakes: enabled
+DBM-TrialofValor: enabled
