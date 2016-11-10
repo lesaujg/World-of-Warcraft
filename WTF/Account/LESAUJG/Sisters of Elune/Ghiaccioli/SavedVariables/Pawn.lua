@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0106,
+	["LastVersion"] = 2.0108,
 	["LastPlayerFullName"] = "Ghiaccioli-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,

@@ -1,4 +1,11 @@
 Version: 1
+Frame: BaudManifestDisplay1
+FrameLevel: 1
+Anchor: TOPRIGHT
+X: -76
+Y: -20
+W: 268
+H: 712
 Frame: BaudManifestDisplay2
 FrameLevel: 1
 Anchor: TOP
@@ -27,10 +34,3 @@ X: 0
 Y: 0
 W: 800
 H: 525
-Frame: BaudManifestDisplay1
-FrameLevel: 1
-Anchor: TOPRIGHT
-X: -76
-Y: -20
-W: 268
-H: 712

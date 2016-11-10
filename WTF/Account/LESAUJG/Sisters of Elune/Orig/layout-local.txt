@@ -20,10 +20,3 @@ X: 189
 Y: -4
 W: 227
 H: 663
-Frame: TSMMainFrame1
-FrameLevel: 0
-Anchor: CENTER
-X: -4
-Y: -66
-W: 968
-H: 621
