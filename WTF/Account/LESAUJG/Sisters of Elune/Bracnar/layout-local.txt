@@ -2,10 +2,10 @@ Version: 1
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: TOPRIGHT
-X: -76
-Y: -20
+X: -262
+Y: -14
 W: 268
-H: 712
+H: 711
 Frame: BaudManifestDisplay2
 FrameLevel: 1
 Anchor: TOP

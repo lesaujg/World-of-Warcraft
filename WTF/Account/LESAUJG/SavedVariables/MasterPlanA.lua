@@ -24,8 +24,8 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 		["Ghiaccioli"] = {
-			["class"] = "MAGE",
 			["faction"] = "Alliance",
+			["class"] = "MAGE",
 		},
 		["Mandelbrot"] = {
 			["faction"] = "Alliance",
@@ -36,6 +36,7 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 		["Orig"] = {
+			["lastCacheTime"] = 1470667248,
 			["recruitTime"] = 1468376595,
 			["summary"] = {
 				["ti2"] = 122484,
@@ -53,11 +54,10 @@ MasterPlanAG = {
 				},
 				["tt2"] = 1469583752,
 			},
-			["curOil"] = 2735,
-			["lastCacheTime"] = 1470667248,
+			["faction"] = "Alliance",
 			["class"] = "MONK",
 			["curRes"] = 7716,
-			["faction"] = "Alliance",
+			["curOil"] = 2735,
 		},
 		["Herbinator"] = {
 			["class"] = "PALADIN",
@@ -106,12 +106,14 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 		["Leanara"] = {
-			["faction"] = "Alliance",
 			["class"] = "DEMONHUNTER",
+			["faction"] = "Alliance",
 		},
 		["Clothgar"] = {
 			["class"] = "WARLOCK",
 			["faction"] = "Alliance",
 		},
+	},
+	["IgnoreRewards"] = {
 	},
 }
