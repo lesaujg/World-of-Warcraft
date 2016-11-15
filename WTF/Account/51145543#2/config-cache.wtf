@@ -1,6 +1,6 @@
 SET scriptErrors "1"
 SET countdownForCooldowns "1"
-SET flaggedTutorials "v##$##%##E##^##]##K##(##8##[##)##+##,##?##@##-##5##'##;##.##9##Z##:##6##D##I##A##B##=##J##F##<##0##V##>##Y##C##H##G##O"
+SET flaggedTutorials "v##$##%##E##^##]##K##(##8##[##)##+##,##?##@##-##5##'##;##.##9##Z##:##6##D##I##A##B##=##J##F##<##0##V##>##Y##C##H##G##O##4"
 SET actionedAdventureJournalEntries "v"
 SET spamFilter "0"
 SET removeChatDelay "1"
