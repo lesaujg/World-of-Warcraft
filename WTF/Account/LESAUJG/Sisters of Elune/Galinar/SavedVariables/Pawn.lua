@@ -1,12 +1,12 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0011,
+	["LastVersion"] = 2.0108,
 	["LastPlayerFullName"] = "Galinar-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
 	["LastKeybindingsSet"] = 1,
 }
-PawnWowheadScaleProviderOptions = {
+PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "PALADIN",
-	["LastAdded"] = 5,
+	["LastAdded"] = 1,
 }

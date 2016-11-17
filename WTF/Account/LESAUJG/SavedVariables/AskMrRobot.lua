@@ -31,7 +31,7 @@ AskMrRobotDb3 = {
 			},
 			["Logging"] = {
 				["LastDiff"] = 0,
-				["LastZone"] = "Pandaria",
+				["LastZone"] = "Eastern Kingdoms",
 			},
 			["Equipped"] = {
 				[3] = {
@@ -902,147 +902,104 @@ AskMrRobotDb3 = {
 				"1113121", -- [2]
 				"2312322", -- [3]
 			},
-			["ExtraGemData"] = {
+			["ExtraEnchantData"] = {
 				{
-					[139262] = {
-						["id"] = 139262,
-						["text"] = "",
-						["enchantId"] = 139262,
-						["identicalItemGroup"] = {
-							[139262] = true,
-						},
-					},
-					[141272] = {
-						["id"] = 141272,
-						["text"] = "",
-						["enchantId"] = 141272,
-						["identicalItemGroup"] = {
-							[141272] = true,
-						},
-					},
-					[137472] = {
-						["id"] = 137472,
-						["text"] = "",
-						["enchantId"] = 137472,
-						["identicalItemGroup"] = {
-							[137472] = true,
-						},
-					},
-					[130218] = {
-						["id"] = 130218,
-						["text"] = "100 Mastery",
-						["enchantId"] = 130218,
-						["identicalItemGroup"] = {
-							[130218] = true,
-						},
-					},
-					[130222] = {
-						["id"] = 130222,
-						["text"] = "150 Mastery",
-						["enchantId"] = 130222,
-						["identicalItemGroup"] = {
-							[130222] = true,
-						},
-					},
-					[130247] = {
-						["id"] = 130247,
+					[5435] = {
+						["spellId"] = 191021,
+						["id"] = 5435,
 						["text"] = "200 Agi",
-						["enchantId"] = 130247,
-						["identicalItemGroup"] = {
-							[130247] = true,
+						["materials"] = {
+							[124440] = 20,
+							[124442] = 8,
+							[124124] = 2,
 						},
+						["itemId"] = 128549,
+					},
+					[5439] = {
+						["spellId"] = 190894,
+						["id"] = 5439,
+						["text"] = "Mark of the Hidden Satyr",
+						["materials"] = {
+							[124442] = 15,
+							[124441] = 12,
+						},
+						["itemId"] = 128553,
+					},
+					[5429] = {
+						["spellId"] = 190872,
+						["id"] = 5429,
+						["text"] = "200 Mastery",
+						["materials"] = {
+							[124442] = 5,
+							[124440] = 50,
+						},
+						["itemId"] = 128543,
 					},
 				}, -- [1]
 				{
-					[139260] = {
-						["id"] = 139260,
-						["text"] = "",
-						["enchantId"] = 139260,
-						["identicalItemGroup"] = {
-							[139260] = true,
-						},
-					},
-					[139263] = {
-						["id"] = 139263,
-						["text"] = "",
-						["enchantId"] = 139263,
-						["identicalItemGroup"] = {
-							[139263] = true,
-						},
-					},
-					[130247] = {
-						["id"] = 130247,
+					[5435] = {
+						["spellId"] = 191021,
+						["id"] = 5435,
 						["text"] = "200 Agi",
-						["enchantId"] = 130247,
-						["identicalItemGroup"] = {
-							[130247] = true,
+						["materials"] = {
+							[124440] = 20,
+							[124442] = 8,
+							[124124] = 2,
 						},
+						["itemId"] = 128549,
 					},
-					[137550] = {
-						["id"] = 137550,
-						["text"] = "",
-						["enchantId"] = 137550,
-						["identicalItemGroup"] = {
-							[137550] = true,
+					[5439] = {
+						["spellId"] = 190894,
+						["id"] = 5439,
+						["text"] = "Mark of the Hidden Satyr",
+						["materials"] = {
+							[124442] = 15,
+							[124441] = 12,
 						},
+						["itemId"] = 128553,
 					},
-					[130222] = {
-						["id"] = 130222,
-						["text"] = "150 Mastery",
-						["enchantId"] = 130222,
-						["identicalItemGroup"] = {
-							[130222] = true,
+					[5429] = {
+						["spellId"] = 190872,
+						["id"] = 5429,
+						["text"] = "200 Mastery",
+						["materials"] = {
+							[124442] = 5,
+							[124440] = 50,
 						},
+						["itemId"] = 128543,
 					},
 				}, -- [2]
 				{
-					[139260] = {
-						["id"] = 139260,
-						["text"] = "",
-						["enchantId"] = 139260,
-						["identicalItemGroup"] = {
-							[139260] = true,
-						},
-					},
-					[133682] = {
-						["id"] = 133682,
-						["text"] = "",
-						["enchantId"] = 133682,
-						["identicalItemGroup"] = {
-							[133682] = true,
-						},
-					},
-					[130218] = {
-						["id"] = 130218,
-						["text"] = "100 Mastery",
-						["enchantId"] = 130218,
-						["identicalItemGroup"] = {
-							[130218] = true,
-						},
-					},
-					[130247] = {
-						["id"] = 130247,
+					[5435] = {
+						["spellId"] = 191021,
+						["id"] = 5435,
 						["text"] = "200 Agi",
-						["enchantId"] = 130247,
-						["identicalItemGroup"] = {
-							[130247] = true,
+						["materials"] = {
+							[124440] = 20,
+							[124442] = 8,
+							[124124] = 2,
 						},
+						["itemId"] = 128549,
 					},
-					[141268] = {
-						["id"] = 141268,
-						["text"] = "",
-						["enchantId"] = 141268,
-						["identicalItemGroup"] = {
-							[141268] = true,
+					[5430] = {
+						["spellId"] = 190873,
+						["id"] = 5430,
+						["text"] = "200 Vers",
+						["materials"] = {
+							[124442] = 5,
+							[124440] = 50,
 						},
+						["itemId"] = 128544,
 					},
-					[130221] = {
-						["id"] = 130221,
-						["text"] = "150 Vers",
-						["enchantId"] = 130221,
-						["identicalItemGroup"] = {
-							[130221] = true,
+					[5439] = {
+						["spellId"] = 190894,
+						["id"] = 5439,
+						["text"] = "Mark of the Hidden Satyr",
+						["materials"] = {
+							[124442] = 15,
+							[124441] = 12,
 						},
+						["itemId"] = 128553,
 					},
 				}, -- [3]
 			},
@@ -1286,104 +1243,147 @@ AskMrRobotDb3 = {
 				"|cff9d9d9d|Hitem:73410:::::::1839357440:110:253::::::|h[Partially Soaked Pages]|h|r", -- [237]
 				"|cff9d9d9d|Hitem:81231:::::::1107396480:110:253::::::|h[Crumpled Bill of Sale]|h|r", -- [238]
 			},
-			["ExtraEnchantData"] = {
+			["ExtraGemData"] = {
 				{
-					[5435] = {
-						["spellId"] = 191021,
-						["id"] = 5435,
+					[139262] = {
+						["id"] = 139262,
+						["text"] = "",
+						["enchantId"] = 139262,
+						["identicalItemGroup"] = {
+							[139262] = true,
+						},
+					},
+					[141272] = {
+						["id"] = 141272,
+						["text"] = "",
+						["enchantId"] = 141272,
+						["identicalItemGroup"] = {
+							[141272] = true,
+						},
+					},
+					[137472] = {
+						["id"] = 137472,
+						["text"] = "",
+						["enchantId"] = 137472,
+						["identicalItemGroup"] = {
+							[137472] = true,
+						},
+					},
+					[130218] = {
+						["id"] = 130218,
+						["text"] = "100 Mastery",
+						["enchantId"] = 130218,
+						["identicalItemGroup"] = {
+							[130218] = true,
+						},
+					},
+					[130222] = {
+						["id"] = 130222,
+						["text"] = "150 Mastery",
+						["enchantId"] = 130222,
+						["identicalItemGroup"] = {
+							[130222] = true,
+						},
+					},
+					[130247] = {
+						["id"] = 130247,
 						["text"] = "200 Agi",
-						["materials"] = {
-							[124440] = 20,
-							[124442] = 8,
-							[124124] = 2,
+						["enchantId"] = 130247,
+						["identicalItemGroup"] = {
+							[130247] = true,
 						},
-						["itemId"] = 128549,
-					},
-					[5439] = {
-						["spellId"] = 190894,
-						["id"] = 5439,
-						["text"] = "Mark of the Hidden Satyr",
-						["materials"] = {
-							[124442] = 15,
-							[124441] = 12,
-						},
-						["itemId"] = 128553,
-					},
-					[5429] = {
-						["spellId"] = 190872,
-						["id"] = 5429,
-						["text"] = "200 Mastery",
-						["materials"] = {
-							[124442] = 5,
-							[124440] = 50,
-						},
-						["itemId"] = 128543,
 					},
 				}, -- [1]
 				{
-					[5435] = {
-						["spellId"] = 191021,
-						["id"] = 5435,
+					[139260] = {
+						["id"] = 139260,
+						["text"] = "",
+						["enchantId"] = 139260,
+						["identicalItemGroup"] = {
+							[139260] = true,
+						},
+					},
+					[139263] = {
+						["id"] = 139263,
+						["text"] = "",
+						["enchantId"] = 139263,
+						["identicalItemGroup"] = {
+							[139263] = true,
+						},
+					},
+					[130247] = {
+						["id"] = 130247,
 						["text"] = "200 Agi",
-						["materials"] = {
-							[124440] = 20,
-							[124442] = 8,
-							[124124] = 2,
+						["enchantId"] = 130247,
+						["identicalItemGroup"] = {
+							[130247] = true,
 						},
-						["itemId"] = 128549,
 					},
-					[5439] = {
-						["spellId"] = 190894,
-						["id"] = 5439,
-						["text"] = "Mark of the Hidden Satyr",
-						["materials"] = {
-							[124442] = 15,
-							[124441] = 12,
+					[137550] = {
+						["id"] = 137550,
+						["text"] = "",
+						["enchantId"] = 137550,
+						["identicalItemGroup"] = {
+							[137550] = true,
 						},
-						["itemId"] = 128553,
 					},
-					[5429] = {
-						["spellId"] = 190872,
-						["id"] = 5429,
-						["text"] = "200 Mastery",
-						["materials"] = {
-							[124442] = 5,
-							[124440] = 50,
+					[130222] = {
+						["id"] = 130222,
+						["text"] = "150 Mastery",
+						["enchantId"] = 130222,
+						["identicalItemGroup"] = {
+							[130222] = true,
 						},
-						["itemId"] = 128543,
 					},
 				}, -- [2]
 				{
-					[5435] = {
-						["spellId"] = 191021,
-						["id"] = 5435,
+					[139260] = {
+						["id"] = 139260,
+						["text"] = "",
+						["enchantId"] = 139260,
+						["identicalItemGroup"] = {
+							[139260] = true,
+						},
+					},
+					[133682] = {
+						["id"] = 133682,
+						["text"] = "",
+						["enchantId"] = 133682,
+						["identicalItemGroup"] = {
+							[133682] = true,
+						},
+					},
+					[130218] = {
+						["id"] = 130218,
+						["text"] = "100 Mastery",
+						["enchantId"] = 130218,
+						["identicalItemGroup"] = {
+							[130218] = true,
+						},
+					},
+					[130247] = {
+						["id"] = 130247,
 						["text"] = "200 Agi",
-						["materials"] = {
-							[124440] = 20,
-							[124442] = 8,
-							[124124] = 2,
+						["enchantId"] = 130247,
+						["identicalItemGroup"] = {
+							[130247] = true,
 						},
-						["itemId"] = 128549,
 					},
-					[5430] = {
-						["spellId"] = 190873,
-						["id"] = 5430,
-						["text"] = "200 Vers",
-						["materials"] = {
-							[124442] = 5,
-							[124440] = 50,
+					[141268] = {
+						["id"] = 141268,
+						["text"] = "",
+						["enchantId"] = 141268,
+						["identicalItemGroup"] = {
+							[141268] = true,
 						},
-						["itemId"] = 128544,
 					},
-					[5439] = {
-						["spellId"] = 190894,
-						["id"] = 5439,
-						["text"] = "Mark of the Hidden Satyr",
-						["materials"] = {
-							[124442] = 15,
-							[124441] = 12,
+					[130221] = {
+						["id"] = 130221,
+						["text"] = "150 Vers",
+						["enchantId"] = 130221,
+						["identicalItemGroup"] = {
+							[130221] = true,
 						},
-						["itemId"] = 128553,
 					},
 				}, -- [3]
 			},
@@ -1647,16 +1647,16 @@ AskMrRobotDb3 = {
 				[139323] = 1,
 				[44050] = 1,
 				[118711] = 7,
-				[103678] = 1,
+				[119299] = 39,
 				[139783] = 1,
 				[129276] = 1,
 				[37863] = 1,
 				[142117] = 116,
 				[139847] = 11,
-				[124125] = 3,
+				[103678] = 1,
 				[128808] = 1,
 				[139814] = 4,
-				[119299] = 39,
+				[124125] = 3,
 				[94288] = 34,
 				[139816] = 17,
 				[110560] = 1,
@@ -3023,11 +3023,11 @@ AskMrRobotDb3 = {
 				[19901] = 2,
 				[139711] = 1,
 				[124291] = 1,
-				[31404] = 1,
+				[88384] = 1,
 				[124546] = 1,
 				[124307] = 1,
 				[31655] = 1,
-				[88384] = 1,
+				[43300] = 1,
 				[137433] = 1,
 				[111366] = 902,
 				[121837] = 1,
@@ -3035,7 +3035,7 @@ AskMrRobotDb3 = {
 				[109119] = 796,
 				[43348] = 1,
 				[139113] = 1,
-				[43300] = 1,
+				[31404] = 1,
 				[32420] = 1,
 				[139714] = 1,
 				[120945] = 14,
@@ -3369,6 +3369,12 @@ AskMrRobotDb3 = {
 		["Sanjuri - Sisters of Elune"] = {
 		},
 		["Galinar - Sisters of Elune"] = {
+			["Logging"] = {
+				["Auto"] = {
+					[0] = {
+					},
+				},
+			},
 		},
 		["Ghiaccioli - Sisters of Elune"] = {
 		},
@@ -3411,14 +3417,6 @@ AskMrRobotDb3 = {
 		["Belrath - Sisters of Elune"] = {
 		},
 		["Bracnar - Sisters of Elune"] = {
-			["shopWindow"] = {
-				["top"] = 851.000061035156,
-				["left"] = 710.000061035156,
-			},
-			["window"] = {
-				["top"] = 1112.99975585938,
-				["left"] = 298.000366210938,
-			},
 			["Logging"] = {
 				["Auto"] = {
 					{
@@ -3486,6 +3484,14 @@ AskMrRobotDb3 = {
 					[870] = {
 					},
 				},
+			},
+			["window"] = {
+				["top"] = 1112.99975585938,
+				["left"] = 298.000366210938,
+			},
+			["shopWindow"] = {
+				["top"] = 851.000061035156,
+				["left"] = 710.000061035156,
 			},
 			["minimap"] = {
 				["minimapPos"] = 1.34793222458403,
