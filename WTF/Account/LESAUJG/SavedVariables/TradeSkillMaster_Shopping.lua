@@ -1,8 +1,22 @@
 
 TradeSkillMaster_ShoppingDB = {
-	["g@ @sniperCustomPrice"] = "0c",
-	["g@ @maxDeSearchPercent"] = 1,
-	["g@ @postUndercut"] = "1c",
+	["_currentProfile"] = {
+		["Sanjuri - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
+		["Guldahka - Turalyon"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Orig - Sisters of Elune"] = "Default",
+		["Mandelbrot - Sisters of Elune"] = "Default",
+		["Leanara - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+		["Belrath - Sisters of Elune"] = "Default",
+		["Torinar - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
+	},
+	["_version"] = 3,
+	["g@ @sniperVendorPrice"] = true,
 	["g@ @postBidPercent"] = 0.95,
 	["_scopeKeys"] = {
 		["char"] = {
@@ -20,117 +34,120 @@ TradeSkillMaster_ShoppingDB = {
 			"Sanjuri - Sisters of Elune", -- [12]
 			"Torinar - Sisters of Elune", -- [13]
 		},
-		["realm"] = {
-			"Sisters of Elune", -- [1]
-			"Turalyon", -- [2]
+		["factionrealm"] = {
+			"Alliance - Sisters of Elune", -- [1]
+			"Horde - Turalyon", -- [2]
 		},
 		["profile"] = {
 			"Default", -- [1]
 		},
-		["factionrealm"] = {
-			"Alliance - Sisters of Elune", -- [1]
-			"Horde - Turalyon", -- [2]
+		["realm"] = {
+			"Sisters of Elune", -- [1]
+			"Turalyon", -- [2]
 		},
 	},
 	["g@ @helpPlatesShown"] = {
 		["auction"] = true,
 	},
-	["g@ @sniperVendorPrice"] = true,
+	["g@ @postUndercut"] = "1c",
+	["g@ @minDeSearchLvl"] = 1,
+	["g@ @maxDeSearchLvl"] = 735,
 	["_hash"] = 1861581,
+	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1479789198,
+			["lastSearch"] = 1479861941,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [1]
 		{
+			["lastSearch"] = 1479857922,
+			["name"] = "Obliterum/exact",
+			["filter"] = "Obliterum/exact",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [2]
+		{
+			["lastSearch"] = 1479857911,
+			["name"] = "Potion of Deadly Grace",
+			["filter"] = "Potion of Deadly Grace",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [3]
+		{
+			["lastSearch"] = 1479857903,
+			["name"] = "Flask of the Seventh Demon",
+			["filter"] = "Flask of the Seventh Demon",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [4]
+		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1479737754,
 			["name"] = "arkhana",
 			["filter"] = "arkhana",
-		}, -- [2]
+		}, -- [5]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1479735191,
 			["name"] = "Arkhana",
 			["filter"] = "Arkhana",
-		}, -- [3]
-		{
-			["lastSearch"] = 1479444238,
-			["name"] = "Obliterum/exact",
-			["filter"] = "Obliterum/exact",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [4]
-		{
-			["lastSearch"] = 1479428624,
-			["name"] = "Flask of the Seventh Demon",
-			["filter"] = "Flask of the Seventh Demon",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [5]
+		}, -- [6]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1479425125,
 			["name"] = "infernal brimstone",
 			["filter"] = "infernal brimstone",
-		}, -- [6]
+		}, -- [7]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1479349688,
 			["name"] = "harmony",
 			["filter"] = "harmony",
-		}, -- [7]
+		}, -- [8]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1479349477,
 			["name"] = "Frozen Orb/exact",
 			["filter"] = "Frozen Orb/exact",
-		}, -- [8]
+		}, -- [9]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1479340871,
 			["name"] = "Dream Shard/ignorede",
 			["filter"] = "Dream Shard/ignorede",
-		}, -- [9]
+		}, -- [10]
 		{
 			["lastSearch"] = 1479082946,
 			["name"] = "potion of Prolonged Power",
 			["filter"] = "potion of Prolonged Power",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [10]
+		}, -- [11]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1479042464,
 			["name"] = "Darkmoon Daggermaw/exact",
 			["filter"] = "Darkmoon Daggermaw/exact",
-		}, -- [11]
+		}, -- [12]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1479041444,
 			["name"] = "Abyss Crystal",
 			["filter"] = "Abyss Crystal",
-		}, -- [12]
+		}, -- [13]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1478966551,
 			["name"] = "Large Brilliant Shard",
 			["filter"] = "Large Brilliant Shard",
-		}, -- [13]
+		}, -- [14]
 		{
 			["lastSearch"] = 1478836116,
 			["name"] = "Nightborne Delicacy Platter",
 			["filter"] = "Nightborne Delicacy Platter",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [14]
-		{
-			["lastSearch"] = 1478836100,
-			["name"] = "Potion of Deadly Grace",
-			["filter"] = "Potion of Deadly Grace",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [15]
@@ -696,24 +713,7 @@ TradeSkillMaster_ShoppingDB = {
 		}, -- [108]
 	},
 	["g@ @sniperSound"] = "TSM_NO_SOUND",
-	["g@ @marketValueSource"] = "dbmarket",
-	["g@ @maxDeSearchLvl"] = 735,
-	["g@ @minDeSearchLvl"] = 1,
 	["g@ @normalPostPrice"] = "150% dbmarket",
-	["_version"] = 3,
-	["_currentProfile"] = {
-		["Sanjuri - Sisters of Elune"] = "Default",
-		["Galinar - Sisters of Elune"] = "Default",
-		["Guldahka - Turalyon"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Orig - Sisters of Elune"] = "Default",
-		["Mandelbrot - Sisters of Elune"] = "Default",
-		["Leanara - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
-		["Belrath - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
-		["Torinar - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-	},
+	["g@ @maxDeSearchPercent"] = 1,
+	["g@ @sniperCustomPrice"] = "0c",
 }
