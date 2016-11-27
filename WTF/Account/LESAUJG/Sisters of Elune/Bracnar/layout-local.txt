@@ -1,11 +1,4 @@
 Version: 1
-Frame: TSMCraftingGatherFrame
-FrameLevel: 0
-Anchor: RIGHT
-X: -235
-Y: 80
-W: 365
-H: 400
 Frame: BaudManifestDisplay2
 FrameLevel: 1
 Anchor: TOP
@@ -37,8 +30,8 @@ H: 525
 Frame: TSMCraftingTradeSkillFrame
 FrameLevel: 0
 Anchor: LEFT
-X: 59
-Y: -20
+X: 60
+Y: -19
 W: 410
 H: 517
 Frame: BaudManifestDisplay1
