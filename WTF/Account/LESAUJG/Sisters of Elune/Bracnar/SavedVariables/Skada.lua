@@ -2807,28 +2807,25 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 0,
 			},
-			["Moonglow Locust"] = {
+			["Horde Healing Ward"] = {
 				["players"] = {
-					["Bracnar"] = {
-						["taken"] = 53466,
-						["done"] = 0,
-						["role"] = "NONE",
-						["class"] = "HUNTER",
-					},
-					["Rexxar"] = {
-						["taken"] = 109979,
-						["done"] = 0,
-						["role"] = "NONE",
+				},
+				["hdone"] = 22355,
+				["hdonespell"] = {
+					["Healing Aura"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 365,
+						["healing"] = 22355,
+						["overhealing"] = 36775,
+						["hits"] = 162,
 					},
 				},
-				["hdone"] = 0,
+				["taken"] = 0,
 				["htakenspell"] = {
 				},
-				["taken"] = 163445,
-				["done"] = 0,
 				["htaken"] = 0,
-				["hdonespell"] = {
-				},
+				["done"] = 0,
 			},
 			["Horde Grunt"] = {
 				["players"] = {
@@ -2924,25 +2921,44 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 0,
 			},
-			["Horde Healing Ward"] = {
+			["Frenzied Riverbug"] = {
 				["players"] = {
-				},
-				["hdone"] = 22355,
-				["hdonespell"] = {
-					["Healing Aura"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 365,
-						["healing"] = 22355,
-						["overhealing"] = 36775,
-						["hits"] = 162,
+					["Bracnar"] = {
+						["taken"] = 2194468,
+						["done"] = 57358,
+						["role"] = "NONE",
+						["class"] = "HUNTER",
+					},
+					["Rexxar"] = {
+						["taken"] = 121657,
+						["done"] = 0,
+						["role"] = "NONE",
 					},
 				},
-				["taken"] = 0,
+				["hdone"] = 30308,
 				["htakenspell"] = {
+					["Blood Leech"] = {
+						["min"] = 14991,
+						["crits"] = 0,
+						["max"] = 15317,
+						["healing"] = 30308,
+						["overhealing"] = 0,
+						["hits"] = 2,
+					},
 				},
-				["htaken"] = 0,
-				["done"] = 0,
+				["taken"] = 2316125,
+				["done"] = 57358,
+				["htaken"] = 30308,
+				["hdonespell"] = {
+					["Blood Leech"] = {
+						["min"] = 14991,
+						["crits"] = 0,
+						["max"] = 15317,
+						["healing"] = 30308,
+						["overhealing"] = 0,
+						["hits"] = 2,
+					},
+				},
 			},
 			["Fienmor-CenarionCircle"] = {
 				["players"] = {
@@ -2988,43 +3004,27 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["Frenzied Riverbug"] = {
+			["Moonglow Locust"] = {
 				["players"] = {
 					["Bracnar"] = {
-						["taken"] = 2194468,
-						["done"] = 57358,
+						["taken"] = 53466,
+						["done"] = 0,
 						["role"] = "NONE",
 						["class"] = "HUNTER",
 					},
 					["Rexxar"] = {
-						["taken"] = 121657,
+						["taken"] = 109979,
 						["done"] = 0,
 						["role"] = "NONE",
 					},
 				},
-				["hdone"] = 30308,
+				["hdone"] = 0,
 				["htakenspell"] = {
-					["Blood Leech"] = {
-						["min"] = 14991,
-						["crits"] = 0,
-						["max"] = 15317,
-						["healing"] = 30308,
-						["overhealing"] = 0,
-						["hits"] = 2,
-					},
 				},
-				["taken"] = 2316125,
-				["done"] = 57358,
-				["htaken"] = 30308,
+				["taken"] = 163445,
+				["done"] = 0,
+				["htaken"] = 0,
 				["hdonespell"] = {
-					["Blood Leech"] = {
-						["min"] = 14991,
-						["crits"] = 0,
-						["max"] = 15317,
-						["healing"] = 30308,
-						["overhealing"] = 0,
-						["hits"] = 2,
-					},
 				},
 			},
 			["Horde Witch Doctor"] = {
@@ -3232,8 +3232,10 @@ SkadaPerCharDB = {
 			["time"] = 47,
 			["interrupts"] = 0,
 			["mobdone"] = 115,
-			["gotboss"] = true,
 			["mobtaken"] = 63555996,
+			["power"] = {
+				[2] = 55,
+			},
 			["damage"] = 63555996,
 			["players"] = {
 				{
@@ -3487,9 +3489,7 @@ SkadaPerCharDB = {
 					["done"] = 115,
 				},
 			},
-			["power"] = {
-				[2] = 55,
-			},
+			["gotboss"] = true,
 			["damagetaken"] = 115,
 			["healing"] = 440442,
 			["alertCount"] = 0,
