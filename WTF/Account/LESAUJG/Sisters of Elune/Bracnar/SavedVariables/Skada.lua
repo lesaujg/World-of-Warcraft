@@ -180,6 +180,28 @@ SkadaPerCharDB = {
 							["id"] = 63900,
 							["hitamount"] = 18881,
 						},
+						["Beast: Attack"] = {
+							["hitmin"] = 27744,
+							["max"] = 27744,
+							["min"] = 27744,
+							["hitmax"] = 27744,
+							["hit"] = 3,
+							["totalhits"] = 3,
+							["damage"] = 83232,
+							["id"] = 6603,
+							["hitamount"] = 83232,
+						},
+						["Mark of the Hidden Satyr"] = {
+							["hitmin"] = 50303,
+							["max"] = 50303,
+							["min"] = 50303,
+							["hitmax"] = 50303,
+							["hit"] = 1,
+							["totalhits"] = 1,
+							["damage"] = 50303,
+							["id"] = 191259,
+							["hitamount"] = 50303,
+						},
 						["McSpidey: Attack"] = {
 							["hitmin"] = 18166,
 							["criticalamount"] = 36332,
@@ -194,28 +216,6 @@ SkadaPerCharDB = {
 							["criticalmin"] = 36332,
 							["hitmax"] = 18166,
 							["hitamount"] = 18166,
-						},
-						["Mark of the Hidden Satyr"] = {
-							["hitmin"] = 50303,
-							["max"] = 50303,
-							["min"] = 50303,
-							["hitmax"] = 50303,
-							["hit"] = 1,
-							["totalhits"] = 1,
-							["damage"] = 50303,
-							["id"] = 191259,
-							["hitamount"] = 50303,
-						},
-						["McSpidey: Bite"] = {
-							["hitmin"] = 41329,
-							["max"] = 41329,
-							["min"] = 41329,
-							["hitmax"] = 41329,
-							["hit"] = 1,
-							["totalhits"] = 1,
-							["damage"] = 41329,
-							["id"] = 17253,
-							["hitamount"] = 41329,
 						},
 						["Hati: Kill Command"] = {
 							["hitmin"] = 57801,
@@ -239,16 +239,16 @@ SkadaPerCharDB = {
 							["id"] = 6603,
 							["hitamount"] = 21101,
 						},
-						["Beast: Attack"] = {
-							["hitmin"] = 27744,
-							["max"] = 27744,
-							["min"] = 27744,
-							["hitmax"] = 27744,
-							["hit"] = 3,
-							["totalhits"] = 3,
-							["damage"] = 83232,
-							["id"] = 6603,
-							["hitamount"] = 83232,
+						["McSpidey: Bite"] = {
+							["hitmin"] = 41329,
+							["max"] = 41329,
+							["min"] = 41329,
+							["hitmax"] = 41329,
+							["hit"] = 1,
+							["totalhits"] = 1,
+							["damage"] = 41329,
+							["id"] = 17253,
+							["hitamount"] = 41329,
 						},
 						["Rexxar: Raptor Strike"] = {
 							["criticalamount"] = 54989,
@@ -2733,6 +2733,17 @@ SkadaPerCharDB = {
 							["critical"] = 1,
 							["hitamount"] = 68578,
 						},
+						["Auto Shot"] = {
+							["hitmin"] = 21148,
+							["max"] = 21148,
+							["min"] = 21148,
+							["hitmax"] = 21148,
+							["hit"] = 2,
+							["totalhits"] = 2,
+							["damage"] = 42296,
+							["id"] = 75,
+							["hitamount"] = 42296,
+						},
 						["Hati: Jaws of Thunder"] = {
 							["hitmin"] = 57800,
 							["max"] = 57800,
@@ -2744,27 +2755,20 @@ SkadaPerCharDB = {
 							["id"] = 197163,
 							["hitamount"] = 57800,
 						},
-						["Rexxar: Lacerate"] = {
-							["hitmin"] = 13747,
-							["max"] = 13747,
-							["min"] = 13747,
-							["hitmax"] = 13747,
+						["Volley"] = {
+							["hitmin"] = 17134,
+							["criticalamount"] = 34953,
+							["max"] = 34953,
+							["damage"] = 52087,
+							["id"] = 194392,
+							["min"] = 17134,
+							["criticalmax"] = 34953,
+							["hitmax"] = 17134,
 							["hit"] = 1,
-							["totalhits"] = 1,
-							["damage"] = 13747,
-							["id"] = 220874,
-							["hitamount"] = 13747,
-						},
-						["Mark of the Hidden Satyr"] = {
-							["criticalamount"] = 103053,
-							["max"] = 103053,
-							["min"] = 103053,
-							["criticalmax"] = 103053,
+							["totalhits"] = 2,
+							["criticalmin"] = 34953,
 							["critical"] = 1,
-							["totalhits"] = 1,
-							["criticalmin"] = 103053,
-							["id"] = 191259,
-							["damage"] = 103053,
+							["hitamount"] = 17134,
 						},
 						["Rancid Maw"] = {
 							["hitmin"] = 45029,
@@ -2788,21 +2792,6 @@ SkadaPerCharDB = {
 							["id"] = 63900,
 							["hitamount"] = 18881,
 						},
-						["Volley"] = {
-							["hitmin"] = 17134,
-							["criticalamount"] = 34953,
-							["max"] = 34953,
-							["damage"] = 52087,
-							["id"] = 194392,
-							["min"] = 17134,
-							["criticalmax"] = 34953,
-							["hitmax"] = 17134,
-							["hit"] = 1,
-							["totalhits"] = 2,
-							["criticalmin"] = 34953,
-							["critical"] = 1,
-							["hitamount"] = 17134,
-						},
 						["McSpidey: Attack"] = {
 							["hitmin"] = 18166,
 							["max"] = 18166,
@@ -2813,6 +2802,17 @@ SkadaPerCharDB = {
 							["damage"] = 54498,
 							["id"] = 6603,
 							["hitamount"] = 54498,
+						},
+						["Mark of the Hidden Satyr"] = {
+							["criticalamount"] = 103053,
+							["max"] = 103053,
+							["min"] = 103053,
+							["criticalmax"] = 103053,
+							["critical"] = 1,
+							["totalhits"] = 1,
+							["criticalmin"] = 103053,
+							["id"] = 191259,
+							["damage"] = 103053,
 						},
 						["McSpidey: Bite"] = {
 							["hitmin"] = 39985,
@@ -2873,16 +2873,16 @@ SkadaPerCharDB = {
 							["hitmax"] = 6879,
 							["hitamount"] = 13758,
 						},
-						["Auto Shot"] = {
-							["hitmin"] = 21148,
-							["max"] = 21148,
-							["min"] = 21148,
-							["hitmax"] = 21148,
-							["hit"] = 2,
-							["totalhits"] = 2,
-							["damage"] = 42296,
-							["id"] = 75,
-							["hitamount"] = 42296,
+						["Rexxar: Lacerate"] = {
+							["hitmin"] = 13747,
+							["max"] = 13747,
+							["min"] = 13747,
+							["hitmax"] = 13747,
+							["hit"] = 1,
+							["totalhits"] = 1,
+							["damage"] = 13747,
+							["id"] = 220874,
+							["hitamount"] = 13747,
 						},
 					},
 					["maxhp"] = 3214710,
@@ -4305,10 +4305,10 @@ SkadaPerCharDB = {
 			["time"] = 60,
 			["interrupts"] = 0,
 			["mobdone"] = 678419,
-			["mobtaken"] = 20024333,
 			["power"] = {
 				[2] = 268,
 			},
+			["gotboss"] = true,
 			["damage"] = 20024333,
 			["players"] = {
 				{
@@ -5399,7 +5399,7 @@ SkadaPerCharDB = {
 					["done"] = 0,
 				},
 			},
-			["gotboss"] = true,
+			["mobtaken"] = 20024333,
 			["damagetaken"] = 678419,
 			["healing"] = 874897,
 			["alertCount"] = 4,
@@ -5531,21 +5531,20 @@ SkadaPerCharDB = {
 							["id"] = 83381,
 							["hitamount"] = 196463,
 						},
-						["Rexxar: Attack"] = {
-							["hitmin"] = 3542,
-							["criticalamount"] = 42959,
-							["max"] = 14170,
-							["damage"] = 97444,
-							["id"] = 6603,
-							["criticalmin"] = 7085,
-							["min"] = 3542,
-							["criticalmax"] = 14170,
-							["critical"] = 4,
-							["hit"] = 10,
-							["totalhits"] = 16,
-							["hitmax"] = 7534,
-							["MISS"] = 2,
-							["hitamount"] = 54485,
+						["Auto Shot"] = {
+							["hitmin"] = 21783,
+							["criticalamount"] = 45878,
+							["max"] = 45878,
+							["damage"] = 67661,
+							["id"] = 75,
+							["min"] = 21783,
+							["criticalmax"] = 45878,
+							["hitmax"] = 21783,
+							["hit"] = 1,
+							["totalhits"] = 2,
+							["criticalmin"] = 45878,
+							["critical"] = 1,
+							["hitamount"] = 21783,
 						},
 						["Cobra Shot"] = {
 							["hitmin"] = 72925,
@@ -5573,16 +5572,21 @@ SkadaPerCharDB = {
 							["id"] = 220857,
 							["damage"] = 16774,
 						},
-						["Rexxar: Lacerate"] = {
-							["hitmin"] = 15057,
-							["max"] = 15058,
-							["min"] = 15057,
-							["hitmax"] = 15058,
-							["hit"] = 2,
-							["totalhits"] = 2,
-							["damage"] = 30115,
-							["id"] = 220874,
-							["hitamount"] = 30115,
+						["Rexxar: Attack"] = {
+							["hitmin"] = 3542,
+							["criticalamount"] = 42959,
+							["max"] = 14170,
+							["damage"] = 97444,
+							["id"] = 6603,
+							["criticalmin"] = 7085,
+							["min"] = 3542,
+							["criticalmax"] = 14170,
+							["critical"] = 4,
+							["hit"] = 10,
+							["totalhits"] = 16,
+							["hitmax"] = 7534,
+							["MISS"] = 2,
+							["hitamount"] = 54485,
 						},
 						["Volley"] = {
 							["hitmin"] = 17133,
@@ -5722,20 +5726,16 @@ SkadaPerCharDB = {
 							["id"] = 6603,
 							["hitamount"] = 50119,
 						},
-						["Auto Shot"] = {
-							["hitmin"] = 21783,
-							["criticalamount"] = 45878,
-							["max"] = 45878,
-							["damage"] = 67661,
-							["id"] = 75,
-							["min"] = 21783,
-							["criticalmax"] = 45878,
-							["hitmax"] = 21783,
-							["hit"] = 1,
+						["Rexxar: Lacerate"] = {
+							["hitmin"] = 15057,
+							["max"] = 15058,
+							["min"] = 15057,
+							["hitmax"] = 15058,
+							["hit"] = 2,
 							["totalhits"] = 2,
-							["criticalmin"] = 45878,
-							["critical"] = 1,
-							["hitamount"] = 21783,
+							["damage"] = 30115,
+							["id"] = 220874,
+							["hitamount"] = 30115,
 						},
 					},
 					["maxhp"] = 2143140,
@@ -6200,12 +6200,12 @@ SkadaPerCharDB = {
 						["uptime"] = 8,
 						["auratype"] = "BUFF",
 					},
-					["Bullseye"] = {
-						["name"] = "Bullseye",
+					["McSpidey: Growl"] = {
+						["name"] = "McSpidey: Growl",
 						["active"] = 0,
-						["id"] = 204090,
-						["uptime"] = 7,
-						["auratype"] = "BUFF",
+						["id"] = 2649,
+						["uptime"] = 214,
+						["auratype"] = "DEBUFF",
 					},
 					["Mend Pet"] = {
 						["name"] = "Mend Pet",
@@ -6214,12 +6214,12 @@ SkadaPerCharDB = {
 						["uptime"] = 20,
 						["auratype"] = "BUFF",
 					},
-					["McSpidey: Growl"] = {
-						["name"] = "McSpidey: Growl",
+					["Beast: Leokk's Insight"] = {
+						["name"] = "Beast: Leokk's Insight",
 						["active"] = 0,
-						["id"] = 2649,
-						["uptime"] = 214,
-						["auratype"] = "DEBUFF",
+						["id"] = 221332,
+						["uptime"] = 8,
+						["auratype"] = "BUFF",
 					},
 					["Misdirection"] = {
 						["name"] = "Misdirection",
@@ -6270,11 +6270,11 @@ SkadaPerCharDB = {
 						["uptime"] = 17,
 						["auratype"] = "BUFF",
 					},
-					["Beast: Leokk's Insight"] = {
-						["name"] = "Beast: Leokk's Insight",
+					["Bullseye"] = {
+						["name"] = "Bullseye",
 						["active"] = 0,
-						["id"] = 221332,
-						["uptime"] = 8,
+						["id"] = 204090,
+						["uptime"] = 7,
 						["auratype"] = "BUFF",
 					},
 					["Dire Beast"] = {
@@ -7516,7 +7516,7 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3884-1220-27457-113346-0000332942"] = {
+					["Creature-0-3884-1220-27457-113346-000033337C"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -7528,11 +7528,11 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 6559,
 					},
-					["Creature-0-3884-1220-27457-113346-000033337C"] = {
+					["Creature-0-3884-1220-27457-100324-0000333252"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
+						["name"] = "Hati",
+						["amount"] = 9220,
 					},
 					["Pet-0-3136-1220-1636-47071-020232B259"] = {
 						["role"] = "NONE",
@@ -7541,11 +7541,12 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
-					["Creature-0-3884-1220-27457-100324-0000333252"] = {
-						["shielding"] = 0,
+					["Pet-0-3884-1220-27457-47071-040232B259"] = {
 						["role"] = "NONE",
-						["name"] = "Hati",
-						["amount"] = 9220,
+						["name"] = "McSpidey",
+						["amount"] = 165402,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
 					},
 					["Pet-0-3884-1220-27457-47071-070232B259"] = {
 						["role"] = "NONE",
@@ -7554,10 +7555,10 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
-					["Creature-0-3881-1220-11551-113346-00003D0809"] = {
+					["Creature-0-3777-1220-27173-100324-00003D030B"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
+						["name"] = "Hati",
 						["amount"] = 0,
 					},
 					["Creature-0-3884-1220-27457-113346-000033292B"] = {
@@ -7578,12 +7579,11 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Pet-0-3884-1220-27457-47071-040232B259"] = {
-						["role"] = "NONE",
-						["name"] = "McSpidey",
-						["amount"] = 165402,
-						["class"] = "WARRIOR",
+					["Creature-0-3777-1220-27173-113343-00003D0348"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 6035,
 					},
 					["Creature-0-3884-1220-27457-113346-0000333357"] = {
 						["shielding"] = 0,
@@ -7597,10 +7597,10 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3777-1220-27173-100324-00003D030B"] = {
+					["Creature-0-3884-1220-27457-113346-0000332942"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Hati",
+						["name"] = "Beast",
 						["amount"] = 0,
 					},
 					["Creature-0-3881-1220-23254-100324-00003D0546"] = {
@@ -7609,11 +7609,11 @@ SkadaPerCharDB = {
 						["name"] = "Hati",
 						["amount"] = 0,
 					},
-					["Creature-0-3777-1220-27173-113343-00003D0348"] = {
+					["Creature-0-3881-1220-11551-113346-00003D0809"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
-						["amount"] = 6035,
+						["amount"] = 0,
 					},
 					["Pet-0-3881-1220-11551-47071-010232B259"] = {
 						["role"] = "NONE",
@@ -7699,12 +7699,11 @@ SkadaPerCharDB = {
 						["name"] = "Hati",
 						["amount"] = 0,
 					},
-					["Pet-0-3881-1220-23254-47071-010232B259"] = {
-						["role"] = "NONE",
-						["name"] = "McSpidey",
-						["amount"] = 90558,
-						["class"] = "WARRIOR",
+					["Creature-0-3136-1220-1636-100324-00003D0134"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Hati",
+						["amount"] = 0,
 					},
 					["Creature-0-3881-1220-11551-113346-00003D0813"] = {
 						["shielding"] = 0,
@@ -7712,11 +7711,12 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3136-1220-1636-100324-00003D0134"] = {
-						["shielding"] = 0,
+					["Pet-0-3881-1220-23254-47071-010232B259"] = {
 						["role"] = "NONE",
-						["name"] = "Hati",
-						["amount"] = 0,
+						["name"] = "McSpidey",
+						["amount"] = 90558,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
 					},
 					["Creature-0-3135-1220-8586-113347-00003D0A88"] = {
 						["shielding"] = 0,
@@ -7756,9 +7756,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1480395604.455,
 						["amount"] = -55024,
+						["spellid"] = 88163,
 						["srcname"] = "Nightmarish Grizzly",
 						["hp"] = 2252931,
-						["spellid"] = 88163,
 					}, -- [1]
 					{
 						["absorb"] = 0,
@@ -10660,27 +10660,22 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 			},
-			["Moonglow Locust"] = {
+			["Azgalor"] = {
 				["players"] = {
 					["Bracnar"] = {
-						["taken"] = 53466,
+						["taken"] = 3716307,
 						["done"] = 0,
+						["role"] = "NONE",
 						["class"] = "HUNTER",
-						["role"] = "NONE",
-					},
-					["Rexxar"] = {
-						["taken"] = 109979,
-						["done"] = 0,
-						["role"] = "NONE",
 					},
 				},
 				["hdone"] = 0,
-				["hdonespell"] = {
+				["htakenspell"] = {
 				},
-				["taken"] = 163445,
+				["taken"] = 3716307,
 				["done"] = 0,
 				["htaken"] = 0,
-				["htakenspell"] = {
+				["hdonespell"] = {
 				},
 			},
 			["Ghoul"] = {
@@ -10906,33 +10901,23 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["Magistrix Vilessa"] = {
+			["Felskorn Trapper"] = {
 				["players"] = {
 					["Bracnar"] = {
-						["taken"] = 10790083,
-						["done"] = 1098899,
+						["taken"] = 0,
+						["done"] = 737421,
 						["class"] = "HUNTER",
-						["role"] = "NONE",
-					},
-					["Rexxar"] = {
-						["taken"] = 1021964,
-						["done"] = 0,
-						["role"] = "NONE",
-					},
-					["First Arcanist Thalyssra"] = {
-						["taken"] = 25607200,
-						["done"] = 0,
 						["role"] = "NONE",
 					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 37419247,
+				["taken"] = 0,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
-				["done"] = 1098899,
+				["done"] = 737421,
 			},
 			["Nyght-CenarionCircle"] = {
 				["players"] = {
@@ -10980,60 +10965,6 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 			},
-			["Azgalor"] = {
-				["players"] = {
-					["Bracnar"] = {
-						["taken"] = 3716307,
-						["done"] = 0,
-						["role"] = "NONE",
-						["class"] = "HUNTER",
-					},
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 3716307,
-				["done"] = 0,
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
-			},
-			["Felskorn Trapper"] = {
-				["players"] = {
-					["Bracnar"] = {
-						["taken"] = 0,
-						["done"] = 737421,
-						["class"] = "HUNTER",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 737421,
-			},
-			["Frost Wyrm"] = {
-				["players"] = {
-					["Bracnar"] = {
-						["taken"] = 6350007,
-						["done"] = 0,
-						["role"] = "NONE",
-						["class"] = "HUNTER",
-					},
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 6350007,
-				["done"] = 0,
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
-			},
 			["Shimmering Oleander"] = {
 				["players"] = {
 					["Bracnar"] = {
@@ -11074,6 +11005,80 @@ SkadaPerCharDB = {
 				},
 				["htaken"] = 0,
 				["done"] = 33553,
+			},
+			["Frost Wyrm"] = {
+				["players"] = {
+					["Bracnar"] = {
+						["taken"] = 6350007,
+						["done"] = 0,
+						["role"] = "NONE",
+						["class"] = "HUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 6350007,
+				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Duskwatch Orbitist"] = {
+				["players"] = {
+					["First Arcanist Thalyssra"] = {
+						["taken"] = 444861,
+						["done"] = 0,
+						["role"] = "NONE",
+					},
+					["Rexxar"] = {
+						["taken"] = 40208,
+						["done"] = 0,
+						["role"] = "NONE",
+					},
+					["Bracnar"] = {
+						["taken"] = 479247,
+						["done"] = 55758,
+						["class"] = "HUNTER",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 964316,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 55758,
+			},
+			["Magistrix Vilessa"] = {
+				["players"] = {
+					["Bracnar"] = {
+						["taken"] = 10790083,
+						["done"] = 1098899,
+						["class"] = "HUNTER",
+						["role"] = "NONE",
+					},
+					["Rexxar"] = {
+						["taken"] = 1021964,
+						["done"] = 0,
+						["role"] = "NONE",
+					},
+					["First Arcanist Thalyssra"] = {
+						["taken"] = 25607200,
+						["done"] = 0,
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 37419247,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 1098899,
 			},
 			["Manaspine Basilisk"] = {
 				["players"] = {
@@ -11213,23 +11218,28 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 			},
-			["Withered Husk"] = {
+			["Moonglow Locust"] = {
 				["players"] = {
 					["Bracnar"] = {
-						["taken"] = 0,
-						["done"] = 271456,
+						["taken"] = 53466,
+						["done"] = 0,
 						["class"] = "HUNTER",
+						["role"] = "NONE",
+					},
+					["Rexxar"] = {
+						["taken"] = 109979,
+						["done"] = 0,
 						["role"] = "NONE",
 					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 0,
+				["taken"] = 163445,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 271456,
 			},
 			["Stonebinder Agrogg"] = {
 				["players"] = {
@@ -11254,33 +11264,28 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 0,
 			},
-			["Duskwatch Orbitist"] = {
+			["Spell Seeker Construct"] = {
 				["players"] = {
-					["First Arcanist Thalyssra"] = {
-						["taken"] = 444861,
+					["Bracnar"] = {
+						["taken"] = 565472,
 						["done"] = 0,
+						["class"] = "HUNTER",
 						["role"] = "NONE",
 					},
 					["Rexxar"] = {
-						["taken"] = 40208,
+						["taken"] = 27495,
 						["done"] = 0,
-						["role"] = "NONE",
-					},
-					["Bracnar"] = {
-						["taken"] = 479247,
-						["done"] = 55758,
-						["class"] = "HUNTER",
 						["role"] = "NONE",
 					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 964316,
+				["taken"] = 592967,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
-				["done"] = 55758,
+				["done"] = 0,
 			},
 			["Bronwhin-CenarionCircle"] = {
 				["players"] = {
@@ -11354,29 +11359,34 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 0,
 			},
-			["Archimonde"] = {
+			["Felskorn Executioner"] = {
 				["players"] = {
 					["Bracnar"] = {
-						["taken"] = 63555996,
-						["done"] = 115,
-						["role"] = "NONE",
+						["taken"] = 2002965,
+						["done"] = 39302,
 						["class"] = "HUNTER",
+						["role"] = "NONE",
+					},
+					["Rexxar"] = {
+						["taken"] = 114985,
+						["done"] = 0,
+						["role"] = "NONE",
 					},
 				},
 				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 63555996,
-				["done"] = 115,
-				["htaken"] = 0,
 				["hdonespell"] = {
 				},
+				["taken"] = 2117950,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 39302,
 			},
-			["Living Felflame"] = {
+			["Ensorcelled Mana Wraith"] = {
 				["players"] = {
 					["Bracnar"] = {
 						["taken"] = 0,
-						["done"] = 309345,
+						["done"] = 11883,
 						["class"] = "HUNTER",
 						["role"] = "NONE",
 					},
@@ -11388,7 +11398,7 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
-				["done"] = 309345,
+				["done"] = 11883,
 			},
 			["Tattered Silkwing"] = {
 				["players"] = {
@@ -11547,33 +11557,33 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 			},
-			["Feltotem Demonkindre"] = {
+			["Grim Inquisitor"] = {
 				["players"] = {
-					["Leokk"] = {
-						["taken"] = 90126,
+					["Bracnar"] = {
+						["taken"] = 917803,
 						["done"] = 0,
+						["class"] = "HUNTER",
 						["role"] = "NONE",
 					},
 					["Rexxar"] = {
-						["taken"] = 69993,
+						["taken"] = 81492,
 						["done"] = 0,
 						["role"] = "NONE",
 					},
-					["Bracnar"] = {
-						["taken"] = 1318608,
-						["done"] = 45231,
-						["class"] = "HUNTER",
+					["Nar'thalas Nightwatcher"] = {
+						["taken"] = 85307,
+						["done"] = 0,
 						["role"] = "NONE",
 					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 1478727,
+				["taken"] = 1084602,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
-				["done"] = 45231,
+				["done"] = 0,
 			},
 			["Highland Skyraptor"] = {
 				["players"] = {
@@ -11603,34 +11613,11 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 			},
-			["Felskorn Executioner"] = {
-				["players"] = {
-					["Bracnar"] = {
-						["taken"] = 2002965,
-						["done"] = 39302,
-						["class"] = "HUNTER",
-						["role"] = "NONE",
-					},
-					["Rexxar"] = {
-						["taken"] = 114985,
-						["done"] = 0,
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 2117950,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 39302,
-			},
-			["Ensorcelled Mana Wraith"] = {
+			["Withered Husk"] = {
 				["players"] = {
 					["Bracnar"] = {
 						["taken"] = 0,
-						["done"] = 11883,
+						["done"] = 271456,
 						["class"] = "HUNTER",
 						["role"] = "NONE",
 					},
@@ -11642,7 +11629,30 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
-				["done"] = 11883,
+				["done"] = 271456,
+			},
+			["Bitestone Rockbeater"] = {
+				["players"] = {
+					["Bracnar"] = {
+						["taken"] = 7184701,
+						["done"] = 156114,
+						["class"] = "HUNTER",
+						["role"] = "NONE",
+					},
+					["Rexxar"] = {
+						["taken"] = 332243,
+						["done"] = 0,
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 7516944,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 156114,
 			},
 			["Duskwatch Moonscythe"] = {
 				["players"] = {
@@ -11711,62 +11721,29 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["Grim Inquisitor"] = {
+			["Living Felflame"] = {
 				["players"] = {
 					["Bracnar"] = {
-						["taken"] = 917803,
-						["done"] = 0,
+						["taken"] = 0,
+						["done"] = 309345,
 						["class"] = "HUNTER",
-						["role"] = "NONE",
-					},
-					["Rexxar"] = {
-						["taken"] = 81492,
-						["done"] = 0,
-						["role"] = "NONE",
-					},
-					["Nar'thalas Nightwatcher"] = {
-						["taken"] = 85307,
-						["done"] = 0,
 						["role"] = "NONE",
 					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 1084602,
+				["taken"] = 0,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
-				["done"] = 0,
+				["done"] = 309345,
 			},
-			["Bitestone Rockbeater"] = {
+			["Mana Saber"] = {
 				["players"] = {
 					["Bracnar"] = {
-						["taken"] = 7184701,
-						["done"] = 156114,
-						["class"] = "HUNTER",
-						["role"] = "NONE",
-					},
-					["Rexxar"] = {
-						["taken"] = 332243,
-						["done"] = 0,
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 7516944,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 156114,
-			},
-			["Bitestone Snailsman"] = {
-				["players"] = {
-					["Bracnar"] = {
-						["taken"] = 892545,
-						["done"] = 0,
+						["taken"] = 0,
+						["done"] = 98996,
 						["class"] = "HUNTER",
 						["role"] = "NONE",
 					},
@@ -11774,34 +11751,11 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 892545,
+				["taken"] = 0,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
-				["done"] = 0,
-			},
-			["Fel Seeker"] = {
-				["players"] = {
-					["Bracnar"] = {
-						["taken"] = 913750,
-						["done"] = 92800,
-						["class"] = "HUNTER",
-						["role"] = "NONE",
-					},
-					["Rexxar"] = {
-						["taken"] = 152267,
-						["done"] = 0,
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 1066017,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 92800,
+				["done"] = 98996,
 			},
 			["Heavy Brewbrul"] = {
 				["players"] = {
@@ -11869,6 +11823,49 @@ SkadaPerCharDB = {
 				},
 				["htaken"] = 74209,
 				["done"] = 178901,
+			},
+			["Fel Seeker"] = {
+				["players"] = {
+					["Bracnar"] = {
+						["taken"] = 913750,
+						["done"] = 92800,
+						["class"] = "HUNTER",
+						["role"] = "NONE",
+					},
+					["Rexxar"] = {
+						["taken"] = 152267,
+						["done"] = 0,
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 1066017,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 92800,
+			},
+			["Pookie"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Divine Storm"] = {
+						["min"] = 50623,
+						["crits"] = 0,
+						["max"] = 50623,
+						["healing"] = 50623,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+				},
+				["htaken"] = 50623,
+				["hdonespell"] = {
+				},
 			},
 			["Naphtha-CenarionCircle"] = {
 				["players"] = {
@@ -11948,48 +11945,22 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 92351,
 			},
-			["Kittiecat-CenarionCircle"] = {
+			["Archimonde"] = {
 				["players"] = {
-				},
-				["hdone"] = 307242,
-				["hdonespell"] = {
-					["Ysera's Gift"] = {
-						["min"] = 63484,
-						["crits"] = 0,
-						["max"] = 63484,
-						["healing"] = 63484,
-						["overhealing"] = 0,
-						["hits"] = 1,
-					},
-					["Regrowth"] = {
-						["min"] = 0,
-						["crits"] = 3,
-						["max"] = 180709,
-						["healing"] = 243758,
-						["overhealing"] = 559066,
-						["hits"] = 15,
+					["Bracnar"] = {
+						["taken"] = 63555996,
+						["done"] = 115,
+						["role"] = "NONE",
+						["class"] = "HUNTER",
 					},
 				},
-				["taken"] = 0,
-				["done"] = 0,
-				["htaken"] = 307242,
+				["hdone"] = 0,
 				["htakenspell"] = {
-					["Ysera's Gift"] = {
-						["min"] = 63484,
-						["crits"] = 0,
-						["max"] = 63484,
-						["healing"] = 63484,
-						["overhealing"] = 0,
-						["hits"] = 1,
-					},
-					["Regrowth"] = {
-						["min"] = 0,
-						["crits"] = 3,
-						["max"] = 180709,
-						["healing"] = 243758,
-						["overhealing"] = 559066,
-						["hits"] = 15,
-					},
+				},
+				["taken"] = 63555996,
+				["done"] = 115,
+				["htaken"] = 0,
+				["hdonespell"] = {
 				},
 			},
 			["Nar'thalas Nightwatcher"] = {
@@ -12241,24 +12212,48 @@ SkadaPerCharDB = {
 				["htaken"] = 66528,
 				["done"] = 0,
 			},
-			["Pookie"] = {
+			["Kittiecat-CenarionCircle"] = {
 				["players"] = {
 				},
-				["hdone"] = 0,
-				["done"] = 0,
-				["taken"] = 0,
-				["htakenspell"] = {
-					["Divine Storm"] = {
-						["min"] = 50623,
+				["hdone"] = 307242,
+				["hdonespell"] = {
+					["Ysera's Gift"] = {
+						["min"] = 63484,
 						["crits"] = 0,
-						["max"] = 50623,
-						["healing"] = 50623,
+						["max"] = 63484,
+						["healing"] = 63484,
 						["overhealing"] = 0,
 						["hits"] = 1,
 					},
+					["Regrowth"] = {
+						["min"] = 0,
+						["crits"] = 3,
+						["max"] = 180709,
+						["healing"] = 243758,
+						["overhealing"] = 559066,
+						["hits"] = 15,
+					},
 				},
-				["htaken"] = 50623,
-				["hdonespell"] = {
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 307242,
+				["htakenspell"] = {
+					["Ysera's Gift"] = {
+						["min"] = 63484,
+						["crits"] = 0,
+						["max"] = 63484,
+						["healing"] = 63484,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+					["Regrowth"] = {
+						["min"] = 0,
+						["crits"] = 3,
+						["max"] = 180709,
+						["healing"] = 243758,
+						["overhealing"] = 559066,
+						["hits"] = 15,
+					},
 				},
 			},
 			["Nightmare Tendril"] = {
@@ -12402,11 +12397,11 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 0,
 			},
-			["Mana Saber"] = {
+			["Bitestone Snailsman"] = {
 				["players"] = {
 					["Bracnar"] = {
-						["taken"] = 0,
-						["done"] = 98996,
+						["taken"] = 892545,
+						["done"] = 0,
 						["class"] = "HUNTER",
 						["role"] = "NONE",
 					},
@@ -12414,11 +12409,11 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 0,
+				["taken"] = 892545,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
-				["done"] = 98996,
+				["done"] = 0,
 			},
 			["Siegemaster Aedrin"] = {
 				["players"] = {
@@ -12494,28 +12489,33 @@ SkadaPerCharDB = {
 				["htaken"] = 76551,
 				["done"] = 0,
 			},
-			["Spell Seeker Construct"] = {
+			["Feltotem Demonkindre"] = {
 				["players"] = {
-					["Bracnar"] = {
-						["taken"] = 565472,
+					["Leokk"] = {
+						["taken"] = 90126,
 						["done"] = 0,
-						["class"] = "HUNTER",
 						["role"] = "NONE",
 					},
 					["Rexxar"] = {
-						["taken"] = 27495,
+						["taken"] = 69993,
 						["done"] = 0,
+						["role"] = "NONE",
+					},
+					["Bracnar"] = {
+						["taken"] = 1318608,
+						["done"] = 45231,
+						["class"] = "HUNTER",
 						["role"] = "NONE",
 					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 592967,
+				["taken"] = 1478727,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
-				["done"] = 0,
+				["done"] = 45231,
 			},
 			["Duskwatch Spellfury"] = {
 				["players"] = {

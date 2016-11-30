@@ -56,35 +56,35 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
 		{
+			["lastSearch"] = 1480465448,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [1]
+		{
+			["searchMode"] = "crafting",
+			["lastSearch"] = 1480465210,
+			["name"] = "Chaos Crystal/ignorede",
+			["filter"] = "Chaos Crystal/ignorede",
+		}, -- [2]
+		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1480392297,
 			["name"] = "arkhana",
 			["filter"] = "arkhana",
-		}, -- [1]
+		}, -- [3]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1480391395,
 			["name"] = "leylight shard",
 			["filter"] = "leylight shard",
-		}, -- [2]
+		}, -- [4]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1480391387,
 			["name"] = "Leylight Shard/x5",
 			["filter"] = "Leylight Shard/x5",
-		}, -- [3]
-		{
-			["searchMode"] = "crafting",
-			["lastSearch"] = 1480391367,
-			["name"] = "Chaos Crystal/ignorede",
-			["filter"] = "Chaos Crystal/ignorede",
-		}, -- [4]
-		{
-			["lastSearch"] = 1480294386,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
 		}, -- [5]
 		{
 			["searchMode"] = "crafting",
