@@ -1,15 +1,1 @@
 Version: 1
-Frame: TSMMainFrame1
-FrameLevel: 0
-Anchor: CENTER
-X: -21
-Y: 31
-W: 1148
-H: 795
-Frame: AuctionFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 832
-H: 447
