@@ -1,4 +1,4 @@
-local api, MAJ, REV, execQueue, _, T = {}, 1, 12, {}, ...
+local api, MAJ, REV, execQueue, _, T = {}, 1, 13, {}, ...
 if T.ActionBook then return end
 
 local function assert(condition, err, ...)
@@ -288,7 +288,7 @@ core:SetAttribute("UpdateThresholdConditional", [=[-- Kindred:UpdateThresholdCon
 		return owner:CallMethod("throw", 'Syntax: ("UpdateThresholdConditional", "name", value or false)')
 	end
 	local ch = cndDrivers[name] and (cndType[name] ~= "gt" or cndState[name] ~= new)
-	cndType[name], cndState[name] = "gt", cs
+	cndType[name], cndState[name] = "gt", new
 	if ch then
 		owner:Run(RefreshDrivers, name)
 	end
