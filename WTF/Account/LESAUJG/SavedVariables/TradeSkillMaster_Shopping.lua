@@ -39,24 +39,24 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1480984674,
+			["searchMode"] = "normal",
+			["lastSearch"] = 1481078602,
+			["name"] = "daggermaw",
+			["filter"] = "daggermaw",
+		}, -- [1]
+		{
+			["lastSearch"] = 1481078599,
 			["name"] = "Obliterum/exact",
 			["filter"] = "Obliterum/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [1]
+		}, -- [2]
 		{
 			["lastSearch"] = 1480984654,
 			["name"] = "Flask of the Seventh Demon",
 			["filter"] = "Flask of the Seventh Demon",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [2]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1480984562,
-			["name"] = "daggermaw",
-			["filter"] = "daggermaw",
 		}, -- [3]
 		{
 			["lastSearch"] = 1480865496,
