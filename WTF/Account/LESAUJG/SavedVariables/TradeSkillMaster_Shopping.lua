@@ -39,92 +39,92 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @savedSearches"] = {
 		{
+			["lastSearch"] = 1481207307,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [1]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1481165740,
+			["name"] = "infernal brimstone",
+			["filter"] = "infernal brimstone",
+		}, -- [2]
+		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1481078602,
 			["name"] = "daggermaw",
 			["filter"] = "daggermaw",
-		}, -- [1]
+		}, -- [3]
 		{
 			["lastSearch"] = 1481078599,
 			["name"] = "Obliterum/exact",
 			["filter"] = "Obliterum/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [2]
+		}, -- [4]
 		{
 			["lastSearch"] = 1480984654,
 			["name"] = "Flask of the Seventh Demon",
 			["filter"] = "Flask of the Seventh Demon",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [3]
-		{
-			["lastSearch"] = 1480865496,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [4]
+		}, -- [5]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1480518861,
 			["name"] = "koi",
 			["filter"] = "koi",
-		}, -- [5]
+		}, -- [6]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1480465210,
 			["name"] = "Chaos Crystal/ignorede",
 			["filter"] = "Chaos Crystal/ignorede",
-		}, -- [6]
+		}, -- [7]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1480392297,
 			["name"] = "arkhana",
 			["filter"] = "arkhana",
-		}, -- [7]
+		}, -- [8]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1480391395,
 			["name"] = "leylight shard",
 			["filter"] = "leylight shard",
-		}, -- [8]
+		}, -- [9]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1480391387,
 			["name"] = "Leylight Shard/x5",
 			["filter"] = "Leylight Shard/x5",
-		}, -- [9]
+		}, -- [10]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1480293731,
 			["name"] = "Vermilion Onyx/ignorede",
 			["filter"] = "Vermilion Onyx/ignorede",
-		}, -- [10]
+		}, -- [11]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1480270781,
 			["name"] = "Wild Jade/ignorede",
 			["filter"] = "Wild Jade/ignorede",
-		}, -- [11]
+		}, -- [12]
 		{
 			["lastSearch"] = 1479857911,
 			["name"] = "Potion of Deadly Grace",
 			["filter"] = "Potion of Deadly Grace",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [12]
+		}, -- [13]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1479735191,
 			["name"] = "Arkhana",
 			["filter"] = "Arkhana",
-		}, -- [13]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1479425125,
-			["name"] = "infernal brimstone",
-			["filter"] = "infernal brimstone",
 		}, -- [14]
 		{
 			["searchMode"] = "normal",
