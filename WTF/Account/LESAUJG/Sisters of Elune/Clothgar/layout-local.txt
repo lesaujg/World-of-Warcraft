@@ -9,7 +9,7 @@ H: 417
 Frame: AuctionFrame
 FrameLevel: 1
 Anchor: TOPLEFT
-X: 175
-Y: -38
+X: 16
+Y: -116
 W: 832
 H: 447
