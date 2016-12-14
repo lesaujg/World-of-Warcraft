@@ -30,7 +30,7 @@ H: 525
 Frame: TSMCraftingTradeSkillFrame
 FrameLevel: 0
 Anchor: LEFT
-X: 67
+X: 69
 Y: -14
 W: 410
 H: 517
