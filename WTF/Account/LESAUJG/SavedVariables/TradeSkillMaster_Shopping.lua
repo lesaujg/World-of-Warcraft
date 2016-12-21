@@ -52,41 +52,41 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @postUndercut"] = "1c",
 	["g@ @minDeSearchLvl"] = 1,
 	["g@ @maxDeSearchLvl"] = 735,
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1482241668,
+			["lastSearch"] = 1482264034,
+			["name"] = "Obliterum/exact",
+			["filter"] = "Obliterum/exact",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [1]
+		{
+			["lastSearch"] = 1482263858,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [1]
+		}, -- [2]
 		{
 			["lastSearch"] = 1482196074,
 			["name"] = "Flask of the Seventh Demon",
 			["filter"] = "Flask of the Seventh Demon",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [2]
+		}, -- [3]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1481165740,
 			["name"] = "infernal brimstone",
 			["filter"] = "infernal brimstone",
-		}, -- [3]
+		}, -- [4]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1481078602,
 			["name"] = "daggermaw",
 			["filter"] = "daggermaw",
-		}, -- [4]
-		{
-			["lastSearch"] = 1481078599,
-			["name"] = "Obliterum/exact",
-			["filter"] = "Obliterum/exact",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
 		}, -- [5]
 		{
 			["searchMode"] = "normal",
@@ -712,7 +712,7 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "essence of water",
 		}, -- [108]
 	},
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @normalPostPrice"] = "150% dbmarket",
 	["g@ @maxDeSearchPercent"] = 1,
 	["g@ @sniperCustomPrice"] = "0c",
