@@ -1,4 +1,4 @@
-local api, MAJ, REV, _, T = {}, 1, 8, ...
+local api, MAJ, REV, _, T = {}, 1, 9, ...
 if T.ActionBook then return end
 local AB, KR = nil, assert(T.Kindred:compatible(1,8), "A compatible version of Kindred is required.")
 
@@ -24,10 +24,12 @@ end
 
 local namedMacros = {}
 local core, coreEnv = CreateFrame("FRAME", nil, nil, "SecureHandlerBaseTemplate") do
-	local prefix, pn = "", 1
-	while _G["RW!" .. prefix .. "1"] do prefix, pn = pn .. "!", pn + 1 end
+	local bni = 1
 	for i=1,9 do
-		core:WrapScript(CreateFrame("BUTTON", "RW!" .. prefix .. i, core, "SecureActionButtonTemplate"), "OnClick",
+		local bn repeat
+			bn, bni = "RW!" .. bni, bni + 1
+		until GetClickFrame(bn) == nil
+		core:WrapScript(CreateFrame("BUTTON", bn, core, "SecureActionButtonTemplate"), "OnClick",
 		[=[-- Rewire:OnClick_Pre
 			idle[self], numIdle, numActive, ns = nil, numIdle - 1, numActive + 1, ns - 1
 			self:SetAttribute("macrotext", owner:RunAttribute("RunMacro", nil))
@@ -115,9 +117,7 @@ core:SetAttribute("RunMacro", [=[-- Rewire:RunMacro
 			local slash, args = line:match("^(%S+)%s*(.-)%s*$")
 			slash = slash:lower()
 			local meta, meta4 = slash:match("^#((.?.?.?.?).*)")
-			if meta4 == "show" then
-				m.show = args
-			elseif meta == nil or metaCommands[meta] then
+			if meta == nil or metaCommands[meta] then
 				m[#m+1] = newtable(line, slash, args, meta)
 			end
 		end
@@ -242,6 +242,27 @@ local setCommandHinter, getMacroHint, getCommandHint, getCommandHintRaw do
 			return ok
 		end
 	end
+	local iconReplCache = setmetatable({}, {__index=function(t,k)
+		if k then
+			local v = tonumber(k)
+			if not v then
+				if k:match("[/\\]") then
+					v = k
+				elseif k ~= "" then
+					v = "Interface\\Icons\\" .. k
+				end
+			end
+			t[k] = v ~= 0 and v
+			return v
+		end
+	end})
+	local function replaceIcon(nico, ...)
+		if not nico then return ... end
+		nico = iconReplCache[nico]
+		if not nico then return ... end
+		local n, f = ...
+		return n, f, nico, select(4, ...)
+	end
 	function getCommandHintRaw(hslash, ...)
 		local hf = hintFunc[hslash]
 		if not hf then return false end
@@ -294,13 +315,15 @@ local setCommandHinter, getMacroHint, getCommandHint, getCommandHintRaw do
 				local meta, meta4 = slash:match("^#((.?.?.?.?).*)")
 				if meta4 == "show" and args ~= "" then
 					m[-1], m[0] = "/use", args
+				elseif meta == "icon" then
+					m.icon = args
 				elseif meta == nil or meta == "skip" or meta == "important" then
 					m[#m+1], m[#m+2] = slash, args
 				end
 			end
 			cache[macrotext] = m
 		end
-		local bestPri, bias, haveUnknown, n = lowPri, m[-1] and 1000 or 0
+		local bestPri, bias, oico, haveUnknown = lowPri, m[-1] and 1000 or 0, m.icon
 		for i=m[-1] and -1 or 1, #m, 2 do
 			local cmd, args = m[i], m[i+1]
 			if cmd == "#skip" or cmd == "#important" then
@@ -322,10 +345,9 @@ local setCommandHinter, getMacroHint, getCommandHint, getCommandHintRaw do
 			end
 		end
 		if bestPri > lowPri then
-			n, ht[0] = ht[0], bestPri
-			return unpack(ht, minPriority and 0 or 1, n)
-		elseif haveUnknown then
-			return select(minPriority and 1 or 2, false, nil, 0, "Interface/Icons/INV_Misc_QuestionMark", "", 0, 0, 0)
+			return select(minPriority and 1 or 2, bestPri, replaceIcon(oico and KR:EvaluateCmdOptions(oico, modState), unpack(ht, 1, ht[0]) ))
+		elseif haveUnknown or oico then
+			return select(minPriority and 1 or 2, false, replaceIcon(oico and KR:EvaluateCmdOptions(oico, modState), nil, 0, "Interface/Icons/INV_Misc_QuestionMark", "", 0, 0, 0))
 		end
 	end
 	function setCommandHinter(slash, priority, hint)

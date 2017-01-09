@@ -41,11 +41,12 @@ end
 
 local function cooldownFormat(cd)
 	if (cd or 0) == 0 then return "" end
-	local f, n, unit = cd > 10 and "%d%s" or "%.1f", cd, ""
+	local f, n, unit = cd >= 9.95 and "%d%s" or "%.1f", cd, ""
 	if n > 86400 then n, unit = ceil(n/86400), "d"
 	elseif n > 3600 then n, unit = ceil(n/3600), "h"
-	elseif n > 60 then n, unit = ceil(n/60), "m"
-	elseif n > 10 then n = ceil(n) end
+	elseif n > 89 then n, unit = ceil(n/60), "m"
+	elseif n > 60 then f, n, unit = "%d:%02d", n/60, ceil(n % 60)
+	elseif cd >= 9.95 then n = ceil(n) end
 	return f, n, unit
 end
 
@@ -131,7 +132,8 @@ function indicatorAPI:SetCooldown(remain, duration, usable)
 		self.cd:Hide()
 		self.cdText:SetText("")
 	else
-		local expire, usable, cd = GetTime() + remain, not not usable, self.cd
+		local now = GetTime()
+		local expire, usable, cd = now + remain, not not usable, self.cd
 		local d = expire - (cd.expire or 0)
 		if d < -0.05 or d > 0.05 then
 			cd.duration, cd.expire, cd.updateCooldownStep, cd.updateCooldown = duration, expire, duration/1536/self[0]:GetEffectiveScale()
@@ -143,7 +145,8 @@ function indicatorAPI:SetCooldown(remain, duration, usable)
 			for i=5,9 do cd[i]:SetAlpha(usable and 0.25 or 0.85) end
 			cd.spark:SetShown(usable)
 		end
-		if self[usable and "rcTextShown" or "cdTextShown"] then
+		local gcS, gcL = GetSpellCooldown(61304)
+		if (duration ~= gcL or gcS+gcL-now < remain) and self[usable and "rcTextShown" or "cdTextShown"] then
 			self.cdText:SetFormattedText(cooldownFormat(remain))
 		else
 			self.cdText:SetText("")
@@ -262,7 +265,7 @@ local CreateCooldown do
 	function CreateCooldown(parent, size)
 		local cd, scale = cc("SetScale", cc("SetAllPoints", CreateFrame("FRAME", nil, parent)), size/48), size * 87/4032
 		cc("SetScript", cc("SetScript", cc("SetScript", cd, "OnShow", onShow), "OnHide", onHide), "OnUpdate", onUpdate)
-		cd.cdText = cc("SetPoint", cd:CreateFontString(nil, "OVERLAY", "NumberFontNormalHuge"), "CENTER")
+		cd.cdText = cc("SetPoint", cd:CreateFontString(nil, "OVERLAY", "GameFontNormalLargeOutline"), "CENTER")
 		
 		cd.scale, cd.spark = scale, cc("SetSize", cc("SetTexture", cd:CreateTexture(nil, "OVERLAY", nil, 2), gfxBase .. "spark"), 24, 24)
 		local sparkAG = cc("SetLooping", cd.spark:CreateAnimationGroup(), "REPEAT")

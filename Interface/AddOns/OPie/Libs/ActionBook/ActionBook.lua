@@ -85,9 +85,11 @@ end
 
 local actionCallbacks, core, coreEnv = {}, CreateFrame("FRAME", nil, nil, "SecureHandlerBaseTemplate") do
 	core:SetFrameRef("KR", ext.Kindred:compatible(1,0):seclib())
-	local p = 0 while _G["AB!" .. p .. "!0"] do p = p + 1 end
 	for s in ("0123456789QWERTYUIOP"):gmatch(".") do
-		core:WrapScript(CreateFrame("BUTTON", "AB!" .. p .. "!" .. s, core, "SecureActionButtonTemplate"), "OnClick",
+		local bni, bn = 1 repeat
+			bn, bni = "AB!" .. bni .. s, bni + 1
+		until GetClickFrame(bn) == nil
+		core:WrapScript(CreateFrame("BUTTON", bn, core, "SecureActionButtonTemplate"), "OnClick",
 		[[-- AB:OnClick_Pre
 			local t = actInfo[tonumber(button)]
 			busy[self], idle[self] = t

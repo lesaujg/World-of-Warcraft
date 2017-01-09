@@ -135,12 +135,16 @@ do -- EditorUI
 		bg:SetAllPoints(owner)
 		bg:SetParent(owner)
 		bg:Show()
-		local at = action[3]
-		at = at and at[PLAYERNAME]
-		drop.spec = select(2, GetSpecializationInfo(action[2]))
-		drop:set(at == nil and drop.spec or at, true)
+		local at, _, sn = action[3], GetSpecializationInfo(action[2])
+		at, drop.spec = at and at[PLAYERNAME], sn
+		drop:SetShown(not not sn)
+		if sn then
+			drop:set(at == nil and drop.spec or at, true)
+		end
 	end
 	function bg:GetAction(into)
+		--FIXME: These semantics are all wrong: we're abusing the current RK config UI behavior.
+		if not drop:IsShown() then return end
 		local v, at = drop.value, into[3]
 		local cv = at and at[PLAYERNAME]
 		if v == drop.spec then v = nil end

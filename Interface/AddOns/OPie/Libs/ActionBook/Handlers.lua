@@ -6,6 +6,7 @@ local EV = assert(T.Evie)
 local spellFeedback, itemHint, toyHint, mountHint, mountMap
 
 local NormalizeInRange = {[0]=0, 1, [true]=1, [false]=0}
+local _, class = UnitClass("player")
 
 local safequote do
 	local r = {u="\\117", ["{"]="\\123", ["}"]="\\125"}
@@ -15,6 +16,39 @@ local safequote do
 end
 
 do -- mount: mount ID
+	local function summonAction(mountID)
+		return "func", C_MountJournal.SummonByID, mountID
+	end
+	if class == "DRUID" then
+		local clickPrefix do
+			local MOONKIN_FORM = GetSpellInfo(24858)
+			local bni, bn = 0 repeat
+				bn, bni = "AB:M!" .. bni, bni + 1
+			until GetClickFrame(bn) == nil
+			local b = CreateFrame("Button", bn, nil, "SecureActionButtonTemplate")
+			b:SetAttribute("macrotext", "/cancelform [nocombat]")
+			b:SetScript("PreClick", function()
+				local sf = GetShapeshiftForm()
+				local _, n = GetShapeshiftFormInfo(sf ~= 0 and sf or -1)
+				if not (InCombatLockdown() or n == MOONKIN_FORM) then
+					b:SetAttribute("type", "macro")
+				end
+			end)
+			b:SetScript("PostClick", function(_, btn)
+				if not InCombatLockdown() then
+					b:SetAttribute("type", nil)
+				end
+				btn = tonumber(btn)
+				if btn then
+					C_MountJournal.SummonByID(btn)
+				end
+			end)
+			clickPrefix = SLASH_CLICK1 .. " " .. bn .. " "
+		end
+		function summonAction(mountID)
+			return "attribute", "type","macro", "macrotext",clickPrefix .. mountID
+		end
+	end
 	local trustHaveFlag, GetMountInfo = {[793]=1, [794]=1, [795]=1, [796]=1}, C_MountJournal.GetMountInfoByID
 	local function mountSync()
 		local changed, myFactionId = false, UnitFactionGroup("player") == "Horde" and 0 or 1
@@ -50,7 +84,7 @@ do -- mount: mount ID
 		if type(id) == "number" and not actionMap[id] then
 			local _, sid = GetMountInfo(id)
 			if mountMap[sid] then
-				actionMap[id] = AB:CreateActionSlot(mountHint, id, "func", C_MountJournal.SummonByID,id)
+				actionMap[id] = AB:CreateActionSlot(mountHint, id, summonAction(id))
 			end
 		end
 		return actionMap[id]
@@ -62,7 +96,7 @@ do -- mount: mount ID
 		local rname, _, ricon = GetSpellInfo(150544)
 		actionMap[0] = AB:CreateActionSlot(function()
 			return HasFullControl() and not IsIndoors(), IsMounted() and 1 or 0, ricon, rname, 0, 0, 0, GameTooltip.SetMountBySpellID, 150544
-		end, nil, "func", C_MountJournal.SummonByID, 0)
+		end, nil, summonAction(0))
 		RW:SetCastEscapeAction(GetSpellInfo(150544), actionMap[0])
 	end
 	EV.MOUNT_JOURNAL_USABILITY_CHANGED, EV.PLAYER_ENTERING_WORLD, EV.COMPANION_LEARNED = mountSync, mountSync, mountSync
@@ -120,7 +154,7 @@ do -- spell: spell ID + mount spell ID
 			action = (r0 and r1 ~= r0 and FindSpellBookSlotBySpellID(id)) and (s0 .. "(" .. r0 .. ")") or s0
 		end
 		if action and not actionMap[action] then
-			spellMap[action], actionMap[action] = id, AB:CreateActionSlot(spellHint, action, "attribute", "type","spell", "spell",action)
+			spellMap[action], actionMap[action] = id, AB:CreateActionSlot(spellHint, action, "attribute", "type","spell", "spell",action, "checkselfcast",true, "checkfocuscast",true)
 			if type(action) == "string" then
 				spellMap[action:lower()] = id
 			end
@@ -221,7 +255,7 @@ do -- item: items ID/inventory slot
 		if not forceShow and onlyEquipped and not ((id > lastSlot and IsEquippedItem(name)) or (id <= lastSlot and GetInventoryItemLink("player", id))) then return end
 		if not forceShow and GetItemCount(name) == 0 then return end
 		if not actionMap[name] then
-			actionMap[name], itemIdMap[name] = AB:CreateActionSlot(itemHint, name, "attribute", "type","item", "item",name), id
+			actionMap[name], itemIdMap[name] = AB:CreateActionSlot(itemHint, name, "attribute", "type","item", "item",name, "checkselfcast",true, "checkfocuscast",true), id
 		end
 		return actionMap[name]
 	end, function(id) return "Item", GetItemInfo(id), GetItemIcon(id), nil, GameTooltip.SetItemByID, tonumber(id) end, {"byName", "forceShow", "onlyEquipped"})
@@ -587,10 +621,9 @@ do -- extrabutton
 	end)
 end
 do -- petspell: spell ID
-	local actionID, _, class = {}, UnitClass("player")
-	local actionInfo = { stay={"Interface\\Icons\\Spell_Nature_TimeStop", "PET_ACTION_WAIT"}, move={"Interface\\Icons\\Ability_Hunter_Pet_Goto", "PET_ACTION_MOVE_TO", 1}, follow={"Interface\\Icons\\Ability_Tracking", "PET_ACTION_FOLLOW"}, attack={"Interface\\Icons\\Ability_GhoulFrenzy", "PET_ACTION_ATTACK"},
+	local actionInfo, actionID = { stay={"Interface\\Icons\\Spell_Nature_TimeStop", "PET_ACTION_WAIT"}, move={"Interface\\Icons\\Ability_Hunter_Pet_Goto", "PET_ACTION_MOVE_TO", 1}, follow={"Interface\\Icons\\Ability_Tracking", "PET_ACTION_FOLLOW"}, attack={"Interface\\Icons\\Ability_GhoulFrenzy", "PET_ACTION_ATTACK"},
 		defend={"Interface\\Icons\\Ability_Defend", "PET_MODE_DEFENSIVE"}, assist={"Interface\\Icons\\Ability_Hunter_Pet_Assist", "PET_MODE_ASSIST"}, passive={"Interface\\Icons\\Ability_Seal", "PET_MODE_PASSIVE"},
-		dismiss={class == "WARLOCK" and "Interface\\Icons\\spell_shadow_sacrificialshield" or "Interface\\Icons\\spell_nature_spiritwolf"}}
+		dismiss={class == "WARLOCK" and "Interface\\Icons\\spell_shadow_sacrificialshield" or "Interface\\Icons\\spell_nature_spiritwolf"}}, {}
 	local function petTip(self, slot)
 		return self:SetSpellBookItem(slot, "pet")
 	end

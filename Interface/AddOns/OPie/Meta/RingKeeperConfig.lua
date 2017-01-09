@@ -1112,6 +1112,9 @@ function api.selectSlice(offset, select)
 	if not desc then return ringDetail:Show() end
 	return api.updateSliceDisplay(id, desc)
 end
+local function socall(f, s, ...)
+	return true, f[s](f, ...)
+end
 function api.updateSliceDisplay(id, desc)
 	local stype, sname, sicon, icoext = getSliceInfo(desc)
 	if sname ~= "" then
@@ -1126,7 +1129,9 @@ function api.updateSliceDisplay(id, desc)
 	sliceDetail.skipSpecs:SetValue(skipSpecs)
 	sliceDetail.showConditional:SetText(showConditional or desc.show or "")
 	sliceDetail.caption:SetText(desc.caption or "")
-	sliceDetail.editorContainer:SetEditor(T.TEMP_AB_EDITORS and T.TEMP_AB_EDITORS[desc[1]], desc)
+	if not securecall(socall, sliceDetail.editorContainer, "SetEditor", T.TEMP_AB_EDITORS and T.TEMP_AB_EDITORS[desc[1]], desc) then
+		securecall(socall, sliceDetail.editorContainer, "SetEditor", nil)
+	end
 	api.updateOptionBoxes(desc)
 	sliceDetail:Show()
 	currentSliceIndex = id

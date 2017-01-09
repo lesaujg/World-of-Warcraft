@@ -43,7 +43,7 @@ local bindLines = {} do
 		bindLines[i], bind.label = bind, label
 	end
 end
-local btnUnbind = config.createUnbindButton(frame)
+local btnUnbind = config.createUnbindButton(bindZone)
 	btnUnbind:SetPoint("TOP", bindLines[#bindLines], "BOTTOM", 0, -3)
 local btnUp = CreateFrame("Button", nil, frame, "UIPanelScrollUpButtonTemplate")
 	btnUp:SetPoint("RIGHT", btnUnbind, "LEFT", -10)
