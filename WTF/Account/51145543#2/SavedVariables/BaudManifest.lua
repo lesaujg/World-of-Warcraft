@@ -9,10 +9,10 @@ BaudManifestData = {
 		["HideEquipped"] = true,
 		["ReplaceBlizBags"] = true,
 		["HideBlizInv"] = true,
-		["Combine"] = true,
+		["ItemNameFirst"] = false,
 		["AutoShowInv"] = true,
 		["HideBlizBank"] = true,
-		["ItemNameFirst"] = false,
+		["Combine"] = true,
 	},
 	["Sisters of Elune"] = {
 		["Torinara"] = {
@@ -395,9 +395,9 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [1]
 					{
-						["Equipped"] = 1,
 						["Count"] = 1,
 						["ItemString"] = "item:23389::::::::2:262::::::",
+						["Equipped"] = 1,
 					}, -- [2]
 					{
 						["Count"] = 3,

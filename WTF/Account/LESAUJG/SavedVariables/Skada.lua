@@ -13,21 +13,21 @@ SkadaDB = {
 		["Orig - Sisters of Elune"] = "Default",
 		["Mandelbrot - Sisters of Elune"] = "Default",
 		["Leanara - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
-		["Belrath - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
-		["Torinar - Sisters of Elune"] = "Default",
 		["Clothgar - Sisters of Elune"] = "Default",
+		["Belrath - Sisters of Elune"] = "Default",
+		["Torinar - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["windows"] = {
 				{
-					["y"] = -109.5,
-					["point"] = "LEFT",
+					["y"] = 180.499816894531,
+					["point"] = "BOTTOMLEFT",
 					["mode"] = "Damage",
-					["x"] = 23.9963760375977,
+					["x"] = 13.99635887146,
 				}, -- [1]
 			},
 			["icon"] = {

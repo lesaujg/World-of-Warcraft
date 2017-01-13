@@ -27,6 +27,13 @@ X: 0
 Y: 0
 W: 800
 H: 525
+Frame: SkadaBarWindowSkada
+FrameLevel: 5
+Anchor: BOTTOMLEFT
+X: 14
+Y: 180
+W: 240
+H: 200
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: CENTER
