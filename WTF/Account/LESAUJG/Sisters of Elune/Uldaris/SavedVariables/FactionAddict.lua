@@ -23,8 +23,17 @@ FactionAddictConfig = {
 	["CB_OPTION_AUTOBAR"] = true,
 }
 FactionAddictLogVersion = 1
-FactionAddictLogData = nil
-FactionAddictLogEntries = nil
+FactionAddictLogData = {
+	{
+		["date"] = "Saturday 1/14",
+		["rows"] = 1,
+	}, -- [1]
+}
+FactionAddictLogEntries = {
+	{
+		["The Ashen Verdict"] = 3000,
+	}, -- [1]
+}
 FactionAddictConfigIsInactive = {
 	[1737] = false,
 	[1228] = false,
