@@ -1,0 +1,12 @@
+tag 38dba1d36888f1f9fd32f1b95fc33a3bbbb31f22 7.1.3
+Author:	Mike "Xodiv" Battersby <mib@post.com>
+Date:	Sat Jan 14 21:24:33 2017 +1100
+
+Uses C_MountJournal to summon journal mounts, probably has bugs.
+
+commit 4780e3e87ed889921a8bef6baf451b4758ce74b3
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Sat Jan 14 19:09:22 2017 +1100
+
+    Remove Broken71MountSpells test
+
