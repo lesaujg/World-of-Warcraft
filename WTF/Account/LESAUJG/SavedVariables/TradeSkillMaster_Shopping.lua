@@ -1,8 +1,22 @@
 
 TradeSkillMaster_ShoppingDB = {
-	["g@ @sniperCustomPrice"] = "0c",
-	["g@ @maxDeSearchPercent"] = 1,
-	["g@ @postUndercut"] = "1c",
+	["_currentProfile"] = {
+		["Sanjuri - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
+		["Guldahka - Turalyon"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Orig - Sisters of Elune"] = "Default",
+		["Mandelbrot - Sisters of Elune"] = "Default",
+		["Leanara - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+		["Belrath - Sisters of Elune"] = "Default",
+		["Torinar - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
+	},
+	["_version"] = 3,
+	["g@ @sniperVendorPrice"] = true,
 	["g@ @postBidPercent"] = 0.95,
 	["_scopeKeys"] = {
 		["char"] = {
@@ -20,33 +34,36 @@ TradeSkillMaster_ShoppingDB = {
 			"Sanjuri - Sisters of Elune", -- [12]
 			"Torinar - Sisters of Elune", -- [13]
 		},
-		["realm"] = {
-			"Sisters of Elune", -- [1]
-			"Turalyon", -- [2]
+		["factionrealm"] = {
+			"Alliance - Sisters of Elune", -- [1]
+			"Horde - Turalyon", -- [2]
 		},
 		["profile"] = {
 			"Default", -- [1]
 		},
-		["factionrealm"] = {
-			"Alliance - Sisters of Elune", -- [1]
-			"Horde - Turalyon", -- [2]
+		["realm"] = {
+			"Sisters of Elune", -- [1]
+			"Turalyon", -- [2]
 		},
 	},
 	["g@ @helpPlatesShown"] = {
 		["auction"] = true,
 	},
-	["g@ @sniperVendorPrice"] = true,
+	["g@ @postUndercut"] = "1c",
+	["g@ @minDeSearchLvl"] = 1,
+	["g@ @maxDeSearchLvl"] = 735,
 	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1484561324,
-			["name"] = "Chaos Crystal/exact",
-			["filter"] = "Chaos Crystal/exact",
+			["lastSearch"] = 1484627523,
+			["name"] = "Obliterum/exact",
+			["filter"] = "Obliterum/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [1]
 		{
-			["lastSearch"] = 1484508353,
+			["lastSearch"] = 1484626411,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
@@ -54,77 +71,77 @@ TradeSkillMaster_ShoppingDB = {
 		}, -- [2]
 		{
 			["searchMode"] = "crafting",
-			["lastSearch"] = 1484271761,
+			["lastSearch"] = 1484626173,
+			["name"] = "leylight shard",
+			["filter"] = "leylight shard",
+		}, -- [3]
+		{
+			["searchMode"] = "crafting",
+			["lastSearch"] = 1484626164,
 			["name"] = "Leylight Shard/x5",
 			["filter"] = "Leylight Shard/x5",
-		}, -- [3]
+		}, -- [4]
+		{
+			["lastSearch"] = 1484561324,
+			["name"] = "Chaos Crystal/exact",
+			["filter"] = "Chaos Crystal/exact",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [5]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1484271609,
 			["name"] = "Essence of Water/exact",
 			["filter"] = "Essence of Water/exact",
-		}, -- [4]
+		}, -- [6]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1484271601,
 			["name"] = "Dream Shard/exact",
 			["filter"] = "Dream Shard/exact",
-		}, -- [5]
+		}, -- [7]
 		{
 			["lastSearch"] = 1484003721,
 			["name"] = "Flask of the Seventh Demon",
 			["filter"] = "Flask of the Seventh Demon",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [6]
+		}, -- [8]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1483407952,
 			["name"] = "eternal water",
 			["filter"] = "eternal water",
-		}, -- [7]
-		{
-			["lastSearch"] = 1482264034,
-			["name"] = "Obliterum/exact",
-			["filter"] = "Obliterum/exact",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [8]
+		}, -- [9]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1481165740,
 			["name"] = "infernal brimstone",
 			["filter"] = "infernal brimstone",
-		}, -- [9]
+		}, -- [10]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1481078602,
 			["name"] = "daggermaw",
 			["filter"] = "daggermaw",
-		}, -- [10]
+		}, -- [11]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1480518861,
 			["name"] = "koi",
 			["filter"] = "koi",
-		}, -- [11]
+		}, -- [12]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1480465210,
 			["name"] = "Chaos Crystal/ignorede",
 			["filter"] = "Chaos Crystal/ignorede",
-		}, -- [12]
+		}, -- [13]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1480392297,
 			["name"] = "arkhana",
 			["filter"] = "arkhana",
-		}, -- [13]
-		{
-			["searchMode"] = "crafting",
-			["lastSearch"] = 1480391395,
-			["name"] = "leylight shard",
-			["filter"] = "leylight shard",
 		}, -- [14]
 		{
 			["searchMode"] = "crafting",
@@ -696,24 +713,7 @@ TradeSkillMaster_ShoppingDB = {
 		}, -- [108]
 	},
 	["_hash"] = 1861581,
-	["g@ @marketValueSource"] = "dbmarket",
-	["g@ @maxDeSearchLvl"] = 735,
-	["g@ @minDeSearchLvl"] = 1,
 	["g@ @normalPostPrice"] = "150% dbmarket",
-	["_version"] = 3,
-	["_currentProfile"] = {
-		["Sanjuri - Sisters of Elune"] = "Default",
-		["Galinar - Sisters of Elune"] = "Default",
-		["Guldahka - Turalyon"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Orig - Sisters of Elune"] = "Default",
-		["Mandelbrot - Sisters of Elune"] = "Default",
-		["Leanara - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
-		["Belrath - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
-		["Torinar - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-	},
+	["g@ @maxDeSearchPercent"] = 1,
+	["g@ @sniperCustomPrice"] = "0c",
 }
