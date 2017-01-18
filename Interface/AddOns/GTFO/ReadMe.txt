@@ -1176,3 +1176,9 @@ Change Log:
 * Added Legion spells for The Broken Isles (world)
 * Added Legion spells for Black Rook Hold
 
+4.42
+* Added support for ignoring the application event on debuffs but warning on damage ticks
+* Added Legion spells for The Broken Isles (world)
+* Added Legion spells for Trial of Valor
+* Added Legion spells for Nighthold
+

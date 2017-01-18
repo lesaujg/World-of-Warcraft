@@ -1181,16 +1181,30 @@ GTFO.SpellID["203110"] = {
 -- * Nighthold *
 -- *************
 
-GTFO.SpellID["218155"] = {
-  --desc = "Solar Collapse (High Botanist Tel'arn)";
-  sound = 3;
-};
+-- TODO: Shockwave (Skorpyron) -- Avoidable by tanks too?
+-- TODO: Volatile Resonance (Skorpyron)
+-- TODO: Arcanoslash (Skorpyron) -- non-tank fail
+-- TODO: Focused Blast (Skorpyron)
+-- TODO: Burst of Time (Chronomatic Anomaly)
+-- TODO: Arcane Slash (Trilliax) -- non-tank fail
+-- TODO: Toxic Slice (Trilliax) -- impact, not DoT
+-- TODO: Annihilation (Trilliax) -- Avoidable or raid fail?
+-- TODO: Seeker Swarm (Tichondrius) -- When not debuffed with Carrion Plague
+-- TODO: Burning Soul (Tichondrius) -- FF Fail
+-- TODO: Fel Beam (Krosus)
+-- TODO: Orb of Destruction (Krosus) -- damage distance fail
+-- TODO: Felburst (Krosus)
+-- TODO: Controlled Chaos (High Botanist Tel'arn) -- inside ring damage only
+-- TODO: Toxic Spores (High Botanist Tel'arn)
+-- TODO: Frozen Solid (Star Augur Etaeus)
+-- TODO: Shatter (Star Augur Etaeus) -- FF fail
+-- TODO: Fel Ember (Star Augur Etaeus)
+-- TODO: World-Devouring Force (Star Augur Etaeus)
+-- TODO: Delphuric Beam (Grand Magistrix Elisande)
+-- TODO: Epocheric Orb (Grand Magistrix Elisande) -- when debuffed with Epocheric Vulnerability
+-- TODO: Gaze of Vethriz (Gul'dan)
+-- TODO: Storm of the Destroyer (Gul'dan) -- x4
 
-GTFO.SpellID["219235"] = {
-  --desc = "Toxic Spores (Naturalist Tel'arn)";
-  applicationOnly = true;
-  sound = 3;
-};
 
 GTFO.SpellID["224510"] = {
   --desc = "Crackling Slice (Duskwatch Battle-Magus)";
@@ -1201,6 +1215,17 @@ GTFO.SpellID["224510"] = {
 
 GTFO.SpellID["213328"] = {
   --desc = "Detonate: Arcane Orb (Spellblade Aluriel)";
+  sound = 3;
+};
+
+GTFO.SpellID["218155"] = {
+  --desc = "Solar Collapse (High Botanist Tel'arn)";
+  sound = 3;
+};
+
+GTFO.SpellID["219235"] = {
+  --desc = "Toxic Spores (Naturalist Tel'arn)";
+  applicationOnly = true;
   sound = 3;
 };
 
@@ -1223,6 +1248,11 @@ GTFO.SpellID["227781"] = {
 
 GTFO.SpellID["227712"] = {
   --desc = "Spear of Light (Odyn)";
+  sound = 3;
+};
+
+GTFO.SpellID["227811"] = {
+  --desc = "Raging Tempest (Odyn)";
   sound = 3;
 };
 
