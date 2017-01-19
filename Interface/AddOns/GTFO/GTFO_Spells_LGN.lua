@@ -291,6 +291,12 @@ GTFO.SpellID["222405"] = {
   ignoreApplication = true;
 };
 
+GTFO.SpellID["219032"] = {
+  --desc = "Arcane Breath (Senegos Drawing)";
+  sound = 1;
+  tankSound = 2;
+};
+
 -- **********
 -- * Mardum *
 -- **********
@@ -927,7 +933,6 @@ GTFO.SpellID["211634"] = {
 -- *************
 
 -- TODO: Volatile Fragment (Skorpyron)
--- TODO: Temporal Orb (Chronomatic Anomaly)
 -- TODO: Sterilize (Trilliax) -- FF Damage
 -- TODO: Arcing Bonds (Trilliax) -- FF Damage
 -- TODO: Fel Stomp (Spellblade Aluriel)
@@ -949,8 +954,46 @@ GTFO.SpellID["204744"] = {
   sound = 1;
 };
 
+GTFO.SpellID["211659"] = {
+  --desc = "Arcane Tether (Skorpyron)";
+  sound = 1;
+  tankSound = 0;
+  test = true;
+};
+
+GTFO.SpellID["230488"] = {
+  --desc = "Rumbling Ground (Torm the Brute)";
+  sound = 1;
+};
+
+GTFO.SpellID["205707"] = {
+  --desc = "Temporal Orb (Chronomatic Anomaly)";
+  sound = 1;
+};
+
+GTFO.SpellID["226205"] = {
+  --desc = "Slime Pool (Sludgerax)";
+  sound = 1;
+};
+
+GTFO.SpellID["223718"] = {
+  --desc = "Bursting Slime (Sludgerax)";
+  sound = 1;
+  test = true;
+};
+
 GTFO.SpellID["206488"] = {
 	--desc = "Arcane Seepage (Trilliax)";
+  sound = 1;
+};
+
+GTFO.SpellID["224572"] = {
+  --desc = "Disrupting Energy (Nighthold Protector)";
+  sound = 1;
+};
+
+GTFO.SpellID["225390"] = {
+  --desc = "Stellar Dust";
   sound = 1;
 };
 

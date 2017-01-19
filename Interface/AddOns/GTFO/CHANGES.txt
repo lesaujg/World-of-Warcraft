@@ -1,28 +1,15 @@
 ------------------------------------------------------------------------
-r295 | Zensunim | 2017-01-17 14:26:32 -0600 (Tue, 17 Jan 2017) | 5 lines
+r297 | Zensunim | 2017-01-18 02:02:01 -0600 (Wed, 18 Jan 2017) | 3 lines
 Changed paths:
    M /trunk/GTFO.lua
    M /trunk/GTFO.toc
-   M /trunk/GTFO_FF_LGN.lua
    M /trunk/GTFO_Fail_LGN.lua
-   M /trunk/GTFO_Spells_Generic.lua
+   M /trunk/GTFO_Ignore.lua
    M /trunk/GTFO_Spells_LGN.lua
    M /trunk/ReadMe.txt
 
-4.42
-* Added support for ignoring the application event on debuffs but warning on damage ticks
+4.42.1
 * Added Legion spells for The Broken Isles (world)
-* Added Legion spells for Trial of Valor
 * Added Legion spells for Nighthold
-------------------------------------------------------------------------
-r294 | Zensunim | 2017-01-01 00:53:27 -0600 (Sun, 01 Jan 2017) | 2 lines
-Changed paths:
-   M /trunk/GTFO.lua
-   M /trunk/GTFO.toc
-   M /trunk/GTFO_Fail_LGN.lua
-   M /trunk/ReadMe.txt
-
-Added Legion spells for Trial of Valor
-
 ------------------------------------------------------------------------
 

@@ -1181,11 +1181,7 @@ GTFO.SpellID["203110"] = {
 -- * Nighthold *
 -- *************
 
--- TODO: Shockwave (Skorpyron) -- Avoidable by tanks too?
 -- TODO: Volatile Resonance (Skorpyron)
--- TODO: Arcanoslash (Skorpyron) -- non-tank fail
--- TODO: Focused Blast (Skorpyron)
--- TODO: Burst of Time (Chronomatic Anomaly)
 -- TODO: Arcane Slash (Trilliax) -- non-tank fail
 -- TODO: Toxic Slice (Trilliax) -- impact, not DoT
 -- TODO: Annihilation (Trilliax) -- Avoidable or raid fail?
@@ -1206,16 +1202,37 @@ GTFO.SpellID["203110"] = {
 -- TODO: Storm of the Destroyer (Gul'dan) -- x4
 
 
+GTFO.SpellID["204483"] = {
+  --desc = "Focused Blast (Skorpyron)";
+  sound = 3;
+};
+
+GTFO.SpellID["204275"] = {
+  --desc = "Arcanoslash (Skorpyron)";
+  sound = 3;
+  tankSound = 0;
+};
+
+GTFO.SpellID["230438"] = {
+  --desc = "Devastating Strike (Torm the Brute)";
+  sound = 3;
+};
+
+GTFO.SpellID["221164"] = {
+  --desc = "Fulminate (Fulminant)";
+  sound = 3;
+};
+
+GTFO.SpellID["206612"] = {
+  --desc = "Burst of Time (Chronomatic Anomaly)";
+  sound = 3;
+};
+
 GTFO.SpellID["224510"] = {
   --desc = "Crackling Slice (Duskwatch Battle-Magus)";
   sound = 3;
   tankSound = 0;
   test = true;
-};
-
-GTFO.SpellID["213328"] = {
-  --desc = "Detonate: Arcane Orb (Spellblade Aluriel)";
-  sound = 3;
 };
 
 GTFO.SpellID["218155"] = {
