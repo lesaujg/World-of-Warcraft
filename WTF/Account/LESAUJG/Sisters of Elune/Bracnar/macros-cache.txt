@@ -2,11 +2,10 @@ VER 3 010000000000005B "_Bestial Wrath" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Bestial Wrath
 /cast Aspect of the Wild
+/cast Titan's Thunder
 /use Tabard of the Protector
 /use 13
 /use 14
-/use [nogroup:raid] [mod] 12
-/castsequence reset=combat/10 Bestial Wrath, null
 END
 VER 3 010000000000005E "_Cobra Shot" "INV_MISC_QUESTIONMARK"
 #showtooltip

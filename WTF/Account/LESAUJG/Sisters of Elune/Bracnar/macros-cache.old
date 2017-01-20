@@ -26,8 +26,9 @@ VER 3 010000000000005C "_Kill Command" "INV_MISC_QUESTIONMARK"
 /cast Kill Command
 END
 VER 3 0100000000000060 "_Kite" "132128"
-/use 15
-/use Rocfeather Skyhorn Kite
+/use [button:1] 15
+/use [button:1] Rocfeather Skyhorn Kite
+/use [button:2] Brulfist Idol
 END
 VER 3 010000000000005D "_Multi-Shot" "INV_MISC_QUESTIONMARK"
 /target [noexists] pettarget
