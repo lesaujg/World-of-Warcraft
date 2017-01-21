@@ -1,0 +1,19 @@
+------------------------------------------------------------------------
+r144 | lomiedo | 2016-10-28 02:26:46 +0000 (Fri, 28 Oct 2016) | 2 lines
+Changed paths:
+   A /tags/v3.0.3 (from /trunk:143)
+
+Updates to WoW 7.1
+Adds collection of saved outfits
+------------------------------------------------------------------------
+r143 | lomiedo | 2016-10-28 02:00:20 +0000 (Fri, 28 Oct 2016) | 2 lines
+Changed paths:
+   M /trunk/DB.lua
+   M /trunk/Localization.enUS.lua
+   M /trunk/SetCollector.toc
+   M /trunk/SetCollector.xml
+   M /trunk/UI.lua
+
+Adds Outfits Collection showing the outfits saved at the Trasmogrifier
+Updates to 7.1 compatibility
+------------------------------------------------------------------------

@@ -6,40 +6,6 @@ TukuiData = {
 			},
 			["InstallDone"] = true,
 			["HideBar2"] = false,
-			["Texts"] = {
-				["Durability"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Memory"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Power"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					8, -- [2]
-				},
-			},
 			["Chat"] = {
 				["Frame1"] = {
 					"BOTTOMLEFT", -- [1]
@@ -73,11 +39,11 @@ TukuiData = {
 					370, -- [5]
 					111, -- [6]
 				},
-				["Frame4"] = {
-					"BOTTOMRIGHT", -- [1]
-					"BOTTOMRIGHT", -- [2]
-					-47, -- [3]
-					45, -- [4]
+				["Frame10"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					100, -- [3]
+					100, -- [4]
 					370, -- [5]
 					111, -- [6]
 				},
@@ -113,21 +79,19 @@ TukuiData = {
 					370, -- [5]
 					111, -- [6]
 				},
-				["Frame10"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					100, -- [3]
-					100, -- [4]
+				["Frame4"] = {
+					"BOTTOMRIGHT", -- [1]
+					"BOTTOMRIGHT", -- [2]
+					-47, -- [3]
+					45, -- [4]
 					370, -- [5]
 					111, -- [6]
 				},
 			},
-		},
-		["Magnara"] = {
 			["Texts"] = {
-				["Friends"] = {
+				["Durability"] = {
 					true, -- [1]
-					3, -- [2]
+					2, -- [2]
 				},
 				["Memory"] = {
 					true, -- [1]
@@ -141,23 +105,26 @@ TukuiData = {
 					true, -- [1]
 					6, -- [2]
 				},
-				["FPS & MS"] = {
+				["Time"] = {
 					true, -- [1]
-					4, -- [2]
-				},
-				["Durability"] = {
-					true, -- [1]
-					2, -- [2]
+					8, -- [2]
 				},
 				["Power"] = {
 					true, -- [1]
 					7, -- [2]
 				},
-				["Time"] = {
+				["Friends"] = {
 					true, -- [1]
-					8, -- [2]
+					3, -- [2]
+				},
+				["FPS & MS"] = {
+					true, -- [1]
+					4, -- [2]
 				},
 			},
+		},
+		["Magnara"] = {
+			["InstallDone"] = true,
 			["Chat"] = {
 				["Frame1"] = {
 					"BOTTOMLEFT", -- [1]
@@ -191,11 +158,11 @@ TukuiData = {
 					370, -- [5]
 					111, -- [6]
 				},
-				["Frame4"] = {
-					"BOTTOMRIGHT", -- [1]
-					"BOTTOMRIGHT", -- [2]
-					-46.9999961853027, -- [3]
-					45, -- [4]
+				["Frame10"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
 					370, -- [5]
 					111, -- [6]
 				},
@@ -231,18 +198,51 @@ TukuiData = {
 					370, -- [5]
 					111, -- [6]
 				},
-				["Frame10"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
+				["Frame4"] = {
+					"BOTTOMRIGHT", -- [1]
+					"BOTTOMRIGHT", -- [2]
+					-46.9999961853027, -- [3]
+					45, -- [4]
 					370, -- [5]
 					111, -- [6]
 				},
 			},
 			["Move"] = {
 			},
-			["InstallDone"] = true,
+			["Texts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Memory"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					8, -- [2]
+				},
+				["Power"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["Durability"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["FPS & MS"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+			},
 		},
 	},
 	["Gold"] = {
