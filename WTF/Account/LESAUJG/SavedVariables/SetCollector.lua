@@ -1,5 +1,14 @@
 
 SetCollectorDB = {
+	["profileKeys"] = {
+		["Leanara - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
+		["Torinar - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Orig - Sisters of Elune"] = "Default",
+	},
 	["global"] = {
 		["collections"] = {
 			{
@@ -59330,14 +59339,5 @@ SetCollectorDB = {
 				},
 			},
 		},
-	},
-	["profileKeys"] = {
-		["Leanara - Sisters of Elune"] = "Default",
-		["Galinar - Sisters of Elune"] = "Default",
-		["Orig - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-		["Torinar - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
 	},
 }
