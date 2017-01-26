@@ -37,6 +37,10 @@ SkadaDB = {
 				["mode"] = "Healing",
 			},
 			["hidesolo"] = true,
+			["versions"] = {
+				["1.6.4"] = true,
+				["1.6.3"] = true,
+			},
 			["hidedisables"] = false,
 			["reset"] = {
 				["join"] = 2,
