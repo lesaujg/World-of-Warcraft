@@ -4,6 +4,8 @@ LM_OptionsDB = {
 	},
 	["excludedspells"] = {
 	},
+	["flagoverrides"] = {
+	},
 	["excludeNewMounts"] = {
 		false, -- [1]
 	},
@@ -222,9 +224,9 @@ LM_OptionsDB = {
 		[171844] = true,
 		[34898] = true,
 		[170347] = true,
-		[88748] = true,
-		[42777] = true,
 		[43927] = true,
+		[42777] = true,
+		[88748] = true,
 		[23225] = true,
 		[32235] = true,
 		[126507] = true,
@@ -269,8 +271,6 @@ LM_OptionsDB = {
 		[32240] = true,
 		[123993] = true,
 		[121820] = true,
-	},
-	["flagoverrides"] = {
 	},
 	["macro"] = {
 		"", -- [1]
