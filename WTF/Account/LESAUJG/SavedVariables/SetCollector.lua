@@ -2,6 +2,9 @@
 SetCollectorDB = {
 	["char"] = {
 		["Bracnar - Sisters of Elune"] = {
+			["minimap"] = {
+				["minimapPos"] = 189.462360695924,
+			},
 			["filters"] = {
 				["specialization"] = 4,
 			},

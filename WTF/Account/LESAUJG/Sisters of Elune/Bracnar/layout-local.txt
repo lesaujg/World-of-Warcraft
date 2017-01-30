@@ -39,5 +39,12 @@ FrameLevel: 1
 Anchor: RIGHT
 X: -197
 Y: 27
-W: 268
+W: 275
 H: 711
+Frame: _NPCScanOverlayKey
+FrameLevel: 121
+Anchor: CENTER
+X: -94
+Y: 41
+W: 193
+H: 364
