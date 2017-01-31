@@ -25,177 +25,175 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Sunday 1/29",
+		["date"] = "Monday 1/30",
 		["rows"] = 1,
 	}, -- [1]
 	{
-		["date"] = "Saturday 1/21",
+		["date"] = "Sunday 1/29",
 		["rows"] = 1,
 	}, -- [2]
 	{
-		["date"] = "Thursday 1/12",
+		["date"] = "Saturday 1/21",
 		["rows"] = 1,
 	}, -- [3]
 	{
+		["date"] = "Thursday 1/12",
+		["rows"] = 1,
+	}, -- [4]
+	{
 		["date"] = "Sunday 11/6",
 		["rows"] = 2,
-	}, -- [4]
+	}, -- [5]
 	{
 		["date"] = "Saturday 11/5",
 		["rows"] = 3,
-	}, -- [5]
+	}, -- [6]
 	{
 		["date"] = "Friday 11/4",
 		["rows"] = 2,
-	}, -- [6]
+	}, -- [7]
 	{
 		["date"] = "Thursday 11/3",
 		["rows"] = 3,
-	}, -- [7]
+	}, -- [8]
 	{
 		["date"] = "Wednesday 11/2",
 		["rows"] = 2,
-	}, -- [8]
+	}, -- [9]
 	{
 		["date"] = "Tuesday 11/1",
 		["rows"] = 5,
-	}, -- [9]
+	}, -- [10]
 	{
 		["date"] = "Monday 10/31",
 		["rows"] = 3,
-	}, -- [10]
+	}, -- [11]
 	{
 		["date"] = "Sunday 10/30",
 		["rows"] = 5,
-	}, -- [11]
+	}, -- [12]
 	{
 		["date"] = "Saturday 10/29",
 		["rows"] = 2,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Thursday 10/27",
 		["rows"] = 2,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Tuesday 10/25",
 		["rows"] = 3,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Monday 10/24",
 		["rows"] = 1,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Sunday 10/23",
 		["rows"] = 4,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Saturday 10/22",
 		["rows"] = 1,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Friday 10/21",
 		["rows"] = 2,
-	}, -- [18]
+	}, -- [19]
 	{
 		["date"] = "Thursday 10/20",
 		["rows"] = 5,
-	}, -- [19]
-	{
-		["date"] = "Wednesday 10/19",
-		["rows"] = 3,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
 	{
-		["Shado-Pan Assault"] = 1800,
+		["Sha'tari Defense"] = 2627,
 	}, -- [1]
 	{
 		["Shado-Pan Assault"] = 1800,
 	}, -- [2]
 	{
-		["Shado-Pan Assault"] = 2400,
+		["Shado-Pan Assault"] = 1800,
 	}, -- [3]
+	{
+		["Shado-Pan Assault"] = 2400,
+	}, -- [4]
 	{
 		["The Wardens"] = 2200,
 		["Valarjar"] = 375,
-	}, -- [4]
+	}, -- [5]
 	{
 		["The Wardens"] = 1000,
 		["Valarjar"] = 1225,
 		["Dreamweavers"] = 1544,
-	}, -- [5]
+	}, -- [6]
 	{
 		["The Wardens"] = 225,
 		["Dreamweavers"] = 375,
-	}, -- [6]
+	}, -- [7]
 	{
 		["The Wardens"] = 450,
 		["Valarjar"] = 400,
 		["Dreamweavers"] = 475,
-	}, -- [7]
+	}, -- [8]
 	{
 		["The Wardens"] = 150,
 		["Dreamweavers"] = 225,
-	}, -- [8]
+	}, -- [9]
 	{
 		["Valarjar"] = 75,
 		["Highmountain Tribe"] = 400,
 		["The Wardens"] = 625,
 		["Shado-Pan Assault"] = 1800,
 		["Court of Farondis"] = 475,
-	}, -- [9]
+	}, -- [10]
 	{
 		["The Wardens"] = 225,
 		["Valarjar"] = 250,
 		["Highmountain Tribe"] = 225,
-	}, -- [10]
+	}, -- [11]
 	{
 		["Valarjar"] = 800,
 		["Highmountain Tribe"] = 150,
 		["The Wardens"] = 2775,
 		["Court of Farondis"] = 650,
 		["Dreamweavers"] = 300,
-	}, -- [11]
+	}, -- [12]
 	{
 		["Valarjar"] = 2050,
 		["Court of Farondis"] = 750,
-	}, -- [12]
+	}, -- [13]
 	{
 		["The Wardens"] = 250,
 		["Dreamweavers"] = 750,
-	}, -- [13]
+	}, -- [14]
 	{
 		["The Wardens"] = 2025,
 		["Highmountain Tribe"] = 450,
 		["Dreamweavers"] = 1725,
-	}, -- [14]
+	}, -- [15]
 	{
 		["The Wardens"] = 150,
-	}, -- [15]
+	}, -- [16]
 	{
 		["The Wardens"] = 1025,
 		["Court of Farondis"] = 1150,
 		["Dreamweavers"] = 1875,
 		["Highmountain Tribe"] = 2125,
-	}, -- [16]
+	}, -- [17]
 	{
 		["Dreamweavers"] = 250,
-	}, -- [17]
+	}, -- [18]
 	{
 		["The Wardens"] = 250,
 		["Dreamweavers"] = 400,
-	}, -- [18]
+	}, -- [19]
 	{
 		["Valarjar"] = 300,
 		["Highmountain Tribe"] = 300,
 		["The Wardens"] = 325,
 		["Court of Farondis"] = 325,
 		["Dreamweavers"] = 150,
-	}, -- [19]
-	{
-		["Court of Farondis"] = 75,
-		["Valarjar"] = 250,
-		["Highmountain Tribe"] = 1800,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
