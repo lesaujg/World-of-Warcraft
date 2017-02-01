@@ -4,11 +4,6 @@ LM_OptionsDB = {
 	},
 	["excludedspells"] = {
 	},
-	["excludeNewMounts"] = {
-		false, -- [1]
-	},
-	["flagoverrides"] = {
-	},
 	["seenspells"] = {
 		[17453] = true,
 		[98204] = true,
@@ -217,9 +212,9 @@ LM_OptionsDB = {
 		[472] = true,
 		[75207] = true,
 		[23338] = true,
-		[130138] = true,
-		[74918] = true,
 		[171617] = true,
+		[74918] = true,
+		[130138] = true,
 		[59569] = true,
 		[60424] = true,
 		[39798] = true,
@@ -273,6 +268,11 @@ LM_OptionsDB = {
 		[88335] = true,
 		[127287] = true,
 		[35714] = true,
+	},
+	["excludeNewMounts"] = {
+		false, -- [1]
+	},
+	["flagoverrides"] = {
 	},
 	["macro"] = {
 		"/cast !Aspect of the Cheetah\n", -- [1]
