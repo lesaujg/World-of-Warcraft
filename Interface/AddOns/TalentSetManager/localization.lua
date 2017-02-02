@@ -1,0 +1,380 @@
+﻿-- Talent Set Manager
+-- by Jadya - EU Well of Eternity
+
+local addonName, addonTable = ...
+
+local locale = GetLocale()
+addonTable.L = {}
+local L = addonTable.L
+
+local debug
+--[===[@debug@
+debug = true
+--@end-debug@]===]
+ 
+if debug then
+ L["set_already_exists"] = "A talent set with that name already exists"
+ L["sets_limit_reached"] = "You cannot create any more new talent sets."
+ L["confirm_save_set"] = "Would you like to save the talent set '%s'?"
+ L["confirm_delete_set"] = "Are you sure you want to delete the talent set %s?"
+ L["confirm_overwrite_set"] = "You already have a talent set named %s. Would you like to overwrite it?"
+ L["link_equipment"] = "Link Equipment"
+ L["current_equipment"] = "Current: %s"
+ L["equipment_menu_title1"] = "Select an equipment set to be equipped"
+ L["equipment_menu_title2"] = "along with this set of talents:"
+ L["equipment_not_found"] = "The equipment set %s was not found and has been unlinked from the talent set %s"
+ L["no_talent_sets"] = "No %s talent sets available"
+ L["macro_comment"] = "automatically generated, do not modify"
+ L["macro_limit_reached"] = "Macro limit reached"
+ L["custom_macro_desc_lc"] = "|cff00ffffLeft-Click|r for more info."
+ L["custom_macro_desc_rc"] = "|cff00ffffRight-Click|r this button to delete the macro"
+ L["custom_macro_desc1"] = "To be used in actionbars, a talent set needs its own macro."
+ L["custom_macro_desc2"] = "Dragging the talent set, automatically creates it in your character macros."
+ L["not_available_in_combat"] = "Not available in combat"
+ L["help_title1"] = "Right click to ignore tiers"
+ L["help_string1"] = "By right-clicking on any talent in the Talent Frame, its tier's background will become red and will not be saved when clicking the save button. When learning a set containing ignored tiers, only the talents on the available tiers (i.e. the ones that don't have a red background) will be changed."
+ L["talents_changed"] = "Talents Changed"
+ 
+ L["options_talent_highlight_icon"] = "Talent Highlight Icon"
+ L["options_chat_filter"] = "Talent chat message filter"
+ L["options_chat_filter_show"] = "Do not filter"
+ L["options_chat_filter_group"] = "Group into a single line"
+ L["options_chat_filter_hide"] = "Hide entirely"
+ L["options_ignored_tiers_background_color"] = "Ignored tiers background color"
+ L["options_hide_info_button"] = "Hide Info Button"
+ 
+ -- new
+ return
+end
+
+if locale == "esES" then 
+L["confirm_delete_set"] = "Are you sure you want to delete the talent set %s?" -- Requires localization
+L["confirm_overwrite_set"] = "You already have a talent set named %s. Would you like to overwrite it?" -- Requires localization
+L["confirm_save_set"] = "Would you like to save the talent set '%s'?" -- Requires localization
+L["current_equipment"] = "Current: %s" -- Requires localization
+L["custom_macro_desc1"] = "To be used in actionbars, a talent set needs its own macro." -- Requires localization
+L["custom_macro_desc2"] = "Dragging the talent set, automatically creates it in your character macros." -- Requires localization
+L["custom_macro_desc_lc"] = "|cff00ffffLeft-Click|r for more info." -- Requires localization
+L["custom_macro_desc_rc"] = "|cff00ffffRight-Click|r this button to delete the macro" -- Requires localization
+L["equipment_menu_title1"] = "Select an equipment set to be equipped" -- Requires localization
+L["equipment_menu_title2"] = "along with this set of talents:" -- Requires localization
+L["equipment_not_found"] = "The equipment set %s was not found and has been unlinked from the talent set %s" -- Requires localization
+L["help_string1"] = "By right-clicking on any talent in the Talent Frame, its tier's background will become red and will not be saved when clicking the save button. When learning a set containing ignored tiers, only the talents on the available tiers (i.e. the ones that don't have a red background) will be changed." -- Requires localization
+L["help_title1"] = "Right click to ignore tiers" -- Requires localization
+L["link_equipment"] = "Link Equipment" -- Requires localization
+L["macro_comment"] = "automatically generated, do not modify" -- Requires localization
+L["macro_limit_reached"] = "Macro limit reached" -- Requires localization
+L["no_talent_sets"] = "No %s talent sets available" -- Requires localization
+L["not_available_in_combat"] = "Not available in combat" -- Requires localization
+L["options_chat_filter"] = "Talent chat message filter" -- Requires localization
+L["options_chat_filter_group"] = "Group into a single line" -- Requires localization
+L["options_chat_filter_hide"] = "Hide entirely" -- Requires localization
+L["options_chat_filter_show"] = "Do not filter" -- Requires localization
+L["options_hide_info_button"] = "Hide Info Button" -- Requires localization
+L["options_ignored_tiers_background_color"] = "Ignored tiers background color" -- Requires localization
+L["options_talent_highlight_icon"] = "Talent Highlight Icon" -- Requires localization
+L["set_already_exists"] = "A talent set with that name already exists" -- Requires localization
+L["sets_limit_reached"] = "You cannot create any more new talent sets." -- Requires localization
+L["talents_changed"] = "Talents Changed" -- Requires localization
+
+elseif locale == "esMX" then 
+L["confirm_delete_set"] = "Are you sure you want to delete the talent set %s?" -- Requires localization
+L["confirm_overwrite_set"] = "You already have a talent set named %s. Would you like to overwrite it?" -- Requires localization
+L["confirm_save_set"] = "Would you like to save the talent set '%s'?" -- Requires localization
+L["current_equipment"] = "Current: %s" -- Requires localization
+L["custom_macro_desc1"] = "To be used in actionbars, a talent set needs its own macro." -- Requires localization
+L["custom_macro_desc2"] = "Dragging the talent set, automatically creates it in your character macros." -- Requires localization
+L["custom_macro_desc_lc"] = "|cff00ffffLeft-Click|r for more info." -- Requires localization
+L["custom_macro_desc_rc"] = "|cff00ffffRight-Click|r this button to delete the macro" -- Requires localization
+L["equipment_menu_title1"] = "Select an equipment set to be equipped" -- Requires localization
+L["equipment_menu_title2"] = "along with this set of talents:" -- Requires localization
+L["equipment_not_found"] = "The equipment set %s was not found and has been unlinked from the talent set %s" -- Requires localization
+L["help_string1"] = "By right-clicking on any talent in the Talent Frame, its tier's background will become red and will not be saved when clicking the save button. When learning a set containing ignored tiers, only the talents on the available tiers (i.e. the ones that don't have a red background) will be changed." -- Requires localization
+L["help_title1"] = "Right click to ignore tiers" -- Requires localization
+L["link_equipment"] = "Link Equipment" -- Requires localization
+L["macro_comment"] = "automatically generated, do not modify" -- Requires localization
+L["macro_limit_reached"] = "Macro limit reached" -- Requires localization
+L["no_talent_sets"] = "No %s talent sets available" -- Requires localization
+L["not_available_in_combat"] = "Not available in combat" -- Requires localization
+L["options_chat_filter"] = "Talent chat message filter" -- Requires localization
+L["options_chat_filter_group"] = "Group into a single line" -- Requires localization
+L["options_chat_filter_hide"] = "Hide entirely" -- Requires localization
+L["options_chat_filter_show"] = "Do not filter" -- Requires localization
+L["options_hide_info_button"] = "Hide Info Button" -- Requires localization
+L["options_ignored_tiers_background_color"] = "Ignored tiers background color" -- Requires localization
+L["options_talent_highlight_icon"] = "Talent Highlight Icon" -- Requires localization
+L["set_already_exists"] = "A talent set with that name already exists" -- Requires localization
+L["sets_limit_reached"] = "You cannot create any more new talent sets." -- Requires localization
+L["talents_changed"] = "Talents Changed" -- Requires localization
+
+elseif locale == "itIT" then 
+L["confirm_delete_set"] = "Sei sicuro di voler eliminare il set di talenti %s?"
+L["confirm_overwrite_set"] = "Hai già un set di talenti chiamato %s. Vuoi sovrascriverlo?"
+L["confirm_save_set"] = "Vuoi salvare il set di talenti '%s'?"
+L["current_equipment"] = "Attuale: %s"
+L["custom_macro_desc1"] = "Per essere usato nelle barre delle azioni, un set di talenti ha bisogno di una propria macro."
+L["custom_macro_desc2"] = "Trascinando il set di talenti ne verrà creata automaticamente una tra le macro del personaggio."
+L["custom_macro_desc_lc"] = "|cff00ffffClick-Sinistro|r per informazioni."
+L["custom_macro_desc_rc"] = "|cff00ffffClick-Destro|r su questo pulsante per eliminare la macro"
+L["equipment_menu_title1"] = "Seleziona un set di equipaggiamento da indossare"
+L["equipment_menu_title2"] = "insieme a questo set di talenti:"
+L["equipment_not_found"] = "Il set di equipaggiamento %s non è stato trovato ed è stato scollegato dal set di talenti %s"
+L["help_string1"] = "Facendo click-destro su qualsiasi talento nel Riquadro dei Talenti, la sua riga diventerà rossa e non verrà salvata tramite il pulsante 'Salva'. Imparando un set contenente righe ignorate, solo i talenti nelle righe disponibili (ovvero quelle senza lo sfondo rosso) saranno cambiati."
+L["help_title1"] = "Click destro per ignorare righe di talenti"
+L["link_equipment"] = "Collega equipaggiamento"
+L["macro_comment"] = "generato automaticamente, non modificare"
+L["macro_limit_reached"] = "Limite macro raggiunto"
+L["no_talent_sets"] = "Nessun set di talenti %s disponibile"
+L["not_available_in_combat"] = "Non disponibile in combattimento"
+L["options_chat_filter"] = "Filtro dei messaggi in chat dei talenti"
+L["options_chat_filter_group"] = "Raggruppa in una riga"
+L["options_chat_filter_hide"] = "Nascondi del tutto"
+L["options_chat_filter_show"] = "Non filtrare"
+L["options_hide_info_button"] = "Nascondi Pulsante Info"
+L["options_ignored_tiers_background_color"] = "Colore di sfondo delle righe ignorate"
+L["options_talent_highlight_icon"] = "Icona dei talenti evidenziati"
+L["set_already_exists"] = "Un set di talenti con quel nome esiste già."
+L["sets_limit_reached"] = "Non puoi creare ulteriori set di talenti."
+L["talents_changed"] = "Talenti Cambiati"
+
+elseif locale == "ptBR" then 
+L["confirm_delete_set"] = "Are you sure you want to delete the talent set %s?" -- Requires localization
+L["confirm_overwrite_set"] = "You already have a talent set named %s. Would you like to overwrite it?" -- Requires localization
+L["confirm_save_set"] = "Would you like to save the talent set '%s'?" -- Requires localization
+L["current_equipment"] = "Current: %s" -- Requires localization
+L["custom_macro_desc1"] = "To be used in actionbars, a talent set needs its own macro." -- Requires localization
+L["custom_macro_desc2"] = "Dragging the talent set, automatically creates it in your character macros." -- Requires localization
+L["custom_macro_desc_lc"] = "|cff00ffffLeft-Click|r for more info." -- Requires localization
+L["custom_macro_desc_rc"] = "|cff00ffffRight-Click|r this button to delete the macro" -- Requires localization
+L["equipment_menu_title1"] = "Select an equipment set to be equipped" -- Requires localization
+L["equipment_menu_title2"] = "along with this set of talents:" -- Requires localization
+L["equipment_not_found"] = "The equipment set %s was not found and has been unlinked from the talent set %s" -- Requires localization
+L["help_string1"] = "By right-clicking on any talent in the Talent Frame, its tier's background will become red and will not be saved when clicking the save button. When learning a set containing ignored tiers, only the talents on the available tiers (i.e. the ones that don't have a red background) will be changed." -- Requires localization
+L["help_title1"] = "Right click to ignore tiers" -- Requires localization
+L["link_equipment"] = "Link Equipment" -- Requires localization
+L["macro_comment"] = "automatically generated, do not modify" -- Requires localization
+L["macro_limit_reached"] = "Macro limit reached" -- Requires localization
+L["no_talent_sets"] = "No %s talent sets available" -- Requires localization
+L["not_available_in_combat"] = "Not available in combat" -- Requires localization
+L["options_chat_filter"] = "Talent chat message filter" -- Requires localization
+L["options_chat_filter_group"] = "Group into a single line" -- Requires localization
+L["options_chat_filter_hide"] = "Hide entirely" -- Requires localization
+L["options_chat_filter_show"] = "Do not filter" -- Requires localization
+L["options_hide_info_button"] = "Hide Info Button" -- Requires localization
+L["options_ignored_tiers_background_color"] = "Ignored tiers background color" -- Requires localization
+L["options_talent_highlight_icon"] = "Talent Highlight Icon" -- Requires localization
+L["set_already_exists"] = "A talent set with that name already exists" -- Requires localization
+L["sets_limit_reached"] = "You cannot create any more new talent sets." -- Requires localization
+L["talents_changed"] = "Talents Changed" -- Requires localization
+
+elseif locale == "frFR" then
+L["confirm_delete_set"] = "Êtes-vous sûr de vouloir supprimer l'ensemble des talents %s?"
+L["confirm_overwrite_set"] = "Vous avez déjà un ensemble de talents nommé %s. Voulez-vous le remplacer?"
+L["confirm_save_set"] = "Voulez-vous enregistrer l'ensemble des talents '%s'?"
+L["current_equipment"] = "Actuellement: %s"
+L["custom_macro_desc1"] = "Pour être utilisé dans les barres d'action, un ensemble de talents a besoin de sa propre macro."
+L["custom_macro_desc2"] = "Faire glisser l'ensemble des talents, crée automatiquement dans vos macros."
+L["custom_macro_desc_lc"] = "|cff00ffffClic gauche|r pour plus d'info."
+L["custom_macro_desc_rc"] = "|cff00ffffClic droit|r pour supprimer la macro"
+L["equipment_menu_title1"] = "Sélectionnez un équipement prévu pour être équipé"
+L["equipment_menu_title2"] = "ainsi que cet ensemble de talents:"
+L["equipment_not_found"] = "L'équipement %s n'a pas été trouvé et a été dissocié de l'ensemble des talents %s"
+L["help_string1"] = "By right-clicking on any talent in the Talent Frame, its tier's background will become red and will not be saved when clicking the save button. When learning a set containing ignored tiers, only the talents on the available tiers (i.e. the ones that don't have a red background) will be changed." -- Requires localization
+L["help_title1"] = "Clic droit pour ignorer les niveaux"
+L["link_equipment"] = "Lien équipement"
+L["macro_comment"] = "généré automatiquement, ne pas modifier"
+L["macro_limit_reached"] = "Limite atteinte pour la macro"
+L["no_talent_sets"] = "Le talent %s est disponible"
+L["not_available_in_combat"] = "Pas dispo en combat"
+L["options_chat_filter"] = "Talent chat message filter" -- Requires localization
+L["options_chat_filter_group"] = "Group into a single line" -- Requires localization
+L["options_chat_filter_hide"] = "Hide entirely" -- Requires localization
+L["options_chat_filter_show"] = "Do not filter" -- Requires localization
+L["options_hide_info_button"] = "Hide Info Button" -- Requires localization
+L["options_ignored_tiers_background_color"] = "Ignored tiers background color" -- Requires localization
+L["options_talent_highlight_icon"] = "Talent Highlight Icon" -- Requires localization
+L["set_already_exists"] = "Un talent avec ce nom existe déjà"
+L["sets_limit_reached"] = "Vous ne pouvez pas créer de nouveaux ensembles de talents."
+L["talents_changed"] = "Talents Changed" -- Requires localization
+
+elseif locale == "deDE" then 
+L["confirm_delete_set"] = "Soll das Talentset \"%s\" wirklich gelöscht werden?"
+L["confirm_overwrite_set"] = "Ein Talentset mit dem Namen \"%s\" existiert bereits. Möchtest du es überschreiben?"
+L["confirm_save_set"] = "Soll das Talentset \"%s\" gespeichert werden?"
+L["current_equipment"] = "Momentan: %s"
+L["custom_macro_desc1"] = "Zur Verwendung in Aktionsleisten, ein Talentset benötigt ein eigenes Makro."
+L["custom_macro_desc2"] = "Das Verschieben eines Talentsets erstellt automatisch ein charakterspezifisches Makro."
+L["custom_macro_desc_lc"] = "|cff00ffffLinksklick|r für mehr Informationen."
+L["custom_macro_desc_rc"] = "|cff00ffffRechtsklick|r auf diesen Button, um das Makro zu löschen"
+L["equipment_menu_title1"] = "Wähle das Ausrüstungsset, das zusammen mit dieser "
+L["equipment_menu_title2"] = "Zusammenstellung der Talente angelegt werden soll:"
+L["equipment_not_found"] = "Das Ausrüstungsset %s wurde nicht gefunden und wurde daher vom Talentset %s getrennt"
+L["help_string1"] = "Du kannst auf ein beliebiges Talent im Talentfenster mit der rechten Maustaste klicken, um diese Talentstufe nicht zu speichern, wenn du auf den Speichern-Knopf drückst (dies wird durch den roten Hintergrund einer Stufe angezeigt). Wenn du ein Set erlernst, das ignorierte Talentstufen enthält, werden nur die Talente in den verfügbaren Stufen (nur die Talente, deren Hintergrund nicht rot ist) geändert."
+L["help_title1"] = "Rechtsklick, um diese Stufe zu ignorieren"
+L["link_equipment"] = "Ausrüstung verknüpfen"
+L["macro_comment"] = "automatisch erzeugt, nicht verändern"
+L["macro_limit_reached"] = "Maximale Makroanzahl erreicht"
+L["no_talent_sets"] = "Keine %s-Talentsets vorhanden"
+L["not_available_in_combat"] = "Im Kampf nicht verfügbar"
+L["options_chat_filter"] = "Talent chat message filter" -- Requires localization
+L["options_chat_filter_group"] = "Group into a single line" -- Requires localization
+L["options_chat_filter_hide"] = "Vollständig ausblenden"
+L["options_chat_filter_show"] = "Nicht filtern"
+L["options_hide_info_button"] = "Hide Info Button" -- Requires localization
+L["options_ignored_tiers_background_color"] = "Hintergrundfarbe ignorierter Stufen"
+L["options_talent_highlight_icon"] = "Talenthervorhebungssymbol"
+L["set_already_exists"] = "Ein Talentset mit diesem Namen existiert bereits."
+L["sets_limit_reached"] = "Es können keine weiteren Talentsets angelegt werden."
+L["talents_changed"] = "Talente geändert"
+
+elseif locale == "ruRU" then 
+L["confirm_delete_set"] = "Are you sure you want to delete the talent set %s?" -- Requires localization
+L["confirm_overwrite_set"] = "You already have a talent set named %s. Would you like to overwrite it?" -- Requires localization
+L["confirm_save_set"] = "Would you like to save the talent set '%s'?" -- Requires localization
+L["current_equipment"] = "Current: %s" -- Requires localization
+L["custom_macro_desc1"] = "To be used in actionbars, a talent set needs its own macro." -- Requires localization
+L["custom_macro_desc2"] = "Dragging the talent set, automatically creates it in your character macros." -- Requires localization
+L["custom_macro_desc_lc"] = "|cff00ffffLeft-Click|r for more info." -- Requires localization
+L["custom_macro_desc_rc"] = "|cff00ffffRight-Click|r this button to delete the macro" -- Requires localization
+L["equipment_menu_title1"] = "Select an equipment set to be equipped" -- Requires localization
+L["equipment_menu_title2"] = "along with this set of talents:" -- Requires localization
+L["equipment_not_found"] = "The equipment set %s was not found and has been unlinked from the talent set %s" -- Requires localization
+L["help_string1"] = "By right-clicking on any talent in the Talent Frame, its tier's background will become red and will not be saved when clicking the save button. When learning a set containing ignored tiers, only the talents on the available tiers (i.e. the ones that don't have a red background) will be changed." -- Requires localization
+L["help_title1"] = "Right click to ignore tiers" -- Requires localization
+L["link_equipment"] = "Link Equipment" -- Requires localization
+L["macro_comment"] = "automatically generated, do not modify" -- Requires localization
+L["macro_limit_reached"] = "Macro limit reached" -- Requires localization
+L["no_talent_sets"] = "No %s talent sets available" -- Requires localization
+L["not_available_in_combat"] = "Not available in combat" -- Requires localization
+L["options_chat_filter"] = "Talent chat message filter" -- Requires localization
+L["options_chat_filter_group"] = "Group into a single line" -- Requires localization
+L["options_chat_filter_hide"] = "Hide entirely" -- Requires localization
+L["options_chat_filter_show"] = "Do not filter" -- Requires localization
+L["options_hide_info_button"] = "Hide Info Button" -- Requires localization
+L["options_ignored_tiers_background_color"] = "Ignored tiers background color" -- Requires localization
+L["options_talent_highlight_icon"] = "Talent Highlight Icon" -- Requires localization
+L["set_already_exists"] = "A talent set with that name already exists" -- Requires localization
+L["sets_limit_reached"] = "You cannot create any more new talent sets." -- Requires localization
+L["talents_changed"] = "Talents Changed" -- Requires localization
+
+elseif locale == "zhCN" then 
+L["confirm_delete_set"] = "Are you sure you want to delete the talent set %s?" -- Requires localization
+L["confirm_overwrite_set"] = "You already have a talent set named %s. Would you like to overwrite it?" -- Requires localization
+L["confirm_save_set"] = "Would you like to save the talent set '%s'?" -- Requires localization
+L["current_equipment"] = "Current: %s" -- Requires localization
+L["custom_macro_desc1"] = "To be used in actionbars, a talent set needs its own macro." -- Requires localization
+L["custom_macro_desc2"] = "Dragging the talent set, automatically creates it in your character macros." -- Requires localization
+L["custom_macro_desc_lc"] = "|cff00ffffLeft-Click|r for more info." -- Requires localization
+L["custom_macro_desc_rc"] = "|cff00ffffRight-Click|r this button to delete the macro" -- Requires localization
+L["equipment_menu_title1"] = "Select an equipment set to be equipped" -- Requires localization
+L["equipment_menu_title2"] = "along with this set of talents:" -- Requires localization
+L["equipment_not_found"] = "The equipment set %s was not found and has been unlinked from the talent set %s" -- Requires localization
+L["help_string1"] = "By right-clicking on any talent in the Talent Frame, its tier's background will become red and will not be saved when clicking the save button. When learning a set containing ignored tiers, only the talents on the available tiers (i.e. the ones that don't have a red background) will be changed." -- Requires localization
+L["help_title1"] = "Right click to ignore tiers" -- Requires localization
+L["link_equipment"] = "Link Equipment" -- Requires localization
+L["macro_comment"] = "automatically generated, do not modify" -- Requires localization
+L["macro_limit_reached"] = "Macro limit reached" -- Requires localization
+L["no_talent_sets"] = "No %s talent sets available" -- Requires localization
+L["not_available_in_combat"] = "Not available in combat" -- Requires localization
+L["options_chat_filter"] = "Talent chat message filter" -- Requires localization
+L["options_chat_filter_group"] = "Group into a single line" -- Requires localization
+L["options_chat_filter_hide"] = "Hide entirely" -- Requires localization
+L["options_chat_filter_show"] = "Do not filter" -- Requires localization
+L["options_hide_info_button"] = "Hide Info Button" -- Requires localization
+L["options_ignored_tiers_background_color"] = "Ignored tiers background color" -- Requires localization
+L["options_talent_highlight_icon"] = "Talent Highlight Icon" -- Requires localization
+L["set_already_exists"] = "A talent set with that name already exists" -- Requires localization
+L["sets_limit_reached"] = "You cannot create any more new talent sets." -- Requires localization
+L["talents_changed"] = "Talents Changed" -- Requires localization
+
+elseif locale == "zhTW" then 
+L["confirm_delete_set"] = "你確定要刪除此天賦設定 %s嗎？"
+L["confirm_overwrite_set"] = "你已經有個天賦設定名為 %s，你想要覆寫它嗎？"
+L["confirm_save_set"] = "你想要儲存天賦設定'%s'嗎？"
+L["current_equipment"] = "目前：%s"
+L["custom_macro_desc1"] = "要使用在快捷列上，一個天賦設定需要有它自己的巨集。"
+L["custom_macro_desc2"] = "拖曳此天賦設定，自動建立你角色專屬的巨集。"
+L["custom_macro_desc_lc"] = "|cff00ffff左鍵點擊|r獲得更多資訊。"
+L["custom_macro_desc_rc"] = "|cff00ffff右鍵點擊|r此按鈕以刪除巨集"
+L["equipment_menu_title1"] = "選擇一個套裝設定來裝備"
+L["equipment_menu_title2"] = "天賦單獨的套裝設定："
+L["equipment_not_found"] = "此套裝設定 %s 沒找到並且未連結至天賦 %s"
+L["help_string1"] = "在天賦視窗中藉由右鍵點擊任何天賦，它的套裝背景將會變回紅色並且按下儲存按鈕也不會儲存。當學習一個設定包含忽略的套裝，只有此天賦有可用的套裝 (例如：有一個設定沒有紅色背景的)會被更換。"
+L["help_title1"] = "右鍵點擊來忽略套裝"
+L["link_equipment"] = "連結裝備"
+L["macro_comment"] = "已自動生成，請勿修改"
+L["macro_limit_reached"] = "巨集限制已達"
+L["no_talent_sets"] = "無 %s 天賦設定可用"
+L["not_available_in_combat"] = "戰鬥中不可使用"
+L["options_chat_filter"] = "天賦聊天訊息過濾"
+L["options_chat_filter_group"] = "群組縮為單行"
+L["options_chat_filter_hide"] = "完全隱藏"
+L["options_chat_filter_show"] = "不過濾"
+L["options_hide_info_button"] = "Hide Info Button" -- Requires localization
+L["options_ignored_tiers_background_color"] = "忽略套裝背景顏色"
+L["options_talent_highlight_icon"] = "天賦高亮圖示"
+L["set_already_exists"] = "此天賦設定的名稱已經存在"
+L["sets_limit_reached"] = "你不能在創建更多新天賦設定。"
+L["talents_changed"] = "天賦已改變"
+
+elseif locale == "koKR" then
+L["confirm_delete_set"] = "Are you sure you want to delete the talent set %s?" -- Requires localization
+L["confirm_overwrite_set"] = "You already have a talent set named %s. Would you like to overwrite it?" -- Requires localization
+L["confirm_save_set"] = "Would you like to save the talent set '%s'?" -- Requires localization
+L["current_equipment"] = "Current: %s" -- Requires localization
+L["custom_macro_desc1"] = "To be used in actionbars, a talent set needs its own macro." -- Requires localization
+L["custom_macro_desc2"] = "Dragging the talent set, automatically creates it in your character macros." -- Requires localization
+L["custom_macro_desc_lc"] = "|cff00ffffLeft-Click|r for more info." -- Requires localization
+L["custom_macro_desc_rc"] = "|cff00ffffRight-Click|r this button to delete the macro" -- Requires localization
+L["equipment_menu_title1"] = "Select an equipment set to be equipped" -- Requires localization
+L["equipment_menu_title2"] = "along with this set of talents:" -- Requires localization
+L["equipment_not_found"] = "The equipment set %s was not found and has been unlinked from the talent set %s" -- Requires localization
+L["help_string1"] = "By right-clicking on any talent in the Talent Frame, its tier's background will become red and will not be saved when clicking the save button. When learning a set containing ignored tiers, only the talents on the available tiers (i.e. the ones that don't have a red background) will be changed." -- Requires localization
+L["help_title1"] = "Right click to ignore tiers" -- Requires localization
+L["link_equipment"] = "Link Equipment" -- Requires localization
+L["macro_comment"] = "automatically generated, do not modify" -- Requires localization
+L["macro_limit_reached"] = "Macro limit reached" -- Requires localization
+L["no_talent_sets"] = "No %s talent sets available" -- Requires localization
+L["not_available_in_combat"] = "Not available in combat" -- Requires localization
+L["options_chat_filter"] = "Talent chat message filter" -- Requires localization
+L["options_chat_filter_group"] = "Group into a single line" -- Requires localization
+L["options_chat_filter_hide"] = "Hide entirely" -- Requires localization
+L["options_chat_filter_show"] = "Do not filter" -- Requires localization
+L["options_hide_info_button"] = "Hide Info Button" -- Requires localization
+L["options_ignored_tiers_background_color"] = "Ignored tiers background color" -- Requires localization
+L["options_talent_highlight_icon"] = "Talent Highlight Icon" -- Requires localization
+L["set_already_exists"] = "A talent set with that name already exists" -- Requires localization
+L["sets_limit_reached"] = "You cannot create any more new talent sets." -- Requires localization
+L["talents_changed"] = "Talents Changed" -- Requires localization
+
+else -- enUS
+L["confirm_delete_set"] = "Are you sure you want to delete the talent set %s?"
+L["confirm_overwrite_set"] = "You already have a talent set named %s. Would you like to overwrite it?"
+L["confirm_save_set"] = "Would you like to save the talent set '%s'?"
+L["current_equipment"] = "Current: %s"
+L["custom_macro_desc1"] = "To be used in actionbars, a talent set needs its own macro."
+L["custom_macro_desc2"] = "Dragging the talent set, automatically creates it in your character macros."
+L["custom_macro_desc_lc"] = "|cff00ffffLeft-Click|r for more info."
+L["custom_macro_desc_rc"] = "|cff00ffffRight-Click|r this button to delete the macro"
+L["equipment_menu_title1"] = "Select an equipment set to be equipped"
+L["equipment_menu_title2"] = "along with this set of talents:"
+L["equipment_not_found"] = "The equipment set %s was not found and has been unlinked from the talent set %s"
+L["help_string1"] = "By right-clicking on any talent in the Talent Frame, its tier's background will become red and will not be saved when clicking the save button. When learning a set containing ignored tiers, only the talents on the available tiers (i.e. the ones that don't have a red background) will be changed."
+L["help_title1"] = "Right click to ignore tiers"
+L["link_equipment"] = "Link Equipment"
+L["macro_comment"] = "automatically generated, do not modify"
+L["macro_limit_reached"] = "Macro limit reached"
+L["no_talent_sets"] = "No %s talent sets available"
+L["not_available_in_combat"] = "Not available in combat"
+L["options_chat_filter"] = "Talent chat message filter"
+L["options_chat_filter_group"] = "Group into a single line"
+L["options_chat_filter_hide"] = "Hide entirely"
+L["options_chat_filter_show"] = "Do not filter"
+L["options_hide_info_button"] = "Hide Info Button"
+L["options_ignored_tiers_background_color"] = "Ignored tiers background color"
+L["options_talent_highlight_icon"] = "Talent Highlight Icon"
+L["set_already_exists"] = "A talent set with that name already exists"
+L["sets_limit_reached"] = "You cannot create any more new talent sets."
+L["talents_changed"] = "Talents Changed"
+
+end
