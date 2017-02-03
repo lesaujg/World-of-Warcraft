@@ -1195,3 +1195,7 @@ Change Log:
 
 4.42.4
 * Added and fixed Legion spells for Nighthold
+
+4.42.5
+* Added and fixed Legion spells for Nighthold
+* Added Legion spells for Black Rook Hold

@@ -1183,8 +1183,6 @@ GTFO.SpellID["203110"] = {
 
 -- TODO: Volatile Resonance (Skorpyron)
 -- TODO: Arcane Slash (Trilliax) -- non-tank fail
--- TODO: Toxic Slice (Trilliax) -- impact, not DoT
--- TODO: Annihilation (Trilliax) -- Avoidable or raid fail?
 -- TODO: Burning Soul (Tichondrius) -- FF Fail
 -- TODO: Felburst (Krosus)
 -- TODO: Toxic Spores (High Botanist Tel'arn)
@@ -1193,7 +1191,6 @@ GTFO.SpellID["203110"] = {
 -- TODO: World-Devouring Force (Star Augur Etaeus)
 -- TODO: Delphuric Beam (Grand Magistrix Elisande)
 -- TODO: Epocheric Orb (Grand Magistrix Elisande) -- when debuffed with Epocheric Vulnerability
--- TODO: Gaze of Vethriz (Gul'dan)
 -- TODO: Storm of the Destroyer (Gul'dan) -- x4
 
 
@@ -1208,6 +1205,11 @@ GTFO.SpellID["204275"] = {
   tankSound = 0;
 };
 
+GTFO.SpellID["221153"] = {
+  --desc = "Beam (Pulsauron)";
+  sound = 3;
+};
+
 GTFO.SpellID["230438"] = {
   --desc = "Devastating Strike (Torm the Brute)";
   sound = 3;
@@ -1220,6 +1222,17 @@ GTFO.SpellID["221164"] = {
 
 GTFO.SpellID["206612"] = {
   --desc = "Burst of Time (Chronomatic Anomaly)";
+  sound = 3;
+};
+
+GTFO.SpellID["206792"] = {
+  --desc = "Toxic Slice (Trilliax)";
+  sound = 3;
+};
+
+GTFO.SpellID["207631"] = {
+  --desc = "Annihilation (Trilliax)";
+  applicationOnly = true;
   sound = 3;
 };
 
@@ -1317,6 +1330,16 @@ GTFO.SpellID["207813"] = {
 
 GTFO.SpellID["208865"] = {
   --desc = "Leave the Nightwell (Elisande)";
+  sound = 3;
+};
+
+GTFO.SpellID["231005"] = {
+  --desc = "Arcane Emanations (Kar'zun)";
+  sound = 3;
+};
+
+GTFO.SpellID["212262"] = {
+  --desc = "Hand of Gul'dan (Gul'dan)";
   sound = 3;
 };
 

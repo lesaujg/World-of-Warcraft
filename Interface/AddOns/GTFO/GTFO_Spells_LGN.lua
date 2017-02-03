@@ -346,6 +346,11 @@ GTFO.SpellID["197609"] = {
   sound = 1;
 };
 
+GTFO.SpellID["224679"] = {
+  --desc = "Condensed Fel Energy (Vizuul the Twisted)";
+  sound = 1;
+};
+
 -- ************************
 -- * Vault of the Wardens *
 -- ************************
@@ -831,6 +836,11 @@ GTFO.SpellID["221866"] = {
   tankSound = 0;
 };
 
+GTFO.SpellID["198245"] = {
+  --desc = "Brutal Haymaker (Smashspite the Hateful)";
+  sound = 1;
+};
+
 -- *************************
 -- * The Emerald Nightmare *
 -- *************************
@@ -948,7 +958,6 @@ GTFO.SpellID["211634"] = {
 -- TODO: Collapse of Night (High Botanist Tel'arn) -- when marked and not standing by someone unmarked
 -- TODO: Solar Collapse (High Botanist Tel'arn) -- Any ticks avoidable?
 -- TODO: Frigid Pulse (Star Augur Etaeus)
--- TODO: Arcanetic Ring (Grand Magistrix Elisande)
 -- TODO: Desolate Ground (Gul'dan)
 -- TODO: Flames of Sargeras (Gul'dan) -- FF 
 
@@ -991,7 +1000,7 @@ GTFO.SpellID["223718"] = {
 };
 
 GTFO.SpellID["206488"] = {
-	--desc = "Arcane Seepage (Trilliax)";
+  --desc = "Arcane Seepage (Trilliax)";
   sound = 1;
 };
 
@@ -1035,6 +1044,16 @@ GTFO.SpellID["212494"] = {
   --desc = "Annihilated (Spellblade Aluriel)";
   sound = 1;
   tankSound = 0;
+};
+
+GTFO.SpellID["222111"] = {
+  --desc = "Roiling Flame";
+  sound = 1;
+};
+
+GTFO.SpellID["225856"] = {
+  --desc = "Poison Brambles (Shal'dorei Naturalist)";
+  sound = 1;
 };
 
 GTFO.SpellID["216027"] = {
@@ -1086,6 +1105,21 @@ GTFO.SpellID["209433"] = {
 
 GTFO.SpellID["208659"] = {
   --desc = "Arcanetic Ring (Grand Magistrix Elisande)";
+  sound = 1;
+};
+
+GTFO.SpellID["206515"] = {
+  --desc = "Fel Efflux (Gul'dan)";
+  sound = 1;
+};
+
+GTFO.SpellID["217770"] = {
+  --desc = "Gaze of Vethriz (Gul'dan)";
+  sound = 1;
+};
+
+GTFO.SpellID["209191"] = {
+  --desc = "Empowered Liquid Hellfire (Gul'dan)";
   sound = 1;
 };
 
