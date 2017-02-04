@@ -33511,8 +33511,13 @@ SetCollectorDB = {
 								["Transmog"] = true,
 							}, -- [2]
 							{
-								["Count"] = 0,
+								["Count"] = 1,
 								["Appearances"] = {
+									{
+										["ID"] = 31309,
+										["sourceID"] = 79509,
+										["itemID"] = 111107,
+									}, -- [1]
 								},
 								["Title"] = "GLADIATOR",
 								["Transmog"] = true,
@@ -41194,9 +41199,9 @@ SetCollectorDB = {
 					["set"] = "TR170LZZZ",
 				},
 				[31309] = {
-					["collection"] = 10,
-					["variant"] = 1,
-					["set"] = "OT1009PZZZ",
+					["collection"] = 7,
+					["variant"] = 3,
+					["set"] = "PV016LDRZH",
 				},
 				[31373] = {
 					["collection"] = 10,

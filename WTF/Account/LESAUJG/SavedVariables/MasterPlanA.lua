@@ -32,8 +32,8 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 		["Torinar"] = {
-			["faction"] = "Alliance",
 			["class"] = "WARRIOR",
+			["faction"] = "Alliance",
 		},
 		["Orig"] = {
 			["recruitTime"] = 1468376595,
@@ -76,8 +76,8 @@ MasterPlanAG = {
 			["class"] = "DEATHKNIGHT",
 		},
 		["Leanara"] = {
-			["class"] = "DEMONHUNTER",
 			["faction"] = "Alliance",
+			["class"] = "DEMONHUNTER",
 		},
 		["Galinar"] = {
 			["class"] = "PALADIN",
@@ -113,5 +113,7 @@ MasterPlanAG = {
 			["curRes"] = 5439,
 			["curOil"] = 990,
 		},
+	},
+	["IgnoreRewards"] = {
 	},
 }

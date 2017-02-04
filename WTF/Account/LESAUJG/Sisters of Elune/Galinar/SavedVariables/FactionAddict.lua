@@ -25,21 +25,25 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Friday 1/27",
+		["date"] = "Friday 2/3",
 		["rows"] = 1,
 	}, -- [1]
 	{
-		["date"] = "Thursday 1/19",
+		["date"] = "Friday 1/27",
 		["rows"] = 1,
 	}, -- [2]
 	{
-		["date"] = "Saturday 1/14",
+		["date"] = "Thursday 1/19",
 		["rows"] = 1,
 	}, -- [3]
 	{
-		["date"] = "Wednesday 11/16",
+		["date"] = "Saturday 1/14",
 		["rows"] = 1,
 	}, -- [4]
+	{
+		["date"] = "Wednesday 11/16",
+		["rows"] = 1,
+	}, -- [5]
 }
 FactionAddictLogEntries = {
 	{
@@ -52,8 +56,11 @@ FactionAddictLogEntries = {
 		["The Ashen Verdict"] = 3000,
 	}, -- [3]
 	{
-		["Cult of Malicor"] = 250,
+		["The Ashen Verdict"] = 3000,
 	}, -- [4]
+	{
+		["Cult of Malicor"] = 250,
+	}, -- [5]
 }
 FactionAddictConfigIsInactive = {
 	[1737] = false,

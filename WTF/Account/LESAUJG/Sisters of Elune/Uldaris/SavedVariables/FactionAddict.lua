@@ -25,35 +25,42 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Friday 1/27",
+		["date"] = "Friday 2/3",
 		["rows"] = 1,
 	}, -- [1]
 	{
-		["date"] = "Friday 1/20",
+		["date"] = "Friday 1/27",
 		["rows"] = 1,
 	}, -- [2]
 	{
-		["date"] = "Thursday 1/19",
+		["date"] = "Friday 1/20",
 		["rows"] = 1,
 	}, -- [3]
 	{
-		["date"] = "Saturday 1/14",
+		["date"] = "Thursday 1/19",
 		["rows"] = 1,
 	}, -- [4]
+	{
+		["date"] = "Saturday 1/14",
+		["rows"] = 1,
+	}, -- [5]
 }
 FactionAddictLogEntries = {
 	{
 		["The Ashen Verdict"] = 3000,
 	}, -- [1]
 	{
-		["Alliance Vanguard"] = 1907,
+		["The Ashen Verdict"] = 3000,
 	}, -- [2]
 	{
-		["The Ashen Verdict"] = 3000,
+		["Alliance Vanguard"] = 1907,
 	}, -- [3]
 	{
 		["The Ashen Verdict"] = 3000,
 	}, -- [4]
+	{
+		["The Ashen Verdict"] = 3000,
+	}, -- [5]
 }
 FactionAddictConfigIsInactive = {
 	[1737] = false,
