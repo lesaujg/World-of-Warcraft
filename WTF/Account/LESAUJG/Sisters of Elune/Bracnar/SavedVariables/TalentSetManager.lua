@@ -10,9 +10,9 @@ TalentSetManager_Saves = {
 				1, -- [5]
 				3, -- [6]
 				2, -- [7]
-				["texture"] = "Interface\\Icons\\INV_MISC_QUESTIONMARK",
-				["name"] = "Solo",
 				["tt"] = "talents",
+				["name"] = "Solo",
+				["texture"] = "Interface\\Icons\\INV_MISC_QUESTIONMARK",
 			}, -- [1]
 			{
 				2, -- [1]
@@ -22,9 +22,9 @@ TalentSetManager_Saves = {
 				1, -- [5]
 				1, -- [6]
 				2, -- [7]
-				["texture"] = "Interface\\Icons\\INV_MISC_QUESTIONMARK",
-				["name"] = "Raid",
 				["tt"] = "talents",
+				["name"] = "Raid",
+				["texture"] = "Interface\\Icons\\INV_MISC_QUESTIONMARK",
 			}, -- [2]
 			{
 				2, -- [1]
@@ -34,9 +34,9 @@ TalentSetManager_Saves = {
 				1, -- [5]
 				3, -- [6]
 				2, -- [7]
-				["texture"] = "Interface\\Icons\\INV_MISC_QUESTIONMARK",
-				["name"] = "Dungeon",
 				["tt"] = "talents",
+				["name"] = "Dungeon",
+				["texture"] = "Interface\\Icons\\INV_MISC_QUESTIONMARK",
 			}, -- [3]
 		}, -- [1]
 	},

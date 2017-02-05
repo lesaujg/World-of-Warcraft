@@ -27,6 +27,13 @@ X: 27
 Y: 49
 W: 384
 H: 512
+Frame: mOnWD_MiniList
+FrameLevel: 1
+Anchor: TOPRIGHT
+X: -18
+Y: -200
+W: 200
+H: 254
 Frame: PawnUIFrame
 FrameLevel: 1
 Anchor: CENTER
@@ -36,8 +43,8 @@ W: 800
 H: 525
 Frame: BaudManifestDisplay1
 FrameLevel: 1
-Anchor: RIGHT
-X: -70
-Y: 55
-W: 275
+Anchor: TOPRIGHT
+X: -202
+Y: -59
+W: 273
 H: 711
