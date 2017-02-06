@@ -49,6 +49,11 @@ VER 3 010000000000000E "_Pet Attack/Foll" "Ability_Druid_ChallangingRoar"
 /cast Warp
 /cast Dash
 END
+VER 3 0100000000000062 "awd" "ABILITY_HUNTER_CARVE"
+/cast Concussive shot
+/stopcasting
+/stopcasting
+END
 VER 3 0100000000000059 "Counter Shot" "INV_Misc_QuestionMark"
 /stopcasting
 /stopcasting

@@ -6,3 +6,10 @@ X: -113
 Y: 21
 W: 250
 H: 417
+Frame: AuctionFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 832
+H: 447

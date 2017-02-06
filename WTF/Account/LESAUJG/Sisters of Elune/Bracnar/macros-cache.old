@@ -21,6 +21,10 @@ VER 3 010000000000005C "_Kill Command" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /petattack
 /petassist
+/petautocastoff [group] Growl
+/petautocaston [nogroup] Growl
+/petautocastoff [group] Thunderstomp
+/petautocaston [nogroup] Thunderstompl
 /target [noexists] pettarget
 /cast Kill Command
 END
