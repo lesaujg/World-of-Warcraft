@@ -10,6 +10,9 @@ VER 3 000000000000009A "Aeonaxx" "236230"
 /focus
 /run if UnitName("Target") == "Aeonaxx" then PlaySoundFile([[Sound\Interface\PVPFlagTakenMono.ogg]], "Master"); print(date(), UnitName("Target"), "Found"); SetRaidTarget("target",8); end
 END
+VER 3 000000000000009C "bow" "INV_MISC_QUESTIONMARK"
+/bow
+END
 VER 3 0000000000000098 "Decursive" "INV_MISC_QUESTIONMARK"
 /stopcasting
 /cast [@mouseover,nomod,exists] Remove Corruption;  [@mouseover,exists,mod:ctrl] Cyclone; [@mouseover,exists,mod:shift] Remove Corruption

@@ -2,11 +2,11 @@
 SetCollectorDB = {
 	["char"] = {
 		["Bracnar - Sisters of Elune"] = {
-			["minimap"] = {
-				["minimapPos"] = 189.462360695924,
-			},
 			["filters"] = {
 				["specialization"] = 4,
+			},
+			["minimap"] = {
+				["minimapPos"] = 189.462360695924,
 			},
 		},
 	},
@@ -59342,13 +59342,13 @@ SetCollectorDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Orig - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
 		["Leanara - Sisters of Elune"] = "Default",
 		["Galinar - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-		["Torinar - Sisters of Elune"] = "Default",
 		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
+		["Torinar - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Orig - Sisters of Elune"] = "Default",
 	},
 }

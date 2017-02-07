@@ -1,16 +1,16 @@
 
 TalentSetManager_Options = {
 	["visible"] = false,
+	["ldb_last_selected"] = "talents",
 	["interface"] = {
 		["hide_info_button"] = false,
-		["highlight_icon"] = "spells\\star",
+		["chat_filter"] = 2,
 		["ignored_tiers_bg"] = {
 			1, -- [1]
 			0, -- [2]
 			0, -- [3]
 			0.5, -- [4]
 		},
-		["chat_filter"] = 2,
+		["highlight_icon"] = "spells\\star",
 	},
-	["ldb_last_selected"] = "talents",
 }
