@@ -36,102 +36,102 @@ TradeSkillMaster_ShoppingDB = {
 		["auction"] = true,
 	},
 	["g@ @sniperVendorPrice"] = true,
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1486427422,
+			["lastSearch"] = 1486528895,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [1]
 		{
+			["lastSearch"] = 1486528450,
+			["name"] = "Chaos Crystal/exact",
+			["filter"] = "Chaos Crystal/exact",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [2]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1486525210,
+			["name"] = "stonehide",
+			["filter"] = "stonehide",
+		}, -- [3]
+		{
 			["searchMode"] = "crafting",
-			["lastSearch"] = 1486426463,
+			["lastSearch"] = 1486525089,
 			["name"] = "leylight shard",
 			["filter"] = "leylight shard",
-		}, -- [2]
+		}, -- [4]
 		{
 			["lastSearch"] = 1486426438,
 			["name"] = "Leylight Shard/exact",
 			["filter"] = "Leylight Shard/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [3]
+		}, -- [5]
 		{
 			["lastSearch"] = 1486355040,
 			["name"] = "Obliterum/exact",
 			["filter"] = "Obliterum/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [4]
+		}, -- [6]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1486167536,
 			["name"] = "Starlight Rose/exact",
 			["filter"] = "Starlight Rose/exact",
-		}, -- [5]
+		}, -- [7]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1486165175,
 			["name"] = "Fjarnskaggl/exact",
 			["filter"] = "Fjarnskaggl/exact",
-		}, -- [6]
+		}, -- [8]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1486088123,
 			["name"] = "flask of t",
 			["filter"] = "flask of t",
-		}, -- [7]
+		}, -- [9]
 		{
 			["lastSearch"] = 1486088115,
 			["name"] = "Flask of the Seventh Demon",
 			["filter"] = "Flask of the Seventh Demon",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [8]
+		}, -- [10]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1485919739,
 			["name"] = "leystone",
 			["filter"] = "leystone",
-		}, -- [9]
+		}, -- [11]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1485919663,
 			["name"] = "dominion",
 			["filter"] = "dominion",
-		}, -- [10]
+		}, -- [12]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1485837435,
 			["name"] = "felslate",
 			["filter"] = "felslate",
-		}, -- [11]
+		}, -- [13]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1485143026,
 			["name"] = "large br",
 			["filter"] = "large br",
-		}, -- [12]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1485029549,
-			["name"] = "stonehide",
-			["filter"] = "stonehide",
-		}, -- [13]
+		}, -- [14]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1485029508,
 			["name"] = "aethril",
 			["filter"] = "aethril",
-		}, -- [14]
-		{
-			["lastSearch"] = 1484870328,
-			["name"] = "Chaos Crystal/exact",
-			["filter"] = "Chaos Crystal/exact",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
 		}, -- [15]
 		{
 			["searchMode"] = "crafting",
@@ -695,7 +695,7 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "Sha Crystal/exact",
 		}, -- [108]
 	},
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @maxDeSearchLvl"] = 735,
 	["g@ @minDeSearchLvl"] = 1,

@@ -11,6 +11,11 @@ PawnCommon = {
 	["ShowTooltipIcons"] = true,
 	["LastVersion"] = 2.0115,
 	["ShowSocketingAdvisor"] = true,
+	["ShowSpecIcons"] = true,
+	["ShowLootUpgradeAdvisor"] = true,
+	["ButtonPosition"] = 2,
+	["IgnoreGemsWhileLeveling"] = true,
+	["ShowQuestUpgradeAdvisor"] = true,
 	["Scales"] = {
 		["\"MrRobot\":HUNTER3"] = {
 			["IconTexturePath"] = "INTERFACE\\ICONS\\ability_hunter_camouflage",
@@ -103,9 +108,6 @@ PawnCommon = {
 		["\"MrRobot\":DRUID1"] = {
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Nature_StarFall",
 			["PerCharacterOptions"] = {
-				["Uldaris-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 			},
 			["Color"] = "ff7d0a",
 			["LocalizedName"] = "Druid: Balance",
@@ -209,9 +211,6 @@ PawnCommon = {
 		["\"MrRobot\":DEMONHUNTER1"] = {
 			["IconTexturePath"] = "Interface\\Icons\\ability_demonhunter_specdps",
 			["PerCharacterOptions"] = {
-				["Leanara-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 			},
 			["Color"] = "a330c9",
 			["LocalizedName"] = "Demon Hunter: Havoc",
@@ -291,6 +290,9 @@ PawnCommon = {
 		["\"MrRobot\":ROGUE1"] = {
 			["IconTexturePath"] = "Interface\\Icons\\Ability_Rogue_DeadlyBrew",
 			["PerCharacterOptions"] = {
+				["Mandelbrot-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "fff569",
 			["LocalizedName"] = "Rogue: Assassination",
@@ -336,6 +338,9 @@ PawnCommon = {
 		["\"MrRobot\":DRUID4"] = {
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Nature_HealingTouch",
 			["PerCharacterOptions"] = {
+				["Uldaris-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ff7d0a",
 			["LocalizedName"] = "Druid: Restoration",
@@ -348,20 +353,20 @@ PawnCommon = {
 			["UnenchantedColor"] = "bf5d07",
 			["SpecID"] = 4,
 		},
-		["\"MrRobot\":DEMONHUNTER2"] = {
-			["IconTexturePath"] = "Interface\\Icons\\ability_demonhunter_spectank",
+		["\"MrRobot\":MAGE1"] = {
+			["IconTexturePath"] = "Interface\\Icons\\Spell_Holy_MagicalSentry",
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "a330c9",
-			["LocalizedName"] = "Demon Hunter: Vengeance",
-			["ClassID"] = 12,
+			["Color"] = "3fc7eb",
+			["LocalizedName"] = "Mage: Arcane",
+			["ClassID"] = 8,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = false,
-			["DoNotShow2HUpgrades"] = true,
+			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["UnenchantedColor"] = "7a2496",
-			["SpecID"] = 2,
+			["UnenchantedColor"] = "2f95b0",
+			["SpecID"] = 1,
 		},
 		["\"MrRobot\":WARRIOR1"] = {
 			["IconTexturePath"] = "Interface\\Icons\\Ability_Warrior_SavageBlow",
@@ -396,6 +401,24 @@ PawnCommon = {
 			["UnenchantedColor"] = "6566b2",
 			["SpecID"] = 2,
 		},
+		["\"MrRobot\":DEMONHUNTER2"] = {
+			["IconTexturePath"] = "Interface\\Icons\\ability_demonhunter_spectank",
+			["PerCharacterOptions"] = {
+				["Leanara-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
+			},
+			["Color"] = "a330c9",
+			["LocalizedName"] = "Demon Hunter: Vengeance",
+			["ClassID"] = 12,
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = false,
+			["DoNotShow2HUpgrades"] = true,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["UnenchantedColor"] = "7a2496",
+			["SpecID"] = 2,
+		},
 		["\"MrRobot\":SHAMAN3"] = {
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Nature_MagicImmunity",
 			["PerCharacterOptions"] = {
@@ -410,21 +433,6 @@ PawnCommon = {
 			["Provider"] = "MrRobot",
 			["UnenchantedColor"] = "0054a6",
 			["SpecID"] = 3,
-		},
-		["\"MrRobot\":MAGE1"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Holy_MagicalSentry",
-			["PerCharacterOptions"] = {
-			},
-			["Color"] = "3fc7eb",
-			["LocalizedName"] = "Mage: Arcane",
-			["ClassID"] = 8,
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = false,
-			["DoNotShow2HUpgrades"] = false,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["UnenchantedColor"] = "2f95b0",
-			["SpecID"] = 1,
 		},
 		["\"MrRobot\":PALADIN2"] = {
 			["IconTexturePath"] = "Interface\\Icons\\Ability_Paladin_ShieldoftheTemplar",
@@ -522,6 +530,9 @@ PawnCommon = {
 		["\"MrRobot\":MONK2"] = {
 			["IconTexturePath"] = "Interface\\Icons\\spell_monk_mistweaver_spec",
 			["PerCharacterOptions"] = {
+				["Orig-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "00ff96",
 			["LocalizedName"] = "Monk: Mistweaver",
@@ -537,6 +548,9 @@ PawnCommon = {
 		["\"MrRobot\":DEATHKNIGHT2"] = {
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Deathknight_FrostPresence",
 			["PerCharacterOptions"] = {
+				["Belrath-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ff4d6b",
 			["LocalizedName"] = "Death Knight: Frost",
@@ -645,9 +659,6 @@ PawnCommon = {
 		["\"MrRobot\":MONK3"] = {
 			["IconTexturePath"] = "Interface\\Icons\\spell_monk_windwalker_spec",
 			["PerCharacterOptions"] = {
-				["Orig-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 			},
 			["Color"] = "00ff96",
 			["LocalizedName"] = "Monk: Windwalker",
@@ -661,10 +672,5 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 	},
-	["ShowLootUpgradeAdvisor"] = true,
-	["ButtonPosition"] = 2,
-	["IgnoreGemsWhileLeveling"] = true,
-	["ShowQuestUpgradeAdvisor"] = true,
-	["ShowSpecIcons"] = true,
 	["ShowUpgradesOnTooltips"] = true,
 }

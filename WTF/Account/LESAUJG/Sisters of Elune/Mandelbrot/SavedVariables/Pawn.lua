@@ -1,12 +1,12 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0007,
+	["LastVersion"] = 2.0115,
 	["LastPlayerFullName"] = "Mandelbrot-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
 	["LastKeybindingsSet"] = 1,
 }
-PawnWowheadScaleProviderOptions = {
+PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "ROGUE",
-	["LastAdded"] = 5,
+	["LastAdded"] = 1,
 }

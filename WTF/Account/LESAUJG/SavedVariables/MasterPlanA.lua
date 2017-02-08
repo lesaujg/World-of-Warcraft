@@ -28,12 +28,12 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 		["Mandelbrot"] = {
-			["class"] = "ROGUE",
 			["faction"] = "Alliance",
+			["class"] = "ROGUE",
 		},
 		["Torinar"] = {
-			["class"] = "WARRIOR",
 			["faction"] = "Alliance",
+			["class"] = "WARRIOR",
 		},
 		["Orig"] = {
 			["recruitTime"] = 1468376595,
@@ -53,8 +53,8 @@ MasterPlanAG = {
 				},
 				["ti2"] = 122484,
 			},
-			["faction"] = "Alliance",
 			["curOil"] = 2735,
+			["faction"] = "Alliance",
 			["lastCacheTime"] = 1470667248,
 			["curRes"] = 7716,
 			["class"] = "MONK",
@@ -72,16 +72,16 @@ MasterPlanAG = {
 			["class"] = "MONK",
 		},
 		["Belrath"] = {
-			["faction"] = "Alliance",
 			["class"] = "DEATHKNIGHT",
+			["faction"] = "Alliance",
 		},
 		["Leanara"] = {
-			["faction"] = "Alliance",
 			["class"] = "DEMONHUNTER",
+			["faction"] = "Alliance",
 		},
 		["Galinar"] = {
-			["class"] = "PALADIN",
 			["lastCacheTime"] = 1470801228,
+			["class"] = "PALADIN",
 			["curRes"] = 1062,
 			["faction"] = "Alliance",
 		},

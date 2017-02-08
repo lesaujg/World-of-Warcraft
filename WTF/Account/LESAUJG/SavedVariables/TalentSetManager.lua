@@ -1,6 +1,6 @@
 
 TalentSetManager_Options = {
-	["visible"] = false,
+	["visible"] = true,
 	["ldb_last_selected"] = "talents",
 	["interface"] = {
 		["hide_info_button"] = false,
