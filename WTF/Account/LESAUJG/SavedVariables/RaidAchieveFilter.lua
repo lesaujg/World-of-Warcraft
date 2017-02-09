@@ -52,7 +52,7 @@ RAchF_DB = {
 		},
 		["Bracnar - Sisters of Elune"] = {
 			["minimap"] = {
-				["minimapPos"] = 59.6567703606186,
+				["minimapPos"] = 102.528934651683,
 			},
 		},
 		["Clothgar - Sisters of Elune"] = {

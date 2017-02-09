@@ -492,7 +492,7 @@ AskMrRobotDb3 = {
 			["FirstUse"] = false,
 			["Talents"] = {
 				[3] = "2133132",
-				[2] = "1331231",
+				[2] = "1233121",
 			},
 			["BagItemsAndCounts"] = {
 				[114822] = 4,
@@ -563,17 +563,36 @@ AskMrRobotDb3 = {
 				["LastDiff"] = 0,
 				["LastZone"] = "Northrend",
 			},
-			["BankItemsAndCounts"] = {
-				[118722] = 31,
-				[119293] = 2,
-				[109125] = 101,
-				[109126] = 77,
-				[109127] = 1309,
-				[109128] = 191,
-				[109129] = 282,
-				[118100] = 1,
-				[111557] = 164,
-				[111556] = 80,
+			["BagItems"] = {
+				"|cff0070dd|Hitem:114311::::::::100:269::1:1:86:::|h[Shadow-Gorged Bracers of the Peerless]|h|r", -- [1]
+				"|cffa335ee|Hitem:49295::::::::100:269::::::|h[Enlarged Onyxia Hide Backpack]|h|r", -- [2]
+				"|cffa335ee|Hitem:113843::::::::100:269::3::::|h[Spell-Sink Signet]|h|r", -- [3]
+				"|cff0070dd|Hitem:140696::::::::100:269:512:11:1:3380:100:::|h[Sword of Singing Wind]|h|r", -- [4]
+				"|cff0070dd|Hitem:124576::::::::100:269:4:1:3:70:647:653:529:::|h[Bladefang Gauntlets of the Peerless]|h|r", -- [5]
+				"|cff1eff00|Hitem:129508:5313:::::::100:269::::::|h[Mistdancer Cloak of Rage]|h|r", -- [6]
+				"|cff0070dd|Hitem:124588::::::::100:269:4:1:3:72:647:653:529:::|h[Bladefang Spaulders of the Peerless]|h|r", -- [7]
+				"|cffa335ee|Hitem:113856::::::::100:269::3::::|h[Nether Blast Leggings]|h|r", -- [8]
+				"|cff0070dd|Hitem:124572::::::::100:269:4:1:3:146:647:653:529:::|h[Bladefang Boots of the Fireflash]|h|r", -- [9]
+				"|cff0070dd|Hitem:124572::::::::100:269:4:1:3:139:647:652:529:::|h[Bladefang Boots of the Fireflash]|h|r", -- [10]
+				"|cff0070dd|Hitem:124576::::::::100:269:4:1:3:67:647:653:529:::|h[Bladefang Gauntlets of the Peerless]|h|r", -- [11]
+				"|cff0070dd|Hitem:124576::::::::100:269:4:1:3:80:647:653:529:::|h[Bladefang Gauntlets of the Peerless]|h|r", -- [12]
+				"|cff0070dd|Hitem:124572::::::::100:269:4:1:3:106:647:652:529:::|h[Bladefang Boots of the Quickblade]|h|r", -- [13]
+				"|cffa335ee|Hitem:124572::::::::100:269:4:1:3:24:764:653:529:::|h[Bladefang Boots of the Fireflash]|h|r", -- [14]
+				"|cff0070dd|Hitem:124592::::::::100:269:4:1:3:85:647:652:529:::|h[Bladefang Belt of the Peerless]|h|r", -- [15]
+				"|cff0070dd|Hitem:140696::::::::100:269:512:11:1:3380:100:::|h[Sword of Singing Wind]|h|r", -- [16]
+				"|cffa335ee|Hitem:113845::::::::100:269::3::::|h[Rune-Enscribed Hood]|h|r", -- [17]
+				"|cffa335ee|Hitem:124592::::::::100:269:4:1:3:183:764:652:529:::|h[Bladefang Belt of the Feverflare]|h|r", -- [18]
+				"|cff1eff00|Hitem:129502:5337:::::::100:269::::::|h[Mistdancer Sword]|h|r", -- [19]
+				"|cffa335ee|Hitem:113856::::::::100:269::3::::|h[Nether Blast Leggings]|h|r", -- [20]
+				"|cff0070dd|Hitem:114319::::::::100:269::1:1:155:::|h[Shadow-Gorged Boots of the Aurora]|h|r", -- [21]
+				"|cff0070dd|Hitem:114335::::::::100:269::1:1:209:::|h[Shadow-Gorged Spaulders of the Harmonious]|h|r", -- [22]
+				"|cff1eff00|Hitem:128365::::::::100:269::::::|h[Fleet Commander's Hat]|h|r", -- [23]
+				"|cffa335ee|Hitem:113612::::::::100:269::3::::|h[Scales of Doom]|h|r", -- [24]
+				"|cff1eff00|Hitem:129502:5337:::::::100:269::::::|h[Mistdancer Sword]|h|r", -- [25]
+				"|cff0070dd|Hitem:124588::::::::100:269:4:1:3:232:647:653:529:::|h[Bladefang Spaulders of the Aurora]|h|r", -- [26]
+				"|cff0070dd|Hitem:124588::::::::100:269:4:1:3:90:647:652:529:::|h[Bladefang Spaulders of the Quickblade]|h|r", -- [27]
+				"|cffa335ee|Hitem:113892::::::::100:269::3:1:560:::|h[Engineer's Grounded Gorget]|h|r", -- [28]
+				"|cff0070dd|Hitem:124576::::::::100:269:4:1:3:233:647:652:529:::|h[Bladefang Gauntlets of the Aurora]|h|r", -- [29]
 			},
 			["Equipped"] = {
 				[3] = {
@@ -611,40 +630,20 @@ AskMrRobotDb3 = {
 					"|cff0070dd|Hitem:128959::::::::100:270::11::::|h[Seal of House Wrynn]|h|r", -- [13]
 					"|cff0070dd|Hitem:138170::::::::100:270::14::::|h[Felstalker Spine]|h|r", -- [14]
 					"|cff0070dd|Hitem:138188::::::::100:270::14::::|h[Demon Commander's Drape]|h|r", -- [15]
-					"|cff0070dd|Hitem:141602::::::::100:270::9:3:1816:1815:3447:::|h[Eredar Splitter]|h|r", -- [16]
-					"|cff0070dd|Hitem:141602::::::::100:270::9:3:1816:1815:3447:::|h[Eredar Splitter]|h|r", -- [17]
+					"|cff0070dd|Hitem:140694::::::::100:270:512:11:1:3380:100:::|h[Brewmasher's Staff]|h|r", -- [16]
 				},
 			},
-			["BagItems"] = {
-				"|cff0070dd|Hitem:114311::::::::100:269::1:1:86:::|h[Shadow-Gorged Bracers of the Peerless]|h|r", -- [1]
-				"|cffa335ee|Hitem:49295::::::::100:269::::::|h[Enlarged Onyxia Hide Backpack]|h|r", -- [2]
-				"|cffa335ee|Hitem:113843::::::::100:269::3::::|h[Spell-Sink Signet]|h|r", -- [3]
-				"|cff0070dd|Hitem:140696::::::::100:269:512:11:1:3380:100:::|h[Sword of Singing Wind]|h|r", -- [4]
-				"|cff0070dd|Hitem:124576::::::::100:269:4:1:3:70:647:653:529:::|h[Bladefang Gauntlets of the Peerless]|h|r", -- [5]
-				"|cff1eff00|Hitem:129508:5313:::::::100:269::::::|h[Mistdancer Cloak of Rage]|h|r", -- [6]
-				"|cff0070dd|Hitem:124588::::::::100:269:4:1:3:72:647:653:529:::|h[Bladefang Spaulders of the Peerless]|h|r", -- [7]
-				"|cffa335ee|Hitem:113856::::::::100:269::3::::|h[Nether Blast Leggings]|h|r", -- [8]
-				"|cff0070dd|Hitem:124572::::::::100:269:4:1:3:146:647:653:529:::|h[Bladefang Boots of the Fireflash]|h|r", -- [9]
-				"|cff0070dd|Hitem:124572::::::::100:269:4:1:3:139:647:652:529:::|h[Bladefang Boots of the Fireflash]|h|r", -- [10]
-				"|cff0070dd|Hitem:124576::::::::100:269:4:1:3:67:647:653:529:::|h[Bladefang Gauntlets of the Peerless]|h|r", -- [11]
-				"|cff0070dd|Hitem:124576::::::::100:269:4:1:3:80:647:653:529:::|h[Bladefang Gauntlets of the Peerless]|h|r", -- [12]
-				"|cff0070dd|Hitem:124572::::::::100:269:4:1:3:106:647:652:529:::|h[Bladefang Boots of the Quickblade]|h|r", -- [13]
-				"|cffa335ee|Hitem:124572::::::::100:269:4:1:3:24:764:653:529:::|h[Bladefang Boots of the Fireflash]|h|r", -- [14]
-				"|cff0070dd|Hitem:124592::::::::100:269:4:1:3:85:647:652:529:::|h[Bladefang Belt of the Peerless]|h|r", -- [15]
-				"|cff0070dd|Hitem:140696::::::::100:269:512:11:1:3380:100:::|h[Sword of Singing Wind]|h|r", -- [16]
-				"|cffa335ee|Hitem:113845::::::::100:269::3::::|h[Rune-Enscribed Hood]|h|r", -- [17]
-				"|cffa335ee|Hitem:124592::::::::100:269:4:1:3:183:764:652:529:::|h[Bladefang Belt of the Feverflare]|h|r", -- [18]
-				"|cff1eff00|Hitem:129502:5337:::::::100:269::::::|h[Mistdancer Sword]|h|r", -- [19]
-				"|cffa335ee|Hitem:113856::::::::100:269::3::::|h[Nether Blast Leggings]|h|r", -- [20]
-				"|cff0070dd|Hitem:114319::::::::100:269::1:1:155:::|h[Shadow-Gorged Boots of the Aurora]|h|r", -- [21]
-				"|cff0070dd|Hitem:114335::::::::100:269::1:1:209:::|h[Shadow-Gorged Spaulders of the Harmonious]|h|r", -- [22]
-				"|cff1eff00|Hitem:128365::::::::100:269::::::|h[Fleet Commander's Hat]|h|r", -- [23]
-				"|cffa335ee|Hitem:113612::::::::100:269::3::::|h[Scales of Doom]|h|r", -- [24]
-				"|cff1eff00|Hitem:129502:5337:::::::100:269::::::|h[Mistdancer Sword]|h|r", -- [25]
-				"|cff0070dd|Hitem:124588::::::::100:269:4:1:3:232:647:653:529:::|h[Bladefang Spaulders of the Aurora]|h|r", -- [26]
-				"|cff0070dd|Hitem:124588::::::::100:269:4:1:3:90:647:652:529:::|h[Bladefang Spaulders of the Quickblade]|h|r", -- [27]
-				"|cffa335ee|Hitem:113892::::::::100:269::3:1:560:::|h[Engineer's Grounded Gorget]|h|r", -- [28]
-				"|cff0070dd|Hitem:124576::::::::100:269:4:1:3:233:647:652:529:::|h[Bladefang Gauntlets of the Aurora]|h|r", -- [29]
+			["BankItemsAndCounts"] = {
+				[118722] = 31,
+				[119293] = 2,
+				[109125] = 101,
+				[109126] = 77,
+				[109127] = 1309,
+				[109128] = 191,
+				[109129] = 282,
+				[118100] = 1,
+				[111557] = 164,
+				[111556] = 80,
 			},
 		},
 		["Mandelbrot - Sisters of Elune"] = {
@@ -659,7 +658,7 @@ AskMrRobotDb3 = {
 			["Equipped"] = {
 				{
 					"|cff1eff00|Hitem:33243:::::::2094090448:48:259::::::|h[Skirmisher's Cover]|h|r", -- [1]
-					"|cff1eff00|Hitem:12044::::::-14:2031628:48:259::::::|h[Arctic Pendant of the Tiger]|h|r", -- [2]
+					"|cffa335ee|Hitem:143908::::::::48:259:512:1:1:615:48:::|h[Choker of the Pure Heart]|h|r", -- [2]
 					"|cff1eff00|Hitem:9894::::::-68:-1414070259:48:259::::::|h[Huntsman's Shoulders of the Bear]|h|r", -- [3]
 					nil, -- [4]
 					"|cff1eff00|Hitem:11193:::::::2017691552:48:259::::::|h[Blazewind Breastplate]|h|r", -- [5]
@@ -737,7 +736,7 @@ AskMrRobotDb3 = {
 				"3123233", -- [1]
 				"0000000", -- [2]
 				"0000000", -- [3]
-				"0000000", -- [4]
+				"2233313", -- [4]
 			},
 			["Equipped"] = {
 				{
@@ -807,10 +806,29 @@ AskMrRobotDb3 = {
 				["LastZone"] = "Eastern Kingdoms",
 			},
 			["Talents"] = {
-				[2] = "0000000",
+				"3112330", -- [1]
+				"0000000", -- [2]
 			},
 			["Equipped"] = {
-				[2] = {
+				{
+					"|cff00ccff|Hitem:122245::::::::90:250::14:1:583:::|h[Polished Helm of Valor]|h|r", -- [1]
+					"|cffa335ee|Hitem:143905::::::::90:250:512:1:1:615:90:::|h[Winking Eye of Love]|h|r", -- [2]
+					"|cff00ccff|Hitem:122358::::::::90:250:::1:583:::|h[Stained Shadowcraft Spaulders]|h|r", -- [3]
+					nil, -- [4]
+					"|cff00ccff|Hitem:122383::::::::90:250:::1:583:::|h[Stained Shadowcraft Tunic]|h|r", -- [5]
+					"|cff1eff00|Hitem:35873:::::::1826930944:90:250::::::|h[Interlinked Chain Girdle]|h|r", -- [6]
+					"|cff00ccff|Hitem:122251::::::::90:250::14:1:583:::|h[Polished Legplates of Valor]|h|r", -- [7]
+					"|cff1eff00|Hitem:35934::::::::90:250::11::::|h[Ghoul-Crushing Stompers]|h|r", -- [8]
+					"|cff1eff00|Hitem:35910::::::::90:250::11::::|h[Shaleground Bracers]|h|r", -- [9]
+					"|cff1eff00|Hitem:35903::::::::90:250::11::::|h[Onyx Grips]|h|r", -- [10]
+					"|cff0070dd|Hitem:38671:::::::323380896:90:250::::::|h[Valanar's Signet Ring]|h|r", -- [11]
+					"|cff0070dd|Hitem:38672:::::::1395636992:90:250::::::|h[Keleseth's Signet Ring]|h|r", -- [12]
+					"|cff0070dd|Hitem:38259::::::::90:250::11::::|h[First Mate's Pocketwatch]|h|r", -- [13]
+					"|cff0070dd|Hitem:36871::::::::90:250::11::::|h[Fury of the Encroaching Storm]|h|r", -- [14]
+					"|cff00ccff|Hitem:122260::::::::90:250::14:1:583:::|h[Worn Stoneskin Gargoyle Cape]|h|r", -- [15]
+					"|cff00ccff|Hitem:122349::::::::90:250:::1:583:::|h[Bloodied Arcanite Reaper]|h|r", -- [16]
+				}, -- [1]
+				{
 					"|cff00ccff|Hitem:122245::::::::90:251::14:1:583:::|h[Polished Helm of Valor]|h|r", -- [1]
 					"|cffa335ee|Hitem:143905::::::::90:251:512:1:1:615:90:::|h[Winking Eye of Love]|h|r", -- [2]
 					"|cff00ccff|Hitem:122358::::::::90:251:::1:583:::|h[Stained Shadowcraft Spaulders]|h|r", -- [3]
@@ -827,7 +845,7 @@ AskMrRobotDb3 = {
 					"|cff0070dd|Hitem:36871::::::::90:251::11::::|h[Fury of the Encroaching Storm]|h|r", -- [14]
 					"|cff00ccff|Hitem:122260::::::::90:251::14:1:583:::|h[Worn Stoneskin Gargoyle Cape]|h|r", -- [15]
 					"|cff0070dd|Hitem:140715::::::::90:251:512:11:1:3380:72:::|h[Frost-Etched Runeblade]|h|r", -- [16]
-				},
+				}, -- [2]
 			},
 		},
 		["Torinar - Sisters of Elune"] = {
@@ -1841,10 +1859,10 @@ AskMrRobotDb3 = {
 				[109168] = 1,
 				[32757] = 1,
 				[141017] = 1,
-				[140192] = 1,
+				[140573] = 1,
 				[124440] = 4,
 				[139795] = 1,
-				[139811] = 13,
+				[140192] = 1,
 				[141605] = 1,
 				[6948] = 1,
 				[140801] = 1,
@@ -1892,7 +1910,7 @@ AskMrRobotDb3 = {
 				[144341] = 1,
 				[140166] = 1,
 				[139801] = 6,
-				[140573] = 1,
+				[139811] = 13,
 				[133572] = 23,
 				[139849] = 6,
 				[127770] = 1,
@@ -3066,7 +3084,7 @@ AskMrRobotDb3 = {
 				[139714] = 1,
 				[35280] = 1,
 				[40643] = 1,
-				[132510] = 5,
+				[122101] = 1,
 				[22816] = 1,
 				[123918] = 46,
 				[139710] = 1,
@@ -3101,11 +3119,11 @@ AskMrRobotDb3 = {
 				[132514] = 1,
 				[124669] = 2,
 				[124223] = 1,
-				[34078] = 1,
+				[139113] = 1,
 				[137487] = 1,
 				[21175] = 1,
 				[137433] = 1,
-				[113545] = 1,
+				[34078] = 1,
 				[136636] = 1,
 				[124287] = 1,
 				[65908] = 1,
@@ -3153,16 +3171,16 @@ AskMrRobotDb3 = {
 				[124210] = 1,
 				[71951] = 1,
 				[11122] = 1,
-				[116194] = 1,
+				[124099] = 272,
 				[121820] = 1,
 				[124545] = 1,
 				[124306] = 1,
 				[50049] = 1,
 				[140044] = 1,
-				[141351] = 1,
+				[116194] = 1,
 				[124115] = 170,
 				[23192] = 1,
-				[124099] = 272,
+				[141351] = 1,
 				[109118] = 1140,
 				[22439] = 1,
 				[129295] = 1,
@@ -3181,7 +3199,7 @@ AskMrRobotDb3 = {
 				[122618] = 4,
 				[109119] = 686,
 				[43348] = 1,
-				[139113] = 1,
+				[113545] = 1,
 				[19896] = 1,
 				[71953] = 2,
 				[19621] = 1,
@@ -3198,8 +3216,8 @@ AskMrRobotDb3 = {
 				[140718] = 1,
 				[15778] = 1,
 				[33047] = 1,
-				[122101] = 1,
 				[44731] = 1,
+				[132510] = 5,
 				[71715] = 2,
 				[124284] = 1,
 				[118922] = 1,
@@ -3224,10 +3242,10 @@ AskMrRobotDb3 = {
 				[88371] = 1,
 				[29301] = 1,
 				[107273] = 1,
-				[109584] = 1,
-				[46817] = 1,
 				[87399] = 31,
+				[46817] = 1,
 				[86889] = 1,
+				[109584] = 1,
 			},
 		},
 		["Clothgar - Sisters of Elune"] = {
@@ -3608,9 +3626,9 @@ AskMrRobotDb3 = {
 		["Ghiaccioli - Sisters of Elune"] = {
 			["Logging"] = {
 				["Auto"] = {
-					[33] = {
-					},
 					[0] = {
+					},
+					[33] = {
 					},
 				},
 			},
@@ -3646,9 +3664,9 @@ AskMrRobotDb3 = {
 		["Mandelbrot - Sisters of Elune"] = {
 			["Logging"] = {
 				["Auto"] = {
-					[33] = {
-					},
 					[0] = {
+					},
+					[33] = {
 					},
 				},
 			},
@@ -3666,9 +3684,9 @@ AskMrRobotDb3 = {
 					},
 					[631] = {
 					},
-					[530] = {
-					},
 					[603] = {
+					},
+					[530] = {
 					},
 				},
 			},
@@ -3700,9 +3718,9 @@ AskMrRobotDb3 = {
 		["Belrath - Sisters of Elune"] = {
 			["Logging"] = {
 				["Auto"] = {
-					[33] = {
-					},
 					[0] = {
+					},
+					[33] = {
 					},
 				},
 			},
@@ -3760,21 +3778,21 @@ AskMrRobotDb3 = {
 					},
 					[604] = {
 					},
-					[557] = {
+					[967] = {
 					},
 					[1515] = {
 					},
 					[1456] = {
 					},
-					[646] = {
+					[961] = {
 					},
-					[585] = {
+					[229] = {
 					},
 					[994] = {
 					},
 					[1220] = {
 					},
-					[1098] = {
+					[557] = {
 					},
 					[33] = {
 					},
@@ -3798,9 +3816,9 @@ AskMrRobotDb3 = {
 					},
 					[959] = {
 					},
-					[961] = {
+					[646] = {
 					},
-					[229] = {
+					[585] = {
 					},
 					[1662] = {
 					},
@@ -3832,11 +3850,11 @@ AskMrRobotDb3 = {
 					},
 					[552] = {
 					},
-					[967] = {
+					[1477] = {
 					},
 					[1159] = {
 					},
-					[1477] = {
+					[1098] = {
 					},
 					[1001] = {
 					},

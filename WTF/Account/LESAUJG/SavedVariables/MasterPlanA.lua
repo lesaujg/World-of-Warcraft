@@ -53,8 +53,8 @@ MasterPlanAG = {
 				},
 				["ti2"] = 122484,
 			},
-			["curOil"] = 2735,
 			["faction"] = "Alliance",
+			["curOil"] = 2735,
 			["lastCacheTime"] = 1470667248,
 			["curRes"] = 7716,
 			["class"] = "MONK",
@@ -76,8 +76,8 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 		["Leanara"] = {
-			["class"] = "DEMONHUNTER",
 			["faction"] = "Alliance",
+			["class"] = "DEMONHUNTER",
 		},
 		["Galinar"] = {
 			["lastCacheTime"] = 1470801228,
@@ -113,5 +113,7 @@ MasterPlanAG = {
 			["curRes"] = 5439,
 			["faction"] = "Alliance",
 		},
+	},
+	["IgnoreRewards"] = {
 	},
 }
