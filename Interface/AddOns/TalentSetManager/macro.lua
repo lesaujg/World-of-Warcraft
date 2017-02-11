@@ -1,4 +1,4 @@
-﻿-- Talent Sets
+-- Talent Sets
 -- by Jadya
 -- EU-Well of Eternity
 

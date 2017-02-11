@@ -1,5 +1,5 @@
-﻿-- Talent Set Manager
--- by Jadya
+-- Talent Set Manager
+-- by Vildiesel
 -- EU-Well of Eternity
 
 local version = 1
@@ -11,7 +11,7 @@ local L = addonTable.L
 
 local icon_filenames = {}
 local ignored_tiers = {}
-local max_talent_sets = 15
+local max_talent_sets = 30
 local numColumns = 3
 
 local buff_IDs   = { tome = {227563,227565,227041,226234}, prep = {32727,44521,228128} }

@@ -1,4 +1,4 @@
-﻿-- Talent Set Manager
+-- Talent Set Manager
 -- by Jadya
 -- EU-Well of Eternity
 

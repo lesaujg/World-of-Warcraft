@@ -151,6 +151,9 @@ PawnCommon = {
 		["\"MrRobot\":ROGUE2"] = {
 			["IconTexturePath"] = "Interface\\Icons\\INV_Sword_30",
 			["PerCharacterOptions"] = {
+				["Mandelbrot-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "fff569",
 			["ClassID"] = 4,
@@ -292,9 +295,6 @@ PawnCommon = {
 		["\"MrRobot\":ROGUE1"] = {
 			["IconTexturePath"] = "Interface\\Icons\\Ability_Rogue_DeadlyBrew",
 			["PerCharacterOptions"] = {
-				["Mandelbrot-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 			},
 			["Color"] = "fff569",
 			["ClassID"] = 4,
@@ -418,20 +418,20 @@ PawnCommon = {
 			["SpecID"] = 3,
 			["UnenchantedColor"] = "bfb74e",
 		},
-		["\"MrRobot\":DEMONHUNTER2"] = {
-			["IconTexturePath"] = "Interface\\Icons\\ability_demonhunter_spectank",
+		["\"MrRobot\":SHAMAN3"] = {
+			["IconTexturePath"] = "Interface\\Icons\\Spell_Nature_MagicImmunity",
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "a330c9",
-			["ClassID"] = 12,
-			["LocalizedName"] = "Demon Hunter: Vengeance",
+			["Color"] = "0070de",
+			["ClassID"] = 7,
+			["LocalizedName"] = "Shaman: Restoration",
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = false,
-			["DoNotShow2HUpgrades"] = true,
+			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["SpecID"] = 2,
-			["UnenchantedColor"] = "7a2496",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "0054a6",
 		},
 		["\"MrRobot\":PALADIN2"] = {
 			["IconTexturePath"] = "Interface\\Icons\\Ability_Paladin_ShieldoftheTemplar",
@@ -556,6 +556,21 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "bf3950",
 		},
+		["\"MrRobot\":DEMONHUNTER2"] = {
+			["IconTexturePath"] = "Interface\\Icons\\ability_demonhunter_spectank",
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "a330c9",
+			["ClassID"] = 12,
+			["LocalizedName"] = "Demon Hunter: Vengeance",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = false,
+			["DoNotShow2HUpgrades"] = true,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "7a2496",
+		},
 		["\"MrRobot\":MAGE1"] = {
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Holy_MagicalSentry",
 			["PerCharacterOptions"] = {
@@ -570,21 +585,6 @@ PawnCommon = {
 			["Provider"] = "MrRobot",
 			["SpecID"] = 1,
 			["UnenchantedColor"] = "2f95b0",
-		},
-		["\"MrRobot\":SHAMAN3"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Nature_MagicImmunity",
-			["PerCharacterOptions"] = {
-			},
-			["Color"] = "0070de",
-			["ClassID"] = 7,
-			["LocalizedName"] = "Shaman: Restoration",
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = false,
-			["DoNotShow2HUpgrades"] = false,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["SpecID"] = 3,
-			["UnenchantedColor"] = "0054a6",
 		},
 		["\"MrRobot\":DRUID4"] = {
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Nature_HealingTouch",

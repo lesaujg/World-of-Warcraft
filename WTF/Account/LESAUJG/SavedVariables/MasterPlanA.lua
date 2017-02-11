@@ -28,8 +28,8 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 		["Mandelbrot"] = {
-			["class"] = "ROGUE",
 			["faction"] = "Alliance",
+			["class"] = "ROGUE",
 		},
 		["Torinar"] = {
 			["class"] = "WARRIOR",
@@ -96,8 +96,8 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 		["Belrath"] = {
-			["faction"] = "Alliance",
 			["class"] = "DEATHKNIGHT",
+			["faction"] = "Alliance",
 		},
 		["Galinar"] = {
 			["class"] = "PALADIN",
