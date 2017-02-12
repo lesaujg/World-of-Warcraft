@@ -247,7 +247,7 @@ TukuiData = {
 	},
 	["Gold"] = {
 		["Sisters of Elune"] = {
-			["Torinara"] = 62842192,
+			["Torinara"] = 63873802,
 			["Magnara"] = 393,
 		},
 	},
