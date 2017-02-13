@@ -2,7 +2,6 @@ VER 3 010000000000005B "_Bestial Wrath" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Bestial Wrath
 /cast Aspect of the Wild
-/cast Titan's Thunder
 /use Tabard of the Protector
 /use 13
 /use 14
@@ -16,6 +15,7 @@ VER 3 010000000000005F "_Dire Beast" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /target [noexists] pettarget
 /cast Dire Beast
+/cast Titan's Thunder
 END
 VER 3 010000000000005C "_Kill Command" "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -24,7 +24,7 @@ VER 3 010000000000005C "_Kill Command" "INV_MISC_QUESTIONMARK"
 /petautocastoff [group] Growl
 /petautocaston [nogroup] Growl
 /petautocastoff [group] Thunderstomp
-/petautocaston [nogroup] Thunderstompl
+/petautocaston [nogroup] Thunderstomp
 /target [noexists] pettarget
 /cast Kill Command
 END

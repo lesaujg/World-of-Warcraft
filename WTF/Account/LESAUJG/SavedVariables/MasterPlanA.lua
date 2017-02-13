@@ -28,8 +28,8 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 		["Mandelbrot"] = {
-			["faction"] = "Alliance",
 			["class"] = "ROGUE",
+			["faction"] = "Alliance",
 		},
 		["Torinar"] = {
 			["faction"] = "Alliance",
@@ -100,8 +100,8 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 		["Galinar"] = {
-			["lastCacheTime"] = 1470801228,
 			["class"] = "PALADIN",
+			["lastCacheTime"] = 1470801228,
 			["curRes"] = 1062,
 			["faction"] = "Alliance",
 		},
