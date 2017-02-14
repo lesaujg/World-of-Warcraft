@@ -20,3 +20,10 @@ X: -45
 Y: -8
 W: 227
 H: 663
+Frame: SkadaBarWindowSkada
+FrameLevel: 5
+Anchor: BOTTOMLEFT
+X: 38
+Y: 182
+W: 240
+H: 200

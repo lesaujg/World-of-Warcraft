@@ -9,8 +9,6 @@ PawnCommon = {
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
-	["ShowSpecIcons"] = true,
-	["ShowSocketingAdvisor"] = true,
 	["Scales"] = {
 		["\"MrRobot\":HUNTER3"] = {
 			["IconTexturePath"] = "INTERFACE\\ICONS\\ability_hunter_camouflage",
@@ -103,9 +101,6 @@ PawnCommon = {
 		["\"MrRobot\":DRUID1"] = {
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Nature_StarFall",
 			["PerCharacterOptions"] = {
-				["Uldaris-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 			},
 			["Color"] = "ff7d0a",
 			["ClassID"] = 11,
@@ -531,6 +526,9 @@ PawnCommon = {
 		["\"MrRobot\":MONK2"] = {
 			["IconTexturePath"] = "Interface\\Icons\\spell_monk_mistweaver_spec",
 			["PerCharacterOptions"] = {
+				["Orig-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "00ff96",
 			["ClassID"] = 10,
@@ -591,6 +589,9 @@ PawnCommon = {
 		["\"MrRobot\":DRUID4"] = {
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Nature_HealingTouch",
 			["PerCharacterOptions"] = {
+				["Uldaris-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ff7d0a",
 			["ClassID"] = 11,
@@ -651,9 +652,6 @@ PawnCommon = {
 		["\"MrRobot\":MONK3"] = {
 			["IconTexturePath"] = "Interface\\Icons\\spell_monk_windwalker_spec",
 			["PerCharacterOptions"] = {
-				["Orig-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 			},
 			["Color"] = "00ff96",
 			["ClassID"] = 10,
@@ -667,6 +665,8 @@ PawnCommon = {
 			["UnenchantedColor"] = "00bf70",
 		},
 	},
+	["ShowSocketingAdvisor"] = true,
+	["ShowSpecIcons"] = true,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ButtonPosition"] = 2,
 	["IgnoreGemsWhileLeveling"] = true,

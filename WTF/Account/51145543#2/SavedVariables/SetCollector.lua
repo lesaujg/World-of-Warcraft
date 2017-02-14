@@ -1,5 +1,8 @@
 
 SetCollectorDB = {
+	["profileKeys"] = {
+		["Torinara - Sisters of Elune"] = "Default",
+	},
 	["global"] = {
 		["collections"] = {
 			{
@@ -59380,8 +59383,5 @@ SetCollectorDB = {
 				},
 			},
 		},
-	},
-	["profileKeys"] = {
-		["Torinara - Sisters of Elune"] = "Default",
 	},
 }
