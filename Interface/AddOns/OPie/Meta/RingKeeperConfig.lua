@@ -1,6 +1,6 @@
 local api, L, RK, conf, ORI, _, T = {}, OneRingLib.lang, OneRingLib.ext.RingKeeper, OneRingLib.ext.config, OneRingLib.ext.OPieUI, ...
-local AB = assert(T.ActionBook:compatible(2,14), "A compatible version of ActionBook is required")
-local gfxBase, EV = ([[Interface\AddOns\%s\gfx\]]):format((...)), T.Evie
+local AB = assert(T.ActionBook:compatible(2,19), "A compatible version of ActionBook is required")
+local gfxBase, EV = [[Interface\AddOns\OPie\gfx\]], T.Evie
 
 local FULLNAME, SHORTNAME do
 	function EV.PLAYER_LOGIN()
@@ -366,13 +366,16 @@ ringDetail = CreateFrame("Frame", nil, ringContainer) do
 	ringDetail.hiddenRing = CreateFrame("CheckButton", nil, ringDetail, "InterfaceOptionsCheckButtonTemplate")
 	ringDetail.hiddenRing:SetPoint("TOPLEFT", ringDetail.opportunistCA, "BOTTOMLEFT", 0, 2)
 	ringDetail.hiddenRing:SetScript("OnClick", function(self) api.setRingProperty("internal", self:GetChecked() and true or nil) end)
+	ringDetail.embedRing = CreateFrame("CheckButton", nil, ringDetail, "InterfaceOptionsCheckButtonTemplate")
+	ringDetail.embedRing:SetPoint("TOPLEFT", ringDetail.hiddenRing, "BOTTOMLEFT", 0, 2)
+	ringDetail.embedRing:SetScript("OnClick", function(self) api.setRingProperty("embed", self:GetChecked() and true or nil) end)
 
 	ringDetail.optionsLabel = ringDetail:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
 	ringDetail.optionsLabel:SetPoint("TOPLEFT", ringDetail, "TOPLEFT", 10, -125)
 	ringDetail.shareLabel = ringDetail:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-	ringDetail.shareLabel:SetPoint("TOPLEFT", ringDetail, "TOPLEFT", 10, -173)
+	ringDetail.shareLabel:SetPoint("TOPLEFT", ringDetail, "TOPLEFT", 10, -198)
 	ringDetail.shareLabel2 = ringDetail:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmallLeft")
-	ringDetail.shareLabel2:SetPoint("TOPLEFT", ringDetail, "TOPLEFT", 270, -173)
+	ringDetail.shareLabel2:SetPoint("TOPLEFT", ringDetail, "TOPLEFT", 270, -198)
 	ringDetail.shareLabel2:SetWidth(275)
 	ringDetail.export = CreateButton(ringDetail)
 	ringDetail.export:SetPoint("TOP", ringDetail.shareLabel2, "BOTTOM", 0, -2)
@@ -413,15 +416,18 @@ sliceDetail = CreateFrame("Frame", nil, ringContainer) do
 	sliceDetail:SetAllPoints()
 	sliceDetail.desc = sliceDetail:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
 	sliceDetail.desc:SetPoint("TOPLEFT", 7, -9) sliceDetail.desc:SetPoint("TOPRIGHT", -7, -7) sliceDetail.desc:SetJustifyH("LEFT")
+	local oy = 37
 	sliceDetail.skipSpecs = CreateFrame("Frame", "RKC_SkipSpecDropdown", sliceDetail, "UIDropDownMenuTemplate") do
 		local s = sliceDetail.skipSpecs
-		s:SetPoint("TOPLEFT", 250, -37); UIDropDownMenu_SetWidth(s, 250)
+		s:SetPoint("TOPLEFT", 250, -oy); UIDropDownMenu_SetWidth(s, 250)
+		oy = oy + 31
 		s.label = s:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
 		s.label:SetPoint("TOPLEFT", sliceDetail, "TOPLEFT", 10, -47)
 	end
 	sliceDetail.showConditional = conf.ui.lineInput(sliceDetail, true, 260) do
 		local c = sliceDetail.showConditional
-		c:SetPoint("TOPLEFT", 274, -68)
+		c:SetPoint("TOPLEFT", 274, -oy)
+		oy = oy + 23
 		c.label = c:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
 		c.label:SetPoint("TOPLEFT", sliceDetail, "TOPLEFT", 10, -73)
 		prepEditBox(c, function(self) api.setSliceProperty("show", self:GetText()) end)
@@ -438,14 +444,16 @@ sliceDetail = CreateFrame("Frame", nil, ringContainer) do
 	end
 	sliceDetail.caption = conf.ui.lineInput(sliceDetail, true, 260) do
 		local c = sliceDetail.caption
-		c:SetPoint("TOPLEFT", 274, -91)
+		c:SetPoint("TOPLEFT", 274, -oy)
+		oy = oy + 23
 		c.label = c:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
 		c.label:SetPoint("TOPLEFT", sliceDetail, "TOPLEFT", 10, -96)
 		prepEditBox(c, function(self) api.setSliceProperty("caption", self:GetText()) end)
 	end
 	sliceDetail.color = conf.ui.lineInput(sliceDetail, true, 85) do
 		local c = sliceDetail.color
-		c:SetPoint("TOPLEFT", 274, -114)
+		c:SetPoint("TOPLEFT", 274, -oy)
+		oy = oy + 23
 		c:SetTextInsets(22, 0, 0, 0) c:SetMaxBytes(7)
 		prepEditBox(c, function(self)
 			local r,g,b = self:GetText():match("(%x%x)(%x%x)(%x%x)")
@@ -498,7 +506,8 @@ sliceDetail = CreateFrame("Frame", nil, ringContainer) do
 	sliceDetail.icon = CreateFrame("Button", nil, sliceDetail) do
 		local f = sliceDetail.icon
 		f:SetHitRectInsets(0,-280,0,0) f:SetSize(18, 18)
-		f:SetPoint("TOPLEFT", 270, -137)
+		f:SetPoint("TOPLEFT", 270, -oy)
+		oy = oy + 23
 		f:SetHighlightTexture("Interface/Buttons/ButtonHilight-Square")
 		f:SetNormalFontObject(GameFontHighlightSmall) f:SetHighlightFontObject(GameFontGreenSmall) f:SetPushedTextOffset(3/4, -3/4)
 		f:SetText(" ") f:GetFontString():ClearAllPoints() f:GetFontString():SetPoint("LEFT", f, "RIGHT", 4, 0)
@@ -572,7 +581,8 @@ sliceDetail = CreateFrame("Frame", nil, ringContainer) do
 			if i > 1 then e:SetPoint("TOPLEFT", sliceDetail.optionBoxes[i-1], "BOTTOMLEFT", 0, 5) end
 			sliceDetail.optionBoxes[i] = e
 		end
-		sliceDetail.optionBoxes[1]:SetPoint("TOPLEFT", 266, -158)
+		sliceDetail.optionBoxes[1]:SetPoint("TOPLEFT", 266, -oy)
+		oy = oy + 4*23
 		sliceDetail.optionBoxes.label = sliceDetail:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
 		sliceDetail.optionBoxes.label:SetPoint("TOPLEFT", sliceDetail, "TOPLEFT", 10, -165)
 	end
@@ -833,13 +843,15 @@ newSlice = CreateFrame("Frame", nil, ringContainer) do
 	end)
 end
 
-local knownProps = {lockRotation="Forget sub-ring rotation", fastClick="Allow as quick action", byName="Also use items with the same name", forceShow="Always show this slice", onlyEquipped="Only show when equipped", clickUsingRightButton="Simulate a right-click"}
+local knownProps = {lockRotation="Forget sub-ring rotation", fastClick="Allow as quick action", byName="Also use items with the same name", forceShow="Always show this slice", onlyEquipped="Only show when equipped", clickUsingRightButton="Simulate a right-click", embed1="Display as embedded in this ring", embed2="Display as nested in this ring"}
 local function displaySliceOptions(id, ringName, slice, a, ...)
-	local b, enabled = sliceDetail.optionBoxes[id], 1
+	local b, enabled, v = sliceDetail.optionBoxes[id], 1
 	if not a or not b then return id end
 	if knownProps[a] then
-		b.prop, id, b.tooltipText = a, id + 1
-		b:SetChecked(slice[a])
+		b.prop, id, v, b.tooltipText = a, id + 1, slice[a]
+		if a == "embed1" then v = slice.embed == true
+		elseif a == "embed2" then v = slice.embed == false end
+		b:SetChecked(v)
 		if (a == "fastClick" and not OneRingLib:GetOption("CenterAction", ringName)) then
 			b.tooltipText, enabled = (L"You must enable the %s option for this ring in OPie options to use quick actions."):format("|cffffffff" .. L"Quick action at ring center" .. "|r"), nil
 			b:SetChecked(nil)
@@ -936,6 +948,7 @@ function api.selectRing(_, name)
 	ringDetail.rotation:SetValue(desc.offset or 0)
 	ringDetail.name:SetText(desc.name or name)
 	ringDetail.hiddenRing:SetChecked(desc.internal)
+	ringDetail.embedRing:SetChecked(desc.embed)
 	currentRing, currentRingName, sliceBaseIndex, currentSliceIndex = desc, name, 1
 	api.refreshDisplay()
 	ringDetail:Show()
@@ -1079,6 +1092,12 @@ function api.setSliceProperty(prop, ...)
 		local ss = sliceDetail.skipSpecs:GetValue()
 		local sh = sliceDetail.showConditional:GetText()
 		slice.show = (ss or sh ~= "") and ((ss and ("[spec:" .. ss .. "] hide;") or "") .. sh) or nil
+	elseif prop == "embed1" or prop == "embed2" then
+		if ... then
+			slice.embed = prop == "embed1"
+		else
+			slice.embed = nil
+		end
 	else
 		slice[prop] = (...)
 	end
@@ -1087,11 +1106,14 @@ function api.setSliceProperty(prop, ...)
 		local _, _, ico, icoext = getSliceInfo(currentRing[currentSliceIndex])
 		if prop ~= "color" then sliceDetail.icon:SetIcon(ico, slice.icon, icoext, currentRing[currentSliceIndex]) end
 		sliceDetail.color:SetColor(getSliceColor(slice, ico))
+	elseif prop == "embed1" or prop == "embed2" then
+		api.updateSliceOptions(slice)
 	end
 	api.updateRingLine()
 end
-function api.updateOptionBoxes(slice)
-	local last = displaySliceOptions(1, currentRingName, slice, "fastClick", slice[1] == "ring" and "lockRotation")
+function api.updateSliceOptions(slice)
+	local isCollection = slice[1] == "ring"
+	local last = displaySliceOptions(1, currentRingName, slice, "fastClick", isCollection and "lockRotation", isCollection and "embed1", isCollection and "embed2")
 	last = displaySliceOptions(last, currentRingName, slice, AB:GetActionOptions(slice[1]))
 	for i=1,#sliceDetail.optionBoxes do
 		sliceDetail.optionBoxes[i]:SetShown(i < last)
@@ -1132,7 +1154,7 @@ function api.updateSliceDisplay(id, desc)
 	if not securecall(socall, sliceDetail.editorContainer, "SetEditor", T.TEMP_AB_EDITORS and T.TEMP_AB_EDITORS[desc[1]], desc) then
 		securecall(socall, sliceDetail.editorContainer, "SetEditor", nil)
 	end
-	api.updateOptionBoxes(desc)
+	api.updateSliceOptions(desc)
 	sliceDetail:Show()
 	currentSliceIndex = id
 end
@@ -1197,7 +1219,7 @@ function api.saveRing(name, data)
 end
 function api.refreshDisplay()
 	if currentRing and currentRing[currentSliceIndex] then
-		api.updateOptionBoxes(currentRing[currentSliceIndex])
+		api.updateSliceOptions(currentRing[currentSliceIndex])
 	end
 	if currentRing then
 		ringDetail.binding:SetBindingText(api.getRingProperty("hotkey"))
@@ -1237,6 +1259,7 @@ function panel:refresh()
 	ringDetail.rotation.label:SetText(L"Rotation:")
 	ringDetail.optionsLabel:SetText(L"Options:")
 	ringDetail.hiddenRing.Text:SetText(L"Hide this ring")
+	ringDetail.embedRing.Text:SetText(L"Embed into other rings by default")
 	ringDetail.opportunistCA.Text:SetText(L"Pre-select a quick action slice")
 	ringDetail.shareLabel:SetText(L"Snapshot:")
 	
@@ -1289,9 +1312,6 @@ end
 
 SLASH_OPIE_CUSTOM_RINGS1 = "/rk"
 function SlashCmdList.OPIE_CUSTOM_RINGS()
-	if not panel:IsVisible() then
-		InterfaceOptionsFrame_OpenToCategory(panel)
-		InterfaceOptionsFrame_OpenToCategory(panel)
-	end
+	conf.open(panel)
 end
 conf.AddSlashSuffix(SlashCmdList.OPIE_CUSTOM_RINGS, "custom", "rings")

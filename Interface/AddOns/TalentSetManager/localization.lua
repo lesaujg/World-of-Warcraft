@@ -1,5 +1,5 @@
 -- Talent Set Manager
--- by Jadya - EU Well of Eternity
+-- by Vildiesel - EU Well of Eternity
 
 local addonName, addonTable = ...
 
@@ -7,12 +7,14 @@ local locale = GetLocale()
 addonTable.L = {}
 local L = addonTable.L
 
-local debug
+--local debug
 --[===[@debug@
-debug = true
+--debug = true
 --@end-debug@]===]
  
-if debug then
+-- let's set them twice to be sure (in v1.1.5 the repository missed some languages)
+ 
+--if debug then
  L["set_already_exists"] = "A talent set with that name already exists"
  L["sets_limit_reached"] = "You cannot create any more new talent sets."
  L["confirm_save_set"] = "Would you like to save the talent set '%s'?"
@@ -44,8 +46,8 @@ if debug then
  L["options_hide_info_button"] = "Hide Info Button"
  
  -- new
- return
-end
+ --return
+--end
 
 if locale == "esES" then 
 elseif locale == "esMX" then 

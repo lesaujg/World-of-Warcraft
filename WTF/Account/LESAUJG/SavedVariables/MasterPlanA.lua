@@ -24,16 +24,16 @@ MasterPlanAG = {
 			["class"] = "HUNTER",
 		},
 		["Ghiaccioli"] = {
-			["class"] = "MAGE",
 			["faction"] = "Alliance",
+			["class"] = "MAGE",
 		},
 		["Mandelbrot"] = {
-			["faction"] = "Alliance",
 			["class"] = "ROGUE",
+			["faction"] = "Alliance",
 		},
 		["Torinar"] = {
-			["faction"] = "Alliance",
 			["class"] = "WARRIOR",
+			["faction"] = "Alliance",
 		},
 		["Orig"] = {
 			["recruitTime"] = 1468376595,
@@ -72,16 +72,16 @@ MasterPlanAG = {
 			["class"] = "MONK",
 		},
 		["Belrath"] = {
-			["class"] = "DEATHKNIGHT",
 			["faction"] = "Alliance",
+			["class"] = "DEATHKNIGHT",
 		},
 		["Leanara"] = {
 			["faction"] = "Alliance",
 			["class"] = "DEMONHUNTER",
 		},
 		["Galinar"] = {
-			["class"] = "PALADIN",
 			["lastCacheTime"] = 1470801228,
+			["class"] = "PALADIN",
 			["curRes"] = 1062,
 			["faction"] = "Alliance",
 		},

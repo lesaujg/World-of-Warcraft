@@ -1,9 +1,8 @@
 ------------------------------------------------------------------------
-r36 | Saregon | 2017-02-10 08:46:21 -0600 (Fri, 10 Feb 2017) | 1 line
+r38 | Saregon | 2017-02-13 09:08:11 -0600 (Mon, 13 Feb 2017) | 1 line
 Changed paths:
-   M /trunk/TalentSetManager.lua
-   M /trunk/TalentSetManager.toc
+   M /trunk/localization.lua
 
-max_talent_sets temporarily set to 30 (planning to remove it)
+localization fix
 ------------------------------------------------------------------------
 

@@ -90,7 +90,7 @@ do -- mount: mount ID
 		return actionMap[id]
 	end, function(id)
 		local name, sid, icon = GetMountInfo(id)
-		return "Mount", name, icon, nil, GameTooltip.SetMountSpellByID, sid
+		return "Mount", name, icon, nil, GameTooltip.SetMountBySpellID, sid
 	end)
 	do -- random
 		local rname, _, ricon = GetSpellInfo(150544)

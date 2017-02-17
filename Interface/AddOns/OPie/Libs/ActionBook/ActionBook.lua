@@ -1,4 +1,4 @@
-local apiV, api, MAJ, REV, ext, T = {}, {}, 2, 18, ...
+local apiV, api, MAJ, REV, ext, T = {}, {}, 2, 19, ...
 if T.ActionBook then return end
 apiV[MAJ], ext, T.Kindred, T.Rewire = api, {Kindred=T.Kindred, Rewire=T.Rewire, ActionBook={}}
 
@@ -109,32 +109,55 @@ local actionCallbacks, core, coreEnv = {}, CreateFrame("FRAME", nil, nil, "Secur
 		collections, tokens, metadata, actConditionals, tokConditionals = newtable(), newtable(), newtable(), newtable(), newtable()
 		actInfo, busy, idle, _NIL = newtable(), newtable(), newtable(), newtable()
 		for _, c in pairs(self:GetChildList(newtable())) do idle[c] = c:GetName() end
-		KR, colStack, idxStack, outCount = self:GetFrameRef("KR"), newtable(), newtable(), newtable()
+		KR, colStack, idxStack, ecStack, outCount = self:GetFrameRef("KR"), newtable(), newtable(), newtable(), newtable()
 	]=])
 	coreEnv = GetManagedEnvironment(core)
 end
 core:SetAttribute("GetCollectionContent", [[-- AB:GetCollectionContent(slot)
-	local i, ret, root, col, idx, aid = 1, "", tonumber((...)) or 0
+	local i, ret, root, col, idx, aid, ecol = 1, "", tonumber((...)) or 0
 	wipe(outCount)
-	colStack[i], idxStack[i] = root, 1
+	colStack[i], idxStack[i], ecStack[i] = root, 1, col
 	repeat
-		col, idx = colStack[i], idxStack[i]
-		if outCount[col] == nil then
-			outCount[col] = 0
-			self:CallMethod("notifyCollectionOpen", col)
+		col, idx, ecol = colStack[i], idxStack[i], ecStack[i]
+		if idx == 1 and not outCount[col] then
+			if outCount[col] == nil then
+				self:CallMethod("notifyCollectionOpen", col)
+			end
+			outCount[col] = not ecol and 0
 		end
 		aid, idxStack[i] = collections[col][idx], idx + 1
-		if not aid then
-			i = i - 1
-		elseif collections[aid] and not outCount[aid] then
-			i, idxStack[i], colStack[i+1], idxStack[i+1] = i + 1, idx, aid, 1
-		elseif aid and (outCount[aid] or 1) > 0 then
+		if aid then
 			local tok = tokens[col][idx]
 			local check1, check2 = actConditionals[aid], tokConditionals[tok]
 			if (check1 == nil or (KR:RunAttribute("EvaluateCmdOptions", check1) or "hide") ~= "hide") and
 			   (check2 == nil or (KR:RunAttribute("EvaluateCmdOptions", check2) or "hide") ~= "hide") then
-				ret = ret .. "\n" .. col .. " " .. (outCount[col] + 1) .. " " .. aid .. " " .. tok
-				outCount[col] = outCount[col] + 1
+				local isCollection = collections[aid]
+				local tem = isCollection and metadata["tokEmbed-" .. tok]
+				local isEmbed = isCollection and (tem == nil and metadata["embed-" .. aid] or tem)
+				if isEmbed then
+					local canEmbed = true
+					for j=1, i-1 do
+						if colStack[j] == aid then
+							canEmbed = false
+							break
+						end
+					end
+					if canEmbed then
+						i, colStack[i+1], idxStack[i+1], ecStack[i+1] = i + 1, aid, 1, ecol or col, ecol or col
+					end
+				elseif isCollection and not outCount[aid] then
+					i, idxStack[i], colStack[i+1], idxStack[i+1], ecStack[i+1] = i + 1, idx, aid, 1, false
+				elseif (outCount[aid] or 1) > 0 then
+					local col = ecol or col
+					local nid = outCount[col] + 1
+					ret = ret .. "\n" .. col .. " " .. nid .. " " .. aid .. " " .. tok
+					outCount[col] = nid
+				end
+			end
+		else
+			i = i - 1
+			if colStack[i] == ecol then
+				ecol = nil
 			end
 		end
 	until i == 0
@@ -227,17 +250,26 @@ function updateHandlers.collection(id, _count, idList)
 	local spec, tokens, visibility = "", "", ""
 	for i=1,#idList do
 		local tok = idList[i]
-		local aid, vis = idList[tok], idList['__visibility-' .. tok]
+		local aid, vis, emb = idList[tok], idList['__visibility-' .. tok], idList['__embed-' .. tok]
 		if type(tok) ~= "string" then
 			return false, "Collection entry #%d: unsupported token type (%s)", i, type(tok)
+		elseif not tok:match("^[A-Za-z][A-Za-z0-9_=/]*$") then
+			return false, "Collection entry #%d: invalid token format (%s)", i, tok
 		elseif allocatedActions[aid] == nil then
 			return false, "Collection entry #%d: unallocated action id", i, tostring(idList[i])
 		elseif vis ~= nil and type(vis) ~= "string" then
 			return false, "Collection entry #%d: unsupported visibility conditional type (%s)", i, type(vis)
+		elseif emb ~= nil and type(emb) ~= "boolean" then
+			return false, "Collection entry #%d: unsupported embed flag type (%s)", i, type(emb)
 		end
-		spec, tokens, visibility = spec .. idList[tok] .. ", ", tokens .. safequote(tok) .. ", ", ('%s\ntokConditionals[%s] = %s'):format(visibility, safequote(tok), vis and safequote(vis) or "nil")
+		vis = vis and safequote(vis) or "nil"
+		emb = emb == nil and "nil" or tostring(emb)
+		spec, tokens, visibility = spec .. idList[tok] .. ", ", tokens .. safequote(tok) .. ", ", ('%s\ntk = %s; tokConditionals[tk], metadata["tokEmbed-" .. tk] = %s, %s'):format(visibility, safequote(tok), vis, emb)
 	end
-	DeferExecute(("local id = %d; collections[id], tokens[id], metadata['openAction-' .. id] = newtable(%s nil), newtable(%s nil), %s %s"):format(id, spec, tokens, type(idList.__openAction) == "number" and idList.__openAction or "nil", visibility))
+	local openAction = type(idList.__openAction) == "number" and idList.__openAction or "nil"
+	local embed = type(idList.__embed) == "boolean" and tostring(idList.__embed) or "nil"
+	DeferExecute(("local id, tk = %d; collections[id], tokens[id], metadata['openAction-' .. id], metadata['embed-' .. id] = newtable(%s nil), newtable(%s nil), %s, %s; %s")
+		:format(id, spec, tokens, openAction, embed, visibility))
 	return true
 end
 function createHandlers.clone(id, _count, id2)

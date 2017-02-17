@@ -17,6 +17,57 @@ function config.createFrame(name, parent)
 	frame:Hide()
 	return frame
 end
+function config.open(panel)
+	InterfaceOptionsFrame_OpenToCategory(panel)
+	if not panel:IsVisible() then
+		-- Fails on first run as adding a category doesn't trigger a list update, but OTC does.
+		InterfaceOptionsFrame_OpenToCategory(panel)
+	end
+	
+	-- If the panel is offscreen in the AddOns list, both OTC calls above will fail;
+	-- in any case, we want all the children/sibling categories to be visible.
+	local cat, parent = INTERFACEOPTIONS_ADDONCATEGORIES, panel.parent or panel.name
+	local numVisiblePredecessors, parentPanel, lastRelatedPanel = 0
+	for i=1,#cat do
+		local e = cat[i]
+		if e.name == parent then
+			parentPanel, lastRelatedPanel = e, numVisiblePredecessors+1
+		elseif parentPanel then
+			if e.parent ~= parent then
+				break
+			end
+			lastRelatedPanel = lastRelatedPanel + 1
+		elseif not e.hidden then
+			numVisiblePredecessors = numVisiblePredecessors + 1
+		end
+	end
+	if lastRelatedPanel then
+		local buttons, ofsY = InterfaceOptionsFrameAddOns.buttons
+		if lastRelatedPanel - InterfaceOptionsFrameAddOnsList.offset > #buttons then
+			ofsY = (lastRelatedPanel - #buttons)*buttons[1]:GetHeight()
+			-- If the parent is collapsed, we might only be able to get it to show here
+			local _, maxY = InterfaceOptionsFrameAddOnsListScrollBar:GetMinMaxValues()
+			InterfaceOptionsFrameAddOnsListScrollBar:SetValue(math.min(ofsY, maxY))
+		end
+		-- If the parent is collapsed, expand it
+		for i=1,parentPanel and parentPanel.collapsed and #buttons or 0 do
+			if buttons[i].element == parentPanel then
+				InterfaceOptionsListButton_ToggleSubCategories(buttons[i])
+				break
+			end
+		end
+		if ofsY then
+			-- Set the proper scroll value, and force selection highlight to be updated
+			InterfaceOptionsFrameAddOnsListScrollBar:SetValue(ofsY)
+			InterfaceOptionsFrame_OpenToCategory(panel)
+		end
+	end
+	
+	if not panel:IsVisible() then
+		-- I give up.
+		InterfaceOptionsList_DisplayPanel(panel)
+	end
+end
 do -- ext.config.ui
 	config.ui = {}
 	do -- multilineInput
@@ -628,16 +679,7 @@ SlashCmdList["OPIE"] = function(args, ...)
 	local ext = slashExtensions[(args:match("%S+") or ""):lower()]
 	if ext then
 		ext(args, ...)
-	elseif not frame:IsVisible() then
-		InterfaceOptionsFrame_OpenToCategory(frame)
-		InterfaceOptionsFrame_OpenToCategory(frame)
-		if frame.collapsed then
-			for i, button in pairs(InterfaceOptionsFrameAddOns.buttons) do
-				if (type(button) == "table" and button.element == frame) then
-					OptionsListButtonToggle_OnClick(button.toggle);
-					break
-				end
-			end
-		end
+	else
+		config.open(frame)
 	end
 end

@@ -33,6 +33,9 @@ VER 3 0000000000000087 "RandomMount" "INV_MISC_QUESTIONMARK"
 /click [nobtn:2]LiteMount
 /click [btn:2]LiteMount RightButton
 END
+VER 3 000000000000009D "Reload" "132096"
+/reload
+END
 VER 3 000000000000009B "sadf" "INV_MISC_QUESTIONMARK"
 /cleartarget
 /tar Golden Hopling

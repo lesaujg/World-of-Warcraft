@@ -26,7 +26,7 @@ R:SetRing("DruidFeral", {
 	{id=22812, _u="b"}, -- barkskin
 	{id=61336, _u="i"}, -- survival instincts
 	{id=102401, _u="c"}, -- feral charge
-	{id="/cast {{spell:102543/102558}}", _u="n"}, -- Incarnation
+	{id="/cast {{spell:102543/102558}}", show="[talent:75.2]", _u="n"}, -- Incarnation
 	{id="/cast [nomod,@player][mod,@none] {{spell:8936}}", show="[spec:102/104/105] hide;", _u="h"}, -- Regrowth
 	name=L"Feral", hotkey="[form:bear/cat] SECONDARY; ALT-SECONDARY", limit="DRUID", _u="OPCDF"
 })
@@ -136,8 +136,7 @@ R:SetRing("PaladinAuras", {
 })
 R:SetRing("PaladinBlessing", {
 	{id=203538, _u="k"}, -- kings
-	{id=203528, _u="m"}, -- might
-	{id=203539, _u="w"}, -- might
+	{id=203539, _u="w"}, -- wisdom
 	name=L"Blessings", limit="PALADIN", internal=true, _u="OPCPB"
 })
 R:SetRing("PaladinTools", {

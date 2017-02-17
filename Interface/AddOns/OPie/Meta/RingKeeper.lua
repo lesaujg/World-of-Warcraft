@@ -6,10 +6,10 @@ local function assert(condition, text, level, ...)
 	return (not condition) and error(tostring(text):format(...), 1 + (level or 1)) or condition
 end
 
-local AB = assert(T.ActionBook:compatible(2,14), "A compatible version of ActionBook is required")
+local AB = assert(T.ActionBook:compatible(2,19), "A compatible version of ActionBook is required")
 local RW = assert(T.ActionBook:compatible("Rewire", 1,8), "A compatible version of Rewire is required")
 local ORI = OneRingLib.ext.OPieUI
-local CLASS, NAME, FULLNAME
+local CLASS, FULLNAME
 
 local RK_ParseMacro, RK_QuantizeMacro do -- +RingKeeper:SetMountPreference(groundSpellID, airSpellID)
 	local castAlias = {[SLASH_CAST1]=1,[SLASH_CAST2]=1,[SLASH_CAST3]=1,[SLASH_CAST4]=1,[SLASH_USE1]=1,[SLASH_USE2]=1,["#show"]=1,["#showtooltip"]=1,[SLASH_CASTSEQUENCE1]=2,[SLASH_CASTSEQUENCE2]=2,[SLASH_CASTRANDOM1]=3,[SLASH_CASTRANDOM2]=3}
@@ -327,6 +327,13 @@ local function RK_SyncRing(name, force, tok)
 	if not force and tok == desc._lastUpdateToken then return end
 	desc._lastUpdateToken = tok
 	
+	if not cid then
+		wipe(sharedCollection)
+		changed, cid = true, AB:CreateActionSlot(nil, nil, "collection", sharedCollection)
+		RK_CollectionIDs[name], RK_CollectionIDs[cid] = cid, name
+		OneRingLib:SetRing(name, cid, desc)
+	end
+
 	for i, e in ipairs(desc) do
 		local ident, action = e[1]
 		if ident == "macrotext" then
@@ -335,26 +342,24 @@ local function RK_SyncRing(name, force, tok)
 		elseif type(ident) == "string" then
 			action = AB:GetActionSlot(unpackABAction(e, 1))
 		end
-		changed = changed or (action ~= e._action) or (e.fastClick ~= e._fastClick) or (e.lockRotation ~= e._lockRotation) or (action and (e.show ~= e._show))
+		changed = changed or (action ~= e._action) or (e.fastClick ~= e._fastClick) or (e.lockRotation ~= e._lockRotation) or (action and (e.show ~= e._show) or (e.embed ~= e._embed))
 		e._action, e._fastClick, e._lockRotation = action, e.fastClick, e.lockRotation
 	end
-	
-	if cid and not changed and not force then return end
+	changed = changed or (desc._embed ~= desc.embed)
+
+	if not changed and not force then return end
 	local collection, cn = sharedCollection, 1
 	wipe(collection)
 	for i, e in ipairs(desc) do
 		if e._action then
 			collection[e.sliceToken], collection[cn], cn = e._action, e.sliceToken, cn + 1
 			collection['__visibility-' .. e.sliceToken], e._show = e.show or nil, e.show
+			collection['__embed-' .. e.sliceToken], e._embed = e.embed, e.embed
 			ORI:SetDisplayOptions(e.sliceToken, e.icon, e.caption, e._r, e._g, e._b)
 		end
 	end
-	if cid then
-		AB:UpdateActionSlot(cid, collection)
-	else
-		cid = AB:CreateActionSlot(nil, nil, "collection", collection)
-		RK_CollectionIDs[name], RK_CollectionIDs[cid] = cid, name
-	end
+	collection['__embed'], desc._embed = desc.embed, desc.embed
+	AB:UpdateActionSlot(cid, collection)
 	OneRingLib:SetRing(name, cid, desc)
 end
 local function dropUnderscoreKeys(t)
@@ -384,17 +389,11 @@ local function RK_SanitizeDescription(props)
 		elseif v[1] == nil then
 			table.remove(props, i)
 		end
-		if type(v.skipSpecs) == "string" then -- TEMP[<Q1]: transition skipSpecs to [spec:] conditional
-			local ss = v.skipSpecs:gsub("%D+", "/"):match("%d[%d/]*%d")
-			v.show, v.skipSpecs = (ss and ("[spec:" .. ss .. "] hide;") or "") .. (v.show or "")
-		end
 		v.show = v.show ~= "" and v.show or nil
-		v.fastClick, v.fcSlice, v.onlyWhilePresent = v.fastClick or v.fcSlice -- TEMP[<L8]
-		v.sliceToken, v._action = v.sliceToken or (uprefix and type(v._u) == "string" and (uprefix .. v._u)) or AB:CreateToken()
+		v.sliceToken = v.sliceToken or (uprefix and type(v._u) == "string" and (uprefix .. v._u)) or AB:CreateToken()
+		v._action, v._embed = nil
 	end
-	if props.limit == NAME then
-		props.limit = FULLNAME
-	end
+	props._embed = nil
 	return props
 end
 local function RK_SerializeDescription(props)
@@ -430,7 +429,7 @@ local function svInitializer(event, _name, sv)
 
 	elseif event == "LOGIN" then
 		local name, realm, _ = UnitFullName("player")
-		NAME, FULLNAME, _, CLASS = name, name .. '-' .. realm, UnitClass("player")
+		FULLNAME, _, CLASS = name .. '-' .. realm, UnitClass("player")
 
 		unlocked = true
 		local deleted, flags, mousemap = SV.OPieDeletedRings or RK_DeletedRings, SV.OPieFlagStore or RK_FlagStore

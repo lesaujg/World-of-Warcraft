@@ -90,7 +90,6 @@ do -- Click dispatcher
 		modState, sizeSq, bindProxy, sliceProxy, overProxy = "", 16*9001^2, self:GetFrameRef("bindProxy"), self:GetFrameRef("sliceBindProxy"), self:GetFrameRef("overBindProxy")
 		AB, KR = self:GetFrameRef("AB"), self:GetFrameRef("KR")
 
-		bindProxy:SetAttribute("onattributechanged")
 		PrepareCollection = [==[-- PrepareCollection
 			wipe(collections) wipe(ctokens)
 			local firstFC, root, colData, openAction = nil, ..., AB:RunAttribute("GetCollectionContent", ...)

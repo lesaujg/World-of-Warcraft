@@ -1,4 +1,5 @@
 local config, L = OneRingLib.ext.config, OneRingLib.lang
+local KR = OneRingLib.ext.ActionBook:compatible("Kindred", 1, 0)
 local frame = config.createFrame("Bindings", "OPie")
 local OBC_Profile = CreateFrame("Frame", "OBC_Profile", frame, "UIDropDownMenuTemplate")
 	OBC_Profile:SetPoint("TOPLEFT", 0, -85) UIDropDownMenu_SetWidth(OBC_Profile, 200)
@@ -77,6 +78,7 @@ function ringBindings:get(id)
 	local name, key = OneRingLib:GetRingInfo(self.map[id])
 	local bind, cBind, isOverride, isActiveInt, isActiveExt = OneRingLib:GetRingBinding(key)
 	local prefix, tipTitle, tipText
+	local cebind = cBind or (bind and KR:EvaluateCmdOptions(bind))
 	if not isOverride and not OneRingLib:GetOption("UseDefaultBindings", key) then
 		if bind then
 			prefix, tipTitle = "|cffa0a0a0", L"Default binding disabled"
@@ -95,6 +97,8 @@ function ringBindings:get(id)
 			if not (lab and type(lab) == "string" and lab:match("%S")) then lab = tostring(isActiveExt) end
 			tipText = tipText .. "\n\n" .. (L"Conflicts with: %s"):format("|cffe0e0e0" .. lab .. "|r")
 		end
+	elseif cBind == nil and cebind and not isActiveInt then
+		prefix, tipTitle, tipText = "|cffa0a0a0", L"Binding conflict", L"This binding is not currently active because it conflicts with another."
 	elseif cBind and not isActiveInt then
 		prefix, tipTitle = "|cffa0a0a0", tostring(isActiveInt) .. "/" .. tostring(cBind)
 	elseif isOverride then
@@ -295,8 +299,4 @@ end
 frame.cancel = frame.okay
 frame:SetScript("OnShow", frame.refresh)
 
-local function open()
-	InterfaceOptionsFrame_OpenToCategory(frame)
-	InterfaceOptionsFrame_OpenToCategory(frame)
-end
-config.AddSlashSuffix(open, "bind", "binding", "bindings")
+config.AddSlashSuffix(function() config.open(frame) end, "bind", "binding", "bindings")

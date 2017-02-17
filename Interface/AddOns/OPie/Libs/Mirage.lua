@@ -261,6 +261,8 @@ local CreateCooldown do
 	end
 	local function onShow(self)
 		self[9]:Show()
+		self.pos = nil -- Forces quad texture update; probably redundant with onHide
+		return onUpdate(self, 0)
 	end
 	function CreateCooldown(parent, size)
 		local cd, scale = cc("SetScale", cc("SetAllPoints", CreateFrame("FRAME", nil, parent)), size/48), size * 87/4032

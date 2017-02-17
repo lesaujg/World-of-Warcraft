@@ -106,6 +106,8 @@ do -- form:token
 			[GetSpellInfo(768)]="/cat",
 			[GetSpellInfo(171745) or 1]="/cat",
 			[GetSpellInfo(5487)]="/bear",
+			[GetSpellInfo(114282)]="/treant",
+			[GetSpellInfo(210053)]="/stag",
 		}, nil
 		local function sync()
 			local s = ""
