@@ -18,6 +18,9 @@ VER 3 0000000000000002 "RandomMount" "INV_MISC_QUESTIONMARK"
 /click [nobtn:2]LiteMount
 /click [btn:2]LiteMount RightButton
 END
+VER 3 0000000000000006 "Reload" "132096"
+/reload
+END
 VER 3 0000000000000004 "Test" "INV_MISC_QUESTIONMARK"
 /target Bound Water Elemental
 /focus

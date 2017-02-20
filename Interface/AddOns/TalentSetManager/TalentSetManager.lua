@@ -4,12 +4,16 @@
 
 local version = 1
 
-local format, tremove = string.format, table.remove
+local format, tremove, tinsert, lower, floor, ceil = string.format, table.remove, table.insert, string.lower, math.floor, math.ceil
 
 local addonName, addonTable = ...
 local L = addonTable.L
+local ntl
 
-local icon_filenames = {}
+local icon_filenames, icons_added
+
+local filtered_filenames = {}
+local current_icons_list
 local ignored_tiers = {}
 local max_talent_sets = 30
 local numColumns = 3
@@ -39,6 +43,7 @@ local function getSetByName(name, t_type)
   if v.name == name then return k end
  end
 end
+addonTable.getSetByName = getSetByName
 
 local function has_buff(k)
  for _,v in pairs(buff_names[k]) do
@@ -193,7 +198,7 @@ local function modifyTalentSet(origName, name, texture)
 
  sets[i].name = name
  if texture then
-  sets[i].texture = type(texture) == "number" and texture or ("Interface\\Icons\\"..texture)
+  sets[i].texture = texture
  end
  
  addonTable.UpdateLDBButton()
@@ -210,7 +215,7 @@ local function saveTalentSet(name, texture)
  sets[i].tt = tt
 
  if texture then
-  sets[i].texture = type(texture) == "number" and texture or ("Interface\\Icons\\"..texture)
+  sets[i].texture = texture
  end
 
  for j = 1, numTiers[tt] do
@@ -270,9 +275,9 @@ StaticPopupDialogs["TS_CONFIRM_OVERWRITE_TALENT_SET"] = {
 	text = L["confirm_overwrite_set"],
 	button1 = YES,
 	button2 = NO,
-	OnAccept = function(self) saveTalentSet(self.data, self.selectedIcon) TalentSetsDialogPopup:Hide() TalentSetList_Update() end,
+	OnAccept = function(self) saveTalentSet(self.data, self.selectedTexture) TalentSetsDialogPopup:Hide() TalentSetList_Update() end,
 	OnCancel = function(self) end,
-	OnHide = function(self) self.data = nil self.selectedIcon = nil end,
+	OnHide = function(self) self.data = nil self.selectedTexture = nil end,
 	hideOnEscape = 1,
 	timeout = 0,
 	exclusive = 1,
@@ -447,7 +452,7 @@ function TalentSetList_Update()
     if sets[id].texture then
      button.icon:SetTexture(sets[id].texture)
     else
-     button.icon:SetTexture("Interface\\Icons\\INV_Misc_QuestionMark")
+     button.icon:SetTexture("interface\\icons\\inv_misc_questionmark")
     end
 
     if selectedSet and sets[id] == selectedSet then
@@ -470,7 +475,7 @@ function TalentSetList_Update()
     button.hasEquipment = nil
     button.text:SetText(PAPERDOLL_NEWEQUIPMENTSET)
     button.text:SetTextColor(GREEN_FONT_COLOR.r, GREEN_FONT_COLOR.g, GREEN_FONT_COLOR.b)
-    button.icon:SetTexture("Interface\\PaperDollInfoFrame\\Character-Plus")
+    button.icon:SetTexture("interface\\paperdollinfoframe\\character-plus")
     button.icon:SetSize(30, 30)
     set_icon_offset(button, 17)
     button.Check:Hide()
@@ -685,6 +690,7 @@ function TalentSetListButton_OnClick(f)
  else
   -- This is the "New Set" button
   TalentSetsDialogPopup:Show()
+  RecalculateTalentSetsDialogPopup()
   TalentSetsList.selectedSet = nil
   TalentSetList_Update()
  end
@@ -874,156 +880,121 @@ local function toggleFrameVisibility(self)
 end
 
 ----- popup dialog -----
-function TalentSetsDialogPopup_OnLoad (self)
- self.buttons = {}
- 
- local rows = 0
- 
- local button = CreateFrame("CheckButton", "TalentSetsDialogPopupButton1", TalentSetsDialogPopup, "TalentSetPopupButtonTemplate")
- button:SetPoint("TOPLEFT", 24, -85)
- button:SetID(1)
- tinsert(self.buttons, button)
-
- local lastPos
- for i = 2, 15 do
-  button = CreateFrame("CheckButton", "TalentSetsDialogPopupButton" .. i, TalentSetsDialogPopup, "TalentSetPopupButtonTemplate")
-  button:SetID(i)
-
-  lastPos = (i - 1) / 5
-  if lastPos == math.floor(lastPos) then
-   button:SetPoint("TOPLEFT", self.buttons[i - 5], "BOTTOMLEFT", 0, -8)
-  else
-   button:SetPoint("TOPLEFT", self.buttons[i - 1], "TOPRIGHT", 10, 0)
-  end
-  tinsert(self.buttons, button)
+local icons_meta = setmetatable({}, { __index = function(t, k)
+                                                 return current_icons_list[k - icons_added]
+                                                end })
+                                                
+local function refreshTalentIconTable()
+ local filter = lower(TalentSetsDialogPopup.filter)
+ wipe(icons_meta)
+ icons_added = 0
+ if filter == "" or ("inv_misc_questionmark"):find(filter) then
+  icons_meta[1] = "inv_misc_questionmark"
+  icons_added = icons_added + 1
  end
- 
- self.SetSelection = function(self, fTexture, Value)
-  if fTexture then
-   self.selectedTexture = Value
-   self.selectedIcon = nil
-  else
-   self.selectedTexture = nil
-   self.selectedIcon = Value
+ for c = 1,7 do
+  for r = 1,3 do
+   local _, _, texture = funcs[tt].check(c, r, 1)
+   if texture then
+    texture = lower(texture):gsub("interface\\icons\\", "")
+    if filter == "" or texture:find(filter) then
+     tinsert(icons_meta, texture)
+     icons_added = icons_added + 1
+    end
+   end
   end
  end
-end
-
-function TalentSetsDialogPopup_OnShow(self)
- PlaySound("igCharacterInfoOpen")
- self.name = nil
- self.id = nil
- self.isEdit = false
- RecalculateTalentSetsDialogPopup()
-end
-
-function TalentSetsDialogPopup_OnHide(self)
- TalentSetsDialogPopup.name = nil
- TalentSetsDialogPopup.id = nil
- TalentSetsDialogPopup:SetSelection(true, nil)
- TalentSetsDialogPopupEditBox:SetText("")
- icon_filenames = nil
- collectgarbage()
 end
 
 function RecalculateTalentSetsDialogPopup(name)
  local popup = TalentSetsDialogPopup
- local i = getSetByName(name)
+
+ if not icon_filenames then
+  icon_filenames = ntl:GetList("icons")
+ end
+
+ TalentSetsDialogPopupEditBox:HighlightText()
+ TalentSetsDialogPopup_FilterList()
+ 
+ local i = addonTable.getSetByName(name)
  if i then
   TalentSetsDialogPopupEditBox:SetText(name)
   if sets[i].texture then
-   popup:SetSelection(true, sets[i].texture)
+   popup.selectedTexture = sets[i].texture
   else
-   popup:SetSelection(false, 1)
+   popup.selectedTexture = "interface\\icons\\inv_misc_questionmark"
   end
  else
   TalentSetsDialogPopupEditBox:SetText("")
-  popup:SetSelection(false, 1)
+  popup.selectedTexture = "interface\\icons\\inv_misc_questionmark"
  end
  
- TalentSetsDialogPopupEditBox:HighlightText(0)
-
- RefreshSetIconInfo()
- local totalItems = #icon_filenames
- local texture
+ local totalItems = #current_icons_list + icons_added
+ 
+ TalentSetsDialogPopup_Update()
+ 
  if popup.selectedTexture then
   local foundIndex
-  for index=1, totalItems do
-   texture = icon_filenames[index]
-   if texture == popup.selectedTexture then
+  for index = 1, totalItems do
+   if ("interface\\icons\\"..icons_meta[index]) == lower(popup.selectedTexture) then
     foundIndex = index
     break
    end
   end
+
   if not foundIndex then
    foundIndex = 1
   end
-  
-  local offsetnumIcons = floor((totalItems - 1) / 5)
-  local offset = floor((foundIndex - 1) / 5)
-  offset = offset + min((3 - 1), offsetnumIcons-offset) - (3 - 1)
-  if foundIndex <= 15 then
+
+  local offsetnumIcons = floor((totalItems - 1) / TalentSetsDialogPopup.buttons_per_row) - TalentSetsDialogPopup.buttons_per_row / 2
+  local offset = floor((foundIndex - 1) / TalentSetsDialogPopup.buttons_per_row)
+  if foundIndex <= TalentSetsDialogPopup.numrows * TalentSetsDialogPopup.buttons_per_row then
    offset = 0
+  elseif offset > offsetnumIcons then
+   offset = offsetnumIcons
   end
   FauxScrollFrame_OnVerticalScroll(TalentSetsDialogPopupScrollFrame, offset * 36, 36, nil)
  else
   FauxScrollFrame_OnVerticalScroll(TalentSetsDialogPopupScrollFrame, 0, 36, nil)
  end
- TalentSetsDialogPopup_Update()
 end
 
-function RefreshSetIconInfo()
- icon_filenames = {}
- icon_filenames[1] = "INV_MISC_QUESTIONMARK"
- local index = 2
-    
- for c = 1, 7 do
-  for r = 1,3 do
-   local _, _, texture = funcs[tt].check(c, r, 1)
-
-   if texture then
-    texture = string.lower(texture):gsub("interface\\icons\\", "")
-    icon_filenames[index] = texture
-    if icon_filenames[index] then
-     index = index + 1
-     for j = 1, index - 1 do
-      if icon_filenames[index] == icon_filenames[j] then
-       icon_filenames[index] = nil
-       index = index - 1
-       break
-      end
-     end
-    end
-   end
-  end
+function TalentSetsDialogPopup_FilterList(update)
+ if TalentSetsDialogPopup.filter == "" then
+  current_icons_list = icon_filenames
+ else
+  current_icons_list = ntl:FilterList("icons", TalentSetsDialogPopup.filter, filtered_filenames)
  end
- GetLooseMacroItemIcons(icon_filenames)
- GetLooseMacroIcons(icon_filenames)
- GetMacroItemIcons(icon_filenames)
- GetMacroIcons(icon_filenames)
+
+ refreshTalentIconTable()
+ 
+ if update then
+  TalentSetsDialogPopup_Update()
+ end
 end
 
 function TalentSetsDialogPopup_Update()
- RefreshSetIconInfo()
-
  local popup = TalentSetsDialogPopup
  local buttons = popup.buttons
  local offset = FauxScrollFrame_GetOffset(TalentSetsDialogPopupScrollFrame) or 0
+
  local button
+
  -- Icon list
- local texture, index, button, realIndex
- for i = 1, 15 do
+ local texture, index, button
+ local length = #current_icons_list + icons_added
+
+ for i = 1, TalentSetsDialogPopup.numrows * TalentSetsDialogPopup.buttons_per_row do
   local button = buttons[i]
-  index = offset * 5 + i
-  if index <= #icon_filenames then
-   texture = icon_filenames[index]
-   button.icon:SetTexture(type(texture) == "number" and texture or ("INTERFACE\\ICONS\\"..texture))
+  index = offset * TalentSetsDialogPopup.buttons_per_row + i
+  if index <= length then
+   texture = "interface\\icons\\"..icons_meta[index]
+   button.icon:SetTexture(texture)
+   button.tex = texture
    button:Show()
-   if index == popup.selectedIcon then
+   if texture == popup.selectedTexture then
     button:SetChecked(true)
-   elseif texture == popup.selectedTexture then
-    button:SetChecked(true)
-    popup:SetSelection(false, index)
+    popup.selectedTexture = texture
    else
     button:SetChecked(false)
    end
@@ -1032,14 +1003,15 @@ function TalentSetsDialogPopup_Update()
    button:Hide()
   end
  end
- FauxScrollFrame_Update(TalentSetsDialogPopupScrollFrame, ceil(#icon_filenames / 5) , 3, 36 )
+
+ FauxScrollFrame_Update(TalentSetsDialogPopupScrollFrame, ceil(length / TalentSetsDialogPopup.buttons_per_row), TalentSetsDialogPopup.numrows, 36 )
 end
 
 function TalentSetsDialogPopupOkay_Update()
  local popup = TalentSetsDialogPopup
  local button = TalentSetsDialogPopupOkay
  
- if (popup.selectedIcon or popup.isEdit) and popup.name then
+ if (popup.selectedTexture or popup.isEdit) and popup.name then
   button:Enable()
  else
   button:Disable()
@@ -1048,7 +1020,7 @@ end
 
 function TalentSetsDialogPopupOkay_OnClick(self, button)
  local popup = TalentSetsDialogPopup
- local iconTexture = icon_filenames[popup.selectedIcon]
+ local texture = popup.selectedTexture
 
  if getSetByName(popup.name) then
   if popup.isEdit and popup.name ~= popup.origName then
@@ -1058,7 +1030,7 @@ function TalentSetsDialogPopupOkay_OnClick(self, button)
    local dialog = StaticPopup_Show("TS_CONFIRM_OVERWRITE_TALENT_SET", popup.name)
    if dialog then
  	dialog.data = popup.name
- 	dialog.selectedIcon = icon_filenames[popup.selectedIcon]
+ 	dialog.selectedTexture = popup.selectedTexture
    else
     UIErrorsFrame:AddMessage(ERR_CLIENT_LOCKED_OUT, 1.0, 0.1, 0.1, 1.0)
    end
@@ -1070,9 +1042,9 @@ function TalentSetsDialogPopupOkay_OnClick(self, button)
  end
  
  if popup.isEdit then
-  modifyTalentSet(popup.origName, popup.name, iconTexture)
+  modifyTalentSet(popup.origName, popup.name, texture)
  else
-  saveTalentSet(popup.name, iconTexture)
+  saveTalentSet(popup.name, texture)
  end
 
  TalentSetList_Update()
@@ -1086,10 +1058,17 @@ end
 function TalentSetPopupButton_OnClick(self, button)
  local popup = TalentSetsDialogPopup
  local offset = FauxScrollFrame_GetOffset(TalentSetsDialogPopupScrollFrame) or 0
- popup.selectedIcon = (offset * 5) + self:GetID()
- popup.selectedTexture = nil
+ popup.selectedTexture = self.tex
  TalentSetsDialogPopup_Update()
  TalentSetsDialogPopupOkay_Update()
+end
+
+function TalentSetsDialogPopup_OnHide(self)
+ TalentSetsDialogPopup.name = nil
+ TalentSetsDialogPopup.id = nil
+ TalentSetsDialogPopup.selectedTexture = "interface\\icons\\inv_misc_questionmark"
+ TalentSetsDialogPopupEditBox:SetText("")
+ collectgarbage()
 end
 -----
 
@@ -1099,7 +1078,7 @@ local function initializeFrame()
  btn.tooltip = "Talent Set Manager"
  btn:SetPoint("TOPLEFT", PlayerTalentFrame, "TOPRIGHT", 0, -20)
  btn:SetChecked(TalentSetManager_Options.visible)
- btn:SetNormalTexture("Interface\\Icons\\achievement_guildperk_ladyluck_rank2")
+ btn:SetNormalTexture("interface\\icons\\achievement_guildperk_ladyluck_rank2")
  
  btn:SetScript("OnClick", function()
   TalentSetManager_Options.visible = not TalentSetManager_Options.visible
@@ -1137,14 +1116,15 @@ local function initializeFrame()
   mf.ignore_tier_overlays[i]:SetVertexColor(unpack(TalentSetManager_Options.interface.ignored_tiers_bg))
  end
  
- TalentSetsDialogPopup:SetParent(mf)
- TalentSetsDialogPopup:SetPoint("LEFT", mf, "RIGHT")
+ --TalentSetsDialogPopup:SetParent(mf)
+ --TalentSetsDialogPopup:SetPoint("LEFT", mf, "RIGHT")
+ addonTable:CreateIconSelectionFrame()
  
  local f = CreateFrame("Scrollframe", "TalentSetsList", mf, "HybridScrollFrameTemplate")
  f:SetSize(172, 304)
  f:SetPoint("TOPLEFT", mf, "TOPLEFT", 1, -30)
  --f:SetPoint("BOTTOMRIGHT", mf, "BOTTOMRIGHT", -25, 1)
- 
+
  f:SetFrameLevel(mf:GetFrameLevel() + 1)
  
  f.scrollBar = CreateFrame("Slider", "TalentSetsFrameScrollBar", f, "HybridScrollBarTemplate")
@@ -1251,6 +1231,8 @@ eventframe:RegisterEvent("PLAYER_TALENT_UPDATE")
 local function eventhandler(self, event, ...)
  if event == "VARIABLES_LOADED" then
 
+  ntl = NyxTL("1.0")
+ 
   if not TalentSetManager_Options then TalentSetManager_Options = {} end
   if TalentSetManager_Options.visible == nil then TalentSetManager_Options.visible = true end
   if TalentSetManager_Options.ldb_last_selected == nil then TalentSetManager_Options.ldb_last_selected = "talents" end
@@ -1336,6 +1318,7 @@ eventframe:SetScript("OnEvent", eventhandler)
 
 -- slash commands
 local function slashcmd_learn(s)
+
  if not s then return end 
   
  local t, _, name = s:match("(%w+)(%s+)(%C+)")

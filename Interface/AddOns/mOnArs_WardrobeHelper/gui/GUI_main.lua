@@ -162,19 +162,32 @@ local function CreateTableRow(parent, rowHeight, N)
   row:SetPoint("LEFT")
   row:SetPoint("RIGHT", parent, "RIGHT", -16, 0)
 	row:SetScript("OnClick", function(self, button)
-		if button == "LeftButton" then
+		-- ** HgD CODE CHANGES START HERE ** --
+		if button == "LeftButton" and IsShiftKeyDown() then
+			if mOnWDSave.favoriteInstances[row.text2:GetText()] == 1 or mOnWDSave.favoriteInstances[row.text2:GetText()] == true then
+				mOnWDSave.favoriteInstances[row.text2:GetText()] = nil
+			elseif mOnWDSave.favoriteInstances[row.text2:GetText()] ~= nil then
+				mOnWDSave.favoriteInstances[row.text2:GetText()] = mOnWDSave.favoriteInstances[row.text2:GetText()] - 1
+			else
+				mOnWDSave.favoriteInstances[row.text2:GetText()] = 8
+			end
+			o.GUIpagingHelper(o.CURRENT_PAGE)
+		elseif button == "LeftButton" then
 			o.GUIselect(row.text2:GetText())
 		end
 
 		if button == "RightButton" and IsShiftKeyDown() then
-			if mOnWDSave.favoriteInstances[row.text2:GetText()] then
+			if mOnWDSave.favoriteInstances[row.text2:GetText()] == 8 then
 				mOnWDSave.favoriteInstances[row.text2:GetText()] = nil
+			elseif mOnWDSave.favoriteInstances[row.text2:GetText()] ~= nil then
+				if mOnWDSave.favoriteInstances[row.text2:GetText()] == true then mOnWDSave.favoriteInstances[row.text2:GetText()] = 1 end
+				mOnWDSave.favoriteInstances[row.text2:GetText()] = mOnWDSave.favoriteInstances[row.text2:GetText()] + 1
 			else
-				mOnWDSave.favoriteInstances[row.text2:GetText()] = true
+				mOnWDSave.favoriteInstances[row.text2:GetText()] = 1
 			end
 			o.GUIpagingHelper(o.CURRENT_PAGE)
 		end
-
+		-- ** HgD CODE CHANGES END HERE ** --
 	end)
 
 	row:SetScript("OnEnter", function()
@@ -203,8 +216,10 @@ local function CreateTableRow(parent, rowHeight, N)
 			GameTooltip:Hide()
 		end)
 
+
+
 	local c = CreateFrame("StatusBar", nil, row)
-	c:SetStatusBarTexture("Interface\\TargetingFrame\\UI-StatusBar")
+	c:SetStatusBarTexture("Interface\\TargetingFrame\\UI-StatusBar", "BACKGROUND")
 	c:GetStatusBarTexture():SetHorizTile(false)
 	c:SetMinMaxValues(0, 100)
 	c:SetValue(100)
@@ -214,21 +229,21 @@ local function CreateTableRow(parent, rowHeight, N)
 	c:SetStatusBarColor(0,1,0)
 	row.status = c
 
-  local c = c:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
-  c:SetHeight(rowHeight)
-  c:SetWidth(110 - (2 * 10))
-  c:SetJustifyH("LEFT")
-  c:SetPoint("LEFT", row, "LEFT", 20, 0)
+	local c = c:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
+	c:SetHeight(rowHeight)
+	c:SetWidth(110 - (2 * 10))
+	c:SetJustifyH("LEFT")
+	c:SetPoint("LEFT", row, "LEFT", 20, 0)
 	c:SetText('')
 	local filename, fontHeight, flags = c:GetFont()
 	c:SetFont(filename, fontHeight, "OUTLINE")
 	row.text1 = c
 
 	local c = row:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
-  c:SetHeight(rowHeight)
-  c:SetWidth(220 - (2 * 10))
-  c:SetJustifyH("LEFT")
-  c:SetPoint("LEFT", row.text1, "RIGHT", 2 * 10, 0)
+	c:SetHeight(rowHeight)
+	c:SetWidth(220 - (2 * 10))
+	c:SetJustifyH("LEFT")
+	c:SetPoint("LEFT", row.text1, "RIGHT", 2 * 10, 0)
 	c:SetText('')
 	row.text2 = c
 
@@ -240,20 +255,30 @@ local function CreateTableRow(parent, rowHeight, N)
 	c:Hide()
 	row.saved = c
 
-	local c = row:CreateTexture(nil, "ARTWORK")
+	-- ** HgD CODE CHANGES START HERE ** --
+	--[[local c = row:CreateTexture(nil, "ARTWORK", nil)
 	c:SetTexture("Interface\\Common\\ReputationStar")
 	c:SetTexCoord(0, 0.5, 0, 0.5)
 	c:SetWidth(16)
 	c:SetHeight(16)
 	c:SetPoint("RIGHT", row.saved, "LEFT", 2,0)
 	c:Hide()
-	row.star = c
+	row.star = c]]--
+
+	local c = row.status:CreateTexture(nil, "OVERLAY")
+	c:SetTexture("Interface\\TargetingFrame\\UI-RaidTargetingIcon_1")
+	c:SetWidth(14)
+	c:SetHeight(14)
+	c:SetPoint("RIGHT", row.saved, "LEFT", 2,0)
+	c:Hide()
+	row.icon = c
+	-- ** HgD CODE CHANGES END HERE ** --
 
 	local c = row:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
-  c:SetHeight(rowHeight)
-  c:SetWidth(100)
-  c:SetJustifyH("RIGHT")
-  c:SetPoint("RIGHT", row, "RIGHT", -10, 0)
+	c:SetHeight(rowHeight)
+	c:SetWidth(100)
+	c:SetJustifyH("RIGHT")
+	c:SetPoint("RIGHT", row, "RIGHT", -10, 0)
 	c:SetText('')
 	row.percent = c
 
@@ -331,6 +356,7 @@ b:SetScript("OnEnter", function()
 	GameTooltip:AddLine(o.strings["Help"])
 	GameTooltip:AddDoubleLine(o.strings["Left Click"], o.strings["Main LeftClick Help"])
 	GameTooltip:AddDoubleLine(o.strings["Shift"] .. " + " .. o.strings["Right Click"], o.strings["Main Shift RightClick Help"])
+	GameTooltip:AddDoubleLine(o.strings["Shift"] .. " + " .. o.strings["Left Click"], o.strings["Main Shift LeftClick Help"])
 	GameTooltip:Show()
 end)
 b:SetScript("OnLeave", function()
@@ -430,7 +456,9 @@ o.GUIpagingHelper = function(N)
 					row.text2:SetTextColor(1,0.2,0.2,1)
 					row.percent:SetTextColor(1,0.2,0.2,1)
 					row.saved:Hide()
-					row.star:Hide()
+					-- ** HgD CODE CHANGES START HERE ** --
+					row.icon:Hide()
+					-- ** HgD CODE CHANGES END HERE ** --
 					if o.tiers[item.name] then
 						local total = 0
 						local t = o.tiers[item.name]
@@ -481,10 +509,14 @@ o.GUIpagingHelper = function(N)
 					row.text1:SetTextColor(1,1,1,1)
 					row.text2:SetTextColor(1,1,1,1)
 					row.percent:SetTextColor(1,1,1,1)
+					-- ** HgD CODE CHANGES START HERE ** --
 					if mOnWDSave.favoriteInstances[item.name] then
-						row.star:Show()
+						row.icon:Show()
+						local icon_no = mOnWDSave.favoriteInstances[item.name];
+						if (icon_no == true) then icon_no = 1 end
+						row.icon:SetTexture("Interface\\TargetingFrame\\UI-RaidTargetingIcon_"..icon_no)
 					else
-						row.star:Hide()
+						row.icon:Hide()
 					end
 					if item.type == "Raid" then
 						row.text1:SetTextColor(1,1,0.6,1)
@@ -495,8 +527,9 @@ o.GUIpagingHelper = function(N)
 						row.text2:SetTextColor(1,1,1,0.6)
 						row.percent:SetTextColor(1,1,1,0.6)
 						row:Enable()
-						row.star:Hide()
+						row.icon:Hide()
 					end
+					-- ** HgD CODE CHANGES END HERE ** --
 				end
 				row.text2:SetText(item.name)
 				if o.saves[item.name] then
@@ -510,7 +543,9 @@ o.GUIpagingHelper = function(N)
 				row.percent:SetText("")
 				row:Disable()
 				row.saved:Hide()
-				row.star:Hide()
+				-- ** HgD CODE CHANGES START HERE ** --
+				row.icon:Hide()
+				-- ** HgD CODE CHANGES END HERE ** --
 				row.status:Hide()
 			end
 		end

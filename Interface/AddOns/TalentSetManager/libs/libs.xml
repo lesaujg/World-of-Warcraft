@@ -3,4 +3,5 @@
 	<Script file="LibStub\LibStub.lua"/>
 	<Script file="CallBackHandler\CallbackHandler-1.0.lua"/>
 	<Script file="LibDataBroker\LibDataBroker-1.1.lua"/>
+	<Include file="NyxTL-1.0\NyxTL.xml"/>
 </Ui>

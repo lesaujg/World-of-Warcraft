@@ -11,9 +11,9 @@ local L = addonTable.L
 --[===[@debug@
 --debug = true
 --@end-debug@]===]
- 
+
 -- let's set them twice to be sure (in v1.1.5 the repository missed some languages)
- 
+
 --if debug then
  L["set_already_exists"] = "A talent set with that name already exists"
  L["sets_limit_reached"] = "You cannot create any more new talent sets."
@@ -44,8 +44,8 @@ local L = addonTable.L
  L["options_chat_filter_hide"] = "Hide entirely"
  L["options_ignored_tiers_background_color"] = "Ignored tiers background color"
  L["options_hide_info_button"] = "Hide Info Button"
- 
  -- new
+ L["search_icon"] = "Search Icon"
  --return
 --end
 
@@ -77,6 +77,7 @@ L["options_chat_filter_show"] = "Non filtrare"
 L["options_hide_info_button"] = "Nascondi Pulsante Info"
 L["options_ignored_tiers_background_color"] = "Colore di sfondo delle righe ignorate"
 L["options_talent_highlight_icon"] = "Icona dei talenti evidenziati"
+L["search_icon"] = "Cerca Icona"
 L["set_already_exists"] = "Un set di talenti con quel nome esiste già."
 L["sets_limit_reached"] = "Non puoi creare ulteriori set di talenti."
 L["talents_changed"] = "Talenti Cambiati"
@@ -182,6 +183,7 @@ L["options_chat_filter_show"] = "不過濾"
 L["options_hide_info_button"] = "隱藏資訊按鈕"
 L["options_ignored_tiers_background_color"] = "忽略套裝背景顏色"
 L["options_talent_highlight_icon"] = "天賦高亮圖示"
+L["search_icon"] = "搜尋圖標"
 L["set_already_exists"] = "此天賦設定的名稱已經存在"
 L["sets_limit_reached"] = "你不能在創建更多新天賦設定。"
 L["talents_changed"] = "天賦已改變"
@@ -212,6 +214,7 @@ L["options_chat_filter_show"] = "Do not filter"
 L["options_hide_info_button"] = "Hide Info Button"
 L["options_ignored_tiers_background_color"] = "Ignored tiers background color"
 L["options_talent_highlight_icon"] = "Talent Highlight Icon"
+L["search_icon"] = "Search Icon"
 L["set_already_exists"] = "A talent set with that name already exists"
 L["sets_limit_reached"] = "You cannot create any more new talent sets."
 L["talents_changed"] = "Talents Changed"

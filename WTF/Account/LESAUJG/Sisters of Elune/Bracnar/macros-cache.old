@@ -27,6 +27,7 @@ VER 3 010000000000005C "_Kill Command" "INV_MISC_QUESTIONMARK"
 /petautocaston [nogroup] Thunderstomp
 /target [noexists] pettarget
 /cast Kill Command
+/use 1
 END
 VER 3 0100000000000060 "_Kite" "132128"
 /use [button:1] 15
