@@ -26,6 +26,10 @@ VER 3 0000000000000004 "Test" "INV_MISC_QUESTIONMARK"
 /focus
 /run if UnitName("Target") == "Bound Water Elemental" then PlaySoundFile([[Sound\Interface\PVPFlagTakenMono.ogg]], "Master"); print(date(), UnitName("Target"), "Found"); SetRaidTarget("target",8); end
 END
+VER 3 0000000000000007 "Warbringer" "INV_MISC_QUESTIONMARK"
+/tar Zandalari Warbringer
+/cast Lightning Bolt
+END
 VER 3 0000000000000005 "Who" "INV_MISC_QUESTIONMARK"
 /who z-"Deepholm" 80-110
 END
