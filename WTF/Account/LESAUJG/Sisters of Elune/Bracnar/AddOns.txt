@@ -184,3 +184,8 @@ AngryWorldQuests: enabled
 HandyNotes_LegionRaresTreasures: enabled
 NomiCakes: enabled
 DBM-TrialofValor: enabled
+mOnArs_WardrobeHelper: enabled
+TransmogTokens: enabled
+RelicInspector: enabled
+TalentSetManager: enabled
+SetCollector: enabled
