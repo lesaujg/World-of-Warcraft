@@ -2,7 +2,7 @@
 TukuiData = {
 	["Sisters of Elune"] = {
 		["Torinara"] = {
-			["HideBar4"] = true,
+			["HideBar4"] = false,
 			["Move"] = {
 			},
 			["InstallDone"] = true,
@@ -248,7 +248,7 @@ TukuiData = {
 	},
 	["Gold"] = {
 		["Sisters of Elune"] = {
-			["Torinara"] = 88338825,
+			["Torinara"] = 50142632,
 			["Magnara"] = 393,
 		},
 	},

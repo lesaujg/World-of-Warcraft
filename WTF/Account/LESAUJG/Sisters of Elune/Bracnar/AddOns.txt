@@ -189,3 +189,4 @@ TransmogTokens: enabled
 RelicInspector: enabled
 TalentSetManager: enabled
 SetCollector: enabled
+MountFarmHelper: enabled
