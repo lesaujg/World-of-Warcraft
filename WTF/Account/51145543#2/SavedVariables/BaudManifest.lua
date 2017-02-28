@@ -5,14 +5,14 @@ BaudManifestData = {
 		["FillSpecials"] = true,
 		["ShowArrows"] = true,
 		["ShowBank"] = true,
-		["ItemNameFirst"] = false,
-		["HideEquipped"] = true,
-		["HideBlizBank"] = true,
-		["HideBlizInv"] = true,
-		["Combine"] = true,
-		["AutoShowInv"] = true,
-		["ReplaceBlizBags"] = true,
 		["Scale"] = 100,
+		["HideEquipped"] = true,
+		["ReplaceBlizBags"] = true,
+		["HideBlizInv"] = true,
+		["ItemNameFirst"] = false,
+		["AutoShowInv"] = true,
+		["HideBlizBank"] = true,
+		["Combine"] = true,
 	},
 	["Sisters of Elune"] = {
 		["Torinara"] = {
@@ -40,8 +40,8 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [5]
 					{
-						["Count"] = 2,
 						["ItemString"] = "item:122362::::::::1:262:::1:583:::",
+						["Count"] = 2,
 						["Equipped"] = 1,
 					}, -- [6]
 					{
@@ -122,13 +122,13 @@ BaudManifestData = {
 						["Equipped"] = 1,
 					}, -- [22]
 					{
-						["ItemString"] = "item:141597::::::::100:264::9:3:3447:1815:1820:::",
 						["Count"] = 2,
+						["ItemString"] = "item:141597::::::::100:264::9:3:3447:1815:1820:::",
 						["Slots"] = 2,
 					}, -- [23]
 					{
-						["Count"] = 2,
 						["ItemString"] = "item:49908::::::::100:264::::::",
+						["Count"] = 2,
 					}, -- [24]
 					{
 						["ItemString"] = "item:132120::::::::100:264::11::::",
@@ -144,8 +144,8 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [27]
 					{
-						["Count"] = 24,
 						["ItemString"] = "item:94288::::::::100:263::::::",
+						["Count"] = 24,
 					}, -- [28]
 					{
 						["ItemString"] = "item:95567::::::::100:263::11::::",
@@ -176,28 +176,28 @@ BaudManifestData = {
 						["ItemString"] = "item:87652::::::::100:263::::::",
 					}, -- [35]
 					{
-						["ItemString"] = "item:113585::::::::100:263::::::",
 						["Count"] = 4,
+						["ItemString"] = "item:113585::::::::100:263::::::",
 					}, -- [36]
 					{
 						["ItemString"] = "item:112388::::::::100:263::11::::",
 						["Count"] = 1,
 					}, -- [37]
 					{
-						["ItemString"] = "item:112449::::::::100:263::::::",
 						["Count"] = 4,
+						["ItemString"] = "item:112449::::::::100:263::::::",
 					}, -- [38]
 					{
 						["ItemString"] = "item:112432::::::::100:263::11::::",
 						["Count"] = 1,
 					}, -- [39]
 					{
-						["ItemString"] = "item:112463::::::::100:263::::::",
 						["Count"] = 21,
+						["ItemString"] = "item:112463::::::::100:263::::::",
 					}, -- [40]
 					{
-						["ItemString"] = "item:112684::::::::100:263::::::",
 						["Count"] = 10,
+						["ItemString"] = "item:112684::::::::100:263::::::",
 					}, -- [41]
 					{
 						["ItemString"] = "item:112442::::::::100:263::11::::",
@@ -216,16 +216,16 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [45]
 					{
-						["ItemString"] = "item:106824::::::::100:263::::::",
 						["Count"] = 4,
+						["ItemString"] = "item:106824::::::::100:263::::::",
 					}, -- [46]
 					{
-						["ItemString"] = "item:107469::::::::100:263::::::",
 						["Count"] = 1,
+						["ItemString"] = "item:107469::::::::100:263::::::",
 					}, -- [47]
 					{
-						["Count"] = 9,
 						["ItemString"] = "item:89112::::::::100:263::::::",
+						["Count"] = 9,
 					}, -- [48]
 					{
 						["ItemString"] = "item:91374::::::::100:263:4:::476:::",
@@ -242,9 +242,9 @@ BaudManifestData = {
 				["SlotEmpty"] = 101,
 				["BGTexture"] = "Bumpy",
 				["ShowBags"] = false,
-				["SlotTotal"] = 136,
-				["SpecialTotal"] = 0,
 				["SpecialEmpty"] = 0,
+				["SpecialTotal"] = 0,
+				["SlotTotal"] = 136,
 			}, -- [1]
 			{
 				{
@@ -293,7 +293,7 @@ BaudManifestData = {
 				[0] = 1,
 			},
 			["Class"] = "SHAMAN",
-			["Money"] = 50142632,
+			["Money"] = 50257942,
 		},
 		["Magnara"] = {
 			{
@@ -303,9 +303,9 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [1]
 					{
+						["Count"] = 1,
 						["ItemString"] = "item:23389::::::::2:262::::::",
 						["Equipped"] = 1,
-						["Count"] = 1,
 					}, -- [2]
 					{
 						["Count"] = 3,
@@ -325,9 +325,9 @@ BaudManifestData = {
 				},
 				["SlotEmpty"] = 17,
 				["BGTexture"] = "Bumpy",
-				["SlotTotal"] = 20,
-				["SpecialTotal"] = 0,
 				["SpecialEmpty"] = 0,
+				["SpecialTotal"] = 0,
+				["SlotTotal"] = 20,
 			}, -- [1]
 			{
 				{
