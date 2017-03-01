@@ -1,10 +1,9 @@
 if not(GetLocale() == "ruRU") then
-    return;
+  return
 end
 
 local L = WeakAuras.L
 
--- Options translation
 L["-- Do not remove this comment, it is part of this trigger: "] = "-- Не удалять этот комментарий, он является частью этого триггера: "
 L["% of Progress"] = "% Прогресса"
 L["%i Matches"] = "%i Совпадений"
@@ -361,5 +360,3 @@ L["Z Rotation"] = "Поворот Z"
 L["Zoom"] = "Увеличение"
 L["Zoom In"] = "Увеличить"
 L["Zoom Out"] = "Уменьшить"
-
-

@@ -1,10 +1,9 @@
 if not(GetLocale() == "esMX") then
-    return;
+  return
 end
 
 local L = WeakAuras.L
 
--- Options translation
 L["Anchor"] = "Anchor"
 L["Backdrop Color"] = "Backdrop Color"
 L["Bar Color Settings"] = "Bar Color Settings"
@@ -42,5 +41,3 @@ L["Text Color"] = "Text Color"
 L["Texture"] = "Texture"
 L["Zoom In"] = "Zoom In"
 L["Zoom Out"] = "Zoom Out"
-
-

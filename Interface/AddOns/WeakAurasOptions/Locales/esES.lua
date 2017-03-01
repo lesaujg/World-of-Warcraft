@@ -1,10 +1,9 @@
 if not(GetLocale() == "esES") then
-    return;
+  return
 end
 
 local L = WeakAuras.L
 
--- Options translation
 L["% of Progress"] = "% de Progreso"
 L["%i Matches"] = "%i Correspondencias"
 L["1 Match"] = "1 Correspondencia"
@@ -269,5 +268,3 @@ L["Z Offset"] = "Desplazamiento en Z"
 L["Zoom"] = "Ampliación"
 L["Zoom In"] = "Acercar"
 L["Zoom Out"] = "Alejar"
-
-

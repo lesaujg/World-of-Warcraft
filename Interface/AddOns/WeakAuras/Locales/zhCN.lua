@@ -1,10 +1,9 @@
 if not(GetLocale() == "zhCN") then
-    return;
+    return
 end
 
 local L = WeakAuras.L
 
--- Options translation
 L["!="] = "≠"
 L["%s - %i. Trigger"] = "%s - %i. 触发器"
 L["%s - 1. Trigger"] = "%s - 1. 触发器"
@@ -462,5 +461,3 @@ L["Yell"] = "大喊"
 L["Zone"] = "区域"
 L["Zone ID"] = "区域ID"
 L["Zone ID List"] = "区域ID列表"
-
-

@@ -34,10 +34,3 @@ X: -255
 Y: 38
 W: 273
 H: 711
-Frame: TSMCraftingTradeSkillFrame
-FrameLevel: 0
-Anchor: LEFT
-X: 71
-Y: -2
-W: 410
-H: 517

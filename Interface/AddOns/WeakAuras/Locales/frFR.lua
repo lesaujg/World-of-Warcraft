@@ -1,10 +1,9 @@
 if not(GetLocale() == "frFR") then
-    return;
+    return
 end
 
 local L = WeakAuras.L
 
--- Options translation
 L["!="] = "!="
 L["%s - %i. Trigger"] = "%s - %i. Déclencheur"
 L["%s - 1. Trigger"] = "%s - 1. Déclencheur"
@@ -481,5 +480,3 @@ L["Yell"] = "Crier"
 L["Zone"] = "Zone"
 L["Zone ID"] = "Zone ID"
 L["Zone ID List"] = "Liste Zone ID"
-
-

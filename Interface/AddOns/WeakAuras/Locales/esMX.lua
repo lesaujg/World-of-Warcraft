@@ -1,10 +1,9 @@
 if not(GetLocale() == "esMX") then
-    return;
+    return
 end
 
 local L = WeakAuras.L
 
--- Options translation
 L["!="] = "!="
 L["<="] = "<="
 L[">"] = ">"
@@ -60,5 +59,3 @@ L["Undefined"] = "Undefined"
 L["Unit Destroyed"] = "Unit Destroyed"
 L["Unit Died"] = "Unit Died"
 L["Yell"] = "Yell"
-
-

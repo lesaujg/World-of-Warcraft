@@ -1,10 +1,9 @@
 if not(GetLocale() == "itIT") then
-    return;
+    return
 end
 
 local L = WeakAuras.L
 
--- Options translation
 L["!="] = "!="
 L["<"] = "<"
 L["<="] = "<="
@@ -79,5 +78,3 @@ L["Create"] = "Crea"
 L["Critical"] = "Critico"
 L["Death Knight Rune"] = "Rune del cavaliere della morte"
 L["Form"] = "Forma"
-
-

@@ -1,10 +1,9 @@
 if not(GetLocale() == "esES") then
-    return;
+    return
 end
 
 local L = WeakAuras.L
 
--- Options translation
 L["!="] = "!="
 L["<"] = "<"
 L["<="] = "<="
@@ -366,5 +365,3 @@ L["Wrist"] = "Muñequeras"
 L["Yell"] = "Grito"
 L["Zone"] = "Zona"
 L["Zone ID"] = "ID de Zona"
-
-

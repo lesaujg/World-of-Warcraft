@@ -1,10 +1,9 @@
 if not(GetLocale() == "deDE") then
-    return;
+  return
 end
 
 local L = WeakAuras.L
 
--- Options translation
 L["-- Do not remove this comment, it is part of this trigger: "] = "-- Entferne diesen Kommentar nicht, er ist Teil dieses Auslösers: "
 L["% of Progress"] = "Fortschritt in %"
 L["%i Matches"] = "%i Treffer"
@@ -60,6 +59,7 @@ L["Bar Texture"] = "Balkentextur"
 L["Big Icon"] = "Großes Symbol"
 L["Blend Mode"] = "Blendmodus"
 L["Blue Rune"] = "Blaue Rune"
+L["Blue Sparkle Orb"] = "Blau funkelnde Kugel"
 L["Border"] = "Rand"
 L["Border Color"] = "Randfarbe"
 L["Border Inset"] = "Rahmeneinlassung"
@@ -100,7 +100,7 @@ L["Crop X"] = "Abschneiden (X)"
 L["Crop Y"] = "Abschneiden (Y)"
 L["Custom"] = "Benutzerdefiniert"
 L["Custom Code"] = "Benutzerdefinierter Code"
-L["Custom Function"] = "Benutzerdefinierte Funktion"
+L["Custom Function"] = "Benutzerdefiniert"
 L["Custom Trigger"] = "Benutzerdefinierter Auslöser"
 L["Custom trigger event tooltip"] = [=[Wähle die Ereignisse, die den benutzerdefinierten Auslöser aufrufen sollen.
 Mehrere Ereignisse können durch Komma oder Leerzeichen getrennt werden.
@@ -164,6 +164,7 @@ L["Foreground Color"] = "Vordergrundfarbe"
 L["Foreground Texture"] = "Vordergrundtextur"
 L["Frame"] = "Frame"
 L["Frame Strata"] = "Frame-Schicht"
+L["From Template"] = "Vorlage verwenden"
 L["Glow Action"] = "Leuchtaktion"
 L["Green Rune"] = "Grüne Rune"
 L["Group"] = "Gruppe"
@@ -354,5 +355,4 @@ L["Z Rotation"] = "Z-Rotation"
 L["Zoom"] = "Zoom"
 L["Zoom In"] = "Einzoomen"
 L["Zoom Out"] = "Auszoomen"
-
 

@@ -1,10 +1,9 @@
 if not(GetLocale() == "ptBR") then
-    return;
+  return
 end
 
 local L = WeakAuras.L
 
--- Options translation
 L["% of Progress"] = "% do progresso"
 L["%i Matches"] = "%i resultados"
 L["1 Match"] = "1 resultado"
@@ -178,5 +177,3 @@ L["Temporary Group"] = "Grupo temporário"
 L["Text"] = "Texto"
 L["Text Color"] = "Cor do texto"
 L["Text Position"] = "Posição do texto"
-
-

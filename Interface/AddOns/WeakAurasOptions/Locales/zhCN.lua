@@ -1,10 +1,9 @@
 if not(GetLocale() == "zhCN") then
-    return;
+  return
 end
 
 local L = WeakAuras.L
 
--- Options translation
 L["-- Do not remove this comment, it is part of this trigger: "] = "-不要移除这条信息，这是该触发器的一部分。"
 L["% of Progress"] = "% 进度"
 L["%i Matches"] = "%i 符合"
@@ -358,5 +357,3 @@ L["Z Rotation"] = "Z旋转"
 L["Zoom"] = "缩放"
 L["Zoom In"] = "放大"
 L["Zoom Out"] = "缩小"
-
-
