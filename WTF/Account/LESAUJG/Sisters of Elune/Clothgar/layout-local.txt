@@ -1,11 +1,4 @@
 Version: 1
-Frame: TSMMainFrame1
-FrameLevel: 0
-Anchor: CENTER
-X: 51
-Y: 19
-W: 1148
-H: 795
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: TOPRIGHT
@@ -13,3 +6,10 @@ X: -60
 Y: -104
 W: 250
 H: 417
+Frame: AuctionFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 19
+Y: -114
+W: 832
+H: 447
