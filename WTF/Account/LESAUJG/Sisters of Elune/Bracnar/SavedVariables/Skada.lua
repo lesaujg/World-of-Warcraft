@@ -334,6 +334,22 @@ SkadaPerCharDB = {
 						["totalhits"] = 249,
 						["damage"] = 0,
 					},
+					["Mangle"] = {
+						["hitmin"] = 102129,
+						["criticalamount"] = 5472555,
+						["id"] = 33917,
+						["damage"] = 17162485,
+						["max"] = 398833,
+						["totalhits"] = 91,
+						["min"] = 102129,
+						["criticalmax"] = 398833,
+						["critical"] = 17,
+						["hit"] = 74,
+						["school"] = 1,
+						["hitmax"] = 390826,
+						["criticalmin"] = 270044,
+						["hitamount"] = 11689930,
+					},
 					["Thrash"] = {
 						["damage"] = 75072306,
 						["hitmin"] = 71,
@@ -366,22 +382,6 @@ SkadaPerCharDB = {
 						["hitmax"] = 80911,
 						["criticalmin"] = 60059,
 						["hitamount"] = 2072157,
-					},
-					["Mangle"] = {
-						["hitmin"] = 102129,
-						["criticalamount"] = 5472555,
-						["id"] = 33917,
-						["damage"] = 17162485,
-						["max"] = 398833,
-						["totalhits"] = 91,
-						["min"] = 102129,
-						["criticalmax"] = 398833,
-						["critical"] = 17,
-						["hit"] = 74,
-						["school"] = 1,
-						["hitmax"] = 390826,
-						["criticalmin"] = 270044,
-						["hitamount"] = 11689930,
 					},
 					["Rage of the Sleeper"] = {
 						["hitmin"] = 64025,
@@ -419,16 +419,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342257.27001,
 								["amount"] = -77702,
+								["hp"] = 1319186,
 								["spellid"] = 233485,
 								["srcname"] = "Taladendren-Vek'nilash",
-								["hp"] = 1319186,
 							}, -- [1]
 							{
 								["ts"] = 1488342257.29002,
 								["amount"] = -911234,
+								["hp"] = 407952,
 								["spellid"] = 233485,
 								["srcname"] = "Taladendren-Vek'nilash",
-								["hp"] = 407952,
 							}, -- [2]
 							{
 								["ts"] = 1488342257.56603,
@@ -441,23 +441,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342257.92504,
 								["amount"] = -13199,
+								["hp"] = 437313,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 437313,
 							}, -- [4]
 							{
 								["ts"] = 1488342258.27505,
 								["amount"] = -371983,
+								["hp"] = 65330,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 65330,
 							}, -- [5]
 							{
 								["ts"] = 1488342258.48606,
 								["amount"] = -101290,
+								["hp"] = 65330,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 65330,
 							}, -- [6]
 							{
 								["spellname"] = "Malderd dies",
@@ -500,30 +500,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342257.09112,
 								["amount"] = -405385,
+								["hp"] = 2034895,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 2034895,
 							}, -- [12]
 							{
 								["ts"] = 1488342257.09113,
 								["amount"] = -342807,
+								["hp"] = 1692088,
 								["spellid"] = 233485,
 								["srcname"] = "Taladendren-Vek'nilash",
-								["hp"] = 1692088,
 							}, -- [13]
 							{
 								["ts"] = 1488342257.17514,
 								["amount"] = -135149,
+								["hp"] = 1556939,
 								["spellid"] = 233485,
 								["srcname"] = "Taladendren-Vek'nilash",
-								["hp"] = 1556939,
 							}, -- [14]
 							{
 								["ts"] = 1488342257.26915,
 								["amount"] = -160051,
+								["hp"] = 1396888,
 								["spellid"] = 233485,
 								["srcname"] = "Taladendren-Vek'nilash",
-								["hp"] = 1396888,
 							}, -- [15]
 							["pos"] = 8,
 						},
@@ -551,16 +551,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341207.90203,
 								["amount"] = -756444,
+								["hp"] = 1052805,
 								["spellid"] = 204859,
 								["srcname"] = "Ursoc",
-								["hp"] = 1052805,
 							}, -- [3]
 							{
 								["ts"] = 1488341207.94404,
 								["amount"] = -785918,
+								["hp"] = 1052805,
 								["spellid"] = 88163,
 								["srcname"] = "Ursoc",
-								["hp"] = 1052805,
 							}, -- [4]
 							{
 								["spellid"] = 212238,
@@ -603,9 +603,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341209.1781,
 								["amount"] = -808208,
+								["hp"] = 444633,
 								["spellid"] = 88163,
 								["srcname"] = "Ursoc",
-								["hp"] = 444633,
 							}, -- [10]
 							{
 								["spellname"] = "Malderd dies",
@@ -616,9 +616,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341205.89812,
 								["amount"] = -756444,
+								["hp"] = 1438033,
 								["spellid"] = 204859,
 								["srcname"] = "Ursoc",
-								["hp"] = 1438033,
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -2787,16 +2787,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342291.28301,
 								["amount"] = -340042,
+								["hp"] = 104537,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 104537,
 							}, -- [1]
 							{
 								["ts"] = 1488342291.52202,
 								["amount"] = -360024,
+								["hp"] = 1,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1,
 							}, -- [2]
 							{
 								["spellname"] = "Khryleesi dies",
@@ -2833,9 +2833,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342287.10908,
 								["amount"] = -302476,
+								["hp"] = 1651426,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1651426,
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -2880,16 +2880,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342290.76914,
 								["amount"] = -229361,
+								["hp"] = 694763,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 694763,
 							}, -- [14]
 							{
 								["ts"] = 1488342291.14215,
 								["amount"] = -20823,
+								["hp"] = 444579,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 444579,
 							}, -- [15]
 							["pos"] = 4,
 						},
@@ -4412,9 +4412,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488342739.097,
 						["amount"] = -477259,
+						["hp"] = 1604153,
 						["spellid"] = 213790,
 						["srcname"] = "Twisting Shadows",
-						["hp"] = 1604153,
 					}, -- [1]
 					{
 						["absorb"] = 0,
@@ -4533,14 +4533,14 @@ SkadaPerCharDB = {
 				["power"] = {
 					[13] = {
 						["spells"] = {
-							[34914] = 486,
+							[205448] = 1264,
 							[208232] = 271,
 							[211649] = 370,
-							[15407] = 866,
+							[34914] = 486,
 							[190714] = 390,
 							[589] = 8,
 							[8092] = 990,
-							[205448] = 1264,
+							[15407] = 866,
 						},
 						["amount"] = 4645,
 					},
@@ -5025,9 +5025,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342283.60701,
 								["amount"] = -31804,
+								["hp"] = 1519135,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1519135,
 							}, -- [1]
 							{
 								["absorb"] = 0,
@@ -5040,9 +5040,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342284.09303,
 								["amount"] = -134026,
+								["hp"] = 1521980,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1521980,
 							}, -- [3]
 							{
 								["spellid"] = 233434,
@@ -5093,9 +5093,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342294.9981,
 								["amount"] = -1020830,
+								["hp"] = 1554986,
 								["spellid"] = 88163,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 1554986,
 							}, -- [10]
 							{
 								["ts"] = 1488342295.43511,
@@ -5116,9 +5116,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342296.49613,
 								["amount"] = -948682,
+								["hp"] = 602816,
 								["spellid"] = 88163,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 602816,
 							}, -- [13]
 							{
 								["spellname"] = "Ekoria dies",
@@ -5129,9 +5129,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342283.52315,
 								["amount"] = -338658,
+								["hp"] = 1550939,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1550939,
 							}, -- [15]
 							["pos"] = 15,
 						},
@@ -6525,9 +6525,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344266.873,
 						["amount"] = -144481,
+						["hp"] = 1559126,
 						["spellid"] = 209158,
 						["srcname"] = "Xavius",
-						["hp"] = 1559126,
 					}, -- [11]
 					{
 						["absorb"] = 0,
@@ -6566,10 +6566,10 @@ SkadaPerCharDB = {
 				["power"] = {
 					[9] = {
 						["spells"] = {
-							[231372] = 156,
-							[35395] = 544,
-							[228231] = 400,
 							[218001] = 145,
+							[231372] = 156,
+							[228231] = 400,
+							[35395] = 544,
 						},
 						["amount"] = 1245,
 					},
@@ -6611,11 +6611,11 @@ SkadaPerCharDB = {
 						["uptime"] = 0,
 						["auratype"] = "DEBUFF",
 					},
-					["Unending Resolve"] = {
-						["name"] = "Unending Resolve",
+					["The Expendables"] = {
+						["name"] = "The Expendables",
 						["active"] = 0,
-						["id"] = 104773,
-						["uptime"] = 24,
+						["id"] = 211218,
+						["uptime"] = 0,
 						["auratype"] = "BUFF",
 					},
 					["Wakener's Loyalty"] = {
@@ -6639,12 +6639,12 @@ SkadaPerCharDB = {
 						["uptime"] = 223,
 						["auratype"] = "DEBUFF",
 					},
-					["Doom"] = {
-						["name"] = "Doom",
+					["Unending Resolve"] = {
+						["name"] = "Unending Resolve",
 						["active"] = 0,
-						["id"] = 603,
-						["uptime"] = 445,
-						["auratype"] = "DEBUFF",
+						["id"] = 104773,
+						["uptime"] = 24,
+						["auratype"] = "BUFF",
 					},
 					["Unknown: Felstorm"] = {
 						["name"] = "Unknown: Felstorm",
@@ -6779,12 +6779,12 @@ SkadaPerCharDB = {
 						["uptime"] = 26,
 						["auratype"] = "BUFF",
 					},
-					["The Expendables"] = {
-						["name"] = "The Expendables",
+					["Doom"] = {
+						["name"] = "Doom",
 						["active"] = 0,
-						["id"] = 211218,
-						["uptime"] = 0,
-						["auratype"] = "BUFF",
+						["id"] = 603,
+						["uptime"] = 445,
+						["auratype"] = "DEBUFF",
 					},
 				},
 				["role"] = "DAMAGER",
@@ -8300,19 +8300,19 @@ SkadaPerCharDB = {
 						["uptime"] = 12,
 						["auratype"] = "BUFF",
 					},
-					["Infested Ground"] = {
-						["name"] = "Infested Ground",
+					["Corrupted Blood of Zakajz"] = {
+						["name"] = "Corrupted Blood of Zakajz",
 						["active"] = 0,
-						["id"] = 203045,
-						["uptime"] = 6,
-						["auratype"] = "DEBUFF",
-					},
-					["Taste for Blood"] = {
-						["uptime"] = 256,
-						["active"] = 0,
+						["id"] = 209567,
+						["uptime"] = 52,
 						["auratype"] = "BUFF",
-						["id"] = 206333,
-						["name"] = "Taste for Blood",
+					},
+					["Temporal Displacement"] = {
+						["name"] = "Temporal Displacement",
+						["active"] = 0,
+						["id"] = 80354,
+						["uptime"] = 0,
+						["auratype"] = "DEBUFF",
 					},
 					["Berserker Rage"] = {
 						["name"] = "Berserker Rage",
@@ -8321,19 +8321,19 @@ SkadaPerCharDB = {
 						["uptime"] = 15,
 						["auratype"] = "BUFF",
 					},
-					["Corrupted Blood of Zakajz"] = {
-						["name"] = "Corrupted Blood of Zakajz",
-						["active"] = 0,
-						["id"] = 209567,
-						["uptime"] = 52,
-						["auratype"] = "BUFF",
-					},
 					["Focused Rage"] = {
 						["name"] = "Focused Rage",
 						["active"] = 0,
 						["id"] = 207982,
 						["uptime"] = 94,
 						["auratype"] = "BUFF",
+					},
+					["Taste for Blood"] = {
+						["uptime"] = 256,
+						["active"] = 0,
+						["auratype"] = "BUFF",
+						["id"] = 206333,
+						["name"] = "Taste for Blood",
 					},
 					["Commanding Shout"] = {
 						["name"] = "Commanding Shout",
@@ -8356,11 +8356,11 @@ SkadaPerCharDB = {
 						["uptime"] = 37,
 						["auratype"] = "DEBUFF",
 					},
-					["Temporal Displacement"] = {
-						["name"] = "Temporal Displacement",
+					["Infested Ground"] = {
+						["name"] = "Infested Ground",
 						["active"] = 0,
-						["id"] = 80354,
-						["uptime"] = 0,
+						["id"] = 203045,
+						["uptime"] = 6,
 						["auratype"] = "DEBUFF",
 					},
 					["Frothing Berserker"] = {
@@ -8897,9 +8897,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342118.57112,
 								["amount"] = -472952,
+								["hp"] = 617306,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 617306,
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -8961,9 +8961,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341222.40505,
 								["amount"] = -1043788,
+								["hp"] = 916778,
 								["spellid"] = 88163,
 								["srcname"] = "Ursoc",
-								["hp"] = 916778,
 							}, -- [5]
 							{
 								["spellname"] = "Haniquin dies",
@@ -9032,9 +9032,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341221.14215,
 								["amount"] = -1136134,
+								["hp"] = 2097638,
 								["spellid"] = 88163,
 								["srcname"] = "Ursoc",
-								["hp"] = 2097638,
 							}, -- [15]
 							["pos"] = 7,
 						},
@@ -9078,9 +9078,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488340383.07505,
 								["amount"] = -1271707,
+								["hp"] = 1,
 								["spellid"] = 203646,
 								["srcname"] = "Corrupted Vermin",
-								["hp"] = 1,
 							}, -- [5]
 							{
 								["spellname"] = "Haniquin dies",
@@ -9139,16 +9139,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488340380.45813,
 								["amount"] = -182337,
+								["hp"] = 1512032,
 								["spellid"] = 204506,
 								["srcname"] = "Nythendra",
-								["hp"] = 1512032,
 							}, -- [13]
 							{
 								["ts"] = 1488340381.07514,
 								["amount"] = -1066440,
+								["hp"] = 445592,
 								["spellid"] = 203646,
 								["srcname"] = "Corrupted Vermin",
-								["hp"] = 445592,
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -10624,79 +10624,79 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343789.76801,
 								["amount"] = -164339,
+								["hp"] = 1524757,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1524757,
 							}, -- [1]
 							{
 								["ts"] = 1488343789.98202,
 								["amount"] = -152917,
+								["hp"] = 1371840,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1371840,
 							}, -- [2]
 							{
 								["ts"] = 1488343789.98203,
 								["amount"] = -148847,
+								["hp"] = 1222993,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1222993,
 							}, -- [3]
 							{
 								["ts"] = 1488343789.98204,
 								["amount"] = -164055,
+								["hp"] = 1058938,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1058938,
 							}, -- [4]
 							{
 								["ts"] = 1488343790.03505,
 								["amount"] = -154410,
+								["hp"] = 904528,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 904528,
 							}, -- [5]
 							{
 								["ts"] = 1488343790.03506,
 								["amount"] = -150197,
+								["hp"] = 754331,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 754331,
 							}, -- [6]
 							{
 								["ts"] = 1488343790.03507,
 								["amount"] = -163585,
+								["hp"] = 590746,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 590746,
 							}, -- [7]
 							{
 								["ts"] = 1488343790.03508,
 								["amount"] = -156487,
+								["hp"] = 434259,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 434259,
 							}, -- [8]
 							{
 								["ts"] = 1488343790.03509,
 								["amount"] = -156597,
+								["hp"] = 277662,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 277662,
 							}, -- [9]
 							{
 								["ts"] = 1488343790.0351,
 								["amount"] = -149075,
+								["hp"] = 128587,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 128587,
 							}, -- [10]
 							{
 								["ts"] = 1488343790.24311,
 								["amount"] = -156649,
+								["hp"] = 1,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1,
 							}, -- [11]
 							{
 								["spellname"] = "Renderin dies",
@@ -10707,23 +10707,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343789.73213,
 								["amount"] = -149378,
+								["hp"] = 2008374,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 2008374,
 							}, -- [13]
 							{
 								["ts"] = 1488343789.73214,
 								["amount"] = -162619,
+								["hp"] = 1845755,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1845755,
 							}, -- [14]
 							{
 								["ts"] = 1488343789.73215,
 								["amount"] = -156659,
+								["hp"] = 1689096,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1689096,
 							}, -- [15]
 							["pos"] = 13,
 						},
@@ -10759,9 +10759,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342720.03104,
 								["amount"] = -481163,
+								["hp"] = 1220562,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1220562,
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -10798,23 +10798,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342720.65809,
 								["amount"] = -481509,
+								["hp"] = 991630,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 991630,
 							}, -- [9]
 							{
 								["ts"] = 1488342720.6581,
 								["amount"] = -483573,
+								["hp"] = 508057,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 508057,
 							}, -- [10]
 							{
 								["ts"] = 1488342720.65811,
 								["amount"] = -500610,
+								["hp"] = 7447,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 7447,
 							}, -- [11]
 							{
 								["spellid"] = 213936,
@@ -11015,9 +11015,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341190.14507,
 								["amount"] = -39883,
+								["hp"] = 2644073,
 								["spellid"] = 98021,
 								["srcname"] = "Spirit Link Totem",
-								["hp"] = 2644073,
 							}, -- [7]
 							{
 								["absorb"] = 0,
@@ -11062,9 +11062,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341191.76713,
 								["amount"] = -2875176,
+								["hp"] = 1,
 								["spellid"] = 198099,
 								["srcname"] = "Ursoc",
-								["hp"] = 1,
 							}, -- [13]
 							{
 								["spellname"] = "Renderin dies",
@@ -11421,20 +11421,20 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 72272,
 					},
-					["Nightmare Gaze"] = {
+					["Corruption: Crushing Shadows"] = {
 						["crushing"] = 0,
-						["id"] = 210931,
-						["damage"] = 5851585,
-						["max"] = 852310,
-						["name"] = "Nightmare Gaze",
-						["min"] = 816160,
-						["totalhits"] = 7,
+						["id"] = 208860,
+						["damage"] = 1857585,
+						["max"] = 1138228,
+						["name"] = "Corruption: Crushing Shadows",
+						["min"] = 131837,
+						["totalhits"] = 4,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 32,
+						["school"] = 1,
 						["resisted"] = 0,
 						["glancing"] = 0,
-						["absorbed"] = 0,
+						["absorbed"] = 161923,
 					},
 					["Nightmare Blast"] = {
 						["crushing"] = 0,
@@ -11571,14 +11571,14 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Tainted Discharge"] = {
+					["Nightmare Gaze"] = {
 						["crushing"] = 0,
-						["id"] = 208385,
-						["damage"] = 528768,
-						["max"] = 264384,
-						["name"] = "Tainted Discharge",
-						["min"] = 264384,
-						["totalhits"] = 2,
+						["id"] = 210931,
+						["damage"] = 5851585,
+						["max"] = 852310,
+						["name"] = "Nightmare Gaze",
+						["min"] = 816160,
+						["totalhits"] = 7,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
@@ -11856,20 +11856,20 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Corruption: Crushing Shadows"] = {
+					["Tainted Discharge"] = {
 						["crushing"] = 0,
-						["id"] = 208860,
-						["damage"] = 1857585,
-						["max"] = 1138228,
-						["name"] = "Corruption: Crushing Shadows",
-						["min"] = 131837,
-						["totalhits"] = 4,
+						["id"] = 208385,
+						["damage"] = 528768,
+						["max"] = 264384,
+						["name"] = "Tainted Discharge",
+						["min"] = 264384,
+						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 1,
+						["school"] = 32,
 						["resisted"] = 0,
 						["glancing"] = 0,
-						["absorbed"] = 161923,
+						["absorbed"] = 0,
 					},
 					["Twisting Shadows"] = {
 						["crushing"] = 0,
@@ -12080,11 +12080,11 @@ SkadaPerCharDB = {
 						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
-					["Player-1184-0A838EE8"] = {
+					["Creature-0-3135-1520-18818-69791-000036547A"] = {
 						["role"] = "DAMAGER",
-						["name"] = "Merkav-Nazgrel",
-						["amount"] = 250852,
-						["class"] = "DEMONHUNTER",
+						["name"] = "Renderin-Lightbringer",
+						["amount"] = 0,
+						["class"] = "MONK",
 						["shielding"] = 0,
 					},
 					["Player-1184-0A163D3D"] = {
@@ -12115,11 +12115,11 @@ SkadaPerCharDB = {
 						["class"] = "MONK",
 						["shielding"] = 0,
 					},
-					["Creature-0-3135-1520-18818-69791-000036547A"] = {
+					["Player-1184-0A838EE8"] = {
 						["role"] = "DAMAGER",
-						["name"] = "Renderin-Lightbringer",
-						["amount"] = 0,
-						["class"] = "MONK",
+						["name"] = "Merkav-Nazgrel",
+						["amount"] = 250852,
+						["class"] = "DEMONHUNTER",
 						["shielding"] = 0,
 					},
 					["Player-61-0675C143"] = {
@@ -13016,16 +13016,16 @@ SkadaPerCharDB = {
 						["critical"] = 465,
 						["absorbed"] = 0,
 					},
-					["Pulse"] = {
+					["Wild Growth"] = {
 						["shielding"] = 0,
-						["id"] = 215263,
-						["healing"] = 12821844,
+						["id"] = 48438,
+						["healing"] = 3319440,
 						["min"] = 0,
-						["name"] = "Pulse",
-						["hits"] = 587,
-						["overhealing"] = 13769627,
-						["max"] = 97420,
-						["critical"] = 161,
+						["name"] = "Wild Growth",
+						["hits"] = 211,
+						["overhealing"] = 1337451,
+						["max"] = 56035,
+						["critical"] = 56,
 						["absorbed"] = 0,
 					},
 					["Nature's Essence"] = {
@@ -13112,18 +13112,6 @@ SkadaPerCharDB = {
 						["critical"] = 738,
 						["absorbed"] = 0,
 					},
-					["Wild Growth"] = {
-						["shielding"] = 0,
-						["id"] = 48438,
-						["healing"] = 3319440,
-						["min"] = 0,
-						["name"] = "Wild Growth",
-						["hits"] = 211,
-						["overhealing"] = 1337451,
-						["max"] = 56035,
-						["critical"] = 56,
-						["absorbed"] = 0,
-					},
 					["Dreamwalker"] = {
 						["shielding"] = 0,
 						["id"] = 189853,
@@ -13134,6 +13122,18 @@ SkadaPerCharDB = {
 						["overhealing"] = 96271,
 						["max"] = 214043,
 						["critical"] = 1,
+						["absorbed"] = 0,
+					},
+					["Pulse"] = {
+						["shielding"] = 0,
+						["id"] = 215263,
+						["healing"] = 12821844,
+						["min"] = 0,
+						["name"] = "Pulse",
+						["hits"] = 587,
+						["overhealing"] = 13769627,
+						["max"] = 97420,
+						["critical"] = 161,
 						["absorbed"] = 0,
 					},
 				},
@@ -13209,9 +13209,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488344252.63101,
 								["amount"] = -1418584,
+								["hp"] = 1,
 								["spellid"] = 198670,
 								["srcname"] = "Kuhcakt-Vek'nilash",
-								["hp"] = 1,
 							}, -- [1]
 							{
 								["spellname"] = "Outtkast dies",
@@ -13230,9 +13230,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488344250.81204,
 								["amount"] = -51545,
+								["hp"] = 1882734,
 								["spellid"] = 15407,
 								["srcname"] = "Alixia-Vek'nilash",
-								["hp"] = 1882734,
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -13245,16 +13245,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488344250.90606,
 								["amount"] = -41719,
+								["hp"] = 1848947,
 								["spellid"] = 193473,
 								["srcname"] = "Void Tendril",
-								["hp"] = 1848947,
 							}, -- [6]
 							{
 								["ts"] = 1488344251.03407,
 								["amount"] = -50492,
+								["hp"] = 1798455,
 								["spellid"] = 12654,
 								["srcname"] = "Nystic-Gnomeregan",
-								["hp"] = 1798455,
 							}, -- [7]
 							{
 								["absorb"] = 0,
@@ -13267,51 +13267,51 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488344251.38609,
 								["amount"] = -881676,
+								["hp"] = 947600,
 								["spellid"] = 212621,
 								["srcname"] = "Kuhcakt-Vek'nilash",
-								["hp"] = 947600,
 							}, -- [9]
 							{
 								["ts"] = 1488344251.4771,
 								["amount"] = -283636,
+								["hp"] = 663964,
 								["spellid"] = 205448,
 								["srcname"] = "Alixia-Vek'nilash",
-								["hp"] = 663964,
 							}, -- [10]
 							{
 								["ts"] = 1488344251.51311,
 								["amount"] = -72971,
+								["hp"] = 590993,
 								["spellid"] = 75,
 								["srcname"] = "Kuhcakt-Vek'nilash",
-								["hp"] = 590993,
 							}, -- [11]
 							{
 								["ts"] = 1488344251.81612,
 								["amount"] = -60635,
+								["hp"] = 530358,
 								["spellid"] = 194392,
 								["srcname"] = "Kuhcakt-Vek'nilash",
-								["hp"] = 530358,
 							}, -- [12]
 							{
 								["ts"] = 1488344251.90813,
 								["amount"] = -41719,
+								["hp"] = 488639,
 								["spellid"] = 193473,
 								["srcname"] = "Void Tendril",
-								["hp"] = 488639,
 							}, -- [13]
 							{
 								["ts"] = 1488344252.02614,
 								["amount"] = -50492,
+								["hp"] = 438147,
 								["spellid"] = 12654,
 								["srcname"] = "Nystic-Gnomeregan",
-								["hp"] = 438147,
 							}, -- [14]
 							{
 								["ts"] = 1488344252.60815,
 								["amount"] = -34518,
+								["hp"] = 403629,
 								["spellid"] = 132467,
 								["srcname"] = "Renderin-Lightbringer",
-								["hp"] = 403629,
 							}, -- [15]
 							["pos"] = 3,
 						},
@@ -13329,9 +13329,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342129.75002,
 								["amount"] = -428271,
+								["hp"] = 421571,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 421571,
 							}, -- [2]
 							{
 								["spellid"] = 213936,
@@ -13461,9 +13461,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341190.14505,
 								["amount"] = -14012,
+								["hp"] = 2095098,
 								["spellid"] = 98021,
 								["srcname"] = "Spirit Link Totem",
-								["hp"] = 2095098,
 							}, -- [5]
 							{
 								["absorb"] = 0,
@@ -13484,9 +13484,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341191.14808,
 								["amount"] = -73974,
+								["hp"] = 2146152,
 								["spellid"] = 98021,
 								["srcname"] = "Spirit Link Totem",
-								["hp"] = 2146152,
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -13499,9 +13499,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341192.0741,
 								["amount"] = -2572583,
+								["srcname"] = "Ursoc",
 								["hp"] = 1,
 								["spellid"] = 198099,
-								["srcname"] = "Ursoc",
 							}, -- [10]
 							{
 								["spellname"] = "Outtkast dies",
@@ -13528,9 +13528,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341187.14714,
 								["amount"] = -195083,
+								["hp"] = 2035897,
 								["spellid"] = 98021,
 								["srcname"] = "Spirit Link Totem",
-								["hp"] = 2035897,
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -15728,12 +15728,6 @@ SkadaPerCharDB = {
 						["class"] = "DEATHKNIGHT",
 						["shielding"] = 0,
 					},
-					["Creature-0-3135-1520-18818-113347-0000364A8E"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
 					["Creature-0-3135-1520-18818-113347-000036486F"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
@@ -15746,13 +15740,19 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3135-1520-18818-113347-0000364A9E"] = {
+					["Creature-0-3135-1520-18818-113347-0000364A87"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
 					["Creature-0-3135-1520-18818-113347-0000364A97"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3135-1520-18818-113347-0000364A9E"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -15885,7 +15885,7 @@ SkadaPerCharDB = {
 						["name"] = "Void Tendril",
 						["amount"] = 0,
 					},
-					["Creature-0-3135-1520-18818-113347-0000364A61"] = {
+					["Creature-0-3135-1520-18818-113347-0000B64A61"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -15897,18 +15897,18 @@ SkadaPerCharDB = {
 						["name"] = "Hati",
 						["amount"] = 57193,
 					},
-					["Creature-0-3135-1520-18818-113347-0000364A71"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
 					["Creature-0-3135-1520-18818-63508-0000364BE8"] = {
 						["role"] = "NONE",
 						["name"] = "Xuen",
 						["amount"] = 0,
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
+					},
+					["Creature-0-3135-1520-18818-113347-0000364A71"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
 					},
 					["Creature-0-3135-1520-18818-113347-0000B64A93"] = {
 						["shielding"] = 0,
@@ -15929,16 +15929,17 @@ SkadaPerCharDB = {
 						["class"] = "PRIEST",
 						["shielding"] = 0,
 					},
+					["Creature-0-3135-1520-18818-104096-0004B65407"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Slickrock-AeriePeak",
+						["amount"] = 23799,
+						["class"] = "HUNTER",
+						["shielding"] = 0,
+					},
 					["Creature-0-3135-1520-18818-113347-000036465A"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3135-1520-18818-98167-0000365078"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Void Tendril",
 						["amount"] = 0,
 					},
 					["Creature-0-3135-1520-18818-17252-0000364897"] = {
@@ -15959,12 +15960,11 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3135-1520-18818-104096-0004B65407"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Slickrock-AeriePeak",
-						["amount"] = 23799,
-						["class"] = "HUNTER",
+					["Creature-0-3135-1520-18818-98167-0000365078"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Void Tendril",
+						["amount"] = 0,
 					},
 					["Creature-0-3135-1520-18818-47244-000136508D"] = {
 						["role"] = "DAMAGER",
@@ -15979,7 +15979,7 @@ SkadaPerCharDB = {
 						["name"] = "Hati",
 						["amount"] = 385414,
 					},
-					["Creature-0-3135-1520-18818-113347-0000B64A61"] = {
+					["Creature-0-3135-1520-18818-113347-0000364A61"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -16110,7 +16110,7 @@ SkadaPerCharDB = {
 						["class"] = "WARLOCK",
 						["shielding"] = 0,
 					},
-					["Creature-0-3135-1520-18818-113347-0000364A87"] = {
+					["Creature-0-3135-1520-18818-113347-0000364A8E"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -16939,12 +16939,12 @@ SkadaPerCharDB = {
 						["uptime"] = 40,
 						["auratype"] = "BUFF",
 					},
-					["Temporal Displacement"] = {
-						["name"] = "Temporal Displacement",
+					["Aspect of the Turtle"] = {
+						["name"] = "Aspect of the Turtle",
 						["active"] = 0,
-						["id"] = 80354,
-						["uptime"] = 538,
-						["auratype"] = "DEBUFF",
+						["id"] = 186265,
+						["uptime"] = 6,
+						["auratype"] = "BUFF",
 					},
 					["Bullseye"] = {
 						["name"] = "Bullseye",
@@ -16974,11 +16974,11 @@ SkadaPerCharDB = {
 						["id"] = 82921,
 						["name"] = "Bombardment",
 					},
-					["Infested Ground"] = {
-						["name"] = "Infested Ground",
+					["Temporal Displacement"] = {
+						["name"] = "Temporal Displacement",
 						["active"] = 0,
-						["id"] = 203045,
-						["uptime"] = 0,
+						["id"] = 80354,
+						["uptime"] = 538,
 						["auratype"] = "DEBUFF",
 					},
 					["Blood Frenzy"] = {
@@ -17072,12 +17072,12 @@ SkadaPerCharDB = {
 						["id"] = 191342,
 						["name"] = "Rapid Killing",
 					},
-					["Aspect of the Turtle"] = {
-						["name"] = "Aspect of the Turtle",
+					["Infested Ground"] = {
+						["name"] = "Infested Ground",
 						["active"] = 0,
-						["id"] = 186265,
-						["uptime"] = 6,
-						["auratype"] = "BUFF",
+						["id"] = 203045,
+						["uptime"] = 0,
+						["auratype"] = "DEBUFF",
 					},
 					["Bonds of Terror"] = {
 						["name"] = "Bonds of Terror",
@@ -17353,9 +17353,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342639.93002,
 								["amount"] = -567334,
+								["hp"] = 703454,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 703454,
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -17368,9 +17368,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342640.85804,
 								["amount"] = -538461,
+								["hp"] = 168868,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 168868,
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -17383,9 +17383,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342641.79206,
 								["amount"] = -582035,
+								["hp"] = 558545,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 558545,
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -17398,9 +17398,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342642.74708,
 								["amount"] = -571606,
+								["hp"] = 1,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 1,
 							}, -- [8]
 							{
 								["spellname"] = "Malatov dies",
@@ -17419,9 +17419,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342636.91211,
 								["amount"] = -579353,
+								["hp"] = 2377614,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 2377614,
 							}, -- [11]
 							{
 								["absorb"] = 0,
@@ -17434,9 +17434,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342637.97913,
 								["amount"] = -569295,
+								["hp"] = 1811634,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 1811634,
 							}, -- [13]
 							{
 								["absorb"] = 0,
@@ -17449,9 +17449,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342638.91215,
 								["amount"] = -562739,
+								["hp"] = 1264156,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 1264156,
 							}, -- [15]
 							["pos"] = 10,
 						},
@@ -17463,79 +17463,79 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342296.26101,
 								["amount"] = -275892,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 1339305,
 								["spellid"] = 88163,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [1]
 							{
 								["ts"] = 1488342297.10702,
 								["amount"] = -70662,
+								["hp"] = 992751,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 992751,
 							}, -- [2]
 							{
 								["ts"] = 1488342298.11103,
 								["amount"] = -62524,
+								["hp"] = 930227,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 930227,
 							}, -- [3]
 							{
 								["ts"] = 1488342299.10604,
 								["amount"] = -64469,
+								["hp"] = 865758,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 865758,
 							}, -- [4]
 							{
 								["ts"] = 1488342299.28605,
 								["amount"] = -426757,
+								["hp"] = 439001,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 439001,
 							}, -- [5]
 							{
 								["ts"] = 1488342300.11006,
 								["amount"] = -63626,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 375375,
 								["spellid"] = 210228,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [6]
 							{
 								["ts"] = 1488342301.10707,
 								["amount"] = -67442,
+								["hp"] = 307933,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 307933,
 							}, -- [7]
 							{
 								["ts"] = 1488342302.12008,
 								["amount"] = -69938,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 237995,
 								["spellid"] = 210228,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [8]
 							{
 								["ts"] = 1488342303.11009,
 								["amount"] = -72852,
+								["hp"] = 165143,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 165143,
 							}, -- [9]
 							{
 								["ts"] = 1488342304.1091,
 								["amount"] = -76204,
+								["hp"] = 88939,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 88939,
 							}, -- [10]
 							{
 								["ts"] = 1488342305.10211,
 								["amount"] = -76583,
+								["hp"] = 12356,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 12356,
 							}, -- [11]
 							{
 								["spellid"] = 233434,
@@ -17552,16 +17552,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342295.92214,
 								["amount"] = -222966,
+								["hp"] = 1855467,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1855467,
 							}, -- [14]
 							{
 								["ts"] = 1488342296.10315,
 								["amount"] = -75898,
+								["hp"] = 1339305,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1339305,
 							}, -- [15]
 							["pos"] = 14,
 						},
@@ -18297,9 +18297,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344265.828,
 						["amount"] = -294392,
+						["hp"] = 2944648,
 						["spellid"] = 208860,
 						["srcname"] = "Dread Abomination",
-						["hp"] = 2944648,
 					}, -- [4]
 					{
 						["absorb"] = 0,
@@ -19023,16 +19023,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342223.90812,
 								["amount"] = -1854362,
+								["hp"] = 1382158,
 								["spellid"] = 233485,
 								["srcname"] = "Alarianix-Frostmourne",
-								["hp"] = 1382158,
 							}, -- [12]
 							{
 								["ts"] = 1488342224.15413,
 								["amount"] = -1885832,
+								["hp"] = 1,
 								["spellid"] = 233485,
 								["srcname"] = "Alarianix-Frostmourne",
-								["hp"] = 1,
 							}, -- [13]
 							{
 								["spellname"] = "Slickrock dies",
@@ -19058,9 +19058,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341232.06701,
 								["amount"] = -3198109,
+								["hp"] = 1,
 								["spellid"] = 198099,
 								["srcname"] = "Ursoc",
-								["hp"] = 1,
 							}, -- [1]
 							{
 								["spellname"] = "Slickrock dies",
@@ -19167,9 +19167,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341232.02315,
 								["amount"] = -1727965,
+								["hp"] = 1994033,
 								["spellid"] = 198109,
 								["srcname"] = "Ursoc",
-								["hp"] = 1994033,
 							}, -- [15]
 							["pos"] = 3,
 						},
@@ -19993,9 +19993,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344267.642,
 						["amount"] = -105349,
+						["hp"] = 2952224,
 						["spellid"] = 206920,
 						["srcname"] = "Nightmare Tentacle",
-						["hp"] = 2952224,
 					}, -- [6]
 					{
 						["absorb"] = 0,
@@ -20016,9 +20016,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344268.801,
 						["amount"] = -113532,
+						["hp"] = 2858219,
 						["spellid"] = 206920,
 						["srcname"] = "Nightmare Tentacle",
-						["hp"] = 2858219,
 					}, -- [9]
 					{
 						["absorb"] = 0,
@@ -20039,9 +20039,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344270.272,
 						["amount"] = -114936,
+						["hp"] = 2776580,
 						["spellid"] = 206920,
 						["srcname"] = "Nightmare Tentacle",
-						["hp"] = 2776580,
 					}, -- [12]
 					{
 						["absorb"] = 0,
@@ -20062,9 +20062,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344265.828,
 						["amount"] = -294079,
+						["hp"] = 2942441,
 						["spellid"] = 208860,
 						["srcname"] = "Dread Abomination",
-						["hp"] = 2942441,
 					}, -- [15]
 					["pos"] = 15,
 				},
@@ -20275,51 +20275,15 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["overhealing"] = 128076863.40625,
 				["healingspells"] = {
-					["Vampiric Embrace"] = {
-						["shielding"] = 0,
-						["id"] = 15290,
-						["healing"] = 14329748,
-						["min"] = 9750,
-						["name"] = "Vampiric Embrace",
-						["hits"] = 69,
-						["overhealing"] = 5502558,
-						["max"] = 816634,
-						["critical"] = 0,
-						["absorbed"] = 0,
-					},
-					["Vampiric Touch"] = {
-						["shielding"] = 0,
-						["id"] = 34914,
-						["healing"] = 28643955,
-						["min"] = 0,
-						["name"] = "Vampiric Touch",
-						["hits"] = 1339,
-						["overhealing"] = 96222337,
-						["max"] = 243478,
-						["critical"] = 0,
-						["absorbed"] = 0,
-					},
-					["Power Word: Shield"] = {
-						["shielding"] = 4058647,
-						["id"] = 17,
-						["healing"] = 4058647,
-						["min"] = 0,
-						["name"] = "Power Word: Shield",
-						["hits"] = 65,
-						["overhealing"] = 1268660.96875,
-						["max"] = 244384,
-						["critical"] = 0,
-						["absorbed"] = 0,
-					},
-					["Leech"] = {
-						["shielding"] = 0,
-						["id"] = 143924,
-						["healing"] = 4331046,
-						["min"] = 0,
-						["name"] = "Leech",
-						["hits"] = 1341,
-						["overhealing"] = 13375099,
-						["max"] = 47504,
+					["Dream Simulacrum"] = {
+						["shielding"] = 272955,
+						["id"] = 206005,
+						["healing"] = 272955,
+						["min"] = 272955,
+						["name"] = "Dream Simulacrum",
+						["hits"] = 1,
+						["overhealing"] = 0,
+						["max"] = 272955,
 						["critical"] = 0,
 						["absorbed"] = 0,
 					},
@@ -20335,6 +20299,30 @@ SkadaPerCharDB = {
 						["critical"] = 0,
 						["absorbed"] = 0,
 					},
+					["Vampiric Embrace"] = {
+						["shielding"] = 0,
+						["id"] = 15290,
+						["healing"] = 14329748,
+						["min"] = 9750,
+						["name"] = "Vampiric Embrace",
+						["hits"] = 69,
+						["overhealing"] = 5502558,
+						["max"] = 816634,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+					["Leech"] = {
+						["shielding"] = 0,
+						["id"] = 143924,
+						["healing"] = 4331046,
+						["min"] = 0,
+						["name"] = "Leech",
+						["hits"] = 1341,
+						["overhealing"] = 13375099,
+						["max"] = 47504,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
 					["Mental Fortitude"] = {
 						["shielding"] = 41394944,
 						["id"] = 194022,
@@ -20344,6 +20332,18 @@ SkadaPerCharDB = {
 						["hits"] = 648,
 						["overhealing"] = 8457320.4375,
 						["max"] = 387987,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+					["Vampiric Touch"] = {
+						["shielding"] = 0,
+						["id"] = 34914,
+						["healing"] = 28643955,
+						["min"] = 0,
+						["name"] = "Vampiric Touch",
+						["hits"] = 1339,
+						["overhealing"] = 96222337,
+						["max"] = 243478,
 						["critical"] = 0,
 						["absorbed"] = 0,
 					},
@@ -20359,15 +20359,15 @@ SkadaPerCharDB = {
 						["critical"] = 0,
 						["absorbed"] = 0,
 					},
-					["Dream Simulacrum"] = {
-						["shielding"] = 272955,
-						["id"] = 206005,
-						["healing"] = 272955,
-						["min"] = 272955,
-						["name"] = "Dream Simulacrum",
-						["hits"] = 1,
-						["overhealing"] = 0,
-						["max"] = 272955,
+					["Power Word: Shield"] = {
+						["shielding"] = 4058647,
+						["id"] = 17,
+						["healing"] = 4058647,
+						["min"] = 0,
+						["name"] = "Power Word: Shield",
+						["hits"] = 65,
+						["overhealing"] = 1268660.96875,
+						["max"] = 244384,
 						["critical"] = 0,
 						["absorbed"] = 0,
 					},
@@ -20632,9 +20632,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342066.84602,
 								["amount"] = -241017,
+								["hp"] = 167857,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 167857,
 							}, -- [2]
 							{
 								["spellname"] = "Vyerii dies",
@@ -20653,9 +20653,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342063.82105,
 								["amount"] = -14797,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 2568846,
 								["spellid"] = 210228,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [5]
 							{
 								["absorb"] = 0,
@@ -20676,9 +20676,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342064.83508,
 								["amount"] = -29385,
+								["hp"] = 2635764,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 2635764,
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -20691,9 +20691,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342064.8841,
 								["amount"] = -2364607,
+								["hp"] = 348406,
 								["spellid"] = 214348,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 348406,
 							}, -- [10]
 							{
 								["absorb"] = 0,
@@ -20706,16 +20706,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342065.32212,
 								["amount"] = -325200,
+								["hp"] = 365604,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 365604,
 							}, -- [12]
 							{
 								["ts"] = 1488342065.83213,
 								["amount"] = -28730,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 11674,
 								["spellid"] = 210228,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [13]
 							{
 								["absorb"] = 0,
@@ -21788,14 +21788,14 @@ SkadaPerCharDB = {
 				["power"] = {
 					[13] = {
 						["spells"] = {
-							[15407] = 2481,
+							[205448] = 4096,
 							[208232] = 639,
 							[211649] = 1361,
-							[34914] = 636,
+							[15407] = 2481,
 							[190714] = 885,
 							[589] = 432,
 							[8092] = 5325,
-							[205448] = 4096,
+							[34914] = 636,
 						},
 						["amount"] = 15855,
 					},
@@ -21859,12 +21859,12 @@ SkadaPerCharDB = {
 						["uptime"] = 1211,
 						["auratype"] = "BUFF",
 					},
-					["Sunfire"] = {
-						["uptime"] = 69,
+					["Bear Form"] = {
+						["name"] = "Bear Form",
 						["active"] = 0,
-						["auratype"] = "DEBUFF",
-						["id"] = 164815,
-						["name"] = "Sunfire",
+						["id"] = 5487,
+						["uptime"] = 0,
+						["auratype"] = "BUFF",
 					},
 					["Slumbering Nightmare"] = {
 						["name"] = "Slumbering Nightmare",
@@ -21880,11 +21880,11 @@ SkadaPerCharDB = {
 						["uptime"] = 538,
 						["auratype"] = "DEBUFF",
 					},
-					["Bear Form"] = {
-						["name"] = "Bear Form",
+					["Rejuvenation"] = {
+						["name"] = "Rejuvenation",
 						["active"] = 0,
-						["id"] = 5487,
-						["uptime"] = 0,
+						["id"] = 774,
+						["uptime"] = 81,
 						["auratype"] = "BUFF",
 					},
 					["Ironbark"] = {
@@ -21971,12 +21971,12 @@ SkadaPerCharDB = {
 						["uptime"] = 8,
 						["auratype"] = "BUFF",
 					},
-					["Rejuvenation"] = {
-						["name"] = "Rejuvenation",
+					["Sunfire"] = {
+						["uptime"] = 69,
 						["active"] = 0,
-						["id"] = 774,
-						["uptime"] = 81,
-						["auratype"] = "BUFF",
+						["auratype"] = "DEBUFF",
+						["id"] = 164815,
+						["name"] = "Sunfire",
 					},
 					["Bonds of Terror"] = {
 						["name"] = "Bonds of Terror",
@@ -22297,10 +22297,10 @@ SkadaPerCharDB = {
 								["spellid"] = 41220,
 							}, -- [2]
 							{
-								["spellid"] = 61999,
-								["ts"] = 1488344177.458,
-								["srcname"] = "Hadooken-Nesingwary",
 								["hp"] = 0,
+								["ts"] = 1488344177.458,
+								["spellid"] = 61999,
+								["srcname"] = "Hadooken-Nesingwary",
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -22404,23 +22404,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343790.03501,
 								["amount"] = -161943,
+								["hp"] = 277539,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 277539,
 							}, -- [1]
 							{
 								["ts"] = 1488343790.24302,
 								["amount"] = -158978,
+								["hp"] = 118561,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 118561,
 							}, -- [2]
 							{
 								["ts"] = 1488343790.24303,
 								["amount"] = -156398,
+								["hp"] = 1,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1,
 							}, -- [3]
 							{
 								["spellname"] = "Arshia dies",
@@ -22431,16 +22431,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343789.73205,
 								["amount"] = -154543,
+								["hp"] = 1774211,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1774211,
 							}, -- [5]
 							{
 								["ts"] = 1488343789.76706,
 								["amount"] = -158957,
+								["hp"] = 1615254,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1615254,
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -22453,58 +22453,58 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343789.98108,
 								["amount"] = -154907,
+								["hp"] = 1541498,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1541498,
 							}, -- [8]
 							{
 								["ts"] = 1488343789.98109,
 								["amount"] = -152228,
+								["hp"] = 1389270,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1389270,
 							}, -- [9]
 							{
 								["ts"] = 1488343790.0341,
 								["amount"] = -163362,
+								["hp"] = 1225908,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1225908,
 							}, -- [10]
 							{
 								["ts"] = 1488343790.03411,
 								["amount"] = -161358,
+								["hp"] = 1064550,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1064550,
 							}, -- [11]
 							{
 								["ts"] = 1488343790.03412,
 								["amount"] = -152377,
+								["hp"] = 912173,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 912173,
 							}, -- [12]
 							{
 								["ts"] = 1488343790.03413,
 								["amount"] = -155278,
+								["hp"] = 756895,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 756895,
 							}, -- [13]
 							{
 								["ts"] = 1488343790.03414,
 								["amount"] = -162990,
+								["hp"] = 593905,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 593905,
 							}, -- [14]
 							{
 								["ts"] = 1488343790.03415,
 								["amount"] = -154423,
+								["hp"] = 439482,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 439482,
 							}, -- [15]
 							["pos"] = 5,
 						},
@@ -22516,16 +22516,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342747.10001,
 								["amount"] = -513393,
+								["hp"] = 1109630,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1109630,
 							}, -- [1]
 							{
 								["ts"] = 1488342747.10002,
 								["amount"] = -485133,
+								["hp"] = 624497,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 624497,
 							}, -- [2]
 							{
 								["spellid"] = 210850,
@@ -22558,9 +22558,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342749.09107,
 								["amount"] = -496675,
+								["hp"] = 1,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1,
 							}, -- [7]
 							{
 								["spellname"] = "Arshia dies",
@@ -22600,9 +22600,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342739.09804,
 								["amount"] = -507919,
+								["hp"] = 74814,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 74814,
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -22625,10 +22625,10 @@ SkadaPerCharDB = {
 								["spellid"] = 41220,
 							}, -- [7]
 							{
-								["spellid"] = 20484,
-								["ts"] = 1488342744.452,
-								["srcname"] = "Outtkast-Nazgrel",
 								["hp"] = 0,
+								["ts"] = 1488342744.452,
+								["spellid"] = 20484,
+								["srcname"] = "Outtkast-Nazgrel",
 							}, -- [8]
 							{
 								["spellid"] = 213936,
@@ -22698,9 +22698,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342101.87102,
 								["amount"] = -555429,
+								["hp"] = 768556,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 768556,
 							}, -- [2]
 							{
 								["spellid"] = 210850,
@@ -22711,9 +22711,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342102.89804,
 								["amount"] = -592211,
+								["hp"] = 24238,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 24238,
 							}, -- [4]
 							{
 								["spellid"] = 210850,
@@ -22762,9 +22762,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342099.77911,
 								["amount"] = -591374,
+								["hp"] = 2113666,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 2113666,
 							}, -- [11]
 							{
 								["absorb"] = 0,
@@ -22791,9 +22791,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342100.76115,
 								["amount"] = -578451,
+								["hp"] = 1473380,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 1473380,
 							}, -- [15]
 							["pos"] = 7,
 						},
@@ -23376,17 +23376,17 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Dark Storm"] = {
+					["Seeping Fog"] = {
 						["crushing"] = 0,
-						["id"] = 213936,
-						["damage"] = 5906712,
-						["max"] = 280409,
-						["name"] = "Dark Storm",
-						["min"] = 53419,
-						["totalhits"] = 31,
+						["id"] = 205341,
+						["damage"] = 2827777,
+						["max"] = 157099,
+						["name"] = "Seeping Fog",
+						["min"] = 157098,
+						["totalhits"] = 18,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 32,
+						["school"] = 8,
 						["resisted"] = 0,
 						["glancing"] = 0,
 						["absorbed"] = 0,
@@ -23571,17 +23571,17 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Seeping Fog"] = {
+					["Nightmare Blast"] = {
 						["crushing"] = 0,
-						["id"] = 205341,
-						["damage"] = 2827777,
-						["max"] = 157099,
-						["name"] = "Seeping Fog",
-						["min"] = 157098,
-						["totalhits"] = 18,
+						["id"] = 203153,
+						["damage"] = 431383,
+						["max"] = 431383,
+						["name"] = "Nightmare Blast",
+						["min"] = 431383,
+						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 8,
+						["school"] = 32,
 						["resisted"] = 0,
 						["glancing"] = 0,
 						["absorbed"] = 0,
@@ -23616,14 +23616,14 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Nightmare Blast"] = {
+					["Dark Storm"] = {
 						["crushing"] = 0,
-						["id"] = 203153,
-						["damage"] = 431383,
-						["max"] = 431383,
-						["name"] = "Nightmare Blast",
-						["min"] = 431383,
-						["totalhits"] = 1,
+						["id"] = 213936,
+						["damage"] = 5906712,
+						["max"] = 280409,
+						["name"] = "Dark Storm",
+						["min"] = 53419,
+						["totalhits"] = 31,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
@@ -24697,9 +24697,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344265.828,
 						["amount"] = -297164,
+						["hp"] = 2407876,
 						["spellid"] = 208860,
 						["srcname"] = "Dread Abomination",
-						["hp"] = 2407876,
 					}, -- [1]
 					{
 						["absorb"] = 0,
@@ -25362,16 +25362,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342260.39003,
 								["amount"] = -310955,
+								["hp"] = 572097,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 572097,
 							}, -- [3]
 							{
 								["ts"] = 1488342260.39004,
 								["amount"] = -308660,
+								["hp"] = 572097,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 572097,
 							}, -- [4]
 							{
 								["spellname"] = "Alarianix dies",
@@ -25430,16 +25430,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342258.27412,
 								["amount"] = -418609,
+								["hp"] = 933036,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 933036,
 							}, -- [12]
 							{
 								["ts"] = 1488342258.27413,
 								["amount"] = -418975,
+								["hp"] = 514061,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 514061,
 							}, -- [13]
 							{
 								["absorb"] = 0,
@@ -25491,9 +25491,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341151.75304,
 								["amount"] = -2586675,
+								["hp"] = 1,
 								["spellid"] = 198099,
 								["srcname"] = "Ursoc",
-								["hp"] = 1,
 							}, -- [4]
 							{
 								["spellname"] = "Alarianix dies",
@@ -25877,17 +25877,17 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Nightmare Gaze"] = {
+					["Corruption: Crushing Shadows"] = {
 						["crushing"] = 0,
-						["id"] = 210931,
-						["damage"] = 724110,
-						["max"] = 724110,
-						["name"] = "Nightmare Gaze",
-						["min"] = 724110,
-						["totalhits"] = 1,
+						["id"] = 208860,
+						["damage"] = 1783914,
+						["max"] = 297319,
+						["name"] = "Corruption: Crushing Shadows",
+						["min"] = 297319,
+						["totalhits"] = 6,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 32,
+						["school"] = 1,
 						["resisted"] = 0,
 						["glancing"] = 0,
 						["absorbed"] = 0,
@@ -25967,14 +25967,14 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Nightmare Blast"] = {
+					["Dark Storm"] = {
 						["crushing"] = 0,
-						["id"] = 203153,
-						["damage"] = 398696,
-						["max"] = 398696,
-						["name"] = "Nightmare Blast",
-						["min"] = 398696,
-						["totalhits"] = 1,
+						["id"] = 213936,
+						["damage"] = 2043139,
+						["max"] = 216743,
+						["name"] = "Dark Storm",
+						["min"] = 32028,
+						["totalhits"] = 28,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
@@ -25982,17 +25982,17 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Barreling Impact"] = {
+					["Nightmare Javelin"] = {
 						["crushing"] = 0,
-						["id"] = 198109,
-						["damage"] = 1317039,
-						["max"] = 1317039,
-						["name"] = "Barreling Impact",
-						["min"] = 1317039,
-						["totalhits"] = 1,
+						["id"] = 211507,
+						["damage"] = 608046,
+						["max"] = 88316,
+						["name"] = "Nightmare Javelin",
+						["min"] = 84956,
+						["totalhits"] = 7,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 1,
+						["school"] = 32,
 						["resisted"] = 0,
 						["glancing"] = 0,
 						["absorbed"] = 0,
@@ -26027,17 +26027,17 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Corruption: Crushing Shadows"] = {
+					["Tainted Discharge"] = {
 						["crushing"] = 0,
-						["id"] = 208860,
-						["damage"] = 1783914,
-						["max"] = 297319,
-						["name"] = "Corruption: Crushing Shadows",
-						["min"] = 297319,
-						["totalhits"] = 6,
+						["id"] = 208385,
+						["damage"] = 235476,
+						["max"] = 235476,
+						["name"] = "Tainted Discharge",
+						["min"] = 235476,
+						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 1,
+						["school"] = 32,
 						["resisted"] = 0,
 						["glancing"] = 0,
 						["absorbed"] = 0,
@@ -26057,35 +26057,35 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Seeping Fog"] = {
+					["Nightmare Blast"] = {
 						["crushing"] = 0,
-						["id"] = 205341,
-						["damage"] = 553276,
-						["max"] = 138319,
-						["name"] = "Seeping Fog",
-						["min"] = 138319,
-						["totalhits"] = 4,
+						["id"] = 203153,
+						["damage"] = 398696,
+						["max"] = 398696,
+						["name"] = "Nightmare Blast",
+						["min"] = 398696,
+						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 8,
+						["school"] = 32,
 						["resisted"] = 0,
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Venomous Pool"] = {
+					["Barreling Impact"] = {
 						["crushing"] = 0,
-						["id"] = 213790,
-						["damage"] = 12370062,
-						["max"] = 449959,
-						["name"] = "Venomous Pool",
-						["min"] = 123311,
-						["totalhits"] = 38,
+						["id"] = 198109,
+						["damage"] = 1317039,
+						["max"] = 1317039,
+						["name"] = "Barreling Impact",
+						["min"] = 1317039,
+						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 8,
+						["school"] = 1,
 						["resisted"] = 0,
 						["glancing"] = 0,
-						["absorbed"] = 527272,
+						["absorbed"] = 0,
 					},
 					["Erupting Terror"] = {
 						["crushing"] = 0,
@@ -26192,13 +26192,13 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Tainted Discharge"] = {
+					["Nightmare Gaze"] = {
 						["crushing"] = 0,
-						["id"] = 208385,
-						["damage"] = 235476,
-						["max"] = 235476,
-						["name"] = "Tainted Discharge",
-						["min"] = 235476,
+						["id"] = 210931,
+						["damage"] = 724110,
+						["max"] = 724110,
+						["name"] = "Nightmare Gaze",
+						["min"] = 724110,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
@@ -26222,17 +26222,17 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Dark Storm"] = {
+					["Seeping Fog"] = {
 						["crushing"] = 0,
-						["id"] = 213936,
-						["damage"] = 2043139,
-						["max"] = 216743,
-						["name"] = "Dark Storm",
-						["min"] = 32028,
-						["totalhits"] = 28,
+						["id"] = 205341,
+						["damage"] = 553276,
+						["max"] = 138319,
+						["name"] = "Seeping Fog",
+						["min"] = 138319,
+						["totalhits"] = 4,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 32,
+						["school"] = 8,
 						["resisted"] = 0,
 						["glancing"] = 0,
 						["absorbed"] = 0,
@@ -26402,20 +26402,20 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Nightmare Javelin"] = {
+					["Venomous Pool"] = {
 						["crushing"] = 0,
-						["id"] = 211507,
-						["damage"] = 608046,
-						["max"] = 88316,
-						["name"] = "Nightmare Javelin",
-						["min"] = 84956,
-						["totalhits"] = 7,
+						["id"] = 213790,
+						["damage"] = 12370062,
+						["max"] = 449959,
+						["name"] = "Venomous Pool",
+						["min"] = 123311,
+						["totalhits"] = 38,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 32,
+						["school"] = 8,
 						["resisted"] = 0,
 						["glancing"] = 0,
-						["absorbed"] = 0,
+						["absorbed"] = 527272,
 					},
 					["Darkened Discharge"] = {
 						["crushing"] = 0,
@@ -26672,9 +26672,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344265.828,
 						["amount"] = -297319,
+						["hp"] = 2604281,
 						["spellid"] = 208860,
 						["srcname"] = "Dread Abomination",
-						["hp"] = 2604281,
 					}, -- [13]
 					{
 						["absorb"] = 0,
@@ -27533,44 +27533,44 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342257.09201,
 								["amount"] = -341914,
+								["hp"] = 1382629,
 								["spellid"] = 233485,
 								["srcname"] = "Malderd-Nesingwary",
-								["hp"] = 1382629,
 							}, -- [1]
 							{
 								["ts"] = 1488342257.15602,
 								["amount"] = -160391,
+								["hp"] = 1382629,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1382629,
 							}, -- [2]
 							{
 								["ts"] = 1488342257.25003,
 								["amount"] = -189943,
+								["hp"] = 1222238,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1222238,
 							}, -- [3]
 							{
 								["ts"] = 1488342257.27004,
 								["amount"] = -92215,
+								["hp"] = 1130023,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1130023,
 							}, -- [4]
 							{
 								["ts"] = 1488342257.29005,
 								["amount"] = -1081427,
+								["hp"] = 1130023,
 								["spellid"] = 88163,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 1130023,
 							}, -- [5]
 							{
 								["ts"] = 1488342257.29006,
 								["amount"] = -151823,
+								["hp"] = 1130023,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1130023,
 							}, -- [6]
 							{
 								["spellname"] = "Taladendren dies",
@@ -27621,9 +27621,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342256.92113,
 								["amount"] = -10780,
+								["hp"] = 2078445,
 								["spellid"] = 233485,
 								["srcname"] = "Malderd-Nesingwary",
-								["hp"] = 2078445,
 							}, -- [13]
 							{
 								["absorb"] = 0,
@@ -27636,9 +27636,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342257.09115,
 								["amount"] = -406834,
+								["hp"] = 1724543,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1724543,
 							}, -- [15]
 							["pos"] = 8,
 						},
@@ -27760,9 +27760,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341230.41515,
 								["amount"] = -2007406,
+								["hp"] = 1,
 								["spellid"] = 198099,
 								["srcname"] = "Ursoc",
-								["hp"] = 1,
 							}, -- [15]
 							["pos"] = 2,
 						},
@@ -27784,17 +27784,17 @@ SkadaPerCharDB = {
 								["spellid"] = 41220,
 							}, -- [2]
 							{
-								["spellid"] = 20484,
-								["ts"] = 1488340366.496,
-								["srcname"] = "Outtkast-Nazgrel",
 								["hp"] = 0,
+								["ts"] = 1488340366.496,
+								["spellid"] = 20484,
+								["srcname"] = "Outtkast-Nazgrel",
 							}, -- [3]
 							{
 								["ts"] = 1488340342.46804,
 								["amount"] = -116887,
+								["hp"] = 2041480,
 								["spellid"] = 204506,
 								["srcname"] = "Nythendra",
-								["hp"] = 2041480,
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -27807,23 +27807,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488340343.67706,
 								["amount"] = -236910,
+								["hp"] = 1825022,
 								["spellid"] = 203097,
 								["srcname"] = "Haniquin-Stormrage",
-								["hp"] = 1825022,
 							}, -- [6]
 							{
 								["ts"] = 1488340343.67707,
 								["amount"] = -241878,
+								["hp"] = 1583144,
 								["spellid"] = 203097,
 								["srcname"] = "Iliandre-Nemesis",
-								["hp"] = 1583144,
 							}, -- [7]
 							{
 								["ts"] = 1488340344.48908,
 								["amount"] = -128020,
+								["hp"] = 1455124,
 								["spellid"] = 204506,
 								["srcname"] = "Nythendra",
-								["hp"] = 1455124,
 							}, -- [8]
 							{
 								["ts"] = 1488340344.78209,
@@ -27844,9 +27844,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488340346.46311,
 								["amount"] = -128020,
+								["hp"] = 1439341,
 								["spellid"] = 204506,
 								["srcname"] = "Nythendra",
-								["hp"] = 1439341,
 							}, -- [11]
 							{
 								["ts"] = 1488340346.50012,
@@ -27859,9 +27859,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488340346.69113,
 								["amount"] = -237338,
+								["hp"] = 1271888,
 								["spellid"] = 203097,
 								["srcname"] = "Iliandre-Nemesis",
-								["hp"] = 1271888,
 							}, -- [13]
 							{
 								["absorb"] = 0,
@@ -29542,9 +29542,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342658.42901,
 								["amount"] = -51763,
+								["hp"] = 447796,
 								["spellid"] = 88163,
 								["srcname"] = "Skittering Spiderling",
-								["hp"] = 447796,
 							}, -- [1]
 							{
 								["spellid"] = 213936,
@@ -29555,9 +29555,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342659.14103,
 								["amount"] = -471713,
+								["hp"] = 1,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1,
 							}, -- [3]
 							{
 								["spellname"] = "Huntersix dies",
@@ -29574,9 +29574,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342653.12406,
 								["amount"] = -485072,
+								["hp"] = 1372376,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1372376,
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -29609,9 +29609,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342655.12711,
 								["amount"] = -488130,
+								["hp"] = 781919,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 781919,
 							}, -- [11]
 							{
 								["spellid"] = 213936,
@@ -29628,9 +29628,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342656.93014,
 								["amount"] = -118678,
+								["hp"] = 640020,
 								["spellid"] = 88163,
 								["srcname"] = "Skittering Spiderling",
-								["hp"] = 640020,
 							}, -- [14]
 							{
 								["spellid"] = 213936,
@@ -29648,16 +29648,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342309.26301,
 								["amount"] = -265504,
+								["hp"] = 1352816,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1352816,
 							}, -- [1]
 							{
 								["ts"] = 1488342309.26302,
 								["amount"] = -300581,
+								["hp"] = 1352816,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1352816,
 							}, -- [2]
 							{
 								["spellname"] = "Huntersix dies",
@@ -29668,30 +29668,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342307.74704,
 								["amount"] = -221465,
+								["hp"] = 2396368,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 2396368,
 							}, -- [4]
 							{
 								["ts"] = 1488342307.74705,
 								["amount"] = -295218,
+								["hp"] = 2396368,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 2396368,
 							}, -- [5]
 							{
 								["ts"] = 1488342307.74706,
 								["amount"] = -248550,
+								["hp"] = 2396368,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 2396368,
 							}, -- [6]
 							{
 								["ts"] = 1488342307.74707,
 								["amount"] = -269672,
+								["hp"] = 2396368,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 2396368,
 							}, -- [7]
 							{
 								["spellid"] = 233434,
@@ -29710,9 +29710,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342308.7671,
 								["amount"] = -84041,
+								["hp"] = 1533244,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1533244,
 							}, -- [10]
 							{
 								["spellid"] = 233434,
@@ -29723,30 +29723,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342309.26212,
 								["amount"] = -251367,
+								["hp"] = 1352816,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1352816,
 							}, -- [12]
 							{
 								["ts"] = 1488342309.26213,
 								["amount"] = -215173,
+								["hp"] = 1352816,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1352816,
 							}, -- [13]
 							{
 								["ts"] = 1488342309.26214,
 								["amount"] = -278176,
+								["hp"] = 1352816,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1352816,
 							}, -- [14]
 							{
 								["ts"] = 1488342309.26215,
 								["amount"] = -223663,
+								["hp"] = 1352816,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1352816,
 							}, -- [15]
 							["pos"] = 4,
 						},
@@ -29838,16 +29838,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341151.89611,
 								["amount"] = -2542332,
+								["hp"] = 387228,
 								["spellid"] = 198099,
 								["srcname"] = "Ursoc",
-								["hp"] = 387228,
 							}, -- [11]
 							{
 								["ts"] = 1488341152.47212,
 								["amount"] = -977732,
+								["hp"] = 1,
 								["spellid"] = 198109,
 								["srcname"] = "Ursoc",
-								["hp"] = 1,
 							}, -- [12]
 							{
 								["spellname"] = "Huntersix dies",
@@ -29856,10 +29856,10 @@ SkadaPerCharDB = {
 								["spellid"] = 41220,
 							}, -- [13]
 							{
-								["srcname"] = "Outtkast-Nazgrel",
-								["ts"] = 1488341165.719,
-								["hp"] = 0,
 								["spellid"] = 20484,
+								["ts"] = 1488341165.719,
+								["srcname"] = "Outtkast-Nazgrel",
+								["hp"] = 0,
 							}, -- [14]
 							{
 								["ts"] = 1488341124.60115,
@@ -30980,9 +30980,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342271.85003,
 								["amount"] = -240469,
+								["hp"] = 459400,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 459400,
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -30995,9 +30995,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342272.06205,
 								["amount"] = -234418,
+								["hp"] = 470784,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 470784,
 							}, -- [5]
 							{
 								["spellname"] = "Nystic dies",
@@ -31008,16 +31008,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342270.34607,
 								["amount"] = -314081,
+								["hp"] = 1653601,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1653601,
 							}, -- [7]
 							{
 								["ts"] = 1488342270.56408,
 								["amount"] = -245425,
+								["hp"] = 1016060,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1016060,
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -31054,23 +31054,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342271.12813,
 								["amount"] = -44627,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 943464,
 								["spellid"] = 210228,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [13]
 							{
 								["ts"] = 1488342271.60514,
 								["amount"] = -284876,
+								["hp"] = 943464,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 943464,
 							}, -- [14]
 							{
 								["ts"] = 1488342271.60515,
 								["amount"] = -307773,
+								["hp"] = 943464,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 943464,
 							}, -- [15]
 							["pos"] = 7,
 						},
@@ -31443,17 +31443,17 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Seeping Fog"] = {
+					["Dark Storm"] = {
 						["crushing"] = 0,
-						["id"] = 225356,
-						["damage"] = 938910,
-						["max"] = 156485,
-						["name"] = "Seeping Fog",
-						["min"] = 156485,
-						["totalhits"] = 6,
+						["id"] = 213936,
+						["damage"] = 1504281,
+						["max"] = 193696,
+						["name"] = "Dark Storm",
+						["min"] = 61455,
+						["totalhits"] = 18,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 8,
+						["school"] = 32,
 						["resisted"] = 0,
 						["glancing"] = 0,
 						["absorbed"] = 0,
@@ -31518,17 +31518,17 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Nightmare Blast"] = {
+					["Seeping Fog"] = {
 						["crushing"] = 0,
-						["id"] = 203153,
-						["damage"] = 436371,
-						["max"] = 436371,
-						["name"] = "Nightmare Blast",
-						["min"] = 436371,
-						["totalhits"] = 1,
+						["id"] = 225356,
+						["damage"] = 938910,
+						["max"] = 156485,
+						["name"] = "Seeping Fog",
+						["min"] = 156485,
+						["totalhits"] = 6,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 32,
+						["school"] = 8,
 						["resisted"] = 0,
 						["glancing"] = 0,
 						["absorbed"] = 0,
@@ -31818,14 +31818,14 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 1242303,
 					},
-					["Dark Storm"] = {
+					["Nightmare Blast"] = {
 						["crushing"] = 0,
-						["id"] = 213936,
-						["damage"] = 1504281,
-						["max"] = 193696,
-						["name"] = "Dark Storm",
-						["min"] = 61455,
-						["totalhits"] = 18,
+						["id"] = 203153,
+						["damage"] = 436371,
+						["max"] = 436371,
+						["name"] = "Nightmare Blast",
+						["min"] = 436371,
+						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
@@ -31889,16 +31889,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344271.215,
 						["amount"] = -110903,
+						["hp"] = 3665023,
 						["spellid"] = 206920,
 						["srcname"] = "Nightmare Tentacle",
-						["hp"] = 3665023,
 					}, -- [4]
 					{
 						["ts"] = 1488344265.828,
 						["amount"] = -293043,
+						["hp"] = 3366606,
 						["spellid"] = 208860,
 						["srcname"] = "Dread Abomination",
-						["hp"] = 3366606,
 					}, -- [5]
 					{
 						["absorb"] = 0,
@@ -32972,9 +32972,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488341232.023,
 						["amount"] = -1710671,
+						["hp"] = 318057,
 						["spellid"] = 198109,
 						["srcname"] = "Ursoc",
-						["hp"] = 318057,
 					}, -- [12]
 					{
 						["absorb"] = 0,
@@ -33721,9 +33721,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342127.72603,
 								["amount"] = -503948,
+								["hp"] = 1040423,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1040423,
 							}, -- [3]
 							{
 								["spellid"] = 213936,
@@ -33764,9 +33764,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342133.7341,
 								["amount"] = -377862,
+								["hp"] = 151549,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 151549,
 							}, -- [10]
 							{
 								["spellid"] = 213936,
@@ -33872,9 +33872,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341232.15009,
 								["amount"] = -1857651,
+								["hp"] = 1,
 								["spellid"] = 199237,
 								["srcname"] = "Ursoc",
-								["hp"] = 1,
 							}, -- [9]
 							{
 								["spellname"] = "Hadooken dies",
@@ -34233,20 +34233,20 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 14113,
 					},
-					["Tainted Discharge"] = {
+					["Corruption: Crushing Shadows"] = {
 						["crushing"] = 0,
-						["id"] = 208385,
-						["damage"] = 3256698,
-						["max"] = 264827,
-						["name"] = "Tainted Discharge",
-						["min"] = 207926,
-						["totalhits"] = 13,
+						["id"] = 208860,
+						["damage"] = 2711618,
+						["max"] = 297225,
+						["name"] = "Corruption: Crushing Shadows",
+						["min"] = 72799,
+						["totalhits"] = 11,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 32,
+						["school"] = 1,
 						["resisted"] = 0,
 						["glancing"] = 0,
-						["absorbed"] = 133083,
+						["absorbed"] = 528129,
 					},
 					["Burst of Corruption"] = {
 						["crushing"] = 0,
@@ -34308,20 +34308,20 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 81200,
 					},
-					["Corruption: Crushing Shadows"] = {
+					["Nightmare Gaze"] = {
 						["crushing"] = 0,
-						["id"] = 208860,
-						["damage"] = 2711618,
-						["max"] = 297225,
-						["name"] = "Corruption: Crushing Shadows",
-						["min"] = 72799,
-						["totalhits"] = 11,
+						["id"] = 210931,
+						["damage"] = 4785547,
+						["max"] = 852040,
+						["name"] = "Nightmare Gaze",
+						["min"] = 683555,
+						["totalhits"] = 6,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 1,
+						["school"] = 32,
 						["resisted"] = 0,
 						["glancing"] = 0,
-						["absorbed"] = 528129,
+						["absorbed"] = 235278,
 					},
 					["Bonds of Terror"] = {
 						["crushing"] = 0,
@@ -34473,20 +34473,20 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 95450,
 					},
-					["Nightmare Gaze"] = {
+					["Tainted Discharge"] = {
 						["crushing"] = 0,
-						["id"] = 210931,
-						["damage"] = 4785547,
-						["max"] = 852040,
-						["name"] = "Nightmare Gaze",
-						["min"] = 683555,
-						["totalhits"] = 6,
+						["id"] = 208385,
+						["damage"] = 3256698,
+						["max"] = 264827,
+						["name"] = "Tainted Discharge",
+						["min"] = 207926,
+						["totalhits"] = 13,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
 						["glancing"] = 0,
-						["absorbed"] = 235278,
+						["absorbed"] = 133083,
 					},
 					["Necrotic Venom"] = {
 						["crushing"] = 0,
@@ -35528,6 +35528,22 @@ SkadaPerCharDB = {
 						["criticalmin"] = 11041,
 						["hitamount"] = 6919103,
 					},
+					["Drain Soul"] = {
+						["hitmin"] = 55030,
+						["criticalamount"] = 7410137,
+						["id"] = 198590,
+						["damage"] = 15510777,
+						["max"] = 231849,
+						["totalhits"] = 157,
+						["min"] = 55030,
+						["criticalmax"] = 231849,
+						["critical"] = 42,
+						["hit"] = 115,
+						["school"] = 32,
+						["hitmax"] = 96604,
+						["criticalmin"] = 129059,
+						["hitamount"] = 8100640,
+					},
 					["Channel Demonfire"] = {
 						["hitmin"] = 147,
 						["criticalamount"] = 19955343,
@@ -35543,22 +35559,6 @@ SkadaPerCharDB = {
 						["hitmax"] = 61809,
 						["criticalmin"] = 334,
 						["hitamount"] = 27718859,
-					},
-					["Drain Life"] = {
-						["hitmin"] = 16728,
-						["criticalamount"] = 112917,
-						["id"] = 234153,
-						["damage"] = 311043,
-						["max"] = 46003,
-						["totalhits"] = 13,
-						["min"] = 16728,
-						["criticalmax"] = 46003,
-						["critical"] = 3,
-						["hit"] = 10,
-						["school"] = 32,
-						["hitmax"] = 23002,
-						["criticalmin"] = 33457,
-						["hitamount"] = 198126,
 					},
 					["Siphon Life"] = {
 						["hitmin"] = 17550,
@@ -35624,21 +35624,21 @@ SkadaPerCharDB = {
 						["criticalmin"] = 3484,
 						["hitamount"] = 24964708,
 					},
-					["Drain Soul"] = {
-						["hitmin"] = 55030,
-						["criticalamount"] = 7410137,
-						["id"] = 198590,
-						["damage"] = 15510777,
-						["max"] = 231849,
-						["totalhits"] = 157,
-						["min"] = 55030,
-						["criticalmax"] = 231849,
-						["critical"] = 42,
-						["hit"] = 115,
+					["Drain Life"] = {
+						["hitmin"] = 16728,
+						["criticalamount"] = 112917,
+						["id"] = 234153,
+						["damage"] = 311043,
+						["max"] = 46003,
+						["totalhits"] = 13,
+						["min"] = 16728,
+						["criticalmax"] = 46003,
+						["critical"] = 3,
+						["hit"] = 10,
 						["school"] = 32,
-						["hitmax"] = 96604,
-						["criticalmin"] = 129059,
-						["hitamount"] = 8100640,
+						["hitmax"] = 23002,
+						["criticalmin"] = 33457,
+						["hitamount"] = 198126,
 					},
 					["Unstable Affliction"] = {
 						["damage"] = 32564752,
@@ -35989,9 +35989,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341217.03609,
 								["amount"] = -287058,
+								["srcname"] = "Balzer-Quel'Thalas",
 								["hp"] = 2335252,
 								["spellid"] = 1454,
-								["srcname"] = "Balzer-Quel'Thalas",
 							}, -- [9]
 							{
 								["absorb"] = 0,
@@ -37708,9 +37708,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342659.14013,
 								["amount"] = -410703,
+								["hp"] = 290252,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 290252,
 							}, -- [13]
 							{
 								["spellid"] = 213936,
@@ -37734,9 +37734,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342106.64101,
 								["amount"] = -415289,
+								["hp"] = 1,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1,
 							}, -- [1]
 							{
 								["spellname"] = "Merkav dies",
@@ -37747,9 +37747,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342101.70203,
 								["amount"] = -570286,
+								["hp"] = 2078811,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 2078811,
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -37770,9 +37770,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342102.96906,
 								["amount"] = -552297,
+								["hp"] = 1567268,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 1567268,
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -37799,9 +37799,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342104.4941,
 								["amount"] = -578412,
+								["hp"] = 891535,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 891535,
 							}, -- [10]
 							{
 								["absorb"] = 0,
@@ -37828,9 +37828,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342106.06914,
 								["amount"] = -564166,
+								["hp"] = 241648,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 241648,
 							}, -- [14]
 							{
 								["spellid"] = 210850,
@@ -37912,9 +37912,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341230.07909,
 								["amount"] = -3158031,
+								["hp"] = 1,
 								["spellid"] = 198099,
 								["srcname"] = "Ursoc",
-								["hp"] = 1,
 							}, -- [9]
 							{
 								["spellname"] = "Merkav dies",
@@ -39304,23 +39304,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343792.17301,
 								["amount"] = -167206,
+								["hp"] = 319861,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 319861,
 							}, -- [1]
 							{
 								["ts"] = 1488343792.17302,
 								["amount"] = -166235,
+								["hp"] = 153626,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 153626,
 							}, -- [2]
 							{
 								["ts"] = 1488343792.42503,
 								["amount"] = -157384,
+								["hp"] = 1,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1,
 							}, -- [3]
 							{
 								["spellname"] = "Aetheric dies",
@@ -39331,72 +39331,72 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343789.76705,
 								["amount"] = -164008,
+								["hp"] = 1863188,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1863188,
 							}, -- [5]
 							{
 								["ts"] = 1488343789.76706,
 								["amount"] = -151820,
+								["hp"] = 1711368,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1711368,
 							}, -- [6]
 							{
 								["ts"] = 1488343789.98107,
 								["amount"] = -166351,
+								["hp"] = 1545017,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1545017,
 							}, -- [7]
 							{
 								["ts"] = 1488343789.98108,
 								["amount"] = -155489,
+								["hp"] = 1389528,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1389528,
 							}, -- [8]
 							{
 								["ts"] = 1488343790.03409,
 								["amount"] = -167255,
+								["hp"] = 1222273,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1222273,
 							}, -- [9]
 							{
 								["ts"] = 1488343790.0341,
 								["amount"] = -152739,
+								["hp"] = 1069534,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1069534,
 							}, -- [10]
 							{
 								["ts"] = 1488343790.24211,
 								["amount"] = -164103,
+								["hp"] = 905431,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 905431,
 							}, -- [11]
 							{
 								["ts"] = 1488343790.24212,
 								["amount"] = -164133,
+								["hp"] = 741298,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 741298,
 							}, -- [12]
 							{
 								["ts"] = 1488343790.27313,
 								["amount"] = -163924,
+								["hp"] = 577374,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 577374,
 							}, -- [13]
 							{
 								["ts"] = 1488343790.27314,
 								["amount"] = -166414,
+								["hp"] = 410960,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 410960,
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -39472,9 +39472,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342278.26808,
 								["amount"] = -1313870,
+								["hp"] = 3038580,
 								["spellid"] = 88163,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 3038580,
 							}, -- [8]
 							{
 								["spellid"] = 213124,
@@ -39972,17 +39972,17 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Tainted Discharge"] = {
+					["Corruption: Crushing Shadows"] = {
 						["crushing"] = 0,
-						["id"] = 208385,
-						["damage"] = 2423222,
-						["max"] = 269247,
-						["name"] = "Tainted Discharge",
-						["min"] = 269246,
-						["totalhits"] = 9,
+						["id"] = 208860,
+						["damage"] = 5384936,
+						["max"] = 299164,
+						["name"] = "Corruption: Crushing Shadows",
+						["min"] = 299163,
+						["totalhits"] = 18,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 32,
+						["school"] = 1,
 						["resisted"] = 0,
 						["glancing"] = 0,
 						["absorbed"] = 0,
@@ -40107,14 +40107,14 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Nightmare Gaze"] = {
+					["Tainted Discharge"] = {
 						["crushing"] = 0,
-						["id"] = 210931,
-						["damage"] = 1717511,
-						["max"] = 859520,
-						["name"] = "Nightmare Gaze",
-						["min"] = 857991,
-						["totalhits"] = 2,
+						["id"] = 208385,
+						["damage"] = 2423222,
+						["max"] = 269247,
+						["name"] = "Tainted Discharge",
+						["min"] = 269246,
+						["totalhits"] = 9,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
@@ -40302,17 +40302,17 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Corruption: Crushing Shadows"] = {
+					["Nightmare Gaze"] = {
 						["crushing"] = 0,
-						["id"] = 208860,
-						["damage"] = 5384936,
-						["max"] = 299164,
-						["name"] = "Corruption: Crushing Shadows",
-						["min"] = 299163,
-						["totalhits"] = 18,
+						["id"] = 210931,
+						["damage"] = 1717511,
+						["max"] = 859520,
+						["name"] = "Nightmare Gaze",
+						["min"] = 857991,
+						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 1,
+						["school"] = 32,
 						["resisted"] = 0,
 						["glancing"] = 0,
 						["absorbed"] = 0,
@@ -40516,9 +40516,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344270.668,
 						["amount"] = -109091,
+						["hp"] = 2975093,
 						["spellid"] = 206920,
 						["srcname"] = "Nightmare Tentacle",
-						["hp"] = 2975093,
 					}, -- [5]
 					{
 						["absorb"] = 0,
@@ -40531,9 +40531,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344271.344,
 						["amount"] = -117616,
+						["hp"] = 2882957,
 						["spellid"] = 206920,
 						["srcname"] = "Nightmare Tentacle",
-						["hp"] = 2882957,
 					}, -- [7]
 					{
 						["absorb"] = 0,
@@ -40562,9 +40562,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344265.828,
 						["amount"] = -299163,
+						["hp"] = 2810229,
 						["spellid"] = 208860,
 						["srcname"] = "Dread Abomination",
-						["hp"] = 2810229,
 					}, -- [11]
 					{
 						["ts"] = 1488344265.907,
@@ -41123,37 +41123,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342217.16901,
 								["amount"] = -381529,
+								["hp"] = 1445506,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1445506,
 							}, -- [1]
 							{
 								["ts"] = 1488342217.16902,
 								["amount"] = -371895,
+								["hp"] = 1073611,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1073611,
 							}, -- [2]
 							{
 								["ts"] = 1488342217.16903,
 								["amount"] = -355099,
+								["hp"] = 718512,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 718512,
 							}, -- [3]
 							{
 								["ts"] = 1488342217.16904,
 								["amount"] = -387757,
+								["srcname"] = "Twisting Shadows",
 								["spellid"] = 213790,
 								["hp"] = 330755,
-								["srcname"] = "Twisting Shadows",
 							}, -- [4]
 							{
 								["ts"] = 1488342217.19805,
 								["amount"] = -358360,
+								["hp"] = 1,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1,
 							}, -- [5]
 							{
 								["spellname"] = "Boltman dies",
@@ -41259,9 +41259,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342103.64803,
 								["amount"] = -391895,
+								["hp"] = 697992,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 697992,
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -41274,9 +41274,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342104.49505,
 								["amount"] = -90671,
+								["hp"] = 666120,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 666120,
 							}, -- [5]
 							{
 								["absorb"] = 0,
@@ -41297,16 +41297,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342104.53708,
 								["amount"] = -363587,
+								["hp"] = 366495,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 366495,
 							}, -- [8]
 							{
 								["ts"] = 1488342104.58109,
 								["amount"] = -367070,
+								["hp"] = 1,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1,
 							}, -- [9]
 							{
 								["spellname"] = "Boltman dies",
@@ -41325,9 +41325,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342102.53612,
 								["amount"] = -432141,
+								["hp"] = 1497701,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1497701,
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -41340,9 +41340,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342102.78514,
 								["amount"] = -454479,
+								["hp"] = 1071668,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 1071668,
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -41466,9 +41466,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341230.10814,
 								["amount"] = -3127158,
+								["hp"] = 1,
 								["spellid"] = 198099,
 								["srcname"] = "Ursoc",
-								["hp"] = 1,
 							}, -- [14]
 							{
 								["spellname"] = "Boltman dies",
@@ -43364,7 +43364,7 @@ SkadaPerCharDB = {
 						["name"] = "Healing Stream Totem",
 						["amount"] = 0,
 					},
-					["Vehicle-0-3135-1520-18818-98035-000036487B"] = {
+					["Vehicle-0-3135-1520-18818-98035-0000B6475B"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Dreadstalker",
@@ -43376,16 +43376,16 @@ SkadaPerCharDB = {
 						["name"] = "Void Tendril",
 						["amount"] = 0,
 					},
-					["Vehicle-0-3135-1520-18818-98035-0000B6475B"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Dreadstalker",
-						["amount"] = 0,
-					},
-					["Creature-0-3135-1520-18818-113347-0000364A90"] = {
+					["Creature-0-3135-1520-18818-113347-0000B64C9E"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3135-1520-18818-106551-0000364EE2"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Hati",
 						["amount"] = 0,
 					},
 					["Creature-0-3135-1520-18818-113347-000036475B"] = {
@@ -43394,23 +43394,23 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3135-1520-18818-113347-0000B64C9E"] = {
+					["Creature-0-3135-1520-18818-3527-0000365264"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Healing Stream Totem",
+						["amount"] = 0,
+					},
+					["Creature-0-3135-1520-18818-113347-0000364C9E"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Vehicle-0-3135-1520-18818-98035-0000B64C3D"] = {
+					["Creature-0-3135-1520-18818-113347-0000364A90"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Dreadstalker",
+						["name"] = "Beast",
 						["amount"] = 0,
-					},
-					["Creature-0-3135-1520-18818-98167-0000365333"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Void Tendril",
-						["amount"] = 7569,
 					},
 					["Creature-0-3135-1520-18818-113347-0000364753"] = {
 						["shielding"] = 0,
@@ -43424,12 +43424,11 @@ SkadaPerCharDB = {
 						["name"] = "Void Tendril",
 						["amount"] = 0,
 					},
-					["Player-1184-0865AC2D"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Indianmajik-Nazgrel",
-						["amount"] = 11688371,
-						["class"] = "PALADIN",
+					["Vehicle-0-3135-1520-18818-98035-0000B64C3D"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Dreadstalker",
+						["amount"] = 0,
 					},
 					["Creature-0-3135-1520-18818-98167-0000364563"] = {
 						["shielding"] = 0,
@@ -43455,11 +43454,12 @@ SkadaPerCharDB = {
 						["name"] = "Hati",
 						["amount"] = 12546,
 					},
-					["Creature-0-3135-1520-18818-113347-0000365403"] = {
+					["Player-1184-0A838EE8"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Merkav-Nazgrel",
+						["amount"] = 19471544,
+						["class"] = "DEMONHUNTER",
 						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
 					},
 					["Creature-0-3135-1520-18818-63508-000036452E"] = {
 						["role"] = "NONE",
@@ -43480,18 +43480,18 @@ SkadaPerCharDB = {
 						["name"] = "Dreadstalker",
 						["amount"] = 0,
 					},
-					["Player-1184-0A838EE8"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Merkav-Nazgrel",
-						["amount"] = 19471544,
-						["class"] = "DEMONHUNTER",
-						["shielding"] = 0,
-					},
-					["Creature-0-3135-1520-18818-113347-0000364C9E"] = {
+					["Creature-0-3135-1520-18818-98167-0000365333"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
+						["name"] = "Void Tendril",
+						["amount"] = 7569,
+					},
+					["Player-1184-0865AC2D"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Indianmajik-Nazgrel",
+						["amount"] = 11688371,
+						["class"] = "PALADIN",
+						["shielding"] = 0,
 					},
 					["Creature-0-3135-1520-18818-59764-000036475A"] = {
 						["shielding"] = 0,
@@ -43511,10 +43511,10 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3135-1520-18818-113347-0000B64DFE"] = {
+					["Creature-0-3135-1520-18818-98167-0000364C1D"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
+						["name"] = "Void Tendril",
 						["amount"] = 0,
 					},
 					["Creature-0-3135-1520-18818-3527-0000364C00"] = {
@@ -43523,22 +43523,22 @@ SkadaPerCharDB = {
 						["name"] = "Healing Stream Totem",
 						["amount"] = 0,
 					},
-					["Vehicle-0-3135-1520-18818-98035-0000B6487B"] = {
+					["Vehicle-0-3135-1520-18818-98035-000036487B"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Dreadstalker",
 						["amount"] = 0,
 					},
-					["Creature-0-3135-1520-18818-113347-0000365483"] = {
+					["Creature-0-3135-1520-18818-113347-0000365403"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3135-1520-18818-3527-0000365443"] = {
+					["Creature-0-3135-1520-18818-59764-00003651DE"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Healing Stream Totem",
+						["name"] = "Healing Tide Totem",
 						["amount"] = 0,
 					},
 					["Creature-0-3135-1520-18818-98167-00003654B8"] = {
@@ -43553,24 +43553,24 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3135-1520-18818-113347-0000364C41"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
-					["Creature-0-3135-1520-18818-59764-00003651DE"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Healing Tide Totem",
-						["amount"] = 0,
-					},
 					["Player-3693-0764D064"] = {
 						["role"] = "DAMAGER",
 						["name"] = "Vyerii-Kel'Thuzad",
 						["amount"] = 8243902,
 						["class"] = "PRIEST",
 						["shielding"] = 0,
+					},
+					["Creature-0-3135-1520-18818-3527-0000365443"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Healing Stream Totem",
+						["amount"] = 0,
+					},
+					["Vehicle-0-3135-1520-18818-98035-0000B64560"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Dreadstalker",
+						["amount"] = 0,
 					},
 					["Creature-0-3135-1520-18818-104096-0003365407"] = {
 						["role"] = "HEALER",
@@ -43603,10 +43603,10 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 7712,
 					},
-					["Vehicle-0-3135-1520-18818-98035-0000364560"] = {
+					["Creature-0-3135-1520-18818-113347-0000364C41"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Dreadstalker",
+						["name"] = "Beast",
 						["amount"] = 0,
 					},
 					["Creature-0-3135-1520-18818-69792-0000364758"] = {
@@ -43777,13 +43777,13 @@ SkadaPerCharDB = {
 						["name"] = "Healing Stream Totem",
 						["amount"] = 0,
 					},
-					["Creature-0-3135-1520-18818-113347-0000364A97"] = {
+					["Creature-0-3135-1520-18818-113347-0000364A8E"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3135-1520-18818-113347-0000364A9E"] = {
+					["Creature-0-3135-1520-18818-113347-0000364A97"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -43923,7 +43923,7 @@ SkadaPerCharDB = {
 						["name"] = "Healing Stream Totem",
 						["amount"] = 0,
 					},
-					["Creature-0-3135-1520-18818-113347-0000364A8E"] = {
+					["Creature-0-3135-1520-18818-113347-0000364A9E"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -44048,7 +44048,7 @@ SkadaPerCharDB = {
 						["name"] = "Healing Stream Totem",
 						["amount"] = 0,
 					},
-					["Vehicle-0-3135-1520-18818-98035-0000B64560"] = {
+					["Vehicle-0-3135-1520-18818-98035-0000364560"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Dreadstalker",
@@ -44072,16 +44072,16 @@ SkadaPerCharDB = {
 						["name"] = "Void Tendril",
 						["amount"] = 0,
 					},
-					["Creature-0-3135-1520-18818-3527-00003650A1"] = {
+					["Creature-0-3135-1520-18818-113347-0000365483"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Healing Stream Totem",
+						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3135-1520-18818-98167-0000364C1D"] = {
+					["Vehicle-0-3135-1520-18818-98035-0000B6487B"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Void Tendril",
+						["name"] = "Dreadstalker",
 						["amount"] = 0,
 					},
 					["Creature-0-3135-1520-18818-17252-0000364A45"] = {
@@ -44096,10 +44096,10 @@ SkadaPerCharDB = {
 						["name"] = "Hati",
 						["amount"] = 0,
 					},
-					["Creature-0-3135-1520-18818-113347-00003648B7"] = {
+					["Creature-0-3135-1520-18818-3527-00003650A1"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Beast",
+						["name"] = "Healing Stream Totem",
 						["amount"] = 0,
 					},
 					["Creature-0-3135-1520-18818-3527-0000365203"] = {
@@ -44108,16 +44108,16 @@ SkadaPerCharDB = {
 						["name"] = "Healing Stream Totem",
 						["amount"] = 0,
 					},
-					["Creature-0-3135-1520-18818-3527-0000365264"] = {
+					["Creature-0-3135-1520-18818-113347-0000B64DFE"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Healing Stream Totem",
+						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3135-1520-18818-106551-0000364EE2"] = {
+					["Creature-0-3135-1520-18818-113347-00003648B7"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Hati",
+						["name"] = "Beast",
 						["amount"] = 0,
 					},
 					["Player-3725-09FAD0FF"] = {
@@ -44314,9 +44314,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344268.286,
 						["amount"] = -92605,
+						["hp"] = 2168102,
 						["spellid"] = 206920,
 						["srcname"] = "Nightmare Tentacle",
-						["hp"] = 2168102,
 					}, -- [2]
 					{
 						["absorb"] = 0,
@@ -44345,9 +44345,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344270.599,
 						["amount"] = -108628,
+						["hp"] = 2097958,
 						["spellid"] = 206920,
 						["srcname"] = "Nightmare Tentacle",
-						["hp"] = 2097958,
 					}, -- [6]
 					{
 						["absorb"] = 0,
@@ -44384,9 +44384,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344267.246,
 						["amount"] = -96415,
+						["hp"] = 2406403,
 						["spellid"] = 206920,
 						["srcname"] = "Nightmare Tentacle",
-						["hp"] = 2406403,
 					}, -- [11]
 					{
 						["absorb"] = 0,
@@ -44399,16 +44399,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344267.414,
 						["amount"] = -94566,
+						["hp"] = 2337333,
 						["spellid"] = 206920,
 						["srcname"] = "Nightmare Tentacle",
-						["hp"] = 2337333,
 					}, -- [13]
 					{
 						["ts"] = 1488344267.733,
 						["amount"] = -95074,
+						["hp"] = 2242259,
 						["spellid"] = 206920,
 						["srcname"] = "Nightmare Tentacle",
-						["hp"] = 2242259,
 					}, -- [14]
 					{
 						["absorb"] = 0,
@@ -44756,30 +44756,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343789.73301,
 								["amount"] = -162881,
+								["hp"] = 1292987,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1292987,
 							}, -- [1]
 							{
 								["ts"] = 1488343789.73302,
 								["amount"] = -157381,
+								["hp"] = 1135606,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1135606,
 							}, -- [2]
 							{
 								["ts"] = 1488343789.73303,
 								["amount"] = -155879,
+								["hp"] = 979727,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 979727,
 							}, -- [3]
 							{
 								["ts"] = 1488343789.76804,
 								["amount"] = -154083,
+								["hp"] = 825644,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 825644,
 							}, -- [4]
 							{
 								["absorb"] = -48367,
@@ -44840,9 +44840,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343790.24312,
 								["amount"] = -152175,
+								["hp"] = 1,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1,
 							}, -- [12]
 							{
 								["spellname"] = "Indianmajik dies",
@@ -44853,16 +44853,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343789.73214,
 								["amount"] = -149498,
+								["hp"] = 1605562,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1605562,
 							}, -- [14]
 							{
 								["ts"] = 1488343789.73215,
 								["amount"] = -149694,
+								["hp"] = 1455868,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1455868,
 							}, -- [15]
 							["pos"] = 14,
 						},
@@ -44874,9 +44874,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342637.81801,
 								["amount"] = -561624,
+								["hp"] = 1,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 1,
 							}, -- [1]
 							{
 								["spellname"] = "Indianmajik dies",
@@ -44959,16 +44959,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342634.66612,
 								["amount"] = -530970,
+								["hp"] = 1224090,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 1224090,
 							}, -- [12]
 							{
 								["ts"] = 1488342635.68613,
 								["amount"] = -558257,
+								["hp"] = 665833,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 665833,
 							}, -- [13]
 							{
 								["absorb"] = 0,
@@ -44981,9 +44981,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342636.86215,
 								["amount"] = -568131,
+								["hp"] = 199394,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 199394,
 							}, -- [15]
 							["pos"] = 3,
 						},
@@ -45094,9 +45094,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341654.52701,
 								["amount"] = -46732,
+								["hp"] = 4569,
 								["spellid"] = 203102,
 								["srcname"] = "Ysondre",
-								["hp"] = 4569,
 							}, -- [1]
 							{
 								["absorb"] = 0,
@@ -45109,16 +45109,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341655.26903,
 								["amount"] = -33379,
+								["hp"] = 49749,
 								["spellid"] = 203121,
 								["srcname"] = "Taerar",
-								["hp"] = 49749,
 							}, -- [3]
 							{
 								["ts"] = 1488341655.56404,
 								["amount"] = -46732,
+								["hp"] = 3017,
 								["spellid"] = 203102,
 								["srcname"] = "Ysondre",
-								["hp"] = 3017,
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -45131,9 +45131,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341656.29706,
 								["amount"] = -33379,
+								["hp"] = 1,
 								["spellid"] = 203121,
 								["srcname"] = "Taerar",
-								["hp"] = 1,
 							}, -- [6]
 							{
 								["spellname"] = "Indianmajik dies",
@@ -45176,9 +45176,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341653.53312,
 								["amount"] = -46732,
+								["hp"] = 149532,
 								["spellid"] = 203102,
 								["srcname"] = "Ysondre",
-								["hp"] = 149532,
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -45197,9 +45197,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341654.26815,
 								["amount"] = -33379,
+								["hp"] = 51301,
 								["spellid"] = 203121,
 								["srcname"] = "Taerar",
-								["hp"] = 51301,
 							}, -- [15]
 							["pos"] = 8,
 						},
@@ -45249,9 +45249,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341165.23706,
 								["amount"] = -741722,
+								["hp"] = 1013338,
 								["spellid"] = 197969,
 								["srcname"] = "Ursoc",
-								["hp"] = 1013338,
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -45310,16 +45310,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341175.23314,
 								["amount"] = -932672,
+								["srcname"] = "Ursoc",
 								["hp"] = 997894,
 								["spellid"] = 197969,
-								["srcname"] = "Ursoc",
 							}, -- [14]
 							{
 								["ts"] = 1488341193.21115,
 								["amount"] = -970992,
+								["hp"] = 1,
 								["spellid"] = 198109,
 								["srcname"] = "Ursoc",
-								["hp"] = 1,
 							}, -- [15]
 							["pos"] = 2,
 						},
@@ -45351,9 +45351,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488340361.26804,
 								["amount"] = -125002,
+								["hp"] = 1529605,
 								["spellid"] = 204506,
 								["srcname"] = "Nythendra",
-								["hp"] = 1529605,
 							}, -- [4]
 							{
 								["ts"] = 1488340361.29605,
@@ -45382,9 +45382,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488340363.27908,
 								["amount"] = -125003,
+								["hp"] = 1515733,
 								["spellid"] = 204506,
 								["srcname"] = "Nythendra",
-								["hp"] = 1515733,
 							}, -- [8]
 							{
 								["ts"] = 1488340363.42009,
@@ -45397,9 +45397,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488340365.2821,
 								["amount"] = -125003,
+								["hp"] = 1176147,
 								["spellid"] = 204506,
 								["srcname"] = "Nythendra",
-								["hp"] = 1176147,
 							}, -- [10]
 							{
 								["absorb"] = 0,
@@ -45412,16 +45412,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488340367.02612,
 								["amount"] = -633336,
+								["hp"] = 591487,
 								["spellid"] = 203646,
 								["srcname"] = "Corrupted Vermin",
-								["hp"] = 591487,
 							}, -- [12]
 							{
 								["ts"] = 1488340367.25513,
 								["amount"] = -134617,
+								["hp"] = 456870,
 								["spellid"] = 204506,
 								["srcname"] = "Nythendra",
-								["hp"] = 456870,
 							}, -- [13]
 							{
 								["spellid"] = 203045,
@@ -45432,9 +45432,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488340369.06115,
 								["amount"] = -775424,
+								["srcname"] = "Corrupted Vermin",
 								["spellid"] = 203646,
 								["hp"] = 1,
-								["srcname"] = "Corrupted Vermin",
 							}, -- [15]
 							["pos"] = 2,
 						},
@@ -46295,9 +46295,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344265.828,
 						["amount"] = -294354,
+						["hp"] = 1460706,
 						["spellid"] = 208860,
 						["srcname"] = "Dread Abomination",
-						["hp"] = 1460706,
 					}, -- [13]
 					{
 						["absorb"] = 0,
@@ -46310,9 +46310,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344269.748,
 						["amount"] = -113288,
+						["hp"] = 1415789,
 						["spellid"] = 206920,
 						["srcname"] = "Nightmare Tentacle",
-						["hp"] = 1415789,
 					}, -- [15]
 					["pos"] = 4,
 				},
@@ -47232,9 +47232,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342013.09801,
 								["amount"] = -8263661,
+								["hp"] = 1,
 								["spellid"] = 233485,
 								["srcname"] = "Indianmajik-Nazgrel",
-								["hp"] = 1,
 							}, -- [1]
 							{
 								["spellname"] = "Iliandre dies",
@@ -47341,9 +47341,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342013.09715,
 								["amount"] = -837995,
+								["hp"] = 1884265,
 								["spellid"] = 214348,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 1884265,
 							}, -- [15]
 							["pos"] = 3,
 						},
@@ -47435,9 +47435,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341151.95911,
 								["amount"] = -2501506,
+								["hp"] = 1,
 								["spellid"] = 198099,
 								["srcname"] = "Ursoc",
-								["hp"] = 1,
 							}, -- [11]
 							{
 								["spellname"] = "Iliandre dies",
@@ -47487,16 +47487,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488340346.69202,
 								["amount"] = -313140,
+								["hp"] = 1110298,
 								["spellid"] = 203097,
 								["srcname"] = "Haniquin-Stormrage",
-								["hp"] = 1110298,
 							}, -- [2]
 							{
 								["ts"] = 1488340346.69203,
 								["amount"] = -305749,
+								["hp"] = 804549,
 								["spellid"] = 203097,
 								["srcname"] = "Iliandre-Nemesis",
-								["hp"] = 804549,
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -47585,9 +47585,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488340346.46315,
 								["amount"] = -114053,
+								["hp"] = 1389302,
 								["spellid"] = 204506,
 								["srcname"] = "Nythendra",
-								["hp"] = 1389302,
 							}, -- [15]
 							["pos"] = 9,
 						},
@@ -48478,13 +48478,6 @@ SkadaPerCharDB = {
 						["uptime"] = 20,
 						["auratype"] = "BUFF",
 					},
-					["Aspect of the Cheetah"] = {
-						["name"] = "Aspect of the Cheetah",
-						["active"] = 0,
-						["id"] = 186257,
-						["uptime"] = 24,
-						["auratype"] = "BUFF",
-					},
 					["Seven of Dominion"] = {
 						["name"] = "Seven of Dominion",
 						["active"] = 0,
@@ -48497,6 +48490,13 @@ SkadaPerCharDB = {
 						["active"] = 0,
 						["id"] = 207068,
 						["uptime"] = 77,
+						["auratype"] = "BUFF",
+					},
+					["Aspect of the Cheetah"] = {
+						["name"] = "Aspect of the Cheetah",
+						["active"] = 0,
+						["id"] = 186257,
+						["uptime"] = 24,
 						["auratype"] = "BUFF",
 					},
 					["Frost Enchant"] = {
@@ -48663,8 +48663,8 @@ SkadaPerCharDB = {
 						["criticalamount"] = 190304,
 						["id"] = 220877,
 						["damage"] = 288357,
-						["totalhits"] = 6,
 						["max"] = 66060,
+						["totalhits"] = 6,
 						["min"] = 31992,
 						["criticalmax"] = 66060,
 						["critical"] = 3,
@@ -48797,8 +48797,8 @@ SkadaPerCharDB = {
 						["criticalamount"] = 364292,
 						["id"] = 194392,
 						["damage"] = 1131784,
-						["totalhits"] = 22,
 						["max"] = 106442,
+						["totalhits"] = 22,
 						["min"] = 36605,
 						["criticalmax"] = 106442,
 						["critical"] = 4,
@@ -48813,8 +48813,8 @@ SkadaPerCharDB = {
 						["criticalamount"] = 3478519,
 						["id"] = 83381,
 						["damage"] = 5422088,
-						["totalhits"] = 8,
 						["max"] = 1141532,
+						["totalhits"] = 8,
 						["min"] = 335153,
 						["criticalmax"] = 1141532,
 						["critical"] = 4,
@@ -48829,8 +48829,8 @@ SkadaPerCharDB = {
 						["criticalamount"] = 199919,
 						["id"] = 160124,
 						["damage"] = 334054,
-						["totalhits"] = 5,
 						["max"] = 112998,
+						["totalhits"] = 5,
 						["min"] = 34175,
 						["criticalmax"] = 112998,
 						["hitmax"] = 56499,
@@ -48873,8 +48873,8 @@ SkadaPerCharDB = {
 						["criticalamount"] = 825842,
 						["id"] = 207097,
 						["damage"] = 1082287,
-						["totalhits"] = 13,
 						["max"] = 113010,
+						["totalhits"] = 13,
 						["min"] = 43465,
 						["criticalmax"] = 113010,
 						["hitmax"] = 56505,
@@ -48930,8 +48930,8 @@ SkadaPerCharDB = {
 						["criticalamount"] = 1865703,
 						["id"] = 17253,
 						["damage"] = 2850462,
-						["totalhits"] = 13,
 						["max"] = 426024,
+						["totalhits"] = 13,
 						["min"] = 104831,
 						["criticalmax"] = 426024,
 						["hitmax"] = 227169,
@@ -48981,8 +48981,8 @@ SkadaPerCharDB = {
 						["criticalamount"] = 36417,
 						["id"] = 220857,
 						["damage"] = 55467,
-						["totalhits"] = 4,
 						["max"] = 18768,
+						["totalhits"] = 4,
 						["min"] = 9384,
 						["criticalmax"] = 18768,
 						["critical"] = 2,
@@ -49037,8 +49037,8 @@ SkadaPerCharDB = {
 						["criticalamount"] = 66060,
 						["id"] = 220874,
 						["damage"] = 240317,
-						["totalhits"] = 13,
 						["max"] = 33030,
+						["totalhits"] = 13,
 						["min"] = 15530,
 						["criticalmax"] = 33030,
 						["hitmax"] = 16515,
@@ -49147,8 +49147,8 @@ SkadaPerCharDB = {
 						["criticalamount"] = 598934,
 						["id"] = 6603,
 						["damage"] = 1064736,
-						["totalhits"] = 21,
 						["max"] = 82353,
+						["totalhits"] = 21,
 						["min"] = 24179,
 						["criticalmax"] = 82353,
 						["critical"] = 8,
@@ -49190,9 +49190,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488344156.43304,
 								["amount"] = -296426,
+								["hp"] = 2721814,
 								["spellid"] = 208860,
 								["srcname"] = "Dread Abomination",
-								["hp"] = 2721814,
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -49205,9 +49205,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488344160.30406,
 								["amount"] = -4186586,
+								["hp"] = 1,
 								["spellid"] = 206369,
 								["srcname"] = "Xavius",
-								["hp"] = 1,
 							}, -- [6]
 							{
 								["spellname"] = "Bracnar dies",
@@ -49297,16 +49297,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342301.23102,
 								["amount"] = -14632,
+								["hp"] = 1388748,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1388748,
 							}, -- [2]
 							{
 								["ts"] = 1488342302.24303,
 								["amount"] = -15413,
+								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
 								["hp"] = 1373335,
-								["spellid"] = 210228,
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -49319,9 +49319,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342303.23105,
 								["amount"] = -15604,
+								["hp"] = 1397604,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1397604,
 							}, -- [5]
 							{
 								["absorb"] = 0,
@@ -49342,37 +49342,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342304.21908,
 								["amount"] = -14942,
+								["hp"] = 1470982,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1470982,
 							}, -- [8]
 							{
 								["ts"] = 1488342305.23709,
 								["amount"] = -14488,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 1456494,
 								["spellid"] = 210228,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [9]
 							{
 								["ts"] = 1488342306.2711,
 								["amount"] = -14585,
+								["hp"] = 1441909,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1441909,
 							}, -- [10]
 							{
 								["ts"] = 1488342307.24311,
 								["amount"] = -15427,
+								["hp"] = 1426482,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 1426482,
 							}, -- [11]
 							{
 								["ts"] = 1488342307.74812,
 								["amount"] = -3074465,
+								["hp"] = 1426482,
 								["spellid"] = 88163,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 1426482,
 							}, -- [12]
 							{
 								["spellname"] = "Bracnar dies",
@@ -49752,14 +49752,14 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Nightmare Gaze"] = {
+					["Raining Filth"] = {
 						["crushing"] = 0,
-						["id"] = 210931,
-						["damage"] = 1677208,
-						["max"] = 855534,
-						["name"] = "Nightmare Gaze",
-						["min"] = 821674,
-						["totalhits"] = 2,
+						["id"] = 225081,
+						["damage"] = 1532519,
+						["max"] = 163034,
+						["name"] = "Raining Filth",
+						["min"] = 32607,
+						["totalhits"] = 15,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
@@ -49782,14 +49782,14 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Raining Filth"] = {
+					["Tainted Discharge"] = {
 						["crushing"] = 0,
-						["id"] = 225081,
-						["damage"] = 1532519,
-						["max"] = 163034,
-						["name"] = "Raining Filth",
-						["min"] = 32607,
-						["totalhits"] = 15,
+						["id"] = 208385,
+						["damage"] = 800348,
+						["max"] = 266783,
+						["name"] = "Tainted Discharge",
+						["min"] = 266782,
+						["totalhits"] = 3,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
@@ -49827,17 +49827,17 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Foul Aura"] = {
+					["Corruption: Crushing Shadows"] = {
 						["crushing"] = 0,
-						["id"] = 194243,
-						["damage"] = 98052,
-						["max"] = 67449,
-						["name"] = "Foul Aura",
-						["min"] = 6517,
-						["totalhits"] = 5,
+						["id"] = 208860,
+						["damage"] = 592851,
+						["max"] = 296426,
+						["name"] = "Corruption: Crushing Shadows",
+						["min"] = 296425,
+						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 32,
+						["school"] = 1,
 						["resisted"] = 0,
 						["glancing"] = 0,
 						["absorbed"] = 0,
@@ -50127,29 +50127,29 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Corruption: Crushing Shadows"] = {
+					["Foul Aura"] = {
 						["crushing"] = 0,
-						["id"] = 208860,
-						["damage"] = 592851,
-						["max"] = 296426,
-						["name"] = "Corruption: Crushing Shadows",
-						["min"] = 296425,
-						["totalhits"] = 2,
+						["id"] = 194243,
+						["damage"] = 98052,
+						["max"] = 67449,
+						["name"] = "Foul Aura",
+						["min"] = 6517,
+						["totalhits"] = 5,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 1,
+						["school"] = 32,
 						["resisted"] = 0,
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Tainted Discharge"] = {
+					["Nightmare Gaze"] = {
 						["crushing"] = 0,
-						["id"] = 208385,
-						["damage"] = 800348,
-						["max"] = 266783,
-						["name"] = "Tainted Discharge",
-						["min"] = 266782,
-						["totalhits"] = 3,
+						["id"] = 210931,
+						["damage"] = 1677208,
+						["max"] = 855534,
+						["name"] = "Nightmare Gaze",
+						["min"] = 821674,
+						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
@@ -50246,9 +50246,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488604795.401,
 						["amount"] = -6517,
+						["spellid"] = 194243,
 						["srcname"] = "Witchwood Hag",
 						["hp"] = 2831213,
-						["spellid"] = 194243,
 					}, -- [1]
 					{
 						["absorb"] = 0,
@@ -50317,44 +50317,44 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488604788.517,
 						["amount"] = -44327,
+						["spellid"] = 88163,
 						["srcname"] = "Witchwood Hag",
 						["hp"] = 3018240,
-						["spellid"] = 88163,
 					}, -- [10]
 					{
 						["ts"] = 1488604791.377,
 						["amount"] = -44648,
+						["spellid"] = 88163,
 						["srcname"] = "Bewitched Bear",
 						["hp"] = 2973913,
-						["spellid"] = 88163,
 					}, -- [11]
 					{
 						["ts"] = 1488604791.377,
 						["amount"] = -67449,
+						["spellid"] = 194243,
 						["srcname"] = "Witchwood Hag",
 						["hp"] = 2906464,
-						["spellid"] = 194243,
 					}, -- [12]
 					{
 						["ts"] = 1488604792.444,
 						["amount"] = -8006,
+						["spellid"] = 194243,
 						["srcname"] = "Witchwood Hag",
 						["hp"] = 2853810,
-						["spellid"] = 194243,
 					}, -- [13]
 					{
 						["ts"] = 1488604793.454,
 						["amount"] = -7568,
+						["spellid"] = 194243,
 						["srcname"] = "Witchwood Hag",
 						["hp"] = 2846242,
-						["spellid"] = 194243,
 					}, -- [14]
 					{
 						["ts"] = 1488604794.446,
 						["amount"] = -8512,
+						["spellid"] = 194243,
 						["srcname"] = "Witchwood Hag",
 						["hp"] = 2837730,
-						["spellid"] = 194243,
 					}, -- [15]
 					["pos"] = 2,
 				},
@@ -51362,16 +51362,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488340463.934,
 						["amount"] = -311250,
+						["hp"] = 2392828,
 						["spellid"] = 203097,
 						["srcname"] = "Crisenthia-Vek'nilash",
-						["hp"] = 2392828,
 					}, -- [2]
 					{
 						["ts"] = 1488340464.382,
 						["amount"] = -75689,
+						["hp"] = 2317139,
 						["spellid"] = 204506,
 						["srcname"] = "Nythendra",
-						["hp"] = 2317139,
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -51392,9 +51392,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488340456.379,
 						["amount"] = -55046,
+						["hp"] = 2745654,
 						["spellid"] = 204506,
 						["srcname"] = "Nythendra",
-						["hp"] = 2745654,
 					}, -- [6]
 					{
 						["absorb"] = 0,
@@ -52034,16 +52034,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342671.54303,
 								["amount"] = -230334,
+								["hp"] = 0,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 0,
 							}, -- [3]
 							{
 								["ts"] = 1488342671.54304,
 								["amount"] = -43575,
+								["hp"] = 0,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 0,
 							}, -- [4]
 							{
 								["spellid"] = 213936,
@@ -52054,9 +52054,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342672.56606,
 								["amount"] = -43288,
+								["hp"] = 0,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 0,
 							}, -- [6]
 							{
 								["spellid"] = 213936,
@@ -52075,9 +52075,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342673.53909,
 								["amount"] = -44852,
+								["hp"] = 0,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 0,
 							}, -- [9]
 							{
 								["spellid"] = 213936,
@@ -52106,16 +52106,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342670.02614,
 								["amount"] = -268610,
+								["hp"] = 0,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 0,
 							}, -- [14]
 							{
 								["ts"] = 1488342670.55315,
 								["amount"] = -45261,
+								["hp"] = 0,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 0,
 							}, -- [15]
 							["pos"] = 13,
 						},
@@ -52127,9 +52127,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342106.64101,
 								["amount"] = -554519,
+								["hp"] = 989420,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 989420,
 							}, -- [1]
 							{
 								["absorb"] = 0,
@@ -52150,9 +52150,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342107.79204,
 								["amount"] = -534972,
+								["hp"] = 553206,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 553206,
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -52203,16 +52203,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342112.51911,
 								["amount"] = -491920,
+								["hp"] = 197705,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 197705,
 							}, -- [11]
 							{
 								["ts"] = 1488342112.54812,
 								["amount"] = -471771,
+								["hp"] = 1,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1,
 							}, -- [12]
 							{
 								["spellname"] = "Chubylubylon dies",
@@ -52246,23 +52246,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341681.55201,
 								["amount"] = -53660,
+								["hp"] = 272676,
 								["spellid"] = 203102,
 								["srcname"] = "Ysondre",
-								["hp"] = 272676,
 							}, -- [1]
 							{
 								["ts"] = 1488341682.54302,
 								["amount"] = -53660,
+								["hp"] = 219016,
 								["spellid"] = 203102,
 								["srcname"] = "Ysondre",
-								["hp"] = 219016,
 							}, -- [2]
 							{
 								["ts"] = 1488341682.78603,
 								["amount"] = -63239,
+								["hp"] = 219016,
 								["spellid"] = 88163,
 								["srcname"] = "Dread Horror",
-								["hp"] = 219016,
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -52275,9 +52275,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341683.55505,
 								["amount"] = -53659,
+								["hp"] = 144664,
 								["spellid"] = 203102,
 								["srcname"] = "Ysondre",
-								["hp"] = 144664,
 							}, -- [5]
 							{
 								["absorb"] = 0,
@@ -52290,16 +52290,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341683.97507,
 								["amount"] = -156347,
+								["hp"] = 9829,
 								["spellid"] = 205341,
 								["srcname"] = "Seeping Fog",
-								["hp"] = 9829,
 							}, -- [7]
 							{
 								["ts"] = 1488341684.31608,
 								["amount"] = -62637,
+								["hp"] = 9829,
 								["spellid"] = 88163,
 								["srcname"] = "Dread Horror",
-								["hp"] = 9829,
 							}, -- [8]
 							{
 								["spellname"] = "Chubylubylon dies",
@@ -52316,9 +52316,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341680.52311,
 								["amount"] = -53660,
+								["hp"] = 566045,
 								["spellid"] = 203102,
 								["srcname"] = "Ysondre",
-								["hp"] = 566045,
 							}, -- [11]
 							{
 								["spellid"] = 203690,
@@ -52329,9 +52329,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341681.27413,
 								["amount"] = -62919,
+								["hp"] = 364499,
 								["spellid"] = 88163,
 								["srcname"] = "Dread Horror",
-								["hp"] = 364499,
 							}, -- [13]
 							{
 								["absorb"] = 0,
@@ -52411,9 +52411,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488340344.27008,
 								["amount"] = -96609,
+								["hp"] = 2199902,
 								["spellid"] = 204506,
 								["srcname"] = "Nythendra",
-								["hp"] = 2199902,
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -52426,9 +52426,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488340346.2621,
 								["amount"] = -96610,
+								["hp"] = 1955808,
 								["spellid"] = 204506,
 								["srcname"] = "Nythendra",
-								["hp"] = 1955808,
 							}, -- [10]
 							{
 								["ts"] = 1488340346.26211,
@@ -52461,9 +52461,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488340348.27715,
 								["amount"] = -110411,
+								["hp"] = 34992,
 								["spellid"] = 204506,
 								["srcname"] = "Nythendra",
-								["hp"] = 34992,
 							}, -- [15]
 							["pos"] = 6,
 						},
@@ -53403,16 +53403,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342291.26801,
 								["amount"] = -231514,
+								["hp"] = 253597,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 253597,
 							}, -- [1]
 							{
 								["ts"] = 1488342291.33502,
 								["amount"] = -191092,
+								["hp"] = 62505,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 62505,
 							}, -- [2]
 							{
 								["spellname"] = "Thunderyn dies",
@@ -53439,23 +53439,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342289.04306,
 								["amount"] = -214494,
+								["hp"] = 713521,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 713521,
 							}, -- [6]
 							{
 								["ts"] = 1488342289.04307,
 								["amount"] = -159298,
+								["srcname"] = "Venomous Spiderling",
 								["hp"] = 713521,
 								["spellid"] = 88163,
-								["srcname"] = "Venomous Spiderling",
 							}, -- [7]
 							{
 								["ts"] = 1488342289.33508,
 								["amount"] = -148079,
+								["hp"] = 191650,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 191650,
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -53468,9 +53468,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342290.3421,
 								["amount"] = -148002,
+								["hp"] = 50039,
 								["spellid"] = 210228,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 50039,
 							}, -- [10]
 							{
 								["absorb"] = 0,
@@ -53483,16 +53483,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342290.54712,
 								["amount"] = -215229,
+								["hp"] = 621939,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 621939,
 							}, -- [12]
 							{
 								["ts"] = 1488342290.54713,
 								["amount"] = -170888,
+								["hp"] = 621939,
 								["spellid"] = 88163,
 								["srcname"] = "Venomous Spiderling",
-								["hp"] = 621939,
 							}, -- [13]
 							{
 								["absorb"] = 0,
@@ -53926,14 +53926,14 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Tainted Discharge"] = {
+					["Nightmare Gaze"] = {
 						["crushing"] = 0,
-						["id"] = 208385,
-						["damage"] = 247923,
-						["max"] = 247923,
-						["name"] = "Tainted Discharge",
-						["min"] = 247923,
-						["totalhits"] = 1,
+						["id"] = 210931,
+						["damage"] = 1642359,
+						["max"] = 826993,
+						["name"] = "Nightmare Gaze",
+						["min"] = 815366,
+						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
@@ -53971,20 +53971,20 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 36136,
 					},
-					["Nightmare Gaze"] = {
+					["Corruption: Crushing Shadows"] = {
 						["crushing"] = 0,
-						["id"] = 210931,
-						["damage"] = 1642359,
-						["max"] = 826993,
-						["name"] = "Nightmare Gaze",
-						["min"] = 815366,
-						["totalhits"] = 2,
+						["id"] = 208860,
+						["damage"] = 3090809,
+						["max"] = 275470,
+						["name"] = "Corruption: Crushing Shadows",
+						["min"] = 160467,
+						["totalhits"] = 12,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 32,
+						["school"] = 1,
 						["resisted"] = 0,
 						["glancing"] = 0,
-						["absorbed"] = 0,
+						["absorbed"] = 132180,
 					},
 					["Spirit Link"] = {
 						["crushing"] = 0,
@@ -54061,20 +54061,20 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Corruption: Crushing Shadows"] = {
+					["Tainted Discharge"] = {
 						["crushing"] = 0,
-						["id"] = 208860,
-						["damage"] = 3090809,
-						["max"] = 275470,
-						["name"] = "Corruption: Crushing Shadows",
-						["min"] = 160467,
-						["totalhits"] = 12,
+						["id"] = 208385,
+						["damage"] = 247923,
+						["max"] = 247923,
+						["name"] = "Tainted Discharge",
+						["min"] = 247923,
+						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
-						["school"] = 1,
+						["school"] = 32,
 						["resisted"] = 0,
 						["glancing"] = 0,
-						["absorbed"] = 132180,
+						["absorbed"] = 0,
 					},
 					["Necrotic Venom"] = {
 						["crushing"] = 0,
@@ -54803,11 +54803,11 @@ SkadaPerCharDB = {
 						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
-					["Player-120-0022A333"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Malatov-Darkspear",
-						["amount"] = 6827329,
-						["class"] = "HUNTER",
+					["Creature-0-3135-1520-18818-63508-0000364DFC"] = {
+						["role"] = "NONE",
+						["name"] = "Xuen",
+						["amount"] = 126607,
+						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
 					["Creature-0-3135-1520-18818-17252-0000364BEF"] = {
@@ -54829,11 +54829,11 @@ SkadaPerCharDB = {
 						["name"] = "Hati",
 						["amount"] = 6707,
 					},
-					["Creature-0-3135-1520-18818-63508-0000364DFC"] = {
-						["role"] = "NONE",
-						["name"] = "Xuen",
-						["amount"] = 126607,
-						["class"] = "WARRIOR",
+					["Player-120-0022A333"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Malatov-Darkspear",
+						["amount"] = 6827329,
+						["class"] = "HUNTER",
 						["shielding"] = 0,
 					},
 					["Player-3208-09BC9BD0"] = {
@@ -54857,12 +54857,6 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
-					["Creature-0-3135-1520-18818-113347-0000B64770"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 12782,
-					},
 					["Creature-0-3135-1520-18818-113347-0000364C55"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
@@ -54874,6 +54868,12 @@ SkadaPerCharDB = {
 						["role"] = "NONE",
 						["name"] = "Beast",
 						["amount"] = 0,
+					},
+					["Creature-0-3135-1520-18818-113347-0000B64770"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 12782,
 					},
 					["Pet-0-3135-1520-18818-78158-02026B9089"] = {
 						["role"] = "NONE",
@@ -54932,11 +54932,12 @@ SkadaPerCharDB = {
 						["name"] = "Hati",
 						["amount"] = 25565,
 					},
-					["Creature-0-3135-1520-18818-17252-0000364897"] = {
-						["shielding"] = 0,
+					["Pet-0-3135-1520-18818-58959-040284AD95"] = {
 						["role"] = "NONE",
-						["name"] = "Felguard",
-						["amount"] = 69356,
+						["name"] = "Kepnuk",
+						["amount"] = 218140,
+						["class"] = "WARLOCK",
+						["shielding"] = 0,
 					},
 					["Player-1169-06A1ACBD"] = {
 						["role"] = "DAMAGER",
@@ -54952,11 +54953,11 @@ SkadaPerCharDB = {
 						["class"] = "SHAMAN",
 						["shielding"] = 0,
 					},
-					["Creature-0-3135-1520-18818-106551-0000364B04"] = {
+					["Creature-0-3135-1520-18818-17252-0000364897"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
-						["name"] = "Hati",
-						["amount"] = 26464,
+						["name"] = "Felguard",
+						["amount"] = 69356,
 					},
 					["Player-3725-09FAD0FF"] = {
 						["role"] = "HEALER",
@@ -55016,12 +55017,11 @@ SkadaPerCharDB = {
 						["name"] = "Void Tendril",
 						["amount"] = 51855,
 					},
-					["Pet-0-3135-1520-18818-58959-040284AD95"] = {
-						["role"] = "NONE",
-						["name"] = "Kepnuk",
-						["amount"] = 218140,
-						["class"] = "WARLOCK",
+					["Creature-0-3135-1520-18818-106551-0000364B04"] = {
 						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Hati",
+						["amount"] = 26464,
 					},
 					["Creature-0-3135-1520-18818-106551-00003645F5"] = {
 						["shielding"] = 0,
@@ -55256,9 +55256,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344266.908,
 						["amount"] = -106661,
+						["hp"] = 2863974,
 						["spellid"] = 196917,
 						["srcname"] = "Thunderyn-Frostmourne",
-						["hp"] = 2863974,
 					}, -- [15]
 					["pos"] = 12,
 				},
@@ -55739,9 +55739,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343604.05201,
 								["amount"] = -278631,
+								["hp"] = 0,
 								["spellid"] = 210279,
 								["srcname"] = "Cenarius",
-								["hp"] = 0,
 							}, -- [1]
 							{
 								["absorb"] = 0,
@@ -55762,9 +55762,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343606.04504,
 								["amount"] = -288862,
+								["hp"] = 0,
 								["spellid"] = 210279,
 								["srcname"] = "Cenarius",
-								["hp"] = 0,
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -55777,9 +55777,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343608.05706,
 								["amount"] = -287375,
+								["hp"] = 0,
 								["spellid"] = 210279,
 								["srcname"] = "Cenarius",
-								["hp"] = 0,
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -55792,9 +55792,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343610.06408,
 								["amount"] = -290920,
+								["hp"] = 0,
 								["spellid"] = 210279,
 								["srcname"] = "Cenarius",
-								["hp"] = 0,
 							}, -- [8]
 							{
 								["spellname"] = "Ayophes dies",
@@ -55837,9 +55837,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343602.04214,
 								["amount"] = -274371,
+								["hp"] = 0,
 								["spellid"] = 210279,
 								["srcname"] = "Cenarius",
-								["hp"] = 0,
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -55867,9 +55867,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342215.17702,
 								["amount"] = -395756,
+								["hp"] = 882901,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 882901,
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -55890,16 +55890,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342217.16905,
 								["amount"] = -392900,
+								["hp"] = 564682,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 564682,
 							}, -- [5]
 							{
 								["ts"] = 1488342217.19806,
 								["amount"] = -384524,
+								["hp"] = 180158,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 180158,
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -55920,16 +55920,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342217.91209,
 								["amount"] = -397035,
+								["hp"] = 205123,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 205123,
 							}, -- [9]
 							{
 								["ts"] = 1488342218.1171,
 								["amount"] = -405992,
+								["hp"] = 1,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1,
 							}, -- [10]
 							{
 								["spellname"] = "Ayophes dies",
@@ -55948,9 +55948,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342213.19113,
 								["amount"] = -405591,
+								["hp"] = 1167634,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1167634,
 							}, -- [13]
 							{
 								["absorb"] = 0,
@@ -55963,9 +55963,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342213.90915,
 								["amount"] = -383105,
+								["hp"] = 800603,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 800603,
 							}, -- [15]
 							["pos"] = 12,
 						},
@@ -56015,9 +56015,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341205.23606,
 								["amount"] = -1231382,
+								["hp"] = 1808776,
 								["spellid"] = 197969,
 								["srcname"] = "Ursoc",
-								["hp"] = 1808776,
 							}, -- [6]
 							{
 								["absorb"] = 0,
@@ -56078,9 +56078,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341215.25715,
 								["amount"] = -1759117,
+								["hp"] = 1,
 								["spellid"] = 197969,
 								["srcname"] = "Ursoc",
-								["hp"] = 1,
 							}, -- [15]
 							["pos"] = 2,
 						},
@@ -56136,9 +56136,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488340351.47107,
 								["amount"] = -107510,
+								["hp"] = 39972,
 								["spellid"] = 204506,
 								["srcname"] = "Nythendra",
-								["hp"] = 39972,
 							}, -- [7]
 							{
 								["absorb"] = 0,
@@ -56193,9 +56193,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488340349.48115,
 								["amount"] = -96193,
+								["hp"] = 247041,
 								["spellid"] = 204506,
 								["srcname"] = "Nythendra",
-								["hp"] = 247041,
 							}, -- [15]
 							["pos"] = 12,
 						},
@@ -56954,6 +56954,13 @@ SkadaPerCharDB = {
 						["uptime"] = 93,
 						["auratype"] = "BUFF",
 					},
+					["Gory Fur"] = {
+						["name"] = "Gory Fur",
+						["active"] = 0,
+						["id"] = 201671,
+						["uptime"] = 395,
+						["auratype"] = "BUFF",
+					},
 					["Galactic Guardian"] = {
 						["name"] = "Galactic Guardian",
 						["active"] = 0,
@@ -56961,18 +56968,11 @@ SkadaPerCharDB = {
 						["uptime"] = 104,
 						["auratype"] = "BUFF",
 					},
-					["Rejuvenation"] = {
-						["name"] = "Rejuvenation",
+					["Ashamane's Frenzy"] = {
+						["name"] = "Ashamane's Frenzy",
 						["active"] = 0,
-						["id"] = 774,
-						["uptime"] = 334,
-						["auratype"] = "BUFF",
-					},
-					["Gory Fur"] = {
-						["name"] = "Gory Fur",
-						["active"] = 0,
-						["id"] = 201671,
-						["uptime"] = 395,
+						["id"] = 210722,
+						["uptime"] = 41,
 						["auratype"] = "BUFF",
 					},
 					["Dash"] = {
@@ -57024,12 +57024,12 @@ SkadaPerCharDB = {
 						["uptime"] = 145,
 						["auratype"] = "BUFF",
 					},
-					["Three of Hellfire"] = {
-						["name"] = "Three of Hellfire",
+					["Bonds of Terror"] = {
+						["name"] = "Bonds of Terror",
 						["active"] = 0,
-						["id"] = 191605,
-						["uptime"] = 40,
-						["auratype"] = "BUFF",
+						["id"] = 209034,
+						["uptime"] = 6,
+						["auratype"] = "DEBUFF",
 					},
 					["Ace of Hellfire"] = {
 						["name"] = "Ace of Hellfire",
@@ -57052,11 +57052,11 @@ SkadaPerCharDB = {
 						["uptime"] = 6,
 						["auratype"] = "BUFF",
 					},
-					["Six of Hellfire"] = {
-						["name"] = "Six of Hellfire",
+					["Three of Hellfire"] = {
+						["name"] = "Three of Hellfire",
 						["active"] = 0,
-						["id"] = 191608,
-						["uptime"] = 25,
+						["id"] = 191605,
+						["uptime"] = 40,
 						["auratype"] = "BUFF",
 					},
 					["Sign of the Hippo"] = {
@@ -57115,12 +57115,12 @@ SkadaPerCharDB = {
 						["uptime"] = 7,
 						["auratype"] = "BUFF",
 					},
-					["Bonds of Terror"] = {
-						["name"] = "Bonds of Terror",
+					["Mangle!"] = {
+						["name"] = "Mangle!",
 						["active"] = 0,
-						["id"] = 209034,
-						["uptime"] = 6,
-						["auratype"] = "DEBUFF",
+						["id"] = 93622,
+						["uptime"] = 164,
+						["auratype"] = "BUFF",
 					},
 					["Travel Form"] = {
 						["uptime"] = 22,
@@ -57150,11 +57150,11 @@ SkadaPerCharDB = {
 						["uptime"] = 10,
 						["auratype"] = "BUFF",
 					},
-					["Regrowth"] = {
-						["name"] = "Regrowth",
+					["Six of Hellfire"] = {
+						["name"] = "Six of Hellfire",
 						["active"] = 0,
-						["id"] = 8936,
-						["uptime"] = 265,
+						["id"] = 191608,
+						["uptime"] = 25,
 						["auratype"] = "BUFF",
 					},
 					["Spring Blossoms"] = {
@@ -57269,19 +57269,19 @@ SkadaPerCharDB = {
 						["uptime"] = 344,
 						["auratype"] = "DEBUFF",
 					},
+					["Regrowth"] = {
+						["name"] = "Regrowth",
+						["active"] = 0,
+						["id"] = 8936,
+						["uptime"] = 265,
+						["auratype"] = "BUFF",
+					},
 					["Cultivation"] = {
 						["name"] = "Cultivation",
 						["active"] = 0,
 						["id"] = 200389,
 						["uptime"] = 41,
 						["auratype"] = "BUFF",
-					},
-					["Maim"] = {
-						["name"] = "Maim",
-						["active"] = 0,
-						["id"] = 203123,
-						["uptime"] = 5,
-						["auratype"] = "DEBUFF",
 					},
 					["Berserk"] = {
 						["name"] = "Berserk",
@@ -57304,12 +57304,12 @@ SkadaPerCharDB = {
 						["uptime"] = 32,
 						["auratype"] = "BUFF",
 					},
-					["Mangle!"] = {
-						["name"] = "Mangle!",
+					["Maim"] = {
+						["name"] = "Maim",
 						["active"] = 0,
-						["id"] = 93622,
-						["uptime"] = 164,
-						["auratype"] = "BUFF",
+						["id"] = 203123,
+						["uptime"] = 5,
+						["auratype"] = "DEBUFF",
 					},
 					["Rage of the Sleeper"] = {
 						["name"] = "Rage of the Sleeper",
@@ -57332,11 +57332,11 @@ SkadaPerCharDB = {
 						["uptime"] = 42,
 						["auratype"] = "BUFF",
 					},
-					["Ashamane's Frenzy"] = {
-						["name"] = "Ashamane's Frenzy",
+					["Rejuvenation"] = {
+						["name"] = "Rejuvenation",
 						["active"] = 0,
-						["id"] = 210722,
-						["uptime"] = 41,
+						["id"] = 774,
+						["uptime"] = 334,
 						["auratype"] = "BUFF",
 					},
 					["Cenarion Ward"] = {
@@ -57954,9 +57954,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488344160.3041,
 								["amount"] = -3388716,
+								["hp"] = 1,
 								["spellid"] = 206369,
 								["srcname"] = "Xavius",
-								["hp"] = 1,
 							}, -- [10]
 							{
 								["spellname"] = "Warshaak dies",
@@ -58006,9 +58006,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343790.27401,
 								["amount"] = -150089,
+								["hp"] = 1,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1,
 							}, -- [1]
 							{
 								["spellname"] = "Warshaak dies",
@@ -58019,93 +58019,93 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343789.73203,
 								["amount"] = -139714,
+								["hp"] = 1811629,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1811629,
 							}, -- [3]
 							{
 								["ts"] = 1488343789.73204,
 								["amount"] = -140698,
+								["hp"] = 1670931,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1670931,
 							}, -- [4]
 							{
 								["ts"] = 1488343789.76705,
 								["amount"] = -140749,
+								["hp"] = 1530182,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1530182,
 							}, -- [5]
 							{
 								["ts"] = 1488343789.76706,
 								["amount"] = -141391,
+								["hp"] = 1388791,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1388791,
 							}, -- [6]
 							{
 								["ts"] = 1488343789.98107,
 								["amount"] = -141587,
+								["hp"] = 1247204,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1247204,
 							}, -- [7]
 							{
 								["ts"] = 1488343789.98108,
 								["amount"] = -151526,
+								["hp"] = 1095678,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1095678,
 							}, -- [8]
 							{
 								["ts"] = 1488343790.03409,
 								["amount"] = -139712,
+								["hp"] = 955966,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 955966,
 							}, -- [9]
 							{
 								["ts"] = 1488343790.0341,
 								["amount"] = -148973,
+								["hp"] = 806993,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 806993,
 							}, -- [10]
 							{
 								["ts"] = 1488343790.03411,
 								["amount"] = -141144,
+								["hp"] = 665849,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 665849,
 							}, -- [11]
 							{
 								["ts"] = 1488343790.03412,
 								["amount"] = -138974,
+								["hp"] = 526875,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 526875,
 							}, -- [12]
 							{
 								["ts"] = 1488343790.03413,
 								["amount"] = -149665,
+								["hp"] = 377210,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 377210,
 							}, -- [13]
 							{
 								["ts"] = 1488343790.24214,
 								["amount"] = -142876,
+								["hp"] = 234334,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 234334,
 							}, -- [14]
 							{
 								["ts"] = 1488343790.24215,
 								["amount"] = -144017,
+								["hp"] = 90317,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 90317,
 							}, -- [15]
 							["pos"] = 3,
 						},
@@ -58117,23 +58117,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343592.43201,
 								["amount"] = -36384,
+								["srcname"] = "Cenarius",
 								["spellid"] = 210342,
 								["hp"] = 1627817,
-								["srcname"] = "Cenarius",
 							}, -- [1]
 							{
 								["ts"] = 1488343592.98002,
 								["amount"] = -15494,
+								["hp"] = 1612323,
 								["spellid"] = 210342,
 								["srcname"] = "Cenarius",
-								["hp"] = 1612323,
 							}, -- [2]
 							{
 								["ts"] = 1488343594.05303,
 								["amount"] = -52944,
+								["hp"] = 1559379,
 								["spellid"] = 210279,
 								["srcname"] = "Cenarius",
-								["hp"] = 1559379,
 							}, -- [3]
 							{
 								["ts"] = 1488343594.30404,
@@ -58146,23 +58146,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343594.99305,
 								["amount"] = -15494,
+								["hp"] = 1598621,
 								["spellid"] = 210342,
 								["srcname"] = "Cenarius",
-								["hp"] = 1598621,
 							}, -- [5]
 							{
 								["ts"] = 1488343595.38706,
 								["amount"] = -56525,
+								["hp"] = 1542096,
 								["spellid"] = 210342,
 								["srcname"] = "Cenarius",
-								["hp"] = 1542096,
 							}, -- [6]
 							{
 								["ts"] = 1488343596.04107,
 								["amount"] = -108786,
+								["hp"] = 1433310,
 								["spellid"] = 211178,
 								["srcname"] = "Rotten Drake",
-								["hp"] = 1433310,
 							}, -- [7]
 							{
 								["spellid"] = 214308,
@@ -58191,9 +58191,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343591.40612,
 								["amount"] = -56525,
+								["hp"] = 1712887,
 								["spellid"] = 210342,
 								["srcname"] = "Cenarius",
-								["hp"] = 1712887,
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -58206,16 +58206,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343592.05714,
 								["amount"] = -47791,
+								["hp"] = 1692464,
 								["spellid"] = 210279,
 								["srcname"] = "Cenarius",
-								["hp"] = 1692464,
 							}, -- [14]
 							{
 								["ts"] = 1488343592.37215,
 								["amount"] = -28263,
+								["hp"] = 1664201,
 								["spellid"] = 210342,
 								["srcname"] = "Cenarius",
-								["hp"] = 1664201,
 							}, -- [15]
 							["pos"] = 12,
 						},
@@ -58243,9 +58243,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342687.44303,
 								["amount"] = -400983,
+								["hp"] = 1875379,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1875379,
 							}, -- [3]
 							{
 								["spellid"] = 213936,
@@ -58343,9 +58343,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342106.64101,
 								["amount"] = -401705,
+								["hp"] = 1,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1,
 							}, -- [1]
 							{
 								["spellname"] = "Warshaak dies",
@@ -58356,23 +58356,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342100.76103,
 								["amount"] = -490247,
+								["hp"] = 1687324,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 1687324,
 							}, -- [3]
 							{
 								["ts"] = 1488342101.73104,
 								["amount"] = -477275,
+								["hp"] = 1210049,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 1210049,
 							}, -- [4]
 							{
 								["ts"] = 1488342102.53605,
 								["amount"] = -390945,
+								["hp"] = 819104,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 819104,
 							}, -- [5]
 							{
 								["absorb"] = 0,
@@ -58385,16 +58385,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342102.67507,
 								["amount"] = -446990,
+								["hp"] = 508266,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 508266,
 							}, -- [7]
 							{
 								["ts"] = 1488342103.60708,
 								["amount"] = -216772,
+								["hp"] = 291494,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 291494,
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -58423,9 +58423,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342104.69412,
 								["amount"] = -491311,
+								["hp"] = 695795,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 695795,
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -58446,9 +58446,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342105.71615,
 								["amount"] = -491069,
+								["hp"] = 264925,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 264925,
 							}, -- [15]
 							["pos"] = 3,
 						},
@@ -58506,9 +58506,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488341219.88807,
 								["amount"] = -5271784,
+								["hp"] = 1,
 								["spellid"] = 204859,
 								["srcname"] = "Ursoc",
-								["hp"] = 1,
 							}, -- [7]
 							{
 								["spellname"] = "Warshaak dies",
@@ -59271,21 +59271,6 @@ SkadaPerCharDB = {
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
-					["Dreaded Nightmare"] = {
-						["crushing"] = 0,
-						["id"] = 224937,
-						["damage"] = 903703,
-						["max"] = 451852,
-						["name"] = "Dreaded Nightmare",
-						["min"] = 451851,
-						["totalhits"] = 2,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 32,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
 					["Darkened Discharge"] = {
 						["crushing"] = 0,
 						["id"] = 207859,
@@ -59312,6 +59297,21 @@ SkadaPerCharDB = {
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["Dreaded Nightmare"] = {
+						["crushing"] = 0,
+						["id"] = 224937,
+						["damage"] = 903703,
+						["max"] = 451852,
+						["name"] = "Dreaded Nightmare",
+						["min"] = 451851,
+						["totalhits"] = 2,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
 						["resisted"] = 0,
 						["glancing"] = 0,
 						["absorbed"] = 0,
@@ -59723,16 +59723,17 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 0,
 					},
-					["Creature-0-3135-1520-18818-113347-0000B64C08"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["amount"] = 0,
-					},
 					["Pet-0-3135-1520-18818-32517-0301F53F98"] = {
 						["role"] = "NONE",
 						["name"] = "Blizzcat",
 						["amount"] = 74575,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+					["Creature-0-3135-1520-18818-63508-0000364DFC"] = {
+						["role"] = "NONE",
+						["name"] = "Xuen",
+						["amount"] = 227403,
 						["class"] = "WARRIOR",
 						["shielding"] = 0,
 					},
@@ -59742,14 +59743,13 @@ SkadaPerCharDB = {
 						["name"] = "Beast",
 						["amount"] = 5696,
 					},
-					["Creature-0-3135-1520-18818-63508-0000364DFC"] = {
-						["role"] = "NONE",
-						["name"] = "Xuen",
-						["amount"] = 227403,
-						["class"] = "WARRIOR",
-						["shielding"] = 0,
-					},
 					["Creature-0-3135-1520-18818-113347-0000364E07"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["amount"] = 0,
+					},
+					["Creature-0-3135-1520-18818-113347-0000364C18"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -59794,7 +59794,7 @@ SkadaPerCharDB = {
 						["class"] = "MONK",
 						["shielding"] = 0,
 					},
-					["Creature-0-3135-1520-18818-113347-0000364C08"] = {
+					["Creature-0-3135-1520-18818-113347-0000B64C08"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -59814,7 +59814,7 @@ SkadaPerCharDB = {
 						["class"] = "WARLOCK",
 						["shielding"] = 0,
 					},
-					["Creature-0-3135-1520-18818-113347-0000364C18"] = {
+					["Creature-0-3135-1520-18818-113347-0000364C08"] = {
 						["shielding"] = 0,
 						["role"] = "NONE",
 						["name"] = "Beast",
@@ -61181,18 +61181,18 @@ SkadaPerCharDB = {
 						["uptime"] = 20,
 						["auratype"] = "BUFF",
 					},
-					["Frost Enchant"] = {
-						["name"] = "Frost Enchant",
-						["active"] = 0,
-						["id"] = 225729,
-						["uptime"] = 0,
-						["auratype"] = "BUFF",
-					},
 					["Well Fed"] = {
 						["name"] = "Well Fed",
 						["active"] = 0,
 						["id"] = 225606,
 						["uptime"] = 170,
+						["auratype"] = "BUFF",
+					},
+					["Aspect of the Cheetah"] = {
+						["name"] = "Aspect of the Cheetah",
+						["active"] = 0,
+						["id"] = 186257,
+						["uptime"] = 12,
 						["auratype"] = "BUFF",
 					},
 					["Lock and Load"] = {
@@ -61202,11 +61202,11 @@ SkadaPerCharDB = {
 						["uptime"] = 21,
 						["auratype"] = "BUFF",
 					},
-					["Aspect of the Cheetah"] = {
-						["name"] = "Aspect of the Cheetah",
+					["Frost Enchant"] = {
+						["name"] = "Frost Enchant",
 						["active"] = 0,
-						["id"] = 186257,
-						["uptime"] = 12,
+						["id"] = 225729,
+						["uptime"] = 0,
 						["auratype"] = "BUFF",
 					},
 					["Arcane Enchant"] = {
@@ -61562,16 +61562,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342112.54808,
 								["amount"] = -493501,
+								["hp"] = 452241,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 452241,
 							}, -- [8]
 							{
 								["ts"] = 1488342112.54809,
 								["amount"] = -468519,
+								["hp"] = 1,
 								["spellid"] = 213790,
 								["srcname"] = "Twisting Shadows",
-								["hp"] = 1,
 							}, -- [9]
 							{
 								["spellname"] = "Kuhcakt dies",
@@ -61582,9 +61582,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342106.70611,
 								["amount"] = -552298,
+								["hp"] = 575157,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 575157,
 							}, -- [11]
 							{
 								["absorb"] = 0,
@@ -61605,9 +61605,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488342107.74214,
 								["amount"] = -572936,
+								["hp"] = 45500,
 								["spellid"] = 212709,
 								["srcname"] = "Elerethe Renferal",
-								["hp"] = 45500,
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -62311,9 +62311,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344265.828,
 						["amount"] = -293731,
+						["hp"] = 2873609,
 						["spellid"] = 208860,
 						["srcname"] = "Dread Abomination",
-						["hp"] = 2873609,
 					}, -- [13]
 					{
 						["absorb"] = 0,
@@ -64678,11 +64678,11 @@ SkadaPerCharDB = {
 						["uptime"] = 123,
 						["auratype"] = "BUFF",
 					},
-					["Flame Shock"] = {
-						["name"] = "Flame Shock",
+					["Reincarnation"] = {
+						["name"] = "Reincarnation",
 						["active"] = 0,
-						["id"] = 188838,
-						["uptime"] = 343,
+						["id"] = 225080,
+						["uptime"] = 0,
 						["auratype"] = "DEBUFF",
 					},
 					["Queen's Decree"] = {
@@ -64692,19 +64692,19 @@ SkadaPerCharDB = {
 						["uptime"] = 107,
 						["auratype"] = "BUFF",
 					},
-					["Reincarnation"] = {
-						["name"] = "Reincarnation",
-						["active"] = 0,
-						["id"] = 225080,
-						["uptime"] = 0,
-						["auratype"] = "DEBUFF",
-					},
 					["Servant of the Queen"] = {
 						["name"] = "Servant of the Queen",
 						["active"] = 0,
 						["id"] = 207654,
 						["uptime"] = 6,
 						["auratype"] = "BUFF",
+					},
+					["Flame Shock"] = {
+						["name"] = "Flame Shock",
+						["active"] = 0,
+						["id"] = 188838,
+						["uptime"] = 343,
+						["auratype"] = "DEBUFF",
 					},
 					["Riptide"] = {
 						["name"] = "Riptide",
@@ -64988,30 +64988,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343790.24301,
 								["amount"] = -158205,
+								["hp"] = 390466,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 390466,
 							}, -- [1]
 							{
 								["ts"] = 1488343790.24302,
 								["amount"] = -149756,
+								["hp"] = 240710,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 240710,
 							}, -- [2]
 							{
 								["ts"] = 1488343790.27403,
 								["amount"] = -156274,
+								["hp"] = 84436,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 84436,
 							}, -- [3]
 							{
 								["ts"] = 1488343790.27404,
 								["amount"] = -156229,
+								["hp"] = 1,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1,
 							}, -- [4]
 							{
 								["spellname"] = "Anaaya dies",
@@ -65022,23 +65022,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343789.73206,
 								["amount"] = -147046,
+								["hp"] = 1671929,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1671929,
 							}, -- [6]
 							{
 								["ts"] = 1488343789.73207,
 								["amount"] = -144966,
+								["hp"] = 1526963,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1526963,
 							}, -- [7]
 							{
 								["ts"] = 1488343789.76708,
 								["amount"] = -156844,
+								["hp"] = 1370119,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1370119,
 							}, -- [8]
 							{
 								["ts"] = 1488343789.84209,
@@ -65051,44 +65051,44 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343789.9811,
 								["amount"] = -146192,
+								["hp"] = 1296825,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1296825,
 							}, -- [10]
 							{
 								["ts"] = 1488343789.98111,
 								["amount"] = -152600,
+								["hp"] = 1144225,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 1144225,
 							}, -- [11]
 							{
 								["ts"] = 1488343789.98112,
 								["amount"] = -155244,
+								["hp"] = 988981,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 988981,
 							}, -- [12]
 							{
 								["ts"] = 1488343790.03413,
 								["amount"] = -149752,
+								["hp"] = 839229,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 839229,
 							}, -- [13]
 							{
 								["ts"] = 1488343790.03414,
 								["amount"] = -146436,
+								["hp"] = 692793,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 692793,
 							}, -- [14]
 							{
 								["ts"] = 1488343790.03415,
 								["amount"] = -144122,
+								["hp"] = 548671,
 								["spellid"] = 222086,
 								["srcname"] = "Nightmare Amalgamation",
-								["hp"] = 548671,
 							}, -- [15]
 							["pos"] = 6,
 						},
@@ -65118,9 +65118,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343513.45804,
 								["amount"] = -165701,
+								["hp"] = 1229490,
 								["spellid"] = 211196,
 								["srcname"] = "Rotten Drake",
-								["hp"] = 1229490,
 							}, -- [4]
 							{
 								["spellid"] = 210315,
@@ -65145,16 +65145,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343514.04408,
 								["amount"] = -44749,
+								["hp"] = 479427,
 								["spellid"] = 210279,
 								["srcname"] = "Cenarius",
-								["hp"] = 479427,
 							}, -- [8]
 							{
 								["ts"] = 1488343514.46209,
 								["amount"] = -168438,
+								["hp"] = 310989,
 								["spellid"] = 211196,
 								["srcname"] = "Rotten Drake",
-								["hp"] = 310989,
 							}, -- [9]
 							{
 								["absorb"] = 0,
@@ -65167,9 +65167,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343514.70111,
 								["amount"] = -2160,
+								["hp"] = 1084919,
 								["spellid"] = 210342,
 								["srcname"] = "Cenarius",
-								["hp"] = 1084919,
 							}, -- [11]
 							{
 								["absorb"] = 0,
@@ -65190,16 +65190,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343515.29214,
 								["amount"] = -203552,
+								["hp"] = 970136,
 								["spellid"] = 211178,
 								["srcname"] = "Rotten Drake",
-								["hp"] = 970136,
 							}, -- [14]
 							{
 								["ts"] = 1488343515.47315,
 								["amount"] = -189396,
+								["hp"] = 780740,
 								["spellid"] = 211196,
 								["srcname"] = "Rotten Drake",
-								["hp"] = 780740,
 							}, -- [15]
 							["pos"] = 4,
 						},
@@ -65800,9 +65800,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344265.828,
 						["amount"] = -283463,
+						["hp"] = 2146477,
 						["spellid"] = 208860,
 						["srcname"] = "Dread Abomination",
-						["hp"] = 2146477,
 					}, -- [2]
 					{
 						["absorb"] = 0,
@@ -65871,9 +65871,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1488344271.356,
 						["amount"] = -116673,
+						["hp"] = 2313267,
 						["spellid"] = 206920,
 						["srcname"] = "Nightmare Tentacle",
-						["hp"] = 2313267,
 					}, -- [11]
 					{
 						["absorb"] = 0,
@@ -66349,9 +66349,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343514.46302,
 								["amount"] = -175205,
+								["hp"] = 761851,
 								["spellid"] = 211196,
 								["srcname"] = "Rotten Drake",
-								["hp"] = 761851,
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -66388,23 +66388,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343515.29307,
 								["amount"] = -212930,
+								["hp"] = 657449,
 								["spellid"] = 211178,
 								["srcname"] = "Rotten Drake",
-								["hp"] = 657449,
 							}, -- [7]
 							{
 								["ts"] = 1488343515.45008,
 								["amount"] = -31024,
+								["hp"] = 626425,
 								["spellid"] = 210342,
 								["srcname"] = "Cenarius",
-								["hp"] = 626425,
 							}, -- [8]
 							{
 								["ts"] = 1488343515.47409,
 								["amount"] = -196850,
+								["hp"] = 429575,
 								["spellid"] = 211196,
 								["srcname"] = "Rotten Drake",
-								["hp"] = 429575,
 							}, -- [9]
 							{
 								["spellid"] = 210315,
@@ -66415,9 +66415,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1488343515.66611,
 								["amount"] = -67314,
+								["hp"] = 161387,
 								["spellid"] = 210342,
 								["srcname"] = "Cenarius",
-								["hp"] = 161387,
 							}, -- [11]
 							{
 								["spellid"] = 214308,
@@ -66432,17 +66432,17 @@ SkadaPerCharDB = {
 								["spellid"] = 41220,
 							}, -- [13]
 							{
-								["spellid"] = 20484,
-								["ts"] = 1488343533.344,
-								["srcname"] = "Outtkast-Nazgrel",
 								["hp"] = 0,
+								["ts"] = 1488343533.344,
+								["spellid"] = 20484,
+								["srcname"] = "Outtkast-Nazgrel",
 							}, -- [14]
 							{
 								["ts"] = 1488343514.14615,
 								["amount"] = -31024,
+								["hp"] = 591390,
 								["spellid"] = 210342,
 								["srcname"] = "Cenarius",
-								["hp"] = 591390,
 							}, -- [15]
 							["pos"] = 15,
 						},
@@ -72942,162 +72942,6 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 44648,
 			},
-			["Defiled Keeper"] = {
-				["players"] = {
-					["Crisenthia-Vek'nilash"] = {
-						["taken"] = 8284483,
-						["done"] = 727610,
-						["class"] = "WARLOCK",
-						["role"] = "DAMAGER",
-					},
-					["Kuhcakt-Vek'nilash"] = {
-						["taken"] = 11772117,
-						["done"] = 1612294,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Taladendren-Vek'nilash"] = {
-						["taken"] = 7107095,
-						["done"] = 2512487,
-						["class"] = "DEMONHUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Aetheric-Silvermoon"] = {
-						["taken"] = 10941311,
-						["done"] = 2294579,
-						["class"] = "WARRIOR",
-						["role"] = "DAMAGER",
-					},
-					["Khryleesi-Vek'nilash"] = {
-						["taken"] = 9506564,
-						["done"] = 1531491,
-						["class"] = "PRIEST",
-						["role"] = "DAMAGER",
-					},
-					["Arshia-Nazgrel"] = {
-						["taken"] = 0,
-						["done"] = 2394401,
-						["class"] = "DRUID",
-						["role"] = "HEALER",
-					},
-					["Bracnar"] = {
-						["taken"] = 21611532,
-						["done"] = 1532519,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Malderd-Nesingwary"] = {
-						["taken"] = 5793904,
-						["done"] = 5579007,
-						["class"] = "DRUID",
-						["role"] = "TANK",
-					},
-					["Vyerii-Kel'Thuzad"] = {
-						["taken"] = 11139420,
-						["done"] = 991620,
-						["class"] = "PRIEST",
-						["role"] = "DAMAGER",
-					},
-					["Slickrock-AeriePeak"] = {
-						["taken"] = 1445174,
-						["done"] = 1520389,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Chubylubylon-Ragnaros"] = {
-						["taken"] = 4404323,
-						["done"] = 1528990,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Nystic-Gnomeregan"] = {
-						["taken"] = 12595682,
-						["done"] = 1353860,
-						["class"] = "MAGE",
-						["role"] = "DAMAGER",
-					},
-					["Renderin-Lightbringer"] = {
-						["taken"] = 0,
-						["done"] = 662429,
-						["class"] = "MONK",
-						["role"] = "DAMAGER",
-					},
-					["Ayophes-Ragnaros"] = {
-						["taken"] = 1801672,
-						["done"] = 1853940,
-						["class"] = "DEMONHUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Alarianix-Frostmourne"] = {
-						["taken"] = 12339703,
-						["done"] = 2881643,
-						["class"] = "DEMONHUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Hadooken-Nesingwary"] = {
-						["taken"] = 3036125,
-						["done"] = 0,
-						["class"] = "DEATHKNIGHT",
-						["role"] = "DAMAGER",
-					},
-					["Outtkast-Nazgrel"] = {
-						["taken"] = 0,
-						["done"] = 2754810,
-						["class"] = "DRUID",
-						["role"] = "HEALER",
-					},
-					["Huntersix-Vek'nilash"] = {
-						["taken"] = 18372714,
-						["done"] = 1510789,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Malatov-Darkspear"] = {
-						["taken"] = 11699441,
-						["done"] = 1248671,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Haniquin-Stormrage"] = {
-						["taken"] = 15937834,
-						["done"] = 8362079,
-						["class"] = "WARRIOR",
-						["role"] = "DAMAGER",
-					},
-					["Warshaak-Sargeras"] = {
-						["taken"] = 3443641,
-						["done"] = 1270505,
-						["class"] = "DRUID",
-						["role"] = "TANK",
-					},
-					["Ekoria-Aggramar"] = {
-						["taken"] = 9676705,
-						["done"] = 2216348,
-						["class"] = "PALADIN",
-						["role"] = "DAMAGER",
-					},
-					["Thunderyn-Frostmourne"] = {
-						["taken"] = 0,
-						["done"] = 2044950,
-						["class"] = "PALADIN",
-						["role"] = "HEALER",
-					},
-					["Balzer-Quel'Thalas"] = {
-						["taken"] = 6757290,
-						["done"] = 1200246,
-						["class"] = "WARLOCK",
-						["role"] = "DAMAGER",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 187666730,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 49585657,
-			},
 			["Juanshue-CenarionCircle"] = {
 				["players"] = {
 				},
@@ -73141,6 +72985,96 @@ SkadaPerCharDB = {
 				},
 				["htaken"] = 0,
 				["done"] = 0,
+			},
+			["Nightmare Blades"] = {
+				["players"] = {
+					["Indianmajik-Nazgrel"] = {
+						["taken"] = 0,
+						["done"] = 1617383,
+						["class"] = "PALADIN",
+						["role"] = "DAMAGER",
+					},
+					["Boltman-Nazgrel"] = {
+						["taken"] = 0,
+						["done"] = 1294739,
+						["class"] = "SHAMAN",
+						["role"] = "HEALER",
+					},
+					["Taladendren-Vek'nilash"] = {
+						["taken"] = 0,
+						["done"] = 1092303,
+						["class"] = "DEMONHUNTER",
+						["role"] = "TANK",
+					},
+					["Merkav-Nazgrel"] = {
+						["taken"] = 0,
+						["done"] = 803034,
+						["class"] = "DEMONHUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Hadooken-Nesingwary"] = {
+						["taken"] = 0,
+						["done"] = 767830,
+						["class"] = "DEATHKNIGHT",
+						["role"] = "DAMAGER",
+					},
+					["Outtkast-Nazgrel"] = {
+						["taken"] = 0,
+						["done"] = 734129,
+						["class"] = "DRUID",
+						["role"] = "HEALER",
+					},
+					["Thunderyn-Frostmourne"] = {
+						["taken"] = 0,
+						["done"] = 3007665,
+						["class"] = "PALADIN",
+						["role"] = "HEALER",
+					},
+					["Malatov-Darkspear"] = {
+						["taken"] = 0,
+						["done"] = 461686,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Arshia-Nazgrel"] = {
+						["taken"] = 0,
+						["done"] = 796357,
+						["class"] = "DRUID",
+						["role"] = "HEALER",
+					},
+					["Balzer-Quel'Thalas"] = {
+						["taken"] = 0,
+						["done"] = 316399,
+						["class"] = "WARLOCK",
+						["role"] = "DAMAGER",
+					},
+					["Ekoria-Aggramar"] = {
+						["taken"] = 0,
+						["done"] = 781600,
+						["class"] = "PALADIN",
+						["role"] = "DAMAGER",
+					},
+					["Renderin-Lightbringer"] = {
+						["taken"] = 0,
+						["done"] = 807703,
+						["class"] = "MONK",
+						["role"] = "DAMAGER",
+					},
+					["Anaaya-Vek'nilash"] = {
+						["taken"] = 0,
+						["done"] = 766473,
+						["class"] = "SHAMAN",
+						["role"] = "HEALER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 13247301,
 			},
 			["Coralback Fiddler"] = {
 				["players"] = {
@@ -73398,28 +73332,161 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 16969326,
 			},
-			["Swamprock Marshstomper"] = {
+			["Defiled Keeper"] = {
 				["players"] = {
-					["Bracnar"] = {
-						["taken"] = 2526271,
-						["done"] = 53687,
-						["class"] = "HUNTER",
-						["role"] = "NONE",
+					["Crisenthia-Vek'nilash"] = {
+						["taken"] = 8284483,
+						["done"] = 727610,
+						["class"] = "WARLOCK",
+						["role"] = "DAMAGER",
 					},
-					["Rexxar"] = {
-						["taken"] = 86744,
+					["Kuhcakt-Vek'nilash"] = {
+						["taken"] = 11772117,
+						["done"] = 1612294,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Taladendren-Vek'nilash"] = {
+						["taken"] = 7107095,
+						["done"] = 2512487,
+						["class"] = "DEMONHUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Aetheric-Silvermoon"] = {
+						["taken"] = 10941311,
+						["done"] = 2294579,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Khryleesi-Vek'nilash"] = {
+						["taken"] = 9506564,
+						["done"] = 1531491,
+						["class"] = "PRIEST",
+						["role"] = "DAMAGER",
+					},
+					["Arshia-Nazgrel"] = {
+						["taken"] = 0,
+						["done"] = 2394401,
+						["class"] = "DRUID",
+						["role"] = "HEALER",
+					},
+					["Bracnar"] = {
+						["taken"] = 21611532,
+						["done"] = 1532519,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Malderd-Nesingwary"] = {
+						["taken"] = 5793904,
+						["done"] = 5579007,
+						["class"] = "DRUID",
+						["role"] = "TANK",
+					},
+					["Vyerii-Kel'Thuzad"] = {
+						["taken"] = 11139420,
+						["done"] = 991620,
+						["class"] = "PRIEST",
+						["role"] = "DAMAGER",
+					},
+					["Slickrock-AeriePeak"] = {
+						["taken"] = 1445174,
+						["done"] = 1520389,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Chubylubylon-Ragnaros"] = {
+						["taken"] = 4404323,
+						["done"] = 1528990,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Nystic-Gnomeregan"] = {
+						["taken"] = 12595682,
+						["done"] = 1353860,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Renderin-Lightbringer"] = {
+						["taken"] = 0,
+						["done"] = 662429,
+						["class"] = "MONK",
+						["role"] = "DAMAGER",
+					},
+					["Ayophes-Ragnaros"] = {
+						["taken"] = 1801672,
+						["done"] = 1853940,
+						["class"] = "DEMONHUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Alarianix-Frostmourne"] = {
+						["taken"] = 12339703,
+						["done"] = 2881643,
+						["class"] = "DEMONHUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Hadooken-Nesingwary"] = {
+						["taken"] = 3036125,
 						["done"] = 0,
-						["role"] = "NONE",
+						["class"] = "DEATHKNIGHT",
+						["role"] = "DAMAGER",
+					},
+					["Outtkast-Nazgrel"] = {
+						["taken"] = 0,
+						["done"] = 2754810,
+						["class"] = "DRUID",
+						["role"] = "HEALER",
+					},
+					["Huntersix-Vek'nilash"] = {
+						["taken"] = 18372714,
+						["done"] = 1510789,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Malatov-Darkspear"] = {
+						["taken"] = 11699441,
+						["done"] = 1248671,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Haniquin-Stormrage"] = {
+						["taken"] = 15937834,
+						["done"] = 8362079,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Warshaak-Sargeras"] = {
+						["taken"] = 3443641,
+						["done"] = 1270505,
+						["class"] = "DRUID",
+						["role"] = "TANK",
+					},
+					["Ekoria-Aggramar"] = {
+						["taken"] = 9676705,
+						["done"] = 2216348,
+						["class"] = "PALADIN",
+						["role"] = "DAMAGER",
+					},
+					["Thunderyn-Frostmourne"] = {
+						["taken"] = 0,
+						["done"] = 2044950,
+						["class"] = "PALADIN",
+						["role"] = "HEALER",
+					},
+					["Balzer-Quel'Thalas"] = {
+						["taken"] = 6757290,
+						["done"] = 1200246,
+						["class"] = "WARLOCK",
+						["role"] = "DAMAGER",
 					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 2613015,
+				["taken"] = 187666730,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
-				["done"] = 53687,
+				["done"] = 49585657,
 			},
 			["Corrupted Gatewarden"] = {
 				["players"] = {
@@ -73571,96 +73638,6 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 16090608,
 			},
-			["Nightmare Blades"] = {
-				["players"] = {
-					["Indianmajik-Nazgrel"] = {
-						["taken"] = 0,
-						["done"] = 1617383,
-						["class"] = "PALADIN",
-						["role"] = "DAMAGER",
-					},
-					["Boltman-Nazgrel"] = {
-						["taken"] = 0,
-						["done"] = 1294739,
-						["class"] = "SHAMAN",
-						["role"] = "HEALER",
-					},
-					["Taladendren-Vek'nilash"] = {
-						["taken"] = 0,
-						["done"] = 1092303,
-						["class"] = "DEMONHUNTER",
-						["role"] = "TANK",
-					},
-					["Merkav-Nazgrel"] = {
-						["taken"] = 0,
-						["done"] = 803034,
-						["class"] = "DEMONHUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Hadooken-Nesingwary"] = {
-						["taken"] = 0,
-						["done"] = 767830,
-						["class"] = "DEATHKNIGHT",
-						["role"] = "DAMAGER",
-					},
-					["Outtkast-Nazgrel"] = {
-						["taken"] = 0,
-						["done"] = 734129,
-						["class"] = "DRUID",
-						["role"] = "HEALER",
-					},
-					["Thunderyn-Frostmourne"] = {
-						["taken"] = 0,
-						["done"] = 3007665,
-						["class"] = "PALADIN",
-						["role"] = "HEALER",
-					},
-					["Malatov-Darkspear"] = {
-						["taken"] = 0,
-						["done"] = 461686,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Arshia-Nazgrel"] = {
-						["taken"] = 0,
-						["done"] = 796357,
-						["class"] = "DRUID",
-						["role"] = "HEALER",
-					},
-					["Balzer-Quel'Thalas"] = {
-						["taken"] = 0,
-						["done"] = 316399,
-						["class"] = "WARLOCK",
-						["role"] = "DAMAGER",
-					},
-					["Ekoria-Aggramar"] = {
-						["taken"] = 0,
-						["done"] = 781600,
-						["class"] = "PALADIN",
-						["role"] = "DAMAGER",
-					},
-					["Renderin-Lightbringer"] = {
-						["taken"] = 0,
-						["done"] = 807703,
-						["class"] = "MONK",
-						["role"] = "DAMAGER",
-					},
-					["Anaaya-Vek'nilash"] = {
-						["taken"] = 0,
-						["done"] = 766473,
-						["class"] = "SHAMAN",
-						["role"] = "HEALER",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 13247301,
-			},
 			["Nightmare Ancient"] = {
 				["players"] = {
 					["Bracnar"] = {
@@ -73763,108 +73740,6 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 9155702,
 			},
-			["Seeping Fog"] = {
-				["players"] = {
-					["Crisenthia-Vek'nilash"] = {
-						["taken"] = 0,
-						["done"] = 988058,
-						["class"] = "WARLOCK",
-						["role"] = "DAMAGER",
-					},
-					["Slickrock-AeriePeak"] = {
-						["taken"] = 0,
-						["done"] = 942229,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Kuhcakt-Vek'nilash"] = {
-						["taken"] = 0,
-						["done"] = 2329261,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Nystic-Gnomeregan"] = {
-						["taken"] = 0,
-						["done"] = 938910,
-						["class"] = "MAGE",
-						["role"] = "DAMAGER",
-					},
-					["Thunderyn-Frostmourne"] = {
-						["taken"] = 0,
-						["done"] = 3691456,
-						["class"] = "PALADIN",
-						["role"] = "HEALER",
-					},
-					["Alarianix-Frostmourne"] = {
-						["taken"] = 0,
-						["done"] = 553276,
-						["class"] = "DEMONHUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Iliandre-Nemesis"] = {
-						["taken"] = 0,
-						["done"] = 912031,
-						["class"] = "MONK",
-						["role"] = "DAMAGER",
-					},
-					["Outtkast-Nazgrel"] = {
-						["taken"] = 0,
-						["done"] = 833730,
-						["class"] = "DRUID",
-						["role"] = "HEALER",
-					},
-					["Chubylubylon-Ragnaros"] = {
-						["taken"] = 0,
-						["done"] = 2970602,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Khryleesi-Vek'nilash"] = {
-						["taken"] = 0,
-						["done"] = 664376,
-						["class"] = "PRIEST",
-						["role"] = "DAMAGER",
-					},
-					["Arshia-Nazgrel"] = {
-						["taken"] = 0,
-						["done"] = 2827777,
-						["class"] = "DRUID",
-						["role"] = "HEALER",
-					},
-					["Bracnar"] = {
-						["taken"] = 0,
-						["done"] = 1266328,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Malatov-Darkspear"] = {
-						["taken"] = 0,
-						["done"] = 93762,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Haniquin-Stormrage"] = {
-						["taken"] = 0,
-						["done"] = 1621158,
-						["class"] = "WARRIOR",
-						["role"] = "DAMAGER",
-					},
-					["Huntersix-Vek'nilash"] = {
-						["taken"] = 0,
-						["done"] = 926916,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 21559870,
-			},
 			["Hadooken-Nesingwary"] = {
 				["players"] = {
 				},
@@ -73884,6 +73759,210 @@ SkadaPerCharDB = {
 				},
 				["htaken"] = 0,
 				["done"] = 0,
+			},
+			["Bodhica-CenarionCircle"] = {
+				["players"] = {
+				},
+				["hdone"] = 16538,
+				["hdonespell"] = {
+					["Justicar's Vengeance"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 237630,
+						["hits"] = 1,
+					},
+					["Greater Blessing of Wisdom"] = {
+						["min"] = 2866,
+						["crits"] = 0,
+						["max"] = 2867,
+						["healing"] = 14334,
+						["overhealing"] = 0,
+						["hits"] = 5,
+					},
+					["Leech"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 1904,
+						["healing"] = 2204,
+						["overhealing"] = 23085,
+						["hits"] = 10,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Justicar's Vengeance"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 237630,
+						["hits"] = 1,
+					},
+					["Greater Blessing of Wisdom"] = {
+						["min"] = 2866,
+						["crits"] = 0,
+						["max"] = 2867,
+						["healing"] = 14334,
+						["overhealing"] = 0,
+						["hits"] = 5,
+					},
+					["Leech"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 1904,
+						["healing"] = 2204,
+						["overhealing"] = 23085,
+						["hits"] = 10,
+					},
+				},
+				["htaken"] = 16538,
+				["done"] = 0,
+			},
+			["Creature in the Shadows"] = {
+				["players"] = {
+					["Bracnar"] = {
+						["taken"] = 44159082,
+						["done"] = 0,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Kuhcakt-Vek'nilash"] = {
+						["taken"] = 31719233,
+						["done"] = 0,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Taladendren-Vek'nilash"] = {
+						["taken"] = 14555853,
+						["done"] = 14341284,
+						["class"] = "DEMONHUNTER",
+						["role"] = "TANK",
+					},
+					["Merkav-Nazgrel"] = {
+						["taken"] = 35312615,
+						["done"] = 708169,
+						["class"] = "DEMONHUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Aetheric-Silvermoon"] = {
+						["taken"] = 24141024,
+						["done"] = 778338,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Alixia-Vek'nilash"] = {
+						["taken"] = 46645512,
+						["done"] = 535580,
+						["class"] = "PRIEST",
+						["role"] = "DAMAGER",
+					},
+					["Malderd-Nesingwary"] = {
+						["taken"] = 16589280,
+						["done"] = 6004585,
+						["class"] = "DRUID",
+						["role"] = "TANK",
+					},
+					["Slickrock-AeriePeak"] = {
+						["taken"] = 46441008,
+						["done"] = 0,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Boltman-Nazgrel"] = {
+						["taken"] = 0,
+						["done"] = 1326324,
+						["class"] = "SHAMAN",
+						["role"] = "HEALER",
+					},
+					["Balzer-Quel'Thalas"] = {
+						["taken"] = 20547477,
+						["done"] = 0,
+						["class"] = "WARLOCK",
+						["role"] = "DAMAGER",
+					},
+					["Renderin-Lightbringer"] = {
+						["taken"] = 6167523,
+						["done"] = 2336393,
+						["class"] = "MONK",
+						["role"] = "DAMAGER",
+					},
+					["Arshia-Nazgrel"] = {
+						["taken"] = 0,
+						["done"] = 1615432,
+						["class"] = "DRUID",
+						["role"] = "HEALER",
+					},
+					["Alarianix-Frostmourne"] = {
+						["taken"] = 18903847,
+						["done"] = 2148582,
+						["class"] = "DEMONHUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Hadooken-Nesingwary"] = {
+						["taken"] = 29591560,
+						["done"] = 1546154,
+						["class"] = "DEATHKNIGHT",
+						["role"] = "DAMAGER",
+					},
+					["Outtkast-Nazgrel"] = {
+						["taken"] = 0,
+						["done"] = 1376763,
+						["class"] = "DRUID",
+						["role"] = "HEALER",
+					},
+					["Nystic-Gnomeregan"] = {
+						["taken"] = 31606519,
+						["done"] = 759592,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Malatov-Darkspear"] = {
+						["taken"] = 22743169,
+						["done"] = 0,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Indianmajik-Nazgrel"] = {
+						["taken"] = 3723590,
+						["done"] = 344152,
+						["class"] = "PALADIN",
+						["role"] = "DAMAGER",
+					},
+					["Warshaak-Sargeras"] = {
+						["taken"] = 48874,
+						["done"] = 715689,
+						["class"] = "DRUID",
+						["role"] = "DAMAGER",
+					},
+					["Ekoria-Aggramar"] = {
+						["taken"] = 24495739,
+						["done"] = 2372152,
+						["class"] = "PALADIN",
+						["role"] = "DAMAGER",
+					},
+					["Thunderyn-Frostmourne"] = {
+						["taken"] = 519787,
+						["done"] = 0,
+						["class"] = "PALADIN",
+						["role"] = "HEALER",
+					},
+					["Anaaya-Vek'nilash"] = {
+						["taken"] = 458790,
+						["done"] = 0,
+						["class"] = "SHAMAN",
+						["role"] = "HEALER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 418370482,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 36909189,
 			},
 			["Nightmother"] = {
 				["players"] = {
@@ -74007,16 +74086,16 @@ SkadaPerCharDB = {
 						["class"] = "DRUID",
 						["role"] = "TANK",
 					},
+					["Taladendren-Vek'nilash"] = {
+						["taken"] = 2737191,
+						["done"] = 0,
+						["class"] = "DEMONHUNTER",
+						["role"] = "DAMAGER",
+					},
 					["Renderin-Lightbringer"] = {
 						["taken"] = 2337712,
 						["done"] = 1118954,
 						["class"] = "MONK",
-						["role"] = "DAMAGER",
-					},
-					["Nystic-Gnomeregan"] = {
-						["taken"] = 1587520,
-						["done"] = 0,
-						["class"] = "MAGE",
 						["role"] = "DAMAGER",
 					},
 					["Merkav-Nazgrel"] = {
@@ -74073,10 +74152,10 @@ SkadaPerCharDB = {
 						["class"] = "PALADIN",
 						["role"] = "DAMAGER",
 					},
-					["Taladendren-Vek'nilash"] = {
-						["taken"] = 2737191,
+					["Nystic-Gnomeregan"] = {
+						["taken"] = 1587520,
 						["done"] = 0,
-						["class"] = "DEMONHUNTER",
+						["class"] = "MAGE",
 						["role"] = "DAMAGER",
 					},
 					["Balzer-Quel'Thalas"] = {
@@ -74094,216 +74173,6 @@ SkadaPerCharDB = {
 				},
 				["htaken"] = 0,
 				["done"] = 5054501,
-			},
-			["Bodhica-CenarionCircle"] = {
-				["players"] = {
-				},
-				["hdone"] = 16538,
-				["hdonespell"] = {
-					["Justicar's Vengeance"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 237630,
-						["hits"] = 1,
-					},
-					["Greater Blessing of Wisdom"] = {
-						["min"] = 2866,
-						["crits"] = 0,
-						["max"] = 2867,
-						["healing"] = 14334,
-						["overhealing"] = 0,
-						["hits"] = 5,
-					},
-					["Leech"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 1904,
-						["healing"] = 2204,
-						["overhealing"] = 23085,
-						["hits"] = 10,
-					},
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-					["Justicar's Vengeance"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 237630,
-						["hits"] = 1,
-					},
-					["Greater Blessing of Wisdom"] = {
-						["min"] = 2866,
-						["crits"] = 0,
-						["max"] = 2867,
-						["healing"] = 14334,
-						["overhealing"] = 0,
-						["hits"] = 5,
-					},
-					["Leech"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 1904,
-						["healing"] = 2204,
-						["overhealing"] = 23085,
-						["hits"] = 10,
-					},
-				},
-				["htaken"] = 16538,
-				["done"] = 0,
-			},
-			["Spirit Shade"] = {
-				["players"] = {
-					["Bracnar"] = {
-						["taken"] = 2162870,
-						["done"] = 0,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Kuhcakt-Vek'nilash"] = {
-						["taken"] = 10050986,
-						["done"] = 0,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Taladendren-Vek'nilash"] = {
-						["taken"] = 7110832,
-						["done"] = 0,
-						["class"] = "DEMONHUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Merkav-Nazgrel"] = {
-						["taken"] = 2715322,
-						["done"] = 0,
-						["class"] = "DEMONHUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Iliandre-Nemesis"] = {
-						["taken"] = 1089491,
-						["done"] = 0,
-						["class"] = "MONK",
-						["role"] = "DAMAGER",
-					},
-					["Thunderyn-Frostmourne"] = {
-						["taken"] = 215059,
-						["done"] = 0,
-						["class"] = "PALADIN",
-						["role"] = "HEALER",
-					},
-					["Khryleesi-Vek'nilash"] = {
-						["taken"] = 1862208,
-						["done"] = 0,
-						["class"] = "PRIEST",
-						["role"] = "HEALER",
-					},
-					["Arshia-Nazgrel"] = {
-						["taken"] = 978662,
-						["done"] = 0,
-						["class"] = "DRUID",
-						["role"] = "HEALER",
-					},
-					["Malderd-Nesingwary"] = {
-						["taken"] = 426192,
-						["done"] = 0,
-						["class"] = "DRUID",
-						["role"] = "TANK",
-					},
-					["Slickrock-AeriePeak"] = {
-						["taken"] = 6778919,
-						["done"] = 0,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Vyerii-Kel'Thuzad"] = {
-						["taken"] = 1717690,
-						["done"] = 0,
-						["class"] = "PRIEST",
-						["role"] = "DAMAGER",
-					},
-					["Renderin-Lightbringer"] = {
-						["taken"] = 4060116,
-						["done"] = 0,
-						["class"] = "MONK",
-						["role"] = "DAMAGER",
-					},
-					["Nystic-Gnomeregan"] = {
-						["taken"] = 12311089,
-						["done"] = 0,
-						["class"] = "MAGE",
-						["role"] = "DAMAGER",
-					},
-					["Alarianix-Frostmourne"] = {
-						["taken"] = 1593979,
-						["done"] = 0,
-						["class"] = "DEMONHUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Haniquin-Stormrage"] = {
-						["taken"] = 4391708,
-						["done"] = 0,
-						["class"] = "WARRIOR",
-						["role"] = "DAMAGER",
-					},
-					["Hadooken-Nesingwary"] = {
-						["taken"] = 3609620,
-						["done"] = 0,
-						["class"] = "DEATHKNIGHT",
-						["role"] = "DAMAGER",
-					},
-					["Huntersix-Vek'nilash"] = {
-						["taken"] = 9541720,
-						["done"] = 0,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Malatov-Darkspear"] = {
-						["taken"] = 5484515,
-						["done"] = 0,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Ayophes-Ragnaros"] = {
-						["taken"] = 698938,
-						["done"] = 0,
-						["class"] = "DEMONHUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Warshaak-Sargeras"] = {
-						["taken"] = 199014,
-						["done"] = 0,
-						["class"] = "DRUID",
-						["role"] = "TANK",
-					},
-					["Ekoria-Aggramar"] = {
-						["taken"] = 466879,
-						["done"] = 0,
-						["class"] = "PALADIN",
-						["role"] = "DAMAGER",
-					},
-					["Crisenthia-Vek'nilash"] = {
-						["taken"] = 586770,
-						["done"] = 0,
-						["class"] = "WARLOCK",
-						["role"] = "DAMAGER",
-					},
-					["Balzer-Quel'Thalas"] = {
-						["taken"] = 4435237,
-						["done"] = 0,
-						["class"] = "WARLOCK",
-						["role"] = "DAMAGER",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 82487816,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Corruption Horror"] = {
 				["players"] = {
@@ -74455,149 +74324,199 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 42814659,
 			},
-			["Creature in the Shadows"] = {
+			["Spirit Shade"] = {
 				["players"] = {
 					["Bracnar"] = {
-						["taken"] = 44159082,
+						["taken"] = 2162870,
 						["done"] = 0,
 						["class"] = "HUNTER",
 						["role"] = "DAMAGER",
 					},
 					["Kuhcakt-Vek'nilash"] = {
-						["taken"] = 31719233,
+						["taken"] = 10050986,
 						["done"] = 0,
 						["class"] = "HUNTER",
 						["role"] = "DAMAGER",
 					},
 					["Taladendren-Vek'nilash"] = {
-						["taken"] = 14555853,
-						["done"] = 14341284,
+						["taken"] = 7110832,
+						["done"] = 0,
 						["class"] = "DEMONHUNTER",
-						["role"] = "TANK",
+						["role"] = "DAMAGER",
 					},
 					["Merkav-Nazgrel"] = {
-						["taken"] = 35312615,
-						["done"] = 708169,
+						["taken"] = 2715322,
+						["done"] = 0,
 						["class"] = "DEMONHUNTER",
 						["role"] = "DAMAGER",
 					},
-					["Aetheric-Silvermoon"] = {
-						["taken"] = 24141024,
-						["done"] = 778338,
-						["class"] = "WARRIOR",
+					["Iliandre-Nemesis"] = {
+						["taken"] = 1089491,
+						["done"] = 0,
+						["class"] = "MONK",
 						["role"] = "DAMAGER",
 					},
-					["Alixia-Vek'nilash"] = {
-						["taken"] = 46645512,
-						["done"] = 535580,
+					["Thunderyn-Frostmourne"] = {
+						["taken"] = 215059,
+						["done"] = 0,
+						["class"] = "PALADIN",
+						["role"] = "HEALER",
+					},
+					["Khryleesi-Vek'nilash"] = {
+						["taken"] = 1862208,
+						["done"] = 0,
 						["class"] = "PRIEST",
-						["role"] = "DAMAGER",
+						["role"] = "HEALER",
+					},
+					["Arshia-Nazgrel"] = {
+						["taken"] = 978662,
+						["done"] = 0,
+						["class"] = "DRUID",
+						["role"] = "HEALER",
 					},
 					["Malderd-Nesingwary"] = {
-						["taken"] = 16589280,
-						["done"] = 6004585,
+						["taken"] = 426192,
+						["done"] = 0,
 						["class"] = "DRUID",
 						["role"] = "TANK",
 					},
 					["Slickrock-AeriePeak"] = {
-						["taken"] = 46441008,
+						["taken"] = 6778919,
 						["done"] = 0,
 						["class"] = "HUNTER",
 						["role"] = "DAMAGER",
 					},
-					["Boltman-Nazgrel"] = {
-						["taken"] = 0,
-						["done"] = 1326324,
-						["class"] = "SHAMAN",
-						["role"] = "HEALER",
+					["Vyerii-Kel'Thuzad"] = {
+						["taken"] = 1717690,
+						["done"] = 0,
+						["class"] = "PRIEST",
+						["role"] = "DAMAGER",
 					},
-					["Balzer-Quel'Thalas"] = {
-						["taken"] = 20547477,
+					["Renderin-Lightbringer"] = {
+						["taken"] = 4060116,
+						["done"] = 0,
+						["class"] = "MONK",
+						["role"] = "DAMAGER",
+					},
+					["Nystic-Gnomeregan"] = {
+						["taken"] = 12311089,
+						["done"] = 0,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Alarianix-Frostmourne"] = {
+						["taken"] = 1593979,
+						["done"] = 0,
+						["class"] = "DEMONHUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Haniquin-Stormrage"] = {
+						["taken"] = 4391708,
+						["done"] = 0,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Hadooken-Nesingwary"] = {
+						["taken"] = 3609620,
+						["done"] = 0,
+						["class"] = "DEATHKNIGHT",
+						["role"] = "DAMAGER",
+					},
+					["Huntersix-Vek'nilash"] = {
+						["taken"] = 9541720,
+						["done"] = 0,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Malatov-Darkspear"] = {
+						["taken"] = 5484515,
+						["done"] = 0,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Ayophes-Ragnaros"] = {
+						["taken"] = 698938,
+						["done"] = 0,
+						["class"] = "DEMONHUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Warshaak-Sargeras"] = {
+						["taken"] = 199014,
+						["done"] = 0,
+						["class"] = "DRUID",
+						["role"] = "TANK",
+					},
+					["Ekoria-Aggramar"] = {
+						["taken"] = 466879,
+						["done"] = 0,
+						["class"] = "PALADIN",
+						["role"] = "DAMAGER",
+					},
+					["Crisenthia-Vek'nilash"] = {
+						["taken"] = 586770,
 						["done"] = 0,
 						["class"] = "WARLOCK",
 						["role"] = "DAMAGER",
 					},
-					["Renderin-Lightbringer"] = {
-						["taken"] = 6167523,
-						["done"] = 2336393,
-						["class"] = "MONK",
-						["role"] = "DAMAGER",
-					},
-					["Arshia-Nazgrel"] = {
-						["taken"] = 0,
-						["done"] = 1615432,
-						["class"] = "DRUID",
-						["role"] = "HEALER",
-					},
-					["Alarianix-Frostmourne"] = {
-						["taken"] = 18903847,
-						["done"] = 2148582,
-						["class"] = "DEMONHUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Hadooken-Nesingwary"] = {
-						["taken"] = 29591560,
-						["done"] = 1546154,
-						["class"] = "DEATHKNIGHT",
-						["role"] = "DAMAGER",
-					},
-					["Outtkast-Nazgrel"] = {
-						["taken"] = 0,
-						["done"] = 1376763,
-						["class"] = "DRUID",
-						["role"] = "HEALER",
-					},
-					["Nystic-Gnomeregan"] = {
-						["taken"] = 31606519,
-						["done"] = 759592,
-						["class"] = "MAGE",
-						["role"] = "DAMAGER",
-					},
-					["Malatov-Darkspear"] = {
-						["taken"] = 22743169,
+					["Balzer-Quel'Thalas"] = {
+						["taken"] = 4435237,
 						["done"] = 0,
-						["class"] = "HUNTER",
+						["class"] = "WARLOCK",
 						["role"] = "DAMAGER",
-					},
-					["Indianmajik-Nazgrel"] = {
-						["taken"] = 3723590,
-						["done"] = 344152,
-						["class"] = "PALADIN",
-						["role"] = "DAMAGER",
-					},
-					["Warshaak-Sargeras"] = {
-						["taken"] = 48874,
-						["done"] = 715689,
-						["class"] = "DRUID",
-						["role"] = "DAMAGER",
-					},
-					["Ekoria-Aggramar"] = {
-						["taken"] = 24495739,
-						["done"] = 2372152,
-						["class"] = "PALADIN",
-						["role"] = "DAMAGER",
-					},
-					["Thunderyn-Frostmourne"] = {
-						["taken"] = 519787,
-						["done"] = 0,
-						["class"] = "PALADIN",
-						["role"] = "HEALER",
-					},
-					["Anaaya-Vek'nilash"] = {
-						["taken"] = 458790,
-						["done"] = 0,
-						["class"] = "SHAMAN",
-						["role"] = "HEALER",
 					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 418370482,
+				["taken"] = 82487816,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
-				["done"] = 36909189,
+				["done"] = 0,
+			},
+			["Vicktor-Feathermoon"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+					["Justicar's Vengeance"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 362687,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Justicar's Vengeance"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 362687,
+						["hits"] = 1,
+					},
+					["Divine Star"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 71427,
+						["hits"] = 1,
+					},
+					["Echo of Light"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 36570,
+						["hits"] = 3,
+					},
+				},
+				["htaken"] = 0,
+				["done"] = 0,
 			},
 			["Malatov-Darkspear"] = {
 				["players"] = {
@@ -74746,6 +74665,150 @@ SkadaPerCharDB = {
 				},
 				["htaken"] = 0,
 				["done"] = 9376717,
+			},
+			["Shadow Pounder"] = {
+				["players"] = {
+					["Bracnar"] = {
+						["taken"] = 5120445,
+						["done"] = 616170,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Kuhcakt-Vek'nilash"] = {
+						["taken"] = 5390940,
+						["done"] = 0,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Taladendren-Vek'nilash"] = {
+						["taken"] = 6259569,
+						["done"] = 519680,
+						["class"] = "DEMONHUNTER",
+						["role"] = "TANK",
+					},
+					["Merkav-Nazgrel"] = {
+						["taken"] = 6019983,
+						["done"] = 508385,
+						["class"] = "DEMONHUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Aetheric-Silvermoon"] = {
+						["taken"] = 6704160,
+						["done"] = 933222,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Alixia-Vek'nilash"] = {
+						["taken"] = 2663111,
+						["done"] = 164730,
+						["class"] = "PRIEST",
+						["role"] = "DAMAGER",
+					},
+					["Malderd-Nesingwary"] = {
+						["taken"] = 3708849,
+						["done"] = 0,
+						["class"] = "DRUID",
+						["role"] = "TANK",
+					},
+					["Slickrock-AeriePeak"] = {
+						["taken"] = 12149285,
+						["done"] = 296664,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Boltman-Nazgrel"] = {
+						["taken"] = 0,
+						["done"] = 1099689,
+						["class"] = "SHAMAN",
+						["role"] = "HEALER",
+					},
+					["Balzer-Quel'Thalas"] = {
+						["taken"] = 5560468,
+						["done"] = 0,
+						["class"] = "WARLOCK",
+						["role"] = "DAMAGER",
+					},
+					["Nystic-Gnomeregan"] = {
+						["taken"] = 2709863,
+						["done"] = 602850,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Vyerii-Kel'Thuzad"] = {
+						["taken"] = 0,
+						["done"] = 586672,
+						["class"] = "PRIEST",
+						["role"] = "DAMAGER",
+					},
+					["Alarianix-Frostmourne"] = {
+						["taken"] = 5799412,
+						["done"] = 794357,
+						["class"] = "DEMONHUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Hadooken-Nesingwary"] = {
+						["taken"] = 6789026,
+						["done"] = 565029,
+						["class"] = "DEATHKNIGHT",
+						["role"] = "DAMAGER",
+					},
+					["Outtkast-Nazgrel"] = {
+						["taken"] = 0,
+						["done"] = 263295,
+						["class"] = "DRUID",
+						["role"] = "HEALER",
+					},
+					["Arshia-Nazgrel"] = {
+						["taken"] = 0,
+						["done"] = 604578,
+						["class"] = "DRUID",
+						["role"] = "HEALER",
+					},
+					["Malatov-Darkspear"] = {
+						["taken"] = 8120740,
+						["done"] = 0,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Thunderyn-Frostmourne"] = {
+						["taken"] = 0,
+						["done"] = 581068,
+						["class"] = "PALADIN",
+						["role"] = "HEALER",
+					},
+					["Warshaak-Sargeras"] = {
+						["taken"] = 2183837,
+						["done"] = 296551,
+						["class"] = "DRUID",
+						["role"] = "DAMAGER",
+					},
+					["Ekoria-Aggramar"] = {
+						["taken"] = 7407323,
+						["done"] = 871344,
+						["class"] = "PALADIN",
+						["role"] = "DAMAGER",
+					},
+					["Renderin-Lightbringer"] = {
+						["taken"] = 843326,
+						["done"] = 607618,
+						["class"] = "MONK",
+						["role"] = "DAMAGER",
+					},
+					["Anaaya-Vek'nilash"] = {
+						["taken"] = 1029284,
+						["done"] = 284261,
+						["class"] = "SHAMAN",
+						["role"] = "HEALER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 88459621,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 10196163,
 			},
 			["Corrupted Vermin"] = {
 				["players"] = {
@@ -74951,149 +75014,59 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 0,
 			},
-			["Shadow Pounder"] = {
+			["Unknown"] = {
 				["players"] = {
 					["Bracnar"] = {
-						["taken"] = 5120445,
-						["done"] = 616170,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Kuhcakt-Vek'nilash"] = {
-						["taken"] = 5390940,
+						["taken"] = 326928,
 						["done"] = 0,
 						["class"] = "HUNTER",
 						["role"] = "DAMAGER",
 					},
-					["Taladendren-Vek'nilash"] = {
-						["taken"] = 6259569,
-						["done"] = 519680,
-						["class"] = "DEMONHUNTER",
-						["role"] = "TANK",
-					},
-					["Merkav-Nazgrel"] = {
-						["taken"] = 6019983,
-						["done"] = 508385,
+					["Ayophes-Ragnaros"] = {
+						["taken"] = 77553,
+						["done"] = 0,
 						["class"] = "DEMONHUNTER",
 						["role"] = "DAMAGER",
 					},
-					["Aetheric-Silvermoon"] = {
-						["taken"] = 6704160,
-						["done"] = 933222,
-						["class"] = "WARRIOR",
-						["role"] = "DAMAGER",
-					},
-					["Alixia-Vek'nilash"] = {
-						["taken"] = 2663111,
-						["done"] = 164730,
+					["Khryleesi-Vek'nilash"] = {
+						["taken"] = 425041,
+						["done"] = 0,
 						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Nystic-Gnomeregan"] = {
+						["taken"] = 0,
+						["done"] = 221609,
+						["class"] = "MAGE",
 						["role"] = "DAMAGER",
 					},
 					["Malderd-Nesingwary"] = {
-						["taken"] = 3708849,
+						["taken"] = 130865,
 						["done"] = 0,
 						["class"] = "DRUID",
 						["role"] = "TANK",
 					},
-					["Slickrock-AeriePeak"] = {
-						["taken"] = 12149285,
-						["done"] = 296664,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Boltman-Nazgrel"] = {
-						["taken"] = 0,
-						["done"] = 1099689,
-						["class"] = "SHAMAN",
-						["role"] = "HEALER",
-					},
-					["Balzer-Quel'Thalas"] = {
-						["taken"] = 5560468,
-						["done"] = 0,
-						["class"] = "WARLOCK",
-						["role"] = "DAMAGER",
-					},
-					["Nystic-Gnomeregan"] = {
-						["taken"] = 2709863,
-						["done"] = 602850,
-						["class"] = "MAGE",
-						["role"] = "DAMAGER",
-					},
-					["Vyerii-Kel'Thuzad"] = {
-						["taken"] = 0,
-						["done"] = 586672,
-						["class"] = "PRIEST",
-						["role"] = "DAMAGER",
-					},
 					["Alarianix-Frostmourne"] = {
-						["taken"] = 5799412,
-						["done"] = 794357,
+						["taken"] = 52135,
+						["done"] = 0,
 						["class"] = "DEMONHUNTER",
 						["role"] = "DAMAGER",
 					},
 					["Hadooken-Nesingwary"] = {
-						["taken"] = 6789026,
-						["done"] = 565029,
+						["taken"] = 21873,
+						["done"] = 0,
 						["class"] = "DEATHKNIGHT",
 						["role"] = "DAMAGER",
-					},
-					["Outtkast-Nazgrel"] = {
-						["taken"] = 0,
-						["done"] = 263295,
-						["class"] = "DRUID",
-						["role"] = "HEALER",
-					},
-					["Arshia-Nazgrel"] = {
-						["taken"] = 0,
-						["done"] = 604578,
-						["class"] = "DRUID",
-						["role"] = "HEALER",
-					},
-					["Malatov-Darkspear"] = {
-						["taken"] = 8120740,
-						["done"] = 0,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Thunderyn-Frostmourne"] = {
-						["taken"] = 0,
-						["done"] = 581068,
-						["class"] = "PALADIN",
-						["role"] = "HEALER",
-					},
-					["Warshaak-Sargeras"] = {
-						["taken"] = 2183837,
-						["done"] = 296551,
-						["class"] = "DRUID",
-						["role"] = "DAMAGER",
-					},
-					["Ekoria-Aggramar"] = {
-						["taken"] = 7407323,
-						["done"] = 871344,
-						["class"] = "PALADIN",
-						["role"] = "DAMAGER",
-					},
-					["Renderin-Lightbringer"] = {
-						["taken"] = 843326,
-						["done"] = 607618,
-						["class"] = "MONK",
-						["role"] = "DAMAGER",
-					},
-					["Anaaya-Vek'nilash"] = {
-						["taken"] = 1029284,
-						["done"] = 284261,
-						["class"] = "SHAMAN",
-						["role"] = "HEALER",
 					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 88459621,
+				["taken"] = 1034395,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
-				["done"] = 10196163,
+				["done"] = 221609,
 			},
 			["Dark Devourers"] = {
 				["players"] = {
@@ -75306,60 +75279,6 @@ SkadaPerCharDB = {
 				["htaken"] = 432104,
 				["done"] = 0,
 			},
-			["Unknown"] = {
-				["players"] = {
-					["Bracnar"] = {
-						["taken"] = 326928,
-						["done"] = 0,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Ayophes-Ragnaros"] = {
-						["taken"] = 77553,
-						["done"] = 0,
-						["class"] = "DEMONHUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Khryleesi-Vek'nilash"] = {
-						["taken"] = 425041,
-						["done"] = 0,
-						["class"] = "PRIEST",
-						["role"] = "HEALER",
-					},
-					["Nystic-Gnomeregan"] = {
-						["taken"] = 0,
-						["done"] = 221609,
-						["class"] = "MAGE",
-						["role"] = "DAMAGER",
-					},
-					["Malderd-Nesingwary"] = {
-						["taken"] = 130865,
-						["done"] = 0,
-						["class"] = "DRUID",
-						["role"] = "TANK",
-					},
-					["Alarianix-Frostmourne"] = {
-						["taken"] = 52135,
-						["done"] = 0,
-						["class"] = "DEMONHUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Hadooken-Nesingwary"] = {
-						["taken"] = 21873,
-						["done"] = 0,
-						["class"] = "DEATHKNIGHT",
-						["role"] = "DAMAGER",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 1034395,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 221609,
-			},
 			["Thunderyn-Frostmourne"] = {
 				["players"] = {
 				},
@@ -75379,6 +75298,108 @@ SkadaPerCharDB = {
 				},
 				["htaken"] = 0,
 				["done"] = 0,
+			},
+			["Seeping Fog"] = {
+				["players"] = {
+					["Crisenthia-Vek'nilash"] = {
+						["taken"] = 0,
+						["done"] = 988058,
+						["class"] = "WARLOCK",
+						["role"] = "DAMAGER",
+					},
+					["Slickrock-AeriePeak"] = {
+						["taken"] = 0,
+						["done"] = 942229,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Kuhcakt-Vek'nilash"] = {
+						["taken"] = 0,
+						["done"] = 2329261,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Nystic-Gnomeregan"] = {
+						["taken"] = 0,
+						["done"] = 938910,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Huntersix-Vek'nilash"] = {
+						["taken"] = 0,
+						["done"] = 926916,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Alarianix-Frostmourne"] = {
+						["taken"] = 0,
+						["done"] = 553276,
+						["class"] = "DEMONHUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Iliandre-Nemesis"] = {
+						["taken"] = 0,
+						["done"] = 912031,
+						["class"] = "MONK",
+						["role"] = "DAMAGER",
+					},
+					["Outtkast-Nazgrel"] = {
+						["taken"] = 0,
+						["done"] = 833730,
+						["class"] = "DRUID",
+						["role"] = "HEALER",
+					},
+					["Thunderyn-Frostmourne"] = {
+						["taken"] = 0,
+						["done"] = 3691456,
+						["class"] = "PALADIN",
+						["role"] = "HEALER",
+					},
+					["Khryleesi-Vek'nilash"] = {
+						["taken"] = 0,
+						["done"] = 664376,
+						["class"] = "PRIEST",
+						["role"] = "DAMAGER",
+					},
+					["Arshia-Nazgrel"] = {
+						["taken"] = 0,
+						["done"] = 2827777,
+						["class"] = "DRUID",
+						["role"] = "HEALER",
+					},
+					["Bracnar"] = {
+						["taken"] = 0,
+						["done"] = 1266328,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Malatov-Darkspear"] = {
+						["taken"] = 0,
+						["done"] = 93762,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Haniquin-Stormrage"] = {
+						["taken"] = 0,
+						["done"] = 1621158,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Chubylubylon-Ragnaros"] = {
+						["taken"] = 0,
+						["done"] = 2970602,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 21559870,
 			},
 			["Corrupted Feeler"] = {
 				["players"] = {
@@ -76846,49 +76867,28 @@ SkadaPerCharDB = {
 				["htaken"] = 0,
 				["done"] = 89674431,
 			},
-			["Vicktor-Feathermoon"] = {
+			["Swamprock Marshstomper"] = {
 				["players"] = {
+					["Bracnar"] = {
+						["taken"] = 2526271,
+						["done"] = 53687,
+						["class"] = "HUNTER",
+						["role"] = "NONE",
+					},
+					["Rexxar"] = {
+						["taken"] = 86744,
+						["done"] = 0,
+						["role"] = "NONE",
+					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
-					["Justicar's Vengeance"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 362687,
-						["hits"] = 1,
-					},
 				},
-				["taken"] = 0,
+				["taken"] = 2613015,
 				["htakenspell"] = {
-					["Justicar's Vengeance"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 362687,
-						["hits"] = 1,
-					},
-					["Divine Star"] = {
-						["min"] = 0,
-						["crits"] = 1,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 71427,
-						["hits"] = 1,
-					},
-					["Echo of Light"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 36570,
-						["hits"] = 3,
-					},
 				},
 				["htaken"] = 0,
-				["done"] = 0,
+				["done"] = 53687,
 			},
 			["Gaelwyn"] = {
 				["players"] = {
@@ -77997,8 +77997,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 565050,
 							["id"] = 207097,
 							["damage"] = 734565,
-							["totalhits"] = 8,
 							["max"] = 113010,
+							["totalhits"] = 8,
 							["min"] = 56505,
 							["criticalmax"] = 113010,
 							["critical"] = 5,
@@ -78013,8 +78013,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 578274,
 							["id"] = 193455,
 							["damage"] = 1344955,
-							["totalhits"] = 4,
 							["max"] = 578274,
+							["totalhits"] = 4,
 							["min"] = 199742,
 							["criticalmax"] = 578274,
 							["critical"] = 1,
@@ -78065,8 +78065,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 1330064,
 							["id"] = 17253,
 							["damage"] = 1557233,
-							["totalhits"] = 5,
 							["max"] = 426024,
+							["totalhits"] = 5,
 							["min"] = 196705,
 							["criticalmax"] = 426024,
 							["hitmax"] = 227169,
@@ -78081,8 +78081,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 641664,
 							["id"] = 6603,
 							["damage"] = 802080,
-							["totalhits"] = 6,
 							["max"] = 160416,
+							["totalhits"] = 6,
 							["min"] = 80208,
 							["criticalmax"] = 160416,
 							["hitmax"] = 80208,
@@ -78097,8 +78097,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 873778,
 							["id"] = 83381,
 							["damage"] = 1042644,
-							["totalhits"] = 4,
 							["max"] = 337731,
+							["totalhits"] = 4,
 							["min"] = 168866,
 							["criticalmax"] = 337731,
 							["hitmax"] = 168866,
@@ -78137,8 +78137,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 512647,
 							["id"] = 207097,
 							["damage"] = 768971,
-							["totalhits"] = 8,
 							["max"] = 128162,
+							["totalhits"] = 8,
 							["min"] = 64081,
 							["criticalmax"] = 128162,
 							["hitmax"] = 64081,
@@ -78153,8 +78153,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 411763,
 							["id"] = 6603,
 							["damage"] = 691243,
-							["totalhits"] = 12,
 							["max"] = 82353,
+							["totalhits"] = 12,
 							["min"] = 24179,
 							["criticalmax"] = 82353,
 							["critical"] = 5,
@@ -78222,8 +78222,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 1141532,
 							["id"] = 83381,
 							["damage"] = 2618216,
-							["totalhits"] = 4,
 							["max"] = 1141532,
+							["totalhits"] = 4,
 							["min"] = 335153,
 							["criticalmax"] = 1141532,
 							["critical"] = 1,
@@ -78238,8 +78238,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 373594,
 							["id"] = 6603,
 							["damage"] = 647688,
-							["totalhits"] = 10,
 							["max"] = 93399,
+							["totalhits"] = 10,
 							["min"] = 35923,
 							["criticalmax"] = 93399,
 							["critical"] = 4,
@@ -78254,8 +78254,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 78611,
 							["id"] = 75,
 							["damage"] = 223635,
-							["totalhits"] = 5,
 							["max"] = 78611,
+							["totalhits"] = 5,
 							["min"] = 29417,
 							["criticalmax"] = 78611,
 							["critical"] = 1,
@@ -78282,8 +78282,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 400179,
 							["id"] = 207097,
 							["damage"] = 1000448,
-							["totalhits"] = 8,
 							["max"] = 200090,
+							["totalhits"] = 8,
 							["min"] = 100044,
 							["criticalmax"] = 200090,
 							["critical"] = 2,
@@ -78298,8 +78298,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 112998,
 							["id"] = 160124,
 							["damage"] = 169497,
-							["totalhits"] = 2,
 							["max"] = 112998,
+							["totalhits"] = 2,
 							["min"] = 56499,
 							["criticalmax"] = 112998,
 							["critical"] = 1,
@@ -78832,8 +78832,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 63596,
 							["id"] = 75,
 							["damage"] = 94769,
-							["totalhits"] = 2,
 							["max"] = 63596,
+							["totalhits"] = 2,
 							["min"] = 31173,
 							["criticalmax"] = 63596,
 							["hitmax"] = 31173,
@@ -78884,8 +78884,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 76914,
 							["id"] = 194392,
 							["damage"] = 114616,
-							["totalhits"] = 2,
 							["max"] = 76914,
+							["totalhits"] = 2,
 							["min"] = 37702,
 							["criticalmax"] = 76914,
 							["hitmax"] = 37702,
@@ -78953,8 +78953,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 54795,
 							["id"] = 6603,
 							["damage"] = 82192,
-							["totalhits"] = 2,
 							["max"] = 54795,
+							["totalhits"] = 2,
 							["min"] = 27397,
 							["criticalmax"] = 54795,
 							["critical"] = 1,
@@ -79140,8 +79140,22 @@ SkadaPerCharDB = {
 						["Swamprock Marshstomper"] = 784507,
 					},
 					["auras"] = {
+						["Leokk's Insight"] = {
+							["name"] = "Leokk's Insight",
+							["active"] = 0,
+							["id"] = 221332,
+							["uptime"] = 10,
+							["auratype"] = "BUFF",
+						},
 						["Chromaggus: Leokk's Insight"] = {
 							["name"] = "Chromaggus: Leokk's Insight",
+							["active"] = 0,
+							["id"] = 221332,
+							["uptime"] = 10,
+							["auratype"] = "BUFF",
+						},
+						["Hati: Leokk's Insight"] = {
+							["name"] = "Hati: Leokk's Insight",
 							["active"] = 0,
 							["id"] = 221332,
 							["uptime"] = 10,
@@ -79153,20 +79167,6 @@ SkadaPerCharDB = {
 							["id"] = 2649,
 							["uptime"] = 1,
 							["auratype"] = "DEBUFF",
-						},
-						["Hati: Leokk's Insight"] = {
-							["name"] = "Hati: Leokk's Insight",
-							["active"] = 0,
-							["id"] = 221332,
-							["uptime"] = 10,
-							["auratype"] = "BUFF",
-						},
-						["Leokk's Insight"] = {
-							["name"] = "Leokk's Insight",
-							["active"] = 0,
-							["id"] = 221332,
-							["uptime"] = 10,
-							["auratype"] = "BUFF",
 						},
 					},
 					["role"] = "NONE",
@@ -79206,8 +79206,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 459844,
 							["id"] = 193455,
 							["damage"] = 1102641,
-							["totalhits"] = 4,
 							["max"] = 459844,
+							["totalhits"] = 4,
 							["min"] = 211973,
 							["criticalmax"] = 459844,
 							["critical"] = 1,
@@ -79234,8 +79234,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 76913,
 							["id"] = 194392,
 							["damage"] = 194802,
-							["totalhits"] = 4,
 							["max"] = 76913,
+							["totalhits"] = 4,
 							["min"] = 37703,
 							["criticalmax"] = 76913,
 							["critical"] = 1,
@@ -79262,8 +79262,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 129252,
 							["id"] = 75,
 							["damage"] = 193576,
-							["totalhits"] = 4,
 							["max"] = 65657,
+							["totalhits"] = 4,
 							["min"] = 31174,
 							["criticalmax"] = 65657,
 							["hitmax"] = 33150,
@@ -79278,8 +79278,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 58268,
 							["id"] = 6603,
 							["damage"] = 114800,
-							["totalhits"] = 3,
 							["max"] = 58268,
+							["totalhits"] = 3,
 							["min"] = 27398,
 							["criticalmax"] = 58268,
 							["critical"] = 1,
@@ -79587,8 +79587,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 260792,
 							["id"] = 207097,
 							["damage"] = 347722,
-							["totalhits"] = 5,
 							["max"] = 86931,
+							["totalhits"] = 5,
 							["min"] = 43465,
 							["criticalmax"] = 86931,
 							["hitmax"] = 43465,
@@ -79615,8 +79615,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 50015,
 							["id"] = 6603,
 							["damage"] = 85026,
-							["totalhits"] = 8,
 							["max"] = 20006,
+							["totalhits"] = 8,
 							["min"] = 5001,
 							["criticalmax"] = 20006,
 							["critical"] = 3,
@@ -79631,8 +79631,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 153915,
 							["id"] = 207097,
 							["damage"] = 461746,
-							["totalhits"] = 5,
 							["max"] = 153915,
+							["totalhits"] = 5,
 							["min"] = 76957,
 							["criticalmax"] = 153915,
 							["critical"] = 1,
@@ -79647,8 +79647,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 329442,
 							["id"] = 17253,
 							["damage"] = 444192,
-							["totalhits"] = 2,
 							["max"] = 329442,
+							["totalhits"] = 2,
 							["min"] = 114750,
 							["criticalmax"] = 329442,
 							["critical"] = 1,
@@ -79663,8 +79663,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 262440,
 							["id"] = 6603,
 							["damage"] = 306180,
-							["totalhits"] = 3,
 							["max"] = 131220,
+							["totalhits"] = 3,
 							["min"] = 43740,
 							["criticalmax"] = 131220,
 							["critical"] = 2,
@@ -79703,8 +79703,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 104023,
 							["id"] = 194392,
 							["damage"] = 193942,
-							["totalhits"] = 3,
 							["max"] = 104023,
+							["totalhits"] = 3,
 							["min"] = 38926,
 							["criticalmax"] = 104023,
 							["critical"] = 1,
@@ -79719,8 +79719,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 74108,
 							["id"] = 6603,
 							["damage"] = 176501,
-							["totalhits"] = 4,
 							["max"] = 74108,
+							["totalhits"] = 4,
 							["min"] = 28285,
 							["criticalmax"] = 74108,
 							["critical"] = 1,
@@ -79735,8 +79735,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 933770,
 							["id"] = 83381,
 							["damage"] = 1400655,
-							["totalhits"] = 2,
 							["max"] = 933770,
+							["totalhits"] = 2,
 							["min"] = 466885,
 							["criticalmax"] = 933770,
 							["critical"] = 1,
@@ -79751,8 +79751,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 33030,
 							["id"] = 220874,
 							["damage"] = 82575,
-							["totalhits"] = 4,
 							["max"] = 33030,
+							["totalhits"] = 4,
 							["min"] = 16515,
 							["criticalmax"] = 33030,
 							["hitmax"] = 16515,
@@ -79767,8 +79767,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 66060,
 							["id"] = 220877,
 							["damage"] = 99090,
-							["totalhits"] = 2,
 							["max"] = 66060,
+							["totalhits"] = 2,
 							["min"] = 33030,
 							["criticalmax"] = 66060,
 							["critical"] = 1,
@@ -79783,8 +79783,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 84048,
 							["id"] = 6603,
 							["damage"] = 200176,
-							["totalhits"] = 4,
 							["max"] = 84048,
+							["totalhits"] = 4,
 							["min"] = 32079,
 							["criticalmax"] = 84048,
 							["critical"] = 1,
@@ -79811,8 +79811,8 @@ SkadaPerCharDB = {
 							["criticalamount"] = 86921,
 							["id"] = 160124,
 							["damage"] = 130382,
-							["totalhits"] = 2,
 							["max"] = 86921,
+							["totalhits"] = 2,
 							["min"] = 43461,
 							["criticalmax"] = 86921,
 							["hitmax"] = 43461,
@@ -80089,17 +80089,17 @@ SkadaPerCharDB = {
 					},
 					["damage"] = 631812,
 					["damagespells"] = {
-						["Auto Shot"] = {
-							["hitmin"] = 32185,
-							["id"] = 75,
-							["min"] = 32185,
-							["damage"] = 64370,
-							["hitmax"] = 32185,
+						["Volley"] = {
+							["hitmin"] = 38925,
+							["id"] = 194392,
+							["min"] = 38925,
+							["damage"] = 77850,
+							["hitmax"] = 38925,
 							["hit"] = 2,
 							["school"] = 1,
 							["totalhits"] = 2,
-							["max"] = 32185,
-							["hitamount"] = 64370,
+							["max"] = 38925,
+							["hitamount"] = 77850,
 						},
 						["Cobra Shot"] = {
 							["hitmin"] = 182375,
@@ -80125,17 +80125,17 @@ SkadaPerCharDB = {
 							["max"] = 18768,
 							["damage"] = 18768,
 						},
-						["Rexxar: Lacerate"] = {
-							["criticalamount"] = 33030,
-							["id"] = 220874,
-							["min"] = 33030,
-							["criticalmax"] = 33030,
-							["critical"] = 1,
-							["criticalmin"] = 33030,
+						["Auto Shot"] = {
+							["hitmin"] = 32185,
+							["id"] = 75,
+							["min"] = 32185,
+							["damage"] = 64370,
+							["hitmax"] = 32185,
+							["hit"] = 2,
 							["school"] = 1,
-							["totalhits"] = 1,
-							["max"] = 33030,
-							["damage"] = 33030,
+							["totalhits"] = 2,
+							["max"] = 32185,
+							["hitamount"] = 64370,
 						},
 						["Rexxar: Attack"] = {
 							["damage"] = 40011,
@@ -80166,17 +80166,17 @@ SkadaPerCharDB = {
 							["max"] = 33031,
 							["hitamount"] = 33031,
 						},
-						["Volley"] = {
-							["hitmin"] = 38925,
-							["id"] = 194392,
-							["min"] = 38925,
-							["damage"] = 77850,
-							["hitmax"] = 38925,
-							["hit"] = 2,
+						["Rexxar: Lacerate"] = {
+							["criticalamount"] = 33030,
+							["id"] = 220874,
+							["min"] = 33030,
+							["criticalmax"] = 33030,
+							["critical"] = 1,
+							["criticalmin"] = 33030,
 							["school"] = 1,
-							["totalhits"] = 2,
-							["max"] = 38925,
-							["hitamount"] = 77850,
+							["totalhits"] = 1,
+							["max"] = 33030,
+							["damage"] = 33030,
 						},
 					},
 					["maxhp"] = 3018240,
@@ -80419,22 +80419,8 @@ SkadaPerCharDB = {
 			["time"] = 301,
 			["interrupts"] = 0,
 			["mobdone"] = 415144017,
-			["power"] = {
-				489, -- [1]
-				3124, -- [2]
-				1983, -- [3]
-				103, -- [4]
-				120, -- [5]
-				2902, -- [6]
-				94, -- [7]
-				[0] = 4819186,
-				[13] = 5602,
-				[18] = 3207,
-				[12] = 192,
-				[9] = 238,
-				[17] = 4485,
-			},
 			["gotboss"] = true,
+			["mobtaken"] = 1922951822,
 			["damage"] = 1922951822,
 			["players"] = {
 				{
@@ -80918,14 +80904,14 @@ SkadaPerCharDB = {
 					["power"] = {
 						[13] = {
 							["spells"] = {
-								[15407] = 462,
+								[205448] = 752,
 								[208232] = 20,
 								[211649] = 337,
-								[34914] = 144,
+								[15407] = 462,
 								[190714] = 120,
 								[589] = 92,
 								[8092] = 960,
-								[205448] = 752,
+								[34914] = 144,
 							},
 							["amount"] = 2887,
 						},
@@ -81024,6 +81010,21 @@ SkadaPerCharDB = {
 							["glancing"] = 0,
 							["absorbed"] = 0,
 						},
+						["Nightmare Bolt"] = {
+							["crushing"] = 0,
+							["id"] = 206920,
+							["damage"] = 223807,
+							["max"] = 114356,
+							["name"] = "Nightmare Bolt",
+							["min"] = 109451,
+							["totalhits"] = 2,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 32,
+							["resisted"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+						},
 						["Dark Ruination"] = {
 							["crushing"] = 0,
 							["id"] = 209294,
@@ -81038,21 +81039,6 @@ SkadaPerCharDB = {
 							["resisted"] = 0,
 							["glancing"] = 0,
 							["absorbed"] = 39902,
-						},
-						["Lurking Eruption"] = {
-							["crushing"] = 0,
-							["id"] = 205741,
-							["damage"] = 487509,
-							["max"] = 342361,
-							["name"] = "Lurking Eruption",
-							["min"] = 145148,
-							["totalhits"] = 2,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["school"] = 32,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 630757,
 						},
 						["Corruption: Crushing Shadows"] = {
 							["crushing"] = 0,
@@ -81099,20 +81085,20 @@ SkadaPerCharDB = {
 							["glancing"] = 0,
 							["absorbed"] = 244384,
 						},
-						["Nightmare Bolt"] = {
+						["Lurking Eruption"] = {
 							["crushing"] = 0,
-							["id"] = 206920,
-							["damage"] = 223807,
-							["max"] = 114356,
-							["name"] = "Nightmare Bolt",
-							["min"] = 109451,
+							["id"] = 205741,
+							["damage"] = 487509,
+							["max"] = 342361,
+							["name"] = "Lurking Eruption",
+							["min"] = 145148,
 							["totalhits"] = 2,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["school"] = 32,
 							["resisted"] = 0,
 							["glancing"] = 0,
-							["absorbed"] = 0,
+							["absorbed"] = 630757,
 						},
 					},
 					["healed"] = {
@@ -82314,9 +82300,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488344252.63101,
 									["amount"] = -1418584,
+									["hp"] = 1,
 									["spellid"] = 198670,
 									["srcname"] = "Kuhcakt-Vek'nilash",
-									["hp"] = 1,
 								}, -- [1]
 								{
 									["spellname"] = "Outtkast dies",
@@ -82335,9 +82321,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488344250.81204,
 									["amount"] = -51545,
+									["hp"] = 1882734,
 									["spellid"] = 15407,
 									["srcname"] = "Alixia-Vek'nilash",
-									["hp"] = 1882734,
 								}, -- [4]
 								{
 									["absorb"] = 0,
@@ -82350,16 +82336,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488344250.90606,
 									["amount"] = -41719,
+									["hp"] = 1848947,
 									["spellid"] = 193473,
 									["srcname"] = "Void Tendril",
-									["hp"] = 1848947,
 								}, -- [6]
 								{
 									["ts"] = 1488344251.03407,
 									["amount"] = -50492,
+									["hp"] = 1798455,
 									["spellid"] = 12654,
 									["srcname"] = "Nystic-Gnomeregan",
-									["hp"] = 1798455,
 								}, -- [7]
 								{
 									["absorb"] = 0,
@@ -82372,51 +82358,51 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488344251.38609,
 									["amount"] = -881676,
+									["hp"] = 947600,
 									["spellid"] = 212621,
 									["srcname"] = "Kuhcakt-Vek'nilash",
-									["hp"] = 947600,
 								}, -- [9]
 								{
 									["ts"] = 1488344251.4771,
 									["amount"] = -283636,
+									["hp"] = 663964,
 									["spellid"] = 205448,
 									["srcname"] = "Alixia-Vek'nilash",
-									["hp"] = 663964,
 								}, -- [10]
 								{
 									["ts"] = 1488344251.51311,
 									["amount"] = -72971,
+									["hp"] = 590993,
 									["spellid"] = 75,
 									["srcname"] = "Kuhcakt-Vek'nilash",
-									["hp"] = 590993,
 								}, -- [11]
 								{
 									["ts"] = 1488344251.81612,
 									["amount"] = -60635,
+									["hp"] = 530358,
 									["spellid"] = 194392,
 									["srcname"] = "Kuhcakt-Vek'nilash",
-									["hp"] = 530358,
 								}, -- [12]
 								{
 									["ts"] = 1488344251.90813,
 									["amount"] = -41719,
+									["hp"] = 488639,
 									["spellid"] = 193473,
 									["srcname"] = "Void Tendril",
-									["hp"] = 488639,
 								}, -- [13]
 								{
 									["ts"] = 1488344252.02614,
 									["amount"] = -50492,
+									["hp"] = 438147,
 									["spellid"] = 12654,
 									["srcname"] = "Nystic-Gnomeregan",
-									["hp"] = 438147,
 								}, -- [14]
 								{
 									["ts"] = 1488344252.60815,
 									["amount"] = -34518,
+									["hp"] = 403629,
 									["spellid"] = 132467,
 									["srcname"] = "Renderin-Lightbringer",
-									["hp"] = 403629,
 								}, -- [15]
 								["pos"] = 3,
 							},
@@ -82924,7 +82910,7 @@ SkadaPerCharDB = {
 							["class"] = "PRIEST",
 							["shielding"] = 0,
 						},
-						["Creature-0-3135-1520-18818-47244-0000B6547C"] = {
+						["Creature-0-3135-1520-18818-47244-000036547C"] = {
 							["role"] = "DAMAGER",
 							["name"] = "Nystic-Gnomeregan",
 							["amount"] = 0,
@@ -83050,11 +83036,12 @@ SkadaPerCharDB = {
 							["class"] = "MAGE",
 							["shielding"] = 0,
 						},
-						["Creature-0-3135-1520-18818-113347-00003653F0"] = {
+						["Creature-0-3135-1520-18818-47244-0000B6547C"] = {
+							["role"] = "DAMAGER",
+							["name"] = "Nystic-Gnomeregan",
+							["amount"] = 0,
+							["class"] = "MAGE",
 							["shielding"] = 0,
-							["role"] = "NONE",
-							["name"] = "Beast",
-							["amount"] = 15866,
 						},
 						["Player-86-01FC28C3"] = {
 							["role"] = "DAMAGER",
@@ -83225,12 +83212,11 @@ SkadaPerCharDB = {
 							["name"] = "Beast",
 							["amount"] = 0,
 						},
-						["Creature-0-3135-1520-18818-47244-000036547C"] = {
-							["role"] = "DAMAGER",
-							["name"] = "Nystic-Gnomeregan",
-							["amount"] = 0,
-							["class"] = "MAGE",
+						["Creature-0-3135-1520-18818-113347-00003653F0"] = {
 							["shielding"] = 0,
+							["role"] = "NONE",
+							["name"] = "Beast",
+							["amount"] = 15866,
 						},
 						["Creature-0-3135-1520-18818-113347-0000365460"] = {
 							["shielding"] = 0,
@@ -83314,16 +83300,16 @@ SkadaPerCharDB = {
 							["critical"] = 0,
 							["absorbed"] = 0,
 						},
-						["Pulse"] = {
+						["Wild Growth"] = {
 							["shielding"] = 0,
-							["id"] = 215263,
-							["healing"] = 2009831,
+							["id"] = 48438,
+							["healing"] = 803588,
 							["min"] = 0,
-							["name"] = "Pulse",
-							["hits"] = 76,
-							["overhealing"] = 1924241,
-							["max"] = 85559,
-							["critical"] = 13,
+							["name"] = "Wild Growth",
+							["hits"] = 91,
+							["overhealing"] = 1315816,
+							["max"] = 56035,
+							["critical"] = 25,
 							["absorbed"] = 0,
 						},
 						["Nature's Essence"] = {
@@ -83410,18 +83396,6 @@ SkadaPerCharDB = {
 							["critical"] = 63,
 							["absorbed"] = 0,
 						},
-						["Wild Growth"] = {
-							["shielding"] = 0,
-							["id"] = 48438,
-							["healing"] = 803588,
-							["min"] = 0,
-							["name"] = "Wild Growth",
-							["hits"] = 91,
-							["overhealing"] = 1315816,
-							["max"] = 56035,
-							["critical"] = 25,
-							["absorbed"] = 0,
-						},
 						["Dreamwalker"] = {
 							["shielding"] = 0,
 							["id"] = 189853,
@@ -83432,6 +83406,18 @@ SkadaPerCharDB = {
 							["overhealing"] = 0,
 							["max"] = 214043,
 							["critical"] = 1,
+							["absorbed"] = 0,
+						},
+						["Pulse"] = {
+							["shielding"] = 0,
+							["id"] = 215263,
+							["healing"] = 2009831,
+							["min"] = 0,
+							["name"] = "Pulse",
+							["hits"] = 76,
+							["overhealing"] = 1924241,
+							["max"] = 85559,
+							["critical"] = 13,
 							["absorbed"] = 0,
 						},
 					},
@@ -85565,6 +85551,22 @@ SkadaPerCharDB = {
 							["criticalmin"] = 117072,
 							["hitamount"] = 9903916,
 						},
+						["Maul"] = {
+							["hitmin"] = 22310,
+							["criticalamount"] = 347803,
+							["id"] = 6807,
+							["damage"] = 668666,
+							["max"] = 81027,
+							["totalhits"] = 14,
+							["min"] = 22310,
+							["criticalmax"] = 81027,
+							["critical"] = 5,
+							["hit"] = 9,
+							["school"] = 1,
+							["hitmax"] = 80911,
+							["criticalmin"] = 61279,
+							["hitamount"] = 320863,
+						},
 						["Thrash"] = {
 							["hitmin"] = 7741,
 							["criticalamount"] = 3410393,
@@ -85592,22 +85594,6 @@ SkadaPerCharDB = {
 							["totalhits"] = 15,
 							["max"] = 390826,
 							["hitamount"] = 2637070,
-						},
-						["Maul"] = {
-							["hitmin"] = 22310,
-							["criticalamount"] = 347803,
-							["id"] = 6807,
-							["damage"] = 668666,
-							["max"] = 81027,
-							["totalhits"] = 14,
-							["min"] = 22310,
-							["criticalmax"] = 81027,
-							["critical"] = 5,
-							["hit"] = 9,
-							["school"] = 1,
-							["hitmax"] = 80911,
-							["criticalmin"] = 61279,
-							["hitamount"] = 320863,
 						},
 						["Rage of the Sleeper"] = {
 							["hitmin"] = 128497,
@@ -86318,9 +86304,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488344160.3041,
 									["amount"] = -3388716,
+									["hp"] = 1,
 									["spellid"] = 206369,
 									["srcname"] = "Xavius",
-									["hp"] = 1,
 								}, -- [10]
 								{
 									["spellname"] = "Warshaak dies",
@@ -87793,12 +87779,12 @@ SkadaPerCharDB = {
 							["uptime"] = 25,
 							["auratype"] = "DEBUFF",
 						},
-						["Belo'vir's Final Stand"] = {
-							["name"] = "Belo'vir's Final Stand",
+						["Cauterize"] = {
+							["name"] = "Cauterize",
 							["active"] = 0,
-							["id"] = 207283,
-							["uptime"] = 25,
-							["auratype"] = "BUFF",
+							["id"] = 87023,
+							["uptime"] = 6,
+							["auratype"] = "DEBUFF",
 						},
 						["Ignite"] = {
 							["name"] = "Ignite",
@@ -87835,12 +87821,12 @@ SkadaPerCharDB = {
 							["uptime"] = 40,
 							["auratype"] = "BUFF",
 						},
-						["Cauterize"] = {
-							["name"] = "Cauterize",
+						["Blazing Barrier"] = {
+							["name"] = "Blazing Barrier",
 							["active"] = 0,
-							["id"] = 87023,
-							["uptime"] = 6,
-							["auratype"] = "DEBUFF",
+							["id"] = 235313,
+							["uptime"] = 57,
+							["auratype"] = "BUFF",
 						},
 						["Taste of Mana"] = {
 							["name"] = "Taste of Mana",
@@ -87898,11 +87884,11 @@ SkadaPerCharDB = {
 							["uptime"] = 91,
 							["auratype"] = "BUFF",
 						},
-						["Blazing Barrier"] = {
-							["name"] = "Blazing Barrier",
+						["Belo'vir's Final Stand"] = {
+							["name"] = "Belo'vir's Final Stand",
 							["active"] = 0,
-							["id"] = 235313,
-							["uptime"] = 57,
+							["id"] = 207283,
+							["uptime"] = 25,
 							["auratype"] = "BUFF",
 						},
 						["Shimmer"] = {
@@ -90232,10 +90218,10 @@ SkadaPerCharDB = {
 						},
 						[9] = {
 							["spells"] = {
-								[35395] = 84,
-								[228231] = 52,
-								[231372] = 25,
 								[218001] = 15,
+								[35395] = 84,
+								[231372] = 25,
+								[228231] = 52,
 							},
 							["amount"] = 176,
 						},
@@ -91376,18 +91362,18 @@ SkadaPerCharDB = {
 							["uptime"] = 278,
 							["auratype"] = "BUFF",
 						},
-						["Sunfire"] = {
-							["name"] = "Sunfire",
-							["active"] = 0,
-							["id"] = 164815,
-							["uptime"] = 17,
-							["auratype"] = "DEBUFF",
-						},
 						["Innervate"] = {
 							["name"] = "Innervate",
 							["active"] = 0,
 							["id"] = 29166,
 							["uptime"] = 20,
+							["auratype"] = "BUFF",
+						},
+						["Rejuvenation"] = {
+							["name"] = "Rejuvenation",
+							["active"] = 0,
+							["id"] = 774,
+							["uptime"] = 288,
 							["auratype"] = "BUFF",
 						},
 						["Essence of G'Hanir"] = {
@@ -91397,12 +91383,12 @@ SkadaPerCharDB = {
 							["uptime"] = 8,
 							["auratype"] = "BUFF",
 						},
-						["Rejuvenation"] = {
-							["name"] = "Rejuvenation",
+						["Sunfire"] = {
+							["name"] = "Sunfire",
 							["active"] = 0,
-							["id"] = 774,
-							["uptime"] = 288,
-							["auratype"] = "BUFF",
+							["id"] = 164815,
+							["uptime"] = 17,
+							["auratype"] = "DEBUFF",
 						},
 						["Bonds of Terror"] = {
 							["name"] = "Bonds of Terror",
@@ -91489,10 +91475,10 @@ SkadaPerCharDB = {
 									["spellid"] = 41220,
 								}, -- [2]
 								{
-									["spellid"] = 61999,
-									["ts"] = 1488344177.458,
-									["srcname"] = "Hadooken-Nesingwary",
 									["hp"] = 0,
+									["ts"] = 1488344177.458,
+									["spellid"] = 61999,
+									["srcname"] = "Hadooken-Nesingwary",
 								}, -- [3]
 								{
 									["absorb"] = 0,
@@ -91853,14 +91839,14 @@ SkadaPerCharDB = {
 							["class"] = "MONK",
 							["shielding"] = 0,
 						},
-						["Creature-0-3135-1520-18818-47244-000136547C"] = {
+						["Creature-0-3135-1520-18818-47244-000036547C"] = {
 							["role"] = "DAMAGER",
 							["name"] = "Nystic-Gnomeregan",
 							["amount"] = 34327,
 							["class"] = "MAGE",
 							["shielding"] = 0,
 						},
-						["Creature-0-3135-1520-18818-47244-000036547C"] = {
+						["Creature-0-3135-1520-18818-47244-000136547C"] = {
 							["role"] = "DAMAGER",
 							["name"] = "Nystic-Gnomeregan",
 							["amount"] = 34327,
@@ -92004,12 +91990,11 @@ SkadaPerCharDB = {
 							["class"] = "HUNTER",
 							["shielding"] = 0,
 						},
-						["Player-106-090304E3"] = {
-							["role"] = "DAMAGER",
-							["name"] = "Ekoria-Aggramar",
-							["amount"] = 3943098,
-							["class"] = "PALADIN",
+						["Creature-0-3135-1520-18818-98167-00003653F4"] = {
 							["shielding"] = 0,
+							["role"] = "NONE",
+							["name"] = "Void Tendril",
+							["amount"] = 105316,
 						},
 						["Player-1184-086BCE53"] = {
 							["role"] = "HEALER",
@@ -92018,17 +92003,18 @@ SkadaPerCharDB = {
 							["class"] = "DRUID",
 							["shielding"] = 0,
 						},
+						["Player-106-090304E3"] = {
+							["role"] = "DAMAGER",
+							["name"] = "Ekoria-Aggramar",
+							["amount"] = 3943098,
+							["class"] = "PALADIN",
+							["shielding"] = 0,
+						},
 						["Creature-0-3135-1520-18818-98167-00003653C7"] = {
 							["shielding"] = 0,
 							["role"] = "NONE",
 							["name"] = "Void Tendril",
 							["amount"] = 0,
-						},
-						["Creature-0-3135-1520-18818-98167-00003653F4"] = {
-							["shielding"] = 0,
-							["role"] = "NONE",
-							["name"] = "Void Tendril",
-							["amount"] = 105316,
 						},
 						["Creature-0-3135-1520-18818-113347-00003653F2"] = {
 							["shielding"] = 0,
@@ -94670,9 +94656,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488344156.43304,
 									["amount"] = -296426,
+									["hp"] = 2721814,
 									["spellid"] = 208860,
 									["srcname"] = "Dread Abomination",
-									["hp"] = 2721814,
 								}, -- [4]
 								{
 									["absorb"] = 0,
@@ -94685,9 +94671,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488344160.30406,
 									["amount"] = -4186586,
+									["hp"] = 1,
 									["spellid"] = 206369,
 									["srcname"] = "Xavius",
-									["hp"] = 1,
 								}, -- [6]
 								{
 									["spellname"] = "Bracnar dies",
@@ -98961,7 +98947,21 @@ SkadaPerCharDB = {
 					["done"] = 0,
 				},
 			},
-			["mobtaken"] = 1922951822,
+			["power"] = {
+				489, -- [1]
+				3124, -- [2]
+				1983, -- [3]
+				103, -- [4]
+				120, -- [5]
+				2902, -- [6]
+				94, -- [7]
+				[0] = 4819186,
+				[13] = 5602,
+				[18] = 3207,
+				[12] = 192,
+				[9] = 238,
+				[17] = 4485,
+			},
 			["damagetaken"] = 505661802,
 			["healing"] = 569098367,
 			["alertCount"] = 0,
@@ -101366,10 +101366,10 @@ SkadaPerCharDB = {
 						},
 						[9] = {
 							["spells"] = {
-								[218001] = 5,
-								[228231] = 10,
-								[35395] = 17,
 								[231372] = 6,
+								[218001] = 5,
+								[35395] = 17,
+								[228231] = 10,
 							},
 							["amount"] = 38,
 						},
@@ -103210,19 +103210,19 @@ SkadaPerCharDB = {
 							["uptime"] = 7,
 							["auratype"] = "BUFF",
 						},
-						["Mental Fortitude"] = {
-							["name"] = "Mental Fortitude",
-							["active"] = 0,
-							["id"] = 194022,
-							["uptime"] = 43,
-							["auratype"] = "BUFF",
-						},
 						["Accelerando"] = {
 							["name"] = "Accelerando",
 							["active"] = 0,
 							["id"] = 225719,
 							["uptime"] = 38,
 							["auratype"] = "BUFF",
+						},
+						["Vampiric Touch"] = {
+							["name"] = "Vampiric Touch",
+							["active"] = 0,
+							["id"] = 34914,
+							["uptime"] = 37,
+							["auratype"] = "DEBUFF",
 						},
 						["Shadowform"] = {
 							["name"] = "Shadowform",
@@ -103245,12 +103245,12 @@ SkadaPerCharDB = {
 							["uptime"] = 8,
 							["auratype"] = "BUFF",
 						},
-						["Vampiric Touch"] = {
-							["name"] = "Vampiric Touch",
+						["Mental Fortitude"] = {
+							["name"] = "Mental Fortitude",
 							["active"] = 0,
-							["id"] = 34914,
-							["uptime"] = 37,
-							["auratype"] = "DEBUFF",
+							["id"] = 194022,
+							["uptime"] = 43,
+							["auratype"] = "BUFF",
 						},
 						["Void Tendril: Mind Flay"] = {
 							["name"] = "Void Tendril: Mind Flay",
@@ -109766,10 +109766,10 @@ SkadaPerCharDB = {
 						},
 						[9] = {
 							["spells"] = {
-								[228231] = 14,
-								[35395] = 22,
-								[218001] = 15,
 								[231372] = 3,
+								[228231] = 14,
+								[218001] = 15,
+								[35395] = 22,
 							},
 							["amount"] = 54,
 						},
@@ -111103,17 +111103,21 @@ SkadaPerCharDB = {
 							["criticalmin"] = 305520,
 							["hitamount"] = 593244,
 						},
-						["Unstable Magic"] = {
-							["hitmin"] = 152760,
-							["id"] = 157977,
-							["min"] = 152760,
-							["damage"] = 962388,
-							["hitmax"] = 168036,
-							["hit"] = 6,
+						["Meteor"] = {
+							["hitmin"] = 91038,
+							["criticalamount"] = 1170240,
+							["id"] = 153564,
+							["damage"] = 1352316,
+							["max"] = 195040,
+							["totalhits"] = 8,
+							["min"] = 91038,
+							["criticalmax"] = 195040,
+							["critical"] = 6,
+							["hit"] = 2,
 							["school"] = 4,
-							["totalhits"] = 6,
-							["max"] = 168036,
-							["hitamount"] = 962388,
+							["hitmax"] = 91038,
+							["criticalmin"] = 195040,
+							["hitamount"] = 182076,
 						},
 						["Flamestrike"] = {
 							["hitmin"] = 175125,
@@ -111171,21 +111175,17 @@ SkadaPerCharDB = {
 							["criticalmin"] = 643650,
 							["hitamount"] = 589532,
 						},
-						["Aftershocks"] = {
-							["hitmin"] = 26802,
-							["criticalamount"] = 1194660,
-							["id"] = 194432,
-							["damage"] = 1786075,
-							["max"] = 72521,
-							["totalhits"] = 39,
-							["min"] = 26802,
-							["criticalmax"] = 72521,
-							["hitmax"] = 32284,
-							["hit"] = 20,
+						["Unstable Magic"] = {
+							["hitmin"] = 152760,
+							["id"] = 157977,
+							["min"] = 152760,
+							["damage"] = 962388,
+							["hitmax"] = 168036,
+							["hit"] = 6,
 							["school"] = 4,
-							["critical"] = 19,
-							["criticalmin"] = 56432,
-							["hitamount"] = 591415,
+							["totalhits"] = 6,
+							["max"] = 168036,
+							["hitamount"] = 962388,
 						},
 						["Ignite"] = {
 							["hitmin"] = 1050,
@@ -111227,21 +111227,21 @@ SkadaPerCharDB = {
 							["criticalmin"] = 49646,
 							["hitamount"] = 162214,
 						},
-						["Meteor"] = {
-							["hitmin"] = 91038,
-							["criticalamount"] = 1170240,
-							["id"] = 153564,
-							["damage"] = 1352316,
-							["max"] = 195040,
-							["totalhits"] = 8,
-							["min"] = 91038,
-							["criticalmax"] = 195040,
-							["critical"] = 6,
-							["hit"] = 2,
+						["Aftershocks"] = {
+							["hitmin"] = 26802,
+							["criticalamount"] = 1194660,
+							["id"] = 194432,
+							["damage"] = 1786075,
+							["max"] = 72521,
+							["totalhits"] = 39,
+							["min"] = 26802,
+							["criticalmax"] = 72521,
+							["hitmax"] = 32284,
+							["hit"] = 20,
 							["school"] = 4,
-							["hitmax"] = 91038,
-							["criticalmin"] = 195040,
-							["hitamount"] = 182076,
+							["critical"] = 19,
+							["criticalmin"] = 56432,
+							["hitamount"] = 591415,
 						},
 						["Phoenix's Flames"] = {
 							["criticalamount"] = 5494120,
@@ -111373,18 +111373,18 @@ SkadaPerCharDB = {
 							["uptime"] = 18,
 							["auratype"] = "BUFF",
 						},
-						["Vampiric Touch"] = {
-							["name"] = "Vampiric Touch",
-							["active"] = 0,
-							["id"] = 34914,
-							["uptime"] = 84,
-							["auratype"] = "DEBUFF",
-						},
 						["Mental Fortitude"] = {
 							["name"] = "Mental Fortitude",
 							["active"] = 0,
 							["id"] = 194022,
 							["uptime"] = 76,
+							["auratype"] = "BUFF",
+						},
+						["Accelerando"] = {
+							["name"] = "Accelerando",
+							["active"] = 0,
+							["id"] = 225719,
+							["uptime"] = 70,
 							["auratype"] = "BUFF",
 						},
 						["Shadowform"] = {
@@ -111408,12 +111408,12 @@ SkadaPerCharDB = {
 							["uptime"] = 8,
 							["auratype"] = "BUFF",
 						},
-						["Accelerando"] = {
-							["name"] = "Accelerando",
+						["Vampiric Touch"] = {
+							["name"] = "Vampiric Touch",
 							["active"] = 0,
-							["id"] = 225719,
-							["uptime"] = 70,
-							["auratype"] = "BUFF",
+							["id"] = 34914,
+							["uptime"] = 84,
+							["auratype"] = "DEBUFF",
 						},
 						["Void Tendril: Mind Flay"] = {
 							["name"] = "Void Tendril: Mind Flay",
@@ -112442,23 +112442,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343792.17301,
 									["amount"] = -167206,
+									["hp"] = 319861,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 319861,
 								}, -- [1]
 								{
 									["ts"] = 1488343792.17302,
 									["amount"] = -166235,
+									["hp"] = 153626,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 153626,
 								}, -- [2]
 								{
 									["ts"] = 1488343792.42503,
 									["amount"] = -157384,
+									["hp"] = 1,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1,
 								}, -- [3]
 								{
 									["spellname"] = "Aetheric dies",
@@ -112469,72 +112469,72 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343789.76705,
 									["amount"] = -164008,
+									["hp"] = 1863188,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1863188,
 								}, -- [5]
 								{
 									["ts"] = 1488343789.76706,
 									["amount"] = -151820,
+									["hp"] = 1711368,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1711368,
 								}, -- [6]
 								{
 									["ts"] = 1488343789.98107,
 									["amount"] = -166351,
+									["hp"] = 1545017,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1545017,
 								}, -- [7]
 								{
 									["ts"] = 1488343789.98108,
 									["amount"] = -155489,
+									["hp"] = 1389528,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1389528,
 								}, -- [8]
 								{
 									["ts"] = 1488343790.03409,
 									["amount"] = -167255,
+									["hp"] = 1222273,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1222273,
 								}, -- [9]
 								{
 									["ts"] = 1488343790.0341,
 									["amount"] = -152739,
+									["hp"] = 1069534,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1069534,
 								}, -- [10]
 								{
 									["ts"] = 1488343790.24211,
 									["amount"] = -164103,
+									["hp"] = 905431,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 905431,
 								}, -- [11]
 								{
 									["ts"] = 1488343790.24212,
 									["amount"] = -164133,
+									["hp"] = 741298,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 741298,
 								}, -- [12]
 								{
 									["ts"] = 1488343790.27313,
 									["amount"] = -163924,
+									["hp"] = 577374,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 577374,
 								}, -- [13]
 								{
 									["ts"] = 1488343790.27314,
 									["amount"] = -166414,
+									["hp"] = 410960,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 410960,
 								}, -- [14]
 								{
 									["absorb"] = 0,
@@ -113226,30 +113226,30 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343790.24301,
 									["amount"] = -158205,
+									["hp"] = 390466,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 390466,
 								}, -- [1]
 								{
 									["ts"] = 1488343790.24302,
 									["amount"] = -149756,
+									["hp"] = 240710,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 240710,
 								}, -- [2]
 								{
 									["ts"] = 1488343790.27403,
 									["amount"] = -156274,
+									["hp"] = 84436,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 84436,
 								}, -- [3]
 								{
 									["ts"] = 1488343790.27404,
 									["amount"] = -156229,
+									["hp"] = 1,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1,
 								}, -- [4]
 								{
 									["spellname"] = "Anaaya dies",
@@ -113260,23 +113260,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343789.73206,
 									["amount"] = -147046,
+									["hp"] = 1671929,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1671929,
 								}, -- [6]
 								{
 									["ts"] = 1488343789.73207,
 									["amount"] = -144966,
+									["hp"] = 1526963,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1526963,
 								}, -- [7]
 								{
 									["ts"] = 1488343789.76708,
 									["amount"] = -156844,
+									["hp"] = 1370119,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1370119,
 								}, -- [8]
 								{
 									["ts"] = 1488343789.84209,
@@ -113289,44 +113289,44 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343789.9811,
 									["amount"] = -146192,
+									["hp"] = 1296825,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1296825,
 								}, -- [10]
 								{
 									["ts"] = 1488343789.98111,
 									["amount"] = -152600,
+									["hp"] = 1144225,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1144225,
 								}, -- [11]
 								{
 									["ts"] = 1488343789.98112,
 									["amount"] = -155244,
+									["hp"] = 988981,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 988981,
 								}, -- [12]
 								{
 									["ts"] = 1488343790.03413,
 									["amount"] = -149752,
+									["hp"] = 839229,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 839229,
 								}, -- [13]
 								{
 									["ts"] = 1488343790.03414,
 									["amount"] = -146436,
+									["hp"] = 692793,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 692793,
 								}, -- [14]
 								{
 									["ts"] = 1488343790.03415,
 									["amount"] = -144122,
+									["hp"] = 548671,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 548671,
 								}, -- [15]
 								["pos"] = 6,
 							},
@@ -115665,79 +115665,79 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343789.76801,
 									["amount"] = -164339,
+									["hp"] = 1524757,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1524757,
 								}, -- [1]
 								{
 									["ts"] = 1488343789.98202,
 									["amount"] = -152917,
+									["hp"] = 1371840,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1371840,
 								}, -- [2]
 								{
 									["ts"] = 1488343789.98203,
 									["amount"] = -148847,
+									["hp"] = 1222993,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1222993,
 								}, -- [3]
 								{
 									["ts"] = 1488343789.98204,
 									["amount"] = -164055,
+									["hp"] = 1058938,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1058938,
 								}, -- [4]
 								{
 									["ts"] = 1488343790.03505,
 									["amount"] = -154410,
+									["hp"] = 904528,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 904528,
 								}, -- [5]
 								{
 									["ts"] = 1488343790.03506,
 									["amount"] = -150197,
+									["hp"] = 754331,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 754331,
 								}, -- [6]
 								{
 									["ts"] = 1488343790.03507,
 									["amount"] = -163585,
+									["hp"] = 590746,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 590746,
 								}, -- [7]
 								{
 									["ts"] = 1488343790.03508,
 									["amount"] = -156487,
+									["hp"] = 434259,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 434259,
 								}, -- [8]
 								{
 									["ts"] = 1488343790.03509,
 									["amount"] = -156597,
+									["hp"] = 277662,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 277662,
 								}, -- [9]
 								{
 									["ts"] = 1488343790.0351,
 									["amount"] = -149075,
+									["hp"] = 128587,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 128587,
 								}, -- [10]
 								{
 									["ts"] = 1488343790.24311,
 									["amount"] = -156649,
+									["hp"] = 1,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1,
 								}, -- [11]
 								{
 									["spellname"] = "Renderin dies",
@@ -115748,23 +115748,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343789.73213,
 									["amount"] = -149378,
+									["hp"] = 2008374,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 2008374,
 								}, -- [13]
 								{
 									["ts"] = 1488343789.73214,
 									["amount"] = -162619,
+									["hp"] = 1845755,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1845755,
 								}, -- [14]
 								{
 									["ts"] = 1488343789.73215,
 									["amount"] = -156659,
+									["hp"] = 1689096,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1689096,
 								}, -- [15]
 								["pos"] = 13,
 							},
@@ -115866,23 +115866,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343790.03501,
 									["amount"] = -161943,
+									["hp"] = 277539,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 277539,
 								}, -- [1]
 								{
 									["ts"] = 1488343790.24302,
 									["amount"] = -158978,
+									["hp"] = 118561,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 118561,
 								}, -- [2]
 								{
 									["ts"] = 1488343790.24303,
 									["amount"] = -156398,
+									["hp"] = 1,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1,
 								}, -- [3]
 								{
 									["spellname"] = "Arshia dies",
@@ -115893,16 +115893,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343789.73205,
 									["amount"] = -154543,
+									["hp"] = 1774211,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1774211,
 								}, -- [5]
 								{
 									["ts"] = 1488343789.76706,
 									["amount"] = -158957,
+									["hp"] = 1615254,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1615254,
 								}, -- [6]
 								{
 									["absorb"] = 0,
@@ -115915,58 +115915,58 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343789.98108,
 									["amount"] = -154907,
+									["hp"] = 1541498,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1541498,
 								}, -- [8]
 								{
 									["ts"] = 1488343789.98109,
 									["amount"] = -152228,
+									["hp"] = 1389270,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1389270,
 								}, -- [9]
 								{
 									["ts"] = 1488343790.0341,
 									["amount"] = -163362,
+									["hp"] = 1225908,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1225908,
 								}, -- [10]
 								{
 									["ts"] = 1488343790.03411,
 									["amount"] = -161358,
+									["hp"] = 1064550,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1064550,
 								}, -- [11]
 								{
 									["ts"] = 1488343790.03412,
 									["amount"] = -152377,
+									["hp"] = 912173,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 912173,
 								}, -- [12]
 								{
 									["ts"] = 1488343790.03413,
 									["amount"] = -155278,
+									["hp"] = 756895,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 756895,
 								}, -- [13]
 								{
 									["ts"] = 1488343790.03414,
 									["amount"] = -162990,
+									["hp"] = 593905,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 593905,
 								}, -- [14]
 								{
 									["ts"] = 1488343790.03415,
 									["amount"] = -154423,
+									["hp"] = 439482,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 439482,
 								}, -- [15]
 								["pos"] = 5,
 							},
@@ -116686,30 +116686,30 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343789.73301,
 									["amount"] = -162881,
+									["hp"] = 1292987,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1292987,
 								}, -- [1]
 								{
 									["ts"] = 1488343789.73302,
 									["amount"] = -157381,
+									["hp"] = 1135606,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1135606,
 								}, -- [2]
 								{
 									["ts"] = 1488343789.73303,
 									["amount"] = -155879,
+									["hp"] = 979727,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 979727,
 								}, -- [3]
 								{
 									["ts"] = 1488343789.76804,
 									["amount"] = -154083,
+									["hp"] = 825644,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 825644,
 								}, -- [4]
 								{
 									["absorb"] = -48367,
@@ -116770,9 +116770,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343790.24312,
 									["amount"] = -152175,
+									["hp"] = 1,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1,
 								}, -- [12]
 								{
 									["spellname"] = "Indianmajik dies",
@@ -116783,16 +116783,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343789.73214,
 									["amount"] = -149498,
+									["hp"] = 1605562,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1605562,
 								}, -- [14]
 								{
 									["ts"] = 1488343789.73215,
 									["amount"] = -149694,
+									["hp"] = 1455868,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1455868,
 								}, -- [15]
 								["pos"] = 14,
 							},
@@ -116924,9 +116924,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343790.27401,
 									["amount"] = -150089,
+									["hp"] = 1,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1,
 								}, -- [1]
 								{
 									["spellname"] = "Warshaak dies",
@@ -116937,93 +116937,93 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343789.73203,
 									["amount"] = -139714,
+									["hp"] = 1811629,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1811629,
 								}, -- [3]
 								{
 									["ts"] = 1488343789.73204,
 									["amount"] = -140698,
+									["hp"] = 1670931,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1670931,
 								}, -- [4]
 								{
 									["ts"] = 1488343789.76705,
 									["amount"] = -140749,
+									["hp"] = 1530182,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1530182,
 								}, -- [5]
 								{
 									["ts"] = 1488343789.76706,
 									["amount"] = -141391,
+									["hp"] = 1388791,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1388791,
 								}, -- [6]
 								{
 									["ts"] = 1488343789.98107,
 									["amount"] = -141587,
+									["hp"] = 1247204,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1247204,
 								}, -- [7]
 								{
 									["ts"] = 1488343789.98108,
 									["amount"] = -151526,
+									["hp"] = 1095678,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 1095678,
 								}, -- [8]
 								{
 									["ts"] = 1488343790.03409,
 									["amount"] = -139712,
+									["hp"] = 955966,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 955966,
 								}, -- [9]
 								{
 									["ts"] = 1488343790.0341,
 									["amount"] = -148973,
+									["hp"] = 806993,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 806993,
 								}, -- [10]
 								{
 									["ts"] = 1488343790.03411,
 									["amount"] = -141144,
+									["hp"] = 665849,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 665849,
 								}, -- [11]
 								{
 									["ts"] = 1488343790.03412,
 									["amount"] = -138974,
+									["hp"] = 526875,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 526875,
 								}, -- [12]
 								{
 									["ts"] = 1488343790.03413,
 									["amount"] = -149665,
+									["hp"] = 377210,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 377210,
 								}, -- [13]
 								{
 									["ts"] = 1488343790.24214,
 									["amount"] = -142876,
+									["hp"] = 234334,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 234334,
 								}, -- [14]
 								{
 									["ts"] = 1488343790.24215,
 									["amount"] = -144017,
+									["hp"] = 90317,
 									["spellid"] = 222086,
 									["srcname"] = "Nightmare Amalgamation",
-									["hp"] = 90317,
 								}, -- [15]
 								["pos"] = 3,
 							},
@@ -117616,22 +117616,8 @@ SkadaPerCharDB = {
 			["time"] = 203,
 			["interrupts"] = 1,
 			["mobdone"] = 285901950,
-			["power"] = {
-				361, -- [1]
-				2127, -- [2]
-				1193, -- [3]
-				59, -- [4]
-				65, -- [5]
-				1535, -- [6]
-				52, -- [7]
-				[0] = 2959151,
-				[17] = 3672,
-				[18] = 1608,
-				[12] = 128,
-				[9] = 144,
-				[13] = 3470,
-			},
 			["gotboss"] = true,
+			["mobtaken"] = 1252600593,
 			["damage"] = 1252600593,
 			["players"] = {
 				{
@@ -118049,13 +118035,13 @@ SkadaPerCharDB = {
 					["first"] = 1488343471,
 					["dispells"] = 0,
 					["damagetakenspells"] = {
-						["Desiccating Stomp"] = {
+						["Nightmares"] = {
 							["crushing"] = 0,
-							["id"] = 211073,
-							["damage"] = 1328939,
-							["max"] = 1328939,
-							["name"] = "Desiccating Stomp",
-							["min"] = 1328939,
+							["id"] = 214712,
+							["damage"] = 155510,
+							["max"] = 155510,
+							["name"] = "Nightmares",
+							["min"] = 155510,
 							["totalhits"] = 1,
 							["critical"] = 0,
 							["blocked"] = 0,
@@ -118079,13 +118065,13 @@ SkadaPerCharDB = {
 							["glancing"] = 0,
 							["absorbed"] = 513534,
 						},
-						["Nightmares"] = {
+						["Nightmare Brambles"] = {
 							["crushing"] = 0,
-							["id"] = 214712,
-							["damage"] = 155510,
-							["max"] = 155510,
-							["name"] = "Nightmares",
-							["min"] = 155510,
+							["id"] = 210337,
+							["damage"] = 83316,
+							["max"] = 83316,
+							["name"] = "Nightmare Brambles",
+							["min"] = 83316,
 							["totalhits"] = 1,
 							["critical"] = 0,
 							["blocked"] = 0,
@@ -118124,13 +118110,13 @@ SkadaPerCharDB = {
 							["glancing"] = 0,
 							["absorbed"] = 0,
 						},
-						["Nightmare Brambles"] = {
+						["Desiccating Stomp"] = {
 							["crushing"] = 0,
-							["id"] = 210337,
-							["damage"] = 83316,
-							["max"] = 83316,
-							["name"] = "Nightmare Brambles",
-							["min"] = 83316,
+							["id"] = 211073,
+							["damage"] = 1328939,
+							["max"] = 1328939,
+							["name"] = "Desiccating Stomp",
+							["min"] = 1328939,
 							["totalhits"] = 1,
 							["critical"] = 0,
 							["blocked"] = 0,
@@ -118911,6 +118897,22 @@ SkadaPerCharDB = {
 							["totalhits"] = 21,
 							["damage"] = 0,
 						},
+						["Mangle"] = {
+							["hitmin"] = 148915,
+							["criticalamount"] = 1316187,
+							["id"] = 33917,
+							["damage"] = 2437904,
+							["max"] = 398833,
+							["totalhits"] = 11,
+							["min"] = 148915,
+							["criticalmax"] = 398833,
+							["critical"] = 4,
+							["hit"] = 7,
+							["school"] = 1,
+							["hitmax"] = 199779,
+							["criticalmin"] = 294186,
+							["hitamount"] = 1121717,
+						},
 						["Thrash"] = {
 							["hitmin"] = 7163,
 							["criticalamount"] = 1562936,
@@ -118942,22 +118944,6 @@ SkadaPerCharDB = {
 							["hitmax"] = 39314,
 							["criticalmin"] = 60977,
 							["hitamount"] = 293703,
-						},
-						["Mangle"] = {
-							["hitmin"] = 148915,
-							["criticalamount"] = 1316187,
-							["id"] = 33917,
-							["damage"] = 2437904,
-							["max"] = 398833,
-							["totalhits"] = 11,
-							["min"] = 148915,
-							["criticalmax"] = 398833,
-							["critical"] = 4,
-							["hit"] = 7,
-							["school"] = 1,
-							["hitmax"] = 199779,
-							["criticalmin"] = 294186,
-							["hitamount"] = 1121717,
 						},
 						["Rage of the Sleeper"] = {
 							["hitmin"] = 128050,
@@ -119478,10 +119464,10 @@ SkadaPerCharDB = {
 						},
 						[9] = {
 							["spells"] = {
-								[35395] = 50,
-								[228231] = 34,
-								[231372] = 16,
 								[218001] = 5,
+								[35395] = 50,
+								[231372] = 16,
+								[228231] = 34,
 							},
 							["amount"] = 105,
 						},
@@ -119520,21 +119506,6 @@ SkadaPerCharDB = {
 							["glancing"] = 0,
 							["absorbed"] = 289088,
 						},
-						["Nightmare Brambles"] = {
-							["crushing"] = 0,
-							["id"] = 214308,
-							["damage"] = 4496552,
-							["max"] = 576808,
-							["name"] = "Nightmare Brambles",
-							["min"] = 60035,
-							["totalhits"] = 13,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["school"] = 32,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 36136,
-						},
 						["Nightmares"] = {
 							["crushing"] = 0,
 							["id"] = 214712,
@@ -119543,6 +119514,21 @@ SkadaPerCharDB = {
 							["name"] = "Nightmares",
 							["min"] = 283951,
 							["totalhits"] = 2,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 32,
+							["resisted"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+						},
+						["Desiccating Stomp"] = {
+							["crushing"] = 0,
+							["id"] = 211073,
+							["damage"] = 1618194,
+							["max"] = 1618194,
+							["name"] = "Desiccating Stomp",
+							["min"] = 1618194,
+							["totalhits"] = 1,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["school"] = 32,
@@ -119565,20 +119551,20 @@ SkadaPerCharDB = {
 							["glancing"] = 0,
 							["absorbed"] = 180680,
 						},
-						["Desiccating Stomp"] = {
+						["Nightmare Brambles"] = {
 							["crushing"] = 0,
-							["id"] = 211073,
-							["damage"] = 1618194,
-							["max"] = 1618194,
-							["name"] = "Desiccating Stomp",
-							["min"] = 1618194,
-							["totalhits"] = 1,
+							["id"] = 214308,
+							["damage"] = 4496552,
+							["max"] = 576808,
+							["name"] = "Nightmare Brambles",
+							["min"] = 60035,
+							["totalhits"] = 13,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["school"] = 32,
 							["resisted"] = 0,
 							["glancing"] = 0,
-							["absorbed"] = 0,
+							["absorbed"] = 36136,
 						},
 						["Nightmare Buffet"] = {
 							["crushing"] = 0,
@@ -119892,9 +119878,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343513.45804,
 									["amount"] = -165701,
+									["hp"] = 1229490,
 									["spellid"] = 211196,
 									["srcname"] = "Rotten Drake",
-									["hp"] = 1229490,
 								}, -- [4]
 								{
 									["spellid"] = 210315,
@@ -119919,16 +119905,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343514.04408,
 									["amount"] = -44749,
+									["hp"] = 479427,
 									["spellid"] = 210279,
 									["srcname"] = "Cenarius",
-									["hp"] = 479427,
 								}, -- [8]
 								{
 									["ts"] = 1488343514.46209,
 									["amount"] = -168438,
+									["hp"] = 310989,
 									["spellid"] = 211196,
 									["srcname"] = "Rotten Drake",
-									["hp"] = 310989,
 								}, -- [9]
 								{
 									["absorb"] = 0,
@@ -119941,9 +119927,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343514.70111,
 									["amount"] = -2160,
+									["hp"] = 1084919,
 									["spellid"] = 210342,
 									["srcname"] = "Cenarius",
-									["hp"] = 1084919,
 								}, -- [11]
 								{
 									["absorb"] = 0,
@@ -119964,16 +119950,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343515.29214,
 									["amount"] = -203552,
+									["hp"] = 970136,
 									["spellid"] = 211178,
 									["srcname"] = "Rotten Drake",
-									["hp"] = 970136,
 								}, -- [14]
 								{
 									["ts"] = 1488343515.47315,
 									["amount"] = -189396,
+									["hp"] = 780740,
 									["spellid"] = 211196,
 									["srcname"] = "Rotten Drake",
-									["hp"] = 780740,
 								}, -- [15]
 								["pos"] = 4,
 							},
@@ -120491,18 +120477,18 @@ SkadaPerCharDB = {
 							["uptime"] = 60,
 							["auratype"] = "BUFF",
 						},
+						["Regrowth"] = {
+							["name"] = "Regrowth",
+							["active"] = 0,
+							["id"] = 8936,
+							["uptime"] = 120,
+							["auratype"] = "BUFF",
+						},
 						["Spring Blossoms"] = {
 							["name"] = "Spring Blossoms",
 							["active"] = 0,
 							["id"] = 207386,
 							["uptime"] = 65,
-							["auratype"] = "BUFF",
-						},
-						["Tranquility"] = {
-							["name"] = "Tranquility",
-							["active"] = 0,
-							["id"] = 740,
-							["uptime"] = 7,
 							["auratype"] = "BUFF",
 						},
 						["Sunfire"] = {
@@ -120575,11 +120561,11 @@ SkadaPerCharDB = {
 							["uptime"] = 174,
 							["auratype"] = "BUFF",
 						},
-						["Regrowth"] = {
-							["name"] = "Regrowth",
+						["Tranquility"] = {
+							["name"] = "Tranquility",
 							["active"] = 0,
-							["id"] = 8936,
-							["uptime"] = 120,
+							["id"] = 740,
+							["uptime"] = 7,
 							["auratype"] = "BUFF",
 						},
 						["Resurrecting"] = {
@@ -120619,6 +120605,18 @@ SkadaPerCharDB = {
 							["critical"] = 2,
 							["absorbed"] = 0,
 						},
+						["Leech"] = {
+							["shielding"] = 0,
+							["id"] = 143924,
+							["healing"] = 859814,
+							["min"] = 0,
+							["name"] = "Leech",
+							["hits"] = 162,
+							["overhealing"] = 986263,
+							["max"] = 47535,
+							["critical"] = 0,
+							["absorbed"] = 0,
+						},
 						["Tranquility"] = {
 							["shielding"] = 0,
 							["id"] = 157982,
@@ -120629,18 +120627,6 @@ SkadaPerCharDB = {
 							["overhealing"] = 6195254,
 							["max"] = 171348,
 							["critical"] = 34,
-							["absorbed"] = 0,
-						},
-						["Regrowth"] = {
-							["shielding"] = 0,
-							["id"] = 8936,
-							["healing"] = 5474614,
-							["min"] = 0,
-							["name"] = "Regrowth",
-							["hits"] = 165,
-							["overhealing"] = 2929582,
-							["max"] = 889548,
-							["critical"] = 59,
 							["absorbed"] = 0,
 						},
 						["Ysera's Gift"] = {
@@ -120775,16 +120761,16 @@ SkadaPerCharDB = {
 							["critical"] = 25,
 							["absorbed"] = 0,
 						},
-						["Leech"] = {
+						["Regrowth"] = {
 							["shielding"] = 0,
-							["id"] = 143924,
-							["healing"] = 859814,
+							["id"] = 8936,
+							["healing"] = 5474614,
 							["min"] = 0,
-							["name"] = "Leech",
-							["hits"] = 162,
-							["overhealing"] = 986263,
-							["max"] = 47535,
-							["critical"] = 0,
+							["name"] = "Regrowth",
+							["hits"] = 165,
+							["overhealing"] = 2929582,
+							["max"] = 889548,
+							["critical"] = 59,
 							["absorbed"] = 0,
 						},
 					},
@@ -122678,14 +122664,14 @@ SkadaPerCharDB = {
 					["power"] = {
 						[13] = {
 							["spells"] = {
-								[15407] = 334,
+								[205448] = 576,
 								[208232] = 16,
 								[211649] = 162,
-								[34914] = 54,
+								[15407] = 334,
 								[190714] = 120,
 								[589] = 36,
 								[8092] = 705,
-								[205448] = 576,
+								[34914] = 54,
 							},
 							["amount"] = 2003,
 						},
@@ -124818,18 +124804,18 @@ SkadaPerCharDB = {
 							["uptime"] = 62,
 							["auratype"] = "BUFF",
 						},
-						["Windburst"] = {
-							["name"] = "Windburst",
-							["active"] = 0,
-							["id"] = 204477,
-							["uptime"] = 62,
-							["auratype"] = "BUFF",
-						},
 						["Explosive Shot"] = {
 							["name"] = "Explosive Shot",
 							["active"] = 0,
 							["id"] = 212431,
 							["uptime"] = 3,
+							["auratype"] = "BUFF",
+						},
+						["Lock and Load"] = {
+							["name"] = "Lock and Load",
+							["active"] = 0,
+							["id"] = 194594,
+							["uptime"] = 25,
 							["auratype"] = "BUFF",
 						},
 						["Frost Enchant"] = {
@@ -124839,11 +124825,11 @@ SkadaPerCharDB = {
 							["uptime"] = 20,
 							["auratype"] = "BUFF",
 						},
-						["Lock and Load"] = {
-							["name"] = "Lock and Load",
+						["Windburst"] = {
+							["name"] = "Windburst",
 							["active"] = 0,
-							["id"] = 194594,
-							["uptime"] = 25,
+							["id"] = 204477,
+							["uptime"] = 62,
 							["auratype"] = "BUFF",
 						},
 						["Aspect of the Cheetah"] = {
@@ -125627,13 +125613,13 @@ SkadaPerCharDB = {
 							["glancing"] = 0,
 							["absorbed"] = 252952,
 						},
-						["Desiccating Stomp"] = {
+						["Nightmares"] = {
 							["crushing"] = 0,
-							["id"] = 211073,
-							["damage"] = 1465188,
-							["max"] = 1465188,
-							["name"] = "Desiccating Stomp",
-							["min"] = 1465188,
+							["id"] = 214712,
+							["damage"] = 264515,
+							["max"] = 264515,
+							["name"] = "Nightmares",
+							["min"] = 264515,
 							["totalhits"] = 1,
 							["critical"] = 0,
 							["blocked"] = 0,
@@ -125672,13 +125658,13 @@ SkadaPerCharDB = {
 							["glancing"] = 0,
 							["absorbed"] = 0,
 						},
-						["Nightmare Brambles"] = {
+						["Desiccating Stomp"] = {
 							["crushing"] = 0,
-							["id"] = 210337,
-							["damage"] = 42798,
-							["max"] = 42798,
-							["name"] = "Nightmare Brambles",
-							["min"] = 42798,
+							["id"] = 211073,
+							["damage"] = 1465188,
+							["max"] = 1465188,
+							["name"] = "Desiccating Stomp",
+							["min"] = 1465188,
 							["totalhits"] = 1,
 							["critical"] = 0,
 							["blocked"] = 0,
@@ -125702,13 +125688,13 @@ SkadaPerCharDB = {
 							["glancing"] = 0,
 							["absorbed"] = 36136,
 						},
-						["Nightmares"] = {
+						["Nightmare Brambles"] = {
 							["crushing"] = 0,
-							["id"] = 214712,
-							["damage"] = 264515,
-							["max"] = 264515,
-							["name"] = "Nightmares",
-							["min"] = 264515,
+							["id"] = 210337,
+							["damage"] = 42798,
+							["max"] = 42798,
+							["name"] = "Nightmare Brambles",
+							["min"] = 42798,
 							["totalhits"] = 1,
 							["critical"] = 0,
 							["blocked"] = 0,
@@ -126355,9 +126341,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343604.05201,
 									["amount"] = -278631,
+									["hp"] = 0,
 									["spellid"] = 210279,
 									["srcname"] = "Cenarius",
-									["hp"] = 0,
 								}, -- [1]
 								{
 									["absorb"] = 0,
@@ -126378,9 +126364,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343606.04504,
 									["amount"] = -288862,
+									["hp"] = 0,
 									["spellid"] = 210279,
 									["srcname"] = "Cenarius",
-									["hp"] = 0,
 								}, -- [4]
 								{
 									["absorb"] = 0,
@@ -126393,9 +126379,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343608.05706,
 									["amount"] = -287375,
+									["hp"] = 0,
 									["spellid"] = 210279,
 									["srcname"] = "Cenarius",
-									["hp"] = 0,
 								}, -- [6]
 								{
 									["absorb"] = 0,
@@ -126408,9 +126394,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343610.06408,
 									["amount"] = -290920,
+									["hp"] = 0,
 									["spellid"] = 210279,
 									["srcname"] = "Cenarius",
-									["hp"] = 0,
 								}, -- [8]
 								{
 									["spellname"] = "Ayophes dies",
@@ -126453,9 +126439,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343602.04214,
 									["amount"] = -274371,
+									["hp"] = 0,
 									["spellid"] = 210279,
 									["srcname"] = "Cenarius",
-									["hp"] = 0,
 								}, -- [14]
 								{
 									["absorb"] = 0,
@@ -127887,6 +127873,21 @@ SkadaPerCharDB = {
 					["first"] = 1488343472,
 					["dispells"] = 0,
 					["damagetakenspells"] = {
+						["Nightmares"] = {
+							["crushing"] = 0,
+							["id"] = 214712,
+							["damage"] = 869936,
+							["max"] = 291718,
+							["name"] = "Nightmares",
+							["min"] = 286782,
+							["totalhits"] = 3,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 32,
+							["resisted"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+						},
 						["Creeping Nightmares"] = {
 							["crushing"] = 0,
 							["id"] = 210279,
@@ -127901,21 +127902,6 @@ SkadaPerCharDB = {
 							["resisted"] = 0,
 							["glancing"] = 0,
 							["absorbed"] = 160588,
-						},
-						["Nightmare Brambles"] = {
-							["crushing"] = 0,
-							["id"] = 210337,
-							["damage"] = 540958,
-							["max"] = 96711,
-							["name"] = "Nightmare Brambles",
-							["min"] = 83220,
-							["totalhits"] = 6,
-							["critical"] = 0,
-							["blocked"] = 0,
-							["school"] = 32,
-							["resisted"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 						},
 						["Nightmare Buffet"] = {
 							["crushing"] = 0,
@@ -127932,14 +127918,14 @@ SkadaPerCharDB = {
 							["glancing"] = 0,
 							["absorbed"] = 0,
 						},
-						["Nightmares"] = {
+						["Nightmare Brambles"] = {
 							["crushing"] = 0,
-							["id"] = 214712,
-							["damage"] = 869936,
-							["max"] = 291718,
-							["name"] = "Nightmares",
-							["min"] = 286782,
-							["totalhits"] = 3,
+							["id"] = 210337,
+							["damage"] = 540958,
+							["max"] = 96711,
+							["name"] = "Nightmare Brambles",
+							["min"] = 83220,
+							["totalhits"] = 6,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["school"] = 32,
@@ -129000,9 +128986,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343514.46302,
 									["amount"] = -175205,
+									["hp"] = 761851,
 									["spellid"] = 211196,
 									["srcname"] = "Rotten Drake",
-									["hp"] = 761851,
 								}, -- [2]
 								{
 									["absorb"] = 0,
@@ -129039,23 +129025,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343515.29307,
 									["amount"] = -212930,
+									["hp"] = 657449,
 									["spellid"] = 211178,
 									["srcname"] = "Rotten Drake",
-									["hp"] = 657449,
 								}, -- [7]
 								{
 									["ts"] = 1488343515.45008,
 									["amount"] = -31024,
+									["hp"] = 626425,
 									["spellid"] = 210342,
 									["srcname"] = "Cenarius",
-									["hp"] = 626425,
 								}, -- [8]
 								{
 									["ts"] = 1488343515.47409,
 									["amount"] = -196850,
+									["hp"] = 429575,
 									["spellid"] = 211196,
 									["srcname"] = "Rotten Drake",
-									["hp"] = 429575,
 								}, -- [9]
 								{
 									["spellid"] = 210315,
@@ -129066,9 +129052,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343515.66611,
 									["amount"] = -67314,
+									["hp"] = 161387,
 									["spellid"] = 210342,
 									["srcname"] = "Cenarius",
-									["hp"] = 161387,
 								}, -- [11]
 								{
 									["spellid"] = 214308,
@@ -129083,17 +129069,17 @@ SkadaPerCharDB = {
 									["spellid"] = 41220,
 								}, -- [13]
 								{
-									["spellid"] = 20484,
-									["ts"] = 1488343533.344,
-									["srcname"] = "Outtkast-Nazgrel",
 									["hp"] = 0,
+									["ts"] = 1488343533.344,
+									["spellid"] = 20484,
+									["srcname"] = "Outtkast-Nazgrel",
 								}, -- [14]
 								{
 									["ts"] = 1488343514.14615,
 									["amount"] = -31024,
+									["hp"] = 591390,
 									["spellid"] = 210342,
 									["srcname"] = "Cenarius",
-									["hp"] = 591390,
 								}, -- [15]
 								["pos"] = 15,
 							},
@@ -129104,14 +129090,14 @@ SkadaPerCharDB = {
 					["power"] = {
 						[13] = {
 							["spells"] = {
-								[34914] = 54,
+								[205448] = 592,
 								[208232] = 16,
 								[211649] = 126,
-								[15407] = 210,
+								[34914] = 54,
 								[190714] = 255,
 								[589] = 4,
 								[8092] = 210,
-								[205448] = 592,
+								[15407] = 210,
 							},
 							["amount"] = 1467,
 						},
@@ -129277,11 +129263,11 @@ SkadaPerCharDB = {
 						["Cenarius"] = 51534785,
 					},
 					["auras"] = {
-						["Bombardment"] = {
-							["name"] = "Bombardment",
+						["Survival of the Fittest"] = {
+							["name"] = "Survival of the Fittest",
 							["active"] = 0,
-							["id"] = 82921,
-							["uptime"] = 20,
+							["id"] = 190515,
+							["uptime"] = 8,
 							["auratype"] = "BUFF",
 						},
 						["Trueshot"] = {
@@ -129291,11 +129277,11 @@ SkadaPerCharDB = {
 							["uptime"] = 30,
 							["auratype"] = "BUFF",
 						},
-						["Survival of the Fittest"] = {
-							["name"] = "Survival of the Fittest",
+						["Posthaste"] = {
+							["name"] = "Posthaste",
 							["active"] = 0,
-							["id"] = 190515,
-							["uptime"] = 8,
+							["id"] = 118922,
+							["uptime"] = 10,
 							["auratype"] = "BUFF",
 						},
 						["Bullseye"] = {
@@ -129368,11 +129354,11 @@ SkadaPerCharDB = {
 							["uptime"] = 59,
 							["auratype"] = "BUFF",
 						},
-						["Posthaste"] = {
-							["name"] = "Posthaste",
+						["Bombardment"] = {
+							["name"] = "Bombardment",
 							["active"] = 0,
-							["id"] = 118922,
-							["uptime"] = 10,
+							["id"] = 82921,
+							["uptime"] = 20,
 							["auratype"] = "BUFF",
 						},
 						["Temporal Displacement"] = {
@@ -130504,23 +130490,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343592.43201,
 									["amount"] = -36384,
+									["srcname"] = "Cenarius",
 									["spellid"] = 210342,
 									["hp"] = 1627817,
-									["srcname"] = "Cenarius",
 								}, -- [1]
 								{
 									["ts"] = 1488343592.98002,
 									["amount"] = -15494,
+									["hp"] = 1612323,
 									["spellid"] = 210342,
 									["srcname"] = "Cenarius",
-									["hp"] = 1612323,
 								}, -- [2]
 								{
 									["ts"] = 1488343594.05303,
 									["amount"] = -52944,
+									["hp"] = 1559379,
 									["spellid"] = 210279,
 									["srcname"] = "Cenarius",
-									["hp"] = 1559379,
 								}, -- [3]
 								{
 									["ts"] = 1488343594.30404,
@@ -130533,23 +130519,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343594.99305,
 									["amount"] = -15494,
+									["hp"] = 1598621,
 									["spellid"] = 210342,
 									["srcname"] = "Cenarius",
-									["hp"] = 1598621,
 								}, -- [5]
 								{
 									["ts"] = 1488343595.38706,
 									["amount"] = -56525,
+									["hp"] = 1542096,
 									["spellid"] = 210342,
 									["srcname"] = "Cenarius",
-									["hp"] = 1542096,
 								}, -- [6]
 								{
 									["ts"] = 1488343596.04107,
 									["amount"] = -108786,
+									["hp"] = 1433310,
 									["spellid"] = 211178,
 									["srcname"] = "Rotten Drake",
-									["hp"] = 1433310,
 								}, -- [7]
 								{
 									["spellid"] = 214308,
@@ -130578,9 +130564,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343591.40612,
 									["amount"] = -56525,
+									["hp"] = 1712887,
 									["spellid"] = 210342,
 									["srcname"] = "Cenarius",
-									["hp"] = 1712887,
 								}, -- [12]
 								{
 									["absorb"] = 0,
@@ -130593,16 +130579,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1488343592.05714,
 									["amount"] = -47791,
+									["hp"] = 1692464,
 									["spellid"] = 210279,
 									["srcname"] = "Cenarius",
-									["hp"] = 1692464,
 								}, -- [14]
 								{
 									["ts"] = 1488343592.37215,
 									["amount"] = -28263,
+									["hp"] = 1664201,
 									["spellid"] = 210342,
 									["srcname"] = "Cenarius",
-									["hp"] = 1664201,
 								}, -- [15]
 								["pos"] = 12,
 							},
@@ -131759,7 +131745,21 @@ SkadaPerCharDB = {
 					["done"] = 5355233,
 				},
 			},
-			["mobtaken"] = 1252600593,
+			["power"] = {
+				361, -- [1]
+				2127, -- [2]
+				1193, -- [3]
+				59, -- [4]
+				65, -- [5]
+				1535, -- [6]
+				52, -- [7]
+				[0] = 2959151,
+				[17] = 3672,
+				[18] = 1608,
+				[12] = 128,
+				[9] = 144,
+				[13] = 3470,
+			},
 			["damagetaken"] = 328753474,
 			["healing"] = 373423189,
 			["alertCount"] = 18,
@@ -131780,21 +131780,8 @@ SkadaPerCharDB = {
 			["time"] = 182,
 			["interrupts"] = 7,
 			["mobdone"] = 132149192,
-			["power"] = {
-				1575, -- [1]
-				1709, -- [2]
-				200, -- [3]
-				[0] = 2156118,
-				[13] = 1365,
-				[7] = 43,
-				[17] = 4135,
-				[5] = 37,
-				[9] = 140,
-				[6] = 1205,
-				[12] = 82,
-				[18] = 968,
-			},
 			["gotboss"] = true,
+			["mobtaken"] = 1031470170,
 			["damage"] = 1031470170,
 			["players"] = {
 				{
@@ -132950,14 +132937,14 @@ SkadaPerCharDB = {
 					["power"] = {
 						[13] = {
 							["spells"] = {
-								[34914] = 132,
+								[205448] = 208,
 								[208232] = 89,
 								[211649] = 143,
-								[15407] = 165,
+								[34914] = 132,
 								[190714] = 150,
 								[589] = 88,
 								[8092] = 390,
-								[205448] = 208,
+								[15407] = 165,
 							},
 							["amount"] = 1365,
 						},
@@ -134963,10 +134950,10 @@ SkadaPerCharDB = {
 						},
 						[9] = {
 							["spells"] = {
-								[228231] = 34,
-								[35395] = 38,
-								[231372] = 9,
 								[218001] = 15,
+								[228231] = 34,
+								[231372] = 9,
+								[35395] = 38,
 							},
 							["amount"] = 96,
 						},
@@ -140857,6 +140844,18 @@ SkadaPerCharDB = {
 							["totalhits"] = 17,
 							["damage"] = 0,
 						},
+						["Mangle"] = {
+							["hitmin"] = 128572,
+							["id"] = 33917,
+							["min"] = 128572,
+							["damage"] = 441122,
+							["hitmax"] = 162707,
+							["hit"] = 3,
+							["school"] = 1,
+							["totalhits"] = 3,
+							["max"] = 162707,
+							["hitamount"] = 441122,
+						},
 						["Thrash"] = {
 							["hitmin"] = 71,
 							["criticalamount"] = 707276,
@@ -140888,18 +140887,6 @@ SkadaPerCharDB = {
 							["critical"] = 3,
 							["criticalmin"] = 62807,
 							["hitamount"] = 64623,
-						},
-						["Mangle"] = {
-							["hitmin"] = 128572,
-							["id"] = 33917,
-							["min"] = 128572,
-							["damage"] = 441122,
-							["hitmax"] = 162707,
-							["hit"] = 3,
-							["school"] = 1,
-							["totalhits"] = 3,
-							["max"] = 162707,
-							["hitamount"] = 441122,
 						},
 						["Moonfire"] = {
 							["hitmin"] = 172,
@@ -142443,11 +142430,11 @@ SkadaPerCharDB = {
 							["class"] = "WARLOCK",
 							["shielding"] = 0,
 						},
-						["Creature-0-3135-1520-18818-113347-000036508E"] = {
+						["Creature-0-3135-1520-18818-113347-0000B6508E"] = {
 							["shielding"] = 0,
 							["role"] = "NONE",
 							["name"] = "Beast",
-							["amount"] = 43500,
+							["amount"] = 28446,
 						},
 						["Creature-0-3135-1520-18818-106551-0000364EE2"] = {
 							["shielding"] = 0,
@@ -142462,11 +142449,12 @@ SkadaPerCharDB = {
 							["class"] = "HUNTER",
 							["shielding"] = 0,
 						},
-						["Creature-0-3135-1520-18818-113347-0000B6508E"] = {
+						["Player-1184-0A838EE8"] = {
+							["role"] = "DAMAGER",
+							["name"] = "Merkav-Nazgrel",
+							["amount"] = 539782,
+							["class"] = "DEMONHUNTER",
 							["shielding"] = 0,
-							["role"] = "NONE",
-							["name"] = "Beast",
-							["amount"] = 28446,
 						},
 						["Player-76-0946A258"] = {
 							["role"] = "HEALER",
@@ -142564,12 +142552,11 @@ SkadaPerCharDB = {
 							["name"] = "Hati",
 							["amount"] = 85338,
 						},
-						["Player-1184-0A838EE8"] = {
-							["role"] = "DAMAGER",
-							["name"] = "Merkav-Nazgrel",
-							["amount"] = 539782,
-							["class"] = "DEMONHUNTER",
+						["Creature-0-3135-1520-18818-113347-000036508E"] = {
 							["shielding"] = 0,
+							["role"] = "NONE",
+							["name"] = "Beast",
+							["amount"] = 43500,
 						},
 						["Player-3694-07B36D69"] = {
 							["role"] = "DAMAGER",
@@ -143621,10 +143608,10 @@ SkadaPerCharDB = {
 					["healingabsorbed"] = 0,
 					["class"] = "PALADIN",
 					["damaged"] = {
-						["Eye of Il'gynoth"] = 30972,
-						["Il'gynoth"] = 1912386,
-						["Nightmare Ichor"] = 1338835,
 						["Deathglare Tentacle"] = 759677,
+						["Il'gynoth"] = 1912386,
+						["Eye of Il'gynoth"] = 30972,
+						["Nightmare Ichor"] = 1338835,
 					},
 					["auras"] = {
 						["Divine Shield"] = {
@@ -145128,7 +145115,20 @@ SkadaPerCharDB = {
 					["done"] = 41463157,
 				},
 			},
-			["mobtaken"] = 1031470170,
+			["power"] = {
+				1575, -- [1]
+				1709, -- [2]
+				200, -- [3]
+				[0] = 2156118,
+				[13] = 1365,
+				[7] = 43,
+				[17] = 4135,
+				[5] = 37,
+				[9] = 140,
+				[6] = 1205,
+				[12] = 82,
+				[18] = 968,
+			},
 			["damagetaken"] = 153333982,
 			["healing"] = 157896597,
 			["alertCount"] = 3,
