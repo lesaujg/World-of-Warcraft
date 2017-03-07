@@ -12,6 +12,7 @@ TradeSkillMaster_VendoringDB = {
 			"Herbinator - Sisters of Elune", -- [7]
 			"Guldahka - Turalyon", -- [8]
 			"Torinar - Sisters of Elune", -- [9]
+			"Leanara - Sisters of Elune", -- [10]
 		},
 		["realm"] = {
 			"Sisters of Elune", -- [1]
@@ -36,6 +37,7 @@ TradeSkillMaster_VendoringDB = {
 		["Guldahka - Turalyon"] = "Default",
 		["Ghiaccioli - Sisters of Elune"] = "Default",
 		["Orig - Sisters of Elune"] = "Default",
+		["Leanara - Sisters of Elune"] = "Default",
 		["Uldaris - Sisters of Elune"] = "Default",
 		["Bracnar - Sisters of Elune"] = "Default",
 		["Herbinator - Sisters of Elune"] = "Default",
