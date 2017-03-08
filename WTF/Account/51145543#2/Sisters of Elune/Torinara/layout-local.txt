@@ -10,6 +10,6 @@ Frame: _NPCScanOverlayKey
 FrameLevel: 121
 Anchor: CENTER
 X: -120
-Y: -71
+Y: -127
 W: 177
-H: 160
+H: 48

@@ -9,6 +9,14 @@ EasyObliterate_Data = {
 				["maxAsh"] = 157,
 			},
 		},
+		[128901] = {
+			[815] = {
+				["minAsh"] = 19,
+				["obliterateCount"] = 1,
+				["averageAsh"] = 19,
+				["maxAsh"] = 19,
+			},
+		},
 	},
 	["addonVersion"] = 23,
 	["addonSettings"] = {
