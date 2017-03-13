@@ -1199,3 +1199,8 @@ Change Log:
 4.42.5
 * Added and fixed Legion spells for Nighthold
 * Added Legion spells for Black Rook Hold
+
+4.42.6
+* Added Legion spells for The Broken Isles (world)
+* Added Legion spells for Nighthold
+* Added Legion spells for Vault of the Wardens

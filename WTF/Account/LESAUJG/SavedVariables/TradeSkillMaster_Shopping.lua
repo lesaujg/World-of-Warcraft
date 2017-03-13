@@ -36,39 +36,39 @@ TradeSkillMaster_ShoppingDB = {
 		["auction"] = true,
 	},
 	["g@ @sniperVendorPrice"] = true,
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @savedSearches"] = {
 		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1488947266,
-			["name"] = "Tome of the Tranquil Mind/exact",
-			["filter"] = "Tome of the Tranquil Mind/exact",
-		}, -- [1]
-		{
-			["lastSearch"] = 1488945981,
+			["lastSearch"] = 1489378213,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [1]
+		{
+			["lastSearch"] = 1489373655,
+			["name"] = "Obliterum/exact",
+			["filter"] = "Obliterum/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [2]
 		{
 			["searchMode"] = "normal",
+			["lastSearch"] = 1488947266,
+			["name"] = "Tome of the Tranquil Mind/exact",
+			["filter"] = "Tome of the Tranquil Mind/exact",
+		}, -- [3]
+		{
+			["searchMode"] = "normal",
 			["lastSearch"] = 1488945782,
 			["name"] = "demonsteel bar",
 			["filter"] = "demonsteel bar",
-		}, -- [3]
+		}, -- [4]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1488939860,
 			["name"] = "arkhana",
 			["filter"] = "arkhana",
-		}, -- [4]
-		{
-			["lastSearch"] = 1488748596,
-			["name"] = "Obliterum/exact",
-			["filter"] = "Obliterum/exact",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
 		}, -- [5]
 		{
 			["searchMode"] = "normal",
@@ -695,7 +695,7 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "Primordial Ruby/exact",
 		}, -- [108]
 	},
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @maxDeSearchLvl"] = 735,
 	["g@ @minDeSearchLvl"] = 1,
