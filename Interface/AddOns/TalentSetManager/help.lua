@@ -100,3 +100,23 @@ function addonTable:CreateHelpButton(mf)
  
  return f
 end
+
+--[[
+function addonTable:CreateNewsFrame()
+
+ local mf = CreateFrame("Frame", "TalentSetsDialogPopup", TalentSetsMainframe, "InsetFrameTemplate")
+ mf:SetPoint("TOPLEFT", TalentSetsMainframe, "BOTTOMLEFT")
+ mf:SetPoint("TOPRIGHT", TalentSetsMainframe, "BOTTOMRIGHT")
+ mf:SetHeight(80)
+
+ mf.title = mf:CreateFontString(nil, "BACKGROUND", "SystemFont_Shadow_Med3")
+ mf.title:SetPoint("TOP", 0, -5)
+ mf.title:SetText(SPLASH_BASE_HEADER)
+ 
+ local function closedialog()
+  mf:Hide()
+ end
+
+ mf:SetScript("OnMouseUp", function(self, button) if button == "RightButton" then closedialog() end end)
+end
+]]

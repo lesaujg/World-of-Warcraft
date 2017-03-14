@@ -1,35 +1,15 @@
 ------------------------------------------------------------------------
-r43 | Saregon | 2017-02-18 05:57:29 -0600 (Sat, 18 Feb 2017) | 1 line
+r48 | Saregon | 2017-03-13 14:58:44 -0500 (Mon, 13 Mar 2017) | 1 line
 Changed paths:
-   M /trunk/libs/libs.xml
-
-oversight
-------------------------------------------------------------------------
-r42 | Saregon | 2017-02-18 05:34:03 -0600 (Sat, 18 Feb 2017) | 1 line
-Changed paths:
-   D /trunk/database.lua
+   M /trunk/TalentSetManager.lua
+   M /trunk/help.lua
 
 -
 ------------------------------------------------------------------------
-r41 | Saregon | 2017-02-18 05:32:26 -0600 (Sat, 18 Feb 2017) | 1 line
-Changed paths:
-   M /trunk/.pkgmeta
-   M /trunk/TalentSetManager.lua
-   M /trunk/TalentSetManager.toc
-   M /trunk/libs/libs.xml
-   M /trunk/localization.lua
-
-icons database moved into an external library for optimization
-------------------------------------------------------------------------
-r40 | Saregon | 2017-02-16 14:22:16 -0600 (Thu, 16 Feb 2017) | 1 line
+r47 | Saregon | 2017-03-09 10:37:31 -0600 (Thu, 09 Mar 2017) | 1 line
 Changed paths:
    M /trunk/TalentSetManager.lua
-   M /trunk/TalentSetManager.toc
-   M /trunk/components.xml
-   A /trunk/database.lua
-   A /trunk/iconselect.lua
-   M /trunk/localization.lua
 
-talent set edit frame tweaked
+tsm no longer tries to equip a linked equipment on login
 ------------------------------------------------------------------------
 

@@ -1,3144 +1,59 @@
 
 SkadaPerCharDB = {
-	["total"] = {
-		["healingabsorbed"] = 0,
-		["dispells"] = 0,
-		["ccbreaks"] = 0,
-		["time"] = 311,
-		["interrupts"] = 0,
-		["damage"] = 109117,
-		["players"] = {
-			{
-				["healingabsorbed"] = 0,
-				["class"] = "PALADIN",
-				["damaged"] = {
-				},
-				["auras"] = {
-					["Avenging Wrath"] = {
-						["name"] = "Avenging Wrath",
-						["active"] = 0,
-						["id"] = 31842,
-						["auratype"] = "BUFF",
-						["uptime"] = 8,
-					},
-					["Forbearance"] = {
-						["name"] = "Forbearance",
-						["active"] = 0,
-						["id"] = 25771,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 60,
-					},
-					["Wrath of Elune"] = {
-						["name"] = "Wrath of Elune",
-						["active"] = 0,
-						["id"] = 202912,
-						["auratype"] = "BUFF",
-						["uptime"] = 15,
-					},
-					["Judgment"] = {
-						["name"] = "Judgment",
-						["active"] = 0,
-						["id"] = 214222,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 12,
-					},
-					["Divine Steed"] = {
-						["name"] = "Divine Steed",
-						["active"] = 0,
-						["id"] = 221883,
-						["auratype"] = "BUFF",
-						["uptime"] = 3,
-					},
-				},
-				["role"] = "NONE",
-				["time"] = 633,
-				["interrupts"] = 0,
-				["power"] = {
-				},
-				["damage"] = 109117,
-				["damagespells"] = {
-					["Judgment"] = {
-						["hitmin"] = 26617,
-						["id"] = 20271,
-						["min"] = 26617,
-						["hitamount"] = 53234,
-						["hitmax"] = 26617,
-						["hit"] = 2,
-						["school"] = 2,
-						["max"] = 26617,
-						["totalhits"] = 2,
-						["damage"] = 53234,
-					},
-					["Wrath of Elune"] = {
-						["hitmin"] = 1233,
-						["id"] = 202912,
-						["min"] = 1233,
-						["hitamount"] = 1233,
-						["hitmax"] = 1233,
-						["hit"] = 1,
-						["school"] = 2,
-						["max"] = 1233,
-						["totalhits"] = 1,
-						["damage"] = 1233,
-					},
-					["Attack"] = {
-						["criticalamount"] = 9128,
-						["id"] = 6603,
-						["min"] = 9128,
-						["criticalmax"] = 9128,
-						["critical"] = 1,
-						["criticalmin"] = 9128,
-						["school"] = 1,
-						["max"] = 9128,
-						["totalhits"] = 1,
-						["damage"] = 9128,
-					},
-					["Holy Shock"] = {
-						["hitmin"] = 19189,
-						["id"] = 25912,
-						["min"] = 19189,
-						["hitamount"] = 45522,
-						["hitmax"] = 26333,
-						["hit"] = 2,
-						["school"] = 2,
-						["max"] = 26333,
-						["totalhits"] = 2,
-						["damage"] = 45522,
-					},
-				},
-				["deaths"] = {
-					{
-						["ts"] = 1489377505.4831,
-						["maxhp"] = 598506,
-						["log"] = {
-							{
-								["absorb"] = 0,
-								["hp"] = 31783,
-								["amount"] = 11970,
-								["ts"] = 1489377503.88801,
-								["spellid"] = 228256,
-								["srcname"] = "Kelissa Stilwell",
-							}, -- [1]
-							{
-								["ts"] = 1489377504.66002,
-								["amount"] = -1863,
-								["hp"] = 31783,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [2]
-							{
-								["hp"] = 31783,
-								["amount"] = -2893,
-								["ts"] = 1489377504.66003,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [3]
-							{
-								["ts"] = 1489377504.66004,
-								["amount"] = -3017,
-								["hp"] = 31783,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [4]
-							{
-								["ts"] = 1489377504.66005,
-								["amount"] = -2432,
-								["hp"] = 31783,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [5]
-							{
-								["ts"] = 1489377504.66006,
-								["amount"] = -2414,
-								["hp"] = 31783,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [6]
-							{
-								["ts"] = 1489377504.66007,
-								["amount"] = -2660,
-								["hp"] = 31783,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [7]
-							{
-								["ts"] = 1489377504.66008,
-								["amount"] = -2470,
-								["hp"] = 31783,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [8]
-							{
-								["ts"] = 1489377505.46109,
-								["amount"] = -82557,
-								["hp"] = 14034,
-								["spellid"] = 88163,
-								["srcname"] = "Mordoth the Hunter",
-							}, -- [9]
-							{
-								["ts"] = 1489377505.4831,
-								["spellname"] = "Galinar dies",
-								["hp"] = 0,
-								["spellid"] = 41220,
-							}, -- [10]
-							{
-								["ts"] = 1489377502.15811,
-								["amount"] = -2890,
-								["hp"] = 37528,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [11]
-							{
-								["ts"] = 1489377502.15812,
-								["amount"] = -3156,
-								["hp"] = 37528,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [12]
-							{
-								["ts"] = 1489377502.15813,
-								["amount"] = -3042,
-								["hp"] = 37528,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [13]
-							{
-								["ts"] = 1489377503.07314,
-								["absorb"] = 0,
-								["amount"] = 44319,
-								["hp"] = 70338,
-								["spellid"] = 225311,
-								["srcname"] = "Galinar",
-							}, -- [14]
-							{
-								["ts"] = 1489377503.43815,
-								["amount"] = -50525,
-								["hp"] = 70338,
-								["spellid"] = 88163,
-								["srcname"] = "Mordoth the Hunter",
-							}, -- [15]
-							["pos"] = 11,
-						},
-					}, -- [1]
-					{
-						["ts"] = 1489377463.28602,
-						["maxhp"] = 598506,
-						["log"] = {
-							{
-								["hp"] = 105,
-								["amount"] = -3725,
-								["ts"] = 1489377463.26801,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [1]
-							{
-								["ts"] = 1489377463.28602,
-								["spellname"] = "Galinar dies",
-								["hp"] = 0,
-								["spellid"] = 41220,
-							}, -- [2]
-							{
-								["ts"] = 1489377459.25903,
-								["amount"] = -3080,
-								["hp"] = 84307,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [3]
-							{
-								["ts"] = 1489377459.63504,
-								["amount"] = -3890,
-								["hp"] = 81227,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [4]
-							{
-								["ts"] = 1489377460.05505,
-								["amount"] = -3893,
-								["hp"] = 77337,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [5]
-							{
-								["hp"] = 73444,
-								["amount"] = -2812,
-								["ts"] = 1489377460.49106,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [6]
-							{
-								["ts"] = 1489377460.49107,
-								["amount"] = -3336,
-								["hp"] = 73444,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [7]
-							{
-								["ts"] = 1489377460.49108,
-								["amount"] = -3823,
-								["hp"] = 73444,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [8]
-							{
-								["ts"] = 1489377460.92409,
-								["amount"] = -3199,
-								["hp"] = 63473,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [9]
-							{
-								["hp"] = 63473,
-								["amount"] = -3651,
-								["ts"] = 1489377460.9241,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [10]
-							{
-								["ts"] = 1489377461.65111,
-								["amount"] = -43979,
-								["hp"] = 56623,
-								["spellid"] = 88163,
-								["srcname"] = "Mordoth the Hunter",
-							}, -- [11]
-							{
-								["ts"] = 1489377462.13312,
-								["amount"] = -2957,
-								["hp"] = 12644,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [12]
-							{
-								["ts"] = 1489377462.49013,
-								["amount"] = -3478,
-								["hp"] = 9687,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [13]
-							{
-								["hp"] = 6209,
-								["amount"] = -3401,
-								["ts"] = 1489377462.93514,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [14]
-							{
-								["ts"] = 1489377462.93515,
-								["amount"] = -2703,
-								["hp"] = 6209,
-								["spellid"] = 88163,
-								["srcname"] = "Flesh Spawn",
-							}, -- [15]
-							["pos"] = 3,
-						},
-					}, -- [2]
-					{
-						["ts"] = 1489376850.34714,
-						["maxhp"] = 598506,
-						["log"] = {
-							{
-								["absorb"] = 0,
-								["amount"] = 16251,
-								["hp"] = 382043,
-								["ts"] = 1489376816.00701,
-								["spellid"] = 225311,
-								["srcname"] = "Galinar",
-							}, -- [1]
-							{
-								["ts"] = 1489376820.21502,
-								["amount"] = -13586,
-								["hp"] = 368457,
-								["spellid"] = 215705,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [2]
-							{
-								["ts"] = 1489376821.59703,
-								["amount"] = -26219,
-								["hp"] = 342238,
-								["spellid"] = 215690,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [3]
-							{
-								["ts"] = 1489376823.46904,
-								["amount"] = -51521,
-								["hp"] = 342238,
-								["spellid"] = 88163,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [4]
-							{
-								["ts"] = 1489376825.47905,
-								["amount"] = -57020,
-								["hp"] = 290717,
-								["spellid"] = 88163,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [5]
-							{
-								["absorb"] = 0,
-								["amount"] = 32829,
-								["hp"] = 266526,
-								["ts"] = 1489376832.30506,
-								["spellid"] = 225311,
-								["srcname"] = "Galinar",
-							}, -- [6]
-							{
-								["ts"] = 1489376835.78407,
-								["amount"] = -26318,
-								["hp"] = 240208,
-								["spellid"] = 215690,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [7]
-							{
-								["ts"] = 1489376837.59408,
-								["amount"] = -56271,
-								["hp"] = 240208,
-								["spellid"] = 88163,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [8]
-							{
-								["ts"] = 1489376839.60109,
-								["amount"] = -45958,
-								["hp"] = 183937,
-								["spellid"] = 88163,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [9]
-							{
-								["ts"] = 1489376841.6041,
-								["amount"] = -55032,
-								["hp"] = 137979,
-								["spellid"] = 88163,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [10]
-							{
-								["ts"] = 1489376843.61911,
-								["amount"] = -56759,
-								["hp"] = 82947,
-								["spellid"] = 88163,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [11]
-							{
-								["ts"] = 1489376849.28012,
-								["amount"] = -14163,
-								["hp"] = 12025,
-								["spellid"] = 215705,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [12]
-							{
-								["ts"] = 1489376850.31913,
-								["amount"] = -22918,
-								["hp"] = 1,
-								["spellid"] = 215690,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [13]
-							{
-								["spellname"] = "Galinar dies",
-								["ts"] = 1489376850.34714,
-								["spellid"] = 41220,
-								["hp"] = 0,
-							}, -- [14]
-							["pos"] = 15,
-						},
-					}, -- [3]
-					{
-						["ts"] = 1489376793.97815,
-						["maxhp"] = 598506,
-						["log"] = {
-							{
-								["ts"] = 1489376762.01501,
-								["amount"] = -13578,
-								["hp"] = 364484,
-								["spellid"] = 215705,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [1]
-							{
-								["ts"] = 1489376762.93302,
-								["amount"] = -26368,
-								["hp"] = 338116,
-								["spellid"] = 215690,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [2]
-							{
-								["hp"] = 338116,
-								["amount"] = -64696,
-								["ts"] = 1489376764.46503,
-								["spellid"] = 88163,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [3]
-							{
-								["ts"] = 1489376766.47204,
-								["amount"] = -45762,
-								["hp"] = 273420,
-								["spellid"] = 88163,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [4]
-							{
-								["absorb"] = 0,
-								["hp"] = 239628,
-								["amount"] = 11970,
-								["ts"] = 1489376767.29905,
-								["spellid"] = 228256,
-								["srcname"] = "Efrina",
-							}, -- [5]
-							{
-								["hp"] = 239628,
-								["amount"] = -56603,
-								["ts"] = 1489376768.47506,
-								["spellid"] = 88163,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [6]
-							{
-								["hp"] = 183025,
-								["amount"] = -53677,
-								["ts"] = 1489376770.47007,
-								["spellid"] = 88163,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [7]
-							{
-								["ts"] = 1489376776.04208,
-								["absorb"] = 0,
-								["amount"] = 32829,
-								["hp"] = 162177,
-								["spellid"] = 225311,
-								["srcname"] = "Galinar",
-							}, -- [8]
-							{
-								["hp"] = 135859,
-								["amount"] = -26318,
-								["ts"] = 1489376777.66309,
-								["spellid"] = 215690,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [9]
-							{
-								["hp"] = 135859,
-								["amount"] = -55618,
-								["ts"] = 1489376779.3981,
-								["spellid"] = 88163,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [10]
-							{
-								["hp"] = 80241,
-								["amount"] = -59378,
-								["ts"] = 1489376781.40311,
-								["spellid"] = 88163,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [11]
-							{
-								["absorb"] = 0,
-								["hp"] = 37115,
-								["amount"] = 16252,
-								["ts"] = 1489376791.99412,
-								["spellid"] = 225311,
-								["srcname"] = "Galinar",
-							}, -- [12]
-							{
-								["ts"] = 1489376792.25113,
-								["amount"] = -23558,
-								["hp"] = 13557,
-								["spellid"] = 215690,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [13]
-							{
-								["ts"] = 1489376793.95514,
-								["amount"] = -63201,
-								["hp"] = 13557,
-								["spellid"] = 88163,
-								["srcname"] = "G'norz the Crazed",
-							}, -- [14]
-							{
-								["ts"] = 1489376793.97815,
-								["spellname"] = "Galinar dies",
-								["hp"] = 0,
-								["spellid"] = 41220,
-							}, -- [15]
-							["pos"] = 1,
-						},
-					}, -- [4]
-				},
-				["damagetaken"] = 3657302,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 16252,
-						["hp"] = 315505,
-						["ts"] = 1489377513.893,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [1]
-					{
-						["ts"] = 1489377515.063,
-						["amount"] = -23706,
-						["hp"] = 291799,
-						["spellid"] = 215690,
-						["srcname"] = "Mordoth the Hunter",
-					}, -- [2]
-					{
-						["ts"] = 1489377518.822,
-						["amount"] = -35338,
-						["hp"] = 291799,
-						["spellid"] = 88163,
-						["srcname"] = "Mordoth the Hunter",
-					}, -- [3]
-					{
-						["ts"] = 1489377519.18,
-						["amount"] = -2648,
-						["hp"] = 256461,
-						["spellid"] = 88163,
-						["srcname"] = "Flesh Spawn",
-					}, -- [4]
-					{
-						["ts"] = 1489377519.197,
-						["amount"] = -2325,
-						["hp"] = 256461,
-						["spellid"] = 88163,
-						["srcname"] = "Flesh Spawn",
-					}, -- [5]
-					{
-						["ts"] = 1489377519.197,
-						["amount"] = -2176,
-						["hp"] = 256461,
-						["spellid"] = 88163,
-						["srcname"] = "Flesh Spawn",
-					}, -- [6]
-					{
-						["ts"] = 1489377519.197,
-						["amount"] = -1872,
-						["hp"] = 256461,
-						["spellid"] = 88163,
-						["srcname"] = "Flesh Spawn",
-					}, -- [7]
-					{
-						["ts"] = 1489377519.197,
-						["amount"] = -2045,
-						["hp"] = 256461,
-						["spellid"] = 88163,
-						["srcname"] = "Flesh Spawn",
-					}, -- [8]
-					{
-						["ts"] = 1489377519.197,
-						["amount"] = -2421,
-						["hp"] = 256461,
-						["spellid"] = 88163,
-						["srcname"] = "Flesh Spawn",
-					}, -- [9]
-					{
-						["ts"] = 1489377520.836,
-						["amount"] = -33529,
-						["hp"] = 242974,
-						["spellid"] = 88163,
-						["srcname"] = "Mordoth the Hunter",
-					}, -- [10]
-					["pos"] = 11,
-				},
-				["id"] = "Player-1169-06EEB51C",
-				["overhealing"] = 1228232,
-				["damagetakenspells"] = {
-					["Gasp of Unmaking"] = {
-						["crushing"] = 0,
-						["id"] = 215705,
-						["min"] = 9918,
-						["school"] = 32,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-						["name"] = "Gasp of Unmaking",
-						["blocked"] = 0,
-						["totalhits"] = 8,
-						["resisted"] = 0,
-						["max"] = 18319,
-						["damage"] = 109176,
-					},
-					["Void Bolt"] = {
-						["crushing"] = 0,
-						["id"] = 215690,
-						["min"] = 22918,
-						["school"] = 32,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-						["name"] = "Void Bolt",
-						["blocked"] = 0,
-						["totalhits"] = 21,
-						["resisted"] = 0,
-						["max"] = 26614,
-						["damage"] = 522867,
-					},
-					["Light of the Martyr"] = {
-						["crushing"] = 0,
-						["id"] = 196917,
-						["min"] = 22569,
-						["school"] = 2,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-						["name"] = "Light of the Martyr",
-						["blocked"] = 0,
-						["totalhits"] = 3,
-						["resisted"] = 0,
-						["max"] = 22570,
-						["damage"] = 67708,
-					},
-					["Void Breath"] = {
-						["crushing"] = 0,
-						["id"] = 215798,
-						["min"] = 25872,
-						["school"] = 32,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-						["name"] = "Void Breath",
-						["blocked"] = 0,
-						["totalhits"] = 2,
-						["resisted"] = 0,
-						["max"] = 25976,
-						["damage"] = 51848,
-					},
-					["Attack"] = {
-						["crushing"] = 0,
-						["id"] = 6603,
-						["min"] = 1863,
-						["school"] = 1,
-						["critical"] = 17,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-						["name"] = "Attack",
-						["blocked"] = 23805,
-						["totalhits"] = 232,
-						["resisted"] = 0,
-						["max"] = 82557,
-						["damage"] = 2905703,
-					},
-				},
-				["healingspells"] = {
-					["Light of Dawn"] = {
-						["shielding"] = 0,
-						["id"] = 225311,
-						["healing"] = 2896938,
-						["min"] = 0,
-						["name"] = "Light of Dawn",
-						["max"] = 44319,
-						["critical"] = 28,
-						["absorbed"] = 0,
-						["overhealing"] = 536447,
-						["hits"] = 169,
-					},
-					["Flash of Light"] = {
-						["shielding"] = 0,
-						["id"] = 19750,
-						["healing"] = 6108981,
-						["min"] = 11392,
-						["name"] = "Flash of Light",
-						["max"] = 102592,
-						["critical"] = 17,
-						["absorbed"] = 0,
-						["overhealing"] = 47967,
-						["hits"] = 126,
-					},
-					["Light of the Martyr"] = {
-						["shielding"] = 0,
-						["id"] = 183998,
-						["healing"] = 135429,
-						["min"] = 45143,
-						["name"] = "Light of the Martyr",
-						["max"] = 45143,
-						["critical"] = 0,
-						["absorbed"] = 0,
-						["overhealing"] = 0,
-						["hits"] = 3,
-					},
-					["Holy Light"] = {
-						["shielding"] = 0,
-						["id"] = 82326,
-						["healing"] = 2698473,
-						["min"] = 31044,
-						["name"] = "Holy Light",
-						["max"] = 96893,
-						["critical"] = 8,
-						["absorbed"] = 0,
-						["overhealing"] = 0,
-						["hits"] = 56,
-					},
-					["Lay on Hands"] = {
-						["shielding"] = 0,
-						["id"] = 633,
-						["healing"] = 553192,
-						["min"] = 265590,
-						["name"] = "Lay on Hands",
-						["max"] = 287602,
-						["critical"] = 0,
-						["absorbed"] = 0,
-						["overhealing"] = 643818,
-						["hits"] = 2,
-					},
-				},
-				["shielding"] = 0,
-				["name"] = "Galinar",
-				["healing"] = 12393013,
-				["healed"] = {
-					["Creature-0-3777-1539-6259-114242-000046182B"] = {
-						["role"] = "NONE",
-						["name"] = "Helda the Breaker",
-						["amount"] = 833370,
-						["class"] = "PALADIN",
-						["shielding"] = 0,
-					},
-					["Creature-0-3777-1539-6259-106370-0000461494"] = {
-						["role"] = "NONE",
-						["name"] = "Duvall",
-						["amount"] = 886896,
-						["class"] = "PALADIN",
-						["shielding"] = 0,
-					},
-					["Creature-0-3777-1539-6259-106774-000046182B"] = {
-						["role"] = "NONE",
-						["name"] = "Shieldbearer Anak",
-						["amount"] = 437021,
-						["class"] = "PALADIN",
-						["shielding"] = 0,
-					},
-					["Creature-0-3777-1539-6259-106775-000046182B"] = {
-						["role"] = "NONE",
-						["name"] = "Lyanae",
-						["amount"] = 864091,
-						["class"] = "PALADIN",
-						["shielding"] = 0,
-					},
-					["Creature-0-3777-1539-6259-114243-000046182B"] = {
-						["role"] = "NONE",
-						["name"] = "Kelissa Stilwell",
-						["amount"] = 1313293,
-						["class"] = "PALADIN",
-						["shielding"] = 0,
-					},
-					["Creature-0-3777-1539-6259-106370-00004616C6"] = {
-						["role"] = "NONE",
-						["name"] = "Duvall",
-						["amount"] = 226593,
-						["class"] = "PALADIN",
-						["shielding"] = 0,
-					},
-					["Creature-0-3777-1539-6259-106639-00004616C6"] = {
-						["role"] = "NONE",
-						["name"] = "Travard",
-						["amount"] = 341981,
-						["class"] = "PALADIN",
-						["shielding"] = 0,
-					},
-					["Creature-0-3777-1539-6259-106676-000046175F"] = {
-						["role"] = "NONE",
-						["name"] = "Travard",
-						["amount"] = 1497353,
-						["class"] = "PALADIN",
-						["shielding"] = 0,
-					},
-					["Creature-0-3777-1539-6259-106429-0000461494"] = {
-						["role"] = "NONE",
-						["name"] = "Travard",
-						["amount"] = 3356388,
-						["class"] = "PALADIN",
-						["shielding"] = 0,
-					},
-					["Creature-0-3777-1539-6259-106371-00004616C6"] = {
-						["role"] = "NONE",
-						["name"] = "Efrina",
-						["amount"] = 607826,
-						["class"] = "PALADIN",
-						["shielding"] = 0,
-					},
-					["Player-1169-06EEB51C"] = {
-						["role"] = "NONE",
-						["name"] = "Galinar",
-						["amount"] = 564056,
-						["class"] = "PALADIN",
-						["shielding"] = 0,
-					},
-					["Creature-0-3777-1539-6259-106371-0000461494"] = {
-						["role"] = "NONE",
-						["name"] = "Efrina",
-						["amount"] = 1464145,
-						["class"] = "PALADIN",
-						["shielding"] = 0,
-					},
-				},
-				["dispells"] = 0,
-				["ccbreaks"] = 0,
-				["maxhp"] = 598506,
-			}, -- [1]
-			{
-				["healingabsorbed"] = 0,
-				["class"] = "PALADIN",
-				["damaged"] = {
-				},
-				["auras"] = {
-				},
-				["role"] = "NONE",
-				["time"] = 320,
-				["interrupts"] = 0,
-				["damage"] = 0,
-				["damagespells"] = {
-				},
-				["power"] = {
-				},
-				["damagetaken"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["hp"] = 183687,
-						["amount"] = 20314,
-						["ts"] = 1489376895.413,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["hp"] = 239415,
-						["amount"] = 50788,
-						["ts"] = 1489376898.482,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["hp"] = 217898,
-						["amount"] = 38373,
-						["ts"] = 1489376903.588,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["hp"] = 287385,
-						["amount"] = 77514,
-						["ts"] = 1489376906.147,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["hp"] = 301954,
-						["amount"] = 16251,
-						["ts"] = 1489376906.571,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["hp"] = 85410,
-						["amount"] = 41035,
-						["ts"] = 1489376921.735,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["hp"] = 63741,
-						["amount"] = 50787,
-						["ts"] = 1489376875.736,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["hp"] = 106740,
-						["amount"] = 47966,
-						["ts"] = 1489376878.378,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["hp"] = 141406,
-						["amount"] = 47966,
-						["ts"] = 1489376880.852,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["hp"] = 228265,
-						["amount"] = 96892,
-						["ts"] = 1489376883.448,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["hp"] = 242833,
-						["amount"] = 16251,
-						["ts"] = 1489376883.684,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["hp"] = 43001,
-						["amount"] = 47966,
-						["ts"] = 1489376887.491,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["hp"] = 86001,
-						["amount"] = 47966,
-						["ts"] = 1489376889.934,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["hp"] = 129001,
-						["amount"] = 47966,
-						["ts"] = 1489376892.532,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["hp"] = 165476,
-						["amount"] = 47966,
-						["ts"] = 1489376894.975,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [15]
-					["pos"] = 7,
-				},
-				["id"] = "Creature-0-3777-1539-6259-106429-0000461494",
-				["overhealing"] = 0,
-				["damagetakenspells"] = {
-				},
-				["healingspells"] = {
-				},
-				["shielding"] = 0,
-				["name"] = "Travard",
-				["healing"] = 0,
-				["healed"] = {
-				},
-				["dispells"] = 0,
-				["ccbreaks"] = 0,
-				["maxhp"] = 407949,
-			}, -- [2]
-			{
-				["healingabsorbed"] = 0,
-				["class"] = "PALADIN",
-				["damaged"] = {
-				},
-				["auras"] = {
-				},
-				["role"] = "NONE",
-				["time"] = 309,
-				["interrupts"] = 0,
-				["damage"] = 0,
-				["damagespells"] = {
-				},
-				["power"] = {
-				},
-				["damagetaken"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["hp"] = 81918,
-						["amount"] = 50787,
-						["ts"] = 1489376837.579,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["hp"] = 90697,
-						["amount"] = 20314,
-						["ts"] = 1489376872.229,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["hp"] = 101540,
-						["amount"] = 20313,
-						["ts"] = 1489376883.684,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["hp"] = 129568,
-						["amount"] = 41034,
-						["ts"] = 1489376895.413,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["hp"] = 183255,
-						["amount"] = 50787,
-						["ts"] = 1489376900.734,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["hp"] = 204351,
-						["amount"] = 16251,
-						["ts"] = 1489376906.571,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["hp"] = 264746,
-						["amount"] = 77514,
-						["ts"] = 1489376910.564,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["hp"] = 303983,
-						["amount"] = 36487,
-						["ts"] = 1489376916.088,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["hp"] = 326360,
-						["amount"] = 24962,
-						["ts"] = 1489376921.735,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["hp"] = 172008,
-						["amount"] = 45143,
-						["ts"] = 1489376737.284,
-						["spellid"] = 183998,
-						["srcname"] = "Galinar",
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["hp"] = 214491,
-						["amount"] = 32828,
-						["ts"] = 1489376745.078,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["hp"] = 121563,
-						["amount"] = 16251,
-						["ts"] = 1489376756.12,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["hp"] = 35606,
-						["amount"] = 20313,
-						["ts"] = 1489376776.042,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["hp"] = 30165,
-						["amount"] = 20314,
-						["ts"] = 1489376791.994,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["hp"] = 48315,
-						["amount"] = 20253,
-						["ts"] = 1489376832.304,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [15]
-					["pos"] = 10,
-				},
-				["id"] = "Creature-0-3777-1539-6259-106371-0000461494",
-				["overhealing"] = 0,
-				["damagetakenspells"] = {
-				},
-				["healingspells"] = {
-				},
-				["shielding"] = 0,
-				["name"] = "Efrina",
-				["healing"] = 0,
-				["healed"] = {
-				},
-				["dispells"] = 0,
-				["ccbreaks"] = 0,
-				["maxhp"] = 326360,
-			}, -- [3]
-			{
-				["healingabsorbed"] = 0,
-				["class"] = "PALADIN",
-				["damaged"] = {
-				},
-				["auras"] = {
-				},
-				["role"] = "NONE",
-				["time"] = 304,
-				["interrupts"] = 0,
-				["damage"] = 0,
-				["damagespells"] = {
-				},
-				["power"] = {
-				},
-				["damagetaken"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["hp"] = 118651,
-						["amount"] = 41035,
-						["ts"] = 1489376680.16,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["hp"] = 145021,
-						["amount"] = 20314,
-						["ts"] = 1489376695.417,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["hp"] = 171389,
-						["amount"] = 20314,
-						["ts"] = 1489376706.94,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["hp"] = 271144,
-						["amount"] = 15737,
-						["ts"] = 1489376734.254,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["hp"] = 71774,
-						["amount"] = 16251,
-						["ts"] = 1489376745.078,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["hp"] = 24740,
-						["amount"] = 20314,
-						["ts"] = 1489376756.12,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["hp"] = 60237,
-						["amount"] = 47966,
-						["ts"] = 1489376766.417,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["hp"] = 113925,
-						["amount"] = 50788,
-						["ts"] = 1489376769.213,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["hp"] = 150711,
-						["amount"] = 41034,
-						["ts"] = 1489376776.042,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["hp"] = 144148,
-						["amount"] = 20217,
-						["ts"] = 1489376832.304,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["hp"] = 144399,
-						["amount"] = 20313,
-						["ts"] = 1489376872.229,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["hp"] = 154948,
-						["amount"] = 20314,
-						["ts"] = 1489376883.684,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["hp"] = 182347,
-						["amount"] = 41035,
-						["ts"] = 1489376895.413,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["hp"] = 43126,
-						["amount"] = 20314,
-						["ts"] = 1489376906.571,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["hp"] = 60991,
-						["amount"] = 20313,
-						["ts"] = 1489376921.735,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [15]
-					["pos"] = 1,
-				},
-				["id"] = "Creature-0-3777-1539-6259-106370-0000461494",
-				["overhealing"] = 0,
-				["damagetakenspells"] = {
-				},
-				["healingspells"] = {
-				},
-				["shielding"] = 0,
-				["name"] = "Duvall",
-				["healing"] = 0,
-				["healed"] = {
-				},
-				["dispells"] = 0,
-				["ccbreaks"] = 0,
-				["maxhp"] = 326360,
-			}, -- [4]
-			{
-				["healingabsorbed"] = 0,
-				["class"] = "PALADIN",
-				["damaged"] = {
-				},
-				["auras"] = {
-				},
-				["role"] = "NONE",
-				["time"] = 64,
-				["interrupts"] = 0,
-				["damage"] = 0,
-				["damagespells"] = {
-				},
-				["power"] = {
-				},
-				["damagetaken"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["hp"] = 326360,
-						["ts"] = 1489377004.41,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 16251,
-						["hp"] = 210981,
-						["ts"] = 1489377017.004,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 82073,
-						["hp"] = 236479,
-						["ts"] = 1489377019.982,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 40630,
-						["hp"] = 270403,
-						["ts"] = 1489377021.792,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 40630,
-						["hp"] = 306827,
-						["ts"] = 1489377023.82,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 14508,
-						["hp"] = 326360,
-						["ts"] = 1489377031.95,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["hp"] = 326360,
-						["ts"] = 1489377044.566,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 16251,
-						["hp"] = 257745,
-						["ts"] = 1489377055.668,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["hp"] = 326360,
-						["ts"] = 1489377093.066,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 16250,
-						["hp"] = 270483,
-						["ts"] = 1489377105.614,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [10]
-					["pos"] = 11,
-				},
-				["id"] = "Creature-0-3777-1539-6259-106370-00004616C6",
-				["overhealing"] = 0,
-				["damagetakenspells"] = {
-				},
-				["healingspells"] = {
-				},
-				["shielding"] = 0,
-				["name"] = "Duvall",
-				["healing"] = 0,
-				["healed"] = {
-				},
-				["dispells"] = 0,
-				["ccbreaks"] = 0,
-				["maxhp"] = 326360,
-			}, -- [5]
-			{
-				["healingabsorbed"] = 0,
-				["class"] = "PALADIN",
-				["damaged"] = {
-				},
-				["auras"] = {
-				},
-				["role"] = "NONE",
-				["time"] = 69,
-				["interrupts"] = 0,
-				["damage"] = 0,
-				["damagespells"] = {
-				},
-				["power"] = {
-				},
-				["damagetaken"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 2846,
-						["hp"] = 407949,
-						["ts"] = 1489377004.41,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 21902,
-						["hp"] = 407949,
-						["ts"] = 1489377008.528,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 16251,
-						["hp"] = 358802,
-						["ts"] = 1489377017.004,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 40630,
-						["hp"] = 300989,
-						["ts"] = 1489377029.721,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 40630,
-						["hp"] = 343655,
-						["ts"] = 1489377031.381,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 16251,
-						["hp"] = 355006,
-						["ts"] = 1489377031.964,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 32828,
-						["hp"] = 375219,
-						["ts"] = 1489377044.566,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 16251,
-						["hp"] = 242352,
-						["ts"] = 1489377055.668,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 40630,
-						["hp"] = 280503,
-						["ts"] = 1489377060.255,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 40630,
-						["hp"] = 389327,
-						["ts"] = 1489377091.986,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 16251,
-						["hp"] = 403895,
-						["ts"] = 1489377093.066,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 40630,
-						["hp"] = 379836,
-						["ts"] = 1489377104.222,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 16251,
-						["hp"] = 353410,
-						["ts"] = 1489377105.614,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [13]
-					["pos"] = 14,
-				},
-				["id"] = "Creature-0-3777-1539-6259-106639-00004616C6",
-				["overhealing"] = 0,
-				["damagetakenspells"] = {
-				},
-				["healingspells"] = {
-				},
-				["shielding"] = 0,
-				["name"] = "Travard",
-				["healing"] = 0,
-				["healed"] = {
-				},
-				["dispells"] = 0,
-				["ccbreaks"] = 0,
-				["maxhp"] = 407949,
-			}, -- [6]
-			{
-				["healingabsorbed"] = 0,
-				["class"] = "PALADIN",
-				["damaged"] = {
-				},
-				["auras"] = {
-				},
-				["role"] = "NONE",
-				["time"] = 64,
-				["interrupts"] = 0,
-				["damage"] = 0,
-				["damagespells"] = {
-				},
-				["power"] = {
-				},
-				["damagetaken"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["hp"] = 238395,
-						["amount"] = 16251,
-						["ts"] = 1489377093.066,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["hp"] = 270028,
-						["amount"] = 40468,
-						["ts"] = 1489377099.177,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["hp"] = 250246,
-						["amount"] = 16251,
-						["ts"] = 1489377105.614,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 38373,
-						["hp"] = 237213,
-						["ts"] = 1489377016.961,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 16251,
-						["hp"] = 251782,
-						["ts"] = 1489377017.004,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 38373,
-						["hp"] = 246750,
-						["ts"] = 1489377026.67,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 33732,
-						["hp"] = 211111,
-						["ts"] = 1489377034.788,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 31044,
-						["hp"] = 144558,
-						["ts"] = 1489377037.272,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 62711,
-						["hp"] = 182354,
-						["ts"] = 1489377039.838,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 15680,
-						["hp"] = 101438,
-						["ts"] = 1489377044.566,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 40630,
-						["hp"] = 120123,
-						["ts"] = 1489377047.25,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 77514,
-						["hp"] = 148791,
-						["ts"] = 1489377049.662,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 40630,
-						["hp"] = 191741,
-						["ts"] = 1489377051.374,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 38372,
-						["hp"] = 226140,
-						["ts"] = 1489377054.773,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 16250,
-						["hp"] = 240708,
-						["ts"] = 1489377055.668,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [15]
-					["pos"] = 4,
-				},
-				["id"] = "Creature-0-3777-1539-6259-106371-00004616C6",
-				["overhealing"] = 0,
-				["damagetakenspells"] = {
-				},
-				["healingspells"] = {
-				},
-				["shielding"] = 0,
-				["name"] = "Efrina",
-				["healing"] = 0,
-				["healed"] = {
-				},
-				["dispells"] = 0,
-				["ccbreaks"] = 0,
-				["maxhp"] = 326360,
-			}, -- [7]
-			{
-				["healingabsorbed"] = 0,
-				["class"] = "PALADIN",
-				["damaged"] = {
-				},
-				["auras"] = {
-				},
-				["role"] = "NONE",
-				["time"] = 62,
-				["interrupts"] = 0,
-				["damage"] = 0,
-				["damagespells"] = {
-				},
-				["power"] = {
-				},
-				["damagetaken"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["hp"] = 354574,
-						["amount"] = 40630,
-						["ts"] = 1489377252.585,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["hp"] = 317701,
-						["amount"] = 40630,
-						["ts"] = 1489377230.41,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["hp"] = 179348,
-						["amount"] = 40630,
-						["ts"] = 1489377231.875,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["hp"] = 191901,
-						["amount"] = 40630,
-						["ts"] = 1489377233.306,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["hp"] = 194867,
-						["amount"] = 38373,
-						["ts"] = 1489377235.576,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["hp"] = 195998,
-						["amount"] = 38373,
-						["ts"] = 1489377237.98,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["hp"] = 234344,
-						["amount"] = 82074,
-						["ts"] = 1489377239.416,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["hp"] = 276878,
-						["amount"] = 82073,
-						["ts"] = 1489377241.194,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["hp"] = 141185,
-						["amount"] = 40630,
-						["ts"] = 1489377242.71,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["hp"] = 150948,
-						["amount"] = 40630,
-						["ts"] = 1489377244.072,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["hp"] = 193956,
-						["amount"] = 82073,
-						["ts"] = 1489377245.442,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["hp"] = 230379,
-						["amount"] = 40630,
-						["ts"] = 1489377246.857,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["hp"] = 232048,
-						["amount"] = 40630,
-						["ts"] = 1489377248.227,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["hp"] = 244576,
-						["amount"] = 40630,
-						["ts"] = 1489377249.636,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["hp"] = 318151,
-						["amount"] = 82073,
-						["ts"] = 1489377251.136,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [15]
-					["pos"] = 2,
-				},
-				["id"] = "Creature-0-3777-1539-6259-106676-000046175F",
-				["overhealing"] = 0,
-				["damagetakenspells"] = {
-				},
-				["healingspells"] = {
-				},
-				["shielding"] = 0,
-				["name"] = "Travard",
-				["healing"] = 0,
-				["healed"] = {
-				},
-				["dispells"] = 0,
-				["ccbreaks"] = 0,
-				["maxhp"] = 407949,
-			}, -- [8]
-			{
-				["healingabsorbed"] = 0,
-				["class"] = "PALADIN",
-				["damaged"] = {
-				},
-				["auras"] = {
-				},
-				["role"] = "NONE",
-				["time"] = 161,
-				["interrupts"] = 0,
-				["damage"] = 0,
-				["damagespells"] = {
-				},
-				["power"] = {
-				},
-				["damagetaken"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["hp"] = 85903,
-						["amount"] = 40630,
-						["ts"] = 1489377432.544,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["hp"] = 100470,
-						["amount"] = 16250,
-						["ts"] = 1489377434.238,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["hp"] = 55936,
-						["amount"] = 50787,
-						["ts"] = 1489377440.396,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["hp"] = 142795,
-						["amount"] = 96893,
-						["ts"] = 1489377445.995,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["hp"] = 161006,
-						["amount"] = 20314,
-						["ts"] = 1489377445.995,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["hp"] = 204006,
-						["amount"] = 47966,
-						["ts"] = 1489377450.503,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["hp"] = 26129,
-						["amount"] = 20044,
-						["ts"] = 1489377476.406,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["hp"] = 71657,
-						["amount"] = 50787,
-						["ts"] = 1489377484.775,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["hp"] = 96241,
-						["amount"] = 27423,
-						["ts"] = 1489377503.073,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["hp"] = 25909,
-						["amount"] = 20314,
-						["ts"] = 1489377513.893,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 40630,
-						["hp"] = 267455,
-						["ts"] = 1489377400.056,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 16251,
-						["hp"] = 251960,
-						["ts"] = 1489377409.224,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 39849,
-						["hp"] = 250130,
-						["ts"] = 1489377417.08,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 38372,
-						["hp"] = 167490,
-						["ts"] = 1489377420.5,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 40630,
-						["hp"] = 42952,
-						["ts"] = 1489377427.624,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [15]
-					["pos"] = 11,
-				},
-				["id"] = "Creature-0-3777-1539-6259-106775-000046182B",
-				["overhealing"] = 0,
-				["damagetakenspells"] = {
-				},
-				["healingspells"] = {
-				},
-				["shielding"] = 0,
-				["name"] = "Lyanae",
-				["healing"] = 0,
-				["healed"] = {
-				},
-				["dispells"] = 0,
-				["ccbreaks"] = 0,
-				["maxhp"] = 326360,
-			}, -- [9]
-			{
-				["healingabsorbed"] = 0,
-				["class"] = "PALADIN",
-				["damaged"] = {
-				},
-				["auras"] = {
-				},
-				["role"] = "NONE",
-				["time"] = 167,
-				["interrupts"] = 0,
-				["damage"] = 0,
-				["damagespells"] = {
-				},
-				["power"] = {
-				},
-				["damagetaken"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["hp"] = 87264,
-						["amount"] = 20313,
-						["ts"] = 1489377476.406,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["hp"] = 132793,
-						["amount"] = 50788,
-						["ts"] = 1489377482.679,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["hp"] = 178322,
-						["amount"] = 50788,
-						["ts"] = 1489377486.4,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["hp"] = 220292,
-						["amount"] = 77514,
-						["ts"] = 1489377489.4,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["hp"] = 282216,
-						["amount"] = 82073,
-						["ts"] = 1489377490.825,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["hp"] = 267012,
-						["amount"] = 40630,
-						["ts"] = 1489377493.305,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["hp"] = 170387,
-						["amount"] = 40630,
-						["ts"] = 1489377497.929,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["hp"] = 92245,
-						["amount"] = 51803,
-						["ts"] = 1489377501.638,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["hp"] = 111913,
-						["amount"] = 21939,
-						["ts"] = 1489377503.073,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["hp"] = 18212,
-						["amount"] = 20314,
-						["ts"] = 1489377513.893,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["hp"] = 45529,
-						["amount"] = 50787,
-						["ts"] = 1489377517.291,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["hp"] = 91058,
-						["amount"] = 50787,
-						["ts"] = 1489377518.77,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["hp"] = 136587,
-						["amount"] = 50788,
-						["ts"] = 1489377520.836,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 20314,
-						["hp"] = 18212,
-						["ts"] = 1489377434.238,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 20314,
-						["hp"] = 52740,
-						["ts"] = 1489377445.995,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [15]
-					["pos"] = 14,
-				},
-				["id"] = "Creature-0-3777-1539-6259-114243-000046182B",
-				["overhealing"] = 0,
-				["damagetakenspells"] = {
-				},
-				["healingspells"] = {
-				},
-				["shielding"] = 0,
-				["name"] = "Kelissa Stilwell",
-				["healing"] = 0,
-				["healed"] = {
-				},
-				["dispells"] = 0,
-				["ccbreaks"] = 0,
-				["maxhp"] = 326360,
-			}, -- [10]
-			{
-				["healingabsorbed"] = 0,
-				["class"] = "PALADIN",
-				["damaged"] = {
-				},
-				["auras"] = {
-				},
-				["role"] = "NONE",
-				["time"] = 160,
-				["interrupts"] = 0,
-				["damage"] = 0,
-				["damagespells"] = {
-				},
-				["power"] = {
-				},
-				["damagetaken"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["hp"] = 59999,
-						["amount"] = 20092,
-						["ts"] = 1489377513.893,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 16251,
-						["hp"] = 380519,
-						["ts"] = 1489377364.877,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 40630,
-						["hp"] = 314741,
-						["ts"] = 1489377372.157,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 32827,
-						["hp"] = 353031,
-						["ts"] = 1489377376.513,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 16251,
-						["hp"] = 279942,
-						["ts"] = 1489377388.126,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 40629,
-						["hp"] = 297226,
-						["ts"] = 1489377398.286,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 40630,
-						["hp"] = 281371,
-						["ts"] = 1489377406.741,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 40630,
-						["hp"] = 315298,
-						["ts"] = 1489377408.669,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 16251,
-						["hp"] = 329866,
-						["ts"] = 1489377409.224,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 40630,
-						["hp"] = 348201,
-						["ts"] = 1489377412.827,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 16251,
-						["hp"] = 317300,
-						["ts"] = 1489377421.66,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 32570,
-						["hp"] = 251887,
-						["ts"] = 1489377434.238,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 20089,
-						["hp"] = 18010,
-						["ts"] = 1489377445.995,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 19616,
-						["hp"] = 46177,
-						["ts"] = 1489377476.406,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 27424,
-						["hp"] = 70762,
-						["ts"] = 1489377503.073,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [15]
-					["pos"] = 2,
-				},
-				["id"] = "Creature-0-3777-1539-6259-106774-000046182B",
-				["overhealing"] = 0,
-				["damagetakenspells"] = {
-				},
-				["healingspells"] = {
-				},
-				["shielding"] = 0,
-				["name"] = "Shieldbearer Anak",
-				["healing"] = 0,
-				["healed"] = {
-				},
-				["dispells"] = 0,
-				["ccbreaks"] = 0,
-				["maxhp"] = 407949,
-			}, -- [11]
-			{
-				["healingabsorbed"] = 0,
-				["class"] = "PALADIN",
-				["damaged"] = {
-				},
-				["auras"] = {
-				},
-				["role"] = "NONE",
-				["time"] = 149,
-				["interrupts"] = 0,
-				["damage"] = 0,
-				["damagespells"] = {
-				},
-				["power"] = {
-				},
-				["damagetaken"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["hp"] = 100997,
-						["amount"] = 47966,
-						["ts"] = 1489377453.266,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["hp"] = 146526,
-						["amount"] = 50788,
-						["ts"] = 1489377456.59,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["hp"] = 189525,
-						["amount"] = 47966,
-						["ts"] = 1489377460.982,
-						["spellid"] = 82326,
-						["srcname"] = "Galinar",
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["hp"] = 24367,
-						["amount"] = 27180,
-						["ts"] = 1489377503.073,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["hp"] = 42151,
-						["amount"] = 19838,
-						["ts"] = 1489377513.893,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 16250,
-						["hp"] = 227383,
-						["ts"] = 1489377388.126,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 82073,
-						["hp"] = 222769,
-						["ts"] = 1489377394.719,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 40630,
-						["hp"] = 213675,
-						["ts"] = 1489377396.239,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 40630,
-						["hp"] = 227367,
-						["ts"] = 1489377401.727,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 40630,
-						["hp"] = 263790,
-						["ts"] = 1489377403.21,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 82073,
-						["hp"] = 316016,
-						["ts"] = 1489377404.944,
-						["spellid"] = 19750,
-						["srcname"] = "Galinar",
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 16038,
-						["hp"] = 326360,
-						["ts"] = 1489377409.224,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 32828,
-						["hp"] = 297422,
-						["ts"] = 1489377421.66,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 32828,
-						["hp"] = 287059,
-						["ts"] = 1489377434.238,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 20314,
-						["hp"] = 49839,
-						["ts"] = 1489377445.995,
-						["spellid"] = 225311,
-						["srcname"] = "Galinar",
-					}, -- [15]
-					["pos"] = 6,
-				},
-				["id"] = "Creature-0-3777-1539-6259-114242-000046182B",
-				["overhealing"] = 0,
-				["damagetakenspells"] = {
-				},
-				["healingspells"] = {
-				},
-				["shielding"] = 0,
-				["name"] = "Helda the Breaker",
-				["healing"] = 0,
-				["healed"] = {
-				},
-				["dispells"] = 0,
-				["ccbreaks"] = 0,
-				["maxhp"] = 326360,
-			}, -- [12]
-		},
-		["deaths"] = 4,
-		["mobs"] = {
-			["Horrific Aberration"] = {
-				["players"] = {
-					["Galinar"] = {
-						["taken"] = 0,
-						["done"] = 363963,
-						["role"] = "NONE",
-						["class"] = "PALADIN",
-					},
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 0,
-				["done"] = 363963,
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
-			},
-			["Flesh Spawn"] = {
-				["players"] = {
-					["Galinar"] = {
-						["taken"] = 0,
-						["done"] = 744237,
-						["role"] = "NONE",
-						["class"] = "PALADIN",
-					},
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 0,
-				["done"] = 744237,
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
-			},
-			["Masterless Faceless Corrupter"] = {
-				["players"] = {
-					["Galinar"] = {
-						["taken"] = 56167,
-						["done"] = 172316,
-						["role"] = "NONE",
-						["class"] = "PALADIN",
-					},
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 56167,
-				["done"] = 172316,
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
-			},
-			["Masterless Faceless One"] = {
-				["players"] = {
-				},
-				["hdone"] = 465437,
-				["htakenspell"] = {
-					["Entropic Regeneration"] = {
-						["min"] = 42312,
-						["crits"] = 0,
-						["max"] = 42313,
-						["healing"] = 465437,
-						["overhealing"] = 0,
-						["hits"] = 11,
-					},
-				},
-				["taken"] = 0,
-				["done"] = 0,
-				["htaken"] = 465437,
-				["hdonespell"] = {
-					["Entropic Regeneration"] = {
-						["min"] = 42312,
-						["crits"] = 0,
-						["max"] = 42313,
-						["healing"] = 465437,
-						["overhealing"] = 0,
-						["hits"] = 11,
-					},
-				},
-			},
-			["G'norz the Crazed"] = {
-				["players"] = {
-					["Galinar"] = {
-						["taken"] = 52950,
-						["done"] = 1389909,
-						["role"] = "NONE",
-						["class"] = "PALADIN",
-					},
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 52950,
-				["done"] = 1389909,
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
-			},
-			["Mordoth the Hunter"] = {
-				["players"] = {
-					["Galinar"] = {
-						["taken"] = 0,
-						["done"] = 919169,
-						["role"] = "NONE",
-						["class"] = "PALADIN",
-					},
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 0,
-				["done"] = 919169,
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
-			},
-		},
-		["mobtaken"] = 109117,
-		["healing"] = 12393013,
-		["power"] = {
-		},
-		["overhealing"] = 1228232,
-		["shielding"] = 0,
-		["name"] = "Total",
-		["starttime"] = 1489376404,
-		["damagetaken"] = 3657302,
-		["mobhdone"] = 465437,
-		["last_action"] = 1489376404,
-		["mobdone"] = 3589594,
-	},
 	["sets"] = {
 		{
 			["healingabsorbed"] = 0,
 			["dispells"] = 0,
 			["ccbreaks"] = 0,
-			["time"] = 192,
+			["time"] = 47,
 			["interrupts"] = 0,
-			["damage"] = 52950,
+			["damage"] = 25521523,
 			["players"] = {
 				{
-					["last"] = 1489376922,
+					["last"] = 1489449386,
 					["healingabsorbed"] = 0,
 					["class"] = "PALADIN",
 					["damaged"] = {
-						["G'norz the Crazed"] = 52950,
+						["Large Illusionary Forager"] = 841187,
+						["Small Illusionary Forager"] = 422190,
+						["Large Illusionary Ripper"] = 1016530,
+						["Small Illusionary Ripper"] = 1145915,
 					},
 					["auras"] = {
-						["Judgment"] = {
-							["name"] = "Judgment",
+						["Shield of the Righteous"] = {
+							["name"] = "Shield of the Righteous",
 							["active"] = 0,
-							["id"] = 214222,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 6,
-						},
-						["Divine Steed"] = {
-							["name"] = "Divine Steed",
-							["active"] = 0,
-							["id"] = 221883,
+							["id"] = 132403,
 							["auratype"] = "BUFF",
-							["uptime"] = 3,
+							["uptime"] = 18,
 						},
-					},
-					["role"] = "NONE",
-					["time"] = 189,
-					["interrupts"] = 0,
-					["damage"] = 52950,
-					["damagespells"] = {
-						["Judgment"] = {
-							["hitmin"] = 26617,
-							["id"] = 20271,
-							["min"] = 26617,
-							["hitamount"] = 26617,
-							["hitmax"] = 26617,
-							["hit"] = 1,
-							["school"] = 2,
-							["max"] = 26617,
-							["totalhits"] = 1,
-							["damage"] = 26617,
-						},
-						["Holy Shock"] = {
-							["hitmin"] = 26333,
-							["id"] = 25912,
-							["min"] = 26333,
-							["hitamount"] = 26333,
-							["hitmax"] = 26333,
-							["hit"] = 1,
-							["school"] = 2,
-							["max"] = 26333,
-							["totalhits"] = 1,
-							["damage"] = 26333,
-						},
-					},
-					["deaths"] = {
-						{
-							["ts"] = 1489376850.34714,
-							["maxhp"] = 598506,
-							["log"] = {
-								{
-									["absorb"] = 0,
-									["amount"] = 16251,
-									["hp"] = 382043,
-									["ts"] = 1489376816.00701,
-									["spellid"] = 225311,
-									["srcname"] = "Galinar",
-								}, -- [1]
-								{
-									["ts"] = 1489376820.21502,
-									["amount"] = -13586,
-									["hp"] = 368457,
-									["spellid"] = 215705,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [2]
-								{
-									["ts"] = 1489376821.59703,
-									["amount"] = -26219,
-									["hp"] = 342238,
-									["spellid"] = 215690,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [3]
-								{
-									["ts"] = 1489376823.46904,
-									["amount"] = -51521,
-									["hp"] = 342238,
-									["spellid"] = 88163,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [4]
-								{
-									["ts"] = 1489376825.47905,
-									["amount"] = -57020,
-									["hp"] = 290717,
-									["spellid"] = 88163,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [5]
-								{
-									["absorb"] = 0,
-									["amount"] = 32829,
-									["hp"] = 266526,
-									["ts"] = 1489376832.30506,
-									["spellid"] = 225311,
-									["srcname"] = "Galinar",
-								}, -- [6]
-								{
-									["ts"] = 1489376835.78407,
-									["amount"] = -26318,
-									["hp"] = 240208,
-									["spellid"] = 215690,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [7]
-								{
-									["ts"] = 1489376837.59408,
-									["amount"] = -56271,
-									["hp"] = 240208,
-									["spellid"] = 88163,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [8]
-								{
-									["ts"] = 1489376839.60109,
-									["amount"] = -45958,
-									["hp"] = 183937,
-									["spellid"] = 88163,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [9]
-								{
-									["ts"] = 1489376841.6041,
-									["amount"] = -55032,
-									["hp"] = 137979,
-									["spellid"] = 88163,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [10]
-								{
-									["ts"] = 1489376843.61911,
-									["amount"] = -56759,
-									["hp"] = 82947,
-									["spellid"] = 88163,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [11]
-								{
-									["ts"] = 1489376849.28012,
-									["amount"] = -14163,
-									["hp"] = 12025,
-									["spellid"] = 215705,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [12]
-								{
-									["ts"] = 1489376850.31913,
-									["amount"] = -22918,
-									["hp"] = 1,
-									["spellid"] = 215690,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [13]
-								{
-									["spellname"] = "Galinar dies",
-									["ts"] = 1489376850.34714,
-									["spellid"] = 41220,
-									["hp"] = 0,
-								}, -- [14]
-								["pos"] = 15,
-							},
-						}, -- [1]
-						{
-							["ts"] = 1489376793.97815,
-							["maxhp"] = 598506,
-							["log"] = {
-								{
-									["ts"] = 1489376762.01501,
-									["amount"] = -13578,
-									["hp"] = 364484,
-									["spellid"] = 215705,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [1]
-								{
-									["ts"] = 1489376762.93302,
-									["amount"] = -26368,
-									["hp"] = 338116,
-									["spellid"] = 215690,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [2]
-								{
-									["hp"] = 338116,
-									["amount"] = -64696,
-									["ts"] = 1489376764.46503,
-									["spellid"] = 88163,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [3]
-								{
-									["ts"] = 1489376766.47204,
-									["amount"] = -45762,
-									["hp"] = 273420,
-									["spellid"] = 88163,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [4]
-								{
-									["absorb"] = 0,
-									["hp"] = 239628,
-									["amount"] = 11970,
-									["ts"] = 1489376767.29905,
-									["spellid"] = 228256,
-									["srcname"] = "Efrina",
-								}, -- [5]
-								{
-									["hp"] = 239628,
-									["amount"] = -56603,
-									["ts"] = 1489376768.47506,
-									["spellid"] = 88163,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [6]
-								{
-									["hp"] = 183025,
-									["amount"] = -53677,
-									["ts"] = 1489376770.47007,
-									["spellid"] = 88163,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [7]
-								{
-									["ts"] = 1489376776.04208,
-									["absorb"] = 0,
-									["amount"] = 32829,
-									["hp"] = 162177,
-									["spellid"] = 225311,
-									["srcname"] = "Galinar",
-								}, -- [8]
-								{
-									["hp"] = 135859,
-									["amount"] = -26318,
-									["ts"] = 1489376777.66309,
-									["spellid"] = 215690,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [9]
-								{
-									["hp"] = 135859,
-									["amount"] = -55618,
-									["ts"] = 1489376779.3981,
-									["spellid"] = 88163,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [10]
-								{
-									["hp"] = 80241,
-									["amount"] = -59378,
-									["ts"] = 1489376781.40311,
-									["spellid"] = 88163,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [11]
-								{
-									["absorb"] = 0,
-									["hp"] = 37115,
-									["amount"] = 16252,
-									["ts"] = 1489376791.99412,
-									["spellid"] = 225311,
-									["srcname"] = "Galinar",
-								}, -- [12]
-								{
-									["ts"] = 1489376792.25113,
-									["amount"] = -23558,
-									["hp"] = 13557,
-									["spellid"] = 215690,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [13]
-								{
-									["ts"] = 1489376793.95514,
-									["amount"] = -63201,
-									["hp"] = 13557,
-									["spellid"] = 88163,
-									["srcname"] = "G'norz the Crazed",
-								}, -- [14]
-								{
-									["ts"] = 1489376793.97815,
-									["spellname"] = "Galinar dies",
-									["hp"] = 0,
-									["spellid"] = 41220,
-								}, -- [15]
-								["pos"] = 1,
-							},
-						}, -- [2]
-					},
-					["damagetaken"] = 1412479,
-					["shielding"] = 0,
-					["id"] = "Player-1169-06EEB51C",
-					["first"] = 1489376733,
-					["power"] = {
-					},
-					["damagetakenspells"] = {
-						["Void Bolt"] = {
-							["crushing"] = 0,
-							["id"] = 215690,
-							["min"] = 22918,
-							["school"] = 32,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-							["name"] = "Void Bolt",
-							["blocked"] = 0,
-							["totalhits"] = 11,
-							["resisted"] = 0,
-							["max"] = 26417,
-							["damage"] = 276933,
-						},
-						["Light of the Martyr"] = {
-							["crushing"] = 0,
-							["id"] = 196917,
-							["min"] = 22570,
-							["school"] = 2,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-							["name"] = "Light of the Martyr",
-							["blocked"] = 0,
-							["totalhits"] = 1,
-							["resisted"] = 0,
-							["max"] = 22570,
-							["damage"] = 22570,
-						},
-						["Gasp of Unmaking"] = {
-							["crushing"] = 0,
-							["id"] = 215705,
-							["min"] = 9918,
-							["school"] = 32,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-							["name"] = "Gasp of Unmaking",
-							["blocked"] = 0,
-							["totalhits"] = 8,
-							["resisted"] = 0,
-							["max"] = 18319,
-							["damage"] = 109176,
-						},
-						["Attack"] = {
-							["crushing"] = 0,
-							["id"] = 6603,
-							["min"] = 34357,
-							["school"] = 1,
-							["critical"] = 1,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-							["name"] = "Attack",
-							["blocked"] = 19613,
-							["totalhits"] = 19,
-							["resisted"] = 0,
-							["max"] = 81440,
-							["damage"] = 1003800,
-						},
-					},
-					["overhealing"] = 7866,
-					["healingspells"] = {
-						["Flash of Light"] = {
-							["shielding"] = 0,
-							["id"] = 19750,
-							["healing"] = 831440,
-							["min"] = 40217,
-							["name"] = "Flash of Light",
-							["max"] = 101548,
-							["critical"] = 1,
-							["absorbed"] = 0,
-							["overhealing"] = 0,
-							["hits"] = 16,
-						},
-						["Holy Light"] = {
-							["shielding"] = 0,
-							["id"] = 82326,
-							["healing"] = 1054225,
-							["min"] = 36487,
-							["name"] = "Holy Light",
-							["max"] = 96892,
-							["critical"] = 3,
-							["absorbed"] = 0,
-							["overhealing"] = 0,
-							["hits"] = 21,
-						},
-						["Light of the Martyr"] = {
-							["shielding"] = 0,
-							["id"] = 183998,
-							["healing"] = 45143,
-							["min"] = 45143,
-							["name"] = "Light of the Martyr",
-							["max"] = 45143,
-							["critical"] = 0,
-							["absorbed"] = 0,
-							["overhealing"] = 0,
-							["hits"] = 1,
-						},
-						["Light of Dawn"] = {
-							["shielding"] = 0,
-							["id"] = 225311,
-							["healing"] = 1000580,
-							["min"] = 15737,
-							["name"] = "Light of Dawn",
-							["max"] = 41035,
-							["critical"] = 11,
-							["absorbed"] = 0,
-							["overhealing"] = 7866,
-							["hits"] = 45,
-						},
-					},
-					["name"] = "Galinar",
-					["healing"] = 2931388,
-					["healed"] = {
-						["Creature-0-3777-1539-6259-106429-0000461494"] = {
-							["role"] = "NONE",
-							["name"] = "Travard",
-							["amount"] = 1810176,
-							["class"] = "PALADIN",
-							["shielding"] = 0,
-						},
-						["Player-1169-06EEB51C"] = {
-							["role"] = "NONE",
-							["name"] = "Galinar",
-							["amount"] = 261329,
-							["class"] = "PALADIN",
-							["shielding"] = 0,
-						},
-						["Creature-0-3777-1539-6259-106371-0000461494"] = {
-							["role"] = "NONE",
-							["name"] = "Efrina",
-							["amount"] = 525287,
-							["class"] = "PALADIN",
-							["shielding"] = 0,
-						},
-						["Creature-0-3777-1539-6259-106370-0000461494"] = {
-							["role"] = "NONE",
-							["name"] = "Duvall",
-							["amount"] = 334596,
-							["class"] = "PALADIN",
-							["shielding"] = 0,
-						},
-					},
-					["maxhp"] = 598506,
-					["dispells"] = 0,
-					["ccbreaks"] = 0,
-				}, -- [1]
-			},
-			["deaths"] = 2,
-			["mobs"] = {
-				["G'norz the Crazed"] = {
-					["players"] = {
-						["Galinar"] = {
-							["taken"] = 52950,
-							["done"] = 1389909,
-							["role"] = "NONE",
-							["class"] = "PALADIN",
-						},
-					},
-					["hdone"] = 0,
-					["htakenspell"] = {
-					},
-					["taken"] = 52950,
-					["done"] = 1389909,
-					["htaken"] = 0,
-					["hdonespell"] = {
-					},
-				},
-			},
-			["mobtaken"] = 52950,
-			["endtime"] = 1489376923,
-			["healing"] = 2931388,
-			["starttime"] = 1489376731,
-			["power"] = {
-			},
-			["overhealing"] = 7866,
-			["shielding"] = 0,
-			["name"] = "G'norz the Crazed",
-			["mobname"] = "G'norz the Crazed",
-			["damagetaken"] = 1412479,
-			["mobhdone"] = 0,
-			["last_action"] = 1489376731,
-			["mobdone"] = 1389909,
-		}, -- [1]
-		{
-			["healingabsorbed"] = 0,
-			["dispells"] = 0,
-			["ccbreaks"] = 0,
-			["time"] = 119,
-			["interrupts"] = 0,
-			["damage"] = 56167,
-			["players"] = {
-				{
-					["last"] = 1489376712,
-					["healingabsorbed"] = 0,
-					["class"] = "PALADIN",
-					["damaged"] = {
-						["Masterless Faceless Corrupter"] = 56167,
-					},
-					["auras"] = {
-						["Judgment"] = {
-							["name"] = "Judgment",
+						["Eye of Tyr"] = {
+							["name"] = "Eye of Tyr",
 							["active"] = 0,
-							["id"] = 214222,
+							["id"] = 209202,
 							["auratype"] = "DEBUFF",
-							["uptime"] = 6,
+							["uptime"] = 9,
 						},
-						["Forbearance"] = {
-							["name"] = "Forbearance",
+						["Blessed Hammer"] = {
+							["name"] = "Blessed Hammer",
 							["active"] = 0,
-							["id"] = 25771,
+							["id"] = 204301,
 							["auratype"] = "DEBUFF",
-							["uptime"] = 30,
+							["uptime"] = 19,
+						},
+						["Consecration"] = {
+							["name"] = "Consecration",
+							["active"] = 0,
+							["id"] = 188370,
+							["auratype"] = "BUFF",
+							["uptime"] = 43,
+						},
+						["Avenger's Shield"] = {
+							["name"] = "Avenger's Shield",
+							["active"] = 0,
+							["id"] = 31935,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 18,
 						},
 						["Wrath of Elune"] = {
 							["name"] = "Wrath of Elune",
@@ -3147,206 +62,347 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 15,
 						},
+						["Judgment of Light"] = {
+							["name"] = "Judgment of Light",
+							["active"] = 0,
+							["id"] = 196941,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 42,
+						},
 					},
 					["role"] = "NONE",
-					["time"] = 114,
+					["time"] = 46,
 					["interrupts"] = 0,
-					["damage"] = 56167,
+					["damage"] = 3425822,
 					["damagespells"] = {
-						["Judgment"] = {
-							["hitmin"] = 26617,
-							["id"] = 20271,
-							["min"] = 26617,
-							["hitamount"] = 26617,
-							["hitmax"] = 26617,
-							["hit"] = 1,
+						["Shield of the Righteous"] = {
+							["hitmin"] = 59671,
+							["id"] = 53600,
+							["min"] = 59671,
+							["hitamount"] = 247945,
+							["hitmax"] = 65752,
+							["hit"] = 4,
 							["school"] = 2,
-							["max"] = 26617,
-							["totalhits"] = 1,
-							["damage"] = 26617,
+							["max"] = 65752,
+							["totalhits"] = 4,
+							["damage"] = 247945,
+						},
+						["Eye of Tyr"] = {
+							["hitmin"] = 38288,
+							["criticalamount"] = 78108,
+							["id"] = 209202,
+							["criticalmin"] = 78108,
+							["hitamount"] = 76576,
+							["critical"] = 1,
+							["min"] = 38288,
+							["criticalmax"] = 78108,
+							["hitmax"] = 38288,
+							["hit"] = 2,
+							["school"] = 2,
+							["max"] = 78108,
+							["totalhits"] = 3,
+							["damage"] = 154684,
+						},
+						["Judgment"] = {
+							["hitmin"] = 46617,
+							["id"] = 20271,
+							["min"] = 46617,
+							["hitamount"] = 245071,
+							["hitmax"] = 51368,
+							["hit"] = 5,
+							["school"] = 2,
+							["max"] = 51368,
+							["totalhits"] = 5,
+							["damage"] = 245071,
+						},
+						["Blessed Hammer"] = {
+							["hitmin"] = 5550,
+							["criticalamount"] = 84632,
+							["id"] = 204301,
+							["criticalmin"] = 16173,
+							["hitamount"] = 294325,
+							["critical"] = 5,
+							["min"] = 5550,
+							["criticalmax"] = 17822,
+							["hitmax"] = 8736,
+							["hit"] = 36,
+							["school"] = 2,
+							["max"] = 17822,
+							["totalhits"] = 41,
+							["damage"] = 378957,
 						},
 						["Wrath of Elune"] = {
-							["hitmin"] = 1233,
+							["hitmin"] = 1428,
 							["id"] = 202912,
-							["min"] = 1233,
-							["hitamount"] = 1233,
-							["hitmax"] = 1233,
-							["hit"] = 1,
+							["min"] = 1428,
+							["hitamount"] = 41439,
+							["hitmax"] = 1429,
+							["hit"] = 29,
 							["school"] = 2,
-							["max"] = 1233,
-							["totalhits"] = 1,
-							["damage"] = 1233,
+							["max"] = 1429,
+							["totalhits"] = 29,
+							["damage"] = 41439,
+						},
+						["Avenger's Shield"] = {
+							["hitmin"] = 54076,
+							["criticalamount"] = 350758,
+							["id"] = 31935,
+							["criticalmin"] = 110318,
+							["hitamount"] = 909835,
+							["critical"] = 3,
+							["min"] = 54076,
+							["criticalmax"] = 121563,
+							["hitmax"] = 59589,
+							["hit"] = 16,
+							["school"] = 2,
+							["max"] = 121563,
+							["totalhits"] = 19,
+							["damage"] = 1260593,
+						},
+						["Consecration"] = {
+							["hitmin"] = 3730,
+							["criticalamount"] = 276147,
+							["id"] = 81297,
+							["criticalmin"] = 7610,
+							["hitamount"] = 584420,
+							["critical"] = 34,
+							["min"] = 3730,
+							["criticalmax"] = 8386,
+							["hitmax"] = 4111,
+							["hit"] = 148,
+							["school"] = 2,
+							["max"] = 8386,
+							["totalhits"] = 182,
+							["damage"] = 860567,
 						},
 						["Attack"] = {
-							["criticalamount"] = 9128,
+							["hitmin"] = 8429,
+							["criticalamount"] = 91425,
 							["id"] = 6603,
-							["min"] = 9128,
-							["criticalmax"] = 9128,
-							["critical"] = 1,
-							["criticalmin"] = 9128,
+							["hitmax"] = 9949,
+							["hitamount"] = 145141,
+							["criticalmin"] = 17551,
+							["min"] = 8429,
+							["criticalmax"] = 19057,
+							["critical"] = 5,
+							["hit"] = 16,
 							["school"] = 1,
-							["max"] = 9128,
-							["totalhits"] = 1,
-							["damage"] = 9128,
-						},
-						["Holy Shock"] = {
-							["hitmin"] = 19189,
-							["id"] = 25912,
-							["min"] = 19189,
-							["hitamount"] = 19189,
-							["hitmax"] = 19189,
-							["hit"] = 1,
-							["school"] = 2,
-							["max"] = 19189,
-							["totalhits"] = 1,
-							["damage"] = 19189,
+							["max"] = 19057,
+							["totalhits"] = 21,
+							["damage"] = 236566,
 						},
 					},
-					["damagetaken"] = 514385,
-					["shielding"] = 0,
+					["damagetaken"] = 4169313,
+					["shielding"] = 767554,
 					["id"] = "Player-1169-06EEB51C",
-					["first"] = 1489376598,
+					["first"] = 1489449340,
 					["power"] = {
 					},
 					["damagetakenspells"] = {
-						["Light of the Martyr"] = {
+						["Chomp"] = {
 							["crushing"] = 0,
-							["id"] = 196917,
-							["min"] = 22569,
-							["school"] = 2,
+							["id"] = 144113,
+							["min"] = 3322,
+							["school"] = 1,
 							["critical"] = 0,
 							["glancing"] = 0,
-							["absorbed"] = 0,
-							["name"] = "Light of the Martyr",
+							["absorbed"] = 28050,
+							["name"] = "Chomp",
 							["blocked"] = 0,
-							["totalhits"] = 2,
+							["totalhits"] = 18,
 							["resisted"] = 0,
-							["max"] = 22569,
-							["damage"] = 45138,
+							["max"] = 15216,
+							["damage"] = 148144,
 						},
 						["Attack"] = {
 							["crushing"] = 0,
 							["id"] = 6603,
-							["min"] = 2931,
+							["min"] = 7564,
 							["school"] = 1,
-							["critical"] = 4,
+							["critical"] = 0,
 							["glancing"] = 0,
-							["absorbed"] = 0,
+							["absorbed"] = 737002,
 							["name"] = "Attack",
-							["blocked"] = 1256,
-							["totalhits"] = 61,
+							["blocked"] = 338543,
+							["totalhits"] = 86,
 							["resisted"] = 0,
-							["max"] = 32003,
-							["damage"] = 469247,
+							["max"] = 130243,
+							["damage"] = 4021169,
 						},
 					},
-					["overhealing"] = 443898,
+					["overhealing"] = 8712,
 					["healingspells"] = {
-						["Holy Light"] = {
-							["shielding"] = 0,
-							["id"] = 82326,
-							["healing"] = 392379,
-							["min"] = 37883,
-							["name"] = "Holy Light",
-							["max"] = 47966,
+						["Last Defender"] = {
+							["shielding"] = 574930,
+							["id"] = 203791,
+							["healing"] = 574930,
+							["min"] = 666,
+							["name"] = "Last Defender",
+							["max"] = 21511,
 							["critical"] = 0,
 							["absorbed"] = 0,
 							["overhealing"] = 0,
-							["hits"] = 9,
+							["hits"] = 105,
 						},
-						["Flash of Light"] = {
-							["shielding"] = 0,
-							["id"] = 19750,
-							["healing"] = 1323364,
-							["min"] = 39127,
-							["name"] = "Flash of Light",
-							["max"] = 82074,
-							["critical"] = 3,
-							["absorbed"] = 0,
-							["overhealing"] = 0,
-							["hits"] = 28,
-						},
-						["Light of the Martyr"] = {
-							["shielding"] = 0,
-							["id"] = 183998,
-							["healing"] = 90286,
-							["min"] = 45143,
-							["name"] = "Light of the Martyr",
-							["max"] = 45143,
+						["Blessed Hammer"] = {
+							["shielding"] = 192624,
+							["id"] = 229976,
+							["healing"] = 192624,
+							["min"] = 1031,
+							["name"] = "Blessed Hammer",
+							["max"] = 15841,
 							["critical"] = 0,
 							["absorbed"] = 0,
 							["overhealing"] = 0,
-							["hits"] = 2,
+							["hits"] = 32,
 						},
-						["Light of Dawn"] = {
+						["Judgment of Light"] = {
 							["shielding"] = 0,
-							["id"] = 225311,
-							["healing"] = 519332,
-							["min"] = 0,
-							["name"] = "Light of Dawn",
-							["max"] = 41035,
-							["critical"] = 4,
+							["id"] = 183811,
+							["healing"] = 90455,
+							["min"] = 1823,
+							["name"] = "Judgment of Light",
+							["max"] = 5116,
+							["critical"] = 8,
 							["absorbed"] = 0,
-							["overhealing"] = 110983,
-							["hits"] = 33,
-						},
-						["Lay on Hands"] = {
-							["shielding"] = 0,
-							["id"] = 633,
-							["healing"] = 265590,
-							["min"] = 265590,
-							["name"] = "Lay on Hands",
-							["max"] = 265590,
-							["critical"] = 0,
-							["absorbed"] = 0,
-							["overhealing"] = 332915,
-							["hits"] = 1,
+							["overhealing"] = 8712,
+							["hits"] = 31,
 						},
 					},
 					["name"] = "Galinar",
-					["healing"] = 2590951,
+					["healing"] = 858009,
 					["healed"] = {
-						["Creature-0-3777-1539-6259-106429-0000461494"] = {
+						["Creature-0-3018-1148-11332-71828-00004730BF"] = {
 							["role"] = "NONE",
-							["name"] = "Travard",
-							["amount"] = 1159439,
-							["class"] = "PALADIN",
+							["name"] = "Sikari the Mistweaver",
+							["amount"] = 11647,
+							["class"] = "MONK",
 							["shielding"] = 0,
 						},
 						["Player-1169-06EEB51C"] = {
 							["role"] = "NONE",
 							["name"] = "Galinar",
-							["amount"] = 84361,
+							["amount"] = 846362,
 							["class"] = "PALADIN",
-							["shielding"] = 0,
-						},
-						["Creature-0-3777-1539-6259-106370-0000461494"] = {
-							["role"] = "NONE",
-							["name"] = "Duvall",
-							["amount"] = 519798,
-							["class"] = "PALADIN",
-							["shielding"] = 0,
-						},
-						["Creature-0-3777-1539-6259-106371-0000461494"] = {
-							["role"] = "NONE",
-							["name"] = "Efrina",
-							["amount"] = 827353,
-							["class"] = "PALADIN",
-							["shielding"] = 0,
+							["shielding"] = 767554,
 						},
 					},
-					["maxhp"] = 598506,
+					["maxhp"] = 853920,
 					["dispells"] = 0,
 					["ccbreaks"] = 0,
 				}, -- [1]
+				{
+					["last"] = 1489449386,
+					["healingabsorbed"] = 0,
+					["class"] = "MONK",
+					["damaged"] = {
+						["Large Illusionary Forager"] = 4552674,
+						["Small Illusionary Forager"] = 4941054,
+						["Large Illusionary Ripper"] = 8621169,
+						["Small Illusionary Ripper"] = 3980804,
+					},
+					["auras"] = {
+						["Crackling Jade Thunderstorm"] = {
+							["name"] = "Crackling Jade Thunderstorm",
+							["active"] = 0,
+							["id"] = 144076,
+							["auratype"] = "BUFF",
+							["uptime"] = 13,
+						},
+					},
+					["role"] = "NONE",
+					["time"] = 45,
+					["interrupts"] = 0,
+					["damage"] = 22095701,
+					["damagespells"] = {
+						["Focused Chi Burst"] = {
+							["hitmin"] = 754161,
+							["id"] = 144103,
+							["min"] = 754161,
+							["hitamount"] = 8651613,
+							["hitmax"] = 820790,
+							["hit"] = 11,
+							["school"] = 8,
+							["max"] = 820790,
+							["totalhits"] = 11,
+							["damage"] = 8651613,
+						},
+						["Crackling Jade Thunderstorm"] = {
+							["hitmin"] = 34909,
+							["id"] = 144077,
+							["min"] = 34909,
+							["hitamount"] = 13444088,
+							["hitmax"] = 41017,
+							["hit"] = 355,
+							["school"] = 8,
+							["max"] = 41017,
+							["totalhits"] = 355,
+							["damage"] = 13444088,
+						},
+					},
+					["damagetaken"] = 218848,
+					["shielding"] = 0,
+					["id"] = "Creature-0-3018-1148-11332-71828-00004730BF",
+					["first"] = 1489449341,
+					["power"] = {
+					},
+					["damagetakenspells"] = {
+						["Chomp"] = {
+							["crushing"] = 0,
+							["id"] = 144113,
+							["min"] = 1823,
+							["school"] = 1,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+							["name"] = "Chomp",
+							["blocked"] = 0,
+							["totalhits"] = 9,
+							["resisted"] = 0,
+							["max"] = 4668,
+							["damage"] = 19252,
+						},
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["min"] = 15470,
+							["school"] = 1,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+							["name"] = "Attack",
+							["blocked"] = 6630,
+							["totalhits"] = 4,
+							["resisted"] = 0,
+							["max"] = 77832,
+							["damage"] = 199596,
+						},
+					},
+					["overhealing"] = 0,
+					["healingspells"] = {
+					},
+					["name"] = "Sikari the Mistweaver",
+					["healing"] = 0,
+					["healed"] = {
+					},
+					["maxhp"] = 1727169,
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+				}, -- [2]
 			},
 			["deaths"] = 0,
 			["mobs"] = {
-				["Masterless Faceless Corrupter"] = {
+				["Large Illusionary Forager"] = {
 					["players"] = {
+						["Sikari the Mistweaver"] = {
+							["taken"] = 4552674,
+							["done"] = 34722,
+							["role"] = "NONE",
+							["class"] = "MONK",
+						},
 						["Galinar"] = {
-							["taken"] = 56167,
-							["done"] = 172316,
+							["taken"] = 841187,
+							["done"] = 454731,
 							["role"] = "NONE",
 							["class"] = "PALADIN",
 						},
@@ -3354,17 +410,23 @@ SkadaPerCharDB = {
 					["hdone"] = 0,
 					["htakenspell"] = {
 					},
-					["taken"] = 56167,
-					["done"] = 172316,
+					["taken"] = 5393861,
+					["done"] = 489453,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
 				},
-				["Flesh Spawn"] = {
+				["Small Illusionary Forager"] = {
 					["players"] = {
+						["Sikari the Mistweaver"] = {
+							["taken"] = 4941054,
+							["done"] = 0,
+							["role"] = "NONE",
+							["class"] = "MONK",
+						},
 						["Galinar"] = {
-							["taken"] = 0,
-							["done"] = 296931,
+							["taken"] = 422190,
+							["done"] = 406149,
 							["role"] = "NONE",
 							["class"] = "PALADIN",
 						},
@@ -3372,27 +434,2090 @@ SkadaPerCharDB = {
 					["hdone"] = 0,
 					["htakenspell"] = {
 					},
-					["taken"] = 0,
-					["done"] = 296931,
+					["taken"] = 5363244,
+					["done"] = 406149,
+					["htaken"] = 0,
+					["hdonespell"] = {
+					},
+				},
+				["Large Illusionary Ripper"] = {
+					["players"] = {
+						["Sikari the Mistweaver"] = {
+							["taken"] = 8621169,
+							["done"] = 146123,
+							["role"] = "NONE",
+							["class"] = "MONK",
+						},
+						["Galinar"] = {
+							["taken"] = 1016530,
+							["done"] = 2379272,
+							["role"] = "NONE",
+							["class"] = "PALADIN",
+						},
+					},
+					["hdone"] = 0,
+					["htakenspell"] = {
+					},
+					["taken"] = 9637699,
+					["done"] = 2525395,
+					["htaken"] = 0,
+					["hdonespell"] = {
+					},
+				},
+				["Small Illusionary Ripper"] = {
+					["players"] = {
+						["Sikari the Mistweaver"] = {
+							["taken"] = 3980804,
+							["done"] = 38003,
+							["role"] = "NONE",
+							["class"] = "MONK",
+						},
+						["Galinar"] = {
+							["taken"] = 1145915,
+							["done"] = 929161,
+							["role"] = "NONE",
+							["class"] = "PALADIN",
+						},
+					},
+					["hdone"] = 0,
+					["htakenspell"] = {
+					},
+					["taken"] = 5126719,
+					["done"] = 967164,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
 				},
 			},
-			["mobtaken"] = 56167,
-			["endtime"] = 1489376716,
-			["healing"] = 2590951,
-			["starttime"] = 1489376597,
+			["mobtaken"] = 25521523,
+			["endtime"] = 1489449387,
+			["healing"] = 858009,
+			["starttime"] = 1489449340,
 			["power"] = {
 			},
-			["overhealing"] = 443898,
-			["shielding"] = 0,
-			["name"] = "Masterless Faceless Corrupter",
-			["mobname"] = "Masterless Faceless Corrupter",
-			["damagetaken"] = 514385,
+			["overhealing"] = 8712,
+			["shielding"] = 767554,
+			["name"] = "Small Illusionary Ripper",
+			["mobname"] = "Small Illusionary Ripper",
+			["damagetaken"] = 4388161,
 			["mobhdone"] = 0,
-			["last_action"] = 1489376597,
-			["mobdone"] = 469247,
+			["last_action"] = 1489449340,
+			["mobdone"] = 4388161,
+		}, -- [1]
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 45,
+			["interrupts"] = 0,
+			["damage"] = 22538226,
+			["players"] = {
+				{
+					["last"] = 1489449322,
+					["healingabsorbed"] = 0,
+					["class"] = "MONK",
+					["damaged"] = {
+						["Large Illusionary Ripper"] = 7018233,
+						["Small Illusionary Forager"] = 13310288,
+					},
+					["auras"] = {
+						["Renewing Mist"] = {
+							["name"] = "Renewing Mist",
+							["active"] = 0,
+							["id"] = 144080,
+							["auratype"] = "BUFF",
+							["uptime"] = 29,
+						},
+						["Crackling Jade Thunderstorm"] = {
+							["name"] = "Crackling Jade Thunderstorm",
+							["active"] = 0,
+							["id"] = 144076,
+							["auratype"] = "BUFF",
+							["uptime"] = 15,
+						},
+					},
+					["role"] = "NONE",
+					["time"] = 36,
+					["interrupts"] = 0,
+					["damage"] = 20328521,
+					["damagespells"] = {
+						["Focused Chi Burst"] = {
+							["hitmin"] = 733379,
+							["id"] = 144103,
+							["min"] = 733379,
+							["hitamount"] = 3979442,
+							["hitmax"] = 843121,
+							["hit"] = 5,
+							["school"] = 8,
+							["max"] = 843121,
+							["totalhits"] = 5,
+							["damage"] = 3979442,
+						},
+						["Crackling Jade Thunderstorm"] = {
+							["hitmin"] = 34909,
+							["id"] = 144077,
+							["min"] = 34909,
+							["hitamount"] = 16349079,
+							["hitmax"] = 41017,
+							["hit"] = 430,
+							["school"] = 8,
+							["max"] = 41017,
+							["totalhits"] = 430,
+							["damage"] = 16349079,
+						},
+					},
+					["damagetaken"] = 307775,
+					["shielding"] = 0,
+					["id"] = "Creature-0-3018-1148-11332-71828-00004730BF",
+					["first"] = 1489449286,
+					["power"] = {
+					},
+					["damagetakenspells"] = {
+						["Chomp"] = {
+							["crushing"] = 0,
+							["id"] = 144113,
+							["min"] = 3645,
+							["school"] = 1,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+							["name"] = "Chomp",
+							["blocked"] = 0,
+							["totalhits"] = 13,
+							["resisted"] = 0,
+							["max"] = 7292,
+							["damage"] = 81996,
+						},
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["min"] = 11113,
+							["school"] = 1,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+							["name"] = "Attack",
+							["blocked"] = 4763,
+							["totalhits"] = 10,
+							["resisted"] = 0,
+							["max"] = 75715,
+							["damage"] = 225779,
+						},
+					},
+					["overhealing"] = 0,
+					["healingspells"] = {
+					},
+					["name"] = "Sikari the Mistweaver",
+					["healing"] = 0,
+					["healed"] = {
+					},
+					["maxhp"] = 1727169,
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+				}, -- [1]
+				{
+					["last"] = 1489449324,
+					["healingabsorbed"] = 0,
+					["class"] = "PALADIN",
+					["damaged"] = {
+						["Large Illusionary Ripper"] = 1167667,
+						["Small Illusionary Forager"] = 1042038,
+					},
+					["auras"] = {
+						["Guardian of Ancient Kings"] = {
+							["name"] = "Guardian of Ancient Kings",
+							["active"] = 0,
+							["id"] = 86659,
+							["auratype"] = "BUFF",
+							["uptime"] = 8,
+						},
+						["Forbearance"] = {
+							["name"] = "Forbearance",
+							["active"] = 0,
+							["id"] = 25771,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 25,
+						},
+						["Blessed Hammer"] = {
+							["name"] = "Blessed Hammer",
+							["active"] = 0,
+							["id"] = 204301,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 12,
+						},
+						["Judgment of Light"] = {
+							["name"] = "Judgment of Light",
+							["active"] = 0,
+							["id"] = 196941,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 34,
+						},
+						["Shield of the Righteous"] = {
+							["name"] = "Shield of the Righteous",
+							["active"] = 0,
+							["id"] = 132403,
+							["auratype"] = "BUFF",
+							["uptime"] = 4,
+						},
+						["Blessing of Spellwarding"] = {
+							["name"] = "Blessing of Spellwarding",
+							["active"] = 0,
+							["id"] = 204018,
+							["auratype"] = "BUFF",
+							["uptime"] = 10,
+						},
+						["Consecration"] = {
+							["name"] = "Consecration",
+							["active"] = 0,
+							["id"] = 188370,
+							["auratype"] = "BUFF",
+							["uptime"] = 24,
+						},
+						["Avenger's Shield"] = {
+							["name"] = "Avenger's Shield",
+							["active"] = 0,
+							["id"] = 31935,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 12,
+						},
+						["Ardent Defender"] = {
+							["name"] = "Ardent Defender",
+							["active"] = 0,
+							["id"] = 31850,
+							["auratype"] = "BUFF",
+							["uptime"] = 8,
+						},
+					},
+					["role"] = "NONE",
+					["time"] = 37,
+					["interrupts"] = 0,
+					["damage"] = 2209705,
+					["damagespells"] = {
+						["Shield of the Righteous"] = {
+							["hitmin"] = 65752,
+							["id"] = 53600,
+							["min"] = 65752,
+							["hitamount"] = 65752,
+							["hitmax"] = 65752,
+							["hit"] = 1,
+							["school"] = 2,
+							["max"] = 65752,
+							["totalhits"] = 1,
+							["damage"] = 65752,
+						},
+						["Blessed Hammer"] = {
+							["hitmin"] = 7710,
+							["criticalamount"] = 88717,
+							["id"] = 204301,
+							["hitmax"] = 8737,
+							["hitamount"] = 219483,
+							["criticalmin"] = 17429,
+							["min"] = 7710,
+							["criticalmax"] = 17822,
+							["critical"] = 5,
+							["hit"] = 26,
+							["school"] = 2,
+							["max"] = 17822,
+							["totalhits"] = 31,
+							["damage"] = 308200,
+						},
+						["Judgment"] = {
+							["hitmin"] = 45336,
+							["criticalamount"] = 299750,
+							["id"] = 20271,
+							["hitmax"] = 51367,
+							["hitamount"] = 96703,
+							["criticalmin"] = 92485,
+							["min"] = 45336,
+							["criticalmax"] = 104789,
+							["critical"] = 3,
+							["hit"] = 2,
+							["school"] = 2,
+							["max"] = 104789,
+							["totalhits"] = 5,
+							["damage"] = 396453,
+						},
+						["Avenger's Shield"] = {
+							["hitmin"] = 52591,
+							["criticalamount"] = 121561,
+							["id"] = 31935,
+							["criticalmin"] = 121561,
+							["hitamount"] = 403128,
+							["critical"] = 1,
+							["min"] = 52591,
+							["criticalmax"] = 121561,
+							["hitmax"] = 59590,
+							["hit"] = 7,
+							["school"] = 2,
+							["max"] = 121561,
+							["totalhits"] = 8,
+							["damage"] = 524689,
+						},
+						["Consecration"] = {
+							["hitmin"] = 3628,
+							["criticalamount"] = 215418,
+							["id"] = 81297,
+							["criticalmin"] = 8010,
+							["hitamount"] = 484761,
+							["critical"] = 26,
+							["min"] = 3628,
+							["criticalmax"] = 8386,
+							["hitmax"] = 4111,
+							["hit"] = 120,
+							["school"] = 2,
+							["max"] = 8386,
+							["totalhits"] = 146,
+							["damage"] = 700179,
+						},
+						["Attack"] = {
+							["hitmin"] = 8258,
+							["criticalamount"] = 77440,
+							["id"] = 6603,
+							["criticalmin"] = 17763,
+							["hitamount"] = 136992,
+							["critical"] = 4,
+							["min"] = 8258,
+							["criticalmax"] = 20338,
+							["hitmax"] = 10074,
+							["hit"] = 15,
+							["school"] = 1,
+							["max"] = 20338,
+							["totalhits"] = 19,
+							["damage"] = 214432,
+						},
+					},
+					["damagetaken"] = 2685613,
+					["shielding"] = 527028,
+					["id"] = "Player-1169-06EEB51C",
+					["first"] = 1489449287,
+					["power"] = {
+					},
+					["damagetakenspells"] = {
+						["Chomp"] = {
+							["crushing"] = 0,
+							["id"] = 144113,
+							["min"] = 1746,
+							["school"] = 1,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 55429,
+							["name"] = "Chomp",
+							["blocked"] = 0,
+							["totalhits"] = 37,
+							["resisted"] = 0,
+							["max"] = 28234,
+							["damage"] = 454765,
+						},
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["min"] = 7300,
+							["school"] = 1,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 471599,
+							["name"] = "Attack",
+							["blocked"] = 267728,
+							["totalhits"] = 66,
+							["resisted"] = 0,
+							["max"] = 121386,
+							["damage"] = 2230848,
+						},
+					},
+					["overhealing"] = 1580,
+					["healingspells"] = {
+						["Last Defender"] = {
+							["shielding"] = 398766,
+							["id"] = 203791,
+							["healing"] = 398766,
+							["min"] = 350,
+							["name"] = "Last Defender",
+							["max"] = 24159,
+							["critical"] = 0,
+							["absorbed"] = 0,
+							["overhealing"] = 0,
+							["hits"] = 103,
+						},
+						["Blessed Hammer"] = {
+							["shielding"] = 128262,
+							["id"] = 229976,
+							["healing"] = 128262,
+							["min"] = 1679,
+							["name"] = "Blessed Hammer",
+							["max"] = 14183,
+							["critical"] = 0,
+							["absorbed"] = 0,
+							["overhealing"] = 0,
+							["hits"] = 23,
+						},
+						["Judgment of Light"] = {
+							["shielding"] = 0,
+							["id"] = 183811,
+							["healing"] = 79556,
+							["min"] = 952,
+							["name"] = "Judgment of Light",
+							["max"] = 5116,
+							["critical"] = 2,
+							["absorbed"] = 0,
+							["overhealing"] = 1580,
+							["hits"] = 30,
+						},
+					},
+					["name"] = "Galinar",
+					["healing"] = 606584,
+					["healed"] = {
+						["Creature-0-3018-1148-11332-71828-00004730BF"] = {
+							["role"] = "NONE",
+							["name"] = "Sikari the Mistweaver",
+							["amount"] = 28862,
+							["class"] = "MONK",
+							["shielding"] = 0,
+						},
+						["Player-1169-06EEB51C"] = {
+							["role"] = "NONE",
+							["name"] = "Galinar",
+							["amount"] = 577722,
+							["class"] = "PALADIN",
+							["shielding"] = 527028,
+						},
+					},
+					["maxhp"] = 853920,
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+				}, -- [2]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Large Illusionary Ripper"] = {
+					["players"] = {
+						["Sikari the Mistweaver"] = {
+							["taken"] = 7018233,
+							["done"] = 75715,
+							["role"] = "NONE",
+							["class"] = "MONK",
+						},
+						["Galinar"] = {
+							["taken"] = 1167667,
+							["done"] = 1303332,
+							["role"] = "NONE",
+							["class"] = "PALADIN",
+						},
+					},
+					["hdone"] = 0,
+					["htakenspell"] = {
+					},
+					["taken"] = 8185900,
+					["done"] = 1379047,
+					["htaken"] = 0,
+					["hdonespell"] = {
+					},
+				},
+				["Small Illusionary Forager"] = {
+					["players"] = {
+						["Sikari the Mistweaver"] = {
+							["taken"] = 13310288,
+							["done"] = 232060,
+							["role"] = "NONE",
+							["class"] = "MONK",
+						},
+						["Galinar"] = {
+							["taken"] = 1042038,
+							["done"] = 1382281,
+							["role"] = "NONE",
+							["class"] = "PALADIN",
+						},
+					},
+					["hdone"] = 0,
+					["htakenspell"] = {
+					},
+					["taken"] = 14352326,
+					["done"] = 1614341,
+					["htaken"] = 0,
+					["hdonespell"] = {
+					},
+				},
+			},
+			["mobtaken"] = 22538226,
+			["endtime"] = 1489449331,
+			["healing"] = 606584,
+			["starttime"] = 1489449286,
+			["power"] = {
+			},
+			["overhealing"] = 1580,
+			["shielding"] = 527028,
+			["name"] = "Small Illusionary Forager",
+			["mobname"] = "Small Illusionary Forager",
+			["damagetaken"] = 2993388,
+			["mobhdone"] = 0,
+			["last_action"] = 1489449286,
+			["mobdone"] = 2993388,
 		}, -- [2]
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 38,
+			["interrupts"] = 0,
+			["damage"] = 22541453,
+			["players"] = {
+				{
+					["last"] = 1489449266,
+					["healingabsorbed"] = 0,
+					["class"] = "MONK",
+					["damaged"] = {
+						["Large Illusionary Forager"] = 19939241,
+					},
+					["auras"] = {
+						["Renewing Mist"] = {
+							["name"] = "Renewing Mist",
+							["active"] = 0,
+							["id"] = 144080,
+							["auratype"] = "BUFF",
+							["uptime"] = 25,
+						},
+						["Crackling Jade Thunderstorm"] = {
+							["name"] = "Crackling Jade Thunderstorm",
+							["active"] = 0,
+							["id"] = 144076,
+							["auratype"] = "BUFF",
+							["uptime"] = 20,
+						},
+					},
+					["role"] = "NONE",
+					["time"] = 31,
+					["interrupts"] = 0,
+					["damage"] = 19939241,
+					["damagespells"] = {
+						["Crackling Jade Thunderstorm"] = {
+							["hitmin"] = 34909,
+							["id"] = 144077,
+							["min"] = 34909,
+							["hitamount"] = 19939241,
+							["hitmax"] = 41017,
+							["hit"] = 524,
+							["school"] = 8,
+							["max"] = 41017,
+							["totalhits"] = 524,
+							["damage"] = 19939241,
+						},
+					},
+					["damagetaken"] = 44480,
+					["shielding"] = 0,
+					["id"] = "Creature-0-3018-1148-11332-71828-00004730BF",
+					["first"] = 1489449235,
+					["power"] = {
+					},
+					["damagetakenspells"] = {
+						["Chomp"] = {
+							["crushing"] = 0,
+							["id"] = 144113,
+							["min"] = 1823,
+							["school"] = 1,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+							["name"] = "Chomp",
+							["blocked"] = 0,
+							["totalhits"] = 9,
+							["resisted"] = 0,
+							["max"] = 4093,
+							["damage"] = 18677,
+						},
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["min"] = 25803,
+							["school"] = 1,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+							["name"] = "Attack",
+							["blocked"] = 0,
+							["totalhits"] = 1,
+							["resisted"] = 0,
+							["max"] = 25803,
+							["damage"] = 25803,
+						},
+					},
+					["overhealing"] = 0,
+					["healingspells"] = {
+					},
+					["name"] = "Sikari the Mistweaver",
+					["healing"] = 0,
+					["healed"] = {
+					},
+					["maxhp"] = 1727169,
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+				}, -- [1]
+				{
+					["last"] = 1489449269,
+					["healingabsorbed"] = 0,
+					["class"] = "PALADIN",
+					["damaged"] = {
+						["Large Illusionary Forager"] = 2602212,
+					},
+					["auras"] = {
+						["Shield of the Righteous"] = {
+							["name"] = "Shield of the Righteous",
+							["active"] = 0,
+							["id"] = 132403,
+							["auratype"] = "BUFF",
+							["uptime"] = 9,
+						},
+						["Blessed Hammer"] = {
+							["name"] = "Blessed Hammer",
+							["active"] = 0,
+							["id"] = 204301,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 9,
+						},
+						["Consecration"] = {
+							["name"] = "Consecration",
+							["active"] = 0,
+							["id"] = 204242,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 26,
+						},
+						["Avenger's Shield"] = {
+							["name"] = "Avenger's Shield",
+							["active"] = 0,
+							["id"] = 31935,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 11,
+						},
+						["Eye of Tyr"] = {
+							["name"] = "Eye of Tyr",
+							["active"] = 0,
+							["id"] = 209202,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 6,
+						},
+						["Judgment of Light"] = {
+							["name"] = "Judgment of Light",
+							["active"] = 0,
+							["id"] = 196941,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 26,
+						},
+					},
+					["role"] = "NONE",
+					["time"] = 33,
+					["interrupts"] = 0,
+					["damage"] = 2602212,
+					["damagespells"] = {
+						["Shield of the Righteous"] = {
+							["hitmin"] = 53583,
+							["criticalamount"] = 131172,
+							["id"] = 53600,
+							["criticalmin"] = 131172,
+							["hitamount"] = 53583,
+							["critical"] = 1,
+							["min"] = 53583,
+							["criticalmax"] = 131172,
+							["hitmax"] = 53583,
+							["hit"] = 1,
+							["school"] = 2,
+							["max"] = 131172,
+							["totalhits"] = 2,
+							["damage"] = 184755,
+						},
+						["Eye of Tyr"] = {
+							["hitmin"] = 40188,
+							["criticalamount"] = 81984,
+							["id"] = 209202,
+							["criticalmin"] = 81984,
+							["hitamount"] = 160752,
+							["critical"] = 1,
+							["min"] = 40188,
+							["criticalmax"] = 81984,
+							["hitmax"] = 40188,
+							["hit"] = 4,
+							["school"] = 2,
+							["max"] = 81984,
+							["totalhits"] = 5,
+							["damage"] = 242736,
+						},
+						["Blessed Hammer"] = {
+							["hitmin"] = 5980,
+							["criticalamount"] = 138199,
+							["id"] = 204301,
+							["criticalmin"] = 16604,
+							["hitamount"] = 226293,
+							["critical"] = 8,
+							["min"] = 5980,
+							["criticalmax"] = 17429,
+							["hitmax"] = 8544,
+							["hit"] = 27,
+							["school"] = 2,
+							["max"] = 17429,
+							["totalhits"] = 35,
+							["damage"] = 364492,
+						},
+						["Judgment"] = {
+							["hitmin"] = 47859,
+							["criticalamount"] = 89791,
+							["id"] = 20271,
+							["hitmax"] = 50234,
+							["hitamount"] = 148326,
+							["criticalmin"] = 89791,
+							["min"] = 47859,
+							["criticalmax"] = 89791,
+							["critical"] = 1,
+							["hit"] = 3,
+							["school"] = 2,
+							["max"] = 89791,
+							["totalhits"] = 4,
+							["damage"] = 238117,
+						},
+						["Avenger's Shield"] = {
+							["hitmin"] = 51060,
+							["criticalamount"] = 223038,
+							["id"] = 31935,
+							["hitmax"] = 58274,
+							["hitamount"] = 568304,
+							["criticalmin"] = 104161,
+							["min"] = 51060,
+							["criticalmax"] = 118877,
+							["critical"] = 2,
+							["hit"] = 10,
+							["school"] = 2,
+							["max"] = 118877,
+							["totalhits"] = 12,
+							["damage"] = 791342,
+						},
+						["Consecration"] = {
+							["hitmin"] = 3829,
+							["criticalamount"] = 163618,
+							["id"] = 81297,
+							["hitmax"] = 4020,
+							["hitamount"] = 459431,
+							["criticalmin"] = 7813,
+							["min"] = 3829,
+							["criticalmax"] = 8201,
+							["critical"] = 20,
+							["hit"] = 115,
+							["school"] = 2,
+							["max"] = 8201,
+							["totalhits"] = 135,
+							["damage"] = 623049,
+						},
+						["Attack"] = {
+							["hitmin"] = 8867,
+							["criticalamount"] = 18350,
+							["id"] = 6603,
+							["criticalmin"] = 18350,
+							["hitamount"] = 139371,
+							["critical"] = 1,
+							["min"] = 8867,
+							["criticalmax"] = 18350,
+							["hitmax"] = 9610,
+							["hit"] = 15,
+							["school"] = 1,
+							["max"] = 18350,
+							["totalhits"] = 16,
+							["damage"] = 157721,
+						},
+					},
+					["damagetaken"] = 2527840,
+					["shielding"] = 460040,
+					["id"] = "Player-1169-06EEB51C",
+					["first"] = 1489449236,
+					["power"] = {
+					},
+					["damagetakenspells"] = {
+						["Chomp"] = {
+							["crushing"] = 0,
+							["id"] = 144113,
+							["min"] = 1986,
+							["school"] = 1,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 84264,
+							["name"] = "Chomp",
+							["blocked"] = 11245,
+							["totalhits"] = 46,
+							["resisted"] = 0,
+							["max"] = 36775,
+							["damage"] = 822075,
+						},
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["min"] = 11555,
+							["school"] = 1,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 375776,
+							["name"] = "Attack",
+							["blocked"] = 118751,
+							["totalhits"] = 58,
+							["resisted"] = 0,
+							["max"] = 45870,
+							["damage"] = 1705765,
+						},
+					},
+					["overhealing"] = 4254,
+					["healingspells"] = {
+						["Last Defender"] = {
+							["shielding"] = 365593,
+							["id"] = 203791,
+							["healing"] = 365593,
+							["min"] = 326,
+							["name"] = "Last Defender",
+							["max"] = 7545,
+							["critical"] = 0,
+							["absorbed"] = 0,
+							["overhealing"] = 0,
+							["hits"] = 97,
+						},
+						["Blessed Hammer"] = {
+							["shielding"] = 94447,
+							["id"] = 229976,
+							["healing"] = 94447,
+							["min"] = 1901,
+							["name"] = "Blessed Hammer",
+							["max"] = 5442,
+							["critical"] = 0,
+							["absorbed"] = 0,
+							["overhealing"] = 0,
+							["hits"] = 24,
+						},
+						["Judgment of Light"] = {
+							["shielding"] = 0,
+							["id"] = 183811,
+							["healing"] = 59157,
+							["min"] = 1823,
+							["name"] = "Judgment of Light",
+							["max"] = 5116,
+							["critical"] = 2,
+							["absorbed"] = 0,
+							["overhealing"] = 4254,
+							["hits"] = 23,
+						},
+					},
+					["name"] = "Galinar",
+					["healing"] = 519197,
+					["healed"] = {
+						["Creature-0-3018-1148-11332-71828-00004730BF"] = {
+							["role"] = "NONE",
+							["name"] = "Sikari the Mistweaver",
+							["amount"] = 13471,
+							["class"] = "MONK",
+							["shielding"] = 0,
+						},
+						["Player-1169-06EEB51C"] = {
+							["role"] = "NONE",
+							["name"] = "Galinar",
+							["amount"] = 505726,
+							["class"] = "PALADIN",
+							["shielding"] = 460040,
+						},
+					},
+					["maxhp"] = 853920,
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+				}, -- [2]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Large Illusionary Forager"] = {
+					["players"] = {
+						["Sikari the Mistweaver"] = {
+							["taken"] = 19939241,
+							["done"] = 44480,
+							["role"] = "NONE",
+							["class"] = "MONK",
+						},
+						["Galinar"] = {
+							["taken"] = 2602212,
+							["done"] = 2527840,
+							["role"] = "NONE",
+							["class"] = "PALADIN",
+						},
+					},
+					["hdone"] = 0,
+					["htakenspell"] = {
+					},
+					["taken"] = 22541453,
+					["done"] = 2572320,
+					["htaken"] = 0,
+					["hdonespell"] = {
+					},
+				},
+			},
+			["mobtaken"] = 22541453,
+			["endtime"] = 1489449273,
+			["healing"] = 519197,
+			["starttime"] = 1489449235,
+			["power"] = {
+			},
+			["overhealing"] = 4254,
+			["shielding"] = 460040,
+			["name"] = "Large Illusionary Forager",
+			["mobname"] = "Large Illusionary Forager",
+			["damagetaken"] = 2572320,
+			["mobhdone"] = 0,
+			["last_action"] = 1489449235,
+			["mobdone"] = 2572320,
+		}, -- [3]
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 66,
+			["interrupts"] = 0,
+			["damage"] = 18236172,
+			["players"] = {
+				{
+					["last"] = 1489449224,
+					["healingabsorbed"] = 0,
+					["class"] = "MONK",
+					["damaged"] = {
+						["Large Illusionary Ripper"] = 6810781,
+						["Small Illusionary Ripper"] = 10161941,
+					},
+					["auras"] = {
+					},
+					["role"] = "NONE",
+					["time"] = 59,
+					["interrupts"] = 0,
+					["damage"] = 16972722,
+					["damagespells"] = {
+						["Focused Chi Burst"] = {
+							["hitmin"] = 726543,
+							["id"] = 144103,
+							["min"] = 726543,
+							["hitamount"] = 16972722,
+							["hitmax"] = 841390,
+							["hit"] = 22,
+							["school"] = 8,
+							["max"] = 841390,
+							["totalhits"] = 22,
+							["damage"] = 16972722,
+						},
+					},
+					["damagetaken"] = 151691,
+					["shielding"] = 0,
+					["id"] = "Creature-0-3018-1148-11332-71828-00004730BF",
+					["first"] = 1489449165,
+					["power"] = {
+					},
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["min"] = 35561,
+							["school"] = 1,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+							["name"] = "Attack",
+							["blocked"] = 0,
+							["totalhits"] = 4,
+							["resisted"] = 0,
+							["max"] = 40989,
+							["damage"] = 151691,
+						},
+					},
+					["overhealing"] = 0,
+					["healingspells"] = {
+					},
+					["name"] = "Sikari the Mistweaver",
+					["healing"] = 0,
+					["healed"] = {
+					},
+					["maxhp"] = 1727169,
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+				}, -- [1]
+				{
+					["last"] = 1489449230,
+					["healingabsorbed"] = 0,
+					["class"] = "PALADIN",
+					["damaged"] = {
+						["Large Illusionary Ripper"] = 545715,
+						["Small Illusionary Ripper"] = 717735,
+					},
+					["auras"] = {
+						["Shield of the Righteous"] = {
+							["name"] = "Shield of the Righteous",
+							["active"] = 0,
+							["id"] = 132403,
+							["auratype"] = "BUFF",
+							["uptime"] = 4,
+						},
+						["Wrath of Elune"] = {
+							["name"] = "Wrath of Elune",
+							["active"] = 0,
+							["id"] = 202912,
+							["auratype"] = "BUFF",
+							["uptime"] = 15,
+						},
+						["Blessed Hammer"] = {
+							["name"] = "Blessed Hammer",
+							["active"] = 0,
+							["id"] = 204301,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 22,
+						},
+						["Consecration"] = {
+							["name"] = "Consecration",
+							["active"] = 0,
+							["id"] = 188370,
+							["auratype"] = "BUFF",
+							["uptime"] = 35,
+						},
+						["Avenger's Shield"] = {
+							["name"] = "Avenger's Shield",
+							["active"] = 0,
+							["id"] = 31935,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 13,
+						},
+						["Eye of Tyr"] = {
+							["name"] = "Eye of Tyr",
+							["active"] = 0,
+							["id"] = 209202,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 8,
+						},
+						["Judgment of Light"] = {
+							["name"] = "Judgment of Light",
+							["active"] = 0,
+							["id"] = 196941,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 31,
+						},
+					},
+					["role"] = "NONE",
+					["time"] = 65,
+					["interrupts"] = 0,
+					["damage"] = 1263450,
+					["damagespells"] = {
+						["Shield of the Righteous"] = {
+							["hitmin"] = 59671,
+							["id"] = 53600,
+							["min"] = 59671,
+							["hitamount"] = 59671,
+							["hitmax"] = 59671,
+							["hit"] = 1,
+							["school"] = 2,
+							["max"] = 59671,
+							["totalhits"] = 1,
+							["damage"] = 59671,
+						},
+						["Wrath of Elune"] = {
+							["hitmin"] = 1353,
+							["id"] = 202912,
+							["min"] = 1353,
+							["hitamount"] = 10830,
+							["hitmax"] = 1354,
+							["hit"] = 8,
+							["school"] = 2,
+							["max"] = 1354,
+							["totalhits"] = 8,
+							["damage"] = 10830,
+						},
+						["Eye of Tyr"] = {
+							["hitmin"] = 36269,
+							["id"] = 209202,
+							["min"] = 36269,
+							["hitamount"] = 36269,
+							["hitmax"] = 36269,
+							["hit"] = 1,
+							["school"] = 2,
+							["max"] = 36269,
+							["totalhits"] = 1,
+							["damage"] = 36269,
+						},
+						["Blessed Hammer"] = {
+							["hitmin"] = 5397,
+							["criticalamount"] = 15729,
+							["id"] = 204301,
+							["criticalmin"] = 15729,
+							["hitamount"] = 222811,
+							["critical"] = 1,
+							["min"] = 5397,
+							["criticalmax"] = 15729,
+							["hitmax"] = 7929,
+							["hit"] = 29,
+							["school"] = 2,
+							["max"] = 15729,
+							["totalhits"] = 30,
+							["damage"] = 238540,
+						},
+						["Consecration"] = {
+							["hitmin"] = 3627,
+							["criticalamount"] = 45033,
+							["id"] = 81297,
+							["criticalmin"] = 7401,
+							["hitamount"] = 109965,
+							["critical"] = 6,
+							["min"] = 3627,
+							["criticalmax"] = 7610,
+							["hitmax"] = 3731,
+							["hit"] = 30,
+							["school"] = 2,
+							["max"] = 7610,
+							["totalhits"] = 36,
+							["damage"] = 154998,
+						},
+						["Avenger's Shield"] = {
+							["hitmin"] = 52592,
+							["id"] = 31935,
+							["min"] = 52592,
+							["hitamount"] = 318526,
+							["hitmax"] = 54078,
+							["hit"] = 6,
+							["school"] = 2,
+							["max"] = 54078,
+							["totalhits"] = 6,
+							["damage"] = 318526,
+						},
+						["Judgment"] = {
+							["hitmin"] = 44016,
+							["id"] = 20271,
+							["min"] = 44016,
+							["hitamount"] = 317311,
+							["hitmax"] = 46616,
+							["hit"] = 7,
+							["school"] = 2,
+							["max"] = 46616,
+							["totalhits"] = 7,
+							["damage"] = 317311,
+						},
+						["Attack"] = {
+							["hitmin"] = 8043,
+							["id"] = 6603,
+							["min"] = 8043,
+							["hitamount"] = 127305,
+							["hitmax"] = 8853,
+							["hit"] = 15,
+							["school"] = 1,
+							["max"] = 8853,
+							["totalhits"] = 15,
+							["damage"] = 127305,
+						},
+					},
+					["damagetaken"] = 1588791,
+					["shielding"] = 210720,
+					["id"] = "Player-1169-06EEB51C",
+					["first"] = 1489449165,
+					["power"] = {
+					},
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["min"] = 20877,
+							["school"] = 1,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 210720,
+							["name"] = "Attack",
+							["blocked"] = 215313,
+							["totalhits"] = 27,
+							["resisted"] = 0,
+							["max"] = 120682,
+							["damage"] = 1588791,
+						},
+					},
+					["overhealing"] = 0,
+					["healingspells"] = {
+						["Last Defender"] = {
+							["shielding"] = 70779,
+							["id"] = 203791,
+							["healing"] = 70779,
+							["min"] = 1258,
+							["name"] = "Last Defender",
+							["max"] = 4372,
+							["critical"] = 0,
+							["absorbed"] = 0,
+							["overhealing"] = 0,
+							["hits"] = 27,
+						},
+						["Blessed Hammer"] = {
+							["shielding"] = 139941,
+							["id"] = 229976,
+							["healing"] = 139941,
+							["min"] = 3980,
+							["name"] = "Blessed Hammer",
+							["max"] = 16456,
+							["critical"] = 0,
+							["absorbed"] = 0,
+							["overhealing"] = 0,
+							["hits"] = 17,
+						},
+						["Judgment of Light"] = {
+							["shielding"] = 0,
+							["id"] = 183811,
+							["healing"] = 27904,
+							["min"] = 2532,
+							["name"] = "Judgment of Light",
+							["max"] = 5115,
+							["critical"] = 1,
+							["absorbed"] = 0,
+							["overhealing"] = 0,
+							["hits"] = 10,
+						},
+					},
+					["name"] = "Galinar",
+					["healing"] = 238624,
+					["healed"] = {
+						["Player-1169-06EEB51C"] = {
+							["role"] = "NONE",
+							["name"] = "Galinar",
+							["amount"] = 238624,
+							["class"] = "PALADIN",
+							["shielding"] = 210720,
+						},
+					},
+					["maxhp"] = 853920,
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+				}, -- [2]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Large Illusionary Ripper"] = {
+					["players"] = {
+						["Sikari the Mistweaver"] = {
+							["taken"] = 6810781,
+							["done"] = 0,
+							["role"] = "NONE",
+							["class"] = "MONK",
+						},
+						["Galinar"] = {
+							["taken"] = 545715,
+							["done"] = 721690,
+							["role"] = "NONE",
+							["class"] = "PALADIN",
+						},
+					},
+					["hdone"] = 0,
+					["htakenspell"] = {
+					},
+					["taken"] = 7356496,
+					["done"] = 721690,
+					["htaken"] = 0,
+					["hdonespell"] = {
+					},
+				},
+				["Small Illusionary Ripper"] = {
+					["players"] = {
+						["Sikari the Mistweaver"] = {
+							["taken"] = 10161941,
+							["done"] = 151691,
+							["role"] = "NONE",
+							["class"] = "MONK",
+						},
+						["Galinar"] = {
+							["taken"] = 717735,
+							["done"] = 867101,
+							["role"] = "NONE",
+							["class"] = "PALADIN",
+						},
+					},
+					["hdone"] = 0,
+					["htakenspell"] = {
+					},
+					["taken"] = 10879676,
+					["done"] = 1018792,
+					["htaken"] = 0,
+					["hdonespell"] = {
+					},
+				},
+			},
+			["mobtaken"] = 18236172,
+			["endtime"] = 1489449231,
+			["healing"] = 238624,
+			["starttime"] = 1489449165,
+			["power"] = {
+			},
+			["overhealing"] = 0,
+			["shielding"] = 210720,
+			["name"] = "Large Illusionary Ripper",
+			["mobname"] = "Large Illusionary Ripper",
+			["damagetaken"] = 1740482,
+			["mobhdone"] = 0,
+			["last_action"] = 1489449165,
+			["mobdone"] = 1740482,
+		}, -- [4]
+	},
+	["total"] = {
+		["healingabsorbed"] = 0,
+		["dispells"] = 0,
+		["ccbreaks"] = 0,
+		["time"] = 196,
+		["interrupts"] = 0,
+		["damage"] = 88837374,
+		["players"] = {
+			{
+				["healingabsorbed"] = 0,
+				["class"] = "MONK",
+				["damaged"] = {
+				},
+				["auras"] = {
+					["Renewing Mist"] = {
+						["name"] = "Renewing Mist",
+						["active"] = 2,
+						["id"] = 144080,
+						["started"] = 1489449302,
+						["auratype"] = "BUFF",
+						["uptime"] = 52,
+					},
+					["Crackling Jade Thunderstorm"] = {
+						["name"] = "Crackling Jade Thunderstorm",
+						["active"] = 0,
+						["id"] = 144076,
+						["auratype"] = "BUFF",
+						["uptime"] = 48,
+					},
+				},
+				["role"] = "NONE",
+				["time"] = 191,
+				["interrupts"] = 0,
+				["damage"] = 79336185,
+				["damagespells"] = {
+					["Focused Chi Burst"] = {
+						["hitmin"] = 726543,
+						["id"] = 144103,
+						["min"] = 726543,
+						["hitamount"] = 29603777,
+						["hitmax"] = 843121,
+						["hit"] = 38,
+						["school"] = 8,
+						["max"] = 843121,
+						["totalhits"] = 38,
+						["damage"] = 29603777,
+					},
+					["Crackling Jade Thunderstorm"] = {
+						["hitmin"] = 34909,
+						["id"] = 144077,
+						["min"] = 34909,
+						["hitamount"] = 49732408,
+						["hitmax"] = 41017,
+						["hit"] = 1309,
+						["school"] = 8,
+						["max"] = 41017,
+						["totalhits"] = 1309,
+						["damage"] = 49732408,
+					},
+				},
+				["power"] = {
+				},
+				["damagetaken"] = 722794,
+				["deathlog"] = {
+					{
+						["hp"] = 1725346,
+						["amount"] = -1823,
+						["ts"] = 1489449380.306,
+						["spellid"] = 144113,
+						["srcname"] = "Large Illusionary Forager",
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["hp"] = 1727169,
+						["amount"] = 1823,
+						["ts"] = 1489449380.745,
+						["spellid"] = 144080,
+						["srcname"] = "Sikari the Mistweaver",
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["hp"] = 1727169,
+						["amount"] = 0,
+						["ts"] = 1489449382.734,
+						["spellid"] = 144080,
+						["srcname"] = "Sikari the Mistweaver",
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["hp"] = 1727169,
+						["amount"] = 0,
+						["ts"] = 1489449384.733,
+						["spellid"] = 144080,
+						["srcname"] = "Sikari the Mistweaver",
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["hp"] = 1727169,
+						["amount"] = 0,
+						["ts"] = 1489449386.74,
+						["spellid"] = 144080,
+						["srcname"] = "Sikari the Mistweaver",
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["hp"] = 1727169,
+						["amount"] = 1823,
+						["ts"] = 1489449376.189,
+						["spellid"] = 183811,
+						["srcname"] = "Galinar",
+					}, -- [6]
+					{
+						["hp"] = 1725346,
+						["amount"] = -1823,
+						["ts"] = 1489449376.315,
+						["spellid"] = 144113,
+						["srcname"] = "Large Illusionary Forager",
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["hp"] = 1727169,
+						["amount"] = 1823,
+						["ts"] = 1489449376.739,
+						["spellid"] = 144080,
+						["srcname"] = "Sikari the Mistweaver",
+					}, -- [8]
+					{
+						["hp"] = 1725346,
+						["amount"] = -1823,
+						["ts"] = 1489449377.306,
+						["spellid"] = 144113,
+						["srcname"] = "Large Illusionary Forager",
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["hp"] = 1727169,
+						["amount"] = 1823,
+						["ts"] = 1489449377.391,
+						["spellid"] = 183811,
+						["srcname"] = "Galinar",
+					}, -- [10]
+					{
+						["hp"] = 1725346,
+						["amount"] = -1823,
+						["ts"] = 1489449378.31,
+						["spellid"] = 144113,
+						["srcname"] = "Large Illusionary Forager",
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["hp"] = 1727169,
+						["amount"] = 1823,
+						["ts"] = 1489449378.583,
+						["spellid"] = 183811,
+						["srcname"] = "Galinar",
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["hp"] = 1727169,
+						["amount"] = 0,
+						["ts"] = 1489449378.74,
+						["spellid"] = 144080,
+						["srcname"] = "Sikari the Mistweaver",
+					}, -- [13]
+					{
+						["hp"] = 1725346,
+						["amount"] = -1823,
+						["ts"] = 1489449379.318,
+						["spellid"] = 144113,
+						["srcname"] = "Large Illusionary Forager",
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["hp"] = 1727169,
+						["amount"] = 1823,
+						["ts"] = 1489449379.78,
+						["spellid"] = 183811,
+						["srcname"] = "Galinar",
+					}, -- [15]
+					["pos"] = 6,
+				},
+				["id"] = "Creature-0-3018-1148-11332-71828-00004730BF",
+				["overhealing"] = 0,
+				["damagetakenspells"] = {
+					["Chomp"] = {
+						["crushing"] = 0,
+						["id"] = 144113,
+						["min"] = 1823,
+						["school"] = 1,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+						["name"] = "Chomp",
+						["blocked"] = 0,
+						["totalhits"] = 31,
+						["resisted"] = 0,
+						["max"] = 7292,
+						["damage"] = 119925,
+					},
+					["Attack"] = {
+						["crushing"] = 0,
+						["id"] = 6603,
+						["min"] = 11113,
+						["school"] = 1,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+						["name"] = "Attack",
+						["blocked"] = 11393,
+						["totalhits"] = 19,
+						["resisted"] = 0,
+						["max"] = 77832,
+						["damage"] = 602869,
+					},
+				},
+				["healingspells"] = {
+				},
+				["shielding"] = 0,
+				["name"] = "Sikari the Mistweaver",
+				["healing"] = 0,
+				["healed"] = {
+				},
+				["dispells"] = 0,
+				["ccbreaks"] = 0,
+				["maxhp"] = 1727169,
+			}, -- [1]
+			{
+				["healingabsorbed"] = 0,
+				["class"] = "PALADIN",
+				["damaged"] = {
+				},
+				["auras"] = {
+					["Guardian of Ancient Kings"] = {
+						["name"] = "Guardian of Ancient Kings",
+						["active"] = 0,
+						["id"] = 86659,
+						["auratype"] = "BUFF",
+						["uptime"] = 8,
+					},
+					["Forbearance"] = {
+						["name"] = "Forbearance",
+						["active"] = 1,
+						["id"] = 25771,
+						["started"] = 1489449306,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 0,
+					},
+					["Blessed Hammer"] = {
+						["name"] = "Blessed Hammer",
+						["active"] = 0,
+						["id"] = 204301,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 62,
+					},
+					["Judgment of Light"] = {
+						["name"] = "Judgment of Light",
+						["active"] = 0,
+						["id"] = 196941,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 133,
+					},
+					["Shield of the Righteous"] = {
+						["name"] = "Shield of the Righteous",
+						["active"] = 0,
+						["id"] = 132403,
+						["auratype"] = "BUFF",
+						["uptime"] = 35,
+					},
+					["Blessing of Spellwarding"] = {
+						["name"] = "Blessing of Spellwarding",
+						["active"] = 0,
+						["id"] = 204018,
+						["auratype"] = "BUFF",
+						["uptime"] = 10,
+					},
+					["Eye of Tyr"] = {
+						["name"] = "Eye of Tyr",
+						["active"] = 0,
+						["id"] = 209202,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 23,
+					},
+					["Consecration"] = {
+						["name"] = "Consecration",
+						["active"] = 0,
+						["id"] = 188370,
+						["auratype"] = "BUFF",
+						["uptime"] = 134,
+					},
+					["Avenger's Shield"] = {
+						["name"] = "Avenger's Shield",
+						["active"] = 0,
+						["id"] = 31935,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 54,
+					},
+					["Ardent Defender"] = {
+						["name"] = "Ardent Defender",
+						["active"] = 0,
+						["id"] = 31850,
+						["auratype"] = "BUFF",
+						["uptime"] = 8,
+					},
+					["Wrath of Elune"] = {
+						["name"] = "Wrath of Elune",
+						["active"] = 0,
+						["id"] = 202912,
+						["auratype"] = "BUFF",
+						["uptime"] = 30,
+					},
+				},
+				["role"] = "NONE",
+				["time"] = 191,
+				["interrupts"] = 0,
+				["damage"] = 9501189,
+				["damagespells"] = {
+					["Shield of the Righteous"] = {
+						["hitmin"] = 53583,
+						["criticalamount"] = 131172,
+						["id"] = 53600,
+						["criticalmin"] = 131172,
+						["hitamount"] = 426951,
+						["critical"] = 1,
+						["min"] = 53583,
+						["criticalmax"] = 131172,
+						["hitmax"] = 65752,
+						["hit"] = 7,
+						["school"] = 2,
+						["max"] = 131172,
+						["totalhits"] = 8,
+						["damage"] = 558123,
+					},
+					["Wrath of Elune"] = {
+						["hitmin"] = 1353,
+						["id"] = 202912,
+						["min"] = 1353,
+						["hitamount"] = 52269,
+						["hitmax"] = 1429,
+						["hit"] = 37,
+						["school"] = 2,
+						["max"] = 1429,
+						["totalhits"] = 37,
+						["damage"] = 52269,
+					},
+					["Eye of Tyr"] = {
+						["hitmin"] = 36269,
+						["criticalamount"] = 160092,
+						["id"] = 209202,
+						["criticalmin"] = 78108,
+						["hitamount"] = 273597,
+						["critical"] = 2,
+						["min"] = 36269,
+						["criticalmax"] = 81984,
+						["hitmax"] = 40188,
+						["hit"] = 7,
+						["school"] = 2,
+						["max"] = 81984,
+						["totalhits"] = 9,
+						["damage"] = 433689,
+					},
+					["Blessed Hammer"] = {
+						["hitmin"] = 5397,
+						["criticalamount"] = 327277,
+						["id"] = 204301,
+						["criticalmin"] = 15729,
+						["hitamount"] = 962912,
+						["critical"] = 19,
+						["min"] = 5397,
+						["criticalmax"] = 17822,
+						["hitmax"] = 8737,
+						["hit"] = 118,
+						["school"] = 2,
+						["max"] = 17822,
+						["totalhits"] = 137,
+						["damage"] = 1290189,
+					},
+					["Consecration"] = {
+						["hitmin"] = 3627,
+						["criticalamount"] = 700216,
+						["id"] = 81297,
+						["criticalmin"] = 7401,
+						["hitamount"] = 1638577,
+						["critical"] = 86,
+						["min"] = 3627,
+						["criticalmax"] = 8386,
+						["hitmax"] = 4111,
+						["hit"] = 413,
+						["school"] = 2,
+						["max"] = 8386,
+						["totalhits"] = 499,
+						["damage"] = 2338793,
+					},
+					["Avenger's Shield"] = {
+						["hitmin"] = 51060,
+						["criticalamount"] = 695357,
+						["id"] = 31935,
+						["criticalmin"] = 104161,
+						["hitamount"] = 2199793,
+						["critical"] = 6,
+						["min"] = 51060,
+						["criticalmax"] = 121563,
+						["hitmax"] = 59590,
+						["hit"] = 39,
+						["school"] = 2,
+						["max"] = 121563,
+						["totalhits"] = 45,
+						["damage"] = 2895150,
+					},
+					["Judgment"] = {
+						["hitmin"] = 44016,
+						["criticalamount"] = 389541,
+						["id"] = 20271,
+						["criticalmin"] = 89791,
+						["hitamount"] = 807411,
+						["critical"] = 4,
+						["min"] = 44016,
+						["criticalmax"] = 104789,
+						["hitmax"] = 51368,
+						["hit"] = 17,
+						["school"] = 2,
+						["max"] = 104789,
+						["totalhits"] = 21,
+						["damage"] = 1196952,
+					},
+					["Attack"] = {
+						["hitmin"] = 8043,
+						["criticalamount"] = 187215,
+						["id"] = 6603,
+						["criticalmin"] = 17551,
+						["hitamount"] = 548809,
+						["critical"] = 10,
+						["min"] = 8043,
+						["criticalmax"] = 20338,
+						["hitmax"] = 10074,
+						["hit"] = 61,
+						["school"] = 1,
+						["max"] = 20338,
+						["totalhits"] = 71,
+						["damage"] = 736024,
+					},
+				},
+				["power"] = {
+				},
+				["damagetaken"] = 10971557,
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["hp"] = 48401,
+						["amount"] = 2532,
+						["ts"] = 1489449384.674,
+						["spellid"] = 183811,
+						["srcname"] = "Galinar",
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["hp"] = 203353,
+						["amount"] = 154952,
+						["ts"] = 1489449384.733,
+						["spellid"] = 144080,
+						["srcname"] = "Sikari the Mistweaver",
+					}, -- [2]
+					{
+						["absorb"] = -15543,
+						["hp"] = 203353,
+						["amount"] = -94486,
+						["ts"] = 1489449384.871,
+						["spellid"] = 88163,
+						["srcname"] = "Large Illusionary Ripper",
+					}, -- [3]
+					{
+						["absorb"] = -6141,
+						["hp"] = 108867,
+						["amount"] = -18998,
+						["ts"] = 1489449385.137,
+						["spellid"] = 88163,
+						["srcname"] = "Small Illusionary Forager",
+					}, -- [4]
+					{
+						["absorb"] = -10619,
+						["hp"] = 108867,
+						["amount"] = -32850,
+						["ts"] = 1489449385.137,
+						["spellid"] = 88163,
+						["srcname"] = "Large Illusionary Forager",
+					}, -- [5]
+					{
+						["absorb"] = -2502,
+						["hp"] = 41803,
+						["amount"] = -15216,
+						["ts"] = 1489449385.314,
+						["spellid"] = 144113,
+						["srcname"] = "Small Illusionary Forager",
+					}, -- [6]
+					{
+						["absorb"] = -10295,
+						["hp"] = 41803,
+						["amount"] = -31849,
+						["ts"] = 1489449385.847,
+						["spellid"] = 88163,
+						["srcname"] = "Large Illusionary Forager",
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["hp"] = 44335,
+						["amount"] = 2532,
+						["ts"] = 1489449386.078,
+						["spellid"] = 183811,
+						["srcname"] = "Galinar",
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["hp"] = 154953,
+						["amount"] = 154952,
+						["ts"] = 1489449386.74,
+						["spellid"] = 144080,
+						["srcname"] = "Sikari the Mistweaver",
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["hp"] = 140637,
+						["amount"] = 2533,
+						["ts"] = 1489449383.573,
+						["spellid"] = 183811,
+						["srcname"] = "Galinar",
+					}, -- [10]
+					{
+						["absorb"] = -3365,
+						["hp"] = 140637,
+						["amount"] = -20456,
+						["ts"] = 1489449383.613,
+						["spellid"] = 88163,
+						["srcname"] = "Large Illusionary Forager",
+					}, -- [11]
+					{
+						["absorb"] = -4227,
+						["hp"] = 140637,
+						["amount"] = -25698,
+						["ts"] = 1489449383.613,
+						["spellid"] = 88163,
+						["srcname"] = "Small Illusionary Forager",
+					}, -- [12]
+					{
+						["absorb"] = -2271,
+						["hp"] = 140637,
+						["amount"] = -13810,
+						["ts"] = 1489449383.613,
+						["spellid"] = 88163,
+						["srcname"] = "Small Illusionary Forager",
+					}, -- [13]
+					{
+						["absorb"] = -2502,
+						["hp"] = 65458,
+						["amount"] = -15215,
+						["ts"] = 1489449384.32,
+						["spellid"] = 144113,
+						["srcname"] = "Small Illusionary Forager",
+					}, -- [14]
+					{
+						["absorb"] = -3222,
+						["hp"] = 65458,
+						["amount"] = -19589,
+						["ts"] = 1489449384.349,
+						["spellid"] = 88163,
+						["srcname"] = "Large Illusionary Forager",
+					}, -- [15]
+					["pos"] = 10,
+				},
+				["id"] = "Player-1169-06EEB51C",
+				["overhealing"] = 14546,
+				["damagetakenspells"] = {
+					["Chomp"] = {
+						["crushing"] = 0,
+						["id"] = 144113,
+						["min"] = 1746,
+						["school"] = 1,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 167743,
+						["name"] = "Chomp",
+						["blocked"] = 11245,
+						["totalhits"] = 101,
+						["resisted"] = 0,
+						["max"] = 36775,
+						["damage"] = 1424984,
+					},
+					["Attack"] = {
+						["crushing"] = 0,
+						["id"] = 6603,
+						["min"] = 7300,
+						["school"] = 1,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 1795097,
+						["name"] = "Attack",
+						["blocked"] = 940335,
+						["totalhits"] = 237,
+						["resisted"] = 0,
+						["max"] = 130243,
+						["damage"] = 9546573,
+					},
+				},
+				["healingspells"] = {
+					["Last Defender"] = {
+						["shielding"] = 1410068,
+						["id"] = 203791,
+						["healing"] = 1410068,
+						["min"] = 326,
+						["name"] = "Last Defender",
+						["max"] = 24159,
+						["critical"] = 0,
+						["absorbed"] = 0,
+						["overhealing"] = 0,
+						["hits"] = 332,
+					},
+					["Blessed Hammer"] = {
+						["shielding"] = 555274,
+						["id"] = 229976,
+						["healing"] = 555274,
+						["min"] = 1031,
+						["name"] = "Blessed Hammer",
+						["max"] = 16456,
+						["critical"] = 0,
+						["absorbed"] = 0,
+						["overhealing"] = 0,
+						["hits"] = 96,
+					},
+					["Judgment of Light"] = {
+						["shielding"] = 0,
+						["id"] = 183811,
+						["healing"] = 257072,
+						["min"] = 952,
+						["name"] = "Judgment of Light",
+						["max"] = 5116,
+						["critical"] = 13,
+						["absorbed"] = 0,
+						["overhealing"] = 14546,
+						["hits"] = 94,
+					},
+				},
+				["shielding"] = 1965342,
+				["name"] = "Galinar",
+				["healing"] = 2222414,
+				["healed"] = {
+					["Creature-0-3018-1148-11332-71828-00004730BF"] = {
+						["role"] = "NONE",
+						["name"] = "Sikari the Mistweaver",
+						["amount"] = 53980,
+						["class"] = "MONK",
+						["shielding"] = 0,
+					},
+					["Player-1169-06EEB51C"] = {
+						["role"] = "NONE",
+						["name"] = "Galinar",
+						["amount"] = 2168434,
+						["class"] = "PALADIN",
+						["shielding"] = 1965342,
+					},
+				},
+				["dispells"] = 0,
+				["ccbreaks"] = 0,
+				["maxhp"] = 853920,
+			}, -- [2]
+		},
+		["deaths"] = 0,
+		["mobs"] = {
+			["Small Illusionary Forager"] = {
+				["players"] = {
+					["Sikari the Mistweaver"] = {
+						["taken"] = 18251342,
+						["done"] = 232060,
+						["role"] = "NONE",
+						["class"] = "MONK",
+					},
+					["Galinar"] = {
+						["taken"] = 1464228,
+						["done"] = 1788430,
+						["role"] = "NONE",
+						["class"] = "PALADIN",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 19715570,
+				["done"] = 2020490,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Large Illusionary Forager"] = {
+				["players"] = {
+					["Sikari the Mistweaver"] = {
+						["taken"] = 24491915,
+						["done"] = 79202,
+						["role"] = "NONE",
+						["class"] = "MONK",
+					},
+					["Galinar"] = {
+						["taken"] = 3443399,
+						["done"] = 2982571,
+						["role"] = "NONE",
+						["class"] = "PALADIN",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 27935314,
+				["done"] = 3061773,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Large Illusionary Ripper"] = {
+				["players"] = {
+					["Sikari the Mistweaver"] = {
+						["taken"] = 22450183,
+						["done"] = 221838,
+						["role"] = "NONE",
+						["class"] = "MONK",
+					},
+					["Galinar"] = {
+						["taken"] = 2729912,
+						["done"] = 4404294,
+						["role"] = "NONE",
+						["class"] = "PALADIN",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 25180095,
+				["done"] = 4626132,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Small Illusionary Ripper"] = {
+				["players"] = {
+					["Sikari the Mistweaver"] = {
+						["taken"] = 14142745,
+						["done"] = 189694,
+						["role"] = "NONE",
+						["class"] = "MONK",
+					},
+					["Galinar"] = {
+						["taken"] = 1863650,
+						["done"] = 1796262,
+						["role"] = "NONE",
+						["class"] = "PALADIN",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 16006395,
+				["done"] = 1985956,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+		},
+		["mobtaken"] = 88837374,
+		["healing"] = 2222414,
+		["power"] = {
+		},
+		["overhealing"] = 14546,
+		["shielding"] = 1965342,
+		["name"] = "Total",
+		["starttime"] = 1489449142,
+		["damagetaken"] = 11694351,
+		["mobhdone"] = 0,
+		["last_action"] = 1489449142,
+		["mobdone"] = 11694351,
 	},
 }

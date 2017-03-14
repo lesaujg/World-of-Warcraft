@@ -54,6 +54,21 @@ local function has_buff(k)
  end
 end
 
+local function isEquipped(v)
+ if not v then return end
+ 
+ for j = 1, numTiers[v.tt] do
+  if v[j] then
+   local id, _, _, selected = funcs[v.tt].check(j, v[j], 1)
+   if not selected then
+    return
+   end
+  end
+ end
+ return true
+end
+addonTable.IsEquipped = isEquipped
+
 local function canChangeTalents(tome)
  return not UnitAffectingCombat("player") and
         ( IsResting() or
@@ -144,6 +159,17 @@ local function talentPvPButtonClicked(self, button)
 end
 -------------------------------
 
+local function useEquipmentSet(eq)
+ if not eq then return end
+
+ if EquipmentSetContainsLockedItems(eq) or UnitCastingInfo("player") then
+  UIErrorsFrame:AddMessage(ERR_CLIENT_LOCKED_OUT, 1.0, 0.1, 0.1, 1.0)
+  return
+ end
+
+ UseEquipmentSet(eq)
+end
+
 local function checkEquipmentSets()
  local name, found, needUpdate
  for _,v in pairs(sets) do
@@ -167,6 +193,43 @@ local function checkEquipmentSets()
  
  if needUpdate then
   TalentSetList_Update()
+ end
+end
+
+local function specChanged_autoEquip()
+ if not spec or not TalentSetManager_Options.interface.auto_equip_enable then return end
+
+ local opt = TalentSetManager_Saves.interface["auto_equip"..spec]
+ local ae_tt
+
+ if     opt == 0 then ae_tt = "none" 
+ elseif opt == 2 then ae_tt = "talents_pvp"
+ else                 ae_tt = "talents"
+ end
+
+ if ae_tt == "none" or not TalentSetManager_Saves[ae_tt] or not TalentSetManager_Saves[ae_tt][spec] then return end
+
+ local name, found
+ for _,v in pairs(TalentSetManager_Saves[ae_tt][spec]) do
+  found = 1
+  if isEquipped(v) and v.equipment then
+   for i = 1, GetNumEquipmentSets() do
+    name = GetEquipmentSetInfo(i)
+    if v.equipment == name then
+     C_Timer.After(0.5, function() 
+                         if TalentSetManager_Options.interface.auto_equip_chatmsg then
+                          print("|cff00ffffTalent Set Manager|r - "..format(L["autoequip_equipment_msg"], "|cff00ff00"..v.equipment.."|r", "|cff00ff00"..v.name.."|r"))
+                         end
+                         useEquipmentSet(v.equipment) 
+                        end)
+     return
+    end   
+   end
+  end
+ end
+ 
+ if found and TalentSetManager_Options.interface.auto_equip_chatmsg then
+  print("|cff00ffffTalent Set Manager|r - "..L["autoequip_no_linked_equip_found"])
  end
 end
 
@@ -283,32 +346,6 @@ StaticPopupDialogs["TS_CONFIRM_OVERWRITE_TALENT_SET"] = {
 	exclusive = 1,
 	whileDead = 1,
 }
-
-local function isEquipped(v)
- if not v then return end
- 
- for j = 1, numTiers[v.tt] do
-  if v[j] then
-   local id, _, _, selected = funcs[v.tt].check(j, v[j], 1)
-   if not selected then
-    return
-   end
-  end
- end
- return true
-end
-addonTable.IsEquipped = isEquipped
-
-local function useEquipmentSet(eq)
- if not eq then return end
-
- if EquipmentSetContainsLockedItems(eq) or UnitCastingInfo("player") then
-  UIErrorsFrame:AddMessage(ERR_CLIENT_LOCKED_OUT, 1.0, 0.1, 0.1, 1.0)
-  return
- end
-
- UseEquipmentSet(eq)
-end
 
 ---------- Chat filter ----------
 local matches = {"^"..ERR_SPELL_UNLEARNED_S:gsub("%%s", "(.+)"),
@@ -892,6 +929,7 @@ local function refreshTalentIconTable()
   icons_meta[1] = "inv_misc_questionmark"
   icons_added = icons_added + 1
  end
+ 
  for c = 1,7 do
   for r = 1,3 do
    local _, _, texture = funcs[tt].check(c, r, 1)
@@ -1118,7 +1156,7 @@ local function initializeFrame()
  
  --TalentSetsDialogPopup:SetParent(mf)
  --TalentSetsDialogPopup:SetPoint("LEFT", mf, "RIGHT")
- addonTable:CreateIconSelectionFrame()
+ addonTable:CreateIconSelectionFrame() -- iconselect.lua
  
  local f = CreateFrame("Scrollframe", "TalentSetsList", mf, "HybridScrollFrameTemplate")
  f:SetSize(172, 304)
@@ -1215,11 +1253,11 @@ local function initialize()
    buff_names[k][i] = GetSpellInfo(id)
   end
  end
- 
+
  -- moved the LDB at start because of ElvUI (yes, always that)
  -- now we can refresh the label with the spec available
  addonTable.UpdateLDBButton()
- 
+
  addonTable.initialized = true
 end
 
@@ -1236,15 +1274,18 @@ local function eventhandler(self, event, ...)
   if not TalentSetManager_Options then TalentSetManager_Options = {} end
   if TalentSetManager_Options.visible == nil then TalentSetManager_Options.visible = true end
   if TalentSetManager_Options.ldb_last_selected == nil then TalentSetManager_Options.ldb_last_selected = "talents" end
-
-  -- blizzard interface frame options
-  addonTable:InitializeOptions() -- options.lua
-  --
   
   if not TalentSetManager_Saves then TalentSetManager_Saves = {} end
   if not TalentSetManager_Saves.talents then TalentSetManager_Saves.talents = {} end
   if not TalentSetManager_Saves.talents_pvp then TalentSetManager_Saves.talents_pvp = {} end
 
+  -- character specific defaults
+  if not TalentSetManager_Saves.interface then TalentSetManager_Saves.interface = {} end
+  
+  -- blizzard interface frame options
+  addonTable:InitializeOptions() -- options.lua
+  --
+  
   -- version updates
   -- nil -> 1
   if not TalentSetManager_Saves.version then
@@ -1271,6 +1312,9 @@ local function eventhandler(self, event, ...)
   if new_spec ~= spec then
    spec = new_spec
    specChanged()
+   if addonTable.initialized then
+    specChanged_autoEquip()
+   end
   end
  elseif event == "PLAYER_TALENT_UPDATE" then
   if addonTable.chatFiltered then
