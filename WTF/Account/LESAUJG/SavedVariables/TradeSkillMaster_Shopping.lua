@@ -1,22 +1,8 @@
 
 TradeSkillMaster_ShoppingDB = {
-	["_currentProfile"] = {
-		["Sanjuri - Sisters of Elune"] = "Default",
-		["Galinar - Sisters of Elune"] = "Default",
-		["Guldahka - Turalyon"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Orig - Sisters of Elune"] = "Default",
-		["Mandelbrot - Sisters of Elune"] = "Default",
-		["Leanara - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-		["Belrath - Sisters of Elune"] = "Default",
-		["Torinar - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
-	},
-	["_version"] = 3,
-	["g@ @sniperVendorPrice"] = true,
+	["g@ @sniperCustomPrice"] = "0c",
+	["g@ @maxDeSearchPercent"] = 1,
+	["g@ @postUndercut"] = "1c",
 	["g@ @postBidPercent"] = 0.95,
 	["_scopeKeys"] = {
 		["char"] = {
@@ -34,53 +20,50 @@ TradeSkillMaster_ShoppingDB = {
 			"Sanjuri - Sisters of Elune", -- [12]
 			"Torinar - Sisters of Elune", -- [13]
 		},
-		["factionrealm"] = {
-			"Alliance - Sisters of Elune", -- [1]
-			"Horde - Turalyon", -- [2]
+		["realm"] = {
+			"Sisters of Elune", -- [1]
+			"Turalyon", -- [2]
 		},
 		["profile"] = {
 			"Default", -- [1]
 		},
-		["realm"] = {
-			"Sisters of Elune", -- [1]
-			"Turalyon", -- [2]
+		["factionrealm"] = {
+			"Alliance - Sisters of Elune", -- [1]
+			"Horde - Turalyon", -- [2]
 		},
 	},
 	["g@ @helpPlatesShown"] = {
 		["auction"] = true,
 	},
-	["g@ @postUndercut"] = "1c",
-	["g@ @minDeSearchLvl"] = 1,
-	["g@ @maxDeSearchLvl"] = 735,
+	["g@ @sniperVendorPrice"] = true,
 	["_hash"] = 1861581,
-	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1489591896,
+			["name"] = "Tome of the Tranquil Mind/exact",
+			["filter"] = "Tome of the Tranquil Mind/exact",
+		}, -- [1]
 		{
 			["lastSearch"] = 1489535584,
 			["name"] = "Nightborne Delicacy Platter",
 			["filter"] = "Nightborne Delicacy Platter",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [1]
+		}, -- [2]
 		{
 			["lastSearch"] = 1489461509,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [2]
+		}, -- [3]
 		{
 			["lastSearch"] = 1489373655,
 			["name"] = "Obliterum/exact",
 			["filter"] = "Obliterum/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [3]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1488947266,
-			["name"] = "Tome of the Tranquil Mind/exact",
-			["filter"] = "Tome of the Tranquil Mind/exact",
 		}, -- [4]
 		{
 			["searchMode"] = "normal",
@@ -713,7 +696,24 @@ TradeSkillMaster_ShoppingDB = {
 		}, -- [108]
 	},
 	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["g@ @marketValueSource"] = "dbmarket",
+	["g@ @maxDeSearchLvl"] = 735,
+	["g@ @minDeSearchLvl"] = 1,
 	["g@ @normalPostPrice"] = "150% dbmarket",
-	["g@ @maxDeSearchPercent"] = 1,
-	["g@ @sniperCustomPrice"] = "0c",
+	["_version"] = 3,
+	["_currentProfile"] = {
+		["Sanjuri - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
+		["Guldahka - Turalyon"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Orig - Sisters of Elune"] = "Default",
+		["Mandelbrot - Sisters of Elune"] = "Default",
+		["Leanara - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
+		["Belrath - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Torinar - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+	},
 }

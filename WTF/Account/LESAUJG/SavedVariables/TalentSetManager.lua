@@ -1,6 +1,7 @@
 
 TalentSetManager_Options = {
 	["visible"] = true,
+	["ldb_last_selected"] = "talents",
 	["interface"] = {
 		["ignored_tiers_bg"] = {
 			1, -- [1]
@@ -10,9 +11,8 @@ TalentSetManager_Options = {
 		},
 		["highlight_icon"] = "spells\\star",
 		["auto_equip_chatmsg"] = true,
-		["auto_equip_enable"] = false,
-		["hide_info_button"] = false,
 		["chat_filter"] = 2,
+		["hide_info_button"] = false,
+		["auto_equip_enable"] = false,
 	},
-	["ldb_last_selected"] = "talents",
 }
