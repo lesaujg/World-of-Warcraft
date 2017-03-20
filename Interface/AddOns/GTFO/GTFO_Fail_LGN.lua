@@ -1016,6 +1016,12 @@ GTFO.SpellID["198781"] = {
   sound = 3;
 };
 
+GTFO.SpellID["200914"] = {
+  --desc = "Indigestion (Wyrmtongue Scavenger)";
+  sound = 3;
+  tankSound = 0;
+}
+
 
 -- *************************
 -- * The Emerald Nightmare *

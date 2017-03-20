@@ -1,0 +1,27 @@
+------------------------------------------------------------------------
+r147 | scott@rarelysimple.com | 2017-03-18 19:30:46 -0500 (Sat, 18 Mar 2017) | 1 line
+Changed paths:
+   M /trunk/DB.lua
+
+Corrects Shaman Tier 19 Heroic appearances.
+------------------------------------------------------------------------
+r146 | scott@rarelysimple.com | 2017-03-18 14:57:30 -0500 (Sat, 18 Mar 2017) | 4 lines
+Changed paths:
+   M /trunk/Core.lua
+   M /trunk/DB.lua
+   M /trunk/UI.lua
+
+Corrects issue affecting the ability to favorite/unfavorite and hide/unhide sets. (Tickets #64 & #70)
+Corrects Paladin Tier 18 appearances (Ticket #66)
+Corrects Mage Tier 17 appearances (Ticket #69)
+Adds new command option /sc (Ticket #65)
+------------------------------------------------------------------------
+r145 | scott@rarelysimple.com | 2016-12-11 17:58:49 -0600 (Sun, 11 Dec 2016) | 1 line
+Changed paths:
+   M /trunk/Core.lua
+   M /trunk/SetCollector.toc
+   M /trunk/UI.lua
+
+Turned off assumption that outfits are completed
+------------------------------------------------------------------------
+

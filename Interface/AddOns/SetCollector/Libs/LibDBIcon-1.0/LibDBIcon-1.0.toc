@@ -6,10 +6,6 @@
 ## X-Category: Library
 ## X-License: GPLv2 or later
 ## X-Credits: Rabbit, copystring
-## X-Curse-Packaged-Version: r56-release
-## X-Curse-Project-Name: LibDBIcon-1.0
-## X-Curse-Project-ID: libdbicon-1-0
-## X-Curse-Repository-ID: wow/libdbicon-1-0/mainline
 
 embeds.xml
 LibDBIcon-1.0\lib.xml

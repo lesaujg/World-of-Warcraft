@@ -127,7 +127,7 @@ function SetCollector:UpdateCollections()
 end
 
 function SetCollector:PLAYER_LOGIN()
-	local DEBUG = SetCollector:GetDebug()
+  local DEBUG = SetCollector:GetDebug()
   if DEBUG then SetCollector:Print("Running PLAYER_LOGIN processes"); end
 	SetCollector:InitializeFilter(DEBUG)
 	SetCollector:InitializeModel(DEBUG)
@@ -138,6 +138,7 @@ end
 --
 
 SetCollector:RegisterChatCommand("setcollector", "MySlashProcessorFunc")
+SetCollector:RegisterChatCommand("sc", "MySlashProcessorFunc")
 
 function SetCollector:OptionsSetDebug()
 	if SetCollector.db.global.debug then SetCollector.db.global.debug = false
