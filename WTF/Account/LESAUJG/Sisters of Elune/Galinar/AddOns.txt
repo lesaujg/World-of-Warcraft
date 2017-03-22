@@ -158,3 +158,17 @@ DBM-BrokenIsles: enabled
 DBM-Party-Legion: enabled
 !KalielsTracker: disabled
 WorldQuestTracker: disabled
+Details: disabled
+Details_DmgRank: disabled
+Details_DpsTuning: disabled
+Details_EncounterDetails: disabled
+Details_RaidCheck: disabled
+Details_DataStorage: disabled
+Details_TimeAttack: disabled
+Details_TinyThreat: disabled
+Details_Vanguard: disabled
+Details_Streamer: disabled
+Details_3DModelsPaths: disabled
+Details_RaidInfo-EmeraldNightmare: disabled
+Details_RaidInfo-Nighthold: disabled
+Details_RaidInfo-TrialOfValor: disabled

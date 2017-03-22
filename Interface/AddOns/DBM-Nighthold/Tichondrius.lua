@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1762, "DBM-Nighthold", nil, 786)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 15981 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 16059 $"):sub(12, -3))
 mod:SetCreatureID(103685)
 mod:SetEncounterID(1862)
 mod:SetZone()
@@ -31,7 +31,7 @@ mod:RegisterEventsInCombat(
  --(ability.id = 212997 or ability.id = 213238 or ability.id = 208230 or ability.id = 213531 or ability.id = 206365) and type = "begincast"
 local warnCarrionPlague				= mod:NewTargetAnnounce(206480, 3)
 local warnBrandOfArgus				= mod:NewTargetAnnounce(212794, 4)
-local warnBloodFang					= mod:NewCountAnnounce("ej13528", 1)
+local warnBloodFang					= mod:NewCountAnnounce("ej13528", 1, 24733)
 --Nightborne
 local warnVolatileWound				= mod:NewStackAnnounce(216024, 3, nil, false, 2)
 --The Legion
@@ -65,7 +65,7 @@ local timerIllusionaryNight			= mod:NewBuffActiveTimer(32, 206365, nil, nil, nil
 local timerAddsCD					= mod:NewAddsTimer(25, 216726, nil, "-Healer")
 local timerCarrionNightmare			= mod:NewNextCountTimer(4, 215988, nil, nil, nil, 2)
 
-local berserkTimer					= mod:NewBerserkTimer(470)
+local berserkTimer					= mod:NewBerserkTimer(463)
 
 local countdownSeekerSwarm			= mod:NewCountdown(25, 213238)
 local countdownEchoesOfVoid			= mod:NewCountdown("Alt65", 213531)
@@ -122,18 +122,11 @@ mod.vb.addsCount = 0
 mod.vb.carrionNightmare = 0
 mod.vb.batsKilled = 0
 
-local updateInfoFrame, sortInfoFrame, breakMarks
+local updateInfoFrame, breakMarks
 do
 	local argusDebuff = GetSpellInfo(212794)
 	local playerName = UnitName("player")
 	local lines = {}
-	sortInfoFrame = function(a, b)
-		local a = lines[a]
-		local b = lines[b]
-		if not tonumber(a) then a = -1 end
-		if not tonumber(b) then b = -1 end
-		if a < b then return true else return false end
-	end
 	updateInfoFrame = function()
 		table.wipe(lines)
 		local total = 0
@@ -175,7 +168,7 @@ do
 			end
 			if self.Options.InfoFrame then
 				DBM.InfoFrame:SetHeader(argusDebuff)
-				DBM.InfoFrame:Show(8, "function", updateInfoFrame, sortInfoFrame, true)
+				DBM.InfoFrame:Show(8, "function", updateInfoFrame, false, true, true)
 			end
 		end
 	end
@@ -204,6 +197,8 @@ function mod:OnCombatStart(delay)
 	if not self:IsEasy() then
 		timerBrandOfArgusCD:Start(15-delay, 1)
 		berserkTimer:Start(-delay)
+	else
+		berserkTimer:Start(523-delay)
 	end
 	if self.Options.NPAuraOnCarrionPlague then
 		DBM:FireEvent("BossMod_EnableFriendlyNameplates")
@@ -268,7 +263,7 @@ function mod:SPELL_CAST_START(args)
 			--Restore argus tracker if for some reason you let people have it this long
 			if self.Options.InfoFrame and self:IsMythic() then
 				DBM.InfoFrame:SetHeader(GetSpellInfo(212794))
-				DBM.InfoFrame:Show(5, "function", updateInfoFrame, sortInfoFrame, true)
+				DBM.InfoFrame:Show(5, "function", updateInfoFrame, false, true, true)
 			end
 		end
 	elseif spellId == 213238 then
@@ -443,6 +438,9 @@ function mod:SPELL_AURA_APPLIED(args)
 		else
 			self:Schedule(0.5, breakMarks, self, args.spellName)
 		end
+		if self.Options.InfoFrame then
+			DBM.InfoFrame:Update()
+		end
 	elseif spellId == 208230 then
 		if args:IsPlayer() then
 			specWarnFeastOfBlood:Show()
@@ -482,6 +480,9 @@ function mod:SPELL_AURA_REMOVED(args)
 		if self.Options.SetIconOnBrandOfArgus then
 			self:SetIcon(args.destName, 0)
 		end
+		if self.Options.InfoFrame then
+			DBM.InfoFrame:Update()
+		end
 	elseif spellId == 216040 and args:IsPlayer() and self.Options.RangeFrame then
 		DBM.RangeCheck:Hide()
 	elseif spellId == 206480 then
@@ -503,7 +504,7 @@ function mod:UNIT_DIED(args)
 	local cid = self:GetCIDFromGUID(args.destGUID)
 	if cid == 104326 then--Dark Phase bats
 		self.vb.batsKilled = self.vb.batsKilled + 1
-		if self.vb.batsKilled % 5 == 0 then
+		if self.vb.batsKilled % 4 == 0 then
 			warnBloodFang:Show(self.vb.batsKilled)
 		end
 	end

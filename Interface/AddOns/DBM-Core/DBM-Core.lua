@@ -41,9 +41,9 @@
 --  Globals/Default Options  --
 -------------------------------
 DBM = {
-	Revision = tonumber(("$Revision: 15993 $"):sub(12, -3)),
+	Revision = tonumber(("$Revision: 16063 $"):sub(12, -3)),
 	DisplayVersion = "7.1.17", -- the string that is shown as version
-	ReleaseRevision = 15993 -- the revision of the latest stable version that is available
+	ReleaseRevision = 16063 -- the revision of the latest stable version that is available
 }
 DBM.HighestRelease = DBM.ReleaseRevision --Updated if newer version is detected, used by update nags to reflect critical fixes user is missing on boss pulls
 
@@ -421,7 +421,7 @@ local UpdateChestTimer
 local breakTimerStart
 local AddMsg
 
-local fakeBWVersion, fakeBWHash = 47, "12100f9"
+local fakeBWVersion, fakeBWHash = 48, "b49a4be"
 local versionQueryString, versionResponseString = "Q^%d^%s", "V^%d^%s"
 
 local enableIcons = true -- set to false when a raid leader or a promoted player has a newer version of DBM
@@ -8480,7 +8480,7 @@ do
 				end)
 			end
 			if anchorFrame:IsShown() then
-				moveEnd()
+				moveEnd(self)
 			else
 				moving = true
 				anchorFrame:Show()
@@ -10727,6 +10727,11 @@ function bossModPrototype:SetCreatureID(...)
 		self.multiMobPullDetection = {...}
 		if self.combatInfo then
 			self.combatInfo.multiMobPullDetection = self.multiMobPullDetection
+			if self.inCombat then
+				--Called mid combat, fix some variables
+				self.numBoss = #self.multiMobPullDetection
+				self.vb.bossLeft = self.numBoss
+			end
 		end
 		for i = 1, select("#", ...) do
 			local cId = select(i, ...)
@@ -11106,11 +11111,59 @@ do
 			local scanInterval = scanInterval or 0.2
 			local scanningTime = scanningTime or 8
 			--DO SCAN NOW
-			for uId in DBM:GetGroupMembers() do
-				if not self.iconRestore[uId] then
-					local oldIcon = self:GetIcon(uId) or 0
-					self.iconRestore[uId] = oldIcon
+			for _, unitid2 in ipairs(mobUids) do
+				local guid2 = UnitGUID(unitid2)
+				local cid2 = self:GetCIDFromGUID(guid2)
+				local isEnemy = UnitIsEnemy("player", unitid2) or true--If api returns nil, assume it's an enemy
+				local isFiltered = false
+				if not isFriendly and not isEnemy then
+					isFiltered = true
 				end
+				if not isFiltered then
+					if guid2 and type(creatureID) == "table" and creatureID[cid2] and not addsGUIDs[guid2] then
+						if type(creatureID[cid2]) == "number" then
+							SetRaidTarget(unitid2, creatureID[cid2])
+						else
+							SetRaidTarget(unitid2, addsIcon[scanID])
+							if iconSetMethod == 1 then
+								addsIcon[scanID] = addsIcon[scanID] + 1
+							else
+								addsIcon[scanID] = addsIcon[scanID] - 1
+							end
+						end
+						addsGUIDs[guid2] = true
+						addsIconSet[scanID] = addsIconSet[scanID] + 1
+						if addsIconSet[scanID] >= maxIcon then--stop scan immediately to save cpu
+							--clear variables
+							scanExpires[scanID] = nil
+							addsIcon[scanID] = nil
+							addsIconSet[scanID] = nil
+							return
+						end
+					elseif guid2 and ((guid2 == creatureID) or (cid2 == creatureID or cid2 == secondCreatureID)) and not addsGUIDs[guid2] then
+						if iconSetMethod == 2 then
+							SetRaidTarget(unitid2, mobIcon)
+						else
+							SetRaidTarget(unitid2, addsIcon[scanID])
+							if iconSetMethod == 1 then
+								addsIcon[scanID] = addsIcon[scanID] + 1
+							else
+								addsIcon[scanID] = addsIcon[scanID] - 1
+							end
+						end
+						addsGUIDs[guid2] = true
+						addsIconSet[scanID] = addsIconSet[scanID] + 1
+						if addsIconSet[scanID] >= maxIcon then--stop scan immediately to save cpu
+							--clear variables
+							scanExpires[scanID] = nil
+							addsIcon[scanID] = nil
+							addsIconSet[scanID] = nil
+							return
+						end
+					end
+				end
+			end
+			for uId in DBM:GetGroupMembers() do
 				local unitid = uId.."target"
 				local guid = UnitGUID(unitid)
 				local cid = self:GetCIDFromGUID(guid)
@@ -11153,58 +11206,6 @@ do
 							end
 						end
 						addsGUIDs[guid] = true
-						addsIconSet[scanID] = addsIconSet[scanID] + 1
-						if addsIconSet[scanID] >= maxIcon then--stop scan immediately to save cpu
-							--clear variables
-							scanExpires[scanID] = nil
-							addsIcon[scanID] = nil
-							addsIconSet[scanID] = nil
-							return
-						end
-					end
-				end
-			end
-			for _, unitid2 in ipairs(mobUids) do
-				local guid2 = UnitGUID(unitid2)
-				local cid2 = self:GetCIDFromGUID(guid2)
-				local isEnemy = UnitIsEnemy("player", unitid2)
-				local isFiltered = false
-				if not isFriendly and not isEnemy then
-					isFiltered = true
-				end
-				if not isFiltered then
-					if guid2 and type(creatureID) == "table" and creatureID[cid2] and not addsGUIDs[guid2] then
-						if type(creatureID[cid2]) == "number" then
-							SetRaidTarget(unitid2, creatureID[cid2])
-						else
-							SetRaidTarget(unitid2, addsIcon[scanID])
-							if iconSetMethod == 1 then
-								addsIcon[scanID] = addsIcon[scanID] + 1
-							else
-								addsIcon[scanID] = addsIcon[scanID] - 1
-							end
-						end
-						addsGUIDs[guid2] = true
-						addsIconSet[scanID] = addsIconSet[scanID] + 1
-						if addsIconSet[scanID] >= maxIcon then--stop scan immediately to save cpu
-							--clear variables
-							scanExpires[scanID] = nil
-							addsIcon[scanID] = nil
-							addsIconSet[scanID] = nil
-							return
-						end
-					elseif guid2 and ((guid2 == creatureID) or (cid2 == creatureID or cid2 == secondCreatureID)) and not addsGUIDs[guid2] then
-						if iconSetMethod == 2 then
-							SetRaidTarget(unitid2, mobIcon)
-						else
-							SetRaidTarget(unitid2, addsIcon[scanID])
-							if iconSetMethod == 1 then
-								addsIcon[scanID] = addsIcon[scanID] + 1
-							else
-								addsIcon[scanID] = addsIcon[scanID] - 1
-							end
-						end
-						addsGUIDs[guid2] = true
 						addsIconSet[scanID] = addsIconSet[scanID] + 1
 						if addsIconSet[scanID] >= maxIcon then--stop scan immediately to save cpu
 							--clear variables

@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1743, "DBM-Nighthold", nil, 786)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 15988 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 16049 $"):sub(12, -3))
 mod:SetCreatureID(106643)
 mod:SetEncounterID(1872)
 mod:SetZone()
@@ -692,7 +692,7 @@ function mod:CHAT_MSG_MONSTER_YELL(msg, npc, _, _, target)
 end
 
 function mod:CHAT_MSG_MONSTER_SAY(msg, npc, _, _, target)
-	if (msg == L.prePullRP or msg:find(L.prePullRP)) then
+	if (msg == L.prePullRP or msg:find(L.prePullRP)) and self:LatencyCheck() then
 		self:SendSync("ElisandeRP")
 	end
 end
@@ -719,7 +719,7 @@ function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg, npc, _, _, target)
 end
 
 function mod:OnSync(msg, targetname)
-	if msg == "ElisandeRP" then
+	if msg == "ElisandeRP" and self:AntiSpam(10, 6) then
 		timerRP:Start()
 	end
 	if not self:IsInCombat() then return end
