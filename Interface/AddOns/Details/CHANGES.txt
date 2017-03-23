@@ -1,13 +1,7 @@
-changeset:   591:f49087cec14c
-tag:         v7.1.5.3431.116-release
+changeset:   594:4345b8af70db
+tag:         tip
 user:        Tercio
-date:        Wed Mar 15 14:11:50 2017 -0300
-summary:     - Fixed an issue with bar orientation right to left where fixed bar color isn't working.
-
-
-changeset:   590:bc8e7c9b7276
-user:        Tercio
-date:        Wed Mar 01 09:32:28 2017 -0300
-summary:     Added tag v7.1.5.3418.116-release for changeset 2f9d38c593cf
+date:        Tue Mar 21 13:18:16 2017 -0300
+summary:     Added tag v7.1.5.3459.116-release for changeset 5d8c530f7c7e
 
 

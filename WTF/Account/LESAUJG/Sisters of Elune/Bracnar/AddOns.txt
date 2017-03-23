@@ -37,7 +37,7 @@ Auc-Stat-StdDev: disabled
 Auc-Util-FixAH: disabled
 BeanCounter: disabled
 Postal: disabled
-Skada: enabled
+Skada: disabled
 Stubby: enabled
 !Swatter: disabled
 AddOnSkins: enabled
@@ -149,7 +149,7 @@ TradeSkillMaster_Destroying: disabled
 DBM-GarrisonInvasions: enabled
 DBM-HellfireCitadel: enabled
 DBM-Party-Classic: enabled
-premade-filter: disabled
+premade-filter: enabled
 TidyPlates: disabled
 PGFinder: disabled
 LFGFilter: disabled

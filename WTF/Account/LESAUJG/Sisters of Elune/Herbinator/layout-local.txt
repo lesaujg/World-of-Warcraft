@@ -1,1 +1,8 @@
 Version: 1
+Frame: TSMCraftingGatherFrame
+FrameLevel: 0
+Anchor: CENTER
+X: 317
+Y: 160
+W: 365
+H: 400

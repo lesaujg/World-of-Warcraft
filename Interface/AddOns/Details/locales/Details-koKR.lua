@@ -83,7 +83,7 @@ L["STRING_CLOSEALL"] = "모든 창이 닫혔습니다, 다시 열려면 '/detail
 L["STRING_COLOR"] = "색상"
 L["STRING_COMMAND_LIST"] = "명령어 목록"
 L["STRING_COOLTIP_NOOPTIONS"] = "옵션 없음"
-L["STRING_CRITICAL_HITS"] = "치명상"
+L["STRING_CRITICAL_HITS"] = "치명타 및 극대화 적중"
 L["STRING_CRITICAL_ONLY"] = "치명타"
 L["STRING_CURRENT"] = "현재"
 L["STRING_CURRENTFIGHT"] = "현재 세분화"
@@ -149,7 +149,7 @@ L["STRING_CUSTOM_SKIN_TEXTURE_DESC"] = [=[.tga 파일의 이름입니다.
 
 |cFFFFFF00WoW/Interface/|r
 
-|cFFFFFF00중요:|r 파일을 만들기 전에 게임 클라이언트를 닫으세요. 그 후에, /reload로 무늬 파일에 저장된 변경 내용을 적용할 수 있습니다.]=]
+|cFFFFFF00중요:|r 파일을 만들기 전에 게임 클라이언트를 닫으세요. 이후부터는 /reload로 텍스쳐 파일에 저장된 변경 내용을 적용할 수 있습니다.]=]
 L["STRING_CUSTOM_SOURCE"] = "출처:"
 L["STRING_CUSTOM_SOURCE_DESC"] = [=[효과를 일으킨 대상입니다.
 
@@ -298,7 +298,7 @@ L["STRING_MODE_RAID"] = "플러그인: 공격대"
 L["STRING_MODE_SELF"] = "플러그인: 솔로 플레이"
 L["STRING_MORE_INFO"] = "자세한 정보는 오른쪽에 있습니다."
 L["STRING_MULTISTRIKE"] = "연속타격"
-L["STRING_MULTISTRIKE_HITS"] = "연속타격"
+L["STRING_MULTISTRIKE_HITS"] = "연속타격 적중"
 L["STRING_MUSIC_DETAILS_ROBERTOCARLOS"] = [=[잊으려는 노력을 하지 않으면
 난 오랜 시간 당신의 삶에 머물거에요
 우리의 아주 작은 것까지도]=]
@@ -315,7 +315,7 @@ L["STRING_NOCLOSED_INSTANCES"] = [=[닫혀있는 창이 없습니다,
 L["STRING_NOLAST_COOLDOWN"] = "사용한 생존기 없음"
 L["STRING_NOMORE_INSTANCES"] = [=[창 최대 갯수에 도달했습니다.
 옵션 창에서 제한 갯수를 변경하세요.]=]
-L["STRING_NORMAL_HITS"] = "일반 타격"
+L["STRING_NORMAL_HITS"] = "일반 적중"
 L["STRING_NUMERALSYSTEM"] = "명수법"
 L["STRING_NUMERALSYSTEM_ARABIC_MYRIAD_EASTASIA"] = "동아시아 국가들이 사용합니다, 천 단위와 만 단위로 구분합니다."
 L["STRING_NUMERALSYSTEM_ARABIC_WESTERN"] = "서양"
@@ -367,7 +367,7 @@ L["STRING_OPTIONS_BAR_BACKDROP_ENABLED_DESC"] = "바 테두리를 켜거나 끕�
 L["STRING_OPTIONS_BAR_BACKDROP_SIZE_DESC"] = "테두리 크기를 조절합니다."
 L["STRING_OPTIONS_BAR_BACKDROP_TEXTURE_DESC"] = "테두리 모양을 변경합니다."
 L["STRING_OPTIONS_BAR_BCOLOR"] = "배경 색상"
-L["STRING_OPTIONS_BAR_BTEXTURE_DESC"] = "이 무늬를 상위 무늬 아래에 놓고 크기를 항상 창의 너비와 맞춥니다."
+L["STRING_OPTIONS_BAR_BTEXTURE_DESC"] = "이 텍스쳐를 상위 텍스쳐 밑에 놓고 크기를 항상 창의 너비와 맞춥니다."
 L["STRING_OPTIONS_BAR_COLOR_DESC"] = [=[이 무늬의 색상과 투명도입니다.
 
 |cFFFFFF00중요|r: 직업 색상을 사용하면 선택한 색상은 무시됩니다.]=]
@@ -393,7 +393,7 @@ L["STRING_OPTIONS_BAR_ICONFILE5"] = "둥근 아이콘"
 L["STRING_OPTIONS_BAR_ICONFILE6"] = "기본 (투명한 흑백)"
 L["STRING_OPTIONS_BAR_SPACING"] = "간격"
 L["STRING_OPTIONS_BAR_SPACING_DESC"] = "바 사이의 간격 크기입니다."
-L["STRING_OPTIONS_BAR_TEXTURE_DESC"] = "바 상단에 쓰이는 무늬입니다."
+L["STRING_OPTIONS_BAR_TEXTURE_DESC"] = "바의 상단에 쓰이는 텍스쳐입니다."
 L["STRING_OPTIONS_BARLEFTTEXTCUSTOM"] = "사용자 설정 문자 활성화"
 L["STRING_OPTIONS_BARLEFTTEXTCUSTOM_DESC"] = "활성화하면 아래 입력 창에 쓰이는 규칙에 따라 좌측 문자가 표시됩니다."
 L["STRING_OPTIONS_BARLEFTTEXTCUSTOM2"] = ""
@@ -426,7 +426,7 @@ L["STRING_OPTIONS_BARRIGHTTEXTCUSTOM2_DESC"] = [=[|cFFFFFF00{data1}|r: 첫번째
 
 |cFFFFFF00Scape Sequences|r: 색상이나 텍스쳐를 추가합니다. 자세한 정보는 'UI escape sequences' 검색하세요.]=]
 L["STRING_OPTIONS_BARS"] = "바 일반 설정"
-L["STRING_OPTIONS_BARS_CUSTOM_TEXTURE"] = "사용자 설정 무늬 파일"
+L["STRING_OPTIONS_BARS_CUSTOM_TEXTURE"] = "사용자 설정 텍스쳐 파일"
 L["STRING_OPTIONS_BARS_CUSTOM_TEXTURE_DESC"] = [=[
 
 |cFFFFFF00중요|r: 이미지는 256x32 픽셀이어야 합니다.]=]
@@ -920,8 +920,8 @@ L["STRING_OPTIONS_RT_DEATH_MSG"] = "Details! %s 죽음"
 L["STRING_OPTIONS_RT_DEATHS_ANCHOR"] = "죽음 알리기:"
 L["STRING_OPTIONS_RT_DEATHS_FIRST"] = "최대"
 L["STRING_OPTIONS_RT_DEATHS_FIRST_DESC"] = "전투 중 처음 X 번째 죽음까지만 알리도록 합니다."
-L["STRING_OPTIONS_RT_DEATHS_HITS"] = "타격 횟수"
-L["STRING_OPTIONS_RT_DEATHS_HITS_DESC"] = "죽음을 알릴 때 타격 횟수를 표시합니다."
+L["STRING_OPTIONS_RT_DEATHS_HITS"] = "적중 횟수"
+L["STRING_OPTIONS_RT_DEATHS_HITS_DESC"] = "죽음을 알릴 때 적중 횟수를 표시합니다."
 L["STRING_OPTIONS_RT_DEATHS_ONOFF_DESC"] = "공격대원이 죽으면 죽은 플레이어를 공격대 채널에 알립니다."
 L["STRING_OPTIONS_RT_DEATHS_WHERE"] = "인스턴스"
 L["STRING_OPTIONS_RT_DEATHS_WHERE_DESC"] = [=[죽음을 보고할 곳을 선택합니다.
@@ -933,7 +933,7 @@ L["STRING_OPTIONS_RT_DEATHS_WHERE1"] = "공격대 & 던전"
 L["STRING_OPTIONS_RT_DEATHS_WHERE2"] = "공격대만"
 L["STRING_OPTIONS_RT_DEATHS_WHERE3"] = "던전만"
 L["STRING_OPTIONS_RT_FIRST_HIT"] = "첫 타격"
-L["STRING_OPTIONS_RT_FIRST_HIT_DESC"] = "대화창에 (|cFFFFFF00자신에게만|r) 누가 첫 타격을 줬는지 표시합니다, 대체로 전투를 시작한 사람입니다."
+L["STRING_OPTIONS_RT_FIRST_HIT_DESC"] = "대화창에 (|cFFFFFF00자신에게만|r) 첫번째로 적중시킨 사람을 표시합니다, 대체로 전투를 시작한 사람입니다."
 L["STRING_OPTIONS_RT_IGNORE_TITLE"] = "알림을 사용할 생존기"
 L["STRING_OPTIONS_RT_INFOS"] = "추가 정보:"
 L["STRING_OPTIONS_RT_INFOS_PREPOTION"] = "시작물약 사용"
@@ -1158,7 +1158,7 @@ L["STRING_OPTIONS_TOOLTIPS_BACKGROUNDCOLOR"] = "배경 색상"
 L["STRING_OPTIONS_TOOLTIPS_BACKGROUNDCOLOR_DESC"] = "배경에 사용할 색상을 선택합니다."
 L["STRING_OPTIONS_TOOLTIPS_BORDER_COLOR_DESC"] = "테두리 색상을 변경합니다."
 L["STRING_OPTIONS_TOOLTIPS_BORDER_SIZE_DESC"] = "테두리 크기를 변경합니다."
-L["STRING_OPTIONS_TOOLTIPS_BORDER_TEXTURE_DESC"] = "테두리 무늬 파일을 수정합니다."
+L["STRING_OPTIONS_TOOLTIPS_BORDER_TEXTURE_DESC"] = "테두리 텍스쳐 파일을 수정합니다."
 L["STRING_OPTIONS_TOOLTIPS_FONTCOLOR"] = "문자 색상"
 L["STRING_OPTIONS_TOOLTIPS_FONTCOLOR_DESC"] = "툴팁 문자에 사용할 색상을 변경합니다."
 L["STRING_OPTIONS_TOOLTIPS_FONTFACE"] = "문자 글꼴"
@@ -1308,7 +1308,7 @@ L["STRING_OPTIONSMENU_ROWSETTINGS"] = "바: 일반"
 L["STRING_OPTIONSMENU_ROWTEXTS"] = "바: 문자"
 L["STRING_OPTIONSMENU_SKIN"] = "스킨 선택"
 L["STRING_OPTIONSMENU_SPELLS"] = "주문 사용자 설정"
-L["STRING_OPTIONSMENU_SPELLS_CONSOLIDATE"] = "공통 주문을 같은 이름으로 통합하기"
+L["STRING_OPTIONSMENU_SPELLS_CONSOLIDATE"] = "같은 이름의 주문을 공통 주문으로 통합하기"
 L["STRING_OPTIONSMENU_TITLETEXT"] = "제목 바: 문자"
 L["STRING_OPTIONSMENU_TOOLTIP"] = "툴팁"
 L["STRING_OPTIONSMENU_WALLPAPER"] = "창: 배경화면"
@@ -1468,7 +1468,7 @@ L["STRING_SWITCH_WARNING"] = "역할 바뀜. 변경: |cFFFFAA00%s|r"
 L["STRING_TARGET"] = "대상"
 L["STRING_TARGETS"] = "대상"
 L["STRING_TARGETS_OTHER1"] = "소환수와 다른 대상들"
-L["STRING_TEXTURE"] = "무늬"
+L["STRING_TEXTURE"] = "텍스쳐"
 L["STRING_TIME_OF_DEATH"] = "죽음"
 L["STRING_TOOOLD"] = "Details! 버전이 너무 오래되어 설치할 수 없습니다."
 L["STRING_TOP"] = "상단"
