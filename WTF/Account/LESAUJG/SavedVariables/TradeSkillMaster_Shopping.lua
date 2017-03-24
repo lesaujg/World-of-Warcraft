@@ -36,41 +36,41 @@ TradeSkillMaster_ShoppingDB = {
 		["auction"] = true,
 	},
 	["g@ @sniperVendorPrice"] = true,
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1490237639,
+			["lastSearch"] = 1490324389,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [1]
 		{
+			["lastSearch"] = 1490315480,
+			["name"] = "Obliterum/exact",
+			["filter"] = "Obliterum/exact",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [2]
+		{
 			["lastSearch"] = 1490201078,
 			["name"] = "Chaos Crystal/exact",
 			["filter"] = "Chaos Crystal/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [2]
+		}, -- [3]
 		{
 			["lastSearch"] = 1490201074,
 			["name"] = "Flask of the Seventh Demon",
 			["filter"] = "Flask of the Seventh Demon",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [3]
+		}, -- [4]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1490052377,
 			["name"] = "Dream Shard/ignorede",
 			["filter"] = "Dream Shard/ignorede",
-		}, -- [4]
-		{
-			["lastSearch"] = 1489979867,
-			["name"] = "Obliterum/exact",
-			["filter"] = "Obliterum/exact",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
 		}, -- [5]
 		{
 			["searchMode"] = "normal",
@@ -695,7 +695,7 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "Primordial Ruby/exact",
 		}, -- [108]
 	},
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @maxDeSearchLvl"] = 735,
 	["g@ @minDeSearchLvl"] = 1,

@@ -1,181 +1,49 @@
-tag f891b12ea2aaf8d9e7956999041221d41ab632de 2.3.6
+tag 1213fc16b3a7ec90e6222d273a26969d34c76756 2.3.7
 Author:	Benjamin Staneck <staneck@gmail.com>
-Date:	Sun Mar 19 19:22:58 2017 +0100
+Date:	Thu Mar 23 23:14:49 2017 +0100
 
-commit 6cd577af943840a0a958c6cc8187363d866fce52
+commit 16caf096b1a566d2ccc875b080a88203bf1deed2
 Author: Infus <infus@squorn.de>
-Date:   Sun Mar 19 17:50:45 2017 +0100
+Date:   Thu Mar 23 21:54:35 2017 +0100
 
-    Change the template for "Shield Block" to use full scan
-    
-    As the T19 bonus for adds a second Shield Block buff.
-    
-    Ticket-Nr: 898
+    Fix templates for some monk abilities
 
-commit fd00e46af249c9a9936fae3c195d418d9974fe34
-Author: Benjamin Staneck <staneck@gmail.com>
-Date:   Tue Mar 14 20:06:31 2017 +0100
-
-    trigger translation update
-
-commit d52f623702339ac26ed3a7e8cc204d38359607df
-Author: Benjamin Staneck <staneck@gmail.com>
-Date:   Tue Mar 14 03:57:38 2017 +0100
-
-    Revert "Fix checks for gcd. Focussed Rage has the same duration as a gcd"
-    
-    This reverts commit 2faed3e8d58723e3e1f5f7c2edcd79856261398e.
-
-commit 52d2ac1bffed371bd03118df533a70fa8f49adf4
-Author: Benjamin Staneck <staneck@gmail.com>
-Date:   Tue Mar 14 03:57:28 2017 +0100
-
-    remove a few more warnings
-
-commit 11997afa1916497caebd54d3555ecc2b4e631f67
-Author: Benjamin Staneck <Stanzilla@users.noreply.github.com>
-Date:   Sun Mar 12 10:24:25 2017 +0100
-
-    Update README.md
-
-commit ad2ec673ebf3efde882eca6f73d6cdb1d61eb8e3
-Author: Benjamin Staneck <Stanzilla@users.noreply.github.com>
-Date:   Sun Mar 12 10:23:43 2017 +0100
-
-    Update README.md
-
-commit ccd810d2eca7ac65f7f9381750fa8b635c33d88c
-Author: Benjamin Staneck <staneck@gmail.com>
-Date:   Sun Mar 12 10:11:55 2017 +0100
-
-    add travis.yml
-
-commit e4023cc98c4c61441fbd230a82bc8fa25ecbcba6
-Author: Benjamin Staneck <staneck@gmail.com>
-Date:   Sun Mar 12 06:38:58 2017 +0100
-
-    apparently vscode can't look into .gitignore to figure out which files to ignore, so it needs a special file for that
-    
-    Reference: https://github.com/Microsoft/vscode/issues/78
-
-commit ddefda1b67926d5f33aa3a92440b0ec4ef4428b1
-Author: Benjamin Staneck <staneck@gmail.com>
-Date:   Sun Mar 12 06:26:10 2017 +0100
-
-    add .editorconfig file (http://editorconfig.org)
-
-commit 98e40092db05d6041bc721544f55c5ad457a82f6
-Author: Benjamin Staneck <staneck@gmail.com>
-Date:   Sun Mar 12 06:17:15 2017 +0100
-
-    remove dot files from .pkgmeta, the Curse packager is actually smart enough to auto-ignore them. :open_mouth:
-
-commit 2cdfaa25e1f577d91c23d465d931c57073bff47d
-Author: Benjamin Staneck <Stanzilla@users.noreply.github.com>
-Date:   Sun Mar 12 05:41:27 2017 +0100
-
-    Create CONTRIBUTING.md
-
-commit f67f1aff1230a2dcec20d00e519bb39385f13b71
-Author: Benjamin Staneck <Stanzilla@users.noreply.github.com>
-Date:   Sun Mar 12 05:27:20 2017 +0100
-
-    Create LICENSE
-
-commit 2faed3e8d58723e3e1f5f7c2edcd79856261398e
+commit 99ddf9759677c027f0a29d6739bc78bb930478b3
 Author: Infus <infus@squorn.de>
-Date:   Sun Mar 12 01:50:23 2017 +0100
+Date:   Thu Mar 23 21:53:40 2017 +0100
 
-    Fix checks for gcd. Focussed Rage has the same duration as a gcd
+    Fix nil error in dynamic groups
     
-    But a different startTime
-    
-    Ticket-Nr: 866
+    Ticket-Nr: 901
 
-commit aa96e284914f64968ee896ffaadd9fea02540a00
+commit 4343801f5061789bb95d38a1955cd0d3e1e9d556
 Author: Infus <infus@squorn.de>
-Date:   Sun Mar 12 01:39:03 2017 +0100
+Date:   Tue Mar 21 23:23:10 2017 +0100
 
-    Fix color functions returning no alpha bug
+    Give the glow_frame a initial size that matches its parent
     
-    Something in Masque changed, and this is now a error.
+    This should not matter, since we call SetAllPoints.
+    This was proposed by Alea on Discord.
     
-    Ticket-Nr: 885
+    But it does, and somehow fixes:
+    
+    Ticket-Nr: 883
 
-commit 3978fbdf673668c476da46462e9ce20b6600dcab
+commit 1404dd923bfea8063004ad4b024551f2b3f22914
 Author: Infus <infus@squorn.de>
-Date:   Sat Mar 11 18:54:19 2017 +0100
+Date:   Tue Mar 21 23:11:01 2017 +0100
 
-    Fix sorting in some cases for Dynamic Groups:
-    
-    The index is saved in state since a long time
+    Add MKII Gyroscopic Stabilizer to the Legendaries list
 
-commit 40e91bb175a3715b03c6911ef56792e91ef0c437
+commit 85153aa7c138360587369259d0224aa834426480
 Author: Infus <infus@squorn.de>
-Date:   Sat Mar 11 18:19:49 2017 +0100
+Date:   Tue Mar 21 22:51:49 2017 +0100
 
-    Modernize: Remove old conditions modernize code
-    
-    A long time ago, WeakAuras 1 had a conditions field for each
-    aura. That got replaced by a separate conditions trigger.
-    
-    In my upcoming conditions feature I want to add a .conditions field
-    to auras.
-    
-    Removing this Modernize code let's me switch to master without the
-    old Modernize code breaking my new conditions
+    Cancel correct timer in swing code
 
-commit c67522a615a8083b2cc7b22f4eeb854ab507e8b1
+commit aafd176d27b1e7fba2068b8714fec2c09bb8d717
 Author: Benjamin Staneck <staneck@gmail.com>
-Date:   Fri Mar 10 01:12:38 2017 +0100
+Date:   Mon Mar 20 23:41:29 2017 +0100
 
-    workaround for powerType being false on 7.2
-
-commit b4aa482cbe73a6e4b8c1f9d05266e92229207936
-Author: Benjamin Staneck <staneck@gmail.com>
-Date:   Wed Mar 8 21:44:38 2017 +0100
-
-    use GetRealZoneText() (unaffected by the map) again instead of HBD:GetLocalizedMap() which does not support sub-zones
-
-commit f779566dbf0520bc669527c1c7c851c8fb5a9afa
-Author: Infus <infus@squorn.de>
-Date:   Tue Mar 7 22:51:54 2017 +0100
-
-    Fix regression
-
-commit 2566fc8a259a7a773171e6547354a3b7d9e8ef8f
-Author: Benjamin Staneck <staneck@gmail.com>
-Date:   Mon Mar 6 08:42:07 2017 +0100
-
-    switch project to Luacheck and fix a *ton* of warnings
-
-commit 9ba00b12eadc26cd27be5d8ca88a8b32ee0c0d13
-Author: Benjamin Staneck <staneck@gmail.com>
-Date:   Sun Mar 5 05:57:23 2017 +0100
-
-    remove some more unaccessed variables
-
-commit b012c635df58e3f97bce7bed09db8d8e10cc0aac
-Author: Benjamin Staneck <staneck@gmail.com>
-Date:   Sun Mar 5 05:33:01 2017 +0100
-
-    remove a hack that was incomplete and is not needed (anymore?)
-
-commit 11c82e3c1991b0411988cdd19a9ddaca050ad01c
-Author: Benjamin Staneck <staneck@gmail.com>
-Date:   Sun Mar 5 05:12:11 2017 +0100
-
-    UnitAura's shouldConsolidate is now nameplateShowPersonal in Legion
-
-commit 0cdef91aaf5c4cf3472c7ceb2fcb7bc6503b2ceb
-Author: Benjamin Staneck <staneck@gmail.com>
-Date:   Sun Mar 5 01:00:27 2017 +0100
-
-    fix a typo that caused aura conversion to fail
-
-commit 891f17c692c3e517c558c88d9342249d102baed7
-Author: Benjamin Staneck <staneck@gmail.com>
-Date:   Sat Mar 4 23:39:38 2017 +0100
-
-    scanAfterLoad now calls SortDisplayButtons with (nil, true). Fixes #166
+    GenericTrigger: consolidate Modernize() a bit and change a few comments.
 

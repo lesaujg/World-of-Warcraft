@@ -18,794 +18,54 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 156,
+					["combatId"] = 206,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
-							["on_hold"] = false,
-							["colocacao"] = 1,
-							["damage_from"] = {
-								["Nightborne Trapper"] = true,
-							},
-							["targets"] = {
-								["Nightborne Trapper"] = 2189448,
-							},
-							["pets"] = {
-								"Rexxar <Bracnar>", -- [1]
-								"Hati <Bracnar>", -- [2]
-								"Chromaggus <Bracnar>", -- [3]
-							},
-							["friendlyfire"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1719014.005749,
-							["spec"] = 253,
-							["dps_started"] = false,
-							["total"] = 2189448.005749,
-							["classe"] = "HUNTER",
-							["serial"] = "Player-1169-06A1ACBD",
-							["nome"] = "Bracnar",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[75] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 129501,
-										["g_amt"] = 0,
-										["n_max"] = 32693,
-										["targets"] = {
-											["Nightborne Trapper"] = 162194,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 32693,
-										["n_min"] = 32693,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 162194,
-										["c_max"] = 64751,
-										["id"] = 75,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 64750,
-									},
-									[193455] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 1334454,
-										["g_amt"] = 0,
-										["n_max"] = 222366,
-										["targets"] = {
-											["Nightborne Trapper"] = 1556820,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 222366,
-										["n_min"] = 222366,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 1556820,
-										["c_max"] = 453626,
-										["id"] = 193455,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 440414,
-									},
-								},
-							},
-							["grupo"] = true,
-							["end_time"] = 1490237319,
-							["last_dps"] = 267168.762142149,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 92492.005749,
-							["start_time"] = 1490237310,
-							["delay"] = 0,
-							["last_event"] = 1490237318,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["serial"] = "Pet-0-3136-0-96-14020-0301EE046B",
+							["flag_original"] = 1300,
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Nightborne Trapper"] = 333254,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 333254.004188,
-							["dps_started"] = false,
-							["total"] = 333254.004188,
-							["classe"] = "PET",
-							["ownerName"] = "Bracnar",
-							["nome"] = "Chromaggus <Bracnar>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28613,
-										["targets"] = {
-											["Nightborne Trapper"] = 56393,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 56393,
-										["n_min"] = 27780,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 56393,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									}, -- [1]
-									[17253] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 139250,
-										["targets"] = {
-											["Nightborne Trapper"] = 276861,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 276861,
-										["n_min"] = 137611,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 276861,
-										["c_max"] = 0,
-										["id"] = 17253,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1490237319,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.004188,
-							["start_time"] = 1490237313,
-							["delay"] = 0,
-							["last_event"] = 1490237317,
-						}, -- [2]
-						{
-							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3131-1220-16-110975-00005336F1",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Nightborne Trapper"] = 73221,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 73221.004181,
-							["dps_started"] = false,
-							["total"] = 73221.004181,
-							["classe"] = "PET",
-							["ownerName"] = "Bracnar",
-							["nome"] = "Rexxar <Bracnar>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10089,
-										["targets"] = {
-											["Nightborne Trapper"] = 24930,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 24930,
-										["n_min"] = 5045,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 24930,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									}, -- [1]
-									[220877] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 31875,
-										["targets"] = {
-											["Nightborne Trapper"] = 31875,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 31875,
-										["n_min"] = 31875,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 31875,
-										["c_max"] = 0,
-										["id"] = 220877,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[220874] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 16416,
-										["targets"] = {
-											["Nightborne Trapper"] = 16416,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 16416,
-										["n_min"] = 16416,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 16416,
-										["c_max"] = 0,
-										["id"] = 220874,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1490237319,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.004181,
-							["start_time"] = 1490237312,
-							["delay"] = 0,
-							["last_event"] = 1490237317,
-						}, -- [3]
-						{
-							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3131-1220-16-106551-00005336EE",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Nightborne Trapper"] = 63959,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 63959.00862,
-							["dps_started"] = false,
-							["total"] = 63959.00862,
-							["classe"] = "PET",
-							["ownerName"] = "Bracnar",
-							["nome"] = "Hati <Bracnar>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 32452,
-										["targets"] = {
-											["Nightborne Trapper"] = 63959,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 63959,
-										["n_min"] = 31507,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 63959,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1490237319,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.00862,
-							["start_time"] = 1490237313,
-							["delay"] = 0,
-							["last_event"] = 1490237317,
-						}, -- [4]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 156,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorb"] = 0.004655,
-							["last_hps"] = 0,
-							["targets_overheal"] = {
-								["Bracnar"] = 97674,
-							},
-							["targets"] = {
-								["Bracnar"] = 190166,
-							},
-							["last_event"] = 1490237318,
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["healing_from"] = {
-								["Bracnar"] = true,
-							},
-							["classe"] = "HUNTER",
-							["totalover"] = 97674.004655,
-							["total_without_pet"] = 92492.004655,
-							["heal_enemy_amt"] = 0,
-							["totalover_without_pet"] = 0.004655,
-							["fight_component"] = true,
-							["end_time"] = 1490237319,
-							["healing_taken"] = 92492.004655,
-							["serial"] = "Player-1169-06A1ACBD",
-							["nome"] = "Bracnar",
-							["spec"] = 253,
-							["grupo"] = true,
-							["total"] = 92492.004655,
-							["heal_enemy"] = {
-							},
-							["targets_absorbs"] = {
-							},
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1490237316,
-							["delay"] = 0,
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[208981] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bracnar"] = 97674,
-										},
-										["n_max"] = 53266,
-										["targets"] = {
-											["Bracnar"] = 92492,
-										},
-										["n_min"] = 39226,
-										["counter"] = 2,
-										["overheal"] = 97674,
-										["total"] = 92492,
-										["c_max"] = 0,
-										["id"] = 208981,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 92492,
-										["m_healed"] = 0,
-										["n_amt"] = 2,
-										["absorbed"] = 0,
-									},
-								},
-							},
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 156,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 156,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["fight_component"] = true,
-							["flag_original"] = 1047,
-							["nome"] = "Bracnar",
-							["spec"] = 253,
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 38,
-							["pets"] = {
-								"Rexxar <Bracnar>", -- [1]
-								"Chromaggus <Bracnar>", -- [2]
-								"Hati <Bracnar>", -- [3]
-							},
-							["spell_cast"] = {
-								[193455] = 3,
-								[221332] = 1,
-							},
-							["classe"] = "HUNTER",
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[225787] = {
-										["uptime"] = 9,
-										["activedamt"] = 1,
-										["id"] = 225787,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[208981] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
-										["id"] = 208981,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[227723] = {
-										["uptime"] = 9,
-										["activedamt"] = 1,
-										["id"] = 227723,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[221796] = {
-										["uptime"] = 5,
-										["activedamt"] = 1,
-										["id"] = 221796,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[225730] = {
-										["uptime"] = 9,
-										["activedamt"] = 1,
-										["id"] = 225730,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[221332] = {
-										["uptime"] = 6,
-										["activedamt"] = 1,
-										["id"] = 221332,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-1169-06A1ACBD",
-							["last_event"] = 1490237319,
-						}, -- [1]
-						{
-							["flag_original"] = 8465,
-							["ownerName"] = "Bracnar",
-							["nome"] = "Rexxar <Bracnar>",
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["spell_cast"] = {
-								[221332] = 1,
-								[220877] = 1,
-								[220874] = 1,
-							},
-							["serial"] = "Creature-0-3131-1220-16-110975-00005336F1",
-							["last_event"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Bracnar",
-							["nome"] = "Chromaggus <Bracnar>",
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["spell_cast"] = {
-								[221332] = 1,
-								[2649] = 1,
-								[61684] = 1,
-								[17253] = 2,
-							},
-							["serial"] = "Pet-0-3136-0-96-14020-0301EE046B",
-							["last_event"] = 0,
-						}, -- [3]
-						{
-							["flag_original"] = 8465,
-							["ownerName"] = "Bracnar",
-							["nome"] = "Hati <Bracnar>",
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["spell_cast"] = {
-								[221332] = 1,
-							},
-							["serial"] = "Creature-0-3131-1220-16-106551-00005336EE",
-							["last_event"] = 0,
-						}, -- [4]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 156,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Bracnar"] = true,
-				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Nightborne Trapper",
-				["combat_counter"] = 234,
-				["playing_solo"] = true,
-				["totals"] = {
-					2189447.903401, -- [1]
-					92491.995889, -- [2]
-					{
-						0, -- [1]
-						[0] = -0.020844,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Bracnar"] = 92492.013993,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Bracnar"] = 4767667.024247,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 172044.316,
-				["combat_id"] = 156,
-				["instance_type"] = "none",
-				["resincked"] = true,
-				["frags"] = {
-					["Flamering Moth"] = 1,
-					["Nightborne Trapper"] = 2,
-					["Trapped Thicket Hunter"] = 1,
-				},
-				["data_fim"] = "22:48:39",
-				["data_inicio"] = "22:48:31",
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					1719014, -- [1]
-					92492, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 172036.121,
-				["contra"] = "Nightborne Trapper",
-				["TimeData"] = {
-				},
-			}, -- [1]
-			{
-				{
-					["combatId"] = 155,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["damage_from"] = {
-								["Thicket Hunter"] = true,
-							},
-							["targets"] = {
-								["Thicket Hunter"] = 1143910,
-								["Nightborne Trapper"] = 1205224,
+								["Ormagrogg"] = 9585867,
 							},
 							["pets"] = {
 								"Chromaggus <Bracnar>", -- [1]
-								"Rexxar <Bracnar>", -- [2]
-								"Hati <Bracnar>", -- [3]
+								"Hati <Bracnar>", -- [2]
+								"Rexxar <Bracnar>", -- [3]
 								"Beast <Bracnar>", -- [4]
 							},
 							["on_hold"] = false,
 							["classe"] = "HUNTER",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 784534.006107,
+							["total_without_pet"] = 2299557.003355,
+							["end_time"] = 1490323754,
 							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 9585867.003355,
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1490237282,
 							["friendlyfire_total"] = 0,
-							["spec"] = 253,
 							["nome"] = "Bracnar",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									[75] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 64751,
-										["g_amt"] = 0,
-										["n_max"] = 31740,
-										["targets"] = {
-											["Thicket Hunter"] = 63480,
-											["Nightborne Trapper"] = 64751,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 63480,
-										["n_min"] = 31740,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 128231,
-										["c_max"] = 64751,
-										["id"] = 75,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 64751,
-									},
 									[193455] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 440414,
+										["c_dmg"] = 513461,
 										["g_amt"] = 0,
-										["n_max"] = 215889,
+										["n_max"] = 251697,
 										["targets"] = {
-											["Thicket Hunter"] = 215889,
-											["Nightborne Trapper"] = 440414,
+											["Ormagrogg"] = 1771942,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 215889,
-										["n_min"] = 215889,
+										["n_dmg"] = 1258481,
+										["n_min"] = 251696,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 656303,
-										["c_max"] = 440414,
+										["counter"] = 6,
+										["total"] = 1771942,
+										["c_max"] = 513461,
 										["id"] = 193455,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -815,42 +75,100 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 513461,
+									},
+									[75] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 69683,
+										["g_amt"] = 0,
+										["n_max"] = 34159,
+										["targets"] = {
+											["Ormagrogg"] = 240476,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 170793,
+										["n_min"] = 34158,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 240476,
+										["c_max"] = 69683,
+										["id"] = 75,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 69683,
+									},
+									[201360] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 287139,
+										["targets"] = {
+											["Ormagrogg"] = 287139,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 287139,
+										["n_min"] = 287139,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 287139,
+										["c_max"] = 0,
+										["id"] = 201360,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
 										["n_amt"] = 1,
 										["r_amt"] = 0,
-										["c_min"] = 440414,
+										["c_min"] = 0,
 									},
 								},
 							},
 							["grupo"] = true,
-							["total"] = 2349134.006107,
+							["spec"] = 253,
 							["serial"] = "Player-1169-06A1ACBD",
-							["last_dps"] = 318224.601206052,
+							["last_dps"] = 484428.290042186,
 							["custom"] = 0,
-							["last_event"] = 1490237282,
-							["damage_taken"] = 87116.006107,
-							["start_time"] = 1490237275,
+							["last_event"] = 1490323752,
+							["damage_taken"] = 0.003355,
+							["start_time"] = 1490323734,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["serial"] = "Pet-0-3136-0-96-14020-0301EE046B",
+							["serial"] = "Pet-0-3017-1220-15810-14020-0101EE046B",
 							["damage_from"] = {
-								["Thicket Hunter"] = true,
+								["Ormagrogg"] = true,
 							},
 							["targets"] = {
-								["Thicket Hunter"] = 419435,
-								["Nightborne Trapper"] = 700059,
+								["Ormagrogg"] = 3409406,
 							},
+							["end_time"] = 1490323754,
 							["pets"] = {
 							},
 							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 1119494.004434,
+							["total_without_pet"] = 3409406.007922,
 							["dps_started"] = false,
-							["total"] = 1119494.004434,
+							["total"] = 3409406.007922,
 							["classe"] = "PET",
 							["ownerName"] = "Bracnar",
 							["nome"] = "Chromaggus <Bracnar>",
@@ -858,21 +176,21 @@ _detalhes_database = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 0,
+										["c_amt"] = 4,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 262153,
 										["g_amt"] = 0,
-										["n_max"] = 27780,
+										["n_max"] = 34017,
 										["targets"] = {
-											["Thicket Hunter"] = 55559,
+											["Ormagrogg"] = 530168,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 55559,
-										["n_min"] = 27779,
+										["n_dmg"] = 268015,
+										["n_min"] = 29896,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 55559,
-										["c_max"] = 0,
+										["counter"] = 12,
+										["total"] = 530168,
+										["c_max"] = 68034,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -882,55 +200,55 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 8,
 										["r_amt"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 58051,
 									}, -- [1]
-									[17253] = {
+									[207097] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 254331,
+										["c_dmg"] = 81224,
 										["g_amt"] = 0,
-										["n_max"] = 109545,
+										["n_max"] = 40612,
 										["targets"] = {
-											["Thicket Hunter"] = 363876,
+											["Ormagrogg"] = 360588,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 109545,
-										["n_min"] = 109545,
+										["n_dmg"] = 279364,
+										["n_min"] = 35692,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 363876,
-										["c_max"] = 254331,
-										["id"] = 17253,
+										["counter"] = 8,
+										["total"] = 360588,
+										["c_max"] = 81224,
+										["id"] = 207097,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["spellschool"] = 8,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 7,
 										["r_amt"] = 0,
-										["c_min"] = 254331,
+										["c_min"] = 81224,
 									},
 									[83381] = {
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 700059,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 428620,
 										["targets"] = {
-											["Nightborne Trapper"] = 700059,
+											["Ormagrogg"] = 1222962,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 1222962,
+										["n_min"] = 365722,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 700059,
-										["c_max"] = 700059,
+										["counter"] = 3,
+										["total"] = 1222962,
+										["c_max"] = 0,
 										["id"] = 83381,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -940,1698 +258,26 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 700059,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1490237282,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 86728.004434,
-							["start_time"] = 1490237276,
-							["delay"] = 0,
-							["last_event"] = 1490237282,
-						}, -- [2]
-						{
-							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3131-1220-16-113346-0000533760",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Thicket Hunter"] = 268490,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 268490.004506,
-							["dps_started"] = false,
-							["total"] = 268490.004506,
-							["classe"] = "PET",
-							["ownerName"] = "Bracnar",
-							["nome"] = "Beast <Bracnar>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 42958,
-										["targets"] = {
-											["Thicket Hunter"] = 42958,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 42958,
-										["n_min"] = 42958,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 42958,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									}, -- [1]
-									[201754] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 225532,
-										["targets"] = {
-											["Thicket Hunter"] = 225532,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 225532,
-										["n_min"] = 225532,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 225532,
-										["c_max"] = 0,
-										["id"] = 201754,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1490237282,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.004506,
-							["start_time"] = 1490237281,
-							["delay"] = 0,
-							["last_event"] = 1490237281,
-						}, -- [3]
-						{
-							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3131-1220-16-106551-00005336EE",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Thicket Hunter"] = 94519,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 94519.006108,
-							["dps_started"] = false,
-							["total"] = 94519.006108,
-							["classe"] = "PET",
-							["ownerName"] = "Bracnar",
-							["nome"] = "Hati <Bracnar>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 63013,
-										["g_amt"] = 0,
-										["n_max"] = 31506,
-										["targets"] = {
-											["Thicket Hunter"] = 94519,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 31506,
-										["n_min"] = 31506,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 94519,
-										["c_max"] = 63013,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 63013,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1490237282,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.006108,
-							["start_time"] = 1490237280,
-							["delay"] = 0,
-							["last_event"] = 1490237281,
-						}, -- [4]
-						{
-							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3131-1220-16-110975-00005336F1",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Thicket Hunter"] = 82097,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 82097.008553,
-							["dps_started"] = false,
-							["total"] = 82097.008553,
-							["classe"] = "PET",
-							["ownerName"] = "Bracnar",
-							["nome"] = "Rexxar <Bracnar>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 9795,
-										["g_amt"] = 0,
-										["n_max"] = 9795,
-										["targets"] = {
-											["Thicket Hunter"] = 34283,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 24488,
-										["n_min"] = 4898,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 34283,
-										["c_max"] = 9795,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 9795,
-									}, -- [1]
-									[220877] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 31876,
-										["targets"] = {
-											["Thicket Hunter"] = 31876,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 31876,
-										["n_min"] = 31876,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 31876,
-										["c_max"] = 0,
-										["id"] = 220877,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[220874] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 15938,
-										["targets"] = {
-											["Thicket Hunter"] = 15938,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 15938,
-										["n_min"] = 15938,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 15938,
-										["c_max"] = 0,
-										["id"] = 220874,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1490237282,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.008553,
-							["start_time"] = 1490237278,
-							["delay"] = 0,
-							["last_event"] = 1490237281,
-						}, -- [5]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 155,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorb"] = 0.002889,
-							["last_hps"] = 0,
-							["healing_from"] = {
-								["Bracnar"] = true,
-							},
-							["targets"] = {
-								["Bracnar"] = 200091,
-							},
-							["last_event"] = 1490237279,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.002889,
-							["targets_overheal"] = {
-								["Bracnar"] = 112975,
-							},
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 112975.002889,
-							["total_without_pet"] = 87116.002889,
-							["iniciar_hps"] = false,
-							["classe"] = "HUNTER",
-							["fight_component"] = true,
-							["total"] = 87116.002889,
-							["serial"] = "Player-1169-06A1ACBD",
-							["healing_taken"] = 87116.002889,
-							["nome"] = "Bracnar",
-							["spec"] = 253,
-							["grupo"] = true,
-							["end_time"] = 1490237282,
-							["heal_enemy"] = {
-							},
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[197205] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bracnar"] = 66760,
-										},
-										["n_max"] = 38248,
-										["targets"] = {
-											["Bracnar"] = 38248,
-										},
-										["n_min"] = 38248,
-										["counter"] = 1,
-										["overheal"] = 66760,
-										["total"] = 38248,
-										["c_max"] = 0,
-										["id"] = 197205,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 38248,
-										["m_healed"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-									[208981] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bracnar"] = 46215,
-										},
-										["n_max"] = 48868,
-										["targets"] = {
-											["Bracnar"] = 48868,
-										},
-										["n_min"] = 48868,
-										["counter"] = 1,
-										["overheal"] = 46215,
-										["total"] = 48868,
-										["c_max"] = 0,
-										["id"] = 208981,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 48868,
-										["m_healed"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1490237276,
-							["delay"] = 0,
-							["targets_absorbs"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 155,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 155,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[120679] = {
-										["uptime"] = 2,
-										["activedamt"] = 0,
-										["id"] = 120679,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 23,
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[225787] = {
-										["uptime"] = 7,
-										["activedamt"] = 1,
-										["id"] = 225787,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[120694] = {
-										["uptime"] = 2,
-										["activedamt"] = 1,
-										["id"] = 120694,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[227723] = {
-										["uptime"] = 7,
-										["activedamt"] = 1,
-										["id"] = 227723,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[208981] = {
-										["uptime"] = 7,
-										["activedamt"] = 1,
-										["id"] = 208981,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 2,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 253,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[224578] = 1,
-								[193455] = 2,
-								[34026] = 1,
-								[120679] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["last_event"] = 1490237288,
-							["nome"] = "Bracnar",
-							["pets"] = {
-								"Rexxar <Bracnar>", -- [1]
-								"Chromaggus <Bracnar>", -- [2]
-								"Beast <Bracnar>", -- [3]
-							},
-							["serial"] = "Player-1169-06A1ACBD",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 8465,
-							["ownerName"] = "Bracnar",
-							["nome"] = "Rexxar <Bracnar>",
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["spell_cast"] = {
-								[220857] = 1,
-								[220877] = 1,
-								[220874] = 1,
-							},
-							["serial"] = "Creature-0-3131-1220-16-110975-00005336F1",
-							["last_event"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Bracnar",
-							["nome"] = "Chromaggus <Bracnar>",
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["spell_cast"] = {
-								[2649] = 1,
-								[17253] = 2,
-							},
-							["serial"] = "Pet-0-3136-0-96-14020-0301EE046B",
-							["last_event"] = 0,
-						}, -- [3]
-						{
-							["flag_original"] = 8465,
-							["ownerName"] = "Bracnar",
-							["nome"] = "Beast <Bracnar>",
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["spell_cast"] = {
-								[120694] = 1,
-								[201754] = 1,
-							},
-							["serial"] = "Creature-0-3131-1220-16-113346-0000533760",
-							["last_event"] = 0,
-						}, -- [4]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 155,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Bracnar"] = true,
-				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Thicket Hunter",
-				["combat_counter"] = 232,
-				["playing_solo"] = true,
-				["totals"] = {
-					2349133.95907, -- [1]
-					87115.997361, -- [2]
-					{
-						0, -- [1]
-						[0] = -0.00834,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Bracnar"] = 87116.002889,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Bracnar"] = 2758084.007241,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 172007.825,
-				["combat_id"] = 155,
-				["instance_type"] = "none",
-				["resincked"] = true,
-				["frags"] = {
-					["Felborne Torturer"] = 1,
-					["Nightborne Trapper"] = 1,
-					["Thicket Hunter"] = 1,
-				},
-				["data_fim"] = "22:48:03",
-				["data_inicio"] = "22:47:55",
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					784534, -- [1]
-					87116, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 172000.443,
-				["contra"] = "Nightborne Trapper",
-				["TimeData"] = {
-				},
-			}, -- [2]
-			{
-				{
-					["combatId"] = 154,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Captain Fiora"] = 1795790,
-								["Pesky Imp"] = 420833,
-								["Felborne Punisher"] = 516362,
-							},
-							["pets"] = {
-								"Chromaggus <Bracnar>", -- [1]
-								"Rexxar <Bracnar>", -- [2]
-								"Hati <Bracnar>", -- [3]
-								"Beast <Bracnar>", -- [4]
-							},
-							["on_hold"] = false,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1035041.003546,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1490237262,
-							["friendlyfire_total"] = 0,
-							["spec"] = 253,
-							["nome"] = "Bracnar",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[131900] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 84997,
-										["targets"] = {
-											["Captain Fiora"] = 84997,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 84997,
-										["n_min"] = 84997,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 84997,
-										["c_max"] = 0,
-										["id"] = 131900,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[193455] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 482384,
-										["g_amt"] = 0,
-										["n_max"] = 222366,
-										["targets"] = {
-											["Captain Fiora"] = 482384,
-											["Felborne Punisher"] = 222366,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 222366,
-										["n_min"] = 222366,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 704750,
-										["c_max"] = 482384,
-										["id"] = 193455,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 482384,
-									},
-									[75] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 137615,
-										["g_amt"] = 0,
-										["n_max"] = 34765,
-										["targets"] = {
-											["Captain Fiora"] = 140452,
-											["Felborne Punisher"] = 66693,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 69530,
-										["n_min"] = 34765,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 207145,
-										["c_max"] = 70922,
-										["id"] = 75,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 66693,
-									},
-									[2643] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 38149,
-										["targets"] = {
-											["Captain Fiora"] = 38149,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 38149,
-										["n_min"] = 38149,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 38149,
-										["c_max"] = 0,
-										["id"] = 2643,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["total"] = 2732985.003546,
-							["serial"] = "Player-1169-06A1ACBD",
-							["last_dps"] = 246837.518384173,
-							["custom"] = 0,
-							["last_event"] = 1490237261,
-							["damage_taken"] = 0.003546,
-							["start_time"] = 1490237251,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["serial"] = "Pet-0-3136-0-96-14020-0301EE046B",
-							["damage_from"] = {
-								["Captain Fiora"] = true,
-							},
-							["targets"] = {
-								["Pesky Imp"] = 330702,
-								["Captain Fiora"] = 555959,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 886661.008665,
-							["dps_started"] = false,
-							["total"] = 886661.008665,
-							["classe"] = "PET",
-							["ownerName"] = "Bracnar",
-							["nome"] = "Chromaggus <Bracnar>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 182562,
-										["g_amt"] = 0,
-										["n_max"] = 30427,
-										["targets"] = {
-											["Captain Fiora"] = 212989,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 30427,
-										["n_min"] = 30427,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 212989,
-										["c_max"] = 60854,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 60854,
-									}, -- [1]
-									[17253] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 220764,
-										["g_amt"] = 0,
-										["n_max"] = 122206,
-										["targets"] = {
-											["Captain Fiora"] = 342970,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 122206,
-										["n_min"] = 122206,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 342970,
-										["c_max"] = 220764,
-										["id"] = 17253,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 220764,
-									},
-									[118459] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 290644,
-										["targets"] = {
-											["Pesky Imp"] = 330702,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 330702,
-										["n_min"] = 40058,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 330702,
-										["c_max"] = 0,
-										["id"] = 118459,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1490237262,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 47408.008665,
-							["start_time"] = 1490237255,
-							["delay"] = 0,
-							["last_event"] = 1490237260,
-						}, -- [2]
-						{
-							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3131-1220-16-106551-00005336EE",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Captain Fiora"] = 138036,
-								["Pesky Imp"] = 90131,
-								["Felborne Punisher"] = 217983,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 446150.006362,
-							["dps_started"] = false,
-							["total"] = 446150.006362,
-							["classe"] = "PET",
-							["ownerName"] = "Bracnar",
-							["nome"] = "Hati <Bracnar>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 138036,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Captain Fiora"] = 138036,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 138036,
-										["c_max"] = 69018,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 69018,
-									}, -- [1]
-									[118459] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 217983,
-										["targets"] = {
-											["Pesky Imp"] = 90131,
-											["Felborne Punisher"] = 217983,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 308114,
-										["n_min"] = 30044,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 308114,
-										["c_max"] = 0,
-										["id"] = 118459,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
 										["n_amt"] = 3,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1490237262,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.006362,
-							["start_time"] = 1490237258,
-							["delay"] = 0,
-							["last_event"] = 1490237261,
-						}, -- [3]
-						{
-							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3131-1220-16-113346-000053374D",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Captain Fiora"] = 294076,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 294076.001311,
-							["dps_started"] = false,
-							["total"] = 294076.001311,
-							["classe"] = "PET",
-							["ownerName"] = "Bracnar",
-							["nome"] = "Beast <Bracnar>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 47052,
-										["targets"] = {
-											["Captain Fiora"] = 47052,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 47052,
-										["n_min"] = 47052,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 47052,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									}, -- [1]
-									[201754] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 247024,
-										["targets"] = {
-											["Captain Fiora"] = 247024,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 247024,
-										["n_min"] = 247024,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 247024,
-										["c_max"] = 0,
-										["id"] = 201754,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1490237262,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.001311,
-							["start_time"] = 1490237261,
-							["delay"] = 0,
-							["last_event"] = 1490237261,
-						}, -- [4]
-						{
-							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3131-1220-16-110975-00005336F1",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Captain Fiora"] = 61737,
-								["Felborne Punisher"] = 9320,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 71057.006173,
-							["dps_started"] = false,
-							["total"] = 71057.006173,
-							["classe"] = "PET",
-							["ownerName"] = "Bracnar",
-							["nome"] = "Rexxar <Bracnar>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10729,
-										["targets"] = {
-											["Captain Fiora"] = 26823,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 26823,
-										["n_min"] = 5365,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 26823,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									}, -- [1]
-									[220877] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 34914,
-										["targets"] = {
-											["Captain Fiora"] = 34914,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 34914,
-										["n_min"] = 34914,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 34914,
-										["c_max"] = 0,
-										["id"] = 220877,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[220857] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9320,
-										["targets"] = {
-											["Felborne Punisher"] = 9320,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 9320,
-										["n_min"] = 9320,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 9320,
-										["c_max"] = 0,
-										["id"] = 220857,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1490237262,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.006173,
-							["start_time"] = 1490237255,
-							["delay"] = 0,
-							["last_event"] = 1490237261,
-						}, -- [5]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 154,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 154,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 154,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[120679] = {
-										["uptime"] = 1,
-										["activedamt"] = 0,
-										["id"] = 120679,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 50,
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[225787] = {
-										["uptime"] = 11,
-										["activedamt"] = 1,
-										["id"] = 225787,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[208981] = {
-										["uptime"] = 11,
-										["activedamt"] = 1,
-										["id"] = 208981,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[221332] = {
-										["uptime"] = 11,
-										["activedamt"] = 1,
-										["id"] = 221332,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[120694] = {
-										["uptime"] = 2,
-										["activedamt"] = 1,
-										["id"] = 120694,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[221796] = {
-										["uptime"] = 4,
-										["activedamt"] = 1,
-										["id"] = 221796,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[227723] = {
-										["uptime"] = 11,
-										["activedamt"] = 1,
-										["id"] = 227723,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["debuff_uptime"] = 1,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 253,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[193455] = 1,
-								[224578] = 1,
-								[131894] = 1,
-								[2643] = 1,
-								[120679] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["last_event"] = 1490237268,
-							["nome"] = "Bracnar",
-							["pets"] = {
-								"Chromaggus <Bracnar>", -- [1]
-								"Rexxar <Bracnar>", -- [2]
-								"Beast <Bracnar>", -- [3]
-							},
-							["serial"] = "Player-1169-06A1ACBD",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Bracnar",
-							["nome"] = "Chromaggus <Bracnar>",
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["spell_cast"] = {
-								[2649] = 1,
-								[17253] = 3,
-							},
-							["serial"] = "Pet-0-3136-0-96-14020-0301EE046B",
-							["last_event"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 8465,
-							["ownerName"] = "Bracnar",
-							["nome"] = "Rexxar <Bracnar>",
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["spell_cast"] = {
-								[220857] = 1,
-								[220877] = 1,
-								[220874] = 1,
-							},
-							["serial"] = "Creature-0-3131-1220-16-110975-00005336F1",
-							["last_event"] = 0,
-						}, -- [3]
-						{
-							["flag_original"] = 8465,
-							["ownerName"] = "Bracnar",
-							["nome"] = "Beast <Bracnar>",
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["spell_cast"] = {
-								[221332] = 1,
-								[120694] = 1,
-								[201754] = 1,
-							},
-							["serial"] = "Creature-0-3131-1220-16-113346-000053374D",
-							["last_event"] = 0,
-						}, -- [4]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 154,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Bracnar"] = true,
-				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Captain Fiora",
-				["combat_counter"] = 231,
-				["playing_solo"] = true,
-				["totals"] = {
-					2732984.966542, -- [1]
-					-0.00687599999946542, -- [2]
-					{
-						0, -- [1]
-						[0] = -0.004648,
-						[6] = 0,
-						[3] = -0.00856999999999886,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Bracnar"] = 2732985.003546,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 171988.152,
-				["combat_id"] = 154,
-				["instance_type"] = "none",
-				["frags"] = {
-					["Captain Fiora"] = 1,
-					["Pesky Imp"] = 2,
-					["Felborne Punisher"] = 1,
-				},
-				["data_fim"] = "22:47:43",
-				["data_inicio"] = "22:47:32",
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					1035041, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 171977.08,
-				["contra"] = "Felborne Punisher",
-				["TimeData"] = {
-				},
-			}, -- [3]
-			{
-				{
-					["combatId"] = 153,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["damage_from"] = {
-								["Felborne Punisher"] = true,
-							},
-							["targets"] = {
-								["Felborne Punisher"] = 1838402,
-							},
-							["pets"] = {
-								"Chromaggus <Bracnar>", -- [1]
-								"Hati <Bracnar>", -- [2]
-								"Rexxar <Bracnar>", -- [3]
-							},
-							["on_hold"] = false,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 657509.007669,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1490237239,
-							["friendlyfire_total"] = 0,
-							["spec"] = 253,
-							["nome"] = "Bracnar",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[75] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 133387,
-										["g_amt"] = 0,
-										["n_max"] = 32693,
-										["targets"] = {
-											["Felborne Punisher"] = 166080,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 32693,
-										["n_min"] = 32693,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 166080,
-										["c_max"] = 66694,
-										["id"] = 75,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 66693,
-									},
-									[193455] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 491429,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Felborne Punisher"] = 491429,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 491429,
-										["c_max"] = 491429,
-										["id"] = 193455,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 491429,
-									},
-								},
-							},
-							["grupo"] = true,
-							["total"] = 1838402.007669,
-							["serial"] = "Player-1169-06A1ACBD",
-							["last_dps"] = 318890.200809115,
-							["custom"] = 0,
-							["last_event"] = 1490237238,
-							["damage_taken"] = 46048.007669,
-							["start_time"] = 1490237233,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["serial"] = "Pet-0-3136-0-96-14020-0301EE046B",
-							["damage_from"] = {
-								["Felborne Punisher"] = true,
-							},
-							["targets"] = {
-								["Felborne Punisher"] = 880903,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 880903.001261,
-							["dps_started"] = false,
-							["total"] = 880903.001261,
-							["classe"] = "PET",
-							["ownerName"] = "Bracnar",
-							["nome"] = "Chromaggus <Bracnar>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28614,
-										["targets"] = {
-											["Felborne Punisher"] = 57227,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 57227,
-										["n_min"] = 28613,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 57227,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									}, -- [1]
 									[160124] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 71384,
+										["c_dmg"] = 81224,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 35688,
 										["targets"] = {
-											["Felborne Punisher"] = 71384,
+											["Ormagrogg"] = 116912,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 35688,
+										["n_min"] = 35688,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 71384,
-										["c_max"] = 71384,
+										["counter"] = 2,
+										["total"] = 116912,
+										["c_max"] = 81224,
 										["id"] = 160124,
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
@@ -2641,25 +287,300 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 0,
+										["n_amt"] = 1,
 										["r_amt"] = 0,
-										["c_min"] = 71384,
+										["c_min"] = 81224,
+									},
+									[17253] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 309533,
+										["g_amt"] = 0,
+										["n_max"] = 169154,
+										["targets"] = {
+											["Ormagrogg"] = 995915,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 686382,
+										["n_min"] = 116417,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 995915,
+										["c_max"] = 309533,
+										["id"] = 17253,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 309533,
 									},
 									[197163] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 180265,
+										["n_max"] = 182861,
 										["targets"] = {
-											["Felborne Punisher"] = 180265,
+											["Ormagrogg"] = 182861,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 180265,
-										["n_min"] = 180265,
+										["n_dmg"] = 182861,
+										["n_min"] = 182861,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 180265,
+										["total"] = 182861,
+										["c_max"] = 0,
+										["id"] = 197163,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 773148.007922,
+							["start_time"] = 1490323734,
+							["delay"] = 0,
+							["last_event"] = 1490323752,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["serial"] = "Creature-0-3017-1220-15810-113343-0000D48916",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Ormagrogg"] = 1956811,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1956811.002731,
+							["dps_started"] = false,
+							["total"] = 1956811.002731,
+							["classe"] = "PET",
+							["ownerName"] = "Bracnar",
+							["nome"] = "Beast <Bracnar>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 105207,
+										["g_amt"] = 0,
+										["n_max"] = 52604,
+										["targets"] = {
+											["Ormagrogg"] = 519660,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 414453,
+										["n_min"] = 46231,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 519660,
+										["c_max"] = 105207,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["r_amt"] = 0,
+										["c_min"] = 105207,
+									}, -- [1]
+									[201754] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 485423,
+										["g_amt"] = 0,
+										["n_max"] = 276169,
+										["targets"] = {
+											["Ormagrogg"] = 761592,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 276169,
+										["n_min"] = 276169,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 761592,
+										["c_max"] = 485423,
+										["id"] = 201754,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 485423,
+									},
+									[207097] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 361569,
+										["g_amt"] = 0,
+										["n_max"] = 62798,
+										["targets"] = {
+											["Ormagrogg"] = 675559,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 313990,
+										["n_min"] = 62798,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 675559,
+										["c_max"] = 125595,
+										["id"] = 207097,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 110379,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1490323754,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.002731,
+							["start_time"] = 1490323736,
+							["delay"] = 0,
+							["last_event"] = 1490323752,
+						}, -- [3]
+						{
+							["flag_original"] = 8465,
+							["serial"] = "Creature-0-3017-1220-15810-106551-00005488B2",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Ormagrogg"] = 1560561,
+							},
+							["end_time"] = 1490323754,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1560561.005203,
+							["dps_started"] = false,
+							["total"] = 1560561.005203,
+							["classe"] = "PET",
+							["ownerName"] = "Bracnar",
+							["nome"] = "Hati <Bracnar>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 38581,
+										["targets"] = {
+											["Ormagrogg"] = 347223,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 347223,
+										["n_min"] = 38580,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 347223,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 9,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									[207097] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 92115,
+										["g_amt"] = 0,
+										["n_max"] = 46058,
+										["targets"] = {
+											["Ormagrogg"] = 362882,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 270767,
+										["n_min"] = 40478,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 362882,
+										["c_max"] = 92115,
+										["id"] = 207097,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["r_amt"] = 0,
+										["c_min"] = 92115,
+									},
+									[197163] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 126811,
+										["targets"] = {
+											["Ormagrogg"] = 126811,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 126811,
+										["n_min"] = 126811,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 126811,
 										["c_max"] = 0,
 										["id"] = 197163,
 										["r_dmg"] = 0,
@@ -2675,51 +596,22 @@ _detalhes_database = {
 										["c_min"] = 0,
 									},
 									[83381] = {
-										["c_amt"] = 0,
+										["c_amt"] = 3,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 360530,
-										["targets"] = {
-											["Felborne Punisher"] = 360530,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 360530,
-										["n_min"] = 360530,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 360530,
-										["c_max"] = 0,
-										["id"] = 83381,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									[17253] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 211497,
+										["c_dmg"] = 723645,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Felborne Punisher"] = 211497,
+											["Ormagrogg"] = 723645,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 211497,
-										["c_max"] = 211497,
-										["id"] = 17253,
+										["counter"] = 3,
+										["total"] = 723645,
+										["c_max"] = 253621,
+										["id"] = 83381,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
@@ -2730,29 +622,27 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 211497,
+										["c_min"] = 216403,
 									},
 								},
 							},
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1490237239,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 58453.001261,
-							["start_time"] = 1490237234,
+							["damage_taken"] = 0.005203,
+							["start_time"] = 1490323734,
 							["delay"] = 0,
-							["last_event"] = 1490237236,
-						}, -- [2]
+							["last_event"] = 1490323752,
+						}, -- [4]
 						{
 							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3131-1220-16-106551-00005336EE",
+							["serial"] = "Creature-0-3017-1220-15810-110975-00005488B0",
 							["damage_from"] = {
-								["Felborne Punisher"] = true,
 							},
 							["targets"] = {
-								["Felborne Punisher"] = 171568,
+								["Ormagrogg"] = 359532,
 							},
 							["pets"] = {
 							},
@@ -2760,104 +650,9 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 171568.008254,
+							["total_without_pet"] = 359532.001985,
 							["dps_started"] = false,
-							["total"] = 171568.008254,
-							["classe"] = "PET",
-							["ownerName"] = "Bracnar",
-							["nome"] = "Hati <Bracnar>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 32452,
-										["targets"] = {
-											["Felborne Punisher"] = 64903,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 64903,
-										["n_min"] = 32451,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 64903,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									}, -- [1]
-									[83381] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 106665,
-										["targets"] = {
-											["Felborne Punisher"] = 106665,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 106665,
-										["n_min"] = 106665,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 106665,
-										["c_max"] = 0,
-										["id"] = 83381,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1490237239,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 2562.008254,
-							["start_time"] = 1490237234,
-							["delay"] = 0,
-							["last_event"] = 1490237237,
-						}, -- [3]
-						{
-							["flag_original"] = 8465,
-							["serial"] = "Creature-0-3131-1220-16-110975-00005336F1",
-							["damage_from"] = {
-								["Felborne Punisher"] = true,
-							},
-							["targets"] = {
-								["Felborne Punisher"] = 128422,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 128422.002033,
-							["dps_started"] = false,
-							["total"] = 128422.002033,
+							["total"] = 359532.001985,
 							["classe"] = "PET",
 							["ownerName"] = "Bracnar",
 							["nome"] = "Rexxar <Bracnar>",
@@ -2865,22 +660,22 @@ _detalhes_database = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 4,
+										["c_amt"] = 3,
 										["b_amt"] = 0,
-										["c_dmg"] = 60535,
+										["c_dmg"] = 47979,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 11995,
 										["targets"] = {
-											["Felborne Punisher"] = 60535,
+											["Ormagrogg"] = 125945,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 77966,
+										["n_min"] = 5997,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 60535,
-										["c_max"] = 20179,
-										["MISS"] = 1,
+										["counter"] = 18,
+										["total"] = 125945,
+										["c_max"] = 23990,
+										["MISS"] = 6,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -2890,26 +685,26 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 0,
+										["n_amt"] = 9,
 										["r_amt"] = 0,
-										["c_min"] = 10089,
+										["c_min"] = 11994,
 									}, -- [1]
 									[220857] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 18639,
+										["c_dmg"] = 18908,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Felborne Punisher"] = 18639,
+											["Ormagrogg"] = 18908,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 18639,
-										["c_max"] = 18639,
+										["total"] = 18908,
+										["c_max"] = 18908,
 										["id"] = 220857,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -2921,24 +716,24 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 18639,
+										["c_min"] = 18908,
 									},
 									[220877] = {
-										["c_amt"] = 0,
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 78065,
 										["g_amt"] = 0,
-										["n_max"] = 32832,
+										["n_max"] = 39033,
 										["targets"] = {
-											["Felborne Punisher"] = 32832,
+											["Ormagrogg"] = 156130,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 32832,
-										["n_min"] = 32832,
+										["n_dmg"] = 78065,
+										["n_min"] = 39032,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 32832,
-										["c_max"] = 0,
+										["counter"] = 3,
+										["total"] = 156130,
+										["c_max"] = 78065,
 										["id"] = 220877,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -2948,25 +743,25 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 2,
 										["r_amt"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 78065,
 									},
 									[220874] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 16416,
+										["n_max"] = 19517,
 										["targets"] = {
-											["Felborne Punisher"] = 16416,
+											["Ormagrogg"] = 58549,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 16416,
-										["n_min"] = 16416,
+										["n_dmg"] = 58549,
+										["n_min"] = 19516,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 16416,
+										["counter"] = 3,
+										["total"] = 58549,
 										["c_max"] = 0,
 										["id"] = 220874,
 										["r_dmg"] = 0,
@@ -2977,7 +772,7 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 3,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
@@ -2985,52 +780,28 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1490237239,
+							["end_time"] = 1490323754,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 2335.002033,
-							["start_time"] = 1490237234,
+							["damage_taken"] = 0.001985,
+							["start_time"] = 1490323736,
 							["delay"] = 0,
-							["last_event"] = 1490237238,
-						}, -- [4]
+							["last_event"] = 1490323752,
+						}, -- [5]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 153,
+					["combatId"] = 206,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorb"] = 0.007795,
+							["totalabsorb"] = 0.006697,
 							["last_hps"] = 0,
 							["healing_from"] = {
-								["Bracnar"] = true,
 							},
 							["targets"] = {
-								["Bracnar"] = 95083,
-							},
-							["last_event"] = 1490237235,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.007795,
-							["targets_overheal"] = {
-								["Bracnar"] = 119114,
-							},
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 119114.007795,
-							["total_without_pet"] = 46048.007795,
-							["iniciar_hps"] = false,
-							["classe"] = "HUNTER",
-							["fight_component"] = true,
-							["total"] = 46048.007795,
-							["serial"] = "Player-1169-06A1ACBD",
-							["healing_taken"] = 46048.007795,
-							["nome"] = "Bracnar",
-							["spec"] = 253,
-							["grupo"] = true,
-							["end_time"] = 1490237239,
-							["heal_enemy"] = {
 							},
 							["spells"] = {
 								["tipo"] = 3,
@@ -3039,15 +810,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Bracnar"] = 70079,
+											["Bracnar"] = 291990,
 										},
 										["n_max"] = 0,
 										["targets"] = {
 											["Bracnar"] = 0,
 										},
 										["n_min"] = 0,
-										["counter"] = 2,
-										["overheal"] = 70079,
+										["counter"] = 6,
+										["overheal"] = 291990,
 										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = 197205,
@@ -3059,81 +830,75 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["n_curado"] = 0,
 										["m_healed"] = 0,
-										["n_amt"] = 2,
-										["absorbed"] = 0,
-									},
-									[208981] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bracnar"] = 49035,
-										},
-										["n_max"] = 46048,
-										["targets"] = {
-											["Bracnar"] = 46048,
-										},
-										["n_min"] = 46048,
-										["counter"] = 1,
-										["overheal"] = 49035,
-										["total"] = 46048,
-										["c_max"] = 0,
-										["id"] = 208981,
-										["targets_absorbs"] = {
-										},
-										["m_crit"] = 0,
-										["c_curado"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 46048,
-										["m_healed"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 6,
 										["absorbed"] = 0,
 									},
 								},
 							},
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.006697,
+							["targets_overheal"] = {
+								["Bracnar"] = 291990,
+							},
+							["healing_taken"] = 0.006697,
+							["totalover"] = 291990.006697,
+							["total_without_pet"] = 0.006697,
+							["iniciar_hps"] = false,
+							["end_time"] = 1490323754,
+							["classe"] = "HUNTER",
+							["total"] = 0.006697,
+							["heal_enemy_amt"] = 0,
+							["last_event"] = 1490323747,
+							["nome"] = "Bracnar",
+							["targets_absorbs"] = {
+							},
+							["grupo"] = true,
+							["heal_enemy"] = {
+							},
+							["spec"] = 253,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
-							["start_time"] = 1490237234,
+							["start_time"] = 1490323734,
 							["delay"] = 0,
-							["targets_absorbs"] = {
-							},
+							["serial"] = "Player-1169-06A1ACBD",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 153,
+					["combatId"] = 206,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 153,
+					["combatId"] = 206,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
-							["fight_component"] = true,
 							["flag_original"] = 1047,
-							["nome"] = "Bracnar",
-							["spec"] = 253,
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[120679] = {
+										["uptime"] = 15,
+										["activedamt"] = 0,
+										["id"] = 120679,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
 							},
-							["buff_uptime"] = 18,
-							["pets"] = {
-								"Chromaggus <Bracnar>", -- [1]
-								"Rexxar <Bracnar>", -- [2]
-							},
-							["spell_cast"] = {
-								[34026] = 1,
-							},
+							["buff_uptime"] = 130,
 							["classe"] = "HUNTER",
-							["tipo"] = 4,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
 									[225787] = {
-										["uptime"] = 6,
+										["uptime"] = 20,
 										["activedamt"] = 1,
 										["id"] = 225787,
 										["actived"] = false,
@@ -3142,16 +907,34 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[208981] = {
-										["uptime"] = 0,
-										["activedamt"] = 0,
+										["uptime"] = 20,
+										["activedamt"] = 1,
 										["id"] = 208981,
 										["actived"] = false,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
+									[221796] = {
+										["uptime"] = 10,
+										["activedamt"] = 1,
+										["id"] = 221796,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[120694] = {
+										["uptime"] = 16,
+										["activedamt"] = 2,
+										["id"] = 120694,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
 									[227723] = {
-										["uptime"] = 6,
+										["uptime"] = 20,
 										["activedamt"] = 1,
 										["id"] = 227723,
 										["actived"] = false,
@@ -3159,8 +942,26 @@ _detalhes_database = {
 										},
 										["counter"] = 0,
 									},
+									[225729] = {
+										["uptime"] = 17,
+										["activedamt"] = 1,
+										["id"] = 225729,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[207068] = {
+										["uptime"] = 8,
+										["activedamt"] = 1,
+										["id"] = 207068,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
 									[221332] = {
-										["uptime"] = 6,
+										["uptime"] = 19,
 										["activedamt"] = 1,
 										["id"] = 221332,
 										["actived"] = false,
@@ -3170,8 +971,30 @@ _detalhes_database = {
 									},
 								},
 							},
+							["debuff_uptime"] = 15,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 253,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[224576] = 2,
+								[193455] = 6,
+								[221332] = 1,
+								[34026] = 2,
+								[207068] = 1,
+								[120679] = 2,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1490323754,
+							["nome"] = "Bracnar",
+							["pets"] = {
+								"Rexxar <Bracnar>", -- [1]
+								"Chromaggus <Bracnar>", -- [2]
+								"Beast <Bracnar>", -- [3]
+							},
 							["serial"] = "Player-1169-06A1ACBD",
-							["last_event"] = 1490237239,
+							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
@@ -3182,16 +1005,50 @@ _detalhes_database = {
 							["classe"] = "PET",
 							["tipo"] = 4,
 							["spell_cast"] = {
-								[220877] = 1,
+								[221332] = 1,
+								[220857] = 1,
+								[220877] = 3,
 								[220874] = 1,
 							},
-							["serial"] = "Creature-0-3131-1220-16-110975-00005336F1",
+							["serial"] = "Creature-0-3017-1220-15810-110975-00005488B0",
 							["last_event"] = 0,
 						}, -- [2]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Bracnar",
+							["nome"] = "Chromaggus <Bracnar>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[221332] = 1,
+								[2649] = 3,
+								[17253] = 5,
+							},
+							["serial"] = "Pet-0-3017-1220-15810-14020-0101EE046B",
+							["last_event"] = 0,
+						}, -- [3]
+						{
+							["flag_original"] = 8465,
+							["ownerName"] = "Bracnar",
+							["nome"] = "Beast <Bracnar>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[221332] = 2,
+								[120694] = 2,
+								[201754] = 2,
+							},
+							["serial"] = "Creature-0-3017-1220-15810-113343-0000D48916",
+							["last_event"] = 0,
+						}, -- [4]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 153,
+					["combatId"] = 206,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -3201,25 +1058,25 @@ _detalhes_database = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Felborne Punisher",
-				["combat_counter"] = 230,
+				["enemy"] = "Ormagrogg",
+				["combat_counter"] = 335,
 				["playing_solo"] = true,
 				["totals"] = {
-					1838401.964658, -- [1]
-					46048, -- [2]
+					9585866.75563599, -- [1]
+					-0.0559539999750722, -- [2]
 					{
-						0, -- [1]
-						[0] = -0.006082,
-						[6] = 0,
-						[3] = -0.00358400000000003,
+						-0.0175610000000046, -- [1]
+						[0] = -0.0402959999989094,
+						[6] = -0.00731899999998298,
+						[3] = -0.00424700000000655,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
 						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
+						["cooldowns_defensive"] = -0.00386299999999995,
+						["interrupt"] = -0.0315860000000001,
+						["dispell"] = -0.011495,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -3240,30 +1097,31 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Bracnar"] = 46048.007795,
+							["Bracnar"] = 0.006697,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Bracnar"] = 1838402.007669,
+							["Bracnar"] = 9585867.003355,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 171964.553,
-				["combat_id"] = 153,
+				["end_time"] = 258478.606,
+				["combat_id"] = 206,
 				["instance_type"] = "none",
 				["frags"] = {
-					["Felborne Punisher"] = 1,
+					["Ormagrogg"] = 1,
+					["Mightstone Flanker"] = 3,
 				},
-				["data_fim"] = "22:47:20",
-				["data_inicio"] = "22:47:14",
+				["data_fim"] = "22:49:14",
+				["data_inicio"] = "22:48:54",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
-					657509, -- [1]
-					46048, -- [2]
+					2299557, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -3281,125 +1139,1451 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["start_time"] = 171958.788,
-				["contra"] = "Felborne Punisher",
+				["start_time"] = 258458.818,
+				["contra"] = "Ormagrogg",
 				["TimeData"] = {
 				},
-			}, -- [4]
+			}, -- [1]
 			{
 				{
-					["combatId"] = 152,
+					["combatId"] = 205,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["damage_from"] = {
-								["Vineyard Enforcer"] = true,
+								["Depleted Phoenix"] = true,
+								["Energized Phoenix"] = true,
+								["Rukhmar"] = true,
 							},
 							["targets"] = {
+								["Depleted Phoenix"] = 4508977,
+								["Pile of Ash"] = 36367,
+								["Rukhmar"] = 43413567,
+								["Viletongue Rylak"] = 123821,
+								["Energized Phoenix"] = 5274506,
 							},
 							["on_hold"] = false,
 							["pets"] = {
+								"Chromaggus <Bracnar>", -- [1]
+								"Hati <Bracnar>", -- [2]
+								"Beast <Bracnar>", -- [3]
 							},
-							["friendlyfire"] = {
-							},
-							["friendlyfire_total"] = 0,
+							["spec"] = 253,
+							["end_time"] = 1490323402,
+							["classe"] = "HUNTER",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 0.007622,
-							["spec"] = 253,
+							["total_without_pet"] = 13012518.004547,
+							["colocacao"] = 1,
 							["dps_started"] = false,
-							["total"] = 0.007622,
-							["classe"] = "HUNTER",
-							["serial"] = "Player-1169-06A1ACBD",
+							["total"] = 53357238.004547,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Bracnar",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
+									[120361] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 235952,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Depleted Phoenix"] = 112131,
+											["Viletongue Rylak"] = 123821,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 235952,
+										["c_max"] = 123821,
+										["id"] = 120361,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 112131,
+									},
+									[193455] = {
+										["c_amt"] = 8,
+										["b_amt"] = 0,
+										["c_dmg"] = 4485924,
+										["g_amt"] = 0,
+										["n_max"] = 345995,
+										["targets"] = {
+											["Depleted Phoenix"] = 772571,
+											["Energized Phoenix"] = 535934,
+											["Rukhmar"] = 8774655,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 5597236,
+										["n_min"] = 243801,
+										["g_dmg"] = 0,
+										["counter"] = 27,
+										["total"] = 10083160,
+										["c_max"] = 705828,
+										["id"] = 193455,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 19,
+										["r_amt"] = 0,
+										["c_min"] = 497354,
+									},
+									[75] = {
+										["c_amt"] = 9,
+										["b_amt"] = 0,
+										["c_dmg"] = 727170,
+										["g_amt"] = 0,
+										["n_max"] = 46956,
+										["targets"] = {
+											["Depleted Phoenix"] = 36366,
+											["Energized Phoenix"] = 110555,
+											["Pile of Ash"] = 36367,
+											["Rukhmar"] = 1966670,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1422788,
+										["n_min"] = 35844,
+										["g_dmg"] = 0,
+										["counter"] = 44,
+										["total"] = 2149958,
+										["c_max"] = 95790,
+										["id"] = 75,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 35,
+										["r_amt"] = 0,
+										["c_min"] = 73122,
+									},
+									[197465] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 147964,
+										["g_amt"] = 0,
+										["n_max"] = 72531,
+										["targets"] = {
+											["Depleted Phoenix"] = 220495,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 72531,
+										["n_min"] = 72531,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 220495,
+										["c_max"] = 147964,
+										["id"] = 197465,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 147964,
+									},
+									[177134] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 945,
+										["g_amt"] = 0,
+										["n_max"] = 304,
+										["targets"] = {
+											["Depleted Phoenix"] = 704,
+											["Energized Phoenix"] = 232,
+											["Rukhmar"] = 777,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 768,
+										["n_min"] = 232,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 1713,
+										["c_max"] = 473,
+										["id"] = 177134,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 472,
+									},
+									[177142] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 22797,
+										["g_amt"] = 0,
+										["n_max"] = 12104,
+										["targets"] = {
+											["Energized Phoenix"] = 80377,
+											["Rukhmar"] = 81123,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 138703,
+										["n_min"] = 11016,
+										["g_dmg"] = 0,
+										["counter"] = 13,
+										["total"] = 161500,
+										["c_max"] = 22797,
+										["id"] = 177142,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 12,
+										["r_amt"] = 0,
+										["c_min"] = 22797,
+									},
+									[2643] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 39906,
+										["targets"] = {
+											["Depleted Phoenix"] = 159624,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 159624,
+										["n_min"] = 39906,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 159624,
+										["c_max"] = 0,
+										["id"] = 2643,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[177135] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 116,
+										["targets"] = {
+											["Energized Phoenix"] = 116,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 116,
+										["n_min"] = 116,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 116,
+										["c_max"] = 0,
+										["id"] = 177135,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
 								},
 							},
 							["grupo"] = true,
-							["end_time"] = 1490237209,
+							["serial"] = "Player-1169-06A1ACBD",
+							["last_dps"] = 430206.632463465,
+							["custom"] = 0,
+							["last_event"] = 1490323401,
+							["damage_taken"] = 3903605.004547,
+							["start_time"] = 1490323278,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 1298,
+							["friendlyfire"] = {
+							},
+							["damage_from"] = {
+								["Rukhmar"] = true,
+								["Energized Phoenix"] = true,
+							},
+							["targets"] = {
+								["Rukhmar"] = 16333,
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 2,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 16333.00317,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 16333.00317,
+							["classe"] = "SHAMAN",
+							["serial"] = "Player-1169-07C70DC2",
+							["nome"] = "Torinara",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2982,
+										["targets"] = {
+											["Rukhmar"] = 11995,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 11995,
+										["n_min"] = 1519,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 11995,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									[187837] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 4338,
+										["targets"] = {
+											["Rukhmar"] = 4338,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 4338,
+										["n_min"] = 4338,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 4338,
+										["c_max"] = 0,
+										["id"] = 187837,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["end_time"] = 1490323402,
+							["last_dps"] = 131.689093261949,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 376287.00317,
+							["start_time"] = 1490323396,
+							["delay"] = 1490323292,
+							["last_event"] = 1490323292,
+						}, -- [2]
+						{
+							["flag_original"] = 4369,
+							["serial"] = "Pet-0-3021-1116-104-14020-0101EE046B",
+							["damage_from"] = {
+								["Depleted Phoenix"] = true,
+								["Rukhmar"] = true,
+							},
+							["targets"] = {
+								["Depleted Phoenix"] = 1537895,
+								["Energized Phoenix"] = 1234920,
+								["Rukhmar"] = 20294280,
+							},
+							["end_time"] = 1490323402,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 23067095.00661,
+							["dps_started"] = false,
+							["total"] = 23067095.00661,
+							["classe"] = "PET",
+							["ownerName"] = "Bracnar",
+							["nome"] = "Chromaggus <Bracnar>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 13,
+										["b_amt"] = 0,
+										["c_dmg"] = 1047340,
+										["g_amt"] = 0,
+										["n_max"] = 56114,
+										["targets"] = {
+											["Depleted Phoenix"] = 127315,
+											["Energized Phoenix"] = 68045,
+											["Rukhmar"] = 2194498,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1342518,
+										["n_min"] = 31371,
+										["g_dmg"] = 0,
+										["counter"] = 46,
+										["total"] = 2389858,
+										["c_max"] = 93523,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 33,
+										["r_amt"] = 0,
+										["c_min"] = 62743,
+									}, -- [1]
+									[207097] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 345219,
+										["g_amt"] = 0,
+										["n_max"] = 51652,
+										["targets"] = {
+											["Rukhmar"] = 860620,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 515401,
+										["n_min"] = 34652,
+										["g_dmg"] = 0,
+										["counter"] = 15,
+										["total"] = 860620,
+										["c_max"] = 103305,
+										["id"] = 207097,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 11,
+										["r_amt"] = 0,
+										["c_min"] = 69305,
+									},
+									[83381] = {
+										["c_amt"] = 5,
+										["b_amt"] = 0,
+										["c_dmg"] = 5984943,
+										["g_amt"] = 0,
+										["n_max"] = 517822,
+										["targets"] = {
+											["Depleted Phoenix"] = 401046,
+											["Energized Phoenix"] = 857374,
+											["Rukhmar"] = 8857806,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 4131283,
+										["n_min"] = 395284,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["total"] = 10116226,
+										["c_max"] = 1414086,
+										["id"] = 83381,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 9,
+										["r_amt"] = 0,
+										["c_min"] = 1035644,
+									},
+									[160124] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 51652,
+										["targets"] = {
+											["Rukhmar"] = 103298,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 103298,
+										["n_min"] = 51646,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 103298,
+										["c_max"] = 0,
+										["id"] = 160124,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[17253] = {
+										["c_amt"] = 7,
+										["b_amt"] = 0,
+										["c_dmg"] = 2406123,
+										["g_amt"] = 0,
+										["n_max"] = 244183,
+										["targets"] = {
+											["Depleted Phoenix"] = 125587,
+											["Rukhmar"] = 4663243,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2382707,
+										["n_min"] = 125587,
+										["g_dmg"] = 0,
+										["counter"] = 22,
+										["total"] = 4788830,
+										["c_max"] = 470985,
+										["a_amt"] = 0,
+										["id"] = 17253,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 14,
+										["r_amt"] = 0,
+										["c_min"] = 268531,
+									},
+									[197163] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 707043,
+										["targets"] = {
+											["Rukhmar"] = 3614815,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3614815,
+										["n_min"] = 197642,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 3614815,
+										["c_max"] = 0,
+										["id"] = 197163,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 9,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[118459] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 175822,
+										["targets"] = {
+											["Depleted Phoenix"] = 883947,
+											["Energized Phoenix"] = 309501,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1193448,
+										["n_min"] = 44560,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 1193448,
+										["c_max"] = 0,
+										["id"] = 118459,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 11,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 104463.007622,
-							["start_time"] = 1490237209,
-							["delay"] = 0,
-							["last_event"] = 0,
-						}, -- [1]
+							["damage_taken"] = 5882691.00661,
+							["start_time"] = 1490323307,
+							["delay"] = 1490323362,
+							["last_event"] = 1490323400,
+						}, -- [3]
+						{
+							["flag_original"] = 8465,
+							["serial"] = "Creature-0-3021-1116-104-86177-0000548751",
+							["damage_from"] = {
+								["Rukhmar"] = true,
+							},
+							["targets"] = {
+								["Depleted Phoenix"] = 1532831,
+								["Energized Phoenix"] = 2798060,
+								["Rukhmar"] = 6726535,
+							},
+							["end_time"] = 1490323402,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 11057426.006161,
+							["dps_started"] = false,
+							["total"] = 11057426.006161,
+							["classe"] = "PET",
+							["ownerName"] = "Bracnar",
+							["nome"] = "Beast <Bracnar>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 11,
+										["b_amt"] = 0,
+										["c_dmg"] = 1357893,
+										["g_amt"] = 0,
+										["n_max"] = 82799,
+										["targets"] = {
+											["Depleted Phoenix"] = 240822,
+											["Energized Phoenix"] = 49219,
+											["Rukhmar"] = 2618274,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1550422,
+										["n_min"] = 43315,
+										["g_dmg"] = 0,
+										["counter"] = 35,
+										["total"] = 2908315,
+										["c_max"] = 165598,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 24,
+										["r_amt"] = 0,
+										["c_min"] = 97024,
+									}, -- [1]
+									[201754] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 1808814,
+										["g_amt"] = 0,
+										["n_max"] = 434697,
+										["targets"] = {
+											["Depleted Phoenix"] = 1292009,
+											["Energized Phoenix"] = 2748841,
+											["Rukhmar"] = 2577539,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 4809575,
+										["n_min"] = 254690,
+										["g_dmg"] = 0,
+										["counter"] = 18,
+										["total"] = 6618389,
+										["c_max"] = 775206,
+										["id"] = 201754,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 15,
+										["r_amt"] = 0,
+										["c_min"] = 516804,
+									},
+									[207097] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 687303,
+										["g_amt"] = 0,
+										["n_max"] = 91453,
+										["targets"] = {
+											["Rukhmar"] = 1530722,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 843419,
+										["n_min"] = 53582,
+										["g_dmg"] = 0,
+										["counter"] = 15,
+										["total"] = 1530722,
+										["c_max"] = 182905,
+										["id"] = 207097,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 11,
+										["r_amt"] = 0,
+										["c_min"] = 160746,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 24182.006161,
+							["start_time"] = 1490323330,
+							["delay"] = 1490323362,
+							["last_event"] = 1490323401,
+						}, -- [4]
+						{
+							["flag_original"] = 8465,
+							["serial"] = "Creature-0-3021-1116-104-106551-00005484E6",
+							["damage_from"] = {
+								["Rukhmar"] = true,
+							},
+							["targets"] = {
+								["Depleted Phoenix"] = 136360,
+								["Energized Phoenix"] = 514312,
+								["Rukhmar"] = 5569527,
+							},
+							["end_time"] = 1490323402,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 6220199.005304,
+							["dps_started"] = false,
+							["total"] = 6220199.005304,
+							["classe"] = "PET",
+							["ownerName"] = "Bracnar",
+							["nome"] = "Hati <Bracnar>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 11,
+										["b_amt"] = 0,
+										["c_dmg"] = 983088,
+										["g_amt"] = 0,
+										["n_max"] = 53035,
+										["targets"] = {
+											["Depleted Phoenix"] = 36099,
+											["Energized Phoenix"] = 41075,
+											["Rukhmar"] = 1991529,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1085615,
+										["n_min"] = 35580,
+										["g_dmg"] = 0,
+										["counter"] = 34,
+										["total"] = 2068703,
+										["c_max"] = 106069,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 23,
+										["r_amt"] = 0,
+										["c_min"] = 71159,
+									}, -- [1]
+									[207097] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 454431,
+										["g_amt"] = 0,
+										["n_max"] = 58578,
+										["targets"] = {
+											["Rukhmar"] = 968181,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 513750,
+										["n_min"] = 39299,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["total"] = 968181,
+										["c_max"] = 117156,
+										["id"] = 207097,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 10,
+										["r_amt"] = 0,
+										["c_min"] = 102963,
+									},
+									[197163] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 153202,
+										["targets"] = {
+											["Rukhmar"] = 452038,
+											["Energized Phoenix"] = 67504,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 519542,
+										["n_min"] = 58474,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 519542,
+										["c_max"] = 0,
+										["id"] = 197163,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[83381] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 1198754,
+										["g_amt"] = 0,
+										["n_max"] = 174321,
+										["targets"] = {
+											["Energized Phoenix"] = 372313,
+											["Rukhmar"] = 2157779,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1331338,
+										["n_min"] = 116948,
+										["g_dmg"] = 0,
+										["counter"] = 13,
+										["total"] = 2530092,
+										["c_max"] = 348641,
+										["id"] = 83381,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 9,
+										["r_amt"] = 0,
+										["c_min"] = 237305,
+									},
+									[118459] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 33421,
+										["targets"] = {
+											["Depleted Phoenix"] = 100261,
+											["Energized Phoenix"] = 33420,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 133681,
+										["n_min"] = 33420,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 133681,
+										["c_max"] = 0,
+										["id"] = 118459,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 8983.005304,
+							["start_time"] = 1490323323,
+							["delay"] = 1490323362,
+							["last_event"] = 1490323399,
+						}, -- [5]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 152,
+					["combatId"] = 205,
 					["tipo"] = 3,
 					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorb"] = 0.001605,
+							["last_hps"] = 0,
+							["targets_overheal"] = {
+								["Bracnar"] = 2557330,
+								["Hati <Bracnar>"] = 1876834,
+							},
+							["targets"] = {
+								["Bracnar"] = 4724800,
+								["Chromaggus <Bracnar>"] = 3017305,
+								["Hati <Bracnar>"] = 221861,
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[208981] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bracnar"] = 802819,
+										},
+										["n_max"] = 95084,
+										["targets"] = {
+											["Bracnar"] = 3761171,
+										},
+										["n_min"] = 5501,
+										["counter"] = 48,
+										["overheal"] = 802819,
+										["total"] = 3761171,
+										["c_max"] = 0,
+										["id"] = 208981,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 3761171,
+										["m_healed"] = 0,
+										["n_amt"] = 48,
+										["absorbed"] = 0,
+									},
+									[197205] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bracnar"] = 1754511,
+										},
+										["n_max"] = 77673,
+										["targets"] = {
+											["Bracnar"] = 142434,
+										},
+										["n_min"] = 0,
+										["counter"] = 27,
+										["overheal"] = 1754511,
+										["total"] = 142434,
+										["c_max"] = 0,
+										["id"] = 197205,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 142434,
+										["m_healed"] = 0,
+										["n_amt"] = 27,
+										["absorbed"] = 0,
+									},
+									[136] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 177489,
+										["targets"] = {
+											["Chromaggus <Bracnar>"] = 3017305,
+										},
+										["n_min"] = 177488,
+										["counter"] = 17,
+										["overheal"] = 0,
+										["total"] = 3017305,
+										["c_max"] = 0,
+										["id"] = 136,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 3017305,
+										["m_healed"] = 0,
+										["n_amt"] = 17,
+										["absorbed"] = 0,
+									},
+									[214303] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Hati <Bracnar>"] = 1876834,
+										},
+										["n_max"] = 5968,
+										["targets"] = {
+											["Hati <Bracnar>"] = 8983,
+										},
+										["n_min"] = 0,
+										["counter"] = 17,
+										["overheal"] = 1876834,
+										["total"] = 8983,
+										["c_max"] = 0,
+										["id"] = 214303,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 8983,
+										["m_healed"] = 0,
+										["n_amt"] = 17,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["pets"] = {
+								"Chromaggus <Bracnar>", -- [1]
+								"Hati <Bracnar>", -- [2]
+							},
+							["iniciar_hps"] = false,
+							["healing_from"] = {
+								["Bracnar"] = true,
+							},
+							["classe"] = "HUNTER",
+							["totalover"] = 4434164.001605,
+							["total_without_pet"] = 6929893.001605,
+							["totalover_without_pet"] = 0.001605,
+							["healing_taken"] = 3903605.001605,
+							["fight_component"] = true,
+							["end_time"] = 1490323402,
+							["heal_enemy_amt"] = 0,
+							["total"] = 6929893.001605,
+							["nome"] = "Bracnar",
+							["targets_absorbs"] = {
+							},
+							["grupo"] = true,
+							["spec"] = 253,
+							["heal_enemy"] = {
+							},
+							["last_event"] = 1490323401,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1490323280,
+							["serial"] = "Player-1169-06A1ACBD",
+							["delay"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorb"] = 0.007918,
+							["last_hps"] = 0,
+							["targets_overheal"] = {
+							},
+							["targets"] = {
+							},
+							["targets_absorbs"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["healing_from"] = {
+								["Bracnar"] = true,
+							},
+							["healing_taken"] = 3017305.007918,
+							["totalover"] = 0.007918,
+							["total_without_pet"] = 0.007918,
+							["last_event"] = 0,
+							["totalover_without_pet"] = 0.007918,
+							["fight_component"] = true,
+							["end_time"] = 1490323402,
+							["classe"] = "PET",
+							["ownerName"] = "Bracnar",
+							["nome"] = "Chromaggus <Bracnar>",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+								},
+							},
+							["serial"] = "Pet-0-3021-1116-104-14020-0101EE046B",
+							["total"] = 0.007918,
+							["heal_enemy"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1490323402,
+							["delay"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["totalabsorb"] = 0.006806,
+							["last_hps"] = 0,
+							["targets_overheal"] = {
+							},
+							["targets"] = {
+							},
+							["targets_absorbs"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["healing_from"] = {
+								["Bracnar"] = true,
+							},
+							["healing_taken"] = 8983.006806,
+							["totalover"] = 0.006806,
+							["total_without_pet"] = 0.006806,
+							["last_event"] = 0,
+							["totalover_without_pet"] = 0.006806,
+							["fight_component"] = true,
+							["end_time"] = 1490323402,
+							["classe"] = "PET",
+							["ownerName"] = "Bracnar",
+							["nome"] = "Hati <Bracnar>",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+								},
+							},
+							["serial"] = "Creature-0-3021-1116-104-106551-00005484E6",
+							["total"] = 0.006806,
+							["heal_enemy"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1490323402,
+							["delay"] = 0,
+						}, -- [3]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 152,
+					["combatId"] = 205,
 					["tipo"] = 7,
 					["_ActorTable"] = {
+						{
+							["received"] = 0.008629,
+							["total"] = 0.008629,
+							["resource"] = 25.008629,
+							["nome"] = "Torinara",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+								},
+							},
+							["targets"] = {
+							},
+							["flag_original"] = 1298,
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["resource_type"] = 11,
+							["tipo"] = 3,
+							["last_event"] = 1490323292,
+							["grupo"] = true,
+							["serial"] = "Player-1169-07C70DC2",
+							["classe"] = "SHAMAN",
+						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 152,
+					["combatId"] = 205,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["cc_break_spells"] = {
+							["debuff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[75] = {
-										["cc_break_oque"] = {
-											[6770] = 1,
-										},
-										["id"] = 75,
-										["cc_break"] = 1,
+									[177142] = {
+										["uptime"] = 6,
+										["activedamt"] = 0,
+										["id"] = 177142,
+										["actived"] = false,
 										["targets"] = {
-											["Felborne Punisher"] = 1,
+										},
+										["counter"] = 0,
+									},
+									[95809] = {
+										["uptime"] = 111,
+										["activedamt"] = 1,
+										["id"] = 95809,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[177135] = {
+										["uptime"] = 3,
+										["activedamt"] = 0,
+										["id"] = 177135,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[120679] = {
+										["uptime"] = 77,
+										["activedamt"] = 0,
+										["id"] = 120679,
+										["actived"] = false,
+										["targets"] = {
 										},
 										["counter"] = 0,
 									},
 								},
 							},
-							["buff_uptime"] = 57,
+							["buff_uptime"] = 337,
 							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[225787] = {
-										["uptime"] = 19,
-										["activedamt"] = 1,
-										["id"] = 225787,
+									["Avatar of Terokk"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Avatar of Terokk",
 										["actived"] = false,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
-									[171831] = {
-										["uptime"] = 19,
+									[231390] = {
+										["uptime"] = 1,
 										["activedamt"] = 1,
-										["id"] = 171831,
-										["actived"] = false,
-										["targets"] = {
-										},
-										["counter"] = 0,
-									},
-									[227723] = {
-										["uptime"] = 19,
-										["activedamt"] = 1,
-										["id"] = 227723,
+										["id"] = 231390,
 										["actived"] = false,
 										["targets"] = {
 										},
 										["counter"] = 0,
 									},
 									[120694] = {
+										["uptime"] = 88,
+										["activedamt"] = 11,
+										["id"] = 120694,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[221796] = {
+										["actived_at"] = 1490323399,
+										["uptime"] = 49,
+										["activedamt"] = 5,
+										["id"] = 221796,
+										["actived"] = true,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[19574] = {
+										["uptime"] = 46,
+										["activedamt"] = 3,
+										["id"] = 19574,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[90355] = {
+										["uptime"] = 40,
+										["activedamt"] = 1,
+										["id"] = 90355,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									["Sign of the Warrior"] = {
 										["uptime"] = 0,
 										["activedamt"] = 0,
-										["id"] = 120694,
+										["id"] = "Sign of the Warrior",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[225730] = {
+										["uptime"] = 20,
+										["activedamt"] = 1,
+										["id"] = 225730,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									["Dire Beast"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Dire Beast",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									["Blood Frenzy"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Blood Frenzy",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									["Mana Divining Stone"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Mana Divining Stone",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									["Shaladrassil's Nourishment"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Shaladrassil's Nourishment",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[193530] = {
+										["uptime"] = 14,
+										["activedamt"] = 1,
+										["id"] = 193530,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[120360] = {
+										["uptime"] = 2,
+										["activedamt"] = 1,
+										["id"] = 120360,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[225729] = {
+										["uptime"] = 40,
+										["activedamt"] = 2,
+										["id"] = 225729,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[225726] = {
+										["uptime"] = 21,
+										["activedamt"] = 1,
+										["id"] = 225726,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[207068] = {
+										["uptime"] = 16,
+										["activedamt"] = 2,
+										["id"] = 207068,
 										["actived"] = false,
 										["targets"] = {
 										},
@@ -3407,65 +2591,230 @@ _detalhes_database = {
 									},
 								},
 							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 197,
 							["buff_uptime_targets"] = {
 							},
 							["spec"] = 253,
 							["grupo"] = true,
-							["cc_break"] = 1.004955,
-							["cc_break_oque"] = {
-								[6770] = 1,
+							["spell_cast"] = {
+								[170364] = 11,
+								[120360] = 1,
+								[193530] = 1,
+								[120679] = 11,
+								[207068] = 2,
+								[136] = 4,
+								[19574] = 3,
+								[2643] = 2,
+								[34026] = 14,
+								[193455] = 26,
 							},
-							["pets"] = {
+							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1490237232,
+							["last_event"] = 1490323408,
 							["nome"] = "Bracnar",
-							["cc_break_targets"] = {
-								["Felborne Punisher"] = 1,
+							["pets"] = {
+								"Chromaggus <Bracnar>", -- [1]
+								"Beast <Bracnar>", -- [2]
+								"Zephyr <Bracnar>", -- [3]
 							},
 							["serial"] = "Player-1169-06A1ACBD",
 							["tipo"] = 4,
 						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Bracnar",
+							["nome"] = "Chromaggus <Bracnar>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["fight_component"] = true,
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[17253] = 22,
+								[90355] = 1,
+								[61684] = 4,
+							},
+							["serial"] = "Pet-0-3021-1116-104-14020-0101EE046B",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["ownerName"] = "Bracnar",
+							["nome"] = "Beast <Bracnar>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[120694] = 11,
+								[201754] = 11,
+							},
+							["serial"] = "Creature-0-3021-1116-104-86177-0000548751",
+							["last_event"] = 0,
+						}, -- [3]
+						{
+							["flag_original"] = 1298,
+							["debuff_uptime"] = 207,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[95809] = {
+										["uptime"] = 111,
+										["activedamt"] = 1,
+										["id"] = 95809,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[225080] = {
+										["uptime"] = 96,
+										["activedamt"] = 1,
+										["id"] = 225080,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["nome"] = "Torinara",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1490323306,
+							["spell_cast"] = {
+								[187837] = 1,
+							},
+							["serial"] = "Player-1169-07C70DC2",
+							["classe"] = "SHAMAN",
+						}, -- [4]
+						{
+							["flag_original"] = 8465,
+							["ownerName"] = "Bracnar",
+							["nome"] = "Zephyr <Bracnar>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[177139] = 2,
+							},
+							["serial"] = "Creature-0-3021-1116-104-88673-0000548769",
+							["last_event"] = 0,
+						}, -- [5]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 152,
+					["combatId"] = 205,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
+					["Torinara"] = true,
 					["Bracnar"] = true,
 				},
 				["last_events_tables"] = {
-				},
-				["enemy"] = "Vineyard Enforcer",
-				["combat_counter"] = 227,
-				["playing_solo"] = true,
-				["totals"] = {
-					-0.0162529998342507, -- [1]
-					0, -- [2]
 					{
-						0, -- [1]
-						[0] = 0,
-						[6] = 0,
-						[3] = -0.00604400000000283,
+						{
+							{
+								true, -- [1]
+								177354, -- [2]
+								106663, -- [3]
+								1490323284.73, -- [4]
+								246197, -- [5]
+								"Energized Phoenix", -- [6]
+								nil, -- [7]
+								4, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [1]
+							{
+								true, -- [1]
+								167710, -- [2]
+								78088, -- [3]
+								1490323293.651, -- [4]
+								168109, -- [5]
+								"Rukhmar", -- [6]
+								nil, -- [7]
+								4, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [2]
+							{
+								true, -- [1]
+								177354, -- [2]
+								106376, -- [3]
+								1490323300.934, -- [4]
+								61733, -- [5]
+								"Energized Phoenix", -- [6]
+								nil, -- [7]
+								4, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [3]
+							{
+								true, -- [1]
+								167650, -- [2]
+								85160, -- [3]
+								1490323306.534, -- [4]
+								1, -- [5]
+								"Rukhmar", -- [6]
+								nil, -- [7]
+								4, -- [8]
+								false, -- [9]
+								23427, -- [10]
+							}, -- [4]
+							{
+								3, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+								0, -- [5]
+								"Torinara", -- [6]
+							}, -- [5]
+						}, -- [1]
+						1490323306.534, -- [2]
+						"Torinara", -- [3]
+						"SHAMAN", -- [4]
+						352860, -- [5]
+						"0m 27s", -- [6]
+						["dead_at"] = 27.8600000000151,
+						["dead"] = true,
+					}, -- [1]
+				},
+				["enemy"] = "Rukhmar",
+				["combat_counter"] = 334,
+				["totals"] = {
+					53373570.827176, -- [1]
+					6929893, -- [2]
+					{
+						-0.00330200000001923, -- [1]
+						[0] = -0.020341,
+						[6] = -0.0116820000000004,
+						[3] = -0.00885399999998526,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
 						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
+						["interrupt"] = -0.00660599999999989,
 						["dispell"] = 0,
-						["cc_break"] = 1,
-						["dead"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 1,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 				},
-				["frags_need_refresh"] = false,
+				["frags_need_refresh"] = true,
 				["__call"] = {
 				},
 				["PhaseData"] = {
@@ -3477,29 +2826,1044 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Bracnar"] = 44427.005944,
+							["Bracnar"] = 6929893.001605,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Bracnar"] = 3432391.015952,
+							["Bracnar"] = 53357238.004547,
+							["Torinara"] = 16333.00317,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 171934.415,
-				["combat_id"] = 152,
+				["end_time"] = 258127.538,
+				["combat_id"] = 205,
 				["instance_type"] = "none",
-				["resincked"] = true,
 				["frags"] = {
+					["Depleted Phoenix"] = 5,
+					["Rukhmar"] = 1,
+					["Viletongue Rylak"] = 1,
 				},
-				["data_fim"] = "22:46:49",
-				["data_inicio"] = "22:46:31",
+				["data_fim"] = "22:43:23",
+				["data_inicio"] = "22:41:18",
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
-					0, -- [1]
+					13028851, -- [1]
+					6929893, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 1,
+					}, -- [4]
+				},
+				["start_time"] = 258003.511,
+				["contra"] = "Rukhmar",
+				["TimeData"] = {
+				},
+			}, -- [2]
+			{
+				{
+					["combatId"] = 204,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["High Sage Viryx"] = 8534811,
+							},
+							["total"] = 8534811.005195,
+							["pets"] = {
+								"Chromaggus <Bracnar>", -- [1]
+								"Hati <Bracnar>", -- [2]
+								"Beast <Bracnar>", -- [3]
+							},
+							["on_hold"] = false,
+							["boss_fight_component"] = true,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1356805.005195,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1490322479,
+							["friendlyfire_total"] = 0,
+							["spec"] = 253,
+							["nome"] = "Bracnar",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[75] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 194372,
+										["g_amt"] = 0,
+										["n_max"] = 47640,
+										["targets"] = {
+											["High Sage Viryx"] = 289652,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 95280,
+										["n_min"] = 47640,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 289652,
+										["c_max"] = 97186,
+										["id"] = 75,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 97186,
+									},
+									[193455] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 716116,
+										["g_amt"] = 0,
+										["n_max"] = 351037,
+										["targets"] = {
+											["High Sage Viryx"] = 1067153,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 351037,
+										["n_min"] = 351037,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 1067153,
+										["c_max"] = 716116,
+										["id"] = 193455,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 716116,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-1169-06A1ACBD",
+							["last_dps"] = 1066185.01001749,
+							["custom"] = 0,
+							["last_event"] = 1490322478,
+							["damage_taken"] = 0.005195,
+							["start_time"] = 1490322471,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["serial"] = "Pet-0-3881-1209-14172-14020-0701EE046B",
+							["damage_from"] = {
+								["High Sage Viryx"] = true,
+							},
+							["targets"] = {
+								["High Sage Viryx"] = 4460832,
+							},
+							["boss_fight_component"] = true,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 4460832.001828,
+							["dps_started"] = false,
+							["total"] = 4460832.001828,
+							["classe"] = "PET",
+							["ownerName"] = "Bracnar",
+							["nome"] = "Chromaggus <Bracnar>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 166782,
+										["g_amt"] = 0,
+										["n_max"] = 41696,
+										["targets"] = {
+											["High Sage Viryx"] = 291869,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 125087,
+										["n_min"] = 41695,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 291869,
+										["c_max"] = 83391,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 83391,
+									}, -- [1]
+									[207097] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 272367,
+										["g_amt"] = 0,
+										["n_max"] = 45395,
+										["targets"] = {
+											["High Sage Viryx"] = 317762,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 45395,
+										["n_min"] = 45395,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 317762,
+										["c_max"] = 90789,
+										["id"] = 207097,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 90789,
+									},
+									[83381] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 2101478,
+										["g_amt"] = 0,
+										["n_max"] = 525369,
+										["targets"] = {
+											["High Sage Viryx"] = 2626847,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 525369,
+										["n_min"] = 525369,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 2626847,
+										["c_max"] = 1050739,
+										["id"] = 83381,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 1050739,
+									},
+									[160124] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 45394,
+										["targets"] = {
+											["High Sage Viryx"] = 45394,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 45394,
+										["n_min"] = 45394,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 45394,
+										["c_max"] = 0,
+										["id"] = 160124,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[17253] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 326011,
+										["g_amt"] = 0,
+										["n_max"] = 179258,
+										["targets"] = {
+											["High Sage Viryx"] = 653591,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 327580,
+										["n_min"] = 148322,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 653591,
+										["c_max"] = 326011,
+										["id"] = 17253,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 326011,
+									},
+									[197163] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 525369,
+										["targets"] = {
+											["High Sage Viryx"] = 525369,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 525369,
+										["n_min"] = 525369,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 525369,
+										["c_max"] = 0,
+										["id"] = 197163,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1490322479,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 95582.001828,
+							["start_time"] = 1490322471,
+							["delay"] = 0,
+							["last_event"] = 1490322478,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["serial"] = "Creature-0-3881-1209-14172-106551-00005483BC",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["High Sage Viryx"] = 1632389,
+							},
+							["boss_fight_component"] = true,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1632389.005795,
+							["dps_started"] = false,
+							["total"] = 1632389.005795,
+							["classe"] = "PET",
+							["ownerName"] = "Bracnar",
+							["nome"] = "Hati <Bracnar>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 47289,
+										["targets"] = {
+											["High Sage Viryx"] = 236445,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 236445,
+										["n_min"] = 47289,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 236445,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									[207097] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 411852,
+										["g_amt"] = 0,
+										["n_max"] = 51482,
+										["targets"] = {
+											["High Sage Viryx"] = 463334,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 51482,
+										["n_min"] = 51482,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 463334,
+										["c_max"] = 102963,
+										["id"] = 207097,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 102963,
+									},
+									[197163] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 155435,
+										["targets"] = {
+											["High Sage Viryx"] = 155435,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 155435,
+										["n_min"] = 155435,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 155435,
+										["c_max"] = 0,
+										["id"] = 197163,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[83381] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 621740,
+										["g_amt"] = 0,
+										["n_max"] = 155435,
+										["targets"] = {
+											["High Sage Viryx"] = 777175,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 155435,
+										["n_min"] = 155435,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 777175,
+										["c_max"] = 310870,
+										["id"] = 83381,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 310870,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1490322479,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.005795,
+							["start_time"] = 1490322471,
+							["delay"] = 0,
+							["last_event"] = 1490322478,
+						}, -- [3]
+						{
+							["flag_original"] = 8465,
+							["serial"] = "Creature-0-3881-1209-14172-86177-0000548427",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["High Sage Viryx"] = 1084785,
+							},
+							["boss_fight_component"] = true,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1084785.008291,
+							["dps_started"] = false,
+							["total"] = 1084785.008291,
+							["classe"] = "PET",
+							["ownerName"] = "Bracnar",
+							["nome"] = "Beast <Bracnar>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 73829,
+										["targets"] = {
+											["High Sage Viryx"] = 295316,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 295316,
+										["n_min"] = 73829,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 295316,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									[201754] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 387603,
+										["targets"] = {
+											["High Sage Viryx"] = 387603,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 387603,
+										["n_min"] = 387603,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 387603,
+										["c_max"] = 0,
+										["id"] = 201754,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[207097] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 80374,
+										["targets"] = {
+											["High Sage Viryx"] = 401866,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 401866,
+										["n_min"] = 80373,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 401866,
+										["c_max"] = 0,
+										["id"] = 207097,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1490322479,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.008291,
+							["start_time"] = 1490322473,
+							["delay"] = 0,
+							["last_event"] = 1490322477,
+						}, -- [4]
+						{
+							["flag_original"] = 68168,
+							["damage_from"] = {
+								["Hati <Bracnar>"] = true,
+								["Bracnar"] = true,
+								["Chromaggus <Bracnar>"] = true,
+								["Beast <Bracnar>"] = true,
+							},
+							["targets"] = {
+								["Chromaggus <Bracnar>"] = 95582,
+							},
+							["pets"] = {
+							},
+							["boss"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 95582.005802,
+							["monster"] = true,
+							["boss_fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1490322479,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "High Sage Viryx",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 54411,
+										["targets"] = {
+											["Chromaggus <Bracnar>"] = 95582,
+											["Chromaggus"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 95582,
+										["n_min"] = 41171,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["a_amt"] = 0,
+										["total"] = 95582,
+										["c_max"] = 0,
+										["DODGE"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 41171,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+								},
+							},
+							["total"] = 95582.005802,
+							["serial"] = "Creature-0-3881-1209-14172-76266-00005483AC",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1490322477,
+							["damage_taken"] = 8534811.005802,
+							["start_time"] = 1490322471,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [5]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 204,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorb"] = 0.005519,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["targets_absorbs"] = {
+							},
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.005519,
+							["targets_overheal"] = {
+								["Bracnar"] = 510604,
+							},
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 510604.005519,
+							["total_without_pet"] = 0.005519,
+							["iniciar_hps"] = false,
+							["classe"] = "HUNTER",
+							["boss_fight_component"] = true,
+							["total"] = 0.005519,
+							["healing_taken"] = 0.005519,
+							["end_time"] = 1490322479,
+							["nome"] = "Bracnar",
+							["spec"] = 253,
+							["grupo"] = true,
+							["last_event"] = 1490322476,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[197205] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bracnar"] = 510604,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Bracnar"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 6,
+										["overheal"] = 510604,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 197205,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 6,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1490322471,
+							["serial"] = "Player-1169-06A1ACBD",
+							["delay"] = 0,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 204,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 204,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[120679] = {
+										["uptime"] = 6,
+										["activedamt"] = 0,
+										["id"] = 120679,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 8,
+							["classe"] = "HUNTER",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Trailblazer"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Trailblazer",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									["Bestial Wrath"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Bestial Wrath",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[221796] = {
+										["actived_at"] = 1490322472,
+										["uptime"] = 0,
+										["activedamt"] = 1,
+										["id"] = 221796,
+										["actived"] = true,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									["Mana Divining Stone"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Mana Divining Stone",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									["Shaladrassil's Nourishment"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Shaladrassil's Nourishment",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									["Dire Beast"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Dire Beast",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									["Misdirection"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Misdirection",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[207068] = {
+										["actived_at"] = 1490322472,
+										["uptime"] = 0,
+										["activedamt"] = 1,
+										["id"] = 207068,
+										["actived"] = true,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									["Blood Frenzy"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Blood Frenzy",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[35079] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 35079,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[120694] = {
+										["uptime"] = 8,
+										["activedamt"] = 1,
+										["id"] = 120694,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									["Sign of the Warrior"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Sign of the Warrior",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[90355] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 90355,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[231390] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = 231390,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									["Aspect of the Wild"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Aspect of the Wild",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 6,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 253,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[34026] = 3,
+								[193455] = 3,
+								[170364] = 1,
+								[120679] = 1,
+								[207068] = 1,
+							},
+							["boss_fight_component"] = true,
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1490322511,
+							["nome"] = "Bracnar",
+							["pets"] = {
+								"Beast <Bracnar>", -- [1]
+								"Chromaggus <Bracnar>", -- [2]
+							},
+							["serial"] = "Player-1169-06A1ACBD",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["ownerName"] = "Bracnar",
+							["nome"] = "Beast <Bracnar>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["boss_fight_component"] = true,
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[120694] = 1,
+								[201754] = 1,
+							},
+							["serial"] = "Creature-0-3881-1209-14172-86177-0000548427",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Bracnar",
+							["nome"] = "Chromaggus <Bracnar>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["boss_fight_component"] = true,
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[17253] = 2,
+							},
+							["serial"] = "Pet-0-3881-1209-14172-14020-0701EE046B",
+							["last_event"] = 0,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 204,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Torinara"] = true,
+					["Bracnar"] = true,
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "High Sage Viryx",
+				["combat_counter"] = 332,
+				["totals"] = {
+					8630392.985163, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -3514,61 +3878,1572 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 						["interrupt"] = 0,
 						["dispell"] = 0,
-						["cc_break"] = 1,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["is_boss"] = {
+					["bossimage"] = 1044348,
+					["diff_string"] = "Mythic",
+					["index"] = 0,
+					["zone"] = "Skyreach",
+					["encounter"] = "High Sage Viryx",
+					["mapid"] = 1209,
+					["try_number"] = 4,
+					["name"] = "High Sage Viryx",
+					["id"] = 968,
+					["ej_instance_id"] = 476,
+					["diff"] = 23,
+				},
+				["frags_need_refresh"] = true,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Bracnar"] = 0.005519,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Bracnar"] = 8911807.007452,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 257204.44,
+				["combat_id"] = 204,
+				["instance_type"] = "party",
+				["resincked"] = true,
+				["frags"] = {
+					["High Sage Viryx"] = 1,
+				},
+				["data_fim"] = "22:27:59",
+				["data_inicio"] = "22:27:51",
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					1356805, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["start_time"] = 171915.643,
-				["contra"] = "Vineyard Enforcer",
+				["start_time"] = 257196.435,
+				["contra"] = "High Sage Viryx",
+				["TimeData"] = {
+				},
+			}, -- [3]
+			{
+				{
+					["combatId"] = 201,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["damage_from"] = {
+								["Environment (Falling)"] = true,
+								["High Sage Viryx"] = true,
+								["Arakkoa Magnifying Glass"] = true,
+							},
+							["targets"] = {
+								["High Sage Viryx"] = 280317,
+								["Solar Zealot"] = 672804,
+							},
+							["total"] = 953121.003586,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["boss_fight_component"] = true,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 953121.003586,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1490322336,
+							["friendlyfire_total"] = 0,
+							["spec"] = 253,
+							["nome"] = "Bracnar",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[75] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 74188,
+										["g_amt"] = 0,
+										["n_max"] = 36905,
+										["targets"] = {
+											["High Sage Viryx"] = 74188,
+											["Solar Zealot"] = 36905,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 36905,
+										["n_min"] = 36905,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 111093,
+										["c_max"] = 74188,
+										["id"] = 75,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 74188,
+									},
+									[193455] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 426722,
+										["g_amt"] = 0,
+										["n_max"] = 209177,
+										["targets"] = {
+											["High Sage Viryx"] = 206129,
+											["Solar Zealot"] = 635899,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 415306,
+										["n_min"] = 206129,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 842028,
+										["c_max"] = 426722,
+										["id"] = 193455,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 426722,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-1169-06A1ACBD",
+							["last_dps"] = 27218.8081099524,
+							["custom"] = 0,
+							["last_event"] = 1490322326,
+							["damage_taken"] = 2659768.003586,
+							["start_time"] = 1490322332,
+							["delay"] = 1490322326,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["monster"] = true,
+							["damage_from"] = {
+								["Bracnar"] = true,
+							},
+							["targets"] = {
+								["Bracnar"] = 697886,
+							},
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 697886.003809,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 697886.003809,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-3881-1209-14172-76266-0000548350",
+							["nome"] = "High Sage Viryx",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 226896,
+										["g_amt"] = 0,
+										["n_max"] = 137672,
+										["targets"] = {
+											["Bracnar"] = 697886,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 470990,
+										["n_min"] = 104067,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["DODGE"] = 1,
+										["total"] = 697886,
+										["c_max"] = 226896,
+										["MISS"] = 2,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 226896,
+									}, -- [1]
+									[154396] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Bracnar"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 154396,
+										["r_dmg"] = 0,
+										["MISS"] = 2,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 2,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1490322336,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 280317.003809,
+							["start_time"] = 1490322305,
+							["delay"] = 0,
+							["last_event"] = 1490322331,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["monster"] = true,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Bracnar"] = 69970,
+							},
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 69970.001997,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 69970.001997,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-3881-1209-14172-76285-0000548350",
+							["nome"] = "Arakkoa Magnifying Glass",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[154043] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 69970,
+										["targets"] = {
+											["Bracnar"] = 69970,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 69970,
+										["n_min"] = 69970,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 69970,
+										["c_max"] = 0,
+										["id"] = 154043,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1490322336,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.001997,
+							["start_time"] = 1490322333,
+							["delay"] = 0,
+							["last_event"] = 1490322333,
+						}, -- [3]
+						{
+							["flag_original"] = 68168,
+							["damage_from"] = {
+								["Bracnar"] = true,
+							},
+							["targets"] = {
+							},
+							["monster"] = true,
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.007462,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 0.007462,
+							["classe"] = "UNKNOW",
+							["serial"] = "Vehicle-0-3881-1209-14172-76267-000054838F",
+							["nome"] = "Solar Zealot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1490322336,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 672804.007462,
+							["start_time"] = 1490322336,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [4]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 201,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorb"] = 0.004372,
+							["last_hps"] = 0,
+							["healing_from"] = {
+								["Bracnar"] = true,
+							},
+							["targets"] = {
+								["Bracnar"] = 1521332,
+							},
+							["targets_absorbs"] = {
+							},
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.004372,
+							["targets_overheal"] = {
+								["Bracnar"] = 129587,
+							},
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 129587.004372,
+							["total_without_pet"] = 1391745.004372,
+							["iniciar_hps"] = false,
+							["classe"] = "HUNTER",
+							["boss_fight_component"] = true,
+							["total"] = 1391745.004372,
+							["healing_taken"] = 1391745.004372,
+							["end_time"] = 1490322336,
+							["nome"] = "Bracnar",
+							["spec"] = 253,
+							["grupo"] = true,
+							["last_event"] = 1490322334,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[208981] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bracnar"] = 129587,
+										},
+										["n_max"] = 95084,
+										["targets"] = {
+											["Bracnar"] = 1391745,
+										},
+										["n_min"] = 23552,
+										["counter"] = 16,
+										["overheal"] = 129587,
+										["total"] = 1391745,
+										["c_max"] = 0,
+										["id"] = 208981,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 1391745,
+										["m_healed"] = 0,
+										["n_amt"] = 16,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1490322306,
+							["serial"] = "Player-1169-06A1ACBD",
+							["delay"] = 0,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 201,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 201,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["nome"] = "Bracnar",
+							["spec"] = 253,
+							["grupo"] = true,
+							["boss_fight_component"] = true,
+							["buff_uptime"] = 60,
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								[193455] = 2,
+							},
+							["classe"] = "HUNTER",
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Trailblazer"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Trailblazer",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[231390] = {
+										["actived_at"] = 1490322329,
+										["uptime"] = 20,
+										["activedamt"] = 2,
+										["id"] = 231390,
+										["actived"] = true,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									["Fiery Enchant"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Fiery Enchant",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[221796] = {
+										["uptime"] = 20,
+										["activedamt"] = 2,
+										["id"] = 221796,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[225730] = {
+										["uptime"] = 20,
+										["activedamt"] = 1,
+										["id"] = 225730,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									["Sign of the Warrior"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Sign of the Warrior",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									["Shaladrassil's Nourishment"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Shaladrassil's Nourishment",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									["Mana Divining Stone"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Mana Divining Stone",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[225726] = {
+										["actived_at"] = 1490322326,
+										["uptime"] = 0,
+										["activedamt"] = 1,
+										["id"] = 225726,
+										["actived"] = true,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-1169-06A1ACBD",
+							["last_event"] = 1490322336,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["nome"] = "High Sage Viryx",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["spell_cast"] = {
+								[154396] = 2,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-3881-1209-14172-76266-0000548350",
+							["classe"] = "UNKNOW",
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["nome"] = "Arakkoa Magnifying Glass",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["spell_cast"] = {
+								[154043] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-3881-1209-14172-76285-0000548350",
+							["classe"] = "UNKNOW",
+						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+								},
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["boss_debuff"] = true,
+							["monster"] = true,
+							["debuff_uptime"] = 1,
+							["spellschool"] = 4,
+							["debuff_uptime_targets"] = {
+								["Bracnar"] = {
+									["actived"] = false,
+									["activedamt"] = 0,
+									["uptime"] = 1,
+								},
+							},
+							["boss_fight_component"] = true,
+							["nome"] = "Lens Flare",
+							["tipo"] = 4,
+							["damage_twin"] = "Arakkoa Magnifying Glass",
+							["damage_spellid"] = 154043,
+							["serial"] = "Creature-0-3881-1209-14172-76285-0000548350",
+							["last_event"] = 1490322334,
+						}, -- [4]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 201,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Torinara"] = true,
+					["Bracnar"] = true,
+				},
+				["overall_added"] = true,
+				["last_events_tables"] = {
+				},
+				["enemy"] = "High Sage Viryx",
+				["combat_counter"] = 329,
+				["totals"] = {
+					1720976.993215, -- [1]
+					1391745, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+					["Bracnar"] = {
+						{
+							true, -- [1]
+							3, -- [2]
+							1891912, -- [3]
+							1490322347.999, -- [4]
+							1277528, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 2,
+					},
+				},
+				["frags_need_refresh"] = true,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Bracnar"] = 1391745.004372,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Bracnar"] = 953121.003586,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 257061.745,
+				["combat_id"] = 201,
+				["instance_type"] = "party",
+				["is_boss"] = {
+					["diff_string"] = "Mythic",
+					["index"] = 1,
+					["zone"] = "Skyreach",
+					["encounter"] = "High Sage Viryx",
+					["mapid"] = 1209,
+					["try_number"] = 3,
+					["name"] = "High Sage Viryx",
+					["id"] = 1701,
+					["ej_instance_id"] = 476,
+					["diff"] = 23,
+				},
+				["frags"] = {
+					["Solar Zealot"] = 1,
+				},
+				["data_fim"] = "22:25:37",
+				["data_inicio"] = "22:25:02",
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					953121, -- [1]
+					1391745, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 257026.728,
+				["contra"] = "High Sage Viryx",
+				["TimeData"] = {
+				},
+			}, -- [4]
+			{
+				{
+					["combatId"] = 200,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["damage_from"] = {
+								["High Sage Viryx"] = true,
+							},
+							["targets"] = {
+								["High Sage Viryx"] = 242495,
+								["Solar Zealot"] = 709708,
+							},
+							["total"] = 952203.007893,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["boss_fight_component"] = true,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 952203.007893,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1490322241,
+							["friendlyfire_total"] = 0,
+							["spec"] = 253,
+							["nome"] = "Bracnar",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[75] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 36904,
+										["targets"] = {
+											["High Sage Viryx"] = 36366,
+											["Solar Zealot"] = 73808,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 110174,
+										["n_min"] = 36366,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 110174,
+										["c_max"] = 0,
+										["id"] = 75,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[193455] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 426722,
+										["g_amt"] = 0,
+										["n_max"] = 209178,
+										["targets"] = {
+											["High Sage Viryx"] = 206129,
+											["Solar Zealot"] = 635900,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 415307,
+										["n_min"] = 206129,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 842029,
+										["c_max"] = 426722,
+										["id"] = 193455,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 426722,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-1169-06A1ACBD",
+							["last_dps"] = 29882.4104156058,
+							["custom"] = 0,
+							["last_event"] = 1490322230,
+							["damage_taken"] = 841430.007893,
+							["start_time"] = 1490322237,
+							["delay"] = 1490322230,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["monster"] = true,
+							["damage_from"] = {
+								["Bracnar"] = true,
+							},
+							["targets"] = {
+								["Bracnar"] = 841430,
+							},
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 841430.008249,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 841430.008249,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-3881-1209-14172-76266-00005482E7",
+							["nome"] = "High Sage Viryx",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 130022,
+										["targets"] = {
+											["Bracnar"] = 660546,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 660546,
+										["n_min"] = 97536,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["DODGE"] = 1,
+										["total"] = 660546,
+										["c_max"] = 0,
+										["MISS"] = 2,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									[154396] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 180884,
+										["targets"] = {
+											["Bracnar"] = 180884,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 180884,
+										["n_min"] = 180884,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 180884,
+										["c_max"] = 0,
+										["id"] = 154396,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 2,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1490322241,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 242495.008249,
+							["start_time"] = 1490322210,
+							["delay"] = 0,
+							["last_event"] = 1490322238,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["damage_from"] = {
+								["Bracnar"] = true,
+							},
+							["targets"] = {
+							},
+							["monster"] = true,
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.002444,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 0.002444,
+							["classe"] = "UNKNOW",
+							["serial"] = "Vehicle-0-3881-1209-14172-76267-000054832F",
+							["nome"] = "Solar Zealot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1490322241,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 709708.002444,
+							["start_time"] = 1490322241,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 200,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorb"] = 0.001394,
+							["last_hps"] = 0,
+							["healing_from"] = {
+								["Bracnar"] = true,
+							},
+							["targets"] = {
+								["Bracnar"] = 760664,
+							},
+							["targets_absorbs"] = {
+							},
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.001394,
+							["targets_overheal"] = {
+								["Bracnar"] = 31428,
+							},
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 31428.001394,
+							["total_without_pet"] = 729236.001394,
+							["iniciar_hps"] = false,
+							["classe"] = "HUNTER",
+							["boss_fight_component"] = true,
+							["total"] = 729236.001394,
+							["healing_taken"] = 729236.001394,
+							["end_time"] = 1490322241,
+							["nome"] = "Bracnar",
+							["spec"] = 253,
+							["grupo"] = true,
+							["last_event"] = 1490322236,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[208981] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bracnar"] = 31428,
+										},
+										["n_max"] = 95083,
+										["targets"] = {
+											["Bracnar"] = 729236,
+										},
+										["n_min"] = 63655,
+										["counter"] = 8,
+										["overheal"] = 31428,
+										["total"] = 729236,
+										["c_max"] = 0,
+										["id"] = 208981,
+										["targets_absorbs"] = {
+										},
+										["m_crit"] = 0,
+										["c_curado"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 729236,
+										["m_healed"] = 0,
+										["n_amt"] = 8,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1490322223,
+							["serial"] = "Player-1169-06A1ACBD",
+							["delay"] = 1490322213,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 200,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 200,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["nome"] = "Bracnar",
+							["spec"] = 253,
+							["grupo"] = true,
+							["boss_fight_component"] = true,
+							["buff_uptime"] = 48,
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								[193455] = 2,
+							},
+							["classe"] = "HUNTER",
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Mana Divining Stone"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Mana Divining Stone",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[221796] = {
+										["uptime"] = 23,
+										["activedamt"] = 2,
+										["id"] = 221796,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									[231390] = {
+										["uptime"] = 25,
+										["activedamt"] = 2,
+										["id"] = 231390,
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+									["Sign of the Warrior"] = {
+										["uptime"] = 0,
+										["activedamt"] = 0,
+										["id"] = "Sign of the Warrior",
+										["actived"] = false,
+										["targets"] = {
+										},
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-1169-06A1ACBD",
+							["last_event"] = 1490322241,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["nome"] = "High Sage Viryx",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["spell_cast"] = {
+								[154396] = 2,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-3881-1209-14172-76266-00005482E7",
+							["classe"] = "UNKNOW",
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 200,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Torinara"] = true,
+					["Bracnar"] = true,
+				},
+				["overall_added"] = true,
+				["last_events_tables"] = {
+					{
+						{
+							{
+								true, -- [1]
+								1, -- [2]
+								98033, -- [3]
+								1490322210.935, -- [4]
+								3169440, -- [5]
+								"High Sage Viryx", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [1]
+							{
+								false, -- [1]
+								208981, -- [2]
+								95083, -- [3]
+								1490322213.701, -- [4]
+								3166490, -- [5]
+								"Bracnar", -- [6]
+								nil, -- [7]
+								0, -- [8]
+							}, -- [2]
+							{
+								true, -- [1]
+								154396, -- [2]
+								180884, -- [3]
+								1490322216.319, -- [4]
+								2985606, -- [5]
+								"High Sage Viryx", -- [6]
+								nil, -- [7]
+								4, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [3]
+							{
+								true, -- [1]
+								1, -- [2]
+								130022, -- [3]
+								1490322217.868, -- [4]
+								2985606, -- [5]
+								"High Sage Viryx", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [4]
+							{
+								true, -- [1]
+								1, -- [2]
+								97536, -- [3]
+								1490322221.879, -- [4]
+								2855584, -- [5]
+								"High Sage Viryx", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [5]
+							{
+								false, -- [1]
+								208981, -- [2]
+								95083, -- [3]
+								1490322223.092, -- [4]
+								2853131, -- [5]
+								"Bracnar", -- [6]
+								nil, -- [7]
+								0, -- [8]
+							}, -- [6]
+							{
+								true, -- [1]
+								1, -- [2]
+								123758, -- [3]
+								1490322223.873, -- [4]
+								2853131, -- [5]
+								"High Sage Viryx", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [7]
+							{
+								false, -- [1]
+								208981, -- [2]
+								95083, -- [3]
+								1490322224.084, -- [4]
+								2948214, -- [5]
+								"Bracnar", -- [6]
+								nil, -- [7]
+								0, -- [8]
+							}, -- [8]
+							{
+								false, -- [1]
+								208981, -- [2]
+								95083, -- [3]
+								1490322225.079, -- [4]
+								2919539, -- [5]
+								"Bracnar", -- [6]
+								nil, -- [7]
+								0, -- [8]
+							}, -- [9]
+							{
+								false, -- [1]
+								208981, -- [2]
+								95083, -- [3]
+								1490322226.083, -- [4]
+								3014622, -- [5]
+								"Bracnar", -- [6]
+								nil, -- [7]
+								0, -- [8]
+							}, -- [10]
+							{
+								false, -- [1]
+								208981, -- [2]
+								95083, -- [3]
+								1490322227.077, -- [4]
+								3109705, -- [5]
+								"Bracnar", -- [6]
+								nil, -- [7]
+								0, -- [8]
+							}, -- [11]
+							{
+								true, -- [1]
+								1, -- [2]
+								99003, -- [3]
+								1490322227.914, -- [4]
+								3109705, -- [5]
+								"High Sage Viryx", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [12]
+							{
+								false, -- [1]
+								208981, -- [2]
+								95083, -- [3]
+								1490322231.052, -- [4]
+								3105785, -- [5]
+								"Bracnar", -- [6]
+								nil, -- [7]
+								0, -- [8]
+							}, -- [13]
+							{
+								false, -- [1]
+								208981, -- [2]
+								95083, -- [3]
+								1490322236.131, -- [4]
+								3169440, -- [5]
+								"Bracnar", -- [6]
+								nil, -- [7]
+								0, -- [8]
+							}, -- [14]
+							{
+								true, -- [1]
+								1, -- [2]
+								112194, -- [3]
+								1490322238.498, -- [4]
+								3169440, -- [5]
+								"High Sage Viryx", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [15]
+							{
+								3, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+								0, -- [5]
+								"Bracnar", -- [6]
+							}, -- [16]
+						}, -- [1]
+						1490322240.855, -- [2]
+						"Bracnar", -- [3]
+						"HUNTER", -- [4]
+						3169440, -- [5]
+						"0m 33s", -- [6]
+						["dead_at"] = 33.7330000000075,
+						["dead"] = true,
+					}, -- [1]
+				},
+				["enemy"] = "High Sage Viryx",
+				["combat_counter"] = 328,
+				["totals"] = {
+					1793633, -- [1]
+					729236, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 1,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Bracnar"] = 729236.001394,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Bracnar"] = 952203.007893,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 256965.962,
+				["combat_id"] = 200,
+				["instance_type"] = "party",
+				["is_boss"] = {
+					["diff_string"] = "Mythic",
+					["index"] = 1,
+					["zone"] = "Skyreach",
+					["encounter"] = "High Sage Viryx",
+					["mapid"] = 1209,
+					["try_number"] = 2,
+					["name"] = "High Sage Viryx",
+					["id"] = 1701,
+					["ej_instance_id"] = 476,
+					["diff"] = 23,
+				},
+				["frags"] = {
+					["Solar Zealot"] = 1,
+				},
+				["data_fim"] = "22:24:01",
+				["data_inicio"] = "22:23:27",
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					952203, -- [1]
+					729236, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 1,
+					}, -- [4]
+				},
+				["start_time"] = 256931.959,
+				["contra"] = "High Sage Viryx",
 				["TimeData"] = {
 				},
 			}, -- [5]
 		},
 	},
 	["ignore_nicktag"] = false,
-	["nick_tag_cache"] = {
-		["last_version"] = 8,
-		[130950802] = {
-			"Abyssion", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-ArcaneStorm", -- [4]
-			{
-				0.129609375, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			2, -- [7]
-		},
-		["nextreset"] = 1491481283,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
-	["combat_counter"] = 237,
-	["last_encounter"] = "Madness of Deathwing",
+	["combat_counter"] = 335,
+	["force_font_outline"] = "",
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
+			["enabled"] = true,
 			["showamount"] = false,
-			["animate"] = false,
 			["useplayercolor"] = false,
-			["useclasscolors"] = false,
 			["author"] = "Details! Team",
+			["useclasscolors"] = false,
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
+			["animate"] = false,
+		},
+		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
+			["lasttry"] = {
+			},
+			["annouce"] = true,
+			["dpshistory"] = {
+			},
 			["enabled"] = true,
+			["author"] = "Details! Team",
+			["level"] = 1,
+			["dps"] = 0,
 		},
 		["DETAILS_PLUGIN_TIME_ATTACK"] = {
 			["enabled"] = true,
@@ -3581,31 +5456,20 @@ _detalhes_database = {
 			},
 			["time"] = 40,
 			["history_lastindex"] = 0,
-			["realm_lastamt"] = 0,
+			["author"] = "Details! Team",
 			["realm_history"] = {
 			},
-			["author"] = "Details! Team",
-		},
-		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
-			["lasttry"] = {
-			},
-			["annouce"] = true,
-			["dpshistory"] = {
-			},
-			["author"] = "Details! Team",
-			["dps"] = 0,
-			["level"] = 1,
-			["enabled"] = true,
+			["realm_lastamt"] = 0,
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = true,
-			["tank_block_texture"] = "Details Serenity",
 			["tank_block_color"] = {
 				0.24705882, -- [1]
 				0.0039215, -- [2]
 				0, -- [3]
 				0.8, -- [4]
 			},
+			["tank_block_texture"] = "Details Serenity",
 			["show_inc_bars"] = false,
 			["author"] = "Details! Team",
 			["first_run"] = false,
@@ -3618,16 +5482,11 @@ _detalhes_database = {
 			["max_emote_segments"] = 3,
 			["author"] = "Details! Team",
 			["window_scale"] = 1,
-			["hide_on_combat"] = false,
-			["show_icon"] = 5,
-			["opened"] = 0,
 			["encounter_timers_dbm"] = {
 			},
-		},
-		["DETAILS_PLUGIN_DPS_TUNING"] = {
-			["enabled"] = true,
-			["author"] = "Details! Team",
-			["SpellBarsShowType"] = 1,
+			["show_icon"] = 5,
+			["opened"] = 0,
+			["hide_on_combat"] = false,
 		},
 		["DETAILS_PLUGIN_RAIDCHECK"] = {
 			["enabled"] = true,
@@ -3639,6 +5498,11 @@ _detalhes_database = {
 			["pre_pot_healers"] = false,
 			["pre_pot_tanks"] = false,
 			["food_tier3"] = true,
+		},
+		["DETAILS_PLUGIN_DPS_TUNING"] = {
+			["enabled"] = true,
+			["author"] = "Details! Team",
+			["SpellBarsShowType"] = 1,
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["font_color"] = {
@@ -3665,12 +5529,12 @@ _detalhes_database = {
 			},
 			["arrow_anchor_x"] = 0,
 			["row_texture"] = "Details Serenity",
-			["scale"] = 1,
-			["row_height"] = 20,
-			["point"] = "CENTER",
+			["arrow_anchor_y"] = 0,
+			["main_frame_locked"] = false,
+			["main_frame_strata"] = "LOW",
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["author"] = "Details! Team",
+			["use_spark"] = true,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -3678,13 +5542,9 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
+			["y"] = -3.05175781250e-005,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -3692,36 +5552,58 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = -3.05175781250e-005,
 				["x"] = 0,
-				["size"] = 32,
-				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
+				["update_speed"] = 0.05,
+				["size"] = 32,
 			},
-			["font_size"] = 10,
 			["x"] = 0,
 			["font_face"] = "Friz Quadrata TT",
-			["y"] = -3.05175781250e-005,
-			["use_spark"] = true,
-			["main_frame_strata"] = "LOW",
-			["main_frame_locked"] = false,
-			["arrow_anchor_y"] = 0,
+			["font_size"] = 10,
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
+			["point"] = "CENTER",
+			["row_height"] = 20,
+			["scale"] = 1,
 		},
 	},
-	["last_day"] = "22",
+	["last_encounter"] = "The Lich King",
 	["character_data"] = {
-		["logons"] = 11,
+		["logons"] = 12,
 	},
-	["savedbuffs"] = {
-	},
+	["last_day"] = "23",
 	["SoloTablesSaved"] = {
 		["LastSelected"] = "DETAILS_PLUGIN_DAMAGE_RANK",
 		["Mode"] = 1,
 	},
 	["tabela_instancias"] = {
 	},
-	["combat_id"] = 156,
+	["combat_id"] = 206,
 	["savedStyles"] = {
 	},
-	["last_instance_time"] = 1490228400,
+	["cached_talents"] = {
+		["Player-1169-07C70DC2"] = {
+			21973, -- [1]
+			19272, -- [2]
+			22150, -- [3]
+			22137, -- [4]
+			19275, -- [5]
+			22148, -- [6]
+			22353, -- [7]
+		},
+		["Player-1169-06A1ACBD"] = {
+			22269, -- [1]
+			22002, -- [2]
+			22318, -- [3]
+			21997, -- [4]
+			22284, -- [5]
+			21986, -- [6]
+			22280, -- [7]
+		},
+	},
 	["last_version"] = "v7.1.5.3459",
 	["announce_deaths"] = {
 		["enabled"] = false,
@@ -3734,189 +5616,224 @@ _detalhes_database = {
 			["tipo"] = 2,
 			["_ActorTable"] = {
 				{
-					["flag_original"] = 1300,
+					["flag_original"] = 1297,
+					["friendlyfire"] = {
+					},
 					["damage_from"] = {
-						["Deathwing"] = true,
+						["Soaring Chakram Master"] = true,
+						["Arakkoa Magnifying Glass"] = true,
+						["Low-Born Arakkoa"] = true,
+						["Solar Familiar"] = true,
+						["Solar Flare"] = true,
+						["Defense Construct"] = true,
+						["Blinding Solar Flare"] = true,
+						["Skyreach Sun Talon"] = true,
+						["Radiant Supernova"] = true,
+						["Skyreach Raven Whisperer"] = true,
+						["Empowered Construct"] = true,
+						["High Sage Viryx"] = true,
+						["Diving Chakram Spinner"] = true,
+						["Whirling Dervish"] = true,
+						["Skyreach Overlord"] = true,
+						["Dread Raven"] = true,
+						["Rukhran"] = true,
+						["Dread Raven Hatchling"] = true,
 					},
 					["targets"] = {
-						["Deathwing"] = 36404881,
-						["Goriona"] = 0,
-						["Twilight Elite Slayer"] = 0,
-						["Burning Tendons"] = 0,
-						["Corrupted Blood"] = 0,
-						["Morchok"] = 0,
-						["Kohcrom <Morchok>"] = 0,
-						["Warmaster Blackhorn"] = 0,
-						["Wing Tentacle"] = 23349820,
-						["Twilight Assault Drake"] = 0,
-						["Hideous Amalgamation"] = 0,
-						["Twilight Elite Dreadblade"] = 0,
-						["Twilight Sapper"] = 0,
-						["Corruption"] = 0,
-						["Mutated Corruption"] = 5339042,
-						["Arm Tentacle"] = 21591486,
+						["Blooded Bladefeather"] = 1054903,
+						["Skyreach Overlord"] = 1618274,
+						["Empowered Construct"] = 3013385,
+						["Low-Born Arakkoa"] = 2716434,
+						["Pile of Ash"] = 450694,
+						["Solar Familiar"] = 668413,
+						["Solar Flare"] = 26562244,
+						["Defense Construct"] = 1384195,
+						["Blinding Solar Flare"] = 846313,
+						["Ranjit"] = 7845538,
+						["Skyreach Sun Talon"] = 8648418,
+						["Radiant Supernova"] = 973985,
+						["Skyreach Raven Whisperer"] = 1433780,
+						["Solar Magnifier"] = 1391152,
+						["Solar Zealot"] = 1874676,
+						["High Sage Viryx"] = 765307,
+						["Rukhran"] = 7817129,
+						["Dread Raven"] = 2675771,
+						["Diving Chakram Spinner"] = 1220964,
+						["Soaring Chakram Master"] = 2705371,
+						["Life-Pact Familiar"] = 497767,
+						["Whirling Dervish"] = 908585,
+						["Dread Raven Hatchling"] = 5841059,
+						["Araknath"] = 7116925,
 					},
-					["delay"] = 0,
 					["pets"] = {
 						"Chromaggus <Bracnar> <Bracnar>", -- [1]
 						"Hati <Bracnar> <Bracnar>", -- [2]
+						"Beast <Bracnar> <Bracnar>", -- [3]
 					},
+					["last_event"] = 0,
+					["classe"] = "HUNTER",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 53171050.061982,
+					["friendlyfire_total"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1490320768,
+					["on_hold"] = false,
+					["spec"] = 253,
+					["nome"] = "Bracnar",
 					["spells"] = {
+						["tipo"] = 2,
 						["_ActorTable"] = {
-							[193455] = {
-								["c_amt"] = 2,
+							[120361] = {
+								["c_amt"] = 87,
 								["b_amt"] = 0,
-								["c_dmg"] = 19782462,
+								["c_dmg"] = 9943329,
 								["g_amt"] = 0,
-								["n_max"] = 4654698,
+								["n_max"] = 58634,
 								["targets"] = {
-									["Deathwing"] = 4654697,
-									["Twilight Elite Slayer"] = 0,
-									["Burning Tendons"] = 0,
-									["Corrupted Blood"] = 0,
-									["Kohcrom <Morchok>"] = 0,
-									["Wing Tentacle"] = 19596274,
-									["Twilight Assault Drake"] = 0,
-									["Goriona"] = 0,
-									["Hideous Amalgamation"] = 0,
-									["Twilight Elite Dreadblade"] = 0,
-									["Morchok"] = 0,
-									["Corruption"] = 0,
-									["Mutated Corruption"] = 4654698,
-									["Arm Tentacle"] = 13762388,
+									["Blooded Bladefeather"] = 228730,
+									["Skyreach Overlord"] = 686192,
+									["Radiant Supernova"] = 471412,
+									["Low-Born Arakkoa"] = 1881932,
+									["Skyreach Sun Talon"] = 2282778,
+									["Dread Raven"] = 392686,
+									["Solar Familiar"] = 627309,
+									["Rukhran"] = 1330182,
+									["Pile of Ash"] = 450694,
+									["Diving Chakram Spinner"] = 398582,
+									["Skyreach Raven Whisperer"] = 392685,
+									["Life-Pact Familiar"] = 56616,
+									["Solar Flare"] = 15283477,
+									["Defense Construct"] = 398580,
+									["Dread Raven Hatchling"] = 1653200,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 22885595,
+								["n_dmg"] = 16591726,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 7,
-								["total"] = 42668057,
-								["c_max"] = 10286879,
+								["counter"] = 383,
+								["total"] = 26535055,
+								["c_max"] = 119612,
+								["id"] = 120361,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 296,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							[193455] = {
+								["c_amt"] = 5,
+								["b_amt"] = 0,
+								["c_dmg"] = 2493405,
+								["g_amt"] = 0,
+								["n_max"] = 351037,
+								["targets"] = {
+									["Ranjit"] = 1404148,
+									["Skyreach Overlord"] = 254781,
+									["Empowered Construct"] = 888317,
+									["Solar Zealot"] = 1690153,
+									["Soaring Chakram Master"] = 764343,
+									["Diving Chakram Spinner"] = 276013,
+									["Rukhran"] = 948194,
+									["Whirling Dervish"] = 263856,
+									["Araknath"] = 1907929,
+									["High Sage Viryx"] = 618387,
+									["Blinding Solar Flare"] = 263856,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 6786572,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 32,
+								["total"] = 9279977,
+								["c_max"] = 546654,
 								["id"] = 193455,
 								["r_dmg"] = 0,
-								["c_min"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 5,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["n_amt"] = 27,
+								["r_amt"] = 0,
+								["c_min"] = 0,
 							},
 							[75] = {
-								["c_amt"] = 2,
+								["c_amt"] = 13,
 								["b_amt"] = 0,
-								["c_dmg"] = 2792122,
+								["c_dmg"] = 1003866,
 								["g_amt"] = 0,
-								["n_max"] = 684344,
+								["n_max"] = 47641,
 								["targets"] = {
-									["Corruption"] = 0,
-									["Twilight Elite Slayer"] = 0,
-									["Burning Tendons"] = 0,
-									["Corrupted Blood"] = 0,
-									["Morchok"] = 0,
-									["Goriona"] = 0,
-									["Wing Tentacle"] = 2080404,
-									["Hideous Amalgamation"] = 0,
-									["Twilight Assault Drake"] = 0,
-									["Twilight Sapper"] = 0,
-									["Twilight Elite Dreadblade"] = 0,
-									["Arm Tentacle"] = 2080404,
-									["Mutated Corruption"] = 684344,
+									["Solar Zealot"] = 184523,
+									["Ranjit"] = 228833,
+									["Skyreach Overlord"] = 113873,
+									["Empowered Construct"] = 270633,
+									["Dread Raven"] = 73808,
+									["High Sage Viryx"] = 146920,
+									["Soaring Chakram Master"] = 74917,
+									["Rukhran"] = 292386,
+									["Araknath"] = 257476,
+									["Dread Raven Hatchling"] = 37459,
+									["Diving Chakram Spinner"] = 37459,
+									["Skyreach Sun Talon"] = 74916,
+									["Whirling Dervish"] = 38793,
+									["Solar Flare"] = 854706,
+									["Defense Construct"] = 113874,
+									["Blinding Solar Flare"] = 38792,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 2053030,
+								["n_dmg"] = 1835502,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 5,
-								["total"] = 4845152,
-								["c_max"] = 1396061,
+								["counter"] = 62,
+								["total"] = 2839368,
+								["c_max"] = 97186,
 								["id"] = 75,
 								["r_dmg"] = 0,
-								["c_min"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 3,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							[201360] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 5556004,
-								["targets"] = {
-									["Deathwing"] = 5556004,
-									["Morchok"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 5556004,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 5556004,
-								["c_max"] = 0,
-								["id"] = 201360,
-								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
+								["n_amt"] = 49,
 								["r_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 1,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							[131900] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 1673142,
-								["targets"] = {
-									["Wing Tentacle"] = 1673142,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 1673142,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 1673142,
-								["c_max"] = 0,
-								["id"] = 131900,
-								["r_dmg"] = 0,
 								["c_min"] = 0,
-								["m_crit"] = 0,
-								["r_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 1,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
 							},
 							[2643] = {
-								["c_amt"] = 0,
+								["c_amt"] = 54,
 								["b_amt"] = 0,
-								["c_dmg"] = 0,
+								["c_dmg"] = 4472226,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["n_max"] = 42568,
 								["targets"] = {
-									["Corrupted Blood"] = 0,
+									["Skyreach Sun Talon"] = 1489615,
+									["Radiant Supernova"] = 85136,
+									["Low-Born Arakkoa"] = 123312,
+									["Solar Magnifier"] = 83852,
+									["Rukhran"] = 79812,
+									["Skyreach Raven Whisperer"] = 80992,
+									["Solar Familiar"] = 41104,
+									["Dread Raven"] = 40497,
+									["Life-Pact Familiar"] = 41105,
+									["Solar Flare"] = 7605200,
+									["Defense Construct"] = 82209,
+									["Dread Raven Hatchling"] = 455434,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 0,
+								["n_dmg"] = 5736042,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
+								["counter"] = 195,
+								["total"] = 10208268,
+								["c_max"] = 83853,
 								["id"] = 2643,
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
@@ -3925,27 +5842,30 @@ _detalhes_database = {
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 0,
+								["n_amt"] = 141,
 								["r_amt"] = 0,
 								["c_min"] = 0,
 							},
-							[2] = {
-								["c_amt"] = 0,
+							[197465] = {
+								["c_amt"] = 10,
 								["b_amt"] = 0,
-								["c_dmg"] = 0,
+								["c_dmg"] = 1479646,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["n_max"] = 72532,
 								["targets"] = {
-									["Goriona"] = 0,
+									["Skyreach Raven Whisperer"] = 145064,
+									["Rukhran"] = 1682737,
+									["Skyreach Sun Talon"] = 1679832,
+									["Dread Raven Hatchling"] = 800749,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 0,
+								["n_dmg"] = 2828736,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 2,
+								["counter"] = 49,
+								["total"] = 4308382,
+								["c_max"] = 147965,
+								["id"] = 197465,
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
@@ -3953,721 +5873,92 @@ _detalhes_database = {
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 0,
+								["n_amt"] = 39,
 								["r_amt"] = 0,
 								["c_min"] = 0,
 							},
 						},
-						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
-					["classe"] = "HUNTER",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 54742355.006556,
-					["nome"] = "Bracnar",
-					["dps_started"] = false,
-					["end_time"] = 1490229875,
-					["damage_taken"] = 2387.006556,
-					["tipo"] = 1,
-					["boss_fight_component"] = true,
-					["spec"] = 253,
 					["grupo"] = true,
-					["friendlyfire_total"] = 0,
-					["total"] = 86685229.006556,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1490229838,
+					["total"] = 90031282.061982,
 					["serial"] = "Player-1169-06A1ACBD",
-					["friendlyfire"] = {
-						["Bracnar"] = {
-							["spells"] = {
-								[106201] = 0,
-							},
-							["total"] = 0,
-						},
-					},
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 18138661.061982,
+					["start_time"] = 1490320521,
+					["delay"] = 0,
+					["last_dps"] = 0,
 				}, -- [1]
 				{
 					["flag_original"] = 4369,
 					["damage_from"] = {
+						["Diving Chakram Spinner"] = true,
+						["Ranjit"] = true,
 					},
 					["targets"] = {
-						["Arm Tentacle"] = 5748694,
-						["Deathwing"] = 21923496,
+						["Blooded Bladefeather"] = 826173,
+						["Ranjit"] = 3752185,
+						["Skyreach Overlord"] = 414698,
+						["Low-Born Arakkoa"] = 472943,
+						["Dread Raven Hatchling"] = 1535816,
+						["Skyreach Raven Whisperer"] = 595245,
+						["Diving Chakram Spinner"] = 432429,
+						["Skyreach Sun Talon"] = 2310219,
+						["Araknath"] = 2862006,
+						["Whirling Dervish"] = 206406,
+						["Soaring Chakram Master"] = 779504,
+						["Blinding Solar Flare"] = 422838,
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
-					["tipo"] = 1,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["classe"] = "PET",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 27672190.017738,
-					["delay"] = 0,
+					["total_without_pet"] = 14610462.035356,
+					["damage_taken"] = 146975.035356,
 					["dps_started"] = false,
-					["end_time"] = 1490229875,
+					["end_time"] = 1490321175,
+					["serial"] = "Pet-0-3881-1209-14172-14020-0201EE046B",
+					["ownerName"] = "Bracnar",
 					["nome"] = "Chromaggus <Bracnar> <Bracnar>",
-					["ownerName"] = "Bracnar",
-					["boss_fight_component"] = true,
-					["spells"] = {
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 1,
-								["b_amt"] = 0,
-								["c_dmg"] = 1197898,
-								["g_amt"] = 0,
-								["n_max"] = 598949,
-								["targets"] = {
-									["Arm Tentacle"] = 598949,
-									["Deathwing"] = 1796847,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 1197898,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 3,
-								["total"] = 2395796,
-								["c_max"] = 1197898,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["r_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 2,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							}, -- [1]
-							[17253] = {
-								["c_amt"] = 2,
-								["b_amt"] = 0,
-								["c_dmg"] = 10182718,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Arm Tentacle"] = 5149745,
-									["Deathwing"] = 5032973,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 2,
-								["total"] = 10182718,
-								["c_max"] = 5149745,
-								["id"] = 17253,
-								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["r_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							[83381] = {
-								["c_amt"] = 1,
-								["b_amt"] = 0,
-								["c_dmg"] = 15093676,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Deathwing"] = 15093676,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 15093676,
-								["c_max"] = 15093676,
-								["id"] = 83381,
-								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["r_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["damage_taken"] = 0.017738,
 					["friendlyfire_total"] = 0,
-					["total"] = 27672190.017738,
-					["custom"] = 0,
-					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
-					["start_time"] = 1490229868,
-					["serial"] = "Pet-0-3777-967-13751-14020-0701EE046B",
-					["on_hold"] = false,
-				}, -- [2]
-				{
-					["flag_original"] = 68168,
-					["damage_from"] = {
-						["Chromaggus <Bracnar>"] = true,
-						["Bracnar"] = true,
-					},
-					["targets"] = {
-						["Deathwing"] = 14112354,
-					},
-					["pets"] = {
-					},
-					["last_dps"] = 0,
-					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 14112354.006114,
-					["delay"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1490229875,
-					["nome"] = "Arm Tentacle",
-					["damage_taken"] = 21591486.006114,
-					["boss_fight_component"] = true,
-					["spells"] = {
-						["_ActorTable"] = {
-							[105401] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 105401,
-								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["r_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 1,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							[106548] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 7056177,
-								["targets"] = {
-									["Deathwing"] = 14112354,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 14112354,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 2,
-								["total"] = 14112354,
-								["c_max"] = 0,
-								["id"] = 106548,
-								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["r_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 2,
-								["b_dmg"] = 0,
-								["n_amt"] = 2,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
+					["total"] = 14610462.035356,
+					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire_total"] = 0,
-					["total"] = 14112354.006114,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1490229871,
-					["serial"] = "Vehicle-0-3777-967-13751-56846-0000531A32",
-					["friendlyfire"] = {
-					},
-				}, -- [3]
-				{
-					["flag_original"] = 68168,
-					["damage_from"] = {
-						["Bracnar"] = true,
-					},
-					["targets"] = {
-						["Deathwing"] = 14112354,
-					},
-					["pets"] = {
-					},
 					["last_dps"] = 0,
-					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 14112354.008922,
+					["start_time"] = 1490321164,
 					["delay"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1490229875,
-					["nome"] = "Wing Tentacle",
-					["damage_taken"] = 23349820.008922,
-					["boss_fight_component"] = true,
-					["spells"] = {
-						["_ActorTable"] = {
-							[105401] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 105401,
-								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["r_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 2,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							[106548] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 7056177,
-								["targets"] = {
-									["Deathwing"] = 14112354,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 14112354,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 2,
-								["total"] = 14112354,
-								["c_max"] = 0,
-								["id"] = 106548,
-								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["r_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 2,
-								["b_dmg"] = 0,
-								["n_amt"] = 2,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["tipo"] = 1,
-					["friendlyfire_total"] = 0,
-					["total"] = 14112354.008922,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1490229871,
-					["serial"] = "Vehicle-0-3777-967-13751-56168-0000531A32",
-					["friendlyfire"] = {
-					},
-				}, -- [4]
-				{
-					["flag_original"] = 8465,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Deathwing"] = 4270684,
-					},
-					["pets"] = {
-					},
-					["last_dps"] = 0,
-					["tipo"] = 1,
-					["classe"] = "PET",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 4270684.017225,
-					["delay"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1490229875,
-					["nome"] = "Hati <Bracnar> <Bracnar>",
-					["ownerName"] = "Bracnar",
-					["boss_fight_component"] = true,
-					["spells"] = {
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 679298,
-								["targets"] = {
-									["Deathwing"] = 2037892,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 2037892,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 3,
-								["total"] = 2037892,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["r_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 3,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							}, -- [1]
-							[83381] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 2232792,
-								["targets"] = {
-									["Deathwing"] = 2232792,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 2232792,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 2232792,
-								["c_max"] = 0,
-								["id"] = 83381,
-								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["r_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 1,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["damage_taken"] = 0.017225,
-					["friendlyfire_total"] = 0,
-					["total"] = 4270684.017225,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
-					["start_time"] = 1490229869,
-					["serial"] = "Creature-0-3777-967-13751-106551-0000531A3A",
-					["on_hold"] = false,
-				}, -- [5]
-				{
-					["flag_original"] = 2632,
-					["damage_from"] = {
-						["Wing Tentacle"] = true,
-						["Chromaggus <Bracnar>"] = true,
-						["Hati <Bracnar>"] = true,
-						["Arm Tentacle"] = true,
-						["Bracnar"] = true,
-					},
-					["targets"] = {
-						["Bracnar"] = 2387,
-					},
-					["last_dps"] = 0,
-					["pets"] = {
-					},
-					["boss"] = true,
-					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 2387.015731,
-					["delay"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1490229875,
-					["nome"] = "Deathwing",
-					["damage_taken"] = 64629589.015731,
-					["boss_fight_component"] = true,
-					["spells"] = {
-						["_ActorTable"] = {
-							[107018] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 107018,
-								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["r_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 2,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							[106835] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 2188,
-								["targets"] = {
-									["Bracnar"] = 2387,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 2387,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 4,
-								["total"] = 2387,
-								["c_max"] = 0,
-								["id"] = 106835,
-								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["r_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 4,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["tipo"] = 1,
-					["friendlyfire_total"] = 0,
-					["total"] = 2387.015731,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1490229865,
-					["serial"] = "Vehicle-0-3777-967-13751-56173-0000531A32",
-					["friendlyfire"] = {
-					},
-				}, -- [6]
-				{
-					["flag_original"] = 68168,
-					["damage_from"] = {
-						["Bracnar"] = true,
-					},
-					["targets"] = {
-					},
-					["pets"] = {
-					},
-					["last_dps"] = 0,
-					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.015214,
-					["delay"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1490229875,
-					["nome"] = "Mutated Corruption",
-					["damage_taken"] = 5339042.015214,
-					["boss_fight_component"] = true,
-					["spells"] = {
-						["_ActorTable"] = {
-							[106400] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 106400,
-								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["r_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 1,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["tipo"] = 1,
-					["friendlyfire_total"] = 0,
-					["total"] = 0.015214,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1490229872,
-					["serial"] = "Creature-0-3777-967-13751-56471-0000531A39",
-					["friendlyfire"] = {
-					},
-				}, -- [7]
-				{
-					["flag_original"] = 2632,
-					["damage_from"] = {
-					},
-					["targets"] = {
-					},
-					["pets"] = {
-					},
-					["last_dps"] = 0,
-					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.002317,
-					["delay"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1490229875,
-					["nome"] = "Blistering Tentacle",
-					["damage_taken"] = 0.002317,
-					["boss_fight_component"] = true,
-					["spells"] = {
-						["_ActorTable"] = {
-							[105444] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 105444,
-								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["r_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 14,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["tipo"] = 1,
-					["friendlyfire_total"] = 0,
-					["total"] = 0.002317,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1490229872,
-					["serial"] = "Creature-0-3777-967-13751-56188-0000D31A37",
-					["friendlyfire"] = {
-					},
-				}, -- [8]
-				{
-					["flag_original"] = 4369,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Twilight Elite Dreadblade"] = 0,
-						["Kohcrom <Morchok>"] = 0,
-						["Twilight Elite Slayer"] = 0,
-						["Twilight Assault Drake"] = 0,
-						["Morchok"] = 0,
-						["Deathwing"] = 0,
-						["Arm Tentacle"] = 0,
-						["Warmaster Blackhorn"] = 0,
-					},
-					["pets"] = {
-					},
-					["classe"] = "PET",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.00758,
-					["boss_fight_component"] = true,
-					["dps_started"] = false,
-					["end_time"] = 1490236980,
-					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
-					["nome"] = "Chromaggus <Bracnar>",
 					["spells"] = {
 						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
-								["c_amt"] = 0,
+								["c_amt"] = 15,
 								["b_amt"] = 0,
-								["c_dmg"] = 0,
+								["c_dmg"] = 1081728,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["n_max"] = 41696,
 								["targets"] = {
-									["Warmaster Blackhorn"] = 0,
-									["Twilight Assault Drake"] = 0,
-									["Morchok"] = 0,
-									["Arm Tentacle"] = 0,
-									["Deathwing"] = 0,
+									["Ranjit"] = 480612,
+									["Skyreach Overlord"] = 163921,
+									["Low-Born Arakkoa"] = 131137,
+									["Whirling Dervish"] = 67904,
+									["Skyreach Raven Whisperer"] = 161497,
+									["Skyreach Sun Talon"] = 229491,
+									["Diving Chakram Spinner"] = 98353,
+									["Araknath"] = 462035,
+									["Blinding Solar Flare"] = 106537,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 0,
+								["n_dmg"] = 819759,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
+								["counter"] = 39,
+								["total"] = 1901487,
+								["c_max"] = 83391,
 								["id"] = 1,
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
@@ -4676,27 +5967,27 @@ _detalhes_database = {
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 0,
+								["n_amt"] = 24,
 								["r_amt"] = 0,
 								["c_min"] = 0,
 							}, -- [1]
 							[207097] = {
-								["c_amt"] = 0,
+								["c_amt"] = 1,
 								["b_amt"] = 0,
-								["c_dmg"] = 0,
+								["c_dmg"] = 78858,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["n_max"] = 39429,
 								["targets"] = {
-									["Morchok"] = 0,
-									["Kohcrom <Morchok>"] = 0,
+									["Diving Chakram Spinner"] = 34652,
+									["Araknath"] = 350084,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 0,
+								["n_dmg"] = 305878,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
+								["counter"] = 9,
+								["total"] = 384736,
+								["c_max"] = 78858,
 								["id"] = 207097,
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
@@ -4705,30 +5996,30 @@ _detalhes_database = {
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 0,
+								["n_amt"] = 8,
 								["r_amt"] = 0,
 								["c_min"] = 0,
 							},
 							[83381] = {
-								["c_amt"] = 0,
+								["c_amt"] = 4,
 								["b_amt"] = 0,
-								["c_dmg"] = 0,
+								["c_dmg"] = 3615740,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["n_max"] = 525370,
 								["targets"] = {
-									["Warmaster Blackhorn"] = 0,
-									["Twilight Elite Slayer"] = 0,
-									["Morchok"] = 0,
-									["Kohcrom <Morchok>"] = 0,
-									["Deathwing"] = 0,
+									["Blooded Bladefeather"] = 826173,
+									["Ranjit"] = 2502523,
+									["Soaring Chakram Master"] = 470029,
+									["Skyreach Sun Talon"] = 826173,
+									["Araknath"] = 1368984,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 0,
+								["n_dmg"] = 2378142,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
+								["counter"] = 9,
+								["total"] = 5993882,
+								["c_max"] = 1050738,
 								["id"] = 83381,
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
@@ -4737,27 +6028,29 @@ _detalhes_database = {
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 0,
+								["n_amt"] = 5,
 								["r_amt"] = 0,
 								["c_min"] = 0,
 							},
-							[160124] = {
+							[118459] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["n_max"] = 224547,
 								["targets"] = {
-									["Warmaster Blackhorn"] = 0,
+									["Low-Born Arakkoa"] = 218511,
+									["Skyreach Sun Talon"] = 734376,
+									["Dread Raven Hatchling"] = 1535816,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 0,
+								["n_dmg"] = 2488703,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
+								["counter"] = 32,
+								["total"] = 2488703,
 								["c_max"] = 0,
-								["id"] = 160124,
+								["id"] = 118459,
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
@@ -4765,31 +6058,35 @@ _detalhes_database = {
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 0,
+								["n_amt"] = 32,
 								["r_amt"] = 0,
 								["c_min"] = 0,
 							},
 							[17253] = {
-								["c_amt"] = 0,
+								["c_amt"] = 6,
 								["b_amt"] = 0,
-								["c_dmg"] = 0,
+								["c_dmg"] = 1748752,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["n_max"] = 200782,
 								["targets"] = {
-									["Twilight Elite Dreadblade"] = 0,
-									["Twilight Assault Drake"] = 0,
-									["Morchok"] = 0,
-									["Deathwing"] = 0,
-									["Arm Tentacle"] = 0,
-									["Warmaster Blackhorn"] = 0,
+									["Ranjit"] = 769050,
+									["Skyreach Overlord"] = 250777,
+									["Low-Born Arakkoa"] = 123295,
+									["Skyreach Raven Whisperer"] = 433748,
+									["Whirling Dervish"] = 138502,
+									["Skyreach Sun Talon"] = 520179,
+									["Araknath"] = 480380,
+									["Diving Chakram Spinner"] = 299424,
+									["Soaring Chakram Master"] = 309475,
+									["Blinding Solar Flare"] = 316301,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 0,
+								["n_dmg"] = 1892379,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
+								["counter"] = 19,
+								["total"] = 3641131,
+								["c_max"] = 342854,
 								["id"] = 17253,
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
@@ -4798,7 +6095,7 @@ _detalhes_database = {
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 0,
+								["n_amt"] = 13,
 								["r_amt"] = 0,
 								["c_min"] = 0,
 							},
@@ -4807,16 +6104,16 @@ _detalhes_database = {
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["n_max"] = 200523,
 								["targets"] = {
-									["Morchok"] = 0,
+									["Araknath"] = 200523,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 0,
+								["n_dmg"] = 200523,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
+								["counter"] = 1,
+								["total"] = 200523,
 								["c_max"] = 0,
 								["id"] = 197163,
 								["r_dmg"] = 0,
@@ -4826,68 +6123,81 @@ _detalhes_database = {
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 0,
+								["n_amt"] = 1,
 								["r_amt"] = 0,
 								["c_min"] = 0,
 							},
 						},
 					},
-					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.00758,
-					["serial"] = "Pet-0-3777-967-13751-14020-0701EE046B",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.00758,
-					["start_time"] = 1490236977,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [9]
+				}, -- [2]
 				{
 					["flag_original"] = 8465,
 					["damage_from"] = {
+						["Rukhran"] = true,
+						["Solar Flare"] = true,
 					},
 					["targets"] = {
-						["Deathwing"] = 0,
-						["Morchok"] = 0,
-						["Twilight Elite Slayer"] = 0,
-						["Warmaster Blackhorn"] = 0,
+						["Skyreach Overlord"] = 148730,
+						["Low-Born Arakkoa"] = 238247,
+						["Whirling Dervish"] = 77013,
+						["Defense Construct"] = 148729,
+						["Blinding Solar Flare"] = 120827,
+						["Ranjit"] = 1168368,
+						["Skyreach Sun Talon"] = 811058,
+						["Radiant Supernova"] = 178902,
+						["Skyreach Raven Whisperer"] = 219794,
+						["Solar Magnifier"] = 351456,
+						["Dread Raven"] = 628086,
+						["Diving Chakram Spinner"] = 76481,
+						["Soaring Chakram Master"] = 357614,
+						["Life-Pact Familiar"] = 151777,
+						["Rukhran"] = 551832,
+						["Dread Raven Hatchling"] = 1358401,
+						["Araknath"] = 1151851,
 					},
+					["last_event"] = 0,
 					["pets"] = {
+					},
+					["friendlyfire"] = {
 					},
 					["classe"] = "PET",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 0.007134,
-					["boss_fight_component"] = true,
+					["total_without_pet"] = 7739166.034397,
+					["damage_taken"] = 331477.034397,
 					["dps_started"] = false,
-					["end_time"] = 1490236980,
-					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
-					["nome"] = "Hati <Bracnar>",
+					["end_time"] = 1490321906,
 					["spells"] = {
 						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
-								["c_amt"] = 0,
+								["c_amt"] = 14,
 								["b_amt"] = 0,
-								["c_dmg"] = 0,
+								["c_dmg"] = 1069730,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["n_max"] = 47289,
 								["targets"] = {
-									["Deathwing"] = 0,
-									["Morchok"] = 0,
-									["Twilight Elite Slayer"] = 0,
-									["Warmaster Blackhorn"] = 0,
+									["Ranjit"] = 272541,
+									["Skyreach Overlord"] = 148730,
+									["Low-Born Arakkoa"] = 74365,
+									["Soaring Chakram Master"] = 79490,
+									["Dread Raven"] = 183161,
+									["Rukhran"] = 433180,
+									["Skyreach Raven Whisperer"] = 219794,
+									["Whirling Dervish"] = 77013,
+									["Skyreach Sun Talon"] = 260276,
+									["Araknath"] = 400792,
+									["Diving Chakram Spinner"] = 37182,
+									["Defense Construct"] = 148729,
+									["Blinding Solar Flare"] = 120827,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 0,
+								["n_dmg"] = 1386350,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
+								["counter"] = 50,
+								["total"] = 2456080,
+								["c_max"] = 94577,
 								["id"] = 1,
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
@@ -4896,28 +6206,93 @@ _detalhes_database = {
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 0,
+								["n_amt"] = 36,
 								["r_amt"] = 0,
 								["c_min"] = 0,
 							}, -- [1]
-							[83381] = {
+							[207097] = {
+								["c_amt"] = 3,
+								["b_amt"] = 0,
+								["c_dmg"] = 257462,
+								["g_amt"] = 0,
+								["n_max"] = 44717,
+								["targets"] = {
+									["Diving Chakram Spinner"] = 39299,
+									["Araknath"] = 481043,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 262880,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 9,
+								["total"] = 520342,
+								["c_max"] = 89432,
+								["id"] = 207097,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 6,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							[118459] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["n_max"] = 168410,
 								["targets"] = {
-									["Warmaster Blackhorn"] = 0,
-									["Morchok"] = 0,
-									["Deathwing"] = 0,
+									["Life-Pact Familiar"] = 151777,
+									["Skyreach Sun Talon"] = 550782,
+									["Radiant Supernova"] = 178902,
+									["Dread Raven"] = 204110,
+									["Solar Magnifier"] = 351456,
+									["Low-Born Arakkoa"] = 163882,
+									["Dread Raven Hatchling"] = 1358401,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 0,
+								["n_dmg"] = 2959310,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
+								["counter"] = 45,
+								["total"] = 2959310,
 								["c_max"] = 0,
+								["id"] = 118459,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 45,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							[83381] = {
+								["c_amt"] = 4,
+								["b_amt"] = 0,
+								["c_dmg"] = 1099825,
+								["g_amt"] = 0,
+								["n_max"] = 155435,
+								["targets"] = {
+									["Ranjit"] = 740392,
+									["Soaring Chakram Master"] = 278124,
+									["Dread Raven"] = 240815,
+									["Rukhran"] = 118652,
+									["Araknath"] = 270016,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 548174,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 8,
+								["total"] = 1647999,
+								["c_max"] = 310870,
 								["id"] = 83381,
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
@@ -4926,26 +6301,167 @@ _detalhes_database = {
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 0,
+								["n_amt"] = 4,
 								["r_amt"] = 0,
 								["c_min"] = 0,
 							},
-							[207097] = {
+							[197163] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["n_max"] = 155435,
 								["targets"] = {
-									["Morchok"] = 0,
+									["Ranjit"] = 155435,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 0,
+								["n_dmg"] = 155435,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
+								["counter"] = 1,
+								["total"] = 155435,
 								["c_max"] = 0,
+								["id"] = 197163,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 1,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+						},
+					},
+					["ownerName"] = "Bracnar",
+					["nome"] = "Hati <Bracnar> <Bracnar>",
+					["friendlyfire_total"] = 0,
+					["on_hold"] = false,
+					["total"] = 7739166.034397,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1490321886,
+					["delay"] = 0,
+					["serial"] = "Creature-0-3881-1209-14172-106551-0000547D6C",
+				}, -- [3]
+				{
+					["flag_original"] = 8465,
+					["damage_from"] = {
+						["Dread Raven"] = true,
+						["Solar Flare"] = true,
+					},
+					["targets"] = {
+						["Solar Magnifier"] = 633715,
+						["Ranjit"] = 1292004,
+						["Whirling Dervish"] = 322517,
+						["Empowered Construct"] = 426811,
+						["Dread Raven"] = 362118,
+						["Solar Flare"] = 2818861,
+						["Defense Construct"] = 266160,
+						["Araknath"] = 937663,
+					},
+					["pets"] = {
+					},
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 7059849.031477,
+					["classe"] = "PET",
+					["dps_started"] = false,
+					["end_time"] = 1490322364,
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 6,
+								["b_amt"] = 0,
+								["c_dmg"] = 696390,
+								["g_amt"] = 0,
+								["n_max"] = 73829,
+								["targets"] = {
+									["Ranjit"] = 516799,
+									["Whirling Dervish"] = 46877,
+									["Empowered Construct"] = 155203,
+									["Dread Raven"] = 99894,
+									["Solar Flare"] = 399576,
+									["Solar Magnifier"] = 101394,
+									["Araknath"] = 385240,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 1008593,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 24,
+								["total"] = 1704983,
+								["c_max"] = 147657,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 18,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							}, -- [1]
+							[201754] = {
+								["c_amt"] = 3,
+								["b_amt"] = 0,
+								["c_dmg"] = 1831974,
+								["g_amt"] = 0,
+								["n_max"] = 294021,
+								["targets"] = {
+									["Solar Magnifier"] = 532321,
+									["Ranjit"] = 775205,
+									["Whirling Dervish"] = 275640,
+									["Empowered Construct"] = 271608,
+									["Dread Raven"] = 262224,
+									["Solar Flare"] = 2097792,
+									["Defense Construct"] = 266160,
+									["Araknath"] = 552423,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 3201399,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 15,
+								["total"] = 5033373,
+								["c_max"] = 775205,
+								["id"] = 201754,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 12,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							[207097] = {
+								["c_amt"] = 1,
+								["b_amt"] = 0,
+								["c_dmg"] = 107164,
+								["g_amt"] = 0,
+								["n_max"] = 53583,
+								["targets"] = {
+									["Solar Flare"] = 321493,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 214329,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 5,
+								["total"] = 321493,
+								["c_max"] = 107164,
 								["id"] = 207097,
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
@@ -4954,20 +6470,742 @@ _detalhes_database = {
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
+								["n_amt"] = 4,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+						},
+					},
+					["ownerName"] = "Bracnar",
+					["nome"] = "Beast <Bracnar> <Bracnar>",
+					["friendlyfire"] = {
+					},
+					["total"] = 7059849.031477,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["damage_taken"] = 52265.031477,
+					["start_time"] = 1490322356,
+					["delay"] = 0,
+					["serial"] = "Creature-0-3881-1209-14172-86177-0000547D7B",
+				}, -- [4]
+				{
+					["flag_original"] = 68168,
+					["damage_from"] = {
+						["Bracnar"] = true,
+						["Hati <Bracnar>"] = true,
+						["Chromaggus <Bracnar>"] = true,
+						["Beast <Bracnar>"] = true,
+					},
+					["targets"] = {
+						["Chromaggus <Bracnar>"] = 99925,
+					},
+					["pets"] = {
+					},
+					["on_hold"] = false,
+					["boss_fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 99925.007129,
+					["last_event"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1490320828,
+					["friendlyfire"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["nome"] = "Ranjit",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 72149,
+								["targets"] = {
+									["Chromaggus"] = 0,
+									["Chromaggus <Bracnar>"] = 99925,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 99925,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 7,
+								["a_amt"] = 0,
+								["total"] = 99925,
+								["c_max"] = 0,
+								["DODGE"] = 2,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["MISS"] = 1,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["PARRY"] = 2,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 2,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							}, -- [1]
+							[153544] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 153544,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 1,
+								["b_dmg"] = 0,
 								["n_amt"] = 0,
 								["r_amt"] = 0,
 								["c_min"] = 0,
 							},
 						},
 					},
-					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.007134,
-					["serial"] = "Creature-0-3777-967-13751-106551-0000531A3A",
+					["monster"] = true,
+					["total"] = 99925.007129,
+					["serial"] = "Creature-0-3881-1209-14172-75964-0000547D38",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.007134,
-					["start_time"] = 1490236977,
+					["damage_taken"] = 7845538.007129,
+					["start_time"] = 1490320814,
+					["delay"] = 0,
+					["last_dps"] = 0,
+				}, -- [5]
+				{
+					["flag_original"] = 68168,
+					["damage_from"] = {
+						["Hati <Bracnar>"] = true,
+						["Bracnar"] = true,
+						["Chromaggus <Bracnar>"] = true,
+						["Beast <Bracnar>"] = true,
+					},
+					["targets"] = {
+					},
+					["pets"] = {
+					},
+					["on_hold"] = false,
+					["boss_fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.009625,
+					["last_event"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1490321117,
+					["friendlyfire"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["nome"] = "Araknath",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Chromaggus"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 4,
+								["a_amt"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["DODGE"] = 2,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["MISS"] = 1,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["PARRY"] = 1,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							}, -- [1]
+							[154121] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Chromaggus"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 5,
+								["a_amt"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["MISS"] = 1,
+								["id"] = 154121,
+								["r_dmg"] = 0,
+								["DODGE"] = 1,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["PARRY"] = 3,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							[154113] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 154113,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 1,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+						},
+					},
+					["monster"] = true,
+					["total"] = 0.009625,
+					["serial"] = "Creature-0-3881-1209-14172-76141-0000547DB7",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 7116925.009625,
+					["start_time"] = 1490321114,
+					["delay"] = 0,
+					["last_dps"] = 0,
+				}, -- [6]
+				{
+					["flag_original"] = 68168,
+					["damage_from"] = {
+						["Bracnar"] = true,
+						["Chromaggus <Bracnar>"] = true,
+						["Hati <Bracnar>"] = true,
+					},
+					["targets"] = {
+						["Bracnar"] = 4507880,
+						["Chromaggus <Bracnar>"] = 12932176,
+						["Hati <Bracnar>"] = 78949,
+					},
+					["pets"] = {
+					},
+					["on_hold"] = false,
+					["boss_fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 17519005.007534,
+					["last_event"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1490321588,
+					["friendlyfire"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["nome"] = "Rukhran",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 2,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 134256,
+								["targets"] = {
+									["Bracnar"] = 256656,
+									["Chromaggus <Bracnar>"] = 1514714,
+									["Chromaggus"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 1771370,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 75,
+								["a_amt"] = 0,
+								["total"] = 1771370,
+								["c_max"] = 0,
+								["MISS"] = 16,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["DODGE"] = 30,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["PARRY"] = 7,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 103620,
+								["n_amt"] = 22,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							}, -- [1]
+							[153898] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 179987,
+								["targets"] = {
+									["Bracnar"] = 3165655,
+									["Chromaggus <Bracnar>"] = 19828,
+									["Hati <Bracnar>"] = 78949,
+									["Chromaggus"] = 0,
+									["Hati"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 3264432,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 212,
+								["total"] = 3264432,
+								["c_max"] = 0,
+								["id"] = 153898,
+								["r_dmg"] = 0,
+								["MISS"] = 143,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 69,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							[153794] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 481689,
+								["targets"] = {
+									["Bracnar"] = 839313,
+									["Chromaggus <Bracnar>"] = 11397634,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 12236947,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 41,
+								["total"] = 12236947,
+								["c_max"] = 0,
+								["id"] = 153794,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 41,
+								["b_dmg"] = 0,
+								["n_amt"] = 41,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							[159381] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 36076,
+								["targets"] = {
+									["Bracnar"] = 246256,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 246256,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 16,
+								["total"] = 246256,
+								["c_max"] = 0,
+								["id"] = 159381,
+								["r_dmg"] = 0,
+								["MISS"] = 6,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 10,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							[153810] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 153810,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 9,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							[153896] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 153896,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 4,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							[159382] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 159382,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 2,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+						},
+					},
+					["monster"] = true,
+					["total"] = 17519005.007534,
+					["serial"] = "Creature-0-3881-1209-14172-76143-0000547D38",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 7817129.007534,
+					["start_time"] = 1490321207,
+					["delay"] = 0,
+					["last_dps"] = 0,
+				}, -- [7]
+				{
+					["flag_original"] = 68168,
+					["damage_from"] = {
+						["Bracnar"] = true,
+						["Beast <Bracnar>"] = true,
+					},
+					["targets"] = {
+						["Bracnar"] = 9418447,
+						["Hati <Bracnar>"] = 252528,
+						["Chromaggus <Bracnar>"] = 365298,
+						["Beast <Bracnar>"] = 48206,
+					},
+					["pets"] = {
+					},
+					["on_hold"] = false,
+					["boss_fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 10084479.009906,
+					["last_event"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1490321588,
+					["friendlyfire"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["nome"] = "Solar Flare",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							[169810] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 53339,
+								["targets"] = {
+									["Hati"] = 0,
+									["Chromaggus <Bracnar>"] = 2653,
+									["Bracnar"] = 408838,
+									["Chromaggus"] = 0,
+									["Beast"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 411491,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 45,
+								["total"] = 411491,
+								["c_max"] = 0,
+								["id"] = 169810,
+								["r_dmg"] = 0,
+								["MISS"] = 36,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 50,
+								["b_dmg"] = 0,
+								["n_amt"] = 9,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							[153828] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 342147,
+								["targets"] = {
+									["Hati"] = 0,
+									["Chromaggus <Bracnar>"] = 362645,
+									["Bracnar"] = 9009609,
+									["Hati <Bracnar>"] = 252528,
+									["Chromaggus"] = 0,
+									["Beast"] = 0,
+									["Beast <Bracnar>"] = 48206,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 9672988,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 353,
+								["total"] = 9672988,
+								["c_max"] = 0,
+								["id"] = 153828,
+								["r_dmg"] = 0,
+								["MISS"] = 258,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 118,
+								["b_dmg"] = 0,
+								["n_amt"] = 95,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+						},
+					},
+					["monster"] = true,
+					["total"] = 10084479.009906,
+					["serial"] = "Creature-0-3881-1209-14172-79505-0004547D38",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 27012938.009906,
+					["start_time"] = 1490321438,
+					["delay"] = 0,
+					["last_dps"] = 0,
+				}, -- [8]
+				{
+					["flag_original"] = 68168,
+					["damage_from"] = {
+						["Bracnar"] = true,
+					},
+					["targets"] = {
+						["Bracnar"] = 2063552,
+					},
+					["pets"] = {
+					},
+					["on_hold"] = false,
+					["boss_fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 2063552.028105,
+					["last_event"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1490322137,
+					["friendlyfire"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["nome"] = "High Sage Viryx",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 1,
+								["b_amt"] = 0,
+								["c_dmg"] = 226896,
+								["g_amt"] = 0,
+								["n_max"] = 137672,
+								["targets"] = {
+									["Bracnar"] = 1694490,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 1467594,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 23,
+								["total"] = 1694490,
+								["c_max"] = 226896,
+								["MISS"] = 5,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["DODGE"] = 4,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 13,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							}, -- [1]
+							[154396] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 188178,
+								["targets"] = {
+									["Bracnar"] = 369062,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 369062,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 6,
+								["total"] = 369062,
+								["c_max"] = 0,
+								["id"] = 154396,
+								["r_dmg"] = 0,
+								["MISS"] = 4,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 6,
+								["b_dmg"] = 0,
+								["n_amt"] = 2,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+						},
+					},
+					["monster"] = true,
+					["total"] = 2063552.028105,
+					["serial"] = "Creature-0-3881-1209-14172-76266-0000547D38",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 765307.028105,
+					["start_time"] = 1490322043,
+					["delay"] = 0,
+					["last_dps"] = 0,
+				}, -- [9]
+				{
+					["flag_original"] = 68168,
+					["damage_from"] = {
+						["Bracnar"] = true,
+					},
+					["targets"] = {
+					},
+					["pets"] = {
+					},
+					["on_hold"] = false,
+					["boss_fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.016087,
+					["last_event"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1490322137,
+					["friendlyfire"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["nome"] = "Solar Zealot",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+						},
+					},
+					["monster"] = true,
+					["total"] = 0.016087,
+					["serial"] = "Vehicle-0-3881-1209-14172-76267-00005482C9",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 1874676.016087,
+					["start_time"] = 1490322134,
 					["delay"] = 0,
 					["last_dps"] = 0,
 				}, -- [10]
@@ -4976,1575 +7214,66 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Bracnar"] = 0,
+						["Bracnar"] = 69970,
 					},
-					["on_hold"] = false,
 					["pets"] = {
 					},
+					["on_hold"] = false,
 					["boss_fight_component"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 0.003568,
+					["total_without_pet"] = 69970.01002,
+					["last_event"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1490322337,
 					["friendlyfire"] = {
 					},
-					["dps_started"] = false,
-					["end_time"] = 1490236980,
-					["last_event"] = 0,
 					["friendlyfire_total"] = 0,
-					["nome"] = "Spawner",
+					["nome"] = "Arakkoa Magnifying Glass",
 					["spells"] = {
 						["tipo"] = 2,
 						["_ActorTable"] = {
-							[105563] = {
+							[154043] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["n_max"] = 69970,
 								["targets"] = {
-									["Bracnar"] = 0,
+									["Bracnar"] = 69970,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 0,
+								["n_dmg"] = 69970,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
+								["counter"] = 1,
+								["total"] = 69970,
 								["c_max"] = 0,
-								["id"] = 105563,
+								["id"] = 154043,
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
 								["m_amt"] = 0,
-								["successful_casted"] = 0,
+								["successful_casted"] = 1,
 								["b_dmg"] = 0,
-								["n_amt"] = 0,
+								["n_amt"] = 1,
 								["r_amt"] = 0,
 								["c_min"] = 0,
 							},
 						},
 					},
 					["monster"] = true,
-					["total"] = 0.003568,
-					["serial"] = "Creature-0-3777-967-13751-53888-000053189A",
+					["total"] = 69970.01002,
+					["serial"] = "Creature-0-3881-1209-14172-76285-0000548350",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.003568,
-					["start_time"] = 1490236977,
+					["damage_taken"] = 0.01002,
+					["start_time"] = 1490322331,
 					["delay"] = 0,
 					["last_dps"] = 0,
 				}, -- [11]
-				{
-					["flag_original"] = 68168,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Bracnar"] = 0,
-					},
-					["on_hold"] = false,
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.003048,
-					["friendlyfire"] = {
-					},
-					["dps_started"] = false,
-					["end_time"] = 1490236980,
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["nome"] = "Hideous Amalgamation",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Bracnar"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							}, -- [1]
-							[106264] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Bracnar"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 106264,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-							[105845] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Bracnar"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 105845,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-							[106199] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 106199,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-							[105846] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 105846,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-							[106005] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 106005,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-						},
-					},
-					["monster"] = true,
-					["total"] = 0.003048,
-					["serial"] = "Vehicle-0-3777-967-13751-53890-00005318BC",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.003048,
-					["start_time"] = 1490236977,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [12]
-				{
-					["flag_original"] = 2632,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Bracnar"] = 0,
-					},
-					["on_hold"] = false,
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.00557,
-					["friendlyfire"] = {
-					},
-					["dps_started"] = false,
-					["end_time"] = 1490236980,
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["nome"] = "Corrupted Blood",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Bracnar"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							}, -- [1]
-							[105219] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Bracnar"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 105219,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-							[105248] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 105248,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-						},
-					},
-					["monster"] = true,
-					["total"] = 0.00557,
-					["serial"] = "Creature-0-3777-967-13751-53889-00005318BF",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.00557,
-					["start_time"] = 1490236977,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [13]
-				{
-					["flag_original"] = 68168,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Bracnar"] = 0,
-					},
-					["on_hold"] = false,
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.001585,
-					["friendlyfire"] = {
-					},
-					["dps_started"] = false,
-					["end_time"] = 1490236980,
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["nome"] = "Corruption",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							[109379] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 109379,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-							[105479] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Bracnar"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 105479,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-						},
-					},
-					["monster"] = true,
-					["total"] = 0.001585,
-					["serial"] = "Vehicle-0-3777-967-13751-56162-000053189A",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.001585,
-					["start_time"] = 1490236977,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [14]
-				{
-					["flag_original"] = 68168,
-					["damage_from"] = {
-					},
-					["targets"] = {
-					},
-					["on_hold"] = false,
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.001261,
-					["friendlyfire"] = {
-					},
-					["dps_started"] = false,
-					["end_time"] = 1490236980,
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["nome"] = "Burning Tendons",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-						},
-					},
-					["monster"] = true,
-					["total"] = 0.001261,
-					["serial"] = "Creature-0-3777-967-13751-56341-000053189A",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.001261,
-					["start_time"] = 1490236977,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [15]
-				{
-					["flag_original"] = 2632,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Bracnar"] = 0,
-						["The Skyfire"] = 0,
-					},
-					["on_hold"] = false,
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.00834,
-					["friendlyfire"] = {
-					},
-					["dps_started"] = false,
-					["end_time"] = 1490236980,
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["nome"] = "Goriona",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							[107589] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["The Skyfire"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 107589,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-							[107588] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 107588,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-							[106401] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Bracnar"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 106401,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-						},
-					},
-					["monster"] = true,
-					["total"] = 0.00834,
-					["serial"] = "Vehicle-0-3777-967-13751-56781-00005317E6",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.00834,
-					["start_time"] = 1490236977,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [16]
-				{
-					["flag_original"] = 2632,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Chromaggus <Bracnar>"] = 0,
-						["Goriona"] = 0,
-					},
-					["on_hold"] = false,
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.008826,
-					["friendlyfire"] = {
-					},
-					["dps_started"] = false,
-					["end_time"] = 1490236980,
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["nome"] = "Warmaster Blackhorn",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Hati"] = 0,
-									["Chromaggus <Bracnar>"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							}, -- [1]
-							[108045] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 108045,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-							[110312] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Goriona"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 110312,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-							[108042] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Chromaggus <Bracnar>"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 108042,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-						},
-					},
-					["monster"] = true,
-					["total"] = 0.008826,
-					["serial"] = "Creature-0-3777-967-13751-56427-00005317E6",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.008826,
-					["start_time"] = 1490236977,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [17]
-				{
-					["flag_original"] = 2584,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Goriona"] = 0,
-						["Twilight Assault Drake"] = 0,
-					},
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.008475,
-					["boss_fight_component"] = true,
-					["dps_started"] = false,
-					["end_time"] = 1490236980,
-					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
-					["nome"] = "Skyfire Cannon",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							[108010] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Twilight Assault Drake"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 108010,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-							[108041] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Goriona"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 108041,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-						},
-					},
-					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.008475,
-					["serial"] = "Vehicle-0-3777-967-13751-57260-0000D314AD",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.008475,
-					["start_time"] = 1490236977,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [18]
-				{
-					["flag_original"] = 68168,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["The Skyfire"] = 0,
-					},
-					["on_hold"] = false,
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.003795,
-					["friendlyfire"] = {
-					},
-					["dps_started"] = false,
-					["end_time"] = 1490236980,
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["nome"] = "Twilight Assault Drake",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							[107501] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["The Skyfire"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 107501,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-						},
-					},
-					["monster"] = true,
-					["total"] = 0.003795,
-					["serial"] = "Vehicle-0-3777-967-13751-56587-00005317F2",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.003795,
-					["start_time"] = 1490236977,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [19]
-				{
-					["flag_original"] = 2632,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Bracnar"] = 0,
-					},
-					["on_hold"] = false,
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.003617,
-					["friendlyfire"] = {
-					},
-					["dps_started"] = false,
-					["end_time"] = 1490236980,
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["nome"] = "[*] Deck Fire",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							[110095] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Bracnar"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 110095,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-						},
-					},
-					["monster"] = true,
-					["total"] = 0.003617,
-					["serial"] = "",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.003617,
-					["start_time"] = 1490236977,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [20]
-				{
-					["flag_original"] = 2584,
-					["damage_from"] = {
-					},
-					["targets"] = {
-					},
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.007844,
-					["boss_fight_component"] = true,
-					["dps_started"] = false,
-					["end_time"] = 1490236980,
-					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
-					["nome"] = "The Skyfire",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-						},
-					},
-					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.007844,
-					["serial"] = "Creature-0-3777-967-13751-56598-00005314AE",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.007844,
-					["start_time"] = 1490236977,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [21]
-				{
-					["flag_original"] = 2632,
-					["damage_from"] = {
-					},
-					["targets"] = {
-					},
-					["on_hold"] = false,
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.006313,
-					["friendlyfire"] = {
-					},
-					["dps_started"] = false,
-					["end_time"] = 1490236980,
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["nome"] = "Twilight Sapper",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							[109247] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 109247,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-						},
-					},
-					["monster"] = true,
-					["total"] = 0.006313,
-					["serial"] = "Vehicle-0-3777-967-13751-56923-000053181A",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.006313,
-					["start_time"] = 1490236977,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [22]
-				{
-					["flag_original"] = 68168,
-					["damage_from"] = {
-					},
-					["targets"] = {
-					},
-					["on_hold"] = false,
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.008138,
-					["friendlyfire"] = {
-					},
-					["dps_started"] = false,
-					["end_time"] = 1490236980,
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["nome"] = "Twilight Elite Dreadblade",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Bracnar"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							}, -- [1]
-						},
-					},
-					["monster"] = true,
-					["total"] = 0.008138,
-					["serial"] = "Creature-0-3777-967-13751-56854-00005317F2",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.008138,
-					["start_time"] = 1490236977,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [23]
-				{
-					["flag_original"] = 68168,
-					["damage_from"] = {
-					},
-					["targets"] = {
-					},
-					["on_hold"] = false,
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.004348,
-					["friendlyfire"] = {
-					},
-					["dps_started"] = false,
-					["end_time"] = 1490236980,
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["nome"] = "Twilight Elite Slayer",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Hati"] = 0,
-									["Bracnar"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							}, -- [1]
-						},
-					},
-					["monster"] = true,
-					["total"] = 0.004348,
-					["serial"] = "Creature-0-3777-967-13751-56848-00005317F2",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.004348,
-					["start_time"] = 1490236977,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [24]
-				{
-					["flag_original"] = 8465,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Morchok"] = 0,
-					},
-					["pets"] = {
-					},
-					["classe"] = "PET",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.007327,
-					["boss_fight_component"] = true,
-					["dps_started"] = false,
-					["end_time"] = 1490236980,
-					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
-					["nome"] = "Beast <Bracnar>",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Morchok"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							}, -- [1]
-							[207097] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Morchok"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 207097,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-						},
-					},
-					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.007327,
-					["serial"] = "Creature-0-3777-967-13751-103263-00005314C7",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.007327,
-					["start_time"] = 1490236977,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [25]
-				{
-					["flag_original"] = 68168,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Chromaggus <Bracnar>"] = 0,
-					},
-					["on_hold"] = false,
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.005813,
-					["friendlyfire"] = {
-					},
-					["dps_started"] = false,
-					["end_time"] = 1490236980,
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["nome"] = "Morchok",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Chromaggus <Bracnar>"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							}, -- [1]
-							[109017] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 109017,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-							[103846] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 103846,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-						},
-					},
-					["monster"] = true,
-					["total"] = 0.005813,
-					["serial"] = "Creature-0-3777-967-13751-55265-00005314AD",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.005813,
-					["start_time"] = 1490236977,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [26]
-				{
-					["flag_original"] = 68168,
-					["damage_from"] = {
-					},
-					["targets"] = {
-					},
-					["on_hold"] = false,
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.005681,
-					["friendlyfire"] = {
-					},
-					["dps_started"] = false,
-					["end_time"] = 1490236980,
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["nome"] = "Kohcrom <Morchok> <Morchok>",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							[103846] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 103846,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-						},
-					},
-					["monster"] = true,
-					["total"] = 0.005681,
-					["serial"] = "Creature-0-3777-967-13751-57773-00005314C7",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.005681,
-					["start_time"] = 1490236977,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [27]
-				{
-					["flag_original"] = 68168,
-					["damage_from"] = {
-					},
-					["targets"] = {
-					},
-					["on_hold"] = false,
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.003792,
-					["friendlyfire"] = {
-					},
-					["dps_started"] = false,
-					["end_time"] = 1490236980,
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["nome"] = "Kohcrom <Morchok>",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Bracnar"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							}, -- [1]
-						},
-					},
-					["monster"] = true,
-					["total"] = 0.003792,
-					["serial"] = "Creature-0-3777-967-13751-57773-00005314C7",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.003792,
-					["start_time"] = 1490236977,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [28]
 			},
 		}, -- [1]
 		{
@@ -6552,53 +7281,60 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1297,
-					["totalabsorb"] = 0.01356,
+					["totalabsorb"] = 0.05495,
 					["last_hps"] = 0,
 					["healing_from"] = {
 						["Bracnar"] = true,
 					},
 					["targets"] = {
-						["Bracnar"] = 0,
+						["Bracnar"] = 20266522,
+						["Chromaggus <Bracnar>"] = 11536767,
+						["Hati <Bracnar>"] = 998374,
 					},
-					["spec"] = 253,
+					["targets_absorbs"] = {
+					},
 					["pets"] = {
+						"Chromaggus <Bracnar> <Bracnar>", -- [1]
+						"Hati <Bracnar> <Bracnar>", -- [2]
 					},
 					["iniciar_hps"] = false,
 					["targets_overheal"] = {
-						["Bracnar"] = 0,
+						["Bracnar"] = 3679100,
+						["Chromaggus <Bracnar>"] = 3875803,
+						["Hati <Bracnar>"] = 2562093,
 					},
-					["classe"] = "HUNTER",
-					["totalover"] = 2938882.01356,
-					["total_without_pet"] = 2388.01356,
-					["totalover_without_pet"] = 0.01356,
-					["healing_taken"] = 2388.01356,
 					["heal_enemy_amt"] = 0,
-					["end_time"] = 1490229875,
-					["boss_fight_component"] = true,
-					["total"] = 2388.01356,
+					["totalover"] = 10116996.05495,
+					["total_without_pet"] = 25554449.05495,
+					["totalover_without_pet"] = 0.05495,
+					["healing_taken"] = 17682317.05495,
+					["fight_component"] = true,
+					["total"] = 25554449.05495,
+					["end_time"] = 1490320768,
+					["classe"] = "HUNTER",
 					["nome"] = "Bracnar",
-					["targets_absorbs"] = {
-					},
+					["spec"] = 253,
 					["grupo"] = true,
-					["delay"] = 0,
+					["last_event"] = 0,
 					["heal_enemy"] = {
 					},
 					["spells"] = {
+						["tipo"] = 3,
 						["_ActorTable"] = {
 							[208981] = {
 								["c_amt"] = 0,
 								["totalabsorb"] = 0,
 								["targets_overheal"] = {
-									["Bracnar"] = 342099,
+									["Bracnar"] = 1920194,
 								},
-								["n_max"] = 68,
+								["n_max"] = 95084,
 								["targets"] = {
-									["Bracnar"] = 200,
+									["Bracnar"] = 15194782,
 								},
 								["n_min"] = 0,
-								["counter"] = 3,
-								["overheal"] = 342099,
-								["total"] = 200,
+								["counter"] = 180,
+								["overheal"] = 1920194,
+								["total"] = 15194782,
 								["c_max"] = 0,
 								["id"] = 208981,
 								["targets_absorbs"] = {
@@ -6606,26 +7342,107 @@ _detalhes_database = {
 								["m_crit"] = 0,
 								["c_curado"] = 0,
 								["m_amt"] = 0,
-								["n_amt"] = 3,
-								["m_healed"] = 0,
-								["n_curado"] = 200,
 								["c_min"] = 0,
+								["n_curado"] = 15194782,
+								["m_healed"] = 0,
+								["n_amt"] = 180,
+								["absorbed"] = 0,
+							},
+							[128594] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+									["Chromaggus <Bracnar>"] = 3694220,
+								},
+								["n_max"] = 3283925,
+								["targets"] = {
+									["Chromaggus <Bracnar>"] = 3405326,
+								},
+								["n_min"] = 0,
+								["counter"] = 2,
+								["overheal"] = 3694220,
+								["total"] = 3405326,
+								["c_max"] = 0,
+								["id"] = 128594,
+								["targets_absorbs"] = {
+								},
+								["m_crit"] = 0,
+								["c_curado"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["n_curado"] = 3405326,
+								["m_healed"] = 0,
+								["n_amt"] = 2,
+								["absorbed"] = 0,
+							},
+							[214303] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+									["Hati <Bracnar>"] = 2562093,
+								},
+								["n_max"] = 67652,
+								["targets"] = {
+									["Hati <Bracnar>"] = 211168,
+								},
+								["n_min"] = 0,
+								["counter"] = 25,
+								["overheal"] = 2562093,
+								["total"] = 211168,
+								["c_max"] = 0,
+								["id"] = 214303,
+								["targets_absorbs"] = {
+								},
+								["m_crit"] = 0,
+								["c_curado"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["n_curado"] = 211168,
+								["m_healed"] = 0,
+								["n_amt"] = 25,
+								["absorbed"] = 0,
+							},
+							[136] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+									["Chromaggus <Bracnar>"] = 181583,
+								},
+								["n_max"] = 177489,
+								["targets"] = {
+									["Chromaggus <Bracnar>"] = 4255638,
+								},
+								["n_min"] = 0,
+								["counter"] = 25,
+								["overheal"] = 181583,
+								["total"] = 4255638,
+								["c_max"] = 0,
+								["id"] = 136,
+								["targets_absorbs"] = {
+								},
+								["m_crit"] = 0,
+								["c_curado"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["n_curado"] = 4255638,
+								["m_healed"] = 0,
+								["n_amt"] = 25,
 								["absorbed"] = 0,
 							},
 							[197205] = {
 								["c_amt"] = 0,
 								["totalabsorb"] = 0,
 								["targets_overheal"] = {
-									["Bracnar"] = 2596783,
+									["Bracnar"] = 1185872,
 								},
-								["n_max"] = 2188,
+								["n_max"] = 61047,
 								["targets"] = {
-									["Bracnar"] = 2188,
+									["Bracnar"] = 208074,
 								},
 								["n_min"] = 0,
-								["counter"] = 2,
-								["overheal"] = 2596783,
-								["total"] = 2188,
+								["counter"] = 20,
+								["overheal"] = 1185872,
+								["total"] = 208074,
 								["c_max"] = 0,
 								["id"] = 197205,
 								["targets_absorbs"] = {
@@ -6633,63 +7450,132 @@ _detalhes_database = {
 								["m_crit"] = 0,
 								["c_curado"] = 0,
 								["m_amt"] = 0,
-								["n_amt"] = 2,
-								["m_healed"] = 0,
-								["n_curado"] = 2188,
 								["c_min"] = 0,
+								["n_curado"] = 208074,
+								["m_healed"] = 0,
+								["n_amt"] = 20,
+								["absorbed"] = 0,
+							},
+							[109304] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+									["Bracnar"] = 573034,
+								},
+								["n_max"] = 950832,
+								["targets"] = {
+									["Bracnar"] = 2279461,
+								},
+								["n_min"] = 0,
+								["counter"] = 3,
+								["overheal"] = 573034,
+								["total"] = 2279461,
+								["c_max"] = 0,
+								["id"] = 109304,
+								["targets_absorbs"] = {
+								},
+								["m_crit"] = 0,
+								["c_curado"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["n_curado"] = 2279461,
+								["m_healed"] = 0,
+								["n_amt"] = 3,
 								["absorbed"] = 0,
 							},
 						},
-						["tipo"] = 3,
 					},
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1490229866,
-					["serial"] = "Player-1169-06A1ACBD",
 					["tipo"] = 2,
+					["on_hold"] = false,
+					["start_time"] = 1490320400,
+					["delay"] = 0,
+					["serial"] = "Player-1169-06A1ACBD",
 				}, -- [1]
 				{
-					["flag_original"] = 68168,
-					["totalabsorb"] = 0.006041,
+					["flag_original"] = 4369,
+					["totalabsorb"] = 0.00558,
 					["last_hps"] = 0,
 					["healing_from"] = {
+						["Bracnar"] = true,
 					},
 					["targets"] = {
 					},
-					["pets"] = {
-					},
-					["iniciar_hps"] = false,
-					["targets_overheal"] = {
-					},
-					["classe"] = "UNKNOW",
-					["totalover"] = 0.006041,
-					["total_without_pet"] = 0.006041,
 					["targets_absorbs"] = {
 					},
-					["totalover_without_pet"] = 0.006041,
-					["monster"] = true,
-					["total"] = 0.006041,
-					["boss_fight_component"] = true,
+					["pets"] = {
+					},
+					["totalover_without_pet"] = 0.00558,
+					["targets_overheal"] = {
+					},
 					["heal_enemy_amt"] = 0,
-					["nome"] = "Warmaster Blackhorn",
+					["totalover"] = 0.00558,
+					["total_without_pet"] = 0.00558,
+					["end_time"] = 1490321588,
+					["iniciar_hps"] = false,
+					["classe"] = "PET",
+					["total"] = 0.00558,
+					["ownerName"] = "Bracnar",
+					["nome"] = "Chromaggus <Bracnar> <Bracnar>",
 					["spells"] = {
 						["tipo"] = 3,
 						["_ActorTable"] = {
 						},
 					},
-					["end_time"] = 1490236980,
-					["healing_taken"] = 0.006041,
+					["healing_taken"] = 7660964.00558,
+					["boss_fight_component"] = true,
 					["heal_enemy"] = {
 					},
-					["serial"] = "Creature-0-3777-967-13751-56427-00005317E6",
+					["serial"] = "Pet-0-3881-1209-14172-14020-0501EE046B",
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
-					["start_time"] = 1490236977,
+					["start_time"] = 1490321585,
 					["delay"] = 0,
 					["last_event"] = 0,
 				}, -- [2]
+				{
+					["flag_original"] = 8465,
+					["totalabsorb"] = 0.014591,
+					["last_hps"] = 0,
+					["healing_from"] = {
+						["Bracnar"] = true,
+					},
+					["targets"] = {
+					},
+					["targets_absorbs"] = {
+					},
+					["pets"] = {
+					},
+					["totalover_without_pet"] = 0.014591,
+					["targets_overheal"] = {
+					},
+					["heal_enemy_amt"] = 0,
+					["totalover"] = 0.014591,
+					["total_without_pet"] = 0.014591,
+					["end_time"] = 1490321588,
+					["iniciar_hps"] = false,
+					["classe"] = "PET",
+					["total"] = 0.014591,
+					["ownerName"] = "Bracnar",
+					["nome"] = "Hati <Bracnar> <Bracnar>",
+					["spells"] = {
+						["tipo"] = 3,
+						["_ActorTable"] = {
+						},
+					},
+					["healing_taken"] = 211168.014591,
+					["boss_fight_component"] = true,
+					["heal_enemy"] = {
+					},
+					["serial"] = "Creature-0-3881-1209-14172-106551-0000547FEF",
+					["custom"] = 0,
+					["tipo"] = 2,
+					["on_hold"] = false,
+					["start_time"] = 1490321585,
+					["delay"] = 0,
+					["last_event"] = 0,
+				}, -- [3]
 			},
 		}, -- [2]
 		{
@@ -6703,9 +7589,10 @@ _detalhes_database = {
 				{
 					["flag_original"] = 1047,
 					["debuff_uptime_spells"] = {
+						["tipo"] = 9,
 						["_ActorTable"] = {
 							[120679] = {
-								["uptime"] = 0,
+								["uptime"] = 31,
 								["id"] = 120679,
 								["activedamt"] = 0,
 								["targets"] = {
@@ -6713,7 +7600,289 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 							[95809] = {
-								["uptime"] = 2,
+								["uptime"] = 11,
+								["actived_at"] = 1490321415,
+								["id"] = 95809,
+								["activedamt"] = 0,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+						},
+					},
+					["buff_uptime"] = 750,
+					["classe"] = "HUNTER",
+					["buff_uptime_spells"] = {
+						["tipo"] = 9,
+						["_ActorTable"] = {
+							[231390] = {
+								["uptime"] = 362,
+								["activedamt"] = 25,
+								["id"] = 231390,
+								["actived_at"] = 7451606288,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[120694] = {
+								["uptime"] = 32,
+								["activedamt"] = 7,
+								["id"] = 120694,
+								["actived_at"] = 4470964235,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[221796] = {
+								["uptime"] = 198,
+								["actived_at"] = 8941928897,
+								["id"] = 221796,
+								["activedamt"] = 20,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[19574] = {
+								["uptime"] = 0,
+								["activedamt"] = 1,
+								["id"] = 19574,
+								["actived_at"] = 1490320816,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[90355] = {
+								["uptime"] = 0,
+								["activedamt"] = 1,
+								["id"] = 90355,
+								["actived_at"] = 1490320816,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Sign of the Warrior"] = {
+								["uptime"] = 0,
+								["id"] = "Sign of the Warrior",
+								["activedamt"] = 0,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[207068] = {
+								["uptime"] = 16,
+								["activedamt"] = 4,
+								["id"] = 207068,
+								["actived_at"] = 2980643121,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Dire Beast"] = {
+								["uptime"] = 0,
+								["id"] = "Dire Beast",
+								["activedamt"] = 0,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Trailblazer"] = {
+								["uptime"] = 0,
+								["id"] = "Trailblazer",
+								["activedamt"] = 0,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Aspect of the Wild"] = {
+								["uptime"] = 0,
+								["id"] = "Aspect of the Wild",
+								["activedamt"] = 0,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[982] = {
+								["uptime"] = 3,
+								["id"] = 982,
+								["activedamt"] = 1,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Mana Divining Stone"] = {
+								["uptime"] = 0,
+								["id"] = "Mana Divining Stone",
+								["activedamt"] = 0,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Fiery Enchant"] = {
+								["uptime"] = 0,
+								["id"] = "Fiery Enchant",
+								["activedamt"] = 0,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[225730] = {
+								["uptime"] = 60,
+								["activedamt"] = 4,
+								["id"] = 225730,
+								["actived_at"] = 1490321104,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[193530] = {
+								["uptime"] = 0,
+								["activedamt"] = 1,
+								["id"] = 193530,
+								["actived_at"] = 1490320816,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[120360] = {
+								["uptime"] = 19,
+								["id"] = 120360,
+								["activedamt"] = 8,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Frost Enchant"] = {
+								["uptime"] = 0,
+								["id"] = "Frost Enchant",
+								["activedamt"] = 0,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Arcane Enchant"] = {
+								["uptime"] = 0,
+								["id"] = "Arcane Enchant",
+								["activedamt"] = 0,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Blood Frenzy"] = {
+								["uptime"] = 0,
+								["id"] = "Blood Frenzy",
+								["activedamt"] = 0,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[225729] = {
+								["uptime"] = 0,
+								["actived_at"] = 1490321107,
+								["id"] = 225729,
+								["activedamt"] = 1,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Bestial Wrath"] = {
+								["uptime"] = 0,
+								["id"] = "Bestial Wrath",
+								["activedamt"] = 0,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Shaladrassil's Nourishment"] = {
+								["uptime"] = 0,
+								["id"] = "Shaladrassil's Nourishment",
+								["activedamt"] = 0,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[225726] = {
+								["uptime"] = 60,
+								["activedamt"] = 5,
+								["id"] = 225726,
+								["actived_at"] = 2980643142,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+						},
+					},
+					["fight_component"] = true,
+					["debuff_uptime"] = 42,
+					["nome"] = "Bracnar",
+					["spec"] = 253,
+					["grupo"] = true,
+					["spell_cast"] = {
+						[170364] = 7,
+						[109304] = 3,
+						[120360] = 8,
+						[2643] = 32,
+						[982] = 1,
+						[120679] = 7,
+						[207068] = 4,
+						[211148] = 2,
+						[83242] = 2,
+						[136] = 5,
+						[19574] = 1,
+						[193530] = 1,
+						[34026] = 12,
+						[193455] = 27,
+					},
+					["debuff_uptime_targets"] = {
+					},
+					["tipo"] = 4,
+					["buff_uptime_targets"] = {
+					},
+					["pets"] = {
+						"Chromaggus <Bracnar> <Bracnar>", -- [1]
+						"Beast <Bracnar> <Bracnar>", -- [2]
+					},
+					["serial"] = "Player-1169-06A1ACBD",
+					["last_event"] = 0,
+				}, -- [1]
+				{
+					["flag_original"] = 4369,
+					["tipo"] = 4,
+					["ownerName"] = "Bracnar",
+					["nome"] = "Chromaggus <Bracnar> <Bracnar>",
+					["spell_cast"] = {
+						[90355] = 1,
+						[61684] = 1,
+						[17253] = 18,
+					},
+					["classe"] = "PET",
+					["last_event"] = 0,
+					["serial"] = "Pet-0-3881-1209-14172-14020-0201EE046B",
+					["pets"] = {
+					},
+				}, -- [2]
+				{
+					["flag_original"] = 8465,
+					["ownerName"] = "Bracnar",
+					["nome"] = "Beast <Bracnar> <Bracnar>",
+					["spell_cast"] = {
+						[120694] = 7,
+						[201754] = 7,
+					},
+					["pets"] = {
+					},
+					["last_event"] = 0,
+					["classe"] = "PET",
+					["serial"] = "Creature-0-3881-1209-14172-86177-0000547D7B",
+					["tipo"] = 4,
+				}, -- [3]
+				{
+					["flag_original"] = 1298,
+					["debuff_uptime"] = 11,
+					["debuff_uptime_spells"] = {
+						["tipo"] = 9,
+						["_ActorTable"] = {
+							[95809] = {
+								["uptime"] = 11,
 								["id"] = 95809,
 								["activedamt"] = 1,
 								["targets"] = {
@@ -6721,285 +7890,178 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
-						["tipo"] = 9,
 					},
-					["buff_uptime"] = 118,
-					["classe"] = "HUNTER",
-					["buff_uptime_spells"] = {
-						["_ActorTable"] = {
-							[225787] = {
-								["uptime"] = 34,
-								["id"] = 225787,
-								["activedamt"] = 1,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[225729] = {
-								["id"] = 225729,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[106664] = {
-								["uptime"] = 34,
-								["id"] = 106664,
-								["activedamt"] = 1,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[193530] = {
-								["id"] = 193530,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[221796] = {
-								["uptime"] = 0,
-								["id"] = 221796,
-								["activedamt"] = 1,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[207068] = {
-								["uptime"] = 8,
-								["id"] = 207068,
-								["activedamt"] = 1,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[19574] = {
-								["id"] = 19574,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[110660] = {
-								["id"] = 110660,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[208981] = {
-								["uptime"] = 0,
-								["id"] = 208981,
-								["activedamt"] = 0,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[90355] = {
-								["uptime"] = 0,
-								["counter"] = 0,
-								["id"] = 90355,
-								["activedamt"] = 1,
-								["targets"] = {
-								},
-								["actived_at"] = 1490229846,
-							},
-							[120694] = {
-								["uptime"] = 8,
-								["id"] = 120694,
-								["activedamt"] = 1,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[227723] = {
-								["uptime"] = 34,
-								["id"] = 227723,
-								["activedamt"] = 1,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-						},
-						["tipo"] = 9,
-					},
-					["debuff_uptime"] = 2,
-					["boss_fight_component"] = true,
-					["spec"] = 253,
+					["nome"] = "Torinara",
+					["spec"] = 263,
 					["grupo"] = true,
-					["spell_cast"] = {
-						[193530] = 0,
-						[19574] = 0,
-						[106664] = 5,
-						[2643] = 0,
-						[201360] = 1,
-						[106670] = 3,
-						[106668] = 3,
-						[204426] = 1,
-						[211148] = 1,
-						[34026] = 1,
-						[193455] = 6,
-						[131894] = 1,
-						[106674] = 1,
-						[120679] = 1,
-						[106676] = 3,
-						[207068] = 1,
-					},
-					["last_event"] = 0,
-					["buff_uptime_targets"] = {
-					},
-					["tipo"] = 4,
 					["pets"] = {
-						"Chromaggus <Bracnar> <Bracnar>", -- [1]
-						"Beast <Bracnar> <Bracnar>", -- [2]
-					},
-					["nome"] = "Bracnar",
-					["serial"] = "Player-1169-06A1ACBD",
-					["debuff_uptime_targets"] = {
-					},
-				}, -- [1]
-				{
-					["flag_original"] = 1047,
-					["debuff_uptime"] = 34,
-					["debuff_uptime_spells"] = {
-						["_ActorTable"] = {
-							[2649] = {
-								["uptime"] = 34,
-								["id"] = 2649,
-								["activedamt"] = 1,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-						},
-						["tipo"] = 9,
 					},
 					["debuff_uptime_targets"] = {
 					},
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
 					["last_event"] = 0,
-					["tipo"] = 4,
-					["spell_cast"] = {
-						[2649] = 1,
-						[61684] = 1,
-						[90355] = 1,
-						[17253] = 1,
-					},
-					["classe"] = "UNKNOW",
-					["serial"] = "Pet-0-3777-967-13751-14020-0701EE046B",
-					["nome"] = "Chromaggus <Bracnar> <Bracnar>",
-				}, -- [2]
-				{
-					["flag_original"] = 1047,
-					["debuff_uptime"] = 34,
-					["debuff_uptime_spells"] = {
-						["_ActorTable"] = {
-							[109257] = {
-								["uptime"] = 34,
-								["id"] = 109257,
-								["activedamt"] = 1,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-						},
-						["tipo"] = 9,
-					},
-					["debuff_uptime_targets"] = {
-					},
-					["pets"] = {
-					},
 					["boss_fight_component"] = true,
-					["last_event"] = 0,
+					["classe"] = "SHAMAN",
+					["serial"] = "Player-1169-07C70DC2",
 					["tipo"] = 4,
-					["spell_cast"] = {
-						[105401] = 1,
-						[106548] = 2,
-					},
-					["classe"] = "UNKNOW",
-					["serial"] = "Vehicle-0-3777-967-13751-56846-0000531A32",
-					["nome"] = "Arm Tentacle",
-				}, -- [3]
-				{
-					["monster"] = true,
-					["last_event"] = 0,
-					["nome"] = "Blistering Tentacle",
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["flag_original"] = 2632,
-					["tipo"] = 4,
-					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-3777-967-13751-56188-0000D31A37",
-					["spell_cast"] = {
-						[105444] = 14,
-					},
 				}, -- [4]
 				{
-					["flag_original"] = 2584,
-					["nome"] = "Alexstrasza",
-					["boss_fight_component"] = true,
+					["monster"] = true,
+					["tipo"] = 4,
+					["nome"] = "Ranjit",
 					["pets"] = {
 					},
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-3777-967-13751-56099-00005319F2",
 					["spell_cast"] = {
-						[105565] = 2,
-						[106860] = 1,
+						[153544] = 1,
 					},
+					["flag_original"] = 68168,
+					["last_event"] = 0,
+					["boss_fight_component"] = true,
+					["serial"] = "Creature-0-3881-1209-14172-75964-0000547D38",
+					["classe"] = "UNKNOW",
 				}, -- [5]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
-					["nome"] = "Deathwing",
+					["tipo"] = 4,
+					["nome"] = "Araknath",
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["flag_original"] = 2632,
-					["tipo"] = 4,
-					["boss_fight_component"] = true,
-					["serial"] = "Vehicle-0-3777-967-13751-56173-0000531A32",
 					["spell_cast"] = {
-						[107018] = 2,
+						[154113] = 1,
 					},
+					["flag_original"] = 68168,
+					["last_event"] = 0,
+					["boss_fight_component"] = true,
+					["serial"] = "Creature-0-3881-1209-14172-76141-0000547DB7",
+					["classe"] = "UNKNOW",
 				}, -- [6]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
-					["nome"] = "Wing Tentacle",
+					["tipo"] = 4,
+					["nome"] = "Rukhran",
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["flag_original"] = 68168,
-					["tipo"] = 4,
-					["boss_fight_component"] = true,
-					["serial"] = "Vehicle-0-3777-967-13751-56168-0000531A32",
 					["spell_cast"] = {
-						[105401] = 2,
-						[106548] = 2,
+						[159382] = 2,
+						[153810] = 9,
+						[153794] = 41,
+						[153896] = 4,
 					},
+					["flag_original"] = 2632,
+					["last_event"] = 0,
+					["boss_fight_component"] = true,
+					["serial"] = "Creature-0-3881-1209-14172-76143-0000547D38",
+					["classe"] = "UNKNOW",
 				}, -- [7]
 				{
-					["monster"] = true,
-					["last_event"] = 0,
-					["nome"] = "Mutated Corruption",
+					["flag_original"] = 68168,
+					["debuff_uptime_spells"] = {
+						["tipo"] = 9,
+						["_ActorTable"] = {
+						},
+					},
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["flag_original"] = 68168,
-					["tipo"] = 4,
-					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-3777-967-13751-56471-0000531A39",
-					["spell_cast"] = {
-						[106400] = 1,
+					["boss_debuff"] = true,
+					["monster"] = true,
+					["debuff_uptime"] = 165,
+					["spellschool"] = 1,
+					["debuff_uptime_targets"] = {
+						["Bracnar"] = {
+							["activedamt"] = 1,
+							["uptime"] = 165,
+							["actived"] = false,
+						},
 					},
+					["damage_spellid"] = 160149,
+					["nome"] = "Weak",
+					["tipo"] = 4,
+					["damage_twin"] = "Rukhran",
+					["boss_fight_component"] = true,
+					["serial"] = "Creature-0-3881-1209-14172-76143-0000547D38",
+					["last_event"] = 0,
 				}, -- [8]
 				{
 					["flag_original"] = 68168,
 					["debuff_uptime_spells"] = {
+						["tipo"] = 9,
 						["_ActorTable"] = {
 						},
+					},
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["boss_debuff"] = true,
+					["monster"] = true,
+					["debuff_uptime"] = 32,
+					["spellschool"] = 1,
+					["debuff_uptime_targets"] = {
+						["Bracnar"] = {
+							["activedamt"] = 0,
+							["uptime"] = 32,
+							["actived"] = false,
+						},
+					},
+					["damage_spellid"] = 153795,
+					["nome"] = "Pierced Armor",
+					["tipo"] = 4,
+					["damage_twin"] = "Rukhran",
+					["boss_fight_component"] = true,
+					["serial"] = "Creature-0-3881-1209-14172-76143-0000547D38",
+					["last_event"] = 0,
+				}, -- [9]
+				{
+					["monster"] = true,
+					["tipo"] = 4,
+					["nome"] = "Solar Flare",
+					["pets"] = {
+					},
+					["spell_cast"] = {
+						[169810] = 50,
+						[153828] = 118,
+					},
+					["flag_original"] = 2632,
+					["last_event"] = 0,
+					["boss_fight_component"] = true,
+					["serial"] = "Creature-0-3881-1209-14172-79505-0008D47D38",
+					["classe"] = "UNKNOW",
+				}, -- [10]
+				{
+					["monster"] = true,
+					["tipo"] = 4,
+					["nome"] = "High Sage Viryx",
+					["pets"] = {
+					},
+					["spell_cast"] = {
+						[154396] = 6,
+					},
+					["flag_original"] = 68168,
+					["last_event"] = 0,
+					["boss_fight_component"] = true,
+					["serial"] = "Creature-0-3881-1209-14172-76266-0000547D38",
+					["classe"] = "UNKNOW",
+				}, -- [11]
+				{
+					["monster"] = true,
+					["tipo"] = 4,
+					["nome"] = "Arakkoa Magnifying Glass",
+					["pets"] = {
+					},
+					["spell_cast"] = {
+						[154043] = 1,
+					},
+					["flag_original"] = 2632,
+					["last_event"] = 0,
+					["boss_fight_component"] = true,
+					["serial"] = "Creature-0-3881-1209-14172-76285-0000548350",
+					["classe"] = "UNKNOW",
+				}, -- [12]
+				{
+					["flag_original"] = 2632,
+					["debuff_uptime_spells"] = {
 						["tipo"] = 9,
+						["_ActorTable"] = {
+						},
 					},
 					["pets"] = {
 					},
@@ -7007,401 +8069,22 @@ _detalhes_database = {
 					["boss_debuff"] = true,
 					["monster"] = true,
 					["debuff_uptime"] = 1,
-					["spellschool"] = 1,
-					["nome"] = "Impale",
+					["spellschool"] = 4,
 					["debuff_uptime_targets"] = {
 						["Bracnar"] = {
-							["actived"] = false,
 							["activedamt"] = 0,
 							["uptime"] = 1,
+							["actived"] = false,
 						},
 					},
-					["last_event"] = 0,
+					["damage_spellid"] = 154043,
+					["nome"] = "Lens Flare",
 					["tipo"] = 4,
-					["damage_twin"] = "Mutated Corruption",
-					["serial"] = "Creature-0-3777-967-13751-56471-0000531A39",
-					["damage_spellid"] = 106400,
+					["damage_twin"] = "Arakkoa Magnifying Glass",
 					["boss_fight_component"] = true,
-				}, -- [9]
-				{
-					["flag_original"] = 8465,
-					["ownerName"] = "Bracnar",
-					["nome"] = "Beast <Bracnar> <Bracnar>",
-					["boss_fight_component"] = true,
-					["pets"] = {
-					},
-					["last_event"] = 0,
-					["classe"] = "PET",
-					["tipo"] = 4,
-					["serial"] = "Creature-0-3777-967-13751-103263-0000531A48",
-					["spell_cast"] = {
-						[120694] = 1,
-						[201754] = 1,
-					},
-				}, -- [10]
-				{
-					["flag_original"] = 2584,
-					["nome"] = "Thrall",
-					["boss_fight_component"] = true,
-					["pets"] = {
-					},
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Vehicle-0-3777-967-13751-56103-00005319F2",
-					["spell_cast"] = {
-						[110063] = 1,
-					},
-				}, -- [11]
-				{
-					["flag_original"] = 1047,
-					["debuff_uptime"] = 0,
-					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
-						["_ActorTable"] = {
-							[2649] = {
-								["id"] = 2649,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-						},
-					},
-					["nome"] = "Chromaggus <Bracnar>",
-					["tipo"] = 4,
-					["pets"] = {
-					},
-					["debuff_uptime_targets"] = {
-					},
-					["spell_cast"] = {
-						[17253] = 0,
-						[2649] = 0,
-						[90355] = 0,
-						[61684] = 0,
-					},
-					["classe"] = "UNKNOW",
-					["boss_fight_component"] = true,
-					["serial"] = "Pet-0-3777-967-13751-14020-0701EE046B",
-					["last_event"] = 0,
-				}, -- [12]
-				{
-					["flag_original"] = 8465,
-					["nome"] = "Beast <Bracnar>",
-					["tipo"] = 4,
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						[120694] = 0,
-						[201754] = 0,
-					},
-					["classe"] = "PET",
-					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-3777-967-13751-103263-0000531A48",
+					["serial"] = "Creature-0-3881-1209-14172-76285-0000548350",
 					["last_event"] = 0,
 				}, -- [13]
-				{
-					["flag_original"] = 1047,
-					["debuff_uptime"] = 0,
-					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
-						["_ActorTable"] = {
-							[109257] = {
-								["id"] = 109257,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-						},
-					},
-					["nome"] = "Corruption",
-					["tipo"] = 4,
-					["pets"] = {
-					},
-					["debuff_uptime_targets"] = {
-					},
-					["spell_cast"] = {
-						[109379] = 0,
-					},
-					["classe"] = "UNKNOW",
-					["boss_fight_component"] = true,
-					["serial"] = "Vehicle-0-3777-967-13751-56162-000053189A",
-					["last_event"] = 0,
-				}, -- [14]
-				{
-					["flag_original"] = 2632,
-					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
-						["_ActorTable"] = {
-						},
-					},
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["boss_debuff"] = true,
-					["monster"] = true,
-					["debuff_uptime"] = 0,
-					["spellschool"] = 4,
-					["debuff_uptime_targets"] = {
-					},
-					["damage_spellid"] = 105563,
-					["nome"] = "Grasping Tendrils",
-					["tipo"] = 4,
-					["damage_twin"] = "Spawner",
-					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-3777-967-13751-53888-000053189A",
-					["last_event"] = 0,
-				}, -- [15]
-				{
-					["monster"] = true,
-					["nome"] = "Hideous Amalgamation",
-					["tipo"] = 4,
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						[105846] = 0,
-						[106005] = 0,
-						[106199] = 0,
-						[105845] = 0,
-					},
-					["flag_original"] = 2632,
-					["last_event"] = 0,
-					["boss_fight_component"] = true,
-					["serial"] = "Vehicle-0-3777-967-13751-53890-00005318BB",
-					["classe"] = "UNKNOW",
-				}, -- [16]
-				{
-					["flag_original"] = 2632,
-					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
-						["_ActorTable"] = {
-						},
-					},
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["boss_debuff"] = true,
-					["monster"] = true,
-					["debuff_uptime"] = 0,
-					["spellschool"] = 1,
-					["debuff_uptime_targets"] = {
-					},
-					["damage_spellid"] = 106199,
-					["nome"] = "Blood Corruption: Death",
-					["tipo"] = 4,
-					["damage_twin"] = "Hideous Amalgamation",
-					["boss_fight_component"] = true,
-					["serial"] = "Vehicle-0-3777-967-13751-53890-00005318BB",
-					["last_event"] = 0,
-				}, -- [17]
-				{
-					["flag_original"] = 2632,
-					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
-						["_ActorTable"] = {
-						},
-					},
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["boss_debuff"] = true,
-					["monster"] = true,
-					["debuff_uptime"] = 0,
-					["spellschool"] = 1,
-					["debuff_uptime_targets"] = {
-					},
-					["damage_spellid"] = 105479,
-					["nome"] = "Searing Plasma",
-					["tipo"] = 4,
-					["damage_twin"] = "Corruption",
-					["boss_fight_component"] = true,
-					["serial"] = "Vehicle-0-3777-967-13751-56161-000053189A",
-					["last_event"] = 0,
-				}, -- [18]
-				{
-					["monster"] = true,
-					["nome"] = "Corrupted Blood",
-					["tipo"] = 4,
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						[105219] = 0,
-						[105248] = 0,
-					},
-					["flag_original"] = 68168,
-					["last_event"] = 0,
-					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-3777-967-13751-53889-00005318D1",
-					["classe"] = "UNKNOW",
-				}, -- [19]
-				{
-					["flag_original"] = 2632,
-					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
-						["_ActorTable"] = {
-						},
-					},
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["boss_debuff"] = true,
-					["monster"] = true,
-					["debuff_uptime"] = 0,
-					["spellschool"] = 4,
-					["debuff_uptime_targets"] = {
-					},
-					["damage_spellid"] = 106005,
-					["nome"] = "Degradation",
-					["tipo"] = 4,
-					["damage_twin"] = "Hideous Amalgamation",
-					["boss_fight_component"] = true,
-					["serial"] = "Vehicle-0-3777-967-13751-53890-0000531949",
-					["last_event"] = 0,
-				}, -- [20]
-				{
-					["flag_original"] = 1047,
-					["debuff_uptime"] = 0,
-					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
-						["_ActorTable"] = {
-							[109257] = {
-								["id"] = 109257,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-						},
-					},
-					["nome"] = "Twilight Elite Dreadblade",
-					["pets"] = {
-					},
-					["tipo"] = 4,
-					["debuff_uptime_targets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-3777-967-13751-56854-00005317F2",
-					["last_event"] = 0,
-				}, -- [21]
-				{
-					["flag_original"] = 2584,
-					["nome"] = "Skyfire Harpoon Gun",
-					["tipo"] = 4,
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						[108038] = 0,
-					},
-					["classe"] = "UNKNOW",
-					["boss_fight_component"] = true,
-					["serial"] = "Vehicle-0-3777-967-13751-56681-0000D314AE",
-					["last_event"] = 0,
-				}, -- [22]
-				{
-					["monster"] = true,
-					["nome"] = "Goriona",
-					["tipo"] = 4,
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						[107588] = 0,
-					},
-					["flag_original"] = 2632,
-					["last_event"] = 0,
-					["boss_fight_component"] = true,
-					["serial"] = "Vehicle-0-3777-967-13751-56781-00005317E6",
-					["classe"] = "UNKNOW",
-				}, -- [23]
-				{
-					["monster"] = true,
-					["nome"] = "Twilight Sapper",
-					["tipo"] = 4,
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						[109247] = 0,
-					},
-					["flag_original"] = 2632,
-					["last_event"] = 0,
-					["boss_fight_component"] = true,
-					["serial"] = "Vehicle-0-3777-967-13751-56923-000053181A",
-					["classe"] = "UNKNOW",
-				}, -- [24]
-				{
-					["flag_original"] = 2584,
-					["nome"] = "Skyfire Cannon",
-					["tipo"] = 4,
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						[108010] = 0,
-						[108040] = 0,
-					},
-					["classe"] = "UNKNOW",
-					["boss_fight_component"] = true,
-					["serial"] = "Vehicle-0-3777-967-13751-57260-0000D314AD",
-					["last_event"] = 0,
-				}, -- [25]
-				{
-					["monster"] = true,
-					["nome"] = "Warmaster Blackhorn",
-					["tipo"] = 4,
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						[108045] = 0,
-						[110312] = 0,
-						[108042] = 0,
-					},
-					["flag_original"] = 2632,
-					["last_event"] = 0,
-					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-3777-967-13751-56427-00005317E6",
-					["classe"] = "UNKNOW",
-				}, -- [26]
-				{
-					["flag_original"] = 1047,
-					["debuff_uptime"] = 0,
-					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
-						["_ActorTable"] = {
-							[109257] = {
-								["id"] = 109257,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-						},
-					},
-					["nome"] = "Morchok",
-					["tipo"] = 4,
-					["pets"] = {
-					},
-					["debuff_uptime_targets"] = {
-					},
-					["spell_cast"] = {
-						[109017] = 0,
-						[103846] = 0,
-					},
-					["classe"] = "UNKNOW",
-					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-3777-967-13751-55265-00005314AD",
-					["last_event"] = 0,
-				}, -- [27]
-				{
-					["monster"] = true,
-					["nome"] = "Kohcrom <Morchok>",
-					["tipo"] = 4,
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						[103846] = 0,
-					},
-					["flag_original"] = 68168,
-					["last_event"] = 0,
-					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-3777-967-13751-57773-00005314C7",
-					["classe"] = "UNKNOW",
-				}, -- [28]
 			},
 		}, -- [4]
 		{
@@ -7413,10 +8096,10 @@ _detalhes_database = {
 		},
 		["last_events_tables"] = {
 		},
-		["combat_counter"] = 225,
+		["combat_counter"] = 311,
 		["totals"] = {
-			146855198.045123, -- [1]
-			2388.006838, -- [2]
+			151833712.270015, -- [1]
+			25554449.058535, -- [2]
 			{
 				0, -- [1]
 				[0] = 0,
@@ -7426,15 +8109,15 @@ _detalhes_database = {
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["dead"] = 0,
-				["cc_break"] = 0,
-				["interrupt"] = 0,
 				["debuff_uptime"] = 0,
-				["dispell"] = 0,
 				["cooldowns_defensive"] = 0,
+				["interrupt"] = 0,
+				["dispell"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
 			}, -- [4]
-			["voidzone_damage"] = 0,
 			["frags_total"] = 0,
+			["voidzone_damage"] = 0,
 		},
 		["player_last_events"] = {
 		},
@@ -7446,19 +8129,93 @@ _detalhes_database = {
 				1, -- [1]
 				1, -- [2]
 			}, -- [1]
-			["damage"] = {
-			},
 			["heal_section"] = {
 			},
 			["heal"] = {
 			},
 			["damage_section"] = {
 			},
+			["damage"] = {
+			},
 		},
-		["end_time"] = 164573.344,
+		["end_time"] = 257088.633,
+		["data_inicio"] = "21:59:18",
+		["frags"] = {
+		},
+		["data_fim"] = "22:26:04",
+		["overall_enemy_name"] = "-- x -- x --",
+		["CombatSkillCache"] = {
+		},
+		["segments_added"] = {
+			{
+				["elapsed"] = 13.002999999997,
+				["name"] = "Trash Cleanup",
+				["clock"] = "22:25:51",
+			}, -- [1]
+			{
+				["elapsed"] = 35.0169999999926,
+				["name"] = "High Sage Viryx",
+				["clock"] = "22:25:02",
+			}, -- [2]
+			{
+				["elapsed"] = 34.002999999997,
+				["name"] = "High Sage Viryx",
+				["clock"] = "22:23:27",
+			}, -- [3]
+			{
+				["elapsed"] = 33.0019999999786,
+				["name"] = "High Sage Viryx",
+				["clock"] = "22:21:44",
+			}, -- [4]
+			{
+				["elapsed"] = 18.0190000000002,
+				["name"] = "Trash Cleanup",
+				["clock"] = "22:18:08",
+			}, -- [5]
+			{
+				["elapsed"] = 394.999000000011,
+				["name"] = "Rukhran",
+				["clock"] = "22:06:33",
+			}, -- [6]
+			{
+				["elapsed"] = 10.0009999999893,
+				["name"] = "Trash Cleanup",
+				["clock"] = "22:06:05",
+			}, -- [7]
+			{
+				["elapsed"] = 15.0059999999939,
+				["name"] = "Trash Cleanup",
+				["clock"] = "22:05:43",
+			}, -- [8]
+			{
+				["elapsed"] = 13.0190000000002,
+				["name"] = "Araknath",
+				["clock"] = "22:05:04",
+			}, -- [9]
+			{
+				["elapsed"] = 13.0130000000063,
+				["name"] = "Ranjit",
+				["clock"] = "22:00:15",
+			}, -- [10]
+			{
+				["elapsed"] = 18.0040000000154,
+				["name"] = "Trash Cleanup",
+				["clock"] = "21:59:46",
+			}, -- [11]
+			{
+				["elapsed"] = 10.0050000000047,
+				["name"] = "Trash Cleanup",
+				["clock"] = "21:59:18",
+			}, -- [12]
+		},
+		["start_time"] = 256481.542,
+		["TimeData"] = {
+			["Raid Damage Done"] = {
+			},
+		},
 		["totals_grupo"] = {
-			86685229.003642, -- [1]
-			2388.006838, -- [2]
+			90031282.056806, -- [1]
+			25554449.049227, -- [2]
 			{
 				0, -- [1]
 				[0] = 0,
@@ -7468,641 +8225,16 @@ _detalhes_database = {
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["dead"] = 0,
-				["cc_break"] = 0,
-				["interrupt"] = 0,
 				["debuff_uptime"] = 0,
-				["dispell"] = 0,
 				["cooldowns_defensive"] = 0,
+				["interrupt"] = 0,
+				["dispell"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
 			}, -- [4]
 		},
-		["overall_refreshed"] = true,
-		["hasSaved"] = true,
-		["frags"] = {
-		},
-		["data_fim"] = "20:44:35",
-		["overall_enemy_name"] = "Madness of Deathwing",
-		["CombatSkillCache"] = {
-		},
-		["segments_added"] = {
-			{
-				["elapsed"] = 34.0180000000109,
-				["name"] = "Madness of Deathwing",
-				["clock"] = "20:43:34",
-			}, -- [1]
-		},
-		["start_time"] = 164539.326,
-		["TimeData"] = {
-			["Raid Damage Done"] = {
-			},
-		},
-		["data_inicio"] = "20:43:34",
 	},
-	["cached_talents"] = {
-		["Player-3723-0629E386"] = {
-			19285, -- [1]
-			19279, -- [2]
-			19288, -- [3]
-			19293, -- [4]
-			22090, -- [5]
-			21180, -- [6]
-			21182, -- [7]
-		},
-		["Player-120-050D944A"] = {
-			21707, -- [1]
-			22367, -- [2]
-			18574, -- [3]
-			22404, -- [4]
-			19283, -- [5]
-			18577, -- [6]
-			21716, -- [7]
-		},
-		["Player-55-09F180FA"] = {
-			22493, -- [1]
-			22799, -- [2]
-			22494, -- [3]
-			21865, -- [4]
-			21868, -- [5]
-			21870, -- [6]
-			22547, -- [7]
-		},
-		["Player-3694-06BAF37C"] = {
-			22558, -- [1]
-			22431, -- [2]
-			21811, -- [3]
-			22434, -- [4]
-			22705, -- [5]
-			22438, -- [6]
-			21202, -- [7]
-		},
-		["Player-76-08DCFCFC"] = {
-			22018, -- [1]
-			22021, -- [2]
-			22517, -- [3]
-			22525, -- [4]
-			22529, -- [5]
-			22535, -- [6]
-			22109, -- [7]
-		},
-		["Player-76-093CC3D9"] = {
-			17577, -- [1]
-			17565, -- [2]
-			22179, -- [3]
-			21668, -- [4]
-			22484, -- [5]
-			17597, -- [6]
-			17593, -- [7]
-		},
-		["Player-3661-07B76D28"] = {
-			22493, -- [1]
-			22765, -- [2]
-			22494, -- [3]
-			21865, -- [4]
-			21868, -- [5]
-			21869, -- [6]
-			21900, -- [7]
-		},
-		["Player-3726-09B8774A"] = {
-			22633, -- [1]
-			22409, -- [2]
-			19138, -- [3]
-			22627, -- [4]
-			22391, -- [5]
-			22400, -- [6]
-			22402, -- [7]
-		},
-		["Player-1427-09093D66"] = {
-			22493, -- [1]
-			22765, -- [2]
-			22494, -- [3]
-			21863, -- [4]
-			21868, -- [5]
-			21869, -- [6]
-			21900, -- [7]
-		},
-		["Player-11-09AF3E4D"] = {
-			22364, -- [1]
-			18570, -- [2]
-			22163, -- [3]
-			21778, -- [4]
-			21702, -- [5]
-			21711, -- [6]
-			21649, -- [7]
-		},
-		["Player-1427-08DD7D21"] = {
-			22459, -- [1]
-			22908, -- [2]
-			22444, -- [3]
-			22465, -- [4]
-			22904, -- [5]
-			22449, -- [6]
-			21633, -- [7]
-		},
-		["Player-3725-0A59D834"] = {
-			22175, -- [1]
-			22319, -- [2]
-			22896, -- [3]
-			22183, -- [4]
-			22185, -- [5]
-			22483, -- [6]
-			22591, -- [7]
-		},
-		["Player-3207-05542F61"] = {
-			22353, -- [1]
-			22150, -- [2]
-			19275, -- [3]
-			19272, -- [4]
-			22137, -- [5]
-			21973, -- [6]
-			22148, -- [7]
-		},
-		["Player-3207-09F3409D"] = {
-			22016, -- [1]
-			22535, -- [2]
-			22515, -- [3]
-			22019, -- [4]
-			22109, -- [5]
-			22525, -- [6]
-			22529, -- [7]
-		},
-		["Player-47-07B3F8D4"] = {
-			22282, -- [1]
-			22273, -- [2]
-			21997, -- [3]
-			22287, -- [4]
-			22284, -- [5]
-			19347, -- [6]
-			22347, -- [7]
-		},
-		["Player-120-07F60C94"] = {
-			21778, -- [1]
-			22404, -- [2]
-			22165, -- [3]
-			21704, -- [4]
-			18572, -- [5]
-			18570, -- [6]
-			22366, -- [7]
-		},
-		["Player-60-0ADC7797"] = {
-			22498, -- [1]
-			22499, -- [2]
-			19357, -- [3]
-			21998, -- [4]
-			22279, -- [5]
-			19347, -- [6]
-			22274, -- [7]
-		},
-		["Player-3725-0A5CF649"] = {
-			17565, -- [1]
-			22176, -- [2]
-			21811, -- [3]
-			17593, -- [4]
-			17597, -- [5]
-			22484, -- [6]
-			21671, -- [7]
-		},
-		["Player-3725-09C2204C"] = {
-			22279, -- [1]
-			22495, -- [2]
-			19347, -- [3]
-			21998, -- [4]
-			22284, -- [5]
-			22287, -- [6]
-			22288, -- [7]
-		},
-		["Player-60-0631EB8F"] = {
-			18574, -- [1]
-			18570, -- [2]
-			22366, -- [3]
-			18577, -- [4]
-			21710, -- [5]
-			21713, -- [6]
-			22404, -- [7]
-		},
-		["Player-1427-08928519"] = {
-			22282, -- [1]
-			21997, -- [2]
-			19347, -- [3]
-			22269, -- [4]
-			22284, -- [5]
-			19357, -- [6]
-			21986, -- [7]
-		},
-		["Player-3683-09F102F8"] = {
-			22355, -- [1]
-			22636, -- [2]
-			19275, -- [3]
-			19272, -- [4]
-			22137, -- [5]
-			22351, -- [6]
-			22148, -- [7]
-		},
-		["Player-3207-05D11855"] = {
-			15760, -- [1]
-			22629, -- [2]
-			19138, -- [3]
-			22488, -- [4]
-			22392, -- [5]
-			22401, -- [6]
-			21204, -- [7]
-		},
-		["Player-3210-05B80A11"] = {
-			21651, -- [1]
-			22366, -- [2]
-			21716, -- [3]
-			21704, -- [4]
-			18572, -- [5]
-			18577, -- [6]
-			18570, -- [7]
-		},
-		["Player-1173-08F36A22"] = {
-			22040, -- [1]
-			21180, -- [2]
-			19285, -- [3]
-			19279, -- [4]
-			22047, -- [5]
-			21182, -- [6]
-			19281, -- [7]
-		},
-		["Player-3694-07FD9B1C"] = {
-			21644, -- [1]
-			21750, -- [2]
-			22095, -- [3]
-			21754, -- [4]
-			19752, -- [5]
-			19767, -- [6]
-			21976, -- [7]
-		},
-		["Player-3693-0756782E"] = {
-			22590, -- [1]
-			22593, -- [2]
-			21811, -- [3]
-			22182, -- [4]
-			22595, -- [5]
-			22485, -- [6]
-			22591, -- [7]
-		},
-		["Player-3685-070D8F1B"] = {
-			22485, -- [1]
-			22634, -- [2]
-			22375, -- [3]
-			22593, -- [4]
-			22595, -- [5]
-			22896, -- [6]
-			22175, -- [7]
-		},
-		["Player-12-0A7DFEFB"] = {
-			22041, -- [1]
-			21694, -- [2]
-			19280, -- [3]
-			22477, -- [4]
-			19291, -- [5]
-			21717, -- [6]
-			22479, -- [7]
-		},
-		["Player-3675-0729849C"] = {
-			22282, -- [1]
-			21997, -- [2]
-			19347, -- [3]
-			22269, -- [4]
-			22284, -- [5]
-			19357, -- [6]
-			22295, -- [7]
-		},
-		["Player-60-0AC1DF5C"] = {
-			22091, -- [1]
-			19304, -- [2]
-			22097, -- [3]
-			19995, -- [4]
-			20175, -- [5]
-			22102, -- [6]
-			22108, -- [7]
-		},
-		["Player-1427-0903F89D"] = {
-			22493, -- [1]
-			22765, -- [2]
-			22494, -- [3]
-			21863, -- [4]
-			21868, -- [5]
-			21869, -- [6]
-			21900, -- [7]
-		},
-		["Player-5-0AAB8D4E"] = {
-			18574, -- [1]
-			18570, -- [2]
-			22160, -- [3]
-			18577, -- [4]
-			21704, -- [5]
-			22165, -- [6]
-			22404, -- [7]
-		},
-		["Player-162-05D1FC37"] = {
-			17565, -- [1]
-			17577, -- [2]
-			21811, -- [3]
-			17593, -- [4]
-			17599, -- [5]
-			22190, -- [6]
-			21668, -- [7]
-		},
-		["Player-1428-0838ECFF"] = {
-			18571, -- [1]
-			22163, -- [2]
-			21702, -- [3]
-			21711, -- [4]
-			21649, -- [5]
-			22364, -- [6]
-			21778, -- [7]
-		},
-		["Player-60-0AF5A386"] = {
-			22280, -- [1]
-			21997, -- [2]
-			19347, -- [3]
-			22347, -- [4]
-			22284, -- [5]
-			19357, -- [6]
-			21986, -- [7]
-		},
-		["Player-73-01064971"] = {
-			22353, -- [1]
-			22150, -- [2]
-			19275, -- [3]
-			19272, -- [4]
-			22137, -- [5]
-			21973, -- [6]
-			22148, -- [7]
-		},
-		["Player-154-07BC9DDB"] = {
-			22387, -- [1]
-			18570, -- [2]
-			22159, -- [3]
-			18577, -- [4]
-			18580, -- [5]
-			22390, -- [6]
-			21193, -- [7]
-		},
-		["Player-114-0225507A"] = {
-			22017, -- [1]
-			22020, -- [2]
-			22517, -- [3]
-			22523, -- [4]
-			22529, -- [5]
-			22531, -- [6]
-			22537, -- [7]
-		},
-		["Player-3685-07023FFA"] = {
-			22420, -- [1]
-			22424, -- [2]
-			22159, -- [3]
-			21778, -- [4]
-			22421, -- [5]
-			21712, -- [6]
-			22425, -- [7]
-		},
-		["Player-5-0AACDAB9"] = {
-			22416, -- [1]
-			22799, -- [2]
-			22494, -- [3]
-			21865, -- [4]
-			21868, -- [5]
-			22767, -- [6]
-			22547, -- [7]
-		},
-		["Player-1426-075CF817"] = {
-			22501, -- [1]
-			22497, -- [2]
-			19347, -- [3]
-			22267, -- [4]
-			22499, -- [5]
-			22287, -- [6]
-			22288, -- [7]
-		},
-		["Player-1146-04D2AAC9"] = {
-			22420, -- [1]
-			22424, -- [2]
-			22159, -- [3]
-			21778, -- [4]
-			22421, -- [5]
-			21712, -- [6]
-			22425, -- [7]
-		},
-		["Player-5-0AA5EDEC"] = {
-			19823, -- [1]
-			19304, -- [2]
-			22097, -- [3]
-			19995, -- [4]
-			20174, -- [5]
-			19819, -- [6]
-			22104, -- [7]
-		},
-		["Player-76-095210CC"] = {
-			18574, -- [1]
-			19283, -- [2]
-			22160, -- [3]
-			18577, -- [4]
-			21704, -- [5]
-			22165, -- [6]
-			21651, -- [7]
-		},
-		["Player-1427-056EE700"] = {
-			17565, -- [1]
-			22176, -- [2]
-			21811, -- [3]
-			17593, -- [4]
-			22164, -- [5]
-			22190, -- [6]
-			21671, -- [7]
-		},
-		["Player-3725-0A544EB0"] = {
-			22091, -- [1]
-			19304, -- [2]
-			22098, -- [3]
-			19994, -- [4]
-			20174, -- [5]
-			22102, -- [6]
-			22104, -- [7]
-		},
-		["Player-118-07A47B0F"] = {
-			19264, -- [1]
-			19259, -- [2]
-			19275, -- [3]
-			22152, -- [4]
-			21966, -- [5]
-			19265, -- [6]
-			21675, -- [7]
-		},
-		["Player-100-072446D7"] = {
-			21986, -- [1]
-			22276, -- [2]
-			22347, -- [3]
-			22287, -- [4]
-			22769, -- [5]
-			22280, -- [6]
-			19347, -- [7]
-		},
-		["Player-1165-0731442C"] = {
-			22590, -- [1]
-			22593, -- [2]
-			22896, -- [3]
-			22182, -- [4]
-			22595, -- [5]
-			22485, -- [6]
-			22591, -- [7]
-		},
-		["Player-1428-0811685D"] = {
-			22461, -- [1]
-			22442, -- [2]
-			22445, -- [3]
-			22467, -- [4]
-			22907, -- [5]
-			22474, -- [6]
-			21630, -- [7]
-		},
-		["Player-113-0719656C"] = {
-			21204, -- [1]
-			15774, -- [2]
-			22627, -- [3]
-			22362, -- [4]
-			22396, -- [5]
-			22378, -- [6]
-			19676, -- [7]
-		},
-		["Player-1169-07C70DC2"] = {
-			21973, -- [1]
-			19272, -- [2]
-			22150, -- [3]
-			22137, -- [4]
-			19275, -- [5]
-			22148, -- [6]
-			22353, -- [7]
-		},
-		["Player-153-073CA73B"] = {
-			18569, -- [1]
-			18570, -- [2]
-			22160, -- [3]
-			21778, -- [4]
-			21710, -- [5]
-			22165, -- [6]
-			21651, -- [7]
-		},
-		["Player-3726-0217E750"] = {
-			19754, -- [1]
-			22562, -- [2]
-			22326, -- [3]
-			21636, -- [4]
-			19764, -- [5]
-			19767, -- [6]
-			21750, -- [7]
-		},
-		["Player-3675-06C6E4F7"] = {
-			19264, -- [1]
-			21963, -- [2]
-			19275, -- [3]
-			22152, -- [4]
-			21966, -- [5]
-			21968, -- [6]
-			21675, -- [7]
-		},
-		["Player-3725-0A3F6E48"] = {
-			22459, -- [1]
-			22442, -- [2]
-			22444, -- [3]
-			22465, -- [4]
-			22904, -- [5]
-			22472, -- [6]
-			21633, -- [7]
-		},
-		["Player-3694-069B3B6D"] = {
-			22279, -- [1]
-			22495, -- [2]
-			19347, -- [3]
-			21998, -- [4]
-			22284, -- [5]
-			22287, -- [6]
-			22288, -- [7]
-		},
-		["Player-98-09198B8C"] = {
-			22461, -- [1]
-			22443, -- [2]
-			22445, -- [3]
-			22470, -- [4]
-			22907, -- [5]
-			22474, -- [6]
-			21630, -- [7]
-		},
-		["Player-114-07DB8A28"] = {
-			22493, -- [1]
-			22765, -- [2]
-			21862, -- [3]
-			21865, -- [4]
-			21867, -- [5]
-			21870, -- [6]
-			21901, -- [7]
-		},
-		["Player-70-0A9A9938"] = {
-			21868, -- [1]
-			22765, -- [2]
-			22493, -- [3]
-			21864, -- [4]
-			21900, -- [5]
-			21869, -- [6]
-			22494, -- [7]
-		},
-		["Player-3675-077B907F"] = {
-			20185, -- [1]
-			19304, -- [2]
-			22097, -- [3]
-			19994, -- [4]
-			20174, -- [5]
-			22102, -- [6]
-			22104, -- [7]
-		},
-		["Player-117-04413808"] = {
-			22313, -- [1]
-			22316, -- [2]
-			22487, -- [3]
-			21751, -- [4]
-			22311, -- [5]
-			21718, -- [6]
-			21978, -- [7]
-		},
-		["Player-3694-07F8EF01"] = {
-			19754, -- [1]
-			21976, -- [2]
-			22562, -- [3]
-			21750, -- [4]
-			21754, -- [5]
-			19767, -- [6]
-			21636, -- [7]
-		},
-		["Player-1169-06A1ACBD"] = {
-			21986, -- [1]
-			22269, -- [2]
-			21997, -- [3]
-			19357, -- [4]
-			22284, -- [5]
-			19347, -- [6]
-			22280, -- [7]
-		},
-		["Player-60-0A4C5419"] = {
-			19754, -- [1]
-			22562, -- [2]
-			19764, -- [3]
-			21644, -- [4]
-			19767, -- [5]
-			22315, -- [6]
-			21750, -- [7]
-		},
-		["Player-3726-09F06C38"] = {
-			21209, -- [1]
-			19217, -- [2]
-			19218, -- [3]
-			19232, -- [4]
-			19227, -- [5]
-			19221, -- [6]
-			22014, -- [7]
-		},
-	},
+	["last_instance_time"] = 1490320702,
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
@@ -8136,25 +8268,54 @@ _detalhes_database = {
 			},
 		}, -- [1]
 	},
-	["force_font_outline"] = "",
+	["savedbuffs"] = {
+	},
 	["announce_cooldowns"] = {
-		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
+		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["nick_tag_cache"] = {
+		["last_version"] = 8,
+		[130950802] = {
+			"Abyssion", -- [1]
+			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
+			{
+				0, -- [1]
+				1, -- [2]
+				0, -- [3]
+				1, -- [4]
+			}, -- [3]
+			"Interface\\PetBattles\\Weather-ArcaneStorm", -- [4]
+			{
+				0.129609375, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0, -- [4]
+			}, -- [5]
+			{
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			}, -- [6]
+			2, -- [7]
+		},
+		["nextreset"] = 1491481283,
 	},
-	["last_instance_id"] = 967,
+	["last_instance_id"] = 1209,
 	["cached_specs"] = {
-		["Player-1169-065F3562"] = 266,
-		["Player-1169-06642673"] = 62,
-		["Player-1169-065C1C04"] = 265,
-		["Player-1169-07C1C754"] = 577,
-		["Player-1169-06640EBD"] = 261,
+		["Player-1171-067E52DD"] = 254,
+		["Player-1171-07E77E90"] = 70,
+		["Player-118-004FF527"] = 103,
+		["Player-118-0403A55B"] = 267,
+		["Player-125-0158F00E"] = 260,
+		["Player-1171-06DCB48D"] = 66,
+		["Player-1171-0682E3BE"] = 73,
+		["Player-1171-07556147"] = 263,
 		["Player-1169-06A1ACBD"] = 253,
+		["Player-1171-067B9D66"] = 62,
+		["Player-1171-07FF890A"] = 577,
 	},
 }

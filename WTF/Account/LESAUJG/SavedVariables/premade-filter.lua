@@ -9,6 +9,10 @@ PremadeFilter_Data = {
 		"tank", -- [3]
 		"dps", -- [4]
 		"kara", -- [5]
+		"mythic", -- [6]
+		"ne", -- [7]
+		"nesw", -- [8]
+		"lair", -- [9]
 	},
 	["Settings"] = {
 		["Version"] = "2.0.6",
@@ -18,15 +22,23 @@ PremadeFilter_Data = {
 		["MaxRecentWords"] = 10,
 		["SoundNotifications"] = true,
 	},
+	["FilterSetsOrder"] = {
+	},
 	["RecentWords"] = {
+		["ne"] = true,
 		["tank"] = true,
+		["mythic"] = true,
+		["dps"] = true,
 		["farm"] = true,
 		["kara"] = true,
 		["norm"] = true,
-		["dps"] = true,
+		["lair"] = true,
+		["nesw"] = true,
 	},
-	["HideTutorial"] = true,
 	["RecentQueries"] = {
 		["norm -farm ?tank ?dps"] = true,
+	},
+	["HideTutorial"] = true,
+	["FilterSets"] = {
 	},
 }

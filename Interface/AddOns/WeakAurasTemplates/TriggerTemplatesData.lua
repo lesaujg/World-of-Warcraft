@@ -3567,6 +3567,7 @@ templates.items[2] = {
     { spell = 235559, type = "buff", unit = "player", item = 144281}, -- Skullflower's Haemostasis
     { spell = 236757, type = "buff", unit = "player", item = 144354}, -- Fiery Red Maimers
     { spell = 235054, type = "buff", unit = "player", item = 144239}, -- The Emperor's Capacitor
+    { spell = 235712, type = "buff", unit = "player", item = 144303}, -- MKII Gyroscopic Stabilizer
     { spell = 236546, type = "buff", unit = "player", item = 144438}, -- Zeks Exterminatus
     { spell = 235169, type = "buff", unit = "player", item = 144249, titleSuffix = L["buff"]}, -- Archimonde's Hatred Reborn
     { spell = 235966, type = "buff", unit = "player", item = 144258, titleSuffix = L["buff"]}, -- Velen's Future Sight
@@ -3910,7 +3911,7 @@ tinsert(templates.class.MONK[3][5].args, createSimplePowerTemplate(12));
 templates.class.MONK[1][6] = {
   title = L["Ability Charges"],
   args = {
-    { spell = 115072, type = "ability", showOn = "always"}, -- Expel Harm
+    { spell = 115072, type = "ability", showOn = "showAlways"}, -- Expel Harm
   },
   icon = 627486,
 };
@@ -3918,7 +3919,7 @@ templates.class.MONK[1][6] = {
 templates.class.MONK[2][6] = {
   title = L["Ability Charges"],
   args = {
-    { spell = 205406, type = "ability", showOn = "always"}, -- Sheilun's Gift
+    { spell = 205406, type = "ability", showOn = "showAlways"}, -- Sheilun's Gift
   },
   icon = 1242282,
 };
@@ -3926,7 +3927,7 @@ templates.class.MONK[2][6] = {
 templates.class.MONK[3][6] = {
   title = L["Ability Charges"],
   args = {
-    { spell = 101546, type = "ability", showOn = "always"}, -- Spinning Crane Kick
+    { spell = 101546, type = "ability", showOn = "showAlways"}, -- Spinning Crane Kick
   },
   icon = 606543,
 };

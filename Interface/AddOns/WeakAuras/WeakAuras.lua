@@ -2212,7 +2212,8 @@ function WeakAuras.PerformActions(data, type, region)
     if (glow_frame) then
       if (not glow_frame.__WAGlowFrame) then
         glow_frame.__WAGlowFrame = CreateFrame("Frame", nil, glow_frame);
-        glow_frame.__WAGlowFrame:SetAllPoints();
+        glow_frame.__WAGlowFrame:SetAllPoints(glow_frame);
+        glow_frame.__WAGlowFrame:SetSize(glow_frame:GetSize());
       end
       glow_frame = glow_frame.__WAGlowFrame;
     end
@@ -2814,7 +2815,6 @@ function WeakAuras.GetAuraTooltipInfo(unit, index, filter)
   end
   return tooltipText, debuffType, tonumber(tooltipSize) or 0;
 end
-
 
 local function tooltip_draw()
   GameTooltip:ClearLines();
@@ -3538,7 +3538,6 @@ local function ensureMouseFrame()
     mouseFrame:SetScript("OnUpdate", mouseFrame.moveWithMouse);
     moverFrame:SetScript("OnUpdate", nil);
     wipe(mouseFrame.attachedVisibleFrames);
-
   end
 
   mouseFrame.expand = function(self, id)
@@ -3654,7 +3653,6 @@ local function ensurePRDFrame()
   end
 
   personalRessourceDisplayFrame.OptionsOpened = function()
-
     personalRessourceDisplayFrame:Detach();
     personalRessourceDisplayFrame:SetScript("OnEvent", nil);
     personalRessourceDisplayFrame:ClearAllPoints();

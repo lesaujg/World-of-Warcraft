@@ -9,6 +9,8 @@ PawnCommon = {
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
+	["ShowSpecIcons"] = true,
+	["ShowSocketingAdvisor"] = true,
 	["Scales"] = {
 		["\"MrRobot\":HUNTER3"] = {
 			["IconTexturePath"] = "INTERFACE\\ICONS\\ability_hunter_camouflage",
@@ -481,10 +483,10 @@ PawnCommon = {
 		["\"MrRobot\":PALADIN3"] = {
 			["IconTexturePath"] = "Interface\\Icons\\Spell_Holy_AuraOfLight",
 			["PerCharacterOptions"] = {
-				["Herbinator-Sisters of Elune"] = {
+				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
-				["Galinar-Sisters of Elune"] = {
+				["Herbinator-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
 			},
@@ -668,8 +670,6 @@ PawnCommon = {
 			["UnenchantedColor"] = "00bf70",
 		},
 	},
-	["ShowSocketingAdvisor"] = true,
-	["ShowSpecIcons"] = true,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ButtonPosition"] = 2,
 	["IgnoreGemsWhileLeveling"] = true,
