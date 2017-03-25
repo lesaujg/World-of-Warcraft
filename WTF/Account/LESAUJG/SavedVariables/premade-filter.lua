@@ -32,13 +32,13 @@ PremadeFilter_Data = {
 		["farm"] = true,
 		["kara"] = true,
 		["norm"] = true,
-		["lair"] = true,
 		["nesw"] = true,
+		["lair"] = true,
 	},
+	["HideTutorial"] = true,
 	["RecentQueries"] = {
 		["norm -farm ?tank ?dps"] = true,
 	},
-	["HideTutorial"] = true,
 	["FilterSets"] = {
 	},
 }
