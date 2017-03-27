@@ -41,9 +41,9 @@
 --  Globals/Default Options  --
 -------------------------------
 DBM = {
-	Revision = tonumber(("$Revision: 16063 $"):sub(12, -3)),
-	DisplayVersion = "7.1.17", -- the string that is shown as version
-	ReleaseRevision = 16063 -- the revision of the latest stable version that is available
+	Revision = tonumber(("$Revision: 16083 $"):sub(12, -3)),
+	DisplayVersion = "7.1.18", -- the string that is shown as version
+	ReleaseRevision = 16083 -- the revision of the latest stable version that is available
 }
 DBM.HighestRelease = DBM.ReleaseRevision --Updated if newer version is detected, used by update nags to reflect critical fixes user is missing on boss pulls
 
@@ -11121,6 +11121,7 @@ do
 				end
 				if not isFiltered then
 					if guid2 and type(creatureID) == "table" and creatureID[cid2] and not addsGUIDs[guid2] then
+						DBM:Debug("Match found, SHOULD be setting icon", 2)
 						if type(creatureID[cid2]) == "number" then
 							SetRaidTarget(unitid2, creatureID[cid2])
 						else
@@ -11140,7 +11141,8 @@ do
 							addsIconSet[scanID] = nil
 							return
 						end
-					elseif guid2 and ((guid2 == creatureID) or (cid2 == creatureID or cid2 == secondCreatureID)) and not addsGUIDs[guid2] then
+					elseif guid2 and (guid2 == creatureID or cid2 == creatureID or cid2 == secondCreatureID) and not addsGUIDs[guid2] then
+						DBM:Debug("Match found, SHOULD be setting icon", 2)
 						if iconSetMethod == 2 then
 							SetRaidTarget(unitid2, mobIcon)
 						else
@@ -11175,6 +11177,7 @@ do
 				end
 				if not isFiltered then
 					if guid and type(creatureID) == "table" and creatureID[cid] and not addsGUIDs[guid] then
+						DBM:Debug("Match found, SHOULD be setting icon", 2)
 						if type(creatureID[cid]) == "number" then
 							SetRaidTarget(unitid, creatureID[cid])
 						else
@@ -11194,7 +11197,8 @@ do
 							addsIconSet[scanID] = nil
 							return
 						end
-					elseif guid and ((guid == creatureID) or (cid == creatureID or cid == secondCreatureID)) and not addsGUIDs[guid] then
+					elseif guid and (guid == creatureID or cid == creatureID or cid == secondCreatureID) and not addsGUIDs[guid] then
+						DBM:Debug("Match found, SHOULD be setting icon", 2)
 						if iconSetMethod == 2 then
 							SetRaidTarget(unitid, mobIcon)
 						else
@@ -11227,6 +11231,8 @@ do
 				addsIconSet[scanID] = nil
 				--Do not wipe adds GUID table here, it's wiped by :Stop() which is called by EndCombat
 			end
+		else
+			DBM:Debug("Not elected to set icons for "..(optionName or "nil"), 2)
 		end
 	end
 end

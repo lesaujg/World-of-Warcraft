@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1737, "DBM-Nighthold", nil, 786)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 16057 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 16072 $"):sub(12, -3))
 mod:SetCreatureID(104154)--104537 (Fel Lord Kuraz'mal)
 mod:SetEncounterID(1866)
 mod:SetZone()
@@ -379,13 +379,13 @@ function mod:SPELL_CAST_START(args)
 				timerEyeofGuldanCD:Start(timer, self.vb.eyeCast+1)
 				countdownEyeofGuldan:Start(timer)
 			end
+			if self.vb.eyeCast == 4 and self:IsMythic() then
+				timerWindsCD:Start(97, 3)
+			end
 		else
 			local longTimer, shortTimer
 			if self:IsMythic() then
 				longTimer, shortTimer = 80, 48
-				if self.vb.eyeCast == 4 and self.vb.phase == 2 then
-					timerWindsCD:Start(97, 3)
-				end
 			elseif self:IsHeroic() then
 				longTimer, shortTimer = 66, 53
 			elseif self:IsNormal() then--Normal
@@ -415,7 +415,7 @@ function mod:SPELL_CAST_START(args)
 			timerBlackHarvestCD:Start(timer, self.vb.blackHarvestCast+1)
 			countdownBlackHarvest:Start(timer)
 		end
-		if self.vb.blackHarvestCast == 4 then
+		if self:IsMythic() and self.vb.blackHarvestCast == 4 then
 			timerWindsCD:Start(75, 4)
 		end
 	elseif spellId == 206222 or spellId == 206221 then
@@ -457,7 +457,7 @@ function mod:SPELL_CAST_START(args)
 		self.vb.severCastCount = self.vb.severCastCount + 1
 		if self:IsTank() then
 			specWarnSoulsever:Show(self.vb.severCastCount)
-			--voiceSoulSever:Play("dangerdanger")
+			--voiceSoulSever:Play("stilldanger")
 		end
 		if self.vb.severCastCount == 4 or self.vb.severCastCount == 7 then
 			timerSoulSeverCD:Start(50, self.vb.severCastCount+1)
@@ -601,14 +601,14 @@ function mod:SPELL_AURA_APPLIED(args)
 			self.vb.flamesSargCast = self.vb.flamesSargCast + 1
 			if self:IsMythic() then
 				timerFlamesofSargerasCD:Start(6.3, (self.vb.flamesSargCast).."-"..2)
-				timerFlamesofSargerasCD:Start(7.3, (self.vb.flamesSargCast).."-"..3)
+				timerFlamesofSargerasCD:Start(13.6, (self.vb.flamesSargCast).."-"..3)
 				timerFlamesofSargerasCD:Start(45, (self.vb.flamesSargCast+1).."-"..1)
 				if self.vb.flamesSargCast == 2 then
 					timerWindsCD:Start(31, 2)--FIXME later and start at correct flames cast
 				end
 			elseif self:IsHeroic() then
 				timerFlamesofSargerasCD:Start(7.7, (self.vb.flamesSargCast).."-"..2)
-				timerFlamesofSargerasCD:Start(8.7, (self.vb.flamesSargCast).."-"..3)
+				timerFlamesofSargerasCD:Start(16.4, (self.vb.flamesSargCast).."-"..3)
 				timerFlamesofSargerasCD:Start(50, (self.vb.flamesSargCast+1).."-"..1)--5-6 is 50, 1-5 is 51. For time being using a simple 50 timer
 			else--Normal, LFR
 				timerFlamesofSargerasCD:Start(18.9, (self.vb.flamesSargCast).."-"..2)

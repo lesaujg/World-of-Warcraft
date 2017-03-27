@@ -13,6 +13,8 @@ PremadeFilter_Data = {
 		"ne", -- [7]
 		"nesw", -- [8]
 		"lair", -- [9]
+		"6", -- [10]
+		"keystone", -- [11]
 	},
 	["Settings"] = {
 		["Version"] = "2.0.6",
@@ -29,6 +31,8 @@ PremadeFilter_Data = {
 		["tank"] = true,
 		["mythic"] = true,
 		["dps"] = true,
+		["6"] = true,
+		["keystone"] = true,
 		["farm"] = true,
 		["kara"] = true,
 		["norm"] = true,

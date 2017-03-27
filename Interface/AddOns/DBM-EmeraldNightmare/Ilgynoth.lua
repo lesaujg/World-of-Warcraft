@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1738, "DBM-EmeraldNightmare", nil, 768)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 16063 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 16074 $"):sub(12, -3))
 mod:SetCreatureID(105393)
 mod:SetEncounterID(1873)
 mod:SetZone()
@@ -284,6 +284,7 @@ function mod:OnCombatStart(delay)
 			DBM.InfoFrame:Show(5, "function", updateInfoFrame, false, false, true)
 		end
 	end
+	DBM:AddMsg(L.AddSpawnNotice)
 	if self:AntiSpam(15, 2) then
 		--Do nothing. Just to avoid spam on pull
 	end

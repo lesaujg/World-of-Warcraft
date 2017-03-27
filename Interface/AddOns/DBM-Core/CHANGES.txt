@@ -1,529 +1,150 @@
-tag a3597bcb00691ef7eb12589e4112e7d9493e077b 7.1.17
+tag 0e7781f4ef8b1962ad3fca305c886396c9c0f6a7 7.1.18
 Author:	subversion <svn@deadlybossmods.com>
-Date:	Tue Mar 21 22:01:55 2017 +0100
+Date:	Fri Mar 24 21:02:04 2017 +0100
 
-Tagging as 7.1.17
+Tagging as 7.1.18
 
-commit 2631454dc6da14cd59753d55afe99f43bbef0b6b
+commit 646b7916753d68d7a16dd28452e179d141b613e1
 Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Mar 21 22:01:55 2017 +0100
+Date:   Fri Mar 24 21:02:04 2017 +0100
 
-    increment version number to 7.1.17
+    increment version number to 7.1.18
 
-commit b87f216f20f2e7d4a567aaf531811b21653d3753
+commit 5930c57e232a92802c3d1eee770c1aae88ef5f07
 Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Mar 21 21:48:03 2017 +0100
+Date:   Fri Mar 24 07:21:10 2017 +0100
 
-    Omega via svn r16063:
-    Fix tank defaults on one warning
-    Update two infoframes
+    Omega via svn r16083:
+    fix bug where dark phase variable didn?\226?\128?\153t reset on wipe.
+    Refactored infoframe to be more hybrid between the varius functions of fight instead of having it swap back and forth. should present more information and in less cluttered way.
 
-commit 94f9e2308e62965a35fc5922fdbd113d5afd9e61
+commit 36fcb4b4ab4be395dab25a8610be04bd3ccd6da2
 Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Mar 21 21:32:00 2017 +0100
+Date:   Fri Mar 24 05:10:05 2017 +0100
 
-    tandanu via svn r16062:
-    info-frame: allow pre-sorting of lines in custom functions
+    Omega via svn r16082:
+    Fix logic issue for the keep brands up entire fight strat
 
-commit 32725e88edbd0b26c87a494e28ab156ee81d06f7
+commit 68e3287290614f379d45cfb8e9373a71cdf51e1b
 Author: subversion <svn@deadlybossmods.com>
-Date:   Sun Mar 19 13:47:03 2017 +0100
+Date:   Fri Mar 24 04:39:54 2017 +0100
 
-    ultrashining via svn r16061:
-    zhTW update
+    Omega via svn r16081:
+    text
 
-commit 0efe624fbbdd5dd9c2bd805b2ecc443f40a5b0df
+commit 8be007f9196a6d62c34f937a5b116677bae6240e
 Author: subversion <svn@deadlybossmods.com>
-Date:   Sun Mar 19 08:30:50 2017 +0100
+Date:   Fri Mar 24 04:32:52 2017 +0100
 
-    Omega via svn r16060:
-    CN update
-
-commit 29994fc74dbe2ef5a5790d6736f4e051c7f4fc57
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sun Mar 19 08:23:18 2017 +0100
-
-    Omega via svn r16059:
-    Fix bats icon. change from every 5 to every 4
-
-commit 7ba24324427414b76f299c7be6846cfff13819cc
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sat Mar 18 23:43:00 2017 +0100
-
-    Omega via svn r16058:
-    Some maiden fixes
-
-commit 837efed3916aaff6fabf00ba8ae99a1a4f4d641b
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sat Mar 18 22:53:36 2017 +0100
-
-    Omega via svn r16057:
-    drycode a timer fix. honestly i just won?\226?\128?\153t be able to fix this until i do guldan, in 4 months.
-
-commit c3df8bec9236dedd6b06e69a6bf87f440468174a
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sat Mar 18 07:08:12 2017 +0100
-
-    Omega via svn r16056:
-    Update berserk for normal (and assumed LFR as well). fix berserk for heroic/mythic from https://www.warcraftlogs.com/reports/6QarBycmWXpxnz1h#fight=28&type=summary&view=events&pins=2%24Off%24%23244F4B%24expression%24ability.name%20%3D%20%22Berserk%22
-
-commit 4d7fc918d4abf5dd29c9e8c510ba27728a795170
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sat Mar 18 06:52:09 2017 +0100
-
-    Omega via svn r16055:
-    kil Jaeden drycode
-
-commit f5ec2379de4b717d4561c62566d175a09e102a3b
-Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Mar 17 21:28:27 2017 +0100
-
-    Omega via svn r16054:
-    KR udate
-
-commit d2aaab2ed363eb5845ffe99e2073b2f3b573a899
-Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Mar 17 06:25:08 2017 +0100
-
-    Omega via svn r16053:
-    tweaks to scanformobs check to always check hard coded UNITIDs first before scanning entire group
-    changed scan method on alluriel to hopefully make it faster (and make it work at all on arcane adds)
-    Added missing frostbitten personal warnings
-    Added missing voice pack warning to guldan soul stack warning
-    Better animate frost icon
-
-commit 4d444366830713c9bd836ade29424aa80b96312c
-Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Mar 17 04:09:43 2017 +0100
-
-    Omega via svn r16052:
-    Small fix to last
-
-commit 51e9048177b6446d860fae68db91d43e298403cc
-Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Mar 17 04:00:46 2017 +0100
-
-    Omega via svn r16051:
-    Move annihilate timer to SUCCESS to avoid  bug where tank dies and boss starts cast over again (incrimenting count and messing up rest o timers)
-
-commit dbe0a9cb0e52ab6530e07f9de9eae84e3345e1ef
-Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Mar 17 02:41:09 2017 +0100
-
-    Omega via svn r16050:
-    Fix retarded. not sure how I forgot this
-
-commit a057ebfb51e809361b348fb50397679eb909350f
-Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Mar 16 05:52:54 2017 +0100
-
-    Omega via svn r16049:
-    Protections against laggy users messing up RP timers
-
-commit 67134800d64fcc60065ff235372b62431870ae9b
-Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Mar 15 22:32:04 2017 +0100
-
-    Omega via svn r16048:
-    Fix lua error in last, tweaks to some other timers based on newest logs
-
-commit 13d7d953fb5911d688b94a690edc1d8bf9f0457b
-Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Mar 15 22:23:42 2017 +0100
-
-    Omega via svn r16047:
-    Add Star Auger berserk
-
-commit 012142ed69c86b9e55902532813036f393c9bf61
-Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Mar 15 05:23:02 2017 +0100
-
-    Omega via svn r16046:
-    make sure slam soon pre warnings fire for first big slam as well on krosus
-    changed warning sound level of time bomb to be higher priority, especially when changing default info frame from time bomb to time release.
-    fixed a bug where temperal slash charge warning announced the orb as well.
-
-commit 794e5c1d2b74a07efc397755e00b53dbcf405a71
-Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Mar 15 03:55:50 2017 +0100
-
-    Omega via svn r16045:
-    And remove these
-
-commit 399658bdc9e0b6eb82d5ca3f4b3f1db497722d7e
-Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Mar 15 03:54:56 2017 +0100
-
-    Omega via svn r16044:
-    Time release isn?\226?\128?\153t in combat log, so do it the inefficient way
-
-commit 2a5b7ed62fb0888c8ad43e9c0e4601f3ffcede8e
-Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Mar 14 07:15:42 2017 +0100
-
-    ultrashining via svn r16043:
-    zhTW update
-
-commit 8fa9573f25300f277df269801c1bef88afe8e2c8
-Author: subversion <svn@deadlybossmods.com>
-Date:   Mon Mar 13 22:00:37 2017 +0100
-
-    Omega via svn r16042:
-    Add option to disable onupdate for infoframes that don?\226?\128?\153t actually need an onupdate method. infoframes that don?\226?\128?\153t actively track things in real time (buffs/debuffs/health/aggro etc) only need to be updated manually via Update() method and via the combat log events.
-    Cleaned up sort method code.
-
-commit 768b946d3b99dd87adb317996811acd85e5d657f
-Author: subversion <svn@deadlybossmods.com>
-Date:   Mon Mar 13 00:40:51 2017 +0100
-
-    Omega via svn r16041:
-    infoframe updates
-
-commit 41f0910ea961dca604d5e229fbcd4160c19880c8
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sun Mar 12 08:31:25 2017 +0100
-
-    Omega via svn r16040:
-    Also enable HF since i did fix important stuff earlier
-
-commit 2eca83f269491742a4ee2ab9980c54669b85c379
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sun Mar 12 08:30:26 2017 +0100
-
-    Omega via svn r16039:
-    same as last, with less bugs
-
-commit b3535f94f147294bc408123ad34010d1ea0b59ed
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sun Mar 12 08:15:38 2017 +0100
-
-    Omega via svn r16038:
-    *Added new infoframe prototypes. boss absorb and player absorb
-    *Player absorb is now used on chronmatic anomaly by default but a new drop down is available to switch between Time Release and Time Bomb
-    *Some code changes with how custom info frames are sorted, this may be buggy so be warned. It?\226?\128?\153s not tested.
-    *Added absorb tracker to sisters of the moon (both players and boss)
-
-commit e49f35f86f0ec45bb8cf5fead8e719fcba2ce8b1
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sun Mar 12 06:48:27 2017 +0100
-
-    Omega via svn r16037:
-    Drycode change to infoframe to avoid unnecessary and unwanted sorted on custom infoframes
-
-commit 35df13f7f36e41cc3a2c8ed2de3e0319a4046a76
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sun Mar 12 03:28:18 2017 +0100
-
-    Omega via svn r16036:
-    Add countdown options to guldan, which apparently has never had any. this is what happens when you spend 5-6 days a week on PTR instead of live.
-    Code cleanup.
-    Redundancy cleanup. (TODO, find another way to show empowerment in warnings)
-
-commit 03ccadd55727f59731ef902917ed12fbae674116
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sun Mar 12 02:45:01 2017 +0100
-
-    Omega via svn r16035:
-    More bugfixes to sisters, and working phase detection
-
-commit 4e8cb39279dc339f4ae529b3351d03265abd1a42
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sun Mar 12 00:29:25 2017 +0100
-
-    Omega via svn r16034:
+    Omega via svn r16080:
     Fix couple bugs
 
-commit 480f36c9a319c80fe9212bb53c513bbdb38d7f06
+commit 16a1dcd791e13c345db7a8551af9e0e003dd450d
 Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Mar 10 04:13:57 2017 +0100
+Date:   Fri Mar 24 00:19:23 2017 +0100
 
-    Omega via svn r16033:
-    More fixes to balls
+    Omega via svn r16079:
+    Fix mod typo
+    add Agronox drycode
 
-commit 167366d24f4730a59da3ed13358a8f911fc48b61
+commit 6162cb7953f884c3967f956dd342d83897e6612c
 Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Mar 10 03:17:37 2017 +0100
+Date:   Thu Mar 23 07:26:17 2017 +0100
 
-    Omega via svn r16032:
-    flare cd doesn?\226?\128?\153t reset
+    Omega via svn r16078:
+    Oh forgot this HF revision too for last updates berserk timer changes
 
-commit 311e87450bcf9e9d7f8f302bbadd0a1cb341f665
+commit 49c2bdc55b87d682d99d25ecefca79fce2d1c4c6
 Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Mar 10 02:54:12 2017 +0100
+Date:   Thu Mar 23 07:25:47 2017 +0100
 
-    Omega via svn r16031:
-    change warning priority
+    Omega via svn r16077:
+    Cleanup
 
-commit 9fc2554a78f647e000ccb49151e6119f195c85f3
+commit e9abe24bd5fea722570a3b527cae0872bb7651b9
 Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Mar 9 23:00:43 2017 +0100
+Date:   Thu Mar 23 07:22:54 2017 +0100
 
-    Omega via svn r16030:
-    Update LFR timers for Guldan
-    Add support for secondary flames cast in LFR/Normal
-    Minor text fixes
+    Omega via svn r16076:
+    Invert the fixate auras back onto casters instead of targets, to be 7.2 compatible (not as useful, but better than nothing, and might as well make change now)
 
-commit 0be5263935f519f4d4b754bb5de4fe9371b6f887
+commit 0cfc858caefdbe709feac9cad92162c263560bb0
 Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Mar 9 07:26:49 2017 +0100
+Date:   Thu Mar 23 07:09:42 2017 +0100
 
-    Omega via svn r16029:
-    Bump HF revision
+    Omega via svn r16075:
+    More analysis shows this is cleaner way to do  icons, since I didn?\226?\128?\153t factor how long they take to pop up
 
-commit 52f098b54d9d3d26ddc7a00932de9fff4040fe22
+commit f03496dd3392c1c826a61ff32f000e4ea923a219
 Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Mar 9 07:23:11 2017 +0100
+Date:   Thu Mar 23 06:52:30 2017 +0100
 
-    Omega via svn r16028:
-    work around another bug with flames of sargeras where two casts don?\226?\128?\153t fire in combat log but debuffs do
+    Omega via svn r16074:
+    more alluriel tweaks and bug fixes to tanking warning
+    Add a print on engage to ilgynoth to explain that if you overgear the encounter the add timers mean very little (adds will spawn faster if you overgear encounter, by design, just like first boss of HFC did)
 
-commit f0df71151c5150a56e1e34a2ce518d4865cf40d1
+commit 28640b35c86a930a45004470565043bc8488a19b
 Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Mar 9 06:48:48 2017 +0100
+Date:   Thu Mar 23 05:48:31 2017 +0100
 
-    Omega via svn r16027:
-    Work around a bug where solarist can?\226?\128?\153t find his balls.
+    Omega via svn r16073:
+    Fix bug with second icy phase timers being wrong.
+    improved timers for decimate as well
+    Changed fel soul warning to be when it?\226?\128?\153s targetable instead of the cast
 
-commit ab1a03713b7c79959dde2bfc9848014e06f74010
+commit a426053800fadce5acce2d1a838bdcd2ab36e8f6
 Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Mar 9 06:30:42 2017 +0100
+Date:   Wed Mar 22 23:07:36 2017 +0100
 
-    Omega via svn r16026:
-    Add some flare stuff back in
+    Omega via svn r16072:
+    This should fix winds 3
 
-commit 70f4dd0a9adbdad1b9dd9a9a5815fb1f73a84579
+commit 0bc6e052abc2b0fa7151433ac5206215dc14ad90
 Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Mar 9 06:11:45 2017 +0100
+Date:   Wed Mar 22 22:10:54 2017 +0100
 
-    Omega via svn r16025:
-    More stats
+    Omega via svn r16071:
+    Add more debug
 
-commit f6d0ff736613b859354836f8757748a1a5f0d487
+commit 9507acbbdca3b7448463a23c92224bbdc6e01968
 Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Mar 9 02:17:44 2017 +0100
+Date:   Wed Mar 22 22:04:53 2017 +0100
 
-    Omega via svn r16024:
-    Bump BW version
+    Omega via svn r16070:
+    more debug, more redundancy, more aggressive scans. honestly if this doesn?\226?\128?\153t work I?\226?\128?\153m scrapping scanformobs entirely and hard coding mob icon setting in onupdate handlers in mods themselves like old days. it worked and it was fast.
 
-commit 63fe3e82a9ef37c3796b0a370dbeec927e9635bd
+commit a6e993704e9d64bd2f70b97a9eee3c91acee5053
 Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Mar 9 00:27:47 2017 +0100
+Date:   Wed Mar 22 19:40:18 2017 +0100
 
-    Omega via svn r16023:
-    Show timers for secondary flames casts on heroic and mythic
+    tandanu via svn r16069:
+    make custom sorted lines last longer than one update
 
-commit c5f437d3a6be55ad87de9bdddeddc13148af34a0
+commit 880ebf016e818ca31985ea29c01ec4b4a227e9e8
 Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Mar 8 06:25:02 2017 +0100
+Date:   Wed Mar 22 11:43:54 2017 +0100
 
-    Omega via svn r16022:
-    Disable this timer, it?\226?\128?\153s just not very reliable
+    Omega via svn r16068:
+    small fix, if this is ever used
 
-commit 0e42e1773fa6c8d7ea21de0aa5fdf794b7c1bcc8
+commit 24a3b7972f2fdf43077747e9a90d32ac902dee00
 Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Mar 7 22:33:59 2017 +0100
+Date:   Wed Mar 22 02:40:39 2017 +0100
 
-    Omega via svn r16021:
-    on the fly fix numBoss and bossLeft when changing number of bosses after combatstart
+    Omega via svn r16067:
+    Fix logic bug with 3rd flames casts
 
-commit 91a38c0c0071c48fa2ad7220944bba48863fd414
+commit ff16839faaccfe260bd809fc3bce85a3c6873aef
 Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Mar 7 04:05:09 2017 +0100
+Date:   Wed Mar 22 02:22:39 2017 +0100
 
-    Omega via svn r16020:
-    Some fixes to maiden and fallen from todays mythic testing
+    Omega via svn r16066:
+    Fix bug with annoucning burst expiring
 
-commit 49a0448881575205d5b956269d3950d89e50bd91
+commit 6a79d7ded43d999fb8479cfc21655e72c495ec4d
 Author: subversion <svn@deadlybossmods.com>
-Date:   Mon Mar 6 20:47:37 2017 +0100
+Date:   Tue Mar 21 22:02:46 2017 +0100
 
-    Omega via svn r16019:
-    Fix lua error
-
-commit 485ede520d787fcc89ba77609b56446a773c6e61
-Author: subversion <svn@deadlybossmods.com>
-Date:   Mon Mar 6 10:00:11 2017 +0100
-
-    Omega via svn r16018:
-    Fix missing voice for tornados, not most ideal voice but workable for now
-
-commit 44df3cee4dff2e69c5ac071fe21e12bca2efd73f
-Author: subversion <svn@deadlybossmods.com>
-Date:   Mon Mar 6 05:24:27 2017 +0100
-
-    Omega via svn r16017:
-    Massive Sasszine update
-    phases
-    better timers
-    improved warnings and duplication cleanpu
-    hydra icons
-
-commit 34985b3be5f3f077c13d0153bfadd27aa0767c2c
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sun Mar 5 20:11:50 2017 +0100
-
-    ebmor via svn r16016:
-    deDE update
-
-commit 72aecaf80179ce2b0e01c2b5b8ec3986d853696f
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sun Mar 5 16:40:20 2017 +0100
-
-    ebmor via svn r16015:
-    deDE update
-
-commit 58a5b097027490cf953821c0857b4c260901377f
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sun Mar 5 10:24:34 2017 +0100
-
-    Omega via svn r16014:
-    Fix same typo in rest of mods
-
-commit 1d290eb2070f80685f062c3cb2a0d8706a9875c4
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sun Mar 5 09:19:05 2017 +0100
-
-    Omega via svn r16013:
-    Oh and add the VERY important shadow bolt volley
-
-commit f6266cca6b6acaf051e733b19c5e510baf133506
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sun Mar 5 09:09:03 2017 +0100
-
-    Omega via svn r16012:
-    Updated Goroth wambocombo timers for LFR
-    Fixed a bunch of spam on Harjatan as well as fixed a typo in events that caused several warnings/timers not to work. Draw in still bugged and not actually absorbing puddles so still can?\226?\128?\153t fine tune that stuff yet.
-    
-    Reduce redundancy on sasszine, i?\226?\128?\153ll fix phases and timers tomorrow. it?\226?\128?\153s late.
-
-commit 4fdcd9af272a0668b9a29ffbf8e0981a038e5a39
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sat Mar 4 02:39:14 2017 +0100
-
-    Omega via svn r16011:
-    tiny bit of mythic work to Sasszine pro V
-    phase detection still unknown. did not see a phase change. so mod is really counting on LFR this weekend to fix that as well
-
-commit 4ad52be2130eaf80dbd050050a6cade02525002e
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sat Mar 4 02:17:34 2017 +0100
-
-    Omega via svn r16010:
-    Some minor fixes to desolate host
-
-commit 2922e83ad8a35514fa6c6f76aae7c1cdb47cf3a1
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sat Mar 4 01:44:39 2017 +0100
-
-    Omega via svn r16009:
-    Fix moonglaive timer
-    Fix twlight glaive warning/timer
-    fix some pull timers
-    
-    still no phase changes. never got out of phase 1 mythic.
-
-commit d60d732b78a0b6d5080d606e5aa7c4f59756afb7
-Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Mar 3 22:53:45 2017 +0100
-
-    Omega via svn r16008:
-    Revert range frame back to what it was before
-    Only register UNIT_AURA if info frame is enabled
-
-commit c9ec693fdf7cc230fc6bfb42a54772faa5275b18
-Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Mar 3 22:41:37 2017 +0100
-
-    Omega via svn r16007:
-    Fix bug
-
-commit 6e5cd595d1ecca563773f92404ed6fc8dbcb8a31
-Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Mar 3 08:55:45 2017 +0100
-
-    Omega via svn r16006:
-    And push the goroth update
-
-commit 6f21729a1e8198ec7747810b608f0e9619473508
-Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Mar 3 08:13:19 2017 +0100
-
-    Omega via svn r16005:
-    Oh yeah, and add this for heck of it
-
-commit 7270f2fad1a1326678cf4878011e6bae413d3bcf
-Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Mar 3 08:06:25 2017 +0100
-
-    Omega via svn r16004:
-    post mythic testing updates for Demonic and Harjatan.
-
-commit 02a4ae35eeb510d034cea4864c1fd783be65fff8
-Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Mar 3 06:27:25 2017 +0100
-
-    Omega via svn r16003:
-    use lowest boss health for phase 1 and 2 reporting on botanist, and report only highest boss health in phase 3.
-    Added pre warning for grace of nature
-    changed audio countdown for grace o nature to start at 6 instead of 4
-    added option to auto mark naturalist telarn on pull
-
-commit ca99408620e5a6bc37ac4ff0025c9a2966761032
-Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Mar 3 05:23:57 2017 +0100
-
-    Omega via svn r16002:
-    Fix icon bug
-
-commit a465fb701ccfa22f1f9ad17687b72f702235038c
-Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Mar 3 01:05:11 2017 +0100
-
-    Omega via svn r16001:
-    Forgot green one
-
-commit 33e7f02e63bcf367be59b036a61774a099e5c34b
-Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Mar 3 00:58:04 2017 +0100
-
-    Omega via svn r16000:
-    Some Harjatan fixes, more to do after raid but right now this will have to do
-    Should fix phase change handling when 0 stacks of frost are absorbed (thus no frost phase)
-    Add hatching timer for mythic
-    Fixed timer for commanding roar, and changed timer for first one which was pushed up.
-
-commit 85fee9d617e15ef9cb6ad94ce43047418f09a0a4
-Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Mar 2 22:42:39 2017 +0100
-
-    Omega via svn r15999:
-    tormenting burst request and fix cast event for it
-
-commit 05331ac56f885a970bd97f0233147b53a6f4484b
-Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Mar 2 22:32:56 2017 +0100
-
-    Omega via svn r15998:
-    Change calified quills
-
-commit 73c76690cbb8b9e5e22523028ffbdcddd8ecf2c8
-Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Mar 2 19:13:14 2017 +0100
-
-    Omega via svn r15997:
-    Cancel winds timer when guldan dies, forgot this
-
-commit 0749ba654ce89ffdc4ab06820997401b9ea794f9
-Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Mar 2 17:53:11 2017 +0100
-
-    Omega via svn r15996:
-    KR update
-
-commit 8eda93ff092f4abd902dde47775522407b432ff8
-Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Mar 2 11:46:47 2017 +0100
-
-    tandanu via svn r15995:
+    tandanu via svn r16065:
     increment alpha version
 

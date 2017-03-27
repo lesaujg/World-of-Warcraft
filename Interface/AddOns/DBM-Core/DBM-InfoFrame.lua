@@ -261,7 +261,10 @@ local function sortGroupId(a, b) return getGroupId(DBM, a) < getGroupId(DBM, b) 
 local function updateLines(preSorted)
 	twipe(sortedLines)
 	if preSorted then
-		sortedLines = preSorted
+		-- copy table as code from mod keeps around references this this and the "normal" table is wiped regularly
+		for i, v in ipairs(preSorted) do
+			sortedLines[i] = v
+		end
 	else
 		for i in pairs(lines) do
 			sortedLines[#sortedLines + 1] = i
@@ -613,7 +616,7 @@ local function updateByFunction()
 			updateLines()--regular update lines with regular sort code
 		end
 	else--Nil, or bool/false
-		DBM:Debug("updateByFunction no sorting", 3)
+		DBM:Debug("updateByFunction no sorting or presorting", 3)
 		updateLines(presortedLines)--Update lines with sorting if provided by the custom function
 	end
 	if useIcon then
@@ -677,8 +680,10 @@ function onUpdate(frame)
 	if events[currentEvent] then
 		events[currentEvent]()
 	else
-		frame:Hide()
-		--error("DBM-InfoFrame: Unsupported event", 2)
+		if frame then
+			frame:Hide()
+			--error("DBM-InfoFrame: Unsupported event", 2)
+		end
 	end
 	local color = NORMAL_FONT_COLOR
 	frame:ClearLines()
@@ -798,6 +803,7 @@ function infoFrame:RegisterCallback(cb)
 end
 
 function infoFrame:Update()
+	frame = frame or createFrame()
 	onUpdate(frame)
 end
 
