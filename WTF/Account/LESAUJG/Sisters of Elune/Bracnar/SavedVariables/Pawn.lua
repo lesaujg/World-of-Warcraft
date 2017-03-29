@@ -1,10 +1,29 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0118,
+	["LastVersion"] = 2.02,
 	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
 	["AutoSelectScales"] = false,
 	["UpgradeTracking"] = false,
 	["LastKeybindingsSet"] = 1,
+	["Artifacts"] = {
+		[128861] = {
+			["Relics"] = {
+				{
+					["ItemLevel"] = 55,
+					["Type"] = "Wind",
+				}, -- [1]
+				{
+					["ItemLevel"] = 53,
+					["Type"] = "Arcane",
+				}, -- [2]
+				{
+					["ItemLevel"] = 52,
+					["Type"] = "Iron",
+				}, -- [3]
+			},
+			["Name"] = "Titanstrike",
+		},
+	},
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",

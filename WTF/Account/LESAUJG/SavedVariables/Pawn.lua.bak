@@ -1,841 +1,680 @@
 
 PawnCommon = {
 	["Digits"] = 1,
-	["ShowSpace"] = true,
 	["AlignNumbersRight"] = false,
+	["ShowBagUpgradeAdvisor"] = true,
 	["ShowItemID"] = false,
-	["ShowValuesForUpgradesOnly"] = true,
+	["ShowRelicUpgrades"] = true,
+	["ShowValuesForUpgradesOnly"] = false,
+	["ShowUpgradesOnTooltips"] = true,
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
-	["ShownGettingStarted"] = true,
+	["ShowSpecIcons"] = true,
 	["ShowSocketingAdvisor"] = true,
 	["Scales"] = {
-		["\"Wowhead\":ShamanEnhancement"] = {
-			["Color"] = "6e95ff",
-			["LocalizedName"] = "Shaman: enhancement",
-			["DoNotShow2HUpgrades"] = true,
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "526fbf",
+		["\"MrRobot\":HUNTER3"] = {
+			["IconTexturePath"] = 461113,
 			["PerCharacterOptions"] = {
 			},
-		},
-		["\"Wowhead\":DeathKnightUnholyDps"] = {
-			["Color"] = "ff4d6b",
-			["LocalizedName"] = "DK: unholy",
-			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = true,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "bf3950",
-			["PerCharacterOptions"] = {
-			},
-		},
-		["\"Wowhead\":RogueAssassination"] = {
-			["Color"] = "fff569",
-			["LocalizedName"] = "Rogue: assassination",
-			["DoNotShow2HUpgrades"] = true,
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "bfb74e",
-			["PerCharacterOptions"] = {
-			},
-		},
-		["\"Wowhead\":WarriorArms"] = {
-			["Color"] = "c79c6e",
-			["LocalizedName"] = "Warrior: arms",
-			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = true,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "957552",
-			["PerCharacterOptions"] = {
-			},
-		},
-		["\"Wowhead\":WarlockDestruction"] = {
-			["Color"] = "bca5ff",
-			["LocalizedName"] = "Warlock: destruction",
-			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "8d7bbf",
-			["PerCharacterOptions"] = {
-			},
-		},
-		["\"Wowhead\":MonkMistweaver"] = {
-			["Color"] = "00ff96",
-			["LocalizedName"] = "Monk: mistweaver",
-			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "00bf70",
-			["PerCharacterOptions"] = {
-			},
-		},
-		["\"Wowhead\":PaladinTank"] = {
-			["Color"] = "f58cba",
-			["LocalizedName"] = "Paladin: tank",
-			["DoNotShow2HUpgrades"] = true,
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "b7698b",
-			["PerCharacterOptions"] = {
-			},
-		},
-		["\"Wowhead\":HunterBeastMastery"] = {
 			["Color"] = "abd473",
-			["LocalizedName"] = "Hunter: beast mastery",
-			["DoNotShow2HUpgrades"] = false,
+			["ClassID"] = 3,
+			["LocalizedName"] = "Hunter: Survival",
 			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
+			["Provider"] = "MrRobot",
+			["SpecID"] = 3,
 			["UnenchantedColor"] = "809f56",
+		},
+		["\"MrRobot\":WARLOCK1"] = {
+			["IconTexturePath"] = 136145,
 			["PerCharacterOptions"] = {
-				["Bracnar-Sisters of Elune"] = {
+			},
+			["Color"] = "8788ee",
+			["ClassID"] = 9,
+			["LocalizedName"] = "Warlock: Affliction",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 1,
+			["UnenchantedColor"] = "6566b2",
+		},
+		["\"MrRobot\":SHAMAN1"] = {
+			["IconTexturePath"] = 136048,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "0070de",
+			["ClassID"] = 7,
+			["LocalizedName"] = "Shaman: Elemental",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 1,
+			["UnenchantedColor"] = "0054a6",
+		},
+		["MM - Single-Target"] = {
+			["PerCharacterOptions"] = {
+			},
+			["Values"] = {
+				["Agility"] = 1,
+				["HasteRating"] = 0.43,
+				["MasteryRating"] = 0.55,
+				["CritRating"] = 0.65,
+				["Dps"] = 2.5,
+				["Versatility"] = 0.56,
+			},
+			["UpgradesFollowSpecialization"] = true,
+		},
+		["\"MrRobot\":PRIEST3"] = {
+			["IconTexturePath"] = 136207,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "ffffff",
+			["ClassID"] = 5,
+			["LocalizedName"] = "Priest: Shadow",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "bfbfbf",
+		},
+		["\"MrRobot\":HUNTER2"] = {
+			["IconTexturePath"] = 236179,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "abd473",
+			["ClassID"] = 3,
+			["LocalizedName"] = "Hunter: Marksmanship",
+			["DoNotShow1HUpgrades"] = true,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "809f56",
+		},
+		["\"MrRobot\":DRUID1"] = {
+			["IconTexturePath"] = 136096,
+			["PerCharacterOptions"] = {
+				["Uldaris-Sisters of Elune"] = {
 					["Visible"] = true,
-					["BestItems"] = {
-						["INVTYPE_HEAD"] = {
-							141.903928432517, -- [1]
-							"item:113863:0:0:0:0:0:0:0:0:0:3:1:560:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_FEET"] = {
-							117.072734344613, -- [1]
-							"item:113954:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_CLOAK"] = {
-							85.4278490859588, -- [1]
-							"item:113929:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_2HWEAPON"] = {
-							141.991831971995, -- [1]
-							"item:109168:0:0:0:0:0:0:0:0:0:13:3:594:532:74:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_FINGER"] = {
-							90.2512640995722, -- [1]
-							"item:118302:0:0:0:0:0:0:0:0:0:11:0:0:0:0:0", -- [2]
-							0, -- [3]
-							73.4982497082847, -- [4]
-							"item:113843:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [5]
-							0, -- [6]
-						},
-						["INVTYPE_HAND"] = {
-							104.909762738234, -- [1]
-							"item:113915:0:0:0:0:0:0:0:0:0:3:1:563:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_WRIST"] = {
-							75.2757681835862, -- [1]
-							"item:113943:0:0:0:0:0:0:0:0:0:3:1:42:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_WAIST"] = {
-							97.316219369895, -- [1]
-							"item:118887:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_NECK"] = {
-							87.8549202644885, -- [1]
-							"item:113865:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_SHOULDER"] = {
-							116.217036172695, -- [1]
-							"item:115547:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_LEGS"] = {
-							126.428238039673, -- [1]
-							"item:115435:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_CHEST"] = {
-							155.183975106962, -- [1]
-							"item:113982:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-					},
 				},
 			},
-		},
-		["\"Wowhead\":PaladinHoly"] = {
-			["Color"] = "f58cba",
-			["LocalizedName"] = "Paladin: holy",
-			["DoNotShow2HUpgrades"] = true,
+			["Color"] = "ff7d0a",
+			["ClassID"] = 11,
+			["LocalizedName"] = "Druid: Balance",
 			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "b7698b",
-			["PerCharacterOptions"] = {
-			},
-		},
-		["\"Wowhead\":RogueCombat"] = {
-			["Color"] = "fff569",
-			["LocalizedName"] = "Rogue: combat",
-			["DoNotShow2HUpgrades"] = true,
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "bfb74e",
-			["PerCharacterOptions"] = {
-			},
-		},
-		["\"Wowhead\":PriestDiscipline"] = {
-			["Color"] = "e0e0e0",
-			["LocalizedName"] = "Priest: discipline",
+			["Role"] = "DAMAGER",
 			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
 			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "a8a8a8",
-			["PerCharacterOptions"] = {
-			},
+			["Provider"] = "MrRobot",
+			["SpecID"] = 1,
+			["UnenchantedColor"] = "bf5d07",
 		},
-		["\"Wowhead\":DeathKnightBloodTank"] = {
-			["Color"] = "ff4d6b",
-			["LocalizedName"] = "DK: blood",
-			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = true,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "bf3950",
-			["PerCharacterOptions"] = {
-			},
-		},
-		["\"Wowhead\":MageFrost"] = {
-			["Color"] = "69ccf0",
-			["LocalizedName"] = "Mage: frost",
-			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "4e99b3",
-			["PerCharacterOptions"] = {
-			},
-		},
-		["\"Wowhead\":ShamanRestoration"] = {
-			["Color"] = "6e95ff",
-			["LocalizedName"] = "Shaman: restoration",
-			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "526fbf",
-			["PerCharacterOptions"] = {
-			},
-		},
-		["\"Wowhead\":MageFire"] = {
-			["Color"] = "69ccf0",
-			["LocalizedName"] = "Mage: fire",
-			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "4e99b3",
-			["PerCharacterOptions"] = {
-			},
-		},
-		["Azor-BM"] = {
+		["Azor-Marksmanship"] = {
 			["PerCharacterOptions"] = {
 				["Bracnar-Sisters of Elune"] = {
 					["Visible"] = true,
-					["BestItems"] = {
-						["INVTYPE_HEAD"] = {
-							398.55, -- [1]
-							"item:113863:0:0:0:0:0:0:0:0:0:3:1:560:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_FEET"] = {
-							338.36, -- [1]
-							"item:113954:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_2HWEAPON"] = {
-							737.640689655172, -- [1]
-							"item:109168:0:0:0:0:0:0:0:0:0:13:3:594:532:74:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_CLOAK"] = {
-							255.8, -- [1]
-							"item:113929:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_FINGER"] = {
-							253.29, -- [1]
-							"item:118302:0:0:0:0:0:0:0:0:0:11:0:0:0:0:0", -- [2]
-							0, -- [3]
-							215.19, -- [4]
-							"item:113843:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [5]
-							0, -- [6]
-						},
-						["INVTYPE_HAND"] = {
-							305.25, -- [1]
-							"item:113915:0:0:0:0:0:0:0:0:0:3:1:563:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_WRIST"] = {
-							211.53, -- [1]
-							"item:113943:0:0:0:0:0:0:0:0:0:3:1:42:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_WAIST"] = {
-							280.89, -- [1]
-							"item:118887:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_NECK"] = {
-							247.48, -- [1]
-							"item:113865:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_SHOULDER"] = {
-							335.9, -- [1]
-							"item:115547:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_LEGS"] = {
-							371.02, -- [1]
-							"item:115435:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_CHEST"] = {
-							446.22, -- [1]
-							"item:113982:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-					},
 				},
 			},
 			["Values"] = {
-				["IsWand"] = -1000000,
-				["IsFist"] = -1000000,
-				["Is2HMace"] = -1000000,
-				["IsMace"] = -1000000,
-				["CritRating"] = 0.42,
-				["IsStaff"] = -1000000,
-				["ResilienceRating"] = -1000000,
-				["BonusArmor"] = -1000000,
+				["Versatility"] = 0.91,
 				["Agility"] = 1,
-				["HasteRating"] = 0.47,
-				["MasteryRating"] = 0.48,
-				["Versatility"] = 0.41,
-				["IsPolearm"] = -1000000,
-				["IsPlate"] = -1000000,
-				["IsOffHand"] = -1000000,
-				["IsFrill"] = -1000000,
-				["Is2HAxe"] = -1000000,
-				["SpellPenetration"] = -1000000,
-				["IsDagger"] = -1000000,
-				["Dps"] = 0.74,
-				["IsCloth"] = -1000000,
-				["IsSword"] = -1000000,
-				["IsLeather"] = -1000000,
-				["Multistrike"] = 0.45,
-				["IsShield"] = -1000000,
-				["Is2HSword"] = -1000000,
-				["SpellPower"] = -1000000,
-				["IsAxe"] = -1000000,
-				["Ap"] = 0.9,
+				["HasteRating"] = 1.08,
+				["MasteryRating"] = 1.34,
+				["CritRating"] = 0.99,
+				["Dps"] = 3.26,
+				["RangedDps"] = 3.26,
 			},
 			["UpgradesFollowSpecialization"] = true,
 		},
-		["\"Wowhead\":WarriorFury"] = {
-			["Color"] = "c79c6e",
-			["LocalizedName"] = "Warrior: fury",
-			["DoNotShow2HUpgrades"] = false,
+		["\"MrRobot\":WARLOCK3"] = {
+			["IconTexturePath"] = 136186,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "8788ee",
+			["ClassID"] = 9,
+			["LocalizedName"] = "Warlock: Destruction",
 			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "957552",
-			["PerCharacterOptions"] = {
-			},
-		},
-		["\"Wowhead\":DeathKnightFrostDps"] = {
-			["Color"] = "ff4d6b",
-			["LocalizedName"] = "DK: frost",
+			["Role"] = "DAMAGER",
 			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
 			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "bf3950",
-			["PerCharacterOptions"] = {
-			},
+			["Provider"] = "MrRobot",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "6566b2",
 		},
-		["\"Wowhead\":WarlockDemonology"] = {
-			["Color"] = "bca5ff",
-			["LocalizedName"] = "Warlock: demonology",
-			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "8d7bbf",
+		["\"MrRobot\":ROGUE2"] = {
+			["IconTexturePath"] = 135340,
 			["PerCharacterOptions"] = {
-			},
-		},
-		["\"Wowhead\":MonkBrewmaster"] = {
-			["Color"] = "00ff96",
-			["LocalizedName"] = "Monk: brewmaster",
-			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "00bf70",
-			["PerCharacterOptions"] = {
-			},
-		},
-		["\"Wowhead\":DruidRestoration"] = {
-			["Color"] = "ff7d0a",
-			["LocalizedName"] = "Druid: restoration",
-			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "bf5d07",
-			["PerCharacterOptions"] = {
-			},
-		},
-		["\"Wowhead\":DruidFeralTank"] = {
-			["Color"] = "ff7d0a",
-			["LocalizedName"] = "Druid: guardian",
-			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = true,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "bf5d07",
-			["PerCharacterOptions"] = {
-			},
-		},
-		["\"Wowhead\":HunterMarksman"] = {
-			["Color"] = "abd473",
-			["LocalizedName"] = "Hunter: marksman",
-			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "809f56",
-			["PerCharacterOptions"] = {
-				["Bracnar-Sisters of Elune"] = {
+				["Mandelbrot-Sisters of Elune"] = {
 					["Visible"] = true,
-					["BestItems"] = {
-						["INVTYPE_HEAD"] = {
-							144.353194825559, -- [1]
-							"item:113863:0:0:0:0:0:0:0:0:0:3:1:560:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_FEET"] = {
-							119.62916503332, -- [1]
-							"item:113849:0:0:0:0:0:0:0:0:0:6:1:567:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_CLOAK"] = {
-							82.8361426891415, -- [1]
-							"item:113929:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_2HWEAPON"] = {
-							146.46452371619, -- [1]
-							"item:109168:0:0:0:0:0:0:0:0:0:13:3:594:532:74:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_FINGER"] = {
-							91.8016464131713, -- [1]
-							"item:118302:0:0:0:0:0:0:0:0:0:11:0:0:0:0:0", -- [2]
-							0, -- [3]
-							73.6275970207762, -- [4]
-							"item:113843:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [5]
-							0, -- [6]
-						},
-						["INVTYPE_HAND"] = {
-							104.066248529988, -- [1]
-							"item:113915:0:0:0:0:0:0:0:0:0:3:1:563:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_WRIST"] = {
-							76.5793806350451, -- [1]
-							"item:113943:0:0:0:0:0:0:0:0:0:3:1:42:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_WAIST"] = {
-							97.2559780478244, -- [1]
-							"item:118887:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_NECK"] = {
-							90.5821246569973, -- [1]
-							"item:113865:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_SHOULDER"] = {
-							115.513132105057, -- [1]
-							"item:115547:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_LEGS"] = {
-							128.39945119561, -- [1]
-							"item:115435:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_CHEST"] = {
-							155.828302626421, -- [1]
-							"item:113982:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-					},
 				},
 			},
-		},
-		["\"Wowhead\":RogueSubtlety"] = {
 			["Color"] = "fff569",
-			["LocalizedName"] = "Rogue: subtlety",
-			["DoNotShow2HUpgrades"] = true,
+			["ClassID"] = 4,
+			["LocalizedName"] = "Rogue: Outlaw",
 			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = true,
 			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
+			["Provider"] = "MrRobot",
+			["SpecID"] = 2,
 			["UnenchantedColor"] = "bfb74e",
+		},
+		["BM - Single-Target"] = {
 			["PerCharacterOptions"] = {
 			},
-		},
-		["\"Wowhead\":ShamanElemental"] = {
-			["Color"] = "6e95ff",
-			["LocalizedName"] = "Shaman: elemental",
-			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
+			["Values"] = {
+				["Agility"] = 1,
+				["HasteRating"] = 0.53,
+				["MasteryRating"] = 0.52,
+				["CritRating"] = 0.5,
+				["Dps"] = 0.76,
+				["Versatility"] = 0.5,
+			},
 			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "526fbf",
+		},
+		["\"MrRobot\":WARRIOR3"] = {
+			["IconTexturePath"] = 132341,
 			["PerCharacterOptions"] = {
 			},
-		},
-		["\"Wowhead\":PaladinRetribution"] = {
-			["Color"] = "f58cba",
-			["LocalizedName"] = "Paladin: retribution",
-			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = true,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "b7698b",
-			["PerCharacterOptions"] = {
-			},
-		},
-		["\"Wowhead\":MageArcane"] = {
-			["Color"] = "69ccf0",
-			["LocalizedName"] = "Mage: arcane",
-			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "4e99b3",
-			["PerCharacterOptions"] = {
-			},
-		},
-		["\"Wowhead\":DruidFeralDps"] = {
-			["Color"] = "ff7d0a",
-			["LocalizedName"] = "Druid: feral",
-			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = true,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "bf5d07",
-			["PerCharacterOptions"] = {
-			},
-		},
-		["\"Wowhead\":WarriorTank"] = {
 			["Color"] = "c79c6e",
-			["LocalizedName"] = "Warrior: tank",
-			["DoNotShow2HUpgrades"] = true,
+			["ClassID"] = 1,
+			["LocalizedName"] = "Warrior: Protection",
 			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = true,
 			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
+			["Provider"] = "MrRobot",
+			["SpecID"] = 3,
 			["UnenchantedColor"] = "957552",
+		},
+		["SV - Single-Target"] = {
 			["PerCharacterOptions"] = {
 			},
+			["Values"] = {
+				["Agility"] = 1,
+				["HasteRating"] = 0.42,
+				["MasteryRating"] = 0.41,
+				["CritRating"] = 0.49,
+				["Dps"] = 1,
+				["Versatility"] = 0.5,
+			},
+			["UpgradesFollowSpecialization"] = true,
 		},
-		["Azor-SV"] = {
+		["\"MrRobot\":DEMONHUNTER1"] = {
+			["IconTexturePath"] = 1247264,
+			["PerCharacterOptions"] = {
+				["Leanara-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
+			},
+			["Color"] = "a330c9",
+			["ClassID"] = 12,
+			["LocalizedName"] = "Demon Hunter: Havoc",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = true,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 1,
+			["UnenchantedColor"] = "7a2496",
+		},
+		["\"MrRobot\":DEATHKNIGHT1"] = {
+			["IconTexturePath"] = 135770,
+			["PerCharacterOptions"] = {
+				["Belrath-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
+			},
+			["Color"] = "ff4d6b",
+			["ClassID"] = 6,
+			["LocalizedName"] = "Death Knight: Blood",
+			["DoNotShow1HUpgrades"] = true,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 1,
+			["UnenchantedColor"] = "bf3950",
+		},
+		["Azor-BeastMastery"] = {
 			["PerCharacterOptions"] = {
 				["Bracnar-Sisters of Elune"] = {
 					["Visible"] = true,
-					["BestItems"] = {
-						["INVTYPE_HEAD"] = {
-							390.157, -- [1]
-							"item:113863:0:0:0:0:0:0:0:0:0:3:1:560:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_FEET"] = {
-							349.24, -- [1]
-							"item:113849:0:0:0:0:0:0:0:0:0:6:1:567:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_2HWEAPON"] = {
-							793.909655172414, -- [1]
-							"item:109168:0:0:0:0:0:0:0:0:0:13:3:594:532:74:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_CLOAK"] = {
-							214.2, -- [1]
-							"item:113929:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_FINGER"] = {
-							247.951, -- [1]
-							"item:118302:0:0:0:0:0:0:0:0:0:11:0:0:0:0:0", -- [2]
-							0, -- [3]
-							193.39, -- [4]
-							"item:113843:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [5]
-							0, -- [6]
-						},
-						["INVTYPE_HAND"] = {
-							286.525, -- [1]
-							"item:113915:0:0:0:0:0:0:0:0:0:3:1:563:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_WRIST"] = {
-							207.071, -- [1]
-							"item:113943:0:0:0:0:0:0:0:0:0:3:1:42:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_WAIST"] = {
-							284.03, -- [1]
-							"item:118887:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_NECK"] = {
-							267.24, -- [1]
-							"item:113865:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_SHOULDER"] = {
-							332.74, -- [1]
-							"item:115547:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_LEGS"] = {
-							370.28, -- [1]
-							"item:115435:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_CHEST"] = {
-							458.86, -- [1]
-							"item:113982:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-					},
 				},
 			},
 			["Values"] = {
-				["IsWand"] = -1000000,
-				["IsFist"] = -1000000,
-				["Is2HMace"] = -1000000,
-				["IsMace"] = -1000000,
-				["SpellPenetration"] = -1000000,
-				["IsStaff"] = -1000000,
-				["ResilienceRating"] = -1000000,
-				["BonusArmor"] = -1000000,
+				["Versatility"] = 0.64,
 				["Agility"] = 1,
-				["HasteRating"] = 0.27,
-				["MasteryRating"] = 0.28,
-				["Versatility"] = 0.391,
-				["IsPolearm"] = -1000000,
-				["IsPlate"] = -1000000,
-				["IsOffHand"] = -1000000,
-				["IsFrill"] = -1000000,
-				["Is2HAxe"] = -1000000,
-				["CritRating"] = 0.39,
-				["IsDagger"] = -1000000,
-				["Dps"] = 0.79,
-				["IsCloth"] = -1000000,
-				["IsSword"] = -1000000,
-				["IsLeather"] = -1000000,
-				["Multistrike"] = 0.67,
-				["IsShield"] = -1000000,
-				["Is2HSword"] = -1000000,
-				["SpellPower"] = -1000000,
-				["IsAxe"] = -1000000,
-				["Ap"] = 0.9,
+				["HasteRating"] = 0.83,
+				["MasteryRating"] = 0.93,
+				["CritRating"] = 0.7,
+				["Dps"] = 0.49,
+				["RangedDps"] = 0.49,
 			},
 			["UpgradesFollowSpecialization"] = true,
 		},
-		["\"Wowhead\":DruidBalance"] = {
-			["Color"] = "ff7d0a",
-			["LocalizedName"] = "Druid: balance",
-			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "bf5d07",
+		["\"MrRobot\":MONK1"] = {
+			["IconTexturePath"] = 608951,
 			["PerCharacterOptions"] = {
 			},
-		},
-		["\"Wowhead\":MonkWindwalker"] = {
 			["Color"] = "00ff96",
-			["LocalizedName"] = "Monk: windwalker",
-			["DoNotShow2HUpgrades"] = false,
+			["ClassID"] = 10,
+			["LocalizedName"] = "Monk: Brewmaster",
 			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
+			["Provider"] = "MrRobot",
+			["SpecID"] = 1,
 			["UnenchantedColor"] = "00bf70",
-			["PerCharacterOptions"] = {
-			},
 		},
-		["\"Wowhead\":HunterSurvival"] = {
-			["Color"] = "abd473",
-			["LocalizedName"] = "Hunter: survival",
-			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "809f56",
+		["Azor-Survival"] = {
 			["PerCharacterOptions"] = {
 				["Bracnar-Sisters of Elune"] = {
 					["Visible"] = true,
-					["BestItems"] = {
-						["INVTYPE_HEAD"] = {
-							152.842127842128, -- [1]
-							"item:113863:0:0:0:0:0:0:0:0:0:3:1:560:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_FEET"] = {
-							128.345774345774, -- [1]
-							"item:113849:0:0:0:0:0:0:0:0:0:6:1:567:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_CLOAK"] = {
-							83.961818961819, -- [1]
-							"item:113929:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_2HWEAPON"] = {
-							157.525096525097, -- [1]
-							"item:109168:0:0:0:0:0:0:0:0:0:13:3:594:532:74:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_FINGER"] = {
-							97.2097812097812, -- [1]
-							"item:118302:0:0:0:0:0:0:0:0:0:11:0:0:0:0:0", -- [2]
-							0, -- [3]
-							75.8747318747319, -- [4]
-							"item:113843:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [5]
-							0, -- [6]
-						},
-						["INVTYPE_HAND"] = {
-							108.825825825826, -- [1]
-							"item:113915:0:0:0:0:0:0:0:0:0:3:1:563:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_WRIST"] = {
-							81.0742170742171, -- [1]
-							"item:113943:0:0:0:0:0:0:0:0:0:3:1:42:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_WAIST"] = {
-							103.041613041613, -- [1]
-							"item:118887:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_NECK"] = {
-							97.3466323466324, -- [1]
-							"item:113865:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_SHOULDER"] = {
-							121.910767910768, -- [1]
-							"item:115547:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_LEGS"] = {
-							134.992277992278, -- [1]
-							"item:115435:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0", -- [2]
-							0, -- [3]
-						},
-						["INVTYPE_CHEST"] = {
-							165.760617760618, -- [1]
-							"item:113982:0:0:0:0:0:0:0:0:0:5:1:566:0:0:0", -- [2]
-							0, -- [3]
-						},
-					},
 				},
 			},
-		},
-		["\"Wowhead\":WarlockAffliction"] = {
-			["Color"] = "bca5ff",
-			["LocalizedName"] = "Warlock: affliction",
-			["DoNotShow2HUpgrades"] = false,
-			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
+			["Values"] = {
+				["Versatility"] = 0.68,
+				["Agility"] = 1,
+				["HasteRating"] = 0.56,
+				["MasteryRating"] = 0.58,
+				["CritRating"] = 0.62,
+				["Dps"] = 1.12,
+				["MeleeDps"] = 1.12,
+			},
 			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "8d7bbf",
+		},
+		["\"MrRobot\":ROGUE1"] = {
+			["IconTexturePath"] = 236270,
 			["PerCharacterOptions"] = {
 			},
-		},
-		["\"Wowhead\":PriestHoly"] = {
-			["Color"] = "e0e0e0",
-			["LocalizedName"] = "Priest: holy",
-			["DoNotShow2HUpgrades"] = false,
+			["Color"] = "fff569",
+			["ClassID"] = 4,
+			["LocalizedName"] = "Rogue: Assassination",
 			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = true,
 			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "a8a8a8",
+			["Provider"] = "MrRobot",
+			["SpecID"] = 1,
+			["UnenchantedColor"] = "bfb74e",
+		},
+		["\"MrRobot\":PRIEST2"] = {
+			["IconTexturePath"] = 237542,
 			["PerCharacterOptions"] = {
 			},
-		},
-		["\"Wowhead\":PriestShadow"] = {
-			["Color"] = "e0e0e0",
-			["LocalizedName"] = "Priest: shadow",
-			["DoNotShow2HUpgrades"] = false,
+			["Color"] = "ffffff",
+			["ClassID"] = 5,
+			["LocalizedName"] = "Priest: Holy",
 			["DoNotShow1HUpgrades"] = false,
-			["NormalizationFactor"] = 1,
+			["Role"] = "HEALER",
+			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "Wowhead",
-			["UnenchantedColor"] = "a8a8a8",
+			["Provider"] = "MrRobot",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "bfbfbf",
+		},
+		["\"MrRobot\":MAGE2"] = {
+			["IconTexturePath"] = 135810,
+			["PerCharacterOptions"] = {
+				["Ghiaccioli-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
+			},
+			["Color"] = "3fc7eb",
+			["ClassID"] = 8,
+			["LocalizedName"] = "Mage: Fire",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "2f95b0",
+		},
+		["\"MrRobot\":PALADIN1"] = {
+			["IconTexturePath"] = 135920,
 			["PerCharacterOptions"] = {
 			},
+			["Color"] = "f58cba",
+			["ClassID"] = 2,
+			["LocalizedName"] = "Paladin: Holy",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "HEALER",
+			["DoNotShow2HUpgrades"] = true,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 1,
+			["UnenchantedColor"] = "b7698b",
+		},
+		["\"MrRobot\":MAGE3"] = {
+			["IconTexturePath"] = 135846,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "3fc7eb",
+			["ClassID"] = 8,
+			["LocalizedName"] = "Mage: Frost",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "2f95b0",
+		},
+		["\"MrRobot\":WARRIOR1"] = {
+			["IconTexturePath"] = 132355,
+			["PerCharacterOptions"] = {
+				["Torinar-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
+			},
+			["Color"] = "c79c6e",
+			["ClassID"] = 1,
+			["LocalizedName"] = "Warrior: Arms",
+			["DoNotShow1HUpgrades"] = true,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 1,
+			["UnenchantedColor"] = "957552",
+		},
+		["\"MrRobot\":WARLOCK2"] = {
+			["IconTexturePath"] = 136172,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "8788ee",
+			["ClassID"] = 9,
+			["LocalizedName"] = "Warlock: Demonology",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "6566b2",
+		},
+		["\"MrRobot\":ROGUE3"] = {
+			["IconTexturePath"] = 132320,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "fff569",
+			["ClassID"] = 4,
+			["LocalizedName"] = "Rogue: Subtlety",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = true,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "bfb74e",
+		},
+		["\"MrRobot\":SHAMAN3"] = {
+			["IconTexturePath"] = 136052,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "0070de",
+			["ClassID"] = 7,
+			["LocalizedName"] = "Shaman: Restoration",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "HEALER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "0054a6",
+		},
+		["\"MrRobot\":PALADIN2"] = {
+			["IconTexturePath"] = 236264,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "f58cba",
+			["ClassID"] = 2,
+			["LocalizedName"] = "Paladin: Protection",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = true,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "b7698b",
+		},
+		["\"MrRobot\":DRUID2"] = {
+			["IconTexturePath"] = 132115,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "ff7d0a",
+			["ClassID"] = 11,
+			["LocalizedName"] = "Druid: Feral",
+			["DoNotShow1HUpgrades"] = true,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "bf5d07",
+		},
+		["\"MrRobot\":HUNTER1"] = {
+			["IconTexturePath"] = 461112,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "abd473",
+			["ClassID"] = 3,
+			["LocalizedName"] = "Hunter: Beast Mastery",
+			["DoNotShow1HUpgrades"] = true,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 1,
+			["UnenchantedColor"] = "809f56",
+		},
+		["\"MrRobot\":PALADIN3"] = {
+			["IconTexturePath"] = 135873,
+			["PerCharacterOptions"] = {
+				["Galinar-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
+				["Herbinator-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
+			},
+			["Color"] = "f58cba",
+			["ClassID"] = 2,
+			["LocalizedName"] = "Paladin: Retribution",
+			["DoNotShow1HUpgrades"] = true,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "b7698b",
+		},
+		["\"MrRobot\":DEATHKNIGHT3"] = {
+			["IconTexturePath"] = 135775,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "ff4d6b",
+			["ClassID"] = 6,
+			["LocalizedName"] = "Death Knight: Unholy",
+			["DoNotShow1HUpgrades"] = true,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "bf3950",
+		},
+		["\"MrRobot\":WARRIOR2"] = {
+			["IconTexturePath"] = 132347,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "c79c6e",
+			["ClassID"] = 1,
+			["LocalizedName"] = "Warrior: Fury",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "957552",
+		},
+		["\"MrRobot\":MONK2"] = {
+			["IconTexturePath"] = 608952,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "00ff96",
+			["ClassID"] = 10,
+			["LocalizedName"] = "Monk: Mistweaver",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "HEALER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "00bf70",
+		},
+		["\"MrRobot\":DEATHKNIGHT2"] = {
+			["IconTexturePath"] = 135773,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "ff4d6b",
+			["ClassID"] = 6,
+			["LocalizedName"] = "Death Knight: Frost",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = true,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "bf3950",
+		},
+		["\"MrRobot\":DEMONHUNTER2"] = {
+			["IconTexturePath"] = 1247265,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "a330c9",
+			["ClassID"] = 12,
+			["LocalizedName"] = "Demon Hunter: Vengeance",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = true,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "7a2496",
+		},
+		["\"MrRobot\":MAGE1"] = {
+			["IconTexturePath"] = 135932,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "3fc7eb",
+			["ClassID"] = 8,
+			["LocalizedName"] = "Mage: Arcane",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 1,
+			["UnenchantedColor"] = "2f95b0",
+		},
+		["\"MrRobot\":DRUID4"] = {
+			["IconTexturePath"] = 136041,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "ff7d0a",
+			["ClassID"] = 11,
+			["LocalizedName"] = "Druid: Restoration",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "HEALER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 4,
+			["UnenchantedColor"] = "bf5d07",
+		},
+		["\"MrRobot\":DRUID3"] = {
+			["IconTexturePath"] = 132276,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "ff7d0a",
+			["ClassID"] = 11,
+			["LocalizedName"] = "Druid: Guardian",
+			["DoNotShow1HUpgrades"] = true,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "bf5d07",
+		},
+		["\"MrRobot\":PRIEST1"] = {
+			["IconTexturePath"] = 135940,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "ffffff",
+			["ClassID"] = 5,
+			["LocalizedName"] = "Priest: Discipline",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "HEALER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 1,
+			["UnenchantedColor"] = "bfbfbf",
+		},
+		["\"MrRobot\":SHAMAN2"] = {
+			["IconTexturePath"] = 237581,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "0070de",
+			["ClassID"] = 7,
+			["LocalizedName"] = "Shaman: Enhancement",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = true,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "0054a6",
+		},
+		["\"MrRobot\":MONK3"] = {
+			["IconTexturePath"] = 608953,
+			["PerCharacterOptions"] = {
+				["Orig-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
+			},
+			["Color"] = "00ff96",
+			["ClassID"] = 10,
+			["LocalizedName"] = "Monk: Windwalker",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = true,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "00bf70",
 		},
 	},
-	["LastVersion"] = 1.916,
+	["ShowLootUpgradeAdvisor"] = true,
 	["ButtonPosition"] = 2,
 	["IgnoreGemsWhileLeveling"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["ShowLootUpgradeAdvisor"] = true,
-	["ShowUpgradesOnTooltips"] = true,
+	["LastVersion"] = 2.02,
+	["ShownGettingStarted"] = true,
 }

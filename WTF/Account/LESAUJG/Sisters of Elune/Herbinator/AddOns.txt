@@ -135,7 +135,7 @@ TomTom: disabled
 Shrapnel: disabled
 Ovale: disabled
 Quartz: disabled
-BaudManifest: enabled
+BaudManifest: disabled
 AskMrRobot: disabled
 Factionizer: disabled
 GTFO: disabled

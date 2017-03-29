@@ -25,166 +25,165 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Thursday 3/23",
+		["date"] = "Tuesday 3/28",
 		["rows"] = 1,
 	}, -- [1]
 	{
-		["date"] = "Wednesday 3/22",
-		["rows"] = 2,
+		["date"] = "Thursday 3/23",
+		["rows"] = 1,
 	}, -- [2]
 	{
-		["date"] = "Sunday 2/12",
+		["date"] = "Wednesday 3/22",
 		["rows"] = 2,
 	}, -- [3]
 	{
-		["date"] = "Monday 2/6",
-		["rows"] = 1,
+		["date"] = "Sunday 2/12",
+		["rows"] = 2,
 	}, -- [4]
 	{
-		["date"] = "Sunday 2/5",
+		["date"] = "Monday 2/6",
 		["rows"] = 1,
 	}, -- [5]
 	{
-		["date"] = "Thursday 2/2",
+		["date"] = "Sunday 2/5",
 		["rows"] = 1,
 	}, -- [6]
 	{
-		["date"] = "Wednesday 2/1",
+		["date"] = "Thursday 2/2",
 		["rows"] = 1,
 	}, -- [7]
 	{
-		["date"] = "Monday 1/30",
+		["date"] = "Wednesday 2/1",
 		["rows"] = 1,
 	}, -- [8]
 	{
-		["date"] = "Sunday 1/29",
+		["date"] = "Monday 1/30",
 		["rows"] = 1,
 	}, -- [9]
 	{
-		["date"] = "Saturday 1/21",
+		["date"] = "Sunday 1/29",
 		["rows"] = 1,
 	}, -- [10]
 	{
-		["date"] = "Thursday 1/12",
+		["date"] = "Saturday 1/21",
 		["rows"] = 1,
 	}, -- [11]
 	{
+		["date"] = "Thursday 1/12",
+		["rows"] = 1,
+	}, -- [12]
+	{
 		["date"] = "Sunday 11/6",
 		["rows"] = 2,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Saturday 11/5",
 		["rows"] = 3,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Friday 11/4",
 		["rows"] = 2,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Thursday 11/3",
 		["rows"] = 3,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Wednesday 11/2",
 		["rows"] = 2,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Tuesday 11/1",
 		["rows"] = 5,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Monday 10/31",
 		["rows"] = 3,
-	}, -- [18]
+	}, -- [19]
 	{
 		["date"] = "Sunday 10/30",
 		["rows"] = 5,
-	}, -- [19]
-	{
-		["date"] = "Saturday 10/29",
-		["rows"] = 2,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
 	{
-		["Sha'tari Defense"] = 972,
+		["Armies of Legionfall"] = 2160,
 	}, -- [1]
+	{
+		["Sha'tari Defense"] = 972,
+	}, -- [2]
 	{
 		["Shado-Pan Assault"] = 1800,
 		["Bizmo's Brawlpub"] = 1750,
-	}, -- [2]
+	}, -- [3]
 	{
 		["Sha'tari Defense"] = 809,
 		["Shado-Pan Assault"] = 1800,
-	}, -- [3]
-	{
-		["Emperor Shaohao"] = 10896,
 	}, -- [4]
 	{
-		["Emperor Shaohao"] = 1122,
+		["Emperor Shaohao"] = 10896,
 	}, -- [5]
 	{
-		["Sha'tari Defense"] = 741,
+		["Emperor Shaohao"] = 1122,
 	}, -- [6]
 	{
-		["Shado-Pan Assault"] = 1800,
+		["Sha'tari Defense"] = 741,
 	}, -- [7]
 	{
-		["Sha'tari Defense"] = 2627,
+		["Shado-Pan Assault"] = 1800,
 	}, -- [8]
 	{
-		["Shado-Pan Assault"] = 1800,
+		["Sha'tari Defense"] = 2627,
 	}, -- [9]
 	{
 		["Shado-Pan Assault"] = 1800,
 	}, -- [10]
 	{
-		["Shado-Pan Assault"] = 2400,
+		["Shado-Pan Assault"] = 1800,
 	}, -- [11]
+	{
+		["Shado-Pan Assault"] = 2400,
+	}, -- [12]
 	{
 		["The Wardens"] = 2200,
 		["Valarjar"] = 375,
-	}, -- [12]
+	}, -- [13]
 	{
 		["The Wardens"] = 1000,
 		["Valarjar"] = 1225,
 		["Dreamweavers"] = 1544,
-	}, -- [13]
+	}, -- [14]
 	{
 		["The Wardens"] = 225,
 		["Dreamweavers"] = 375,
-	}, -- [14]
+	}, -- [15]
 	{
 		["The Wardens"] = 450,
 		["Valarjar"] = 400,
 		["Dreamweavers"] = 475,
-	}, -- [15]
+	}, -- [16]
 	{
 		["The Wardens"] = 150,
 		["Dreamweavers"] = 225,
-	}, -- [16]
+	}, -- [17]
 	{
 		["Valarjar"] = 75,
 		["Highmountain Tribe"] = 400,
 		["The Wardens"] = 625,
 		["Shado-Pan Assault"] = 1800,
 		["Court of Farondis"] = 475,
-	}, -- [17]
+	}, -- [18]
 	{
 		["The Wardens"] = 225,
 		["Valarjar"] = 250,
 		["Highmountain Tribe"] = 225,
-	}, -- [18]
+	}, -- [19]
 	{
 		["Valarjar"] = 800,
 		["Highmountain Tribe"] = 150,
 		["The Wardens"] = 2775,
 		["Court of Farondis"] = 650,
 		["Dreamweavers"] = 300,
-	}, -- [19]
-	{
-		["Valarjar"] = 2050,
-		["Court of Farondis"] = 750,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
@@ -292,7 +291,7 @@ FactionAddictConfigIsInactive = {
 	[576] = false,
 	[1681] = false,
 	[1276] = false,
-	[1850] = false,
+	[1085] = false,
 	[1353] = false,
 	[369] = false,
 	[1277] = false,
@@ -345,7 +344,7 @@ FactionAddictConfigIsInactive = {
 	[1735] = false,
 	[1682] = false,
 	[1098] = false,
-	[1085] = false,
+	[1850] = false,
 	[1736] = false,
 	[1900] = false,
 	[934] = false,

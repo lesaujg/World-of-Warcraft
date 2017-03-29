@@ -1,9 +1,8 @@
-## Interface: 70100
+## Interface: 70200
 ## Title: LiteMount
-## Version: 7.1.3
+## Version: 7.2.1
 ## Author: Xodiv-Nagrand
 ## Email: mib@post.com
-## OptionalDeps: Blizzard_PetBattleUI
 ## SavedVariables: LM_UseGlobalOptions, LM_GlobalOptionsDB
 ## SavedVariablesPerCharacter: LM_OptionsDB
 

@@ -17680,7 +17680,7 @@ SetCollectorDB = {
 								["Count"] = 5,
 								["Appearances"] = {
 									{
-										["ID"] = 51053,
+										["ID"] = 21053,
 										["sourceID"] = 52706,
 										["itemID"] = 0,
 									}, -- [1]
@@ -42790,10 +42790,10 @@ SetCollectorDB = {
 					["variant"] = 1,
 					["set"] = "CD001LDRZZ",
 				},
-				[7446] = {
+				[12576] = {
 					["collection"] = 4,
-					["variant"] = 1,
-					["set"] = "TR041CPRZZ",
+					["variant"] = 2,
+					["set"] = "TR101CWKCZ",
 				},
 				[29146] = {
 					["collection"] = 7,
@@ -49345,10 +49345,10 @@ SetCollectorDB = {
 					["variant"] = 1,
 					["set"] = "PV014PDKZA",
 				},
-				[23708] = {
-					["collection"] = 7,
-					["variant"] = 3,
-					["set"] = "PV016PPAZA",
+				[7446] = {
+					["collection"] = 4,
+					["variant"] = 1,
+					["set"] = "TR041CPRZZ",
 				},
 				[20995] = {
 					["collection"] = 4,
@@ -54995,10 +54995,10 @@ SetCollectorDB = {
 					["variant"] = 2,
 					["set"] = "TR171CMAZZ",
 				},
-				[51053] = {
-					["collection"] = 4,
-					["variant"] = 4,
-					["set"] = "TR161CWKCZ",
+				[23708] = {
+					["collection"] = 7,
+					["variant"] = 3,
+					["set"] = "PV016PPAZA",
 				},
 				[20869] = {
 					["collection"] = 7,
@@ -55445,10 +55445,10 @@ SetCollectorDB = {
 					["variant"] = 3,
 					["set"] = "TR161PDKZZ",
 				},
-				[12576] = {
+				[21053] = {
 					["collection"] = 4,
-					["variant"] = 2,
-					["set"] = "TR101CWKCZ",
+					["variant"] = 4,
+					["set"] = "TR161CWKCZ",
 				},
 				[21117] = {
 					["collection"] = 7,

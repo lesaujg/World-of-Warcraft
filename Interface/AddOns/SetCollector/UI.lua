@@ -168,6 +168,17 @@ local scrollFrame = CreateFrame("ScrollFrame","SetCollectorScrollFrame",frame,"S
 scrollFrame:SetPoint("TOPLEFT","$parentLeftInset","TOPLEFT",2,-5)
 scrollFrame:SetPoint("BOTTOMRIGHT","$parentLeftInset","BOTTOMRIGHT", -4, 3)
 
+local function IsShownInList(button)
+	top = SetCollectorFrame.CollectionsFrame:GetTop()
+	bottom = SetCollectorFrame.CollectionsFrame:GetBottom()
+	buttonTop = button:GetTop()
+	buttonBottom = button:GetBottom()
+	if buttonBottom < top and buttonTop > bottom then
+		return true
+	end
+	return false
+end
+
 local function GetCollectionButton(index)
 	local buttons = SetCollectorFrame.CollectionsFrame.Contents.Collections;
 	if ( not buttons[index] ) then
@@ -209,6 +220,7 @@ local function SetHighlight(button, ...)
 end
 
 function SetCollectorSetButton_OnClick(self, button, ...)
+	if ( IsShownInList(self) ) then
 	if ( button == "LeftButton" ) then
 		if ( self ~= SELECTED_BUTTON ) then
 			SetCollector:SetVariantTabs(self.Collection, self.Set, nil, self.Outfit)
@@ -234,13 +246,14 @@ function SetCollectorSetButton_OnClick(self, button, ...)
 			end
 			SetCollector:UpdateCollections()
 		end
-  else
-  	SetCollector:Print(button)
+	else
+		SetCollector:Print(button)
+	end
 	end
 end
 
 function SetCollectorSetButton_OnEnter(self)
-	if ( self.Collection and self.Set ) then 
+	if ( IsShownInList(self) and self.Collection and self.Set ) then 
 		self.Text:SetFontObject("GameFontHighlightLeft")
 		SetCollector:GetSetTooltip(self)
 	end
@@ -395,11 +408,15 @@ local function SetItemButton(button, appearanceID, sourceID, itemID)
 			if isCollected then
 				button.icon:SetDesaturated(false)
 				button.count:SetText(i)
+			end
+			
+			local sourceCollected = SetCollector:IsSourceCollected(sourceID)
+			if sourceCollected then
 				local iRarity = select(3, GetItemInfo(sLink))
 				if iRarity then button.glow:SetVertexColor(GetItemQualityColor(iRarity)) end
 				button.glow:Show()
 			end
-			
+
 			if not sources or #sources == 0 then
 				button.icon:SetVertexColor(1, 0.25, 0.25, 0.5)
 			end
@@ -424,6 +441,10 @@ local function SetItemButton(button, appearanceID, sourceID, itemID)
 			if isCollected then
 				button.icon:SetDesaturated(false)
 				button.count:SetText(i)
+			end
+			
+			local sourceCollected = SetCollector:IsSourceCollected(sourceID)
+			if sourceCollected then
 				local iRarity = select(3, GetItemInfo(sLink))
 				if iRarity then button.glow:SetVertexColor(GetItemQualityColor(iRarity)) end
 				button.glow:Show()

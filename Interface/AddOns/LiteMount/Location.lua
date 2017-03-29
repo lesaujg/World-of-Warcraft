@@ -14,7 +14,7 @@ LM_Location = LM_CreateAutoEventFrame("Frame", "LM_Location")
 LM_Location:RegisterEvent("PLAYER_LOGIN")
 
 -- Magical develper only debugging-fu
-local I_AM_X = GetAddOnMetadata("LiteMount", "Version") == "7.1.3"
+local I_AM_X = GetAddOnMetadata("LiteMount", "Version") == "7.2.1"
 
 function LM_Location:Initialize()
     self.continent = -1
@@ -115,10 +115,12 @@ function LM_Location:CanFly()
         end
     end
 
-    -- Can't fly on Broken Isles yet, will be eventually unlocked via an
-    -- achievment the same as Draenor.
+    -- Broken Isles Pathfinder, Part 2
     if self.continent == 8 then
-        return nil
+        local completed = select(4, GetAchievementInfo(11446))
+        if not completed then
+            return nil
+        end
     end
 
     -- Can't fly in the Legion Class Hall areas

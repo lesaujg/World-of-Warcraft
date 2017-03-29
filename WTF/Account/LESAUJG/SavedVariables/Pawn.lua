@@ -4,16 +4,22 @@ PawnCommon = {
 	["AlignNumbersRight"] = false,
 	["ShowBagUpgradeAdvisor"] = true,
 	["ShowItemID"] = false,
+	["ShowRelicUpgrades"] = true,
 	["ShowValuesForUpgradesOnly"] = false,
 	["ShownGettingStarted"] = true,
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
-	["LastVersion"] = 2.0118,
+	["LastVersion"] = 2.02,
 	["ShowSocketingAdvisor"] = true,
+	["ShowSpecIcons"] = true,
+	["ShowLootUpgradeAdvisor"] = true,
+	["ButtonPosition"] = 2,
+	["IgnoreGemsWhileLeveling"] = true,
+	["ShowQuestUpgradeAdvisor"] = true,
 	["Scales"] = {
 		["\"MrRobot\":HUNTER3"] = {
-			["IconTexturePath"] = "INTERFACE\\ICONS\\ability_hunter_camouflage",
+			["IconTexturePath"] = 461113,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "abd473",
@@ -28,7 +34,7 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 		["\"MrRobot\":WARLOCK1"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Shadow_DeathCoil",
+			["IconTexturePath"] = 136145,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "8788ee",
@@ -43,7 +49,7 @@ PawnCommon = {
 			["SpecID"] = 1,
 		},
 		["\"MrRobot\":SHAMAN1"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Nature_Lightning",
+			["IconTexturePath"] = 136048,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "0070de",
@@ -71,7 +77,7 @@ PawnCommon = {
 			["UpgradesFollowSpecialization"] = true,
 		},
 		["\"MrRobot\":PRIEST3"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Shadow_ShadowWordPain",
+			["IconTexturePath"] = 136207,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "ffffff",
@@ -86,7 +92,7 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 		["\"MrRobot\":HUNTER2"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Ability_Hunter_FocusedAim",
+			["IconTexturePath"] = 236179,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "abd473",
@@ -101,7 +107,7 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 		["\"MrRobot\":DRUID1"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Nature_StarFall",
+			["IconTexturePath"] = 136096,
 			["PerCharacterOptions"] = {
 				["Uldaris-Sisters of Elune"] = {
 					["Visible"] = true,
@@ -136,7 +142,7 @@ PawnCommon = {
 			["UpgradesFollowSpecialization"] = true,
 		},
 		["\"MrRobot\":WARLOCK3"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Shadow_RainOfFire",
+			["IconTexturePath"] = 136186,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "8788ee",
@@ -151,7 +157,7 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 		["\"MrRobot\":ROGUE2"] = {
-			["IconTexturePath"] = "Interface\\Icons\\INV_Sword_30",
+			["IconTexturePath"] = 135340,
 			["PerCharacterOptions"] = {
 				["Mandelbrot-Sisters of Elune"] = {
 					["Visible"] = true,
@@ -182,7 +188,7 @@ PawnCommon = {
 			["UpgradesFollowSpecialization"] = true,
 		},
 		["\"MrRobot\":WARRIOR3"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Ability_Warrior_DefensiveStance",
+			["IconTexturePath"] = 132341,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "c79c6e",
@@ -210,7 +216,7 @@ PawnCommon = {
 			["UpgradesFollowSpecialization"] = true,
 		},
 		["\"MrRobot\":DEMONHUNTER1"] = {
-			["IconTexturePath"] = "Interface\\Icons\\ability_demonhunter_specdps",
+			["IconTexturePath"] = 1247264,
 			["PerCharacterOptions"] = {
 				["Leanara-Sisters of Elune"] = {
 					["Visible"] = true,
@@ -228,7 +234,7 @@ PawnCommon = {
 			["SpecID"] = 1,
 		},
 		["\"MrRobot\":DEATHKNIGHT1"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Deathknight_BloodPresence",
+			["IconTexturePath"] = 135770,
 			["PerCharacterOptions"] = {
 				["Belrath-Sisters of Elune"] = {
 					["Visible"] = true,
@@ -263,7 +269,7 @@ PawnCommon = {
 			["UpgradesFollowSpecialization"] = true,
 		},
 		["\"MrRobot\":MONK1"] = {
-			["IconTexturePath"] = "Interface\\Icons\\spell_monk_brewmaster_spec",
+			["IconTexturePath"] = 608951,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "00ff96",
@@ -295,7 +301,7 @@ PawnCommon = {
 			["UpgradesFollowSpecialization"] = true,
 		},
 		["\"MrRobot\":ROGUE1"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Ability_Rogue_DeadlyBrew",
+			["IconTexturePath"] = 236270,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "fff569",
@@ -310,7 +316,7 @@ PawnCommon = {
 			["SpecID"] = 1,
 		},
 		["\"MrRobot\":PRIEST1"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Holy_PowerWordShield",
+			["IconTexturePath"] = 135940,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "ffffff",
@@ -325,7 +331,7 @@ PawnCommon = {
 			["SpecID"] = 1,
 		},
 		["\"MrRobot\":MAGE2"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Fire_FireBolt02",
+			["IconTexturePath"] = 135810,
 			["PerCharacterOptions"] = {
 				["Ghiaccioli-Sisters of Elune"] = {
 					["Visible"] = true,
@@ -343,7 +349,7 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 		["\"MrRobot\":DRUID4"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Nature_HealingTouch",
+			["IconTexturePath"] = 136041,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "ff7d0a",
@@ -357,23 +363,23 @@ PawnCommon = {
 			["UnenchantedColor"] = "bf5d07",
 			["SpecID"] = 4,
 		},
-		["\"MrRobot\":DEMONHUNTER2"] = {
-			["IconTexturePath"] = "Interface\\Icons\\ability_demonhunter_spectank",
+		["\"MrRobot\":MAGE1"] = {
+			["IconTexturePath"] = 135932,
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "a330c9",
-			["LocalizedName"] = "Demon Hunter: Vengeance",
-			["ClassID"] = 12,
+			["Color"] = "3fc7eb",
+			["LocalizedName"] = "Mage: Arcane",
+			["ClassID"] = 8,
 			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "TANK",
-			["DoNotShow2HUpgrades"] = true,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["UnenchantedColor"] = "7a2496",
-			["SpecID"] = 2,
+			["UnenchantedColor"] = "2f95b0",
+			["SpecID"] = 1,
 		},
 		["\"MrRobot\":WARRIOR1"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Ability_Warrior_SavageBlow",
+			["IconTexturePath"] = 132355,
 			["PerCharacterOptions"] = {
 				["Torinar-Sisters of Elune"] = {
 					["Visible"] = true,
@@ -391,7 +397,7 @@ PawnCommon = {
 			["SpecID"] = 1,
 		},
 		["\"MrRobot\":WARLOCK2"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Shadow_Metamorphosis",
+			["IconTexturePath"] = 136172,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "8788ee",
@@ -405,8 +411,23 @@ PawnCommon = {
 			["UnenchantedColor"] = "6566b2",
 			["SpecID"] = 2,
 		},
+		["\"MrRobot\":DEMONHUNTER2"] = {
+			["IconTexturePath"] = 1247265,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "a330c9",
+			["LocalizedName"] = "Demon Hunter: Vengeance",
+			["ClassID"] = 12,
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = true,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["UnenchantedColor"] = "7a2496",
+			["SpecID"] = 2,
+		},
 		["\"MrRobot\":SHAMAN3"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Nature_MagicImmunity",
+			["IconTexturePath"] = 136052,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "0070de",
@@ -420,23 +441,8 @@ PawnCommon = {
 			["UnenchantedColor"] = "0054a6",
 			["SpecID"] = 3,
 		},
-		["\"MrRobot\":MAGE1"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Holy_MagicalSentry",
-			["PerCharacterOptions"] = {
-			},
-			["Color"] = "3fc7eb",
-			["LocalizedName"] = "Mage: Arcane",
-			["ClassID"] = 8,
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "DAMAGER",
-			["DoNotShow2HUpgrades"] = false,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["UnenchantedColor"] = "2f95b0",
-			["SpecID"] = 1,
-		},
 		["\"MrRobot\":PALADIN2"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Ability_Paladin_ShieldoftheTemplar",
+			["IconTexturePath"] = 236264,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "f58cba",
@@ -451,7 +457,7 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 		["\"MrRobot\":DRUID2"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Ability_Druid_CatForm",
+			["IconTexturePath"] = 132115,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "ff7d0a",
@@ -466,7 +472,7 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 		["\"MrRobot\":HUNTER1"] = {
-			["IconTexturePath"] = "INTERFACE\\ICONS\\ability_hunter_bestialdiscipline",
+			["IconTexturePath"] = 461112,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "abd473",
@@ -481,7 +487,7 @@ PawnCommon = {
 			["SpecID"] = 1,
 		},
 		["\"MrRobot\":PALADIN3"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Holy_AuraOfLight",
+			["IconTexturePath"] = 135873,
 			["PerCharacterOptions"] = {
 				["Herbinator-Sisters of Elune"] = {
 					["Visible"] = true,
@@ -502,7 +508,7 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 		["\"MrRobot\":DEATHKNIGHT3"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Deathknight_UnholyPresence",
+			["IconTexturePath"] = 135775,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "ff4d6b",
@@ -517,7 +523,7 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 		["\"MrRobot\":WARRIOR2"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Ability_Warrior_InnerRage",
+			["IconTexturePath"] = 132347,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "c79c6e",
@@ -532,7 +538,7 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 		["\"MrRobot\":MONK2"] = {
-			["IconTexturePath"] = "Interface\\Icons\\spell_monk_mistweaver_spec",
+			["IconTexturePath"] = 608952,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "00ff96",
@@ -547,7 +553,7 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 		["\"MrRobot\":DEATHKNIGHT2"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Deathknight_FrostPresence",
+			["IconTexturePath"] = 135773,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "ff4d6b",
@@ -562,7 +568,7 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 		["\"MrRobot\":ROGUE3"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Ability_Stealth",
+			["IconTexturePath"] = 132320,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "fff569",
@@ -577,7 +583,7 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 		["\"MrRobot\":MAGE3"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Frost_FrostBolt02",
+			["IconTexturePath"] = 135846,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "3fc7eb",
@@ -592,7 +598,7 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 		["\"MrRobot\":PALADIN1"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Holy_HolyBolt",
+			["IconTexturePath"] = 135920,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "f58cba",
@@ -607,7 +613,7 @@ PawnCommon = {
 			["SpecID"] = 1,
 		},
 		["\"MrRobot\":DRUID3"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Ability_Racial_BearForm",
+			["IconTexturePath"] = 132276,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "ff7d0a",
@@ -622,7 +628,7 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 		["\"MrRobot\":PRIEST2"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Holy_GuardianSpirit",
+			["IconTexturePath"] = 237542,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "ffffff",
@@ -637,7 +643,7 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 		["\"MrRobot\":SHAMAN2"] = {
-			["IconTexturePath"] = "Interface\\Icons\\Spell_Shaman_ImprovedStormstrike",
+			["IconTexturePath"] = 237581,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "0070de",
@@ -652,7 +658,7 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 		["\"MrRobot\":MONK3"] = {
-			["IconTexturePath"] = "Interface\\Icons\\spell_monk_windwalker_spec",
+			["IconTexturePath"] = 608953,
 			["PerCharacterOptions"] = {
 				["Orig-Sisters of Elune"] = {
 					["Visible"] = true,
@@ -670,10 +676,5 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 	},
-	["ShowLootUpgradeAdvisor"] = true,
-	["ButtonPosition"] = 2,
-	["IgnoreGemsWhileLeveling"] = true,
-	["ShowQuestUpgradeAdvisor"] = true,
-	["ShowSpecIcons"] = true,
 	["ShowUpgradesOnTooltips"] = true,
 }

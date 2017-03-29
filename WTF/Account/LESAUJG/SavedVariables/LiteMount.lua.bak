@@ -5,10 +5,17 @@ LM_GlobalOptionsDB = {
 	},
 	["excludedspells"] = {
 	},
+	["excludeNewMounts"] = {
+	},
 	["flagoverrides"] = {
+	},
+	["seenspells"] = {
+	},
+	["macro"] = {
 	},
 	["combatMacro"] = {
 	},
-	["macro"] = {
+	["copyTargetsMount"] = {
+		1, -- [1]
 	},
 }
