@@ -6,7 +6,7 @@ VuhDo: disabled
 TradeSkillMaster_CoolDowns: disabled
 WeDontWipe: disabled
 WeDontWipe-WindwalkerMonk: disabled
-BaudManifest: disabled
+BaudManifest: enabled
 TradeSkillMaster_Destroying: disabled
 _NPCScan: enabled
 _NPCScan.Overlay: disabled
@@ -132,3 +132,8 @@ Details_RaidInfo-EmeraldNightmare: disabled
 Details_RaidInfo-Nighthold: disabled
 Details_RaidInfo-TrialOfValor: disabled
 premade-filter: disabled
+Bagnon: disabled
+Bagnon_Config: disabled
+Bagnon_GuildBank: disabled
+Bagnon_VoidStorage: disabled
+OneBag3: disabled

@@ -1208,3 +1208,6 @@ Change Log:
 4.42.7
 * Added spells for Ungoro Madness
 * Added Legion spells for Black Rook Hold (thanks raven42rac)
+
+4.42.8
+* Updated for patch 7.2

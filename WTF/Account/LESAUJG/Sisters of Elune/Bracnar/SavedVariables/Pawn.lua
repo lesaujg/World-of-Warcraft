@@ -1,10 +1,9 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.02,
+	["LastVersion"] = 2.0201,
 	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
 	["AutoSelectScales"] = false,
 	["UpgradeTracking"] = false,
-	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128861] = {
 			["Relics"] = {
@@ -23,7 +22,25 @@ PawnOptions = {
 			},
 			["Name"] = "Titanstrike",
 		},
+		[128808] = {
+			["Relics"] = {
+				{
+					["ItemLevel"] = 46,
+					["Type"] = "Wind",
+				}, -- [1]
+				{
+					["ItemLevel"] = 43,
+					["Type"] = "Iron",
+				}, -- [2]
+				{
+					["ItemLevel"] = 43,
+					["Type"] = "Blood",
+				}, -- [3]
+			},
+			["Name"] = "Talonclaw",
+		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",

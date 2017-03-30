@@ -15,24 +15,24 @@ Bagnon_Sets = {
 			["x"] = -50,
 			["borderColor"] = {
 			},
+			["itemScale"] = 1,
 			["color"] = {
 			},
-			["itemScale"] = 1,
 		},
 		["vault"] = {
 			["color"] = {
 			},
-			["hiddenBags"] = {
-			},
 			["borderColor"] = {
+			},
+			["hiddenBags"] = {
 			},
 		},
 		["guild"] = {
 			["color"] = {
 			},
-			["hiddenBags"] = {
-			},
 			["borderColor"] = {
+			},
+			["hiddenBags"] = {
 			},
 		},
 		["bank"] = {
@@ -55,18 +55,18 @@ Bagnon_Sets = {
 	},
 	["inscribeColor"] = {
 	},
-	["players"] = {
-		["Sisters of Elune"] = {
-		},
-	},
-	["enchantColor"] = {
-	},
-	["normalColor"] = {
-	},
-	["herbColor"] = {
+	["leatherColor"] = {
 	},
 	["tackleColor"] = {
 	},
-	["leatherColor"] = {
+	["herbColor"] = {
+	},
+	["normalColor"] = {
+	},
+	["enchantColor"] = {
+	},
+	["players"] = {
+		["Sisters of Elune"] = {
+		},
 	},
 }

@@ -13,17 +13,3 @@ X: 0
 Y: 0
 W: 800
 H: 525
-Frame: BagnonFramebank
-FrameLevel: 1
-Anchor: LEFT
-X: 95
-Y: 0
-W: 482
-H: 1152
-Frame: OneBagFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 75
-Y: 3
-W: 481
-H: 422

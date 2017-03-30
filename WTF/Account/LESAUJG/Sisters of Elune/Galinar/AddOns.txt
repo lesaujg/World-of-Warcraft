@@ -115,7 +115,7 @@ TomTom: disabled
 Shrapnel: disabled
 Ovale: disabled
 Quartz: disabled
-BaudManifest: disabled
+BaudManifest: enabled
 AskMrRobot: enabled
 Factionizer: disabled
 GTFO: disabled
@@ -172,3 +172,8 @@ Details_3DModelsPaths: disabled
 Details_RaidInfo-EmeraldNightmare: disabled
 Details_RaidInfo-Nighthold: disabled
 Details_RaidInfo-TrialOfValor: disabled
+Bagnon: disabled
+Bagnon_Config: disabled
+Bagnon_GuildBank: disabled
+Bagnon_VoidStorage: disabled
+OneBag3: disabled

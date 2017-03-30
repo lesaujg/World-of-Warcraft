@@ -18,4 +18,11 @@ Details_RaidInfo-Nighthold: disabled
 Details_RaidInfo-TrialOfValor: disabled
 Skada: disabled
 premade-filter: disabled
-BaudManifest: disabled
+BaudManifest: enabled
+Bagnon: disabled
+Bagnon_Config: disabled
+Bagnon_GuildBank: disabled
+Bagnon_VoidStorage: disabled
+OneBag3: disabled
+Tukui: enabled
+Tukui_Config: enabled

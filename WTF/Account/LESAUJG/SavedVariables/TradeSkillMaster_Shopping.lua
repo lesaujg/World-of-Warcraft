@@ -36,39 +36,39 @@ TradeSkillMaster_ShoppingDB = {
 		["auction"] = true,
 	},
 	["g@ @sniperVendorPrice"] = true,
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @savedSearches"] = {
+		{
+			["lastSearch"] = 1490873999,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [1]
+		{
+			["lastSearch"] = 1490845398,
+			["name"] = "Flask of the Seventh Demon",
+			["filter"] = "Flask of the Seventh Demon",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [2]
 		{
 			["lastSearch"] = 1490763526,
 			["name"] = "Obliterum/exact",
 			["filter"] = "Obliterum/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [1]
+		}, -- [3]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1490670779,
 			["name"] = "Infernal Brimstone/exact",
 			["filter"] = "Infernal Brimstone/exact",
-		}, -- [2]
-		{
-			["lastSearch"] = 1490587682,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [3]
+		}, -- [4]
 		{
 			["lastSearch"] = 1490201078,
 			["name"] = "Chaos Crystal/exact",
 			["filter"] = "Chaos Crystal/exact",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [4]
-		{
-			["lastSearch"] = 1490201074,
-			["name"] = "Flask of the Seventh Demon",
-			["filter"] = "Flask of the Seventh Demon",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [5]
@@ -695,7 +695,7 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "Vermilion Onyx/exact",
 		}, -- [108]
 	},
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @maxDeSearchLvl"] = 735,
 	["g@ @minDeSearchLvl"] = 1,
