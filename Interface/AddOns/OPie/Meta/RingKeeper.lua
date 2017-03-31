@@ -13,11 +13,12 @@ local CLASS, FULLNAME
 
 local RK_ParseMacro, RK_QuantizeMacro do -- +RingKeeper:SetMountPreference(groundSpellID, airSpellID)
 	local castAlias = {[SLASH_CAST1]=1,[SLASH_CAST2]=1,[SLASH_CAST3]=1,[SLASH_CAST4]=1,[SLASH_USE1]=1,[SLASH_USE2]=1,["#show"]=1,["#showtooltip"]=1,[SLASH_CASTSEQUENCE1]=2,[SLASH_CASTSEQUENCE2]=2,[SLASH_CASTRANDOM1]=3,[SLASH_CASTRANDOM2]=3}
+	local checkKnown = T.ABdodgySpells
 	local function replaceSpellID(sidlist, prefix)
-		for id in sidlist:gmatch("%d+") do
-			local sname = GetSpellInfo(tonumber(id))
-			if sname and (GetSpellInfo(sname) or RW:GetCastEscapeAction(sname)) then
-				return prefix .. sname
+		for id, sn in sidlist:gmatch("%d+") do
+			id, sn = id+0, GetSpellInfo(id)
+			if sn and (checkKnown[id] == nil or checkKnown[id](id)) and (GetSpellInfo(sn) or RW:GetCastEscapeAction(sn)) then
+				return prefix .. sn
 			end
 		end
 	end
@@ -334,7 +335,7 @@ local function RK_SyncRing(name, force, tok)
 		OneRingLib:SetRing(name, cid, desc)
 	end
 
-	for i, e in ipairs(desc) do
+	for _, e in ipairs(desc) do
 		local ident, action = e[1]
 		if ident == "macrotext" then
 			local m = RK_ParseMacro(e[2])
@@ -350,7 +351,7 @@ local function RK_SyncRing(name, force, tok)
 	if not changed and not force then return end
 	local collection, cn = sharedCollection, 1
 	wipe(collection)
-	for i, e in ipairs(desc) do
+	for _, e in ipairs(desc) do
 		if e._action then
 			collection[e.sliceToken], collection[cn], cn = e._action, e.sliceToken, cn + 1
 			collection['__visibility-' .. e.sliceToken], e._show = e.show or nil, e.show
@@ -397,7 +398,7 @@ local function RK_SanitizeDescription(props)
 	return props
 end
 local function RK_SerializeDescription(props)
-	for i, slice in ipairs(props) do
+	for _, slice in ipairs(props) do
 		if slice[1] == "spell" or slice[1] == "macrotext" then
 			slice.id, slice[1], slice[2] = slice[2]
 		end
@@ -407,7 +408,7 @@ local function RK_SerializeDescription(props)
 	return props
 end
 function EV.PLAYER_REGEN_DISABLED()
-	for k,v in pairs(RK_RingDesc) do
+	for k in pairs(RK_RingDesc) do
 		securecall(RK_SyncRing, k)
 	end
 end
@@ -448,7 +449,7 @@ local function svInitializer(event, _name, sv)
 		local colorFlush = not RK_FlagStore.FlushedDefaultColors
 		for k, v in pairs(SV) do
 			if colorFlush and type(v) == "table" then
-				for k,v in pairs(v) do
+				for _,v in pairs(v) do
 					if type(v) == "table" and v.c == "e5ff00" then
 						v.c = nil
 					end

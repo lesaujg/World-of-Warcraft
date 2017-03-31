@@ -137,7 +137,7 @@ function sysBindings:set(id, bind)
 	OneRingLib:SetOption(self.options[id], bind == false and "" or bind)
 end
 function sysBindings:default()
-	for k,v in pairs(self.options) do
+	for _,v in pairs(self.options) do
 		OneRingLib:SetOption(v, nil)
 	end
 end

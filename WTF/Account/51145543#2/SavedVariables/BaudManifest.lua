@@ -5,14 +5,14 @@ BaudManifestData = {
 		["FillSpecials"] = true,
 		["ShowArrows"] = true,
 		["ShowBank"] = true,
-		["Combine"] = true,
+		["Scale"] = 100,
 		["HideEquipped"] = true,
-		["HideBlizBank"] = true,
+		["ReplaceBlizBags"] = true,
 		["HideBlizInv"] = true,
 		["ItemNameFirst"] = false,
 		["AutoShowInv"] = true,
-		["ReplaceBlizBags"] = true,
-		["Scale"] = 100,
+		["HideBlizBank"] = true,
+		["Combine"] = true,
 	},
 	["Sisters of Elune"] = {
 		["Torinara"] = {
@@ -36,8 +36,8 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [4]
 					{
-						["Count"] = 2,
 						["ItemString"] = "item:122362::::::::1:262:::1:583:::",
+						["Count"] = 2,
 						["Equipped"] = 1,
 					}, -- [5]
 					{
@@ -118,8 +118,8 @@ BaudManifestData = {
 						["Equipped"] = 1,
 					}, -- [21]
 					{
-						["ItemString"] = "item:141597::::::::100:264::9:3:3447:1815:1820:::",
 						["Count"] = 2,
+						["ItemString"] = "item:141597::::::::100:264::9:3:3447:1815:1820:::",
 						["Slots"] = 2,
 					}, -- [22]
 					{
@@ -160,22 +160,18 @@ BaudManifestData = {
 						["Count"] = 4,
 					}, -- [31]
 					{
-						["Count"] = 9,
 						["ItemString"] = "item:89112::::::::100:263::::::",
+						["Count"] = 9,
 					}, -- [32]
 					{
-						["Count"] = 3,
 						["ItemString"] = "item:74248::::::::100:263::::::",
+						["Count"] = 3,
 					}, -- [33]
 					{
-						["Count"] = 3,
 						["ItemString"] = "item:94289::::::::100:263::::::",
+						["Count"] = 3,
 					}, -- [34]
-					{
-						["Count"] = 1,
-						["ItemString"] = "item:109953::::::::100:263:4:23:3:642:643:523:529:::",
-					}, -- [35]
-					["SlotsUsed"] = 36,
+					["SlotsUsed"] = 35,
 				}, -- [1]
 				["BGColor"] = {
 					0.5, -- [1]
@@ -183,12 +179,12 @@ BaudManifestData = {
 					0.5, -- [3]
 					0.7, -- [4]
 				},
-				["SlotEmpty"] = 115,
+				["SlotEmpty"] = 116,
 				["BGTexture"] = "Bumpy",
 				["ShowBags"] = false,
-				["SlotTotal"] = 136,
-				["SpecialTotal"] = 0,
 				["SpecialEmpty"] = 0,
+				["SpecialTotal"] = 0,
+				["SlotTotal"] = 136,
 			}, -- [1]
 			{
 				{
@@ -237,7 +233,7 @@ BaudManifestData = {
 				[0] = 1,
 			},
 			["Class"] = "SHAMAN",
-			["Money"] = 66720540,
+			["Money"] = 72237760,
 		},
 		["Magnara"] = {
 			{
@@ -269,9 +265,9 @@ BaudManifestData = {
 				},
 				["SlotEmpty"] = 17,
 				["BGTexture"] = "Bumpy",
-				["SlotTotal"] = 20,
-				["SpecialTotal"] = 0,
 				["SpecialEmpty"] = 0,
+				["SpecialTotal"] = 0,
+				["SlotTotal"] = 20,
 			}, -- [1]
 			{
 				{

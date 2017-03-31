@@ -1,13 +1,5 @@
 
 EncounterDetailsDB = {
-	["emotes"] = {
-		{
-			["boss"] = "High Sage Viryx",
-		}, -- [1]
-		{
-			["boss"] = "Ranjit",
-		}, -- [2]
-	},
 	["encounter_spells"] = {
 		[159382] = {
 			["school"] = 1,
@@ -52,12 +44,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Chromaggus",
 		},
-		[197163] = {
-			["school"] = 8,
+		[153794] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Chromaggus",
+			["source"] = "Rukhran",
 		},
 		[17253] = {
 			["school"] = 1,
@@ -73,13 +66,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Chromaggus",
 		},
-		[153794] = {
-			["school"] = 1,
+		[197163] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Rukhran",
+			["source"] = "Chromaggus",
 		},
+	},
+	["emotes"] = {
+		{
+			["boss"] = "High Sage Viryx",
+		}, -- [1]
+		{
+			["boss"] = "Ranjit",
+		}, -- [2]
 	},
 }

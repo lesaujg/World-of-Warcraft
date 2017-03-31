@@ -4,7 +4,7 @@ mOnWDSave = {
 	["miniListScale"] = 1,
 	["reloadOnStart"] = false,
 	["minimap"] = {
-		["minimapPos"] = 205.277727611974,
+		["minimapPos"] = 87.0645258224345,
 	},
 	["disableConfirmation"] = false,
 	["favoriteInstances"] = {

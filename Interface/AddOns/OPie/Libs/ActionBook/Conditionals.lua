@@ -50,6 +50,7 @@ do -- zone:Zone/Sub Zone
 	onZoneUpdate()
 	EV.RegisterEvent("ZONE_CHANGED", onZoneUpdate)
 	EV.RegisterEvent("ZONE_CHANGED_INDOORS", onZoneUpdate)
+	EV.RegisterEvent("ZONE_CHANGED_NEW_AREA", onZoneUpdate)
 	EV.RegisterEvent("PLAYER_ENTERING_WORLD", onZoneUpdate)
 end
 do -- me:Player Name/Class
@@ -390,7 +391,7 @@ do -- professions
 			end
 		end
 	end
-	for k, v in pairs(map) do
+	for _, v in pairs(map) do
 		KR:SetThresholdConditionalValue(v, false)
 	end
 	for alias, real in ("tailoring:tail leatherworking:lw alchemy:alch engineering:engi enchanting:ench jewelcrafting:jc blacksmithing:bs inscription:scri"):gmatch("(%a+):(%a+)") do

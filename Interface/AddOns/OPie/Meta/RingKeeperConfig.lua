@@ -896,7 +896,7 @@ function ringDropDown:initialize(level, nameList)
 	info.func, info.minWidth = api.selectRing, level == 1 and (self:GetWidth()-40) or nil
 	if level == 1 then
 		ringNames = {hidden={}, other={}}
-		for name, dname, active, slices, internal, limit in RK:GetManagedRings() do
+		for name, dname, active, _slices, internal, limit in RK:GetManagedRings() do
 			table.insert(active and (internal and ringNames.hidden or ringNames) or ringNames.other, name)
 			local rtype = type(limit) ~= "string" and "GLOBAL" or limit == playerFullName and "MINE" or limit:match("[^A-Z]") and "PERSONAL" or limit
 			ringNameMap[name], ringOrderMap[name], ringTypeMap[name] = dname, (not active and (rtype == "PERSONAL" and 12 or 10)) or (limit and (limit:match("[^A-Z]") and 0 or 2)), rtype

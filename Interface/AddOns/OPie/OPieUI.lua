@@ -8,10 +8,14 @@ end
 local gfxBase = ([[Interface\AddOns\%s\gfx\]]):format((...))
 local anchorFrame = cc("Hide", cc("SetPoint", cc("SetSize", CreateFrame("Frame"), 1, 1), "CENTER"))
 local mainFrame = cc("Hide", cc("SetFrameStrata", cc("SetPoint", cc("SetSize", CreateFrame("Frame", nil, UIParent), 128, 128), "CENTER", anchorFrame), "FULLSCREEN"))
-local ringQuad, setRingRotationPeriod = {} do
-	local animations, quadPoints = {}, {"BOTTOMRIGHT", "BOTTOMLEFT", "TOPLEFT", "TOPRIGHT"}
+local ringQuad, setRingRotationPeriod, centerCircle, centerGlow = {} do
+	local quadPoints, animations = {"BOTTOMRIGHT", "BOTTOMLEFT", "TOPLEFT", "TOPRIGHT"}, {}
 	for i=1,4 do
 		ringQuad[i] = cc("SetPoint", cc("SetSize", CreateFrame("Frame", nil, mainFrame), 32, 32), quadPoints[i], mainFrame, "CENTER")
+	end
+	centerCircle = T.Mirage._CreateQuadTexture("ARTWORK", 64, gfxBase .. "circle", nil, ringQuad)
+	centerGlow = T.Mirage._CreateQuadTexture("BACKGROUND", 128, gfxBase .. "glow", nil, ringQuad)
+	for i=1,4 do
 		local g = cc("SetLooping", ringQuad[i]:CreateAnimationGroup(), "REPEAT")
 		animations[i] = cc("SetOrigin", cc("SetDegrees", cc("SetDuration", g:CreateAnimation("Rotation"), 4), -360), quadPoints[i], 0, 0)
 		g:Play()
@@ -21,8 +25,6 @@ local ringQuad, setRingRotationPeriod = {} do
 		for i=1,4 do animations[i]:SetDuration(p) end
 	end
 end
-local centerCircle = T.Mirage._CreateQuadTexture("ARTWORK", 64, gfxBase .. "circle", nil, ringQuad)
-local centerGlow = T.Mirage._CreateQuadTexture("BACKGROUND", 128, gfxBase .. "glow", nil, ringQuad)
 local centerPointer = cc("SetTexture", cc("SetPoint", cc("SetSize", mainFrame:CreateTexture(nil, "ARTWORK"), 192, 192), "CENTER"), gfxBase .. "pointer")
 
 local function SetAngle(self, angle, radius)

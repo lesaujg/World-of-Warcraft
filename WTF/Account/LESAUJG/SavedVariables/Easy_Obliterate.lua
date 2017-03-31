@@ -18,7 +18,7 @@ EasyObliterate_Data = {
 			},
 		},
 	},
-	["addonVersion"] = 23,
+	["addonVersion"] = 24,
 	["addonSettings"] = {
 		["showAshStats"] = true,
 		["ashTextLocalized"] = "Obliterum Ash",

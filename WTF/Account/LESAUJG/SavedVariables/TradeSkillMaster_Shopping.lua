@@ -39,23 +39,23 @@ TradeSkillMaster_ShoppingDB = {
 	["_hash"] = 1861581,
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1490873999,
+			["lastSearch"] = 1490925243,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [1]
 		{
-			["lastSearch"] = 1490845398,
-			["name"] = "Flask of the Seventh Demon",
-			["filter"] = "Flask of the Seventh Demon",
+			["lastSearch"] = 1490898474,
+			["name"] = "Obliterum/exact",
+			["filter"] = "Obliterum/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [2]
 		{
-			["lastSearch"] = 1490763526,
-			["name"] = "Obliterum/exact",
-			["filter"] = "Obliterum/exact",
+			["lastSearch"] = 1490845398,
+			["name"] = "Flask of the Seventh Demon",
+			["filter"] = "Flask of the Seventh Demon",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [3]

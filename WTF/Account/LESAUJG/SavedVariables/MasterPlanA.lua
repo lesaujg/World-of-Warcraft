@@ -8,7 +8,7 @@ MasterPlanAG = {
 	},
 	["Sisters of Elune"] = {
 		["Bracnar"] = {
-			["curOil"] = 61865,
+			["faction"] = "Alliance",
 			["summary"] = {
 				["tt2"] = 1472352656,
 				["tt3"] = true,
@@ -17,23 +17,23 @@ MasterPlanAG = {
 				["ti3"] = 127854,
 				["ti2"] = 122486,
 			},
-			["faction"] = "Alliance",
+			["curOil"] = 61865,
 			["cacheSize"] = 1000,
-			["class"] = "HUNTER",
-			["curRes"] = 10000,
 			["lastCacheTime"] = 1471355311,
+			["curRes"] = 10000,
+			["class"] = "HUNTER",
 		},
 		["Ghiaccioli"] = {
-			["faction"] = "Alliance",
 			["class"] = "MAGE",
+			["faction"] = "Alliance",
 		},
 		["Mandelbrot"] = {
 			["class"] = "ROGUE",
 			["faction"] = "Alliance",
 		},
 		["Torinar"] = {
-			["class"] = "WARRIOR",
 			["faction"] = "Alliance",
+			["class"] = "WARRIOR",
 		},
 		["Orig"] = {
 			["recruitTime"] = 1468376595,
@@ -55,9 +55,9 @@ MasterPlanAG = {
 			},
 			["faction"] = "Alliance",
 			["curOil"] = 2735,
-			["class"] = "MONK",
-			["curRes"] = 7716,
 			["lastCacheTime"] = 1470667248,
+			["curRes"] = 7716,
+			["class"] = "MONK",
 		},
 		["Herbinator"] = {
 			["class"] = "PALADIN",
@@ -76,17 +76,17 @@ MasterPlanAG = {
 			["class"] = "DEATHKNIGHT",
 		},
 		["Leanara"] = {
-			["faction"] = "Alliance",
 			["class"] = "DEMONHUNTER",
+			["faction"] = "Alliance",
 		},
 		["Galinar"] = {
-			["faction"] = "Alliance",
+			["lastCacheTime"] = 1470801228,
 			["class"] = "PALADIN",
 			["curRes"] = 1062,
-			["lastCacheTime"] = 1470801228,
+			["faction"] = "Alliance",
 		},
 		["Uldaris"] = {
-			["lastCacheTime"] = 1469580598,
+			["class"] = "DRUID",
 			["recruitTime"] = 1464140222,
 			["summary"] = {
 				["tt2"] = 1469583510,
@@ -96,13 +96,11 @@ MasterPlanAG = {
 				["ti3"] = 128391,
 				["ti2"] = 122484,
 			},
-			["faction"] = "Alliance",
-			["cacheSize"] = 1000,
-			["class"] = "DRUID",
-			["curRes"] = 7981,
 			["curOil"] = 990,
+			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1469580598,
+			["curRes"] = 7981,
+			["faction"] = "Alliance",
 		},
-	},
-	["IgnoreRewards"] = {
 	},
 }

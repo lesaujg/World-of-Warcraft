@@ -1,7 +1,0 @@
-
-MasterPlanPC = {
-	["complete"] = {
-	},
-	["version"] = "0.75",
-	["availableMissionSort"] = "xp",
-}

@@ -139,6 +139,12 @@ do -- spell: spell ID + mount spell ID
 	end
 	
 	local forcedSpellIDCasts = {[126819]=1, [28272]=1, [28271]=1, [161372]=1, [51514]=1, [210873]=1, [211004]=1, [211010]=1, [211015]=1}
+	local checkKnown = {[33891]=IsSpellKnown, [102543]=IsSpellKnown, [102558]=IsSpellKnown} do
+		checkKnown[102560] = function()
+			return IsSpellKnown(194223) and select(7, GetSpellInfo(GetSpellInfo(194223))) == 102560 or false
+		end
+		T.ABdodgySpells = checkKnown
+	end
 	AB:RegisterActionType("spell", function(id)
 		if type(id) ~= "number" then return end
 		local action = mountMap[id]
@@ -146,6 +152,8 @@ do -- spell: spell ID + mount spell ID
 			return AB:GetActionSlot("mount", action)
 		elseif forcedSpellIDCasts[id] then
 			action = FindSpellBookSlotBySpellID(id) and id or nil
+		elseif checkKnown[id] and not checkKnown[id](id) then
+			return
 		else
 			local s0, r0 = GetSpellInfo(id)
 			local o, s, r = pcall(GetSpellInfo, s0, r0)
@@ -472,19 +480,21 @@ do -- equipmentset: equipment sets by name
 		return type(fid) == "number" and fid or ("Interface/Icons/" .. (fid or "INV_Misc_QuestionMark"))
 	end
 	local function equipmentsetHint(name)
-		local icon, _, active, total, equipped, available = GetEquipmentSetInfoByName(name)
+		local _, icon, _, active, total, equipped, available = C_EquipmentSet.GetEquipmentSetInfo(name and C_EquipmentSet.GetEquipmentSetID(name) or -1)
 		if icon then
 			return total == equipped or (available > 0), active and 1 or 0, resolveIcon(icon), name, nil, 0, 0, GameTooltip.SetEquipmentSet, name
 		end
 	end
 	AB:RegisterActionType("equipmentset", function(name)
-		if type(name) ~= "string" or not GetEquipmentSetInfoByName(name) then return end
+		local sid = type(name) == "string" or not C_EquipmentSet.GetEquipmentSetID(name)
+		if not sid then return end
 		if not setMap[name] then
 			setMap[name] = AB:CreateActionSlot(equipmentsetHint, name, "attribute", "type","macro", "macrotext", (SLASH_EQUIP_SET1 or "/equipset") .. " " .. name)
 		end
 		return setMap[name]
 	end, function(name)
-		return "Equipment Set", name, resolveIcon(GetEquipmentSetInfoByName(tostring(name))), nil, GameTooltip.SetEquipmentSet, name
+		local _, ico = C_EquipmentSet.GetEquipmentSetInfo(name and C_EquipmentSet.GetEquipmentSetID(name) or -1)
+		return "Equipment Set", name, ico and resolveIcon(ico) or "Interface/Icons/INV_Misc_QuestionMark", nil, GameTooltip.SetEquipmentSet, name
 	end)
 	RW:SetCommandHint(SLASH_EQUIP_SET1, 80, function(_, _, clause)
 		if clause and clause ~= "" then

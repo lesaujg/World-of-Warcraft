@@ -11,8 +11,8 @@ do -- RW/opiespecset
 	local esSpec, esSet, esDeadline
 	function EV:PLAYER_SPECIALIZATION_CHANGED(unit)
 		if esDeadline and unit == "player" and GetSpecialization() == esSpec and not InCombatLockdown() and esDeadline > GetTime() then
-			UseEquipmentSet(esSet)
-			esDeadline, esSpec, esSet = nil
+			local sid = C_EquipmentSet.GetEquipmentSetID(esSet)
+			esDeadline, esSpec, esSet = sid and C_EquipmentSet.UseEquipmentSet(sid) and nil
 		end
 	end
 	function f:SwitchSpec(_cmd, args)
@@ -35,7 +35,7 @@ do -- AB/specset
 			self:SetText(name, 1,1,1)
 			self:AddLine(desc, nil, nil, nil, 1)
 			if (set or "") ~= "" then
-				local ico, _, _isCur, total, eq, bags, miss = GetEquipmentSetInfoByName(set)
+				local _, ico, _, _isCur, total, eq, bags, miss = C_EquipmentSet.GetEquipmentSetInfo(C_EquipmentSet.GetEquipmentSetID(set) or -1)
 				if ico then
 					local eql
 					if total == eq then
@@ -105,11 +105,13 @@ do -- EditorUI
 	UIDropDownMenu_SetWidth(drop, 250)
 	function drop:set(name, skipSave)
 		drop.value = name
-		local ico = name and GetEquipmentSetInfoByName(name)
-		UIDropDownMenu_SetText(drop, name == false and NONE or ((ico and "|T" .. ico .. ":0|t " or "") .. name))
-		if not skipSave then
-			local p = bg:GetParent()
-			p = p and p.SaveAction and p:SaveAction()
+		local n, ico = C_EquipmentSet.GetEquipmentSetInfo(name and C_EquipmentSet.GetEquipmentSetID(name) or -1)
+		if name == false or n then
+			UIDropDownMenu_SetText(drop, name == false and NONE or ((ico and "|T" .. ico .. ":0|t " or "") .. name))
+			if not skipSave then
+				local p = bg:GetParent()
+				p = p and p.SaveAction and p:SaveAction()
+			end
 		end
 	end
 	function drop.initialize()
@@ -117,8 +119,8 @@ do -- EditorUI
 		inf.func, inf.minWidth = drop.set, drop:GetWidth()-40
 		inf.text, inf.arg1, inf.checked = NONE, false, drop.value == false
 		UIDropDownMenu_AddButton(inf)
-		for i=1,GetNumEquipmentSets() do
-			local n, ico = GetEquipmentSetInfo(i)
+		for _, id in pairs(C_EquipmentSet.GetEquipmentSetIDs()) do
+			local n, ico = C_EquipmentSet.GetEquipmentSetInfo(id)
 			inf.text, inf.arg1, inf.checked = "|T" .. (ico or "Interface/Icons/Temp") .. ":0|t " .. n, n, drop.value == n
 			hadSpec = hadSpec or n == drop.spec
 			UIDropDownMenu_AddButton(inf)

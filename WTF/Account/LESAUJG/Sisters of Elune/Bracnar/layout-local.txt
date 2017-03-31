@@ -1,4 +1,11 @@
 Version: 1
+Frame: BaudManifestDisplay1
+FrameLevel: 1
+Anchor: BOTTOMRIGHT
+X: -71
+Y: 4
+W: 250
+H: 800
 Frame: DBMMinimapButton
 FrameLevel: 3
 Anchor: TOPRIGHT

@@ -513,7 +513,7 @@ do -- Widget construction
 	end
 
 	local cY, halfpoint, rowHeight = -115, false;
-	for i, v in ipairs(OPC_OptionSets) do
+	for _, v in ipairs(OPC_OptionSets) do
 		v.label = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge");
 		v.label:SetPoint("TOP", frame, "TOP", -50, cY-10); v.label:SetJustifyH("LEFT")
 		v.label:SetPoint("LEFT", frame, "LEFT", 16, 0)
@@ -544,7 +544,7 @@ function OPC_AlterOption(widget, option, newval, ...)
 	elseif setval ~= newval then
 		widget:SetChecked(setval and 1 or nil);
 	end
-	for i,set in ipairs(OPC_OptionSets) do for j=2,#set do local v = set[j]
+	for _,set in ipairs(OPC_OptionSets) do for j=2,#set do local v = set[j]
 		if v.depOn == option then
 			local match = OneRingLib:GetOption(v.depOn, OR_CurrentOptionsDomain) == v.depValue;
 			v.widget:SetEnabled(match);
@@ -614,7 +614,7 @@ end
 function frame.refresh()
 	OPC_BlockInput = true;
 	frame.desc:SetText(L"Customize OPie's appearance and behavior. Right clicking a checkbox restores it to its default state." .. "\n" .. L"Profiles activate automatically when you switch between your primary and secondary specializations.");
-	for i, v in pairs(OPC_OptionSets) do
+	for _, v in pairs(OPC_OptionSets) do
 		v.label:SetText(v[1])
 		for j=2,#v do
 			v[j].widget.text:SetText(v.caption)
@@ -627,7 +627,7 @@ function frame.refresh()
 	end
 	UIDropDownMenu_SetText(OPC_OptionDomain, label);
 	UIDropDownMenu_SetText(OPC_Profile, L"Profile" .. ": " .. OneRingLib:GetCurrentProfile());
-	for i, set in pairs(OPC_OptionSets) do for j=2,#set do
+	for _, set in pairs(OPC_OptionSets) do for j=2,#set do
 		local v, opttype, option = set[j], set[j][1], set[j][2];
 		if opttype == "range" then
 			v.widget:SetValue(OneRingLib:GetOption(option) * (v[3] < v[4] and 1 or -1));

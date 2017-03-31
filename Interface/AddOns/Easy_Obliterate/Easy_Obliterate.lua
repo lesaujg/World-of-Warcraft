@@ -1,7 +1,7 @@
 --Easy Obliterate by Motig
 LoadAddOn("Blizzard_ObliterumUI")
 
-local addonVersion = 23
+local addonVersion = 24
 local currentPage = 1
 local selectedButton = nil
 local previousSelectedButton = nil

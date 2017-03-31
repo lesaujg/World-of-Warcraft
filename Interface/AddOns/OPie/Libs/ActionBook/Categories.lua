@@ -153,8 +153,8 @@ AB:AugmentCategory("Macros", function(_, add)
 	end
 end)
 AB:AugmentCategory("Equipment sets", function(_, add)
-	for i=1,GetNumEquipmentSets() do
-		add("equipmentset", (GetEquipmentSetInfo(i)))
+	for _,id in pairs(C_EquipmentSet.GetEquipmentSetIDs()) do
+		add("equipmentset", (C_EquipmentSet.GetEquipmentSetInfo(id)))
 	end
 end)
 AB:AugmentCategory("Raid markers", function(_, add) for i=0,8 do add("raidmark", i) end end)
@@ -165,7 +165,7 @@ do -- data broker launchers
 		LDB = LibStub and LibStub:GetLibrary("LibDataBroker-1.1", 1)
 	end
 	local function hasLaunchers()
-		for n, o in LDB:DataObjectIterator() do
+		for _, o in LDB:DataObjectIterator() do
 			if o.type == "launcher" then return true end
 		end
 	end

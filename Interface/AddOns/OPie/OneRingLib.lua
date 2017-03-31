@@ -435,12 +435,12 @@ local function OR_DeleteRing(name, data)
 	local bind = configInstance and configInstance.Bindings[name]
 	if configRoot and configRoot.ProfileStorage then
 		local rnOpt = "^" .. name:gsub("[%]%[().+*-?^$%%]", "%%%1") .. "#"
-		for k,v in pairs(configRoot.ProfileStorage) do
+		for _,v in pairs(configRoot.ProfileStorage) do
 			if v.Bindings then
 				v.Bindings[name] = nil
 			end
 			if v.RingOptions then
-				for k2, v2 in pairs(v.RingOptions) do
+				for k2, _v2 in pairs(v.RingOptions) do
 					if type(k2) ~= "string" or k2:match(rnOpt) then
 						v.RingOptions[k2] = nil
 					end
@@ -479,7 +479,7 @@ local function OR_PullCAs()
 	for k,v in rtable.pairs(OR_SecEnv.ORL_StoredCA) do
 		t[k] = v
 	end
-	for i, k in ipairs(OR_Rings) do
+	for _, k in ipairs(OR_Rings) do
 		local rt = OR_SecEnv.ORL_RingDataN[k] and OR_SecEnv.ORL_RingDataN[k].fcToken or t[k]
 		t[k] = not ((OR_Rings[k] and OR_Rings[k].noPersistentCA) or OR_SecEnv.fcIgnore[rt]) and rt or nil
 	end
@@ -537,7 +537,7 @@ local function OR_NotifyPVars(event, filter, perProfile)
 	end
 end
 local function OR_ForceResync(filter)
-	for k,v in ipairs(OR_Rings) do
+	for _,v in ipairs(OR_Rings) do
 		if (filter or v) == v then
 			OR_SyncRing(v)
 		end
@@ -592,7 +592,7 @@ local function OR_InitConfigState()
 	
 	local gameVersion = GetBuildInfo()
 	if configRoot._GameVersion ~= gameVersion then
-		for k,v in pairs(configRoot.ProfileStorage) do
+		for _,v in pairs(configRoot.ProfileStorage) do
 			if type(v) == "table" then
 				v.RotationTokens = nil
 			end
@@ -659,7 +659,7 @@ function EV:PLAYER_LOGOUT()
 		local store = v.perProfile and configInstance or configRoot.PersistentStorage
 		store[k] = next(v.t) ~= nil and v.t or nil
 	end
-	for k, v in pairs(configRoot.ProfileStorage) do
+	for _, v in pairs(configRoot.ProfileStorage) do
 		if v.RingOptions and next(v.RingOptions) == nil then v.RingOptions = nil end
 		if v.Bindings and next(v.Bindings) == nil then v.Bindings = nil end
 		if v.RotationTokens and next(v.RotationTokens) == nil then v.RotationTokens = nil end

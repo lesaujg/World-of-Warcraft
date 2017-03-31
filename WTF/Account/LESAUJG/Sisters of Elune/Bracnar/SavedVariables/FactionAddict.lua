@@ -25,161 +25,161 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Wednesday 3/29",
-		["rows"] = 1,
+		["date"] = "Thursday 3/30",
+		["rows"] = 3,
 	}, -- [1]
 	{
-		["date"] = "Tuesday 3/28",
+		["date"] = "Wednesday 3/29",
 		["rows"] = 1,
 	}, -- [2]
 	{
-		["date"] = "Thursday 3/23",
+		["date"] = "Tuesday 3/28",
 		["rows"] = 1,
 	}, -- [3]
 	{
-		["date"] = "Wednesday 3/22",
-		["rows"] = 2,
+		["date"] = "Thursday 3/23",
+		["rows"] = 1,
 	}, -- [4]
 	{
-		["date"] = "Sunday 2/12",
+		["date"] = "Wednesday 3/22",
 		["rows"] = 2,
 	}, -- [5]
 	{
-		["date"] = "Monday 2/6",
-		["rows"] = 1,
+		["date"] = "Sunday 2/12",
+		["rows"] = 2,
 	}, -- [6]
 	{
-		["date"] = "Sunday 2/5",
+		["date"] = "Monday 2/6",
 		["rows"] = 1,
 	}, -- [7]
 	{
-		["date"] = "Thursday 2/2",
+		["date"] = "Sunday 2/5",
 		["rows"] = 1,
 	}, -- [8]
 	{
-		["date"] = "Wednesday 2/1",
+		["date"] = "Thursday 2/2",
 		["rows"] = 1,
 	}, -- [9]
 	{
-		["date"] = "Monday 1/30",
+		["date"] = "Wednesday 2/1",
 		["rows"] = 1,
 	}, -- [10]
 	{
-		["date"] = "Sunday 1/29",
+		["date"] = "Monday 1/30",
 		["rows"] = 1,
 	}, -- [11]
 	{
-		["date"] = "Saturday 1/21",
+		["date"] = "Sunday 1/29",
 		["rows"] = 1,
 	}, -- [12]
 	{
-		["date"] = "Thursday 1/12",
+		["date"] = "Saturday 1/21",
 		["rows"] = 1,
 	}, -- [13]
 	{
+		["date"] = "Thursday 1/12",
+		["rows"] = 1,
+	}, -- [14]
+	{
 		["date"] = "Sunday 11/6",
 		["rows"] = 2,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Saturday 11/5",
 		["rows"] = 3,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Friday 11/4",
 		["rows"] = 2,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Thursday 11/3",
 		["rows"] = 3,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Wednesday 11/2",
 		["rows"] = 2,
-	}, -- [18]
+	}, -- [19]
 	{
 		["date"] = "Tuesday 11/1",
 		["rows"] = 5,
-	}, -- [19]
-	{
-		["date"] = "Monday 10/31",
-		["rows"] = 3,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
 	{
-		["Armies of Legionfall"] = 150,
+		["Shado-Pan Assault"] = 1800,
+		["Armies of Legionfall"] = 750,
+		["Sha'tari Defense"] = 686,
 	}, -- [1]
 	{
-		["Armies of Legionfall"] = 2160,
+		["Armies of Legionfall"] = 150,
 	}, -- [2]
 	{
-		["Sha'tari Defense"] = 972,
+		["Armies of Legionfall"] = 2160,
 	}, -- [3]
+	{
+		["Sha'tari Defense"] = 972,
+	}, -- [4]
 	{
 		["Bizmo's Brawlpub"] = 1750,
 		["Shado-Pan Assault"] = 1800,
-	}, -- [4]
+	}, -- [5]
 	{
 		["Shado-Pan Assault"] = 1800,
 		["Sha'tari Defense"] = 809,
-	}, -- [5]
-	{
-		["Emperor Shaohao"] = 10896,
 	}, -- [6]
 	{
-		["Emperor Shaohao"] = 1122,
+		["Emperor Shaohao"] = 10896,
 	}, -- [7]
 	{
-		["Sha'tari Defense"] = 741,
+		["Emperor Shaohao"] = 1122,
 	}, -- [8]
 	{
-		["Shado-Pan Assault"] = 1800,
+		["Sha'tari Defense"] = 741,
 	}, -- [9]
 	{
-		["Sha'tari Defense"] = 2627,
+		["Shado-Pan Assault"] = 1800,
 	}, -- [10]
 	{
-		["Shado-Pan Assault"] = 1800,
+		["Sha'tari Defense"] = 2627,
 	}, -- [11]
 	{
 		["Shado-Pan Assault"] = 1800,
 	}, -- [12]
 	{
-		["Shado-Pan Assault"] = 2400,
+		["Shado-Pan Assault"] = 1800,
 	}, -- [13]
+	{
+		["Shado-Pan Assault"] = 2400,
+	}, -- [14]
 	{
 		["The Wardens"] = 2200,
 		["Valarjar"] = 375,
-	}, -- [14]
+	}, -- [15]
 	{
 		["The Wardens"] = 1000,
 		["Valarjar"] = 1225,
 		["Dreamweavers"] = 1544,
-	}, -- [15]
+	}, -- [16]
 	{
 		["The Wardens"] = 225,
 		["Dreamweavers"] = 375,
-	}, -- [16]
+	}, -- [17]
 	{
 		["The Wardens"] = 450,
 		["Valarjar"] = 400,
 		["Dreamweavers"] = 475,
-	}, -- [17]
+	}, -- [18]
 	{
 		["The Wardens"] = 150,
 		["Dreamweavers"] = 225,
-	}, -- [18]
+	}, -- [19]
 	{
 		["Valarjar"] = 75,
 		["Highmountain Tribe"] = 400,
 		["The Wardens"] = 625,
 		["Shado-Pan Assault"] = 1800,
 		["Court of Farondis"] = 475,
-	}, -- [19]
-	{
-		["The Wardens"] = 225,
-		["Valarjar"] = 250,
-		["Highmountain Tribe"] = 225,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
@@ -285,9 +285,9 @@ FactionAddictConfigIsInactive = {
 	[1275] = false,
 	[1849] = false,
 	[576] = false,
-	[1085] = false,
-	[1276] = false,
 	[1850] = false,
+	[1276] = false,
+	[1085] = false,
 	[1098] = false,
 	[369] = false,
 	[1277] = false,

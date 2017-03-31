@@ -1,5 +1,7 @@
 
 TalentSetManager_Saves = {
+	["talents_pvp"] = {
+	},
 	["talents"] = {
 		[3] = {
 		},
@@ -7,6 +9,10 @@ TalentSetManager_Saves = {
 		},
 	},
 	["version"] = 1,
-	["talents_pvp"] = {
+	["interface"] = {
+		["auto_equip2"] = 0,
+		["auto_equip4"] = 0,
+		["auto_equip1"] = 0,
+		["auto_equip3"] = 0,
 	},
 }
