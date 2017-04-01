@@ -41,9 +41,9 @@
 --  Globals/Default Options  --
 -------------------------------
 DBM = {
-	Revision = tonumber(("$Revision: 16096 $"):sub(12, -3)),
-	DisplayVersion = "7.2.0", -- the string that is shown as version
-	ReleaseRevision = 16096 -- the revision of the latest stable version that is available
+	Revision = tonumber(("$Revision: 16114 $"):sub(12, -3)),
+	DisplayVersion = "7.2.1", -- the string that is shown as version
+	ReleaseRevision = 16113 -- the revision of the latest stable version that is available
 }
 DBM.HighestRelease = DBM.ReleaseRevision --Updated if newer version is detected, used by update nags to reflect critical fixes user is missing on boss pulls
 
@@ -421,7 +421,7 @@ local UpdateChestTimer
 local breakTimerStart
 local AddMsg
 
-local fakeBWVersion, fakeBWHash = 49, "7b20409"
+local fakeBWVersion, fakeBWHash = 50, "1e39f8a"
 local versionQueryString, versionResponseString = "Q^%d^%s", "V^%d^%s"
 
 local enableIcons = true -- set to false when a raid leader or a promoted player has a newer version of DBM
@@ -5125,8 +5125,8 @@ do
 	end
 
 	function DBM:UNIT_SPELLCAST_SUCCEEDED(uId, spellName, _, spellGUID, spellId)
-		local correctSpellId = tonumber(select(5, strsplit("-", spellGUID)), 10)
-		self:Debug("UNIT_SPELLCAST_SUCCEEDED fired: "..UnitName(uId).."'s "..spellName.."("..correctSpellId..")", 3)
+		--local correctSpellId = tonumber(select(5, strsplit("-", spellGUID)), 10)
+		self:Debug("UNIT_SPELLCAST_SUCCEEDED fired: "..UnitName(uId).."'s "..spellName.."("..spellId..")", 3)
 	end
 
 	function DBM:ENCOUNTER_START(encounterID, name, difficulty, size)
@@ -6338,18 +6338,20 @@ do
 		"Sound\\Creature\\Rhonin\\UR_Rhonin_Event08.ogg",
 	}
 	local function playDelay(self, count)
-		self:PlaySoundFile(soundFiles[count])
+		PlaySoundFile(soundFiles[count], "Dialog")
 	end
 
-	function DBM:AprilFools()
-		self:Unschedule(self.AprilFools)
+	function DBM:AprilFools(shutupRhonin)
+		self:Unschedule(playDelay)
+		if shutupRhonin then return end--This was invoked by a movie event
 		local currentMapId = GetPlayerMapAreaID("player")
 		if not currentMapId then
 			SetMapToCurrentZone()
 			currentMapId = GetCurrentMapAreaID()
 		end
-		self:Schedule(120 + math.random(0, 300) , self.AprilFools, self)
-		if currentMapId ~= 1014 then return end--Legion Dalaran
+		self:Unschedule(self.AprilFools)
+		self:Schedule(180 + math.random(0, 300) , self.AprilFools, self)
+		if currentMapId ~= 1014 or (MovieFrame and MovieFrame:IsShown()) then return end--Legion Dalaran
 		playDelay(self, 1)
 		self:Schedule(5, playDelay, self, 2)
 		self:Schedule(10, playDelay, self, 3)
@@ -6825,6 +6827,7 @@ do
 	}
 	MovieFrame:HookScript("OnEvent", function(self, event, id)
 		if event == "PLAY_MOVIE" and id and not neverFilter[id] then
+			DBM:AprilFools(true)
 			DBM:Debug("PLAY_MOVIE fired for ID: "..id, 2)
 			local isInstance, instanceType = IsInInstance()
 			if not isInstance or C_Garrison:IsOnGarrisonMap() or instanceType == "scenario" or DBM.Options.MovieFilter == "Never" then return end
@@ -6838,6 +6841,7 @@ do
 	end)
 
 	function DBM:CINEMATIC_START()
+		self:AprilFools(true)
 		self:Debug("CINEMATIC_START fired", 2)
 		local isInstance, instanceType = IsInInstance()
 		if not isInstance or C_Garrison:IsOnGarrisonMap() or instanceType == "scenario" or self.Options.MovieFilter == "Never" then return end

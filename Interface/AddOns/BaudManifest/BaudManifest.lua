@@ -230,6 +230,8 @@ local function GetItemString(Link)
 
   if strmatch(Link, "battlepet:") then
     return strmatch(Link, "(battlepet:%d*:%d*:%d*:%d*:%d*:%d*:%d*)|");
+  elseif strmatch(Link, "keystone:") then
+    return strmatch(Link, "(keystone:%d*:%d*:%d*:%d*:%d*:%d*)|");
   else
     return strmatch(Link, "(item:%d*:%d*:%d*:%d*:%d*:%d*:%-?%d*:%-?%d*:%d*:%d*:[%d:]+)|");
   end
@@ -245,7 +247,7 @@ local function CleanItemString(ItemString)
   -- We might have a saved item string from pre-7.0 that still has zero-fields.
   local CleanItemString = gsub(ItemString, ":0", ":");
 
-  if strmatch(CleanItemString, "battlepet:") then
+  if strmatch(CleanItemString, "battlepet:") or strmatch(CleanItemString, "keystone:") then
     return CleanItemString;
   end
 
@@ -2022,6 +2024,8 @@ function BaudManifestItemEntry_OnEnter(self, NotUpdate)
     return;
   end
 
+-- TODO: keystone tooltips
+
   if InRepairMode() and RepairCost and (RepairCost > 0) and IsDisplayAccessable(Display) then
     GameTooltip:AddLine(REPAIR_COST, "", 1, 1, 1);
     SetTooltipMoney(GameTooltip, RepairCost);
@@ -2742,12 +2746,17 @@ local function UpdateSlotFunc(Bag, Slot)
   ItemString = GetItemString(Link);
   ItemID = strmatch(ItemString, "item:(%d+):");
   if not ItemID then
-    BattlePet = true;
-    ItemID = "82800";
+    if (strmatch(ItemString, "keystone:")) then
+      Keystone = true;
+      ItemID = "138019";
+    else
+      BattlePet = true;
+      ItemID = "82800";
+    end
   end
 
   ItemID = tonumber(ItemID);
-  if UseSpecial and NormalBag and not Locked and not BattlePet then
+  if UseSpecial and NormalBag and not Locked and not BattlePet and not Keystone then
     Family = GetItemFamily(ItemID);
     if Family and (Family > 0) then
       for Index = 1, NumSpecials do
@@ -2778,7 +2787,7 @@ local function UpdateSlotFunc(Bag, Slot)
     end
   end
 
-  if BattlePet then
+  if BattlePet or Keystone then
     MaxCount = 1;
   else
     MaxCount = select(8, GetItemInfo(ItemString));
@@ -2919,9 +2928,13 @@ function BaudManifestUpdateList(Display)
   --Set counts of items that were not found to 0.  Safest to be done after, in case of errors occuring, causing the scan process to end prematurely.
   for Key, Item in pairs(Hash) do
     if Item.Count and not Item.Slot then
-      ItemID = strmatch(Item.ItemString, "item:(%d+):") or strmatch(Item.ItemString, "battlepet:") or true; --Just to make sure this is never nil
+      ItemID = strmatch(Item.ItemString, "item:(%d+):") or strmatch(Item.ItemString, "battlepet:") or strmatch(Item.ItemString, "keystone:") or true; --Just to make sure this is never nil
       for Key, NewItem in ipairs(AddItems) do
-        if (ItemID == strmatch(NewItem.ItemString, "item:(%d+):") or ItemID == strmatch(NewItem.ItemString, "battlepet:")) then
+        if (ItemID == strmatch(NewItem.ItemString, "item:(%d+):")
+            or
+            ItemID == strmatch(NewItem.ItemString, "battlepet:")
+            or
+            ItemID == strmatch(NewItem.ItemString, "keystone:")) then
           --To avoid having to find the item in the list, just copy the info over.  The NewItem table is discarded after.
           --if there's a marker for this item in the other display (probably bank), then it should be updated too
           local Hash2 = PlayerHash[Display:GetID() % 2 + 1];
@@ -2959,7 +2972,8 @@ function BaudManifestUpdateList(Display)
   end
 
   for Key, Value in ipairs(AddItems) do
-    Quality = select(3, GetItemInfo(Value.ItemString)) or strmatch(Value.ItemString, "battlepet:%d+:%d*:(%d+)");
+    -- I think all keystones are Epic (purple).
+    Quality = select(3, GetItemInfo(Value.ItemString)) or strmatch(Value.ItemString, "battlepet:%d+:%d*:(%d+)") or 4;
     tinsert(DisplayData[(Display:GetID() == 1) and Quality and PlayerData.PutQuality[Quality] or 1], Value);
     AddItems[Key] = nil;
   end
@@ -3238,6 +3252,12 @@ function BaudManifestScrollBar_Update(Display)
           Name, Texture = C_PetJournal.GetPetInfoBySpeciesID(tonumber(SpeciesID));
           MaxCount = 1;
           itemId = "82800";
+        elseif strmatch(ItemInfo.ItemString, "keystone:") then
+          -- TODO fix this
+          -- field = strmatch(ItemInfo.ItemString, "keystone:(%d+):%d*:(%d+):");
+          --- Name, Texture = C_PetJournal.GetPetInfoBySpeciesID(tonumber(SpeciesID));
+          MaxCount = 1;
+          itemId = "138019";
         end
 
         if not Name then
@@ -4558,7 +4578,7 @@ function BaudManifestProperties_OnClick(self)
   PlaySound("gsTitleOptionOK");
   local Button = self:GetParent():GetParent();
   local ItemInfo = Button.ItemInfo;
-  if not ItemInfo.ItemString or strmatch(ItemInfo.ItemString, "battlepet:") then
+  if not ItemInfo.ItemString or strmatch(ItemInfo.ItemString, "battlepet:") or strmatch(ItemInfo.ItemString, "keystone:") then
     return;
   end
   PropsItem = ItemInfo;
