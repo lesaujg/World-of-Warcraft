@@ -1,4 +1,64 @@
-Changes since tag 7.2.0
+tag 662a20c2969d106507dbe5ff7e46d3bb72e534c4 7.2.2
+Author:	subversion <svn@deadlybossmods.com>
+Date:	Sat Apr 1 12:31:05 2017 +0200
+
+Tagging as 7.2.2
+
+commit fbfe4c4163e84ffd3ef2d3877d748ad9d01ea79d
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Apr 1 12:31:05 2017 +0200
+
+    increment version number to 7.2.2
+
+commit 61c73fac61e547a8870f6aa320079342c75e87df
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Apr 1 11:34:52 2017 +0200
+
+    Omega via svn r16121:
+    Disable some login messages too
+
+commit f9cade69e1eecc9992fa67165268f374d8424893
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Apr 1 11:32:45 2017 +0200
+
+    Omega via svn r16120:
+    tweak
+
+commit 07647bf2e0e00fd5b3a0ad0c010fd4353c251415
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Apr 1 11:18:45 2017 +0200
+
+    Omega via svn r16119:
+    Just remove all of it all together.
+    Also make force updates far more strict going forward. at least half the complaints were things fixed in 7.2.1
+
+commit e4509d7bcbadd055fef563533aa9dd68370660ec
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Apr 1 09:20:50 2017 +0200
+
+    Omega via svn r16118:
+    Add message
+
+commit 7881c7e7f16946fc41ec0758c4e0a7714f10e9aa
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Apr 1 08:46:22 2017 +0200
+
+    Omega via svn r16117:
+    fix
+
+commit 1ad862c56d56debf785d6508059b2502579d8f2b
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Apr 1 05:33:55 2017 +0200
+
+    Omega via svn r16116:
+    Add a toggle
+
+commit bb834dbcecb1cf2a8156019f4c52c4dcfb3632ed
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Apr 1 04:20:05 2017 +0200
+
+    Omega via svn r16115:
+    Inc
 
 commit 2fe1d1a889bcd7667ab4e14afd6e5f9bb6a2064d
 Author: subversion <svn@deadlybossmods.com>
