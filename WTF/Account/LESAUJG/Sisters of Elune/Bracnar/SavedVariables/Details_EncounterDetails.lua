@@ -4273,6 +4273,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Wild Imp",
 		},
+		[136935] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Kazra'jin",
+		},
 		[209568] = {
 			["school"] = 64,
 			["type"] = "BUFF",
@@ -4284,14 +4291,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Expedient Elemental",
 		},
-		[227982] = {
-			["school"] = 16,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Helya",
-		},
 		[228877] = {
 			["school"] = 64,
 			["token"] = {
@@ -4300,12 +4299,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Elisande",
 		},
-		[136935] = {
-			["school"] = 8,
+		[227982] = {
+			["school"] = 16,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Kazra'jin",
+			["source"] = "Helya",
 		},
 		[133974] = {
 			["school"] = 1,

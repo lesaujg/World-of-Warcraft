@@ -4326,12 +4326,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Elisande",
 		},
-		[136935] = {
-			["school"] = 8,
+		[227982] = {
+			["school"] = 16,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Kazra'jin",
+			["source"] = "Helya",
 		},
 		[133974] = {
 			["school"] = 1,
@@ -4546,14 +4547,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Naomi",
 		},
-		[227982] = {
-			["school"] = 16,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Helya",
-		},
 		[209568] = {
 			["school"] = 64,
 			["type"] = "BUFF",
@@ -4564,6 +4557,13 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Expedient Elemental",
+		},
+		[136935] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Kazra'jin",
 		},
 		[104318] = {
 			["school"] = 4,
