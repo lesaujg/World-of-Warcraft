@@ -45,3 +45,7 @@ VER 3 0000000000000094 "TSMPostCancel" "133784"
 /click TSMAuctioningCancelButton
 /click TSMAuctioningPostButton
 END
+VER 3 000000000000009E "ZW" "INV_MISC_QUESTIONMARK"
+/tar Zandalari Warbringer
+/cast Lightning Bolt
+END

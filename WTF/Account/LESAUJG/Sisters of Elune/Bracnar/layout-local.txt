@@ -18,5 +18,5 @@ FrameLevel: 1
 Anchor: BOTTOMRIGHT
 X: -71
 Y: 4
-W: 250
+W: 249
 H: 800
