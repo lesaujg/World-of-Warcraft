@@ -27,7 +27,6 @@ VER 3 010000000000005C "_Kill Command" "INV_MISC_QUESTIONMARK"
 /petautocaston [nogroup] Thunderstomp
 /target [noexists] pettarget
 /cast Kill Command
-/use  [nogroup] 1
 END
 VER 3 0100000000000060 "_Kite" "132128"
 /use [button:1] 15
@@ -50,21 +49,14 @@ VER 3 010000000000000E "_Pet Attack/Foll" "Ability_Druid_ChallangingRoar"
 /cast Warp
 /cast Dash
 END
-VER 3 0100000000000063 "asdf" "INV_MISC_QUESTIONMARK"
-/petpassive
-/cast growl
-/petpassive
-END
-VER 3 0100000000000062 "awd" "ABILITY_HUNTER_CARVE"
-/cast Concussive shot
-/stopcasting
-/stopcasting
-END
 VER 3 0100000000000059 "Counter Shot" "INV_Misc_QuestionMark"
 /stopcasting
 /stopcasting
 /cast Counter Shot
 /cast Auto Shot
+END
+VER 3 0100000000000066 "Counter Shot" "INV_MISC_QUESTIONMARK"
+/cast  [@Focus]  Counter Shot
 END
 VER 3 010000000000005A "Disengage" "INV_MISC_QUESTIONMARK"
 /stopcasting

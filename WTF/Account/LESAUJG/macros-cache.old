@@ -17,9 +17,22 @@ VER 3 0000000000000098 "Decursive" "INV_MISC_QUESTIONMARK"
 /stopcasting
 /cast [@mouseover,nomod,exists] Remove Corruption;  [@mouseover,exists,mod:ctrl] Cyclone; [@mouseover,exists,mod:shift] Remove Corruption
 END
+VER 3 00000000000000A1 "dfasd" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petattack
+/petassist
+/cast Kill Command
+/cast Bestial Wrath
+/cast Aspect of the Wild
+END
 VER 3 0000000000000099 "Fish" "INV_MISC_QUESTIONMARK"
 /equipset Fishing
 /use Fishing
+END
+VER 3 00000000000000A0 "MD" "INV_MISC_QUESTIONMARK"
+/target Turag
+/cast [@pet] Misdirection
+/cast Solid Shell
 END
 VER 3 0000000000000088 "MD+CS" "INV_MISC_QUESTIONMARK"
 /cast [@focus,help][@pet,nodead,exists] Misdirection
@@ -45,7 +58,6 @@ VER 3 0000000000000094 "TSMPostCancel" "133784"
 /click TSMAuctioningCancelButton
 /click TSMAuctioningPostButton
 END
-VER 3 000000000000009E "ZW" "INV_MISC_QUESTIONMARK"
-/tar Zandalari Warbringer
-/cast Lightning Bolt
+VER 3 000000000000009F "Wyvern" "INV_MISC_QUESTIONMARK"
+/cast [@Turag] Wyvern Sting
 END

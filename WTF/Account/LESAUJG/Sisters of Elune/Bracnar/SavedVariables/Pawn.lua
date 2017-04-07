@@ -6,6 +6,23 @@ PawnOptions = {
 	["UpgradeTracking"] = false,
 	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
+		[128808] = {
+			["Relics"] = {
+				{
+					["ItemLevel"] = 46,
+					["Type"] = "Wind",
+				}, -- [1]
+				{
+					["ItemLevel"] = 43,
+					["Type"] = "Iron",
+				}, -- [2]
+				{
+					["ItemLevel"] = 46,
+					["Type"] = "Blood",
+				}, -- [3]
+			},
+			["Name"] = "Talonclaw, Spear of the Wild Gods",
+		},
 		[128861] = {
 			["Relics"] = {
 				{
@@ -23,22 +40,22 @@ PawnOptions = {
 			},
 			["Name"] = "Titanstrike",
 		},
-		[128808] = {
+		[128826] = {
 			["Relics"] = {
 				{
-					["ItemLevel"] = 46,
+					["ItemLevel"] = 48,
 					["Type"] = "Wind",
 				}, -- [1]
 				{
-					["ItemLevel"] = 43,
-					["Type"] = "Iron",
+					["ItemLevel"] = 49,
+					["Type"] = "Blood",
 				}, -- [2]
 				{
-					["ItemLevel"] = 43,
-					["Type"] = "Blood",
+					["ItemLevel"] = 48,
+					["Type"] = "Life",
 				}, -- [3]
 			},
-			["Name"] = "Talonclaw",
+			["Name"] = "Thas'dorah, Legacy of the Windrunners",
 		},
 	},
 }

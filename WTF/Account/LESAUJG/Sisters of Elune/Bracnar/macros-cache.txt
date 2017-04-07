@@ -21,13 +21,11 @@ VER 3 010000000000005C "_Kill Command" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /petattack
 /petassist
-/petautocastoff [group] Growl
-/petautocaston [nogroup] Growl
-/petautocastoff [group] Thunderstomp
-/petautocaston [nogroup] Thunderstomp
+#/petautocastoff [group] Growl
+#/petautocaston [nogroup] Growl
+#/petautocastoff [group] Thunderstomp
+#/petautocaston [nogroup] Thunderstomp
 /target [noexists] pettarget
-/cast Bestial Wrath
-/cast Aspect 
 /cast Kill Command
 END
 VER 3 0100000000000060 "_Kite" "132128"
@@ -51,16 +49,6 @@ VER 3 010000000000000E "_Pet Attack/Foll" "Ability_Druid_ChallangingRoar"
 /cast Warp
 /cast Dash
 END
-VER 3 0100000000000063 "asdf" "INV_MISC_QUESTIONMARK"
-/petpassive
-/cast growl
-/petpassive
-END
-VER 3 0100000000000062 "awd" "ABILITY_HUNTER_CARVE"
-/cast Concussive shot
-/stopcasting
-/stopcasting
-END
 VER 3 0100000000000059 "Counter Shot" "INV_Misc_QuestionMark"
 /stopcasting
 /stopcasting
@@ -75,11 +63,6 @@ VER 3 010000000000005A "Disengage" "INV_MISC_QUESTIONMARK"
 /stopcasting
 /cast Disengage
 /cast Auto Shot
-END
-VER 3 0100000000000065 "Intimidate" "INV_MISC_QUESTIONMARK"
-/target [@Focus]
-/petattack
-/cast [@Focus] Intimidation
 END
 VER 3 010000000000004D "MD+" "INV_Misc_QuestionMark"
 #show Misdirection
@@ -97,14 +80,6 @@ VER 3 0100000000000054 "Pet_stuff" "INV_Misc_QuestionMark"
 /cast [button:2, nopet] Call Pet 4
 /cast [button:2, pet, nodead] Dismiss Pet
 /cast [@pet,dead]Revive Pet; [nopet,mod] Revive Pet;Mend Pet
-END
-VER 3 0100000000000064 "Totem" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/target Fel Surge Totem
-/cast Cobra Shot
-/target [@focus]
-/target Bile Spitter Egg
-/target Bile Spitter
 END
 VER 3 0100000000000055 "Trueshot" "INV_MISC_QUESTIONMARK"
 #showtooltip
