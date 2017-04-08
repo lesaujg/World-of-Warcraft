@@ -12,19 +12,20 @@ VER 3 010000000000005E "_Cobra Shot" "INV_MISC_QUESTIONMARK"
 /cast Cobra Shot
 END
 VER 3 010000000000005F "_Dire Beast" "INV_MISC_QUESTIONMARK"
-#showtooltip
+#showtooltip Dire Beast
+#show Dire Beast
 /target [noexists] pettarget
-/cast Dire Beast
 /cast Titan's Thunder
+/cast Dire Beast
 END
 VER 3 010000000000005C "_Kill Command" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /petattack
 /petassist
-#/petautocastoff [group] Growl
-#/petautocaston [nogroup] Growl
-#/petautocastoff [group] Thunderstomp
-#/petautocaston [nogroup] Thunderstomp
+/petautocastoff [group] Growl
+/petautocaston [nogroup] Growl
+/petautocastoff [group] Thunderstomp
+/petautocaston [nogroup] Thunderstomp
 /target [noexists] pettarget
 /cast Kill Command
 END

@@ -52,15 +52,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Chromaggus",
 		},
-		[17253] = {
-			["school"] = 1,
+		[197163] = {
+			["school"] = 8,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Chromaggus",
 		},
-		[197163] = {
-			["school"] = 8,
+		[17253] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
