@@ -4,7 +4,6 @@ PawnOptions = {
 	["LastPlayerFullName"] = "Galinar-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
-	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[120978] = {
 			["Relics"] = {
@@ -13,13 +12,14 @@ PawnOptions = {
 					["Type"] = "Holy",
 				}, -- [1]
 				{
-					["ItemLevel"] = 15,
+					["ItemLevel"] = 18,
 					["Type"] = "Fire",
 				}, -- [2]
 			},
 			["Name"] = "Ashbringer",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "PALADIN",

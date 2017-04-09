@@ -107,7 +107,7 @@ FactionAddictLogData = {
 }
 FactionAddictLogEntries = {
 	{
-		["Armies of Legionfall"] = 300,
+		["Armies of Legionfall"] = 2150,
 	}, -- [1]
 	{
 		["Darkmoon Faire"] = 1750,

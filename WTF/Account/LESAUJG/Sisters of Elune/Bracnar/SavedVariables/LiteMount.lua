@@ -4,6 +4,9 @@ LM_OptionsDB = {
 	},
 	["excludedspells"] = {
 	},
+	["excludeNewMounts"] = {
+		false, -- [1]
+	},
 	["flagoverrides"] = {
 	},
 	["seenspells"] = {
@@ -282,9 +285,6 @@ LM_OptionsDB = {
 		[88335] = true,
 		[32292] = true,
 		[230987] = true,
-	},
-	["excludeNewMounts"] = {
-		false, -- [1]
 	},
 	["macro"] = {
 		"/cast !Aspect of the Cheetah\n", -- [1]

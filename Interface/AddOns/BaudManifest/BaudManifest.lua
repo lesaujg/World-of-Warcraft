@@ -1749,9 +1749,6 @@ function BaudManifestDisplay_OnHide(self)
   end
   self.AutoShown = nil;
 
-  --if ArtifactRelicHelpBox:IsShown() and ArtifactRelicHelpBox.owner == self then
-  --  ArtifactRelicHelpBox:Hide();
-  --end
 end
 
 ------------------------------------
@@ -2023,8 +2020,6 @@ function BaudManifestItemEntry_OnEnter(self, NotUpdate)
     CursorUpdate(self);
     return;
   end
-
--- TODO: keystone tooltips
 
   if InRepairMode() and RepairCost and (RepairCost > 0) and IsDisplayAccessable(Display) then
     GameTooltip:AddLine(REPAIR_COST, "", 1, 1, 1);
@@ -3253,11 +3248,20 @@ function BaudManifestScrollBar_Update(Display)
           MaxCount = 1;
           itemId = "82800";
         elseif strmatch(ItemInfo.ItemString, "keystone:") then
-          -- TODO fix this
-          -- field = strmatch(ItemInfo.ItemString, "keystone:(%d+):%d*:(%d+):");
-          --- Name, Texture = C_PetJournal.GetPetInfoBySpeciesID(tonumber(SpeciesID));
-          MaxCount = 1;
+          local dungeonID, plusLevel, active = strmatch(ItemInfo.ItemString, "keystone:(%d+):(%d+):(%d+)");
+          Name = "Keystone: ";
+          Name = Name .. C_ChallengeMode.GetMapInfo(dungeonID);
+          Name = Name .. "+";
+          Name = Name .. plusLevel;
+          if not active then
+            Name = Name .. " (Depleted)";
+            Quality = 0;
+          else
+            Quality = 4;
+          end
           itemId = "138019";
+          Texture = select(10, GetItemInfo(itemId));
+          MaxCount = 1;
         end
 
         if not Name then
