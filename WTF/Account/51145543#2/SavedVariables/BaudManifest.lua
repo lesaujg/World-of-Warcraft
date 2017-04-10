@@ -5,26 +5,26 @@ BaudManifestData = {
 		["FillSpecials"] = true,
 		["ShowArrows"] = true,
 		["ShowBank"] = true,
-		["Scale"] = 100,
+		["ItemNameFirst"] = false,
 		["HideEquipped"] = true,
-		["ReplaceBlizBags"] = true,
+		["HideBlizBank"] = true,
 		["HideBlizInv"] = true,
 		["Combine"] = true,
 		["AutoShowInv"] = true,
-		["HideBlizBank"] = true,
-		["ItemNameFirst"] = false,
+		["ReplaceBlizBags"] = true,
+		["Scale"] = 100,
 	},
 	["Sisters of Elune"] = {
 		["Torinara"] = {
 			{
 				{
 					{
-						["ItemString"] = "item:6948::::::::1:262::::::",
 						["Count"] = 1,
+						["ItemString"] = "item:6948::::::::1:262::::::",
 					}, -- [1]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:110560::::::::100:263::11::::",
+						["Count"] = 1,
 					}, -- [2]
 					{
 						["Count"] = 1,
@@ -32,13 +32,13 @@ BaudManifestData = {
 						["ItemString"] = "item:128169::::::::1:262:::1:583:::",
 					}, -- [3]
 					{
-						["ItemString"] = "item:122392::::::::1:262:::1:583:::",
 						["Count"] = 1,
+						["ItemString"] = "item:122392::::::::1:262:::1:583:::",
 					}, -- [4]
 					{
-						["ItemString"] = "item:122362::::::::1:262:::1:583:::",
-						["Equipped"] = 1,
 						["Count"] = 2,
+						["Equipped"] = 1,
+						["ItemString"] = "item:122362::::::::1:262:::1:583:::",
 					}, -- [5]
 					{
 						["ItemString"] = "item:114821::::::::17:262::::::",
@@ -86,8 +86,8 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [14]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:138162::::::::100:262::14::::",
+						["Count"] = 1,
 					}, -- [15]
 					{
 						["ItemString"] = "item:138170::::::::100:262::14::::",
@@ -95,12 +95,12 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [16]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:138171::::::::100:262::14::::",
+						["Count"] = 1,
 					}, -- [17]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:139172::::::::100:262::14::::",
+						["Count"] = 1,
 					}, -- [18]
 					{
 						["Count"] = 1,
@@ -123,8 +123,8 @@ BaudManifestData = {
 						["ItemString"] = "item:141597::::::::100:264::9:3:3447:1815:1820:::",
 					}, -- [22]
 					{
-						["ItemString"] = "item:132120::::::::100:264::11::::",
 						["Count"] = 1,
+						["ItemString"] = "item:132120::::::::100:264::11::::",
 					}, -- [23]
 					{
 						["ItemString"] = "item:141602::::::::100:263::9:3:3447:1815:3331:::",
@@ -132,28 +132,28 @@ BaudManifestData = {
 						["Count"] = 2,
 					}, -- [24]
 					{
-						["ItemString"] = "item:50320::::::::100:263::::::",
 						["Count"] = 1,
+						["ItemString"] = "item:50320::::::::100:263::::::",
 					}, -- [25]
 					{
 						["Count"] = 44,
 						["ItemString"] = "item:94288::::::::100:263::::::",
 					}, -- [26]
 					{
-						["ItemString"] = "item:95567::::::::100:263::11::::",
 						["Count"] = 1,
+						["ItemString"] = "item:95567::::::::100:263::11::::",
 					}, -- [27]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:49715::::::::100:264::1::::",
+						["Count"] = 1,
 					}, -- [28]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:50446::::::::100:264::1::::",
+						["Count"] = 1,
 					}, -- [29]
 					{
-						["ItemString"] = "item:89317::::::::100:263::::::",
 						["Count"] = 1,
+						["ItemString"] = "item:89317::::::::100:263::::::",
 					}, -- [30]
 					{
 						["ItemString"] = "item:112449::::::::100:263::::::",
@@ -182,9 +182,9 @@ BaudManifestData = {
 				["SlotEmpty"] = 116,
 				["BGTexture"] = "Bumpy",
 				["ShowBags"] = false,
-				["SpecialEmpty"] = 0,
-				["SpecialTotal"] = 0,
 				["SlotTotal"] = 136,
+				["SpecialTotal"] = 0,
+				["SpecialEmpty"] = 0,
 			}, -- [1]
 			{
 				{
@@ -243,9 +243,9 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [1]
 					{
+						["Count"] = 1,
 						["ItemString"] = "item:23389::::::::2:262::::::",
 						["Equipped"] = 1,
-						["Count"] = 1,
 					}, -- [2]
 					{
 						["Count"] = 3,
@@ -265,9 +265,9 @@ BaudManifestData = {
 				},
 				["SlotEmpty"] = 17,
 				["BGTexture"] = "Bumpy",
-				["SpecialEmpty"] = 0,
-				["SpecialTotal"] = 0,
 				["SlotTotal"] = 20,
+				["SpecialTotal"] = 0,
+				["SpecialEmpty"] = 0,
 			}, -- [1]
 			{
 				{

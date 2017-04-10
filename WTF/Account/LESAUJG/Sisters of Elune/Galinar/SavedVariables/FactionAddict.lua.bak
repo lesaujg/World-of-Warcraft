@@ -25,61 +25,69 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Saturday 4/8",
-		["rows"] = 2,
+		["date"] = "Sunday 4/9",
+		["rows"] = 3,
 	}, -- [1]
 	{
-		["date"] = "Friday 4/7",
+		["date"] = "Saturday 4/8",
 		["rows"] = 4,
 	}, -- [2]
 	{
-		["date"] = "Friday 2/24",
-		["rows"] = 1,
+		["date"] = "Friday 4/7",
+		["rows"] = 4,
 	}, -- [3]
 	{
-		["date"] = "Wednesday 2/8",
+		["date"] = "Friday 2/24",
 		["rows"] = 1,
 	}, -- [4]
 	{
-		["date"] = "Friday 2/3",
+		["date"] = "Wednesday 2/8",
 		["rows"] = 1,
 	}, -- [5]
 	{
-		["date"] = "Friday 1/27",
+		["date"] = "Friday 2/3",
 		["rows"] = 1,
 	}, -- [6]
 	{
-		["date"] = "Thursday 1/19",
+		["date"] = "Friday 1/27",
 		["rows"] = 1,
 	}, -- [7]
 	{
-		["date"] = "Saturday 1/14",
+		["date"] = "Thursday 1/19",
 		["rows"] = 1,
 	}, -- [8]
 	{
-		["date"] = "Wednesday 11/16",
+		["date"] = "Saturday 1/14",
 		["rows"] = 1,
 	}, -- [9]
+	{
+		["date"] = "Wednesday 11/16",
+		["rows"] = 1,
+	}, -- [10]
 }
 FactionAddictLogEntries = {
 	{
-		["Cult of Malicor"] = 2000,
-		["Highmountain Tribe"] = 1610,
+		["The Wardens"] = 600,
+		["Cult of Malicor"] = 500,
+		["Highmountain Tribe"] = 600,
 	}, -- [1]
+	{
+		["Cult of Malicor"] = 2750,
+		["The Wardens"] = 600,
+		["Valarjar"] = 750,
+		["Highmountain Tribe"] = 1610,
+	}, -- [2]
 	{
 		["Cult of Malicor"] = 3000,
 		["Court of Farondis"] = 2090,
 		["The Wardens"] = 300,
 		["Highmountain Tribe"] = 600,
-	}, -- [2]
-	{
-		["The Ashen Verdict"] = 1629,
 	}, -- [3]
 	{
-		["The Ashen Verdict"] = 1500,
+		["The Ashen Verdict"] = 1629,
 	}, -- [4]
 	{
-		["The Ashen Verdict"] = 3000,
+		["The Ashen Verdict"] = 1500,
 	}, -- [5]
 	{
 		["The Ashen Verdict"] = 3000,
@@ -91,8 +99,11 @@ FactionAddictLogEntries = {
 		["The Ashen Verdict"] = 3000,
 	}, -- [8]
 	{
-		["Cult of Malicor"] = 250,
+		["The Ashen Verdict"] = 3000,
 	}, -- [9]
+	{
+		["Cult of Malicor"] = 250,
+	}, -- [10]
 }
 FactionAddictConfigIsInactive = {
 	[1737] = false,
@@ -197,9 +208,9 @@ FactionAddictConfigIsInactive = {
 	[1275] = false,
 	[1849] = false,
 	[576] = false,
-	[1850] = false,
-	[1276] = false,
 	[1085] = false,
+	[1276] = false,
+	[1850] = false,
 	[1098] = false,
 	[369] = false,
 	[1277] = false,
