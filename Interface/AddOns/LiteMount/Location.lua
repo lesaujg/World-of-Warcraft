@@ -14,7 +14,7 @@ LM_Location = LM_CreateAutoEventFrame("Frame", "LM_Location")
 LM_Location:RegisterEvent("PLAYER_LOGIN")
 
 -- Magical develper only debugging-fu
-local I_AM_X = GetAddOnMetadata("LiteMount", "Version") == "7.2.1"
+local I_AM_X = GetAddOnMetadata("LiteMount", "Version") == "7.2.2"
 
 function LM_Location:Initialize()
     self.continent = -1
@@ -123,10 +123,10 @@ function LM_Location:CanFly()
         end
     end
 
-    -- Can't fly in the Legion Class Hall areas
-    if C_Garrison.IsPlayerInGarrison(LE_GARRISON_TYPE_7_0) then
-        return nil
-    end
+    -- Can't fly in the Legion Class Hall areas. Or can you?
+    -- if C_Garrison.IsPlayerInGarrison(LE_GARRISON_TYPE_7_0) then
+    --     return nil
+    -- end
 
     -- This is the Draenor starting area, which is not on the Draenor
     -- continent (not on any continent). I don't know if you can fly there

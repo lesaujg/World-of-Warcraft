@@ -13,13 +13,6 @@ X: -149
 Y: -123
 W: 32
 H: 32
-Frame: AmrUiFrame1
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 0
-W: 1000
-H: 700
 Frame: BaudManifestDisplay1
 FrameLevel: 15
 Anchor: TOPRIGHT

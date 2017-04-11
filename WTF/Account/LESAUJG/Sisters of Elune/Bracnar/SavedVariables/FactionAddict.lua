@@ -25,148 +25,149 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Sunday 4/9",
+		["date"] = "Tuesday 4/11",
 		["rows"] = 1,
 	}, -- [1]
 	{
-		["date"] = "Saturday 4/8",
-		["rows"] = 1,
+		["date"] = "Monday 4/10",
+		["rows"] = 2,
 	}, -- [2]
 	{
-		["date"] = "Friday 4/7",
-		["rows"] = 2,
+		["date"] = "Sunday 4/9",
+		["rows"] = 1,
 	}, -- [3]
 	{
-		["date"] = "Thursday 4/6",
+		["date"] = "Saturday 4/8",
 		["rows"] = 1,
 	}, -- [4]
 	{
-		["date"] = "Tuesday 4/4",
-		["rows"] = 1,
+		["date"] = "Friday 4/7",
+		["rows"] = 2,
 	}, -- [5]
 	{
-		["date"] = "Monday 4/3",
+		["date"] = "Thursday 4/6",
 		["rows"] = 1,
 	}, -- [6]
 	{
-		["date"] = "Sunday 4/2",
+		["date"] = "Tuesday 4/4",
 		["rows"] = 1,
 	}, -- [7]
 	{
-		["date"] = "Saturday 4/1",
+		["date"] = "Monday 4/3",
 		["rows"] = 1,
 	}, -- [8]
 	{
-		["date"] = "Thursday 3/30",
-		["rows"] = 3,
+		["date"] = "Sunday 4/2",
+		["rows"] = 1,
 	}, -- [9]
 	{
-		["date"] = "Wednesday 3/29",
+		["date"] = "Saturday 4/1",
 		["rows"] = 1,
 	}, -- [10]
 	{
-		["date"] = "Tuesday 3/28",
-		["rows"] = 1,
+		["date"] = "Thursday 3/30",
+		["rows"] = 3,
 	}, -- [11]
 	{
-		["date"] = "Thursday 3/23",
+		["date"] = "Wednesday 3/29",
 		["rows"] = 1,
 	}, -- [12]
 	{
+		["date"] = "Tuesday 3/28",
+		["rows"] = 1,
+	}, -- [13]
+	{
+		["date"] = "Thursday 3/23",
+		["rows"] = 1,
+	}, -- [14]
+	{
 		["date"] = "Wednesday 3/22",
 		["rows"] = 2,
-	}, -- [13]
+	}, -- [15]
 	{
 		["date"] = "Sunday 2/12",
 		["rows"] = 2,
-	}, -- [14]
+	}, -- [16]
 	{
 		["date"] = "Monday 2/6",
 		["rows"] = 1,
-	}, -- [15]
+	}, -- [17]
 	{
 		["date"] = "Sunday 2/5",
 		["rows"] = 1,
-	}, -- [16]
+	}, -- [18]
 	{
 		["date"] = "Thursday 2/2",
 		["rows"] = 1,
-	}, -- [17]
-	{
-		["date"] = "Wednesday 2/1",
-		["rows"] = 1,
-	}, -- [18]
-	{
-		["date"] = "Monday 1/30",
-		["rows"] = 1,
 	}, -- [19]
 	{
-		["date"] = "Sunday 1/29",
+		["date"] = "Wednesday 2/1",
 		["rows"] = 1,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
 	{
-		["Armies of Legionfall"] = 950,
+		["Sha'tari Defense"] = 684,
 	}, -- [1]
 	{
-		["Armies of Legionfall"] = 2150,
+		["Armies of Legionfall"] = 1300,
+		["Shado-Pan Assault"] = 1800,
 	}, -- [2]
+	{
+		["Armies of Legionfall"] = 950,
+	}, -- [3]
+	{
+		["Armies of Legionfall"] = 2150,
+	}, -- [4]
 	{
 		["Darkmoon Faire"] = 1750,
 		["Armies of Legionfall"] = 1125,
-	}, -- [3]
-	{
-		["Armies of Legionfall"] = 450,
-	}, -- [4]
-	{
-		["Armies of Legionfall"] = 375,
 	}, -- [5]
 	{
-		["Armies of Legionfall"] = 625,
+		["Armies of Legionfall"] = 450,
 	}, -- [6]
 	{
-		["Armies of Legionfall"] = 300,
+		["Armies of Legionfall"] = 375,
 	}, -- [7]
 	{
-		["Armies of Legionfall"] = 975,
+		["Armies of Legionfall"] = 625,
 	}, -- [8]
+	{
+		["Armies of Legionfall"] = 300,
+	}, -- [9]
+	{
+		["Armies of Legionfall"] = 975,
+	}, -- [10]
 	{
 		["Shado-Pan Assault"] = 1800,
 		["Armies of Legionfall"] = 750,
 		["Sha'tari Defense"] = 686,
-	}, -- [9]
-	{
-		["Armies of Legionfall"] = 150,
-	}, -- [10]
-	{
-		["Armies of Legionfall"] = 2160,
 	}, -- [11]
 	{
-		["Sha'tari Defense"] = 972,
+		["Armies of Legionfall"] = 150,
 	}, -- [12]
+	{
+		["Armies of Legionfall"] = 2160,
+	}, -- [13]
+	{
+		["Sha'tari Defense"] = 972,
+	}, -- [14]
 	{
 		["Bizmo's Brawlpub"] = 1750,
 		["Shado-Pan Assault"] = 1800,
-	}, -- [13]
+	}, -- [15]
 	{
 		["Shado-Pan Assault"] = 1800,
 		["Sha'tari Defense"] = 809,
-	}, -- [14]
-	{
-		["Emperor Shaohao"] = 10896,
-	}, -- [15]
-	{
-		["Emperor Shaohao"] = 1122,
 	}, -- [16]
 	{
-		["Sha'tari Defense"] = 741,
+		["Emperor Shaohao"] = 10896,
 	}, -- [17]
 	{
-		["Shado-Pan Assault"] = 1800,
+		["Emperor Shaohao"] = 1122,
 	}, -- [18]
 	{
-		["Sha'tari Defense"] = 2627,
+		["Sha'tari Defense"] = 741,
 	}, -- [19]
 	{
 		["Shado-Pan Assault"] = 1800,
@@ -279,12 +280,12 @@ FactionAddictConfigIsInactive = {
 	[1975] = false,
 	[933] = false,
 	[1848] = false,
-	[1085] = false,
+	[1104] = false,
 	[990] = false,
 	[1275] = false,
 	[1849] = false,
 	[576] = false,
-	[1104] = false,
+	[1085] = false,
 	[1276] = false,
 	[1850] = false,
 	[1682] = false,
@@ -295,13 +296,13 @@ FactionAddictConfigIsInactive = {
 	[609] = false,
 	[1278] = false,
 	[1711] = false,
-	[81] = false,
 	[1847] = false,
+	[1388] = false,
 	[1279] = false,
 	[69] = false,
-	[1280] = false,
-	[1216] = false,
 	[2045] = false,
+	[1216] = false,
+	[1280] = false,
 	[70] = false,
 	[1345] = false,
 	[93] = false,
@@ -327,7 +328,7 @@ FactionAddictConfigIsInactive = {
 	[1732] = false,
 	[1031] = false,
 	[932] = false,
-	[1388] = false,
+	[81] = false,
 	[1733] = false,
 	[1690] = false,
 	[1351] = false,

@@ -21,22 +21,33 @@ TradeSkillMaster_DestroyingDB = {
 			"Torinar - Sisters of Elune", -- [9]
 			"Leanara - Sisters of Elune", -- [10]
 		},
-		["realm"] = {
-			"Sisters of Elune", -- [1]
-			"Turalyon", -- [2]
-		},
-		["profile"] = {
-			"Default", -- [1]
-		},
 		["factionrealm"] = {
 			"Alliance - Sisters of Elune", -- [1]
 			"Horde - Turalyon", -- [2]
 		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["realm"] = {
+			"Sisters of Elune", -- [1]
+			"Turalyon", -- [2]
+		},
 	},
 	["g@ @autoShow"] = true,
 	["g@ @autoStack"] = true,
-	["g@ @logDays"] = 14,
-	["g@ @deAbovePrice"] = "0c",
+	["_currentProfile"] = {
+		["Galinar - Sisters of Elune"] = "Default",
+		["Guldahka - Turalyon"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Orig - Sisters of Elune"] = "Default",
+		["Leanara - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Torinar - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
+	},
+	["_version"] = 1,
 	["g@ @history"] = {
 		["Disenchant"] = {
 			{
@@ -78,8 +89,8 @@ TradeSkillMaster_DestroyingDB = {
 				["time"] = 1447074524,
 				["result"] = {
 					["item:76136:0:0:0:0:0:0"] = 1,
-					["item:76138:0:0:0:0:0:0"] = 1,
 					["item:90407:0:0:0:0:0:0"] = 2,
+					["item:76138:0:0:0:0:0:0"] = 1,
 				},
 			}, -- [1]
 			{
@@ -87,8 +98,8 @@ TradeSkillMaster_DestroyingDB = {
 				["time"] = 1447074576,
 				["result"] = {
 					["item:76137:0:0:0:0:0:0"] = 1,
-					["item:90407:0:0:0:0:0:0"] = 2,
 					["item:76134:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 2,
 				},
 			}, -- [2]
 			{
@@ -138,8 +149,8 @@ TradeSkillMaster_DestroyingDB = {
 				["item"] = "i:72093",
 				["time"] = 1447074734,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 1,
 					["item:76135:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 1,
 				},
 			}, -- [8]
 			{
@@ -166,48 +177,48 @@ TradeSkillMaster_DestroyingDB = {
 				["time"] = 1447074787,
 				["result"] = {
 					["item:76139:0:0:0:0:0:0"] = 1,
-					["item:90407:0:0:0:0:0:0"] = 1,
 					["item:76134:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 1,
 				},
 			}, -- [11]
 			{
 				["item"] = "i:72093",
 				["time"] = 1447074817,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 2,
 					["item:76137:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 2,
 				},
 			}, -- [12]
 			{
 				["item"] = "i:72093",
 				["time"] = 1447074825,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 1,
 					["item:76135:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 1,
 				},
 			}, -- [13]
 			{
 				["item"] = "i:72093",
 				["time"] = 1447074862,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 1,
 					["item:76134:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 1,
 				},
 			}, -- [14]
 			{
 				["item"] = "i:72093",
 				["time"] = 1447074866,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 1,
 					["item:76135:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 1,
 				},
 			}, -- [15]
 			{
 				["item"] = "i:72093",
 				["time"] = 1447074885,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 1,
 					["item:76130:0:0:0:0:0:0"] = 2,
+					["item:90407:0:0:0:0:0:0"] = 1,
 				},
 			}, -- [16]
 			{
@@ -215,16 +226,16 @@ TradeSkillMaster_DestroyingDB = {
 				["time"] = 1447074902,
 				["result"] = {
 					["item:76137:0:0:0:0:0:0"] = 1,
-					["item:90407:0:0:0:0:0:0"] = 2,
 					["item:76134:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 2,
 				},
 			}, -- [17]
 			{
 				["item"] = "i:72093",
 				["time"] = 1447074910,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 2,
 					["item:76135:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 2,
 				},
 			}, -- [18]
 			{
@@ -232,8 +243,8 @@ TradeSkillMaster_DestroyingDB = {
 				["time"] = 1447074913,
 				["result"] = {
 					["item:76137:0:0:0:0:0:0"] = 1,
-					["item:90407:0:0:0:0:0:0"] = 1,
 					["item:76134:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 1,
 				},
 			}, -- [19]
 			{
@@ -251,26 +262,26 @@ TradeSkillMaster_DestroyingDB = {
 				["result"] = {
 					["item:76133:0:0:0:0:0:0"] = 1,
 					["item:76137:0:0:0:0:0:0"] = 1,
-					["item:90407:0:0:0:0:0:0"] = 1,
 					["item:76138:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 1,
 				},
 			}, -- [21]
 			{
 				["item"] = "i:72093",
 				["time"] = 1447074945,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 2,
+					["item:76134:0:0:0:0:0:0"] = 1,
 					["item:76135:0:0:0:0:0:0"] = 1,
 					["item:76131:0:0:0:0:0:0"] = 1,
-					["item:76134:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 2,
 				},
 			}, -- [22]
 			{
 				["item"] = "i:72093",
 				["time"] = 1447074951,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 2,
 					["item:76135:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 2,
 				},
 			}, -- [23]
 			{
@@ -285,32 +296,32 @@ TradeSkillMaster_DestroyingDB = {
 				["item"] = "i:72093",
 				["time"] = 1447074967,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 2,
 					["item:76134:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 2,
 				},
 			}, -- [25]
 			{
 				["item"] = "i:72093",
 				["time"] = 1447074978,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 1,
 					["item:76135:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 1,
 				},
 			}, -- [26]
 			{
 				["item"] = "i:72093",
 				["time"] = 1447074982,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 2,
 					["item:76134:0:0:0:0:0:0"] = 2,
+					["item:90407:0:0:0:0:0:0"] = 2,
 				},
 			}, -- [27]
 			{
 				["item"] = "i:72093",
 				["time"] = 1447074985,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 2,
 					["item:76137:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 2,
 				},
 			}, -- [28]
 			{
@@ -327,8 +338,8 @@ TradeSkillMaster_DestroyingDB = {
 				["item"] = "i:72093",
 				["time"] = 1447075048,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 2,
 					["item:76130:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 2,
 				},
 			}, -- [30]
 			{
@@ -344,8 +355,8 @@ TradeSkillMaster_DestroyingDB = {
 				["item"] = "i:72093",
 				["time"] = 1447075056,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 1,
 					["item:76135:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 1,
 				},
 			}, -- [32]
 			{
@@ -354,8 +365,8 @@ TradeSkillMaster_DestroyingDB = {
 				["result"] = {
 					["item:76142:0:0:0:0:0:0"] = 1,
 					["item:76137:0:0:0:0:0:0"] = 1,
-					["item:90407:0:0:0:0:0:0"] = 2,
 					["item:76134:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 2,
 				},
 			}, -- [33]
 			{
@@ -387,24 +398,24 @@ TradeSkillMaster_DestroyingDB = {
 				["item"] = "i:72093",
 				["time"] = 1447075082,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 2,
 					["item:76135:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 2,
 				},
 			}, -- [37]
 			{
 				["item"] = "i:72092",
 				["time"] = 1447075094,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 2,
 					["item:76130:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 2,
 				},
 			}, -- [38]
 			{
 				["item"] = "i:72092",
 				["time"] = 1447075102,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 2,
 					["item:76137:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 2,
 				},
 			}, -- [39]
 			{
@@ -420,8 +431,8 @@ TradeSkillMaster_DestroyingDB = {
 				["item"] = "i:72093",
 				["time"] = 1447075113,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 1,
 					["item:76134:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 1,
 				},
 			}, -- [41]
 			{
@@ -437,24 +448,24 @@ TradeSkillMaster_DestroyingDB = {
 				["item"] = "i:72092",
 				["time"] = 1447075126,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 2,
 					["item:76134:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 2,
 				},
 			}, -- [43]
 			{
 				["item"] = "i:72092",
 				["time"] = 1447075152,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 1,
 					["item:76135:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 1,
 				},
 			}, -- [44]
 			{
 				["item"] = "i:72092",
 				["time"] = 1447075171,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 2,
 					["item:76135:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 2,
 				},
 			}, -- [45]
 			{
@@ -505,8 +516,8 @@ TradeSkillMaster_DestroyingDB = {
 				["item"] = "i:72092",
 				["time"] = 1447075283,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 1,
 					["item:76130:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 1,
 				},
 			}, -- [51]
 			{
@@ -531,8 +542,8 @@ TradeSkillMaster_DestroyingDB = {
 				["item"] = "i:72092",
 				["time"] = 1447075324,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 2,
 					["item:76135:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 2,
 				},
 			}, -- [54]
 			{
@@ -547,8 +558,8 @@ TradeSkillMaster_DestroyingDB = {
 				["item"] = "i:72092",
 				["time"] = 1447075350,
 				["result"] = {
-					["item:90407:0:0:0:0:0:0"] = 2,
 					["item:76134:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 2,
 				},
 			}, -- [56]
 			{
@@ -564,8 +575,8 @@ TradeSkillMaster_DestroyingDB = {
 				["item"] = "i:72092",
 				["time"] = 1447075361,
 				["result"] = {
-					["item:76135:0:0:0:0:0:0"] = 1,
 					["item:76134:0:0:0:0:0:0"] = 1,
+					["item:76135:0:0:0:0:0:0"] = 1,
 				},
 			}, -- [58]
 			{
@@ -582,8 +593,8 @@ TradeSkillMaster_DestroyingDB = {
 				["time"] = 1447075379,
 				["result"] = {
 					["item:76135:0:0:0:0:0:0"] = 1,
-					["item:90407:0:0:0:0:0:0"] = 2,
 					["item:76134:0:0:0:0:0:0"] = 1,
+					["item:90407:0:0:0:0:0:0"] = 2,
 				},
 			}, -- [60]
 		},
@@ -591,20 +602,9 @@ TradeSkillMaster_DestroyingDB = {
 	["g@ @helpPlatesShown"] = {
 		["destroyingFrame"] = true,
 	},
-	["_hash"] = 14107345,
 	["g@ @includeSoulbound"] = false,
+	["_hash"] = 14107345,
 	["g@ @deMaxQuality"] = 2,
-	["_version"] = 1,
-	["_currentProfile"] = {
-		["Galinar - Sisters of Elune"] = "Default",
-		["Guldahka - Turalyon"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Orig - Sisters of Elune"] = "Default",
-		["Leanara - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
-		["Torinar - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-	},
+	["g@ @deAbovePrice"] = "0c",
+	["g@ @logDays"] = 14,
 }

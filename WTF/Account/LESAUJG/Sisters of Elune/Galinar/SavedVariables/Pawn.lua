@@ -16,6 +16,9 @@ PawnOptions = {
 					["ItemLevel"] = 18,
 					["Type"] = "Fire",
 				}, -- [2]
+				{
+					["Type"] = "Holy",
+				}, -- [3]
 			},
 			["Name"] = "Ashbringer",
 		},

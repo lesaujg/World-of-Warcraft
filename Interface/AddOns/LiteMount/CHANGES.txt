@@ -1,15 +1,14 @@
-tag 23d2c7a5c832bd64c25745729aeda51dbd5f4d8e 7.2.1
+tag 05873f4662c8d01ff11945817e40f045a5fa17f0 7.2.2
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Tue Mar 28 22:24:18 2017 +1100
+Date:	Tue Apr 11 09:55:40 2017 +1000
 
-Tagging 7.2.1 for WoW 7.2.
-Now with Lost Isles flying + associated bugs.
+Attempted fix for Nagrand(Draenor) corral mounts.
+Allow flying in Legion garrisons.
+Rename buttons from LiteMountActionButton1 to LM_B1 etc.
 
-commit 0cdb4febe8c2245addbf8ec0084e8a8e539079b6
+commit c736ac673ca63004efbadefe1f57a220a196b83b
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Mar 27 15:52:20 2017 +1100
+Date:   Tue Apr 11 09:49:46 2017 +1000
 
-    Update ToC for 7.2
-    Add Broken Isles Pathfinder, Part 2
-    No useful updates or enhancements, Blizzard still shipping broken mounting
+    Abandon floating stuff for now, fix legion garrison.
 
