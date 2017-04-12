@@ -25,152 +25,153 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Tuesday 4/11",
+		["date"] = "Wednesday 4/12",
 		["rows"] = 1,
 	}, -- [1]
 	{
-		["date"] = "Monday 4/10",
+		["date"] = "Tuesday 4/11",
 		["rows"] = 2,
 	}, -- [2]
 	{
-		["date"] = "Sunday 4/9",
-		["rows"] = 1,
+		["date"] = "Monday 4/10",
+		["rows"] = 2,
 	}, -- [3]
 	{
-		["date"] = "Saturday 4/8",
+		["date"] = "Sunday 4/9",
 		["rows"] = 1,
 	}, -- [4]
 	{
+		["date"] = "Saturday 4/8",
+		["rows"] = 1,
+	}, -- [5]
+	{
 		["date"] = "Friday 4/7",
 		["rows"] = 2,
-	}, -- [5]
+	}, -- [6]
 	{
 		["date"] = "Thursday 4/6",
 		["rows"] = 1,
-	}, -- [6]
+	}, -- [7]
 	{
 		["date"] = "Tuesday 4/4",
 		["rows"] = 1,
-	}, -- [7]
+	}, -- [8]
 	{
 		["date"] = "Monday 4/3",
 		["rows"] = 1,
-	}, -- [8]
+	}, -- [9]
 	{
 		["date"] = "Sunday 4/2",
 		["rows"] = 1,
-	}, -- [9]
+	}, -- [10]
 	{
 		["date"] = "Saturday 4/1",
 		["rows"] = 1,
-	}, -- [10]
+	}, -- [11]
 	{
 		["date"] = "Thursday 3/30",
 		["rows"] = 3,
-	}, -- [11]
+	}, -- [12]
 	{
 		["date"] = "Wednesday 3/29",
 		["rows"] = 1,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Tuesday 3/28",
 		["rows"] = 1,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Thursday 3/23",
 		["rows"] = 1,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Wednesday 3/22",
 		["rows"] = 2,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Sunday 2/12",
 		["rows"] = 2,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Monday 2/6",
 		["rows"] = 1,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Sunday 2/5",
 		["rows"] = 1,
-	}, -- [18]
-	{
-		["date"] = "Thursday 2/2",
-		["rows"] = 1,
 	}, -- [19]
 	{
-		["date"] = "Wednesday 2/1",
+		["date"] = "Thursday 2/2",
 		["rows"] = 1,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
 	{
-		["Sha'tari Defense"] = 684,
+		["Armies of Legionfall"] = 150,
 	}, -- [1]
+	{
+		["Sha'tari Defense"] = 684,
+		["Armies of Legionfall"] = 2775,
+	}, -- [2]
 	{
 		["Armies of Legionfall"] = 1300,
 		["Shado-Pan Assault"] = 1800,
-	}, -- [2]
-	{
-		["Armies of Legionfall"] = 950,
 	}, -- [3]
 	{
-		["Armies of Legionfall"] = 2150,
+		["Armies of Legionfall"] = 950,
 	}, -- [4]
+	{
+		["Armies of Legionfall"] = 2150,
+	}, -- [5]
 	{
 		["Darkmoon Faire"] = 1750,
 		["Armies of Legionfall"] = 1125,
-	}, -- [5]
-	{
-		["Armies of Legionfall"] = 450,
 	}, -- [6]
 	{
-		["Armies of Legionfall"] = 375,
+		["Armies of Legionfall"] = 450,
 	}, -- [7]
 	{
-		["Armies of Legionfall"] = 625,
+		["Armies of Legionfall"] = 375,
 	}, -- [8]
 	{
-		["Armies of Legionfall"] = 300,
+		["Armies of Legionfall"] = 625,
 	}, -- [9]
 	{
-		["Armies of Legionfall"] = 975,
+		["Armies of Legionfall"] = 300,
 	}, -- [10]
+	{
+		["Armies of Legionfall"] = 975,
+	}, -- [11]
 	{
 		["Shado-Pan Assault"] = 1800,
 		["Armies of Legionfall"] = 750,
 		["Sha'tari Defense"] = 686,
-	}, -- [11]
-	{
-		["Armies of Legionfall"] = 150,
 	}, -- [12]
 	{
-		["Armies of Legionfall"] = 2160,
+		["Armies of Legionfall"] = 150,
 	}, -- [13]
 	{
-		["Sha'tari Defense"] = 972,
+		["Armies of Legionfall"] = 2160,
 	}, -- [14]
+	{
+		["Sha'tari Defense"] = 972,
+	}, -- [15]
 	{
 		["Bizmo's Brawlpub"] = 1750,
 		["Shado-Pan Assault"] = 1800,
-	}, -- [15]
+	}, -- [16]
 	{
 		["Shado-Pan Assault"] = 1800,
 		["Sha'tari Defense"] = 809,
-	}, -- [16]
-	{
-		["Emperor Shaohao"] = 10896,
 	}, -- [17]
 	{
-		["Emperor Shaohao"] = 1122,
+		["Emperor Shaohao"] = 10896,
 	}, -- [18]
 	{
-		["Sha'tari Defense"] = 741,
+		["Emperor Shaohao"] = 1122,
 	}, -- [19]
 	{
-		["Shado-Pan Assault"] = 1800,
+		["Sha'tari Defense"] = 741,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
@@ -300,9 +301,9 @@ FactionAddictConfigIsInactive = {
 	[1388] = false,
 	[1279] = false,
 	[69] = false,
-	[2045] = false,
+	[81] = false,
 	[1216] = false,
-	[1280] = false,
+	[2045] = false,
 	[70] = false,
 	[1345] = false,
 	[93] = false,
@@ -328,7 +329,7 @@ FactionAddictConfigIsInactive = {
 	[1732] = false,
 	[1031] = false,
 	[932] = false,
-	[81] = false,
+	[1280] = false,
 	[1733] = false,
 	[1690] = false,
 	[1351] = false,

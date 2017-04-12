@@ -27,3 +27,7 @@ Bagnon_VoidStorage: disabled
 OneBag3: disabled
 Tukui: enabled
 Tukui_Config: enabled
+TradeSkillMaster_AuctionDB: enabled
+TradeSkillMaster_CoolDowns: disabled
+AddOnSkins: enabled
+TradeSkillMaster_Destroying: disabled

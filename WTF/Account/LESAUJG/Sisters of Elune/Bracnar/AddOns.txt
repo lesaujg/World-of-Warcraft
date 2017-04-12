@@ -169,7 +169,7 @@ CrossRealmAssist: enabled
 Ketho_InstanceTimer: disabled
 SavedInstances: enabled
 TeleportCloak: enabled
-TradeSkillMaster_Vendoring: disabled
+TradeSkillMaster_Vendoring: enabled
 DBM-Nighthold: enabled
 DBM-EmeraldNightmare: enabled
 AdvancedIconSelector: disabled
@@ -199,7 +199,7 @@ Details_DataStorage: enabled
 Details_TimeAttack: enabled
 Details_TinyThreat: enabled
 Details_Vanguard: enabled
-Details_Streamer: enabled
+Details_Streamer: disabled
 Details_3DModelsPaths: enabled
 Details_RaidInfo-EmeraldNightmare: enabled
 Details_RaidInfo-Nighthold: enabled
@@ -213,3 +213,7 @@ Bagnon_Config: disabled
 Bagnon_GuildBank: disabled
 Bagnon_VoidStorage: disabled
 OneBag3: disabled
+Easy_Obliterate: enabled
+TomeOfTeleportation: enabled
+WeakAurasTemplates: enabled
+DBM-TombofSargeras: enabled
