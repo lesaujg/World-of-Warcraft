@@ -1,14 +1,14 @@
-tag 05873f4662c8d01ff11945817e40f045a5fa17f0 7.2.2
+tag 7d93eedc87c876de35765cbebbc292564c71ce5b 7.2.4
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Tue Apr 11 09:55:40 2017 +1000
+Date:	Wed Apr 12 14:46:31 2017 +1000
 
-Attempted fix for Nagrand(Draenor) corral mounts.
-Allow flying in Legion garrisons.
-Rename buttons from LiteMountActionButton1 to LM_B1 etc.
+More flying fixes for Legion.
+Travel Form is a 100% ground mount again.
+Ghost Wolf is 100% with follower (may not work).
 
-commit c736ac673ca63004efbadefe1f57a220a196b83b
+commit 64b814ca754a81fd85d868e00e9933d2a391fa6a
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Apr 11 09:49:46 2017 +1000
+Date:   Wed Apr 12 13:11:37 2017 +1000
 
-    Abandon floating stuff for now, fix legion garrison.
+    Apparently one of the Order Hall followers makes Ghost Wolf 100%.
 
