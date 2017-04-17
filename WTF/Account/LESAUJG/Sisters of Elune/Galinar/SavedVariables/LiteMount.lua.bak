@@ -4,6 +4,9 @@ LM_OptionsDB = {
 	},
 	["excludedspells"] = {
 	},
+	["excludeNewMounts"] = {
+		false, -- [1]
+	},
 	["flagoverrides"] = {
 	},
 	["seenspells"] = {
@@ -167,10 +170,11 @@ LM_OptionsDB = {
 		[96503] = true,
 		[34790] = true,
 		[41513] = true,
+		[242874] = true,
 		[72286] = true,
 		[23228] = true,
 		[88335] = true,
-		[127164] = true,
+		[84751] = true,
 		[171630] = true,
 		[228919] = true,
 		[121820] = true,
@@ -218,7 +222,7 @@ LM_OptionsDB = {
 		[88746] = true,
 		[130137] = true,
 		[59799] = true,
-		[32239] = true,
+		[88331] = true,
 		[171844] = true,
 		[165803] = true,
 		[54753] = true,
@@ -231,7 +235,7 @@ LM_OptionsDB = {
 		[23239] = true,
 		[23338] = true,
 		[74918] = true,
-		[130138] = true,
+		[171617] = true,
 		[43927] = true,
 		[170347] = true,
 		[59569] = true,
@@ -248,13 +252,13 @@ LM_OptionsDB = {
 		[75596] = true,
 		[171846] = true,
 		[171619] = true,
-		[171617] = true,
+		[130138] = true,
 		[23222] = true,
 		[23214] = true,
 		[183117] = true,
 		[65643] = true,
 		[59791] = true,
-		[88331] = true,
+		[32239] = true,
 		[75207] = true,
 		[41516] = true,
 		[171625] = true,
@@ -283,11 +287,8 @@ LM_OptionsDB = {
 		[59785] = true,
 		[97501] = true,
 		[32240] = true,
-		[84751] = true,
+		[127164] = true,
 		[230987] = true,
-	},
-	["excludeNewMounts"] = {
-		false, -- [1]
 	},
 	["macro"] = {
 		"", -- [1]
