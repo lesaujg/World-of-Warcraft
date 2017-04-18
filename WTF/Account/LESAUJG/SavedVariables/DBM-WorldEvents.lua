@@ -1148,6 +1148,28 @@ DBMWorldEvents_AllSavedVars = {
 				["Timer42380targetTColor"] = 0,
 			}, -- [4]
 		},
+		["Brew"] = {
+			{
+				["NormalizeVolume"] = true,
+				["HealthFrame"] = false,
+				["Enabled"] = true,
+			}, -- [1]
+			{
+				["NormalizeVolume"] = true,
+				["HealthFrame"] = false,
+				["Enabled"] = true,
+			}, -- [2]
+			{
+				["NormalizeVolume"] = true,
+				["HealthFrame"] = false,
+				["Enabled"] = true,
+			}, -- [3]
+			{
+				["NormalizeVolume"] = true,
+				["HealthFrame"] = false,
+				["Enabled"] = true,
+			}, -- [4]
+		},
 		["Omen"] = {
 			{
 				["Enabled"] = true,
@@ -1200,28 +1222,6 @@ DBMWorldEvents_AllSavedVars = {
 				["SpecWarn26540move"] = true,
 				["Timer104903cdTColor"] = 6,
 				["SpecWarn26540moveSWSound"] = 1,
-			}, -- [4]
-		},
-		["Brew"] = {
-			{
-				["NormalizeVolume"] = true,
-				["HealthFrame"] = false,
-				["Enabled"] = true,
-			}, -- [1]
-			{
-				["NormalizeVolume"] = true,
-				["HealthFrame"] = false,
-				["Enabled"] = true,
-			}, -- [2]
-			{
-				["NormalizeVolume"] = true,
-				["HealthFrame"] = false,
-				["Enabled"] = true,
-			}, -- [3]
-			{
-				["NormalizeVolume"] = true,
-				["HealthFrame"] = false,
-				["Enabled"] = true,
 			}, -- [4]
 		},
 	},
@@ -2377,6 +2377,19 @@ DBMWorldEvents_AllSavedVars = {
 				["Enabled"] = true,
 				["SpecWarn234660dodge"] = true,
 			},
+			[2] = {
+				["SpecWarn238005dodgeSWNote"] = true,
+				["SpecWarn235085dodgeSWSound"] = 3,
+				["SpecWarn234660dodgeSWSound"] = 4,
+				["HealthFrame"] = false,
+				["SpecWarn238005dodgeSWSound"] = 4,
+				["SpecWarn238005dodge"] = true,
+				["SpecWarn234660dodgeSWNote"] = true,
+				["SpecWarn235085dodge"] = true,
+				["SpecWarn235085dodgeSWNote"] = true,
+				["SpecWarn234660dodge"] = true,
+				["Enabled"] = true,
+			},
 		},
 		["Greench"] = {
 			{
@@ -2679,8 +2692,8 @@ DBMWorldEvents_AllSavedVars = {
 				["Timer218639cd"] = true,
 				["Enabled"] = true,
 				["SpecWarn218657moveaway"] = true,
-				["announce219469spell"] = true,
 				["SpecWarn219110runSWSound"] = 4,
+				["announce219469spell"] = true,
 				["SpecWarn216916dodgeSWSound"] = 2,
 				["SpecWarn218639dodgeSWSound"] = 2,
 				["SpecWarn207576move"] = true,

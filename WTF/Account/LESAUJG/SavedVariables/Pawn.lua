@@ -437,6 +437,9 @@ PawnCommon = {
 		["\"MrRobot\":PALADIN2"] = {
 			["IconTexturePath"] = 236264,
 			["PerCharacterOptions"] = {
+				["Galinar-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "f58cba",
 			["ClassID"] = 2,
@@ -482,9 +485,6 @@ PawnCommon = {
 		["\"MrRobot\":PALADIN3"] = {
 			["IconTexturePath"] = 135873,
 			["PerCharacterOptions"] = {
-				["Galinar-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 				["Herbinator-Sisters of Elune"] = {
 					["Visible"] = true,
 				},

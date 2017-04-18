@@ -5,14 +5,14 @@ BaudManifestData = {
 		["FillSpecials"] = true,
 		["ShowArrows"] = true,
 		["ShowBank"] = true,
-		["Scale"] = 100,
+		["ItemNameFirst"] = false,
 		["HideEquipped"] = true,
-		["ReplaceBlizBags"] = true,
+		["HideBlizBank"] = true,
 		["HideBlizInv"] = true,
 		["Combine"] = true,
 		["AutoShowInv"] = true,
-		["HideBlizBank"] = true,
-		["ItemNameFirst"] = false,
+		["ReplaceBlizBags"] = true,
+		["Scale"] = 100,
 	},
 	["Sisters of Elune"] = {
 		["Torinara"] = {
@@ -36,8 +36,8 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [4]
 					{
-						["ItemString"] = "item:122362::::::::1:262:::1:583:::",
 						["Count"] = 2,
+						["ItemString"] = "item:122362::::::::1:262:::1:583:::",
 						["Equipped"] = 1,
 					}, -- [5]
 					{
@@ -118,8 +118,8 @@ BaudManifestData = {
 						["Equipped"] = 1,
 					}, -- [21]
 					{
-						["Count"] = 2,
 						["ItemString"] = "item:141597::::::::100:264::9:3:3447:1815:1820:::",
+						["Count"] = 2,
 						["Slots"] = 2,
 					}, -- [22]
 					{
@@ -136,8 +136,8 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [25]
 					{
-						["Count"] = 58,
 						["ItemString"] = "item:94288::::::::100:263::::::",
+						["Count"] = 58,
 					}, -- [26]
 					{
 						["ItemString"] = "item:95567::::::::100:263::11::::",
@@ -156,26 +156,30 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [30]
 					{
-						["ItemString"] = "item:112449::::::::100:263::::::",
 						["Count"] = 4,
+						["ItemString"] = "item:112449::::::::100:263::::::",
 					}, -- [31]
 					{
-						["ItemString"] = "item:89112::::::::100:263::::::",
 						["Count"] = 9,
+						["ItemString"] = "item:89112::::::::100:263::::::",
 					}, -- [32]
 					{
-						["ItemString"] = "item:74248::::::::100:263::::::",
 						["Count"] = 3,
+						["ItemString"] = "item:74248::::::::100:263::::::",
 					}, -- [33]
 					{
-						["ItemString"] = "item:94289::::::::100:263::::::",
 						["Count"] = 3,
+						["ItemString"] = "item:94289::::::::100:263::::::",
 					}, -- [34]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:80433::::::::100:263::::::",
+						["Count"] = 2,
 					}, -- [35]
-					["SlotsUsed"] = 36,
+					{
+						["ItemString"] = "item:122171::::::::100:263::1:1:43:::",
+						["Count"] = 1,
+					}, -- [36]
+					["SlotsUsed"] = 37,
 				}, -- [1]
 				["BGColor"] = {
 					0.5, -- [1]
@@ -183,12 +187,12 @@ BaudManifestData = {
 					0.5, -- [3]
 					0.7, -- [4]
 				},
-				["SlotEmpty"] = 115,
+				["SlotEmpty"] = 114,
 				["BGTexture"] = "Bumpy",
 				["ShowBags"] = false,
-				["SpecialEmpty"] = 0,
-				["SpecialTotal"] = 0,
 				["SlotTotal"] = 136,
+				["SpecialTotal"] = 0,
+				["SpecialEmpty"] = 0,
 			}, -- [1]
 			{
 				{
@@ -237,7 +241,7 @@ BaudManifestData = {
 				[0] = 1,
 			},
 			["Class"] = "SHAMAN",
-			["Money"] = 78818284,
+			["Money"] = 82381172,
 		},
 		["Magnara"] = {
 			{
@@ -247,9 +251,9 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [1]
 					{
+						["ItemString"] = "item:23389::::::::2:262::::::",
 						["Equipped"] = 1,
 						["Count"] = 1,
-						["ItemString"] = "item:23389::::::::2:262::::::",
 					}, -- [2]
 					{
 						["Count"] = 3,
@@ -269,9 +273,9 @@ BaudManifestData = {
 				},
 				["SlotEmpty"] = 17,
 				["BGTexture"] = "Bumpy",
-				["SpecialEmpty"] = 0,
-				["SpecialTotal"] = 0,
 				["SlotTotal"] = 20,
+				["SpecialTotal"] = 0,
+				["SpecialEmpty"] = 0,
 			}, -- [1]
 			{
 				{

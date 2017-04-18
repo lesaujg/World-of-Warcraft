@@ -21,6 +21,20 @@ PawnOptions = {
 			},
 			["Name"] = "Ashbringer",
 		},
+		[128866] = {
+			["Relics"] = {
+				{
+					["Type"] = "Holy",
+				}, -- [1]
+				{
+					["Type"] = "Iron",
+				}, -- [2]
+				{
+					["Type"] = "Arcane",
+				}, -- [3]
+			},
+			["Name"] = "Truthguard",
+		},
 	},
 	["LastKeybindingsSet"] = 1,
 }
