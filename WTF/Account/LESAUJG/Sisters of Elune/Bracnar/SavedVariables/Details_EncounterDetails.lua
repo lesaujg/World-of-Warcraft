@@ -1273,12 +1273,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Elisande",
 		},
-		[90361] = {
-			["school"] = 8,
+		[229948] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_PERIODIC_HEAL"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "McHealy",
+			["source"] = "Fel Lord Kuraz'mal",
 		},
 		[219815] = {
 			["school"] = 64,
@@ -1296,12 +1296,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Helya",
 		},
-		[229948] = {
+		[206517] = {
 			["school"] = 4,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Fel Lord Kuraz'mal",
+			["source"] = "Star Augur Etraeus",
 		},
 		[193636] = {
 			["school"] = 16,
@@ -1313,14 +1315,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Saltsea Droplet",
 		},
-		[206517] = {
-			["school"] = 4,
+		[196809] = {
+			["school"] = 2,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "Star Augur Etraeus",
+			["source"] = "T'uure",
 		},
 		[227651] = {
 			["school"] = 1,
@@ -1345,12 +1345,14 @@ EncounterDetailsDB = {
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 		},
-		[240951] = {
-			["school"] = 1,
+		[212794] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Heave Cudgel",
+			["source"] = "Tichondrius",
 		},
 		[198496] = {
 			["school"] = 8,
@@ -1361,12 +1363,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ularogg Cragshaper",
 		},
-		[196809] = {
-			["school"] = 2,
+		[240951] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_HEAL"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "T'uure",
+			["source"] = "Heave Cudgel",
 		},
 		[206936] = {
 			["school"] = 16,
@@ -1388,12 +1390,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Hellfire Warder",
 		},
-		[191847] = {
+		[90361] = {
 			["school"] = 8,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_PERIODIC_HEAL"] = true,
 			},
-			["source"] = "Serpentrix",
+			["source"] = "McHealy",
 		},
 		[191975] = {
 			["school"] = 1,
@@ -1826,14 +1828,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Xavius",
 		},
-		[196587] = {
-			["school"] = 32,
+		[38593] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Amalgam of Souls",
+			["source"] = "Temporus",
 		},
 		[29880] = {
 			["school"] = 64,
@@ -1893,13 +1894,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Hyrja",
 		},
-		[227660] = {
+		[227872] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Guarm",
+			["source"] = "Moroes",
 		},
 		[194668] = {
 			["school"] = 32,
@@ -1909,13 +1911,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Harbaron",
 		},
-		[38593] = {
+		[227660] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Temporus",
+			["source"] = "Guarm",
 		},
 		[191855] = {
 			["school"] = 8,
@@ -1941,22 +1943,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Star Augur Etraeus",
 		},
-		[207714] = {
-			["school"] = 32,
+		[228803] = {
+			["school"] = 16,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Star Augur Etraeus",
-		},
-		[227872] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Moroes",
+			["source"] = "Helya",
 		},
 		[216024] = {
 			["school"] = 64,
@@ -1968,6 +1961,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Felsworn Spellguard",
 		},
+		[196587] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Amalgam of Souls",
+		},
 		[213083] = {
 			["school"] = 16,
 			["type"] = "BUFF",
@@ -1978,13 +1980,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Icy Enchantment",
 		},
-		[228803] = {
-			["school"] = 16,
-			["type"] = "BUFF",
+		[227404] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Helya",
+			["source"] = "Midnight",
 		},
 		[206896] = {
 			["school"] = 32,
@@ -2003,19 +2005,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Maiden of Virtue",
 		},
-		[232775] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Guarm",
-		},
-		[218838] = {
-			["school"] = 64,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-		},
 		[173954] = {
 			["school"] = 1,
 			["token"] = {
@@ -2023,13 +2012,18 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Empowered Construct",
 		},
-		[227404] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[218838] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Midnight",
+		},
+		[107501] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Twilight Assault Drake",
 		},
 		[123996] = {
 			["school"] = 8,
@@ -2037,6 +2031,16 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Xuen",
+		},
+		[15531] = {
+			["school"] = 16,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Infinite Chronomancer",
 		},
 		[206384] = {
 			["school"] = 4,
@@ -2061,15 +2065,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Kael'thas Sunstrider",
 		},
-		[15531] = {
-			["school"] = 16,
-			["type"] = "DEBUFF",
+		[213852] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Infinite Chronomancer",
+			["source"] = "Spellblade Aluriel",
 		},
 		[198379] = {
 			["school"] = 1,
@@ -2081,13 +2083,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Archdruid Glaidalis",
 		},
-		[197484] = {
-			["school"] = 1,
+		[207714] = {
+			["school"] = 32,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Illysanna Ravencrest",
+			["source"] = "Star Augur Etraeus",
 		},
 		[208865] = {
 			["school"] = 64,
@@ -2104,13 +2106,12 @@ EncounterDetailsDB = {
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 		},
-		[221783] = {
+		[46044] = {
 			["school"] = 4,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Gul'dan",
+			["source"] = "Sunblade Imp",
 		},
 		[234824] = {
 			["school"] = 32,
@@ -2181,12 +2182,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Horrid Eagle",
 		},
-		[46044] = {
-			["school"] = 4,
+		[17843] = {
+			["school"] = 2,
 			["token"] = {
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Sunblade Imp",
+			["source"] = "Priestess Delrissa",
 		},
 		[218148] = {
 			["school"] = 4,
@@ -2227,13 +2228,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Star Augur Etraeus",
 		},
-		[17843] = {
-			["school"] = 2,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Priestess Delrissa",
-		},
 		[227783] = {
 			["school"] = 16,
 			["token"] = {
@@ -2242,13 +2236,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Mrrgria",
 		},
-		[227666] = {
-			["school"] = 1,
+		[237596] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Felguard",
+		},
+		[221783] = {
+			["school"] = 4,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Guarm",
+			["source"] = "Gul'dan",
 		},
 		[230990] = {
 			["school"] = 2,
@@ -2266,14 +2269,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Bellowing Idol",
 		},
-		[237596] = {
-			["school"] = 4,
+		[227666] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Felguard",
+			["source"] = "Guarm",
 		},
 		[228633] = {
 			["school"] = 64,
@@ -2393,19 +2395,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Helya",
 		},
-		[227669] = {
+		[216028] = {
 			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Felsworn Spellguard",
+		},
+		[208230] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Guarm",
-		},
-		[227415] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
+			["source"] = "Tichondrius",
 		},
 		[227737] = {
 			["school"] = 1,
@@ -2422,20 +2428,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Spectral Patron",
 		},
-		[216028] = {
+		[227669] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Felsworn Spellguard",
+			["source"] = "Guarm",
 		},
-		[218463] = {
-			["school"] = 64,
+		[206954] = {
+			["school"] = 16,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
+			["source"] = "Star Augur Etraeus",
 		},
 		[138923] = {
 			["school"] = 1,
@@ -2497,21 +2503,19 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Mephistroth",
 		},
-		[196213] = {
+		[218463] = {
 			["school"] = 64,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Corstilax",
 		},
-		[208230] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[205420] = {
+			["school"] = 4,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Tichondrius",
+			["source"] = "Krosus",
 		},
 		[198386] = {
 			["school"] = 1,
@@ -2571,13 +2575,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Moroes",
 		},
-		[205420] = {
-			["school"] = 4,
+		[196213] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Krosus",
+			["source"] = "Corstilax",
 		},
 		[228054] = {
 			["school"] = 16,
@@ -2595,14 +2598,11 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Tichondrius",
 		},
-		[46164] = {
-			["school"] = 4,
+		[227415] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Kael'thas Sunstrider",
 		},
 		[134322] = {
 			["school"] = 1,
@@ -2727,14 +2727,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Quagmirran",
 		},
-		[198006] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Ursoc",
-		},
 		[228012] = {
 			["school"] = 1,
 			["token"] = {
@@ -2743,6 +2735,14 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Hymdall",
+		},
+		[198006] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Ursoc",
 		},
 		[227545] = {
 			["school"] = 64,
@@ -2761,13 +2761,6 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 		},
-		[211178] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Rotten Drake",
-		},
 		[228300] = {
 			["school"] = 16,
 			["type"] = "BUFF",
@@ -2785,6 +2778,13 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Mephistroth",
+		},
+		[211178] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Rotten Drake",
 		},
 		[208748] = {
 			["school"] = 1,
@@ -2879,13 +2879,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Toxic Spore",
 		},
-		[29930] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Phantom Guest",
-		},
 		[228032] = {
 			["school"] = 16,
 			["token"] = {
@@ -2893,6 +2886,13 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "Helya",
+		},
+		[29930] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Phantom Guest",
 		},
 		[200182] = {
 			["school"] = 8,
@@ -2940,14 +2940,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Fulminating Lasher",
 		},
-		[211182] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Rotten Drake",
-		},
 		[198388] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -2956,6 +2948,14 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Ursoc",
+		},
+		[108446] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Klekashak",
 		},
 		[204275] = {
 			["school"] = 64,
@@ -2980,27 +2980,28 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Star Augur Etraeus",
 		},
-		[108446] = {
-			["school"] = 32,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Klekashak",
-		},
-		[44164] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Fizzle",
-		},
-		[227550] = {
+		[232777] = {
 			["school"] = 4,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Gul'dan",
+			["source"] = "Guarm",
+		},
+		[196810] = {
+			["school"] = 2,
+			["token"] = {
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "T'uure",
+		},
+		[31458] = {
+			["school"] = 64,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Temporus",
 		},
 		[218342] = {
 			["school"] = 1,
@@ -3015,43 +3016,6 @@ EncounterDetailsDB = {
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-		},
-		[105847] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Sealed Plate",
-		},
-		[232777] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Guarm",
-		},
-		[203254] = {
-			["school"] = 64,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Advisor Vandros",
-		},
-		[213867] = {
-			["school"] = 4,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Spellblade Aluriel",
-		},
-		[196810] = {
-			["school"] = 2,
-			["token"] = {
-				["SPELL_HEAL"] = true,
-			},
-			["source"] = "T'uure",
 		},
 		[227638] = {
 			["school"] = 1,
@@ -3073,13 +3037,51 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Aeonus",
 		},
-		[228174] = {
+		[211182] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Guarm",
+			["source"] = "Rotten Drake",
+		},
+		[213867] = {
+			["school"] = 4,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Spellblade Aluriel",
+		},
+		[238489] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Imp",
+		},
+		[203254] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Advisor Vandros",
+		},
+		[44164] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Fizzle",
+		},
+		[105847] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Sealed Plate",
 		},
 		[200185] = {
 			["school"] = 32,
@@ -3129,12 +3131,31 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Jin'rokh the Breaker",
 		},
-		[227800] = {
-			["school"] = 2,
+		[227807] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Maiden of Virtue",
+			["source"] = "Odyn",
+		},
+		[228063] = {
+			["school"] = 16,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Helya",
+		},
+		[197117] = {
+			["school"] = 8,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Piercing Tentacle",
 		},
 		[137528] = {
 			["school"] = 1,
@@ -3145,28 +3166,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ji-Kun",
 		},
-		[227807] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
+		[208626] = {
+			["school"] = 32,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Odyn",
-		},
-		[29928] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Phantom Guest",
-		},
-		[228063] = {
-			["school"] = 16,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Helya",
+			["source"] = "Azagrim",
 		},
 		[213869] = {
 			["school"] = 64,
@@ -3186,14 +3192,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "The Lich King",
 		},
-		[27581] = {
-			["school"] = 1,
+		[209011] = {
+			["school"] = 4,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Warlord Salaris",
+			["source"] = "Gul'dan",
 		},
 		[38538] = {
 			["school"] = 64,
@@ -3253,14 +3258,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Mutated Corruption",
 		},
-		[206965] = {
-			["school"] = 32,
+		[27581] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Star Augur Etraeus",
+			["source"] = "Warlord Salaris",
 		},
 		[200238] = {
 			["school"] = 32,
@@ -3358,12 +3363,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Arcane Hydra Spawn",
 		},
-		[196610] = {
+		[30531] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
+			["source"] = "Hellfire Channeler",
 		},
 		[188169] = {
 			["school"] = 8,
@@ -3374,13 +3381,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Rokmora",
 		},
-		[192007] = {
-			["school"] = 64,
-			["type"] = "BUFF",
+		[227658] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Arcane Hydra Spawn",
+			["source"] = "Guarm",
 		},
 		[192053] = {
 			["school"] = 8,
@@ -3414,14 +3421,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Guarm",
 		},
-		[30531] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[206840] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Hellfire Channeler",
+			["source"] = "Inquisitor Vethriz",
 		},
 		[3110] = {
 			["school"] = 4,
@@ -3446,19 +3452,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Oakheart",
 		},
-		[227300] = {
-			["school"] = 64,
+		[196610] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
 		},
-		[227658] = {
-			["school"] = 1,
+		[192007] = {
+			["school"] = 64,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Guarm",
+			["source"] = "Arcane Hydra Spawn",
 		},
 		[227556] = {
 			["school"] = 4,
@@ -3588,13 +3595,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Skorpyron",
 		},
-		[59638] = {
-			["school"] = 16,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Mirror Image",
-		},
 		[227500] = {
 			["school"] = 2,
 			["type"] = "DEBUFF",
@@ -3602,6 +3602,13 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Valarjar Runebearer",
+		},
+		[139836] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Cinders",
 		},
 		[136767] = {
 			["school"] = 1,
@@ -3613,13 +3620,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Horridon",
 		},
-		[223946] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Guardian Rurson",
-		},
 		[196357] = {
 			["school"] = 64,
 			["token"] = {
@@ -3628,6 +3628,15 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Ivanyr",
+		},
+		[140092] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Ji-Kun",
 		},
 		[153896] = {
 			["school"] = 1,
@@ -3663,15 +3672,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Astral Spark",
 		},
-		[211192] = {
-			["school"] = 32,
+		[207327] = {
+			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Rotten Drake",
+			["source"] = "Scrubber",
 		},
 		[200194] = {
 			["school"] = 32,
@@ -3697,16 +3706,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Cenarius",
 		},
-		[207327] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Scrubber",
-		},
 		[193376] = {
 			["school"] = 1,
 			["token"] = {
@@ -3714,6 +3713,16 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "Ularogg Cragshaper",
+		},
+		[211192] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Rotten Drake",
 		},
 		[219248] = {
 			["school"] = 1,
@@ -4035,15 +4044,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Choking Vines",
 		},
-		[108221] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Glowing Globule",
-		},
 		[136769] = {
 			["school"] = 1,
 			["token"] = {
@@ -4051,6 +4051,14 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "Horridon",
+		},
+		[210024] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Elisande",
 		},
 		[218774] = {
 			["school"] = 4,
@@ -4081,13 +4089,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Gul'dan",
 		},
-		[210024] = {
-			["school"] = 64,
+		[197495] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Elisande",
+			["source"] = "Hatecoil Shellbreaker",
 		},
 		[215929] = {
 			["school"] = 8,
@@ -4141,15 +4149,11 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 		},
-		[227568] = {
+		[227567] = {
 			["school"] = 4,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "Toe Knee",
 		},
@@ -4178,14 +4182,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Illysanna Ravencrest",
 		},
-		[235751] = {
+		[108221] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Agronox",
+			["source"] = "Glowing Globule",
 		},
 		[229741] = {
 			["school"] = 64,
@@ -4203,13 +4207,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Chrono Lord Deja",
 		},
-		[197495] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[209599] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Hatecoil Shellbreaker",
+			["source"] = "Elisande",
 		},
 		[105408] = {
 			["school"] = 4,
@@ -4237,12 +4240,17 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Unknown",
 		},
-		[209599] = {
-			["school"] = 64,
+		[227568] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Elisande",
+			["source"] = "Toe Knee",
 		},
 		[136521] = {
 			["school"] = 8,
@@ -4286,13 +4294,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Spellblade Aluriel",
 		},
-		[233196] = {
-			["school"] = 32,
+		[139843] = {
+			["school"] = 16,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Mephistroth",
+			["source"] = "Frozen Head",
 		},
 		[238566] = {
 			["school"] = 1,
@@ -4324,13 +4332,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Elemental da Água",
 		},
-		[139843] = {
-			["school"] = 16,
-			["type"] = "DEBUFF",
+		[233196] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Frozen Head",
+			["source"] = "Mephistroth",
 		},
 		[193171] = {
 			["school"] = 1,
@@ -4410,6 +4418,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Unknown",
 		},
+		[213761] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+		},
 		[199567] = {
 			["school"] = 32,
 			["token"] = {
@@ -4418,12 +4432,6 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Image of Latosius",
-		},
-		[213761] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
 		},
 		[197776] = {
 			["school"] = 32,
@@ -4486,12 +4494,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Illysanna Ravencrest",
 		},
-		[205196] = {
-			["school"] = 32,
+		[206603] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Dreadstalker",
+			["source"] = "Star Augur Etraeus",
 		},
 		[212099] = {
 			["school"] = 64,
@@ -4542,12 +4551,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Harbaron",
 		},
-		[229109] = {
-			["school"] = 64,
+		[209288] = {
+			["school"] = 32,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Elisande",
+			["source"] = "Inconceivable Horror",
 		},
 		[236524] = {
 			["school"] = 8,
@@ -4559,13 +4571,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Agronox",
 		},
-		[206603] = {
-			["school"] = 1,
+		[194327] = {
+			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Star Augur Etraeus",
+			["source"] = "Harbaron",
 		},
 		[109247] = {
 			["school"] = 1,
@@ -4612,15 +4624,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Kazra'jin",
 		},
-		[191900] = {
+		[135251] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Warlord Parjesh",
+			["source"] = "Tortos",
 		},
 		[137422] = {
 			["school"] = 1,
@@ -4638,13 +4649,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Valarjar Runebearer",
 		},
-		[206219] = {
-			["school"] = 4,
+		[205196] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Gul'dan",
+			["source"] = "Dreadstalker",
 		},
 		[207006] = {
 			["school"] = 32,
@@ -4663,21 +4673,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Trilliax",
 		},
-		[194327] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Harbaron",
-		},
-		[206222] = {
-			["school"] = 32,
+		[229109] = {
+			["school"] = 64,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Gul'dan",
+			["source"] = "Elisande",
+		},
+		[106372] = {
+			["school"] = 34,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Ultraxion",
 		},
 		[212997] = {
 			["school"] = 32,
@@ -4734,20 +4744,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Helya",
 		},
+		[224508] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Xavius",
+		},
 		[227833] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-		},
-		[120694] = {
-			["school"] = 8,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Beast",
 		},
 		[138319] = {
 			["school"] = 8,
@@ -4778,20 +4788,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Gul'dan",
 		},
+		[120694] = {
+			["school"] = 8,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Beast",
+		},
 		[224125] = {
 			["school"] = 4,
 			["token"] = {
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 			["source"] = "Spirit Wolf",
-		},
-		[228344] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Guarm",
 		},
 		[229255] = {
 			["school"] = 8,
@@ -4808,14 +4818,13 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 		},
-		[135251] = {
+		[228344] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Tortos",
+			["source"] = "Guarm",
 		},
 		[27584] = {
 			["school"] = 1,
@@ -4827,13 +4836,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Warlord Salaris",
 		},
-		[224508] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[232692] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Xavius",
+			["source"] = "Gul'dan",
 		},
 		[243050] = {
 			["school"] = 4,
@@ -5856,14 +5864,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Skorpyron",
 		},
-		[106372] = {
-			["school"] = 34,
-			["type"] = "BUFF",
+		[206222] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Ultraxion",
+			["source"] = "Gul'dan",
 		},
 		[227721] = {
 			["school"] = 36,
@@ -5929,12 +5936,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Dantalionax",
 		},
-		[232692] = {
-			["school"] = 64,
+		[191900] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Gul'dan",
+			["source"] = "Warlord Parjesh",
 		},
 		[205344] = {
 			["school"] = 4,
@@ -5953,15 +5963,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Garaxxas",
 		},
-		[209288] = {
-			["school"] = 32,
-			["type"] = "BUFF",
+		[206219] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Inconceivable Horror",
+			["source"] = "Gul'dan",
 		},
 		[108043] = {
 			["school"] = 1,
@@ -6013,6 +6021,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Helya",
 		},
+		[8269] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Coilfang Collaborator",
+		},
 		[139822] = {
 			["school"] = 4,
 			["type"] = "DEBUFF",
@@ -6024,15 +6041,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "Flaming Head",
-		},
-		[8269] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Coilfang Collaborator",
 		},
 		[55078] = {
 			["school"] = 32,
@@ -6135,13 +6143,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Valarjar Runebearer",
 		},
-		[227567] = {
-			["school"] = 4,
-			["type"] = "DEBUFF",
+		[235751] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Toe Knee",
+			["source"] = "Agronox",
 		},
 		[213531] = {
 			["school"] = 32,
@@ -6385,14 +6394,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Scrubber",
 		},
-		[140092] = {
+		[223946] = {
 			["school"] = 8,
-			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Ji-Kun",
+			["source"] = "Guardian Rurson",
 		},
 		[209443] = {
 			["school"] = 1,
@@ -6404,12 +6411,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Xavius",
 		},
-		[139836] = {
-			["school"] = 4,
+		[59638] = {
+			["school"] = 16,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Cinders",
+			["source"] = "Mirror Image",
 		},
 		[198446] = {
 			["school"] = 1,
@@ -6451,13 +6458,11 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Rokmar the Crackler",
 		},
-		[206840] = {
-			["school"] = 32,
+		[227300] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Inquisitor Vethriz",
 		},
 		[68981] = {
 			["school"] = 16,
@@ -6542,13 +6547,14 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 		},
-		[209011] = {
-			["school"] = 4,
+		[206965] = {
+			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Gul'dan",
+			["source"] = "Star Augur Etraeus",
 		},
 		[105848] = {
 			["school"] = 1,
@@ -6572,31 +6578,26 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lady Hatecoil",
 		},
-		[208626] = {
-			["school"] = 32,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Azagrim",
-		},
-		[238489] = {
+		[29928] = {
 			["school"] = 4,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Imp",
+			["source"] = "Phantom Guest",
 		},
-		[197117] = {
-			["school"] = 8,
-			["type"] = "BUFF",
+		[227800] = {
+			["school"] = 2,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Piercing Tentacle",
+			["source"] = "Maiden of Virtue",
+		},
+		[227550] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Gul'dan",
 		},
 		[204459] = {
 			["school"] = 1,
@@ -6607,6 +6608,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Skorpyron",
 		},
+		[228174] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Guarm",
+		},
 		[154132] = {
 			["school"] = 1,
 			["token"] = {
@@ -6614,15 +6623,6 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Empowered Construct",
-		},
-		[31458] = {
-			["school"] = 64,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Temporus",
 		},
 		[134256] = {
 			["school"] = 8,
@@ -6889,12 +6889,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Unknown",
 		},
-		[206954] = {
-			["school"] = 16,
+		[46164] = {
+			["school"] = 4,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Star Augur Etraeus",
+			["source"] = "Kael'thas Sunstrider",
 		},
 		[197942] = {
 			["school"] = 1,
@@ -7057,13 +7059,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Krosus",
 		},
-		[213852] = {
-			["school"] = 64,
+		[197484] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Spellblade Aluriel",
+			["source"] = "Illysanna Ravencrest",
 		},
 		[227903] = {
 			["school"] = 32,
@@ -7096,12 +7098,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Solar Flare",
 		},
-		[107501] = {
-			["school"] = 32,
+		[232775] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Twilight Assault Drake",
+			["source"] = "Guarm",
 		},
 		[198073] = {
 			["school"] = 1,
@@ -7149,14 +7151,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Arcane Anomaly",
 		},
-		[214606] = {
-			["school"] = 32,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Thing That Should Not Be",
-		},
 		[199143] = {
 			["school"] = 1,
 			["token"] = {
@@ -7164,6 +7158,14 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "Dantalionax",
+		},
+		[214606] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Thing That Should Not Be",
 		},
 		[196816] = {
 			["school"] = 2,
@@ -7287,14 +7289,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Imp",
 		},
-		[212794] = {
-			["school"] = 4,
-			["type"] = "DEBUFF",
+		[191847] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Tichondrius",
+			["source"] = "Serpentrix",
 		},
 		[106199] = {
 			["school"] = 1,
@@ -7345,1337 +7345,1121 @@ EncounterDetailsDB = {
 	["emotes"] = {
 		{
 			{
-				1.70499999995809, -- [1]
+				1.79799999995157, -- [1]
 				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
 				"Gul'dan", -- [3]
 				1, -- [4]
 			}, -- [1]
 			{
-				6.70799999998417, -- [1]
+				6.82900000002701, -- [1]
 				"Strike for Sargeras!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [2]
 			{
-				10.6949999999488, -- [1]
+				10.841999999946, -- [1]
 				"Burn from within!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [3]
 			{
-				16.6949999999488, -- [1]
+				16.8240000000224, -- [1]
 				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
 				"Gul'dan", -- [3]
 				1, -- [4]
 			}, -- [4]
 			{
-				16.6949999999488, -- [1]
+				16.8240000000224, -- [1]
 				"I'll make ashes of you!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [5]
 			{
-				20.6790000000037, -- [1]
+				20.8299999999581, -- [1]
 				"Rid me of these pests!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [6]
 			{
-				30.2280000000028, -- [1]
+				30.3460000000196, -- [1]
 				"|TInterface\\Icons\\inv_axe_2h_felfireraid_d_01:20|t %s readies |cFFFF0000|Hspell:206675|h[Shatter Essence]|h|r.", -- [2]
 				"Fel Lord Kuraz'mal", -- [3]
 				1, -- [4]
 			}, -- [7]
 			{
-				30.6739999999991, -- [1]
+				30.8190000000177, -- [1]
 				"Kill them in my master's name!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [8]
 			{
-				34.6790000000037, -- [1]
+				34.8279999999795, -- [1]
 				"The vessel must be made ready!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [9]
 			{
-				40.7249999999767, -- [1]
+				40.7789999999805, -- [1]
 				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
 				"Gul'dan", -- [3]
 				1, -- [4]
 			}, -- [10]
 			{
-				40.7249999999767, -- [1]
+				40.7789999999805, -- [1]
 				"I'll make ashes of you!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [11]
 			{
-				44.3959999999497, -- [1]
+				44.5200000000186, -- [1]
 				"Burn from within!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [12]
 			{
-				67.4459999999963, -- [1]
+				65.7759999999544, -- [1]
 				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
 				"Gul'dan", -- [3]
 				1, -- [4]
 			}, -- [13]
 			{
-				67.4459999999963, -- [1]
+				65.7759999999544, -- [1]
 				"I'll make ashes of you!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [14]
 			{
-				71.0760000000009, -- [1]
+				69.9780000000028, -- [1]
 				"Burn from within!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [15]
 			{
-				79.7859999999637, -- [1]
+				76.6899999999441, -- [1]
 				"You failed, heroes! The ritual is upon us! But first, I'll indulge myself a bit... and finish you!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [16]
 			{
-				100.265999999945, -- [1]
+				97.1169999999693, -- [1]
 				"A taste of the master's might!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [17]
 			{
-				108.050999999978, -- [1]
-				"|TInterface\\Icons\\ability_felarakkoa_feldetonation_green:20|t You are afflicted with |cFFFF0000|Hspell:206222|h[Bonds of Fel]|h|r!", -- [2]
-				"Gul'dan", -- [3]
-				2, -- [4]
-			}, -- [18]
-			{
-				112.496999999974, -- [1]
+				109.353000000003, -- [1]
 				"Strike for Sargeras!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
-			}, -- [19]
+			}, -- [18]
 			{
-				117.27899999998, -- [1]
+				114.111000000034, -- [1]
 				"|TInterface\\Icons\\Spell_Shadow_MindRot:20|t %s summons Azagrim for aid|h|r.", -- [2]
 				"Gul'dan", -- [3]
 				1, -- [4]
-			}, -- [20]
+			}, -- [19]
 			{
-				128.047000000021, -- [1]
+				124.868000000017, -- [1]
 				"Behold... power given form!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
+			}, -- [20]
+			{
+				129.248000000021, -- [1]
+				"|TInterface\\Icons\\Spell_Shadow_SoulGem:20|t An |cFFFF0000|Hspell:209489|h[Eye of Gul'dan]|h|r focuses on you!", -- [2]
+				"Eye of Gul'dan", -- [3]
+				2, -- [4]
 			}, -- [21]
 			{
-				139.145000000019, -- [1]
+				136.015999999945, -- [1]
 				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
 				"Gul'dan", -- [3]
 				1, -- [4]
 			}, -- [22]
 			{
-				139.145000000019, -- [1]
+				136.015999999945, -- [1]
 				"I'll make ashes of you!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [23]
 			{
-				150.253999999957, -- [1]
-				"My will is unbreakable!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [24]
-			{
-				152.464000000036, -- [1]
+				140.839000000036, -- [1]
 				"|TInterface\\Icons\\ability_felarakkoa_feldetonation_red:20|t %s gains |cFFFF0000|Hspell:206221|h[Empowered Bonds of Fel]|h|r.", -- [2]
 				"Gul'dan", -- [3]
 				1, -- [4]
+			}, -- [24]
+			{
+				140.839000000036, -- [1]
+				"You'll never escape my grasp!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
 			}, -- [25]
 			{
-				152.464000000036, -- [1]
-				"You'll never escape my grasp!", -- [2]
+				147.133999999962, -- [1]
+				"My will is unbreakable!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [26]
 			{
-				161.407999999938, -- [1]
+				158.234999999986, -- [1]
 				"Rid me of these pests!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [27]
 			{
-				166.152999999933, -- [1]
+				162.998000000021, -- [1]
 				"|TInterface\\Icons\\Spell_Shadow_MindRot:20|t %s summons Beltheris for aid|h|r.", -- [2]
 				"Gul'dan", -- [3]
 				1, -- [4]
 			}, -- [28]
 			{
-				175.794999999926, -- [1]
+				172.657000000007, -- [1]
 				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
 				"Gul'dan", -- [3]
 				1, -- [4]
 			}, -- [29]
 			{
-				175.794999999926, -- [1]
+				172.657000000007, -- [1]
 				"I'll make ashes of you!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [30]
 			{
-				181.376999999979, -- [1]
+				178.209000000032, -- [1]
 				"Behold... power given form!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [31]
 			{
-				194.723999999929, -- [1]
-				"My will is unbreakable!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
+				182.775000000023, -- [1]
+				"|TInterface\\Icons\\Spell_Shadow_SoulGem:20|t An |cFFFF0000|Hspell:209489|h[Eye of Gul'dan]|h|r focuses on you!", -- [2]
+				"Eye of Gul'dan", -- [3]
+				2, -- [4]
 			}, -- [32]
 			{
-				203.939000000013, -- [1]
-				"You should have bent the knee!", -- [2]
+				191.456000000006, -- [1]
+				"My will is unbreakable!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [33]
 			{
-				212.508000000031, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [34]
-			{
-				212.508000000031, -- [1]
-				"I'll make ashes of you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [35]
-			{
-				224.189000000013, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelFlameStrike:20|t %s gains |cFFFF0000|Hspell:206220|h[Empowered Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [36]
-			{
-				224.189000000013, -- [1]
-				"Drink in the glory!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [37]
-			{
-				234.696999999927, -- [1]
-				"Behold... power given form!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [38]
-			{
-				239.138999999966, -- [1]
-				"My will is unbreakable!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [39]
-			{
-				239.138999999966, -- [1]
-				"|TInterface\\Icons\\Spell_Shadow_SoulGem:20|t An |cFFFF0000|Hspell:209489|h[Eye of Gul'dan]|h|r focuses on you!", -- [2]
-				"Eye of Gul'dan", -- [3]
-				2, -- [4]
-			}, -- [40]
-			{
-				248.253000000026, -- [1]
-				"|TInterface\\Icons\\Spell_Shadow_SoulGem:20|t An |cFFFF0000|Hspell:209489|h[Eye of Gul'dan]|h|r focuses on you!", -- [2]
-				"Eye of Gul'dan", -- [3]
-				2, -- [4]
-			}, -- [41]
-			{
-				249.165999999968, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelFlameStrike:20|t %s begins to cast |cFFFF0000|Hspell:206220|h[Empowered Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [42]
-			{
-				249.165999999968, -- [1]
-				"I'll make ashes of you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [43]
-			{
-				283.606000000029, -- [1]
-				"My will is unbreakable!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [44]
-			{
-				286.021999999997, -- [1]
+				193.820999999996, -- [1]
 				"|TInterface\\Icons\\ability_felarakkoa_feldetonation_red:20|t You are afflicted with |cFFFF0000|Hspell:206221|h[Empowered Bonds of Fel]|h|r!", -- [2]
 				"Gul'dan", -- [3]
 				2, -- [4]
-			}, -- [45]
-			{
-				288.045999999973, -- [1]
-				"Behold... power given form!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [46]
-			{
-				291.398999999976, -- [1]
-				"|TInterface\\Icons\\inv_misc_trinket6oih_orb1:20|t %s gains |cFFFF0000|Hspell:211152|h[Empowered Eye of Gul'dan]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [47]
-			{
-				291.398999999976, -- [1]
-				"I will not fail you, master! More power... just need more power...", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [48]
-			{
-				300.297999999952, -- [1]
-				"Kill them in my master's name!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [49]
-			{
-				305.040000000037, -- [1]
-				"|TInterface\\Icons\\Spell_Shadow_MindRot:20|t %s summons Dalvengyr for aid|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [50]
-			{
-				322.48199999996, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelFlameStrike:20|t %s begins to cast |cFFFF0000|Hspell:206220|h[Empowered Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [51]
-			{
-				322.48199999996, -- [1]
-				"I'll make ashes of you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [52]
-			{
-				328.040999999968, -- [1]
-				"My will is unbreakable!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [53]
-			{
-				332.949000000022, -- [1]
-				"One by one you fall!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [54]
-			{
-				341.370999999926, -- [1]
-				"Behold... power given form!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [55]
-			["boss"] = "Gul'dan",
-		}, -- [1]
-		{
-			{
-				1.63300000003073, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [1]
-			{
-				6.64199999999255, -- [1]
-				"Strike for Sargeras!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [2]
-			{
-				10.6439999999711, -- [1]
-				"Burn from within!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [3]
-			{
-				16.6469999999972, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [4]
-			{
-				16.6469999999972, -- [1]
-				"I'll make ashes of you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [5]
-			{
-				20.6689999999944, -- [1]
-				"Rid me of these pests!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [6]
-			{
-				30.0409999999683, -- [1]
-				"|TInterface\\Icons\\inv_axe_2h_felfireraid_d_01:20|t %s readies |cFFFF0000|Hspell:206675|h[Shatter Essence]|h|r.", -- [2]
-				"Fel Lord Kuraz'mal", -- [3]
-				1, -- [4]
-			}, -- [7]
-			{
-				30.6720000000205, -- [1]
-				"Kill them in my master's name!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [8]
-			{
-				34.625, -- [1]
-				"The vessel must be made ready!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [9]
-			{
-				40.7839999999851, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [10]
-			{
-				40.7839999999851, -- [1]
-				"I'll make ashes of you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [11]
-			{
-				44.6140000000596, -- [1]
-				"Burn from within!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [12]
-			{
-				67.6680000000633, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [13]
-			{
-				67.6680000000633, -- [1]
-				"I'll make ashes of you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [14]
-			{
-				71.298000000068, -- [1]
-				"Burn from within!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [15]
-			{
-				90.1739999999991, -- [1]
-				"You failed, heroes! The ritual is upon us! But first, I'll indulge myself a bit... and finish you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [16]
-			{
-				110.165000000037, -- [1]
-				"A taste of the master's might!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [17]
-			{
-				122.405000000028, -- [1]
-				"Strike for Sargeras!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [18]
-			{
-				126.428000000073, -- [1]
-				"You should have bent the knee!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [19]
-			{
-				127.08600000001, -- [1]
-				"|TInterface\\Icons\\Spell_Shadow_MindRot:20|t %s summons Azagrim for aid|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [20]
-			{
-				137.930999999982, -- [1]
-				"Behold... power given form!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [21]
-			{
-				149.065000000061, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [22]
-			{
-				149.065000000061, -- [1]
-				"I'll make ashes of you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [23]
-			{
-				160.15399999998, -- [1]
-				"My will is unbreakable!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [24]
-			{
-				171.29700000002, -- [1]
-				"Rid me of these pests!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [25]
-			{
-				173.285999999964, -- [1]
-				"|TInterface\\Icons\\ability_felarakkoa_feldetonation_red:20|t %s gains |cFFFF0000|Hspell:206221|h[Empowered Bonds of Fel]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [26]
-			{
-				173.285999999964, -- [1]
-				"You'll never escape my grasp!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [27]
-			{
-				176.043000000063, -- [1]
-				"|TInterface\\Icons\\Spell_Shadow_MindRot:20|t %s summons Beltheris for aid|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [28]
-			{
-				185.72900000005, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [29]
-			{
-				185.72900000005, -- [1]
-				"I'll make ashes of you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [30]
-			{
-				191.283000000054, -- [1]
-				"Behold... power given form!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [31]
-			{
-				204.604999999981, -- [1]
-				"My will is unbreakable!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [32]
-			{
-				222.388000000035, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [33]
-			{
-				222.388000000035, -- [1]
-				"I'll make ashes of you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
 			}, -- [34]
 			{
-				244.625, -- [1]
-				"Behold... power given form!", -- [2]
+				209.317000000039, -- [1]
+				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
 				"Gul'dan", -- [3]
-				7, -- [4]
+				1, -- [4]
 			}, -- [35]
 			{
-				249.072999999975, -- [1]
-				"My will is unbreakable!", -- [2]
+				209.317000000039, -- [1]
+				"I'll make ashes of you!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [36]
 			{
-				259.069000000018, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [37]
-			{
-				259.069000000018, -- [1]
-				"I'll make ashes of you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [38]
-			{
-				276.597999999998, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelFlameStrike:20|t %s gains |cFFFF0000|Hspell:206220|h[Empowered Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [39]
-			{
-				276.597999999998, -- [1]
-				"Drink in the glory!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [40]
-			{
-				293.483000000007, -- [1]
-				"My will is unbreakable!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [41]
-			{
-				297.947999999975, -- [1]
-				"Behold... power given form!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [42]
-			{
-				310.189000000013, -- [1]
-				"Kill them in my master's name!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [43]
-			{
-				314.933000000077, -- [1]
-				"|TInterface\\Icons\\Spell_Shadow_MindRot:20|t %s summons Dalvengyr for aid|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [44]
-			{
-				332.381000000052, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelFlameStrike:20|t %s begins to cast |cFFFF0000|Hspell:206220|h[Empowered Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [45]
-			{
-				332.381000000052, -- [1]
-				"I'll make ashes of you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [46]
-			{
-				337.996000000043, -- [1]
-				"My will is unbreakable!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [47]
-			{
-				351.300999999978, -- [1]
-				"Behold... power given form!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [48]
-			{
-				369.058000000077, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelFlameStrike:20|t %s begins to cast |cFFFF0000|Hspell:206220|h[Empowered Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [49]
-			{
-				369.058000000077, -- [1]
-				"I'll make ashes of you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [50]
-			{
-				382.406000000075, -- [1]
-				"My will is unbreakable!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [51]
-			{
-				384.589999999967, -- [1]
-				"|TInterface\\Icons\\inv_misc_trinket6oih_orb1:20|t %s gains |cFFFF0000|Hspell:211152|h[Empowered Eye of Gul'dan]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [52]
-			{
-				384.589999999967, -- [1]
-				"I will not fail you, master! More power... just need more power...", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [53]
-			{
-				404.619999999995, -- [1]
-				"Behold... power given form!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [54]
-			{
-				426.831000000006, -- [1]
-				"My will is unbreakable!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [55]
-			{
-				442.383000000031, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelFlameStrike:20|t %s begins to cast |cFFFF0000|Hspell:206220|h[Empowered Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [56]
-			{
-				442.383000000031, -- [1]
-				"I'll make ashes of you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [57]
-			{
-				471.327000000048, -- [1]
-				"My will is unbreakable!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [58]
-			{
-				472.136000000057, -- [1]
-				"No more distractions! I have work to do...", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [59]
-			{
-				486.763999999967, -- [1]
-				"Surrender! I may yet show mercy!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [60]
-			{
-				494.013999999967, -- [1]
-				"Time to return the demon hunter's soul to his body... and deny the Legion's master a host!", -- [2]
-				"Archmage Khadgar", -- [3]
-				7, -- [4]
-			}, -- [61]
-			{
-				499.241000000038, -- [1]
-				"Burn from within!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [62]
-			{
-				511.727000000072, -- [1]
-				"Behold... power given form!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [63]
-			{
-				526.581000000006, -- [1]
-				"|TInterface\\Icons\\inv_misc_trinket6oih_orb4:20|t An |cFFFF0000|Hspell:211152|h[Empowered Eye of Gul'dan]|h|r focuses on you!", -- [2]
-				"Empowered Eye of Gul'dan", -- [3]
-				2, -- [4]
-			}, -- [64]
-			{
-				536.71100000001, -- [1]
-				"Why won't you die? Why do you keep resisting?", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [65]
-			{
-				550.504000000074, -- [1]
-				"Burn from within!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [66]
-			{
-				554.736000000034, -- [1]
-				"This is our world, not the Legion's!", -- [2]
-				"Archmage Khadgar", -- [3]
-				7, -- [4]
-			}, -- [67]
-			{
-				556.072999999975, -- [1]
-				"One by one you fall!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [68]
-			{
-				556.746000000043, -- [1]
-				"Let the storm rain death upon you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [69]
-			{
-				574.116999999969, -- [1]
-				"Behold... power given form!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [70]
-			{
-				601.722000000067, -- [1]
-				"Burn from within!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [71]
-			{
-				609.180000000051, -- [1]
-				"Why won't you die? Why do you keep resisting?", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [72]
-			{
-				622.641999999993, -- [1]
-				"One by one you fall!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [73]
-			{
-				625.349999999977, -- [1]
-				"Let the storm rain death upon you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [74]
-			{
-				635.594000000041, -- [1]
-				"You should have bent the knee!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [75]
-			{
-				636.716000000015, -- [1]
-				"Behold... power given form!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [76]
-			{
-				644.751000000048, -- [1]
-				"You should have bent the knee!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [77]
-			["boss"] = "Gul'dan",
-		}, -- [2]
-		{
-			{
-				0.1, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [1]
-			{
-				5.21399999991991, -- [1]
-				"Strike for Sargeras!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [2]
-			{
-				9.26199999998789, -- [1]
-				"Burn from within!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [3]
-			{
-				15.2099999999628, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [4]
-			{
-				15.2099999999628, -- [1]
-				"I'll make ashes of you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [5]
-			{
-				19.2199999999721, -- [1]
-				"Rid me of these pests!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [6]
-			{
-				28.5849999999628, -- [1]
-				"|TInterface\\Icons\\inv_axe_2h_felfireraid_d_01:20|t %s readies |cFFFF0000|Hspell:206675|h[Shatter Essence]|h|r.", -- [2]
-				"Fel Lord Kuraz'mal", -- [3]
-				1, -- [4]
-			}, -- [7]
-			{
-				29.201999999932, -- [1]
-				"Kill them in my master's name!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [8]
-			{
-				33.2820000000065, -- [1]
-				"The vessel must be made ready!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [9]
-			{
-				39.310999999987, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [10]
-			{
-				39.310999999987, -- [1]
-				"I'll make ashes of you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [11]
-			{
-				43.1409999999451, -- [1]
-				"Burn from within!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [12]
-			{
-				64.3209999999963, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [13]
-			{
-				64.3209999999963, -- [1]
-				"I'll make ashes of you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [14]
-			{
-				67.3919999999926, -- [1]
-				"Burn from within!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [15]
-			{
-				86.9049999999115, -- [1]
-				"You failed, heroes! The ritual is upon us! But first, I'll indulge myself a bit... and finish you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [16]
-			{
-				106.304999999935, -- [1]
-				"A taste of the master's might!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [17]
-			{
-				118.381999999983, -- [1]
-				"Strike for Sargeras!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [18]
-			{
-				123.344999999972, -- [1]
-				"|TInterface\\Icons\\Spell_Shadow_MindRot:20|t %s summons Azagrim for aid|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [19]
-			{
-				133.978000000003, -- [1]
-				"Behold... power given form!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [20]
-			{
-				145.206000000006, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [21]
-			{
-				145.206000000006, -- [1]
-				"I'll make ashes of you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [22]
-			{
-				152.38599999994, -- [1]
-				"One by one you fall!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [23]
-			{
-				156.341999999946, -- [1]
-				"My will is unbreakable!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [24]
-			{
-				158.550999999978, -- [1]
-				"|TInterface\\Icons\\ability_felarakkoa_feldetonation_red:20|t %s gains |cFFFF0000|Hspell:206221|h[Empowered Bonds of Fel]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [25]
-			{
-				158.550999999978, -- [1]
-				"You'll never escape my grasp!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [26]
-			{
-				167.468999999925, -- [1]
-				"Rid me of these pests!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [27]
-			{
-				172.201999999932, -- [1]
-				"|TInterface\\Icons\\Spell_Shadow_MindRot:20|t %s summons Beltheris for aid|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [28]
-			{
-				181.889999999898, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [29]
-			{
-				181.889999999898, -- [1]
-				"I'll make ashes of you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [30]
-			{
-				187.48199999996, -- [1]
-				"Behold... power given form!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [31]
-			{
-				191.998999999953, -- [1]
-				"|TInterface\\Icons\\Spell_Shadow_SoulGem:20|t An |cFFFF0000|Hspell:209489|h[Eye of Gul'dan]|h|r focuses on you!", -- [2]
-				"Eye of Gul'dan", -- [3]
-				2, -- [4]
-			}, -- [32]
-			{
-				200.751999999979, -- [1]
-				"My will is unbreakable!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [33]
-			{
-				218.532000000007, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
-			}, -- [34]
-			{
-				218.532000000007, -- [1]
-				"I'll make ashes of you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [35]
-			{
-				240.775999999954, -- [1]
-				"Behold... power given form!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [36]
-			{
-				242.491999999969, -- [1]
+				213.353000000003, -- [1]
 				"|TInterface\\Icons\\Spell_Fire_FelFlameStrike:20|t %s gains |cFFFF0000|Hspell:206220|h[Empowered Liquid Hellfire]|h|r.", -- [2]
 				"Gul'dan", -- [3]
 				1, -- [4]
 			}, -- [37]
 			{
-				242.491999999969, -- [1]
+				213.353000000003, -- [1]
 				"Drink in the glory!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [38]
 			{
-				245.211999999941, -- [1]
-				"My will is unbreakable!", -- [2]
+				231.501999999979, -- [1]
+				"Behold... power given form!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [39]
 			{
-				245.211999999941, -- [1]
-				"|TInterface\\Icons\\Spell_Shadow_SoulGem:20|t An |cFFFF0000|Hspell:209489|h[Eye of Gul'dan]|h|r focuses on you!", -- [2]
-				"Eye of Gul'dan", -- [3]
-				2, -- [4]
+				236.003000000026, -- [1]
+				"My will is unbreakable!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
 			}, -- [40]
 			{
-				254.399999999907, -- [1]
-				"|TInterface\\Icons\\Spell_Shadow_SoulGem:20|t An |cFFFF0000|Hspell:209489|h[Eye of Gul'dan]|h|r focuses on you!", -- [2]
-				"Eye of Gul'dan", -- [3]
-				2, -- [4]
-			}, -- [41]
-			{
-				255.208999999915, -- [1]
+				246.005000000005, -- [1]
 				"|TInterface\\Icons\\Spell_Fire_FelFlameStrike:20|t %s begins to cast |cFFFF0000|Hspell:206220|h[Empowered Liquid Hellfire]|h|r.", -- [2]
 				"Gul'dan", -- [3]
 				1, -- [4]
-			}, -- [42]
+			}, -- [41]
 			{
-				255.208999999915, -- [1]
+				246.005000000005, -- [1]
 				"I'll make ashes of you!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
+			}, -- [42]
+			{
+				272.010000000009, -- [1]
+				"|TInterface\\Icons\\inv_misc_trinket6oih_orb1:20|t %s gains |cFFFF0000|Hspell:211152|h[Empowered Eye of Gul'dan]|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
 			}, -- [43]
 			{
-				260.958999999915, -- [1]
-				"One by one you fall!", -- [2]
+				272.010000000009, -- [1]
+				"I will not fail you, master! More power... just need more power...", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [44]
 			{
-				289.681999999913, -- [1]
+				280.447000000044, -- [1]
 				"My will is unbreakable!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [45]
 			{
-				294.095999999903, -- [1]
+				284.876999999979, -- [1]
 				"Behold... power given form!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [46]
 			{
-				306.323999999906, -- [1]
+				289.611000000034, -- [1]
+				"|TInterface\\Icons\\inv_misc_trinket6oih_orb4:20|t An |cFFFF0000|Hspell:211152|h[Empowered Eye of Gul'dan]|h|r focuses on you!", -- [2]
+				"Empowered Eye of Gul'dan", -- [3]
+				2, -- [4]
+			}, -- [47]
+			{
+				297.118000000017, -- [1]
 				"Kill them in my master's name!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
-			}, -- [47]
-			{
-				311.090999999899, -- [1]
-				"|TInterface\\Icons\\Spell_Shadow_MindRot:20|t %s summons Dalvengyr for aid|h|r.", -- [2]
-				"Gul'dan", -- [3]
-				1, -- [4]
 			}, -- [48]
 			{
-				328.583999999915, -- [1]
-				"|TInterface\\Icons\\Spell_Fire_FelFlameStrike:20|t %s begins to cast |cFFFF0000|Hspell:206220|h[Empowered Liquid Hellfire]|h|r.", -- [2]
+				301.888999999967, -- [1]
+				"|TInterface\\Icons\\Spell_Shadow_MindRot:20|t %s summons Dalvengyr for aid|h|r.", -- [2]
 				"Gul'dan", -- [3]
 				1, -- [4]
 			}, -- [49]
 			{
-				328.583999999915, -- [1]
-				"I'll make ashes of you!", -- [2]
+				319.339999999967, -- [1]
+				"|TInterface\\Icons\\Spell_Fire_FelFlameStrike:20|t %s begins to cast |cFFFF0000|Hspell:206220|h[Empowered Liquid Hellfire]|h|r.", -- [2]
 				"Gul'dan", -- [3]
-				7, -- [4]
+				1, -- [4]
 			}, -- [50]
 			{
-				334.113999999943, -- [1]
-				"My will is unbreakable!", -- [2]
+				319.339999999967, -- [1]
+				"I'll make ashes of you!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [51]
 			{
-				338.017999999924, -- [1]
-				"One by one you fall!", -- [2]
+				324.891999999993, -- [1]
+				"My will is unbreakable!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [52]
 			{
-				343.223999999929, -- [1]
-				"|TInterface\\Icons\\inv_misc_trinket6oih_orb1:20|t %s gains |cFFFF0000|Hspell:211152|h[Empowered Eye of Gul'dan]|h|r.", -- [2]
+				327.010000000009, -- [1]
+				"|TInterface\\Icons\\ability_felarakkoa_feldetonation_red:20|t You are afflicted with |cFFFF0000|Hspell:206221|h[Empowered Bonds of Fel]|h|r!", -- [2]
 				"Gul'dan", -- [3]
-				1, -- [4]
+				2, -- [4]
 			}, -- [53]
 			{
-				343.223999999929, -- [1]
-				"I will not fail you, master! More power... just need more power...", -- [2]
+				337.493000000017, -- [1]
+				"One by one you fall!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [54]
 			{
-				347.422999999952, -- [1]
+				338.241999999969, -- [1]
 				"Behold... power given form!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [55]
 			{
-				365.23199999996, -- [1]
+				355.998000000021, -- [1]
 				"|TInterface\\Icons\\Spell_Fire_FelFlameStrike:20|t %s begins to cast |cFFFF0000|Hspell:206220|h[Empowered Liquid Hellfire]|h|r.", -- [2]
 				"Gul'dan", -- [3]
 				1, -- [4]
 			}, -- [56]
 			{
-				365.23199999996, -- [1]
+				355.998000000021, -- [1]
 				"I'll make ashes of you!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [57]
 			{
-				378.535999999964, -- [1]
-				"My will is unbreakable!", -- [2]
+				356.699999999953, -- [1]
+				"No more distractions! I have work to do...", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [58]
 			{
-				392.221999999951, -- [1]
-				"You should have bent the knee!", -- [2]
+				371.265999999945, -- [1]
+				"Surrender! I may yet show mercy!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [59]
 			{
-				400.769999999902, -- [1]
-				"Behold... power given form!", -- [2]
-				"Gul'dan", -- [3]
+				378.567000000039, -- [1]
+				"Time to return the demon hunter's soul to his body... and deny the Legion's master a host!", -- [2]
+				"Archmage Khadgar", -- [3]
 				7, -- [4]
 			}, -- [60]
 			{
-				422.990999999922, -- [1]
-				"My will is unbreakable!", -- [2]
+				383.802000000025, -- [1]
+				"Burn from within!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [61]
 			{
-				435.554000000004, -- [1]
-				"No more distractions! I have work to do...", -- [2]
+				396.285000000033, -- [1]
+				"Behold... power given form!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [62]
 			{
-				450.152000000002, -- [1]
-				"Surrender! I may yet show mercy!", -- [2]
+				421.312999999966, -- [1]
+				"Why won't you die? Why do you keep resisting?", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [63]
 			{
-				457.449999999953, -- [1]
-				"Time to return the demon hunter's soul to his body... and deny the Legion's master a host!", -- [2]
+				429.667999999947, -- [1]
+				"This is our world, not the Legion's!", -- [2]
 				"Archmage Khadgar", -- [3]
 				7, -- [4]
 			}, -- [64]
 			{
-				462.648999999976, -- [1]
+				435.047999999952, -- [1]
 				"Burn from within!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [65]
 			{
-				475.14599999995, -- [1]
-				"Behold... power given form!", -- [2]
+				441.312000000035, -- [1]
+				"Let the storm rain death upon you!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [66]
 			{
-				490.034999999916, -- [1]
-				"|TInterface\\Icons\\inv_misc_trinket6oih_orb4:20|t An |cFFFF0000|Hspell:211152|h[Empowered Eye of Gul'dan]|h|r focuses on you!", -- [2]
-				"Empowered Eye of Gul'dan", -- [3]
-				2, -- [4]
+				458.648000000045, -- [1]
+				"Behold... power given form!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
 			}, -- [67]
 			{
-				500.20299999998, -- [1]
-				"Why won't you die? Why do you keep resisting?", -- [2]
-				"Gul'dan", -- [3]
+				480.733999999939, -- [1]
+				"We can stop him! I know it!", -- [2]
+				"Archmage Khadgar", -- [3]
 				7, -- [4]
 			}, -- [68]
 			{
-				513.90399999998, -- [1]
+				486.304999999935, -- [1]
 				"Burn from within!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [69]
 			{
-				520.16399999999, -- [1]
-				"Let the storm rain death upon you!", -- [2]
+				493.792000000016, -- [1]
+				"Why won't you die? Why do you keep resisting?", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [70]
 			{
-				529.21399999992, -- [1]
-				"You should have bent the knee!", -- [2]
+				509.90399999998, -- [1]
+				"Let the storm rain death upon you!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [71]
 			{
-				530.387999999919, -- [1]
-				"This is our world, not the Legion's!", -- [2]
-				"Archmage Khadgar", -- [3]
+				510.383999999962, -- [1]
+				"You should have bent the knee!", -- [2]
+				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [72]
 			{
-				537.514999999898, -- [1]
-				"Behold... power given form!", -- [2]
+				520.143999999971, -- [1]
+				"One by one you fall!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [73]
 			{
-				542.310999999987, -- [1]
-				"|TInterface\\Icons\\inv_misc_trinket6oih_orb4:20|t An |cFFFF0000|Hspell:211152|h[Empowered Eye of Gul'dan]|h|r focuses on you!", -- [2]
-				"Empowered Eye of Gul'dan", -- [3]
-				2, -- [4]
+				521.27899999998, -- [1]
+				"Behold... power given form!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
 			}, -- [74]
 			{
-				565.133999999962, -- [1]
+				537.562999999966, -- [1]
 				"Burn from within!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [75]
 			{
-				572.652000000002, -- [1]
-				"Why won't you die? Why do you keep resisting?", -- [2]
-				"Gul'dan", -- [3]
+				545.091000000015, -- [1]
+				"Keep pressing, champions! Gul'dan wavers! He WILL fall!", -- [2]
+				"Archmage Khadgar", -- [3]
 				7, -- [4]
 			}, -- [76]
 			{
-				588.77099999995, -- [1]
-				"Let the storm rain death upon you!", -- [2]
+				546.314000000013, -- [1]
+				"Behold... power given form!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [77]
 			{
-				590.23199999996, -- [1]
-				"One by one you fall!", -- [2]
+				559.586999999941, -- [1]
+				"You should have bent the knee!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [78]
 			{
-				599.010000000009, -- [1]
-				"One by one you fall!", -- [2]
+				571.304999999935, -- [1]
+				"Let the storm rain death upon you!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [79]
 			{
-				600.154999999912, -- [1]
-				"Behold... power given form!", -- [2]
+				575.393999999971, -- [1]
+				"You should have bent the knee!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [80]
 			{
-				616.39599999995, -- [1]
-				"Burn from within!", -- [2]
+				581.400000000023, -- [1]
+				"Why won't you die? Why do you keep resisting?", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
 			}, -- [81]
 			{
-				625.154999999912, -- [1]
-				"Behold... power given form!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [82]
-			{
-				650.161999999895, -- [1]
-				"Let the storm rain death upon you!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [83]
-			{
-				659.513999999967, -- [1]
-				"You should have bent the knee!", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [84]
-			{
-				660.230999999913, -- [1]
-				"Why won't you die? Why do you keep resisting?", -- [2]
-				"Gul'dan", -- [3]
-				7, -- [4]
-			}, -- [85]
-			{
-				668.900999999954, -- [1]
+				590.064999999944, -- [1]
 				"Burn from within!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
-			}, -- [86]
+			}, -- [82]
+			["boss"] = "Gul'dan",
+		}, -- [1]
+		{
 			{
-				687.402999999933, -- [1]
+				1.89099999994505, -- [1]
+				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [1]
+			{
+				6.89099999994505, -- [1]
+				"Strike for Sargeras!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [2]
+			{
+				10.9329999999609, -- [1]
+				"Burn from within!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [3]
+			{
+				16.8800000000047, -- [1]
+				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [4]
+			{
+				16.8800000000047, -- [1]
+				"I'll make ashes of you!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [5]
+			{
+				20.8859999999404, -- [1]
+				"Rid me of these pests!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [6]
+			{
+				30.2199999999721, -- [1]
+				"|TInterface\\Icons\\inv_axe_2h_felfireraid_d_01:20|t %s readies |cFFFF0000|Hspell:206675|h[Shatter Essence]|h|r.", -- [2]
+				"Fel Lord Kuraz'mal", -- [3]
+				1, -- [4]
+			}, -- [7]
+			{
+				30.8689999999478, -- [1]
+				"Kill them in my master's name!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [8]
+			{
+				34.8850000000093, -- [1]
+				"The vessel must be made ready!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [9]
+			{
+				41.0069999999832, -- [1]
+				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [10]
+			{
+				41.0069999999832, -- [1]
+				"I'll make ashes of you!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [11]
+			{
+				44.8499999999767, -- [1]
+				"Burn from within!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [12]
+			{
+				66.0570000000298, -- [1]
+				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [13]
+			{
+				66.0570000000298, -- [1]
+				"I'll make ashes of you!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [14]
+			{
+				69.1570000000065, -- [1]
+				"Burn from within!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [15]
+			{
+				84.4549999999581, -- [1]
+				"You failed, heroes! The ritual is upon us! But first, I'll indulge myself a bit... and finish you!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [16]
+			{
+				104.373999999953, -- [1]
+				"A taste of the master's might!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [17]
+			{
+				116.618000000017, -- [1]
+				"Strike for Sargeras!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [18]
+			{
+				121.206000000006, -- [1]
+				"|TInterface\\Icons\\Spell_Shadow_MindRot:20|t %s summons Azagrim for aid|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [19]
+			{
+				132.168999999994, -- [1]
+				"Behold... power given form!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [20]
+			{
+				143.167000000016, -- [1]
+				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [21]
+			{
+				143.167000000016, -- [1]
+				"I'll make ashes of you!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [22]
+			{
+				154.180999999982, -- [1]
+				"|TInterface\\Icons\\ability_felarakkoa_feldetonation_red:20|t %s gains |cFFFF0000|Hspell:206221|h[Empowered Bonds of Fel]|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [23]
+			{
+				154.180999999982, -- [1]
+				"You'll never escape my grasp!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [24]
+			{
+				154.391999999993, -- [1]
+				"My will is unbreakable!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [25]
+			{
+				165.494999999995, -- [1]
+				"Rid me of these pests!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [26]
+			{
+				170.267999999924, -- [1]
+				"|TInterface\\Icons\\Spell_Shadow_MindRot:20|t %s summons Beltheris for aid|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [27]
+			{
+				179.951999999932, -- [1]
+				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [28]
+			{
+				179.951999999932, -- [1]
+				"I'll make ashes of you!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [29]
+			{
+				185.491999999969, -- [1]
+				"Behold... power given form!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [30]
+			{
+				198.824999999953, -- [1]
+				"My will is unbreakable!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [31]
+			{
+				216.603000000003, -- [1]
+				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [32]
+			{
+				216.603000000003, -- [1]
+				"I'll make ashes of you!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [33]
+			{
+				233.064000000013, -- [1]
+				"|TInterface\\Icons\\Spell_Fire_FelFlameStrike:20|t %s gains |cFFFF0000|Hspell:206220|h[Empowered Liquid Hellfire]|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [34]
+			{
+				233.064000000013, -- [1]
+				"Drink in the glory!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [35]
+			{
+				238.832999999984, -- [1]
+				"Behold... power given form!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [36]
+			{
+				243.240999999922, -- [1]
+				"My will is unbreakable!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [37]
+			{
+				243.240999999922, -- [1]
+				"|TInterface\\Icons\\Spell_Shadow_SoulGem:20|t An |cFFFF0000|Hspell:209489|h[Eye of Gul'dan]|h|r focuses on you!", -- [2]
+				"Eye of Gul'dan", -- [3]
+				2, -- [4]
+			}, -- [38]
+			{
+				253.271999999997, -- [1]
+				"|TInterface\\Icons\\Spell_Fire_FelFlameStrike:20|t %s begins to cast |cFFFF0000|Hspell:206220|h[Empowered Liquid Hellfire]|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [39]
+			{
+				253.271999999997, -- [1]
+				"I'll make ashes of you!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [40]
+			{
+				287.738999999943, -- [1]
+				"My will is unbreakable!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [41]
+			{
+				292.182999999961, -- [1]
+				"Behold... power given form!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [42]
+			{
+				296.696999999927, -- [1]
+				"|TInterface\\Icons\\Spell_Shadow_SoulGem:20|t An |cFFFF0000|Hspell:209489|h[Eye of Gul'dan]|h|r focuses on you!", -- [2]
+				"Eye of Gul'dan", -- [3]
+				2, -- [4]
+			}, -- [43]
+			{
+				304.370999999926, -- [1]
+				"Kill them in my master's name!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [44]
+			{
+				305.976000000024, -- [1]
+				"|TInterface\\Icons\\inv_misc_trinket6oih_orb1:20|t %s gains |cFFFF0000|Hspell:211152|h[Empowered Eye of Gul'dan]|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [45]
+			{
+				305.976000000024, -- [1]
+				"I will not fail you, master! More power... just need more power...", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [46]
+			{
+				309.157000000007, -- [1]
+				"|TInterface\\Icons\\Spell_Shadow_MindRot:20|t %s summons Dalvengyr for aid|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [47]
+			{
+				326.589999999967, -- [1]
+				"|TInterface\\Icons\\Spell_Fire_FelFlameStrike:20|t %s begins to cast |cFFFF0000|Hspell:206220|h[Empowered Liquid Hellfire]|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [48]
+			{
+				326.589999999967, -- [1]
+				"I'll make ashes of you!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [49]
+			{
+				332.152999999933, -- [1]
+				"My will is unbreakable!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [50]
+			{
+				345.488000000012, -- [1]
+				"Behold... power given form!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [51]
+			{
+				350.682999999961, -- [1]
+				"|TInterface\\Icons\\inv_misc_trinket6oih_orb4:20|t An |cFFFF0000|Hspell:211152|h[Empowered Eye of Gul'dan]|h|r focuses on you!", -- [2]
+				"Empowered Eye of Gul'dan", -- [3]
+				2, -- [4]
+			}, -- [52]
+			{
+				363.256999999983, -- [1]
+				"|TInterface\\Icons\\Spell_Fire_FelFlameStrike:20|t %s begins to cast |cFFFF0000|Hspell:206220|h[Empowered Liquid Hellfire]|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [53]
+			{
+				363.256999999983, -- [1]
+				"I'll make ashes of you!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [54]
+			{
+				376.620999999926, -- [1]
+				"My will is unbreakable!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [55]
+			{
+				398.824000000022, -- [1]
+				"Behold... power given form!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [56]
+			{
+				404.055999999982, -- [1]
+				"|TInterface\\Icons\\inv_misc_trinket6oih_orb4:20|t An |cFFFF0000|Hspell:211152|h[Empowered Eye of Gul'dan]|h|r focuses on you!", -- [2]
+				"Empowered Eye of Gul'dan", -- [3]
+				2, -- [4]
+			}, -- [57]
+			{
+				407.994999999995, -- [1]
+				"No more distractions! I have work to do...", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [58]
+			{
+				422.439999999944, -- [1]
+				"Surrender! I may yet show mercy!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [59]
+			{
+				429.755999999936, -- [1]
+				"Time to return the demon hunter's soul to his body... and deny the Legion's master a host!", -- [2]
+				"Archmage Khadgar", -- [3]
+				7, -- [4]
+			}, -- [60]
+			{
+				434.996999999974, -- [1]
+				"Burn from within!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [61]
+			{
+				447.505000000005, -- [1]
+				"Behold... power given form!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [62]
+			{
+				452.566999999923, -- [1]
+				"|TInterface\\Icons\\inv_misc_trinket6oih_orb4:20|t An |cFFFF0000|Hspell:211152|h[Empowered Eye of Gul'dan]|h|r focuses on you!", -- [2]
+				"Empowered Eye of Gul'dan", -- [3]
+				2, -- [4]
+			}, -- [63]
+			{
+				472.515999999945, -- [1]
+				"Why won't you die? Why do you keep resisting?", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [64]
+			{
+				486.245999999926, -- [1]
+				"Burn from within!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [65]
+			{
+				489.32799999998, -- [1]
+				"This is our world, not the Legion's!", -- [2]
+				"Archmage Khadgar", -- [3]
+				7, -- [4]
+			}, -- [66]
+			{
+				492.484999999986, -- [1]
+				"Let the storm rain death upon you!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [67]
+			{
+				510.033999999985, -- [1]
+				"Behold... power given form!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [68]
+			{
+				514.606000000029, -- [1]
+				"|TInterface\\Icons\\inv_misc_trinket6oih_orb4:20|t An |cFFFF0000|Hspell:211152|h[Empowered Eye of Gul'dan]|h|r focuses on you!", -- [2]
+				"Empowered Eye of Gul'dan", -- [3]
+				2, -- [4]
+			}, -- [69]
+			{
+				537.505000000005, -- [1]
+				"Burn from within!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [70]
+			{
+				545.01099999994, -- [1]
+				"Why won't you die? Why do you keep resisting?", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [71]
+			{
+				551.819999999949, -- [1]
 				"One by one you fall!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
-			}, -- [87]
+			}, -- [72]
 			{
-				701.440999999992, -- [1]
+				561.08600000001, -- [1]
+				"Let the storm rain death upon you!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [73]
+			{
+				561.548999999999, -- [1]
+				"One by one you fall!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [74]
+			{
+				571.822999999975, -- [1]
+				"We can stop him! I know it!", -- [2]
+				"Archmage Khadgar", -- [3]
+				7, -- [4]
+			}, -- [75]
+			{
+				572.472999999998, -- [1]
+				"Behold... power given form!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [76]
+			{
+				585.798999999999, -- [1]
 				"You should have bent the knee!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
-			}, -- [88]
+			}, -- [77]
 			{
-				701.440999999992, -- [1]
-				"Never underestimate a master warlock!", -- [2]
+				588.745999999927, -- [1]
+				"Burn from within!", -- [2]
 				"Gul'dan", -- [3]
 				7, -- [4]
-			}, -- [89]
+			}, -- [78]
+			{
+				595.785999999964, -- [1]
+				"You should have bent the knee!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [79]
+			{
+				597.472999999998, -- [1]
+				"Behold... power given form!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [80]
+			["boss"] = "Gul'dan",
+		}, -- [2]
+		{
+			{
+				1.33100000000559, -- [1]
+				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [1]
+			{
+				6.34799999999814, -- [1]
+				"Strike for Sargeras!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [2]
+			{
+				10.4629999999888, -- [1]
+				"Burn from within!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [3]
+			{
+				20.4909999999218, -- [1]
+				"Rid me of these pests!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [4]
+			{
+				30.2859999999637, -- [1]
+				"|TInterface\\Icons\\inv_axe_2h_felfireraid_d_01:20|t %s readies |cFFFF0000|Hspell:206675|h[Shatter Essence]|h|r.", -- [2]
+				"Fel Lord Kuraz'mal", -- [3]
+				1, -- [4]
+			}, -- [5]
+			{
+				30.2859999999637, -- [1]
+				"Kill them in my master's name!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [6]
+			{
+				34.2829999999376, -- [1]
+				"The vessel must be made ready!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [7]
+			{
+				40.6139999999432, -- [1]
+				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [8]
+			{
+				40.6139999999432, -- [1]
+				"I'll make ashes of you!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [9]
+			{
+				44.4759999999078, -- [1]
+				"Burn from within!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [10]
+			{
+				65.6239999999525, -- [1]
+				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [11]
+			{
+				65.6239999999525, -- [1]
+				"I'll make ashes of you!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [12]
+			{
+				68.7929999999469, -- [1]
+				"Burn from within!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [13]
+			{
+				78.5749999999534, -- [1]
+				"You failed, heroes! The ritual is upon us! But first, I'll indulge myself a bit... and finish you!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [14]
+			{
+				99.1599999999162, -- [1]
+				"A taste of the master's might!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [15]
+			{
+				111.21399999992, -- [1]
+				"Strike for Sargeras!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [16]
+			{
+				116.180999999982, -- [1]
+				"|TInterface\\Icons\\Spell_Shadow_MindRot:20|t %s summons Azagrim for aid|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [17]
+			{
+				126.966999999946, -- [1]
+				"Behold... power given form!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [18]
+			{
+				131.501999999979, -- [1]
+				"|TInterface\\Icons\\Spell_Shadow_SoulGem:20|t An |cFFFF0000|Hspell:209489|h[Eye of Gul'dan]|h|r focuses on you!", -- [2]
+				"Eye of Gul'dan", -- [3]
+				2, -- [4]
+			}, -- [19]
+			{
+				131.730999999912, -- [1]
+				"One by one you fall!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [20]
+			{
+				138.074999999953, -- [1]
+				"|TInterface\\Icons\\Spell_Fire_FelPyroblast:20|t %s begins to cast |cFFFF0000|Hspell:206219|h[Liquid Hellfire]|h|r.", -- [2]
+				"Gul'dan", -- [3]
+				1, -- [4]
+			}, -- [21]
+			{
+				138.074999999953, -- [1]
+				"I'll make ashes of you!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [22]
+			{
+				143.724999999977, -- [1]
+				"Thus do the champions of this world fall!", -- [2]
+				"Gul'dan", -- [3]
+				7, -- [4]
+			}, -- [23]
 			["boss"] = "Gul'dan",
 		}, -- [3]
 	},

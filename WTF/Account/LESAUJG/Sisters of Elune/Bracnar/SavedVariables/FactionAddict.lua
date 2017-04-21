@@ -107,7 +107,7 @@ FactionAddictLogData = {
 }
 FactionAddictLogEntries = {
 	{
-		["Armies of Legionfall"] = 750,
+		["Armies of Legionfall"] = 900,
 	}, -- [1]
 	{
 		["Armies of Legionfall"] = 1600,
@@ -301,9 +301,9 @@ FactionAddictConfigIsInactive = {
 	[1388] = false,
 	[1279] = false,
 	[69] = false,
-	[1280] = false,
+	[2045] = false,
 	[1216] = false,
-	[81] = false,
+	[1280] = false,
 	[70] = false,
 	[1090] = false,
 	[93] = false,
@@ -329,7 +329,7 @@ FactionAddictConfigIsInactive = {
 	[1732] = false,
 	[1031] = false,
 	[932] = false,
-	[2045] = false,
+	[81] = false,
 	[1733] = false,
 	[1847] = false,
 	[1351] = false,
