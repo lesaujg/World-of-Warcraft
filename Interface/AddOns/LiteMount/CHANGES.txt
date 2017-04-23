@@ -1,14 +1,12 @@
-tag 7d93eedc87c876de35765cbebbc292564c71ce5b 7.2.4
+tag 9ca6548626a5b094cbf82dc977c2f02dcb9e5cab 7.2.7
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Wed Apr 12 14:46:31 2017 +1000
+Date:	Sun Apr 23 09:59:45 2017 +1000
 
-More flying fixes for Legion.
-Travel Form is a 100% ground mount again.
-Ghost Wolf is 100% with follower (may not work).
+UI bug with custom1/custom2 flag ordering.
 
-commit 64b814ca754a81fd85d868e00e9933d2a391fa6a
+commit b317a3e316c8460b0c1829b88d14ba08fa4cb81a
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Wed Apr 12 13:11:37 2017 +1000
+Date:   Sun Apr 23 09:59:16 2017 +1000
 
-    Apparently one of the Order Hall followers makes Ghost Wolf 100%.
+    Fix bug where Custom1/2 flags were reversed in UI.
 

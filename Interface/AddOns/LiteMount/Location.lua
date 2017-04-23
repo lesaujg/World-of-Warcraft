@@ -6,15 +6,12 @@
   the mojo is done by IsUsableSpell to know if a mount can be cast, this
   just helps with the prioritization.
 
-  Copyright 2011-2016 Mike Battersby
+  Copyright 2011-2017 Mike Battersby
 
 ----------------------------------------------------------------------------]]--
 
 LM_Location = LM_CreateAutoEventFrame("Frame", "LM_Location")
 LM_Location:RegisterEvent("PLAYER_LOGIN")
-
--- Magical develper only debugging-fu
-local I_AM_X = GetAddOnMetadata("LiteMount", "Version") == "7.2.4"
 
 function LM_Location:Initialize()
     self.continent = -1
@@ -24,14 +21,28 @@ function LM_Location:Initialize()
     self.minimapZoneText = ""
     self.subZoneText = ""
 
+    self:UpdateSwimTimes()
+
     self:RegisterEvent("PLAYER_ENTERING_WORLD")
     self:RegisterEvent("ZONE_CHANGED")
     self:RegisterEvent("ZONE_CHANGED_INDOORS")
     self:RegisterEvent("ZONE_CHANGED_NEW_AREA")
+    self:RegisterEvent("MOUNT_JOURNAL_USABILITY_CHANGED")
 end
 
 local function FrameApply(frames, func, ...)
     for i,f in ipairs(frames) do f[func](f, ...) end
+end
+
+function LM_Location:UpdateSwimTimes()
+    if not IsSubmerged() then
+        self.lastDryTime = GetTime()
+    end
+end
+
+function LM_Location:IsFloating()
+    return IsSubmerged() and not self:CantBreathe() and
+           ( GetTime() - (self.lastDryTime or 0 ) < 1.0)
 end
 
 -- I used to be nice. I swear I tried to be nice and only passively listen to
@@ -42,6 +53,8 @@ end
 function LM_Location:Update()
 
     local origID = GetCurrentMapAreaID()
+
+    -- I lied: I'm still nice.
 
     local WMUListeners = { GetFramesRegisteredForEvent("WORLD_MAP_UPDATE") }
     FrameApply(WMUListeners, "UnregisterEvent", "WORLD_MAP_UPDATE")
@@ -62,6 +75,11 @@ end
 
 function LM_Location:PLAYER_LOGIN()
     self:Initialize()
+end
+
+function LM_Location:MOUNT_JOURNAL_USABILITY_CHANGED()
+    LM_Debug("Updating swim times due to MOUNT_JOURNAL_USABILITY_CHANGED.")
+    self:UpdateSwimTimes()
 end
 
 function LM_Location:PLAYER_ENTERING_WORLD()
@@ -108,11 +126,10 @@ function LM_Location:CanFly()
         return false
     end
 
-    -- Achievement check on alts is (was?) bugged in 7.0 check for skyterror
+    -- Draenor Pathfinder
     if self.continent == 7 then
         local completed = select(4, GetAchievementInfo(10018))
-        local hasSkyTerror = LM_PlayerMounts:GetMountBySpell(LM_SPELL_SOARING_SKYTERROR)
-        if not completed and not hasSkyTerror then
+        if not completed then
             return false
         end
     end
@@ -137,17 +154,11 @@ function LM_Location:CanSwim()
     return IsSubmerged()
 end
 
-function LM_Location:GetName()
-    return self.realZoneText
+function LM_Location:CantBreathe()
+    local name, _, _, rate = GetMirrorTimerInfo(2)
+    return (name == "BREATH" and rate < 0)
 end
 
-function LM_Location:GetID()
-    return self.areaID
-end
-
-function LM_Location:GetInstanceID()
-    return self.instanceID
-end
 
 function LM_Location:IsAQ()
     if self.areaID == 766 then return true end
@@ -161,6 +172,18 @@ end
 
 function LM_Location:IsDraenorNagrand()
     if self.areaID == 950 then return true end
+end
+
+-- 169 = ExtraActionButton1, check for Masquerade action or aura (202477)
+function LM_Location:CanSuramarMasquerade()
+    if HasExtraActionBar() and HasAction(169) then
+        local aType, aID = GetActionInfo(169)
+        if aType == "spell" and aID == 202477 then
+            return true
+        end
+    elseif UnitAura("player", GetSpellInfo(202477)) then
+        return true
+    end
 end
 
 function LM_Location:Dump()

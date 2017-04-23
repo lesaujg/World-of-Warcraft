@@ -10,7 +10,7 @@
 
   Also IsUsableSpell doesn't work right on it.
 
-  Copyright 2011-2016 Mike Battersby
+  Copyright 2011-2017 Mike Battersby
 
 ----------------------------------------------------------------------------]]--
 
@@ -28,28 +28,22 @@ local function PlayerKnowsRiding()
 end
 
 local travelFormFlags = bit.bor(
-                            LM_FLAG_BIT_FLY,
-                            LM_FLAG_BIT_SWIM,
-                            LM_FLAG_BIT_RUN
+                            LM_FLAG.FLY,
+                            LM_FLAG.SWIM,
+                            LM_FLAG.RUN
                         )
 
-function LM_TravelForm:Flags(v)
-    if not PlayerKnowsRiding() then
-        return bit.bor(travelFormFlags, LM_FLAG_BIT_WALK)
-    else
-        return travelFormFlags
-    end
-end
-
 function LM_TravelForm:Get()
-    local m = LM_Spell:Get(LM_SPELL_TRAVEL_FORM)
-    if m then setmetatable(m, LM_TravelForm) end
+    local m = LM_Spell.Get(self, LM_SPELL.TRAVEL_FORM)
+    if m then
+        m.flags = travelFormFlags
+    end
     return m
 end
 
 -- IsUsableSpell doesn't return false for Travel Form indoors like it should,
 -- because you can swim indoors with it (apparently).
-function LM_TravelForm:IsUsable()
+function LM_TravelForm:IsCastable()
     if IsIndoors() and not IsSubmerged() then return false end
-    return LM_Spell.IsUsable(self)
+    return LM_Spell.IsCastable(self)
 end

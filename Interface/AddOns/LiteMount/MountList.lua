@@ -4,7 +4,7 @@
 
   Class for a list of LM_Mount mounts.
 
-  Copyright 2011-2016 Mike Battersby
+  Copyright 2011-2017 Mike Battersby
 
 ----------------------------------------------------------------------------]]--
 
@@ -122,10 +122,10 @@ function LM_MountList:__add(other)
     local seen = { }
     for m in self:Iterate() do
         tinsert(r, m)
-        seen[m:Name()] = true
+        seen[m.name] = true
     end
     for m in other:Iterate() do
-        if not seen[m:Name()] then
+        if not seen[m.name] then
             tinsert(r, m)
         end
     end
@@ -136,19 +136,19 @@ function LM_MountList:__sub(other)
     local r = LM_MountList:New()
     local remove = { }
     for m in other:Iterate() do
-        remove[m:Name()] = true
+        remove[m.name] = true
     end
     for m in self:Iterate() do
-        if not remove[m:Name()] then
+        if not remove[m.name] then
             tinsert(r, m)
         end
     end
     return r
 end
 
-function LM_MountList:Sort()
-    local ns = function (a,b) return a:Name() < b:Name() end
-    sort(self, ns)
+function LM_MountList:Sort(func)
+    local func = func or function (a,b) return a.name < b.name end
+    sort(self, func)
     return self
 end
 

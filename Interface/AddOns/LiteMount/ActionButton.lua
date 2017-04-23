@@ -4,7 +4,7 @@
 
   A SecureActionButton to call mount actions based on an action list.
 
-  Copyright 2011-2016 Mike Battersby
+  Copyright 2011-2017 Mike Battersby
 
 ----------------------------------------------------------------------------]]--
 
@@ -28,7 +28,7 @@ function LM_ActionButton:Dispatch(action, args)
     local m = LM_Action[action](LM_Action, self, args)
     if not m then return end
 
-    LM_Debug("Setting up button as " .. (m:Name() or action) .. ".")
+    LM_Debug("Setting up button as " .. (m.name or action) .. ".")
     m:SetupActionButton(self)
 
     return true
@@ -40,7 +40,7 @@ function LM_ActionButton:PreClick(mouseButton)
 
     LM_Debug("PreClick handler called on " .. self:GetName())
 
-    LM_PlayerMounts:ScanMounts()
+    LM_PlayerMounts:RefreshMounts()
 
     for action in gmatch(self.actionList, "%S+") do
         if self:Dispatch(action) then return end

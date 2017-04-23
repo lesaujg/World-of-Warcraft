@@ -4,44 +4,40 @@
 
   A mount summoned directly from a spell with no Mount Journal entry.
 
-  Copyright 2011-2016 Mike Battersby
+  Copyright 2011-2017 Mike Battersby
 
 ----------------------------------------------------------------------------]]--
 
 LM_Spell = setmetatable({ }, LM_Mount)
 LM_Spell.__index = LM_Spell
 
-function LM_Spell:Get(spellID, forceKnown)
+function LM_Spell:Get(spellID)
 
-    if not forceKnown and not IsSpellKnown(spellID) then return end
-
-    if self.cacheBySpellID[spellID] then
-        return self.cacheBySpellID[spellID]
-    end
-
-    local name, rank, icon, castingTime, _, _, _ = GetSpellInfo(spellID)
+    local name, rank, icon = GetSpellInfo(spellID)
 
     if not name then
         LM_Debug("LM_Mount: Failed GetSpellInfo #"..spellID)
         return
     end
 
-    local m = setmetatable(LM_Mount:new(), LM_Spell)
+    local m = LM_Mount.new(self, spellID)
 
     m.name = name
-    m.spellName = name
+    m.spellID = spellID
     m.icon = icon
     m.flags = 0
-    m.castTime = castingTime
-    m.spellID = spellID
-
-    self.cacheByName[m:Name()] = m
-    self.cacheBySpellID[m:SpellID()] = m
+    m.isCollected = IsSpellKnown(m.spellID)
 
     return m
 end
 
-function LM_Spell:IsUsable()
-    if not IsUsableSpell(self:SpellID()) then return end
-    return LM_Mount.IsUsable(self)
+function LM_Spell:Refresh()
+    self.isCollected = IsSpellKnown(self.spellID)
+end
+
+function LM_Spell:IsCastable()
+    if not IsSpellKnown(self.spellID) or not IsUsableSpell(self.spellID) then
+        return false
+    end
+    return LM_Mount.IsCastable(self)
 end

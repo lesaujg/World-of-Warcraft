@@ -4,13 +4,51 @@
 
   Information on all your mounts.
 
-  Copyright 2011-2016 Mike Battersby
+  Copyright 2011-2017 Mike Battersby
 
 ----------------------------------------------------------------------------]]--
 
 LM_PlayerMounts = LM_CreateAutoEventFrame("Frame", "LM_PlayerMounts", UIParent)
 
-local RescanEvents = {
+-- Type, type class create args
+local LM_MOUNT_SPELLS = {
+    { "RunningWild", LM_SPELL.RUNNING_WILD },
+    { "FlightForm", LM_SPELL.FLIGHT_FORM },
+    { "GhostWolf", LM_SPELL.GHOST_WOLF },
+    { "TravelForm", LM_SPELL.TRAVEL_FORM },
+    { "Nagrand", LM_SPELL.FROSTWOLF_WAR_WOLF },
+    { "Nagrand", LM_SPELL.TELAARI_TALBUK },
+    { "ItemSummoned",
+        LM_ITEM.LOANED_GRYPHON_REINS, LM_SPELL.LOANED_GRYPHON,
+        bit.bor(LM_FLAG.FLY)
+    },
+    { "ItemSummoned",
+        LM_ITEM.LOANED_WIND_RIDER_REINS, LM_SPELL.LOANED_WIND_RIDER,
+        bit.bor(LM_FLAG.FLY)
+    },
+    { "ItemSummoned",
+        LM_ITEM.FLYING_BROOM, LM_SPELL.FLYING_BROOM,
+        bit.bor(LM_FLAG.FLY),
+    },
+    { "ItemSummoned",
+        LM_ITEM.MAGIC_BROOM, LM_SPELL.MAGIC_BROOM,
+        bit.bor(LM_FLAG.RUN, LM_FLAG.FLY),
+    },
+    { "ItemSummoned",
+        LM_ITEM.DRAGONWRATH_TARECGOSAS_REST, LM_SPELL.TARECGOSAS_VISAGE,
+        bit.bor(LM_FLAG.FLY)
+    },
+    { "ItemSummoned",
+        LM_ITEM.SHIMMERING_MOONSTONE, LM_SPELL.MOONFANG,
+        bit.bor(LM_FLAG.RUN),
+    },
+    { "ItemSummoned",
+        LM_ITEM.RATSTALLION_HARNESS, LM_SPELL.RATSTALLION_HARNESS,
+        bit.bor(LM_FLAG.RUN),
+    },
+}
+
+local RefreshEvents = {
     -- Companion change. Don't add COMPANION_UPDATE to this as it fires
     -- for units other than "player" and triggers constantly.
     "COMPANION_LEARNED", "COMPANION_UNLEARNED",
@@ -24,27 +62,28 @@ local RescanEvents = {
 }
 
 function LM_PlayerMounts:Initialize()
-    -- Delayed scanning stops us rescanning unnecessarily.
-    self.needScan = true
 
-    self.byName = { }
     self.list = LM_MountList:New()
 
-    -- Rescan event setup
-    for _,ev in ipairs(RescanEvents) do
+    self:AddJournalMounts()
+    self:AddSpellMounts()
+
+    for m in self.list:Iterate() do
+        LM_Options:SeenMount(m, true)
+    end
+
+    -- Refresh event setup
+    for _,ev in ipairs(RefreshEvents) do
         self[ev] = function (self, event, ...)
                             LM_Debug("Got rescan event "..event)
-                            self.needScan = true
+                            self.needRefresh = true
                         end
         self:RegisterEvent(ev)
     end
 end
 
 function LM_PlayerMounts:AddMount(m)
-    if m and not self.byName[m:Name()] then
-        self.byName[m:Name()] = m
-        tinsert(self.list, m)
-    end
+    tinsert(self.list, m)
 end
 
 function LM_PlayerMounts:AddJournalMounts()
@@ -63,22 +102,15 @@ function LM_PlayerMounts:AddSpellMounts()
     end
 end
 
-function LM_PlayerMounts:ScanMounts()
-    if not self.needScan then return end
-    LM_Debug("Rescanning list of mounts.")
+function LM_PlayerMounts:RefreshMounts()
+    if self.needRefresh then
+        LM_Debug("Refreshing status of all mounts.")
 
-    self.needScan = nil
-    wipe(self.byName)
-    wipe(self.list)
-
-    self:AddJournalMounts()
-    self:AddSpellMounts()
-
-    for m in self.list:Iterate() do
-        LM_Options:SeenMount(m, true)
+        for m in self:Iterate() do
+            m:Refresh()
+        end
+        self.needRefresh = nil
     end
-
-    LM_Debug("Finished rescan.")
 end
 
 function LM_PlayerMounts:Iterate()
@@ -86,7 +118,12 @@ function LM_PlayerMounts:Iterate()
 end
 
 function LM_PlayerMounts:Search(matchfunc)
+    self:RefreshMounts()
     return self.list:Search(matchfunc)
+end
+
+function LM_PlayerMounts:Find(matchfunc)
+    return self.list:Search(matchfunc)[1]
 end
 
 function LM_PlayerMounts:GetAllMounts()
@@ -97,7 +134,7 @@ end
 function LM_PlayerMounts:GetAvailableMounts(flags)
     local function match(m)
         if not m:CurrentFlagsSet(flags) then return end
-        if not m:IsUsable() then return end
+        if not m:IsCastable() then return end
         if LM_Options:IsExcludedMount(m) then return end
         return true
     end
@@ -107,18 +144,20 @@ end
 
 function LM_PlayerMounts:GetMountFromUnitAura(unitid)
     for i = 1,BUFF_MAX_DISPLAY do
-        local m = self:GetMountByName(UnitAura(unitid, i))
-        if m and m:IsUsable() then return m end
+        local aura = UnitAura(unitid, i)
+        local function match(m) return m.isCollected and m.name == aura end
+        return self:Find(match)
     end
 end
 
 function LM_PlayerMounts:GetMountByName(name)
-    return self.byName[name]
+    local function match(m) return m.name == name end
+    return self:Find(match)
 end
 
 function LM_PlayerMounts:GetMountBySpell(id)
-    local name = GetSpellInfo(id)
-    if name then return self:GetMountByName(name) end
+    local function match(m) return m.spellID == id end
+    return self:Find(match)
 end
 
 -- For some reason GetShapeshiftFormInfo doesn't work on Ghost Wolf.
@@ -126,7 +165,7 @@ function LM_PlayerMounts:GetMountByShapeshiftForm(i)
     if not i then return end
     local class = select(2, UnitClass("player"))
     if class == "SHAMAN" and i == 1 then
-         return self:GetMountBySpell(LM_SPELL_GHOST_WOLF)
+         return self:GetMountBySpell(LM_SPELL.GHOST_WOLF)
     end
     local name = select(2, GetShapeshiftFormInfo(i))
     if name then return self:GetMountByName(name) end

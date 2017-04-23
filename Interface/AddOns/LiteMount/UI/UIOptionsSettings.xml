@@ -1,6 +1,6 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\..\FrameXML\UI.xsd">
 
-<!-- Copyright 2011-2016 Mike Battersby -->
+<!-- Copyright 2011-2017 Mike Battersby -->
 
 <Frame name="LiteMountOptionsSettings" hidden="true" inherits="LiteMountOptionsPanelTemplate">
     <Attributes>
@@ -14,16 +14,17 @@
             </Anchors>
             <Scripts>
                 <OnLoad>
-                    self.Text:SetText("Try to copy target's mount.")
+                    local L = LM_Localize
+                    self.Text:SetText(L.LM_COPY_TARGETS_MOUNT)
                     self.SetOption = function (self, setting)
                             if not setting or setting == "0" then
-                                LM_Options:CopyTargetsMount(false)
+                                LM_Options.db.char.copyTargetsMount = false
                             else
-                                LM_Options:CopyTargetsMount(true)
+                                LM_Options.db.char.copyTargetsMount = true
                             end
                         end
                     self.GetOption = function (self)
-                            return LM_Options:CopyTargetsMount()
+                            return LM_Options.db.char.copyTargetsMount
                         end
                     self.GetOptionDefault = function (self) return true end
                     LiteMountOptionsControl_OnLoad(self)
@@ -37,17 +38,18 @@
             </Anchors>
             <Scripts>
                 <OnLoad>
-                    self.Text:SetText("Automatically disable newly learned mounts.")
+                    local L = LM_Localize
+                    self.Text:SetText(L.LM_DISABLE_NEW_MOUNTS)
                     self.SetOption = function (self, setting)
                             if not setting or setting == "0" then
-                                LM_Options:ExcludeNewMounts(false)
+                                LM_Options.db.profile.excludeNewMounts = false
                             else
-                                LM_Options:ExcludeNewMounts(true)
+                                LM_Options.db.profile.excludeNewMounts = true
                             end
                         end
                     self.GetOptionDefault = function (self) return false end
                     self.GetOption = function (self)
-                            return LM_Options:ExcludeNewMounts()
+                            return LM_Options.db.profile.excludeNewMounts
                         end
                     LiteMountOptionsControl_OnLoad(self)
                 </OnLoad>

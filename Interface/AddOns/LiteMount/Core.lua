@@ -4,7 +4,7 @@
 
   Addon core.
 
-  Copyright 2011-2016 Mike Battersby
+  Copyright 2011-2017 Mike Battersby
 
   LiteMount is free software: you can redistribute it and/or modify it under
   the terms of the GNU General Public License, version 2, as published by
@@ -37,8 +37,10 @@ local ButtonActions = {
         CancelForm
         CopyTargetsMount
         Vashjir
-        Fly
         Swim
+        SuramarCity
+        Fly
+        Float
         Nagrand
         AQ
         Run
@@ -53,6 +55,8 @@ local ButtonActions = {
         CopyTargetsMount
         Vashjir
         Swim
+        SuramarCity
+        Float
         Nagrand
         AQ
         Run

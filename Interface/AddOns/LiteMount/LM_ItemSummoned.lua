@@ -2,7 +2,7 @@
 
   LiteMount/LM_ItemSummoned.lua
 
-  Copyright 2011-2016 Mike Battersby
+  Copyright 2011-2017 Mike Battersby
 
 ----------------------------------------------------------------------------]]--
 
@@ -23,30 +23,25 @@ end
 
 function LM_ItemSummoned:Get(itemID, spellID, flags)
 
-    if not PlayerHasItem(itemID) then return end
+    local m = LM_Spell.Get(self, spellID)
+    if m then
+        local itemName = GetItemInfo(itemID)
+        if not itemName then
+            LM_Debug("LM_Mount: Failed GetItemInfo #"..itemID)
+            return
+        end
 
-    if self.cacheByItemID[itemID] then
-        return self.cacheByItemID[itemID]
+        m.itemID = itemID
+        m.itemName = itemName
+        m.flags = flags
+        m.isCollected = PlayerHasItem(m.itemID)
     end
-
-    local m = LM_Spell:Get(spellID, true)
-    if not m then return end
-
-    setmetatable(m, LM_ItemSummoned)
-
-    local itemName = GetItemInfo(itemID)
-    if not itemName then
-        LM_Debug("LM_Mount: Failed GetItemInfo #"..itemID)
-        return
-    end
-
-    m.itemID = itemID
-    m.itemName = itemName
-    m.flags = flags
-
-    self.cacheByItemID[itemID] = m
 
     return m
+end
+
+function LM_ItemSummoned:Refresh()
+    self.isCollected = PlayerHasItem(self.itemID)
 end
 
 function LM_ItemSummoned:SetupActionButton(button)
@@ -55,29 +50,25 @@ function LM_ItemSummoned:SetupActionButton(button)
     button:SetAttribute("item", self.itemName)
 end
 
-function LM_ItemSummoned:IsUsable()
-
-    local spellId = self:SpellID()
+function LM_ItemSummoned:IsCastable()
 
     -- IsUsableSpell seems to test correctly whether it's indoors etc.
-    if spellId and not IsUsableSpell(spellId) then
+    if not IsUsableSpell(self.spellId) then
         return false
     end
 
-    local itemID = self:ItemID()
-
-    if IsEquippableItem(itemID) then
-        if not IsEquippedItem(itemID) then
+    if IsEquippableItem(self.itemID) then
+        if not IsEquippedItem(self.itemID) then
             return false
         end
     else
-        if not PlayerHasItem(itemID) then
+        if not PlayerHasItem(self.itemID) then
             return false
         end
     end
 
     -- Either equipped or non-equippable and in bags
-    local start, duration, enable = GetItemCooldown(itemID)
+    local start, duration, enable = GetItemCooldown(self.itemID)
     if duration > 0 and enable == 1 then
         return false
     end

@@ -1,6 +1,6 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\..\FrameXML\UI.xsd">
 
-<!-- Copyright 2011-2016 Mike Battersby -->
+<!-- Copyright 2011-2017 Mike Battersby -->
 
 <Script file="UIOptionsMacro.lua" />
 
@@ -43,10 +43,11 @@
                         <OnEscapePressed function="EditBox_ClearFocus" />
                         <OnLoad>
                             self.SetOption = function (self, v)
-                                    return LM_Options:SetMacro(v)
+                                    LM_Options.db.char.unavailableMacro = v
+                                    LM_Options.db.char.useUnavailableMacro = (v ~= "")
                                 end
                             self.GetOption = function (self)
-                                    return LM_Options:GetMacro() or ""
+                                    return LM_Options.db.char.unavailableMacro or ""
                                 end
                             self.GetOptionDefault = function (self)
                                     return ""
