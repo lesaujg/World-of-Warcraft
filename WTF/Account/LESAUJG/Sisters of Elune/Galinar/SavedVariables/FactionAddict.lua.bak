@@ -25,112 +25,121 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Monday 4/17",
-		["rows"] = 3,
+		["date"] = "Sunday 4/23",
+		["rows"] = 2,
 	}, -- [1]
 	{
-		["date"] = "Sunday 4/16",
+		["date"] = "Friday 4/21",
 		["rows"] = 1,
 	}, -- [2]
 	{
+		["date"] = "Monday 4/17",
+		["rows"] = 3,
+	}, -- [3]
+	{
+		["date"] = "Sunday 4/16",
+		["rows"] = 1,
+	}, -- [4]
+	{
 		["date"] = "Wednesday 4/12",
 		["rows"] = 4,
-	}, -- [3]
+	}, -- [5]
 	{
 		["date"] = "Monday 4/10",
 		["rows"] = 5,
-	}, -- [4]
+	}, -- [6]
 	{
 		["date"] = "Sunday 4/9",
 		["rows"] = 3,
-	}, -- [5]
+	}, -- [7]
 	{
 		["date"] = "Saturday 4/8",
 		["rows"] = 4,
-	}, -- [6]
+	}, -- [8]
 	{
 		["date"] = "Friday 4/7",
 		["rows"] = 4,
-	}, -- [7]
+	}, -- [9]
 	{
 		["date"] = "Friday 2/24",
 		["rows"] = 1,
-	}, -- [8]
+	}, -- [10]
 	{
 		["date"] = "Wednesday 2/8",
 		["rows"] = 1,
-	}, -- [9]
+	}, -- [11]
 	{
 		["date"] = "Friday 2/3",
 		["rows"] = 1,
-	}, -- [10]
+	}, -- [12]
 	{
 		["date"] = "Friday 1/27",
 		["rows"] = 1,
-	}, -- [11]
+	}, -- [13]
 	{
 		["date"] = "Thursday 1/19",
 		["rows"] = 1,
-	}, -- [12]
+	}, -- [14]
 	{
 		["date"] = "Saturday 1/14",
 		["rows"] = 1,
-	}, -- [13]
+	}, -- [15]
 	{
 		["date"] = "Wednesday 11/16",
 		["rows"] = 1,
-	}, -- [14]
+	}, -- [16]
 }
 FactionAddictLogEntries = {
+	{
+		["The Wardens"] = 450,
+		["Court of Farondis"] = 1012,
+	}, -- [1]
+	{
+		["The Wardens"] = 375,
+	}, -- [2]
 	{
 		["The Wardens"] = 300,
 		["Armies of Legionfall"] = 375,
 		["Valarjar"] = 2175,
-	}, -- [1]
+	}, -- [3]
 	{
 		["Armies of Legionfall"] = 725,
-	}, -- [2]
+	}, -- [4]
 	{
 		["Cult of Malicor"] = 1375,
 		["Armies of Legionfall"] = 75,
 		["The Wardens"] = 300,
 		["Dreamweavers"] = 2575,
-	}, -- [3]
+	}, -- [5]
 	{
 		["Armies of Legionfall"] = 760,
 		["Valarjar"] = 250,
 		["The Wardens"] = 150,
 		["Court of Farondis"] = 450,
 		["Cult of Malicor"] = 2000,
-	}, -- [4]
+	}, -- [6]
 	{
 		["The Wardens"] = 600,
 		["Cult of Malicor"] = 625,
 		["Highmountain Tribe"] = 850,
-	}, -- [5]
+	}, -- [7]
 	{
 		["Cult of Malicor"] = 2750,
 		["The Wardens"] = 600,
 		["Valarjar"] = 750,
 		["Highmountain Tribe"] = 1610,
-	}, -- [6]
+	}, -- [8]
 	{
 		["Cult of Malicor"] = 3000,
 		["Court of Farondis"] = 2090,
 		["The Wardens"] = 300,
 		["Highmountain Tribe"] = 600,
-	}, -- [7]
-	{
-		["The Ashen Verdict"] = 1629,
-	}, -- [8]
-	{
-		["The Ashen Verdict"] = 1500,
 	}, -- [9]
 	{
-		["The Ashen Verdict"] = 3000,
+		["The Ashen Verdict"] = 1629,
 	}, -- [10]
 	{
-		["The Ashen Verdict"] = 3000,
+		["The Ashen Verdict"] = 1500,
 	}, -- [11]
 	{
 		["The Ashen Verdict"] = 3000,
@@ -139,8 +148,14 @@ FactionAddictLogEntries = {
 		["The Ashen Verdict"] = 3000,
 	}, -- [13]
 	{
-		["Cult of Malicor"] = 250,
+		["The Ashen Verdict"] = 3000,
 	}, -- [14]
+	{
+		["The Ashen Verdict"] = 3000,
+	}, -- [15]
+	{
+		["Cult of Malicor"] = 250,
+	}, -- [16]
 }
 FactionAddictConfigIsInactive = {
 	[1737] = false,
