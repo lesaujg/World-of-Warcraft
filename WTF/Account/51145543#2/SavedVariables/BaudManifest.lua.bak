@@ -9,10 +9,10 @@ BaudManifestData = {
 		["HideEquipped"] = true,
 		["ReplaceBlizBags"] = true,
 		["HideBlizInv"] = true,
-		["Combine"] = true,
+		["ItemNameFirst"] = false,
 		["AutoShowInv"] = true,
 		["HideBlizBank"] = true,
-		["ItemNameFirst"] = false,
+		["Combine"] = true,
 	},
 	["Sisters of Elune"] = {
 		["Torinara"] = {
@@ -172,10 +172,18 @@ BaudManifestData = {
 						["Count"] = 3,
 					}, -- [34]
 					{
-						["Count"] = 1,
+						["Count"] = 2,
 						["ItemString"] = "item:80433::::::::100:263::::::",
 					}, -- [35]
-					["SlotsUsed"] = 36,
+					{
+						["ItemString"] = "item:122171::::::::100:263::1:1:43:::",
+						["Count"] = 1,
+					}, -- [36]
+					{
+						["ItemString"] = "item:95149::::::::100:263:4:::465:::",
+						["Count"] = 1,
+					}, -- [37]
+					["SlotsUsed"] = 38,
 				}, -- [1]
 				["BGColor"] = {
 					0.5, -- [1]
@@ -183,7 +191,7 @@ BaudManifestData = {
 					0.5, -- [3]
 					0.7, -- [4]
 				},
-				["SlotEmpty"] = 115,
+				["SlotEmpty"] = 113,
 				["BGTexture"] = "Bumpy",
 				["ShowBags"] = false,
 				["SpecialEmpty"] = 0,
@@ -237,7 +245,7 @@ BaudManifestData = {
 				[0] = 1,
 			},
 			["Class"] = "SHAMAN",
-			["Money"] = 78818284,
+			["Money"] = 83283855,
 		},
 		["Magnara"] = {
 			{
@@ -247,9 +255,9 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [1]
 					{
-						["Equipped"] = 1,
 						["Count"] = 1,
 						["ItemString"] = "item:23389::::::::2:262::::::",
+						["Equipped"] = 1,
 					}, -- [2]
 					{
 						["Count"] = 3,

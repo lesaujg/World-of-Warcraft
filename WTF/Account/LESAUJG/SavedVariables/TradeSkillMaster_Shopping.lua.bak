@@ -39,7 +39,7 @@ TradeSkillMaster_ShoppingDB = {
 	["_hash"] = 1861581,
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1492965550,
+			["lastSearch"] = 1493074446,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",

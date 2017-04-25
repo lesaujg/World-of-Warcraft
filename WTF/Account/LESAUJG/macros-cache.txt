@@ -4,10 +4,6 @@ VER 3 000000000000001E "_Clear Target" "Ability_CheapShot"
 /petfollow
 /petpassive
 END
-VER 3 0000000000000098 "Decursive" "INV_MISC_QUESTIONMARK"
-/stopcasting
-/cast [@mouseover,nomod,exists] Remove Corruption;  [@mouseover,exists,mod:ctrl] Cyclone; [@mouseover,exists,mod:shift] Remove Corruption
-END
 VER 3 0000000000000099 "Fish" "INV_MISC_QUESTIONMARK"
 /equipset Fishing
 /use Fishing
