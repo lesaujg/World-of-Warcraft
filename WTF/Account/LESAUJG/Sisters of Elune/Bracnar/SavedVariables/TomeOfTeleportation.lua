@@ -1,7 +1,7 @@
 
 TomeOfTele_Points = nil
 TomeOfTele_Icon = {
-	["minimapPos"] = 50.8446762724572,
+	["minimapPos"] = 70.6918512939694,
 }
 TomeOfTele_SortByType = nil
 TomeOfTele_HideItems = nil

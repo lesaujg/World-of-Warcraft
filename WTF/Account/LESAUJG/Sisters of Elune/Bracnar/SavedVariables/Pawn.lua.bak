@@ -30,11 +30,11 @@ PawnOptions = {
 					["Type"] = "Wind",
 				}, -- [1]
 				{
-					["ItemLevel"] = 53,
+					["ItemLevel"] = 58,
 					["Type"] = "Arcane",
 				}, -- [2]
 				{
-					["ItemLevel"] = 53,
+					["ItemLevel"] = 58,
 					["Type"] = "Iron",
 				}, -- [3]
 			},

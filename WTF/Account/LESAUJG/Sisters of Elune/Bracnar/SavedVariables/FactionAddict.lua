@@ -107,7 +107,7 @@ FactionAddictLogData = {
 }
 FactionAddictLogEntries = {
 	{
-		["Armies of Legionfall"] = 862,
+		["Armies of Legionfall"] = 2962,
 		["Sha'tari Defense"] = 806,
 	}, -- [1]
 	{
@@ -302,9 +302,9 @@ FactionAddictConfigIsInactive = {
 	[1388] = false,
 	[1279] = false,
 	[69] = false,
-	[1280] = false,
+	[2045] = false,
 	[1216] = false,
-	[81] = false,
+	[1280] = false,
 	[70] = false,
 	[1345] = false,
 	[93] = false,
@@ -330,7 +330,7 @@ FactionAddictConfigIsInactive = {
 	[1732] = false,
 	[1031] = false,
 	[932] = false,
-	[2045] = false,
+	[81] = false,
 	[1733] = false,
 	[1690] = false,
 	[1351] = false,
