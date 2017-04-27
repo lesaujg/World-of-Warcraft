@@ -61,6 +61,7 @@ TradeSkillMaster_MailingDB = {
 	["c@Ghiaccioli - Sisters of Elune@goldKeepAmount"] = 1000000,
 	["g@ @defaultMailTab"] = true,
 	["c@Uldaris - Sisters of Elune@goldMailTarget"] = "",
+	["c@Belrath - Sisters of Elune@goldKeepAmount"] = 1000000,
 	["_currentProfile"] = {
 		["Sanjuri - Sisters of Elune"] = "Default",
 		["Galinar - Sisters of Elune"] = "Default",
@@ -76,7 +77,6 @@ TradeSkillMaster_MailingDB = {
 		["Bracnar - Sisters of Elune"] = "Default",
 		["Uldaris - Sisters of Elune"] = "Default",
 	},
-	["c@Belrath - Sisters of Elune@goldKeepAmount"] = 1000000,
 	["g@ @resendDelay"] = 1,
 	["c@Orig - Sisters of Elune@goldKeepAmount"] = 1000000,
 	["c@Orig - Sisters of Elune@goldMailTarget"] = "",
