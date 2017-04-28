@@ -1,12 +1,16 @@
-tag 9ca6548626a5b094cbf82dc977c2f02dcb9e5cab 7.2.7
+tag 492b714d1bfb15650cf808d50edb3694e13111ba 7.2.8
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Sun Apr 23 09:59:45 2017 +1000
+Date:	Thu Apr 27 08:04:50 2017 +1000
 
-UI bug with custom1/custom2 flag ordering.
+Tagging 7.2.8
 
-commit b317a3e316c8460b0c1829b88d14ba08fa4cb81a
+ - Fix Nagrand mounts
+ - Continue optimizing a bit.
+ - Locale updates for all locales.
+
+commit 87fd736f3127ab81bd2d0bdc65fcb88f4565b6fe
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sun Apr 23 09:59:16 2017 +1000
+Date:   Tue Apr 25 00:35:55 2017 +1000
 
-    Fix bug where Custom1/2 flags were reversed in UI.
+    Unnecessarily remove an unnecessary argument to SeenMount()
 

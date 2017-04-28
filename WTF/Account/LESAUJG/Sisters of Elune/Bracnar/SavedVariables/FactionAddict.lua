@@ -25,83 +25,83 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Thursday 4/27",
+		["date"] = "Friday 4/28",
 		["rows"] = 1,
 	}, -- [1]
 	{
+		["date"] = "Thursday 4/27",
+		["rows"] = 4,
+	}, -- [2]
+	{
 		["date"] = "Tuesday 4/25",
 		["rows"] = 2,
-	}, -- [2]
+	}, -- [3]
 	{
 		["date"] = "Sunday 4/23",
 		["rows"] = 1,
-	}, -- [3]
+	}, -- [4]
 	{
 		["date"] = "Saturday 4/22",
 		["rows"] = 1,
-	}, -- [4]
+	}, -- [5]
 	{
 		["date"] = "Thursday 4/20",
 		["rows"] = 1,
-	}, -- [5]
+	}, -- [6]
 	{
 		["date"] = "Tuesday 4/18",
 		["rows"] = 1,
-	}, -- [6]
+	}, -- [7]
 	{
 		["date"] = "Monday 4/17",
 		["rows"] = 3,
-	}, -- [7]
+	}, -- [8]
 	{
 		["date"] = "Sunday 4/16",
 		["rows"] = 1,
-	}, -- [8]
+	}, -- [9]
 	{
 		["date"] = "Thursday 4/13",
 		["rows"] = 1,
-	}, -- [9]
+	}, -- [10]
 	{
 		["date"] = "Wednesday 4/12",
 		["rows"] = 1,
-	}, -- [10]
+	}, -- [11]
 	{
 		["date"] = "Tuesday 4/11",
 		["rows"] = 2,
-	}, -- [11]
+	}, -- [12]
 	{
 		["date"] = "Monday 4/10",
 		["rows"] = 2,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Sunday 4/9",
 		["rows"] = 1,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Saturday 4/8",
 		["rows"] = 1,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Friday 4/7",
 		["rows"] = 2,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Thursday 4/6",
 		["rows"] = 1,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Tuesday 4/4",
 		["rows"] = 1,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Monday 4/3",
 		["rows"] = 1,
-	}, -- [18]
-	{
-		["date"] = "Sunday 4/2",
-		["rows"] = 1,
 	}, -- [19]
 	{
-		["date"] = "Saturday 4/1",
+		["date"] = "Sunday 4/2",
 		["rows"] = 1,
 	}, -- [20]
 }
@@ -110,67 +110,70 @@ FactionAddictLogEntries = {
 		["Armies of Legionfall"] = 500,
 	}, -- [1]
 	{
-		["Sha'tari Defense"] = 806,
-		["Armies of Legionfall"] = 2962,
+		["The Wardens"] = 150,
+		["Armies of Legionfall"] = 1553,
+		["Valarjar"] = 1900,
+		["Highmountain Tribe"] = 150,
 	}, -- [2]
 	{
-		["Armies of Legionfall"] = 700,
+		["Sha'tari Defense"] = 806,
+		["Armies of Legionfall"] = 2962,
 	}, -- [3]
 	{
-		["Armies of Legionfall"] = 1888,
+		["Armies of Legionfall"] = 700,
 	}, -- [4]
 	{
-		["Armies of Legionfall"] = 900,
+		["Armies of Legionfall"] = 1888,
 	}, -- [5]
 	{
-		["Armies of Legionfall"] = 1600,
+		["Armies of Legionfall"] = 900,
 	}, -- [6]
+	{
+		["Armies of Legionfall"] = 1600,
+	}, -- [7]
 	{
 		["Sha'tari Defense"] = 557,
 		["Armies of Legionfall"] = 1325,
 		["Shado-Pan Assault"] = 1321,
-	}, -- [7]
-	{
-		["Armies of Legionfall"] = 1150,
 	}, -- [8]
 	{
-		["Armies of Legionfall"] = 250,
+		["Armies of Legionfall"] = 1150,
 	}, -- [9]
 	{
-		["Armies of Legionfall"] = 1650,
+		["Armies of Legionfall"] = 250,
 	}, -- [10]
+	{
+		["Armies of Legionfall"] = 1650,
+	}, -- [11]
 	{
 		["Armies of Legionfall"] = 2775,
 		["Sha'tari Defense"] = 684,
-	}, -- [11]
+	}, -- [12]
 	{
 		["Shado-Pan Assault"] = 1800,
 		["Armies of Legionfall"] = 1300,
-	}, -- [12]
-	{
-		["Armies of Legionfall"] = 950,
 	}, -- [13]
 	{
-		["Armies of Legionfall"] = 2150,
+		["Armies of Legionfall"] = 950,
 	}, -- [14]
+	{
+		["Armies of Legionfall"] = 2150,
+	}, -- [15]
 	{
 		["Darkmoon Faire"] = 1750,
 		["Armies of Legionfall"] = 1125,
-	}, -- [15]
-	{
-		["Armies of Legionfall"] = 450,
 	}, -- [16]
 	{
-		["Armies of Legionfall"] = 375,
+		["Armies of Legionfall"] = 450,
 	}, -- [17]
 	{
-		["Armies of Legionfall"] = 625,
+		["Armies of Legionfall"] = 375,
 	}, -- [18]
 	{
-		["Armies of Legionfall"] = 300,
+		["Armies of Legionfall"] = 625,
 	}, -- [19]
 	{
-		["Armies of Legionfall"] = 975,
+		["Armies of Legionfall"] = 300,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
@@ -300,9 +303,9 @@ FactionAddictConfigIsInactive = {
 	[1388] = false,
 	[1279] = false,
 	[69] = false,
-	[81] = false,
+	[1280] = false,
 	[1216] = false,
-	[2045] = false,
+	[81] = false,
 	[70] = false,
 	[1090] = false,
 	[93] = false,
@@ -328,7 +331,7 @@ FactionAddictConfigIsInactive = {
 	[1732] = false,
 	[1031] = false,
 	[932] = false,
-	[1280] = false,
+	[2045] = false,
 	[1733] = false,
 	[1847] = false,
 	[1351] = false,

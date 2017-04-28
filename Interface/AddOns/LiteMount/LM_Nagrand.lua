@@ -17,14 +17,20 @@ local FactionRequirements = {
 }
 
 function LM_Nagrand:Get(spellID)
-    local m = LM_Spell.Get(self, spellID)
+    local m = LM_Spell.Get(self, spellID, LM_FLAG.NAGRAND)
 
     if m then
-        m.flags = LM_FLAG.NAGRAND
+        local playerFaction = UnitFactionGroup("player")
+        m.isCollected = ( UnitLevel("player") >= 100 )
+        m.isFiltered = ( playerFaction ~= FactionRequirements[spellID] )
         m.needsFaction = FactionRequirements[spellID]
     end
 
     return m
+end
+
+function LM_Nagrand:Refresh()
+    self.isCollected = ( UnitLevel("player") >= 100 )
 end
 
 function LM_Nagrand:SetupActionButton(button)
@@ -41,7 +47,8 @@ function LM_Nagrand:IsCastable()
     local baseSpellName = GetSpellInfo(baseSpellID)
 
     local id = select(7, GetSpellInfo(baseSpellName))
-    if id ~= self.spellID then return false end
-    if not IsUsableSpell(baseSpellID) then return false end
-    return LM_Mount.IsCastable(self)
+    if id == self.spellID and IsUsableSpell(baseSpellID) then
+        return LM_Mount.IsCastable(self)
+    end
+    return false
 end
