@@ -2,7 +2,7 @@
 TukuiData = {
 	["Gold"] = {
 		["Sisters of Elune"] = {
-			["Bracnar"] = 10093638979,
+			["Bracnar"] = 10050638390,
 			["Ghiaccioli"] = 557311494,
 			["Mandelbrot"] = 1695245,
 			["Torinar"] = 120507701,
@@ -13,7 +13,7 @@ TukuiData = {
 			["Belrath"] = 101901185,
 			["Leanara"] = 122987790,
 			["Sanjuri"] = 11460,
-			["Clothgar"] = 38879227421,
+			["Clothgar"] = 39638309337,
 		},
 		["Turalyon"] = {
 			["Guldahka"] = 2000,

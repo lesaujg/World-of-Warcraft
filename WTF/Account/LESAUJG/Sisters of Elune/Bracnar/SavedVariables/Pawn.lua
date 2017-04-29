@@ -17,7 +17,7 @@ PawnOptions = {
 					["Type"] = "Iron",
 				}, -- [2]
 				{
-					["ItemLevel"] = 46,
+					["ItemLevel"] = 49,
 					["Type"] = "Blood",
 				}, -- [3]
 			},

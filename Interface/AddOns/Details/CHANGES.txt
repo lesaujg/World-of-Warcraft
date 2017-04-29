@@ -1,7 +1,7 @@
-changeset:   602:ceed3f6a4911
-tag:         v7.2.0.3512.116
+changeset:   604:30fc3fc21779
+tag:         v7.2.0.3512-2.116
 user:        Tercio
-date:        Thu Apr 27 16:23:29 2017 -0300
-summary:     - added back the localizations on ToC file.
+date:        Fri Apr 28 18:30:58 2017 -0300
+summary:     - ptr compatibility with Enum.PowerType.
 
 
