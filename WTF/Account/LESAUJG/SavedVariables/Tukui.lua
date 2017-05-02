@@ -9,11 +9,11 @@ TukuiData = {
 			["Orig"] = 124595949,
 			["Herbinator"] = 5458915,
 			["Uldaris"] = 1594452877,
-			["Galinar"] = 839192144,
+			["Galinar"] = 858173229,
 			["Belrath"] = 101901185,
 			["Leanara"] = 122987790,
 			["Sanjuri"] = 11460,
-			["Clothgar"] = 39304036553,
+			["Clothgar"] = 38657775911,
 		},
 		["Turalyon"] = {
 			["Guldahka"] = 2000,
