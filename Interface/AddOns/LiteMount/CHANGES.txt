@@ -1,16 +1,12 @@
-tag 492b714d1bfb15650cf808d50edb3694e13111ba 7.2.8
+tag 340a2013b3c4277ebf15b46f565d589301b96ca8 7.2.9
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Thu Apr 27 08:04:50 2017 +1000
+Date:	Sat Apr 29 12:04:02 2017 +1000
 
-Tagging 7.2.8
+Now 100% frFR translated! Woohoo!
 
- - Fix Nagrand mounts
- - Continue optimizing a bit.
- - Locale updates for all locales.
-
-commit 87fd736f3127ab81bd2d0bdc65fcb88f4565b6fe
+commit 8b9b8e1b7687b1ec69ecb1dc3baefb95c4fb91b4
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Apr 25 00:35:55 2017 +1000
+Date:   Thu Apr 27 17:33:59 2017 +1000
 
-    Unnecessarily remove an unnecessary argument to SeenMount()
+    Import LM_Conditions from old development work, not plumbed yet.
 

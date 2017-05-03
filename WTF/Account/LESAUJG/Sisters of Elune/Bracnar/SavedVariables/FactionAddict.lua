@@ -25,91 +25,97 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
+		["date"] = "Wednesday 5/3",
+		["rows"] = 4,
+	}, -- [1]
+	{
 		["date"] = "Sunday 4/30",
 		["rows"] = 2,
-	}, -- [1]
+	}, -- [2]
 	{
 		["date"] = "Friday 4/28",
 		["rows"] = 6,
-	}, -- [2]
+	}, -- [3]
 	{
 		["date"] = "Thursday 4/27",
 		["rows"] = 4,
-	}, -- [3]
+	}, -- [4]
 	{
 		["date"] = "Tuesday 4/25",
 		["rows"] = 2,
-	}, -- [4]
+	}, -- [5]
 	{
 		["date"] = "Sunday 4/23",
 		["rows"] = 1,
-	}, -- [5]
+	}, -- [6]
 	{
 		["date"] = "Saturday 4/22",
 		["rows"] = 1,
-	}, -- [6]
+	}, -- [7]
 	{
 		["date"] = "Thursday 4/20",
 		["rows"] = 1,
-	}, -- [7]
+	}, -- [8]
 	{
 		["date"] = "Tuesday 4/18",
 		["rows"] = 1,
-	}, -- [8]
+	}, -- [9]
 	{
 		["date"] = "Monday 4/17",
 		["rows"] = 3,
-	}, -- [9]
+	}, -- [10]
 	{
 		["date"] = "Sunday 4/16",
 		["rows"] = 1,
-	}, -- [10]
+	}, -- [11]
 	{
 		["date"] = "Thursday 4/13",
 		["rows"] = 1,
-	}, -- [11]
+	}, -- [12]
 	{
 		["date"] = "Wednesday 4/12",
 		["rows"] = 1,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Tuesday 4/11",
 		["rows"] = 2,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Monday 4/10",
 		["rows"] = 2,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Sunday 4/9",
 		["rows"] = 1,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Saturday 4/8",
 		["rows"] = 1,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Friday 4/7",
 		["rows"] = 2,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Thursday 4/6",
 		["rows"] = 1,
-	}, -- [18]
-	{
-		["date"] = "Tuesday 4/4",
-		["rows"] = 1,
 	}, -- [19]
 	{
-		["date"] = "Monday 4/3",
+		["date"] = "Tuesday 4/4",
 		["rows"] = 1,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
 	{
+		["The Wardens"] = 300,
+		["Armies of Legionfall"] = 2025,
+		["The Nightfallen"] = 2150,
+		["Court of Farondis"] = 2200,
+	}, -- [1]
+	{
 		["Armies of Legionfall"] = 250,
 		["Highmountain Tribe"] = 500,
-	}, -- [1]
+	}, -- [2]
 	{
 		["The Nightfallen"] = 325,
 		["Armies of Legionfall"] = 500,
@@ -117,69 +123,66 @@ FactionAddictLogEntries = {
 		["Highmountain Tribe"] = 150,
 		["The Wardens"] = 2125,
 		["Dreamweavers"] = 325,
-	}, -- [2]
+	}, -- [3]
 	{
 		["The Wardens"] = 150,
 		["Armies of Legionfall"] = 1553,
 		["Valarjar"] = 1900,
 		["Highmountain Tribe"] = 150,
-	}, -- [3]
+	}, -- [4]
 	{
 		["Armies of Legionfall"] = 2962,
 		["Sha'tari Defense"] = 806,
-	}, -- [4]
-	{
-		["Armies of Legionfall"] = 700,
 	}, -- [5]
 	{
-		["Armies of Legionfall"] = 1888,
+		["Armies of Legionfall"] = 700,
 	}, -- [6]
 	{
-		["Armies of Legionfall"] = 900,
+		["Armies of Legionfall"] = 1888,
 	}, -- [7]
 	{
-		["Armies of Legionfall"] = 1600,
+		["Armies of Legionfall"] = 900,
 	}, -- [8]
+	{
+		["Armies of Legionfall"] = 1600,
+	}, -- [9]
 	{
 		["Sha'tari Defense"] = 557,
 		["Shado-Pan Assault"] = 1321,
 		["Armies of Legionfall"] = 1325,
-	}, -- [9]
-	{
-		["Armies of Legionfall"] = 1150,
 	}, -- [10]
 	{
-		["Armies of Legionfall"] = 250,
+		["Armies of Legionfall"] = 1150,
 	}, -- [11]
 	{
-		["Armies of Legionfall"] = 1650,
+		["Armies of Legionfall"] = 250,
 	}, -- [12]
+	{
+		["Armies of Legionfall"] = 1650,
+	}, -- [13]
 	{
 		["Sha'tari Defense"] = 684,
 		["Armies of Legionfall"] = 2775,
-	}, -- [13]
+	}, -- [14]
 	{
 		["Armies of Legionfall"] = 1300,
 		["Shado-Pan Assault"] = 1800,
-	}, -- [14]
-	{
-		["Armies of Legionfall"] = 950,
 	}, -- [15]
 	{
-		["Armies of Legionfall"] = 2150,
+		["Armies of Legionfall"] = 950,
 	}, -- [16]
+	{
+		["Armies of Legionfall"] = 2150,
+	}, -- [17]
 	{
 		["Darkmoon Faire"] = 1750,
 		["Armies of Legionfall"] = 1125,
-	}, -- [17]
-	{
-		["Armies of Legionfall"] = 450,
 	}, -- [18]
 	{
-		["Armies of Legionfall"] = 375,
+		["Armies of Legionfall"] = 450,
 	}, -- [19]
 	{
-		["Armies of Legionfall"] = 625,
+		["Armies of Legionfall"] = 375,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
@@ -309,9 +312,9 @@ FactionAddictConfigIsInactive = {
 	[1388] = false,
 	[1279] = false,
 	[69] = false,
-	[81] = false,
-	[1216] = false,
 	[2045] = false,
+	[1216] = false,
+	[1280] = false,
 	[70] = false,
 	[1345] = false,
 	[93] = false,
@@ -337,7 +340,7 @@ FactionAddictConfigIsInactive = {
 	[1732] = false,
 	[1031] = false,
 	[932] = false,
-	[1280] = false,
+	[81] = false,
 	[1733] = false,
 	[1690] = false,
 	[1351] = false,
