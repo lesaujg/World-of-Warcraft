@@ -130,12 +130,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Swarming Shadows",
 		},
-		[71446] = {
-			["school"] = 96,
+		[72132] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Blood-Queen Lana'thel",
+			["source"] = "Galinar",
 		},
 		[71465] = {
 			["school"] = 66,
@@ -145,13 +145,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Sister Svalna",
-		},
-		[72132] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Galinar",
 		},
 		[69649] = {
 			["school"] = 16,
@@ -177,6 +170,13 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Plague Scientist",
+		},
+		[71446] = {
+			["school"] = 96,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Blood-Queen Lana'thel",
 		},
 		[71726] = {
 			["school"] = 1,

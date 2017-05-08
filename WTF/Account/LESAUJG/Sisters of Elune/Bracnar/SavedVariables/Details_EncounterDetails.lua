@@ -2,97 +2,13 @@
 EncounterDetailsDB = {
 	["emotes"] = {
 		{
-			{
-				0.187000000005355, -- [1]
-				"The eggs in one of the lower nests begin to hatch!", -- [2]
-				"Incubater", -- [3]
-				3, -- [4]
-			}, -- [1]
-			["boss"] = "Ji-Kun",
+			["boss"] = "Ouro",
 		}, -- [1]
 		{
-			{
-				1.23999999999796, -- [1]
-				"I thought we were friend, buddy! You leave Hakmud stranded?", -- [2]
-				"Hakmud of Argus", -- [3]
-				4, -- [4]
-			}, -- [1]
-			{
-				11.0889999999999, -- [1]
-				"|TInterface\\Icons\\trade_archaeology_whitehydrafigurine:20|tMegaera begins to |cFFF00000|Hspell:139458|h[Rampage]|h|r!", -- [2]
-				"Megaera", -- [3]
-				1, -- [4]
-			}, -- [2]
-			{
-				31.7410000000018, -- [1]
-				"Megaera's rage subsides.", -- [2]
-				"Megaera", -- [3]
-				1, -- [4]
-			}, -- [3]
-			{
-				42.6920000000027, -- [1]
-				"|TInterface\\Icons\\trade_archaeology_whitehydrafigurine:20|tMegaera begins to |cFFF00000|Hspell:139458|h[Rampage]|h|r!", -- [2]
-				"Megaera", -- [3]
-				1, -- [4]
-			}, -- [4]
-			{
-				63.3269999999975, -- [1]
-				"Megaera's rage subsides.", -- [2]
-				"Megaera", -- [3]
-				1, -- [4]
-			}, -- [5]
-			{
-				75.4460000000036, -- [1]
-				"|TInterface\\Icons\\trade_archaeology_whitehydrafigurine:20|tMegaera begins to |cFFF00000|Hspell:139458|h[Rampage]|h|r!", -- [2]
-				"Megaera", -- [3]
-				1, -- [4]
-			}, -- [6]
-			{
-				96.0939999999973, -- [1]
-				"Megaera's rage subsides.", -- [2]
-				"Megaera", -- [3]
-				1, -- [4]
-			}, -- [7]
-			{
-				104.576000000001, -- [1]
-				"|TInterface\\Icons\\trade_archaeology_whitehydrafigurine:20|tMegaera begins to |cFFF00000|Hspell:139458|h[Rampage]|h|r!", -- [2]
-				"Megaera", -- [3]
-				1, -- [4]
-			}, -- [8]
-			{
-				125.190999999999, -- [1]
-				"Megaera's rage subsides.", -- [2]
-				"Megaera", -- [3]
-				1, -- [4]
-			}, -- [9]
-			{
-				132.394, -- [1]
-				"|TInterface\\Icons\\trade_archaeology_whitehydrafigurine:20|tMegaera begins to |cFFF00000|Hspell:139458|h[Rampage]|h|r!", -- [2]
-				"Megaera", -- [3]
-				1, -- [4]
-			}, -- [10]
-			{
-				153.125, -- [1]
-				"Megaera's rage subsides.", -- [2]
-				"Megaera", -- [3]
-				1, -- [4]
-			}, -- [11]
-			{
-				160.398000000001, -- [1]
-				"|TInterface\\Icons\\trade_archaeology_whitehydrafigurine:20|tMegaera begins to |cFFF00000|Hspell:139458|h[Rampage]|h|r!", -- [2]
-				"Megaera", -- [3]
-				1, -- [4]
-			}, -- [12]
-			{
-				181.042000000001, -- [1]
-				"Megaera's rage subsides.", -- [2]
-				"Megaera", -- [3]
-				1, -- [4]
-			}, -- [13]
-			["boss"] = "Megaera",
+			["boss"] = "Ouro",
 		}, -- [2]
 		{
-			["boss"] = "Council of Elders",
+			["boss"] = "Ouro",
 		}, -- [3]
 	},
 	["encounter_spells"] = {
@@ -1997,6 +1913,13 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Guarm",
+		},
+		[804] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Emperor Vek'lor",
 		},
 		[192007] = {
 			["school"] = 64,

@@ -26,7 +26,7 @@ FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
 		["date"] = "Sunday 5/7",
-		["rows"] = 2,
+		["rows"] = 8,
 	}, -- [1]
 	{
 		["date"] = "Saturday 5/6",
@@ -107,8 +107,14 @@ FactionAddictLogData = {
 }
 FactionAddictLogEntries = {
 	{
-		["Armies of Legionfall"] = 1375,
-		["Highmountain Tribe"] = 250,
+		["The Nightfallen"] = 2425,
+		["Sha'tari Defense"] = 668,
+		["Armies of Legionfall"] = 3325,
+		["Highmountain Tribe"] = 500,
+		["The Wardens"] = 850,
+		["Court of Farondis"] = 1800,
+		["Talonpriest Ishaal"] = 1330,
+		["Dreamweavers"] = 750,
 	}, -- [1]
 	{
 		["Valarjar"] = 900,
@@ -319,9 +325,9 @@ FactionAddictConfigIsInactive = {
 	[1388] = false,
 	[1279] = false,
 	[69] = false,
-	[1280] = false,
-	[1216] = false,
 	[81] = false,
+	[1216] = false,
+	[2045] = false,
 	[70] = false,
 	[1345] = false,
 	[93] = false,
@@ -347,7 +353,7 @@ FactionAddictConfigIsInactive = {
 	[1732] = false,
 	[1031] = false,
 	[932] = false,
-	[2045] = false,
+	[1280] = false,
 	[1733] = false,
 	[1690] = false,
 	[1351] = false,

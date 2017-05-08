@@ -192,11 +192,10 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Swarming Shadows",
 		},
-		[70123] = {
-			["school"] = 16,
+		[70117] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "Sindragosa",
 		},
@@ -209,21 +208,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sister Svalna",
 		},
-		[70117] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Sindragosa",
-		},
-		[70867] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Blood-Queen Lana'thel",
-		},
 		[153794] = {
 			["school"] = 1,
 			["token"] = {
@@ -232,13 +216,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Rukhran",
 		},
-		[69649] = {
-			["school"] = 16,
+		[153810] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Sindragosa",
+			["source"] = "Rukhran",
 		},
 		[71772] = {
 			["school"] = 1,
@@ -249,12 +233,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Blood-Queen Lana'thel",
 		},
-		[70985] = {
-			["school"] = 32,
+		[70123] = {
+			["school"] = 16,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Blood-Queen Lana'thel",
+			["source"] = "Sindragosa",
 		},
 		[70109] = {
 			["school"] = 1,
@@ -264,6 +249,21 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Sindragosa",
+		},
+		[70985] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Blood-Queen Lana'thel",
+		},
+		[70867] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Blood-Queen Lana'thel",
 		},
 		[71623] = {
 			["school"] = 1,
@@ -290,6 +290,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Blood-Queen Lana'thel",
 		},
+		[71446] = {
+			["school"] = 96,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Blood-Queen Lana'thel",
+		},
 		[69871] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -298,14 +305,6 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Plague Scientist",
-		},
-		[153810] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Rukhran",
 		},
 		[159382] = {
 			["school"] = 1,
@@ -317,19 +316,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Rukhran",
 		},
+		[69649] = {
+			["school"] = 16,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Sindragosa",
+		},
 		[72132] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 			["source"] = "Galinar",
-		},
-		[71446] = {
-			["school"] = 96,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Blood-Queen Lana'thel",
 		},
 		[153896] = {
 			["school"] = 1,
