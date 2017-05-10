@@ -25,87 +25,92 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
+		["date"] = "Tuesday 5/9",
+		["rows"] = 3,
+	}, -- [1]
+	{
 		["date"] = "Sunday 5/7",
 		["rows"] = 8,
-	}, -- [1]
+	}, -- [2]
 	{
 		["date"] = "Saturday 5/6",
 		["rows"] = 2,
-	}, -- [2]
+	}, -- [3]
 	{
 		["date"] = "Friday 5/5",
 		["rows"] = 6,
-	}, -- [3]
+	}, -- [4]
 	{
 		["date"] = "Thursday 5/4",
 		["rows"] = 1,
-	}, -- [4]
+	}, -- [5]
 	{
 		["date"] = "Wednesday 5/3",
 		["rows"] = 5,
-	}, -- [5]
+	}, -- [6]
 	{
 		["date"] = "Sunday 4/30",
 		["rows"] = 2,
-	}, -- [6]
+	}, -- [7]
 	{
 		["date"] = "Friday 4/28",
 		["rows"] = 6,
-	}, -- [7]
+	}, -- [8]
 	{
 		["date"] = "Thursday 4/27",
 		["rows"] = 4,
-	}, -- [8]
+	}, -- [9]
 	{
 		["date"] = "Tuesday 4/25",
 		["rows"] = 2,
-	}, -- [9]
+	}, -- [10]
 	{
 		["date"] = "Sunday 4/23",
 		["rows"] = 1,
-	}, -- [10]
+	}, -- [11]
 	{
 		["date"] = "Saturday 4/22",
 		["rows"] = 1,
-	}, -- [11]
+	}, -- [12]
 	{
 		["date"] = "Thursday 4/20",
 		["rows"] = 1,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Tuesday 4/18",
 		["rows"] = 1,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Monday 4/17",
 		["rows"] = 3,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Sunday 4/16",
 		["rows"] = 1,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Thursday 4/13",
 		["rows"] = 1,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Wednesday 4/12",
 		["rows"] = 1,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Tuesday 4/11",
 		["rows"] = 2,
-	}, -- [18]
+	}, -- [19]
 	{
 		["date"] = "Monday 4/10",
 		["rows"] = 2,
-	}, -- [19]
-	{
-		["date"] = "Sunday 4/9",
-		["rows"] = 1,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
+	{
+		["The Nightfallen"] = 1800,
+		["Armies of Legionfall"] = 2250,
+		["Highmountain Tribe"] = 250,
+	}, -- [1]
 	{
 		["The Nightfallen"] = 2425,
 		["Sha'tari Defense"] = 668,
@@ -115,11 +120,11 @@ FactionAddictLogEntries = {
 		["Court of Farondis"] = 1800,
 		["Talonpriest Ishaal"] = 1330,
 		["Dreamweavers"] = 750,
-	}, -- [1]
+	}, -- [2]
 	{
 		["Valarjar"] = 900,
 		["The Wardens"] = 450,
-	}, -- [2]
+	}, -- [3]
 	{
 		["Armies of Legionfall"] = 300,
 		["Valarjar"] = 1650,
@@ -127,21 +132,21 @@ FactionAddictLogEntries = {
 		["The Wardens"] = 2100,
 		["Court of Farondis"] = 225,
 		["Dreamweavers"] = 75,
-	}, -- [3]
+	}, -- [4]
 	{
 		["Armies of Legionfall"] = 2025,
-	}, -- [4]
+	}, -- [5]
 	{
 		["The Nightfallen"] = 2400,
 		["Armies of Legionfall"] = 3425,
 		["The Wardens"] = 625,
 		["Court of Farondis"] = 2200,
 		["Dreamweavers"] = 2400,
-	}, -- [5]
+	}, -- [6]
 	{
 		["Highmountain Tribe"] = 500,
 		["Armies of Legionfall"] = 250,
-	}, -- [6]
+	}, -- [7]
 	{
 		["The Nightfallen"] = 325,
 		["Armies of Legionfall"] = 500,
@@ -149,53 +154,50 @@ FactionAddictLogEntries = {
 		["Highmountain Tribe"] = 150,
 		["The Wardens"] = 2125,
 		["Dreamweavers"] = 325,
-	}, -- [7]
+	}, -- [8]
 	{
 		["The Wardens"] = 150,
 		["Armies of Legionfall"] = 1553,
 		["Valarjar"] = 1900,
 		["Highmountain Tribe"] = 150,
-	}, -- [8]
+	}, -- [9]
 	{
 		["Sha'tari Defense"] = 806,
 		["Armies of Legionfall"] = 2962,
-	}, -- [9]
-	{
-		["Armies of Legionfall"] = 700,
 	}, -- [10]
 	{
-		["Armies of Legionfall"] = 1888,
+		["Armies of Legionfall"] = 700,
 	}, -- [11]
 	{
-		["Armies of Legionfall"] = 900,
+		["Armies of Legionfall"] = 1888,
 	}, -- [12]
 	{
-		["Armies of Legionfall"] = 1600,
+		["Armies of Legionfall"] = 900,
 	}, -- [13]
+	{
+		["Armies of Legionfall"] = 1600,
+	}, -- [14]
 	{
 		["Sha'tari Defense"] = 557,
 		["Armies of Legionfall"] = 1325,
 		["Shado-Pan Assault"] = 1321,
-	}, -- [14]
-	{
-		["Armies of Legionfall"] = 1150,
 	}, -- [15]
 	{
-		["Armies of Legionfall"] = 250,
+		["Armies of Legionfall"] = 1150,
 	}, -- [16]
 	{
-		["Armies of Legionfall"] = 1650,
+		["Armies of Legionfall"] = 250,
 	}, -- [17]
+	{
+		["Armies of Legionfall"] = 1650,
+	}, -- [18]
 	{
 		["Armies of Legionfall"] = 2775,
 		["Sha'tari Defense"] = 684,
-	}, -- [18]
+	}, -- [19]
 	{
 		["Shado-Pan Assault"] = 1800,
 		["Armies of Legionfall"] = 1300,
-	}, -- [19]
-	{
-		["Armies of Legionfall"] = 950,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
@@ -325,9 +327,9 @@ FactionAddictConfigIsInactive = {
 	[1388] = false,
 	[1279] = false,
 	[69] = false,
-	[1280] = false,
+	[2045] = false,
 	[1216] = false,
-	[81] = false,
+	[1280] = false,
 	[70] = false,
 	[1090] = false,
 	[93] = false,
@@ -353,7 +355,7 @@ FactionAddictConfigIsInactive = {
 	[1732] = false,
 	[1031] = false,
 	[932] = false,
-	[2045] = false,
+	[81] = false,
 	[1733] = false,
 	[1847] = false,
 	[1351] = false,

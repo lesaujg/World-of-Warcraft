@@ -64,19 +64,19 @@ DBM_AllSavedOptions = {
 		["ForumsMessageShown"] = 11593,
 		["SpecialWarningFlashDura5"] = 1,
 		["WarningFontStyle"] = "None",
-		["HealthFrameLocked"] = false,
+		["SWarnNameInNote"] = true,
 		["InfoFrameY"] = 25.0000591278076,
 		["ShowSpecialWarnings"] = true,
-		["HUDSize1"] = 5,
+		["HealthFrameLocked"] = false,
 		["UseSoundChannel"] = "Master",
-		["SWarnNameInNote"] = true,
+		["WarningIconRight"] = true,
 		["NewsMessageShown"] = 9,
 		["ShowCountdownText"] = false,
 		["SpecialWarningDuration"] = 4,
 		["UseMasterVolume"] = true,
+		["WarningAlphabetical"] = true,
 		["HideQuestTooltips"] = true,
 		["PTCountThreshold"] = 5,
-		["WarningAlphabetical"] = true,
 		["HUDSize3"] = 5,
 		["HUDTexture3"] = "highlight",
 		["HUDAlpha2"] = 0.5,
@@ -110,13 +110,13 @@ DBM_AllSavedOptions = {
 		["DontShowPTText"] = false,
 		["RLReadyCheckSound"] = true,
 		["SpecialWarningSound5"] = "Sound\\Creature\\Loathstare\\Loa_Naxx_Aggro02.ogg",
-		["SpecialWarningFontSize2"] = 40,
+		["SWarnClassColor"] = true,
 		["SpecialWarningFlashCol5"] = {
 			0.2, -- [1]
 			1, -- [2]
 			1, -- [3]
 		},
-		["SWarnClassColor"] = true,
+		["SpecialWarningFontSize2"] = 40,
 		["FakeBWVersion"] = false,
 		["DebugLevel"] = 1,
 		["DontRestoreIcons"] = false,
@@ -152,11 +152,7 @@ DBM_AllSavedOptions = {
 		["SpecialWarningFlashDura4"] = 0.7,
 		["WarningDuration"] = 4,
 		["HUDTexture4"] = "highlight",
-		["SpecialWarningFlashCol3"] = {
-			1, -- [1]
-			0, -- [2]
-			0, -- [3]
-		},
+		["HUDSize4"] = 5,
 		["WarningColors"] = {
 			{
 				["r"] = 0.411764705882353,
@@ -179,7 +175,11 @@ DBM_AllSavedOptions = {
 				["b"] = 0.101960784313725,
 			}, -- [4]
 		},
-		["HUDSize4"] = 5,
+		["SpecialWarningFlashCol3"] = {
+			1, -- [1]
+			0, -- [2]
+			0, -- [3]
+		},
 		["SWarningAlphabetical"] = true,
 		["HUDAlphaOverride"] = false,
 		["BlockNoteShare"] = false,
@@ -196,7 +196,7 @@ DBM_AllSavedOptions = {
 		["FilterInterrupt"] = true,
 		["RangeFrameRadarPoint"] = "TOPRIGHT",
 		["SpecialWarningY"] = 75,
-		["SpecialWarningFlashRepeat3"] = true,
+		["ShowTranscriptorMessage"] = true,
 		["HUDTexture1"] = "highlight",
 		["RangeFrameUpdates"] = "Average",
 		["CountdownVoice3v2"] = "HoTS_R",
@@ -204,8 +204,8 @@ DBM_AllSavedOptions = {
 		["WarningY"] = 260,
 		["CustomSounds"] = 0,
 		["HideGarrisonUpdates"] = true,
-		["ShowTranscriptorMessage"] = true,
-		["RoleSpecAlert"] = true,
+		["SpecialWarningFlashRepeat3"] = true,
+		["MythicPlusChestTimer"] = true,
 		["WhisperStats"] = false,
 		["VoiceOverSpecW2"] = "None",
 		["ShortTimerText"] = true,
@@ -238,7 +238,7 @@ DBM_AllSavedOptions = {
 		["SpecialWarningFlashRepeat5"] = true,
 		["DisableStatusWhisper"] = false,
 		["HealthFrameGrowUp"] = false,
-		["MythicPlusChestTimer"] = true,
+		["RoleSpecAlert"] = true,
 		["RangeFrameFrames"] = "radar",
 		["DontPlayCountdowns"] = false,
 		["ShowBigBrotherOnCombatStart"] = false,
@@ -294,7 +294,7 @@ DBM_AllSavedOptions = {
 		["ShowWipeMessage"] = true,
 		["LogOnlyRaidBosses"] = false,
 		["StripServerName"] = true,
-		["WarningIconRight"] = true,
+		["HUDSize1"] = 5,
 		["WarningPoint"] = "CENTER",
 		["HPFrameX"] = 325.999816894531,
 		["ChosenVoicePack"] = "None",

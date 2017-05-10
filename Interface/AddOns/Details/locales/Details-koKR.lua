@@ -1586,3 +1586,4 @@ L["STRING_WIPE_ERROR1"] = "이미 전멸 신호를 보냈습니다."
 L["STRING_WIPE_ERROR2"] = "공격대 우두머리 전투 중이 아닙니다."
 L["STRING_WIPE_ERROR3"] = "우두머리 전투를 끝낼 수 없습니다."
 L["STRING_YES"] = "네"
+
