@@ -1,7 +1,7 @@
 --Easy Obliterate by Motig
 LoadAddOn("Blizzard_ObliterumUI")
 
-local addonVersion = 24
+local addonVersion = 26
 local currentPage = 1
 local selectedButton = nil
 local previousSelectedButton = nil
@@ -753,21 +753,26 @@ mainFrame:SetScript('OnEvent', function(self, event, ...)
         populateFrame()       
     elseif event == 'LOOT_OPENED' then
         local lootIcon, _, lootQuantity = GetLootSlotInfo(1)
-        if lootIcon == 1341655 then
+        if lootIcon == 1341655 or lootIcon == 1455891 or lootIcon == 1455894 then --pvp tokens
             lastItem.ashAmount = lootQuantity
             if mainFrame.autoLootCheck:GetChecked() then
                 LootSlot(1)
                 --CloseLoot()
-            end
+            end  
         end    
-    elseif event == 'CHAT_MSG_LOOT' then
+    elseif event == 'CHAT_MSG_LOOT' or event == 'CHAT_MSG_CURRENCY' then
         local lootstring = ...
-        local itemID = string.match(lootstring, "Hitem:(%d+):")
-        --local ashAmount = string.match(lootstring, "x(%d+).") or 1
-        if itemID == '136342' and not ashLooted then
-            ashLooted = true
-            updateAshStats(lastItem.itemID, lastItem.itemLevel, lastItem.ashAmount)
-            --Add to statistics
+        if event == 'CHAT_MSG_LOOT' then
+            local itemID = string.match(lootstring, "Hitem:(%d+):")
+            if itemID == '136342' and not ashLooted then
+                ashLooted = true
+                updateAshStats(lastItem.itemID, lastItem.itemLevel, lastItem.ashAmount)
+            end
+        elseif event == 'CHAT_MSG_CURRENCY' then
+            local currencyID = string.match(lootstring, "Hcurrency:(%d+)")
+            if (currencyID == '1356' or currencyID == '1357') and not ashLooted then
+                ashLooted = true
+            end
         end
     elseif event == 'OBLITERUM_FORGE_PENDING_ITEM_CHANGED' then
         if C_TradeSkillUI.GetPendingObliterateItemLink() then
@@ -862,6 +867,7 @@ ObliterumForgeFrame:SetScript('OnShow', function(self)
     mainFrame:RegisterEvent('BAG_UPDATE_DELAYED')
     mainFrame:RegisterEvent('LOOT_OPENED')
     mainFrame:RegisterEvent('CHAT_MSG_LOOT')
+    mainFrame:RegisterEvent('CHAT_MSG_CURRENCY')
     mainFrame:RegisterEvent('OBLITERUM_FORGE_PENDING_ITEM_CHANGED')
     mainFrame:RegisterUnitEvent('UNIT_SPELLCAST_SUCCEEDED', 'player')
     mainFrame:RegisterUnitEvent('UNIT_SPELLCAST_START', 'player')
@@ -895,6 +901,7 @@ ObliterumForgeFrame:SetScript('OnHide', function(self)
       mainFrame:UnregisterEvent('BAG_UPDATE_DELAYED')
       mainFrame:UnregisterEvent('LOOT_OPENED')
       mainFrame:UnregisterEvent('CHAT_MSG_LOOT')
+      mainFrame:UnregisterEvent('CHAT_MSG_CURRENCY')
       mainFrame:UnregisterEvent('OBLITERUM_FORGE_PENDING_ITEM_CHANGED')
       mainFrame:UnregisterEvent('UNIT_SPELLCAST_SUCCEEDED')
       mainFrame:UnregisterEvent('UNIT_SPELLCAST_START')

@@ -4,8 +4,8 @@ EasyObliterate_Data = {
 		[128541] = {
 			[110] = {
 				["minAsh"] = 100,
-				["obliterateCount"] = 171,
-				["averageAsh"] = 130.713450292398,
+				["obliterateCount"] = 271,
+				["averageAsh"] = 131.154981549816,
 				["maxAsh"] = 157,
 			},
 		},
@@ -18,7 +18,7 @@ EasyObliterate_Data = {
 			},
 		},
 	},
-	["addonVersion"] = 24,
+	["addonVersion"] = 26,
 	["addonSettings"] = {
 		["showAshStats"] = true,
 		["ashTextLocalized"] = "Obliterum Ash",

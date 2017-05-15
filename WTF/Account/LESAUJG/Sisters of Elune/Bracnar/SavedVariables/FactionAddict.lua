@@ -26,7 +26,7 @@ FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
 		["date"] = "Sunday 5/14",
-		["rows"] = 1,
+		["rows"] = 4,
 	}, -- [1]
 	{
 		["date"] = "Friday 5/12",
@@ -107,7 +107,10 @@ FactionAddictLogData = {
 }
 FactionAddictLogEntries = {
 	{
-		["Armies of Legionfall"] = 1050,
+		["The Nightfallen"] = 250,
+		["Armies of Legionfall"] = 2525,
+		["The Wardens"] = 450,
+		["Highmountain Tribe"] = 900,
 	}, -- [1]
 	{
 		["Court of Farondis"] = 250,
@@ -328,9 +331,9 @@ FactionAddictConfigIsInactive = {
 	[1388] = false,
 	[1279] = false,
 	[69] = false,
-	[81] = false,
-	[1216] = false,
 	[2045] = false,
+	[1216] = false,
+	[1280] = false,
 	[70] = false,
 	[1345] = false,
 	[93] = false,
@@ -356,7 +359,7 @@ FactionAddictConfigIsInactive = {
 	[1732] = false,
 	[1031] = false,
 	[932] = false,
-	[1280] = false,
+	[81] = false,
 	[1733] = false,
 	[1690] = false,
 	[1351] = false,

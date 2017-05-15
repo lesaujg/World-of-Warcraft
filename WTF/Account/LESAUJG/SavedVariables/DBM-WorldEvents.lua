@@ -1148,28 +1148,6 @@ DBMWorldEvents_AllSavedVars = {
 				["Timer42380targetTColor"] = 0,
 			}, -- [4]
 		},
-		["Brew"] = {
-			{
-				["NormalizeVolume"] = true,
-				["HealthFrame"] = false,
-				["Enabled"] = true,
-			}, -- [1]
-			{
-				["NormalizeVolume"] = true,
-				["HealthFrame"] = false,
-				["Enabled"] = true,
-			}, -- [2]
-			{
-				["NormalizeVolume"] = true,
-				["HealthFrame"] = false,
-				["Enabled"] = true,
-			}, -- [3]
-			{
-				["NormalizeVolume"] = true,
-				["HealthFrame"] = false,
-				["Enabled"] = true,
-			}, -- [4]
-		},
 		["Omen"] = {
 			{
 				["Enabled"] = true,
@@ -1222,6 +1200,28 @@ DBMWorldEvents_AllSavedVars = {
 				["SpecWarn26540move"] = true,
 				["Timer104903cdTColor"] = 6,
 				["SpecWarn26540moveSWSound"] = 1,
+			}, -- [4]
+		},
+		["Brew"] = {
+			{
+				["NormalizeVolume"] = true,
+				["HealthFrame"] = false,
+				["Enabled"] = true,
+			}, -- [1]
+			{
+				["NormalizeVolume"] = true,
+				["HealthFrame"] = false,
+				["Enabled"] = true,
+			}, -- [2]
+			{
+				["NormalizeVolume"] = true,
+				["HealthFrame"] = false,
+				["Enabled"] = true,
+			}, -- [3]
+			{
+				["NormalizeVolume"] = true,
+				["HealthFrame"] = false,
+				["Enabled"] = true,
 			}, -- [4]
 		},
 	},
@@ -2705,8 +2705,8 @@ DBMWorldEvents_AllSavedVars = {
 				["Timer218639cd"] = true,
 				["Enabled"] = true,
 				["SpecWarn218657moveaway"] = true,
-				["SpecWarn219110runSWSound"] = 4,
 				["announce219469spell"] = true,
+				["SpecWarn219110runSWSound"] = 4,
 				["SpecWarn216916dodgeSWSound"] = 2,
 				["SpecWarn218639dodgeSWSound"] = 2,
 				["SpecWarn207576move"] = true,
