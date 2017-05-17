@@ -26,7 +26,7 @@ FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
 		["date"] = "Tuesday 5/16",
-		["rows"] = 2,
+		["rows"] = 6,
 	}, -- [1]
 	{
 		["date"] = "Sunday 5/14",
@@ -107,8 +107,12 @@ FactionAddictLogData = {
 }
 FactionAddictLogEntries = {
 	{
-		["Valarjar"] = 500,
-		["The Wardens"] = 250,
+		["Armies of Legionfall"] = 2100,
+		["Valarjar"] = 2300,
+		["Highmountain Tribe"] = 1400,
+		["The Wardens"] = 3350,
+		["Court of Farondis"] = 750,
+		["Dreamweavers"] = 725,
 	}, -- [1]
 	{
 		["The Nightfallen"] = 250,
