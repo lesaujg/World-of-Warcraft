@@ -63,7 +63,7 @@ local RefreshEvents = {
 
 function LM_PlayerMounts:Initialize()
 
-    self.list = LM_MountList:New()
+    self.list = LM_ShuffleList:New()
 
     self:AddJournalMounts()
     self:AddSpellMounts()
@@ -143,11 +143,13 @@ function LM_PlayerMounts:GetAvailableMounts(flags)
 end
 
 function LM_PlayerMounts:GetMountFromUnitAura(unitid)
+    local buffs = { }
     for i = 1,BUFF_MAX_DISPLAY do
         local aura = UnitAura(unitid, i)
-        local function match(m) return m.isCollected and m.name == aura end
-        return self:Find(match)
+        if aura then tinsert(buffs, aura) end
     end
+    local function match(m) return m.isCollected and tContains(buffs, m.name) end
+    return self:Find(match)
 end
 
 function LM_PlayerMounts:GetMountByName(name)

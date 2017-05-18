@@ -1,12 +1,16 @@
-tag 340a2013b3c4277ebf15b46f565d589301b96ca8 7.2.9
+tag b68ea1fa206ec5e7d34a347402364a0003926ca3 7.2.10
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Sat Apr 29 12:04:02 2017 +1000
+Date:	Thu May 18 10:10:01 2017 +1000
 
-Now 100% frFR translated! Woohoo!
+Tagging 7.2.10
+Fix slash comamnds.
+Update localizations.
+Add UI toggle for debugging.
+Fix copying target's mount.
 
-commit 8b9b8e1b7687b1ec69ecb1dc3baefb95c4fb91b4
+commit f2cb8e5e45c8666f56dcbb4e76d2af05727046d3
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Apr 27 17:33:59 2017 +1000
+Date:   Thu May 18 08:44:12 2017 +1000
 
-    Import LM_Conditions from old development work, not plumbed yet.
+    Trailing spaces remove.
 

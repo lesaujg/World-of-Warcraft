@@ -173,7 +173,6 @@ Notes To Myself
     Utility stuff:
         * Print.lua
             LM_Print(msg) -- prints into current active chat frame
-            LM_SetDebug(onoff) -- turn debugging on/off
             LM_Debug(msg) -- prints a debug message if debugging is on
             LM_Warning(msg) -- print a msg into the UIErrorsFrame
         * AutoEventFrame.lua
@@ -181,6 +180,16 @@ Notes To Myself
                 * takes the same args as CreateFrame
                 * Adds an OnEvent handler that calls a function named
                   for the event. E.g., MyFrame:PLAYER_LOGIN().
+        * ShuffleList.lua
+            Utility class of list with shuffle/search/random, used by LM_PlayerMounts.
+
+            LM_ShuffleList:New()
+            LM_ShuffleList:Iterate()
+            LM_ShuffleList:Shuffle()
+            LM_ShuffleList:Random()
+            LM_ShuffleList:Search(matchfunc)
+            LM_ShuffleList:Find(matchfunc)
+
 
     Keybinding stuff:
         * Bindings.xml
@@ -244,16 +253,6 @@ Notes To Myself
 
         * LM_*.lua
             Individual mount type classes.
-
-        * MountList.lua
-            Class for a list of mounts, used by LM_PlayerMounts.
-
-            LM_MountList:New()
-            LM_MountList:Iterate()
-            LM_MountList:Shuffle()
-            LM_MountList:Random()
-            LM_MountList:Sort()
-            LM_MountList:Search(matchfunc)
 
         * SlashCommand.lua
             Just what you expect.
