@@ -15,114 +15,120 @@ FactionAddictConfig = {
 	["CB_OPTION_HIDEINACTIVE_V2"] = true,
 	["CB_CATEGORY_WOTLK"] = true,
 	["CB_STANDING_NEUTRAL0"] = true,
-	["CB_OPTION_AUTOBAR"] = true,
-	["CB_FILTER_SHOW_HO"] = true,
+	["CB_STANDING_HATED"] = true,
+	["CB_FILTER_SHOW_AO"] = true,
 	["CB_CATEGORY_WOD"] = true,
 	["CB_CATEGORY_LG"] = true,
-	["CB_FILTER_SHOW_AO"] = true,
-	["CB_STANDING_HATED"] = true,
+	["CB_FILTER_SHOW_HO"] = true,
+	["CB_OPTION_AUTOBAR"] = true,
 }
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
+		["date"] = "Monday 5/22",
+		["rows"] = 4,
+	}, -- [1]
+	{
 		["date"] = "Saturday 5/20",
 		["rows"] = 2,
-	}, -- [1]
+	}, -- [2]
 	{
 		["date"] = "Thursday 5/18",
 		["rows"] = 4,
-	}, -- [2]
+	}, -- [3]
 	{
 		["date"] = "Wednesday 5/17",
 		["rows"] = 5,
-	}, -- [3]
+	}, -- [4]
 	{
 		["date"] = "Tuesday 5/16",
 		["rows"] = 6,
-	}, -- [4]
+	}, -- [5]
 	{
 		["date"] = "Sunday 5/14",
 		["rows"] = 4,
-	}, -- [5]
+	}, -- [6]
 	{
 		["date"] = "Friday 5/12",
 		["rows"] = 2,
-	}, -- [6]
+	}, -- [7]
 	{
 		["date"] = "Wednesday 5/10",
 		["rows"] = 3,
-	}, -- [7]
+	}, -- [8]
 	{
 		["date"] = "Tuesday 5/9",
 		["rows"] = 3,
-	}, -- [8]
+	}, -- [9]
 	{
 		["date"] = "Sunday 5/7",
 		["rows"] = 8,
-	}, -- [9]
+	}, -- [10]
 	{
 		["date"] = "Saturday 5/6",
 		["rows"] = 2,
-	}, -- [10]
+	}, -- [11]
 	{
 		["date"] = "Friday 5/5",
 		["rows"] = 6,
-	}, -- [11]
+	}, -- [12]
 	{
 		["date"] = "Thursday 5/4",
 		["rows"] = 1,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Wednesday 5/3",
 		["rows"] = 5,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Sunday 4/30",
 		["rows"] = 2,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Friday 4/28",
 		["rows"] = 6,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Thursday 4/27",
 		["rows"] = 4,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Tuesday 4/25",
 		["rows"] = 2,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Sunday 4/23",
 		["rows"] = 1,
-	}, -- [18]
-	{
-		["date"] = "Saturday 4/22",
-		["rows"] = 1,
 	}, -- [19]
 	{
-		["date"] = "Thursday 4/20",
+		["date"] = "Saturday 4/22",
 		["rows"] = 1,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
 	{
+		["The Wardens"] = 2225,
+		["Court of Farondis"] = 2650,
+		["Armies of Legionfall"] = 500,
+		["Dreamweavers"] = 150,
+	}, -- [1]
+	{
 		["Valarjar"] = 500,
 		["Armies of Legionfall"] = 250,
-	}, -- [1]
+	}, -- [2]
 	{
 		["The Wardens"] = 550,
 		["Armies of Legionfall"] = 1650,
 		["Valarjar"] = 675,
 		["The Nightfallen"] = 700,
-	}, -- [2]
+	}, -- [3]
 	{
 		["The Nightfallen"] = 500,
 		["Armies of Legionfall"] = 1575,
 		["Valarjar"] = 150,
 		["The Wardens"] = 150,
 		["Dreamweavers"] = 1500,
-	}, -- [3]
+	}, -- [4]
 	{
 		["Armies of Legionfall"] = 2100,
 		["Valarjar"] = 2300,
@@ -130,27 +136,27 @@ FactionAddictLogEntries = {
 		["The Wardens"] = 3350,
 		["Court of Farondis"] = 750,
 		["Dreamweavers"] = 725,
-	}, -- [4]
+	}, -- [5]
 	{
 		["The Nightfallen"] = 250,
 		["Armies of Legionfall"] = 2525,
 		["The Wardens"] = 450,
 		["Highmountain Tribe"] = 900,
-	}, -- [5]
-	{
-		["Court of Farondis"] = 250,
-		["Armies of Legionfall"] = 225,
 	}, -- [6]
+	{
+		["Armies of Legionfall"] = 225,
+		["Court of Farondis"] = 250,
+	}, -- [7]
 	{
 		["The Wardens"] = 725,
 		["Court of Farondis"] = 550,
 		["Dreamweavers"] = 2350,
-	}, -- [7]
+	}, -- [8]
 	{
 		["The Nightfallen"] = 1800,
 		["Armies of Legionfall"] = 2250,
 		["Highmountain Tribe"] = 250,
-	}, -- [8]
+	}, -- [9]
 	{
 		["The Nightfallen"] = 2425,
 		["Sha'tari Defense"] = 668,
@@ -160,11 +166,11 @@ FactionAddictLogEntries = {
 		["Court of Farondis"] = 1800,
 		["Talonpriest Ishaal"] = 1330,
 		["Dreamweavers"] = 750,
-	}, -- [9]
+	}, -- [10]
 	{
 		["Valarjar"] = 900,
 		["The Wardens"] = 450,
-	}, -- [10]
+	}, -- [11]
 	{
 		["Armies of Legionfall"] = 300,
 		["Valarjar"] = 1650,
@@ -172,21 +178,21 @@ FactionAddictLogEntries = {
 		["The Wardens"] = 2100,
 		["Court of Farondis"] = 225,
 		["Dreamweavers"] = 75,
-	}, -- [11]
+	}, -- [12]
 	{
 		["Armies of Legionfall"] = 2025,
-	}, -- [12]
+	}, -- [13]
 	{
 		["The Nightfallen"] = 2400,
 		["Armies of Legionfall"] = 3425,
 		["The Wardens"] = 625,
 		["Court of Farondis"] = 2200,
 		["Dreamweavers"] = 2400,
-	}, -- [13]
-	{
-		["Armies of Legionfall"] = 250,
-		["Highmountain Tribe"] = 500,
 	}, -- [14]
+	{
+		["Highmountain Tribe"] = 500,
+		["Armies of Legionfall"] = 250,
+	}, -- [15]
 	{
 		["The Nightfallen"] = 325,
 		["Armies of Legionfall"] = 500,
@@ -194,25 +200,22 @@ FactionAddictLogEntries = {
 		["Highmountain Tribe"] = 150,
 		["The Wardens"] = 2125,
 		["Dreamweavers"] = 325,
-	}, -- [15]
+	}, -- [16]
 	{
 		["The Wardens"] = 150,
 		["Armies of Legionfall"] = 1553,
 		["Valarjar"] = 1900,
 		["Highmountain Tribe"] = 150,
-	}, -- [16]
-	{
-		["Armies of Legionfall"] = 2962,
-		["Sha'tari Defense"] = 806,
 	}, -- [17]
 	{
-		["Armies of Legionfall"] = 700,
+		["Sha'tari Defense"] = 806,
+		["Armies of Legionfall"] = 2962,
 	}, -- [18]
 	{
-		["Armies of Legionfall"] = 1888,
+		["Armies of Legionfall"] = 700,
 	}, -- [19]
 	{
-		["Armies of Legionfall"] = 900,
+		["Armies of Legionfall"] = 1888,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
@@ -298,39 +301,39 @@ FactionAddictConfigIsInactive = {
 	[510] = false,
 	[1204] = false,
 	[1077] = false,
-	[2101] = false,
+	[970] = false,
 	[1715] = false,
 	[1269] = false,
-	[2100] = false,
+	[1815] = false,
 	[2099] = false,
 	[1716] = false,
 	[1270] = false,
-	[2098] = false,
+	[730] = false,
 	[2097] = false,
 	[1717] = false,
 	[1271] = false,
-	[2018] = false,
-	[1098] = false,
+	[1681] = false,
+	[1353] = false,
 	[1718] = false,
 	[1272] = false,
-	[1708] = false,
+	[1358] = false,
 	[1888] = false,
 	[989] = false,
 	[1273] = false,
 	[1337] = false,
 	[1900] = false,
 	[1975] = false,
-	[933] = false,
+	[1352] = false,
 	[1848] = false,
-	[1104] = false,
+	[1359] = false,
 	[990] = false,
 	[1275] = false,
 	[1849] = false,
 	[576] = false,
-	[1085] = false,
-	[1276] = false,
 	[1850] = false,
-	[1682] = false,
+	[1276] = false,
+	[1085] = false,
+	[1710] = false,
 	[369] = false,
 	[1277] = false,
 	[1341] = false,
@@ -338,54 +341,54 @@ FactionAddictConfigIsInactive = {
 	[609] = false,
 	[1278] = false,
 	[1711] = false,
-	[1847] = false,
+	[1690] = false,
 	[1388] = false,
 	[1279] = false,
 	[69] = false,
-	[81] = false,
-	[1216] = false,
 	[2045] = false,
+	[1216] = false,
+	[1280] = false,
 	[70] = false,
-	[1345] = false,
+	[1090] = false,
 	[93] = false,
 	[1281] = false,
-	[1090] = false,
+	[1345] = false,
 	[270] = false,
-	[1091] = false,
-	[1282] = false,
 	[930] = false,
-	[1859] = false,
+	[1282] = false,
+	[1091] = false,
+	[1094] = false,
 	[1984] = false,
 	[1283] = false,
-	[1133] = false,
+	[1714] = false,
 	[1156] = false,
 	[1174] = false,
-	[1376] = false,
-	[1738] = false,
 	[1739] = false,
+	[1738] = false,
+	[1376] = false,
 	[1731] = false,
-	[1714] = false,
-	[1094] = false,
+	[1133] = false,
+	[1859] = false,
 	[1158] = false,
 	[1732] = false,
 	[1031] = false,
 	[932] = false,
-	[1280] = false,
+	[81] = false,
 	[1733] = false,
-	[1690] = false,
+	[1847] = false,
 	[1351] = false,
-	[1710] = false,
+	[1682] = false,
 	[1989] = false,
-	[1359] = false,
-	[1352] = false,
+	[1104] = false,
+	[933] = false,
 	[1416] = false,
 	[1735] = false,
-	[1358] = false,
-	[1353] = false,
-	[1681] = false,
+	[1708] = false,
+	[1098] = false,
+	[2018] = false,
 	[1736] = false,
-	[730] = false,
+	[2098] = false,
 	[934] = false,
-	[1815] = false,
-	[970] = false,
+	[2100] = false,
+	[2101] = false,
 }

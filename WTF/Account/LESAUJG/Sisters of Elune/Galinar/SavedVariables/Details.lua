@@ -19,27 +19,26 @@ _detalhes_database = {
 		},
 	},
 	["ignore_nicktag"] = false,
-	["nick_tag_cache"] = {
-		["nextreset"] = 1496098966,
-		["last_version"] = 8,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
-	["combat_counter"] = 246,
-	["savedbuffs"] = {
-	},
+	["combat_counter"] = 248,
+	["last_encounter"] = "Madness of Deathwing",
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
+			["enabled"] = true,
 			["showamount"] = false,
-			["animate"] = false,
 			["useplayercolor"] = false,
-			["useclasscolors"] = false,
 			["author"] = "Details! Team",
+			["useclasscolors"] = false,
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["enabled"] = true,
+			["animate"] = false,
 		},
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["lasttry"] = {
@@ -47,20 +46,20 @@ _detalhes_database = {
 			["annouce"] = true,
 			["dpshistory"] = {
 			},
-			["author"] = "Details! Team",
-			["dps"] = 0,
-			["level"] = 1,
 			["enabled"] = true,
+			["author"] = "Details! Team",
+			["level"] = 1,
+			["dps"] = 0,
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = true,
-			["tank_block_texture"] = "Details Serenity",
 			["tank_block_color"] = {
 				0.24705882, -- [1]
 				0.0039215, -- [2]
 				0, -- [3]
 				0.8, -- [4]
 			},
+			["tank_block_texture"] = "Details Serenity",
 			["show_inc_bars"] = false,
 			["author"] = "Details! Team",
 			["first_run"] = false,
@@ -73,27 +72,16 @@ _detalhes_database = {
 			["max_emote_segments"] = 3,
 			["author"] = "Details! Team",
 			["window_scale"] = 1,
-			["hide_on_combat"] = false,
-			["show_icon"] = 5,
-			["opened"] = 0,
 			["encounter_timers_dbm"] = {
 			},
+			["show_icon"] = 5,
+			["opened"] = 0,
+			["hide_on_combat"] = false,
 		},
-		["DETAILS_PLUGIN_TIME_ATTACK"] = {
+		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
-			["realm_last_shown"] = 40,
-			["saved_as_anonymous"] = true,
-			["recently_as_anonymous"] = true,
-			["dps"] = 0,
-			["disable_sharing"] = false,
-			["history"] = {
-			},
-			["time"] = 40,
-			["history_lastindex"] = 0,
-			["realm_lastamt"] = 0,
-			["realm_history"] = {
-			},
 			["author"] = "Details! Team",
+			["SpellBarsShowType"] = 1,
 		},
 		["DETAILS_PLUGIN_RAIDCHECK"] = {
 			["enabled"] = true,
@@ -106,37 +94,36 @@ _detalhes_database = {
 			["pre_pot_tanks"] = false,
 			["food_tier3"] = true,
 		},
-		["DETAILS_PLUGIN_DPS_TUNING"] = {
+		["DETAILS_PLUGIN_TIME_ATTACK"] = {
 			["enabled"] = true,
+			["realm_last_shown"] = 40,
+			["saved_as_anonymous"] = true,
+			["recently_as_anonymous"] = true,
+			["dps"] = 0,
+			["disable_sharing"] = false,
+			["history"] = {
+			},
+			["time"] = 40,
+			["history_lastindex"] = 0,
 			["author"] = "Details! Team",
-			["SpellBarsShowType"] = 1,
+			["realm_history"] = {
+			},
+			["realm_lastamt"] = 0,
 		},
 	},
-	["last_day"] = "16",
+	["savedbuffs"] = {
+	},
 	["character_data"] = {
-		["logons"] = 23,
+		["logons"] = 24,
 	},
-	["SoloTablesSaved"] = {
-		["LastSelected"] = "DETAILS_PLUGIN_DAMAGE_RANK",
-		["Mode"] = 1,
-	},
+	["last_day"] = "22",
 	["force_font_outline"] = "",
 	["tabela_instancias"] = {
 	},
 	["combat_id"] = 140,
 	["savedStyles"] = {
 	},
-	["cached_talents"] = {
-		["Player-1169-06EEB51C"] = {
-			22484, -- [1]
-			22604, -- [2]
-			22645, -- [3]
-			22558, -- [4]
-			22433, -- [5]
-			21811, -- [6]
-			22705, -- [7]
-		},
-	},
+	["last_version"] = "v7.2.0.3673",
 	["last_instance_time"] = 1494031126,
 	["announce_deaths"] = {
 		["enabled"] = false,
@@ -184,21 +171,21 @@ _detalhes_database = {
 				0, -- [1]
 				[0] = 0,
 				["alternatepower"] = 0,
-				[6] = 0,
 				[3] = 0,
+				[6] = 0,
 			}, -- [3]
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["dead"] = 0,
-				["cc_break"] = 0,
+				["cooldowns_defensive"] = 0,
+				["dispell"] = 0,
 				["interrupt"] = 0,
 				["debuff_uptime"] = 0,
-				["dispell"] = 0,
-				["cooldowns_defensive"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
 			}, -- [4]
-			["voidzone_damage"] = 0,
 			["frags_total"] = 0,
+			["voidzone_damage"] = 0,
 		},
 		["player_last_events"] = {
 		},
@@ -211,26 +198,6 @@ _detalhes_database = {
 		["frags"] = {
 		},
 		["data_fim"] = 0,
-		["overall_refreshed"] = true,
-		["CombatSkillCache"] = {
-		},
-		["PhaseData"] = {
-			{
-				1, -- [1]
-				1, -- [2]
-			}, -- [1]
-			["damage"] = {
-			},
-			["heal_section"] = {
-			},
-			["heal"] = {
-			},
-			["damage_section"] = {
-			},
-		},
-		["start_time"] = 409854.97,
-		["TimeData"] = {
-		},
 		["totals_grupo"] = {
 			0, -- [1]
 			0, -- [2]
@@ -238,22 +205,52 @@ _detalhes_database = {
 				0, -- [1]
 				[0] = 0,
 				["alternatepower"] = 0,
-				[6] = 0,
 				[3] = 0,
+				[6] = 0,
 			}, -- [3]
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["dead"] = 0,
-				["cc_break"] = 0,
+				["cooldowns_defensive"] = 0,
+				["dispell"] = 0,
 				["interrupt"] = 0,
 				["debuff_uptime"] = 0,
-				["dispell"] = 0,
-				["cooldowns_defensive"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
 			}, -- [4]
 		},
+		["CombatSkillCache"] = {
+		},
+		["PhaseData"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+			}, -- [1]
+			["damage_section"] = {
+			},
+			["heal_section"] = {
+			},
+			["heal"] = {
+			},
+			["damage"] = {
+			},
+		},
+		["start_time"] = 409854.97,
+		["TimeData"] = {
+		},
+		["overall_refreshed"] = true,
 	},
-	["last_version"] = "v7.2.0.3673",
+	["cached_talents"] = {
+		["Player-1169-06EEB51C"] = {
+			22484, -- [1]
+			22604, -- [2]
+			22645, -- [3]
+			22558, -- [4]
+			22433, -- [5]
+			21811, -- [6]
+			22705, -- [7]
+		},
+	},
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
@@ -273,10 +270,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -237.999877929688,
-					["x"] = -777.499969482422,
+					["y"] = -237.999847412109,
+					["x"] = -721.499847412109,
 					["w"] = 320,
-					["h"] = 129.999954223633,
+					["h"] = 129.999938964844,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -287,17 +284,20 @@ _detalhes_database = {
 			},
 		}, -- [1]
 	},
-	["last_encounter"] = "Madness of Deathwing",
+	["SoloTablesSaved"] = {
+		["LastSelected"] = "DETAILS_PLUGIN_DAMAGE_RANK",
+		["Mode"] = 1,
+	},
 	["announce_cooldowns"] = {
-		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
+		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["nick_tag_cache"] = {
+		["nextreset"] = 1496098966,
+		["last_version"] = 8,
 	},
 	["last_instance_id"] = 967,
 	["cached_specs"] = {

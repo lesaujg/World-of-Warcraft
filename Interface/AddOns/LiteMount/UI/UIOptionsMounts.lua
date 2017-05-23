@@ -90,6 +90,11 @@ function LiteMountOptionsMountsFilterDropDown_Initialize(self, level)
         info.checked = not LM_Options.db.char.uiMountFilterList.DISABLED
         UIDropDownMenu_AddButton(info, level)
 
+        info.text = COLLECTED
+        info.arg1 = "COLLECTED"
+        info.checked = not LM_Options.db.char.uiMountFilterList.COLLECTED
+        UIDropDownMenu_AddButton(info, level)
+
         info.text = NOT_COLLECTED
         info.arg1 = "NOT_COLLECTED"
         info.checked = not LM_Options.db.char.uiMountFilterList.NOT_COLLECTED
@@ -359,6 +364,8 @@ local function GetFilteredMountList()
             remove = true
         elseif filters.ENABLED and not LM_Options:IsExcludedMount(m) then
             remove = true
+        elseif filters.COLLECTED and m.isCollected then
+            remove = true
         elseif filters.NOT_COLLECTED and not m.isCollected then
             remove = true
         elseif filters.UNUSABLE and m.needsFaction and m.needsFaction ~= UnitFactionGroup("player") then
@@ -377,10 +384,17 @@ local function GetFilteredMountList()
         end
 
         -- strfind is expensive, avoid if possible
-        if not remove and filtertext ~= "" then
-            local matchname = strlower(m.name)
-            if not strfind(matchname, filtertext, 1, true) then
-                remove = true
+        if not remove then
+            if filtertext == "=" then
+                local spellName = GetSpellInfo(m.spellID)
+                if UnitAura("player", spellName) == nil then
+                    remove = true
+                end
+            elseif filtertext ~= "" then
+                local matchname = strlower(m.name)
+                if not strfind(matchname, filtertext, 1, true) then
+                    remove = true
+                end
             end
         end
 
@@ -561,9 +575,14 @@ function LiteMountOptionsMounts_OnShow(self)
     LM_Options.db.RegisterCallback(self, "OnProfileCopied", UpdateProfileCallback)
     LM_Options.db.RegisterCallback(self, "OnProfileChanged", UpdateProfileCallback)
     LM_Options.db.RegisterCallback(self, "OnProfileReset", UpdateProfileCallback)
+
+    -- This is specifically to catch the "Currently Active Mount" filter
+    self:SetScript("OnEvent", LiteMountOptions_UpdateMountList)
+    self:RegisterUnitEvent("UNIT_AURA", "player")
 end
 
 function LiteMountOptionsMounts_OnHide(self)
     LM_Options.db:UnregisterAllCallbacks(self)
+    self:UnregisterEvent("UNIT_AURA", "player")
 end
 

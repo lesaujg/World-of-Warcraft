@@ -1,4 +1,11 @@
 Version: 1
+Frame: AuctionFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -117
+W: 832
+H: 447
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: CENTER

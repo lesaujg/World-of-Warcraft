@@ -65,6 +65,10 @@ VER 3 010000000000005A "Disengage" "INV_MISC_QUESTIONMARK"
 /cast Disengage
 /cast Auto Shot
 END
+VER 3 0100000000000067 "Eagle/Cobra" "INV_MISC_QUESTIONMARK"
+/cast Aspect of the Eagle
+/cast Spitting Cobra
+END
 VER 3 010000000000004D "MD+" "INV_Misc_QuestionMark"
 #show Misdirection
 /focus [button:2] target
