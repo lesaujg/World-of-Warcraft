@@ -39,17 +39,17 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @savedSearches"] = {
 		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1495507380,
-			["name"] = "Maelstrom Crystal/exact",
-			["filter"] = "Maelstrom Crystal/exact",
-		}, -- [1]
-		{
-			["lastSearch"] = 1495489446,
+			["lastSearch"] = 1495598579,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
+		}, -- [1]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1495507380,
+			["name"] = "Maelstrom Crystal/exact",
+			["filter"] = "Maelstrom Crystal/exact",
 		}, -- [2]
 		{
 			["searchMode"] = "crafting",
