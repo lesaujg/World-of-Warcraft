@@ -7606,12 +7606,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Horrid Eagle",
 		},
-		[227735] = {
-			["school"] = 20,
+		[192231] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Guarm",
+			["source"] = "Liquid Magma Totem",
 		},
 		[136899] = {
 			["school"] = 8,
@@ -7620,12 +7620,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sul the Sandcrawler",
 		},
-		[192231] = {
-			["school"] = 4,
+		[227735] = {
+			["school"] = 20,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Liquid Magma Totem",
+			["source"] = "Guarm",
 		},
 		[46155] = {
 			["school"] = 32,
@@ -7666,14 +7666,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Guarm",
 		},
-		[218780] = {
-			["school"] = 4,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-		},
 		[194216] = {
 			["school"] = 64,
 			["token"] = {
@@ -7689,6 +7681,14 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "D'zorykx the Trapper",
+		},
+		[218780] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
 		},
 		[197858] = {
 			["school"] = 16,
