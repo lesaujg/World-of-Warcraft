@@ -71,80 +71,56 @@ ActionBarSaverDB = {
 				[69] = "macro|69||Pet_stuff|132179|#showtooltip/n/cast [nopet,button:2] Revive Pet/n/cast [nopet] Call Pet 2/n/cast [button:2, pet, nodead] Dismiss Pet/n/cast [@pet, pet, dead] Revive Pet/n/cast [@pet, pet, nodead] Mend Pet",
 			},
 			["hunter"] = {
-				"spell|19434||Aimed Shot||", -- [1]
-				"spell|214579||Sidewinders||", -- [2]
-				"spell|185901||Marked Shot||", -- [3]
-				"spell|5116||Concussive Shot||", -- [4]
-				"item|124224||Mirror of the Blademaster", -- [5]
-				nil, -- [6]
-				"spell|194291||Exhilaration||", -- [7]
-				"item|5512||Healthstone", -- [8]
+				"macro|1||_Kill Command|132176|#showtooltip/n/petattack/n/petassist/n/petautocastoff [group] Growl/n/petautocaston [nogroup] Growl/n/petautocastoff [group] Thunderstomp/n/petautocaston [nogroup] Thunderstomp/n/target [noexists] pettarget/n/cast Kill Command", -- [1]
+				"macro|2||_Cobra Shot|461114|#showtooltip/n/target [noexists] pettarget/n/cast Cobra Shot", -- [2]
+				"macro|3||_Dire Beast|236186|#showtooltip Dire Beast/n#show Dire Beast/n/target [noexists] pettarget/n/cast Titan's Thunder/n/cast Dire Beast", -- [3]
+				"spell|2643||Multi-Shot||", -- [4]
+				"spell|131894||A Murder of Crows||", -- [5]
+				"macro|6||Counter Shot|249170|/stopcasting/n/stopcasting/n/cast Counter Shot/n/cast Auto Shot", -- [6]
+				nil, -- [7]
+				"spell|1543||Flare||", -- [8]
 				nil, -- [9]
-				nil, -- [10]
-				nil, -- [11]
-				"spell|186265||Aspect of the Turtle||", -- [12]
-				nil, -- [13]
-				nil, -- [14]
-				nil, -- [15]
-				nil, -- [16]
-				nil, -- [17]
-				nil, -- [18]
-				nil, -- [19]
-				"spell|53271||Master's Call||", -- [20]
-				nil, -- [21]
-				nil, -- [22]
-				nil, -- [23]
-				nil, -- [24]
-				"spell|120360||Barrage||", -- [25]
-				"spell|186387||Bursting Shot||", -- [26]
-				"macro|27||Trueshot|132329|#showtooltip/n/cast Trueshot/n/use Tabard of the Protector/n/use 13/n/use 14/n/use /use [nogroup:raid] [mod] 12/n/castsequence reset=combat/10 Trueshot, null", -- [27]
-				"macro|28||Counter Shot|249170|/stopcasting/n/stopcasting/n/cast Counter Shot", -- [28]
-				"item|124636||Maalus, the Blood Drinker", -- [29]
-				nil, -- [30]
-				"macro|31||Disengage|132294|/stopcasting/n/stopcasting/n/cast Disengage/n/cast Auto Shot", -- [31]
-				"item|109223||Healing Tonic", -- [32]
-				nil, -- [33]
-				nil, -- [34]
-				"spell|20594||Stoneform|Racial|", -- [35]
-				"spell|186257||Aspect of the Cheetah||", -- [36]
-				"equipmentset|Dps|", -- [37]
-				"flyout|91||Lone Wolf|", -- [38]
-				"flyout|9||Call Pet|", -- [39]
-				"flyout|103||Pet Utility|", -- [40]
-				nil, -- [41]
-				"item|109153||Greater Draenic Agility Flask", -- [42]
-				"item|118576||Savage Feast", -- [43]
-				nil, -- [44]
-				"spell|161676||Call to Arms||", -- [45]
-				"spell|131474||Fishing||", -- [46]
-				"macro|47||_Pet Attack/Foll|132117|#/tar Corrupted Blood/n/petfollow [button:2]/n/dismount/n/petattack/n#/petassist/n#/tar Burning Tendon/n#/tar Hideous Amalgamation/n#/cast Mend Pet/n/cast Warp/n/cast Dash", -- [47]
-				"spell|13262||Disenchant||", -- [48]
-				nil, -- [49]
-				nil, -- [50]
-				"spell|6197||Eagle Eye||", -- [51]
-				nil, -- [52]
-				"item|137663||Soft Foam Sword", -- [53]
-				"spell|199483||Camouflage||", -- [54]
-				nil, -- [55]
-				nil, -- [56]
-				"item|122452||Commander's Draenic Swiftness Potion", -- [57]
-				nil, -- [58]
-				"item|109167||Findle's Loot-A-Rang", -- [59]
-				"macro|60||RandomMount|132248|/use [mod:ctrlshift]Grand Expedition Yak/n/use [mod:shift]Traveler's Tundra Mammoth/n/use [mod:ctrl]Azure Water Strider/n/use [mod:alt]Ashes of Al'ar/n#showtooltip [nomod]White Ram/n/click [nobtn:2]LiteMount/n/click [btn:2]LiteMount RightButton", -- [60]
-				"macro|61||Pet_stuff|132161|#showtooltip/n/cast [nopet,button:2] Revive Pet/n/cast [nopet] Call Pet 2/n/cast [button:2, pet, nodead] Dismiss Pet/n/cast [@pet, pet, dead] Revive Pet/n/cast [@pet, pet, nodead] Mend Pet", -- [61]
-				nil, -- [62]
-				nil, -- [63]
-				"item|128482||Empowered Augment Rune", -- [64]
-				[66] = "spell|1543||Flare||",
-				[115] = "item|28237||Medallion of the Alliance",
-				[67] = "spell|5384||Feign Death||",
-				[117] = "item|58145||Potion of the Tol'vir",
-				[98] = "item|32539||Skyguard's Drape",
-				[72] = "macro|72||MD+|132180|#show Misdirection/n/focus [button:2] target/n/clearfocus [button:2,mod:ctrl]/n/stopmacro [button:2][mod:ctrl]/n/cast [@focus,help,nodead][@pet,nodead,exists] Misdirection",
-				[100] = "macro|100||Major Health|237050|/click TradeSkillCreateButton/n/use Enchanting Vellum",
-				[68] = "macro|68||_Clear Target|132092|/stopcasting/n/cleartarget/n/petfollow/n/petpassive",
+				"macro|10||_AspectTurtle|132199|/cancelaura Aspect of the Turtle/n/cast Aspect of the Turtle", -- [10]
+				"item|5512||Healthstone", -- [11]
+				"spell|20594||Stoneform|Racial|", -- [12]
+				[27] = "flyout|102||Traps|",
+				[38] = "equipmentset|Adventure|",
+				[62] = "spell|207068||Titan's Thunder|Artifact|",
+				[39] = "flyout|9||Call Pet|",
+				[47] = "macro|47||_Pet Attack/Foll|132117|#/tar Corrupted Blood/n/petfollow [button:2]/n/dismount/n/petattack/n#/petassist/n#/tar Burning Tendon/n#/tar Hideous Amalgamation/n#/cast Mend Pet/n/cast Warp/n/cast Dash",
+				[55] = "spell|125050||Fetch||",
+				[63] = "spell|193530||Aspect of the Wild||",
+				[40] = "flyout|103||Pet Utility|",
+				[48] = "spell|13262||Disenchant||",
+				[56] = "item|143605||Strange Ball of Energy",
+				[41] = "item|141446||Tome of the Tranquil Mind",
+				[57] = "macro|57||_Kite|132128|/use [button:1] 15/n/use [button:1] Rocfeather Skyhorn Kite/n/use [button:2] Brulfist Idol",
+				[66] = "macro|66||Reload|132096|/reload",
+				[25] = "spell|5116||Concussive Shot||",
 				[114] = "item|6948||Hearthstone",
-				[70] = "item|109217||Draenic Agility Potion",
+				[34] = "spell|109304||Exhilaration||",
+				[42] = "item|127858||Spirit Flask",
+				[58] = "item|147707||Repurposed Fel Focuser",
+				[68] = "macro|68||_Clear Target|132092|/stopcasting/n/cleartarget/n/petfollow/n/petpassive",
+				[35] = "item|142117||Potion of Prolonged Power",
+				[43] = "item|140587||Defiled Augment Rune",
+				[51] = "spell|6197||Eagle Eye||",
+				[59] = "item|60854||Loot-A-Rang",
+				[26] = "spell|109248||Binding Shot||",
+				[30] = "macro|30||Disengage|132294|/stopcasting/n/stopcasting/n/cast Disengage/n/cast Auto Shot",
+				[36] = "spell|186257||Aspect of the Cheetah||",
+				[44] = "item|127848||Flask of the Seventh Demon",
+				[60] = "macro|60||RandomMount|132248|/use [mod:ctrlshift]Grand Expedition Yak/n/use [mod:shift]Traveler's Tundra Mammoth/n/use [mod:ctrl]Azure Water Strider/n/use [mod:alt] Mimiron's Head/n#showtooltip [nomod]White Ram/n/click [nobtn:2]LiteMount/n/click [btn:2]LiteMount RightButton",
+				[72] = "macro|72||MD+|132180|#show Misdirection/n/focus [button:2] target/n/clearfocus [button:2,mod:ctrl]/n/stopmacro [button:2][mod:ctrl]/n/cast [@focus,help,nodead][@pet,nodead,exists] Misdirection",
+				[115] = "item|28237||Medallion of the Alliance",
+				[67] = "macro|67||_FeignDeath|132293|/cast [btn:2][mod] Play Dead/n/cast [nobtn:2]Feign Death",
+				[37] = "equipmentset|Dps|",
+				[71] = "spell|194386||Volley||",
+				[53] = "item|141605||Flight Master's Whistle",
+				[61] = "macro|61||_Bestial Wrath|132127|#showtooltip/n/cast Bestial Wrath/n/cast Aspect of the Wild/n/use Tabard of the Protector/n/use 13/n/use 14",
+				[98] = "item|32539||Skyguard's Drape",
+				[117] = "item|58145||Potion of the Tol'vir",
+				[69] = "macro|69||Pet_stuff|132179|#showtooltip/n/cast [button:1, nopet] Call Pet 3/n/cast [button:2, nopet] Call Pet 4/n/cast [button:2, pet, nodead] Dismiss Pet/n/cast [@pet,dead]Revive Pet; [nopet,mod] Revive Pet;Mend Pet",
 			},
 		},
 		["DRUID"] = {
@@ -240,12 +216,12 @@ ActionBarSaverDB = {
 				[6] = "spell|96231||Rebuke||",
 				[12] = "macro|12||GetKraken!|236178|#showtooltip Flaming Spears/n/targetexact [nodead,nomod:ctrl] Kvaldir Deepcaller/n/targetexact [nodead,nomod:shift] North Sea Kraken/n/cast [exists] Flaming Spears/n/cleartarget [dead]/n/run UIErrorsFrame:Clear()",
 				[67] = "spell|1044||Blessing of Freedom||",
-				[27] = "spell|215661||Justicar's Vengeance||",
+				[53] = "item|87216||Thermal Anvil",
 				[49] = "spell|213644||Cleanse Toxins||",
 				[50] = "spell|7328||Redemption||",
 				[26] = "spell|198034||Divine Hammer||",
-				[53] = "item|87216||Thermal Anvil",
 				[7] = "spell|62124||Hand of Reckoning||",
+				[27] = "spell|215661||Justicar's Vengeance||",
 				[54] = "spell|190784||Divine Steed||",
 				[55] = "spell|19750||Flash of Light||",
 				[56] = "spell|633||Lay on Hands||",

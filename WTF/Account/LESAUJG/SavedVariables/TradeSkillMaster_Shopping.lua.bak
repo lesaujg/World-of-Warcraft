@@ -36,26 +36,26 @@ TradeSkillMaster_ShoppingDB = {
 		["auction"] = true,
 	},
 	["g@ @sniperVendorPrice"] = true,
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @savedSearches"] = {
+		{
+			["lastSearch"] = 1495796801,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [1]
 		{
 			["lastSearch"] = 1495768502,
 			["name"] = "Nightborne Delicacy Platter",
 			["filter"] = "Nightborne Delicacy Platter",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [1]
+		}, -- [2]
 		{
 			["lastSearch"] = 1495768490,
 			["name"] = "Flask of the Seventh Demon",
 			["filter"] = "Flask of the Seventh Demon",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [2]
-		{
-			["lastSearch"] = 1495768345,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [3]
@@ -695,7 +695,7 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "knowledge",
 		}, -- [108]
 	},
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @maxDeSearchLvl"] = 735,
 	["g@ @minDeSearchLvl"] = 1,

@@ -1,3 +1,7 @@
+VER 3 0100000000000069 "_AspectTurtle" "INV_MISC_QUESTIONMARK"
+/cancelaura Aspect of the Turtle
+/cast Aspect of the Turtle
+END
 VER 3 010000000000005B "_Bestial Wrath" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Bestial Wrath
@@ -5,6 +9,7 @@ VER 3 010000000000005B "_Bestial Wrath" "INV_MISC_QUESTIONMARK"
 /use Tabard of the Protector
 /use 13
 /use 14
+/cast [btn:2] Ancient Hysteria
 END
 VER 3 010000000000005E "_Cobra Shot" "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -17,6 +22,10 @@ VER 3 010000000000005F "_Dire Beast" "INV_MISC_QUESTIONMARK"
 /target [noexists] pettarget
 /cast Titan's Thunder
 /cast Dire Beast
+END
+VER 3 010000000000006A "_FeignDeath" "INV_MISC_QUESTIONMARK"
+/cast [nobtn:2]Feign Death
+/cast [btn:2][mod] Play Dead
 END
 VER 3 010000000000005C "_Kill Command" "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -67,9 +76,6 @@ VER 3 0100000000000059 "Counter Shot" "INV_Misc_QuestionMark"
 /cast Counter Shot
 /cast Auto Shot
 END
-VER 3 0100000000000066 "Counter Shot" "INV_MISC_QUESTIONMARK"
-/cast  [@Focus]  Counter Shot
-END
 VER 3 010000000000005A "Disengage" "INV_MISC_QUESTIONMARK"
 /stopcasting
 /stopcasting
@@ -88,7 +94,11 @@ VER 3 010000000000004D "MD+" "INV_Misc_QuestionMark"
 /cast [@focus,help,nodead][@pet,nodead,exists] Misdirection
 END
 VER 3 0100000000000061 "Pet" "INV_MISC_QUESTIONMARK"
-/use [nopet,nomod]Call Pet 3;[mod:ctrl,mod:alt]Dismiss Pet;[pet,nocombat,nomod]Fetch(Glyph);Revive Pet
+#showtooltip
+/cast [button:1, nopet] Call Pet 4
+/cast [button:2, nopet] Call Pet 5
+/cast [@pet,button:2,exists,nodead] Dismiss Pet
+/cast [@pet,exists,nodead] Mend Pet; Revive Pet
 END
 VER 3 0100000000000054 "Pet_stuff" "INV_Misc_QuestionMark"
 #showtooltip

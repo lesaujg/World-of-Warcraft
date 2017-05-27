@@ -1,3 +1,7 @@
+VER 3 0100000000000069 "_AspectTurtle" "INV_MISC_QUESTIONMARK"
+/cancelaura Aspect of the Turtle
+/cast Aspect of the Turtle
+END
 VER 3 010000000000005B "_Bestial Wrath" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Bestial Wrath
@@ -18,6 +22,10 @@ VER 3 010000000000005F "_Dire Beast" "INV_MISC_QUESTIONMARK"
 /cast Titan's Thunder
 /cast Dire Beast
 END
+VER 3 010000000000006A "_FeignDeath" "INV_MISC_QUESTIONMARK"
+/cast [btn:2][mod] Play Dead
+/cast [nobtn:2]Feign Death
+END
 VER 3 010000000000005C "_Kill Command" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /petattack
@@ -33,6 +41,17 @@ VER 3 0100000000000060 "_Kite" "132128"
 /use [button:1] 15
 /use [button:1] Rocfeather Skyhorn Kite
 /use [button:2] Brulfist Idol
+END
+VER 3 0100000000000068 "_MangooseBite" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petattack
+/petassist
+/petautocastoff [group] Growl
+/petautocaston [nogroup] Growl
+/petautocastoff [group] Thunderstomp
+/petautocaston [nogroup] Thunderstomp
+/target [noexists] pettarget
+/cast Mongoose Bite
 END
 VER 3 010000000000005D "_Multi-Shot" "INV_MISC_QUESTIONMARK"
 /target [noexists] pettarget
@@ -55,9 +74,6 @@ VER 3 0100000000000059 "Counter Shot" "INV_Misc_QuestionMark"
 /stopcasting
 /cast Counter Shot
 /cast Auto Shot
-END
-VER 3 0100000000000066 "Counter Shot" "INV_MISC_QUESTIONMARK"
-/cast  [@Focus]  Counter Shot
 END
 VER 3 010000000000005A "Disengage" "INV_MISC_QUESTIONMARK"
 /stopcasting
