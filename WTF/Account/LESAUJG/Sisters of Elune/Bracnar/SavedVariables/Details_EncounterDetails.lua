@@ -7310,13 +7310,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Krosus",
 		},
-		[193682] = {
-			["school"] = 16,
+		[224387] = {
+			["school"] = 64,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Lady Hatecoil",
+			["source"] = "Sidereal Familiar",
 		},
 		[229248] = {
 			["school"] = 4,
@@ -7377,13 +7377,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Scrubber",
 		},
-		[224387] = {
-			["school"] = 64,
+		[197776] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Sidereal Familiar",
+			["source"] = "General Xakal",
 		},
 		[206474] = {
 			["school"] = 32,
@@ -7499,13 +7499,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lurking Terror",
 		},
-		[197776] = {
-			["school"] = 32,
+		[193682] = {
+			["school"] = 16,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "General Xakal",
+			["source"] = "Lady Hatecoil",
 		},
 		[206220] = {
 			["school"] = 4,
@@ -7565,6 +7565,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Illysanna Ravencrest",
 		},
+		[206221] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Gul'dan",
+		},
 		[228738] = {
 			["school"] = 64,
 			["token"] = {
@@ -7572,14 +7580,6 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Volatile Energy",
-		},
-		[218503] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "High Botanist Tel'arn",
 		},
 		[193367] = {
 			["school"] = 8,
@@ -9680,13 +9680,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Pure Energy",
 		},
-		[206221] = {
-			["school"] = 4,
+		[218503] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Gul'dan",
+			["source"] = "High Botanist Tel'arn",
 		},
 		[198833] = {
 			["school"] = 32,

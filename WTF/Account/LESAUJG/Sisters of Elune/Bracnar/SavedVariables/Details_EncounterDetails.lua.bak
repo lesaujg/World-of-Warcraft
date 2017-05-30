@@ -7209,13 +7209,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nythendra",
 		},
-		[197776] = {
-			["school"] = 32,
+		[193682] = {
+			["school"] = 16,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "General Xakal",
+			["source"] = "Lady Hatecoil",
 		},
 		[196496] = {
 			["school"] = 1,
@@ -7274,13 +7274,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Scrubber",
 		},
-		[193682] = {
-			["school"] = 16,
+		[224387] = {
+			["school"] = 64,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Lady Hatecoil",
+			["source"] = "Sidereal Familiar",
 		},
 		[206474] = {
 			["school"] = 32,
@@ -7398,13 +7398,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lurking Terror",
 		},
-		[224387] = {
-			["school"] = 64,
+		[197776] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Sidereal Familiar",
+			["source"] = "General Xakal",
 		},
 		[206220] = {
 			["school"] = 4,
@@ -7464,6 +7464,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Illysanna Ravencrest",
 		},
+		[228738] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Volatile Energy",
+		},
 		[218503] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
@@ -7471,14 +7479,6 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "High Botanist Tel'arn",
-		},
-		[206221] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Gul'dan",
 		},
 		[44342] = {
 			["school"] = 64,
@@ -9579,13 +9579,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Grimelord",
 		},
-		[228738] = {
-			["school"] = 64,
+		[206221] = {
+			["school"] = 4,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Volatile Energy",
+			["source"] = "Gul'dan",
 		},
 		[237726] = {
 			["school"] = 1,
