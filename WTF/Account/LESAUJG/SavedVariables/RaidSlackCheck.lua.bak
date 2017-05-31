@@ -73,12 +73,10 @@ rscminflaskgood = 5
 rsconlyfrombosssave = false
 rscraidrostertable = {
 	{
-		"Aloraal", -- [1]
-		"Bracnar", -- [2]
+		"Bracnar", -- [1]
 	}, -- [1]
 	{
-		"Aloraal", -- [1]
-		"Bracnar", -- [2]
+		"Bracnar", -- [1]
 	}, -- [2]
 	{
 		"Aloraal", -- [1]
@@ -123,8 +121,6 @@ rscraidrostertable = {
 }
 rscpotioninfotable = {
 	{
-		"00:03+Heroism1Jaraldo-Silvermoon^|cff71d5ff|Hspell:80353|h[Time Warp]|h|r", -- [1]
-		"00:43+Heroism0|cff71d5ff|Hspell:80353|h[Time Warp]|h|r", -- [2]
 	}, -- [1]
 	{
 	}, -- [2]
@@ -176,8 +172,8 @@ rscchoosepotion = {
 	}, -- [12]
 }
 rscbossnamestable = {
-	"0", -- [1]
-	"0", -- [2]
+	"Archmage Xylem, 19:23", -- [1]
+	"Archmage Xylem, 19:20", -- [2]
 	"0", -- [3]
 	"0", -- [4]
 	"0", -- [5]
@@ -190,43 +186,43 @@ rscbossnamestable = {
 	"0", -- [12]
 }
 rscpotionnotincombat = {
-	"1635142.792++combatstart", -- [1]
-	"1634999.131++combatstart", -- [2]
-	"1634722.506++combatstart", -- [3]
-	"1634509.709++combatstart", -- [4]
-	"1634438.606++combatstart", -- [5]
-	"1634389.982++combatstart", -- [6]
-	"1634361.016++combatstart", -- [7]
-	"1634303.053++combatstart", -- [8]
-	"1634166.463++combatstart", -- [9]
-	"1634129.906++combatstart", -- [10]
-	"1634121.049++combatstart", -- [11]
-	"1634100.714++combatstart", -- [12]
-	"1633995.641++combatstart", -- [13]
-	"1633578.348++combatstart", -- [14]
-	"1633532.088++combatstart", -- [15]
-	"1633510.279++combatstart", -- [16]
-	"1633499.869++combatstart", -- [17]
-	"1633463.334++combatstart", -- [18]
-	"1633439.33++combatstart", -- [19]
-	"1633110.677++combatstart", -- [20]
-	"1633086.848++combatstart", -- [21]
-	"1633044.092++combatstart", -- [22]
-	"1633022.576++combatstart", -- [23]
-	"1632934.056++combatstart", -- [24]
-	"1632736.083++combatstart", -- [25]
-	"1632716.314++combatstart", -- [26]
-	"1632668.21++combatstart", -- [27]
-	"1632518.204++combatstart", -- [28]
-	"1632423.758++combatstart", -- [29]
-	"1632319.548++combatstart", -- [30]
-	"1632208.526++combatstart", -- [31]
-	"1632148.847++combatstart", -- [32]
-	"1632123.865++combatstart", -- [33]
-	"1632032.11++combatstart", -- [34]
-	"1631996.705++combatstart", -- [35]
-	"1631696.657++combatstart", -- [36]
-	"1631651.172++combatstart", -- [37]
+	"1804269.93++combatstart", -- [1]
+	"1804133.82++combatstart", -- [2]
+	"1803787.641++combatstart", -- [3]
+	"1803770.669++combatstart", -- [4]
+	"1803593.397++combatstart", -- [5]
+	"1803459.188++combatstart", -- [6]
+	"1803112.658++combatstart", -- [7]
+	"1803092.161++combatstart", -- [8]
+	"1803073.612++combatstart", -- [9]
+	"1803005.08++combatstart", -- [10]
+	"1802878.912++combatstart", -- [11]
+	"1802788.686++combatstart", -- [12]
+	"1802769.116++combatstart", -- [13]
+	"1802721.33++combatstart", -- [14]
+	"1802319.587++combatstart", -- [15]
+	"1802007.926++combatstart", -- [16]
+	"1801815.202++combatstart", -- [17]
+	"1801764.853++combatstart", -- [18]
+	"1801745.04++combatstart", -- [19]
+	"1801681.493++combatstart", -- [20]
+	"1801652.036++combatstart", -- [21]
+	"1801618.434++combatstart", -- [22]
+	"1801586.657++combatstart", -- [23]
+	"1801522.09++combatstart", -- [24]
+	"1801501.428++combatstart", -- [25]
+	"1801479.501++combatstart", -- [26]
+	"1801462.694++combatstart", -- [27]
+	"1801444.04++combatstart", -- [28]
+	"1801393.844++combatstart", -- [29]
+	"1801341.396++combatstart", -- [30]
+	"1801321.6++combatstart", -- [31]
+	"1801287.94++combatstart", -- [32]
+	"1801249.427++combatstart", -- [33]
+	"1801234.772++combatstart", -- [34]
+	"1801145.636++combatstart", -- [35]
+	"1801074.833++combatstart", -- [36]
+	"1801041.546++combatstart", -- [37]
 }
 rschealstoneused = {
 	{
@@ -256,12 +252,10 @@ rschealstoneused = {
 }
 rschealstoneused2 = {
 	{
-		"Aloraal", -- [1]
-		"Bracnar", -- [2]
+		"Bracnar", -- [1]
 	}, -- [1]
 	{
-		"Aloraal", -- [1]
-		"Bracnar", -- [2]
+		"Bracnar", -- [1]
 	}, -- [2]
 	{
 		"Aloraal", -- [1]

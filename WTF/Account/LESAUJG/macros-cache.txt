@@ -18,6 +18,7 @@ VER 3 0000000000000087 "RandomMount" "INV_MISC_QUESTIONMARK"
 /click [btn:2]LiteMount RightButton
 END
 VER 3 000000000000009D "Reload" "132096"
+/console worldPreloadNonCritical 0
 /reload
 END
 VER 3 0000000000000094 "TSMPostCancel" "133784"
