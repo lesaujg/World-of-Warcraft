@@ -9,7 +9,7 @@ PawnOptions = {
 		[128808] = {
 			["Relics"] = {
 				{
-					["ItemLevel"] = 53,
+					["ItemLevel"] = 56,
 					["Type"] = "Wind",
 				}, -- [1]
 				{
