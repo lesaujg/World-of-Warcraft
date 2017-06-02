@@ -1,0 +1,18 @@
+
+IceCoreDB = {
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+	},
+	["global"] = {
+		["lastRunVersion"] = 2017032902800,
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}
