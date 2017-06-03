@@ -9,35 +9,36 @@ IceCoreDB = {
 	},
 	["profileKeys"] = {
 		["Bracnar - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
 		["Clothgar - Sisters of Elune"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["modules"] = {
 				["TargetCast"] = {
+					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
 					["updatedReverseInverse"] = true,
-					["myTagVersion"] = 3,
 				},
 				["PetHealth"] = {
+					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
-					["updatedReverseInverse"] = true,
 				},
 				["PlayerHealth"] = {
-					["updatedInverseExpand"] = true,
 					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
+					["updatedInverseExpand"] = true,
 				},
 				["PlayerAbsorb"] = {
+					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
-					["updatedReverseInverse"] = true,
 				},
 				["TargetMana"] = {
+					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
-					["updatedReverseInverse"] = true,
 				},
 				["PlayerAlternatePower"] = {
 					["myTagVersion"] = 3,
@@ -45,39 +46,39 @@ IceCoreDB = {
 					["updatedReverseInverse"] = true,
 				},
 				["TargetInfo"] = {
-					["debuffSizeFixup"] = true,
 					["myTagVersion"] = 3,
+					["debuffSizeFixup"] = true,
 					["updateAurasIntoTable"] = true,
 				},
 				["TargetAbsorb"] = {
+					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
-					["updatedReverseInverse"] = true,
 				},
 				["CastBar"] = {
+					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
 					["updatedReverseInverse"] = true,
-					["myTagVersion"] = 3,
 				},
 				["TargetHealth"] = {
-					["updatedInverseExpand"] = true,
 					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
+					["updatedInverseExpand"] = true,
 				},
 				["FocusAbsorb"] = {
+					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
-					["updatedReverseInverse"] = true,
 				},
 				["PetMana"] = {
+					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
-					["updatedReverseInverse"] = true,
 				},
 				["PlayerMana"] = {
+					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
-					["updatedReverseInverse"] = true,
 				},
 			},
 			["updatedOocNotFull"] = true,

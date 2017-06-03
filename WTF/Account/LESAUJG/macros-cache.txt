@@ -21,6 +21,10 @@ VER 3 000000000000009D "Reload" "132096"
 /console worldPreloadNonCritical 0
 /reload
 END
+VER 3 000000000000009E "Traps" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence [@cursor] reset=combat/20 Explosive Trap, Caltrops
+END
 VER 3 0000000000000094 "TSMPostCancel" "133784"
 /click TSMAuctioningCancelButton
 /click TSMAuctioningPostButton

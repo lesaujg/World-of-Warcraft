@@ -39,7 +39,7 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1496374294,
+			["lastSearch"] = 1496447784,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
