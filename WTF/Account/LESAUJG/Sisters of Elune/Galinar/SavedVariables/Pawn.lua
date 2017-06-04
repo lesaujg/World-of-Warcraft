@@ -32,9 +32,6 @@ PawnOptions = {
 					["ItemLevel"] = 58,
 					["Type"] = "Iron",
 				}, -- [2]
-				{
-					["Type"] = "Arcane",
-				}, -- [3]
 			},
 			["Name"] = "Truthguard",
 		},

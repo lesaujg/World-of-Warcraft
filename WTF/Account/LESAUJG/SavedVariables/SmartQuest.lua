@@ -1,16 +1,8 @@
 
 SmartQuestOptions = {
+	["DataCode"] = "1",
 	["Setting"] = {
 		["Bracnar"] = {
-			["Monitor"] = true,
-			["Sound"] = true,
-			["TextColor"] = {
-				["R"] = 1,
-				["G"] = 0.78,
-				["B"] = 1,
-			},
-		},
-		["Clothgar"] = {
 			["Monitor"] = true,
 			["Sound"] = true,
 			["TextColor"] = {
@@ -23,11 +15,19 @@ SmartQuestOptions = {
 			["Monitor"] = true,
 			["Sound"] = true,
 			["TextColor"] = {
-				["R"] = 1,
-				["G"] = 0.78,
 				["B"] = 1,
+				["G"] = 0.78,
+				["R"] = 1,
+			},
+		},
+		["Clothgar"] = {
+			["Monitor"] = true,
+			["Sound"] = true,
+			["TextColor"] = {
+				["B"] = 1,
+				["G"] = 0.78,
+				["R"] = 1,
 			},
 		},
 	},
-	["DataCode"] = "1",
 }
