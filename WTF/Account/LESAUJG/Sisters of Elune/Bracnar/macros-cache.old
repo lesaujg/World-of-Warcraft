@@ -11,6 +11,10 @@ VER 3 010000000000005B "_Bestial Wrath" "INV_MISC_QUESTIONMARK"
 /use 13
 /use 14
 END
+VER 3 010000000000006C "_Caltrops" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:ctrl, @player][@cursor][] Caltrops
+END
 VER 3 010000000000005E "_Cobra Shot" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /target [noexists] pettarget
@@ -23,12 +27,17 @@ VER 3 010000000000005F "_Dire Beast" "INV_MISC_QUESTIONMARK"
 /cast Titan's Thunder
 /cast Dire Beast
 END
+VER 3 010000000000006B "_ExplosiveTrap" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:ctrl, @player][@cursor][] Explosive Trap
+END
 VER 3 010000000000006A "_FeignDeath" "INV_MISC_QUESTIONMARK"
 /cast [nobtn:2]Feign Death
 /cast [btn:2][mod] Play Dead
 END
 VER 3 010000000000005C "_Kill Command" "INV_MISC_QUESTIONMARK"
 #showtooltip
+/dismount
 /petattack
 /petassist
 /petautocastoff [group] Growl
@@ -59,14 +68,9 @@ VER 3 010000000000005D "_Multi-Shot" "INV_MISC_QUESTIONMARK"
 /cast Multi-Shot
 END
 VER 3 010000000000000E "_Pet Attack/Foll" "Ability_Druid_ChallangingRoar"
-#/tar Corrupted Blood
 /petfollow [button:2]
 /dismount
 /petattack
-#/petassist
-#/tar Burning Tendon
-#/tar Hideous Amalgamation
-#/cast Mend Pet
 /cast Warp
 /cast Dash
 END
@@ -83,8 +87,9 @@ VER 3 010000000000005A "Disengage" "INV_MISC_QUESTIONMARK"
 /cast Auto Shot
 END
 VER 3 0100000000000067 "Eagle/Cobra" "INV_MISC_QUESTIONMARK"
-/cast Aspect of the Eagle
+#show Aspect of the Eagle
 /cast Spitting Cobra
+/cast Aspect of the Eagle
 /use Tabard of the Protector
 /use 13
 /use 14
@@ -109,13 +114,4 @@ VER 3 0100000000000054 "Pet_stuff" "INV_Misc_QuestionMark"
 /cast [button:2, nopet] Call Pet 4
 /cast [button:2, pet, nodead] Dismiss Pet
 /cast [@pet,dead]Revive Pet; [nopet,mod] Revive Pet;Mend Pet
-END
-VER 3 0100000000000055 "Trueshot" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast Trueshot
-/use Tabard of the Protector
-/use 13
-/use 14
-/use [nogroup:raid] [mod] 12
-/castsequence reset=combat/10 Trueshot, null
 END

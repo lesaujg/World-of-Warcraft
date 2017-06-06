@@ -11,10 +11,6 @@ VER 3 010000000000005B "_Bestial Wrath" "INV_MISC_QUESTIONMARK"
 /use 13
 /use 14
 END
-VER 3 010000000000006C "_Caltrops" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [mod:ctrl, @player][@cursor][] Caltrops
-END
 VER 3 010000000000005E "_Cobra Shot" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /target [noexists] pettarget
@@ -29,7 +25,7 @@ VER 3 010000000000005F "_Dire Beast" "INV_MISC_QUESTIONMARK"
 END
 VER 3 010000000000006B "_ExplosiveTrap" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [mod:ctrl, @player][@cursor][] Explosive Trap
+/castsequence [@cursor] reset=combat/20 Explosive Trap, Caltrops
 END
 VER 3 010000000000006A "_FeignDeath" "INV_MISC_QUESTIONMARK"
 /cast [nobtn:2]Feign Death

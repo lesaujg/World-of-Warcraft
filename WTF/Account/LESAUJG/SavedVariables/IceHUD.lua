@@ -4,13 +4,14 @@ IceCoreDB = {
 		["LibDualSpec-1.0"] = {
 		},
 	},
-	["global"] = {
-		["lastRunVersion"] = 2017032902800,
-	},
 	["profileKeys"] = {
+		["Herbinator - Sisters of Elune"] = "Default",
 		["Bracnar - Sisters of Elune"] = "Default",
 		["Galinar - Sisters of Elune"] = "Default",
 		["Clothgar - Sisters of Elune"] = "Default",
+	},
+	["global"] = {
+		["lastRunVersion"] = 2017032902800,
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -30,7 +31,7 @@ IceCoreDB = {
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
 				},
-				["PlayerAbsorb"] = {
+				["PlayerMana"] = {
 					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
@@ -75,7 +76,7 @@ IceCoreDB = {
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
 				},
-				["PlayerMana"] = {
+				["PlayerAbsorb"] = {
 					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
@@ -84,6 +85,10 @@ IceCoreDB = {
 			["updatedOocNotFull"] = true,
 			["colors"] = {
 				["ScaledManaColor"] = {
+					["r"] = 1,
+				},
+				["ScaledHealthColor"] = {
+					["g"] = 0,
 					["r"] = 1,
 				},
 			},
