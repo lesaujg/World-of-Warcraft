@@ -1,16 +1,13 @@
-tag ce2529db308f8d440f6f0d1526b3885594307aa4 7.2.11
+tag 50a1ad0b65f399226cf232647824b8e0326b2fab 7.2.12
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Mon May 22 12:44:08 2017 +1000
+Date:	Thu Jun 8 21:47:51 2017 +1000
 
-Tagging 7.2.11.
+Tagging 7.2.12
+Fix an error where copying your target's mount ignored whether it was usable.
 
-Add filter option for "collected" as well as "not collected".
-Put = into the search box to match the active mount.
-Fix item-summoned mounts.
-
-commit 129c244f44c51633730b712229f96eb28a8b0185
+commit db34c6bb7c96ec7976a4d925cefd64bbb2afb297
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri May 19 19:36:15 2017 +1000
+Date:   Thu Jun 8 21:44:18 2017 +1000
 
-    Fix scanning item summoned mounts first time you log in.
+    Fix copying targets mount ignores usability.
 
