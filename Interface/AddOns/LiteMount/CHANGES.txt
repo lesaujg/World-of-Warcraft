@@ -1,13 +1,12 @@
-tag 50a1ad0b65f399226cf232647824b8e0326b2fab 7.2.12
+tag e9f16bf987d77b8a5e64c383f69047242c131875 7.2.13
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Thu Jun 8 21:47:51 2017 +1000
+Date:	Wed Jun 14 17:45:25 2017 +1000
 
-Tagging 7.2.12
-Fix an error where copying your target's mount ignored whether it was usable.
+First cut of flyable Deaths of Chromie scenario.
 
-commit db34c6bb7c96ec7976a4d925cefd64bbb2afb297
+commit 902c112099c51d50eda12b97e2721bb7421b7ec0
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Jun 8 21:44:18 2017 +1000
+Date:   Wed Jun 14 17:31:49 2017 +1000
 
-    Fix copying targets mount ignores usability.
+    Deaths of Chromie scenario is flyable.
 

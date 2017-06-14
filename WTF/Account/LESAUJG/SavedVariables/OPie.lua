@@ -3,7 +3,7 @@ OneRing_Config = {
 	["CharProfiles"] = {
 		["Sisters of Elune-Bracnar"] = "default",
 	},
-	["_GameVersion"] = "7.2.0",
+	["_GameVersion"] = "7.2.5",
 	["_OPieVersion"] = "Umber 8 (3.89)",
 	["ProfileStorage"] = {
 		["default"] = {

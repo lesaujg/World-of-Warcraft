@@ -52,290 +52,290 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @postUndercut"] = "1c",
 	["g@ @minDeSearchLvl"] = 1,
 	["g@ @maxDeSearchLvl"] = 735,
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
+		{
+			["lastSearch"] = 1497409677,
+			["name"] = "Obliterum/exact",
+			["filter"] = "Obliterum/exact",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [1]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1497397725,
+			["name"] = "Essence of Water/exact",
+			["filter"] = "Essence of Water/exact",
+		}, -- [2]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497323377,
 			["name"] = "Infernal Brimstone/exact",
 			["filter"] = "Infernal Brimstone/exact",
-		}, -- [1]
+		}, -- [3]
 		{
 			["lastSearch"] = 1497236978,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [2]
+		}, -- [4]
 		{
 			["lastSearch"] = 1497205471,
 			["name"] = "Flask of the Seventh Demon",
 			["filter"] = "Flask of the Seventh Demon",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [3]
-		{
-			["lastSearch"] = 1496798103,
-			["name"] = "Obliterum/exact",
-			["filter"] = "Obliterum/exact",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [4]
+		}, -- [5]
 		{
 			["lastSearch"] = 1496501236,
 			["name"] = "Nightborne Delicacy Platter",
 			["filter"] = "Nightborne Delicacy Platter",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [5]
+		}, -- [6]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1495507380,
 			["name"] = "Maelstrom Crystal/exact",
 			["filter"] = "Maelstrom Crystal/exact",
-		}, -- [6]
+		}, -- [7]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1494389157,
 			["name"] = "Wild Jade/ignorede",
 			["filter"] = "Wild Jade/ignorede",
-		}, -- [7]
+		}, -- [8]
 		{
 			["lastSearch"] = 1494214305,
 			["name"] = "Potion of Deadly Grace",
 			["filter"] = "Potion of Deadly Grace",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [8]
+		}, -- [9]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1494168441,
 			["name"] = "Sha Crystal/ignorede",
 			["filter"] = "Sha Crystal/ignorede",
-		}, -- [9]
+		}, -- [10]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1494168421,
 			["name"] = "Imperial Amethyst/ignorede",
 			["filter"] = "Imperial Amethyst/ignorede",
-		}, -- [10]
+		}, -- [11]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1493838410,
 			["name"] = "wild jade",
 			["filter"] = "wild jade",
-		}, -- [11]
+		}, -- [12]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1493206876,
 			["name"] = "idol of",
 			["filter"] = "idol of",
-		}, -- [12]
+		}, -- [13]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1493134074,
 			["name"] = "greater cosm",
 			["filter"] = "greater cosm",
-		}, -- [13]
+		}, -- [14]
 		{
 			["lastSearch"] = 1492743514,
 			["name"] = "Chaos Crystal/exact",
 			["filter"] = "Chaos Crystal/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [14]
+		}, -- [15]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1492648639,
 			["name"] = "Dream Shard/ignorede",
 			["filter"] = "Dream Shard/ignorede",
-		}, -- [15]
+		}, -- [16]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1492648148,
 			["name"] = "Greater Cosmic Essence",
 			["filter"] = "Greater Cosmic Essence",
-		}, -- [16]
+		}, -- [17]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491871540,
 			["name"] = "goblin glider",
 			["filter"] = "goblin glider",
-		}, -- [17]
+		}, -- [18]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491870836,
 			["name"] = "fur",
 			["filter"] = "fur",
-		}, -- [18]
+		}, -- [19]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491870767,
 			["name"] = "glider",
 			["filter"] = "glider",
-		}, -- [19]
+		}, -- [20]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491830078,
 			["name"] = "Falcosaur Egg/exact",
 			["filter"] = "Falcosaur Egg/exact",
-		}, -- [20]
+		}, -- [21]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491829770,
 			["name"] = "Lean Shank/exact",
 			["filter"] = "Lean Shank/exact",
-		}, -- [21]
+		}, -- [22]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491829757,
 			["name"] = "Black Barracuda/exact",
 			["filter"] = "Black Barracuda/exact",
-		}, -- [22]
+		}, -- [23]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491829742,
 			["name"] = "Mossgill Perch/exact",
 			["filter"] = "Mossgill Perch/exact",
-		}, -- [23]
+		}, -- [24]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491829721,
 			["name"] = "Cursed Queenfish/exact",
 			["filter"] = "Cursed Queenfish/exact",
-		}, -- [24]
+		}, -- [25]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491829708,
 			["name"] = "Slice of Bacon/exact",
 			["filter"] = "Slice of Bacon/exact",
-		}, -- [25]
+		}, -- [26]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491829698,
 			["name"] = "Stormray/exact",
 			["filter"] = "Stormray/exact",
-		}, -- [26]
+		}, -- [27]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491829684,
 			["name"] = "Leyblood/exact",
 			["filter"] = "Leyblood/exact",
-		}, -- [27]
+		}, -- [28]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491829669,
 			["name"] = "Big Gamy Ribs/exact",
 			["filter"] = "Big Gamy Ribs/exact",
-		}, -- [28]
+		}, -- [29]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491829653,
 			["name"] = "Highmountain Salmon/exact",
 			["filter"] = "Highmountain Salmon/exact",
-		}, -- [29]
+		}, -- [30]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491829632,
 			["name"] = "Runescale Koi/exact",
 			["filter"] = "Runescale Koi/exact",
-		}, -- [30]
+		}, -- [31]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491829550,
 			["name"] = "silver m",
 			["filter"] = "silver m",
-		}, -- [31]
+		}, -- [32]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491708592,
 			["name"] = "leystone ore",
 			["filter"] = "leystone ore",
-		}, -- [32]
+		}, -- [33]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491708584,
 			["name"] = "falcosaur egg",
 			["filter"] = "falcosaur egg",
-		}, -- [33]
+		}, -- [34]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491696641,
 			["name"] = "leystone",
 			["filter"] = "leystone",
-		}, -- [34]
+		}, -- [35]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491625178,
 			["name"] = "Nethershard Essence/exact",
 			["filter"] = "Nethershard Essence/exact",
-		}, -- [35]
+		}, -- [36]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1489975188,
 			["name"] = "blackrock ore",
 			["filter"] = "blackrock ore",
-		}, -- [36]
+		}, -- [37]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1489975176,
 			["name"] = "true iron ore",
 			["filter"] = "true iron ore",
-		}, -- [37]
+		}, -- [38]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1489974919,
 			["name"] = "loot",
 			["filter"] = "loot",
-		}, -- [38]
+		}, -- [39]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1489591896,
 			["name"] = "Tome of the Tranquil Mind/exact",
 			["filter"] = "Tome of the Tranquil Mind/exact",
-		}, -- [39]
+		}, -- [40]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1488945782,
 			["name"] = "demonsteel bar",
 			["filter"] = "demonsteel bar",
-		}, -- [40]
+		}, -- [41]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1488939860,
 			["name"] = "arkhana",
 			["filter"] = "arkhana",
-		}, -- [41]
+		}, -- [42]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1488737509,
 			["name"] = "Essence of Fire/exact",
 			["filter"] = "Essence of Fire/exact",
-		}, -- [42]
+		}, -- [43]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1488325528,
 			["name"] = "stonehide",
 			["filter"] = "stonehide",
-		}, -- [43]
+		}, -- [44]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1488325498,
 			["name"] = "silkweave",
 			["filter"] = "silkweave",
-		}, -- [44]
+		}, -- [45]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1488325492,
 			["name"] = "imbuded",
 			["filter"] = "imbuded",
-		}, -- [45]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1486931303,
-			["name"] = "Essence of Water/exact",
-			["filter"] = "Essence of Water/exact",
 		}, -- [46]
 		{
 			["searchMode"] = "normal",
@@ -712,7 +712,7 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "knowledge",
 		}, -- [108]
 	},
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @normalPostPrice"] = "150% dbmarket",
 	["g@ @maxDeSearchPercent"] = 1,
 	["g@ @sniperCustomPrice"] = "0c",
