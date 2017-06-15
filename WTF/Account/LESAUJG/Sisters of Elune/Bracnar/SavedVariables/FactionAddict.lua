@@ -25,87 +25,100 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
+		["date"] = "Thursday 6/15",
+		["rows"] = 4,
+	}, -- [1]
+	{
+		["date"] = "Wednesday 6/14",
+		["rows"] = 5,
+	}, -- [2]
+	{
 		["date"] = "Tuesday 6/13",
 		["rows"] = 6,
-	}, -- [1]
+	}, -- [3]
 	{
 		["date"] = "Monday 6/12",
 		["rows"] = 7,
-	}, -- [2]
+	}, -- [4]
 	{
 		["date"] = "Sunday 6/11",
 		["rows"] = 2,
-	}, -- [3]
+	}, -- [5]
 	{
 		["date"] = "Saturday 6/10",
 		["rows"] = 2,
-	}, -- [4]
+	}, -- [6]
 	{
 		["date"] = "Friday 6/9",
 		["rows"] = 1,
-	}, -- [5]
+	}, -- [7]
 	{
 		["date"] = "Thursday 6/8",
 		["rows"] = 2,
-	}, -- [6]
+	}, -- [8]
 	{
 		["date"] = "Tuesday 6/6",
 		["rows"] = 1,
-	}, -- [7]
+	}, -- [9]
 	{
 		["date"] = "Monday 6/5",
 		["rows"] = 6,
-	}, -- [8]
+	}, -- [10]
 	{
 		["date"] = "Friday 6/2",
 		["rows"] = 2,
-	}, -- [9]
+	}, -- [11]
 	{
 		["date"] = "Thursday 6/1",
 		["rows"] = 5,
-	}, -- [10]
+	}, -- [12]
 	{
 		["date"] = "Tuesday 5/30",
 		["rows"] = 5,
-	}, -- [11]
+	}, -- [13]
 	{
 		["date"] = "Sunday 5/28",
 		["rows"] = 7,
-	}, -- [12]
+	}, -- [14]
 	{
 		["date"] = "Friday 5/26",
 		["rows"] = 7,
-	}, -- [13]
+	}, -- [15]
 	{
 		["date"] = "Wednesday 5/24",
 		["rows"] = 1,
-	}, -- [14]
+	}, -- [16]
 	{
 		["date"] = "Tuesday 5/23",
 		["rows"] = 3,
-	}, -- [15]
+	}, -- [17]
 	{
 		["date"] = "Monday 5/22",
 		["rows"] = 4,
-	}, -- [16]
+	}, -- [18]
 	{
 		["date"] = "Saturday 5/20",
 		["rows"] = 2,
-	}, -- [17]
+	}, -- [19]
 	{
 		["date"] = "Thursday 5/18",
 		["rows"] = 4,
-	}, -- [18]
-	{
-		["date"] = "Wednesday 5/17",
-		["rows"] = 5,
-	}, -- [19]
-	{
-		["date"] = "Tuesday 5/16",
-		["rows"] = 6,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
+	{
+		["The Wardens"] = 150,
+		["The Nightfallen"] = 400,
+		["Valarjar"] = 225,
+		["Highmountain Tribe"] = 325,
+	}, -- [1]
+	{
+		["The Nightfallen"] = 500,
+		["Armies of Legionfall"] = 75,
+		["Valarjar"] = 75,
+		["Highmountain Tribe"] = 75,
+		["Dreamweavers"] = 75,
+	}, -- [2]
 	{
 		["The Nightfallen"] = 575,
 		["Armies of Legionfall"] = 1400,
@@ -113,7 +126,7 @@ FactionAddictLogEntries = {
 		["Chromie"] = 752,
 		["Court of Farondis"] = 75,
 		["Dreamweavers"] = 1500,
-	}, -- [1]
+	}, -- [3]
 	{
 		["The Nightfallen"] = 2950,
 		["Armies of Legionfall"] = 938,
@@ -122,25 +135,25 @@ FactionAddictLogEntries = {
 		["The Wardens"] = 1312,
 		["Court of Farondis"] = 2475,
 		["Dreamweavers"] = 2175,
-	}, -- [2]
+	}, -- [4]
 	{
 		["The Wardens"] = 250,
 		["Armies of Legionfall"] = 725,
-	}, -- [3]
-	{
-		["The Wardens"] = 250,
-		["Armies of Legionfall"] = 500,
-	}, -- [4]
-	{
-		["Armies of Legionfall"] = 300,
 	}, -- [5]
 	{
 		["The Wardens"] = 250,
 		["Armies of Legionfall"] = 500,
 	}, -- [6]
 	{
-		["Armies of Legionfall"] = 4238,
+		["Armies of Legionfall"] = 300,
 	}, -- [7]
+	{
+		["The Wardens"] = 250,
+		["Armies of Legionfall"] = 500,
+	}, -- [8]
+	{
+		["Armies of Legionfall"] = 4238,
+	}, -- [9]
 	{
 		["The Nightfallen"] = 325,
 		["Valarjar"] = 1950,
@@ -148,25 +161,25 @@ FactionAddictLogEntries = {
 		["The Wardens"] = 550,
 		["Court of Farondis"] = 250,
 		["Dreamweavers"] = 1725,
-	}, -- [8]
+	}, -- [10]
 	{
 		["The Nightfallen"] = 500,
 		["Armies of Legionfall"] = 825,
-	}, -- [9]
+	}, -- [11]
 	{
 		["The Nightfallen"] = 1050,
 		["Armies of Legionfall"] = 4387,
 		["Highmountain Tribe"] = 2125,
 		["The Wardens"] = 475,
 		["Dreamweavers"] = 250,
-	}, -- [10]
+	}, -- [12]
 	{
 		["The Nightfallen"] = 2400,
 		["Armies of Legionfall"] = 780,
 		["Valarjar"] = 325,
 		["The Wardens"] = 1900,
 		["Court of Farondis"] = 75,
-	}, -- [11]
+	}, -- [13]
 	{
 		["The Nightfallen"] = 575,
 		["Armies of Legionfall"] = 1700,
@@ -175,7 +188,7 @@ FactionAddictLogEntries = {
 		["The Wardens"] = 2450,
 		["Court of Farondis"] = 725,
 		["Dreamweavers"] = 2575,
-	}, -- [12]
+	}, -- [14]
 	{
 		["The Nightfallen"] = 2775,
 		["Armies of Legionfall"] = 1050,
@@ -184,45 +197,30 @@ FactionAddictLogEntries = {
 		["The Wardens"] = 775,
 		["Court of Farondis"] = 2375,
 		["Dreamweavers"] = 300,
-	}, -- [13]
+	}, -- [15]
 	{
 		["The Nightfallen"] = 500,
-	}, -- [14]
+	}, -- [16]
 	{
 		["The Wardens"] = 400,
 		["Valarjar"] = 1975,
 		["Dreamweavers"] = 1875,
-	}, -- [15]
+	}, -- [17]
 	{
 		["The Wardens"] = 2225,
 		["Court of Farondis"] = 2650,
 		["Armies of Legionfall"] = 500,
 		["Dreamweavers"] = 150,
-	}, -- [16]
+	}, -- [18]
 	{
 		["Valarjar"] = 500,
 		["Armies of Legionfall"] = 250,
-	}, -- [17]
+	}, -- [19]
 	{
 		["The Wardens"] = 550,
 		["Armies of Legionfall"] = 1650,
 		["Valarjar"] = 675,
 		["The Nightfallen"] = 700,
-	}, -- [18]
-	{
-		["The Nightfallen"] = 500,
-		["Armies of Legionfall"] = 1575,
-		["Valarjar"] = 150,
-		["The Wardens"] = 150,
-		["Dreamweavers"] = 1500,
-	}, -- [19]
-	{
-		["Armies of Legionfall"] = 2100,
-		["Valarjar"] = 2300,
-		["Highmountain Tribe"] = 1400,
-		["The Wardens"] = 3350,
-		["Court of Farondis"] = 750,
-		["Dreamweavers"] = 725,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
@@ -352,9 +350,9 @@ FactionAddictConfigIsInactive = {
 	[1388] = false,
 	[1279] = false,
 	[69] = false,
-	[81] = false,
-	[1216] = false,
 	[2045] = false,
+	[1216] = false,
+	[1280] = false,
 	[70] = false,
 	[1090] = false,
 	[93] = false,
@@ -380,7 +378,7 @@ FactionAddictConfigIsInactive = {
 	[1732] = false,
 	[1031] = false,
 	[932] = false,
-	[1280] = false,
+	[81] = false,
 	[1733] = false,
 	[1847] = false,
 	[1351] = false,

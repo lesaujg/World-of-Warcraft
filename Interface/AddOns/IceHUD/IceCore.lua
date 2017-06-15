@@ -139,7 +139,7 @@ StaticPopupDialogs["ICEHUD_UPDATE_PERIOD_MATTERS"] =
 function IceCore.prototype:CheckDisplayUpdateMessage()
 	local thisVersion
 --@non-debug@
-	thisVersion = 2017032902800
+	thisVersion = 20170615025629
 --@end-non-debug@
 --[===[@debug@
 	thisVersion = 99999999999999

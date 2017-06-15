@@ -743,3 +743,4 @@ Note: the combat and status icons are actually the same texture so you'll only s
 L["With this enabled, all icons will be 100% visible regardless of the alpha settings for this bar."] = true
 L["With this enabled, the raid icon is always 100% alpha, regardless of the bar's alpha. Otherwise, it assumes the bar's alpha level."] = true
 L["You have changed IceHUD profiles while in combat. This can cause problems due to Blizzard's secure frame policy. You may need to reload your UI to repair IceHUD."] = true
+
