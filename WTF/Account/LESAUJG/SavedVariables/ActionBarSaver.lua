@@ -112,7 +112,7 @@ ActionBarSaverDB = {
 				nil, -- [8]
 				"spell|1543||Flare||", -- [9]
 				nil, -- [10]
-				"macro|11||Counter Shot|249170|/stopcasting/n/stopcasting/n/cast Counter Shot/n/cast Auto Shot", -- [11]
+				nil, -- [11]
 				"macro|12||_AspectTurtle|132199|/cancelaura Aspect of the Turtle/n/cast Aspect of the Turtle", -- [12]
 				nil, -- [13]
 				nil, -- [14]
@@ -126,10 +126,10 @@ ActionBarSaverDB = {
 				nil, -- [22]
 				nil, -- [23]
 				nil, -- [24]
-				"spell|194386||Volley||", -- [25]
-				"spell|109248||Binding Shot||", -- [26]
-				"spell|5116||Concussive Shot||", -- [27]
-				nil, -- [28]
+				"macro|25||Counter Shot|249170|/stopcasting/n/stopcasting/n/cast Counter Shot/n/cast Auto Shot", -- [25]
+				"spell|194386||Volley||", -- [26]
+				"spell|109248||Binding Shot||", -- [27]
+				"spell|5116||Concussive Shot||", -- [28]
 				nil, -- [29]
 				"macro|30||Disengage|132294|/stopcasting/n/stopcasting/n/cast Disengage/n/cast Auto Shot", -- [30]
 				"spell|109304||Exhilaration||", -- [31]
@@ -159,7 +159,7 @@ ActionBarSaverDB = {
 				"item|142117||Potion of Prolonged Power", -- [55]
 				nil, -- [56]
 				"macro|57||_Kite|132128|/use [button:1] 15/n/use [button:1] Rocfeather Skyhorn Kite/n/use [button:2] Brulfist Idol", -- [57]
-				nil, -- [58]
+				"item|136342||Obliterum Ash", -- [58]
 				"item|60854||Loot-A-Rang", -- [59]
 				"macro|60||RandomMount|132248|/use [mod:ctrlshift]Grand Expedition Yak/n/use [mod:shift]Traveler's Tundra Mammoth/n/use [mod:ctrl]Azure Water Strider/n/use [mod:alt] Mimiron's Head/n#showtooltip [nomod]White Ram/n/click [nobtn:2]LiteMount/n/click [btn:2]LiteMount RightButton", -- [60]
 				"macro|61||_Bestial Wrath|132127|#showtooltip/n/cast [btn:2] Ancient Hysteria/n/cast Bestial Wrath/n/cast Aspect of the Wild/n/use Tabard of the Protector/n/use 13/n/use 14", -- [61]
@@ -169,11 +169,11 @@ ActionBarSaverDB = {
 				[66] = "macro|66||Reload|132096|/console worldPreloadNonCritical 0/n/reload",
 				[115] = "item|28237||Medallion of the Alliance",
 				[67] = "macro|67||_FeignDeath|132293|/cast [nobtn:2]Feign Death/n/cast [btn:2][mod] Play Dead",
-				[72] = "macro|72||MD+|132180|#show Misdirection/n/focus [button:2] target/n/clearfocus [button:2,mod:ctrl]/n/stopmacro [button:2][mod:ctrl]/n/cast [@focus,help,nodead][@pet,nodead,exists] Misdirection",
 				[68] = "macro|68||_Clear Target|132092|/stopcasting/n/cleartarget/n/petfollow/n/petpassive",
-				[117] = "item|58145||Potion of the Tol'vir",
-				[69] = "macro|69||Pet|132161|#showtooltip/n/cast [button:1, nopet] Call Pet 4/n/cast [button:2, nopet] Call Pet 5/n/cast [@pet,button:2,exists,nodead] Dismiss Pet/n/cast [@pet,exists,nodead] Mend Pet; Revive Pet",
 				[98] = "item|32539||Skyguard's Drape",
+				[72] = "macro|72||MD+|132180|#show Misdirection/n/focus [button:2] target/n/clearfocus [button:2,mod:ctrl]/n/stopmacro [button:2][mod:ctrl]/n/cast [@focus,help,nodead][@pet,nodead,exists] Misdirection",
+				[69] = "macro|69||Pet|132179|#showtooltip/n/cast [button:1, nopet] Call Pet 4/n/cast [button:2, nopet] Call Pet 5/n/cast [@pet,button:2,exists,nodead] Dismiss Pet/n/cast [@pet,exists,nodead] Mend Pet; Revive Pet",
+				[117] = "item|58145||Potion of the Tol'vir",
 				[114] = "item|6948||Hearthstone",
 				[70] = "macro|70||_Pet Attack/Foll|132117|/petfollow [button:2]/n/dismount/n/petattack/n/cast Warp/n/cast Dash",
 			},

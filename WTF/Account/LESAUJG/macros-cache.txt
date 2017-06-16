@@ -8,6 +8,9 @@ VER 3 0000000000000099 "Fish" "INV_MISC_QUESTIONMARK"
 /equipset Fishing
 /use Fishing
 END
+VER 3 00000000000000A0 "Obliterate" "1043741"
+/click EasyObliterate
+END
 VER 3 0000000000000087 "RandomMount" "INV_MISC_QUESTIONMARK"
 /use [mod:ctrlshift]Grand Expedition Yak
 /use [mod:shift]Traveler's Tundra Mammoth
