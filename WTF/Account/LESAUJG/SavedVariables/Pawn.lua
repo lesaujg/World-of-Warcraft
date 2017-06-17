@@ -10,7 +10,7 @@ PawnCommon = {
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
-	["LastVersion"] = 2.0206,
+	["LastVersion"] = 2.0208,
 	["ShowSocketingAdvisor"] = true,
 	["Scales"] = {
 		["\"MrRobot\":HUNTER3"] = {
@@ -104,6 +104,9 @@ PawnCommon = {
 		["\"MrRobot\":DRUID1"] = {
 			["IconTexturePath"] = 136096,
 			["PerCharacterOptions"] = {
+				["Uldaris-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ff7d0a",
 			["LocalizedName"] = "Druid: Balance",
@@ -343,9 +346,6 @@ PawnCommon = {
 		["\"MrRobot\":DRUID4"] = {
 			["IconTexturePath"] = 136041,
 			["PerCharacterOptions"] = {
-				["Uldaris-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 			},
 			["Color"] = "ff7d0a",
 			["LocalizedName"] = "Druid: Restoration",
@@ -484,10 +484,10 @@ PawnCommon = {
 		["\"MrRobot\":PALADIN3"] = {
 			["IconTexturePath"] = 135873,
 			["PerCharacterOptions"] = {
-				["Galinar-Sisters of Elune"] = {
+				["Herbinator-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
-				["Herbinator-Sisters of Elune"] = {
+				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
 			},

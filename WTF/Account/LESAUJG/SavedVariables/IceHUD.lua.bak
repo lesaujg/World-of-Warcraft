@@ -8,10 +8,13 @@ IceCoreDB = {
 		["lastRunVersion"] = 20170615025629,
 	},
 	["profileKeys"] = {
-		["Herbinator - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Galinar - Sisters of Elune"] = "Default",
 		["Clothgar - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
+		["Belrath - Sisters of Elune"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -72,6 +75,11 @@ IceCoreDB = {
 					["updatedInverseExpand"] = true,
 				},
 				["PetMana"] = {
+					["updatedReverseInverse"] = true,
+					["myTagVersion"] = 3,
+					["updatedInverseExpand"] = true,
+				},
+				["PlayerAltMana"] = {
 					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,

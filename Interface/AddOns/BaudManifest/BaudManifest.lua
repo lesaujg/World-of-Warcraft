@@ -231,7 +231,7 @@ local function GetItemString(Link)
   if strmatch(Link, "battlepet:") then
     return strmatch(Link, "(battlepet:%d*:%d*:%d*:%d*:%d*:%d*:%d*)|");
   elseif strmatch(Link, "keystone:") then
-    return strmatch(Link, "(keystone:%d*:%d*:%d*:%d*:%d*:%d*)|");
+    return strmatch(Link, "(keystone:%d*:%d*:%d*:%d*:%d*)|");
   else
     return strmatch(Link, "(item:%d*:%d*:%d*:%d*:%d*:%d*:%-?%d*:%-?%d*:%d*:%d*:[%d:]+)|");
   end
@@ -3248,17 +3248,11 @@ function BaudManifestScrollBar_Update(Display)
           MaxCount = 1;
           itemId = "82800";
         elseif strmatch(ItemInfo.ItemString, "keystone:") then
-          local dungeonID, plusLevel, active = strmatch(ItemInfo.ItemString, "keystone:(%d+):(%d+):(%d+)");
+          local dungeonID, plusLevel = strmatch(ItemInfo.ItemString, "keystone:(%d+):(%d+)");
           Name = "Keystone: ";
           Name = Name .. C_ChallengeMode.GetMapInfo(dungeonID);
           Name = Name .. "+";
           Name = Name .. plusLevel;
-          if not active then
-            Name = Name .. " (Depleted)";
-            Quality = 0;
-          else
-            Quality = 4;
-          end
           itemId = "138019";
           Texture = select(10, GetItemInfo(itemId));
           MaxCount = 1;

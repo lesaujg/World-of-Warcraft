@@ -102,6 +102,9 @@ PawnCommon = {
 		["\"MrRobot\":DRUID1"] = {
 			["IconTexturePath"] = 136096,
 			["PerCharacterOptions"] = {
+				["Uldaris-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ff7d0a",
 			["ClassID"] = 11,
@@ -479,10 +482,10 @@ PawnCommon = {
 		["\"MrRobot\":PALADIN3"] = {
 			["IconTexturePath"] = 135873,
 			["PerCharacterOptions"] = {
-				["Herbinator-Sisters of Elune"] = {
+				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
-				["Galinar-Sisters of Elune"] = {
+				["Herbinator-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
 			},
@@ -590,9 +593,6 @@ PawnCommon = {
 		["\"MrRobot\":DRUID4"] = {
 			["IconTexturePath"] = 136041,
 			["PerCharacterOptions"] = {
-				["Uldaris-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 			},
 			["Color"] = "ff7d0a",
 			["ClassID"] = 11,
@@ -675,6 +675,6 @@ PawnCommon = {
 	["ButtonPosition"] = 2,
 	["IgnoreGemsWhileLeveling"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["LastVersion"] = 2.0206,
+	["LastVersion"] = 2.0208,
 	["ShownGettingStarted"] = true,
 }

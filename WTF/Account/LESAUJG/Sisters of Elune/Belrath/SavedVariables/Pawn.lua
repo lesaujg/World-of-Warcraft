@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0115,
+	["LastVersion"] = 2.0208,
 	["LastPlayerFullName"] = "Belrath-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
