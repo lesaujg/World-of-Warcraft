@@ -95,10 +95,6 @@ IceCoreDB = {
 				["ScaledManaColor"] = {
 					["r"] = 1,
 				},
-				["ScaledHealthColor"] = {
-					["g"] = 0,
-					["r"] = 1,
-				},
 			},
 		},
 	},
