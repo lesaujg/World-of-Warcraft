@@ -1,6 +1,6 @@
 SET blockTrades "1"
 SET autoQuestPopUps "v##$"
-SET trackedQuests "v&kC%s*"
+SET trackedQuests "v%s*&kC"
 SET hardTrackedQuests "v"
 SET trackedWorldQuests "v"
 SET hardTrackedWorldQuests "v"

@@ -4,7 +4,6 @@ PawnOptions = {
 	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
-	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128858] = {
 			["Relics"] = {
@@ -18,6 +17,7 @@ PawnOptions = {
 			["Name"] = "Scythe of Elune",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "DRUID",
