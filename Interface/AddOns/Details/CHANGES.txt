@@ -1,7 +1,7 @@
-changeset:   634:b0b9c5e3b2b0
-tag:         v7.2.0.3703.119-release
+changeset:   642:359c01b86e67
+tag:         v7.2.5.3967.120-release
 user:        Tercio
-date:        Mon May 29 20:39:31 2017 -0300
-summary:     - Fixed an error while killing low level mobs with warrior class.
+date:        Mon Jun 19 19:27:03 2017 -0300
+summary:     - added tomb of sargeras raid info plugin.
 
 

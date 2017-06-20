@@ -13,7 +13,7 @@ TukuiData = {
 			["Belrath"] = 101901155,
 			["Leanara"] = 122987790,
 			["Sanjuri"] = 11460,
-			["Clothgar"] = 38634754604,
+			["Clothgar"] = 38686282637,
 		},
 		["Turalyon"] = {
 			["Guldahka"] = 2000,
