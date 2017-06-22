@@ -1,7 +1,7 @@
-changeset:   642:359c01b86e67
-tag:         v7.2.5.3967.120-release
+changeset:   644:cd5368e88a67
+tag:         tip
 user:        Tercio
-date:        Mon Jun 19 19:27:03 2017 -0300
-summary:     - added tomb of sargeras raid info plugin.
+date:        Wed Jun 21 00:18:05 2017 -0300
+summary:     - attempt to fix the spellname nil problem on some encounters.
 
 
