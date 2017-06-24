@@ -207,17 +207,17 @@ TukuiData = {
 					false, -- [1]
 					0, -- [2]
 				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
-				},
 				["Friends"] = {
 					true, -- [1]
 					3, -- [2]
 				},
-				["Memory"] = {
+				["FPS & MS"] = {
 					true, -- [1]
-					5, -- [2]
+					4, -- [2]
+				},
+				["Currency"] = {
+					false, -- [1]
+					0, -- [2]
 				},
 				["Time"] = {
 					true, -- [1]
@@ -239,9 +239,9 @@ TukuiData = {
 					true, -- [1]
 					7, -- [2]
 				},
-				["Currency"] = {
-					false, -- [1]
-					0, -- [2]
+				["Memory"] = {
+					true, -- [1]
+					5, -- [2]
 				},
 			},
 			["HideBar5"] = false,
