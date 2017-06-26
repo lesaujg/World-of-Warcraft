@@ -36,26 +36,26 @@ TradeSkillMaster_ShoppingDB = {
 		["auction"] = true,
 	},
 	["g@ @sniperVendorPrice"] = true,
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @savedSearches"] = {
+		{
+			["lastSearch"] = 1498473618,
+			["name"] = "/Miscellaneous/Mount",
+			["filter"] = "/Miscellaneous/Mount",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [1]
 		{
 			["lastSearch"] = 1498223919,
 			["name"] = "Flask of the Seventh Demon",
 			["filter"] = "Flask of the Seventh Demon",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [1]
+		}, -- [2]
 		{
 			["lastSearch"] = 1498223778,
 			["name"] = "potion of Prolonged Power",
 			["filter"] = "potion of Prolonged Power",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [2]
-		{
-			["lastSearch"] = 1498221044,
-			["name"] = "/Miscellaneous/Mount",
-			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [3]
@@ -695,7 +695,7 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "Felwort/exact",
 		}, -- [108]
 	},
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @maxDeSearchLvl"] = 735,
 	["g@ @minDeSearchLvl"] = 1,

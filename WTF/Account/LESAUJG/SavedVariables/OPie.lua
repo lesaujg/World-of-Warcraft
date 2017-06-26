@@ -38,10 +38,30 @@ OneRing_Config = {
 					["sliceToken"] = "ABueyhiySOp",
 					["id"] = 83245,
 				}, -- [5]
-				["limit"] = "Bracnar-SistersofElune",
+				["name"] = "Pets",
 				["save"] = true,
 				["hotkey"] = "ALT-W",
-				["name"] = "Pets",
+				["limit"] = "Bracnar-SistersofElune",
+			},
+			["Food"] = {
+				{
+					"item", -- [1]
+					142334, -- [2]
+					["sliceToken"] = "ABueoVMF3Hu",
+				}, -- [1]
+				{
+					"item", -- [1]
+					133572, -- [2]
+					["sliceToken"] = "ABueoVMF3Hy",
+				}, -- [2]
+				{
+					"item", -- [1]
+					140587, -- [2]
+					["sliceToken"] = "ABueoVMF3Ht",
+				}, -- [3]
+				["name"] = "Food",
+				["save"] = true,
+				["limit"] = "Bracnar-SistersofElune",
 			},
 			["sefulItems"] = {
 				{
@@ -69,30 +89,10 @@ OneRing_Config = {
 					49040, -- [2]
 					["sliceToken"] = "ABuepmAOjSe",
 				}, -- [5]
-				["limit"] = "Bracnar-SistersofElune",
+				["name"] = "Useful Items",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Useful Items",
-			},
-			["Food"] = {
-				{
-					"item", -- [1]
-					142334, -- [2]
-					["sliceToken"] = "ABueoVMF3Hu",
-				}, -- [1]
-				{
-					"item", -- [1]
-					133572, -- [2]
-					["sliceToken"] = "ABueoVMF3Hy",
-				}, -- [2]
-				{
-					"item", -- [1]
-					140587, -- [2]
-					["sliceToken"] = "ABueoVMF3Ht",
-				}, -- [3]
 				["limit"] = "Bracnar-SistersofElune",
-				["save"] = true,
-				["name"] = "Food",
 			},
 			["OPieFlagStore"] = {
 				["FlushedDefaultColors"] = true,
