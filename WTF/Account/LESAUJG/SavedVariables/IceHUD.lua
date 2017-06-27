@@ -14,7 +14,7 @@ IceCoreDB = {
 		["Clothgar - Sisters of Elune"] = "Default",
 	},
 	["global"] = {
-		["lastRunVersion"] = 20170615025629,
+		["lastRunVersion"] = 20170618063751,
 	},
 	["profiles"] = {
 		["Default"] = {

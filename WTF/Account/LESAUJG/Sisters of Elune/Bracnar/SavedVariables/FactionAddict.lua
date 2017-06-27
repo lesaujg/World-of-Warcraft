@@ -26,7 +26,7 @@ FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
 		["date"] = "Monday 6/26",
-		["rows"] = 1,
+		["rows"] = 3,
 	}, -- [1]
 	{
 		["date"] = "Sunday 6/25",
@@ -107,6 +107,8 @@ FactionAddictLogData = {
 }
 FactionAddictLogEntries = {
 	{
+		["Armies of Legionfall"] = 575,
+		["Dreamweavers"] = 1500,
 		["Highmountain Tribe"] = 75,
 	}, -- [1]
 	{
@@ -342,9 +344,9 @@ FactionAddictConfigIsInactive = {
 	[1388] = false,
 	[1279] = false,
 	[69] = false,
-	[2045] = false,
+	[81] = false,
 	[1216] = false,
-	[1280] = false,
+	[2045] = false,
 	[70] = false,
 	[1345] = false,
 	[93] = false,
@@ -370,7 +372,7 @@ FactionAddictConfigIsInactive = {
 	[1732] = false,
 	[1031] = false,
 	[932] = false,
-	[81] = false,
+	[1280] = false,
 	[1733] = false,
 	[1690] = false,
 	[1351] = false,
