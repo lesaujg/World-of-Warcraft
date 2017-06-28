@@ -1,7 +1,7 @@
 --Easy Obliterate by Motig
 LoadAddOn("Blizzard_ObliterumUI")
 
-local addonVersion = 26
+local addonVersion = 27
 local currentPage = 1
 local selectedButton = nil
 local previousSelectedButton = nil
@@ -22,8 +22,8 @@ local saveData = {}
 local defaultSettings = {
     showTooltip = true,
     showAshStats = true,
+    ignoreWardrobeItems = false;
 }
-
 
 local backupAshText = 'Obliterum Ash'
 local textColor = {r='0.99999779462814', g='0.12548992037773', b='0.12548992037773', a='0.99999779462814'}
@@ -73,6 +73,25 @@ local function getEligibleAshTotal()
     return totalA
 end
 
+local function itemInWardrobeSet(itemID, bag, slot)
+    for i = 1, GetNumEquipmentSets() do
+        local setName = GetEquipmentSetInfo(i)
+        local items = GetEquipmentSetItemIDs(setName)
+        for z = 1, 19 do --would be nicer to get the slot id beforehand so we don't have to loop over all the items in a set
+            if items[z] then
+                if itemID == items[z] then
+                    local equipmentSetInfo = GetEquipmentSetLocations(setName)
+                    local onPlayer, inBank, inBags, inVoidStorage, slotNumber, bagNumber = EquipmentManager_UnpackLocation(equipmentSetInfo[z])
+                    if bag == bagNumber and slot == slotNumber then
+                        return true
+                    end
+                end
+            end
+        end
+    end
+    return false
+end
+
 --This is gross but is done to not have to maintain a list of items that can be obliterated.
 local function itemEligible(itemID)
     if itemCache[itemID] ~= nil then
@@ -106,6 +125,8 @@ local function getEligibleItems()
    failedItems = {}
    C_TradeSkillUI.ClearPendingObliterateItem()
    
+   local setItemsIgnored = 0
+   
    for bag = 0, 4 do
       for i = 1, GetContainerNumSlots(bag) do
          local itemID = GetContainerItemID(bag, i)
@@ -113,7 +134,16 @@ local function getEligibleItems()
          --if itemID and itemEligible(itemLink, itemID) then
          if itemID and itemEligible(itemID) then
             local texture, itemCount, locked, quality, readable, lootable, itemLink, isFiltered = GetContainerItemInfo(bag, i)
-            table.insert(eligibleItems, {bag = bag, index = i, itemLink = itemLink, itemTexture = texture, itemCount = itemCount, itemID = itemID, itemQuality = quality, itemName = string.match(itemLink, "%[(.+)%]")})
+            
+            if saveData.addonSettings.ignoreWardrobeItems then
+                if not itemInWardrobeSet(itemID, bag, i) then
+                    table.insert(eligibleItems, {bag = bag, index = i, itemLink = itemLink, itemTexture = texture, itemCount = itemCount, itemID = itemID, itemQuality = quality, itemName = string.match(itemLink, "%[(.+)%]")})
+                else
+                    setItemsIgnored = setItemsIgnored + 1
+                end
+            else
+                table.insert(eligibleItems, {bag = bag, index = i, itemLink = itemLink, itemTexture = texture, itemCount = itemCount, itemID = itemID, itemQuality = quality, itemName = string.match(itemLink, "%[(.+)%]")})           
+            end
          end
       end
    end
@@ -152,6 +182,10 @@ local function getEligibleItems()
         showGetItemError = false
         if _eadebug then for i = 1, #failedItems do print(failedItems[i]) end end
         DEFAULT_CHAT_FRAME:AddMessage('Easy Obliterate: Failed to retrieve item info for some items. Usually this happens if you open the forge too soon after logging in. They will appear as you obliterate items or if you open the forge at a later time if they can be obliterated.')
+    end
+    
+    if saveData.addonSettings.ignoreWardrobeItems and setItemsIgnored > 0 then
+        DEFAULT_CHAT_FRAME:AddMessage('Easy Obliterate: Ignored '..setItemsIgnored..' item(s) that are used in a saved equipment set.')
     end
 end
 
@@ -266,6 +300,11 @@ for i = 1, 2 do
    mainFrame.buttons[i]:SetHighlightTexture('Interface/Buttons/UI-Common-MouseHilight', 'ADD')
    mainFrame.buttons[i]:SetSize(24, 24)
 end
+
+local settingsButton = CreateFrame('Button', nil, mainFrame, 'GameMenuButtonTemplate')
+settingsButton:SetSize(74, 20)
+settingsButton:SetPoint('RIGHT', mainFrame.buttons[1], 'LEFT', -10, 0)
+settingsButton:SetText('Settings')
 
 local itemName = ObliterumForgeFrame:CreateFontString()
 itemName:SetFontObject("GameFontHighlight")
@@ -993,6 +1032,33 @@ optionsFrame.showTooltip.text:SetPoint('LEFT', 36, 0)
 optionsFrame.showTooltip:SetScript('OnClick', function()
     saveData.addonSettings.showTooltip = not saveData.addonSettings.showTooltip
 end)
+
+optionsFrame.ignoreWardrobeItems = CreateFrame('CheckButton', nil, optionsFrame, 'UICheckButtonTemplate')
+optionsFrame.ignoreWardrobeItems:SetSize(32, 32)
+optionsFrame.ignoreWardrobeItems:SetPoint('TOPLEFT', optionsFrame.subText, 'BOTTOMLEFT', 0, -54)
+
+optionsFrame.ignoreWardrobeItems.text = optionsFrame.ignoreWardrobeItems:CreateFontString()
+optionsFrame.ignoreWardrobeItems.text:SetFontObject('GameFontNormal')
+optionsFrame.ignoreWardrobeItems.text:SetText('Hide items used in an equipment set.')
+optionsFrame.ignoreWardrobeItems.text:SetPoint('LEFT', 36, 0)
+
+optionsFrame.ignoreWardrobeItems:SetScript('OnClick', function()
+    saveData.addonSettings.ignoreWardrobeItems = not saveData.addonSettings.ignoreWardrobeItems
+    if ObliterumForgeFrame:IsVisible() then
+        populateFrame()
+    end
+end)
+
+optionsFrame.keyBindingsButton = CreateFrame('Button', nil, optionsFrame, 'GameMenuButtonTemplate')
+optionsFrame.keyBindingsButton:SetSize(128, 32)
+optionsFrame.keyBindingsButton:SetPoint('TOPLEFT', optionsFrame.ignoreWardrobeItems, 'BOTTOMLEFT', 0, -12)
+optionsFrame.keyBindingsButton:SetText('Keybinding')
+optionsFrame.keyBindingsButton:SetScript('OnClick', function()
+    InterfaceOptionsFrame:Hide()
+    LoadAddOn("Blizzard_BindingUI")
+    KeyBindingFrame:Show()
+    KeyBindingFrameCategoryListButton11:Click()
+end)
     
 optionsFrame:SetScript("OnShow", function()
     if saveData.addonSettings.showTooltip then
@@ -1000,9 +1066,16 @@ optionsFrame:SetScript("OnShow", function()
     else
         optionsFrame.showTooltip:SetChecked(false)
     end
+    
+    if saveData.addonSettings.ignoreWardrobeItems then
+        optionsFrame.ignoreWardrobeItems:SetChecked(true)
+    else
+        optionsFrame.ignoreWardrobeItems:SetChecked(false)
+    end
 end)
 
 InterfaceOptions_AddCategory(optionsFrame)
 
 SLASH_EASYOBLITERATE1 = '/easyobliterate'
 SlashCmdList['EASYOBLITERATE'] = function() InterfaceOptionsFrame_OpenToCategory(optionsFrame) InterfaceOptionsFrame_OpenToCategory(optionsFrame) end
+settingsButton:SetScript('OnClick', function() InterfaceOptionsFrame_OpenToCategory(optionsFrame) InterfaceOptionsFrame_OpenToCategory(optionsFrame) end)

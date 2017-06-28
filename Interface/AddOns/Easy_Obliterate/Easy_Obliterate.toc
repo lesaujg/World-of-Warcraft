@@ -2,7 +2,7 @@
 ## Title: Easy Obliterate
 ## Notes: Adds all eligible gear to the obliterate interface.
 ## Author: Motig
-## Version: 26
+## Version: 27
 ## SavedVariablesPerCharacter: EasyObliterate_IgnoreList
 ## SavedVariables: EasyObliterate_Data
 

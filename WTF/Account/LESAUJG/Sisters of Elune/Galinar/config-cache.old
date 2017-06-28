@@ -1,6 +1,6 @@
 SET autoLootDefault "1"
 SET autoQuestPopUps "v##$"
-SET trackedQuests "v'\}'Qm'v_(C:'Ql'We(:I%p|'\`'gi"
+SET trackedQuests "v%p|'Ql'Qm'We'\`'\}'gi'v_(:I(C:"
 SET hardTrackedQuests "v"
 SET trackedWorldQuests "v"
 SET hardTrackedWorldQuests "v"
