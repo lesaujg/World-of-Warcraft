@@ -12,8 +12,8 @@ EasyObliterate_Data = {
 		[128541] = {
 			[110] = {
 				["minAsh"] = 100,
-				["obliterateCount"] = 1071,
-				["averageAsh"] = 130.994397759103,
+				["obliterateCount"] = 1171,
+				["averageAsh"] = 131.145175064047,
 				["maxAsh"] = 157,
 			},
 		},

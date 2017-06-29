@@ -95,6 +95,13 @@ IceCoreDB = {
 				["ScaledManaColor"] = {
 					["r"] = 1,
 				},
+				["ScaledHealthColor"] = {
+					["g"] = 0,
+					["r"] = 1,
+				},
+			},
+			["minimap"] = {
+				["minimapPos"] = 316.181229270968,
 			},
 		},
 	},
