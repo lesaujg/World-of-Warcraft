@@ -285,17 +285,17 @@ TukuiData = {
 					false, -- [1]
 					0, -- [2]
 				},
-				["Currency"] = {
-					false, -- [1]
-					0, -- [2]
-				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
-				},
 				["Memory"] = {
 					true, -- [1]
 					5, -- [2]
+				},
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Currency"] = {
+					false, -- [1]
+					0, -- [2]
 				},
 				["Time"] = {
 					true, -- [1]
@@ -317,9 +317,9 @@ TukuiData = {
 					false, -- [1]
 					0, -- [2]
 				},
-				["Friends"] = {
+				["FPS & MS"] = {
 					true, -- [1]
-					3, -- [2]
+					4, -- [2]
 				},
 			},
 		},
@@ -1605,13 +1605,13 @@ TukuiData = {
 	},
 	["Gold"] = {
 		["Sisters of Elune"] = {
-			["Bracnar"] = 9379334599,
+			["Bracnar"] = 9416934222,
 			["Ghiaccioli"] = 557311374,
 			["Mandelbrot"] = 1695245,
 			["Torinar"] = 120507701,
 			["Orig"] = 124595949,
 			["Herbinator"] = 5452435,
-			["Clothgar"] = 52112834975,
+			["Clothgar"] = 56830438346,
 			["Galinar"] = 784931532,
 			["Belrath"] = 101901155,
 			["Sanjuri"] = 11460,

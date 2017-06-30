@@ -1,24 +1,20 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0206,
+	["LastVersion"] = 2.0208,
 	["LastPlayerFullName"] = "Galinar-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
-	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[120978] = {
 			["Relics"] = {
 				{
-					["ItemLevel"] = 16,
+					["ItemLevel"] = 24,
 					["Type"] = "Holy",
 				}, -- [1]
 				{
-					["ItemLevel"] = 18,
+					["ItemLevel"] = 24,
 					["Type"] = "Fire",
 				}, -- [2]
-				{
-					["Type"] = "Holy",
-				}, -- [3]
 			},
 			["Name"] = "Ashbringer",
 		},
@@ -50,6 +46,7 @@ PawnOptions = {
 			["Name"] = "The Silver Hand",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "PALADIN",
