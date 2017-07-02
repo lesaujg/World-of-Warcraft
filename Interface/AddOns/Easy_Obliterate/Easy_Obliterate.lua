@@ -1,7 +1,7 @@
 --Easy Obliterate by Motig
 LoadAddOn("Blizzard_ObliterumUI")
 
-local addonVersion = 27
+local addonVersion = 28
 local currentPage = 1
 local selectedButton = nil
 local previousSelectedButton = nil
@@ -14,7 +14,7 @@ local ashLooted = false
 local failedItems = {}
 local itemIgnoreList = {}
 local showGetItemError = false
-local lastItem = {itemID = 0, itemLevel = 0, ashAamount = 0}
+local lastItem = {itemID = 0, itemLevel = 0, ashAmount = 0}
 local currentItem = {itemID = 0, itemLevel = 0}
 local currentLineID = nil
 local saveData = {}
@@ -22,7 +22,7 @@ local saveData = {}
 local defaultSettings = {
     showTooltip = true,
     showAshStats = true,
-    ignoreWardrobeItems = false;
+    ignoreWardrobeItems = false,
 }
 
 local backupAshText = 'Obliterum Ash'
@@ -753,12 +753,32 @@ local function showSelection()
     end
 end
 
+function cleanMinAsh100Stats()
+    if not saveData.ashStats then return end
+
+    EA_itemsRemoved = {}
+    for itemID, itemLevels in pairs(saveData.ashStats) do
+        for itemLevel, ashStats in pairs(saveData.ashStats[itemID]) do
+            if ashStats.minAsh == 100 then
+                table.insert(EA_itemsRemoved, {itemID = itemID, itemLevel = itemLevel})
+                saveData.ashStats[itemID][itemLevel] = nil
+                GetItemInfo(itemID)
+            end
+        end
+    end
+    
+    --Removed items that may have bugged stats if none then user was unnafected and doesn't need to know.
+    if #EA_itemsRemoved > 0 then
+        StaticPopup_Show("EasyObliterate_MinAsh100Bug")
+    end
+end
+
 local function updateAshStats(itemID, itemLevel, ashCount)
-    if not itemID or not itemLevel then return end
+    if not itemID or not itemLevel or not ashCount then return end
     ashCount = tonumber(ashCount)
     
     if not saveData.ashStats[itemID] then saveData.ashStats[itemID] = {} end
-    if not saveData.ashStats[itemID][itemLevel] then saveData.ashStats[itemID][itemLevel] = {minAsh = 100, maxAsh = 0, averageAsh = 0, obliterateCount = 0} end
+    if not saveData.ashStats[itemID][itemLevel] then saveData.ashStats[itemID][itemLevel] = {minAsh = ashCount, maxAsh = ashCount, averageAsh = 0, obliterateCount = 0} end
     
     if ashCount < saveData.ashStats[itemID][itemLevel].minAsh then saveData.ashStats[itemID][itemLevel].minAsh = ashCount end
     if ashCount > saveData.ashStats[itemID][itemLevel].maxAsh then saveData.ashStats[itemID][itemLevel].maxAsh = ashCount end
@@ -867,6 +887,11 @@ mainFrame:SetScript('OnEvent', function(self, event, ...)
                     StaticPopup_Show ("EasyObliterate_AshStatsWiped")
                 end
                 
+                if saveData.addonVersion < 28 then
+                    --See if user is affected by minAsh bug and inform if so and clean items with 100 minAsh
+                    cleanMinAsh100Stats()
+                end
+                
                 if not saveData.addonSettings then
                     createDefaultSettings()
                 end
@@ -961,6 +986,30 @@ StaticPopupDialogs["EasyObliterate_AshNotFound"] = {
    whileDead = true,
    hideOnEscape = true,
    preferredIndex = 3,
+}
+
+StaticPopupDialogs["EasyObliterate_MinAsh100Bug"] = {
+    text = 'Easy Obliterate\n\n Due to a bug, items that always yield more than 100 ash have been showing lower average ash stats than they should\'ve. The stats for these items have been reset, would you like to see which items were affected?',
+    button1 = "Yes",
+    button2 = "No",
+    timeout = 0,
+    whileDead = true,
+    hideOnEscape = true,
+    preferredIndex = 3,
+    OnAccept = function()
+        if EA_itemsRemoved then
+            DEFAULT_CHAT_FRAME:AddMessage('--Easy Obliterate--')
+            for i = 1, #EA_itemsRemoved do
+                local itemName = GetItemInfo(EA_itemsRemoved[i].itemID)
+                if itemName then
+                    DEFAULT_CHAT_FRAME:AddMessage(itemName..'(iLvL '..EA_itemsRemoved[i].itemLevel..')')
+                else
+                    DEFAULT_CHAT_FRAME:AddMessage('Failed to retrieve item name for itemID: '..EA_itemsRemoved[i].itemID)
+                end
+            end    
+            DEFAULT_CHAT_FRAME:AddMessage('--Easy Obliterate--')
+        end
+    end
 }
 
 StaticPopupDialogs["EasyObliterate_AshStatsWiped"] = {
