@@ -17,6 +17,40 @@ EasyObliterate_Data = {
 				["maxAsh"] = 2,
 			},
 		},
+		[128552] = {
+			[110] = {
+				["minAsh"] = 171,
+				["obliterateCount"] = 5,
+				["averageAsh"] = 196,
+				["maxAsh"] = 217,
+			},
+		},
+		[141909] = {
+			[110] = {
+				["minAsh"] = 165,
+				["obliterateCount"] = 5,
+				["averageAsh"] = 195.8,
+				["maxAsh"] = 233,
+			},
+		},
+		[141910] = {
+			[110] = {
+				["minAsh"] = 198,
+				["obliterateCount"] = 5,
+				["averageAsh"] = 214.8,
+				["maxAsh"] = 228,
+			},
+		},
+		[128553] = {
+			[110] = {
+				["minAsh"] = 165,
+				["obliterateCount"] = 5,
+				["averageAsh"] = 188.2,
+				["maxAsh"] = 209,
+			},
+		},
+		[128541] = {
+		},
 		[127848] = {
 			[110] = {
 				["minAsh"] = 3,
@@ -24,8 +58,6 @@ EasyObliterate_Data = {
 				["averageAsh"] = 4.06896551724138,
 				["maxAsh"] = 5,
 			},
-		},
-		[128541] = {
 		},
 	},
 	["addonVersion"] = 28,

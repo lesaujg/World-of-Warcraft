@@ -9,7 +9,37 @@ EasyObliterate_Data = {
 				["maxAsh"] = 19,
 			},
 		},
-		[128541] = {
+		[142117] = {
+			[110] = {
+				["minAsh"] = 1,
+				["obliterateCount"] = 112,
+				["averageAsh"] = 1.41071428571429,
+				["maxAsh"] = 2,
+			},
+		},
+		[128552] = {
+			[110] = {
+				["minAsh"] = 171,
+				["obliterateCount"] = 5,
+				["averageAsh"] = 196,
+				["maxAsh"] = 217,
+			},
+		},
+		[141909] = {
+			[110] = {
+				["minAsh"] = 165,
+				["obliterateCount"] = 5,
+				["averageAsh"] = 195.8,
+				["maxAsh"] = 233,
+			},
+		},
+		[141910] = {
+			[110] = {
+				["minAsh"] = 198,
+				["obliterateCount"] = 5,
+				["averageAsh"] = 214.8,
+				["maxAsh"] = 228,
+			},
 		},
 		[127848] = {
 			[110] = {
@@ -19,12 +49,14 @@ EasyObliterate_Data = {
 				["maxAsh"] = 5,
 			},
 		},
-		[142117] = {
+		[128541] = {
+		},
+		[128553] = {
 			[110] = {
-				["minAsh"] = 1,
-				["obliterateCount"] = 112,
-				["averageAsh"] = 1.41071428571429,
-				["maxAsh"] = 2,
+				["minAsh"] = 165,
+				["obliterateCount"] = 5,
+				["averageAsh"] = 188.2,
+				["maxAsh"] = 209,
 			},
 		},
 	},
