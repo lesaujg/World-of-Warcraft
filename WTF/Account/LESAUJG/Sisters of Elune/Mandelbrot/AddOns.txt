@@ -53,7 +53,7 @@ RaidAchievement_PandaScenarios: enabled
 RaidAchievement_Ulduar: enabled
 RaidAchievement_WotlkHeroics: enabled
 RaidAchievement_OldModules: enabled
-Skada: disabled
+Skada: enabled
 Stubby: enabled
 !Swatter: disabled
 AddOnSkins: enabled

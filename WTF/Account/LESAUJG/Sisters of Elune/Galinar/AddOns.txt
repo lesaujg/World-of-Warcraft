@@ -42,7 +42,7 @@ RaidAchievement_WoDHeroics: disabled
 RaidAchievement_WoDRaids: disabled
 RaidAchievement_WotlkHeroics: disabled
 RaidAchievement_OldModules: disabled
-Skada: disabled
+Skada: enabled
 SlideBar: disabled
 Stubby: enabled
 !Swatter: disabled

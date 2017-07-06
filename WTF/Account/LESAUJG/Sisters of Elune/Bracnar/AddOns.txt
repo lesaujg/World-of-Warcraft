@@ -37,7 +37,7 @@ Auc-Stat-StdDev: disabled
 Auc-Util-FixAH: disabled
 BeanCounter: disabled
 Postal: disabled
-Skada: disabled
+Skada: enabled
 Stubby: enabled
 !Swatter: disabled
 AddOnSkins: enabled

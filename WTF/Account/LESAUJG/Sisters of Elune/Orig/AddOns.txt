@@ -32,7 +32,7 @@ RaidAchievement_WoDRaids: disabled
 RaidAchievement_WotlkHeroics: disabled
 RaidAchievement_OldModules: disabled
 SavedInstances: enabled
-Skada: disabled
+Skada: enabled
 TeleportCloak: enabled
 TradeSkillMaster_Vendoring: disabled
 AddOnSkins: enabled

@@ -41,22 +41,22 @@ EasyObliterate_Data = {
 				["maxAsh"] = 228,
 			},
 		},
-		[127848] = {
-			[110] = {
-				["minAsh"] = 3,
-				["obliterateCount"] = 29,
-				["averageAsh"] = 4.06896551724138,
-				["maxAsh"] = 5,
-			},
-		},
-		[128541] = {
-		},
 		[128553] = {
 			[110] = {
 				["minAsh"] = 165,
 				["obliterateCount"] = 5,
 				["averageAsh"] = 188.2,
 				["maxAsh"] = 209,
+			},
+		},
+		[128541] = {
+		},
+		[127848] = {
+			[110] = {
+				["minAsh"] = 3,
+				["obliterateCount"] = 29,
+				["averageAsh"] = 4.06896551724138,
+				["maxAsh"] = 5,
 			},
 		},
 	},

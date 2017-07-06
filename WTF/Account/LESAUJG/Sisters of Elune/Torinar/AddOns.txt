@@ -16,7 +16,7 @@ Details_3DModelsPaths: disabled
 Details_RaidInfo-EmeraldNightmare: disabled
 Details_RaidInfo-Nighthold: disabled
 Details_RaidInfo-TrialOfValor: disabled
-Skada: disabled
+Skada: enabled
 premade-filter: disabled
 BaudManifest: enabled
 Bagnon: disabled
