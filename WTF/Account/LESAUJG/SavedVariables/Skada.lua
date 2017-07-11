@@ -5,8 +5,8 @@ SkadaDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Bracnar - Sisters of Elune"] = "Default",
 		["Herbinator - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
 		["Clothgar - Sisters of Elune"] = "Default",
 	},
 	["profiles"] = {
@@ -24,9 +24,9 @@ SkadaDB = {
 				}, -- [1]
 			},
 			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
 				["1.6.3"] = true,
+				["1.6.4"] = true,
+				["1.6.7"] = true,
 			},
 			["modeclicks"] = {
 				["Damage"] = 1,
