@@ -24,6 +24,9 @@ VER 3 000000000000009D "Reload" "132096"
 /console worldPreloadNonCritical 0
 /reload
 END
+VER 3 00000000000000A1 "test" "INV_MISC_QUESTIONMARK"
+/use item:40192
+END
 VER 3 000000000000009E "Traps" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /castsequence [@cursor] reset=combat/20 Explosive Trap, Caltrops
