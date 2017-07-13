@@ -1,7 +1,7 @@
 --Easy Obliterate by Motig
 LoadAddOn("Blizzard_ObliterumUI")
 
-local addonVersion = 28
+local addonVersion = 29
 local currentPage = 1
 local selectedButton = nil
 local previousSelectedButton = nil
@@ -18,11 +18,13 @@ local lastItem = {itemID = 0, itemLevel = 0, ashAmount = 0}
 local currentItem = {itemID = 0, itemLevel = 0}
 local currentLineID = nil
 local saveData = {}
+local first0AshMessage = true
 
 local defaultSettings = {
     showTooltip = true,
     showAshStats = true,
     ignoreWardrobeItems = false,
+    show0AshMessage = true
 }
 
 local backupAshText = 'Obliterum Ash'
@@ -753,7 +755,7 @@ local function showSelection()
     end
 end
 
-function cleanMinAsh100Stats()
+local function cleanMinAsh100Stats()
     if not saveData.ashStats then return end
 
     EA_itemsRemoved = {}
@@ -773,9 +775,41 @@ function cleanMinAsh100Stats()
     end
 end
 
+local function cleanMinAsh0Stats()
+    if not saveData.ashStats then return end
+
+    EA_itemsRemoved = {}
+    for itemID, itemLevels in pairs(saveData.ashStats) do
+        for itemLevel, ashStats in pairs(saveData.ashStats[itemID]) do
+            if ashStats.minAsh == 0 then
+                table.insert(EA_itemsRemoved, {itemID = itemID, itemLevel = itemLevel})
+                saveData.ashStats[itemID][itemLevel] = nil
+                GetItemInfo(itemID)
+            end
+        end
+    end
+    
+    --Removed items that may have bugged stats if none then user was unnafected and doesn't need to know.
+    if #EA_itemsRemoved > 0 then
+        StaticPopup_Show("EasyObliterate_MinAsh0Bug")
+    end
+end
+
 local function updateAshStats(itemID, itemLevel, ashCount)
     if not itemID or not itemLevel or not ashCount then return end
     ashCount = tonumber(ashCount)
+    
+    if ashCount <= 0 then 
+        if saveData.addonSettings.show0AshMessage then
+            if first0AshMessage then
+                DEFAULT_CHAT_FRAME:AddMessage('Easy Obliterate: Unable to determine amount of ash looted. Are you using an addon that affects the looting process? You can |cFFFF0000disable|r these messages in Easy Obliterate settings.')
+                first0AshMessage = false
+            else
+                 DEFAULT_CHAT_FRAME:AddMessage('Easy Obliterate: Unable to determine amount of ash looted, stats not updated.')           
+            end
+        end
+        return 
+    end
     
     if not saveData.ashStats[itemID] then saveData.ashStats[itemID] = {} end
     if not saveData.ashStats[itemID][itemLevel] then saveData.ashStats[itemID][itemLevel] = {minAsh = ashCount, maxAsh = ashCount, averageAsh = 0, obliterateCount = 0} end
@@ -890,6 +924,11 @@ mainFrame:SetScript('OnEvent', function(self, event, ...)
                 if saveData.addonVersion < 28 then
                     --See if user is affected by minAsh bug and inform if so and clean items with 100 minAsh
                     cleanMinAsh100Stats()
+                end
+                
+                if saveData.addonVersion < 29 then
+                    --See if user is affected by minAsh bug and inform if so and clean items with 100 minAsh
+                    cleanMinAsh0Stats()
                 end
                 
                 if not saveData.addonSettings then
@@ -1012,6 +1051,30 @@ StaticPopupDialogs["EasyObliterate_MinAsh100Bug"] = {
     end
 }
 
+StaticPopupDialogs["EasyObliterate_MinAsh0Bug"] = {
+    text = 'Easy Obliterate\n\n Addons that affect the looting process sometimes caused Easy Obliterate to register 0 ash for items obliterated. The stats for these items have been reset, would you like to see which items were affected?',
+    button1 = "Yes",
+    button2 = "No",
+    timeout = 0,
+    whileDead = true,
+    hideOnEscape = true,
+    preferredIndex = 3,
+    OnAccept = function()
+        if EA_itemsRemoved then
+            DEFAULT_CHAT_FRAME:AddMessage('--Easy Obliterate--')
+            for i = 1, #EA_itemsRemoved do
+                local itemName = GetItemInfo(EA_itemsRemoved[i].itemID)
+                if itemName then
+                    DEFAULT_CHAT_FRAME:AddMessage(itemName..'(iLvL '..EA_itemsRemoved[i].itemLevel..')')
+                else
+                    DEFAULT_CHAT_FRAME:AddMessage('Failed to retrieve item name for itemID: '..EA_itemsRemoved[i].itemID)
+                end
+            end    
+            DEFAULT_CHAT_FRAME:AddMessage('--Easy Obliterate--')
+        end
+    end
+}
+
 StaticPopupDialogs["EasyObliterate_AshStatsWiped"] = {
    text = 'Easy Obliterate\n\n Due to a bug, ash stats were sometimes calculated the wrong way when you were close to 1000 ash in your bags. Ash stats have been reset for that reason, sorry for the inconvience.',
    button1 = "Ok",
@@ -1098,9 +1161,22 @@ optionsFrame.ignoreWardrobeItems:SetScript('OnClick', function()
     end
 end)
 
+optionsFrame.show0AshMessage = CreateFrame('CheckButton', nil, optionsFrame, 'UICheckButtonTemplate')
+optionsFrame.show0AshMessage:SetSize(32, 32)
+optionsFrame.show0AshMessage:SetPoint('TOPLEFT', optionsFrame.subText, 'BOTTOMLEFT', 0, -84)
+
+optionsFrame.show0AshMessage.text = optionsFrame.show0AshMessage:CreateFontString()
+optionsFrame.show0AshMessage.text:SetFontObject('GameFontNormal')
+optionsFrame.show0AshMessage.text:SetText('Show message informing you Easy Obliterate was unable to determine ash quantity.')
+optionsFrame.show0AshMessage.text:SetPoint('LEFT', 36, 0)
+
+optionsFrame.show0AshMessage:SetScript('OnClick', function()
+    saveData.addonSettings.show0AshMessage = not saveData.addonSettings.show0AshMessage
+end)
+
 optionsFrame.keyBindingsButton = CreateFrame('Button', nil, optionsFrame, 'GameMenuButtonTemplate')
 optionsFrame.keyBindingsButton:SetSize(128, 32)
-optionsFrame.keyBindingsButton:SetPoint('TOPLEFT', optionsFrame.ignoreWardrobeItems, 'BOTTOMLEFT', 0, -12)
+optionsFrame.keyBindingsButton:SetPoint('TOPLEFT', optionsFrame.show0AshMessage, 'BOTTOMLEFT', 0, -12)
 optionsFrame.keyBindingsButton:SetText('Keybinding')
 optionsFrame.keyBindingsButton:SetScript('OnClick', function()
     InterfaceOptionsFrame:Hide()
@@ -1121,6 +1197,8 @@ optionsFrame:SetScript("OnShow", function()
     else
         optionsFrame.ignoreWardrobeItems:SetChecked(false)
     end
+    
+    optionsFrame.show0AshMessage:SetChecked(saveData.addonSettings.show0AshMessage)
 end)
 
 InterfaceOptions_AddCategory(optionsFrame)
