@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0115,
+	["LastVersion"] = 2.0209,
 	["LastPlayerFullName"] = "Mandelbrot-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,

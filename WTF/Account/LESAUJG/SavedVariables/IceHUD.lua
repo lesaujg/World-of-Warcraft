@@ -5,6 +5,7 @@ IceCoreDB = {
 		},
 	},
 	["profileKeys"] = {
+		["Mandelbrot - Sisters of Elune"] = "Default",
 		["Uldaris - Sisters of Elune"] = "Default",
 		["Galinar - Sisters of Elune"] = "Default",
 		["Belrath - Sisters of Elune"] = "Default",

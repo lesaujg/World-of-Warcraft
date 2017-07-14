@@ -1244,3 +1244,6 @@ Change Log:
 
 4.42.17
 * Fixed Legion spells for Tomb of Sargeras
+
+4.42.18
+* Removed trivial flags for Black Temple (Timewalking)

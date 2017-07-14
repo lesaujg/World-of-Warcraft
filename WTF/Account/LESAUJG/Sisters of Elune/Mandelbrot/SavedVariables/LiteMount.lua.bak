@@ -6,6 +6,10 @@ LM_OptionsDB = {
 	},
 	["flagoverrides"] = {
 	},
+	["seenspells"] = {
+	},
+	["excludeNewMounts"] = {
+	},
 	["macro"] = {
 	},
 	["combatMacro"] = {

@@ -5,6 +5,7 @@ SkadaDB = {
 		},
 	},
 	["profileKeys"] = {
+		["Mandelbrot - Sisters of Elune"] = "Default",
 		["Herbinator - Sisters of Elune"] = "Default",
 		["Bracnar - Sisters of Elune"] = "Default",
 		["Clothgar - Sisters of Elune"] = "Default",
