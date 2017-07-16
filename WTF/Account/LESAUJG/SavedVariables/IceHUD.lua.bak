@@ -40,6 +40,11 @@ IceCoreDB = {
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
 				},
+				["TargetMana"] = {
+					["updatedReverseInverse"] = true,
+					["myTagVersion"] = 3,
+					["updatedInverseExpand"] = true,
+				},
 				["PlayerAlternatePower"] = {
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
@@ -81,11 +86,6 @@ IceCoreDB = {
 					["updatedInverseExpand"] = true,
 				},
 				["PlayerAbsorb"] = {
-					["updatedReverseInverse"] = true,
-					["myTagVersion"] = 3,
-					["updatedInverseExpand"] = true,
-				},
-				["TargetMana"] = {
 					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,

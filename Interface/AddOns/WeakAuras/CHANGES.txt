@@ -1,10 +1,10 @@
-tag 2f4cc1fea5aa20b68f73babcc6a24356c18b029b 2.4.12
+tag 00d5588d554e73e07cba77cf14b67067ba3fa154 2.4.14
 Author:	Benjamin Staneck <staneck@gmail.com>
-Date:	Fri Jul 14 02:57:58 2017 +0200
+Date:	Sat Jul 15 18:02:16 2017 +0200
 
-commit 07a71fc02e30ca2c9d927caac35f5d1d91977d13
-Author: Benjamin Staneck <staneck@gmail.com>
-Date:   Fri Jul 14 02:46:39 2017 +0200
+commit 9c7749385ec8c0cf5df78b1b5ad3cbc2e18ea0fe
+Author: Infus <infus@squorn.de>
+Date:   Sat Jul 15 12:58:04 2017 +0200
 
-    add safeguards for group anchoring
+    Fix regressions with anchor change
 
