@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Illidan", "DBM-BlackTemple")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 616 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 620 $"):sub(12, -3))
 mod:SetCreatureID(22917)
 mod:SetEncounterID(609)
 mod:SetModelID(21135)
@@ -196,8 +196,8 @@ function mod:SPELL_CAST_SUCCESS(args)
 	end
 end
 
-function mod:SPELL_DAMAGE(_, _, _, _, _, _, _, _, spellId)
-	if spellId == 40841 and self:AntiSpam(4, 5) then--Flame Crash
+function mod:SPELL_DAMAGE(_, _, _, _, destGUID, _, _, _, spellId)
+	if spellId == 40841 and destGUID == UnitGUID("player") and self:AntiSpam(4, 5) then--Flame Crash
 		specWarnGTFO:Show()
 		voiceGTFO:Play("runaway")
 	end

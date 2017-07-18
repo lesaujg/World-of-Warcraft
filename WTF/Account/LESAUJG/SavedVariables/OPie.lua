@@ -10,8 +10,8 @@ OneRing_Config = {
 			["ClickActivation"] = true,
 			["Bindings"] = {
 				["Pets"] = "ALT-W",
-				["Food"] = "ALT-F",
 				["sefulItems"] = "ALT-E",
+				["Food"] = "ALT-F",
 			},
 		},
 	},
@@ -19,49 +19,29 @@ OneRing_Config = {
 		["RingKeeper"] = {
 			["Pets"] = {
 				{
-					["id"] = 883,
 					["sliceToken"] = "ABueyhiySOd",
+					["id"] = 883,
 				}, -- [1]
 				{
-					["id"] = 83242,
 					["sliceToken"] = "ABueyhiySO3",
+					["id"] = 83242,
 				}, -- [2]
 				{
-					["id"] = 83243,
 					["sliceToken"] = "ABueyhiySOs",
+					["id"] = 83243,
 				}, -- [3]
 				{
-					["id"] = 83244,
 					["sliceToken"] = "ABueyhiySOa",
+					["id"] = 83244,
 				}, -- [4]
 				{
-					["id"] = 83245,
 					["sliceToken"] = "ABueyhiySOp",
+					["id"] = 83245,
 				}, -- [5]
-				["limit"] = "Bracnar-SistersofElune",
+				["name"] = "Pets",
 				["save"] = true,
 				["hotkey"] = "ALT-W",
-				["name"] = "Pets",
-			},
-			["Food"] = {
-				{
-					"item", -- [1]
-					142334, -- [2]
-					["sliceToken"] = "ABueoVMF3Hu",
-				}, -- [1]
-				{
-					"item", -- [1]
-					133572, -- [2]
-					["sliceToken"] = "ABueoVMF3Hy",
-				}, -- [2]
-				{
-					"item", -- [1]
-					140587, -- [2]
-					["sliceToken"] = "ABueoVMF3Ht",
-				}, -- [3]
-				["save"] = true,
 				["limit"] = "Bracnar-SistersofElune",
-				["name"] = "Food",
 			},
 			["sefulItems"] = {
 				{
@@ -89,10 +69,30 @@ OneRing_Config = {
 					49040, -- [2]
 					["sliceToken"] = "ABuepmAOjSe",
 				}, -- [5]
-				["limit"] = "Bracnar-SistersofElune",
+				["name"] = "Useful Items",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Useful Items",
+				["limit"] = "Bracnar-SistersofElune",
+			},
+			["Food"] = {
+				{
+					"item", -- [1]
+					142334, -- [2]
+					["sliceToken"] = "ABueoVMF3Hu",
+				}, -- [1]
+				{
+					"item", -- [1]
+					133572, -- [2]
+					["sliceToken"] = "ABueoVMF3Hy",
+				}, -- [2]
+				{
+					"item", -- [1]
+					140587, -- [2]
+					["sliceToken"] = "ABueoVMF3Ht",
+				}, -- [3]
+				["limit"] = "Bracnar-SistersofElune",
+				["save"] = true,
+				["name"] = "Food",
 			},
 			["OPieFlagStore"] = {
 				["FlushedDefaultColors"] = true,
