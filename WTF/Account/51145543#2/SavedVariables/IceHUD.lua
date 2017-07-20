@@ -4,90 +4,90 @@ IceCoreDB = {
 		["LibDualSpec-1.0"] = {
 		},
 	},
+	["global"] = {
+		["lastRunVersion"] = 20170618063751,
+	},
 	["profileKeys"] = {
 		["Torinara - Sisters of Elune"] = "Default",
-	},
-	["global"] = {
-		["lastRunVersion"] = 20170615025629,
 	},
 	["profiles"] = {
 		["Default"] = {
 			["modules"] = {
 				["TargetCast"] = {
+					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
 					["updatedReverseInverse"] = true,
-					["myTagVersion"] = 3,
 				},
 				["PetHealth"] = {
+					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
-					["updatedReverseInverse"] = true,
 				},
 				["PlayerHealth"] = {
-					["updatedInverseExpand"] = true,
 					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
+					["updatedInverseExpand"] = true,
 				},
-				["PlayerAbsorb"] = {
+				["PlayerMana"] = {
+					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
-					["updatedReverseInverse"] = true,
 				},
 				["TargetMana"] = {
+					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
-					["updatedReverseInverse"] = true,
 				},
 				["TargetInfo"] = {
-					["debuffSizeFixup"] = true,
 					["myTagVersion"] = 3,
+					["debuffSizeFixup"] = true,
 					["updateAurasIntoTable"] = true,
 				},
 				["PlayerAltMana"] = {
+					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
-					["updatedReverseInverse"] = true,
 				},
 				["SunderCount"] = {
 				},
 				["CastBar"] = {
+					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
 					["updatedReverseInverse"] = true,
-					["myTagVersion"] = 3,
 				},
 				["TargetHealth"] = {
-					["updatedInverseExpand"] = true,
 					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
+					["updatedInverseExpand"] = true,
+				},
+				["FocusAbsorb"] = {
+					["updatedReverseInverse"] = true,
+					["myTagVersion"] = 3,
+					["updatedInverseExpand"] = true,
+				},
+				["PetMana"] = {
+					["updatedReverseInverse"] = true,
+					["myTagVersion"] = 3,
+					["updatedInverseExpand"] = true,
+				},
+				["LacerateCount"] = {
+				},
+				["MaelstromCount"] = {
 				},
 				["PlayerAlternatePower"] = {
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
 					["updatedReverseInverse"] = true,
 				},
-				["FocusAbsorb"] = {
+				["PlayerAbsorb"] = {
+					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
-					["updatedReverseInverse"] = true,
-				},
-				["PetMana"] = {
-					["myTagVersion"] = 3,
-					["updatedInverseExpand"] = true,
-					["updatedReverseInverse"] = true,
-				},
-				["LacerateCount"] = {
-				},
-				["MaelstromCount"] = {
 				},
 				["TargetAbsorb"] = {
+					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
-					["updatedReverseInverse"] = true,
-				},
-				["PlayerMana"] = {
-					["myTagVersion"] = 3,
-					["updatedInverseExpand"] = true,
-					["updatedReverseInverse"] = true,
 				},
 			},
 			["updatedOocNotFull"] = true,

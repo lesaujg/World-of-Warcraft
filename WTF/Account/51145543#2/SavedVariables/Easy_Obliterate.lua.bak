@@ -2,9 +2,11 @@
 EasyObliterate_Data = {
 	["ashStats"] = {
 	},
-	["addonVersion"] = 26,
+	["addonVersion"] = 29,
 	["addonSettings"] = {
 		["showAshStats"] = true,
 		["showTooltip"] = true,
+		["ignoreWardrobeItems"] = false,
+		["show0AshMessage"] = true,
 	},
 }

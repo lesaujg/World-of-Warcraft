@@ -6,7 +6,9 @@ SkadaDB = {
 	},
 	["profileKeys"] = {
 		["Mandelbrot - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
 		["Herbinator - Sisters of Elune"] = "Default",
+		["Torinar - Sisters of Elune"] = "Default",
 		["Bracnar - Sisters of Elune"] = "Default",
 		["Clothgar - Sisters of Elune"] = "Default",
 	},
@@ -14,20 +16,20 @@ SkadaDB = {
 		["Default"] = {
 			["windows"] = {
 				{
-					["y"] = 200.000381469727,
+					["y"] = 215.598114013672,
 					["point"] = "BOTTOMLEFT",
 					["mode"] = "Damage",
 					["barwidth"] = 247.999847412109,
 					["background"] = {
 						["height"] = 223.000045776367,
 					},
-					["x"] = 23.0006465911865,
+					["x"] = 22.0831527709961,
 				}, -- [1]
 			},
 			["versions"] = {
-				["1.6.3"] = true,
-				["1.6.4"] = true,
 				["1.6.7"] = true,
+				["1.6.4"] = true,
+				["1.6.3"] = true,
 			},
 			["modeclicks"] = {
 				["Damage"] = 1,
