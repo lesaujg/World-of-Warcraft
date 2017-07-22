@@ -6,4 +6,5 @@ EasyObliterate_IgnoreList = {
 	"|cffffffff|Hitem:142117::::::::110:253::::::|h[Potion of Prolonged Power]|h|r", -- [4]
 	"|cffffffff|Hitem:127848::::::::110:254::::::|h[Flask of the Seventh Demon]|h|r", -- [5]
 	"|cffffffff|Hitem:142117::::::::110:254::::::|h[Potion of Prolonged Power]|h|r", -- [6]
+	"|cffa335ee|Hitem:136713:5429:130247::::::110:253::13:4:3355:689:601:679:::|h[Shadowruby Band of the Feverflare]|h|r", -- [7]
 }
