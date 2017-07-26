@@ -39,23 +39,23 @@ TradeSkillMaster_ShoppingDB = {
 	["_hash"] = 1861581,
 	["g@ @savedSearches"] = {
 		{
+			["lastSearch"] = 1501043538,
+			["name"] = "Obliterum/exact",
+			["filter"] = "Obliterum/exact",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [1]
+		{
 			["lastSearch"] = 1500954234,
 			["name"] = "Chaos Crystal/exact",
 			["filter"] = "Chaos Crystal/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [1]
+		}, -- [2]
 		{
 			["lastSearch"] = 1500954168,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [2]
-		{
-			["lastSearch"] = 1500833350,
-			["name"] = "Obliterum/exact",
-			["filter"] = "Obliterum/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [3]
