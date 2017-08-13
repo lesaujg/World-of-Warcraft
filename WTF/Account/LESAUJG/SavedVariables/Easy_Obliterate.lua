@@ -12,8 +12,8 @@ EasyObliterate_Data = {
 		[141909] = {
 			[110] = {
 				["minAsh"] = 165,
-				["obliterateCount"] = 7,
-				["averageAsh"] = 200.857142857143,
+				["obliterateCount"] = 9,
+				["averageAsh"] = 203.888888888889,
 				["maxAsh"] = 239,
 			},
 		},
@@ -28,8 +28,8 @@ EasyObliterate_Data = {
 		[128552] = {
 			[110] = {
 				["minAsh"] = 171,
-				["obliterateCount"] = 8,
-				["averageAsh"] = 204.125,
+				["obliterateCount"] = 10,
+				["averageAsh"] = 204.9,
 				["maxAsh"] = 242,
 			},
 		},
@@ -44,16 +44,16 @@ EasyObliterate_Data = {
 		[141908] = {
 			[110] = {
 				["minAsh"] = 170,
-				["obliterateCount"] = 3,
-				["averageAsh"] = 191.666666666667,
-				["maxAsh"] = 219,
+				["obliterateCount"] = 5,
+				["averageAsh"] = 197.6,
+				["maxAsh"] = 238,
 			},
 		},
 		[128541] = {
 			[110] = {
 				["minAsh"] = 105,
-				["obliterateCount"] = 645,
-				["averageAsh"] = 131.556589147287,
+				["obliterateCount"] = 747,
+				["averageAsh"] = 131.855421686747,
 				["maxAsh"] = 157,
 			},
 		},
@@ -67,34 +67,18 @@ EasyObliterate_Data = {
 		},
 		[128543] = {
 			[110] = {
-				["minAsh"] = 123,
-				["obliterateCount"] = 1,
-				["averageAsh"] = 123,
-				["maxAsh"] = 123,
+				["minAsh"] = 119,
+				["obliterateCount"] = 3,
+				["averageAsh"] = 124.666666666667,
+				["maxAsh"] = 132,
 			},
 		},
 		[128544] = {
 			[110] = {
-				["minAsh"] = 129,
-				["obliterateCount"] = 3,
-				["averageAsh"] = 137.333333333333,
-				["maxAsh"] = 153,
-			},
-		},
-		[128553] = {
-			[110] = {
-				["minAsh"] = 165,
-				["obliterateCount"] = 8,
-				["averageAsh"] = 190.375,
-				["maxAsh"] = 239,
-			},
-		},
-		[141910] = {
-			[110] = {
-				["minAsh"] = 198,
-				["obliterateCount"] = 8,
-				["averageAsh"] = 220.625,
-				["maxAsh"] = 240,
+				["minAsh"] = 113,
+				["obliterateCount"] = 5,
+				["averageAsh"] = 136.2,
+				["maxAsh"] = 156,
 			},
 		},
 		[128901] = {
@@ -103,6 +87,22 @@ EasyObliterate_Data = {
 				["obliterateCount"] = 1,
 				["averageAsh"] = 19,
 				["maxAsh"] = 19,
+			},
+		},
+		[141910] = {
+			[110] = {
+				["minAsh"] = 198,
+				["obliterateCount"] = 10,
+				["averageAsh"] = 219,
+				["maxAsh"] = 240,
+			},
+		},
+		[128553] = {
+			[110] = {
+				["minAsh"] = 165,
+				["obliterateCount"] = 9,
+				["averageAsh"] = 189.333333333333,
+				["maxAsh"] = 239,
 			},
 		},
 	},

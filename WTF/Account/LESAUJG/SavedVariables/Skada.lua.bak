@@ -16,7 +16,7 @@ SkadaDB = {
 		["Default"] = {
 			["windows"] = {
 				{
-					["y"] = 215.598129272461,
+					["y"] = 215.59814453125,
 					["point"] = "BOTTOMLEFT",
 					["mode"] = "Damage",
 					["barwidth"] = 247.999847412109,
@@ -27,9 +27,9 @@ SkadaDB = {
 				}, -- [1]
 			},
 			["versions"] = {
-				["1.6.3"] = true,
-				["1.6.4"] = true,
 				["1.6.7"] = true,
+				["1.6.4"] = true,
+				["1.6.3"] = true,
 			},
 			["modeclicks"] = {
 				["Damage"] = 1,
