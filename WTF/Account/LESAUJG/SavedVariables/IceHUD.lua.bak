@@ -93,11 +93,6 @@ IceCoreDB = {
 				},
 			},
 			["updatedOocNotFull"] = true,
-			["colors"] = {
-				["ScaledManaColor"] = {
-					["r"] = 1,
-				},
-			},
 			["minimap"] = {
 				["minimapPos"] = 316.181229270968,
 			},
