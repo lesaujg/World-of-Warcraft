@@ -39,14 +39,14 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1503783426,
+			["lastSearch"] = 1503889475,
 			["name"] = "Obliterum/exact",
 			["filter"] = "Obliterum/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [1]
 		{
-			["lastSearch"] = 1503776563,
+			["lastSearch"] = 1503882517,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",

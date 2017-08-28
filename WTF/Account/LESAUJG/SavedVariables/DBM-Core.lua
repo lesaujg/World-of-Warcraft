@@ -64,13 +64,13 @@ DBM_AllSavedOptions = {
 			0.7, -- [2]
 			0, -- [3]
 		},
-		["HUDSize1"] = 5,
+		["HealthFrameLocked"] = false,
 		["LogOnlyRaidBosses"] = false,
 		["WarningFontStyle"] = "None",
-		["HealthFrameLocked"] = false,
+		["WarningIconRight"] = true,
 		["InfoFrameY"] = 25.0000591278076,
 		["ShowSpecialWarnings"] = true,
-		["WarningIconRight"] = true,
+		["HUDSize1"] = 5,
 		["UseSoundChannel"] = "Master",
 		["UseMasterVolume"] = true,
 		["WarningAlphabetical"] = true,
