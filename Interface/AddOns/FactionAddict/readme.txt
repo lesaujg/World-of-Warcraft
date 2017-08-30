@@ -4,7 +4,7 @@
 -- Desc: Addon for World of Warcraft
 --
 -- Author: gmz323(Greg)
--- current version: v1.45
+-- current version: v1.46
 -- (c) 2011-2017
 --
 =============================================================================
@@ -68,6 +68,11 @@ My Other Addons:
 
 Changelog:
 ==========
+
+v1.46 (2017-08-29)
+------------------
+* toc update for patch 7.3
+* added factions - Army of the Light and Argussian Reach
 
 v1.45 (2017-08-03)
 ------------------

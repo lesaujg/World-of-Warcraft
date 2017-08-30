@@ -1,6 +1,6 @@
-## Interface: 70200
+## Interface: 70300
 ## Title: LiteMount
-## Version: 7.2.13
+## Version: 7.3.1
 ## Author: Xodiv-Nagrand
 ## Email: mib@post.com
 ## SavedVariables: LM_GlobalOptionsDB, LiteMountDB
