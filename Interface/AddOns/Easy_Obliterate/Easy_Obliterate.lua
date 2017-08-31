@@ -1,7 +1,7 @@
 --Easy Obliterate by Motig
 LoadAddOn("Blizzard_ObliterumUI")
 
-local addonVersion = 29
+local addonVersion = 30
 local currentPage = 1
 local selectedButton = nil
 local previousSelectedButton = nil
@@ -546,10 +546,10 @@ local function addItemToForge(self, button)
                     UseContainerItem(eligibleItems[self.itemRef].bag, eligibleItems[self.itemRef].index)
                 end
                 hideTooltip(self)
-                PlaySound("igMainMenuOptionCheckBoxOn")
+                PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON) 
             end               
         elseif button == 'RightButton' then
-            PlaySound("igMainMenuOptionCheckBoxOn")
+            PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
             if not eligibleItems[self.itemRef].ignore then
                 --itemIgnoreList[eligibleItems[self.itemRef].itemLink] = true
                 table.insert(itemIgnoreList, eligibleItems[self.itemRef].itemLink)

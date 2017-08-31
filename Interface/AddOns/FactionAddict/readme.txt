@@ -4,7 +4,7 @@
 -- Desc: Addon for World of Warcraft
 --
 -- Author: gmz323(Greg)
--- current version: v1.46
+-- current version: v1.47
 -- (c) 2011-2017
 --
 =============================================================================
@@ -68,6 +68,10 @@ My Other Addons:
 
 Changelog:
 ==========
+
+v1.47 (2017-08-30)
+------------------
+* fix for PlaySound() 7.3 changes
 
 v1.46 (2017-08-29)
 ------------------

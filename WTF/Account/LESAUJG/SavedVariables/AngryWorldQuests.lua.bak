@@ -4,4 +4,5 @@ AngryWorldQuests_Config = {
 	["__version"] = 11,
 	["disabledFilters"] = 261840,
 	["showContinentPOI"] = true,
+	["selectedFilters"] = 8,
 }

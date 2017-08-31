@@ -894,7 +894,8 @@ function BaudManifestClearVirtualDrag()
   if not VirtualDrag then
     return;
   end
-  PlaySound("INTERFACESOUND_CURSORDROPOBJECT");
+  -- was "INTERFACESOUND_CURSORDROPOBJECT" -- not in SOUNDKIT
+  PlaySound(689);
   VirtualDrag = nil;
   BaudManifestVirtualDrag:Hide();
   BaudManifestUpdateBlocked();
@@ -1546,7 +1547,7 @@ function BaudManifestDisplay_OnLoad(self)
     Button:SetPoint("RIGHT", -7, 0);
     Button:SetText(BANKSLOTPURCHASE);
     Button:SetScript("OnClick", function()
-      PlaySound("igMainMenuOption");
+      PlaySound(SOUNDKIT.IG_MAINMENU_OPTION);
       StaticPopup_Show("CONFIRM_BUY_BANK_SLOT");
     end);
     Button:Disable();
@@ -1684,7 +1685,7 @@ function BaudManifestDisplay_OnShow(self)
   end
 
   self.Closing = false;
-  PlaySound("igBackPackOpen");
+  PlaySound(SOUNDKIT.IG_BACKPACK_OPEN);
   local Level = self:GetFrameLevel() + 1;
   local Entry;
   for Index = 1, #self.Entry do
@@ -1742,7 +1743,7 @@ function BaudManifestDisplay_OnHide(self)
     self:Show();
   end
 
-  PlaySound("igBackPackClose");
+  PlaySound(SOUNDKIT.IG_BACKPACK_CLOSE);
   if (self:GetID() == 2) and BankOpen and (Config.ShowBank ~= false) then
     BaudManifestDisplay3:Hide();
     CloseBankFrame();
@@ -2369,7 +2370,8 @@ function BaudManifestItemEntry_OnDragStart(Button)
     BaudManifestVirtualDragIcon:SetTexture("Interface\\Icons\\INV_Scroll_03");
     BaudManifestVirtualDragIcon:SetAlpha(0.6);
     ClearCursor();  --Clear any spells and such in the cursor
-    PlaySound("INTERFACESOUND_CURSORGRABOBJECT");
+    --PlaySound("INTERFACESOUND_CURSORGRABOBJECT");
+    PlaySound(688);
     BaudManifestVirtualDrag:Show();
     BaudManifestUpdateBlocked();
     return;
@@ -2433,7 +2435,8 @@ function BaudManifestItemEntry_OnDragStart(Button)
   BaudManifestVirtualDragIcon:SetTexture(GetItemIcon(ItemInfo.ItemString) or "Interface\\Icons\\INV_Misc_QuestionMark");
   BaudManifestVirtualDragIcon:SetAlpha(0.6);
   ClearCursor();  --Clear any spells and such in the cursor
-  PlaySound("INTERFACESOUND_CURSORGRABOBJECT");
+  --PlaySound("INTERFACESOUND_CURSORGRABOBJECT");
+  PlaySound(688);
   BaudManifestVirtualDrag:Show();
   BaudManifestUpdateBlocked();
 end
@@ -3504,7 +3507,7 @@ function BaudManifestOptionsDropDown_Initialize()
   if (Display:GetID() == 2) then
     if (not IsReagentBankUnlocked()) then
       info.text = "Buy reagent bank";
-      info.func = function(self) PlaySound("igMainMenuOption"); StaticPopup_Show("CONFIRM_BUY_REAGENTBANK_TAB"); end
+      info.func = function(self) PlaySound(SOUNDKIT.IG_MAINMENU_OPTION); StaticPopup_Show("CONFIRM_BUY_REAGENTBANK_TAB"); end
       UIDropDownMenu_AddButton(info);
     else     
       info.text = "View reagent bank";
@@ -3512,7 +3515,7 @@ function BaudManifestOptionsDropDown_Initialize()
       UIDropDownMenu_AddButton(info);
       
       info.text = "Deposit all reagents";
-      info.func = function(self) PlaySound("igMainMenuOption"); DepositReagentBank(); end
+      info.func = function(self) PlaySound(SOUNDKIT.IG_MAINMENU_OPTION); DepositReagentBank(); end
       UIDropDownMenu_AddButton(info);
     end
   end
@@ -3706,11 +3709,10 @@ end
 -------------------------------------
 
 function BaudManifestResetButton_OnClick(Display)
-  PlaySound("igMainMenuOptionCheckBoxOff");
+  PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_OFF);
   Display.FilterEdit:SetText("");
   BaudManifestFilterDropDown_Set(Display.FilterDrop, 1);
   BaudManifestSortDropDown_Set(Display.SortDrop, 1)
-  DebugMsg("Clearing focus due to reset button");
   ClearFocus:SetFocus();
   BaudManifestUpdateDisplayList(Display);
   BaudManifestResetButton_Update(Display);
@@ -3743,7 +3745,6 @@ function BaudManifestGenericClick(Button)
   if (Button == "RightButton") then
     BaudManifestClearVirtualDrag();
   end
-  DebugMsg("Clearing focus due to generic click");
   ClearFocus:SetFocus();
 end
 
@@ -4174,9 +4175,9 @@ end
 
 function BaudManifestCheckButton_OnClick(self)
   if self:GetChecked() then
-    PlaySound("igMainMenuOptionCheckBoxOff");
+    PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_OFF);
   else
-    PlaySound("igMainMenuOptionCheckBoxOn");
+    PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON);
   end
 
   local SavedVar = self.Data.SavedVar;
@@ -4573,7 +4574,7 @@ end
 -------------------------------------
 
 function BaudManifestProperties_OnClick(self)
-  PlaySound("gsTitleOptionOK");
+  PlaySound(SOUNDKIT.GS_TITLE_OPTION_OK);
   local Button = self:GetParent():GetParent();
   local ItemInfo = Button.ItemInfo;
   if not ItemInfo.ItemString or strmatch(ItemInfo.ItemString, "battlepet:") or strmatch(ItemInfo.ItemString, "keystone:") then
@@ -4633,15 +4634,15 @@ end
 
 function BaudManifestPropertiesCheck_OnClick(self)
   if self:GetChecked()then
-    PlaySound("igMainMenuOptionCheckBoxOff");
+    PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_OFF);
   else
-    PlaySound("igMainMenuOptionCheckBoxOn");
+    PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON);
   end
 
   if self.SavedVar then
-    CurProps[self.SavedVar] = self:GetChecked()and true or false;
+    CurProps[self.SavedVar] = self:GetChecked() and true or false;
   else
-    PropsItem.Properties = self:GetChecked()and CurProps or nil;
+    PropsItem.Properties = self:GetChecked() and CurProps or nil;
     BaudManifestUpdateDisplayList(PropsDisplay);
     BaudManifestPropertiesUpdateDepend(self:GetChecked());
   end

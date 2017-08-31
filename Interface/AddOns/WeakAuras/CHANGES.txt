@@ -1,71 +1,28 @@
-tag 5a02b87c242abd3526bd5798f6ac08809e2386e0 2.4.18
+tag e69207d32e2ff136a0908fca06163db9b08a8557 2.4.21
 Author:	Benjamin Staneck <staneck@gmail.com>
-Date:	Tue Aug 29 18:30:51 2017 +0200
+Date:	Wed Aug 30 19:20:20 2017 +0200
 
-commit f20628677470b706fd8c23e564cd97b1e85a0dea
+commit 91f27c153586760d266302111bbe46d27d4e223a
+Author: InfusOnWoW <infus@squorn.de>
+Date:   Wed Aug 30 19:18:44 2017 +0200
+
+    Smallpatches (#277)
+    
+    * Revert "throttle the ScheduleTimer function"
+    
+    This reverts commit d128c49785e43edfe61a9c68849fe3ee085d4da1.
+    
+    * Revert "revert ScheduleTimer change for doCooldownScan"
+    
+    This reverts commit 82ab38ff16cf36e1fe583fbd8dd18f523a5acd58.
+    
+    * Fix hangs and strange issues with ScheduleTimerFixed
+    
+    Because I'm a doofus
+
+commit d128c49785e43edfe61a9c68849fe3ee085d4da1
 Author: Benjamin Staneck <staneck@gmail.com>
-Date:   Mon Aug 28 23:36:57 2017 +0200
+Date:   Wed Aug 30 18:11:08 2017 +0200
 
-    Update TOC for Patch 7.3
-
-commit 57508e05c5e1dad62fbf58414e7e6665eb0e8bf0
-Author: Infus <infus@squorn.de>
-Date:   Mon Aug 21 17:51:10 2017 +0200
-
-    Fix IsSpellKnown trigger for pet spells
-    
-    Some doofus broke it, when he added IsPlayerSpell
-    
-    Ticket-Nr: 1028
-
-commit 984649189776bae39b21880b2c34c66847d82805
-Author: Infus <infus@squorn.de>
-Date:   Sun Aug 20 12:59:36 2017 +0200
-
-    Show the current Zone ID as a tooltip in the load options
-
-commit ac9151d5b2fd71540ee0bcc5618a0cb7825620c6
-Author: Infus <infus@squorn.de>
-Date:   Sun Aug 20 12:43:11 2017 +0200
-
-    Prevent aurabar's foreground to be sized too small
-    
-    Ticket-Nr: 1022
-    Ticket-Nr: 1026
-
-commit 43c3d03e00ef4d9eff577ca9ac86ae348e7ce2c5
-Author: Infus <infus@squorn.de>
-Date:   Sun Aug 20 12:40:30 2017 +0200
-
-    Fix text replacements of 2 character long strings
-    
-    Ticket-Nr: 1027
-
-commit d69556c17f5dac0fb8b5b34fd8a422c375e01336
-Author: Infus <infus@squorn.de>
-Date:   Sun Aug 20 12:29:51 2017 +0200
-
-    Add GROUP_ROSTER_UPDATE event for watching specific units
-    
-    As that can affect whether a unit such as party1 exists
-    
-    Ticket-Nr: 1026
-
-commit ee22b74355b3a2e26ec6f3eb7c8a586cb968045d
-Author: Infus <infus@squorn.de>
-Date:   Sun Aug 20 12:22:28 2017 +0200
-
-    BuffTrigger: Fix Bufftrigger with multiple auras
-    
-    On interating over all buffs, don't directly update the aura_object.
-    (Which is our tracks which group members have a buff.)
-    
-    Instead just figure out the "best" match. And update the aura_object
-    afterwards.
-    
-    For consistency apply the same "best" match logic also to non-group
-    auras.
-    
-    Github Issue: 263
-    Ticket-Nr: 322
+    throttle the ScheduleTimer function
 
