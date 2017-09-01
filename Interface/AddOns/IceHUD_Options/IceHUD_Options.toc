@@ -1,7 +1,7 @@
-## Interface: 70200
+## Interface: 70300
 ## Title: IceHUD |cff7fff7f-Options-|r
 ## Author: Parnic
-## Version: 1.10.15.2
+## Version: 1.10.16.1
 ## Notes: Configuration options for IceHUD
 ## OptionalDeps: AceGUI-3.0-SharedMediaWidgets
 ## Dependencies: IceHUD

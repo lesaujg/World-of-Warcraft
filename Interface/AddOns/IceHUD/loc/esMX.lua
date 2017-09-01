@@ -1002,6 +1002,8 @@ L["Show PvP icon"] = "Show PvP icon"
 --Translation missing 
 L["Show Raid Icon"] = "Show Raid Icon"
 --Translation missing 
+L["Show raid icon"] = "Show raid icon"
+--Translation missing 
 L["Show resting status"] = "Show resting status"
 --Translation missing 
 L["Show rogue/cat energy ticker"] = "Show rogue/cat energy ticker"
@@ -1387,6 +1389,8 @@ L["Whether or not to show the Party Role icon"] = "Whether or not to show the Pa
 L["Whether or not to show the PvP icon"] = "Whether or not to show the PvP icon"
 --Translation missing 
 L["Whether or not to show the raid icon above this bar"] = "Whether or not to show the raid icon above this bar"
+--Translation missing 
+L["Whether or not to show the raid icon for this unit."] = "Whether or not to show the raid icon for this unit."
 --Translation missing 
 L["Whether or not to show the rank of a spell being cast."] = "Whether or not to show the rank of a spell being cast."
 --Translation missing 

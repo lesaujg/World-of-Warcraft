@@ -691,6 +691,8 @@ L["Show Party Role icon"] = "顯示隊伍角色圖示"
 L["Show points stored by the Anticipation talent"] = "Show points stored by the Anticipation talent"
 L["Show PvP icon"] = "顯示 PvP 圖示"
 L["Show Raid Icon"] = "顯示團隊圖示"
+--Translation missing 
+L["Show raid icon"] = "Show raid icon"
 L["Show resting status"] = "顯示休息狀態"
 L["Show rogue/cat energy ticker"] = "顯示盜賊/貓德的能量斷續裝置"
 L["Show scaled threat"] = "顯示刻度的威脅"
@@ -1011,6 +1013,8 @@ L["Whether or not to show the Party Role icon"] = "無論是不是顯示隊伍�
 L["Whether or not to show the PvP icon"] = "無論是不是顯示 PvP 圖示"
 --Translation missing 
 L["Whether or not to show the raid icon above this bar"] = "Whether or not to show the raid icon above this bar"
+--Translation missing 
+L["Whether or not to show the raid icon for this unit."] = "Whether or not to show the raid icon for this unit."
 --Translation missing 
 L["Whether or not to show the rank of a spell being cast."] = "Whether or not to show the rank of a spell being cast."
 --Translation missing 

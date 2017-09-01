@@ -623,6 +623,8 @@ L["Show Party Role icon"] = "Показать иконку роли в груп�
 L["Show points stored by the Anticipation talent"] = "Show points stored by the Anticipation talent"
 L["Show PvP icon"] = "Показать PvP иконку"
 L["Show Raid Icon"] = "Показать рейд иконку"
+--Translation missing 
+L["Show raid icon"] = "Show raid icon"
 L["Show resting status"] = "Показать статус отдыха"
 L["Show rogue/cat energy ticker"] = "Отображать тикер энергии для Разбойника/Формы кошки"
 L["Show scaled threat"] = "Показывать агро масштабированным"
@@ -913,6 +915,8 @@ L["Whether or not to show the party leader icon above this bar"] = "Отобра
 L["Whether or not to show the Party Role icon"] = "Отображать или не отображать иконку роли в группе"
 L["Whether or not to show the PvP icon"] = "Отображать или не отображать PvP иконку"
 L["Whether or not to show the raid icon above this bar"] = "Отображать иконку рейда над полосой"
+--Translation missing 
+L["Whether or not to show the raid icon for this unit."] = "Whether or not to show the raid icon for this unit."
 L["Whether or not to show the rank of a spell being cast."] = "Отображать ли уровень зачитываемого заклинания"
 L["Whether or not to show the rare/elite icon above this bar"] = "Отображать иконку элиты над полосой"
 --Translation missing 
