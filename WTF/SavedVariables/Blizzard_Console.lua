@@ -3891,6 +3891,94 @@ Blizzard_Console_SavedVars = {
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [972]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [973]
+		{
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			0, -- [2]
+		}, -- [974]
+		{
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
+			0, -- [2]
+		}, -- [975]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [976]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [977]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [978]
+		{
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			0, -- [2]
+		}, -- [979]
+		{
+			"Proficiency in item class 2 set to 0x0000000480", -- [1]
+			0, -- [2]
+		}, -- [980]
+		{
+			"Proficiency in item class 2 set to 0x0000008480", -- [1]
+			0, -- [2]
+		}, -- [981]
+		{
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			0, -- [2]
+		}, -- [982]
+		{
+			"Proficiency in item class 2 set to 0x000000c480", -- [1]
+			0, -- [2]
+		}, -- [983]
+		{
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			0, -- [2]
+		}, -- [984]
+		{
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			0, -- [2]
+		}, -- [985]
+		{
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			0, -- [2]
+		}, -- [986]
+		{
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			0, -- [2]
+		}, -- [987]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [988]
+		{
+			"Time set to 9/3/2017 (Sun) 6:25", -- [1]
+			0, -- [2]
+		}, -- [989]
+		{
+			"Gamespeed set from 0.017 to 0.017", -- [1]
+			0, -- [2]
+		}, -- [990]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [991]
+		{
+			"NetClient::HandleDisconnect()", -- [1]
+			0, -- [2]
+		}, -- [992]
+		{
+			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
+			0, -- [2]
+		}, -- [993]
+		{
+			"[GlueLogin] Disconnected from WoWpreviouslyConnected=\"true\"", -- [1]
+			0, -- [2]
+		}, -- [994]
 	},
 	["isShown"] = false,
 	["fontHeight"] = 14,
