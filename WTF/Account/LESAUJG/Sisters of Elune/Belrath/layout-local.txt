@@ -1,11 +1,4 @@
 Version: 1
-Frame: TSMCraftingGatherFrame
-FrameLevel: 0
-Anchor: RIGHT
-X: -117
-Y: 38
-W: 365
-H: 400
 Frame: DBMMinimapButton
 FrameLevel: 3
 Anchor: TOPRIGHT
