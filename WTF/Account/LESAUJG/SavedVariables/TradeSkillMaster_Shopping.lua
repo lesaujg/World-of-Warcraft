@@ -56,14 +56,14 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1504753268,
+			["lastSearch"] = 1504929950,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [1]
 		{
-			["lastSearch"] = 1504669276,
+			["lastSearch"] = 1504924641,
 			["name"] = "Obliterum/exact",
 			["filter"] = "Obliterum/exact",
 			["searchMode"] = "normal",

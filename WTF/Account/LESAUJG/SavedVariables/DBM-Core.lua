@@ -64,13 +64,13 @@ DBM_AllSavedOptions = {
 			0.7, -- [2]
 			0, -- [3]
 		},
-		["WarningIconRight"] = true,
+		["HUDSize1"] = 5,
 		["NewsMessageShown"] = 12,
 		["WarningFontStyle"] = "None",
-		["HUDSize1"] = 5,
+		["HealthFrameLocked"] = false,
 		["InfoFrameY"] = 25.0000591278076,
 		["ShowSpecialWarnings"] = true,
-		["HealthFrameLocked"] = false,
+		["WarningIconRight"] = true,
 		["UseSoundChannel"] = "Master",
 		["UseMasterVolume"] = true,
 		["SpecialWarningDuration"] = 4,
