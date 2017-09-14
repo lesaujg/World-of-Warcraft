@@ -1958,6 +1958,12 @@ GTFO.SpellID["244974"] = {
   sound = 3;
 };
 
+GTFO.SpellID["233021"] = {
+  --desc = "Infernal Spike (Goroth)";
+  sound = 3;
+};
+
+
 --- *********
 --- * Argus *
 --- *********
@@ -1971,4 +1977,81 @@ GTFO.SpellID["251100"] = {
 GTFO.SpellID["244623"] = {
   --desc = "Glaive Blast (Xeth'tal)";
   sound = 3;
+};
+
+GTFO.SpellID["252138"] = {
+  --desc = "Arcane Discharge (Trap Rune)";
+  sound = 3;
+};
+
+GTFO.SpellID["246775"] = {
+  --desc = "Orb of Deflection";
+  sound = 3;
+};
+
+GTFO.SpellID["251378"] = {
+  --desc = "Dark Spores (Fel Enraged Shambler)";
+  sound = 3;
+};
+
+GTFO.SpellID["251388"] = {
+  --desc = "Baleful Beam (Fel Enraged Shambler)";
+  sound = 3;
+};
+
+GTFO.SpellID["249406"] = {
+  --desc = "Blast Waves (Vel'thrak the Punisher)";
+  sound = 3;
+};
+
+GTFO.SpellID["249407"] = {
+  --desc = "Blast Waves (Vel'thrak the Punisher)";
+  sound = 3;
+};
+
+GTFO.SpellID["249408"] = {
+  --desc = "Blast Waves (Vel'thrak the Punisher)";
+  sound = 3;
+};
+
+GTFO.SpellID["248652"] = {
+  --desc = "Flames of Argus (Fragment of Argus)";
+  sound = 3;
+};
+
+GTFO.SpellID["248665"] = {
+  --desc = "Chaos Wave";
+  sound = 3;
+};
+
+--- ***************************
+--- * Seat of the Triumvirate *
+--- ***************************
+
+GTFO.SpellID["248130"] = {
+  --desc = "Darkened Ramnant (Rift Warden)";
+  sound = 3;
+};
+
+GTFO.SpellID["246026"] = {
+  --desc = "Void Trap (Saprish)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["250188"] = {
+  --desc = "Void Fragment";
+  sound = 3;
+};
+
+GTFO.SpellID["248067"] = {
+  --desc = "Grand Swing (Umbral War-Adept)";
+  sound = 3;
+  tankSound = 0;
+};
+
+GTFO.SpellID["246900"] = {
+  --desc = "Dark Outbreak (Void Discharge)";
+  sound = 3;
+  applicationOnly = true;
 };

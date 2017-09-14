@@ -1,10 +1,9 @@
 ## Interface: 70300
 ## Title: LiteMount
-## Version: 7.3.1
+## Version: 7.3.2
 ## Author: Xodiv-Nagrand
 ## Email: mib@post.com
-## SavedVariables: LM_GlobalOptionsDB, LiteMountDB
-## SavedVariablesPerCharacter: LM_OptionsDB
+## SavedVariables: LiteMountDB
 
 Libs\embeds.xml
 

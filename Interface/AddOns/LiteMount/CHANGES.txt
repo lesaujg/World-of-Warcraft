@@ -1,326 +1,114 @@
-tag b8a4227c652bd8967bc8b5a8f69e0af61b3df8dd 7.3.1
+tag 977755ede8a983157044f9c1713a1d42815dc887 7.3.2
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Wed Aug 30 12:04:19 2017 +1000
+Date:	Mon Sep 11 12:22:34 2017 +1000
 
-Tagging 7.3.1 for release.
+Tagging 7.3.2, force no-flying in Argus.
 
-commit f46772f84b3c58a03a07601b585dfbd93ce2192f
+Also remove the migration from the old config style, as I suspect it had bugs
+and it was super hard to maintain. Unfortunately if you upgrade from LiteMount
+older than 7.2.6 you will have to re-do all your settings.
+
+Sorry. :(
+
+commit c2c793dfedb1d592e116b86e1221d62f041e2aaf
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Aug 28 19:22:34 2017 +1000
+Date:   Mon Sep 11 12:18:53 2017 +1000
 
-    Update TOC for WoW 7.3
+    Can't fly in Argus (continent 9).
 
-commit f8e71f453e031627118b430b04306629fd7bcff7
+commit e085c7967335efc295a1963aec16e55e2bff8f54
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Aug 29 21:13:53 2017 +1000
+Date:   Mon Sep 11 12:18:53 2017 +1000
 
-    Hide the text/delete under the add flag button
+    Can't fly in Argus (continent 9).
 
-commit 85653f42913224840f365fd42be46ac5afb0b12d
+commit e085c7967335efc295a1963aec16e55e2bff8f54
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Aug 29 21:10:36 2017 +1000
+Date:   Mon Sep 11 12:18:53 2017 +1000
 
-    Working delete, no message.
+    Can't fly in Argus (continent 9).
 
-commit a64b9aeadee2a9c6545c286fbda42816b52d5fa3
+commit 1a4ccf54be73584bf9a5e6e26c34bb24c13e2159
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Aug 29 21:08:25 2017 +1000
+Date:   Mon Sep 11 11:37:01 2017 +1000
 
-    Bug fixen in ProfileDropDown
+    Put the SuramarCity split into button 2.
 
-commit 8360bcf6d5965086e9ef80c2a5d6444ce9216e98
+commit 1a4ccf54be73584bf9a5e6e26c34bb24c13e2159
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Aug 29 20:40:12 2017 +1000
+Date:   Mon Sep 11 11:37:01 2017 +1000
 
-    Add missing ProfileDropDown files
+    Put the SuramarCity split into button 2.
 
-commit aacc55f83fd63cdf7fe440256459f0b055a11516
+commit 7de7ae05fb515099aebae9d26bccf6587bd8c9df
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Aug 29 20:37:21 2017 +1000
+Date:   Fri Sep 8 17:04:20 2017 +1000
 
-    Split ProfileDropDown out and try to show it on every frame.
+    Add sex condition. Celebrity philanderers rejoice.
 
-commit 5b5512d0219e650fd2a53cd701942c628963aadf
+commit 7de7ae05fb515099aebae9d26bccf6587bd8c9df
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Aug 29 19:35:04 2017 +1000
+Date:   Fri Sep 8 17:04:20 2017 +1000
 
-    Some kind of delete button.
+    Add sex condition. Celebrity philanderers rejoice.
 
-commit 6f019a2e998fb9935612c7ef713d5ec98c18647a
+commit a6bdeffeaab95579c0d5b6606e2a90198faf0208
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Aug 29 19:22:50 2017 +1000
+Date:   Fri Sep 8 15:39:36 2017 +1000
 
-    Add button for advanced flags
+    Add 'name' and 'realm' conditions.
 
-commit 4d286257855fae55a47dfcda302636a428b9e2e8
+commit a6bdeffeaab95579c0d5b6606e2a90198faf0208
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Aug 29 18:28:08 2017 +1000
+Date:   Fri Sep 8 15:39:36 2017 +1000
 
-    Add FlagsLabel back. Again.
+    Add 'name' and 'realm' conditions.
 
-commit 0555868cfead5bccee3324a83044dc2d281a56f9
+commit 1c9b3f44087b0246669e09a51a7b51b4d0e7a709
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Aug 29 17:50:52 2017 +1000
+Date:   Thu Aug 31 18:36:10 2017 +1000
 
-    Displaying flags in the Advanced Options.
+    Options reference fixup
 
-commit 464856546af2a72b66363cc0c9302c172d04f0bd
+commit 1c9b3f44087b0246669e09a51a7b51b4d0e7a709
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Aug 29 16:29:05 2017 +1000
+Date:   Thu Aug 31 18:36:10 2017 +1000
 
-    Back to one advanced panel.
+    Options reference fixup
 
-commit 08d4bbdcf2ab5afabdd59361576440cb15d88a89
+commit 3a64c52a48049fc7b3c486093c9acefa035f86ff
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Aug 28 18:56:58 2017 +1000
+Date:   Thu Aug 31 18:32:33 2017 +1000
 
-    Fix GetAreaMaps-fu
+    Working (?) flag add and delete
 
-commit 0aed457490b72400a5c9fbf8abb91012e6d8b3c8
+commit 3a64c52a48049fc7b3c486093c9acefa035f86ff
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Aug 28 18:49:00 2017 +1000
+Date:   Thu Aug 31 18:32:33 2017 +1000
 
-    Slash command rework
+    Working (?) flag add and delete
 
-commit 87bf8a0ed0001e6dd6a9fd450c630534766d040d
+commit c2fa59d683a00cb45317e94eb1e343a38e39a32e
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Aug 28 18:48:52 2017 +1000
+Date:   Thu Aug 31 17:27:59 2017 +1000
 
-    Fix rename error too
+    Purge some more tContains because I am a completist
 
-commit d665a6dc2b5c872fc397e1bb890609bac612d06d
+commit c2fa59d683a00cb45317e94eb1e343a38e39a32e
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Aug 28 18:33:28 2017 +1000
+Date:   Thu Aug 31 17:27:59 2017 +1000
 
-    Fix flag delete error
+    Purge some more tContains because I am a completist
 
-commit 56983f2eabe9b85cb3c83c879036620852028cb8
+commit 6fe731b0f275d91765b4bb72be1361930cfbfedf
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Aug 28 18:27:14 2017 +1000
+Date:   Thu Aug 31 17:13:00 2017 +1000
 
-    Add LM_Options:BadCharIndex
+    Scroll list was too slow, remove tContains go to hash
 
-commit cf1b3e44ca5e790db903448b1cabee6211225f15
+commit 6fe731b0f275d91765b4bb72be1361930cfbfedf
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Aug 28 18:26:50 2017 +1000
+Date:   Thu Aug 31 17:13:00 2017 +1000
 
-    Look for the mount spell name in the aura, not the mount name.
-
-commit b664b822703c3a88386dd6d02df5e6c60000d9fd
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Aug 28 17:31:58 2017 +1000
-
-    Start the plumbing for Flags, hoping it'll make the UI more obvious.
-    Rename 'Settings' to 'General' in the UI.
-
-commit 49037f95e965443b297efaacfd6598dfc8f89fc3
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Aug 28 11:03:57 2017 +1000
-
-    Separated advanced names into non-working parts.
-
-commit 08a4a3c50a0eed1c634288d34b89197ef294293f
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Aug 28 11:01:19 2017 +1000
-
-    XML error.
-
-commit d13c715bf1d4ef12bf26a90c9bec7fac8fa65d75
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Aug 28 10:59:54 2017 +1000
-
-    Give up and split flags onto own page.
-
-commit 7b325c6c82bd655ba3a17670e46728d7d011a90d
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sun Aug 27 11:20:39 2017 +1000
-
-    Spacing. The final frontier.
-
-commit feb8ef9b7b86e118c37e3217334dfb8655ce3b3f
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sun Aug 27 11:09:01 2017 +1000
-
-    Skeleton for Flags List
-    
-    Skeletons are so spooky.
-    A SKELETON IS INIDE YOU RIGHT NOW!
-
-commit 54dbce8b95a4ad3e5375eb980323def0b9ce25ab
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Aug 25 23:28:29 2017 +1000
-
-    Better Utils, some use of utils.
-
-commit aa3c967fbc9d71b3d52c57f7012a1785787fb7f6
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Aug 25 16:56:16 2017 +1000
-
-    Split the Suramar lines into 2.
-
-commit 6583baf2b0448b65e0afec4a923c6cfeb938c31c
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Aug 25 16:11:34 2017 +1000
-
-    Flag button spacing/positioning
-
-commit efbeb0c2ef32ad2b9f593ee2fccd9a4423905f33
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Aug 25 16:03:54 2017 +1000
-
-    Reduce to 6 bit buttons and place page buttons properly.
-
-commit f451cce0a79e0cadd961b95d8c87e88954fe9c29
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Aug 25 15:51:50 2017 +1000
-
-    Move to using the Utils.lua code.
-
-commit 9db47379030ac2a5bf8579ba8d26c6073dec0241
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Aug 25 15:19:07 2017 +1000
-
-    Add Util.lua
-
-commit 2b1db6ac67d12e55338e08f98bb60a2fb6284c5e
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Aug 24 23:59:38 2017 +1000
-
-    Some support for using (but not adding) custom flags.
-    Now with 7 flag buttons.
-
-commit c7d19b0f507f63dc254ea2cdc04781181ac12b5d
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Aug 24 18:00:26 2017 +1000
-
-    Flag flag. I am late for where I'm meant to be and can't think of a sensible message.
-
-commit 858c612b517261b3e68a9e1622bfb09d904587ea
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Aug 24 17:26:05 2017 +1000
-
-    Some kind of flag paging.
-    Do not attempt to adjust your set.
-
-commit 7a63d76972a28696fe3bda81a80673402e2bb974
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Aug 24 16:14:00 2017 +1000
-
-    Convert Mounts to parentKey.
-    Except DropDowns which it seems need name
-
-commit c4ed66a85fb580594e057c788d8c4e5b63941095
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Aug 24 14:56:14 2017 +1000
-
-    Display mounts with no flags if all filters are chosen
-
-commit b98c541aa32c8d0e05fea8a0c9116243b8ea2b12
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Aug 24 10:30:35 2017 +1000
-
-    Revert all the flag button stuff, it was shit.
-
-commit 7cd516392aa5b97908368e11a531c4c0778d7544
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Wed Aug 23 00:37:37 2017 +1000
-
-    Colored tags
-
-commit 1c47878a3c1c1583608dfb5a97242a2c57786462
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Aug 22 23:14:29 2017 +1000
-
-    Very bad flag buttons.
-
-commit 9ea954c517eb41a828e3a5095cf42a1eba2db587
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Aug 22 17:55:57 2017 +1000
-
-    BAD BAD BROKEN UI flag-fu
-
-commit 1f46c45f63b344d505c2c3ee7377b157ba3c0110
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Aug 22 12:57:49 2017 +1000
-
-    Remove leftover OnKeydown on advanced panel
-
-commit 66476bc5a2e696477aa7240fe17711313fca95b7
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Aug 22 12:40:54 2017 +1000
-
-    Action -> Actions
-
-commit 2b27d8e0a3d262676c1e649349158989f51142d2
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Aug 22 12:28:13 2017 +1000
-
-    Sound "fix" for 7.3
-
-commit a1682202cc8baaa81c9cdfc21fd1c369861800f7
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Aug 22 12:27:51 2017 +1000
-
-    Don't call old binding update in Advanced Options
-
-commit 09c193825c6df7c5208334e862d7eda1d8d3803d
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Aug 21 22:07:08 2017 +1000
-
-    Remove the bindings from advance but keep the unhooked code.
-
-commit b6cd3f7736a25100a8cfe96c60a3cb18e34f97c2
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Aug 21 19:43:59 2017 +1000
-
-    Poorly conceived keybind buttons with no rollback.
-
-commit 43f02d97e90fb725f890cc6ff8972d34ae3a90c5
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Aug 21 19:43:34 2017 +1000
-
-    Fix error with position of combatmacro help text.
-
-commit 4b35b5604ca432f6e6d99cf246920c7ea86ba49f
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Aug 21 19:42:26 2017 +1000
-
-    Generic keybinding names now we have advanced.
-
-commit 7c82e26a8f0830c376b5f213372a079736ec79f1
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Aug 21 19:42:01 2017 +1000
-
-    Trim one line of fat.
-
-commit 46350ff0faff1ef2f5f7475f9fe44485f2a2df37
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Aug 21 11:54:28 2017 +1000
-
-    Updated koKR translations from yuk6196. <3 <3 <3
-
-commit bdf0069e00f1a9ed75593ae1bb455f4268fd3606
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Aug 21 10:20:27 2017 +1000
-
-    Rename FlagConvert to BitFlagMigrate to make it clear this is a
-    legacy migration function.
-
-commit ec492d8fef494cbf6bb6ecd5a5ba9464cfe3b3fd
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Aug 21 10:14:38 2017 +1000
-
-    Finally rename CurrentFlagsSet to MatchesFilter now the bits are gone
-
-commit bf5676b0c6c14bfed1f5ad0d82233beb39542b17
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Aug 21 10:13:29 2017 +1000
-
-    Return helpful or harmful auras
-
-commit e5675e787c23bfddc7468ecb04e15736818925e1
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sun Aug 20 10:31:50 2017 +1000
-
-    Switch Actions to be handler-style.
+    Scroll list was too slow, remove tContains go to hash
 
