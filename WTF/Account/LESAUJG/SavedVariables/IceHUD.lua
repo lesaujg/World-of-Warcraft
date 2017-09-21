@@ -47,11 +47,6 @@ IceCoreDB = {
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
 				},
-				["PlayerAlternatePower"] = {
-					["myTagVersion"] = 3,
-					["updatedInverseExpand"] = true,
-					["updatedReverseInverse"] = true,
-				},
 				["TargetInfo"] = {
 					["myTagVersion"] = 3,
 					["debuffSizeFixup"] = true,
@@ -86,6 +81,11 @@ IceCoreDB = {
 					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
+				},
+				["PlayerAlternatePower"] = {
+					["myTagVersion"] = 3,
+					["updatedInverseExpand"] = true,
+					["updatedReverseInverse"] = true,
 				},
 				["PlayerAltMana"] = {
 					["updatedReverseInverse"] = true,
