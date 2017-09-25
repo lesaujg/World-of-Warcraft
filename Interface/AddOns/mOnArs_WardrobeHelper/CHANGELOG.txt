@@ -1,3 +1,8 @@
+﻿== 1.17.1 ==
+ * bumped TOC to 7.3
+ * fixes for 7.3 (PlaySound) (thanks Petraca)
+ * categorized "Cathedral of Eternal Night", "Tomb of Sargeras", "Invasion Points", "Seat of the Triumvirate" and "Antorus, the Burning Throne"
+
 == 1.17 ==
  * replaced favorite instances stars with 8 possible raid markings (huge thanks to HgD)
 

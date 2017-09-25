@@ -144,10 +144,10 @@ fr:SetBackdrop(
 		insets = { left=11, right=12, top=12, bottom=11 }
 	})
 fr:SetScript("OnShow", function()
-	PlaySound("igCharacterInfoOpen")
+	PlaySound(839)
 end)
 fr:SetScript("OnHide", function()
-	PlaySound("igCharacterInfoClose")
+	PlaySound(840)
 end)
 fr:SetMovable(true)
 fr:EnableMouse(true)

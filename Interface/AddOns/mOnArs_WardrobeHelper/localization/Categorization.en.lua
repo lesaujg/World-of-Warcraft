@@ -137,3 +137,9 @@ c["Outland"] = {2, 2, "Outland"}
 
 c["Trial of Valor"] = {7, 2, "Trial of Valor"}
 c["Return to Karazhan"] = {7, 1, "Return to Karazhan"}
+
+c["Tomb of Sargeras"] = {7, 2, "Tomb of Sargeras"}
+c["Antorus, the Burning Throne"] = {7, 2, "Antorus, the Burning Throne"}
+c["Invasion Points"] = {7, 2, "Invasion Points"}
+c["Cathedral of Eternal Night"] = {7, 1, "Cathedral of Eternal Night"}
+c["Seat of the Triumvirate"] = {7, 1, "Seat of the Triumvirate"}

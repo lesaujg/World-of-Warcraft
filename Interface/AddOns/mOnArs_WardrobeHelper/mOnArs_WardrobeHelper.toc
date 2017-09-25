@@ -1,6 +1,6 @@
-## Interface:  70100
+## Interface:  70300
 ## Title: mOnAr's WardrobeHelper
-## Version: 1.17
+## Version: 1.17.1
 ## Author: Seamoon/mOnAr
 ## Notes:
 ## SavedVariables: mOnWDSave
