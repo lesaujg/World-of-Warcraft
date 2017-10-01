@@ -285,17 +285,17 @@ TukuiData = {
 					false, -- [1]
 					0, -- [2]
 				},
-				["Currency"] = {
-					false, -- [1]
-					0, -- [2]
-				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
-				},
 				["Memory"] = {
 					true, -- [1]
 					5, -- [2]
+				},
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Currency"] = {
+					false, -- [1]
+					0, -- [2]
 				},
 				["Time"] = {
 					true, -- [1]
@@ -317,9 +317,9 @@ TukuiData = {
 					false, -- [1]
 					0, -- [2]
 				},
-				["Friends"] = {
+				["FPS & MS"] = {
 					true, -- [1]
-					3, -- [2]
+					4, -- [2]
 				},
 			},
 		},
@@ -1693,7 +1693,7 @@ TukuiData = {
 			["Torinar"] = 120507701,
 			["Orig"] = 124595889,
 			["Herbinator"] = 5445175,
-			["Clothgar"] = 66010147776,
+			["Clothgar"] = 66060463390,
 			["Galinar"] = 618928686,
 			["Belrath"] = 101901125,
 			["Sanjuri"] = 11460,
