@@ -1,106 +1,101 @@
-lightweight tag 92bbb868166f840e2029073c3d13957ac4084618 3.55
+lightweight tag 3486ceb9aa623f82f2221d416ce95850b4cc5cab 3.56
 Author:	Azilroka <darktemplar9900@yahoo.com>
-Date:	Mon Sep 25 12:42:51 2017 -0500
+Date:	Sun Oct 1 13:33:49 2017 -0500
 
-commit 92bbb868166f840e2029073c3d13957ac4084618
+commit 3486ceb9aa623f82f2221d416ce95850b4cc5cab
 Author: Azilroka <darktemplar9900@yahoo.com>
-Date:   Mon Sep 25 12:42:51 2017 -0500
+Date:   Sun Oct 1 13:33:49 2017 -0500
 
-    3.55
+    3.56
 
-commit 7ac9b5570a276c3bdbb58b8df08d53a7d022e679
+commit ab46c0e000b1598bacaf37fb2ae7d575f5d2ea36
 Author: Azilroka <darktemplar9900@yahoo.com>
-Date:   Mon Sep 25 12:41:13 2017 -0500
+Date:   Sun Oct 1 10:48:20 2017 -0500
 
-    Lala
+    Need this back as well.
 
-commit f50479af734137144d653ec1554cd59c66204282
-Author: Paweł Jastrzębski <pawelj@iosphe.re>
-Date:   Mon Sep 25 17:39:59 2017 +0200
+commit 5b3fdf8544be3790894b8fe2bb7cfa151cbfaffe
+Author: Merathilis <neo0608@gmail.com>
+Date:   Sun Oct 1 15:02:07 2017 +0200
 
-    Hack: New skin
+    Give the frame in OHC a bit more time to load. Thx AcidWeb
 
-commit f50479af734137144d653ec1554cd59c66204282
-Author: Paweł Jastrzębski <pawelj@iosphe.re>
-Date:   Mon Sep 25 17:39:59 2017 +0200
+commit 4040019e6f697327c82edb1a16395e0cc64c0946
+Author: Merathilis <neo0608@gmail.com>
+Date:   Sun Oct 1 14:26:16 2017 +0200
 
-    Hack: New skin
+    Fix an error in the OHC skin. Thx Deimos
 
-commit 5cd0fa27bb39294065dead9196fcfb7127de0bbc
-Author: Paweł Jastrzębski <pawelj@iosphe.re>
-Date:   Mon Sep 25 16:42:08 2017 +0200
+commit 1ecd3286f015ebae45bf96a1cd5cabab723e1ea1
+Author: Merathilis <neo0608@gmail.com>
+Date:   Sun Oct 1 14:18:38 2017 +0200
 
-    OrderHallCommander: New skin
+    AceGUI is needed.
 
-commit 6c9e8533523586982f3c88c80d883ca52efa9150
-Author: Paweł Jastrzębski <pawelj@iosphe.re>
-Date:   Mon Sep 25 16:41:18 2017 +0200
+commit abb5499ca1fa5a6ef2fa7c9b9c4f49aa34dfb568
+Author: Merathilis <neo0608@gmail.com>
+Date:   Sun Oct 1 12:08:40 2017 +0200
 
-    AdiBags: Make bank skinning invisible for player
+    Not cool to use single quotes here! It will break the options!
 
-commit 59b26e7403f27c367f1d22815387a27ae967530e
+commit d3a91d1c77e341cfc364aa274673b44348128928
+Author: Azilroka <darktemplar9900@yahoo.com>
+Date:   Sun Oct 1 04:35:33 2017 -0500
+
+    Adding Credits
+
+commit 216d9ed4b21ee4c4113ddb9fbce698c1f9b8e16d
+Author: Azilroka <darktemplar9900@yahoo.com>
+Date:   Sun Oct 1 04:23:37 2017 -0500
+
+    Options / Untested Skins
+
+commit 55962b1fa17415cae79feed2a35e6447256432b3
+Author: Azilroka <darktemplar9900@yahoo.com>
+Date:   Sat Sep 30 19:23:10 2017 -0500
+
+    Remove Extra Libs
+
+commit 55962b1fa17415cae79feed2a35e6447256432b3
+Author: Azilroka <darktemplar9900@yahoo.com>
+Date:   Sat Sep 30 19:23:10 2017 -0500
+
+    Remove Extra Libs
+
+commit 0c7ca730ee5585f647dbb9ef944daa032e3c3edf
+Author: Repooc <tjcooper1982@gmail.com>
+Date:   Sat Sep 30 09:10:47 2017 -0400
+
+    This has not changed since their update on OHC.
+
+commit bf2502c172e4049619e5bfd728fd2ed54a4c8e7a
+Author: Repooc <tjcooper1982@gmail.com>
+Date:   Fri Sep 29 18:48:11 2017 -0400
+
+    Forgot a button
+
+commit 2da38b11f93bf0f2d605cd7430a1839980fe4e51
+Author: Repooc <tjcooper1982@gmail.com>
+Date:   Fri Sep 29 18:45:55 2017 -0400
+
+    Partial Fix for OHC
+    --Commented code still needs verification if any have changed
+
+commit 9119bc6b3005cd51dd5a12c76081b638ca02598b
+Author: Repooc <tjcooper1982@gmail.com>
+Date:   Tue Sep 26 21:11:04 2017 -0400
+
+    Update Details Embed to respect user selected opacity/alpha for general window
+
+commit b1edd92b77c3c69c26a11c20538c54a1ee558f9c
 Author: Michael Tindal <mj.tindal@gmail.com>
-Date:   Mon Sep 25 01:43:45 2017 -0700
+Date:   Mon Sep 25 21:12:17 2017 -0700
 
-    Altoholic quests are bugged in 7.3, so commenting those lines out of the skin so the skin isn't broken.
+    Make it so that we directly call skin functions when SkinDebug is on so we can get good error stacktraces.
 
-commit ea87f8140690f429c4f02f1aa90f0b85981d4661
-Author: Azilroka <darktemplar9900@yahoo.com>
-Date:   Sun Sep 24 21:17:57 2017 -0500
+commit abaeae768d5b59852610a35e66be5048370a5acf
+Author: Merathilis <neo0608@gmail.com>
+Date:   Mon Sep 25 22:01:13 2017 +0200
 
-    CleanUp
-
-commit e6726b7056ffdd876579b9b2954f5432767feaf3
-Author: Azilroka <darktemplar9900@yahoo.com>
-Date:   Sun Sep 24 21:05:18 2017 -0500
-
-    Cache Globals
-
-commit cf6c6946a8ee17d8f4746465808578c139627fe7
-Author: Azilroka <darktemplar9900@yahoo.com>
-Date:   Fri Sep 15 22:53:24 2017 -0500
-
-    4Space2Tab Test
-
-commit ccf790f1eddb8944e66cfa9a9bb58042ae927824
-Author: Azilroka <darktemplar9900@yahoo.com>
-Date:   Fri Sep 15 22:48:53 2017 -0500
-
-    UNIX UTF8 File Conversion
-
-commit 5a63415cbcfaa38a50c90e25674c4a1ec74232b1
-Author: Greg Perrott <greg@perrott.net.nz>
-Date:   Tue Sep 12 05:40:37 2017 -0400
-
-    Added skin for Mythic Keystone Status addon
-
-commit 5a63415cbcfaa38a50c90e25674c4a1ec74232b1
-Author: Greg Perrott <greg@perrott.net.nz>
-Date:   Tue Sep 12 05:40:37 2017 -0400
-
-    Added skin for Mythic Keystone Status addon
-
-commit 92d1fff76265d3ed115d58c13fe5ee38d31ccbbf
-Author: Greg Perrott <greg@perrott.net.nz>
-Date:   Tue Sep 12 05:39:06 2017 -0400
-
-    Added MythicKeystoneStatus addon to Load_Skins.xml
-
-commit b0b0f3d26f708acfe4f20718cde05b409e7598db
-Author: Azilroka <darktemplar9900@yahoo.com>
-Date:   Sun Sep 10 18:47:50 2017 -0500
-
-    .gitignore update
-
-commit fb281e741d03fa476e6eb22de7fbee857d941a87
-Author: Azilroka <darktemplar9900@yahoo.com>
-Date:   Sun Sep 10 13:11:53 2017 -0500
-
-    Fix Load_Skins from previous Merge Request
-
-commit 13596b29f5040e14a0c9d579b8c8a24f6ce00169
-Author: Azilroka <darktemplar9900@yahoo.com>
-Date:   Sun Sep 10 08:53:13 2017 -0500
-
-    3.54
+    Modifed a bit the OrderHallCommander skin. We need moar transparency everywhere!!
 

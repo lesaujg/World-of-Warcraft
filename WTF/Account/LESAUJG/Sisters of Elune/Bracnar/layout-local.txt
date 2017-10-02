@@ -27,6 +27,13 @@ X: -149
 Y: -123
 W: 32
 H: 32
+Frame: TSMCraftingTradeSkillFrame
+FrameLevel: 0
+Anchor: LEFT
+X: 50
+Y: 92
+W: 410
+H: 517
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: BOTTOMRIGHT
