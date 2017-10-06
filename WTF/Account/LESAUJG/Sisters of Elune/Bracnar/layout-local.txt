@@ -1,4 +1,11 @@
 Version: 1
+Frame: TSMCraftingGatherFrame
+FrameLevel: 0
+Anchor: CENTER
+X: 340
+Y: -53
+W: 365
+H: 400
 Frame: ScriptErrorsFrame
 FrameLevel: 0
 Anchor: TOPRIGHT
