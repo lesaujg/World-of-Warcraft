@@ -1,101 +1,16 @@
-lightweight tag 3486ceb9aa623f82f2221d416ce95850b4cc5cab 3.56
+lightweight tag 69a9a510c3395a500df78df142f5a546d6e8d654 3.58
 Author:	Azilroka <darktemplar9900@yahoo.com>
-Date:	Sun Oct 1 13:33:49 2017 -0500
+Date:	Tue Oct 3 20:22:54 2017 -0500
 
-commit 3486ceb9aa623f82f2221d416ce95850b4cc5cab
+commit 69a9a510c3395a500df78df142f5a546d6e8d654
 Author: Azilroka <darktemplar9900@yahoo.com>
-Date:   Sun Oct 1 13:33:49 2017 -0500
+Date:   Tue Oct 3 20:22:54 2017 -0500
 
-    3.56
+    3.58
 
-commit ab46c0e000b1598bacaf37fb2ae7d575f5d2ea36
+commit f483cb4446666f4c16a9f98b89928f59c85fefef
 Author: Azilroka <darktemplar9900@yahoo.com>
-Date:   Sun Oct 1 10:48:20 2017 -0500
+Date:   Tue Oct 3 20:22:13 2017 -0500
 
-    Need this back as well.
-
-commit 5b3fdf8544be3790894b8fe2bb7cfa151cbfaffe
-Author: Merathilis <neo0608@gmail.com>
-Date:   Sun Oct 1 15:02:07 2017 +0200
-
-    Give the frame in OHC a bit more time to load. Thx AcidWeb
-
-commit 4040019e6f697327c82edb1a16395e0cc64c0946
-Author: Merathilis <neo0608@gmail.com>
-Date:   Sun Oct 1 14:26:16 2017 +0200
-
-    Fix an error in the OHC skin. Thx Deimos
-
-commit 1ecd3286f015ebae45bf96a1cd5cabab723e1ea1
-Author: Merathilis <neo0608@gmail.com>
-Date:   Sun Oct 1 14:18:38 2017 +0200
-
-    AceGUI is needed.
-
-commit abb5499ca1fa5a6ef2fa7c9b9c4f49aa34dfb568
-Author: Merathilis <neo0608@gmail.com>
-Date:   Sun Oct 1 12:08:40 2017 +0200
-
-    Not cool to use single quotes here! It will break the options!
-
-commit d3a91d1c77e341cfc364aa274673b44348128928
-Author: Azilroka <darktemplar9900@yahoo.com>
-Date:   Sun Oct 1 04:35:33 2017 -0500
-
-    Adding Credits
-
-commit 216d9ed4b21ee4c4113ddb9fbce698c1f9b8e16d
-Author: Azilroka <darktemplar9900@yahoo.com>
-Date:   Sun Oct 1 04:23:37 2017 -0500
-
-    Options / Untested Skins
-
-commit 55962b1fa17415cae79feed2a35e6447256432b3
-Author: Azilroka <darktemplar9900@yahoo.com>
-Date:   Sat Sep 30 19:23:10 2017 -0500
-
-    Remove Extra Libs
-
-commit 55962b1fa17415cae79feed2a35e6447256432b3
-Author: Azilroka <darktemplar9900@yahoo.com>
-Date:   Sat Sep 30 19:23:10 2017 -0500
-
-    Remove Extra Libs
-
-commit 0c7ca730ee5585f647dbb9ef944daa032e3c3edf
-Author: Repooc <tjcooper1982@gmail.com>
-Date:   Sat Sep 30 09:10:47 2017 -0400
-
-    This has not changed since their update on OHC.
-
-commit bf2502c172e4049619e5bfd728fd2ed54a4c8e7a
-Author: Repooc <tjcooper1982@gmail.com>
-Date:   Fri Sep 29 18:48:11 2017 -0400
-
-    Forgot a button
-
-commit 2da38b11f93bf0f2d605cd7430a1839980fe4e51
-Author: Repooc <tjcooper1982@gmail.com>
-Date:   Fri Sep 29 18:45:55 2017 -0400
-
-    Partial Fix for OHC
-    --Commented code still needs verification if any have changed
-
-commit 9119bc6b3005cd51dd5a12c76081b638ca02598b
-Author: Repooc <tjcooper1982@gmail.com>
-Date:   Tue Sep 26 21:11:04 2017 -0400
-
-    Update Details Embed to respect user selected opacity/alpha for general window
-
-commit b1edd92b77c3c69c26a11c20538c54a1ee558f9c
-Author: Michael Tindal <mj.tindal@gmail.com>
-Date:   Mon Sep 25 21:12:17 2017 -0700
-
-    Make it so that we directly call skin functions when SkinDebug is on so we can get good error stacktraces.
-
-commit abaeae768d5b59852610a35e66be5048370a5acf
-Author: Merathilis <neo0608@gmail.com>
-Date:   Mon Sep 25 22:01:13 2017 +0200
-
-    Modifed a bit the OrderHallCommander skin. We need moar transparency everywhere!!
+    Missed
 

@@ -16,8 +16,8 @@ AskMrRobotDb3 = {
 					[15] = "|cffffffff|Hitem:74586:::::::182754048:12:269::::::|h[Cloak of the Fiery Skies]|h|r",
 					[10] = "|cffffffff|Hitem:74595:::::::1963277056:12:269::::::|h[Gloves of Verity]|h|r",
 					[8] = "|cffffffff|Hitem:74607:::::::407544832:12:269::::::|h[Boots of Courage]|h|r",
-					[9] = "|cffffffff|Hitem:74578:::::::842123008:12:269::::::|h[Bindings of the Earth Spirit]|h|r",
 					[5] = "|cffffffff|Hitem:74604:::::::1254011008:12:269::::::|h[Vest of Compassion]|h|r",
+					[9] = "|cffffffff|Hitem:74578:::::::842123008:12:269::::::|h[Bindings of the Earth Spirit]|h|r",
 				},
 			},
 		},
@@ -190,27 +190,27 @@ AskMrRobotDb3 = {
 				[121223] = 1,
 				[124120] = 11,
 				[118874] = 1,
-				[131775] = 1,
+				[124121] = 4,
 				[138839] = 1,
 				[140760] = 1,
 				[124113] = 18,
-				[124121] = 4,
+				[146761] = 1,
 				[111556] = 65,
 				[121724] = 1,
 				[138885] = 2,
 				[137681] = 1,
 				[124118] = 1,
-				[111366] = 176,
-				[147278] = 1,
-				[124439] = 9,
 				[131792] = 1,
+				[147278] = 1,
+				[146127] = 3,
+				[111366] = 176,
 				[147556] = 1,
 				[139063] = 1,
 				[129170] = 1,
-				[114835] = 3,
 				[6948] = 1,
+				[114835] = 3,
 				[138111] = 1,
-				[63206] = 1,
+				[146763] = 1,
 				[132936] = 1,
 				[118722] = 30,
 				[129090] = 1,
@@ -238,19 +238,19 @@ AskMrRobotDb3 = {
 				[124115] = 2,
 				[142099] = 3,
 				[147248] = 1,
-				[128545] = 5,
 				[144306] = 4,
+				[128545] = 5,
 				[128823] = 1,
 				[127037] = 3,
 				[124124] = 2,
 				[129073] = 1,
 				[121727] = 1,
-				[35279] = 1,
+				[129101] = 1,
 				[49888] = 1,
 				[139608] = 1,
 				[147244] = 1,
 				[133544] = 1,
-				[129101] = 1,
+				[35279] = 1,
 				[138783] = 1,
 				[124437] = 332,
 				[132199] = 1,
@@ -265,12 +265,12 @@ AskMrRobotDb3 = {
 				[143785] = 5,
 				[138855] = 1,
 				[87216] = 5,
-				[146763] = 1,
+				[63206] = 1,
 				[109076] = 20,
-				[146127] = 3,
+				[124439] = 9,
 				[118236] = 1,
 				[33470] = 12,
-				[146761] = 1,
+				[131775] = 1,
 				[147231] = 3,
 				[141854] = 1,
 				[146758] = 1,
@@ -820,7 +820,7 @@ AskMrRobotDb3 = {
 				[109134] = 17,
 				[39505] = 2,
 				[34056] = 125,
-				[74247] = 16,
+				[113262] = 744,
 				[72988] = 89,
 				[11134] = 7,
 				[72120] = 69,
@@ -834,46 +834,46 @@ AskMrRobotDb3 = {
 				[102218] = 10,
 				[6358] = 11,
 				[109135] = 10,
-				[109693] = 52,
-				[53039] = 20,
 				[113263] = 235,
+				[53039] = 20,
+				[109693] = 52,
 				[9943] = 1,
-				[32229] = 2,
-				[6370] = 3,
+				[8153] = 42,
+				[11178] = 13,
 				[13465] = 12,
 				[6367] = 1,
-				[11174] = 2,
+				[22794] = 3,
 				[11176] = 9,
-				[11178] = 13,
+				[6370] = 3,
 				[113261] = 1187,
 				[21790] = 1,
 				[32249] = 4,
-				[82441] = 13,
+				[30747] = 1,
 				[109136] = 5,
 				[109152] = 3,
 				[127783] = 11,
-				[74249] = 225,
+				[113264] = 296,
 				[7909] = 21,
-				[30747] = 1,
+				[82441] = 13,
 				[15280] = 1,
 				[80433] = 83,
 				[52720] = 6,
 				[76130] = 12,
 				[19440] = 10,
-				[113264] = 296,
+				[74249] = 225,
 				[98618] = 1,
-				[8153] = 42,
+				[32229] = 2,
 				[2820] = 1,
 				[111671] = 13,
 				[109137] = 14,
-				[22794] = 3,
+				[11174] = 2,
 				[127784] = 21,
 				[74250] = 5,
 				[36860] = 5,
 				[128365] = 1,
 				[4102] = 1,
 				[34480] = 1,
-				[113262] = 744,
+				[74247] = 16,
 				[18587] = 1,
 				[67749] = 2,
 				[14047] = 78,
@@ -916,8 +916,8 @@ AskMrRobotDb3 = {
 				[114335] = 1,
 				[109127] = 305,
 				[113856] = 2,
-				[113612] = 1,
 				[114746] = 1,
+				[113612] = 1,
 				[114319] = 1,
 				[113681] = 947,
 				[6948] = 1,
@@ -1146,6 +1146,86 @@ AskMrRobotDb3 = {
 				"0000000", -- [3]
 				"2233313", -- [4]
 			},
+			["ExtraEnchantData"] = {
+				{
+					[5319] = {
+						["spellId"] = 158901,
+						["id"] = 5319,
+						["text"] = "75 Mastery",
+						["materials"] = {
+							[113588] = 4,
+							[113263] = 3,
+						},
+						["itemId"] = 110647,
+					},
+					[5384] = {
+						["spellId"] = 173323,
+						["id"] = 5384,
+						["text"] = "Mark of Bleeding Hollow",
+						["materials"] = {
+							[113588] = 15,
+							[113264] = 10,
+						},
+						["itemId"] = 118015,
+					},
+				}, -- [1]
+				{
+					[5319] = {
+						["spellId"] = 158901,
+						["id"] = 5319,
+						["text"] = "75 Mastery",
+						["materials"] = {
+							[113588] = 4,
+							[113263] = 3,
+						},
+						["itemId"] = 110647,
+					},
+					[5384] = {
+						["spellId"] = 173323,
+						["id"] = 5384,
+						["text"] = "Mark of Bleeding Hollow",
+						["materials"] = {
+							[113588] = 15,
+							[113264] = 10,
+						},
+						["itemId"] = 118015,
+					},
+				}, -- [2]
+				{
+				}, -- [3]
+				{
+					[5311] = {
+						["spellId"] = 158885,
+						["id"] = 5311,
+						["text"] = "100 Haste, Run Speed",
+						["materials"] = {
+							[113588] = 4,
+							[113263] = 3,
+						},
+						["itemId"] = 110653,
+					},
+					[5384] = {
+						["spellId"] = 173323,
+						["id"] = 5384,
+						["text"] = "Mark of Bleeding Hollow",
+						["materials"] = {
+							[113588] = 15,
+							[113264] = 10,
+						},
+						["itemId"] = 118015,
+					},
+					[5319] = {
+						["spellId"] = 158901,
+						["id"] = 5319,
+						["text"] = "75 Mastery",
+						["materials"] = {
+							[113588] = 4,
+							[113263] = 3,
+						},
+						["itemId"] = 110647,
+					},
+				}, -- [4]
+			},
 			["BankItems"] = {
 				"|cff1eff00|Hitem:31437:::::::1381900645:101:105::::::|h[Medicinal Drake Essence]|h|r", -- [1]
 				"|cffffffff|Hitem:21215:::::::1392214658:101:105::::::|h[Graccu's Mince Meat Fruitcake]|h|r", -- [2]
@@ -1335,86 +1415,6 @@ AskMrRobotDb3 = {
 					},
 				}, -- [4]
 			},
-			["ExtraEnchantData"] = {
-				{
-					[5319] = {
-						["spellId"] = 158901,
-						["id"] = 5319,
-						["text"] = "75 Mastery",
-						["materials"] = {
-							[113588] = 4,
-							[113263] = 3,
-						},
-						["itemId"] = 110647,
-					},
-					[5384] = {
-						["spellId"] = 173323,
-						["id"] = 5384,
-						["text"] = "Mark of Bleeding Hollow",
-						["materials"] = {
-							[113588] = 15,
-							[113264] = 10,
-						},
-						["itemId"] = 118015,
-					},
-				}, -- [1]
-				{
-					[5319] = {
-						["spellId"] = 158901,
-						["id"] = 5319,
-						["text"] = "75 Mastery",
-						["materials"] = {
-							[113588] = 4,
-							[113263] = 3,
-						},
-						["itemId"] = 110647,
-					},
-					[5384] = {
-						["spellId"] = 173323,
-						["id"] = 5384,
-						["text"] = "Mark of Bleeding Hollow",
-						["materials"] = {
-							[113588] = 15,
-							[113264] = 10,
-						},
-						["itemId"] = 118015,
-					},
-				}, -- [2]
-				{
-				}, -- [3]
-				{
-					[5311] = {
-						["spellId"] = 158885,
-						["id"] = 5311,
-						["text"] = "100 Haste, Run Speed",
-						["materials"] = {
-							[113588] = 4,
-							[113263] = 3,
-						},
-						["itemId"] = 110653,
-					},
-					[5384] = {
-						["spellId"] = 173323,
-						["id"] = 5384,
-						["text"] = "Mark of Bleeding Hollow",
-						["materials"] = {
-							[113588] = 15,
-							[113264] = 10,
-						},
-						["itemId"] = 118015,
-					},
-					[5319] = {
-						["spellId"] = 158901,
-						["id"] = 5319,
-						["text"] = "75 Mastery",
-						["materials"] = {
-							[113588] = 4,
-							[113263] = 3,
-						},
-						["itemId"] = 110647,
-					},
-				}, -- [4]
-			},
 			["Equipped"] = {
 				{
 					"|cffa335ee|Hitem:128034::115812::::::101:102:4:4:1:563:529:::|h[Pit Lord's Cowl]|h|r", -- [1]
@@ -1601,18 +1601,18 @@ AskMrRobotDb3 = {
 						["bonusIds"] = {
 							563, -- [1]
 						},
-						["id"] = 128034,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 112,
-						["upgradeId"] = 529,
+						["id"] = 128034,
 						["gemIds"] = {
 							115812, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 112,
 					}, -- [1]
 					{
 						["bonusIds"] = {
@@ -1620,129 +1620,129 @@ AskMrRobotDb3 = {
 							648, -- [2]
 							653, -- [3]
 						},
-						["id"] = 124609,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 5319,
-						["suffixId"] = 0,
-						["inventoryId"] = 108,
-						["upgradeId"] = 529,
+						["id"] = 124609,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 108,
 					}, -- [2]
 					{
 						["bonusIds"] = {
 							560, -- [1]
 						},
-						["id"] = 128065,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 113,
-						["upgradeId"] = 529,
+						["id"] = 128065,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 113,
 					}, -- [3]
 					nil, -- [4]
 					{
 						["bonusIds"] = {
 							563, -- [1]
 						},
-						["id"] = 128125,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 114,
-						["upgradeId"] = 529,
+						["id"] = 128125,
 						["gemIds"] = {
 							115812, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 114,
 					}, -- [5]
 					{
-						["id"] = 113907,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 59,
-						["upgradeId"] = 0,
+						["id"] = 113907,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 59,
 					}, -- [6]
 					{
 						["bonusIds"] = {
 							42, -- [1]
 						},
-						["id"] = 128131,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 115,
-						["upgradeId"] = 529,
+						["id"] = 128131,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 115,
 					}, -- [7]
 					{
 						["bonusIds"] = {
 							563, -- [1]
 						},
-						["id"] = 124251,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 103,
-						["upgradeId"] = 529,
+						["id"] = 124251,
 						["gemIds"] = {
 							115812, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 103,
 					}, -- [8]
 					{
-						["id"] = 127982,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 111,
-						["upgradeId"] = 529,
+						["id"] = 127982,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 111,
 					}, -- [9]
 					{
-						["id"] = 128137,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 100,
-						["upgradeId"] = 529,
+						["id"] = 128137,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 100,
 					}, -- [10]
 					{
 						["bonusIds"] = {
@@ -1750,18 +1750,18 @@ AskMrRobotDb3 = {
 							652, -- [2]
 							764, -- [3]
 						},
-						["id"] = 124602,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 106,
-						["upgradeId"] = 529,
+						["id"] = 124602,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 106,
 					}, -- [11]
 					{
 						["bonusIds"] = {
@@ -1769,63 +1769,63 @@ AskMrRobotDb3 = {
 							648, -- [2]
 							652, -- [3]
 						},
-						["id"] = 124603,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 107,
-						["upgradeId"] = 529,
+						["id"] = 124603,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 107,
 					}, -- [12]
 					{
-						["id"] = 124546,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 105,
-						["upgradeId"] = 529,
+						["id"] = 124546,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 105,
 					}, -- [13]
 					{
 						["bonusIds"] = {
 							563, -- [1]
 						},
-						["id"] = 124545,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 104,
-						["upgradeId"] = 529,
+						["id"] = 124545,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 104,
 					}, -- [14]
 					{
-						["id"] = 127973,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 110,
-						["upgradeId"] = 529,
+						["id"] = 127973,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 110,
 					}, -- [15]
 					{
 						["bonusIds"] = {
@@ -1833,18 +1833,18 @@ AskMrRobotDb3 = {
 							648, -- [2]
 							653, -- [3]
 						},
-						["id"] = 124630,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 5384,
-						["suffixId"] = 0,
-						["inventoryId"] = 109,
-						["upgradeId"] = 529,
+						["id"] = 124630,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 109,
 					}, -- [16]
 				}, -- [1]
 				{
@@ -1852,18 +1852,18 @@ AskMrRobotDb3 = {
 						["bonusIds"] = {
 							563, -- [1]
 						},
-						["id"] = 128034,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 112,
-						["upgradeId"] = 529,
+						["id"] = 128034,
 						["gemIds"] = {
 							115812, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 112,
 					}, -- [1]
 					{
 						["bonusIds"] = {
@@ -1871,129 +1871,129 @@ AskMrRobotDb3 = {
 							648, -- [2]
 							653, -- [3]
 						},
-						["id"] = 124609,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 5319,
-						["suffixId"] = 0,
-						["inventoryId"] = 108,
-						["upgradeId"] = 529,
+						["id"] = 124609,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 108,
 					}, -- [2]
 					{
 						["bonusIds"] = {
 							560, -- [1]
 						},
-						["id"] = 128065,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 113,
-						["upgradeId"] = 529,
+						["id"] = 128065,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 113,
 					}, -- [3]
 					nil, -- [4]
 					{
 						["bonusIds"] = {
 							563, -- [1]
 						},
-						["id"] = 128125,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 114,
-						["upgradeId"] = 529,
+						["id"] = 128125,
 						["gemIds"] = {
 							115812, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 114,
 					}, -- [5]
 					{
-						["id"] = 113907,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 59,
-						["upgradeId"] = 0,
+						["id"] = 113907,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 59,
 					}, -- [6]
 					{
 						["bonusIds"] = {
 							42, -- [1]
 						},
-						["id"] = 128131,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 115,
-						["upgradeId"] = 529,
+						["id"] = 128131,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 115,
 					}, -- [7]
 					{
 						["bonusIds"] = {
 							563, -- [1]
 						},
-						["id"] = 124251,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 103,
-						["upgradeId"] = 529,
+						["id"] = 124251,
 						["gemIds"] = {
 							115812, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 103,
 					}, -- [8]
 					{
-						["id"] = 127982,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 111,
-						["upgradeId"] = 529,
+						["id"] = 127982,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 111,
 					}, -- [9]
 					{
-						["id"] = 128137,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 100,
-						["upgradeId"] = 529,
+						["id"] = 128137,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 100,
 					}, -- [10]
 					{
 						["bonusIds"] = {
@@ -2001,18 +2001,18 @@ AskMrRobotDb3 = {
 							652, -- [2]
 							764, -- [3]
 						},
-						["id"] = 124602,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 106,
-						["upgradeId"] = 529,
+						["id"] = 124602,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 106,
 					}, -- [11]
 					{
 						["bonusIds"] = {
@@ -2020,63 +2020,63 @@ AskMrRobotDb3 = {
 							648, -- [2]
 							652, -- [3]
 						},
-						["id"] = 124603,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 107,
-						["upgradeId"] = 529,
+						["id"] = 124603,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 107,
 					}, -- [12]
 					{
-						["id"] = 124546,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 105,
-						["upgradeId"] = 529,
+						["id"] = 124546,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 105,
 					}, -- [13]
 					{
 						["bonusIds"] = {
 							563, -- [1]
 						},
-						["id"] = 124545,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 104,
-						["upgradeId"] = 529,
+						["id"] = 124545,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 104,
 					}, -- [14]
 					{
-						["id"] = 127973,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 110,
-						["upgradeId"] = 529,
+						["id"] = 127973,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 110,
 					}, -- [15]
 					{
 						["bonusIds"] = {
@@ -2084,18 +2084,18 @@ AskMrRobotDb3 = {
 							648, -- [2]
 							653, -- [3]
 						},
-						["id"] = 124630,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 5384,
-						["suffixId"] = 0,
-						["inventoryId"] = 109,
-						["upgradeId"] = 529,
+						["id"] = 124630,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 109,
 					}, -- [16]
 				}, -- [2]
 				{
@@ -2103,18 +2103,18 @@ AskMrRobotDb3 = {
 						["bonusIds"] = {
 							563, -- [1]
 						},
-						["id"] = 128034,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 112,
-						["upgradeId"] = 529,
+						["id"] = 128034,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 112,
 					}, -- [1]
 					{
 						["bonusIds"] = {
@@ -2122,129 +2122,129 @@ AskMrRobotDb3 = {
 							648, -- [2]
 							653, -- [3]
 						},
-						["id"] = 124609,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 108,
-						["upgradeId"] = 529,
+						["id"] = 124609,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 108,
 					}, -- [2]
 					{
 						["bonusIds"] = {
 							560, -- [1]
 						},
-						["id"] = 128065,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 113,
-						["upgradeId"] = 529,
+						["id"] = 128065,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 113,
 					}, -- [3]
 					nil, -- [4]
 					{
 						["bonusIds"] = {
 							563, -- [1]
 						},
-						["id"] = 128125,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 114,
-						["upgradeId"] = 529,
+						["id"] = 128125,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 114,
 					}, -- [5]
 					{
-						["id"] = 113907,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 59,
-						["upgradeId"] = 0,
+						["id"] = 113907,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 59,
 					}, -- [6]
 					{
 						["bonusIds"] = {
 							42, -- [1]
 						},
-						["id"] = 128131,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 115,
-						["upgradeId"] = 529,
+						["id"] = 128131,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 115,
 					}, -- [7]
 					{
 						["bonusIds"] = {
 							563, -- [1]
 						},
-						["id"] = 124251,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 103,
-						["upgradeId"] = 529,
+						["id"] = 124251,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 103,
 					}, -- [8]
 					{
-						["id"] = 127982,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 111,
-						["upgradeId"] = 529,
+						["id"] = 127982,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 111,
 					}, -- [9]
 					{
-						["id"] = 128137,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 100,
-						["upgradeId"] = 529,
+						["id"] = 128137,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 100,
 					}, -- [10]
 					{
 						["bonusIds"] = {
@@ -2252,18 +2252,18 @@ AskMrRobotDb3 = {
 							648, -- [2]
 							652, -- [3]
 						},
-						["id"] = 124603,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 107,
-						["upgradeId"] = 529,
+						["id"] = 124603,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 107,
 					}, -- [11]
 					{
 						["bonusIds"] = {
@@ -2271,63 +2271,63 @@ AskMrRobotDb3 = {
 							652, -- [2]
 							764, -- [3]
 						},
-						["id"] = 124602,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 106,
-						["upgradeId"] = 529,
+						["id"] = 124602,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 106,
 					}, -- [12]
 					{
 						["bonusIds"] = {
 							563, -- [1]
 						},
-						["id"] = 124545,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 104,
-						["upgradeId"] = 529,
+						["id"] = 124545,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 104,
 					}, -- [13]
 					{
-						["id"] = 124546,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 105,
-						["upgradeId"] = 529,
+						["id"] = 124546,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 105,
 					}, -- [14]
 					{
-						["id"] = 127973,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 110,
-						["upgradeId"] = 529,
+						["id"] = 127973,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 110,
 					}, -- [15]
 				}, -- [3]
 				{
@@ -2335,18 +2335,18 @@ AskMrRobotDb3 = {
 						["bonusIds"] = {
 							563, -- [1]
 						},
-						["id"] = 128034,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 112,
-						["upgradeId"] = 529,
+						["id"] = 128034,
 						["gemIds"] = {
 							115812, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 112,
 					}, -- [1]
 					{
 						["bonusIds"] = {
@@ -2354,129 +2354,129 @@ AskMrRobotDb3 = {
 							648, -- [2]
 							653, -- [3]
 						},
-						["id"] = 124609,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 5319,
-						["suffixId"] = 0,
-						["inventoryId"] = 108,
-						["upgradeId"] = 529,
+						["id"] = 124609,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 108,
 					}, -- [2]
 					{
 						["bonusIds"] = {
 							560, -- [1]
 						},
-						["id"] = 128065,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 113,
-						["upgradeId"] = 529,
+						["id"] = 128065,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 113,
 					}, -- [3]
 					nil, -- [4]
 					{
 						["bonusIds"] = {
 							563, -- [1]
 						},
-						["id"] = 128125,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 114,
-						["upgradeId"] = 529,
+						["id"] = 128125,
 						["gemIds"] = {
 							115812, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 114,
 					}, -- [5]
 					{
-						["id"] = 113907,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 102,
-						["upgradeId"] = 0,
+						["id"] = 113907,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 102,
 					}, -- [6]
 					{
 						["bonusIds"] = {
 							42, -- [1]
 						},
-						["id"] = 128131,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 115,
-						["upgradeId"] = 529,
+						["id"] = 128131,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 115,
 					}, -- [7]
 					{
 						["bonusIds"] = {
 							563, -- [1]
 						},
-						["id"] = 124251,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 103,
-						["upgradeId"] = 529,
+						["id"] = 124251,
 						["gemIds"] = {
 							115812, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 103,
 					}, -- [8]
 					{
-						["id"] = 127982,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 111,
-						["upgradeId"] = 529,
+						["id"] = 127982,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 111,
 					}, -- [9]
 					{
-						["id"] = 128137,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 116,
-						["upgradeId"] = 529,
+						["id"] = 128137,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 116,
 					}, -- [10]
 					{
 						["bonusIds"] = {
@@ -2484,18 +2484,18 @@ AskMrRobotDb3 = {
 							652, -- [2]
 							764, -- [3]
 						},
-						["id"] = 124602,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 106,
-						["upgradeId"] = 529,
+						["id"] = 124602,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 106,
 					}, -- [11]
 					{
 						["bonusIds"] = {
@@ -2503,63 +2503,63 @@ AskMrRobotDb3 = {
 							648, -- [2]
 							652, -- [3]
 						},
-						["id"] = 124603,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 107,
-						["upgradeId"] = 529,
+						["id"] = 124603,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 107,
 					}, -- [12]
 					{
-						["id"] = 124546,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 105,
-						["upgradeId"] = 529,
+						["id"] = 124546,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 105,
 					}, -- [13]
 					{
 						["bonusIds"] = {
 							563, -- [1]
 						},
-						["id"] = 124545,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 104,
-						["upgradeId"] = 529,
+						["id"] = 124545,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 104,
 					}, -- [14]
 					{
-						["id"] = 127973,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 5311,
-						["suffixId"] = 0,
-						["inventoryId"] = 110,
-						["upgradeId"] = 529,
+						["id"] = 127973,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 110,
 					}, -- [15]
 					{
 						["bonusIds"] = {
@@ -2567,18 +2567,18 @@ AskMrRobotDb3 = {
 							648, -- [2]
 							653, -- [3]
 						},
-						["id"] = 124630,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 5384,
-						["suffixId"] = 0,
-						["inventoryId"] = 109,
-						["upgradeId"] = 529,
+						["id"] = 124630,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 529,
+						["inventoryId"] = 109,
 					}, -- [16]
 				}, -- [4]
 			},
@@ -2639,7 +2639,7 @@ AskMrRobotDb3 = {
 				[113107] = 1,
 				[118084] = 1,
 				[71086] = 1,
-				[115798] = 1,
+				[116179] = 1,
 				[142099] = 1,
 				[118354] = 9,
 				[142093] = 2,
@@ -2662,7 +2662,7 @@ AskMrRobotDb3 = {
 				[127662] = 3,
 				[40586] = 1,
 				[6662] = 260,
-				[116179] = 1,
+				[115798] = 1,
 				[69897] = 1,
 			},
 			["Artifacts"] = {
@@ -2706,8 +2706,8 @@ AskMrRobotDb3 = {
 					[124609] = {
 						["id"] = 124609,
 					},
-					[124630] = {
-						["id"] = 124630,
+					[128065] = {
+						["id"] = 128065,
 					},
 					[124251] = {
 						["id"] = 124251,
@@ -2727,14 +2727,14 @@ AskMrRobotDb3 = {
 							1, -- [1]
 						},
 					},
-					[128065] = {
-						["id"] = 128065,
-					},
 					[128125] = {
 						["id"] = 128125,
 						["socketColors"] = {
 							1, -- [1]
 						},
+					},
+					[124630] = {
+						["id"] = 124630,
 					},
 					[128131] = {
 						["id"] = 128131,
@@ -2762,8 +2762,8 @@ AskMrRobotDb3 = {
 					[124609] = {
 						["id"] = 124609,
 					},
-					[124630] = {
-						["id"] = 124630,
+					[128065] = {
+						["id"] = 128065,
 					},
 					[124251] = {
 						["id"] = 124251,
@@ -2783,14 +2783,14 @@ AskMrRobotDb3 = {
 							1, -- [1]
 						},
 					},
-					[128065] = {
-						["id"] = 128065,
-					},
 					[128125] = {
 						["id"] = 128125,
 						["socketColors"] = {
 							1, -- [1]
 						},
+					},
+					[124630] = {
+						["id"] = 124630,
 					},
 					[128131] = {
 						["id"] = 128131,
@@ -2862,8 +2862,8 @@ AskMrRobotDb3 = {
 					[124609] = {
 						["id"] = 124609,
 					},
-					[124630] = {
-						["id"] = 124630,
+					[128065] = {
+						["id"] = 128065,
 					},
 					[124251] = {
 						["id"] = 124251,
@@ -2883,14 +2883,14 @@ AskMrRobotDb3 = {
 							1, -- [1]
 						},
 					},
-					[128065] = {
-						["id"] = 128065,
-					},
 					[128125] = {
 						["id"] = 128125,
 						["socketColors"] = {
 							1, -- [1]
 						},
+					},
+					[124630] = {
+						["id"] = 124630,
 					},
 					[128131] = {
 						["id"] = 128131,
@@ -2951,7 +2951,7 @@ AskMrRobotDb3 = {
 				[18706] = 1,
 				[46725] = 1,
 				[109129] = 128,
-				[31450] = 5,
+				[10455] = 1,
 				[34068] = 17,
 				[22524] = 3,
 				[128507] = 1,
@@ -2960,7 +2960,7 @@ AskMrRobotDb3 = {
 				[115807] = 3,
 				[44731] = 1,
 				[90078] = 1,
-				[10455] = 1,
+				[31450] = 5,
 				[21537] = 16,
 				[11482] = 1,
 				[109124] = 53,
@@ -3138,7 +3138,7 @@ AskMrRobotDb3 = {
 				[38868] = 1,
 				[38871] = 1,
 				[52755] = 1,
-				[68134] = 1,
+				[38811] = 2,
 				[38905] = 1,
 				[38875] = 1,
 				[113818] = 1,
@@ -3156,7 +3156,7 @@ AskMrRobotDb3 = {
 				[38919] = 1,
 				[38796] = 1,
 				[74710] = 1,
-				[38811] = 2,
+				[68134] = 1,
 			},
 		},
 		["Bracnar - Sisters of Elune"] = {
@@ -3164,142 +3164,6 @@ AskMrRobotDb3 = {
 				"3111132", -- [1]
 				"2311132", -- [2]
 				"1321311", -- [3]
-			},
-			["ExtraGemData"] = {
-				{
-					[141263] = {
-						["id"] = 141263,
-						["text"] = "",
-						["enchantId"] = 141263,
-						["identicalItemGroup"] = {
-							[141263] = true,
-						},
-					},
-					[130222] = {
-						["id"] = 130222,
-						["text"] = "150 Mastery",
-						["enchantId"] = 130222,
-						["identicalItemGroup"] = {
-							[130222] = true,
-						},
-					},
-					[130247] = {
-						["id"] = 130247,
-						["text"] = "200 Agi",
-						["enchantId"] = 130247,
-						["identicalItemGroup"] = {
-							[130247] = true,
-						},
-					},
-					[140813] = {
-						["id"] = 140813,
-						["text"] = "",
-						["enchantId"] = 140813,
-						["identicalItemGroup"] = {
-							[140813] = true,
-						},
-					},
-					[140841] = {
-						["id"] = 140841,
-						["text"] = "",
-						["enchantId"] = 140841,
-						["identicalItemGroup"] = {
-							[140841] = true,
-						},
-					},
-					[130220] = {
-						["id"] = 130220,
-						["text"] = "150 Haste",
-						["enchantId"] = 130220,
-						["identicalItemGroup"] = {
-							[130220] = true,
-						},
-					},
-				}, -- [1]
-				{
-					[141270] = {
-						["id"] = 141270,
-						["text"] = "",
-						["enchantId"] = 141270,
-						["identicalItemGroup"] = {
-							[141270] = true,
-						},
-					},
-					[147081] = {
-						["id"] = 147081,
-						["text"] = "",
-						["enchantId"] = 147081,
-						["identicalItemGroup"] = {
-							[147081] = true,
-						},
-					},
-					[130222] = {
-						["id"] = 130222,
-						["text"] = "150 Mastery",
-						["enchantId"] = 130222,
-						["identicalItemGroup"] = {
-							[130222] = true,
-						},
-					},
-					[130247] = {
-						["id"] = 130247,
-						["text"] = "200 Agi",
-						["enchantId"] = 130247,
-						["identicalItemGroup"] = {
-							[130247] = true,
-						},
-					},
-					[147105] = {
-						["id"] = 147105,
-						["text"] = "",
-						["enchantId"] = 147105,
-						["identicalItemGroup"] = {
-							[147105] = true,
-						},
-					},
-					[130220] = {
-						["id"] = 130220,
-						["text"] = "150 Haste",
-						["enchantId"] = 130220,
-						["identicalItemGroup"] = {
-							[130220] = true,
-						},
-					},
-				}, -- [2]
-				{
-					[147102] = {
-						["id"] = 147102,
-						["text"] = "",
-						["enchantId"] = 147102,
-						["identicalItemGroup"] = {
-							[147102] = true,
-						},
-					},
-					[143691] = {
-						["id"] = 143691,
-						["text"] = "",
-						["enchantId"] = 143691,
-						["identicalItemGroup"] = {
-							[143691] = true,
-						},
-					},
-					[140840] = {
-						["id"] = 140840,
-						["text"] = "",
-						["enchantId"] = 140840,
-						["identicalItemGroup"] = {
-							[140840] = true,
-						},
-					},
-					[130247] = {
-						["id"] = 130247,
-						["text"] = "200 Agi",
-						["enchantId"] = 130247,
-						["identicalItemGroup"] = {
-							[130247] = true,
-						},
-					},
-				}, -- [3]
 			},
 			["BankItems"] = {
 				"|cff0070dd|Hitem:128453::::::::110:254::14::::|h[Saberstalkers Battle Standard]|h|r", -- [1]
@@ -3710,6 +3574,142 @@ AskMrRobotDb3 = {
 					},
 				}, -- [3]
 			},
+			["ExtraGemData"] = {
+				{
+					[141263] = {
+						["id"] = 141263,
+						["text"] = "",
+						["enchantId"] = 141263,
+						["identicalItemGroup"] = {
+							[141263] = true,
+						},
+					},
+					[130222] = {
+						["id"] = 130222,
+						["text"] = "150 Mastery",
+						["enchantId"] = 130222,
+						["identicalItemGroup"] = {
+							[130222] = true,
+						},
+					},
+					[130247] = {
+						["id"] = 130247,
+						["text"] = "200 Agi",
+						["enchantId"] = 130247,
+						["identicalItemGroup"] = {
+							[130247] = true,
+						},
+					},
+					[140841] = {
+						["id"] = 140841,
+						["text"] = "",
+						["enchantId"] = 140841,
+						["identicalItemGroup"] = {
+							[140841] = true,
+						},
+					},
+					[130220] = {
+						["id"] = 130220,
+						["text"] = "150 Haste",
+						["enchantId"] = 130220,
+						["identicalItemGroup"] = {
+							[130220] = true,
+						},
+					},
+					[140813] = {
+						["id"] = 140813,
+						["text"] = "",
+						["enchantId"] = 140813,
+						["identicalItemGroup"] = {
+							[140813] = true,
+						},
+					},
+				}, -- [1]
+				{
+					[141270] = {
+						["id"] = 141270,
+						["text"] = "",
+						["enchantId"] = 141270,
+						["identicalItemGroup"] = {
+							[141270] = true,
+						},
+					},
+					[147081] = {
+						["id"] = 147081,
+						["text"] = "",
+						["enchantId"] = 147081,
+						["identicalItemGroup"] = {
+							[147081] = true,
+						},
+					},
+					[130222] = {
+						["id"] = 130222,
+						["text"] = "150 Mastery",
+						["enchantId"] = 130222,
+						["identicalItemGroup"] = {
+							[130222] = true,
+						},
+					},
+					[130247] = {
+						["id"] = 130247,
+						["text"] = "200 Agi",
+						["enchantId"] = 130247,
+						["identicalItemGroup"] = {
+							[130247] = true,
+						},
+					},
+					[147105] = {
+						["id"] = 147105,
+						["text"] = "",
+						["enchantId"] = 147105,
+						["identicalItemGroup"] = {
+							[147105] = true,
+						},
+					},
+					[130220] = {
+						["id"] = 130220,
+						["text"] = "150 Haste",
+						["enchantId"] = 130220,
+						["identicalItemGroup"] = {
+							[130220] = true,
+						},
+					},
+				}, -- [2]
+				{
+					[143691] = {
+						["id"] = 143691,
+						["text"] = "",
+						["enchantId"] = 143691,
+						["identicalItemGroup"] = {
+							[143691] = true,
+						},
+					},
+					[147102] = {
+						["id"] = 147102,
+						["text"] = "",
+						["enchantId"] = 147102,
+						["identicalItemGroup"] = {
+							[147102] = true,
+						},
+					},
+					[130247] = {
+						["id"] = 130247,
+						["text"] = "200 Agi",
+						["enchantId"] = 130247,
+						["identicalItemGroup"] = {
+							[130247] = true,
+						},
+					},
+					[140840] = {
+						["id"] = 140840,
+						["text"] = "",
+						["enchantId"] = 140840,
+						["identicalItemGroup"] = {
+							[140840] = true,
+						},
+					},
+				}, -- [3]
+			},
 			["ExtraItemData"] = {
 				{
 					[138339] = {
@@ -3785,14 +3785,14 @@ AskMrRobotDb3 = {
 					[144491] = {
 						["id"] = 144491,
 					},
-					[140867] = {
-						["id"] = 140867,
+					[141482] = {
+						["id"] = 141482,
 					},
 					[147020] = {
 						["id"] = 147020,
 					},
-					[141482] = {
-						["id"] = 141482,
+					[140867] = {
+						["id"] = 140867,
 					},
 					[144259] = {
 						["id"] = 144259,
@@ -4108,26 +4108,26 @@ AskMrRobotDb3 = {
 				[147745] = 1,
 				[147047] = 1,
 				[147349] = 21,
-				[19019] = 1,
+				[139809] = 8,
 				[147016] = 1,
 				[144326] = 1,
-				[139809] = 8,
+				[19019] = 1,
 				[140587] = 45,
 				[138347] = 1,
 				[147350] = 1,
 				[6948] = 1,
 				[138111] = 1,
 				[63206] = 1,
+				[143605] = 5,
+				[147049] = 2,
 				[137382] = 1,
-				[146668] = 1,
-				[133572] = 146,
 				[109168] = 1,
 				[137064] = 1,
 				[141652] = 1,
-				[140573] = 1,
-				[137642] = 4,
-				[143605] = 5,
 				[8383] = 3,
+				[137642] = 4,
+				[133572] = 146,
+				[139811] = 6,
 				[147193] = 1,
 				[141446] = 37,
 				[64399] = 1,
@@ -4151,7 +4151,7 @@ AskMrRobotDb3 = {
 				[147556] = 1,
 				[118663] = 1,
 				[139808] = 22,
-				[147053] = 1,
+				[139814] = 8,
 				[151641] = 1,
 				[49040] = 1,
 				[44050] = 1,
@@ -4159,7 +4159,7 @@ AskMrRobotDb3 = {
 				[137227] = 1,
 				[140571] = 22,
 				[139799] = 3,
-				[139814] = 8,
+				[147053] = 1,
 				[142117] = 50,
 				[124636] = 1,
 				[138339] = 1,
@@ -4175,10 +4175,10 @@ AskMrRobotDb3 = {
 				[144341] = 1,
 				[140583] = 1,
 				[139801] = 18,
-				[139811] = 6,
+				[140573] = 1,
 				[147707] = 1,
 				[139849] = 21,
-				[147049] = 2,
+				[146668] = 1,
 				[141024] = 1,
 				[139613] = 1,
 			},
@@ -4191,18 +4191,18 @@ AskMrRobotDb3 = {
 							3336, -- [3]
 							3516, -- [4]
 						},
-						["id"] = 138342,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 345,
-						["upgradeId"] = 0,
+						["id"] = 138342,
 						["gemIds"] = {
 							130220, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 345,
 					}, -- [1]
 					{
 						["bonusIds"] = {
@@ -4211,36 +4211,36 @@ AskMrRobotDb3 = {
 							689, -- [3]
 							1787, -- [4]
 						},
-						["id"] = 130240,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 5890,
-						["suffixId"] = 0,
-						["inventoryId"] = 439,
-						["upgradeId"] = 0,
+						["id"] = 130240,
 						["gemIds"] = {
 							130222, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 439,
 					}, -- [2]
 					{
 						["bonusIds"] = {
 							1811, -- [1]
 							3570, -- [2]
 						},
-						["id"] = 144326,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 410,
-						["upgradeId"] = 0,
+						["id"] = 144326,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 410,
 					}, -- [3]
 					nil, -- [4]
 					{
@@ -4249,18 +4249,18 @@ AskMrRobotDb3 = {
 							3336, -- [2]
 							3516, -- [3]
 						},
-						["id"] = 138339,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 343,
-						["upgradeId"] = 0,
+						["id"] = 138339,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 343,
 					}, -- [5]
 					{
 						["bonusIds"] = {
@@ -4268,18 +4268,18 @@ AskMrRobotDb3 = {
 							3528, -- [2]
 							3561, -- [3]
 						},
-						["id"] = 147056,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 450,
-						["upgradeId"] = 0,
+						["id"] = 147056,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 450,
 					}, -- [6]
 					{
 						["bonusIds"] = {
@@ -4287,18 +4287,18 @@ AskMrRobotDb3 = {
 							3529, -- [2]
 							3570, -- [3]
 						},
-						["id"] = 132466,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 313,
-						["upgradeId"] = 0,
+						["id"] = 132466,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 313,
 					}, -- [7]
 					{
 						["bonusIds"] = {
@@ -4307,18 +4307,18 @@ AskMrRobotDb3 = {
 							3337, -- [3]
 							3516, -- [4]
 						},
-						["id"] = 140867,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 444,
-						["upgradeId"] = 0,
+						["id"] = 140867,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 444,
 					}, -- [8]
 					{
 						["bonusIds"] = {
@@ -4327,18 +4327,18 @@ AskMrRobotDb3 = {
 							3337, -- [3]
 							3417, -- [4]
 						},
-						["id"] = 144491,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 448,
-						["upgradeId"] = 0,
+						["id"] = 144491,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 448,
 					}, -- [9]
 					{
 						["bonusIds"] = {
@@ -4346,18 +4346,18 @@ AskMrRobotDb3 = {
 							3516, -- [2]
 							3528, -- [3]
 						},
-						["id"] = 138340,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 344,
-						["upgradeId"] = 0,
+						["id"] = 138340,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 344,
 					}, -- [10]
 					{
 						["bonusIds"] = {
@@ -4365,18 +4365,18 @@ AskMrRobotDb3 = {
 							3528, -- [2]
 							3562, -- [3]
 						},
-						["id"] = 147020,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 5429,
-						["suffixId"] = 0,
-						["inventoryId"] = 449,
-						["upgradeId"] = 0,
+						["id"] = 147020,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 449,
 					}, -- [11]
 					{
 						["bonusIds"] = {
@@ -4385,18 +4385,18 @@ AskMrRobotDb3 = {
 							689, -- [3]
 							3355, -- [4]
 						},
-						["id"] = 136713,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 5429,
-						["suffixId"] = 0,
-						["inventoryId"] = 440,
-						["upgradeId"] = 0,
+						["id"] = 136713,
 						["gemIds"] = {
 							130247, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 440,
 					}, -- [12]
 					{
 						["bonusIds"] = {
@@ -4405,18 +4405,18 @@ AskMrRobotDb3 = {
 							3336, -- [3]
 							3573, -- [4]
 						},
-						["id"] = 140806,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 383,
-						["upgradeId"] = 0,
+						["id"] = 140806,
 						["gemIds"] = {
 							130220, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 383,
 					}, -- [13]
 					{
 						["bonusIds"] = {
@@ -4424,18 +4424,18 @@ AskMrRobotDb3 = {
 							3528, -- [2]
 							3573, -- [3]
 						},
-						["id"] = 141482,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 446,
-						["upgradeId"] = 0,
+						["id"] = 141482,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 446,
 					}, -- [14]
 					{
 						["bonusIds"] = {
@@ -4443,18 +4443,18 @@ AskMrRobotDb3 = {
 							3337, -- [2]
 							3516, -- [3]
 						},
-						["id"] = 138368,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 5435,
-						["suffixId"] = 0,
-						["inventoryId"] = 442,
-						["upgradeId"] = 0,
+						["id"] = 138368,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 442,
 					}, -- [15]
 					{
 						["bonusIds"] = {
@@ -4478,9 +4478,9 @@ AskMrRobotDb3 = {
 								3573, -- [3]
 							}, -- [3]
 						},
-						["level"] = 0,
-						["enchantId"] = 0,
 						["inventoryId"] = 309,
+						["enchantId"] = 0,
+						["level"] = 0,
 						["gemIds"] = {
 							140841, -- [1]
 							140813, -- [2]
@@ -4498,18 +4498,18 @@ AskMrRobotDb3 = {
 							3528, -- [2]
 							3561, -- [3]
 						},
-						["id"] = 147142,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 427,
-						["upgradeId"] = 0,
+						["id"] = 147142,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 427,
 					}, -- [1]
 					{
 						["bonusIds"] = {
@@ -4518,18 +4518,18 @@ AskMrRobotDb3 = {
 							689, -- [3]
 							1787, -- [4]
 						},
-						["id"] = 130240,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 5890,
-						["suffixId"] = 0,
-						["inventoryId"] = 439,
-						["upgradeId"] = 0,
+						["id"] = 130240,
 						["gemIds"] = {
 							130222, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 439,
 					}, -- [2]
 					{
 						["bonusIds"] = {
@@ -4538,18 +4538,18 @@ AskMrRobotDb3 = {
 							3336, -- [3]
 							3517, -- [4]
 						},
-						["id"] = 140917,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 445,
-						["upgradeId"] = 0,
+						["id"] = 140917,
 						["gemIds"] = {
 							130220, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 445,
 					}, -- [3]
 					nil, -- [4]
 					{
@@ -4559,18 +4559,18 @@ AskMrRobotDb3 = {
 							3337, -- [3]
 							3572, -- [4]
 						},
-						["id"] = 147743,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 451,
-						["upgradeId"] = 0,
+						["id"] = 147743,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 451,
 					}, -- [5]
 					{
 						["bonusIds"] = {
@@ -4578,18 +4578,18 @@ AskMrRobotDb3 = {
 							3528, -- [2]
 							3561, -- [3]
 						},
-						["id"] = 147056,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 450,
-						["upgradeId"] = 0,
+						["id"] = 147056,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 450,
 					}, -- [6]
 					{
 						["bonusIds"] = {
@@ -4597,18 +4597,18 @@ AskMrRobotDb3 = {
 							3337, -- [2]
 							3572, -- [3]
 						},
-						["id"] = 147746,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 452,
-						["upgradeId"] = 0,
+						["id"] = 147746,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 452,
 					}, -- [7]
 					{
 						["bonusIds"] = {
@@ -4617,18 +4617,18 @@ AskMrRobotDb3 = {
 							3337, -- [3]
 							3516, -- [4]
 						},
-						["id"] = 140867,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 444,
-						["upgradeId"] = 0,
+						["id"] = 140867,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 444,
 					}, -- [8]
 					{
 						["bonusIds"] = {
@@ -4637,36 +4637,36 @@ AskMrRobotDb3 = {
 							3337, -- [3]
 							3417, -- [4]
 						},
-						["id"] = 144491,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 448,
-						["upgradeId"] = 0,
+						["id"] = 144491,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 448,
 					}, -- [9]
 					{
 						["bonusIds"] = {
 							1811, -- [1]
 							3570, -- [2]
 						},
-						["id"] = 144303,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 447,
-						["upgradeId"] = 0,
+						["id"] = 144303,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 447,
 					}, -- [10]
 					{
 						["bonusIds"] = {
@@ -4674,18 +4674,18 @@ AskMrRobotDb3 = {
 							3528, -- [2]
 							3562, -- [3]
 						},
-						["id"] = 147020,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 5429,
-						["suffixId"] = 0,
-						["inventoryId"] = 449,
-						["upgradeId"] = 0,
+						["id"] = 147020,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 449,
 					}, -- [11]
 					{
 						["bonusIds"] = {
@@ -4694,36 +4694,36 @@ AskMrRobotDb3 = {
 							689, -- [3]
 							3355, -- [4]
 						},
-						["id"] = 136713,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 5429,
-						["suffixId"] = 0,
-						["inventoryId"] = 440,
-						["upgradeId"] = 0,
+						["id"] = 136713,
 						["gemIds"] = {
 							130247, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 440,
 					}, -- [12]
 					{
 						["bonusIds"] = {
 							3459, -- [1]
 							3570, -- [2]
 						},
-						["id"] = 144259,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 409,
-						["upgradeId"] = 0,
+						["id"] = 144259,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 409,
 					}, -- [13]
 					{
 						["bonusIds"] = {
@@ -4731,18 +4731,18 @@ AskMrRobotDb3 = {
 							3528, -- [2]
 							3573, -- [3]
 						},
-						["id"] = 141482,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 446,
-						["upgradeId"] = 0,
+						["id"] = 141482,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 446,
 					}, -- [14]
 					{
 						["bonusIds"] = {
@@ -4750,18 +4750,18 @@ AskMrRobotDb3 = {
 							3528, -- [2]
 							3561, -- [3]
 						},
-						["id"] = 147140,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 5435,
-						["suffixId"] = 0,
-						["inventoryId"] = 426,
-						["upgradeId"] = 0,
+						["id"] = 147140,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 426,
 					}, -- [15]
 					{
 						["bonusIds"] = {
@@ -4785,9 +4785,9 @@ AskMrRobotDb3 = {
 								3561, -- [3]
 							}, -- [3]
 						},
-						["level"] = 0,
-						["enchantId"] = 0,
 						["inventoryId"] = 438,
+						["enchantId"] = 0,
+						["level"] = 0,
 						["gemIds"] = {
 							141270, -- [1]
 							147081, -- [2]
@@ -4805,32 +4805,32 @@ AskMrRobotDb3 = {
 							3528, -- [2]
 							3561, -- [3]
 						},
-						["id"] = 147142,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 427,
-						["upgradeId"] = 0,
+						["id"] = 147142,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 427,
 					}, -- [1]
 					{
-						["id"] = 141325,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 5437,
-						["suffixId"] = 0,
-						["inventoryId"] = 392,
-						["upgradeId"] = 0,
+						["id"] = 141325,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 392,
 					}, -- [2]
 					{
 						["bonusIds"] = {
@@ -4838,18 +4838,18 @@ AskMrRobotDb3 = {
 							3336, -- [2]
 							3516, -- [3]
 						},
-						["id"] = 138347,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 347,
-						["upgradeId"] = 0,
+						["id"] = 138347,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 347,
 					}, -- [3]
 					nil, -- [4]
 					{
@@ -4858,18 +4858,18 @@ AskMrRobotDb3 = {
 							3336, -- [2]
 							3516, -- [3]
 						},
-						["id"] = 138339,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 343,
-						["upgradeId"] = 0,
+						["id"] = 138339,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 343,
 					}, -- [5]
 					{
 						["bonusIds"] = {
@@ -4877,18 +4877,18 @@ AskMrRobotDb3 = {
 							3528, -- [2]
 							3561, -- [3]
 						},
-						["id"] = 147056,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 450,
-						["upgradeId"] = 0,
+						["id"] = 147056,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 450,
 					}, -- [6]
 					{
 						["bonusIds"] = {
@@ -4896,18 +4896,18 @@ AskMrRobotDb3 = {
 							3516, -- [2]
 							3528, -- [3]
 						},
-						["id"] = 138344,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 346,
-						["upgradeId"] = 0,
+						["id"] = 138344,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 346,
 					}, -- [7]
 					{
 						["bonusIds"] = {
@@ -4916,18 +4916,18 @@ AskMrRobotDb3 = {
 							3337, -- [3]
 							3516, -- [4]
 						},
-						["id"] = 140867,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 444,
-						["upgradeId"] = 0,
+						["id"] = 140867,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 444,
 					}, -- [8]
 					{
 						["bonusIds"] = {
@@ -4936,18 +4936,18 @@ AskMrRobotDb3 = {
 							3337, -- [3]
 							3417, -- [4]
 						},
-						["id"] = 144491,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 448,
-						["upgradeId"] = 0,
+						["id"] = 144491,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 448,
 					}, -- [9]
 					{
 						["bonusIds"] = {
@@ -4955,36 +4955,36 @@ AskMrRobotDb3 = {
 							3516, -- [2]
 							3528, -- [3]
 						},
-						["id"] = 138340,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 344,
-						["upgradeId"] = 0,
+						["id"] = 138340,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 344,
 					}, -- [10]
 					{
 						["bonusIds"] = {
 							3459, -- [1]
 							3570, -- [2]
 						},
-						["id"] = 151641,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 5428,
-						["suffixId"] = 0,
-						["inventoryId"] = 437,
-						["upgradeId"] = 0,
+						["id"] = 151641,
 						["gemIds"] = {
 							130247, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 437,
 					}, -- [11]
 					{
 						["bonusIds"] = {
@@ -4992,36 +4992,36 @@ AskMrRobotDb3 = {
 							3528, -- [2]
 							3562, -- [3]
 						},
-						["id"] = 147020,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 5429,
-						["suffixId"] = 0,
-						["inventoryId"] = 449,
-						["upgradeId"] = 0,
+						["id"] = 147020,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 449,
 					}, -- [12]
 					{
 						["bonusIds"] = {
 							3459, -- [1]
 							3570, -- [2]
 						},
-						["id"] = 144259,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 409,
-						["upgradeId"] = 0,
+						["id"] = 144259,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 409,
 					}, -- [13]
 					{
 						["bonusIds"] = {
@@ -5029,18 +5029,18 @@ AskMrRobotDb3 = {
 							1805, -- [2]
 							3336, -- [3]
 						},
-						["id"] = 139329,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["inventoryId"] = 349,
-						["upgradeId"] = 0,
+						["id"] = 139329,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 349,
 					}, -- [14]
 					{
 						["bonusIds"] = {
@@ -5048,18 +5048,18 @@ AskMrRobotDb3 = {
 							3528, -- [2]
 							3561, -- [3]
 						},
-						["id"] = 147140,
+						["suffixId"] = 0,
 						["level"] = 0,
 						["enchantId"] = 5435,
-						["suffixId"] = 0,
-						["inventoryId"] = 426,
-						["upgradeId"] = 0,
+						["id"] = 147140,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["upgradeId"] = 0,
+						["inventoryId"] = 426,
 					}, -- [15]
 					{
 						["bonusIds"] = {
@@ -5083,9 +5083,9 @@ AskMrRobotDb3 = {
 								3394, -- [3]
 							}, -- [3]
 						},
-						["level"] = 0,
-						["enchantId"] = 0,
 						["inventoryId"] = 308,
+						["enchantId"] = 0,
+						["level"] = 0,
 						["gemIds"] = {
 							140840, -- [1]
 							147102, -- [2]
@@ -5305,33 +5305,33 @@ AskMrRobotDb3 = {
 				[64882] = 1,
 				[142543] = 3,
 				[124440] = 8,
-				[86889] = 1,
+				[87399] = 31,
 				[33047] = 1,
 				[12344] = 1,
-				[32864] = 1,
-				[87399] = 31,
+				[103977] = 1,
+				[86889] = 1,
 				[139707] = 1,
 				[141014] = 2,
 				[107273] = 1,
-				[20882] = 1,
+				[81231] = 1,
 				[138815] = 1,
-				[103977] = 1,
-				[137349] = 1,
-				[88371] = 1,
+				[32864] = 1,
+				[13382] = 1,
+				[20882] = 1,
 				[31664] = 1,
 				[19854] = 1,
 				[141013] = 1,
 				[141016] = 3,
 				[20859] = 11,
-				[111245] = 30,
+				[20863] = 25,
 				[20862] = 6,
 				[5951] = 7,
 				[109253] = 1,
-				[19859] = 1,
+				[20879] = 2,
 				[21130] = 1,
-				[147010] = 1,
+				[15723] = 1,
 				[124107] = 9,
-				[117398] = 1,
+				[140189] = 10,
 				[124437] = 1182,
 				[73410] = 1,
 				[33016] = 1,
@@ -5339,15 +5339,15 @@ AskMrRobotDb3 = {
 				[108903] = 1,
 				[25509] = 1,
 				[45798] = 1,
-				[15723] = 1,
+				[119151] = 1,
 				[22206] = 1,
-				[140189] = 10,
+				[117398] = 1,
 				[139711] = 1,
 				[144333] = 1,
 				[88376] = 1,
 				[133942] = 20,
 				[124108] = 247,
-				[142166] = 1,
+				[124124] = 4,
 				[28237] = 1,
 				[37892] = 1,
 				[139712] = 1,
@@ -5360,13 +5360,13 @@ AskMrRobotDb3 = {
 				[46817] = 1,
 				[65905] = 1,
 				[128906] = 1,
-				[122101] = 1,
-				[139714] = 1,
+				[44731] = 1,
+				[136654] = 50,
 				[124109] = 41,
 				[40643] = 1,
-				[44731] = 1,
+				[122101] = 1,
 				[22816] = 1,
-				[136654] = 50,
+				[123918] = 540,
 				[124119] = 83,
 				[140798] = 1,
 				[140575] = 1,
@@ -5398,12 +5398,12 @@ AskMrRobotDb3 = {
 				[19621] = 1,
 				[147049] = 1,
 				[116154] = 1,
-				[113545] = 1,
+				[20928] = 1,
 				[22442] = 1,
 				[19896] = 1,
 				[21175] = 1,
 				[142460] = 1,
-				[20928] = 1,
+				[34078] = 1,
 				[132515] = 5,
 				[108439] = 7,
 				[65908] = 1,
@@ -5413,17 +5413,17 @@ AskMrRobotDb3 = {
 				[124112] = 202,
 				[137329] = 1,
 				[147051] = 1,
-				[50741] = 1,
 				[129276] = 1,
+				[50741] = 1,
 				[85219] = 1,
 				[142334] = 40,
-				[132517] = 1,
-				[128320] = 1,
-				[133760] = 1,
 				[147052] = 1,
+				[128320] = 1,
+				[118391] = 20,
+				[132517] = 1,
 				[109585] = 2,
 				[120989] = 1,
-				[116415] = 35,
+				[18713] = 1,
 				[142335] = 397,
 				[21526] = 1,
 				[124113] = 358,
@@ -5434,40 +5434,40 @@ AskMrRobotDb3 = {
 				[144477] = 1,
 				[140806] = 1,
 				[44597] = 1,
-				[88384] = 1,
-				[113547] = 1,
 				[43300] = 1,
+				[113547] = 1,
+				[88384] = 1,
 				[32539] = 1,
 				[32420] = 1,
 				[94130] = 1,
 				[139965] = 1,
 				[133572] = 20,
 				[140871] = 1,
-				[19901] = 2,
+				[71952] = 1,
 				[133795] = 1,
 				[5816] = 1,
 				[128513] = 1,
 				[122154] = 1,
 				[143613] = 11,
-				[50049] = 1,
+				[31336] = 1,
 				[20861] = 8,
 				[20865] = 13,
-				[71952] = 1,
+				[19901] = 2,
 				[69210] = 1,
-				[128705] = 1,
-				[31336] = 1,
-				[22443] = 1,
-				[124099] = 272,
 				[124115] = 156,
+				[20881] = 1,
+				[22443] = 1,
+				[141351] = 1,
+				[121820] = 1,
 				[23192] = 1,
 				[17904] = 1,
 				[11122] = 1,
 				[22439] = 1,
 				[129295] = 1,
-				[121820] = 1,
+				[128705] = 1,
 				[142117] = 200,
-				[141351] = 1,
-				[20881] = 1,
+				[124099] = 272,
+				[50049] = 1,
 				[137368] = 1,
 				[19290] = 1,
 				[133607] = 113,
@@ -5479,15 +5479,15 @@ AskMrRobotDb3 = {
 				[122618] = 8,
 				[35280] = 1,
 				[43348] = 1,
-				[18713] = 1,
-				[118391] = 20,
+				[116415] = 35,
+				[133760] = 1,
 				[71953] = 1,
 				[108907] = 1,
 				[120945] = 115,
 				[138135] = 1,
 				[136637] = 44,
 				[116913] = 1,
-				[34078] = 1,
+				[113545] = 1,
 				[71636] = 1,
 				[124101] = 18,
 				[124117] = 482,
@@ -5502,7 +5502,7 @@ AskMrRobotDb3 = {
 				[30688] = 1,
 				[116117] = 1,
 				[90146] = 198,
-				[123918] = 540,
+				[139714] = 1,
 				[88487] = 5,
 				[141325] = 1,
 				[21520] = 1,
@@ -5511,19 +5511,19 @@ AskMrRobotDb3 = {
 				[2820] = 1,
 				[14023] = 1,
 				[52019] = 1,
-				[124124] = 4,
-				[119151] = 1,
+				[142166] = 1,
+				[147010] = 1,
 				[20858] = 21,
 				[71716] = 1,
 				[91877] = 36,
-				[20863] = 25,
+				[111245] = 30,
 				[20874] = 1,
-				[20879] = 2,
-				[81231] = 1,
+				[19859] = 1,
+				[88371] = 1,
 				[29301] = 1,
 				[38082] = 1,
 				[109584] = 1,
-				[13382] = 1,
+				[137349] = 1,
 				[50362] = 1,
 				[22436] = 1,
 			},
@@ -5599,36 +5599,36 @@ AskMrRobotDb3 = {
 				[4333] = 1,
 				[3864] = 2,
 				[128510] = 1,
-				[18640] = 1,
-				[36905] = 55,
+				[109223] = 200,
+				[141000] = 1,
 				[51950] = 2,
 				[82441] = 24,
 				[52720] = 1,
 				[74837] = 90,
 				[7068] = 86,
 				[52986] = 20,
-				[74838] = 29,
+				[85506] = 6,
 				[33470] = 422,
 				[30183] = 8,
 				[140999] = 1,
 				[72988] = 746,
 				[72234] = 183,
-				[34599] = 15,
+				[21301] = 2,
 				[74846] = 70,
 				[35623] = 36,
 				[35627] = 32,
 				[22574] = 3,
-				[141000] = 1,
+				[36905] = 55,
 				[72163] = 1,
-				[85506] = 6,
+				[74838] = 29,
 				[14342] = 14,
 				[49362] = 1,
 				[122360] = 1,
 				[53010] = 141,
 				[24246] = 7,
 				[122384] = 1,
-				[72235] = 99,
 				[18283] = 1,
+				[72235] = 99,
 				[20009] = 1,
 				[7077] = 30,
 				[40195] = 38,
@@ -5638,7 +5638,7 @@ AskMrRobotDb3 = {
 				[30809] = 440,
 				[7909] = 3,
 				[74847] = 4,
-				[7910] = 3,
+				[102541] = 34,
 				[39970] = 18,
 				[69237] = 29,
 				[22276] = 1,
@@ -5654,7 +5654,7 @@ AskMrRobotDb3 = {
 				[3371] = 20,
 				[74840] = 58,
 				[74848] = 94,
-				[36922] = 1,
+				[5759] = 3,
 				[72237] = 159,
 				[5760] = 1,
 				[36934] = 1,
@@ -5671,8 +5671,8 @@ AskMrRobotDb3 = {
 				[31952] = 2,
 				[74849] = 6,
 				[74857] = 2,
-				[5759] = 3,
-				[102541] = 34,
+				[36922] = 1,
+				[7910] = 3,
 				[29425] = 40,
 				[12363] = 1,
 				[21305] = 2,
@@ -5681,8 +5681,8 @@ AskMrRobotDb3 = {
 				[43622] = 7,
 				[35625] = 35,
 				[21308] = 1,
-				[109223] = 200,
-				[21301] = 2,
+				[18640] = 1,
+				[34599] = 15,
 				[19028] = 2,
 				[38682] = 1000,
 			},
@@ -5913,7 +5913,11 @@ AskMrRobotDb3 = {
 					},
 					[0] = {
 					},
-					[33] = {
+					[1648] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
 					},
 					[1676] = {
 						[14] = false,
@@ -5927,11 +5931,7 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1648] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
+					[33] = {
 					},
 				},
 			},
@@ -5999,13 +5999,13 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[33] = {
-					},
 					[1648] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
 						[15] = false,
+					},
+					[33] = {
 					},
 					[1676] = {
 						[14] = false,
@@ -6103,9 +6103,9 @@ AskMrRobotDb3 = {
 					},
 					[269] = {
 					},
-					[631] = {
-					},
 					[1540] = {
+					},
+					[631] = {
 					},
 				},
 			},
@@ -6123,13 +6123,13 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[33] = {
-					},
 					[1648] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
 						[15] = false,
+					},
+					[33] = {
 					},
 					[1676] = {
 						[14] = false,
@@ -6191,14 +6191,6 @@ AskMrRobotDb3 = {
 		["Herbinator - Sisters of Elune"] = {
 		},
 		["Bracnar - Sisters of Elune"] = {
-			["shopWindow"] = {
-				["top"] = 851.000061035156,
-				["left"] = 710.000061035156,
-			},
-			["window"] = {
-				["top"] = 892.367370605469,
-				["left"] = 136.370376586914,
-			},
 			["Logging"] = {
 				["Auto"] = {
 					{
@@ -6355,7 +6347,7 @@ AskMrRobotDb3 = {
 					},
 					[1220] = {
 					},
-					[269] = {
+					[534] = {
 					},
 					[1651] = {
 					},
@@ -6381,7 +6373,7 @@ AskMrRobotDb3 = {
 					},
 					[1728] = {
 					},
-					[534] = {
+					[269] = {
 					},
 					[1011] = {
 					},
@@ -6404,6 +6396,14 @@ AskMrRobotDb3 = {
 					[1493] = {
 					},
 				},
+			},
+			["window"] = {
+				["top"] = 892.367370605469,
+				["left"] = 136.370376586914,
+			},
+			["shopWindow"] = {
+				["top"] = 851.000061035156,
+				["left"] = 710.000061035156,
 			},
 			["minimap"] = {
 				["minimapPos"] = 1.34793222458403,
