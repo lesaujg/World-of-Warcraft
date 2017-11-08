@@ -6,11 +6,11 @@ PawnCommon = {
 	["ShowItemID"] = false,
 	["ShowRelicUpgrades"] = true,
 	["ShowValuesForUpgradesOnly"] = false,
-	["ShowUpgradesOnTooltips"] = true,
+	["ShownGettingStarted"] = true,
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
-	["ShowSpecIcons"] = true,
+	["LastVersion"] = 2.0214,
 	["ShowSocketingAdvisor"] = true,
 	["Scales"] = {
 		["\"MrRobot\":HUNTER3"] = {
@@ -59,8 +59,6 @@ PawnCommon = {
 			["UnenchantedColor"] = "0054a6",
 		},
 		["MM - Single-Target"] = {
-			["PerCharacterOptions"] = {
-			},
 			["Values"] = {
 				["Agility"] = 1,
 				["HasteRating"] = 0.43,
@@ -68,6 +66,8 @@ PawnCommon = {
 				["CritRating"] = 0.65,
 				["Dps"] = 2.5,
 				["Versatility"] = 0.56,
+			},
+			["PerCharacterOptions"] = {
 			},
 			["UpgradesFollowSpecialization"] = true,
 		},
@@ -120,11 +120,6 @@ PawnCommon = {
 			["UnenchantedColor"] = "bf5d07",
 		},
 		["Azor-Marksmanship"] = {
-			["PerCharacterOptions"] = {
-				["Bracnar-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
-			},
 			["Values"] = {
 				["Versatility"] = 0.91,
 				["Agility"] = 1,
@@ -133,6 +128,11 @@ PawnCommon = {
 				["CritRating"] = 0.99,
 				["Dps"] = 3.26,
 				["RangedDps"] = 3.26,
+			},
+			["PerCharacterOptions"] = {
+				["Bracnar-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["UpgradesFollowSpecialization"] = true,
 		},
@@ -170,8 +170,6 @@ PawnCommon = {
 			["UnenchantedColor"] = "bfb74e",
 		},
 		["BM - Single-Target"] = {
-			["PerCharacterOptions"] = {
-			},
 			["Values"] = {
 				["Agility"] = 1,
 				["HasteRating"] = 0.53,
@@ -179,6 +177,8 @@ PawnCommon = {
 				["CritRating"] = 0.5,
 				["Dps"] = 0.76,
 				["Versatility"] = 0.5,
+			},
+			["PerCharacterOptions"] = {
 			},
 			["UpgradesFollowSpecialization"] = true,
 		},
@@ -198,8 +198,6 @@ PawnCommon = {
 			["UnenchantedColor"] = "957552",
 		},
 		["SV - Single-Target"] = {
-			["PerCharacterOptions"] = {
-			},
 			["Values"] = {
 				["Agility"] = 1,
 				["HasteRating"] = 0.42,
@@ -207,6 +205,8 @@ PawnCommon = {
 				["CritRating"] = 0.49,
 				["Dps"] = 1,
 				["Versatility"] = 0.5,
+			},
+			["PerCharacterOptions"] = {
 			},
 			["UpgradesFollowSpecialization"] = true,
 		},
@@ -247,11 +247,6 @@ PawnCommon = {
 			["UnenchantedColor"] = "bf3950",
 		},
 		["Azor-BeastMastery"] = {
-			["PerCharacterOptions"] = {
-				["Bracnar-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
-			},
 			["Values"] = {
 				["Versatility"] = 0.64,
 				["Agility"] = 1,
@@ -260,6 +255,11 @@ PawnCommon = {
 				["CritRating"] = 0.7,
 				["Dps"] = 0.49,
 				["RangedDps"] = 0.49,
+			},
+			["PerCharacterOptions"] = {
+				["Bracnar-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["UpgradesFollowSpecialization"] = true,
 		},
@@ -279,11 +279,6 @@ PawnCommon = {
 			["UnenchantedColor"] = "00bf70",
 		},
 		["Azor-Survival"] = {
-			["PerCharacterOptions"] = {
-				["Bracnar-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
-			},
 			["Values"] = {
 				["Versatility"] = 0.68,
 				["Agility"] = 1,
@@ -292,6 +287,11 @@ PawnCommon = {
 				["CritRating"] = 0.62,
 				["Dps"] = 1.12,
 				["MeleeDps"] = 1.12,
+			},
+			["PerCharacterOptions"] = {
+				["Bracnar-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["UpgradesFollowSpecialization"] = true,
 		},
@@ -310,19 +310,19 @@ PawnCommon = {
 			["SpecID"] = 1,
 			["UnenchantedColor"] = "bfb74e",
 		},
-		["\"MrRobot\":PRIEST2"] = {
-			["IconTexturePath"] = 237542,
+		["\"MrRobot\":PRIEST1"] = {
+			["IconTexturePath"] = 135940,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "ffffff",
 			["ClassID"] = 5,
-			["LocalizedName"] = "Priest: Holy",
+			["LocalizedName"] = "Priest: Discipline",
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "HEALER",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["SpecID"] = 2,
+			["SpecID"] = 1,
 			["UnenchantedColor"] = "bfbfbf",
 		},
 		["\"MrRobot\":MAGE2"] = {
@@ -343,35 +343,35 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "2f95b0",
 		},
-		["\"MrRobot\":PALADIN1"] = {
-			["IconTexturePath"] = 135920,
+		["\"MrRobot\":DRUID4"] = {
+			["IconTexturePath"] = 136041,
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "f58cba",
-			["ClassID"] = 2,
-			["LocalizedName"] = "Paladin: Holy",
+			["Color"] = "ff7d0a",
+			["ClassID"] = 11,
+			["LocalizedName"] = "Druid: Restoration",
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "HEALER",
-			["DoNotShow2HUpgrades"] = true,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["SpecID"] = 1,
-			["UnenchantedColor"] = "b7698b",
-		},
-		["\"MrRobot\":MAGE3"] = {
-			["IconTexturePath"] = 135846,
-			["PerCharacterOptions"] = {
-			},
-			["Color"] = "3fc7eb",
-			["ClassID"] = 8,
-			["LocalizedName"] = "Mage: Frost",
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "DAMAGER",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["SpecID"] = 3,
-			["UnenchantedColor"] = "2f95b0",
+			["SpecID"] = 4,
+			["UnenchantedColor"] = "bf5d07",
+		},
+		["\"MrRobot\":DEMONHUNTER2"] = {
+			["IconTexturePath"] = 1247265,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "a330c9",
+			["ClassID"] = 12,
+			["LocalizedName"] = "Demon Hunter: Vengeance",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = true,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "7a2496",
 		},
 		["\"MrRobot\":WARRIOR1"] = {
 			["IconTexturePath"] = 132355,
@@ -406,35 +406,35 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "6566b2",
 		},
-		["\"MrRobot\":ROGUE3"] = {
-			["IconTexturePath"] = 132320,
+		["\"MrRobot\":SHAMAN3"] = {
+			["IconTexturePath"] = 136052,
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "fff569",
-			["ClassID"] = 4,
-			["LocalizedName"] = "Rogue: Subtlety",
+			["Color"] = "0070de",
+			["ClassID"] = 7,
+			["LocalizedName"] = "Shaman: Restoration",
 			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "DAMAGER",
-			["DoNotShow2HUpgrades"] = true,
+			["Role"] = "HEALER",
+			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
 			["SpecID"] = 3,
-			["UnenchantedColor"] = "bfb74e",
+			["UnenchantedColor"] = "0054a6",
 		},
-		["\"MrRobot\":DEMONHUNTER2"] = {
-			["IconTexturePath"] = 1247265,
+		["\"MrRobot\":MAGE1"] = {
+			["IconTexturePath"] = 135932,
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "a330c9",
-			["ClassID"] = 12,
-			["LocalizedName"] = "Demon Hunter: Vengeance",
+			["Color"] = "3fc7eb",
+			["ClassID"] = 8,
+			["LocalizedName"] = "Mage: Arcane",
 			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "TANK",
-			["DoNotShow2HUpgrades"] = true,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["SpecID"] = 2,
-			["UnenchantedColor"] = "7a2496",
+			["SpecID"] = 1,
+			["UnenchantedColor"] = "2f95b0",
 		},
 		["\"MrRobot\":PALADIN2"] = {
 			["IconTexturePath"] = 236264,
@@ -484,10 +484,10 @@ PawnCommon = {
 		["\"MrRobot\":PALADIN3"] = {
 			["IconTexturePath"] = 135873,
 			["PerCharacterOptions"] = {
-				["Galinar-Sisters of Elune"] = {
+				["Herbinator-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
-				["Herbinator-Sisters of Elune"] = {
+				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
 			},
@@ -562,50 +562,50 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "bf3950",
 		},
-		["\"MrRobot\":MAGE1"] = {
-			["IconTexturePath"] = 135932,
+		["\"MrRobot\":ROGUE3"] = {
+			["IconTexturePath"] = 132320,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "fff569",
+			["ClassID"] = 4,
+			["LocalizedName"] = "Rogue: Subtlety",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = true,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "bfb74e",
+		},
+		["\"MrRobot\":MAGE3"] = {
+			["IconTexturePath"] = 135846,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "3fc7eb",
 			["ClassID"] = 8,
-			["LocalizedName"] = "Mage: Arcane",
+			["LocalizedName"] = "Mage: Frost",
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["SpecID"] = 1,
+			["SpecID"] = 3,
 			["UnenchantedColor"] = "2f95b0",
 		},
-		["\"MrRobot\":SHAMAN3"] = {
-			["IconTexturePath"] = 136052,
+		["\"MrRobot\":PALADIN1"] = {
+			["IconTexturePath"] = 135920,
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "0070de",
-			["ClassID"] = 7,
-			["LocalizedName"] = "Shaman: Restoration",
+			["Color"] = "f58cba",
+			["ClassID"] = 2,
+			["LocalizedName"] = "Paladin: Holy",
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "HEALER",
-			["DoNotShow2HUpgrades"] = false,
+			["DoNotShow2HUpgrades"] = true,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["SpecID"] = 3,
-			["UnenchantedColor"] = "0054a6",
-		},
-		["\"MrRobot\":DRUID4"] = {
-			["IconTexturePath"] = 136041,
-			["PerCharacterOptions"] = {
-			},
-			["Color"] = "ff7d0a",
-			["ClassID"] = 11,
-			["LocalizedName"] = "Druid: Restoration",
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "HEALER",
-			["DoNotShow2HUpgrades"] = false,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["SpecID"] = 4,
-			["UnenchantedColor"] = "bf5d07",
+			["SpecID"] = 1,
+			["UnenchantedColor"] = "b7698b",
 		},
 		["\"MrRobot\":DRUID3"] = {
 			["IconTexturePath"] = 132276,
@@ -622,19 +622,19 @@ PawnCommon = {
 			["SpecID"] = 3,
 			["UnenchantedColor"] = "bf5d07",
 		},
-		["\"MrRobot\":PRIEST1"] = {
-			["IconTexturePath"] = 135940,
+		["\"MrRobot\":PRIEST2"] = {
+			["IconTexturePath"] = 237542,
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "ffffff",
 			["ClassID"] = 5,
-			["LocalizedName"] = "Priest: Discipline",
+			["LocalizedName"] = "Priest: Holy",
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "HEALER",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["SpecID"] = 1,
+			["SpecID"] = 2,
 			["UnenchantedColor"] = "bfbfbf",
 		},
 		["\"MrRobot\":SHAMAN2"] = {
@@ -675,6 +675,6 @@ PawnCommon = {
 	["ButtonPosition"] = 2,
 	["IgnoreGemsWhileLeveling"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["LastVersion"] = 2.0214,
-	["ShownGettingStarted"] = true,
+	["ShowSpecIcons"] = true,
+	["ShowUpgradesOnTooltips"] = true,
 }

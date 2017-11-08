@@ -10,7 +10,11 @@
 
 ----------------------------------------------------------------------------]]--
 
-LM_Location = LM_CreateAutoEventFrame("Frame", "LM_Location")
+--[===[@debug@
+if LibDebug then LibDebug() end
+--@end-debug@]===]
+
+_G.LM_Location = LM_CreateAutoEventFrame("Frame", "LM_Location")
 LM_Location:RegisterEvent("PLAYER_LOGIN")
 
 function LM_Location:Initialize()
@@ -118,7 +122,7 @@ end
 ]]--
 
 local FlyableNoContinent = {
-    1177    -- Deaths of Chromie scenario
+    [1177] = true,      -- Deaths of Chromie scenario
 }
 
 -- Draenor and Lost Isles need achievement unlocks to be able to fly.
@@ -127,7 +131,7 @@ function LM_Location:CanFly()
     -- I'm going to assume, across the board, that you can't fly in
     -- "no continent" / -1 and fix it up later if it turns out you can.
     if self.continent == -1 then
-        if tContains(FlyableNoContinent, self.areaID) == nil then
+        if FlyableNoContinent[self.areaID] == nil then
             return false
         end
     end
@@ -157,45 +161,9 @@ function LM_Location:CanFly()
     return IsFlyableArea()
 end
 
--- The difference between IsSwimming and IsSubmerged is that IsSubmerged will
--- also return true when you are standing on the bottom.  Note that it sadly
--- does not return false when you are floating on the top, that is still counted
--- as being submerged.
-
-function LM_Location:CanSwim()
-    return IsSubmerged()
-end
-
 function LM_Location:CantBreathe()
     local name, _, _, rate = GetMirrorTimerInfo(2)
     return (name == "BREATH" and rate < 0)
-end
-
-
-function LM_Location:IsAQ()
-    if self.areaID == 766 then return true end
-end
-
-function LM_Location:IsVashjir()
-    if self.areaID == 610 then return true end
-    if self.areaID == 614 then return true end
-    if self.areaID == 615 then return true end
-end
-
-function LM_Location:IsDraenorNagrand()
-    if self.areaID == 950 then return true end
-end
-
--- 169 = ExtraActionButton1, check for Masquerade action or aura (202477)
-function LM_Location:CanSuramarMasquerade()
-    if HasExtraActionBar() and HasAction(169) then
-        local aType, aID = GetActionInfo(169)
-        if aType == "spell" and aID == 202477 then
-            return true
-        end
-    elseif UnitAura("player", GetSpellInfo(202477)) then
-        return true
-    end
 end
 
 function LM_Location:Dump()

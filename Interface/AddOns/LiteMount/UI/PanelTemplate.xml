@@ -2,12 +2,12 @@
 
 <!-- Copyright 2011-2017 Mike Battersby -->
 
-<Script file="UIOptionsPanelTemplate.lua" />
+<Script file="PanelTemplate.lua" />
 
 <Frame name="LiteMountOptionsPanelTemplate" hidden="true" virtual="true">
     <Layers>
         <Layer level="ARTWORK">
-            <FontString name="$parentTitle" inherits="GameFontNormalLarge" parentKey="title">
+            <FontString name="$parentTitle" inherits="GameFontNormalLarge" parentKey="Title">
                 <Anchors>
                     <Anchor point="TOPLEFT" x="16" y="-16" />
                 </Anchors>

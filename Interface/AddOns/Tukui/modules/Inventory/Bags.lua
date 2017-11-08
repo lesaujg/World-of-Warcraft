@@ -107,7 +107,7 @@ function Bags:HideBlizzard()
 	BankClose:Hide()
 	BankPortraitTexture:Hide()
 	BagHelpBox:Kill()
-	BankFrame:EnableMouse(false)
+	BankFrame:HookScript('OnShow', function(self) self:EnableMouse(false) end)
 
 	for i = 1, 12 do
 		local CloseButton = _G["ContainerFrame"..i.."CloseButton"]
@@ -988,6 +988,10 @@ function Bags:Enable()
 			self.Reagent:Hide()
 		end
 	end)
+
+	Bag:HookScript("OnShow", function() -- Cinematic Bug with Bags open.
+        self.Bag:Show()
+    end)
 
 	Bank:SetScript("OnHide", function()
 		self.Bank:Hide()

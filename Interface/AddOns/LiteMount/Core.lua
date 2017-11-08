@@ -21,65 +21,15 @@
 
 ----------------------------------------------------------------------------]]--
 
+--[===[@debug@
+if LibDebug then LibDebug() end
+--@end-debug@]===]
+
 -- This is still a SecureActionButton for backwards compatibility with
 -- people's macros with /click LiteMount in them.
 
-LiteMount = LM_CreateAutoEventFrame("Button", "LiteMount", UIParent, "SecureActionButtonTemplate")
+_G.LiteMount = LM_CreateAutoEventFrame("Button", "LiteMount", UIParent, "SecureActionButtonTemplate")
 LiteMount:RegisterEvent("PLAYER_LOGIN")
-
--- Need to keep this in sync with KeyBindingStrings.lua and KeyBindings.xml
--- Buttons are autocreated below based on this table.
-local ButtonActions = {
-    -- Normal mount button.
-    [1] = [[
-        LeaveVehicle
-        Dismount
-        CancelForm
-        CopyTargetsMount
-        Vashjir
-        Swim
-        SuramarCity
-        Fly
-        Float
-        Nagrand
-        AQ
-        Run
-        Walk
-        Macro
-    ]],
-    -- Ground-only mount button (same as above but no "Fly")
-    [2] = [[
-        LeaveVehicle
-        Dismount
-        CancelForm
-        CopyTargetsMount
-        Vashjir
-        Swim
-        SuramarCity
-        Float
-        Nagrand
-        AQ
-        Run
-        Walk
-        Macro
-    ]],
-    -- Custom1
-    [3] = [[
-        LeaveVehicle
-        Dismount
-        CancelForm
-        Custom1
-        Macro
-    ]],
-    -- Custom2
-    [4] = [[
-        LeaveVehicle
-        Dismount
-        CancelForm
-        Custom2
-        Macro
-    ]],
-}
 
 function LiteMount:VersionUpgrade()
     local keys
@@ -130,14 +80,14 @@ function LiteMount:Initialize()
     LM_PlayerMounts:Initialize()
 
     SlashCmdList["LiteMount"] = LiteMount_SlashCommandFunc
-    SLASH_LiteMount1 = "/litemount"
-    SLASH_LiteMount2 = "/lmt"
+    _G.SLASH_LiteMount1 = "/litemount"
+    _G.SLASH_LiteMount2 = "/lmt"
 
     -- Create SecureActionButtons
     self.actions = { }
 
-    for i,actions in ipairs(ButtonActions) do
-        self.actions[i] = LM_ActionButton:Create(i, actions)
+    for i = 1,4 do
+        self.actions[i] = LM_ActionButton:Create(i)
     end
 
     -- Backwards-compatibility SecureActionButton setup so you can do

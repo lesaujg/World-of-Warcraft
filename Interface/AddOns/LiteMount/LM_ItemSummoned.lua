@@ -6,7 +6,11 @@
 
 ----------------------------------------------------------------------------]]--
 
-LM_ItemSummoned = setmetatable({ }, LM_Mount)
+--[===[@debug@
+if LibDebug then LibDebug() end
+--@end-debug@]===]
+
+_G.LM_ItemSummoned = setmetatable({ }, LM_Mount)
 LM_ItemSummoned.__index = LM_ItemSummoned
 
 -- In theory we might be able to just use the itemID and use
@@ -15,16 +19,15 @@ LM_ItemSummoned.__index = LM_ItemSummoned
 -- worried.  Since there are such a small number of these, keeping track of
 -- the spell as well isn't a burden.
 
-function LM_ItemSummoned:Get(itemID, spellID, flags)
+function LM_ItemSummoned:Get(itemID, spellID, ...)
 
-    local m = LM_Spell.Get(self, spellID)
+    local m = LM_Spell.Get(self, spellID, ...)
     if m then
         -- Used to do GetItemInfo here, but it doesn't work the first
         -- time you log in until the server returns the info and
         -- GET_ITEM_INFO_RECEIVED fires, but I can't be bothered handling
         -- the event and it's not really needed.
         m.itemID = itemID
-        m.flags = flags
         m.isCollected = ( GetItemCount(m.itemID) > 0 )
     end
 

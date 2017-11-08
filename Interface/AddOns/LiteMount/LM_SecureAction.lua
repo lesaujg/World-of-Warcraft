@@ -6,10 +6,14 @@
 
 ----------------------------------------------------------------------------]]--
 
+--[===[@debug@
+if LibDebug then LibDebug() end
+--@end-debug@]===]
+
 -- This wrapper class is so that LM_ActionButton can treat all of the returns
 -- from action functions as if they were a Mount class.
 
-LM_SecureAction = { }
+_G.LM_SecureAction = { }
 LM_SecureAction.__index = LM_SecureAction
 
 function LM_SecureAction:New(attr)

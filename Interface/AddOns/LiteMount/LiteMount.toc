@@ -1,8 +1,9 @@
 ## Interface: 70300
 ## Title: LiteMount
-## Version: 7.3.2
+## Version: 7.3.7
 ## Author: Xodiv-Nagrand
 ## Email: mib@post.com
+## OptionalDependencies: LibDebug
 ## SavedVariables: LiteMountDB
 
 Libs\embeds.xml
@@ -11,6 +12,7 @@ Localization.lua
 
 AutoEventFrame.lua
 Print.lua
+
 SpellInfo.lua
 Mount.lua
 LM_Journal.lua
@@ -22,20 +24,18 @@ LM_Nagrand.lua
 LM_RunningWild.lua
 LM_TravelForm.lua
 LM_SecureAction.lua
-ShuffleList.lua
+MountList.lua
 PlayerMounts.lua
 Location.lua
 Options.lua
 SlashCommand.lua
-Action.lua
+Conditions.lua
+Vars.lua
+Actions.lua
+ActionList.lua
 ActionButton.lua
 Core.lua
 
 KeyBindingStrings.lua
 
-UI\UIOptionsPanelTemplate.xml
-UI\UIOptionsFrame.xml
-UI\UIOptionsSettings.xml
-UI\UIOptionsMounts.xml
-UI\UIOptionsMacro.xml
-UI\UIOptionsCombatMacro.xml
+UI\UI.xml

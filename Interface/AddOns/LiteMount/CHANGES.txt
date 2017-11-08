@@ -1,114 +1,13 @@
-tag 977755ede8a983157044f9c1713a1d42815dc887 7.3.2
+tag f85c5b536282181c901788d037f061252810d64d 7.3.7
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Mon Sep 11 12:22:34 2017 +1000
+Date:	Tue Nov 7 15:12:39 2017 +1100
 
-Tagging 7.3.2, force no-flying in Argus.
+Really include the migration changes this time.
+Work smarter, not dumber.
 
-Also remove the migration from the old config style, as I suspect it had bugs
-and it was super hard to maintain. Unfortunately if you upgrade from LiteMount
-older than 7.2.6 you will have to re-do all your settings.
-
-Sorry. :(
-
-commit c2c793dfedb1d592e116b86e1221d62f041e2aaf
+commit 86a28b9e1efd2c56681fba931460b11d2ff3317f
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Sep 11 12:18:53 2017 +1000
+Date:   Tue Nov 7 15:12:19 2017 +1100
 
-    Can't fly in Argus (continent 9).
-
-commit e085c7967335efc295a1963aec16e55e2bff8f54
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Sep 11 12:18:53 2017 +1000
-
-    Can't fly in Argus (continent 9).
-
-commit e085c7967335efc295a1963aec16e55e2bff8f54
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Sep 11 12:18:53 2017 +1000
-
-    Can't fly in Argus (continent 9).
-
-commit 1a4ccf54be73584bf9a5e6e26c34bb24c13e2159
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Sep 11 11:37:01 2017 +1000
-
-    Put the SuramarCity split into button 2.
-
-commit 1a4ccf54be73584bf9a5e6e26c34bb24c13e2159
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Sep 11 11:37:01 2017 +1000
-
-    Put the SuramarCity split into button 2.
-
-commit 7de7ae05fb515099aebae9d26bccf6587bd8c9df
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Sep 8 17:04:20 2017 +1000
-
-    Add sex condition. Celebrity philanderers rejoice.
-
-commit 7de7ae05fb515099aebae9d26bccf6587bd8c9df
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Sep 8 17:04:20 2017 +1000
-
-    Add sex condition. Celebrity philanderers rejoice.
-
-commit a6bdeffeaab95579c0d5b6606e2a90198faf0208
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Sep 8 15:39:36 2017 +1000
-
-    Add 'name' and 'realm' conditions.
-
-commit a6bdeffeaab95579c0d5b6606e2a90198faf0208
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Sep 8 15:39:36 2017 +1000
-
-    Add 'name' and 'realm' conditions.
-
-commit 1c9b3f44087b0246669e09a51a7b51b4d0e7a709
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Aug 31 18:36:10 2017 +1000
-
-    Options reference fixup
-
-commit 1c9b3f44087b0246669e09a51a7b51b4d0e7a709
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Aug 31 18:36:10 2017 +1000
-
-    Options reference fixup
-
-commit 3a64c52a48049fc7b3c486093c9acefa035f86ff
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Aug 31 18:32:33 2017 +1000
-
-    Working (?) flag add and delete
-
-commit 3a64c52a48049fc7b3c486093c9acefa035f86ff
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Aug 31 18:32:33 2017 +1000
-
-    Working (?) flag add and delete
-
-commit c2fa59d683a00cb45317e94eb1e343a38e39a32e
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Aug 31 17:27:59 2017 +1000
-
-    Purge some more tContains because I am a completist
-
-commit c2fa59d683a00cb45317e94eb1e343a38e39a32e
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Aug 31 17:27:59 2017 +1000
-
-    Purge some more tContains because I am a completist
-
-commit 6fe731b0f275d91765b4bb72be1361930cfbfedf
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Aug 31 17:13:00 2017 +1000
-
-    Scroll list was too slow, remove tContains go to hash
-
-commit 6fe731b0f275d91765b4bb72be1361930cfbfedf
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Aug 31 17:13:00 2017 +1000
-
-    Scroll list was too slow, remove tContains go to hash
+    Fix migration code.
 

@@ -14,7 +14,11 @@
 
 ----------------------------------------------------------------------------]]--
 
-LM_TravelForm = setmetatable({ }, LM_Spell)
+--[===[@debug@
+if LibDebug then LibDebug() end
+--@end-debug@]===]
+
+_G.LM_TravelForm = setmetatable({ }, LM_Spell)
 LM_TravelForm.__index = LM_TravelForm
 
 -- This is absolutely rubbish
@@ -27,14 +31,10 @@ local function PlayerKnowsRiding()
     return false
 end
 
-local travelFormFlags = bit.bor(
-                            LM_FLAG.FLY,
-                            LM_FLAG.SWIM,
-                            LM_FLAG.RUN
-                        )
+local travelFormFlags = { 'FLY', 'SWIM', 'RUN' }
 
 function LM_TravelForm:Get()
-    return LM_Spell.Get(self, LM_SPELL.TRAVEL_FORM, travelFormFlags)
+    return LM_Spell.Get(self, LM_SPELL.TRAVEL_FORM, unpack(travelFormFlags))
 end
 
 -- IsUsableSpell doesn't return false for Travel Form indoors like it should,

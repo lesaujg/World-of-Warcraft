@@ -6,13 +6,17 @@
 
 ----------------------------------------------------------------------------]]--
 
+--[===[@debug@
+if LibDebug then LibDebug() end
+--@end-debug@]===]
+
 local TABLET_OF_GHOST_WOLF_AURA = GetSpellInfo(168799)
 
-LM_GhostWolf = setmetatable({ }, LM_Spell)
+_G.LM_GhostWolf = setmetatable({ }, LM_Spell)
 LM_GhostWolf.__index = LM_GhostWolf
 
 function LM_GhostWolf:Get()
-    return LM_Spell.Get(self, LM_SPELL.GHOST_WOLF, LM_FLAG.WALK)
+    return LM_Spell.Get(self, LM_SPELL.GHOST_WOLF, 'WALK')
 end
 
 function LM_GhostWolf:CurrentFlags()
@@ -22,10 +26,11 @@ function LM_GhostWolf:CurrentFlags()
     -- is following you around in Lost Isles (Legion). Unfortunately there's
     -- no way to detect him as far as I can tell.
 
-    if bit.band(flags, LM_FLAG.WALK) then
+    if flags.WALK then
         if UnitAura("player", TABLET_OF_GHOST_WOLF_AURA) then
-            flags = bit.band(flags, bit.bnot(LM_FLAG.WALK))
-            flags = bit.bor(flags, LM_FLAG.RUN)
+            flags = CopyTable(flags)
+            flags.WALK = nil
+            flags.RUN = true
         end
     end
 

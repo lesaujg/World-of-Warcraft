@@ -8,7 +8,11 @@
 
 ----------------------------------------------------------------------------]]--
 
-LM_Nagrand = setmetatable({ }, LM_Spell)
+--[===[@debug@
+if LibDebug then LibDebug() end
+--@end-debug@]===]
+
+_G.LM_Nagrand = setmetatable({ }, LM_Spell)
 LM_Nagrand.__index = LM_Nagrand
 
 local FactionRequirements = {
@@ -17,7 +21,7 @@ local FactionRequirements = {
 }
 
 function LM_Nagrand:Get(spellID)
-    local m = LM_Spell.Get(self, spellID, LM_FLAG.NAGRAND)
+    local m = LM_Spell.Get(self, spellID, 'NAGRAND')
 
     if m then
         local playerFaction = UnitFactionGroup("player")

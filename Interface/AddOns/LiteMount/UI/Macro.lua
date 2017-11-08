@@ -1,6 +1,6 @@
 --[[----------------------------------------------------------------------------
 
-  LiteMount/UIOptionsCombatMacro.lua
+  LiteMount/Macro.lua
 
   Options frame to plug in to the Blizzard interface menu.
 
@@ -8,13 +8,14 @@
 
 ----------------------------------------------------------------------------]]--
 
-function LiteMountOptionsCombatMacro_OnLoad(self)
-    self.name = MACRO .. " : " .. COMBAT
+function LiteMountOptionsMacro_OnLoad(self)
+    self.name = MACRO .. " : " .. UNAVAILABLE
     LiteMountOptionsPanel_OnLoad(self)
 end
 
-function LiteMountOptionsCombatMacro_OnTextChanged(self)
+function LiteMountOptionsMacro_OnTextChanged(self)
     local c = strlen(self:GetText() or "")
-    LiteMountOptionsCombatMacroCount:SetText(format(MACROFRAME_CHAR_LIMIT, c))
+    LiteMountOptionsMacro.Count:SetText(format(MACROFRAME_CHAR_LIMIT, c))
     LiteMountOptionsControl_OnChanged(self)
 end
+

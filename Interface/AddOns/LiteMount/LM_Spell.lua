@@ -8,10 +8,14 @@
 
 ----------------------------------------------------------------------------]]--
 
-LM_Spell = setmetatable({ }, LM_Mount)
+--[===[@debug@
+if LibDebug then LibDebug() end
+--@end-debug@]===]
+
+_G.LM_Spell = setmetatable({ }, LM_Mount)
 LM_Spell.__index = LM_Spell
 
-function LM_Spell:Get(spellID, flags)
+function LM_Spell:Get(spellID, ...)
 
     local name, rank, icon = GetSpellInfo(spellID)
 
@@ -25,8 +29,13 @@ function LM_Spell:Get(spellID, flags)
     m.name = name
     m.spellID = spellID
     m.icon = icon
-    m.flags = flags or 0
     m.isCollected = IsSpellKnown(m.spellID)
+    m.flags = { }
+
+    for i = 1, select('#', ...) do
+        local f = select(i, ...)
+        m.flags[f] = true
+    end
 
     return m
 end

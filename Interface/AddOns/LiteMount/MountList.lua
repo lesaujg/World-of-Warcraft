@@ -1,12 +1,16 @@
 --[[----------------------------------------------------------------------------
 
-  LiteMount/ShuffleList.lua
+  LiteMount/MountList.lua
 
-  List with some kinds of extra stuff, mostly shuffle/random.
+  List of mounts with some kinds of extra stuff, mostly shuffle/random.
 
   Copyright 2011-2017 Mike Battersby
 
 ----------------------------------------------------------------------------]]--
+
+--[===[@debug@
+if LibDebug then LibDebug() end
+--@end-debug@]===]
 
 --[[----------------------------------------------------------------------------
 
@@ -53,29 +57,27 @@
 
 ----------------------------------------------------------------------------]]--
 
-LM_ShuffleList = { }
-LM_ShuffleList.__index = LM_ShuffleList
+_G.LM_MountList = { }
+LM_MountList.__index = LM_MountList
 
-function LM_ShuffleList:New(ml)
-    local ml = ml or { }
-    setmetatable(ml, LM_ShuffleList)
-    return ml
+function LM_MountList:New(ml)
+    return setmetatable(ml or {}, LM_MountList)
 end
 
-function LM_ShuffleList:Iterate()
-    local i = 0
-    local iter = function ()
-            i = i + 1
-            return self[i]
-        end
-    return iter
+function LM_MountList:Copy()
+    local out = { }
+    for i,v in ipairs(self) do
+        out[i] = v
+    end
+    return self:New(out)
 end
 
-function LM_ShuffleList:Search(matchfunc)
-    local result = LM_ShuffleList:New()
+function LM_MountList:Search(matchfunc, ...)
+    local result = self:New()
 
-    for m in self:Iterate() do
-        if matchfunc(m) then
+    for _,m in ipairs(self) do
+        -- LM_Profile(1)
+        if matchfunc(m, ...) then
             tinsert(result, m)
         end
     end
@@ -83,23 +85,26 @@ function LM_ShuffleList:Search(matchfunc)
     return result
 end
 
-function LM_ShuffleList:Find(matchfunc)
-    for m in self:Iterate() do
-        if matchfunc(m) then
+-- Note that Find doesn't make another table
+function LM_MountList:Find(matchfunc, ...)
+    for _,m in ipairs(self) do
+        -- LM_Profile(1)
+        if matchfunc(m, ...) then
             return m
         end
     end
 end
 
-function LM_ShuffleList:Shuffle()
+function LM_MountList:Shuffle()
     -- Shuffle, http://forums.wowace.com/showthread.php?t=16628
     for i = #self, 2, -1 do
+        -- LM_Profile(1)
         local r = math.random(i)
         self[i], self[r] = self[r], self[i]
     end
 end
 
-function LM_ShuffleList:Random()
+function LM_MountList:Random()
     local n = #self
     if n == 0 then
         return nil
@@ -108,55 +113,37 @@ function LM_ShuffleList:Random()
     end
 end
 
-function LM_ShuffleList:WeightedRandom(weightfunc)
+function LM_MountList:WeightedRandom(weightfunc)
     local n = #self
     if n == 0 then return nil end
 
     local weightsum = 0
-    for m in self:Iterate() do
+    for _,m in ipairs(self) do
         weightsum = weightsum + (weightfunc(m) or 10)
     end
 
     local r = math.random(weightsum)
     local t = 0
-    for m in self:Iterate() do
+    for _,m in ipairs(self) do
         t = t + (weightfunc(m) or 10)
         if t >= r then return m end
     end
 end
 
-function LM_ShuffleList:__add(other)
-    local r = LM_ShuffleList:New()
-    local seen = { }
-    for m in self:Iterate() do
-        tinsert(r, m)
-        seen[m] = true
-    end
-    for m in other:Iterate() do
-        if not seen[m] then
-            tinsert(r, m)
-        end
-    end
-    return r
+local function filterMatch(m, ...)
+    return m:MatchesFilters(...)
 end
 
-function LM_ShuffleList:__sub(other)
-    local r = LM_ShuffleList:New()
-    local remove = { }
-    for m in other:Iterate() do
-        remove[m] = true
-    end
-    for m in self:Iterate() do
-        if not remove[m] then
-            tinsert(r, m)
-        end
-    end
-    return r
+function LM_MountList:FilterSearch(...)
+    return self:Search(filterMatch, ...)
 end
 
-function LM_ShuffleList:Map(mapfunc)
-    for m in self:Iterate() do
-        mapfunc(m)
-    end
+function LM_MountList:FilterFind(...)
+    return self:Find(filterMatch, ...)
 end
 
+function LM_MountList:Dump()
+    for _,m in ipairs(self) do
+        m:Dump()
+    end
+end

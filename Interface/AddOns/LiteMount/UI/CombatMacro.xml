@@ -1,0 +1,140 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\..\FrameXML\UI.xsd">
+
+<!-- Copyright 2011-2017 Mike Battersby -->
+
+<Script file="CombatMacro.lua" />
+
+<Frame name="LiteMountOptionsCombatMacro" hidden="true" inherits="LiteMountOptionsPanelTemplate">
+
+    <Frames>
+        <Frame parentKey="EditBoxContainer">
+
+            <Size x="400" y="200" />
+
+            <Anchors>
+                <Anchor point="CENTER" />
+            </Anchors>
+
+            <Backdrop edgefile="Interface\Tooltips\UI-Tooltip-Border" bgfile="Interface\Tooltips\UI-Tooltip-Background" tile="true">
+                <EdgeSize val="16" />
+                <TileSize val="16" />
+                <BackgroundInsets>
+                    <AbsInset left="5" right="5" top="5" bottom="5" />
+                </BackgroundInsets>
+            </Backdrop>
+
+            <Scripts>
+                <OnLoad>
+                    self:SetBackdropBorderColor(0.6, 0.6, 0.6, 0.8)
+                    self:SetBackdropColor(0, 0, 0, 0.5)
+                </OnLoad>
+            </Scripts>
+
+        </Frame>
+
+        <EditBox parentKey="EditBox" multiLine="true" letters="255" autoFocus="false" countInvisibleLetters="true">
+
+            <Anchors>
+                <Anchor point="TOPLEFT" x="8" y="-8" relativeKey="$parent.EditBoxContainer" />
+                <Anchor point="BOTTOMRIGHT" x="-8" y="8" relativeKey="$parent.EditBoxContainer" />
+            </Anchors>
+
+            <Scripts>
+                <OnTextChanged function="LiteMountOptionsCombatMacro_OnTextChanged" />
+                <OnEscapePressed function="EditBox_ClearFocus" />
+                <OnLoad>
+                    self.GetOption = function (self)
+                            return LM_Options.db.char.combatMacro or ""
+                        end
+                    self.SetOption = function (self, v)
+                            LM_Options.db.char.combatMacro = v
+                            LiteMount:Refresh()
+                        end
+                    self.GetOptionDefault = function (self)
+                            return LM_Actions:DefaultCombatMacro()
+                        end
+                    LiteMountOptionsControl_OnLoad(self, LiteMountOptionsCombatMacro)
+                </OnLoad>
+            </Scripts>
+            <FontString inherits="GameFontHighlight" />
+        </EditBox>
+
+        <Button parentKey="DeleteButton" inherits="UIPanelButtonTemplate" text="DELETE">
+            <Size x="96" y="22" />
+            <Anchors>
+                <Anchor point="TOPRIGHT" relativePoint="BOTTOMRIGHT" relativeKey="$parent.EditBoxContainer" x="-8" y="-3" />
+            </Anchors>
+            <Scripts>
+                <OnClick>
+                    self:GetParent().EditBox:SetText("")
+                </OnClick>
+            </Scripts>
+        </Button>
+        <Button parentKey="DefaultButton" inherits="UIPanelButtonTemplate" text="DEFAULT">
+            <Size x="96" y="22" />
+            <Anchors>
+                <Anchor point="BOTTOMRIGHT" relativePoint="TOPRIGHT" relativeKey="$parent.EditBoxContainer" x="-8" y="3" />
+            </Anchors>
+            <Scripts>
+                <OnClick>
+                    self:GetParent().EditBox:SetText(LM_Actions:DefaultCombatMacro())
+                </OnClick>
+            </Scripts>
+        </Button>
+
+        <CheckButton parentKey="EnableButton" inherits="OptionsBaseCheckButtonTemplate">
+            <Anchors>
+                <Anchor point="BOTTOMLEFT" relativePoint="TOPLEFT" relativeKey="$parent.EditBoxContainer" y="32" />
+            </Anchors>
+            <Scripts>
+                <OnLoad>
+                    self.GetOption = function (self)
+                            return LM_Options.db.char.useCombatMacro
+                        end
+                    self.GetOptionDefault = function (self) return false end
+                    self.SetOption = function (self, v)
+                            LM_Options.db.char.useCombatMacro = (v or false)
+                        end
+                    LiteMountOptionsControl_OnLoad(self)
+                </OnLoad>
+                <OnClick function="LiteMountOptionsControl_OnChanged" />
+            </Scripts>
+        </CheckButton>
+    </Frames>
+
+    <Layers>
+        <Layer level="ARTWORK">
+            <FontString inherits="GameFontNormal" justifyV="TOP" justifyH="LEFT" text="LM_COMBAT_MACRO_EXP">
+                <Anchors>
+                    <Anchor point="TOP" y="-48" />
+                    <Anchor point="LEFT" relativePoint="LEFT" relativeKey="$parent.EditBoxContainer" x="-50" />
+                    <Anchor point="RIGHT" relativePoint="RIGHT" relativeKey="$parent.EditBoxContainer" x="50" />
+                    <Anchor point="BOTTOM" relativePoint="RIGHT" relativeKe="$parent.EditBoxContainer" />
+                </Anchors>
+            </FontString>
+
+            <FontString inherits="GameFontNormalLarge" parentKey="enable" text="ENABLE">
+                <Anchors>
+                    <Anchor point="LEFT" relativePoint="RIGHT" relativeKey="$parent.EnableButton" x="4" />
+                </Anchors>
+            </FontString>
+            <FontString inherits="GameFontHighlightSmall" text="ENTER_MACRO_LABEL">
+                <Anchors>
+                    <Anchor point="BOTTOMLEFT" relativePoint="TOPLEFT" relativeKey="$parent.EditBoxContainer" x="8" y="3" />
+                </Anchors>
+            </FontString>
+
+            <FontString parentKey="Count" inherits="GameFontHighlightSmall">
+                <Anchors>
+                    <Anchor point="TOP" relativePoint="BOTTOM" relativeKey="$parent.EditBoxContainer" y="-3" />
+                </Anchors>
+            </FontString>
+        </Layer>
+    </Layers>
+
+    <Scripts>
+        <OnLoad function="LiteMountOptionsCombatMacro_OnLoad" />
+    </Scripts>
+</Frame>
+
+</Ui>

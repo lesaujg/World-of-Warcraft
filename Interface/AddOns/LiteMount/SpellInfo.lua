@@ -8,21 +8,16 @@
 
 ----------------------------------------------------------------------------]]--
 
--- These used to match the returns from the old API function GetCompanionInfo,
--- plus more of my own. But since 6.0 that was replaced with C_MountJournal
--- and specific type numbers.
-
+-- The values are sort order
 LM_FLAG = { }
-LM_FLAG.RUN = 1
-LM_FLAG.FLY = 2
-LM_FLAG.FLOAT = 4
-LM_FLAG.SWIM = 8
-LM_FLAG.WALK = 32
-LM_FLAG.AQ = 128
-LM_FLAG.VASHJIR = 256
-LM_FLAG.NAGRAND = 512
-LM_FLAG.CUSTOM1 = 1024
-LM_FLAG.CUSTOM2 = 2048
+LM_FLAG.SWIM    = 1
+LM_FLAG.FLOAT   = 2
+LM_FLAG.FLY     = 3
+LM_FLAG.RUN     = 4
+LM_FLAG.WALK    = 5
+LM_FLAG.AQ      = 6
+LM_FLAG.VASHJIR = 7
+LM_FLAG.NAGRAND = 8
 
 LM_SPELL = { }
 LM_SPELL.TRAVEL_FORM = 783

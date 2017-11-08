@@ -8,7 +8,11 @@
 
 ----------------------------------------------------------------------------]]--
 
-LM_Mount = { }
+--[===[@debug@
+if LibDebug then LibDebug() end
+--@end-debug@]===]
+
+_G.LM_Mount = { }
 LM_Mount.__index = LM_Mount
 
 function LM_Mount:new()
@@ -32,13 +36,45 @@ function LM_Mount:Refresh()
     -- Nothing in base
 end
 
--- This is a bit of a convenience since bit.isset doesn't exist
-function LM_Mount:CurrentFlagsSet(f)
-    return bit.band(self:CurrentFlags(), f) == f
+function LM_Mount:MatchesFilter(flags, f)
+
+    if f == "CASTABLE" then
+        return self:IsCastable()
+    end
+
+    if f == "ENABLED" then
+        return LM_Options:IsExcludedMount(self) ~= true
+    end
+
+    if tonumber(f) then
+        return self.spellID == tonumber(f)
+    end
+
+    if f:sub(1, 1) == '~' then
+        return flags[f:sub(2)] == nil
+    end
+
+    return flags[f] ~= nil
 end
 
-function LM_Mount:FlagsSet(f)
-    return bit.band(self.flags, f) == f
+function LM_Mount:MatchesFilters(...)
+    local currentFlags = self:CurrentFlags()
+    local f
+
+    for i = 1, select('#', ...) do
+        f = select(i, ...)
+        if not self:MatchesFilter(currentFlags, f) then
+            return false
+        end
+    end
+    return true
+end
+
+function LM_Mount:FlagsSet(checkFlags)
+    for _,f in ipairs(checkFlags) do
+        if self.flags[f] == nil then return false end
+    end
+    return true
 end
 
 local function PlayerIsMovingOrFalling()
@@ -67,10 +103,21 @@ function LM_Mount:Dump(prefix)
 
     local spellName = GetSpellInfo(self.spellID)
 
+    local currentFlags, defaultFlags = {}, {}
+    for f in pairs(self:CurrentFlags()) do tinsert(currentFlags, f) end
+    for f in pairs(self.flags) do tinsert(defaultFlags, f) end
+    sort(currentFlags)
+    sort(defaultFlags)
+
     LM_Print("--- Mount Dump ---")
     LM_Print(prefix .. self.name)
     LM_Print(prefix .. " spell: " .. format("%s (id %d)", spellName, self.spellID))
-    LM_Print(prefix .. " flags: " .. format("%04x (default %04x)", self:CurrentFlags(), self.flags))
+    LM_Print(prefix .. " flags: " ..
+             format("%s (default %s)",
+                    table.concat(currentFlags, ','),
+                    table.concat(defaultFlags, ',')
+                   )
+            )
     LM_Print(prefix .. " mountID: " .. tostring(self.mountID))
     LM_Print(prefix .. " isCollected: " .. tostring(self.isCollected))
     LM_Print(prefix .. " isFiltered: " .. tostring(self.isFiltered))
