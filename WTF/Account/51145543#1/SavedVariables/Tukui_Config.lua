@@ -1,5 +1,9 @@
 
 TukuiConfigShared = {
+	["Sisters of Elune"] = {
+		["Alyania"] = {
+		},
+	},
 	["Silvermoon"] = {
 		["Farmerlime"] = {
 		},

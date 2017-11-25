@@ -1,6 +1,41 @@
 
 TradeSkillMaster_MailingDB = {
-	["profileKeys"] = {
-		["Farmerlime - Silvermoon"] = "Default",
+	["g@ @sendDelay"] = 0.5,
+	["g@ @sendItemsIndividually"] = false,
+	["_scopeKeys"] = {
+		["char"] = {
+			"Alyania - Sisters of Elune", -- [1]
+		},
+		["factionrealm"] = {
+			"Alliance - Sisters of Elune", -- [1]
+		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["realm"] = {
+			"Sisters of Elune", -- [1]
+		},
 	},
+	["g@ @helpPlatesShown"] = {
+	},
+	["f@Alliance - Sisters of Elune@deMailTarget"] = "",
+	["_hash"] = 3711258,
+	["g@ @inboxMessages"] = true,
+	["g@ @defaultMailTab"] = true,
+	["_currentProfile"] = {
+		["Alyania - Sisters of Elune"] = "Default",
+	},
+	["g@ @resendDelay"] = 1,
+	["c@Alyania - Sisters of Elune@goldMailTarget"] = "",
+	["c@Alyania - Sisters of Elune@goldKeepAmount"] = 1000000,
+	["g@ @deleteEmptyNPCMail"] = false,
+	["g@ @openMailSound"] = "TSM_NO_SOUND",
+	["g@ @displayMoneyCollected"] = true,
+	["g@ @keepMailSpace"] = 0,
+	["g@ @autoCheck"] = true,
+	["g@ @defaultPage"] = 1,
+	["g@ @showReloadBtn"] = true,
+	["g@ @deMaxQuality"] = 2,
+	["_version"] = 1,
+	["g@ @sendMessages"] = true,
 }

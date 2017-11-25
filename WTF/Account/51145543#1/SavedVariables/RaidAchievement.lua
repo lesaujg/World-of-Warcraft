@@ -21,4 +21,4 @@ rasoundtoplay = {
 }
 raenablebg = 1
 psdonaspanvar = nil
-radonateq1 = 3
+radonateq1 = 6

@@ -75,88 +75,146 @@ function LiteMountOptionsMountsFilterDropDown_Initialize(self, level)
     local info = UIDropDownMenu_CreateInfo()
     info.keepShownOnClick = true
 
-    local function flagFunc(self, arg1, arg2, v)
-        LM_Options.db.char.uiMountFilterList[arg1] = (not v or nil)
-        LiteMountOptions_UpdateMountList()
-    end
-
     if level == 1 then
-        info.func = flagFunc
         info.isNotRadio = true
 
         info.text = VIDEO_OPTIONS_ENABLED
         info.arg1 = "ENABLED"
-        info.checked = not LM_Options.db.char.uiMountFilterList.ENABLED
+        info.checked = function ()
+                return LM_UIFilter.IsFlagChecked("ENABLED")
+            end
+        info.func = function (_, _, _, v)
+                LM_UIFilter.SetFlagFilter("ENABLED", v)
+                LiteMountOptions_UpdateMountList()
+            end
         UIDropDownMenu_AddButton(info, level)
 
         info.text = VIDEO_OPTIONS_DISABLED
         info.arg1 = "DISABLED"
-        info.checked = not LM_Options.db.char.uiMountFilterList.DISABLED
+        info.checked = function ()
+                return LM_UIFilter.IsFlagChecked("DISABLED")
+            end
+        info.func = function (_, _, _, v)
+                LM_UIFilter.SetFlagFilter("DISABLED", v)
+                LiteMountOptions_UpdateMountList()
+            end
         UIDropDownMenu_AddButton(info, level)
 
         info.text = COLLECTED
         info.arg1 = "COLLECTED"
-        info.checked = not LM_Options.db.char.uiMountFilterList.COLLECTED
+        info.checked = function ()
+                return LM_UIFilter.IsFlagChecked("COLLECTED")
+            end
+        info.func = function (_, _, _, v)
+                LM_UIFilter.SetFlagFilter("COLLECTED", v)
+                LiteMountOptions_UpdateMountList()
+            end
         UIDropDownMenu_AddButton(info, level)
 
         info.text = NOT_COLLECTED
         info.arg1 = "NOT_COLLECTED"
-        info.checked = not LM_Options.db.char.uiMountFilterList.NOT_COLLECTED
+        info.checked = function ()
+                return LM_UIFilter.IsFlagChecked("NOT_COLLECTED")
+            end
+        info.func = function (_, _, _, v)
+                LM_UIFilter.SetFlagFilter("NOT_COLLECTED", v)
+                LiteMountOptions_UpdateMountList()
+            end
         UIDropDownMenu_AddButton(info, level)
 
         info.text = MOUNT_JOURNAL_FILTER_UNUSABLE
         info.arg1 = "UNUSABLE"
-        info.checked = not LM_Options.db.char.uiMountFilterList.UNUSABLE
+        info.checked = function ()
+                return LM_UIFilter.IsFlagChecked("UNUSABLE")
+            end
+        info.func = function (_, _, _, v)
+                LM_UIFilter.SetFlagFilter("UNUSABLE", v)
+                LiteMountOptions_UpdateMountList()
+            end
         UIDropDownMenu_AddButton(info, level)
 
-        info.text = L.LM_FLAGS
         info.checked = nil
         info.func = nil
         info.isNotRadio = nil
         info.hasArrow = true
         info.notCheckable = true
+
+        info.text = L.LM_FLAGS
         info.value = 1
         UIDropDownMenu_AddButton(info, level)
+
+        info.text = SOURCES
+        info.value = 2
+        UIDropDownMenu_AddButton(info, level)
     elseif level == 2 then
+        info.hasArrow = false
         info.isNotRadio = true
         info.notCheckable = true
 
-        info.text = CHECK_ALL
-        info.func = function () 
-                for _,k in ipairs(LM_Options:GetAllFlags()) do 
-                    LM_Options.db.char.uiMountFilterList[k] = nil
+        if UIDROPDOWNMENU_MENU_VALUE == 2 then -- Sources
+            info.text = CHECK_ALL
+            info.func = function ()
+                    LM_UIFilter.SetAllSourceFilters(true)
+                    UIDropDownMenu_Refresh(LiteMountOptionsMountsFilterDropDown, false, 2)
+                    LiteMountOptions_UpdateMountList()
                 end
-                UIDropDownMenu_Refresh(LiteMountOptionsMountsFilterDropDown, 1, 2)
-                LiteMountOptions_UpdateMountList()
-            end
-        UIDropDownMenu_AddButton(info, level)
+            UIDropDownMenu_AddButton(info, level)
 
-        info.text = UNCHECK_ALL
-        info.func = function ()
-                for _,k in ipairs(LM_Options:GetAllFlags()) do 
-                    if LM_Options:IsFilterFlag(k) then
-                        LM_Options.db.char.uiMountFilterList[k] = true
+            info.text = UNCHECK_ALL
+            info.func = function ()
+                    LM_UIFilter.SetAllSourceFilters(false)
+                    UIDropDownMenu_Refresh(LiteMountOptionsMountsFilterDropDown, false, 2)
+                    LiteMountOptions_UpdateMountList()
+                end
+            UIDropDownMenu_AddButton(info, level)
+
+            info.notCheckable = false
+
+            for i = 1,LM_UIFilter.GetNumSources() do
+                if LM_UIFilter.IsValidSourceFilter(i) then
+                    info.text = LM_UIFilter.GetSourceText(i)
+                    info.arg1 = i
+                    info.func = function (_, _, _, v)
+                            LM_UIFilter.SetSourceFilter(i, v)
+                            LiteMountOptions_UpdateMountList()
+                        end
+                    info.checked = function ()
+                            return LM_UIFilter.IsSourceChecked(i)
+                        end
+                    UIDropDownMenu_AddButton(info, level)
+                end
+            end
+
+        elseif UIDROPDOWNMENU_MENU_VALUE == 1 then -- Flags
+            local flags = LM_UIFilter.GetFlags()
+
+            info.text = CHECK_ALL
+            info.func = function ()
+                    LM_UIFilter:SetAllFlagFilters(true)
+                    UIDropDownMenu_Refresh(LiteMountOptionsMountsFilterDropDown, false, 2)
+                    LiteMountOptions_UpdateMountList()
+                end
+            UIDropDownMenu_AddButton(info, level)
+
+            info.text = UNCHECK_ALL
+            info.func = function ()
+                    LM_UIFilter:SetAllFlagFilters(false)
+                    UIDropDownMenu_Refresh(LiteMountOptionsMountsFilterDropDown, false, 2)
+                    LiteMountOptions_UpdateMountList()
+                end
+            UIDropDownMenu_AddButton(info, level)
+
+            info.notCheckable = false
+
+            for _,f in ipairs(flags) do
+                info.text = LM_UIFilter.GetFlagText(f)
+                info.arg1 = f
+                info.func = function (_, _, _, v)
+                        LM_UIFilter.SetFlagFilter(f, v)
+                        LiteMountOptions_UpdateMountList()
                     end
-                end
-                UIDropDownMenu_Refresh(LiteMountOptionsMountsFilterDropDown, 1, 2)
-                LiteMountOptions_UpdateMountList()
-            end
-        UIDropDownMenu_AddButton(info, level)
-
-        info.notCheckable = false
-        info.func = flagFunc
-
-        local allFlags = LM_Options:GetAllFlags()
-        for _,flagName in ipairs(allFlags) do
-            if LM_Options:IsFilterFlag(flagName) then
-                if LM_Options:IsPrimaryFlag(flagName) then
-                    info.text = ITEM_QUALITY_COLORS[2].hex .. L[flagName] .. FONT_COLOR_CODE_CLOSE
-                else
-                    info.text = L[flagName]
-                end
-                info.arg1 = flagName
                 info.checked = function ()
-                        return not LM_Options.db.char.uiMountFilterList[flagName]
+                        return LM_UIFilter.IsFlagChecked(f)
                     end
                 UIDropDownMenu_AddButton(info, level)
             end
@@ -176,71 +234,16 @@ end
 
 local function GetFilteredMountList()
 
-    local filters = LM_Options.db.char.uiMountFilterList
+    local out = { }
 
-    local mounts = LM_PlayerMounts.mounts:Copy()
-    sort(mounts, FilterSort)
-
-    local filtertext = LiteMountOptionsMounts.Search:GetText()
-    if filtertext == SEARCH then
-        filtertext = ""
-    else
-        filtertext = strlower(filtertext)
-    end
-
-    for i = #mounts, 1, -1 do
-        local m = mounts[i]
-
-        local remove = false
-
-        if m.isFiltered then
-            remove = true
-        elseif filters.DISABLED and LM_Options:IsExcludedMount(m) then
-            remove = true
-        elseif filters.ENABLED and not LM_Options:IsExcludedMount(m) then
-            remove = true
-        elseif filters.COLLECTED and m.isCollected then
-            remove = true
-        elseif filters.NOT_COLLECTED and not m.isCollected then
-            remove = true
-        elseif filters.UNUSABLE and m.needsFaction and m.needsFaction ~= UnitFactionGroup("player") then
-            remove = true
-        else
-            local okflags = CopyTable(m:CurrentFlags())
-            local noFilters = true
-            for _,flagName in ipairs(LM_Options:GetAllFlags()) do
-                if filters[flagName] then
-                    okflags[flagName] = nil
-                    noFilters = false
-                end
-            end
-            if noFilters == false and next(okflags) == nil then
-                remove = true
-            end
-        end
-
-        -- strfind is expensive, avoid if possible
-        if not remove then
-            if filtertext == "=" then
-                local spellName = GetSpellInfo(m.spellID)
-                if UnitAura("player", spellName) == nil then
-                    remove = true
-                end
-            elseif filtertext ~= "" then
-                local matchname = strlower(m.name)
-                if not strfind(matchname, filtertext, 1, true) then
-                    remove = true
-                end
-            end
-        end
-
-
-        if remove then
-            tremove(mounts, i)
+    for _,m in ipairs(LM_PlayerMounts.mounts) do
+        if not LM_UIFilter.IsFilteredMount(m) then
+            out[#out+1] = m
         end
     end
 
-    return mounts
+    sort(out, FilterSort)
+    return out
 end
 
 local function UpdateAllSelected(mounts)

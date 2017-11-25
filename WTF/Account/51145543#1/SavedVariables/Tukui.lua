@@ -1,13 +1,90 @@
 
 TukuiData = {
-	["Gold"] = {
-		["Silvermoon"] = {
-			["Farmerlime"] = 0,
+	["gold"] = {
+		["Sisters of Elune"] = {
+			["Alyania"] = 0,
+		},
+	},
+	["Sisters of Elune"] = {
+		["Alyania"] = {
+			["ufpos"] = {
+			},
+			["Move"] = {
+			},
+			["InstallDone"] = true,
+			["Texts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Memory"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					8, -- [2]
+				},
+				["Power"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["Durability"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["FPS & MS"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+			},
+			["install"] = true,
 		},
 	},
 	["Silvermoon"] = {
 		["Farmerlime"] = {
-			["InstallDone"] = true,
+			["Texts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Memory"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["FPS & MS"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+				["Durability"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Power"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					8, -- [2]
+				},
+			},
 			["Chat"] = {
 				["Frame1"] = {
 					"BOTTOMLEFT", -- [1]
@@ -41,11 +118,11 @@ TukuiData = {
 					370, -- [5]
 					111, -- [6]
 				},
-				["Frame10"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
+				["Frame4"] = {
+					"BOTTOMRIGHT", -- [1]
+					"BOTTOMRIGHT", -- [2]
+					-46.9999961853027, -- [3]
+					45, -- [4]
 					370, -- [5]
 					111, -- [6]
 				},
@@ -81,54 +158,24 @@ TukuiData = {
 					370, -- [5]
 					111, -- [6]
 				},
-				["Frame4"] = {
-					"BOTTOMRIGHT", -- [1]
-					"BOTTOMRIGHT", -- [2]
-					-46.9999961853027, -- [3]
-					45, -- [4]
+				["Frame10"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
 					370, -- [5]
 					111, -- [6]
 				},
 			},
 			["Move"] = {
 			},
-			["Texts"] = {
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Memory"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					8, -- [2]
-				},
-				["Power"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["Durability"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-			},
+			["InstallDone"] = true,
 		},
 	},
-	["gold"] = {
+	["Gold"] = {
+		["Silvermoon"] = {
+			["Farmerlime"] = 0,
+		},
 		["Sisters of Elune"] = {
 			["Alyania"] = 0,
 		},

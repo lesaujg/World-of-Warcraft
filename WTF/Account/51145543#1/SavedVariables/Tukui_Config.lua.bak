@@ -4,6 +4,10 @@ TukuiConfigShared = {
 		["Farmerlime"] = {
 		},
 	},
+	["Sisters of Elune"] = {
+		["Alyania"] = {
+		},
+	},
 	["Account"] = {
 	},
 }

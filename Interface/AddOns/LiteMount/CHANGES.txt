@@ -1,13 +1,63 @@
-tag f85c5b536282181c901788d037f061252810d64d 7.3.7
+tag 14abcea19c12f8ad4ce2853444ad1261fceecc9c 7.3.8
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Tue Nov 7 15:12:39 2017 +1100
+Date:	Wed Nov 15 17:20:56 2017 +1100
 
-Really include the migration changes this time.
-Work smarter, not dumber.
+Tagging 7.3.8
+  - Add "source" filter in the Mounts UI panel drop-down
+  - Add xmog:<slot>/<appearance> condition
+  - Add /litemount xmog <slot> command line option
 
-commit 86a28b9e1efd2c56681fba931460b11d2ff3317f
+commit 832ee7f73d5f365c27f02bb9e425f8fe761b77a7
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Nov 7 15:12:19 2017 +1100
+Date:   Wed Nov 15 15:53:42 2017 +1100
 
-    Fix migration code.
+    Move mount filtering state out into LM_UIFilter
+
+commit 9c4e3a01ef3531b24066b04403ad75b9d5ea7866
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Wed Nov 15 12:57:20 2017 +1100
+
+    Move OTHER to bottom of sources, put flags before sources
+
+commit 445cc6724ef6bffc4efa861570f175a4b21ca784
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Tue Nov 14 18:09:21 2017 +1100
+
+    Add source filtering to UI Mounts panel
+
+commit a1eb574125ca421d91864a7630f319660c779298
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Tue Nov 14 18:08:33 2017 +1100
+
+    Add sourceType and extra Dump() prints to journal mounts.
+
+commit 5066f7e70f9a5d5c12ede067cbbcad7b63b5c287
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Wed Nov 8 16:31:36 2017 +1100
+
+    Add Stop action.
+
+commit 5c40d63306536390422539a7ee09dc74df2b8c28
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Wed Nov 8 16:17:05 2017 +1100
+
+    Add [xmog:slot/appearance] condition
+
+commit 48e5d09a80de22bed5aea3796251f3c154f18911
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Tue Nov 7 17:16:42 2017 +1100
+
+    We could have leave vehicle do taxi shortcut, but I didn't.
+
+commit eb35a4880d947db3ccdc4716a0622d7f5adaa2db
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Tue Nov 7 17:09:15 2017 +1100
+
+    Support Click actions in LM_SecureAction
+
+commit 4864bacbeb7a4fcf9d2077c39b069276e4443939
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Tue Nov 7 16:46:25 2017 +1100
+
+    Localize _ in [tracking:]
 

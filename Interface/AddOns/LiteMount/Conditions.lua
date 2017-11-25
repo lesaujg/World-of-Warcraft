@@ -379,7 +379,7 @@ CONDITIONS["talent:args"] =
 
 CONDITIONS["tracking"] =
     function (cond, v)
-        local name, active
+        local name, active, _
         for i = 1, GetNumTrackingTypes() do
             name, _, active = GetTrackingInfo(i)
             if active and (not v or strlower(name) == strlower(v) or i == tonumber(v)) then
@@ -394,6 +394,12 @@ CONDITIONS["true"] =
         return true
     end
 
+CONDITIONS["xmog:args"] =
+    function (cond, slotID, appearanceID)
+        slotID, appearanceID = tonumber(slotID), tonumber(appearanceID)
+        local ok, _, _, _, current = pcall(C_Transmog.GetSlotVisualInfo, slotID, LE_TRANSMOG_TYPE_APPEARANCE)
+        return ok and current == appearanceID
+    end
 
 local function any(f, cond, ...)
     local n = select('#', ...)

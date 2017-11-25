@@ -91,8 +91,8 @@ OneRing_Config = {
 					["sliceToken"] = "ABueoVMF3Ht",
 				}, -- [3]
 				["save"] = true,
-				["name"] = "Food",
 				["limit"] = "Bracnar-SistersofElune",
+				["name"] = "Food",
 			},
 			["OPieFlagStore"] = {
 				["FlushedDefaultColors"] = true,
