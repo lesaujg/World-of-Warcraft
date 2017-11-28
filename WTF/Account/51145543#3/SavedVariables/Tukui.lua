@@ -2,9 +2,6 @@
 TukuiData = {
 	["Dalaran"] = {
 		["Gharlorim"] = {
-			["InstallDone"] = true,
-			["Move"] = {
-			},
 			["Texts"] = {
 				["Friends"] = {
 					true, -- [1]
@@ -22,27 +19,33 @@ TukuiData = {
 					true, -- [1]
 					6, -- [2]
 				},
-				["Time"] = {
+				["FPS & MS"] = {
 					true, -- [1]
-					8, -- [2]
-				},
-				["Power"] = {
-					true, -- [1]
-					7, -- [2]
+					4, -- [2]
 				},
 				["Durability"] = {
 					true, -- [1]
 					2, -- [2]
 				},
-				["FPS & MS"] = {
+				["Power"] = {
 					true, -- [1]
-					4, -- [2]
+					7, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					8, -- [2]
 				},
 			},
+			["Move"] = {
+			},
+			["InstallDone"] = true,
 		},
 	},
 	["Sisters of Elune"] = {
 		["Achal"] = {
+			["InstallDone"] = true,
+			["Move"] = {
+			},
 			["Texts"] = {
 				["Friends"] = {
 					true, -- [1]
@@ -60,31 +63,28 @@ TukuiData = {
 					true, -- [1]
 					6, -- [2]
 				},
-				["FPS & MS"] = {
+				["Time"] = {
 					true, -- [1]
-					4, -- [2]
-				},
-				["Durability"] = {
-					true, -- [1]
-					2, -- [2]
+					8, -- [2]
 				},
 				["Power"] = {
 					true, -- [1]
 					7, -- [2]
 				},
-				["Time"] = {
+				["Durability"] = {
 					true, -- [1]
-					8, -- [2]
+					2, -- [2]
+				},
+				["FPS & MS"] = {
+					true, -- [1]
+					4, -- [2]
 				},
 			},
-			["Move"] = {
-			},
-			["InstallDone"] = true,
 		},
 	},
 	["Gold"] = {
 		["Sisters of Elune"] = {
-			["Achal"] = 4000000000,
+			["Achal"] = 0,
 		},
 		["Dalaran"] = {
 			["Gharlorim"] = 0,

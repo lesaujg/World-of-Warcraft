@@ -4,12 +4,12 @@ IceCoreDB = {
 		["LibDualSpec-1.0"] = {
 		},
 	},
-	["global"] = {
-		["lastRunVersion"] = 20170901021036,
-	},
 	["profileKeys"] = {
 		["Gharlorim - Dalaran"] = "Default",
 		["Achal - Sisters of Elune"] = "Default",
+	},
+	["global"] = {
+		["lastRunVersion"] = 20170901021036,
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -29,7 +29,7 @@ IceCoreDB = {
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
 				},
-				["PlayerMana"] = {
+				["PlayerAbsorb"] = {
 					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
@@ -80,7 +80,7 @@ IceCoreDB = {
 				},
 				["MaelstromCount"] = {
 				},
-				["PlayerAbsorb"] = {
+				["PlayerMana"] = {
 					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,

@@ -50,9 +50,9 @@ BaudManifestData = {
 				},
 				["SlotEmpty"] = 12,
 				["BGTexture"] = "Bumpy",
-				["SpecialEmpty"] = 0,
-				["SpecialTotal"] = 0,
 				["SlotTotal"] = 16,
+				["SpecialTotal"] = 0,
+				["SpecialEmpty"] = 0,
 			}, -- [1]
 			{
 				{
@@ -109,22 +109,22 @@ BaudManifestData = {
 		["FillSpecials"] = true,
 		["ShowArrows"] = true,
 		["ShowBank"] = true,
-		["Scale"] = 100,
-		["HideEquipped"] = true,
-		["ReplaceBlizBags"] = true,
-		["HideBlizInv"] = true,
 		["ItemNameFirst"] = false,
-		["AutoShowInv"] = true,
+		["HideEquipped"] = true,
 		["HideBlizBank"] = true,
+		["HideBlizInv"] = true,
 		["Combine"] = true,
+		["AutoShowInv"] = true,
+		["ReplaceBlizBags"] = true,
+		["Scale"] = 100,
 	},
 	["Sisters of Elune"] = {
 		["Achal"] = {
 			{
 				{
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:6948::::::::1:253::::::",
+						["Count"] = 1,
 					}, -- [1]
 					{
 						["Count"] = 1,
@@ -147,12 +147,12 @@ BaudManifestData = {
 						["Equipped"] = 1,
 					}, -- [5]
 					{
-						["ItemString"] = "item:147876::::::::1:253::::::",
 						["Count"] = 1,
+						["ItemString"] = "item:147876::::::::1:253::::::",
 					}, -- [6]
 					{
-						["ItemString"] = "item:112324::::::::1:253::::::",
 						["Count"] = 1,
+						["ItemString"] = "item:112324::::::::1:253::::::",
 					}, -- [7]
 					["SlotsUsed"] = 7,
 				}, -- [1]
@@ -164,9 +164,9 @@ BaudManifestData = {
 				},
 				["SlotEmpty"] = 13,
 				["BGTexture"] = "Bumpy",
-				["SlotTotal"] = 16,
-				["SpecialTotal"] = 0,
 				["SpecialEmpty"] = 0,
+				["SpecialTotal"] = 0,
+				["SlotTotal"] = 16,
 			}, -- [1]
 			{
 				{
@@ -215,7 +215,7 @@ BaudManifestData = {
 				[0] = 1,
 			},
 			["Class"] = "HUNTER",
-			["Money"] = 4000000000,
+			["Money"] = 0,
 		},
 	},
 }

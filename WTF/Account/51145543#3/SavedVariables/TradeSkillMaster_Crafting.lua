@@ -8,24 +8,24 @@ TradeSkillMaster_CraftingDB = {
 	},
 	["_hash"] = 15983053,
 	["f@Alliance - Sisters of Elune@gathering"] = {
-		["extraMats"] = {
+		["destroyingMats"] = {
 		},
-		["availableMats"] = {
+		["extraMats"] = {
 		},
 		["shortItems"] = {
 		},
-		["gatheredMats"] = false,
-		["neededMats"] = {
+		["sessionOptions"] = {
+		},
+		["selectedSourceStatus"] = {
 		},
 		["selectedSources"] = {
 		},
 		["professions"] = {
 		},
-		["selectedSourceStatus"] = {
+		["neededMats"] = {
 		},
-		["sessionOptions"] = {
-		},
-		["destroyingMats"] = {
+		["gatheredMats"] = false,
+		["availableMats"] = {
 		},
 	},
 	["f@Alliance - Sisters of Elune@crafts"] = {
@@ -40,28 +40,29 @@ TradeSkillMaster_CraftingDB = {
 	["f@Alliance - Dalaran@mats"] = {
 	},
 	["f@Alliance - Dalaran@inkTrade"] = false,
-	["g@ @profitPercent"] = 0,
-	["f@Alliance - Dalaran@evenStacks"] = false,
+	["g@ @ignoreGuilds"] = {
+	},
 	["_scopeKeys"] = {
 		["char"] = {
 			"Gharlorim - Dalaran", -- [1]
 			"Achal - Sisters of Elune", -- [2]
 		},
-		["factionrealm"] = {
-			"Alliance - Dalaran", -- [1]
-			"Alliance - Sisters of Elune", -- [2]
-		},
-		["profile"] = {
-			"Default", -- [1]
-		},
 		["realm"] = {
 			"Dalaran", -- [1]
 			"Sisters of Elune", -- [2]
 		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["factionrealm"] = {
+			"Alliance - Dalaran", -- [1]
+			"Alliance - Sisters of Elune", -- [2]
+		},
 	},
 	["f@Alliance - Dalaran@playerProfessions"] = {
 	},
-	["g@ @defaultCraftPriceMethod"] = "first(dbminbuyout, dbmarket)",
+	["f@Alliance - Sisters of Elune@disableCheckBox"] = false,
+	["g@ @questSmartCrafting"] = true,
 	["f@Alliance - Dalaran@crafts"] = {
 	},
 	["f@Alliance - Dalaran@queueStatus"] = {
@@ -69,54 +70,53 @@ TradeSkillMaster_CraftingDB = {
 		},
 	},
 	["f@Alliance - Sisters of Elune@buyAH"] = false,
-	["g@ @queueSort"] = 1,
-	["g@ @questSmartCrafting"] = true,
-	["_currentProfile"] = {
-		["Gharlorim - Dalaran"] = "Default",
-		["Achal - Sisters of Elune"] = "Default",
+	["f@Alliance - Sisters of Elune@ignoreAlts"] = false,
+	["f@Alliance - Sisters of Elune@playerProfessions"] = {
+	},
+	["f@Alliance - Dalaran@evenStacks"] = false,
+	["g@ @ignoreCDCraftCost"] = true,
+	["f@Alliance - Sisters of Elune@ignoreIntermediate"] = false,
+	["f@Alliance - Dalaran@professionScanCache"] = {
+	},
+	["f@Alliance - Sisters of Elune@evenStacks"] = false,
+	["f@Alliance - Sisters of Elune@ignoreDECheckBox"] = false,
+	["g@ @priceColumn"] = 1,
+	["g@ @frameQueueOpen"] = false,
+	["f@Alliance - Sisters of Elune@mats"] = {
 	},
 	["f@Alliance - Dalaran@gathering"] = {
-		["availableMats"] = {
+		["selectedSources"] = {
 		},
-		["extraMats"] = {
+		["availableMats"] = {
 		},
 		["shortItems"] = {
 		},
-		["gatheredMats"] = false,
-		["neededMats"] = {
+		["sessionOptions"] = {
+		},
+		["selectedSourceStatus"] = {
 		},
 		["destroyingMats"] = {
 		},
 		["professions"] = {
 		},
-		["selectedSourceStatus"] = {
+		["neededMats"] = {
 		},
-		["sessionOptions"] = {
+		["gatheredMats"] = false,
+		["extraMats"] = {
 		},
-		["selectedSources"] = {
-		},
 	},
-	["f@Alliance - Sisters of Elune@ignoreIntermediate"] = false,
-	["f@Alliance - Dalaran@professionScanCache"] = {
+	["g@ @queueSort"] = 1,
+	["_currentProfile"] = {
+		["Gharlorim - Dalaran"] = "Default",
+		["Achal - Sisters of Elune"] = "Default",
 	},
-	["g@ @frameQueueOpen"] = false,
-	["f@Alliance - Sisters of Elune@ignoreDECheckBox"] = false,
-	["g@ @priceColumn"] = 1,
-	["f@Alliance - Sisters of Elune@evenStacks"] = false,
-	["f@Alliance - Sisters of Elune@mats"] = {
-	},
-	["g@ @ignoreCDCraftCost"] = true,
-	["f@Alliance - Sisters of Elune@playerProfessions"] = {
-	},
-	["f@Alliance - Sisters of Elune@ignoreAlts"] = false,
 	["f@Alliance - Sisters of Elune@queueStatus"] = {
 		["collapsed"] = {
 		},
 	},
-	["f@Alliance - Sisters of Elune@disableCheckBox"] = false,
+	["g@ @defaultCraftPriceMethod"] = "first(dbminbuyout, dbmarket)",
 	["f@Alliance - Dalaran@ignoreIntermediate"] = false,
 	["f@Alliance - Sisters of Elune@professionScanCache"] = {
 	},
-	["g@ @ignoreGuilds"] = {
-	},
+	["g@ @profitPercent"] = 0,
 }

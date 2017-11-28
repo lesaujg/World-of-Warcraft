@@ -1,0 +1,26 @@
+
+SkadaDB = {
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Appela - Sisters of Elune"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["windows"] = {
+				{
+					["y"] = 0.0001373291015625,
+					["point"] = "CENTER",
+					["x"] = 9.15527343750e-005,
+				}, -- [1]
+			},
+			["versions"] = {
+				["1.6.7"] = true,
+				["1.6.4"] = true,
+				["1.6.3"] = true,
+			},
+		},
+	},
+}
