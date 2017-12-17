@@ -83,6 +83,7 @@ Macro
 local defaults = {
     global = {
         customFlags         = { },
+        enableTwoPress      = false,
     },
     profile = {
         excludedSpells      = { },
@@ -124,7 +125,7 @@ end
 
 function LM_Options:FlagIsUsed(f)
     for _,p in pairs(self.db.profiles) do
-        for _,changes in pairs(p.flagChanges or {}) do
+        for spellID,changes in pairs(p.flagChanges or {}) do
             if changes[f] then return true end
         end
     end
@@ -152,8 +153,8 @@ end
 function LM_Options:ConsistencyCheck()
     -- Make sure any flag in any profile is included in the flag list
     for _,p in pairs(self.db.profiles) do
-        for _,c in pairs(p.flagChanges or {}) do
-            for f in pairs(c) do
+        for spellID,changes in pairs(p.flagChanges or {}) do
+            for f in pairs(changes) do
                 if LM_FLAG[f] == nil and self.db.global.customFlags[f] == nil then
                     self.db.global.customFlags[f] = { }
                 end
@@ -280,14 +281,13 @@ end
 function LM_Options:CreateFlag(f)
     if self.db.global.customFlags[f] then return end
     if self:IsPrimaryFlag(f) then return end
-    if isFilter == nil then isFilter = true end
     self.db.global.customFlags[f] = { }
     self:UpdateAllFlags()
 end
 
 function LM_Options:DeleteFlag(f)
     for _,p in pairs(self.db.profiles) do
-        for _,c in pairs(p.flagChanges) do
+        for _,c in pairs(p.flagChanges or {}) do
             c[f] = nil
         end
     end
@@ -296,11 +296,12 @@ function LM_Options:DeleteFlag(f)
 end
 
 function LM_Options:RenameFlag(f, newF)
-    local tmp
     if self:IsPrimaryFlag(f) then return end
     if f == newF then return end
+
+    local tmp
     for _,p in pairs(self.db.profiles) do
-        for _,c in pairs(p.flagChanges) do
+        for _,c in pairs(p.flagChanges or {}) do
             tmp = c[f]
             c[f] = nil
             c[newF] = tmp
@@ -316,8 +317,6 @@ end
 -- set of flags first, then the user-added flags in alphabetical order
 
 function LM_Options:UpdateAllFlags()
-    local index = {}
-
     self.allFlags = wipe(self.allFlags or {})
 
     for f in pairs(LM_FLAG) do tinsert(self.allFlags, f) end

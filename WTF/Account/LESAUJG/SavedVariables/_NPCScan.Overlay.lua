@@ -20,7 +20,7 @@ _NPCScanOverlayOptions = {
 	["KeyAutoHideAlpha"] = 0.25,
 	["MiniMapIcon"] = {
 		["minimapPos"] = 331.742089198206,
-		["hide"] = true,
+		["hide"] = false,
 	},
 	["ModulesExtra"] = {
 		["WorldMap"] = {

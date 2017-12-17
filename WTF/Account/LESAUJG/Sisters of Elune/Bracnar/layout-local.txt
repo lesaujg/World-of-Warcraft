@@ -6,6 +6,13 @@ X: -136
 Y: -115
 W: 32
 H: 32
+Frame: ScriptErrorsFrame
+FrameLevel: 0
+Anchor: BOTTOMLEFT
+X: 0
+Y: 0
+W: 384
+H: 260
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: RIGHT
@@ -13,10 +20,3 @@ X: -234
 Y: 6
 W: 250
 H: 417
-Frame: TSMCraftingTradeSkillFrame
-FrameLevel: 0
-Anchor: LEFT
-X: 56
-Y: 85
-W: 410
-H: 517

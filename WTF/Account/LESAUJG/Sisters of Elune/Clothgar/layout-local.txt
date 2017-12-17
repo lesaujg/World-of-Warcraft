@@ -1,1 +1,15 @@
 Version: 1
+Frame: BaudManifestDisplay1
+FrameLevel: 1
+Anchor: RIGHT
+X: -257
+Y: 73
+W: 251
+H: 417
+Frame: TSMCraftingTradeSkillFrame
+FrameLevel: 0
+Anchor: LEFT
+X: 57
+Y: 80
+W: 410
+H: 517

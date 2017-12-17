@@ -1,63 +1,102 @@
-tag 14abcea19c12f8ad4ce2853444ad1261fceecc9c 7.3.8
+tag 1250b92b55f6fda4ca92b97a7f4a6f1b8a2cb6ea 7.3.10
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Wed Nov 15 17:20:56 2017 +1100
+Date:	Wed Dec 13 14:45:38 2017 +1100
 
-Tagging 7.3.8
-  - Add "source" filter in the Mounts UI panel drop-down
-  - Add xmog:<slot>/<appearance> condition
-  - Add /litemount xmog <slot> command line option
+Tagging 7.3.10 for release.
 
-commit 832ee7f73d5f365c27f02bb9e425f8fe761b77a7
+  - Add source information to the tooltips on the mounts page.
+  - Fix mount flags for item-summoned mounts.
+  - Add "Revert" button to options pages.
+  - Options "Cancel" correctly cancels all changes not just current tab.
+
+commit d5bb35dfb3f2a09619a339cfa92be761d44dd388
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Wed Nov 15 15:53:42 2017 +1100
+Date:   Wed Dec 13 14:16:21 2017 +1100
 
-    Move mount filtering state out into LM_UIFilter
+    Make the flagChanges iteration more obvious
 
-commit 9c4e3a01ef3531b24066b04403ad75b9d5ea7866
+commit f2821deac589d5ca16b261f0cb41910a9ced37e8
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Wed Nov 15 12:57:20 2017 +1100
+Date:   Wed Dec 13 13:06:07 2017 +1100
 
-    Move OTHER to bottom of sources, put flags before sources
+    Not sure flag renaming actually works...
 
-commit 445cc6724ef6bffc4efa861570f175a4b21ca784
+commit e58509765a4dfe168c0b22b5eb217e98419fe57f
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Nov 14 18:09:21 2017 +1100
+Date:   Wed Dec 13 12:22:09 2017 +1100
 
-    Add source filtering to UI Mounts panel
+    Don't Okay() the options in OnHide, handled by Blizz.
 
-commit a1eb574125ca421d91864a7630f319660c779298
+commit a28d38c35bb63738993e5bb369a717864b5a1406
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Nov 14 18:08:33 2017 +1100
+Date:   Mon Dec 11 22:36:45 2017 +1100
 
-    Add sourceType and extra Dump() prints to journal mounts.
+    Add a proper _Revert and use it
 
-commit 5066f7e70f9a5d5c12ede067cbbcad7b63b5c287
+commit 2121a872a845e5f97d01d055bc2ab9e6e38f2a09
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Wed Nov 8 16:31:36 2017 +1100
+Date:   Mon Dec 11 15:17:24 2017 +1100
 
-    Add Stop action.
+    Less developer notes.
 
-commit 5c40d63306536390422539a7ee09dc74df2b8c28
+commit 70c8f730a1d25a9fcaa9d4f02fad83383ad47369
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Wed Nov 8 16:17:05 2017 +1100
+Date:   Mon Dec 11 15:00:25 2017 +1100
 
-    Add [xmog:slot/appearance] condition
+    Revert button on macros too
 
-commit 48e5d09a80de22bed5aea3796251f3c154f18911
+commit bdce708003bf2d5a6cb77597381693fd8eb49937
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Nov 7 17:16:42 2017 +1100
+Date:   Mon Dec 11 10:21:53 2017 +1100
 
-    We could have leave vehicle do taxi shortcut, but I didn't.
+    Add REVERT buttons to macro pages.
+    Not sure I have _Refresh() vs _Cancel() correct in options controls.
 
-commit eb35a4880d947db3ccdc4716a0622d7f5adaa2db
+commit 0f89f017176abf86313d61a65c8edd4d5822d5c0
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Nov 7 17:09:15 2017 +1100
+Date:   Mon Dec 11 10:00:40 2017 +1100
 
-    Support Click actions in LM_SecureAction
+    Fix error with cancel which only revered the first control.
 
-commit 4864bacbeb7a4fcf9d2077c39b069276e4443939
+commit cf3572e1fb6db5d3a5180a659a887fe9b627f515
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Nov 7 16:46:25 2017 +1100
+Date:   Fri Dec 8 12:25:01 2017 +1100
 
-    Localize _ in [tracking:]
+    Abstract out the cancel so we can call it.
+
+commit 84c85697d903d297f57784abd817a76d85279cff
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Fri Dec 8 11:35:19 2017 +1100
+
+    Hook OnShow for Unlock/Revert button
+
+commit 2dd401a0c580c6155100824812f0105abf74a85e
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Fri Dec 8 09:58:45 2017 +1100
+
+    Less dangerous options defaulting.
+
+commit c67f6e2e25347c16b7b0d7225ed483f13451cac7
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Fri Dec 8 09:39:16 2017 +1100
+
+    Show ID of mount on right of line2.
+
+commit e8f0361b51a65bbf1a3f6b1f355c11d7cafa8c6e
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Fri Dec 8 09:25:54 2017 +1100
+
+    Add spell ID to tooltip on mounts frame
+
+commit e173c5d3e0c8a3b43c570450c2885488d8957fd1
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Fri Dec 8 09:25:41 2017 +1100
+
+    Fix flags for item summoned mounts.
+
+commit 7b2ead980dc51bdda8b878ec59f23d8eb0c83d98
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Wed Dec 6 09:34:15 2017 +1100
+
+    Add source to mounts panel tooltip for journal mounts
 

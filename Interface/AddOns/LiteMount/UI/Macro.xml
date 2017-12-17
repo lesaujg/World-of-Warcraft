@@ -70,6 +70,20 @@
                 </OnClick>
             </Scripts>
         </Button>
+        <Button parentKey="RevertButton" inherits="UIPanelButtonTemplate" text="REVERT">
+            <Size x="96" y="22" />
+            <Anchors>
+                <Anchor point="BOTTOMLEFT" x="24" y="16" />
+            </Anchors>
+            <Scripts>
+                <OnClick>
+                    local parent = self:GetParent()
+                    LiteMountOptionsPanel_Revert(parent)
+                    LiteMountOptionsPanel_Refresh(parent)
+                </OnClick>
+            </Scripts>
+        </Button>
+
     </Frames>
 
     <Layers>

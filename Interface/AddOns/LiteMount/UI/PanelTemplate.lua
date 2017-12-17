@@ -43,43 +43,35 @@ end
 function LiteMountOptionsPanel_Refresh(self)
     LM_Debug("Panel_Refresh " .. self:GetName())
     for _,control in ipairs(self.controls or {}) do
-        for i = 1, (control.ntabs or 1) do
-            if control.oldValues[i] == nil then
-                control.oldValues[i] = control:GetOption(i)
-            end
-        end
-        local cur = control.tab
-        control:SetControl(control.oldValues[cur], cur)
+        LiteMountOptionsControl_Refresh(control)
     end
 end
 
 function LiteMountOptionsPanel_Default(self)
     LM_Debug("Panel_Default " .. self:GetName())
     for _,control in ipairs(self.controls or {}) do
-        for i = 1, (control.ntabs or 1) do
-            if control.GetOptionDefault then
-                control:SetOption(control:GetOptionDefault(i), i)
-            end
-        end
+        LiteMountOptionsControl_Default(control)
     end
 end
 
 function LiteMountOptionsPanel_Okay(self)
     LM_Debug("Panel_Okay " .. self:GetName())
     for _,control in ipairs(self.controls or {}) do
-        wipe(control.oldValues)
+        LiteMountOptionsControl_Okay(control)
+    end
+end
+
+function LiteMountOptionsPanel_Revert(self)
+    LM_Debug("Panel_Revert " .. self:GetName())
+    for _,control in ipairs(self.controls or {}) do
+        LiteMountOptionsControl_Revert(control)
     end
 end
 
 function LiteMountOptionsPanel_Cancel(self)
     LM_Debug("Panel_Cancel " .. self:GetName())
     for _,control in ipairs(self.controls or {}) do
-        for i = 1, (control.ntabs or 1) do
-            if control.oldValues[i] ~= nil then
-                control:SetOption(control.oldValues[i], i)
-            end
-            wipe(control.oldValues)
-        end
+        LiteMountOptionsControl_Cancel(control)
     end
 end
 
@@ -98,7 +90,9 @@ end
 
 function LiteMountOptionsPanel_OnHide(self)
     LM_Debug("Panel_OnHide " .. self:GetName())
-    LiteMountOptionsPanel_Okay(self)
+    -- Seems like the InterfacePanel calls all the Okay or Cancel for
+    -- anything that's been opened when the appropriate button is clicked
+    -- LiteMountOptionsPanel_Okay(self)
 end
 
 function LiteMountOptionsPanel_OnLoad(self)
@@ -122,6 +116,40 @@ function LiteMountOptionsPanel_OnLoad(self)
     LiteMountOptionsPanel_AutoLocalize(self)
 
     InterfaceOptions_AddCategory(self)
+end
+
+function LiteMountOptionsControl_Refresh(self)
+    for i = 1, (self.ntabs or 1) do
+        if self.oldValues[i] == nil then
+            self.oldValues[i] = self:GetOption(i)
+        end
+    end
+    self:SetControl(self:GetOption(self.tab), self.tab)
+end
+
+function LiteMountOptionsControl_Okay(self)
+    wipe(self.oldValues)
+end
+
+function LiteMountOptionsControl_Revert(self)
+    for i = 1, (self.ntabs or 1) do
+        if self.oldValues[i] ~= nil then
+            self:SetOption(self.oldValues[i], i)
+        end
+    end
+end
+
+function LiteMountOptionsControl_Cancel(self)
+    LiteMountOptionsControl_Revert(self)
+    wipe(self.oldValues)
+end
+
+function LiteMountOptionsControl_Default(self)
+    for i = 1, (self.ntabs or 1) do
+        if self.GetOptionDefault then
+            self:SetOption(self:GetOptionDefault(i), i)
+        end
+    end
 end
 
 function LiteMountOptionsControl_OnChanged(self)

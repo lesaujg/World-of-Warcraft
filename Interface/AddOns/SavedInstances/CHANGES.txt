@@ -1,23 +1,24 @@
-------------------------------------------------------------------------
-r550 | oscarucb | 2016-12-21 05:22:24 -0600 (Wed, 21 Dec 2016) | 2 lines
-Changed paths:
-   M /trunk/SavedInstances.lua
+tag 1f676e575e1cb771f04ba80c10f1cf8d182104a9 v7.0.12
+Author:	Benjamin Staneck <staneck@gmail.com>
+Date:	Wed Dec 6 23:48:32 2017 +0100
 
-display tweak to last
+commit 58546de9aebc9d9bbb1d9212c776c28a0b4eefd8
+Author: chancedj <30790056+chancedj@users.noreply.github.com>
+Date:   Wed Dec 6 17:35:07 2017 -0500
 
-------------------------------------------------------------------------
-r549 | oscarucb | 2016-12-20 23:52:40 -0600 (Tue, 20 Dec 2016) | 2 lines
-Changed paths:
-   M /trunk/SavedInstances.lua
-
-add Demon Hunter: Twisting Nether (under daily quests)
-
-------------------------------------------------------------------------
-r548 | oscarucb | 2016-12-20 23:13:56 -0600 (Tue, 20 Dec 2016) | 2 lines
-Changed paths:
-   M /trunk/SavedInstances.lua
-
-ticket 248: probable fix to miscounted seal from class hall work order
-
-------------------------------------------------------------------------
+    update parentID from 1640 to 1610
+    
+    the instanceID is incorrect for the parent.  gotten using the following code:
+    
+        --[[
+        local lfrCount = GetNumRFDungeons();
+        for lfrNdx = 1, lfrCount do
+            local instanceID, _, _, _, _, _, _, _, _, _, _, _, difficulty, _, _, _
+                , _, _, _, instanceName, _ = GetRFDungeonInfo( lfrNdx );
+    
+            if( string.find( instanceName, "Antorus" ) ) then
+                print( "LRFName: ", instanceName, " instanceID: " , instanceID );
+            end;
+        end -- for lfrNdx = 1, lfrCount
+        --]]
 
