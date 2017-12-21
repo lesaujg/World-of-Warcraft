@@ -13,6 +13,13 @@ X: 0
 Y: 0
 W: 384
 H: 260
+Frame: TSMCraftingTradeSkillFrame
+FrameLevel: 0
+Anchor: TOPLEFT
+X: 326
+Y: -81
+W: 410
+H: 517
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: RIGHT

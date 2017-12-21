@@ -4,21 +4,21 @@ IceCoreDB = {
 		["LibDualSpec-1.0"] = {
 		},
 	},
-	["global"] = {
-		["lastRunVersion"] = 20170901021036,
-	},
 	["profileKeys"] = {
 		["Galinar - Sisters of Elune"] = "Default",
 		["Herbinator - Sisters of Elune"] = "Default",
 		["Orig - Sisters of Elune"] = "Default",
 		["Mandelbrot - Sisters of Elune"] = "Default",
 		["Leanara - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-		["Belrath - Sisters of Elune"] = "Default",
-		["Torinar - Sisters of Elune"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
 		["Uldaris - Sisters of Elune"] = "Default",
+		["Belrath - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Torinar - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+	},
+	["global"] = {
+		["lastRunVersion"] = 20170901021036,
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -38,7 +38,7 @@ IceCoreDB = {
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
 				},
-				["PlayerAbsorb"] = {
+				["PlayerMana"] = {
 					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
@@ -48,12 +48,17 @@ IceCoreDB = {
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
 				},
+				["PlayerAlternatePower"] = {
+					["myTagVersion"] = 3,
+					["updatedInverseExpand"] = true,
+					["updatedReverseInverse"] = true,
+				},
 				["TargetInfo"] = {
 					["myTagVersion"] = 3,
 					["debuffSizeFixup"] = true,
 					["updateAurasIntoTable"] = true,
 				},
-				["TargetAbsorb"] = {
+				["PlayerAltMana"] = {
 					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
@@ -83,17 +88,12 @@ IceCoreDB = {
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
 				},
-				["PlayerAlternatePower"] = {
-					["myTagVersion"] = 3,
-					["updatedInverseExpand"] = true,
-					["updatedReverseInverse"] = true,
-				},
-				["PlayerAltMana"] = {
+				["TargetAbsorb"] = {
 					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,
 				},
-				["PlayerMana"] = {
+				["PlayerAbsorb"] = {
 					["updatedReverseInverse"] = true,
 					["myTagVersion"] = 3,
 					["updatedInverseExpand"] = true,

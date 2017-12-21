@@ -4,7 +4,7 @@ Informant: disabled
 +Wowhead_Looter: disabled
 SlideBar: disabled
 _NPCScan: enabled
-_NPCScan.Overlay: enabled
+_NPCScan.Overlay: disabled
 AckisRecipeList: enabled
 AckisRecipeList_Alchemy: enabled
 AckisRecipeList_Blacksmithing: enabled
@@ -218,3 +218,4 @@ TomeOfTeleportation: enabled
 WeakAurasTemplates: enabled
 DBM-TombofSargeras: enabled
 ActionBarProfiles: disabled
+IceHUD: disabled

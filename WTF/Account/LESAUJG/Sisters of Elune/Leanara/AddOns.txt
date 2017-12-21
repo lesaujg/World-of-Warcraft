@@ -1,6 +1,6 @@
 Factionizer: disabled
 !KalielsTracker: disabled
-WeakAuras: enabled
+WeakAuras: disabled
 WorldQuestTracker: disabled
 _NPCScan.Overlay: disabled
 Details: disabled
@@ -32,3 +32,4 @@ TradeSkillMaster_CoolDowns: disabled
 AddOnSkins: enabled
 TradeSkillMaster_Destroying: disabled
 ActionBarProfiles: disabled
+IceHUD: disabled
