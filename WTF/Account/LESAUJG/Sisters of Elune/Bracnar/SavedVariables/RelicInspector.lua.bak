@@ -7,8 +7,8 @@ RelicInspectorCharDB = {
 		["Bracnar - Sisters of Elune"] = {
 			["artifactCache"] = {
 				[128861] = {
-					["timestamp"] = 65101.973,
-					["level"] = 60,
+					["timestamp"] = 358095.156,
+					["level"] = 68,
 					["crucibled"] = false,
 				},
 			},
