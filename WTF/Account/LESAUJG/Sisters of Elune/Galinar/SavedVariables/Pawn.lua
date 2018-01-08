@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0214,
+	["LastVersion"] = 2.0217,
 	["LastPlayerFullName"] = "Galinar-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
@@ -16,6 +16,9 @@ PawnOptions = {
 					["ItemLevel"] = 24,
 					["Type"] = "Fire",
 				}, -- [2]
+				{
+					["Type"] = "Holy",
+				}, -- [3]
 			},
 			["Name"] = "Ashbringer",
 		},

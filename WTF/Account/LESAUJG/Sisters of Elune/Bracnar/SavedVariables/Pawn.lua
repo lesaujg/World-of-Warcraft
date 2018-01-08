@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0214,
+	["LastVersion"] = 2.0217,
 	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
 	["AutoSelectScales"] = false,
 	["UpgradeTracking"] = false,
@@ -12,11 +12,11 @@ PawnOptions = {
 					["Type"] = "Wind",
 				}, -- [1]
 				{
-					["ItemLevel"] = 58,
+					["ItemLevel"] = 64,
 					["Type"] = "Iron",
 				}, -- [2]
 				{
-					["ItemLevel"] = 49,
+					["ItemLevel"] = 61,
 					["Type"] = "Blood",
 				}, -- [3]
 			},
@@ -25,15 +25,15 @@ PawnOptions = {
 		[128861] = {
 			["Relics"] = {
 				{
-					["ItemLevel"] = 55,
+					["ItemLevel"] = 61,
 					["Type"] = "Wind",
 				}, -- [1]
 				{
-					["ItemLevel"] = 58,
+					["ItemLevel"] = 62,
 					["Type"] = "Arcane",
 				}, -- [2]
 				{
-					["ItemLevel"] = 58,
+					["ItemLevel"] = 62,
 					["Type"] = "Iron",
 				}, -- [3]
 			},
@@ -42,7 +42,7 @@ PawnOptions = {
 		[128826] = {
 			["Relics"] = {
 				{
-					["ItemLevel"] = 52,
+					["ItemLevel"] = 62,
 					["Type"] = "Wind",
 				}, -- [1]
 				{

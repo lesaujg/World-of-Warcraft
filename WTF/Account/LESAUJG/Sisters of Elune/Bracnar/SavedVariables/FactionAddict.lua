@@ -15,7 +15,7 @@ FactionAddictConfig = {
 	["CB_OPTION_HIDEINACTIVE_V2"] = true,
 	["CB_CATEGORY_WOTLK"] = true,
 	["CB_STANDING_NEUTRAL0"] = true,
-	["CB_OPTION_AUTOBAR"] = false,
+	["CB_OPTION_AUTOBAR"] = true,
 	["CB_FILTER_SHOW_HO"] = true,
 	["CB_CATEGORY_WOD"] = true,
 	["CB_CATEGORY_LG"] = true,
@@ -25,91 +25,124 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Thursday 12/21",
-		["rows"] = 2,
+		["date"] = "Sunday 1/7",
+		["rows"] = 1,
 	}, -- [1]
 	{
-		["date"] = "Wednesday 12/20",
-		["rows"] = 6,
+		["date"] = "Saturday 1/6",
+		["rows"] = 4,
 	}, -- [2]
 	{
-		["date"] = "Monday 12/18",
-		["rows"] = 6,
+		["date"] = "Friday 1/5",
+		["rows"] = 2,
 	}, -- [3]
 	{
-		["date"] = "Sunday 12/17",
-		["rows"] = 6,
+		["date"] = "Thursday 1/4",
+		["rows"] = 2,
 	}, -- [4]
 	{
-		["date"] = "Saturday 12/16",
-		["rows"] = 2,
+		["date"] = "Wednesday 1/3",
+		["rows"] = 6,
 	}, -- [5]
 	{
-		["date"] = "Monday 8/21",
-		["rows"] = 3,
+		["date"] = "Tuesday 1/2",
+		["rows"] = 6,
 	}, -- [6]
 	{
-		["date"] = "Thursday 8/17",
+		["date"] = "Thursday 12/21",
 		["rows"] = 2,
 	}, -- [7]
 	{
-		["date"] = "Saturday 8/12",
+		["date"] = "Wednesday 12/20",
 		["rows"] = 6,
 	}, -- [8]
 	{
-		["date"] = "Friday 7/28",
-		["rows"] = 3,
+		["date"] = "Monday 12/18",
+		["rows"] = 6,
 	}, -- [9]
 	{
-		["date"] = "Sunday 7/23",
-		["rows"] = 3,
+		["date"] = "Sunday 12/17",
+		["rows"] = 6,
 	}, -- [10]
 	{
-		["date"] = "Saturday 7/22",
+		["date"] = "Saturday 12/16",
 		["rows"] = 2,
 	}, -- [11]
 	{
-		["date"] = "Friday 7/21",
+		["date"] = "Monday 8/21",
 		["rows"] = 3,
 	}, -- [12]
 	{
-		["date"] = "Thursday 7/20",
+		["date"] = "Thursday 8/17",
 		["rows"] = 2,
 	}, -- [13]
 	{
-		["date"] = "Wednesday 7/19",
+		["date"] = "Saturday 8/12",
 		["rows"] = 6,
 	}, -- [14]
 	{
-		["date"] = "Tuesday 7/18",
-		["rows"] = 1,
+		["date"] = "Friday 7/28",
+		["rows"] = 3,
 	}, -- [15]
 	{
-		["date"] = "Sunday 7/16",
-		["rows"] = 4,
+		["date"] = "Sunday 7/23",
+		["rows"] = 3,
 	}, -- [16]
 	{
-		["date"] = "Sunday 7/9",
-		["rows"] = 1,
+		["date"] = "Saturday 7/22",
+		["rows"] = 2,
 	}, -- [17]
 	{
-		["date"] = "Saturday 7/8",
+		["date"] = "Friday 7/21",
 		["rows"] = 3,
 	}, -- [18]
 	{
-		["date"] = "Friday 7/7",
-		["rows"] = 3,
+		["date"] = "Thursday 7/20",
+		["rows"] = 2,
 	}, -- [19]
 	{
-		["date"] = "Thursday 7/6",
-		["rows"] = 3,
+		["date"] = "Wednesday 7/19",
+		["rows"] = 6,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
 	{
+		["Army of the Light"] = 875,
+	}, -- [1]
+	{
+		["The Wardens"] = 75,
+		["Valarjar"] = 1975,
+		["Army of the Light"] = 875,
+		["Argussian Reach"] = 1025,
+	}, -- [2]
+	{
+		["Army of the Light"] = 1125,
+		["Argussian Reach"] = 2625,
+	}, -- [3]
+	{
+		["Army of the Light"] = 1675,
+		["Argussian Reach"] = 1900,
+	}, -- [4]
+	{
+		["Armies of Legionfall"] = 375,
+		["Argussian Reach"] = 1775,
+		["The Wardens"] = 600,
+		["Court of Farondis"] = 2150,
+		["Army of the Light"] = 4235,
+		["Highmountain Tribe"] = 500,
+	}, -- [5]
+	{
+		["The Nightfallen"] = 2000,
+		["Armies of Legionfall"] = 1000,
+		["Valarjar"] = 2325,
+		["Highmountain Tribe"] = 2050,
+		["The Wardens"] = 1075,
+		["Dreamweavers"] = 1500,
+	}, -- [6]
+	{
 		["The Wardens"] = 113,
 		["Highmountain Tribe"] = 2713,
-	}, -- [1]
+	}, -- [7]
 	{
 		["The Nightfallen"] = 338,
 		["Armies of Legionfall"] = 750,
@@ -117,7 +150,7 @@ FactionAddictLogEntries = {
 		["The Wardens"] = 750,
 		["Court of Farondis"] = 3975,
 		["Army of the Light"] = 700,
-	}, -- [2]
+	}, -- [8]
 	{
 		["Armies of Legionfall"] = 500,
 		["Valarjar"] = 2000,
@@ -125,7 +158,7 @@ FactionAddictLogEntries = {
 		["The Wardens"] = 500,
 		["Army of the Light"] = 2300,
 		["Dreamweavers"] = 1500,
-	}, -- [3]
+	}, -- [9]
 	{
 		["Armies of Legionfall"] = 1800,
 		["Valarjar"] = 2150,
@@ -133,20 +166,20 @@ FactionAddictLogEntries = {
 		["The Wardens"] = 575,
 		["Court of Farondis"] = 1975,
 		["Army of the Light"] = 550,
-	}, -- [4]
+	}, -- [10]
 	{
 		["Armies of Legionfall"] = 1500,
 		["Highmountain Tribe"] = 1975,
-	}, -- [5]
+	}, -- [11]
 	{
 		["Armies of Legionfall"] = 1000,
 		["Court of Farondis"] = 250,
 		["Dreamweavers"] = 1500,
-	}, -- [6]
+	}, -- [12]
 	{
 		["The Wardens"] = 1500,
 		["Court of Farondis"] = 500,
-	}, -- [7]
+	}, -- [13]
 	{
 		["The Nightfallen"] = 500,
 		["Armies of Legionfall"] = 2500,
@@ -154,30 +187,30 @@ FactionAddictLogEntries = {
 		["Highmountain Tribe"] = 2000,
 		["The Wardens"] = 250,
 		["Court of Farondis"] = 1500,
-	}, -- [8]
+	}, -- [14]
 	{
 		["The Nightfallen"] = 750,
 		["Court of Farondis"] = 2000,
 		["Valarjar"] = 500,
-	}, -- [9]
+	}, -- [15]
 	{
 		["The Nightfallen"] = 500,
 		["Court of Farondis"] = 2000,
 		["Armies of Legionfall"] = 1000,
-	}, -- [10]
+	}, -- [16]
 	{
 		["Dreamweavers"] = 1500,
 		["Armies of Legionfall"] = 500,
-	}, -- [11]
+	}, -- [17]
 	{
 		["The Nightfallen"] = 500,
 		["Armies of Legionfall"] = 1250,
 		["Court of Farondis"] = 250,
-	}, -- [12]
+	}, -- [18]
 	{
 		["The Wardens"] = 450,
 		["Dreamweavers"] = 2025,
-	}, -- [13]
+	}, -- [19]
 	{
 		["The Nightfallen"] = 750,
 		["Armies of Legionfall"] = 900,
@@ -185,33 +218,6 @@ FactionAddictLogEntries = {
 		["Highmountain Tribe"] = 250,
 		["Court of Farondis"] = 2225,
 		["Dreamweavers"] = 500,
-	}, -- [14]
-	{
-		["Armies of Legionfall"] = 575,
-	}, -- [15]
-	{
-		["The Wardens"] = 1975,
-		["Court of Farondis"] = 400,
-		["Armies of Legionfall"] = 1500,
-		["Dreamweavers"] = 1975,
-	}, -- [16]
-	{
-		["Armies of Legionfall"] = 900,
-	}, -- [17]
-	{
-		["Armies of Legionfall"] = 500,
-		["Highmountain Tribe"] = 1500,
-		["Dreamweavers"] = 2000,
-	}, -- [18]
-	{
-		["The Wardens"] = 2825,
-		["Armies of Legionfall"] = 750,
-		["Court of Farondis"] = 3825,
-	}, -- [19]
-	{
-		["The Nightfallen"] = 1450,
-		["Armies of Legionfall"] = 1000,
-		["Valarjar"] = 1500,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
@@ -341,12 +347,12 @@ FactionAddictConfigIsInactive = {
 	[1278] = false,
 	[1690] = false,
 	[1388] = false,
-	[1280] = false,
+	[2045] = false,
 	[1279] = false,
 	[69] = false,
-	[2045] = false,
-	[1216] = false,
 	[81] = false,
+	[1216] = false,
+	[1280] = false,
 	[2170] = false,
 	[1345] = false,
 	[93] = false,

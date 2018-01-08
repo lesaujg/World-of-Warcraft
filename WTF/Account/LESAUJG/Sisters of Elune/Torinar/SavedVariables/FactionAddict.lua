@@ -25,45 +25,49 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Monday 4/10",
+		["date"] = "Sunday 1/7",
 		["rows"] = 1,
 	}, -- [1]
+	{
+		["date"] = "Monday 4/10",
+		["rows"] = 1,
+	}, -- [2]
 	{
 		["date"] = "Thursday 3/30",
 		["rows"] = 1,
-	}, -- [2]
+	}, -- [3]
 	{
 		["date"] = "Thursday 3/23",
 		["rows"] = 1,
-	}, -- [3]
+	}, -- [4]
 	{
 		["date"] = "Friday 2/24",
 		["rows"] = 1,
-	}, -- [4]
+	}, -- [5]
 	{
 		["date"] = "Wednesday 2/8",
 		["rows"] = 1,
-	}, -- [5]
+	}, -- [6]
 	{
 		["date"] = "Friday 2/3",
 		["rows"] = 1,
-	}, -- [6]
+	}, -- [7]
 	{
 		["date"] = "Friday 1/27",
 		["rows"] = 1,
-	}, -- [7]
+	}, -- [8]
 	{
 		["date"] = "Thursday 1/19",
 		["rows"] = 1,
-	}, -- [8]
+	}, -- [9]
 	{
 		["date"] = "Saturday 1/14",
 		["rows"] = 1,
-	}, -- [9]
+	}, -- [10]
 }
 FactionAddictLogEntries = {
 	{
-		["The Ashen Verdict"] = 3000,
+		["Cult of Malicor"] = 250,
 	}, -- [1]
 	{
 		["The Ashen Verdict"] = 3000,
@@ -89,6 +93,9 @@ FactionAddictLogEntries = {
 	{
 		["The Ashen Verdict"] = 3000,
 	}, -- [9]
+	{
+		["The Ashen Verdict"] = 3000,
+	}, -- [10]
 }
 FactionAddictConfigIsInactive = {
 	[1737] = false,
@@ -207,7 +214,7 @@ FactionAddictConfigIsInactive = {
 	[576] = false,
 	[1710] = false,
 	[1276] = false,
-	[1085] = false,
+	[1850] = false,
 	[2165] = false,
 	[369] = false,
 	[1277] = false,
@@ -217,21 +224,21 @@ FactionAddictConfigIsInactive = {
 	[1278] = false,
 	[1711] = false,
 	[1388] = false,
-	[2045] = false,
+	[1280] = false,
 	[1279] = false,
 	[69] = false,
-	[81] = false,
+	[2045] = false,
 	[1216] = false,
-	[1280] = false,
+	[81] = false,
 	[2170] = false,
 	[1090] = false,
 	[93] = false,
 	[1281] = false,
 	[1345] = false,
 	[1094] = false,
-	[930] = false,
-	[1282] = false,
 	[1091] = false,
+	[1282] = false,
+	[930] = false,
 	[270] = false,
 	[1984] = false,
 	[1283] = false,
@@ -250,7 +257,7 @@ FactionAddictConfigIsInactive = {
 	[932] = false,
 	[1690] = false,
 	[1733] = false,
-	[1850] = false,
+	[1085] = false,
 	[1351] = false,
 	[1682] = false,
 	[1989] = false,

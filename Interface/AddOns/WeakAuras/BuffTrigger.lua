@@ -293,7 +293,7 @@ function WeakAuras.SetAuraVisibility(id, triggernum, cloneId, showOn, unitExists
   local show;
   if (not UnitExists(unit)) then
     show = unitExists;
-  elseif (showOn == "showAlways") then
+  elseif (showOn == "showActiveOrMissing") then
     show = true;
   elseif(showOn == "showOnMissing") then
     show = not active;
@@ -1480,9 +1480,11 @@ function BuffTrigger.Modernize(data)
       trigger = data.additional_triggers[triggernum].trigger;
     end
 
-    if (trigger and trigger.type == "aura" and trigger.showOn == nil) then
-      trigger.showOn = trigger.inverse and "showOnMissing" or "showOnActive";
-      trigger.inverse = nil;
+    if (trigger and trigger.type == "aura") then
+      if (trigger.showOn == nil or trigger.showOn == "showOnCooldown" or trigger.showOn == "showOnReady" or trigger.showOn == "showAlways") then
+        trigger.showOn = trigger.inverse and "showOnMissing" or "showOnActive";
+        trigger.inverse = nil;
+      end
     end
   end
 end

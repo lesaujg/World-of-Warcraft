@@ -285,17 +285,17 @@ TukuiData = {
 					false, -- [1]
 					0, -- [2]
 				},
-				["Currency"] = {
-					false, -- [1]
-					0, -- [2]
-				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
-				},
 				["Memory"] = {
 					true, -- [1]
 					5, -- [2]
+				},
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Currency"] = {
+					false, -- [1]
+					0, -- [2]
 				},
 				["Time"] = {
 					true, -- [1]
@@ -317,9 +317,9 @@ TukuiData = {
 					false, -- [1]
 					0, -- [2]
 				},
-				["Friends"] = {
+				["FPS & MS"] = {
 					true, -- [1]
-					3, -- [2]
+					4, -- [2]
 				},
 			},
 		},
@@ -1687,18 +1687,18 @@ TukuiData = {
 	},
 	["Gold"] = {
 		["Sisters of Elune"] = {
-			["Bracnar"] = 5448064974,
-			["Ghiaccioli"] = 557311314,
+			["Bracnar"] = 1675057085,
+			["Ghiaccioli"] = 557311194,
 			["Mandelbrot"] = 1695245,
-			["Torinar"] = 121797056,
+			["Torinar"] = 121419692,
 			["Orig"] = 124595889,
-			["Herbinator"] = 5439835,
-			["Clothgar"] = 50863175990,
-			["Galinar"] = 252189978,
+			["Herbinator"] = 5438995,
+			["Clothgar"] = 50059511380,
+			["Galinar"] = 256652167,
 			["Belrath"] = 101901125,
 			["Sanjuri"] = 11460,
-			["Leanara"] = 124499720,
-			["Uldaris"] = 1514740469,
+			["Leanara"] = 128526748,
+			["Uldaris"] = 676902629,
 		},
 		["Turalyon"] = {
 			["Guldahka"] = 2000,
