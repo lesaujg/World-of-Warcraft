@@ -4,7 +4,6 @@ PawnOptions = {
 	["LastPlayerFullName"] = "Galinar-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
-	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[120978] = {
 			["Relics"] = {
@@ -13,7 +12,7 @@ PawnOptions = {
 					["Type"] = "Holy",
 				}, -- [1]
 				{
-					["ItemLevel"] = 24,
+					["ItemLevel"] = 58,
 					["Type"] = "Fire",
 				}, -- [2]
 				{
@@ -32,6 +31,9 @@ PawnOptions = {
 					["ItemLevel"] = 58,
 					["Type"] = "Iron",
 				}, -- [2]
+				{
+					["Type"] = "Arcane",
+				}, -- [3]
 			},
 			["Name"] = "Truthguard",
 		},
@@ -50,6 +52,7 @@ PawnOptions = {
 			["Name"] = "The Silver Hand",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "PALADIN",

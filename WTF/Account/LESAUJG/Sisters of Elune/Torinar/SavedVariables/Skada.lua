@@ -1,7 +1,5 @@
 
 SkadaPerCharDB = {
-	["sets"] = {
-	},
 	["total"] = {
 		["healingabsorbed"] = 0,
 		["auras"] = {
@@ -10,52 +8,51 @@ SkadaPerCharDB = {
 		["time"] = 0,
 		["interrupts"] = 0,
 		["ffdamagedone"] = 0,
-		["shielding"] = 0,
+		["mobtaken"] = 0,
 		["damage"] = 0,
 		["players"] = {
 			{
 				["last"] = 1515271187,
-				["ccbreaks"] = 0,
-				["healingabsorbed"] = 0,
-				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
+				["healingabsorbed"] = 0,
+				["ffdamagedone"] = 0,
+				["class"] = "WARRIOR",
 				["damaged"] = {
 				},
 				["dispells"] = 0,
-				["auras"] = {
-				},
-				["ffdamagedone"] = 0,
+				["ccbreaks"] = 0,
+				["role"] = "NONE",
 				["time"] = 0,
 				["interrupts"] = 0,
-				["alertDamage"] = 117330,
-				["power"] = {
+				["overhealing"] = 0,
+				["deathlog"] = {
 				},
-				["name"] = "Torinar",
+				["ffdamagedonetargets"] = {
+				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["overhealing"] = 0,
+				["maxhp"] = 474060,
 				["damagetaken"] = 0,
-				["deathlog"] = {
+				["power"] = {
 				},
 				["id"] = "Player-1169-07C70E46",
-				["maxhp"] = 474060,
-				["healed"] = {
-				},
+				["first"] = 1515271187,
+				["healing"] = 0,
 				["damagetakenspells"] = {
 				},
-				["healing"] = 0,
-				["first"] = 1515271187,
-				["ffdamagedonetargets"] = {
+				["healed"] = {
 				},
-				["alertCount"] = 1,
 				["shielding"] = 0,
+				["name"] = "Torinar",
+				["alertCount"] = 1,
+				["alertDamage"] = 117330,
 				["healingspells"] = {
 				},
 				["alert"] = {
 					["Fail"] = {
-						["alertCount"] = 1,
+						["alertDamage"] = 117330,
 						["spell"] = {
 							["Cannon Barrage"] = {
 								["min"] = 117330,
@@ -67,28 +64,31 @@ SkadaPerCharDB = {
 							},
 						},
 						["name"] = "Fail",
-						["alertDamage"] = 117330,
+						["alertCount"] = 1,
 					},
 				},
-				["class"] = "WARRIOR",
+				["auras"] = {
+				},
 			}, -- [1]
 		},
 		["deaths"] = 0,
 		["mobs"] = {
 		},
-		["mobtaken"] = 0,
+		["shielding"] = 0,
 		["overhealing"] = 0,
 		["healing"] = 0,
-		["damagetaken"] = 0,
+		["dispells"] = 0,
 		["alertDamage"] = 117330,
 		["starttime"] = 1513819173,
 		["power"] = {
 		},
 		["name"] = "Total",
 		["alertCount"] = 1,
-		["dispells"] = 0,
+		["damagetaken"] = 0,
 		["mobhdone"] = 0,
 		["last_action"] = 1513819173,
 		["mobdone"] = 0,
+	},
+	["sets"] = {
 	},
 }
