@@ -36,32 +36,32 @@ TradeSkillMaster_ShoppingDB = {
 		["auction"] = true,
 	},
 	["g@ @sniperVendorPrice"] = true,
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1515499774,
+			["lastSearch"] = 1515809557,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [1]
 		{
+			["lastSearch"] = 1515734121,
+			["name"] = "Flask of the Seventh Demon",
+			["filter"] = "Flask of the Seventh Demon",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [2]
+		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1515290313,
 			["name"] = "empyrium",
 			["filter"] = "empyrium",
-		}, -- [2]
+		}, -- [3]
 		{
 			["lastSearch"] = 1515111702,
 			["name"] = "potion of Prolonged Power",
 			["filter"] = "potion of Prolonged Power",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [3]
-		{
-			["lastSearch"] = 1515111644,
-			["name"] = "Flask of the Seventh Demon",
-			["filter"] = "Flask of the Seventh Demon",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [4]
@@ -695,7 +695,7 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "felslate",
 		}, -- [108]
 	},
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @maxDeSearchLvl"] = 735,
 	["g@ @minDeSearchLvl"] = 1,

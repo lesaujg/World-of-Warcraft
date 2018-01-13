@@ -33,6 +33,8 @@ VER 3 000000000000009E "Traps" "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000000009F "TSMMacro" "Achievement_Faction_GoldenLotus"
 /click TSMCraftNextButton
+/use Obliterum Ash
+/click EasyObliterate
 END
 VER 3 0000000000000094 "TSMPostCancel" "133784"
 /click TSMAuctioningCancelButton

@@ -25,57 +25,69 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Sunday 1/7",
+		["date"] = "Saturday 1/13",
 		["rows"] = 3,
 	}, -- [1]
 	{
-		["date"] = "Monday 4/10",
-		["rows"] = 1,
+		["date"] = "Thursday 1/11",
+		["rows"] = 3,
 	}, -- [2]
 	{
-		["date"] = "Thursday 3/30",
-		["rows"] = 1,
+		["date"] = "Sunday 1/7",
+		["rows"] = 3,
 	}, -- [3]
 	{
-		["date"] = "Thursday 3/23",
+		["date"] = "Monday 4/10",
 		["rows"] = 1,
 	}, -- [4]
 	{
-		["date"] = "Friday 2/24",
+		["date"] = "Thursday 3/30",
 		["rows"] = 1,
 	}, -- [5]
 	{
-		["date"] = "Wednesday 2/8",
+		["date"] = "Thursday 3/23",
 		["rows"] = 1,
 	}, -- [6]
 	{
-		["date"] = "Friday 2/3",
+		["date"] = "Friday 2/24",
 		["rows"] = 1,
 	}, -- [7]
 	{
-		["date"] = "Friday 1/27",
+		["date"] = "Wednesday 2/8",
 		["rows"] = 1,
 	}, -- [8]
 	{
-		["date"] = "Thursday 1/19",
+		["date"] = "Friday 2/3",
 		["rows"] = 1,
 	}, -- [9]
 	{
-		["date"] = "Saturday 1/14",
+		["date"] = "Friday 1/27",
 		["rows"] = 1,
 	}, -- [10]
+	{
+		["date"] = "Thursday 1/19",
+		["rows"] = 1,
+	}, -- [11]
+	{
+		["date"] = "Saturday 1/14",
+		["rows"] = 1,
+	}, -- [12]
 }
 FactionAddictLogEntries = {
+	{
+		["Cult of Malicor"] = 750,
+		["Court of Farondis"] = 525,
+		["The Wardens"] = 150,
+	}, -- [1]
+	{
+		["The Wardens"] = 450,
+		["Cult of Malicor"] = 625,
+		["Highmountain Tribe"] = 600,
+	}, -- [2]
 	{
 		["Cult of Malicor"] = 1000,
 		["The Wardens"] = 300,
 		["Dreamweavers"] = 375,
-	}, -- [1]
-	{
-		["The Ashen Verdict"] = 3000,
-	}, -- [2]
-	{
-		["The Ashen Verdict"] = 3000,
 	}, -- [3]
 	{
 		["The Ashen Verdict"] = 3000,
@@ -98,6 +110,12 @@ FactionAddictLogEntries = {
 	{
 		["The Ashen Verdict"] = 3000,
 	}, -- [10]
+	{
+		["The Ashen Verdict"] = 3000,
+	}, -- [11]
+	{
+		["The Ashen Verdict"] = 3000,
+	}, -- [12]
 }
 FactionAddictConfigIsInactive = {
 	[1737] = false,
@@ -214,9 +232,9 @@ FactionAddictConfigIsInactive = {
 	[1275] = false,
 	[1849] = false,
 	[576] = false,
-	[1850] = false,
-	[1276] = false,
 	[1085] = false,
+	[1276] = false,
+	[1850] = false,
 	[609] = false,
 	[369] = false,
 	[1277] = false,
@@ -226,12 +244,12 @@ FactionAddictConfigIsInactive = {
 	[1278] = false,
 	[1690] = false,
 	[1388] = false,
-	[1280] = false,
+	[81] = false,
 	[1279] = false,
 	[69] = false,
-	[2045] = false,
+	[1280] = false,
 	[1216] = false,
-	[81] = false,
+	[2045] = false,
 	[2170] = false,
 	[1345] = false,
 	[93] = false,
@@ -240,7 +258,7 @@ FactionAddictConfigIsInactive = {
 	[1859] = false,
 	[1133] = false,
 	[1282] = false,
-	[930] = false,
+	[1091] = false,
 	[270] = false,
 	[1984] = false,
 	[1283] = false,
@@ -251,7 +269,7 @@ FactionAddictConfigIsInactive = {
 	[1174] = false,
 	[1714] = false,
 	[1731] = false,
-	[1091] = false,
+	[930] = false,
 	[1094] = false,
 	[1158] = false,
 	[1732] = false,

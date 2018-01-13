@@ -8,8 +8,8 @@ RelicInspectorCharDB = {
 			["artifactCache"] = {
 				[128858] = {
 					["timestamp"] = 36810.888,
-					["crucibled"] = false,
 					["level"] = 57,
+					["crucibled"] = false,
 				},
 			},
 		},

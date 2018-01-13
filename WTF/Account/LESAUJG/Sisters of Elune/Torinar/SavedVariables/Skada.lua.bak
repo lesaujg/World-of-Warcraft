@@ -13,65 +13,6 @@ SkadaPerCharDB = {
 		["shielding"] = 0,
 		["damage"] = 0,
 		["players"] = {
-			{
-				["last"] = 1515271187,
-				["role"] = "NONE",
-				["healingabsorbed"] = 0,
-				["dispells"] = 0,
-				["class"] = "WARRIOR",
-				["damaged"] = {
-				},
-				["auras"] = {
-				},
-				["ffdamagedone"] = 0,
-				["healingspells"] = {
-				},
-				["time"] = 0,
-				["interrupts"] = 0,
-				["alertDamage"] = 117330,
-				["power"] = {
-				},
-				["name"] = "Torinar",
-				["damage"] = 0,
-				["damagespells"] = {
-				},
-				["deathlog"] = {
-				},
-				["damagetaken"] = 0,
-				["shielding"] = 0,
-				["id"] = "Player-1169-07C70E46",
-				["first"] = 1515271187,
-				["healed"] = {
-				},
-				["damagetakenspells"] = {
-				},
-				["healing"] = 0,
-				["maxhp"] = 474060,
-				["ffdamagedonetargets"] = {
-				},
-				["alertCount"] = 1,
-				["overhealing"] = 0,
-				["ccbreaks"] = 0,
-				["alert"] = {
-					["Fail"] = {
-						["alertCount"] = 1,
-						["spell"] = {
-							["Cannon Barrage"] = {
-								["min"] = 117330,
-								["alertCount"] = 1,
-								["id"] = 121600,
-								["alertID"] = "Fail",
-								["max"] = 117330,
-								["alertDamage"] = 117330,
-							},
-						},
-						["name"] = "Fail",
-						["alertDamage"] = 117330,
-					},
-				},
-				["ffdamagedonespells"] = {
-				},
-			}, -- [1]
 		},
 		["deaths"] = 0,
 		["mobs"] = {
@@ -80,15 +21,15 @@ SkadaPerCharDB = {
 		["overhealing"] = 0,
 		["healing"] = 0,
 		["damagetaken"] = 0,
-		["alertDamage"] = 117330,
-		["starttime"] = 1513819173,
+		["alertDamage"] = 0,
+		["starttime"] = 1515725768,
 		["power"] = {
 		},
 		["name"] = "Total",
-		["alertCount"] = 1,
+		["alertCount"] = 0,
 		["dispells"] = 0,
 		["mobhdone"] = 0,
-		["last_action"] = 1513819173,
+		["last_action"] = 1515725768,
 		["mobdone"] = 0,
 	},
 }

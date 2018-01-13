@@ -25,79 +25,90 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
+		["date"] = "Saturday 1/13",
+		["rows"] = 3,
+	}, -- [1]
+	{
+		["date"] = "Thursday 1/11",
+		["rows"] = 2,
+	}, -- [2]
+	{
 		["date"] = "Monday 1/8",
 		["rows"] = 4,
-	}, -- [1]
+	}, -- [3]
 	{
 		["date"] = "Sunday 1/7",
 		["rows"] = 3,
-	}, -- [2]
+	}, -- [4]
 	{
 		["date"] = "Saturday 1/6",
 		["rows"] = 3,
-	}, -- [3]
+	}, -- [5]
 	{
 		["date"] = "Monday 4/10",
 		["rows"] = 1,
-	}, -- [4]
+	}, -- [6]
 	{
 		["date"] = "Thursday 3/30",
 		["rows"] = 1,
-	}, -- [5]
+	}, -- [7]
 	{
 		["date"] = "Thursday 3/23",
 		["rows"] = 1,
-	}, -- [6]
+	}, -- [8]
 	{
 		["date"] = "Friday 2/24",
 		["rows"] = 1,
-	}, -- [7]
+	}, -- [9]
 	{
 		["date"] = "Wednesday 2/8",
 		["rows"] = 1,
-	}, -- [8]
+	}, -- [10]
 	{
 		["date"] = "Friday 2/3",
 		["rows"] = 1,
-	}, -- [9]
+	}, -- [11]
 	{
 		["date"] = "Friday 1/27",
 		["rows"] = 1,
-	}, -- [10]
+	}, -- [12]
 	{
 		["date"] = "Thursday 1/19",
 		["rows"] = 1,
-	}, -- [11]
+	}, -- [13]
 	{
 		["date"] = "Saturday 1/14",
 		["rows"] = 1,
-	}, -- [12]
+	}, -- [14]
 }
 FactionAddictLogEntries = {
+	{
+		["Cult of Malicor"] = 750,
+		["Court of Farondis"] = 525,
+		["The Wardens"] = 150,
+	}, -- [1]
+	{
+		["Cult of Malicor"] = 125,
+		["Highmountain Tribe"] = 75,
+	}, -- [2]
 	{
 		["Cult of Malicor"] = 875,
 		["Shado-Pan"] = 1000,
 		["Valarjar"] = 525,
 		["The Wardens"] = 150,
-	}, -- [1]
+	}, -- [3]
 	{
 		["Cult of Malicor"] = 875,
 		["Court of Farondis"] = 600,
 		["The Wardens"] = 300,
-	}, -- [2]
+	}, -- [4]
 	{
 		["Cult of Malicor"] = 3375,
 		["The Wardens"] = 450,
 		["Highmountain Tribe"] = 675,
-	}, -- [3]
-	{
-		["The Ashen Verdict"] = 1500,
-	}, -- [4]
-	{
-		["The Ashen Verdict"] = 3000,
 	}, -- [5]
 	{
-		["The Ashen Verdict"] = 3000,
+		["The Ashen Verdict"] = 1500,
 	}, -- [6]
 	{
 		["The Ashen Verdict"] = 3000,
@@ -117,6 +128,12 @@ FactionAddictLogEntries = {
 	{
 		["The Ashen Verdict"] = 3000,
 	}, -- [12]
+	{
+		["The Ashen Verdict"] = 3000,
+	}, -- [13]
+	{
+		["The Ashen Verdict"] = 3000,
+	}, -- [14]
 }
 FactionAddictConfigIsInactive = {
 	[1737] = false,
@@ -245,12 +262,12 @@ FactionAddictConfigIsInactive = {
 	[1278] = false,
 	[1714] = false,
 	[1174] = false,
-	[2045] = false,
+	[1280] = false,
 	[1279] = false,
 	[69] = false,
-	[1280] = false,
-	[1216] = false,
 	[81] = false,
+	[1216] = false,
+	[2045] = false,
 	[2170] = false,
 	[1090] = false,
 	[93] = false,
