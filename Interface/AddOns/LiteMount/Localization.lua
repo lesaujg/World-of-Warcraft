@@ -4,7 +4,7 @@
 
   LiteMount translations into other languages.
 
-  Copyright 2011-2017 Mike Battersby
+  Copyright 2011-2018 Mike Battersby
 
 ----------------------------------------------------------------------------]]--
 
@@ -71,12 +71,14 @@ L.C1                    = "B1"
 L.C2                    = "B2"
 L.FLOAT                 = "Wasserwandeln"
 L.FLY                   = "Fliegen"
+L.LM_ADVANCED_EXP       = "Mit diesen Einstellungen können Sie die Aktionen anpassen, die von den einzelnen LiteMount-Tastenbindungen ausgeführt werden. Bitte lesen Sie die Dokumentation unter der folgenden URL, bevor Sie etwas ändern."
 L.LM_AUTHOR             = "Autor"
 L.LM_COMBAT_MACRO_EXP   = "Bei Aktivierung wird dieses Makro anstelle von normalen Kampfhandlungen benutzt, wenn LiteMount im Kampf verwendet wird."
 L.LM_COPY_TARGETS_MOUNT = "Versuche, das Reittier deines Ziels zu kopieren."
 L.LM_CURRENT_SETTINGS   = "Aktuelle Einstellungen"
 L.LM_DEFAULT_SETTINGS   = "Standardeinstellungen"
-L.LM_DELETE_PROFILE     = "Lösche Profil"
+L.LM_DELETE_FLAG        = "Markierung löschen"
+L.LM_DELETE_PROFILE     = "Profil löschen"
 L.LM_DISABLE_NEW_MOUNTS = "Deaktiviere automatisch neu gelernte Reittiere"
 L.LM_DISABLING_MOUNT    = "Deaktiviere aktuelles Reittier: %s"
 L.LM_ENABLE_DEBUGGING   = "Debug-Meldungen aktivieren."
@@ -84,10 +86,12 @@ L.LM_ENABLING_MOUNT     = "Aktiviere aktuelles Reittier: %s"
 L.LM_FLAGS              = "Markierungen"
 L.LM_HELP_TRANSLATE     = "Hilf dabei, LiteMount in deine Sprache zu übersetzen. Danke."
 L.LM_MACRO_EXP          = "Dieses Makro wird ausgeführt, wenn LiteMount kein nutzbares Reittier findet. Dies kann passieren, wenn du dich in Gebäuden aufhältst oder läufst und keine spontan wirkbaren Reittiere hast."
+L.LM_NEW_FLAG           = "Markierung hinzufügen"
 L.LM_NEW_PROFILE        = "Neues Profil"
 L.LM_NO_USABLE_MOUNTS   = "Du kennst keine Reittiere, die du derzeit verwenden kannst."
 L.LM_NON_FLYING_MOUNT   = "Nicht-Flugreittier"
 L.LM_PROFILES           = "Profile"
+L.LM_RENAME_FLAG        = "Markierung umbenennen"
 L.LM_RESET_PROFILE      = "Profil zurücksetzen"
 L.LM_SETTINGS_TAGLINE   = "Einfaches und zuverlässiges Beschwören von zufälligen Reittieren."
 L.LM_TRANSLATORS        = "Übersetzer"
@@ -122,6 +126,7 @@ L.C1                    = "C1"
 L.C2                    = "C2"
 L.FLOAT                 = "Flotte"
 L.FLY                   = "Vol"
+L.LM_ADVANCED_EXP       = "Ces paramètres vous permettent de customiser les actions une par une des raccourcis du LiteMount. S'il vous plait lisez la documentation a l'URL en dessous avant de changer n'importe quoi."
 L.LM_AUTHOR             = "Auteur"
 L.LM_COMBAT_MACRO_EXP   = "Si coché, cette macro sera lancée à la place de l'action de combat par défaut si LiteMount est activé lorsque vous êtes en combat."
 L.LM_COPY_TARGETS_MOUNT = "Essaye de copier la monture de la cible."
@@ -189,19 +194,27 @@ L.LM_TRANSLATORS        = "번역가"
 L.RUN                   = "지상"
 L.SWIM                  = "수중"
 L.WALK                  = "걷기"
-L.C1                    = CUSTOM .. "1"
-L.C2                    = CUSTOM .. "2"
 end
 
 -- ptBR ------------------------------------------------------------------------
 
 if locale == "ptBR" then
+L.FLOAT                 = "Flutuar"
+L.FLY                   = "Voar"
 L.LM_AUTHOR             = "Autor"
+L.LM_COPY_TARGETS_MOUNT = "Tentra copiar a montaria do alvo."
+L.LM_CURRENT_SETTINGS   = "Configuração Atual"
+L.LM_DEFAULT_SETTINGS   = "Configuração Padrão"
 L.LM_DELETE_PROFILE     = "Remover um Perfil"
 L.LM_ENABLE_DEBUGGING   = "Permite mensagens de depuração."
 L.LM_NEW_PROFILE        = "Cria um perfil"
+L.LM_NO_USABLE_MOUNTS   = "Você não possui nenhuma montaria utilizável no momento."
+L.LM_NON_FLYING_MOUNT   = "Montarias que não voam"
 L.LM_PROFILES           = "Perfis"
 L.LM_RESET_PROFILE      = "Resetar Perfil"
+L.RUN                   = "Correr"
+L.SWIM                  = "Nadar"
+L.WALK                  = "Andar"
 end
 
 -- ruRU ------------------------------------------------------------------------
@@ -239,8 +252,6 @@ L.LM_RESET_PROFILE      = "重置配置文件"
 L.LM_TRANSLATORS        = "译者"
 L.RUN                   = "跑"
 L.SWIM                  = "游"
-L.C1                    = CUSTOM .. "1"
-L.C2                    = CUSTOM .. "2"
 end
 
 -- zhTW ------------------------------------------------------------------------
@@ -260,6 +271,4 @@ L.LM_RESET_PROFILE      = "重置設定檔"
 L.LM_TRANSLATORS        = "譯者"
 L.RUN                   = "陸地"
 L.SWIM                  = "水中"
-L.C1                    = CUSTOM .. "1"
-L.C2                    = CUSTOM .. "2"
 end

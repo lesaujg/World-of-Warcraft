@@ -1,0 +1,151 @@
+
+AskMrRobotDb3 = {
+	["char"] = {
+		["Torinara - Sisters of Elune"] = {
+			["Talents"] = {
+				[2] = "3212111",
+			},
+			["Artifacts"] = {
+				[2] = {
+					["Relics"] = {
+						"", -- [1]
+						"", -- [2]
+						"", -- [3]
+					},
+					["Powers"] = {
+						[1351] = 1,
+						[899] = 1,
+					},
+					["Crucible"] = {
+						["Equipped"] = {
+						},
+						["Inventory"] = {
+						},
+					},
+				},
+			},
+			["Logging"] = {
+				["LastDiff"] = 0,
+				["LastZone"] = "Eastern Kingdoms",
+			},
+			["Equipped"] = {
+				[2] = {
+					"|cff00ccff|Hitem:122246::::::::110:263:::1:3592:::|h[Tarnished Raging Berserker's Helm]|h|r", -- [1]
+					"|cff00ccff|Hitem:122668::::::::110:263:::1:3592:::|h[Eternal Will of the Martyr]|h|r", -- [2]
+					"|cff00ccff|Hitem:122356::::::::110:263:::1:3592:::|h[Champion Herod's Shoulder]|h|r", -- [3]
+					nil, -- [4]
+					"|cff00ccff|Hitem:122379::::::::110:263:::1:3592:::|h[Champion's Deathdealer Breastplate]|h|r", -- [5]
+					"|cff0070dd|Hitem:138172::::::::110:263:512:9:2:3387:3389:100:::|h[Fel-Chain Cinch]|h|r", -- [6]
+					"|cff00ccff|Hitem:122252::::::::110:263:::1:3592:::|h[Tarnished Leggings of Destruction]|h|r", -- [7]
+					"|cff0070dd|Hitem:138175::::::::110:263:512:9:2:3387:3389:100:::|h[Fel-Chain Boots]|h|r", -- [8]
+					"|cff0070dd|Hitem:138173::::::::110:263:512:9:2:3387:3388:100:::|h[Fel-Chain Bracers]|h|r", -- [9]
+					"|cff0070dd|Hitem:138174::::::::110:263:512:9:2:3387:3388:100:::|h[Fel-Chain Grips]|h|r", -- [10]
+					"|cff00ccff|Hitem:128173::::::::110:263:::1:3592:::|h[Admiral Taylor's Loyalty Ring]|h|r", -- [11]
+					"|cff0070dd|Hitem:139173::::::::110:263::14::::|h[Nether Twisted Band]|h|r", -- [12]
+					"|cff0070dd|Hitem:138170::::::::110:263::14::::|h[Felstalker Spine]|h|r", -- [13]
+					"|cff00ccff|Hitem:133597::::::::110:263::::::|h[Infallible Tracking Charm]|h|r", -- [14]
+					"|cff00ccff|Hitem:122261::::::::110:263:::1:3592:::|h[Inherited Cape of the Black Baron]|h|r", -- [15]
+					"|cffe6cc80|Hitem:128819::::::::110:263:256:9:1:745:117:::|h[Doomhammer]|h|r", -- [16]
+					"|cffe6cc80|Hitem:128873::::::::110:263:256:::117:::|h[Fury of the Stonemother]|h|r", -- [17]
+				},
+			},
+		},
+	},
+	["global"] = {
+		["Region"] = "US",
+	},
+	["profileKeys"] = {
+		["Noeraa - Sisters of Elune"] = "Noeraa - Sisters of Elune",
+		["Torinara - Sisters of Elune"] = "Torinara - Sisters of Elune",
+	},
+	["profiles"] = {
+		["Noeraa - Sisters of Elune"] = {
+			["Logging"] = {
+				["Auto"] = {
+					[1520] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
+					},
+					[1676] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
+					},
+					[1712] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
+					},
+					[1530] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
+					},
+					[1648] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
+					},
+				},
+			},
+		},
+		["Torinara - Sisters of Elune"] = {
+			["Logging"] = {
+				["Auto"] = {
+					[0] = {
+					},
+					[1220] = {
+					},
+					[1648] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
+					},
+					[1712] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
+					},
+					[1064] = {
+					},
+					[1469] = {
+					},
+					[1503] = {
+					},
+					[646] = {
+					},
+					[1676] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
+					},
+					[1530] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
+					},
+					[870] = {
+					},
+					[1520] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
+					},
+					[1572] = {
+					},
+				},
+			},
+		},
+	},
+}

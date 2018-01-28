@@ -4,7 +4,7 @@
 
   Information on all your mounts.
 
-  Copyright 2011-2017 Mike Battersby
+  Copyright 2011-2018 Mike Battersby
 
 ----------------------------------------------------------------------------]]--
 
@@ -35,6 +35,10 @@ local LM_MOUNT_SPELLS = {
         LM_ITEM.SHIMMERING_MOONSTONE, LM_SPELL.MOONFANG, 'RUN', },
     { "ItemSummoned",
         LM_ITEM.RATSTALLION_HARNESS, LM_SPELL.RATSTALLION_HARNESS, 'RUN', },
+    { "ItemSummoned",
+        LM_ITEM.SAPPHIRE_QIRAJI_RESONATING_CRYSTAL, LM_SPELL.BLUE_QIRAJI_WAR_TANK, 'RUN', },
+    { "ItemSummoned",
+        LM_ITEM.RUBY_QIRAJI_RESONATING_CRYSTAL, LM_SPELL.RED_QIRAJI_WAR_TANK, 'RUN', },
 }
 
 local RefreshEvents = {
@@ -58,7 +62,7 @@ function LM_PlayerMounts:Initialize()
     self:AddJournalMounts()
 
     for _,m in ipairs(self.mounts) do
-        LM_Options:SeenMount(m)
+        LM_Options:InitializeExcludedMount(m)
     end
 
     -- Refresh event setup

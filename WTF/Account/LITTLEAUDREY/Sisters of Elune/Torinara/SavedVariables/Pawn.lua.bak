@@ -1,0 +1,28 @@
+
+PawnOptions = {
+	["LastVersion"] = 2.0217,
+	["LastPlayerFullName"] = "Torinara-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["Artifacts"] = {
+		[128819] = {
+			["Relics"] = {
+				{
+					["Type"] = "Fire",
+				}, -- [1]
+				{
+					["Type"] = "Iron",
+				}, -- [2]
+				{
+					["Type"] = "Wind",
+				}, -- [3]
+			},
+			["Name"] = "Doomhammer",
+		},
+	},
+	["LastKeybindingsSet"] = 1,
+}
+PawnMrRobotScaleProviderOptions = {
+	["LastClass"] = "SHAMAN",
+	["LastAdded"] = 1,
+}

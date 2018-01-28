@@ -3,4 +3,15 @@ RelicInspectorCharDB = {
 	["profileKeys"] = {
 		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
 	},
+	["char"] = {
+		["Orig - Sisters of Elune"] = {
+			["artifactCache"] = {
+				[128938] = {
+					["timestamp"] = 2489.872,
+					["crucibled"] = false,
+					["level"] = 1,
+				},
+			},
+		},
+	},
 }

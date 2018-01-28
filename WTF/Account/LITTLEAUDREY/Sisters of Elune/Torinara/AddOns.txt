@@ -1,0 +1,3 @@
+_NPCScan.Overlay: disabled
+TradeSkillMaster: disabled
+AdvancedIconSelector: disabled

@@ -10,10 +10,10 @@ RelicInspectorCharDB = {
 				[128826] = {
 					{
 						["relic"] = {
-							"Fulminating Arcstone", -- [1]
-							136099, -- [2]
+							"Edge of the First Blade", -- [1]
+							1380678, -- [2]
 							"Wind", -- [3]
-							"|cffa335ee|Hitem:151014:::::::::::30:3:3397:3194:3337:::|h[Fulminating Arcstone]|h|r", -- [4]
+							"|cffa335ee|Hitem:137493:::::::::::35:3:3414:1582:3337:::|h[Edge of the First Blade]|h|r", -- [4]
 						},
 						["traits"] = {
 							{
@@ -29,10 +29,10 @@ RelicInspectorCharDB = {
 								["requiredArtifactLevel"] = 60,
 								["tier"] = 2,
 								["canChoose"] = false,
-								["powerID"] = 1771,
-								["icon"] = 136194,
+								["powerID"] = 1781,
+								["icon"] = 839910,
 								["isChosen"] = false,
-								["spellID"] = 252091,
+								["spellID"] = 252922,
 							}, -- [2]
 							{
 								["requiredArtifactLevel"] = 60,
@@ -47,20 +47,11 @@ RelicInspectorCharDB = {
 								["requiredArtifactLevel"] = 69,
 								["tier"] = 3,
 								["canChoose"] = false,
-								["powerID"] = 320,
-								["icon"] = 796637,
+								["powerID"] = 315,
+								["icon"] = 132330,
 								["isChosen"] = false,
-								["spellID"] = 190567,
+								["spellID"] = 190467,
 							}, -- [4]
-							{
-								["requiredArtifactLevel"] = 69,
-								["tier"] = 3,
-								["canChoose"] = false,
-								["powerID"] = 314,
-								["icon"] = 132329,
-								["isChosen"] = true,
-								["spellID"] = 190462,
-							}, -- [5]
 							{
 								["requiredArtifactLevel"] = 69,
 								["tier"] = 3,
@@ -69,6 +60,15 @@ RelicInspectorCharDB = {
 								["icon"] = 1033497,
 								["isChosen"] = false,
 								["spellID"] = 190449,
+							}, -- [5]
+							{
+								["requiredArtifactLevel"] = 69,
+								["tier"] = 3,
+								["canChoose"] = false,
+								["powerID"] = 314,
+								["icon"] = 132329,
+								["isChosen"] = true,
+								["spellID"] = 190462,
 							}, -- [6]
 						},
 					}, -- [1]
@@ -113,7 +113,7 @@ RelicInspectorCharDB = {
 								["canChoose"] = false,
 								["powerID"] = 313,
 								["icon"] = 1376043,
-								["isChosen"] = false,
+								["isChosen"] = true,
 								["spellID"] = 190457,
 							}, -- [4]
 							{
@@ -138,10 +138,10 @@ RelicInspectorCharDB = {
 					}, -- [2]
 					{
 						["relic"] = {
-							"Moontalon's Feather", -- [1]
-							132926, -- [2]
+							"Mysterious Petrified Egg", -- [1]
+							1769066, -- [2]
 							"Life", -- [3]
-							"|cffa335ee|Hitem:147105:::::::::::3:3:3561:1497:3337:::|h[Moontalon's Feather]|h|r", -- [4]
+							"|cffa335ee|Hitem:152050:::::::::::5:3:3611:1487:3528:::|h[Mysterious Petrified Egg]|h|r", -- [4]
 						},
 						["traits"] = {
 							{
@@ -157,29 +157,20 @@ RelicInspectorCharDB = {
 								["requiredArtifactLevel"] = 66,
 								["tier"] = 2,
 								["canChoose"] = false,
-								["powerID"] = 1771,
-								["icon"] = 136194,
-								["isChosen"] = false,
-								["spellID"] = 252091,
+								["powerID"] = 1779,
+								["icon"] = 1394892,
+								["isChosen"] = true,
+								["spellID"] = 252888,
 							}, -- [2]
 							{
 								["requiredArtifactLevel"] = 66,
 								["tier"] = 2,
 								["canChoose"] = false,
-								["powerID"] = 1770,
-								["icon"] = 132307,
-								["isChosen"] = true,
-								["spellID"] = 252088,
-							}, -- [3]
-							{
-								["requiredArtifactLevel"] = 75,
-								["tier"] = 3,
-								["canChoose"] = false,
-								["powerID"] = 1521,
-								["icon"] = 511650,
+								["powerID"] = 1775,
+								["icon"] = 458412,
 								["isChosen"] = false,
-								["spellID"] = 238052,
-							}, -- [4]
+								["spellID"] = 252207,
+							}, -- [3]
 							{
 								["requiredArtifactLevel"] = 75,
 								["tier"] = 3,
@@ -188,29 +179,38 @@ RelicInspectorCharDB = {
 								["icon"] = 132294,
 								["isChosen"] = false,
 								["spellID"] = 190514,
+							}, -- [4]
+							{
+								["requiredArtifactLevel"] = 75,
+								["tier"] = 3,
+								["canChoose"] = false,
+								["powerID"] = 318,
+								["icon"] = 132217,
+								["isChosen"] = false,
+								["spellID"] = 190520,
 							}, -- [5]
 							{
 								["requiredArtifactLevel"] = 75,
 								["tier"] = 3,
 								["canChoose"] = false,
-								["powerID"] = 312,
-								["icon"] = 1033497,
+								["powerID"] = 315,
+								["icon"] = 132330,
 								["isChosen"] = false,
-								["spellID"] = 190449,
+								["spellID"] = 190467,
 							}, -- [6]
 						},
 					}, -- [3]
 					["crucibled"] = true,
-					["level"] = 69,
-					["timestamp"] = 48372.635,
+					["timestamp"] = 273090.065,
+					["level"] = 74,
 				},
 				[128861] = {
 					{
 						["relic"] = {
-							"Moonglaive Dervish", -- [1]
-							1029596, -- [2]
+							"Sotanathor's Thundering Hoof", -- [1]
+							132368, -- [2]
 							"Wind", -- [3]
-							"|cffa335ee|Hitem:137550:::::::::::43:3:3573:1562:3528:::|h[Moonglaive Dervish]|h|r", -- [4]
+							"|cffa335ee|Hitem:152348:::::::::::3:3:3614:1472:3528:::|h[Sotanathor's Thundering Hoof]|h|r", -- [4]
 						},
 						["traits"] = {
 							{
@@ -226,19 +226,19 @@ RelicInspectorCharDB = {
 								["requiredArtifactLevel"] = 60,
 								["tier"] = 2,
 								["canChoose"] = false,
-								["powerID"] = 1779,
-								["icon"] = 1394892,
+								["powerID"] = 1774,
+								["icon"] = 136129,
 								["isChosen"] = false,
-								["spellID"] = 252888,
+								["spellID"] = 252191,
 							}, -- [2]
 							{
 								["requiredArtifactLevel"] = 60,
 								["tier"] = 2,
 								["canChoose"] = false,
-								["powerID"] = 1775,
-								["icon"] = 458412,
+								["powerID"] = 1784,
+								["icon"] = 236687,
 								["isChosen"] = true,
-								["spellID"] = 252207,
+								["spellID"] = 253111,
 							}, -- [3]
 							{
 								["requiredArtifactLevel"] = 69,
@@ -253,19 +253,19 @@ RelicInspectorCharDB = {
 								["requiredArtifactLevel"] = 69,
 								["tier"] = 3,
 								["canChoose"] = false,
-								["powerID"] = 869,
-								["icon"] = 236186,
+								["powerID"] = 873,
+								["icon"] = 132211,
 								["isChosen"] = false,
-								["spellID"] = 197047,
+								["spellID"] = 197140,
 							}, -- [5]
 							{
 								["requiredArtifactLevel"] = 69,
 								["tier"] = 3,
 								["canChoose"] = false,
-								["powerID"] = 1517,
-								["icon"] = 461114,
+								["powerID"] = 1095,
+								["icon"] = 132127,
 								["isChosen"] = true,
-								["spellID"] = 238051,
+								["spellID"] = 206910,
 							}, -- [6]
 						},
 					}, -- [1]
@@ -398,13 +398,13 @@ RelicInspectorCharDB = {
 						},
 					}, -- [3]
 					["crucibled"] = true,
+					["timestamp"] = 273049.708,
 					["level"] = 75,
-					["timestamp"] = 90174.747,
 				},
 				[128808] = {
-					["timestamp"] = 82481.43,
-					["level"] = 52,
+					["timestamp"] = 269300.419,
 					["crucibled"] = false,
+					["level"] = 52,
 				},
 			},
 		},

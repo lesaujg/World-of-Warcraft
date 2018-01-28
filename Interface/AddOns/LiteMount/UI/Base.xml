@@ -1,6 +1,6 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\..\FrameXML\UI.xsd">
 
-<!-- Copyright 2011-2017 Mike Battersby -->
+<!-- Copyright 2011-2018 Mike Battersby -->
 
 <Frame name="LiteMountOptions" hidden="true" inherits="LiteMountOptionsPanelTemplate">
     <Layers>
@@ -95,7 +95,7 @@
                 "frFR - Joured, lastdans",
                 "itIT - ",
                 "koKR - yuk6196",
-                "ptBR - ",
+                "ptBR - Kalx_",
                 "ruRU - ",
                 "zhCN - okaydud, wowuicn",
                 "zhTW - BNSSNB, yunrong"

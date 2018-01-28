@@ -1,11 +1,15 @@
 
 TukuiConfigShared = {
 	["Sisters of Elune"] = {
-		["Aloraal"] = {
+		["Brennie"] = {
+		},
+		["Noeraa"] = {
+		},
+		["Torinara"] = {
 		},
 		["Tolaine"] = {
 		},
-		["Brennie"] = {
+		["Aloraal"] = {
 		},
 	},
 	["Account"] = {

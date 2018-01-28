@@ -13,14 +13,14 @@ SkadaPerCharDB = {
 		["players"] = {
 			{
 				["healingabsorbed"] = 0,
+				["class"] = "PALADIN",
 				["ffdamagedonespells"] = {
 				},
-				["class"] = "PALADIN",
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["ffdamagedone"] = 0,
-				["role"] = "NONE",
+				["ccbreaks"] = 0,
 				["time"] = 33,
 				["interrupts"] = 0,
 				["healingspells"] = {
@@ -37,6 +37,7 @@ SkadaPerCharDB = {
 						["hits"] = 6,
 					},
 				},
+				["shielding"] = 0,
 				["deathlog"] = {
 					{
 						["ts"] = 1513311297.437,
@@ -64,8 +65,8 @@ SkadaPerCharDB = {
 						["amount"] = 22819,
 						["absorb"] = 0,
 						["hp"] = 2390760,
-						["spellid"] = 242597,
 						["srcname"] = "Galinar",
+						["spellid"] = 242597,
 					}, -- [4]
 					{
 						["ts"] = 1513311301.284,
@@ -86,8 +87,8 @@ SkadaPerCharDB = {
 						["amount"] = 11409,
 						["ts"] = 1513311302.395,
 						["hp"] = 2390760,
-						["spellid"] = 242597,
 						["srcname"] = "Galinar",
+						["spellid"] = 242597,
 					}, -- [7]
 					{
 						["ts"] = 1513310473.188,
@@ -115,8 +116,8 @@ SkadaPerCharDB = {
 						["amount"] = 11204,
 						["ts"] = 1513310677.656,
 						["hp"] = 2390760,
-						["spellid"] = 242597,
 						["srcname"] = "Galinar",
+						["spellid"] = 242597,
 					}, -- [11]
 					{
 						["ts"] = 1513310678.286,
@@ -137,8 +138,8 @@ SkadaPerCharDB = {
 						["amount"] = 17952,
 						["ts"] = 1513310680.687,
 						["hp"] = 2390760,
-						["spellid"] = 242597,
 						["srcname"] = "Galinar",
+						["spellid"] = 242597,
 					}, -- [14]
 					{
 						["ts"] = 1513311296.601,
@@ -149,7 +150,6 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 8,
 				},
-				["shielding"] = 0,
 				["damage"] = 10338543,
 				["damagespells"] = {
 					["Wake of Ashes"] = {
@@ -158,13 +158,13 @@ SkadaPerCharDB = {
 						["id"] = 205273,
 						["hitamount"] = 961684,
 						["criticalmin"] = 89464,
-						["hitmax"] = 260000,
+						["critical"] = 6,
 						["min"] = 43855,
 						["criticalmax"] = 530400,
-						["critical"] = 6,
+						["hitmax"] = 260000,
 						["hit"] = 17,
-						["school"] = 6,
 						["totalhits"] = 23,
+						["school"] = 6,
 						["max"] = 530400,
 						["damage"] = 2821278,
 					},
@@ -174,13 +174,13 @@ SkadaPerCharDB = {
 						["id"] = 217020,
 						["hitamount"] = 529041,
 						["criticalmin"] = 3555,
-						["hitmax"] = 177612,
+						["critical"] = 3,
 						["min"] = 3555,
 						["criticalmax"] = 358107,
-						["critical"] = 3,
+						["hitmax"] = 177612,
 						["hit"] = 3,
-						["school"] = 1,
 						["totalhits"] = 6,
+						["school"] = 1,
 						["max"] = 358107,
 						["damage"] = 1246338,
 					},
@@ -190,13 +190,13 @@ SkadaPerCharDB = {
 						["id"] = 20271,
 						["hitamount"] = 456540,
 						["criticalmin"] = 4657,
-						["critical"] = 3,
+						["hitmax"] = 228270,
 						["min"] = 4657,
 						["criticalmax"] = 465679,
-						["hitmax"] = 228270,
+						["critical"] = 3,
 						["hit"] = 2,
-						["school"] = 2,
 						["totalhits"] = 5,
+						["school"] = 2,
 						["max"] = 465679,
 						["damage"] = 1392548,
 					},
@@ -206,13 +206,13 @@ SkadaPerCharDB = {
 						["id"] = 224266,
 						["hitamount"] = 1133298,
 						["criticalmin"] = 70852,
-						["hitmax"] = 364363,
+						["critical"] = 3,
 						["min"] = 33713,
 						["criticalmax"] = 718046,
-						["critical"] = 3,
+						["hitmax"] = 364363,
 						["hit"] = 5,
-						["school"] = 2,
 						["totalhits"] = 8,
+						["school"] = 2,
 						["max"] = 718046,
 						["damage"] = 2635677,
 					},
@@ -222,13 +222,13 @@ SkadaPerCharDB = {
 						["id"] = 6603,
 						["hitamount"] = 239092,
 						["criticalmin"] = 720,
-						["hitmax"] = 36370,
+						["critical"] = 3,
 						["min"] = 720,
 						["criticalmax"] = 75891,
-						["critical"] = 3,
+						["hitmax"] = 36370,
 						["hit"] = 7,
-						["school"] = 1,
 						["totalhits"] = 10,
+						["school"] = 1,
 						["max"] = 75891,
 						["damage"] = 387746,
 					},
@@ -238,13 +238,13 @@ SkadaPerCharDB = {
 						["id"] = 184575,
 						["hitamount"] = 1237124,
 						["criticalmin"] = 617832,
-						["hitmax"] = 322300,
+						["critical"] = 1,
 						["min"] = 298551,
 						["criticalmax"] = 617832,
-						["critical"] = 1,
+						["hitmax"] = 322300,
 						["hit"] = 4,
-						["school"] = 1,
 						["totalhits"] = 5,
+						["school"] = 1,
 						["max"] = 617832,
 						["damage"] = 1854956,
 					},
@@ -288,9 +288,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 136343,
 						["absorbed"] = 0,
-						["min"] = 5704,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 5704,
 						["school"] = 8,
 						["name"] = "Static Shield",
 						["blocked"] = 0,
@@ -303,9 +303,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 6603,
 						["absorbed"] = 0,
-						["min"] = 6029,
-						["critical"] = 2,
 						["glancing"] = 0,
+						["critical"] = 2,
+						["min"] = 6029,
 						["school"] = 1,
 						["name"] = "Attack",
 						["blocked"] = 0,
@@ -318,9 +318,9 @@ SkadaPerCharDB = {
 						["crushing"] = 0,
 						["id"] = 121673,
 						["absorbed"] = 0,
-						["min"] = 5989,
-						["critical"] = 0,
 						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 5989,
 						["school"] = 4,
 						["name"] = "Fire Shot",
 						["blocked"] = 0,
@@ -395,7 +395,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["ccbreaks"] = 0,
+				["role"] = "NONE",
 			}, -- [1]
 		},
 		["deaths"] = 0,
@@ -410,10 +410,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 29949,
+				["taken"] = 0,
 				["htakenspell"] = {
 				},
-				["taken"] = 0,
-				["done"] = 29949,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -428,10 +428,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 29156,
+				["taken"] = 1750587,
 				["htakenspell"] = {
 				},
-				["taken"] = 1750587,
-				["done"] = 29156,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -446,10 +446,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 465679,
 				["htakenspell"] = {
 				},
-				["taken"] = 465679,
-				["done"] = 0,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -464,10 +464,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 34228,
+				["taken"] = 2020277,
 				["htakenspell"] = {
 				},
-				["taken"] = 2020277,
-				["done"] = 34228,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -482,10 +482,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 27481,
+				["taken"] = 3531493,
 				["htakenspell"] = {
 				},
-				["taken"] = 3531493,
-				["done"] = 27481,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -500,10 +500,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 2570507,
 				["htakenspell"] = {
 				},
-				["taken"] = 2570507,
-				["done"] = 0,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -546,15 +546,15 @@ SkadaPerCharDB = {
 				{
 					["last"] = 1513311302,
 					["healingabsorbed"] = 0,
-					["class"] = "PALADIN",
 					["ffdamagedonespells"] = {
 					},
+					["class"] = "PALADIN",
 					["damaged"] = {
 						["Nalak"] = 2020277,
 					},
 					["dispells"] = 0,
 					["role"] = "NONE",
-					["ffdamagedone"] = 0,
+					["ccbreaks"] = 0,
 					["time"] = 7,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -571,7 +571,20 @@ SkadaPerCharDB = {
 							["hits"] = 2,
 						},
 					},
-					["shielding"] = 0,
+					["power"] = {
+						[0] = {
+							["amount"] = 5,
+							["spells"] = {
+								[218001] = 5,
+							},
+						},
+						[2] = {
+							["amount"] = 0,
+							["spells"] = {
+								[184575] = 0,
+							},
+						},
+					},
 					["maxhp"] = 2390760,
 					["damage"] = 2020277,
 					["damagespells"] = {
@@ -581,13 +594,13 @@ SkadaPerCharDB = {
 							["id"] = 205273,
 							["hitamount"] = 87710,
 							["criticalmin"] = 89464,
-							["hitmax"] = 43855,
+							["critical"] = 3,
 							["min"] = 43855,
 							["criticalmax"] = 530400,
-							["critical"] = 3,
+							["hitmax"] = 43855,
 							["hit"] = 2,
-							["school"] = 6,
 							["totalhits"] = 5,
+							["school"] = 6,
 							["max"] = 530400,
 							["damage"] = 797039,
 						},
@@ -643,20 +656,7 @@ SkadaPerCharDB = {
 					["ffdamagedonetargets"] = {
 					},
 					["damagetaken"] = 34228,
-					["power"] = {
-						[0] = {
-							["amount"] = 5,
-							["spells"] = {
-								[218001] = 5,
-							},
-						},
-						[2] = {
-							["amount"] = 0,
-							["spells"] = {
-								[184575] = 0,
-							},
-						},
-					},
+					["shielding"] = 0,
 					["id"] = "Player-1169-06EEB51C",
 					["first"] = 1513311295,
 					["healing"] = 34228,
@@ -665,9 +665,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 136343,
 							["absorbed"] = 0,
-							["min"] = 5704,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 5704,
 							["school"] = 8,
 							["name"] = "Static Shield",
 							["blocked"] = 0,
@@ -726,7 +726,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["ccbreaks"] = 0,
+					["ffdamagedone"] = 0,
 				}, -- [1]
 			},
 			["deaths"] = 0,
@@ -741,10 +741,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 34228,
+					["taken"] = 2020277,
 					["htakenspell"] = {
 					},
-					["taken"] = 2020277,
-					["done"] = 34228,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -784,20 +784,40 @@ SkadaPerCharDB = {
 				{
 					["last"] = 1513310871,
 					["healingabsorbed"] = 0,
-					["class"] = "PALADIN",
 					["ffdamagedonespells"] = {
 					},
+					["class"] = "PALADIN",
 					["damaged"] = {
 						["Oondasta"] = 2570507,
 					},
 					["dispells"] = 0,
 					["role"] = "NONE",
-					["ffdamagedone"] = 0,
+					["ccbreaks"] = 0,
 					["time"] = 11,
 					["interrupts"] = 0,
 					["healingspells"] = {
 					},
-					["shielding"] = 0,
+					["power"] = {
+						{
+							["amount"] = 0,
+							["spells"] = {
+								[217020] = 0,
+							},
+						}, -- [1]
+						{
+							["amount"] = 0,
+							["spells"] = {
+								[184575] = 0,
+							},
+						}, -- [2]
+						[0] = {
+							["amount"] = 6,
+							["spells"] = {
+								[218001] = 5,
+								[217020] = 1,
+							},
+						},
+					},
 					["maxhp"] = 2390760,
 					["damage"] = 2570507,
 					["damagespells"] = {
@@ -807,13 +827,13 @@ SkadaPerCharDB = {
 							["id"] = 205273,
 							["hitamount"] = 263132,
 							["criticalmin"] = 530400,
-							["hitmax"] = 43856,
+							["critical"] = 1,
 							["min"] = 43855,
 							["criticalmax"] = 530400,
-							["critical"] = 1,
+							["hitmax"] = 43856,
 							["hit"] = 6,
-							["school"] = 6,
 							["totalhits"] = 7,
+							["school"] = 6,
 							["max"] = 530400,
 							["damage"] = 793532,
 						},
@@ -847,13 +867,13 @@ SkadaPerCharDB = {
 							["id"] = 224266,
 							["hitamount"] = 363393,
 							["criticalmin"] = 70852,
-							["critical"] = 1,
+							["hitmax"] = 363393,
 							["min"] = 70852,
 							["criticalmax"] = 70852,
-							["hitmax"] = 363393,
+							["critical"] = 1,
 							["hit"] = 1,
-							["school"] = 2,
 							["totalhits"] = 2,
+							["school"] = 2,
 							["max"] = 363393,
 							["damage"] = 434245,
 						},
@@ -863,13 +883,13 @@ SkadaPerCharDB = {
 							["id"] = 217020,
 							["hitamount"] = 352704,
 							["criticalmin"] = 355635,
-							["hitmax"] = 177612,
+							["critical"] = 1,
 							["min"] = 175092,
 							["criticalmax"] = 355635,
-							["critical"] = 1,
+							["hitmax"] = 177612,
 							["hit"] = 2,
-							["school"] = 1,
 							["totalhits"] = 3,
+							["school"] = 1,
 							["max"] = 355635,
 							["damage"] = 708339,
 						},
@@ -889,27 +909,7 @@ SkadaPerCharDB = {
 					["ffdamagedonetargets"] = {
 					},
 					["damagetaken"] = 0,
-					["power"] = {
-						{
-							["amount"] = 0,
-							["spells"] = {
-								[217020] = 0,
-							},
-						}, -- [1]
-						{
-							["amount"] = 0,
-							["spells"] = {
-								[184575] = 0,
-							},
-						}, -- [2]
-						[0] = {
-							["amount"] = 6,
-							["spells"] = {
-								[218001] = 5,
-								[217020] = 1,
-							},
-						},
-					},
+					["shielding"] = 0,
 					["id"] = "Player-1169-06EEB51C",
 					["first"] = 1513310860,
 					["healing"] = 0,
@@ -965,7 +965,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["ccbreaks"] = 0,
+					["ffdamagedone"] = 0,
 				}, -- [1]
 			},
 			["deaths"] = 0,
@@ -980,10 +980,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 0,
+					["taken"] = 2570507,
 					["htakenspell"] = {
 					},
-					["taken"] = 2570507,
-					["done"] = 0,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -1024,16 +1024,16 @@ SkadaPerCharDB = {
 				{
 					["last"] = 1513310682,
 					["healingabsorbed"] = 0,
-					["class"] = "PALADIN",
 					["ffdamagedonespells"] = {
 					},
+					["class"] = "PALADIN",
 					["damaged"] = {
 						["Seething Sha"] = 465679,
 						["Sha of Anger"] = 1750587,
 					},
 					["dispells"] = 0,
 					["role"] = "NONE",
-					["ffdamagedone"] = 0,
+					["ccbreaks"] = 0,
 					["time"] = 8,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -1050,7 +1050,27 @@ SkadaPerCharDB = {
 							["hits"] = 2,
 						},
 					},
-					["shielding"] = 0,
+					["power"] = {
+						{
+							["amount"] = 0,
+							["spells"] = {
+								[217020] = 0,
+							},
+						}, -- [1]
+						[3] = {
+							["amount"] = 2,
+							["spells"] = {
+								[218001] = 2,
+							},
+						},
+						[0] = {
+							["amount"] = 4,
+							["spells"] = {
+								[217020] = 2,
+								[184575] = 2,
+							},
+						},
+					},
 					["maxhp"] = 2390760,
 					["damage"] = 2216266,
 					["damagespells"] = {
@@ -1108,13 +1128,13 @@ SkadaPerCharDB = {
 							["id"] = 6603,
 							["hitamount"] = 25519,
 							["criticalmin"] = 720,
-							["hitmax"] = 25519,
+							["critical"] = 2,
 							["min"] = 720,
 							["criticalmax"] = 75891,
-							["critical"] = 2,
+							["hitmax"] = 25519,
 							["hit"] = 1,
-							["school"] = 1,
 							["totalhits"] = 3,
+							["school"] = 1,
 							["max"] = 75891,
 							["damage"] = 102130,
 						},
@@ -1124,13 +1144,13 @@ SkadaPerCharDB = {
 							["id"] = 217020,
 							["hitamount"] = 176337,
 							["criticalmin"] = 3555,
-							["hitmax"] = 176337,
+							["critical"] = 2,
 							["min"] = 3555,
 							["criticalmax"] = 358107,
-							["critical"] = 2,
+							["hitmax"] = 176337,
 							["hit"] = 1,
-							["school"] = 1,
 							["totalhits"] = 3,
+							["school"] = 1,
 							["max"] = 358107,
 							["damage"] = 537999,
 						},
@@ -1138,27 +1158,7 @@ SkadaPerCharDB = {
 					["ffdamagedonetargets"] = {
 					},
 					["damagetaken"] = 29156,
-					["power"] = {
-						{
-							["amount"] = 0,
-							["spells"] = {
-								[217020] = 0,
-							},
-						}, -- [1]
-						[3] = {
-							["amount"] = 2,
-							["spells"] = {
-								[218001] = 2,
-							},
-						},
-						[0] = {
-							["amount"] = 4,
-							["spells"] = {
-								[217020] = 2,
-								[184575] = 2,
-							},
-						},
-					},
+					["shielding"] = 0,
 					["id"] = "Player-1169-06EEB51C",
 					["first"] = 1513310674,
 					["healing"] = 29156,
@@ -1167,9 +1167,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 6603,
 							["absorbed"] = 0,
-							["min"] = 6029,
-							["critical"] = 2,
 							["glancing"] = 0,
+							["critical"] = 2,
+							["min"] = 6029,
 							["school"] = 1,
 							["name"] = "Attack",
 							["blocked"] = 0,
@@ -1236,7 +1236,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["ccbreaks"] = 0,
+					["ffdamagedone"] = 0,
 				}, -- [1]
 			},
 			["deaths"] = 0,
@@ -1251,10 +1251,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 0,
+					["taken"] = 465679,
 					["htakenspell"] = {
 					},
-					["taken"] = 465679,
-					["done"] = 0,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -1269,10 +1269,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 29156,
+					["taken"] = 1750587,
 					["htakenspell"] = {
 					},
-					["taken"] = 1750587,
-					["done"] = 29156,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -1313,15 +1313,15 @@ SkadaPerCharDB = {
 				{
 					["last"] = 1513310474,
 					["healingabsorbed"] = 0,
-					["class"] = "PALADIN",
 					["ffdamagedonespells"] = {
 					},
+					["class"] = "PALADIN",
 					["damaged"] = {
 						["Galleon"] = 3531493,
 					},
 					["dispells"] = 0,
 					["role"] = "NONE",
-					["ffdamagedone"] = 0,
+					["ccbreaks"] = 0,
 					["time"] = 7,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -1338,7 +1338,21 @@ SkadaPerCharDB = {
 							["hits"] = 2,
 						},
 					},
-					["shielding"] = 0,
+					["power"] = {
+						[0] = {
+							["amount"] = 7,
+							["spells"] = {
+								[218001] = 5,
+								[184575] = 2,
+							},
+						},
+						[2] = {
+							["amount"] = 0,
+							["spells"] = {
+								[184575] = 0,
+							},
+						},
+					},
 					["maxhp"] = 2390760,
 					["damage"] = 3531493,
 					["damagespells"] = {
@@ -1348,13 +1362,13 @@ SkadaPerCharDB = {
 							["id"] = 205273,
 							["hitamount"] = 175421,
 							["criticalmin"] = 89465,
-							["hitmax"] = 43856,
+							["critical"] = 2,
 							["min"] = 43855,
 							["criticalmax"] = 530400,
-							["critical"] = 2,
+							["hitmax"] = 43856,
 							["hit"] = 4,
-							["school"] = 6,
 							["totalhits"] = 6,
+							["school"] = 6,
 							["max"] = 530400,
 							["damage"] = 795286,
 						},
@@ -1376,13 +1390,13 @@ SkadaPerCharDB = {
 							["id"] = 224266,
 							["hitamount"] = 33713,
 							["criticalmin"] = 713481,
-							["hitmax"] = 33713,
+							["critical"] = 2,
 							["min"] = 33713,
 							["criticalmax"] = 718046,
-							["critical"] = 2,
+							["hitmax"] = 33713,
 							["hit"] = 1,
-							["school"] = 2,
 							["totalhits"] = 3,
+							["school"] = 2,
 							["max"] = 718046,
 							["damage"] = 1465240,
 						},
@@ -1392,13 +1406,13 @@ SkadaPerCharDB = {
 							["id"] = 6603,
 							["hitamount"] = 36370,
 							["criticalmin"] = 72043,
-							["hitmax"] = 36370,
+							["critical"] = 1,
 							["min"] = 36370,
 							["criticalmax"] = 72043,
-							["critical"] = 1,
+							["hitmax"] = 36370,
 							["hit"] = 1,
-							["school"] = 1,
 							["totalhits"] = 2,
+							["school"] = 1,
 							["max"] = 72043,
 							["damage"] = 108413,
 						},
@@ -1408,13 +1422,13 @@ SkadaPerCharDB = {
 							["id"] = 184575,
 							["hitamount"] = 316452,
 							["criticalmin"] = 617832,
-							["hitmax"] = 316452,
+							["critical"] = 1,
 							["min"] = 316452,
 							["criticalmax"] = 617832,
-							["critical"] = 1,
+							["hitmax"] = 316452,
 							["hit"] = 1,
-							["school"] = 1,
 							["totalhits"] = 2,
+							["school"] = 1,
 							["max"] = 617832,
 							["damage"] = 934284,
 						},
@@ -1422,21 +1436,7 @@ SkadaPerCharDB = {
 					["ffdamagedonetargets"] = {
 					},
 					["damagetaken"] = 57430,
-					["power"] = {
-						[0] = {
-							["amount"] = 7,
-							["spells"] = {
-								[218001] = 5,
-								[184575] = 2,
-							},
-						},
-						[2] = {
-							["amount"] = 0,
-							["spells"] = {
-								[184575] = 0,
-							},
-						},
-					},
+					["shielding"] = 0,
 					["id"] = "Player-1169-06EEB51C",
 					["first"] = 1513310467,
 					["healing"] = 45450,
@@ -1445,9 +1445,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 6603,
 							["absorbed"] = 0,
-							["min"] = 13596,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 13596,
 							["school"] = 1,
 							["name"] = "Attack",
 							["blocked"] = 0,
@@ -1460,9 +1460,9 @@ SkadaPerCharDB = {
 							["crushing"] = 0,
 							["id"] = 121673,
 							["absorbed"] = 0,
-							["min"] = 5989,
-							["critical"] = 0,
 							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 5989,
 							["school"] = 4,
 							["name"] = "Fire Shot",
 							["blocked"] = 0,
@@ -1529,7 +1529,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["ccbreaks"] = 0,
+					["ffdamagedone"] = 0,
 				}, -- [1]
 			},
 			["deaths"] = 0,
@@ -1544,10 +1544,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 27481,
+					["taken"] = 3531493,
 					["htakenspell"] = {
 					},
-					["taken"] = 3531493,
-					["done"] = 27481,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -1562,10 +1562,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 29949,
+					["taken"] = 0,
 					["htakenspell"] = {
 					},
-					["taken"] = 0,
-					["done"] = 29949,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},

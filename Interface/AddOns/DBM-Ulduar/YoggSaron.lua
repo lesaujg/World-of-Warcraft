@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("YoggSaron", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 248 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 254 $"):sub(12, -3))
 mod:SetCreatureID(33288)
 mod:SetEncounterID(1143)
 mod:SetModelID(28817)
@@ -56,7 +56,6 @@ local timerCastDeafeningRoar		= mod:NewCastTimer(2.3, 64189, nil, nil, nil, 2)
 local timerNextDeafeningRoar		= mod:NewNextTimer(30, 64189, nil, nil, nil, 2)
 local timerAchieve					= mod:NewAchievementTimer(420, 3012, "TimerSpeedKill")
 
-mod:AddBoolOption("ShowSaraHealth", false)
 mod:AddBoolOption("SetIconOnFearTarget", true)
 mod:AddBoolOption("SetIconOnFervorTarget", false)
 mod:AddBoolOption("SetIconOnBrainLinkTarget", true)
@@ -73,12 +72,6 @@ function mod:OnCombatStart(delay)
 	self.vb.phase = 1
 	enrageTimer:Start()
 	timerAchieve:Start()
-	if self.Options.ShowSaraHealth and not DBM.BossHealth:IsShown() then
-		DBM.BossHealth:Show(L.name)
-	end
-	if self.Options.ShowSaraHealth then
-		DBM.BossHealth:AddBoss(33134, L.Sara)
-	end
 	table.wipe(brainLinkTargets)
 end
 
@@ -177,7 +170,7 @@ function mod:SPELL_AURA_APPLIED(args)
 			specWarnFervor:Show()
 			specWarnFervor:Play("targetyou")
 		end
-	elseif args.spellId == 63894 then	-- Shadowy Barrier of Yogg-Saron (this is happens when p2 starts)
+	elseif args.spellId == 63894 and self.vb.phase < 2 then	-- Shadowy Barrier of Yogg-Saron (this is happens when p2 starts)
 		self.vb.phase = 2
 		timerMaladyCD:Start(13)--VERIFY ME
 		timerBrainLinkCD:Start(19)--VERIFY ME
@@ -185,12 +178,6 @@ function mod:SPELL_AURA_APPLIED(args)
 		warnBrainPortalSoon:Schedule(57)
 		specWarnBrainPortalSoon:Schedule(57)
 		warnP2:Show()
-		if self.Options.ShowSaraHealth then
-			DBM.BossHealth:RemoveBoss(33134)
-		end
-		if not (self.Options.HealthFrame or DBM.Options.AlwaysShowHealthFrame) then
-			DBM.BossHealth:Hide()
-		end
 	elseif args:IsSpellID(64167, 64163) then	-- Lunatic Gaze (reduces sanity)
 		timerLunaricGaze:Start()
 	elseif args.spellId == 64465 then
@@ -203,7 +190,7 @@ end
 function mod:SPELL_AURA_REMOVED(args)
 	if args.spellId == 63894 then		-- Shadowy Barrier removed from Yogg-Saron (start p3)
 		self:SendSync("Phase3")			-- Sync this because you don't get it in your combat log if you are in brain room.
-	elseif args:IsSpellID(64167, 64163) then	-- Lunatic Gaze
+	elseif args:IsSpellID(64167, 64163) and self:AntiSpam(3, 2) then	-- Lunatic Gaze
 		timerNextLunaricGaze:Start()
 	elseif args:IsSpellID(63830, 63881) and self.Options.SetIconOnFearTarget then   -- Malady of the Mind (Death Coil) 
 		self:SetIcon(args.destName, 0) 

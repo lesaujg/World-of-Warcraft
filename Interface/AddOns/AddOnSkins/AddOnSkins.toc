@@ -4,5 +4,8 @@
 ## Author: Azilroka, ChaoticVoid
 ## SavedVariables: AddOnSkinsDB
 ## OptionalDeps: ProjectAzilroka, ElvUI, BuyEmAll, DSM, Tukui
- 
 Load_AddOnSkins.xml
+ 
+ 
+## X-Tukui-ProjectID: 3
+## X-Tukui-ProjectFolders: AddOnSkins

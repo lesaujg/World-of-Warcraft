@@ -2,7 +2,7 @@ VER 3 0000000000000004 "Mountiful" "INV_Misc_QuestionMark"
 /click [button:1] Mountiful; [button:2] MOrightclickbutton
 END
 VER 3 0000000000000001 "Tank Target" "Ability_DualWield"
-/assist mythfit
+/assist heraklez
 END
 VER 3 0000000000000002 "Turkinator" "INV_Misc_QuestionMark"
 /tar Wild Turkey

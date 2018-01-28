@@ -543,6 +543,7 @@ function Bags:SkinTokens()
 		local Count = _G["BackpackTokenFrameToken"..i.."Count"]
 		local PreviousToken = _G["BackpackTokenFrameToken"..(i - 1)]
 
+		Token:SetParent(self.Bag)
 		Token:SetFrameStrata("HIGH")
 		Token:SetFrameLevel(5)
 		Token:SetScale(1)
@@ -616,7 +617,7 @@ function Bags:SlotUpdate(id, button)
 	if IsQuestItem then
 		button:SetBackdropBorderColor(1, 1, 0)
 	elseif ItemLink then
-		local Rarity = select(3, GetItemInfo(ItemLink)) or 0
+		local Rarity = select(4, GetContainerItemInfo(id, button:GetID())) or 0
 
 		button:SetBackdropBorderColor(GetItemQualityColor(Rarity))
 	else
@@ -1025,9 +1026,13 @@ function Bags:Enable()
 	--self:RegisterEvent("BAG_UPDATE_COOLDOWN")
 	self:SetScript("OnEvent", self.OnEvent)
 
-	-- Force an update, setting colors
-	ToggleAllBags()
-	ToggleAllBags()
+	if T.WoWBuild >= 25860 then
+		function ManageBackpackTokenFrame() end
+	else
+		ToggleAllBags()
+		ToggleAllBags()
+	end
+
 end
 
 Inventory.Bags = Bags
