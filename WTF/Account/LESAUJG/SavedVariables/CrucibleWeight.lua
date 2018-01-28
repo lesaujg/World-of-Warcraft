@@ -1,5 +1,117 @@
 
 CrucibleWeightDB = {
+	["chars"] = {
+		["Galinar - Sisters of Elune"] = {
+			["artifactWeight"] = {
+			},
+			["presets"] = {
+			},
+			["relicCache"] = {
+			},
+		},
+		["Herbinator - Sisters of Elune"] = {
+			["artifactWeight"] = {
+			},
+			["presets"] = {
+			},
+			["relicCache"] = {
+			},
+		},
+		["Orig - Sisters of Elune"] = {
+			["artifactWeight"] = {
+			},
+			["presets"] = {
+			},
+			["relicCache"] = {
+			},
+		},
+		["Mandelbrot - Sisters of Elune"] = {
+			["artifactWeight"] = {
+			},
+			["presets"] = {
+			},
+			["relicCache"] = {
+			},
+		},
+		["Leanara - Sisters of Elune"] = {
+			["artifactWeight"] = {
+			},
+			["presets"] = {
+				[128832] = {
+					{
+						["selected"] = true,
+						["name"] = "Default",
+						["code"] = {
+						},
+					}, -- [1]
+				},
+			},
+			["relicCache"] = {
+				[128832] = {
+				},
+			},
+		},
+		["Uldaris - Sisters of Elune"] = {
+			["artifactWeight"] = {
+			},
+			["presets"] = {
+			},
+			["relicCache"] = {
+			},
+		},
+		["Bracnar - Sisters of Elune"] = {
+			[128826] = {
+			},
+			["artifactWeight"] = {
+			},
+			["presets"] = {
+				[128826] = {
+					{
+						["selected"] = true,
+						["name"] = "Default",
+						["code"] = {
+						},
+					}, -- [1]
+				},
+				[128861] = {
+					{
+						["selected"] = true,
+						["name"] = "Default",
+						["code"] = {
+						},
+					}, -- [1]
+				},
+			},
+			["relicCache"] = {
+				[128826] = {
+					"252922:0-252088:1-190467:0-190449:0-190462:1", -- [1]
+					"252875:1-253070:0-190457:1-190520:0-190467:0", -- [2]
+					"252888:1-252207:0-190514:0-190520:0-190467:0", -- [3]
+				},
+				[128861] = {
+					"252191:0-253111:1-197138:0-197140:0-206910:1", -- [1]
+					"252091:0-253070:1-197140:0-197162:1-197080:0", -- [2]
+					"252888:0-252088:1-197038:0-197080:0-197162:1", -- [3]
+				},
+			},
+		},
+		["Torinar - Sisters of Elune"] = {
+			["artifactWeight"] = {
+			},
+			["presets"] = {
+			},
+			["relicCache"] = {
+			},
+		},
+		["Clothgar - Sisters of Elune"] = {
+			["artifactWeight"] = {
+			},
+			["presets"] = {
+			},
+			["relicCache"] = {
+			},
+		},
+	},
 	["artifacts"] = {
 		[128832] = {
 			[1497] = 238046,
@@ -106,8 +218,8 @@ CrucibleWeightDB = {
 			[870] = 197080,
 			[872] = 197139,
 			[874] = 197160,
-			[1095] = 206910,
 			[1517] = 238051,
+			[1095] = 206910,
 		},
 		[128808] = {
 			[1077] = 224764,
@@ -120,118 +232,6 @@ CrucibleWeightDB = {
 			[1076] = 203673,
 			[1073] = 203638,
 			[1525] = 238053,
-		},
-	},
-	["chars"] = {
-		["Galinar - Sisters of Elune"] = {
-			["artifactWeight"] = {
-			},
-			["presets"] = {
-			},
-			["relicCache"] = {
-			},
-		},
-		["Herbinator - Sisters of Elune"] = {
-			["artifactWeight"] = {
-			},
-			["presets"] = {
-			},
-			["relicCache"] = {
-			},
-		},
-		["Orig - Sisters of Elune"] = {
-			["artifactWeight"] = {
-			},
-			["presets"] = {
-			},
-			["relicCache"] = {
-			},
-		},
-		["Mandelbrot - Sisters of Elune"] = {
-			["artifactWeight"] = {
-			},
-			["presets"] = {
-			},
-			["relicCache"] = {
-			},
-		},
-		["Leanara - Sisters of Elune"] = {
-			["artifactWeight"] = {
-			},
-			["presets"] = {
-				[128832] = {
-					{
-						["selected"] = true,
-						["name"] = "Default",
-						["code"] = {
-						},
-					}, -- [1]
-				},
-			},
-			["relicCache"] = {
-				[128832] = {
-				},
-			},
-		},
-		["Clothgar - Sisters of Elune"] = {
-			["artifactWeight"] = {
-			},
-			["presets"] = {
-			},
-			["relicCache"] = {
-			},
-		},
-		["Torinar - Sisters of Elune"] = {
-			["artifactWeight"] = {
-			},
-			["presets"] = {
-			},
-			["relicCache"] = {
-			},
-		},
-		["Bracnar - Sisters of Elune"] = {
-			[128826] = {
-			},
-			["artifactWeight"] = {
-			},
-			["presets"] = {
-				[128826] = {
-					{
-						["selected"] = true,
-						["name"] = "Default",
-						["code"] = {
-						},
-					}, -- [1]
-				},
-				[128861] = {
-					{
-						["selected"] = true,
-						["name"] = "Default",
-						["code"] = {
-						},
-					}, -- [1]
-				},
-			},
-			["relicCache"] = {
-				[128826] = {
-					"252922:0-252088:1-190467:0-190449:0-190462:1", -- [1]
-					"252875:1-253070:0-190457:1-190520:0-190467:0", -- [2]
-					"252888:1-252207:0-190514:0-190520:0-190467:0", -- [3]
-				},
-				[128861] = {
-					"252191:0-253111:1-197138:0-197140:0-206910:1", -- [1]
-					"252091:0-253070:1-197140:0-197162:1-197080:0", -- [2]
-					"252888:0-252088:1-197038:0-197080:0-197162:1", -- [3]
-				},
-			},
-		},
-		["Uldaris - Sisters of Elune"] = {
-			["artifactWeight"] = {
-			},
-			["presets"] = {
-			},
-			["relicCache"] = {
-			},
 		},
 	},
 }
