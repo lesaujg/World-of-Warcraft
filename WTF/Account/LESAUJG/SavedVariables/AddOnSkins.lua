@@ -41,8 +41,8 @@ AddOnSkinsDB = {
 		},
 		["Mandelbrot - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
-			["Blizzard_Transmogrify"] = true,
 			["TalentSetManager"] = true,
+			["Blizzard_Transmogrify"] = true,
 			["WeakAuras"] = true,
 			["MasterPlan"] = true,
 		},
@@ -74,12 +74,12 @@ AddOnSkinsDB = {
 		},
 		["Clothgar - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
+			["Blizzard_Transmogrify"] = true,
 			["TalentSetManager"] = true,
-			["Bagnon"] = true,
+			["WeakAuras"] = true,
 			["Details"] = true,
 			["TomeOfTeleportation"] = true,
-			["Blizzard_Transmogrify"] = true,
-			["WeakAuras"] = true,
+			["Bagnon"] = true,
 		},
 		["Torinar - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,

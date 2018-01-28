@@ -1,11 +1,4 @@
 Version: 1
-Frame: SkadaBarWindowSkada
-FrameLevel: 5
-Anchor: BOTTOMLEFT
-X: 45
-Y: 207
-W: 248
-H: 223
 Frame: BaudManifestDisplay2
 FrameLevel: 43
 Anchor: BOTTOM

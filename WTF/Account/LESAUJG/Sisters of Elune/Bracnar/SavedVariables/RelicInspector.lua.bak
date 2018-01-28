@@ -202,7 +202,7 @@ RelicInspectorCharDB = {
 					}, -- [3]
 					["crucibled"] = true,
 					["level"] = 74,
-					["timestamp"] = 269404.336,
+					["timestamp"] = 53070.503,
 				},
 				[128861] = {
 					{
@@ -399,7 +399,7 @@ RelicInspectorCharDB = {
 					}, -- [3]
 					["crucibled"] = true,
 					["level"] = 75,
-					["timestamp"] = 269334.657,
+					["timestamp"] = 273049.708,
 				},
 				[128808] = {
 					["timestamp"] = 269300.419,
