@@ -72,12 +72,12 @@ AskMrRobotDb3 = {
 			},
 		},
 	},
-	["global"] = {
-		["Region"] = "US",
-	},
 	["profileKeys"] = {
 		["Noeraa - Sisters of Elune"] = "Noeraa - Sisters of Elune",
 		["Torinara - Sisters of Elune"] = "Torinara - Sisters of Elune",
+	},
+	["global"] = {
+		["Region"] = "US",
 	},
 	["profiles"] = {
 		["Noeraa - Sisters of Elune"] = {
@@ -95,6 +95,12 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
+					[1648] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
+					},
 					[1530] = {
 						[14] = false,
 						[16] = false,
@@ -102,12 +108,6 @@ AskMrRobotDb3 = {
 						[15] = false,
 					},
 					[1712] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
-					[1648] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -135,13 +135,17 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1469] = {
+					[1572] = {
 					},
-					[1064] = {
+					[1469] = {
 					},
 					[1503] = {
 					},
-					[646] = {
+					[1520] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
 					},
 					[1676] = {
 						[14] = false,
@@ -157,13 +161,9 @@ AskMrRobotDb3 = {
 					},
 					[870] = {
 					},
-					[1520] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
+					[646] = {
 					},
-					[1572] = {
+					[1064] = {
 					},
 				},
 			},

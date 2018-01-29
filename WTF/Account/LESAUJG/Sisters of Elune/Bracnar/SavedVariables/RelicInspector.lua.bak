@@ -12,55 +12,55 @@ RelicInspectorCharDB = {
 						["traits"] = {
 							{
 								["requiredArtifactLevel"] = 0,
-								["canChoose"] = false,
-								["tier"] = 1,
-								["powerID"] = 1739,
 								["isChosen"] = true,
+								["canChoose"] = false,
+								["powerID"] = 1739,
+								["tier"] = 1,
 								["icon"] = 1033184,
 								["spellID"] = 250879,
 							}, -- [1]
 							{
 								["requiredArtifactLevel"] = 60,
-								["canChoose"] = false,
-								["tier"] = 2,
-								["powerID"] = 1781,
 								["isChosen"] = false,
+								["canChoose"] = false,
+								["powerID"] = 1781,
+								["tier"] = 2,
 								["icon"] = 839910,
 								["spellID"] = 252922,
 							}, -- [2]
 							{
 								["requiredArtifactLevel"] = 60,
-								["canChoose"] = false,
-								["tier"] = 2,
-								["powerID"] = 1770,
 								["isChosen"] = true,
+								["canChoose"] = false,
+								["powerID"] = 1770,
+								["tier"] = 2,
 								["icon"] = 132307,
 								["spellID"] = 252088,
 							}, -- [3]
 							{
 								["requiredArtifactLevel"] = 69,
-								["canChoose"] = false,
-								["tier"] = 3,
-								["powerID"] = 315,
 								["isChosen"] = false,
+								["canChoose"] = false,
+								["powerID"] = 315,
+								["tier"] = 3,
 								["icon"] = 132330,
 								["spellID"] = 190467,
 							}, -- [4]
 							{
 								["requiredArtifactLevel"] = 69,
-								["canChoose"] = false,
-								["tier"] = 3,
-								["powerID"] = 312,
 								["isChosen"] = false,
+								["canChoose"] = false,
+								["powerID"] = 312,
+								["tier"] = 3,
 								["icon"] = 1033497,
 								["spellID"] = 190449,
 							}, -- [5]
 							{
 								["requiredArtifactLevel"] = 69,
-								["canChoose"] = false,
-								["tier"] = 3,
-								["powerID"] = 314,
 								["isChosen"] = true,
+								["canChoose"] = false,
+								["powerID"] = 314,
+								["tier"] = 3,
 								["icon"] = 132329,
 								["spellID"] = 190462,
 							}, -- [6]
@@ -76,55 +76,55 @@ RelicInspectorCharDB = {
 						["traits"] = {
 							{
 								["requiredArtifactLevel"] = 0,
-								["canChoose"] = false,
-								["tier"] = 1,
-								["powerID"] = 1739,
 								["isChosen"] = true,
+								["canChoose"] = false,
+								["powerID"] = 1739,
+								["tier"] = 1,
 								["icon"] = 1033184,
 								["spellID"] = 250879,
 							}, -- [1]
 							{
 								["requiredArtifactLevel"] = 63,
-								["canChoose"] = false,
-								["tier"] = 2,
-								["powerID"] = 1778,
 								["isChosen"] = true,
+								["canChoose"] = false,
+								["powerID"] = 1778,
+								["tier"] = 2,
 								["icon"] = 136146,
 								["spellID"] = 252875,
 							}, -- [2]
 							{
 								["requiredArtifactLevel"] = 63,
-								["canChoose"] = false,
-								["tier"] = 2,
-								["powerID"] = 1782,
 								["isChosen"] = false,
+								["canChoose"] = false,
+								["powerID"] = 1782,
+								["tier"] = 2,
 								["icon"] = 1360764,
 								["spellID"] = 253070,
 							}, -- [3]
 							{
 								["requiredArtifactLevel"] = 72,
-								["canChoose"] = false,
-								["tier"] = 3,
-								["powerID"] = 313,
 								["isChosen"] = true,
+								["canChoose"] = false,
+								["powerID"] = 313,
+								["tier"] = 3,
 								["icon"] = 1376043,
 								["spellID"] = 190457,
 							}, -- [4]
 							{
 								["requiredArtifactLevel"] = 72,
-								["canChoose"] = false,
-								["tier"] = 3,
-								["powerID"] = 318,
 								["isChosen"] = false,
+								["canChoose"] = false,
+								["powerID"] = 318,
+								["tier"] = 3,
 								["icon"] = 132217,
 								["spellID"] = 190520,
 							}, -- [5]
 							{
 								["requiredArtifactLevel"] = 72,
-								["canChoose"] = false,
-								["tier"] = 3,
-								["powerID"] = 315,
 								["isChosen"] = false,
+								["canChoose"] = false,
+								["powerID"] = 315,
+								["tier"] = 3,
 								["icon"] = 132330,
 								["spellID"] = 190467,
 							}, -- [6]
@@ -140,55 +140,55 @@ RelicInspectorCharDB = {
 						["traits"] = {
 							{
 								["requiredArtifactLevel"] = 0,
-								["canChoose"] = false,
-								["tier"] = 1,
-								["powerID"] = 1739,
 								["isChosen"] = true,
+								["canChoose"] = false,
+								["powerID"] = 1739,
+								["tier"] = 1,
 								["icon"] = 1033184,
 								["spellID"] = 250879,
 							}, -- [1]
 							{
 								["requiredArtifactLevel"] = 66,
-								["canChoose"] = false,
-								["tier"] = 2,
-								["powerID"] = 1779,
 								["isChosen"] = true,
+								["canChoose"] = false,
+								["powerID"] = 1779,
+								["tier"] = 2,
 								["icon"] = 1394892,
 								["spellID"] = 252888,
 							}, -- [2]
 							{
 								["requiredArtifactLevel"] = 66,
-								["canChoose"] = false,
-								["tier"] = 2,
-								["powerID"] = 1775,
 								["isChosen"] = false,
+								["canChoose"] = false,
+								["powerID"] = 1775,
+								["tier"] = 2,
 								["icon"] = 458412,
 								["spellID"] = 252207,
 							}, -- [3]
 							{
 								["requiredArtifactLevel"] = 75,
-								["canChoose"] = false,
-								["tier"] = 3,
-								["powerID"] = 317,
 								["isChosen"] = false,
+								["canChoose"] = false,
+								["powerID"] = 317,
+								["tier"] = 3,
 								["icon"] = 132294,
 								["spellID"] = 190514,
 							}, -- [4]
 							{
 								["requiredArtifactLevel"] = 75,
+								["isChosen"] = true,
 								["canChoose"] = false,
-								["tier"] = 3,
 								["powerID"] = 318,
-								["isChosen"] = false,
+								["tier"] = 3,
 								["icon"] = 132217,
 								["spellID"] = 190520,
 							}, -- [5]
 							{
 								["requiredArtifactLevel"] = 75,
-								["canChoose"] = false,
-								["tier"] = 3,
-								["powerID"] = 315,
 								["isChosen"] = false,
+								["canChoose"] = false,
+								["powerID"] = 315,
+								["tier"] = 3,
 								["icon"] = 132330,
 								["spellID"] = 190467,
 							}, -- [6]
@@ -201,8 +201,8 @@ RelicInspectorCharDB = {
 						},
 					}, -- [3]
 					["crucibled"] = true,
-					["level"] = 74,
-					["timestamp"] = 53070.503,
+					["level"] = 75,
+					["timestamp"] = 61250.306,
 				},
 				[128861] = {
 					{
@@ -399,7 +399,7 @@ RelicInspectorCharDB = {
 					}, -- [3]
 					["crucibled"] = true,
 					["level"] = 75,
-					["timestamp"] = 273049.708,
+					["timestamp"] = 60566.226,
 				},
 				[128808] = {
 					["timestamp"] = 269300.419,

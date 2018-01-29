@@ -186,7 +186,7 @@ RelicInspectorCharDB = {
 								["canChoose"] = false,
 								["powerID"] = 318,
 								["icon"] = 132217,
-								["isChosen"] = false,
+								["isChosen"] = true,
 								["spellID"] = 190520,
 							}, -- [5]
 							{
@@ -201,8 +201,8 @@ RelicInspectorCharDB = {
 						},
 					}, -- [3]
 					["crucibled"] = true,
-					["timestamp"] = 55142.4,
-					["level"] = 74,
+					["timestamp"] = 64334.576,
+					["level"] = 75,
 				},
 				[128861] = {
 					{
@@ -398,7 +398,7 @@ RelicInspectorCharDB = {
 						},
 					}, -- [3]
 					["crucibled"] = true,
-					["timestamp"] = 273049.708,
+					["timestamp"] = 64539.27,
 					["level"] = 75,
 				},
 				[128808] = {
