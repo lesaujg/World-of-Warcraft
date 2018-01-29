@@ -2,7 +2,7 @@
 TukuiData = {
 	["Gold"] = {
 		["Sisters of Elune"] = {
-			["Bracnar"] = 1637640067,
+			["Bracnar"] = 1649608092,
 			["Ghiaccioli"] = 557309184,
 			["Mandelbrot"] = 694525,
 			["Torinar"] = 94499262,
@@ -207,17 +207,17 @@ TukuiData = {
 					false, -- [1]
 					0, -- [2]
 				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
-				},
 				["Friends"] = {
 					true, -- [1]
 					3, -- [2]
 				},
-				["Memory"] = {
+				["FPS & MS"] = {
 					true, -- [1]
-					5, -- [2]
+					4, -- [2]
+				},
+				["Currency"] = {
+					false, -- [1]
+					0, -- [2]
 				},
 				["Time"] = {
 					true, -- [1]
@@ -239,9 +239,9 @@ TukuiData = {
 					true, -- [1]
 					7, -- [2]
 				},
-				["Currency"] = {
-					false, -- [1]
-					0, -- [2]
+				["Memory"] = {
+					true, -- [1]
+					5, -- [2]
 				},
 			},
 			["HideBar5"] = false,

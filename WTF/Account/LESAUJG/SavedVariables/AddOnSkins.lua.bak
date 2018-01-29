@@ -99,10 +99,10 @@ AddOnSkinsDB = {
 			["Blizzard_WorldStateCaptureBar"] = true,
 			["TalentSetManager"] = true,
 			["Bagnon"] = true,
-			["Details"] = true,
+			["TomeOfTeleportation"] = true,
 			["Blizzard_Transmogrify"] = true,
 			["WeakAuras"] = true,
-			["TomeOfTeleportation"] = true,
+			["Details"] = true,
 		},
 	},
 }
