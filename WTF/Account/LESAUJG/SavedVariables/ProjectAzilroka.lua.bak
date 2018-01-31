@@ -2,19 +2,22 @@
 ProjectAzilrokaDB = {
 	["profileKeys"] = {
 		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
 		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
 		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
 		["Mandelbrot - Sisters of Elune"] = "Mandelbrot - Sisters of Elune",
-		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
-		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
-		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
+		["Edaka - Sisters of Elune"] = "Edaka - Sisters of Elune",
 		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
 		["Herbinator - Sisters of Elune"] = "Herbinator - Sisters of Elune",
+		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
 		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
 		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
 	},
 	["profiles"] = {
 		["Galinar - Sisters of Elune"] = {
+		},
+		["Uldaris - Sisters of Elune"] = {
 		},
 		["Ghiaccioli - Sisters of Elune"] = {
 		},
@@ -22,15 +25,15 @@ ProjectAzilrokaDB = {
 		},
 		["Mandelbrot - Sisters of Elune"] = {
 		},
-		["Leanara - Sisters of Elune"] = {
-		},
-		["Uldaris - Sisters of Elune"] = {
-		},
-		["Belrath - Sisters of Elune"] = {
+		["Edaka - Sisters of Elune"] = {
 		},
 		["Torinar - Sisters of Elune"] = {
 		},
+		["Belrath - Sisters of Elune"] = {
+		},
 		["Herbinator - Sisters of Elune"] = {
+		},
+		["Leanara - Sisters of Elune"] = {
 		},
 		["Bracnar - Sisters of Elune"] = {
 		},
@@ -41,19 +44,22 @@ ProjectAzilrokaDB = {
 SquareMinimapButtonsDB = {
 	["profileKeys"] = {
 		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
 		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
 		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
 		["Mandelbrot - Sisters of Elune"] = "Mandelbrot - Sisters of Elune",
-		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
-		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
-		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
+		["Edaka - Sisters of Elune"] = "Edaka - Sisters of Elune",
 		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
 		["Herbinator - Sisters of Elune"] = "Herbinator - Sisters of Elune",
+		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
 		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
 		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
 	},
 	["profiles"] = {
 		["Galinar - Sisters of Elune"] = {
+		},
+		["Uldaris - Sisters of Elune"] = {
 		},
 		["Ghiaccioli - Sisters of Elune"] = {
 		},
@@ -61,15 +67,15 @@ SquareMinimapButtonsDB = {
 		},
 		["Mandelbrot - Sisters of Elune"] = {
 		},
-		["Leanara - Sisters of Elune"] = {
-		},
-		["Uldaris - Sisters of Elune"] = {
-		},
-		["Belrath - Sisters of Elune"] = {
+		["Edaka - Sisters of Elune"] = {
 		},
 		["Torinar - Sisters of Elune"] = {
 		},
+		["Belrath - Sisters of Elune"] = {
+		},
 		["Herbinator - Sisters of Elune"] = {
+		},
+		["Leanara - Sisters of Elune"] = {
 		},
 		["Bracnar - Sisters of Elune"] = {
 		},
@@ -80,19 +86,22 @@ SquareMinimapButtonsDB = {
 MovableFramesDB = {
 	["profileKeys"] = {
 		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
 		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
 		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
 		["Mandelbrot - Sisters of Elune"] = "Mandelbrot - Sisters of Elune",
-		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
-		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
-		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
+		["Edaka - Sisters of Elune"] = "Edaka - Sisters of Elune",
 		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
 		["Herbinator - Sisters of Elune"] = "Herbinator - Sisters of Elune",
+		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
 		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
 		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
 	},
 	["profiles"] = {
 		["Galinar - Sisters of Elune"] = {
+		},
+		["Uldaris - Sisters of Elune"] = {
 		},
 		["Ghiaccioli - Sisters of Elune"] = {
 		},
@@ -100,15 +109,15 @@ MovableFramesDB = {
 		},
 		["Mandelbrot - Sisters of Elune"] = {
 		},
-		["Leanara - Sisters of Elune"] = {
-		},
-		["Uldaris - Sisters of Elune"] = {
-		},
-		["Belrath - Sisters of Elune"] = {
+		["Edaka - Sisters of Elune"] = {
 		},
 		["Torinar - Sisters of Elune"] = {
 		},
+		["Belrath - Sisters of Elune"] = {
+		},
 		["Herbinator - Sisters of Elune"] = {
+		},
+		["Leanara - Sisters of Elune"] = {
 		},
 		["Bracnar - Sisters of Elune"] = {
 		},
@@ -119,19 +128,22 @@ MovableFramesDB = {
 EnhancedFriendsListDB = {
 	["profileKeys"] = {
 		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
 		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
 		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
 		["Mandelbrot - Sisters of Elune"] = "Mandelbrot - Sisters of Elune",
-		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
-		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
-		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
+		["Edaka - Sisters of Elune"] = "Edaka - Sisters of Elune",
 		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
 		["Herbinator - Sisters of Elune"] = "Herbinator - Sisters of Elune",
+		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
 		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
 		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
 	},
 	["profiles"] = {
 		["Galinar - Sisters of Elune"] = {
+		},
+		["Uldaris - Sisters of Elune"] = {
 		},
 		["Ghiaccioli - Sisters of Elune"] = {
 		},
@@ -139,15 +151,15 @@ EnhancedFriendsListDB = {
 		},
 		["Mandelbrot - Sisters of Elune"] = {
 		},
-		["Leanara - Sisters of Elune"] = {
-		},
-		["Uldaris - Sisters of Elune"] = {
-		},
-		["Belrath - Sisters of Elune"] = {
+		["Edaka - Sisters of Elune"] = {
 		},
 		["Torinar - Sisters of Elune"] = {
 		},
+		["Belrath - Sisters of Elune"] = {
+		},
 		["Herbinator - Sisters of Elune"] = {
+		},
+		["Leanara - Sisters of Elune"] = {
 		},
 		["Bracnar - Sisters of Elune"] = {
 		},
@@ -158,19 +170,22 @@ EnhancedFriendsListDB = {
 EnhancedShadowsDB = {
 	["profileKeys"] = {
 		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
 		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
 		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
 		["Mandelbrot - Sisters of Elune"] = "Mandelbrot - Sisters of Elune",
-		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
-		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
-		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
+		["Edaka - Sisters of Elune"] = "Edaka - Sisters of Elune",
 		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
 		["Herbinator - Sisters of Elune"] = "Herbinator - Sisters of Elune",
+		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
 		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
 		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
 	},
 	["profiles"] = {
 		["Galinar - Sisters of Elune"] = {
+		},
+		["Uldaris - Sisters of Elune"] = {
 		},
 		["Ghiaccioli - Sisters of Elune"] = {
 		},
@@ -178,15 +193,15 @@ EnhancedShadowsDB = {
 		},
 		["Mandelbrot - Sisters of Elune"] = {
 		},
-		["Leanara - Sisters of Elune"] = {
-		},
-		["Uldaris - Sisters of Elune"] = {
-		},
-		["Belrath - Sisters of Elune"] = {
+		["Edaka - Sisters of Elune"] = {
 		},
 		["Torinar - Sisters of Elune"] = {
 		},
+		["Belrath - Sisters of Elune"] = {
+		},
 		["Herbinator - Sisters of Elune"] = {
+		},
+		["Leanara - Sisters of Elune"] = {
 		},
 		["Bracnar - Sisters of Elune"] = {
 		},
@@ -197,19 +212,22 @@ EnhancedShadowsDB = {
 DragonOverlayDB = {
 	["profileKeys"] = {
 		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
 		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
 		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
 		["Mandelbrot - Sisters of Elune"] = "Mandelbrot - Sisters of Elune",
-		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
-		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
-		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
+		["Edaka - Sisters of Elune"] = "Edaka - Sisters of Elune",
 		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
 		["Herbinator - Sisters of Elune"] = "Herbinator - Sisters of Elune",
+		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
 		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
 		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
 	},
 	["profiles"] = {
 		["Galinar - Sisters of Elune"] = {
+		},
+		["Uldaris - Sisters of Elune"] = {
 		},
 		["Ghiaccioli - Sisters of Elune"] = {
 		},
@@ -217,15 +235,15 @@ DragonOverlayDB = {
 		},
 		["Mandelbrot - Sisters of Elune"] = {
 		},
-		["Leanara - Sisters of Elune"] = {
-		},
-		["Uldaris - Sisters of Elune"] = {
-		},
-		["Belrath - Sisters of Elune"] = {
+		["Edaka - Sisters of Elune"] = {
 		},
 		["Torinar - Sisters of Elune"] = {
 		},
+		["Belrath - Sisters of Elune"] = {
+		},
 		["Herbinator - Sisters of Elune"] = {
+		},
+		["Leanara - Sisters of Elune"] = {
 		},
 		["Bracnar - Sisters of Elune"] = {
 		},
@@ -236,14 +254,15 @@ DragonOverlayDB = {
 stAddonManagerDB = {
 	["profileKeys"] = {
 		["Galinar - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
 		["Ghiaccioli - Sisters of Elune"] = "Default",
 		["Orig - Sisters of Elune"] = "Default",
 		["Mandelbrot - Sisters of Elune"] = "Default",
-		["Leanara - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
-		["Belrath - Sisters of Elune"] = "Default",
+		["Edaka - Sisters of Elune"] = "Default",
 		["Torinar - Sisters of Elune"] = "Default",
+		["Belrath - Sisters of Elune"] = "Default",
 		["Herbinator - Sisters of Elune"] = "Default",
+		["Leanara - Sisters of Elune"] = "Default",
 		["Bracnar - Sisters of Elune"] = "Default",
 		["Clothgar - Sisters of Elune"] = "Default",
 	},
@@ -257,14 +276,15 @@ stAddonManagerProfilesDB = {
 BigButtonsDB = {
 	["profileKeys"] = {
 		["Galinar - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
 		["Ghiaccioli - Sisters of Elune"] = "Default",
 		["Orig - Sisters of Elune"] = "Default",
 		["Mandelbrot - Sisters of Elune"] = "Default",
-		["Leanara - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
-		["Belrath - Sisters of Elune"] = "Default",
+		["Edaka - Sisters of Elune"] = "Default",
 		["Torinar - Sisters of Elune"] = "Default",
+		["Belrath - Sisters of Elune"] = "Default",
 		["Herbinator - Sisters of Elune"] = "Default",
+		["Leanara - Sisters of Elune"] = "Default",
 		["Bracnar - Sisters of Elune"] = "Default",
 		["Clothgar - Sisters of Elune"] = "Default",
 	},

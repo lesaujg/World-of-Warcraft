@@ -7,9 +7,14 @@ RelicInspectorCharDB = {
 		["Orig - Sisters of Elune"] = {
 			["artifactCache"] = {
 				[128938] = {
-					["timestamp"] = 58041.369,
-					["crucibled"] = false,
+					["timestamp"] = 99698.647,
 					["level"] = 1,
+					["crucibled"] = false,
+				},
+				[128940] = {
+					["timestamp"] = 100803.11,
+					["crucibled"] = false,
+					["level"] = 0,
 				},
 			},
 		},

@@ -15,93 +15,103 @@ FactionAddictConfig = {
 	["CB_OPTION_HIDEINACTIVE_V2"] = false,
 	["CB_CATEGORY_WOTLK"] = true,
 	["CB_STANDING_NEUTRAL0"] = true,
-	["CB_OPTION_AUTOBAR"] = true,
-	["CB_FILTER_SHOW_HO"] = true,
+	["CB_STANDING_HATED"] = true,
+	["CB_FILTER_SHOW_AO"] = true,
 	["CB_CATEGORY_WOD"] = true,
 	["CB_CATEGORY_LG"] = true,
-	["CB_FILTER_SHOW_AO"] = true,
-	["CB_STANDING_HATED"] = true,
+	["CB_FILTER_SHOW_HO"] = true,
+	["CB_OPTION_AUTOBAR"] = true,
 }
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
+		["date"] = "Wednesday 1/31",
+		["rows"] = 1,
+	}, -- [1]
+	{
+		["date"] = "Tuesday 1/30",
+		["rows"] = 1,
+	}, -- [2]
+	{
 		["date"] = "Tuesday 1/23",
 		["rows"] = 7,
-	}, -- [1]
+	}, -- [3]
 	{
 		["date"] = "Sunday 1/21",
 		["rows"] = 2,
-	}, -- [2]
+	}, -- [4]
 	{
 		["date"] = "Friday 1/19",
 		["rows"] = 4,
-	}, -- [3]
+	}, -- [5]
 	{
 		["date"] = "Thursday 1/18",
 		["rows"] = 3,
-	}, -- [4]
+	}, -- [6]
 	{
 		["date"] = "Wednesday 1/17",
 		["rows"] = 3,
-	}, -- [5]
+	}, -- [7]
 	{
 		["date"] = "Monday 1/15",
 		["rows"] = 3,
-	}, -- [6]
+	}, -- [8]
 	{
 		["date"] = "Sunday 1/14",
 		["rows"] = 3,
-	}, -- [7]
+	}, -- [9]
 	{
 		["date"] = "Saturday 1/13",
 		["rows"] = 3,
-	}, -- [8]
+	}, -- [10]
 	{
 		["date"] = "Thursday 1/11",
 		["rows"] = 3,
-	}, -- [9]
+	}, -- [11]
 	{
 		["date"] = "Sunday 1/7",
 		["rows"] = 3,
-	}, -- [10]
+	}, -- [12]
 	{
 		["date"] = "Monday 4/10",
 		["rows"] = 1,
-	}, -- [11]
+	}, -- [13]
 	{
 		["date"] = "Thursday 3/30",
 		["rows"] = 1,
-	}, -- [12]
+	}, -- [14]
 	{
 		["date"] = "Thursday 3/23",
 		["rows"] = 1,
-	}, -- [13]
+	}, -- [15]
 	{
 		["date"] = "Friday 2/24",
 		["rows"] = 1,
-	}, -- [14]
+	}, -- [16]
 	{
 		["date"] = "Wednesday 2/8",
 		["rows"] = 1,
-	}, -- [15]
+	}, -- [17]
 	{
 		["date"] = "Friday 2/3",
 		["rows"] = 1,
-	}, -- [16]
+	}, -- [18]
 	{
 		["date"] = "Friday 1/27",
 		["rows"] = 1,
-	}, -- [17]
+	}, -- [19]
 	{
 		["date"] = "Thursday 1/19",
 		["rows"] = 1,
-	}, -- [18]
-	{
-		["date"] = "Saturday 1/14",
-		["rows"] = 1,
-	}, -- [19]
+	}, -- [20]
 }
 FactionAddictLogEntries = {
+	{
+		["Shado-Pan Assault"] = 606,
+	}, -- [1]
+	{
+		["Emperor Shaohao"] = 1130,
+	}, -- [2]
 	{
 		["The Nightfallen"] = 125,
 		["Kirin Tor"] = 97,
@@ -110,57 +120,51 @@ FactionAddictLogEntries = {
 		["Shado-Pan Assault"] = 618,
 		["Armies of Legionfall"] = 260,
 		["Cult of Malicor"] = 1125,
-	}, -- [1]
+	}, -- [3]
 	{
 		["Shado-Pan"] = 1000,
 		["Kirin Tor Offensive"] = 450,
-	}, -- [2]
+	}, -- [4]
 	{
 		["The Wardens"] = 300,
 		["The Nightfallen"] = 500,
 		["Cult of Malicor"] = 1000,
 		["Highmountain Tribe"] = 300,
-	}, -- [3]
+	}, -- [5]
 	{
 		["The Wardens"] = 450,
 		["Court of Farondis"] = 675,
 		["Cult of Malicor"] = 750,
-	}, -- [4]
+	}, -- [6]
 	{
 		["Cult of Malicor"] = 750,
 		["Valarjar"] = 600,
 		["The Wardens"] = 300,
-	}, -- [5]
+	}, -- [7]
 	{
 		["The Wardens"] = 600,
 		["Cult of Malicor"] = 750,
 		["Highmountain Tribe"] = 750,
-	}, -- [6]
+	}, -- [8]
 	{
 		["The Wardens"] = 300,
 		["Cult of Malicor"] = 750,
 		["Dreamweavers"] = 600,
-	}, -- [7]
+	}, -- [9]
 	{
 		["Cult of Malicor"] = 750,
 		["Court of Farondis"] = 525,
 		["The Wardens"] = 150,
-	}, -- [8]
+	}, -- [10]
 	{
 		["The Wardens"] = 450,
 		["Cult of Malicor"] = 625,
 		["Highmountain Tribe"] = 600,
-	}, -- [9]
+	}, -- [11]
 	{
 		["Cult of Malicor"] = 1000,
 		["The Wardens"] = 300,
 		["Dreamweavers"] = 375,
-	}, -- [10]
-	{
-		["The Ashen Verdict"] = 3000,
-	}, -- [11]
-	{
-		["The Ashen Verdict"] = 3000,
 	}, -- [12]
 	{
 		["The Ashen Verdict"] = 3000,
@@ -183,6 +187,9 @@ FactionAddictLogEntries = {
 	{
 		["The Ashen Verdict"] = 3000,
 	}, -- [19]
+	{
+		["The Ashen Verdict"] = 3000,
+	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
 	[1737] = false,
@@ -265,51 +272,51 @@ FactionAddictConfigIsInactive = {
 	[922] = false,
 	[1713] = false,
 	[510] = false,
-	[2101] = false,
-	[2100] = false,
+	[70] = false,
+	[2135] = false,
 	[1204] = false,
 	[970] = false,
 	[1077] = false,
-	[2098] = false,
+	[1815] = false,
 	[1715] = false,
 	[1269] = false,
 	[2099] = false,
-	[2018] = false,
+	[730] = false,
 	[1716] = false,
 	[1270] = false,
-	[1098] = false,
-	[1708] = false,
+	[1353] = false,
+	[1681] = false,
 	[1717] = false,
 	[1271] = false,
 	[2097] = false,
 	[1358] = false,
 	[1718] = false,
 	[1272] = false,
-	[933] = false,
-	[1104] = false,
+	[1352] = false,
+	[1900] = false,
 	[989] = false,
 	[1273] = false,
 	[1337] = false,
 	[1888] = false,
 	[1975] = false,
-	[1682] = false,
+	[1359] = false,
 	[1848] = false,
 	[1847] = false,
 	[990] = false,
 	[1275] = false,
 	[1849] = false,
 	[576] = false,
-	[1085] = false,
+	[1710] = false,
 	[1276] = false,
 	[1850] = false,
-	[609] = false,
+	[2165] = false,
 	[369] = false,
 	[1277] = false,
 	[1341] = false,
 	[577] = false,
-	[2165] = false,
+	[609] = false,
 	[1278] = false,
-	[1690] = false,
+	[1711] = false,
 	[1388] = false,
 	[2045] = false,
 	[1279] = false,
@@ -318,46 +325,46 @@ FactionAddictConfigIsInactive = {
 	[1216] = false,
 	[1280] = false,
 	[2170] = false,
-	[1345] = false,
+	[1090] = false,
 	[93] = false,
 	[1281] = false,
-	[1090] = false,
-	[1859] = false,
-	[1133] = false,
-	[1282] = false,
+	[1345] = false,
+	[1094] = false,
 	[1091] = false,
+	[1282] = false,
+	[930] = false,
 	[270] = false,
 	[1984] = false,
 	[1283] = false,
-	[1376] = false,
-	[1156] = false,
-	[1738] = false,
-	[1739] = false,
-	[1174] = false,
 	[1714] = false,
+	[1156] = false,
+	[1174] = false,
+	[1739] = false,
+	[1738] = false,
+	[1376] = false,
 	[1731] = false,
-	[930] = false,
-	[1094] = false,
+	[1133] = false,
+	[1859] = false,
 	[1158] = false,
 	[1732] = false,
 	[1031] = false,
 	[932] = false,
-	[1711] = false,
+	[1690] = false,
 	[1733] = false,
-	[1710] = false,
+	[1085] = false,
 	[1351] = false,
-	[1359] = false,
+	[1682] = false,
 	[1989] = false,
-	[1900] = false,
-	[1352] = false,
+	[1104] = false,
+	[933] = false,
 	[1416] = false,
 	[1735] = false,
-	[1681] = false,
-	[1353] = false,
-	[730] = false,
+	[1708] = false,
+	[1098] = false,
+	[2018] = false,
 	[1736] = false,
-	[1815] = false,
+	[2098] = false,
 	[934] = false,
-	[2135] = false,
-	[70] = false,
+	[2100] = false,
+	[2101] = false,
 }

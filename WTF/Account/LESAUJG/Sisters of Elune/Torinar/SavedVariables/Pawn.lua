@@ -4,6 +4,7 @@ PawnOptions = {
 	["LastPlayerFullName"] = "Torinar-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128289] = {
 			["Relics"] = {
@@ -40,7 +41,6 @@ PawnOptions = {
 			["Name"] = "Strom'kar, the Warbreaker",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "WARRIOR",

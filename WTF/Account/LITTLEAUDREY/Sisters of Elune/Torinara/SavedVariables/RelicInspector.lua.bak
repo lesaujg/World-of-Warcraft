@@ -7,9 +7,9 @@ RelicInspectorCharDB = {
 		["Torinara - Sisters of Elune"] = {
 			["artifactCache"] = {
 				[128819] = {
-					["timestamp"] = 55405.56,
-					["level"] = 54,
+					["timestamp"] = 58887.867,
 					["crucibled"] = false,
+					["level"] = 54,
 				},
 			},
 		},

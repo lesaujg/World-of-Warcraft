@@ -47,7 +47,7 @@ AskMrRobotDb3 = {
 			},
 			["Logging"] = {
 				["LastDiff"] = 0,
-				["LastZone"] = "Broken Isles",
+				["LastZone"] = "Pandaria",
 			},
 			["Equipped"] = {
 				[2] = {
@@ -72,12 +72,12 @@ AskMrRobotDb3 = {
 			},
 		},
 	},
-	["global"] = {
-		["Region"] = "US",
-	},
 	["profileKeys"] = {
 		["Noeraa - Sisters of Elune"] = "Noeraa - Sisters of Elune",
 		["Torinara - Sisters of Elune"] = "Torinara - Sisters of Elune",
+	},
+	["global"] = {
+		["Region"] = "US",
 	},
 	["profiles"] = {
 		["Noeraa - Sisters of Elune"] = {
@@ -95,6 +95,12 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
+					[1648] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
+					},
 					[1712] = {
 						[14] = false,
 						[16] = false,
@@ -102,12 +108,6 @@ AskMrRobotDb3 = {
 						[15] = false,
 					},
 					[1530] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
-					[1648] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -135,15 +135,19 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1098] = {
+					[1572] = {
+					},
+					[1520] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
 					},
 					[1064] = {
 					},
-					[1469] = {
+					[1098] = {
 					},
-					[1503] = {
-					},
-					[646] = {
+					[870] = {
 					},
 					[1676] = {
 						[14] = false,
@@ -157,15 +161,11 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[870] = {
+					[646] = {
 					},
-					[1520] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
+					[1503] = {
 					},
-					[1572] = {
+					[1469] = {
 					},
 				},
 			},

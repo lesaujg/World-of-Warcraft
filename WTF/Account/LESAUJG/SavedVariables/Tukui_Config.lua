@@ -52,8 +52,6 @@ TukuiConfigShared = {
 				["UIScale"] = 0.64,
 			},
 		},
-		["Herbinator"] = {
-		},
 		["Uldaris"] = {
 			["Bags"] = {
 				["Enable"] = false,
@@ -65,12 +63,16 @@ TukuiConfigShared = {
 				["HotKey"] = true,
 			},
 		},
+		["Herbinator"] = {
+		},
+		["Belrath"] = {
+		},
 		["Galinar"] = {
 			["General"] = {
 				["UIScale"] = 0.64,
 			},
 		},
-		["Belrath"] = {
+		["Edaka"] = {
 		},
 		["Sanjuri"] = {
 		},

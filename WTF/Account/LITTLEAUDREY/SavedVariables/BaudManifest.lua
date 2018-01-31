@@ -5,14 +5,14 @@ BaudManifestData = {
 		["FillSpecials"] = true,
 		["ShowArrows"] = true,
 		["ShowBank"] = true,
-		["Scale"] = 100,
+		["ItemNameFirst"] = false,
 		["HideEquipped"] = true,
-		["ReplaceBlizBags"] = true,
+		["HideBlizBank"] = true,
 		["HideBlizInv"] = true,
 		["Combine"] = true,
 		["AutoShowInv"] = true,
-		["HideBlizBank"] = true,
-		["ItemNameFirst"] = false,
+		["ReplaceBlizBags"] = true,
+		["Scale"] = 100,
 	},
 	["Sisters of Elune"] = {
 		["Torinara"] = {
@@ -58,8 +58,8 @@ BaudManifestData = {
 						["Equipped"] = 1,
 					}, -- [9]
 					{
-						["Count"] = 14,
 						["ItemString"] = "item:94288::::::::105:263::::::",
+						["Count"] = 14,
 					}, -- [10]
 					{
 						["ItemString"] = "item:152764::::::::110:263:::4:1699:3629:1472:3528:::",
@@ -127,12 +127,12 @@ BaudManifestData = {
 						["Equipped"] = 1,
 					}, -- [23]
 					{
-						["Count"] = 6,
 						["ItemString"] = "item:89112::::::::110:263::::::",
+						["Count"] = 6,
 					}, -- [24]
 					{
-						["Count"] = 60,
 						["ItemString"] = "item:72988::::::::110:263::::::",
+						["Count"] = 60,
 					}, -- [25]
 					{
 						["ItemString"] = "item:90907::::::::110:263:516:11:1:3806:445:90:::",
@@ -151,16 +151,16 @@ BaudManifestData = {
 						["Count"] = 1,
 					}, -- [29]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:81414::::::::110:263::::::",
+						["Count"] = 1,
 					}, -- [30]
 					{
 						["ItemString"] = "item:82243::::::-5:1072234542:110:263::::::",
 						["Count"] = 1,
 					}, -- [31]
 					{
-						["Count"] = 1,
 						["ItemString"] = "item:81413::::::::110:263::::::",
+						["Count"] = 1,
 					}, -- [32]
 					{
 						["ItemString"] = "item:82267::::::-41:1878786109:110:263::::::",
@@ -201,9 +201,9 @@ BaudManifestData = {
 				},
 				["SlotEmpty"] = 118,
 				["BGTexture"] = "Bumpy",
-				["SpecialEmpty"] = 0,
-				["SpecialTotal"] = 0,
 				["SlotTotal"] = 140,
+				["SpecialTotal"] = 0,
+				["SpecialEmpty"] = 0,
 			}, -- [1]
 			{
 				{
@@ -252,7 +252,7 @@ BaudManifestData = {
 				[0] = 1,
 			},
 			["Class"] = "SHAMAN",
-			["Money"] = 350561964,
+			["Money"] = 350528964,
 		},
 		["Noeraa"] = {
 			{
