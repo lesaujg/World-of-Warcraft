@@ -1,273 +1,40 @@
-tag 1329c4a45876a114a2321d48991b1c701a136703 7.3.19
+tag 8f9a95248c3c333aca7d4fdae37152512d47a6bf 7.3.20
 Author:	subversion <svn@deadlybossmods.com>
-Date:	Tue Jan 30 23:15:37 2018 +0100
+Date:	Wed Jan 31 11:29:24 2018 +0100
 
-Tagging as 7.3.19
+Tagging as 7.3.20
 
-commit 23e27102d5648b7a8da604b998b67d3401dc2bde
+commit c9629c08c13a00c66d09df82489a37d6d0cbcabe
 Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 30 23:15:37 2018 +0100
+Date:   Wed Jan 31 11:29:24 2018 +0100
 
-    increment version number to 7.3.19
+    increment version number to 7.3.20
 
-commit 1c9ab72aaf114d5e5392d2f6c936dff6d917ed59
+commit b6eace27ca9106b260203843c21a261442c803b4
 Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 30 19:50:33 2018 +0100
+Date:   Wed Jan 31 08:05:05 2018 +0100
 
-    Omega via svn r17229:
-    Kr update
+    Omega via svn r17234:
+    tweak so it doesn?\226?\128?\153t fall back to other warning type
 
-commit 7e903b6fe5d27a6455cd3799380994ed530cee74
+commit f2ccf8491cfe8a7f9c5c7f219403d25a0ecefec8
 Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 30 07:07:56 2018 +0100
+Date:   Wed Jan 31 08:00:11 2018 +0100
 
-    Omega via svn r17228:
-    Fix move mark, it was always supposed to use that and guess I forgot
+    Omega via svn r17233:
+    Fix another regression with necrotic embrace
 
-commit 84b506b6e0e46aa45de1280be9ad85ad9c672015
+commit d675232b0ee9d73e1b09b9e1a40277a02f699bcf
 Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 30 07:04:14 2018 +0100
+Date:   Wed Jan 31 05:40:00 2018 +0100
 
-    Omega via svn r17227:
-    Fix move mark, it was always supposed to use that and guess I forgot
+    Omega via svn r17232:
+    Fix boss health stats
 
-commit 98499969ea74467717b5b48156fb888a0c72cfed
+commit e02541dfaa0e3c82577342ecd0bf4a75bbcd207b
 Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 30 06:53:19 2018 +0100
+Date:   Tue Jan 30 23:15:58 2018 +0100
 
-    Omega via svn r17226:
-    Do not double warn/double yell if affected by more than one debuff (such as the tank soaking both of them)
-
-commit b063ce5112b4aefe7f231945e2d380a515f8408e
-Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 30 06:30:22 2018 +0100
-
-    Omega via svn r17225:
-    Squish it down 6 pixels to get rid of scroll bar
-
-commit 77c44663de38f4fdca85ea9f9fc04f04be275868
-Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 30 06:26:35 2018 +0100
-
-    Omega via svn r17224:
-    Redo, this time hitting save before commit
-
-commit 5801eac526aeb2b9f7edf87be9b079fe4cde861e
-Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 30 06:25:49 2018 +0100
-
-    Omega via svn r17223:
-    While at it, add url to count packs
-
-commit b0a2c186cd6958dd3fa5e8384e054faadf63bd31
-Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 30 06:03:31 2018 +0100
-
-    Omega via svn r17222:
-    pass better text
-
-commit a087f94549c636f6b1951512f9e01cb92d0da1ce
-Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 30 05:58:03 2018 +0100
-
-    Omega via svn r17221:
-    Couldn?\226?\128?\153t do it pretty so convoluted solution to clickable links it is
-
-commit 789b3226698569369a23920cff20774f5cdb915c
-Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 30 05:29:28 2018 +0100
-
-    Omega via svn r17220:
-    line breaks
-
-commit 4da484ce3befcb1d30cd32c3904f40e462cb03e1
-Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 30 04:53:21 2018 +0100
-
-    Omega via svn r17219:
-    Readd this, it?\226?\128?\153s still used in template
-
-commit 34b4467d345665fafc75b1cc90eacf65ee4ef98d
-Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 30 04:31:25 2018 +0100
-
-    Omega via svn r17218:
-    Add some VP URLs
-
-commit f8de9089f2a0d8f1aa172b5ece9c74681417a3dd
-Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 30 04:00:43 2018 +0100
-
-    Omega via svn r17217:
-    Passing /dway with no waypoint arrow shown, will now hide it
-
-commit 267a2f40f8d7970a254e8a487f41282912a38bf4
-Author: subversion <svn@deadlybossmods.com>
-Date:   Mon Jan 29 08:18:09 2018 +0100
-
-    Omega via svn r17216:
-    Kr update
-
-commit 3aaf567d354bbc98fe26defb42b5823f220b3456
-Author: subversion <svn@deadlybossmods.com>
-Date:   Mon Jan 29 06:55:33 2018 +0100
-
-    Omega via svn r17215:
-    Fix some soulbomb logic
-
-commit 0beccba074b693431d1ae1ae4e9e5f3e8a80760f
-Author: subversion <svn@deadlybossmods.com>
-Date:   Mon Jan 29 03:45:46 2018 +0100
-
-    Omega via svn r17214:
-    Strip out HUD customizing and related panal. HUD still full functional via the utility slash commands etc in outdoor areas, but DBM will no longer dedicate an entire options panel and variables to something that can?\226?\128?\153t be used in raids.
-
-commit a5e4e4b81f2bce4003a5a3e3f5f79a148a011ad7
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sun Jan 28 09:03:19 2018 +0100
-
-    Omega via svn r17213:
-    CN update
-
-commit dcc6b5dfb684b9d4f87560b801b0dda818f6e4c4
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sun Jan 28 01:32:39 2018 +0100
-
-    Omega via svn r17212:
-    Add mod list
-
-commit 60f7f84bc2d12475e93aac68db64bbd52036fc17
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sun Jan 28 01:31:23 2018 +0100
-
-    Omega via svn r17211:
-    Mod sort updates
-
-commit d90d12f91694c006cf2fd9a312eb1735e4287d8a
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sat Jan 27 23:40:18 2018 +0100
-
-    Omega via svn r17210:
-    Actually fix this
-
-commit 90f75bbfa6f4e6d206a3ea0ceecd560837762c38
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sat Jan 27 23:37:16 2018 +0100
-
-    Omega via svn r17209:
-    Kill special warning for cosmic beacon, leave yell though.
-
-commit 9d35ac5bd675fb48e03cda1bcdf42e3ae675e36d
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sat Jan 27 19:55:10 2018 +0100
-
-    Omega via svn r17208:
-    Don?\226?\128?\153t understand why they?\226?\128?\153d be needed, but add () anyways to try and get it to behave properly
-
-commit 09726da4d74a7cd96b52f997906ec3de195d4fe2
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sat Jan 27 19:33:21 2018 +0100
-
-    Omega via svn r17207:
-    Fix missing bool
-
-commit 04a501cf8bb2634dd6555667dfdbef17f92c7c0f
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sat Jan 27 08:57:22 2018 +0100
-
-    Omega via svn r17206:
-    Sound tweaks
-
-commit 16c429b1020cd160613489a918e9c3db0592acf4
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sat Jan 27 06:26:04 2018 +0100
-
-    Omega via svn r17205:
-    more variable cleanup
-
-commit a45c5d4dacb75d05e0ed5028b7cc6fbe783dc54a
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sat Jan 27 06:18:39 2018 +0100
-
-    Omega via svn r17204:
-    Deleted depricated BossHealth frame.
-
-commit dba0f55250ddc9f81ed63d07f741ec3b0e119a2d
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sat Jan 27 03:42:04 2018 +0100
-
-    Omega via svn r17203:
-    delete depricated health frame functions that rely on CLEU. Info frame versions of these functions are more efficient and don?\226?\128?\153t rely on CLEU. CLEU is also getting significant overhaul in 8.0 and less places it needs fixing the better. Not to mention, DBM BossHealth frame itself is highly depricated too sine blizzard implemented their own boss frames.
-
-commit 94ba3592117cc2a7a1236988e5d3d81224ef4053
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sat Jan 27 00:23:17 2018 +0100
-
-    Omega via svn r17202:
-    With a cancel
-
-commit 976d0de981218ec1b47e9deffff3e50e0155e53d
-Author: subversion <svn@deadlybossmods.com>
-Date:   Sat Jan 27 00:22:13 2018 +0100
-
-    Omega via svn r17201:
-    Add soulblight count yell by request
-
-commit 555660b1afc7ebf2aa46881834939e83bb93e8e2
-Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Jan 25 21:04:13 2018 +0100
-
-    Omega via svn r17200:
-    es update
-
-commit 4e44bfd5abd87eaf9d52abd6c50979df0ce74ba9
-Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Jan 25 07:15:11 2018 +0100
-
-    Omega via svn r17199:
-    auto handling of lighting on coven for windows client.
-
-commit b42a60a413e89e7cb9fc421b50b13cb435f01cb8
-Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Jan 25 04:29:23 2018 +0100
-
-    Omega via svn r17198:
-    Throttle trash warning
-    change voice for waves on coven
-    change icon option to true by default for glare
-
-commit 487007487beeb59574f99b2f05c9dbcb8d198bea
-Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Jan 25 00:08:37 2018 +0100
-
-    Omega via svn r17197:
-    disable ths for now
-
-commit 7dc9ef0bc756fb9d944cf983017f299cf7c75812
-Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Jan 25 00:03:39 2018 +0100
-
-    Omega via svn r17196:
-    change this to a you warning
-
-commit 0103db5ceadadafb0165bd5d8245abb7e8bfecd8
-Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Jan 24 23:40:51 2018 +0100
-
-    Omega via svn r17195:
-    Disable this in mythic
-
-commit 6217b5daef027027e2fa34f6a6f89a8196fc4efb
-Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Jan 24 05:59:09 2018 +0100
-
-    Omega via svn r17194:
-    Fix lua error on guldan
-
-commit aa02d7c55957ed1f5759ebb106ec7714da780194
-Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 23 22:33:46 2018 +0100
-
-    tandanu via svn r17193:
+    tandanu via svn r17231:
     increment alpha version
 

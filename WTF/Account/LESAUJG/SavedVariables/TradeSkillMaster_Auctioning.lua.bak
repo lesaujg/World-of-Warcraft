@@ -14,9 +14,9 @@ TradeSkillMaster_AuctioningDB = {
 		["Herbinator"] = true,
 		["Leanara"] = true,
 		["Galinar"] = true,
-		["Edaka"] = true,
-		["Sanjuri"] = true,
 		["Belrath"] = true,
+		["Sanjuri"] = true,
+		["Edaka"] = true,
 		["Clothgar"] = true,
 	},
 	["_scopeKeys"] = {

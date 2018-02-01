@@ -26,7 +26,7 @@ FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
 		["date"] = "Wednesday 1/31",
-		["rows"] = 7,
+		["rows"] = 9,
 	}, -- [1]
 	{
 		["date"] = "Tuesday 1/30",
@@ -107,13 +107,15 @@ FactionAddictLogData = {
 }
 FactionAddictLogEntries = {
 	{
-		["The Nightfallen"] = 2150,
 		["Armies of Legionfall"] = 500,
+		["Argussian Reach"] = 3550,
+		["Dreamweavers"] = 1725,
+		["The Nightfallen"] = 2150,
 		["Valarjar"] = 250,
 		["Highmountain Tribe"] = 1500,
 		["The Wardens"] = 2650,
 		["Court of Farondis"] = 325,
-		["Army of the Light"] = 1000,
+		["Army of the Light"] = 5075,
 	}, -- [1]
 	{
 		["Army of the Light"] = 75,
@@ -337,9 +339,9 @@ FactionAddictConfigIsInactive = {
 	[1275] = false,
 	[1849] = false,
 	[576] = false,
-	[1085] = false,
-	[1276] = false,
 	[1850] = false,
+	[1276] = false,
+	[1085] = false,
 	[609] = false,
 	[369] = false,
 	[1277] = false,
@@ -349,12 +351,12 @@ FactionAddictConfigIsInactive = {
 	[1278] = false,
 	[1690] = false,
 	[1388] = false,
-	[2045] = false,
+	[81] = false,
 	[1279] = false,
 	[69] = false,
-	[81] = false,
-	[1216] = false,
 	[1280] = false,
+	[1216] = false,
+	[2045] = false,
 	[2170] = false,
 	[1345] = false,
 	[93] = false,
@@ -363,7 +365,7 @@ FactionAddictConfigIsInactive = {
 	[1859] = false,
 	[1133] = false,
 	[1282] = false,
-	[930] = false,
+	[1091] = false,
 	[270] = false,
 	[1984] = false,
 	[1283] = false,
@@ -374,7 +376,7 @@ FactionAddictConfigIsInactive = {
 	[1174] = false,
 	[1714] = false,
 	[1731] = false,
-	[1091] = false,
+	[930] = false,
 	[1094] = false,
 	[1158] = false,
 	[1732] = false,

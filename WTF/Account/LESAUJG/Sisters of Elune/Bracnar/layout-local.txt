@@ -27,13 +27,6 @@ X: 0
 Y: 0
 W: 800
 H: 525
-Frame: BaudManifestDisplay1
-FrameLevel: 1
-Anchor: TOPRIGHT
-X: -80
-Y: 0
-W: 250
-H: 799
 Frame: ArgusEliteTrackerFram
 FrameLevel: 1
 Anchor: CENTER
@@ -41,3 +34,10 @@ X: 181
 Y: 179
 W: 300
 H: 24
+Frame: BaudManifestDisplay1
+FrameLevel: 1
+Anchor: TOP
+X: 291
+Y: -9
+W: 250
+H: 799

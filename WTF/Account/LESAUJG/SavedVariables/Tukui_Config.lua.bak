@@ -69,11 +69,11 @@ TukuiConfigShared = {
 				["UIScale"] = 0.64,
 			},
 		},
-		["Edaka"] = {
+		["Belrath"] = {
 		},
 		["Sanjuri"] = {
 		},
-		["Belrath"] = {
+		["Edaka"] = {
 		},
 		["Uldaris"] = {
 			["Bags"] = {
