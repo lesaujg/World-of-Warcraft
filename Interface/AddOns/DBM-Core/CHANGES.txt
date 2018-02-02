@@ -1,40 +1,54 @@
-tag 8f9a95248c3c333aca7d4fdae37152512d47a6bf 7.3.20
+tag ec677b419b41a19ba6a14499a175097799c9b920 7.3.21
 Author:	subversion <svn@deadlybossmods.com>
-Date:	Wed Jan 31 11:29:24 2018 +0100
+Date:	Thu Feb 1 20:03:07 2018 +0100
 
-Tagging as 7.3.20
+Tagging as 7.3.21
 
-commit c9629c08c13a00c66d09df82489a37d6d0cbcabe
+commit b86277b0ea426cc80aabe17a23355d1cfb01be9d
 Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Jan 31 11:29:24 2018 +0100
+Date:   Thu Feb 1 20:03:07 2018 +0100
 
-    increment version number to 7.3.20
+    increment version number to 7.3.21
 
-commit b6eace27ca9106b260203843c21a261442c803b4
+commit 78ad46e56a863e93caedbad3c8e8eb1d12cee7bd
 Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Jan 31 08:05:05 2018 +0100
+Date:   Thu Feb 1 17:49:22 2018 +0100
 
-    Omega via svn r17234:
-    tweak so it doesn?\226?\128?\153t fall back to other warning type
+    ultrashining via svn r17241:
+    zhTW update
 
-commit f2ccf8491cfe8a7f9c5c7f219403d25a0ecefec8
+commit e11766b93da1281c60d9fc81d5c9c949a5c348dc
 Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Jan 31 08:00:11 2018 +0100
+Date:   Thu Feb 1 11:21:01 2018 +0100
 
-    Omega via svn r17233:
-    Fix another regression with necrotic embrace
+    Omega via svn r17240:
+    HF
 
-commit d675232b0ee9d73e1b09b9e1a40277a02f699bcf
+commit abc3fd521305705ce1a4f24fa6ad12388993f3b2
 Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Jan 31 05:40:00 2018 +0100
+Date:   Thu Feb 1 03:44:07 2018 +0100
 
-    Omega via svn r17232:
-    Fix boss health stats
+    Omega via svn r17239:
+    Fix another bug/regression
 
-commit e02541dfaa0e3c82577342ecd0bf4a75bbcd207b
+commit e46a7b6617046637b521f8387dc6f7144fe6c95e
 Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jan 30 23:15:58 2018 +0100
+Date:   Thu Feb 1 02:25:49 2018 +0100
 
-    tandanu via svn r17231:
+    Omega via svn r17238:
+    Fix lua error, which will fix necrotic embrace for real this time
+
+commit 3d56183caf087cf765462db0ef15f1a6c8bcf934
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Feb 1 00:41:29 2018 +0100
+
+    Omega via svn r17237:
+    Improve fix
+
+commit 52e2dbd9720307c72f28e88316d4cec4007eb75a
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Jan 31 11:29:43 2018 +0100
+
+    tandanu via svn r17236:
     increment alpha version
 

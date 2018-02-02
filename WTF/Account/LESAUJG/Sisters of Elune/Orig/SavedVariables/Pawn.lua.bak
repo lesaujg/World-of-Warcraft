@@ -4,6 +4,7 @@ PawnOptions = {
 	["LastPlayerFullName"] = "Orig-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128938] = {
 			["Relics"] = {
@@ -16,8 +17,18 @@ PawnOptions = {
 			},
 			["Name"] = "Fu Zan, the Wanderer's Companion",
 		},
+		[128940] = {
+			["Relics"] = {
+				{
+					["Type"] = "Wind",
+				}, -- [1]
+				{
+					["Type"] = "Iron",
+				}, -- [2]
+			},
+			["Name"] = "Fists of the Heavens",
+		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "MONK",
