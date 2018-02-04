@@ -11,6 +11,8 @@ TukuiConfigShared = {
 		},
 		["Aloraal"] = {
 		},
+		["Allala"] = {
+		},
 	},
 	["Account"] = {
 	},

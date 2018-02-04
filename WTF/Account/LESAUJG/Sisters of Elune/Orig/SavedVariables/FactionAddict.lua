@@ -25,131 +25,134 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
+		["date"] = "Saturday 2/3",
+		["rows"] = 4,
+	}, -- [1]
+	{
 		["date"] = "Thursday 2/1",
 		["rows"] = 3,
-	}, -- [1]
+	}, -- [2]
 	{
 		["date"] = "Tuesday 1/30",
 		["rows"] = 1,
-	}, -- [2]
+	}, -- [3]
 	{
 		["date"] = "Saturday 1/27",
 		["rows"] = 4,
-	}, -- [3]
+	}, -- [4]
 	{
 		["date"] = "Wednesday 1/24",
 		["rows"] = 3,
-	}, -- [4]
+	}, -- [5]
 	{
 		["date"] = "Tuesday 1/23",
 		["rows"] = 3,
-	}, -- [5]
+	}, -- [6]
 	{
 		["date"] = "Sunday 1/21",
 		["rows"] = 3,
-	}, -- [6]
+	}, -- [7]
 	{
 		["date"] = "Saturday 1/20",
 		["rows"] = 3,
-	}, -- [7]
+	}, -- [8]
 	{
 		["date"] = "Friday 1/19",
 		["rows"] = 3,
-	}, -- [8]
+	}, -- [9]
 	{
 		["date"] = "Wednesday 1/17",
 		["rows"] = 1,
-	}, -- [9]
+	}, -- [10]
 	{
 		["date"] = "Monday 4/10",
 		["rows"] = 1,
-	}, -- [10]
+	}, -- [11]
 	{
 		["date"] = "Thursday 3/30",
 		["rows"] = 1,
-	}, -- [11]
+	}, -- [12]
 	{
 		["date"] = "Thursday 3/23",
 		["rows"] = 1,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Friday 2/24",
 		["rows"] = 1,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Wednesday 2/8",
 		["rows"] = 1,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Friday 2/3",
 		["rows"] = 1,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Friday 1/27",
 		["rows"] = 1,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Thursday 1/19",
 		["rows"] = 1,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Saturday 1/14",
 		["rows"] = 1,
-	}, -- [18]
-	{
-		["date"] = "Sunday 11/6",
-		["rows"] = 1,
 	}, -- [19]
 	{
-		["date"] = "Tuesday 11/1",
+		["date"] = "Sunday 11/6",
 		["rows"] = 1,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
 	{
+		["Cult of Malicor"] = 1125,
+		["Armies of Legionfall"] = 2325,
+		["Shado-Pan Assault"] = 726,
+		["Emperor Shaohao"] = 995,
+	}, -- [1]
+	{
 		["Cult of Malicor"] = 375,
 		["Valarjar"] = 300,
 		["The Wardens"] = 300,
-	}, -- [1]
+	}, -- [2]
 	{
 		["Cult of Malicor"] = 1125,
-	}, -- [2]
+	}, -- [3]
 	{
 		["Cult of Malicor"] = 875,
 		["Court of Farondis"] = 675,
 		["Valarjar"] = 75,
 		["The Wardens"] = 450,
-	}, -- [3]
+	}, -- [4]
 	{
 		["The Wardens"] = 300,
 		["Cult of Malicor"] = 625,
 		["Highmountain Tribe"] = 525,
-	}, -- [4]
+	}, -- [5]
 	{
 		["The Wardens"] = 300,
 		["Valarjar"] = 525,
 		["Cult of Malicor"] = 625,
-	}, -- [5]
+	}, -- [6]
 	{
 		["The Wardens"] = 300,
 		["Cult of Malicor"] = 625,
 		["Dreamweavers"] = 525,
-	}, -- [6]
+	}, -- [7]
 	{
 		["The Wardens"] = 450,
 		["Valarjar"] = 525,
 		["Cult of Malicor"] = 500,
-	}, -- [7]
+	}, -- [8]
 	{
 		["Cult of Malicor"] = 1000,
 		["The Wardens"] = 600,
 		["Highmountain Tribe"] = 750,
-	}, -- [8]
-	{
-		["Cult of Malicor"] = 1625,
 	}, -- [9]
 	{
-		["The Ashen Verdict"] = 3000,
+		["Cult of Malicor"] = 1625,
 	}, -- [10]
 	{
 		["The Ashen Verdict"] = 3000,
@@ -161,10 +164,10 @@ FactionAddictLogEntries = {
 		["The Ashen Verdict"] = 3000,
 	}, -- [13]
 	{
-		["The Ashen Verdict"] = 1500,
+		["The Ashen Verdict"] = 3000,
 	}, -- [14]
 	{
-		["The Ashen Verdict"] = 3000,
+		["The Ashen Verdict"] = 1500,
 	}, -- [15]
 	{
 		["The Ashen Verdict"] = 3000,
@@ -176,10 +179,10 @@ FactionAddictLogEntries = {
 		["The Ashen Verdict"] = 3000,
 	}, -- [18]
 	{
-		["Alliance Vanguard"] = 2843,
+		["The Ashen Verdict"] = 3000,
 	}, -- [19]
 	{
-		["Alliance Vanguard"] = 2776,
+		["Alliance Vanguard"] = 2843,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
@@ -297,9 +300,9 @@ FactionAddictConfigIsInactive = {
 	[1275] = false,
 	[1849] = false,
 	[576] = false,
-	[1085] = false,
-	[1276] = false,
 	[1850] = false,
+	[1276] = false,
+	[1085] = false,
 	[609] = false,
 	[369] = false,
 	[1277] = false,
@@ -309,21 +312,21 @@ FactionAddictConfigIsInactive = {
 	[1278] = false,
 	[1847] = false,
 	[1388] = false,
-	[81] = false,
+	[2045] = false,
 	[1279] = false,
 	[69] = false,
-	[1280] = false,
+	[81] = false,
 	[1216] = false,
-	[2045] = false,
+	[1280] = false,
 	[2170] = false,
 	[1090] = false,
 	[93] = false,
 	[1281] = false,
 	[1345] = false,
 	[1094] = false,
-	[930] = false,
-	[1282] = false,
 	[1091] = false,
+	[1282] = false,
+	[930] = false,
 	[270] = false,
 	[1984] = false,
 	[1283] = false,

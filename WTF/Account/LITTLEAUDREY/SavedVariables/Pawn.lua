@@ -255,6 +255,9 @@ PawnCommon = {
 		["\"MrRobot\":PALADIN3"] = {
 			["IconTexturePath"] = 135873,
 			["PerCharacterOptions"] = {
+				["Allala-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "f58cba",
 			["ClassID"] = 2,

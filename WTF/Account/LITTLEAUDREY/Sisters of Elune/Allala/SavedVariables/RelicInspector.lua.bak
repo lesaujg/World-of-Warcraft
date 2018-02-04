@@ -1,0 +1,17 @@
+
+RelicInspectorCharDB = {
+	["profileKeys"] = {
+		["Allala - Sisters of Elune"] = "Allala - Sisters of Elune",
+	},
+	["char"] = {
+		["Allala - Sisters of Elune"] = {
+			["artifactCache"] = {
+				[128866] = {
+					["timestamp"] = 241899.682,
+					["crucibled"] = false,
+					["level"] = 35,
+				},
+			},
+		},
+	},
+}

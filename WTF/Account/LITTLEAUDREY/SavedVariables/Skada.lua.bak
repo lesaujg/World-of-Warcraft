@@ -7,6 +7,7 @@ SkadaDB = {
 	["profileKeys"] = {
 		["Noeraa - Sisters of Elune"] = "Default",
 		["Torinara - Sisters of Elune"] = "Default",
+		["Allala - Sisters of Elune"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -15,7 +16,7 @@ SkadaDB = {
 					["hidden"] = true,
 					["y"] = 0.0012969970703125,
 					["point"] = "CENTER",
-					["x"] = 0.002197265625,
+					["x"] = 0.00244140625,
 				}, -- [1]
 			},
 			["versions"] = {

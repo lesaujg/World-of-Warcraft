@@ -25,6 +25,9 @@ PawnOptions = {
 				{
 					["Type"] = "Iron",
 				}, -- [2]
+				{
+					["Type"] = "Wind",
+				}, -- [3]
 			},
 			["Name"] = "Fists of the Heavens",
 		},
