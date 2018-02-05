@@ -1,5 +1,23 @@
 
 CrucibleWeightDB = {
+	["chars"] = {
+		["Allala - Sisters of Elune"] = {
+			["artifactWeight"] = {
+			},
+			["presets"] = {
+			},
+			["relicCache"] = {
+			},
+		},
+		["Torinara - Sisters of Elune"] = {
+			["artifactWeight"] = {
+			},
+			["presets"] = {
+			},
+			["relicCache"] = {
+			},
+		},
+	},
 	["artifacts"] = {
 		[120978] = {
 			[1561] = 238062,
@@ -36,24 +54,6 @@ CrucibleWeightDB = {
 			[913] = 198349,
 			[906] = 198236,
 			[1593] = 238070,
-		},
-	},
-	["chars"] = {
-		["Allala - Sisters of Elune"] = {
-			["artifactWeight"] = {
-			},
-			["presets"] = {
-			},
-			["relicCache"] = {
-			},
-		},
-		["Torinara - Sisters of Elune"] = {
-			["artifactWeight"] = {
-			},
-			["presets"] = {
-			},
-			["relicCache"] = {
-			},
 		},
 	},
 }

@@ -72,9 +72,6 @@ PawnCommon = {
 		["\"MrRobot\":PRIEST3"] = {
 			["IconTexturePath"] = 136207,
 			["PerCharacterOptions"] = {
-				["Palani-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 			},
 			["Color"] = "ffffff",
 			["LocalizedName"] = "Priest: Shadow",
@@ -326,6 +323,9 @@ PawnCommon = {
 		["\"MrRobot\":PRIEST2"] = {
 			["IconTexturePath"] = 237542,
 			["PerCharacterOptions"] = {
+				["Palani-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ffffff",
 			["LocalizedName"] = "Priest: Holy",

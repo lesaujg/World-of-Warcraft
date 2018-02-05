@@ -4,6 +4,7 @@ PawnOptions = {
 	["LastPlayerFullName"] = "Leanara-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128832] = {
 			["Relics"] = {
@@ -37,7 +38,6 @@ PawnOptions = {
 			["Name"] = "Twinblades of the Deceiver",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "DEMONHUNTER",

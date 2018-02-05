@@ -30,8 +30,8 @@ AskMrRobotDb3 = {
 						[1133] = 1,
 						[1134] = 1,
 						[1135] = 1,
-						[1126] = 3,
 						[1130] = 1,
+						[1126] = 3,
 					},
 					["Crucible"] = {
 						["Equipped"] = {
@@ -148,10 +148,10 @@ AskMrRobotDb3 = {
 						[902] = 1,
 						[903] = 1,
 						[904] = 1,
-						[1687] = 1,
+						[906] = 4,
 						[905] = 4,
 						[1593] = 4,
-						[906] = 4,
+						[1594] = 1,
 						[1595] = 1,
 						[907] = 4,
 						[1596] = 3,
@@ -160,7 +160,7 @@ AskMrRobotDb3 = {
 						[909] = 4,
 						[899] = 1,
 						[910] = 4,
-						[1594] = 1,
+						[1687] = 1,
 					},
 					["Crucible"] = {
 						["Equipped"] = {
@@ -172,13 +172,13 @@ AskMrRobotDb3 = {
 			},
 		},
 	},
+	["global"] = {
+		["Region"] = "US",
+	},
 	["profileKeys"] = {
 		["Noeraa - Sisters of Elune"] = "Noeraa - Sisters of Elune",
 		["Torinara - Sisters of Elune"] = "Torinara - Sisters of Elune",
 		["Allala - Sisters of Elune"] = "Allala - Sisters of Elune",
-	},
-	["global"] = {
-		["Region"] = "US",
 	},
 	["profiles"] = {
 		["Noeraa - Sisters of Elune"] = {
@@ -196,12 +196,6 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1648] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
 					[1712] = {
 						[14] = false,
 						[16] = false,
@@ -209,6 +203,12 @@ AskMrRobotDb3 = {
 						[15] = false,
 					},
 					[1530] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
+					},
+					[1648] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -226,13 +226,13 @@ AskMrRobotDb3 = {
 					},
 					[1220] = {
 					},
-					[1572] = {
-					},
 					[1648] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
 						[15] = false,
+					},
+					[646] = {
 					},
 					[1712] = {
 						[14] = false,
@@ -240,25 +240,21 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1520] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
+					[1064] = {
 					},
 					[1503] = {
 					},
-					[1064] = {
+					[1469] = {
 					},
 					[1098] = {
+					},
+					[870] = {
 					},
 					[1676] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
 						[15] = false,
-					},
-					[870] = {
 					},
 					[1530] = {
 						[14] = false,
@@ -268,9 +264,13 @@ AskMrRobotDb3 = {
 					},
 					[1158] = {
 					},
-					[1469] = {
+					[1520] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
 					},
-					[646] = {
+					[1572] = {
 					},
 				},
 			},
@@ -303,7 +303,11 @@ AskMrRobotDb3 = {
 					},
 					[1098] = {
 					},
-					[1500] = {
+					[1520] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
 					},
 					[1676] = {
 						[14] = false,
@@ -317,15 +321,11 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[33] = {
-					},
 					[870] = {
 					},
-					[1520] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
+					[33] = {
+					},
+					[1500] = {
 					},
 				},
 			},

@@ -7,9 +7,14 @@ RelicInspectorCharDB = {
 		["Allala - Sisters of Elune"] = {
 			["artifactCache"] = {
 				[128866] = {
-					["timestamp"] = 241899.682,
+					["timestamp"] = 265407.106,
 					["crucibled"] = false,
 					["level"] = 35,
+				},
+				[120978] = {
+					["timestamp"] = 320730.842,
+					["level"] = 0,
+					["crucibled"] = false,
 				},
 			},
 		},

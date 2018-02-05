@@ -18,12 +18,12 @@ AddOnSkinsDB = {
 	["profiles"] = {
 		["Galinar - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
-			["Blizzard_Transmogrify"] = true,
 			["TalentSetManager"] = true,
-			["WeakAuras"] = true,
 			["TomeOfTeleportation"] = true,
-			["MasterPlan"] = true,
 			["Details"] = true,
+			["Blizzard_Transmogrify"] = true,
+			["WeakAuras"] = true,
+			["MasterPlan"] = true,
 		},
 		["Uldaris - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
@@ -36,9 +36,9 @@ AddOnSkinsDB = {
 			["Blizzard_WorldStateCaptureBar"] = true,
 			["TalentSetManager"] = true,
 			["Details"] = true,
-			["TomeOfTeleportation"] = true,
-			["Blizzard_Transmogrify"] = true,
 			["Bagnon"] = true,
+			["Blizzard_Transmogrify"] = true,
+			["TomeOfTeleportation"] = true,
 		},
 		["Ghiaccioli - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
@@ -52,8 +52,8 @@ AddOnSkinsDB = {
 			["Blizzard_WorldStateCaptureBar"] = true,
 			["TalentSetManager"] = true,
 			["TomeOfTeleportation"] = true,
-			["WeakAuras"] = true,
 			["Blizzard_Transmogrify"] = true,
+			["WeakAuras"] = true,
 			["MasterPlan"] = true,
 		},
 		["Mandelbrot - Sisters of Elune"] = {
@@ -103,12 +103,12 @@ AddOnSkinsDB = {
 		},
 		["Clothgar - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
+			["Blizzard_Transmogrify"] = true,
 			["TalentSetManager"] = true,
-			["Bagnon"] = true,
+			["WeakAuras"] = true,
 			["Details"] = true,
 			["TomeOfTeleportation"] = true,
-			["Blizzard_Transmogrify"] = true,
-			["WeakAuras"] = true,
+			["Bagnon"] = true,
 		},
 	},
 }

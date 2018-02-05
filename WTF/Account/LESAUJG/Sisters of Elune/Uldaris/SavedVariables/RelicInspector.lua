@@ -7,9 +7,9 @@ RelicInspectorCharDB = {
 		["Uldaris - Sisters of Elune"] = {
 			["artifactCache"] = {
 				[128858] = {
-					["timestamp"] = 222131.623,
-					["crucibled"] = false,
+					["timestamp"] = 321827.495,
 					["level"] = 57,
+					["crucibled"] = false,
 				},
 			},
 		},

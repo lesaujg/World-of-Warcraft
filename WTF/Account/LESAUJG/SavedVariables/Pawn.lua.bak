@@ -79,9 +79,6 @@ PawnCommon = {
 		["\"MrRobot\":PRIEST3"] = {
 			["IconTexturePath"] = 136207,
 			["PerCharacterOptions"] = {
-				["Palani-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 			},
 			["Color"] = "ffffff",
 			["ClassID"] = 5,
@@ -336,6 +333,9 @@ PawnCommon = {
 		["\"MrRobot\":PRIEST2"] = {
 			["IconTexturePath"] = 237542,
 			["PerCharacterOptions"] = {
+				["Palani-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ffffff",
 			["ClassID"] = 5,
@@ -369,9 +369,6 @@ PawnCommon = {
 		["\"MrRobot\":PALADIN1"] = {
 			["IconTexturePath"] = 135920,
 			["PerCharacterOptions"] = {
-				["Galinar-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 			},
 			["Color"] = "f58cba",
 			["ClassID"] = 2,
@@ -510,6 +507,9 @@ PawnCommon = {
 		["\"MrRobot\":PALADIN3"] = {
 			["IconTexturePath"] = 135873,
 			["PerCharacterOptions"] = {
+				["Galinar-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 				["Herbinator-Sisters of Elune"] = {
 					["Visible"] = true,
 				},

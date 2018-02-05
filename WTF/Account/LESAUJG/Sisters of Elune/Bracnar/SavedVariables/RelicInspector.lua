@@ -201,7 +201,7 @@ RelicInspectorCharDB = {
 						},
 					}, -- [3]
 					["crucibled"] = true,
-					["timestamp"] = 243529.084,
+					["timestamp"] = 349665.118,
 					["level"] = 75,
 				},
 				[128861] = {
@@ -398,13 +398,13 @@ RelicInspectorCharDB = {
 						},
 					}, -- [3]
 					["crucibled"] = true,
-					["timestamp"] = 267852.503,
+					["timestamp"] = 349527.817,
 					["level"] = 75,
 				},
 				[128808] = {
-					["timestamp"] = 267839.35,
+					["timestamp"] = 349655.275,
 					["crucibled"] = false,
-					["level"] = 69,
+					["level"] = 70,
 				},
 			},
 		},
