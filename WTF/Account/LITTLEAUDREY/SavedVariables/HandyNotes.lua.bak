@@ -4,6 +4,7 @@ HandyNotesDB = {
 		["Noeraa - Sisters of Elune"] = "Noeraa - Sisters of Elune",
 		["Torinara - Sisters of Elune"] = "Torinara - Sisters of Elune",
 		["Allala - Sisters of Elune"] = "Allala - Sisters of Elune",
+		["Aloraal - Sisters of Elune"] = "Aloraal - Sisters of Elune",
 	},
 	["profiles"] = {
 		["Noeraa - Sisters of Elune"] = {
@@ -11,6 +12,8 @@ HandyNotesDB = {
 		["Torinara - Sisters of Elune"] = {
 		},
 		["Allala - Sisters of Elune"] = {
+		},
+		["Aloraal - Sisters of Elune"] = {
 		},
 	},
 }
@@ -19,6 +22,7 @@ HandyNotes_HandyNotesDB = {
 		["Noeraa - Sisters of Elune"] = "Noeraa - Sisters of Elune",
 		["Torinara - Sisters of Elune"] = "Torinara - Sisters of Elune",
 		["Allala - Sisters of Elune"] = "Allala - Sisters of Elune",
+		["Aloraal - Sisters of Elune"] = "Aloraal - Sisters of Elune",
 	},
 	["profiles"] = {
 		["Noeraa - Sisters of Elune"] = {
@@ -26,6 +30,8 @@ HandyNotes_HandyNotesDB = {
 		["Torinara - Sisters of Elune"] = {
 		},
 		["Allala - Sisters of Elune"] = {
+		},
+		["Aloraal - Sisters of Elune"] = {
 		},
 	},
 }

@@ -7,9 +7,9 @@ RelicInspectorCharDB = {
 		["Palani - Sisters of Elune"] = {
 			["artifactCache"] = {
 				[128827] = {
-					["timestamp"] = 243104.637,
-					["crucibled"] = false,
+					["timestamp"] = 320787.327,
 					["level"] = 51,
+					["crucibled"] = false,
 				},
 			},
 		},
