@@ -12,7 +12,7 @@ AskMrRobotDb3 = {
 			["Equipped"] = {
 				[2] = {
 					"|cffa335ee|Hitem:152765::::::::110:263:::4:1712:3629:1472:3528:::|h[Oronaar Disciple's Coif of the Harmonious]|h|r", -- [1]
-					"|cffa335ee|Hitem:130241::::::::110:263::13:4:1778:669:600:689:::|h[Ancient Maelstrom Amulet of the Harmonious]|h|r", -- [2]
+					"|cffa335ee|Hitem:143908::::::::110:263:512:1:1:3628:110:::|h[Choker of the Pure Heart]|h|r", -- [2]
 					"|cffa335ee|Hitem:152769::::::::110:263:::4:1698:3629:1472:3528:::|h[Oronaar Disciple's Spaulders of the Feverflare]|h|r", -- [3]
 					nil, -- [4]
 					"|cffa335ee|Hitem:128900::::::::110:263::13:5:669:600:689:1684:3408:::|h[Gravenscale Hauberk of the Peerless]|h|r", -- [5]
@@ -100,8 +100,8 @@ AskMrRobotDb3 = {
 						[1133] = 1,
 						[1134] = 1,
 						[1135] = 1,
-						[1126] = 3,
 						[1130] = 1,
+						[1126] = 3,
 					},
 					["Crucible"] = {
 						["Equipped"] = {
@@ -241,14 +241,14 @@ AskMrRobotDb3 = {
 			},
 		},
 	},
+	["global"] = {
+		["Region"] = "US",
+	},
 	["profileKeys"] = {
 		["Noeraa - Sisters of Elune"] = "Noeraa - Sisters of Elune",
 		["Torinara - Sisters of Elune"] = "Torinara - Sisters of Elune",
 		["Allala - Sisters of Elune"] = "Allala - Sisters of Elune",
 		["Aloraal - Sisters of Elune"] = "Aloraal - Sisters of Elune",
-	},
-	["global"] = {
-		["Region"] = "US",
 	},
 	["profiles"] = {
 		["Noeraa - Sisters of Elune"] = {
@@ -266,12 +266,6 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1648] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
 					[1530] = {
 						[14] = false,
 						[16] = false,
@@ -279,6 +273,12 @@ AskMrRobotDb3 = {
 						[15] = false,
 					},
 					[1712] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
+					},
+					[1648] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -296,9 +296,13 @@ AskMrRobotDb3 = {
 					},
 					[1220] = {
 					},
-					[1572] = {
-					},
 					[646] = {
+					},
+					[1648] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
 					},
 					[1712] = {
 						[14] = false,
@@ -306,25 +310,21 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1520] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
+					[1469] = {
 					},
 					[1503] = {
 					},
-					[1469] = {
+					[1064] = {
 					},
 					[1098] = {
+					},
+					[870] = {
 					},
 					[1676] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
 						[15] = false,
-					},
-					[870] = {
 					},
 					[1530] = {
 						[14] = false,
@@ -334,13 +334,13 @@ AskMrRobotDb3 = {
 					},
 					[1158] = {
 					},
-					[1064] = {
-					},
-					[1648] = {
+					[1520] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
 						[15] = false,
+					},
+					[1572] = {
 					},
 				},
 			},
@@ -373,7 +373,7 @@ AskMrRobotDb3 = {
 					},
 					[1098] = {
 					},
-					[1530] = {
+					[1520] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -387,11 +387,11 @@ AskMrRobotDb3 = {
 					},
 					[1500] = {
 					},
-					[33] = {
-					},
 					[870] = {
 					},
-					[1520] = {
+					[33] = {
+					},
+					[1530] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -423,13 +423,13 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1712] = {
+					[1530] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
 						[15] = false,
 					},
-					[1530] = {
+					[1712] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
