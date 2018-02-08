@@ -1,9 +1,10 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0217,
+	["LastVersion"] = 2.0218,
 	["LastPlayerFullName"] = "Orig-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128938] = {
 			["Relics"] = {
@@ -40,7 +41,6 @@ PawnOptions = {
 			["Name"] = "Fists of the Heavens",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "MONK",

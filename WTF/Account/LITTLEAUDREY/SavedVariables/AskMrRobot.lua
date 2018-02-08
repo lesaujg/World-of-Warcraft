@@ -134,7 +134,7 @@ AskMrRobotDb3 = {
 			["Equipped"] = {
 				[3] = {
 					"|cff1eff00|Hitem:153904::::::::110:70::::::|h[Sunsoul Faceguard]|h|r", -- [1]
-					"|cff1eff00|Hitem:153906::::::::110:70::::::|h[Sunsoul Amulet]|h|r", -- [2]
+					"|cffa335ee|Hitem:143906::::::::110:70:512:1:1:3628:110:::|h[Heartbreak Charm]|h|r", -- [2]
 					"|cff1eff00|Hitem:153911::::::::110:70::::::|h[Sunsoul Shoulderguards]|h|r", -- [3]
 					nil, -- [4]
 					"|cff1eff00|Hitem:153900::::::::110:70::::::|h[Sunsoul Chestguard]|h|r", -- [5]
@@ -225,11 +225,11 @@ AskMrRobotDb3 = {
 						[875] = 4,
 						[876] = 1,
 						[877] = 1,
-						[1518] = 1,
+						[870] = 4,
 						[878] = 1,
 						[869] = 4,
 						[879] = 1,
-						[870] = 4,
+						[1518] = 1,
 					},
 					["Crucible"] = {
 						["Equipped"] = {
@@ -312,11 +312,11 @@ AskMrRobotDb3 = {
 					},
 					[1469] = {
 					},
-					[1503] = {
+					[1158] = {
 					},
 					[1064] = {
 					},
-					[1098] = {
+					[1503] = {
 					},
 					[870] = {
 					},
@@ -332,7 +332,7 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1158] = {
+					[1098] = {
 					},
 					[1520] = {
 						[14] = false,
@@ -411,13 +411,9 @@ AskMrRobotDb3 = {
 					},
 					[1220] = {
 					},
-					[1676] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
+					[33] = {
 					},
-					[1648] = {
+					[1676] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -435,7 +431,11 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[33] = {
+					[1648] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
 					},
 				},
 			},

@@ -1,9 +1,10 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0217,
+	["LastVersion"] = 2.0218,
 	["LastPlayerFullName"] = "Aloraal-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128861] = {
 			["Relics"] = {
@@ -23,7 +24,6 @@ PawnOptions = {
 			["Name"] = "Titanstrike",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",
