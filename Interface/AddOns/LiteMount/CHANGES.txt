@@ -1,18 +1,12 @@
-tag 429889a79ea83df2f60f1ec4f7869ee970d97f88 7.3.13
+tag f51e8343c08d44629c3a2e8fd2fd5f11b85ced3d 7.3.15
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Tue Jan 23 15:48:53 2018 +1100
+Date:	Fri Feb 9 18:28:06 2018 +1100
 
-Add Blue/Red Qiraji War Tank items from Call of the Scarab 2018.
+Don't apply flyable workaround if you haven't learnt flying
 
-commit 8b6230651e632011fbdfebdb6003a959e6ab1e5d
+commit 2a34aa680ef1be38d12b07a9c3a67c3a26e6b1bc
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Jan 23 15:45:40 2018 +1100
+Date:   Fri Feb 9 18:27:33 2018 +1100
 
-    deDE localization updates
-
-commit dbffe6501503672e690f4ec142c5d299d0eaa295
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Jan 23 15:25:12 2018 +1100
-
-    Add Blue/Red Qiraji War Tank (Call of the Scarab world event) items.
+    Check for flying at all before applying hack
 

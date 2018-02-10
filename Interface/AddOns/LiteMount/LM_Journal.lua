@@ -35,7 +35,7 @@ LM_Journal.__index = LM_Journal
 --  [5] mountType = C_MountJournal.GetMountInfoExtraByID(mountID)
 
 function LM_Journal:Get(id)
-    local name, spellID, icon, _, _, sourceType, _, _, faction, isFiltered, isCollected, mountID = C_MountJournal.GetMountInfoByID(id)
+    local name, spellID, icon, _, _, sourceType, isFavorite, _, faction, isFiltered, isCollected, mountID = C_MountJournal.GetMountInfoByID(id)
     local modelID, _, sourceText, isSelfMount, mountType = C_MountJournal.GetMountInfoExtraByID(mountID)
 
     if not name then
@@ -54,6 +54,7 @@ function LM_Journal:Get(id)
     m.mountType     = mountType
     m.sourceType    = sourceType
     m.sourceText    = sourceText
+    m.isFavorite    = isFavorite
     m.isFiltered    = isFiltered
     m.isCollected   = isCollected
     m.needsFaction  = PLAYER_FACTION_GROUP[faction]
@@ -90,10 +91,71 @@ function LM_Journal:Get(id)
     return m
 end
 
+
 function LM_Journal:Refresh()
-    local isFiltered, isCollected = select(10, C_MountJournal.GetMountInfoByID(self.mountID))
+    local isFavorite, _, _, isFiltered, isCollected = select(7, C_MountJournal.GetMountInfoByID(self.mountID))
+    self.isFavorite = isFavorite
     self.isFiltered = isFiltered
     self.isCollected = isCollected
+    LM_Mount.Refresh(self)
+end
+
+local BlizzardFilterSettings = {
+    LE_MOUNT_JOURNAL_FILTER_COLLECTED,
+    LE_MOUNT_JOURNAL_FILTER_NOT_COLLECTED,
+    LE_MOUNT_JOURNAL_FILTER_UNUSABLE,
+}
+
+--
+-- In an ideal world this would be a one-liner:
+--
+--      C_MountJournal.SetIsFavoriteByID(id, setting)
+--
+-- but you can only set favorites on displayed journal mounts by index. That
+-- means we have to clear all the filters, find the index, favorite, and try
+-- to set the filters back the way they were. Yuck.
+--
+
+function LM_Journal:SetFavorite(setting)
+    local SavedCollectedFilters = { }
+    local SavedSourceFilters = { }
+
+    -- Evil, but try not to be too evil saving what we can and restoring it
+    -- This is almost certainly going to break in future patches.
+
+    local SavedSearchText = MountJournal.searchBox:GetText()
+    C_MountJournal.SetSearch("")
+
+    for _,f in ipairs(BlizzardFilterSettings) do
+        SavedCollectedFilters[f] = C_MountJournal.GetCollectedFilterSetting(f)
+        C_MountJournal.SetCollectedFilterSetting(f, true)
+    end
+    for i=1,C_PetJournal.GetNumPetSources() do
+        if C_MountJournal.IsValidSourceFilter(i) then
+            SavedSourceFilters[i] = C_MountJournal.IsSourceChecked(i)
+            C_MountJournal.SetSourceFilter(i, true)
+        end
+    end
+
+    local id
+    for i = 1, C_MountJournal.GetNumDisplayedMounts() do
+        id = select(12, C_MountJournal.GetDisplayedMountInfo(i))
+        if id == self.mountID then
+            C_MountJournal.SetIsFavorite(i, setting)
+            break
+        end
+    end
+    self:Refresh()
+
+    -- Restore saved settings
+    C_MountJournal.SetSearch(SavedSearchText or "")
+    for f,v in pairs(SavedCollectedFilters) do
+        C_MountJournal.SetCollectedFilterSetting(f, v)
+    end
+    for i,v in pairs(SavedSourceFilters) do
+        C_MountJournal.SetSourceFilter(i, v)
+    end
+
 end
 
 function LM_Journal:IsCastable()

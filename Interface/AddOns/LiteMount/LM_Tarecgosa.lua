@@ -18,7 +18,7 @@ function LM_Tarecgosa:Get()
     -- We're not actually going to use the spell action, but it gives
     -- us all the attributes, tooltip, icon, etc.
 
-    local m = LM_Spell.Get(self, LM_SPELL.TARECGOSAS_VISAGE, { "Fly" } )
+    local m = LM_Spell.Get(self, LM_SPELL.TARECGOSAS_VISAGE, "FLY")
     m.itemID = LM_ITEM.DRAGONWRATH_TARECGOSAS_REST
     m:Refresh()
     return m
@@ -26,6 +26,7 @@ end
 
 function LM_Tarecgosa:Refresh()
     self.isCollected = ( GetItemCount(self.itemID) > 0 )
+    LM_Mount.Refresh(self)
 end
 
 function LM_Tarecgosa:InProgress()
@@ -70,7 +71,7 @@ function LM_Tarecgosa:IsCastable()
         return false
     end
 
-    if LM_Options.db.global.enableTwoPress then
+    if LM_Options.db.profile.enableTwoPress then
         if GetItemCount(self.itemID) == 0 then
             return false
         end

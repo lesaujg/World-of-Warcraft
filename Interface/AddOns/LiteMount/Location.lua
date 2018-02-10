@@ -131,22 +131,37 @@ local FlyableNoContinent = {
 
 function LM_Location:IsFlyableAreaBroken()
     -- local apprenticeRiding = IsUsableSpell(33388)
-    -- local expertRiding = IsUsableSpell(34090)
+    local expertRiding = IsUsableSpell(34090)
     -- local artisanRiding = IsUsableSpell(34091)
     -- local masterRiding = IsUsableSpell(90265)
     local coldWeatherFlying = IsUsableSpell(54197)
-    -- local flightMastersLicense = IsUsableSpell(902670)
+    local flightMastersLicense = IsUsableSpell(90267)
     local wisdomOfTheFourWinds = IsUsableSpell(115913)
     -- local draenorPathfinder = IsUsableSpell(191645)
     -- local brokenIslesPathfinder = IsUsableSpell(233368)
 
     -- Northrend
-    if self.continent == 4 and not coldWeatherFlying then
+    if self.continent == 4 and expertRiding and not coldWeatherFlying then
+        return true
+    end
+
+    -- Cataclysm Kalimdor
+    if self.continent == 1 and expertRiding and not flightMastersLicense then
+        return true
+    end
+
+    -- Cataclysm Eastern Kingdoms
+    if self.continent == 2 and expertRiding and not flightMastersLicense then
+        return true
+    end
+
+    -- Cataclysm Deepholm
+    if self.continent == 5 and expertRiding and not flightMastersLicense then
         return true
     end
 
     -- Pandaria
-    if self.continent == 6 and not wisdomOfTheFourWinds then
+    if self.continent == 6 and expertRiding and not wisdomOfTheFourWinds then
         return true
     end
 
@@ -158,26 +173,18 @@ function LM_Location:CanFly()
 
     -- I'm going to assume, across the board, that you can't fly in
     -- "no continent" / -1 and fix it up later if it turns out you can.
-    if self.continent == -1 then
-        if FlyableNoContinent[self.areaID] == nil then
-            return false
-        end
+    if self.continent == -1 and not FlyableNoContinent[self.areaID] then
+        return false
     end
 
     -- Draenor Pathfinder
-    if self.continent == 7 then
-        local completed = select(4, GetAchievementInfo(10018))
-        if not completed then
-            return false
-        end
+    if self.continent == 7 and not IsUsableSpell(191645) then
+        return false
     end
 
     -- Broken Isles Pathfinder, Part 2
-    if self.continent == 8 then
-        local completed = select(4, GetAchievementInfo(11446))
-        if not completed then
-            return false
-        end
+    if self.continent == 8 and not IsUsableSpell(233368) then
+        return false
     end
 
     -- As far as I know Argus is completely non-flyable, but some parts of

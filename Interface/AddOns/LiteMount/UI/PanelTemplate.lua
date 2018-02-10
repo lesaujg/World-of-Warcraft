@@ -39,7 +39,6 @@ function LiteMountOptionsPanel_Open()
     InterfaceOptionsFrame_OpenToCategory(f.CurrentOptionsPanel)
 end
 
-
 function LiteMountOptionsPanel_Refresh(self)
     LM_Debug("Panel_Refresh " .. self:GetName())
     for _,control in ipairs(self.controls or {}) do
@@ -84,24 +83,32 @@ end
 function LiteMountOptionsPanel_OnShow(self)
     LM_Debug("Panel_OnShow " .. self:GetName())
     LiteMountOptions.CurrentOptionsPanel = self
-    LiteMountOptionsProfileDropDown_Attach(self)
+    if not self.dontShowProfile then
+        LiteMountOptionsProfileDropDown_Attach(self)
+
+        LM_Options.db.RegisterCallback(self, "OnProfileCopied", self.refresh, self)
+        LM_Options.db.RegisterCallback(self, "OnProfileChanged", self.refresh, self)
+        LM_Options.db.RegisterCallback(self, "OnProfileReset", self.refresh, sefl)
+    end
+
     LiteMountOptionsPanel_Refresh(self)
 end
 
 function LiteMountOptionsPanel_OnHide(self)
     LM_Debug("Panel_OnHide " .. self:GetName())
+
+    LM_Options.db.UnregisterAllCallbacks(self)
+
     -- Seems like the InterfacePanel calls all the Okay or Cancel for
     -- anything that's been opened when the appropriate button is clicked
     -- LiteMountOptionsPanel_Okay(self)
 end
 
 function LiteMountOptionsPanel_OnLoad(self)
+
     if self ~= LiteMountOptions then
         self.parent = LiteMountOptions.name
-        if not self.name then
-            local n = self:GetAttribute("panel-name")
-            self.name = _G[n] or n
-        end
+        self.name = _G[self.name] or self.name
         self.Title:SetText("LiteMount : " .. self.name)
     else
         self.name = "LiteMount"

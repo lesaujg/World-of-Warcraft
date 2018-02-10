@@ -14,7 +14,13 @@ SkadaPerCharDB = {
 		["damage"] = 0,
 		["players"] = {
 			{
-				["last"] = 1518062576,
+				["last"] = 1518268709,
+				["dispells"] = 0,
+				["healingabsorbed"] = 0,
+				["role"] = "DAMAGER",
+				["class"] = "HUNTER",
+				["damaged"] = {
+				},
 				["auras"] = {
 					["Light's Embrace"] = {
 						["name"] = "Light's Embrace",
@@ -33,13 +39,7 @@ SkadaPerCharDB = {
 						["id"] = 190909,
 					},
 				},
-				["healingabsorbed"] = 0,
-				["ccbreaks"] = 0,
-				["ffdamagedonespells"] = {
-				},
-				["damaged"] = {
-				},
-				["dispells"] = 0,
+				["ffdamagedone"] = 0,
 				["healingspells"] = {
 					["Light's Embrace"] = {
 						["shielding"] = 0,
@@ -54,7 +54,6 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
-				["ffdamagedone"] = 0,
 				["time"] = 24,
 				["interrupts"] = 0,
 				["alertDamage"] = 1038648,
@@ -64,98 +63,98 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["shielding"] = 0,
-				["damagetaken"] = 1370879,
 				["deathlog"] = {
 					{
 						["ts"] = 1518062519.967,
 						["amount"] = -299609,
-						["spellid"] = 88163,
 						["srcname"] = "Felsworn Myrmidon",
 						["hp"] = 5321460,
+						["spellid"] = 88163,
 					}, -- [1]
 					{
 						["absorb"] = 0,
 						["amount"] = 32431,
-						["srcname"] = "Bracnar",
 						["spellid"] = 253216,
+						["srcname"] = "Bracnar",
 						["hp"] = 5054282,
 						["ts"] = 1518062522.186,
 					}, -- [2]
 					{
 						["absorb"] = 0,
 						["amount"] = 15897,
-						["srcname"] = "Bracnar",
 						["spellid"] = 253216,
+						["srcname"] = "Bracnar",
 						["hp"] = 5070179,
 						["ts"] = 1518062523.986,
 					}, -- [3]
 					{
 						["absorb"] = 0,
 						["amount"] = 32431,
-						["srcname"] = "Bracnar",
 						["spellid"] = 253216,
+						["srcname"] = "Bracnar",
 						["hp"] = 5102610,
 						["ts"] = 1518062525.988,
 					}, -- [4]
 					{
 						["ts"] = 1518062534.268,
 						["amount"] = -267875,
-						["spellid"] = 88163,
 						["srcname"] = "Eredar War-Mind",
 						["hp"] = 4834735,
+						["spellid"] = 88163,
 					}, -- [5]
 					{
 						["absorb"] = 0,
 						["amount"] = 15898,
-						["srcname"] = "Bracnar",
 						["spellid"] = 253216,
+						["srcname"] = "Bracnar",
 						["hp"] = 4850633,
 						["ts"] = 1518062536.291,
 					}, -- [6]
 					{
 						["ts"] = 1518062537.272,
 						["amount"] = -803395,
-						["spellid"] = 202420,
 						["srcname"] = "Eredar War-Mind",
 						["hp"] = 4047238,
+						["spellid"] = 202420,
 					}, -- [7]
 					{
 						["absorb"] = 0,
 						["amount"] = 64862,
-						["srcname"] = "Bracnar",
 						["spellid"] = 253216,
+						["srcname"] = "Bracnar",
 						["hp"] = 4112100,
 						["ts"] = 1518062538.219,
 					}, -- [8]
 					{
 						["absorb"] = 0,
 						["amount"] = 31795,
-						["srcname"] = "Bracnar",
 						["spellid"] = 253216,
+						["srcname"] = "Bracnar",
 						["hp"] = 4143895,
 						["ts"] = 1518062540.231,
 					}, -- [9]
 					{
 						["absorb"] = 0,
 						["amount"] = 31795,
-						["srcname"] = "Bracnar",
 						["spellid"] = 253216,
+						["srcname"] = "Bracnar",
 						["hp"] = 4175690,
 						["ts"] = 1518062542.236,
 					}, -- [10]
 					{
 						["absorb"] = 0,
 						["amount"] = 16772,
-						["srcname"] = "Bracnar",
 						["spellid"] = 253216,
+						["srcname"] = "Bracnar",
 						["hp"] = 4192462,
 						["ts"] = 1518062543.318,
 					}, -- [11]
 					["pos"] = 12,
 				},
+				["damagetaken"] = 1370879,
+				["shielding"] = 0,
 				["id"] = "Player-1169-06A1ACBD",
-				["maxhp"] = 5394240,
+				["first"] = 1518062565,
 				["healed"] = {
 					["Player-1169-06A1ACBD"] = {
 						["role"] = "DAMAGER",
@@ -172,13 +171,13 @@ SkadaPerCharDB = {
 						["damage"] = 803395,
 						["max"] = 803395,
 						["name"] = "Soulflame",
-						["min"] = 803395,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 4,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 803395,
 						["absorbed"] = 0,
 					},
 					["Attack"] = {
@@ -187,27 +186,35 @@ SkadaPerCharDB = {
 						["damage"] = 567484,
 						["max"] = 299609,
 						["name"] = "Attack",
-						["min"] = 267875,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 267875,
 						["absorbed"] = 0,
 					},
 				},
 				["healing"] = 241881,
-				["first"] = 1518062565,
+				["maxhp"] = 5394240,
 				["ffdamagedonetargets"] = {
 				},
-				["alertCount"] = 2,
+				["alertCount"] = 3,
 				["overhealing"] = 0,
-				["role"] = "DAMAGER",
+				["ccbreaks"] = 0,
 				["alert"] = {
 					["High"] = {
-						["alertCount"] = 2,
+						["alertCount"] = 3,
 						["spell"] = {
+							["+Chaos Pyre"] = {
+								["min"] = 0,
+								["alertCount"] = 1,
+								["id"] = 222631,
+								["alertID"] = "High",
+								["max"] = 0,
+								["alertDamage"] = 0,
+							},
 							["Fel Lava"] = {
 								["min"] = 519324,
 								["alertCount"] = 2,
@@ -221,7 +228,8 @@ SkadaPerCharDB = {
 						["alertDamage"] = 1038648,
 					},
 				},
-				["class"] = "HUNTER",
+				["ffdamagedonespells"] = {
+				},
 			}, -- [1]
 		},
 		["deaths"] = 0,
@@ -241,6 +249,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 2473,
 				["htakenspell"] = {
 					["Leech"] = {
 						["min"] = 644,
@@ -251,8 +261,6 @@ SkadaPerCharDB = {
 						["hits"] = 2,
 					},
 				},
-				["htaken"] = 2473,
-				["done"] = 0,
 			},
 			["Felsworn Myrmidon"] = {
 				["players"] = {
@@ -267,10 +275,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 299609,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 299609,
 			},
 			["Slaigha-Llane"] = {
 				["players"] = {
@@ -295,6 +303,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 34149,
 				["htakenspell"] = {
 					["Leech"] = {
 						["min"] = 2496,
@@ -313,8 +323,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 34149,
-				["done"] = 0,
 			},
 			["Bariance-Llane"] = {
 				["players"] = {
@@ -323,6 +331,8 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 571703,
 				["htakenspell"] = {
 					["Holy Word: Serenity"] = {
 						["min"] = 571703,
@@ -333,8 +343,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 571703,
-				["done"] = 0,
 			},
 			["Unknown"] = {
 				["players"] = {
@@ -351,6 +359,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 690,
 				["htakenspell"] = {
 					["Leech"] = {
 						["min"] = 690,
@@ -361,8 +371,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 690,
-				["done"] = 0,
 			},
 			["Eredar War-Mind"] = {
 				["players"] = {
@@ -377,10 +385,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 1071270,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 1071270,
 			},
 			["Lightspawn"] = {
 				["players"] = {
@@ -397,10 +405,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 		},
 		["shielding"] = 0,
@@ -412,7 +420,7 @@ SkadaPerCharDB = {
 		["power"] = {
 		},
 		["name"] = "Total",
-		["alertCount"] = 2,
+		["alertCount"] = 3,
 		["damagetaken"] = 1370879,
 		["mobhdone"] = 609015,
 		["last_action"] = 1518062406,

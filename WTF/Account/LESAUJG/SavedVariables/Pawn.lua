@@ -12,6 +12,11 @@ PawnCommon = {
 	["ShowTooltipIcons"] = true,
 	["LastVersion"] = 2.0218,
 	["ShowSocketingAdvisor"] = true,
+	["ShowSpecIcons"] = true,
+	["ShowLootUpgradeAdvisor"] = true,
+	["ButtonPosition"] = 2,
+	["IgnoreGemsWhileLeveling"] = true,
+	["ShowQuestUpgradeAdvisor"] = true,
 	["Scales"] = {
 		["\"MrRobot\":HUNTER3"] = {
 			["IconTexturePath"] = 461113,
@@ -376,20 +381,20 @@ PawnCommon = {
 			["SpecID"] = 1,
 			["UnenchantedColor"] = "b7698b",
 		},
-		["\"MrRobot\":SHAMAN3"] = {
-			["IconTexturePath"] = 136052,
+		["\"MrRobot\":MAGE1"] = {
+			["IconTexturePath"] = 135932,
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "0070de",
-			["ClassID"] = 7,
-			["LocalizedName"] = "Shaman: Restoration",
+			["Color"] = "3fc7eb",
+			["ClassID"] = 8,
+			["LocalizedName"] = "Mage: Arcane",
 			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "HEALER",
+			["Role"] = "DAMAGER",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["SpecID"] = 3,
-			["UnenchantedColor"] = "0054a6",
+			["SpecID"] = 1,
+			["UnenchantedColor"] = "2f95b0",
 		},
 		["\"MrRobot\":WARRIOR1"] = {
 			["IconTexturePath"] = 132355,
@@ -421,20 +426,20 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "6566b2",
 		},
-		["\"MrRobot\":MAGE1"] = {
-			["IconTexturePath"] = 135932,
+		["\"MrRobot\":SHAMAN3"] = {
+			["IconTexturePath"] = 136052,
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "3fc7eb",
-			["ClassID"] = 8,
-			["LocalizedName"] = "Mage: Arcane",
+			["Color"] = "0070de",
+			["ClassID"] = 7,
+			["LocalizedName"] = "Shaman: Restoration",
 			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "DAMAGER",
+			["Role"] = "HEALER",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["SpecID"] = 1,
-			["UnenchantedColor"] = "2f95b0",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "0054a6",
 		},
 		["\"MrRobot\":DEMONHUNTER2"] = {
 			["IconTexturePath"] = 1247265,
@@ -502,10 +507,10 @@ PawnCommon = {
 		["\"MrRobot\":PALADIN3"] = {
 			["IconTexturePath"] = 135873,
 			["PerCharacterOptions"] = {
-				["Herbinator-Sisters of Elune"] = {
+				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
-				["Galinar-Sisters of Elune"] = {
+				["Herbinator-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
 			},
@@ -714,10 +719,5 @@ PawnCommon = {
 			["UnenchantedColor"] = "00bf70",
 		},
 	},
-	["ShowLootUpgradeAdvisor"] = true,
-	["ButtonPosition"] = 2,
-	["IgnoreGemsWhileLeveling"] = true,
-	["ShowQuestUpgradeAdvisor"] = true,
-	["ShowSpecIcons"] = true,
 	["ShowUpgradesOnTooltips"] = true,
 }
