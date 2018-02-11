@@ -48,10 +48,10 @@ AskMrRobotDb3 = {
 						[902] = 1,
 						[903] = 1,
 						[904] = 1,
-						[1687] = 1,
+						[906] = 4,
 						[905] = 4,
 						[1593] = 4,
-						[906] = 4,
+						[1594] = 1,
 						[1595] = 1,
 						[907] = 4,
 						[1596] = 3,
@@ -60,7 +60,7 @@ AskMrRobotDb3 = {
 						[909] = 4,
 						[899] = 1,
 						[910] = 4,
-						[1594] = 1,
+						[1687] = 1,
 					},
 					["Crucible"] = {
 						["Equipped"] = {
@@ -79,9 +79,9 @@ AskMrRobotDb3 = {
 			["Artifacts"] = {
 				[2] = {
 					["Relics"] = {
-						"|cff1eff00|Hitem:156816::::::::110:70::::::|h[Hatecoil Badge of Glory]|h|r", -- [1]
-						"|cff1eff00|Hitem:156817::::::::110:70::::::|h[Stonedark Idol]|h|r", -- [2]
-						"|cff1eff00|Hitem:156803::::::::110:70::::::|h[Seawitch's Foci]|h|r", -- [3]
+						"|cff1eff00|Hitem:156816::::::::110:66::::::|h[Hatecoil Badge of Glory]|h|r", -- [1]
+						"|cff1eff00|Hitem:156817::::::::110:66::::::|h[Stonedark Idol]|h|r", -- [2]
+						"|cff1eff00|Hitem:156803::::::::110:66::::::|h[Seawitch's Foci]|h|r", -- [3]
 					},
 					["Powers"] = {
 						[1120] = 1,
@@ -100,8 +100,8 @@ AskMrRobotDb3 = {
 						[1133] = 1,
 						[1134] = 1,
 						[1135] = 1,
-						[1130] = 1,
 						[1126] = 3,
+						[1130] = 1,
 					},
 					["Crucible"] = {
 						["Equipped"] = {
@@ -173,7 +173,7 @@ AskMrRobotDb3 = {
 				},
 				[2] = {
 					"|cff1eff00|Hitem:153904::::::::110:66::::::|h[Sunsoul Faceguard]|h|r", -- [1]
-					"|cff1eff00|Hitem:153906::::::::110:66::::::|h[Sunsoul Amulet]|h|r", -- [2]
+					"|cffa335ee|Hitem:143906::::::::110:66:512:1:1:3628:110:::|h[Heartbreak Charm]|h|r", -- [2]
 					"|cff1eff00|Hitem:153911::::::::110:66::::::|h[Sunsoul Shoulderguards]|h|r", -- [3]
 					nil, -- [4]
 					"|cff1eff00|Hitem:153900::::::::110:66::::::|h[Sunsoul Chestguard]|h|r", -- [5]
@@ -287,13 +287,13 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1712] = {
+					[1530] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
 						[15] = false,
 					},
-					[1530] = {
+					[1712] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -317,13 +317,13 @@ AskMrRobotDb3 = {
 					},
 					[1220] = {
 					},
+					[646] = {
+					},
 					[1648] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
 						[15] = false,
-					},
-					[646] = {
 					},
 					[1712] = {
 						[14] = false,
@@ -331,13 +331,13 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1064] = {
-					},
-					[1158] = {
-					},
 					[1469] = {
 					},
 					[1503] = {
+					},
+					[1064] = {
+					},
+					[1098] = {
 					},
 					[870] = {
 					},
@@ -353,7 +353,7 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1098] = {
+					[1158] = {
 					},
 					[1520] = {
 						[14] = false,
@@ -406,17 +406,17 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1530] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
+					[1500] = {
 					},
 					[870] = {
 					},
 					[33] = {
 					},
-					[1500] = {
+					[1530] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
 					},
 				},
 			},
@@ -432,9 +432,13 @@ AskMrRobotDb3 = {
 					},
 					[1220] = {
 					},
-					[33] = {
-					},
 					[1676] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
+					},
+					[1648] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -452,11 +456,7 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1648] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
+					[33] = {
 					},
 				},
 			},
