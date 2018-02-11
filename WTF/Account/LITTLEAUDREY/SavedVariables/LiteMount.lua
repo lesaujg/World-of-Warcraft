@@ -1,10 +1,13 @@
 
 LiteMountDB = {
 	["char"] = {
+		["Torinara - Sisters of Elune"] = {
+			["configVersion"] = 2,
+		},
 		["Allala - Sisters of Elune"] = {
 			["configVersion"] = 2,
 		},
-		["Torinara - Sisters of Elune"] = {
+		["Aloraal - Sisters of Elune"] = {
 			["configVersion"] = 2,
 		},
 	},
@@ -454,10 +457,10 @@ LiteMountDB = {
 				[35710] = false,
 				[193007] = false,
 				[132118] = false,
-				[74856] = false,
+				[230401] = false,
 				[102349] = false,
 				[140249] = false,
-				[258022] = false,
+				[74856] = false,
 				[10969] = false,
 				[189043] = false,
 				[148620] = false,
@@ -470,9 +473,9 @@ LiteMountDB = {
 				[61309] = false,
 				[61451] = false,
 				[171836] = false,
-				[49193] = false,
+				[61469] = false,
 				[102350] = false,
-				[458] = false,
+				[49193] = false,
 				[65638] = false,
 				[63635] = false,
 				[127158] = false,
@@ -612,7 +615,7 @@ LiteMountDB = {
 				[155741] = false,
 				[23240] = false,
 				[39319] = false,
-				[61469] = false,
+				[458] = false,
 				[66091] = false,
 				[227991] = false,
 				[39801] = false,
@@ -622,7 +625,7 @@ LiteMountDB = {
 				[179245] = false,
 				[179478] = false,
 				[127295] = false,
-				[230401] = false,
+				[258022] = false,
 				[63232] = false,
 				[186305] = false,
 				[222238] = false,
