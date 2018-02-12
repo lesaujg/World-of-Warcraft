@@ -1,12 +1,22 @@
-tag f51e8343c08d44629c3a2e8fd2fd5f11b85ced3d 7.3.15
+tag 0fa3316981949051b269b0fd92c935b8fe004537 7.3.17
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Fri Feb 9 18:28:06 2018 +1100
+Date:	Sun Feb 11 18:48:01 2018 +1100
 
-Don't apply flyable workaround if you haven't learnt flying
+Still trying to fix Blizzard's error.
+Clearly I have no idea what I'm doing, so here's some song lyrics:
 
-commit 2a34aa680ef1be38d12b07a9c3a67c3a26e6b1bc
+One, don't pick up the phone
+You know he's only calling 'cause he's drunk and alone
+Two, don't let him in
+You have to kick him out again
+Three, don't be his friend
+You know you're gonna wake up in his bed in the morning
+And if you're under him
+You ain't getting over him
+
+commit 8481ee9c0f8cba1a3ffe82045d91219aa8ed5c05
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Feb 9 18:27:33 2018 +1100
+Date:   Sun Feb 11 18:46:09 2018 +1100
 
-    Check for flying at all before applying hack
+    More attempts to test if you know a flying ability
 
