@@ -29,10 +29,10 @@ AddOnSkinsDB = {
 			["Blizzard_WorldStateCaptureBar"] = true,
 			["TalentSetManager"] = true,
 			["Bagnon"] = true,
-			["TomeOfTeleportation"] = true,
+			["Details"] = true,
 			["Blizzard_Transmogrify"] = true,
 			["WeakAuras"] = true,
-			["Details"] = true,
+			["TomeOfTeleportation"] = true,
 		},
 		["Torinar - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
@@ -54,8 +54,8 @@ AddOnSkinsDB = {
 			["Blizzard_WorldStateCaptureBar"] = true,
 			["TalentSetManager"] = true,
 			["TomeOfTeleportation"] = true,
-			["Blizzard_Transmogrify"] = true,
 			["WeakAuras"] = true,
+			["Blizzard_Transmogrify"] = true,
 			["MasterPlan"] = true,
 		},
 		["Mandelbrot - Sisters of Elune"] = {

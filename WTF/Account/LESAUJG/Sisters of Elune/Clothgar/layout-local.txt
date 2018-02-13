@@ -10,7 +10,7 @@ Frame: TSMCraftingTradeSkillFrame
 FrameLevel: 0
 Anchor: CENTER
 X: -237
-Y: 144
+Y: 137
 W: 410
 H: 517
 Frame: BaudManifestDisplay1

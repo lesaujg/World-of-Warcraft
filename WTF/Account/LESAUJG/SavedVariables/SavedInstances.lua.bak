@@ -17,7 +17,7 @@ SavedInstancesDB = {
 			["IL"] = 5.4375,
 			["Zone"] = "Stormwind City",
 			["Show"] = "saved",
-			["DailyResetTime"] = 1518447599,
+			["DailyResetTime"] = 1518533999,
 			["PlayedLevel"] = 3260,
 			["Faction"] = "Alliance",
 			["ILe"] = 3.3125,
@@ -28,9 +28,9 @@ SavedInstancesDB = {
 			["Race"] = "Pandaren (Alliance)",
 		},
 		["Galinar - Sisters of Elune"] = {
-			["lastbossyell"] = "War-God Jalak: 10 Player (Heroic)",
-			["IL"] = 878.25,
-			["LastSeen"] = 1518386109,
+			["lastbossyell"] = "Terenas Menethil: 25 Player (Heroic)",
+			["IL"] = 874.5,
+			["LastSeen"] = 1518530829,
 			["Order"] = 50,
 			["Class"] = "PALADIN",
 			["Race"] = "Dwarf",
@@ -54,11 +54,12 @@ SavedInstancesDB = {
 					["totalMax"] = 20,
 					["amount"] = 9,
 				},
-				[1220] = {
-					["amount"] = 153,
+				[752] = {
+					["totalMax"] = 20,
+					["amount"] = 0,
 				},
-				[1226] = {
-					["amount"] = 4009,
+				[1275] = {
+					["amount"] = 3,
 				},
 				[1342] = {
 					["totalMax"] = 1000,
@@ -74,37 +75,36 @@ SavedInstancesDB = {
 				[1166] = {
 					["amount"] = 225,
 				},
-				[1275] = {
-					["amount"] = 3,
+				[1226] = {
+					["amount"] = 4009,
 				},
-				[752] = {
-					["totalMax"] = 20,
-					["amount"] = 0,
+				[1220] = {
+					["amount"] = 153,
 				},
 			},
 			["DailyWorldQuest"] = {
 				["days2"] = {
 					["questneed"] = 4,
-					["name"] = "The Nightfallen",
+					["name"] = "The Dreamweavers",
 					["isfinish"] = false,
-					["iscompleted"] = false,
 					["dayleft"] = 2,
-					["questdone"] = 0,
-				},
-				["days1"] = {
-					["questneed"] = 4,
-					["name"] = "The Wardens",
-					["isfinish"] = false,
 					["iscompleted"] = false,
-					["dayleft"] = 1,
 					["questdone"] = 0,
 				},
 				["days0"] = {
 					["questneed"] = 4,
-					["name"] = "Army of the Light",
+					["name"] = "The Wardens",
 					["isfinish"] = false,
-					["iscompleted"] = false,
 					["dayleft"] = 0,
+					["iscompleted"] = false,
+					["questdone"] = 0,
+				},
+				["days1"] = {
+					["questneed"] = 4,
+					["name"] = "The Nightfallen",
+					["isfinish"] = false,
+					["dayleft"] = 1,
+					["iscompleted"] = false,
 					["questdone"] = 0,
 				},
 			},
@@ -113,19 +113,19 @@ SavedInstancesDB = {
 			["Level"] = 110,
 			["LClass"] = "Paladin",
 			["RBGrating"] = 0,
-			["MythicKey"] = {
-			},
-			["lastbosstime"] = 1518386059,
-			["PlayedTotal"] = 392082,
-			["lastbossyelltime"] = 1517439708,
-			["Money"] = 272648632,
-			["WeeklyResetTime"] = 1518533999,
 			["MythicKeyBest"] = {
 				["level"] = 0,
 				["ResetTime"] = 1518533999,
 				["WeeklyReward"] = false,
 			},
-			["lastboss"] = "The Crown Chemical Co.: Normal",
+			["lastbosstime"] = 1518530717,
+			["Zone"] = "Dalaran",
+			["lastbossyelltime"] = 1518530704,
+			["Money"] = 281584042,
+			["MythicKey"] = {
+			},
+			["PlayedTotal"] = 395000,
+			["lastboss"] = "The Lich King: 25 Player (Heroic)",
 			["Show"] = "saved",
 			["BonusRoll"] = {
 				{
@@ -230,16 +230,16 @@ SavedInstancesDB = {
 					["currencyID"] = 1273,
 				}, -- [18]
 			},
-			["PlayedLevel"] = 108572,
+			["PlayedLevel"] = 111490,
 			["Faction"] = "Alliance",
-			["ILe"] = 875.25,
-			["DailyResetTime"] = 1518447599,
+			["ILe"] = 871.5,
+			["DailyResetTime"] = 1518533999,
 			["Quests"] = {
 			},
-			["Zone"] = "Icecrown",
+			["WeeklyResetTime"] = 1518533999,
 		},
 		["Guldahka - Turalyon"] = {
-			["WeeklyResetTime"] = 1518516007,
+			["WeeklyResetTime"] = 1519120807,
 			["Zone"] = "Plaguelands: The Scarlet Enclave",
 			["Order"] = 50,
 			["Class"] = "DEATHKNIGHT",
@@ -253,7 +253,7 @@ SavedInstancesDB = {
 			["LastSeen"] = 1468282953,
 			["IL"] = 48,
 			["Show"] = "saved",
-			["DailyResetTime"] = 1518429607,
+			["DailyResetTime"] = 1518602407,
 			["PlayedLevel"] = 264,
 			["Faction"] = "Horde",
 			["ILe"] = 48,
@@ -266,7 +266,7 @@ SavedInstancesDB = {
 		["Uldaris - Sisters of Elune"] = {
 			["lastbossyell"] = "War-God Jalak: 10 Player (Heroic)",
 			["IL"] = 864.25,
-			["LastSeen"] = 1518387371,
+			["LastSeen"] = 1518525548,
 			["Order"] = 50,
 			["Class"] = "DRUID",
 			["Race"] = "Night Elf",
@@ -302,14 +302,14 @@ SavedInstancesDB = {
 				[1220] = {
 					["amount"] = 11799,
 				},
-				[994] = {
-					["totalMax"] = 20,
-					["amount"] = 16,
-				},
-				[1129] = {
+				[1273] = {
 					["weeklyMax"] = 3,
-					["totalMax"] = 20,
-					["amount"] = 7,
+					["totalMax"] = 6,
+					["amount"] = 1,
+				},
+				[1191] = {
+					["totalMax"] = 5000,
+					["amount"] = 650,
 				},
 				[1533] = {
 					["amount"] = 7,
@@ -331,23 +331,23 @@ SavedInstancesDB = {
 				[1166] = {
 					["amount"] = 425,
 				},
-				[1191] = {
-					["totalMax"] = 5000,
-					["amount"] = 650,
+				[1129] = {
+					["weeklyMax"] = 3,
+					["totalMax"] = 20,
+					["amount"] = 7,
 				},
 				[81] = {
 					["amount"] = 38,
 				},
-				[1273] = {
-					["weeklyMax"] = 3,
-					["totalMax"] = 6,
-					["amount"] = 1,
+				[994] = {
+					["totalMax"] = 20,
+					["amount"] = 16,
 				},
 			},
 			["DailyWorldQuest"] = {
 				["days2"] = {
 					["questneed"] = 4,
-					["name"] = "The Nightfallen",
+					["name"] = "The Dreamweavers",
 					["isfinish"] = false,
 					["dayleft"] = 2,
 					["iscompleted"] = false,
@@ -355,7 +355,7 @@ SavedInstancesDB = {
 				},
 				["days0"] = {
 					["questneed"] = 4,
-					["name"] = "Army of the Light",
+					["name"] = "The Wardens",
 					["isfinish"] = false,
 					["dayleft"] = 0,
 					["iscompleted"] = false,
@@ -363,7 +363,7 @@ SavedInstancesDB = {
 				},
 				["days1"] = {
 					["questneed"] = 4,
-					["name"] = "The Wardens",
+					["name"] = "The Nightfallen",
 					["isfinish"] = false,
 					["dayleft"] = 1,
 					["iscompleted"] = false,
@@ -377,17 +377,17 @@ SavedInstancesDB = {
 			["RBGrating"] = 0,
 			["MythicKey"] = {
 			},
-			["lastbosstime"] = 1518387327,
-			["Zone"] = "Shrine of Seven Stars",
+			["PlayedTotal"] = 3172510,
+			["lastbosstime"] = 1518525516,
 			["lastbossyelltime"] = 1518387298,
-			["Money"] = 715141748,
+			["Money"] = 715757934,
+			["Zone"] = "Shrine of Seven Stars",
 			["MythicKeyBest"] = {
 				["level"] = 0,
 				["ResetTime"] = 1518533999,
 				["WeeklyReward"] = false,
 			},
-			["PlayedTotal"] = 3172320,
-			["lastboss"] = "Horridon: 10 Player (Heroic)",
+			["lastboss"] = "The Crown Chemical Co.: Normal",
 			["Show"] = "saved",
 			["BonusRoll"] = {
 				{
@@ -451,28 +451,131 @@ SavedInstancesDB = {
 					["currencyID"] = 1129,
 				}, -- [10]
 			},
-			["PlayedLevel"] = 25070,
+			["PlayedLevel"] = 25260,
 			["Faction"] = "Alliance",
 			["ILe"] = 853.9375,
-			["DailyResetTime"] = 1518447599,
+			["DailyResetTime"] = 1518533999,
 			["Quests"] = {
 			},
 			["WeeklyResetTime"] = 1518533999,
 		},
 		["Bracnar - Sisters of Elune"] = {
-			["lastbossyell"] = "High Exarch Turalyon: Normal",
-			["IL"] = 942.4375,
-			["LastSeen"] = 1518400777,
+			["lastbossyell"] = "War-God Jalak: 25 Player (Heroic)",
+			["IL"] = 944.625,
+			["LastSeen"] = 1518498496,
 			["Order"] = 50,
 			["Class"] = "HUNTER",
-			["Show"] = "saved",
-			["MythicKeyBest"] = {
-				["LastWeekLevel"] = 2,
-				["level"] = 0,
-				["ResetTime"] = 1518533999,
-				["WeeklyReward"] = false,
+			["currency"] = {
+				[994] = {
+					["totalMax"] = 20,
+					["amount"] = 12,
+				},
+				[402] = {
+					["amount"] = 17,
+				},
+				[1273] = {
+					["weeklyMax"] = 3,
+					["amount"] = 0,
+					["totalMax"] = 6,
+					["earnedThisWeek"] = 3,
+				},
+				[241] = {
+					["amount"] = 0,
+				},
+				[1299] = {
+					["totalMax"] = 5000,
+					["amount"] = 1748,
+				},
+				[697] = {
+					["totalMax"] = 20,
+					["amount"] = 14,
+				},
+				[416] = {
+					["amount"] = 12,
+				},
+				[824] = {
+					["totalMax"] = 10000,
+					["amount"] = 10000,
+				},
+				[776] = {
+					["totalMax"] = 20,
+					["amount"] = 0,
+				},
+				[1149] = {
+					["totalMax"] = 5000,
+					["amount"] = 5000,
+				},
+				[777] = {
+					["amount"] = 55207,
+				},
+				[1275] = {
+					["amount"] = 27,
+				},
+				[1129] = {
+					["weeklyMax"] = 3,
+					["totalMax"] = 20,
+					["amount"] = 8,
+				},
+				[515] = {
+					["amount"] = 35,
+				},
+				[1314] = {
+					["weeklyMax"] = 20,
+					["totalMax"] = 40,
+					["amount"] = 40,
+				},
+				[1155] = {
+					["totalMax"] = 2000,
+					["amount"] = 87,
+				},
+				[1342] = {
+					["totalMax"] = 1000,
+					["amount"] = 95,
+				},
+				[1191] = {
+					["totalMax"] = 5000,
+					["amount"] = 2000,
+				},
+				[1220] = {
+					["amount"] = 6161,
+				},
+				[391] = {
+					["amount"] = 7,
+				},
+				[1501] = {
+					["amount"] = 0,
+				},
+				[1533] = {
+					["amount"] = 667,
+				},
+				[752] = {
+					["totalMax"] = 20,
+					["amount"] = 13,
+				},
+				[1101] = {
+					["totalMax"] = 100000,
+					["amount"] = 61865,
+				},
+				[1226] = {
+					["amount"] = 24374,
+				},
+				[738] = {
+					["amount"] = 1947,
+				},
+				[1166] = {
+					["amount"] = 3070,
+				},
+				[1508] = {
+					["totalMax"] = 2000,
+					["amount"] = 1106,
+				},
+				[81] = {
+					["amount"] = 215,
+				},
+				[823] = {
+					["amount"] = 254040,
+				},
 			},
-			["Race"] = "Dwarf",
 			["WeeklyResetTime"] = 1518533999,
 			["Quests"] = {
 				[44175] = {
@@ -535,7 +638,7 @@ SavedInstancesDB = {
 					["Zone"] = "Dalaran",
 				},
 			},
-			["DailyResetTime"] = 1518447599,
+			["DailyResetTime"] = 1518533999,
 			["Level"] = 110,
 			["LClass"] = "Hunter",
 			["RBGrating"] = 0,
@@ -547,275 +650,172 @@ SavedInstancesDB = {
 				["level"] = 8,
 				["ResetTime"] = 1518533999,
 			},
-			["lastbosstime"] = 1518385907,
-			["PlayedTotal"] = 33740490,
-			["lastbossyelltime"] = 1518400667,
-			["Money"] = 1099065716,
-			["currency"] = {
-				[241] = {
-					["amount"] = 0,
-				},
-				[994] = {
-					["totalMax"] = 20,
-					["amount"] = 12,
-				},
-				[402] = {
-					["amount"] = 17,
-				},
-				[1273] = {
-					["earnedThisWeek"] = 3,
-					["weeklyMax"] = 3,
-					["totalMax"] = 6,
-					["amount"] = 5,
-				},
-				[1299] = {
-					["totalMax"] = 5000,
-					["amount"] = 1748,
-				},
-				[697] = {
-					["totalMax"] = 20,
-					["amount"] = 16,
-				},
-				[416] = {
-					["amount"] = 12,
-				},
-				[824] = {
-					["totalMax"] = 10000,
-					["amount"] = 10000,
-				},
-				[776] = {
-					["totalMax"] = 20,
-					["amount"] = 0,
-				},
-				[1149] = {
-					["totalMax"] = 5000,
-					["amount"] = 5000,
-				},
-				[777] = {
-					["amount"] = 55207,
-				},
-				[1275] = {
-					["amount"] = 27,
-				},
-				[1129] = {
-					["weeklyMax"] = 3,
-					["totalMax"] = 20,
-					["amount"] = 8,
-				},
-				[515] = {
-					["amount"] = 35,
-				},
-				[1314] = {
-					["weeklyMax"] = 20,
-					["totalMax"] = 40,
-					["amount"] = 40,
-				},
-				[1155] = {
-					["totalMax"] = 2000,
-					["amount"] = 87,
-				},
-				[1342] = {
-					["totalMax"] = 1000,
-					["amount"] = 95,
-				},
-				[1191] = {
-					["totalMax"] = 5000,
-					["amount"] = 2000,
-				},
-				[1220] = {
-					["amount"] = 6861,
-				},
-				[391] = {
-					["amount"] = 7,
-				},
-				[1501] = {
-					["amount"] = 0,
-				},
-				[1533] = {
-					["amount"] = 386,
-				},
-				[752] = {
-					["totalMax"] = 20,
-					["amount"] = 15,
-				},
-				[1101] = {
-					["totalMax"] = 100000,
-					["amount"] = 61865,
-				},
-				[1226] = {
-					["amount"] = 24374,
-				},
-				[738] = {
-					["amount"] = 1947,
-				},
-				[1166] = {
-					["amount"] = 3070,
-				},
-				[1508] = {
-					["totalMax"] = 2000,
-					["amount"] = 986,
-				},
-				[81] = {
-					["amount"] = 215,
-				},
-				[823] = {
-					["amount"] = 254040,
-				},
+			["PlayedTotal"] = 33757164,
+			["MythicKeyBest"] = {
+				["LastWeekLevel"] = 2,
+				["level"] = 8,
+				["ResetTime"] = 1518533999,
+				["WeeklyReward"] = false,
 			},
-			["lastboss"] = "The Crown Chemical Co.: Normal",
+			["lastbossyelltime"] = 1518498364,
+			["Money"] = 1131485509,
+			["lastbosstime"] = 1518498381,
+			["Zone"] = "Dalaran",
+			["Show"] = "saved",
+			["lastboss"] = "Horridon: 25 Player (Heroic)",
 			["BonusRoll"] = {
+				{
+					["item"] = "|cffa335ee|Hitem:91101::::::::110:253:4:::476:::|h[Tyrannical Gladiator's Cape of Prowess]|h|r",
+					["time"] = 1518498049,
+					["name"] = "Nalak",
+					["currencyID"] = 752,
+				}, -- [1]
+				{
+					["item"] = "|cffa335ee|Hitem:95150::::::::110:253:4:::465:::|h[Mail of the Mosschopper]|h|r",
+					["time"] = 1518497552,
+					["name"] = "Oondasta",
+					["currencyID"] = 752,
+				}, -- [2]
+				{
+					["money"] = 411003,
+					["name"] = "Sha of Anger",
+					["time"] = 1518497380,
+					["currencyID"] = 697,
+				}, -- [3]
+				{
+					["money"] = 166710,
+					["name"] = "The Crown Chemical Co.: Normal",
+					["time"] = 1518497221,
+					["currencyID"] = 697,
+				}, -- [4]
+				{
+					["money"] = 25,
+					["name"] = "Argus the Unmaker: Normal",
+					["time"] = 1518412564,
+					["currencyID"] = 1273,
+				}, -- [5]
+				{
+					["money"] = 25,
+					["name"] = "Varimathras: Normal",
+					["time"] = 1518407091,
+					["currencyID"] = 1273,
+				}, -- [6]
+				{
+					["money"] = 25,
+					["name"] = "Kin'garoth: Normal",
+					["time"] = 1518406467,
+					["currencyID"] = 1273,
+				}, -- [7]
+				{
+					["name"] = "Portal Keeper Hasabel: Normal",
+					["item"] = "|cffa335ee|Hitem:152008::::::::110:253::3:3:3610:1472:3528:::|h[Reality-Splitting Wristguards]|h|r",
+					["time"] = 1518404543,
+					["currencyID"] = 1273,
+				}, -- [8]
+				{
+					["money"] = 25,
+					["name"] = "Felhounds of Sargeras: Normal",
+					["time"] = 1518402051,
+					["currencyID"] = 1273,
+				}, -- [9]
 				{
 					["money"] = 25,
 					["name"] = "The Coven of Shivarra: Normal",
 					["time"] = 1518055623,
 					["currencyID"] = 1273,
-				}, -- [1]
+				}, -- [10]
 				{
 					["time"] = 1517454589,
 					["name"] = "Antoran High Command: Normal",
 					["item"] = "|cffa335ee|Hitem:152131::::::::110:253::3:4:3610:42:1472:3528:::|h[Serpentstalker Drape]|h|r",
 					["currencyID"] = 1273,
-				}, -- [2]
+				}, -- [11]
 				{
 					["money"] = 25,
 					["name"] = "Garothi Worldbreaker: Heroic",
 					["time"] = 1517448941,
 					["currencyID"] = 1273,
-				}, -- [3]
+				}, -- [12]
 				{
 					["money"] = 25,
 					["time"] = 1517362546,
 					["name"] = "Inquisitor Meto",
 					["currencyID"] = 1273,
-				}, -- [4]
+				}, -- [13]
 				{
 					["money"] = 25,
 					["time"] = 1517201382,
 					["name"] = "Varimathras: Looking For Raid",
 					["currencyID"] = 1273,
-				}, -- [5]
+				}, -- [14]
 				{
 					["name"] = "Kin'garoth: Looking For Raid",
 					["item"] = "|cffa335ee|Hitem:152280::::::::110:254::4:3:3613:1457:3528:::|h[Scalding Shatterguards]|h|r",
 					["time"] = 1517200909,
 					["currencyID"] = 1273,
-				}, -- [6]
+				}, -- [15]
 				{
 					["money"] = 25,
 					["time"] = 1517194487,
 					["name"] = "Imonar the Soulhunter: Looking For Raid",
 					["currencyID"] = 1273,
-				}, -- [7]
+				}, -- [16]
 				{
 					["money"] = 375000,
 					["name"] = "Horridon: 25 Player (Heroic)",
 					["time"] = 1517186859,
 					["currencyID"] = 752,
-				}, -- [8]
+				}, -- [17]
 				{
 					["money"] = 25,
 					["name"] = "Argus the Unmaker: Looking For Raid",
 					["time"] = 1516941452,
 					["currencyID"] = 1273,
-				}, -- [9]
+				}, -- [18]
 				{
 					["money"] = 25,
 					["name"] = "Sotanathor",
 					["time"] = 1516755790,
 					["currencyID"] = 1273,
-				}, -- [10]
+				}, -- [19]
 				{
 					["time"] = 1516412180,
 					["name"] = "Varimathras: Looking For Raid",
 					["item"] = "|cffa335ee|Hitem:151995::::::::110:253::4:3:3613:1457:3528:::|h[Robes of the Forsaken Dreadlord]|h|r",
 					["currencyID"] = 1273,
-				}, -- [11]
+				}, -- [20]
 				{
 					["money"] = 25,
 					["name"] = "Kin'garoth: Looking For Raid",
 					["time"] = 1516411469,
 					["currencyID"] = 1273,
-				}, -- [12]
+				}, -- [21]
 				{
 					["money"] = 25,
 					["name"] = "Eonar: Looking For Raid",
 					["time"] = 1516336797,
 					["currencyID"] = 1273,
-				}, -- [13]
+				}, -- [22]
 				{
 					["money"] = 25,
 					["name"] = "Aggramar: Looking For Raid",
 					["time"] = 1516334999,
 					["currencyID"] = 1273,
-				}, -- [14]
+				}, -- [23]
 				{
 					["money"] = 25,
 					["time"] = 1516245343,
 					["name"] = "Matron Folnuna",
 					["currencyID"] = 1273,
-				}, -- [15]
+				}, -- [24]
 				{
 					["money"] = 409241,
 					["name"] = "Galleon",
 					["time"] = 1515810041,
 					["currencyID"] = 697,
-				}, -- [16]
-				{
-					["money"] = 25,
-					["name"] = "Antoran High Command: Looking For Raid",
-					["time"] = 1515002348,
-					["currencyID"] = 1273,
-				}, -- [17]
-				{
-					["item"] = "|cffa335ee|Hitem:152027::::::::110:253::4:3:3613:1457:3528:::|h[Gravitational Condensate]|h|r",
-					["time"] = 1515001721,
-					["name"] = "Felhounds of Sargeras: Looking For Raid",
-					["currencyID"] = 1273,
-				}, -- [18]
-				{
-					["item"] = "|cffa335ee|Hitem:151998::::::::110:253::4:3:3613:1457:3528:::|h[Heedless Eradication Gauntlets]|h|r",
-					["time"] = 1515000941,
-					["name"] = "Garothi Worldbreaker: Looking For Raid",
-					["currencyID"] = 1273,
-				}, -- [19]
-				{
-					["money"] = 25,
-					["name"] = "Varimathras: Looking For Raid",
-					["time"] = 1515000273,
-					["currencyID"] = 1273,
-				}, -- [20]
-				{
-					["item"] = "|cffa335ee|Hitem:152132::::::::110:253::4:3:3613:1457:3528:::|h[Serpentstalker Grips]|h|r",
-					["time"] = 1514999678,
-					["name"] = "Kin'garoth: Looking For Raid",
-					["currencyID"] = 1273,
-				}, -- [21]
-				{
-					["money"] = 25,
-					["name"] = "Imonar the Soulhunter: Looking For Raid",
-					["time"] = 1514997682,
-					["currencyID"] = 1273,
-				}, -- [22]
-				{
-					["money"] = 25,
-					["name"] = "Portal Keeper Hasabel: Looking For Raid",
-					["time"] = 1514997175,
-					["currencyID"] = 1273,
-				}, -- [23]
-				{
-					["money"] = 25,
-					["name"] = "The Defense of Eonar: Looking For Raid",
-					["time"] = 1514996637,
-					["currencyID"] = 1273,
-				}, -- [24]
-				{
-					["item"] = "|cffa335ee|Hitem:152135::::::::110:253::4:4:3613:41:1457:3528:::|h[Serpentstalker Mantle]|h|r",
-					["time"] = 1514995941,
-					["name"] = "The Coven of Shivarra: Looking For Raid",
-					["currencyID"] = 1273,
 				}, -- [25]
 			},
-			["PlayedLevel"] = 3155795,
+			["PlayedLevel"] = 3172469,
 			["Faction"] = "Alliance",
 			["ILe"] = 933.5625,
 			["Skills"] = {
@@ -823,27 +823,30 @@ SavedInstancesDB = {
 			["DailyWorldQuest"] = {
 				["days2"] = {
 					["questneed"] = 4,
-					["name"] = "The Nightfallen",
-					["iscompleted"] = false,
+					["name"] = "The Dreamweavers",
 					["isfinish"] = false,
 					["dayleft"] = 2,
+					["iscompleted"] = false,
 					["questdone"] = 0,
 				},
 				["days0"] = {
-					["name"] = "Emissary Missing",
-					["iscompleted"] = true,
+					["questneed"] = 4,
+					["name"] = "The Wardens",
+					["isfinish"] = false,
 					["dayleft"] = 0,
+					["iscompleted"] = false,
+					["questdone"] = 0,
 				},
 				["days1"] = {
 					["questneed"] = 4,
-					["name"] = "The Wardens",
-					["iscompleted"] = false,
+					["name"] = "The Nightfallen",
 					["isfinish"] = false,
 					["dayleft"] = 1,
+					["iscompleted"] = false,
 					["questdone"] = 0,
 				},
 			},
-			["Zone"] = "Antorus, the Burning Throne",
+			["Race"] = "Dwarf",
 		},
 		["Herbinator - Sisters of Elune"] = {
 			["IL"] = 0.3125,
@@ -860,7 +863,7 @@ SavedInstancesDB = {
 			["Zone"] = "Stormwind City",
 			["Race"] = "Human",
 			["Show"] = "saved",
-			["DailyResetTime"] = 1518447599,
+			["DailyResetTime"] = 1518533999,
 			["PlayedLevel"] = 103548,
 			["Faction"] = "Alliance",
 			["ILe"] = 0.25,
@@ -873,9 +876,10 @@ SavedInstancesDB = {
 		["Orig - Sisters of Elune"] = {
 			["lastbossyell"] = "War-God Jalak: 25 Player (Heroic)",
 			["IL"] = 845.5625,
-			["LastSeen"] = 1518388050,
+			["LastSeen"] = 1518526385,
 			["Order"] = 50,
 			["Class"] = "MONK",
+			["Race"] = "Gnome",
 			["currency"] = {
 				[1220] = {
 					["amount"] = 7623,
@@ -925,11 +929,10 @@ SavedInstancesDB = {
 					["amount"] = 7,
 				},
 			},
-			["Zone"] = "Shrine of Seven Stars",
 			["DailyWorldQuest"] = {
 				["days2"] = {
 					["questneed"] = 4,
-					["name"] = "The Nightfallen",
+					["name"] = "The Dreamweavers",
 					["isfinish"] = false,
 					["iscompleted"] = false,
 					["dayleft"] = 2,
@@ -937,7 +940,7 @@ SavedInstancesDB = {
 				},
 				["days1"] = {
 					["questneed"] = 4,
-					["name"] = "The Wardens",
+					["name"] = "The Nightfallen",
 					["isfinish"] = false,
 					["iscompleted"] = false,
 					["dayleft"] = 1,
@@ -945,29 +948,29 @@ SavedInstancesDB = {
 				},
 				["days0"] = {
 					["questneed"] = 4,
-					["name"] = "Army of the Light",
+					["name"] = "The Wardens",
 					["isfinish"] = false,
 					["iscompleted"] = false,
 					["dayleft"] = 0,
 					["questdone"] = 0,
 				},
 			},
-			["DailyResetTime"] = 1518447599,
+			["DailyResetTime"] = 1518533999,
 			["Level"] = 110,
 			["LClass"] = "Monk",
 			["RBGrating"] = 0,
 			["MythicKey"] = {
 			},
-			["lastbosstime"] = 1518301928,
-			["PlayedTotal"] = 211179,
+			["lastbosstime"] = 1518526355,
+			["Zone"] = "Shrine of Seven Stars",
 			["lastbossyelltime"] = 1517696828,
-			["Money"] = 280764606,
+			["Money"] = 282077747,
+			["PlayedTotal"] = 211568,
 			["MythicKeyBest"] = {
 				["level"] = 0,
 				["ResetTime"] = 1518533999,
 				["WeeklyReward"] = false,
 			},
-			["Race"] = "Gnome",
 			["lastboss"] = "The Crown Chemical Co.: Normal",
 			["Show"] = "saved",
 			["BonusRoll"] = {
@@ -996,9 +999,9 @@ SavedInstancesDB = {
 					["currencyID"] = 697,
 				}, -- [4]
 			},
-			["PlayedLevel"] = 16142,
+			["PlayedLevel"] = 16531,
 			["Faction"] = "Alliance",
-			["ILe"] = 843.6875,
+			["ILe"] = 845.5625,
 			["Skills"] = {
 			},
 			["Quests"] = {
@@ -1038,7 +1041,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 3479,
 			["Faction"] = "Alliance",
 			["ILe"] = 40.25,
-			["DailyResetTime"] = 1518447599,
+			["DailyResetTime"] = 1518533999,
 			["DailyWorldQuest"] = {
 			},
 			["Race"] = "Human",
@@ -1072,7 +1075,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 1646,
 			["Faction"] = "Alliance",
 			["ILe"] = 2.5,
-			["DailyResetTime"] = 1518447599,
+			["DailyResetTime"] = 1518533999,
 			["DailyWorldQuest"] = {
 			},
 			["Zone"] = "Shrine of Seven Stars",
@@ -1083,6 +1086,13 @@ SavedInstancesDB = {
 			["Zone"] = "Dalaran",
 			["Order"] = 50,
 			["Class"] = "PRIEST",
+			["Show"] = "saved",
+			["MythicKeyBest"] = {
+				["level"] = 0,
+				["ResetTime"] = 1518533999,
+				["WeeklyReward"] = false,
+			},
+			["Race"] = "Draenei",
 			["currency"] = {
 				[824] = {
 					["totalMax"] = 10000,
@@ -1107,7 +1117,6 @@ SavedInstancesDB = {
 					["amount"] = 11,
 				},
 			},
-			["WeeklyResetTime"] = 1518533999,
 			["Quests"] = {
 			},
 			["Skills"] = {
@@ -1117,18 +1126,12 @@ SavedInstancesDB = {
 			["RBGrating"] = 0,
 			["MythicKey"] = {
 			},
-			["lastbosstime"] = 1518385676,
-			["MythicKeyBest"] = {
-				["level"] = 0,
-				["ResetTime"] = 1518533999,
-				["WeeklyReward"] = false,
-			},
+			["PlayedTotal"] = 15771,
+			["WeeklyResetTime"] = 1518533999,
 			["lastbossyelltime"] = 1518385655,
-			["Money"] = 23216804,
-			["Race"] = "Draenei",
-			["PlayedTotal"] = 15127,
-			["Show"] = "saved",
-			["lastboss"] = "Horridon: 10 Player (Heroic)",
+			["Money"] = 23849753,
+			["lastbosstime"] = 1518530970,
+			["lastboss"] = "The Crown Chemical Co.: Normal",
 			["BonusRoll"] = {
 				{
 					["money"] = 255501,
@@ -1161,37 +1164,37 @@ SavedInstancesDB = {
 					["currencyID"] = 697,
 				}, -- [5]
 			},
-			["PlayedLevel"] = 15127,
+			["PlayedLevel"] = 15771,
 			["Faction"] = "Alliance",
 			["ILe"] = 873.375,
-			["DailyResetTime"] = 1518447599,
+			["DailyResetTime"] = 1518533999,
 			["DailyWorldQuest"] = {
 				["days2"] = {
 					["questneed"] = 4,
-					["name"] = "The Nightfallen",
-					["isfinish"] = false,
+					["name"] = "The Dreamweavers",
 					["iscompleted"] = false,
+					["isfinish"] = false,
 					["dayleft"] = 2,
 					["questdone"] = 0,
 				},
 				["days1"] = {
 					["questneed"] = 4,
-					["name"] = "The Wardens",
-					["isfinish"] = false,
+					["name"] = "The Nightfallen",
 					["iscompleted"] = false,
+					["isfinish"] = false,
 					["dayleft"] = 1,
 					["questdone"] = 0,
 				},
 				["days0"] = {
 					["questneed"] = 4,
-					["name"] = "Army of the Light",
-					["isfinish"] = false,
+					["name"] = "The Wardens",
 					["iscompleted"] = false,
+					["isfinish"] = false,
 					["dayleft"] = 0,
 					["questdone"] = 0,
 				},
 			},
-			["LastSeen"] = 1518385710,
+			["LastSeen"] = 1518531063,
 		},
 		["Belrath - Sisters of Elune"] = {
 			["lastbossyell"] = "Harrowmeiser",
@@ -1210,7 +1213,7 @@ SavedInstancesDB = {
 			["MythicKey"] = {
 			},
 			["lastbosstime"] = 1487132469,
-			["DailyResetTime"] = 1518447599,
+			["DailyResetTime"] = 1518533999,
 			["lastbossyelltime"] = 1470804613,
 			["Money"] = 100901125,
 			["MythicKeyBest"] = {
@@ -1252,8 +1255,9 @@ SavedInstancesDB = {
 					["totalMax"] = 6,
 					["amount"] = 2,
 				},
-				[738] = {
-					["amount"] = 16,
+				[697] = {
+					["totalMax"] = 20,
+					["amount"] = 12,
 				},
 				[1155] = {
 					["totalMax"] = 300,
@@ -1263,15 +1267,14 @@ SavedInstancesDB = {
 					["totalMax"] = 20,
 					["amount"] = 3,
 				},
-				[697] = {
-					["totalMax"] = 20,
-					["amount"] = 12,
+				[738] = {
+					["amount"] = 16,
 				},
 			},
-			["LastSeen"] = 1518387956,
+			["LastSeen"] = 1518525890,
 			["Quests"] = {
 			},
-			["DailyResetTime"] = 1518447599,
+			["DailyResetTime"] = 1518533999,
 			["Level"] = 110,
 			["LClass"] = "Demon Hunter",
 			["RBGrating"] = 0,
@@ -1280,13 +1283,13 @@ SavedInstancesDB = {
 				["ResetTime"] = 1518533999,
 				["WeeklyReward"] = false,
 			},
-			["lastbosstime"] = 1518387911,
+			["PlayedTotal"] = 108566,
+			["lastbosstime"] = 1518525844,
+			["lastbossyelltime"] = 1518303984,
+			["Money"] = 350273720,
 			["MythicKey"] = {
 			},
-			["lastbossyelltime"] = 1518303984,
-			["Money"] = 348692305,
 			["IL"] = 869.6875,
-			["PlayedTotal"] = 108255,
 			["lastboss"] = "The Crown Chemical Co.: Normal",
 			["Show"] = "saved",
 			["BonusRoll"] = {
@@ -1369,7 +1372,7 @@ SavedInstancesDB = {
 					["currencyID"] = 1273,
 				}, -- [13]
 			},
-			["PlayedLevel"] = 25786,
+			["PlayedLevel"] = 26097,
 			["Faction"] = "Alliance",
 			["ILe"] = 857.1875,
 			["Skills"] = {
@@ -1377,26 +1380,26 @@ SavedInstancesDB = {
 			["DailyWorldQuest"] = {
 				["days2"] = {
 					["questneed"] = 4,
-					["name"] = "The Nightfallen",
+					["name"] = "The Dreamweavers",
 					["isfinish"] = false,
+					["iscompleted"] = false,
 					["dayleft"] = 2,
-					["iscompleted"] = false,
-					["questdone"] = 0,
-				},
-				["days0"] = {
-					["questneed"] = 4,
-					["name"] = "Army of the Light",
-					["isfinish"] = false,
-					["dayleft"] = 0,
-					["iscompleted"] = false,
 					["questdone"] = 0,
 				},
 				["days1"] = {
 					["questneed"] = 4,
+					["name"] = "The Nightfallen",
+					["isfinish"] = false,
+					["iscompleted"] = false,
+					["dayleft"] = 1,
+					["questdone"] = 0,
+				},
+				["days0"] = {
+					["questneed"] = 4,
 					["name"] = "The Wardens",
 					["isfinish"] = false,
-					["dayleft"] = 1,
 					["iscompleted"] = false,
+					["dayleft"] = 0,
 					["questdone"] = 0,
 				},
 			},
@@ -1435,7 +1438,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 14450,
 			["Faction"] = "Alliance",
 			["ILe"] = 51.4375,
-			["DailyResetTime"] = 1518447599,
+			["DailyResetTime"] = 1518533999,
 			["Quests"] = {
 			},
 			["WeeklyResetTime"] = 1518533999,
@@ -1447,8 +1450,8 @@ SavedInstancesDB = {
 			["Order"] = 50,
 			["Class"] = "WARRIOR",
 			["currency"] = {
-				[777] = {
-					["amount"] = 4875,
+				[1220] = {
+					["amount"] = 3288,
 				},
 				[1273] = {
 					["weeklyMax"] = 3,
@@ -1469,42 +1472,42 @@ SavedInstancesDB = {
 				[1226] = {
 					["amount"] = 50,
 				},
-				[752] = {
-					["totalMax"] = 20,
-					["amount"] = 3,
-				},
-				[1220] = {
-					["amount"] = 3288,
-				},
 				[1155] = {
 					["totalMax"] = 300,
 					["amount"] = 83,
 				},
+				[777] = {
+					["amount"] = 4875,
+				},
+				[752] = {
+					["totalMax"] = 20,
+					["amount"] = 3,
+				},
 			},
-			["LastSeen"] = 1518387686,
+			["LastSeen"] = 1518526170,
 			["DailyWorldQuest"] = {
 				["days2"] = {
 					["questneed"] = 4,
-					["name"] = "The Nightfallen",
+					["name"] = "The Dreamweavers",
 					["isfinish"] = false,
-					["iscompleted"] = false,
 					["dayleft"] = 2,
-					["questdone"] = 0,
-				},
-				["days1"] = {
-					["questneed"] = 4,
-					["name"] = "The Wardens",
-					["isfinish"] = false,
 					["iscompleted"] = false,
-					["dayleft"] = 1,
 					["questdone"] = 0,
 				},
 				["days0"] = {
 					["questneed"] = 4,
-					["name"] = "Army of the Light",
+					["name"] = "The Wardens",
 					["isfinish"] = false,
-					["iscompleted"] = false,
 					["dayleft"] = 0,
+					["iscompleted"] = false,
+					["questdone"] = 0,
+				},
+				["days1"] = {
+					["questneed"] = 4,
+					["name"] = "The Nightfallen",
+					["isfinish"] = false,
+					["dayleft"] = 1,
+					["iscompleted"] = false,
 					["questdone"] = 0,
 				},
 			},
@@ -1513,18 +1516,18 @@ SavedInstancesDB = {
 			["Level"] = 110,
 			["LClass"] = "Warrior",
 			["RBGrating"] = 0,
-			["MythicKey"] = {
-			},
-			["lastbosstime"] = 1518387548,
-			["PlayedTotal"] = 233171,
-			["lastbossyelltime"] = 1518387618,
-			["Money"] = 111472878,
-			["Race"] = "Dwarf",
 			["MythicKeyBest"] = {
 				["level"] = 0,
 				["ResetTime"] = 1518533999,
 				["WeeklyReward"] = false,
 			},
+			["lastbosstime"] = 1518526084,
+			["MythicKey"] = {
+			},
+			["lastbossyelltime"] = 1518387618,
+			["Money"] = 112482000,
+			["PlayedTotal"] = 233430,
+			["Race"] = "Dwarf",
 			["Show"] = "saved",
 			["lastboss"] = "The Crown Chemical Co.: Normal",
 			["BonusRoll"] = {
@@ -1589,10 +1592,10 @@ SavedInstancesDB = {
 					["currencyID"] = 752,
 				}, -- [10]
 			},
-			["PlayedLevel"] = 26685,
+			["PlayedLevel"] = 26944,
 			["Faction"] = "Alliance",
 			["ILe"] = 866.0625,
-			["DailyResetTime"] = 1518447599,
+			["DailyResetTime"] = 1518533999,
 			["Quests"] = {
 			},
 			["IL"] = 866.0625,
@@ -1619,7 +1622,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 2173249,
 			["Faction"] = "Alliance",
 			["ILe"] = 3.75,
-			["DailyResetTime"] = 1518447599,
+			["DailyResetTime"] = 1518533999,
 			["Quests"] = {
 			},
 			["IL"] = 5,
@@ -1732,11 +1735,11 @@ SavedInstancesDB = {
 			["Expansion"] = 2,
 			["Galinar - Sisters of Elune"] = {
 				[6] = {
-					["Expires"] = 1518534001,
+					["Expires"] = 1518534000,
 					["Extended"] = false,
-					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06EEB51C:631:6:0|h[Icecrown Citadel]|h|r",
-					["ID"] = 205668252,
-					["Locked"] = false,
+					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06EEB51C:631:6:4095|h[Icecrown Citadel]|h|r",
+					["ID"] = 205815432,
+					["Locked"] = true,
 				},
 			},
 			["RecLevel"] = 80,
@@ -1795,15 +1798,15 @@ SavedInstancesDB = {
 			["LFDID"] = 309,
 		},
 		["Antorus, the Burning Throne"] = {
-			["Show"] = "saved",
-			["Expansion"] = 6,
 			["LFDID"] = 1642,
-			["Raid"] = true,
+			["Expansion"] = 6,
+			["Show"] = "saved",
+			["RecLevel"] = 110,
 			["Bracnar - Sisters of Elune"] = {
 				[14] = {
-					["Expires"] = 1518534002,
+					["Expires"] = 1518534000,
 					["Extended"] = false,
-					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06A1ACBD:1712:14:16|h[Antorus, the Burning Throne]|h|r",
+					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06A1ACBD:1712:14:2047|h[Antorus, the Burning Throne]|h|r",
 					["ID"] = 205552793,
 					["Locked"] = true,
 				},
@@ -1822,7 +1825,7 @@ SavedInstancesDB = {
 					["Locked"] = false,
 				},
 			},
-			["RecLevel"] = 110,
+			["Raid"] = true,
 		},
 		["The Eye of Eternity"] = {
 			["LFDID"] = 237,
@@ -1926,11 +1929,11 @@ SavedInstancesDB = {
 			["RecLevel"] = 110,
 			["Raid"] = true,
 		},
-		["Zul'Gurub"] = {
-			["LFDID"] = 334,
-			["Expansion"] = 3,
-			["Raid"] = false,
-			["RecLevel"] = 85,
+		["The Sunwell"] = {
+			["LFDID"] = 199,
+			["Expansion"] = 1,
+			["Raid"] = true,
+			["RecLevel"] = 70,
 			["Show"] = "saved",
 		},
 		["Random Timewalking Dungeon (Mists of Pandaria)"] = {
@@ -1979,10 +1982,10 @@ SavedInstancesDB = {
 			["Raid"] = true,
 		},
 		["Dragon Soul"] = {
-			["Show"] = "saved",
-			["Expansion"] = 3,
 			["LFDID"] = 448,
-			["RecLevel"] = 85,
+			["Expansion"] = 3,
+			["Show"] = "saved",
+			["Raid"] = true,
 			["Bracnar - Sisters of Elune"] = {
 				[6] = {
 					["Expires"] = 0,
@@ -1992,7 +1995,7 @@ SavedInstancesDB = {
 					["Locked"] = false,
 				},
 			},
-			["Raid"] = true,
+			["RecLevel"] = 85,
 		},
 		["Gundrak"] = {
 			["LFDID"] = 1017,
@@ -2110,6 +2113,13 @@ SavedInstancesDB = {
 					["Expires"] = 1518533999,
 				},
 			},
+			["Palani - Sisters of Elune"] = {
+				[2] = {
+					true, -- [1]
+					["ID"] = -1,
+					["Expires"] = 1518533999,
+				},
+			},
 			["Orig - Sisters of Elune"] = {
 				[2] = {
 					true, -- [1]
@@ -2126,7 +2136,7 @@ SavedInstancesDB = {
 				},
 			},
 			["WorldBoss"] = 691,
-			["Palani - Sisters of Elune"] = {
+			["Torinar - Sisters of Elune"] = {
 				[2] = {
 					true, -- [1]
 					["ID"] = -1,
@@ -2135,7 +2145,7 @@ SavedInstancesDB = {
 			},
 			["RecLevel"] = 90,
 			["Raid"] = true,
-			["Torinar - Sisters of Elune"] = {
+			["Bracnar - Sisters of Elune"] = {
 				[2] = {
 					true, -- [1]
 					["ID"] = -1,
@@ -2188,6 +2198,13 @@ SavedInstancesDB = {
 					["Expires"] = 1518533999,
 				},
 			},
+			["Palani - Sisters of Elune"] = {
+				[2] = {
+					true, -- [1]
+					["ID"] = -1,
+					["Expires"] = 1518533999,
+				},
+			},
 			["Orig - Sisters of Elune"] = {
 				[2] = {
 					true, -- [1]
@@ -2204,7 +2221,7 @@ SavedInstancesDB = {
 				},
 			},
 			["WorldBoss"] = 814,
-			["Palani - Sisters of Elune"] = {
+			["Torinar - Sisters of Elune"] = {
 				[2] = {
 					true, -- [1]
 					["ID"] = -1,
@@ -2213,7 +2230,7 @@ SavedInstancesDB = {
 			},
 			["RecLevel"] = 90,
 			["Raid"] = true,
-			["Torinar - Sisters of Elune"] = {
+			["Bracnar - Sisters of Elune"] = {
 				[2] = {
 					true, -- [1]
 					["ID"] = -1,
@@ -2360,18 +2377,26 @@ SavedInstancesDB = {
 			["Expansion"] = 4,
 			["Galinar - Sisters of Elune"] = {
 				[5] = {
-					["Expires"] = 1518534001,
+					["Expires"] = 1518534000,
 					["Extended"] = false,
 					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06EEB51C:1098:5:640|h[Throne of Thunder]|h|r",
 					["ID"] = 205594422,
 					["Locked"] = true,
 				},
 			},
+			["Torinar - Sisters of Elune"] = {
+				[5] = {
+					["Expires"] = 1518534000,
+					["Extended"] = false,
+					["Link"] = "|cffff8000|Hinstancelock:Player-1169-07C70E46:1098:5:640|h[Throne of Thunder]|h|r",
+					["ID"] = 205695420,
+					["Locked"] = true,
+				},
+			},
 			["Show"] = "saved",
-			["Raid"] = true,
 			["Orig - Sisters of Elune"] = {
 				[5] = {
-					["Expires"] = 1518534003,
+					["Expires"] = 1518534000,
 					["Extended"] = false,
 					["Link"] = "|cffff8000|Hinstancelock:Player-1169-076A3790:1098:5:640|h[Throne of Thunder]|h|r",
 					["ID"] = 205628515,
@@ -2381,7 +2406,7 @@ SavedInstancesDB = {
 			["LFDID"] = 634,
 			["Leanara - Sisters of Elune"] = {
 				[5] = {
-					["Expires"] = 1518534001,
+					["Expires"] = 1518534000,
 					["Extended"] = false,
 					["Link"] = "|cffff8000|Hinstancelock:Player-1169-07C12AB4:1098:5:640|h[Throne of Thunder]|h|r",
 					["ID"] = 205665259,
@@ -2397,28 +2422,20 @@ SavedInstancesDB = {
 					["Locked"] = true,
 				},
 			},
-			["Torinar - Sisters of Elune"] = {
-				[5] = {
-					["Expires"] = 1518534001,
-					["Extended"] = false,
-					["Link"] = "|cffff8000|Hinstancelock:Player-1169-07C70E46:1098:5:640|h[Throne of Thunder]|h|r",
-					["ID"] = 205695420,
-					["Locked"] = true,
-				},
-			},
+			["Raid"] = true,
 			["RecLevel"] = 90,
 			["Bracnar - Sisters of Elune"] = {
 				[6] = {
-					["Expires"] = 0,
+					["Expires"] = 1518534000,
 					["Extended"] = false,
 					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06A1ACBD:1098:6:640|h[Throne of Thunder]|h|r",
-					["ID"] = 205396150,
-					["Locked"] = false,
+					["ID"] = 205776215,
+					["Locked"] = true,
 				},
 			},
 			["Uldaris - Sisters of Elune"] = {
 				[5] = {
-					["Expires"] = 1518534001,
+					["Expires"] = 1518534000,
 					["Extended"] = false,
 					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06A1AD17:1098:5:640|h[Throne of Thunder]|h|r",
 					["ID"] = 205713038,
@@ -2685,6 +2702,13 @@ SavedInstancesDB = {
 					["Expires"] = 1518533999,
 				},
 			},
+			["Palani - Sisters of Elune"] = {
+				[2] = {
+					true, -- [1]
+					["ID"] = -1,
+					["Expires"] = 1518533999,
+				},
+			},
 			["Orig - Sisters of Elune"] = {
 				[2] = {
 					true, -- [1]
@@ -2701,7 +2725,7 @@ SavedInstancesDB = {
 				},
 			},
 			["WorldBoss"] = 826,
-			["Palani - Sisters of Elune"] = {
+			["Torinar - Sisters of Elune"] = {
 				[2] = {
 					true, -- [1]
 					["ID"] = -1,
@@ -2710,7 +2734,7 @@ SavedInstancesDB = {
 			},
 			["Raid"] = true,
 			["RecLevel"] = 90,
-			["Torinar - Sisters of Elune"] = {
+			["Bracnar - Sisters of Elune"] = {
 				[2] = {
 					true, -- [1]
 					["ID"] = -1,
@@ -2819,6 +2843,13 @@ SavedInstancesDB = {
 					["Expires"] = 1518533999,
 				},
 			},
+			["Palani - Sisters of Elune"] = {
+				[2] = {
+					true, -- [1]
+					["ID"] = -1,
+					["Expires"] = 1518533999,
+				},
+			},
 			["Orig - Sisters of Elune"] = {
 				[2] = {
 					true, -- [1]
@@ -2835,7 +2866,7 @@ SavedInstancesDB = {
 				},
 			},
 			["WorldBoss"] = 725,
-			["Palani - Sisters of Elune"] = {
+			["Torinar - Sisters of Elune"] = {
 				[2] = {
 					true, -- [1]
 					["ID"] = -1,
@@ -2844,7 +2875,7 @@ SavedInstancesDB = {
 			},
 			["RecLevel"] = 90,
 			["Raid"] = true,
-			["Torinar - Sisters of Elune"] = {
+			["Bracnar - Sisters of Elune"] = {
 				[2] = {
 					true, -- [1]
 					["ID"] = -1,
@@ -2911,10 +2942,10 @@ SavedInstancesDB = {
 			["Show"] = "saved",
 		},
 		["Highmaul"] = {
-			["Show"] = "saved",
-			["Expansion"] = 5,
 			["LFDID"] = 897,
-			["RecLevel"] = 100,
+			["Expansion"] = 5,
+			["Show"] = "saved",
+			["Raid"] = true,
 			["Bracnar - Sisters of Elune"] = {
 				[16] = {
 					["Expires"] = 0,
@@ -2924,7 +2955,7 @@ SavedInstancesDB = {
 					["Locked"] = false,
 				},
 			},
-			["Raid"] = true,
+			["RecLevel"] = 100,
 		},
 		["LFR: Gates of Retribution"] = {
 			["LFDID"] = 840,
@@ -3011,12 +3042,12 @@ SavedInstancesDB = {
 			["RecLevel"] = 100,
 			["Show"] = "saved",
 		},
-		["Levantus"] = {
+		["Utgarde Keep"] = {
+			["LFDID"] = 242,
+			["Expansion"] = 2,
+			["RecLevel"] = 72,
+			["Raid"] = false,
 			["Show"] = "saved",
-			["Expansion"] = 6,
-			["WorldBoss"] = 1769,
-			["RecLevel"] = 110,
-			["Raid"] = true,
 		},
 		["The Frost Lord Ahune"] = {
 			["LFDID"] = 286,
@@ -3091,12 +3122,12 @@ SavedInstancesDB = {
 			["RecLevel"] = 36,
 			["Show"] = "saved",
 		},
-		["Utgarde Keep"] = {
-			["LFDID"] = 242,
-			["Expansion"] = 2,
-			["RecLevel"] = 72,
-			["Raid"] = false,
+		["Occularus"] = {
 			["Show"] = "saved",
+			["Expansion"] = 6,
+			["WorldBoss"] = 2013,
+			["RecLevel"] = 110,
+			["Raid"] = true,
 		},
 		["Hyjal Past"] = {
 			["LFDID"] = 195,
@@ -3254,12 +3285,12 @@ SavedInstancesDB = {
 			["Raid"] = true,
 			["Show"] = "saved",
 		},
-		["Occularus"] = {
+		["Zul'Gurub"] = {
+			["LFDID"] = 334,
+			["Expansion"] = 3,
+			["Raid"] = false,
+			["RecLevel"] = 85,
 			["Show"] = "saved",
-			["Expansion"] = 6,
-			["WorldBoss"] = 2013,
-			["RecLevel"] = 110,
-			["Raid"] = true,
 		},
 		["Scarlet Halls"] = {
 			["LFDID"] = 473,
@@ -3423,22 +3454,23 @@ SavedInstancesDB = {
 			["Galinar - Sisters of Elune"] = {
 				{
 					["Locked"] = false,
-					["Expires"] = 1518447599,
 					["ID"] = -1,
+					["Expires"] = 1518533999,
 				}, -- [1]
 			},
-			["Bracnar - Sisters of Elune"] = {
-				{
-					["Locked"] = false,
-					["Expires"] = 1518447599,
-					["ID"] = -1,
-				}, -- [1]
-			},
+			["Holiday"] = true,
 			["Show"] = "saved",
 			["Torinar - Sisters of Elune"] = {
 				{
 					["Locked"] = false,
-					["Expires"] = 1518447599,
+					["ID"] = -1,
+					["Expires"] = 1518533999,
+				}, -- [1]
+			},
+			["Orig - Sisters of Elune"] = {
+				{
+					["Locked"] = false,
+					["Expires"] = 1518533999,
 					["ID"] = -1,
 				}, -- [1]
 			},
@@ -3446,25 +3478,31 @@ SavedInstancesDB = {
 			["Leanara - Sisters of Elune"] = {
 				{
 					["Locked"] = false,
+					["Expires"] = 1518533999,
 					["ID"] = -1,
-					["Expires"] = 1518447599,
 				}, -- [1]
 			},
 			["Palani - Sisters of Elune"] = {
 				{
 					["Locked"] = false,
-					["Expires"] = 1518447599,
+					["Expires"] = 1518533999,
 					["ID"] = -1,
 				}, -- [1]
 			},
 			["RecLevel"] = 100,
 			["Raid"] = false,
-			["Holiday"] = true,
+			["Bracnar - Sisters of Elune"] = {
+				{
+					["Locked"] = false,
+					["ID"] = -1,
+					["Expires"] = 1518533999,
+				}, -- [1]
+			},
 			["Uldaris - Sisters of Elune"] = {
 				{
 					["Locked"] = false,
 					["ID"] = -1,
-					["Expires"] = 1518447599,
+					["Expires"] = 1518533999,
 				}, -- [1]
 			},
 		},
@@ -3490,10 +3528,10 @@ SavedInstancesDB = {
 			["Show"] = "saved",
 		},
 		["Assault on Violet Hold"] = {
-			["Show"] = "saved",
-			["Expansion"] = 6,
 			["LFDID"] = 1209,
-			["RecLevel"] = 105,
+			["Expansion"] = 6,
+			["Show"] = "saved",
+			["Raid"] = false,
 			["Bracnar - Sisters of Elune"] = {
 				[23] = {
 					["Expires"] = 0,
@@ -3503,7 +3541,7 @@ SavedInstancesDB = {
 					["Locked"] = false,
 				},
 			},
-			["Raid"] = false,
+			["RecLevel"] = 105,
 		},
 		["Azuregos"] = {
 			["Show"] = "saved",
@@ -3755,12 +3793,12 @@ SavedInstancesDB = {
 			["Raid"] = false,
 			["RecLevel"] = 88,
 		},
-		["The Sunwell"] = {
-			["LFDID"] = 199,
-			["Expansion"] = 1,
-			["Raid"] = true,
-			["RecLevel"] = 70,
+		["Levantus"] = {
 			["Show"] = "saved",
+			["Expansion"] = 6,
+			["WorldBoss"] = 1769,
+			["RecLevel"] = 110,
+			["Raid"] = true,
 		},
 		["The Four Celestials"] = {
 			["Show"] = "saved",
@@ -3849,10 +3887,10 @@ SavedInstancesDB = {
 		},
 	},
 	["History"] = {
-		["Bracnar - Sisters of Elune:Antorus, the Burning Throne:raid:14"] = {
-			["last"] = 1518400262,
-			["create"] = 1518400262,
-			["desc"] = "Bracnar: Antorus, the Burning Throne - Normal",
+		["Galinar - Sisters of Elune:Icecrown Citadel:raid:6"] = {
+			["last"] = 1518530742,
+			["create"] = 1518528307,
+			["desc"] = "Galinar: Icecrown Citadel - 25 Player (Heroic)",
 		},
 	},
 	["RealmMap"] = {
@@ -3863,7 +3901,7 @@ SavedInstancesDB = {
 		["CenarionCircle"] = 1,
 		["SistersofElune"] = 1,
 	},
-	["histGeneration"] = 3537,
+	["histGeneration"] = 3546,
 	["QuestDB"] = {
 		["Daily"] = {
 			[0] = 492,
@@ -3935,7 +3973,7 @@ SavedInstancesDB = {
 			[29443] = 823,
 		},
 		["AccountDaily"] = {
-			[40753] = 1014,
+			[40753] = 1072,
 			[34774] = 1014,
 			[31752] = 1014,
 		},
@@ -3975,7 +4013,7 @@ SavedInstancesDB = {
 			[40168] = 481,
 			[37456] = -1,
 			[43896] = 1014,
-			[48799] = 1135,
+			[39034] = 971,
 			[43893] = 1014,
 			[47864] = -1,
 			[43897] = 1014,
@@ -3992,7 +4030,7 @@ SavedInstancesDB = {
 			[44173] = -1,
 			[44175] = 1014,
 			[45563] = 951,
-			[39034] = 971,
+			[48799] = 1135,
 			[36054] = 1009,
 			["expires"] = 1518533999,
 		},
@@ -4004,25 +4042,24 @@ SavedInstancesDB = {
 		["minimapPos"] = 17.3540557183882,
 		["hide"] = false,
 	},
-	["DailyResetTime"] = 1518447599,
+	["DailyResetTime"] = 1518533999,
 	["Quests"] = {
 		[34774] = {
+			["isDaily"] = true,
+			["Zone"] = "Dalaran",
 			["Title"] = "Blingtron 5000",
 			["Link"] = "|cffffff00|Hquest:34774:90|h[Blingtron 5000]|h|r",
-			["Zone"] = "Dalaran",
+		},
+		[40753] = {
+			["Zone"] = "Trueshot Lodge",
+			["Title"] = "Blingtron 6000",
 			["isDaily"] = true,
 		},
 		[31752] = {
+			["isDaily"] = true,
+			["Zone"] = "Dalaran",
 			["Title"] = "Blingtron 4000",
 			["Link"] = "|cffffff00|Hquest:31752:90|h[Blingtron 4000]|h|r",
-			["Zone"] = "Dalaran",
-			["isDaily"] = true,
-		},
-		[40753] = {
-			["Title"] = "Blingtron 6000",
-			["Link"] = "|cffffff00|Hquest:40753:90|h[Blingtron 6000]|h|r",
-			["Zone"] = "Dalaran",
-			["isDaily"] = true,
 		},
 	},
 	["Indicators"] = {

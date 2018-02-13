@@ -7,7 +7,7 @@ RelicInspectorCharDB = {
 		["Galinar - Sisters of Elune"] = {
 			["artifactCache"] = {
 				[120978] = {
-					["timestamp"] = 119212.738,
+					["timestamp"] = 263874.771,
 					["level"] = 56,
 					["crucibled"] = false,
 				},
