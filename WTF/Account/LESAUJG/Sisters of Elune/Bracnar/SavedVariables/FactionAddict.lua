@@ -26,7 +26,7 @@ FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
 		["date"] = "Tuesday 2/13",
-		["rows"] = 1,
+		["rows"] = 6,
 	}, -- [1]
 	{
 		["date"] = "Sunday 2/11",
@@ -107,7 +107,12 @@ FactionAddictLogData = {
 }
 FactionAddictLogEntries = {
 	{
+		["The Nightfallen"] = 2550,
 		["Talonpriest Ishaal"] = 40,
+		["The Wardens"] = 1500,
+		["Argussian Reach"] = 2700,
+		["Army of the Light"] = 3025,
+		["Dreamweavers"] = 2225,
 	}, -- [1]
 	{
 		["The Nightfallen"] = 1250,
@@ -346,9 +351,9 @@ FactionAddictConfigIsInactive = {
 	[1275] = false,
 	[1849] = false,
 	[576] = false,
-	[1085] = false,
-	[1276] = false,
 	[1850] = false,
+	[1276] = false,
+	[1085] = false,
 	[609] = false,
 	[369] = false,
 	[1277] = false,
@@ -358,12 +363,12 @@ FactionAddictConfigIsInactive = {
 	[1278] = false,
 	[1690] = false,
 	[1388] = false,
-	[81] = false,
+	[2045] = false,
 	[1279] = false,
 	[69] = false,
-	[1280] = false,
+	[81] = false,
 	[1216] = false,
-	[2045] = false,
+	[1280] = false,
 	[2170] = false,
 	[1345] = false,
 	[93] = false,
@@ -372,7 +377,7 @@ FactionAddictConfigIsInactive = {
 	[1859] = false,
 	[1133] = false,
 	[1282] = false,
-	[930] = false,
+	[1091] = false,
 	[270] = false,
 	[1984] = false,
 	[1283] = false,
@@ -383,7 +388,7 @@ FactionAddictConfigIsInactive = {
 	[1174] = false,
 	[1714] = false,
 	[1731] = false,
-	[1091] = false,
+	[930] = false,
 	[1094] = false,
 	[1158] = false,
 	[1732] = false,

@@ -7,9 +7,9 @@ RelicInspectorCharDB = {
 		["Aloraal - Sisters of Elune"] = {
 			["artifactCache"] = {
 				[128861] = {
-					["timestamp"] = 120816.723,
-					["crucibled"] = false,
+					["timestamp"] = 259019.95,
 					["level"] = 58,
+					["crucibled"] = false,
 				},
 			},
 		},

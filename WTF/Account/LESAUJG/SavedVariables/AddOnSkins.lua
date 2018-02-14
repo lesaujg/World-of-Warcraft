@@ -19,10 +19,10 @@ AddOnSkinsDB = {
 		["Galinar - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
 			["TalentSetManager"] = true,
-			["Details"] = true,
 			["TomeOfTeleportation"] = true,
-			["WeakAuras"] = true,
+			["Details"] = true,
 			["Blizzard_Transmogrify"] = true,
+			["WeakAuras"] = true,
 			["MasterPlan"] = true,
 		},
 		["Uldaris - Sisters of Elune"] = {

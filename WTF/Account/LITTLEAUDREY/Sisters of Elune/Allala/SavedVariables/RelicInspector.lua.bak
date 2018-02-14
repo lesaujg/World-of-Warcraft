@@ -12,7 +12,7 @@ RelicInspectorCharDB = {
 					["crucibled"] = false,
 				},
 				[120978] = {
-					["timestamp"] = 118303.435,
+					["timestamp"] = 270969.13,
 					["crucibled"] = false,
 					["level"] = 51,
 				},

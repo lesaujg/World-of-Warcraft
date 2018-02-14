@@ -48,10 +48,10 @@ AskMrRobotDb3 = {
 						[902] = 1,
 						[903] = 1,
 						[904] = 1,
-						[906] = 4,
+						[1594] = 1,
 						[905] = 4,
 						[1593] = 4,
-						[1594] = 1,
+						[1687] = 1,
 						[1595] = 1,
 						[907] = 4,
 						[1596] = 3,
@@ -60,7 +60,7 @@ AskMrRobotDb3 = {
 						[909] = 4,
 						[899] = 1,
 						[910] = 4,
-						[1687] = 1,
+						[906] = 4,
 					},
 					["Crucible"] = {
 						["Equipped"] = {
@@ -72,52 +72,9 @@ AskMrRobotDb3 = {
 			},
 		},
 		["Allala - Sisters of Elune"] = {
-			["Logging"] = {
-				["LastDiff"] = 0,
-				["LastZone"] = "Pandaria",
-			},
 			["Talents"] = {
 				[3] = "1212121",
 				[2] = "2312131",
-			},
-			["Equipped"] = {
-				[3] = {
-					"|cff1eff00|Hitem:153904::::::::110:70::::::|h[Sunsoul Faceguard]|h|r", -- [1]
-					"|cffa335ee|Hitem:143906::::::::110:70:512:1:1:3628:110:::|h[Heartbreak Charm]|h|r", -- [2]
-					"|cff1eff00|Hitem:153911::::::::110:70::::::|h[Sunsoul Shoulderguards]|h|r", -- [3]
-					nil, -- [4]
-					"|cff1eff00|Hitem:153900::::::::110:70::::::|h[Sunsoul Chestguard]|h|r", -- [5]
-					"|cff1eff00|Hitem:153912::::::::110:70::::::|h[Sunsoul Waistband]|h|r", -- [6]
-					"|cff1eff00|Hitem:153905::::::::110:70::::::|h[Sunsoul Legguards]|h|r", -- [7]
-					"|cff1eff00|Hitem:153902::::::::110:70::::::|h[Sunsoul Greaves]|h|r", -- [8]
-					"|cff1eff00|Hitem:153913::::::::110:70::::::|h[Sunsoul Armguards]|h|r", -- [9]
-					"|cff1eff00|Hitem:153903::::::::110:70::::::|h[Sunsoul Handguards]|h|r", -- [10]
-					"|cff1eff00|Hitem:153908::::::::110:70::::::|h[Sunsoul Ring of Stoicism]|h|r", -- [11]
-					"|cff1eff00|Hitem:153909::::::::110:70::::::|h[Sunsoul Band of Stoicism]|h|r", -- [12]
-					"|cff1eff00|Hitem:153907::::::::110:70::::::|h[Sunsoul Defender Idol]|h|r", -- [13]
-					"|cff1eff00|Hitem:153910::::::::110:70::::::|h[Sunsoul Defender Stone]|h|r", -- [14]
-					"|cff1eff00|Hitem:153901::::::::110:70::::::|h[Sunsoul Cloak of Stoicism]|h|r", -- [15]
-					"|cffe6cc80|Hitem:120978::::::::110:70:16777472:9:1:737:9:1:::|h[Ashbringer]|h|r", -- [16]
-				},
-				[2] = {
-					"|cff1eff00|Hitem:153904::::::::110:66::::::|h[Sunsoul Faceguard]|h|r", -- [1]
-					"|cffa335ee|Hitem:143906::::::::110:66:512:1:1:3628:110:::|h[Heartbreak Charm]|h|r", -- [2]
-					"|cff1eff00|Hitem:153911::::::::110:66::::::|h[Sunsoul Shoulderguards]|h|r", -- [3]
-					nil, -- [4]
-					"|cff1eff00|Hitem:153900::::::::110:66::::::|h[Sunsoul Chestguard]|h|r", -- [5]
-					"|cff1eff00|Hitem:153912::::::::110:66::::::|h[Sunsoul Waistband]|h|r", -- [6]
-					"|cff1eff00|Hitem:153905::::::::110:66::::::|h[Sunsoul Legguards]|h|r", -- [7]
-					"|cff1eff00|Hitem:153902::::::::110:66::::::|h[Sunsoul Greaves]|h|r", -- [8]
-					"|cff1eff00|Hitem:153913::::::::110:66::::::|h[Sunsoul Armguards]|h|r", -- [9]
-					"|cff1eff00|Hitem:153903::::::::110:66::::::|h[Sunsoul Handguards]|h|r", -- [10]
-					"|cff1eff00|Hitem:153908::::::::110:66::::::|h[Sunsoul Ring of Stoicism]|h|r", -- [11]
-					"|cff1eff00|Hitem:153909::::::::110:66::::::|h[Sunsoul Band of Stoicism]|h|r", -- [12]
-					"|cff1eff00|Hitem:153907::::::::110:66::::::|h[Sunsoul Defender Idol]|h|r", -- [13]
-					"|cff1eff00|Hitem:153910::::::::110:66::::::|h[Sunsoul Defender Stone]|h|r", -- [14]
-					"|cff1eff00|Hitem:153901::::::::110:66::::::|h[Sunsoul Cloak of Stoicism]|h|r", -- [15]
-					"|cffe6cc80|Hitem:128867::::::::110:66:256:::291:::|h[Oathseeker]|h|r", -- [16]
-					"|cffe6cc80|Hitem:128866::156816:156817:156803::::110:66:16777472::1:736:291:1:::|h[Truthguard]|h|r", -- [17]
-				},
 			},
 			["Artifacts"] = {
 				[2] = {
@@ -160,28 +117,28 @@ AskMrRobotDb3 = {
 						"", -- [3]
 					},
 					["Powers"] = {
-						[43] = 4,
+						[351] = 1,
 						[1118] = 1,
 						[350] = 1,
-						[40] = 1,
+						[1275] = 1,
 						[41] = 4,
 						[42] = 4,
-						[351] = 1,
+						[43] = 4,
 						[44] = 4,
-						[1561] = 4,
-						[353] = 1,
-						[47] = 4,
-						[1562] = 1,
-						[49] = 1,
-						[50] = 4,
 						[51] = 4,
+						[47] = 4,
+						[1561] = 4,
+						[1562] = 1,
+						[1563] = 1,
+						[50] = 4,
+						[353] = 1,
 						[52] = 4,
 						[53] = 4,
 						[54] = 1,
 						[352] = 1,
-						[1563] = 1,
+						[49] = 1,
 						[1647] = 1,
-						[1275] = 1,
+						[40] = 1,
 					},
 					["Crucible"] = {
 						["Equipped"] = {
@@ -191,10 +148,77 @@ AskMrRobotDb3 = {
 					},
 				},
 			},
+			["Logging"] = {
+				["LastDiff"] = 0,
+				["LastZone"] = "Pandaria",
+			},
+			["Equipped"] = {
+				[3] = {
+					"|cff1eff00|Hitem:153904::::::::110:70::::::|h[Sunsoul Faceguard]|h|r", -- [1]
+					"|cffa335ee|Hitem:143906::::::::110:70:512:1:1:3628:110:::|h[Heartbreak Charm]|h|r", -- [2]
+					"|cff1eff00|Hitem:153911::::::::110:70::::::|h[Sunsoul Shoulderguards]|h|r", -- [3]
+					nil, -- [4]
+					"|cff1eff00|Hitem:153900::::::::110:70::::::|h[Sunsoul Chestguard]|h|r", -- [5]
+					"|cff1eff00|Hitem:153912::::::::110:70::::::|h[Sunsoul Waistband]|h|r", -- [6]
+					"|cff1eff00|Hitem:153905::::::::110:70::::::|h[Sunsoul Legguards]|h|r", -- [7]
+					"|cff1eff00|Hitem:153902::::::::110:70::::::|h[Sunsoul Greaves]|h|r", -- [8]
+					"|cff1eff00|Hitem:153913::::::::110:70::::::|h[Sunsoul Armguards]|h|r", -- [9]
+					"|cff1eff00|Hitem:153903::::::::110:70::::::|h[Sunsoul Handguards]|h|r", -- [10]
+					"|cff1eff00|Hitem:153908::::::::110:70::::::|h[Sunsoul Ring of Stoicism]|h|r", -- [11]
+					"|cff1eff00|Hitem:153909::::::::110:70::::::|h[Sunsoul Band of Stoicism]|h|r", -- [12]
+					"|cff1eff00|Hitem:153907::::::::110:70::::::|h[Sunsoul Defender Idol]|h|r", -- [13]
+					"|cff1eff00|Hitem:153910::::::::110:70::::::|h[Sunsoul Defender Stone]|h|r", -- [14]
+					"|cff1eff00|Hitem:153901::::::::110:70::::::|h[Sunsoul Cloak of Stoicism]|h|r", -- [15]
+					"|cffe6cc80|Hitem:120978::::::::110:70:16777472:9:1:737:9:1:::|h[Ashbringer]|h|r", -- [16]
+				},
+				[2] = {
+					"|cff1eff00|Hitem:153904::::::::110:66::::::|h[Sunsoul Faceguard]|h|r", -- [1]
+					"|cffa335ee|Hitem:143906::::::::110:66:512:1:1:3628:110:::|h[Heartbreak Charm]|h|r", -- [2]
+					"|cff1eff00|Hitem:153911::::::::110:66::::::|h[Sunsoul Shoulderguards]|h|r", -- [3]
+					nil, -- [4]
+					"|cff1eff00|Hitem:153900::::::::110:66::::::|h[Sunsoul Chestguard]|h|r", -- [5]
+					"|cff1eff00|Hitem:153912::::::::110:66::::::|h[Sunsoul Waistband]|h|r", -- [6]
+					"|cff1eff00|Hitem:153905::::::::110:66::::::|h[Sunsoul Legguards]|h|r", -- [7]
+					"|cff1eff00|Hitem:153902::::::::110:66::::::|h[Sunsoul Greaves]|h|r", -- [8]
+					"|cff1eff00|Hitem:153913::::::::110:66::::::|h[Sunsoul Armguards]|h|r", -- [9]
+					"|cff1eff00|Hitem:153903::::::::110:66::::::|h[Sunsoul Handguards]|h|r", -- [10]
+					"|cff1eff00|Hitem:153908::::::::110:66::::::|h[Sunsoul Ring of Stoicism]|h|r", -- [11]
+					"|cff1eff00|Hitem:153909::::::::110:66::::::|h[Sunsoul Band of Stoicism]|h|r", -- [12]
+					"|cff1eff00|Hitem:153907::::::::110:66::::::|h[Sunsoul Defender Idol]|h|r", -- [13]
+					"|cff1eff00|Hitem:153910::::::::110:66::::::|h[Sunsoul Defender Stone]|h|r", -- [14]
+					"|cff1eff00|Hitem:153901::::::::110:66::::::|h[Sunsoul Cloak of Stoicism]|h|r", -- [15]
+					"|cffe6cc80|Hitem:128867::::::::110:66:256:::291:::|h[Oathseeker]|h|r", -- [16]
+					"|cffe6cc80|Hitem:128866::156816:156817:156803::::110:66:16777472::1:736:291:1:::|h[Truthguard]|h|r", -- [17]
+				},
+			},
 		},
 		["Aloraal - Sisters of Elune"] = {
+			["Logging"] = {
+				["LastDiff"] = 0,
+				["LastZone"] = "Broken Isles",
+			},
 			["Talents"] = {
 				"3133131", -- [1]
+			},
+			["Equipped"] = {
+				{
+					"|cffa335ee|Hitem:134167::::::::110:253::25:3:1824:1542:3337:::|h[Bitestone Cowl]|h|r", -- [1]
+					"|cffa335ee|Hitem:143906::::::::110:253:512:1:1:3628:110:::|h[Heartbreak Charm]|h|r", -- [2]
+					"|cffa335ee|Hitem:144616:5899:::::::110:253::43:4:3573:1719:1512:3528:::|h[Cruel Gladiator's Chain Spaulders]|h|r", -- [3]
+					nil, -- [4]
+					"|cffa335ee|Hitem:134302::::::::110:253::27:4:3394:1808:1537:3337:::|h[Ley Dragoon's Hauberk]|h|r", -- [5]
+					"|cffa335ee|Hitem:152767::::::::110:253:::4:1680:3629:1472:3528:::|h[Oronaar Disciple's Girdle of the Quickblade]|h|r", -- [6]
+					"|cffa335ee|Hitem:152764::::::::110:253:::4:1697:3629:1497:3337:::|h[Oronaar Disciple's Legguards of the Feverflare]|h|r", -- [7]
+					"|cffa335ee|Hitem:139080::::::::110:253::43:3:3573:1547:3336:::|h[Bramblemail Boots]|h|r", -- [8]
+					"|cffff8000|Hitem:137101::::::::110:253:::2:1811:3530:::|h[Call of the Wild]|h|r", -- [9]
+					"|cffff8000|Hitem:146668::::::::110:253::13:2:3459:3530:::|h[Vigilance Perch]|h|r", -- [10]
+					"|cffa335ee|Hitem:134526::::::::110:253::43:3:3573:1532:3528:::|h[Gnawed Thumb Ring]|h|r", -- [11]
+					"|cffa335ee|Hitem:134191::::::::110:253::25:3:1824:1532:3337:::|h[Rough-Hammered Silver Ring]|h|r", -- [12]
+					"|cffa335ee|Hitem:140801::::::::110:253::43:3:3573:1477:3528:::|h[Fury of the Burning Sky]|h|r", -- [13]
+					"|cffa335ee|Hitem:133642::::::::110:253::43:3:3573:1532:3528:::|h[Horn of Valor]|h|r", -- [14]
+					"|cffa335ee|Hitem:146766::::::::110:253::27:3:3394:1527:3336:::|h[Nethercaller Cloak]|h|r", -- [15]
+					"|cffe6cc80|Hitem:128861::143704:141259:141262::::110:253:16777472:9:1:726:454:1:3:3394:1527:3336:3:3394:1522:3528:3:1824:1532:3337|h[Titanstrike]|h|r", -- [16]
+				}, -- [1]
 			},
 			["Artifacts"] = {
 				{
@@ -222,11 +246,11 @@ AskMrRobotDb3 = {
 						[875] = 4,
 						[876] = 1,
 						[877] = 1,
-						[1518] = 1,
+						[870] = 4,
 						[878] = 1,
 						[869] = 4,
 						[879] = 1,
-						[870] = 4,
+						[1518] = 1,
 					},
 					["Crucible"] = {
 						["Equipped"] = {
@@ -234,30 +258,6 @@ AskMrRobotDb3 = {
 						["Inventory"] = {
 						},
 					},
-				}, -- [1]
-			},
-			["Logging"] = {
-				["LastDiff"] = 0,
-				["LastZone"] = "Broken Isles",
-			},
-			["Equipped"] = {
-				{
-					"|cffa335ee|Hitem:134167::::::::110:253::25:3:1824:1542:3337:::|h[Bitestone Cowl]|h|r", -- [1]
-					"|cffa335ee|Hitem:143906::::::::110:253:512:1:1:3628:110:::|h[Heartbreak Charm]|h|r", -- [2]
-					"|cffa335ee|Hitem:144616:5899:::::::110:253::43:4:3573:1719:1512:3528:::|h[Cruel Gladiator's Chain Spaulders]|h|r", -- [3]
-					nil, -- [4]
-					"|cffa335ee|Hitem:134302::::::::110:253::27:4:3394:1808:1537:3337:::|h[Ley Dragoon's Hauberk]|h|r", -- [5]
-					"|cffa335ee|Hitem:152767::::::::110:253:::4:1680:3629:1472:3528:::|h[Oronaar Disciple's Girdle of the Quickblade]|h|r", -- [6]
-					"|cffa335ee|Hitem:152764::::::::110:253:::4:1697:3629:1497:3337:::|h[Oronaar Disciple's Legguards of the Feverflare]|h|r", -- [7]
-					"|cffa335ee|Hitem:139080::::::::110:253::43:3:3573:1547:3336:::|h[Bramblemail Boots]|h|r", -- [8]
-					"|cffff8000|Hitem:137101::::::::110:253:::2:1811:3530:::|h[Call of the Wild]|h|r", -- [9]
-					"|cffff8000|Hitem:146668::::::::110:253::13:2:3459:3530:::|h[Vigilance Perch]|h|r", -- [10]
-					"|cffa335ee|Hitem:134526::::::::110:253::43:3:3573:1532:3528:::|h[Gnawed Thumb Ring]|h|r", -- [11]
-					"|cffa335ee|Hitem:134191::::::::110:253::25:3:1824:1532:3337:::|h[Rough-Hammered Silver Ring]|h|r", -- [12]
-					"|cffa335ee|Hitem:140801::::::::110:253::43:3:3573:1477:3528:::|h[Fury of the Burning Sky]|h|r", -- [13]
-					"|cffa335ee|Hitem:133642::::::::110:253::43:3:3573:1532:3528:::|h[Horn of Valor]|h|r", -- [14]
-					"|cffa335ee|Hitem:146766::::::::110:253::27:3:3394:1527:3336:::|h[Nethercaller Cloak]|h|r", -- [15]
-					"|cffe6cc80|Hitem:128861::143704:141259:141262::::110:253:16777472:9:1:726:454:1:3:3394:1527:3336:3:3394:1522:3528:3:1824:1532:3337|h[Titanstrike]|h|r", -- [16]
 				}, -- [1]
 			},
 		},
@@ -333,11 +333,11 @@ AskMrRobotDb3 = {
 					},
 					[1064] = {
 					},
-					[1503] = {
+					[1158] = {
 					},
 					[1469] = {
 					},
-					[1098] = {
+					[1503] = {
 					},
 					[870] = {
 					},
@@ -353,7 +353,7 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1158] = {
+					[1098] = {
 					},
 					[1520] = {
 						[14] = false,
@@ -432,13 +432,9 @@ AskMrRobotDb3 = {
 					},
 					[1220] = {
 					},
-					[1676] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
+					[33] = {
 					},
-					[1648] = {
+					[1676] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -456,7 +452,11 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[33] = {
+					[1648] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
 					},
 				},
 			},
