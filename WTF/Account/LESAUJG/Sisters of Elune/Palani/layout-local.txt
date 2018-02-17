@@ -1,11 +1,4 @@
 Version: 1
-Frame: DBMMinimapButton
-FrameLevel: 7
-Anchor: TOPRIGHT
-X: -152
-Y: -125
-W: 27
-H: 27
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: CENTER
@@ -13,3 +6,10 @@ X: 149
 Y: -70
 W: 250
 H: 575
+Frame: DBMMinimapButton
+FrameLevel: 7
+Anchor: TOPRIGHT
+X: -152
+Y: -125
+W: 27
+H: 27

@@ -20,14 +20,14 @@ SkadaPerCharDB = {
 		["healing"] = 0,
 		["damagetaken"] = 0,
 		["alertDamage"] = 0,
-		["starttime"] = 1518546612,
+		["starttime"] = 1518871037,
 		["power"] = {
 		},
 		["name"] = "Total",
 		["alertCount"] = 0,
 		["dispells"] = 0,
 		["mobhdone"] = 0,
-		["last_action"] = 1518546612,
+		["last_action"] = 1518871037,
 		["mobdone"] = 0,
 	},
 	["sets"] = {
