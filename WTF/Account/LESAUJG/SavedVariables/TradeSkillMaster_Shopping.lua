@@ -60,140 +60,140 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1518869717,
+			["lastSearch"] = 1518986696,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
 		}, -- [1]
 		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1518890390,
+			["name"] = "frozen orb",
+			["filter"] = "frozen orb",
+		}, -- [2]
+		{
 			["lastSearch"] = 1518481978,
 			["name"] = "Flask of the Seventh Demon",
 			["filter"] = "Flask of the Seventh Demon",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [2]
+		}, -- [3]
 		{
 			["lastSearch"] = 1517688066,
 			["name"] = "Obliterum/exact",
 			["filter"] = "Obliterum/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [3]
+		}, -- [4]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1516043610,
 			["name"] = "deadly deep",
 			["filter"] = "deadly deep",
-		}, -- [4]
+		}, -- [5]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1515290313,
 			["name"] = "empyrium",
 			["filter"] = "empyrium",
-		}, -- [5]
+		}, -- [6]
 		{
 			["lastSearch"] = 1515111702,
 			["name"] = "potion of Prolonged Power",
 			["filter"] = "potion of Prolonged Power",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [6]
+		}, -- [7]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1514990610,
 			["name"] = "void crystal",
 			["filter"] = "void crystal",
-		}, -- [7]
+		}, -- [8]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1514946565,
 			["name"] = "forzen orb",
 			["filter"] = "forzen orb",
-		}, -- [8]
+		}, -- [9]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1514946514,
 			["name"] = "Felwort/exact",
 			["filter"] = "Felwort/exact",
-		}, -- [9]
+		}, -- [10]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1513307191,
 			["name"] = "Maelstrom Crystal",
 			["filter"] = "Maelstrom Crystal",
-		}, -- [10]
+		}, -- [11]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1510528604,
 			["name"] = "Essence of Water/exact",
 			["filter"] = "Essence of Water/exact",
-		}, -- [11]
+		}, -- [12]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1510528526,
 			["name"] = "Eternal Water/x3",
 			["filter"] = "Eternal Water/x3",
-		}, -- [12]
+		}, -- [13]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1509842142,
 			["name"] = "Vermilion Onyx",
 			["filter"] = "Vermilion Onyx",
-		}, -- [13]
+		}, -- [14]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1509842123,
 			["name"] = "wild jade",
 			["filter"] = "wild jade",
-		}, -- [14]
+		}, -- [15]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1507467003,
 			["name"] = "Maelstrom Crystal/ignorede",
 			["filter"] = "Maelstrom Crystal/ignorede",
-		}, -- [15]
+		}, -- [16]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1507466966,
 			["name"] = "Sha Crystal/ignorede",
 			["filter"] = "Sha Crystal/ignorede",
-		}, -- [16]
+		}, -- [17]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1507259727,
 			["name"] = "Abyss Crystal/ignorede",
 			["filter"] = "Abyss Crystal/ignorede",
-		}, -- [17]
+		}, -- [18]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1507259709,
 			["name"] = "River's Heart/ignorede",
 			["filter"] = "River's Heart/ignorede",
-		}, -- [18]
+		}, -- [19]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1506886214,
 			["name"] = "Maelstrom Crystal/exact",
 			["filter"] = "Maelstrom Crystal/exact",
-		}, -- [19]
+		}, -- [20]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1504546303,
 			["name"] = "mask",
 			["filter"] = "mask",
-		}, -- [20]
+		}, -- [21]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1504546296,
 			["name"] = "shadowveave mask",
 			["filter"] = "shadowveave mask",
-		}, -- [21]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1504443567,
-			["name"] = "frozen orb",
-			["filter"] = "frozen orb",
 		}, -- [22]
 		{
 			["searchMode"] = "crafting",

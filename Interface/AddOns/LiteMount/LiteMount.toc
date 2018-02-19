@@ -1,6 +1,6 @@
 ## Interface: 70300
 ## Title: LiteMount
-## Version: 7.3.17
+## Version: 7.3.18
 ## Author: Xodiv-Nagrand
 ## Email: mib@post.com
 ## OptionalDependencies: LibDebug
@@ -12,6 +12,10 @@ Localization.lua
 
 AutoEventFrame.lua
 Print.lua
+
+#@debug@
+# Developer.lua
+#@end-debug@
 
 SpellInfo.lua
 Mount.lua

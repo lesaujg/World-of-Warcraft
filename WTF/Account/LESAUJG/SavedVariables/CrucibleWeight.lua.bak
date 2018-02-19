@@ -9,7 +9,15 @@ CrucibleWeightDB = {
 			["relicCache"] = {
 			},
 		},
-		["Herbinator - Sisters of Elune"] = {
+		["Uldaris - Sisters of Elune"] = {
+			["artifactWeight"] = {
+			},
+			["presets"] = {
+			},
+			["relicCache"] = {
+			},
+		},
+		["Ghiaccioli - Sisters of Elune"] = {
 			["artifactWeight"] = {
 			},
 			["presets"] = {
@@ -59,14 +67,6 @@ CrucibleWeightDB = {
 			["relicCache"] = {
 			},
 		},
-		["Uldaris - Sisters of Elune"] = {
-			["artifactWeight"] = {
-			},
-			["presets"] = {
-			},
-			["relicCache"] = {
-			},
-		},
 		["Bracnar - Sisters of Elune"] = {
 			[128826] = {
 			},
@@ -104,6 +104,14 @@ CrucibleWeightDB = {
 			},
 		},
 		["Edaka - Sisters of Elune"] = {
+			["artifactWeight"] = {
+			},
+			["presets"] = {
+			},
+			["relicCache"] = {
+			},
+		},
+		["Herbinator - Sisters of Elune"] = {
 			["artifactWeight"] = {
 			},
 			["presets"] = {

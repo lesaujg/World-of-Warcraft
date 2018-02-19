@@ -179,7 +179,15 @@ CrucibleWeightDB = {
 			["relicCache"] = {
 			},
 		},
-		["Herbinator - Sisters of Elune"] = {
+		["Clothgar - Sisters of Elune"] = {
+			["artifactWeight"] = {
+			},
+			["presets"] = {
+			},
+			["relicCache"] = {
+			},
+		},
+		["Ghiaccioli - Sisters of Elune"] = {
 			["artifactWeight"] = {
 			},
 			["presets"] = {
@@ -229,7 +237,7 @@ CrucibleWeightDB = {
 			["relicCache"] = {
 			},
 		},
-		["Clothgar - Sisters of Elune"] = {
+		["Torinar - Sisters of Elune"] = {
 			["artifactWeight"] = {
 			},
 			["presets"] = {
@@ -237,7 +245,7 @@ CrucibleWeightDB = {
 			["relicCache"] = {
 			},
 		},
-		["Torinar - Sisters of Elune"] = {
+		["Herbinator - Sisters of Elune"] = {
 			["artifactWeight"] = {
 			},
 			["presets"] = {

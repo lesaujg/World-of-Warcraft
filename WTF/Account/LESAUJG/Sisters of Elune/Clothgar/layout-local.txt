@@ -1,11 +1,4 @@
 Version: 1
-Frame: ArgusEliteTrackerFram
-FrameLevel: 1
-Anchor: RIGHT
-X: -249
-Y: -76
-W: 300
-H: 24
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: RIGHT

@@ -1,22 +1,14 @@
-tag 0fa3316981949051b269b0fd92c935b8fe004537 7.3.17
+tag 2e8659bd9628e09c50ed0fc989d9bc0e48cb898d 7.3.18
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Sun Feb 11 18:48:01 2018 +1100
+Date:	Thu Feb 15 17:16:16 2018 +1100
 
-Still trying to fix Blizzard's error.
-Clearly I have no idea what I'm doing, so here's some song lyrics:
+Tagging 7.3.18 for release.
 
-One, don't pick up the phone
-You know he's only calling 'cause he's drunk and alone
-Two, don't let him in
-You have to kick him out again
-Three, don't be his friend
-You know you're gonna wake up in his bed in the morning
-And if you're under him
-You ain't getting over him
+Fix error updating FAVORITES flag if mount journal has not been opened.
 
-commit 8481ee9c0f8cba1a3ffe82045d91219aa8ed5c05
+commit 1e7aa916df28ebe126c642241e8339fcbc674479
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sun Feb 11 18:46:09 2018 +1100
+Date:   Thu Feb 15 16:56:44 2018 +1100
 
-    More attempts to test if you know a flying ability
+    Package Developer.lua just in case I make a mistake.
 
