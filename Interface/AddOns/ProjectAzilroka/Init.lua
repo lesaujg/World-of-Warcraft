@@ -8,7 +8,7 @@ _G.ProjectAzilroka = PA
 
 local GetAddOnMetadata = GetAddOnMetadata
 local GetAddOnEnableState = GetAddOnEnableState
-local select, pairs, sort, tinsert = select, pairs, sort, tinsert
+local select, pairs, sort, tinsert, print, format = select, pairs, sort, tinsert, print, format
 local UnitName, UnitClass, GetRealmName = UnitName, UnitClass, GetRealmName
 local UIParent = UIParent
 
@@ -35,6 +35,8 @@ PA.UIScale = UIParent:GetScale()
 -- Pixel Perfect
 PA.ScreenWidth, PA.ScreenHeight = GetPhysicalScreenSize()
 PA.Multiple = 768 / PA.ScreenHeight / UIParent:GetScale()
+
+local RAID_CLASS_COLORS = RAID_CLASS_COLORS
 
 -- Project Data
 function PA:IsAddOnEnabled(addon)
@@ -96,6 +98,16 @@ function PA:PairsByKeys(t, f)
 	return iter
 end
 
+StaticPopupDialogs["PA_RELOAD"] = {
+	text = PA.ACL["A setting you have changed will change an option for this character only. This setting that you have changed will be uneffected by changing user profiles. Changing this setting requires that you reload your User Interface."],
+	button1 = ACCEPT,
+	button2 = CANCEL,
+	OnAccept = ReloadUI,
+	timeout = 0,
+	whileDead = 1,
+	hideOnEscape = false,
+}
+
 PA.Options = {
 	type = 'group',
 	name = PA:Color(PA.Title),
@@ -112,46 +124,56 @@ PA.Options = {
 			name = PA:Color(PA.ACL['AddOns']),
 			guiInline = true,
 			get = function(info) return PA.db[info[#info]] end,
-			set = function(info, value) PA.db[info[#info]] = value end,
+			set = function(info, value) PA.db[info[#info]] = value; StaticPopup_Show("PA_RELOAD") end,
 			args = {
-				DO = {
+				BB = {
 					order = 0,
+					type = 'toggle',
+					name = PA.ACL['BigButtons'],
+				},
+				BrokerLDB = {
+					order = 1,
+					type = 'toggle',
+					name = 'BrokerLDB',
+				},
+				DO = {
+					order = 2,
 					type = 'toggle',
 					name = PA.ACL['Dragon Overlay'],
 				},
+				EFL = {
+					order = 3,
+					type = 'toggle',
+					name = PA.ACL['Enhanced Friends List'],
+				},
 				ES = {
-					order = 1,
+					order = 4,
 					type = 'toggle',
 					name = PA.ACL['Enhanced Shadows'],
 					disabled = function() return (PA.SLE or PA.NUI) end,
 				},
-				EFL = {
-					order = 2,
+				FG = {
+					order = 5,
 					type = 'toggle',
-					name = PA.ACL['Enhanced Friends List'],
+					name = 'Friend Groups',
 				},
 				LC = {
-					order = 3,
+					order = 6,
 					type = 'toggle',
 					name = PA.ACL['Loot Confirm'],
 				},
 				MF = {
-					order = 4,
+					order = 7,
 					type = 'toggle',
 					name = PA.ACL['MovableFrames'],
 				},
 				SMB = {
-					order = 5,
+					order = 8,
 					type = 'toggle',
 					name = PA.ACL['Square Minimap Buttons / Bar'],
 				},
-				BB = {
-					order = 6,
-					type = 'toggle',
-					name = PA.ACL['BigButtons'],
-				},
 				stAM = {
-					order = 7,
+					order = 9,
 					type = 'toggle',
 					name = PA.ACL['stAddOnManager'],
 				},
@@ -167,13 +189,15 @@ end
 function PA:UpdateProfile()
 	local Defaults = {
 		profile = {
+			['BB'] = true,
+			['BrokerLDB'] = true,
 			['DO'] = true,
-			['ES'] = true,
 			['EFL'] = true,
+			['ES'] = true,
+			['FG'] = false,
 			['LC'] = true,
 			['MF'] = true,
 			['SMB'] = true,
-			['BB'] = true,
 			['stAM'] = true,
 		},
 	}
@@ -189,7 +213,7 @@ end
 function PA:ADDON_LOADED(event, addon)
 	if addon == AddOnName then
 		PA.EP = LibStub('LibElvUIPlugin-1.0', true)
-		PA.AceOptionsPanel = PA.ElvUI and ElvUI[1] or Enhanced_Config
+		PA.AceOptionsPanel = PA.ElvUI and _G.ElvUI[1] or PA.EC
 		PA:UpdateProfile()
 		PA:UnregisterEvent(event)
 	end
@@ -202,28 +226,34 @@ function PA:PLAYER_LOGIN()
 		PA.EP:RegisterPlugin('ProjectAzilroka', PA.GetOptions)
 	end
 	if not (PA.SLE or PA.NUI) and PA.db['ES'] then
-		_G.EnhancedShadows:Initialize()
-	end
-	if PA.db['SMB'] and not PA.SLE then
-		_G.SquareMinimapButtons:Initialize()
+		PA.ES:Initialize()
 	end
 	if PA.db['BB'] then
-		_G.BigButtons:Initialize()
+		PA.BB:Initialize()
 	end
-	if PA.db['EFL'] then
-		_G.EnhancedFriendsList:Initialize()
-	end
-	if PA.db['LC'] then
-		_G.LootConfirm:Initialize()
-	end
-	if PA.db['MF'] then
-		_G.MovableFrames:Initialize()
+	if PA.db['BrokerLDB'] then
+		PA.BrokerLDB:Initialize()
 	end
 	if PA.db['DO'] then
-		_G.DragonOverlay:Initialize()
+		PA.DO:Initialize()
+	end
+	if PA.db['FG'] then -- Has to be before EFL
+		--PA.FG:Initialize()
+	end
+	if PA.db['EFL'] then
+		PA.EFL:Initialize()
+	end
+	if PA.db['LC'] then
+		PA.LC:Initialize()
+	end
+	if PA.db['MF'] then
+		PA.MF:Initialize()
+	end
+	if PA.db['SMB'] and not PA.SLE then
+		PA.SMB:Initialize()
 	end
 	if PA.db['stAM'] then
-		_G.stAddonManager:Initialize()
+		PA.stAM:Initialize()
 	end
 	if PA.Tukui and GetAddOnEnableState(PA.MyName, 'Tukui_Config') > 0 then
 		PA:TukuiOptions()

@@ -3,6 +3,7 @@ local ACL = LibStub('AceLocale-3.0'):NewLocale('ProjectAzilroka', 'frFR')
 if not ACL then return end
 
 -- Misc
+ACL["A setting you have changed will change an option for this character only. This setting that you have changed will be uneffected by changing user profiles. Changing this setting requires that you reload your User Interface."] = true
 ACL['Authors:'] = true
 ACL['Blizzard'] = true
 ACL['Controls AddOns in this package'] = true
@@ -35,6 +36,13 @@ ACL['stAddOnManager'] = true
 ACL['Drop Farm Tools'] = true
 ACL['Farm Tool Size'] = true
 ACL['Seed Size'] = true
+
+-- BrokerLDB
+ACL['MouseOver'] = true
+ACL['Panel Height'] = true
+ACL['Panel Width'] = true
+ACL['Show Icon'] = true
+ACL['Show Text'] = true
 
 -- Dragon Overlay
 ACL['Anchor Point'] = true

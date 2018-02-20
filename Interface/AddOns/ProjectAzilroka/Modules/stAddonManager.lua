@@ -1,6 +1,6 @@
 local PA = _G.ProjectAzilroka
 local stAM = PA:NewModule('stAddonManager', 'AceEvent-3.0')
-_G.stAddonManager = stAM
+PA.stAM, _G.stAddonManager = stAM, stAM
 _G.stAddonManagerProfilesDB = {}
 
 stAM.Title = '|cFF16C3F2st|r|cFFFFFFFFAddonManager|r'
@@ -68,13 +68,13 @@ function stAM:BuildFrame()
 	local Title = Frame:CreateFontString(nil, 'OVERLAY')
 	Title:SetPoint('TOPLEFT', 0, -5)
 	Title:SetPoint('TOPRIGHT', 0, -5)
-	Title:SetFont(PA.LSM:Fetch('font', 'PT Sans Narrow'), 12, 'OUTLINE')
+	Title:SetFont(PA.LSM:Fetch('font', self.db['Font']), 14, self.db['FontFlag'])
 	Title:SetText(stAM.Title)
 	Title:SetJustifyH('CENTER')
 	Title:SetJustifyV('MIDDLE')
 	Frame.Title = Title
 
-	local Close = CreateFrame('Button', nil, Frame)
+	local Close = CreateFrame('Button', 'stAMCloseButton', Frame)
 	Close:SetTemplate()
 	Close:SetPoint('TOPRIGHT', -3, -3)
 	Close:SetSize(16, 16)
@@ -82,7 +82,7 @@ function stAM:BuildFrame()
 	Close:SetScript('OnLeave', function(self) self:SetTemplate() end)
 	Close:SetScript('OnClick', function(self) Frame:Hide() end)
 	Close.Text = Close:CreateFontString(nil, 'OVERLAY')
-	Close.Text:SetFont(PA.LSM:Fetch('font', 'PT Sans Narrow'), 12, 'OUTLINE')
+	Close.Text:SetFont(PA.LSM:Fetch('font', self.db['Font']), 12, self.db['FontFlag'])
 	Close.Text:SetJustifyH('CENTER')
 	Close.Text:SetJustifyV('MIDDLE')
 	Close.Text:SetText('x')
@@ -90,13 +90,13 @@ function stAM:BuildFrame()
 
 	Frame.Close = Close
 
-	local Search = CreateFrame('EditBox', nil, Frame)
+	local Search = CreateFrame('EditBox', 'stAMSearchBox', Frame)
 	Search:SetSize(1, 20)
 	Search:SetTemplate()
 	Search:SetAutoFocus(false)
 	Search:SetTextInsets(5, 5, 0, 0)
 	Search:SetTextColor(1, 1, 1)
-	Search:SetFont(PA.LSM:Fetch('font', 'PT Sans Narrow'), 12, 'OUTLINE')
+	Search:SetFont(PA.LSM:Fetch('font', self.db['Font']), 12, self.db['FontFlag'])
 	Search:SetShadowOffset(0,0)
 	Search:SetText("Search")
 
@@ -117,47 +117,67 @@ function stAM:BuildFrame()
 	Frame.Search = Search
 	Frame.Search.AddOns = {}
 
-	local Reload = CreateFrame('Button', nil, Frame)
+	local Reload = CreateFrame('Button', 'stAMReload', Frame)
 	Reload:SetTemplate()
 	Reload:SetSize(70, 20)
 	Reload:SetScript('OnEnter', function(self) self:SetBackdropBorderColor(unpack(stAM.db['ClassColor'] and PA.ClassColor or stAM.db['CheckColor'])) end)
 	Reload:SetScript('OnLeave', function(self) self:SetTemplate() end)
 	Reload:SetScript('OnClick', _G.ReloadUI)
 	Reload.Text = Reload:CreateFontString(nil, 'OVERLAY')
-	Reload.Text:SetFont(PA.LSM:Fetch('font', 'PT Sans Narrow'), 12, 'OUTLINE')
+	Reload.Text:SetFont(PA.LSM:Fetch('font', self.db['Font']), 12, self.db['FontFlag'])
 	Reload.Text:SetText('Reload')
 	Reload.Text:SetPoint('CENTER', 0, 0)
 	Reload.Text:SetJustifyH('CENTER')
 	Frame.Reload = Reload
 
-	local Profiles = CreateFrame('Button', nil, Frame)
+	local Profiles = CreateFrame('Button', 'stAMProfiles', Frame)
 	Profiles:SetTemplate()
 	Profiles:SetSize(70, 20)
 	Profiles:SetScript('OnEnter', function(self) self:SetBackdropBorderColor(unpack(stAM.db['ClassColor'] and PA.ClassColor or stAM.db['CheckColor'])) end)
 	Profiles:SetScript('OnLeave', function(self) self:SetTemplate() end)
 	Profiles:SetScript('OnClick', function() stAM:ToggleProfiles() end)
 	Profiles.Text = Profiles:CreateFontString(nil, 'OVERLAY')
-	Profiles.Text:SetFont(PA.LSM:Fetch('font', 'PT Sans Narrow'), 12, 'OUTLINE')
+	Profiles.Text:SetFont(PA.LSM:Fetch('font', self.db['Font']), 12, self.db['FontFlag'])
 	Profiles.Text:SetText('Profiles')
 	Profiles.Text:SetPoint('CENTER', 0, 0)
 	Profiles.Text:SetJustifyH('CENTER')
 	Frame.Profiles = Profiles
 
 	--Frame used to display addons list
-	local AddOns = CreateFrame("ScrollFrame", nil, Frame)
+	local AddOns = CreateFrame("Frame", 'stAMAddOns', Frame)
 	AddOns:SetHeight(self.db['NumAddOns'] * (self.db['ButtonHeight'] + 5) + 15)
 	AddOns:SetTemplate()
 	AddOns.Buttons = {}
 	AddOns:EnableMouse(true)
 	AddOns:EnableMouseWheel(true)
 
-	AddOns:SetScript('OnMouseWheel', function(self, delta)
+	local Slider = CreateFrame("Slider", nil, AddOns)
+	Slider:SetPoint("RIGHT", -2, 0)
+	Slider:SetWidth(12)
+	Slider:SetHeight(self.db['NumAddOns'] * (self.db['ButtonHeight'] + 5) + 11)
+	Slider:SetThumbTexture(PA.LSM:Fetch('background', 'Solid'))
+	Slider:SetOrientation("VERTICAL")
+	Slider:SetValueStep(1)
+	Slider:SetTemplate()
+	Slider:SetMinMaxValues(0, 1)
+	Slider:SetValue(0)
+	Slider:EnableMouse(true)
+	Slider:EnableMouseWheel(true)
+
+	local Thumb = Slider:GetThumbTexture()
+	Thumb:Width(8)
+	Thumb:Height(16)
+	Thumb:SetVertexColor(AddOns:GetBackdropBorderColor())
+
+	AddOns.ScrollBar = Slider
+
+	local OnScroll = function(self, delta)
 		local numAddons = stAM.searchQuery and #Search.AddOns or #stAM.AddOnInfo
 		if IsShiftKeyDown() then
 			if delta == 1 then
 				stAM.scrollOffset = max(0, stAM.scrollOffset - stAM.db['NumAddOns'])
 			elseif delta == -1 then
-				stAM.scrollOffset = min(#stAM.AddOnInfo - stAM.db['NumAddOns'], stAM.scrollOffset + stAM.db['NumAddOns'])
+				stAM.scrollOffset = min(numAddons - stAM.db['NumAddOns'], stAM.scrollOffset + stAM.db['NumAddOns'])
 			end
 		else
 			if delta == 1 and stAM.scrollOffset > 0 then
@@ -168,11 +188,20 @@ function stAM:BuildFrame()
 				end
 			end
 		end
+		Slider:SetMinMaxValues(0, (numAddons - stAM.db['NumAddOns']))
+		Slider:SetValue(stAM.scrollOffset)
 		stAM:UpdateAddonList()
+	end
+
+	AddOns:SetScript('OnMouseWheel', OnScroll)
+	Slider:SetScript('OnMouseWheel', OnScroll)
+	Slider:SetScript('OnValueChanged', function(self, value)
+		stAM.scrollOffset = value;
+		OnScroll()
 	end)
 
 	for i = 1, 30 do
-		local CheckButton = CreateFrame('CheckButton', nil, AddOns)
+		local CheckButton = CreateFrame('CheckButton', 'stAMCheckButton_'..i, AddOns)
 		CheckButton:SetTemplate()
 		CheckButton:SetSize(self.db['ButtonWidth'], self.db['ButtonHeight'])
 		CheckButton:SetPoint(unpack(i == 1 and {"TOPLEFT", AddOns, "TOPLEFT", 10, -10} or {"TOP", AddOns.Buttons[i-1], "BOTTOM", 0, -5}))
@@ -272,7 +301,7 @@ function stAM:NewAddOnProfile(name, overwrite)
 end
 
 function stAM:InitProfiles()
-	local ProfileMenu = CreateFrame('Frame', nil, self.Frame)
+	local ProfileMenu = CreateFrame('Frame', 'stAMProfileMenu', self.Frame)
 	ProfileMenu:SetPoint('TOPLEFT', self.Frame, 'TOPRIGHT', 3, 0)
 	ProfileMenu:SetSize(250, 50)
 	ProfileMenu:SetTemplate('Transparent')
@@ -286,7 +315,7 @@ function stAM:InitProfiles()
 		Button:SetScript('OnLeave', function(self) self:SetTemplate() end)
 
 		Button.Text = Button:CreateFontString(nil, 'OVERLAY')
-		Button.Text:SetFont(PA.LSM:Fetch('font', 'PT Sans Narrow'), 12, 'OUTLINE')
+		Button.Text:SetFont(PA.LSM:Fetch('font', self.db['Font']), 12, 'OUTLINE')
 		Button.Text:SetPoint('CENTER', 0, 0)
 		Button.Text:SetJustifyH('CENTER')
 		Button.Text:SetText(name)
@@ -317,7 +346,7 @@ function stAM:InitProfiles()
 	NewButton:SetScript('OnLeave', function(self) self:SetTemplate() end)
 	NewButton:SetScript('OnClick', function() _G.StaticPopup_Show('STADDONMANAGER_NEWPROFILE') end)
 	NewButton.Text = NewButton:CreateFontString(nil, 'OVERLAY')
-	NewButton.Text:SetFont(PA.LSM:Fetch('font', 'PT Sans Narrow'), 12, 'OUTLINE')
+	NewButton.Text:SetFont(PA.LSM:Fetch('font', self.db['Font']), 12, 'OUTLINE')
 	NewButton.Text:SetPoint('CENTER', 0, 0)
 	NewButton.Text:SetJustifyH('CENTER')
 	NewButton.Text:SetText('New Profile')
@@ -339,7 +368,7 @@ function stAM:InitProfiles()
 			Button:SetScript('OnEnter', function(self) self:SetBackdropBorderColor(unpack(stAM.db['ClassColor'] and PA.ClassColor or stAM.db['CheckColor'])) end)
 			Button:SetScript('OnLeave', function(self) self:SetTemplate() end)
 			Button.Text = Button:CreateFontString(nil, 'OVERLAY')
-			Button.Text:SetFont(PA.LSM:Fetch('font', 'PT Sans Narrow'), 12, 'OUTLINE')
+			Button.Text:SetFont(PA.LSM:Fetch('font', self.db['Font']), 12, 'OUTLINE')
 			Button.Text:SetPoint('CENTER', 0, 0)
 			Button.Text:SetJustifyH('CENTER')
 
@@ -349,7 +378,9 @@ function stAM:InitProfiles()
 		Pullout.Load:SetPoint('LEFT', Pullout, 0, 0)
 		Pullout.Load.Text:SetText('Load')
 		Pullout.Load:SetScript('OnClick', function(self)
-			DisableAllAddOns(PA.MyName)
+			if not IsShiftKeyDown() then
+				DisableAllAddOns(PA.MyName)
+			end
 			for _, AddOn in pairs(_G.stAddonManagerProfilesDB[Pullout.Name]) do
 				EnableAddOn(AddOn, PA.MyName)
 			end
@@ -470,6 +501,13 @@ function stAM:Update()
 		CheckButton.CheckTexture:SetVertexColor(unpack(stAM.db['ClassColor'] and PA.ClassColor or stAM.db['CheckColor']))
 		CheckButton:SetCheckedTexture(CheckButton.CheckTexture)
 	end
+
+	-- Frame fonts
+	self.Frame.Title:SetFont(PA.LSM:Fetch('font', self.db['Font']), 14, self.db['FontFlag'])
+	self.Frame.Close.Text:SetFont(PA.LSM:Fetch('font', self.db['Font']), 12, self.db['FontFlag'])
+	self.Frame.Search:SetFont(PA.LSM:Fetch('font', self.db['Font']), 12, self.db['FontFlag'])
+	self.Frame.Reload.Text:SetFont(PA.LSM:Fetch('font', self.db['Font']), 12, self.db['FontFlag'])
+	self.Frame.Profiles.Text:SetFont(PA.LSM:Fetch('font', self.db['Font']), 12, self.db['FontFlag'])
 
 	stAM:UpdateAddonList()
 end

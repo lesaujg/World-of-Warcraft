@@ -1,6 +1,6 @@
 local PA = _G.ProjectAzilroka
 local SMB = PA:NewModule('SquareMinimapButtons', 'AceEvent-3.0', 'AceHook-3.0', 'AceTimer-3.0')
-_G.SquareMinimapButtons = SMB
+PA.SMB, _G.SquareMinimapButtons = SMB, SMB
 
 SMB.Title = '|cFF16C3F2Square|r |cFFFFFFFFMinimap Buttons|r'
 SMB.Description = 'Minimap Button Bar / Minimap Button Skinning'
@@ -87,11 +87,11 @@ function SMB:HandleBlizzardButtons()
 		GarrisonLandingPageMinimapButton:SetScript('OnLeave', nil)
 
 		GarrisonLandingPageMinimapButton:SetNormalTexture(1044517)
-		GarrisonLandingPageMinimapButton:GetNormalTexture(1044517):SetTexCoord(unpack(self.TexCoords))
+		GarrisonLandingPageMinimapButton:GetNormalTexture():SetTexCoord(unpack(self.TexCoords))
 		GarrisonLandingPageMinimapButton:GetNormalTexture():SetInside()
 
 		GarrisonLandingPageMinimapButton:SetPushedTexture(1044517)
-		GarrisonLandingPageMinimapButton:GetPushedTexture(1044517):SetTexCoord(unpack(self.TexCoords))
+		GarrisonLandingPageMinimapButton:GetPushedTexture():SetTexCoord(unpack(self.TexCoords))
 		GarrisonLandingPageMinimapButton:GetPushedTexture():SetInside()
 
 		GarrisonLandingPageMinimapButton:SetHighlightTexture(nil)
