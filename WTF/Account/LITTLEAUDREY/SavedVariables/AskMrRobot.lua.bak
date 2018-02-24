@@ -2,12 +2,52 @@
 AskMrRobotDb3 = {
 	["char"] = {
 		["Torinara - Sisters of Elune"] = {
+			["Talents"] = {
+				[2] = "3212111",
+			},
+			["Artifacts"] = {
+				[2] = {
+					["Relics"] = {
+						"|cff0070dd|Hitem:136686::::::::110:263::13::::|h[Flamespike]|h|r", -- [1]
+						"|cff1eff00|Hitem:141288::::::::110:263:::3:1812:1442:1809:::|h[Ettin Bone Fragment]|h|r", -- [2]
+						"|cffa335ee|Hitem:143688::::::::110:263::27:3:3394:1532:3528:::|h[Stormwing's Roar]|h|r", -- [3]
+					},
+					["Powers"] = {
+						[911] = 4,
+						[1388] = 1,
+						[912] = 4,
+						[913] = 4,
+						[930] = 1,
+						[900] = 1,
+						[901] = 1,
+						[902] = 1,
+						[903] = 1,
+						[904] = 1,
+						[1687] = 1,
+						[905] = 4,
+						[1593] = 4,
+						[906] = 4,
+						[1595] = 1,
+						[907] = 4,
+						[1596] = 3,
+						[908] = 4,
+						[1351] = 1,
+						[909] = 4,
+						[899] = 1,
+						[910] = 4,
+						[1594] = 1,
+					},
+					["Crucible"] = {
+						["Equipped"] = {
+						},
+						["Inventory"] = {
+						},
+					},
+				},
+			},
 			["Logging"] = {
 				["LastDiff"] = 0,
 				["LastZone"] = "Pandaria",
-			},
-			["Talents"] = {
-				[2] = "3212111",
 			},
 			["Equipped"] = {
 				[2] = {
@@ -30,51 +70,54 @@ AskMrRobotDb3 = {
 					"|cffe6cc80|Hitem:128873::::::::110:263:256:::117:::|h[Fury of the Stonemother]|h|r", -- [17]
 				},
 			},
-			["Artifacts"] = {
-				[2] = {
-					["Relics"] = {
-						"|cff0070dd|Hitem:136686::::::::110:263::13::::|h[Flamespike]|h|r", -- [1]
-						"|cff1eff00|Hitem:141288::::::::110:263:::3:1812:1442:1809:::|h[Ettin Bone Fragment]|h|r", -- [2]
-						"|cffa335ee|Hitem:143688::::::::110:263::27:3:3394:1532:3528:::|h[Stormwing's Roar]|h|r", -- [3]
-					},
-					["Powers"] = {
-						[911] = 4,
-						[1388] = 1,
-						[912] = 4,
-						[913] = 4,
-						[930] = 1,
-						[900] = 1,
-						[901] = 1,
-						[902] = 1,
-						[903] = 1,
-						[904] = 1,
-						[1594] = 1,
-						[905] = 4,
-						[1593] = 4,
-						[1687] = 1,
-						[1595] = 1,
-						[907] = 4,
-						[1596] = 3,
-						[908] = 4,
-						[1351] = 1,
-						[909] = 4,
-						[899] = 1,
-						[910] = 4,
-						[906] = 4,
-					},
-					["Crucible"] = {
-						["Equipped"] = {
-						},
-						["Inventory"] = {
-						},
-					},
-				},
-			},
 		},
 		["Allala - Sisters of Elune"] = {
+			["Logging"] = {
+				["LastDiff"] = 0,
+				["LastZone"] = "Mogu Island Daily Area",
+			},
 			["Talents"] = {
 				[3] = "1212121",
 				[2] = "2312131",
+			},
+			["Equipped"] = {
+				[3] = {
+					"|cff1eff00|Hitem:153904::::::::110:70::::::|h[Sunsoul Faceguard]|h|r", -- [1]
+					"|cffa335ee|Hitem:143906::::::::110:70:512:1:1:3628:110:::|h[Heartbreak Charm]|h|r", -- [2]
+					"|cff1eff00|Hitem:153911::::::::110:70::::::|h[Sunsoul Shoulderguards]|h|r", -- [3]
+					nil, -- [4]
+					"|cff1eff00|Hitem:153900::::::::110:70::::::|h[Sunsoul Chestguard]|h|r", -- [5]
+					"|cff1eff00|Hitem:153912::::::::110:70::::::|h[Sunsoul Waistband]|h|r", -- [6]
+					"|cff1eff00|Hitem:153905::::::::110:70::::::|h[Sunsoul Legguards]|h|r", -- [7]
+					"|cff1eff00|Hitem:153902::::::::110:70::::::|h[Sunsoul Greaves]|h|r", -- [8]
+					"|cff1eff00|Hitem:153913::::::::110:70::::::|h[Sunsoul Armguards]|h|r", -- [9]
+					"|cff1eff00|Hitem:153903::::::::110:70::::::|h[Sunsoul Handguards]|h|r", -- [10]
+					"|cff1eff00|Hitem:153908::::::::110:70::::::|h[Sunsoul Ring of Stoicism]|h|r", -- [11]
+					"|cff1eff00|Hitem:153909::::::::110:70::::::|h[Sunsoul Band of Stoicism]|h|r", -- [12]
+					"|cff1eff00|Hitem:153907::::::::110:70::::::|h[Sunsoul Defender Idol]|h|r", -- [13]
+					"|cff1eff00|Hitem:153910::::::::110:70::::::|h[Sunsoul Defender Stone]|h|r", -- [14]
+					"|cff1eff00|Hitem:153901::::::::110:70::::::|h[Sunsoul Cloak of Stoicism]|h|r", -- [15]
+					"|cffe6cc80|Hitem:120978::::::::110:70:16777472:9:1:737:9:1:::|h[Ashbringer]|h|r", -- [16]
+				},
+				[2] = {
+					"|cff1eff00|Hitem:153904::::::::110:66::::::|h[Sunsoul Faceguard]|h|r", -- [1]
+					"|cffa335ee|Hitem:143906::::::::110:66:512:1:1:3628:110:::|h[Heartbreak Charm]|h|r", -- [2]
+					"|cff1eff00|Hitem:153911::::::::110:66::::::|h[Sunsoul Shoulderguards]|h|r", -- [3]
+					nil, -- [4]
+					"|cff1eff00|Hitem:153900::::::::110:66::::::|h[Sunsoul Chestguard]|h|r", -- [5]
+					"|cff1eff00|Hitem:153912::::::::110:66::::::|h[Sunsoul Waistband]|h|r", -- [6]
+					"|cff1eff00|Hitem:153905::::::::110:66::::::|h[Sunsoul Legguards]|h|r", -- [7]
+					"|cff1eff00|Hitem:153902::::::::110:66::::::|h[Sunsoul Greaves]|h|r", -- [8]
+					"|cff1eff00|Hitem:153913::::::::110:66::::::|h[Sunsoul Armguards]|h|r", -- [9]
+					"|cff1eff00|Hitem:153903::::::::110:66::::::|h[Sunsoul Handguards]|h|r", -- [10]
+					"|cff1eff00|Hitem:153908::::::::110:66::::::|h[Sunsoul Ring of Stoicism]|h|r", -- [11]
+					"|cff1eff00|Hitem:153909::::::::110:66::::::|h[Sunsoul Band of Stoicism]|h|r", -- [12]
+					"|cff1eff00|Hitem:153907::::::::110:66::::::|h[Sunsoul Defender Idol]|h|r", -- [13]
+					"|cff1eff00|Hitem:153910::::::::110:66::::::|h[Sunsoul Defender Stone]|h|r", -- [14]
+					"|cff1eff00|Hitem:153901::::::::110:66::::::|h[Sunsoul Cloak of Stoicism]|h|r", -- [15]
+					"|cffe6cc80|Hitem:128867::::::::110:66:256:::291:::|h[Oathseeker]|h|r", -- [16]
+					"|cffe6cc80|Hitem:128866::156816:156817:156803::::110:66:16777472::1:736:291:1:::|h[Truthguard]|h|r", -- [17]
+				},
 			},
 			["Artifacts"] = {
 				[2] = {
@@ -117,28 +160,28 @@ AskMrRobotDb3 = {
 						"", -- [3]
 					},
 					["Powers"] = {
-						[351] = 1,
+						[40] = 1,
 						[1118] = 1,
 						[350] = 1,
 						[1275] = 1,
 						[41] = 4,
 						[42] = 4,
-						[43] = 4,
+						[351] = 1,
 						[44] = 4,
-						[51] = 4,
+						[1647] = 1,
+						[49] = 1,
 						[47] = 4,
-						[1561] = 4,
 						[1562] = 1,
 						[1563] = 1,
 						[50] = 4,
-						[353] = 1,
+						[51] = 4,
 						[52] = 4,
 						[53] = 4,
 						[54] = 1,
 						[352] = 1,
-						[49] = 1,
-						[1647] = 1,
-						[40] = 1,
+						[353] = 1,
+						[1561] = 4,
+						[43] = 4,
 					},
 					["Crucible"] = {
 						["Equipped"] = {
@@ -146,49 +189,6 @@ AskMrRobotDb3 = {
 						["Inventory"] = {
 						},
 					},
-				},
-			},
-			["Logging"] = {
-				["LastDiff"] = 0,
-				["LastZone"] = "Pandaria",
-			},
-			["Equipped"] = {
-				[3] = {
-					"|cff1eff00|Hitem:153904::::::::110:70::::::|h[Sunsoul Faceguard]|h|r", -- [1]
-					"|cffa335ee|Hitem:143906::::::::110:70:512:1:1:3628:110:::|h[Heartbreak Charm]|h|r", -- [2]
-					"|cff1eff00|Hitem:153911::::::::110:70::::::|h[Sunsoul Shoulderguards]|h|r", -- [3]
-					nil, -- [4]
-					"|cff1eff00|Hitem:153900::::::::110:70::::::|h[Sunsoul Chestguard]|h|r", -- [5]
-					"|cff1eff00|Hitem:153912::::::::110:70::::::|h[Sunsoul Waistband]|h|r", -- [6]
-					"|cff1eff00|Hitem:153905::::::::110:70::::::|h[Sunsoul Legguards]|h|r", -- [7]
-					"|cff1eff00|Hitem:153902::::::::110:70::::::|h[Sunsoul Greaves]|h|r", -- [8]
-					"|cff1eff00|Hitem:153913::::::::110:70::::::|h[Sunsoul Armguards]|h|r", -- [9]
-					"|cff1eff00|Hitem:153903::::::::110:70::::::|h[Sunsoul Handguards]|h|r", -- [10]
-					"|cff1eff00|Hitem:153908::::::::110:70::::::|h[Sunsoul Ring of Stoicism]|h|r", -- [11]
-					"|cff1eff00|Hitem:153909::::::::110:70::::::|h[Sunsoul Band of Stoicism]|h|r", -- [12]
-					"|cff1eff00|Hitem:153907::::::::110:70::::::|h[Sunsoul Defender Idol]|h|r", -- [13]
-					"|cff1eff00|Hitem:153910::::::::110:70::::::|h[Sunsoul Defender Stone]|h|r", -- [14]
-					"|cff1eff00|Hitem:153901::::::::110:70::::::|h[Sunsoul Cloak of Stoicism]|h|r", -- [15]
-					"|cffe6cc80|Hitem:120978::::::::110:70:16777472:9:1:737:9:1:::|h[Ashbringer]|h|r", -- [16]
-				},
-				[2] = {
-					"|cff1eff00|Hitem:153904::::::::110:66::::::|h[Sunsoul Faceguard]|h|r", -- [1]
-					"|cffa335ee|Hitem:143906::::::::110:66:512:1:1:3628:110:::|h[Heartbreak Charm]|h|r", -- [2]
-					"|cff1eff00|Hitem:153911::::::::110:66::::::|h[Sunsoul Shoulderguards]|h|r", -- [3]
-					nil, -- [4]
-					"|cff1eff00|Hitem:153900::::::::110:66::::::|h[Sunsoul Chestguard]|h|r", -- [5]
-					"|cff1eff00|Hitem:153912::::::::110:66::::::|h[Sunsoul Waistband]|h|r", -- [6]
-					"|cff1eff00|Hitem:153905::::::::110:66::::::|h[Sunsoul Legguards]|h|r", -- [7]
-					"|cff1eff00|Hitem:153902::::::::110:66::::::|h[Sunsoul Greaves]|h|r", -- [8]
-					"|cff1eff00|Hitem:153913::::::::110:66::::::|h[Sunsoul Armguards]|h|r", -- [9]
-					"|cff1eff00|Hitem:153903::::::::110:66::::::|h[Sunsoul Handguards]|h|r", -- [10]
-					"|cff1eff00|Hitem:153908::::::::110:66::::::|h[Sunsoul Ring of Stoicism]|h|r", -- [11]
-					"|cff1eff00|Hitem:153909::::::::110:66::::::|h[Sunsoul Band of Stoicism]|h|r", -- [12]
-					"|cff1eff00|Hitem:153907::::::::110:66::::::|h[Sunsoul Defender Idol]|h|r", -- [13]
-					"|cff1eff00|Hitem:153910::::::::110:66::::::|h[Sunsoul Defender Stone]|h|r", -- [14]
-					"|cff1eff00|Hitem:153901::::::::110:66::::::|h[Sunsoul Cloak of Stoicism]|h|r", -- [15]
-					"|cffe6cc80|Hitem:128867::::::::110:66:256:::291:::|h[Oathseeker]|h|r", -- [16]
-					"|cffe6cc80|Hitem:128866::156816:156817:156803::::110:66:16777472::1:736:291:1:::|h[Truthguard]|h|r", -- [17]
 				},
 			},
 		},
@@ -287,13 +287,13 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1712] = {
+					[1530] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
 						[15] = false,
 					},
-					[1530] = {
+					[1712] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -317,13 +317,13 @@ AskMrRobotDb3 = {
 					},
 					[1220] = {
 					},
+					[646] = {
+					},
 					[1648] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
 						[15] = false,
-					},
-					[646] = {
 					},
 					[1712] = {
 						[14] = false,
@@ -331,13 +331,13 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1064] = {
-					},
-					[1158] = {
-					},
 					[1469] = {
 					},
 					[1503] = {
+					},
+					[1064] = {
+					},
+					[1098] = {
 					},
 					[870] = {
 					},
@@ -353,7 +353,7 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1098] = {
+					[1158] = {
 					},
 					[1520] = {
 						[14] = false,
@@ -406,17 +406,17 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1530] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
+					[1500] = {
 					},
 					[870] = {
 					},
 					[33] = {
 					},
-					[1500] = {
+					[1530] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
 					},
 				},
 			},
@@ -432,9 +432,13 @@ AskMrRobotDb3 = {
 					},
 					[1220] = {
 					},
-					[33] = {
-					},
 					[1676] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
+					},
+					[1648] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -452,11 +456,7 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1648] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
+					[33] = {
 					},
 				},
 			},
