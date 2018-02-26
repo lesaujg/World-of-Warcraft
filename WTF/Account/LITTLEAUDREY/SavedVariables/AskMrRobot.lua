@@ -2,33 +2,8 @@
 AskMrRobotDb3 = {
 	["char"] = {
 		["Torinara - Sisters of Elune"] = {
-			["Logging"] = {
-				["LastDiff"] = 0,
-				["LastZone"] = "Pandaria",
-			},
 			["Talents"] = {
 				[2] = "3212111",
-			},
-			["Equipped"] = {
-				[2] = {
-					"|cffa335ee|Hitem:152765::::::::110:263:::4:1712:3629:1472:3528:::|h[Oronaar Disciple's Coif of the Harmonious]|h|r", -- [1]
-					"|cffa335ee|Hitem:143908::::::::110:263:512:1:1:3628:110:::|h[Choker of the Pure Heart]|h|r", -- [2]
-					"|cffa335ee|Hitem:152769::::::::110:263:::4:1698:3629:1472:3528:::|h[Oronaar Disciple's Spaulders of the Feverflare]|h|r", -- [3]
-					nil, -- [4]
-					"|cffa335ee|Hitem:128900::::::::110:263::13:5:669:600:689:1684:3408:::|h[Gravenscale Hauberk of the Peerless]|h|r", -- [5]
-					"|cffa335ee|Hitem:152767::::::::110:263:::5:1688:3629:41:1472:3528:::|h[Oronaar Disciple's Girdle of the Peerless]|h|r", -- [6]
-					"|cffa335ee|Hitem:152764::::::::110:263:::4:1699:3629:1472:3528:::|h[Oronaar Disciple's Legguards of the Feverflare]|h|r", -- [7]
-					"|cffa335ee|Hitem:152766::::::::110:263:::4:1713:3629:1472:3528:::|h[Oronaar Disciple's Boots of the Harmonious]|h|r", -- [8]
-					"|cffa335ee|Hitem:152762::::::::110:263:::4:1686:3629:1472:3528:::|h[Oronaar Disciple's Bracers of the Peerless]|h|r", -- [9]
-					"|cffa335ee|Hitem:152763::::::::110:263:::4:1698:3629:1472:3528:::|h[Oronaar Disciple's Gloves of the Feverflare]|h|r", -- [10]
-					"|cffa335ee|Hitem:130231::::::::110:263::13:4:3370:669:601:689:::|h[Dawnlight Band of the Fireflash]|h|r", -- [11]
-					"|cffa335ee|Hitem:130230::::::::110:263::13:4:3366:669:601:689:::|h[Maelstrom Band of the Aurora]|h|r", -- [12]
-					"|cffa335ee|Hitem:134203::::::::110:263::27:4:3394:603:1537:3528:::|h[Three-Toed Rabbit Foot]|h|r", -- [13]
-					"|cffa335ee|Hitem:147275::::::::110:263:::4:607:3574:1642:3528:::|h[Beguiler's Talisman]|h|r", -- [14]
-					"|cffa335ee|Hitem:127033::::::::110:263::13:5:669:601:689:3357:3408:::|h[Imbued Silkweave Shade of the Feverflare]|h|r", -- [15]
-					"|cffe6cc80|Hitem:128819::136686:141288:143688::::110:263:16777472:9:1:745:117:1::3:1812:1442:1809:3:3394:1532:3528|h[Doomhammer]|h|r", -- [16]
-					"|cffe6cc80|Hitem:128873::::::::110:263:256:::117:::|h[Fury of the Stonemother]|h|r", -- [17]
-				},
 			},
 			["Artifacts"] = {
 				[2] = {
@@ -70,87 +45,40 @@ AskMrRobotDb3 = {
 					},
 				},
 			},
-		},
-		["Allala - Sisters of Elune"] = {
-			["Talents"] = {
-				[3] = "1212121",
-				[2] = "2312131",
-			},
-			["Artifacts"] = {
-				[2] = {
-					["Relics"] = {
-						"|cff1eff00|Hitem:156816::::::::110:66::::::|h[Hatecoil Badge of Glory]|h|r", -- [1]
-						"|cff1eff00|Hitem:156817::::::::110:66::::::|h[Stonedark Idol]|h|r", -- [2]
-						"|cff1eff00|Hitem:156803::::::::110:66::::::|h[Seawitch's Foci]|h|r", -- [3]
-					},
-					["Powers"] = {
-						[1120] = 1,
-						[1121] = 3,
-						[1122] = 3,
-						[1123] = 3,
-						[1124] = 3,
-						[1125] = 3,
-						[1343] = 1,
-						[1127] = 3,
-						[1128] = 3,
-						[1129] = 3,
-						[1378] = 1,
-						[1131] = 1,
-						[1132] = 1,
-						[1133] = 1,
-						[1134] = 1,
-						[1135] = 1,
-						[1126] = 3,
-						[1130] = 1,
-					},
-					["Crucible"] = {
-						["Equipped"] = {
-						},
-						["Inventory"] = {
-						},
-					},
-				},
-				[3] = {
-					["Relics"] = {
-						"", -- [1]
-						"", -- [2]
-						"", -- [3]
-					},
-					["Powers"] = {
-						[43] = 4,
-						[1118] = 1,
-						[350] = 1,
-						[40] = 1,
-						[41] = 4,
-						[42] = 4,
-						[351] = 1,
-						[44] = 4,
-						[1561] = 4,
-						[353] = 1,
-						[47] = 4,
-						[1562] = 1,
-						[49] = 1,
-						[50] = 4,
-						[51] = 4,
-						[52] = 4,
-						[53] = 4,
-						[54] = 1,
-						[352] = 1,
-						[1563] = 1,
-						[1647] = 1,
-						[1275] = 1,
-					},
-					["Crucible"] = {
-						["Equipped"] = {
-						},
-						["Inventory"] = {
-						},
-					},
-				},
-			},
 			["Logging"] = {
 				["LastDiff"] = 0,
 				["LastZone"] = "Mogu Island Daily Area",
+			},
+			["Equipped"] = {
+				[2] = {
+					"|cffa335ee|Hitem:152765::::::::110:263:::4:1712:3629:1472:3528:::|h[Oronaar Disciple's Coif of the Harmonious]|h|r", -- [1]
+					"|cffa335ee|Hitem:143908::::::::110:263:512:1:1:3628:110:::|h[Choker of the Pure Heart]|h|r", -- [2]
+					"|cffa335ee|Hitem:152769::::::::110:263:::4:1698:3629:1472:3528:::|h[Oronaar Disciple's Spaulders of the Feverflare]|h|r", -- [3]
+					nil, -- [4]
+					"|cffa335ee|Hitem:128900::::::::110:263::13:5:669:600:689:1684:3408:::|h[Gravenscale Hauberk of the Peerless]|h|r", -- [5]
+					"|cffa335ee|Hitem:152767::::::::110:263:::5:1688:3629:41:1472:3528:::|h[Oronaar Disciple's Girdle of the Peerless]|h|r", -- [6]
+					"|cffa335ee|Hitem:152764::::::::110:263:::4:1699:3629:1472:3528:::|h[Oronaar Disciple's Legguards of the Feverflare]|h|r", -- [7]
+					"|cffa335ee|Hitem:152766::::::::110:263:::4:1713:3629:1472:3528:::|h[Oronaar Disciple's Boots of the Harmonious]|h|r", -- [8]
+					"|cffa335ee|Hitem:152762::::::::110:263:::4:1686:3629:1472:3528:::|h[Oronaar Disciple's Bracers of the Peerless]|h|r", -- [9]
+					"|cffa335ee|Hitem:152763::::::::110:263:::4:1698:3629:1472:3528:::|h[Oronaar Disciple's Gloves of the Feverflare]|h|r", -- [10]
+					"|cffa335ee|Hitem:130231::::::::110:263::13:4:3370:669:601:689:::|h[Dawnlight Band of the Fireflash]|h|r", -- [11]
+					"|cffa335ee|Hitem:130230::::::::110:263::13:4:3366:669:601:689:::|h[Maelstrom Band of the Aurora]|h|r", -- [12]
+					"|cffa335ee|Hitem:134203::::::::110:263::27:4:3394:603:1537:3528:::|h[Three-Toed Rabbit Foot]|h|r", -- [13]
+					"|cffa335ee|Hitem:147275::::::::110:263:::4:607:3574:1642:3528:::|h[Beguiler's Talisman]|h|r", -- [14]
+					"|cffa335ee|Hitem:127033::::::::110:263::13:5:669:601:689:3357:3408:::|h[Imbued Silkweave Shade of the Feverflare]|h|r", -- [15]
+					"|cffe6cc80|Hitem:128819::136686:141288:143688::::110:263:16777472:9:1:745:117:1::3:1812:1442:1809:3:3394:1532:3528|h[Doomhammer]|h|r", -- [16]
+					"|cffe6cc80|Hitem:128873::::::::110:263:256:::117:::|h[Fury of the Stonemother]|h|r", -- [17]
+				},
+			},
+		},
+		["Allala - Sisters of Elune"] = {
+			["Logging"] = {
+				["LastDiff"] = 0,
+				["LastZone"] = "Mogu Island Daily Area",
+			},
+			["Talents"] = {
+				[3] = "1212121",
+				[2] = "2312131",
 			},
 			["Equipped"] = {
 				[3] = {
@@ -189,6 +117,78 @@ AskMrRobotDb3 = {
 					"|cff1eff00|Hitem:153901::::::::110:66::::::|h[Sunsoul Cloak of Stoicism]|h|r", -- [15]
 					"|cffe6cc80|Hitem:128867::::::::110:66:256:::291:::|h[Oathseeker]|h|r", -- [16]
 					"|cffe6cc80|Hitem:128866::156816:156817:156803::::110:66:16777472::1:736:291:1:::|h[Truthguard]|h|r", -- [17]
+				},
+			},
+			["Artifacts"] = {
+				[2] = {
+					["Relics"] = {
+						"|cff1eff00|Hitem:156816::::::::110:66::::::|h[Hatecoil Badge of Glory]|h|r", -- [1]
+						"|cff1eff00|Hitem:156817::::::::110:66::::::|h[Stonedark Idol]|h|r", -- [2]
+						"|cff1eff00|Hitem:156803::::::::110:66::::::|h[Seawitch's Foci]|h|r", -- [3]
+					},
+					["Powers"] = {
+						[1120] = 1,
+						[1121] = 3,
+						[1122] = 3,
+						[1123] = 3,
+						[1124] = 3,
+						[1125] = 3,
+						[1343] = 1,
+						[1127] = 3,
+						[1128] = 3,
+						[1129] = 3,
+						[1378] = 1,
+						[1131] = 1,
+						[1132] = 1,
+						[1133] = 1,
+						[1134] = 1,
+						[1135] = 1,
+						[1130] = 1,
+						[1126] = 3,
+					},
+					["Crucible"] = {
+						["Equipped"] = {
+						},
+						["Inventory"] = {
+						},
+					},
+				},
+				[3] = {
+					["Relics"] = {
+						"", -- [1]
+						"", -- [2]
+						"", -- [3]
+					},
+					["Powers"] = {
+						[40] = 1,
+						[1118] = 1,
+						[350] = 1,
+						[1275] = 1,
+						[41] = 4,
+						[42] = 4,
+						[351] = 1,
+						[44] = 4,
+						[1647] = 1,
+						[49] = 1,
+						[47] = 4,
+						[1562] = 1,
+						[1563] = 1,
+						[50] = 4,
+						[51] = 4,
+						[52] = 4,
+						[53] = 4,
+						[54] = 1,
+						[352] = 1,
+						[353] = 1,
+						[1561] = 4,
+						[43] = 4,
+					},
+					["Crucible"] = {
+						["Equipped"] = {
+						},
+						["Inventory"] = {
+						},
+					},
 				},
 			},
 		},
@@ -246,11 +246,11 @@ AskMrRobotDb3 = {
 						[875] = 4,
 						[876] = 1,
 						[877] = 1,
-						[1518] = 1,
+						[870] = 4,
 						[878] = 1,
 						[869] = 4,
 						[879] = 1,
-						[870] = 4,
+						[1518] = 1,
 					},
 					["Crucible"] = {
 						["Equipped"] = {
@@ -262,14 +262,14 @@ AskMrRobotDb3 = {
 			},
 		},
 	},
+	["global"] = {
+		["Region"] = "US",
+	},
 	["profileKeys"] = {
 		["Noeraa - Sisters of Elune"] = "Noeraa - Sisters of Elune",
 		["Torinara - Sisters of Elune"] = "Torinara - Sisters of Elune",
 		["Allala - Sisters of Elune"] = "Allala - Sisters of Elune",
 		["Aloraal - Sisters of Elune"] = "Aloraal - Sisters of Elune",
-	},
-	["global"] = {
-		["Region"] = "US",
 	},
 	["profiles"] = {
 		["Noeraa - Sisters of Elune"] = {
@@ -287,12 +287,6 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1648] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
 					[1530] = {
 						[14] = false,
 						[16] = false,
@@ -300,6 +294,12 @@ AskMrRobotDb3 = {
 						[15] = false,
 					},
 					[1712] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
+					},
+					[1648] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -317,9 +317,13 @@ AskMrRobotDb3 = {
 					},
 					[1220] = {
 					},
-					[1572] = {
-					},
 					[646] = {
+					},
+					[1648] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
 					},
 					[1712] = {
 						[14] = false,
@@ -327,25 +331,21 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1520] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
+					[1469] = {
 					},
 					[1158] = {
 					},
-					[1469] = {
+					[1064] = {
 					},
 					[1503] = {
+					},
+					[870] = {
 					},
 					[1676] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
 						[15] = false,
-					},
-					[870] = {
 					},
 					[1530] = {
 						[14] = false,
@@ -355,13 +355,13 @@ AskMrRobotDb3 = {
 					},
 					[1098] = {
 					},
-					[1064] = {
-					},
-					[1648] = {
+					[1520] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
 						[15] = false,
+					},
+					[1572] = {
 					},
 				},
 			},
@@ -394,7 +394,7 @@ AskMrRobotDb3 = {
 					},
 					[1098] = {
 					},
-					[1530] = {
+					[1520] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -408,11 +408,11 @@ AskMrRobotDb3 = {
 					},
 					[1500] = {
 					},
-					[33] = {
-					},
 					[870] = {
 					},
-					[1520] = {
+					[33] = {
+					},
+					[1530] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -440,13 +440,13 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1712] = {
+					[1530] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
 						[15] = false,
 					},
-					[1530] = {
+					[1712] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,

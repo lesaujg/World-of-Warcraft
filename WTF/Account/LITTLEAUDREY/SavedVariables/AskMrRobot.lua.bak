@@ -47,7 +47,7 @@ AskMrRobotDb3 = {
 			},
 			["Logging"] = {
 				["LastDiff"] = 0,
-				["LastZone"] = "Pandaria",
+				["LastZone"] = "Mogu Island Daily Area",
 			},
 			["Equipped"] = {
 				[2] = {
@@ -143,8 +143,8 @@ AskMrRobotDb3 = {
 						[1133] = 1,
 						[1134] = 1,
 						[1135] = 1,
-						[1130] = 1,
 						[1126] = 3,
+						[1130] = 1,
 					},
 					["Crucible"] = {
 						["Equipped"] = {
@@ -160,28 +160,28 @@ AskMrRobotDb3 = {
 						"", -- [3]
 					},
 					["Powers"] = {
-						[40] = 1,
+						[351] = 1,
 						[1118] = 1,
 						[350] = 1,
 						[1275] = 1,
 						[41] = 4,
 						[42] = 4,
-						[351] = 1,
+						[43] = 4,
 						[44] = 4,
-						[1647] = 1,
-						[49] = 1,
 						[47] = 4,
+						[51] = 4,
+						[1561] = 4,
 						[1562] = 1,
 						[1563] = 1,
 						[50] = 4,
-						[51] = 4,
+						[353] = 1,
 						[52] = 4,
 						[53] = 4,
 						[54] = 1,
 						[352] = 1,
-						[353] = 1,
-						[1561] = 4,
-						[43] = 4,
+						[49] = 1,
+						[1647] = 1,
+						[40] = 1,
 					},
 					["Crucible"] = {
 						["Equipped"] = {
@@ -246,11 +246,11 @@ AskMrRobotDb3 = {
 						[875] = 4,
 						[876] = 1,
 						[877] = 1,
-						[870] = 4,
+						[1518] = 1,
 						[878] = 1,
 						[869] = 4,
 						[879] = 1,
-						[1518] = 1,
+						[870] = 4,
 					},
 					["Crucible"] = {
 						["Equipped"] = {
@@ -262,14 +262,14 @@ AskMrRobotDb3 = {
 			},
 		},
 	},
-	["global"] = {
-		["Region"] = "US",
-	},
 	["profileKeys"] = {
 		["Noeraa - Sisters of Elune"] = "Noeraa - Sisters of Elune",
 		["Torinara - Sisters of Elune"] = "Torinara - Sisters of Elune",
 		["Allala - Sisters of Elune"] = "Allala - Sisters of Elune",
 		["Aloraal - Sisters of Elune"] = "Aloraal - Sisters of Elune",
+	},
+	["global"] = {
+		["Region"] = "US",
 	},
 	["profiles"] = {
 		["Noeraa - Sisters of Elune"] = {
@@ -287,7 +287,7 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1530] = {
+					[1648] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -299,7 +299,7 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1648] = {
+					[1530] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -317,7 +317,7 @@ AskMrRobotDb3 = {
 					},
 					[1220] = {
 					},
-					[646] = {
+					[1572] = {
 					},
 					[1648] = {
 						[14] = false,
@@ -331,7 +331,11 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1469] = {
+					[1520] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
 					},
 					[1503] = {
 					},
@@ -339,13 +343,13 @@ AskMrRobotDb3 = {
 					},
 					[1098] = {
 					},
-					[870] = {
-					},
 					[1676] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
 						[15] = false,
+					},
+					[870] = {
 					},
 					[1530] = {
 						[14] = false,
@@ -355,13 +359,9 @@ AskMrRobotDb3 = {
 					},
 					[1158] = {
 					},
-					[1520] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
+					[1469] = {
 					},
-					[1572] = {
+					[646] = {
 					},
 				},
 			},
@@ -394,11 +394,7 @@ AskMrRobotDb3 = {
 					},
 					[1098] = {
 					},
-					[1520] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
+					[1500] = {
 					},
 					[1676] = {
 						[14] = false,
@@ -406,13 +402,17 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1500] = {
-					},
-					[870] = {
+					[1530] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
 					},
 					[33] = {
 					},
-					[1530] = {
+					[870] = {
+					},
+					[1520] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -444,13 +444,13 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1530] = {
+					[1712] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
 						[15] = false,
 					},
-					[1712] = {
+					[1530] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,

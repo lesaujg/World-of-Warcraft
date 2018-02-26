@@ -54,8 +54,8 @@ AddOnSkinsDB = {
 			["Blizzard_WorldStateCaptureBar"] = true,
 			["TalentSetManager"] = true,
 			["TomeOfTeleportation"] = true,
-			["Blizzard_Transmogrify"] = true,
 			["WeakAuras"] = true,
+			["Blizzard_Transmogrify"] = true,
 			["MasterPlan"] = true,
 		},
 		["Mandelbrot - Sisters of Elune"] = {
