@@ -1,8 +1,24 @@
 
 TradeSkillMaster_ShoppingDB = {
-	["g@ @sniperCustomPrice"] = "0c",
-	["g@ @maxDeSearchPercent"] = 1,
-	["g@ @postUndercut"] = "1c",
+	["_currentProfile"] = {
+		["Sanjuri - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
+		["Guldahka - Turalyon"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+		["Torinar - Sisters of Elune"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Orig - Sisters of Elune"] = "Default",
+		["Mandelbrot - Sisters of Elune"] = "Default",
+		["Edaka - Sisters of Elune"] = "Default",
+		["Palani - Sisters of Elune"] = "Default",
+		["Belrath - Sisters of Elune"] = "Default",
+		["Leanara - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
+	},
+	["_version"] = 3,
+	["g@ @sniperVendorPrice"] = true,
 	["g@ @postBidPercent"] = 0.95,
 	["_scopeKeys"] = {
 		["char"] = {
@@ -22,154 +38,157 @@ TradeSkillMaster_ShoppingDB = {
 			"Edaka - Sisters of Elune", -- [14]
 			"Palani - Sisters of Elune", -- [15]
 		},
-		["realm"] = {
-			"Sisters of Elune", -- [1]
-			"Turalyon", -- [2]
+		["factionrealm"] = {
+			"Alliance - Sisters of Elune", -- [1]
+			"Horde - Turalyon", -- [2]
 		},
 		["profile"] = {
 			"Default", -- [1]
 		},
-		["factionrealm"] = {
-			"Alliance - Sisters of Elune", -- [1]
-			"Horde - Turalyon", -- [2]
+		["realm"] = {
+			"Sisters of Elune", -- [1]
+			"Turalyon", -- [2]
 		},
 	},
 	["g@ @helpPlatesShown"] = {
 		["auction"] = true,
 	},
-	["g@ @sniperVendorPrice"] = true,
-	["_hash"] = 1861581,
+	["g@ @postUndercut"] = "1c",
+	["g@ @minDeSearchLvl"] = 1,
+	["g@ @maxDeSearchLvl"] = 735,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1519867257,
+			["name"] = "Maelstrom Crystal/exact",
+			["filter"] = "Maelstrom Crystal/exact",
+		}, -- [1]
 		{
 			["lastSearch"] = 1519616640,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [1]
+		}, -- [2]
 		{
 			["lastSearch"] = 1519533461,
 			["name"] = "Nightborne Delicacy Platter",
 			["filter"] = "Nightborne Delicacy Platter",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [2]
+		}, -- [3]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1518890390,
 			["name"] = "frozen orb",
 			["filter"] = "frozen orb",
-		}, -- [3]
+		}, -- [4]
 		{
 			["lastSearch"] = 1518481978,
 			["name"] = "Flask of the Seventh Demon",
 			["filter"] = "Flask of the Seventh Demon",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [4]
+		}, -- [5]
 		{
 			["lastSearch"] = 1517688066,
 			["name"] = "Obliterum/exact",
 			["filter"] = "Obliterum/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [5]
+		}, -- [6]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1516043610,
 			["name"] = "deadly deep",
 			["filter"] = "deadly deep",
-		}, -- [6]
+		}, -- [7]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1515290313,
 			["name"] = "empyrium",
 			["filter"] = "empyrium",
-		}, -- [7]
+		}, -- [8]
 		{
 			["lastSearch"] = 1515111702,
 			["name"] = "potion of Prolonged Power",
 			["filter"] = "potion of Prolonged Power",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [8]
+		}, -- [9]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1514990610,
 			["name"] = "void crystal",
 			["filter"] = "void crystal",
-		}, -- [9]
+		}, -- [10]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1514946565,
 			["name"] = "forzen orb",
 			["filter"] = "forzen orb",
-		}, -- [10]
+		}, -- [11]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1514946514,
 			["name"] = "Felwort/exact",
 			["filter"] = "Felwort/exact",
-		}, -- [11]
+		}, -- [12]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1513307191,
 			["name"] = "Maelstrom Crystal",
 			["filter"] = "Maelstrom Crystal",
-		}, -- [12]
+		}, -- [13]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1510528604,
 			["name"] = "Essence of Water/exact",
 			["filter"] = "Essence of Water/exact",
-		}, -- [13]
+		}, -- [14]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1510528526,
 			["name"] = "Eternal Water/x3",
 			["filter"] = "Eternal Water/x3",
-		}, -- [14]
+		}, -- [15]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1509842142,
 			["name"] = "Vermilion Onyx",
 			["filter"] = "Vermilion Onyx",
-		}, -- [15]
+		}, -- [16]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1509842123,
 			["name"] = "wild jade",
 			["filter"] = "wild jade",
-		}, -- [16]
+		}, -- [17]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1507467003,
 			["name"] = "Maelstrom Crystal/ignorede",
 			["filter"] = "Maelstrom Crystal/ignorede",
-		}, -- [17]
+		}, -- [18]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1507466966,
 			["name"] = "Sha Crystal/ignorede",
 			["filter"] = "Sha Crystal/ignorede",
-		}, -- [18]
+		}, -- [19]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1507259727,
 			["name"] = "Abyss Crystal/ignorede",
 			["filter"] = "Abyss Crystal/ignorede",
-		}, -- [19]
+		}, -- [20]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1507259709,
 			["name"] = "River's Heart/ignorede",
 			["filter"] = "River's Heart/ignorede",
-		}, -- [20]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1506886214,
-			["name"] = "Maelstrom Crystal/exact",
-			["filter"] = "Maelstrom Crystal/exact",
 		}, -- [21]
 		{
 			["searchMode"] = "normal",
@@ -697,27 +716,8 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "dominion",
 		}, -- [108]
 	},
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
-	["g@ @marketValueSource"] = "dbmarket",
-	["g@ @maxDeSearchLvl"] = 735,
-	["g@ @minDeSearchLvl"] = 1,
+	["_hash"] = 1861581,
 	["g@ @normalPostPrice"] = "150% dbmarket",
-	["_version"] = 3,
-	["_currentProfile"] = {
-		["Sanjuri - Sisters of Elune"] = "Default",
-		["Galinar - Sisters of Elune"] = "Default",
-		["Guldahka - Turalyon"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Orig - Sisters of Elune"] = "Default",
-		["Mandelbrot - Sisters of Elune"] = "Default",
-		["Edaka - Sisters of Elune"] = "Default",
-		["Palani - Sisters of Elune"] = "Default",
-		["Belrath - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
-		["Leanara - Sisters of Elune"] = "Default",
-		["Torinar - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-	},
+	["g@ @maxDeSearchPercent"] = 1,
+	["g@ @sniperCustomPrice"] = "0c",
 }
