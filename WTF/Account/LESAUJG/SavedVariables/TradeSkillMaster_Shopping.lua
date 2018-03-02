@@ -60,17 +60,17 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
 		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1519867257,
-			["name"] = "Maelstrom Crystal/exact",
-			["filter"] = "Maelstrom Crystal/exact",
-		}, -- [1]
-		{
-			["lastSearch"] = 1519616640,
+			["lastSearch"] = 1519954319,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
+		}, -- [1]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1519867257,
+			["name"] = "Maelstrom Crystal/exact",
+			["filter"] = "Maelstrom Crystal/exact",
 		}, -- [2]
 		{
 			["lastSearch"] = 1519533461,

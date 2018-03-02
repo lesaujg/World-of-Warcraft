@@ -18,21 +18,21 @@ AddOnSkinsDB = {
 	["profiles"] = {
 		["Galinar - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
-			["Blizzard_Transmogrify"] = true,
 			["TalentSetManager"] = true,
-			["WeakAuras"] = true,
-			["Details"] = true,
 			["TomeOfTeleportation"] = true,
+			["Details"] = true,
+			["Blizzard_Transmogrify"] = true,
+			["WeakAuras"] = true,
 			["MasterPlan"] = true,
 		},
 		["Clothgar - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
+			["Blizzard_Transmogrify"] = true,
 			["TalentSetManager"] = true,
 			["WeakAuras"] = true,
-			["Details"] = true,
-			["Bagnon"] = true,
-			["Blizzard_Transmogrify"] = true,
 			["TomeOfTeleportation"] = true,
+			["Bagnon"] = true,
+			["Details"] = true,
 		},
 		["Torinar - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
