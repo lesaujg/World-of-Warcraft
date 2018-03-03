@@ -34,13 +34,6 @@ X: 0
 Y: 0
 W: 700
 H: 450
-Frame: TSMCraftingGatherFrame
-FrameLevel: 0
-Anchor: BOTTOMRIGHT
-X: -26
-Y: 158
-W: 365
-H: 400
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: TOPRIGHT
