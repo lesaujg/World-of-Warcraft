@@ -4,7 +4,6 @@ PawnOptions = {
 	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
 	["AutoSelectScales"] = false,
 	["UpgradeTracking"] = false,
-	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128808] = {
 			["Relics"] = {
@@ -26,7 +25,7 @@ PawnOptions = {
 		[128861] = {
 			["Relics"] = {
 				{
-					["ItemLevel"] = 67,
+					["ItemLevel"] = 70,
 					["Type"] = "Wind",
 				}, -- [1]
 				{
@@ -58,6 +57,7 @@ PawnOptions = {
 			["Name"] = "Thas'dorah, Legacy of the Windrunners",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",
