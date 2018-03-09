@@ -27,7 +27,7 @@ TradeSkillMaster_MailingDB = {
 	["c@Ghiaccioli - Sisters of Elune@goldMailTarget"] = "",
 	["g@ @showReloadBtn"] = true,
 	["c@Herbinator - Sisters of Elune@goldMailTarget"] = "",
-	["f@Alliance - Sisters of Elune@deMailTarget"] = "",
+	["c@Clothgar - Sisters of Elune@goldKeepAmount"] = 1000000,
 	["_scopeKeys"] = {
 		["char"] = {
 			"Clothgar - Sisters of Elune", -- [1]
@@ -59,11 +59,11 @@ TradeSkillMaster_MailingDB = {
 		},
 	},
 	["c@Torinar - Sisters of Elune@goldMailTarget"] = "",
-	["c@Clothgar - Sisters of Elune@goldKeepAmount"] = 1000000,
+	["f@Alliance - Sisters of Elune@deMailTarget"] = "",
 	["c@Herbinator - Sisters of Elune@goldKeepAmount"] = 1000000,
 	["c@Palani - Sisters of Elune@goldMailTarget"] = "",
 	["c@Mandelbrot - Sisters of Elune@goldMailTarget"] = "",
-	["g@ @inboxMessages"] = true,
+	["c@Uldaris - Sisters of Elune@goldKeepAmount"] = 1000000,
 	["c@Ghiaccioli - Sisters of Elune@goldKeepAmount"] = 1000000,
 	["g@ @defaultMailTab"] = true,
 	["g@ @keepMailSpace"] = 0,
@@ -95,7 +95,7 @@ TradeSkillMaster_MailingDB = {
 	["g@ @openMailSound"] = "TSM_NO_SOUND",
 	["c@Galinar - Sisters of Elune@goldMailTarget"] = "",
 	["g@ @sendMessages"] = true,
-	["c@Uldaris - Sisters of Elune@goldKeepAmount"] = 1000000,
+	["g@ @inboxMessages"] = true,
 	["c@Uldaris - Sisters of Elune@goldMailTarget"] = "",
 	["c@Edaka - Sisters of Elune@goldKeepAmount"] = 1000000,
 	["c@Belrath - Sisters of Elune@goldMailTarget"] = "",

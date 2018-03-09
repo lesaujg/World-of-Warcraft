@@ -34,10 +34,10 @@ AddOnSkinsDB = {
 		},
 		["Bracnar - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
-			["Blizzard_Transmogrify"] = true,
 			["TalentSetManager"] = true,
 			["Details"] = true,
 			["TomeOfTeleportation"] = true,
+			["Blizzard_Transmogrify"] = true,
 			["Bagnon"] = true,
 		},
 		["Ghiaccioli - Sisters of Elune"] = {
@@ -76,10 +76,10 @@ AddOnSkinsDB = {
 		},
 		["Leanara - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
-			["TalentSetManager"] = true,
-			["TomeOfTeleportation"] = true,
-			["WeakAuras"] = true,
 			["Blizzard_Transmogrify"] = true,
+			["TalentSetManager"] = true,
+			["WeakAuras"] = true,
+			["TomeOfTeleportation"] = true,
 			["MasterPlan"] = true,
 		},
 		["Default"] = {

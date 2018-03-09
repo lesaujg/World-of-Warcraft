@@ -89,10 +89,10 @@ AddOnSkinsDB = {
 		},
 		["Leanara - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
-			["Blizzard_Transmogrify"] = true,
 			["TalentSetManager"] = true,
-			["WeakAuras"] = true,
 			["TomeOfTeleportation"] = true,
+			["WeakAuras"] = true,
+			["Blizzard_Transmogrify"] = true,
 			["MasterPlan"] = true,
 		},
 		["Bracnar - Sisters of Elune"] = {
@@ -105,9 +105,9 @@ AddOnSkinsDB = {
 		},
 		["Uldaris - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
+			["Blizzard_Transmogrify"] = true,
 			["TalentSetManager"] = true,
 			["TomeOfTeleportation"] = true,
-			["Blizzard_Transmogrify"] = true,
 			["MasterPlan"] = true,
 		},
 	},
