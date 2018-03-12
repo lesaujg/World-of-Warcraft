@@ -719,6 +719,13 @@ LiteMountDB = {
 			},
 		},
 		["Uldaris - Sisters of Elune"] = {
+			["flagChanges"] = {
+				[783] = {
+					["RUN"] = "+",
+					["SWIM"] = "+",
+					["FLY"] = "+",
+				},
+			},
 			["configVersion"] = 2,
 			["excludedSpells"] = {
 				[135418] = false,
@@ -1382,13 +1389,6 @@ LiteMountDB = {
 				[239767] = false,
 				[259202] = false,
 				[259395] = false,
-			},
-			["flagChanges"] = {
-				[783] = {
-					["RUN"] = "+",
-					["SWIM"] = "+",
-					["FLY"] = "+",
-				},
 			},
 		},
 		["Default"] = {
