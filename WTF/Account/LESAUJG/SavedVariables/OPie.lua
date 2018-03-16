@@ -4,7 +4,7 @@ OneRing_Config = {
 		["Sisters of Elune-Bracnar"] = "default",
 	},
 	["_GameVersion"] = "7.3.5",
-	["_OPieVersion"] = "Vanilla 2 (3.91)",
+	["_OPieVersion"] = "Vanilla 3 (3.91)",
 	["ProfileStorage"] = {
 		["default"] = {
 			["ClickActivation"] = true,

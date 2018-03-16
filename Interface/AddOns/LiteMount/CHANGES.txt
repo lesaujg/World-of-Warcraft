@@ -1,14 +1,18 @@
-tag 2e8659bd9628e09c50ed0fc989d9bc0e48cb898d 7.3.18
+tag 28b161e6ae3ac6c75d4aaec481a0c6c16166f70c 7.3.19
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Thu Feb 15 17:16:16 2018 +1100
+Date:	Mon Mar 12 21:26:10 2018 +1100
 
-Tagging 7.3.18 for release.
+Maybe fixed IsFlyableArea()? I hope so or I'm in trouble.
 
-Fix error updating FAVORITES flag if mount journal has not been opened.
-
-commit 1e7aa916df28ebe126c642241e8339fcbc674479
+commit 3b252e5180767152b3e4dd865ab5761bbe6e2763
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Feb 15 16:56:44 2018 +1100
+Date:   Sun Mar 11 15:29:37 2018 +1100
 
-    Package Developer.lua just in case I make a mistake.
+    Update for repaired IsFlyableArea()
+
+commit 05cb19d4918f203a77baa58e4eff85f08022efff
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Sat Feb 24 15:12:09 2018 +1100
+
+    Merge updated deDE localization
 

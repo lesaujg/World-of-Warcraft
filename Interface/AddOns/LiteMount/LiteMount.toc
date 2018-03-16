@@ -1,6 +1,6 @@
 ## Interface: 70300
 ## Title: LiteMount
-## Version: 7.3.18
+## Version: 7.3.19
 ## Author: Xodiv-Nagrand
 ## Email: mib@post.com
 ## OptionalDependencies: LibDebug

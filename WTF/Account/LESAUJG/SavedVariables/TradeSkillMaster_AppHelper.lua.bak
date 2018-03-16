@@ -10,25 +10,25 @@ TradeSkillMaster_AppHelperDB = {
 	["region"] = "US",
 	["shoppingMaxPrices"] = {
 		["Default"] = {
-			["Darkmoon Artifact"] = "[[71637,2544881],[71635,2392934],[71951,4670443],[71638,3493285],[71715,2372282],[71636,2173648],[71952,3986860],[71953,3129207],[71716,7223318]]",
-			["Enchant mats"] = "[[124442,3370723],[124441,643633],[124440,164219]]",
+			["Darkmoon Artifact"] = "[[71637,2107896],[71635,2063467],[71951,4257725],[71638,2990176],[71715,2074200],[71636,1907586],[71952,3790690],[71953,3114450],[71716,7421575]]",
+			["Enchant mats"] = "[[124442,3277350],[124441,659025],[124440,165625]]",
 			["Craft enchants`x5"] = "[[128552,42001000],[128560,601000],[128544,19001000],[128558,601000],[128561,601000],[128559,601000],[128554,1201000],[128541,19001000],[128551,42001000],[141909,42001000],[141910,42001000],[128542,19001000],[128553,43201000],[141908,43201000],[128543,19001000]]",
-			["Low level enchant mats`Tome mats"] = "[[52329,1651692],[113588,22794098],[52326,2066336],[113262,56322],[21884,26838176],[14344,65470],[52722,804200],[34052,485396],[39354,61108],[37705,226556],[115504,143172],[52328,1307712],[35622,3602780],[7080,4543718],[76139,1954594],[76138,2114860],[76131,2109380],[22574,1180802],[76142,2022442],[52721,1580590],[76140,426996],[12808,583586],[22449,113684],[113264,62604],[7078,300176],[22576,264228],[74248,231934],[22450,54336],[52325,1044752],[22457,8376012],[34053,142050],[76141,343396],[34057,840312],[118472,1125778],[52327,175110],[34055,68844]]",
-			["Craft enchants`x1"] = "[[128535,42526480],[128534,42678430],[128533,40184540]]",
-			["Craft enchants`x2`Relic"] = "[[128536,38000000],[136688,40362212],[136689,27135686],[136687,40362212],[136691,27135686]]",
-			["updateTime"] = 1521075174,
-			["Craft enchants`x2"] = "[[138791,9738564],[138793,3884665],[138789,44661599],[138792,13389406],[138787,40036764],[138795,22960544],[138790,8542320],[138794,7406361]]",
+			["Low level enchant mats`Tome mats"] = "[[52329,1567744],[113588,20234076],[52326,1975198],[113262,58900],[21884,25028520],[14344,59270],[52722,731682],[34052,470004],[39354,61436],[37705,244256],[115504,140792],[52328,1191116],[35622,3419968],[7080,4410660],[76139,1962076],[76138,2092842],[76131,2070200],[22574,1254822],[76142,2023146],[52721,1620278],[76140,340356],[12808,503242],[22449,127824],[113264,59416],[7078,255584],[22576,288348],[74248,193854],[22450,53282],[52325,1037106],[22457,8381230],[34053,113458],[76141,318418],[34057,853422],[118472,1226076],[52327,154518],[34055,61030]]",
+			["Craft enchants`x1"] = "[[128535,42164590],[128534,42688930],[128533,40012480]]",
+			["Craft enchants`x2`Relic"] = "[[128536,38000000],[136688,39768192],[136689,27137786],[136687,39768192],[136691,27137786]]",
+			["updateTime"] = 1521158684,
+			["Craft enchants`x2"] = "[[138791,8851714],[138793,3590129],[138789,45294679],[138792,12546936],[138787,39693424],[138795,23474779],[138790,8362174],[138794,7155467]]",
 			["Craft enchants`x2`BOS"] = "[[128550,34001000],[128549,34001000],[128548,36001000]]",
-			["Cauldron Mats"] = "[[124102,141585],[124104,165251],[124103,174712],[124101,156330],[124105,562533]]",
-			["Enchant mats`Non-DE"] = "[[38682,2167],[124116,552648],[124461,1310442],[124106,567843],[124444,318454]]",
-			["Cooking"] = "[[133680,693876],[124107,41890]]",
+			["Cauldron Mats"] = "[[124102,142953],[124104,161774],[124103,174093],[124101,154861],[124105,563884]]",
+			["Enchant mats`Non-DE"] = "[[38682,2097],[124116,516459],[124461,1263808],[124106,568893],[124444,301248]]",
+			["Cooking"] = "[[133680,658932],[124107,45914]]",
 		},
 	},
 	["wowToken"] = {
 		["US"] = {
-			["key"] = 14694531,
-			["data"] = 182475,
-			["updateTime"] = 1521074795,
+			["key"] = 16304510,
+			["data"] = 182725,
+			["updateTime"] = 1521158276,
 		},
 		["PTR"] = {
 			["data"] = 46899,
@@ -38,65 +38,66 @@ TradeSkillMaster_AppHelperDB = {
 	},
 	["analytics"] = {
 		["data"] = {
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1519866981]", -- [1]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1519867010]", -- [2]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1519867152]", -- [3]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1519867235]", -- [4]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1519954011]", -- [5]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1519954136]", -- [6]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1519954363]", -- [7]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1519955048]", -- [8]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1520043870]", -- [9]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520044045]", -- [10]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1520044126]", -- [11]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520044506]", -- [12]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1520186751]", -- [13]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520186897]", -- [14]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1520187010]", -- [15]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520187240]", -- [16]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1520199840]", -- [17]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520200133]", -- [18]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1520279007]", -- [19]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520279175]", -- [20]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1520279298]", -- [21]
-			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.41\",\"...deSkillMaster_Crafting\\Modules\\TradeSkill_Gather.lua:1019: attempt to concatenate local 'itemName' (a nil value)\",1520279412]", -- [22]
-			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.41\",\"...deSkillMaster_Crafting\\Modules\\TradeSkill_Gather.lua:1019: attempt to concatenate local 'itemName' (a nil value)\",1520279611]", -- [23]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520279628]", -- [24]
-			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.41\",\"...deSkillMaster_Crafting\\Modules\\TradeSkill_Gather.lua:1019: attempt to concatenate local 'itemName' (a nil value)\",1520282775]", -- [25]
-			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.41\",\"...deSkillMaster_Crafting\\Modules\\TradeSkill_Gather.lua:1019: attempt to concatenate local 'itemName' (a nil value)\",1520284860]", -- [26]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1520390044]", -- [27]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520390170]", -- [28]
-			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.41\",\"\",1520390208]", -- [29]
-			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.41\",\"\",1520390210]", -- [30]
-			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.41\",\"\",1520390212]", -- [31]
-			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.41\",\"\",1520390213]", -- [32]
-			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.41\",\"\",1520390214]", -- [33]
-			"[\"TradeSkillMaster\",\"GROUP_REMOVE_ITEMS\",\"v3.6.41\",\"\",1520390216]", -- [34]
-			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.41\",\"\",1520390217]", -- [35]
-			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.41\",\"\",1520390219]", -- [36]
-			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.41\",\"\",1520390220]", -- [37]
-			"[\"TradeSkillMaster\",\"GROUP_DELETE\",\"v3.6.41\",\"\",1520390223]", -- [38]
-			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.41\",\"\",1520390223]", -- [39]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520390230]", -- [40]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1520390278]", -- [41]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520471203]", -- [42]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1520471215]", -- [43]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1520471259]", -- [44]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520471367]", -- [45]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520471586]", -- [46]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1520471993]", -- [47]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1520558874]", -- [48]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520559128]", -- [49]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1520559223]", -- [50]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520560017]", -- [51]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1520802275]", -- [52]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1520802298]", -- [53]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520802475]", -- [54]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1520802590]", -- [55]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520802834]", -- [56]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1521074797]", -- [57]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1521074901]", -- [58]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1519954011]", -- [1]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1519954136]", -- [2]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1519954363]", -- [3]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1519955048]", -- [4]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1520043870]", -- [5]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520044045]", -- [6]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1520044126]", -- [7]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520044506]", -- [8]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1520186751]", -- [9]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520186897]", -- [10]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1520187010]", -- [11]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520187240]", -- [12]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1520199840]", -- [13]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520200133]", -- [14]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1520279007]", -- [15]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520279175]", -- [16]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1520279298]", -- [17]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.41\",\"...deSkillMaster_Crafting\\Modules\\TradeSkill_Gather.lua:1019: attempt to concatenate local 'itemName' (a nil value)\",1520279412]", -- [18]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.41\",\"...deSkillMaster_Crafting\\Modules\\TradeSkill_Gather.lua:1019: attempt to concatenate local 'itemName' (a nil value)\",1520279611]", -- [19]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520279628]", -- [20]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.41\",\"...deSkillMaster_Crafting\\Modules\\TradeSkill_Gather.lua:1019: attempt to concatenate local 'itemName' (a nil value)\",1520282775]", -- [21]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.41\",\"...deSkillMaster_Crafting\\Modules\\TradeSkill_Gather.lua:1019: attempt to concatenate local 'itemName' (a nil value)\",1520284860]", -- [22]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1520390044]", -- [23]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520390170]", -- [24]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.41\",\"\",1520390208]", -- [25]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.41\",\"\",1520390210]", -- [26]
+			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.41\",\"\",1520390212]", -- [27]
+			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.41\",\"\",1520390213]", -- [28]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.41\",\"\",1520390214]", -- [29]
+			"[\"TradeSkillMaster\",\"GROUP_REMOVE_ITEMS\",\"v3.6.41\",\"\",1520390216]", -- [30]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.41\",\"\",1520390217]", -- [31]
+			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.41\",\"\",1520390219]", -- [32]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.41\",\"\",1520390220]", -- [33]
+			"[\"TradeSkillMaster\",\"GROUP_DELETE\",\"v3.6.41\",\"\",1520390223]", -- [34]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.41\",\"\",1520390223]", -- [35]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520390230]", -- [36]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1520390278]", -- [37]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520471203]", -- [38]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1520471215]", -- [39]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1520471259]", -- [40]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520471367]", -- [41]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520471586]", -- [42]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1520471993]", -- [43]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1520558874]", -- [44]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520559128]", -- [45]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1520559223]", -- [46]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520560017]", -- [47]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1520802275]", -- [48]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1520802298]", -- [49]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520802475]", -- [50]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1520802590]", -- [51]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1520802834]", -- [52]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1521074797]", -- [53]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1521074901]", -- [54]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1521076189]", -- [55]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1521157664]", -- [56]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1521157783]", -- [57]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1521157866]", -- [58]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1521158258]", -- [59]
 		},
-		["updateTime"] = 1521074901,
+		["updateTime"] = 1521158258,
 	},
 }

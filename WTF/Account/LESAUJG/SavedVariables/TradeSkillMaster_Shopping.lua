@@ -60,7 +60,7 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1521076513,
+			["lastSearch"] = 1521196787,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
