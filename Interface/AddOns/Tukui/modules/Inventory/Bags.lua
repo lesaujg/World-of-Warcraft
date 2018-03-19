@@ -1011,6 +1011,15 @@ function Bags:Enable()
 	function OpenAllBags() ToggleAllBags() end
 	function OpenBackpack() ToggleAllBags() end
 	function ToggleAllBags() self:ToggleBags() end
+	
+	-- Destroy bubbles help boxes
+	for i = 1, 13 do
+		local HelpBox = _G["ContainerFrame"..i.."ExtraBagSlotsHelpBox"]
+
+		if HelpBox then
+			HelpBox:Kill()
+		end
+	end
 
 	-- Register Events for Updates
 	self:RegisterEvent("BAG_UPDATE")
@@ -1028,11 +1037,10 @@ function Bags:Enable()
 
 	if T.WoWBuild >= 25860 then
 		function ManageBackpackTokenFrame() end
-	else
-		ToggleAllBags()
-		ToggleAllBags()
 	end
 
+	ToggleAllBags()
+	ToggleAllBags()
 end
 
 Inventory.Bags = Bags
