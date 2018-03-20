@@ -56,11 +56,11 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @postUndercut"] = "1c",
 	["g@ @minDeSearchLvl"] = 1,
 	["g@ @maxDeSearchLvl"] = 735,
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1521344541,
+			["lastSearch"] = 1521492318,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
@@ -68,21 +68,21 @@ TradeSkillMaster_ShoppingDB = {
 		}, -- [1]
 		{
 			["searchMode"] = "normal",
+			["lastSearch"] = 1521492184,
+			["name"] = "Maelstrom Crystal/exact",
+			["filter"] = "Maelstrom Crystal/exact",
+		}, -- [2]
+		{
+			["searchMode"] = "normal",
 			["lastSearch"] = 1520472160,
 			["name"] = "demonsteel bar",
 			["filter"] = "demonsteel bar",
-		}, -- [2]
+		}, -- [3]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1520472131,
 			["name"] = "Infernal Brimstone/exact",
 			["filter"] = "Infernal Brimstone/exact",
-		}, -- [3]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1519867257,
-			["name"] = "Maelstrom Crystal/exact",
-			["filter"] = "Maelstrom Crystal/exact",
 		}, -- [4]
 		{
 			["lastSearch"] = 1519533461,
@@ -716,7 +716,7 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "dominion",
 		}, -- [108]
 	},
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @normalPostPrice"] = "150% dbmarket",
 	["g@ @maxDeSearchPercent"] = 1,
 	["g@ @sniperCustomPrice"] = "0c",
