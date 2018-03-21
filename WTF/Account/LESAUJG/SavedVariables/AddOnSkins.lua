@@ -27,12 +27,12 @@ AddOnSkinsDB = {
 		},
 		["Clothgar - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
+			["Blizzard_Transmogrify"] = true,
 			["TalentSetManager"] = true,
-			["Details"] = true,
+			["WeakAuras"] = true,
 			["TomeOfTeleportation"] = true,
 			["Bagnon"] = true,
-			["Blizzard_Transmogrify"] = true,
-			["WeakAuras"] = true,
+			["Details"] = true,
 		},
 		["Torinar - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
@@ -97,11 +97,11 @@ AddOnSkinsDB = {
 		},
 		["Bracnar - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
-			["Blizzard_Transmogrify"] = true,
 			["TalentSetManager"] = true,
 			["Details"] = true,
-			["TomeOfTeleportation"] = true,
 			["Bagnon"] = true,
+			["Blizzard_Transmogrify"] = true,
+			["TomeOfTeleportation"] = true,
 		},
 		["Uldaris - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
