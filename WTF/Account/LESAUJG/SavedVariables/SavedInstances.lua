@@ -17,7 +17,7 @@ SavedInstancesDB = {
 			["IL"] = 5.4375,
 			["Zone"] = "Stormwind City",
 			["Show"] = "saved",
-			["DailyResetTime"] = 1521644399,
+			["DailyResetTime"] = 1521730799,
 			["PlayedLevel"] = 3260,
 			["Faction"] = "Alliance",
 			["ILe"] = 3.3125,
@@ -66,19 +66,19 @@ SavedInstancesDB = {
 				[1226] = {
 					["amount"] = 4009,
 				},
-				[1155] = {
-					["totalMax"] = 300,
-					["amount"] = 5,
+				[1275] = {
+					["amount"] = 3,
 				},
 				[1166] = {
 					["amount"] = 225,
 				},
-				[1275] = {
-					["amount"] = 3,
-				},
 				[752] = {
 					["totalMax"] = 20,
 					["amount"] = 1,
+				},
+				[1155] = {
+					["totalMax"] = 300,
+					["amount"] = 5,
 				},
 			},
 			["WeeklyResetTime"] = 1522162799,
@@ -119,9 +119,9 @@ SavedInstancesDB = {
 					["currencyID"] = 752,
 				}, -- [1]
 				{
-					["item"] = "|cffa335ee|Hitem:95152::::::::110:70:4:::465:::|h[Breastplate of the Iguanocolossus]|h|r",
 					["time"] = 1520385361,
 					["name"] = "Oondasta",
+					["item"] = "|cffa335ee|Hitem:95152::::::::110:70:4:::465:::|h[Breastplate of the Iguanocolossus]|h|r",
 					["currencyID"] = 752,
 				}, -- [2]
 				{
@@ -155,9 +155,9 @@ SavedInstancesDB = {
 					["currencyID"] = 752,
 				}, -- [7]
 				{
-					["name"] = "Oondasta",
 					["item"] = "|cffa335ee|Hitem:95190::::::::110:70:4:::465:::|h[Waistband of Furious Stomping]|h|r",
 					["time"] = 1518541890,
+					["name"] = "Oondasta",
 					["currencyID"] = 752,
 				}, -- [8]
 				{
@@ -167,27 +167,27 @@ SavedInstancesDB = {
 					["currencyID"] = 697,
 				}, -- [9]
 				{
-					["name"] = "Galleon",
 					["item"] = "|cffa335ee|Hitem:90445::::::::110:70:4:::445:::|h[Firerider Treads]|h|r",
 					["time"] = 1518540396,
+					["name"] = "Galleon",
 					["currencyID"] = 697,
 				}, -- [10]
 				{
-					["time"] = 1517439314,
 					["name"] = "Nalak",
 					["item"] = "|cffa335ee|Hitem:95283::::::::110:70:4:::465:::|h[Lightning Emperor's Legplates]|h|r",
+					["time"] = 1517439314,
 					["currencyID"] = 752,
 				}, -- [11]
 				{
-					["time"] = 1517438683,
 					["name"] = "Oondasta",
 					["item"] = "|cffa335ee|Hitem:95198::::::::110:70:4:::465:::|h[Vulcanodon Gauntlets]|h|r",
+					["time"] = 1517438683,
 					["currencyID"] = 752,
 				}, -- [12]
 				{
-					["name"] = "Sha of Anger",
 					["item"] = "|cffa335ee|Hitem:84831::::::::110:70:4:::453:::|h[Malevolent Gladiator's Ornamented Gloves]|h|r",
 					["time"] = 1517433496,
+					["name"] = "Sha of Anger",
 					["currencyID"] = 697,
 				}, -- [13]
 				{
@@ -197,9 +197,9 @@ SavedInstancesDB = {
 					["currencyID"] = 697,
 				}, -- [14]
 				{
-					["item"] = "|cffa335ee|Hitem:95167::::::::110:70:4:::465:::|h[Ring of King Kangrom]|h|r",
 					["time"] = 1516736518,
 					["name"] = "Oondasta",
+					["item"] = "|cffa335ee|Hitem:95167::::::::110:70:4:::465:::|h[Ring of King Kangrom]|h|r",
 					["currencyID"] = 752,
 				}, -- [15]
 				{
@@ -226,9 +226,9 @@ SavedInstancesDB = {
 					["currencyID"] = 1273,
 				}, -- [19]
 				{
-					["name"] = "Apocron",
 					["item"] = "|cffa335ee|Hitem:147759::::::::110:66::3:3:3572:1482:3528:::|h[Charged Felfire Casing]|h|r",
 					["time"] = 1496117735,
+					["name"] = "Apocron",
 					["currencyID"] = 1273,
 				}, -- [20]
 				{
@@ -247,9 +247,9 @@ SavedInstancesDB = {
 					["currencyID"] = 1273,
 				}, -- [23]
 				{
-					["time"] = 1493478479,
 					["name"] = "Si'vash",
 					["item"] = "|cffa335ee|Hitem:147767::::::::110:70::3:3:3572:1482:3528:::|h[Coral Band of the Abyss]|h|r",
+					["time"] = 1493478479,
 					["currencyID"] = 1273,
 				}, -- [24]
 				{
@@ -261,7 +261,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 137583,
 			["Faction"] = "Alliance",
 			["ILe"] = 871.5,
-			["DailyResetTime"] = 1521644399,
+			["DailyResetTime"] = 1521730799,
 			["Quests"] = {
 			},
 			["Zone"] = "Isle of Thunder",
@@ -281,7 +281,7 @@ SavedInstancesDB = {
 			["LastSeen"] = 1468282953,
 			["IL"] = 48,
 			["Show"] = "saved",
-			["DailyResetTime"] = 1521626407,
+			["DailyResetTime"] = 1521712807,
 			["PlayedLevel"] = 264,
 			["Faction"] = "Horde",
 			["ILe"] = 48,
@@ -415,9 +415,9 @@ SavedInstancesDB = {
 					["currencyID"] = 752,
 				}, -- [2]
 				{
-					["time"] = 1520261416,
 					["name"] = "Sha of Anger",
 					["item"] = "|cffa335ee|Hitem:85308::::::::110:102:4:::445:::|h[Eternal Blossom Gloves]|h|r",
+					["time"] = 1520261416,
 					["currencyID"] = 697,
 				}, -- [3]
 				{
@@ -496,19 +496,19 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 34822,
 			["Faction"] = "Alliance",
 			["ILe"] = 851.4375,
-			["DailyResetTime"] = 1521644399,
+			["DailyResetTime"] = 1521730799,
 			["Quests"] = {
 			},
 			["WeeklyResetTime"] = 1522162799,
 		},
 		["Bracnar - Sisters of Elune"] = {
 			["lastbossyell"] = "Essence of Eonar: Heroic",
-			["IL"] = 952.375,
-			["LastSeen"] = 1521606202,
+			["IL"] = 953.9375,
+			["LastSeen"] = 1521688114,
 			["Order"] = 50,
 			["Class"] = "HUNTER",
 			["Show"] = "always",
-			["WeeklyResetTime"] = 1522162799,
+			["lastbosstime"] = 1521687843,
 			["currency"] = {
 				[241] = {
 					["amount"] = 0,
@@ -521,7 +521,7 @@ SavedInstancesDB = {
 					["amount"] = 17,
 				},
 				[1273] = {
-					["earnedThisWeek"] = 2,
+					["earnedThisWeek"] = 3,
 					["weeklyMax"] = 3,
 					["totalMax"] = 6,
 					["amount"] = 5,
@@ -553,10 +553,12 @@ SavedInstancesDB = {
 					["amount"] = 55211,
 				},
 				[1275] = {
-					["amount"] = 56,
+					["amount"] = 57,
 				},
-				[1501] = {
-					["amount"] = 0,
+				[1129] = {
+					["weeklyMax"] = 3,
+					["totalMax"] = 20,
+					["amount"] = 8,
 				},
 				[515] = {
 					["amount"] = 35,
@@ -574,23 +576,21 @@ SavedInstancesDB = {
 					["totalMax"] = 1000,
 					["amount"] = 10,
 				},
-				[1129] = {
-					["weeklyMax"] = 3,
-					["totalMax"] = 20,
-					["amount"] = 8,
-				},
-				[1220] = {
-					["amount"] = 22671,
-				},
-				[391] = {
-					["amount"] = 7,
-				},
 				[1191] = {
 					["totalMax"] = 5000,
 					["amount"] = 2000,
 				},
+				[1220] = {
+					["amount"] = 25526,
+				},
+				[391] = {
+					["amount"] = 7,
+				},
+				[1501] = {
+					["amount"] = 0,
+				},
 				[1533] = {
-					["amount"] = 794,
+					["amount"] = 869,
 				},
 				[752] = {
 					["totalMax"] = 20,
@@ -611,7 +611,7 @@ SavedInstancesDB = {
 				},
 				[1508] = {
 					["totalMax"] = 2000,
-					["amount"] = 9,
+					["amount"] = 104,
 				},
 				[81] = {
 					["amount"] = 215,
@@ -620,19 +620,31 @@ SavedInstancesDB = {
 					["amount"] = 254040,
 				},
 			},
-			["Zone"] = "Dalaran",
+			["WeeklyResetTime"] = 1522162799,
 			["Quests"] = {
-				[49293] = {
+				[43892] = {
 					["Expires"] = 1522162799,
-					["Zone"] = "Krokuun",
-					["Title"] = "Invasion Onslaught",
-					["Link"] = "|cffffff00|Hquest:49293:90|h[Invasion Onslaught]|h|r",
+					["Link"] = "|cffffff00|Hquest:43892:90|h[Sealing Fate: Order Resources]|h|r",
+					["Title"] = "Sealing Fate: Order Resources",
+					["Zone"] = "Dalaran",
 				},
 				[48910] = {
 					["Expires"] = 1522162799,
 					["Zone"] = "Krokuun",
 					["Title"] = "Supplying Krokuun",
 					["Link"] = "|cffffff00|Hquest:48910:90|h[Supplying Krokuun]|h|r",
+				},
+				[40173] = {
+					["Expires"] = 1522162799,
+					["Link"] = "|cffffff00|Hquest:40173:90|h[The Unstable Prism]|h|r",
+					["Title"] = "The Unstable Prism",
+					["Zone"] = "Dalaran",
+				},
+				[48799] = {
+					["Expires"] = 1522162799,
+					["Zone"] = "Krokuun",
+					["Title"] = "Fuel of a Doomed World",
+					["Link"] = "|cffffff00|Hquest:48799:90|h[Fuel of a Doomed World]|h|r",
 				},
 				[48912] = {
 					["Expires"] = 1522162799,
@@ -646,203 +658,197 @@ SavedInstancesDB = {
 					["Title"] = "Sealing Fate: Gold",
 					["Zone"] = "Dalaran",
 				},
-				[40173] = {
-					["Expires"] = 1522162799,
-					["Link"] = "|cffffff00|Hquest:40173:90|h[The Unstable Prism]|h|r",
-					["Title"] = "The Unstable Prism",
-					["Zone"] = "Dalaran",
-				},
 				[40168] = {
 					["Expires"] = 1522162799,
 					["Link"] = "|cffffff00|Hquest:40168:90|h[The Swirling Vial]|h|r",
 					["Title"] = "The Swirling Vial",
 					["Zone"] = "Shattrath City",
 				},
-				[43892] = {
+				[43896] = {
 					["Expires"] = 1522162799,
-					["Link"] = "|cffffff00|Hquest:43892:90|h[Sealing Fate: Order Resources]|h|r",
-					["Title"] = "Sealing Fate: Order Resources",
+					["Title"] = "Sealing Fate: Piles of Gold",
+					["Link"] = "|cffffff00|Hquest:43896:90|h[Sealing Fate: Piles of Gold]|h|r",
 					["Zone"] = "Dalaran",
 				},
-				[48799] = {
+				[49293] = {
 					["Expires"] = 1522162799,
 					["Zone"] = "Krokuun",
-					["Title"] = "Fuel of a Doomed World",
-					["Link"] = "|cffffff00|Hquest:48799:90|h[Fuel of a Doomed World]|h|r",
+					["Title"] = "Invasion Onslaught",
+					["Link"] = "|cffffff00|Hquest:49293:90|h[Invasion Onslaught]|h|r",
 				},
 			},
-			["DailyResetTime"] = 1521644399,
+			["DailyResetTime"] = 1521730799,
 			["Level"] = 110,
 			["LClass"] = "Hunter",
 			["RBGrating"] = 0,
-			["MythicKeyBest"] = {
-				["ResetTime"] = 1522162799,
-				["level"] = 0,
-				["WeeklyReward"] = false,
-				["LastWeekLevel"] = 5,
-			},
-			["lastbosstime"] = 1521603532,
 			["MythicKey"] = {
 			},
-			["lastbossyelltime"] = 1521603527,
-			["Money"] = 11135336967,
-			["PlayedTotal"] = 33913141,
-			["lastboss"] = "The Defense of Eonar: Heroic",
+			["PlayedTotal"] = 33922586,
+			["Race"] = "Dwarf",
+			["lastbossyelltime"] = 1521687843,
+			["Money"] = 11123323391,
+			["MythicKeyBest"] = {
+				["LastWeekLevel"] = 5,
+				["level"] = 0,
+				["ResetTime"] = 1522162799,
+				["WeeklyReward"] = false,
+			},
+			["lastboss"] = "Eonar the Life-Binder: Heroic",
 			["BonusRoll"] = {
 				{
-					["name"] = "The Defense of Eonar: Heroic",
-					["item"] = "|cffa335ee|Hitem:152061::::::::110:253::5:3:3611:1497:3336:::|h[Droplets of the Cleansing Storm]|h|r",
-					["time"] = 1521603555,
+					["money"] = 25,
+					["time"] = 1521686433,
+					["name"] = "Felhounds of Sargeras: Heroic",
 					["currencyID"] = 1273,
 				}, -- [1]
+				{
+					["money"] = 25,
+					["time"] = 1521683545,
+					["name"] = "Argus the Unmaker: Normal",
+					["currencyID"] = 1273,
+				}, -- [2]
+				{
+					["item"] = "|cffa335ee|Hitem:152061::::::::110:253::5:3:3611:1497:3336:::|h[Droplets of the Cleansing Storm]|h|r",
+					["time"] = 1521603555,
+					["name"] = "The Defense of Eonar: Heroic",
+					["currencyID"] = 1273,
+				}, -- [3]
 				{
 					["money"] = 25,
 					["time"] = 1521602706,
 					["name"] = "Felhounds of Sargeras: Heroic",
 					["currencyID"] = 1273,
-				}, -- [2]
+				}, -- [4]
 				{
-					["name"] = "Blackhand: Mythic",
 					["item"] = "|cffa335ee|Hitem:113985::::::::110:253::6:1:567:::|h[Humming Blackiron Trigger]|h|r",
 					["time"] = 1521599298,
+					["name"] = "Blackhand: Mythic",
 					["currencyID"] = 994,
-				}, -- [3]
+				}, -- [5]
 				{
 					["money"] = 332102,
 					["time"] = 1520825817,
 					["name"] = "Nalak",
 					["currencyID"] = 752,
-				}, -- [4]
+				}, -- [6]
 				{
 					["money"] = 314542,
 					["time"] = 1520825050,
 					["name"] = "Oondasta",
 					["currencyID"] = 752,
-				}, -- [5]
+				}, -- [7]
 				{
 					["money"] = 1024336,
 					["name"] = "Sha of Anger",
 					["time"] = 1520817155,
 					["currencyID"] = 697,
-				}, -- [6]
+				}, -- [8]
 				{
-					["item"] = "|cffa335ee|Hitem:90443::::::::110:253:4:::445:::|h[Burnmender Boots]|h|r",
 					["time"] = 1520815742,
 					["name"] = "Galleon",
+					["item"] = "|cffa335ee|Hitem:90443::::::::110:253:4:::445:::|h[Burnmender Boots]|h|r",
 					["currencyID"] = 697,
-				}, -- [7]
+				}, -- [9]
 				{
-					["time"] = 1520275130,
 					["name"] = "Felhounds of Sargeras: Normal",
 					["item"] = "|cffa335ee|Hitem:152059::::::::110:253::3:3:3610:1482:3336:::|h[Whistling Ulna]|h|r",
+					["time"] = 1520275130,
 					["currencyID"] = 1273,
-				}, -- [8]
+				}, -- [10]
 				{
 					["money"] = 387552,
 					["name"] = "Nalak",
 					["time"] = 1520273237,
 					["currencyID"] = 752,
-				}, -- [9]
+				}, -- [11]
 				{
 					["money"] = 713472,
 					["name"] = "Oondasta",
 					["time"] = 1520272323,
 					["currencyID"] = 752,
-				}, -- [10]
+				}, -- [12]
 				{
 					["money"] = 25,
 					["name"] = "Argus the Unmaker: Normal",
 					["time"] = 1520270357,
 					["currencyID"] = 1273,
-				}, -- [11]
+				}, -- [13]
 				{
 					["money"] = 25,
 					["name"] = "Aggramar: Normal",
 					["time"] = 1520267664,
 					["currencyID"] = 1273,
-				}, -- [12]
+				}, -- [14]
 				{
 					["money"] = 308419,
 					["name"] = "Sha of Anger",
 					["time"] = 1520266755,
 					["currencyID"] = 697,
-				}, -- [13]
+				}, -- [15]
 				{
-					["time"] = 1520266511,
 					["name"] = "Galleon",
 					["item"] = "|cffa335ee|Hitem:90452::::::::110:253:4:::445:::|h[Sparkmaker Girdle]|h|r",
+					["time"] = 1520266511,
 					["currencyID"] = 697,
-				}, -- [14]
+				}, -- [16]
 				{
 					["money"] = 376433,
 					["name"] = "Nalak",
 					["time"] = 1519703570,
 					["currencyID"] = 752,
-				}, -- [15]
+				}, -- [17]
 				{
 					["money"] = 387565,
 					["name"] = "Oondasta",
 					["time"] = 1519703089,
 					["currencyID"] = 752,
-				}, -- [16]
+				}, -- [18]
 				{
 					["money"] = 301864,
 					["name"] = "Sha of Anger",
 					["time"] = 1519702927,
 					["currencyID"] = 697,
-				}, -- [17]
+				}, -- [19]
 				{
 					["money"] = 394070,
 					["name"] = "Galleon",
 					["time"] = 1519702760,
 					["currencyID"] = 697,
-				}, -- [18]
+				}, -- [20]
 				{
 					["money"] = 25,
 					["name"] = "Kin'garoth: Normal",
 					["time"] = 1519413544,
 					["currencyID"] = 1273,
-				}, -- [19]
+				}, -- [21]
 				{
 					["money"] = 25,
 					["name"] = "Felhounds of Sargeras: Normal",
 					["time"] = 1519409194,
 					["currencyID"] = 1273,
-				}, -- [20]
+				}, -- [22]
 				{
-					["time"] = 1519400483,
 					["name"] = "Felhounds of Sargeras: Heroic",
 					["item"] = "|cffa335ee|Hitem:151973::::::::110:253::5:4:3611:1808:1492:3336:::|h[Collar of Null-Flame]|h|r",
+					["time"] = 1519400483,
 					["currencyID"] = 1273,
-				}, -- [21]
+				}, -- [23]
 				{
 					["money"] = 25,
 					["time"] = 1519394385,
 					["name"] = "Argus the Unmaker: Normal",
 					["currencyID"] = 1273,
-				}, -- [22]
+				}, -- [24]
 				{
 					["money"] = 25,
 					["time"] = 1519391766,
 					["name"] = "Varimathras: Normal",
 					["currencyID"] = 1273,
-				}, -- [23]
-				{
-					["money"] = 25,
-					["name"] = "Argus the Unmaker: Normal",
-					["time"] = 1519013490,
-					["currencyID"] = 1273,
-				}, -- [24]
-				{
-					["time"] = 1519012297,
-					["name"] = "Aggramar: Normal",
-					["item"] = "|cffa335ee|Hitem:152133::::::::110:253::3:4:3610:1808:1472:3528:::|h[Serpentstalker Helmet]|h|r",
-					["currencyID"] = 1273,
 				}, -- [25]
 			},
-			["PlayedLevel"] = 3328446,
+			["PlayedLevel"] = 3337891,
 			["Faction"] = "Alliance",
-			["ILe"] = 944.875,
+			["ILe"] = 941.4375,
 			["Skills"] = {
 			},
 			["DailyWorldQuest"] = {
@@ -862,7 +868,7 @@ SavedInstancesDB = {
 					["dayleft"] = 0,
 				},
 			},
-			["Race"] = "Dwarf",
+			["Zone"] = "Krokuun",
 		},
 		["Herbinator - Sisters of Elune"] = {
 			["IL"] = 0.3125,
@@ -879,7 +885,7 @@ SavedInstancesDB = {
 			["Zone"] = "Stormwind City",
 			["Race"] = "Human",
 			["Show"] = "saved",
-			["DailyResetTime"] = 1521644399,
+			["DailyResetTime"] = 1521730799,
 			["PlayedLevel"] = 103548,
 			["Faction"] = "Alliance",
 			["ILe"] = 0.25,
@@ -907,7 +913,7 @@ SavedInstancesDB = {
 					["questdone"] = 0,
 				},
 			},
-			["DailyResetTime"] = 1521644399,
+			["DailyResetTime"] = 1521730799,
 			["Level"] = 110,
 			["LClass"] = "Monk",
 			["RBGrating"] = 0,
@@ -1011,9 +1017,9 @@ SavedInstancesDB = {
 					["currencyID"] = 752,
 				}, -- [6]
 				{
-					["name"] = "Sha of Anger",
 					["item"] = "|cffa335ee|Hitem:84805::::::::110:269:4:::453:::|h[Malevolent Gladiator's Cape of Prowess]|h|r",
 					["time"] = 1519590156,
+					["name"] = "Sha of Anger",
 					["currencyID"] = 697,
 				}, -- [7]
 				{
@@ -1023,15 +1029,15 @@ SavedInstancesDB = {
 					["currencyID"] = 697,
 				}, -- [8]
 				{
-					["time"] = 1517696255,
 					["name"] = "Nalak",
 					["item"] = "|cffa335ee|Hitem:95268::::::::110:269:4:::465:::|h[Fire-Charm Leggings]|h|r",
+					["time"] = 1517696255,
 					["currencyID"] = 752,
 				}, -- [9]
 				{
-					["time"] = 1517695065,
 					["name"] = "Oondasta",
 					["item"] = "|cffa335ee|Hitem:95186::::::::110:269:4:::465:::|h[Belt of Crushed Dreams]|h|r",
+					["time"] = 1517695065,
 					["currencyID"] = 752,
 				}, -- [10]
 				{
@@ -1089,7 +1095,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 3819,
 			["Faction"] = "Alliance",
 			["ILe"] = 40.25,
-			["DailyResetTime"] = 1521644399,
+			["DailyResetTime"] = 1521730799,
 			["DailyWorldQuest"] = {
 			},
 			["Race"] = "Human",
@@ -1123,7 +1129,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 1646,
 			["Faction"] = "Alliance",
 			["ILe"] = 2.5,
-			["DailyResetTime"] = 1521644399,
+			["DailyResetTime"] = 1521730799,
 			["DailyWorldQuest"] = {
 			},
 			["Zone"] = "Shrine of Seven Stars",
@@ -1182,15 +1188,15 @@ SavedInstancesDB = {
 			["lastboss"] = "Nalak",
 			["BonusRoll"] = {
 				{
-					["name"] = "Nalak",
 					["item"] = "|cffa335ee|Hitem:91138::::::::110:258:4:::476:::|h[Tyrannical Gladiator's Band of Cruelty]|h|r",
 					["time"] = 1519702392,
+					["name"] = "Nalak",
 					["currencyID"] = 752,
 				}, -- [1]
 				{
-					["name"] = "Oondasta",
 					["item"] = "|cffa335ee|Hitem:95164::::::::110:258:4:::465:::|h[Eye of Oondasta]|h|r",
 					["time"] = 1519701871,
+					["name"] = "Oondasta",
 					["currencyID"] = 752,
 				}, -- [2]
 				{
@@ -1224,9 +1230,9 @@ SavedInstancesDB = {
 					["currencyID"] = 752,
 				}, -- [7]
 				{
-					["name"] = "Galleon",
 					["item"] = "|cffa335ee|Hitem:90434::::::::110:258:4:::445:::|h[Steaming Seal of Flame]|h|r",
 					["time"] = 1518357846,
+					["name"] = "Galleon",
 					["currencyID"] = 697,
 				}, -- [8]
 				{
@@ -1236,9 +1242,9 @@ SavedInstancesDB = {
 					["currencyID"] = 752,
 				}, -- [9]
 				{
-					["item"] = "|cffa335ee|Hitem:84884::::::::110:258:4:::453:::|h[Malevolent Gladiator's Satin Leggings]|h|r",
 					["time"] = 1517681741,
 					["name"] = "Sha of Anger",
+					["item"] = "|cffa335ee|Hitem:84884::::::::110:258:4:::453:::|h[Malevolent Gladiator's Satin Leggings]|h|r",
 					["currencyID"] = 697,
 				}, -- [10]
 				{
@@ -1251,7 +1257,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 23820,
 			["Faction"] = "Alliance",
 			["ILe"] = 873.375,
-			["DailyResetTime"] = 1521644399,
+			["DailyResetTime"] = 1521730799,
 			["DailyWorldQuest"] = {
 				["days0"] = {
 					["questneed"] = 4,
@@ -1281,7 +1287,7 @@ SavedInstancesDB = {
 			["MythicKey"] = {
 			},
 			["PlayedTotal"] = 178776,
-			["DailyResetTime"] = 1521644399,
+			["DailyResetTime"] = 1521730799,
 			["lastbossyelltime"] = 1470804613,
 			["Money"] = 100901125,
 			["lastbosstime"] = 1487132469,
@@ -1312,7 +1318,7 @@ SavedInstancesDB = {
 			["IL"] = 869.6875,
 			["Quests"] = {
 			},
-			["DailyResetTime"] = 1521644399,
+			["DailyResetTime"] = 1521730799,
 			["Level"] = 110,
 			["LClass"] = "Demon Hunter",
 			["RBGrating"] = 0,
@@ -1362,15 +1368,15 @@ SavedInstancesDB = {
 			["Show"] = "always",
 			["BonusRoll"] = {
 				{
-					["item"] = "|cffa335ee|Hitem:90839::::::::110:577::::::|h[Cache of Sha-Touched Gold]|h|r",
 					["time"] = 1520473634,
 					["name"] = "Sha of Anger",
+					["item"] = "|cffa335ee|Hitem:90839::::::::110:577::::::|h[Cache of Sha-Touched Gold]|h|r",
 					["currencyID"] = 697,
 				}, -- [1]
 				{
-					["item"] = "|cffa335ee|Hitem:90437::::::::110:577:4:::445:::|h[Hereditary Saurok Loop]|h|r",
 					["time"] = 1520472873,
 					["name"] = "Galleon",
+					["item"] = "|cffa335ee|Hitem:90437::::::::110:577:4:::445:::|h[Hereditary Saurok Loop]|h|r",
 					["currencyID"] = 697,
 				}, -- [2]
 				{
@@ -1428,9 +1434,9 @@ SavedInstancesDB = {
 					["currencyID"] = 752,
 				}, -- [11]
 				{
-					["item"] = "|cffa335ee|Hitem:95187::::::::110:577:4:::465:::|h[Girdle of the Derrodoccus]|h|r",
 					["time"] = 1518549101,
 					["name"] = "Oondasta",
+					["item"] = "|cffa335ee|Hitem:95187::::::::110:577:4:::465:::|h[Girdle of the Derrodoccus]|h|r",
 					["currencyID"] = 752,
 				}, -- [12]
 				{
@@ -1470,9 +1476,9 @@ SavedInstancesDB = {
 					["currencyID"] = 697,
 				}, -- [18]
 				{
-					["name"] = "Nalak",
 					["item"] = "|cffa335ee|Hitem:95602::::::::110:577::::::|h[Stormtouched Cache]|h|r",
 					["time"] = 1517423255,
+					["name"] = "Nalak",
 					["currencyID"] = 752,
 				}, -- [19]
 				{
@@ -1562,7 +1568,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 14533,
 			["Faction"] = "Alliance",
 			["ILe"] = 51.4375,
-			["DailyResetTime"] = 1521644399,
+			["DailyResetTime"] = 1521730799,
 			["Quests"] = {
 			},
 			["WeeklyResetTime"] = 1522162799,
@@ -1646,9 +1652,9 @@ SavedInstancesDB = {
 					["currencyID"] = 752,
 				}, -- [1]
 				{
-					["name"] = "Oondasta",
 					["item"] = "|cffa335ee|Hitem:95152::::::::110:71:4:::465:::|h[Breastplate of the Iguanocolossus]|h|r",
 					["time"] = 1520263399,
+					["name"] = "Oondasta",
 					["currencyID"] = 752,
 				}, -- [2]
 				{
@@ -1670,9 +1676,9 @@ SavedInstancesDB = {
 					["currencyID"] = 752,
 				}, -- [5]
 				{
-					["name"] = "Nalak",
 					["item"] = "|cffa335ee|Hitem:95332::::::::110:71:4:::465:::|h[Gauntlets of the Last Mogu]|h|r",
 					["time"] = 1518558697,
+					["name"] = "Nalak",
 					["currencyID"] = 752,
 				}, -- [6]
 				{
@@ -1718,9 +1724,9 @@ SavedInstancesDB = {
 					["currencyID"] = 697,
 				}, -- [13]
 				{
-					["item"] = "|cffa335ee|Hitem:90424::::::::110:71:4:::445:::|h[Ravaging Warrior's Chestplate]|h|r",
 					["time"] = 1517417123,
 					["name"] = "Galleon",
+					["item"] = "|cffa335ee|Hitem:90424::::::::110:71:4:::445:::|h[Ravaging Warrior's Chestplate]|h|r",
 					["currencyID"] = 697,
 				}, -- [14]
 				{
@@ -1748,16 +1754,16 @@ SavedInstancesDB = {
 					["currencyID"] = 697,
 				}, -- [18]
 				{
-					["time"] = 1516753327,
 					["name"] = "Nalak",
 					["item"] = "|cffa335ee|Hitem:91413::::::::110:71:4:::476:::|h[Tyrannical Gladiator's Choker of Proficiency]|h|r",
+					["time"] = 1516753327,
 					["currencyID"] = 752,
 				}, -- [19]
 			},
 			["PlayedLevel"] = 34950,
 			["Faction"] = "Alliance",
 			["ILe"] = 866.0625,
-			["DailyResetTime"] = 1521644399,
+			["DailyResetTime"] = 1521730799,
 			["Quests"] = {
 			},
 			["IL"] = 866.0625,
@@ -1784,7 +1790,7 @@ SavedInstancesDB = {
 			["PlayedLevel"] = 2173249,
 			["Faction"] = "Alliance",
 			["ILe"] = 3.75,
-			["DailyResetTime"] = 1521644399,
+			["DailyResetTime"] = 1521730799,
 			["Quests"] = {
 			},
 			["IL"] = 5,
@@ -1800,7 +1806,7 @@ SavedInstancesDB = {
 		},
 		["Scale"] = 1,
 		["NumberFormat"] = true,
-		["TrackDailyQuests"] = false,
+		["MythicKeyBest"] = false,
 		["ShowExpired"] = false,
 		["RaidsFirst"] = true,
 		["Currency1533"] = false,
@@ -1838,26 +1844,26 @@ SavedInstancesDB = {
 		["CombineLFR"] = true,
 		["LimitWarn"] = true,
 		["AbbreviateKeystone"] = true,
-		["ConnectedRealms"] = "group",
+		["TrackDailyQuests"] = false,
 		["Currency1155"] = false,
 		["Currency1191"] = false,
 		["TrackFarm"] = false,
-		["AugmentBonus"] = false,
+		["MythicKey"] = false,
 		["ServerSort"] = true,
 		["SelfFirst"] = true,
-		["FitToScreen"] = true,
-		["ReverseInstances"] = false,
-		["ReportResets"] = true,
-		["CurrencyMax"] = false,
-		["MythicKey"] = false,
-		["TrackPlayed"] = false,
-		["Currency1129"] = false,
-		["TrackSkills"] = false,
 		["Currency697"] = true,
 		["ColumnStyle"] = "NORMAL",
+		["AugmentBonus"] = false,
+		["CurrencyMax"] = false,
+		["Currency1129"] = false,
+		["TrackPlayed"] = false,
+		["FitToScreen"] = true,
+		["TrackSkills"] = false,
+		["ReverseInstances"] = false,
 		["Currency1101"] = false,
+		["ReportResets"] = true,
 		["Currency1166"] = false,
-		["MythicKeyBest"] = false,
+		["ConnectedRealms"] = "group",
 	},
 	["spelltip"] = {
 		[26013] = {
@@ -2069,12 +2075,12 @@ SavedInstancesDB = {
 			["Raid"] = false,
 			["Show"] = "saved",
 		},
-		["The Sunwell"] = {
-			["LFDID"] = 199,
-			["Expansion"] = 1,
-			["RecLevel"] = 70,
-			["Raid"] = true,
+		["Occularus"] = {
 			["Show"] = "saved",
+			["Expansion"] = 6,
+			["WorldBoss"] = 2013,
+			["RecLevel"] = 110,
+			["Raid"] = true,
 		},
 		["Random Timewalking Dungeon (Mists of Pandaria)"] = {
 			["LFDID"] = 1453,
@@ -2469,20 +2475,20 @@ SavedInstancesDB = {
 			["Raid"] = true,
 		},
 		["Antorus, the Burning Throne"] = {
-			["Show"] = "saved",
-			["Expansion"] = 6,
 			["LFDID"] = 1642,
-			["RecLevel"] = 110,
+			["Expansion"] = 6,
+			["Show"] = "saved",
+			["Raid"] = true,
 			["Bracnar - Sisters of Elune"] = {
 				[14] = {
-					["Expires"] = 0,
+					["Expires"] = 1522162801,
 					["Extended"] = false,
-					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06A1ACBD:1712:14:2047|h[Antorus, the Burning Throne]|h|r",
-					["ID"] = 330852519,
-					["Locked"] = false,
+					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06A1ACBD:1712:14:1025|h[Antorus, the Burning Throne]|h|r",
+					["ID"] = 207326704,
+					["Locked"] = true,
 				},
 				[15] = {
-					["Expires"] = 1522162802,
+					["Expires"] = 1522162801,
 					["Extended"] = false,
 					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06A1ACBD:1712:15:224|h[Antorus, the Burning Throne]|h|r",
 					["ID"] = 682989389,
@@ -2496,7 +2502,7 @@ SavedInstancesDB = {
 					["Locked"] = false,
 				},
 			},
-			["Raid"] = true,
+			["RecLevel"] = 110,
 		},
 		["Darkheart Thicket"] = {
 			["LFDID"] = 1202,
@@ -2585,12 +2591,12 @@ SavedInstancesDB = {
 			["RecLevel"] = 61,
 			["Show"] = "saved",
 		},
-		["LFR: Walled City"] = {
-			["LFDID"] = 1363,
-			["Expansion"] = 5,
-			["RecLevel"] = 100,
-			["Raid"] = true,
+		["Dragon of Nightmare"] = {
 			["Show"] = "saved",
+			["Expansion"] = 6,
+			["WorldBoss"] = 9004,
+			["RecLevel"] = 110,
+			["Raid"] = true,
 		},
 		["LFR: Arcing Aqueducts"] = {
 			["LFDID"] = 1290,
@@ -2674,11 +2680,11 @@ SavedInstancesDB = {
 			["Random"] = true,
 			["Raid"] = false,
 		},
-		["Seat of the Triumvirate"] = {
-			["LFDID"] = 1535,
-			["Expansion"] = 6,
-			["Raid"] = false,
-			["RecLevel"] = 110,
+		["Vault of Archavon"] = {
+			["LFDID"] = 240,
+			["Expansion"] = 2,
+			["Raid"] = true,
+			["RecLevel"] = 80,
 			["Show"] = "saved",
 		},
 		["LFR: Wailing Halls"] = {
@@ -2782,18 +2788,18 @@ SavedInstancesDB = {
 			["Uldaris - Sisters of Elune"] = {
 			},
 		},
-		["Vault of Archavon"] = {
-			["LFDID"] = 240,
-			["Expansion"] = 2,
-			["Raid"] = true,
-			["RecLevel"] = 80,
-			["Show"] = "saved",
-		},
 		["Gnomeregan"] = {
 			["LFDID"] = 14,
 			["Expansion"] = 0,
 			["RecLevel"] = 28,
 			["Raid"] = false,
+			["Show"] = "saved",
+		},
+		["Seat of the Triumvirate"] = {
+			["LFDID"] = 1535,
+			["Expansion"] = 6,
+			["Raid"] = false,
+			["RecLevel"] = 110,
 			["Show"] = "saved",
 		},
 		["Grand Ambassador Flamelash"] = {
@@ -2854,12 +2860,12 @@ SavedInstancesDB = {
 			["RecLevel"] = 68,
 			["Show"] = "saved",
 		},
-		["Shattered Halls"] = {
-			["LFDID"] = 1014,
-			["Expansion"] = 1,
-			["Raid"] = false,
-			["RecLevel"] = 70,
+		["Scarlet Monastery"] = {
+			["LFDID"] = 474,
+			["Expansion"] = 4,
 			["Show"] = "saved",
+			["Raid"] = false,
+			["RecLevel"] = 32,
 		},
 		["Grim Batol"] = {
 			["LFDID"] = 1149,
@@ -2990,11 +2996,11 @@ SavedInstancesDB = {
 			["RecLevel"] = 110,
 			["Raid"] = true,
 		},
-		["The Soultakers"] = {
-			["Show"] = "saved",
+		["Court of Stars"] = {
+			["LFDID"] = 1319,
 			["Expansion"] = 6,
-			["WorldBoss"] = 1756,
-			["Raid"] = true,
+			["Show"] = "saved",
+			["Raid"] = false,
 			["RecLevel"] = 110,
 		},
 		["Blackrock Depths - Upper City"] = {
@@ -3039,12 +3045,12 @@ SavedInstancesDB = {
 			["Raid"] = false,
 			["Show"] = "saved",
 		},
-		["Zul'Gurub"] = {
-			["LFDID"] = 334,
-			["Expansion"] = 3,
-			["RecLevel"] = 85,
-			["Raid"] = false,
+		["Levantus"] = {
 			["Show"] = "saved",
+			["Expansion"] = 6,
+			["WorldBoss"] = 1769,
+			["RecLevel"] = 110,
+			["Raid"] = true,
 		},
 		["The Frost Lord Ahune"] = {
 			["LFDID"] = 286,
@@ -3083,13 +3089,12 @@ SavedInstancesDB = {
 			["Raid"] = false,
 			["Show"] = "saved",
 		},
-		["Random Cataclysm Dungeon"] = {
-			["LFDID"] = 300,
-			["Expansion"] = 3,
-			["Show"] = "saved",
-			["RecLevel"] = 0,
-			["Random"] = true,
+		["Mana-Tombs"] = {
+			["LFDID"] = 1013,
+			["Expansion"] = 1,
 			["Raid"] = false,
+			["RecLevel"] = 65,
+			["Show"] = "saved",
 		},
 		["Trial of Valor"] = {
 			["Show"] = "saved",
@@ -3098,12 +3103,12 @@ SavedInstancesDB = {
 			["Raid"] = true,
 			["LFDID"] = 1439,
 		},
-		["Dragon of Nightmare"] = {
-			["Show"] = "saved",
-			["Expansion"] = 6,
-			["WorldBoss"] = 9004,
-			["RecLevel"] = 110,
+		["Heart of Fear"] = {
+			["LFDID"] = 534,
+			["Expansion"] = 4,
 			["Raid"] = true,
+			["RecLevel"] = 90,
+			["Show"] = "saved",
 		},
 		["Inquisitor Meto"] = {
 			["Show"] = "saved",
@@ -3119,11 +3124,11 @@ SavedInstancesDB = {
 			["Raid"] = false,
 			["Show"] = "saved",
 		},
-		["Utgarde Keep"] = {
-			["LFDID"] = 242,
-			["Expansion"] = 2,
-			["Raid"] = false,
-			["RecLevel"] = 72,
+		["The Sunwell"] = {
+			["LFDID"] = 199,
+			["Expansion"] = 1,
+			["RecLevel"] = 70,
+			["Raid"] = true,
 			["Show"] = "saved",
 		},
 		["Hyjal Past"] = {
@@ -3226,12 +3231,13 @@ SavedInstancesDB = {
 			["RecLevel"] = 85,
 			["Show"] = "saved",
 		},
-		["Utgarde Pinnacle"] = {
-			["LFDID"] = 1020,
-			["Expansion"] = 2,
-			["Raid"] = false,
-			["RecLevel"] = 80,
+		["Random Cataclysm Dungeon"] = {
+			["LFDID"] = 300,
+			["Expansion"] = 3,
 			["Show"] = "saved",
+			["RecLevel"] = 0,
+			["Random"] = true,
+			["Raid"] = false,
 		},
 		["Gruul's Lair"] = {
 			["LFDID"] = 177,
@@ -3247,11 +3253,11 @@ SavedInstancesDB = {
 			["RecLevel"] = 90,
 			["Show"] = "saved",
 		},
-		["Heart of Fear"] = {
-			["LFDID"] = 534,
-			["Expansion"] = 4,
+		["LFR: Walled City"] = {
+			["LFDID"] = 1363,
+			["Expansion"] = 5,
+			["RecLevel"] = 100,
 			["Raid"] = true,
-			["RecLevel"] = 90,
 			["Show"] = "saved",
 		},
 		["Baradin Hold"] = {
@@ -3282,12 +3288,12 @@ SavedInstancesDB = {
 			["RecLevel"] = 110,
 			["Show"] = "saved",
 		},
-		["Levantus"] = {
+		["Utgarde Keep"] = {
+			["LFDID"] = 242,
+			["Expansion"] = 2,
+			["Raid"] = false,
+			["RecLevel"] = 72,
 			["Show"] = "saved",
-			["Expansion"] = 6,
-			["WorldBoss"] = 1769,
-			["RecLevel"] = 110,
-			["Raid"] = true,
 		},
 		["Scarlet Halls"] = {
 			["LFDID"] = 473,
@@ -3417,19 +3423,19 @@ SavedInstancesDB = {
 			["RecLevel"] = 81,
 			["Show"] = "saved",
 		},
-		["Mana-Tombs"] = {
-			["LFDID"] = 1013,
-			["Expansion"] = 1,
+		["Utgarde Pinnacle"] = {
+			["LFDID"] = 1020,
+			["Expansion"] = 2,
 			["Raid"] = false,
-			["RecLevel"] = 65,
+			["RecLevel"] = 80,
 			["Show"] = "saved",
 		},
-		["Scarlet Monastery"] = {
-			["LFDID"] = 474,
-			["Expansion"] = 4,
-			["Show"] = "saved",
+		["The Forge of Souls"] = {
+			["LFDID"] = 252,
+			["Expansion"] = 2,
 			["Raid"] = false,
-			["RecLevel"] = 32,
+			["RecLevel"] = 80,
+			["Show"] = "saved",
 		},
 		["The Stonecore"] = {
 			["LFDID"] = 1148,
@@ -3495,7 +3501,7 @@ SavedInstancesDB = {
 			["RecLevel"] = 100,
 			["Bracnar - Sisters of Elune"] = {
 				[16] = {
-					["Expires"] = 1522162802,
+					["Expires"] = 1522162801,
 					["Extended"] = false,
 					["Link"] = "|cffff8000|Hinstancelock:Player-1169-06A1ACBD:1205:16:1023|h[Blackrock Foundry]|h|r",
 					["ID"] = 207239401,
@@ -3562,12 +3568,12 @@ SavedInstancesDB = {
 			["Raid"] = true,
 			["RecLevel"] = 110,
 		},
-		["Occularus"] = {
+		["Zul'Gurub"] = {
+			["LFDID"] = 334,
+			["Expansion"] = 3,
+			["RecLevel"] = 85,
+			["Raid"] = false,
 			["Show"] = "saved",
-			["Expansion"] = 6,
-			["WorldBoss"] = 2013,
-			["RecLevel"] = 110,
-			["Raid"] = true,
 		},
 		["Return to Karazhan"] = {
 			["LFDID"] = 1347,
@@ -3675,12 +3681,12 @@ SavedInstancesDB = {
 			["RecLevel"] = 85,
 			["Show"] = "saved",
 		},
-		["The Forge of Souls"] = {
-			["LFDID"] = 252,
-			["Expansion"] = 2,
-			["Raid"] = false,
-			["RecLevel"] = 80,
+		["The Soultakers"] = {
 			["Show"] = "saved",
+			["Expansion"] = 6,
+			["WorldBoss"] = 1756,
+			["Raid"] = true,
+			["RecLevel"] = 110,
 		},
 		["Scholomance"] = {
 			["LFDID"] = 472,
@@ -3816,12 +3822,12 @@ SavedInstancesDB = {
 			["RecLevel"] = 80,
 			["Show"] = "saved",
 		},
-		["Court of Stars"] = {
-			["LFDID"] = 1319,
-			["Expansion"] = 6,
-			["Show"] = "saved",
+		["Shattered Halls"] = {
+			["LFDID"] = 1014,
+			["Expansion"] = 1,
 			["Raid"] = false,
-			["RecLevel"] = 110,
+			["RecLevel"] = 70,
+			["Show"] = "saved",
 		},
 		["The Arcatraz"] = {
 			["LFDID"] = 1011,
@@ -3832,9 +3838,9 @@ SavedInstancesDB = {
 		},
 	},
 	["History"] = {
-		["Bracnar - Sisters of Elune:Antorus, the Burning Throne:raid:15:3629"] = {
-			["last"] = 1521603691,
-			["create"] = 1521599630,
+		["Bracnar - Sisters of Elune:Antorus, the Burning Throne:raid:15"] = {
+			["last"] = 1521687926,
+			["create"] = 1521683823,
 			["desc"] = "Bracnar: Antorus, the Burning Throne - Heroic",
 		},
 	},
@@ -3846,14 +3852,14 @@ SavedInstancesDB = {
 		["CenarionCircle"] = 1,
 		["SistersofElune"] = 1,
 	},
-	["histGeneration"] = 3630,
+	["histGeneration"] = 3633,
 	["QuestDB"] = {
 		["Daily"] = {
 			[0] = 492,
 			[39649] = 971,
-			[41037] = 1052,
+			[39651] = 971,
 			[46205] = 1015,
-			[13682] = 492,
+			[37324] = 971,
 			[37325] = 971,
 			[32150] = 857,
 			[32152] = 857,
@@ -3865,14 +3871,14 @@ SavedInstancesDB = {
 			[14107] = 492,
 			[14105] = 492,
 			[13625] = 492,
-			[14112] = 492,
+			[33374] = 951,
 			[46199] = 1015,
 			[14090] = 492,
 			[38175] = 971,
 			[48635] = 1170,
-			[39651] = 971,
+			[37320] = 971,
 			[14101] = 492,
-			[32148] = 857,
+			[13682] = 492,
 			[43162] = 1018,
 			[14074] = 492,
 			[36685] = 971,
@@ -3893,17 +3899,17 @@ SavedInstancesDB = {
 			[39668] = 971,
 			[45406] = 1017,
 			[14080] = 492,
-			[13671] = 492,
+			[14112] = 492,
 			[41062] = 1052,
 			[13861] = 492,
-			[37324] = 971,
+			[32148] = 857,
 			[45795] = 1015,
-			[37320] = 971,
+			[41037] = 1052,
 			[48634] = 1135,
 			[48636] = 1135,
 			[46182] = 1024,
 			[37270] = 971,
-			[33374] = 951,
+			[13671] = 492,
 			[14152] = 492,
 			[46110] = 1017,
 		},
@@ -3918,7 +3924,7 @@ SavedInstancesDB = {
 			[29443] = 823,
 		},
 		["AccountDaily"] = {
-			[40753] = 1021,
+			[40753] = 1014,
 			[34774] = 1014,
 			[31752] = 1014,
 		},
@@ -3958,7 +3964,7 @@ SavedInstancesDB = {
 			[40168] = 481,
 			[37456] = -1,
 			[43896] = 1014,
-			[39034] = 971,
+			[48799] = 1135,
 			[43893] = 1014,
 			[47864] = -1,
 			[43897] = 1014,
@@ -3975,7 +3981,7 @@ SavedInstancesDB = {
 			[44173] = -1,
 			[44175] = 1014,
 			[45563] = 951,
-			[48799] = 1135,
+			[39034] = 971,
 			[36054] = 1009,
 			["expires"] = 1522162799,
 		},
@@ -3987,7 +3993,7 @@ SavedInstancesDB = {
 		["minimapPos"] = 17.3540557183882,
 		["hide"] = false,
 	},
-	["DailyResetTime"] = 1521644399,
+	["DailyResetTime"] = 1521730799,
 	["Quests"] = {
 		[34774] = {
 			["Link"] = "|cffffff00|Hquest:34774:90|h[Blingtron 5000]|h|r",
@@ -4003,7 +4009,7 @@ SavedInstancesDB = {
 		},
 		[40753] = {
 			["Link"] = "|cffffff00|Hquest:40753:90|h[Blingtron 6000]|h|r",
-			["Zone"] = "Broken Shore",
+			["Zone"] = "Dalaran",
 			["Title"] = "Blingtron 6000",
 			["isDaily"] = true,
 		},
@@ -4065,8 +4071,8 @@ SavedInstancesDB = {
 			0, -- [2]
 			0, -- [3]
 		},
+		["R2Text"] = "KILLED/TOTAL",
 		["R8Text"] = "KILLED/TOTALM",
-		["R7Indicator"] = "BLANK",
 		["R8Indicator"] = "BLANK",
 		["R0Text"] = "KILLED/TOTAL",
 		["R0Color"] = {
@@ -4074,8 +4080,12 @@ SavedInstancesDB = {
 			0.6, -- [2]
 			0, -- [3]
 		},
+		["R2Color"] = {
+			0.6, -- [1]
+			0, -- [2]
+			0, -- [3]
+		},
 		["R6Text"] = "KILLED/TOTAL",
-		["R1Indicator"] = "BLANK",
 		["R3Indicator"] = "BLANK",
 		["R7ClassColor"] = true,
 		["R5Indicator"] = "BLANK",
@@ -4089,17 +4099,13 @@ SavedInstancesDB = {
 		["R3ClassColor"] = true,
 		["R3Text"] = "KILLED/TOTALH",
 		["R5ClassColor"] = true,
-		["R2Color"] = {
-			0.6, -- [1]
-			0, -- [2]
-			0, -- [3]
-		},
+		["R1Indicator"] = "BLANK",
 		["D3Color"] = {
 			1, -- [1]
 			0, -- [2]
 			0, -- [3]
 		},
-		["R2Text"] = "KILLED/TOTAL",
+		["R7Indicator"] = "BLANK",
 		["D3Text"] = "KILLED/TOTALM",
 		["D2Text"] = "KILLED/TOTALH",
 		["R2Indicator"] = "BLANK",

@@ -9,6 +9,62 @@ RelicInspectorCharDB = {
 			["artifactCache"] = {
 				[128826] = {
 					{
+						["traits"] = {
+							{
+								["requiredArtifactLevel"] = 0,
+								["isChosen"] = true,
+								["canChoose"] = false,
+								["powerID"] = 1739,
+								["tier"] = 1,
+								["icon"] = 1033184,
+								["spellID"] = 250879,
+							}, -- [1]
+							{
+								["requiredArtifactLevel"] = 60,
+								["isChosen"] = true,
+								["canChoose"] = false,
+								["powerID"] = 1781,
+								["tier"] = 2,
+								["icon"] = 839910,
+								["spellID"] = 252922,
+							}, -- [2]
+							{
+								["requiredArtifactLevel"] = 60,
+								["isChosen"] = false,
+								["canChoose"] = false,
+								["powerID"] = 1783,
+								["tier"] = 2,
+								["icon"] = 876916,
+								["spellID"] = 253093,
+							}, -- [3]
+							{
+								["requiredArtifactLevel"] = 69,
+								["isChosen"] = false,
+								["canChoose"] = false,
+								["powerID"] = 320,
+								["tier"] = 3,
+								["icon"] = 796637,
+								["spellID"] = 190567,
+							}, -- [4]
+							{
+								["requiredArtifactLevel"] = 69,
+								["isChosen"] = true,
+								["canChoose"] = false,
+								["powerID"] = 314,
+								["tier"] = 3,
+								["icon"] = 132329,
+								["spellID"] = 190462,
+							}, -- [5]
+							{
+								["requiredArtifactLevel"] = 69,
+								["isChosen"] = false,
+								["canChoose"] = false,
+								["powerID"] = 1521,
+								["tier"] = 3,
+								["icon"] = 511650,
+								["spellID"] = 238052,
+							}, -- [6]
+						},
 						["relic"] = {
 							"Droplets of the Cleansing Storm", -- [1]
 							1500961, -- [2]
@@ -17,135 +73,135 @@ RelicInspectorCharDB = {
 						},
 					}, -- [1]
 					{
+						["traits"] = {
+							{
+								["requiredArtifactLevel"] = 0,
+								["isChosen"] = true,
+								["canChoose"] = false,
+								["powerID"] = 1739,
+								["tier"] = 1,
+								["icon"] = 1033184,
+								["spellID"] = 250879,
+							}, -- [1]
+							{
+								["requiredArtifactLevel"] = 63,
+								["isChosen"] = true,
+								["canChoose"] = false,
+								["powerID"] = 1778,
+								["tier"] = 2,
+								["icon"] = 136146,
+								["spellID"] = 252875,
+							}, -- [2]
+							{
+								["requiredArtifactLevel"] = 63,
+								["isChosen"] = false,
+								["canChoose"] = false,
+								["powerID"] = 1782,
+								["tier"] = 2,
+								["icon"] = 1360764,
+								["spellID"] = 253070,
+							}, -- [3]
+							{
+								["requiredArtifactLevel"] = 72,
+								["isChosen"] = true,
+								["canChoose"] = false,
+								["powerID"] = 313,
+								["tier"] = 3,
+								["icon"] = 1376043,
+								["spellID"] = 190457,
+							}, -- [4]
+							{
+								["requiredArtifactLevel"] = 72,
+								["isChosen"] = false,
+								["canChoose"] = false,
+								["powerID"] = 318,
+								["tier"] = 3,
+								["icon"] = 132217,
+								["spellID"] = 190520,
+							}, -- [5]
+							{
+								["requiredArtifactLevel"] = 72,
+								["isChosen"] = false,
+								["canChoose"] = false,
+								["powerID"] = 315,
+								["tier"] = 3,
+								["icon"] = 132330,
+								["spellID"] = 190467,
+							}, -- [6]
+						},
 						["relic"] = {
 							"Scourge of Perverse Desire", -- [1]
 							460858, -- [2]
 							"Blood", -- [3]
 							"|cffa335ee|Hitem:152030:::::::::::3:3:3614:1497:3337:::|h[Scourge of Perverse Desire]|h|r", -- [4]
 						},
+					}, -- [2]
+					{
 						["traits"] = {
 							{
 								["requiredArtifactLevel"] = 0,
-								["tier"] = 1,
+								["isChosen"] = true,
 								["canChoose"] = false,
 								["powerID"] = 1739,
+								["tier"] = 1,
 								["icon"] = 1033184,
-								["isChosen"] = true,
 								["spellID"] = 250879,
 							}, -- [1]
 							{
-								["requiredArtifactLevel"] = 63,
-								["tier"] = 2,
-								["canChoose"] = false,
-								["powerID"] = 1778,
-								["icon"] = 136146,
+								["requiredArtifactLevel"] = 66,
 								["isChosen"] = true,
-								["spellID"] = 252875,
+								["canChoose"] = false,
+								["powerID"] = 1779,
+								["tier"] = 2,
+								["icon"] = 1394892,
+								["spellID"] = 252888,
 							}, -- [2]
 							{
-								["requiredArtifactLevel"] = 63,
-								["tier"] = 2,
-								["canChoose"] = false,
-								["powerID"] = 1782,
-								["icon"] = 1360764,
+								["requiredArtifactLevel"] = 66,
 								["isChosen"] = false,
-								["spellID"] = 253070,
+								["canChoose"] = false,
+								["powerID"] = 1775,
+								["tier"] = 2,
+								["icon"] = 458412,
+								["spellID"] = 252207,
 							}, -- [3]
 							{
-								["requiredArtifactLevel"] = 72,
-								["tier"] = 3,
+								["requiredArtifactLevel"] = 75,
+								["isChosen"] = false,
 								["canChoose"] = false,
-								["powerID"] = 313,
-								["icon"] = 1376043,
-								["isChosen"] = true,
-								["spellID"] = 190457,
+								["powerID"] = 317,
+								["tier"] = 3,
+								["icon"] = 132294,
+								["spellID"] = 190514,
 							}, -- [4]
 							{
-								["requiredArtifactLevel"] = 72,
-								["tier"] = 3,
+								["requiredArtifactLevel"] = 75,
+								["isChosen"] = true,
 								["canChoose"] = false,
 								["powerID"] = 318,
+								["tier"] = 3,
 								["icon"] = 132217,
-								["isChosen"] = false,
 								["spellID"] = 190520,
 							}, -- [5]
 							{
-								["requiredArtifactLevel"] = 72,
-								["tier"] = 3,
+								["requiredArtifactLevel"] = 75,
+								["isChosen"] = false,
 								["canChoose"] = false,
 								["powerID"] = 315,
+								["tier"] = 3,
 								["icon"] = 132330,
-								["isChosen"] = false,
 								["spellID"] = 190467,
 							}, -- [6]
 						},
-					}, -- [2]
-					{
 						["relic"] = {
 							"Mysterious Petrified Egg", -- [1]
 							1769066, -- [2]
 							"Life", -- [3]
 							"|cffa335ee|Hitem:152050:::::::::::5:3:3611:1487:3528:::|h[Mysterious Petrified Egg]|h|r", -- [4]
 						},
-						["traits"] = {
-							{
-								["requiredArtifactLevel"] = 0,
-								["tier"] = 1,
-								["canChoose"] = false,
-								["powerID"] = 1739,
-								["icon"] = 1033184,
-								["isChosen"] = true,
-								["spellID"] = 250879,
-							}, -- [1]
-							{
-								["requiredArtifactLevel"] = 66,
-								["tier"] = 2,
-								["canChoose"] = false,
-								["powerID"] = 1779,
-								["icon"] = 1394892,
-								["isChosen"] = true,
-								["spellID"] = 252888,
-							}, -- [2]
-							{
-								["requiredArtifactLevel"] = 66,
-								["tier"] = 2,
-								["canChoose"] = false,
-								["powerID"] = 1775,
-								["icon"] = 458412,
-								["isChosen"] = false,
-								["spellID"] = 252207,
-							}, -- [3]
-							{
-								["requiredArtifactLevel"] = 75,
-								["tier"] = 3,
-								["canChoose"] = false,
-								["powerID"] = 317,
-								["icon"] = 132294,
-								["isChosen"] = false,
-								["spellID"] = 190514,
-							}, -- [4]
-							{
-								["requiredArtifactLevel"] = 75,
-								["tier"] = 3,
-								["canChoose"] = false,
-								["powerID"] = 318,
-								["icon"] = 132217,
-								["isChosen"] = true,
-								["spellID"] = 190520,
-							}, -- [5]
-							{
-								["requiredArtifactLevel"] = 75,
-								["tier"] = 3,
-								["canChoose"] = false,
-								["powerID"] = 315,
-								["icon"] = 132330,
-								["isChosen"] = false,
-								["spellID"] = 190467,
-							}, -- [6]
-						},
 					}, -- [3]
 					["crucibled"] = true,
-					["timestamp"] = 113114.789,
+					["timestamp"] = 11154.156,
 					["level"] = 75,
 				},
 				[128861] = {
