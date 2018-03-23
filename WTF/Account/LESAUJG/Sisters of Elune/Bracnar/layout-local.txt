@@ -41,10 +41,3 @@ X: -155
 Y: -33
 W: 250
 H: 727
-Frame: AmrUiFrame1
-FrameLevel: 1
-Anchor: LEFT
-X: 55
-Y: -95
-W: 1000
-H: 700
