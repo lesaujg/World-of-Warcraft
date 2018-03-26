@@ -104,11 +104,11 @@ AddOnSkinsDB = {
 		["Clothgar - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
 			["TalentSetManager"] = true,
-			["Details"] = true,
 			["TomeOfTeleportation"] = true,
-			["Bagnon"] = true,
+			["Details"] = true,
 			["Blizzard_Transmogrify"] = true,
 			["WeakAuras"] = true,
+			["Bagnon"] = true,
 		},
 	},
 }
