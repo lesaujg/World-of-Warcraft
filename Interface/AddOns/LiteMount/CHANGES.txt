@@ -1,18 +1,37 @@
-tag 28b161e6ae3ac6c75d4aaec481a0c6c16166f70c 7.3.19
+tag c0bab325dabaa679f00384e84e58c2ca02bdbbb6 7.3.20
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Mon Mar 12 21:26:10 2018 +1100
+Date:	Mon Mar 26 07:44:00 2018 +1100
 
-Maybe fixed IsFlyableArea()? I hope so or I'm in trouble.
+Tagging 7.3.20
 
-commit 3b252e5180767152b3e4dd865ab5761bbe6e2763
+Fix one problem with shapeshift forms: rogues and vanish/subterfuge.
+
+There is still another problem with forms that mounting doesn't cancel.
+If you manually cancel them after mounting, dismount will reapply them
+instead of dismounting. Needs more thought.
+
+commit 92c768b04b2fc382ea61df579330a3865548b454
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sun Mar 11 15:29:37 2018 +1100
+Date:   Sun Mar 25 10:24:44 2018 +1100
 
-    Update for repaired IsFlyableArea()
+    Fix bug with Vanish/Subterfuge buff.
+    They count as form 2 but GetShapeshiftFormInfo(2) returns nil
 
-commit 05cb19d4918f203a77baa58e4eff85f08022efff
+commit 47cc52cca3eb5ac396661bc3cb1d1fb0ad647c5b
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sat Feb 24 15:12:09 2018 +1100
+Date:   Thu Mar 15 11:48:08 2018 +1100
 
-    Merge updated deDE localization
+    Reorg favorite code positoin very very slightly
+
+commit 6c60cec0f1e53fd7dcd0d6714690ae263ea320e0
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Thu Mar 15 11:40:49 2018 +1100
+
+    Update descriptions of journal calls based on Blizzard official doc
+
+commit dee3b7fc47052d04b7c2507154001a4ebc379545
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Thu Mar 15 11:35:41 2018 +1100
+
+    Clean up location after IsFlyableArea fix
 
