@@ -1,1 +1,15 @@
 Version: 1
+Frame: TSMMainFrame1
+FrameLevel: 0
+Anchor: LEFT
+X: 77
+Y: -77
+W: 1148
+H: 795
+Frame: TSMCraftingTradeSkillFrame
+FrameLevel: 0
+Anchor: LEFT
+X: 118
+Y: 119
+W: 410
+H: 517
