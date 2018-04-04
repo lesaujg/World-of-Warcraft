@@ -25,113 +25,118 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
+		["date"] = "Tuesday 4/3",
+		["rows"] = 3,
+	}, -- [1]
+	{
 		["date"] = "Monday 4/2",
 		["rows"] = 5,
-	}, -- [1]
+	}, -- [2]
 	{
 		["date"] = "Sunday 4/1",
 		["rows"] = 2,
-	}, -- [2]
+	}, -- [3]
 	{
 		["date"] = "Thursday 3/29",
 		["rows"] = 3,
-	}, -- [3]
+	}, -- [4]
 	{
 		["date"] = "Tuesday 3/27",
 		["rows"] = 3,
-	}, -- [4]
+	}, -- [5]
 	{
 		["date"] = "Monday 3/26",
 		["rows"] = 3,
-	}, -- [5]
+	}, -- [6]
 	{
 		["date"] = "Sunday 3/25",
 		["rows"] = 7,
-	}, -- [6]
+	}, -- [7]
 	{
 		["date"] = "Saturday 3/24",
 		["rows"] = 1,
-	}, -- [7]
+	}, -- [8]
 	{
 		["date"] = "Friday 3/23",
 		["rows"] = 2,
-	}, -- [8]
+	}, -- [9]
 	{
 		["date"] = "Thursday 3/22",
 		["rows"] = 3,
-	}, -- [9]
+	}, -- [10]
 	{
 		["date"] = "Wednesday 3/21",
 		["rows"] = 4,
-	}, -- [10]
+	}, -- [11]
 	{
 		["date"] = "Tuesday 3/20",
 		["rows"] = 2,
-	}, -- [11]
+	}, -- [12]
 	{
 		["date"] = "Monday 3/19",
 		["rows"] = 2,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Sunday 3/11",
 		["rows"] = 4,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Thursday 3/8",
 		["rows"] = 1,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Wednesday 3/7",
 		["rows"] = 2,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Monday 3/5",
 		["rows"] = 6,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Friday 3/2",
 		["rows"] = 2,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Thursday 3/1",
 		["rows"] = 3,
-	}, -- [18]
+	}, -- [19]
 	{
 		["date"] = "Tuesday 2/27",
 		["rows"] = 2,
-	}, -- [19]
-	{
-		["date"] = "Monday 2/26",
-		["rows"] = 4,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
+	{
+		["The Wardens"] = 500,
+		["Army of the Light"] = 375,
+		["Argussian Reach"] = 1300,
+	}, -- [1]
 	{
 		["Argussian Reach"] = 263,
 		["Highmountain Tribe"] = 500,
 		["Court of Farondis"] = 338,
 		["Army of the Light"] = 1375,
 		["Dreamweavers"] = 3000,
-	}, -- [1]
+	}, -- [2]
 	{
 		["Army of the Light"] = 3877,
 		["Argussian Reach"] = 2127,
-	}, -- [2]
+	}, -- [3]
 	{
 		["Army of the Light"] = 1025,
 		["Valarjar"] = 1612,
 		["Argussian Reach"] = 2025,
-	}, -- [3]
+	}, -- [4]
 	{
 		["The Nightfallen"] = 500,
 		["The Wardens"] = 500,
 		["Highmountain Tribe"] = 1500,
-	}, -- [4]
+	}, -- [5]
 	{
 		["The Nightfallen"] = 400,
 		["Court of Farondis"] = 150,
 		["Dreamweavers"] = 1500,
-	}, -- [5]
+	}, -- [6]
 	{
 		["The Nightfallen"] = 650,
 		["Valarjar"] = 1800,
@@ -140,46 +145,46 @@ FactionAddictLogEntries = {
 		["Court of Farondis"] = 900,
 		["Army of the Light"] = 1000,
 		["Dreamweavers"] = 250,
-	}, -- [6]
+	}, -- [7]
 	{
 		["Highmountain Tribe"] = 75,
-	}, -- [7]
+	}, -- [8]
 	{
 		["Armies of Legionfall"] = 2145,
 		["Highmountain Tribe"] = 75,
-	}, -- [8]
+	}, -- [9]
 	{
 		["The Wardens"] = 500,
 		["Court of Farondis"] = 1500,
 		["Dreamweavers"] = 2000,
-	}, -- [9]
+	}, -- [10]
 	{
 		["The Wardens"] = 2000,
 		["Court of Farondis"] = 150,
 		["Army of the Light"] = 1000,
 		["Valarjar"] = 4000,
-	}, -- [10]
+	}, -- [11]
 	{
 		["The Wardens"] = 575,
 		["Court of Farondis"] = 475,
-	}, -- [11]
+	}, -- [12]
 	{
 		["The Nightfallen"] = 2300,
 		["Army of the Light"] = 75,
-	}, -- [12]
+	}, -- [13]
 	{
 		["The Wardens"] = 2000,
 		["Dreamweavers"] = 500,
 		["Army of the Light"] = 1000,
 		["Highmountain Tribe"] = 1500,
-	}, -- [13]
+	}, -- [14]
 	{
 		["Army of the Light"] = 1000,
-	}, -- [14]
+	}, -- [15]
 	{
 		["The Wardens"] = 500,
 		["Dreamweavers"] = 500,
-	}, -- [15]
+	}, -- [16]
 	{
 		["Valarjar"] = 1800,
 		["Argussian Reach"] = 2500,
@@ -187,25 +192,19 @@ FactionAddictLogEntries = {
 		["Talonpriest Ishaal"] = 20,
 		["Army of the Light"] = 2075,
 		["Dreamweavers"] = 1725,
-	}, -- [16]
+	}, -- [17]
 	{
 		["Court of Farondis"] = 500,
 		["Dreamweavers"] = 1500,
-	}, -- [17]
+	}, -- [18]
 	{
 		["The Wardens"] = 1500,
 		["Court of Farondis"] = 500,
 		["Army of the Light"] = 1000,
-	}, -- [18]
+	}, -- [19]
 	{
 		["The Wardens"] = 500,
 		["Highmountain Tribe"] = 1500,
-	}, -- [19]
-	{
-		["Dreamweavers"] = 1500,
-		["Court of Farondis"] = 500,
-		["Army of the Light"] = 1000,
-		["Talonpriest Ishaal"] = 30,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
@@ -335,12 +334,12 @@ FactionAddictConfigIsInactive = {
 	[1278] = false,
 	[1690] = false,
 	[1388] = false,
-	[81] = false,
+	[1280] = false,
 	[1279] = false,
 	[69] = false,
-	[1280] = false,
-	[1216] = false,
 	[2045] = false,
+	[1216] = false,
+	[81] = false,
 	[2170] = false,
 	[1345] = false,
 	[93] = false,
