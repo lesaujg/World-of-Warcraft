@@ -1,1 +1,8 @@
 Version: 1
+Frame: TSMCraftingTradeSkillFrame
+FrameLevel: 0
+Anchor: LEFT
+X: 119
+Y: 119
+W: 410
+H: 517
