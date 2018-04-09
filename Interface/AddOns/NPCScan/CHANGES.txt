@@ -1,10 +1,28 @@
-tag 76cf862c1d84aa7b6b8bc80bd0a69cbfe3934fa7 7.3.5.3
-Author:	Telshin <aldrt@twitch.tv>
-Date:	Fri Feb 23 18:46:56 2018 -0800
+tag d6ce858b69265fd882e2f2c058f743b5cd9f2a99 7.3.5.5
+Author:	James D. Callahan III <jcallahan@curse.com>
+Date:	Thu Apr 5 09:53:15 2018 -0500
 
-commit c11d617ae2766bdb9dd686ae20528f0ee2b40f71
+commit e6de6e8ba14621c736e9792bcc6657993a7c9123
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Fri Oct 27 03:59:26 2017 -0500
+Date:   Thu Apr 5 09:24:10 2018 -0500
 
-    Do not alert on NPCs from the World Map if they have no associated quest - fixes https://www.wowace.com/projects/npcscan/issues/188
+    UpdateScanList: Send a NPCScan_ScannerDataUpdated message along with scannerData, so things can subscribe instead of UpdateScanList needing to be aware of them.
+
+commit c8473386348b4da89386b68fd910f8a9250809a8
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Thu Apr 5 04:30:38 2018 -0500
+
+    UpdateScanList: Pull the mapID from HereBeDragons if it isn't supplied, which is the case for almost all calls to the method.
+
+commit 7767990bbd10eacbc3beebd6dbe2b73a293aebf8
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Thu Apr 5 03:57:13 2018 -0500
+
+    Add the ability to ignore an NPC directly - with a visual indicator - from the targeting frame by right-clicking on the dismiss button.
+
+commit 5160d1c6305e749edf791b1b1b0d1a9b5a83650c
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Thu Apr 5 03:36:36 2018 -0500
+
+    Replace inline editing of the scan list with a full refresh when an eligible NPC dies so everything that depends on the update, such as the search macro, will fire with correct data.
 

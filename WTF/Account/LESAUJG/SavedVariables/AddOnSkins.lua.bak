@@ -99,9 +99,9 @@ AddOnSkinsDB = {
 			["Blizzard_WorldStateCaptureBar"] = true,
 			["TalentSetManager"] = true,
 			["Details"] = true,
-			["TomeOfTeleportation"] = true,
-			["Blizzard_Transmogrify"] = true,
 			["Bagnon"] = true,
+			["Blizzard_Transmogrify"] = true,
+			["TomeOfTeleportation"] = true,
 		},
 		["Uldaris - Sisters of Elune"] = {
 			["Blizzard_WorldStateCaptureBar"] = true,
