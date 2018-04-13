@@ -11,12 +11,14 @@ local table = _G.table
 -- AddOn namespace.
 -- ----------------------------------------------------------------------------
 local AddOnFolderName, private = ...
+local Data = private.Data
+local EventMessage = private.EventMessage
 
 local LibStub = _G.LibStub
-local NPCScan = LibStub("AceAddon-3.0"):GetAddon(AddOnFolderName)
-
 local AceEvent = LibStub("AceEvent-3.0")
 local LibSharedMedia = LibStub("LibSharedMedia-3.0")
+local NPCScan = LibStub("AceAddon-3.0"):GetAddon(AddOnFolderName)
+
 
 _G.BINDING_HEADER_NPCSCAN = AddOnFolderName
 _G["BINDING_NAME_CLICK NPCScan_RecentTargetButton:LeftButton"] = "Target latest NPC"
@@ -91,7 +93,7 @@ local function DismissButton_OnClick(self, mouseButton)
 		NPCScan:UpdateScanList()
 
 		if isBlacklisted then
-			NPCScan:SendMessage("NPCSCan_DismissTargetButtonByID", parent.npcID)
+			NPCScan:SendMessage(EventMessage.DismissTargetButtonByID, parent.npcID)
 			NPCScan:Printf(_G.ERR_IGNORE_ADDED_S, NPCScan:GetNPCNameFromID(parent.npcID))
 		end
 
@@ -196,7 +198,7 @@ end
 function TargetButton:UpdateData(_, data)
 	if data.npcID == self.npcID then
 		if data.unitClassification and self.__classification ~= data.unitClassification and not _G.InCombatLockdown() then
-			self:SendMessage("NPCScan_TargetButtonNeedsReclassified", self, data)
+			self:SendMessage(EventMessage.TargetButtonNeedsReclassified, self, data)
 			return
 		end
 
@@ -230,7 +232,7 @@ end
 -- ----------------------------------------------------------------------------
 function TargetButton:Activate(data)
 	self.npcID = data.npcID
-	self.npcData = private.NPCData[self.npcID]
+	self.npcData = Data.NPCs[self.npcID]
 	self.npcName = data.npcName
 
 	self:SetSpecialText()
@@ -290,7 +292,7 @@ function TargetButton:Activate(data)
 	self:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 	self:RegisterEvent("PLAYER_REGEN_ENABLED")
 	self:RegisterEvent("PLAYER_REGEN_DISABLED")
-	self:RegisterMessage("NPCScan_UnitInformationAvailable", "UpdateData")
+	self:RegisterMessage(EventMessage.UnitInformationAvailable, "UpdateData")
 end
 
 function TargetButton:Deactivate()
@@ -347,7 +349,7 @@ function TargetButton:RequestDeactivate()
 			return
 		end
 
-		self:SendMessage("NPCScan_TargetButtonRequestDeactivate", self)
+		self:SendMessage(EventMessage.TargetButtonRequestDeactivate, self)
 	end
 end
 
@@ -387,7 +389,7 @@ function TargetButton:SetSpecialText(fakeCriteriaCompleted)
 
 	if npcData and npcData.achievementID then
 		local isCriteriaCompleted = fakeCriteriaCompleted or npcData.isCriteriaCompleted
-		local achievementName = private.AchievementData[npcData.achievementID].name
+		local achievementName = Data.Achievements[npcData.achievementID].name
 
 		self.SpecialText:SetFormattedText("%s%s|r", isCriteriaCompleted and _G.GREEN_FONT_COLOR_CODE or _G.RED_FONT_COLOR_CODE, achievementName)
 	end
@@ -449,7 +451,7 @@ do
 
 		function macroButton:PLAYER_REGEN_ENABLED()
 			if self.scannerData then
-				self:Update(_, self.scannerData)
+				self:Update("PLAYER_REGEN_ENABLED", self.scannerData)
 				self.scannerData = nil
 			end
 		end
@@ -477,7 +479,7 @@ do
 			self:SetAttribute("macrotext", table.concat(macroLines, "\n"))
 		end
 
-		macroButton:RegisterMessage("NPCScan_ScannerDataUpdated", "Update")
+		macroButton:RegisterMessage(EventMessage.ScannerDataUpdated, "Update")
 
 		ClassificationDecorators = {
 			elite = private.DecorateEliteTargetButton,

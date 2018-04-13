@@ -1,28 +1,10 @@
-tag d6ce858b69265fd882e2f2c058f743b5cd9f2a99 7.3.5.5
+tag 0adba7ed5a88e815ecda48fab7ffffb08e9ca466 7.3.5.8
 Author:	James D. Callahan III <jcallahan@curse.com>
-Date:	Thu Apr 5 09:53:15 2018 -0500
+Date:	Wed Apr 11 20:13:33 2018 -0500
 
-commit e6de6e8ba14621c736e9792bcc6657993a7c9123
+commit 047a849633c638bf89719bec3e29442b9464803e
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Thu Apr 5 09:24:10 2018 -0500
+Date:   Wed Apr 11 20:11:57 2018 -0500
 
-    UpdateScanList: Send a NPCScan_ScannerDataUpdated message along with scannerData, so things can subscribe instead of UpdateScanList needing to be aware of them.
-
-commit c8473386348b4da89386b68fd910f8a9250809a8
-Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Thu Apr 5 04:30:38 2018 -0500
-
-    UpdateScanList: Pull the mapID from HereBeDragons if it isn't supplied, which is the case for almost all calls to the method.
-
-commit 7767990bbd10eacbc3beebd6dbe2b73a293aebf8
-Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Thu Apr 5 03:57:13 2018 -0500
-
-    Add the ability to ignore an NPC directly - with a visual indicator - from the targeting frame by right-clicking on the dismiss button.
-
-commit 5160d1c6305e749edf791b1b1b0d1a9b5a83650c
-Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Thu Apr 5 03:36:36 2018 -0500
-
-    Replace inline editing of the scan list with a full refresh when an eligible NPC dies so everything that depends on the update, such as the search macro, will fire with correct data.
+    Fix display for Detection ➜ Continent
 
