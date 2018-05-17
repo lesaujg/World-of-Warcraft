@@ -46,7 +46,6 @@ C["Bags"] = {
 	["ItemsPerRow"] = 11,
 	["PulseNewItem"] = true,
 	["Font"] = "Tukui Outline",
-	["BagFilter"] = false,
 }
 
 C["Chat"] = {
@@ -76,7 +75,6 @@ C["DataTexts"] = {
 
 C["Merchant"] = {
 	["AutoSellGrays"] = true,
-	["SellMisc"] = true,
 	["AutoRepair"] = true,
 	["UseGuildRepair"] = false,
 }

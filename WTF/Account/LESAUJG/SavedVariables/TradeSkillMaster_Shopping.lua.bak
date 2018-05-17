@@ -1,24 +1,8 @@
 
 TradeSkillMaster_ShoppingDB = {
-	["_currentProfile"] = {
-		["Sanjuri - Sisters of Elune"] = "Default",
-		["Galinar - Sisters of Elune"] = "Default",
-		["Guldahka - Turalyon"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
-		["Torinar - Sisters of Elune"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
-		["Orig - Sisters of Elune"] = "Default",
-		["Mandelbrot - Sisters of Elune"] = "Default",
-		["Edaka - Sisters of Elune"] = "Default",
-		["Palani - Sisters of Elune"] = "Default",
-		["Belrath - Sisters of Elune"] = "Default",
-		["Leanara - Sisters of Elune"] = "Default",
-		["Herbinator - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
-	},
-	["_version"] = 3,
-	["g@ @sniperVendorPrice"] = true,
+	["g@ @sniperCustomPrice"] = "0c",
+	["g@ @maxDeSearchPercent"] = 1,
+	["g@ @postUndercut"] = "1c",
 	["g@ @postBidPercent"] = 0.95,
 	["_scopeKeys"] = {
 		["char"] = {
@@ -38,686 +22,702 @@ TradeSkillMaster_ShoppingDB = {
 			"Edaka - Sisters of Elune", -- [14]
 			"Palani - Sisters of Elune", -- [15]
 		},
-		["factionrealm"] = {
-			"Alliance - Sisters of Elune", -- [1]
-			"Horde - Turalyon", -- [2]
+		["realm"] = {
+			"Sisters of Elune", -- [1]
+			"Turalyon", -- [2]
 		},
 		["profile"] = {
 			"Default", -- [1]
 		},
-		["realm"] = {
-			"Sisters of Elune", -- [1]
-			"Turalyon", -- [2]
+		["factionrealm"] = {
+			"Alliance - Sisters of Elune", -- [1]
+			"Horde - Turalyon", -- [2]
 		},
 	},
 	["g@ @helpPlatesShown"] = {
 		["auction"] = true,
 	},
-	["g@ @postUndercut"] = "1c",
-	["g@ @minDeSearchLvl"] = 1,
-	["g@ @maxDeSearchLvl"] = 735,
+	["g@ @sniperVendorPrice"] = true,
 	["_hash"] = 1861581,
-	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
 		{
-			["lastSearch"] = 1524616105,
+			["lastSearch"] = 1526424181,
+			["name"] = "Flask of the Seventh Demon",
+			["filter"] = "Flask of the Seventh Demon",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [1]
+		{
+			["lastSearch"] = 1526424159,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [1]
+		}, -- [2]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1526260195,
+			["name"] = "celestial",
+			["filter"] = "celestial",
+		}, -- [3]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1526260189,
+			["name"] = "celeestial",
+			["filter"] = "celeestial",
+		}, -- [4]
+		{
+			["lastSearch"] = 1525749815,
+			["name"] = "Nightborne Delicacy Platter",
+			["filter"] = "Nightborne Delicacy Platter",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [5]
+		{
+			["lastSearch"] = 1525661606,
+			["name"] = "Obliterum/exact",
+			["filter"] = "Obliterum/exact",
+			["searchMode"] = "normal",
+			["isFavorite"] = true,
+		}, -- [6]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1525312175,
+			["name"] = "nat Pagle's",
+			["filter"] = "nat Pagle's",
+		}, -- [7]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1525312152,
+			["name"] = "nat",
+			["filter"] = "nat",
+		}, -- [8]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1524435744,
 			["name"] = "barding",
 			["filter"] = "barding",
-		}, -- [2]
+		}, -- [9]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1524400202,
 			["name"] = "Wild Jade/ignorede",
 			["filter"] = "Wild Jade/ignorede",
-		}, -- [3]
+		}, -- [10]
 		{
 			["lastSearch"] = 1524195764,
 			["name"] = "Chaos Crystal/exact",
 			["filter"] = "Chaos Crystal/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [4]
-		{
-			["lastSearch"] = 1524024003,
-			["name"] = "Flask of the Seventh Demon",
-			["filter"] = "Flask of the Seventh Demon",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [5]
+		}, -- [11]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1523888109,
 			["name"] = "Maelstrom Crystal/exact",
 			["filter"] = "Maelstrom Crystal/exact",
-		}, -- [6]
+		}, -- [12]
 		{
 			["lastSearch"] = 1523658728,
 			["name"] = "Leylight Shard/exact",
 			["filter"] = "Leylight Shard/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [7]
+		}, -- [13]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1520472160,
 			["name"] = "demonsteel bar",
 			["filter"] = "demonsteel bar",
-		}, -- [8]
+		}, -- [14]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1520472131,
 			["name"] = "Infernal Brimstone/exact",
 			["filter"] = "Infernal Brimstone/exact",
-		}, -- [9]
-		{
-			["lastSearch"] = 1519533461,
-			["name"] = "Nightborne Delicacy Platter",
-			["filter"] = "Nightborne Delicacy Platter",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [10]
+		}, -- [15]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1518890390,
 			["name"] = "frozen orb",
 			["filter"] = "frozen orb",
-		}, -- [11]
-		{
-			["lastSearch"] = 1517688066,
-			["name"] = "Obliterum/exact",
-			["filter"] = "Obliterum/exact",
-			["searchMode"] = "normal",
-			["isFavorite"] = true,
-		}, -- [12]
+		}, -- [16]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1516043610,
 			["name"] = "deadly deep",
 			["filter"] = "deadly deep",
-		}, -- [13]
+		}, -- [17]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1515290313,
 			["name"] = "empyrium",
 			["filter"] = "empyrium",
-		}, -- [14]
+		}, -- [18]
 		{
 			["lastSearch"] = 1515111702,
 			["name"] = "potion of Prolonged Power",
 			["filter"] = "potion of Prolonged Power",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [15]
+		}, -- [19]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1514990610,
 			["name"] = "void crystal",
 			["filter"] = "void crystal",
-		}, -- [16]
+		}, -- [20]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1514946565,
 			["name"] = "forzen orb",
 			["filter"] = "forzen orb",
-		}, -- [17]
+		}, -- [21]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1514946514,
 			["name"] = "Felwort/exact",
 			["filter"] = "Felwort/exact",
-		}, -- [18]
+		}, -- [22]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1513307191,
 			["name"] = "Maelstrom Crystal",
 			["filter"] = "Maelstrom Crystal",
-		}, -- [19]
+		}, -- [23]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1510528604,
 			["name"] = "Essence of Water/exact",
 			["filter"] = "Essence of Water/exact",
-		}, -- [20]
+		}, -- [24]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1510528526,
 			["name"] = "Eternal Water/x3",
 			["filter"] = "Eternal Water/x3",
-		}, -- [21]
+		}, -- [25]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1509842142,
 			["name"] = "Vermilion Onyx",
 			["filter"] = "Vermilion Onyx",
-		}, -- [22]
+		}, -- [26]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1509842123,
 			["name"] = "wild jade",
 			["filter"] = "wild jade",
-		}, -- [23]
+		}, -- [27]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1507467003,
 			["name"] = "Maelstrom Crystal/ignorede",
 			["filter"] = "Maelstrom Crystal/ignorede",
-		}, -- [24]
+		}, -- [28]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1507466966,
 			["name"] = "Sha Crystal/ignorede",
 			["filter"] = "Sha Crystal/ignorede",
-		}, -- [25]
+		}, -- [29]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1507259727,
 			["name"] = "Abyss Crystal/ignorede",
 			["filter"] = "Abyss Crystal/ignorede",
-		}, -- [26]
+		}, -- [30]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1507259709,
 			["name"] = "River's Heart/ignorede",
 			["filter"] = "River's Heart/ignorede",
-		}, -- [27]
+		}, -- [31]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1504546303,
 			["name"] = "mask",
 			["filter"] = "mask",
-		}, -- [28]
+		}, -- [32]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1504546296,
 			["name"] = "shadowveave mask",
 			["filter"] = "shadowveave mask",
-		}, -- [29]
+		}, -- [33]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1504238517,
 			["name"] = "void crystal",
 			["filter"] = "void crystal",
-		}, -- [30]
+		}, -- [34]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1503104021,
 			["name"] = "Volatile Air/exact",
 			["filter"] = "Volatile Air/exact",
-		}, -- [31]
+		}, -- [35]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1501257691,
 			["name"] = "Cursed Queenfish/exact",
 			["filter"] = "Cursed Queenfish/exact",
-		}, -- [32]
+		}, -- [36]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1500249988,
 			["name"] = "dreamleaf",
 			["filter"] = "dreamleaf",
-		}, -- [33]
+		}, -- [37]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1499051420,
 			["name"] = "Vermilion Onyx/ignorede",
 			["filter"] = "Vermilion Onyx/ignorede",
-		}, -- [34]
+		}, -- [38]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1499051396,
 			["name"] = "Imperial Amethyst/ignorede",
 			["filter"] = "Imperial Amethyst/ignorede",
-		}, -- [35]
+		}, -- [39]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1498841414,
 			["name"] = "Heavenly Shard/ignorede",
 			["filter"] = "Heavenly Shard/ignorede",
-		}, -- [36]
+		}, -- [40]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1498693358,
 			["name"] = "b",
 			["filter"] = "b",
-		}, -- [37]
+		}, -- [41]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1498521298,
 			["name"] = "Vermilion Onyx/x2/ignorede",
 			["filter"] = "Vermilion Onyx/x2/ignorede",
-		}, -- [38]
+		}, -- [42]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1498001378,
 			["name"] = "bacon",
 			["filter"] = "bacon",
-		}, -- [39]
+		}, -- [43]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497840840,
 			["name"] = "Slice of Bacon/exact",
 			["filter"] = "Slice of Bacon/exact",
-		}, -- [40]
+		}, -- [44]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497818921,
 			["name"] = "Titansteel Bar/exact",
 			["filter"] = "Titansteel Bar/exact",
-		}, -- [41]
+		}, -- [45]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497818915,
 			["name"] = "ti2",
 			["filter"] = "ti2",
-		}, -- [42]
+		}, -- [46]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497801904,
 			["name"] = "cobalt ore",
 			["filter"] = "cobalt ore",
-		}, -- [43]
+		}, -- [47]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497801894,
 			["name"] = "eternium ore",
 			["filter"] = "eternium ore",
-		}, -- [44]
+		}, -- [48]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497747297,
 			["name"] = "adamantite ",
 			["filter"] = "adamantite ",
-		}, -- [45]
+		}, -- [49]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497747265,
 			["name"] = "fel iron ore",
 			["filter"] = "fel iron ore",
-		}, -- [46]
+		}, -- [50]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497746098,
 			["name"] = "thorium ore",
 			["filter"] = "thorium ore",
-		}, -- [47]
+		}, -- [51]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497744876,
 			["name"] = "amber",
 			["filter"] = "amber",
-		}, -- [48]
+		}, -- [52]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497669865,
 			["name"] = "ore",
 			["filter"] = "ore",
-		}, -- [49]
+		}, -- [53]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497669846,
 			["name"] = "mithril ore",
 			["filter"] = "mithril ore",
-		}, -- [50]
+		}, -- [54]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497669727,
 			["name"] = "gold ore",
 			["filter"] = "gold ore",
-		}, -- [51]
+		}, -- [55]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497669698,
 			["name"] = "iron ore",
 			["filter"] = "iron ore",
-		}, -- [52]
+		}, -- [56]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497669085,
 			["name"] = "tin ore",
 			["filter"] = "tin ore",
-		}, -- [53]
+		}, -- [57]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497669076,
 			["name"] = "copper ore",
 			["filter"] = "copper ore",
-		}, -- [54]
+		}, -- [58]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497669004,
 			["name"] = "silver ore",
 			["filter"] = "silver ore",
-		}, -- [55]
+		}, -- [59]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497668507,
 			["name"] = "saronite",
 			["filter"] = "saronite",
-		}, -- [56]
+		}, -- [60]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497644367,
 			["name"] = "mithirl ore",
 			["filter"] = "mithirl ore",
-		}, -- [57]
+		}, -- [61]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497641401,
 			["name"] = "titan",
 			["filter"] = "titan",
-		}, -- [58]
+		}, -- [62]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497641389,
 			["name"] = "adamantite bar",
 			["filter"] = "adamantite bar",
-		}, -- [59]
+		}, -- [63]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497634274,
 			["name"] = "saronite bar",
 			["filter"] = "saronite bar",
-		}, -- [60]
+		}, -- [64]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497632864,
 			["name"] = "Crystallized Earth/exact",
 			["filter"] = "Crystallized Earth/exact",
-		}, -- [61]
+		}, -- [65]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497632487,
 			["name"] = "adaman",
 			["filter"] = "adaman",
-		}, -- [62]
+		}, -- [66]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497632474,
 			["name"] = "bar",
 			["filter"] = "bar",
-		}, -- [63]
+		}, -- [67]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497632417,
 			["name"] = "khorium bar",
 			["filter"] = "khorium bar",
-		}, -- [64]
+		}, -- [68]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497632400,
 			["name"] = "fel iron bar",
 			["filter"] = "fel iron bar",
-		}, -- [65]
+		}, -- [69]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497632367,
 			["name"] = "Essence of Fire/exact",
 			["filter"] = "Essence of Fire/exact",
-		}, -- [66]
+		}, -- [70]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497632358,
 			["name"] = "copper bar",
 			["filter"] = "copper bar",
-		}, -- [67]
+		}, -- [71]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497632344,
 			["name"] = "thorium bar",
 			["filter"] = "thorium bar",
-		}, -- [68]
+		}, -- [72]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497629339,
 			["name"] = "earth",
 			["filter"] = "earth",
-		}, -- [69]
+		}, -- [73]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497629294,
 			["name"] = "cobalt bar",
 			["filter"] = "cobalt bar",
-		}, -- [70]
+		}, -- [74]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497557784,
 			["name"] = " - mark",
 			["filter"] = " - mark",
-		}, -- [71]
+		}, -- [75]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497557719,
 			["name"] = "enchant neck - mark",
 			["filter"] = "enchant neck - mark",
-		}, -- [72]
+		}, -- [76]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1497557704,
 			["name"] = "enchant neck",
 			["filter"] = "enchant neck",
-		}, -- [73]
+		}, -- [77]
 		{
 			["lastSearch"] = 1494214305,
 			["name"] = "Potion of Deadly Grace",
 			["filter"] = "Potion of Deadly Grace",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [74]
+		}, -- [78]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1493206876,
 			["name"] = "idol of",
 			["filter"] = "idol of",
-		}, -- [75]
+		}, -- [79]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1493134074,
 			["name"] = "greater cosm",
 			["filter"] = "greater cosm",
-		}, -- [76]
+		}, -- [80]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1492648639,
 			["name"] = "Dream Shard/ignorede",
 			["filter"] = "Dream Shard/ignorede",
-		}, -- [77]
+		}, -- [81]
 		{
 			["searchMode"] = "crafting",
 			["lastSearch"] = 1492648148,
 			["name"] = "Greater Cosmic Essence",
 			["filter"] = "Greater Cosmic Essence",
-		}, -- [78]
+		}, -- [82]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491871540,
 			["name"] = "goblin glider",
 			["filter"] = "goblin glider",
-		}, -- [79]
+		}, -- [83]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491870836,
 			["name"] = "fur",
 			["filter"] = "fur",
-		}, -- [80]
+		}, -- [84]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491870767,
 			["name"] = "glider",
 			["filter"] = "glider",
-		}, -- [81]
+		}, -- [85]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491830078,
 			["name"] = "Falcosaur Egg/exact",
 			["filter"] = "Falcosaur Egg/exact",
-		}, -- [82]
+		}, -- [86]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491829770,
 			["name"] = "Lean Shank/exact",
 			["filter"] = "Lean Shank/exact",
-		}, -- [83]
+		}, -- [87]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491829757,
 			["name"] = "Black Barracuda/exact",
 			["filter"] = "Black Barracuda/exact",
-		}, -- [84]
+		}, -- [88]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491829742,
 			["name"] = "Mossgill Perch/exact",
 			["filter"] = "Mossgill Perch/exact",
-		}, -- [85]
+		}, -- [89]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491829698,
 			["name"] = "Stormray/exact",
 			["filter"] = "Stormray/exact",
-		}, -- [86]
+		}, -- [90]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491829684,
 			["name"] = "Leyblood/exact",
 			["filter"] = "Leyblood/exact",
-		}, -- [87]
+		}, -- [91]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491829669,
 			["name"] = "Big Gamy Ribs/exact",
 			["filter"] = "Big Gamy Ribs/exact",
-		}, -- [88]
+		}, -- [92]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491829653,
 			["name"] = "Highmountain Salmon/exact",
 			["filter"] = "Highmountain Salmon/exact",
-		}, -- [89]
+		}, -- [93]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491829632,
 			["name"] = "Runescale Koi/exact",
 			["filter"] = "Runescale Koi/exact",
-		}, -- [90]
+		}, -- [94]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491829550,
 			["name"] = "silver m",
 			["filter"] = "silver m",
-		}, -- [91]
+		}, -- [95]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491708592,
 			["name"] = "leystone ore",
 			["filter"] = "leystone ore",
-		}, -- [92]
+		}, -- [96]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491708584,
 			["name"] = "falcosaur egg",
 			["filter"] = "falcosaur egg",
-		}, -- [93]
+		}, -- [97]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491696641,
 			["name"] = "leystone",
 			["filter"] = "leystone",
-		}, -- [94]
+		}, -- [98]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1491625178,
 			["name"] = "Nethershard Essence/exact",
 			["filter"] = "Nethershard Essence/exact",
-		}, -- [95]
+		}, -- [99]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1489975188,
 			["name"] = "blackrock ore",
 			["filter"] = "blackrock ore",
-		}, -- [96]
+		}, -- [100]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1489975176,
 			["name"] = "true iron ore",
 			["filter"] = "true iron ore",
-		}, -- [97]
+		}, -- [101]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1489974919,
 			["name"] = "loot",
 			["filter"] = "loot",
-		}, -- [98]
+		}, -- [102]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1489591896,
 			["name"] = "Tome of the Tranquil Mind/exact",
 			["filter"] = "Tome of the Tranquil Mind/exact",
-		}, -- [99]
+		}, -- [103]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1488939860,
 			["name"] = "arkhana",
 			["filter"] = "arkhana",
-		}, -- [100]
+		}, -- [104]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1488325528,
 			["name"] = "stonehide",
 			["filter"] = "stonehide",
-		}, -- [101]
+		}, -- [105]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1488325498,
 			["name"] = "silkweave",
 			["filter"] = "silkweave",
-		}, -- [102]
+		}, -- [106]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1488325492,
 			["name"] = "imbuded",
 			["filter"] = "imbuded",
-		}, -- [103]
+		}, -- [107]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1486613433,
 			["name"] = "koi",
 			["filter"] = "koi",
-		}, -- [104]
-		{
-			["searchMode"] = "crafting",
-			["lastSearch"] = 1486525089,
-			["name"] = "leylight shard",
-			["filter"] = "leylight shard",
-		}, -- [105]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1486167536,
-			["name"] = "Starlight Rose/exact",
-			["filter"] = "Starlight Rose/exact",
-		}, -- [106]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1486165175,
-			["name"] = "Fjarnskaggl/exact",
-			["filter"] = "Fjarnskaggl/exact",
-		}, -- [107]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1486088123,
-			["name"] = "flask of t",
-			["filter"] = "flask of t",
 		}, -- [108]
 	},
 	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["g@ @marketValueSource"] = "dbmarket",
+	["g@ @maxDeSearchLvl"] = 735,
+	["g@ @minDeSearchLvl"] = 1,
 	["g@ @normalPostPrice"] = "150% dbmarket",
-	["g@ @maxDeSearchPercent"] = 1,
-	["g@ @sniperCustomPrice"] = "0c",
+	["_version"] = 3,
+	["_currentProfile"] = {
+		["Sanjuri - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
+		["Guldahka - Turalyon"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Orig - Sisters of Elune"] = "Default",
+		["Mandelbrot - Sisters of Elune"] = "Default",
+		["Edaka - Sisters of Elune"] = "Default",
+		["Palani - Sisters of Elune"] = "Default",
+		["Belrath - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Leanara - Sisters of Elune"] = "Default",
+		["Torinar - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
+	},
 }
