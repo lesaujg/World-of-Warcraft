@@ -55,31 +55,54 @@ ACTIONS['Dismount'] =
     end
 
 -- Only cancel forms that we will activate (mount-style ones).
--- See: http://wowprogramming.com/docs/api/GetShapeshiftFormID
+-- See: https://wow.gamepedia.com/API_GetShapeshiftFormID
+-- Form IDs that you put here must be cancelled automatically on
+-- mounting.
 
-local prevFormName
+local savedFormName
+local restoreFormIDs = {
+    [1] = true,     -- Cat Form
+    [5] = true,     -- Bear Form
+    [31] = true,    -- Moonkin Form
+}
+
+-- This is really two actions in one but I didn't want people to have to
+-- modify their custom action lists. It should really be CancelForm and
+-- SaveForm separately, although then they need to be in that exact order so
+-- maybe having them together is better after all.
+--
+-- Half of the reason this is so complicated is that you can mount up in
+-- Moonkin form (but casting Moonkin form dismounts you).
 
 ACTIONS['CancelForm'] =
     function ()
         LM_Debug("Trying CancelForm")
 
         local curFormIndex = GetShapeshiftForm()
+        local curFormID = GetShapeshiftFormID()
         local inMountForm = curFormIndex > 0 and LM_PlayerMounts:GetMountByShapeshiftForm(curFormIndex)
 
-        LM_Debug("Previous form is " .. tostring(prevFormName))
+        LM_Debug("Previous form is " .. tostring(savedFormName))
 
-        if inMountForm or (IsMounted() and curFormIndex == 0) then
-            if prevFormName then
-                LM_Debug("Setting action to " .. prevFormName)
-                return LM_SecureAction:Spell(prevFormName)
+        -- The logic here is really ugly.
+
+        if inMountForm then
+            if savedFormName then
+                LM_Debug("Setting action to cancelform + " .. savedFormName)
+                return LM_SecureAction:Macro(format("%s\n/cast %s", SLASH_CANCELFORM1, savedFormName))
             end
-        elseif curFormIndex and curFormIndex > 0 then
+        elseif IsMounted() and curFormIndex == 0 then
+            if savedFormName then
+                LM_Debug("Setting action to dismount + " .. savedFormName)
+                return LM_SecureAction:Macro(format("%s\n/cast %s", SLASH_DISMOUNT1, savedFormName))
+            end
+        elseif curFormID and restoreFormIDs[curFormID] then
             local _, name = GetShapeshiftFormInfo(curFormIndex)
             LM_Debug("Saving current form " .. tostring(name) .. ".")
-            prevFormName = name
+            savedFormName = name
         else
             LM_Debug("Clearing saved form.")
-            prevFormName = nil
+            savedFormName = nil
         end
 
         if inMountForm and not LM_Options:IsExcludedMount(inMountForm) then
@@ -203,7 +226,7 @@ function LM_Actions:DefaultCombatMacro()
 
     local mt = "/dismount [mounted]\n"
 
-    local playerClass = select(2, UnitClass("player"))
+    local _, playerClass = UnitClass("player")
 
     if playerClass ==  "DRUID" then
         local forms = GetDruidMountForms()

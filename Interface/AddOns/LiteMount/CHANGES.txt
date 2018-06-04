@@ -1,37 +1,67 @@
-tag c0bab325dabaa679f00384e84e58c2ca02bdbbb6 7.3.20
+tag 380b536d2ba1b7a8899edf8d89da2068833adb00 7.3.21
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Mon Mar 26 07:44:00 2018 +1100
+Date:	Mon Jun 4 10:23:59 2018 +1000
 
-Tagging 7.3.20
+Releasing LiteMount 7.3.21
 
-Fix one problem with shapeshift forms: rogues and vanish/subterfuge.
+  - No longer tries to restore Ghost Wolf or stealth
 
-There is still another problem with forms that mounting doesn't cancel.
-If you manually cancel them after mounting, dismount will reapply them
-instead of dismounting. Needs more thought.
+  - Add Stag Form for druids
 
-commit 92c768b04b2fc382ea61df579330a3865548b454
+  - 'Default' button on action list settings only alters current list
+
+commit 8f0e90b3a41bb4beb309f37cd5e7d225985bfbda
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sun Mar 25 10:24:44 2018 +1100
+Date:   Mon Jun 4 10:21:25 2018 +1000
 
-    Fix bug with Vanish/Subterfuge buff.
-    They count as form 2 but GetShapeshiftFormInfo(2) returns nil
+    Rename prevFormName to savedFormName for clarity.
 
-commit 47cc52cca3eb5ac396661bc3cb1d1fb0ad647c5b
+commit 4571f1d9e253f9ee9e6c1e18c87bd653325193ac
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Mar 15 11:48:08 2018 +1100
+Date:   Fri Jun 1 11:15:03 2018 +1000
 
-    Reorg favorite code positoin very very slightly
+    Add Stag Form
 
-commit 6c60cec0f1e53fd7dcd0d6714690ae263ea320e0
+commit bce30b32bf17a1cb9f9d63011873361d759288b8
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Mar 15 11:40:49 2018 +1100
+Date:   Fri Jun 1 11:14:49 2018 +1000
 
-    Update descriptions of journal calls based on Blizzard official doc
+    The absolute rubbish has moved into the core :(
 
-commit dee3b7fc47052d04b7c2507154001a4ebc379545
+commit a4fdde133e3f5edd5b43b962b88df9f692507cc9
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Mar 15 11:35:41 2018 +1100
+Date:   Mon May 7 22:32:57 2018 +1000
 
-    Clean up location after IsFlyableArea fix
+    Don't restore stealth or ghost wolf
+
+commit fde02b65ed6a3055bd4e0ff1f2674837d16e7bb1
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Sat May 5 12:05:55 2018 +1000
+
+    Use macro to restore previous form in case you don't have the "Auto
+    Dismount in Flight" option enabled.
+
+commit e60584cccb95fea29296b2de7e087d9bd0fbb8e1
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Sat May 5 11:25:30 2018 +1000
+
+    Really fix the default-only-current-tab in Advanced problem
+
+commit d7230a538e5f34790b60cca9fe7bda8153344c3d
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Thu Apr 5 07:03:43 2018 +1000
+
+    Hard-coded list of shapeshift forms to restore
+
+commit 3c2dca9a3b454c12dd2b83d7c123b7ee7fb51360
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Sat Mar 31 19:59:44 2018 +1100
+
+    Advanced options default button now only resets current keybind.
+
+commit 873c3198c0c3acbfb5f7b889b32a6db609b826fd
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Sat Mar 31 19:56:34 2018 +1100
+
+    Note that the shuffle algorithm is Fisher-Yates
 
