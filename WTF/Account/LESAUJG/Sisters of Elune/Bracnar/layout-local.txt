@@ -20,6 +20,13 @@ X: -136
 Y: -115
 W: 27
 H: 27
+Frame: mOnWD_MainFrame
+FrameLevel: 1
+Anchor: BOTTOMRIGHT
+X: 0
+Y: 137
+W: 384
+H: 512
 Frame: mOnWD_MiniList
 FrameLevel: 1
 Anchor: RIGHT
@@ -43,8 +50,8 @@ W: 700
 H: 450
 Frame: BaudManifestDisplay1
 FrameLevel: 1
-Anchor: CENTER
-X: 186
-Y: -53
+Anchor: TOPRIGHT
+X: -232
+Y: -106
 W: 250
 H: 424

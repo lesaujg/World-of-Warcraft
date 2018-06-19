@@ -1,2 +1,0 @@
-
-SetCollectorCharacterDB = nil
