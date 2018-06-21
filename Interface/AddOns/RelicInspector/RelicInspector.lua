@@ -24,6 +24,13 @@ local MAX_LINE_LENGTH = 80
 local TRAIT_DESC_COLOR = "|cffff78ff"
 local RELIC_SPEC_DESC_COLOR = "|cffffd200"
 
+-- Get version number so we can disable traits for BfA
+local isPostLegion = true  -- gonna assume it's this way for better API tolerance
+local _,_,_,ui_vers = GetBuildInfo()
+if ui_vers < 80000 then
+	isPostLegion = false
+end
+
 -- 7.2 Hack for lack of item links
 local t_threshold = 1.0
 local itemRefLinkInfo = {'',0}
@@ -143,6 +150,11 @@ local function SetupOptions()
 						set = function(info,val) db.profile.enabled = val end,
 						get = function(info) return db.profile.enabled end,
 						order = 10
+					},
+					warning = {
+						name = "Note: Many options may cease to function in the Battle for Azeroth pre-patch!",
+						type = "description",
+						order = 11,
 					},
 					itemLevelChoice = {
 						name = "Item Level To Display:",
@@ -286,6 +298,11 @@ local function scrubRelicLink(link)
 end
 
 local function updateArtifactCache()
+
+	if nil == C_ArtifactRelicForgeUI or isPostLegion then
+		return -- bail immediately, everything is diabled 
+	end
+
 	local artifactID,_,_,_,_,aLvl = C_ArtifactUI.GetArtifactInfo()
 
 	if nil ~= artifactID then
@@ -381,7 +398,7 @@ local function DecorateArtifact(self)
 	if type(link) == 'string' and db.profile.enabled == true then
 		local _, itemID, _, relic1, relic2, relic3, _, _, _, _, _, upgradeID = strsplit(':', link)
 
-		-- 7.2-introduced hack for lack of proper item links
+		-- 7.2-introduced hack for lack of proper item links (still persists in 8.0)
 		if nil == itemID or '' == itemID then 
 			if isItemRef(self) and itemRefLinkInfo[1] ~= nil and itemRefLinkInfo[1] ~= '' then
 				local tc = GetTime()
@@ -414,60 +431,68 @@ local function DecorateArtifact(self)
 			if invLinkOptions[db.profile.hoverNLC] == 2 then
 				showCrucibleTraits = true
 			end
-			if(isItemRef(self)) then
-				-- Item Links
-				showCrucibleTraits = false -- Never show Crucible for links
-				
-				if invLinkOptions[db.profile.linkTraitNames] == 2 then
-					showTraitNames = true
-				end
-				if invLinkOptions[db.profile.linkTraitDesc] == 2 then
-					showTraitDesc = true
-				end
-			else -- Game or Shopping Hover Tooltips
-				if invHoverOptions[db.profile.hoverTraitNames] == 3 or
-					(invHoverOptions[db.profile.hoverTraitNames] == 2 and modifierPressed ~= 0) then
-					showTraitNames = true
-				end
-				if invHoverOptions[db.profile.hoverTraitDesc] == 3 or
-					(invHoverOptions[db.profile.hoverTraitDesc] == 2 and modifierPressed ~= 0) then
-					showTraitDesc = true
-				end
-
-				--Check what we're mousing over
-				local owner = self:GetOwner()
-				if nil ~= owner then
-					local parent = owner:GetParent()
-					if nil ~= parent then
-						if parent:GetName() == nil then
-							-- This should stop false appearances in ERT and others.
-							showCrucibleTraits = false
-						end
-						if parent == InspectPaperDollItemsFrame or
-						   parent == InspectArmory or
-						   parent == TradeRecipientItem7 then 
-							-- Exclude standard Inspect window and Shadows&Light Armory inspect and trade window by name
-							showCrucibleTraits = false
-						end
-					else
-						-- This shouldn't happen but who knows. Don't show in this case.
-						showCrucibleTraits = false
-					end
-				end
-			end
-
-			if not isArtifactUsableByPlayerClass(tonumber(itemID)) then
-				showCrucibleTraits = false
-			end
-
-			local _,_,_,nc = GetAchievementInfo(12072) -- is the Crucible unlocked?
-			if not nc then
-				showCrucibleTraits = false
-			end
 			local artiCache = charDB.char.artifactCache
 			if nil == artiCache then
 				showCrucibleTraits = false
 			end
+			if isPostLegion then 
+				showCrucibleTraits = false 
+				showTraitNames = false
+				showTraitDesc = false
+			else
+				if(isItemRef(self)) then
+					-- Item Links
+					showCrucibleTraits = false -- Never show Crucible for links
+					
+					if invLinkOptions[db.profile.linkTraitNames] == 2 then
+						showTraitNames = true
+					end
+					if invLinkOptions[db.profile.linkTraitDesc] == 2 then
+						showTraitDesc = true
+					end
+				else -- Game or Shopping Hover Tooltips
+					if invHoverOptions[db.profile.hoverTraitNames] == 3 or
+						(invHoverOptions[db.profile.hoverTraitNames] == 2 and modifierPressed ~= 0) then
+						showTraitNames = true
+					end
+					if invHoverOptions[db.profile.hoverTraitDesc] == 3 or
+						(invHoverOptions[db.profile.hoverTraitDesc] == 2 and modifierPressed ~= 0) then
+						showTraitDesc = true
+					end
+
+					--Check what we're mousing over
+					local owner = self:GetOwner()
+					if nil ~= owner then
+						local parent = owner:GetParent()
+						if nil ~= parent then
+							if parent:GetName() == nil then
+								-- This should stop false appearances in ERT and others.
+								showCrucibleTraits = false
+							end
+							if parent == InspectPaperDollItemsFrame or
+							   parent == InspectArmory or
+							   parent == TradeRecipientItem7 then 
+								-- Exclude standard Inspect window and Shadows&Light Armory inspect and trade window by name
+								showCrucibleTraits = false
+							end
+						else
+							-- This shouldn't happen but who knows. Don't show in this case.
+							showCrucibleTraits = false
+						end
+					end
+				end
+
+				if not isArtifactUsableByPlayerClass(tonumber(itemID)) then
+					showCrucibleTraits = false
+				end
+
+				local _,_,_,nc = GetAchievementInfo(12072) -- is the Crucible unlocked?
+				if not nc then
+					showCrucibleTraits = false
+				end
+
+			end
+			--self:AddLine(' ',1,1,1,false)  -- Blank line as a spacer
 
 			local relics = {relic1,relic2,relic3}
 			local showNewNLCTraitMsg = false
@@ -482,19 +507,22 @@ local function DecorateArtifact(self)
 						if nil == relicType then relicType = "???" end
 						
 						local itemLevel = gemLevel
-						if invItemLevelOptions[db.profile.itemLevelDisplay] == 2 then
-							local artifactLevelGain = C_ArtifactUI.GetItemLevelIncreaseProvidedByRelic(gemLink)
+						local artifactLevelGain = C_ArtifactUI.GetItemLevelIncreaseProvidedByRelic(gemLink)
+						if not isPostLegion and invItemLevelOptions[db.profile.itemLevelDisplay] == 2 then
 							itemLevel = "+" .. artifactLevelGain
 						end
 
-						if (showTraitNames or showTraitDesc) and showCrucibleTraits then
-							self:AddLine(' ',1,1,1,false)  -- Blank line as a spacer
-						end
+						self:AddLine(' ',1,1,1,false)  -- Blank line as a spacer
+
 						self:AddDoubleLine(format('|cffffd400(%s) %s|r', itemLevel or '???', gemLink or '???'), 
 							format('|cff00ff00(%s)',relicType), 0, 1, 0, 0, 1, 0)
 
-						-- Let's add the Ranks and Trait names if we are supposed to
-						if showTraitNames or showTraitDesc then
+						if isPostLegion then
+							-- Show the item level increase with the space that used to display traits
+							self:AddLine(format(" " .. RELIC_TOOLTIP_ILVL_INCREASE, artifactLevelGain), 1, 1, 1, false)
+						
+						elseif showTraitNames or showTraitDesc then
+							-- Let's add the Ranks and Trait names if we are supposed to
 							local traitsToDisplay = {}
 
 							-- Add the native trait 
@@ -595,7 +623,7 @@ local function DecorateArtifact(self)
 				end
 			end
 
-			if showCrucibleTraits and showNewNLCTraitMsg then
+			if not isPostLegion and showCrucibleTraits and showNewNLCTraitMsg then
 				self:AddLine(' ',1,1,1,false)
 				self:AddLine(format(ARTIFACT_RELIC_TALENT_AVAILABLE, 1, traitName), 1, 0, 0, false)
 			end
@@ -618,7 +646,7 @@ local function DecorateRelic(self)
 			showOffspecs = true
 		end
 
-		if showOffspecs then
+		if not isPostLegion and showOffspecs then
 			local _, _, classID = UnitClass("player")
 			local currentSpec = GetSpecializationInfo(GetSpecialization())
 
@@ -698,7 +726,7 @@ local function DecorateRelic(self)
 			end
 			table.sort(specKeys) 
 
-			if invRelicSpecOptions[db.profile.relicSpecs] > 3 then
+			if not isPostLegion and invRelicSpecOptions[db.profile.relicSpecs] > 3 then
 				for q = 1,#specKeys do
 					local _, specName, _, _, _, classKey = GetSpecializationInfoByID(specKeys[q])
 					local classColorSet = RAID_CLASS_COLORS[classKey]
@@ -734,7 +762,7 @@ local function DecorateRelic(self)
 					local separator = ", "
 					if q == #specKeys then separator = "" end
 					local quantity = "" 
-					if invRelicSpecOptions[db.profile.relicSpecs] == 3 and usableSpecs[specKeys[q]] > 1 then
+					if invRelicSpecOptions[db.profile.relicSpecs] >= 3 and usableSpecs[specKeys[q]] > 1 then
 						quantity = format(' (%d)',usableSpecs[specKeys[q]])
 					end
 					local specString = format('|c%s%s%s|r%s',classColor,specName,quantity,separator)
@@ -746,13 +774,16 @@ local function DecorateRelic(self)
 	end
 end
 
-local m = CreateFrame('frame')
-m:HookScript("OnEvent", function(self, event, key, state)
-	if event == "MODIFIER_STATE_CHANGED" and (key == "LCTRL" or key == "RCTRL") then
-		modifierPressed = state
-	end
-end)
-m:RegisterEvent("MODIFIER_STATE_CHANGED")
+if not isPostLegion then
+	-- don't need to check for modifiers in a post-trait world
+	local m = CreateFrame('frame')
+	m:HookScript("OnEvent", function(self, event, key, state)
+		if event == "MODIFIER_STATE_CHANGED" and (key == "LCTRL" or key == "RCTRL") then
+			modifierPressed = state
+		end
+	end)
+	m:RegisterEvent("MODIFIER_STATE_CHANGED")
+end
 
 local f = CreateFrame('frame')
 f:SetScript('OnEvent', function(self, event, arg1)
@@ -767,9 +798,11 @@ local af = CreateFrame('frame')
 af:SetScript('OnEvent', function(self, event, arg1)
 	updateArtifactCache()
 end)
-af:RegisterEvent('ARTIFACT_RELIC_FORGE_UPDATE')
 af:RegisterEvent('ARTIFACT_UPDATE')
-
+if not isPostLegion then
+	-- this event doesn't seem to ever fire in BfA
+	af:RegisterEvent('ARTIFACT_RELIC_FORGE_UPDATE')
+end
 
 ItemRefTooltip:HookScript('OnTooltipSetItem', DecorateArtifact)
 GameTooltip:HookScript('OnTooltipSetItem', DecorateArtifact)
@@ -778,5 +811,6 @@ ShoppingTooltip2:HookScript('OnTooltipSetItem', DecorateArtifact)
 
 GameTooltip:HookScript('OnTooltipSetItem', DecorateRelic)
 ItemRefTooltip:HookScript('OnTooltipSetItem', DecorateRelic)
-
 WorldMapTooltip.ItemTooltip.Tooltip:HookScript('OnTooltipSetItem', DecorateRelic)
+
+

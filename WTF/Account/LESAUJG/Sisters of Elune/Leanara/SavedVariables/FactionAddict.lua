@@ -25,148 +25,148 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Monday 3/5",
+		["date"] = "Wednesday 6/20",
 		["rows"] = 1,
 	}, -- [1]
 	{
-		["date"] = "Friday 2/23",
+		["date"] = "Monday 3/5",
 		["rows"] = 1,
 	}, -- [2]
 	{
-		["date"] = "Saturday 2/10",
-		["rows"] = 2,
+		["date"] = "Friday 2/23",
+		["rows"] = 1,
 	}, -- [3]
 	{
-		["date"] = "Wednesday 1/31",
+		["date"] = "Saturday 2/10",
 		["rows"] = 2,
 	}, -- [4]
 	{
-		["date"] = "Wednesday 1/24",
-		["rows"] = 1,
+		["date"] = "Wednesday 1/31",
+		["rows"] = 2,
 	}, -- [5]
 	{
-		["date"] = "Tuesday 1/23",
+		["date"] = "Wednesday 1/24",
 		["rows"] = 1,
 	}, -- [6]
 	{
+		["date"] = "Tuesday 1/23",
+		["rows"] = 1,
+	}, -- [7]
+	{
 		["date"] = "Monday 1/15",
 		["rows"] = 5,
-	}, -- [7]
+	}, -- [8]
 	{
 		["date"] = "Sunday 1/14",
 		["rows"] = 2,
-	}, -- [8]
+	}, -- [9]
 	{
 		["date"] = "Saturday 1/13",
 		["rows"] = 3,
-	}, -- [9]
+	}, -- [10]
 	{
 		["date"] = "Thursday 1/11",
 		["rows"] = 2,
-	}, -- [10]
+	}, -- [11]
 	{
 		["date"] = "Monday 1/8",
 		["rows"] = 4,
-	}, -- [11]
+	}, -- [12]
 	{
 		["date"] = "Sunday 1/7",
 		["rows"] = 3,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Saturday 1/6",
 		["rows"] = 3,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Monday 4/10",
 		["rows"] = 1,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Thursday 3/30",
 		["rows"] = 1,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Thursday 3/23",
 		["rows"] = 1,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Friday 2/24",
 		["rows"] = 1,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Wednesday 2/8",
 		["rows"] = 1,
-	}, -- [18]
-	{
-		["date"] = "Friday 2/3",
-		["rows"] = 1,
 	}, -- [19]
 	{
-		["date"] = "Friday 1/27",
+		["date"] = "Friday 2/3",
 		["rows"] = 1,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
 	{
-		["Shado-Pan Assault"] = 600,
+		["Ashtongue Deathsworn"] = 6169,
 	}, -- [1]
 	{
-		["Shado-Pan Assault"] = 624,
+		["Shado-Pan Assault"] = 600,
 	}, -- [2]
+	{
+		["Shado-Pan Assault"] = 624,
+	}, -- [3]
 	{
 		["Emperor Shaohao"] = 445,
 		["Shado-Pan Assault"] = 612,
-	}, -- [3]
+	}, -- [4]
 	{
 		["Emperor Shaohao"] = 935,
 		["Shado-Pan Assault"] = 708,
-	}, -- [4]
-	{
-		["Shado-Pan Assault"] = 618,
 	}, -- [5]
 	{
-		["Emperor Shaohao"] = 2115,
+		["Shado-Pan Assault"] = 618,
 	}, -- [6]
+	{
+		["Emperor Shaohao"] = 2115,
+	}, -- [7]
 	{
 		["Kirin Tor"] = 97,
 		["Highmountain Tribe"] = 450,
 		["Cult of Malicor"] = 1250,
 		["Court of Farondis"] = 325,
 		["The Wardens"] = 450,
-	}, -- [7]
+	}, -- [8]
 	{
 		["Cult of Malicor"] = 125,
 		["Dreamweavers"] = 75,
-	}, -- [8]
+	}, -- [9]
 	{
 		["Cult of Malicor"] = 750,
 		["Court of Farondis"] = 525,
 		["The Wardens"] = 150,
-	}, -- [9]
+	}, -- [10]
 	{
 		["Cult of Malicor"] = 125,
 		["Highmountain Tribe"] = 75,
-	}, -- [10]
+	}, -- [11]
 	{
 		["Cult of Malicor"] = 875,
 		["The Wardens"] = 150,
 		["Valarjar"] = 525,
 		["Shado-Pan"] = 1000,
-	}, -- [11]
+	}, -- [12]
 	{
 		["Cult of Malicor"] = 875,
 		["Court of Farondis"] = 600,
 		["The Wardens"] = 300,
-	}, -- [12]
+	}, -- [13]
 	{
 		["Cult of Malicor"] = 3375,
 		["The Wardens"] = 450,
 		["Highmountain Tribe"] = 675,
-	}, -- [13]
-	{
-		["The Ashen Verdict"] = 1500,
 	}, -- [14]
 	{
-		["The Ashen Verdict"] = 3000,
+		["The Ashen Verdict"] = 1500,
 	}, -- [15]
 	{
 		["The Ashen Verdict"] = 3000,
@@ -299,9 +299,9 @@ FactionAddictConfigIsInactive = {
 	[1275] = false,
 	[1849] = false,
 	[576] = false,
-	[1850] = false,
-	[1276] = false,
 	[1085] = false,
+	[1276] = false,
+	[1850] = false,
 	[609] = false,
 	[369] = false,
 	[1277] = false,
@@ -311,21 +311,21 @@ FactionAddictConfigIsInactive = {
 	[1278] = false,
 	[1847] = false,
 	[1174] = false,
-	[2045] = false,
+	[81] = false,
 	[1279] = false,
 	[69] = false,
-	[1280] = false,
+	[2045] = false,
 	[1216] = false,
-	[81] = false,
+	[1280] = false,
 	[2170] = false,
 	[1345] = false,
 	[93] = false,
 	[1281] = false,
 	[1090] = false,
 	[1859] = false,
-	[930] = false,
-	[1282] = false,
 	[1091] = false,
+	[1282] = false,
+	[930] = false,
 	[1710] = false,
 	[1984] = false,
 	[1283] = false,

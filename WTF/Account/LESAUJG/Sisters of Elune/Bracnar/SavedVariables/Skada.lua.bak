@@ -11,24 +11,372 @@ SkadaPerCharDB = {
 		["shielding"] = 0,
 		["damage"] = 0,
 		["players"] = {
+			{
+				["last"] = 1529586370,
+				["ccbreaks"] = 0,
+				["healingabsorbed"] = 0,
+				["role"] = "DAMAGER",
+				["ffdamagedonespells"] = {
+				},
+				["damaged"] = {
+				},
+				["dispells"] = 0,
+				["auras"] = {
+					["Concordance of the Legionfall"] = {
+						["uptime"] = 0,
+						["name"] = "Concordance of the Legionfall",
+						["active"] = 0,
+						["school"] = 1,
+						["auratype"] = "BUFF",
+						["id"] = 242584,
+					},
+					["Murderous Intent"] = {
+						["uptime"] = 0,
+						["name"] = "Murderous Intent",
+						["active"] = 0,
+						["school"] = 32,
+						["auratype"] = "BUFF",
+						["id"] = 252202,
+					},
+				},
+				["ffdamagedone"] = 0,
+				["time"] = 3,
+				["interrupts"] = 0,
+				["alertDamage"] = 0,
+				["power"] = {
+				},
+				["name"] = "Bracnar",
+				["damage"] = 0,
+				["damagespells"] = {
+				},
+				["overhealing"] = 0,
+				["damagetaken"] = 2549554,
+				["deathlog"] = {
+					{
+						["ts"] = 1529549860.846,
+						["amount"] = 122668,
+						["srcname"] = "Ranitha-Blade'sEdge",
+						["spellid"] = 145110,
+						["hp"] = 3547314,
+						["absorb"] = 0,
+					}, -- [1]
+					{
+						["ts"] = 1529549858.366,
+						["amount"] = -32946,
+						["srcname"] = "Spectral Sentry",
+						["hp"] = 5908530,
+						["spellid"] = 6660,
+					}, -- [2]
+					{
+						["ts"] = 1529549858.366,
+						["amount"] = -33609,
+						["srcname"] = "Spectral Sentry",
+						["hp"] = 5874921,
+						["spellid"] = 6660,
+					}, -- [3]
+					{
+						["ts"] = 1529549858.366,
+						["amount"] = -30514,
+						["srcname"] = "Spectral Sentry",
+						["hp"] = 5844407,
+						["spellid"] = 6660,
+					}, -- [4]
+					{
+						["ts"] = 1529549858.366,
+						["amount"] = -34272,
+						["srcname"] = "Spectral Sentry",
+						["hp"] = 5810135,
+						["spellid"] = 6660,
+					}, -- [5]
+					{
+						["ts"] = 1529549858.468,
+						["amount"] = -30071,
+						["srcname"] = "Spectral Sentry",
+						["hp"] = 5780064,
+						["spellid"] = 6660,
+					}, -- [6]
+					{
+						["ts"] = 1529549858.468,
+						["amount"] = -30734,
+						["srcname"] = "Spectral Sentry",
+						["hp"] = 5749330,
+						["spellid"] = 6660,
+					}, -- [7]
+					{
+						["ts"] = 1529549858.468,
+						["amount"] = -33609,
+						["srcname"] = "Spectral Sentry",
+						["hp"] = 5715721,
+						["spellid"] = 6660,
+					}, -- [8]
+					{
+						["ts"] = 1529549858.592,
+						["amount"] = -502053,
+						["srcname"] = "Phantom Guardsman",
+						["hp"] = 5715721,
+						["spellid"] = 88163,
+					}, -- [9]
+					{
+						["ts"] = 1529549859.295,
+						["amount"] = -802712,
+						["srcname"] = "Phantom Guardsman",
+						["hp"] = 5213668,
+						["spellid"] = 88163,
+					}, -- [10]
+					{
+						["ts"] = 1529549859.694,
+						["amount"] = -30071,
+						["srcname"] = "Spectral Sentry",
+						["hp"] = 4380885,
+						["spellid"] = 6660,
+					}, -- [11]
+					{
+						["ts"] = 1529549859.694,
+						["amount"] = -31840,
+						["srcname"] = "Spectral Sentry",
+						["hp"] = 4349045,
+						["spellid"] = 6660,
+					}, -- [12]
+					{
+						["ts"] = 1529549859.721,
+						["amount"] = -33609,
+						["srcname"] = "Spectral Sentry",
+						["hp"] = 4315436,
+						["spellid"] = 6660,
+					}, -- [13]
+					{
+						["ts"] = 1529549859.796,
+						["amount"] = -445843,
+						["srcname"] = "Phantom Guardsman",
+						["hp"] = 4315436,
+						["spellid"] = 88163,
+					}, -- [14]
+					{
+						["ts"] = 1529549860.308,
+						["amount"] = -444947,
+						["srcname"] = "Phantom Guardsman",
+						["hp"] = 3869593,
+						["spellid"] = 88163,
+					}, -- [15]
+					["pos"] = 2,
+				},
+				["id"] = "Player-1169-06A1ACBD",
+				["maxhp"] = 5974200,
+				["healed"] = {
+				},
+				["damagetakenspells"] = {
+					["Shoot"] = {
+						["crushing"] = 0,
+						["id"] = 6660,
+						["damage"] = 353999,
+						["max"] = 34272,
+						["name"] = "Shoot",
+						["min"] = 30071,
+						["totalhits"] = 11,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["Attack"] = {
+						["crushing"] = 0,
+						["id"] = 6603,
+						["damage"] = 2195555,
+						["max"] = 802712,
+						["name"] = "Attack",
+						["min"] = 444947,
+						["totalhits"] = 4,
+						["critical"] = 1,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+				},
+				["healing"] = 0,
+				["first"] = 1529551946,
+				["ffdamagedonetargets"] = {
+				},
+				["alertCount"] = 65,
+				["shielding"] = 0,
+				["healingspells"] = {
+				},
+				["alert"] = {
+					["Low"] = {
+						["alertDamage"] = 0,
+						["spell"] = {
+							["+Slime"] = {
+								["min"] = 0,
+								["alertCount"] = 1,
+								["id"] = 28801,
+								["alertID"] = "Low",
+								["max"] = 0,
+								["alertDamage"] = 0,
+							},
+						},
+						["name"] = "Low",
+						["alertCount"] = 1,
+					},
+					["High"] = {
+						["alertCount"] = 64,
+						["spell"] = {
+							["+Searing Gaze"] = {
+								["min"] = 0,
+								["alertCount"] = 2,
+								["id"] = 214421,
+								["alertID"] = "High",
+								["max"] = 0,
+								["alertDamage"] = 0,
+							},
+							["+Fire Bomb"] = {
+								["min"] = 0,
+								["alertCount"] = 58,
+								["id"] = 66320,
+								["alertID"] = "High",
+								["max"] = 0,
+								["alertDamage"] = 0,
+							},
+							["+Hindering Anomaly"] = {
+								["min"] = 0,
+								["alertCount"] = 1,
+								["id"] = 214491,
+								["alertID"] = "High",
+								["max"] = 0,
+								["alertDamage"] = 0,
+							},
+							["+Translocate Field"] = {
+								["min"] = 0,
+								["alertCount"] = 3,
+								["id"] = 214123,
+								["alertID"] = "High",
+								["max"] = 0,
+								["alertDamage"] = 0,
+							},
+						},
+						["name"] = "High",
+						["alertDamage"] = 0,
+					},
+				},
+				["class"] = "HUNTER",
+			}, -- [1]
+			{
+				["healingabsorbed"] = 0,
+				["ccbreaks"] = 0,
+				["ffdamagedonespells"] = {
+				},
+				["damaged"] = {
+				},
+				["dispells"] = 0,
+				["role"] = "DAMAGER",
+				["ffdamagedone"] = 0,
+				["time"] = 0,
+				["interrupts"] = 0,
+				["auras"] = {
+				},
+				["alertDamage"] = 0,
+				["power"] = {
+				},
+				["damage"] = 0,
+				["damagespells"] = {
+				},
+				["name"] = "Ranitha",
+				["damagetaken"] = 0,
+				["deathlog"] = {
+				},
+				["id"] = "Player-105-066F22A0",
+				["maxhp"] = 4088940,
+				["overhealing"] = 0,
+				["damagetakenspells"] = {
+				},
+				["healed"] = {
+					["Player-1169-06A1ACBD"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Bracnar",
+						["amount"] = 122668,
+						["class"] = "HUNTER",
+						["shielding"] = 0,
+					},
+				},
+				["healing"] = 122668,
+				["ffdamagedonetargets"] = {
+				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["healingspells"] = {
+					["Ysera's Gift"] = {
+						["shielding"] = 0,
+						["id"] = 145110,
+						["healing"] = 122668,
+						["min"] = 122668,
+						["name"] = "Ysera's Gift",
+						["hits"] = 1,
+						["overhealing"] = 0,
+						["max"] = 122668,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+				},
+				["alert"] = {
+				},
+				["class"] = "DRUID",
+			}, -- [2]
 		},
 		["deaths"] = 0,
 		["mobs"] = {
+			["Spectral Sentry"] = {
+				["players"] = {
+					["Bracnar"] = {
+						["taken"] = 0,
+						["done"] = 353999,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 353999,
+			},
+			["Phantom Guardsman"] = {
+				["players"] = {
+					["Bracnar"] = {
+						["taken"] = 0,
+						["done"] = 2195555,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 2195555,
+			},
 		},
 		["mobtaken"] = 0,
 		["overhealing"] = 0,
-		["healing"] = 0,
-		["damagetaken"] = 0,
+		["healing"] = 122668,
+		["damagetaken"] = 2549554,
 		["alertDamage"] = 0,
 		["starttime"] = 1528169716,
 		["power"] = {
 		},
 		["name"] = "Total",
-		["alertCount"] = 0,
+		["alertCount"] = 65,
 		["dispells"] = 0,
 		["mobhdone"] = 0,
 		["last_action"] = 1528169716,
-		["mobdone"] = 0,
+		["mobdone"] = 2549554,
 	},
 	["sets"] = {
 	},

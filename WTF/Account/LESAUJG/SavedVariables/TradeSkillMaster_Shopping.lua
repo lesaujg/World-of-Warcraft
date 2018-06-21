@@ -56,17 +56,17 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @postUndercut"] = "1c",
 	["g@ @minDeSearchLvl"] = 1,
 	["g@ @maxDeSearchLvl"] = 735,
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
 		{
 			["searchMode"] = "normal",
-			["lastSearch"] = 1529375786,
-			["name"] = "black eagle",
-			["filter"] = "black eagle",
+			["lastSearch"] = 1529549145,
+			["name"] = "eagle",
+			["filter"] = "eagle",
 		}, -- [1]
 		{
-			["lastSearch"] = 1529115095,
+			["lastSearch"] = 1529490717,
 			["name"] = "/Miscellaneous/Mount",
 			["filter"] = "/Miscellaneous/Mount",
 			["searchMode"] = "normal",
@@ -74,28 +74,28 @@ TradeSkillMaster_ShoppingDB = {
 		}, -- [2]
 		{
 			["searchMode"] = "normal",
+			["lastSearch"] = 1529375786,
+			["name"] = "black eagle",
+			["filter"] = "black eagle",
+		}, -- [3]
+		{
+			["searchMode"] = "normal",
 			["lastSearch"] = 1528951339,
 			["name"] = "Felwort/exact",
 			["filter"] = "Felwort/exact",
-		}, -- [3]
+		}, -- [4]
 		{
 			["lastSearch"] = 1528781814,
 			["name"] = "Obliterum/exact",
 			["filter"] = "Obliterum/exact",
 			["searchMode"] = "normal",
 			["isFavorite"] = true,
-		}, -- [4]
+		}, -- [5]
 		{
 			["searchMode"] = "normal",
 			["lastSearch"] = 1528254389,
 			["name"] = "archer",
 			["filter"] = "archer",
-		}, -- [5]
-		{
-			["searchMode"] = "normal",
-			["lastSearch"] = 1528242146,
-			["name"] = "eagle",
-			["filter"] = "eagle",
 		}, -- [6]
 		{
 			["searchMode"] = "normal",
@@ -716,7 +716,7 @@ TradeSkillMaster_ShoppingDB = {
 			["filter"] = "arkhana",
 		}, -- [108]
 	},
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @normalPostPrice"] = "150% dbmarket",
 	["g@ @maxDeSearchPercent"] = 1,
 	["g@ @sniperCustomPrice"] = "0c",

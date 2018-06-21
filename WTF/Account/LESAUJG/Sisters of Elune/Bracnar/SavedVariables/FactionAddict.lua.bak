@@ -25,87 +25,95 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Sunday 6/17",
+		["date"] = "Wednesday 6/20",
 		["rows"] = 6,
 	}, -- [1]
 	{
+		["date"] = "Sunday 6/17",
+		["rows"] = 6,
+	}, -- [2]
+	{
 		["date"] = "Saturday 6/16",
 		["rows"] = 3,
-	}, -- [2]
+	}, -- [3]
 	{
 		["date"] = "Thursday 6/14",
 		["rows"] = 7,
-	}, -- [3]
+	}, -- [4]
 	{
 		["date"] = "Tuesday 6/12",
 		["rows"] = 5,
-	}, -- [4]
+	}, -- [5]
 	{
 		["date"] = "Thursday 6/7",
 		["rows"] = 4,
-	}, -- [5]
+	}, -- [6]
 	{
 		["date"] = "Tuesday 6/5",
 		["rows"] = 2,
-	}, -- [6]
+	}, -- [7]
 	{
 		["date"] = "Saturday 6/2",
 		["rows"] = 6,
-	}, -- [7]
+	}, -- [8]
 	{
 		["date"] = "Friday 6/1",
 		["rows"] = 2,
-	}, -- [8]
+	}, -- [9]
 	{
 		["date"] = "Thursday 5/31",
 		["rows"] = 6,
-	}, -- [9]
+	}, -- [10]
 	{
 		["date"] = "Tuesday 5/29",
 		["rows"] = 4,
-	}, -- [10]
+	}, -- [11]
 	{
 		["date"] = "Monday 5/28",
 		["rows"] = 2,
-	}, -- [11]
+	}, -- [12]
 	{
 		["date"] = "Sunday 5/27",
 		["rows"] = 4,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Thursday 5/24",
 		["rows"] = 2,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Wednesday 5/23",
 		["rows"] = 4,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Tuesday 5/22",
 		["rows"] = 4,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Monday 5/21",
 		["rows"] = 7,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Sunday 5/20",
 		["rows"] = 3,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Saturday 5/19",
 		["rows"] = 1,
-	}, -- [18]
+	}, -- [19]
 	{
 		["date"] = "Friday 5/18",
 		["rows"] = 7,
-	}, -- [19]
-	{
-		["date"] = "Thursday 5/17",
-		["rows"] = 9,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
+	{
+		["The Nightfallen"] = 850,
+		["Armies of Legionfall"] = 1542,
+		["Argussian Reach"] = 75,
+		["The Wardens"] = 725,
+		["Court of Farondis"] = 2375,
+		["Army of the Light"] = 75,
+	}, -- [1]
 	{
 		["Armies of Legionfall"] = 1250,
 		["Argussian Reach"] = 2000,
@@ -113,12 +121,12 @@ FactionAddictLogEntries = {
 		["Court of Farondis"] = 2000,
 		["Army of the Light"] = 1000,
 		["Dreamweavers"] = 1037,
-	}, -- [1]
+	}, -- [2]
 	{
 		["Armies of Legionfall"] = 500,
 		["Army of the Light"] = 75,
 		["Argussian Reach"] = 75,
-	}, -- [2]
+	}, -- [3]
 	{
 		["The Nightfallen"] = 750,
 		["Armies of Legionfall"] = 500,
@@ -127,24 +135,24 @@ FactionAddictLogEntries = {
 		["Court of Farondis"] = 500,
 		["Army of the Light"] = 75,
 		["Dreamweavers"] = 1500,
-	}, -- [3]
+	}, -- [4]
 	{
 		["The Nightfallen"] = 500,
 		["Armies of Legionfall"] = 500,
 		["Valarjar"] = 1500,
 		["Argussian Reach"] = 2075,
 		["Army of the Light"] = 1150,
-	}, -- [4]
+	}, -- [5]
 	{
 		["Valarjar"] = 1500,
 		["Armies of Legionfall"] = 500,
 		["Army of the Light"] = 1075,
 		["Argussian Reach"] = 1075,
-	}, -- [5]
+	}, -- [6]
 	{
 		["Army of the Light"] = 225,
 		["Argussian Reach"] = 1150,
-	}, -- [6]
+	}, -- [7]
 	{
 		["The Nightfallen"] = 500,
 		["Argussian Reach"] = 1150,
@@ -152,11 +160,11 @@ FactionAddictLogEntries = {
 		["Court of Farondis"] = 1500,
 		["Army of the Light"] = 1150,
 		["Dreamweavers"] = 1500,
-	}, -- [7]
+	}, -- [8]
 	{
 		["Army of the Light"] = 150,
 		["Argussian Reach"] = 150,
-	}, -- [8]
+	}, -- [9]
 	{
 		["The Nightfallen"] = 500,
 		["Valarjar"] = 500,
@@ -164,39 +172,39 @@ FactionAddictLogEntries = {
 		["The Wardens"] = 1500,
 		["Court of Farondis"] = 1500,
 		["Army of the Light"] = 1075,
-	}, -- [9]
+	}, -- [10]
 	{
 		["Argussian Reach"] = 1000,
 		["Dreamweavers"] = 2000,
 		["Valarjar"] = 1500,
 		["Highmountain Tribe"] = 500,
-	}, -- [10]
+	}, -- [11]
 	{
 		["The Nightfallen"] = 750,
 		["Highmountain Tribe"] = 500,
-	}, -- [11]
+	}, -- [12]
 	{
 		["Army of the Light"] = 3550,
 		["Armies of Legionfall"] = 500,
 		["Valarjar"] = 1500,
 		["Argussian Reach"] = 2375,
-	}, -- [12]
+	}, -- [13]
 	{
 		["Valarjar"] = 1500,
 		["Armies of Legionfall"] = 500,
-	}, -- [13]
+	}, -- [14]
 	{
 		["The Nightfallen"] = 750,
 		["Armies of Legionfall"] = 1250,
 		["Army of the Light"] = 1075,
 		["The Wardens"] = 500,
-	}, -- [14]
+	}, -- [15]
 	{
 		["The Nightfallen"] = 750,
 		["Armies of Legionfall"] = 500,
 		["Highmountain Tribe"] = 2500,
 		["Dreamweavers"] = 1500,
-	}, -- [15]
+	}, -- [16]
 	{
 		["Armies of Legionfall"] = 1750,
 		["Valarjar"] = 1500,
@@ -205,15 +213,15 @@ FactionAddictLogEntries = {
 		["Highmountain Tribe"] = 1500,
 		["Army of the Light"] = 112,
 		["Dreamweavers"] = 500,
-	}, -- [16]
+	}, -- [17]
 	{
 		["Chromie"] = 2035,
 		["Army of the Light"] = 338,
 		["Argussian Reach"] = 337,
-	}, -- [17]
+	}, -- [18]
 	{
 		["Chromie"] = 2320,
-	}, -- [18]
+	}, -- [19]
 	{
 		["The Nightfallen"] = 750,
 		["Armies of Legionfall"] = 3250,
@@ -222,17 +230,6 @@ FactionAddictLogEntries = {
 		["Court of Farondis"] = 2000,
 		["Army of the Light"] = 1000,
 		["Dreamweavers"] = 500,
-	}, -- [19]
-	{
-		["Bizmo's Brawlpub"] = 4000,
-		["Argussian Reach"] = 450,
-		["Chromie"] = 2290,
-		["Dreamweavers"] = 1500,
-		["The Nightfallen"] = 600,
-		["Valarjar"] = 375,
-		["The Wardens"] = 2738,
-		["Court of Farondis"] = 375,
-		["Army of the Light"] = 1950,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
@@ -350,9 +347,9 @@ FactionAddictConfigIsInactive = {
 	[1275] = false,
 	[1849] = false,
 	[576] = false,
-	[1850] = false,
-	[1276] = false,
 	[1085] = false,
+	[1276] = false,
+	[1850] = false,
 	[609] = false,
 	[369] = false,
 	[1277] = false,
@@ -362,12 +359,12 @@ FactionAddictConfigIsInactive = {
 	[1278] = false,
 	[1690] = false,
 	[1388] = false,
-	[1280] = false,
+	[81] = false,
 	[1279] = false,
 	[69] = false,
-	[2045] = false,
+	[1280] = false,
 	[1216] = false,
-	[81] = false,
+	[2045] = false,
 	[2170] = false,
 	[1345] = false,
 	[93] = false,
@@ -376,7 +373,7 @@ FactionAddictConfigIsInactive = {
 	[1859] = false,
 	[1133] = false,
 	[1282] = false,
-	[1091] = false,
+	[930] = false,
 	[270] = false,
 	[1984] = false,
 	[1283] = false,
@@ -387,7 +384,7 @@ FactionAddictConfigIsInactive = {
 	[1174] = false,
 	[1714] = false,
 	[1731] = false,
-	[930] = false,
+	[1091] = false,
 	[1094] = false,
 	[1158] = false,
 	[1732] = false,
