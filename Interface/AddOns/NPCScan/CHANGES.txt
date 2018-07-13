@@ -1,16 +1,46 @@
-tag bde1dee2f72fbeff118a452c14992560157473d8 7.3.5.12
+tag 565f4ba13e15e8054e25e701dd34f4066f06f9d3 7.3.5.17
 Author:	James D. Callahan III <jcallahan@curse.com>
-Date:	Sat May 19 04:17:13 2018 -0500
+Date:	Sun Jul 8 07:20:48 2018 -0500
 
-commit bea5d00aff5aeb9ca9f4c7b21a1615c44a9a5bf9
+commit 103717f079ba279c335f02bfc3dbc81a39df6f8c
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sat May 19 04:16:53 2018 -0500
+Date:   Sun Jul 8 07:15:33 2018 -0500
 
-    Add Slab of Bacon questID to Well-Fed Bear - this quest resets to not-finished whenever the world quest spawns.
+    Fix addition of custom NPC entries, and don't try to show these in the tooltip.
 
-commit 94a704954bd5cbb22c82f5a51ccad8758eefbe4e
+commit e0c72ecd3bb056022eb0e3b36905e33833208e37
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sat May 5 02:36:45 2018 -0500
+Date:   Sun Jul 8 07:14:47 2018 -0500
 
-    Add support for the Broke Back Precipice, King of the Monsters, and Making the Cut achievements.
+    Fix NPC reference when looking up achievement data in the target button.
+
+commit 21114e130f4a716c1de0c94f6eb94fff9d79d89c
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sun Jul 8 06:15:40 2018 -0500
+
+    Modify IsNPCQuestComplete to use the NPC object instead of its ID to obviate the need to check for existence within the function.
+
+commit 64286e1e2b7f68dff86056fcdd36d57ca3efef1d
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sun Jul 8 06:14:26 2018 -0500
+
+    Add tracking for the 'Praise the Sun!' achievement, and manually add Nalak as criteria.
+
+commit ba8d8aa19c22645afd1cb9e8bfe20f2c6b839feb
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sun Jul 8 06:13:24 2018 -0500
+
+    Add support for adding an NPC to an achievement despite its criteria, since Blizzard isn't super consistent with how they track things.
+
+commit 09705e154ecb6682e178e2eeca2de997a83f2a2f
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sun Jul 8 06:09:18 2018 -0500
+
+    Add tracking quest for Nalak.
+
+commit 1bb64f4882182226163ab29df756ade31b975ab1
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sun Jul 8 06:08:40 2018 -0500
+
+    Re-add removed ID for Cranegnasher - it's the one used for the achievement.
 

@@ -1,1 +1,2 @@
 Tukui: enabled
+_NPCScan.Overlay: disabled

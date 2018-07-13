@@ -68,6 +68,7 @@ local CursorHover, PlayerName, SelectedChar;
 local RealmData, PlayerData, GlobalConfig, Config, AltConfig, AllCharData, AllCharHash, OtherCharMoney;
 local NumSpecials, LocaleContainer, RenamePending;
 local DisplayNames = {"Inventory", "Bank Box", "Reagent Bank"};
+local AutoSellTable = {};
 
 --List will refresh on first OnUpdate
 
@@ -273,6 +274,18 @@ end
 
 local function ItemsAreEquivalent(ItemString1, ItemString2)
   return CleanItemString(ItemString1) == CleanItemString(ItemString2);
+end
+
+---------------------
+-- AutoSellTable
+---------------------
+
+local function SetAutoSellTable(itemString, value)
+  AutoSellTable[CleanItemString(itemString)] = value;
+end
+
+local function GetAutoSellTable(itemString)
+  return AutoSellTable[CleanItemString(itemString)];
 end
 
 -----------------
@@ -496,6 +509,12 @@ EventFuncs = {
         if not PlayerData.AutoSell then
           PlayerData.AutoSell = 1;
         end
+
+        -- fill out the autosell table from the file data
+     	local AutoSell = PlayerData[1][PlayerData.AutoSell];
+        for Key, Value in ipairs(AutoSell) do
+     	  AutoSellTable[CleanItemString(Value.ItemString)] = 1;
+     	end
     end
   end,
 
@@ -2552,6 +2571,17 @@ function BaudManifestMoveListItem(Display)
   else
     tinsert(Display.Data[NewCategory], OldItem);
   end
+
+  -- when moving an item, check to see if it needs to be added to or
+  -- removed from the autosell table
+  if (NewCategory == PlayerData.AutoSell) then
+    --DebugMsg("Adding " .. OldItem.ItemString);
+    SetAutoSellTable(OldItem.ItemString, 1);
+  elseif not GetAutoSellTable(OldItem.ItemString) then
+    --DebugMsg("Removing " .. CleanItemString(OldItem.ItemString));
+    SetAutoSellTable(OldItem.ItemString, nil);
+  end
+
   BaudManifestUpdateDisplayList(Display);
 end
 
@@ -2973,6 +3003,12 @@ function BaudManifestUpdateList(Display)
     -- I think all keystones are Epic (purple).
     Quality = select(3, GetItemInfo(Value.ItemString)) or strmatch(Value.ItemString, "battlepet:%d+:%d*:(%d+)") or 4;
     tinsert(DisplayData[(Display:GetID() == 1) and Quality and PlayerData.PutQuality[Quality] or 1], Value);
+
+    -- when looting an item, if it gets autosorted into the autosell category, put it in the autosell table
+    if (PlayerData.PutQuality[Quality] == PlayerData.AutoSell) and not GetAutoSellTable(Value.ItemString) then
+      SetAutoSellTable(Value.ItemString, 1);
+    end
+
     AddItems[Key] = nil;
   end
 
@@ -4031,6 +4067,15 @@ end
 function BaudManifestAutoSellDropDown_OnClick(self)
   PlayerData.AutoSell = self.value;
   UIDropDownMenu_SetSelectedValue(BaudManifestAutoSellDropDown, self.value);
+
+  -- reset the autosell table when switching autosell categories
+  for k in next, AutoSellTable do
+    rawset(AutoSellTable, k, nil)
+  end
+
+  for Key, Value in ipairs(PlayerData[1][PlayerData.AutoSell]) do
+    SetAutoSellTable(Value.ItemString, 1);
+  end
 end
 
 -------------------------------------
@@ -4063,32 +4108,28 @@ function BaudManifestAutoSellItems()
     return;
   end
 
-  local AutoSell = PlayerData[1][PlayerData.AutoSell];
+  local Money = GetMoney();
+  local Timer = 0;
   local Total = 0;
   local Profit = 0;
   local Item;
   BaudManifestForEachSlot(BaudManifestDisplay1,
     function(Bag, Slot)
-      Item = GetContainerItemLink(Bag, Slot);
+      ItemLink = GetContainerItemLink(Bag, Slot);
+      if not ItemLink then
+        return;
+      end
+
+      Item = GetItemString(ItemLink);
       if not Item then
         return;
       end
-      Item = GetItemString(Item);
-      if not Item then
-        return;
-      end
-      for Key, Value in ipairs(AutoSell) do
-        if (ItemsAreEquivalent(Value.ItemString, Item)) then
-          TooltipMoney = nil;
-          Tooltip:SetOwner(WorldFrame, "ANCHOR_NONE");
-          Tooltip:SetBagItem(Bag, Slot);
-          if TooltipMoney then
-            Profit = Profit + TooltipMoney;
-            UseContainerItem(Bag, Slot);
-            Total = Total + 1;
-          end
-          return;
-        end
+
+      -- if the item is in the autosell table, it's good to sell
+      if GetAutoSellTable(Item) then
+        C_Timer.NewTimer(Timer, function() UseContainerItem(Bag, Slot); end)
+        Timer = Timer + .1;
+        Total = Total + 1;
       end
     end,
     function(Bag)
@@ -4097,7 +4138,15 @@ function BaudManifestAutoSellItems()
   );
 
   if (Total > 0) then
-    DEFAULT_CHAT_FRAME:AddMessage(MsgPrefix .. "Selling " .. Total .. " item" .. ((Total == 1) and "" or "s") .. " for " .. BaudManifestToMoney(Profit) .. ".");
+    -- needs tweaking
+    C_Timer.NewTimer(.9 + Total * .1, function()
+                       Profit = GetMoney() - Money;
+                       if (Profit > 0) then
+                         DEFAULT_CHAT_FRAME:AddMessage(MsgPrefix .. "Sold " .. Total .. " item" .. ((Total == 1) and "" or "s") .. " for " .. BaudManifestToMoney(Profit) .. ".");
+                       else
+                         DEFAULT_CHAT_FRAME:AddMessage(MsgPrefix .. "Sold " .. Total .. " item" .. ((Total == 1) and "" or "s"));
+                       end
+                     end)
   end
 end
 

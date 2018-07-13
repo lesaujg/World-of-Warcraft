@@ -25,161 +25,161 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Monday 3/5",
+		["date"] = "Tuesday 7/10",
 		["rows"] = 1,
 	}, -- [1]
 	{
-		["date"] = "Friday 2/23",
+		["date"] = "Monday 3/5",
 		["rows"] = 1,
 	}, -- [2]
 	{
-		["date"] = "Sunday 2/11",
+		["date"] = "Friday 2/23",
 		["rows"] = 1,
 	}, -- [3]
 	{
-		["date"] = "Saturday 2/10",
+		["date"] = "Sunday 2/11",
 		["rows"] = 1,
 	}, -- [4]
 	{
-		["date"] = "Wednesday 1/31",
+		["date"] = "Saturday 2/10",
 		["rows"] = 1,
 	}, -- [5]
 	{
-		["date"] = "Tuesday 1/30",
+		["date"] = "Wednesday 1/31",
 		["rows"] = 1,
 	}, -- [6]
 	{
+		["date"] = "Tuesday 1/30",
+		["rows"] = 1,
+	}, -- [7]
+	{
 		["date"] = "Tuesday 1/23",
 		["rows"] = 7,
-	}, -- [7]
+	}, -- [8]
 	{
 		["date"] = "Sunday 1/21",
 		["rows"] = 2,
-	}, -- [8]
+	}, -- [9]
 	{
 		["date"] = "Friday 1/19",
 		["rows"] = 4,
-	}, -- [9]
+	}, -- [10]
 	{
 		["date"] = "Thursday 1/18",
 		["rows"] = 3,
-	}, -- [10]
+	}, -- [11]
 	{
 		["date"] = "Wednesday 1/17",
 		["rows"] = 3,
-	}, -- [11]
+	}, -- [12]
 	{
 		["date"] = "Monday 1/15",
 		["rows"] = 3,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Sunday 1/14",
 		["rows"] = 3,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Saturday 1/13",
 		["rows"] = 3,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Thursday 1/11",
 		["rows"] = 3,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Sunday 1/7",
 		["rows"] = 3,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Monday 4/10",
 		["rows"] = 1,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Thursday 3/30",
 		["rows"] = 1,
-	}, -- [18]
-	{
-		["date"] = "Thursday 3/23",
-		["rows"] = 1,
 	}, -- [19]
 	{
-		["date"] = "Friday 2/24",
+		["date"] = "Thursday 3/23",
 		["rows"] = 1,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
 	{
-		["Shado-Pan Assault"] = 600,
+		["Cult of Malicor"] = 1875,
 	}, -- [1]
 	{
-		["Shado-Pan Assault"] = 300,
+		["Shado-Pan Assault"] = 600,
 	}, -- [2]
 	{
-		["Shado-Pan Assault"] = 648,
+		["Shado-Pan Assault"] = 300,
 	}, -- [3]
 	{
-		["Emperor Shaohao"] = 1105,
+		["Shado-Pan Assault"] = 648,
 	}, -- [4]
 	{
-		["Shado-Pan Assault"] = 606,
+		["Emperor Shaohao"] = 1105,
 	}, -- [5]
 	{
-		["Emperor Shaohao"] = 1130,
+		["Shado-Pan Assault"] = 606,
 	}, -- [6]
+	{
+		["Emperor Shaohao"] = 1130,
+	}, -- [7]
 	{
 		["The Nightfallen"] = 125,
 		["Kirin Tor"] = 97,
+		["Emperor Shaohao"] = 1100,
 		["Cult of Malicor"] = 1125,
-		["The Wardens"] = 75,
 		["Shado-Pan Assault"] = 618,
 		["Armies of Legionfall"] = 260,
-		["Emperor Shaohao"] = 1100,
-	}, -- [7]
+		["The Wardens"] = 75,
+	}, -- [8]
 	{
 		["Shado-Pan"] = 1000,
 		["Kirin Tor Offensive"] = 450,
-	}, -- [8]
+	}, -- [9]
 	{
 		["The Wardens"] = 300,
 		["The Nightfallen"] = 500,
 		["Cult of Malicor"] = 1000,
 		["Highmountain Tribe"] = 300,
-	}, -- [9]
+	}, -- [10]
 	{
 		["The Wardens"] = 450,
 		["Court of Farondis"] = 675,
 		["Cult of Malicor"] = 750,
-	}, -- [10]
+	}, -- [11]
 	{
 		["Cult of Malicor"] = 750,
 		["Valarjar"] = 600,
 		["The Wardens"] = 300,
-	}, -- [11]
+	}, -- [12]
 	{
 		["The Wardens"] = 600,
 		["Cult of Malicor"] = 750,
 		["Highmountain Tribe"] = 750,
-	}, -- [12]
+	}, -- [13]
 	{
 		["The Wardens"] = 300,
 		["Cult of Malicor"] = 750,
 		["Dreamweavers"] = 600,
-	}, -- [13]
+	}, -- [14]
 	{
 		["Cult of Malicor"] = 750,
 		["Court of Farondis"] = 525,
 		["The Wardens"] = 150,
-	}, -- [14]
+	}, -- [15]
 	{
 		["The Wardens"] = 450,
 		["Cult of Malicor"] = 625,
 		["Highmountain Tribe"] = 600,
-	}, -- [15]
+	}, -- [16]
 	{
 		["Cult of Malicor"] = 1000,
 		["The Wardens"] = 300,
 		["Dreamweavers"] = 375,
-	}, -- [16]
-	{
-		["The Ashen Verdict"] = 3000,
 	}, -- [17]
 	{
 		["The Ashen Verdict"] = 3000,
@@ -306,9 +306,9 @@ FactionAddictConfigIsInactive = {
 	[1275] = false,
 	[1849] = false,
 	[576] = false,
-	[1850] = false,
-	[1276] = false,
 	[1085] = false,
+	[1276] = false,
+	[1850] = false,
 	[609] = false,
 	[369] = false,
 	[1277] = false,
@@ -318,12 +318,12 @@ FactionAddictConfigIsInactive = {
 	[1278] = false,
 	[1690] = false,
 	[1388] = false,
-	[81] = false,
+	[1280] = false,
 	[1279] = false,
 	[69] = false,
-	[1280] = false,
-	[1216] = false,
 	[2045] = false,
+	[1216] = false,
+	[81] = false,
 	[2170] = false,
 	[1345] = false,
 	[93] = false,
@@ -332,7 +332,7 @@ FactionAddictConfigIsInactive = {
 	[1859] = false,
 	[1133] = false,
 	[1282] = false,
-	[930] = false,
+	[1091] = false,
 	[270] = false,
 	[1984] = false,
 	[1283] = false,
@@ -343,7 +343,7 @@ FactionAddictConfigIsInactive = {
 	[1174] = false,
 	[1714] = false,
 	[1731] = false,
-	[1091] = false,
+	[930] = false,
 	[1094] = false,
 	[1158] = false,
 	[1732] = false,

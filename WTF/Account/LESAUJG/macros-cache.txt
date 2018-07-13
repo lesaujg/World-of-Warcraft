@@ -4,6 +4,9 @@ VER 3 000000000000001E "_Clear Target" "Ability_CheapShot"
 /petfollow
 /petpassive
 END
+VER 3 00000000000000A4 "Butrton" "INV_MISC_QUESTIONMARK"
+/click ExtraActionButton1a
+END
 VER 3 0000000000000099 "Fish" "INV_MISC_QUESTIONMARK"
 /equipset Fishing
 /use Fishing
