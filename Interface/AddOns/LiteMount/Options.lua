@@ -36,47 +36,16 @@ LeaveVehicle
 CancelForm
 Dismount
 CopyTargetsMount
-Mount [filter=VASHJIR][area:610/614/615,submerged]
-Mount [filter=AQ][area:766,noflyable,nosubmerged]
-Mount [filter=NAGRAND][area:950,noflyable,nosubmerged]
+Mount [filter=VASHJIR][map:203,submerged]
+Mount [filter=AQ][map:319/320/321,noflyable,nosubmerged]
+Mount [filter=NAGRAND][map:550,noflyable,nosubmerged]
 Mount [filter=230987][nosubmerged,extra:202477]
 Mount [filter=230987][nosubmerged,aura:202477]
 SmartMount [filter={CLASS}]
-SmartMount [filter=~FLY][mod:shift]
+Mount [filter=RUN][mod:shift,flyable]
+Mount [filter=WALK][mod:shift,flyable]
+Mount [filter=FLOAT][mod:shift,noflyable]
 SmartMount
-Macro
-]]
-
-local OldNoFlyAction = [[
-LeaveVehicle
-CancelForm
-Dismount
-CopyTargetsMount
-Mount [filter=VASHJIR][area:610/614/615,submerged]
-Mount [filter=AQ][area:766,noflyable,nosubmerged]
-Mount [filter=NAGRAND][area:950,noflyable,nosubmerged]
-Mount [filter=230987][nosubmerged,extra:202477]
-Mount [filter=230987][nosubmerged,aura:202477]
-SmartMount [filter={CLASS}]
-SmartMount [filter=~FLY]
-Macro
-]]
-
-local OldCustom1Action = [[
-LeaveVehicle
-CancelForm
-Dismount
-CopyTargetsMount
-Mount [filter=CUSTOM1]
-Macro
-]]
-
-local OldCustom2Action = [[
-LeaveVehicle
-CancelForm
-Dismount
-CopyTargetsMount
-Mount [filter=CUSTOM2]
 Macro
 ]]
 
@@ -85,10 +54,10 @@ Macro
 local defaults = {
     global = {
         customFlags         = { },
+        flagChanges         = { },
     },
     profile = {
         excludedSpells      = { },
-        flagChanges         = { },
         buttonActions       = { ['*'] = DefaultButtonAction },
         copyTargetsMount    = true,
         enableTwoPress      = false,
@@ -125,55 +94,52 @@ local function FlagDiff(allFlags, a, b)
 end
 
 function LM_Options:FlagIsUsed(f)
-    for _,p in pairs(self.db.profiles) do
-        for spellID,changes in pairs(p.flagChanges or {}) do
-            if changes[f] then return true end
-        end
+    for spellID,changes in pairs(self.db.global.flagChanges) do
+        if changes[f] then return true end
     end
     return false
 end
 
 function LM_Options:VersionUpgrade()
 
-    -- From 0 -> 1
-    if (self.db.profile.configVersion or 0) < 1 then
-        self.db.profile.buttonActions[2] = OldNoFlyAction
+    -- From 1 -> 2 moved a bunch of stuff from char to profile that
+    -- can't be migrated.
 
-        if self:FlagIsUsed('CUSTOM1') then
-            self.db.profile.buttonActions[3] = OldCustom1Action
-        end
-
-        if self:FlagIsUsed('CUSTOM2') then
-            self.db.profile.buttonActions[4] = OldCustom2Action
-        end
-    end
-
-    -- From 1 -> 2 moved a bunch of stuff from char to profile, can't migrate
-    if (self.db.global.configVersion or 0) < 2 then
+    if (self.db.global.configVersion or 2) < 2 then
         self.db.global.enableTwoPress = nil
     end
 
-    if (self.db.char.configVersion or 0) < 2 then
+    if (self.db.char.configVersion or 2) < 2 then
         self.db.char.copyTargetsMount = nil
         self.db.char.uiMountFilterList = nil
     end
 
+    if (self.db.global.configVersion or 3) < 3 then
+        local gfc = self.db.global.flagChanges
+
+        -- Merge all of the profile flagChanges into one global one
+        for _,p in pairs(self.db.profiles) do
+            for spellID,changes in pairs(p.flagChanges or {}) do
+                gfc[spellID] = Mixin(gfc[spellID] or {}, changes)
+            end
+            p.flagChanges = nil
+        end
+    end
+
     -- Set current version
-    self.db.global.configVersion = 2
-    self.db.profile.configVersion = 2
-    self.db.char.configVersion = 2
+    self.db.global.configVersion = 3
+    self.db.profile.configVersion = 3
+    self.db.char.configVersion = 3
 end
 
 function LM_Options:ConsistencyCheck()
 
-    -- Make sure any flag in any profile is included in the flag list
+    -- Make sure any flag is included in the flag list
 
-    for _,p in pairs(self.db.profiles) do
-        for spellID,changes in pairs(p.flagChanges or {}) do
-            for f in pairs(changes) do
-                if LM_FLAG[f] == nil and self.db.global.customFlags[f] == nil then
-                    self.db.global.customFlags[f] = { }
-                end
+    for spellID,changes in pairs(self.db.global.flagChanges) do
+        for f in pairs(changes) do
+            if LM_FLAG[f] == nil and self.db.global.customFlags[f] == nil then
+                self.db.global.customFlags[f] = { }
             end
         end
     end
@@ -214,17 +180,20 @@ end
 function LM_Options:AddExcludedMount(m)
     LM_Debug(format("Disabling mount %s (%d).", m.name, m.spellID))
     self.db.profile.excludedSpells[m.spellID] = true
+    self.db.callbacks:Fire("OnMountSetExclude", m)
 end
 
 function LM_Options:RemoveExcludedMount(m)
     LM_Debug(format("Enabling mount %s (%d).", m.name, m.spellID))
     self.db.profile.excludedSpells[m.spellID] = false
+    self.db.callbacks:Fire("OnMountSetExclude", m)
 end
 
 function LM_Options:ToggleExcludedMount(m)
     local id = m.spellID
     LM_Debug(format("Toggling mount %s (%d).", m.name, id))
     self.db.profile.excludedSpells[id] = not self.db.profile.excludedSpells[id]
+    self.db.callbacks:Fire("OnMountSetExclude", m)
 end
 
 function LM_Options:SetExcludedMounts(mountlist)
@@ -243,27 +212,27 @@ end
 
 function LM_Options:ApplyMountFlags(m)
 
-    if not m.cachedFlags then
-        local changes = self.db.profile.flagChanges[m.spellID]
-        m.cachedFlags = CopyTable(m.flags)
+    if not self.cachedMountFlags[m.spellID] then
+        local changes = self.db.global.flagChanges[m.spellID]
+        self.cachedMountFlags[m.spellID] = CopyTable(m.flags)
 
         if changes then
             for _,flagName in ipairs(self.allFlags) do
                 if changes[flagName] == '+' then
-                    m.cachedFlags[flagName] = true
+                    self.cachedMountFlags[m.spellID][flagName] = true
                 elseif changes[flagName] == '-' then
-                    m.cachedFlags[flagName] = nil
+                    self.cachedMountFlags[m.spellID][flagName] = nil
                 end
             end
         end
     end
 
     if m.isFavorite then
-        m.cachedFlags.FAVORITES = true
+        self.cachedMountFlags[m.spellID].FAVORITES = true
     else
-        m.cachedFlags.FAVORITES = nil
+        self.cachedMountFlags[m.spellID].FAVORITES = nil
     end
-    return m.cachedFlags
+    return self.cachedMountFlags[m.spellID]
 end
 
 function LM_Options:SetMountFlag(m, setFlag)
@@ -304,13 +273,13 @@ end
 
 function LM_Options:ResetMountFlags(m)
     LM_Debug(format("Defaulting flags for spell %s (%d).", m.name, m.spellID))
-    self.db.profile.flagChanges[m.spellID] = nil
-    m.cachedFlags = nil
+    self.db.global.flagChanges[m.spellID] = nil
+    self.cachedMountFlags[m.spellID] = nil
 end
 
 function LM_Options:SetMountFlags(m, flags)
-    self.db.profile.flagChanges[m.spellID] = FlagDiff(self.allFlags, m.flags, flags)
-    m.cachedFlags = nil
+    self.db.global.flagChanges[m.spellID] = FlagDiff(self.allFlags, m.flags, flags)
+    self.cachedMountFlags[m.spellID] = nil
 end
 
 
@@ -336,17 +305,17 @@ function LM_Options:CreateFlag(f)
     self.db.global.customFlags[f] = { }
     self.db.profile.uiMountFilterList[f] = false
     self:UpdateAllFlags()
+    self.db.callbacks:Fire("OnFlagsModified")
 end
 
 function LM_Options:DeleteFlag(f)
-    for _,p in pairs(self.db.profiles) do
-        for _,c in pairs(p.flagChanges or {}) do
-            c[f] = nil
-        end
+    for _,c in pairs(self.db.global.flagChanges) do
+        c[f] = nil
     end
     self.db.profile.uiMountFilterList[f] = nil
     self.db.global.customFlags[f] = nil
     self:UpdateAllFlags()
+    self.db.callbacks:Fire("OnFlagsModified")
 end
 
 function LM_Options:RenameFlag(f, newF)
@@ -354,14 +323,15 @@ function LM_Options:RenameFlag(f, newF)
     if f == newF then return end
 
     -- all this "tmp" stuff is to deal with f == newF, just in case
-
     local tmp
+
+    for _,c in pairs(self.db.global.flagChanges) do
+        tmp = c[f]
+        c[f] = nil
+        c[newF] = tmp
+    end
+
     for _,p in pairs(self.db.profiles) do
-        for _,c in pairs(p.flagChanges or {}) do
-            tmp = c[f]
-            c[f] = nil
-            c[newF] = tmp
-        end
         tmp = p.uiMountFilterList[f]
         p.uiMountFilterList[f] = nil
         p.uiMountFilterList[newF] = tmp
@@ -372,12 +342,14 @@ function LM_Options:RenameFlag(f, newF)
     self.db.global.customFlags[newF] = tmp
 
     self:UpdateAllFlags()
+    self.db.callbacks:Fire("OnFlagsModified")
 end
 
 -- This keeps a cached list of all flags in sort order, with the LM_FLAG
 -- set of flags first, then the user-added flags in alphabetical order
 
 function LM_Options:UpdateAllFlags()
+    self.cachedMountFlags = wipe(self.cachedMountFlags or {})
     self.allFlags = wipe(self.allFlags or {})
 
     for f in pairs(LM_FLAG) do tinsert(self.allFlags, f) end

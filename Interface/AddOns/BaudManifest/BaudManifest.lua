@@ -184,8 +184,8 @@ local bitand = bit.band;
 
 StaticPopupDialogs.BAUDMANIFEST_DELETECATEGORY = {
   text = "Are you sure you want to delete this category?",
-  button1 = TEXT(YES),
-  button2 = TEXT(NO),
+  button1 = YES,
+  button2 = NO,
   OnAccept = function() BaudManifestDeleteDraggedCategory(); end,
   OnCancel = function() BaudManifestClearVirtualDrag(); end,
   timeout = false,
@@ -195,8 +195,8 @@ StaticPopupDialogs.BAUDMANIFEST_DELETECATEGORY = {
 
 StaticPopupDialogs.BAUDMANIFEST_CATEGORIZE = {
   text = "This action will put uncategorized items into categories based on their type.  Do you wish to proceed?",
-  button1 = TEXT(YES),
-  button2 = TEXT(NO),
+  button1 = YES,
+  button2 = NO,
   OnAccept = function(self, Display) BaudManifestCategorize(Display); end,
   timeout = false,
   exclusive = true,
@@ -205,8 +205,8 @@ StaticPopupDialogs.BAUDMANIFEST_CATEGORIZE = {
 
 StaticPopupDialogs.BAUDMANIFEST_REMOVECHAR = {
   text = "|cffff1919Warning:|r Are you sure you want to delete the item and category information for %s?",
-  button1 = TEXT(YES),
-  button2 = TEXT(NO),
+  button1 = YES,
+  button2 = NO,
   OnAccept = function(self, CharName)
     SelectedChar = nil;
     BaudManifestCharactersScrollBoxHighlight:Hide();
@@ -232,7 +232,7 @@ local function GetItemString(Link)
   if strmatch(Link, "battlepet:") then
     return strmatch(Link, "(battlepet:%d*:%d*:%d*:%d*:%d*:%d*:%d*)|");
   elseif strmatch(Link, "keystone:") then
-    return strmatch(Link, "(keystone:%d*:%d*:%d*:%d*:%d*)|");
+    return strmatch(Link, "(keystone:%d*:%d*:%d*:%d*:%d*:%d*:%d*)|");
   else
     return strmatch(Link, "(item:%d*:%d*:%d*:%d*:%d*:%d*:%-?%d*:%-?%d*:%d*:%d*:[%d:]+)|");
   end
@@ -2577,7 +2577,7 @@ function BaudManifestMoveListItem(Display)
   if (NewCategory == PlayerData.AutoSell) then
     --DebugMsg("Adding " .. OldItem.ItemString);
     SetAutoSellTable(OldItem.ItemString, 1);
-  elseif not GetAutoSellTable(OldItem.ItemString) then
+  else
     --DebugMsg("Removing " .. CleanItemString(OldItem.ItemString));
     SetAutoSellTable(OldItem.ItemString, nil);
   end
@@ -2772,6 +2772,10 @@ local function UpdateSlotFunc(Bag, Slot)
   end
 
   ItemString = GetItemString(Link);
+  if not ItemString then
+    DebugMsg("Cannot get ItemID from: " .. DebugPrintLink(Link));
+  end
+
   ItemID = strmatch(ItemString, "item:(%d+):");
   if not ItemID then
     if (strmatch(ItemString, "keystone:")) then
@@ -3287,9 +3291,10 @@ function BaudManifestScrollBar_Update(Display)
           MaxCount = 1;
           itemId = "82800";
         elseif strmatch(ItemInfo.ItemString, "keystone:") then
-          local dungeonID, plusLevel = strmatch(ItemInfo.ItemString, "keystone:(%d+):(%d+)");
+          local dungeonID, plusLevel = strmatch(ItemInfo.ItemString, "keystone:%d+:(%d+):(%d+)");
+          --DebugMsg("Trying to interpret " .. ItemInfo.ItemString .. " -- Found DungeonID" .. dungeonID .. " at level " .. plusLevel);
           Name = "Keystone: ";
-          Name = Name .. C_ChallengeMode.GetMapInfo(dungeonID);
+          Name = Name .. C_ChallengeMode.GetMapUIInfo(dungeonID);
           Name = Name .. "+";
           Name = Name .. plusLevel;
           itemId = "138019";
@@ -4127,6 +4132,7 @@ function BaudManifestAutoSellItems()
 
       -- if the item is in the autosell table, it's good to sell
       if GetAutoSellTable(Item) then
+        --DebugMsg("Found in AutoSell " .. Item);
         C_Timer.NewTimer(Timer, function() UseContainerItem(Bag, Slot); end)
         Timer = Timer + .1;
         Total = Total + 1;

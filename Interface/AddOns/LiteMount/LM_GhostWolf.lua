@@ -27,7 +27,13 @@ function LM_GhostWolf:CurrentFlags()
     -- no way to detect him as far as I can tell.
 
     if flags.WALK then
-        if UnitAura("player", TABLET_OF_GHOST_WOLF_AURA) then
+        local hasAura
+        if _G.AuraUtil then
+            hasAura = AuraUtil.FindAuraByName(TABLET_OF_GHOST_WOLF_AURA, "player")
+        else
+            hasAura = UnitAura("player", TABLET_OF_GHOST_WOLF_AURA)
+        end
+        if hasAura then
             flags = CopyTable(flags)
             flags.WALK = nil
             flags.RUN = true

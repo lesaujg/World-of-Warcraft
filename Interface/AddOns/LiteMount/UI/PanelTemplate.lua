@@ -1,6 +1,6 @@
 --[[----------------------------------------------------------------------------
 
-  LiteMount/PanelTemplate.lua
+  LiteMount/UI/PanelTemplate.lua
 
   Copyright 2016-2018 Mike Battersby
 
@@ -88,7 +88,9 @@ function LiteMountOptionsPanel_OnShow(self)
 
         LM_Options.db.RegisterCallback(self, "OnProfileCopied", self.refresh, self)
         LM_Options.db.RegisterCallback(self, "OnProfileChanged", self.refresh, self)
-        LM_Options.db.RegisterCallback(self, "OnProfileReset", self.refresh, sefl)
+        LM_Options.db.RegisterCallback(self, "OnProfileReset", self.refresh, self)
+        LM_Options.db.RegisterCallback(self, "OnFlagsModified", self.refresh, self)
+        LM_Options.db.RegisterCallback(self, "OnMountSetExclude", self.refresh, self)
     end
 
     LiteMountOptionsPanel_Refresh(self)

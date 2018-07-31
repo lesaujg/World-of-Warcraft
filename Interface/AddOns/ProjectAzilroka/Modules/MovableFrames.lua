@@ -39,7 +39,7 @@ local Frames = {
 	'PetitionFrame',
 	'PetStableFrame',
 	'PVEFrame',
-	'PVPReadyDialog',
+--	'PVPReadyDialog',
 	'QuestFrame',
 	'QuestLogPopupDetailFrame',
 	'RaidBrowserFrame',
@@ -62,14 +62,12 @@ local Frames = {
 	'TradeFrame',
 	'TutorialFrame',
 	'VideoOptionsFrame',
-	'WorldStateAlwaysUpFrame',
 	'WorldStateScoreFrame',
 }
 
 local AddOnFrames = {
 	['Blizzard_AchievementUI'] = { 'AchievementFrame' },
 	['Blizzard_ArchaeologyUI'] = { 'ArchaeologyFrame' },
-	['Blizzard_ArtifactUI'] = { 'ArtifactRelicForgeFrame' },
 	['Blizzard_AuctionUI'] = { 'AuctionFrame' },
 	['Blizzard_BarberShopUI'] = { 'BarberShopFrame' },
 	['Blizzard_BindingUI'] = { 'KeyBindingFrame' },
@@ -100,26 +98,30 @@ local AddOnFrames = {
 }
 
 local function LoadPosition(self)
-	if self.IsMoving == true then return end
 	local Name = self:GetName()
+
+	if not self:GetPoint() then
+		self:SetPoint('TOPLEFT', 'UIParent', 'TOPLEFT', 16, -116)
+	end
+
 	if MF.db[Name] and MF.db[Name]['Permanent'] and MF.db[Name]['Points'] then
 		self:ClearAllPoints()
 		self:SetPoint(unpack(MF.db[Name]['Points']))
 	end
+
+	tinsert(UISpecialFrames, Name)
 end
 
 local function OnDragStart(self)
-	self.IsMoving = true
 	self:StartMoving()
 end
 
 local function OnDragStop(self)
 	self:StopMovingOrSizing()
-	self.IsMoving = false
 	local Name = self:GetName()
 	if MF.db[Name] and MF.db[Name]['Permanent'] then
-		local a, b, c, d, e = self:GetPoint()
-		b = self:GetParent():GetName() or UIParent
+		local a, _, c, d, e = self:GetPoint()
+		local b = self:GetParent():GetName() or 'UIParent'
 		if Name == 'QuestFrame' or Name == 'GossipFrame' then
 			MF.db['GossipFrame'].Points = {a, b, c, d, e}
 			MF.db['QuestFrame'].Points = {a, b, c, d, e}
@@ -131,18 +133,15 @@ local function OnDragStop(self)
 	end
 end
 
-function MF:MakeMovable(Frame)
-	if not _G[Frame] then
-		PA:Print(PA.ACL["Frame doesn't exist: "]..Frame)
+function MF:MakeMovable(Name)
+	if not _G[Name] then
+		PA:Print(PA.ACL["Frame doesn't exist: "]..Name)
 		return
 	end
 
-	Frame = _G[Frame]
-	local Name = Frame:GetName()
+	local Frame = _G[Name]
 
-	if not Name then return end
-
-	if Name == 'AchievementFrame' then AchievementFrameHeader:EnableMouse(false) UIPanelWindows[Name] = {} end
+	if Name == 'AchievementFrame' then AchievementFrameHeader:EnableMouse(false) end
 
 	Frame:EnableMouse(true)
 	Frame:SetMovable(true)
@@ -152,9 +151,14 @@ function MF:MakeMovable(Frame)
 	Frame:HookScript('OnDragStart', OnDragStart)
 	Frame:HookScript('OnDragStop', OnDragStop)
 	Frame:HookScript('OnHide', OnDragStop)
-	if Name == 'WorldStateAlwaysUpFrame' then
-		Frame:HookScript('OnEnter', function(self) self:SetTemplate() end)
-		Frame:HookScript('OnLeave', function(self) self:StripTextures() end)
+
+	Frame.ignoreFramePositionManager = true
+	if UIPanelWindows[Name] then
+		for Key in pairs(UIPanelWindows[Name]) do
+			if Key == "pushable" then
+				UIPanelWindows[Name][Key] = nil
+			end
+		end
 	end
 
 	C_Timer.After(0, function()
@@ -238,6 +242,9 @@ function MF:GetOptions()
 
 	self.AllFrames = nil
 
+	Options.args.profiles = LibStub('AceDBOptions-3.0'):GetOptionsTable(PA.data)
+	Options.args.profiles.order = -2
+
 	PA.Options.args.MovableFrames = Options
 end
 
@@ -274,27 +281,27 @@ function MF:Initialize()
 		sort(Frames)
 	end
 
-	self:BuildProfile()
-	self:GetOptions()
+	MF:BuildProfile()
+	MF:GetOptions()
 
 	for i = 1, #Frames do
-		self:MakeMovable(Frames[i])
+		MF:MakeMovable(Frames[i])
 	end
 
 	-- Check Forced Loaded AddOns
 	for AddOn, Table in pairs(AddOnFrames) do
 		if IsAddOnLoaded(AddOn) then
 			for _, Frame in pairs(Table) do
-				self:MakeMovable(Frame)
+				MF:MakeMovable(Frame)
 			end
 		end
 	end
-
+--[[
 	hooksecurefunc(ExtendedUI['CAPTUREPOINT'], 'create', function(id)
 		if _G['WorldStateCaptureBar'..id].MoverAssigned then return end
 		MF:MakeMovable(_G['WorldStateCaptureBar'..id])
 		_G['WorldStateCaptureBar'..id].MoverAssigned = true
 	end)
-
-	self:RegisterEvent('ADDON_LOADED')
+]]
+	MF:RegisterEvent('ADDON_LOADED')
 end

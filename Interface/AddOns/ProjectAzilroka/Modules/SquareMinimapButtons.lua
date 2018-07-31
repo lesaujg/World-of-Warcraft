@@ -7,7 +7,7 @@ SMB.Description = 'Minimap Button Bar / Minimap Button Skinning'
 SMB.Authors = 'Azilroka    Infinitron    Sinaris    Omega    Durc'
 
 local strsub, strlen, strfind, ceil = strsub, strlen, strfind, ceil
-local tinsert, pairs, unpack, select = tinsert, pairs, unpack, select
+local tinsert, pairs, unpack, select, tContains = tinsert, pairs, unpack, select, tContains
 local InCombatLockdown, C_PetBattles = InCombatLockdown, C_PetBattles
 local Minimap = Minimap
 
@@ -44,6 +44,7 @@ local GenericIgnores = {
 	'NauticusMiniIcon',
 	'WestPointer',
 	'Cork',
+	'DugisArrowMinimapPoint',
 }
 
 local PartialIgnores = { 'Node', 'Note', 'Pin', 'POI' }
@@ -51,10 +52,6 @@ local PartialIgnores = { 'Node', 'Note', 'Pin', 'POI' }
 local AcceptedFrames = {
 	'BagSync_MinimapButton',
 	'VendomaticButtonFrame',
-}
-
-local AddButtonsToBar = {
-	'SmartBuff_MiniMapButton',
 }
 
 local ButtonFunctions = { 'SetParent', 'ClearAllPoints', 'SetPoint', 'SetSize', 'SetScale', 'SetFrameStrata', 'SetFrameLevel' }
@@ -251,9 +248,7 @@ function SMB:SkinMinimapButton(Button)
 	if not Name then return end
 
 	if Button:IsObjectType('Button') then
-		for i = 1, #ignoreButtons do
-			if Name == ignoreButtons[i] then return end
-		end
+		if tContains(ignoreButtons, Name) then return end
 
 		for i = 1, #GenericIgnores do
 			if strsub(Name, 1, strlen(GenericIgnores[i])) == GenericIgnores[i] then return end
@@ -322,7 +317,8 @@ function SMB:GrabMinimapButtons()
 		for i = 1, Frame:GetNumChildren() do
 			local object = select(i, Frame:GetChildren())
 			if object then
-				if object:IsObjectType('Button') and object:GetName() then
+				local name = object:GetName()
+				if name and (object:IsObjectType('Button') or object:IsObjectType('Frame') and tContains(AcceptedFrames, name)) then
 					self:SkinMinimapButton(object)
 				end
 			end
@@ -398,12 +394,12 @@ function SMB:GetOptions()
 		set = function(info, value) SMB.db[info[#info]] = value SMB:Update() end,
 		args = {
 			Header = {
-				order = 0,
+				order = 1,
 				type = 'header',
 				name = PA:Color(SMB.Title),
 			},
 			mbb = {
-				order = 1,
+				order = 2,
 				type = 'group',
 				name = PA.ACL['Minimap Buttons / Bar'],
 				guiInline = true,
@@ -488,6 +484,9 @@ function SMB:GetOptions()
 		},
 	}
 
+	Options.args.profiles = LibStub('AceDBOptions-3.0'):GetOptionsTable(PA.data)
+	Options.args.profiles.order = -2
+
 	PA.Options.args.SquareMinimapButton = Options
 end
 
@@ -516,39 +515,39 @@ function SMB:SetupProfile()
 end
 
 function SMB:Initialize()
-	self:BuildProfile()
-	self:GetOptions()
+	SMB:BuildProfile()
+	SMB:GetOptions()
 
-	self.Hider = CreateFrame("Frame", nil, UIParent)
+	SMB.Hider = CreateFrame("Frame", nil, UIParent)
 
-	self.Bar = CreateFrame('Frame', 'SquareMinimapButtonBar', UIParent)
-	self.Bar:Hide()
-	self.Bar:SetPoint('RIGHT', UIParent, 'RIGHT', -45, 0)
-	self.Bar:SetFrameStrata('LOW')
-	self.Bar:SetClampedToScreen(true)
-	self.Bar:SetMovable(true)
-	self.Bar:EnableMouse(true)
-	self.Bar:SetSize(self.db.IconSize, self.db.IconSize)
-	self.Bar:SetTemplate('Transparent', true)
+	SMB.Bar = CreateFrame('Frame', 'SquareMinimapButtonBar', UIParent)
+	SMB.Bar:Hide()
+	SMB.Bar:SetPoint('RIGHT', UIParent, 'RIGHT', -45, 0)
+	SMB.Bar:SetFrameStrata('LOW')
+	SMB.Bar:SetClampedToScreen(true)
+	SMB.Bar:SetMovable(true)
+	SMB.Bar:EnableMouse(true)
+	SMB.Bar:SetSize(SMB.db.IconSize, SMB.db.IconSize)
+	SMB.Bar:SetTemplate('Transparent', true)
 
-	self.Bar:SetScript('OnEnter', function(self) UIFrameFadeIn(self, 0.2, self:GetAlpha(), 1) end)
-	self.Bar:SetScript('OnLeave', function(self)
+	SMB.Bar:SetScript('OnEnter', function(self) UIFrameFadeIn(self, 0.2, self:GetAlpha(), 1) end)
+	SMB.Bar:SetScript('OnLeave', function(self)
 		if SMB.db['BarMouseOver'] then
 			UIFrameFadeOut(self, 0.2, self:GetAlpha(), 0)
 		end
 	end)
 
 	if PA.Tukui then
-		Tukui[1]['Movers']:RegisterFrame(self.Bar)
+		Tukui[1]['Movers']:RegisterFrame(SMB.Bar)
 	elseif PA.ElvUI then
-		ElvUI[1]:CreateMover(self.Bar, 'SquareMinimapButtonBarMover', 'SquareMinimapButtonBar Anchor', nil, nil, nil, 'ALL,GENERAL')
+		ElvUI[1]:CreateMover(SMB.Bar, 'SquareMinimapButtonBarMover', 'SquareMinimapButtonBar Anchor', nil, nil, nil, 'ALL,GENERAL')
 	end
 
-	self.TexCoords = { .08, .92, .08, .92 }
+	SMB.TexCoords = { .08, .92, .08, .92 }
 
 	Minimap:SetMaskTexture('Interface\\ChatFrame\\ChatFrameBackground')
 
-	self:HandleBlizzardButtons()
+	SMB:HandleBlizzardButtons()
 
-	self:ScheduleRepeatingTimer('GrabMinimapButtons', 5)
+	SMB:ScheduleRepeatingTimer('GrabMinimapButtons', 5)
 end

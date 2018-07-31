@@ -25,12 +25,12 @@ function BrokerLDB:GetOptions()
 		order = 101,
 		args = {
 			header = {
-				order = 0,
+				order = 1,
 				type = 'header',
 				name = BrokerLDB['Title'],
 			},
 			general = {
-				order = 1,
+				order = 2,
 				type = 'group',
 				name = PA.ACL['General'],
 				guiInline = true,
@@ -94,6 +94,9 @@ function BrokerLDB:GetOptions()
 			},
 		},
 	}
+
+	Options.args.profiles = LibStub('AceDBOptions-3.0'):GetOptionsTable(PA.data)
+	Options.args.profiles.order = -2
 
 	PA.Options.args.BrokerLDB = Options
 end
@@ -332,23 +335,23 @@ function BrokerLDB:SetupProfile()
 end
 
 function BrokerLDB:Initialize()
-	self:BuildProfile()
-	self:GetOptions()
+	BrokerLDB:BuildProfile()
+	BrokerLDB:GetOptions()
 
-	self.DropDown = CreateFrame('Frame', 'BrokerLDBDropDown', UIParent, 'UIDropDownMenuTemplate')
-	self.Slide = 'In'
-	self.EasyMenu = {}
+	BrokerLDB.DropDown = CreateFrame('Frame', 'BrokerLDBDropDown', UIParent, 'UIDropDownMenuTemplate')
+	BrokerLDB.Slide = 'In'
+	BrokerLDB.EasyMenu = {}
 
-	self.Buttons = {}
-	self.PluginObjects = {}
+	BrokerLDB.Buttons = {}
+	BrokerLDB.PluginObjects = {}
 
-	self.Ignore = {
+	BrokerLDB.Ignore = {
 		'Cork',
 	}
 
-	self.Whitelist = {}
-	self.Blacklist = {}
-	PA.LDB.RegisterCallback(self, 'LibDataBroker_DataObjectCreated', 'New')
+	BrokerLDB.Whitelist = {}
+	BrokerLDB.Blacklist = {}
+	PA.LDB.RegisterCallback(BrokerLDB, 'LibDataBroker_DataObjectCreated', 'New')
 
 	local Frame = CreateFrame('Button', nil, UIParent)
 	Frame.Text = Frame:CreateFontString(nil, 'OVERLAY')
@@ -359,7 +362,7 @@ function BrokerLDB:Initialize()
 	Frame:SetPoint('LEFT', UIParent, 'LEFT', 1, 0)
 	Frame:RegisterForClicks('LeftButtonDown', 'RightButtonDown')
 	Frame:SetTemplate('Transparent')
-	self:AnimateSlide(Frame, -150, 0, 1)
+	BrokerLDB:AnimateSlide(Frame, -150, 0, 1)
 
 	Frame:SetScript('OnEnter', function(self) UIFrameFadeIn(self, 0.2, self:GetAlpha(), 1) end)
 	Frame:SetScript('OnLeave', function(self)
@@ -381,8 +384,8 @@ function BrokerLDB:Initialize()
 		end
 	end)
 
-	self.Frame = Frame
+	BrokerLDB.Frame = Frame
 
-	self:Update()
-	self:SlideIn()
+	BrokerLDB:Update()
+	BrokerLDB:SlideIn()
 end

@@ -16,6 +16,10 @@ L.ChatFrames.LookingForGroup = "RechercheDeGroupe"
 L.DataText = {} -- Data Text Locales
 ------------------------------------------------
 
+L.DataText.Voice = "Disc. Audio"
+L.DataText.LootSpec = "Specialisation de loot"
+L.DataText.Garrison = "Fief"
+L.DataText.Zone = "Zone"
 L.DataText.AvoidanceBreakdown = "Evitement détaillé"
 L.DataText.Level = "Niveau"
 L.DataText.Boss = "Boss"
@@ -238,6 +242,8 @@ L.Help.Config = "'|cff00ff00c|r' or '|cff00ff00config|r' : Afficher la fenêtre 
 L.Help.Move = "'|cff00ff00move|r' or '|cff00ff00moveui|r' : Déplacer les cadres."
 L.Help.Test = "'|cff00ff00test|r' or '|cff00ff00testui|r' : Tester les cadres d'unitées."
 L.Help.Profile = "'|cff00ff00profile|r' or '|cff00ff00p|r' : Use Tukui settings (existing profile) from another character."
+L.Help.Grid = "'|cff00ff00grid|r' or '|cff00ff00grid 128|r' : Afficher une grille qui vous permet de mieux aligner les cadres. (Remplacez 128 par n'importe quel nombre pour la grille personnalisée)"
+L.Help.Status = "'|cff00ff00status|r' or '|cff00ff00debug|r' : Affiche une fenêtre de débogage avec les informations nécessaires pour rechercher un bogue dans l'interface utilisateur"
 
 ------------------------------------------------
 L.Merchant = {} -- Merchant
@@ -251,15 +257,15 @@ L.Merchant.SoldTrash = "Vos objets inutiles ont été vendu et vous avez gagné"
 L.Version = {} -- Version Check
 ------------------------------------------------
 
-L.Version.Outdated = "Vôtre version de Tukui n'est pas à jour . Vous pouvez télécharger la dernière version depuis www.tukui.org"
+L.Version.Outdated = "Votre version de Tukui n'est pas à jour. Vous pouvez télécharger la dernière version depuis www.tukui.org"
 
 ------------------------------------------------
 L.Others = {} -- Miscellaneous
 ------------------------------------------------
 
-L.Others.GlobalSettings = "Use Global Settings"
-L.Others.CharSettings = "Use Character Settings"
-L.Others.ProfileNotFound = "Profile not found"
-L.Others.ProfileSelection = "Please type a profile to use (example: /tukui profile Illidan-Tukz)"
-L.Others.ConfigNotFound = "Config not loaded."
-L.Others.ResolutionChanged = "We detected a resolution change on your World of Warcraft client. We HIGHLY RECOMMEND to restart your game. Do you want to proceed?"
+L.Others.GlobalSettings = "Utiliser les paramètres globaux"
+L.Others.CharSettings = "Utiliser les paramètres de personnage"
+L.Others.ProfileNotFound = "Profile non trouvé"
+L.Others.ProfileSelection = "SVP écrire un profil à utiliser (exemple: /tukui profile Illidan-Tukz)"
+L.Others.ConfigNotFound = "Configuration non trouvé."
+L.Others.ResolutionChanged = "Nous avons détecté un changement de résolution sur votre client World of Warcraft. Nous vous recommandons vivement de recharger votre interface de jeu. Voulez-vous poursuivre?"

@@ -296,6 +296,8 @@ WeakAuras → Opções → Opções ]=]
 	--[[Translation missing --]]
 	L["General Text Settings"] = "General Text Settings"
 	--[[Translation missing --]]
+	L["Global Conditions"] = "Global Conditions"
+	--[[Translation missing --]]
 	L["Glow"] = "Glow"
 	L["Glow Action"] = "Ação incandescente"
 	--[[Translation missing --]]
@@ -307,6 +309,8 @@ WeakAuras → Opções → Opções ]=]
 	--[[Translation missing --]]
 	L["Group aura count description"] = "Group aura count description"
 	L["Group Member Count"] = "Contagem dos membros do grupo"
+	--[[Translation missing --]]
+	L["Group Scale"] = "Group Scale"
 	--[[Translation missing --]]
 	L["Grow"] = "Grow"
 	--[[Translation missing --]]
@@ -332,6 +336,8 @@ WeakAuras → Opções → Opções ]=]
 	L["Hybrid Sort Mode"] = "Hybrid Sort Mode"
 	--[[Translation missing --]]
 	L["Icon"] = "Icon"
+	--[[Translation missing --]]
+	L["Icon Alpha"] = "Icon Alpha"
 	--[[Translation missing --]]
 	L["Icon Color"] = "Icon Color"
 	L["Icon Info"] = "Informação do ícone"
@@ -674,7 +680,9 @@ WeakAuras → Opções → Opções ]=]
 	--[[Translation missing --]]
 	L["Use Full Scan (High CPU)"] = "Use Full Scan (High CPU)"
 	--[[Translation missing --]]
-	L["Use SetTransform (will change behaviour in 7.3)"] = "Use SetTransform (will change behaviour in 7.3)"
+	L["Use nth value from tooltip:"] = "Use nth value from tooltip:"
+	--[[Translation missing --]]
+	L["Use SetTransform"] = "Use SetTransform"
 	--[[Translation missing --]]
 	L["Use tooltip \"size\" instead of stacks"] = "Use tooltip \"size\" instead of stacks"
 	--[[Translation missing --]]
@@ -705,6 +713,8 @@ WeakAuras → Opções → Opções ]=]
 	L["Yellow Rune"] = "Yellow Rune"
 	--[[Translation missing --]]
 	L["Yes"] = "Yes"
+	--[[Translation missing --]]
+	L["You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"] = "You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"
 	--[[Translation missing --]]
 	L["Z Offset"] = "Z Offset"
 	--[[Translation missing --]]

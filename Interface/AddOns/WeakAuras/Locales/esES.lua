@@ -83,6 +83,8 @@ L["Action Usable"] = "Acción Utilizable"
 L["Active"] = "Active"
 --[[Translation missing --]]
 L["Additional Trigger Replacements"] = "Additional Trigger Replacements"
+--[[Translation missing --]]
+L["Adjust Timer"] = "Adjust Timer"
 L["Affected"] = "Afectado"
 L["Aggro"] = "Amenaza"
 L["Alert Type"] = "Tipo de alerta"
@@ -90,6 +92,8 @@ L["Alive"] = "Vivo"
 L["All Triggers"] = "Todos los Disparadores"
 L["Alliance"] = "Alianza"
 L["Allow partial matches"] = "Permitir coincidencias parciales"
+--[[Translation missing --]]
+L["Alpha"] = "Alpha"
 L["Alternate Power"] = "Energía Alternativa"
 L["Always"] = "Siempre"
 L["Always active trigger"] = "Siempre activar disparador"
@@ -222,7 +226,11 @@ L["Cross"] = "Cross"
 L["Crowd Controlled"] = "Bajo Control"
 L["Crushing"] = "Golpe Aplastador"
 --[[Translation missing --]]
-L["Current Zone ID:"] = "Current Zone ID:"
+L["Cunning"] = "Cunning"
+--[[Translation missing --]]
+L["Current Zone Group ID: "] = "Current Zone Group ID: "
+--[[Translation missing --]]
+L["Current Zone ID: "] = "Current Zone ID: "
 L["Curse"] = "Maldición"
 L["Custom"] = "Personalizado"
 L["Custom Function"] = "Función Personalizada"
@@ -270,7 +278,8 @@ L["Elide"] = "Elide"
 L["Emote"] = "Emocion"
 --[[Translation missing --]]
 L["Empty"] = "Empty"
-L["Encounter ID"] = "ID de Encuentro"
+--[[Translation missing --]]
+L["Encounter ID(s)"] = "Encounter ID(s)"
 L["Energize"] = "Vigorizar"
 L["Enrage"] = "Enfurecido"
 --[[Translation missing --]]
@@ -309,10 +318,14 @@ L["False"] = "False"
 L["Fatigue"] = "Fatiga"
 L["Feet"] = "Pies"
 --[[Translation missing --]]
+L["Ferocity"] = "Ferocity"
+--[[Translation missing --]]
 L["Finger 1"] = "Finger 1"
 --[[Translation missing --]]
 L["Finger 2"] = "Finger 2"
 L["Fire"] = "Fuego"
+--[[Translation missing --]]
+L["First"] = "First"
 --[[Translation missing --]]
 L["First Text Color"] = "First Text Color"
 --[[Translation missing --]]
@@ -351,6 +364,8 @@ L["Guild"] = "Hermandad"
 --[[Translation missing --]]
 L["Hands"] = "Hands"
 --[[Translation missing --]]
+L["Has Target"] = "Has Target"
+--[[Translation missing --]]
 L["Has Vehicle UI"] = "Has Vehicle UI"
 L["HasPet"] = "Mascota viva"
 L["Head"] = "Cabeza"
@@ -374,6 +389,8 @@ L["Icon"] = "Icono"
 --[[Translation missing --]]
 L["Icon Color"] = "Icon Color"
 --[[Translation missing --]]
+L["Icon Desaturate"] = "Icon Desaturate"
+--[[Translation missing --]]
 L["Id"] = "Id"
 L["Ignore Rune CD"] = "Ignorar Recarga de Runas"
 L["Immune"] = "Inmune"
@@ -382,6 +399,8 @@ L["Import"] = "Import"
 --[[Translation missing --]]
 L["Import disabled"] = "Import disabled"
 L["In Combat"] = "En Combate"
+--[[Translation missing --]]
+L["In Encounter"] = "In Encounter"
 --[[Translation missing --]]
 L["In Group"] = "In Group"
 L["In Pet Battle"] = "En duelo de mascotas"
@@ -403,6 +422,8 @@ L["Instance Type"] = "Tipo de Instancia"
 L["Interrupt"] = "Interrupcion"
 L["Interruptible"] = "Interrumpible"
 L["Inverse"] = "Inverso"
+--[[Translation missing --]]
+L["Inverse Pet Behavior"] = "Inverse Pet Behavior"
 L["Is Exactly"] = "Es Exactamente"
 L["Is Moving"] = "se está moviendo"
 --[[Translation missing --]]
@@ -426,6 +447,10 @@ L["Leaving"] = "Leaving"
 L["Leech"] = "Parasitar"
 L["Left"] = "Izquierda"
 L["Left to Right"] = "De Izquierda a Derecha"
+--[[Translation missing --]]
+L["Legacy RGB Gradient"] = "Legacy RGB Gradient"
+--[[Translation missing --]]
+L["Legacy RGB Gradient Pulse"] = "Legacy RGB Gradient Pulse"
 L["Legs"] = "Piernas"
 L["Level"] = "Nivel"
 --[[Translation missing --]]
@@ -486,12 +511,12 @@ L["Moon"] = "Moon"
 L["Mounted"] = "Montado"
 --[[Translation missing --]]
 L["Mouse Cursor"] = "Mouse Cursor"
---[[Translation missing --]]
-L["Multistrike"] = "Multistrike"
 L["Multi-target"] = "Objetivo Múltiple"
 L["Music"] = "Música"
 --[[Translation missing --]]
 L["Mythic"] = "Mythic"
+--[[Translation missing --]]
+L["Mythic+ Affix"] = "Mythic+ Affix"
 L["Name"] = "Nombre"
 --[[Translation missing --]]
 L["Neck"] = "Neck"
@@ -502,6 +527,8 @@ L["No Children:"] = "Sin dependientes"
 L["No Instance"] = "Fuera de Instancia"
 --[[Translation missing --]]
 L["No Profiling information saved."] = "No Profiling information saved."
+--[[Translation missing --]]
+L["none"] = "none"
 L["None"] = "Nada"
 L["Non-player Character"] = "Personaje No Jugador"
 L["Normal"] = "Normal"
@@ -548,13 +575,14 @@ L["Periodic Spell"] = "Hechizo Periódico"
 L["Personal Resource Display"] = "Personal Resource Display"
 L["Pet"] = "Mascota"
 L["Pet Behavior"] = "Comportamiento de mascota"
+--[[Translation missing --]]
+L["Pet Specialization"] = "Pet Specialization"
 L["Pet Spell"] = "Habilidad de mascota"
 --[[Translation missing --]]
 L["Play"] = "Play"
 L["Player"] = "Jugador"
 L["Player Character"] = "Personaje Jugador"
 L["Player Class"] = "Clase del Jugador"
-L["Player Dungeon Role"] = "Rol en Mazmorra del Jugador"
 L["Player Faction"] = "Facción del jugador"
 L["Player Level"] = "Nivel del Personaje"
 L["Player Name"] = "Nombre del Jugador"
@@ -586,6 +614,8 @@ L["Progress Total"] = "Progress Total"
 L["Progress Value"] = "Progress Value"
 L["Pulse"] = "Pulso"
 L["PvP Flagged"] = "Marcado JcJ"
+--[[Translation missing --]]
+L["PvP Talent %i"] = "PvP Talent %i"
 --[[Translation missing --]]
 L["PvP Talent selected"] = "PvP Talent selected"
 L["Radius"] = "Radio"
@@ -647,6 +677,8 @@ L["Scenario"] = "Scenario"
 --[[Translation missing --]]
 L["Screen/Parent Group"] = "Screen/Parent Group"
 --[[Translation missing --]]
+L["Second"] = "Second"
+--[[Translation missing --]]
 L["Second Text Color"] = "Second Text Color"
 --[[Translation missing --]]
 L["Second Text Size"] = "Second Text Size"
@@ -705,6 +737,8 @@ L["Spark Color"] = "Spark Color"
 L["Spark Height"] = "Spark Height"
 --[[Translation missing --]]
 L["Spark Width"] = "Spark Width"
+--[[Translation missing --]]
+L["Spec Role"] = "Spec Role"
 L["Specific Unit"] = "Unidad Específica"
 L["Spell"] = "Hechizo"
 L["Spell (Building)"] = "Hechizo (en curso)"
@@ -720,6 +754,8 @@ L["Spell Id"] = "Spell Id"
 L["Spell Known"] = "Spell Known"
 L["Spell Name"] = "Nombre del Hechizo"
 --[[Translation missing --]]
+L["Spell Usable"] = "Spell Usable"
+--[[Translation missing --]]
 L["Spell/Encounter Id"] = "Spell/Encounter Id"
 L["Spin"] = "Girar"
 L["Spiral"] = "Espiral"
@@ -731,8 +767,6 @@ L["Stacks"] = "Acumulaciones"
 L["Stacks Text Color"] = "Stacks Text Color"
 --[[Translation missing --]]
 L["Stacks Text Size"] = "Stacks Text Size"
---[[Translation missing --]]
-L["Stagger"] = "Stagger"
 L["Stance/Form/Aura"] = "Impostura/Forma/Aura"
 --[[Translation missing --]]
 L["Star"] = "Star"
@@ -745,6 +779,10 @@ L["Stop"] = "Stop"
 --[[Translation missing --]]
 L["Stop Profiling"] = "Stop Profiling"
 L["Summon"] = "Invocar"
+--[[Translation missing --]]
+L[ [=[Supports multiple entries, separated by commas
+]=] ] = [=[Supports multiple entries, separated by commas
+]=]
 L["Swing"] = "Golpe"
 L["Swing Timer"] = "Temporizador de Golpes"
 --[[Translation missing --]]
@@ -757,7 +795,11 @@ L["Tank"] = "Tanque"
 L["Tanking And Highest"] = "Tanqueando y el más alto"
 L["Tanking But Not Highest"] = "Tanqueando pero no el mas alto"
 L["Target"] = "Objetivo"
+--[[Translation missing --]]
+L["Tenacity"] = "Tenacity"
 L["Thick Outline"] = "Linea exterior gruesa"
+--[[Translation missing --]]
+L["Third"] = "Third"
 --[[Translation missing --]]
 L["This aura contains custom Lua code."] = "This aura contains custom Lua code."
 --[[Translation missing --]]
@@ -821,8 +863,10 @@ L["X-Offset"] = "X-Offset"
 L["Yell"] = "Grito"
 --[[Translation missing --]]
 L["Y-Offset"] = "Y-Offset"
-L["Zone"] = "Zona"
-L["Zone ID"] = "ID de Zona"
 --[[Translation missing --]]
-L["Zone ID List"] = "Zone ID List"
+L["Zone Group ID(s)"] = "Zone Group ID(s)"
+--[[Translation missing --]]
+L["Zone ID(s)"] = "Zone ID(s)"
+--[[Translation missing --]]
+L["Zone Name"] = "Zone Name"
 

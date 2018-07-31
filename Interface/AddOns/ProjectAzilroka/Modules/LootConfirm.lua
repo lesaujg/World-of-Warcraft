@@ -26,8 +26,10 @@ function LC:HandleEvent(event, ...)
 			ConfirmLootSlot(slot)
 		end
 	elseif event == 'LOOT_READY' then
-		for i = NumLootItems, 1, -1 do
-			LootSlot(i)
+		if not IsModifierKeyDown() and GetCVarBool("autoLootDefault") == true then
+			for i = NumLootItems, 1, -1 do
+				LootSlot(i)
+			end
 		end
 	end
 end
@@ -69,7 +71,7 @@ function LC:GetOptions()
 		order = 208,
 		args = {
 			header = {
-				order = 0,
+				order = 1,
 				type = 'header',
 				name = PA:Color(LC.Title)
 			},
@@ -117,6 +119,9 @@ function LC:GetOptions()
 		},
 	}
 
+	Options.args.profiles = LibStub('AceDBOptions-3.0'):GetOptionsTable(PA.data)
+	Options.args.profiles.order = -2
+
 	PA.Options.args.LootConfirm = Options
 end
 
@@ -145,23 +150,23 @@ function LC:SetupProfile()
 end
 
 function LC:Initialize()
-	self:BuildProfile()
-	self:GetOptions()
+	LC:BuildProfile()
+	LC:GetOptions()
 
 	UIParent:UnregisterEvent('LOOT_BIND_CONFIRM')
 	UIParent:UnregisterEvent('CONFIRM_DISENCHANT_ROLL')
 	UIParent:UnregisterEvent('CONFIRM_LOOT_ROLL')
 
-	self:RegisterEvent('CONFIRM_DISENCHANT_ROLL', 'HandleEvent')
-	self:RegisterEvent('CONFIRM_LOOT_ROLL', 'HandleEvent')
-	self:RegisterEvent('LOOT_OPENED', 'HandleEvent')
-	self:RegisterEvent('LOOT_BIND_CONFIRM', 'HandleEvent')
-	self:RegisterEvent('LOOT_READY', 'HandleEvent')
+	LC:RegisterEvent('CONFIRM_DISENCHANT_ROLL', 'HandleEvent')
+	LC:RegisterEvent('CONFIRM_LOOT_ROLL', 'HandleEvent')
+	LC:RegisterEvent('LOOT_OPENED', 'HandleEvent')
+	LC:RegisterEvent('LOOT_BIND_CONFIRM', 'HandleEvent')
+	LC:RegisterEvent('LOOT_READY', 'HandleEvent')
 
-	--self:RegisterEvent('START_LOOT_ROLL')
+	--LC:RegisterEvent('START_LOOT_ROLL')
 
 	if PA.ElvUI then
 		ElvUI[1].db.general.autoRoll = false
-		self:RegisterEvent("ADDON_LOADED")
+		LC:RegisterEvent("ADDON_LOADED")
 	end
 end

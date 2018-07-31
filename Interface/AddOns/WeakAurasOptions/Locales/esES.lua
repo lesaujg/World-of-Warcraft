@@ -280,6 +280,8 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED
 	--[[Translation missing --]]
 	L["General Text Settings"] = "General Text Settings"
 	--[[Translation missing --]]
+	L["Global Conditions"] = "Global Conditions"
+	--[[Translation missing --]]
 	L["Glow"] = "Glow"
 	L["Glow Action"] = "Acción de Destello"
 	L["Green Rune"] = "Runa verde"
@@ -299,6 +301,8 @@ Con |cFF00CC00<= 0.8|r se activará cuando menos del 80%% del grupo o banda est�
 Con |cFF00CC00> 1/2|r se activará cuando más de la mitad de miembros del grupo o banda estén afectados.
 Con |cFF00CC00>= 0|r se activará siempre.]=]
 	L["Group Member Count"] = "Contador del Miembro de Grupo"
+	--[[Translation missing --]]
+	L["Group Scale"] = "Group Scale"
 	--[[Translation missing --]]
 	L["Grow"] = "Grow"
 	--[[Translation missing --]]
@@ -324,6 +328,8 @@ Con |cFF00CC00>= 0|r se activará siempre.]=]
 	L["Hybrid Sort Mode"] = "Hybrid Sort Mode"
 	--[[Translation missing --]]
 	L["Icon"] = "Icon"
+	--[[Translation missing --]]
+	L["Icon Alpha"] = "Icon Alpha"
 	--[[Translation missing --]]
 	L["Icon Color"] = "Icon Color"
 	L["Icon Info"] = "Información del Icono"
@@ -631,7 +637,9 @@ Sólo un valor coincidente puede ser escogido.]=]
 	L["Update Custom Text On..."] = "Actualizar Texto Personalizado En..."
 	L["Use Full Scan (High CPU)"] = "Escaneo Total (carga el procesador)"
 	--[[Translation missing --]]
-	L["Use SetTransform (will change behaviour in 7.3)"] = "Use SetTransform (will change behaviour in 7.3)"
+	L["Use nth value from tooltip:"] = "Use nth value from tooltip:"
+	--[[Translation missing --]]
+	L["Use SetTransform"] = "Use SetTransform"
 	L["Use tooltip \"size\" instead of stacks"] = "Usa \"tamaño\" en vez de acumulaciones"
 	--[[Translation missing --]]
 	L["Used in auras:"] = "Used in auras:"
@@ -654,6 +662,8 @@ Sólo un valor coincidente puede ser escogido.]=]
 	--[[Translation missing --]]
 	L["Yellow Rune"] = "Yellow Rune"
 	L["Yes"] = "Sí"
+	--[[Translation missing --]]
+	L["You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"] = "You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"
 	L["Z Offset"] = "Desplazamiento en Z"
 	--[[Translation missing --]]
 	L["Z Rotation"] = "Z Rotation"

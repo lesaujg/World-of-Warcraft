@@ -9,18 +9,16 @@ local _G = _G
 -- WoW APIs
 local InCombatLockdown = InCombatLockdown
 local GetSpellInfo, GetItemInfo, GetItemIcon, UnitName = GetSpellInfo, GetItemInfo, GetItemIcon, UnitName
-local GetScreenWidth, GetScreenHeight, GetBuildInfo, GetLocale, GetTime, PlaySoundFile, PlaySound, CreateFrame, IsAddOnLoaded, LoadAddOn
-  = GetScreenWidth, GetScreenHeight, GetBuildInfo, GetLocale, GetTime, PlaySoundFile, PlaySound, CreateFrame, IsAddOnLoaded, LoadAddOn
+local GetScreenWidth, GetScreenHeight, GetBuildInfo, GetLocale, GetTime, CreateFrame, IsAddOnLoaded, LoadAddOn
+  = GetScreenWidth, GetScreenHeight, GetBuildInfo, GetLocale, GetTime, CreateFrame, IsAddOnLoaded, LoadAddOn
 
 local AceGUI = LibStub("AceGUI-3.0")
-local AceConfigDialog = LibStub("AceConfigDialog-3.0")
 
 local WeakAuras = WeakAuras
 local L = WeakAuras.L
 local ADDON_NAME = "WeakAurasOptions";
 local prettyPrint = WeakAuras.prettyPrint
 
-local font_close,yellow_font,red_font = FONT_COLOR_CODE_CLOSE,YELLOW_FONT_COLOR_CODE,RED_FONT_COLOR_CODE
 local ValidateNumeric = function(info,val)
   if not tonumber(val) then
     return false;
@@ -251,32 +249,16 @@ function WeakAuras.MultipleDisplayTooltipMenu()
       text = L["Delete all"],
       notCheckable = 1,
       func = function()
+        local toDelete = {};
+        local parents = {};
         for index, id in pairs(tempGroup.controlledChildren) do
-          local toDelete = {};
-          local parents = {};
-          for index, id in pairs(tempGroup.controlledChildren) do
-            local childData = WeakAuras.GetData(id);
-            toDelete[index] = childData;
-            if(childData.parent) then
-              parents[childData.parent] = true;
-            end
-          end
-          for index, childData in pairs(toDelete) do
-            WeakAuras.DeleteOption(childData);
-          end
-          for id, _ in pairs(parents) do
-            local parentData = WeakAuras.GetData(id);
-            local parentButton = WeakAuras.GetDisplayButton(id);
-            WeakAuras.UpdateGroupOrders(parentData);
-            if(#parentData.controlledChildren == 0) then
-              parentButton:DisableExpand();
-            else
-              parentButton:EnableExpand();
-            end
-            parentButton:SetNormalTooltip();
+          local childData = WeakAuras.GetData(id);
+          toDelete[index] = childData;
+          if(childData.parent) then
+            parents[childData.parent] = true;
           end
         end
-        WeakAuras.SortDisplayButtons();
+        WeakAuras.ConfirmDelete(toDelete, parents)
       end
     },
     {
@@ -352,7 +334,7 @@ AceGUI:RegisterLayout("AbsoluteList", function(content, children)
   end
 end);
 
-AceGUI:RegisterLayout("ButtonsScrollLayout", function(content, children)
+AceGUI:RegisterLayout("ButtonsScrollLayout", function(content, children, skipLayoutFinished)
   local yOffset = 0
   local scrollTop, scrollBottom = content.obj:GetScrollPos()
   for i = 1, #children do
@@ -379,7 +361,7 @@ AceGUI:RegisterLayout("ButtonsScrollLayout", function(content, children)
     end
 
   end
-  if(content.obj.LayoutFinished) then
+  if(content.obj.LayoutFinished and not skipLayoutFinished) then
     content.obj:LayoutFinished(nil, yOffset * -1)
   end
 end)
@@ -501,6 +483,7 @@ function WeakAuras.ConstructOptions(prototype, data, startorder, subPrefix, subS
               else
                 trigger["use_"..realname] = false
                 if(trigger[realname].single) then
+                  trigger[realname].multi = trigger[realname].multi or {};
                   trigger[realname].multi[trigger[realname].single] = true;
                 end
               end
@@ -1008,6 +991,7 @@ function WeakAuras.ConstructOptions(prototype, data, startorder, subPrefix, subS
           disabled = function() return not trigger["use_"..realname]; end,
           get = function() return trigger["use_"..realname] and trigger[realname] and trigger[realname].single or nil; end,
           set = function(info, v)
+            trigger[realname] = trigger[realname] or {};
             trigger[realname].single = v;
             WeakAuras.Add(data);
             if (reloadOptions) then
@@ -1049,6 +1033,7 @@ function WeakAuras.ConstructOptions(prototype, data, startorder, subPrefix, subS
             end
           end,
           set = function(info, v, calledFromSetAll)
+            trigger[realname].multi = trigger[realname].multi or {};
             if (calledFromSetAll) then
               trigger[realname].multi[v] = calledFromSetAll;
             elseif(trigger[realname].multi[v]) then
@@ -1258,6 +1243,47 @@ function WeakAuras.DeleteOption(data)
   end
 end
 
+StaticPopupDialogs["WEAKAURAS_CONFIRM_DELETE"] = {
+  text = "",
+  button1 = L["Delete"],
+  button2 = L["Cancel"],
+  OnAccept = function(self)
+    if self.data then
+      for _, auraData in pairs(self.data.toDelete) do
+        WeakAuras.DeleteOption(auraData)
+      end
+      if self.data.parents then
+        for id in pairs(self.data.parents) do
+          local parentData = WeakAuras.GetData(id)
+          local parentButton = WeakAuras.GetDisplayButton(id)
+          WeakAuras.UpdateGroupOrders(parentData)
+          if(#parentData.controlledChildren == 0) then
+            parentButton:DisableExpand()
+          else
+            parentButton:EnableExpand()
+          end
+          parentButton:SetNormalTooltip()
+        end
+      end
+      WeakAuras.SortDisplayButtons()
+    end
+  end,
+  OnCancel = function(self)
+    self.data = nil
+  end,
+  showAlert = true,
+  whileDead = true,
+  preferredindex = STATICPOPUP_NUMDIALOGS,
+}
+
+function WeakAuras.ConfirmDelete(toDelete, parents)
+  if toDelete then
+    local warningForm = L["You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"]
+    StaticPopupDialogs["WEAKAURAS_CONFIRM_DELETE"].text = warningForm:format(#toDelete)
+    StaticPopup_Show("WEAKAURAS_CONFIRM_DELETE", "", "", {toDelete = toDelete, parents = parents})
+  end
+end
+
 function WeakAuras.OptionsFrame()
   if(frame) then
     return frame;
@@ -1339,35 +1365,8 @@ function WeakAuras.ShowOptions(msg)
 end
 
 function WeakAuras.HideOptions()
-  -- dynFrame:SetScript("OnUpdate", nil);
-  WeakAuras.UnlockUpdateInfo();
-  WeakAuras.SetDragging()
-
   if(frame) then
     frame:Hide();
-  end
-
-  local tutFrame = WeakAuras.TutorialsFrame and WeakAuras.TutorialsFrame();
-  if(tutFrame and tutFrame:IsVisible()) then
-    tutFrame:Hide();
-  end
-
-  WeakAuras.PauseAllDynamicGroups();
-
-  for id, data in pairs(WeakAuras.regions) do
-    data.region:Collapse();
-  end
-
-  WeakAuras.ResumeAllDynamicGroups();
-
-  WeakAuras.ReloadAll();
-  WeakAuras.Resume();
-
-  if (WeakAuras.mouseFrame) then
-    WeakAuras.mouseFrame:OptionsClosed();
-  end
-  if (WeakAuras.personalRessourceDisplayFrame) then
-    WeakAuras.personalRessourceDisplayFrame:OptionsClosed();
   end
 end
 
@@ -1432,7 +1431,9 @@ function WeakAuras.LockUpdateInfo()
 end
 
 function WeakAuras.UnlockUpdateInfo()
-  frame:SetScript("OnUpdate", nil);
+  if frame then
+    frame:SetScript("OnUpdate", nil);
+  end
 end
 
 function WeakAuras.SetIconNames(data)
@@ -1975,6 +1976,7 @@ local function replaceNameDescFuncs(intable, data)
   local function nameAll(info)
     local combinedName;
     local first = true;
+    local foundNames = {};
     for index, childId in ipairs(data.controlledChildren) do
       local childData = WeakAuras.GetData(childId);
       if(childData) then
@@ -1987,11 +1989,15 @@ local function replaceNameDescFuncs(intable, data)
           else
             name = childOption.name;
           end
-          if(first) then
+          if (not name) then
+          -- Do nothing
+          elseif(first) then
             combinedName = name;
             first = false;
-          elseif not(combinedName == name) then
-            return childOption.name("default");
+            foundNames[name] = true;
+          elseif not(foundNames[name]) then
+            combinedName = combinedName .. "/" .. name;
+            foundNames[name] = true;
           end
         end
       end
@@ -2528,9 +2534,11 @@ end
 -- which AceConfig doesn't like.
 -- Thus Reload the options after a very small delay.
 function WeakAuras.ScheduleReloadOptions(data)
-  C_Timer.After(0.1, function()
-    WeakAuras.ReloadOptions(data.id)
-  end );
+  if (type(data.id) ~= "table") then
+    C_Timer.After(0.1, function()
+      WeakAuras.ReloadOptions(data.id)
+    end );
+  end
 end
 
 function WeakAuras.ReloadOptions(id)
@@ -4190,7 +4198,8 @@ function WeakAuras.OpenModelPicker(data, field)
   if not(IsAddOnLoaded("WeakAurasModelPaths")) then
     local loaded, reason = LoadAddOn("WeakAurasModelPaths");
     if not(loaded) then
-      print("|cff9900FF".."WeakAurasModelPaths"..FONT_COLOR_CODE_CLOSE.." could not be loaded: "..RED_FONT_COLOR_CODE.._G["ADDON_"..reason]);
+      reason = string.lower("|cffff2020" .. _G["ADDON_" .. reason] .. "|r.")
+      print(WeakAuras.printPrefix .. "ModelPaths could not be loaded, the addon is " .. reason);
       WeakAuras.ModelPaths = {};
     end
     frame.modelPicker.modelTree:SetTree(WeakAuras.ModelPaths);
@@ -4210,7 +4219,8 @@ function WeakAuras.OpenTriggerTemplate(data)
   if not(IsAddOnLoaded("WeakAurasTemplates")) then
     local loaded, reason = LoadAddOn("WeakAurasTemplates");
     if not(loaded) then
-      print("|cff9900FF".."WeakAurasTemplates"..FONT_COLOR_CODE_CLOSE.." could not be loaded: "..RED_FONT_COLOR_CODE.._G["ADDON_"..reason]);
+      reason = string.lower("|cffff2020" .. _G["ADDON_" .. reason] .. "|r.")
+      print(WeakAuras.printPrefix .. "Templates could not be loaded, the addon is " .. reason);
       return;
     end
     frame.newView = WeakAuras.CreateTemplateView(frame);

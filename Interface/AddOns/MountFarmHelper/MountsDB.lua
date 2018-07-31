@@ -33,16 +33,24 @@ MFH_DB_BOSSES = {
     [69161] = { name = "Oondasta" },
     [69712] = { name = "Ji-Kun" },
     [71865] = { name = "Garrosh Hellscream" },
+	[87420] = { name = "Blackhand" },
     [87493] = { name = "Rukhmar" },
+	[91331] = { name = "Archimonde" },
     [95044] = { name = "Terrorfist" },
     [95053] = { name = "Deathtalon" },
     [95054] = { name = "Vengeance" },
     [95056] = { name = "Doomroller" },
+	[105503] = { name = "Gul'dan" },
+	[114895] = { name = "Nightbane" },
+	[115767] = { name = "Mistress Sassz'ine" },
+	[124828] = { name = "Argus the Unmaker" },
+	[126916] = { name = "F'harg" },
 }
 
 MFH_DB_ZONES = {
     [723] = { raid = "Auchindoun: Sethekk Halls" },
     [798] = { raid = "Magister's Terrace" },
+	[186] = { raid = "Icecrown Citadel" },
 }
 
 MFH_DB_MOUNTS = {
@@ -51,7 +59,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'dungeon', npc_id = 45412,
-                zone_id = 765,
+                zone_id = 317,
                 level = 37, for_sort = 59,
             },
         },
@@ -61,7 +69,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', npc_id = 16152,
-                zone_id = 799,
+                zone_id = 350,
                 level = 70, for_sort = 115,
             },
         },
@@ -71,7 +79,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', npc_id = 19622,
-                zone_id = 782,
+                zone_id = 334,
                 level = 70, for_sort = 141,
             },
         },
@@ -81,7 +89,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'dungeon', subtype = 'heroic', npc_id = 23035,
-                zone_id = 723,
+                zone_id = 258,
                 level = 70, for_sort = 115,
             },
         },
@@ -91,7 +99,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'dungeon', subtype = 'heroic', npc_id = 24664,
-                zone_id = 798,
+                zone_id = 348,
                 level = 70, for_sort = 125,
             },
         },
@@ -101,7 +109,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', npc_id = 28859,
-                zone_id = 527,
+                zone_id = 141,
                 level = 80, for_sort = 213,
             },
         },
@@ -111,7 +119,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'dungeon', subtype = 'heroic', npc_id = 32273,
-                zone_id = 521,
+                zone_id = 130,
                 level = 80, for_sort = 200,
                 cond = '25_mins',
             },
@@ -122,7 +130,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', subtype = 'normal_25', npc_id = 28860,
-                zone_id = 531,
+                zone_id = 155,
                 level = 80, for_sort = 226,
                 cond = '3_drakes_up',
             },
@@ -133,7 +141,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', subtype = 'normal_10', npc_id = 28860,
-                zone_id = 531,
+                zone_id = 155,
                 level = 80, for_sort = 213,
                 cond = '3_drakes_up',
             },
@@ -144,7 +152,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', npc_id = 28859,
-                zone_id = 527,
+                zone_id = 141,
                 level = 80, for_sort = 213,
             },
         },
@@ -154,22 +162,22 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', npc_id = 31125,
-                zone_id = 532,
+                zone_id = 156,
                 level = 80, for_sort = 200,
             },
             {
                 type = 'raid', npc_id = 33993,
-                zone_id = 532,
+                zone_id = 156,
                 level = 80, for_sort = 219,
             },
             {
                 type = 'raid', npc_id = 35013,
-                zone_id = 532,
+                zone_id = 156,
                 level = 80, for_sort = 232,
             },
             {
                 type = 'raid', npc_id = 38433,
-                zone_id = 532,
+                zone_id = 156,
                 level = 80, for_sort = 251,
             },
         },
@@ -179,22 +187,22 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', npc_id = 31125,
-                zone_id = 532,
+                zone_id = 156,
                 level = 80, for_sort = 200,
             },
             {
                 type = 'raid', npc_id = 33993,
-                zone_id = 532,
+                zone_id = 156,
                 level = 80, for_sort = 219,
             },
             {
                 type = 'raid', npc_id = 35013,
-                zone_id = 532,
+                zone_id = 156,
                 level = 80, for_sort = 232,
             },
             {
                 type = 'raid', npc_id = 38433,
-                zone_id = 532,
+                zone_id = 156,
                 level = 80, for_sort = 251,
             },
         },
@@ -204,7 +212,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'dungeon', subtype = 'heroic', npc_id = 26693,
-                zone_id = 524,
+                zone_id = 136,
                 level = 80, for_sort = 200,
             },
         },
@@ -214,7 +222,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', subtype = 'normal_25', npc_id = 33288,
-                zone_id = 529,
+                zone_id = 147,
                 level = 80, for_sort = 239,
                 cond = '0_keepers',
             },
@@ -225,7 +233,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', npc_id = 10184,
-                zone_id = 718,
+                zone_id = 248,
                 level = 80, for_sort = 232,
             },
         },
@@ -235,7 +243,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', subtype = 'heroic_25', npc_id = 36597,
-                zone_id = 604,
+                zone_id = 186,
                 level = 80, for_sort = 284,
             },
         },
@@ -245,7 +253,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'dungeon', npc_id = 43873,
-                zone_id = 769,
+                zone_id = 325,
                 level = 82, for_sort = 316,
             },
         },
@@ -255,7 +263,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', npc_id = 46753,
-                zone_id = 773,
+                zone_id = 328,
                 level = 85, for_sort = 359,
             },
         },
@@ -265,7 +273,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'dungeon', npc_id = 43214,
-                zone_id = 768,
+                zone_id = 324,
                 level = 82, for_sort = 316,
             },
         },
@@ -275,7 +283,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'dungeon', subtype = 'heroic', npc_id = 52151,
-                zone_id = 793,
+                zone_id = 233,
                 level = 85, for_sort = 353,
             },
         },
@@ -285,7 +293,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'dungeon', subtype = 'heroic', npc_id = 52059,
-                zone_id = 793,
+                zone_id = 233,
                 level = 85, for_sort = 353,
             },
         },
@@ -295,7 +303,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', npc_id = 52409,
-                zone_id = 800,
+                zone_id = 367,
                 level = 85, for_sort = 384,
             },
         },
@@ -305,7 +313,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'dungeon', subtype = 'heroic', npc_id = 23577,
-                zone_id = 781,
+                zone_id = 333,
                 level = 85, for_sort = 353,
                 cond = '25_mins',
             },
@@ -316,7 +324,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', npc_id = 52530,
-                zone_id = 800,
+                zone_id = 367,
                 level = 85, for_sort = 378,
             },
         },
@@ -326,7 +334,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', npc_id = 56173,
-                zone_id = 824,
+                zone_id = 409,
                 level = 85, for_sort = 403,
             },
         },
@@ -336,7 +344,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', subtype = 'heroic', npc_id = 56173,
-                zone_id = 824,
+                zone_id = 409,
                 level = 85, for_sort = 416,
             },
         },
@@ -346,7 +354,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', npc_id = 55294,
-                zone_id = 824,
+                zone_id = 409,
                 level = 85, for_sort = 397,
             },
         },
@@ -356,7 +364,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'world', quest_id = 32099, npc_id = 60491,
-                zone_id = 809,
+                zone_id = 379,
                 level = 90, for_sort = 496,
             },
         },
@@ -366,7 +374,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', npc_id = 60410,
-                zone_id = 896,
+                zone_id = 471,
                 level = 90, for_sort = 489,
             },
         },
@@ -376,7 +384,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'world', quest_id = 32098, npc_id = 62346,
-                zone_id = 807,
+                zone_id = 376,
                 level = 90, for_sort = 496,
             },
         },
@@ -386,7 +394,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', npc_id = 68476,
-                zone_id = 930,
+                zone_id = 508,
                 level = 90, for_sort = 522,
             },
         },
@@ -396,7 +404,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'world', quest_id = 32519, npc_id = 69161,
-                zone_id = 929,
+                zone_id = 507,
                 level = 90, for_sort = 522,
             },
         },
@@ -406,7 +414,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'world', quest_id = 32518, npc_id = 69099,
-                zone_id = 928,
+                zone_id = 504,
                 level = 90, for_sort = 522,
             },
         },
@@ -416,7 +424,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', npc_id = 69712,
-                zone_id = 930,
+                zone_id = 508,
                 level = 90, for_sort = 522,
             },
         },
@@ -426,7 +434,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'raid', subtype = 'mythic', npc_id = 71865,
-                zone_id = 953,
+                zone_id = 556,
                 level = 90, for_sort = 620,
             },
         },
@@ -437,14 +445,14 @@ MFH_DB_MOUNTS = {
             {
                 faction = 'alliance',
                 type = 'special', subtype = 'garrison_invasion', quest_id = 37640,
-                zone_id = 947,
+                zone_id = 582,
                 level = 100, for_sort = 645,
                 cond = 'gold_victory',
             },
             {
                 faction = 'horde',
                 type = 'special', subtype = 'garrison_invasion', quest_id = 37640,
-                zone_id = 941,
+                zone_id = 590,
                 level = 100, for_sort = 645,
                 cond = 'gold_victory',
             },
@@ -456,14 +464,14 @@ MFH_DB_MOUNTS = {
             {
                 faction = 'alliance',
                 type = 'special', subtype = 'garrison_invasion', quest_id = 37640,
-                zone_id = 947,
+                zone_id = 582,
                 level = 100, for_sort = 645,
                 cond = 'gold_victory',
             },
             {
                 faction = 'horde',
                 type = 'special', subtype = 'garrison_invasion', quest_id = 37640,
-                zone_id = 941,
+                zone_id = 590,
                 level = 100, for_sort = 645,
                 cond = 'gold_victory',
             },
@@ -475,14 +483,14 @@ MFH_DB_MOUNTS = {
             {
                 faction = 'alliance',
                 type = 'special', subtype = 'garrison_invasion', quest_id = 37640,
-                zone_id = 947,
+                zone_id = 582,
                 level = 100, for_sort = 645,
                 cond = 'gold_victory',
             },
             {
                 faction = 'horde',
                 type = 'special', subtype = 'garrison_invasion', quest_id = 37640,
-                zone_id = 941,
+                zone_id = 590,
                 level = 100, for_sort = 645,
                 cond = 'gold_victory',
             },
@@ -494,14 +502,14 @@ MFH_DB_MOUNTS = {
             {
                 faction = 'alliance',
                 type = 'special', subtype = 'garrison_invasion', quest_id = 37640,
-                zone_id = 947,
+                zone_id = 582,
                 level = 100, for_sort = 645,
                 cond = 'gold_victory',
             },
             {
                 faction = 'horde',
                 type = 'special', subtype = 'garrison_invasion', quest_id = 37640,
-                zone_id = 941,
+                zone_id = 590,
                 level = 100, for_sort = 645,
                 cond = 'gold_victory',
             },
@@ -512,7 +520,7 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'world', quest_id = 37464, npc_id = 87493,
-                zone_id = 948,
+                zone_id = 542,
                 level = 100, for_sort = 655,
             },
         },
@@ -522,22 +530,22 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'world', quest_id = 39288, npc_id = 95044,
-                zone_id = 970,
+                zone_id = 534,
                 level = 100, for_sort = 675,
             },
             {
                 type = 'world', quest_id = 39287, npc_id = 95053,
-                zone_id = 970,
+                zone_id = 534,
                 level = 100, for_sort = 675,
             },
             {
                 type = 'world', quest_id = 39290, npc_id = 95054,
-                zone_id = 970,
+                zone_id = 534,
                 level = 100, for_sort = 675,
             },
             {
                 type = 'world', quest_id = 39289, npc_id = 95056,
-                zone_id = 970,
+                zone_id = 534,
                 level = 100, for_sort = 675,
             },
         },
@@ -547,22 +555,22 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'world', quest_id = 39288, npc_id = 95044,
-                zone_id = 970,
+                zone_id = 534,
                 level = 100, for_sort = 675,
             },
             {
                 type = 'world', quest_id = 39287, npc_id = 95053,
-                zone_id = 970,
+                zone_id = 534,
                 level = 100, for_sort = 675,
             },
             {
                 type = 'world', quest_id = 39290, npc_id = 95054,
-                zone_id = 970,
+                zone_id = 534,
                 level = 100, for_sort = 675,
             },
             {
                 type = 'world', quest_id = 39289, npc_id = 95056,
-                zone_id = 970,
+                zone_id = 534,
                 level = 100, for_sort = 675,
             },
         },
@@ -572,23 +580,103 @@ MFH_DB_MOUNTS = {
         from = {
             {
                 type = 'world', quest_id = 39288, npc_id = 95044,
-                zone_id = 970,
+                zone_id = 534,
                 level = 100, for_sort = 675,
             },
             {
                 type = 'world', quest_id = 39287, npc_id = 95053,
-                zone_id = 970,
+                zone_id = 534,
                 level = 100, for_sort = 675,
             },
             {
                 type = 'world', quest_id = 39290, npc_id = 95054,
-                zone_id = 970,
+                zone_id = 534,
                 level = 100, for_sort = 675,
             },
             {
                 type = 'world', quest_id = 39289, npc_id = 95056,
-                zone_id = 970,
+                zone_id = 534,
                 level = 100, for_sort = 675,
+            },
+        },
+    },
+	[123890] = { -- Felsteel Annihilator
+        spell_id = 182912,
+        from = {
+            {
+                type = 'raid', subtype = 'mythic', npc_id = 91331,
+                zone_id = 661,
+                level = 100, for_sort = 666,
+            },
+        },
+    },
+	[116660] = { -- Ironhoof Destroyer
+        spell_id = 171621,
+        from = {
+            {
+                type = 'raid', subtype = 'mythic', npc_id = 87420,
+                zone_id = 596,
+                level = 100, for_sort = 665,
+            },
+        },
+    },
+	[137574] = { -- Felblaze Infernal
+        spell_id = 213134,
+        from = {
+            {
+                type = 'raid', npc_id = 105503,
+                zone_id = 764,
+                level = 100, for_sort = 685,
+            },
+        },
+    },
+	[137575] = { -- Hellfire Infernal
+        spell_id = 171827,
+        from = {
+            {
+                type = 'raid', subtype = 'mythic', npc_id = 105503,
+                zone_id = 764,
+                level = 100, for_sort = 685,
+            },
+        },
+    },
+	[152816] = { -- Antoran Charhound
+        spell_id = 253088,
+        from = {
+            {
+                type = 'raid', npc_id = 126916,
+                zone_id = 909,
+                level = 110, for_sort = 690,
+            },
+        },
+    },
+	[152789] = { -- Shackled Ur'zul
+        spell_id = 243651,
+        from = {
+            {
+                type = 'raid', subtype = 'mythic', npc_id = 124828,
+                zone_id = 909,
+                level = 110, for_sort = 690,
+            },
+        },
+    },
+	[143643] = { -- Abyss Worm
+        spell_id = 232519,
+        from = {
+            {
+                type = 'raid', npc_id = 115767,
+                zone_id = 850,
+                level = 110, for_sort = 686,
+            },
+        },
+    },
+	[142552] = { -- Smoldering Ember Wyrm
+        spell_id = 231428,
+        from = {
+            {
+                type = 'dungeon', subtype = 'mythic', npc_id = 114895,
+                zone_id = 809,
+                level = 110, for_sort = 687,
             },
         },
     },

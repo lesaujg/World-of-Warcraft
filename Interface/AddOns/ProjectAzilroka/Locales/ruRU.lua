@@ -117,9 +117,26 @@ ACL['Move Queue Status Icon'] = true
 
 -- stAddOnManager
 ACL['# Shown AddOns'] = true
+ACL['Are you sure you want to delete %s?'] = true
 ACL['Button Height'] = true
 ACL['Button Width'] = true
+ACL['Cancel'] = true
+ACL['Character Select'] = true
+ACL['Class Color Check Texture'] = true
+ACL['Create'] = true
+ACL['Delete'] = true
+ACL['Enable All'] = true
+ACL['Enter a name for your AddOn Profile:'] = true
+ACL['Enter a name for your new Addon Profile:'] = true
+ACL['Disable All'] = true
 ACL['Font'] = true
 ACL['Font Outline'] = true
 ACL['Frame Width'] = true
+ACL['New Profile'] = true
+ACL['Overwrite'] = true
+ACL['Profiles'] = true
+ACL['Reload'] = true
+ACL['Search'] = true
 ACL['Texture'] = true
+ACL['There is already a profile named %s. Do you want to overwrite it?'] = true
+ACL['Update'] = true

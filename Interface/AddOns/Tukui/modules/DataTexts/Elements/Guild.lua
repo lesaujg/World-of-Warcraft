@@ -5,9 +5,9 @@ local format = format
 
 local tthead, ttsubh, ttoff = {r = 0.4, g = 0.78, b = 1}, {r = 0.75, g = 0.9, b = 1}, {r = .3, g = 1, b = .3}
 local activezone, inactivezone = {r = 0.3, g = 1.0, b = 0.3}, {r = 0.65, g = 0.65, b = 0.65}
-local displayString = string.join("", "%s: ", "%d")
+local displayString = string.join("", "%s ", "%d")
 local guildInfoString = "%s [%d]"
-local guildInfoString2 = "%s: %d/%d"
+local guildInfoString2 = "%s %d/%d"
 local guildMotDString = "  %s |cffaaaaaa- |cffffffff%s"
 local levelNameString = "|cff%02x%02x%02x%d|r |cff%02x%02x%02x%s|r %s"
 local levelNameStatusString = "|cff%02x%02x%02x%d|r %s %s"
@@ -138,25 +138,20 @@ local OnEnter = function(self)
 		GameTooltip:AddDoubleLine(string.format(guildInfoString, GuildInfo, GuildLevel), string.format(guildInfoString2, L.DataText.Guild, online, #guildTable),tthead.r,tthead.g,tthead.b,tthead.r,tthead.g,tthead.b)
 	end
 
-	if guildMotD ~= "" then GameTooltip:AddLine(" ") GameTooltip:AddLine(string.format(guildMotDString, GUILD_MOTD, guildMotD), ttsubh.r, ttsubh.g, ttsubh.b, 1) end
-
-	local col = T.RGBToHex(ttsubh.r, ttsubh.g, ttsubh.b)
-	GameTooltip:AddLine(" ")
-	if GuildLevel and GuildLevel ~= 25 then
-		--UpdateGuildXP()
-
-		if guildXP[0] then
-			local currentXP, nextLevelXP, percentTotal = unpack(guildXP[0])
-
-			GameTooltip:AddLine(string.format(col..GUILD_EXPERIENCE_CURRENT, "|r |cFFFFFFFF"..T.ShortValue(currentXP), T.ShortValue(nextLevelXP), percentTotal))
-		end
+	if guildMotD ~= "" then
+		GameTooltip:AddLine(" ")
+		GameTooltip:AddLine(string.format(guildMotDString, GUILD_MOTD, guildMotD), ttsubh.r, ttsubh.g, ttsubh.b, 1)
 	end
 
+	local col = T.RGBToHex(ttsubh.r, ttsubh.g, ttsubh.b)
+
 	local _, _, standingID, barMin, barMax, barValue = GetGuildFactionInfo()
+	
 	if standingID ~= 8 then -- Not Max Rep
 		barMax = barMax - barMin
 		barValue = barValue - barMin
 		barMin = 0
+		GameTooltip:AddLine(" ")
 		GameTooltip:AddLine(string.format("%s:|r |cFFFFFFFF%s/%s (%s%%)",col..COMBAT_FACTION_CHANGE, T.ShortValue(barValue), T.ShortValue(barMax), math.ceil((barValue / barMax) * 100)))
 	end
 
@@ -203,7 +198,12 @@ local OnLeave = function() GameTooltip:Hide() end
 
 local OnMouseDown = function(self, btn)
 	if btn ~= "LeftButton" then return end
-	ToggleGuildFrame()
+	
+	if IsAltKeyDown() then
+		ToggleCommunitiesFrame()
+	else
+		ToggleGuildFrame()
+	end
 end
 
 
@@ -218,7 +218,7 @@ local Update = function(self)
 
 	totalOnline = select(3, GetNumGuildMembers())
 
-	self.Text:SetFormattedText("%s: %s", DataText.NameColor .. GUILD .. "|r", DataText.ValueColor .. totalOnline .. "|r")
+	self.Text:SetFormattedText("%s %s", DataText.NameColor .. GUILD .. "|r", DataText.ValueColor .. totalOnline .. "|r")
 end
 
 local Enable = function(self)

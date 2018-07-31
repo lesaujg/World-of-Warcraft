@@ -263,6 +263,8 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED
 	L["Full Scan"] = "Full Scan"
 	--[[Translation missing --]]
 	L["General Text Settings"] = "General Text Settings"
+	--[[Translation missing --]]
+	L["Global Conditions"] = "Global Conditions"
 	L["Glow"] = "Surbrillance"
 	L["Glow Action"] = "Action de l'éclat"
 	L["Green Rune"] = "Rune verte"
@@ -282,6 +284,8 @@ Si le nombre entré est decimal (ex. 0.5), une fraction (ex. 1/2), ou un pourcen
 |cFF00CC00>= 0|r se déclenchera toujours, quoi qu'il arrive
 ]=]
 	L["Group Member Count"] = "Nombre de membres du groupe"
+	--[[Translation missing --]]
+	L["Group Scale"] = "Group Scale"
 	L["Grow"] = "Grandir"
 	L["Hawk"] = "Faucon"
 	L["Height"] = "Hauteur"
@@ -297,6 +301,8 @@ Si le nombre entré est decimal (ex. 0.5), une fraction (ex. 1/2), ou un pourcen
 	L["Hybrid Position"] = "Position hybride"
 	L["Hybrid Sort Mode"] = "Mode de tri hybride"
 	L["Icon"] = "Icône"
+	--[[Translation missing --]]
+	L["Icon Alpha"] = "Icon Alpha"
 	L["Icon Color"] = "Couleur d'icône"
 	L["Icon Info"] = "Info d'icône"
 	L["Icon Inset"] = "Objet inséré"
@@ -571,7 +577,9 @@ Seule une unique valeur peut être choisie]=]
 	L["Update Custom Text On..."] = "Mettre à jour Texte Perso sur..."
 	L["Use Full Scan (High CPU)"] = "Utiliser Scan Complet (CPU élevé)"
 	--[[Translation missing --]]
-	L["Use SetTransform (will change behaviour in 7.3)"] = "Use SetTransform (will change behaviour in 7.3)"
+	L["Use nth value from tooltip:"] = "Use nth value from tooltip:"
+	--[[Translation missing --]]
+	L["Use SetTransform"] = "Use SetTransform"
 	L["Use tooltip \"size\" instead of stacks"] = "Utiliser la \"taille\" de l'infobulle plutôt que la pile"
 	--[[Translation missing --]]
 	L["Used in auras:"] = "Used in auras:"
@@ -590,6 +598,8 @@ Seule une unique valeur peut être choisie]=]
 	L["Y Scale"] = "Echelle Y"
 	L["Yellow Rune"] = "Rune jaune"
 	L["Yes"] = "Oui"
+	--[[Translation missing --]]
+	L["You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"] = "You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"
 	L["Z Offset"] = "Décalage Z"
 	L["Z Rotation"] = "Rotation Z"
 	L["Zoom"] = "Zoom"

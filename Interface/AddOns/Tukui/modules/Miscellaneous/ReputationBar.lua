@@ -17,9 +17,9 @@ function Reputation:SetTooltip()
 	local Name, ID, Min, Max, Value = GetWatchedFactionInfo()
 
 	if (self == Reputation.RepBar1) then
-		GameTooltip:SetOwner(Panels.DataTextLeft, "ANCHOR_TOPLEFT", 0, 5)
+		GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT", -1, 5)
 	else
-		GameTooltip:SetOwner(Panels.DataTextRight, "ANCHOR_TOPRIGHT", 0, 5)
+		GameTooltip:SetOwner(self, "ANCHOR_TOPRIGHT", 1, 5)
 	end
 
 	GameTooltip:AddLine(string.format("%s (%s)", Name, _G["FACTION_STANDING_LABEL" .. ID]))
@@ -56,24 +56,19 @@ end
 function Reputation:Create()
 	for i = 1, self.NumBars do
 		local RepBar = CreateFrame("StatusBar", nil, UIParent)
+		local XPBar1 = T.Miscellaneous.Experience.XPBar1
+		local XPBar2 = T.Miscellaneous.Experience.XPBar2
 
 		RepBar:SetStatusBarTexture(C.Medias.Normal)
 		RepBar:EnableMouse()
 		RepBar:SetFrameStrata("BACKGROUND")
-		RepBar:SetFrameLevel(3)
+		RepBar:SetFrameLevel(4)
 		RepBar:CreateBackdrop()
 		RepBar:SetScript("OnEnter", Reputation.SetTooltip)
 		RepBar:SetScript("OnLeave", HideTooltip)
-
-		if (C.Chat.Background) then
-			RepBar:Size(Panels.LeftChatBG:GetWidth() - 4, 6)
-			RepBar:Point("BOTTOM", i == 1 and Panels.LeftChatBG or Panels.RightChatBG, "TOP", 0, 4)
-			RepBar:SetReverseFill(i == 2 and true)
-		else
-			RepBar:SetOrientation("Vertical")
-			RepBar:Size(Panels.CubeLeft:GetWidth() - 4, Panels.LeftVerticalLine:GetHeight() - Panels.DataTextLeft:GetHeight() - 4)
-			RepBar:Point("TOP", i == 1 and Panels.LeftVerticalLine or Panels.RightVerticalLine, "TOP", 0, -Panels.DataTextLeft:GetHeight() / 2)
-		end
+		RepBar:Size(Panels.LeftChatBG:GetWidth() - 2, 6)
+		RepBar:SetAllPoints(i == 1 and XPBar1 or i == 2 and XPBar2)
+		RepBar:SetReverseFill(i == 2 and true)
 
 		self["RepBar"..i] = RepBar
 	end
@@ -85,6 +80,14 @@ function Reputation:Create()
 end
 
 function Reputation:Enable()
+	if not C.Misc.ExperienceEnable then
+		return -- it need xp bar enabled
+	end
+	
+	if not C.Misc.ReputationEnable then
+		return
+	end
+	
 	if not self.IsCreated then
 		self:Create()
 

@@ -1,5 +1,0 @@
-local TSM = select(2, ...)
-local CraftIDToProfessionInfo = LibStub("CraftIDToProfessionInfo")
-local Util = TSM:GetModule("Util")
-local Options = TSM:GetModule("Options")
-local Time = TSM:NewModule("Time")

@@ -233,7 +233,7 @@ function EFL:GetOptions()
 		order = 206,
 		args = {
 			header = {
-				order = 0,
+				order = 1,
 				type = 'header',
 				name = PA:Color(EFL.Title)
 			},
@@ -414,6 +414,9 @@ function EFL:GetOptions()
 		}
 	end
 
+	Options.args.profiles = LibStub('AceDBOptions-3.0'):GetOptionsTable(PA.data)
+	Options.args.profiles.order = -2
+
 	PA.Options.args.EnhancedFriendsList = Options
 end
 
@@ -463,12 +466,12 @@ function EFL:SetupProfile()
 end
 
 function EFL:Initialize()
-	self:BuildProfile()
-	self:GetOptions()
+	EFL:BuildProfile()
+	EFL:GetOptions()
 
 	if PA.db.FG then
-		self:SecureHook(PA.FG, 'FriendGroups_UpdateFriendButton', function(self, button) EFL:UpdateFriends(button) end)
+		EFL:SecureHook(PA.FG, 'FriendGroups_UpdateFriendButton', function(self, button) EFL:UpdateFriends(button) end)
 	else
-		self:SecureHook("FriendsFrame_UpdateFriendButton", 'UpdateFriends')
+		EFL:SecureHook("FriendsFrame_UpdateFriendButton", 'UpdateFriends')
 	end
 end

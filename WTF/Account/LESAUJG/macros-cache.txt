@@ -18,6 +18,11 @@ END
 VER 3 00000000000000A0 "Obliterate" "1043741"
 /click EasyObliterate
 END
+VER 3 00000000000000A5 "qawds" "INV_MISC_QUESTIONMARK"
+#showtooltip Runed Band of the Kirin Tor
+/equip Runed Band of the Kirin Tor
+/castsequence Runed Band of the Kirin Tor
+END
 VER 3 0000000000000087 "RandomMount" "INV_MISC_QUESTIONMARK"
 /use [mod:ctrlshift]Grand Expedition Yak
 /use [mod:shift]Traveler's Tundra Mammoth
@@ -31,6 +36,10 @@ VER 3 000000000000009D "Reload" "132096"
 /console worldPreloadNonCritical 0
 /reload
 END
+VER 3 00000000000000A6 "target" "INV_MISC_QUESTIONMARK"
+/targetenemy [dead][noexists]
+/castsequence Multi-Shot, Multi-Shot, Multi-Shot, Multi-Shot, Multi-Shot, Steady Shot
+END
 VER 3 00000000000000A1 "test" "INV_MISC_QUESTIONMARK"
 /use item:40192
 END
@@ -38,10 +47,9 @@ VER 3 000000000000009E "Traps" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /castsequence [@cursor] reset=combat/20 Explosive Trap, Caltrops
 END
-VER 3 000000000000009F "TSMMacro" "Achievement_Faction_GoldenLotus"
-/click TSMCraftNextButton
-/use Obliterum Ash
-/click EasyObliterate
+VER 3 00000000000000A9 "TSMMacro" "Achievement_Faction_GoldenLotus"
+/click TSMCancelAuctionBtn
+/click TSMAuctioningBtn
 END
 VER 3 0000000000000094 "TSMPostCancel" "133784"
 /click TSMAuctioningCancelButton

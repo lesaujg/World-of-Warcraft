@@ -5,17 +5,36 @@ local T, C, L = select(2, ...):unpack()
 ----------------------------------------------------------------
 
 C["General"] = {
-	["AutoScale"] = true,
-	["UIScale"] = 0.71,
-	["BackdropColor"] = {0.1, 0.1, 0.1},
-	["BorderColor"] = {0.6, 0.6, 0.6},
+	["BackdropColor"] = {0.11, 0.11, 0.11},
+	["BorderColor"] = {0, 0, 0},
 	["HideShadows"] = false,
+	["AFKSaver"] = true,
+	["Scaling"] = {
+		["Options"] = {
+			["Pixel Perfection"] = "Pixel Perfection",
+            ["Smallest"] = "Smallest",
+			["Small"] = "Small",
+			["Medium"] = "Medium",
+			["Large"] = "Large",
+			["Oversize"] = "Oversize",
+		},
+
+		["Value"] = "Pixel Perfection",
+	},
+	["Themes"] = {
+		["Options"] = {
+			["Tukui"] = "Tukui",
+            ["Tukui 17"] = "Tukui 17",
+		},
+
+		["Value"] = "Tukui",
+	},
 }
 
 C["ActionBars"] = {
 	["Enable"] = true,
-	["EquipBorder"] = true,
 	["HotKey"] = false,
+	["EquipBorder"] = true,
 	["Macro"] = false,
 	["ShapeShift"] = true,
 	["Pet"] = true,
@@ -29,8 +48,7 @@ C["ActionBars"] = {
 
 C["Auras"] = {
 	["Enable"] = true,
-	["Consolidate"] = false,
-	["Flash"] = false,
+	["Flash"] = true,
 	["ClassicTimer"] = false,
 	["HideBuffs"] = false,
 	["HideDebuffs"] = false,
@@ -51,10 +69,9 @@ C["Bags"] = {
 C["Chat"] = {
 	["Enable"] = true,
 	["WhisperSound"] = true,
+	["ShortChannelName"] = true,
 	["LinkColor"] = {0.08, 1, 0.36},
 	["LinkBrackets"] = true,
-	["LootFrame"] = true,
-	["Background"] = false,
 	["ScrollByX"] = 3,
 	["TabFont"] = "Tukui",
 	["ChatFont"] = "Tukui",
@@ -71,6 +88,11 @@ C["DataTexts"] = {
 	["NameColor"] = {1, 1, 1},
 	["ValueColor"] = {1, 1, 1},
 	["Font"] = "Tukui",
+}
+
+C["Loot"] = {
+	["Enable"] = true,
+	["StandardLoot"] = false,
 }
 
 C["Merchant"] = {
@@ -91,24 +113,21 @@ C["Misc"] = {
 
 C["NamePlates"] = {
 	["Enable"] = true,
-	["Width"] = 110,
-	["Height"] = 6,
+	["Width"] = 138,
+	["Height"] = 14,
 	["CastHeight"] = 4,
-	["Texture"] = "Tukui",
 	["Font"] = "Tukui Outline",
+	["OnlySelfDebuffs"] = true,
 }
 
 C["Party"] = {
 	["Enable"] = true,
-	["Portrait"] = true,
 	["HealBar"] = true,
 	["ShowPlayer"] = true,
 	["ShowHealthText"] = true,
 	["RangeAlpha"] = 0.3,
 	["Font"] = "Tukui UF",
 	["HealthFont"] = "Tukui UF Outline",
-	["PowerTexture"] = "Tukui",
-	["HealthTexture"] = "Tukui",
 }
 
 C["Raid"] = {
@@ -122,12 +141,9 @@ C["Raid"] = {
 	["ShowHealthText"] = true,
 	["ShowPets"] = true,
 	["VerticalHealth"] = false,
-	["Highlight"] = true,
 	["MaxUnitPerColumn"] = 10,
 	["Font"] = "Tukui UF",
 	["HealthFont"] = "Tukui UF Outline",
-	["PowerTexture"] = "Tukui",
-	["HealthTexture"] = "Tukui",
 	["GroupBy"] = {
 		["Options"] = {
 			["Group"] = "GROUP",
@@ -146,7 +162,22 @@ C["Tooltips"] = {
 	["ShowSpec"] = true,
 	["MouseOver"] = false,
 	["HealthFont"] = "Tukui Outline",
-	["HealthTexture"] = "Tukui",
+	
+}
+
+C["Textures"] = {
+	["QuestProgressTexture"] = "Tukui",
+	["TTHealthTexture"] = "Tukui",
+	["UFPowerTexture"] = "Tukui",
+	["UFHealthTexture"] = "Tukui",
+	["UFCastTexture"] = "Tukui",
+	["UFPartyPowerTexture"] = "Tukui",
+	["UFPartyHealthTexture"] = "Tukui",
+	["UFRaidPowerTexture"] = "Tukui",
+	["UFRaidHealthTexture"] = "Tukui",
+	["NPHealthTexture"] = "Tukui",
+	["NPPowerTexture"] = "Tukui",
+	["NPCastTexture"] = "Tukui",
 }
 
 C["UnitFrames"] = {
@@ -162,7 +193,6 @@ C["UnitFrames"] = {
 	["CombatLog"] = false,
 	["HealBar"] = true,
 	["TotemBar"] = true,
-	["AnticipationBar"] = true,
 	["TargetAuras"] = true,
 	["FocusAuras"] = true,
 	["FocusTargetAuras"] = true,
@@ -172,11 +202,7 @@ C["UnitFrames"] = {
 	["OnlySelfBuffs"] = false,
 	["Threat"] = false,
 	["AltPowerText"] = false,
-	["DarkTheme"] = false,
 	["Arena"] = true,
 	["Boss"] = true,
 	["Font"] = "Tukui UF Outline",
-	["PowerTexture"] = "Tukui",
-	["HealthTexture"] = "Tukui",
-	["CastTexture"] = "Tukui",
 }

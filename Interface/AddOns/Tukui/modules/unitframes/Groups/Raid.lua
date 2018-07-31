@@ -4,9 +4,8 @@ local TukuiUnitFrames = T["UnitFrames"]
 local Class = select(2, UnitClass("player"))
 
 function TukuiUnitFrames:Raid()
-	local DarkTheme = C["UnitFrames"].DarkTheme
-	local HealthTexture = T.GetTexture(C["Raid"].HealthTexture)
-	local PowerTexture = T.GetTexture(C["Raid"].PowerTexture)
+	local HealthTexture = T.GetTexture(C["Textures"].UFRaidHealthTexture)
+	local PowerTexture = T.GetTexture(C["Textures"].UFRaidPowerTexture)
 	local Font = T.GetFont(C["Raid"].Font)
 	local HealthFont = T.GetFont(C["Raid"].HealthFont)
 
@@ -40,19 +39,9 @@ function TukuiUnitFrames:Raid()
 	end
 
 	Health.frequentUpdates = true
-
-	if DarkTheme then
-		Health.colorTapping = false
-		Health.colorDisconnected = false
-		Health.colorClass = false
-		Health:SetStatusBarColor(0.2, 0.2, 0.2, 1)
-		Health.Background:SetVertexColor(0, 0, 0, 1)
-	else
-		Health.colorTapping = true
-		Health.colorDisconnected = true
-		Health.colorClass = true
-		Health.colorReaction = true
-	end
+	Health.colorDisconnected = true
+	Health.colorClass = true
+	Health.colorReaction = true
 
 	if (C.UnitFrames.Smooth) then
 		Health.Smooth = true
@@ -75,16 +64,7 @@ function TukuiUnitFrames:Raid()
 	Power:SetStatusBarTexture(PowerTexture)
 
 	Power.frequentUpdates = true
-
-	if DarkTheme then
-		Power.colorTapping = true
-		Power.colorClass = true
-		Power.colorClassNPC = true
-		Power.colorClassPet = true
-		Power.Background.multiplier = 0.1
-	else
-		Power.colorPower = true
-	end
+	Power.colorPower = true
 
 	if (C.UnitFrames.Smooth) then
 		Health.Smooth = true
@@ -106,21 +86,17 @@ function TukuiUnitFrames:Raid()
 	ReadyCheck:Width(12)
 	ReadyCheck:SetPoint("CENTER")
 
-	local LFDRole = Health:CreateTexture(nil, "OVERLAY")
-	LFDRole:SetInside(Panel)
-	LFDRole:SetColorTexture(0, 0, 0, 0)
-	LFDRole.Override = TukuiUnitFrames.SetGridGroupRole
-
 	local RaidIcon = Health:CreateTexture(nil, "OVERLAY")
 	RaidIcon:SetSize(16, 16)
 	RaidIcon:SetPoint("TOP", self, 0, 8)
+	RaidIcon:SetTexture([[Interface\AddOns\Tukui\Medias\Textures\Others\RaidIcons]])
 
 	if C["Raid"].ShowRessurection then
 		local ResurrectIcon = Health:CreateTexture(nil, "OVERLAY", 3)
 		ResurrectIcon:Size(16)
 		ResurrectIcon:SetPoint("CENTER")
 
-		self.ResurrectIcon = ResurrectIcon
+		self.ResurrectIndicator = ResurrectIcon
 	end
 
 	local Range = {
@@ -167,7 +143,7 @@ function TukuiUnitFrames:Raid()
 		SecondBar:SetFrameLevel(ThirdBar:GetFrameLevel() + 1)
 		FirstBar:SetFrameLevel(ThirdBar:GetFrameLevel() + 2)
 
-		self.HealPrediction = {
+		self.HealthPrediction = {
 			myBar = FirstBar,
 			otherBar = SecondBar,
 			absorbBar = ThirdBar,
@@ -180,12 +156,11 @@ function TukuiUnitFrames:Raid()
 		TukuiUnitFrames:CreateAuraWatch(self)
 
 		local RaidDebuffs = CreateFrame("Frame", nil, self)
-		RaidDebuffs:SetHeight(22)
-		RaidDebuffs:SetWidth(22)
+		RaidDebuffs:SetHeight(18)
+		RaidDebuffs:SetWidth(18)
 		RaidDebuffs:SetPoint("CENTER", Health)
-		RaidDebuffs:SetFrameLevel(Health:GetFrameLevel() + 20)
-		RaidDebuffs:SetBackdrop(TukuiUnitFrames.Backdrop)
-		RaidDebuffs:SetBackdropColor(0, 0, 0)
+		RaidDebuffs:SetFrameStrata("MEDIUM")
+		RaidDebuffs:SetFrameLevel(Health:GetFrameLevel() + 1)
 		RaidDebuffs:SetTemplate()
 		RaidDebuffs:CreateShadow()
 
@@ -193,68 +168,64 @@ function TukuiUnitFrames:Raid()
 		RaidDebuffs.icon:SetTexCoord(.1, .9, .1, .9)
 		RaidDebuffs.icon:SetInside(RaidDebuffs)
 
-		RaidDebuffs.cd = CreateFrame("Cooldown", nil, RaidDebuffs)
-		RaidDebuffs.cd:SetAllPoints(RaidDebuffs)
+		RaidDebuffs.cd = CreateFrame("Cooldown", nil, RaidDebuffs, "CooldownFrameTemplate")
+		RaidDebuffs.cd:SetInside(RaidDebuffs, 1, 1)
+		RaidDebuffs.cd:SetReverse(true)
+		RaidDebuffs.cd.noOCC = true
+		RaidDebuffs.cd.noCooldownCount = true
 		RaidDebuffs.cd:SetHideCountdownNumbers(true)
 
-		RaidDebuffs.ShowDispelableDebuff = true
-		RaidDebuffs.FilterDispelableDebuff = true
-		RaidDebuffs.MatchBySpellName = true
-		RaidDebuffs.ShowBossDebuff = true
-		RaidDebuffs.BossDebuffPriority = 5
-
+		RaidDebuffs.showDispellableDebuff = true
+		RaidDebuffs.onlyMatchSpellID = true
+		--RaidDebuffs.forceShow = true -- TEST
+		
+		RaidDebuffs.time = RaidDebuffs:CreateFontString(nil, "OVERLAY")
+		RaidDebuffs.time:SetFont(C.Medias.Font, 12, "OUTLINE")
+		RaidDebuffs.time:Point("CENTER", RaidDebuffs, 0, 0)
+	
 		RaidDebuffs.count = RaidDebuffs:CreateFontString(nil, "OVERLAY")
 		RaidDebuffs.count:SetFont(C.Medias.Font, 12, "OUTLINE")
 		RaidDebuffs.count:SetPoint("BOTTOMRIGHT", RaidDebuffs, "BOTTOMRIGHT", 2, 0)
 		RaidDebuffs.count:SetTextColor(1, .9, 0)
 
-		RaidDebuffs.SetDebuffTypeColor = RaidDebuffs.SetBackdropBorderColor
-		RaidDebuffs.Debuffs = TukuiUnitFrames.RaidDebuffsTracking
-
 		self.RaidDebuffs = RaidDebuffs
-	end
-
-	if (Class == "PRIEST" and C.UnitFrames.WeakBar) then
-		-- Weakened Soul Bar
-		local WSBar = CreateFrame("StatusBar", nil, Power)
-		WSBar:SetAllPoints(Power)
-		WSBar:SetStatusBarTexture(C.Medias.Normal)
-		WSBar:GetStatusBarTexture():SetHorizTile(false)
-		WSBar:SetBackdrop(TukuiUnitFrames.Backdrop)
-		WSBar:SetBackdropColor(unpack(C["General"].BackdropColor))
-		WSBar:SetStatusBarColor(0.75, 0.04, 0.04)
-
-		-- Register
-		self.WeakenedSoul = WSBar
 	end
 
 	local Threat = Health:CreateTexture(nil, "OVERLAY")
 	Threat.Override = TukuiUnitFrames.UpdateThreat
 
-	if C.Raid.Highlight then
-		local Highlight = CreateFrame("Frame", nil, self)
-		Highlight:SetPoint("TOPLEFT", self, "TOPLEFT")
-		Highlight:SetPoint("BOTTOMRIGHT", self, "BOTTOMRIGHT")
-		Highlight:SetBackdrop(TukuiUnitFrames.HighlightBorder)
-		Highlight:SetFrameLevel(0)
-		Highlight:Hide()
-
-		self:RegisterEvent("PLAYER_TARGET_CHANGED", TukuiUnitFrames.Highlight)
-		self:RegisterEvent("RAID_ROSTER_UPDATE", TukuiUnitFrames.Highlight)
-		self:RegisterEvent("PLAYER_FOCUS_CHANGED", TukuiUnitFrames.Highlight)
-
-		self.Highlight = Highlight
+	local Highlight = CreateFrame("Frame", nil, self)
+	Highlight:SetPoint("TOPLEFT", self, "TOPLEFT")
+	Highlight:SetPoint("BOTTOMRIGHT", self, "BOTTOMRIGHT")
+	Highlight:SetBackdrop(TukuiUnitFrames.HighlightBorder)
+	Highlight:SetFrameLevel(0)
+	Highlight:Hide()
+	
+	--[[
+	if Class == "PRIEST" then
+		local Atonement = CreateFrame("StatusBar", nil, Power)
+		Atonement:SetAllPoints()
+		Atonement:SetStatusBarTexture(C.Medias.Normal)
+		Atonement:SetFrameStrata(Power:GetFrameStrata())
+		Atonement:SetFrameLevel(Power:GetFrameLevel() + 1)
+		
+		self.Atonement = Atonement
 	end
+	--]]
 
-	self:Tag(Name, "[Tukui:GetNameColor][Tukui:NameShort]")
+	self:Tag(Name, "[Tukui:GetRaidNameColor][Tukui:NameShort]")
 	self.Health.bg = Health.Background
 	self.Power = Power
 	self.Power.bg = Power.Background
 	self.Panel = Panel
 	self.Name = Name
-	self.ReadyCheck = ReadyCheck
-	self.LFDRole = LFDRole
+	self.ReadyCheckIndicator = ReadyCheck
 	self.Range = Range
-	self.RaidIcon = RaidIcon
-	self.Threat = Threat
+	self.RaidTargetIndicator = RaidIcon
+	self.ThreatIndicator = Threat
+	self.Highlight = Highlight
+	
+	self:RegisterEvent("PLAYER_TARGET_CHANGED", TukuiUnitFrames.Highlight)
+	self:RegisterEvent("RAID_ROSTER_UPDATE", TukuiUnitFrames.Highlight)
+	self:RegisterEvent("PLAYER_FOCUS_CHANGED", TukuiUnitFrames.Highlight)
 end

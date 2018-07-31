@@ -12,6 +12,8 @@
 if LibDebug then LibDebug() end
 --@end-debug@]===]
 
+local L = LM_Localize
+
 --[[
 
     <conditions>    :=  <condition> |
@@ -49,16 +51,20 @@ CONDITIONS["achievement"] =
 
 CONDITIONS["area"] =
     function (cond, v)
-        if v then
-            return tonumber(v) == LM_Location.areaID
-        end
+        LM_WarningAndPrint(format(L.LM_WARN_REPLACE_COND, "area", "map"))
     end
 
 CONDITIONS["aura"] =
     function (cond, v)
         if v then
-            local auraName = GetSpellInfo(v)
-            return UnitAura("player", auraName, 'HELPFUL|HARMFUL')
+            local spellID, auraID = tonumber(v)
+            local i = 1
+            while true do
+                auraID = select(10, UnitAura("player", i, 'HELPFUL|HARMFUL'))
+                if not auraID then return end
+                if auraID == spellID then return true end
+                i = i + 1
+            end
         end
     end
 
@@ -93,9 +99,7 @@ CONDITIONS["combat"] =
 
 CONDITIONS["continent"] =
     function (cond, v)
-        if v then
-            return tonumber(v) == LM_Location.continent
-        end
+        LM_WarningAndPrint(format(L.LM_WARN_REPLACE_COND, "continent", "map"))
     end
 
 -- For completeness, as far as I know. Note that this diverges from the
@@ -233,6 +237,11 @@ CONDITIONS["instance"] =
         else
             return IsInInstance()
         end
+    end
+
+CONDITIONS["map"] =
+    function (cond, v)
+        return LM_Location:MapInPath(tonumber(v))
     end
 
 CONDITIONS["mod"] =
@@ -447,7 +456,7 @@ function LM_Conditions:IsTrue(condition)
         return any(handler, condition, unpack(values))
     end
 
-    LM_WarningAndPrint("Unknown LiteMount action conditional: " .. cond)
+    LM_WarningAndPrint(format(L.LM_ERR_BAD_CONDITION, cond))
     return false
 end
 

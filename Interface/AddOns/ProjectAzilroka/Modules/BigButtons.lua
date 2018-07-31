@@ -283,6 +283,9 @@ function BB:GetOptions()
 		},
 	}
 
+	Options.args.profiles = LibStub('AceDBOptions-3.0'):GetOptionsTable(PA.data)
+	Options.args.profiles.order = -2
+
 	PA.Options.args.BigButtons = Options
 end
 
@@ -304,13 +307,13 @@ function BB:SetupProfile()
 end
 
 function BB:Initialize()
-	self:BuildProfile()
-	self:GetOptions()
+	BB:BuildProfile()
+	BB:GetOptions()
 
 	ES, AS = _G.EnhancedShadows, _G.AddOnSkins and _G.AddOnSkins[1]
 
 	local Bar = CreateFrame('Frame', 'BigButtonsBar', UIParent, "SecureHandlerStateTemplate")
-	self.Bar = Bar
+	BB.Bar = Bar
 	Bar:Hide()
 	Bar:SetFrameStrata('MEDIUM')
 	Bar:SetFrameLevel(0)
@@ -326,11 +329,11 @@ function BB:Initialize()
 	Bar.SeedsFrame.Buttons = {}
 
 	for _, ItemID in pairs(BB.Tools) do
-		self:CreateBigButton(ItemID)
+		BB:CreateBigButton(ItemID)
 	end
 
 	for i = 1, 20 do
-		self:CreateSeedButton(BB.Seeds[i].Seed)
+		BB:CreateSeedButton(BB.Seeds[i].Seed)
 	end
 
 	for _, event in pairs(BB.Events) do
@@ -362,11 +365,11 @@ function BB:Initialize()
 	end)
 
 	if PA.Tukui then
-		_G.Tukui[1]['Movers']:RegisterFrame(self.Bar)
-		_G.Tukui[1]['Movers']:RegisterFrame(self.Bar.SeedsFrame)
+		_G.Tukui[1]['Movers']:RegisterFrame(BB.Bar)
+		_G.Tukui[1]['Movers']:RegisterFrame(BB.Bar.SeedsFrame)
 	elseif PA.ElvUI then
-		_G.ElvUI[1]:CreateMover(self.Bar, 'BigButtonsFarmBar', 'BigButtons Farm Bar Anchor', nil, nil, nil, 'ALL,GENERAL')
-		_G.ElvUI[1]:CreateMover(self.Bar.SeedsFrame, 'BigButtonsSeedBar', 'BigButtons Seed Bar Anchor', nil, nil, nil, 'ALL,GENERAL')
+		_G.ElvUI[1]:CreateMover(BB.Bar, 'BigButtonsFarmBar', 'BigButtons Farm Bar Anchor', nil, nil, nil, 'ALL,GENERAL')
+		_G.ElvUI[1]:CreateMover(BB.Bar.SeedsFrame, 'BigButtonsSeedBar', 'BigButtons Seed Bar Anchor', nil, nil, nil, 'ALL,GENERAL')
 	end
 
 	if AS then

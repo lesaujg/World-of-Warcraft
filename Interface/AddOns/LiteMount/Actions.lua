@@ -24,10 +24,15 @@ end
 local ACTIONS = { }
 
 ACTIONS['Spell'] =
-    function (spellID)
-        local name = GetSpellInfo(spellID)
-        LM_Debug("Setting action to " .. name .. ".")
-        return LM_SecureAction:Spell(name)
+    function (_, filters)
+        for _, spellID in ipairs(filters) do
+            spellID = tonumber(spellID)
+            if spellID and IsSpellKnown(spellID) and IsUsableSpell(spellID) then
+                local name = GetSpellInfo(spellID)
+                LM_Debug("Setting action to " .. name .. ".")
+                return LM_SecureAction:Spell(name)
+            end
+        end
     end
 
 -- In vehicle -> exit it
@@ -97,7 +102,9 @@ ACTIONS['CancelForm'] =
                 return LM_SecureAction:Macro(format("%s\n/cast %s", SLASH_DISMOUNT1, savedFormName))
             end
         elseif curFormID and restoreFormIDs[curFormID] then
-            local _, name = GetShapeshiftFormInfo(curFormIndex)
+            local spellID
+            spellID = select(4, GetShapeshiftFormInfo(curFormIndex))
+            local name = GetSpellInfo(spellID)
             LM_Debug("Saving current form " .. tostring(name) .. ".")
             savedFormName = name
         else
@@ -149,6 +156,7 @@ ACTIONS['SmartMount'] =
         if LM_Location:IsFloating() then
             LM_Debug("  Trying Floating mount")
             m = filteredList:FilterFind('FLOAT')
+            if m then return m end
         end
 
         LM_Debug("  Trying Running Mount")

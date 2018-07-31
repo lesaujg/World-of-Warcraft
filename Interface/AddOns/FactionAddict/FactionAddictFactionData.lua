@@ -4,7 +4,7 @@
 --  This file is used to contain basic info about each faction. Including an
 --  icon, alliance/horde, faction id, category and type.
 --
---  (c) 2011-2017 gmz323(Greg)
+--  (c) 2011-2018 gmz323(Greg)
 -----------------------------------------------------------------------------
 
 
@@ -190,6 +190,22 @@ faFactionDataRow[2102]  = 172;
 faFactionDataRow[2135]  = 173;
 faFactionDataRow[2165]  = 174;
 faFactionDataRow[2170]  = 175;
+
+faFactionDataRow[2159]  = 176;
+faFactionDataRow[2164]  = 177;
+faFactionDataRow[2233]  = 178;
+faFactionDataRow[2264]  = 179;
+faFactionDataRow[2265]  = 180;
+faFactionDataRow[2120]  = 181;
+faFactionDataRow[2161]  = 182;
+faFactionDataRow[2169]  = 183;
+faFactionDataRow[2162]  = 184;
+faFactionDataRow[2156]  = 185;
+faFactionDataRow[2157]  = 186;
+faFactionDataRow[2163]  = 187;
+faFactionDataRow[2158]  = 188;
+faFactionDataRow[2111]  = 189;
+faFactionDataRow[2103]  = 190;
 
 faFactionData = {
 	{1037, "Interface\\ICONS\\spell_misc_hellifrepvphonorholdfavor",
@@ -550,6 +566,37 @@ faFactionData = {
 			6,0,19},
 	{2170, "Interface\\ICONS\\inv_tabard_a_94argussianreach",
 			6,0,19},
+	-- New 8.0 Factions - Battle for Azeroth
+	{2159, "Interface\\ICONS\\inv_tabard_alliancewareffort",
+			7,1,20},
+	{2164, "Interface\\ICONS\\inv_tabard_championsofazeroth",
+			7,0,20},
+	{2233, "Interface\\ICONS\\inv_pterrordax2mount_yellow",
+			7,2,20}, -- VERIFY side AND icon in future
+	{2264, "Interface\\ICONS\\inv_misc_questionmark",
+			7,0,20}, -- VERIFY
+	{2265, "Interface\\ICONS\\inv_misc_questionmark",
+			7,0,20}, -- VERIFY
+	{2120, "Interface\\ICONS\\inv_misc_questionmark",
+			7,0,20}, -- VERIFY
+	{2161, "Interface\\ICONS\\inv_tabard_orderoftheembers",
+			7,1,20},
+	{2169, "Interface\\ICONS\\inv_tabard_proudmoore",
+			7,1,20},
+	{2162, "Interface\\ICONS\\inv_tabard_stormswake",
+			7,1,20},
+	{2156, "Interface\\ICONS\\inv_tabard_talanjisexpedition",
+			7,2,20},
+	{2157, "Interface\\ICONS\\inv_tabard_hordewareffort",
+			7,2,20},
+	{2163, "Interface\\ICONS\\inv_tabard_tortollanseekers",
+			7,0,20},
+	{2158, "Interface\\ICONS\\inv_tabard_vulpera",
+			7,2,20},
+	{2111, "Interface\\ICONS\\inv_misc_questionmark",
+			7,0,20}, -- VERIFY - 
+	{2103, "Interface\\ICONS\\inv_tabard_zandalariempire",
+			7,2,20},
 };
 
 local faFactionDataDesc = { -- column descriptions - info only, no need to localize
@@ -566,7 +613,8 @@ local faFactionDataExpansionValues = { -- column value descriptions - info only,
 	[3] = "Cataclysm",
 	[4] = "Mists of Pandaria",
 	[5] = "Warlords of Draenor",
-	[6] = "Legion"
+	[6] = "Legion",
+	[7] = "Battle for Azeroth"
 };
 local faFactionDataSideValues = { -- column value descriptions - info only, no need to localize
 	[0] = "Both Sides",
@@ -594,7 +642,8 @@ faFactionDataCategoryValues = { -- displayed in info window - LOCALIZED
 	[16] = L.CATEGORY_MOP_TXT,
 	[17] = L.CATEGORY_WOD_TXT,
 	[18] = L.CATEGORY_BARRACKSBODYGUARDS_TXT,
-	[19] = L.CATEGORY_LEGION_TXT
+	[19] = L.CATEGORY_LEGION_TXT,
+	[20] = L.CATEGORY_BFA_TXT
 };
 
 faStandingCapsTxt = {
@@ -616,6 +665,7 @@ faFactionAddictTooltips = {
 	CheckButton_MOP = L.CONFIG_TT_MOP,
 	CheckButton_WOD = L.CONFIG_TT_WOD,
 	CheckButton_LG = L.CONFIG_TT_LG,
+	CheckButton_BFA = L.CONFIG_TT_BFA,
 	CheckButton_OrderPct = L.CONFIG_TT_OrderPct,
 	CheckButton_OrderName = L.CONFIG_TT_OrderName,
 	CheckButton_AO = L.CONFIG_TT_AO,
@@ -642,6 +692,8 @@ faFactionAddictTooltips = {
 --ACHIEVEMENT_COLOR_CODE      = "|cffffff00";
 --FONT_COLOR_CODE_CLOSE       = "|r";
 
+-- Unknown Icon - question mark
+-- inv_misc_questionmark
 
 -- Not in game
 -- 2010 Brawlgar Arena

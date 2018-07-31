@@ -60,7 +60,7 @@ local properties = {
   },
 }
 
-WeakAuras.regionPrototype.AddProperties(properties);
+WeakAuras.regionPrototype.AddProperties(properties, default);
 
 local function GetProperties(data)
   return properties;
@@ -275,13 +275,10 @@ do
       return;
     end
 
-    for id, isLoaded in pairs(WeakAuras.loaded) do
+    for id, data in pairs(WeakAuras.regions) do
       WeakAuras.StartProfileAura(id);
-      if (isLoaded) then
-        local data = WeakAuras.regions[id];
-        if (data.regionType == "model") then
-          data.region:PreShow();
-        end
+      if (data.regionType == "model") then
+        data.region:PreShow();
       end
       WeakAuras.StopProfileAura(id);
     end

@@ -1,14 +1,16 @@
 
 GatherMate2DB = {
-	["global"] = {
-		["data_version"] = 4,
-	},
 	["profileKeys"] = {
 		["Leanara - Sisters of Elune"] = "Default",
 		["Palani - Sisters of Elune"] = "Default",
 		["Belrath - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
 		["Bracnar - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
 		["Clothgar - Sisters of Elune"] = "Default",
+	},
+	["global"] = {
+		["data_version"] = 4,
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -25,6 +27,9 @@ GatherMate2MineDB = {
 	[971] = {
 	},
 	[976] = {
+	},
+	[720] = {
+		[4865461400] = 238,
 	},
 }
 GatherMate2FishDB = {
@@ -55,24 +60,24 @@ GatherMate2TreasureDB = {
 		[2540512000] = 531,
 		[5180706000] = 531,
 		[3420214000] = 531,
-		[7200440000] = 531,
-		[3200452000] = 531,
+		[3260478000] = 531,
+		[3700642000] = 531,
 		[4000386000] = 531,
 		[4820466000] = 531,
 		[7000582000] = 531,
 		[2980206000] = 531,
-		[5060316000] = 531,
+		[2460600000] = 531,
 		[3860548000] = 531,
 		[6460304000] = 531,
 		[2860636000] = 531,
-		[3320678000] = 531,
+		[3320628000] = 531,
 		[4920758000] = 531,
 		[5040736000] = 531,
 		[3300718000] = 531,
-		[3320628000] = 531,
-		[2460600000] = 531,
-		[3700642000] = 531,
-		[3260478000] = 531,
+		[3320678000] = 531,
+		[5060316000] = 531,
+		[3200452000] = 531,
+		[7200440000] = 531,
 	},
 }
 GatherMate2ArchaeologyDB = {

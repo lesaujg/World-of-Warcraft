@@ -39,8 +39,18 @@ PA.Multiple = 768 / PA.ScreenHeight / UIParent:GetScale()
 local RAID_CLASS_COLORS = RAID_CLASS_COLORS
 
 -- Project Data
-function PA:IsAddOnEnabled(addon)
-	return GetAddOnEnableState(PA.MyName, addon) == 2
+function PA:IsAddOnEnabled(addon, character)
+	if (type(character) == 'boolean' and character == true) then
+		character = nil
+	end
+	return GetAddOnEnableState(character, addon) == 2
+end
+
+function PA:IsAddOnPartiallyEnabled(addon, character)
+	if (type(character) == 'boolean' and character == true) then
+		character = nil
+	end
+	return GetAddOnEnableState(character, addon) == 1
 end
 
 PA.Title = GetAddOnMetadata('ProjectAzilroka', 'Title')
@@ -49,11 +59,11 @@ PA.Authors = GetAddOnMetadata('ProjectAzilroka', 'Author'):gsub(", ", "    ")
 local Color = CUSTOM_CLASS_COLORS and CUSTOM_CLASS_COLORS[PA.MyClass] or RAID_CLASS_COLORS[PA.MyClass]
 PA.ClassColor = { Color.r, Color.g, Color.b }
 
-PA.ElvUI = PA:IsAddOnEnabled('ElvUI')
-PA.SLE = PA:IsAddOnEnabled('ElvUI_SLE')
-PA.NUI = PA:IsAddOnEnabled('ElvUI_NenaUI')
-PA.Tukui = PA:IsAddOnEnabled('Tukui')
-PA.AzilUI = PA:IsAddOnEnabled('AzilUI')
+PA.ElvUI = PA:IsAddOnEnabled('ElvUI', PA.MyName)
+PA.SLE = PA:IsAddOnEnabled('ElvUI_SLE', PA.MyName)
+PA.CUI = PA:IsAddOnEnabled('ElvUI_ChaoticUI', PA.MyName)
+PA.Tukui = PA:IsAddOnEnabled('Tukui', PA.MyName)
+PA.AzilUI = PA:IsAddOnEnabled('AzilUI', PA.MyName)
 
 PA.Classes = {}
 
@@ -77,7 +87,7 @@ end
 
 function PA:ConflictAddOn(AddOns)
 	for AddOn in pairs(AddOns) do
-		if GetAddOnEnableState(PA.MyName, AddOn) > 0 then
+		if PA:IsAddOnEnabled(AddOn, PA.MyName) then
 			return true
 		end
 	end
@@ -150,7 +160,7 @@ PA.Options = {
 					order = 4,
 					type = 'toggle',
 					name = PA.ACL['Enhanced Shadows'],
-					disabled = function() return (PA.SLE or PA.NUI) end,
+					disabled = function() return (PA.SLE or PA.CUI) end,
 				},
 				FG = {
 					order = 5,
@@ -186,11 +196,11 @@ function PA:GetOptions()
 	PA.AceOptionsPanel.Options.args.ProjectAzilroka = PA.Options
 end
 
-function PA:UpdateProfile()
+function PA:BuildProfile()
 	local Defaults = {
 		profile = {
 			['BB'] = true,
-			['BrokerLDB'] = true,
+			['BrokerLDB'] = false,
 			['DO'] = true,
 			['EFL'] = true,
 			['ES'] = true,
@@ -202,11 +212,16 @@ function PA:UpdateProfile()
 		},
 	}
 
-	if (PA.SLE or PA.NUI) then
+	if (PA.SLE or PA.CUI) then
 		Defaults.profile.ES = false
 	end
 
 	PA.data = PA.ADB:New('ProjectAzilrokaDB', Defaults)
+
+	PA.db = PA.data.profile
+end
+
+function PA:SetupProfile()
 	PA.db = PA.data.profile
 end
 
@@ -214,7 +229,7 @@ function PA:ADDON_LOADED(event, addon)
 	if addon == AddOnName then
 		PA.EP = LibStub('LibElvUIPlugin-1.0', true)
 		PA.AceOptionsPanel = PA.ElvUI and _G.ElvUI[1] or PA.EC
-		PA:UpdateProfile()
+		PA:BuildProfile()
 		PA:UnregisterEvent(event)
 	end
 end
@@ -222,39 +237,46 @@ end
 function PA:PLAYER_LOGIN()
 	PA.Multiple = 768 / PA.ScreenHeight / UIParent:GetScale()
 
+	local InitializeModules = {}
+
 	if PA.EP then
 		PA.EP:RegisterPlugin('ProjectAzilroka', PA.GetOptions)
 	end
-	if not (PA.SLE or PA.NUI) and PA.db['ES'] then
-		PA.ES:Initialize()
+	if not (PA.SLE or PA.CUI) and PA.db['ES'] then
+		tinsert(InitializeModules, 'ES')
 	end
 	if PA.db['BB'] then
-		PA.BB:Initialize()
+		tinsert(InitializeModules, 'BB')
 	end
 	if PA.db['BrokerLDB'] then
-		PA.BrokerLDB:Initialize()
+		tinsert(InitializeModules, 'BrokerLDB')
 	end
 	if PA.db['DO'] then
-		PA.DO:Initialize()
+		tinsert(InitializeModules, 'DO')
 	end
 	if PA.db['FG'] then -- Has to be before EFL
-		--PA.FG:Initialize()
+		tinsert(InitializeModules, 'FG')
 	end
 	if PA.db['EFL'] then
-		PA.EFL:Initialize()
+		tinsert(InitializeModules, 'EFL')
 	end
 	if PA.db['LC'] then
-		PA.LC:Initialize()
+		tinsert(InitializeModules, 'LC')
 	end
 	if PA.db['MF'] then
-		PA.MF:Initialize()
+		tinsert(InitializeModules, 'MF')
 	end
 	if PA.db['SMB'] and not PA.SLE then
-		PA.SMB:Initialize()
+		tinsert(InitializeModules, 'SMB')
 	end
 	if PA.db['stAM'] then
-		PA.stAM:Initialize()
+		tinsert(InitializeModules, 'stAM')
 	end
+
+	for _, Module in pairs(InitializeModules) do
+		pcall(PA[Module].Initialize)
+	end
+
 	if PA.Tukui and GetAddOnEnableState(PA.MyName, 'Tukui_Config') > 0 then
 		PA:TukuiOptions()
 	end

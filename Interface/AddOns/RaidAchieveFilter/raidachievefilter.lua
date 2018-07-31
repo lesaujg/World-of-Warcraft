@@ -72,7 +72,7 @@ function RaidAchFilter:Toggle()
 	local f = _G["RaidAch_Frame"]
 	local fra = _G["AchievementFrame"]
 	if not f then
-		RaidAchFilter:Initialize(); RaidAchFilter:ShowAch(1); RaidAchFilter:ZoneChange()
+		RaidAchFilter:Initialize(); RaidAchFilter:ShowAch(1); --RaidAchFilter:ZoneChange()
 		if fra then 
 			if ( AchievementFrame:IsShown() ) and f then f:ClearAllPoints(); f:SetPoint("TOPLEFT",fra,"TOPRIGHT",4,0)end 
 		end
@@ -102,8 +102,7 @@ RaidAchFilter:RegisterEvent("ACHIEVEMENT_EARNED", "AchEarned")
 function RaidAchFilter:ZoneChange()
 	local f = _G["RaidAch_Frame"]
 	if f then
-		SetMapToCurrentZone()
-		local mapID = GetCurrentMapAreaID()
+		local mapID =  C_Map.GetBestMapForUnit("player")
 		for i = 1, #RAFdb.MapID do
 			if RAFdb.MapID[i] == mapID then 
 				local id = i

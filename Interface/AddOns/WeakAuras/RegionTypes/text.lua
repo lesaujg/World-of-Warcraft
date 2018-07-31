@@ -36,7 +36,7 @@ local properties = {
   }
 }
 
-WeakAuras.regionPrototype.AddProperties(properties);
+WeakAuras.regionPrototype.AddProperties(properties, default);
 
 local function GetProperties(data)
   return properties;
@@ -167,18 +167,10 @@ local function modify(parent, region, data)
     local values = region.values;
     region.UpdateCustomText = function()
       WeakAuras.ActivateAuraEnvironment(region.id, region.cloneId, region.state);
-      local ok, custom = pcall(customTextFunc, region.expirationTime, region.duration,
-        values.progress, values.duration, values.name, values.icon, values.stacks);
-      if (not ok) then
-        WeakAuras.ReportError(custom)
-        custom = "";
-      end
+      values.custom = {select(2, xpcall(customTextFunc, geterrorhandler(), region.expirationTime, region.duration,
+        values.progress, values.duration, values.name, values.icon, values.stacks))}
       WeakAuras.ActivateAuraEnvironment(nil);
-      custom = WeakAuras.EnsureString(custom);
-      if(custom ~= values.custom) then
-        values.custom = custom;
-        UpdateText();
-      end
+      UpdateText();
     end
     if(data.customTextUpdate == "update") then
       WeakAuras.RegisterCustomTextUpdates(region);

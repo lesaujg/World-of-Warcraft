@@ -168,7 +168,12 @@ function addon:ShowTooltip(anchor)
 end
 
 function addon:GetItemSourceInfo(itemSource)
-    local zoneName = GetMapNameByID(itemSource.zone_id)
+    local zoneName
+	
+	local mapInfo = C_Map.GetMapInfo(itemSource.zone_id);
+	if ( mapInfo ) then
+		zoneName = mapInfo.name
+	end
 
     local npcName
     if itemSource.type == 'special' then

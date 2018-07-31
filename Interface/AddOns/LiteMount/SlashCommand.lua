@@ -14,7 +14,7 @@ local MacroName = "LiteMount"
 local MacroText = [[
 # Auto-created by LiteMount addon, it is safe to delete or edit this macro.
 # To re-create it run "/litemount macro"
-/click [btn:1] LM_B1; [btn:2] LM_B2; [btn:3] LM_B3; [btn:4] LM_B4
+/click LM_B1
 ]]
 
 local function CreateOrUpdateMacro()
@@ -51,10 +51,10 @@ local function IsTrue(x)
 end
 
 local function PrintUsage()
-    LM_Print("Usage:")
+    LM_Print(GAMEMENU_HELP .. ":")
     LM_Print("  /litemount enable | disable | toggle")
     LM_Print("  /litemount mounts [<substring>]")
-    LM_Print("  /litemount areas [<substring>]")
+    LM_Print("  /litemount maps [<substring>]")
     LM_Print("  /litemount continents [<substring>]")
     LM_Print("  /litemount location")
     LM_Print("  /litemount macro")
@@ -64,38 +64,13 @@ local function PrintUsage()
     LM_Print("  /litemount xmog <slotnumber>")
 end
 
-local function PrintAreas(str)
-    local areas = GetAreaMaps()
-
-    local searchStr = string.lower(str or "")
-
-    for _,areaID in ipairs(areas) do
-        local areaName = GetMapNameByID(areaID)
-        local searchName = string.lower(areaName)
-        if areaID == tonumber(str) or searchName:find(searchStr) then
-            LM_Print(format("% 4d : %s", areaID, areaName))
-        end
-    end
-end
-
-local function PrintContinents(str)
-    local continents = { GetMapContinents() }
-    local searchStr = string.lower(str or "")
-
-    local cID, cName, searchName
-    for i = 1, #continents, 2 do
-        cID, cName = continents[i], continents[i+1]
-        searchName = string.lower(cName)
-        if cID == tonumber(str) or searchName:find(searchStr) then
-            LM_Print(format("% 4d : %s", cID, cName))
-        end
-    end
-end
-
 _G.LiteMount_SlashCommandFunc = function (argstr)
 
     -- Look, please stop doing this, ok? Nothing good can come of it.
-    if InCombatLockdown() then return true end
+    if InCombatLockdown() then
+        LM_PrintError(ERR_NOT_IN_COMBAT)
+        return true
+    end
 
     local args = { strsplit(" ", argstr) }
     local cmd = table.remove(args, 1)
@@ -106,16 +81,24 @@ _G.LiteMount_SlashCommandFunc = function (argstr)
         return true
     elseif cmd == "toggle" or cmd == "enable" or cmd == "disable" then
         UpdateActiveMount(cmd)
-        LiteMountOptions_UpdateMountList()
         return true
     elseif cmd == "location" then
-        LM_Location:Dump()
+        LM_Print(LOCATION_COLON)
+        for _,line in ipairs(LM_Location:GetLocation()) do
+            LM_Print("  " .. line)
+        end
         return true
-    elseif cmd == "areas" then
-        PrintAreas(table.concat(args, ' '))
+    elseif cmd == "maps" then
+        local str = table.concat(args, ' ')
+        for _,line in ipairs(LM_Location:GetMaps(str)) do
+            LM_Print(line)
+        end
         return true
     elseif cmd == "continents" then
-        PrintContinents(table.concat(args, ' '))
+        local str = table.concat(args, ' ')
+        for _,line in ipairs(LM_Location:GetContinents(str)) do
+            LM_Print(line)
+        end
         return true
     elseif cmd == "mounts" then
         local m
@@ -133,18 +116,12 @@ _G.LiteMount_SlashCommandFunc = function (argstr)
     elseif cmd == "flags" then
         if args[1] == "add" and #args == 2 then
             LM_Options:CreateFlag(args[2])
-            LiteMountOptions_UpdateFlagPaging()
-            LiteMountOptions_UpdateMountList()
             return true
         elseif args[1] == "del" and #args == 2 then
             LM_Options:DeleteFlag(args[2])
-            LiteMountOptions_UpdateFlagPaging()
-            LiteMountOptions_UpdateMountList()
             return true
         elseif args[1] == "rename" and #args == 3 then
             LM_Options:RenameFlag(args[2], args[3])
-            LiteMountOptions_UpdateFlagPaging()
-            LiteMountOptions_UpdateMountList()
             return true
         elseif args[1] == "list" and #args == 1 then
             local flags = LM_Options:GetAllFlags()
@@ -169,10 +146,10 @@ _G.LiteMount_SlashCommandFunc = function (argstr)
         end
     elseif cmd == "debug" then
         if IsTrue(args[1]) then
-            LM_Print("Debugging enabled.")
+            LM_Print(L.LM_DEBUGGING_ENABLED)
             LM_Options.db.char.debugEnabled = true
         else
-            LM_Print("Debugging disabled.")
+            LM_Print(L.LM_DEBUGGING_DISABLED)
             LM_Options.db.char.debugEnabled = false
         end
         return true

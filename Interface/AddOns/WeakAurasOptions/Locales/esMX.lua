@@ -224,6 +224,8 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["From Template"] = "Desde la plantilla"
 	L["Full Scan"] = "Escaneo completo"
 	L["General Text Settings"] = "Preferencias generales de texto"
+	--[[Translation missing --]]
+	L["Global Conditions"] = "Global Conditions"
 	L["Glow"] = "Resplandor"
 	L["Glow Action"] = "Acción de resplandor"
 	L["Green Rune"] = "Runa verde"
@@ -243,6 +245,8 @@ Con |cFF00CC00<= 0.8|r se activará cuando menos del 80%% del grupo o banda est�
 Con |cFF00CC00> 1/2|r se activará cuando más de la mitad de miembros del grupo o banda estén afectados.
 Con |cFF00CC00>= 0|r se activará siempre.]=]
 	L["Group Member Count"] = "Contador de miembros del grupo"
+	--[[Translation missing --]]
+	L["Group Scale"] = "Group Scale"
 	L["Grow"] = "Crecer"
 	L["Hawk"] = "Halcón"
 	L["Height"] = "Alto"
@@ -257,6 +261,8 @@ Con |cFF00CC00>= 0|r se activará siempre.]=]
 	L["Hybrid Position"] = "Posición híbrida"
 	L["Hybrid Sort Mode"] = "Modo de orden híbrido"
 	L["Icon"] = "Icono"
+	--[[Translation missing --]]
+	L["Icon Alpha"] = "Icon Alpha"
 	L["Icon Color"] = "Color de icono"
 	L["Icon Info"] = "Información de icono"
 	L["Icon Inset"] = "Interior del icono"
@@ -505,7 +511,9 @@ Sólo un valor coincidente puede ser escogido.]=]
 	L["Update Custom Text On..."] = "Actualizar texto personalizado en..."
 	L["Use Full Scan (High CPU)"] = "Escaneo Total (carga el procesador)"
 	--[[Translation missing --]]
-	L["Use SetTransform (will change behaviour in 7.3)"] = "Use SetTransform (will change behaviour in 7.3)"
+	L["Use nth value from tooltip:"] = "Use nth value from tooltip:"
+	--[[Translation missing --]]
+	L["Use SetTransform"] = "Use SetTransform"
 	L["Use tooltip \"size\" instead of stacks"] = "Utilizar \"tamaño\" en vez de acumulaciones"
 	--[[Translation missing --]]
 	L["Used in auras:"] = "Used in auras:"
@@ -523,6 +531,8 @@ Sólo un valor coincidente puede ser escogido.]=]
 	L["Y Scale"] = "Ajuste de tamaño de Y"
 	L["Yellow Rune"] = "Runa amarilla"
 	L["Yes"] = "Si"
+	--[[Translation missing --]]
+	L["You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"] = "You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"
 	L["Z Offset"] = "Posición de Z"
 	L["Z Rotation"] = "Rotación de Z"
 	L["Zoom"] = "Ampliar"

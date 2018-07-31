@@ -1,67 +1,20 @@
-tag 380b536d2ba1b7a8899edf8d89da2068833adb00 7.3.21
+tag 62a9091d152a552f13159e8cf757977ea2f845c3 8.0.3
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Mon Jun 4 10:23:59 2018 +1000
+Date:	Mon Jul 23 14:49:59 2018 +1000
 
-Releasing LiteMount 7.3.21
+Tagging 8.0.3.
+  - New 'Spell [filter=spellid,spellid,...][conditions]' action.
 
-  - No longer tries to restore Ghost Wolf or stealth
-
-  - Add Stag Form for druids
-
-  - 'Default' button on action list settings only alters current list
-
-commit 8f0e90b3a41bb4beb309f37cd5e7d225985bfbda
+commit 511208c29869bb35a7ab376e11991883c3635898
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Jun 4 10:21:25 2018 +1000
+Date:   Mon Jul 23 14:35:25 2018 +1000
 
-    Rename prevFormName to savedFormName for clarity.
+    Support Spell action with filter=spellid[,spellid,...]
 
-commit 4571f1d9e253f9ee9e6c1e18c87bd653325193ac
+commit 736961596bb6500625a73f155b16bfd106d6da21
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Jun 1 11:15:03 2018 +1000
+Date:   Sun Jul 22 19:32:31 2018 +1000
 
-    Add Stag Form
-
-commit bce30b32bf17a1cb9f9d63011873361d759288b8
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Jun 1 11:14:49 2018 +1000
-
-    The absolute rubbish has moved into the core :(
-
-commit a4fdde133e3f5edd5b43b962b88df9f692507cc9
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon May 7 22:32:57 2018 +1000
-
-    Don't restore stealth or ghost wolf
-
-commit fde02b65ed6a3055bd4e0ff1f2674837d16e7bb1
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sat May 5 12:05:55 2018 +1000
-
-    Use macro to restore previous form in case you don't have the "Auto
-    Dismount in Flight" option enabled.
-
-commit e60584cccb95fea29296b2de7e087d9bd0fbb8e1
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sat May 5 11:25:30 2018 +1000
-
-    Really fix the default-only-current-tab in Advanced problem
-
-commit d7230a538e5f34790b60cca9fe7bda8153344c3d
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Apr 5 07:03:43 2018 +1000
-
-    Hard-coded list of shapeshift forms to restore
-
-commit 3c2dca9a3b454c12dd2b83d7c123b7ee7fb51360
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sat Mar 31 19:59:44 2018 +1100
-
-    Advanced options default button now only resets current keybind.
-
-commit 873c3198c0c3acbfb5f7b889b32a6db609b826fd
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sat Mar 31 19:56:34 2018 +1100
-
-    Note that the shuffle algorithm is Fisher-Yates
+    RUN/WALK shouldn't have equal priority.
+    So I wasted all that time implementing the slash OR. FML
 

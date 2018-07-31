@@ -105,17 +105,17 @@ RAFdb.AchID[89] = {10773,10775,10776,10803}--The Arcway
 RAFdb.AchID[90] = {10707,10679,10680,10801,10802,10803}--Vault of the Wardens
 RAFdb.MapID = {
 --Raids
-604,604,535,535,718,527,531,531,609,543,543,529,--LK
-754,758,773,800,824,--Cata
-897,896,886,930,953,--MoP
-988,1026,994,--WoD
-1188,1094,1088,1147,1114,--Legion
+186,186,162,162,248,141,155,155,200,172,172,147,--LK
+285,294,328,367,409,--Cata
+474,471,456,508,556,--MoP
+596,661,610,--WoD
+909,777,764,850,806,--Legion
 --Dungeons
-522,533,521,534,601,530,525,603,526,520,528,602,542,523,524,536,--LK
-753,756,820,757,759,819,747,764,768,767,769,816,781,793,--Cata
-875,885,871,874,898,877,887,876,867,--MoP
-984,964,993,987,969,989,1008,995,--WoD
-1066,1081,1146,1087,1067,1046,1041,1115,1042,1065,1178,11079,1045}--Legion
+132,157,130,160,183,153,138,185,140,129,142,184,171,133,136,168,--LK
+283,291,401,293,297,399,277,311,324,322,325,398,333,337,--Cata
+437,453,431,435,476,443,457,439,429,--MoP
+593,573,606,595,574,601,620,616,--WoD
+732,751,845,760,733,713,703,809,706,731,903,749,710}--Legion
 --Scenarios
 if uFaction == "A" then 
 	RAFdb.AchID[91] = {7261,7258,7257,7252,8310}--Brewing
@@ -133,9 +133,9 @@ if uFaction == "A" then
 	RAFdb.AchID[103] = {8295,8294,8327}--Ragefire
 	RAFdb.AchID[104] = {7526,7527,7523}--Theramore
 	RAFdb.AchID[105] = {7231,7232,7239,7249,7248}--Unga
-	local MapIDs = {878,912,899,883,940,939,884,900,914,937,880,911,938,906,882}
+	local MapIDs = {447,487,480,451,524,523,452,481,488,520,448,911,522,483,450}
 	for i = 1, #MapIDs do tinsert(RAFdb.MapID, MapIDs[i]) end
-	for i = 1, 105 do RAFdb.MapName[i] = GetMapNameByID(RAFdb.MapID[i]) end
+	for i = 1, 105 do RAFdb.MapName[i] = C_Map.GetMapInfo(RAFdb.MapID[i]).name; end
 	RAFdb.MapName[93] = "Arena of Annihilation"-- (Proving Grounds)
 	RAFdb.MapName[96] = "Blood in the Snow"-- (Dun Morogh)
 	RAFdb.MapName[100] = "Dark Heart of Pandaria"-- (Vale of Eternal Blossoms)
@@ -158,9 +158,9 @@ else
 	RAFdb.AchID[103] = {8295,8294,8327}--Ragefire
 	RAFdb.AchID[104] = {7529,7530,7524}--Theramore
 	RAFdb.AchID[105] = {7231,7232,7239,7249,7248}--Unga
-	local MapIDs = {878,912,899,883,940,939,884,900,914,937,920,880,938,907,882}
+	local MapIDs = {447,487,480,481,524,523,452,481,488,520,498,448,522,416,450}
 	for i = 1, #MapIDs do tinsert(RAFdb.MapID, MapIDs[i]) end
-	for i = 1, 105 do RAFdb.MapName[i] = GetMapNameByID(RAFdb.MapID[i]) end
+	for i = 1, 105 do RAFdb.MapName[i] = C_Map.GetMapInfo(RAFdb.MapID[i]).name end
 	RAFdb.MapName[93] = "Arena of Annihilation"--(Proving Grounds)
 	RAFdb.MapName[96] = "Blood in the Snow"--(Dun Morogh)
 	RAFdb.MapName[100] = "Dark Heart of Pandaria"--(Vale of Eternal Blossoms)

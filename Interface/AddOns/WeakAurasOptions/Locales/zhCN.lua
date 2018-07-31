@@ -234,6 +234,8 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["From Template"] = "从模板"
 	L["Full Scan"] = "完整扫描"
 	L["General Text Settings"] = "通用字体设置"
+	--[[Translation missing --]]
+	L["Global Conditions"] = "Global Conditions"
 	L["Glow"] = "发光"
 	L["Glow Action"] = "发光动作"
 	L["Green Rune"] = "绿色符文"
@@ -250,6 +252,8 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 |cFF00CC00大于 1/2|r 会在超过一半以上的人受影响时触发
 |cFF00CC00大于等于 0|r 总是触发.]=]
 	L["Group Member Count"] = "队伍或团队成员数"
+	--[[Translation missing --]]
+	L["Group Scale"] = "Group Scale"
 	L["Grow"] = "生长"
 	L["Hawk"] = "鹰"
 	L["Height"] = "高度"
@@ -264,6 +268,8 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Hybrid Position"] = "混合定位"
 	L["Hybrid Sort Mode"] = "混合排序模式"
 	L["Icon"] = "图标"
+	--[[Translation missing --]]
+	L["Icon Alpha"] = "Icon Alpha"
 	L["Icon Color"] = "图标颜色"
 	L["Icon Info"] = "图标信息"
 	L["Icon Inset"] = "项目插入"
@@ -534,7 +540,9 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Update Custom Text On..."] = "更新自定义文字于"
 	L["Use Full Scan (High CPU)"] = "使用完整扫描(高CPU)"
 	--[[Translation missing --]]
-	L["Use SetTransform (will change behaviour in 7.3)"] = "Use SetTransform (will change behaviour in 7.3)"
+	L["Use nth value from tooltip:"] = "Use nth value from tooltip:"
+	--[[Translation missing --]]
+	L["Use SetTransform"] = "Use SetTransform"
 	L["Use tooltip \"size\" instead of stacks"] = "使用\\\"大小\\\"提示,而不是\\\"层数\\\""
 	--[[Translation missing --]]
 	L["Used in auras:"] = "Used in auras:"
@@ -552,6 +560,8 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Y Scale"] = "长度比例"
 	L["Yellow Rune"] = "黄色符文"
 	L["Yes"] = "是"
+	--[[Translation missing --]]
+	L["You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"] = "You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"
 	L["Z Offset"] = "深度 偏移"
 	L["Z Rotation"] = "Z旋转"
 	L["Zoom"] = "缩放"

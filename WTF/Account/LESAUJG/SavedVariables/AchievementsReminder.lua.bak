@@ -2,12 +2,32 @@
 ralllocationnames = {
 	"Icecrown Citadel", -- [1]
 	"Icecrown Citadel", -- [2]
-	"Trial of the Crusader", -- [3]
-	"Trial of the Crusader", -- [4]
+	{
+		["mapType"] = 3,
+		["mapID"] = 543,
+		["name"] = "Gorgrond",
+		["parentMapID"] = 572,
+	}, -- [3]
+	{
+		["mapType"] = 3,
+		["mapID"] = 543,
+		["name"] = "Gorgrond",
+		["parentMapID"] = 572,
+	}, -- [4]
 	"Ulduar", -- [5]
 	"Ulduar", -- [6]
-	"Naxxramas", -- [7]
-	"Naxxramas", -- [8]
+	{
+		["mapType"] = 3,
+		["mapID"] = 535,
+		["name"] = "Talador",
+		["parentMapID"] = 572,
+	}, -- [7]
+	{
+		["mapType"] = 3,
+		["mapID"] = 535,
+		["name"] = "Talador",
+		["parentMapID"] = 572,
+	}, -- [8]
 	"The Eye of Eternity", -- [9]
 	"The Eye of Eternity", -- [10]
 	"Onyxia's Lair", -- [11]
@@ -21,7 +41,12 @@ ralllocationnames = {
 	"Ahn'kahet: The Old Kingdom", -- [19]
 	"Azjol-Nerub", -- [20]
 	"The Culling of Stratholme", -- [21]
-	"Trial of the Champion", -- [22]
+	{
+		["mapType"] = 3,
+		["mapID"] = 542,
+		["name"] = "Spires of Arak",
+		["parentMapID"] = 572,
+	}, -- [22]
 	"Drak'Tharon Keep", -- [23]
 	"Gundrak", -- [24]
 	"Halls of Reflection", -- [25]
@@ -61,16 +86,31 @@ ralllocationnames = {
 	"Strand of the Ancients", -- [59]
 	"Isle of Conquest", -- [60]
 	"The Battle for Gilneas", -- [61]
-	"Twin Peaks", -- [62]
+	{
+		["mapType"] = 4,
+		["mapID"] = 626,
+		["name"] = "Dalaran",
+		["parentMapID"] = 619,
+	}, -- [62]
 	"Scarlet Halls", -- [63]
 	"Scarlet Monastery", -- [64]
 	"Scholomance", -- [65]
 	"Stormstout Brewery", -- [66]
 	"Temple of the Jade Serpent", -- [67]
-	"Mogu'shan Palace", -- [68]
+	{
+		["mapType"] = 3,
+		["mapID"] = 885,
+		["name"] = "Antoran Wastes",
+		["parentMapID"] = 905,
+	}, -- [68]
 	"Shado-Pan Monastery", -- [69]
 	"Gate of the Setting Sun", -- [70]
-	"Siege of Niuzao Temple", -- [71]
+	{
+		["mapType"] = 5,
+		["mapID"] = 887,
+		["name"] = "The Vindicaar",
+		["parentMapID"] = 885,
+	}, -- [71]
 	"Heart of Fear", -- [72]
 	"Mogu'shan Vaults", -- [73]
 	"Terrace of Endless Spring", -- [74]
@@ -80,7 +120,12 @@ ralllocationnames = {
 	"Crypt of Forgotten Kings", -- [78]
 	"Greenstone Village", -- [79]
 	"Theramore's Fall", -- [80]
-	"Unga Ingoo", -- [81]
+	{
+		["mapType"] = 3,
+		["mapID"] = 882,
+		["name"] = "Mac'Aree",
+		["parentMapID"] = 905,
+	}, -- [81]
 	"Temple of Kotmogu", -- [82]
 	"A Little Patience", -- [83]
 	"Lion's Landing", -- [84]

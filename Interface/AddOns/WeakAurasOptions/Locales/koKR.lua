@@ -233,6 +233,8 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["From Template"] = "견본으로부터"
 	L["Full Scan"] = "전체 검사"
 	L["General Text Settings"] = "일반 문자 설정"
+	--[[Translation missing --]]
+	L["Global Conditions"] = "Global Conditions"
 	L["Glow"] = "반짝이기"
 	L["Glow Action"] = "반짝임 동작"
 	L["Green Rune"] = "녹색 룬"
@@ -250,6 +252,8 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 |cFF00CC00> 1/2|r %s의 절반 이상이 영향 받을 때 발생
 |cFF00CC00>= 0|r 상관없이, 항상 발생]=]
 	L["Group Member Count"] = "그룹원 수"
+	--[[Translation missing --]]
+	L["Group Scale"] = "Group Scale"
 	L["Grow"] = "성장"
 	L["Hawk"] = "매"
 	L["Height"] = "높이"
@@ -264,6 +268,8 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Hybrid Position"] = "복합 위치"
 	L["Hybrid Sort Mode"] = "복합 정렬 모드"
 	L["Icon"] = "아이콘"
+	--[[Translation missing --]]
+	L["Icon Alpha"] = "Icon Alpha"
 	L["Icon Color"] = "아이콘 색상"
 	L["Icon Info"] = "아이콘 정보"
 	L["Icon Inset"] = "아이템 축소"
@@ -507,7 +513,10 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Up"] = "Up"
 	L["Update Custom Text On..."] = "사용자 설정 문자 갱신 중..."
 	L["Use Full Scan (High CPU)"] = "전체 스캔 사용 (높은 CPU 사용률)"
-	L["Use SetTransform (will change behaviour in 7.3)"] = "SetTransform 사용 (7.3에서 작동 변경)"
+	--[[Translation missing --]]
+	L["Use nth value from tooltip:"] = "Use nth value from tooltip:"
+	--[[Translation missing --]]
+	L["Use SetTransform"] = "Use SetTransform"
 	L["Use tooltip \"size\" instead of stacks"] = "중첩 대신 툴팁 \"크기\" 사용"
 	--[[Translation missing --]]
 	L["Used in auras:"] = "Used in auras:"
@@ -525,6 +534,8 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Y Scale"] = "세로 크기"
 	L["Yellow Rune"] = "노란색 룬"
 	L["Yes"] = "네"
+	--[[Translation missing --]]
+	L["You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"] = "You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"
 	L["Z Offset"] = "Z 좌표"
 	L["Z Rotation"] = "Z 회전"
 	L["Zoom"] = "확대"

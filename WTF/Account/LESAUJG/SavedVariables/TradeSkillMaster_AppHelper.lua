@@ -2,28 +2,37 @@
 TradeSkillMaster_AppHelperDB = {
 	["blackMarket"] = {
 		["Sisters of Elune"] = {
-			["data"] = "[[13,45606,1,4,1050,50,1000,1,1531213086],[19,86280,1,4,1000,0,0,0,1531213086],[16,22488,1,4,10000,0,0,0,1531213086],[25,49286,1,4,26200,1200,25000,1,1531213086],[67,141995,1,4,21000,1000,20000,1,1531213086]]",
-			["key"] = 2909375,
-			["updateTime"] = 1531213086,
+			["key"] = 10992211,
+			["data"] = "[[13,44970,1,3,1704,81,1623,11,1532906533],[67,141995,1,3,194200,9200,185000,7,1532906533],[78,110678,1,3,47800,2200,45600,7,1532906533]]",
+			["updateTime"] = 1532906533,
 		},
 	},
 	["region"] = "US",
+	["errorReports"] = {
+		["data"] = {
+			"[\"Message: ...Ons/TradeSkillMaster/Core/UI/CraftingUI/Crafting.lua:521: attempt to index a nil value\nTime: 07/29/18 19:18:45 (251288100)\nClient: 8.0.1\nLocale: enUS\nCombat: false\nError Count: 1\nStack Trace:\n    TSM/Core/UI/CraftingUI/Crafting.lua:521: <?>\n        button = {}\n        baseFrame = {}\n    TSM/Core/UI/Elements/Element.lua:212: <ScriptHandlerCommon>\n        script = 'OnClick'\n        frame = <unnamed> {\n          0 = <userdata>\n        }\n        self = {}\n        startTime = 251288100.52828\n        private = {\n          elementLookup = {}\n          scriptWrappers = {}\n        }\n        SCRIPT_CALLBACK_TIME_WARNING_THRESHOLD_MS = 20\n        TSM = {}\n    TSM/Core/UI/Elements/Element.lua:202: <Element.lua:201>\n        private = {\n          elementLookup = {}\n          scriptWrappers = {}\n        }\n        script = 'OnClick'\nTemp Table Info:\n  <none>\nObject Pool Info:\n  UI_ActionButton (10 created, 2 in use)\n    <none>\n  UI_BorderedFrame (1 created, 0 in use)\n    <none>\n  UI_InputNumeric (1 created, 0 in use)\n    <none>\n  UI_ProfessionScrollingTable (1 created, 0 in use)\n    <none>\n  UI_MenuDialogFrame (1 created, 1 in use)\n    <none>\n  UI_Button (104 created, 14 in use)\n    [2] TSM/Core/UI/Elements/ApplicationFrame.lua:471 -> TSM/Core/UI/CraftingUI/Crafting.lua:516\n    [2] TSM/Core/UI/Elements/Toggle.lua:132 -> TSM/Core/UI/Elements/Frame.lua:239\n    [3] TSM/Core/UI/Elements/LargeApplicationFrame.lua:97 -> TSM/Core/UI/CraftingUI/Core.lua:66\n  UI_LargeApplicationFrame (1 created, 1 in use)\n    <none>\n  UI_ApplicationGroupTree (1 created, 1 in use)\n    <none>\n  UI_Checkbox (2 created, 0 in use)\n    <none>\n  UI_ScrollFrame (1 created, 0 in use)\n    <none>\n  COOLDOWN_TASK (0 created, 0 in use)\n    <none>\n  UI_SearchInput (2 created, 1 in use)\n    <none>\n  UI_SecureMacroActionButton (3 created, 0 in use)\n    <none>\n  DATABASE_QUERIES (25 created, 24 in use)\n    <none>\n  UI_Frame (59 created, 19 in use)\n    [3] TSM/Core/UI/Elements/LargeApplicationFrame.lua:102 -> TSM/Core/UI/CraftingUI/Core.lua:66\n  UI_Text (75 created, 10 in use)\n    <none>\n  UI_ProgressBar (1 created, 0 in use)\n    <none>\n  UI_SelectionScrollingTable (1 created, 0 in use)\n    <none>\n  UI_QueryScrollingTable (1 created, 0 in use)\n    <none>\n  UI_DividedContainer (1 created, 1 in use)\n    <none>\n  UI_Texture (24 created, 3 in use)\n    <none>\n  GATHERING_ALT_TASK (3 created, 0 in use)\n    <none>\n  UI_Spacer (17 created, 6 in use)\n    <none>\n  UI_OverlayApplicationFrame (1 created, 0 in use)\n    <none>\n  UI_DropdownList (1 created, 0 in use)\n    <none>\n  UI_AlphaAnimatedFrame (6 created, 3 in use)\n    [3] TSM/Core/UI/Elements/LargeApplicationFrame.lua:91 -> TSM/Core/UI/CraftingUI/Core.lua:66\n  DATABASE_QUERY_RESULT_ROWS (10083 created, 204 in use)\n    [204] ???\n  UI_ApplicationFrame (1 created, 0 in use)\n    <none>\n  UI_MultiselectionDropdown (1 created, 0 in use)\n    <none>\n  DATABASE_QUERY_CLAUSES (49 created, 42 in use)\n    [2] TSM/Core/UI/Elements/LargeApplicationFrame.lua:127 -> TSM/Core/UI/Elements/LargeApplicationFrame.lua:233\n  UI_EditableText (2 created, 0 in use)\n    <none>\n  UI_Toggle (1 created, 1 in use)\n    <none>\n  UI_Dropdown (4 created, 0 in use)\n    <none>\n  UI_ViewContainer (2 created, 2 in use)\n    <none>\n  UI_Graph (1 created, 0 in use)\n    <none>\n  TABLE_ROWS (21 created, 0 in use)\n    <none>\n  UI_TabGroup (1 created, 0 in use)\n    <none>\n  UI_PlayerGoldText (2 created, 1 in use)\n    <none>\n  UI_SimpleTabGroup (1 created, 0 in use)\n    <none>\n  UI_ManagementGroupTree (1 created, 0 in use)\n    <none>\n  UI_CraftingMatList (1 created, 0 in use)\n    <none>\n  UI_ItemList (2 created, 0 in use)\n    <none>\n  UI_Input (8 created, 0 in use)\n    <none>\n  UI_SearchList (1 created, 0 in use)\n    <none>\n  UI_CraftingQueueList (1 created, 1 in use)\n    <none>\n  UI_SelectionDropdown (10 created, 0 in use)\n    <none>\nTSM Thread Info:\n    {\n      MAIL_OPENING={\n        state='DEAD',\n        cpuPct='0.1%',\n        cpuTimeUsed=58.292774945498,\n        isImmortal=false,\n        backtrace={\n        },\n        realTimeUsed=104721.59142104,\n        createCaller='TSM//Core//Service//Mailing//Open.lua:25',\n        startCaller='TSM//Core//Service//Mailing//Open.lua:43'\n      },\n      MAIL_GROUPS={\n        state='DEAD',\n        cpuPct='0.0%',\n        cpuTimeUsed=10.823718190193,\n        isImmortal=false,\n        backtrace={\n        },\n        realTimeUsed=269115.52385205,\n        createCaller='TSM//Core//Service//Mailing//Groups.lua:26',\n        startCaller='TSM//Core//Service//Mailing//Groups.lua:37'\n      },\n      POST_SCAN={\n        waitFunction=<function [CanSendAuctionQuery]>,\n        isImmortal=false,\n        createCaller='TSM//Core//Service//Auctioning//PostScan.lua:95',\n        startCaller='TSM//Core//UI//AuctionUI//Auctioning.lua:976',\n        state='DEAD',\n        cpuTimeUsed=7015.7796693742,\n        realTimeUsed=249042.51135689,\n        cpuPct='2.8%',\n        backtrace={\n        }\n      },\n      PLAYER_PROFESSIONS={\n        state='DEAD',\n        cpuPct='0.2%',\n        cpuTimeUsed=620.95408198237,\n        isImmortal=false,\n        backtrace={\n        },\n        realTimeUsed=339851.15149441,\n        createCaller='TSM//Core//Service//Crafting//PlayerProfessions.lua:45',\n        startCaller='TSM//Core//Service//Crafting//PlayerProfessions.lua:65'\n      },\n      SYNC_MANAGEMENT={\n        isImmortal=false,\n        createCaller='TSM//Core//Lib//Sync//Connection.lua:48',\n        sleepTime=0.069999997876585,\n        state='SLEEPING',\n        cpuTimeUsed=2178.5903301239,\n        cpuPct='0.6%',\n        realTimeUsed=344414.79547668,\n        startCaller='TSM//Core//Lib//Sync//Connection.lua:49',\n        backtrace={\n          [1]='TSM//Core//Lib//Thread.lua:144',\n          [2]='TSM//Core//Lib//Sync//Connection.lua:219',\n          [3]='TSM//Core//Lib//Thread.lua:465'\n        }\n      },\n      MAIL_SENDING={\n        state='DEAD',\n        cpuPct='0.1%',\n        cpuTimeUsed=157.6794629097,\n        isImmortal=false,\n        backtrace={\n        },\n        realTimeUsed=269106.50627381,\n        createCaller='TSM//Core//Service//Mailing//Send.lua:26',\n        startCaller='TSM//Core//Service//Mailing//Send.lua:37'\n      }\n    }\nTSM Debug Log:\n    19:18:39.697 [WARN:215] Script handler (OnClick) for frame (pageToggle_Button2) took 21.93ms\n    19:18:39.696 [INFO:93] [CRAFTING_UI_CRAFTING] EV_PAGE_CHANGED\n    19:18:37.624 [WARN:163] Delay callback (PROFESSION_SCAN_DELAY) took 83.84ms\n    19:18:37.605 [INFO:118] [CRAFTING_UI_CRAFTING] ST_FRAME_OPEN_NO_PROFESSION -> ST_FRAME_OPEN_WITH_PROFESSION\n    19:18:37.605 [INFO:93] [CRAFTING_UI_CRAFTING] EV_PROFESSION_STATE_UPDATE\n    19:18:37.605 [INFO:277] Scanned Enchanting (failed to scan 0)\n    19:18:37.441 [INFO:93] [CRAFTING_UI_CRAFTING] EV_PROFESSION_STATE_UPDATE\n    19:18:37.441 [INFO:93] [CRAFTING_UI_CRAFTING] EV_PROFESSION_STATE_UPDATE\n    19:18:37.440 [INFO:102] Showing profession: Enchanting\n    19:18:37.440 [INFO:118] [PROFESSION_STATE] ST_WAITING_FOR_READY -> ST_SHOWN\n    19:18:37.440 [INFO:93] [PROFESSION_STATE] EV_FRAME_DELAY\n    19:18:37.403 [INFO:118] [CRAFTING_UI_CRAFTING] ST_FRAME_CLOSED -> ST_FRAME_OPEN_NO_PROFESSION\n    19:18:37.403 [INFO:93] [CRAFTING_UI_CRAFTING] EV_FRAME_SHOW\n    19:18:37.383 [INFO:118] [PROFESSION_STATE] ST_WAITING_FOR_DATA -> ST_WAITING_FOR_READY\n    19:18:37.383 [INFO:93] [PROFESSION_STATE] EV_TRADE_SKILL_DATA_SOURCE_CHANGED\n    19:18:37.353 [INFO:93] [CRAFTING_UI_CRAFTING] EV_PROFESSION_STATE_UPDATE\n    19:18:37.353 [INFO:93] [CRAFTING_UI_CRAFTING] EV_PROFESSION_STATE_UPDATE\n    19:18:37.353 [INFO:118] [PROFESSION_STATE] ST_CLOSED -> ST_WAITING_FOR_DATA\n    19:18:37.352 [INFO:93] [PROFESSION_STATE] EV_TRADE_SKILL_SHOW\n    19:18:37.352 [WARN:40] Event (TRADE_SKILL_SHOW) callback took 317.71ms\n    19:18:37.035 [INFO:118] [CRAFTING_UI] ST_CLOSED -> ST_FRAME_OPEN\n    19:18:37.035 [INFO:93] [CRAFTING_UI] EV_TRADE_SKILL_SHOW\n    19:18:37.032 [INFO:93] [PROFESSION_STATE] EV_TRADE_SKILL_DATA_SOURCE_CHANGING\n    19:18:34.957 [WARN:215] Script handler (OnClick) for frame (closeBtn) took 35.74ms\n    19:18:34.957 [INFO:118] [SNIPER] ST_INIT -> ST_INIT\n    19:18:34.957 [INFO:93] [SNIPER] EV_AUCTION_HOUSE_CLOSED\n    19:18:34.956 [INFO:118] [SHOPPING] ST_INIT -> ST_INIT\n    19:18:34.956 [INFO:93] [SHOPPING] EV_AUCTION_HOUSE_CLOSED\n    19:18:34.956 [INFO:118] [AUCTIONING] ST_INIT -> ST_INIT\n    19:18:34.956 [INFO:93] [AUCTIONING] EV_AUCTION_HOUSE_CLOSED\n    19:18:34.955 [INFO:118] [SNIPER] ST_INIT -> ST_INIT\n    19:18:34.955 [INFO:93] [SNIPER] EV_AUCTION_HOUSE_CLOSED\n    19:18:34.954 [INFO:118] [SHOPPING] ST_INIT -> ST_INIT\n    19:18:34.954 [INFO:93] [SHOPPING] EV_AUCTION_HOUSE_CLOSED\n    19:18:34.954 [INFO:118] [AUCTIONING] ST_INIT -> ST_INIT\n    19:18:34.954 [INFO:93] [AUCTIONING] EV_AUCTION_HOUSE_CLOSED\n    19:18:34.949 [WARN:215] Script handler (OnHide) for frame (myAuctions) took 27.49ms\n    19:18:34.949 [INFO:118] [MY_AUCTIONS] ST_SHOWN -> ST_HIDDEN\n    19:18:34.949 [INFO:93] [MY_AUCTIONS] EV_FRAME_HIDDEN\n    19:18:20.352 [WARN:163] Delay callback (AUCTION_OWNED_LIST_SCAN) took 56.84ms\n    19:18:20.351 [INFO:190] Scanned auctions (left=0)\n    19:18:20.335 [INFO:118] [MY_AUCTIONS] ST_SHOWN -> ST_SHOWN\n    19:18:20.334 [INFO:93] [MY_AUCTIONS] EV_DATA_UPDATED\n    19:18:20.315 [INFO:86] [MY_AUCTIONS] EV_SELECTION_CHANGED (ignored - handling event)\n    19:18:20.312 [INFO:118] [MY_AUCTIONS] ST_SHOWN -> ST_SHOWN\n    19:18:20.312 [INFO:93] [MY_AUCTIONS] EV_DATA_UPDATED\n    19:18:20.233 [INFO:93] [MY_AUCTIONS] EV_FILTER_UPDATED\n    19:18:20.221 [WARN:215] Script handler (OnUpdate) for frame (myAuctions) took 78.34ms\n    19:18:20.208 [INFO:86] [MY_AUCTIONS] EV_SELECTION_CHANGED (ignored - handling event)\n    19:18:20.203 [INFO:86] [MY_AUCTIONS] EV_DATA_UPDATED (ignored - handling event)\n    19:18:20.199 [INFO:118] [MY_AUCTIONS] ST_SHOWNING -> ST_SHOWN\n    19:18:20.198 [INFO:118] [MY_AUCTIONS] ST_HIDDEN -> ST_SHOWNING\n    19:18:20.198 [INFO:93] [MY_AUCTIONS] EV_FRAME_SHOWN\n    19:18:20.142 [INFO:93] [MY_AUCTIONS] EV_FILTER_UPDATED\n    19:18:20.124 [WARN:40] Event (AUCTION_HOUSE_SHOW) callback took 78.71ms\n    19:18:12.124 [INFO:118] [MERCHANT_UI] ST_DEFAULT_OPEN -> ST_CLOSED\n    19:18:12.124 [INFO:86] [MERCHANT_UI] EV_MERCHANT_CLOSED (ignored - handling event)\n    19:18:12.123 [INFO:86] [MERCHANT_UI] EV_MERCHANT_CLOSED (ignored - handling event)\n    19:18:12.122 [INFO:93] [MERCHANT_UI] EV_FRAME_HIDE\n    19:18:06.656 [WARN:40] Event (BAG_UPDATE_DELAYED) callback took 26.70ms\n    19:18:06.653 [INFO:93] [DESTROYING] EV_BAG_UPDATE\n    19:18:05.415 [WARN:40] Event (BAG_UPDATE_DELAYED) callback took 32.37ms\n    19:18:05.412 [INFO:93] [DESTROYING] EV_BAG_UPDATE\n    19:17:58.460 [INFO:118] [MERCHANT_UI] ST_CLOSED -> ST_DEFAULT_OPEN\n    19:17:58.459 [INFO:93] [MERCHANT_UI] EV_MERCHANT_SHOW\n    19:17:10.599 [WARN:215] Script handler (OnClick) for frame (button) took 108.99ms\n    19:17:05.889 [INFO:118] [MAILING_UI] ST_FRAME_OPEN -> ST_CLOSED\n    19:17:05.889 [INFO:93] [MAILING_SEND] EV_MAIL_CLEAR\n    19:17:05.889 [INFO:86] [MAILING_UI] EV_MAIL_CLOSED (ignored - handling event)\n    19:17:05.888 [INFO:93] [MAILING_SEND] EV_MAIL_CLEAR\n    19:17:05.888 [INFO:86] [MAILING_UI] EV_MAIL_CLOSED (ignored - handling event)\n    19:17:05.886 [INFO:93] [MAILING_UI] EV_FRAME_HIDE\n    19:17:05.886 [INFO:118] [MAILING_INBOX] ST_SHOWN -> ST_HIDDEN\n    19:17:05.885 [INFO:93] [MAILING_INBOX] EV_FRAME_HIDE\n    19:17:05.109 [WARN:40] Event (BAG_UPDATE_DELAYED) callback took 34.63ms\n    19:17:05.106 [INFO:93] [DESTROYING] EV_BAG_UPDATE\n    19:17:04.871 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:04.675 [INFO:118] [MAILING_INBOX] ST_OPENING_START -> ST_SHOWN\n    19:17:04.675 [INFO:93] [MAILING_INBOX] EV_OPENING_DONE\n    19:17:04.675 [INFO:566] Thread finished: MAIL_OPENING [DEAD,1.2%]\n    19:17:04.672 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:04.569 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:04.430 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:04.323 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:04.230 [WARN:40] Event (BAG_UPDATE_DELAYED) callback took 30.49ms\n    19:17:04.226 [INFO:93] [DESTROYING] EV_BAG_UPDATE\n    19:17:04.151 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:04.033 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:03.849 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:03.649 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:03.552 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:03.477 [WARN:40] Event (BAG_UPDATE_DELAYED) callback took 30.69ms\n    19:17:03.473 [INFO:93] [DESTROYING] EV_BAG_UPDATE\n    19:17:03.360 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:03.259 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:03.139 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:03.059 [WARN:40] Event (BAG_UPDATE_DELAYED) callback took 32.89ms\n    19:17:03.056 [INFO:93] [DESTROYING] EV_BAG_UPDATE\n    19:17:02.949 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:02.836 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:02.653 [WARN:163] Delay callback (mailInboxScan) took 20.37ms\n    19:17:02.645 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:02.549 [WARN:163] Delay callback (mailInboxScan) took 21.53ms\n    19:17:02.540 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:02.380 [WARN:163] Delay callback (mailInboxScan) took 25.33ms\n    19:17:02.371 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:02.286 [WARN:163] Delay callback (mailInboxScan) took 23.04ms\n    19:17:02.278 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:02.256 [WARN:40] Event (BAG_UPDATE_DELAYED) callback took 35.21ms\n    19:17:02.253 [INFO:93] [DESTROYING] EV_BAG_UPDATE\n    19:17:02.039 [WARN:163] Delay callback (mailInboxScan) took 26.84ms\n    19:17:02.031 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:01.919 [WARN:163] Delay callback (mailInboxScan) took 27.53ms\n    19:17:01.910 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:01.886 [WARN:40] Event (BAG_UPDATE_DELAYED) callback took 31.93ms\n    19:17:01.882 [INFO:93] [DESTROYING] EV_BAG_UPDATE\n    19:17:01.674 [WARN:163] Delay callback (mailInboxScan) took 28.01ms\n    19:17:01.665 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:01.561 [WARN:163] Delay callback (mailInboxScan) took 27.85ms\n    19:17:01.551 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:01.464 [WARN:40] Event (BAG_UPDATE_DELAYED) callback took 29.73ms\n    19:17:01.461 [INFO:93] [DESTROYING] EV_BAG_UPDATE\n    19:17:01.366 [WARN:163] Delay callback (mailInboxScan) took 31.99ms\n    19:17:01.353 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:01.256 [WARN:163] Delay callback (mailInboxScan) took 31.47ms\n    19:17:01.245 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:01.085 [WARN:163] Delay callback (mailInboxScan) took 33.12ms\n    19:17:01.074 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:00.884 [WARN:163] Delay callback (mailInboxScan) took 32.18ms\n    19:17:00.871 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:00.711 [WARN:163] Delay callback (mailInboxScan) took 35.40ms\n    19:17:00.698 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:00.629 [WARN:163] Delay callback (mailInboxScan) took 35.65ms\n    19:17:00.617 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:17:00.587 [WARN:40] Event (BAG_UPDATE_DELAYED) callback took 33.03ms\n    19:17:00.583 [INFO:93] [DESTROYING] EV_BAG_UPDATE\n    19:17:00.403 [WARN:163] Delay callback (mailInboxScan) took 36.12ms\n    19:17:00.391 [INFO:93] [MAILING_INBOX] EV_MAIL_DATA_UPDATED\n    19:16:59.993 [INFO:118] [MAILING_INBOX] ST_SHOWN -> ST_OPENING_START\n    19:16:59.993 [INFO:93] [MAILING_INBOX] EV_BUTTON_CLICKED\n    19:16:59.175 [WARN:215] Script handler (OnUpdate) for frame (inbox) took 88.60ms\n    19:16:59.169 [INFO:118] [MAILING_INBOX] ST_HIDDEN -> ST_SHOWN\n    19:16:59.169 [INFO:93] [MAILING_INBOX] EV_FRAME_SHOW\n    19:16:59.081 [WARN:215] Script handler (OnClick) for frame (button) took 122.83ms\n    19:16:58.992 [INFO:93] [MY_AUCTIONS] EV_DATA_UPDATED\n    19:16:58.988 [WARN:215] Script handler (OnHide) for frame (groups) took 28.25ms\n    19:16:58.988 [INFO:118] [MAILING_GROUPS] ST_SHOWN -> ST_HIDDEN\n    19:16:58.988 [INFO:93] [MAILING_GROUPS] EV_FRAME_HIDE\n    19:16:57.261 [WARN:163] Delay callback (mailInboxScan) took 23.44ms\n    19:16:57.226 [WARN:163] Delay callback (mailInboxScan) took 35.79ms\n    19:16:57.018 [WARN:215] Script handler (OnUpdate) for frame (groups) took 57.07ms\n    19:16:57.018 [INFO:118] [MAILING_GROUPS] ST_HIDDEN -> ST_SHOWN\n    19:16:57.018 [INFO:93] [MAILING_GROUPS] EV_FRAME_SHOW\n    19:16:56.936 [WARN:40] Event (MAIL_SHOW) callback took 78.64ms\n    19:16:56.857 [INFO:118] [MAILING_UI] ST_CLOSED -> ST_FRAME_OPEN\n    19:16:56.857 [INFO:93] [MAILING_UI] EV_MAIL_SHOW\n    19:16:51.506 [WARN:215] Script handler (OnClick) for frame (closeBtn) took 39.29ms\n    19:16:51.506 [INFO:118] [SNIPER] ST_INIT -> ST_INIT\n    19:16:51.506 [INFO:93] [SNIPER] EV_AUCTION_HOUSE_CLOSED\n    19:16:51.505 [INFO:118] [SHOPPING] ST_INIT -> ST_INIT\n    19:16:51.505 [INFO:93] [SHOPPING] EV_AUCTION_HOUSE_CLOSED\n    19:16:51.505 [INFO:118] [AUCTIONING] ST_INIT -> ST_INIT\n    19:16:51.504 [INFO:93] [AUCTIONING] EV_AUCTION_HOUSE_CLOSED\n    19:16:51.503 [INFO:118] [SNIPER] ST_INIT -> ST_INIT\n    19:16:51.503 [INFO:93] [SNIPER] EV_AUCTION_HOUSE_CLOSED\n    19:16:51.503 [INFO:118] [SHOPPING] ST_INIT -> ST_INIT\n    19:16:51.503 [INFO:93] [SHOPPING] EV_AUCTION_HOUSE_CLOSED\n    19:16:51.503 [INFO:118] [AUCTIONING] ST_INIT -> ST_INIT\n    19:16:51.502 [INFO:93] [AUCTIONING] EV_AUCTION_HOUSE_CLOSED\n    19:16:51.497 [WARN:215] Script handler (OnHide) for frame (myAuctions) took 29.79ms\n    19:16:51.497 [INFO:118] [MY_AUCTIONS] ST_SHOWN -> ST_HIDDEN\n    19:16:51.496 [INFO:93] [MY_AUCTIONS] EV_FRAME_HIDDEN\n    19:16:49.831 [WARN:163] Delay callback (AUCTION_OWNED_LIST_SCAN) took 58.71ms\n    19:16:49.831 [INFO:190] Scanned auctions (left=0)\n    19:16:49.814 [INFO:118] [MY_AUCTIONS] ST_SHOWN -> ST_SHOWN\n    19:16:49.814 [INFO:93] [MY_AUCTIONS] EV_DATA_UPDATED\n    19:16:49.793 [INFO:86] [MY_AUCTIONS] EV_SELECTION_CHANGED (ignored - handling event)\n    19:16:49.790 [INFO:118] [MY_AUCTIONS] ST_SHOWN -> ST_SHOWN\n    19:16:49.790 [INFO:93] [MY_AUCTIONS] EV_DATA_UPDATED\n    19:16:49.531 [INFO:124] Confirmed (hash=6064323)\n    19:16:49.531 [INFO:93] [SNIPER] EV_MSG\n    19:16:49.531 [INFO:93] [SHOPPING] EV_MSG\n    19:16:49.531 [INFO:93] [AUCTIONING] EV_AUCTION_CANCEL_CONFIRM\n    19:16:49.248 [INFO:86] [MY_AUCTIONS] EV_SELECTION_CHANGED (ignored - handling event)\n    19:16:49.244 [INFO:118] [MY_AUCTIONS] ST_CANCELING -> ST_SHOWN\n    19:16:49.241 [INFO:86] [MY_AUCTIONS] EV_DATA_UPDATED (ignored - handling event)\n    19:16:49.237 [INFO:75] Canceling (index=86, hash=6064323)\n    19:16:49.223 [INFO:118] [MY_AUCTIONS] ST_SHOWN -> ST_CANCELING\n    19:16:49.223 [INFO:93] [MY_AUCTIONS] EV_CANCEL_CLICKED\n    19:16:47.936 [WARN:163] Delay callback (AUCTION_OWNED_LIST_SCAN) took 61.03ms\n    19:16:47.936 [INFO:190] Scanned auctions (left=0)\n    19:16:47.918 [INFO:118] [MY_AUCTIONS] ST_SHOWN -> ST_SHOWN\n    19:16:47.917 [INFO:93] [MY_AUCTIONS] EV_DATA_UPDATED\n    19:16:47.897 [INFO:86] [MY_AUCTIONS] EV_SELECTION_CHANGED (ignored - handling event)\n    19:16:47.894 [INFO:118] [MY_AUCTIONS] ST_SHOWN -> ST_SHOWN\n    19:16:47.894 [INFO:93] [MY_AUCTIONS] EV_DATA_UPDATED\n    19:16:47.642 [INFO:124] Confirmed (hash=6064323)\n    19:16:47.642 [INFO:93] [SNIPER] EV_MSG\n    19:16:47.642 [INFO:93] [SHOPPING] EV_MSG\n    19:16:47.642 [INFO:93] [AUCTIONING] EV_AUCTION_CANCEL_CONFIRM\nAddons:\n    AchievementsReminder () [Not Loaded]\n    AngryWorldQuests () [Not Loaded]\n    AskMrRobot (62) [Not Loaded]\n    BaudManifest (2.41)\n    FactionAddict (1.49) [Not Loaded]\n    GTFO (4.46.1) [Not Loaded]\n    HandyNotes (v1.5.2) [Not Loaded]\n    HandyNotes_Argus (0.20.0) [Not Loaded]\n    HandyNotes_DraenorTreasures (1.21) [Not Loaded]\n    HandyNotes_LegionRaresTreasures (1.1) [Not Loaded]\n    LiteMount (8.0.3)\n    mOnArs_WardrobeHelper (1.18.2) [Not Loaded]\n    NPCScan (8.0.1.2) [Not Loaded]\n    OPie (Vanilla 5)\n    Pawn (2.2.22) [Not Loaded]\n    RaidAchieveFilter (2.0.1) [Not Loaded]\n    RaidAchievement () [Not Loaded]\n    SavedInstances (8.0.3) [Not Loaded]\n    Skada (1.7.3) [Not Loaded]\n    TeleportCloak (v2.4) [Not Loaded]\n    WeakAuras (2.6.5) [Not Loaded]\n    TSM (v4.0.1)\n    TSM_AppHelper (v4.0)\n    Tukui_17_Layout (1.02)\n    Tukui_Config ()\n    Tukui (18.10)\n    DBM-Core (8.0.1) [Not Loaded]\",\"Steps leading up to the error:\n1) List\n2) Steps\n3) Here\",1532906327]", -- [1]
+		},
+		["updateTime"] = 1532906327,
+	},
 	["shoppingMaxPrices"] = {
 		["Default"] = {
-			["Craft enchants`x1"] = "[[128535,25114190],[128534,25656540],[128533,24251390]]",
-			["Craft enchants`x2`Relic"] = "[[128536,28750000],[136688,36964098],[136689,25941308],[136691,25941308],[134125,60718334],[136687,36964098]]",
-			["Craft enchants`x2"] = "[[138791,11691744],[138793,4780565],[138789,44309584],[138792,17671942],[138787,38607269],[138795,23986709],[138790,5808969],[138794,7723801]]",
-			["Craft enchants`x2`BOS"] = "[[128550,22400839],[128549,22400839],[128548,23600839]]",
-			["Low level enchant mats`Tome mats"] = "[[52329,1180592],[113588,1585896],[52326,1985332],[113262,8940],[21884,12602076],[14344,46688],[52722,1198454],[34052,389946],[39354,170540],[37705,32774],[115504,165074],[52328,1440048],[35622,954582],[7080,4369914],[76139,2235342],[76138,2101968],[76131,2174476],[22574,699054],[76142,2253798],[52721,875886],[76140,952720],[7078,22228],[22449,111826],[22457,3980000],[113264,10666],[22450,185252],[74248,238710],[52325,2981752],[22576,224150],[34053,59128],[76141,398944],[12808,327300],[34057,412348],[118472,1057032],[52327,198722],[34055,75940]]",
-			["updateTime"] = 1531452354,
-			["Craft enchants`x5"] = "[[128552,24600839],[128560,360839],[128544,11200839],[128558,360839],[128561,360839],[128559,360839],[128554,720839],[128541,11200839],[141909,24600839],[128551,24600839],[128543,11200839],[141910,24600839],[128553,25320839],[128542,11200839],[141908,25320839]]",
+			["Darkmoon Artifact"] = "[[71637,2933142],[71635,3216477],[71951,3425980],[71638,5259135],[71715,2215984],[71636,4406375],[71716,3060601],[71953,1941844],[71952,5227649]]",
+			["Enchant mats"] = "[[124442,1795104],[124441,524068],[124440,131187]]",
+			["Craft enchants`x5"] = "[[128552,24600832],[128560,360832],[128544,11200832],[128558,360832],[128561,360832],[128559,360832],[128554,720832],[128541,11200832],[141909,24600832],[128551,24600832],[141910,24600832],[128553,25320832],[128542,11200832],[141908,25320832],[128543,11200832]]",
+			["Low level enchant mats`Tome mats"] = "[[52329,1140970],[113588,3871694],[52326,1953320],[113262,6092],[21884,24828698],[14344,73522],[52722,478702],[34052,275704],[39354,612972],[37705,1825226],[115504,296756],[52328,852036],[35622,3262234],[7080,3638662],[76139,2132750],[76138,2078240],[76131,1965068],[22574,3489168],[52327,186114],[118472,1088878],[52721,1712624],[76140,506084],[12808,73974],[22449,523302],[34053,50102],[113264,4380],[74248,253976],[22576,966664],[52325,1859868],[22450,155818],[22457,4253242],[76141,226734],[7078,84716],[34057,253556],[76142,2007988],[34055,79760]]",
+			["Craft enchants`x1"] = "[[128535,23944290],[128536,43750000],[128534,26091690],[128533,23633250]]",
+			["Enchant mats`Non-DE"] = "[[38682,832],[124116,199429],[124106,414169],[124461,1214879],[124444,168325]]",
+			["Craft enchants`x2`BOS"] = "[[128550,28400832],[128549,28400832],[128548,29600832]]",
+			["updateTime"] = 1533078008,
+			["Craft enchants`x2"] = "[[138791,6185654],[138793,4135457],[138789,50220459],[138792,11381975],[138787,38264344],[138795,38042194],[138790,4962594],[138794,7321185]]",
+			["Craft enchants`x2`Relic"] = "[[136689,50028338],[136691,50028338]]",
 		},
 	},
 	["wowToken"] = {
 		["US"] = {
-			["data"] = 209393,
-			["key"] = 16564160,
-			["updateTime"] = 1531445646,
+			["data"] = 196441,
+			["key"] = 15075494,
+			["updateTime"] = 1532835892,
 		},
 		["PTR"] = {
 			["data"] = 46899,
@@ -33,95 +42,128 @@ TradeSkillMaster_AppHelperDB = {
 	},
 	["analytics"] = {
 		["data"] = {
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1530494756]", -- [1]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1530494964]", -- [2]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1530495089]", -- [3]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1530513438]", -- [4]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1530515777]", -- [5]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1530516112]", -- [6]
-			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.43\",\"\",1530517078]", -- [7]
-			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.43\",\"\",1530517079]", -- [8]
-			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.43\",\"\",1530517083]", -- [9]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1530517092]", -- [10]
-			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.43\",\"\",1530524672]", -- [11]
-			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.43\",\"\",1530524675]", -- [12]
-			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.43\",\"\",1530524681]", -- [13]
-			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.43\",\"\",1530524683]", -- [14]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1530586413]", -- [15]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1530586702]", -- [16]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1530586769]", -- [17]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1530620226]", -- [18]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1530659034]", -- [19]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1530659217]", -- [20]
-			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.43\",\"\",1530666872]", -- [21]
-			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.43\",\"\",1530666873]", -- [22]
-			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.43\",\"\",1530666876]", -- [23]
-			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.43\",\"\",1530666877]", -- [24]
-			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.43\",\"\",1530670627]", -- [25]
-			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.43\",\"\",1530670628]", -- [26]
-			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.43\",\"\",1530670631]", -- [27]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1530671499]", -- [28]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1530671523]", -- [29]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1530671642]", -- [30]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1530753236]", -- [31]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1530753534]", -- [32]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1530753647]", -- [33]
-			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.43\",\"\",1530753709]", -- [34]
-			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.43\",\"\",1530753711]", -- [35]
-			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.43\",\"\",1530753714]", -- [36]
-			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.43\",\"\",1530753715]", -- [37]
-			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.43\",\"\",1530753716]", -- [38]
-			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...AddOns\\TradeSkillMaster_Mailing\\Modules\\AutoMail.lua:287: bad argument #2 to 'band' (number expected, got nil)\",1530753775]", -- [39]
-			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...rface\\AddOns\\TradeSkillMaster\\Private\\TooltipLib.lua:95: Usage: GameTooltip:SetHyperlink(link)\",1530753889]", -- [40]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1530763413]", -- [41]
-			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.43\",\"\",1530766445]", -- [42]
-			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.43\",\"\",1530766448]", -- [43]
-			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.43\",\"\",1530766449]", -- [44]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1530836669]", -- [45]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1530836842]", -- [46]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1530836943]", -- [47]
-			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.43\",\"\",1530841070]", -- [48]
-			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.43\",\"\",1530841071]", -- [49]
-			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.43\",\"\",1530841073]", -- [50]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1530841600]", -- [51]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1530842916]", -- [52]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1530927547]", -- [53]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1530927766]", -- [54]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1530927888]", -- [55]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1530935500]", -- [56]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1531008651]", -- [57]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1531008848]", -- [58]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1531008918]", -- [59]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1531062524]", -- [60]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1531062705]", -- [61]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1531062874]", -- [62]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1531142237]", -- [63]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1531143187]", -- [64]
-			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.43\",\"\",1531175704]", -- [65]
-			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.43\",\"\",1531175706]", -- [66]
-			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.43\",\"\",1531175711]", -- [67]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1531182101]", -- [68]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1531272069]", -- [69]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1531272181]", -- [70]
-			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.43\",\"\",1531275821]", -- [71]
-			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.43\",\"\",1531275822]", -- [72]
-			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.43\",\"\",1531275825]", -- [73]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1531284143]", -- [74]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1531284384]", -- [75]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1531353115]", -- [76]
-			"[\"Auctioning\",\"CANCEL_GROUP_START\",\"v3.0.16\",\"\",1531353198]", -- [77]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1531353284]", -- [78]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1531353323]", -- [79]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1531353334]", -- [80]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1531364264]", -- [81]
-			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1531433523]", -- [82]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1531433711]", -- [83]
-			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.5\",\"\",1531433853]", -- [84]
-			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1531445647]", -- [85]
-			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.43\",\"\",1531448707]", -- [86]
-			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.43\",\"\",1531448714]", -- [87]
-			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.43\",\"\",1531448715]", -- [88]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...ns\\TradeSkillMaster\\Libs\\AceComm-3.0\\AceComm-3.0.lua:69: attempt to call global 'RegisterAddonMessagePrefix' (a nil value)\",1531886407]", -- [1]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...ns\\TradeSkillMaster\\Libs\\AceComm-3.0\\AceComm-3.0.lua:69: attempt to call global 'RegisterAddonMessagePrefix' (a nil value)\",1531886465]", -- [2]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...ns\\TradeSkillMaster\\Libs\\AceComm-3.0\\AceComm-3.0.lua:69: attempt to call global 'RegisterAddonMessagePrefix' (a nil value)\",1531886604]", -- [3]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.16\",\"\",1531886663]", -- [4]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1531886813]", -- [5]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.16\",\"\",1531886895]", -- [6]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:480: C stack overflow\",1531887204]", -- [7]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:480: C stack overflow\",1531887207]", -- [8]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:480: C stack overflow\",1531887217]", -- [9]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:480: C stack overflow\",1531887218]", -- [10]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:480: C stack overflow\",1531887308]", -- [11]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:480: C stack overflow\",1531887686]", -- [12]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:480: C stack overflow\",1531888677]", -- [13]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:480: C stack overflow\",1531888690]", -- [14]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:480: C stack overflow\",1531888734]", -- [15]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:480: C stack overflow\",1531888738]", -- [16]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:480: C stack overflow\",1531888743]", -- [17]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:480: C stack overflow\",1531888788]", -- [18]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:480: C stack overflow\",1531888819]", -- [19]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:480: C stack overflow\",1531888821]", -- [20]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:480: C stack overflow\",1531888878]", -- [21]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:480: C stack overflow\",1531888881]", -- [22]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:480: C stack overflow\",1531888958]", -- [23]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v3.6.43\",\"...erface\\AddOns\\TradeSkillMaster\\CoreAPI\\Threading.lua:480: C stack overflow\",1531888974]", -- [24]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.17\",\"\",1531992968]", -- [25]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.17\",\"\",1531993148]", -- [26]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.8\",\"\",1531993402]", -- [27]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.8\",\"\",1531996338]", -- [28]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.45\",\"\",1532044990]", -- [29]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532044991]", -- [30]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532044994]", -- [31]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532044996]", -- [32]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532044996]", -- [33]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532044998]", -- [34]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532044999]", -- [35]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.8\",\"\",1532047141]", -- [36]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.17\",\"\",1532088945]", -- [37]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.8\",\"\",1532094206]", -- [38]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.17\",\"\",1532094324]", -- [39]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.45\",\"\",1532094409]", -- [40]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532094412]", -- [41]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532094417]", -- [42]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.45\",\"\",1532094420]", -- [43]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.45\",\"\",1532094421]", -- [44]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.45\",\"\",1532094423]", -- [45]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.45\",\"\",1532094481]", -- [46]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532094482]", -- [47]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532094493]", -- [48]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532094498]", -- [49]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532094500]", -- [50]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532094502]", -- [51]
+			"[\"TradeSkillMaster\",\"GROUP_VIEW_OPERATION\",\"v3.6.45\",\"\",1532094505]", -- [52]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.45\",\"\",1532094522]", -- [53]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.45\",\"\",1532094581]", -- [54]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.45\",\"\",1532094743]", -- [55]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.45\",\"\",1532095193]", -- [56]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532095197]", -- [57]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532095203]", -- [58]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532095204]", -- [59]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532095205]", -- [60]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532095252]", -- [61]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532095253]", -- [62]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532095254]", -- [63]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532095254]", -- [64]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.45\",\"\",1532103876]", -- [65]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532103877]", -- [66]
+			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.45\",\"\",1532103880]", -- [67]
+			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.45\",\"\",1532103882]", -- [68]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.17\",\"\",1532108622]", -- [69]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.9\",\"\",1532109012]", -- [70]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.9\",\"\",1532109083]", -- [71]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.17\",\"\",1532109743]", -- [72]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.45\",\"\",1532116418]", -- [73]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532116419]", -- [74]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.17\",\"\",1532124731]", -- [75]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.17\",\"\",1532131542]", -- [76]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.17\",\"\",1532172205]", -- [77]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.17\",\"\",1532232450]", -- [78]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.17\",\"\",1532232922]", -- [79]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.45\",\"\",1532319111]", -- [80]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532319113]", -- [81]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532319115]", -- [82]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.17\",\"\",1532385201]", -- [83]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.17\",\"\",1532386093]", -- [84]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.9\",\"\",1532386163]", -- [85]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.9\",\"\",1532386205]", -- [86]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.17\",\"\",1532392744]", -- [87]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.17\",\"\",1532486158]", -- [88]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.17\",\"\",1532486292]", -- [89]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.9\",\"\",1532486418]", -- [90]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.9\",\"\",1532486452]", -- [91]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.45\",\"\",1532486596]", -- [92]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532486598]", -- [93]
+			"[\"TradeSkillMaster\",\"GROUP_REMOVE_ITEMS\",\"v3.6.45\",\"\",1532486635]", -- [94]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532486637]", -- [95]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.45\",\"\",1532486686]", -- [96]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532486687]", -- [97]
+			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.45\",\"\",1532486692]", -- [98]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.17\",\"\",1532487033]", -- [99]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.17\",\"\",1532554184]", -- [100]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.17\",\"\",1532554579]", -- [101]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.9\",\"\",1532555068]", -- [102]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.9\",\"\",1532555073]", -- [103]
+			"[\"TradeSkillMaster\",\"GROUP_OPTIONS_OPEN\",\"v3.6.45\",\"\",1532568690]", -- [104]
+			"[\"TradeSkillMaster\",\"GROUP_SELECTED\",\"v3.6.45\",\"\",1532568692]", -- [105]
+			"[\"TradeSkillMaster\",\"GROUP_ADD_ITEMS\",\"v3.6.45\",\"\",1532568695]", -- [106]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.17\",\"\",1532601818]", -- [107]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.17\",\"\",1532601969]", -- [108]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.9\",\"\",1532602213]", -- [109]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.17\",\"\",1532646780]", -- [110]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.17\",\"\",1532688442]", -- [111]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.9\",\"\",1532689835]", -- [112]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.17\",\"\",1532751176]", -- [113]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.17\",\"\",1532751195]", -- [114]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.17\",\"\",1532751370]", -- [115]
+			"[\"Auctioning\",\"CANCEL_GROUP_START\",\"v3.0.17\",\"\",1532835587]", -- [116]
+			"[\"Auctioning\",\"CANCEL_ALL_START\",\"v3.0.17\",\"\",1532835615]", -- [117]
+			"[\"Auctioning\",\"POST_GROUP_START\",\"v3.0.17\",\"\",1532835781]", -- [118]
+			"[\"Crafting\",\"GATHERING_STARTED\",\"v3.2.9\",\"\",1532835890]", -- [119]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v4.0.1\",\"...Ons\\TradeSkillMaster\\Core\\UI\\CraftingUI\\Crafting.lua:521: attempt to index a nil value\",1532906325]", -- [120]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v4.0.1\",\"...Ons\\TradeSkillMaster\\Core\\UI\\CraftingUI\\Crafting.lua:527: attempt to index a nil value\",1532906328]", -- [121]
 		},
-		["updateTime"] = 1531448715,
+		["updateTime"] = 1532906328,
 	},
 }

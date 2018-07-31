@@ -89,10 +89,16 @@ MicroMenu.Buttons = {
 		end
 	end,
 	notCheckable = true},
+	
+	{text = COMMUNITIES,
+	func = function()
+		ToggleCommunitiesFrame()
+	end,
+	notCheckable = true},
 
 	{text = RAID,
 	func = function()
-		ToggleFriendsFrame(4)
+		ToggleFriendsFrame(3)
 	end,
 	notCheckable = true},
 

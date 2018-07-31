@@ -14,16 +14,18 @@
 if LibDebug then LibDebug() end
 --@end-debug@]===]
 
+local TOP_LEVEL_MAP_ID = 946
+
 _G.LM_Location = LM_CreateAutoEventFrame("Frame", "LM_Location")
 LM_Location:RegisterEvent("PLAYER_LOGIN")
 
 function LM_Location:Initialize()
-    self.continent = -1
-    self.areaID = -1
+    self.uiMapID = -1
+    self.uiMapPath = { }
+    self.uiMapPathIDs = { }
+
     self.instanceID = -1
-    self.zoneText = -1
-    self.minimapZoneText = ""
-    self.subZoneText = ""
+    self.zoneText = nil
 
     self:UpdateSwimTimes()
 
@@ -49,32 +51,28 @@ function LM_Location:IsFloating()
            ( GetTime() - (self.lastDryTime or 0 ) < 1.0)
 end
 
--- I used to be nice. I swear I tried to be nice and only passively listen to
--- the map events, but then craptastic addons like Archy decided to constantly
--- futz with the map on a timer and screw it for everyone. Now it's battle to
--- the death. :(
-
 function LM_Location:Update()
+    local map = C_Map.GetBestMapForUnit("player")
 
-    local origID = GetCurrentMapAreaID()
+    -- Right after zoning this can be unknown.
+    if not map then return end
 
-    -- I lied: I'm still nice.
+    local info = C_Map.GetMapInfo(map)
 
-    local WMUListeners = { GetFramesRegisteredForEvent("WORLD_MAP_UPDATE") }
-    FrameApply(WMUListeners, "UnregisterEvent", "WORLD_MAP_UPDATE")
+    self.uiMapID  = map
+    self.uiMapName = info.name
 
-    SetMapToCurrentZone()
+    wipe(self.uiMapPath)
+    wipe(self.uiMapPathIDs)
+    while info do
+        tinsert(self.uiMapPath, info.mapID)
+        self.uiMapPathIDs[info.mapID] = true
+        info = C_Map.GetMapInfo(info.parentMapID)
+    end
 
-    self.continent = GetCurrentMapContinent()
-    self.areaID = GetCurrentMapAreaID()
-    self.realZoneText = GetRealZoneText()
     self.zoneText = GetZoneText()
     self.subZoneText = GetSubZoneText()
-    self.minimapZoneText = GetMinimapZoneText()
     self.instanceID = select(8, GetInstanceInfo())
-
-    SetMapByID(origID)
-    FrameApply(WMUListeners, "RegisterEvent", "WORLD_MAP_UPDATE")
 end
 
 function LM_Location:PLAYER_LOGIN()
@@ -106,9 +104,13 @@ function LM_Location:ZONE_CHANGED_NEW_AREA()
     self:Update()
 end
 
-local FlyableNoContinent = {
-    [1177] = true,      -- Deaths of Chromie scenario
-}
+function LM_Location:MapInPath(...)
+    for i = 1, select('#', ...) do
+        local id = select(i, ...)
+        if self.uiMapPathIDs[id] then return true end
+    end
+    return false
+end
 
 -- apprenticeRiding = IsSpellKnown(33388)
 -- expertRiding = IsSpellKnown(34090)
@@ -121,6 +123,20 @@ function LM_Location:KnowsFlyingSkill()
     return IsSpellKnown(90265) or IsSpellKnown(34091) or IsSpellKnown(34090)
 end
 
+local InstanceNotFlyable = {
+    [754] = true,           -- Throne of the Four Winds
+    [1107] = true,          -- Dreadscar Rift (Warlock)
+    [1191] = true,          -- Ashran PVP Area
+    [1265] = true,          -- Tanaan Jungle Intro
+    [1463] = true,          -- Helheim Exterior Area
+    [1469] = true,          -- Heart of Azeroth (Shaman)
+    [1479] = true,          -- Skyhold (Warrior)
+    [1500] = true,          -- Broken Shore DH Scenario
+    [1514] = true,          -- Wandering Isle (Monk)
+    [1519] = true,          -- Fel Hammer (DH)
+    [1760] = true,          -- Ruins of Lordaeron BfA opening
+}
+
 -- Can't fly if you haven't learned a flying skill
 -- Draenor and Lost Isles need achievement unlocks to be able to fly.
 function LM_Location:CanFly()
@@ -130,24 +146,28 @@ function LM_Location:CanFly()
         return false
     end
 
-    -- I'm going to assume, across the board, that you can't fly in
-    -- "no continent" / -1 and fix it up later if it turns out you can.
-    if self.continent == -1 and not FlyableNoContinent[self.areaID] then
+    -- XXX FIXME XXX 
+    if InstanceNotFlyable[self.instanceID] then
         return false
     end
 
     -- Draenor Pathfinder
-    if self.continent == 7 and not IsSpellKnown(191645) then
-        return false
+    if self:MapInPath(572) then
+        if not IsSpellKnown(191645) then return false end
     end
 
     -- Broken Isles Pathfinder, Part 2
-    if self.continent == 8 and not IsSpellKnown(233368) then
-        return false
+    if self:MapInPath(619) then
+        if not IsSpellKnown(233368) then return false end
     end
 
     -- Argus is non-flyable, but some parts of it are flagged wrongly
-    if self.continent == 9 then
+    if self:MapInPath(905) then
+        return false
+    end
+
+    -- Zan'dalar (875) and Kul'tiras (876)
+    if self:MapInPath(875, 876) then
         return false
     end
 
@@ -159,13 +179,54 @@ function LM_Location:CantBreathe()
     return (name == "BREATH" and rate < 0)
 end
 
-function LM_Location:Dump()
-    LM_Print("--- Location Dump ---")
-    LM_Print("continent: " .. self.continent)
-    LM_Print("areaID: " .. self.areaID)
-    LM_Print("instanceID: " .. self.instanceID)
-    LM_Print("zoneText: " .. self.zoneText)
-    LM_Print("subZoneText: " .. self.subZoneText)
-    LM_Print("minimapZoneText: " .. self.minimapZoneText)
-    LM_Print("IsFlyableArea(): " .. (IsFlyableArea() and "true" or "false"))
+function LM_Location:GetLocation()
+    local path = { }
+    for _, mapID in ipairs(self.uiMapPath) do
+        tinsert(path, format("%s (%d)", C_Map.GetMapInfo(mapID).name, mapID))
+    end
+
+    return {
+        format("map: %s (%d)",  C_Map.GetMapInfo(self.uiMapID).name, self.uiMapID),
+        "mapPath: " .. table.concat(path, " -> "),
+        "instance: " .. self.instanceID,
+        "zoneText: " .. GetZoneText(),
+        "subZoneText: " .. GetSubZoneText(),
+        "IsFlyableArea(): " .. (IsFlyableArea() and "true" or "false"),
+    }
+end
+
+
+function LM_Location:GetMaps(str)
+    local searchStr = string.lower(str or "")
+
+    local allMaps = C_Map.GetMapChildrenInfo(TOP_LEVEL_MAP_ID, nil, true)
+
+    sort(allMaps, function (a,b) return a.mapID < b.mapID end)
+
+    local lines = {}
+
+    for _, info in ipairs(allMaps) do
+        local searchName = string.lower(info.name)
+        if info.mapID == tonumber(str) or searchName:find(searchStr) then
+            tinsert(lines, format("% 4d : %s (parent %d)", info.mapID, info.name, info.parentMapID))
+        end
+    end
+    return lines
+end
+
+function LM_Location:GetContinents(str)
+    local searchStr = string.lower(str or "")
+
+    local allContinents = C_Map.GetMapChildrenInfo(TOP_LEVEL_MAP_ID, Enum.UIMapType.Continent, true)
+    sort(allContinents, function (a,b) return a.mapID < b.mapID end)
+
+    local lines = {}
+
+    for _, info in ipairs(allContinents) do
+        local searchName = string.lower(info.name)
+        if info.mapID == tonumber(str) or searchName:find(searchStr) then
+            tinsert(lines, format("% 4d : %s", info.mapID, info.name))
+        end
+    end
+    return lines
 end

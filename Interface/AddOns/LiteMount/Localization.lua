@@ -26,8 +26,8 @@ local locale = GetLocale()
 L.CUSTOM1               = CUSTOM .. " 1"
 L.CUSTOM2               = CUSTOM .. " 2"
 L.FAVORITES             = FAVORITES
-L.NAGRAND               = GetMapNameByID(477)
-L.VASHJIR               = GetMapNameByID(613)
+L.NAGRAND               = C_Map.GetMapInfo(550).name
+L.VASHJIR               = C_Map.GetMapInfo(203).name
 
 -- enUS / enGB / Default -------------------------------------------------------
 
@@ -44,8 +44,12 @@ L.LM_DELETE_FLAG        = "Delete Flag"
 L.LM_DELETE_PROFILE     = "Delete Profile"
 L.LM_DISABLE_NEW_MOUNTS = "Automatically disable newly added mounts."
 L.LM_DISABLING_MOUNT    = "Disabling active mount: %s"
+L.LM_DEBUGGING_DISABLED = "Debugging disabled."
+L.LM_DEBUGGING_ENABLED  = "Debugging enabled."
 L.LM_ENABLE_DEBUGGING   = "Enable debugging messages."
 L.LM_ENABLING_MOUNT     = "Enabling active mount: %s"
+L.LM_ERR_BAD_ACTION     = "Bad action '%s' in action list."
+L.LM_ERR_BAD_CONDITION  = "Bad condition '%s' in action list."
 L.LM_FLAGS              = "Flags"
 L.LM_HELP_TRANSLATE     = "Help translate LiteMount into your language. Thank you."
 L.LM_MACRO_EXP          = "This macro will be run if LiteMount is unable to find a usable mount. This might be because you are indoors, or are moving and don't know any instant-cast mounts."
@@ -58,6 +62,7 @@ L.LM_RENAME_FLAG        = "Rename Flag"
 L.LM_RESET_PROFILE      = "Reset Profile"
 L.LM_SETTINGS_TAGLINE   = "Simple and reliable random mount summoning."
 L.LM_TRANSLATORS        = "Translators"
+L.LM_WARN_REPLACE_COND  = "The [%s] action list condition has been replaced by [%s] due to Blizzard changes."
 L.RUN                   = "Run"
 L.SWIM                  = "Swim"
 L.WALK                  = "Walk"

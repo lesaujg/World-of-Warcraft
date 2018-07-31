@@ -64,12 +64,12 @@
 --			function FactionAddict_OnLoad(self)
 --			
 --
---  (c) 2011-2017 gmz323(Greg)
+--  (c) 2011-2018 gmz323(Greg)
 -----------------------------------------------------------------------------
 
 
 -- Constants
-local FACTION_ADDICT_VERSION = "1.47"
+local FACTION_ADDICT_VERSION = "1.50"
 local FACTION_ADDICT_LOGGING_VERSION = 1
 local FACTION_ADDICT_LOGGING_DAYS = 20
 local GUILD_FACTION_ID = 1168
@@ -112,6 +112,7 @@ local L = FactionAddictLocalization
 -- config table defaults - saved per character
 local FactionAddictConfigDefaults = 
 	{
+        CB_STANDING_PARAGON = true,
 		CB_STANDING_EXALTED = true,
 		CB_STANDING_REVERED = true,
 		CB_STANDING_HONORED = true,
@@ -128,6 +129,7 @@ local FactionAddictConfigDefaults =
 		CB_CATEGORY_MOP = true,
 		CB_CATEGORY_WOD = true,
         CB_CATEGORY_LG = true,
+        CB_CATEGORY_BFA = true,
 		RB_ORDERBY = 1,
 		CB_FILTER_SHOW_AO = true,
 		CB_FILTER_SHOW_HO = true,
@@ -137,6 +139,8 @@ local FactionAddictConfigDefaults =
 	
 local faGender = UnitSex("player")
 local ConfigMenuInfo = {
+        -- Paragon (Exalted+)
+        { ["text"] = L.MISC_PARAGON_TXT .. " (".. GetText("FACTION_STANDING_LABEL".."8", faGender) .. "+)",   ["arg1"] = "CB_STANDING_PARAGON",  },
 		{ ["text"] = GetText("FACTION_STANDING_LABEL".."8", faGender) .. " "..L.STANDING_FILTER_LABEL_8_TXT,  ["arg1"] = "CB_STANDING_EXALTED",  },
 		{ ["text"] = GetText("FACTION_STANDING_LABEL".."7", faGender) .. " "..L.STANDING_FILTER_LABEL_7_TXT,  ["arg1"] = "CB_STANDING_REVERED",  },
 		{ ["text"] = GetText("FACTION_STANDING_LABEL".."6", faGender) .. " "..L.STANDING_FILTER_LABEL_6_TXT,  ["arg1"] = "CB_STANDING_HONORED",  },
@@ -970,7 +974,7 @@ local function fa_PopulateDisplayTable()
 			displayThisRow = true
 		elseif (standingID == 1 and FactionAddictConfig.CB_STANDING_HATED == true) then
 			displayThisRow = true
-        elseif (standingID == 9) then
+        elseif (standingID == 9 and FactionAddictConfig.CB_STANDING_PARAGON == true) then
             displayThisRow = true
 		else
 			displayThisRow = false
@@ -991,6 +995,8 @@ local function fa_PopulateDisplayTable()
 			elseif (expansion == 5 and FactionAddictConfig.CB_CATEGORY_WOD == true) then
 				displayThisRow = true
             elseif (expansion == 6 and FactionAddictConfig.CB_CATEGORY_LG == true) then
+                displayThisRow = true
+            elseif (expansion == 7 and FactionAddictConfig.CB_CATEGORY_BFA == true) then
                 displayThisRow = true
 			else
 				displayThisRow = false
@@ -1177,6 +1183,8 @@ local function fa_GetDDConfigValue(param)
 	
 	if (param == "CB_STANDING_EXALTED") then
 		return(FactionAddictConfig.CB_STANDING_EXALTED)
+    elseif (param == "CB_STANDING_PARAGON") then
+        return(FactionAddictConfig.CB_STANDING_PARAGON)
 	elseif (param == "CB_STANDING_REVERED") then
 		return(FactionAddictConfig.CB_STANDING_REVERED)
 	elseif (param == "CB_STANDING_HONORED") then
@@ -1213,6 +1221,9 @@ local function fa_SetDDConfigValue(self, arg1, arg2, checked)
 	if (arg1 == "CB_STANDING_EXALTED") then
 		FactionAddictConfig.CB_STANDING_EXALTED = checked
 		faUpdateDisplayTable = true
+    elseif (arg1 == "CB_STANDING_PARAGON") then
+        FactionAddictConfig.CB_STANDING_PARAGON = checked
+        faUpdateDisplayTable = true
 	elseif (arg1 == "CB_STANDING_REVERED") then
 		FactionAddictConfig.CB_STANDING_REVERED = checked
 		faUpdateDisplayTable = true
@@ -1306,6 +1317,7 @@ function FactionAddict_AchText_OnEnter(self)
 		if (tempAchievementTooltipData[tableRow][4] ~= nil) then
 			displayString = displayString .. " [" .. tempAchievementTooltipData[tableRow][4] .. "]"
 		end
+		
 		-- Check if achievement completed
 		if (tempAchievementTooltipData[tableRow][1] == true) then
 			GameTooltip:AddLine(displayString, GREEN_FONT_COLOR.r, GREEN_FONT_COLOR.g, GREEN_FONT_COLOR.b, false)
@@ -1446,6 +1458,9 @@ function FactionAddict_ScrollBar_Update()
 				getglobal("FactionAddictEntry"..line).ExpansionIcon:Show()
             elseif (tempDisplayData[lineplusoffset][10] == 6) then -- LG
                 getglobal("FactionAddictEntry"..line).ExpansionIcon:SetTexCoord(0.0, 0.546875, 0.59375, 0.703125)
+                getglobal("FactionAddictEntry"..line).ExpansionIcon:Show()
+            elseif (tempDisplayData[lineplusoffset][10] == 7) then -- BfA
+                getglobal("FactionAddictEntry"..line).ExpansionIcon:SetTexCoord(0.0, 0.546875, 0.703125, 0.828125)
                 getglobal("FactionAddictEntry"..line).ExpansionIcon:Show()
 			else -- classic
 				getglobal("FactionAddictEntry"..line).ExpansionIcon:Hide()
@@ -1629,6 +1644,14 @@ function FactionAddict_SetConfigVariables(self)
         else
             FactionAddictConfig.CB_CATEGORY_LG = false
         end
+    elseif (configName == "CheckButton_BFA") then
+        faUpdateDisplayTable = true
+        if (self:GetChecked() == true) then
+            FactionAddictConfig.CB_CATEGORY_BFA = true
+        else
+            FactionAddictConfig.CB_CATEGORY_BFA = false
+        end
+
 	elseif (configName == "CheckButton_OrderPct") then
 		self:SetChecked(true)
 		CheckButton_OrderName:SetChecked(false)
@@ -1790,6 +1813,7 @@ function FactionAddict_Tab_OnClick(self)
 		CheckButton_MOP:SetChecked(FactionAddictConfig.CB_CATEGORY_MOP)
 		CheckButton_WOD:SetChecked(FactionAddictConfig.CB_CATEGORY_WOD)
         CheckButton_LG:SetChecked(FactionAddictConfig.CB_CATEGORY_LG)
+        CheckButton_BFA:SetChecked(FactionAddictConfig.CB_CATEGORY_BFA)
 		CheckButton_AO:SetChecked(FactionAddictConfig.CB_FILTER_SHOW_AO)
 		CheckButton_HO:SetChecked(FactionAddictConfig.CB_FILTER_SHOW_HO)
 		CheckButton_AUTOBAR:SetChecked(FactionAddictConfig.CB_OPTION_AUTOBAR)
@@ -2104,6 +2128,9 @@ function FactionAddict_OnEvent(self, event, ...)
 			if (FactionAddictConfig.CB_STANDING_EXALTED == nil) then
 				FactionAddictConfig.CB_STANDING_EXALTED = FactionAddictConfigDefaults.CB_STANDING_EXALTED
 			end
+            if (FactionAddictConfig.CB_STANDING_PARAGON == nil) then
+                FactionAddictConfig.CB_STANDING_PARAGON = FactionAddictConfigDefaults.CB_STANDING_PARAGON
+            end
 			if (FactionAddictConfig.CB_STANDING_REVERED == nil) then
 				FactionAddictConfig.CB_STANDING_REVERED = FactionAddictConfigDefaults.CB_STANDING_REVERED
 			end
@@ -2148,6 +2175,9 @@ function FactionAddict_OnEvent(self, event, ...)
 			end
             if (FactionAddictConfig.CB_CATEGORY_LG == nil) then
                 FactionAddictConfig.CB_CATEGORY_LG = FactionAddictConfigDefaults.CB_CATEGORY_LG
+            end
+            if (FactionAddictConfig.CB_CATEGORY_BFA == nil) then
+                FactionAddictConfig.CB_CATEGORY_BFA = FactionAddictConfigDefaults.CB_CATEGORY_BFA
             end
 			if (FactionAddictConfig.RB_ORDERBY == nil) then
 				FactionAddictConfig.RB_ORDERBY = FactionAddictConfigDefaults.RB_ORDERBY
@@ -2531,7 +2561,7 @@ function FactionAddict_ConfigMenu_OnLoad()
 	info.notCheckable = 1
 	UIDropDownMenu_AddButton(info, 1)
 	
-	for x = 1,9 do
+	for x = 1,10 do
 		info.text = ConfigMenuInfo[x].text
 		info.disabled = nil
 		info.isTitle = nil
@@ -2602,6 +2632,7 @@ function FactionAddict_OnLoad(self)
 	CheckButton_MOP.fs:SetText(L.TAB3_CONFIG_MOP)
 	CheckButton_WOD.fs:SetText(L.TAB3_CONFIG_WOD)
     CheckButton_LG.fs:SetText(L.TAB3_CONFIG_LG)
+    CheckButton_BFA.fs:SetText(L.TAB3_CONFIG_BFA)
 	CheckButton_OrderPct.fs:SetText(L.TAB3_CONFIG_ORDER_PCT)
 	CheckButton_OrderName.fs:SetText(L.TAB3_CONFIG_ORDER_NAME)
 	CheckButton_AO.fs:SetText(L.TAB3_CONFIG_ALLIANCE_ONLY)

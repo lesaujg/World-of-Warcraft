@@ -1,5 +1,5 @@
 local PA = _G.ProjectAzilroka
-if (PA.SLE or PA.NUI) then return end
+if (PA.SLE or PA.CUI) then return end
 
 local ES = PA:NewModule('EnhancedShadows', 'AceEvent-3.0')
 PA.ES, _G.EnhancedShadows = ES, ES
@@ -24,6 +24,7 @@ function ES:UpdateShadows()
 end
 
 function ES:RegisterShadow(shadow)
+	if not shadow then return end
 	if shadow.isRegistered then return end
 	ES.RegisteredShadows[shadow] = true
 	shadow.isRegistered = true
@@ -89,6 +90,9 @@ function ES:GetOptions()
 		},
 	}
 
+	Options.args.profiles = LibStub('AceDBOptions-3.0'):GetOptionsTable(PA.data)
+	Options.args.profiles.order = -2
+
 	PA.Options.args.EnhancedShadows = Options
 end
 
@@ -111,8 +115,8 @@ function ES:SetupProfile()
 end
 
 function ES:Initialize()
-	self:BuildProfile()
-	self:GetOptions()
+	ES:BuildProfile()
+	ES:GetOptions()
 
-	self:UpdateShadows()
+	ES:UpdateShadows()
 end

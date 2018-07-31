@@ -4,6 +4,9 @@ VER 3 000000000000001E "_Clear Target" "Ability_CheapShot"
 /petfollow
 /petpassive
 END
+VER 3 00000000000000A4 "Butrton" "INV_MISC_QUESTIONMARK"
+/click ExtraActionButton1a
+END
 VER 3 0000000000000099 "Fish" "INV_MISC_QUESTIONMARK"
 /equipset Fishing
 /use Fishing
@@ -14,6 +17,11 @@ VER 3 00000000000000A3 "HandCounter" "INV_MISC_QUESTIONMARK"
 END
 VER 3 00000000000000A0 "Obliterate" "1043741"
 /click EasyObliterate
+END
+VER 3 00000000000000A5 "qawds" "INV_MISC_QUESTIONMARK"
+#showtooltip Runed Band of the Kirin Tor
+/equip Runed Band of the Kirin Tor
+/castsequence Runed Band of the Kirin Tor
 END
 VER 3 0000000000000087 "RandomMount" "INV_MISC_QUESTIONMARK"
 /use [mod:ctrlshift]Grand Expedition Yak
@@ -27,6 +35,10 @@ END
 VER 3 000000000000009D "Reload" "132096"
 /console worldPreloadNonCritical 0
 /reload
+END
+VER 3 00000000000000A6 "target" "INV_MISC_QUESTIONMARK"
+/targetenemy [dead][noexists]
+/castsequence Multi-Shot, Multi-Shot, Multi-Shot, Multi-Shot, Multi-Shot, Steady Shot
 END
 VER 3 00000000000000A1 "test" "INV_MISC_QUESTIONMARK"
 /use item:40192

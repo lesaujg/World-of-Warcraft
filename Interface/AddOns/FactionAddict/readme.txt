@@ -4,8 +4,8 @@
 -- Desc: Addon for World of Warcraft
 --
 -- Author: gmz323(Greg)
--- current version: v1.47
--- (c) 2011-2017
+-- current version: v1.50
+-- (c) 2011-2018
 --
 =============================================================================
 
@@ -68,6 +68,20 @@ My Other Addons:
 
 Changelog:
 ==========
+
+v1.50 (2018-07-29)
+------------------
+* Added 'Paragon' option to the 'Faction Standing Filter' dropdown in the top right of the addon. (Thanks to lisakaps for the suggestion!)
+
+v1.49 (2018-07-24)
+------------------
+* Addition of Battle for Azeroth factions and config options.
+* If you would like to submit localization updates see the release notes for more info and get in touch.
+
+v1.48 (2018-07-18)
+------------------
+* compatibility update for Battle for Azeroth pre-patch 8.0
+* BFA features will be added in a future release
 
 v1.47 (2017-08-30)
 ------------------
