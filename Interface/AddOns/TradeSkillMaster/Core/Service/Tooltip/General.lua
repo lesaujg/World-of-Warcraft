@@ -19,20 +19,25 @@ local L = TSM.L
 function General.LoadTooltip(tooltip, itemString)
 	-- add group / operation info
 	if TSM.db.global.tooltipOptions.groupNameTooltip then
-		local path = TSMAPI_FOUR.Groups.GetPathByItem(itemString)
-		if path ~= TSM.CONST.ROOT_GROUP_PATH then
-			local isBaseItem = not TSMAPI_FOUR.Groups.IsItemInGroup(itemString)
+		local groupPath = TSM.Groups.GetPathByItem(itemString)
+		if groupPath ~= TSM.CONST.ROOT_GROUP_PATH then
 			local leftText = nil
-			if isBaseItem then
-				leftText = GROUP.."("..L["Base Item"]..")"
-			else
+			if TSM.Groups.IsItemInGroup(itemString) then
 				leftText = GROUP
+			else
+				leftText = GROUP.."("..L["Base Item"]..")"
 			end
-			tooltip:AddLine(leftText, "|cffffffff"..TSMAPI_FOUR.Groups.FormatPath(path).."|r")
-			for _, module in ipairs(TSM.Operations:GetModulesWithOperations()) do
-				local operations = TSM.db.profile.userData.groups[path][module]
-				if operations and operations[1] and operations[1] ~= "" and TSM.db.global.tooltipOptions.operationTooltips[module] then
-					tooltip:AddLine(format(L["%s operation(s)"], module), "|cffffffff"..table.concat(operations, ", ").."|r")
+			tooltip:AddLine(leftText, "|cffffffff"..TSM.Groups.Path.Format(groupPath).."|r")
+			for _, moduleName in TSM.Operations.ModuleIterator() do
+				if TSM.db.global.tooltipOptions.operationTooltips[moduleName] then
+					local operations = TSMAPI_FOUR.Util.AcquireTempTable()
+					for _, operationName in TSM.Groups.OperationIterator(groupPath, moduleName) do
+						tinsert(operations, operationName)
+					end
+					if #operations > 0 then
+						tooltip:AddLine(format(L["%s |4operation:operations;"], moduleName), "|cffffffff"..table.concat(operations, ", ").."|r")
+					end
+					TSMAPI_FOUR.Util.ReleaseTempTable(operations)
 				end
 			end
 		end
@@ -162,6 +167,12 @@ function General.LoadTooltip(tooltip, itemString)
 		local totalNum = 0
 		for factionrealm in TSM.db:GetConnectedRealmIterator("factionrealm") do
 			for _, character in TSM.db:FactionrealmCharacterIterator(factionrealm) do
+				local realm = strmatch(factionrealm, "^.* "..TSMAPI_FOUR.Util.StrEscape("-").." (.*)")
+				if realm == GetRealmName() then
+					realm = ""
+				else
+					realm = " - "..realm
+				end
 				local bag = TSMAPI_FOUR.Inventory.GetBagQuantity(itemString, character, factionrealm)
 				local bank = TSMAPI_FOUR.Inventory.GetBankQuantity(itemString, character, factionrealm)
 				local reagentBank = TSMAPI_FOUR.Inventory.GetReagentBankQuantity(itemString, character, factionrealm)
@@ -173,9 +184,9 @@ function General.LoadTooltip(tooltip, itemString)
 					local classColor = RAID_CLASS_COLORS[TSM.db:Get("sync", TSM.db:GetSyncScopeKeyByCharacter(character), "internalData", "classKey")]
 					local rightText = format(L["%s (%s bags, %s bank, %s AH, %s mail)"], "|cffffffff"..playerTotal.."|r", "|cffffffff"..bag.."|r", "|cffffffff"..(bank+reagentBank).."|r", "|cffffffff"..auction.."|r", "|cffffffff"..mail.."|r")
 					if classColor then
-						tooltip:AddLine("|c"..classColor.colorStr..character.."|r", rightText)
+						tooltip:AddLine("|c"..classColor.colorStr..character..realm.."|r", rightText)
 					else
-						tooltip:AddLine(character, rightText)
+						tooltip:AddLine(character..realm, rightText)
 					end
 				end
 			end

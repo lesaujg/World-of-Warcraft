@@ -89,7 +89,7 @@ function builder.ExporterGroupLine(name, path, removeHandler)
 		:SetStyle("height", 40)
 		:SetStyle("padding", 10)
 		:AddChild(TSMAPI_FOUR.UI.NewElement("Text", "groupName")
-			:SetText(TSMAPI_FOUR.Groups.BaseName(path))
+			:SetText(TSM.Groups.Path.GetName(path))
 		)
 		:AddChild(TSMAPI_FOUR.UI.NewElement("Button", "removeGroupButton")
 			:SetText("X")
@@ -319,15 +319,11 @@ function private.GroupTreeGetList(groups, headerNameLookup)
 		headerNameLookup[TSM.CONST.ROOT_GROUP_PATH] = L["Base Group"]
 	end
 
-	local temp = TSMAPI_FOUR.Util.AcquireTempTable()
-	TSM.Groups:GetSortedGroupPathList(temp)
-	for _, path in ipairs(temp) do
-		local _, groupName = TSMAPI_FOUR.Groups.SplitPath(path)
-		if strmatch(strlower(groupName), TSMAPI_FOUR.Util.StrEscape(private.groupSearch)) then
+	for _, path in TSM.Groups.GroupIterator() do
+		if strmatch(strlower(TSM.Groups.Path.GetName(path)), TSMAPI_FOUR.Util.StrEscape(private.groupSearch)) then
 			tinsert(groups, path)
 		end
 	end
-	TSMAPI_FOUR.Util.ReleaseTempTable(temp)
 end
 
 function private.GetImportEntryFrame()
@@ -387,7 +383,7 @@ function private.GetImportEntryFrame()
 		:AddChild(builder.ImportOptionToggle("includeOperations", L["Include operations?"], private.importer.options))
 		--:AddChild(builder.ImportOptionToggle("includeCustomPrices", L["Include custom prices?"], private.importer.options))
 		:AddChild(builder.ImportOptionToggle("ignoreDuplicateOperations", L["Ignore duplicate operations?"], private.importer.options))
-		:AddChild(builder.ImportOptionToggle("skipImportExportConfirmations", L["Skip Import / Export confirmations?"], private.importer.options))
+		:AddChild(builder.ImportOptionToggle("skipImportExportConfirmations", L["Skip Import confirmation?"], private.importer.options))
 end
 
 function private.GetExporterGroupsFrameSelectedGroups()
@@ -556,7 +552,7 @@ end
 
 function private.ConfirmImportOnClick(element)
 	private.importer:Finalize()
-	TSM:Print("Finished importing "..private.importer.rootPath)
+	TSM:Printf(L["Finished importing %s"], private.importer.rootPath)
 	local importViewContainer = element:GetElement("__parent.__parent.__parent")
 	importViewContainer:SetPath("import", true)
 end
@@ -620,7 +616,9 @@ function private.ExporterExportSelectedGroupsOnClick(element)
 end
 
 function private.GroupTreeGetList(groups, headerNameLookup)
-	TSM.Groups:GetSortedGroupPathList(groups)
+	for _, groupPath in TSM.Groups.GroupIterator() do
+		tinsert(groups, groupPath)
+	end
 	tinsert(groups, 1, TSM.CONST.ROOT_GROUP_PATH)
 	headerNameLookup[TSM.CONST.ROOT_GROUP_PATH] = L["Base Group"]
 end
@@ -637,11 +635,18 @@ function private.ImportOnClick(element)
 	private.importer:ParseUserInput(text)
 	private.importer:CreateGroupIfNoneSelectedAndTopGroupHasItems()
 
+	local path = "__parent.__parent.__parent.__parent.__parent.__parent.__parent.ImportExportOuterViewContainer"
+
 	if private.importer.options.skipImportExportConfirmations then
 		private.importer:Finalize()
+		TSM:Printf(L["Finished importing %s"], private.importer.rootPath)
+		-- Redraw the groups pane with the new data
+		local importViewContainer = element:GetElement(path)
+		local groupSelectionPane = importViewContainer:GetElement("groups.ImportExportLeftPane.groupSelection.groupTree")
+		groupSelectionPane:_UpdateData()
+		groupSelectionPane:Draw()
+		return
 	end
-
-	local path = "__parent.__parent.__parent.__parent.__parent.__parent.__parent.ImportExportOuterViewContainer"
 
 	local importViewContainer = element:GetElement(path)
 	importViewContainer:SetPath("importConfirmation", true)

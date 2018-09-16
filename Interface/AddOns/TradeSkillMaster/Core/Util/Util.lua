@@ -17,6 +17,8 @@ local private = {
 	sortComparator = nil,
 	sortContext = nil,
 	sortValueLookup = nil,
+	keysTemp = {},
+	itemLinkedCallbacks = {},
 }
 private.iterContext = { arg = {}, index = {}, helperFunc = {}, cleanupFunc = {} }
 setmetatable(private.iterContext.arg, { __mode = "k" })
@@ -44,6 +46,28 @@ do
 		tinsert(private.freeTempTables, tempTbl)
 	end
 end
+-- setup hooks to handle shift-clicking on items
+do
+	local function HandleShiftClickItem(origFunc, itemLink)
+		local putIntoChat = origFunc(itemLink)
+		if putIntoChat then
+			return putIntoChat
+		end
+		local name = TSMAPI_FOUR.Item.GetName(itemLink)
+		if not name or not private.HandleItemLinked(name, itemLink) then
+			return putIntoChat
+		end
+		return true
+	end
+	local origHandleModifiedItemClick = HandleModifiedItemClick
+	HandleModifiedItemClick = function(link)
+		return HandleShiftClickItem(origHandleModifiedItemClick, link)
+	end
+	local origChatEdit_InsertLink = ChatEdit_InsertLink
+	ChatEdit_InsertLink = function(link)
+		return HandleShiftClickItem(origChatEdit_InsertLink, link)
+	end
+end
 
 
 
@@ -55,7 +79,7 @@ end
 -- The lua strsplit function causes a stack overflow if passed large inputs. This API fixes that issue and also supports
 -- separators which are more than one character in length.
 -- @tparam string str The string to be split
--- @tparam string sep The seperator to use to split the string
+-- @tparam string sep The separator to use to split the string
 -- @treturn table The result as a list of substrings
 -- @within String
 function TSMAPI_FOUR.Util.SafeStrSplit(str, sep)
@@ -95,11 +119,26 @@ end
 --- Check if a string which contains multiple values separated by a specific string contains the value.
 -- @tparam string str The string to be searched
 -- @tparam string sep The separating string
--- @tparam string sep The value to search for
+-- @tparam string value The value to search for
 -- @treturn boolean Whether or not the value was found
 -- @within String
 function TSMAPI_FOUR.Util.SeparatedStrContains(str, sep, value)
 	return str == value or strmatch(str, "^"..value..sep) or strmatch(str, sep..value..sep) or strmatch(str, sep..value.."$")
+end
+
+--- Iterates over the parts of a string which are separated by a character.
+-- @tparam string str The string to be split
+-- @tparam string sep The separator to use to split the string
+-- @return An iterator with fields: `part`
+-- @within String
+function TSMAPI_FOUR.Util.StrSplitIterator(str, sep)
+	assert(#sep == 1)
+	for _, char in ipairs(MAGIC_CHARACTERS) do
+		if char == sep then
+			sep = "%"..char
+		end
+	end
+	return gmatch(str, "([^"..sep.."]+)")
 end
 
 
@@ -164,8 +203,24 @@ function TSMAPI_FOUR.Util.CalculateHash(data, hash)
 	hash = hash or 5381
 	local maxValue = 2 ^ 24
 	if type(data) == "string" then
-		for i = 1, #data do
-			hash = (hash * 33 + strbyte(data, i)) % maxValue
+		-- iterate through 8 bytes at a time
+		for i = 1, ceil(#data / 8) do
+			local b1, b2, b3, b4, b5, b6, b7, b8 = strbyte(data, (i - 1) * 8 + 1, i * 8)
+			hash = (hash * 33 + b1) % maxValue
+			if not b2 then break end
+			hash = (hash * 33 + b2) % maxValue
+			if not b3 then break end
+			hash = (hash * 33 + b3) % maxValue
+			if not b4 then break end
+			hash = (hash * 33 + b4) % maxValue
+			if not b5 then break end
+			hash = (hash * 33 + b5) % maxValue
+			if not b6 then break end
+			hash = (hash * 33 + b6) % maxValue
+			if not b7 then break end
+			hash = (hash * 33 + b7) % maxValue
+			if not b8 then break end
+			hash = (hash * 33 + b8) % maxValue
 		end
 	elseif type(data) == "number" then
 		assert(data == floor(data), "Invalid number")
@@ -174,14 +229,25 @@ function TSMAPI_FOUR.Util.CalculateHash(data, hash)
 			data = floor(data / 256)
 		end
 	elseif type(data) == "table" then
-		local keys = TSMAPI_FOUR.Util.AcquireTempTable()
+		local keys = nil
+		if private.keysTemp.inUse then
+			keys = TSMAPI_FOUR.Util.AcquireTempTable()
+		else
+			keys = private.keysTemp
+			private.keysTemp.inUse = true
+		end
 		for k in pairs(data) do
 			tinsert(keys, k)
 		end
 		sort(keys)
-		for _, key in TSMAPI_FOUR.Util.TempTableIterator(keys) do
+		for _, key in ipairs(keys) do
 			hash = TSMAPI_FOUR.Util.CalculateHash(key, hash)
 			hash = TSMAPI_FOUR.Util.CalculateHash(data[key], hash)
+		end
+		if keys == private.keysTemp then
+			wipe(private.keysTemp)
+		else
+			TSMAPI_FOUR.Util.ReleaseTempTable(keys)
 		end
 	elseif type(data) == "boolean" then
 		hash = (hash * 33 + (data and 1 or 0)) % maxValue
@@ -488,6 +554,15 @@ function TSMAPI_FOUR.Util.SafeItemRef(link)
 	end
 end
 
+--- Checks if the version of an addon is a dev version.
+-- @tparam string name The name of the addon
+-- @treturn boolean Whether or not the addon is a dev version
+-- @within WoW Util
+function TSMAPI_FOUR.Util.IsDevVersion(addonName)
+	-- use strmatch does this string doesn't itself get replaced when we deploy
+	return strmatch(GetAddOnMetadata(addonName, "version"), "^@tsm%-project%-version@$") and true or false
+end
+
 --- Checks if an addon is installed.
 -- This function only checks if the addon is installed, not if it's enabled.
 -- @tparam string name The name of the addon
@@ -503,6 +578,10 @@ end
 -- @within WoW Util
 function TSMAPI_FOUR.Util.IsAddonEnabled(name)
 	return GetAddOnEnableState(UnitName("player"), name) == 2 and select(4, GetAddOnInfo(name)) and true or false
+end
+
+function TSMAPI_FOUR.Util.RegisterItemLinkedCallback(callback)
+	tinsert(private.itemLinkedCallbacks, callback)
 end
 
 
@@ -625,4 +704,12 @@ end
 
 function private.TableSortWithValueLookupHelper(a, b)
 	return private.sortValueLookup[a] < private.sortValueLookup[b]
+end
+
+function private.HandleItemLinked(name, itemLink)
+	for _, callback in ipairs(private.itemLinkedCallbacks) do
+		if callback(name, itemLink) then
+			return true
+		end
+	end
 end

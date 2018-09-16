@@ -8,7 +8,7 @@ local strfind, strsub, strmatch = strfind, strsub, strmatch
 
 BrokerLDB.Title = '|cFF16C3F2Broker|r|cFFFFFFFFLDB|r'
 BrokerLDB.Description = 'Provides an overlay on UnitFrames for Boss, Elite, Rare and RareElite'
-BrokerLDB.Authors = 'Azilroka    Infinitron'
+BrokerLDB.Authors = 'Azilroka    Whiro'
 
 function BrokerLDB:TextUpdate(_, Name, _, Data)
 	self.PluginObjects[Name]:SetText(Data)
@@ -95,7 +95,7 @@ function BrokerLDB:GetOptions()
 		},
 	}
 
-	Options.args.profiles = LibStub('AceDBOptions-3.0'):GetOptionsTable(PA.data)
+	Options.args.profiles = LibStub('AceDBOptions-3.0'):GetOptionsTable(BrokerLDB.data)
 	Options.args.profiles.order = -2
 
 	PA.Options.args.BrokerLDB = Options

@@ -4,7 +4,7 @@ PA.LC, _G.LootConfirm = LC, LC
 
 LC.Title = '|cFF16C3F2Loot|r |cFFFFFFFFConfirm|r'
 LC.Description = 'Confirms Loot for Solo/Groups (Need/Greed/Disenchant)'
-LC.Authors = 'Azilroka     Infinitron'
+LC.Authors = 'Azilroka     Whiro'
 
 local tonumber, strmatch, select = tonumber, strmatch, select
 local ConfirmLootRoll, GetNumLootItems, ConfirmLootSlot, CloseLoot = ConfirmLootRoll, GetNumLootItems, ConfirmLootSlot, CloseLoot
@@ -17,6 +17,7 @@ function LC:HandleEvent(event, ...)
 	local NumLootItems = GetNumLootItems()
 	if NumLootItems == 0 then
 		CloseLoot()
+		return
 	end
 	if event == 'CONFIRM_LOOT_ROLL' or event == 'CONFIRM_DISENCHANT_ROLL' then
 		local arg1, arg2 = ...
@@ -119,7 +120,7 @@ function LC:GetOptions()
 		},
 	}
 
-	Options.args.profiles = LibStub('AceDBOptions-3.0'):GetOptionsTable(PA.data)
+	Options.args.profiles = LibStub('AceDBOptions-3.0'):GetOptionsTable(LC.data)
 	Options.args.profiles.order = -2
 
 	PA.Options.args.LootConfirm = Options

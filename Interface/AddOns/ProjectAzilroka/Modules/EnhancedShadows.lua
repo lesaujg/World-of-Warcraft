@@ -1,17 +1,15 @@
 local PA = _G.ProjectAzilroka
 if (PA.SLE or PA.CUI) then return end
 
-local ES = PA:NewModule('EnhancedShadows', 'AceEvent-3.0')
+local ES = PA:NewModule('EnhancedShadows', 'AceEvent-3.0', 'AceTimer-3.0')
 PA.ES, _G.EnhancedShadows = ES, ES
 
 ES.Title = '|cFF16C3F2Enhanced|r |cFFFFFFFFShadows|r'
 ES.Description = 'Adds options for registered shadows'
-ES.Author = 'Azilroka     Infinitron'
+ES.Author = 'Azilroka     Whiro'
 
 local unpack, floor, pairs = unpack, floor, pairs
 local UnitAffectingCombat = UnitAffectingCombat
-
-local ClassColor = RAID_CLASS_COLORS[select(2, UnitClass('player'))]
 
 ES.RegisteredShadows = {}
 
@@ -20,6 +18,19 @@ function ES:UpdateShadows()
 
 	for frame, _ in pairs(self.RegisteredShadows) do
 		ES:UpdateShadow(frame)
+	end
+end
+
+function ES:RegisterFrameShadows(frame)
+	local shadow = frame.shadow or frame.Shadow
+	if shadow and not shadow.isRegistered then
+		ES.shadows[shadow] = true
+		shadow.isRegistered = true
+	end
+	local ishadow = frame.invertedshadow or frame.InvertedShadow
+	if ishadow and not ishadow.isRegistered then
+		ES.shadows[ishadow] = true
+		shadow.isRegistered = true
 	end
 end
 
@@ -38,7 +49,7 @@ function ES:UpdateShadow(shadow)
 	local r, g, b, a = unpack(ES.db.Color)
 
 	if ES.db.ColorByClass then
-		r, g, b = ClassColor['r'], ClassColor['g'], ClassColor['b']
+		r, g, b = unpack(PA.ClassColor)
 	end
 
 	local backdrop = shadow:GetBackdrop()
@@ -47,7 +58,6 @@ function ES:UpdateShadow(shadow)
 	shadow:SetOutside(shadow:GetParent(), Size, Size)
 
 	backdrop.edgeSize = ES:Scale(Size > 3 and Size or 3)
-	backdrop.insets = {left = ES:Scale(5), right = ES:Scale(5), top = ES:Scale(5), bottom = ES:Scale(5)}
 
 	shadow:SetBackdrop(backdrop)
 	shadow:SetBackdropColor(r, g, b, 0)
@@ -90,7 +100,7 @@ function ES:GetOptions()
 		},
 	}
 
-	Options.args.profiles = LibStub('AceDBOptions-3.0'):GetOptionsTable(PA.data)
+	Options.args.profiles = LibStub('AceDBOptions-3.0'):GetOptionsTable(ES.data)
 	Options.args.profiles.order = -2
 
 	PA.Options.args.EnhancedShadows = Options
@@ -118,5 +128,5 @@ function ES:Initialize()
 	ES:BuildProfile()
 	ES:GetOptions()
 
-	ES:UpdateShadows()
+	ES:ScheduleTimer('UpdateShadows', 1)
 end

@@ -110,39 +110,37 @@ end
 function SavedSearches.RecordSearch(searchList, searchType)
 	assert(searchType == "postItems" or searchType == "postGroups" or searchType == "cancelGroups")
 	local filter = table.concat(searchList, FILTER_SEP)
-	local found = false
 	for i, data in ipairs(TSM.db.global.userData.savedAuctioningSearches) do
-		if data.filter == filter then
+		if data.filter == filter and data.searchType == searchType then
 			data.lastSearch = time()
 			local row = private.db:GetUniqueRow("index", i)
 			row:SetField("lastSearch", data.lastSearch)
 				:Update()
 			row:Release()
-			found = true
-			break
+			return
 		end
 	end
-	if not found then
-		local data = {
-			filter = filter,
-			lastSearch = time(),
-			searchType = searchType,
-			isFavorite = nil,
-		}
-		tinsert(TSM.db.global.userData.savedAuctioningSearches, data)
-		private.db:NewRow()
-			:SetField("index", #TSM.db.global.userData.savedAuctioningSearches)
-			:SetField("lastSearch", data.lastSearch)
-			:SetField("isFavorite", data.isFavorite and true or false)
-			:SetField("searchType", data.searchType)
-			:SetField("filter", data.filter)
-			:SetField("name", private.GetSearchName(data.filter, data.searchType))
-			:Create()
-	end
+	local data = {
+		filter = filter,
+		lastSearch = time(),
+		searchType = searchType,
+		isFavorite = nil,
+	}
+	tinsert(TSM.db.global.userData.savedAuctioningSearches, data)
+	private.db:NewRow()
+		:SetField("index", #TSM.db.global.userData.savedAuctioningSearches)
+		:SetField("lastSearch", data.lastSearch)
+		:SetField("isFavorite", data.isFavorite and true or false)
+		:SetField("searchType", data.searchType)
+		:SetField("filter", data.filter)
+		:SetField("name", private.GetSearchName(data.filter, data.searchType))
+		:Create()
 end
 
-function SavedSearches.FilterIterator(dbRow)
-	return TSMAPI_FOUR.Util.VarargIterator(strsplit(FILTER_SEP, dbRow:GetField("filter")))
+function SavedSearches.FiltersToTable(dbRow, tbl)
+	for filter in gmatch(dbRow:GetField("filter"), "[^"..FILTER_SEP.."]+") do
+		tinsert(tbl, filter)
+	end
 end
 
 
@@ -155,21 +153,27 @@ function private.GetSearchName(filter, searchType)
 	local filters = TSMAPI_FOUR.Util.AcquireTempTable()
 	local searchTypeStr, numFiltersStr = nil, nil
 	if searchType == "postGroups" or searchType == "cancelGroups" then
-		for _, groupPath in TSMAPI_FOUR.Util.VarargIterator(strsplit(FILTER_SEP, filter)) do
-			local _, groupName = TSMAPI_FOUR.Groups.SplitPath(groupPath)
+		for groupPath in gmatch(filter, "[^"..FILTER_SEP.."]+") do
+			local groupName = TSM.Groups.Path.GetName(groupPath)
 			local level = select('#', strsplit(TSM.CONST.GROUP_SEP, groupPath))
 			local color = gsub(TSM.UI.GetGroupLevelColor(level), "#", "|cff")
 			tinsert(filters, color..groupName.."|r")
+			if #filters == 11 then
+				break
+			end
 		end
 		searchTypeStr = searchType == "postGroups" and L["Post Scan"] or L["Cancel Scan"]
 		numFiltersStr = #filters == 1 and L["1 Group"] or format(L["%d Groups"], #filters)
 	elseif searchType == "postItems" then
 		local numItems = 0
-		for _, itemString in TSMAPI_FOUR.Util.VarargIterator(strsplit(FILTER_SEP, filter)) do
+		for itemString in gmatch(filter, "[^"..FILTER_SEP.."]+") do
 			numItems = numItems + 1
 			local coloredName = TSM.UI.GetColoredItemName(itemString)
 			if coloredName then
 				tinsert(filters, coloredName)
+				if #filters == 11 then
+					break
+				end
 			end
 		end
 		searchTypeStr = L["Post Scan"]

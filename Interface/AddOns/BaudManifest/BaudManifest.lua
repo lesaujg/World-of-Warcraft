@@ -1801,6 +1801,8 @@ function BaudManifestDisplay_OnSizeChanged(Display)
       Button.BlizItem.BattlepayItemTexture:Hide();
       Button.BlizInv = _G[Name .. "BlizInv"];
       Button.BlizInv.ignoreTexture:Hide();
+      Button.BlizInv.AvailableTraitFrame:SetShown(false);
+      Button.BlizInv.RankFrame:SetShown(false);
       Button.Icon = _G[Name .. "Texture"];
       --Showing the texture affects the text positioning for some reason, and cannot be done in OnLoad
       Button.Icon:Show();
@@ -2198,6 +2200,8 @@ function BaudManifestPickupDragRemain(MoveMethod, QuickSplit)
     return;
   end
 
+  --DebugMsg("Requested "..DragItem.String..";remain="..DragItem.Remain);
+
   if MoveMethod then
     if DragItem.MoveMethod then
       DragItem = nil;
@@ -2222,7 +2226,7 @@ function BaudManifestPickupDragRemain(MoveMethod, QuickSplit)
       return Moving;
     end
 
-    if (DragItem.MoveMethod == true) and not BankOpen then
+    if (DragItem.MoveMethod == true) and not BankOpen and not VendorOpen then
       DragItem = nil;
       ClearCursor();
       return Moving;
@@ -2243,7 +2247,9 @@ function BaudManifestPickupDragRemain(MoveMethod, QuickSplit)
       if Link then
         --This chooses stacks of the most appropriate size
         if not Locked and ItemsAreEquivalent(ItemString, GetItemString(Link)) then
-          if not BestSlot or (BestCount < DragItem.Remain) and (Count > BestCount) or (BestCount > DragItem.Remain) and (Count >= DragItem.Remain) and (Count < BestCount) then
+          if not BestSlot
+             or (BestCount < DragItem.Remain) and (Count > BestCount)
+             or (BestCount > DragItem.Remain) and (Count >= DragItem.Remain) and (Count < BestCount) then
             BestBag, BestSlot, BestCount = Bag, Slot, Count;
           end
           if (Count < DragItem.Remain) then
@@ -2300,7 +2306,7 @@ function BaudManifestPickupDragRemain(MoveMethod, QuickSplit)
       end
 
       if (not BestBag or (DragItem.MoveMethod ~= true)) and not CursorHasItem() then
-        --DebugMsg("Item move failed - aborting.");
+        --DebugMsg("Item move failed - aborting [1].");
         DragItem = nil;
         return Moving;
       end
@@ -2353,16 +2359,19 @@ function BaudManifestPickupDragRemain(MoveMethod, QuickSplit)
 
     --if MoveMethod is set to move between displays, no item will be in the cursor unless the item cannot be moved by using it
     if (not BestBag or (DragItem.MoveMethod ~= true)) and not CursorHasItem() then
-      --DebugMsg("Item move failed - aborting.");
+      --DebugMsg("Item move failed - aborting [2].");
       DragItem = nil;
       return Moving;
     end
+
     if not DragItem.MoveMethod then
       BaudManifestShowDragCount();
       return Moving;
     else
-      if (DragItem.MoveMethod == true) and CursorHasItem() or (DragItem.MoveMethod ~= true) and not DragItem.MoveMethod() or
-      not DragItem or not DragItem.Remain then
+      if (DragItem.MoveMethod == true) and CursorHasItem() or
+        (DragItem.MoveMethod ~= true) and not DragItem.MoveMethod() or
+        not DragItem or
+        not DragItem.Remain then
         DragItem = nil;
         ClearCursor();
         return Moving;
@@ -2572,14 +2581,16 @@ function BaudManifestMoveListItem(Display)
     tinsert(Display.Data[NewCategory], OldItem);
   end
 
-  -- when moving an item, check to see if it needs to be added to or
-  -- removed from the autosell table
-  if (NewCategory == PlayerData.AutoSell) then
-    --DebugMsg("Adding " .. OldItem.ItemString);
-    SetAutoSellTable(OldItem.ItemString, 1);
-  else
-    --DebugMsg("Removing " .. CleanItemString(OldItem.ItemString));
-    SetAutoSellTable(OldItem.ItemString, nil);
+  if not VirtualDrag or not VirtualDrag.Category then
+    -- when moving an item, check to see if it needs to be added to or
+    -- removed from the autosell table
+    if (NewCategory == PlayerData.AutoSell) then
+      --DebugMsg("Adding " .. OldItem.ItemString);
+      SetAutoSellTable(OldItem.ItemString, 1);
+    else
+      --DebugMsg("Removing " .. CleanItemString(OldItem.ItemString));
+      SetAutoSellTable(OldItem.ItemString, nil);
+    end
   end
 
   BaudManifestUpdateDisplayList(Display);
@@ -4143,6 +4154,21 @@ function BaudManifestAutoSellItems()
     end
   );
 
+  --otherwise check to see if it has a max quantity property
+  for Key, Value in pairs(PlayerHash[1]) do
+    if Value.Properties and Value.Properties.Sell then
+      Count = GetItemCount(Key) - Value.Properties.Amount;
+      if (Count > 0) then
+        --DebugMsg("Found too many "..Value.ItemString.."; need to sell "..Count);
+        DragItem = {String = Value.ItemString, Origin = Displays[1], Remain = Count};
+        if BaudManifestPickupDragRemain(true, true) then
+          Timer = Timer + .1;
+          Total = Total + 1;
+        end
+      end
+    end
+  end
+
   if (Total > 0) then
     -- needs tweaking
     C_Timer.NewTimer(.9 + Total * .1, function()
@@ -4168,9 +4194,8 @@ function BaudManifestAutoBuyItems()
       if (Count > 0) then
         for Index = 1, GetMerchantNumItems() do
           if (Value.ItemString == GetItemString(GetMerchantItemLink(Index) or "")) then
-            _, _, Price, Quantity, Available = GetMerchantItemInfo(Index);
-            MaxStack = floor(select(8, GetItemInfo(Key)) / Quantity);
-            Count = floor(Count / Quantity);
+            _, _, Price, _, Available = GetMerchantItemInfo(Index);
+            MaxStack = GetMerchantItemMaxStack(Index);
             if (Available >= 0) and (Available < Count) then
               Count = Available;
             end
@@ -4211,7 +4236,7 @@ function BaudManifestDepositAndWithdraw()
             Count = -Count;
           end
           ClearCursor();
-          DragItem = {String = Key, Origin = Displays[From], Remain = Count};
+          DragItem = {String = Value.ItemString, Origin = Displays[From], Remain = Count};
           if BaudManifestPickupDragRemain(true) then
             Moved[From] = true;
           end

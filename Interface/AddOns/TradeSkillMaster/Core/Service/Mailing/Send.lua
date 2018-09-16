@@ -67,6 +67,9 @@ function private.SendMailThread(recipient, subject, body, money, items, isGroup)
 	local itemInfo = TSMAPI_FOUR.Thread.AcquireSafeTempTable()
 
 	for _, bag, slot, itemString, quantity in TSMAPI_FOUR.Inventory.BagIterator(false, false, true) do
+		if isGroup then
+			itemString = TSMAPI_FOUR.Item.ToBaseItemString(itemString, true)
+		end
 		if items[itemString] and not TSMAPI_FOUR.Inventory.IsBagSlotLocked(bag, slot) then
 			if not itemInfo[itemString] then
 				itemInfo[itemString] = { locations = {} }
@@ -155,7 +158,7 @@ function private.PrintMailMessage(items, target, individually)
 	itemList = strtrim(itemList, ", ")
 
 	if private.isCOD then
-		TSM:Printf(L["Sending %s to %s with a COD of %s"], itemList, target, TSMAPI_FOUR.Money.ToString(private.money, "|cffff0000", "OPT_PAD", "OPT_SEP"))
+		TSM:Printf(L["Sending %s to %s with a COD of %s"], itemList, target, TSM.Money.ToString(private.money, "|cffff0000"))
 	elseif individually then
 		TSM:Printf(L["Sending %s individually to %s"], itemList, target)
 	elseif items then

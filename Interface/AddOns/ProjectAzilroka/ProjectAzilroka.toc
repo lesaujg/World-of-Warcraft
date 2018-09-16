@@ -1,9 +1,9 @@
-## Interface: 70300
+## Interface: 80000
 ## Title: |cFF16C3F2Project|r|cFFFFFFFFAzilroka|r
 ## Author: Azilroka
-## Version: 1.22
+## Version: 1.33
 ## OptionalDeps: AddOnSkins, ElvUI, Tukui
-## SavedVariables: ProjectAzilrokaDB, SquareMinimapButtonsDB, MovableFramesDB, EnhancedFriendsListDB, EnhancedShadowsDB, DragonOverlayDB, stAddonManagerDB, stAddonManagerProfilesDB, stAddonManagerServerDB, BigButtonsDB, FriendGroupsDB
+## SavedVariables: ProjectAzilrokaDB, SquareMinimapButtonsDB, MovableFramesDB, EnhancedFriendsListDB, EnhancedShadowsDB, DragonOverlayDB, stAddonManagerDB, stAddonManagerProfilesDB, stAddonManagerServerDB, BigButtonsDB, FriendGroupsDB, QuestSoundsDB, ExportData
 ## X-Tukui-ProjectID: 79
 ## X-Tukui-ProjectFolders: ProjectAzilroka
 

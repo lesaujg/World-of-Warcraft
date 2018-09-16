@@ -51,7 +51,7 @@ function TukuiActionBars:CreateBar1()
 	ActionBar1.Page = {
 		["DRUID"] = Druid,
 		["ROGUE"] = Rogue,
-		["DEFAULT"] = "[vehicleui:12] 12; [possessbar] 12; [overridebar] 14; [shapeshift] 13; [bar:2] 2; [bar:3] 3; [bar:4] 4; [bar:5] 5; [bar:6] 6;",
+		["DEFAULT"] = "[bar:6] 6;[bar:5] 5;[bar:4] 4;[bar:3] 3;[bar:2] 2;[overridebar] 14;[shapeshift] 13;[vehicleui] 12;[possessbar] 12;",
 	}
 
 	function ActionBar1:GetBar()
@@ -71,6 +71,8 @@ function TukuiActionBars:CreateBar1()
 	TukuiActionBars:UpdateBar1()
 
 	ActionBar1:RegisterEvent("PLAYER_ENTERING_WORLD")
+	ActionBar1:RegisterEvent("UPDATE_VEHICLE_ACTIONBAR")
+	ActionBar1:RegisterEvent("UPDATE_OVERRIDE_ACTIONBAR")
 	ActionBar1:SetScript("OnEvent", function(self, event, unit, ...)
 		if (event == "PLAYER_ENTERING_WORLD") then
 			for i = 1, Num do
@@ -89,6 +91,25 @@ function TukuiActionBars:CreateBar1()
 					local Previous = _G["ActionButton"..i-1]
 						
 					Button:SetPoint("LEFT", Previous, "RIGHT", Spacing, 0)
+				end
+			end
+		elseif (event == "UPDATE_VEHICLE_ACTIONBAR") or (event == "UPDATE_OVERRIDE_ACTIONBAR") then
+			for i = 1, 12 do
+				local Button = _G["ActionButton"..i]
+				local Action = Button.action
+				local Icon = Button.icon
+					
+				if Action >= 120 then
+					local Texture = GetActionTexture(Action)
+
+					if (Texture) then
+						Icon:SetTexture(Texture)
+						Icon:Show()
+					else
+						if Icon:IsShown() then
+							Icon:Hide()
+						end
+					end
 				end
 			end
 		end

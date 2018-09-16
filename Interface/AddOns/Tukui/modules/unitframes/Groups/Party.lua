@@ -31,7 +31,7 @@ function TukuiUnitFrames:Party()
 	if C.Party.ShowHealthText then
 		Health.Value = Health:CreateFontString(nil, "OVERLAY")
 		Health.Value:SetFontObject(HealthFont)
-		Health.Value:Point("RIGHT", Health, "RIGHT", 0, 0)
+		Health.Value:Point("TOPRIGHT", -3, 6)
 
 		Health.PostUpdate = TukuiUnitFrames.PostUpdateHealth
 	end
@@ -64,15 +64,15 @@ function TukuiUnitFrames:Party()
 	end
 
 	local Name = Health:CreateFontString(nil, "OVERLAY")
-	Name:SetPoint("TOPLEFT", -1, 18)
+	Name:SetPoint("TOPLEFT", 4, 6)
 	Name:SetFontObject(Font)
 
 	local Buffs = CreateFrame("Frame", self:GetName()..'Buffs', self)
 	Buffs:Point("TOPLEFT", self, "BOTTOMLEFT", 0, -6)
 	Buffs:SetHeight(24)
-	Buffs:SetWidth(250)
+	Buffs:SetWidth(206)
 	Buffs.size = 24
-	Buffs.num = 8
+	Buffs.num = 7
 	Buffs.numRow = 1
 	Buffs.spacing = 2
 	Buffs.initialAnchor = "TOPLEFT"
@@ -102,9 +102,9 @@ function TukuiUnitFrames:Party()
 	ReadyCheck:SetPoint("CENTER", Health, "CENTER")
 	ReadyCheck:SetSize(16, 16)
 
-	local RaidIcon = self:CreateTexture(nil, "OVERLAY")
-	RaidIcon:SetSize(12, 12)
-	RaidIcon:SetPoint("TOPRIGHT", self, 1, 18)
+	local RaidIcon = Health:CreateTexture(nil, "OVERLAY")
+	RaidIcon:SetSize(16, 16)
+	RaidIcon:SetPoint("CENTER", Health, "CENTER")
 	RaidIcon:SetTexture([[Interface\AddOns\Tukui\Medias\Textures\Others\RaidIcons]])
 
 	local PhaseIcon = Health:CreateTexture(nil, 'OVERLAY')
@@ -148,20 +148,6 @@ function TukuiUnitFrames:Party()
 		}
 	end
 
-	if (Class == "PRIEST" and C.UnitFrames.WeakBar) then
-		-- Weakened Soul Bar
-		local WSBar = CreateFrame("StatusBar", nil, Power)
-		WSBar:SetAllPoints(Power)
-		WSBar:SetStatusBarTexture(C.Medias.Normal)
-		WSBar:GetStatusBarTexture():SetHorizTile(false)
-		WSBar:SetBackdrop(TukuiUnitFrames.Backdrop)
-		WSBar:SetBackdropColor(unpack(C["General"].BackdropColor))
-		WSBar:SetStatusBarColor(0.75, 0.04, 0.04)
-
-		-- Register
-		self.WeakenedSoul = WSBar
-	end
-
 	local Threat = Health:CreateTexture(nil, "OVERLAY")
 	Threat.Override = TukuiUnitFrames.UpdateThreat
 	
@@ -172,7 +158,6 @@ function TukuiUnitFrames:Party()
 	Highlight:SetFrameLevel(0)
 	Highlight:Hide()
 	
-	--[[
 	if Class == "PRIEST" then
 		local Atonement = CreateFrame("StatusBar", nil, Power)
 		Atonement:SetAllPoints()
@@ -182,7 +167,6 @@ function TukuiUnitFrames:Party()
 		
 		self.Atonement = Atonement
 	end
-	--]]
 
 	local Range = {
 		insideAlpha = 1,
@@ -205,7 +189,7 @@ function TukuiUnitFrames:Party()
 	self.ThreatIndicator = Threat
 	self.Range = Range
 	self.Highlight = Highlight
-	self:Tag(Name, "[Tukui:GetNameColor][Tukui:NameLong][Tukui:Role]")
+	self:Tag(Name, "[level] [Tukui:NameLong] [Tukui:Role]")
 	
 	self:RegisterEvent("PLAYER_TARGET_CHANGED", TukuiUnitFrames.Highlight)
 	self:RegisterEvent("RAID_ROSTER_UPDATE", TukuiUnitFrames.Highlight)

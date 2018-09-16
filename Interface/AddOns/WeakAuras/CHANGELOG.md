@@ -1,30 +1,17 @@
-# [2.6.6](https://github.com/WeakAuras/WeakAuras2/tree/2.6.6) (2018-07-30)
+# [2.7.9](https://github.com/WeakAuras/WeakAuras2/tree/2.7.9) (2018-09-16)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.6.5...2.6.6)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.7.8...2.7.9)
 
-Benjamin Staneck (4):
+## Highlights
 
-- remove multistrike combatlog event
-- Update bug_report.md
-- Update ISSUE_TEMPLATE.md
-- change translation string
+ * Bugfix update for last release
 
-Buds (1):
+* NOTE: Update requires a game restart! 
 
-- BuffTrigger: Add a buffed/unbuffed condition
+## Commits
 
-Infus (12):
+Infus (2):
 
-- Fix error on loading if trigger[name] is nil
-- Use better names for Power Types for Templates
-- Equipment Set Trigger: Use C_EquipmentSet.GetEquipmentSetIDs
-- Global Conditions: Fix Unload
-- Fix the author line of WeakAurasTemplates
-- Fix bugs in Global Conditions
-- Global Conditions: Move some code to WeakAuras.lua
-- Fix naming
-- Add a alpha option to Icons/Textures
-- Add a dynamic condition for "IsUsableSpell"
-- Global Conditions: In Combat, Has Target
-- Fix Rename/Delete and custom condition functions
+- Fix regression in remain time check
+- Fix fallback creation
 

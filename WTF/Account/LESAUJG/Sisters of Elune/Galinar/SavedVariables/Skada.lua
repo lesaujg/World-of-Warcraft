@@ -332,17 +332,17 @@ SkadaPerCharDB = {
 							["totalhits"] = 2,
 							["damage"] = 475031,
 						},
-						["Mark of the Hidden Satyr"] = {
-							["hitmin"] = 160983,
-							["id"] = 191259,
-							["min"] = 160983,
-							["hitamount"] = 384805,
-							["hitmax"] = 223822,
-							["hit"] = 2,
-							["school"] = 4,
-							["max"] = 223822,
+						["Secure in the Light"] = {
+							["criticalamount"] = 577338,
+							["id"] = 253073,
+							["min"] = 288669,
+							["criticalmax"] = 288669,
+							["critical"] = 2,
+							["criticalmin"] = 288669,
+							["school"] = 2,
+							["max"] = 288669,
 							["totalhits"] = 2,
-							["damage"] = 384805,
+							["damage"] = 577338,
 						},
 						["Main Gauche"] = {
 							["hitmin"] = 77332,
@@ -360,18 +360,6 @@ SkadaPerCharDB = {
 							["max"] = 160036,
 							["damage"] = 383398,
 						},
-						["Secure in the Light"] = {
-							["criticalamount"] = 577338,
-							["id"] = 253073,
-							["min"] = 288669,
-							["criticalmax"] = 288669,
-							["critical"] = 2,
-							["criticalmin"] = 288669,
-							["school"] = 2,
-							["max"] = 288669,
-							["totalhits"] = 2,
-							["damage"] = 577338,
-						},
 						["Blunderbuss"] = {
 							["hitmin"] = 102753,
 							["criticalamount"] = 205508,
@@ -387,6 +375,18 @@ SkadaPerCharDB = {
 							["school"] = 1,
 							["max"] = 205508,
 							["damage"] = 513768,
+						},
+						["Mark of the Hidden Satyr"] = {
+							["hitmin"] = 160983,
+							["id"] = 191259,
+							["min"] = 160983,
+							["hitamount"] = 384805,
+							["hitmax"] = 223822,
+							["hit"] = 2,
+							["school"] = 4,
+							["max"] = 223822,
+							["totalhits"] = 2,
+							["damage"] = 384805,
 						},
 						["Cannonball Barrage"] = {
 							["hitmin"] = 94257,
@@ -2039,23 +2039,23 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518535968.904,
 						["amount"] = -15765,
+						["hp"] = 3493023,
 						["spellid"] = 68641,
 						["srcname"] = "Apothecary Hummel",
-						["hp"] = 3493023,
 					}, -- [1]
 					{
 						["ts"] = 1518535969.917,
 						["amount"] = -17166,
+						["hp"] = 3475857,
 						["spellid"] = 68641,
 						["srcname"] = "Apothecary Hummel",
-						["hp"] = 3475857,
 					}, -- [2]
 					{
 						["ts"] = 1518535970.908,
 						["amount"] = -18218,
+						["hp"] = 3457639,
 						["spellid"] = 68641,
 						["srcname"] = "Apothecary Hummel",
-						["hp"] = 3457639,
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -2068,23 +2068,23 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518535971.9,
 						["amount"] = -19268,
+						["hp"] = 3489520,
 						["spellid"] = 68641,
 						["srcname"] = "Apothecary Hummel",
-						["hp"] = 3489520,
 					}, -- [5]
 					{
 						["ts"] = 1518535972.906,
 						["amount"] = -15765,
+						["hp"] = 3473755,
 						["spellid"] = 68641,
 						["srcname"] = "Apothecary Hummel",
-						["hp"] = 3473755,
 					}, -- [6]
 					{
 						["ts"] = 1518535973.9,
 						["amount"] = -18217,
+						["hp"] = 3455538,
 						["spellid"] = 68641,
 						["srcname"] = "Apothecary Hummel",
-						["hp"] = 3455538,
 					}, -- [7]
 					{
 						["absorb"] = 0,
@@ -2097,23 +2097,23 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518535974.908,
 						["amount"] = -18217,
+						["hp"] = 3490571,
 						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 3490571,
 					}, -- [9]
 					{
 						["ts"] = 1518535975.915,
 						["amount"] = -18568,
+						["hp"] = 3472003,
 						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 3472003,
 					}, -- [10]
 					{
 						["ts"] = 1518535976.901,
 						["amount"] = -17166,
+						["hp"] = 3454837,
 						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 3454837,
 					}, -- [11]
 					{
 						["absorb"] = 0,
@@ -2126,16 +2126,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518535977.906,
 						["amount"] = -17167,
+						["hp"] = 3491621,
 						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 3491621,
 					}, -- [13]
 					{
 						["ts"] = 1518535978.894,
 						["amount"] = -15765,
+						["hp"] = 3475856,
 						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 3475856,
 					}, -- [14]
 					{
 						["absorb"] = 0,
@@ -2204,7 +2204,7 @@ SkadaPerCharDB = {
 						["damage"] = 180599,
 					},
 				},
-				["healing"] = 191282,
+				["maxhp"] = 3508788,
 				["damagetaken"] = 191282,
 				["power"] = {
 					[0] = {
@@ -2215,7 +2215,7 @@ SkadaPerCharDB = {
 					},
 				},
 				["id"] = "Player-1169-06EEB51C",
-				["first"] = 1518539556,
+				["healing"] = 191282,
 				["healed"] = {
 					["Player-1169-06EEB51C"] = {
 						["role"] = "HEALER",
@@ -2258,7 +2258,7 @@ SkadaPerCharDB = {
 					},
 				},
 				["overhealing"] = 89421,
-				["maxhp"] = 3508788,
+				["first"] = 1518539556,
 				["name"] = "Galinar",
 				["alertCount"] = 68,
 				["alertDamage"] = 147724,
@@ -2504,65 +2504,65 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518535986.866,
 						["amount"] = -92445,
+						["hp"] = 5491599,
 						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
-						["hp"] = 5491599,
 					}, -- [1]
 					{
 						["ts"] = 1518535969.917,
 						["amount"] = -15791,
+						["hp"] = 5849966,
 						["spellid"] = 68641,
 						["srcname"] = "Apothecary Hummel",
-						["hp"] = 5849966,
 					}, -- [2]
 					{
 						["ts"] = 1518535970.908,
 						["amount"] = -17897,
+						["hp"] = 5832069,
 						["spellid"] = 68641,
 						["srcname"] = "Apothecary Hummel",
-						["hp"] = 5832069,
 					}, -- [3]
 					{
 						["ts"] = 1518535971.9,
 						["amount"] = -19300,
+						["hp"] = 5812769,
 						["spellid"] = 68641,
 						["srcname"] = "Apothecary Hummel",
-						["hp"] = 5812769,
 					}, -- [4]
 					{
 						["ts"] = 1518535972.906,
 						["amount"] = -18598,
+						["hp"] = 5794171,
 						["spellid"] = 68641,
 						["srcname"] = "Apothecary Hummel",
-						["hp"] = 5794171,
 					}, -- [5]
 					{
 						["ts"] = 1518535973.9,
 						["amount"] = -17195,
+						["hp"] = 5776976,
 						["spellid"] = 68641,
 						["srcname"] = "Apothecary Hummel",
-						["hp"] = 5776976,
 					}, -- [6]
 					{
 						["ts"] = 1518535974.908,
 						["amount"] = -16142,
+						["hp"] = 5760834,
 						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 5760834,
 					}, -- [7]
 					{
 						["ts"] = 1518535975.915,
 						["amount"] = -16142,
+						["hp"] = 5744692,
 						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 5744692,
 					}, -- [8]
 					{
 						["ts"] = 1518535976.901,
 						["amount"] = -15791,
+						["hp"] = 5728901,
 						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 5728901,
 					}, -- [9]
 					{
 						["absorb"] = 0,
@@ -2575,37 +2575,37 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518535977.906,
 						["amount"] = -18598,
+						["hp"] = 5863652,
 						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 5863652,
 					}, -- [11]
 					{
 						["ts"] = 1518535978.894,
 						["amount"] = -18949,
+						["hp"] = 5844703,
 						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 5844703,
 					}, -- [12]
 					{
 						["ts"] = 1518535982.744,
 						["amount"] = -58207,
+						["hp"] = 5844703,
 						["spellid"] = 88163,
 						["srcname"] = "Apothecary Frye",
-						["hp"] = 5844703,
 					}, -- [13]
 					{
 						["ts"] = 1518535984.214,
 						["amount"] = -107356,
+						["hp"] = 5679140,
 						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
-						["hp"] = 5679140,
 					}, -- [14]
 					{
 						["ts"] = 1518535985.736,
 						["amount"] = -95096,
+						["hp"] = 5584044,
 						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
-						["hp"] = 5584044,
 					}, -- [15]
 					["pos"] = 2,
 				},
@@ -2667,17 +2667,17 @@ SkadaPerCharDB = {
 						["totalhits"] = 2,
 						["damage"] = 475031,
 					},
-					["Mark of the Hidden Satyr"] = {
-						["hitmin"] = 160983,
-						["id"] = 191259,
-						["min"] = 160983,
-						["hitamount"] = 384805,
-						["hitmax"] = 223822,
-						["hit"] = 2,
-						["school"] = 4,
-						["max"] = 223822,
+					["Secure in the Light"] = {
+						["criticalamount"] = 577338,
+						["id"] = 253073,
+						["min"] = 288669,
+						["criticalmax"] = 288669,
+						["critical"] = 2,
+						["criticalmin"] = 288669,
+						["school"] = 2,
+						["max"] = 288669,
 						["totalhits"] = 2,
-						["damage"] = 384805,
+						["damage"] = 577338,
 					},
 					["Main Gauche"] = {
 						["hitmin"] = 77332,
@@ -2695,18 +2695,6 @@ SkadaPerCharDB = {
 						["max"] = 160036,
 						["damage"] = 383398,
 					},
-					["Secure in the Light"] = {
-						["criticalamount"] = 577338,
-						["id"] = 253073,
-						["min"] = 288669,
-						["criticalmax"] = 288669,
-						["critical"] = 2,
-						["criticalmin"] = 288669,
-						["school"] = 2,
-						["max"] = 288669,
-						["totalhits"] = 2,
-						["damage"] = 577338,
-					},
 					["Blunderbuss"] = {
 						["hitmin"] = 102753,
 						["criticalamount"] = 205508,
@@ -2722,6 +2710,18 @@ SkadaPerCharDB = {
 						["school"] = 1,
 						["max"] = 205508,
 						["damage"] = 513768,
+					},
+					["Mark of the Hidden Satyr"] = {
+						["hitmin"] = 160983,
+						["id"] = 191259,
+						["min"] = 160983,
+						["hitamount"] = 384805,
+						["hitmax"] = 223822,
+						["hit"] = 2,
+						["school"] = 4,
+						["max"] = 223822,
+						["totalhits"] = 2,
+						["damage"] = 384805,
 					},
 					["Cannonball Barrage"] = {
 						["hitmin"] = 94257,
@@ -3032,9 +3032,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518535987.559,
 						["amount"] = -102403,
+						["hp"] = 265666,
 						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
-						["hp"] = 265666,
 					}, -- [1]
 					{
 						["absorb"] = 0,
@@ -3055,9 +3055,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518535978.179,
 						["amount"] = -105659,
+						["hp"] = 349473,
 						["spellid"] = 68948,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 349473,
 					}, -- [4]
 					{
 						["ts"] = 1518535978.389,
@@ -3070,16 +3070,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518535978.894,
 						["amount"] = -17606,
+						["hp"] = 346566,
 						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 346566,
 					}, -- [6]
 					{
 						["ts"] = 1518535979.179,
 						["amount"] = -109291,
+						["hp"] = 326795,
 						["spellid"] = 68948,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 326795,
 					}, -- [7]
 					{
 						["ts"] = 1518535979.586,
@@ -3092,9 +3092,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518535980.167,
 						["amount"] = -118738,
+						["hp"] = 305444,
 						["spellid"] = 68948,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 305444,
 					}, -- [9]
 					{
 						["ts"] = 1518535984.11,
@@ -3115,9 +3115,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518535984.56,
 						["amount"] = -104067,
+						["hp"] = 302178,
 						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
-						["hp"] = 302178,
 					}, -- [12]
 					{
 						["ts"] = 1518535985.651,
@@ -3130,9 +3130,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518535986.076,
 						["amount"] = -101740,
+						["hp"] = 283843,
 						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
-						["hp"] = 283843,
 					}, -- [14]
 					{
 						["ts"] = 1518535986.866,
@@ -3486,23 +3486,23 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518535979.179,
 						["amount"] = -133384,
+						["hp"] = 9806936,
 						["spellid"] = 68948,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 9806936,
 					}, -- [1]
 					{
 						["ts"] = 1518535980.167,
 						["amount"] = -132080,
+						["hp"] = 9674856,
 						["spellid"] = 68948,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 9674856,
 					}, -- [2]
 					{
 						["ts"] = 1518535984.214,
 						["amount"] = -129229,
+						["hp"] = 9545626,
 						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
-						["hp"] = 9545626,
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -3515,9 +3515,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518535985.736,
 						["amount"] = -134562,
+						["hp"] = 9815785,
 						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
-						["hp"] = 9815785,
 					}, -- [5]
 					{
 						["ts"] = 1518535987.135,
@@ -3546,23 +3546,23 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518535974.908,
 						["amount"] = -15511,
+						["hp"] = 10102508,
 						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 10102508,
 					}, -- [9]
 					{
 						["ts"] = 1518535975.915,
 						["amount"] = -15511,
+						["hp"] = 10086997,
 						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 10086997,
 					}, -- [10]
 					{
 						["ts"] = 1518535976.901,
 						["amount"] = -14598,
+						["hp"] = 10072399,
 						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 10072399,
 					}, -- [11]
 					{
 						["absorb"] = 0,
@@ -3575,23 +3575,23 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518535977.906,
 						["amount"] = -20420,
+						["hp"] = 10097599,
 						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 10097599,
 					}, -- [13]
 					{
 						["ts"] = 1518535978.179,
 						["amount"] = -133818,
+						["hp"] = 9963781,
 						["spellid"] = 68948,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 9963781,
 					}, -- [14]
 					{
 						["ts"] = 1518535978.894,
 						["amount"] = -23461,
+						["hp"] = 9940320,
 						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
-						["hp"] = 9940320,
 					}, -- [15]
 					["pos"] = 8,
 				},

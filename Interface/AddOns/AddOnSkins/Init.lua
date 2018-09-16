@@ -1,4 +1,3 @@
--- Curseforge test 3: Curseforge bugaloo
 local AddOnName, Engine = ...
 
 if IsAddOnLoaded('Tukui') and not IsAddOnLoaded('ProjectAzilroka') then
@@ -13,11 +12,11 @@ if IsAddOnLoaded('Tukui') and not IsAddOnLoaded('ProjectAzilroka') then
 		showAlert = 1,
 		maxLetters = 38,
 		EditBoxOnEscapePressed = function(self)
-			self:GetParent():Hide();
+			self:GetParent():Hide()
 		end,
 		OnShow = function(self)
-			self.editBox:SetText("https://www.tukui.org/addons.php?id=79");
-			self.editBox:SetFocus();
+			self.editBox:SetText("https://www.tukui.org/addons.php?id=79")
+			self.editBox:SetFocus()
 		end,
 	}
 
@@ -26,10 +25,10 @@ if IsAddOnLoaded('Tukui') and not IsAddOnLoaded('ProjectAzilroka') then
 	return
 end
 
-local AddOn = LibStub('AceAddon-3.0'):NewAddon('AddOnSkins', 'AceEvent-3.0', 'AceHook-3.0')
+local AddOn = LibStub('AceAddon-3.0'):NewAddon('AddOnSkins', 'AceEvent-3.0', 'AceHook-3.0', 'AceTimer-3.0')
 
 Engine[1] = AddOn
-Engine[2] = LibStub("AceLocale-3.0"):GetLocale('AddOnSkins', false);
+Engine[2] = LibStub("AceLocale-3.0"):GetLocale('AddOnSkins', false)
 
 _G.AddOnSkins = Engine
 AddOnSkinsDS = {}
@@ -49,7 +48,7 @@ AddOn.UIScale = UIParent:GetScale()
 AddOn.ScreenWidth, AddOn.ScreenHeight = GetPhysicalScreenSize()
 
 local Color = RAID_CLASS_COLORS[AddOn.MyClass]
-AddOn.ClassColor = {Color.r, Color.g, Color.b}
+AddOn.ClassColor = { Color.r, Color.g, Color.b }
 
 AddOn.Mult = 1
 AddOn.skins = {}
@@ -60,10 +59,12 @@ AddOn.FrameLocks = {}
 AddOn.preload = {}
 
 AddOn.AddOns = {}
+AddOn.AddOnVersion = {}
 
 for i = 1, GetNumAddOns() do
 	local Name = GetAddOnInfo(i)
-	AddOn.AddOns[strlower(Name)] = GetAddOnEnableState(AddOn.MyName, Name) > 0
+	AddOn.AddOns[strlower(Name)] = GetAddOnEnableState(AddOn.MyName, Name) == 2
+	AddOn.AddOnVersion[strlower(Name)] = GetAddOnMetadata(Name, "Version")
 end
 
 TEXTURE_ITEM_QUEST_BANG = "Interface\\AddOns\\AddOnSkins\\Media\\Textures\\UI-Icon-QuestBang"

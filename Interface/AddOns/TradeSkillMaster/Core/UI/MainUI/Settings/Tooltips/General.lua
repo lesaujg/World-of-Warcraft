@@ -29,7 +29,7 @@ end
 
 function private.GetTooltipSettingsFrame()
 	wipe(private.operationModules)
-	for _, moduleName in ipairs(TSM.Operations:GetModulesWithOperations()) do
+	for _, moduleName in TSM.Operations.ModuleIterator() do
 		tinsert(private.operationModules, moduleName)
 	end
 	return TSMAPI_FOUR.UI.NewElement("ScrollFrame", "tooltipSettings")
@@ -83,8 +83,8 @@ function private.GetTooltipSettingsFrame()
 			:SetStyle("margin.bottom", 16)
 			:AddChild(TSMAPI_FOUR.UI.NewElement("SelectionDropdown", "priceFormatDropdown")
 				:SetStyle("margin.right", 16)
-				:AddItem(format(L["Coins (%s)"], TSMAPI_FOUR.Money.ToString(3451267, "OPT_ICON")), "icon")
-				:AddItem(format(L["Text (%s)"], TSMAPI_FOUR.Money.ToString(3451267)), "text")
+				:AddItem(format(L["Coins (%s)"], TSM.Money.ToString(3451267, nil, "OPT_ICON")), "icon")
+				:AddItem(format(L["Text (%s)"], TSM.Money.ToString(3451267)), "text")
 				:SetSettingInfo(TSM.db.global.tooltipOptions, "tooltipPriceFormat")
 			)
 			:AddChild(TSMAPI_FOUR.UI.NewElement("SelectionDropdown", "modifierDropdown")

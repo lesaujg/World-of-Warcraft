@@ -3,7 +3,7 @@ local L, R = T.L, OneRingLib and OneRingLib.ext and OneRingLib.ext.RingKeeper
 if not (R and R.SetRing) then return end
 
 R:SetRing("DruidShift", {
-	{id="/cancelform [noflyable,noform:moonkin]\n/cast [flyable,outdoors,nocombat,noswimming,nomod][flying] {{spell:40120/33943}}; [outpost:corral,nomod,nospec:103/104] {{spell:161691}}; [swimming,nomod][flyable,nomod][flying] {{spell:783}}; [nocombat,outdoors,nomod:alt] {{mount:ground}}; [outdoors] {{spell:783}}", show="[known:40120/33943/1066/783]", _u="f"}, -- Travel
+	{id="/cancelform [noflyable,noform:moonkin]\n/cast [flyable,outdoors,nocombat,noswimming,nomod][flying] {{spell:783}}; [outpost:corral,nomod,nospec:103/104] {{spell:161691}}; [swimming,nomod][flyable,nomod][flying] {{spell:783}}; [nocombat,outdoors,nomod:alt] {{mount:ground}}; [outdoors] {{spell:783}}", show="[known:783]", _u="f"}, -- Travel
 	{c="c74cff", id=24858, _u="k"}, -- Moonkin
 	{c="fff04d", id=768, _u="c"}, -- Cat
 	{c="ff0000", id=5487, _u="b"}, -- Bear
@@ -194,7 +194,6 @@ R:SetRing("CommonTrades", {
 	{id="/cast {{spell:2259/51304}}", _u="a"}, -- alchemy
 	{id="/cast [mod] {{spell:818}}; {{spell:2550/51296}}", _u="c"}, -- cooking/campfire
 	{id="/cast [mod] {{spell:51005}}; {{spell:45357/45363}}", _u="i"}, -- inscription/milling
-	{id="/cast {{spell:3273/45542}}", _u="f"}, -- first aid
 	{id="/cast {{spell:4036/51306}}", _u="g"}, -- engineering
 	{id="/cast [mod] {{spell:80451}}; {{spell:78670/89722}}", _u="r"},
 	{id=53428, _u="u"}, -- runeforging

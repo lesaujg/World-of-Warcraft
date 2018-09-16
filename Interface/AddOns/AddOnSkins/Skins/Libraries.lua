@@ -191,6 +191,47 @@ function AS:SkinLibraries()
 			return frame
 		end, true)
 	end
+
+	local Poncho = LibStub('Poncho-1.0', true)
+	if Poncho then
+		if SushiDropFrame then
+			hooksecurefunc(SushiDropFrame, 'SetMenu', function(self)
+				if not self.bg.Backdrop then
+					self.bg:SetBackdrop(nil)
+					self.bg.SetBackdrop = function() end
+					AS:CreateBackdrop(self.bg)
+				end
+			end)
+		end
+	end
+
+	local DBIcon = LibStub("LibDBIcon-1.0", true)
+	if DBIcon then
+		DBIcon.tooltip:HookScript("OnShow", function(self) AS:SetTemplate(self, 'Transparent') end)
+	end
+
+	local LET = LibStub('LibExtraTip-1', true)
+	if LET then
+		LET:AddCallback(function(tip,_,_,_,_,quality)
+			local extraTip = LET:GetExtraTip(tip)
+			if extraTip then
+				AS:SetTemplate(extraTip)
+				if quality and quality > 1 then
+					local color = BAG_ITEM_QUALITY_COLORS[quality]
+					extraTip:SetBackdropBorderColor(color.r, color.g, color.b)
+				end
+			end
+		end, 0)
+	end
+
+	local LQT = LibStub("LibQTip-1.0", true)
+	if LQT then
+		hooksecurefunc(LQT, 'Acquire', function()
+			for _, Tooltip in LQT:IterateTooltips() do
+				AS:SkinFrame(Tooltip)
+			end
+		end)
+	end
 end
 
 AS:RegisterSkin('Libraries', AS.SkinLibraries)

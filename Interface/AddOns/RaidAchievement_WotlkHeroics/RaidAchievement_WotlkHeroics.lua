@@ -60,7 +60,7 @@ end
 
 
 function whraonevent(self,event,...)
-local arg1, arg2, arg3,arg4,arg5,arg6 = ...
+local arg1, arg2, arg3,arg4,arg5,arg6 = CombatLogGetCurrentEventInfo()
 
 if event == "PLAYER_ALIVE" then
 whrabilresnut=GetTime()
@@ -154,7 +154,7 @@ end
 
 if event == "COMBAT_LOG_EVENT_UNFILTERED" then
 
-local arg1, arg2, argnew, arg3,arg4,arg5,argnew2,arg6,arg7,arg8,argnew3,arg9,arg10,arg11,arg12,arg13,arg14, arg15 = ...
+local arg1, arg2, argnew, arg3,arg4,arg5,argnew2,arg6,arg7,arg8,argnew3,arg9,arg10,arg11,arg12,arg13,arg14, arg15 = CombatLogGetCurrentEventInfo()
 
 
 
@@ -164,7 +164,7 @@ if arg4==whramyname and arg2=="SPELL_AURA_REMOVED" and (arg9==58984 or arg9==66 
 whrabilresnut=GetTime()
 end
 
-if C_Map.GetBestMapForUnit("player")==536 then
+if C_Map.GetBestMapForUnit("player")==168 then
 	if whraspisokon[1]=="yes" and whraachdone1 then
 		if arg2=="SPELL_PERIODIC_DAMAGE" and arg13 and arg13>0 then
 			local id=raGetUnitID(arg6)

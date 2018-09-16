@@ -31,7 +31,7 @@ end
 
 function private.GetShoppingOperationSettings(operationName)
 	private.currentOperationName = operationName
-	local operation = TSM.operations.Shopping[private.currentOperationName]
+	local operation = TSM.Operations.GetSettings("Shopping", private.currentOperationName)
 	return TSMAPI_FOUR.UI.NewElement("Frame", "content")
 		:SetLayout("VERTICAL")
 		:AddChild(TSMAPI_FOUR.UI.NewElement("Texture", "line")
@@ -54,7 +54,7 @@ function private.GetShoppingOperationSettings(operationName)
 					:SetStyle("margin", { right = 10 })
 					:SetStyle("height", 24)
 					:SetStyle("justifyH", "LEFT")
-					:SetText(TSMAPI_FOUR.Money.ToString(operation.maxPrice) or operation.maxPrice)
+					:SetText(TSM.Money.ToString(operation.maxPrice) or operation.maxPrice)
 					:SetSettingInfo(operation, "maxPrice", TSM.MainUI.Operations.CheckCustomPrice)
 				)
 			)

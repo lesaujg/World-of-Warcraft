@@ -454,7 +454,7 @@ function ObjectiveTracker:SkinRewards()
 				local ItemOverlay = rewardItem.ItemOverlay
 				
 				if Icon then
-					Icon:Size(18)
+					--Icon:Size(18)
 					Icon:SetTexCoord(.08, .92, .08, .92)
 				end
 				
@@ -463,6 +463,39 @@ function ObjectiveTracker:SkinRewards()
 				end
 			end
 		end
+	end
+end
+
+function ObjectiveTracker:SkinWorldQuestsPOI(worldQuestType, rarity, isElite, tradeskillLineIndex, inProgress, selected, isCriteria, isSpellTarget, isEffectivelyTracked)
+	if not self.IsSkinned then
+		self:SetTemplate()
+		self:CreateShadow()
+		self.Underlay:SetAlpha(0)
+		self.Glow:SetAlpha(0)
+		self.SelectedGlow:SetAlpha(0)
+
+		self.IsSkinned = true
+	end
+	
+	self:SetNormalTexture("")
+	self:SetPushedTexture("")
+	self:SetHighlightTexture("")
+	
+	if selected then
+		self:SetBackdropColor(0/255, 152/255, 34/255, 1)
+	else
+		self:SetBackdropColor(unpack(C.Medias.BackdropColor))	
+	end
+	
+	if rarity == LE_WORLD_QUEST_QUALITY_RARE then
+		self.Shadow:SetBackdropBorderColor(0.00, 0.44, 0.87)
+	elseif rarity == LE_WORLD_QUEST_QUALITY_EPIC then
+		self.Shadow:SetBackdropBorderColor(0.64, 0.21, 0.93)
+	end
+	
+	if PreviousPOI and PreviousPOI.IsSkinned then
+		PreviousPOI:SetBackdropColor(unpack(C.Medias.BackdropColor))
+		PreviousPOI.Shadow:SetBackdropBorderColor(unpack(C.Medias.BorderColor))
 	end
 end
 
@@ -486,6 +519,7 @@ function ObjectiveTracker:AddHooks()
 	hooksecurefunc("QuestPOI_GetButton", self.SkinPOI)
 	hooksecurefunc("QuestPOI_SelectButton", self.SelectPOI)
 	hooksecurefunc("BonusObjectiveTracker_AnimateReward", self.SkinRewards)
+	hooksecurefunc("WorldMap_SetupWorldQuestButton", self.SkinWorldQuestsPOI)
 	
 	-- Currently there is display a bug with this hook
 	-- hooksecurefunc(QUEST_TRACKER_MODULE, "Update", self.ShowObjectiveTrackerLevel)

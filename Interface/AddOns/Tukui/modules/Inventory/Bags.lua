@@ -548,11 +548,12 @@ function Bags:SkinTokens()
 		local PreviousToken = _G["BackpackTokenFrameToken"..(i - 1)]
 
 		Token:SetParent(self.Bag)
-		Token:SetFrameStrata("HIGH")
 		Token:SetFrameLevel(5)
 		Token:SetScale(1)
 		Token:CreateBackdrop()
 		Token.Backdrop:SetOutside(Icon)
+		Token:SetFrameStrata("MEDIUM")
+		Token:SetFrameLevel(51)
 
 		Icon:SetSize(12,12)
 		Icon:SetTexCoord(unpack(T.IconCoord))
@@ -1048,6 +1049,10 @@ function Bags:Enable()
 	self:SetScript("OnEvent", self.OnEvent)
 
 	function ManageBackpackTokenFrame() end
+	
+	if ContainerFrame5 then
+		ContainerFrame5:EnableMouse(false)
+	end
 
 	ToggleAllBags()
 	ToggleAllBags()

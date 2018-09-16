@@ -17,76 +17,29 @@ function AS:SetTemplate(Frame, Template, UseTexture, TextureFile)
 		Frame:SetBackdrop({
 			bgFile = Texture,
 			edgeFile = AS.Blank,
-			tile = false, tileSize = 0, edgeSize = 1,
+			tile = false, tileSize = 0, edgeSize = AS.Mult,
 			insets = {left = 0, right = 0, top = 0, bottom = 0},
 		})
 	else
 		Frame:SetBackdrop({
 			bgFile = Texture,
 			edgeFile = AS.Blank,
-			tile = false, tileSize = 0, edgeSize = 1,
-			insets = { left = -1, right = -1, top = -1, bottom = -1},
+			tile = false, tileSize = 0, edgeSize = AS.Mult,
+			insets = { left = -AS.Mult, right = -AS.Mult, top = -AS.Mult, bottom = -AS.Mult},
 		})
 
-		if not Frame.isInsetDone then
-			Frame.InsetTop = Frame:CreateTexture(nil, "BORDER")
-			Frame.InsetTop:Point("TOPLEFT", Frame, "TOPLEFT", -1, 1)
-			Frame.InsetTop:Point("TOPRIGHT", Frame, "TOPRIGHT", 1, -1)
-			Frame.InsetTop:Height(1)
-			Frame.InsetTop:SetColorTexture(0,0,0)
-			Frame.InsetTop:SetDrawLayer("BORDER", -7)
+		local Backdrop = { edgeFile = Texture, edgeSize = AS.Mult, insets = { left = AS.Mult, right = AS.Mult, top = AS.Mult, bottom = AS.Mult } }
 
-			Frame.InsetBottom = Frame:CreateTexture(nil, "BORDER")
-			Frame.InsetBottom:Point("BOTTOMLEFT", Frame, "BOTTOMLEFT", -1, -1)
-			Frame.InsetBottom:Point("BOTTOMRIGHT", Frame, "BOTTOMRIGHT", 1, -1)
-			Frame.InsetBottom:Height(1)
-			Frame.InsetBottom:SetColorTexture(0,0,0)
-			Frame.InsetBottom:SetDrawLayer("BORDER", -7)
+		Frame.InsideBorder = CreateFrame("Frame", nil, Frame)
+		Frame.InsideBorder:SetInside(Frame, AS.Mult, AS.Mult)
+		Frame.InsideBorder:SetBackdrop(Backdrop)
+		Frame.InsideBorder:SetFrameLevel(Frame:GetFrameLevel() + 1)
+		Frame.InsideBorder:SetBackdropBorderColor(0, 0, 0, 1)
 
-			Frame.InsetLeft = Frame:CreateTexture(nil, "BORDER")
-			Frame.InsetLeft:Point("TOPLEFT", Frame, "TOPLEFT", -1, 1)
-			Frame.InsetLeft:Point("BOTTOMLEFT", Frame, "BOTTOMLEFT", 1, -1)
-			Frame.InsetLeft:Width(1)
-			Frame.InsetLeft:SetColorTexture(0,0,0)
-			Frame.InsetLeft:SetDrawLayer("BORDER", -7)
-
-			Frame.InsetRight = Frame:CreateTexture(nil, "BORDER")
-			Frame.InsetRight:Point("TOPRIGHT", Frame, "TOPRIGHT", 1, 1)
-			Frame.InsetRight:Point("BOTTOMRIGHT", Frame, "BOTTOMRIGHT", -1, -1)
-			Frame.InsetRight:Width(1)
-			Frame.InsetRight:SetColorTexture(0,0,0)
-			Frame.InsetRight:SetDrawLayer("BORDER", -7)
-
-			Frame.InsetInsideTop = Frame:CreateTexture(nil, "BORDER")
-			Frame.InsetInsideTop:Point("TOPLEFT", Frame, "TOPLEFT", 1, -1)
-			Frame.InsetInsideTop:Point("TOPRIGHT", Frame, "TOPRIGHT", -1, 1)
-			Frame.InsetInsideTop:Height(1)
-			Frame.InsetInsideTop:SetColorTexture(0,0,0)
-			Frame.InsetInsideTop:SetDrawLayer("BORDER", -7)
-
-			Frame.InsetInsideBottom = Frame:CreateTexture(nil, "BORDER")
-			Frame.InsetInsideBottom:Point("BOTTOMLEFT", Frame, "BOTTOMLEFT", 1, 1)
-			Frame.InsetInsideBottom:Point("BOTTOMRIGHT", Frame, "BOTTOMRIGHT", -1, 1)
-			Frame.InsetInsideBottom:Height(1)
-			Frame.InsetInsideBottom:SetColorTexture(0,0,0)
-			Frame.InsetInsideBottom:SetDrawLayer("BORDER", -7)
-
-			Frame.InsetInsideLeft = Frame:CreateTexture(nil, "BORDER")
-			Frame.InsetInsideLeft:Point("TOPLEFT", Frame, "TOPLEFT", 1, -1)
-			Frame.InsetInsideLeft:Point("BOTTOMLEFT", Frame, "BOTTOMLEFT", -1, 1)
-			Frame.InsetInsideLeft:Width(1)
-			Frame.InsetInsideLeft:SetColorTexture(0,0,0)
-			Frame.InsetInsideLeft:SetDrawLayer("BORDER", -7)
-
-			Frame.InsetInsideRight = Frame:CreateTexture(nil, "BORDER")
-			Frame.InsetInsideRight:Point("TOPRIGHT", Frame, "TOPRIGHT", -1, -1)
-			Frame.InsetInsideRight:Point("BOTTOMRIGHT", Frame, "BOTTOMRIGHT", 1, 1)
-			Frame.InsetInsideRight:Width(1)
-			Frame.InsetInsideRight:SetColorTexture(0,0,0)
-			Frame.InsetInsideRight:SetDrawLayer("BORDER", -7)
-
-			Frame.isInsetDone = true
-		end
+		Frame.OutsideBorder = CreateFrame("Frame", nil, Frame)
+		Frame.OutsideBorder:SetOutside(Frame, AS.Mult, AS.Mult)
+		Frame.OutsideBorder:SetBackdrop(Backdrop)
+		Frame.OutsideBorder:SetBackdropBorderColor(0, 0, 0, 1)
 	end
 
 	local R, G, B = unpack(AS.BackdropColor)
@@ -101,6 +54,10 @@ function AS:SetTemplate(Frame, Template, UseTexture, TextureFile)
 
 		Frame.template = Template
 		ElvUI[1]["frames"][Frame] = true
+
+		if AS:CheckOption('MerathilisUIStyling', 'ElvUI_MerathilisUI') then
+			Frame:Styling()
+		end
 	end
 
 	Frame:SetBackdropBorderColor(unpack(AS.BorderColor))
@@ -108,14 +65,8 @@ function AS:SetTemplate(Frame, Template, UseTexture, TextureFile)
 end
 
 local Insets = {
-	'InsetTop',
-	'InsetBottom',
-	'InsetLeft',
-	'InsetRight',
-	'InsetInsideTop',
-	'InsetInsideBottom',
-	'InsetInsideLeft',
-	'InsetInsideRight',
+	'InsideBorder',
+	'OutsideBorder',
 }
 
 function AS:HideInset(Frame)
@@ -227,18 +178,31 @@ function AS:CreateShadow(Frame)
 	local Shadow = CreateFrame("Frame", nil, Frame)
 	Shadow:SetFrameLevel(1)
 	Shadow:SetFrameStrata(Frame:GetFrameStrata())
-	Shadow:Point("TOPLEFT", -3, 3)
-	Shadow:Point("BOTTOMLEFT", -3, -3)
-	Shadow:Point("TOPRIGHT", 3, 3)
-	Shadow:Point("BOTTOMRIGHT", 3, -3)
+	Shadow:SetOutside(Frame, AS:Scale(3), AS:Scale(3))
 
-	Shadow:SetBackdrop({
-		edgeFile = [[Interface\AddOns\AddOnSkins\Media\Textures\Shadows]], edgeSize = AS:Scale(3),
-		insets = {left = AS:Scale(5), right = AS:Scale(5), top = AS:Scale(5), bottom = AS:Scale(5)},
-	})
-
-	Shadow:SetBackdropColor(0, 0, 0, 0)
+	Shadow:SetBackdrop({ edgeFile = [[Interface\AddOns\AddOnSkins\Media\Textures\Shadows]], edgeSize = AS:Scale(3) })
 	Shadow:SetBackdropBorderColor(0, 0, 0, 0.8)
+
+	if AS.ES then
+		AS.ES:RegisterShadow(Shadow)
+	end
+
+	Frame.Shadow = Shadow
+end
+
+function AS:CreateInvertedShadow(Frame)
+	if Frame.Shadow then return end
+
+	local Shadow = CreateFrame("Frame", nil, Frame)
+	Shadow:SetFrameLevel(Frame:GetFrameLevel() + 2)
+	Shadow:SetFrameStrata(Frame:GetFrameStrata())
+	Shadow:SetInside(Frame)
+	Shadow:SetBackdrop({
+		bgFile = [[Interface\AddOns\AddOnSkins\Media\Textures\InvertedShadow]],
+	})
+	Shadow:SetBackdropColor(0, 0, 0, .8)
+
+	Shadow.Inverted = true
 
 	if AS.ES then
 		AS.ES:RegisterShadow(Shadow)
@@ -310,10 +274,9 @@ function AS:SkinCloseButton(CloseButton, Reposition)
 	end)
 
 	CloseButton.Text = CloseButton:CreateFontString(nil, "OVERLAY")
-	CloseButton.Text:SetFont([[Interface\AddOns\AddOnSkins\Media\Fonts\PTSansNarrow.TTF]], 16, AS:CheckAddOn('ElvUI') and AS:CheckOption('ElvUISkinModule') and 'OUTLINE' or nil)
+	CloseButton.Text:SetFont([[Interface\AddOns\AddOnSkins\Media\Fonts\PTSansNarrow.TTF]], 16, 'OUTLINE')
 	CloseButton.Text:SetPoint("CENTER", CloseButton, 'CENTER')
 	CloseButton.Text:SetJustifyH('CENTER')
-	CloseButton.Text:SetJustifyV('MIDDLE')
 	CloseButton.Text:SetText('x')
 
 	if Reposition then
@@ -359,6 +322,40 @@ function AS:SkinEditBox(EditBox, Width, Height)
 	end
 
 	EditBox.isSkinned = true
+end
+
+function AS:SkinRadioButton(Button)
+	if Button.isSkinned then return end
+
+	Button:SetCheckedTexture("Interface\\AddOns\\AddOnSkins\\Media\\Textures\\RadioCircleChecked")
+	Button:GetCheckedTexture():SetVertexColor(0, 0.44, .87, 1)
+	Button:GetCheckedTexture():SetTexCoord(0, 1, 0, 1)
+
+	Button:SetHighlightTexture("Interface\\AddOns\\AddOnSkins\\Media\\Textures\\RadioCircleChecked")
+	Button:GetHighlightTexture():SetTexCoord(0, 1, 0, 1)
+	Button:GetHighlightTexture():SetVertexColor(0, 0.44, .87, 1)
+
+	Button:SetNormalTexture("Interface\\AddOns\\AddOnSkins\\Media\\Textures\\RadioCircle")
+	Button:GetNormalTexture():SetOutside()
+	Button:GetNormalTexture():SetTexCoord(0, 1, 0, 1)
+	Button:GetNormalTexture():SetVertexColor(unpack(AS.BorderColor))
+
+	Button:HookScript("OnDisable", function(self)
+		if not self.SetDisabledTexture then return end
+
+		if self:GetChecked() then
+			self:SetDisabledTexture("Interface\\AddOns\\AddOnSkins\\Media\\Textures\\RadioCircle")
+			self:GetDisabledTexture():SetVertexColor(0, 0.44, .87, 1)
+		else
+			self:SetDisabledTexture("Interface\\AddOns\\AddOnSkins\\Media\\Textures\\RadioCircle")
+			self:GetDisabledTexture():SetVertexColor(unpack(AS.BorderColor))
+		end
+	end)
+
+	Button.SetNormalTexture = AS.Noop
+	Button.SetPushedTexture = AS.Noop
+	Button.SetHighlightTexture = AS.Noop
+	Button.isSkinned = true
 end
 
 function AS:SkinCheckBox(CheckBox)
@@ -574,7 +571,9 @@ function AS:SkinNextPrevButton(Button, Vertical, Inverse)
 	local ButtonName = Button:GetName() and Button:GetName():lower()
 	Inverse = Inverse or ButtonName and (strfind(ButtonName, 'left') or strfind(ButtonName, 'prev') or strfind(ButtonName, 'decrement') or strfind(ButtonName, 'back'))
 
+	AS:StripTextures(Button)
 	AS:SkinButton(Button)
+
 	Button:SetSize(Button:GetWidth() - 7, Button:GetHeight() - 7)
 
 	if not Button.icon then
@@ -586,22 +585,22 @@ function AS:SkinNextPrevButton(Button, Vertical, Inverse)
 
 		Button:HookScript('OnMouseDown', function(self)
 			if self:IsEnabled() then
-				self.icon:SetPoint("CENTER", -1, -1);
+				self.icon:SetPoint("CENTER", -1, -1)
 			end
 		end)
 
 		Button:HookScript('OnMouseUp', function(self)
-			self.icon:SetPoint("CENTER", 0, 0);
+			self.icon:SetPoint("CENTER", 0, 0)
 		end)
 
 		Button:HookScript('OnDisable', function(self)
-			SetDesaturation(self.icon, true);
-			self.icon:SetAlpha(0.5);
+			SetDesaturation(self.icon, true)
+			self.icon:SetAlpha(0.5)
 		end)
 
 		Button:HookScript('OnEnable', function(self)
-			SetDesaturation(self.icon, false);
-			self.icon:SetAlpha(1.0);
+			SetDesaturation(self.icon, false)
+			self.icon:SetAlpha(1.0)
 		end)
 
 		if not Button:IsEnabled() then

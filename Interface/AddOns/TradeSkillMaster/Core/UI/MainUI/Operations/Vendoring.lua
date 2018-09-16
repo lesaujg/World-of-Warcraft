@@ -31,7 +31,7 @@ end
 function private.GetVendoringOperationSettings(operationName)
 	private.currentOperationName = operationName
 
-	local operation = TSM.operations.Vendoring[private.currentOperationName]
+	local operation = TSM.Operations.GetSettings("Vendoring", private.currentOperationName)
 	return TSMAPI_FOUR.UI.NewElement("Frame", "content")
 		:SetLayout("VERTICAL")
 		:AddChild(TSMAPI_FOUR.UI.NewElement("Texture", "line")
@@ -212,7 +212,7 @@ end
 -- ============================================================================
 
 function private.EnableBuyingToggleOnValueChanged(toggle, value)
-	local operation = TSM.operations.Vendoring[private.currentOperationName]
+	local operation = TSM.Operations.GetSettings("Vendoring", private.currentOperationName)
 	local settingsFrame = toggle:GetParentElement():GetParentElement():GetParentElement()
 	settingsFrame:GetElement("restockQtyFrame.left.linkBtn")
 		:SetStyle("backgroundVertexColor", value and "#ffffff" or "#424242")
@@ -221,7 +221,7 @@ function private.EnableBuyingToggleOnValueChanged(toggle, value)
 		:SetStyle("textColor", value and "#e2e2e2" or "#424242")
 	settingsFrame:GetElement("restockQtyFrame.restockQtyInput")
 		:SetDisabled(not value)
-		:SetText(TSMAPI_FOUR.Money.ToString(operation.restockQty, "OPT_NO_COLOR") or operation.restockQty or "")
+		:SetText(operation.restockQty or "")
 	settingsFrame:GetElement("restockSourcesFrame.left.linkBtn")
 		:SetStyle("backgroundVertexColor", value and "#ffffff" or "#424242")
 		:SetDisabled(not value)
@@ -233,7 +233,7 @@ function private.EnableBuyingToggleOnValueChanged(toggle, value)
 end
 
 function private.EnableSellingToggleOnValueChanged(toggle, value)
-	local operation = TSM.operations.Vendoring[private.currentOperationName]
+	local operation = TSM.Operations.GetSettings("Vendoring", private.currentOperationName)
 	local settingsFrame = toggle:GetParentElement():GetParentElement():GetParentElement()
 	settingsFrame:GetElement("keepQtyFrame.left.linkBtn")
 		:SetStyle("backgroundVertexColor", value and "#ffffff" or "#424242")
@@ -242,7 +242,7 @@ function private.EnableSellingToggleOnValueChanged(toggle, value)
 		:SetStyle("textColor", value and "#e2e2e2" or "#424242")
 	settingsFrame:GetElement("keepQtyFrame.keepQtyInput")
 		:SetDisabled(not value)
-		:SetText(TSMAPI_FOUR.Money.ToString(operation.keepQty, "OPT_NO_COLOR") or operation.keepQty or "")
+		:SetText(operation.keepQty or "")
 	settingsFrame:GetElement("keepQtyFrame.keepQtyMaxLabel")
 		:SetStyle("textColor", value and "#e2e2e2" or "#424242")
 
@@ -253,7 +253,7 @@ function private.EnableSellingToggleOnValueChanged(toggle, value)
 		:SetStyle("textColor", value and "#e2e2e2" or "#424242")
 	settingsFrame:GetElement("sellAfterExpiredFrame.sellAfterExpiredInput")
 		:SetDisabled(not value)
-		:SetText(TSMAPI_FOUR.Money.ToString(operation.sellAfterExpired, "OPT_NO_COLOR") or operation.sellAfterExpired or "")
+		:SetText(operation.sellAfterExpired or "")
 	settingsFrame:GetElement("sellAfterExpiredFrame.sellAfterExpiredMaxLabel")
 		:SetStyle("textColor", value and "#e2e2e2" or "#424242")
 

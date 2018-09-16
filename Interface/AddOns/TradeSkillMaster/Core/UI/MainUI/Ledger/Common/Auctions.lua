@@ -71,18 +71,20 @@ function private.DrawAuctionsPage()
 		:Select("player")
 	wipe(private.characters)
 	tinsert(private.characters, ALL)
-	for _, character in private.query:Iterator(true) do
+	for _, character in private.query:Iterator() do
 		tinsert(private.characters, character)
 	end
 
 	private.query:Reset()
 		:InnerJoin(TSM.ItemInfo.GetDBForJoin(), "itemString")
-		:LeftJoin(TSM.Groups.GetDBForJoin(), "itemString")
+		:LeftJoin(TSM.Groups.GetItemDBForJoin(), "itemString")
 		:OrderBy("time", false)
 
 	wipe(private.groupList)
 	tinsert(private.groupList, ALL)
-	TSM.Groups:GetSortedGroupPathList(private.groupList)
+	for _, groupPath in TSM.Groups.GroupIterator() do
+		tinsert(private.groupList, groupPath)
+	end
 	private.UpdateQuery()
 
 	return TSMAPI_FOUR.UI.NewElement("Frame", "content")
@@ -119,7 +121,7 @@ function private.DrawAuctionsPage()
 			:SetStyle("padding.right", 8)
 			:AddChild(TSMAPI_FOUR.UI.NewElement("Input", "searchInput")
 				:SetStyle("margin.right", 16)
-				:SetHintText("Filter by Keyword")
+				:SetHintText(L["Filter by Keyword"])
 				:SetStyle("hintTextColor", "#e2e2e2")
 				:SetStyle("hintJustifyH", "LEFT")
 				:SetStyle("font", TSM.UI.Fonts.MontserratMedium)

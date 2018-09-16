@@ -2,32 +2,12 @@
 ralllocationnames = {
 	"Icecrown Citadel", -- [1]
 	"Icecrown Citadel", -- [2]
-	{
-		["mapType"] = 3,
-		["mapID"] = 543,
-		["name"] = "Gorgrond",
-		["parentMapID"] = 572,
-	}, -- [3]
-	{
-		["mapType"] = 3,
-		["mapID"] = 543,
-		["name"] = "Gorgrond",
-		["parentMapID"] = 572,
-	}, -- [4]
+	"Trial of the Crusader", -- [3]
+	"Trial of the Crusader", -- [4]
 	"Ulduar", -- [5]
 	"Ulduar", -- [6]
-	{
-		["mapType"] = 3,
-		["mapID"] = 535,
-		["name"] = "Talador",
-		["parentMapID"] = 572,
-	}, -- [7]
-	{
-		["mapType"] = 3,
-		["mapID"] = 535,
-		["name"] = "Talador",
-		["parentMapID"] = 572,
-	}, -- [8]
+	"Naxxramas", -- [7]
+	"Naxxramas", -- [8]
 	"The Eye of Eternity", -- [9]
 	"The Eye of Eternity", -- [10]
 	"Onyxia's Lair", -- [11]
@@ -47,7 +27,12 @@ ralllocationnames = {
 		["name"] = "Spires of Arak",
 		["parentMapID"] = 572,
 	}, -- [22]
-	"Drak'Tharon Keep", -- [23]
+	{
+		["mapType"] = 3,
+		["mapID"] = 534,
+		["name"] = "Tanaan Jungle",
+		["parentMapID"] = 572,
+	}, -- [23]
 	"Gundrak", -- [24]
 	"Halls of Reflection", -- [25]
 	"Pit of Saron", -- [26]
@@ -95,7 +80,12 @@ ralllocationnames = {
 	"Scarlet Halls", -- [63]
 	"Scarlet Monastery", -- [64]
 	"Scholomance", -- [65]
-	"Stormstout Brewery", -- [66]
+	{
+		["mapType"] = 2,
+		["mapID"] = 876,
+		["name"] = "Kul Tiras",
+		["parentMapID"] = 947,
+	}, -- [66]
 	"Temple of the Jade Serpent", -- [67]
 	{
 		["mapType"] = 3,

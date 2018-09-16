@@ -178,7 +178,7 @@ DBMPandaria_SavedStats = {
 		["challengePulls"] = 0,
 	},
 	["691"] = {
-		["normalPulls"] = 15,
+		["normalPulls"] = 22,
 		["challengeKills"] = 0,
 		["challengeBestRank"] = 0,
 		["mythicKills"] = 0,
@@ -186,8 +186,8 @@ DBMPandaria_SavedStats = {
 		["heroic25Pulls"] = 0,
 		["lfr25Pulls"] = 0,
 		["normal25Pulls"] = 0,
-		["normalLastTime"] = 25.3860000000568,
-		["normalKills"] = 14,
+		["normalLastTime"] = 10.4990000000689,
+		["normalKills"] = 21,
 		["heroicPulls"] = 0,
 		["heroic25Kills"] = 0,
 		["timewalkerPulls"] = 0,
@@ -195,7 +195,7 @@ DBMPandaria_SavedStats = {
 		["normal25Kills"] = 0,
 		["mythicPulls"] = 0,
 		["timewalkerKills"] = 0,
-		["normalBestTime"] = 12.8380000000179,
+		["normalBestTime"] = 4.69999999999982,
 		["challengePulls"] = 0,
 	},
 }

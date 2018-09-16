@@ -11,7 +11,8 @@
 local _, TSM = ...
 local L = TSM.L
 local private = { errorFrame = nil, isSilent = nil, errorSuppressed = nil, errorReports = {}, num = 0 }
-local IS_DEV_VERSION = GetAddOnMetadata("TradeSkillMaster", "Version") == "@tsm-project-version@"
+-- use strmatch does this string doesn't itself get replaced when we deploy
+local IS_DEV_VERSION = strmatch(GetAddOnMetadata("TradeSkillMaster", "version"), "^@tsm%-project%-version@$") and true or false
 local MAX_ERROR_REPORT_AGE = 7 * 24 * 60 * 60 -- 1 week
 local MAX_STACK_DEPTH = 50
 local ADDON_SUITES = {
@@ -118,7 +119,7 @@ function private.ErrorHandler(msg, thread, errorTime)
 	local errMsgParts = {}
 
 	-- build stack trace with locals and get addon name
-	local addonName = "?"
+	local addonName = nil
 	local errLocation = strmatch(msg, "[A-Za-z]+%.lua:[0-9]+")
 	local stackInfo = { color.."Stack Trace:|r" }
 	local stackStarted = false
@@ -135,9 +136,9 @@ function private.ErrorHandler(msg, thread, errorTime)
 			else
 				stackStarted = (i > (thread and 1 or 4) and not strmatch(stackLine, "^%[C%]:"))
 			end
-			if stackStarted then
-				addonName = private.IsTSMAddon(stackLine) or (isSilent and "TradeSkillMaster")
-			end
+		end
+		if not addonName and stackStarted and strmatch(stackLine, "[A-Za-z]+%.lua:[0-9]+") then
+			addonName = private.IsTSMAddon(stackLine) or (isSilent and "TradeSkillMaster")
 		end
 		if stackStarted then
 			stackLine = gsub(stackLine, "%.%.%.T?r?a?d?e?S?k?i?l?lM?a?ster([_A-Za-z]*)\\", "TradeSkillMaster%1\\")
@@ -362,6 +363,9 @@ function private.IsTSMAddon(str)
 	elseif strfind(str, "Master\\Libs\\") then
 		-- ignore errors from libraries
 		return nil
+	elseif strfind(str, "Master\\Core\\API.lua") then
+		-- ignore errors from public APIs
+		return nil
 	elseif strfind(str, "Master_AppHelper\\") then
 		return "TradeSkillMaster_AppHelper"
 	elseif strfind(str, "lMaster\\") then
@@ -578,21 +582,16 @@ do
 			-- explicitly ignore these errors
 			tsmErrMsg = nil
 		end
-		local notOld = false
 		if tsmErrMsg then
 			-- look at the stack trace to see if this is a TSM error
 			for i = 2, MAX_STACK_DEPTH do
 				local stackLine = debugstack(i, 1, 0)
 				local oldModule = strmatch(stackLine, "(lMaster_[A-Za-z]+)")
 				if oldModule and tContains(TSM.CONST.OLD_TSM_MODULES, "TradeSkil"..oldModule) then
-					if strmatch(stackLine, "Old_Modules") then
-						notOld = true
-					else
-						-- ignore errors from old modules
-						return
-					end
+					-- ignore errors from old modules
+					return
 				end
-				if not strmatch(stackLine, "^%[C%]:") and not strmatch(stackLine, "^%(tail call%):") then
+				if not strmatch(stackLine, "^%[C%]:") and not strmatch(stackLine, "^%(tail call%):") and not strmatch(stackLine, "^%[string \"") then
 					if not private.IsTSMAddon(stackLine) then
 						tsmErrMsg = nil
 					end
@@ -607,7 +606,7 @@ do
 			end
 		end
 		local oldModule = strmatch(errMsg, "(lMaster_[A-Za-z]+)")
-		if oldModule and tContains(TSM.CONST.OLD_TSM_MODULES, "TradeSkil"..oldModule) and not notOld then
+		if oldModule and tContains(TSM.CONST.OLD_TSM_MODULES, "TradeSkil"..oldModule) then
 			-- ignore errors from old modules
 			return
 		end

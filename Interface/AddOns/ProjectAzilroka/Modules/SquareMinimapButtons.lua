@@ -4,7 +4,7 @@ PA.SMB, _G.SquareMinimapButtons = SMB, SMB
 
 SMB.Title = '|cFF16C3F2Square|r |cFFFFFFFFMinimap Buttons|r'
 SMB.Description = 'Minimap Button Bar / Minimap Button Skinning'
-SMB.Authors = 'Azilroka    Infinitron    Sinaris    Omega    Durc'
+SMB.Authors = 'Azilroka    Whiro    Sinaris    Omega    Durc'
 
 local strsub, strlen, strfind, ceil = strsub, strlen, strfind, ceil
 local tinsert, pairs, unpack, select, tContains = tinsert, pairs, unpack, select, tContains
@@ -83,16 +83,6 @@ function SMB:HandleBlizzardButtons()
 		GarrisonLandingPageMinimapButton:SetScript('OnEnter', nil)
 		GarrisonLandingPageMinimapButton:SetScript('OnLeave', nil)
 
-		GarrisonLandingPageMinimapButton:SetNormalTexture(1044517)
-		GarrisonLandingPageMinimapButton:GetNormalTexture():SetTexCoord(unpack(self.TexCoords))
-		GarrisonLandingPageMinimapButton:GetNormalTexture():SetInside()
-
-		GarrisonLandingPageMinimapButton:SetPushedTexture(1044517)
-		GarrisonLandingPageMinimapButton:GetPushedTexture():SetTexCoord(unpack(self.TexCoords))
-		GarrisonLandingPageMinimapButton:GetPushedTexture():SetInside()
-
-		GarrisonLandingPageMinimapButton:SetHighlightTexture(nil)
-
 		GarrisonLandingPageMinimapButton:HookScript('OnEnter', function(self)
 			self:SetBackdropBorderColor(unpack(PA.ClassColor))
 			if SMB.Bar:IsShown() then
@@ -121,7 +111,7 @@ function SMB:HandleBlizzardButtons()
 		Frame:EnableMouse(true)
 		Frame:HookScript('OnEnter', function(self)
 			if HasNewMail() then
-				GameTooltip:SetOwner(self, "ANCHOR_BOTTOMLEFT");
+				GameTooltip:SetOwner(self, "ANCHOR_BOTTOMLEFT")
 				if GameTooltip:IsOwned(self) then
 					MinimapMailFrameUpdate()
 				end
@@ -375,6 +365,12 @@ function SMB:Update()
 	local BarHeight = (Spacing + ((Size * (AnchorY * Mult)) + ((Spacing * (AnchorY - 1)) * Mult) + (Spacing * Mult)))
 	self.Bar:SetSize(BarWidth, BarHeight)
 
+	if self.db.Backdrop then
+		self.Bar:SetTemplate('Transparent', true)
+	else
+		self.Bar:SetBackdrop(nil)
+	end
+
 	self.Bar:Show()
 
 	if self.db['BarMouseOver'] then
@@ -413,6 +409,11 @@ function SMB:GetOptions()
 						order = 2,
 						type = 'toggle',
 						name = PA.ACL['Bar MouseOver'],
+					},
+					Backdrop = {
+						order = 3,
+						type = 'toggle',
+						name = PA.ACL['Bar Backdrop'],
 					},
 					IconSize = {
 						order = 4,
@@ -484,7 +485,7 @@ function SMB:GetOptions()
 		},
 	}
 
-	Options.args.profiles = LibStub('AceDBOptions-3.0'):GetOptionsTable(PA.data)
+	Options.args.profiles = LibStub('AceDBOptions-3.0'):GetOptionsTable(SMB.data)
 	Options.args.profiles.order = -2
 
 	PA.Options.args.SquareMinimapButton = Options
@@ -495,14 +496,15 @@ function SMB:BuildProfile()
 		profile = {
 			['BarMouseOver'] = false,
 			['BarEnabled'] = false,
+			['Backdrop'] = false,
 			['IconSize'] = 27,
 			['ButtonsPerRow'] = 12,
 			['ButtonSpacing'] = 2,
 			['HideGarrison'] = false,
-			['MoveGarrison'] = false,
-			['MoveMail'] = false,
-			['MoveTracker'] = false,
-			['MoveQueue'] = false,
+			['MoveGarrison'] = true,
+			['MoveMail'] = true,
+			['MoveTracker'] = true,
+			['MoveQueue'] = true,
 		},
 	})
 	self.data.RegisterCallback(self, 'OnProfileChanged', 'SetupProfile')
@@ -515,6 +517,18 @@ function SMB:SetupProfile()
 end
 
 function SMB:Initialize()
+	if PA.ElvUI and PA.SLE then
+		if ElvUI[1].private.sle.minimap.mapicons.enable then
+			StaticPopupDialogs["PA_INCOMPATIBLE"].text = 'Square Minimap Buttons and S&L MiniMap Buttons are incompatible. You will have to choose one. This will reload the interface.'
+			StaticPopupDialogs["PA_INCOMPATIBLE"].button1 = 'Square Minimap Buttons'
+			StaticPopupDialogs["PA_INCOMPATIBLE"].button2 = 'S&L MiniMap Buttons'
+			StaticPopupDialogs["PA_INCOMPATIBLE"].OnAccept = function() ElvUI[1].private.sle.minimap.mapicons.enable = false ReloadUI() end
+			StaticPopupDialogs["PA_INCOMPATIBLE"].OnCancel = function() PA.db['SMB'] = false ReloadUI() end
+			StaticPopup_Show("PA_INCOMPATIBLE")
+			return
+		end
+	end
+
 	SMB:BuildProfile()
 	SMB:GetOptions()
 
@@ -528,7 +542,6 @@ function SMB:Initialize()
 	SMB.Bar:SetMovable(true)
 	SMB.Bar:EnableMouse(true)
 	SMB.Bar:SetSize(SMB.db.IconSize, SMB.db.IconSize)
-	SMB.Bar:SetTemplate('Transparent', true)
 
 	SMB.Bar:SetScript('OnEnter', function(self) UIFrameFadeIn(self, 0.2, self:GetAlpha(), 1) end)
 	SMB.Bar:SetScript('OnLeave', function(self)
@@ -547,7 +560,6 @@ function SMB:Initialize()
 
 	Minimap:SetMaskTexture('Interface\\ChatFrame\\ChatFrameBackground')
 
-	SMB:HandleBlizzardButtons()
-
-	SMB:ScheduleRepeatingTimer('GrabMinimapButtons', 5)
+	SMB:ScheduleRepeatingTimer('GrabMinimapButtons', 6)
+	SMB:ScheduleTimer('HandleBlizzardButtons', 7)
 end

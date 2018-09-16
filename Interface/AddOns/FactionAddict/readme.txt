@@ -4,7 +4,7 @@
 -- Desc: Addon for World of Warcraft
 --
 -- Author: gmz323(Greg)
--- current version: v1.50
+-- current version: v1.52
 -- (c) 2011-2018
 --
 =============================================================================
@@ -68,6 +68,15 @@ My Other Addons:
 
 Changelog:
 ==========
+
+v1.52 (2018-09-01)
+------------------
+* Attempt to fix the Chromie reputation displaying incorrect "percent to complete". This issue is due to the wow api returning a Friendship Max Rep value of 42000 but the actual max being 15000. This has to be hardcoded internally in the addon for now. (Thanks to TinyPhreak for the bug report and additional details!)
+* Updated many of the BFA faction icons to match their reputation reward icon.
+
+v1.51 (2018-08-17)
+------------------
+* Fixed a bug related to 'Proudmoore Admiralty' faction. Incorrect factionID used by addon. (Thanks to DaBear78 for the bug report and finding the issue!)
 
 v1.50 (2018-07-29)
 ------------------

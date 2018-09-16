@@ -9,7 +9,13 @@
 local _, TSM = ...
 local GroupSearch = TSM.Shopping:NewPackage("GroupSearch")
 local L = TSM.L
-local private = { groups = {}, itemList = {}, maxQuantity = {}, scanThreadId = nil }
+local private = {
+	groups = {},
+	itemList = {},
+	maxQuantity = {},
+	scanThreadId = nil,
+	seenMaxPrice = {},
+}
 
 
 
@@ -34,15 +40,16 @@ end
 
 function private.ScanThread(auctionScan, groupList)
 	auctionScan:SetCustomFilterFunc(private.ScanFilter)
+	auctionScan:SetScript("OnFilterPartialDone", private.OnFilterPartialDone)
+	wipe(private.seenMaxPrice)
 
 	-- create the list of items, and add filters for them
 	wipe(private.itemList)
 	wipe(private.maxQuantity)
 	for _, groupPath in ipairs(groupList) do
 		private.groups[groupPath] = true
-		local _, operation = TSMAPI.Operations:GetFirstByGroup(groupPath, "Shopping")
-		if operation then
-			for _, itemString in TSMAPI_FOUR.Groups.ItemIterator(groupPath) do
+		for _, _, operation in TSM.Operations.GroupOperationIterator("Shopping", groupPath) do
+			for _, itemString in TSM.Groups.ItemIterator(groupPath) do
 				local isValid, err = TSMAPI_FOUR.CustomPrice.Validate(operation.maxPrice)
 				if operation.restockQuantity > 0 then
 					-- include mail and bags
@@ -91,12 +98,12 @@ function private.ScanFilter(row)
 	end
 
 	local itemString = row:GetField("itemString")
-	local groupPath = TSMAPI_FOUR.Groups.GetPathByItem(itemString)
+	local groupPath = TSM.Groups.GetPathByItem(itemString)
 	if not groupPath or not private.groups[groupPath] then
 		return true
 	end
 
-	local operation = TSM.Operations.GetFirstOptionsByItem("Shopping", itemString)
+	local _, operation = TSM.Operations.GetFirstOperationByItem("Shopping", itemString)
 	if not operation then
 		return true
 	end
@@ -108,6 +115,7 @@ function private.ScanFilter(row)
 	if not operation.showAboveMaxPrice then
 		local maxPrice = TSMAPI_FOUR.CustomPrice.GetValue(operation.maxPrice, itemString)
 		if not maxPrice or itemBuyout > maxPrice then
+			private.seenMaxPrice[itemString] = true
 			return true
 		end
 	end
@@ -115,9 +123,27 @@ function private.ScanFilter(row)
 	return false
 end
 
+function private.OnFilterPartialDone(auctionScan, filter)
+	for _, itemString in ipairs(filter:GetItems()) do
+		local _, operationSettings = TSM.Operations.GetFirstOperationByItem("Shopping", itemString)
+		-- the operation may get removed as we scan
+		if operationSettings then
+			if operationSettings.showAboveMaxPrice then
+				-- need to scan all the auctions
+				return false
+			end
+			if not private.seenMaxPrice[itemString] then
+				-- need to keep scanning until we reach the max price
+				return false
+			end
+		end
+	end
+	return true
+end
+
 function private.MarketValueFunction(row)
 	local itemString = row:GetField("itemString")
-	local operation = TSM.Operations.GetFirstOptionsByItem("Shopping", itemString)
+	local _, operation = TSM.Operations.GetFirstOperationByItem("Shopping", itemString)
 	if not operation then
 		return
 	end

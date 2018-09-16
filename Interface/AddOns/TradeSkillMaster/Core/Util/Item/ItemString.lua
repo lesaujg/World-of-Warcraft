@@ -10,7 +10,7 @@
 -- @submodule Item
 
 local _, TSM = ...
-local private = { bonusIdCache = {}, bonusIdTemp = {}, itemStringCache = {} }
+local private = { bonusIdCache = {}, bonusIdTemp = {}, itemStringCache = {}, filteredItemStringCache = {} }
 local ITEM_UPGRADE_VALUE_SHIFT = 1000000
 
 
@@ -30,6 +30,13 @@ function TSMAPI_FOUR.Item.ToItemString(item)
 		private.itemStringCache[item] = private.ToItemString(item)
 	end
 	return private.itemStringCache[item]
+end
+
+function TSMAPI_FOUR.Item.FilterItemString(itemString)
+	if not private.filteredItemStringCache[itemString] then
+		private.filteredItemStringCache[itemString] = private.FilterImportantBonsuIds(itemString)
+	end
+	return private.filteredItemStringCache[itemString]
 end
 
 --- Converts the parameter into an itemId.
@@ -55,7 +62,7 @@ function TSMAPI_FOUR.Item.ToBaseItemString(item, doGroupLookup)
 	if type(itemString) == "string" and strmatch(itemString, "^[ip]:[0-9]+$") then return itemString end
 
 	local baseItemString = strmatch(itemString, "([ip]:%d+)")
-	if not doGroupLookup or (TSMAPI_FOUR.Groups.IsItemInGroup(baseItemString) and not TSMAPI_FOUR.Groups.IsItemInGroup(itemString)) then
+	if not doGroupLookup or (TSM.Groups.IsItemInGroup(baseItemString) and not TSM.Groups.IsItemInGroup(itemString)) then
 		-- either we're not doing a group lookup, or the base item is in a group and the specific item is not, so return the base item
 		return baseItemString
 	end
@@ -71,8 +78,8 @@ function TSMAPI_FOUR.Item.ToWowItemString(itemString)
 	local spec = GetSpecialization()
 	spec = spec and GetSpecializationInfo(spec) or ""
 	local upgradeValue = private.GetUpgradeValue(itemString)
-	if upgradeValue and numBonus then
-		local bonusIds = strmatch(itemString, "i:[0-9]+:[0-9%-]*:[0-9]+:(.+):"..upgradeValue.."$")
+	local bonusIds = upgradeValue and numBonus and strmatch(itemString, "i:[0-9]+:[0-9%-]*:[0-9]+:(.+):"..upgradeValue.."$")
+	if bonusIds then
 		upgradeValue = upgradeValue - ITEM_UPGRADE_VALUE_SHIFT
 		return "item:"..itemId.."::::::"..(rand or "").."::"..level..":"..spec..":512::"..numBonus..":"..bonusIds..":"..upgradeValue..":::"
 	end
@@ -96,6 +103,10 @@ function private.ToItemString(item)
 			end
 			-- this is already an itemString
 			return item
+		end
+		itemId = strmatch(item, "item:(%d+)")
+		if itemId and tonumber(itemId) > TSM.CONST.ITEM_MAX_ID then
+			return nil
 		end
 	elseif paramType == "number" or tonumber(item) then
 		local itemId = tonumber(item)
@@ -183,7 +194,7 @@ function private.FixItemString(itemString)
 			itemString = gsub(itemString, ":[0-9]*$", "")
 		end
 		-- we might have already applied the upgrade value shift
-		if numExtraParts == 1 and (lastExtraPart >= 98 and lastExtraPart <= 110) or (lastExtraPart - ITEM_UPGRADE_VALUE_SHIFT >= 90 and lastExtraPart - ITEM_UPGRADE_VALUE_SHIFT <= 110) then
+		if numExtraParts == 1 and (lastExtraPart >= 98 and lastExtraPart <= MAX_PLAYER_LEVEL) or (lastExtraPart - ITEM_UPGRADE_VALUE_SHIFT >= 90 and lastExtraPart - ITEM_UPGRADE_VALUE_SHIFT <= MAX_PLAYER_LEVEL) then
 			-- this extra part is likely the upgradeValue which we want to keep so increase it by UPGRADE_VALUE_SHIFT
 			if lastExtraPart < ITEM_UPGRADE_VALUE_SHIFT then
 				lastExtraPart = lastExtraPart + ITEM_UPGRADE_VALUE_SHIFT
@@ -191,8 +202,6 @@ function private.FixItemString(itemString)
 			itemString = itemString..":"..lastExtraPart
 		end
 		itemString = private.RemoveExtra(itemString)
-		-- filter out bonusIds we don't care about
-		return private.FilterImportantBonsuIds(itemString)
 	end
 	return itemString
 end

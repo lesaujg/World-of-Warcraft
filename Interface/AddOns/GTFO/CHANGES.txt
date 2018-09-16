@@ -1,13 +1,13 @@
 ------------------------------------------------------------------------
-r405 | Zensunim | 2018-07-25 22:45:49 +0000 (Wed, 25 Jul 2018) | 3 lines
+r423 | Zensunim | 2018-09-13 07:20:22 +0000 (Thu, 13 Sep 2018) | 2 lines
 Changed paths:
    M /trunk/GTFO.lua
    M /trunk/GTFO.toc
-   M /trunk/GTFO_Spells_Special.lua
+   M /trunk/GTFO_Fail_BFA.lua
+   M /trunk/GTFO_Spells_BFA.lua
    M /trunk/ReadMe.txt
 
-4.46.1
-* Added Battle for Azeroth launch event spells (special)
-
+4.46.6
+* Added BFA spells for Uldir
 ------------------------------------------------------------------------
 

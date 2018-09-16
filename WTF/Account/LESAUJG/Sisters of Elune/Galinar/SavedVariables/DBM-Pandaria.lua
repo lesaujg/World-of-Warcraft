@@ -20,7 +20,7 @@ DBMPandaria_SavedStats = {
 		["challengePulls"] = 0,
 	},
 	["814"] = {
-		["normalPulls"] = 19,
+		["normalPulls"] = 27,
 		["challengeKills"] = 0,
 		["challengeBestRank"] = 0,
 		["mythicKills"] = 0,
@@ -29,7 +29,7 @@ DBMPandaria_SavedStats = {
 		["lfr25Pulls"] = 0,
 		["normal25Pulls"] = 0,
 		["normalLastTime"] = 60.9390000000131,
-		["normalKills"] = 19,
+		["normalKills"] = 27,
 		["normalBestTime"] = 8.39100000000326,
 		["heroic25Kills"] = 0,
 		["heroicKills"] = 0,

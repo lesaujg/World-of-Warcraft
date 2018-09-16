@@ -13,7 +13,7 @@ local private = {
 	pendingRPC = {},
 	rpcSeqNum = 0,
 }
-local RPC_EXTRA_TIMEOUT = 5
+local RPC_EXTRA_TIMEOUT = 15
 
 
 
@@ -25,6 +25,7 @@ function RPC.OnInitialize()
 	TSM.Sync.Comm.RegisterHandler(TSM.Sync.DATA_TYPES.RPC_CALL, private.HandleCall)
 	TSM.Sync.Comm.RegisterHandler(TSM.Sync.DATA_TYPES.RPC_RETURN, private.HandleReturn)
 	TSM.Sync.Comm.RegisterHandler(TSM.Sync.DATA_TYPES.RPC_PREAMBLE, private.HandlePreamble)
+	TSMAPI_FOUR.Delay.AfterTime(1, private.CheckPending, 1)
 end
 
 function RPC.Register(name, func)
@@ -52,10 +53,10 @@ function RPC.Call(name, targetPlayer, handler, ...)
 	local context = TSMAPI_FOUR.Util.AcquireTempTable()
 	context.name = name
 	context.handler = handler
-	context.timeoutTime = time() + RPC_EXTRA_TIMEOUT + ceil(numBytes / ChatThrottleLib.MAX_CPS)
+	context.timeoutTime = time() + RPC_EXTRA_TIMEOUT + private.EstimateTransferTime(numBytes)
 	private.pendingRPC[private.rpcSeqNum] = context
 
-	return true
+	return true, (context.timeoutTime - time()) * 2 / 3
 end
 
 function RPC.Cancel(name, handler)
@@ -66,23 +67,6 @@ function RPC.Cancel(name, handler)
 			return
 		end
 	end
-end
-
-function RPC.CheckPending()
-	local timedOut = TSMAPI_FOUR.Util.AcquireTempTable()
-	for seq, info in pairs(private.pendingRPC) do
-		if time() > info.timeoutTime then
-			tinsert(timedOut, seq)
-		end
-	end
-	for _, seq in ipairs(timedOut) do
-		local info = private.pendingRPC[seq]
-		TSM:LOG_WARN("RPC timed out (%s)", info.name)
-		info.handler()
-		TSMAPI_FOUR.Util.ReleaseTempTable(info)
-		private.pendingRPC[seq] = nil
-	end
-	TSMAPI_FOUR.Util.ReleaseTempTable(timedOut)
 end
 
 
@@ -106,10 +90,11 @@ function private.HandleCall(dataType, _, sourcePlayer, data)
 	TSMAPI_FOUR.Util.ReleaseTempTable(responseData.result)
 	TSMAPI_FOUR.Util.ReleaseTempTable(responseData)
 
-	if numBytes >= ChatThrottleLib.MAX_CPS then
+	local transferTime = private.EstimateTransferTime(numBytes)
+	if transferTime > 1 then
 		-- We sent more than 1 second worth of data back, so send a preamble to allow the source to adjust its timeout accordingly.
 		local preambleData = TSMAPI_FOUR.Util.AcquireTempTable()
-		preambleData.transferTime = ceil(numBytes / ChatThrottleLib.MAX_CPS)
+		preambleData.transferTime = transferTime
 		preambleData.seq = data.seq
 		TSM.Sync.Comm.SendData(TSM.Sync.DATA_TYPES.RPC_PREAMBLE, sourcePlayer, preambleData)
 		TSMAPI_FOUR.Util.ReleaseTempTable(preambleData)
@@ -137,4 +122,34 @@ function private.HandlePreamble(dataType, _, _, data)
 	end
 	-- extend the timeout
 	private.pendingRPC[data.seq].timeoutTime = time() + RPC_EXTRA_TIMEOUT + data.transferTime
+end
+
+
+
+-- ============================================================================
+-- Private Helper Functions
+-- ============================================================================
+
+function private.EstimateTransferTime(numBytes)
+	return ceil(numBytes / (ChatThrottleLib.MAX_CPS / 2))
+end
+
+function private.CheckPending()
+	if not next(private.pendingRPC) then
+		return
+	end
+	local timedOut = TSMAPI_FOUR.Util.AcquireTempTable()
+	for seq, info in pairs(private.pendingRPC) do
+		if time() > info.timeoutTime then
+			tinsert(timedOut, seq)
+		end
+	end
+	for _, seq in ipairs(timedOut) do
+		local info = private.pendingRPC[seq]
+		TSM:LOG_WARN("RPC timed out (%s)", info.name)
+		info.handler()
+		TSMAPI_FOUR.Util.ReleaseTempTable(info)
+		private.pendingRPC[seq] = nil
+	end
+	TSMAPI_FOUR.Util.ReleaseTempTable(timedOut)
 end

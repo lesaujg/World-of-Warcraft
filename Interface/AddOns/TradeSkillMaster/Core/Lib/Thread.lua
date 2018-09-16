@@ -11,7 +11,12 @@
 
 local _, TSM = ...
 TSMAPI_FOUR.Thread = {}
-local private = { threads = {}, queue = {}, runningThread = nil, frame = nil }
+local private = {
+	threads = {},
+	queue = {},
+	runningThread = nil,
+	schedulerFrame = nil,
+}
 local MAX_TIME_USAGE_RATIO = 0.25
 local EXCESSIVE_TIME_USED_RATIO = 1.2
 local EXCESSIVE_TIME_LOG_THRESHOLD_MS = 100
@@ -19,6 +24,7 @@ local MAX_QUANTUM_MS = 10
 local SEND_MSG_SYNC_TIMEOUT_MS = 3000
 local YIELD_VALUE_START = {}
 local YIELD_VALUE = {}
+local SCHEDULER_TIME_WARNING_THRESHOLD_MS = 100
 local Thread = TSMAPI_FOUR.Class.DefineClass("Thread")
 
 
@@ -65,6 +71,8 @@ end
 function TSMAPI_FOUR.Thread.Start(threadId, ...)
 	local thread = private.threads[threadId]
 	assert(not thread:_IsAlive())
+	-- make sure the scheduler is running
+	private.StartScheduler()
 	thread:_Start(...)
 end
 
@@ -147,8 +155,8 @@ end
 --- Wait for a WoW event.
 -- This must be called from a thread context.
 -- @tparam string event The WoW event to wait for
-function TSMAPI_FOUR.Thread.WaitForEvent(event)
-	return private.runningThread:_WaitForEvent(event)
+function TSMAPI_FOUR.Thread.WaitForEvent(...)
+	return private.runningThread:_WaitForEvent(...)
 end
 
 --- Wait for a function.
@@ -202,7 +210,7 @@ function TSMAPI_FOUR.Thread.GetDebugInfo()
 			temp.state = thread._state
 			temp.sleepTime = thread._sleepTime
 			temp.numMessages = (#thread._messages > 0) and #thread._messages or nil
-			temp.eventName = thread._eventName
+			temp.eventNames = thread._eventNames
 			temp.eventArgs = thread._eventArgs
 			temp.waitFunction = thread._waitFunction
 			temp.waitFunctionArgs = thread._waitFunctionArgs
@@ -240,7 +248,7 @@ function Thread.__init(self, name, func, isImmortal)
 	self._state = "DEAD"
 	self._endTime = nil
 	self._sleepTime = nil
-	self._eventName = nil
+	self._eventNames = {}
 	self._eventArgs = nil
 	self._waitFunction = nil
 	self._waitFunctionArgs = nil
@@ -266,7 +274,7 @@ function Thread._Start(self, ...)
 	self._state = "READY"
 	self._endTime = 0
 	self._sleepTime = nil
-	self._eventName = nil
+	wipe(self._eventNames)
 	self._eventArgs = nil
 	self._waitFunction = nil
 	self._waitFunctionArgs = nil
@@ -397,7 +405,7 @@ function Thread._UpdateState(self, elapsed)
 			self._state = "READY"
 		end
 	elseif self._state == "WAITING_FOR_EVENT" then
-		assert(self._eventName or self._eventArgs)
+		assert(self._eventNames or self._eventArgs)
 		if self._eventArgs then
 			self._state = "READY"
 		end
@@ -426,10 +434,10 @@ end
 
 function Thread._ProcessEvent(self, event, ...)
 	if self._state == "WAITING_FOR_EVENT" then
-		assert(self._eventName or self._eventArgs)
-		if event == self._eventName then
-			self._eventName = nil -- only trigger the event once
-			self._eventArgs = TSMAPI_FOUR.Util.AcquireTempTable(...)
+		assert(self._eventNames or self._eventArgs)
+		if self._eventNames[event] then
+			wipe(self._eventNames) -- only trigger the event once then clear all
+			self._eventArgs = TSMAPI_FOUR.Util.AcquireTempTable(event, ...)
 		end
 	end
 end
@@ -507,14 +515,15 @@ function Thread._SendSyncMessage(self, destThread, ...)
 	self:_Yield()
 end
 
-function Thread._WaitForEvent(self, event)
+function Thread._WaitForEvent(self, ...)
 	self._state = "WAITING_FOR_EVENT"
-	self._eventName = event
 	self._eventArgs = nil
-	private.frame:RegisterEvent(event)
+	for _, event in TSMAPI_FOUR.Util.VarargIterator(...) do
+		self._eventNames[event] = true
+		private.schedulerFrame:RegisterEvent(event)
+	end
 	self:_Yield()
 	local result = self._eventArgs
-	self._eventName = nil
 	self._eventArgs = nil
 	return TSMAPI_FOUR.Util.UnpackAndReleaseTempTable(result)
 end
@@ -579,11 +588,20 @@ end
 -- Private Helper Functions
 -- ============================================================================
 
+function private.StartScheduler()
+	if private.schedulerFrame:IsVisible() then
+		return
+	end
+	TSM:LOG_INFO("Starting scheduler")
+	private.schedulerFrame:Show()
+end
+
 function private.RunScheduler(_, elapsed)
 	-- don't run any threads while in combat
 	if InCombatLockdown() then
 		return
 	end
+	local startTime = debugprofilestop()
 	local numReadyThreads = 0
 	wipe(private.queue)
 
@@ -621,11 +639,33 @@ function private.RunScheduler(_, elapsed)
 			break
 		end
 	end
+
+	local hasAliveThread = false
+	for _, thread in pairs(private.threads) do
+		if thread:_IsAlive() then
+			hasAliveThread = true
+			break
+		end
+	end
+	if not hasAliveThread then
+		TSM:LOG_INFO("Stopping the scheduler")
+		private.schedulerFrame:Hide()
+	end
+
+	local timeTaken = debugprofilestop() - startTime
+	if timeTaken > SCHEDULER_TIME_WARNING_THRESHOLD_MS then
+		TSM:LOG_WARN("Scheduler took %.2fms", timeTaken)
+	end
 end
 
-function private.ProcessEvent(self, ...)
+function private.ProcessEvent(self, event, ...)
+	local startTime = debugprofilestop()
 	for _, thread in pairs(private.threads) do
-		thread:_ProcessEvent(...)
+		thread:_ProcessEvent(event, ...)
+	end
+	local timeTaken = debugprofilestop() - startTime
+	if timeTaken > SCHEDULER_TIME_WARNING_THRESHOLD_MS then
+		TSM:LOG_WARN("Scheduler took %.2fms to process %s", timeTaken, tostring(event))
 	end
 end
 
@@ -636,7 +676,8 @@ end
 -- ============================================================================
 
 do
-	private.frame = CreateFrame("Frame")
-	private.frame:SetScript("OnUpdate", private.RunScheduler)
-	private.frame:SetScript("OnEvent", private.ProcessEvent)
+	private.schedulerFrame = CreateFrame("Frame")
+	private.schedulerFrame:Hide()
+	private.schedulerFrame:SetScript("OnUpdate", private.RunScheduler)
+	private.schedulerFrame:SetScript("OnEvent", private.ProcessEvent)
 end

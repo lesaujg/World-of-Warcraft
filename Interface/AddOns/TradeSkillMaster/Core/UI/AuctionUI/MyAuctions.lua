@@ -25,31 +25,7 @@ local DURATION_LIST = {
 
 function MyAuctions.OnInitialize()
 	private.FSMCreate()
-	TSM.UI.AuctionUI.RegisterTopLevelPage(L["My Auctions"], "iconPack.24x24/Auctions", private.GetMyAuctionsFrame)
-
-	-- setup hooks to shift-click on items to quickly filter for them
-	local function HandleShiftClickItem(origFunc, link)
-		local putIntoChat = origFunc(link)
-		if putIntoChat or not private.frame then
-			return putIntoChat
-		end
-		local name = TSMAPI_FOUR.Item.GetName(link)
-		if name then
-			private.frame:GetElement("headerFrame.keywordInput")
-				:SetText(name)
-				:Draw()
-			return true
-		end
-		return putIntoChat
-	end
-	local origHandleModifiedItemClick = HandleModifiedItemClick
-	HandleModifiedItemClick = function(link)
-		return HandleShiftClickItem(origHandleModifiedItemClick, link)
-	end
-	local origChatEdit_InsertLink = ChatEdit_InsertLink
-	ChatEdit_InsertLink = function(link)
-		return HandleShiftClickItem(origChatEdit_InsertLink, link)
-	end
+	TSM.UI.AuctionUI.RegisterTopLevelPage(L["My Auctions"], "iconPack.24x24/Auctions", private.GetMyAuctionsFrame, private.OnItemLinked)
 end
 
 
@@ -262,6 +238,13 @@ end
 -- Local Script Handlers
 -- ============================================================================
 
+function private.OnItemLinked(name)
+	private.frame:GetElement("headerFrame.keywordInput")
+		:SetText(name)
+		:Draw()
+	return true
+end
+
 function private.FrameOnUpdate(frame)
 	frame:SetScript("OnUpdate", nil)
 	local baseFrame = frame:GetBaseElement()
@@ -391,9 +374,9 @@ function private.FSMCreate()
 		bottomFrame:GetElement("labels.posted")
 			:SetFormattedText(L["Posted Auctions %s:"], "|cff6ebae6"..numPosted.."|r")
 		bottomFrame:GetElement("values.sold")
-			:SetText(TSMAPI_FOUR.Money.ToString(soldGold, "OPT_PAD", "OPT_SEP"))
+			:SetText(TSM.Money.ToString(soldGold))
 		bottomFrame:GetElement("values.posted")
-			:SetText(TSMAPI_FOUR.Money.ToString(postedGold, "OPT_PAD", "OPT_SEP"))
+			:SetText(TSM.Money.ToString(postedGold))
 		bottomFrame:Draw()
 	end
 	private.fsm = TSMAPI_FOUR.FSM.New("MY_AUCTIONS")
@@ -521,11 +504,11 @@ function private.AuctionsGetTimeLeftText(row)
 end
 
 function private.AuctionsGetGroupText(itemString)
-	local groupPath = TSMAPI_FOUR.Groups.GetPathByItem(itemString)
+	local groupPath = TSM.Groups.GetPathByItem(itemString)
 	if not groupPath then
 		return ""
 	end
-	local _, groupName = TSMAPI_FOUR.Groups.SplitPath(groupPath)
+	local groupName = TSM.Groups.Path.GetName(groupPath)
 	local level = select('#', strsplit(TSM.CONST.GROUP_SEP, groupPath))
 	local color = gsub(TSM.UI.GetGroupLevelColor(level), "#", "|cff")
 	return color..groupName.."|r"
@@ -536,13 +519,13 @@ function private.AuctionsGetCurrentBidText(row)
 	if saleStatus == 1 then
 		return L["Sold"]
 	elseif row:GetField("highBidder") == "" then
-		return TSMAPI_FOUR.Money.ToString(row:GetField("currentBid"), "OPT_PAD", "OPT_DISABLE", "|cff808080")
+		return TSM.Money.ToString(row:GetField("currentBid"), nil, "OPT_DISABLE")
 	else
-		return TSMAPI_FOUR.Money.ToString(row:GetField("currentBid"), "OPT_PAD")
+		return TSM.Money.ToString(row:GetField("currentBid"))
 	end
 end
 
 function private.AuctionsGetCurrentBuyoutText(row)
 	local saleStatus = row:GetField("saleStatus")
-	return TSMAPI_FOUR.Money.ToString(row:GetField(saleStatus == 1 and "currentBid" or "buyout"), "OPT_PAD")
+	return TSM.Money.ToString(row:GetField(saleStatus == 1 and "currentBid" or "buyout"))
 end

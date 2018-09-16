@@ -58,7 +58,9 @@ function private.DrawResalePage()
 
 	wipe(private.groupList)
 	tinsert(private.groupList, ALL)
-	TSM.Groups:GetSortedGroupPathList(private.groupList)
+	for _, groupPath in TSM.Groups.GroupIterator() do
+		tinsert(private.groupList, groupPath)
+	end
 
 	private.summaryQuery = private.summaryQuery or TSM.Accounting.Transactions.CreateSummaryQuery()
 		:InnerJoin(TSM.ItemInfo.GetDBForJoin(), "itemString")
@@ -100,7 +102,7 @@ function private.DrawResalePage()
 			:SetStyle("padding.right", 8)
 			:AddChild(TSMAPI_FOUR.UI.NewElement("Input", "searchInput")
 				:SetStyle("margin.right", 16)
-				:SetHintText("Filter by Keyword")
+				:SetHintText(L["Filter by Keyword"])
 				:SetStyle("hintTextColor", "#e2e2e2")
 				:SetStyle("hintJustifyH", "LEFT")
 				:SetStyle("font", TSM.UI.Fonts.MontserratMedium)
@@ -245,7 +247,7 @@ end
 -- ============================================================================
 
 function private.GetMoneyText(record)
-	return TSMAPI_FOUR.Money.ToString(record, "OPT_PAD", "OPT_SEP")
+	return TSM.Money.ToString(record)
 end
 
 

@@ -1,20 +1,15 @@
-tag 62a9091d152a552f13159e8cf757977ea2f845c3 8.0.3
+tag ce2ab20b5a1a62885078c09c9f7bac49ca2640bc 8.0.9
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Mon Jul 23 14:49:59 2018 +1000
+Date:	Wed Sep 12 14:53:14 2018 +1000
 
-Tagging 8.0.3.
-  - New 'Spell [filter=spellid,spellid,...][conditions]' action.
+LiteMount 8.0.9
 
-commit 511208c29869bb35a7ab376e11991883c3635898
+ - Mark Warfront scenarios as non-flyable
+__
+
+commit a8118b3fcfb9e3191cfefec3cfbe9c835ea47506
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Jul 23 14:35:25 2018 +1000
+Date:   Wed Sep 12 14:51:36 2018 +1000
 
-    Support Spell action with filter=spellid[,spellid,...]
-
-commit 736961596bb6500625a73f155b16bfd106d6da21
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sun Jul 22 19:32:31 2018 +1000
-
-    RUN/WALK shouldn't have equal priority.
-    So I wasted all that time implementing the slash OR. FML
+    Can't fly in BfA Warfront scenarios.
 

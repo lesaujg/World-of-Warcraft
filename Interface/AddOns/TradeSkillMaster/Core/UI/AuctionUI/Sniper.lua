@@ -10,6 +10,7 @@ local _, TSM = ...
 local Sniper = TSM.UI.AuctionUI:NewPackage("Sniper")
 local L = TSM.L
 local private = { fsm = nil, selectionFrame = nil, hasLastScan = nil, contentPath = "selection" }
+local PHASED_TIME = 60
 
 
 
@@ -18,7 +19,7 @@ local private = { fsm = nil, selectionFrame = nil, hasLastScan = nil, contentPat
 -- ============================================================================
 
 function Sniper.OnInitialize()
-	TSM.UI.AuctionUI.RegisterTopLevelPage("Sniper", "iconPack.24x24/Sniper", private.GetSniperFrame)
+	TSM.UI.AuctionUI.RegisterTopLevelPage(L["Sniper"], "iconPack.24x24/Sniper", private.GetSniperFrame, private.OnItemLinked)
 	private.FSMCreate()
 end
 
@@ -176,6 +177,16 @@ end
 -- Local Script Handlers
 -- ============================================================================
 
+function private.OnItemLinked(name, itemLink)
+	if private.selectionFrame then
+		return false
+	end
+	private.fsm:ProcessEvent("EV_STOP_CLICKED")
+	TSM.UI.AuctionUI.SetOpenPage(L["Shopping"])
+	TSM.UI.AuctionUI.Shopping.StartItemSearch(itemLink)
+	return true
+end
+
 function private.SelectionFrameOnUpdate(frame)
 	frame:SetScript("OnUpdate", nil)
 	local baseFrame = frame:GetBaseElement()
@@ -189,7 +200,7 @@ function private.SelectionFrameOnHide(frame)
 end
 
 function private.BuyoutScanButtonOnClick(button)
-	if not TSM.UI.AuctionUI.StartingScan("Sniper") then
+	if not TSM.UI.AuctionUI.StartingScan(L["Sniper"]) then
 		return
 	end
 	button:GetParentElement():GetParentElement():GetParentElement():SetPath("scan", true)
@@ -198,7 +209,7 @@ function private.BuyoutScanButtonOnClick(button)
 end
 
 function private.BidScanButtonOnClick(button)
-	if not TSM.UI.AuctionUI.StartingScan("Sniper") then
+	if not TSM.UI.AuctionUI.StartingScan(L["Sniper"]) then
 		return
 	end
 	button:GetParentElement():GetParentElement():GetParentElement():SetPath("scan", true)
@@ -219,7 +230,7 @@ function private.CancelButtonOnClick()
 end
 
 function private.ResumeButtonOnClick(button)
-	if not TSM.UI.AuctionUI.StartingScan("Sniper") then
+	if not TSM.UI.AuctionUI.StartingScan(L["Sniper"]) then
 		return
 	end
 	button:GetElement("__parent.__parent.auctions"):SetSelection(nil)
@@ -230,7 +241,7 @@ function private.ActionButtonOnClick(button)
 end
 
 function private.RestartButtonOnClick(button)
-	if not TSM.UI.AuctionUI.StartingScan("Sniper") then
+	if not TSM.UI.AuctionUI.StartingScan(L["Sniper"]) then
 		return
 	end
 	local lastScanType = private.hasLastScan
@@ -400,7 +411,7 @@ function private.FSMCreate()
 					context.scanFrame:GetParentElement():SetPath("selection", true)
 					context.scanFrame = nil
 				end
-				TSM.UI.AuctionUI.EndedScan("Sniper")
+				TSM.UI.AuctionUI.EndedScan(L["Sniper"])
 			end)
 			:AddTransition("ST_INIT")
 			:AddTransition("ST_RUNNING_SCAN")
@@ -423,7 +434,7 @@ function private.FSMCreate()
 				UpdateScanFrame(context)
 				TSMAPI_FOUR.Thread.SetCallback(context.scanThreadId, private.FSMScanCallback)
 				TSMAPI_FOUR.Thread.Start(context.scanThreadId, context.auctionScan)
-				TSMAPI_FOUR.Delay.AfterTime("sniperPhaseDetect", 30, private.FSMPhasedCallback)
+				TSMAPI_FOUR.Delay.AfterTime("sniperPhaseDetect", PHASED_TIME, private.FSMPhasedCallback)
 			end)
 			:SetOnExit(function(context)
 				TSMAPI_FOUR.Delay.Cancel("sniperPhaseDetect")
@@ -442,6 +453,13 @@ function private.FSMCreate()
 			:AddEvent("EV_PHASED", function()
 				TSM:Print(L["You've been phased which has caused the AH to stop working due to a bug on Blizzard's end. Please close and reopen the AH and restart Sniper."])
 				return "ST_INIT"
+			end)
+			:AddEvent("EV_AUCTION_SELECTION_CHANGED", function(context)
+				assert(context.scanFrame)
+				if context.scanFrame:GetElement("auctions"):GetSelectedRecord() then
+					-- the user selected something, so cancel the current scan
+					context.auctionScan:Cancel()
+				end
 			end)
 		)
 		:AddState(TSMAPI_FOUR.FSM.NewState("ST_RESULTS")
@@ -506,6 +524,11 @@ function private.FSMCreate()
 				if removingFindAuction then
 					return "ST_RESULTS"
 				end
+			end)
+			:AddEvent("EV_SCAN_FRAME_HIDDEN", function(context)
+				context.scanFrame = nil
+				context.findAuction = nil
+				return "ST_RESULTS"
 			end)
 		)
 		:AddState(TSMAPI_FOUR.FSM.NewState("ST_AUCTION_FOUND")
@@ -630,6 +653,7 @@ function private.FSMCreate()
 		end)
 		:AddDefaultEvent("EV_SCAN_FRAME_HIDDEN", function(context)
 			context.scanFrame = nil
+			context.findAuction = nil
 		end)
 		:AddDefaultEvent("EV_AUCTION_HOUSE_CLOSED", TSMAPI_FOUR.FSM.SimpleTransitionEventHandler("ST_INIT"))
 		:AddDefaultEvent("EV_STOP_CLICKED", TSMAPI_FOUR.FSM.SimpleTransitionEventHandler("ST_INIT"))

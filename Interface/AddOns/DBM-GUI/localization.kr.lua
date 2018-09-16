@@ -229,6 +229,7 @@ L.EventMusicCombined		= "던전과 보스 전투 배경음에 모든 음악 사�
 L.Area_EventSoundsFilters	= "이벤트 효과음 필터 적용 조건"
 L.EventFilterDungMythicMusic= "신화/신화+ 난이도에선 던전 배경음을 재생하지 않음"
 L.EventFilterMythicMusic	= "신화/신화+ 난이도에선 보스 전투 배경음을 재생하지 않음"
+L.EventTurtleMusic			= "거북이 해변 퀘스트 배경음 설정"
 
 -- Tab: Global Filter
 L.Panel_SpamFilter			= "DBM 전역 기능 끄기 및 필터"
@@ -266,7 +267,7 @@ L.FilterInterrupts2			= "주문 시전 몹이 현재 대상/주시 대상이 아
 L.FilterInterrupts3			= "주문 시전 몹이 현재 대상/주시 대상이 아니거나 (항상) 차단기가 쿨타임일 때 (보스 및 쫄 정리시)"
 L.FilterInterruptNoteName	= "사용자 메모에 자기 이름이 포함되지 않은 경우 차단 가능 주문의 경고 보지 않기"
 L.FilterDispels				= "해제 주문이 재사용 대기중이면 해제 경고 보지 않기"
-L.FilterSelfHud				= "HUD에서 자기 정보는 보지 않기 (거리 기반 HUD 기능은 제외)"
+L.FilterTrashWarnings		= "일반 &amp; 영웅 던전에선 일반몹 경고 보지 않기"
 
 L.Area_PullTimer			= "풀링, 휴식, 전투, 사용자 지정 바 필터 설정"
 L.DontShowPTNoID			= "같은 지역에 없는 사용자가 보낸 풀링 타이머 차단"

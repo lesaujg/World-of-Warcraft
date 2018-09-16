@@ -29,7 +29,7 @@ end
 
 function private.GetSniperOperationSettings(operationName)
 	private.currentOperationName = operationName
-	local operation = TSM.operations.Sniper[private.currentOperationName]
+	local operation = TSM.Operations.GetSettings("Sniper", private.currentOperationName)
 	return TSMAPI_FOUR.UI.NewElement("Frame", "content")
 		:SetLayout("VERTICAL")
 		:AddChild(TSMAPI_FOUR.UI.NewElement("Texture", "line")
@@ -51,7 +51,7 @@ function private.GetSniperOperationSettings(operationName)
 				:SetStyle("textColor", "#ffffff")
 				:SetDisabled(operation.relationships.belowPrice and true or false)
 				:SetSettingInfo(operation, "belowPrice", TSM.MainUI.Operations.CheckCustomPrice)
-				:SetText(TSMAPI_FOUR.Money.ToString(operation.belowPrice, "OPT_DISABLE") or operation.belowPrice)
+				:SetText(TSM.Money.ToString(operation.belowPrice) or operation.belowPrice)
 			)
 			:AddChild(TSM.MainUI.Operations.GetOperationManagementElements("Sniper", private.currentOperationName))
 		)

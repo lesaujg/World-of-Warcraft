@@ -198,7 +198,7 @@ faFactionDataRow[2264]  = 179;
 faFactionDataRow[2265]  = 180;
 faFactionDataRow[2120]  = 181;
 faFactionDataRow[2161]  = 182;
-faFactionDataRow[2169]  = 183;
+faFactionDataRow[2160]  = 183;
 faFactionDataRow[2162]  = 184;
 faFactionDataRow[2156]  = 185;
 faFactionDataRow[2157]  = 186;
@@ -567,9 +567,9 @@ faFactionData = {
 	{2170, "Interface\\ICONS\\inv_tabard_a_94argussianreach",
 			6,0,19},
 	-- New 8.0 Factions - Battle for Azeroth
-	{2159, "Interface\\ICONS\\inv_tabard_alliancewareffort",
+	{2159, "Interface\\ICONS\\inv__faction_alliancewareffort",
 			7,1,20},
-	{2164, "Interface\\ICONS\\inv_tabard_championsofazeroth",
+	{2164, "Interface\\ICONS\\inv__faction_championsofazeroth",
 			7,0,20},
 	{2233, "Interface\\ICONS\\inv_pterrordax2mount_yellow",
 			7,2,20}, -- VERIFY side AND icon in future
@@ -579,23 +579,23 @@ faFactionData = {
 			7,0,20}, -- VERIFY
 	{2120, "Interface\\ICONS\\inv_misc_questionmark",
 			7,0,20}, -- VERIFY
-	{2161, "Interface\\ICONS\\inv_tabard_orderoftheembers",
+	{2161, "Interface\\ICONS\\inv__faction_orderofembers",
 			7,1,20},
-	{2169, "Interface\\ICONS\\inv_tabard_proudmoore",
+	{2160, "Interface\\ICONS\\inv__faction_proudmooreadmiralty",
 			7,1,20},
-	{2162, "Interface\\ICONS\\inv_tabard_stormswake",
+	{2162, "Interface\\ICONS\\inv__faction_stormswake",
 			7,1,20},
-	{2156, "Interface\\ICONS\\inv_tabard_talanjisexpedition",
+	{2156, "Interface\\ICONS\\inv__faction_talanjisexpedition",
 			7,2,20},
-	{2157, "Interface\\ICONS\\inv_tabard_hordewareffort",
+	{2157, "Interface\\ICONS\\inv__faction_hordewareffort",
 			7,2,20},
-	{2163, "Interface\\ICONS\\inv_tabard_tortollanseekers",
+	{2163, "Interface\\ICONS\\inv__faction_tortollanseekers",
 			7,0,20},
 	{2158, "Interface\\ICONS\\inv_tabard_vulpera",
 			7,2,20},
 	{2111, "Interface\\ICONS\\inv_misc_questionmark",
 			7,0,20}, -- VERIFY - 
-	{2103, "Interface\\ICONS\\inv_tabard_zandalariempire",
+	{2103, "Interface\\ICONS\\inv__faction_zandalariempire",
 			7,2,20},
 };
 

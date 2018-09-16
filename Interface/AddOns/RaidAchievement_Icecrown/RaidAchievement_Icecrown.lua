@@ -8,7 +8,7 @@ function icraonload()
 	rsciccbuffvalitria=GetSpellInfo(70766)
 
 --SetMapToCurrentZone()
-if C_Map.GetBestMapForUnit("player")==604 then
+if racheckzoneId({186,187,188,189,190,191,192,193,698,699,700,701,186,187,188,189,190,191,192,193,698,699,700,701},C_Map.GetBestMapForUnit("player")) then
 	RaidAchievement_icra:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 end
 	RaidAchievement_icra:RegisterEvent("PLAYER_REGEN_DISABLED")
@@ -147,7 +147,7 @@ end
 --фейл ачива и обнуление всего
 if icraspisokon[7]=="yes" and raachdone1 then
 --SetMapToCurrentZone()
-if C_Map.GetBestMapForUnit("player")==604 then
+if racheckzoneId({186,187,188,189,190,191,192,193,698,699,700,701,186,187,188,189,190,191,192,193,698,699,700,701},C_Map.GetBestMapForUnit("player")) then
 icrafailnoreason(7, #rsciccinportal.." "..raiccof.." "..qport.." "..raiccused)
 end
 end
@@ -225,7 +225,7 @@ end
 
 function icraonevent(self,event,...)
 
-local arg1, arg2, arg3,arg4,arg5,arg6 = ...
+local arg1, arg2, arg3,arg4,arg5,arg6 = CombatLogGetCurrentEventInfo()
 
 
 
@@ -251,7 +251,7 @@ rsciccportalopen=nil
 rsciccportalspawnwait=nil
 
 --SetMapToCurrentZone()
-if C_Map.GetBestMapForUnit("player")==604 then
+if racheckzoneId({186,187,188,189,190,191,192,193,698,699,700,701,186,187,188,189,190,191,192,193,698,699,700,701},C_Map.GetBestMapForUnit("player")) then
 RaidAchievement_icra:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 else
 RaidAchievement_icra:UnregisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
@@ -288,7 +288,7 @@ end
 --фейл ачива и обнуление всего
 if icraspisokon[7]=="yes" and raachdone1 then
 --SetMapToCurrentZone()
-if C_Map.GetBestMapForUnit("player")==604 then
+if racheckzoneId({186,187,188,189,190,191,192,193,698,699,700,701,186,187,188,189,190,191,192,193,698,699,700,701},C_Map.GetBestMapForUnit("player")) then
 icrafailnoreason(7, #rsciccinportal.." "..raiccof.." "..qport.." "..raiccused)
 end
 end
@@ -327,7 +327,7 @@ end
 
 if event == "COMBAT_LOG_EVENT_UNFILTERED" then
 
-local arg1, arg2, argnew, arg3,arg4,arg5,argnew2,arg6,arg7,arg8,argnew3,arg9,arg10,arg11,arg12,arg13,arg14, arg15,arg16,arg17 = ...
+local arg1, arg2, argnew, arg3,arg4,arg5,argnew2,arg6,arg7,arg8,argnew3,arg9,arg10,arg11,arg12,arg13,arg14, arg15,arg16,arg17 = CombatLogGetCurrentEventInfo()
 
 
 --ТУТ АЧИВЫ

@@ -17,7 +17,7 @@ PA.AC = LibStub('AceConfig-3.0')
 PA.GUI = LibStub('AceGUI-3.0')
 PA.ACR = LibStub('AceConfigRegistry-3.0')
 PA.ACD = LibStub('AceConfigDialog-3.0')
-PA.ACL = LibStub('AceLocale-3.0'):GetLocale(AddOnName, false);
+PA.ACL = LibStub('AceLocale-3.0'):GetLocale(AddOnName, false)
 PA.ADB = LibStub('AceDB-3.0')
 
 PA.LSM = LibStub('LibSharedMedia-3.0')
@@ -28,6 +28,7 @@ PA.LAB = LibStub('LibActionButton-1.0')
 PA.MyClass = select(2, UnitClass('player'))
 PA.MyName = UnitName('player')
 PA.MyRealm = GetRealmName()
+PA.Locale = GetLocale()
 PA.Noop = function() end
 PA.TexCoords = {.08, .92, .08, .92}
 PA.UIScale = UIParent:GetScale()
@@ -118,6 +119,16 @@ StaticPopupDialogs["PA_RELOAD"] = {
 	hideOnEscape = false,
 }
 
+StaticPopupDialogs["PA_INCOMPATIBLE"] = { -- This gets replaced so it doesn't need localized, Mera
+	text = 'Incompatible',
+	button1 = ACCEPT,
+	button2 = CANCEL,
+	OnAccept = ReloadUI,
+	timeout = 0,
+	whileDead = 1,
+	hideOnEscape = false,
+}
+
 PA.Options = {
 	type = 'group',
 	name = PA:Color(PA.Title),
@@ -134,7 +145,7 @@ PA.Options = {
 			name = PA:Color(PA.ACL['AddOns']),
 			guiInline = true,
 			get = function(info) return PA.db[info[#info]] end,
-			set = function(info, value) PA.db[info[#info]] = value; StaticPopup_Show("PA_RELOAD") end,
+			set = function(info, value) PA.db[info[#info]] = value StaticPopup_Show("PA_RELOAD") end,
 			args = {
 				BB = {
 					order = 0,
@@ -167,10 +178,10 @@ PA.Options = {
 					type = 'toggle',
 					name = 'Friend Groups',
 				},
-				LC = {
+				FL = {
 					order = 6,
 					type = 'toggle',
-					name = PA.ACL['Loot Confirm'],
+					name = PA.ACL['Faster Loot'],
 				},
 				MF = {
 					order = 7,
@@ -187,6 +198,11 @@ PA.Options = {
 					type = 'toggle',
 					name = PA.ACL['stAddOnManager'],
 				},
+				QS = {
+					order = 9,
+					type = 'toggle',
+					name = 'Quest Sounds',
+				},
 			},
 		},
 	},
@@ -199,16 +215,17 @@ end
 function PA:BuildProfile()
 	local Defaults = {
 		profile = {
-			['BB'] = true,
+			['BB'] = false,
 			['BrokerLDB'] = false,
 			['DO'] = true,
 			['EFL'] = true,
 			['ES'] = true,
 			['FG'] = false,
-			['LC'] = true,
+			['FL'] = false,
 			['MF'] = true,
 			['SMB'] = true,
 			['stAM'] = true,
+			['QS'] = false,
 		},
 	}
 
@@ -236,6 +253,7 @@ end
 
 function PA:PLAYER_LOGIN()
 	PA.Multiple = 768 / PA.ScreenHeight / UIParent:GetScale()
+	PA.AS = AddOnSkins and unpack(AddOnSkins)
 
 	local InitializeModules = {}
 
@@ -255,29 +273,34 @@ function PA:PLAYER_LOGIN()
 		tinsert(InitializeModules, 'DO')
 	end
 	if PA.db['FG'] then -- Has to be before EFL
-		tinsert(InitializeModules, 'FG')
+		--tinsert(InitializeModules, 'FG')
 	end
 	if PA.db['EFL'] then
 		tinsert(InitializeModules, 'EFL')
 	end
-	if PA.db['LC'] then
-		tinsert(InitializeModules, 'LC')
+	if PA.db['FL'] then
+		tinsert(InitializeModules, 'FL')
 	end
 	if PA.db['MF'] then
 		tinsert(InitializeModules, 'MF')
 	end
-	if PA.db['SMB'] and not PA.SLE then
+	if PA.db['SMB'] then
 		tinsert(InitializeModules, 'SMB')
 	end
 	if PA.db['stAM'] then
 		tinsert(InitializeModules, 'stAM')
 	end
-
-	for _, Module in pairs(InitializeModules) do
-		pcall(PA[Module].Initialize)
+	if PA.db['QS'] then
+		tinsert(InitializeModules, 'QS')
 	end
 
-	if PA.Tukui and GetAddOnEnableState(PA.MyName, 'Tukui_Config') > 0 then
+	for _, Module in pairs(InitializeModules) do
+		if PA[Module] then
+			pcall(PA[Module].Initialize)
+		end
+	end
+
+	if PA.Tukui and PA:IsAddOnEnabled('Tukui_Config', PA.MyName) then
 		PA:TukuiOptions()
 	end
 end

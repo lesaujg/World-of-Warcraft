@@ -1,13 +1,13 @@
 local mod	= DBM:NewMod(2146, "DBM-Uldir", nil, 1031)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17579 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 17807 $"):sub(12, -3))
 mod:SetCreatureID(133298)
 mod:SetEncounterID(2128)
 mod:SetZone()
 --mod:SetHotfixNoticeRev(16950)
 --mod:SetMinSyncRevision(16950)
---mod.respawnTime = 35
+mod.respawnTime = 29--Guessed, but feels about right.
 
 mod:RegisterCombat("combat")
 
@@ -23,21 +23,26 @@ mod:RegisterEventsInCombat(
 
 --[[
 (ability.id = 262292 or ability.id = 262288 or ability.id = 262364) and type = "begincast"
+ or ability.id = 262370 and type = "cast"
 --]]
 local warnFrenzy						= mod:NewSpellAnnounce(262378, 3)
 local warnThrashNotTanking				= mod:NewSpellAnnounce(262277, 3, nil, "Tank|Healer")
 
 local specWarnThrash					= mod:NewSpecialWarningDefensive(262277, "Tank", nil, nil, 1, 2)
 local specWarnRottingRegurg				= mod:NewSpecialWarningDodge(262292, nil, nil, nil, 2, 2)
-local specWarnShockwaveStomp			= mod:NewSpecialWarningSpell(262288, nil, nil, nil, 2, 2)
+local specWarnShockwaveStomp			= mod:NewSpecialWarningCount(262288, nil, nil, nil, 2, 2)
 local specWarnMalodorousMiasma			= mod:NewSpecialWarningYou(262313, nil, nil, nil, 1, 2)
-local specWarnDeadlyDisease				= mod:NewSpecialWarningDefensive(262314, nil, nil, nil, 1, 2)
+local yellMalodorousMiasma				= mod:NewYell(262313)
+local yellMalodorousMiasmaFades			= mod:NewFadesYell(262313)
+local specWarnPutridParoxysm			= mod:NewSpecialWarningDefensive(262314, nil, nil, nil, 1, 2)
+local yellPutridParoxysm				= mod:NewYell(262314)
+local yellPutridParoxysmFades			= mod:NewFadesYell(262314)
 local specWarnAdds						= mod:NewSpecialWarningAdds(262364, "Dps", nil, nil, 1, 2)
 --local specWarnGTFO					= mod:NewSpecialWarningGTFO(238028, nil, nil, nil, 1, 2)
 
 local timerThrashCD						= mod:NewCDTimer(6, 262277, nil, "Tank", nil, 5, nil, DBM_CORE_TANK_ICON)
 local timerRottingRegurgCD				= mod:NewCDTimer(40.1, 262292, nil, nil, nil, 3)
-local timerShockwaveStompCD				= mod:NewCDTimer(28.8, 262288, nil, nil, nil, 2)
+local timerShockwaveStompCD				= mod:NewCDCountTimer(28.8, 262288, nil, nil, nil, 2)
 local timerAddsCD						= mod:NewAddsTimer(54.8, 262364, nil, nil, nil, 1, nil, DBM_CORE_DAMAGE_ICON)
 
 local berserkTimer						= mod:NewBerserkTimer(369)
@@ -48,6 +53,8 @@ local countdownAdds						= mod:NewCountdown("AltTwo32", 262364, "Dps", nil, 5)
 
 mod:AddRangeFrameOption("8/20")
 mod:AddInfoFrameOption(262364, true)
+
+mod.vb.stompCount = 0
 
 local trackedAdds = {}
 
@@ -60,7 +67,7 @@ do
 		table.wipe(lines)
 		table.wipe(addedGUIDs)
 		--Check nameplates
-		for i = 1, 40 do
+		for i = 1, 40 do--In case friendly nameplates enabled, gotta check at least 40 to find up to 10 mobs in 30 man raid
 			local UnitID = "nameplate"..i
 			local GUID = UnitGUID(UnitID)
 			if GUID and not addedGUIDs[GUID] then
@@ -98,7 +105,7 @@ end
 local updateRangeFrame
 do
 	local function debuffFilter(uId)
-		if DBM:UnitDebuff(uId, 262313) or DBM:UnitDebuff(uId, 262314) then
+		if DBM:UnitDebuff(uId, 262313, 262314) then
 			return true
 		end
 	end
@@ -115,19 +122,20 @@ do
 end
 
 function mod:OnCombatStart(delay)
+	self.vb.stompCount = 0
 	table.wipe(trackedAdds)
 	timerThrashCD:Start(6.7-delay)
 	countdownThrash:Start(6.7-delay)
 	if not self:IsEasy() then
-		timerShockwaveStompCD:Start(26.1-delay)
+		timerShockwaveStompCD:Start(26.1-delay, 1)
 		timerRottingRegurgCD:Start(40-delay)
 		countdownRottingRegurg:Start(40-delay)
 	else
 		timerRottingRegurgCD:Start(31.4-delay)
 		countdownRottingRegurg:Start(31.4-delay)
 	end
-	timerAddsCD:Start(55.1-delay)
-	countdownAdds:Start(55.1-delay)
+	timerAddsCD:Start(55-delay)
+	countdownAdds:Start(55-delay)
 	berserkTimer:Start()
 	if self:IsMythic() then
 		updateRangeFrame(self)
@@ -161,9 +169,10 @@ function mod:SPELL_CAST_START(args)
 			countdownRottingRegurg:Start(30.3)
 		end
 	elseif spellId == 262288 and self:AntiSpam(5, 1) then
-		specWarnShockwaveStomp:Show()
+		self.vb.stompCount = self.vb.stompCount + 1
+		specWarnShockwaveStomp:Show(self.vb.stompCount)
 		specWarnShockwaveStomp:Play("carefly")
-		timerShockwaveStompCD:Start()
+		timerShockwaveStompCD:Start(nil, self.vb.stompCount+1)
 	elseif spellId == 262364 then--Enticing Essence
 		if not trackedAdds[args.sourceGUID] then
 			trackedAdds[args.sourceGUID] = true
@@ -175,13 +184,8 @@ function mod:SPELL_CAST_START(args)
 		if self:AntiSpam(10, 2) then
 			specWarnAdds:Show()
 			specWarnAdds:Play("killmob")
-			if self:IsEasy() then
-				timerAddsCD:Start()
-				countdownAdds:Start(54.8)
-			else
-				timerAddsCD:Start(59.8)
-				countdownAdds:Start(59.8)
-			end
+			timerAddsCD:Start()
+			countdownAdds:Start(54.8)
 		end
 	elseif spellId == 262277 then
 		timerThrashCD:Start()
@@ -213,12 +217,16 @@ function mod:SPELL_AURA_APPLIED(args)
 		specWarnMalodorousMiasma:Show()
 		specWarnMalodorousMiasma:Play("targetyou")
 		if self:IsMythic() then
+			yellMalodorousMiasma:Yell()
+			yellMalodorousMiasmaFades:Countdown(18)
 			updateRangeFrame(self)
 		end
 	elseif spellId == 262314 and args:IsPlayer() then
-		specWarnDeadlyDisease:Show()
-		specWarnDeadlyDisease:Play("defensive")
+		specWarnPutridParoxysm:Show()
+		specWarnPutridParoxysm:Play("defensive")
 		if self:IsMythic() then
+			yellPutridParoxysm:Yell()
+			yellPutridParoxysmFades:Countdown(6)
 			updateRangeFrame(self)
 		end
 	elseif spellId == 262378 then
@@ -230,6 +238,11 @@ function mod:SPELL_AURA_REMOVED(args)
 	local spellId = args.spellId
 	if (spellId == 262313 or spellId == 262314) and args:IsPlayer() and self:IsMythic() then
 		updateRangeFrame(self)
+		if spellId == 262313 then
+			yellMalodorousMiasmaFades:Cancel()
+		else
+			yellPutridParoxysmFades:Cancel()
+		end
 	end
 end
 

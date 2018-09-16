@@ -27,7 +27,7 @@ ACL['BigButtons'] = true
 ACL['Dragon Overlay'] = true
 ACL['Enhanced Friends List'] = true
 ACL['Enhanced Shadows'] = true
-ACL['Loot Confirm'] = true
+ACL['Faster Loot'] = true
 ACL['MovableFrames'] = true
 ACL['Square Minimap Buttons / Bar'] = true
 ACL['stAddOnManager'] = true
@@ -104,6 +104,7 @@ ACL['Reset Moving'] = true
 
 -- SquareMinimapButtons
 ACL['Bar MouseOver'] = true
+ACL['Bar Backdrop'] = true
 ACL['Buttons Per Row'] = true
 ACL['Button Spacing'] = true
 ACL['Enable Bar'] = true

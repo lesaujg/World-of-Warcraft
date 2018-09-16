@@ -168,6 +168,11 @@ function TSM.CustomPrice.PrintSources()
 	TSMAPI_FOUR.Util.ReleaseTempTable(moduleList)
 end
 
+function TSM.CustomPrice.GetDescription(key)
+	local info = private.priceSourceInfo[key]
+	return info and info.label or nil
+end
+
 
 
 -- ============================================================================
@@ -489,6 +494,9 @@ function private.ParsePriceString(str, badPriceSource)
 			end
 		end
 		if minFindStart then
+			if strmatch(strsub(str, minFindStart-1, minFindStart-1), "[0-9a-zA-Z]") or strmatch(strsub(str, minFindEnd+1, minFindEnd+1), "[0-9a-zA-Z]") then
+				return nil, L["Invalid gold value."]
+			end
 			local value = TSMAPI_FOUR.Money.FromString(minFindSub)
 			if not value then
 				-- sanity check
@@ -603,6 +611,10 @@ function private.ParsePriceString(str, badPriceSource)
 			-- empty parenthesis are not allowed
 			if not parts[i+1] or parts[i+1] == ")" then
 				return nil, L["Empty parentheses are not allowed"]
+			end
+			-- should never have ") ("
+			if i > 1 and parts[i-1] == ")" then
+				return nil, L["Missing operator between sets of parenthesis"]
 			end
 		elseif word == ")" then
 			-- valid parenthesis

@@ -9,7 +9,7 @@ local UnitIsPlayer, UnitClass, UnitClassification = UnitIsPlayer, UnitClass, Uni
 
 DO.Title = '|cFF16C3F2Dragon|r |cFFFFFFFFOverlay|r'
 DO.Description = 'Provides an overlay on UnitFrames for Boss, Elite, Rare and RareElite'
-DO.Authors = 'Azilroka    Infinitron'
+DO.Authors = 'Azilroka    Whiro'
 DO.ImageCredits = 'Codeblake    Kkthnxbye    Narley    Durandil'
 
 local MediaPath = 'Interface\\AddOns\\ProjectAzilroka\\Media\\DragonOverlay\\'
@@ -111,19 +111,19 @@ function DO:GetOptions()
 						order = 4,
 						type = 'range',
 						name = PA.ACL['Icon Size'],
-						min = 16, max = 64, step = 1,
+						min = 1, max = 255, step = 1,
 					},
 					Width = {
 						order = 5,
 						type = 'range',
 						name = PA.ACL['Width'],
-						min = 16, max = 128, step = 1,
+						min = 1, max = 255, step = 1,
 					},
 					Height = {
 						order = 6,
 						type = 'range',
 						name = PA.ACL['Height'],
-						min = 16, max = 64, step = 1,
+						min = 1, max = 255, step = 1,
 					},
 					Desc = {
 						order = 7,
@@ -274,7 +274,7 @@ function DO:GetOptions()
 		Order = Order + 2
 	end
 
-	Options.args.profiles = LibStub('AceDBOptions-3.0'):GetOptionsTable(PA.data)
+	Options.args.profiles = LibStub('AceDBOptions-3.0'):GetOptionsTable(DO.data)
 	Options.args.profiles.order = -2
 
 	PA.Options.args.DragonOverlay = Options
