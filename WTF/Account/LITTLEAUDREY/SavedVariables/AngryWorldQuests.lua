@@ -1,6 +1,8 @@
 
 AngryWorldQuests_Config = {
-	["__version"] = 12,
-	["showEverywhere"] = true,
+	["__version"] = 20,
+	["__filters"] = 22,
+	["disabledFilters"] = 65232,
 	["collapsed"] = true,
+	["showEverywhere"] = true,
 }

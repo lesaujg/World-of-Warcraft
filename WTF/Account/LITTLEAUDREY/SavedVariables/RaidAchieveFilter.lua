@@ -17,6 +17,9 @@ RAchF_DB = {
 			},
 		},
 		["Allala - Sisters of Elune"] = {
+			["minimap"] = {
+				["minimapPos"] = 175.030278873692,
+			},
 		},
 		["Tolaine - Sisters of Elune"] = {
 		},

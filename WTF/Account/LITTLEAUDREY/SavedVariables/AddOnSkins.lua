@@ -17,3 +17,5 @@ AddOnSkinsDB = {
 		},
 	},
 }
+AddOnSkinsDS = {
+}

@@ -18,7 +18,7 @@ MountFarmHelperDB = {
 	["profiles"] = {
 		["Default"] = {
 			["minimap"] = {
-				["minimapPos"] = 62.9280326712187,
+				["minimapPos"] = 35.1091143300871,
 			},
 		},
 	},

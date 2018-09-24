@@ -1,305 +1,1142 @@
 
-AskMrRobotDb3 = {
+AskMrRobotDb4 = {
 	["char"] = {
 		["Torinara - Sisters of Elune"] = {
-			["Talents"] = {
-				[2] = "3212111",
-			},
-			["Artifacts"] = {
-				[2] = {
-					["Relics"] = {
-						"|cff0070dd|Hitem:136686::::::::110:263::13::::|h[Flamespike]|h|r", -- [1]
-						"|cff1eff00|Hitem:141288::::::::110:263:::3:1812:1442:1809:::|h[Ettin Bone Fragment]|h|r", -- [2]
-						"|cffa335ee|Hitem:143688::::::::110:263::27:3:3394:1532:3528:::|h[Stormwing's Roar]|h|r", -- [3]
-					},
-					["Powers"] = {
-						[911] = 4,
-						[1388] = 1,
-						[912] = 4,
-						[913] = 4,
-						[930] = 1,
-						[900] = 1,
-						[901] = 1,
-						[902] = 1,
-						[903] = 1,
-						[904] = 1,
-						[1687] = 1,
-						[905] = 4,
-						[1593] = 4,
-						[906] = 4,
-						[1595] = 1,
-						[907] = 4,
-						[1596] = 3,
-						[908] = 4,
-						[1351] = 1,
-						[909] = 4,
-						[899] = 1,
-						[910] = 4,
-						[1594] = 1,
-					},
-					["Crucible"] = {
-						["Equipped"] = {
-						},
-						["Inventory"] = {
-						},
-					},
-				},
-			},
 			["Logging"] = {
 				["LastDiff"] = 0,
-				["LastZone"] = "Draenor",
+				["LastZone"] = "Mogu Island Daily Area",
+			},
+			["Talents"] = {
+				[2] = "3211111",
 			},
 			["Equipped"] = {
 				[2] = {
-					"|cffa335ee|Hitem:152765::::::::110:263:::4:1712:3629:1472:3528:::|h[Oronaar Disciple's Coif of the Harmonious]|h|r", -- [1]
-					"|cffa335ee|Hitem:143908::::::::110:263:512:1:1:3628:110:::|h[Choker of the Pure Heart]|h|r", -- [2]
-					"|cffa335ee|Hitem:152769::::::::110:263:::4:1698:3629:1472:3528:::|h[Oronaar Disciple's Spaulders of the Feverflare]|h|r", -- [3]
+					{
+						["bonusIds"] = {
+							1472, -- [1]
+							1712, -- [2]
+							3528, -- [3]
+							3629, -- [4]
+						},
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffa335ee|Hitem:152765::::::::110:263:::4:1712:3629:1472:3528:::|h[Oronaar Disciple's Coif of the Harmonious]|h|r",
+						["id"] = 152765,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [1]
+					{
+						["bonusIds"] = {
+							3628, -- [1]
+						},
+						["suffixId"] = 0,
+						["level"] = 110,
+						["link"] = "|cffa335ee|Hitem:143908::::::::110:263:512:1:1:3628:110:::|h[Choker of the Pure Heart]|h|r",
+						["id"] = 143908,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [2]
+					{
+						["bonusIds"] = {
+							1472, -- [1]
+							1698, -- [2]
+							3528, -- [3]
+							3629, -- [4]
+						},
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffa335ee|Hitem:152769::::::::110:263:::4:1698:3629:1472:3528:::|h[Oronaar Disciple's Spaulders of the Feverflare]|h|r",
+						["id"] = 152769,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [3]
 					nil, -- [4]
-					"|cffa335ee|Hitem:128900::::::::110:263::13:5:669:600:689:1684:3408:::|h[Gravenscale Hauberk of the Peerless]|h|r", -- [5]
-					"|cffa335ee|Hitem:152767::::::::110:263:::5:1688:3629:41:1472:3528:::|h[Oronaar Disciple's Girdle of the Peerless]|h|r", -- [6]
-					"|cffa335ee|Hitem:152764::::::::110:263:::4:1699:3629:1472:3528:::|h[Oronaar Disciple's Legguards of the Feverflare]|h|r", -- [7]
-					"|cffa335ee|Hitem:152766::::::::110:263:::4:1713:3629:1472:3528:::|h[Oronaar Disciple's Boots of the Harmonious]|h|r", -- [8]
-					"|cffa335ee|Hitem:152762::::::::110:263:::4:1686:3629:1472:3528:::|h[Oronaar Disciple's Bracers of the Peerless]|h|r", -- [9]
-					"|cffa335ee|Hitem:152763::::::::110:263:::4:1698:3629:1472:3528:::|h[Oronaar Disciple's Gloves of the Feverflare]|h|r", -- [10]
-					"|cffa335ee|Hitem:130231::::::::110:263::13:4:3370:669:601:689:::|h[Dawnlight Band of the Fireflash]|h|r", -- [11]
-					"|cffa335ee|Hitem:130230::::::::110:263::13:4:3366:669:601:689:::|h[Maelstrom Band of the Aurora]|h|r", -- [12]
-					"|cffa335ee|Hitem:134203::::::::110:263::27:4:3394:603:1537:3528:::|h[Three-Toed Rabbit Foot]|h|r", -- [13]
-					"|cffa335ee|Hitem:147275::::::::110:263:::4:607:3574:1642:3528:::|h[Beguiler's Talisman]|h|r", -- [14]
-					"|cffa335ee|Hitem:127033::::::::110:263::13:5:669:601:689:3357:3408:::|h[Imbued Silkweave Shade of the Feverflare]|h|r", -- [15]
-					"|cffe6cc80|Hitem:128819::136686:141288:143688::::110:263:16777472:9:1:745:117:1::3:1812:1442:1809:3:3394:1532:3528|h[Doomhammer]|h|r", -- [16]
-					"|cffe6cc80|Hitem:128873::::::::110:263:256:::117:::|h[Fury of the Stonemother]|h|r", -- [17]
+					{
+						["bonusIds"] = {
+							600, -- [1]
+							669, -- [2]
+							689, -- [3]
+							1684, -- [4]
+							3408, -- [5]
+						},
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffa335ee|Hitem:128900::::::::110:263::13:5:669:600:689:1684:3408:::|h[Gravenscale Hauberk of the Peerless]|h|r",
+						["id"] = 128900,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [5]
+					{
+						["bonusIds"] = {
+							41, -- [1]
+							1472, -- [2]
+							1688, -- [3]
+							3528, -- [4]
+							3629, -- [5]
+						},
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffa335ee|Hitem:152767::::::::110:263:::5:1688:3629:41:1472:3528:::|h[Oronaar Disciple's Girdle of the Peerless]|h|r",
+						["id"] = 152767,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [6]
+					{
+						["bonusIds"] = {
+							1472, -- [1]
+							1699, -- [2]
+							3528, -- [3]
+							3629, -- [4]
+						},
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffa335ee|Hitem:152764::::::::110:263:::4:1699:3629:1472:3528:::|h[Oronaar Disciple's Legguards of the Feverflare]|h|r",
+						["id"] = 152764,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [7]
+					{
+						["bonusIds"] = {
+							1472, -- [1]
+							1713, -- [2]
+							3528, -- [3]
+							3629, -- [4]
+						},
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffa335ee|Hitem:152766::::::::110:263:::4:1713:3629:1472:3528:::|h[Oronaar Disciple's Boots of the Harmonious]|h|r",
+						["id"] = 152766,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [8]
+					{
+						["bonusIds"] = {
+							1472, -- [1]
+							1686, -- [2]
+							3528, -- [3]
+							3629, -- [4]
+						},
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffa335ee|Hitem:152762::::::::110:263:::4:1686:3629:1472:3528:::|h[Oronaar Disciple's Bracers of the Peerless]|h|r",
+						["id"] = 152762,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [9]
+					{
+						["bonusIds"] = {
+							1472, -- [1]
+							1698, -- [2]
+							3528, -- [3]
+							3629, -- [4]
+						},
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffa335ee|Hitem:152763::::::::110:263:::4:1698:3629:1472:3528:::|h[Oronaar Disciple's Gloves of the Feverflare]|h|r",
+						["id"] = 152763,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [10]
+					{
+						["bonusIds"] = {
+							601, -- [1]
+							669, -- [2]
+							689, -- [3]
+							3370, -- [4]
+						},
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffa335ee|Hitem:130231::::::::110:263::13:4:3370:669:601:689:::|h[Dawnlight Band of the Fireflash]|h|r",
+						["id"] = 130231,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [11]
+					{
+						["bonusIds"] = {
+							601, -- [1]
+							669, -- [2]
+							689, -- [3]
+							3366, -- [4]
+						},
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffa335ee|Hitem:130230::::::::110:263::13:4:3366:669:601:689:::|h[Maelstrom Band of the Aurora]|h|r",
+						["id"] = 130230,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [12]
+					{
+						["bonusIds"] = {
+							603, -- [1]
+							1489, -- [2]
+							3394, -- [3]
+							3528, -- [4]
+						},
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffa335ee|Hitem:134203::::::::110:263::27:4:3394:603:1489:3528:::|h[Three-Toed Rabbit Foot]|h|r",
+						["id"] = 134203,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [13]
+					{
+						["bonusIds"] = {
+							607, -- [1]
+							1504, -- [2]
+							3528, -- [3]
+							3574, -- [4]
+						},
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffa335ee|Hitem:147275::::::::110:263:::4:607:3574:1504:3528:::|h[Beguiler's Talisman]|h|r",
+						["id"] = 147275,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [14]
+					{
+						["bonusIds"] = {
+							601, -- [1]
+							669, -- [2]
+							689, -- [3]
+							3357, -- [4]
+							3408, -- [5]
+						},
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffa335ee|Hitem:127033::::::::110:263::13:5:669:601:689:3357:3408:::|h[Imbued Silkweave Shade of the Feverflare]|h|r",
+						["id"] = 127033,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [15]
+					{
+						["bonusIds"] = {
+							745, -- [1]
+							1479, -- [2]
+							1480, -- [3]
+							1484, -- [4]
+						},
+						["link"] = "|cffe6cc80|Hitem:128819::136686:141288:143688::::110:263:16777472:9:4:745:1480:1479:1484:117:1::3:1812:1469:1809:3:3394:1487:3528|h[Doomhammer]|h|r",
+						["id"] = 128819,
+						["relicBonusIds"] = {
+						},
+						["enchantId"] = 0,
+						["level"] = 0,
+						["gemIds"] = {
+							136686, -- [1]
+							141288, -- [2]
+							143688, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [16]
+					{
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffe6cc80|Hitem:128873::::::::110:263:256:::117:::|h[Fury of the Stonemother]|h|r",
+						["id"] = 128873,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					}, -- [17]
 				},
 			},
 		},
 		["Allala - Sisters of Elune"] = {
+			["Talents"] = {
+				[3] = "1212211",
+				[2] = "1212221",
+			},
 			["Logging"] = {
 				["LastDiff"] = 0,
 				["LastZone"] = "Pandaria",
 			},
-			["Talents"] = {
-				[3] = "1212121",
-				[2] = "2312131",
-			},
 			["Equipped"] = {
 				[3] = {
-					"|cff1eff00|Hitem:153904::::::::110:70::::::|h[Sunsoul Faceguard]|h|r", -- [1]
-					"|cffa335ee|Hitem:143906::::::::110:70:512:1:1:3628:110:::|h[Heartbreak Charm]|h|r", -- [2]
-					"|cff1eff00|Hitem:153911::::::::110:70::::::|h[Sunsoul Shoulderguards]|h|r", -- [3]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153904::::::::110:70::::::|h[Sunsoul Faceguard]|h|r",
+						["id"] = 153904,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [1]
+					{
+						["bonusIds"] = {
+							3628, -- [1]
+						},
+						["level"] = 110,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:143906::::::::110:70:512:1:1:3628:110:::|h[Heartbreak Charm]|h|r",
+						["id"] = 143906,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [2]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153911::::::::110:70::::::|h[Sunsoul Shoulderguards]|h|r",
+						["id"] = 153911,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [3]
 					nil, -- [4]
-					"|cff1eff00|Hitem:153900::::::::110:70::::::|h[Sunsoul Chestguard]|h|r", -- [5]
-					"|cff1eff00|Hitem:153912::::::::110:70::::::|h[Sunsoul Waistband]|h|r", -- [6]
-					"|cff1eff00|Hitem:153905::::::::110:70::::::|h[Sunsoul Legguards]|h|r", -- [7]
-					"|cff1eff00|Hitem:153902::::::::110:70::::::|h[Sunsoul Greaves]|h|r", -- [8]
-					"|cff1eff00|Hitem:153913::::::::110:70::::::|h[Sunsoul Armguards]|h|r", -- [9]
-					"|cff1eff00|Hitem:153903::::::::110:70::::::|h[Sunsoul Handguards]|h|r", -- [10]
-					"|cff1eff00|Hitem:153908::::::::110:70::::::|h[Sunsoul Ring of Stoicism]|h|r", -- [11]
-					"|cff1eff00|Hitem:153909::::::::110:70::::::|h[Sunsoul Band of Stoicism]|h|r", -- [12]
-					"|cff1eff00|Hitem:153907::::::::110:70::::::|h[Sunsoul Defender Idol]|h|r", -- [13]
-					"|cff1eff00|Hitem:153910::::::::110:70::::::|h[Sunsoul Defender Stone]|h|r", -- [14]
-					"|cff1eff00|Hitem:153901::::::::110:70::::::|h[Sunsoul Cloak of Stoicism]|h|r", -- [15]
-					"|cffe6cc80|Hitem:120978::::::::110:70:16777472:9:1:737:9:1:::|h[Ashbringer]|h|r", -- [16]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153900::::::::110:70::::::|h[Sunsoul Chestguard]|h|r",
+						["id"] = 153900,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [5]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153912::::::::110:70::::::|h[Sunsoul Waistband]|h|r",
+						["id"] = 153912,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [6]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153905::::::::110:70::::::|h[Sunsoul Legguards]|h|r",
+						["id"] = 153905,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [7]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153902::::::::110:70::::::|h[Sunsoul Greaves]|h|r",
+						["id"] = 153902,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [8]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153913::::::::110:70::::::|h[Sunsoul Armguards]|h|r",
+						["id"] = 153913,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [9]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153903::::::::110:70::::::|h[Sunsoul Handguards]|h|r",
+						["id"] = 153903,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [10]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153908::::::::110:70::::::|h[Sunsoul Ring of Stoicism]|h|r",
+						["id"] = 153908,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [11]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153909::::::::110:70::::::|h[Sunsoul Band of Stoicism]|h|r",
+						["id"] = 153909,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [12]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153907::::::::110:70::::::|h[Sunsoul Defender Idol]|h|r",
+						["id"] = 153907,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [13]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153910::::::::110:70::::::|h[Sunsoul Defender Stone]|h|r",
+						["id"] = 153910,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [14]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153901::::::::110:70::::::|h[Sunsoul Cloak of Stoicism]|h|r",
+						["id"] = 153901,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [15]
+					{
+						["bonusIds"] = {
+							737, -- [1]
+						},
+						["link"] = "|cffe6cc80|Hitem:120978::::::::110:70:16777472:9:1:737:9:1:::|h[Ashbringer]|h|r",
+						["id"] = 120978,
+						["relicBonusIds"] = {
+						},
+						["enchantId"] = 0,
+						["level"] = 0,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [16]
 				},
 				[2] = {
-					"|cff1eff00|Hitem:153904::::::::110:66::::::|h[Sunsoul Faceguard]|h|r", -- [1]
-					"|cffa335ee|Hitem:143906::::::::110:66:512:1:1:3628:110:::|h[Heartbreak Charm]|h|r", -- [2]
-					"|cff1eff00|Hitem:153911::::::::110:66::::::|h[Sunsoul Shoulderguards]|h|r", -- [3]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153904::::::::110:66::::::|h[Sunsoul Faceguard]|h|r",
+						["id"] = 153904,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [1]
+					{
+						["bonusIds"] = {
+							3628, -- [1]
+						},
+						["level"] = 110,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:143906::::::::110:66:512:1:1:3628:110:::|h[Heartbreak Charm]|h|r",
+						["id"] = 143906,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [2]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153911::::::::110:66::::::|h[Sunsoul Shoulderguards]|h|r",
+						["id"] = 153911,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [3]
 					nil, -- [4]
-					"|cff1eff00|Hitem:153900::::::::110:66::::::|h[Sunsoul Chestguard]|h|r", -- [5]
-					"|cff1eff00|Hitem:153912::::::::110:66::::::|h[Sunsoul Waistband]|h|r", -- [6]
-					"|cff1eff00|Hitem:153905::::::::110:66::::::|h[Sunsoul Legguards]|h|r", -- [7]
-					"|cff1eff00|Hitem:153902::::::::110:66::::::|h[Sunsoul Greaves]|h|r", -- [8]
-					"|cff1eff00|Hitem:153913::::::::110:66::::::|h[Sunsoul Armguards]|h|r", -- [9]
-					"|cff1eff00|Hitem:153903::::::::110:66::::::|h[Sunsoul Handguards]|h|r", -- [10]
-					"|cff1eff00|Hitem:153908::::::::110:66::::::|h[Sunsoul Ring of Stoicism]|h|r", -- [11]
-					"|cff1eff00|Hitem:153909::::::::110:66::::::|h[Sunsoul Band of Stoicism]|h|r", -- [12]
-					"|cff1eff00|Hitem:153907::::::::110:66::::::|h[Sunsoul Defender Idol]|h|r", -- [13]
-					"|cff1eff00|Hitem:153910::::::::110:66::::::|h[Sunsoul Defender Stone]|h|r", -- [14]
-					"|cff1eff00|Hitem:153901::::::::110:66::::::|h[Sunsoul Cloak of Stoicism]|h|r", -- [15]
-					"|cffe6cc80|Hitem:128867::::::::110:66:256:::291:::|h[Oathseeker]|h|r", -- [16]
-					"|cffe6cc80|Hitem:128866::156816:156817:156803::::110:66:16777472::1:736:291:1:::|h[Truthguard]|h|r", -- [17]
-				},
-			},
-			["Artifacts"] = {
-				[2] = {
-					["Relics"] = {
-						"|cff1eff00|Hitem:156816::::::::110:66::::::|h[Hatecoil Badge of Glory]|h|r", -- [1]
-						"|cff1eff00|Hitem:156817::::::::110:66::::::|h[Stonedark Idol]|h|r", -- [2]
-						"|cff1eff00|Hitem:156803::::::::110:66::::::|h[Seawitch's Foci]|h|r", -- [3]
-					},
-					["Powers"] = {
-						[1120] = 1,
-						[1121] = 3,
-						[1122] = 3,
-						[1123] = 3,
-						[1124] = 3,
-						[1125] = 3,
-						[1343] = 1,
-						[1127] = 3,
-						[1128] = 3,
-						[1129] = 3,
-						[1378] = 1,
-						[1131] = 1,
-						[1132] = 1,
-						[1133] = 1,
-						[1134] = 1,
-						[1135] = 1,
-						[1126] = 3,
-						[1130] = 1,
-					},
-					["Crucible"] = {
-						["Equipped"] = {
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153900::::::::110:66::::::|h[Sunsoul Chestguard]|h|r",
+						["id"] = 153900,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
 						},
-						["Inventory"] = {
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [5]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153912::::::::110:66::::::|h[Sunsoul Waistband]|h|r",
+						["id"] = 153912,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
 						},
-					},
-				},
-				[3] = {
-					["Relics"] = {
-						"", -- [1]
-						"", -- [2]
-						"", -- [3]
-					},
-					["Powers"] = {
-						[43] = 4,
-						[1118] = 1,
-						[350] = 1,
-						[40] = 1,
-						[41] = 4,
-						[42] = 4,
-						[351] = 1,
-						[44] = 4,
-						[1561] = 4,
-						[353] = 1,
-						[47] = 4,
-						[1562] = 1,
-						[49] = 1,
-						[50] = 4,
-						[51] = 4,
-						[52] = 4,
-						[53] = 4,
-						[54] = 1,
-						[352] = 1,
-						[1563] = 1,
-						[1647] = 1,
-						[1275] = 1,
-					},
-					["Crucible"] = {
-						["Equipped"] = {
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [6]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153905::::::::110:66::::::|h[Sunsoul Legguards]|h|r",
+						["id"] = 153905,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
 						},
-						["Inventory"] = {
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [7]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153902::::::::110:66::::::|h[Sunsoul Greaves]|h|r",
+						["id"] = 153902,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
 						},
-					},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [8]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153913::::::::110:66::::::|h[Sunsoul Armguards]|h|r",
+						["id"] = 153913,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [9]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153903::::::::110:66::::::|h[Sunsoul Handguards]|h|r",
+						["id"] = 153903,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [10]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153908::::::::110:66::::::|h[Sunsoul Ring of Stoicism]|h|r",
+						["id"] = 153908,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [11]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153909::::::::110:66::::::|h[Sunsoul Band of Stoicism]|h|r",
+						["id"] = 153909,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [12]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153907::::::::110:66::::::|h[Sunsoul Defender Idol]|h|r",
+						["id"] = 153907,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [13]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153910::::::::110:66::::::|h[Sunsoul Defender Stone]|h|r",
+						["id"] = 153910,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [14]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153901::::::::110:66::::::|h[Sunsoul Cloak of Stoicism]|h|r",
+						["id"] = 153901,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [15]
+					{
+						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffe6cc80|Hitem:128867::::::::110:66:256:::291:::|h[Oathseeker]|h|r",
+						["id"] = 128867,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					}, -- [16]
+					{
+						["bonusIds"] = {
+							736, -- [1]
+							1484, -- [2]
+							1484, -- [3]
+							1484, -- [4]
+						},
+						["link"] = "|cffe6cc80|Hitem:128866::156816:156817:156803::::110:66:16777472::4:736:1484:1484:1484:291:1:::|h[Truthguard]|h|r",
+						["id"] = 128866,
+						["relicBonusIds"] = {
+						},
+						["enchantId"] = 0,
+						["level"] = 0,
+						["gemIds"] = {
+							156816, -- [1]
+							156817, -- [2]
+							156803, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [17]
 				},
 			},
 		},
 		["Aloraal - Sisters of Elune"] = {
 			["Logging"] = {
 				["LastDiff"] = 0,
-				["LastZone"] = "Broken Isles",
+				["LastZone"] = "Pandaria",
 			},
 			["Talents"] = {
-				"3133131", -- [1]
+				"2313221", -- [1]
 			},
 			["Equipped"] = {
 				{
-					"|cffa335ee|Hitem:134167::::::::110:253::25:3:1824:1542:3337:::|h[Bitestone Cowl]|h|r", -- [1]
-					"|cffa335ee|Hitem:143906::::::::110:253:512:1:1:3628:110:::|h[Heartbreak Charm]|h|r", -- [2]
-					"|cffa335ee|Hitem:144616:5899:::::::110:253::43:4:3573:1719:1512:3528:::|h[Cruel Gladiator's Chain Spaulders]|h|r", -- [3]
+					{
+						["bonusIds"] = {
+							1491, -- [1]
+							1824, -- [2]
+							3337, -- [3]
+						},
+						["id"] = 134167,
+						["level"] = 0,
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["link"] = "|cffa335ee|Hitem:134167::::::::110:253::25:3:1824:1491:3337:::|h[Bitestone Cowl]|h|r",
+					}, -- [1]
+					{
+						["bonusIds"] = {
+							3628, -- [1]
+						},
+						["id"] = 143905,
+						["level"] = 110,
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["link"] = "|cffa335ee|Hitem:143905::::::::110:253:512:1:1:3628:110:::|h[Winking Eye of Love]|h|r",
+					}, -- [2]
+					{
+						["bonusIds"] = {
+							1488, -- [1]
+							1719, -- [2]
+							3528, -- [3]
+							3573, -- [4]
+						},
+						["id"] = 144616,
+						["level"] = 0,
+						["enchantId"] = 5899,
+						["suffixId"] = 0,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["link"] = "|cffa335ee|Hitem:144616:5899:::::::110:253::43:4:3573:1719:1488:3528:::|h[Cruel Gladiator's Chain Spaulders]|h|r",
+					}, -- [3]
 					nil, -- [4]
-					"|cffa335ee|Hitem:134302::::::::110:253::27:4:3394:1808:1537:3337:::|h[Ley Dragoon's Hauberk]|h|r", -- [5]
-					"|cffa335ee|Hitem:152767::::::::110:253:::4:1680:3629:1472:3528:::|h[Oronaar Disciple's Girdle of the Quickblade]|h|r", -- [6]
-					"|cffa335ee|Hitem:152764::::::::110:253:::4:1697:3629:1497:3337:::|h[Oronaar Disciple's Legguards of the Feverflare]|h|r", -- [7]
-					"|cffa335ee|Hitem:139080::::::::110:253::43:3:3573:1547:3336:::|h[Bramblemail Boots]|h|r", -- [8]
-					"|cffff8000|Hitem:137101::::::::110:253:::2:1811:3530:::|h[Call of the Wild]|h|r", -- [9]
-					"|cffff8000|Hitem:146668::::::::110:253::13:2:3459:3530:::|h[Vigilance Perch]|h|r", -- [10]
-					"|cffa335ee|Hitem:134526::::::::110:253::43:3:3573:1532:3528:::|h[Gnawed Thumb Ring]|h|r", -- [11]
-					"|cffa335ee|Hitem:134191::::::::110:253::25:3:1824:1532:3337:::|h[Rough-Hammered Silver Ring]|h|r", -- [12]
-					"|cffa335ee|Hitem:140801::::::::110:253::43:3:3573:1477:3528:::|h[Fury of the Burning Sky]|h|r", -- [13]
-					"|cffa335ee|Hitem:133642::::::::110:253::43:3:3573:1532:3528:::|h[Horn of Valor]|h|r", -- [14]
-					"|cffa335ee|Hitem:146766::::::::110:253::27:3:3394:1527:3336:::|h[Nethercaller Cloak]|h|r", -- [15]
-					"|cffe6cc80|Hitem:128861::143704:141259:141262::::110:253:16777472:9:1:726:454:1:3:3394:1527:3336:3:3394:1522:3528:3:1824:1532:3337|h[Titanstrike]|h|r", -- [16]
-				}, -- [1]
-			},
-			["Artifacts"] = {
-				{
-					["Relics"] = {
-						"|cffa335ee|Hitem:143704::::::::110:253::27:3:3394:1527:3336:::|h[Harpybane Fetish]|h|r", -- [1]
-						"|cffa335ee|Hitem:141259::::::::110:253::27:3:3394:1522:3528:::|h[Seawitch's Foci]|h|r", -- [2]
-						"|cffa335ee|Hitem:141262::::::::110:253::25:3:1824:1532:3337:::|h[Rune-Etched Quill]|h|r", -- [3]
-					},
-					["Powers"] = {
-						[880] = 1,
-						[1636] = 1,
-						[881] = 1,
-						[882] = 1,
-						[1517] = 4,
-						[868] = 4,
-						[1519] = 1,
-						[1520] = 7,
-						[1336] = 1,
-						[1368] = 1,
-						[871] = 4,
-						[872] = 4,
-						[873] = 4,
-						[1095] = 4,
-						[874] = 4,
-						[875] = 4,
-						[876] = 1,
-						[877] = 1,
-						[1518] = 1,
-						[878] = 1,
-						[869] = 4,
-						[879] = 1,
-						[870] = 4,
-					},
-					["Crucible"] = {
-						["Equipped"] = {
+					{
+						["bonusIds"] = {
+							1489, -- [1]
+							1808, -- [2]
+							3337, -- [3]
+							3394, -- [4]
 						},
-						["Inventory"] = {
+						["id"] = 134302,
+						["level"] = 0,
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
 						},
-					},
+						["upgradeId"] = 0,
+						["link"] = "|cffa335ee|Hitem:134302::::::::110:253::27:4:3394:1808:1489:3337:::|h[Ley Dragoon's Hauberk]|h|r",
+					}, -- [5]
+					{
+						["bonusIds"] = {
+							1472, -- [1]
+							1680, -- [2]
+							3528, -- [3]
+							3629, -- [4]
+						},
+						["id"] = 152767,
+						["level"] = 0,
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["link"] = "|cffa335ee|Hitem:152767::::::::110:253:::4:1680:3629:1472:3528:::|h[Oronaar Disciple's Girdle of the Quickblade]|h|r",
+					}, -- [6]
+					{
+						["bonusIds"] = {
+							1482, -- [1]
+							1697, -- [2]
+							3337, -- [3]
+							3629, -- [4]
+						},
+						["id"] = 152764,
+						["level"] = 0,
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["link"] = "|cffa335ee|Hitem:152764::::::::110:253:::4:1697:3629:1482:3337:::|h[Oronaar Disciple's Legguards of the Feverflare]|h|r",
+					}, -- [7]
+					{
+						["bonusIds"] = {
+							1493, -- [1]
+							3336, -- [2]
+							3573, -- [3]
+						},
+						["id"] = 139080,
+						["level"] = 0,
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["link"] = "|cffa335ee|Hitem:139080::::::::110:253::43:3:3573:1493:3336:::|h[Bramblemail Boots]|h|r",
+					}, -- [8]
+					{
+						["bonusIds"] = {
+							1811, -- [1]
+							3530, -- [2]
+						},
+						["id"] = 137101,
+						["level"] = 0,
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["link"] = "|cffff8000|Hitem:137101::::::::110:253:::2:1811:3530:::|h[Call of the Wild]|h|r",
+					}, -- [9]
+					{
+						["bonusIds"] = {
+							3459, -- [1]
+							3530, -- [2]
+						},
+						["id"] = 146668,
+						["level"] = 0,
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["link"] = "|cffff8000|Hitem:146668::::::::110:253::13:2:3459:3530:::|h[Vigilance Perch]|h|r",
+					}, -- [10]
+					{
+						["bonusIds"] = {
+							1490, -- [1]
+							3528, -- [2]
+							3573, -- [3]
+						},
+						["id"] = 134526,
+						["level"] = 0,
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["link"] = "|cffa335ee|Hitem:134526::::::::110:253::43:3:3573:1490:3528:::|h[Gnawed Thumb Ring]|h|r",
+					}, -- [11]
+					{
+						["bonusIds"] = {
+							1487, -- [1]
+							1824, -- [2]
+							3337, -- [3]
+						},
+						["id"] = 134191,
+						["level"] = 0,
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["link"] = "|cffa335ee|Hitem:134191::::::::110:253::25:3:1824:1487:3337:::|h[Rough-Hammered Silver Ring]|h|r",
+					}, -- [12]
+					{
+						["bonusIds"] = {
+							1474, -- [1]
+							3528, -- [2]
+							3573, -- [3]
+						},
+						["id"] = 140801,
+						["level"] = 0,
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["link"] = "|cffa335ee|Hitem:140801::::::::110:253::43:3:3573:1474:3528:::|h[Fury of the Burning Sky]|h|r",
+					}, -- [13]
+					{
+						["bonusIds"] = {
+							1490, -- [1]
+							3528, -- [2]
+							3573, -- [3]
+						},
+						["id"] = 133642,
+						["level"] = 0,
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["link"] = "|cffa335ee|Hitem:133642::::::::110:253::43:3:3573:1490:3528:::|h[Horn of Valor]|h|r",
+					}, -- [14]
+					{
+						["bonusIds"] = {
+							1485, -- [1]
+							3336, -- [2]
+							3394, -- [3]
+						},
+						["id"] = 146766,
+						["level"] = 0,
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["link"] = "|cffa335ee|Hitem:146766::::::::110:253::27:3:3394:1485:3336:::|h[Nethercaller Cloak]|h|r",
+					}, -- [15]
+					{
+						["bonusIds"] = {
+							726, -- [1]
+							1483, -- [2]
+							1484, -- [3]
+							1484, -- [4]
+						},
+						["link"] = "|cffe6cc80|Hitem:128861::143704:141259:141262::::110:253:16777472:9:4:726:1484:1483:1484:454:1:3:3394:1485:3336:3:3394:1483:3528:3:1824:1487:3337|h[Titanstrike]|h|r",
+						["id"] = 128861,
+						["relicBonusIds"] = {
+							{
+								1485, -- [1]
+								3336, -- [2]
+								3394, -- [3]
+							}, -- [1]
+							{
+								1483, -- [1]
+								3394, -- [2]
+								3528, -- [3]
+							}, -- [2]
+							{
+								1487, -- [1]
+								1824, -- [2]
+								3337, -- [3]
+							}, -- [3]
+						},
+						["enchantId"] = 0,
+						["gemIds"] = {
+							143704, -- [1]
+							141259, -- [2]
+							141262, -- [3]
+							0, -- [4]
+						},
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["suffixId"] = 0,
+					}, -- [16]
 				}, -- [1]
 			},
 		},
 	},
+	["global"] = {
+		["Region"] = "US",
+	},
 	["profileKeys"] = {
-		["Noeraa - Sisters of Elune"] = "Noeraa - Sisters of Elune",
 		["Torinara - Sisters of Elune"] = "Torinara - Sisters of Elune",
 		["Allala - Sisters of Elune"] = "Allala - Sisters of Elune",
 		["Aloraal - Sisters of Elune"] = "Aloraal - Sisters of Elune",
 	},
-	["global"] = {
-		["Region"] = "US",
-	},
 	["profiles"] = {
-		["Noeraa - Sisters of Elune"] = {
+		["Torinara - Sisters of Elune"] = {
 			["Logging"] = {
 				["Auto"] = {
-					[1520] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
-					[1676] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
-					[1648] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
-					[1530] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
-					[1712] = {
+					[1861] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -308,60 +1145,10 @@ AskMrRobotDb3 = {
 				},
 			},
 		},
-		["Torinara - Sisters of Elune"] = {
+		["Allala - Sisters of Elune"] = {
 			["Logging"] = {
 				["Auto"] = {
-					[1572] = {
-					},
-					[33] = {
-					},
-					[1116] = {
-					},
-					[1520] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
-					[1676] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
-					[870] = {
-					},
-					[1648] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
-					[1712] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
-					[1064] = {
-					},
-					[1158] = {
-					},
-					[1469] = {
-					},
-					[1098] = {
-					},
-					[1503] = {
-					},
-					[1159] = {
-					},
-					[0] = {
-					},
-					[646] = {
-					},
-					[1220] = {
-					},
-					[1530] = {
+					[1861] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -370,97 +1157,17 @@ AskMrRobotDb3 = {
 				},
 			},
 			["minimap"] = {
-				["minimapPos"] = 163.369020011161,
-			},
-		},
-		["Allala - Sisters of Elune"] = {
-			["Logging"] = {
-				["Auto"] = {
-					[0] = {
-					},
-					[1126] = {
-					},
-					[1220] = {
-					},
-					[1648] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
-					[1712] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
-					[1064] = {
-					},
-					[1098] = {
-					},
-					[1530] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
-					[1676] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
-					[1500] = {
-					},
-					[33] = {
-					},
-					[870] = {
-					},
-					[1520] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
-				},
+				["minimapPos"] = 175.865342157288,
 			},
 		},
 		["Aloraal - Sisters of Elune"] = {
 			["Logging"] = {
 				["Auto"] = {
-					[1520] = {
+					[1861] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
 						[15] = false,
-					},
-					[1220] = {
-					},
-					[1676] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
-					[1648] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
-					[1712] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
-					[1530] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
-					},
-					[33] = {
 					},
 				},
 			},

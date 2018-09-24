@@ -105,6 +105,13 @@ stAddonManagerDB = {
 }
 stAddonManagerProfilesDB = {
 }
+stAddonManagerServerDB = {
+	["Sisters of Elune"] = {
+		["Torinara"] = true,
+		["Aloraal"] = true,
+		["Allala"] = true,
+	},
+}
 BigButtonsDB = {
 	["profileKeys"] = {
 		["Torinara - Sisters of Elune"] = "Default",
@@ -117,3 +124,6 @@ BigButtonsDB = {
 	},
 }
 FriendGroupsDB = nil
+QuestSoundsDB = nil
+ExportData = {
+}
