@@ -1,0 +1,8 @@
+## Interface: 80000
+## Title : SpeedO
+## Notes: Shows your current coordinates, speed, horizontal speed, degrees and pitch.
+## Version: r35
+## Author: Elektrode (Grizzly Hills / Lothar)
+## SavedVariablesPerCharacter: KSpeedO_Settings
+KSpeedO.lua
+

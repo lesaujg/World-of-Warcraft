@@ -41,3 +41,4 @@ TradeSkillMaster_AppHelper: enabled
 Tukui_17_Layout: enabled
 Tukui_Config: enabled
 BaudManifest: enabled
+KSpeedO: enabled

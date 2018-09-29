@@ -151,3 +151,4 @@ WeakAurasTemplates: disabled
 ProjectAzilroka: disabled
 AngryWorldQuests: disabled
 Tukui_17_Layout: enabled
+KSpeedO: enabled

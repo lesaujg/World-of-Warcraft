@@ -166,7 +166,7 @@ Grid2Options: disabled
 Grid2RaidDebuffs: disabled
 Grid2LDB: disabled
 Grid2RaidDebuffsOptions: disabled
-SavedInstances: enabled
+SavedInstances: disabled
 VuhDoOptions: disabled
 WeDontWipe: disabled
 WeDontWipe-WindwalkerMonk: disabled
@@ -212,7 +212,7 @@ IceHUD: disabled
 FactionAddict: disabled
 HandyNotes_Argus: disabled
 mOnArs_WardrobeHelper: disabled
-MountFarmHelper: enabled
+MountFarmHelper: disabled
 NPCScan: disabled
 DBM-Argus: disabled
 DBM-AntorusBurningThrone: disabled
@@ -223,3 +223,4 @@ DBM-TombofSargeras: disabled
 DBM-Uldir: disabled
 ProjectAzilroka: disabled
 Tukui_17_Layout: disabled
+KSpeedO: enabled

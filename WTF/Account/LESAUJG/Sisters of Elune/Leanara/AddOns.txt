@@ -69,3 +69,4 @@ TradeSkillMaster_Vendoring: disabled
 TradeSkillMaster: enabled
 TradeSkillMaster_AppHelper: enabled
 Tukui_17_Layout: enabled
+KSpeedO: enabled

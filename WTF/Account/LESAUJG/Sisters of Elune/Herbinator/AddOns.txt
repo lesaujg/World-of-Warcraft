@@ -218,3 +218,4 @@ IceHUD: disabled
 HandyNotes_Argus: enabled
 ProjectAzilroka: disabled
 Tukui_17_Layout: enabled
+KSpeedO: enabled

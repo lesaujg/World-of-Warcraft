@@ -18,35 +18,35 @@ AskMrRobotDb4 = {
 							3528, -- [3]
 							3629, -- [4]
 						},
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:152765::::::::110:263:::4:1712:3629:1472:3528:::|h[Oronaar Disciple's Coif of the Harmonious]|h|r",
-						["id"] = 152765,
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["link"] = "|cffa335ee|Hitem:152765::::::::110:263:::4:1712:3629:1472:3528:::|h[Oronaar Disciple's Coif of the Harmonious]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
-						["enchantId"] = 0,
+						["id"] = 152765,
 					}, -- [1]
 					{
 						["bonusIds"] = {
 							3628, -- [1]
 						},
-						["suffixId"] = 0,
-						["level"] = 110,
-						["link"] = "|cffa335ee|Hitem:143908::::::::110:263:512:1:1:3628:110:::|h[Choker of the Pure Heart]|h|r",
-						["id"] = 143908,
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["link"] = "|cffa335ee|Hitem:143908::::::::110:263:512:1:1:3628:110:::|h[Choker of the Pure Heart]|h|r",
+						["suffixId"] = 0,
+						["level"] = 110,
 						["upgradeId"] = 0,
-						["enchantId"] = 0,
+						["id"] = 143908,
 					}, -- [2]
 					{
 						["bonusIds"] = {
@@ -55,18 +55,18 @@ AskMrRobotDb4 = {
 							3528, -- [3]
 							3629, -- [4]
 						},
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:152769::::::::110:263:::4:1698:3629:1472:3528:::|h[Oronaar Disciple's Spaulders of the Feverflare]|h|r",
-						["id"] = 152769,
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["link"] = "|cffa335ee|Hitem:152769::::::::110:263:::4:1698:3629:1472:3528:::|h[Oronaar Disciple's Spaulders of the Feverflare]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
-						["enchantId"] = 0,
+						["id"] = 152769,
 					}, -- [3]
 					nil, -- [4]
 					{
@@ -77,18 +77,18 @@ AskMrRobotDb4 = {
 							1684, -- [4]
 							3408, -- [5]
 						},
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:128900::::::::110:263::13:5:669:600:689:1684:3408:::|h[Gravenscale Hauberk of the Peerless]|h|r",
-						["id"] = 128900,
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["link"] = "|cffa335ee|Hitem:128900::::::::110:263::13:5:669:600:689:1684:3408:::|h[Gravenscale Hauberk of the Peerless]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
-						["enchantId"] = 0,
+						["id"] = 128900,
 					}, -- [5]
 					{
 						["bonusIds"] = {
@@ -98,18 +98,18 @@ AskMrRobotDb4 = {
 							3528, -- [4]
 							3629, -- [5]
 						},
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:152767::::::::110:263:::5:1688:3629:41:1472:3528:::|h[Oronaar Disciple's Girdle of the Peerless]|h|r",
-						["id"] = 152767,
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["link"] = "|cffa335ee|Hitem:152767::::::::110:263:::5:1688:3629:41:1472:3528:::|h[Oronaar Disciple's Girdle of the Peerless]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
-						["enchantId"] = 0,
+						["id"] = 152767,
 					}, -- [6]
 					{
 						["bonusIds"] = {
@@ -118,18 +118,18 @@ AskMrRobotDb4 = {
 							3528, -- [3]
 							3629, -- [4]
 						},
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:152764::::::::110:263:::4:1699:3629:1472:3528:::|h[Oronaar Disciple's Legguards of the Feverflare]|h|r",
-						["id"] = 152764,
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["link"] = "|cffa335ee|Hitem:152764::::::::110:263:::4:1699:3629:1472:3528:::|h[Oronaar Disciple's Legguards of the Feverflare]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
-						["enchantId"] = 0,
+						["id"] = 152764,
 					}, -- [7]
 					{
 						["bonusIds"] = {
@@ -138,18 +138,18 @@ AskMrRobotDb4 = {
 							3528, -- [3]
 							3629, -- [4]
 						},
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:152766::::::::110:263:::4:1713:3629:1472:3528:::|h[Oronaar Disciple's Boots of the Harmonious]|h|r",
-						["id"] = 152766,
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["link"] = "|cffa335ee|Hitem:152766::::::::110:263:::4:1713:3629:1472:3528:::|h[Oronaar Disciple's Boots of the Harmonious]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
-						["enchantId"] = 0,
+						["id"] = 152766,
 					}, -- [8]
 					{
 						["bonusIds"] = {
@@ -158,18 +158,18 @@ AskMrRobotDb4 = {
 							3528, -- [3]
 							3629, -- [4]
 						},
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:152762::::::::110:263:::4:1686:3629:1472:3528:::|h[Oronaar Disciple's Bracers of the Peerless]|h|r",
-						["id"] = 152762,
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["link"] = "|cffa335ee|Hitem:152762::::::::110:263:::4:1686:3629:1472:3528:::|h[Oronaar Disciple's Bracers of the Peerless]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
-						["enchantId"] = 0,
+						["id"] = 152762,
 					}, -- [9]
 					{
 						["bonusIds"] = {
@@ -178,18 +178,18 @@ AskMrRobotDb4 = {
 							3528, -- [3]
 							3629, -- [4]
 						},
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:152763::::::::110:263:::4:1698:3629:1472:3528:::|h[Oronaar Disciple's Gloves of the Feverflare]|h|r",
-						["id"] = 152763,
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["link"] = "|cffa335ee|Hitem:152763::::::::110:263:::4:1698:3629:1472:3528:::|h[Oronaar Disciple's Gloves of the Feverflare]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
-						["enchantId"] = 0,
+						["id"] = 152763,
 					}, -- [10]
 					{
 						["bonusIds"] = {
@@ -198,18 +198,18 @@ AskMrRobotDb4 = {
 							689, -- [3]
 							3370, -- [4]
 						},
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:130231::::::::110:263::13:4:3370:669:601:689:::|h[Dawnlight Band of the Fireflash]|h|r",
-						["id"] = 130231,
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["link"] = "|cffa335ee|Hitem:130231::::::::110:263::13:4:3370:669:601:689:::|h[Dawnlight Band of the Fireflash]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
-						["enchantId"] = 0,
+						["id"] = 130231,
 					}, -- [11]
 					{
 						["bonusIds"] = {
@@ -218,18 +218,18 @@ AskMrRobotDb4 = {
 							689, -- [3]
 							3366, -- [4]
 						},
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:130230::::::::110:263::13:4:3366:669:601:689:::|h[Maelstrom Band of the Aurora]|h|r",
-						["id"] = 130230,
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["link"] = "|cffa335ee|Hitem:130230::::::::110:263::13:4:3366:669:601:689:::|h[Maelstrom Band of the Aurora]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
-						["enchantId"] = 0,
+						["id"] = 130230,
 					}, -- [12]
 					{
 						["bonusIds"] = {
@@ -238,18 +238,18 @@ AskMrRobotDb4 = {
 							3394, -- [3]
 							3528, -- [4]
 						},
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:134203::::::::110:263::27:4:3394:603:1489:3528:::|h[Three-Toed Rabbit Foot]|h|r",
-						["id"] = 134203,
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["link"] = "|cffa335ee|Hitem:134203::::::::110:263::27:4:3394:603:1489:3528:::|h[Three-Toed Rabbit Foot]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
-						["enchantId"] = 0,
+						["id"] = 134203,
 					}, -- [13]
 					{
 						["bonusIds"] = {
@@ -258,18 +258,18 @@ AskMrRobotDb4 = {
 							3528, -- [3]
 							3574, -- [4]
 						},
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:147275::::::::110:263:::4:607:3574:1504:3528:::|h[Beguiler's Talisman]|h|r",
-						["id"] = 147275,
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["link"] = "|cffa335ee|Hitem:147275::::::::110:263:::4:607:3574:1504:3528:::|h[Beguiler's Talisman]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
-						["enchantId"] = 0,
+						["id"] = 147275,
 					}, -- [14]
 					{
 						["bonusIds"] = {
@@ -279,18 +279,18 @@ AskMrRobotDb4 = {
 							3357, -- [4]
 							3408, -- [5]
 						},
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:127033::::::::110:263::13:5:669:601:689:3357:3408:::|h[Imbued Silkweave Shade of the Feverflare]|h|r",
-						["id"] = 127033,
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["link"] = "|cffa335ee|Hitem:127033::::::::110:263::13:5:669:601:689:3357:3408:::|h[Imbued Silkweave Shade of the Feverflare]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
-						["enchantId"] = 0,
+						["id"] = 127033,
 					}, -- [15]
 					{
 						["bonusIds"] = {
@@ -304,20 +304,17 @@ AskMrRobotDb4 = {
 						["relicBonusIds"] = {
 						},
 						["enchantId"] = 0,
+						["suffixId"] = 0,
 						["level"] = 0,
+						["upgradeId"] = 0,
 						["gemIds"] = {
 							136686, -- [1]
 							141288, -- [2]
 							143688, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
-						["suffixId"] = 0,
 					}, -- [16]
 					{
-						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["level"] = 0,
 						["link"] = "|cffe6cc80|Hitem:128873::::::::110:263:256:::117:::|h[Fury of the Stonemother]|h|r",
 						["id"] = 128873,
 						["gemIds"] = {
@@ -326,6 +323,9 @@ AskMrRobotDb4 = {
 							0, -- [3]
 							0, -- [4]
 						},
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
 						["relicBonusIds"] = {
 						},
@@ -360,12 +360,13 @@ AskMrRobotDb4 = {
 					}, -- [1]
 					{
 						["bonusIds"] = {
-							3628, -- [1]
+							3459, -- [1]
+							3630, -- [2]
 						},
-						["level"] = 110,
+						["level"] = 0,
 						["suffixId"] = 0,
-						["link"] = "|cffa335ee|Hitem:143906::::::::110:70:512:1:1:3628:110:::|h[Heartbreak Charm]|h|r",
-						["id"] = 143906,
+						["link"] = "|cffff8000|Hitem:132444::::::::110:70:::2:3459:3630:::|h[Prydaz, Xavaric's Magnum Opus]|h|r",
+						["id"] = 132444,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
@@ -822,35 +823,35 @@ AskMrRobotDb4 = {
 							1824, -- [2]
 							3337, -- [3]
 						},
-						["id"] = 134167,
-						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
 						["link"] = "|cffa335ee|Hitem:134167::::::::110:253::25:3:1824:1491:3337:::|h[Bitestone Cowl]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["id"] = 134167,
 					}, -- [1]
 					{
 						["bonusIds"] = {
 							3628, -- [1]
 						},
-						["id"] = 143905,
-						["level"] = 110,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
 						["link"] = "|cffa335ee|Hitem:143905::::::::110:253:512:1:1:3628:110:::|h[Winking Eye of Love]|h|r",
+						["suffixId"] = 0,
+						["level"] = 110,
+						["upgradeId"] = 0,
+						["id"] = 143905,
 					}, -- [2]
 					{
 						["bonusIds"] = {
@@ -859,18 +860,18 @@ AskMrRobotDb4 = {
 							3528, -- [3]
 							3573, -- [4]
 						},
-						["id"] = 144616,
-						["level"] = 0,
 						["enchantId"] = 5899,
-						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
 						["link"] = "|cffa335ee|Hitem:144616:5899:::::::110:253::43:4:3573:1719:1488:3528:::|h[Cruel Gladiator's Chain Spaulders]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["id"] = 144616,
 					}, -- [3]
 					nil, -- [4]
 					{
@@ -880,18 +881,18 @@ AskMrRobotDb4 = {
 							3337, -- [3]
 							3394, -- [4]
 						},
-						["id"] = 134302,
-						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
 						["link"] = "|cffa335ee|Hitem:134302::::::::110:253::27:4:3394:1808:1489:3337:::|h[Ley Dragoon's Hauberk]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["id"] = 134302,
 					}, -- [5]
 					{
 						["bonusIds"] = {
@@ -900,18 +901,18 @@ AskMrRobotDb4 = {
 							3528, -- [3]
 							3629, -- [4]
 						},
-						["id"] = 152767,
-						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
 						["link"] = "|cffa335ee|Hitem:152767::::::::110:253:::4:1680:3629:1472:3528:::|h[Oronaar Disciple's Girdle of the Quickblade]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["id"] = 152767,
 					}, -- [6]
 					{
 						["bonusIds"] = {
@@ -920,18 +921,18 @@ AskMrRobotDb4 = {
 							3337, -- [3]
 							3629, -- [4]
 						},
-						["id"] = 152764,
-						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
 						["link"] = "|cffa335ee|Hitem:152764::::::::110:253:::4:1697:3629:1482:3337:::|h[Oronaar Disciple's Legguards of the Feverflare]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["id"] = 152764,
 					}, -- [7]
 					{
 						["bonusIds"] = {
@@ -939,54 +940,54 @@ AskMrRobotDb4 = {
 							3336, -- [2]
 							3573, -- [3]
 						},
-						["id"] = 139080,
-						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
 						["link"] = "|cffa335ee|Hitem:139080::::::::110:253::43:3:3573:1493:3336:::|h[Bramblemail Boots]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["id"] = 139080,
 					}, -- [8]
 					{
 						["bonusIds"] = {
 							1811, -- [1]
 							3530, -- [2]
 						},
-						["id"] = 137101,
-						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
 						["link"] = "|cffff8000|Hitem:137101::::::::110:253:::2:1811:3530:::|h[Call of the Wild]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["id"] = 137101,
 					}, -- [9]
 					{
 						["bonusIds"] = {
 							3459, -- [1]
 							3530, -- [2]
 						},
-						["id"] = 146668,
-						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
 						["link"] = "|cffff8000|Hitem:146668::::::::110:253::13:2:3459:3530:::|h[Vigilance Perch]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["id"] = 146668,
 					}, -- [10]
 					{
 						["bonusIds"] = {
@@ -994,18 +995,18 @@ AskMrRobotDb4 = {
 							3528, -- [2]
 							3573, -- [3]
 						},
-						["id"] = 134526,
-						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
 						["link"] = "|cffa335ee|Hitem:134526::::::::110:253::43:3:3573:1490:3528:::|h[Gnawed Thumb Ring]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["id"] = 134526,
 					}, -- [11]
 					{
 						["bonusIds"] = {
@@ -1013,18 +1014,18 @@ AskMrRobotDb4 = {
 							1824, -- [2]
 							3337, -- [3]
 						},
-						["id"] = 134191,
-						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
 						["link"] = "|cffa335ee|Hitem:134191::::::::110:253::25:3:1824:1487:3337:::|h[Rough-Hammered Silver Ring]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["id"] = 134191,
 					}, -- [12]
 					{
 						["bonusIds"] = {
@@ -1032,18 +1033,18 @@ AskMrRobotDb4 = {
 							3528, -- [2]
 							3573, -- [3]
 						},
-						["id"] = 140801,
-						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
 						["link"] = "|cffa335ee|Hitem:140801::::::::110:253::43:3:3573:1474:3528:::|h[Fury of the Burning Sky]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["id"] = 140801,
 					}, -- [13]
 					{
 						["bonusIds"] = {
@@ -1051,18 +1052,18 @@ AskMrRobotDb4 = {
 							3528, -- [2]
 							3573, -- [3]
 						},
-						["id"] = 133642,
-						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
 						["link"] = "|cffa335ee|Hitem:133642::::::::110:253::43:3:3573:1490:3528:::|h[Horn of Valor]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["id"] = 133642,
 					}, -- [14]
 					{
 						["bonusIds"] = {
@@ -1070,18 +1071,18 @@ AskMrRobotDb4 = {
 							3336, -- [2]
 							3394, -- [3]
 						},
-						["id"] = 146766,
-						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
 						["link"] = "|cffa335ee|Hitem:146766::::::::110:253::27:3:3394:1485:3336:::|h[Nethercaller Cloak]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["id"] = 146766,
 					}, -- [15]
 					{
 						["bonusIds"] = {
@@ -1110,27 +1111,27 @@ AskMrRobotDb4 = {
 							}, -- [3]
 						},
 						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
 						["gemIds"] = {
 							143704, -- [1]
 							141259, -- [2]
 							141262, -- [3]
 							0, -- [4]
 						},
-						["level"] = 0,
-						["upgradeId"] = 0,
-						["suffixId"] = 0,
 					}, -- [16]
 				}, -- [1]
 			},
 		},
 	},
-	["global"] = {
-		["Region"] = "US",
-	},
 	["profileKeys"] = {
 		["Torinara - Sisters of Elune"] = "Torinara - Sisters of Elune",
 		["Allala - Sisters of Elune"] = "Allala - Sisters of Elune",
 		["Aloraal - Sisters of Elune"] = "Aloraal - Sisters of Elune",
+	},
+	["global"] = {
+		["Region"] = "US",
 	},
 	["profiles"] = {
 		["Torinara - Sisters of Elune"] = {
