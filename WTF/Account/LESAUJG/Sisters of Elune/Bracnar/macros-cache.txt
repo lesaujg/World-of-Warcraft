@@ -24,10 +24,6 @@ VER 3 010000000000005F "_Dire Beast" "INV_MISC_QUESTIONMARK"
 /cast Titan's Thunder
 /cast Dire Beast
 END
-VER 3 010000000000006B "_ExplosiveTrap" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/castsequence [@cursor] reset=combat/24 Explosive Trap, Caltrops,  Lacerate, Caltrops,  Lacerate
-END
 VER 3 010000000000006A "_FeignDeath" "INV_MISC_QUESTIONMARK"
 /cast [nobtn:2]Feign Death
 /cast [btn:2][mod] Play Dead
@@ -39,9 +35,8 @@ VER 3 010000000000005C "_Kill Command" "INV_MISC_QUESTIONMARK"
 /petassist
 /petautocastoff [group] Growl
 /petautocaston [nogroup] Growl
-/petautocastoff [group] Thunderstomp
-/petautocaston [nogroup] Thunderstomp
 /target [noexists] pettarget
+/cast [@pet,dead][nopet:Voidwalker] Voidwalker
 /cast Kill Command
 END
 VER 3 0100000000000060 "_Kite" "132128"
