@@ -64,16 +64,16 @@ TukuiConfigShared = {
 		},
 		["Herbinator"] = {
 		},
-		["Sanjuri"] = {
-		},
 		["Galinar"] = {
 			["General"] = {
 				["UIScale"] = 0.64,
 			},
 		},
-		["Edaka"] = {
+		["Sanjuri"] = {
 		},
 		["Belrath"] = {
+		},
+		["Edaka"] = {
 		},
 		["Palani"] = {
 		},

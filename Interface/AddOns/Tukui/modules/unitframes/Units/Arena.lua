@@ -164,33 +164,18 @@ function TukuiUnitFrames:Arena()
 	self.PVPSpecIcon = SpecIcon
 	self.Trinket = Trinket
 	self.RaidTargetIndicator = RaidIcon
+
+	self.PostUpdate = TukuiUnitFrames.PostUpdateArenaPreparation
 end
 
-function TukuiUnitFrames:CreateArenaPreparationFrames()
-	local HealthTexture = T.GetTexture(C["Textures"].UFHealthTexture)
-	local Font = T.GetFont(C["UnitFrames"].Font)
-	local ArenaPreparation = {}
-
-	for i = 1, 5 do
-		local ArenaX = TukuiUnitFrames.Units.Arena[i]
-
-		ArenaPreparation[i] = CreateFrame("Frame", nil, UIParent)
-		ArenaPreparation[i]:SetAllPoints(ArenaX)
-		ArenaPreparation[i]:SetBackdrop(TukuiUnitFrames.Backdrop)
-		ArenaPreparation[i]:SetBackdropColor(0,0,0)
-
-		ArenaPreparation[i]:CreateShadow()
-
-		ArenaPreparation[i].Health = CreateFrame("StatusBar", nil, ArenaPreparation[i])
-		ArenaPreparation[i].Health:SetAllPoints()
-		ArenaPreparation[i].Health:SetStatusBarTexture(HealthTexture)
-		ArenaPreparation[i].Health:SetStatusBarColor(0.2, 0.2, 0.2, 1)
-
-		ArenaPreparation[i].SpecClass = ArenaPreparation[i].Health:CreateFontString(nil, "OVERLAY")
-		ArenaPreparation[i].SpecClass:SetFontObject(Font)
-		ArenaPreparation[i].SpecClass:SetPoint("CENTER")
-		ArenaPreparation[i]:Hide()
+function TukuiUnitFrames:PostUpdateArenaPreparation(event)
+	if self:IsElementEnabled('PVPSpecIcon') then
+		local specID = self.id and GetArenaOpponentSpec(tonumber(self.id))
+		if specID and specID > 0 then
+			local _, _, _, icon = GetSpecializationInfoByID(specID);
+			self.PVPSpecIcon.Icon:SetTexture(icon)
+		else
+			self.PVPSpecIcon.Icon:SetTexture([[INTERFACE\ICONS\INV_MISC_QUESTIONMARK]])
+		end
 	end
-
-	TukuiUnitFrames.Units.ArenaPreparation = ArenaPreparation
 end
