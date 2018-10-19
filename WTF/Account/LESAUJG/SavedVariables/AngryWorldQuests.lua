@@ -1,8 +1,10 @@
 
 AngryWorldQuests_Config = {
 	["__version"] = 20,
-	["hideFilteredPOI"] = true,
+	["filterFaction"] = 2163,
 	["__filters"] = 22,
-	["disabledFilters"] = 1048400,
+	["hideFilteredPOI"] = true,
+	["disabledFilters"] = 2080080,
 	["showContinentPOI"] = true,
+	["selectedFilters"] = 128,
 }

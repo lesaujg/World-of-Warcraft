@@ -95,12 +95,7 @@ ralllocationnames = {
 	}, -- [68]
 	"Shado-Pan Monastery", -- [69]
 	"Gate of the Setting Sun", -- [70]
-	{
-		["mapType"] = 5,
-		["mapID"] = 887,
-		["name"] = "The Vindicaar",
-		["parentMapID"] = 885,
-	}, -- [71]
+	"Siege of Niuzao Temple", -- [71]
 	"Heart of Fear", -- [72]
 	"Mogu'shan Vaults", -- [73]
 	"Terrace of Endless Spring", -- [74]

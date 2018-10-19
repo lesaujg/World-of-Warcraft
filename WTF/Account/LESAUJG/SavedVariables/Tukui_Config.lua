@@ -90,9 +90,6 @@ TukuiConfigShared = {
 		},
 	},
 	["Account"] = {
-		["Misc"] = {
-			["ReputationEnable"] = false,
-		},
 		["Bags"] = {
 			["Enable"] = false,
 		},

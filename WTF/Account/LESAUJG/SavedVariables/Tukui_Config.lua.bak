@@ -93,9 +93,6 @@ TukuiConfigShared = {
 		["Bags"] = {
 			["Enable"] = false,
 		},
-		["Misc"] = {
-			["ReputationEnable"] = false,
-		},
 	},
 }
 TukuiConfigPerAccount = true
