@@ -46,52 +46,17 @@ function TukuiUnitFrames:DisableBlizzard()
 		return
 	end
 
-	for i = 1, MAX_BOSS_FRAMES do
-		local Boss = _G["Boss"..i.."TargetFrame"]
-		local Health = _G["Boss"..i.."TargetFrame".."HealthBar"]
-		local Power = _G["Boss"..i.."TargetFrame".."ManaBar"]
-
-		Boss:UnregisterAllEvents()
-		Boss.Show = Noop
-		Boss:Hide()
-
-		Health:UnregisterAllEvents()
-		Power:UnregisterAllEvents()
-	end
-
-	if C["Raid"].Enable then
+	if C["Raid"].Enable and CompactRaidFrameManager then
+		-- Disable Blizzard Raid Frames.
+		CompactRaidFrameManager:UnregisterAllEvents()
+		CompactRaidFrameManager:Hide()
+		
+		CompactRaidFrameContainer:UnregisterAllEvents()
+		CompactRaidFrameContainer:Hide()
+		
+		-- Hide Raid Interface Options.
 		InterfaceOptionsFrameCategoriesButton10:SetHeight(0.00001)
 		InterfaceOptionsFrameCategoriesButton10:SetAlpha(0)
-
-		if CompactRaidFrameManager then
-			CompactRaidFrameManager:SetParent(Panels.Hider)
-		end
-
-		if CompactUnitFrameProfiles then
-			CompactUnitFrameProfiles:UnregisterAllEvents()
-		end
-
-		for i = 1, MAX_PARTY_MEMBERS do
-			local PartyMember = _G["PartyMemberFrame" .. i]
-			local Health = _G["PartyMemberFrame" .. i .. "HealthBar"]
-			local Power = _G["PartyMemberFrame" .. i .. "ManaBar"]
-			local Pet = _G["PartyMemberFrame" .. i .."PetFrame"]
-			local PetHealth = _G["PartyMemberFrame" .. i .."PetFrame" .. "HealthBar"]
-
-			PartyMember:UnregisterAllEvents()
-			PartyMember:SetParent(Panels.Hider)
-			PartyMember:Hide()
-			Health:UnregisterAllEvents()
-			Power:UnregisterAllEvents()
-
-			Pet:UnregisterAllEvents()
-			Pet:SetParent(Panels.Hider)
-			PetHealth:UnregisterAllEvents()
-
-			HidePartyFrame()
-			ShowPartyFrame = Noop
-			HidePartyFrame = Noop
-		end
 	end
 end
 
@@ -1119,19 +1084,49 @@ function TukuiUnitFrames:UpdateRaidDebuffIndicator()
 	end
 end
 
-function TukuiUnitFrames:PostUpdateArenaPreparation(event)
-	if self:IsElementEnabled('PVPSpecIcon') then
-		local _, instanceType = IsInInstance()
-		
-		if (instanceType == "arena") then
-			local specID = self.id and GetArenaOpponentSpec(tonumber(self.id))
+function TukuiUnitFrames:PostUpdateArenaPreparationSpec()
+	local specIcon = self.PVPSpecIcon
+	local instanceType = select(2, IsInInstance())
+
+	if (instanceType == "arena") then
+		local specID = self.id and GetArenaOpponentSpec(tonumber(self.id))
+
+		if specID and specID > 0 then
+			local icon = select(4, GetSpecializationInfoByID(specID))
 			
-			if specID and specID > 0 then
-				local _, _, _, icon = GetSpecializationInfoByID(specID);
-				self.PVPSpecIcon.Icon:SetTexture(icon)
-			else
-				self.PVPSpecIcon.Icon:SetTexture([[INTERFACE\ICONS\INV_MISC_QUESTIONMARK]])
-			end
+			specIcon.Icon:SetTexture(icon)
+		else
+			specIcon.Icon:SetTexture([[INTERFACE\ICONS\INV_MISC_QUESTIONMARK]])
+		end
+	else
+		local faction = UnitFactionGroup(self.unit)
+		
+		if faction == "Horde" then
+			specIcon.Icon:SetTexture([[Interface\Icons\INV_BannerPVP_01]])
+		elseif faction == "Alliance" then
+			specIcon.Icon:SetTexture([[Interface\Icons\INV_BannerPVP_02]])
+		else
+			specIcon.Icon:SetTexture([[INTERFACE\ICONS\INV_MISC_QUESTIONMARK]])
+		end
+	end
+end
+
+function TukuiUnitFrames:UpdatePowerColorArenaPreparation(specID)
+	-- oUF is unable to get power color on arena preparation, so we add this feature here.
+	local Power = self
+	local Frame = Power:GetParent()
+	local Health = Frame.Health
+	local Class = select(6, GetSpecializationInfoByID(specID))
+	
+	if Class then
+		local PowerColor = oUF.colors.specpowertypes[Class][specID]
+
+		if PowerColor then
+			local R, G, B = unpack(PowerColor)
+
+			Power:SetStatusBarColor(R, G, B)
+		else
+			Power:SetStatusBarColor(0, 0, 0)
 		end
 	end
 end

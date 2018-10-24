@@ -27,151 +27,156 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Monday 7/9",
-		["rows"] = 1,
+		["date"] = "Wednesday 10/24",
+		["rows"] = 6,
 	}, -- [1]
 	{
-		["date"] = "Monday 7/2",
+		["date"] = "Monday 7/9",
 		["rows"] = 1,
 	}, -- [2]
 	{
-		["date"] = "Wednesday 6/20",
+		["date"] = "Monday 7/2",
 		["rows"] = 1,
 	}, -- [3]
 	{
-		["date"] = "Monday 3/5",
+		["date"] = "Wednesday 6/20",
 		["rows"] = 1,
 	}, -- [4]
 	{
-		["date"] = "Friday 2/23",
+		["date"] = "Monday 3/5",
 		["rows"] = 1,
 	}, -- [5]
 	{
-		["date"] = "Sunday 2/18",
+		["date"] = "Friday 2/23",
 		["rows"] = 1,
 	}, -- [6]
 	{
-		["date"] = "Tuesday 2/13",
+		["date"] = "Sunday 2/18",
 		["rows"] = 1,
 	}, -- [7]
 	{
+		["date"] = "Tuesday 2/13",
+		["rows"] = 1,
+	}, -- [8]
+	{
 		["date"] = "Wednesday 1/31",
 		["rows"] = 2,
-	}, -- [8]
+	}, -- [9]
 	{
 		["date"] = "Tuesday 1/23",
 		["rows"] = 1,
-	}, -- [9]
+	}, -- [10]
 	{
 		["date"] = "Saturday 1/6",
 		["rows"] = 1,
-	}, -- [10]
+	}, -- [11]
 	{
 		["date"] = "Tuesday 6/27",
 		["rows"] = 1,
-	}, -- [11]
+	}, -- [12]
 	{
 		["date"] = "Tuesday 5/30",
 		["rows"] = 1,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Sunday 5/7",
 		["rows"] = 1,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Friday 5/5",
 		["rows"] = 1,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Thursday 5/4",
 		["rows"] = 2,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Tuesday 5/2",
 		["rows"] = 1,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Monday 5/1",
 		["rows"] = 2,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Saturday 4/29",
 		["rows"] = 2,
-	}, -- [18]
+	}, -- [19]
 	{
 		["date"] = "Sunday 4/23",
 		["rows"] = 2,
-	}, -- [19]
-	{
-		["date"] = "Friday 4/21",
-		["rows"] = 1,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
 	{
-		["Shado-Pan Assault"] = 4100,
+		["Gnomeregan"] = 1000,
+		["Stormwind"] = 1000,
+		["Champions of Azeroth"] = 1000,
+		["Ironforge"] = 1000,
+		["Exodar"] = 1000,
+		["Darnassus"] = 1000,
 	}, -- [1]
 	{
-		["The Sha'tar"] = 1000,
+		["Shado-Pan Assault"] = 4100,
 	}, -- [2]
 	{
-		["Shado-Pan Assault"] = 1800,
+		["The Sha'tar"] = 1000,
 	}, -- [3]
 	{
-		["Shado-Pan Assault"] = 600,
+		["Shado-Pan Assault"] = 1800,
 	}, -- [4]
 	{
 		["Shado-Pan Assault"] = 600,
 	}, -- [5]
 	{
-		["Shado-Pan Assault"] = 1200,
+		["Shado-Pan Assault"] = 600,
 	}, -- [6]
 	{
-		["Emperor Shaohao"] = 1280,
+		["Shado-Pan Assault"] = 1200,
 	}, -- [7]
+	{
+		["Emperor Shaohao"] = 1280,
+	}, -- [8]
 	{
 		["Emperor Shaohao"] = 1030,
 		["Shado-Pan Assault"] = 732,
-	}, -- [8]
-	{
-		["Shado-Pan Assault"] = 690,
 	}, -- [9]
 	{
-		["Shado-Pan"] = 1000,
+		["Shado-Pan Assault"] = 690,
 	}, -- [10]
 	{
-		["Armies of Legionfall"] = 500,
+		["Shado-Pan"] = 1000,
 	}, -- [11]
 	{
 		["Armies of Legionfall"] = 500,
 	}, -- [12]
 	{
-		["Armies of Legionfall"] = 575,
+		["Armies of Legionfall"] = 500,
 	}, -- [13]
 	{
-		["Shado-Pan Assault"] = 624,
+		["Armies of Legionfall"] = 575,
 	}, -- [14]
+	{
+		["Shado-Pan Assault"] = 624,
+	}, -- [15]
 	{
 		["The Wardens"] = 450,
 		["Court of Farondis"] = 750,
-	}, -- [15]
+	}, -- [16]
 	{
 		["Highmountain Tribe"] = 250,
-	}, -- [16]
+	}, -- [17]
 	{
 		["The Wardens"] = 450,
 		["Highmountain Tribe"] = 750,
-	}, -- [17]
+	}, -- [18]
 	{
 		["Armies of Legionfall"] = 500,
 		["Dreamweavers"] = 250,
-	}, -- [18]
+	}, -- [19]
 	{
 		["The Wardens"] = 450,
 		["Court of Farondis"] = 1012,
-	}, -- [19]
-	{
-		["The Wardens"] = 375,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
@@ -242,19 +247,19 @@ FactionAddictConfigIsInactive = {
 	[1387] = false,
 	[1888] = false,
 	[1515] = false,
-	[729] = false,
+	[2135] = false,
 	[349] = false,
 	[1098] = false,
 	[1015] = false,
-	[270] = false,
+	[68] = false,
 	[1134] = false,
-	[1708] = false,
+	[54] = false,
 	[2264] = false,
 	[889] = false,
 	[1135] = false,
-	[2135] = false,
+	[729] = false,
 	[509] = false,
-	[68] = false,
+	[270] = false,
 	[72] = false,
 	[76] = false,
 	[2265] = false,
@@ -291,24 +296,24 @@ FactionAddictConfigIsInactive = {
 	[1718] = false,
 	[1272] = false,
 	[1711] = false,
-	[1847] = false,
+	[1337] = false,
 	[989] = false,
 	[1273] = false,
-	[1337] = false,
-	[1085] = false,
-	[1975] = false,
+	[2156] = false,
 	[1850] = false,
+	[2157] = false,
+	[2162] = false,
 	[2158] = false,
-	[2163] = false,
-	[2159] = false,
+	[369] = false,
+	[990] = false,
 	[1275] = false,
-	[1849] = false,
+	[2160] = false,
 	[576] = false,
 	[2161] = false,
 	[1276] = false,
-	[2162] = false,
+	[1085] = false,
 	[1341] = false,
-	[369] = false,
+	[2163] = false,
 	[1277] = false,
 	[2164] = false,
 	[577] = false,
@@ -319,9 +324,9 @@ FactionAddictConfigIsInactive = {
 	[1710] = false,
 	[1279] = false,
 	[69] = false,
-	[1280] = false,
-	[1216] = false,
 	[2045] = false,
+	[1216] = false,
+	[81] = false,
 	[2170] = false,
 	[930] = false,
 	[93] = false,
@@ -331,15 +336,15 @@ FactionAddictConfigIsInactive = {
 	[1090] = false,
 	[1282] = false,
 	[1091] = false,
-	[81] = false,
+	[1280] = false,
 	[1984] = false,
 	[1283] = false,
 	[609] = false,
 	[1156] = false,
-	[2160] = false,
-	[990] = false,
-	[2157] = false,
-	[2156] = false,
+	[1849] = false,
+	[2159] = false,
+	[1975] = false,
+	[1847] = false,
 	[1731] = false,
 	[1739] = false,
 	[1094] = false,
@@ -357,7 +362,7 @@ FactionAddictConfigIsInactive = {
 	[1352] = false,
 	[1416] = false,
 	[1735] = false,
-	[54] = false,
+	[1708] = false,
 	[1353] = false,
 	[970] = false,
 	[1736] = false,

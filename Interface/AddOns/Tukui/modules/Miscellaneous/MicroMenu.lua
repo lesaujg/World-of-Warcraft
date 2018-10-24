@@ -12,7 +12,7 @@ MicroMenu.Buttons = {
 
 	{text = SPELLBOOK_ABILITIES_BUTTON,
 	func = function()
-		ToggleFrame(SpellBookFrame)
+		ShowUIPanel(SpellBookFrame)
 	end,
 	notCheckable = true},
 
@@ -71,28 +71,16 @@ MicroMenu.Buttons = {
 		PVEFrame_ToggleFrame()
 	end,
 	notCheckable = true},
-
-	{text = ACHIEVEMENTS_GUILD_TAB,
-	func = function()
-		if IsInGuild() then
-			if (not GuildFrame) then
-				GuildFrame_LoadUI()
-			end
-
-			GuildFrame_Toggle()
-		else
-			if (not LookingForGuildFrame) then
-				LookingForGuildFrame_LoadUI()
-			end
-
-			LookingForGuildFrame_Toggle()
-		end
-	end,
-	notCheckable = true},
 	
-	{text = COMMUNITIES,
+	{text = GUILD .. " / " .. COMMUNITIES,
 	func = function()
 		ToggleCommunitiesFrame()
+	end,
+	notCheckable = true},
+
+	{text = VOICE,
+	func = function()
+		ToggleChannelFrame()
 	end,
 	notCheckable = true},
 

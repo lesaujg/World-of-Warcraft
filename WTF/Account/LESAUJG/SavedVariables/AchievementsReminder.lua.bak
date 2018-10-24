@@ -80,19 +80,9 @@ ralllocationnames = {
 	"Scarlet Halls", -- [63]
 	"Scarlet Monastery", -- [64]
 	"Scholomance", -- [65]
-	{
-		["mapType"] = 2,
-		["mapID"] = 876,
-		["name"] = "Kul Tiras",
-		["parentMapID"] = 947,
-	}, -- [66]
+	"Stormstout Brewery", -- [66]
 	"Temple of the Jade Serpent", -- [67]
-	{
-		["mapType"] = 3,
-		["mapID"] = 885,
-		["name"] = "Antoran Wastes",
-		["parentMapID"] = 905,
-	}, -- [68]
+	"Mogu'shan Palace", -- [68]
 	"Shado-Pan Monastery", -- [69]
 	"Gate of the Setting Sun", -- [70]
 	"Siege of Niuzao Temple", -- [71]

@@ -62,6 +62,7 @@ function TukuiUnitFrames:Arena()
 	Power.Value:Point("RIGHT", -2, 0)
 
 	Power.PostUpdate = TukuiUnitFrames.PostUpdatePower
+	Power.UpdateColorArenaPreparation = TukuiUnitFrames.UpdatePowerColorArenaPreparation
 
 	Power.frequentUpdates = true
 	Power.colorPower = true
@@ -97,6 +98,9 @@ function TukuiUnitFrames:Arena()
 	SpecIcon:SetPoint("RIGHT", self, "LEFT", -6, 0)
 	SpecIcon:CreateBackdrop()
 	SpecIcon.Backdrop:CreateShadow()
+	SpecIcon.Icon = SpecIcon:CreateTexture(nil, "OVERLAY")
+	SpecIcon.Icon:SetAllPoints(SpecIcon)
+	SpecIcon.Icon:SetTexCoord(0.07, 0.93, 0.07, 0.93)
 
 	local Trinket = CreateFrame("Frame", nil, self)
 	Trinket:Size(22)
@@ -165,5 +169,6 @@ function TukuiUnitFrames:Arena()
 	self.Trinket = Trinket
 	self.RaidTargetIndicator = RaidIcon
 
-	self.PostUpdate = TukuiUnitFrames.PostUpdateArenaPreparation
+	-- This post update is for SpecIcon
+	self.PostUpdate = TukuiUnitFrames.PostUpdateArenaPreparationSpec
 end
