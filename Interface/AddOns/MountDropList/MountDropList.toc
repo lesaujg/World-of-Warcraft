@@ -1,0 +1,31 @@
+## Interface: 80000
+## Title: Mount Drop List
+## Author: test0196@hotmail.com
+## SavedVariables: MountDropListDB
+## Version: 8.0.1
+## X-Curse-Packaged-Version: 8.0.1
+## X-Curse-Project-Name: Mount Drop List
+## X-Curse-Project-ID: mount-drop-list
+
+MountDropList.xml
+
+locales\enUS.lua
+locales\ruRU.lua
+
+locales\deDE.lua
+locales\esES.lua
+locales\esMX.lua
+locales\frFR.lua
+locales\itIT.lua
+locales\koKR.lua
+locales\ptBR.lua
+locales\zhCN.lua
+locales\zhTW.lua
+
+MountsDB.lua
+MountDropList.lua
+
+Config.lua
+
+AltCraftFrame.xml
+AltCraftFrame.lua
