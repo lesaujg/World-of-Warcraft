@@ -1,3 +1,6 @@
+VER 3 0100000000000002 "Follow" "2178485"
+/follow Bracnar
+END
 VER 3 0100000000000001 "Mount" "INV_MISC_QUESTIONMARK"
 /use [mod:ctrlshift]Grand Expedition Yak
 /use [mod:shift]Traveler's Tundra Mammoth

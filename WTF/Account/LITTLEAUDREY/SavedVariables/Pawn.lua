@@ -566,6 +566,6 @@ PawnCommon = {
 	["ButtonPosition"] = 2,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["LastVersion"] = 2.023,
+	["LastVersion"] = 2.0231,
 	["Digits"] = 1,
 }

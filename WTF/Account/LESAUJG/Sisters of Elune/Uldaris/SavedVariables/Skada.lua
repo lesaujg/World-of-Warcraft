@@ -359,16 +359,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518536274.066,
 						["amount"] = -105786,
+						["spellid"] = 68948,
 						["srcname"] = "Apothecary Baxter",
 						["hp"] = 5664270,
-						["spellid"] = 68948,
 					}, -- [2]
 					{
 						["ts"] = 1518536274.134,
 						["amount"] = -17977,
+						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
 						["hp"] = 5646293,
-						["spellid"] = 68947,
 					}, -- [3]
 					{
 						["spellid"] = 68927,
@@ -379,9 +379,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518536275.068,
 						["amount"] = -97835,
+						["spellid"] = 68948,
 						["srcname"] = "Apothecary Baxter",
 						["hp"] = 5453793,
-						["spellid"] = 68948,
 					}, -- [5]
 					{
 						["absorb"] = 0,
@@ -989,12 +989,12 @@ SkadaPerCharDB = {
 				["power"] = {
 					[0] = {
 						["spells"] = {
+							[51637] = 200,
 							[14189] = 9,
-							[1329] = 14,
 							[242164] = 30,
 							[192759] = 1,
 							[703] = 1,
-							[51637] = 200,
+							[1329] = 14,
 						},
 						["amount"] = 255,
 					},
@@ -1365,9 +1365,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518536275.14,
 						["amount"] = -15157,
+						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
 						["hp"] = 6187529,
-						["spellid"] = 68947,
 					}, -- [15]
 					["pos"] = 9,
 				},
@@ -2240,10 +2240,10 @@ SkadaPerCharDB = {
 						["absorb"] = 0,
 					}, -- [3]
 					{
-						["srcname"] = "Apothecary Frye",
-						["ts"] = 1518536278.43,
-						["hp"] = 16174234,
 						["spellid"] = 88163,
+						["ts"] = 1518536278.43,
+						["srcname"] = "Apothecary Frye",
+						["hp"] = 16174234,
 					}, -- [4]
 					{
 						["ts"] = 1518536279.138,
@@ -2272,9 +2272,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518536276.121,
 						["amount"] = -13874,
+						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
 						["hp"] = 14831978,
-						["spellid"] = 68947,
 					}, -- [8]
 					{
 						["absorb"] = 0,
@@ -2293,10 +2293,10 @@ SkadaPerCharDB = {
 						["absorb"] = 0,
 					}, -- [10]
 					{
-						["srcname"] = "Apothecary Frye",
-						["ts"] = 1518536276.41,
-						["hp"] = 14999796,
 						["spellid"] = 88163,
+						["ts"] = 1518536276.41,
+						["srcname"] = "Apothecary Frye",
+						["hp"] = 14999796,
 					}, -- [11]
 					{
 						["absorb"] = 0,
@@ -2309,9 +2309,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1518536277.136,
 						["amount"] = -12514,
+						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
 						["hp"] = 14987282,
-						["spellid"] = 68947,
 					}, -- [13]
 					{
 						["absorb"] = 0,
@@ -3504,12 +3504,12 @@ SkadaPerCharDB = {
 					["power"] = {
 						[0] = {
 							["spells"] = {
+								[51637] = 200,
 								[14189] = 9,
-								[1329] = 14,
 								[242164] = 30,
 								[192759] = 1,
 								[703] = 1,
-								[51637] = 200,
+								[1329] = 14,
 							},
 							["amount"] = 255,
 						},

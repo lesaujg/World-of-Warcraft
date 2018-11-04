@@ -1,6 +1,6 @@
 _NPCScan.Overlay: disabled
 TradeSkillMaster: enabled
-AdvancedIconSelector: enabled
+AdvancedIconSelector: disabled
 AchievementsReminder: enabled
 ActionBarSaver: enabled
 AngryWorldQuests: enabled

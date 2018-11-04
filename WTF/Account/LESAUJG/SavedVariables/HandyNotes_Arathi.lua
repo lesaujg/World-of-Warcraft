@@ -2,6 +2,7 @@
 HandyNotesArathiDB = {
 	["profileKeys"] = {
 		["Uldaris - Sisters of Elune"] = "Default",
+		["Leanara - Sisters of Elune"] = "Default",
 		["Palani - Sisters of Elune"] = "Default",
 		["Torinar - Sisters of Elune"] = "Default",
 		["Herbinator - Sisters of Elune"] = "Default",

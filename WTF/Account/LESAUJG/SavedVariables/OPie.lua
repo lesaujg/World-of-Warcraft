@@ -4,17 +4,17 @@ OneRing_Config = {
 		["Sisters of Elune-Bracnar"] = "default",
 	},
 	["_GameVersion"] = "8.0.1",
-	["_OPieVersion"] = "Vanilla 8 (3.95)",
+	["_OPieVersion"] = "Vanilla 9 (3.96)",
 	["ProfileStorage"] = {
 		["default"] = {
 			["ClickActivation"] = true,
 			["Bindings"] = {
 				["Pets"] = "ALT-W",
 				["sefulItems"] = "ALT-E",
-				["Teleport"] = "ALT-Y",
+				["WorldMarkers"] = false,
 				["Food"] = "ALT-F",
 				["Vendor"] = "ALT-V",
-				["WorldMarkers"] = false,
+				["Teleport"] = "ALT-Y",
 			},
 		},
 	},
@@ -41,35 +41,10 @@ OneRing_Config = {
 					["sliceToken"] = "ABueyhiySOp",
 					["id"] = 83245,
 				}, -- [5]
-				["name"] = "Pets",
+				["limit"] = "Bracnar-SistersofElune",
 				["save"] = true,
 				["hotkey"] = "ALT-W",
-				["limit"] = "Bracnar-SistersofElune",
-			},
-			["Teleport"] = {
-				{
-					"item", -- [1]
-					110560, -- [2]
-					["sliceToken"] = "ABue3IpvlVj",
-				}, -- [1]
-				{
-					"item", -- [1]
-					65360, -- [2]
-					["sliceToken"] = "ABue3IpvlV4",
-				}, -- [2]
-				{
-					"item", -- [1]
-					46874, -- [2]
-					["sliceToken"] = "ABue3IpvlVh",
-				}, -- [3]
-				{
-					"item", -- [1]
-					51560, -- [2]
-					["sliceToken"] = "ABue3IzNdzy",
-				}, -- [4]
-				["name"] = "Teleport",
-				["save"] = true,
-				["limit"] = "Bracnar-SistersofElune",
+				["name"] = "Pets",
 			},
 			["sefulItems"] = {
 				{
@@ -97,10 +72,35 @@ OneRing_Config = {
 					49040, -- [2]
 					["sliceToken"] = "ABuepmAOjSe",
 				}, -- [5]
-				["name"] = "Useful Items",
+				["limit"] = "Bracnar-SistersofElune",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
+				["name"] = "Useful Items",
+			},
+			["Teleport"] = {
+				{
+					"item", -- [1]
+					110560, -- [2]
+					["sliceToken"] = "ABue3IpvlVj",
+				}, -- [1]
+				{
+					"item", -- [1]
+					65360, -- [2]
+					["sliceToken"] = "ABue3IpvlV4",
+				}, -- [2]
+				{
+					"item", -- [1]
+					46874, -- [2]
+					["sliceToken"] = "ABue3IpvlVh",
+				}, -- [3]
+				{
+					"item", -- [1]
+					51560, -- [2]
+					["sliceToken"] = "ABue3IzNdzy",
+				}, -- [4]
 				["limit"] = "Bracnar-SistersofElune",
+				["save"] = true,
+				["name"] = "Teleport",
 			},
 			["Food"] = {
 				{
@@ -118,9 +118,9 @@ OneRing_Config = {
 					140587, -- [2]
 					["sliceToken"] = "ABueoVMF3Ht",
 				}, -- [3]
-				["limit"] = "Bracnar-SistersofElune",
-				["save"] = true,
 				["name"] = "Food",
+				["save"] = true,
+				["limit"] = "Bracnar-SistersofElune",
 			},
 			["Vendor"] = {
 				{
@@ -143,9 +143,9 @@ OneRing_Config = {
 					49040, -- [2]
 					["sliceToken"] = "ABue3IpvlVi",
 				}, -- [4]
-				["name"] = "Vendor",
-				["save"] = true,
 				["limit"] = "Bracnar-SistersofElune",
+				["save"] = true,
+				["name"] = "Vendor",
 			},
 			["OPieFlagStore"] = {
 				["FlushedDefaultColors"] = true,

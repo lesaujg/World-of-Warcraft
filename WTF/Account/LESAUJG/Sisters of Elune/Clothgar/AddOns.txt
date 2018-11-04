@@ -224,3 +224,7 @@ DBM-Uldir: disabled
 ProjectAzilroka: disabled
 Tukui_17_Layout: disabled
 KSpeedO: enabled
+HandyNotes_Arathi: disabled
+MountDropList: disabled
+DBM-CrucibleofStorms: disabled
+DBM-ZuldazarRaid: disabled
