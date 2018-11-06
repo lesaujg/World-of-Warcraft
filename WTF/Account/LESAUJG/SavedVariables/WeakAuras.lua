@@ -103,8 +103,8 @@ WeakAurasSaved = {
 		["Aspect of the Wild"] = {
 			[193530] = 136074,
 		},
-		["Hunter's Mark"] = {
-			[185365] = 236188,
+		["Pheromone Bomb"] = {
+			[270332] = 2065635,
 		},
 		["Shrapnel Bomb"] = {
 			[270339] = 2065637,
@@ -131,11 +131,11 @@ WeakAurasSaved = {
 		["Volatile Bomb"] = {
 			[271049] = 2065636,
 		},
+		["Hunter's Mark"] = {
+			[185365] = 236188,
+		},
 		["Heroism"] = {
 			[32182] = 132313,
-		},
-		["Pheromone Bomb"] = {
-			[270332] = 2065635,
 		},
 		["Intimidation"] = {
 			[24394] = 132111,
@@ -166,6 +166,12 @@ WeakAurasSaved = {
 		["Caltrops"] = {
 			[194279] = 1035047,
 		},
+	},
+	["minimap"] = {
+		["hide"] = false,
+	},
+	["login_squelch_time"] = 10,
+	["registered"] = {
 	},
 	["displays"] = {
 		["Binding Shot Rooted"] = {
@@ -219,12 +225,20 @@ WeakAurasSaved = {
 			["text1Enabled"] = false,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["glow"] = false,
+			["useglowColor"] = false,
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "CENTER",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["alpha"] = 1,
+			["parent"] = "Hunter Utility",
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -263,8 +277,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_name"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -277,24 +294,21 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_vehicleUi"] = false,
 			},
-			["text1Font"] = "Calibri",
-			["parent"] = "Hunter Utility",
-			["icon"] = true,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 			},
+			["icon"] = true,
+			["internalVersion"] = 9,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1Containment"] = "INSIDE",
+			["text1Font"] = "Calibri",
 			["frameStrata"] = 3,
 			["text2Color"] = {
 				1, -- [1]
@@ -303,10 +317,10 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["regionType"] = "icon",
-			["text2Font"] = "Friz Quadrata TT",
-			["text1FontFlags"] = "OUTLINE",
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
+			["text1FontFlags"] = "OUTLINE",
 			["text1"] = " ",
 			["color"] = {
 				1, -- [1]
@@ -314,6 +328,9 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
+			["zoom"] = 0.1,
+			["text2"] = "%p",
+			["auto"] = false,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -326,7 +343,7 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["use_color"] = true,
 					["colorB"] = 0.011764705882353,
-					["scaley"] = 1,
+					["scalex"] = 1,
 					["alpha"] = 0,
 					["colorA"] = 1,
 					["y"] = 0,
@@ -335,8 +352,8 @@ WeakAurasSaved = {
 					["x"] = 0,
 					["colorFunc"] = "    function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      local newProgress = ((math.sin(angle) + 1)/2);\n      return r1 + (newProgress * (r2 - r1)),\n           g1 + (newProgress * (g2 - g1)),\n           b1 + (newProgress * (b2 - b1)),\n           a1 + (newProgress * (a2 - a1))\n    end\n  ",
 					["rotate"] = 0,
+					["scaley"] = 1,
 					["duration"] = ".75",
-					["scalex"] = 1,
 				},
 				["finish"] = {
 					["type"] = "none",
@@ -351,20 +368,17 @@ WeakAurasSaved = {
 					["duration"] = ".75",
 				},
 			},
-			["zoom"] = 0.1,
-			["auto"] = false,
-			["text2"] = "%p",
 			["id"] = "Binding Shot Rooted",
-			["glow"] = false,
+			["cooldownTextEnabled"] = true,
 			["text2Enabled"] = false,
 			["width"] = 30,
-			["cooldownTextEnabled"] = true,
+			["text1Containment"] = "INSIDE",
 			["uid"] = "E33xEkOckCZ",
 			["inverse"] = false,
-			["internalVersion"] = 9,
+			["desaturate"] = false,
 			["displayIcon"] = 462650,
 			["cooldown"] = true,
-			["desaturate"] = false,
+			["text2Font"] = "Friz Quadrata TT",
 		},
 		["Focus - Surv"] = {
 			["textFlags"] = "None",
@@ -493,6 +507,7 @@ WeakAurasSaved = {
 						["unevent"] = "auto",
 						["power_operator"] = "<",
 						["event"] = "Power",
+						["duration"] = "1",
 						["subeventPrefix"] = "SPELL",
 						["spellIds"] = {
 						},
@@ -520,7 +535,7 @@ WeakAurasSaved = {
 					["scaley"] = 1,
 					["use_color"] = false,
 					["colorB"] = 1,
-					["duration"] = "",
+					["scalex"] = 1,
 					["alpha"] = 0,
 					["colorA"] = 1,
 					["y"] = 0,
@@ -529,8 +544,8 @@ WeakAurasSaved = {
 					["x"] = 0,
 					["colorFunc"] = "\n\n",
 					["rotate"] = 0,
+					["duration"] = "",
 					["duration_type"] = "seconds",
-					["scalex"] = 1,
 				},
 				["finish"] = {
 					["duration_type"] = "seconds",
@@ -764,6 +779,7 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["event"] = "Conditions",
 						["subeventPrefix"] = "SPELL",
 						["use_unit"] = true,
@@ -796,6 +812,12 @@ WeakAurasSaved = {
 				},
 			},
 			["desaturate"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "CENTER",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 50,
@@ -848,16 +870,18 @@ WeakAurasSaved = {
 				},
 			},
 			["zoom"] = 0,
+			["useglowColor"] = false,
+			["text1Containment"] = "INSIDE",
 			["text2Containment"] = "INSIDE",
-			["selfPoint"] = "CENTER",
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1Containment"] = "INSIDE",
-			["text1Font"] = "Friz Quadrata TT",
+			["internalVersion"] = 9,
+			["text2Font"] = "Friz Quadrata TT",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -865,6 +889,9 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["regionType"] = "icon",
+			["xOffset"] = -163.578308105469,
+			["cooldownTextEnabled"] = true,
+			["text2FontSize"] = 24,
 			["actions"] = {
 				["start"] = {
 				},
@@ -875,27 +902,24 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["text2Point"] = "CENTER",
-			["text2FontSize"] = 24,
-			["xOffset"] = -163.578308105469,
 			["text1"] = "%p",
-			["frameStrata"] = 1,
 			["width"] = 50,
+			["text2Enabled"] = false,
 			["text2"] = "%p",
 			["auto"] = true,
-			["text2Enabled"] = false,
+			["frameStrata"] = 1,
 			["id"] = "Mend Pet",
 			["text1FontFlags"] = "OUTLINE",
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["stickyDuration"] = false,
-			["internalVersion"] = 9,
+			["text1Font"] = "Friz Quadrata TT",
+			["text2Point"] = "CENTER",
 			["inverse"] = false,
-			["text2Font"] = "Friz Quadrata TT",
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["cooldownTextEnabled"] = true,
+			["stickyDuration"] = false,
 		},
 		["Flanking Strike"] = {
 			["text2Point"] = "CENTER",
@@ -924,6 +948,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["unit"] = "player",
 						["realSpellName"] = "Flanking Strike",
@@ -949,11 +974,24 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "BOTTOMRIGHT",
+			["useglowColor"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["frameStrata"] = 5,
+			["parent"] = "Survival Hunter",
 			["load"] = {
 				["use_petbattle"] = false,
 				["class"] = {
@@ -987,7 +1025,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -996,11 +1034,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_realm"] = false,
-				["pvptalent"] = {
+				["use_vehicleUi"] = false,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_vehicleUi"] = false,
 				["race"] = {
 					["multi"] = {
 					},
@@ -1012,6 +1050,60 @@ WeakAurasSaved = {
 				},
 				["use_name"] = false,
 			},
+			["desaturate"] = false,
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["variable"] = "onCooldown",
+						["value"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = true,
+							["property"] = "desaturate",
+						}, -- [1]
+					},
+				}, -- [1]
+			},
+			["cooldownTextEnabled"] = true,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "Friz Quadrata TT",
+			["text1Containment"] = "INSIDE",
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["regionType"] = "icon",
+			["internalVersion"] = 9,
+			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["frameStrata"] = 5,
+			["text1"] = " ",
+			["icon"] = true,
+			["zoom"] = 0,
+			["text2"] = "%p",
+			["auto"] = false,
+			["glow"] = false,
+			["id"] = "Flanking Strike",
+			["text2Enabled"] = false,
+			["alpha"] = 1,
+			["width"] = 36,
+			["text1FontFlags"] = "OUTLINE",
+			["uid"] = "yQ)NocYAVCN",
+			["inverse"] = true,
+			["text1Enabled"] = false,
+			["displayIcon"] = 236184,
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["translateType"] = "bounce",
@@ -1040,65 +1132,6 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["parent"] = "Survival Hunter",
-			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["variable"] = "onCooldown",
-						["value"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = true,
-							["property"] = "desaturate",
-						}, -- [1]
-					},
-				}, -- [1]
-			},
-			["text1Font"] = "Friz Quadrata TT",
-			["text1Containment"] = "INSIDE",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["regionType"] = "icon",
-			["internalVersion"] = 9,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text2FontSize"] = 24,
-			["anchorFrameType"] = "SCREEN",
-			["text1"] = " ",
-			["icon"] = true,
-			["text2"] = "%p",
-			["zoom"] = 0,
-			["auto"] = false,
-			["glow"] = false,
-			["id"] = "Flanking Strike",
-			["alpha"] = 1,
-			["text2Enabled"] = false,
-			["width"] = 36,
-			["text1FontFlags"] = "OUTLINE",
-			["uid"] = "yQ)NocYAVCN",
-			["inverse"] = true,
-			["text1Enabled"] = false,
-			["displayIcon"] = 236184,
-			["cooldown"] = true,
-			["cooldownTextEnabled"] = true,
 		},
 		["Bestial Wrath K : Border"] = {
 			["text2Point"] = "CENTER",
@@ -1131,6 +1164,7 @@ WeakAurasSaved = {
 						["debuffType"] = "HELPFUL",
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["subeventSuffix"] = "_CAST_START",
 						["realSpellName"] = "Bestial Wrath",
@@ -1155,8 +1189,8 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["remaining"] = "50",
 						["subeventPrefix"] = "SPELL",
-						["custom_hide"] = "timed",
 						["debuffType"] = "HELPFUL",
+						["spellName"] = 19574,
 						["unit"] = "player",
 						["use_remaining"] = true,
 						["subeventSuffix"] = "_CAST_START",
@@ -1175,7 +1209,7 @@ WeakAurasSaved = {
 						["names"] = {
 							"Bestial Wrath", -- [1]
 						},
-						["spellName"] = 19574,
+						["custom_hide"] = "timed",
 						["ownOnly"] = true,
 					},
 					["untrigger"] = {
@@ -1201,13 +1235,21 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
+			["internalVersion"] = 9,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["parent"] = "Hunter CDs",
 			["stickyDuration"] = false,
 			["progressPrecision"] = 4,
 			["text1Point"] = "CENTER",
 			["version"] = 3,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["frameStrata"] = 4,
+			["useglowColor"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -1268,15 +1310,6 @@ WeakAurasSaved = {
 				},
 				["use_vehicleUi"] = false,
 			},
-			["text1Enabled"] = true,
-			["parent"] = "Hunter CDs",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -1393,20 +1426,19 @@ WeakAurasSaved = {
 					},
 				}, -- [4]
 			},
+			["text1Enabled"] = true,
+			["text1Containment"] = "INSIDE",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Friz Quadrata TT",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "CENTER",
 			["glow"] = false,
 			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["cooldownTextEnabled"] = false,
-			["desaturate"] = false,
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 4,
+			["text2FontSize"] = 24,
+			["desaturate"] = false,
 			["text1"] = "%p",
 			["text2Color"] = {
 				1, -- [1]
@@ -1419,16 +1451,26 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["icon"] = true,
 			["id"] = "Bestial Wrath K : Border",
-			["internalVersion"] = 9,
 			["alpha"] = 1,
-			["width"] = 30,
 			["text2Enabled"] = false,
+			["width"] = 30,
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["uid"] = "vaHt907MlLl",
 			["inverse"] = true,
-			["text1Containment"] = "INSIDE",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["selfPoint"] = "CENTER",
+			["cooldownTextEnabled"] = false,
 		},
 		["Aspect of the Eagle Bar"] = {
 			["textFlags"] = "None",
@@ -1493,7 +1535,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -1502,11 +1544,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_realm"] = false,
-				["pvptalent"] = {
+				["use_vehicleUi"] = false,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_vehicleUi"] = false,
 				["race"] = {
 					["multi"] = {
 					},
@@ -1683,37 +1725,38 @@ WeakAurasSaved = {
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["use_power"] = true,
 						["use_genericShowOn"] = true,
-						["use_unit"] = true,
+						["use_inverse"] = false,
 						["ownOnly"] = true,
-						["genericShowOn"] = "showAlways",
 						["subeventPrefix"] = "SPELL",
+						["use_power"] = true,
+						["genericShowOn"] = "showAlways",
+						["unit"] = "player",
 						["use_showgcd"] = true,
 						["powertype"] = 2,
 						["names"] = {
 							"Fogo!", -- [1]
 						},
-						["spellName"] = 19434,
 						["count"] = "3",
-						["subeventSuffix"] = "_CAST_START",
-						["use_powertype"] = true,
-						["debuffType"] = "HELPFUL",
-						["power"] = "70",
-						["type"] = "status",
-						["use_showOn"] = true,
+						["spellName"] = 19434,
 						["unevent"] = "auto",
-						["power_operator"] = ">=",
+						["use_powertype"] = true,
+						["custom_hide"] = "timed",
+						["subeventSuffix"] = "_CAST_START",
+						["type"] = "status",
 						["countOperator"] = "==",
+						["power"] = "70",
+						["use_showOn"] = true,
+						["power_operator"] = ">=",
 						["event"] = "Cooldown Progress (Spell)",
 						["use_percentpower"] = false,
 						["realSpellName"] = "Aimed Shot",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
-						["custom_hide"] = "timed",
-						["use_inverse"] = false,
-						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+						["use_unit"] = true,
+						["duration"] = "1",
 						["percentpower"] = "50",
 						["percentpower_operator"] = ">=",
 					},
@@ -1749,11 +1792,19 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["text1FontFlags"] = "OUTLINE",
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "CENTER",
+			["parent"] = "Hunter Rotation",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["text2Enabled"] = false,
+			["useglowColor"] = false,
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -1812,10 +1863,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Friz Quadrata TT",
-			["parent"] = "Hunter Rotation",
 			["text1Enabled"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -1868,8 +1916,11 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "Friz Quadrata TT",
+			["text1Containment"] = "INSIDE",
 			["xOffset"] = -295,
-			["internalVersion"] = 9,
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -1893,31 +1944,31 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
-			["text1FontFlags"] = "OUTLINE",
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["text2Enabled"] = false,
 			["text1"] = " ",
 			["frameStrata"] = 3,
-			["zoom"] = 0,
 			["text2"] = "%p",
+			["zoom"] = 0,
 			["auto"] = false,
 			["glow"] = false,
 			["id"] = "Aimed Shot",
+			["icon"] = true,
+			["alpha"] = 1,
+			["width"] = 36,
+			["internalVersion"] = 9,
+			["uid"] = "QV6j9(g4odh",
+			["inverse"] = true,
+			["desaturate"] = false,
+			["displayIcon"] = 135130,
+			["cooldown"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["alpha"] = 1,
-			["width"] = 36,
-			["icon"] = true,
-			["uid"] = "QV6j9(g4odh",
-			["inverse"] = true,
-			["text1Containment"] = "INSIDE",
-			["displayIcon"] = 135130,
-			["cooldown"] = true,
-			["desaturate"] = false,
 		},
 		["Steel Trap"] = {
 			["text2Point"] = "CENTER",
@@ -1943,7 +1994,8 @@ WeakAurasSaved = {
 						["names"] = {
 						},
 						["use_showgcd"] = true,
-						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
+						["custom_hide"] = "timed",
 						["charges_operator"] = ">",
 						["charges"] = "0",
 						["spellName"] = 162488,
@@ -1960,7 +2012,7 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["unit"] = "player",
 						["use_genericShowOn"] = true,
-						["custom_hide"] = "timed",
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 						["showOn"] = "showAlways",
@@ -1974,11 +2026,19 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["internalVersion"] = 9,
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "BOTTOMRIGHT",
+			["useglowColor"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["frameStrata"] = 4,
+			["parent"] = "Survival Hunter",
 			["load"] = {
 				["use_petbattle"] = false,
 				["class"] = {
@@ -2013,7 +2073,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -2022,11 +2082,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_realm"] = false,
-				["pvptalent"] = {
+				["use_vehicleUi"] = false,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_vehicleUi"] = false,
 				["race"] = {
 					["multi"] = {
 					},
@@ -2038,23 +2098,7 @@ WeakAurasSaved = {
 				},
 				["use_name"] = false,
 			},
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
-			["parent"] = "Survival Hunter",
 			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -2070,6 +2114,14 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Friz Quadrata TT",
 			["text1Color"] = {
 				1, -- [1]
@@ -2086,18 +2138,18 @@ WeakAurasSaved = {
 			},
 			["regionType"] = "icon",
 			["text1FontFlags"] = "OUTLINE",
-			["internalVersion"] = 9,
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["frameStrata"] = 4,
 			["text1"] = " ",
 			["icon"] = true,
-			["text2"] = "%p",
 			["zoom"] = 0,
+			["text2"] = "%p",
 			["auto"] = false,
 			["glow"] = false,
 			["id"] = "Steel Trap",
-			["alpha"] = 1,
 			["text2Enabled"] = false,
+			["alpha"] = 1,
 			["width"] = 36,
 			["cooldownTextEnabled"] = true,
 			["uid"] = "llPgSpOvjII",
@@ -2105,11 +2157,19 @@ WeakAurasSaved = {
 			["text1Enabled"] = false,
 			["displayIcon"] = 646380,
 			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
 			},
 		},
 		["Feign Death CD"] = {
@@ -2145,6 +2205,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["subeventPrefix"] = "SPELL",
 						["realSpellName"] = "Feign Death",
@@ -2182,12 +2243,20 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
+			["glow"] = false,
+			["useglowColor"] = false,
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "RIGHT",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["alpha"] = 1,
+			["parent"] = "Hunter Utility",
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -2202,21 +2271,21 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["class"] = {
 					["single"] = "HUNTER",
 					["multi"] = {
 					},
 				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
+				["use_name"] = false,
 				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_name"] = false,
+				["use_class"] = true,
 				["race"] = {
 					["multi"] = {
 					},
@@ -2242,31 +2311,31 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Calibri",
-			["parent"] = "Hunter Utility",
-			["icon"] = true,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 			},
+			["icon"] = true,
+			["internalVersion"] = 9,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["cooldownTextEnabled"] = true,
-			["text1FontFlags"] = "OUTLINE",
+			["text1Font"] = "Calibri",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["text2Font"] = "Friz Quadrata TT",
-			["text1Containment"] = "OUTSIDE",
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
+			["text1Containment"] = "OUTSIDE",
 			["text1"] = "FD",
 			["color"] = {
 				0.70588235294118, -- [1]
@@ -2279,16 +2348,16 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["frameStrata"] = 3,
 			["id"] = "Feign Death CD",
-			["glow"] = false,
+			["selfPoint"] = "CENTER",
 			["text2Enabled"] = false,
 			["width"] = 30,
-			["selfPoint"] = "CENTER",
+			["cooldownTextEnabled"] = true,
 			["uid"] = "yP6XjnfDzn)",
 			["inverse"] = true,
-			["internalVersion"] = 9,
+			["desaturate"] = false,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["desaturate"] = false,
+			["text2Font"] = "Friz Quadrata TT",
 		},
 		["Dire Beast"] = {
 			["text2Point"] = "CENTER",
@@ -2319,6 +2388,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["custom_hide"] = "timed",
 						["realSpellName"] = "Dire Beast",
@@ -2374,11 +2444,19 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
+			["desaturate"] = false,
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "BOTTOMRIGHT",
+			["parent"] = "Hunter Rotation",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["frameStrata"] = 4,
+			["useglowColor"] = false,
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -2436,15 +2514,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["parent"] = "Hunter Rotation",
 			["text1Containment"] = "INSIDE",
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -2461,8 +2531,16 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["text1Font"] = "Friz Quadrata TT",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text1Enabled"] = false,
 			["selfPoint"] = "CENTER",
-			["text1FontFlags"] = "OUTLINE",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -2476,26 +2554,26 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["desaturate"] = false,
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["frameStrata"] = 4,
 			["text1"] = " ",
 			["icon"] = true,
-			["zoom"] = 0,
 			["text2"] = "%p",
+			["zoom"] = 0,
 			["auto"] = true,
 			["glow"] = false,
 			["id"] = "Dire Beast",
-			["internalVersion"] = 9,
 			["text2Enabled"] = false,
-			["width"] = 36,
 			["alpha"] = 1,
+			["width"] = 36,
+			["text1FontFlags"] = "OUTLINE",
 			["uid"] = "BA)sR8J(EJ6",
 			["inverse"] = true,
-			["text1Enabled"] = false,
+			["cooldownTextEnabled"] = true,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["cooldownTextEnabled"] = true,
+			["internalVersion"] = 9,
 		},
 		["Stampede Bar"] = {
 			["textFlags"] = "OUTLINE",
@@ -2538,7 +2616,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
+				["use_name"] = false,
 				["talent"] = {
 					["single"] = 18,
 					["multi"] = {
@@ -2558,7 +2636,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_talent"] = true,
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -2569,10 +2650,7 @@ WeakAurasSaved = {
 				},
 				["use_vehicleUi"] = false,
 				["use_spec"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
+				["use_class"] = true,
 				["class"] = {
 					["single"] = "HUNTER",
 					["multi"] = {
@@ -2755,6 +2833,7 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showAlways",
 						["unit"] = "player",
 						["use_showgcd"] = true,
+						["duration"] = "1",
 						["charges"] = "0",
 						["custom_hide"] = "timed",
 						["charges_operator"] = ">",
@@ -2773,8 +2852,8 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["use_genericShowOn"] = true,
 						["use_unit"] = true,
-						["spellName"] = 217200,
 						["debuffType"] = "HELPFUL",
+						["spellName"] = 217200,
 					},
 					["untrigger"] = {
 						["showOn"] = "showAlways",
@@ -2785,6 +2864,7 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["unit"] = "target",
 						["use_unit"] = true,
@@ -2802,6 +2882,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["use_incombat"] = true,
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["use_unit"] = true,
 						["unit"] = "player",
@@ -2833,11 +2914,19 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["stickyDuration"] = false,
+			["cooldownTextEnabled"] = true,
+			["text1Containment"] = "INSIDE",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "TOPRIGHT",
+			["parent"] = "Hunter Rotation",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["frameStrata"] = 3,
+			["useglowColor"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -2894,10 +2983,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Friz Quadrata TT",
-			["parent"] = "Hunter Rotation",
 			["text1Enabled"] = true,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -2969,13 +3055,11 @@ WeakAurasSaved = {
 				0, -- [3]
 				0, -- [4]
 			},
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "Friz Quadrata TT",
+			["internalVersion"] = 9,
 			["glow"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -2984,26 +3068,31 @@ WeakAurasSaved = {
 			},
 			["regionType"] = "icon",
 			["selfPoint"] = "CENTER",
-			["cooldownTextEnabled"] = true,
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["frameStrata"] = 3,
 			["text1"] = "%s",
 			["icon"] = true,
-			["text2"] = "%p",
 			["zoom"] = 0.1,
+			["text2"] = "%p",
 			["auto"] = true,
 			["text1FontFlags"] = "OUTLINE",
 			["id"] = "Barbed Shot",
-			["text1Containment"] = "INSIDE",
 			["alpha"] = 1,
-			["width"] = 36,
 			["text2Enabled"] = false,
+			["width"] = 36,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["uid"] = "rEUsjm5hJQs",
 			["inverse"] = true,
-			["internalVersion"] = 9,
+			["desaturate"] = false,
 			["displayIcon"] = 236186,
 			["cooldown"] = true,
-			["desaturate"] = false,
+			["stickyDuration"] = false,
 		},
 		["Survival Hunter"] = {
 			["backdropColor"] = {
@@ -3086,9 +3175,21 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["selfPoint"] = "BOTTOMLEFT",
+			["borderEdge"] = "None",
 			["borderOffset"] = 5,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["selfPoint"] = "BOTTOMLEFT",
+			["id"] = "Survival Hunter",
 			["xOffset"] = 0,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -3103,11 +3204,6 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["id"] = "Survival Hunter",
-			["anchorPoint"] = "CENTER",
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["borderEdge"] = "None",
 			["borderInset"] = 11,
 			["uid"] = "SzWKRG5plgs",
 			["internalVersion"] = 9,
@@ -3161,14 +3257,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["anchorPoint"] = "CENTER",
 		},
 		["Chimaera"] = {
 			["text2Point"] = "CENTER",
@@ -3190,6 +3279,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["subeventSuffix"] = "_CAST_START",
 						["realSpellName"] = "Chimaera Shot",
@@ -3216,6 +3306,7 @@ WeakAurasSaved = {
 						["use_absorbMode"] = true,
 						["event"] = "Conditions",
 						["unit"] = "player",
+						["duration"] = "1",
 						["use_unit"] = true,
 						["subeventPrefix"] = "SPELL",
 						["unevent"] = "auto",
@@ -3230,6 +3321,7 @@ WeakAurasSaved = {
 						["use_absorbMode"] = true,
 						["event"] = "Unit Characteristics",
 						["unit"] = "target",
+						["duration"] = "1",
 						["use_unit"] = true,
 						["subeventSuffix"] = "_CAST_START",
 						["use_attackable"] = true,
@@ -3246,11 +3338,24 @@ WeakAurasSaved = {
 			["text1Enabled"] = false,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
-			["stickyDuration"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["desaturate"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "CENTER",
+			["useglowColor"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["frameStrata"] = 3,
+			["parent"] = "Hunter Rotation",
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -3288,8 +3393,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_name"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -3302,10 +3410,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_vehicleUi"] = false,
 			},
 			["animation"] = {
 				["start"] = {
@@ -3324,9 +3429,6 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
-			["parent"] = "Hunter Rotation",
-			["cooldownTextEnabled"] = true,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -3373,14 +3475,17 @@ WeakAurasSaved = {
 					},
 				}, -- [3]
 			},
+			["text2Font"] = "Friz Quadrata TT",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Friz Quadrata TT",
+			["internalVersion"] = 9,
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1Containment"] = "INSIDE",
 			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
 			["actions"] = {
@@ -3395,14 +3500,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["frameStrata"] = 3,
 			["text1"] = " ",
 			["text2Color"] = {
 				1, -- [1]
@@ -3410,21 +3510,21 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2"] = "%p",
 			["zoom"] = 0,
+			["text2"] = "%p",
 			["auto"] = true,
 			["glow"] = false,
 			["id"] = "Chimaera",
-			["desaturate"] = false,
 			["text2Enabled"] = false,
-			["width"] = 36,
 			["alpha"] = 1,
+			["width"] = 36,
+			["text1Containment"] = "INSIDE",
 			["uid"] = "bvbtfGLhPP(",
 			["inverse"] = true,
-			["internalVersion"] = 9,
+			["cooldownTextEnabled"] = true,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["text2Font"] = "Friz Quadrata TT",
+			["stickyDuration"] = false,
 		},
 		["Harpoon CD"] = {
 			["text2Point"] = "CENTER",
@@ -3449,7 +3549,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showOnCooldown",
 						["use_unit"] = true,
 						["use_showgcd"] = false,
-						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
+						["custom_hide"] = "timed",
 						["charges_operator"] = ">",
 						["charges"] = "0",
 						["spellName"] = 190925,
@@ -3467,7 +3568,7 @@ WeakAurasSaved = {
 						["names"] = {
 						},
 						["subeventPrefix"] = "SPELL",
-						["custom_hide"] = "timed",
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 						["showOn"] = "showAlways",
@@ -3495,12 +3596,20 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
+			["glow"] = false,
+			["useglowColor"] = false,
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "CENTER",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 23,
-			["frameStrata"] = 5,
+			["parent"] = "Survival Hunter",
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -3540,8 +3649,11 @@ WeakAurasSaved = {
 				},
 				["use_name"] = false,
 				["use_realm"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -3554,15 +3666,8 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_vehicleUi"] = false,
 			},
-			["text1Font"] = "Friz Quadrata TT",
-			["parent"] = "Survival Hunter",
-			["internalVersion"] = 9,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -3578,13 +3683,17 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["internalVersion"] = 9,
+			["text2Font"] = "Friz Quadrata TT",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1Containment"] = "INSIDE",
+			["text1Font"] = "Friz Quadrata TT",
 			["alpha"] = 1,
 			["text2Color"] = {
 				1, -- [1]
@@ -3593,10 +3702,10 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["regionType"] = "icon",
-			["icon"] = true,
-			["selfPoint"] = "CENTER",
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 5,
+			["text2FontSize"] = 24,
+			["selfPoint"] = "CENTER",
 			["text1"] = "%p",
 			["color"] = {
 				0.70588235294118, -- [1]
@@ -3609,16 +3718,16 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["text1FontFlags"] = "OUTLINE",
 			["id"] = "Harpoon CD",
-			["glow"] = false,
+			["cooldownTextEnabled"] = false,
 			["text2Enabled"] = false,
 			["width"] = 23,
-			["cooldownTextEnabled"] = false,
+			["text1Containment"] = "INSIDE",
 			["uid"] = "MmWF1h8U67e",
 			["inverse"] = true,
-			["text2Font"] = "Friz Quadrata TT",
+			["desaturate"] = false,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["desaturate"] = false,
+			["icon"] = true,
 		},
 		["Explosive Shot Flying"] = {
 			["text2Point"] = "CENTER",
@@ -3639,6 +3748,7 @@ WeakAurasSaved = {
 						["use_showgcd"] = false,
 						["remaining"] = "3",
 						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
 						["type"] = "status",
 						["spellName"] = 212679,
 						["unevent"] = "auto",
@@ -3699,11 +3809,19 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
+			["text1Enabled"] = false,
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "CENTER",
+			["useglowColor"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["frameStrata"] = 5,
+			["parent"] = "Hunter Rotation",
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -3761,23 +3879,12 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = true,
-					["glow_frame"] = "WeakAuras:Explosive Shot Flying",
-					["glow_action"] = "show",
-				},
-				["finish"] = {
-					["do_glow"] = false,
-				},
-				["init"] = {
-				},
-			},
-			["parent"] = "Hunter Rotation",
 			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 			},
+			["text1Containment"] = "INSIDE",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Friz Quadrata TT",
 			["text1Color"] = {
 				1, -- [1]
@@ -3789,9 +3896,9 @@ WeakAurasSaved = {
 			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
 			["glow"] = false,
-			["text1Enabled"] = false,
-			["text2FontSize"] = 24,
 			["width"] = 36,
+			["text2FontSize"] = 24,
+			["frameStrata"] = 5,
 			["text1"] = " ",
 			["text2Color"] = {
 				1, -- [1]
@@ -3799,13 +3906,13 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["zoom"] = 0,
 			["text2"] = "%p",
+			["zoom"] = 0,
 			["auto"] = false,
 			["cooldownTextEnabled"] = false,
 			["id"] = "Explosive Shot Flying",
-			["alpha"] = 1,
 			["text2Enabled"] = false,
+			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["color"] = {
 				1, -- [1]
@@ -3818,7 +3925,18 @@ WeakAurasSaved = {
 			["internalVersion"] = 9,
 			["displayIcon"] = 1044088,
 			["cooldown"] = true,
-			["text1Containment"] = "INSIDE",
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = true,
+					["glow_frame"] = "WeakAuras:Explosive Shot Flying",
+					["glow_action"] = "show",
+				},
+				["finish"] = {
+					["do_glow"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Purge (Pet) CD"] = {
 			["text2Point"] = "CENTER",
@@ -3838,6 +3956,7 @@ WeakAurasSaved = {
 						},
 						["remaining"] = "1.3",
 						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
 						["type"] = "status",
 						["spellName"] = 264265,
 						["unevent"] = "auto",
@@ -3866,6 +3985,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["remaining"] = "1.3",
 						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
 						["use_remaining"] = true,
 						["use_unit"] = true,
 						["subeventSuffix"] = "_CAST_START",
@@ -3889,110 +4009,115 @@ WeakAurasSaved = {
 				}, -- [2]
 				{
 					["trigger"] = {
-						["use_genericShowOn"] = true,
-						["type"] = "status",
 						["use_absorbMode"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["remaining"] = "1.3",
-						["remaining_operator"] = ">",
 						["genericShowOn"] = "showOnCooldown",
 						["use_unit"] = true,
-						["realSpellName"] = "Sonic Blast",
-						["use_spellName"] = true,
-						["subeventPrefix"] = "SPELL",
+						["remaining"] = "1.3",
+						["spellName"] = 264263,
 						["use_remaining"] = true,
 						["unevent"] = "auto",
-						["unit"] = "player",
 						["event"] = "Cooldown Progress (Spell)",
-						["spellName"] = 264263,
+						["duration"] = "1",
+						["realSpellName"] = "Sonic Blast",
+						["use_spellName"] = true,
+						["use_genericShowOn"] = true,
+						["type"] = "status",
+						["remaining_operator"] = ">",
+						["subeventSuffix"] = "_CAST_START",
+						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
 					},
 					["untrigger"] = {
 					},
 				}, -- [3]
 				{
 					["trigger"] = {
-						["use_genericShowOn"] = true,
-						["type"] = "status",
 						["use_absorbMode"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["remaining"] = "1.3",
-						["remaining_operator"] = ">",
 						["genericShowOn"] = "showOnCooldown",
 						["use_unit"] = true,
-						["realSpellName"] = "Spore Cloud",
-						["use_spellName"] = true,
-						["subeventPrefix"] = "SPELL",
+						["remaining"] = "1.3",
+						["spellName"] = 264056,
 						["use_remaining"] = true,
 						["unevent"] = "auto",
-						["unit"] = "player",
 						["event"] = "Cooldown Progress (Spell)",
-						["spellName"] = 264056,
+						["duration"] = "1",
+						["realSpellName"] = "Spore Cloud",
+						["use_spellName"] = true,
+						["use_genericShowOn"] = true,
+						["type"] = "status",
+						["remaining_operator"] = ">",
+						["subeventSuffix"] = "_CAST_START",
+						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
 					},
 					["untrigger"] = {
 					},
 				}, -- [4]
 				{
 					["trigger"] = {
-						["use_genericShowOn"] = true,
-						["type"] = "status",
 						["use_absorbMode"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["remaining"] = "1.3",
-						["remaining_operator"] = ">",
 						["genericShowOn"] = "showOnCooldown",
 						["use_unit"] = true,
-						["realSpellName"] = "Soothing Water",
-						["use_spellName"] = true,
-						["subeventPrefix"] = "SPELL",
+						["remaining"] = "1.3",
+						["spellName"] = 264262,
 						["use_remaining"] = true,
 						["unevent"] = "auto",
-						["unit"] = "player",
 						["event"] = "Cooldown Progress (Spell)",
-						["spellName"] = 264262,
+						["duration"] = "1",
+						["realSpellName"] = "Soothing Water",
+						["use_spellName"] = true,
+						["use_genericShowOn"] = true,
+						["type"] = "status",
+						["remaining_operator"] = ">",
+						["subeventSuffix"] = "_CAST_START",
+						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
 					},
 					["untrigger"] = {
 					},
 				}, -- [5]
 				{
 					["trigger"] = {
-						["use_genericShowOn"] = true,
-						["type"] = "status",
 						["use_absorbMode"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["remaining"] = "1.3",
-						["remaining_operator"] = ">",
 						["genericShowOn"] = "showOnCooldown",
 						["use_unit"] = true,
-						["realSpellName"] = "Chi-Ji's Tranquility",
-						["use_spellName"] = true,
-						["subeventPrefix"] = "SPELL",
+						["remaining"] = "1.3",
+						["spellName"] = 264028,
 						["use_remaining"] = true,
 						["unevent"] = "auto",
-						["unit"] = "player",
 						["event"] = "Cooldown Progress (Spell)",
-						["spellName"] = 264028,
+						["duration"] = "1",
+						["realSpellName"] = "Chi-Ji's Tranquility",
+						["use_spellName"] = true,
+						["use_genericShowOn"] = true,
+						["type"] = "status",
+						["remaining_operator"] = ">",
+						["subeventSuffix"] = "_CAST_START",
+						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
 					},
 					["untrigger"] = {
 					},
 				}, -- [6]
 				{
 					["trigger"] = {
-						["use_genericShowOn"] = true,
-						["type"] = "status",
 						["use_absorbMode"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["remaining"] = "1.3",
-						["remaining_operator"] = ">",
 						["genericShowOn"] = "showOnCooldown",
 						["use_unit"] = true,
-						["realSpellName"] = "Nature's Grace",
-						["use_spellName"] = true,
-						["subeventPrefix"] = "SPELL",
+						["remaining"] = "1.3",
+						["spellName"] = 264266,
 						["use_remaining"] = true,
 						["unevent"] = "auto",
-						["unit"] = "player",
 						["event"] = "Cooldown Progress (Spell)",
-						["spellName"] = 264266,
+						["duration"] = "1",
+						["realSpellName"] = "Nature's Grace",
+						["use_spellName"] = true,
+						["use_genericShowOn"] = true,
+						["type"] = "status",
+						["remaining_operator"] = ">",
+						["subeventSuffix"] = "_CAST_START",
+						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
 					},
 					["untrigger"] = {
 					},
@@ -4003,12 +4128,20 @@ WeakAurasSaved = {
 			["text1Enabled"] = true,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
-			["stickyDuration"] = false,
+			["alpha"] = 1,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["desaturate"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "RIGHT",
+			["parent"] = "Hunter Utility",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["frameStrata"] = 3,
+			["stickyDuration"] = false,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -4032,12 +4165,12 @@ WeakAurasSaved = {
 						true, -- [3]
 					},
 				},
-				["use_class"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
 				["use_name"] = false,
+				["use_class"] = true,
 				["race"] = {
 					["multi"] = {
 					},
@@ -4065,49 +4198,9 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Containment"] = "OUTSIDE",
-			["parent"] = "Hunter Utility",
-			["cooldownTextEnabled"] = true,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 			},
-			["text1Font"] = "Calibri",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["internalVersion"] = 9,
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
-			["desaturate"] = false,
-			["color"] = {
-				0.70588235294118, -- [1]
-				0.70588235294118, -- [2]
-				0.70588235294118, -- [3]
-				1, -- [4]
-			},
-			["text2FontSize"] = 24,
-			["anchorFrameType"] = "SCREEN",
-			["text1"] = "Purge",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["zoom"] = 0.1,
-			["text2"] = "%p",
-			["auto"] = true,
-			["glow"] = false,
-			["id"] = "Purge (Pet) CD",
-			["alpha"] = 1,
-			["text2Enabled"] = false,
-			["width"] = 30,
-			["text2Font"] = "Friz Quadrata TT",
-			["uid"] = "k(sW5zUVqVE",
-			["inverse"] = true,
+			["text1Containment"] = "OUTSIDE",
 			["animation"] = {
 				["start"] = {
 					["type"] = "preset",
@@ -4124,8 +4217,9 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
-			["displayIcon"] = "",
-			["cooldown"] = true,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "Calibri",
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -4141,6 +4235,45 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
+			["internalVersion"] = 9,
+			["text1FontFlags"] = "OUTLINE",
+			["regionType"] = "icon",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 3,
+			["text2FontSize"] = 24,
+			["color"] = {
+				0.70588235294118, -- [1]
+				0.70588235294118, -- [2]
+				0.70588235294118, -- [3]
+				1, -- [4]
+			},
+			["text1"] = "Purge",
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["zoom"] = 0.1,
+			["text2"] = "%p",
+			["auto"] = true,
+			["glow"] = false,
+			["id"] = "Purge (Pet) CD",
+			["text2Font"] = "Friz Quadrata TT",
+			["text2Enabled"] = false,
+			["width"] = 30,
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["uid"] = "k(sW5zUVqVE",
+			["inverse"] = true,
+			["cooldownTextEnabled"] = true,
+			["displayIcon"] = "",
+			["cooldown"] = true,
+			["useglowColor"] = false,
 		},
 		["FrenzyTracker : Asakawa"] = {
 			["textFlags"] = "OUTLINE",
@@ -4213,15 +4346,15 @@ WeakAurasSaved = {
 					},
 				},
 				["use_vehicleUi"] = false,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["single"] = "HUNTER",
 					["multi"] = {
@@ -4437,12 +4570,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -4450,6 +4578,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
@@ -4665,12 +4798,20 @@ WeakAurasSaved = {
 			["text1Enabled"] = false,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["cooldownTextEnabled"] = true,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "CENTER",
+			["parent"] = "Hunter Utility",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["alpha"] = 1,
+			["useglowColor"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -4708,8 +4849,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_name"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -4722,10 +4866,9 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_vehicleUi"] = false,
+			},
+			["conditions"] = {
 			},
 			["animation"] = {
 				["start"] = {
@@ -4743,30 +4886,33 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
-			["parent"] = "Hunter Utility",
-			["desaturate"] = false,
+			["internalVersion"] = 9,
 			["text2Containment"] = "INSIDE",
-			["conditions"] = {
-			},
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Calibri",
-			["text2Font"] = "Friz Quadrata TT",
-			["text1FontFlags"] = "OUTLINE",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["icon"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2FontSize"] = 24,
-			["anchorFrameType"] = "SCREEN",
 			["text1"] = "%p",
 			["text1Containment"] = "INSIDE",
 			["text2"] = "%p",
@@ -4774,21 +4920,16 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["frameStrata"] = 3,
 			["id"] = "Posthaste",
-			["cooldownTextEnabled"] = true,
+			["glow"] = false,
 			["text2Enabled"] = false,
 			["width"] = 30,
-			["glow"] = false,
+			["text2Font"] = "Friz Quadrata TT",
 			["uid"] = "T(oUjCmhGFs",
 			["inverse"] = false,
-			["internalVersion"] = 9,
+			["desaturate"] = false,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 		},
 		["Barrage"] = {
 			["text2Point"] = "CENTER",
@@ -4811,6 +4952,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["spellName"] = 120360,
 						["realSpellName"] = "Barrage",
@@ -4833,6 +4975,7 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["subeventPrefix"] = "SPELL",
 						["realSpellName"] = "Barrage",
@@ -4851,6 +4994,7 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["unit"] = "target",
 						["use_unit"] = true,
@@ -4868,6 +5012,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["use_incombat"] = true,
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["unit"] = "player",
 						["use_unit"] = true,
@@ -4900,12 +5045,20 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
+			["selfPoint"] = "CENTER",
+			["useglowColor"] = false,
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "CENTER",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["frameStrata"] = 4,
+			["parent"] = "Hunter Rotation",
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -4945,8 +5098,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_name"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -4959,15 +5115,8 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_vehicleUi"] = false,
 			},
-			["text1Font"] = "Calibri",
-			["parent"] = "Hunter Rotation",
-			["cooldownTextEnabled"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -5040,12 +5189,39 @@ WeakAurasSaved = {
 					},
 				}, -- [4]
 			},
+			["cooldownTextEnabled"] = false,
+			["text1Containment"] = "INSIDE",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["text1Font"] = "Calibri",
+			["text1FontFlags"] = "OUTLINE",
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["regionType"] = "icon",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 4,
+			["text2FontSize"] = 24,
+			["glow"] = false,
+			["text1"] = "%c",
+			["text1Enabled"] = true,
+			["zoom"] = 0,
+			["text2"] = "%p",
+			["auto"] = false,
+			["alpha"] = 1,
+			["id"] = "Barrage",
+			["internalVersion"] = 9,
+			["text2Enabled"] = false,
+			["width"] = 36,
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -5058,40 +5234,17 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
+			["uid"] = "P2ZXsr6esrQ",
+			["inverse"] = true,
+			["desaturate"] = false,
+			["displayIcon"] = 236201,
+			["cooldown"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["glow"] = false,
-			["text2FontSize"] = 24,
-			["anchorFrameType"] = "SCREEN",
-			["text1"] = "%c",
-			["text1Enabled"] = true,
-			["zoom"] = 0,
-			["text2"] = "%p",
-			["auto"] = false,
-			["alpha"] = 1,
-			["id"] = "Barrage",
-			["selfPoint"] = "CENTER",
-			["text2Enabled"] = false,
-			["width"] = 36,
-			["internalVersion"] = 9,
-			["uid"] = "P2ZXsr6esrQ",
-			["inverse"] = true,
-			["text1Containment"] = "INSIDE",
-			["displayIcon"] = 236201,
-			["cooldown"] = true,
-			["desaturate"] = false,
 		},
 		["Wildfire Infusion debuff icon"] = {
 			["textFlags"] = "None",
@@ -5172,8 +5325,11 @@ WeakAurasSaved = {
 				},
 				["use_name"] = false,
 				["use_realm"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -5182,10 +5338,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_vehicleUi"] = false,
 				["use_petbattle"] = false,
 			},
 			["timerColor"] = {
@@ -5210,6 +5363,13 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
+			["glowType"] = "buttonOverlay",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["textColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -5217,6 +5377,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["sparkWidth"] = 10,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["sparkOffsetX"] = 0,
 			["color"] = {
 				1, -- [1]
@@ -5225,7 +5386,6 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["parent"] = "Survival Hunter",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["text1Containment"] = "INSIDE",
 			["backgroundColor"] = {
 				0, -- [1]
@@ -5234,12 +5394,11 @@ WeakAurasSaved = {
 				0.0512815117836, -- [4]
 			},
 			["borderInset"] = 1,
+			["anchorFrameType"] = "SCREEN",
 			["spark"] = false,
 			["customTextUpdate"] = "update",
-			["anchorFrameType"] = "SCREEN",
+			["id"] = "Wildfire Infusion debuff icon",
 			["sparkRotationMode"] = "AUTO",
-			["displayTextLeft"] = " ",
-			["textSize"] = 12,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -5275,9 +5434,11 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["text1FontFlags"] = "OUTLINE",
+			["displayTextLeft"] = " ",
+			["useglowColor"] = false,
+			["displayTextRight"] = "%p",
 			["internalVersion"] = 9,
-			["id"] = "Wildfire Infusion debuff icon",
+			["textSize"] = 12,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -5296,42 +5457,44 @@ WeakAurasSaved = {
 			["text"] = false,
 			["zoom"] = 0,
 			["stickyDuration"] = false,
-			["displayTextRight"] = "%p",
-			["text2Point"] = "CENTER",
+			["text1FontFlags"] = "OUTLINE",
+			["sparkHeight"] = 30,
 			["borderBackdrop"] = "Blizzard Dialog Background",
 			["stacksFont"] = "Friz Quadrata TT",
 			["timer"] = false,
 			["timerFlags"] = "OUTLINE",
-			["sparkHeight"] = 30,
-			["sparkBlendMode"] = "ADD",
-			["useAdjustededMax"] = false,
-			["alpha"] = 1,
-			["text2Containment"] = "INSIDE",
 			["backdropColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.12820452451706, -- [4]
 			},
+			["sparkBlendMode"] = "ADD",
+			["useAdjustededMax"] = false,
+			["alpha"] = 1,
+			["text2Containment"] = "INSIDE",
+			["borderInFront"] = true,
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["borderEdge"] = "1 Pixel",
+			["border"] = true,
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["border"] = true,
-			["borderEdge"] = "1 Pixel",
 			["text2Font"] = "Friz Quadrata TT",
 			["borderSize"] = 2,
-			["borderInFront"] = true,
-			["icon_side"] = "LEFT",
 			["text1Font"] = "Friz Quadrata TT",
+			["icon_side"] = "LEFT",
+			["text2Point"] = "CENTER",
+			["height"] = 19,
+			["text1"] = "%s",
 			["actions"] = {
 				["start"] = {
 				},
@@ -5340,8 +5503,6 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["text1"] = "%s",
-			["height"] = 19,
 			["stacksSize"] = 12,
 			["stacksColor"] = {
 				1, -- [1]
@@ -5392,6 +5553,7 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showAlways",
 						["unit"] = "player",
 						["use_showgcd"] = true,
+						["duration"] = "1",
 						["debuffType"] = "HELPFUL",
 						["charges_operator"] = ">",
 						["charges"] = "0",
@@ -5441,6 +5603,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["realSpellName"] = "Carve",
 						["use_spellName"] = true,
+						["duration"] = "1",
 						["subeventPrefix"] = "SPELL",
 						["use_unit"] = true,
 						["subeventSuffix"] = "_CAST_START",
@@ -5492,6 +5655,7 @@ WeakAurasSaved = {
 						["spellName"] = 259495,
 						["charges_operator"] = "==",
 						["use_remaining"] = true,
+						["duration"] = "1",
 						["unevent"] = "auto",
 						["subeventSuffix"] = "_CAST_START",
 						["use_itemName"] = true,
@@ -5570,6 +5734,7 @@ WeakAurasSaved = {
 						["spellName"] = 259489,
 						["use_remaining"] = true,
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["use_itemName"] = true,
 						["remaining_operator"] = ">",
 						["realSpellName"] = "Kill Command",
@@ -5592,6 +5757,7 @@ WeakAurasSaved = {
 						["use_absorbMode"] = true,
 						["event"] = "Power",
 						["subeventPrefix"] = "SPELL",
+						["duration"] = "1",
 						["unit"] = "player",
 						["use_unit"] = true,
 						["subeventSuffix"] = "_CAST_START",
@@ -5621,11 +5787,19 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
+			["text1Enabled"] = false,
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "BOTTOMRIGHT",
+			["useglowColor"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["frameStrata"] = 4,
+			["parent"] = "Survival Hunter",
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -5660,7 +5834,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -5669,11 +5843,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_realm"] = false,
-				["pvptalent"] = {
+				["use_vehicleUi"] = false,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_vehicleUi"] = false,
 				["race"] = {
 					["multi"] = {
 					},
@@ -5686,9 +5860,6 @@ WeakAurasSaved = {
 				["use_name"] = false,
 			},
 			["desaturate"] = false,
-			["parent"] = "Survival Hunter",
-			["cooldownTextEnabled"] = true,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -5746,14 +5917,17 @@ WeakAurasSaved = {
 					},
 				}, -- [2]
 			},
+			["selfPoint"] = "CENTER",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["internalVersion"] = 9,
 			["text1Font"] = "Friz Quadrata TT",
-			["text1Containment"] = "INSIDE",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -5762,31 +5936,31 @@ WeakAurasSaved = {
 			},
 			["regionType"] = "icon",
 			["icon"] = true,
-			["text1Enabled"] = false,
-			["text2FontSize"] = 24,
 			["width"] = 36,
+			["text2FontSize"] = 24,
+			["frameStrata"] = 4,
 			["text1"] = " ",
 			["text1FontFlags"] = "OUTLINE",
-			["zoom"] = 0,
 			["text2"] = "%p",
+			["zoom"] = 0,
 			["auto"] = true,
 			["glow"] = true,
 			["id"] = "Carve Glow",
+			["alpha"] = 1,
+			["text2Enabled"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["text1Containment"] = "INSIDE",
+			["uid"] = "OtZrktL9)dG",
+			["inverse"] = true,
+			["cooldownTextEnabled"] = true,
+			["displayIcon"] = "",
+			["cooldown"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["text2Enabled"] = false,
-			["uid"] = "OtZrktL9)dG",
-			["inverse"] = true,
-			["internalVersion"] = 9,
-			["displayIcon"] = "",
-			["cooldown"] = true,
-			["selfPoint"] = "CENTER",
 		},
 		["Pet Survival"] = {
 			["glow"] = false,
@@ -5807,7 +5981,7 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["ownOnly"] = true,
 						["use_HasPet"] = false,
-						["custom_hide"] = "timed",
+						["debuffType"] = "HELPFUL",
 						["custom_type"] = "status",
 						["type"] = "custom",
 						["inverse"] = true,
@@ -5822,8 +5996,8 @@ WeakAurasSaved = {
 						["spellIds"] = {
 						},
 						["check"] = "event",
+						["custom_hide"] = "timed",
 						["use_mounted"] = false,
-						["debuffType"] = "HELPFUL",
 						["names"] = {
 							"Aspecto do Falcão", -- [1]
 							"Aspecto da Águia de Ferro", -- [2]
@@ -5839,6 +6013,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_vehicle"] = false,
+						["duration"] = "1",
 						["event"] = "Conditions",
 						["unit"] = "player",
 						["genericShowOn"] = "showOnActive",
@@ -5858,6 +6033,7 @@ WeakAurasSaved = {
 						["use_absorbMode"] = true,
 						["event"] = "Unit Characteristics",
 						["unit"] = "target",
+						["duration"] = "1",
 						["use_unit"] = true,
 						["subeventSuffix"] = "_CAST_START",
 						["use_attackable"] = true,
@@ -5874,9 +6050,17 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "CENTER",
+			["text2Enabled"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
+			["text1Font"] = "Calibri",
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -5934,19 +6118,19 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["anchorFrameType"] = "SCREEN",
-			["text1Font"] = "Calibri",
-			["parent"] = "Survival Hunter",
-			["text2Containment"] = "INSIDE",
 			["text1Containment"] = "INSIDE",
+			["useglowColor"] = false,
+			["conditions"] = {
+			},
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["conditions"] = {
-			},
+			["parent"] = "Survival Hunter",
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = true,
@@ -5981,16 +6165,16 @@ WeakAurasSaved = {
 				},
 			},
 			["text2FontSize"] = 24,
+			["anchorFrameType"] = "SCREEN",
+			["text1"] = " ",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1"] = " ",
-			["text2Enabled"] = false,
-			["text2"] = "%p",
 			["zoom"] = 0,
+			["text2"] = "%p",
 			["auto"] = true,
 			["text2Point"] = "CENTER",
 			["id"] = "Pet Survival",
@@ -6000,9 +6184,9 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["alpha"] = 1,
-			["width"] = 30,
 			["frameStrata"] = 2,
+			["width"] = 30,
+			["alpha"] = 1,
 			["uid"] = "2VztXkXJEs3",
 			["inverse"] = false,
 			["text1Enabled"] = true,
@@ -6064,12 +6248,20 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
+			["alpha"] = 1,
+			["useglowColor"] = false,
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "CENTER",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["frameStrata"] = 3,
+			["parent"] = "Hunter Utility",
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -6081,21 +6273,21 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["class"] = {
 					["single"] = "HUNTER",
 					["multi"] = {
 					},
 				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
+				["use_name"] = false,
 				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_name"] = false,
+				["use_class"] = true,
 				["race"] = {
 					["multi"] = {
 					},
@@ -6124,27 +6316,52 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Calibri",
-			["parent"] = "Hunter Utility",
-			["text1Containment"] = "INSIDE",
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 			},
+			["text1Containment"] = "INSIDE",
+			["internalVersion"] = 9,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["selfPoint"] = "CENTER",
+			["text1Font"] = "Calibri",
+			["text1FontFlags"] = "OUTLINE",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 3,
+			["text2FontSize"] = 24,
+			["glow"] = false,
+			["text1"] = "%p",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["zoom"] = 0.1,
+			["text2"] = "%p",
+			["auto"] = true,
+			["cooldownTextEnabled"] = true,
+			["id"] = "Misdirect",
+			["text2Font"] = "Friz Quadrata TT",
+			["text2Enabled"] = false,
+			["width"] = 30,
+			["selfPoint"] = "CENTER",
+			["uid"] = "sQWYsLcVslI",
+			["inverse"] = false,
+			["desaturate"] = false,
+			["displayIcon"] = "",
+			["cooldown"] = true,
 			["actions"] = {
 				["start"] = {
 					["message"] = "MD on",
@@ -6160,31 +6377,6 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["glow"] = false,
-			["text2FontSize"] = 24,
-			["anchorFrameType"] = "SCREEN",
-			["text1"] = "%p",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["cooldownTextEnabled"] = true,
-			["zoom"] = 0.1,
-			["auto"] = true,
-			["text2"] = "%p",
-			["id"] = "Misdirect",
-			["alpha"] = 1,
-			["text2Enabled"] = false,
-			["width"] = 30,
-			["text2Font"] = "Friz Quadrata TT",
-			["uid"] = "sQWYsLcVslI",
-			["inverse"] = false,
-			["internalVersion"] = 9,
-			["displayIcon"] = "",
-			["cooldown"] = true,
-			["desaturate"] = false,
 		},
 		["Trueshot Bar"] = {
 			["textFlags"] = "OUTLINE",
@@ -6231,7 +6423,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
+				["use_name"] = false,
 				["class"] = {
 					["single"] = "HUNTER",
 					["multi"] = {
@@ -6242,7 +6434,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -6256,10 +6451,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_spec"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
+				["use_class"] = true,
 				["spec"] = {
 					["single"] = 2,
 					["multi"] = {
@@ -6434,6 +6626,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["subeventSuffix"] = "_CAST_START",
 						["realSpellName"] = "Kill Command",
@@ -6456,6 +6649,7 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["unit"] = "target",
 						["subeventPrefix"] = "SPELL",
@@ -6473,6 +6667,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["use_incombat"] = true,
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["unit"] = "player",
 						["subeventPrefix"] = "SPELL",
@@ -6498,12 +6693,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
 					["duration_type"] = "seconds",
 					["alpha"] = 0,
-					["x"] = 10,
-					["y"] = 0,
 					["colorB"] = 1,
+					["y"] = 0,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["type"] = "none",
-					["colorA"] = 1,
+					["x"] = 10,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["colorR"] = 1,
@@ -6518,9 +6713,17 @@ WeakAurasSaved = {
 				},
 			},
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "BOTTOMRIGHT",
+			["alpha"] = 1,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
+			["useglowColor"] = false,
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -6576,25 +6779,25 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["anchorFrameType"] = "SCREEN",
 			["text1Containment"] = "INSIDE",
-			["text2Font"] = "Friz Quadrata TT",
-			["text2Containment"] = "INSIDE",
+			["cooldownTextEnabled"] = true,
 			["parent"] = "Hunter Rotation",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "Friz Quadrata TT",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1Font"] = "Friz Quadrata TT",
-			["text1FontFlags"] = "OUTLINE",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
 			["glow"] = false,
 			["color"] = {
@@ -6604,18 +6807,18 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["text2FontSize"] = 24,
-			["desaturate"] = false,
+			["anchorFrameType"] = "SCREEN",
 			["text1"] = "%s",
-			["alpha"] = 1,
-			["text2"] = "%p",
+			["desaturate"] = false,
 			["zoom"] = 0,
+			["text2"] = "%p",
 			["auto"] = true,
 			["icon"] = true,
 			["id"] = "Kill Command",
 			["selfPoint"] = "CENTER",
-			["frameStrata"] = 3,
-			["width"] = 36,
 			["text2Enabled"] = false,
+			["width"] = 36,
+			["frameStrata"] = 3,
 			["uid"] = "6YOxtnuhGT3",
 			["inverse"] = true,
 			["text1Enabled"] = false,
@@ -6693,7 +6896,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["cooldown"] = true,
-			["cooldownTextEnabled"] = true,
+			["text2Font"] = "Friz Quadrata TT",
 		},
 		["Survival of the FIttest CD"] = {
 			["text2Point"] = "CENTER",
@@ -6725,6 +6928,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["subeventPrefix"] = "SPELL",
 						["realSpellName"] = "Survival of the Fittest",
@@ -6767,12 +6971,20 @@ WeakAurasSaved = {
 			["text1Enabled"] = true,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
-			["stickyDuration"] = false,
+			["cooldownTextEnabled"] = true,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text1Containment"] = "OUTSIDE",
 			["progressPrecision"] = 0,
 			["text1Point"] = "RIGHT",
+			["parent"] = "Hunter Utility",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["frameStrata"] = 3,
+			["stickyDuration"] = false,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -6789,21 +7001,21 @@ WeakAurasSaved = {
 						[7] = true,
 					},
 				},
-				["use_class"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["class"] = {
 					["single"] = "HUNTER",
 					["multi"] = {
 					},
 				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
+				["use_name"] = false,
 				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_name"] = false,
+				["use_class"] = true,
 				["race"] = {
 					["multi"] = {
 					},
@@ -6830,17 +7042,17 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["glow"] = false,
-			["parent"] = "Hunter Utility",
-			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 			},
+			["glow"] = false,
+			["internalVersion"] = 9,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Calibri",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
+			["color"] = {
+				0.70588235294118, -- [1]
+				0.70588235294118, -- [2]
+				0.70588235294118, -- [3]
 				1, -- [4]
 			},
 			["text2Font"] = "Friz Quadrata TT",
@@ -6851,7 +7063,9 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["regionType"] = "icon",
-			["text1Containment"] = "OUTSIDE",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 3,
+			["text2FontSize"] = 24,
 			["animation"] = {
 				["start"] = {
 					["type"] = "preset",
@@ -6868,8 +7082,6 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
-			["text2FontSize"] = 24,
-			["anchorFrameType"] = "SCREEN",
 			["text1"] = "Fit",
 			["icon"] = true,
 			["text2"] = "%p",
@@ -6877,21 +7089,21 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["text1FontFlags"] = "OUTLINE",
 			["id"] = "Survival of the FIttest CD",
-			["cooldownTextEnabled"] = true,
 			["text2Enabled"] = false,
-			["width"] = 30,
 			["alpha"] = 1,
-			["uid"] = "uMeapGxiO9U",
-			["inverse"] = true,
-			["internalVersion"] = 9,
-			["displayIcon"] = "",
-			["cooldown"] = true,
-			["color"] = {
-				0.70588235294118, -- [1]
-				0.70588235294118, -- [2]
-				0.70588235294118, -- [3]
+			["width"] = 30,
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
 				1, -- [4]
 			},
+			["uid"] = "uMeapGxiO9U",
+			["inverse"] = true,
+			["desaturate"] = false,
+			["displayIcon"] = "",
+			["cooldown"] = true,
+			["useglowColor"] = false,
 		},
 		["Counter Shot Glow"] = {
 			["text2Point"] = "CENTER",
@@ -6913,6 +7125,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["subeventPrefix"] = "SPELL",
 						["realSpellName"] = "Counter Shot",
@@ -6939,6 +7152,7 @@ WeakAurasSaved = {
 						["debuffType"] = "HELPFUL",
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Cooldown Progress (Spell)",
 						["subeventPrefix"] = "SPELL",
@@ -6961,6 +7175,7 @@ WeakAurasSaved = {
 						["use_interruptible"] = true,
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["unit"] = "target",
 						["use_unit"] = true,
@@ -6978,6 +7193,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["use_hostility"] = false,
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["unit"] = "target",
 						["subeventPrefix"] = "SPELL",
@@ -6998,12 +7214,20 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
-			["stickyDuration"] = false,
+			["cooldownTextEnabled"] = true,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["desaturate"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "RIGHT",
+			["parent"] = "Hunter Utility",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 40,
-			["alpha"] = 1,
+			["stickyDuration"] = false,
 			["load"] = {
 				["use_petbattle"] = false,
 				["ingroup"] = {
@@ -7015,7 +7239,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
+				["use_name"] = false,
 				["class"] = {
 					["single"] = "HUNTER",
 					["multi"] = {
@@ -7026,7 +7250,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -7039,10 +7266,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
+				["use_class"] = true,
 				["spec"] = {
 					["multi"] = {
 						true, -- [1]
@@ -7058,6 +7282,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["conditions"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -7072,12 +7298,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
 					["scaley"] = 1,
 					["alpha"] = 0,
-					["x"] = 5,
-					["y"] = 0,
 					["colorB"] = 1,
+					["y"] = 0,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["type"] = "custom",
-					["colorA"] = 1,
+					["x"] = 5,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["duration_type"] = "seconds",
@@ -7088,23 +7314,11 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
-			["parent"] = "Hunter Utility",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["text1Enabled"] = true,
 			["text2Containment"] = "INSIDE",
-			["conditions"] = {
-			},
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Calibri",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["glow"] = false,
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -7122,10 +7336,10 @@ WeakAurasSaved = {
 			},
 			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["desaturate"] = false,
-			["frameStrata"] = 3,
-			["text2FontSize"] = 24,
 			["width"] = 40,
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
+			["frameStrata"] = 3,
 			["text1"] = "%c",
 			["text2Color"] = {
 				1, -- [1]
@@ -7138,16 +7352,26 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["text1Containment"] = "OUTSIDE",
 			["id"] = "Counter Shot Glow",
-			["cooldownTextEnabled"] = true,
+			["internalVersion"] = 9,
 			["text2Enabled"] = false,
 			["anchorFrameType"] = "SCREEN",
-			["internalVersion"] = 9,
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["uid"] = "kOiUfTc30KD",
 			["inverse"] = false,
-			["text1Enabled"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["glow"] = false,
+			["useglowColor"] = false,
 		},
 		["Explosive Shot"] = {
 			["text2Point"] = "CENTER",
@@ -7167,6 +7391,7 @@ WeakAurasSaved = {
 						["use_showgcd"] = true,
 						["remaining"] = "3",
 						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
 						["type"] = "status",
 						["spellName"] = 212431,
 						["unevent"] = "auto",
@@ -7194,6 +7419,7 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["unit"] = "target",
 						["use_unit"] = true,
@@ -7211,6 +7437,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["use_incombat"] = true,
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["unit"] = "player",
 						["use_unit"] = true,
@@ -7230,6 +7457,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["realSpellName"] = "Explosive Shot: Detonate!",
 						["use_spellName"] = true,
+						["duration"] = "1",
 						["subeventPrefix"] = "SPELL",
 						["subeventSuffix"] = "_CAST_START",
 						["use_unit"] = true,
@@ -7244,6 +7472,7 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["subeventPrefix"] = "SPELL",
 						["realSpellName"] = "Explosive Shot",
@@ -7265,11 +7494,19 @@ WeakAurasSaved = {
 			["text1Enabled"] = false,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["glow"] = false,
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "CENTER",
+			["useglowColor"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["text2Enabled"] = false,
+			["parent"] = "Hunter Rotation",
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -7345,9 +7582,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["parent"] = "Hunter Rotation",
-			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -7390,13 +7624,43 @@ WeakAurasSaved = {
 					},
 				}, -- [2]
 			},
+			["text1Containment"] = "INSIDE",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Friz Quadrata TT",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["text1FontFlags"] = "OUTLINE",
+			["regionType"] = "icon",
+			["xOffset"] = -295,
+			["width"] = 36,
+			["text2FontSize"] = 24,
+			["text2Enabled"] = false,
+			["text1"] = " ",
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["zoom"] = 0,
+			["text2"] = "%p",
+			["auto"] = true,
+			["internalVersion"] = 9,
+			["id"] = "Explosive Shot",
+			["frameStrata"] = 4,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
 			["actions"] = {
 				["start"] = {
 				},
@@ -7406,39 +7670,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
-			["xOffset"] = -295,
-			["glow"] = false,
-			["text2FontSize"] = 24,
-			["width"] = 36,
-			["text1"] = " ",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text2"] = "%p",
-			["zoom"] = 0,
-			["auto"] = true,
-			["internalVersion"] = 9,
-			["id"] = "Explosive Shot",
-			["text2Font"] = "Friz Quadrata TT",
-			["frameStrata"] = 4,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
 			["uid"] = "7OmwvEHrzXV",
 			["inverse"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["desaturate"] = false,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["text1Containment"] = "INSIDE",
+			["text2Font"] = "Friz Quadrata TT",
 		},
 		["Counter Shot & Muzzle CD"] = {
 			["text2Point"] = "CENTER",
@@ -7473,6 +7710,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["subeventPrefix"] = "SPELL",
 						["realSpellName"] = "Counter Shot",
@@ -7494,6 +7732,7 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["use_genericShowOn"] = true,
 						["genericShowOn"] = "showOnCooldown",
 						["use_unit"] = true,
@@ -7530,12 +7769,20 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
+			["glow"] = false,
+			["useglowColor"] = false,
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "RIGHT",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["frameStrata"] = 3,
+			["parent"] = "Hunter Utility",
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -7592,31 +7839,31 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Calibri",
-			["parent"] = "Hunter Utility",
-			["text1Containment"] = "OUTSIDE",
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 			},
+			["text1Containment"] = "OUTSIDE",
+			["internalVersion"] = 9,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2Font"] = "Friz Quadrata TT",
+			["text1Font"] = "Calibri",
+			["text1FontFlags"] = "OUTLINE",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["icon"] = true,
-			["alpha"] = 1,
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 3,
+			["text2FontSize"] = 24,
+			["alpha"] = 1,
 			["text1"] = "CS",
 			["color"] = {
 				0.70588235294118, -- [1]
@@ -7629,16 +7876,16 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["selfPoint"] = "CENTER",
 			["id"] = "Counter Shot & Muzzle CD",
-			["glow"] = false,
+			["cooldownTextEnabled"] = true,
 			["text2Enabled"] = false,
 			["width"] = 30,
-			["cooldownTextEnabled"] = true,
+			["text2Font"] = "Friz Quadrata TT",
 			["uid"] = "UUbRfv4Wvgk",
 			["inverse"] = true,
-			["internalVersion"] = 9,
+			["desaturate"] = false,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["desaturate"] = false,
+			["icon"] = true,
 		},
 		["Beast Cleave Glow"] = {
 			["text2Point"] = "CENTER",
@@ -7674,12 +7921,12 @@ WeakAurasSaved = {
 						["names"] = {
 						},
 						["custom_type"] = "event",
-						["events"] = "BEAST_CLEAVE_K",
 						["spellIds"] = {
 						},
+						["custom"] = "function(e,targets)\n    if targets >= 2 then\n        aura_env.Beast_Targets = targets\n        return true   \n    end\nend",
 						["subeventPrefix"] = "SPELL",
 						["event"] = "Health",
-						["custom"] = "function(e,targets)\n    if targets >= 2 then\n        aura_env.Beast_Targets = targets\n        return true   \n    end\nend",
+						["events"] = "BEAST_CLEAVE_K",
 						["unit"] = "player",
 						["custom_hide"] = "custom",
 					},
@@ -7740,18 +7987,19 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["type"] = "status",
+						["duration"] = "1",
 						["unevent"] = "auto",
-						["use_absorbMode"] = true,
 						["use_genericShowOn"] = true,
+						["use_absorbMode"] = true,
 						["genericShowOn"] = "showAlways",
-						["unit"] = "player",
+						["use_unit"] = true,
 						["realSpellName"] = "Multi-Shot",
 						["use_spellName"] = true,
 						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
 						["event"] = "Cooldown Progress (Spell)",
 						["use_showgcd"] = true,
-						["use_unit"] = true,
+						["unit"] = "player",
 						["spellName"] = 2643,
 					},
 					["untrigger"] = {
@@ -7760,14 +8008,15 @@ WeakAurasSaved = {
 				}, -- [4]
 				{
 					["trigger"] = {
-						["subeventPrefix"] = "SPELL",
 						["type"] = "status",
-						["unevent"] = "auto",
 						["subeventSuffix"] = "_CAST_START",
-						["unit"] = "player",
 						["use_absorbMode"] = true,
 						["event"] = "Global Cooldown",
 						["use_unit"] = true,
+						["duration"] = "1",
+						["subeventPrefix"] = "SPELL",
+						["unevent"] = "auto",
+						["unit"] = "player",
 					},
 					["untrigger"] = {
 					},
@@ -7798,12 +8047,25 @@ WeakAurasSaved = {
 			["text1Enabled"] = true,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["useglowColor"] = false,
 			["stickyDuration"] = false,
 			["progressPrecision"] = 4,
 			["text1Point"] = "CENTER",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["alpha"] = 1,
+			["parent"] = "Hunter Rotation",
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -7860,10 +8122,6 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Friz Quadrata TT",
-			["parent"] = "Hunter Rotation",
-			["internalVersion"] = 9,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -7908,13 +8166,17 @@ WeakAurasSaved = {
 					},
 				}, -- [2]
 			},
+			["internalVersion"] = 9,
+			["text2Font"] = "Friz Quadrata TT",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				0.18039215686275, -- [2]
 				0.18039215686275, -- [3]
 				0, -- [4]
 			},
-			["cooldownTextEnabled"] = false,
+			["text1Font"] = "Friz Quadrata TT",
 			["frameStrata"] = 4,
 			["text2Color"] = {
 				1, -- [1]
@@ -7923,10 +8185,10 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["regionType"] = "icon",
-			["icon"] = true,
-			["text1Containment"] = "INSIDE",
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
+			["text1Containment"] = "INSIDE",
 			["text1"] = "%p",
 			["animation"] = {
 				["start"] = {
@@ -7964,21 +8226,16 @@ WeakAurasSaved = {
 			["auto"] = false,
 			["text1FontFlags"] = "OUTLINE",
 			["id"] = "Beast Cleave Glow",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["glow"] = false,
 			["text2Enabled"] = false,
 			["width"] = 36,
-			["glow"] = false,
+			["cooldownTextEnabled"] = false,
 			["uid"] = "E91CU8qvr6n",
 			["inverse"] = true,
-			["text2Font"] = "Friz Quadrata TT",
+			["desaturate"] = false,
 			["displayIcon"] = "461121",
 			["cooldown"] = true,
-			["desaturate"] = false,
+			["icon"] = true,
 		},
 		["Kill Command Surv Glow"] = {
 			["text2Point"] = "CENTER",
@@ -8006,7 +8263,8 @@ WeakAurasSaved = {
 						["names"] = {
 						},
 						["use_showgcd"] = true,
-						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
+						["custom_hide"] = "timed",
 						["charges_operator"] = ">",
 						["charges"] = "0",
 						["type"] = "status",
@@ -8023,7 +8281,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["use_genericShowOn"] = true,
 						["spellName"] = 259489,
-						["custom_hide"] = "timed",
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 						["showOn"] = "showAlways",
@@ -8057,9 +8315,10 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["type"] = "status",
-						["power"] = "75",
-						["power_operator"] = "<",
 						["use_absorbMode"] = true,
+						["unevent"] = "auto",
+						["power_operator"] = "<",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["unit"] = "player",
 						["use_unit"] = true,
@@ -8069,7 +8328,7 @@ WeakAurasSaved = {
 						["event"] = "Power",
 						["use_power"] = true,
 						["use_powertype"] = true,
-						["unevent"] = "auto",
+						["power"] = "75",
 					},
 					["untrigger"] = {
 					},
@@ -8082,6 +8341,7 @@ WeakAurasSaved = {
 						["use_power"] = true,
 						["event"] = "Power",
 						["unit"] = "player",
+						["duration"] = "1",
 						["powertype"] = 2,
 						["use_absorbMode"] = true,
 						["subeventPrefix"] = "SPELL",
@@ -8102,6 +8362,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["realSpellName"] = "Kill Command",
 						["use_spellName"] = true,
+						["duration"] = "1",
 						["use_unit"] = true,
 						["subeventPrefix"] = "SPELL",
 						["subeventSuffix"] = "_CAST_START",
@@ -8142,12 +8403,10 @@ WeakAurasSaved = {
 						["type"] = "aura",
 						["event"] = "Health",
 						["unevent"] = "auto",
-						["names"] = {
-							"Mongoose Fury", -- [1]
-						},
+						["unit"] = "player",
 						["use_absorbMode"] = true,
 						["countOperator"] = "==",
-						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
 						["use_unit"] = true,
 						["useCount"] = true,
 						["spellIds"] = {
@@ -8155,7 +8414,9 @@ WeakAurasSaved = {
 						},
 						["ownOnly"] = true,
 						["count"] = "5",
-						["subeventPrefix"] = "SPELL",
+						["names"] = {
+							"Mongoose Fury", -- [1]
+						},
 						["subeventSuffix"] = "_CAST_START",
 						["debuffType"] = "HELPFUL",
 					},
@@ -8170,9 +8431,17 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "BOTTOMRIGHT",
+			["alpha"] = 1,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 50,
+			["useglowColor"] = false,
 			["load"] = {
 				["use_petbattle"] = false,
 				["class"] = {
@@ -8203,7 +8472,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -8212,11 +8481,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_realm"] = false,
-				["pvptalent"] = {
+				["use_vehicleUi"] = false,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_vehicleUi"] = false,
 				["use_name"] = false,
 				["use_combat"] = true,
 				["race"] = {
@@ -8228,7 +8497,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["anchorFrameType"] = "SCREEN",
+			["parent"] = "Survival Hunter",
 			["desaturate"] = false,
 			["color"] = {
 				1, -- [1]
@@ -8237,9 +8506,9 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["text2Containment"] = "INSIDE",
-			["text1Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Friz Quadrata TT",
-			["parent"] = "Survival Hunter",
+			["text1Containment"] = "INSIDE",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -8256,9 +8525,14 @@ WeakAurasSaved = {
 			},
 			["cooldownTextEnabled"] = true,
 			["text2FontSize"] = 24,
-			["frameStrata"] = 4,
+			["anchorFrameType"] = "SCREEN",
 			["text1"] = " ",
-			["alpha"] = 1,
+			["frameStrata"] = 4,
+			["text2"] = "%p",
+			["zoom"] = 0,
+			["auto"] = true,
+			["icon"] = true,
+			["id"] = "Kill Command Surv Glow",
 			["animation"] = {
 				["start"] = {
 					["scalex"] = 1,
@@ -8268,12 +8542,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local bounceDistance = math.sin(progress * math.pi)\n      return startX + (bounceDistance * deltaX), startY + (bounceDistance * deltaY)\n    end\n  ",
 					["duration_type"] = "seconds",
 					["alpha"] = 0,
-					["x"] = 0,
-					["y"] = 8,
 					["colorB"] = 1,
+					["y"] = 8,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["type"] = "custom",
-					["colorA"] = 1,
+					["x"] = 0,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["colorR"] = 1,
@@ -8287,11 +8561,6 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["zoom"] = 0,
-			["auto"] = true,
-			["icon"] = true,
-			["id"] = "Kill Command Surv Glow",
-			["text2"] = "%p",
 			["text2Enabled"] = false,
 			["width"] = 50,
 			["glow"] = true,
@@ -8358,6 +8627,7 @@ WeakAurasSaved = {
 						["debuffType"] = "HELPFUL",
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["spellName"] = 193526,
 						["realSpellName"] = "Trueshot",
@@ -8416,12 +8686,20 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
+			["internalVersion"] = 9,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["stickyDuration"] = false,
 			["progressPrecision"] = 4,
 			["text1Point"] = "CENTER",
+			["parent"] = "Hunter CDs",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 32,
-			["frameStrata"] = 4,
+			["cooldownTextEnabled"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -8462,8 +8740,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_spellknown"] = true,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -8473,15 +8754,8 @@ WeakAurasSaved = {
 					},
 				},
 				["spellknown"] = 193526,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_vehicleUi"] = false,
 			},
-			["desaturate"] = false,
-			["parent"] = "Hunter CDs",
-			["cooldownTextEnabled"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -8598,30 +8872,34 @@ WeakAurasSaved = {
 					},
 				}, -- [4]
 			},
+			["desaturate"] = false,
+			["text1Enabled"] = true,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "Friz Quadrata TT",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["alpha"] = 1,
-			["text1FontFlags"] = "OUTLINE",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["text1Font"] = "Friz Quadrata TT",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 4,
+			["text2FontSize"] = 24,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2FontSize"] = 24,
-			["anchorFrameType"] = "SCREEN",
 			["text1"] = "%p",
 			["glow"] = false,
 			["zoom"] = 0,
@@ -8629,8 +8907,8 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["selfPoint"] = "CENTER",
 			["id"] = "Trueshot K",
-			["internalVersion"] = 9,
 			["text2Enabled"] = false,
+			["alpha"] = 1,
 			["width"] = 32,
 			["actions"] = {
 				["start"] = {
@@ -8649,7 +8927,7 @@ WeakAurasSaved = {
 			["text1Containment"] = "INSIDE",
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["text1Enabled"] = true,
+			["useglowColor"] = false,
 		},
 		["Camouflage"] = {
 			["text2Point"] = "CENTER",
@@ -8697,12 +8975,20 @@ WeakAurasSaved = {
 			["text1Enabled"] = false,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["glow"] = false,
+			["useglowColor"] = false,
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "CENTER",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["frameStrata"] = 3,
+			["parent"] = "Hunter Utility",
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -8760,36 +9046,36 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Calibri",
-			["parent"] = "Hunter Utility",
+			["conditions"] = {
+			},
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["internalVersion"] = 9,
 			["text2Containment"] = "INSIDE",
-			["conditions"] = {
-			},
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2Font"] = "Friz Quadrata TT",
+			["text1Font"] = "Calibri",
+			["text1FontFlags"] = "OUTLINE",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["icon"] = true,
-			["alpha"] = 1,
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 3,
+			["text2FontSize"] = 24,
+			["alpha"] = 1,
 			["text1"] = " ",
 			["animation"] = {
 				["start"] = {
@@ -8812,16 +9098,16 @@ WeakAurasSaved = {
 			["auto"] = false,
 			["cooldownTextEnabled"] = true,
 			["id"] = "Camouflage",
-			["glow"] = false,
+			["text1Containment"] = "INSIDE",
 			["text2Enabled"] = false,
 			["width"] = 30,
-			["text1Containment"] = "INSIDE",
+			["text2Font"] = "Friz Quadrata TT",
 			["uid"] = "SWdBFtJFLBx",
 			["inverse"] = false,
-			["internalVersion"] = 9,
+			["desaturate"] = false,
 			["displayIcon"] = 461113,
 			["cooldown"] = true,
-			["desaturate"] = false,
+			["icon"] = true,
 		},
 		["Aimed Shot 1 Stack"] = {
 			["textFlags"] = "None",
@@ -8884,7 +9170,6 @@ WeakAurasSaved = {
 					},
 				},
 				["use_name"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -8893,6 +9178,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_vehicleUi"] = false,
 				["race"] = {
 					["multi"] = {
 					},
@@ -8941,7 +9227,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showAlways",
 						["names"] = {
 						},
-						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
+						["custom_hide"] = "timed",
 						["charges_operator"] = ">=",
 						["type"] = "status",
 						["spellName"] = 19434,
@@ -8958,7 +9245,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["use_genericShowOn"] = true,
 						["use_unit"] = true,
-						["custom_hide"] = "timed",
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 						["showOn"] = "showAlways",
@@ -8970,6 +9257,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["use_alwaystrue"] = true,
 						["subeventSuffix"] = "_CAST_START",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["unit"] = "player",
 						["use_unit"] = true,
@@ -9150,12 +9438,20 @@ WeakAurasSaved = {
 			["text1Enabled"] = false,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["cooldownTextEnabled"] = true,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "CENTER",
+			["parent"] = "Hunter Utility",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["frameStrata"] = 3,
+			["useglowColor"] = false,
 			["load"] = {
 				["use_petbattle"] = false,
 				["ingroup"] = {
@@ -9178,12 +9474,15 @@ WeakAurasSaved = {
 						true, -- [2]
 					},
 				},
-				["use_class"] = true,
+				["use_name"] = false,
 				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -9197,10 +9496,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
+				["use_class"] = true,
 				["talent2"] = {
 					["multi"] = {
 					},
@@ -9210,23 +9506,20 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["glow"] = false,
-			["parent"] = "Hunter Utility",
-			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 			},
+			["glow"] = false,
+			["text1Containment"] = "INSIDE",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Calibri",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["text2Font"] = "Friz Quadrata TT",
 			["icon"] = true,
 			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["internalVersion"] = 9,
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 3,
+			["text2FontSize"] = 24,
 			["animation"] = {
 				["start"] = {
 					["type"] = "preset",
@@ -9244,8 +9537,6 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
-			["text2FontSize"] = 24,
-			["anchorFrameType"] = "SCREEN",
 			["text1"] = "%p",
 			["color"] = {
 				1, -- [1]
@@ -9253,26 +9544,31 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
+			["zoom"] = 0.1,
+			["text2"] = "%p",
+			["auto"] = true,
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["zoom"] = 0.1,
-			["auto"] = true,
-			["text2"] = "%p",
 			["id"] = "Aspect",
-			["cooldownTextEnabled"] = true,
 			["text2Enabled"] = false,
-			["width"] = 30,
 			["alpha"] = 1,
+			["width"] = 30,
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["uid"] = "DxuhOABVl8J",
 			["inverse"] = false,
-			["text1Containment"] = "INSIDE",
+			["desaturate"] = false,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["text2Font"] = "Friz Quadrata TT",
+			["internalVersion"] = 9,
 		},
 		["Wildfire Bomb"] = {
 			["text2Point"] = "CENTER",
@@ -9304,6 +9600,7 @@ WeakAurasSaved = {
 						["debuffType"] = "HELPFUL",
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["subeventPrefix"] = "SPELL",
 						["event"] = "Cooldown Progress (Spell)",
 						["subeventSuffix"] = "_CAST_START",
@@ -9341,13 +9638,21 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
+			["text2Font"] = "Friz Quadrata TT",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["parent"] = "Survival Hunter",
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "CENTER",
 			["version"] = 3,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["frameStrata"] = 3,
+			["useglowColor"] = false,
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -9404,10 +9709,6 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["selfPoint"] = "CENTER",
-			["parent"] = "Survival Hunter",
-			["cooldownTextEnabled"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -9537,13 +9838,17 @@ WeakAurasSaved = {
 					},
 				}, -- [5]
 			},
+			["selfPoint"] = "CENTER",
+			["text1Containment"] = "INSIDE",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1Font"] = "Friz Quadrata TT",
+			["internalVersion"] = 9,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -9552,10 +9857,10 @@ WeakAurasSaved = {
 			},
 			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["icon"] = true,
-			["desaturate"] = false,
-			["text2FontSize"] = 24,
 			["width"] = 36,
+			["frameStrata"] = 3,
+			["text2FontSize"] = 24,
+			["desaturate"] = false,
 			["text1"] = "%p",
 			["text2Color"] = {
 				1, -- [1]
@@ -9568,16 +9873,16 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["glow"] = false,
 			["id"] = "Wildfire Bomb",
-			["text2Font"] = "Friz Quadrata TT",
 			["text2Enabled"] = false,
-			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["text1Font"] = "Friz Quadrata TT",
 			["uid"] = "09QNffBB1SK",
 			["inverse"] = true,
-			["text1Containment"] = "INSIDE",
+			["cooldownTextEnabled"] = false,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["internalVersion"] = 9,
+			["icon"] = true,
 		},
 		["Chakrams"] = {
 			["text2Point"] = "CENTER",
@@ -9605,6 +9910,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["spellName"] = 259391,
 						["realSpellName"] = "Chakrams",
@@ -9630,11 +9936,19 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
-			["stickyDuration"] = false,
+			["icon"] = true,
+			["desaturate"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "BOTTOMRIGHT",
+			["useglowColor"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 45,
-			["frameStrata"] = 4,
+			["parent"] = "Survival Hunter",
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -9677,8 +9991,11 @@ WeakAurasSaved = {
 				},
 				["use_name"] = false,
 				["use_realm"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -9687,10 +10004,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_vehicleUi"] = false,
 				["use_petbattle"] = false,
 			},
 			["color"] = {
@@ -9699,9 +10013,6 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["parent"] = "Survival Hunter",
-			["cooldownTextEnabled"] = true,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -9717,14 +10028,17 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["text1Containment"] = "INSIDE",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Friz Quadrata TT",
+			["text1Enabled"] = false,
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 9,
 			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
 			["animation"] = {
@@ -9736,12 +10050,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      local bounceDistance = math.sin(progress * math.pi)\n      return startX + (bounceDistance * deltaX), startY + (bounceDistance * deltaY)\n    end\n  ",
 					["scaley"] = 1,
 					["alpha"] = 0,
-					["colorA"] = 1,
-					["y"] = 10,
 					["colorB"] = 1,
+					["y"] = 10,
+					["x"] = 0,
 					["colorG"] = 1,
 					["type"] = "none",
-					["x"] = 0,
+					["colorA"] = 1,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["duration_type"] = "seconds",
@@ -9755,9 +10069,9 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["icon"] = true,
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["frameStrata"] = 4,
 			["text1"] = " ",
 			["text2Color"] = {
 				1, -- [1]
@@ -9765,21 +10079,21 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2"] = "%p",
 			["zoom"] = 0,
+			["text2"] = "%p",
 			["auto"] = true,
 			["glow"] = false,
 			["id"] = "Chakrams",
-			["desaturate"] = false,
 			["alpha"] = 1,
-			["width"] = 45,
 			["text2Enabled"] = false,
+			["width"] = 45,
+			["internalVersion"] = 9,
 			["uid"] = "uQ(ekger9Nw",
 			["inverse"] = true,
-			["text1Enabled"] = false,
+			["cooldownTextEnabled"] = true,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["text1Containment"] = "INSIDE",
+			["stickyDuration"] = false,
 		},
 		["Aimed Shot 1 Stack CD"] = {
 			["textFlags"] = "None",
@@ -9842,7 +10156,6 @@ WeakAurasSaved = {
 					},
 				},
 				["use_name"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -9851,6 +10164,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_vehicleUi"] = false,
 				["race"] = {
 					["multi"] = {
 					},
@@ -9899,7 +10213,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showOnCooldown",
 						["names"] = {
 						},
-						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
+						["custom_hide"] = "timed",
 						["charges_operator"] = "==",
 						["charges"] = "1",
 						["spellName"] = 19434,
@@ -9916,7 +10231,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["use_genericShowOn"] = true,
 						["use_unit"] = true,
-						["custom_hide"] = "timed",
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 						["showOn"] = "showOnCooldown",
@@ -10045,23 +10360,23 @@ WeakAurasSaved = {
 						["unit"] = "pet",
 						["debuffType"] = "HELPFUL",
 						["type"] = "aura",
-						["names"] = {
-							"Beast Cleave", -- [1]
-						},
-						["unevent"] = "auto",
-						["spellName"] = 3674,
-						["custom_hide"] = "timed",
-						["event"] = "Cooldown Progress (Spell)",
 						["buffShowOn"] = "showOnActive",
+						["subeventSuffix"] = "_CAST_START",
+						["use_unit"] = true,
+						["subeventPrefix"] = "SPELL",
+						["event"] = "Cooldown Progress (Spell)",
+						["unevent"] = "auto",
 						["use_spellName"] = true,
 						["spellIds"] = {
 							118455, -- [1]
 						},
 						["use_inverse"] = true,
 						["remOperator"] = ">=",
-						["subeventSuffix"] = "_CAST_START",
-						["subeventPrefix"] = "SPELL",
-						["use_unit"] = true,
+						["custom_hide"] = "timed",
+						["spellName"] = 3674,
+						["names"] = {
+							"Beast Cleave", -- [1]
+						},
 					},
 					["untrigger"] = {
 						["spellName"] = 3674,
@@ -10070,18 +10385,19 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["type"] = "status",
+						["duration"] = "1",
 						["unevent"] = "auto",
-						["use_showgcd"] = true,
+						["realSpellName"] = "Multi-Shot",
 						["use_absorbMode"] = true,
 						["genericShowOn"] = "showAlways",
-						["subeventPrefix"] = "SPELL",
-						["realSpellName"] = "Multi-Shot",
+						["unit"] = "player",
+						["use_showgcd"] = true,
 						["use_spellName"] = true,
 						["use_genericShowOn"] = true,
 						["subeventSuffix"] = "_CAST_START",
 						["use_unit"] = true,
 						["event"] = "Cooldown Progress (Spell)",
-						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
 						["spellName"] = 2643,
 					},
 					["untrigger"] = {
@@ -10123,12 +10439,20 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
+			["glow"] = false,
+			["useglowColor"] = false,
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "CENTER",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["alpha"] = 1,
+			["desaturate"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -10165,7 +10489,6 @@ WeakAurasSaved = {
 					},
 				},
 				["use_name"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -10174,6 +10497,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_vehicleUi"] = false,
 				["difficulty"] = {
 					["multi"] = {
 					},
@@ -10185,10 +10509,6 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Friz Quadrata TT",
-			["parent"] = "Hunter Rotation",
-			["internalVersion"] = 9,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -10209,6 +10529,10 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["internalVersion"] = 9,
+			["text1Font"] = "Friz Quadrata TT",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -10217,22 +10541,22 @@ WeakAurasSaved = {
 			},
 			["selfPoint"] = "CENTER",
 			["icon"] = true,
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["regionType"] = "icon",
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2FontSize"] = 24,
-			["anchorFrameType"] = "SCREEN",
 			["text1"] = "%p",
 			["cooldownTextEnabled"] = false,
 			["text2"] = "%p",
@@ -10240,7 +10564,7 @@ WeakAurasSaved = {
 			["auto"] = false,
 			["frameStrata"] = 4,
 			["id"] = "Beast Cleave",
-			["glow"] = false,
+			["text1FontFlags"] = "OUTLINE",
 			["text2Enabled"] = false,
 			["width"] = 36,
 			["text1Containment"] = "INSIDE",
@@ -10249,7 +10573,7 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["displayIcon"] = "461121",
 			["cooldown"] = true,
-			["desaturate"] = false,
+			["parent"] = "Hunter Rotation",
 		},
 		["Pet Attack Surv"] = {
 			["glow"] = false,
@@ -10306,6 +10630,7 @@ WeakAurasSaved = {
 						["use_absorbMode"] = true,
 						["event"] = "Conditions",
 						["unit"] = "player",
+						["duration"] = "1",
 						["subeventPrefix"] = "SPELL",
 						["subeventSuffix"] = "_CAST_START",
 						["use_alive"] = true,
@@ -10335,12 +10660,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
 					["duration_type"] = "seconds",
 					["alpha"] = 0,
-					["x"] = 7,
-					["y"] = 0,
 					["colorB"] = 1,
+					["y"] = 0,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["type"] = "custom",
-					["colorA"] = 1,
+					["x"] = 7,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["colorR"] = 1,
@@ -10350,11 +10675,19 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
+			["text1"] = " ",
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "CENTER",
+			["desaturate"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["frameStrata"] = 4,
+			["useglowColor"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -10392,7 +10725,6 @@ WeakAurasSaved = {
 					},
 				},
 				["use_name"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -10401,6 +10733,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_vehicleUi"] = false,
 				["difficulty"] = {
 					["multi"] = {
 					},
@@ -10412,10 +10745,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Friz Quadrata TT",
 			["parent"] = "Survival Hunter",
-			["selfPoint"] = "CENTER",
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 			},
 			["text1Color"] = {
@@ -10424,13 +10754,11 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "Friz Quadrata TT",
+			["text1Enabled"] = false,
 			["text1Containment"] = "INSIDE",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -10439,26 +10767,31 @@ WeakAurasSaved = {
 			},
 			["regionType"] = "icon",
 			["alpha"] = 1,
-			["text1"] = " ",
-			["text2FontSize"] = 24,
 			["width"] = 30,
+			["text2FontSize"] = 24,
+			["frameStrata"] = 4,
 			["anchorFrameParent"] = false,
 			["icon"] = true,
-			["zoom"] = 0,
 			["text2"] = "%p",
+			["zoom"] = 0,
 			["auto"] = false,
 			["text1FontFlags"] = "OUTLINE",
 			["id"] = "Pet Attack Surv",
-			["text2Point"] = "CENTER",
+			["internalVersion"] = 9,
 			["text2Enabled"] = false,
 			["anchorFrameType"] = "SCREEN",
-			["internalVersion"] = 9,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["uid"] = "j5dTScF8L5f",
 			["inverse"] = false,
-			["text1Enabled"] = false,
-			["displayIcon"] = 132152,
-			["desaturate"] = false,
 			["cooldownTextEnabled"] = true,
+			["displayIcon"] = 132152,
+			["selfPoint"] = "CENTER",
+			["text2Point"] = "CENTER",
 		},
 		["Survival Hunter BG"] = {
 			["textFlags"] = "None",
@@ -10574,6 +10907,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["use_alwaystrue"] = true,
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["unit"] = "player",
 						["debuffType"] = "HELPFUL",
@@ -10713,6 +11047,7 @@ WeakAurasSaved = {
 						["debuffType"] = "HELPFUL",
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["subeventSuffix"] = "_CAST_START",
 						["realSpellName"] = "Aspect of the Wild",
@@ -10779,12 +11114,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
 					["scaley"] = 1,
 					["alpha"] = 0,
-					["x"] = 10,
-					["y"] = 0,
 					["colorB"] = 1,
+					["y"] = 0,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["type"] = "none",
-					["colorA"] = 1,
+					["x"] = 10,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["duration_type"] = "seconds",
@@ -10798,12 +11133,20 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
+			["selfPoint"] = "CENTER",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["stickyDuration"] = false,
 			["progressPrecision"] = 4,
 			["text1Point"] = "CENTER",
+			["parent"] = "Hunter CDs",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["alpha"] = 1,
+			["useglowColor"] = false,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -10817,7 +11160,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
+				["use_name"] = false,
 				["class"] = {
 					["single"] = "HUNTER",
 					["multi"] = {
@@ -10828,7 +11171,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -10842,10 +11188,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_spec"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
+				["use_class"] = true,
 				["spec"] = {
 					["single"] = 1,
 					["multi"] = {
@@ -10856,10 +11199,6 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["desaturate"] = false,
-			["parent"] = "Hunter CDs",
-			["cooldownTextEnabled"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -10976,13 +11315,12 @@ WeakAurasSaved = {
 					},
 				}, -- [4]
 			},
+			["desaturate"] = false,
+			["text1Containment"] = "INSIDE",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Friz Quadrata TT",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["glow"] = false,
 			["text1Enabled"] = true,
 			["text2Color"] = {
 				1, -- [1]
@@ -10991,32 +11329,37 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["regionType"] = "icon",
+			["width"] = 30,
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
+			["text1FontFlags"] = "OUTLINE",
+			["text1"] = "%p",
+			["icon"] = true,
+			["text2"] = "%p",
+			["zoom"] = 0,
+			["auto"] = true,
+			["frameStrata"] = 4,
+			["id"] = "Aspect of the Wild K",
+			["internalVersion"] = 9,
+			["text2Enabled"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["uid"] = "U0k8K66l8Io",
+			["inverse"] = true,
+			["cooldownTextEnabled"] = false,
+			["displayIcon"] = "",
+			["cooldown"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1FontFlags"] = "OUTLINE",
-			["text2FontSize"] = 24,
-			["width"] = 30,
-			["text1"] = "%p",
-			["icon"] = true,
-			["frameStrata"] = 4,
-			["text2"] = "%p",
-			["auto"] = true,
-			["zoom"] = 0,
-			["id"] = "Aspect of the Wild K",
-			["selfPoint"] = "CENTER",
-			["text2Enabled"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["internalVersion"] = 9,
-			["uid"] = "U0k8K66l8Io",
-			["inverse"] = true,
-			["text1Containment"] = "INSIDE",
-			["displayIcon"] = "",
-			["cooldown"] = true,
-			["glow"] = false,
 		},
 		["Aspect of the Eagle"] = {
 			["text2Point"] = "CENTER",
@@ -11044,6 +11387,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["spellName"] = 186289,
 						["realSpellName"] = "Aspect of the Eagle",
@@ -11096,12 +11440,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      local bounceDistance = math.sin(progress * math.pi)\n      return startX + (bounceDistance * deltaX), startY + (bounceDistance * deltaY)\n    end\n  ",
 					["scaley"] = 1,
 					["alpha"] = 0,
-					["x"] = 0,
-					["y"] = 10,
 					["colorB"] = 1,
+					["y"] = 10,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["translateType"] = "bounce",
-					["colorA"] = 1,
+					["x"] = 0,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["duration_type"] = "seconds",
@@ -11115,12 +11459,20 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
+			["text1Containment"] = "INSIDE",
+			["useglowColor"] = false,
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "CENTER",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 45,
-			["alpha"] = 1,
+			["parent"] = "Survival Hunter",
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -11177,15 +11529,6 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Friz Quadrata TT",
-			["parent"] = "Survival Hunter",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -11222,13 +11565,22 @@ WeakAurasSaved = {
 					},
 				}, -- [2]
 			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["internalVersion"] = 9,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2Font"] = "Friz Quadrata TT",
+			["text1Font"] = "Friz Quadrata TT",
 			["desaturate"] = false,
 			["text2Color"] = {
 				1, -- [1]
@@ -11237,10 +11589,10 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["regionType"] = "icon",
-			["glow"] = false,
-			["icon"] = true,
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
+			["icon"] = true,
 			["text1"] = "%p",
 			["frameStrata"] = 3,
 			["zoom"] = 0,
@@ -11248,16 +11600,16 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["text1FontFlags"] = "OUTLINE",
 			["id"] = "Aspect of the Eagle",
-			["text1Containment"] = "INSIDE",
+			["selfPoint"] = "CENTER",
 			["text2Enabled"] = false,
 			["width"] = 45,
-			["selfPoint"] = "CENTER",
+			["text2Font"] = "Friz Quadrata TT",
 			["uid"] = "UiA(mhl7qUd",
 			["inverse"] = true,
-			["internalVersion"] = 9,
+			["cooldownTextEnabled"] = false,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["cooldownTextEnabled"] = false,
+			["glow"] = false,
 		},
 		["Aspect of the Wild Bar"] = {
 			["textFlags"] = "OUTLINE",
@@ -11304,7 +11656,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
+				["use_name"] = false,
 				["class"] = {
 					["single"] = "HUNTER",
 					["multi"] = {
@@ -11315,7 +11667,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -11329,10 +11684,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_spec"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
+				["use_class"] = true,
 				["spec"] = {
 					["single"] = 1,
 					["multi"] = {
@@ -11513,6 +11865,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_vehicle"] = false,
+						["duration"] = "1",
 						["event"] = "Conditions",
 						["unit"] = "player",
 						["debuffType"] = "HELPFUL",
@@ -11537,6 +11890,7 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["unit"] = "pet",
 						["health"] = "0",
+						["duration"] = "1",
 						["use_unit"] = true,
 						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
@@ -11552,11 +11906,24 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["color"] = {
+				0.70588235294118, -- [1]
+				0.70588235294118, -- [2]
+				0.70588235294118, -- [3]
+				1, -- [4]
+			},
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "BOTTOM",
+			["useglowColor"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 32,
-			["alpha"] = 1,
+			["parent"] = "Hunter Utility",
 			["load"] = {
 				["use_class"] = true,
 				["use_spec"] = false,
@@ -11607,19 +11974,14 @@ WeakAurasSaved = {
 					["preset"] = "shrink",
 				},
 			},
-			["parent"] = "Hunter Utility",
-			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 			},
+			["glow"] = true,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Friz Quadrata TT",
+			["text1Enabled"] = true,
 			["text1Containment"] = "INSIDE",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -11628,31 +11990,31 @@ WeakAurasSaved = {
 			},
 			["regionType"] = "icon",
 			["internalVersion"] = 9,
-			["color"] = {
-				0.70588235294118, -- [1]
-				0.70588235294118, -- [2]
-				0.70588235294118, -- [3]
-				1, -- [4]
-			},
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["alpha"] = 1,
 			["text1"] = "Dead",
 			["frameStrata"] = 1,
-			["text2"] = "%p",
 			["zoom"] = 0,
+			["text2"] = "%p",
 			["auto"] = true,
 			["text1FontFlags"] = "OUTLINE",
 			["id"] = "Pet Dead",
-			["cooldownTextEnabled"] = true,
+			["icon"] = true,
 			["text2Enabled"] = false,
 			["width"] = 32,
-			["icon"] = true,
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["uid"] = "7QfWo5o71Ux",
 			["inverse"] = true,
-			["text1Enabled"] = true,
+			["desaturate"] = false,
 			["displayIcon"] = 132163,
 			["cooldown"] = true,
-			["glow"] = true,
+			["cooldownTextEnabled"] = true,
 		},
 		["Bloodlust"] = {
 			["text2Point"] = "CENTER",
@@ -11714,9 +12076,9 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["scaleType"] = "straightScale",
 					["colorA"] = 1,
+					["scaley"] = 1.25,
 					["preset"] = "pulse",
 					["use_color"] = true,
-					["scaley"] = 1.25,
 					["alpha"] = 0,
 					["type"] = "custom",
 					["y"] = 0,
@@ -11734,12 +12096,20 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
+			["text1Containment"] = "INSIDE",
+			["useglowColor"] = false,
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "CENTER",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 40,
-			["alpha"] = 1,
+			["parent"] = "Hunter Utility",
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -11761,12 +12131,15 @@ WeakAurasSaved = {
 						true, -- [2]
 					},
 				},
-				["use_class"] = true,
+				["use_name"] = false,
 				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -11780,10 +12153,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
+				["use_class"] = true,
 				["class"] = {
 					["single"] = "HUNTER",
 					["multi"] = {
@@ -11794,19 +12164,24 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Calibri",
-			["parent"] = "Hunter Utility",
-			["text1Enabled"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 			},
+			["text1Enabled"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["selfPoint"] = "CENTER",
+			["text1Font"] = "Calibri",
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = true,
@@ -11822,15 +12197,15 @@ WeakAurasSaved = {
 			},
 			["text1FontFlags"] = "THICKOUTLINE",
 			["regionType"] = "icon",
-			["internalVersion"] = 9,
+			["width"] = 40,
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2FontSize"] = 24,
-			["width"] = 40,
 			["text1"] = " ",
 			["cooldownTextEnabled"] = true,
 			["zoom"] = 0.1,
@@ -11838,21 +12213,16 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["frameStrata"] = 3,
 			["id"] = "Bloodlust",
-			["text1Containment"] = "INSIDE",
+			["glow"] = false,
 			["text2Enabled"] = false,
 			["anchorFrameType"] = "SCREEN",
-			["glow"] = false,
+			["selfPoint"] = "CENTER",
 			["uid"] = "66na9MVFtIL",
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["desaturate"] = false,
 			["displayIcon"] = "Interface\\Icons\\Spell_Nature_BloodLust",
 			["cooldown"] = true,
-			["desaturate"] = false,
+			["internalVersion"] = 9,
 		},
 		["Pet Attack"] = {
 			["glow"] = false,
@@ -11909,6 +12279,7 @@ WeakAurasSaved = {
 						["use_absorbMode"] = true,
 						["event"] = "Conditions",
 						["unit"] = "player",
+						["duration"] = "1",
 						["subeventSuffix"] = "_CAST_START",
 						["use_unit"] = true,
 						["use_alive"] = true,
@@ -11925,11 +12296,24 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "CENTER",
+			["desaturate"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["frameStrata"] = 4,
+			["useglowColor"] = false,
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -11987,10 +12371,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Friz Quadrata TT",
 			["parent"] = "Hunter Rotation",
-			["text1Enabled"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 			},
 			["text1Color"] = {
@@ -11999,6 +12380,9 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "Friz Quadrata TT",
 			["animation"] = {
 				["start"] = {
 					["type"] = "preset",
@@ -12013,12 +12397,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
 					["scalex"] = 1,
 					["alpha"] = 0,
-					["x"] = 7,
-					["y"] = 0,
 					["colorB"] = 1,
+					["y"] = 0,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["translateType"] = "shake",
-					["colorA"] = 1,
+					["x"] = 7,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["duration_type"] = "seconds",
@@ -12028,40 +12412,35 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["alpha"] = 1,
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
 			["text2Point"] = "CENTER",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["frameStrata"] = 4,
 			["text1"] = " ",
 			["internalVersion"] = 9,
-			["text2"] = "%p",
 			["zoom"] = 0,
+			["text2"] = "%p",
 			["auto"] = false,
 			["icon"] = true,
 			["id"] = "Pet Attack",
-			["text1FontFlags"] = "OUTLINE",
-			["text2Enabled"] = false,
-			["width"] = 30,
 			["anchorFrameParent"] = false,
+			["alpha"] = 1,
+			["width"] = 30,
+			["text2Enabled"] = false,
 			["uid"] = "sFRtrytENT3",
 			["inverse"] = false,
 			["text1Containment"] = "INSIDE",
 			["displayIcon"] = 132152,
-			["desaturate"] = false,
 			["cooldownTextEnabled"] = true,
+			["text1Enabled"] = false,
 		},
 		["Wildfire Bomb Bar"] = {
 			["textFlags"] = "None",
@@ -12328,9 +12707,18 @@ WeakAurasSaved = {
 			["cooldownTextEnabled"] = false,
 			["yOffset"] = -167,
 			["anchorPoint"] = "CENTER",
+			["text2Enabled"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["xOffset"] = -50,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/41FX0D6O-/15",
 			["icon"] = true,
+			["useglowColor"] = false,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -12357,58 +12745,23 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = 1,
 			},
 			["internalVersion"] = 9,
-			["text1Enabled"] = false,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
-			["rotation"] = 0,
-			["animation"] = {
-				["start"] = {
-					["colorR"] = 1,
-					["translateType"] = "bounceDecay",
-					["scalex"] = 1,
-					["duration"] = ".3",
-					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog = (progress * 3.5) % 1\n      local bounce = math.ceil(progress * 3.5)\n      local bounceDistance = math.sin(prog * math.pi) * (bounce / 4)\n    return startX + (bounceDistance * deltaX), startY + (bounceDistance * deltaY)\n  end\n  ",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["x"] = 0,
-					["y"] = 8,
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["type"] = "none",
-					["colorA"] = 1,
-					["rotate"] = 0,
-					["use_translate"] = true,
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["scaley"] = 1,
-					["translateType"] = "shake",
-					["duration"] = "1",
-					["scalex"] = 1,
-					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
-					["duration_type"] = "seconds",
-					["alpha"] = 0,
-					["x"] = 4,
-					["y"] = 0,
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["type"] = "none",
-					["colorA"] = 1,
-					["rotate"] = 0,
-					["use_translate"] = true,
-					["colorR"] = 1,
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
-			["parent"] = "Survival Hunter",
-			["text1Containment"] = "INSIDE",
-			["discrete_rotation"] = 0,
-			["text1Point"] = "BOTTOMRIGHT",
 			["conditions"] = {
 			},
+			["text1Enabled"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["text1Containment"] = "INSIDE",
+			["rotation"] = 0,
+			["text1Point"] = "BOTTOMRIGHT",
+			["discrete_rotation"] = 0,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
 			["rotate"] = true,
@@ -12468,59 +12821,93 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["desaturate"] = false,
-			["stickyDuration"] = false,
-			["color"] = {
+			["glowColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2Containment"] = "INSIDE",
-			["glow"] = false,
-			["text1Font"] = "Friz Quadrata TT",
 			["anchorFrameType"] = "SCREEN",
-			["mirror"] = false,
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["regionType"] = "icon",
 			["frameStrata"] = 4,
-			["blendMode"] = "BLEND",
-			["text2FontSize"] = 24,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["desaturate"] = false,
+			["mirror"] = false,
+			["text1FontFlags"] = "OUTLINE",
+			["regionType"] = "icon",
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["blendMode"] = "BLEND",
+			["text2FontSize"] = 24,
+			["text2Font"] = "Friz Quadrata TT",
 			["text1"] = " ",
 			["texture"] = "Textures\\SpellActivationOverlays\\Impact",
-			["text2"] = "%p",
 			["zoom"] = 0,
+			["text2"] = "%p",
 			["auto"] = true,
-			["text2Enabled"] = false,
+			["parent"] = "Survival Hunter",
 			["id"] = "Viper's Venom Icon",
-			["text1FontFlags"] = "OUTLINE",
+			["text1Font"] = "Friz Quadrata TT",
 			["alpha"] = 1,
 			["width"] = 36,
-			["xOffset"] = -50,
+			["stickyDuration"] = false,
 			["uid"] = "9w0nk1j4d45",
 			["inverse"] = true,
-			["text2Font"] = "Friz Quadrata TT",
-			["displayIcon"] = "",
-			["cooldown"] = false,
-			["actions"] = {
+			["animation"] = {
 				["start"] = {
+					["colorR"] = 1,
+					["translateType"] = "bounceDecay",
+					["scalex"] = 1,
+					["duration"] = ".3",
+					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog = (progress * 3.5) % 1\n      local bounce = math.ceil(progress * 3.5)\n      local bounceDistance = math.sin(prog * math.pi) * (bounce / 4)\n    return startX + (bounceDistance * deltaX), startY + (bounceDistance * deltaY)\n  end\n  ",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["colorB"] = 1,
+					["y"] = 8,
+					["colorA"] = 1,
+					["colorG"] = 1,
+					["type"] = "none",
+					["x"] = 0,
+					["rotate"] = 0,
+					["use_translate"] = true,
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["scaley"] = 1,
+					["translateType"] = "shake",
+					["duration"] = "1",
+					["scalex"] = 1,
+					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
+					["duration_type"] = "seconds",
+					["alpha"] = 0,
+					["colorB"] = 1,
+					["y"] = 0,
+					["colorA"] = 1,
+					["colorG"] = 1,
+					["type"] = "none",
+					["x"] = 4,
+					["rotate"] = 0,
+					["use_translate"] = true,
+					["colorR"] = 1,
 				},
 				["finish"] = {
-				},
-				["init"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
+			["displayIcon"] = "",
+			["cooldown"] = false,
+			["glow"] = false,
 		},
 		["Disengage CD"] = {
 			["text2Point"] = "CENTER",
@@ -12569,14 +12956,15 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["type"] = "status",
+						["custom_hide"] = "timed",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
-						["use_genericShowOn"] = true,
+						["duration"] = "1",
 						["genericShowOn"] = "showOnCooldown",
 						["unit"] = "player",
 						["realSpellName"] = "Disengage",
 						["use_spellName"] = true,
-						["custom_hide"] = "timed",
+						["use_genericShowOn"] = true,
 						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
 						["event"] = "Cooldown Progress (Spell)",
@@ -12592,12 +12980,20 @@ WeakAurasSaved = {
 			["text1Enabled"] = true,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["glow"] = false,
+			["useglowColor"] = false,
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "RIGHT",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["alpha"] = 1,
+			["parent"] = "Hunter Utility",
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -12620,12 +13016,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
+				["use_name"] = false,
 				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -12639,10 +13038,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
+				["use_class"] = true,
 				["spec"] = {
 					["multi"] = {
 						true, -- [1]
@@ -12654,8 +13050,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Calibri",
-			["parent"] = "Hunter Utility",
+			["conditions"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "preset",
@@ -12672,28 +13068,28 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
+			["internalVersion"] = 9,
 			["text2Containment"] = "INSIDE",
-			["conditions"] = {
-			},
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2Font"] = "Friz Quadrata TT",
-			["text1FontFlags"] = "OUTLINE",
+			["text1Font"] = "Calibri",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["icon"] = true,
-			["cooldownTextEnabled"] = true,
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
+			["cooldownTextEnabled"] = true,
 			["text1"] = "D",
 			["text1Containment"] = "OUTSIDE",
 			["text2"] = "%p",
@@ -12701,21 +13097,21 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["frameStrata"] = 3,
 			["id"] = "Disengage CD",
-			["glow"] = false,
-			["text2Enabled"] = false,
-			["width"] = 30,
 			["color"] = {
 				0.70588235294118, -- [1]
 				0.70588235294118, -- [2]
 				0.70588235294118, -- [3]
 				1, -- [4]
 			},
+			["text2Enabled"] = false,
+			["width"] = 30,
+			["text2Font"] = "Friz Quadrata TT",
 			["uid"] = "bIBrT9nF2Zt",
 			["inverse"] = true,
-			["internalVersion"] = 9,
+			["desaturate"] = false,
 			["displayIcon"] = 132294,
 			["cooldown"] = true,
-			["desaturate"] = false,
+			["icon"] = true,
 		},
 		["Kill Command Surv"] = {
 			["text2Point"] = "CENTER",
@@ -12741,6 +13137,7 @@ WeakAurasSaved = {
 						["names"] = {
 						},
 						["use_showgcd"] = true,
+						["duration"] = "1",
 						["debuffType"] = "HELPFUL",
 						["charges_operator"] = ">",
 						["charges"] = "1",
@@ -12772,9 +13169,17 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "BOTTOMRIGHT",
+			["alpha"] = 1,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 50,
+			["useglowColor"] = false,
 			["load"] = {
 				["use_petbattle"] = false,
 				["class"] = {
@@ -12805,7 +13210,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -12814,11 +13219,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_realm"] = false,
-				["pvptalent"] = {
+				["use_vehicleUi"] = false,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_vehicleUi"] = false,
 				["use_name"] = false,
 				["use_combat"] = true,
 				["race"] = {
@@ -12830,7 +13235,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["anchorFrameType"] = "SCREEN",
+			["parent"] = "Survival Hunter",
 			["cooldownTextEnabled"] = true,
 			["animation"] = {
 				["start"] = {
@@ -12847,14 +13252,14 @@ WeakAurasSaved = {
 				},
 			},
 			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "Friz Quadrata TT",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1Font"] = "Friz Quadrata TT",
-			["parent"] = "Survival Hunter",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -12871,18 +13276,18 @@ WeakAurasSaved = {
 			["desaturate"] = false,
 			["text2Font"] = "Friz Quadrata TT",
 			["text2FontSize"] = 24,
-			["icon"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["text1"] = " ",
-			["alpha"] = 1,
-			["text2"] = "%p",
+			["icon"] = true,
 			["zoom"] = 0,
+			["text2"] = "%p",
 			["auto"] = true,
 			["text1FontFlags"] = "OUTLINE",
 			["id"] = "Kill Command Surv",
 			["text1Containment"] = "INSIDE",
-			["frameStrata"] = 4,
-			["width"] = 50,
 			["text2Enabled"] = false,
+			["width"] = 50,
+			["frameStrata"] = 4,
 			["uid"] = "gJ(soKLObQL",
 			["inverse"] = true,
 			["text1Enabled"] = false,
@@ -12932,6 +13337,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["subeventSuffix"] = "_CAST_START",
 						["realSpellName"] = "Serpent Sting",
@@ -13018,11 +13424,19 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
+			["icon"] = true,
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "BOTTOMRIGHT",
+			["useglowColor"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["alpha"] = 1,
+			["parent"] = "Survival Hunter",
 			["load"] = {
 				["use_petbattle"] = false,
 				["class"] = {
@@ -13053,7 +13467,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -13062,11 +13476,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_realm"] = false,
-				["pvptalent"] = {
+				["use_vehicleUi"] = false,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_vehicleUi"] = false,
 				["use_name"] = false,
 				["use_combat"] = true,
 				["race"] = {
@@ -13079,9 +13493,6 @@ WeakAurasSaved = {
 				},
 			},
 			["internalVersion"] = 9,
-			["parent"] = "Survival Hunter",
-			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -13102,14 +13513,12 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["text1Containment"] = "INSIDE",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Friz Quadrata TT",
+			["text2Font"] = "Friz Quadrata TT",
 			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
@@ -13123,26 +13532,31 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["icon"] = true,
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["alpha"] = 1,
 			["text1"] = " ",
 			["selfPoint"] = "CENTER",
 			["cooldownTextEnabled"] = true,
-			["zoom"] = 0,
-			["auto"] = true,
 			["text2"] = "%p",
+			["auto"] = true,
+			["zoom"] = 0,
 			["id"] = "Serpent Sting Surv",
-			["glow"] = false,
 			["text2Enabled"] = false,
-			["width"] = 36,
 			["frameStrata"] = 3,
+			["width"] = 36,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["uid"] = "fB11OrLdpT5",
 			["inverse"] = true,
-			["text2Font"] = "Friz Quadrata TT",
+			["desaturate"] = false,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["text1Containment"] = "INSIDE",
+			["glow"] = false,
 		},
 		["Aimed Shot 0 Stacks CD"] = {
 			["textFlags"] = "None",
@@ -13213,7 +13627,6 @@ WeakAurasSaved = {
 					},
 				},
 				["use_name"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -13222,6 +13635,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_vehicleUi"] = false,
 				["race"] = {
 					["multi"] = {
 					},
@@ -13270,7 +13684,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showOnCooldown",
 						["names"] = {
 						},
-						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
+						["custom_hide"] = "timed",
 						["charges_operator"] = "==",
 						["type"] = "status",
 						["spellName"] = 19434,
@@ -13287,7 +13702,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["use_genericShowOn"] = true,
 						["use_unit"] = true,
-						["custom_hide"] = "timed",
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 						["showOn"] = "showOnCooldown",
@@ -13396,7 +13811,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showAlways",
 						["unit"] = "player",
 						["use_showgcd"] = false,
-						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
+						["custom_hide"] = "timed",
 						["charges_operator"] = ">=",
 						["charges"] = "1",
 						["spellName"] = 259495,
@@ -13414,7 +13830,7 @@ WeakAurasSaved = {
 						["use_genericShowOn"] = true,
 						["names"] = {
 						},
-						["custom_hide"] = "timed",
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 						["showOn"] = "showAlways",
@@ -13489,6 +13905,7 @@ WeakAurasSaved = {
 						["unevent"] = "auto",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
+						["duration"] = "1",
 						["realSpellName"] = "Kill Command",
 						["use_spellName"] = true,
 						["unit"] = "player",
@@ -13506,9 +13923,10 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["type"] = "status",
-						["power"] = "75",
-						["power_operator"] = ">=",
 						["use_absorbMode"] = true,
+						["unevent"] = "auto",
+						["power_operator"] = ">=",
+						["duration"] = "1",
 						["event"] = "Power",
 						["subeventPrefix"] = "SPELL",
 						["unit"] = "player",
@@ -13518,7 +13936,7 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["use_power"] = true,
 						["use_powertype"] = true,
-						["unevent"] = "auto",
+						["power"] = "75",
 					},
 					["untrigger"] = {
 					},
@@ -13530,12 +13948,20 @@ WeakAurasSaved = {
 			["text1Enabled"] = true,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["cooldownTextEnabled"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "CENTER",
+			["parent"] = "Survival Hunter",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["frameStrata"] = 4,
+			["useglowColor"] = false,
 			["load"] = {
 				["use_petbattle"] = false,
 				["class"] = {
@@ -13569,7 +13995,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -13578,11 +14004,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_realm"] = false,
-				["pvptalent"] = {
+				["use_vehicleUi"] = false,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_vehicleUi"] = false,
 				["race"] = {
 					["multi"] = {
 					},
@@ -13594,10 +14020,6 @@ WeakAurasSaved = {
 				},
 				["use_name"] = false,
 			},
-			["glow"] = true,
-			["parent"] = "Survival Hunter",
-			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -13618,8 +14040,25 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["glow"] = true,
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["custom"] = "aura_env.region.cooldown:SetAlpha(0.6)",
+					["glow_action"] = "show",
+					["do_custom"] = true,
+					["glow_frame"] = "",
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["do_custom"] = false,
+				},
+			},
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Friz Quadrata TT",
-			["text1Color"] = {
+			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
@@ -13628,10 +14067,10 @@ WeakAurasSaved = {
 			["text1Containment"] = "INSIDE",
 			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["text2Font"] = "Friz Quadrata TT",
-			["internalVersion"] = 9,
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 4,
+			["text2FontSize"] = 24,
+			["internalVersion"] = 9,
 			["text1"] = "%p",
 			["text2Color"] = {
 				1, -- [1]
@@ -13651,12 +14090,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog = (progress * 3.5) % 1\n      local bounce = math.ceil(progress * 3.5)\n      local bounceDistance = math.sin(prog * math.pi) * (bounce / 4)\n    return startX + (bounceDistance * deltaX), startY + (bounceDistance * deltaY)\n  end\n  ",
 					["scaley"] = 1,
 					["alpha"] = 0,
-					["x"] = 0,
-					["y"] = 8,
 					["colorB"] = 1,
+					["y"] = 8,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["translateType"] = "bounceDecay",
-					["colorA"] = 1,
+					["x"] = 0,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["duration_type"] = "seconds",
@@ -13669,12 +14108,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
 					["scaley"] = 1,
 					["alpha"] = 0,
-					["x"] = 3,
-					["y"] = 0,
 					["colorB"] = 1,
+					["y"] = 0,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["translateType"] = "shake",
-					["colorA"] = 1,
+					["x"] = 3,
 					["rotate"] = 0,
 					["use_translate"] = false,
 					["duration_type"] = "seconds",
@@ -13685,34 +14124,21 @@ WeakAurasSaved = {
 				},
 			},
 			["id"] = "Wildfire Bomb Glow",
-			["cooldownTextEnabled"] = false,
 			["text2Enabled"] = false,
-			["width"] = 36,
 			["alpha"] = 1,
-			["uid"] = "((wrzOClaI1",
-			["inverse"] = true,
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-					["custom"] = "aura_env.region.cooldown:SetAlpha(0.6)",
-					["glow_action"] = "show",
-					["do_custom"] = true,
-					["glow_frame"] = "",
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["do_custom"] = false,
-				},
-			},
-			["displayIcon"] = "",
-			["cooldown"] = true,
-			["color"] = {
+			["width"] = 36,
+			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["uid"] = "((wrzOClaI1",
+			["inverse"] = true,
+			["desaturate"] = false,
+			["displayIcon"] = "",
+			["cooldown"] = true,
+			["text2Font"] = "Friz Quadrata TT",
 		},
 		["Master's Call CD"] = {
 			["text2Point"] = "CENTER",
@@ -13744,6 +14170,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["subeventPrefix"] = "SPELL",
 						["realSpellName"] = "Master's Call",
@@ -13766,12 +14193,20 @@ WeakAurasSaved = {
 			["text1Enabled"] = true,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["cooldownTextEnabled"] = true,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "RIGHT",
+			["parent"] = "Hunter Utility",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["alpha"] = 1,
+			["useglowColor"] = false,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -13788,21 +14223,21 @@ WeakAurasSaved = {
 						[7] = true,
 					},
 				},
-				["use_class"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["class"] = {
 					["single"] = "HUNTER",
 					["multi"] = {
 					},
 				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
+				["use_name"] = false,
 				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_name"] = false,
+				["use_class"] = true,
 				["race"] = {
 					["multi"] = {
 					},
@@ -13829,31 +14264,36 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["internalVersion"] = 9,
-			["parent"] = "Hunter Utility",
-			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 			},
+			["internalVersion"] = 9,
+			["color"] = {
+				0.70588235294118, -- [1]
+				0.70588235294118, -- [2]
+				0.70588235294118, -- [3]
+				1, -- [4]
+			},
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Calibri",
-			["text2Font"] = "Friz Quadrata TT",
-			["text1FontFlags"] = "OUTLINE",
+			["text1Containment"] = "OUTSIDE",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["icon"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2FontSize"] = 24,
-			["anchorFrameType"] = "SCREEN",
 			["text1"] = "M-Call",
 			["animation"] = {
 				["start"] = {
@@ -13876,21 +14316,16 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["frameStrata"] = 3,
 			["id"] = "Master's Call CD",
-			["cooldownTextEnabled"] = true,
+			["glow"] = false,
 			["text2Enabled"] = false,
 			["width"] = 30,
-			["glow"] = false,
+			["text2Font"] = "Friz Quadrata TT",
 			["uid"] = "g17Y1ly10n9",
 			["inverse"] = true,
-			["color"] = {
-				0.70588235294118, -- [1]
-				0.70588235294118, -- [2]
-				0.70588235294118, -- [3]
-				1, -- [4]
-			},
+			["desaturate"] = false,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["text1Containment"] = "OUTSIDE",
+			["icon"] = true,
 		},
 		["Binding Shot Active"] = {
 			["text2Point"] = "CENTER",
@@ -13966,12 +14401,20 @@ WeakAurasSaved = {
 			["text1Enabled"] = false,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["frameStrata"] = 3,
+			["useglowColor"] = false,
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "CENTER",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["alpha"] = 1,
+			["parent"] = "Hunter Utility",
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -14029,8 +14472,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Calibri",
-			["parent"] = "Hunter Utility",
+			["conditions"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "preset",
@@ -14047,28 +14490,33 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
-			["text2Containment"] = "INSIDE",
-			["conditions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2Font"] = "Friz Quadrata TT",
+			["text1Font"] = "Calibri",
 			["icon"] = true,
 			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["internalVersion"] = 9,
+			["width"] = 30,
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2FontSize"] = 24,
-			["width"] = 30,
 			["text1"] = " ",
 			["text1Containment"] = "INSIDE",
 			["zoom"] = 0.1,
@@ -14076,21 +14524,16 @@ WeakAurasSaved = {
 			["auto"] = false,
 			["cooldownTextEnabled"] = true,
 			["id"] = "Binding Shot Active",
-			["frameStrata"] = 3,
+			["glow"] = false,
 			["text2Enabled"] = false,
 			["anchorFrameType"] = "SCREEN",
-			["glow"] = false,
+			["text2Font"] = "Friz Quadrata TT",
 			["uid"] = "MhnJZH8KaAP",
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["desaturate"] = false,
 			["displayIcon"] = 462650,
 			["cooldown"] = true,
-			["desaturate"] = false,
+			["internalVersion"] = 9,
 		},
 		["Turtle"] = {
 			["text2Point"] = "CENTER",
@@ -14148,12 +14591,20 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
+			["selfPoint"] = "CENTER",
+			["useglowColor"] = false,
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "CENTER",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["alpha"] = 1,
+			["parent"] = "Hunter Utility",
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -14175,12 +14626,15 @@ WeakAurasSaved = {
 						true, -- [2]
 					},
 				},
-				["use_class"] = true,
+				["use_name"] = false,
 				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -14194,10 +14648,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
+				["use_class"] = true,
 				["class"] = {
 					["single"] = "HUNTER",
 					["multi"] = {
@@ -14208,19 +14659,19 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Calibri",
-			["parent"] = "Hunter Utility",
-			["text1Containment"] = "INSIDE",
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 			},
+			["text1Containment"] = "INSIDE",
+			["text1Enabled"] = false,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 9,
+			["text1Font"] = "Calibri",
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -14240,15 +14691,10 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["regionType"] = "icon",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["frameStrata"] = 3,
-			["text2FontSize"] = 24,
 			["width"] = 30,
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
+			["frameStrata"] = 3,
 			["text1"] = "%p",
 			["desaturate"] = false,
 			["zoom"] = 0.1,
@@ -14256,16 +14702,21 @@ WeakAurasSaved = {
 			["auto"] = false,
 			["text1FontFlags"] = "OUTLINE",
 			["id"] = "Turtle",
-			["selfPoint"] = "CENTER",
+			["glow"] = false,
 			["text2Enabled"] = false,
 			["anchorFrameType"] = "SCREEN",
-			["glow"] = false,
+			["internalVersion"] = 9,
 			["uid"] = "sThMPGZ(GH0",
 			["inverse"] = false,
-			["text1Enabled"] = false,
+			["cooldownTextEnabled"] = true,
 			["displayIcon"] = 132199,
 			["cooldown"] = true,
-			["cooldownTextEnabled"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 		},
 		["Pot bar"] = {
 			["textFlags"] = "OUTLINE",
@@ -14387,8 +14838,8 @@ WeakAurasSaved = {
 						["spellId"] = "156423",
 						["ownOnly"] = true,
 						["unit"] = "player",
-						["spellName"] = "Sanha",
 						["buffShowOn"] = "showOnActive",
+						["debuffType"] = "HELPFUL",
 						["custom_hide"] = "timed",
 						["type"] = "aura",
 						["subeventSuffix"] = "_CAST_SUCCESS",
@@ -14410,7 +14861,7 @@ WeakAurasSaved = {
 							"Potion of Deadly Grace", -- [2]
 						},
 						["sourceUnit"] = "player",
-						["debuffType"] = "HELPFUL",
+						["spellName"] = "Sanha",
 					},
 					["untrigger"] = {
 					},
@@ -14715,11 +15166,26 @@ WeakAurasSaved = {
 			["internalVersion"] = 9,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["glow_action"] = "show",
+					["glow_frame"] = "WeakAuras:Vermingue",
+					["do_custom"] = false,
+					["do_sound"] = false,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "CENTER",
+			["desaturate"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
+			["parent"] = "Hunter CDs",
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -14778,13 +15244,18 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextEnabled"] = true,
-			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
-			["parent"] = "Hunter CDs",
-			["text1Font"] = "Friz Quadrata TT",
+			["text2Point"] = "CENTER",
 			["conditions"] = {
+			},
+			["text1Containment"] = "INSIDE",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "Friz Quadrata TT",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["text1Color"] = {
 				1, -- [1]
@@ -14800,23 +15271,11 @@ WeakAurasSaved = {
 			},
 			["regionType"] = "icon",
 			["text1FontFlags"] = "OUTLINE",
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-					["glow_action"] = "show",
-					["glow_frame"] = "WeakAuras:Vermingue",
-					["do_custom"] = false,
-					["do_sound"] = false,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["anchorFrameType"] = "SCREEN",
 			["text2FontSize"] = 24,
-			["alpha"] = 1,
-			["text1"] = " ",
 			["frameStrata"] = 4,
+			["text1"] = " ",
+			["text1Enabled"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -14825,9 +15284,9 @@ WeakAurasSaved = {
 			},
 			["text2"] = "%p",
 			["auto"] = false,
-			["text1Enabled"] = true,
-			["id"] = "Pot",
 			["zoom"] = 0,
+			["id"] = "Pot",
+			["alpha"] = 1,
 			["text2Enabled"] = false,
 			["width"] = 30,
 			["text2Font"] = "Friz Quadrata TT",
@@ -14850,8 +15309,8 @@ WeakAurasSaved = {
 				},
 			},
 			["displayIcon"] = "Interface\\Icons\\trade_alchemy_dpotion_a27",
-			["text2Point"] = "CENTER",
-			["text1Containment"] = "INSIDE",
+			["cooldownTextEnabled"] = true,
+			["useglowColor"] = false,
 		},
 		["Exhilaration CD"] = {
 			["text2Point"] = "CENTER",
@@ -14872,6 +15331,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["subeventPrefix"] = "SPELL",
 						["realSpellName"] = "Exhilaration",
@@ -14893,6 +15353,7 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["use_absorbMode"] = true,
 						["genericShowOn"] = "showOnActive",
 						["subeventPrefix"] = "SPELL",
@@ -14928,12 +15389,20 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
+			["selfPoint"] = "CENTER",
+			["useglowColor"] = false,
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "RIGHT",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["alpha"] = 1,
+			["parent"] = "Hunter Utility",
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -14955,12 +15424,15 @@ WeakAurasSaved = {
 						true, -- [2]
 					},
 				},
-				["use_class"] = true,
+				["use_name"] = false,
 				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -14974,10 +15446,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
+				["use_class"] = true,
 				["class"] = {
 					["single"] = "HUNTER",
 					["multi"] = {
@@ -14988,31 +15457,31 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Calibri",
-			["parent"] = "Hunter Utility",
+			["conditions"] = {
+			},
 			["color"] = {
 				0.70588235294118, -- [1]
 				0.70588235294118, -- [2]
 				0.70588235294118, -- [3]
 				1, -- [4]
 			},
+			["text1Containment"] = "OUTSIDE",
 			["text2Containment"] = "INSIDE",
-			["conditions"] = {
-			},
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["frameStrata"] = 3,
+			["text1Font"] = "Calibri",
 			["internalVersion"] = 9,
 			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["text1Enabled"] = true,
-			["desaturate"] = false,
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
+			["desaturate"] = false,
 			["text1"] = "EX",
 			["text2Color"] = {
 				1, -- [1]
@@ -15025,8 +15494,8 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["glow"] = false,
 			["id"] = "Exhilaration CD",
-			["selfPoint"] = "CENTER",
 			["text2Enabled"] = false,
+			["frameStrata"] = 3,
 			["width"] = 30,
 			["actions"] = {
 				["start"] = {
@@ -15045,10 +15514,10 @@ WeakAurasSaved = {
 			},
 			["uid"] = "QgPmkMR6eTq",
 			["inverse"] = true,
-			["text1Containment"] = "OUTSIDE",
+			["cooldownTextEnabled"] = true,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["cooldownTextEnabled"] = true,
+			["text1Enabled"] = true,
 		},
 		["Precise Shots Stacks"] = {
 			["outline"] = "OUTLINE",
@@ -15113,12 +15582,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
 					["scaley"] = 1,
 					["alpha"] = 0,
-					["x"] = 5,
-					["y"] = 0,
 					["colorB"] = 1,
+					["y"] = 0,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["translateType"] = "shake",
-					["colorA"] = 1,
+					["x"] = 5,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["duration_type"] = "seconds",
@@ -15180,7 +15649,6 @@ WeakAurasSaved = {
 					},
 				},
 				["use_name"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -15189,6 +15657,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_vehicleUi"] = false,
 				["race"] = {
 					["multi"] = {
 					},
@@ -15253,16 +15722,11 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = 1,
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
-			["borderOffset"] = 5,
 			["xOffset"] = -264,
+			["internalVersion"] = 9,
+			["anchorPoint"] = "CENTER",
+			["selfPoint"] = "BOTTOMLEFT",
+			["id"] = "Hunter Focus Bar",
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -15277,11 +15741,9 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["id"] = "Hunter Focus Bar",
-			["internalVersion"] = 9,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["selfPoint"] = "BOTTOMLEFT",
+			["borderOffset"] = 5,
 			["borderInset"] = 11,
 			["borderEdge"] = "None",
 			["uid"] = "ZMXqsVRLd9n",
@@ -15335,7 +15797,14 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["anchorPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Stampede K"] = {
 			["text2Point"] = "CENTER",
@@ -15357,6 +15826,7 @@ WeakAurasSaved = {
 						["debuffType"] = "HELPFUL",
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["subeventPrefix"] = "SPELL",
 						["event"] = "Cooldown Progress (Spell)",
 						["subeventSuffix"] = "_CAST_START",
@@ -15387,9 +15857,9 @@ WeakAurasSaved = {
 							"Sanha", -- [1]
 						},
 						["ownOnly"] = true,
-						["spellName"] = 201430,
-						["subeventSuffix"] = "_CAST_SUCCESS",
 						["custom_hide"] = "timed",
+						["subeventSuffix"] = "_CAST_SUCCESS",
+						["debuffType"] = "HARMFUL",
 						["name"] = "Stampede",
 						["type"] = "event",
 						["use_spellName"] = false,
@@ -15403,7 +15873,7 @@ WeakAurasSaved = {
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = true,
-						["debuffType"] = "HARMFUL",
+						["spellName"] = 201430,
 						["use_genericShowOn"] = true,
 						["sourceUnit"] = "player",
 						["use_unit"] = true,
@@ -15418,12 +15888,20 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["text1Containment"] = "INSIDE",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["stickyDuration"] = false,
 			["progressPrecision"] = 4,
 			["text1Point"] = "CENTER",
+			["parent"] = "Hunter CDs",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["alpha"] = 1,
+			["useglowColor"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -15481,10 +15959,6 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Enabled"] = true,
-			["parent"] = "Hunter CDs",
-			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -15601,13 +16075,12 @@ WeakAurasSaved = {
 					},
 				}, -- [4]
 			},
+			["text1Enabled"] = true,
+			["internalVersion"] = 9,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Friz Quadrata TT",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["glow"] = false,
 			["actions"] = {
 				["start"] = {
 					["custom"] = "aura_env.backdropFunc()\n\n\n",
@@ -15622,6 +16095,41 @@ WeakAurasSaved = {
 			},
 			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
+			["width"] = 30,
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text1"] = "%p",
+			["frameStrata"] = 4,
+			["zoom"] = 0,
+			["text2"] = "%p",
+			["auto"] = true,
+			["cooldownTextEnabled"] = false,
+			["id"] = "Stampede K",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text2Enabled"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["uid"] = "A8)W2Jmck(T",
+			["inverse"] = true,
+			["desaturate"] = false,
+			["displayIcon"] = "",
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -15653,36 +16161,6 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text2FontSize"] = 24,
-			["width"] = 30,
-			["text1"] = "%p",
-			["frameStrata"] = 4,
-			["zoom"] = 0,
-			["text2"] = "%p",
-			["auto"] = true,
-			["cooldownTextEnabled"] = false,
-			["id"] = "Stampede K",
-			["text1Containment"] = "INSIDE",
-			["text2Enabled"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["uid"] = "A8)W2Jmck(T",
-			["inverse"] = true,
-			["internalVersion"] = 9,
-			["displayIcon"] = "",
-			["cooldown"] = true,
-			["glow"] = false,
 		},
 		["Beast Cleave Counter : tsurugi "] = {
 			["outline"] = "OUTLINE",
@@ -15725,6 +16203,7 @@ WeakAurasSaved = {
 						["use_absorbMode"] = true,
 						["event"] = "Conditions",
 						["unit"] = "player",
+						["duration"] = "1",
 						["names"] = {
 						},
 						["spellIds"] = {
@@ -15768,9 +16247,6 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(t)\nreturn t[1]\nend",
 				["activeTriggerMode"] = 2,
 			},
-			["wordWrap"] = "WordWrap",
-			["internalVersion"] = 9,
-			["justify"] = "CENTER",
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -15785,6 +16261,9 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
+			["internalVersion"] = 9,
+			["justify"] = "CENTER",
+			["selfPoint"] = "CENTER",
 			["id"] = "Beast Cleave Counter : tsurugi ",
 			["automaticWidth"] = "Auto",
 			["frameStrata"] = 1,
@@ -15792,7 +16271,7 @@ WeakAurasSaved = {
 			["font"] = "Friz Quadrata TT",
 			["uid"] = "QLkAI9j9nkQ",
 			["regionType"] = "text",
-			["selfPoint"] = "CENTER",
+			["wordWrap"] = "WordWrap",
 			["fixedWidth"] = 200,
 			["load"] = {
 				["use_petbattle"] = false,
@@ -15852,8 +16331,13 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "",
 				["activeTriggerMode"] = 1,
 			},
-			["parent"] = "Survival Hunter",
-			["text1Enabled"] = false,
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -15864,12 +16348,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog = (progress * 3.5) % 1\n      local bounce = math.ceil(progress * 3.5)\n      local bounceDistance = math.sin(prog * math.pi) * (bounce / 4)\n    return startX + (bounceDistance * deltaX), startY + (bounceDistance * deltaY)\n  end\n  ",
 					["duration_type"] = "seconds",
 					["alpha"] = 0,
-					["x"] = 0,
-					["y"] = 8,
 					["colorB"] = 1,
+					["y"] = 8,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["type"] = "none",
-					["colorA"] = 1,
+					["x"] = 0,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["colorR"] = 1,
@@ -15882,12 +16366,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
 					["duration_type"] = "seconds",
 					["alpha"] = 0,
-					["x"] = 4,
-					["y"] = 0,
 					["colorB"] = 1,
+					["y"] = 0,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["type"] = "none",
-					["colorA"] = 1,
+					["x"] = 4,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["colorR"] = 1,
@@ -15898,9 +16382,9 @@ WeakAurasSaved = {
 				},
 			},
 			["rotation"] = 0,
-			["selfPoint"] = "CENTER",
-			["internalVersion"] = 9,
-			["stickyDuration"] = false,
+			["text1Enabled"] = false,
+			["parent"] = "Survival Hunter",
+			["desaturate"] = false,
 			["discrete_rotation"] = 0,
 			["text1Point"] = "BOTTOMRIGHT",
 			["conditions"] = {
@@ -15964,6 +16448,15 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["selfPoint"] = "CENTER",
+			["internalVersion"] = 9,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text2Containment"] = "INSIDE",
 			["actions"] = {
 				["start"] = {
 				},
@@ -15972,11 +16465,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["text1Containment"] = "INSIDE",
-			["xOffset"] = -50,
-			["text2Containment"] = "INSIDE",
-			["desaturate"] = false,
-			["text1Font"] = "Friz Quadrata TT",
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["width"] = 95,
 			["mirror"] = false,
 			["text1FontFlags"] = "OUTLINE",
@@ -15984,12 +16478,7 @@ WeakAurasSaved = {
 			["frameStrata"] = 2,
 			["blendMode"] = "BLEND",
 			["text2FontSize"] = 24,
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = -50,
 			["text1"] = " ",
 			["texture"] = "Textures\\SpellActivationOverlays\\Impact",
 			["zoom"] = 0,
@@ -15997,23 +16486,13 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["alpha"] = 1,
 			["id"] = "Viper's Venom",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["text1Font"] = "Friz Quadrata TT",
 			["text2Enabled"] = false,
 			["anchorFrameType"] = "SCREEN",
-			["text2Font"] = "Friz Quadrata TT",
+			["text1Containment"] = "INSIDE",
 			["uid"] = "F4raAWjfg2(",
 			["inverse"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["stickyDuration"] = false,
 			["displayIcon"] = "",
 			["cooldown"] = false,
 			["text2Point"] = "CENTER",
@@ -16045,6 +16524,7 @@ WeakAurasSaved = {
 						["use_powertype"] = true,
 						["debuffType"] = "HELPFUL",
 						["type"] = "status",
+						["duration"] = "1",
 						["unevent"] = "auto",
 						["power_operator"] = ">",
 						["spellName"] = 259491,
@@ -16141,7 +16621,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showAlways",
 						["subeventPrefix"] = "SPELL",
 						["use_showgcd"] = true,
-						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
+						["custom_hide"] = "timed",
 						["charges_operator"] = "==",
 						["type"] = "status",
 						["use_unit"] = true,
@@ -16159,7 +16640,7 @@ WeakAurasSaved = {
 						["names"] = {
 						},
 						["spellName"] = 259489,
-						["custom_hide"] = "timed",
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 						["showOn"] = "showAlways",
@@ -16174,6 +16655,7 @@ WeakAurasSaved = {
 						["use_absorbMode"] = true,
 						["event"] = "Power",
 						["unit"] = "player",
+						["duration"] = "1",
 						["powertype"] = 2,
 						["use_unit"] = true,
 						["subeventSuffix"] = "_CAST_START",
@@ -16194,6 +16676,7 @@ WeakAurasSaved = {
 						["spellName"] = 259495,
 						["charges_operator"] = "==",
 						["type"] = "status",
+						["duration"] = "1",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
 						["subeventSuffix"] = "_CAST_START",
@@ -16218,6 +16701,7 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "status",
 						["subeventSuffix"] = "_CAST_START",
+						["duration"] = "1",
 						["use_genericShowOn"] = true,
 						["genericShowOn"] = "showOnReady",
 						["unit"] = "player",
@@ -16241,11 +16725,19 @@ WeakAurasSaved = {
 			["text1Enabled"] = false,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["desaturate"] = false,
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "BOTTOMRIGHT",
+			["useglowColor"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["text2Enabled"] = false,
+			["parent"] = "Survival Hunter",
 			["load"] = {
 				["use_petbattle"] = false,
 				["class"] = {
@@ -16276,7 +16768,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -16285,11 +16777,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_realm"] = false,
-				["pvptalent"] = {
+				["use_vehicleUi"] = false,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_vehicleUi"] = false,
 				["use_name"] = false,
 				["use_combat"] = true,
 				["race"] = {
@@ -16310,12 +16802,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local bounceDistance = math.sin(progress * math.pi)\n      return startX + (bounceDistance * deltaX), startY + (bounceDistance * deltaY)\n    end\n  ",
 					["duration_type"] = "seconds",
 					["alpha"] = 0,
-					["x"] = 0,
-					["y"] = 8,
 					["colorB"] = 1,
+					["y"] = 8,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["type"] = "custom",
-					["colorA"] = 1,
+					["x"] = 0,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["colorR"] = 1,
@@ -16328,12 +16820,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
 					["scalex"] = 1,
 					["alpha"] = 0,
-					["x"] = 4,
-					["y"] = 0,
 					["colorB"] = 1,
+					["y"] = 0,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["translateType"] = "shake",
-					["colorA"] = 1,
+					["x"] = 4,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["duration_type"] = "seconds",
@@ -16343,9 +16835,6 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["parent"] = "Survival Hunter",
-			["cooldownTextEnabled"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -16369,14 +16858,22 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Friz Quadrata TT",
+			["internalVersion"] = 9,
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1Containment"] = "INSIDE",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -16385,31 +16882,26 @@ WeakAurasSaved = {
 			},
 			["regionType"] = "icon",
 			["text2Font"] = "Friz Quadrata TT",
-			["desaturate"] = false,
-			["text2FontSize"] = 24,
 			["width"] = 36,
+			["text2FontSize"] = 24,
+			["text2Enabled"] = false,
 			["text1"] = " ",
 			["icon"] = true,
 			["frameStrata"] = 5,
-			["text2"] = "%p",
-			["auto"] = false,
 			["zoom"] = 0,
+			["auto"] = false,
+			["text2"] = "%p",
 			["id"] = "Serpent Sting Surv Glow",
-			["glow"] = true,
+			["text1FontFlags"] = "OUTLINE",
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["text1FontFlags"] = "OUTLINE",
+			["text1Containment"] = "INSIDE",
 			["uid"] = "n3F)bmeNltP",
 			["inverse"] = true,
-			["internalVersion"] = 9,
+			["cooldownTextEnabled"] = false,
 			["displayIcon"] = 1033905,
 			["cooldown"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["glow"] = true,
 		},
 		["Carve"] = {
 			["text2Point"] = "CENTER",
@@ -16438,7 +16930,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showAlways",
 						["subeventPrefix"] = "SPELL",
 						["use_showgcd"] = false,
-						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
+						["custom_hide"] = "timed",
 						["charges_operator"] = ">",
 						["type"] = "status",
 						["spellName"] = 187708,
@@ -16456,7 +16949,7 @@ WeakAurasSaved = {
 						["use_genericShowOn"] = true,
 						["names"] = {
 						},
-						["custom_hide"] = "timed",
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 						["showOn"] = "showAlways",
@@ -16483,11 +16976,19 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["stickyDuration"] = false,
+			["cooldownTextEnabled"] = true,
+			["text1Containment"] = "INSIDE",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "BOTTOMRIGHT",
+			["parent"] = "Survival Hunter",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["frameStrata"] = 3,
+			["useglowColor"] = false,
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -16547,10 +17048,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Friz Quadrata TT",
-			["parent"] = "Survival Hunter",
 			["text1Enabled"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -16651,13 +17149,11 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "Friz Quadrata TT",
+			["internalVersion"] = 9,
 			["glow"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -16666,26 +17162,31 @@ WeakAurasSaved = {
 			},
 			["regionType"] = "icon",
 			["selfPoint"] = "CENTER",
-			["cooldownTextEnabled"] = true,
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["frameStrata"] = 3,
 			["text1"] = " ",
 			["icon"] = true,
-			["text2"] = "%p",
 			["zoom"] = 0,
+			["text2"] = "%p",
 			["auto"] = true,
 			["text1FontFlags"] = "OUTLINE",
 			["id"] = "Carve",
-			["text1Containment"] = "INSIDE",
 			["alpha"] = 1,
-			["width"] = 36,
 			["text2Enabled"] = false,
+			["width"] = 36,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["uid"] = "a3kzBCSaJIS",
 			["inverse"] = true,
-			["internalVersion"] = 9,
+			["desaturate"] = false,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["desaturate"] = false,
+			["stickyDuration"] = false,
 		},
 		["Primal Rage"] = {
 			["text2Point"] = "CENTER",
@@ -16715,6 +17216,7 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["remaining"] = "320",
 						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
 						["use_remaining"] = false,
 						["subeventSuffix"] = "_CAST_START",
 						["unevent"] = "auto",
@@ -16761,12 +17263,20 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["internalVersion"] = 9,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "RIGHT",
+			["parent"] = "Hunter Utility",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["frameStrata"] = 3,
+			["useglowColor"] = false,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -16789,12 +17299,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
+				["use_name"] = false,
 				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -16808,10 +17321,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
+				["use_class"] = true,
 				["spec"] = {
 					["single"] = 1,
 					["multi"] = {
@@ -16824,12 +17334,12 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Containment"] = "OUTSIDE",
-			["parent"] = "Hunter Utility",
-			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 			},
+			["text1Containment"] = "OUTSIDE",
+			["text1Enabled"] = true,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Calibri",
 			["text1Color"] = {
 				1, -- [1]
@@ -16837,20 +17347,17 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
+			["text1FontFlags"] = "OUTLINE",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["color"] = {
-				0.70588235294118, -- [1]
-				0.70588235294118, -- [2]
-				0.70588235294118, -- [3]
-				1, -- [4]
-			},
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 3,
+			["text2FontSize"] = 24,
 			["animation"] = {
 				["start"] = {
 					["type"] = "preset",
@@ -16867,8 +17374,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["text2FontSize"] = 24,
-			["anchorFrameType"] = "SCREEN",
 			["text1"] = "Rage",
 			["icon"] = true,
 			["zoom"] = 0.1,
@@ -16876,16 +17381,21 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["glow"] = false,
 			["id"] = "Primal Rage",
-			["internalVersion"] = 9,
 			["text2Enabled"] = false,
+			["alpha"] = 1,
 			["width"] = 30,
 			["cooldownTextEnabled"] = true,
 			["uid"] = "VRr3fqGrvcw",
 			["inverse"] = true,
-			["text1Enabled"] = true,
+			["desaturate"] = false,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["alpha"] = 1,
+			["color"] = {
+				0.70588235294118, -- [1]
+				0.70588235294118, -- [2]
+				0.70588235294118, -- [3]
+				1, -- [4]
+			},
 		},
 		["Mongoose Fury Bar"] = {
 			["textFlags"] = "None",
@@ -17207,13 +17717,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = false,
 				["use_vehicleUi"] = false,
+				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_combat"] = true,
-				["use_spec"] = false,
 				["size"] = {
 					["multi"] = {
 					},
@@ -17255,6 +17765,7 @@ WeakAurasSaved = {
 						["debuffType"] = "HELPFUL",
 						["type"] = "status",
 						["subeventSuffix"] = "_CAST_START",
+						["duration"] = "1",
 						["event"] = "Cast",
 						["custom_hide"] = "timed",
 						["castType"] = "cast",
@@ -17434,13 +17945,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["use_vehicleUi"] = false,
+				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_combat"] = true,
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -17628,6 +18139,7 @@ WeakAurasSaved = {
 						["debuffType"] = "HELPFUL",
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["subeventSuffix"] = "_CAST_START",
 						["realSpellName"] = "Wildfire Bomb",
@@ -17712,6 +18224,7 @@ WeakAurasSaved = {
 						["charges_operator"] = "==",
 						["use_remaining"] = true,
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["type"] = "status",
 						["event"] = "Cooldown Progress (Spell)",
 						["remaining_operator"] = "<=",
@@ -17729,22 +18242,23 @@ WeakAurasSaved = {
 				}, -- [4]
 				{
 					["trigger"] = {
+						["use_genericShowOn"] = true,
+						["genericShowOn"] = "showAlways",
+						["use_unit"] = true,
+						["spellName"] = 259495,
 						["charges_operator"] = "==",
+						["type"] = "status",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Cooldown Progress (Spell)",
+						["duration"] = "1",
+						["realSpellName"] = "Wildfire Bomb",
+						["use_spellName"] = true,
 						["charges"] = "2",
 						["use_absorbMode"] = true,
 						["unevent"] = "auto",
 						["subeventPrefix"] = "SPELL",
 						["use_charges"] = true,
-						["genericShowOn"] = "showAlways",
 						["unit"] = "player",
-						["realSpellName"] = "Wildfire Bomb",
-						["use_spellName"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "status",
-						["event"] = "Cooldown Progress (Spell)",
-						["use_genericShowOn"] = true,
-						["use_unit"] = true,
-						["spellName"] = 259495,
 					},
 					["untrigger"] = {
 						["genericShowOn"] = "showAlways",
@@ -17757,12 +18271,20 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["cooldownTextEnabled"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "CENTER",
+			["parent"] = "Survival Hunter",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["frameStrata"] = 4,
+			["useglowColor"] = false,
 			["load"] = {
 				["use_petbattle"] = false,
 				["class"] = {
@@ -17820,51 +18342,6 @@ WeakAurasSaved = {
 				},
 				["use_name"] = false,
 			},
-			["animation"] = {
-				["start"] = {
-					["colorR"] = 1,
-					["type"] = "custom",
-					["scaley"] = 1,
-					["duration_type"] = "seconds",
-					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog = (progress * 3.5) % 1\n      local bounce = math.ceil(progress * 3.5)\n      local bounceDistance = math.sin(prog * math.pi) * (bounce / 4)\n    return startX + (bounceDistance * deltaX), startY + (bounceDistance * deltaY)\n  end\n  ",
-					["scalex"] = 1,
-					["alpha"] = 0,
-					["x"] = 0,
-					["y"] = 8,
-					["colorA"] = 1,
-					["colorG"] = 1,
-					["translateType"] = "bounceDecay",
-					["colorB"] = 1,
-					["rotate"] = 0,
-					["use_translate"] = true,
-					["duration"] = ".3",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["type"] = "none",
-					["scalex"] = 1,
-					["scaley"] = 1,
-					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
-					["duration"] = ".75",
-					["alpha"] = 0,
-					["colorA"] = 1,
-					["y"] = 0,
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["translateType"] = "shake",
-					["x"] = 3,
-					["rotate"] = 0,
-					["use_translate"] = false,
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
-			["parent"] = "Survival Hunter",
-			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -17885,13 +18362,53 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["text1Font"] = "Friz Quadrata TT",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["animation"] = {
+				["start"] = {
+					["colorR"] = 1,
+					["type"] = "custom",
+					["scaley"] = 1,
+					["duration_type"] = "seconds",
+					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog = (progress * 3.5) % 1\n      local bounce = math.ceil(progress * 3.5)\n      local bounceDistance = math.sin(prog * math.pi) * (bounce / 4)\n    return startX + (bounceDistance * deltaX), startY + (bounceDistance * deltaY)\n  end\n  ",
+					["scalex"] = 1,
+					["alpha"] = 0,
+					["colorA"] = 1,
+					["y"] = 8,
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["translateType"] = "bounceDecay",
+					["x"] = 0,
+					["rotate"] = 0,
+					["use_translate"] = true,
+					["duration"] = ".3",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["type"] = "none",
+					["scalex"] = 1,
+					["scaley"] = 1,
+					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
+					["duration"] = ".75",
+					["alpha"] = 0,
+					["colorB"] = 1,
+					["y"] = 0,
+					["x"] = 3,
+					["colorG"] = 1,
+					["translateType"] = "shake",
+					["colorA"] = 1,
+					["rotate"] = 0,
+					["use_translate"] = false,
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
 			},
+			["text1Enabled"] = true,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "Friz Quadrata TT",
+			["internalVersion"] = 9,
 			["text1Containment"] = "INSIDE",
 			["text2Color"] = {
 				1, -- [1]
@@ -17900,15 +18417,15 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["regionType"] = "icon",
-			["glow"] = true,
+			["width"] = 36,
+			["frameStrata"] = 4,
+			["text2FontSize"] = 24,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2FontSize"] = 24,
-			["width"] = 36,
 			["text1"] = "%p",
 			["icon"] = true,
 			["text2"] = "%p",
@@ -17916,16 +18433,21 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["text1FontFlags"] = "OUTLINE",
 			["id"] = "Wildfire Bomb Glow (Tactics)",
-			["cooldownTextEnabled"] = false,
 			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
 			["text2Enabled"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["uid"] = "MVE6v)saudO",
 			["inverse"] = true,
-			["text1Enabled"] = true,
+			["desaturate"] = false,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["internalVersion"] = 9,
+			["glow"] = true,
 		},
 		["Binding Shot CD"] = {
 			["text2Point"] = "CENTER",
@@ -17946,6 +18468,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["spellName"] = 109248,
 						["realSpellName"] = "Binding Shot",
@@ -17992,12 +18515,20 @@ WeakAurasSaved = {
 			["text1Enabled"] = true,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["cooldownTextEnabled"] = true,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "RIGHT",
+			["parent"] = "Hunter Utility",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["alpha"] = 1,
+			["desaturate"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -18038,8 +18569,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_name"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -18052,10 +18586,9 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_vehicleUi"] = false,
+			},
+			["conditions"] = {
 			},
 			["animation"] = {
 				["start"] = {
@@ -18073,13 +18606,11 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
-			["parent"] = "Hunter Utility",
-			["desaturate"] = false,
+			["glow"] = false,
 			["text2Containment"] = "INSIDE",
-			["conditions"] = {
-			},
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Calibri",
-			["frameStrata"] = 3,
+			["text2Font"] = "Friz Quadrata TT",
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -18095,22 +18626,22 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["regionType"] = "icon",
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2FontSize"] = 24,
-			["anchorFrameType"] = "SCREEN",
 			["text1"] = "Bind",
 			["color"] = {
 				0.70588235294118, -- [1]
@@ -18123,16 +18654,16 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["text1Containment"] = "OUTSIDE",
 			["id"] = "Binding Shot CD",
-			["cooldownTextEnabled"] = true,
 			["text2Enabled"] = false,
+			["frameStrata"] = 3,
 			["width"] = 30,
-			["text2Font"] = "Friz Quadrata TT",
+			["text1FontFlags"] = "OUTLINE",
 			["uid"] = "le2OZW4N)b(",
 			["inverse"] = true,
 			["internalVersion"] = 9,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["glow"] = false,
+			["useglowColor"] = false,
 		},
 		["Hunter CDs"] = {
 			["backdropColor"] = {
@@ -18187,8 +18718,6 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = 1,
 			},
-			["regionType"] = "group",
-			["internalVersion"] = 9,
 			["actions"] = {
 				["start"] = {
 				},
@@ -18197,12 +18726,14 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
+			["internalVersion"] = 9,
+			["borderEdge"] = "None",
 			["selfPoint"] = "BOTTOMLEFT",
 			["id"] = "Hunter CDs",
-			["borderOffset"] = 5,
+			["regionType"] = "group",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["borderEdge"] = "None",
+			["xOffset"] = -25,
 			["borderInset"] = 11,
 			["uid"] = "Qeh4BKfV6wE",
 			["animation"] = {
@@ -18269,7 +18800,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["xOffset"] = -25,
+			["borderOffset"] = 5,
 		},
 		["Wildfire Bomb Stacks"] = {
 			["outline"] = "OUTLINE",
@@ -18279,7 +18810,7 @@ WeakAurasSaved = {
 			["yOffset"] = -167,
 			["anchorPoint"] = "CENTER",
 			["xOffset"] = -78.999633789062,
-			["wordWrap"] = "WordWrap",
+			["selfPoint"] = "BOTTOM",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -18313,6 +18844,7 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showAlways",
 						["names"] = {
 						},
+						["duration"] = "1",
 						["debuffType"] = "HELPFUL",
 						["charges_operator"] = ">",
 						["type"] = "status",
@@ -18340,6 +18872,9 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
+			["wordWrap"] = "WordWrap",
+			["internalVersion"] = 9,
+			["justify"] = "CENTER",
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -18354,9 +18889,6 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["internalVersion"] = 9,
-			["justify"] = "CENTER",
-			["selfPoint"] = "BOTTOM",
 			["id"] = "Wildfire Bomb Stacks",
 			["color"] = {
 				1, -- [1]
@@ -18404,7 +18936,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -18413,11 +18945,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_realm"] = false,
-				["pvptalent"] = {
+				["use_vehicleUi"] = false,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_vehicleUi"] = false,
 				["race"] = {
 					["multi"] = {
 					},
@@ -18688,6 +19220,7 @@ WeakAurasSaved = {
 						["use_charges"] = true,
 						["genericShowOn"] = "showAlways",
 						["unit"] = "player",
+						["duration"] = "1",
 						["debuffType"] = "HELPFUL",
 						["charges_operator"] = ">",
 						["charges"] = "0",
@@ -18857,9 +19390,17 @@ WeakAurasSaved = {
 				},
 			},
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "BOTTOMRIGHT",
+			["alpha"] = 1,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 32,
+			["useglowColor"] = false,
 			["load"] = {
 				["use_class"] = true,
 				["spec"] = {
@@ -18877,13 +19418,13 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["anchorFrameType"] = "SCREEN",
+			["parent"] = "Hunter Utility",
 			["desaturate"] = false,
 			["text1Enabled"] = false,
 			["text2Containment"] = "INSIDE",
-			["selfPoint"] = "CENTER",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Friz Quadrata TT",
-			["parent"] = "Hunter Utility",
+			["selfPoint"] = "CENTER",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -18895,6 +19436,8 @@ WeakAurasSaved = {
 			["text1Containment"] = "INSIDE",
 			["cooldownTextEnabled"] = true,
 			["text2FontSize"] = 24,
+			["anchorFrameType"] = "SCREEN",
+			["text1"] = "%s",
 			["actions"] = {
 				["start"] = {
 				},
@@ -18903,8 +19446,6 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["text1"] = "%s",
-			["alpha"] = 1,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -18921,9 +19462,9 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["frameStrata"] = 1,
-			["width"] = 32,
 			["text2Enabled"] = false,
+			["width"] = 32,
+			["frameStrata"] = 1,
 			["uid"] = "kBHVUESYFax",
 			["inverse"] = false,
 			["text2Font"] = "Friz Quadrata TT",
@@ -18969,6 +19510,12 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "BOTTOMRIGHT",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
@@ -18990,6 +19537,56 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text1Containment"] = "INSIDE",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "Friz Quadrata TT",
+			["useglowColor"] = false,
+			["text2Font"] = "Friz Quadrata TT",
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["regionType"] = "icon",
+			["text1FontFlags"] = "OUTLINE",
+			["desaturate"] = false,
+			["text2FontSize"] = 24,
+			["text1Enabled"] = false,
+			["text1"] = "%s",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["text2"] = "%p",
+			["auto"] = true,
+			["zoom"] = 0,
+			["id"] = "Bease Cleave Sound",
+			["text2Point"] = "CENTER",
+			["alpha"] = 1,
+			["width"] = 36,
+			["text2Enabled"] = false,
+			["uid"] = "xaWW56sezxV",
+			["inverse"] = false,
 			["actions"] = {
 				["start"] = {
 				},
@@ -18998,46 +19595,6 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["text2Containment"] = "INSIDE",
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1Font"] = "Friz Quadrata TT",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-			},
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
-			["text1Containment"] = "INSIDE",
-			["cooldownTextEnabled"] = true,
-			["text2FontSize"] = 24,
-			["desaturate"] = false,
-			["text1"] = "%s",
-			["zoom"] = 0,
-			["anchorFrameType"] = "SCREEN",
-			["text2"] = "%p",
-			["auto"] = true,
-			["frameStrata"] = 1,
-			["id"] = "Bease Cleave Sound",
-			["text2Point"] = "CENTER",
-			["alpha"] = 1,
-			["width"] = 36,
-			["text2Enabled"] = false,
-			["uid"] = "xaWW56sezxV",
-			["inverse"] = false,
-			["text2Font"] = "Friz Quadrata TT",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -19058,21 +19615,13 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0, -- [4]
 			},
-			["text1Enabled"] = false,
+			["cooldownTextEnabled"] = true,
 		},
 		["Beast Cleave Timer"] = {
 			["textFlags"] = "OUTLINE",
@@ -19116,17 +19665,17 @@ WeakAurasSaved = {
 				["use_petbattle"] = false,
 				["use_spec"] = true,
 				["use_vehicleUi"] = false,
-				["class"] = {
-					["single"] = "HUNTER",
-					["multi"] = {
-					},
-				},
 				["spec"] = {
 					["single"] = 1,
 					["multi"] = {
 					},
 				},
 				["use_combat"] = true,
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -19279,7 +19828,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showAlways",
 						["use_unit"] = true,
 						["use_showgcd"] = true,
-						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
+						["custom_hide"] = "timed",
 						["charges_operator"] = ">",
 						["charges"] = "0",
 						["type"] = "status",
@@ -19297,7 +19847,7 @@ WeakAurasSaved = {
 						["names"] = {
 						},
 						["spellName"] = 186270,
-						["custom_hide"] = "timed",
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 						["showOn"] = "showAlways",
@@ -19381,11 +19931,12 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["type"] = "status",
+						["use_power"] = true,
 						["power"] = "75",
 						["power_operator"] = ">=",
-						["use_power"] = true,
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
-						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
 						["use_absorbMode"] = true,
 						["powertype"] = 2,
 						["subeventSuffix"] = "_CAST_START",
@@ -19393,7 +19944,7 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["unevent"] = "auto",
 						["use_powertype"] = true,
-						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
 					},
 					["untrigger"] = {
 					},
@@ -19407,6 +19958,7 @@ WeakAurasSaved = {
 						["spellName"] = 259489,
 						["charges_operator"] = "==",
 						["charges"] = "0",
+						["duration"] = "1",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
 						["subeventSuffix"] = "_CAST_START",
@@ -19435,6 +19987,7 @@ WeakAurasSaved = {
 						["spellName"] = 259495,
 						["charges_operator"] = "==",
 						["charges"] = "0",
+						["duration"] = "1",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
 						["subeventSuffix"] = "_CAST_START",
@@ -19457,18 +20010,19 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["type"] = "status",
+						["duration"] = "1",
 						["unevent"] = "auto",
-						["use_genericShowOn"] = true,
 						["use_absorbMode"] = true,
+						["use_genericShowOn"] = true,
 						["genericShowOn"] = "showAlways",
-						["unit"] = "player",
+						["use_unit"] = true,
 						["use_showgcd"] = true,
 						["use_spellName"] = true,
 						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
 						["event"] = "Cooldown Progress (Spell)",
 						["realSpellName"] = "Raptor Strike",
-						["use_unit"] = true,
+						["unit"] = "player",
 						["spellName"] = 186270,
 					},
 					["untrigger"] = {
@@ -19545,22 +20099,23 @@ WeakAurasSaved = {
 				}, -- [11]
 				{
 					["trigger"] = {
-						["charges_operator"] = "==",
-						["type"] = "status",
-						["unevent"] = "auto",
-						["subeventSuffix"] = "_CAST_START",
-						["subeventPrefix"] = "SPELL",
-						["use_charges"] = true,
-						["genericShowOn"] = "showAlways",
-						["use_unit"] = true,
-						["realSpellName"] = "Carve",
-						["use_spellName"] = true,
-						["charges"] = "0",
-						["event"] = "Cooldown Progress (Spell)",
-						["use_genericShowOn"] = true,
 						["use_absorbMode"] = true,
+						["genericShowOn"] = "showAlways",
 						["unit"] = "player",
 						["spellName"] = 187708,
+						["charges_operator"] = "==",
+						["charges"] = "0",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Cooldown Progress (Spell)",
+						["duration"] = "1",
+						["realSpellName"] = "Carve",
+						["use_spellName"] = true,
+						["type"] = "status",
+						["unevent"] = "auto",
+						["subeventPrefix"] = "SPELL",
+						["use_charges"] = true,
+						["use_unit"] = true,
+						["use_genericShowOn"] = true,
 					},
 					["untrigger"] = {
 						["genericShowOn"] = "showAlways",
@@ -19571,12 +20126,10 @@ WeakAurasSaved = {
 						["type"] = "aura",
 						["buffShowOn"] = "showOnActive",
 						["unevent"] = "auto",
-						["names"] = {
-							"Mongoose Fury", -- [1]
-						},
+						["subeventPrefix"] = "SPELL",
 						["use_absorbMode"] = true,
 						["countOperator"] = "==",
-						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
 						["subeventSuffix"] = "_CAST_START",
 						["useCount"] = true,
 						["count"] = "5",
@@ -19585,7 +20138,9 @@ WeakAurasSaved = {
 							190931, -- [1]
 						},
 						["event"] = "Health",
-						["unit"] = "player",
+						["names"] = {
+							"Mongoose Fury", -- [1]
+						},
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -19600,6 +20155,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["realSpellName"] = "Kill Command",
 						["use_spellName"] = true,
+						["duration"] = "1",
 						["use_unit"] = true,
 						["use_inverse"] = true,
 						["subeventPrefix"] = "SPELL",
@@ -19616,11 +20172,24 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "TOP",
+			["parent"] = "Survival Hunter",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["frameStrata"] = 5,
+			["useglowColor"] = false,
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -19680,10 +20249,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Friz Quadrata TT",
-			["parent"] = "Survival Hunter",
 			["text1Containment"] = "OUTSIDE",
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -19747,44 +20313,9 @@ WeakAurasSaved = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
-			["text1Enabled"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text2FontSize"] = 24,
-			["anchorFrameType"] = "SCREEN",
-			["text1"] = "Poison!",
-			["desaturate"] = false,
-			["text2"] = "%p",
-			["zoom"] = 0,
-			["auto"] = true,
-			["glow"] = true,
-			["id"] = "Raptor Strike Glow",
-			["internalVersion"] = 9,
-			["alpha"] = 1,
-			["width"] = 36,
-			["text2Enabled"] = false,
-			["uid"] = "epT45zsWzcX",
-			["inverse"] = true,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "Friz Quadrata TT",
 			["animation"] = {
 				["start"] = {
 					["scalex"] = 1,
@@ -19794,12 +20325,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local bounceDistance = math.sin(progress * math.pi)\n      return startX + (bounceDistance * deltaX), startY + (bounceDistance * deltaY)\n    end\n  ",
 					["duration_type"] = "seconds",
 					["alpha"] = 0,
-					["x"] = 0,
-					["y"] = 5,
 					["colorB"] = 1,
+					["y"] = 5,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["type"] = "custom",
-					["colorA"] = 1,
+					["x"] = 0,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["colorR"] = 1,
@@ -19813,9 +20344,42 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["text1FontFlags"] = "OUTLINE",
+			["regionType"] = "icon",
+			["text1Enabled"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["frameStrata"] = 5,
+			["text1"] = "Poison!",
+			["desaturate"] = false,
+			["zoom"] = 0,
+			["text2"] = "%p",
+			["auto"] = true,
+			["glow"] = true,
+			["id"] = "Raptor Strike Glow",
+			["alpha"] = 1,
+			["text2Enabled"] = false,
+			["width"] = 36,
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["uid"] = "epT45zsWzcX",
+			["inverse"] = true,
+			["cooldownTextEnabled"] = true,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["cooldownTextEnabled"] = true,
+			["internalVersion"] = 9,
 		},
 		["Intimidation CD"] = {
 			["text2Point"] = "CENTER",
@@ -19847,6 +20411,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["spellName"] = 19577,
 						["realSpellName"] = "Intimidation",
@@ -19869,12 +20434,20 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["glow"] = false,
+			["useglowColor"] = false,
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "RIGHT",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["alpha"] = 1,
+			["desaturate"] = false,
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -19933,12 +20506,12 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Calibri",
-			["parent"] = "Hunter Utility",
-			["text1Enabled"] = true,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 			},
+			["text1Enabled"] = true,
+			["text1Font"] = "Calibri",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -19946,18 +20519,18 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["text1Containment"] = "OUTSIDE",
-			["text1FontFlags"] = "OUTLINE",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["frameStrata"] = 3,
-			["xOffset"] = 0,
-			["text2FontSize"] = 24,
 			["width"] = 30,
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
+			["xOffset"] = 0,
 			["text1"] = "Int",
 			["animation"] = {
 				["start"] = {
@@ -19980,8 +20553,8 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["icon"] = true,
 			["id"] = "Intimidation CD",
-			["glow"] = false,
 			["text2Enabled"] = false,
+			["frameStrata"] = 3,
 			["anchorFrameType"] = "SCREEN",
 			["color"] = {
 				0.70588235294118, -- [1]
@@ -19994,7 +20567,7 @@ WeakAurasSaved = {
 			["internalVersion"] = 9,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["desaturate"] = false,
+			["parent"] = "Hunter Utility",
 		},
 		["Bestial Wrath Bar"] = {
 			["textFlags"] = "OUTLINE",
@@ -20045,7 +20618,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
+				["use_name"] = false,
 				["class"] = {
 					["single"] = "HUNTER",
 					["multi"] = {
@@ -20056,7 +20629,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["use_name"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -20070,10 +20646,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_spec"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
+				["use_class"] = true,
 				["spec"] = {
 					["single"] = 1,
 					["multi"] = {
@@ -20116,8 +20689,8 @@ WeakAurasSaved = {
 						["spellId"] = "19574",
 						["duration"] = "20",
 						["subeventPrefix"] = "SPELL",
-						["spellName"] = "Sanha",
 						["buffShowOn"] = "showOnActive",
+						["debuffType"] = "HELPFUL",
 						["custom_hide"] = "timed",
 						["type"] = "aura",
 						["subeventSuffix"] = "_CAST_SUCCESS",
@@ -20137,7 +20710,7 @@ WeakAurasSaved = {
 							"Bestial Wrath", -- [1]
 						},
 						["sourceUnit"] = "player",
-						["debuffType"] = "HELPFUL",
+						["spellName"] = "Sanha",
 					},
 					["untrigger"] = {
 					},
@@ -20256,6 +20829,7 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["use_showgcd"] = true,
 						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
 						["type"] = "status",
 						["use_unit"] = true,
 						["unevent"] = "auto",
@@ -20286,6 +20860,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["use_incombat"] = true,
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["unit"] = "player",
 						["use_unit"] = true,
@@ -20300,6 +20875,7 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["unit"] = "target",
 						["use_unit"] = true,
@@ -20316,6 +20892,7 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["subeventPrefix"] = "SPELL",
 						["realSpellName"] = "Piercing Shot",
@@ -20337,11 +20914,48 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["animation"] = {
+				["start"] = {
+					["colorR"] = 1,
+					["duration"] = ".3",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["use_translate"] = true,
+					["type"] = "custom",
+					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 5,
+					["scalex"] = 1,
+					["translateType"] = "shake",
+					["duration_type"] = "seconds",
+					["rotate"] = 0,
+					["preset"] = "fade",
+					["colorA"] = 1,
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["preset"] = "fade",
+				},
+			},
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "CENTER",
+			["useglowColor"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["alpha"] = 1,
+			["parent"] = "Hunter Rotation",
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -20379,8 +20993,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_name"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -20393,15 +21010,9 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_vehicleUi"] = false,
 			},
 			["text1Containment"] = "INSIDE",
-			["parent"] = "Hunter Rotation",
-			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -20444,14 +21055,12 @@ WeakAurasSaved = {
 					},
 				}, -- [2]
 			},
+			["cooldownTextEnabled"] = true,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Calibri",
+			["text1Enabled"] = false,
 			["internalVersion"] = 9,
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
 			["text2Color"] = {
@@ -20460,42 +21069,13 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["animation"] = {
-				["start"] = {
-					["colorR"] = 1,
-					["duration"] = ".3",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["use_translate"] = true,
-					["type"] = "custom",
-					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 5,
-					["scalex"] = 1,
-					["translateType"] = "shake",
-					["duration_type"] = "seconds",
-					["rotate"] = 0,
-					["preset"] = "fade",
-					["colorA"] = 1,
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["preset"] = "fade",
-				},
-			},
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["alpha"] = 1,
 			["text1"] = " ",
 			["glow"] = false,
-			["text2"] = "%p",
 			["zoom"] = 0,
+			["text2"] = "%p",
 			["auto"] = true,
 			["color"] = {
 				1, -- [1]
@@ -20504,16 +21084,21 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["id"] = "Piercing Shot",
-			["icon"] = true,
 			["text2Enabled"] = false,
-			["width"] = 36,
 			["frameStrata"] = 4,
+			["width"] = 36,
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["uid"] = "0gN6t5crUbh",
 			["inverse"] = true,
-			["text1Enabled"] = false,
+			["desaturate"] = false,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["cooldownTextEnabled"] = true,
+			["icon"] = true,
 		},
 		["Aimed Shot 2 Stacks"] = {
 			["textFlags"] = "None",
@@ -20576,7 +21161,6 @@ WeakAurasSaved = {
 					},
 				},
 				["use_name"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -20585,6 +21169,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_vehicleUi"] = false,
 				["race"] = {
 					["multi"] = {
 					},
@@ -20633,7 +21218,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showAlways",
 						["names"] = {
 						},
-						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
+						["custom_hide"] = "timed",
 						["charges_operator"] = "==",
 						["type"] = "status",
 						["spellName"] = 19434,
@@ -20650,7 +21236,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["use_genericShowOn"] = true,
 						["use_unit"] = true,
-						["custom_hide"] = "timed",
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 						["showOn"] = "showAlways",
@@ -20662,6 +21248,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["use_alwaystrue"] = true,
 						["subeventSuffix"] = "_CAST_START",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["unit"] = "player",
 						["subeventPrefix"] = "SPELL",
@@ -20844,8 +21431,11 @@ WeakAurasSaved = {
 				},
 				["use_name"] = false,
 				["use_realm"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -20854,10 +21444,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_vehicleUi"] = false,
 				["role"] = {
 					["multi"] = {
 					},
@@ -21303,11 +21890,6 @@ WeakAurasSaved = {
 			["constantFactor"] = "RADIUS",
 			["borderOffset"] = 1,
 			["id"] = "Hunter Utility",
-			["internalVersion"] = 9,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["stagger"] = 0,
-			["uid"] = "zh)BbteEkiG",
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -21322,15 +21904,20 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["backgroundInset"] = 0,
-			["conditions"] = {
-			},
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["internalVersion"] = 9,
+			["uid"] = "zh)BbteEkiG",
+			["stagger"] = 0,
 			["sortHybridTable"] = {
 				["Purge (Pet) CD"] = true,
 				["Pet"] = true,
 				["Master's Call CD"] = true,
 			},
+			["conditions"] = {
+			},
 			["background"] = "None",
+			["backgroundInset"] = 0,
 		},
 		["Murder of Crows"] = {
 			["glow"] = false,
@@ -21358,6 +21945,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["spellName"] = 131894,
 						["realSpellName"] = "A Murder of Crows",
@@ -21383,9 +21971,16 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "BOTTOMRIGHT",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
+			["anchorFrameType"] = "SCREEN",
 			["load"] = {
 				["use_petbattle"] = false,
 				["class"] = {
@@ -21418,7 +22013,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -21427,11 +22022,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_realm"] = false,
-				["pvptalent"] = {
+				["use_vehicleUi"] = false,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_vehicleUi"] = false,
 				["race"] = {
 					["multi"] = {
 					},
@@ -21452,12 +22047,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local bounceDistance = math.sin(progress * math.pi)\n      return startX + (bounceDistance * deltaX), startY + (bounceDistance * deltaY)\n    end\n  ",
 					["duration_type"] = "seconds",
 					["alpha"] = 0,
-					["x"] = 0,
-					["y"] = 10,
 					["colorB"] = 1,
+					["y"] = 10,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["translateType"] = "bounce",
-					["colorA"] = 1,
+					["x"] = 0,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["colorR"] = 1,
@@ -21471,36 +22066,42 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["text2Point"] = "CENTER",
-			["text2Containment"] = "INSIDE",
-			["text1Enabled"] = false,
-			["text1Font"] = "Friz Quadrata TT",
-			["cooldownTextEnabled"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
 			["internalVersion"] = 9,
+			["text1Enabled"] = false,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "Friz Quadrata TT",
+			["text2Point"] = "CENTER",
+			["parent"] = "Survival Hunter",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["regionType"] = "icon",
+			["cooldownTextEnabled"] = true,
+			["text1FontFlags"] = "OUTLINE",
 			["text2FontSize"] = 24,
-			["parent"] = "Survival Hunter",
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1"] = " ",
-			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 1,
-			["zoom"] = 0,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text2"] = "%p",
 			["auto"] = true,
 			["icon"] = true,
 			["id"] = "Murder of Crows",
-			["text2"] = "%p",
+			["zoom"] = 0,
 			["frameStrata"] = 4,
 			["width"] = 36,
 			["text2Enabled"] = false,
@@ -21522,13 +22123,8 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["desaturate"] = false,
+			["useglowColor"] = false,
 		},
 		["Arcane Shot"] = {
 			["text2Point"] = "CENTER",
@@ -21554,7 +22150,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showOnReady",
 						["subeventPrefix"] = "SPELL",
 						["use_showgcd"] = true,
-						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
+						["custom_hide"] = "timed",
 						["charges_operator"] = ">",
 						["charges"] = "0",
 						["subeventSuffix"] = "_CAST_START",
@@ -21572,7 +22169,7 @@ WeakAurasSaved = {
 						["use_genericShowOn"] = true,
 						["names"] = {
 						},
-						["custom_hide"] = "timed",
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 						["showOn"] = "showOnReady",
@@ -21599,11 +22196,19 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
+			["icon"] = true,
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "BOTTOMRIGHT",
+			["useglowColor"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["alpha"] = 1,
+			["parent"] = "Hunter Rotation",
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -21641,7 +22246,6 @@ WeakAurasSaved = {
 					},
 				},
 				["use_name"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -21650,6 +22254,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_vehicleUi"] = false,
 				["difficulty"] = {
 					["multi"] = {
 					},
@@ -21662,19 +22267,24 @@ WeakAurasSaved = {
 				},
 			},
 			["text1Enabled"] = false,
-			["parent"] = "Hunter Rotation",
-			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Friz Quadrata TT",
+			["text2Font"] = "Friz Quadrata TT",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1FontFlags"] = "OUTLINE",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -21683,31 +22293,26 @@ WeakAurasSaved = {
 			},
 			["regionType"] = "icon",
 			["text1Containment"] = "INSIDE",
-			["icon"] = true,
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["alpha"] = 1,
 			["text1"] = " ",
 			["selfPoint"] = "CENTER",
-			["text2"] = "%p",
 			["zoom"] = 0,
+			["text2"] = "%p",
 			["auto"] = false,
 			["frameStrata"] = 4,
 			["id"] = "Arcane Shot",
-			["cooldownTextEnabled"] = false,
+			["glow"] = false,
 			["text2Enabled"] = false,
 			["width"] = 36,
-			["glow"] = false,
+			["text1FontFlags"] = "OUTLINE",
 			["uid"] = "lzkSLAkZa3Q",
 			["inverse"] = true,
-			["text2Font"] = "Friz Quadrata TT",
+			["desaturate"] = false,
 			["displayIcon"] = 132218,
 			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["cooldownTextEnabled"] = false,
 		},
 		["Focus K"] = {
 			["textFlags"] = "None",
@@ -21833,6 +22438,7 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["type"] = "status",
+						["duration"] = "1",
 						["unevent"] = "auto",
 						["use_unit"] = true,
 						["use_absorbMode"] = true,
@@ -21857,6 +22463,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["use_incombat"] = true,
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["unit"] = "player",
 						["use_unit"] = true,
@@ -21871,6 +22478,7 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["unit"] = "target",
 						["subeventPrefix"] = "SPELL",
@@ -22146,25 +22754,25 @@ WeakAurasSaved = {
 						["use_inverse"] = true,
 						["unit"] = "player",
 						["debuffType"] = "HELPFUL",
-						["ownOnly"] = true,
+						["custom_hide"] = "timed",
 						["type"] = "aura",
-						["names"] = {
-							"Trick Shots", -- [1]
-						},
-						["subeventSuffix"] = "_CAST_START",
-						["use_specific_unit"] = false,
-						["subeventPrefix"] = "SPELL",
-						["event"] = "Cooldown Progress (Spell)",
+						["buffShowOn"] = "showOnActive",
 						["unevent"] = "auto",
+						["spellName"] = 3674,
+						["ownOnly"] = true,
+						["event"] = "Cooldown Progress (Spell)",
+						["use_unit"] = true,
 						["use_spellName"] = true,
 						["spellIds"] = {
 							257621, -- [1]
 						},
-						["use_unit"] = true,
+						["subeventSuffix"] = "_CAST_START",
 						["remOperator"] = ">=",
-						["spellName"] = 3674,
-						["buffShowOn"] = "showOnActive",
-						["custom_hide"] = "timed",
+						["subeventPrefix"] = "SPELL",
+						["use_specific_unit"] = false,
+						["names"] = {
+							"Trick Shots", -- [1]
+						},
 					},
 					["untrigger"] = {
 						["spellName"] = 3674,
@@ -22175,12 +22783,20 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
-			["stickyDuration"] = false,
+			["frameStrata"] = 4,
+			["useglowColor"] = false,
+			["text1Containment"] = "INSIDE",
 			["progressPrecision"] = 0,
 			["text1Point"] = "CENTER",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["alpha"] = 1,
+			["stickyDuration"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -22237,28 +22853,30 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Friz Quadrata TT",
-			["parent"] = "Hunter Rotation",
-			["icon"] = true,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 			},
+			["icon"] = true,
+			["text1Enabled"] = true,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				0, -- [1]
 				0.70588235294118, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
-			["glow"] = false,
-			["text1FontFlags"] = "OUTLINE",
+			["text1Font"] = "Friz Quadrata TT",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["text1Containment"] = "INSIDE",
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
 			["animation"] = {
 				["start"] = {
 					["translateType"] = "bounce",
@@ -22290,8 +22908,6 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
-			["text2FontSize"] = 24,
-			["anchorFrameType"] = "SCREEN",
 			["text1"] = "%p",
 			["desaturate"] = false,
 			["zoom"] = 0,
@@ -22299,21 +22915,21 @@ WeakAurasSaved = {
 			["auto"] = false,
 			["internalVersion"] = 9,
 			["id"] = "Trick Shots",
-			["frameStrata"] = 4,
-			["text2Enabled"] = false,
-			["width"] = 36,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["text2Enabled"] = false,
+			["width"] = 36,
+			["glow"] = false,
 			["uid"] = "DZbyeGSuHFd",
 			["inverse"] = false,
-			["text1Enabled"] = true,
+			["cooldownTextEnabled"] = false,
 			["displayIcon"] = 461846,
 			["cooldown"] = true,
-			["cooldownTextEnabled"] = false,
+			["parent"] = "Hunter Rotation",
 		},
 		["Barbed Shot Glow"] = {
 			["text2Point"] = "TOP",
@@ -22342,7 +22958,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showAlways",
 						["unit"] = "player",
 						["use_showgcd"] = true,
-						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
+						["custom_hide"] = "timed",
 						["charges_operator"] = ">",
 						["type"] = "status",
 						["use_unit"] = true,
@@ -22360,7 +22977,7 @@ WeakAurasSaved = {
 						["names"] = {
 						},
 						["subeventPrefix"] = "SPELL",
-						["custom_hide"] = "timed",
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 						["showOn"] = "showAlways",
@@ -22370,6 +22987,7 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["type"] = "status",
+						["duration"] = "1",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
 						["use_genericShowOn"] = true,
@@ -22391,22 +23009,23 @@ WeakAurasSaved = {
 				}, -- [2]
 				{
 					["trigger"] = {
-						["charges_operator"] = "==",
-						["charges"] = "2",
-						["type"] = "status",
-						["unevent"] = "auto",
-						["use_showOn"] = true,
-						["use_charges"] = true,
-						["genericShowOn"] = "showAlways",
-						["unit"] = "player",
-						["realSpellName"] = "Barbed Shot",
-						["use_spellName"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["use_unit"] = true,
-						["event"] = "Cooldown Progress (Spell)",
 						["use_genericShowOn"] = true,
+						["genericShowOn"] = "showAlways",
 						["subeventPrefix"] = "SPELL",
 						["spellName"] = 217200,
+						["charges_operator"] = "==",
+						["type"] = "status",
+						["subeventSuffix"] = "_CAST_START",
+						["use_showOn"] = true,
+						["event"] = "Cooldown Progress (Spell)",
+						["realSpellName"] = "Barbed Shot",
+						["use_spellName"] = true,
+						["duration"] = "1",
+						["charges"] = "2",
+						["unevent"] = "auto",
+						["use_charges"] = true,
+						["unit"] = "player",
+						["use_unit"] = true,
 					},
 					["untrigger"] = {
 						["showOn"] = "showAlways",
@@ -22446,6 +23065,7 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showOnCooldown",
 						["unit"] = "player",
 						["remaining"] = "1.5",
+						["duration"] = "1",
 						["use_trackcharge"] = false,
 						["spellName"] = 217200,
 						["charges_operator"] = "==",
@@ -22495,10 +23115,11 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showOnCooldown",
 						["use_unit"] = true,
 						["remaining"] = "2",
+						["duration"] = "1",
 						["use_trackcharge"] = false,
 						["spellName"] = 217200,
 						["charges_operator"] = "==",
-						["trackcharge"] = "1",
+						["type"] = "status",
 						["subeventSuffix"] = "_CAST_START",
 						["unevent"] = "auto",
 						["unit"] = "player",
@@ -22512,7 +23133,7 @@ WeakAurasSaved = {
 						["use_absorbMode"] = true,
 						["subeventPrefix"] = "SPELL",
 						["use_genericShowOn"] = true,
-						["type"] = "status",
+						["trackcharge"] = "1",
 					},
 					["untrigger"] = {
 					},
@@ -22524,11 +23145,47 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["animation"] = {
+				["start"] = {
+					["translateType"] = "shake",
+					["scalex"] = 1,
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["use_translate"] = true,
+					["type"] = "custom",
+					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 10,
+					["duration_type"] = "seconds",
+					["duration"] = ".3",
+					["colorR"] = 1,
+					["rotate"] = 0,
+					["colorA"] = 1,
+					["preset"] = "grow",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "TOPRIGHT",
+			["parent"] = "Hunter Rotation",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["text2Enabled"] = true,
+			["useglowColor"] = false,
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -22586,10 +23243,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Font"] = "Friz Quadrata TT",
-			["parent"] = "Hunter Rotation",
 			["text1Enabled"] = false,
-			["text2Containment"] = "OUTSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -22717,69 +23371,44 @@ WeakAurasSaved = {
 				0, -- [3]
 				1, -- [4]
 			},
+			["text2Containment"] = "OUTSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "Friz Quadrata TT",
+			["internalVersion"] = 9,
 			["text1Containment"] = "INSIDE",
+			["text1FontFlags"] = "OUTLINE",
+			["regionType"] = "icon",
+			["cooldownTextEnabled"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 20,
+			["text2Enabled"] = true,
+			["text1"] = "%s",
+			["frameStrata"] = 4,
+			["zoom"] = 0.1,
+			["text2"] = "NO GCD",
+			["auto"] = true,
+			["glow"] = false,
+			["id"] = "Barbed Shot Glow",
+			["icon"] = true,
+			["alpha"] = 1,
+			["width"] = 36,
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0, -- [4]
 			},
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
-			["cooldownTextEnabled"] = true,
-			["animation"] = {
-				["start"] = {
-					["translateType"] = "shake",
-					["scalex"] = 1,
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["use_translate"] = true,
-					["type"] = "custom",
-					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 10,
-					["duration_type"] = "seconds",
-					["duration"] = ".3",
-					["colorR"] = 1,
-					["rotate"] = 0,
-					["colorA"] = 1,
-					["preset"] = "grow",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
-			["text2FontSize"] = 20,
-			["anchorFrameType"] = "SCREEN",
-			["text1"] = "%s",
-			["frameStrata"] = 4,
-			["text2"] = "NO GCD",
-			["zoom"] = 0.1,
-			["auto"] = true,
-			["glow"] = false,
-			["id"] = "Barbed Shot Glow",
+			["uid"] = "IXTkUPdFJGy",
+			["inverse"] = true,
+			["desaturate"] = false,
+			["displayIcon"] = "236186",
+			["cooldown"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["alpha"] = 1,
-			["width"] = 36,
-			["icon"] = true,
-			["uid"] = "IXTkUPdFJGy",
-			["inverse"] = true,
-			["internalVersion"] = 9,
-			["displayIcon"] = "236186",
-			["cooldown"] = true,
-			["desaturate"] = false,
 		},
 		["Serpent Sting NA Surv"] = {
 			["text2Point"] = "CENTER",
@@ -22838,6 +23467,7 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["use_genericShowOn"] = true,
 						["genericShowOn"] = "showAlways",
 						["unit"] = "player",
@@ -22863,6 +23493,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["realSpellName"] = "Serpent Sting",
 						["use_spellName"] = true,
+						["duration"] = "1",
 						["use_unit"] = true,
 						["subeventPrefix"] = "SPELL",
 						["subeventSuffix"] = "_CAST_START",
@@ -22878,6 +23509,7 @@ WeakAurasSaved = {
 						["use_absorbMode"] = true,
 						["event"] = "Unit Characteristics",
 						["unit"] = "target",
+						["duration"] = "1",
 						["subeventPrefix"] = "SPELL",
 						["subeventSuffix"] = "_CAST_START",
 						["use_attackable"] = true,
@@ -22894,11 +23526,19 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["frameStrata"] = 5,
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "BOTTOMRIGHT",
+			["useglowColor"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["text2Enabled"] = false,
+			["parent"] = "Survival Hunter",
 			["load"] = {
 				["use_petbattle"] = false,
 				["class"] = {
@@ -22929,7 +23569,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -22938,11 +23578,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_realm"] = false,
-				["pvptalent"] = {
+				["use_vehicleUi"] = false,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_vehicleUi"] = false,
 				["use_name"] = false,
 				["use_combat"] = true,
 				["race"] = {
@@ -22955,9 +23595,6 @@ WeakAurasSaved = {
 				},
 			},
 			["text1Containment"] = "INSIDE",
-			["parent"] = "Survival Hunter",
-			["desaturate"] = true,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -23002,14 +23639,17 @@ WeakAurasSaved = {
 					},
 				}, -- [2]
 			},
+			["glow"] = true,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Friz Quadrata TT",
+			["text1Enabled"] = false,
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 9,
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -23044,12 +23684,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local bounceDistance = math.sin(progress * math.pi)\n      return startX + (bounceDistance * deltaX), startY + (bounceDistance * deltaY)\n    end\n  ",
 					["scaley"] = 1,
 					["alpha"] = 0,
-					["x"] = 0,
-					["y"] = 5,
 					["colorB"] = 1,
+					["y"] = 5,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["type"] = "none",
-					["colorA"] = 1,
+					["x"] = 0,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["duration_type"] = "seconds",
@@ -23059,26 +23699,26 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["frameStrata"] = 5,
-			["text2FontSize"] = 24,
 			["width"] = 36,
+			["text2FontSize"] = 24,
+			["text2Enabled"] = false,
 			["text1"] = " ",
 			["icon"] = true,
-			["text2"] = "%p",
 			["zoom"] = 0,
+			["text2"] = "%p",
 			["auto"] = true,
 			["text1FontFlags"] = "OUTLINE",
 			["id"] = "Serpent Sting NA Surv",
-			["cooldownTextEnabled"] = true,
+			["xOffset"] = -50,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["xOffset"] = -50,
+			["internalVersion"] = 9,
 			["uid"] = "Gh2Mxl8nIHJ",
 			["inverse"] = false,
-			["text1Enabled"] = false,
+			["desaturate"] = true,
 			["displayIcon"] = 1376042,
 			["cooldown"] = true,
-			["glow"] = true,
+			["cooldownTextEnabled"] = true,
 		},
 		["Turtle CD"] = {
 			["text2Point"] = "CENTER",
@@ -23116,14 +23756,15 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["type"] = "status",
+						["custom_hide"] = "timed",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
-						["use_genericShowOn"] = true,
+						["duration"] = "1",
 						["genericShowOn"] = "showOnCooldown",
 						["unit"] = "player",
 						["realSpellName"] = "Aspect of the Turtle",
 						["use_spellName"] = true,
-						["custom_hide"] = "timed",
+						["use_genericShowOn"] = true,
 						["subeventSuffix"] = "_CAST_START",
 						["use_unit"] = true,
 						["event"] = "Cooldown Progress (Spell)",
@@ -23154,12 +23795,20 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
+			["alpha"] = 1,
+			["useglowColor"] = false,
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "RIGHT",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["frameStrata"] = 3,
+			["parent"] = "Hunter Utility",
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -23201,46 +23850,35 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_petbattle"] = false,
 				["use_combat"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_vehicleUi"] = false,
 				["role"] = {
 					["multi"] = {
 					},
 				},
 			},
-			["text1Font"] = "Calibri",
-			["parent"] = "Hunter Utility",
-			["internalVersion"] = 9,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 			},
+			["internalVersion"] = 9,
+			["cooldownTextEnabled"] = true,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-					["do_sound"] = false,
-					["glow_frame"] = "WeakAuras:Imune",
-					["glow_action"] = "show",
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["text1Font"] = "Calibri",
 			["color"] = {
 				0.70588235294118, -- [1]
 				0.70588235294118, -- [2]
@@ -23249,10 +23887,10 @@ WeakAurasSaved = {
 			},
 			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["text1Containment"] = "OUTSIDE",
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 3,
+			["text2FontSize"] = 24,
+			["text1Containment"] = "OUTSIDE",
 			["text1"] = "Tur",
 			["text2Color"] = {
 				1, -- [1]
@@ -23265,16 +23903,27 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["glow"] = false,
 			["id"] = "Turtle CD",
-			["alpha"] = 1,
+			["text2Font"] = "Friz Quadrata TT",
 			["text2Enabled"] = false,
 			["width"] = 30,
-			["text2Font"] = "Friz Quadrata TT",
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["do_sound"] = false,
+					["glow_frame"] = "WeakAuras:Imune",
+					["glow_action"] = "show",
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["uid"] = "DcLMx7Gk8fP",
 			["inverse"] = true,
-			["cooldownTextEnabled"] = true,
+			["desaturate"] = false,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["desaturate"] = false,
+			["selfPoint"] = "CENTER",
 		},
 		["Kill Command Glow v2"] = {
 			["text2Point"] = "CENTER",
@@ -23288,24 +23937,25 @@ WeakAurasSaved = {
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["spellName"] = 34026,
-						["type"] = "status",
-						["custom_hide"] = "timed",
-						["unevent"] = "auto",
-						["subeventSuffix"] = "_CAST_START",
 						["use_genericShowOn"] = true,
 						["genericShowOn"] = "showOnReady",
-						["subeventPrefix"] = "SPELL",
+						["names"] = {
+						},
+						["debuffType"] = "HELPFUL",
+						["type"] = "status",
+						["subeventSuffix"] = "_CAST_START",
+						["duration"] = "1",
+						["event"] = "Action Usable",
+						["spellName"] = 34026,
 						["realSpellName"] = "Kill Command",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
-						["event"] = "Action Usable",
+						["custom_hide"] = "timed",
+						["unevent"] = "auto",
+						["subeventPrefix"] = "SPELL",
 						["unit"] = "player",
 						["use_unit"] = true,
-						["names"] = {
-						},
-						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 						["genericShowOn"] = "showOnReady",
@@ -23315,18 +23965,19 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["type"] = "status",
+						["duration"] = "1",
 						["unevent"] = "auto",
-						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
 						["use_genericShowOn"] = true,
 						["genericShowOn"] = "showAlways",
-						["unit"] = "player",
-						["use_showgcd"] = true,
+						["subeventPrefix"] = "SPELL",
+						["realSpellName"] = "Kill Command",
 						["use_spellName"] = true,
 						["use_absorbMode"] = true,
 						["subeventSuffix"] = "_CAST_START",
 						["use_unit"] = true,
 						["event"] = "Cooldown Progress (Spell)",
-						["realSpellName"] = "Kill Command",
+						["use_showgcd"] = true,
 						["spellName"] = 34026,
 					},
 					["untrigger"] = {
@@ -23380,12 +24031,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
 					["scaley"] = 1,
 					["alpha"] = 0,
-					["colorA"] = 1,
-					["y"] = 0,
 					["colorB"] = 1,
+					["y"] = 0,
+					["x"] = 7,
 					["colorG"] = 1,
 					["type"] = "custom",
-					["x"] = 7,
+					["colorA"] = 1,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["duration_type"] = "seconds",
@@ -23399,11 +24050,28 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "WeakAuras.ScanEvents(\"BEAST_CLEAVE_GLOW_K\",false)",
+					["do_custom"] = true,
+				},
+			},
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "BOTTOMRIGHT",
+			["useglowColor"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["frameStrata"] = 4,
+			["parent"] = "Hunter Rotation",
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -23461,9 +24129,6 @@ WeakAurasSaved = {
 				},
 			},
 			["internalVersion"] = 9,
-			["parent"] = "Hunter Rotation",
-			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -23491,14 +24156,22 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["selfPoint"] = "CENTER",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Friz Quadrata TT",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1Containment"] = "INSIDE",
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -23507,40 +24180,26 @@ WeakAurasSaved = {
 			},
 			["regionType"] = "icon",
 			["xOffset"] = -295,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "WeakAuras.ScanEvents(\"BEAST_CLEAVE_GLOW_K\",false)",
-					["do_custom"] = true,
-				},
-			},
-			["text2FontSize"] = 24,
 			["width"] = 36,
+			["text2FontSize"] = 24,
+			["frameStrata"] = 4,
 			["text1"] = "%s",
 			["text1FontFlags"] = "OUTLINE",
-			["zoom"] = 0,
 			["text2"] = "%p",
+			["zoom"] = 0,
 			["auto"] = true,
 			["glow"] = true,
 			["id"] = "Kill Command Glow v2",
-			["text2Font"] = "Friz Quadrata TT",
 			["text2Enabled"] = false,
-			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["text1Containment"] = "INSIDE",
 			["uid"] = "Kk5knYAX(vO",
 			["inverse"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["desaturate"] = false,
 			["displayIcon"] = 132176,
 			["cooldown"] = true,
-			["selfPoint"] = "CENTER",
+			["text2Font"] = "Friz Quadrata TT",
 		},
 		["Bursting Shot CD"] = {
 			["text2Point"] = "CENTER",
@@ -23575,6 +24234,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["subeventPrefix"] = "SPELL",
 						["realSpellName"] = "Bursting Shot",
@@ -23597,12 +24257,20 @@ WeakAurasSaved = {
 			["text1Enabled"] = true,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
+			["frameStrata"] = 3,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "RIGHT",
+			["parent"] = "Hunter Utility",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
-			["alpha"] = 1,
+			["useglowColor"] = false,
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = true,
@@ -23660,6 +24328,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["conditions"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "preset",
@@ -23676,25 +24346,28 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
-			["parent"] = "Hunter Utility",
-			["desaturate"] = false,
+			["internalVersion"] = 9,
 			["text2Containment"] = "INSIDE",
-			["conditions"] = {
-			},
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Calibri",
-			["icon"] = true,
-			["text1FontFlags"] = "OUTLINE",
+			["color"] = {
+				0.70588235294118, -- [1]
+				0.70588235294118, -- [2]
+				0.70588235294118, -- [3]
+				1, -- [4]
+			},
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["text2Font"] = "Friz Quadrata TT",
-			["glow"] = false,
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["text2FontSize"] = 24,
+			["glow"] = false,
 			["text1"] = "Bur",
 			["text1Color"] = {
 				1, -- [1]
@@ -23702,26 +24375,21 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["cooldownTextEnabled"] = true,
 			["zoom"] = 0.1,
-			["auto"] = true,
 			["text2"] = "%p",
+			["auto"] = true,
+			["cooldownTextEnabled"] = true,
 			["id"] = "Bursting Shot CD",
-			["frameStrata"] = 3,
+			["text1Containment"] = "OUTSIDE",
 			["text2Enabled"] = false,
 			["width"] = 30,
-			["text1Containment"] = "OUTSIDE",
+			["icon"] = true,
 			["uid"] = "Wtqdl6nmnPB",
 			["inverse"] = true,
-			["internalVersion"] = 9,
+			["desaturate"] = false,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["color"] = {
-				0.70588235294118, -- [1]
-				0.70588235294118, -- [2]
-				0.70588235294118, -- [3]
-				1, -- [4]
-			},
+			["text2Font"] = "Friz Quadrata TT",
 		},
 		["Raptor Strike / Mongoose Bite"] = {
 			["text2Point"] = "CENTER",
@@ -23739,7 +24407,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showAlways",
 						["unit"] = "player",
 						["use_showgcd"] = true,
-						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
+						["custom_hide"] = "timed",
 						["charges_operator"] = ">",
 						["type"] = "status",
 						["subeventSuffix"] = "_CAST_START",
@@ -23757,7 +24426,7 @@ WeakAurasSaved = {
 						["spellName"] = 186270,
 						["use_genericShowOn"] = true,
 						["use_unit"] = true,
-						["custom_hide"] = "timed",
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 						["showOn"] = "showAlways",
@@ -23791,11 +24460,19 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
-			["stickyDuration"] = false,
+			["desaturate"] = false,
+			["text1Containment"] = "INSIDE",
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "CENTER",
+			["useglowColor"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["alpha"] = 1,
+			["parent"] = "Survival Hunter",
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -23861,9 +24538,6 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["parent"] = "Survival Hunter",
-			["cooldownTextEnabled"] = true,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -23925,45 +24599,10 @@ WeakAurasSaved = {
 					},
 				}, -- [3]
 			},
+			["internalVersion"] = 9,
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Friz Quadrata TT",
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
-			["text1FontFlags"] = "OUTLINE",
-			["regionType"] = "icon",
-			["text1Enabled"] = true,
-			["desaturate"] = false,
-			["text2FontSize"] = 24,
-			["anchorFrameType"] = "SCREEN",
-			["text1"] = " 5!",
-			["frameStrata"] = 3,
-			["zoom"] = 0,
-			["text2"] = "%p",
-			["auto"] = true,
-			["glow"] = false,
-			["id"] = "Raptor Strike / Mongoose Bite",
-			["text1Containment"] = "INSIDE",
-			["text2Enabled"] = false,
-			["width"] = 36,
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["uid"] = "hFynexbW3Bz",
-			["inverse"] = true,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -23978,9 +24617,47 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0, -- [4]
+			},
+			["text1FontFlags"] = "OUTLINE",
+			["regionType"] = "icon",
+			["text1Enabled"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["alpha"] = 1,
+			["text1"] = " 5!",
+			["frameStrata"] = 3,
+			["text2"] = "%p",
+			["zoom"] = 0,
+			["auto"] = true,
+			["glow"] = false,
+			["id"] = "Raptor Strike / Mongoose Bite",
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text2Enabled"] = false,
+			["width"] = 36,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["uid"] = "hFynexbW3Bz",
+			["inverse"] = true,
+			["cooldownTextEnabled"] = true,
 			["displayIcon"] = "",
 			["cooldown"] = true,
-			["internalVersion"] = 9,
+			["stickyDuration"] = false,
 		},
 		["Intimidation Stun"] = {
 			["text2Point"] = "CENTER",
@@ -24032,9 +24709,17 @@ WeakAurasSaved = {
 				},
 			},
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "BOTTOMRIGHT",
+			["alpha"] = 1,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
+			["useglowColor"] = false,
 			["load"] = {
 				["use_class"] = true,
 				["use_spec"] = false,
@@ -24055,13 +24740,13 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["anchorFrameType"] = "SCREEN",
+			["parent"] = "Hunter Utility",
 			["desaturate"] = false,
 			["text1Enabled"] = false,
 			["text2Containment"] = "INSIDE",
-			["selfPoint"] = "CENTER",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Friz Quadrata TT",
-			["parent"] = "Hunter Utility",
+			["selfPoint"] = "CENTER",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -24073,6 +24758,8 @@ WeakAurasSaved = {
 			["text1Containment"] = "INSIDE",
 			["cooldownTextEnabled"] = true,
 			["text2FontSize"] = 24,
+			["anchorFrameType"] = "SCREEN",
+			["text1"] = "%s",
 			["actions"] = {
 				["start"] = {
 				},
@@ -24081,8 +24768,6 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["text1"] = "%s",
-			["alpha"] = 1,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -24099,9 +24784,9 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["frameStrata"] = 1,
-			["width"] = 30,
 			["text2Enabled"] = false,
+			["width"] = 30,
+			["frameStrata"] = 1,
 			["uid"] = "1Y8)p54F77(",
 			["inverse"] = false,
 			["text2Font"] = "Friz Quadrata TT",
@@ -24166,12 +24851,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog = (progress * 3.5) % 1\n      local bounce = math.ceil(progress * 3.5)\n      local bounceDistance = math.sin(prog * math.pi) * (bounce / 4)\n    return startX + (bounceDistance * deltaX), startY + (bounceDistance * deltaY)\n  end\n  ",
 					["duration_type"] = "seconds",
 					["alpha"] = 0,
-					["x"] = 0,
-					["y"] = 8,
 					["colorB"] = 1,
+					["y"] = 8,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["type"] = "custom",
-					["colorA"] = 1,
+					["x"] = 0,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["colorR"] = 1,
@@ -24186,15 +24871,15 @@ WeakAurasSaved = {
 				},
 			},
 			["internalVersion"] = 9,
-			["anchorFrameType"] = "SCREEN",
+			["width"] = 100,
 			["selfPoint"] = "CENTER",
 			["id"] = "Lethal Shots",
 			["rotation"] = 0,
 			["alpha"] = 1,
-			["width"] = 100,
+			["desaturate"] = false,
 			["discrete_rotation"] = 0,
 			["uid"] = "00hGtlKi61y",
-			["desaturate"] = false,
+			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 3,
 			["height"] = 140,
 			["conditions"] = {
@@ -24240,8 +24925,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -24254,10 +24942,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_vehicleUi"] = false,
 			},
 			["xOffset"] = -295,
 		},
@@ -24508,34 +25193,7 @@ WeakAurasSaved = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["animation"] = {
-				["start"] = {
-					["colorR"] = 1,
-					["type"] = "custom",
-					["duration"] = ".3",
-					["scalex"] = 1,
-					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["x"] = 5,
-					["y"] = 0,
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["colorA"] = 1,
-					["translateType"] = "shake",
-					["rotate"] = 0,
-					["use_translate"] = true,
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
+			["wordWrap"] = "WordWrap",
 			["fixedWidth"] = 200,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/VJdTRIH_b/38",
@@ -24576,10 +25234,37 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["selfPoint"] = "CENTER",
+			["animation"] = {
+				["start"] = {
+					["colorR"] = 1,
+					["type"] = "custom",
+					["duration"] = ".3",
+					["scalex"] = 1,
+					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["x"] = 5,
+					["y"] = 0,
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["colorA"] = 1,
+					["translateType"] = "shake",
+					["rotate"] = 0,
+					["use_translate"] = true,
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
 			["internalVersion"] = 9,
 			["justify"] = "CENTER",
-			["wordWrap"] = "WordWrap",
+			["selfPoint"] = "CENTER",
 			["id"] = "Lock And Load Stacks",
 			["regionType"] = "text",
 			["frameStrata"] = 7,
@@ -24628,7 +25313,6 @@ WeakAurasSaved = {
 					},
 				},
 				["use_name"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -24637,6 +25321,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_vehicleUi"] = false,
 				["difficulty"] = {
 					["multi"] = {
 					},
@@ -24674,7 +25359,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showAlways",
 						["unit"] = "player",
 						["use_showgcd"] = true,
-						["debuffType"] = "HELPFUL",
+						["duration"] = "1",
+						["custom_hide"] = "timed",
 						["charges_operator"] = ">",
 						["type"] = "status",
 						["subeventSuffix"] = "_CAST_START",
@@ -24692,7 +25378,7 @@ WeakAurasSaved = {
 						["use_genericShowOn"] = true,
 						["use_unit"] = true,
 						["subeventPrefix"] = "SPELL",
-						["custom_hide"] = "timed",
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 						["showOn"] = "showAlways",
@@ -24757,11 +25443,19 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
+			["text1Containment"] = "INSIDE",
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "BOTTOMRIGHT",
+			["parent"] = "Hunter Rotation",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["frameStrata"] = 4,
+			["useglowColor"] = false,
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -24796,15 +25490,15 @@ WeakAurasSaved = {
 					},
 				},
 				["use_name"] = false,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -24819,15 +25513,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text1Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["parent"] = "Hunter Rotation",
 			["selfPoint"] = "CENTER",
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -24857,8 +25543,16 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["text1Font"] = "Friz Quadrata TT",
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["internalVersion"] = 9,
 			["text2Font"] = "Friz Quadrata TT",
-			["cooldownTextEnabled"] = true,
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -24867,31 +25561,31 @@ WeakAurasSaved = {
 			},
 			["regionType"] = "icon",
 			["text1FontFlags"] = "OUTLINE",
-			["text1Containment"] = "INSIDE",
-			["text2FontSize"] = 24,
 			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["frameStrata"] = 4,
 			["text1"] = " ",
 			["icon"] = true,
-			["text2"] = "%p",
 			["zoom"] = 0,
+			["text2"] = "%p",
 			["auto"] = true,
 			["glow"] = false,
 			["id"] = "Rapid Fire",
+			["text2Enabled"] = false,
+			["alpha"] = 1,
+			["width"] = 36,
+			["cooldownTextEnabled"] = true,
+			["uid"] = "rwEW4CE0Kuq",
+			["inverse"] = true,
+			["desaturate"] = false,
+			["displayIcon"] = "",
+			["cooldown"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2Enabled"] = false,
-			["width"] = 36,
-			["alpha"] = 1,
-			["uid"] = "rwEW4CE0Kuq",
-			["inverse"] = true,
-			["internalVersion"] = 9,
-			["displayIcon"] = "",
-			["cooldown"] = true,
-			["desaturate"] = false,
 		},
 		["Crows"] = {
 			["text2Point"] = "CENTER",
@@ -24913,6 +25607,7 @@ WeakAurasSaved = {
 						["debuffType"] = "HELPFUL",
 						["type"] = "status",
 						["unevent"] = "auto",
+						["duration"] = "1",
 						["subeventPrefix"] = "SPELL",
 						["event"] = "Cooldown Progress (Spell)",
 						["subeventSuffix"] = "_CAST_START",
@@ -24963,6 +25658,7 @@ WeakAurasSaved = {
 						["use_absorbMode"] = true,
 						["event"] = "Conditions",
 						["subeventPrefix"] = "SPELL",
+						["duration"] = "1",
 						["use_unit"] = true,
 						["unit"] = "player",
 						["unevent"] = "auto",
@@ -24977,6 +25673,7 @@ WeakAurasSaved = {
 						["use_absorbMode"] = true,
 						["event"] = "Unit Characteristics",
 						["unit"] = "target",
+						["duration"] = "1",
 						["subeventPrefix"] = "SPELL",
 						["subeventSuffix"] = "_CAST_START",
 						["use_attackable"] = true,
@@ -25006,12 +25703,20 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["stickyDuration"] = false,
+			["text2Enabled"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["text1Containment"] = "INSIDE",
 			["progressPrecision"] = 4,
 			["text1Point"] = "CENTER",
+			["parent"] = "Hunter Rotation",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
-			["frameStrata"] = 4,
+			["stickyDuration"] = false,
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -25072,10 +25777,6 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownTextEnabled"] = false,
-			["parent"] = "Hunter Rotation",
-			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -25202,8 +25903,20 @@ WeakAurasSaved = {
 					},
 				}, -- [6]
 			},
+			["cooldownTextEnabled"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["do_custom"] = false,
+				},
+			},
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
 			["text1Font"] = "Calibri",
-			["text1Color"] = {
+			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
@@ -25212,10 +25925,10 @@ WeakAurasSaved = {
 			["selfPoint"] = "CENTER",
 			["text1FontFlags"] = "OUTLINE",
 			["regionType"] = "icon",
-			["text1Containment"] = "INSIDE",
-			["internalVersion"] = 9,
-			["text2FontSize"] = 24,
 			["width"] = 36,
+			["frameStrata"] = 4,
+			["text2FontSize"] = 24,
+			["internalVersion"] = 9,
 			["text1"] = "%p",
 			["text2Color"] = {
 				1, -- [1]
@@ -25228,29 +25941,21 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["glow"] = false,
 			["id"] = "Crows",
-			["text2Enabled"] = false,
+			["text1Enabled"] = true,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["text1Enabled"] = true,
-			["uid"] = "kv58WpkYaUH",
-			["inverse"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["do_custom"] = false,
-				},
-			},
-			["displayIcon"] = "",
-			["cooldown"] = true,
-			["color"] = {
+			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["uid"] = "kv58WpkYaUH",
+			["inverse"] = true,
+			["desaturate"] = false,
+			["displayIcon"] = "",
+			["cooldown"] = true,
+			["useglowColor"] = false,
 		},
 		["Pet"] = {
 			["glow"] = false,
@@ -25284,9 +25989,9 @@ WeakAurasSaved = {
 						},
 						["unit"] = "pet",
 						["subeventPrefix"] = "SPELL",
-						["use_mounted"] = false,
-						["use_HasPet"] = false,
 						["custom_hide"] = "timed",
+						["use_HasPet"] = false,
+						["debuffType"] = "HELPFUL",
 						["subeventSuffix"] = "_CAST_START",
 						["type"] = "custom",
 						["custom_type"] = "status",
@@ -25301,7 +26006,7 @@ WeakAurasSaved = {
 						["events"] = "UNIT_PET",
 						["custom"] = "function()\n    local taxi = UnitOnTaxi(\"player\")\n    \n    if taxi then \n        return false\n    elseif taxi == false then\n        return not UnitExists(\"pet\")\n    end\nend",
 						["check"] = "event",
-						["debuffType"] = "HELPFUL",
+						["use_mounted"] = false,
 						["genericShowOn"] = "showOnActive",
 						["use_unit"] = true,
 					},
@@ -25315,6 +26020,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_vehicle"] = false,
+						["duration"] = "1",
 						["event"] = "Conditions",
 						["unit"] = "player",
 						["genericShowOn"] = "showOnActive",
@@ -25365,9 +26071,17 @@ WeakAurasSaved = {
 				},
 			},
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "CENTER",
+			["frameStrata"] = 3,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 30,
+			["desaturate"] = false,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -25407,8 +26121,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_name"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -25421,19 +26138,21 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_vehicleUi"] = false,
 			},
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextEnabled"] = true,
-			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
 			["parent"] = "Hunter Utility",
-			["text1Font"] = "Calibri",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["conditions"] = {
 			},
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "Calibri",
+			["useglowColor"] = false,
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -25450,28 +26169,23 @@ WeakAurasSaved = {
 			["text1Containment"] = "INSIDE",
 			["text2Point"] = "CENTER",
 			["text2FontSize"] = 24,
-			["selfPoint"] = "CENTER",
+			["anchorFrameType"] = "SCREEN",
 			["text1"] = " ",
-			["frameStrata"] = 3,
-			["zoom"] = 0.1,
+			["selfPoint"] = "CENTER",
 			["text2"] = "%p",
+			["zoom"] = 0.1,
 			["auto"] = true,
 			["icon"] = true,
 			["id"] = "Pet",
 			["text1FontFlags"] = "OUTLINE",
-			["alpha"] = 1,
-			["width"] = 30,
 			["text2Enabled"] = false,
+			["width"] = 30,
+			["alpha"] = 1,
 			["uid"] = ")uCeivdVoSl",
 			["inverse"] = false,
 			["text1Enabled"] = false,
 			["displayIcon"] = 132161,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["cooldownTextEnabled"] = true,
 			["internalVersion"] = 9,
 		},
 		["Kill Command Stacks"] = {
@@ -25520,6 +26234,7 @@ WeakAurasSaved = {
 						["use_genericShowOn"] = true,
 						["genericShowOn"] = "showAlways",
 						["unit"] = "player",
+						["duration"] = "1",
 						["debuffType"] = "HELPFUL",
 						["charges_operator"] = ">",
 						["charges"] = "0",
@@ -25637,19 +26352,19 @@ WeakAurasSaved = {
 		["Enemies in Range Surv"] = {
 			["outline"] = "OUTLINE",
 			["fontSize"] = 22,
-			["parent"] = "Survival Hunter",
-			["xOffset"] = 0,
-			["displayText"] = "%c",
-			["customText"] = "function()\n    local e = aura_env\n    e.targets = e.targets or 0\n    \n    if e.targets >= 2 then\n        return e.targets\n    elseif e.targets < 2 then\n        return \"\"\n    end\nend\n\n\n\n\n\n",
-			["anchorFrameFrame"] = "WeakAuras:Carve",
-			["anchorPoint"] = "CENTER",
-			["wordWrap"] = "WordWrap",
 			["color"] = {
 				0, -- [1]
 				0.41960784313726, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["parent"] = "Survival Hunter",
+			["displayText"] = "%c",
+			["customText"] = "function()\n    local e = aura_env\n    e.targets = e.targets or 0\n    \n    if e.targets >= 2 then\n        return e.targets\n    elseif e.targets < 2 then\n        return \"\"\n    end\nend\n\n\n\n\n\n",
+			["anchorFrameFrame"] = "WeakAuras:Carve",
+			["anchorPoint"] = "CENTER",
+			["wordWrap"] = "WordWrap",
+			["xOffset"] = 0,
 			["yOffset"] = 50,
 			["customTextUpdate"] = "event",
 			["url"] = "https://wago.io/41FX0D6O-/15",
@@ -25684,6 +26399,7 @@ WeakAurasSaved = {
 						["use_absorbMode"] = true,
 						["event"] = "Conditions",
 						["subeventPrefix"] = "SPELL",
+						["duration"] = "1",
 						["use_unit"] = true,
 						["unit"] = "player",
 						["unevent"] = "auto",
@@ -25835,13 +26551,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = false,
 				["use_vehicleUi"] = false,
+				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_combat"] = true,
-				["use_spec"] = false,
 				["size"] = {
 					["multi"] = {
 					},
@@ -25883,6 +26599,7 @@ WeakAurasSaved = {
 						["debuffType"] = "HELPFUL",
 						["type"] = "status",
 						["subeventSuffix"] = "_CAST_START",
+						["duration"] = "1",
 						["event"] = "Cast",
 						["custom_hide"] = "timed",
 						["castType"] = "channel",
@@ -26055,12 +26772,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
 					["scaley"] = 1,
 					["alpha"] = 0,
-					["x"] = 5,
-					["y"] = 0,
 					["colorB"] = 1,
+					["y"] = 0,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["translateType"] = "shake",
-					["colorA"] = 1,
+					["x"] = 5,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["duration_type"] = "seconds",
@@ -26222,12 +26939,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
 					["scaley"] = 1,
 					["alpha"] = 0,
-					["x"] = 3,
-					["y"] = 0,
 					["colorB"] = 1,
+					["y"] = 0,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["type"] = "none",
-					["colorA"] = 1,
+					["x"] = 3,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["duration_type"] = "seconds",
@@ -26239,9 +26956,17 @@ WeakAurasSaved = {
 				},
 			},
 			["stickyDuration"] = false,
+			["glowColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Point"] = "TOPRIGHT",
+			["alpha"] = 1,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 36,
+			["desaturate"] = false,
 			["load"] = {
 				["use_petbattle"] = false,
 				["use_never"] = false,
@@ -26299,14 +27024,14 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["width"] = 36,
-			["selfPoint"] = "CENTER",
-			["desaturate"] = false,
-			["text2Containment"] = "INSIDE",
 			["parent"] = "Hunter Rotation",
-			["text1Font"] = "Calibri",
+			["internalVersion"] = 9,
 			["conditions"] = {
 			},
+			["text2Containment"] = "INSIDE",
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "Calibri",
+			["useglowColor"] = false,
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -26323,11 +27048,11 @@ WeakAurasSaved = {
 			},
 			["text1Containment"] = "INSIDE",
 			["text2FontSize"] = 24,
-			["text1Enabled"] = false,
+			["width"] = 36,
 			["text1"] = "%s",
-			["alpha"] = 1,
-			["text2"] = "%p",
+			["text1Enabled"] = false,
 			["zoom"] = 0,
+			["text2"] = "%p",
 			["auto"] = false,
 			["text2Color"] = {
 				1, -- [1]
@@ -26337,14 +27062,14 @@ WeakAurasSaved = {
 			},
 			["id"] = "Steady Focus",
 			["icon"] = true,
-			["text2Enabled"] = false,
-			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 4,
+			["anchorFrameType"] = "SCREEN",
+			["text2Enabled"] = false,
 			["uid"] = "8XCJAqeV(n2",
 			["inverse"] = false,
 			["cooldownTextEnabled"] = true,
 			["displayIcon"] = 236182,
-			["internalVersion"] = 9,
+			["selfPoint"] = "CENTER",
 			["text2Point"] = "CENTER",
 		},
 		["Kill Command Tick"] = {
@@ -26417,13 +27142,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["use_vehicleUi"] = false,
+				["use_combat"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_combat"] = true,
-				["use_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -26606,6 +27331,7 @@ WeakAurasSaved = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
+						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
 						["spellName"] = 266779,
 						["realSpellName"] = "Coordinated Assault",
@@ -26677,11 +27403,14 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["stickyDuration"] = false,
+			["cooldownTextEnabled"] = false,
+			["text1Containment"] = "INSIDE",
 			["progressPrecision"] = 4,
 			["text1Point"] = "CENTER",
+			["parent"] = "Survival Hunter",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 45,
+			["internalVersion"] = 9,
 			["load"] = {
 				["use_petbattle"] = false,
 				["class"] = {
@@ -26712,7 +27441,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -26721,11 +27450,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_realm"] = false,
-				["pvptalent"] = {
+				["use_vehicleUi"] = false,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_vehicleUi"] = false,
 				["use_name"] = false,
 				["use_combat"] = true,
 				["race"] = {
@@ -26737,44 +27466,49 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["anchorFrameType"] = "SCREEN",
-			["internalVersion"] = 9,
+			["useglowColor"] = false,
+			["desaturate"] = false,
 			["selfPoint"] = "CENTER",
 			["text2Containment"] = "INSIDE",
-			["parent"] = "Survival Hunter",
+			["glowType"] = "buttonOverlay",
+			["text1Font"] = "Calibri Bold",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text1Font"] = "Calibri Bold",
 			["text1FontFlags"] = "OUTLINE",
+			["regionType"] = "icon",
+			["text2Font"] = "Friz Quadrata TT",
+			["anchorFrameType"] = "SCREEN",
+			["text2FontSize"] = 24,
+			["frameStrata"] = 4,
+			["text1"] = "%p",
+			["glow"] = false,
+			["icon"] = true,
+			["zoom"] = 0,
+			["auto"] = true,
+			["text2"] = "%p",
+			["id"] = "Coordinated Assault",
+			["text2Enabled"] = false,
+			["alpha"] = 1,
+			["width"] = 45,
 			["text2Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["text2Font"] = "Friz Quadrata TT",
-			["glow"] = false,
-			["text2FontSize"] = 24,
-			["cooldownTextEnabled"] = false,
-			["text1"] = "%p",
-			["frameStrata"] = 4,
-			["icon"] = true,
-			["text2"] = "%p",
-			["auto"] = true,
-			["zoom"] = 0,
-			["id"] = "Coordinated Assault",
-			["text1Containment"] = "INSIDE",
-			["alpha"] = 1,
-			["width"] = 45,
-			["text2Enabled"] = false,
 			["uid"] = "6CK24hLWgxd",
 			["inverse"] = true,
-			["color"] = {
+			["glowColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
@@ -26817,7 +27551,7 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["desaturate"] = false,
+			["stickyDuration"] = false,
 		},
 		["Barbed Shot Stacks"] = {
 			["outline"] = "OUTLINE",
@@ -26851,6 +27585,7 @@ WeakAurasSaved = {
 						["use_genericShowOn"] = true,
 						["genericShowOn"] = "showAlways",
 						["unit"] = "player",
+						["duration"] = "1",
 						["debuffType"] = "HELPFUL",
 						["charges_operator"] = ">",
 						["type"] = "status",
@@ -26893,12 +27628,12 @@ WeakAurasSaved = {
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
 					["scaley"] = 1,
 					["alpha"] = 0,
-					["x"] = 5,
-					["y"] = 0,
 					["colorB"] = 1,
+					["y"] = 0,
+					["colorA"] = 1,
 					["colorG"] = 1,
 					["type"] = "custom",
-					["colorA"] = 1,
+					["x"] = 5,
 					["rotate"] = 0,
 					["use_translate"] = true,
 					["duration_type"] = "seconds",
@@ -26956,7 +27691,6 @@ WeakAurasSaved = {
 					},
 				},
 				["use_name"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -26965,6 +27699,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_vehicleUi"] = false,
 				["race"] = {
 					["multi"] = {
 					},
@@ -27244,14 +27979,11 @@ WeakAurasSaved = {
 			},
 		},
 	},
-	["registered"] = {
-	},
 	["frame"] = {
 		["xOffset"] = -379.895385742188,
 		["yOffset"] = -324.460571289063,
 		["height"] = 492,
 		["width"] = 630.000061035156,
 	},
-	["login_squelch_time"] = 10,
 	["editor_theme"] = "Monokai",
 }
