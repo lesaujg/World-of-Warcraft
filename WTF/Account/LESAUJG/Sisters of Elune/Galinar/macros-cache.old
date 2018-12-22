@@ -1,4 +1,0 @@
-VER 3 0100000000000001 "c" "INV_MACE_2H_DREANOROGRE_B_02.BLP"
-/tar Sergeant Crowler
-/script SetRaidTarget("target",1)
-END

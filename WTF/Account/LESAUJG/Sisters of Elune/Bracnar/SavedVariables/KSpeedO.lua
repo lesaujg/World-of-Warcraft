@@ -1,2 +1,0 @@
-
-KSpeedO_Settings = nil

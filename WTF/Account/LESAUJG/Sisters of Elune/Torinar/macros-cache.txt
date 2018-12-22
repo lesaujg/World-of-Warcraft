@@ -1,4 +1,0 @@
-VER 3 0100000000000001 "Follow" "INV_Misc_QuestionMark"
-/target Torinara
-/Follow
-END
