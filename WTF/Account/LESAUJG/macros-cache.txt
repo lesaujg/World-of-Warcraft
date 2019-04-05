@@ -1,0 +1,43 @@
+VER 3 000000000000001E "_Clear Target" "Ability_CheapShot"
+/stopcasting
+/cleartarget
+/petfollow
+/petpassive
+END
+VER 3 00000000000000AA "df" "INV_MISC_QUESTIONMARK"
+/target Paper
+/click OverrideActionBarButton3
+END
+VER 3 0000000000000099 "Fish" "INV_MISC_QUESTIONMARK"
+/equipset Fishing
+/use Fishing
+END
+VER 3 00000000000000A0 "Obliterate" "1043741"
+/click EasyObliterate
+END
+VER 3 00000000000000A5 "qawds" "INV_MISC_QUESTIONMARK"
+#showtooltip Runed Band of the Kirin Tor
+/equip Runed Band of the Kirin Tor
+/castsequence Runed Band of the Kirin Tor
+END
+VER 3 0000000000000087 "RandomMount" "INV_MISC_QUESTIONMARK"
+/use [mod:ctrlshift]Grand Expedition Yak
+/use [mod:shift]Traveler's Tundra Mammoth
+/use [mod:ctrl]Azure Water Strider
+/use [mod:alt] Mimiron's Head
+#showtooltip [nomod]White Ram
+/click [nobtn:2]LiteMount
+/click [btn:2]LiteMount RightButton
+END
+VER 3 000000000000009D "Reload" "132096"
+/console worldPreloadNonCritical 0
+/reload
+END
+VER 3 00000000000000A9 "TSMMacro" "Achievement_Faction_GoldenLotus"
+/click TSMCancelAuctionBtn
+/click TSMAuctioningBtn
+END
+VER 3 0000000000000094 "TSMPostCancel" "133784"
+/click TSMAuctioningCancelButton
+/click TSMAuctioningPostButton
+END

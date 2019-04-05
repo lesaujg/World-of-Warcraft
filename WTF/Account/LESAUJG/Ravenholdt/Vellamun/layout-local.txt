@@ -1,0 +1,8 @@
+Version: 1
+Frame: GameMenuFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 195
+H: 349

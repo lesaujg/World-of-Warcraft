@@ -1,0 +1,6 @@
+
+TukuiConfigPrivate = {
+	["bags"] = {
+		["enable"] = true,
+	},
+}

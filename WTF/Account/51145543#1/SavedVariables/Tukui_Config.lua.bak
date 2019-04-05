@@ -1,0 +1,14 @@
+
+TukuiConfigShared = {
+	["Silvermoon"] = {
+		["Farmerlime"] = {
+		},
+	},
+	["Sisters of Elune"] = {
+		["Alyania"] = {
+		},
+	},
+	["Account"] = {
+	},
+}
+TukuiConfigPerAccount = nil

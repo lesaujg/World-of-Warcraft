@@ -1,0 +1,7 @@
+changeset:   157:544a8d2d83d6
+tag:         v74
+user:        yellowfive
+date:        Tue Mar 12 23:01:37 2019 -0700
+summary:     Fix for Kul Tiran humans.
+
+

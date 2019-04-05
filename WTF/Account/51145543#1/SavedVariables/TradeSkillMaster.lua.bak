@@ -1,0 +1,787 @@
+
+TradeSkillMasterDB = {
+	["p@Default@inventoryTooltipFormat"] = "full",
+	["p@Default@tooltipPriceFormat"] = "text",
+	["g@ @customPriceSources"] = {
+	},
+	["f@Alliance - Sisters of Elune@characterGuilds"] = {
+	},
+	["p@Default@detailedDestroyTooltip"] = false,
+	["p@Default@pricePerUnit"] = true,
+	["p@Default@tooltipShowModifier"] = "none",
+	["p@Default@exportSubGroups"] = false,
+	["c@Alyania - Sisters of Elune@auctionMessages"] = {
+	},
+	["p@Default@operationTooltips"] = {
+	},
+	["p@Default@minimapIcon"] = {
+		["minimapPos"] = 220,
+		["radius"] = 80,
+		["hide"] = false,
+	},
+	["p@Default@vendorBuyTooltip"] = true,
+	["g@ @auctionSaleSound"] = "TSM_NO_SOUND",
+	["p@Default@exportOperations"] = false,
+	["g@ @pendingAddonUpdate"] = {
+	},
+	["g@ @locale"] = "enUS",
+	["f@Alliance - Sisters of Elune@pendingMail"] = {
+		["Alyania"] = {
+		},
+	},
+	["g@ @infoMessagesShown"] = {
+		["resetDesign"] = true,
+	},
+	["p@Default@defaultGroupTab"] = 2,
+	["p@Default@protectAH"] = false,
+	["f@Alliance - Silvermoon@accountKey"] = "Silvermoon706035452",
+	["p@Default@cleanReagentBank"] = false,
+	["p@Default@groupTreeSelectedGroupStatus"] = {
+	},
+	["p@Default@auctionResultRows"] = 16,
+	["p@Default@design"] = {
+		["fonts"] = {
+			["content"] = "Fonts\\ARIALN.TTF",
+			["bold"] = "Interface\\Addons\\TradeSkillMaster\\Media\\DroidSans-Bold.ttf",
+		},
+		["edgeSize"] = 1.5,
+		["textColors"] = {
+			["iconRegion"] = {
+				["enabled"] = {
+					249, -- [1]
+					255, -- [2]
+					247, -- [3]
+					1, -- [4]
+				},
+			},
+			["title"] = {
+				["enabled"] = {
+					132, -- [1]
+					219, -- [2]
+					9, -- [3]
+					1, -- [4]
+				},
+			},
+			["label"] = {
+				["enabled"] = {
+					216, -- [1]
+					225, -- [2]
+					211, -- [3]
+					1, -- [4]
+				},
+				["disabled"] = {
+					150, -- [1]
+					148, -- [2]
+					140, -- [3]
+					1, -- [4]
+				},
+			},
+			["text"] = {
+				["enabled"] = {
+					255, -- [1]
+					254, -- [2]
+					250, -- [3]
+					1, -- [4]
+				},
+				["disabled"] = {
+					147, -- [1]
+					151, -- [2]
+					139, -- [3]
+					1, -- [4]
+				},
+			},
+			["link"] = {
+				["enabled"] = {
+					49, -- [1]
+					56, -- [2]
+					133, -- [3]
+					1, -- [4]
+				},
+			},
+		},
+		["fontSizes"] = {
+			["normal"] = 15,
+			["small"] = 12,
+			["medium"] = 13,
+		},
+		["frameColors"] = {
+			["frameBG"] = {
+				["backdrop"] = {
+					24, -- [1]
+					24, -- [2]
+					24, -- [3]
+					0.93, -- [4]
+				},
+				["border"] = {
+					50, -- [1]
+					50, -- [2]
+					50, -- [3]
+					1, -- [4]
+				},
+			},
+			["content"] = {
+				["backdrop"] = {
+					45, -- [1]
+					45, -- [2]
+					45, -- [3]
+					1, -- [4]
+				},
+				["border"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0, -- [4]
+				},
+			},
+			["frame"] = {
+				["backdrop"] = {
+					24, -- [1]
+					24, -- [2]
+					24, -- [3]
+					1, -- [4]
+				},
+				["border"] = {
+					100, -- [1]
+					100, -- [2]
+					100, -- [3]
+					0.3, -- [4]
+				},
+			},
+		},
+		["inlineColors"] = {
+			["link"] = {
+				153, -- [1]
+				255, -- [2]
+				255, -- [3]
+				1, -- [4]
+			},
+			["link2"] = {
+				153, -- [1]
+				255, -- [2]
+				255, -- [3]
+				1, -- [4]
+			},
+			["tooltip"] = {
+				130, -- [1]
+				130, -- [2]
+				250, -- [3]
+				1, -- [4]
+			},
+			["category"] = {
+				36, -- [1]
+				106, -- [2]
+				36, -- [3]
+				1, -- [4]
+			},
+			["category2"] = {
+				85, -- [1]
+				180, -- [2]
+				8, -- [3]
+				1, -- [4]
+			},
+		},
+	},
+	["p@Default@customPriceSourceTreeStatus"] = {
+	},
+	["g@ @bankUITab"] = "Warehousing",
+	["f@Alliance - Sisters of Elune@bankUIBankFramePosition"] = {
+		100, -- [1]
+		300, -- [2]
+	},
+	["p@Default@auctionFrameScale"] = 1,
+	["p@Default@embeddedTooltip"] = true,
+	["f@Alliance - Silvermoon@bankUIGBankFramePosition"] = {
+		100, -- [1]
+		300, -- [2]
+	},
+	["p@Default@defaultAuctionTab"] = "Shopping",
+	["g@ @operations"] = {
+	},
+	["f@Alliance - Silvermoon@bankUIBankFramePosition"] = {
+		100, -- [1]
+		300, -- [2]
+	},
+	["f@Alliance - Silvermoon@guildVaults"] = {
+	},
+	["f@Alliance - Silvermoon@syncAccounts"] = {
+	},
+	["p@Default@importParentOnly"] = false,
+	["f@Alliance - Silvermoon@inventory"] = {
+	},
+	["f@Alliance - Sisters of Elune@bankUIGBankFramePosition"] = {
+		100, -- [1]
+		300, -- [2]
+	},
+	["f@Alliance - Sisters of Elune@syncMetadata"] = {
+		["TSM_INVENTORY"] = {
+			["Alyania"] = {
+				["lastUpdate"] = 1511614720,
+				["owner"] = "Sisters of Elune185488437",
+			},
+		},
+		["TSM_CHARACTERS"] = {
+			["Alyania"] = {
+				["lastUpdate"] = 1511614707,
+				["owner"] = "Sisters of Elune185488437",
+			},
+		},
+		["CRAFTING_PROFESSIONS"] = {
+		},
+	},
+	["p@Default@destroyValueSource"] = "dbmarket",
+	["p@Default@deTooltip"] = true,
+	["p@Default@keepInParent"] = true,
+	["p@Default@operations"] = {
+		["Mailing"] = {
+		},
+		["Auctioning"] = {
+		},
+		["Crafting"] = {
+		},
+		["TradeSkillMaster"] = {
+		},
+		["Shopping"] = {
+		},
+		["Vendoring"] = {
+		},
+	},
+	["f@Alliance - Silvermoon@characterGuilds"] = {
+	},
+	["p@Default@groups"] = {
+	},
+	["f@Alliance - Silvermoon@characters"] = {
+		["Farmerlime"] = true,
+	},
+	["f@Alliance - Silvermoon@pendingMail"] = {
+	},
+	["g@ @moveDelay"] = 0,
+	["g@ @optionsTreeStatus"] = {
+	},
+	["p@Default@gotoNewGroup"] = true,
+	["g@ @customPriceTooltips"] = {
+	},
+	["p@Default@items"] = {
+	},
+	["p@Default@tooltipOptions"] = {
+		["AuctionDB"] = {
+			["regionMinBuyout"] = false,
+			["regionHistorical"] = false,
+			["historical"] = false,
+			["regionSalePercent"] = true,
+			["minBuyout"] = true,
+			["regionMarketValue"] = true,
+			["regionSale"] = true,
+			["globalSale"] = false,
+			["globalHistorical"] = false,
+			["regionSoldPerDay"] = true,
+			["globalMinBuyout"] = false,
+			["globalMarketValue"] = false,
+			["_version"] = 2,
+			["marketValue"] = true,
+		},
+		["Auctioning"] = {
+			["operationPrices"] = false,
+		},
+		["Crafting"] = {
+			["matPrice"] = false,
+			["detailedMats"] = false,
+			["craftingCost"] = true,
+		},
+		["Accounting"] = {
+			["sale"] = true,
+			["expiredAuctions"] = false,
+			["cancelledAuctions"] = false,
+			["purchase"] = true,
+			["saleRate"] = false,
+		},
+		["Shopping"] = {
+			["maxPrice"] = false,
+		},
+	},
+	["p@Default@moveImportedItems"] = false,
+	["f@Alliance - Sisters of Elune@syncAccounts"] = {
+	},
+	["g@ @clientVersion"] = "7.3.2",
+	["f@Alliance - Sisters of Elune@inventory"] = {
+		["Alyania"] = {
+			["reagentBank"] = {
+			},
+			["bag"] = {
+				["i:6948"] = 1,
+			},
+			["mail"] = {
+			},
+			["auction"] = {
+			},
+			["bank"] = {
+			},
+		},
+	},
+	["g@ @chatFrame"] = "",
+	["f@Alliance - Sisters of Elune@ignoreGuilds"] = {
+	},
+	["p@Default@cleanBank"] = false,
+	["p@Default@inventoryViewerPriceSource"] = "dbmarket",
+	["_version"] = 9,
+	["g@ @tsmItemTweetEnabled"] = false,
+	["g@ @frameStatus"] = {
+		["TSMDestroyingFrame"] = {
+			["y"] = 450,
+			["x"] = 850,
+			["hasLoaded"] = true,
+			["height"] = 300,
+			["defaults"] = {
+				["y"] = 450,
+				["x"] = 850,
+				["height"] = 300,
+				["scale"] = 1,
+				["width"] = 300,
+			},
+			["scale"] = 1,
+			["width"] = 299.999938964844,
+		},
+		["TSMMainFrame1"] = {
+			["y"] = 384.000030517578,
+			["x"] = 614.400024414063,
+			["width"] = 823,
+			["height"] = 686,
+			["scale"] = 1,
+			["defaults"] = {
+				["y"] = 384.000030517578,
+				["x"] = 614.400024414063,
+				["height"] = 686,
+				["scale"] = 1,
+				["width"] = 823,
+			},
+			["hasLoaded"] = true,
+		},
+		["TSMCraftingGatherFrame"] = {
+			["y"] = 450,
+			["x"] = 850,
+			["height"] = 400,
+			["defaults"] = {
+				["y"] = 300,
+				["x"] = 100,
+				["height"] = 400,
+				["scale"] = 1,
+				["width"] = 500,
+			},
+			["scale"] = 1,
+			["width"] = 325,
+		},
+	},
+	["g@ @auctionSaleEnabled"] = true,
+	["p@Default@millTooltip"] = true,
+	["g@ @vendorItems"] = {
+		["i:136631"] = 450000,
+		["i:17194"] = 10,
+		["i:44854"] = 25,
+		["i:49908"] = 1500000,
+		["i:44501"] = 10000000,
+		["i:27860"] = 6400,
+		["i:8343"] = 2000,
+		["i:10647"] = 2000,
+		["i:90146"] = 20000,
+		["i:4291"] = 500,
+		["i:34412"] = 1000,
+		["i:39354"] = 15,
+		["i:136629"] = 173300,
+		["i:4340"] = 350,
+		["i:74854"] = 7000,
+		["i:39684"] = 9000,
+		["i:79740"] = 23,
+		["i:2594"] = 1500,
+		["i:17202"] = 10,
+		["i:40533"] = 50000,
+		["i:30817"] = 25,
+		["i:11291"] = 4500,
+		["i:4342"] = 2500,
+		["i:74832"] = 12000,
+		["i:58278"] = 16000,
+		["i:102539"] = 5000,
+		["i:136632"] = 210800,
+		["i:2604"] = 50,
+		["i:47556"] = 1250000,
+		["i:4399"] = 200,
+		["i:6260"] = 50,
+		["i:85583"] = 12000,
+		["i:102540"] = 5000,
+		["i:80433"] = 2000000,
+		["i:7005"] = 82,
+		["i:4537"] = 125,
+		["i:62323"] = 60000,
+		["i:74852"] = 16000,
+		["i:67335"] = 445561,
+		["i:35948"] = 16000,
+		["i:45087"] = 1000000,
+		["i:83092"] = 200000000,
+		["i:2325"] = 1000,
+		["i:58265"] = 20000,
+		["i:46784"] = 25,
+		["i:44499"] = 30000000,
+		["i:30183"] = 700000,
+		["i:2596"] = 120,
+		["i:5956"] = 18,
+		["i:65892"] = 50000000,
+		["i:4470"] = 38,
+		["i:35949"] = 8500,
+		["i:38426"] = 30000,
+		["i:44500"] = 15000000,
+		["i:85584"] = 17000,
+		["i:44855"] = 25,
+		["i:85585"] = 27000,
+		["i:44853"] = 25,
+		["i:2678"] = 10,
+		["i:67319"] = 328990,
+		["i:6530"] = 100,
+		["i:46797"] = 25,
+		["i:4341"] = 500,
+		["i:65893"] = 30000000,
+		["i:52188"] = 15000,
+		["i:4400"] = 2000,
+		["i:2321"] = 100,
+		["i:10290"] = 2500,
+		["i:1179"] = 125,
+		["i:74845"] = 35000,
+		["i:23572"] = 500000,
+		["i:74851"] = 14000,
+		["i:2593"] = 150,
+		["i:14341"] = 5000,
+		["i:4289"] = 50,
+		["i:17196"] = 50,
+		["i:6261"] = 1000,
+		["i:74659"] = 30000,
+		["i:2320"] = 10,
+		["i:2324"] = 25,
+		["i:18567"] = 30000,
+		["i:2901"] = 81,
+		["i:2595"] = 2000,
+		["i:74660"] = 15000,
+		["i:159"] = 25,
+		["i:136630"] = 118500,
+		["i:3466"] = 2000,
+		["i:2605"] = 100,
+		["i:3857"] = 500,
+		["i:6217"] = 124,
+		["i:46796"] = 25,
+		["i:3371"] = 100,
+		["i:2880"] = 100,
+		["i:34249"] = 1000000,
+		["i:46793"] = 25,
+		["i:44835"] = 10,
+		["i:43102"] = 750000,
+	},
+	["_scopeKeys"] = {
+		["char"] = {
+			"Alyania - Sisters of Elune", -- [1]
+		},
+		["realm"] = {
+			"Sisters of Elune", -- [1]
+		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["factionrealm"] = {
+			"Alliance - Sisters of Elune", -- [1]
+			"Alliance - Silvermoon", -- [2]
+		},
+	},
+	["g@ @ignoreRandomEnchants"] = false,
+	["g@ @moduleOperationsTreeStatus"] = {
+	},
+	["g@ @appMessageId"] = 0,
+	["g@ @globalOperations"] = false,
+	["p@Default@groupOperationTooltip"] = true,
+	["g@ @moduleOperationTabs"] = {
+	},
+	["p@Default@prospectTooltip"] = true,
+	["p@Default@cleanBags"] = false,
+	["g@ @auctionBuyEnabled"] = true,
+	["_hash"] = 3504618,
+	["c@Alyania - Sisters of Elune@auctionPrices"] = {
+	},
+	["f@Alliance - Sisters of Elune@guildVaults"] = {
+	},
+	["p@Default@auctionFrameMovable"] = true,
+	["p@Default@groupFilterPrice"] = "dbmarket",
+	["_currentProfile"] = {
+		["Alyania - Sisters of Elune"] = "Default",
+	},
+	["p@Default@gotoNewCustomPriceSource"] = true,
+	["p@Default@vendorSellTooltip"] = true,
+	["f@Alliance - Sisters of Elune@accountKey"] = "Sisters of Elune185488437",
+	["p@Default@openAllBags"] = true,
+	["p@Default@groupTreeCollapsedStatus"] = {
+	},
+	["p@Default@groupTreeStatus"] = {
+	},
+	["p@Default@savedThemes"] = {
+	},
+	["p@Default@isBankui"] = true,
+	["f@Alliance - Silvermoon@ignoreGuilds"] = {
+	},
+	["f@Alliance - Silvermoon@syncMetadata"] = {
+	},
+	["f@Alliance - Sisters of Elune@characters"] = {
+		["Alyania"] = "PRIEST",
+	},
+	["p@Default@transformTooltip"] = true,
+}
+TSMItemCacheDB = "xÜ0\000\000\000-Å\000\000\000\000\000\000\000\0006\0003\000.\000á<\000\000T\000\000\000\000\000\000\000\000ú\000\000\000%\000\000\000Ú\000\000\000K\000\000\000]\000F\000\000\000‰W\000\000ï)\0000\000\000\000Ó\000\000C\000\000\000\000\000\000_p\000}\000F\000°\000∆\000\000\000>\000\000\000@Ü\000F\000\000\000\000\000\000\0001°\000\000\000\000\000\000\000\000√˜\000\000\000\000\000\000\000%¢\000H\000\000\000»\000\000\000ƒ\000\000\0002\000\000\000_Å\000\000\000\000\000\000\000\000∫\000\000\000\000\000\000\000\000ßÜ\000s\000F\000g\000èÖ\000\000\000\000\000\000\000\000Áz\000\000\000\000\000\000\000\000b†\000\000\000\000\000\000\000\0009Ä\000\000\000\000\000\000\000\000ÿI\000\000\000\000\000\000\000\000∞\000\000\000>\000\000\000˛Å\000\000\000\000\000\000\000\000_ì\000\000\000\n\000\000\000\000\000Ã^\000<\000\000\000d\000\000\000ˇì\000\000\000\000\000\000\000\000Œâ\000\000\000\000\000\000\000\000A~\000\000\000\000\000\000\000\000Ø\000\000\000K\000\000\0002\000\000\000\000™\000\000\000`!\000\000\000\000T\000\000\n\000\000\000\000\000\000\000À\r\000\000\000\0009\000\000\000„\000\000\000\000\000\000\0003\000\000\000\000ê\000\000¡8\0004\000\000\000©\000\000a!\000\000\000\000 \000\000 \r\000\000\000\000\000\000\000Õ^\000<\000\000\000d\000\000\000Sturdy Rope\000Six Demon Bag\000Mistletoe\000Scroll of Stamina\000Scroll of Intellect II\000Goblin Rocket Launcher\000Gnomish Death Ray\000Large Rope Net\000The Decapitator\000Scroll of Protection II\000Attuned Crystal Cores\000Eyesore Blaster\000Worgsaw\000Frostweave Net\000Scroll of Agility\000Malister's Frost Wand\000Wrangling Rope\000Vial of the Sunwell\000Handful of Snowflakes\000Zezzak's Shard\000Hyldnir Harpoon\000Soul Cannon\000Zorbin's Ultra-Shrinker\000Scroll of Versatility II\000Burning Torch\000Ruby Acorn\000Netherweave Net\000Seeds of Nature's Wrath\000Reinforced Net\000Sparrowhawk Net\000Scroll of Stamina II\000Silk Bandage\000Mageweave Bandage\000Heavy Linen Bandage\000Heavy Wool Bandage\000Linen Bandage\000Heavy Silk Bandage\000Runecloth Bandage\000Heavy Mageweave Bandage\000Wool Bandage\000Heavy Netherweave Net"
+TradeSkillMasterModulesDB = {
+	["AuctionDB"] = {
+		["profileKeys"] = {
+			["Farmerlime - Silvermoon"] = "Default",
+		},
+		["profiles"] = {
+			["Default"] = {
+			},
+		},
+	},
+	["Mailing"] = {
+		["profileKeys"] = {
+			["Farmerlime - Silvermoon"] = "Default",
+		},
+	},
+	["Auctioning"] = {
+		["factionrealm"] = {
+			["Alliance - Silvermoon"] = {
+				["player"] = {
+					["Farmerlime"] = true,
+				},
+			},
+		},
+		["profileKeys"] = {
+			["Farmerlime - Silvermoon"] = "Default",
+		},
+		["profiles"] = {
+			["Default"] = {
+			},
+		},
+	},
+	["Crafting"] = {
+		["profileKeys"] = {
+			["Farmerlime - Silvermoon"] = "Default",
+		},
+		["factionrealm"] = {
+			["Alliance - Silvermoon"] = {
+				["tradeSkills"] = {
+					["Farmerlime"] = {
+					},
+				},
+			},
+		},
+	},
+	["Accounting"] = {
+		["profileKeys"] = {
+			["Farmerlime - Silvermoon"] = "Default",
+		},
+		["realm"] = {
+			["Silvermoon"] = {
+				["csvExpired"] = "itemString,itemName,stackSize,quantity,player,time",
+				["goldLog"] = {
+					["Farmerlime"] = "startMinute,endMinute,copper\n23761110,23761117,0",
+				},
+				["combinedFactions"] = true,
+				["csvExpense"] = "type,amount,destination,player,time",
+				["csvBuys"] = "itemString,itemName,stackSize,quantity,price,seller,player,time,source",
+				["csvIncome"] = "type,amount,source,player,time",
+				["csvSales"] = "itemString,itemName,stackSize,quantity,price,buyer,player,time,source",
+				["csvCancelled"] = "itemString,itemName,stackSize,quantity,player,time",
+			},
+		},
+	},
+	["Shopping"] = {
+		["global"] = {
+			["destroyingTargetItems"] = {
+				["item:36926:0:0:0:0:0:0"] = "Shadow Crystal",
+				["item:11178:0:0:0:0:0:0"] = "Large Radiant Shard",
+				["item:12364:0:0:0:0:0:0"] = "Huge Emerald",
+				["item:12361:0:0:0:0:0:0"] = "Blue Sapphire",
+				["item:21886:0:0:0:0:0:0"] = "Primal Life",
+				["item:76134:0:0:0:0:0:0"] = "Sunstone",
+				["item:36921:0:0:0:0:0:0"] = "Autumn's Glow",
+				["item:7910:0:0:0:0:0:0"] = "Star Ruby",
+				["item:79253:0:0:0:0:0:0"] = "Misty Pigment",
+				["item:22575:0:0:0:0:0:0"] = "Mote of Life",
+				["item:11177:0:0:0:0:0:0"] = "Small Radiant Shard",
+				["item:35622:0:0:0:0:0:0"] = "Eternal Water",
+				["item:23437:0:0:0:0:0:0"] = "Talasite",
+				["item:36923:0:0:0:0:0:0"] = "Chalcedony",
+				["item:11138:0:0:0:0:0:0"] = "Small Glowing Shard",
+				["item:114931:0:0:0:0:0:0"] = "Cerulean Pigment",
+				["item:37702:0:0:0:0:0:0"] = "Crystallized Fire",
+				["item:11082:0:0:0:0:0:0"] = "Greater Astral Essence",
+				["item:35625:0:0:0:0:0:0"] = "Eternal Life",
+				["item:22446:0:0:0:0:0:0"] = "Greater Planar Essence",
+				["item:39340:0:0:0:0:0:0"] = "Violet Pigment",
+				["item:76142:0:0:0:0:0:0"] = "Sun's Radiance",
+				["item:23441:0:0:0:0:0:0"] = "Nightseye",
+				["item:36932:0:0:0:0:0:0"] = "Dark Jade",
+				["item:43104:0:0:0:0:0:0"] = "Burnt Pigment",
+				["item:43107:0:0:0:0:0:0"] = "Sapphire Pigment",
+				["item:14344:0:0:0:0:0:0"] = "Large Brilliant Shard",
+				["item:52555:0:0:0:0:0:0"] = "Hypnotic Dust",
+				["item:76139:0:0:0:0:0:0"] = "Wild Jade",
+				["item:10939:0:0:0:0:0:0"] = "Greater Magic Essence",
+				["item:35624:0:0:0:0:0:0"] = "Eternal Earth",
+				["item:23436:0:0:0:0:0:0"] = "Living Ruby",
+				["item:43103:0:0:0:0:0:0"] = "Verdant Pigment",
+				["item:52720:0:0:0:0:0:0"] = "Small Heavenly Shard",
+				["item:36930:0:0:0:0:0:0"] = "Monarch Topaz",
+				["item:22450:0:0:0:0:0:0"] = "Void Crystal",
+				["item:76131:0:0:0:0:0:0"] = "Primordial Ruby",
+				["item:109693:0:0:0:0:0:0"] = "Draenic Dust",
+				["item:22456:0:0:0:0:0:0"] = "Primal Shadow",
+				["item:7909:0:0:0:0:0:0"] = "Aquamarine",
+				["item:23439:0:0:0:0:0:0"] = "Noble Topaz",
+				["item:43124:0:0:0:0:0:0"] = "Ethereal Ink",
+				["item:22576:0:0:0:0:0:0"] = "Mote of Mana",
+				["item:36933:0:0:0:0:0:0"] = "Forest Emerald",
+				["item:22577:0:0:0:0:0:0"] = "Mote of Shadow",
+				["item:11176:0:0:0:0:0:0"] = "Dream Dust",
+				["item:52192:0:0:0:0:0:0"] = "Dream Emerald",
+				["item:61980:0:0:0:0:0:0"] = "Burning Embers",
+				["item:39774:0:0:0:0:0:0"] = "Midnight Ink",
+				["item:23079:0:0:0:0:0:0"] = "Deep Peridot",
+				["item:74248:0:0:0:0:0:0"] = "Sha Crystal",
+				["item:22578:0:0:0:0:0:0"] = "Mote of Water",
+				["item:111245:0:0:0:0:0:0"] = "Luminous Shard",
+				["item:76137:0:0:0:0:0:0"] = "Alexandrite",
+				["item:10940:0:0:0:0:0:0"] = "Strange Dust",
+				["item:43108:0:0:0:0:0:0"] = "Ebon Pigment",
+				["item:74252:0:0:0:0:0:0"] = "Small Ethereal Shard",
+				["item:79251:0:0:0:0:0:0"] = "Shadow Pigment",
+				["item:22457:0:0:0:0:0:0"] = "Primal Mana",
+				["item:74249:0:0:0:0:0:0"] = "Spirit Dust",
+				["item:35627:0:0:0:0:0:0"] = "Eternal Shadow",
+				["item:76135:0:0:0:0:0:0"] = "Roguestone",
+				["item:52177:0:0:0:0:0:0"] = "Carnelian",
+				["item:39343:0:0:0:0:0:0"] = "Azure Pigment",
+				["item:774:0:0:0:0:0:0"] = "Malachite",
+				["item:52182:0:0:0:0:0:0"] = "Jasper",
+				["item:11137:0:0:0:0:0:0"] = "Vision Dust",
+				["item:39334:0:0:0:0:0:0"] = "Dusky Pigment",
+				["item:22449:0:0:0:0:0:0"] = "Large Prismatic Shard",
+				["item:10978:0:0:0:0:0:0"] = "Small Glimmering Shard",
+				["item:34052:0:0:0:0:0:0"] = "Dream Shard",
+				["item:52179:0:0:0:0:0:0"] = "Alicite",
+				["item:36920:0:0:0:0:0:0"] = "Sun Crystal",
+				["item:39339:0:0:0:0:0:0"] = "Emerald Pigment",
+				["item:76130:0:0:0:0:0:0"] = "Tiger Opal",
+				["item:43109:0:0:0:0:0:0"] = "Icy Pigment",
+				["item:21885:0:0:0:0:0:0"] = "Primal Water",
+				["item:52178:0:0:0:0:0:0"] = "Zephyrite",
+				["item:76138:0:0:0:0:0:0"] = "River's Heart",
+				["item:1206:0:0:0:0:0:0"] = "Moss Agate",
+				["item:16204:0:0:0:0:0:0"] = "Illusion Dust",
+				["item:21884:0:0:0:0:0:0"] = "Primal Fire",
+				["item:43117:0:0:0:0:0:0"] = "Dawnstar Ink",
+				["item:79255:0:0:0:0:0:0"] = "Starlight Ink",
+				["item:1529:0:0:0:0:0:0"] = "Jade",
+				["item:61981:0:0:0:0:0:0"] = "Inferno Ink",
+				["item:52719:0:0:0:0:0:0"] = "Greater Celestial Essence",
+				["item:11083:0:0:0:0:0:0"] = "Soul Dust",
+				["item:23438:0:0:0:0:0:0"] = "Star of Elune",
+				["item:12799:0:0:0:0:0:0"] = "Large Opal",
+				["item:22574:0:0:0:0:0:0"] = "Mote of Fire",
+				["item:113111:0:0:0:0:0:0"] = "Warbinder's Ink",
+				["item:37704:0:0:0:0:0:0"] = "Crystallized Life",
+				["item:79254:0:0:0:0:0:0"] = "Ink of Dreams",
+				["item:11174:0:0:0:0:0:0"] = "Lesser Nether Essence",
+				["item:39341:0:0:0:0:0:0"] = "Silvery Pigment",
+				["item:818:0:0:0:0:0:0"] = "Tigerseye",
+				["item:3864:0:0:0:0:0:0"] = "Citrine",
+				["item:52193:0:0:0:0:0:0"] = "Ember Topaz",
+				["item:43120:0:0:0:0:0:0"] = "Celestial Ink",
+				["item:23112:0:0:0:0:0:0"] = "Golden Draenite",
+				["item:34056:0:0:0:0:0:0"] = "Lesser Cosmic Essence",
+				["item:23077:0:0:0:0:0:0"] = "Blood Garnet",
+				["item:43127:0:0:0:0:0:0"] = "Snowfall Ink",
+				["item:52195:0:0:0:0:0:0"] = "Amberjewel",
+				["item:34057:0:0:0:0:0:0"] = "Abyss Crystal",
+				["item:52722:0:0:0:0:0:0"] = "Maelstrom Crystal",
+				["item:43116:0:0:0:0:0:0"] = "Lion's Ink",
+				["item:12800:0:0:0:0:0:0"] = "Azerothian Diamond",
+				["item:52194:0:0:0:0:0:0"] = "Demonseye",
+				["item:20725:0:0:0:0:0:0"] = "Nexus Crystal",
+				["item:76136:0:0:0:0:0:0"] = "Pandarian Garnet",
+				["item:22452:0:0:0:0:0:0"] = "Primal Earth",
+				["item:113588:0:0:0:0:0:0"] = "Temporal Crystal",
+				["item:14343:0:0:0:0:0:0"] = "Small Brilliant Shard",
+				["item:43119:0:0:0:0:0:0"] = "Royal Ink",
+				["item:36929:0:0:0:0:0:0"] = "Huge Citrine",
+				["item:52180:0:0:0:0:0:0"] = "Nightstone",
+				["item:52191:0:0:0:0:0:0"] = "Ocean Sapphire",
+				["item:43115:0:0:0:0:0:0"] = "Hunter's Ink",
+				["item:37101:0:0:0:0:0:0"] = "Ivory Ink",
+				["item:52721:0:0:0:0:0:0"] = "Heavenly Shard",
+				["item:11084:0:0:0:0:0:0"] = "Large Glimmering Shard",
+				["item:36860:0:0:0:0:0:0"] = "Eternal Fire",
+				["item:74247:0:0:0:0:0:0"] = "Ethereal Shard",
+				["item:61979:0:0:0:0:0:0"] = "Ashen Pigment",
+				["item:43105:0:0:0:0:0:0"] = "Indigo Pigment",
+				["item:39342:0:0:0:0:0:0"] = "Nether Pigment",
+				["item:43125:0:0:0:0:0:0"] = "Darkflame Ink",
+				["item:43121:0:0:0:0:0:0"] = "Fiery Ink",
+				["item:43106:0:0:0:0:0:0"] = "Ruby Pigment",
+				["item:76133:0:0:0:0:0:0"] = "Lapis Lazuli",
+				["item:76140:0:0:0:0:0:0"] = "Vermilion Onyx",
+				["item:74250:0:0:0:0:0:0"] = "Mysterious Essence",
+				["item:37705:0:0:0:0:0:0"] = "Crystallized Water",
+				["item:34055:0:0:0:0:0:0"] = "Greater Cosmic Essence",
+				["item:16203:0:0:0:0:0:0"] = "Greater Eternal Essence",
+				["item:43122:0:0:0:0:0:0"] = "Shimmering Ink",
+				["item:43118:0:0:0:0:0:0"] = "Jadefire Ink",
+				["item:43126:0:0:0:0:0:0"] = "Ink of the Sea",
+				["item:39469:0:0:0:0:0:0"] = "Moonglow Ink",
+				["item:21929:0:0:0:0:0:0"] = "Flame Spessarite",
+				["item:1705:0:0:0:0:0:0"] = "Lesser Moonstone",
+				["item:36918:0:0:0:0:0:0"] = "Scarlet Ruby",
+				["item:37700:0:0:0:0:0:0"] = "Crystallized Air",
+				["item:10998:0:0:0:0:0:0"] = "Lesser Astral Essence",
+				["item:36927:0:0:0:0:0:0"] = "Twilight Opal",
+				["item:10938:0:0:0:0:0:0"] = "Lesser Magic Essence",
+				["item:39151:0:0:0:0:0:0"] = "Alabaster Pigment",
+				["item:37701:0:0:0:0:0:0"] = "Crystallized Earth",
+				["item:23107:0:0:0:0:0:0"] = "Shadow Draenite",
+				["item:11134:0:0:0:0:0:0"] = "Lesser Mystic Essence",
+				["item:11135:0:0:0:0:0:0"] = "Greater Mystic Essence",
+				["item:1210:0:0:0:0:0:0"] = "Shadowgem",
+				["item:35623:0:0:0:0:0:0"] = "Eternal Air",
+				["item:11139:0:0:0:0:0:0"] = "Large Glowing Shard",
+				["item:61978:0:0:0:0:0:0"] = "Blackfallow Ink",
+				["item:76141:0:0:0:0:0:0"] = "Imperial Amethyst",
+				["item:115504:0:0:0:0:0:0"] = "Fractured Temporal Crystal",
+				["item:36917:0:0:0:0:0:0"] = "Bloodstone",
+				["item:36924:0:0:0:0:0:0"] = "Sky Sapphire",
+				["item:23117:0:0:0:0:0:0"] = "Azure Moonstone",
+				["item:37703:0:0:0:0:0:0"] = "Crystallized Shadow",
+				["item:43123:0:0:0:0:0:0"] = "Ink of the Sky",
+				["item:52181:0:0:0:0:0:0"] = "Hessonite",
+				["item:23440:0:0:0:0:0:0"] = "Dawnstone",
+				["item:11175:0:0:0:0:0:0"] = "Greater Nether Essence",
+				["item:22445:0:0:0:0:0:0"] = "Arcane Dust",
+				["item:22447:0:0:0:0:0:0"] = "Lesser Planar Essence",
+				["item:34054:0:0:0:0:0:0"] = "Infinite Dust",
+				["item:22573:0:0:0:0:0:0"] = "Mote of Earth",
+				["item:39338:0:0:0:0:0:0"] = "Golden Pigment",
+				["item:52718:0:0:0:0:0:0"] = "Lesser Celestial Essence",
+				["item:16202:0:0:0:0:0:0"] = "Lesser Eternal Essence",
+				["item:52190:0:0:0:0:0:0"] = "Inferno Ruby",
+			},
+		},
+		["profileKeys"] = {
+			["Farmerlime - Silvermoon"] = "Farmerlime - Silvermoon",
+		},
+		["profiles"] = {
+			["Farmerlime - Silvermoon"] = {
+			},
+		},
+	},
+	["Destroying"] = {
+		["profileKeys"] = {
+			["Farmerlime - Silvermoon"] = "Default",
+		},
+	},
+}

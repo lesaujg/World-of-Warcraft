@@ -1,0 +1,15 @@
+tag 8b7c0bbbbdfaba9acbbd7354fb205c51103dfc5b 8.1.1
+Author:	Mike "Xodiv" Battersby <mib@post.com>
+Date:	Thu Dec 20 11:30:27 2018 +1100
+
+LiteMount 8.1.1
+
+Flag Havenswood island expedition as non-flyable
+_
+
+commit b4d0e1dccb6b9aa3195017d58f30db558b6d5c3f
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Thu Dec 20 11:29:41 2018 +1100
+
+    Mark Havenswood island expedition as non-flyable
+

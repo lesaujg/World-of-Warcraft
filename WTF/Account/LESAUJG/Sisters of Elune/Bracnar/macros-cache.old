@@ -1,0 +1,121 @@
+VER 3 0100000000000069 "_AspectTurtle" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cancelaura Aspect of the Turtle
+/cast Aspect of the Turtle
+END
+VER 3 010000000000005B "_Bestial Wrath" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [btn:2] Ancient Hysteria
+/cast Bestial Wrath
+/cast Aspect of the Wild
+/use Tabard of the Protector
+/use 13
+/use 14
+END
+VER 3 010000000000005E "_Cobra Shot" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/target [noexists] pettarget
+/cast Cobra Shot
+END
+VER 3 010000000000005F "_Dire Beast" "INV_MISC_QUESTIONMARK"
+#showtooltip Dire Beast
+#show Dire Beast
+/target [noexists] pettarget
+/cast Titan's Thunder
+/cast Dire Beast
+END
+VER 3 010000000000006B "_ExplosiveTrap" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence [@cursor] reset=combat/24 Explosive Trap, Caltrops,  Lacerate, Caltrops,  Lacerate
+END
+VER 3 010000000000006A "_FeignDeath" "INV_MISC_QUESTIONMARK"
+/cast [nobtn:2]Feign Death
+/cast [btn:2][mod] Play Dead
+END
+VER 3 010000000000005C "_Kill Command" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/dismount
+/petattack
+/petassist
+/petautocastoff [group] Growl
+/petautocaston [nogroup] Growl
+/petautocastoff [group] Thunderstomp
+/petautocaston [nogroup] Thunderstomp
+/target [noexists] pettarget
+/cast Kill Command
+END
+VER 3 0100000000000060 "_Kite" "132128"
+/use [button:1] 15
+/use [button:1] Rocfeather Skyhorn Kite
+/use [button:2] Brulfist Idol
+END
+VER 3 0100000000000068 "_MangooseBite" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petattack
+/petassist
+/petautocastoff [group] Growl
+/petautocaston [nogroup] Growl
+/petautocastoff [group] Thunderstomp
+/petautocaston [nogroup] Thunderstomp
+/target [noexists] pettarget
+/cast Mongoose Bite
+END
+VER 3 010000000000005D "_Multi-Shot" "INV_MISC_QUESTIONMARK"
+/target [noexists] pettarget
+/cast Multi-Shot
+END
+VER 3 010000000000000E "_Pet Attack/Foll" "Ability_Druid_ChallangingRoar"
+/petfollow [button:2]
+/dismount
+/petattack
+/cast Warp
+/cast Dash
+END
+VER 3 010000000000006C "_TrueShot" "132329"
+#showtooltip
+/cast Trueshot
+/use Tabard of the Protector
+/use 13
+/use 14
+END
+VER 3 0100000000000059 "Counter Shot" "INV_Misc_QuestionMark"
+/stopcasting
+/stopcasting
+/cast Counter Shot
+/cast Auto Shot
+END
+VER 3 010000000000005A "Disengage" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/stopcasting
+/cast Disengage
+/cast Auto Shot
+END
+VER 3 0100000000000067 "Eagle/Cobra" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Aspect of the Eagle
+/cast Spitting Cobra
+/use Tabard of the Protector
+/use 13
+/use 14
+END
+VER 3 010000000000004D "MD+" "INV_Misc_QuestionMark"
+#show Misdirection
+/focus [button:2] target
+/clearfocus [button:2,mod:ctrl]
+/stopmacro [button:2][mod:ctrl]
+/cast [@focus,help,nodead][@pet,nodead,exists] Misdirection
+END
+VER 3 0100000000000061 "Pet" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [button:1, nopet] Call Pet 4
+/cast [button:2, nopet] Call Pet 5
+/cast [@pet,button:2,exists,nodead] Dismiss Pet
+/cast [@pet,exists,nodead] Mend Pet; Revive Pet
+END
+VER 3 0100000000000054 "Pet_stuff" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [button:1, nopet] Call Pet 3
+/cast [button:2, nopet] Call Pet 4
+/cast [button:2, pet, nodead] Dismiss Pet
+/cast [@pet,dead]Revive Pet; [nopet,mod] Revive Pet;Mend Pet
+END

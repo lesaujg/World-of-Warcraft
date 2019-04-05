@@ -1,0 +1,7 @@
+
+RaidBuffsChecker = {
+	[0] = nil --[[ skipped userdata ]],
+	["Layout"] = "VERTICAL",
+	["Zoom"] = false,
+	["DebugMode"] = false,
+}
