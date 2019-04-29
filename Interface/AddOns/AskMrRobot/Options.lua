@@ -45,10 +45,10 @@ end
 local function createCheck(container, setting, text, description)
 
 	local chk = AceGUI:Create("AmrUiCheckBox")
+	container:AddChild(chk)
 	chk:SetUserData("setting", setting)
 	chk:SetText(text)
 	chk:SetCallback("OnClick", onCheckClick)
-	container:AddChild(chk)
 	
 	local desc = AceGUI:Create("AmrUiLabel")
 	container:AddChild(desc)

@@ -1,7 +1,7 @@
-changeset:   157:544a8d2d83d6
-tag:         v74
+changeset:   159:a3507735dfd9
+tag:         v75
 user:        yellowfive
-date:        Tue Mar 12 23:01:37 2019 -0700
-summary:     Fix for Kul Tiran humans.
+date:        Wed Apr 24 18:00:42 2019 -0700
+summary:     Fixed a rendering issue with auto-logging checkboxes.
 
 
