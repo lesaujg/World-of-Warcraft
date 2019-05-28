@@ -140,16 +140,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1551146134.83401,
 									["amount"] = -201,
+									["srcname"] = "Apothecary Baxter",
 									["hp"] = 1285,
 									["spellid"] = 68947,
-									["srcname"] = "Apothecary Baxter",
 								}, -- [1]
 								{
 									["ts"] = 1551146134.85002,
 									["amount"] = -199,
+									["srcname"] = "Apothecary Hummel",
 									["hp"] = 929,
 									["spellid"] = 68641,
-									["srcname"] = "Apothecary Hummel",
 								}, -- [2]
 								{
 									["ts"] = 1551146135.27903,
@@ -162,9 +162,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1551146135.33804,
 									["amount"] = -1264,
+									["srcname"] = "Apothecary Hummel",
 									["hp"] = 376,
 									["spellid"] = 68607,
-									["srcname"] = "Apothecary Hummel",
 								}, -- [4]
 								{
 									["ts"] = 1551146135.38905,
@@ -193,9 +193,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1551146135.60508,
 									["amount"] = -1227,
+									["srcname"] = "Apothecary Baxter",
 									["hp"] = 1,
 									["spellid"] = 68948,
-									["srcname"] = "Apothecary Baxter",
 								}, -- [8]
 								{
 									["spellname"] = "Scott dies",
@@ -204,10 +204,10 @@ SkadaPerCharDB = {
 									["spellid"] = 41220,
 								}, -- [9]
 								{
-									["hp"] = 0,
-									["ts"] = 1551146139.597,
-									["spellid"] = 61999,
 									["srcname"] = "Destrodarck-Zul'jin",
+									["ts"] = 1551146139.597,
+									["hp"] = 0,
+									["spellid"] = 61999,
 								}, -- [10]
 								{
 									["absorb"] = 0,
@@ -220,30 +220,30 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1551146133.83912,
 									["amount"] = -211,
+									["srcname"] = "Apothecary Baxter",
 									["hp"] = 5947,
 									["spellid"] = 68947,
-									["srcname"] = "Apothecary Baxter",
 								}, -- [12]
 								{
 									["ts"] = 1551146133.86213,
 									["amount"] = -200,
+									["srcname"] = "Apothecary Hummel",
 									["hp"] = 5589,
 									["spellid"] = 68641,
-									["srcname"] = "Apothecary Hummel",
 								}, -- [13]
 								{
 									["ts"] = 1551146133.96714,
 									["amount"] = -1060,
+									["srcname"] = "Apothecary Baxter",
 									["hp"] = 3696,
 									["spellid"] = 68948,
-									["srcname"] = "Apothecary Baxter",
 								}, -- [14]
 								{
 									["ts"] = 1551146133.96715,
 									["amount"] = -1150,
+									["srcname"] = "Apothecary Hummel",
 									["hp"] = 1644,
 									["spellid"] = 68607,
-									["srcname"] = "Apothecary Hummel",
 								}, -- [15]
 								["pos"] = 11,
 							},
@@ -2390,16 +2390,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1551146134.83401,
 								["amount"] = -201,
+								["srcname"] = "Apothecary Baxter",
 								["hp"] = 1285,
 								["spellid"] = 68947,
-								["srcname"] = "Apothecary Baxter",
 							}, -- [1]
 							{
 								["ts"] = 1551146134.85002,
 								["amount"] = -199,
+								["srcname"] = "Apothecary Hummel",
 								["hp"] = 929,
 								["spellid"] = 68641,
-								["srcname"] = "Apothecary Hummel",
 							}, -- [2]
 							{
 								["ts"] = 1551146135.27903,
@@ -2412,9 +2412,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1551146135.33804,
 								["amount"] = -1264,
+								["srcname"] = "Apothecary Hummel",
 								["hp"] = 376,
 								["spellid"] = 68607,
-								["srcname"] = "Apothecary Hummel",
 							}, -- [4]
 							{
 								["ts"] = 1551146135.38905,
@@ -2443,9 +2443,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1551146135.60508,
 								["amount"] = -1227,
+								["srcname"] = "Apothecary Baxter",
 								["hp"] = 1,
 								["spellid"] = 68948,
-								["srcname"] = "Apothecary Baxter",
 							}, -- [8]
 							{
 								["spellname"] = "Scott dies",
@@ -2454,10 +2454,10 @@ SkadaPerCharDB = {
 								["spellid"] = 41220,
 							}, -- [9]
 							{
-								["hp"] = 0,
-								["ts"] = 1551146139.597,
-								["spellid"] = 61999,
 								["srcname"] = "Destrodarck-Zul'jin",
+								["ts"] = 1551146139.597,
+								["hp"] = 0,
+								["spellid"] = 61999,
 							}, -- [10]
 							{
 								["absorb"] = 0,
@@ -2470,30 +2470,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1551146133.83912,
 								["amount"] = -211,
+								["srcname"] = "Apothecary Baxter",
 								["hp"] = 5947,
 								["spellid"] = 68947,
-								["srcname"] = "Apothecary Baxter",
 							}, -- [12]
 							{
 								["ts"] = 1551146133.86213,
 								["amount"] = -200,
+								["srcname"] = "Apothecary Hummel",
 								["hp"] = 5589,
 								["spellid"] = 68641,
-								["srcname"] = "Apothecary Hummel",
 							}, -- [13]
 							{
 								["ts"] = 1551146133.96714,
 								["amount"] = -1060,
+								["srcname"] = "Apothecary Baxter",
 								["hp"] = 3696,
 								["spellid"] = 68948,
-								["srcname"] = "Apothecary Baxter",
 							}, -- [14]
 							{
 								["ts"] = 1551146133.96715,
 								["amount"] = -1150,
+								["srcname"] = "Apothecary Hummel",
 								["hp"] = 1644,
 								["spellid"] = 68607,
-								["srcname"] = "Apothecary Hummel",
 							}, -- [15]
 							["pos"] = 11,
 						},
@@ -2568,9 +2568,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1551146202.809,
 						["amount"] = -1237,
+						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 18842,
 						["spellid"] = 68934,
-						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 					}, -- [8]
 					{
 						["absorb"] = 0,
@@ -2623,9 +2623,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1551146197.853,
 						["amount"] = -1179,
+						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 24230,
 						["spellid"] = 68934,
-						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 					}, -- [15]
 					["pos"] = 14,
 				},
@@ -4294,9 +4294,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1551146204.547,
 						["amount"] = -1110,
+						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 20839,
 						["spellid"] = 68934,
-						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 					}, -- [5]
 					{
 						["ts"] = 1551146205.39,
@@ -4333,9 +4333,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1551146197.512,
 						["amount"] = -1097,
+						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 22169,
 						["spellid"] = 68934,
-						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 					}, -- [10]
 					{
 						["absorb"] = 0,
@@ -4356,9 +4356,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1551146200.02,
 						["amount"] = -1055,
+						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 22267,
 						["spellid"] = 68934,
-						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 					}, -- [13]
 					{
 						["absorb"] = 0,
@@ -4371,9 +4371,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1551146201.656,
 						["amount"] = -1094,
+						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 21490,
 						["spellid"] = 68934,
-						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 					}, -- [15]
 					["pos"] = 8,
 				},

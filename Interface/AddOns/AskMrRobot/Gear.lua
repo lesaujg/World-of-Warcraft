@@ -537,14 +537,24 @@ function Amr:RenderTabGear(container)
 	_panelGear:SetPoint("BOTTOMRIGHT", container.content, "BOTTOMRIGHT")
 	
 	local btnShop = AceGUI:Create("AmrUiButton")
+	container:AddChild(btnShop)
 	btnShop:SetText(L.GearButtonShop)
 	btnShop:SetBackgroundColor(Amr.Colors.Blue)
 	btnShop:SetFont(Amr.CreateFont("Regular", 14, Amr.Colors.White))
-	btnShop:SetWidth(245)
+	btnShop:SetWidth(200)
 	btnShop:SetHeight(26)
 	btnShop:SetCallback("OnClick", function(widget) Amr:ShowShopWindow() end)
-	container:AddChild(btnShop)
-	btnShop:SetPoint("TOPRIGHT", container.content, "TOPRIGHT", -20, -25)
+	btnShop:SetPoint("TOPRIGHT", container.content, "TOPRIGHT", -42, -25)
+
+	local btnJunk = AceGUI:Create("AmrUiButton")
+	container:AddChild(btnJunk)
+	btnJunk:SetText(L.GearButtonJunk)
+	btnJunk:SetBackgroundColor(Amr.Colors.Blue)
+	btnJunk:SetFont(Amr.CreateFont("Regular", 14, Amr.Colors.White))
+	btnJunk:SetWidth(200)
+	btnJunk:SetHeight(26)
+	btnJunk:SetCallback("OnClick", function(widget) Amr:ShowJunkWindow() end)
+	btnJunk:SetPoint("CENTER", btnShop.frame, "CENTER", 0, 36)
 
 	-- pick a default tab based on player's current spec if none is already specified
 	if not _activeSetupId then
@@ -600,7 +610,7 @@ local _gearOpWaiting = nil
 local beginEquipGearSet, processCurrentGearOp, nextGearOp
 
 -- find the first empty slot in the player's backpack+bags
-local function findFirstEmptyBagSlot()
+local function findFirstEmptyBagSlot(usedBagSlots)
 	
 	local bagIds = {}
 	table.insert(bagIds, BACKPACK_CONTAINER)
@@ -611,15 +621,27 @@ local function findFirstEmptyBagSlot()
 	for i, bagId in ipairs(bagIds) do
 		local numSlots = GetContainerNumSlots(bagId)
 		for slotId = 1, numSlots do
-			local _, _, _, _, _, _, itemLink = GetContainerItemInfo(bagId, slotId)
-			if not itemLink then
-				return bagId, slotId
+			if not usedBagSlots or not usedBagSlots[bagId] or not usedBagSlots[bagId][slotId] then
+				local _, _, _, _, _, _, itemLink = GetContainerItemInfo(bagId, slotId)
+				if not itemLink then
+					-- this prevents repeated calls to this from returning the same bag slot if desired
+					if usedBagSlots then
+						if not usedBagSlots[bagId] then
+							usedBagSlots[bagId] = {}
+						end
+						usedBagSlots[bagId][slotId] = true
+					end
+
+					return bagId, slotId
+				end
 			end
 		end
 	end
 	
 	return nil, nil
 end
+
+
 
 -- scan a bag for the best matching item
 local function scanBagForItem(item, bagId, bestItem, bestDiff, bestLink)
@@ -1262,3 +1284,8 @@ function Amr:InitializeGear()
 
 	Amr:AddEventHandler("ITEM_UNLOCKED", handleItemUnlocked)
 end
+
+
+-- export some local methods we need elsewhere
+Amr.CountItemDifferences = countItemDifferences
+Amr.FindFirstEmptyBagSlot = findFirstEmptyBagSlot

@@ -25,6 +25,8 @@ Amr.IsSupportedInstance = Amr.Serializer.IsSupportedInstance
 --Amr.GetItemLevel = Amr.Serializer.GetItemLevel
 Amr.GetItemUniqueId = Amr.Serializer.GetItemUniqueId
 Amr.ReadAzeritePowers = Amr.Serializer.ReadAzeritePowers
+Amr.ProfessionSkillLineToName = Amr.Serializer.ProfessionSkillLineToName
+
 
 -- map of slot ID to display text
 Amr.SlotDisplayText = {

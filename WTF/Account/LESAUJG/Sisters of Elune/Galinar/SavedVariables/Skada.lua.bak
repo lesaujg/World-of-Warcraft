@@ -192,16 +192,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1551147080.323,
 						["amount"] = -326,
-						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
 						["hp"] = 58687,
+						["spellid"] = 68947,
 					}, -- [1]
 					{
 						["ts"] = 1551147080.485,
 						["amount"] = -2235,
-						["spellid"] = 68948,
 						["srcname"] = "Apothecary Baxter",
 						["hp"] = 56774,
+						["spellid"] = 68948,
 					}, -- [2]
 					{
 						["ts"] = 1551147080.563,
@@ -214,9 +214,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1551147077.621,
 						["amount"] = -1206,
-						["spellid"] = 88163,
 						["srcname"] = "Apothecary Baxter",
 						["hp"] = 53075,
+						["spellid"] = 88163,
 					}, -- [4]
 					{
 						["ts"] = 1551147077.665,
@@ -229,9 +229,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1551147078.31,
 						["amount"] = -331,
-						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
 						["hp"] = 51832,
+						["spellid"] = 68947,
 					}, -- [6]
 					{
 						["absorb"] = 0,
@@ -284,16 +284,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1551147079.319,
 						["amount"] = -371,
-						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
 						["hp"] = 58975,
+						["spellid"] = 68947,
 					}, -- [13]
 					{
 						["ts"] = 1551147079.492,
 						["amount"] = -2150,
-						["spellid"] = 68948,
 						["srcname"] = "Apothecary Baxter",
 						["hp"] = 57135,
+						["spellid"] = 68948,
 					}, -- [14]
 					{
 						["ts"] = 1551147080.022,
@@ -654,16 +654,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1551147043.629,
 						["amount"] = -2387,
-						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 31128,
+						["spellid"] = 68934,
 					}, -- [2]
 					{
 						["ts"] = 1551147044.714,
 						["amount"] = -2472,
-						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 28656,
+						["spellid"] = 68934,
 					}, -- [3]
 					{
 						["ts"] = 1551147045.605,
@@ -676,9 +676,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1551147046.222,
 						["amount"] = -2363,
-						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 27916,
+						["spellid"] = 68934,
 					}, -- [5]
 					{
 						["absorb"] = 0,
@@ -755,9 +755,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1551147042.14,
 						["amount"] = -2279,
-						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 29819,
+						["spellid"] = 68934,
 					}, -- [15]
 					["pos"] = 15,
 				},
@@ -1227,44 +1227,44 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1551147075.294,
 						["amount"] = -404,
-						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
 						["hp"] = 46972,
+						["spellid"] = 68947,
 					}, -- [1]
 					{
 						["ts"] = 1551147076.295,
 						["amount"] = -437,
-						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
 						["hp"] = 46473,
+						["spellid"] = 68947,
 					}, -- [2]
 					{
 						["ts"] = 1551147076.483,
 						["amount"] = -2299,
-						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 43851,
+						["spellid"] = 68934,
 					}, -- [3]
 					{
 						["ts"] = 1551147077.305,
 						["amount"] = -418,
-						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
 						["hp"] = 43374,
+						["spellid"] = 68947,
 					}, -- [4]
 					{
 						["ts"] = 1551147077.985,
 						["amount"] = -2416,
-						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 40619,
+						["spellid"] = 68934,
 					}, -- [5]
 					{
 						["ts"] = 1551147078.31,
 						["amount"] = -396,
-						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
 						["hp"] = 40167,
+						["spellid"] = 68947,
 					}, -- [6]
 					{
 						["ts"] = 1551147078.572,
@@ -1277,16 +1277,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1551147079.079,
 						["amount"] = -2487,
-						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 42360,
+						["spellid"] = 68934,
 					}, -- [8]
 					{
 						["ts"] = 1551147079.319,
 						["amount"] = -438,
-						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
 						["hp"] = 41860,
+						["spellid"] = 68947,
 					}, -- [9]
 					{
 						["ts"] = 1551147079.99,
@@ -1299,16 +1299,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1551147080.181,
 						["amount"] = -2280,
-						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 44333,
+						["spellid"] = 68934,
 					}, -- [11]
 					{
 						["ts"] = 1551147080.323,
 						["amount"] = -421,
-						["spellid"] = 68947,
 						["srcname"] = "Apothecary Baxter",
 						["hp"] = 43852,
+						["spellid"] = 68947,
 					}, -- [12]
 					{
 						["absorb"] = 0,
@@ -1329,9 +1329,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1551147074.984,
 						["amount"] = -2507,
-						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 47433,
+						["spellid"] = 68934,
 					}, -- [15]
 					["pos"] = 14,
 				},
@@ -1686,16 +1686,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1551147059.741,
 						["amount"] = -2600,
-						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 60967,
+						["spellid"] = 68934,
 					}, -- [2]
 					{
 						["ts"] = 1551147061.239,
 						["amount"] = -2593,
-						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 55615,
+						["spellid"] = 68934,
 					}, -- [3]
 					{
 						["ts"] = 1551147062.773,
@@ -1732,16 +1732,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1551147068.221,
 						["amount"] = -2357,
-						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 64364,
+						["spellid"] = 68934,
 					}, -- [8]
 					{
 						["ts"] = 1551147069.74,
 						["amount"] = -2496,
-						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 59213,
+						["spellid"] = 68934,
 					}, -- [9]
 					{
 						["ts"] = 1551147078.6,
@@ -1762,23 +1762,23 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1551147046.222,
 						["amount"] = -2247,
-						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 56215,
+						["spellid"] = 68934,
 					}, -- [12]
 					{
 						["ts"] = 1551147047.706,
 						["amount"] = -2537,
-						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 50979,
+						["spellid"] = 68934,
 					}, -- [13]
 					{
 						["ts"] = 1551147049.22,
 						["amount"] = -2312,
-						["spellid"] = 68934,
 						["srcname"] = "[DND] Valentine Boss - Vial Bunny",
 						["hp"] = 46206,
+						["spellid"] = 68934,
 					}, -- [14]
 					{
 						["absorb"] = 0,
@@ -2345,6 +2345,12 @@ SkadaPerCharDB = {
 		["mobs"] = {
 			["Apothecary Frye"] = {
 				["players"] = {
+					["Chelisa"] = {
+						["taken"] = 190949,
+						["done"] = 0,
+						["role"] = "DAMAGER",
+						["class"] = "MAGE",
+					},
 					["Falorathas-EmeraldDream"] = {
 						["taken"] = 39938,
 						["done"] = 3487,
@@ -2356,12 +2362,6 @@ SkadaPerCharDB = {
 						["done"] = 5747,
 						["role"] = "DAMAGER",
 						["class"] = "DEATHKNIGHT",
-					},
-					["Chelisa"] = {
-						["taken"] = 190949,
-						["done"] = 0,
-						["role"] = "DAMAGER",
-						["class"] = "MAGE",
 					},
 					["Horvadi-EmeraldDream"] = {
 						["taken"] = 2452,
@@ -4303,6 +4303,12 @@ SkadaPerCharDB = {
 			["mobs"] = {
 				["Apothecary Frye"] = {
 					["players"] = {
+						["Chelisa"] = {
+							["taken"] = 190949,
+							["done"] = 0,
+							["role"] = "DAMAGER",
+							["class"] = "MAGE",
+						},
 						["Falorathas-EmeraldDream"] = {
 							["taken"] = 39938,
 							["done"] = 3487,
@@ -4314,12 +4320,6 @@ SkadaPerCharDB = {
 							["done"] = 5747,
 							["role"] = "DAMAGER",
 							["class"] = "DEATHKNIGHT",
-						},
-						["Chelisa"] = {
-							["taken"] = 190949,
-							["done"] = 0,
-							["role"] = "DAMAGER",
-							["class"] = "MAGE",
 						},
 						["Horvadi-EmeraldDream"] = {
 							["taken"] = 2452,

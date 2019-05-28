@@ -1,7 +1,7 @@
 ## Interface: 80100
 ## Title: Ask Mr. Robot
 ## Author: Team Robot, Inc.
-## Version: 75
+## Version: 76
 ## Notes: Gear import/export, combat logging, and more.
 ## URL: www.askmrrobot.com
 ## SavedVariables: AskMrRobotDb4
@@ -45,6 +45,7 @@ ui\AmrUiScrollFrame.lua
 
 Export.lua
 Import.lua
+Junk.lua
 Shopping.lua
 Gear.lua
 CombatLog.lua

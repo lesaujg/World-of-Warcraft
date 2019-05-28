@@ -49,11 +49,6 @@ GTFO.SpellID["271703"] = {
   sound = 1;
 };
 
-GTFO.SpellID["271737"] = {
-  --desc = "Rocket Barrage (Gnomish Gyro-Engineer)";
-  sound = 2;
-};
-
 GTFO.SpellID["266281"] = {
   --desc = "Burning Pitch";
   sound = 1;
@@ -714,6 +709,12 @@ GTFO.SpellID["290448"] = {
   sound = 1;
 };
 
+GTFO.SpellID["271737"] = {
+  --desc = "Rocket Barrage (Gnomish Gyro-Engineer)";
+  tankSound = 2;
+  sound = 1;
+};
+
 GTFO.SpellID["286680"] = {
   --desc = "Roiling Tides";
   sound = 1;
@@ -722,6 +723,12 @@ GTFO.SpellID["286680"] = {
 GTFO.SpellID["284369"] = {
   --desc = "Sea Storm";
   sound = 1;
+};
+
+GTFO.SpellID["285075"] = {
+  --desc = "Freezing Tidepool (Stormwall Blockade)";
+  sound = 1;
+  tankSound = 2;
 };
 
 GTFO.SpellID["288051"] = {
@@ -741,6 +748,13 @@ GTFO.SpellID["287993"] = {
   sound = 1;
 };
 
+GTFO.SpellID["287365"] = {
+  --desc = "Searing Pitch (Lady Jaina Proudmoore)";
+  sound = 1;
+  negatingDebuffSpellID = 287993;  -- Chilling Touch
+  test = true;
+};
+
 GTFO.SpellID["288808"] = {
   --desc = "Consecration";
   applicationOnly = true;
@@ -749,6 +763,7 @@ GTFO.SpellID["288808"] = {
   sound = 0;
   test = true;
 };
+
 
 --- **********************
 --- * Crucible of Storms *
@@ -765,3 +780,5 @@ GTFO.SpellID["287876"] = {
   --desc = "Gift of N'Zoth: Obscurity (Uu'nat)";
   sound = 1;
 };
+
+

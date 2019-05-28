@@ -43,7 +43,7 @@
 --
 
 
-local revision =(string.sub("2019042435110", 1, -5))
+local revision =(string.sub("2019051765919", 1, -5))
 local FrameTitle = "DBM_GUI_Option_"	-- all GUI frames get automatically a name FrameTitle..ID
 
 local PanelPrototype = {}
@@ -240,7 +240,7 @@ local function MixinSharedMedia3(mediatype, mediatable)
 		local LSM = LibStub("LibSharedMedia-3.0")
 		soundsRegistered = true
 		--Internal Game Media
-		--8.2 FIXME, sound kit IDs already ready, just waiting on LSM to support them. Currently LSM ignores media that doesn't endin .wav or .ogg
+		--8.2 FIXME, sound kit IDs already ready, just waiting on LSM to support them. Currently LSM ignores media that doesn't end in .wav or .ogg
 		--LSM:Register("sound", "Headless Horseman: Laugh", [[Sound\Creature\HeadlessHorseman\Horseman_Laugh_01.ogg]])--11965
 		--LSM:Register("sound", "Yogg Saron: Laugh", [[Sound\Creature\YoggSaron\UR_YoggSaron_Slay01.ogg]])--15757
 		--LSM:Register("sound", "Loatheb: I see you", [[Sound\Creature\Loathstare\Loa_Naxx_Aggro02.ogg]])--128466
@@ -3080,6 +3080,7 @@ local function CreateOptionsMenu()
 					end
 				end
 				PlayMusic(value)
+				DBM.Options.musicPlaying = true
 			end
 		end)
 		DungeonMusicDropDown:SetPoint("TOPLEFT", VictorySoundDropdown, "TOPLEFT", 0, -45)
@@ -3096,6 +3097,7 @@ local function CreateOptionsMenu()
 					end
 				end
 				PlayMusic(value)
+				DBM.Options.musicPlaying = true
 			end
 		end)
 		MusicDropDown:SetPoint("TOPLEFT", VictorySoundDropdown2, "TOPLEFT", 0, -45)

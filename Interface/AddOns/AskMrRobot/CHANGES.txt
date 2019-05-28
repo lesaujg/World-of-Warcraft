@@ -1,7 +1,19 @@
-changeset:   159:a3507735dfd9
-tag:         v75
+changeset:   163:f27a7c64b21f
+tag:         v76
 user:        yellowfive
-date:        Wed Apr 24 18:00:42 2019 -0700
-summary:     Fixed a rendering issue with auto-logging checkboxes.
+date:        Mon May 06 18:05:16 2019 -0700
+summary:     Tweaks to item matching in junk list features.
+
+
+changeset:   162:f66108c1f674
+user:        yellowfive
+date:        Mon May 06 17:06:26 2019 -0700
+summary:     Remove debugging messages
+
+
+changeset:   161:35612aee8e15
+user:        yellowfive
+date:        Mon May 06 14:08:03 2019 -0700
+summary:     Added junk list.
 
 
