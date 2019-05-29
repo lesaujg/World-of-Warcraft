@@ -2,4 +2,3 @@ git config remote.origin.url https://lesaujg:7ru57n0!@github.com/lesaujg/World-o
 git add -A .
 git commit -m "@home"
 git push
-pause
