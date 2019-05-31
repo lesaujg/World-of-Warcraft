@@ -27,87 +27,93 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
+		["date"] = "Thursday 5/30",
+		["rows"] = 4,
+	}, -- [1]
+	{
 		["date"] = "Wednesday 5/29",
 		["rows"] = 10,
-	}, -- [1]
+	}, -- [2]
 	{
 		["date"] = "Tuesday 5/28",
 		["rows"] = 1,
-	}, -- [2]
+	}, -- [3]
 	{
 		["date"] = "Monday 5/27",
 		["rows"] = 6,
-	}, -- [3]
+	}, -- [4]
 	{
 		["date"] = "Sunday 5/26",
 		["rows"] = 2,
-	}, -- [4]
+	}, -- [5]
 	{
 		["date"] = "Saturday 5/25",
 		["rows"] = 9,
-	}, -- [5]
+	}, -- [6]
 	{
 		["date"] = "Friday 5/24",
 		["rows"] = 5,
-	}, -- [6]
+	}, -- [7]
 	{
 		["date"] = "Thursday 5/23",
 		["rows"] = 5,
-	}, -- [7]
+	}, -- [8]
 	{
 		["date"] = "Wednesday 5/22",
 		["rows"] = 9,
-	}, -- [8]
+	}, -- [9]
 	{
 		["date"] = "Sunday 5/5",
 		["rows"] = 1,
-	}, -- [9]
+	}, -- [10]
 	{
 		["date"] = "Monday 4/29",
 		["rows"] = 6,
-	}, -- [10]
+	}, -- [11]
 	{
 		["date"] = "Sunday 4/28",
 		["rows"] = 5,
-	}, -- [11]
+	}, -- [12]
 	{
 		["date"] = "Friday 4/26",
 		["rows"] = 5,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Monday 4/22",
 		["rows"] = 3,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Saturday 4/20",
 		["rows"] = 6,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Friday 4/19",
 		["rows"] = 1,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Tuesday 4/16",
 		["rows"] = 2,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Sunday 4/14",
 		["rows"] = 4,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Saturday 4/13",
 		["rows"] = 2,
-	}, -- [18]
+	}, -- [19]
 	{
 		["date"] = "Wednesday 4/10",
 		["rows"] = 4,
-	}, -- [19]
-	{
-		["date"] = "Sunday 4/7",
-		["rows"] = 2,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
+	{
+		["Champions of Azeroth"] = 125,
+		["Proudmoore Admiralty"] = 1025,
+		["Order of Embers"] = 300,
+		["7th Legion"] = 2525,
+	}, -- [1]
 	{
 		["Tortollan Seekers"] = 425,
 		["Dreamweavers"] = 2300,
@@ -119,10 +125,10 @@ FactionAddictLogEntries = {
 		["Proudmoore Admiralty"] = 575,
 		["Army of the Light"] = 4800,
 		["7th Legion"] = 2675,
-	}, -- [1]
+	}, -- [2]
 	{
 		["Proudmoore Admiralty"] = 75,
-	}, -- [2]
+	}, -- [3]
 	{
 		["Tortollan Seekers"] = 2275,
 		["Argussian Reach"] = 3850,
@@ -130,11 +136,11 @@ FactionAddictLogEntries = {
 		["Order of Embers"] = 75,
 		["Army of the Light"] = 4300,
 		["7th Legion"] = 150,
-	}, -- [3]
+	}, -- [4]
 	{
 		["Proudmoore Admiralty"] = 450,
 		["Storm's Wake"] = 10,
-	}, -- [4]
+	}, -- [5]
 	{
 		["Argussian Reach"] = 4850,
 		["Dreamweavers"] = 500,
@@ -145,21 +151,21 @@ FactionAddictLogEntries = {
 		["Order of Embers"] = 75,
 		["Army of the Light"] = 6600,
 		["7th Legion"] = 150,
-	}, -- [5]
+	}, -- [6]
 	{
 		["Champions of Azeroth"] = 635,
 		["Proudmoore Admiralty"] = 75,
 		["Order of Embers"] = 125,
 		["Storm's Wake"] = 75,
 		["7th Legion"] = 575,
-	}, -- [6]
+	}, -- [7]
 	{
 		["The Nightfallen"] = 1025,
 		["Armies of Legionfall"] = 150,
 		["Argussian Reach"] = 1000,
 		["Tortollan Seekers"] = 175,
 		["7th Legion"] = 1650,
-	}, -- [7]
+	}, -- [8]
 	{
 		["Champions of Azeroth"] = 875,
 		["The Nightfallen"] = 500,
@@ -170,71 +176,67 @@ FactionAddictLogEntries = {
 		["Proudmoore Admiralty"] = 1725,
 		["Tortollan Seekers"] = 2025,
 		["7th Legion"] = 75,
-	}, -- [8]
+	}, -- [9]
 	{
 		["7th Legion"] = 150,
-	}, -- [9]
+	}, -- [10]
 	{
 		["Tortollan Seekers"] = 2025,
 		["Champions of Azeroth"] = 2450,
 		["Storm's Wake"] = 113,
-		["Proudmoore Admiralty"] = 1725,
 		["Order of Embers"] = 112,
+		["Proudmoore Admiralty"] = 1725,
 		["7th Legion"] = 2225,
-	}, -- [10]
+	}, -- [11]
 	{
 		["Storm's Wake"] = 2050,
 		["Tortollan Seekers"] = 775,
 		["Proudmoore Admiralty"] = 112,
 		["Champions of Azeroth"] = 387,
 		["7th Legion"] = 225,
-	}, -- [11]
+	}, -- [12]
 	{
 		["Champions of Azeroth"] = 2450,
 		["Proudmoore Admiralty"] = 113,
 		["Order of Embers"] = 2450,
 		["Storm's Wake"] = 112,
 		["7th Legion"] = 3100,
-	}, -- [12]
+	}, -- [13]
 	{
 		["7th Legion"] = 450,
 		["Champions of Azeroth"] = 325,
 		["Storm's Wake"] = 2425,
-	}, -- [13]
+	}, -- [14]
 	{
 		["Storm's Wake"] = 75,
 		["Champions of Azeroth"] = 2325,
 		["Tortollan Seekers"] = 350,
-		["Order of Embers"] = 1800,
 		["Proudmoore Admiralty"] = 1875,
+		["Order of Embers"] = 1800,
 		["7th Legion"] = 4300,
-	}, -- [14]
+	}, -- [15]
 	{
 		["7th Legion"] = 475,
-	}, -- [15]
+	}, -- [16]
 	{
 		["Champions of Azeroth"] = 475,
 		["Storm's Wake"] = 475,
-	}, -- [16]
+	}, -- [17]
 	{
 		["Champions of Azeroth"] = 2125,
 		["Proudmoore Admiralty"] = 1800,
 		["Order of Embers"] = 1800,
 		["7th Legion"] = 800,
-	}, -- [17]
+	}, -- [18]
 	{
 		["Proudmoore Admiralty"] = 2300,
 		["7th Legion"] = 3025,
-	}, -- [18]
+	}, -- [19]
 	{
 		["Storm's Wake"] = 75,
 		["Order of Embers"] = 250,
 		["Tortollan Seekers"] = 2275,
 		["7th Legion"] = 1875,
-	}, -- [19]
-	{
-		["Order of Embers"] = 450,
-		["Champions of Azeroth"] = 625,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
@@ -312,10 +314,10 @@ FactionAddictConfigIsInactive = {
 	[1098] = false,
 	[54] = false,
 	[1135] = false,
-	[2135] = false,
+	[729] = false,
 	[509] = false,
 	[68] = false,
-	[2264] = false,
+	[72] = false,
 	[1710] = false,
 	[2265] = false,
 	[1073] = false,
@@ -354,23 +356,23 @@ FactionAddictConfigIsInactive = {
 	[1739] = false,
 	[989] = false,
 	[1273] = false,
-	[1337] = false,
+	[2156] = false,
 	[1847] = false,
 	[2157] = false,
 	[1975] = false,
 	[2158] = false,
-	[1849] = false,
+	[2160] = false,
 	[990] = false,
 	[1275] = false,
-	[2160] = false,
+	[1849] = false,
 	[576] = false,
 	[2161] = false,
 	[1276] = false,
-	[1850] = false,
+	[2162] = false,
 	[2159] = false,
-	[369] = false,
+	[2163] = false,
 	[1277] = false,
-	[1341] = false,
+	[2164] = false,
 	[577] = false,
 	[609] = false,
 	[1278] = false,
@@ -397,11 +399,11 @@ FactionAddictConfigIsInactive = {
 	[270] = false,
 	[1156] = false,
 	[2165] = false,
-	[2164] = false,
-	[2163] = false,
-	[2162] = false,
+	[1341] = false,
+	[369] = false,
+	[1850] = false,
 	[1731] = false,
-	[2156] = false,
+	[1337] = false,
 	[1094] = false,
 	[1158] = false,
 	[1732] = false,
@@ -417,9 +419,9 @@ FactionAddictConfigIsInactive = {
 	[1352] = false,
 	[92] = false,
 	[1735] = false,
-	[72] = false,
+	[2264] = false,
 	[1353] = false,
-	[729] = false,
+	[2135] = false,
 	[1736] = false,
 	[2018] = false,
 	[934] = false,
