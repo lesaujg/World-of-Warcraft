@@ -1,15 +1,42 @@
-tag 8b7c0bbbbdfaba9acbbd7354fb205c51103dfc5b 8.1.1
+tag 2038254d11ca0bd72cec8e919039b82df8855b46 8.1.2
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Thu Dec 20 11:30:27 2018 +1100
+Date:	Mon Jun 3 11:28:21 2019 +1000
 
-LiteMount 8.1.1
+LiteMount 8.1.2 release
 
-Flag Havenswood island expedition as non-flyable
-_
-
-commit b4d0e1dccb6b9aa3195017d58f30db558b6d5c3f
+commit fae12f56042c97f71bb6e6b77fd08ebc4a5973e9
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Dec 20 11:29:41 2018 +1100
+Date:   Fri May 31 16:58:42 2019 +1000
 
-    Mark Havenswood island expedition as non-flyable
+    Remove some debugging prints from equipped condition
+
+commit ee1bfbf44478c51daf9f6421f7298603280a4260
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Fri May 31 16:53:17 2019 +1000
+
+    Merge meq into equipped
+
+commit 603c4aba216512d582fea6bc6ca146e9f8363560
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Fri May 31 11:51:55 2019 +1000
+
+    Pre-8.2 check for meq condition (just in case)
+
+commit d3da4de8296c2f846be93eedd29f4b44c80e0b32
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Fri May 31 11:25:04 2019 +1000
+
+    Move the Limit for default after the special cases
+
+commit 5aa7181a240117403a23bf2b32a5c2acf5550e8b
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Wed May 29 16:37:47 2019 +1000
+
+    Add [meq], remove [area] and [continent] conditions
+
+commit 59968bdcd71f9a1dd4832f9b3732f5555b09c493
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Wed May 29 16:36:57 2019 +1000
+
+    Add ResetLimits
 

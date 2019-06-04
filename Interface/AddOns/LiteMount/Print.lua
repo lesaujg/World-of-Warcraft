@@ -4,7 +4,7 @@
 
   AddMessage() into the currently displayed chat window.
 
-  Copyright 2011-2018 Mike Battersby
+  Copyright 2011-2019 Mike Battersby
 
 ----------------------------------------------------------------------------]]--
 
@@ -32,8 +32,15 @@ function LM_PrintError(msg)
     LM_Print("|cffff6666" .. msg .. "|r")
 end
 
+-- This should be replaced with debug types
 function LM_Debug(msg)
     if LM_Options.db.char.debugEnabled == true then
+        LM_Print(msg)
+    end
+end
+
+function LM_UIDebug(msg)
+    if LM_Options.db.char.uiDebugEnabled == true then
         LM_Print(msg)
     end
 end

@@ -4,7 +4,7 @@
 
   Parser/evaluator for action conditions.
 
-  Copyright 2011-2018 Mike Battersby
+  Copyright 2011-2019 Mike Battersby
 
 ----------------------------------------------------------------------------]]--
 
@@ -47,11 +47,6 @@ local CONDITIONS = { }
 CONDITIONS["achievement"] =
     function (cond, v)
         return select(4, GetAchievementInfo(tonumber(v or 0)))
-    end
-
-CONDITIONS["area"] =
-    function (cond, v)
-        LM_WarningAndPrint(format(L.LM_WARN_REPLACE_COND, "area", "map"))
     end
 
 CONDITIONS["aura"] =
@@ -97,11 +92,6 @@ CONDITIONS["combat"] =
         return UnitAffectingCombat("player") or UnitAffectingCombat("pet")
     end
 
-CONDITIONS["continent"] =
-    function (cond, v)
-        LM_WarningAndPrint(format(L.LM_WARN_REPLACE_COND, "continent", "map"))
-    end
-
 -- For completeness, as far as I know. Note that this diverges from the
 -- macro [dead] which is applied to "target".
 CONDITIONS["dead"] =
@@ -139,7 +129,15 @@ CONDITIONS["draw:args"] =
 CONDITIONS["equipped"] =
     function (cond, v)
         if v then
-            return IsEquippedItem(v) or IsEquippedItemType(v)
+            if IsEquippedItem(v) or IsEquippedItemType(v) then
+                return true
+            end
+            -- Pre 8.2 check
+            if not C_MountJournal.GetAppliedMountEquipmentID then return end
+            local id = C_MountJournal.GetAppliedMountEquipmentID()
+            if id and id == tonumber(v) then
+                return true
+            end
         end
     end
 
@@ -185,15 +183,6 @@ CONDITIONS["floating"] =
         return LM_Location:IsFloating()
     end
 
-CONDITIONS["form"] =
-    function (cond, v)
-        if v then
-            return GetShapeshiftForm() == tonumber(v)
-        else
-            return GetShapeshiftForm() > 0
-        end
-    end
-
 CONDITIONS["flyable"] =
     function (cond)
         return LM_Location:CanFly()
@@ -202,6 +191,15 @@ CONDITIONS["flyable"] =
 CONDITIONS["flying"] =
     function (cond)
         return IsFlying()
+    end
+
+CONDITIONS["form"] =
+    function (cond, v)
+        if v then
+            return GetShapeshiftForm() == tonumber(v)
+        else
+            return GetShapeshiftForm() > 0
+        end
     end
 
 CONDITIONS["group"] =
@@ -245,7 +243,11 @@ CONDITIONS["instance"] =
 
 CONDITIONS["map"] =
     function (cond, v)
-        return LM_Location:MapInPath(tonumber(v))
+        if v:sub(1,1) == '*' then
+            return LM_Location.uiMapID == tonumber(v:sub(2))
+        else
+            return LM_Location:MapInPath(tonumber(v))
+        end
     end
 
 CONDITIONS["mod"] =

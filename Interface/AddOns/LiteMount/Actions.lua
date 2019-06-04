@@ -4,7 +4,7 @@
 
   Mounting actions.
 
-  Copyright 2011-2018 Mike Battersby
+  Copyright 2011-2019 Mike Battersby
 
 ----------------------------------------------------------------------------]]--
 
@@ -22,6 +22,29 @@ local function ReplaceVars(list)
 end
 
 local ACTIONS = { }
+
+-- Modifies the list of usableMounts so action list lines after this one
+-- get the restricted list. Always returns no action.
+
+ACTIONS['Limit'] =
+    function (usableMounts, filters)
+        filters = ReplaceVars(filters)
+        local filteredList = usableMounts:FilterSearch(unpack(filters))
+        table.wipe(usableMounts)
+        for k,v in pairs(filteredList) do
+            usableMounts[k] = v
+        end
+    end
+
+-- This is probably not a good idea
+ACTIONS['ResetLimits'] =
+    function (usableMounts)
+        local fullList = LM_PlayerMounts:FilterSearch("CASTABLE", "ENABLED")
+        table.wipe(usableMounts)
+        for k,v in pairs(fullList) do
+            usableMounts[k] = v
+        end
+    end
 
 ACTIONS['Spell'] =
     function (_, filters)
