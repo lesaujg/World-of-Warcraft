@@ -1,0 +1,16 @@
+## Interface: 80100
+## Title: DarkmoonQuestItems
+## Version: 1.2
+## Notes: This addon will show you whether you completed the quests associated with the Darkmoon Faire quest items.
+## Author: Weper
+
+Locales\Localization.lua
+Locales\ItemNames_deDE.lua
+Locales\ItemNames_esES.lua
+Locales\ItemNames_frFR.lua
+Locales\ItemNames_itIT.lua
+Locales\ItemNames_koKR.lua
+Locales\ItemNames_ptBR.lua
+Locales\ItemNames_ruRU.lua
+Locales\ItemNames_zhCN.lua
+DarkmoonQuestItems.lua

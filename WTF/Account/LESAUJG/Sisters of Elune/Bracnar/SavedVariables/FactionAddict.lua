@@ -28,7 +28,7 @@ FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
 		["date"] = "Tuesday 6/4",
-		["rows"] = 3,
+		["rows"] = 12,
 	}, -- [1]
 	{
 		["date"] = "Monday 6/3",
@@ -109,9 +109,18 @@ FactionAddictLogData = {
 }
 FactionAddictLogEntries = {
 	{
-		["The Wardens"] = 250,
-		["Court of Farondis"] = 2200,
+		["Tortollan Seekers"] = 2025,
+		["Argussian Reach"] = 4450,
+		["Darkmoon Faire"] = 2250,
 		["Dreamweavers"] = 1950,
+		["The Nightfallen"] = 500,
+		["Proudmoore Admiralty"] = 875,
+		["Order of Embers"] = 1900,
+		["Storm's Wake"] = 75,
+		["The Wardens"] = 1750,
+		["Court of Farondis"] = 2200,
+		["Army of the Light"] = 7250,
+		["7th Legion"] = 1025,
 	}, -- [1]
 	{
 		["The Nightfallen"] = 1075,
@@ -138,11 +147,11 @@ FactionAddictLogEntries = {
 	{
 		["Champions of Azeroth"] = 2000,
 		["Argussian Reach"] = 3850,
-		["Proudmoore Admiralty"] = 75,
 		["Order of Embers"] = 225,
+		["Court of Farondis"] = 1500,
 		["Storm's Wake"] = 150,
 		["The Wardens"] = 500,
-		["Court of Farondis"] = 1500,
+		["Proudmoore Admiralty"] = 75,
 		["Army of the Light"] = 4100,
 		["7th Legion"] = 450,
 	}, -- [5]

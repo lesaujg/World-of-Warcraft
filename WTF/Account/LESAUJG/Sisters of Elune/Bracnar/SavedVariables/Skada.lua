@@ -12,29 +12,28 @@ SkadaPerCharDB = {
 		["damage"] = 0,
 		["players"] = {
 			{
-				["last"] = 1559653057,
-				["ffdamagedonetargets"] = {
-				},
-				["healingabsorbed"] = 0,
+				["last"] = 1559664472,
 				["ffdamagedonespells"] = {
 				},
+				["healingabsorbed"] = 0,
+				["ffdamagedone"] = 0,
 				["class"] = "HUNTER",
 				["damaged"] = {
 				},
 				["dispells"] = 0,
-				["ffdamagedone"] = 0,
+				["ccbreaks"] = 0,
 				["role"] = "NONE",
 				["time"] = 0,
 				["interrupts"] = 0,
-				["maxhp"] = 198100,
+				["overhealing"] = 0,
 				["deathlog"] = {
 				},
-				["healingspells"] = {
+				["ffdamagedonetargets"] = {
 				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["shielding"] = 0,
+				["maxhp"] = 198100,
 				["damagetaken"] = 0,
 				["power"] = {
 				},
@@ -45,20 +44,28 @@ SkadaPerCharDB = {
 				},
 				["healed"] = {
 				},
-				["overhealing"] = 0,
+				["shielding"] = 0,
 				["name"] = "Bracnar",
-				["alertCount"] = 12,
-				["alertDamage"] = 28384,
-				["auras"] = {
+				["alertCount"] = 29,
+				["alertDamage"] = 184513,
+				["healingspells"] = {
 				},
 				["alert"] = {
 					["High"] = {
-						["alertDamage"] = 12629,
+						["alertDamage"] = 168758,
 						["spell"] = {
 							["+Whirling Edge"] = {
 								["min"] = 0,
 								["alertCount"] = 3,
 								["id"] = 227473,
+								["alertID"] = "High",
+								["max"] = 0,
+								["alertDamage"] = 0,
+							},
+							["+Decaying Ground"] = {
+								["min"] = 0,
+								["alertCount"] = 9,
+								["id"] = 257065,
 								["alertID"] = "High",
 								["max"] = 0,
 								["alertDamage"] = 0,
@@ -71,9 +78,17 @@ SkadaPerCharDB = {
 								["max"] = 4333,
 								["alertDamage"] = 12629,
 							},
+							["Fel Lava"] = {
+								["min"] = 19516,
+								["alertCount"] = 8,
+								["id"] = 251701,
+								["alertID"] = "High",
+								["max"] = 19517,
+								["alertDamage"] = 156129,
+							},
 						},
 						["name"] = "High",
-						["alertCount"] = 6,
+						["alertCount"] = 23,
 					},
 					["Fail"] = {
 						["alertDamage"] = 15755,
@@ -107,7 +122,8 @@ SkadaPerCharDB = {
 						["alertCount"] = 6,
 					},
 				},
-				["ccbreaks"] = 0,
+				["auras"] = {
+				},
 			}, -- [1]
 		},
 		["deaths"] = 0,
@@ -117,12 +133,12 @@ SkadaPerCharDB = {
 		["overhealing"] = 0,
 		["healing"] = 0,
 		["damagetaken"] = 0,
-		["alertDamage"] = 28384,
+		["alertDamage"] = 184513,
 		["starttime"] = 1559609708,
 		["power"] = {
 		},
 		["name"] = "Total",
-		["alertCount"] = 12,
+		["alertCount"] = 29,
 		["dispells"] = 0,
 		["mobhdone"] = 0,
 		["last_action"] = 1559609708,
