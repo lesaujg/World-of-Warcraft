@@ -15,17 +15,18 @@ SkadaPerCharDB = {
 		["players"] = {
 			{
 				["last"] = 1559664472,
-				["role"] = "NONE",
-				["healingabsorbed"] = 0,
-				["dispells"] = 0,
-				["class"] = "HUNTER",
-				["damaged"] = {
-				},
 				["auras"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
+				["ccbreaks"] = 0,
+				["ffdamagedonespells"] = {
+				},
+				["damaged"] = {
+				},
+				["dispells"] = 0,
 				["healingspells"] = {
 				},
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["alertDamage"] = 184513,
@@ -35,23 +36,23 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
+				["shielding"] = 0,
+				["damagetaken"] = 0,
 				["deathlog"] = {
 				},
-				["damagetaken"] = 0,
-				["shielding"] = 0,
 				["id"] = "Player-1169-06A1ACBD",
-				["first"] = 1559652884,
+				["maxhp"] = 198100,
 				["healed"] = {
 				},
 				["damagetakenspells"] = {
 				},
 				["healing"] = 0,
-				["maxhp"] = 198100,
+				["first"] = 1559652884,
 				["ffdamagedonetargets"] = {
 				},
 				["alertCount"] = 29,
 				["overhealing"] = 0,
-				["ccbreaks"] = 0,
+				["role"] = "NONE",
 				["alert"] = {
 					["Fail"] = {
 						["alertCount"] = 6,
@@ -87,6 +88,14 @@ SkadaPerCharDB = {
 					["High"] = {
 						["alertCount"] = 23,
 						["spell"] = {
+							["+Decaying Ground"] = {
+								["min"] = 0,
+								["alertCount"] = 9,
+								["id"] = 257065,
+								["alertID"] = "High",
+								["max"] = 0,
+								["alertDamage"] = 0,
+							},
 							["Whirling Edge"] = {
 								["min"] = 4135,
 								["alertCount"] = 3,
@@ -99,14 +108,6 @@ SkadaPerCharDB = {
 								["min"] = 0,
 								["alertCount"] = 3,
 								["id"] = 227473,
-								["alertID"] = "High",
-								["max"] = 0,
-								["alertDamage"] = 0,
-							},
-							["+Decaying Ground"] = {
-								["min"] = 0,
-								["alertCount"] = 9,
-								["id"] = 257065,
 								["alertID"] = "High",
 								["max"] = 0,
 								["alertDamage"] = 0,
@@ -124,8 +125,7 @@ SkadaPerCharDB = {
 						["alertDamage"] = 168758,
 					},
 				},
-				["ffdamagedonespells"] = {
-				},
+				["class"] = "HUNTER",
 			}, -- [1]
 		},
 		["deaths"] = 0,
