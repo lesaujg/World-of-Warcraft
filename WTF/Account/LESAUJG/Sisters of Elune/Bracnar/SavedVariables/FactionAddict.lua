@@ -27,122 +27,128 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
+		["date"] = "Thursday 6/6",
+		["rows"] = 4,
+	}, -- [1]
+	{
 		["date"] = "Wednesday 6/5",
 		["rows"] = 5,
-	}, -- [1]
+	}, -- [2]
 	{
 		["date"] = "Tuesday 6/4",
 		["rows"] = 12,
-	}, -- [2]
+	}, -- [3]
 	{
 		["date"] = "Monday 6/3",
 		["rows"] = 5,
-	}, -- [3]
+	}, -- [4]
 	{
 		["date"] = "Sunday 6/2",
 		["rows"] = 5,
-	}, -- [4]
+	}, -- [5]
 	{
 		["date"] = "Saturday 6/1",
 		["rows"] = 6,
-	}, -- [5]
+	}, -- [6]
 	{
 		["date"] = "Friday 5/31",
 		["rows"] = 9,
-	}, -- [6]
+	}, -- [7]
 	{
 		["date"] = "Thursday 5/30",
 		["rows"] = 4,
-	}, -- [7]
+	}, -- [8]
 	{
 		["date"] = "Wednesday 5/29",
 		["rows"] = 10,
-	}, -- [8]
+	}, -- [9]
 	{
 		["date"] = "Tuesday 5/28",
 		["rows"] = 1,
-	}, -- [9]
+	}, -- [10]
 	{
 		["date"] = "Monday 5/27",
 		["rows"] = 6,
-	}, -- [10]
+	}, -- [11]
 	{
 		["date"] = "Sunday 5/26",
 		["rows"] = 2,
-	}, -- [11]
+	}, -- [12]
 	{
 		["date"] = "Saturday 5/25",
 		["rows"] = 9,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Friday 5/24",
 		["rows"] = 5,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Thursday 5/23",
 		["rows"] = 5,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Wednesday 5/22",
 		["rows"] = 9,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Sunday 5/5",
 		["rows"] = 1,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Monday 4/29",
 		["rows"] = 6,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Sunday 4/28",
 		["rows"] = 5,
-	}, -- [18]
+	}, -- [19]
 	{
 		["date"] = "Friday 4/26",
 		["rows"] = 5,
-	}, -- [19]
-	{
-		["date"] = "Monday 4/22",
-		["rows"] = 3,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
+	{
+		["7th Legion"] = 150,
+		["Armies of Legionfall"] = 750,
+		["Army of the Light"] = 1000,
+		["Dreamweavers"] = 500,
+	}, -- [1]
 	{
 		["Champions of Azeroth"] = 2000,
 		["Order of Embers"] = 75,
 		["Proudmoore Admiralty"] = 75,
 		["Storm's Wake"] = 75,
 		["7th Legion"] = 150,
-	}, -- [1]
+	}, -- [2]
 	{
 		["Tortollan Seekers"] = 2025,
 		["Argussian Reach"] = 4450,
 		["Darkmoon Faire"] = 2250,
 		["Dreamweavers"] = 1950,
 		["The Nightfallen"] = 500,
-		["Court of Farondis"] = 2200,
 		["Proudmoore Admiralty"] = 875,
+		["Order of Embers"] = 1900,
 		["Storm's Wake"] = 75,
 		["The Wardens"] = 1750,
-		["Order of Embers"] = 1900,
+		["Court of Farondis"] = 2200,
 		["Army of the Light"] = 7250,
 		["7th Legion"] = 1025,
-	}, -- [2]
+	}, -- [3]
 	{
 		["The Nightfallen"] = 1075,
 		["Argussian Reach"] = 5700,
 		["The Wardens"] = 350,
 		["Army of the Light"] = 4650,
 		["Dreamweavers"] = 850,
-	}, -- [3]
+	}, -- [4]
 	{
 		["Champions of Azeroth"] = 450,
 		["Argussian Reach"] = 4200,
 		["Proudmoore Admiralty"] = 1825,
 		["Army of the Light"] = 4500,
 		["7th Legion"] = 2450,
-	}, -- [4]
+	}, -- [5]
 	{
 		["Storm's Wake"] = 2760,
 		["Argussian Reach"] = 3500,
@@ -150,24 +156,24 @@ FactionAddictLogEntries = {
 		["Proudmoore Admiralty"] = 75,
 		["Army of the Light"] = 4450,
 		["7th Legion"] = 875,
-	}, -- [5]
+	}, -- [6]
 	{
 		["Champions of Azeroth"] = 2000,
 		["Argussian Reach"] = 3850,
-		["Proudmoore Admiralty"] = 75,
 		["Order of Embers"] = 225,
+		["Court of Farondis"] = 1500,
 		["Storm's Wake"] = 150,
 		["The Wardens"] = 500,
-		["Court of Farondis"] = 1500,
+		["Proudmoore Admiralty"] = 75,
 		["Army of the Light"] = 4100,
 		["7th Legion"] = 450,
-	}, -- [6]
+	}, -- [7]
 	{
 		["Champions of Azeroth"] = 125,
 		["Proudmoore Admiralty"] = 1025,
 		["Order of Embers"] = 300,
 		["7th Legion"] = 2525,
-	}, -- [7]
+	}, -- [8]
 	{
 		["Tortollan Seekers"] = 425,
 		["Dreamweavers"] = 2300,
@@ -179,10 +185,10 @@ FactionAddictLogEntries = {
 		["Proudmoore Admiralty"] = 575,
 		["Army of the Light"] = 4800,
 		["7th Legion"] = 2675,
-	}, -- [8]
+	}, -- [9]
 	{
 		["Proudmoore Admiralty"] = 75,
-	}, -- [9]
+	}, -- [10]
 	{
 		["Tortollan Seekers"] = 2275,
 		["Argussian Reach"] = 3850,
@@ -190,11 +196,11 @@ FactionAddictLogEntries = {
 		["Order of Embers"] = 75,
 		["Army of the Light"] = 4300,
 		["7th Legion"] = 150,
-	}, -- [10]
+	}, -- [11]
 	{
 		["Proudmoore Admiralty"] = 450,
 		["Storm's Wake"] = 10,
-	}, -- [11]
+	}, -- [12]
 	{
 		["Argussian Reach"] = 4850,
 		["Dreamweavers"] = 500,
@@ -205,21 +211,21 @@ FactionAddictLogEntries = {
 		["Order of Embers"] = 75,
 		["Army of the Light"] = 6600,
 		["7th Legion"] = 150,
-	}, -- [12]
+	}, -- [13]
 	{
 		["Champions of Azeroth"] = 635,
 		["Proudmoore Admiralty"] = 75,
 		["Order of Embers"] = 125,
 		["Storm's Wake"] = 75,
 		["7th Legion"] = 575,
-	}, -- [13]
+	}, -- [14]
 	{
 		["The Nightfallen"] = 1025,
 		["Armies of Legionfall"] = 150,
 		["Argussian Reach"] = 1000,
 		["Tortollan Seekers"] = 175,
 		["7th Legion"] = 1650,
-	}, -- [14]
+	}, -- [15]
 	{
 		["Champions of Azeroth"] = 875,
 		["The Nightfallen"] = 500,
@@ -230,10 +236,10 @@ FactionAddictLogEntries = {
 		["Proudmoore Admiralty"] = 1725,
 		["Tortollan Seekers"] = 2025,
 		["7th Legion"] = 75,
-	}, -- [15]
+	}, -- [16]
 	{
 		["7th Legion"] = 150,
-	}, -- [16]
+	}, -- [17]
 	{
 		["Tortollan Seekers"] = 2025,
 		["Champions of Azeroth"] = 2450,
@@ -241,25 +247,20 @@ FactionAddictLogEntries = {
 		["Order of Embers"] = 112,
 		["Proudmoore Admiralty"] = 1725,
 		["7th Legion"] = 2225,
-	}, -- [17]
+	}, -- [18]
 	{
 		["Storm's Wake"] = 2050,
 		["Tortollan Seekers"] = 775,
 		["Proudmoore Admiralty"] = 112,
 		["Champions of Azeroth"] = 387,
 		["7th Legion"] = 225,
-	}, -- [18]
+	}, -- [19]
 	{
 		["Champions of Azeroth"] = 2450,
 		["Proudmoore Admiralty"] = 113,
 		["Order of Embers"] = 2450,
 		["Storm's Wake"] = 112,
 		["7th Legion"] = 3100,
-	}, -- [19]
-	{
-		["7th Legion"] = 450,
-		["Champions of Azeroth"] = 325,
-		["Storm's Wake"] = 2425,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {

@@ -55,14 +55,6 @@ SkadaPerCharDB = {
 					["High"] = {
 						["alertDamage"] = 168758,
 						["spell"] = {
-							["Whirling Edge"] = {
-								["min"] = 4135,
-								["alertCount"] = 3,
-								["id"] = 227473,
-								["alertID"] = "High",
-								["max"] = 4333,
-								["alertDamage"] = 12629,
-							},
 							["+Whirling Edge"] = {
 								["min"] = 0,
 								["alertCount"] = 3,
@@ -78,6 +70,14 @@ SkadaPerCharDB = {
 								["alertID"] = "High",
 								["max"] = 0,
 								["alertDamage"] = 0,
+							},
+							["Whirling Edge"] = {
+								["min"] = 4135,
+								["alertCount"] = 3,
+								["id"] = 227473,
+								["alertID"] = "High",
+								["max"] = 4333,
+								["alertDamage"] = 12629,
 							},
 							["Fel Lava"] = {
 								["min"] = 19516,

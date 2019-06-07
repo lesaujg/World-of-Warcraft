@@ -25,6 +25,16 @@ SmexyMatsDB = {
 	["ProTree"] = {
 		["Sisters of Elune"] = {
 			["Alliance"] = {
+				["Cooking"] = {
+				},
+				["Archaeology"] = {
+				},
+				["Fishing"] = {
+				},
+				["Engineering"] = {
+				},
+				["Enchanting"] = {
+				},
 			},
 		},
 	},
