@@ -6,13 +6,6 @@ X: 16
 Y: 6
 W: 338
 H: 424
-Frame: SpellBookFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 550
-H: 525
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: BOTTOMRIGHT
@@ -20,3 +13,10 @@ X: -159
 Y: 0
 W: 250
 H: 615
+Frame: SpellBookFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 550
+H: 525

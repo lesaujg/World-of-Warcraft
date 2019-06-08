@@ -6,18 +6,18 @@ SmexyMatsDB = {
 		["IsColorBlind"] = false,
 		["ItemIDs"] = false,
 		["cbOneR"] = 1,
-		["Sources"] = false,
+		["Sources"] = true,
 		["cbTwoB"] = 1,
 		["ErrorReporting"] = true,
 		["Enabled"] = true,
 		["cbOneB"] = 1,
 		["cbOneG"] = 1,
-		["SMText"] = false,
+		["SMText"] = true,
 		["SM_EP_One_Text"] = "|cFFFFFF00",
 		["AllRealms"] = true,
 		["IDs"] = {
 		},
-		["Professions"] = false,
+		["Professions"] = true,
 		["cbTwoR"] = 1,
 		["SM_EP_One_Title"] = "|cFF00CCFF",
 		["cbTwoG"] = 1,
@@ -25,28 +25,6 @@ SmexyMatsDB = {
 	["ProTree"] = {
 		["Sisters of Elune"] = {
 			["Alliance"] = {
-				["Cooking"] = {
-					["Bracnar"] = {
-					},
-				},
-				["Archaeology"] = {
-					["Bracnar"] = {
-					},
-				},
-				["Fishing"] = {
-					["Bracnar"] = {
-					},
-				},
-				["Engineering"] = {
-					["Bracnar"] = {
-					},
-				},
-				["Enchanting"] = {
-					["Bracnar"] = {
-					},
-					["Clothgar"] = {
-					},
-				},
 			},
 		},
 	},

@@ -1,5 +1,7 @@
 
 SkadaPerCharDB = {
+	["sets"] = {
+	},
 	["total"] = {
 		["healingabsorbed"] = 0,
 		["auras"] = {
@@ -8,61 +10,67 @@ SkadaPerCharDB = {
 		["time"] = 0,
 		["interrupts"] = 0,
 		["ffdamagedone"] = 0,
-		["shielding"] = 0,
+		["mobtaken"] = 0,
 		["damage"] = 0,
 		["players"] = {
 			{
-				["last"] = 1559664472,
-				["class"] = "HUNTER",
+				["last"] = 1559997121,
+				["dispells"] = 0,
 				["healingabsorbed"] = 0,
-				["healingspells"] = {
-				},
-				["ffdamagedonespells"] = {
-				},
+				["role"] = "NONE",
+				["class"] = "HUNTER",
 				["damaged"] = {
 				},
 				["auras"] = {
 				},
-				["role"] = "NONE",
-				["ccbreaks"] = 0,
+				["ffdamagedone"] = 0,
+				["healingspells"] = {
+				},
 				["time"] = 0,
 				["interrupts"] = 0,
-				["overhealing"] = 0,
-				["shielding"] = 0,
-				["ffdamagedonetargets"] = {
+				["alertDamage"] = 192734,
+				["power"] = {
 				},
+				["name"] = "Bracnar",
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["first"] = 1559652884,
-				["damagetaken"] = 0,
-				["power"] = {
-				},
-				["id"] = "Player-1169-06A1ACBD",
-				["maxhp"] = 198100,
-				["healing"] = 0,
-				["damagetakenspells"] = {
-				},
-				["healed"] = {
-				},
 				["deathlog"] = {
 				},
-				["name"] = "Bracnar",
-				["alertCount"] = 29,
-				["alertDamage"] = 184513,
-				["ffdamagedone"] = 0,
+				["damagetaken"] = 0,
+				["shielding"] = 0,
+				["id"] = "Player-1169-06A1ACBD",
+				["first"] = 1559652884,
+				["healed"] = {
+				},
+				["damagetakenspells"] = {
+				},
+				["healing"] = 0,
+				["maxhp"] = 198100,
+				["ffdamagedonetargets"] = {
+				},
+				["alertCount"] = 33,
+				["overhealing"] = 0,
+				["ccbreaks"] = 0,
 				["alert"] = {
-					["High"] = {
-						["alertDamage"] = 168758,
+					["Low"] = {
+						["alertDamage"] = 0,
 						["spell"] = {
-							["+Whirling Edge"] = {
+							["+Kicking Up Dust"] = {
 								["min"] = 0,
-								["alertCount"] = 3,
-								["id"] = 227473,
-								["alertID"] = "High",
+								["alertCount"] = 2,
+								["id"] = 253989,
+								["alertID"] = "Low",
 								["max"] = 0,
 								["alertDamage"] = 0,
 							},
+						},
+						["name"] = "Low",
+						["alertCount"] = 2,
+					},
+					["High"] = {
+						["alertCount"] = 23,
+						["spell"] = {
 							["+Decaying Ground"] = {
 								["min"] = 0,
 								["alertCount"] = 9,
@@ -79,6 +87,14 @@ SkadaPerCharDB = {
 								["max"] = 4333,
 								["alertDamage"] = 12629,
 							},
+							["+Whirling Edge"] = {
+								["min"] = 0,
+								["alertCount"] = 3,
+								["id"] = 227473,
+								["alertID"] = "High",
+								["max"] = 0,
+								["alertDamage"] = 0,
+							},
 							["Fel Lava"] = {
 								["min"] = 19516,
 								["alertCount"] = 8,
@@ -89,10 +105,10 @@ SkadaPerCharDB = {
 							},
 						},
 						["name"] = "High",
-						["alertCount"] = 23,
+						["alertDamage"] = 168758,
 					},
 					["Fail"] = {
-						["alertDamage"] = 15755,
+						["alertCount"] = 8,
 						["spell"] = {
 							["+Flashlight"] = {
 								["min"] = 0,
@@ -101,6 +117,14 @@ SkadaPerCharDB = {
 								["alertID"] = "Fail",
 								["max"] = 0,
 								["alertDamage"] = 0,
+							},
+							["Chaotic Felburst"] = {
+								["min"] = 4031,
+								["alertCount"] = 2,
+								["id"] = 223425,
+								["alertID"] = "Fail",
+								["max"] = 4190,
+								["alertDamage"] = 8221,
 							},
 							["+Poetry Slam"] = {
 								["min"] = 0,
@@ -120,30 +144,29 @@ SkadaPerCharDB = {
 							},
 						},
 						["name"] = "Fail",
-						["alertCount"] = 6,
+						["alertDamage"] = 23976,
 					},
 				},
-				["dispells"] = 0,
+				["ffdamagedonespells"] = {
+				},
 			}, -- [1]
 		},
 		["deaths"] = 0,
 		["mobs"] = {
 		},
-		["mobtaken"] = 0,
+		["shielding"] = 0,
 		["overhealing"] = 0,
 		["healing"] = 0,
-		["damagetaken"] = 0,
-		["alertDamage"] = 184513,
+		["dispells"] = 0,
+		["alertDamage"] = 192734,
 		["starttime"] = 1559609708,
 		["power"] = {
 		},
 		["name"] = "Total",
-		["alertCount"] = 29,
-		["dispells"] = 0,
+		["alertCount"] = 33,
+		["damagetaken"] = 0,
 		["mobhdone"] = 0,
 		["last_action"] = 1559609708,
 		["mobdone"] = 0,
-	},
-	["sets"] = {
 	},
 }

@@ -62,12 +62,12 @@ DBM_AllSavedOptions = {
 		["RangeFrameRadarX"] = 100,
 		["ShowRespawn"] = true,
 		["HideQuestTooltips"] = true,
+		["ShowFlashFrame"] = true,
 		["SpecialWarningFlashCol4"] = {
 			1, -- [1]
 			0, -- [2]
 			1, -- [3]
 		},
-		["ShowFlashFrame"] = true,
 		["EventSoundTurle"] = "None",
 		["FilterTrashWarnings2"] = true,
 		["EventSoundWipe"] = "None",
@@ -98,11 +98,7 @@ DBM_AllSavedOptions = {
 		["PTCountThreshold"] = 5,
 		["SpecialWarningSound"] = 8174,
 		["SpecialWarningFontSize2"] = 35,
-		["SpecialWarningFlashCol5"] = {
-			0.2, -- [1]
-			1, -- [2]
-			1, -- [3]
-		},
+		["DontShowSpecialWarningText"] = false,
 		["AutoReplySound"] = true,
 		["DisableGuildStatus"] = false,
 		["SpecialWarningPoint"] = "CENTER",
@@ -115,7 +111,7 @@ DBM_AllSavedOptions = {
 		["PTCountThreshold2"] = 5,
 		["HideTooltips"] = false,
 		["RangeFrameSound2"] = "none",
-		["HUDSizeOverride"] = false,
+		["EventSoundDungeonBGM"] = "None",
 		["ShowPizzaMessage"] = true,
 		["CountdownVoice2"] = "Kolt",
 		["AutoAcceptGuildInvite"] = false,
@@ -170,33 +166,37 @@ DBM_AllSavedOptions = {
 				["r"] = 1,
 			}, -- [4]
 		},
-		["DontShowBossAnnounces"] = false,
-		["SWarningAlphabetical"] = true,
 		["HPFrameMaxEntries"] = 5,
+		["SWarningAlphabetical"] = true,
+		["DontShowBossAnnounces"] = false,
 		["BlockNoteShare"] = false,
 		["InfoFrameLines"] = 0,
-		["MovieFilter2"] = "OnlyFight",
-		["FilterInterrupt"] = true,
-		["ModelSoundValue"] = "Short",
-		["FilterSelfHud"] = true,
 		["CountdownVoice3v2"] = "Pewsey",
 		["HUDTexture2"] = "highlight",
+		["ModelSoundValue"] = "Short",
+		["HUDColor3"] = {
+			1, -- [1]
+			0.5, -- [2]
+			0, -- [3]
+		},
+		["AutoCorrectTimer"] = false,
+		["FilterInterrupt"] = true,
 		["RangeFrameRadarPoint"] = "CENTER",
-		["DontShowInfoFrame"] = false,
+		["SpecialWarningY"] = 75,
 		["SpecialWarningFontStyle"] = "THICKOUTLINE",
 		["WarningY"] = 260,
 		["RangeFrameUpdates"] = "Average",
-		["AutoCorrectTimer"] = false,
-		["CustomSounds"] = 0,
-		["RaidWarningSound"] = 11742,
+		["MovieFilter2"] = "OnlyFight",
 		["DontRestoreRange"] = false,
-		["ShortTimerText"] = true,
-		["SpecialWarningFlashRepeat3"] = true,
+		["RaidWarningSound"] = 11742,
+		["CustomSounds"] = 0,
 		["RoleSpecAlert"] = true,
+		["SpecialWarningFlashRepeat3"] = true,
+		["ShortTimerText"] = true,
 		["WhisperStats"] = false,
 		["VoiceOverSpecW2"] = "DefaultOnly",
 		["WarningFontShadow"] = true,
-		["MISTSTWMessageShown"] = false,
+		["HUDAlpha3"] = 0.5,
 		["SpecialWarningFlashAlph5"] = 0.5,
 		["SpecialWarningDuration2"] = 1.5,
 		["HealthFrameWidth"] = 200,
@@ -216,11 +216,11 @@ DBM_AllSavedOptions = {
 		["HUDColorOverride"] = false,
 		["DontSetIcons"] = false,
 		["BigBrotherAnnounceToRaid"] = false,
-		["SpecialWarningFlashRepeat4"] = false,
 		["CountdownVoice"] = "Corsica",
+		["SpecialWarningFlashRepeat4"] = false,
 		["BonusFilter"] = "Never",
 		["AutoRespond"] = true,
-		["SpecialWarningFlashRepeat2"] = false,
+		["DontShowUserTimers"] = false,
 		["EventDungMusicMythicFilter"] = true,
 		["SpecialWarningFlashRepeat5"] = true,
 		["DisableStatusWhisper"] = false,
@@ -230,7 +230,7 @@ DBM_AllSavedOptions = {
 		["DontPlayCountdowns"] = false,
 		["ShowBigBrotherOnCombatStart"] = false,
 		["SpecialWarningIcon"] = true,
-		["DontShowUserTimers"] = false,
+		["SpecialWarningFlashRepeat2"] = false,
 		["SpecialWarningFlashAlph1"] = 0.3,
 		["ShowDefeatMessage"] = true,
 		["HUDAlphaOverride"] = false,
@@ -238,16 +238,12 @@ DBM_AllSavedOptions = {
 		["RangeFrameLocked"] = false,
 		["InfoFrameShowSelf"] = false,
 		["SpecialWarningFont"] = "Fonts\\FRIZQT__.TTF",
+		["MISTSTWMessageShown"] = false,
 		["DontPlayPTCountdown"] = false,
-		["HUDAlpha3"] = 0.5,
 		["DontShowBossTimers"] = false,
 		["HUDTexture4"] = "highlight",
-		["SpecialWarningY"] = 75,
-		["HUDColor3"] = {
-			1, -- [1]
-			0.5, -- [2]
-			0, -- [3]
-		},
+		["DontShowInfoFrame"] = false,
+		["FilterSelfHud"] = true,
 		["HUDSize4"] = 5,
 		["WorldBossNearAlert"] = false,
 		["WarningX"] = 0,
@@ -266,7 +262,7 @@ DBM_AllSavedOptions = {
 		["HUDAlpha4"] = 0.5,
 		["AdvancedAutologBosses"] = false,
 		["SpecialWarningFlashRepeat1"] = false,
-		["EventSoundDungeonBGM"] = "None",
+		["HUDSizeOverride"] = false,
 		["ShowGuildMessages"] = true,
 		["Enabled"] = true,
 		["SpecialWarningX"] = 0,
@@ -274,7 +270,11 @@ DBM_AllSavedOptions = {
 		["ShowWarningsInChat"] = true,
 		["RLReadyCheckSound"] = true,
 		["DontShowPTCountdownText"] = false,
-		["DontShowSpecialWarningText"] = false,
+		["SpecialWarningFlashCol5"] = {
+			0.2, -- [1]
+			1, -- [2]
+			1, -- [3]
+		},
 		["LogOnlyRaidBosses"] = false,
 		["EventSoundMusic"] = "None",
 		["HUDTexture3"] = "highlight",
