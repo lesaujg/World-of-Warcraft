@@ -1,7 +1,5 @@
 
 SkadaPerCharDB = {
-	["sets"] = {
-	},
 	["total"] = {
 		["healingabsorbed"] = 0,
 		["auras"] = {
@@ -10,51 +8,52 @@ SkadaPerCharDB = {
 		["time"] = 0,
 		["interrupts"] = 0,
 		["ffdamagedone"] = 0,
-		["mobtaken"] = 0,
+		["shielding"] = 0,
 		["damage"] = 0,
 		["players"] = {
 			{
 				["last"] = 1559997121,
-				["dispells"] = 0,
-				["healingabsorbed"] = 0,
-				["role"] = "NONE",
 				["class"] = "HUNTER",
+				["healingabsorbed"] = 0,
+				["healingspells"] = {
+				},
+				["ffdamagedonespells"] = {
+				},
 				["damaged"] = {
 				},
 				["auras"] = {
 				},
-				["ffdamagedone"] = 0,
-				["healingspells"] = {
-				},
+				["role"] = "NONE",
+				["ccbreaks"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
-				["alertDamage"] = 192734,
-				["power"] = {
+				["overhealing"] = 0,
+				["shielding"] = 0,
+				["ffdamagedonetargets"] = {
 				},
-				["name"] = "Bracnar",
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["deathlog"] = {
-				},
-				["damagetaken"] = 0,
-				["shielding"] = 0,
-				["id"] = "Player-1169-06A1ACBD",
 				["first"] = 1559652884,
-				["healed"] = {
+				["damagetaken"] = 0,
+				["power"] = {
 				},
+				["id"] = "Player-1169-06A1ACBD",
+				["maxhp"] = 198100,
+				["healing"] = 0,
 				["damagetakenspells"] = {
 				},
-				["healing"] = 0,
-				["maxhp"] = 198100,
-				["ffdamagedonetargets"] = {
+				["healed"] = {
 				},
+				["deathlog"] = {
+				},
+				["name"] = "Bracnar",
 				["alertCount"] = 33,
-				["overhealing"] = 0,
-				["ccbreaks"] = 0,
+				["alertDamage"] = 192734,
+				["ffdamagedone"] = 0,
 				["alert"] = {
 					["Low"] = {
-						["alertDamage"] = 0,
+						["alertCount"] = 2,
 						["spell"] = {
 							["+Kicking Up Dust"] = {
 								["min"] = 0,
@@ -66,10 +65,10 @@ SkadaPerCharDB = {
 							},
 						},
 						["name"] = "Low",
-						["alertCount"] = 2,
+						["alertDamage"] = 0,
 					},
 					["High"] = {
-						["alertCount"] = 23,
+						["alertDamage"] = 168758,
 						["spell"] = {
 							["+Decaying Ground"] = {
 								["min"] = 0,
@@ -105,10 +104,10 @@ SkadaPerCharDB = {
 							},
 						},
 						["name"] = "High",
-						["alertDamage"] = 168758,
+						["alertCount"] = 23,
 					},
 					["Fail"] = {
-						["alertCount"] = 8,
+						["alertDamage"] = 23976,
 						["spell"] = {
 							["+Flashlight"] = {
 								["min"] = 0,
@@ -144,29 +143,30 @@ SkadaPerCharDB = {
 							},
 						},
 						["name"] = "Fail",
-						["alertDamage"] = 23976,
+						["alertCount"] = 8,
 					},
 				},
-				["ffdamagedonespells"] = {
-				},
+				["dispells"] = 0,
 			}, -- [1]
 		},
 		["deaths"] = 0,
 		["mobs"] = {
 		},
-		["shielding"] = 0,
+		["mobtaken"] = 0,
 		["overhealing"] = 0,
 		["healing"] = 0,
-		["dispells"] = 0,
+		["damagetaken"] = 0,
 		["alertDamage"] = 192734,
 		["starttime"] = 1559609708,
 		["power"] = {
 		},
 		["name"] = "Total",
 		["alertCount"] = 33,
-		["damagetaken"] = 0,
+		["dispells"] = 0,
 		["mobhdone"] = 0,
 		["last_action"] = 1559609708,
 		["mobdone"] = 0,
+	},
+	["sets"] = {
 	},
 }

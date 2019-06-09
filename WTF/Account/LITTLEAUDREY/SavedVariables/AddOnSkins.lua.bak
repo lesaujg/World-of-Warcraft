@@ -10,14 +10,14 @@ AddOnSkinsDB = {
 		["Noeraa - Sisters of Elune"] = {
 		},
 		["Torinara - Sisters of Elune"] = {
-			["ChangeLogVersion"] = 4.15,
 			["Blizzard_Spellbook"] = false,
 			["Blizzard_StackSplit"] = false,
+			["ChangeLogVersion"] = 4.15,
 		},
 		["Allala - Sisters of Elune"] = {
+			["ChangeLogVersion"] = 4.15,
 			["Blizzard_Spellbook"] = false,
 			["Blizzard_StackSplit"] = false,
-			["ChangeLogVersion"] = 4.15,
 		},
 		["Aloraal - Sisters of Elune"] = {
 		},
