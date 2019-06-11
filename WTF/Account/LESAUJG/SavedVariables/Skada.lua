@@ -5,12 +5,12 @@ SkadaDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Uldaris - Sisters of Elune"] = "Default",
+		["Clothgar - Sisters of Elune"] = "Default",
 		["Galinar - Sisters of Elune"] = "Default",
 		["Tauro - Sisters of Elune"] = "Default",
-		["Torinar - Sisters of Elune"] = "Default",
-		["Ghiaccioli - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
 		["Herbinator - Sisters of Elune"] = "Default",
+		["Ghiaccioli - Sisters of Elune"] = "Default",
 		["Orig - Sisters of Elune"] = "Default",
 		["Mandelbrot - Sisters of Elune"] = "Default",
 		["Edaka - Sisters of Elune"] = "Default",
@@ -18,8 +18,8 @@ SkadaDB = {
 		["Belrath - Sisters of Elune"] = "Default",
 		["Leanara - Sisters of Elune"] = "Default",
 		["Vellamun - Ravenholdt"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
-		["Clothgar - Sisters of Elune"] = "Default",
+		["Torinar - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -35,7 +35,7 @@ SkadaDB = {
 					["background"] = {
 						["height"] = 162.857345581055,
 					},
-					["x"] = 19.0432090759277,
+					["x"] = 19.0432071685791,
 				}, -- [1]
 			},
 			["icon"] = {
@@ -44,9 +44,9 @@ SkadaDB = {
 			},
 			["hidesolo"] = true,
 			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
 				["1.6.3"] = true,
+				["1.6.4"] = true,
+				["1.6.7"] = true,
 			},
 			["reset"] = {
 				["join"] = 2,
