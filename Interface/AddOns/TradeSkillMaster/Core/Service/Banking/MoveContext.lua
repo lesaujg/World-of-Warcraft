@@ -181,9 +181,7 @@ function GuildBankToBagMoveContext.MoveSlot(self, fromSlotId, toSlotId, quantity
 end
 
 function GuildBankToBagMoveContext.GetSlotQuantity(self, slotId)
-	local tab, slot = TSMAPI_FOUR.Util.SplitSlotId(slotId)
-	QueryGuildBankTab(tab)
-	local _, quantity = GetGuildBankItemInfo(tab, slot)
+	local _, quantity = GetGuildBankItemInfo(TSMAPI_FOUR.Util.SplitSlotId(slotId))
 	return quantity or 0
 end
 
