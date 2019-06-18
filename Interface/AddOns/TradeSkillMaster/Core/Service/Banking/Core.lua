@@ -207,6 +207,10 @@ function private.MoveThread(context, callback)
 		end
 	end
 
+	if private.openFrame == "GUILD_BANK" then
+		QueryGuildBankTab(GetCurrentGuildBankTab())
+	end
+
 	TSMAPI_FOUR.Thread.ReleaseSafeTempTable(slotIds)
 	TSMAPI_FOUR.Thread.ReleaseSafeTempTable(slotItemString)
 	TSMAPI_FOUR.Thread.ReleaseSafeTempTable(slotMoveQuantity)
