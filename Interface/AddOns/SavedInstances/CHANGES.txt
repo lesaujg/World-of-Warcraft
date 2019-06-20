@@ -1,16 +1,37 @@
-tag 1226362c9dae7e308e611f57ec5e84661800d448 8.1.3
+tag 910cf74a4c9c7f49a27b79317609b1e3b78e9c5d 8.1.4
 Author:	Benjamin Staneck <staneck@gmail.com>
-Date:	Tue Apr 23 16:56:46 2019 +0200
+Date:	Fri Jun 14 01:50:11 2019 +0200
 
-commit 24c7e73d5b8175d9537a9149ac723202fbe2910f
+commit ddfc7c656e3d54d168ade4e87eb3281d7a8a1bdb
 Author: LiangYuxuan <lyx@lyx.es>
-Date:   Tue Apr 23 16:34:33 2019 +0800
+Date:   Thu May 9 21:08:51 2019 +0800
 
-    Use core:Refresh to update Warfront
+    fixes #279
 
-commit 3638bc0bb8abb5a924717ab3a7a81bdfdcab03e5
+commit 7a2761f8e1576ab5fed33932228b9b69b8961a96
 Author: LiangYuxuan <lyx@lyx.es>
-Date:   Tue Apr 23 08:49:26 2019 +0800
+Date:   Sun May 5 23:15:22 2019 +0800
 
-    fixes #268
+    Track experience and rest experience
+    closes #181
+
+commit 3e38d55497367a8e69c69b300e00a00bbef1b8a1
+Author: LiangYuxuan <lyx@lyx.es>
+Date:   Sat May 4 21:04:05 2019 +0800
+
+    Update Warfront after completing quest
+    fixes #276
+
+commit 36d6aaad31cba81442137cd1873a3c23048c623c
+Author: LiangYuxuan <lyx@lyx.es>
+Date:   Fri May 3 18:12:31 2019 +0800
+
+    Update Timewalking Weekly iconTexture
+
+commit dc0d88b8b4a65a51709929546361dbdc2cfcd3dc
+Author: LiangYuxuan <lyx@lyx.es>
+Date:   Fri May 3 14:54:50 2019 +0800
+
+    Use M+ Keystone Abbr. from Raider.io
+    closes #275
 
