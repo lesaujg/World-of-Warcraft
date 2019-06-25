@@ -13,14 +13,14 @@ SmexyMatsDB = {
 		["cbOneB"] = 1,
 		["cbOneG"] = 1,
 		["SMText"] = false,
-		["cbTwoG"] = 1,
+		["SM_EP_One_Text"] = "|cFFFFFF00",
 		["AllRealms"] = true,
 		["IDs"] = {
 		},
 		["Professions"] = false,
 		["cbTwoR"] = 1,
 		["SM_EP_One_Title"] = "|cFF00CCFF",
-		["SM_EP_One_Text"] = "|cFFFFFF00",
+		["cbTwoG"] = 1,
 	},
 	["ProTree"] = {
 		["Sisters of Elune"] = {
@@ -34,6 +34,8 @@ SmexyMatsDB = {
 				["Engineering"] = {
 				},
 				["Enchanting"] = {
+					["Clothgar"] = {
+					},
 				},
 			},
 		},
