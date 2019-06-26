@@ -1,6 +1,6 @@
 -- AskMrRobot-Serializer will serialize and communicate character data between users.
 
-local MAJOR, MINOR = "AskMrRobot-Serializer", 76
+local MAJOR, MINOR = "AskMrRobot-Serializer", 77
 local Amr, oldminor = LibStub:NewLibrary(MAJOR, MINOR)
 
 if not Amr then return end -- already loaded by something else
@@ -492,6 +492,10 @@ function Amr:GetPlayerData()
 	ret.Specs = {}
     ret.Talents = {}
 	readSpecs(ret)
+
+	-- these get updated later, since need to cache info for inactive specs
+	ret.UnlockedEssences = {}
+	ret.Essences = {}
 	
 	ret.Equipped = {}	
 	readEquippedItems(ret)
@@ -687,7 +691,15 @@ function Amr:SerializePlayerData(data, complete)
         if data.Specs[spec] and (complete or spec == data.ActiveSpec) then
             table.insert(fields, ".s" .. spec) -- indicates the start of a spec block
 			table.insert(fields, data.Specs[spec])
-            table.insert(fields, data.Talents[spec] or "")			
+			table.insert(fields, data.Talents[spec] or "")
+			
+			local essences = {}
+			if data.Essences and data.Essences[spec] then
+				for i, ess in ipairs(data.Essences[spec]) do
+					table.insert(essences, table.concat(ess, "."))
+				end
+			end
+			table.insert(fields, table.concat(essences, "_"))
         end
     end
     
@@ -706,6 +718,14 @@ function Amr:SerializePlayerData(data, complete)
                 appendItemsToExport(fields, itemObjects)
             end
         end
+	end
+
+	-- export unlocked essences
+	if data.UnlockedEssences then
+		table.insert(fields, ".ess")
+		for i, ess in ipairs(data.UnlockedEssences) do
+			table.insert(fields, table.concat(ess, "_"))
+		end
 	end
     
     -- if doing a complete export, include bank/bag items too
@@ -735,11 +755,13 @@ function Amr:SerializePlayerData(data, complete)
 
 end
 
+--[[
 -- Shortcut for the common use case: serialize the player's currently active setup with no extras.
 function Amr:SerializePlayer()
 	local data = self:GetPlayerData()
 	return self:SerializePlayerData(data)
 end
+]]
 
 --[[
 ----------------------------------------------------------------------------------------------------------------------

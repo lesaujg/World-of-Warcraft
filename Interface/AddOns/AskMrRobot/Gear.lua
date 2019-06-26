@@ -223,11 +223,13 @@ local function renderGear(setupId, container)
 	local gear
 	local spec
 	local setupIndex
+	local essences
 	for i, setup in ipairs(Amr.db.char.GearSetups) do
 		if setup.Id == setupId then
 			setupIndex = i
 			gear = setup.Gear
 			spec = setup.SpecSlot
+			essences = setup.Essences
 			break
 		end
 	end
@@ -311,6 +313,7 @@ local function renderGear(setupId, container)
 			end
 
 			local isAzerite = optimalItem and C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItemByID(optimalItem.id)
+			local isEssence = essences and optimalItem and optimalItem.id == 158075
 			
 			-- find the item in the player's inventory that best matches what the optimization wants to use
 			local matchItem = Amr:FindMatchingItem(optimalItem, player, usedItems)
@@ -370,7 +373,7 @@ local function renderGear(setupId, container)
 			-- modifications
 			if optimalItem then
 
-				-- gems or azerite powers
+				-- gems or azerite powers or essences
 				local prevSocket = nil
 
 				if isAzerite then
@@ -390,6 +393,8 @@ local function renderGear(setupId, container)
 							prevSocket = socketBorder
 						end
 					end
+				elseif isEssence then
+					-- TODO: render essence differences
 				else
 					for i = 1, #optimalItem.gemIds do
 						-- we rely on the fact that the gear sets coming back from the site will almost always have all sockets filled,

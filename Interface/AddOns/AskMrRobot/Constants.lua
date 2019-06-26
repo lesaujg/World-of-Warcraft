@@ -2,7 +2,7 @@ local Amr = LibStub("AceAddon-3.0"):GetAddon("AskMrRobot")
 local L = LibStub("AceLocale-3.0"):GetLocale("AskMrRobot", true)
 
 -- min import version that we will read from the website
-Amr.MIN_IMPORT_VERSION = 65
+Amr.MIN_IMPORT_VERSION = 77
 
 -- min addon version that we will support for inter-addon communication
 Amr.MIN_ADDON_VERSION = 65

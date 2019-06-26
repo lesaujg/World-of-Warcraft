@@ -246,6 +246,18 @@ local function parseItemList(parts, startPos, endToken, hasSlot)
     return importData
 end
 
+local function parseEssenceList(essenceString)
+    local ret = {}
+
+    local parts = { strsplit("_", essenceString) }
+    for i = 1, #parts do
+        local essence = { strsplit(".", parts[i]) }
+        table.insert(ret, { tonumber(essence[0]), tonumber(essence[1]), tonumber(essence[2]) })
+    end
+
+    return ret
+end
+
 --
 -- Import a character, returning nil on success, otherwise an error message, import result stored in the db.
 --
@@ -263,8 +275,7 @@ function Amr:ImportCharacter(data, isTest, isChild)
     
     if #specParts > 1 and specParts[1] == "_junk_" then
         -- if the string starts with "_junk_" then it is the junk list
-        Amr:ImportJunkList(specParts[2], currentPlayerData)
-        return
+        return Amr:ImportJunkList(specParts[2], currentPlayerData)
 
     elseif #specParts > 1 then
         -- clear out any previously-imported BiB setups when importing new ones (non-BiB will always be imported one at a time)
@@ -343,8 +354,10 @@ function Amr:ImportCharacter(data, isTest, isChild)
     
     -- if we make it this far, the data is valid, so read item information
 	local specSlot = tonumber(parts[11])
-	
-    local importData = parseItemList(parts, 16, "n/a", true)
+    
+    local essences = parseEssenceList(parts[15])
+
+    local importData = parseItemList(parts, 17, "n/a", true)
     
     -- extra information contains setup id, display label, then extra enchant info        
     parts = { strsplit("@", data1[3]) }
@@ -398,7 +411,8 @@ function Amr:ImportCharacter(data, isTest, isChild)
             SpecSlot = tonumber(specSlot),
             Id = setupId,
             Label = setupName,
-            Gear = importData
+            Gear = importData,
+            Essences = essences
         }
 
         if not result.IsBib then
