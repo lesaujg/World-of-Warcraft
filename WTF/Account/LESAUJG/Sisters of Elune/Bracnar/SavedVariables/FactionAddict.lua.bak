@@ -16,118 +16,121 @@ FactionAddictConfig = {
 	["CB_STANDING_PARAGON"] = true,
 	["CB_CATEGORY_WOTLK"] = true,
 	["CB_STANDING_NEUTRAL0"] = true,
-	["CB_OPTION_AUTOBAR"] = true,
-	["CB_FILTER_SHOW_HO"] = true,
+	["CB_CATEGORY_BFA"] = true,
+	["CB_STANDING_HATED"] = true,
 	["CB_FILTER_SHOW_AO"] = true,
 	["CB_CATEGORY_WOD"] = true,
 	["CB_CATEGORY_LG"] = true,
-	["CB_STANDING_HATED"] = true,
-	["CB_CATEGORY_BFA"] = true,
+	["CB_FILTER_SHOW_HO"] = true,
+	["CB_OPTION_AUTOBAR"] = true,
 }
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
+		["date"] = "Monday 6/24",
+		["rows"] = 1,
+	}, -- [1]
+	{
 		["date"] = "Thursday 6/20",
 		["rows"] = 2,
-	}, -- [1]
+	}, -- [2]
 	{
 		["date"] = "Tuesday 6/18",
 		["rows"] = 1,
-	}, -- [2]
+	}, -- [3]
 	{
 		["date"] = "Sunday 6/16",
 		["rows"] = 1,
-	}, -- [3]
+	}, -- [4]
 	{
 		["date"] = "Wednesday 6/12",
 		["rows"] = 2,
-	}, -- [4]
+	}, -- [5]
 	{
 		["date"] = "Tuesday 6/11",
 		["rows"] = 4,
-	}, -- [5]
+	}, -- [6]
 	{
 		["date"] = "Monday 6/10",
 		["rows"] = 10,
-	}, -- [6]
+	}, -- [7]
 	{
 		["date"] = "Sunday 6/9",
 		["rows"] = 10,
-	}, -- [7]
+	}, -- [8]
 	{
 		["date"] = "Saturday 6/8",
 		["rows"] = 5,
-	}, -- [8]
+	}, -- [9]
 	{
 		["date"] = "Thursday 6/6",
 		["rows"] = 4,
-	}, -- [9]
+	}, -- [10]
 	{
 		["date"] = "Wednesday 6/5",
 		["rows"] = 5,
-	}, -- [10]
+	}, -- [11]
 	{
 		["date"] = "Tuesday 6/4",
 		["rows"] = 12,
-	}, -- [11]
+	}, -- [12]
 	{
 		["date"] = "Monday 6/3",
 		["rows"] = 5,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Sunday 6/2",
 		["rows"] = 5,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Saturday 6/1",
 		["rows"] = 6,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Friday 5/31",
 		["rows"] = 9,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Thursday 5/30",
 		["rows"] = 4,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Wednesday 5/29",
 		["rows"] = 10,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Tuesday 5/28",
 		["rows"] = 1,
-	}, -- [18]
+	}, -- [19]
 	{
 		["date"] = "Monday 5/27",
 		["rows"] = 6,
-	}, -- [19]
-	{
-		["date"] = "Sunday 5/26",
-		["rows"] = 2,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
 	{
-		["Storm's Wake"] = 200,
-		["Proudmoore Admiralty"] = 650,
+		["7th Legion"] = 150,
 	}, -- [1]
 	{
-		["7th Legion"] = 75,
+		["Proudmoore Admiralty"] = 650,
+		["Storm's Wake"] = 200,
 	}, -- [2]
 	{
 		["7th Legion"] = 75,
 	}, -- [3]
 	{
+		["7th Legion"] = 75,
+	}, -- [4]
+	{
 		["Army of the Light"] = 2100,
 		["Argussian Reach"] = 2100,
-	}, -- [4]
+	}, -- [5]
 	{
 		["The Nightfallen"] = 750,
 		["Armies of Legionfall"] = 500,
 		["Army of the Light"] = 7475,
 		["Argussian Reach"] = 6300,
-	}, -- [5]
+	}, -- [6]
 	{
 		["Argussian Reach"] = 4425,
 		["Tortollan Seekers"] = 175,
@@ -135,11 +138,11 @@ FactionAddictLogEntries = {
 		["Champions of Azeroth"] = 500,
 		["Valarjar"] = 1500,
 		["Storm's Wake"] = 885,
-		["Order of Embers"] = 225,
 		["Proudmoore Admiralty"] = 75,
+		["Order of Embers"] = 225,
 		["Army of the Light"] = 7875,
 		["7th Legion"] = 3325,
-	}, -- [6]
+	}, -- [7]
 	{
 		["Armies of Legionfall"] = 500,
 		["Champions of Azeroth"] = 950,
@@ -147,110 +150,106 @@ FactionAddictLogEntries = {
 		["Argussian Reach"] = 4200,
 		["Tortollan Seekers"] = 2025,
 		["Storm's Wake"] = 1875,
-		["Proudmoore Admiralty"] = 2300,
 		["Order of Embers"] = 350,
+		["Proudmoore Admiralty"] = 2300,
 		["Army of the Light"] = 4800,
 		["7th Legion"] = 2850,
-	}, -- [7]
+	}, -- [8]
 	{
 		["The Nightfallen"] = 1250,
 		["Argussian Reach"] = 5700,
 		["Proudmoore Admiralty"] = 100,
 		["Army of the Light"] = 4800,
 		["7th Legion"] = 325,
-	}, -- [8]
-	{
-		["7th Legion"] = 150,
-		["Armies of Legionfall"] = 750,
-		["Army of the Light"] = 1000,
-		["Dreamweavers"] = 500,
 	}, -- [9]
 	{
-		["Champions of Azeroth"] = 2000,
-		["Order of Embers"] = 75,
-		["Proudmoore Admiralty"] = 75,
-		["Storm's Wake"] = 75,
+		["Dreamweavers"] = 500,
+		["Armies of Legionfall"] = 750,
+		["Army of the Light"] = 1000,
 		["7th Legion"] = 150,
 	}, -- [10]
+	{
+		["Champions of Azeroth"] = 2000,
+		["Proudmoore Admiralty"] = 75,
+		["Order of Embers"] = 75,
+		["Storm's Wake"] = 75,
+		["7th Legion"] = 150,
+	}, -- [11]
 	{
 		["Tortollan Seekers"] = 2025,
 		["Argussian Reach"] = 4450,
 		["Darkmoon Faire"] = 2250,
 		["Dreamweavers"] = 1950,
 		["The Nightfallen"] = 500,
-		["Court of Farondis"] = 2200,
 		["Proudmoore Admiralty"] = 875,
+		["Order of Embers"] = 1900,
 		["Storm's Wake"] = 75,
 		["The Wardens"] = 1750,
-		["Order of Embers"] = 1900,
+		["Court of Farondis"] = 2200,
 		["Army of the Light"] = 7250,
 		["7th Legion"] = 1025,
-	}, -- [11]
+	}, -- [12]
 	{
 		["The Nightfallen"] = 1075,
 		["Argussian Reach"] = 5700,
 		["The Wardens"] = 350,
 		["Army of the Light"] = 4650,
 		["Dreamweavers"] = 850,
-	}, -- [12]
+	}, -- [13]
 	{
 		["Champions of Azeroth"] = 450,
 		["Argussian Reach"] = 4200,
 		["Proudmoore Admiralty"] = 1825,
 		["Army of the Light"] = 4500,
 		["7th Legion"] = 2450,
-	}, -- [13]
+	}, -- [14]
 	{
-		["Storm's Wake"] = 2760,
 		["Argussian Reach"] = 3500,
+		["Storm's Wake"] = 2760,
 		["Tortollan Seekers"] = 350,
 		["Proudmoore Admiralty"] = 75,
 		["Army of the Light"] = 4450,
 		["7th Legion"] = 875,
-	}, -- [14]
+	}, -- [15]
 	{
 		["Champions of Azeroth"] = 2000,
 		["Argussian Reach"] = 3850,
-		["Proudmoore Admiralty"] = 75,
 		["Order of Embers"] = 225,
+		["Court of Farondis"] = 1500,
 		["Storm's Wake"] = 150,
 		["The Wardens"] = 500,
-		["Court of Farondis"] = 1500,
+		["Proudmoore Admiralty"] = 75,
 		["Army of the Light"] = 4100,
 		["7th Legion"] = 450,
-	}, -- [15]
+	}, -- [16]
 	{
-		["Champions of Azeroth"] = 125,
+		["7th Legion"] = 2525,
 		["Proudmoore Admiralty"] = 1025,
 		["Order of Embers"] = 300,
-		["7th Legion"] = 2525,
-	}, -- [16]
+		["Champions of Azeroth"] = 125,
+	}, -- [17]
 	{
 		["Tortollan Seekers"] = 425,
 		["Dreamweavers"] = 2300,
 		["The Nightfallen"] = 325,
 		["Argussian Reach"] = 4350,
-		["Order of Embers"] = 2675,
+		["Proudmoore Admiralty"] = 575,
 		["Storm's Wake"] = 475,
 		["The Wardens"] = 150,
-		["Proudmoore Admiralty"] = 575,
+		["Order of Embers"] = 2675,
 		["Army of the Light"] = 4800,
 		["7th Legion"] = 2675,
-	}, -- [17]
-	{
-		["Proudmoore Admiralty"] = 75,
 	}, -- [18]
 	{
-		["Tortollan Seekers"] = 2275,
-		["Argussian Reach"] = 3850,
-		["Proudmoore Admiralty"] = 1725,
-		["Order of Embers"] = 75,
-		["Army of the Light"] = 4300,
-		["7th Legion"] = 150,
+		["Proudmoore Admiralty"] = 75,
 	}, -- [19]
 	{
-		["Proudmoore Admiralty"] = 450,
-		["Storm's Wake"] = 10,
+		["Argussian Reach"] = 3850,
+		["Tortollan Seekers"] = 2275,
+		["Order of Embers"] = 75,
+		["Proudmoore Admiralty"] = 1725,
+		["Army of the Light"] = 4300,
+		["7th Legion"] = 150,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
@@ -312,21 +311,21 @@ FactionAddictConfigIsInactive = {
 	[21] = false,
 	[1894] = false,
 	[1067] = false,
-	[2101] = false,
-	[2100] = false,
+	[2103] = false,
+	[2111] = false,
 	[1068] = false,
 	[1387] = false,
 	[2120] = false,
 	[1515] = false,
-	[2098] = false,
+	[2018] = false,
 	[349] = false,
 	[1815] = false,
 	[1015] = false,
-	[970] = false,
+	[729] = false,
 	[1134] = false,
 	[1708] = false,
-	[1098] = false,
-	[54] = false,
+	[1353] = false,
+	[72] = false,
 	[1135] = false,
 	[2135] = false,
 	[509] = false,
@@ -338,24 +337,24 @@ FactionAddictConfigIsInactive = {
 	[76] = false,
 	[730] = false,
 	[1520] = false,
-	[889] = false,
-	[933] = false,
+	[92] = false,
+	[1352] = false,
 	[1712] = false,
 	[890] = false,
 	[922] = false,
-	[1104] = false,
+	[70] = false,
 	[1713] = false,
 	[510] = false,
 	[1681] = false,
-	[1682] = false,
+	[2097] = false,
 	[1204] = false,
-	[1358] = false,
+	[1690] = false,
 	[1077] = false,
-	[2099] = false,
+	[1900] = false,
 	[1715] = false,
 	[1269] = false,
 	[1359] = false,
-	[1888] = false,
+	[1133] = false,
 	[1716] = false,
 	[1270] = false,
 	[1376] = false,
@@ -366,79 +365,79 @@ FactionAddictConfigIsInactive = {
 	[1711] = false,
 	[1718] = false,
 	[1272] = false,
-	[1859] = false,
-	[1739] = false,
+	[1094] = false,
+	[2156] = false,
 	[989] = false,
 	[1273] = false,
 	[1337] = false,
 	[1847] = false,
 	[2157] = false,
-	[1975] = false,
+	[2162] = false,
 	[2158] = false,
-	[1849] = false,
+	[2163] = false,
 	[990] = false,
 	[1275] = false,
-	[2160] = false,
+	[1849] = false,
 	[576] = false,
 	[2161] = false,
 	[1276] = false,
 	[1850] = false,
-	[2159] = false,
+	[2164] = false,
 	[369] = false,
 	[1277] = false,
 	[1341] = false,
 	[577] = false,
 	[609] = false,
 	[1278] = false,
-	[1085] = false,
+	[2165] = false,
 	[1388] = false,
-	[1714] = false,
+	[270] = false,
 	[1279] = false,
 	[69] = false,
-	[1280] = false,
-	[1216] = false,
 	[2045] = false,
+	[1216] = false,
+	[1280] = false,
 	[2170] = false,
 	[1848] = false,
 	[93] = false,
 	[1281] = false,
 	[1090] = false,
-	[81] = false,
-	[930] = false,
-	[1282] = false,
-	[1091] = false,
 	[1345] = false,
+	[1091] = false,
+	[1282] = false,
+	[930] = false,
+	[81] = false,
 	[1984] = false,
 	[1283] = false,
-	[270] = false,
+	[1714] = false,
 	[1156] = false,
-	[2165] = false,
-	[2164] = false,
-	[2163] = false,
-	[2162] = false,
+	[1085] = false,
+	[2159] = false,
+	[2160] = false,
+	[1975] = false,
 	[1731] = false,
-	[2156] = false,
-	[1094] = false,
+	[1739] = false,
+	[1859] = false,
 	[1158] = false,
 	[1732] = false,
 	[1031] = false,
 	[932] = false,
-	[1133] = false,
+	[1888] = false,
 	[1733] = false,
-	[1900] = false,
-	[1690] = false,
-	[2097] = false,
+	[2099] = false,
+	[1358] = false,
+	[1682] = false,
 	[1989] = false,
-	[70] = false,
-	[1352] = false,
-	[92] = false,
+	[1104] = false,
+	[933] = false,
+	[889] = false,
 	[1735] = false,
-	[72] = false,
-	[1353] = false,
-	[729] = false,
+	[54] = false,
+	[1098] = false,
+	[970] = false,
 	[1736] = false,
-	[2018] = false,
+	[2098] = false,
 	[934] = false,
-	[2111] = false,
-	[2103] = false,
+	[2100] = false,
+	[2101] = false,
 }
