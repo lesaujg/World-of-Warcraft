@@ -1,8 +1,8 @@
-## Interface: 80100
+## Interface: 80200
 ## Title: Baud Manifest
 ## Notes: Allows you to manage your items as a list, instead of the standard bag system.
 ## Authors: Baudzilla, Erstyx
-## Version: 2.46
+## Version: 2.47
 ## SavedVariables: BaudManifestData
 
 BaudManifest.xml

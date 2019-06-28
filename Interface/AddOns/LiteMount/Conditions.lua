@@ -128,16 +128,22 @@ CONDITIONS["draw:args"] =
 
 CONDITIONS["equipped"] =
     function (cond, v)
-        if v then
-            if IsEquippedItem(v) or IsEquippedItemType(v) then
-                return true
-            end
-            -- Pre 8.2 check
-            if not C_MountJournal.GetAppliedMountEquipmentID then return end
-            local id = C_MountJournal.GetAppliedMountEquipmentID()
-            if id and id == tonumber(v) then
-                return true
-            end
+        if not v then
+            return false
+        end
+
+        if IsEquippedItemType(v) then
+            return true
+        end
+
+        local v = tonumber(v) or v
+        if IsEquippedItem(v) then
+            return true
+        end
+
+        local id = C_MountJournal.GetAppliedMountEquipmentID()
+        if id and id == v then
+            return true
         end
     end
 
@@ -410,6 +416,29 @@ CONDITIONS["true"] =
         return true
     end
 
+CONDITIONS["waterwalking"] =
+    function (cond)
+        -- Anglers Waters Striders (168416) or Inflatable Mount Shoes (168417)
+        if not C_MountJournal.AreMountEquipmentEffectsSuppressed() then
+            local id = C_MountJournal.GetAppliedMountEquipmentID()
+            if id == 168416 or id == 168417 then
+                return true
+            end
+        end
+        -- Water Walking (546)
+        if CONDITIONS.aura(546) then
+            return true
+        end
+        -- Elixir of Water Walking (11319)
+        if CONDITIONS.aura(11319) then
+            return true
+        end
+        --  Path of Frost (3714)
+        if CONDITIONS.aura(3714) then
+            return true
+        end
+    end
+
 CONDITIONS["xmog:args"] =
     function (cond, slotID, appearanceID)
         slotID, appearanceID = tonumber(slotID), tonumber(appearanceID)
@@ -496,5 +525,12 @@ function LM_Conditions:Eval(conditions)
         return self:EvalNot(conditions)
     else
         return self:IsTrue(conditions)
+    end
+end
+
+function LM_Conditions:Check(line)
+    local _, _, cond = LM_ActionList:ParseActionLine(line)
+    if cond then
+        return self:Eval(cond)
     end
 end

@@ -1,42 +1,19 @@
-tag 2038254d11ca0bd72cec8e919039b82df8855b46 8.1.2
+tag 54f3658a9449c1db8fe181c43776fe9d9617e908 8.2.2
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Mon Jun 3 11:28:21 2019 +1000
+Date:	Wed Jun 26 22:39:36 2019 +1000
 
-LiteMount 8.1.2 release
+LiteMount 8.2.2
+Fix a problem where swimming mounts would sometimes summon on land
 
-commit fae12f56042c97f71bb6e6b77fd08ebc4a5973e9
+commit 65688bcc5293923e5aae865cfd1bcfce55a52494
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri May 31 16:58:42 2019 +1000
+Date:   Wed Jun 26 22:39:19 2019 +1000
 
-    Remove some debugging prints from equipped condition
+    Better swimming check
 
-commit ee1bfbf44478c51daf9f6421f7298603280a4260
+commit 8277c4a7549c0ffea9cc3d5a54eaf92bab9ac544
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri May 31 16:53:17 2019 +1000
+Date:   Wed Jun 26 21:37:06 2019 +1000
 
-    Merge meq into equipped
-
-commit 603c4aba216512d582fea6bc6ca146e9f8363560
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri May 31 11:51:55 2019 +1000
-
-    Pre-8.2 check for meq condition (just in case)
-
-commit d3da4de8296c2f846be93eedd29f4b44c80e0b32
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri May 31 11:25:04 2019 +1000
-
-    Move the Limit for default after the special cases
-
-commit 5aa7181a240117403a23bf2b32a5c2acf5550e8b
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Wed May 29 16:37:47 2019 +1000
-
-    Add [meq], remove [area] and [continent] conditions
-
-commit 59968bdcd71f9a1dd4832f9b3732f5555b09c493
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Wed May 29 16:36:57 2019 +1000
-
-    Add ResetLimits
+    Fixups to SmartMount swimming check
 
