@@ -451,7 +451,7 @@ TukuiData = {
 			["Torinara"] = 455216606,
 			["Tolaine"] = 1881489,
 			["Aloraal"] = 864619545,
-			["Allala"] = 58928349,
+			["Allala"] = 59341555,
 		},
 	},
 }
