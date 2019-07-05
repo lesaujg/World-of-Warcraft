@@ -1749,7 +1749,7 @@ TukuiData = {
 			["Edaka"] = 0,
 			["Palani"] = 52867960,
 			["Tauro"] = 0,
-			["Clothgar"] = 4957992441,
+			["Clothgar"] = 5097985879,
 		},
 	},
 	["Ravenholdt"] = {
