@@ -2,8 +2,8 @@
 TradeSkillMaster_AppHelperDB = {
 	["blackMarket"] = {
 		["Sisters of Elune"] = {
-			["key"] = 9436078,
 			["data"] = "[[13,8499,1,4,1102,52,1050,2,1562163861],[15,22501,1,4,10000,0,0,0,1562163861],[17,22422,1,4,10000,0,0,0,1562163861],[73,94125,1,4,20000,0,0,0,1562163861]]",
+			["key"] = 9436078,
 			["updateTime"] = 1562163861,
 		},
 	},
@@ -18,13 +18,13 @@ TradeSkillMaster_AppHelperDB = {
 	},
 	["wowToken"] = {
 		["US"] = {
-			["key"] = 15075494,
 			["data"] = 196441,
+			["key"] = 15075494,
 			["updateTime"] = 1532835892,
 		},
 		["PTR"] = {
-			["key"] = 9014272,
 			["data"] = 46899,
+			["key"] = 9014272,
 			["updateTime"] = 1465009785,
 		},
 	},
@@ -846,7 +846,39 @@ TradeSkillMaster_AppHelperDB = {
 			"[\"AC\",\"v4.7.15\",1562296421705,1562296408,3,\"UI_NAVIGATION\",\"\",\"destroying\"]", -- [814]
 			"[\"AC\",\"v4.7.15\",1562296421705,1562296408,4,\"UI_NAVIGATION\",\"destroying\",\"\"]", -- [815]
 			"[\"AC\",\"v4.7.15\",1562296444248,1562296408,5,\"ADDON_DISABLE\",835]", -- [816]
+			"[\"AC\",\"v4.7.15\",1562380369448,1562380364,1,\"ADDON_INITIALIZE\",3414]", -- [817]
+			"[\"AC\",\"v4.7.15\",1562380380033,1562380364,2,\"ADDON_ENABLE\",3517]", -- [818]
+			"[\"AC\",\"v4.7.15\",1562380382361,1562380364,3,\"UI_NAVIGATION\",\"\",\"destroying\"]", -- [819]
+			"[\"AC\",\"v4.7.15\",1562380382361,1562380364,4,\"UI_NAVIGATION\",\"destroying\",\"\"]", -- [820]
+			"[\"AC\",\"v4.7.15\",1562380406160,1562380364,5,\"UI_NAVIGATION\",\"\",\"mailing\"]", -- [821]
+			"[\"AC\",\"v4.7.15\",1562380406160,1562380364,6,\"UI_NAVIGATION\",\"mailing\",\"mailing/inbox\"]", -- [822]
+			"[\"AC\",\"v4.7.15\",1562380411559,1562380364,7,\"UI_NAVIGATION\",\"mailing/inbox\",\"\"]", -- [823]
+			"[\"AC\",\"v4.7.15\",1562380414183,1562380364,8,\"UI_NAVIGATION\",\"\",\"main\"]", -- [824]
+			"[\"AC\",\"v4.7.15\",1562380414183,1562380364,9,\"UI_NAVIGATION\",\"main\",\"main/dashboard\"]", -- [825]
+			"[\"AC\",\"v4.7.15\",1562380419954,1562380364,10,\"UI_NAVIGATION\",\"main/dashboard\",\"main/groups\"]", -- [826]
+			"[\"AC\",\"v4.7.15\",1562380419954,1562380364,11,\"UI_NAVIGATION\",\"main/groups\",\"main/groups/information\"]", -- [827]
+			"[\"AC\",\"v4.7.15\",1562380421187,1562380364,12,\"UI_NAVIGATION\",\"main/groups/information\",\"main/groups/operations\"]", -- [828]
+			"[\"AC\",\"v4.7.15\",1562380431637,1562380364,13,\"UI_NAVIGATION\",\"main/groups/operations\",\"main/operations\"]", -- [829]
+			"[\"AC\",\"v4.7.15\",1562380431637,1562380364,14,\"UI_NAVIGATION\",\"main/operations\",\"main/operations/auctioning\"]", -- [830]
+			"[\"AC\",\"v4.7.15\",1562380431637,1562380364,15,\"UI_NAVIGATION\",\"main/operations/auctioning\",\"main/operations/auctioning/details\"]", -- [831]
+			"[\"AC\",\"v4.7.15\",1562380434141,1562380364,16,\"UI_NAVIGATION\",\"main/operations/auctioning/details\",\"main/groups\"]", -- [832]
+			"[\"AC\",\"v4.7.15\",1562380434141,1562380364,17,\"UI_NAVIGATION\",\"main/groups\",\"main/groups/information\"]", -- [833]
+			"[\"AC\",\"v4.7.15\",1562380436587,1562380364,18,\"UI_NAVIGATION\",\"main/groups/information\",\"main/groups/items\"]", -- [834]
+			"[\"AC\",\"v4.7.15\",1562380438461,1562380364,19,\"UI_NAVIGATION\",\"main/groups/items\",\"main/groups/operations\"]", -- [835]
+			"[\"AC\",\"v4.7.15\",1562380443320,1562380364,20,\"REMOVED_GROUP_OPERATION\",\"Craft enchants`x2`Mecha-Bond\",\"Auctioning\",\"#Default\"]", -- [836]
+			"[\"AC\",\"v4.7.15\",1562380472751,1562380364,21,\"ADDED_GROUP_OPERATION\",\"Craft enchants`x2`Mecha-Bond\",\"Auctioning\",\"Sell DBMarket\"]", -- [837]
+			"[\"AC\",\"v4.7.15\",1562380474879,1562380364,22,\"UI_NAVIGATION\",\"main/groups/operations\",\"\"]", -- [838]
+			"[\"AC\",\"v4.7.15\",1562380477929,1562380364,23,\"UI_NAVIGATION\",\"\",\"auction\"]", -- [839]
+			"[\"AC\",\"v4.7.15\",1562380477929,1562380364,24,\"UI_NAVIGATION\",\"auction\",\"auction/shopping\"]", -- [840]
+			"[\"AC\",\"v4.7.15\",1562380477929,1562380364,25,\"UI_NAVIGATION\",\"auction/shopping\",\"auction/shopping/selection\"]", -- [841]
+			"[\"AC\",\"v4.7.15\",1562380480745,1562380364,26,\"UI_NAVIGATION\",\"auction/shopping/selection\",\"auction/shopping/scan\"]", -- [842]
+			"[\"AC\",\"v4.7.15\",1562380500317,1562380364,27,\"UI_NAVIGATION\",\"auction/shopping/scan\",\"auction/auctioning\"]", -- [843]
+			"[\"AC\",\"v4.7.15\",1562380500317,1562380364,28,\"UI_NAVIGATION\",\"auction/auctioning\",\"auction/auctioning/selection\"]", -- [844]
+			"[\"AC\",\"v4.7.15\",1562380502579,1562380364,29,\"UI_NAVIGATION\",\"auction/auctioning/selection\",\"auction/auctioning/scan\"]", -- [845]
+			"[\"AC\",\"v4.7.15\",1562380502579,1562380364,30,\"UI_NAVIGATION\",\"auction/auctioning/scan\",\"auction/auctioning/scan/log\"]", -- [846]
+			"[\"AC\",\"v4.7.15\",1562380531570,1562380364,31,\"UI_NAVIGATION\",\"auction/auctioning/scan/log\",\"\"]", -- [847]
+			"[\"AC\",\"v4.7.15\",1562380544729,1562380364,32,\"ADDON_DISABLE\",3280]", -- [848]
 		},
-		["updateTime"] = 1562296444,
+		["updateTime"] = 1562380544,
 	},
 }
