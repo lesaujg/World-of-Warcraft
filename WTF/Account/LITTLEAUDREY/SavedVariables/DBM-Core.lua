@@ -72,12 +72,12 @@ DBM_AllSavedOptions = {
 		["SpecialWarningPoint"] = "CENTER",
 		["FilterTrashWarnings2"] = true,
 		["FilterInterrupt2"] = "TandFandBossCooldown",
-		["LatencyThreshold"] = 250,
+		["FilterDispel"] = true,
 		["HUDSize2"] = 5,
 		["AlwaysShowSpeedKillTimer2"] = false,
-		["FilterDispel"] = true,
-		["ShowGuildMessagesPlus"] = false,
+		["LatencyThreshold"] = 250,
 		["DebugLevel"] = 1,
+		["ShowGuildMessagesPlus"] = false,
 		["LFDEnhance"] = true,
 		["SpecialWarningFlashDura1"] = 0.4,
 		["DontShowPTNoID"] = false,
@@ -100,7 +100,11 @@ DBM_AllSavedOptions = {
 		["SpecialWarningSound"] = 8174,
 		["AutoReplySound"] = true,
 		["SpecialWarningFontSize2"] = 35,
-		["DontShowSpecialWarningText"] = false,
+		["SpecialWarningFlashCol5"] = {
+			0.2, -- [1]
+			1, -- [2]
+			1, -- [3]
+		},
 		["DisableGuildStatus"] = false,
 		["RLReadyCheckSound"] = true,
 		["BCTWMessageShown"] = false,
@@ -140,7 +144,7 @@ DBM_AllSavedOptions = {
 			1, -- [2]
 			0, -- [3]
 		},
-		["HPFrameMaxEntries"] = 5,
+		["DontShowBossAnnounces"] = false,
 		["SpecialWarningFlashCol3"] = {
 			1, -- [1]
 			0, -- [2]
@@ -168,7 +172,7 @@ DBM_AllSavedOptions = {
 				["r"] = 1,
 			}, -- [4]
 		},
-		["DontShowBossAnnounces"] = false,
+		["HPFrameMaxEntries"] = 5,
 		["SWarningAlphabetical"] = true,
 		["HUDColor4"] = {
 			0, -- [1]
@@ -176,38 +180,34 @@ DBM_AllSavedOptions = {
 			0, -- [3]
 		},
 		["BlockNoteShare"] = false,
-		["AutoCorrectTimer"] = false,
-		["HUDTexture2"] = "highlight",
 		["MovieFilter2"] = "OnlyFight",
-		["ModelSoundValue"] = "Short",
-		["HUDColor3"] = {
-			1, -- [1]
-			0.5, -- [2]
-			0, -- [3]
-		},
-		["SpecialWarningFontStyle"] = "THICKOUTLINE",
 		["FilterInterrupt"] = true,
+		["DontShowInfoFrame"] = false,
+		["ModelSoundValue"] = "Short",
+		["FilterSelfHud"] = true,
+		["SpecialWarningFontStyle"] = "THICKOUTLINE",
+		["HUDTexture2"] = "highlight",
 		["RangeFrameRadarPoint"] = "CENTER",
 		["SpecialWarningY"] = 75,
-		["DontShowInfoFrame"] = false,
-		["DontRestoreRange"] = false,
+		["AutoCorrectTimer"] = false,
+		["CustomSounds"] = 0,
 		["RangeFrameUpdates"] = "Average",
 		["CountdownVoice3v2"] = "Pewsey",
-		["RoleSpecAlert"] = true,
-		["RaidWarningSound"] = 11742,
-		["CustomSounds"] = 0,
+		["ShortTimerText"] = true,
+		["WarningY"] = 260,
+		["DontRestoreRange"] = false,
 		["WarningFontShadow"] = true,
 		["SpecialWarningFlashRepeat3"] = true,
-		["ShortTimerText"] = true,
+		["RoleSpecAlert"] = true,
 		["WhisperStats"] = false,
 		["VoiceOverSpecW2"] = "DefaultOnly",
 		["HUDAlpha3"] = 0.5,
-		["DontPlayPTCountdown"] = false,
+		["MISTSTWMessageShown"] = false,
 		["SpecialWarningFlashAlph5"] = 0.5,
 		["SpecialWarningDuration2"] = 1.5,
 		["HealthFrameWidth"] = 200,
 		["HUDSize1"] = 5,
-		["WarningIconLeft"] = true,
+		["ShowEngageMessage"] = true,
 		["RangeFrameSound1"] = "none",
 		["HPFrameY"] = 50,
 		["WarningFontSize"] = 20,
@@ -219,11 +219,11 @@ DBM_AllSavedOptions = {
 		["FilterTankSpec"] = true,
 		["RangeFrameLocked"] = false,
 		["SpecialWarningSound2"] = 15391,
-		["CountdownVoice"] = "Corsica",
+		["SpecialWarningFlashRepeat4"] = false,
 		["DontSetIcons"] = false,
 		["BigBrotherAnnounceToRaid"] = false,
 		["SpecialWarningFlashRepeat2"] = false,
-		["SpecialWarningFlashRepeat4"] = false,
+		["CountdownVoice"] = "Corsica",
 		["BonusFilter"] = "Never",
 		["AutoRespond"] = true,
 		["DontShowUserTimers"] = false,
@@ -241,14 +241,18 @@ DBM_AllSavedOptions = {
 		["ShowDefeatMessage"] = true,
 		["HUDAlphaOverride"] = false,
 		["DontShowRangeFrame"] = false,
-		["ShowEngageMessage"] = true,
+		["WarningIconLeft"] = true,
 		["InfoFrameShowSelf"] = false,
 		["SpecialWarningFont"] = "Fonts\\FRIZQT__.TTF",
-		["MISTSTWMessageShown"] = false,
-		["WarningY"] = 260,
+		["DontPlayPTCountdown"] = false,
+		["RaidWarningSound"] = 11742,
 		["DontShowBossTimers"] = false,
 		["HUDTexture4"] = "highlight",
-		["FilterSelfHud"] = true,
+		["HUDColor3"] = {
+			1, -- [1]
+			0.5, -- [2]
+			0, -- [3]
+		},
 		["HUDSize4"] = 5,
 		["InfoFrameLines"] = 0,
 		["WorldBossNearAlert"] = false,
@@ -271,11 +275,7 @@ DBM_AllSavedOptions = {
 		["EventSoundEngage"] = "",
 		["FilterVoidFormSay"] = true,
 		["DontShowPTCountdownText"] = false,
-		["SpecialWarningFlashCol5"] = {
-			0.2, -- [1]
-			1, -- [2]
-			1, -- [3]
-		},
+		["DontShowSpecialWarningText"] = false,
 		["PTCountThreshold"] = 5,
 		["LogOnlyRaidBosses"] = false,
 		["EventSoundMusic"] = "None",
