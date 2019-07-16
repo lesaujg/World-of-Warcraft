@@ -1,13 +1,33 @@
-tag 5aa803ab1538508ee0ce328b6a7c8e928e71ac17 8.2.4
+tag e8e4a4a3d693b3732af9d965d323b8dcd666f023 8.2.7
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Sun Jul 7 19:25:53 2019 +1000
+Date:	Sun Jul 14 18:24:11 2019 +1000
 
-LiteMount 8.2.4
-Add qfc:<questid> condition for IsQuestFlaggedCompleted
+LiteMount 8.2.7
+Kua'fon can fly if you completed the relevant quest
+Fix the [aura] condition
 
-commit 6e5d41d79e83ec86b19c255e430255bc9561549a
+commit b2a2fb96300de54b57c5e0521e88f97e978b217a
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sun Jul 7 19:24:41 2019 +1000
+Date:   Sat Jul 13 21:11:15 2019 +1000
 
-    Add qfc condition for IsQuestFlaggedCompleted
+    Another go at kua'fon flags that works for Alliance too
+
+commit 439fdf1c432e75e948f69bf383d49ba1c376aebd
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Sat Jul 13 19:53:11 2019 +1000
+
+    Kua'fon can fly if you've achieved
+
+commit a6d6a86533f5dfee2fd46591fcf387d65ce530ba
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Fri Jul 12 19:36:03 2019 +1000
+
+    Rename ScrollFrame to FlagScroll in Advanced UI
+    Fix the URLs for the merged curseforge
+
+commit f61c2f56a8132a4744e8250fa3f7394fc3ea3ce7
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Wed Jul 10 20:25:52 2019 +1000
+
+    Fix aura condition
 

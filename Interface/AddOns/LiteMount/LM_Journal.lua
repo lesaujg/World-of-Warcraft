@@ -82,11 +82,30 @@ function LM_Journal:Get(id)
         m.flags['SWIM'] = true
     elseif m.mountType == 284 then      -- Chauffeured Mekgineer's Chopper
         m.flags['WALK'] = true
+    elseif m.mountType == 398 then      -- Kua'fon
+        -- Kua'fon can fly if achievement 13573 is completed, otherwise run
     end
 
     return m
 end
 
+
+function LM_Journal:CurrentFlags()
+    local flags = LM_Mount.CurrentFlags(self)
+
+    -- Dynamic Kua'fon flags
+    if self.mountType == 398 then
+        -- It seems like Alliance don't show the achievement as done but
+        -- do flag the quest as completed.
+        if IsQuestFlaggedCompleted(56205) then
+            flags.FLY = true
+        else
+            flags.RUN = true
+        end
+    end
+
+    return flags
+end
 
 function LM_Journal:Refresh()
     local isFavorite, _, _, isFiltered, isCollected = select(7, C_MountJournal.GetMountInfoByID(self.mountID))

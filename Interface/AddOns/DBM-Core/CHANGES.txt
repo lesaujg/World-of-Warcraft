@@ -1,80 +1,250 @@
-lightweight tag c0fb5a174569ff4ca0ce210c21a45f5971e3ba7e 8.2.2
+lightweight tag 70dffdaee47e8c09a4cdaa74887c7d84e44f3cbe 8.2.4
 Author:	MysticalOS <mysticalosx@gmail.com>
-Date:	Sat Jul 6 21:22:51 2019 -0400
+Date:	Mon Jul 15 00:16:43 2019 -0400
 
-commit c0fb5a174569ff4ca0ce210c21a45f5971e3ba7e
+commit 70dffdaee47e8c09a4cdaa74887c7d84e44f3cbe
 Author: MysticalOS <mysticalosx@gmail.com>
-Date:   Sat Jul 6 21:22:51 2019 -0400
+Date:   Mon Jul 15 00:16:43 2019 -0400
 
-    Added additional creature load conditions for Ulmath and Wekemara to ensure module loads even if main boss is submerged or whatever, via their adds
-    Added preliminary warnings/AI timers for Ulmath and Wekemara as well.
+    Prep tag with what's added so far
 
-commit f4c8bfb738a7739130ecaad7632387cac3233af7
-Author: Cramerr <51456031+Cramerr@users.noreply.github.com>
-Date:   Wed Jul 3 23:14:59 2019 -0400
+commit f08776f1ad8f46d4eb8eb985ba853cde68a0557b
+Author: BlueNightSky <afan1128@hotmail.com>
+Date:   Mon Jul 15 12:12:32 2019 +0800
 
-    Queen's Court Form Ranks cast (#30)
+    Create localization.tw.lua (#40)
     
-    * Update TheQueensCourt.lua
+    Create zhTW localization files.
+
+commit a12c28296ad303aea818355763efa9d22434bb1c
+Author: MysticalOS <mysticalosx@gmail.com>
+Date:   Sun Jul 14 18:42:56 2019 -0400
+
+    Another logic fix
+
+commit 44a84adeec23098a44329dddddb36518c940ad47
+Author: MysticalOS <mysticalosx@gmail.com>
+Date:   Sun Jul 14 18:41:43 2019 -0400
+
+    Fix jealousy logic
+
+commit d6158aeae91ed5ab69de4f0d4cabb6c5cb5ed3fa
+Author: MysticalOS <mysticalosx@gmail.com>
+Date:   Sun Jul 14 18:22:46 2019 -0400
+
+    Fix error
+
+commit f9661c800a0a5f50c6ea37eb069f70da67c04b70
+Author: MysticalOS <mysticalosx@gmail.com>
+Date:   Sun Jul 14 18:09:32 2019 -0400
+
+    And another oops, lets apply heroic logic to mythic as well (for now)
+
+commit abb054bada09deecf94759d99b32c24bb8e5973d
+Author: MysticalOS <mysticalosx@gmail.com>
+Date:   Sun Jul 14 18:08:31 2019 -0400
+
+    Oh and these aren't same between heroic and normal. fix that too
+
+commit 7bf45c3a6900aea0b6fc539594ed85be13e92009
+Author: MysticalOS <mysticalosx@gmail.com>
+Date:   Sun Jul 14 18:05:28 2019 -0400
+
+    Fixed spear timer, which i totally forgot to do because I forgot to look at adds, and not just azshara
+    Preliminary heroic timer updates from public WCLs, as well as since greater reversal didn't show up in WCL, assume it needs unit event like regular reversal does. The timer for it is also guessed to be same as non greater for now.
+    Also fixed add 1 timers which again I forgot to update because they were add timers.
+    Added a default countdown to the reversals
+
+commit 061d91d1e077df5b12af7fae20fc0ed604549624
+Author: Elnarfim <37562642+Elnarfim@users.noreply.github.com>
+Date:   Mon Jul 15 01:13:19 2019 +0900
+
+    KR Update (#38)
     
-    Make form ranks cast the same between all difficulties
+    * KR Update
     
-    * Update TheQueensCourt.lua
+    * KR Update
     
-    spacing
+    * KR Update
+    
+    * KR Update
+    
+    * KR Update
+    
+    * KR Update
+    
+    * KR Update
+    
+    * KR Update
 
-commit a1a1d8031adb4e228ed6a374164e584f2a2115d9
+commit 2ded096e7d4c6acc31be31c9ba11a1bfdc322336
 Author: MysticalOS <mysticalosx@gmail.com>
-Date:   Wed Jul 3 11:38:57 2019 -0400
+Date:   Sat Jul 13 21:17:13 2019 -0400
 
-    Fix another invalid voice pack media path
+    Fix stupid.
 
-commit 8af840fe718a9607e5cf73e9396d5d400bf01d6b
+commit 618fe2a3d37be4c855bdcc214ef2f53dd8e5b257
 Author: MysticalOS <mysticalosx@gmail.com>
-Date:   Mon Jul 1 11:45:22 2019 -0400
+Date:   Sat Jul 13 11:59:30 2019 -0400
 
-    Fix a playsoundfile error that could occur if users voice pack was missing, their afk flag was set to true, and they entered combat, and the afk combat alert sound option was enabled.
+    Fix some errors. Closes #37
 
-commit af70fe861efa6f7c307a60b9618425d0bc5812e7
+commit 15425100aeb7475b32f91fa3ba8ced276fe640d4
 Author: MysticalOS <mysticalosx@gmail.com>
-Date:   Sat Jun 29 18:05:57 2019 -0400
+Date:   Sat Jul 13 03:08:23 2019 -0400
 
-    Fix same sound error in aother line
+    Fixed a bug where values passed in a previous infoframe would be inherited by next infoframe if not overwritten by new values
+    Also fixed a bug where an infoframe that's not supposed  to be using onupdate would continue using it if it overwrite another infoframe that was using onupdate.
 
-commit a3f32c5b4b283ac929513814237508a5ed24f6ed
+commit b97081b56e6f61f5b427f555dcb580ad007082d9
 Author: MysticalOS <mysticalosx@gmail.com>
-Date:   Sat Jun 29 12:04:08 2019 -0400
+Date:   Fri Jul 12 18:43:11 2019 -0400
 
-    Fix invalid voice name on ivus Closes #29
+    Updated all of Za'qul's timers and fixed spellId used to detect Dark Pulse
 
-commit f3d0b691fca177518eb58fcf87f0e12afd3d7967
+commit 55355dac9da68267e9393bdb41735d4baa76e74a
 Author: MysticalOS <mysticalosx@gmail.com>
-Date:   Thu Jun 27 22:22:21 2019 -0400
+Date:   Fri Jul 12 17:37:08 2019 -0400
 
-    Try to bump twtich into grabbing new alpha file
-    also, these build checks no longer needed anyways 8.2 is live
+    Added option to sort infoframe highest to lowest instead of lowest to highest on azshara (off by default)
+    Added option to show debuff time remaining on infoframe instead of number of stacks on azshara (off by default)
+    Made the interrupt warning for Chain Lightning smarter, so that it doesn't tell you to interrupt enemies that are shielded (immune to interrupts) during azshara fight
+    Made the spear warning smarter so that it doesn't tell you to run it to a shield if none of mobs currently have one or if they are both dead. (instead it'll say run to edge of room)
 
-commit 609b5ce9f17183de7805fd48c0aa0dbc00deabb5
+commit 6a417460db43212a6e7fa745fbe6cb36dbd67c12
+Author: Elnarfim <37562642+Elnarfim@users.noreply.github.com>
+Date:   Sat Jul 13 01:15:45 2019 +0900
+
+    KR Update (#36)
+    
+    * KR Update
+    
+    * KR Update
+    
+    * KR Update
+    
+    * KR Update
+    
+    * KR Update
+    
+    * KR Update
+    
+    * KR Update
+
+commit bd68d6ab9580a647050ae7d785a296e4c8250d46
 Author: MysticalOS <mysticalosx@gmail.com>
-Date:   Thu Jun 27 21:43:39 2019 -0400
+Date:   Fri Jul 12 02:57:19 2019 -0400
 
-    ran my own validator so I can actually catch and fix problem
+    Forgot to remove some notes
 
-commit 4657aeb83593cf25fe74dd3f27741726e6c01319
+commit cb1a9466ffd86f98a490f996c28c6154c8f8da4d
 Author: MysticalOS <mysticalosx@gmail.com>
-Date:   Thu Jun 27 21:38:07 2019 -0400
+Date:   Fri Jul 12 00:45:21 2019 -0400
 
-    Fix last
+    Antispam update if multiple beckon's near you
 
-commit c4d3ef8eff8ea8351836d5f4a13c96f1338cef6d
+commit 1615b8307966eba871401fee5b0d2daab56ec993
 Author: MysticalOS <mysticalosx@gmail.com>
-Date:   Thu Jun 27 21:25:03 2019 -0400
+Date:   Thu Jul 11 23:59:48 2019 -0400
 
-    Missed one check
+    Also filter dead
 
-commit aa4372f46b1ee1f84b6a995ba50167e6ab1e28b0
+commit 8a93afbbf85c75a0962568b450310d935aab058a
 Author: MysticalOS <mysticalosx@gmail.com>
-Date:   Thu Jun 27 21:07:14 2019 -0400
+Date:   Thu Jul 11 23:29:17 2019 -0400
 
-    Fixed two different bugs that'd occur if users actually disabled warning or special warning sounds
+    minor tweaks
+
+commit 5856ac1ddfa8dfb173bc6f49c73d52e36116bf01
+Author: MysticalOS <mysticalosx@gmail.com>
+Date:   Thu Jul 11 23:02:24 2019 -0400
+
+    Push preliminary Azshara's Indomitable timer, which only covers first spawn of P2 (most will only see one spawn so this is fine to start with).
+
+commit e5664c9dac39b0bb6444e6293a27d8d81fb52882
+Author: MysticalOS <mysticalosx@gmail.com>
+Date:   Thu Jul 11 22:50:53 2019 -0400
+
+    enable countdown by default for arcane detonation
+
+commit 6ba81508f155320858d09c8059ae72e704e3f406
+Author: MysticalOS <mysticalosx@gmail.com>
+Date:   Thu Jul 11 22:37:35 2019 -0400
+
+    another infoframe fix
+
+commit e88ce4271342dce1a37207f7c240cc931f0fadd1
+Author: MysticalOS <mysticalosx@gmail.com>
+Date:   Thu Jul 11 22:07:32 2019 -0400
+
+    populate trash mod with some important stuff in eternal palace
+
+commit 49aa48c2863a80283601cc14aa0731d24adce2f3
+Author: MysticalOS <mysticalosx@gmail.com>
+Date:   Thu Jul 11 16:49:23 2019 -0400
+
+    Add german P3 trigger for Za'qul, rest of file is still completely english
+
+commit 57cf05c73f29a7bed177e34ec3d29d8ba64f8ca8
+Author: MysticalOS <mysticalosx@gmail.com>
+Date:   Thu Jul 11 15:06:18 2019 -0400
+
+    Possibly fix for azshara infoframe
+
+commit 99c0d9645be892bf57733a382de4e5f853feba9d
+Author: MysticalOS <mysticalosx@gmail.com>
+Date:   Thu Jul 11 12:35:41 2019 -0400
+
+    Prevent Lua error when bad timer data is synced to close #35
+    Also updated timer recovery to not send bad timer data in first place (basically it'll no longer send AI timers, since those aren't really compatible iwth timer recovery object, being locally generated temporary timers)
+
+commit b5ed4c2f2fbc71d4f73ec568be12477914697194
+Author: Elnarfim <37562642+Elnarfim@users.noreply.github.com>
+Date:   Thu Jul 11 15:10:41 2019 +0900
+
+    KR Update (#34)
+    
+    * KR Update
+    
+    * KR Update
+    
+    * KR Update
+    
+    * KR Update
+    
+    * KR Update
+    
+    * KR Update
+
+commit d41bf7eb0cd3d09efa14553a9219fe5901fb23cc
+Author: MysticalOS <mysticalosx@gmail.com>
+Date:   Thu Jul 11 00:03:25 2019 -0400
+
+    Remove this warning, it's useless spam
+
+commit 4fe32040a9bf79760881e1ddde991afa86612164
+Author: MysticalOS <mysticalosx@gmail.com>
+Date:   Wed Jul 10 23:42:09 2019 -0400
+
+    Fix Za'qul's creature ID for boss health reporting
+    
+    Changedd arcane burst warning to no longer be filtered by default but also only be on for healers by default.
+
+commit c60f13f0ab9cca8a730ca924df574fd6d6d39f1f
+Author: MysticalOS <mysticalosx@gmail.com>
+Date:   Wed Jul 10 22:28:49 2019 -0400
+
+    Fix a couple bugs
+
+commit 8db0c85ae5dd2bb5fd6d0bab553dbbfca613d2cd
+Author: MysticalOS <mysticalosx@gmail.com>
+Date:   Wed Jul 10 21:24:44 2019 -0400
+
+    Fix option text for infoframe on azshara
+
+commit 28ab03516fb429afe726ca2e72e1a294ece05495
+Author: MysticalOS <mysticalosx@gmail.com>
+Date:   Wed Jul 10 21:16:42 2019 -0400
+
+    Change icon yells a little
 

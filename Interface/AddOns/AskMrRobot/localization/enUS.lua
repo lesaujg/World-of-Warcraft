@@ -87,7 +87,8 @@ L.StatsShort = {
 L.InstanceNames = {
     [1861] = "Uldir",
     [2070] = "Dazar'alor",
-    [2096] = "Crucible of Storms"
+    [2096] = "Crucible of Storms",
+    [2164] = "The Eternal Palace"
 }
 
 L.DifficultyNames = {

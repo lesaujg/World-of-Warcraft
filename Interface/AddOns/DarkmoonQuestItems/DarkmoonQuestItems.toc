@@ -1,6 +1,6 @@
-## Interface: 80100
+## Interface: 80200
 ## Title: DarkmoonQuestItems
-## Version: 1.2
+## Version: 1.2.1
 ## Notes: This addon will show you whether you completed the quests associated with the Darkmoon Faire quest items.
 ## Author: Weper
 

@@ -1,7 +1,7 @@
-changeset:   165:3be9cc6f7d20
-tag:         v77
+changeset:   167:5c68d3fccff3
+tag:         v78
 user:        yellowfive
-date:        Tue Jun 25 10:27:20 2019 -0700
-summary:     Updated for 8.2, initial essence support.
+date:        Wed Jul 10 12:53:00 2019 -0700
+summary:     eternal palace auto-logging
 
 
