@@ -44,8 +44,6 @@ SmexyMatsDB = {
 				["Enchanting"] = {
 					["Bracnar"] = {
 					},
-					["Clothgar"] = {
-					},
 				},
 			},
 		},
