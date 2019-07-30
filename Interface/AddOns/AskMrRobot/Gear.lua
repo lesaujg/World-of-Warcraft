@@ -1172,18 +1172,23 @@ function beginEquipGearSet(setupId, passes)
 				table.insert(_pendingGearOps, { items = itemsToEquip.others, wait = true, label = "equip others" }) 
 			end
 
-			-- make the last operation wait no matter what, before this gets called again to check if everything succeeded
-			_pendingGearOps[#_pendingGearOps].wait = true
+			if #_pendingGearOps > 0 then			
+				-- make the last operation wait no matter what, before this gets called again to check if everything succeeded
+				_pendingGearOps[#_pendingGearOps].wait = true
 
-			if not _gearOpWaiting then
-				_gearOpWaiting = { inventory = {} }
+				if not _gearOpWaiting then
+					_gearOpWaiting = { inventory = {} }
+				end
+
+				_gearOpPasses = passes
+				_currentGearOp = _pendingGearOps[1]
+				initializeGearOp(_currentGearOp, setupId, 1)
+
+				processCurrentGearOp()
+			else
+				-- TODO: print message that gear set couldn't be equipped
 			end
-
-			_gearOpPasses = passes
-			_currentGearOp = _pendingGearOps[1]
-			initializeGearOp(_currentGearOp, setupId, 1)
-
-			processCurrentGearOp()
+			
 		else
 			-- TODO: print message that gear set couldn't be equipped
 		end

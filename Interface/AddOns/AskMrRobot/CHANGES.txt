@@ -1,7 +1,7 @@
-changeset:   167:5c68d3fccff3
-tag:         v78
+changeset:   169:d90a740a1d0b
+tag:         v79
 user:        yellowfive
-date:        Wed Jul 10 12:53:00 2019 -0700
-summary:     eternal palace auto-logging
+date:        Tue Jul 23 14:48:31 2019 -0700
+summary:     Bug fix, russian translation tweak.
 
 
