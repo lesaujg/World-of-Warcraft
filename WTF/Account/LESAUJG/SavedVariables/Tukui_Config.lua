@@ -72,14 +72,14 @@ TukuiConfigShared = {
 		},
 		["Belrath"] = {
 		},
+		["Sanjuri"] = {
+		},
+		["Edaka"] = {
+		},
 		["Galinar"] = {
 			["General"] = {
 				["UIScale"] = 0.64,
 			},
-		},
-		["Edaka"] = {
-		},
-		["Sanjuri"] = {
 		},
 		["Palani"] = {
 		},
