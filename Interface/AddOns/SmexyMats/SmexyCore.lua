@@ -6,10 +6,11 @@
 --local pairs, tonumber, print, string, table, _G = pairs, tonumber, print, string, table, _G;
 SmexyMats = LibStub("AceAddon-3.0"):NewAddon("SmexyMats", "AceEvent-3.0", "AceConsole-3.0");
 if SmexyMatsDB == nil then SmexyMatsDB = {}; end;
+if SmexyMatsAuto == nil then SmexyMatsAuto = {}; end;
 local L = LibStub("AceLocale-3.0"):GetLocale("SmexyMats");
 local AceConfig = LibStub("AceConfigDialog-3.0");
 local name = "SmexyMats(SM)";
-local version = "v8.1.0.3";
+local version = "v8.2.2";
 local isTooltipDone = nil;
 local storedLink = nil;
 local LID = nil;
@@ -33,7 +34,7 @@ function SmexyMats:OnInitialize()
 	else
 		print(SmexyMats.Colors.wowtoken .. name,SmexyMats.Colors.legendary .. version,SmexyMats.Colors.DeathKnight .. L["Failed! |rMissing Data-Tables. Reinstall SemxyMats(SM) to correct this issue or report the error to https://mods.curse.com/addons/wow/270824-smexymats"]);
 	end;
-	CacheProfessions();
+	SmexyMats:CacheProfessions();
 end;	
 
 function InstallHook(tooltip, method, prehook, posthook)
@@ -61,6 +62,7 @@ function SmexyMats:HookTooltips()
 	GameTooltip:HookScript("OnShow", JustTheTip);
 	GameTooltip:HookScript("OnTooltipCleared", function(self) isTooltipDone = nil; end);
 	GameTooltip:HookScript("OnTooltipSetItem", SmexyMats.ModifyItemTooltip);
+	
 	ItemRefTooltip:HookScript("OnShow", JustTheTip);
 	ItemRefTooltip:HookScript("OnTooltipCleared", function(self) isTooltipDone = nil; end);
 	ItemRefTooltip:HookScript("OnTooltipSetItem", SmexyMats.ModifyItemTooltip);
@@ -72,7 +74,7 @@ function SmexyMats:ChatCommand()
 end;
 
 function JustTheTip(tooltip, ...)
-	tooltip:SetBackdropColor(0,0,0,1); tooltip:Show();
+	tooltip:SetBackdropColor(0,0,0); tooltip:Show();
 end;
 
 function GetIDFromLink(link)
@@ -104,11 +106,32 @@ function SmexyMats:GetExPack(obj)
 end;
 
 function SmexyMats:TRADE_SKILL_SHOW()
-	CacheProfessions();
-	print(self,": TradeSkills Cached");
+	--print("SmexyMats: Caching TradeSkills...");
+	SmexyMats:CacheProfessions();
+	--C_Timer.After(5, SmexyMats:AutoCache());
 end;
 
-function CacheProfessions()
+--[[
+function SmexyMats:AutoCache()
+	
+	print("SmexyMats: AutoCaching TradeSkills...");
+	
+	if not (SmexyMatsAuto["MasterListing"]) then SmexyMatsAuto["MasterListing"] = {}; end;
+	if not (SmexyMatsAuto["MasterListing"]["ReagentIDs"]) then SmexyMatsAuto["MasterListing"]["ReagentIDs"] = {}; end;
+	if not (SmexyMatsAuto["MasterListing"]["RecipeIDs"]) then SmexyMatsAuto["MasterListing"]["RecipeIDs"] = {}; end;
+	
+	
+	for _, val in (C_TradeSkillUI.GetAllRecipeIDs()) do
+		if not (SmexyMatsAuto["MasterListing"]["RecipeIDs"][val]) then
+			print("Indexing RecipeID: "..val);
+			SmexyMatsAuto["MasterListing"]["RecipeIDs"][val] = {};
+		end;
+	end;
+	print("done");
+end;
+]]--
+
+function SmexyMats:CacheProfessions()
 	local RealmName = GetRealmName();
 	local FactionName = UnitFactionGroup("player");
 	local CharacterName = UnitName("player");
@@ -166,6 +189,7 @@ function CacheProfessions()
 			end;
 		end;
 	end;
+	
 end;
 
 function ProcessTooltip(tt, obj)
@@ -233,7 +257,7 @@ function ProcessTooltip(tt, obj)
 	
 	local EPC = nil;
 	
-	tt:AddLine(" ",1,1,1);
+	tt:AddLine(" ",0,0,0);
 	if (SmexyMatsDB.profile.Contents == true) then 
 		if EP ~= nil then
 			if (SmexyMatsDB.profile.IsColorBlind == true) then
@@ -246,35 +270,35 @@ function ProcessTooltip(tt, obj)
 			end;
 		
 			if (SmexyMatsDB.profile.IsColorBlind) then
-				tt:AddLine(CBOne .. tttE .. EPC,1,1,1,true);
+				tt:AddLine(CBOne .. tttE .. EPC,0,0,0,true);
 			else
-				tt:AddLine(SmexyMats.Colors.wowtoken .. tttE .. SmexyMats.ExPacks[EP].color .. EPC,1,1,1,true);
+				tt:AddLine(SmexyMats.Colors.wowtoken .. tttE .. SmexyMats.ExPacks[EP].color .. EPC,0,0,0,true);
 			end;
 		end; 
 	end;
 	if (SmexyMatsDB.profile.Sources == true) then
 		if (obj.aa) and (ProFrom) and (#(ProFrom) > 0) then
 			if (SmexyMatsDB.profile.IsColorBlind) then
-				tt:AddLine(CBOne .. tttS .. CBTwo .. ProFrom,1,1,1,true);
+				tt:AddLine(CBOne .. tttS .. CBTwo .. ProFrom,0,0,0,true);
 			else
-				tt:AddLine(SmexyMats.Colors.wowtoken .. tttS .. SmexyMats.Colors.white .. ProFrom,1,1,1,true);
+				tt:AddLine(SmexyMats.Colors.wowtoken .. tttS .. SmexyMats.Colors.white .. ProFrom,0,0,0,true);
 			end;
 		end;
 	end;
 	if (SmexyMatsDB.profile.Professions == true) then
 		if (obj.aa) and (ProFor) and (#(ProFor) > 0) then 
 			if (SmexyMatsDB.profile.IsColorBlind) then
-				tt:AddLine(CBOne .. tttP .. CBTwo .. ProFor,1,1,1,true);
+				tt:AddLine(CBOne .. tttP .. CBTwo .. ProFor,0,0,0,true);
 			else		
-				tt:AddLine(SmexyMats.Colors.wowtoken .. tttP .. SmexyMats.Colors.white .. ProFor,1,1,1,true);
+				tt:AddLine(SmexyMats.Colors.wowtoken .. tttP .. SmexyMats.Colors.white .. ProFor,0,0,0,true);
 			end;
 		end;
 	end;
 	if (SmexyMatsDB.profile.ItemIDs == true) then 
 		if (SmexyMatsDB.profile.IsColorBlind) then
-			tt:AddLine(CBOne .. tttI .. CBTwo .. obj.ID,1,1,1,true);
+			tt:AddLine(CBOne .. tttI .. CBTwo .. obj.ID,0,0,0,true);
 		else
-			tt:AddLine(SmexyMats.Colors.wowtoken .. tttI .. SmexyMats.Colors.Paladin .. obj.ID,1,1,1,true);
+			tt:AddLine(SmexyMats.Colors.wowtoken .. tttI .. SmexyMats.Colors.Paladin .. obj.ID,0,0,0,true);
 		end;
 	end;
 	
@@ -286,7 +310,7 @@ function ProcessTooltip(tt, obj)
 	local appRealm = false;
 	if (IsShiftKeyDown()) then
 		if isTooltipDone then isTooltipDone = false; end;
-		tt:AddLine(" ",1,1,1);		
+		tt:AddLine(" ",0,0,0);		
 		for proRealm, _ in pairs(SmexyMatsDB.ProTree) do
 			if (SmexyMatsDB.profile.AllRealms == true) then if (proRealm ~= RealmName) then appRealm = true; end; else if (proRealm ~= RealmName) then do break end; end; end;
 			for proFaction, _ in pairs(SmexyMatsDB.ProTree[proRealm]) do
@@ -294,9 +318,9 @@ function ProcessTooltip(tt, obj)
 				for proProf, _ in pairs(SmexyMatsDB.ProTree[proRealm][proFaction]) do
 					if (string.match(ProFor, SmexyMats:trim(proProf))) then
 						if (SmexyMatsDB.profile.IsColorBlind) then
-							tt:AddDoubleLine(CBOne .. proProf, "",r,b,g,1,1,1,true);
+							tt:AddDoubleLine(CBOne .. proProf, "",r,b,g,0,0,0,true);
 						else
-							tt:AddDoubleLine(SmexyMats.Colors.wowtoken .. proProf, "",r,b,g,1,1,1,true);
+							tt:AddDoubleLine(SmexyMats.Colors.wowtoken .. proProf, "",r,b,g,0,0,0,true);
 						end;
 						for proToon, _ in pairs(SmexyMatsDB.ProTree[proRealm][proFaction][proProf]) do
 							if (proString == "") then
@@ -315,9 +339,9 @@ function ProcessTooltip(tt, obj)
 							end;
 						end;
 						if (SmexyMatsDB.profile.IsColorBlind) then
-							tt:AddLine(CBTwo .. proString,1,1,1,true);
+							tt:AddLine(CBTwo .. proString,0,0,0,true);
 						else
-							tt:AddLine(SmexyMats.Colors.white .. proString,1,1,1,true);
+							tt:AddLine(SmexyMats.Colors.white .. proString,0,0,0,true);
 						end;
 						proString = "";
 					end;

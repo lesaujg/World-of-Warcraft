@@ -1,13 +1,19 @@
-tag fd8ca28673650bac05067fb1aca177cc3f7948f9 8.2.8
+tag 4fd67021481c779da3459616350498bde26f3430 8.2.9
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Sat Jul 27 12:27:55 2019 +1000
+Date:	Wed Jul 31 11:56:22 2019 +1000
 
-LiteMount 8.2.8
-Fix Island Expedition: Crestfall flying status
+LiteMount 8.2.9
+Fix scrolling for edit box on advanced options panel
 
-commit acdcda537e65d07bb51bf1dd0ce0e45721a98d3e
+commit c2db1ac5e54c3ff6ebad735b8a618ff9baa535be
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sat Jul 27 12:25:04 2019 +1000
+Date:   Tue Jul 30 13:18:49 2019 +1000
 
-    Mark Island Expedition Crestfall non-flyable
+    Fix bug with uidebug
+
+commit ed50db2981544b3f00f288fef0929852d7238bc6
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Tue Jul 30 13:16:20 2019 +1000
+
+    Fix scrolling on edit box in advanced UI panel
 

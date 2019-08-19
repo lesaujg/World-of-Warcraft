@@ -11,6 +11,8 @@ SmexyMats.Sources = {
 	[1] = {
 		--BFA
 		[7] = {
+			--Patch 8.2.0
+				--None
 			--Patch 8.1.0
 			165851,	--	Bag of Anchors
 			166976,	--	Emblazoned Alchemist Stone
@@ -516,6 +518,9 @@ SmexyMats.Sources = {
 	[2] = {
 		--BFA
 		[7] = {
+		
+			--Patch 8.2.0
+				--None
 			160740,	--	Croak Crock
 			160751,	--	Dance of the Dead
 			160833,	--	Fetish of the Tormented Mind
@@ -704,6 +709,8 @@ SmexyMats.Sources = {
 	[3] = {
 		--BFA
 		[7] = {
+			--Patch 8.2.0
+				--None
 			--8.1.0
 			165406,	--	Enhanced Stormsteel Girdle
 			165379,	--	Enhanced Stormsteel Legguards
@@ -1155,6 +1162,8 @@ SmexyMats.Sources = {
 	[4] = {
 		--BFA
 		[7] = {
+			--Patch 8.2.0
+				--None
 			--8.1.0
 			166804,	--	Boralus Blood Sausage
 			165755,	--	Honey Potpie
@@ -1614,6 +1623,8 @@ SmexyMats.Sources = {
 	[5] = {
 		--BFA
 		[7] = {
+			--Patch 8.2.0
+				--None
 			--8.1.0
 			165741,	--	Disenchanting Rod
 			162461,	--	Sanguicell
@@ -2134,6 +2145,8 @@ SmexyMats.Sources = {
 	[6] = {
 		--BFA
 		[7] = {
+			--Patch 8.2.0
+				--None
 			--8.1.0
 			165897,	--	Charged SP1-R1-73D Bionic Bifocals
 			165896,	--	Charged SP1-R1-73D Gearspun Goggles
@@ -2790,38 +2803,46 @@ SmexyMats.Sources = {
 	[7] = {
 		--BFA
 		[7] = {
+			--Patch 8.2.0
+				168302,	--	Viper Fish
+				166971,	--	Empty Energy Cell
+				166970,	--	Energy Cell
+				167562,	--	Ionized Minnow
+				168646,	--	Mauve Stinger
+				168262,	--	Sentry Fish
+				166846,	--	Spare Parts
 			--8.1.0
 			
 			--8.0.1
-			160930,	--	Barnacled Greataxe
-			160927,	--	Chipped Stone Hatchet
-			154770,	--	Cracked Hide Belt
-			154771,	--	Cracked Hide Boots
-			154801,	--	Crumbling Chain Belt
-			154796,	--	Crumbling Chain Sabatons
-			160925,	--	Crusty Cutlass
-			159186,	--	Foxhollow Leggings
-			152545,	--	Frenzied Fangtooth
-			152547,	--	Great Sea Catfish
-			163131,	--	Great Sea Ray
-			157844,	--	Iridescent Speck
-			152546,	--	Lane Snapper
-			162515,	--	Midnight Salmon
-			160934,	--	Mud-Soaked Crossbow
-			162516,	--	Rasboralus
-			152549,	--	Redtail Loach
-			152505,	--	Riverbud
-			154785,	--	Ruptured Plate Belt
-			154779,	--	Ruptured Plate Stompers
-			152543,	--	Sand Shifter
-			152511,	--	Sea Stalk
-			152544,	--	Slimy Mackerel
-			152506,	--	Star Moss
-			152548,	--	Tiragarde Perch
-			154792,	--	Unraveling Cloth Cord
-			154788,	--	Unraveling Cloth Sandals
-			154787,	--	Unraveling Cloth Shirt
-			162517,	--	U'taka
+				160930,	--	Barnacled Greataxe
+				160927,	--	Chipped Stone Hatchet
+				154770,	--	Cracked Hide Belt
+				154771,	--	Cracked Hide Boots
+				154801,	--	Crumbling Chain Belt
+				154796,	--	Crumbling Chain Sabatons
+				160925,	--	Crusty Cutlass
+				159186,	--	Foxhollow Leggings
+				152545,	--	Frenzied Fangtooth
+				152547,	--	Great Sea Catfish
+				163131,	--	Great Sea Ray
+				157844,	--	Iridescent Speck
+				152546,	--	Lane Snapper
+				162515,	--	Midnight Salmon
+				160934,	--	Mud-Soaked Crossbow
+				162516,	--	Rasboralus
+				152549,	--	Redtail Loach
+				152505,	--	Riverbud
+				154785,	--	Ruptured Plate Belt
+				154779,	--	Ruptured Plate Stompers
+				152543,	--	Sand Shifter
+				152511,	--	Sea Stalk
+				152544,	--	Slimy Mackerel
+				152506,	--	Star Moss
+				152548,	--	Tiragarde Perch
+				154792,	--	Unraveling Cloth Cord
+				154788,	--	Unraveling Cloth Sandals
+				154787,	--	Unraveling Cloth Shirt
+				162517,	--	U'taka
 		},
 		
 		--Legion
@@ -4472,28 +4493,31 @@ SmexyMats.Sources = {
 	[8] = {
 		--BFA
 		[7] = {
-			152507,	--	Akunda's Bite
-			152510,	--	Anchor Weed
-			159877,	--	Dead Pollen-Covered Bee
-			160250,	--	Dead Pollen-Covered Wasp
-			159956,	--	Disgustingly Damp Flower
-			160301,	--	Disgustingly Damp Flower
-			160035,	--	Enormous Anchor Pod
-			160550,	--	Enormous Anchor Pod
-			163595,	--	Flourishing Riverbud
-			163588,	--	Flourishing Sea Stalk
-			159830,	--	Fresh Star Moss
-			160117,	--	Fully Charged Lightning Pod
-			159957,	--	Heaping Handful of Damp Pollen
-			160036,	--	Mature Anchor Pod
-			163601,	--	Overgrown Anchor Weed
-			152505,	--	Riverbud
-			152511,	--	Sea Stalk
-			152509,	--	Siren's Pollen
-			152506,	--	Star Moss
-			155610,	--	Stinging Nettle
-			160064,	--	The Frigid Boon
-			152508,	--	Winter's Kiss
+			--Patch 8.2.0
+				168487, -- Zin'anthid
+			--Previous Patches
+				152507,	--	Akunda's Bite
+				152510,	--	Anchor Weed
+				159877,	--	Dead Pollen-Covered Bee
+				160250,	--	Dead Pollen-Covered Wasp
+				159956,	--	Disgustingly Damp Flower
+				160301,	--	Disgustingly Damp Flower
+				160035,	--	Enormous Anchor Pod
+				160550,	--	Enormous Anchor Pod
+				163595,	--	Flourishing Riverbud
+				163588,	--	Flourishing Sea Stalk
+				159830,	--	Fresh Star Moss
+				160117,	--	Fully Charged Lightning Pod
+				159957,	--	Heaping Handful of Damp Pollen
+				160036,	--	Mature Anchor Pod
+				163601,	--	Overgrown Anchor Weed
+				152505,	--	Riverbud
+				152511,	--	Sea Stalk
+				152509,	--	Siren's Pollen
+				152506,	--	Star Moss
+				155610,	--	Stinging Nettle
+				160064,	--	The Frigid Boon
+				152508,	--	Winter's Kiss
 		},
 		
 		--Legion
@@ -4693,48 +4717,51 @@ SmexyMats.Sources = {
 	[9] = {
 		--BFA
 		[7] = {
+			--Patch 8.2.0
+				168487, --	Zin'anthid
+				168663,	--	Maroon Ink
 			--8.1.0
-			165016,	--	Contract: 7th Legion
-			165017,	--	Contract: The Honorbound
-			165745,	--	Crimson Ink Well
-			166664,	--	Glyph of Storm's Wake
-			166583,	--	Glyph of the Tides
-			162461,	--	Sanguicell
-			164682,	--	Sinister Combatant's Etched Vessel
-			165692,	--	Vantus Rune: Battle of Dazar'alor
+				165016,	--	Contract: 7th Legion
+				165017,	--	Contract: The Honorbound
+				165745,	--	Crimson Ink Well
+				166664,	--	Glyph of Storm's Wake
+				166583,	--	Glyph of the Tides
+				162461,	--	Sanguicell
+				164682,	--	Sinister Combatant's Etched Vessel
+				165692,	--	Vantus Rune: Battle of Dazar'alor
 			--8.0.1
-			153643,	--	Inscribed Vessel of Mysticism
-			159940,	--	Honorable Combatant's Etched Vessel
-			152507,	--	Akunda's Bite
-			152510,	--	Anchor Weed
-			153646,	--	Codex of the Quiet Mind
-			153668,	--	Contract: Champions of Azeroth
-			153662,	--	Contract: Order of Embers
-			153661,	--	Contract: Proudmoore Admiralty
-			153663,	--	Contract: Storm's Wake
-			153665,	--	Contract: Talanji's Expedition
-			153667,	--	Contract: Tortollan Seekers
-			153666,	--	Contract: Voldunai
-			153664,	--	Contract: Zandalari Empire
-			158188,	--	Crimson Ink
-			162114,	--	Crimson Ink Well
-			153598,	--	Darkmoon Card of War
-			162022,	--	Glyph of the Dolphin
-			162029,	--	Glyph of the Humble Flyer
-			162027,	--	Glyph of the Tideskipper
-			152505,	--	Riverbud
-			159825,	--	Scroll of Unlocking
-			152511,	--	Sea Stalk
-			152509,	--	Siren's Pollen
-			152506,	--	Star Moss
-			153647,	--	Tome of the Quiet Mind
-			158187,	--	Ultramarine Ink
-			153673,	--	Vantus Rune: Uldir
-			158189,	--	Viridescent Ink
-			158202,	--	War-Scroll of Battle Shout
-			158204,	--	War-Scroll of Fortitude
-			158201,	--	War-Scroll of Intellect
-			152508,	--	Winter's Kiss
+				153643,	--	Inscribed Vessel of Mysticism
+				159940,	--	Honorable Combatant's Etched Vessel
+				152507,	--	Akunda's Bite
+				152510,	--	Anchor Weed
+				153646,	--	Codex of the Quiet Mind
+				153668,	--	Contract: Champions of Azeroth
+				153662,	--	Contract: Order of Embers
+				153661,	--	Contract: Proudmoore Admiralty
+				153663,	--	Contract: Storm's Wake
+				153665,	--	Contract: Talanji's Expedition
+				153667,	--	Contract: Tortollan Seekers
+				153666,	--	Contract: Voldunai
+				153664,	--	Contract: Zandalari Empire
+				158188,	--	Crimson Ink
+				162114,	--	Crimson Ink Well
+				153598,	--	Darkmoon Card of War
+				162022,	--	Glyph of the Dolphin
+				162029,	--	Glyph of the Humble Flyer
+				162027,	--	Glyph of the Tideskipper
+				152505,	--	Riverbud
+				159825,	--	Scroll of Unlocking
+				152511,	--	Sea Stalk
+				152509,	--	Siren's Pollen
+				152506,	--	Star Moss
+				153647,	--	Tome of the Quiet Mind
+				158187,	--	Ultramarine Ink
+				153673,	--	Vantus Rune: Uldir
+				158189,	--	Viridescent Ink
+				158202,	--	War-Scroll of Battle Shout
+				158204,	--	War-Scroll of Fortitude
+				158201,	--	War-Scroll of Intellect
+				152508,	--	Winter's Kiss
 		},
 		
 		--Legion
@@ -5098,57 +5125,66 @@ SmexyMats.Sources = {
 	[10] = {
 		--BFA
 		[7] = {
+			--8.2.0
+				168185, -- Osmenite Ore
+				168188,	--	Sage Agate
+				168193,	--	Azsharine
+				168635,	--	Leviathan's Eye
+				168191,	--	Sea Currant
+				168189,	--	Dark Opal
+				168192,	--	Sand Spinel
+				168190,	--	Lava Lazuli
 			--8.1.0
-			166521,	--	Emblazoned Kraken's Eye Loop
-			166524,	--	Eternal Kraken's Eye Loop
-			166520,	--	Imbued Kraken's Eye Loop
-			165743,	--	Kaleidoscopic Lens
-			166519,	--	Kraken's Eye Loop
-			162461,	--	Sanguicell
-			164681,	--	Sinister Combatant's Intuitive Staff
-			166523,	--	Spirited Kraken's Eye Loop
-			166522,	--	Tidal Kraken's Eye Loop
+				166521,	--	Emblazoned Kraken's Eye Loop
+				166524,	--	Eternal Kraken's Eye Loop
+				166520,	--	Imbued Kraken's Eye Loop
+				165743,	--	Kaleidoscopic Lens
+				166519,	--	Kraken's Eye Loop
+				162461,	--	Sanguicell
+				164681,	--	Sinister Combatant's Intuitive Staff
+				166523,	--	Spirited Kraken's Eye Loop
+				166522,	--	Tidal Kraken's Eye Loop
 			--8.0.l
-			154123,	--	Amberblaze
-			153686,	--	Amberblaze Loop
-			154126,	--	Deadly Amberblaze
-			153710,	--	Deadly Solstone
-			153700,	--	Golden Beryl
-			153689,	--	Golden Beryl Ring
-			159939,	--	Honorable Combatant's Staff of Intuition
-			153714,	--	Insightful Rubellite
-			162112,	--	Kaleidoscopic Lens
-			153706,	--	Kraken's Eye
-			153708,	--	Kraken's Eye of Agility
-			153709,	--	Kraken's Eye of Intellect
-			153707,	--	Kraken's Eye of Strength
-			153702,	--	Kubiline
-			153688,	--	Kubiline Ring
-			153705,	--	Kyanite
-			153687,	--	Kyanite Ring
-			154124,	--	Laribole
-			153639,	--	Laribole Staff of Alacrity
-			153713,	--	Masterful Kubiline
-			154129,	--	Masterful Tidal Amethyst
-			154120,	--	Owlseye
-			153685,	--	Owlseye Loop
-			153711,	--	Quick Golden Beryl
-			154127,	--	Quick Owlseye
-			154125,	--	Royal Quartz
-			153683,	--	Royal Quartz Loop
-			153701,	--	Rubellite
-			153637,	--	Rubellite Staff of Intuition
-			154121,	--	Scarlet Diamond
-			153640,	--	Scarlet Diamond Staff of Intuition
-			153703,	--	Solstone
-			153690,	--	Solstone Ring
-			153715,	--	Straddling Viridium
-			154122,	--	Tidal Amethyst
-			153684,	--	Tidal Amethyst Loop
-			153712,	--	Versatile Kyanite
-			154128,	--	Versatile Royal Quartz
-			153704,	--	Viridium
-			153638,	--	Viridium Staff of Alacrity
+				154123,	--	Amberblaze
+				153686,	--	Amberblaze Loop
+				154126,	--	Deadly Amberblaze
+				153710,	--	Deadly Solstone
+				153700,	--	Golden Beryl
+				153689,	--	Golden Beryl Ring
+				159939,	--	Honorable Combatant's Staff of Intuition
+				153714,	--	Insightful Rubellite
+				162112,	--	Kaleidoscopic Lens
+				153706,	--	Kraken's Eye
+				153708,	--	Kraken's Eye of Agility
+				153709,	--	Kraken's Eye of Intellect
+				153707,	--	Kraken's Eye of Strength
+				153702,	--	Kubiline
+				153688,	--	Kubiline Ring
+				153705,	--	Kyanite
+				153687,	--	Kyanite Ring
+				154124,	--	Laribole
+				153639,	--	Laribole Staff of Alacrity
+				153713,	--	Masterful Kubiline
+				154129,	--	Masterful Tidal Amethyst
+				154120,	--	Owlseye
+				153685,	--	Owlseye Loop
+				153711,	--	Quick Golden Beryl
+				154127,	--	Quick Owlseye
+				154125,	--	Royal Quartz
+				153683,	--	Royal Quartz Loop
+				153701,	--	Rubellite
+				153637,	--	Rubellite Staff of Intuition
+				154121,	--	Scarlet Diamond
+				153640,	--	Scarlet Diamond Staff of Intuition
+				153703,	--	Solstone
+				153690,	--	Solstone Ring
+				153715,	--	Straddling Viridium
+				154122,	--	Tidal Amethyst
+				153684,	--	Tidal Amethyst Loop
+				153712,	--	Versatile Kyanite
+				154128,	--	Versatile Royal Quartz
+				153704,	--	Viridium
+				153638,	--	Viridium Staff of Alacrity
 		},
 		
 		--Legion
@@ -7646,6 +7682,9 @@ SmexyMats.Sources = {
 	[12] = {
 		--BFA
 		[7] = {
+			--8.2.0
+				168185, --	Osmenite Ore
+			--Previous
 			160944,	--	An Exsquisite Brooch
 			163624,	--	Burnished Platinum
 			163626,	--	Coarse Storm Silver
@@ -7933,30 +7972,36 @@ SmexyMats.Sources = {
 	[13] = {
 		--BFA
 		[7] = {
-			161431,	--	Ancient Skinning Knife
-			154164,	--	Blood-Stained Bone
-			152631,	--	Briny Flesh
-			154165,	--	Calcified Bone
-			160502,	--	Chemical Blasting Cap
-			152541,	--	Coarse Leather
-			155618,	--	Discarded Molting
-			158210,	--	Fearsome Claw
-			155631,	--	Inert Stone
-			163569,	--	Insulated Wiring
-			161424,	--	Ivory Handled Dagger
-			158859,	--	Jagged Fang
-			158751,	--	Matted Pelt
-			154898,	--	Meaty Haunch
-			153051,	--	Mistscale
-			152512,	--	Monelite Ore
-			157842,	--	Rusty Gear
-			156583,	--	Salvaged Azerite Ammunition
-			153050,	--	Shimmerscale
-			152579,	--	Storm Silver Ore
-			154897,	--	Stringy Loins
-			154722,	--	Tempest Hide
-			154899,	--	Thick Paleo Steak
-			158850,	--	Vibrant Plumage
+			--8.2.0
+				168650,	--	Cragscale
+				168649,	--	Dredged Leather
+				168645,	--	Moist Fillet
+				168303,	--	Rubbery Flank
+			--Previous
+				161431,	--	Ancient Skinning Knife
+				154164,	--	Blood-Stained Bone
+				152631,	--	Briny Flesh
+				154165,	--	Calcified Bone
+				160502,	--	Chemical Blasting Cap
+				152541,	--	Coarse Leather
+				155618,	--	Discarded Molting
+				158210,	--	Fearsome Claw
+				155631,	--	Inert Stone
+				163569,	--	Insulated Wiring
+				161424,	--	Ivory Handled Dagger
+				158859,	--	Jagged Fang
+				158751,	--	Matted Pelt
+				154898,	--	Meaty Haunch
+				153051,	--	Mistscale
+				152512,	--	Monelite Ore
+				157842,	--	Rusty Gear
+				156583,	--	Salvaged Azerite Ammunition
+				153050,	--	Shimmerscale
+				152579,	--	Storm Silver Ore
+				154897,	--	Stringy Loins
+				154722,	--	Tempest Hide
+				154899,	--	Thick Paleo Steak
+				158850,	--	Vibrant Plumage
 		},
 		
 		--Legion
@@ -9116,34 +9161,36 @@ SmexyMats.Reagents = {
 	[1] = {
 		--Battle For Azeroth
 		[7] = {
+			--Patch 8.2.0
+				168487, --	Zin'anthid
 			--Patch 8.1.0
-			165703,	--	Breath of Bwonsamdi
-			162461,	--	Sanguicell
-			165948,	--	Tidalcore
+				165703,	--	Breath of Bwonsamdi
+				162461,	--	Sanguicell
+				165948,	--	Tidalcore
 			--Patch 8.0.1
-			152507,	--	Akunda's Bite
-			152510,	--	Anchor Weed
-			154164,	--	Blood-Stained Bone
-			152494,	--	Coastal Healing Potion
-			152495,	--	Coastal Mana Potion
-			152577,	--	Deep Sea Satin
-			152668,	--	Expulsom
-			152639,	--	Flask of Endless Fathoms
-			152638,	--	Flask of the Currents
-			152641,	--	Flask of the Undertow
-			152640,	--	Flask of the Vast Horizon
-			152547,	--	Great Sea Catfish
-			162460,	--	Hydrocore
-			152512,	--	Monelite Ore
-			152505,	--	Riverbud
-			152543,	--	Sand Shifter
-			152511,	--	Sea Stalk
-			152509,	--	Siren's Pollen
-			152506,	--	Star Moss
-			152579,	--	Storm Silver Ore
-			154897,	--	Stringy Loins
-			152576,	--	Tidespray Linen
-			152508,	--	Winter's Kiss
+				152507,	--	Akunda's Bite
+				152510,	--	Anchor Weed
+				154164,	--	Blood-Stained Bone
+				152494,	--	Coastal Healing Potion
+				152495,	--	Coastal Mana Potion
+				152577,	--	Deep Sea Satin
+				152668,	--	Expulsom
+				152639,	--	Flask of Endless Fathoms
+				152638,	--	Flask of the Currents
+				152641,	--	Flask of the Undertow
+				152640,	--	Flask of the Vast Horizon
+				152547,	--	Great Sea Catfish
+				162460,	--	Hydrocore
+				152512,	--	Monelite Ore
+				152505,	--	Riverbud
+				152543,	--	Sand Shifter
+				152511,	--	Sea Stalk
+				152509,	--	Siren's Pollen
+				152506,	--	Star Moss
+				152579,	--	Storm Silver Ore
+				154897,	--	Stringy Loins
+				152576,	--	Tidespray Linen
+				152508,	--	Winter's Kiss
 		},
 		
 		--Legion
@@ -9493,17 +9540,19 @@ SmexyMats.Reagents = {
 	[3] = {
 		--BFA
 		[7] = {
+			--8.2.0
+				168185, --	Osmenite Ore
 			--8.1.0
-			165703,	--	Breath of Bwonsamdi
-			165948,	--	Tidalcore
+				165703,	--	Breath of Bwonsamdi
+				165948,	--	Tidalcore
 			--8.0.1
-			160298,	--	Durable Flux
-			152668,	--	Expulsom
-			162460,	--	Hydrocore
-			152512,	--	Monelite Ore
-			152513,	--	Platinum Ore
-			162461,	--	Sanguicell
-			152579,	--	Storm Silver Ore
+				160298,	--	Durable Flux
+				152668,	--	Expulsom
+				162460,	--	Hydrocore
+				152512,	--	Monelite Ore
+				152513,	--	Platinum Ore
+				162461,	--	Sanguicell
+				152579,	--	Storm Silver Ore
 		},
 		
 		--Legion
@@ -9899,31 +9948,39 @@ SmexyMats.Reagents = {
 	[4] = {
 		--BFA
 		[7] = {
+			--8.2.0
+				168302, --	Viper Fish
+				167562,	-- 	Ionized Minnow
+				166846,	-- 	Mauve Stinger
+				169610,	-- 	Moist Fillet
+				168303,	-- 	Rubbery Flank
+				168646,	-- 	S.P.A.R.E. Crate
+				168645,	-- 	Spare Parts
 			--8.0.1
-			160711,	--	Aromatic Fish Oil
-			152631,	--	Briny Flesh
-			160398,	--	Choral Honey
-			163782,	--	Cursed Haunch
-			160400,	--	Foosaka
-			152545,	--	Frenzied Fangtooth
-			160709,	--	Fresh Potato
-			152547,	--	Great Sea Catfish
-			154881,	--	Kul Tiramisu
-			152546,	--	Lane Snapper
-			160705,	--	Major's Frothy Coffee
-			154898,	--	Meaty Haunch
-			162515,	--	Midnight Salmon
-			154885,	--	Mon'Dazi
-			160712,	--	Powdered Sugar
-			152549,	--	Redtail Loach
-			152543,	--	Sand Shifter
-			162461,	--	Sanguicell
-			152544,	--	Slimy Mackerel
-			154897,	--	Stringy Loins
-			154899,	--	Thick Paleo Steak
-			152548,	--	Tiragarde Perch
-			160710,	--	Wild Berries
-			160399,	--	Wild Flour
+				160711,	--	Aromatic Fish Oil
+				152631,	--	Briny Flesh
+				160398,	--	Choral Honey
+				163782,	--	Cursed Haunch
+				160400,	--	Foosaka
+				152545,	--	Frenzied Fangtooth
+				160709,	--	Fresh Potato
+				152547,	--	Great Sea Catfish
+				154881,	--	Kul Tiramisu
+				152546,	--	Lane Snapper
+				160705,	--	Major's Frothy Coffee
+				154898,	--	Meaty Haunch
+				162515,	--	Midnight Salmon
+				154885,	--	Mon'Dazi
+				160712,	--	Powdered Sugar
+				152549,	--	Redtail Loach
+				152543,	--	Sand Shifter
+				162461,	--	Sanguicell
+				152544,	--	Slimy Mackerel
+				154897,	--	Stringy Loins
+				154899,	--	Thick Paleo Steak
+				152548,	--	Tiragarde Perch
+				160710,	--	Wild Berries
+				160399,	--	Wild Flour
 		},
 		
 		--Legion
@@ -10353,6 +10410,8 @@ SmexyMats.Reagents = {
 	[5] = {
 		--BFA
 		[7] = {
+		--8.2.0
+		
 		--8.1.0
 			165703,	--	Breath of Bwonsamdi
 			162461,	--	Sanguicell
@@ -10548,24 +10607,26 @@ SmexyMats.Reagents = {
 	[6] = {
 		--BFA
 		[7] = {
+			--8.2.0
+				168185, --	Osmenite Ore
 			--8.1.0
-			165703,	--	Breath of Bwonsamdi
-			162461,	--	Sanguicell
-			165948,	--	Tidalcore
+				165703,	--	Breath of Bwonsamdi
+				162461,	--	Sanguicell
+				165948,	--	Tidalcore
 			--8.0.1
-			161136,	--	Azerite Forged Protection Plating
-			161131,	--	Barely Stable Azerite Reactor
-			161137,	--	Blast-Fired Electric Servomotor
-			160502,	--	Chemical Blasting Cap
-			161132,	--	Crush Resistant Stabilizer
-			152668,	--	Expulsom
-			162460,	--	Hydrocore
-			163203,	--	Hypersensitive Azeritometer Sensor
-			163569,	--	Insulated Wiring
-			161129,	--	Mecha-Mogul Mk1 Remote Activation Device
-			152512,	--	Monelite Ore
-			152513,	--	Platinum Ore
-			152579,	--	Storm Silver Ore
+				161136,	--	Azerite Forged Protection Plating
+				161131,	--	Barely Stable Azerite Reactor
+				161137,	--	Blast-Fired Electric Servomotor
+				160502,	--	Chemical Blasting Cap
+				161132,	--	Crush Resistant Stabilizer
+				152668,	--	Expulsom
+				162460,	--	Hydrocore
+				163203,	--	Hypersensitive Azeritometer Sensor
+				163569,	--	Insulated Wiring
+				161129,	--	Mecha-Mogul Mk1 Remote Activation Device
+				152512,	--	Monelite Ore
+				152513,	--	Platinum Ore
+				152579,	--	Storm Silver Ore
 		},
 		
 		--Legion
@@ -11104,6 +11165,10 @@ SmexyMats.Reagents = {
 	[9] = {
 		--BFA
 		[7] = {
+			--8.2.0
+			168487,	--	Zin'anthid
+			168663, --	Maroon Ink
+			168662, --	Moroon Pigment
 			--8.1.0
 			165703,	--	Breath of Bwonsamdi
 			162461,	--	Sanguicell
@@ -11254,29 +11319,38 @@ SmexyMats.Reagents = {
 	[10] = {
 		--BFA
 		[7] = {
+			--8.2.0
+				168193,	--	Azsharine
+				168189,	--	Dark Opal
+				168190,	--	Lava Lazuli
+				168635,	--	Leviathan's Eye
+				168185,	--	Osmenite Ore
+				168188,	--	Sage Agate
+				168192,	--	Sand Spinel
+				168191,	--	Sea Currant
 			--8.1.0
-			165703,	--	Breath of Bwonsamdi
-			162461,	--	Sanguicell
-			165948,	--	Tidalcore
+				165703,	--	Breath of Bwonsamdi
+				162461,	--	Sanguicell
+				165948,	--	Tidalcore
 			--8.0.1
-			154123,	--	Amberblaze
-			152668,	--	Expulsom
-			153700,	--	Golden Beryl
-			162460,	--	Hydrocore
-			153706,	--	Kraken's Eye
-			153702,	--	Kubiline
-			153705,	--	Kyanite
-			154124,	--	Laribole
-			152512,	--	Monelite Ore
-			154120,	--	Owlseye
-			152513,	--	Platinum Ore
-			154125,	--	Royal Quartz
-			153701,	--	Rubellite
-			154121,	--	Scarlet Diamond
-			153703,	--	Solstone
-			152579,	--	Storm Silver Ore
-			154122,	--	Tidal Amethyst
-			153704,	--	Viridium
+				154123,	--	Amberblaze
+				152668,	--	Expulsom
+				153700,	--	Golden Beryl
+				162460,	--	Hydrocore
+				153706,	--	Kraken's Eye
+				153702,	--	Kubiline
+				153705,	--	Kyanite
+				154124,	--	Laribole
+				152512,	--	Monelite Ore
+				154120,	--	Owlseye
+				152513,	--	Platinum Ore
+				154125,	--	Royal Quartz
+				153701,	--	Rubellite
+				154121,	--	Scarlet Diamond
+				153703,	--	Solstone
+				152579,	--	Storm Silver Ore
+				154122,	--	Tidal Amethyst
+				153704,	--	Viridium
 		},
 		
 		--Legion
@@ -11603,6 +11677,9 @@ SmexyMats.Reagents = {
 	[11] = {
 		--BFA
 		[7] = {
+			--8.2.0
+			168649, --	Dredged Leather
+			168650, --	Cragscale
 			--8.1.0
 			165703,	--	Breath of Bwonsamdi
 			165948,	--	Tidalcore
@@ -12068,17 +12145,20 @@ SmexyMats.Reagents = {
 	[14] = {
 		--BFA
 		[7] = {
+			--8.2.0
+				168649, --	Dredged Leather
+				167738,	--	Gilded Seaweave
 			--8.1.0
-			165703,	--	Breath of Bwonsamdi
-			165948,	--	Tidalcore
+				165703,	--	Breath of Bwonsamdi
+				165948,	--	Tidalcore
 			--8.0.1
-			152577,	--	Deep Sea Satin
-			158378,	--	Embroidered Deep Sea Satin
-			152668,	--	Expulsom
-			162460,	--	Hydrocore
-			159959,	--	Nylon Thread
-			162461,	--	Sanguicell
-			152576,	--	Tidespray Linen
+				152577,	--	Deep Sea Satin
+				158378,	--	Embroidered Deep Sea Satin
+				152668,	--	Expulsom
+				162460,	--	Hydrocore
+				159959,	--	Nylon Thread
+				162461,	--	Sanguicell
+				152576,	--	Tidespray Linen
 		},
 		
 		--Legion
@@ -12419,942 +12499,974 @@ SmexyMats.Reagents = {
 
 --These item reagents can be obtained from Drops
 SmexyMats.Drop = {
-	111664,	--	Abyssal Gulper Eel
-	109143,	--	Abyssal Gulper Eel Flesh
-	23425,	--	Adamantite Ore
-	36903,	--	Adder's Tongue
-	124101,	--	Aethril
-	102541,	--	Aged Balsamic Vinegar
-	102543,	--	Aged Mogu'shan Cheese
-	53065,	--	Albino Cavefish
-	108996,	--	Alchemical Catalyst
-	76137,	--	Alexandrite
-	53071,	--	Algaefin Rockfish
-	36931,	--	Ametrine
-	152510,	--	Anchor Weed
-	102542,	--	Ancient Pandaren Spices
-	7909,	--	Aquamarine
-	12363,	--	Arcane Crystal
-	151718,	--	Argulite
-	124440,	--	Arkhana
-	8836,	--	Arthas' Tears
-	151565,	--	Astral Glory
-	36921,	--	Autumn's Glow
-	12800,	--	Azerothian Diamond
-	52985,	--	Azshara's Veil
-	130174,	--	Azsunite
-	23117,	--	Azure Moonstone
-	41812,	--	Barrelhead Goby
-	62783,	--	Basilisk "Liver"
-	27669,	--	Bat Flesh
-	35562,	--	Bear Flank
-	3173,	--	Bear Meat
-	3730,	--	Big Bear Meat
-	124119,	--	Big Gamy Ribs
-	124112,	--	Black Barracuda
-	11754,	--	Black Diamond
-	15416,	--	Black Dragonscale
-	7971,	--	Black Pearl
-	137596,	--	Black Transmutagen
-	72094,	--	Black Trillium Ore
-	9262,	--	Black Vitriol
-	53066,	--	Blackbelly Mudfish
-	112156,	--	Blackened Dragonscale Fragment
-	109992,	--	Blackrock Fragment
-	109118,	--	Blackrock Ore
-	111663,	--	Blackwater Whiptail
-	109144,	--	Blackwater Whiptail Flesh
-	111667,	--	Blind Lake Sturgeon
-	109140,	--	Blind Lake Sturgeon Flesh
-	8839,	--	Blindweed
-	23077,	--	Blood Garnet
-	124124,	--	Blood of Sargeras
-	11382,	--	Blood of the Mountain
-	62791,	--	Blood Shrimp
-	80433,	--	Blood Spirit
-	154164,	--	Blood-Stained Bone
-	36917,	--	Bloodstone
-	4611,	--	Blue Pearl
-	12361,	--	Blue Sapphire
-	2677,	--	Boar Ribs
-	2996,	--	Bolt of Linen Cloth
-	4339,	--	Bolt of Mageweave
-	21840,	--	Bolt of Netherweave
-	14048,	--	Bolt of Runecloth
-	4305,	--	Bolt of Silk Cloth
-	82441,	--	Bolt of Windwool Cloth
-	2997,	--	Bolt of Woolen Cloth
-	33568,	--	Borean Leather
-	33567,	--	Borean Leather Scraps
-	41805,	--	Borean Man O' War
-	165703,	--	Breath of Bwonsamdi
-	7081,	--	Breath of Wind
-	2450,	--	Briarthorn
-	152631,	--	Briny Flesh
-	109624,	--	Broken Frostweed Stem
-	4382,	--	Bronze Framework
-	4371,	--	Bronze Tube
-	2453,	--	Bruiseweed
-	110611,	--	Burnished Leather
-	27671,	--	Buzzard Meat
-	3404,	--	Buzzard Wing
-	154165,	--	Calcified Bone
-	36919,	--	Cardinal Ruby
-	36923,	--	Chalcedony
-	124442,	--	Chaos Crystal
-	52078,	--	Chaos Orb
-	130175,	--	Chaotic Spinel
-	151720,	--	Chemirine
-	43013,	--	Chilled Meat
-	21024,	--	Chimaerok Tenderloin
-	52196,	--	Chimera's Eye
-	27677,	--	Chunk o' Basilisk
-	34736,	--	Chunk o' Mammoth
-	769,	--	Chunk of Boar Meat
-	52983,	--	Cinderbloom
-	3864,	--	Citrine
-	5503,	--	Clam Meat
-	27678,	--	Clefthoof Meat
-	3857,	--	Coal
-	4364,	--	Coarse Blasting Powder
-	152541,	--	Coarse Leather
-	2836,	--	Coarse Stone
-	36909,	--	Cobalt Ore
-	62786,	--	Cocoa Beans
-	2770,	--	Copper Ore
-	7075,	--	Core of Earth
-	2673,	--	Coyote Meat
-	2886,	--	Crag Boar Rib
-	2675,	--	Crawler Claw
-	2674,	--	Crawler Meat
-	32227,	--	Crimson Spinel
-	2924,	--	Crocolisk Meat
-	62784,	--	Crocolisk Tail
-	22644,	--	Crunchy Spider Leg
-	47556,	--	Crusader Orb
-	3371,	--	Crystal Vial
-	37700,	--	Crystallized Air
-	37701,	--	Crystallized Earth
-	37702,	--	Crystallized Fire
-	37704,	--	Crystallized Life
-	37703,	--	Crystallized Shadow
-	37705,	--	Crystallized Water
-	163782,	--	Cursed Haunch
-	124107,	--	Cursed Queenfish
-	36932,	--	Dark Jade
-	20520,	--	Dark Rune
-	124669,	--	Darkmoon Daggermaw
-	130180,	--	Dawnlight
-	23440,	--	Dawnstone
-	37921,	--	Deadnettle
-	62323,	--	Deathwing Scale Fragment
-	130173,	--	Deep Amber
-	23079,	--	Deep Peridot
-	41800,	--	Deep Sea Monsterbelly
-	152577,	--	Deep Sea Satin
-	8150,	--	Deeprock Salt
-	53072,	--	Deepsea Sagefish
-	62785,	--	Delicate Wing
-	12662,	--	Demonic Rune
-	12365,	--	Dense Stone
-	6470,	--	Deviate Scale
-	5051,	--	Dig Rat
-	3164,	--	Discolored Worg Heart
-	109693,	--	Draenic Dust
-	62782,	--	Dragon Flank
-	41807,	--	Dragonfin Angelfish
-	42225,	--	Dragon's Eye
-	3819,	--	Dragon's Teeth
-	136533,	--	Dreadhide Leather
-	36928,	--	Dreadstone
-	13463,	--	Dreamfoil
-	22786,	--	Dreaming Glory
-	124102,	--	Dreamleaf
-	129285,	--	Dreamleaf Seed
-	2449,	--	Earthroot
-	7069,	--	Elemental Air
-	23781,	--	Elemental Blasting Powder
-	7067,	--	Elemental Earth
-	7068,	--	Elemental Fire
-	7070,	--	Elemental Water
-	18562,	--	Elementium Ingot
-	52185,	--	Elementium Ore
-	53010,	--	Embersilk Cloth
-	74859,	--	Emperor Salmon
-	32228,	--	Empyrean Sapphire
-	151564,	--	Empyrium
-	111671,	--	Enormous Abyssal Gulper Eel
-	27516,	--	Enormous Barbed Gill Trout
-	111670,	--	Enormous Blackwater Whiptail
-	111674,	--	Enormous Blind Lake Sturgeon
-	111675,	--	Enormous Fat Sleeper
-	111673,	--	Enormous Fire Ammonite
-	111676,	--	Enormous Jawless Skulker
-	118566,	--	Enormous Savage Piranha
-	111672,	--	Enormous Sea Scorpion
-	7082,	--	Essence of Air
-	71998,	--	Essence of Destruction
-	7076,	--	Essence of Earth
-	7078,	--	Essence of Fire
-	12808,	--	Essence of Undeath
-	7080,	--	Essence of Water
-	35623,	--	Eternal Air
-	36860,	--	Eternal Fire
-	35625,	--	Eternal Life
-	23427,	--	Eternium Ore
-	38426,	--	Eternium Thread
-	74247,	--	Ethereal Shard
-	72120,	--	Exotic Leather
-	130179,	--	Eye of Prophecy
-	36934,	--	Eye of Zul
-	3818,	--	Fadeleaf
-	142336,	--	Falcosaur Egg
-	41810,	--	Fangtooth Herring
-	111668,	--	Fat Sleeper
-	109139,	--	Fat Sleeper Flesh
-	53070,	--	Fathom Eel
-	124118,	--	Fatty Bearsteak
-	128499,	--	Fel Egg
-	128500,	--	Fel Ham
-	23445,	--	Fel Iron Bar
-	23424,	--	Fel Iron Ore
-	22794,	--	Fel Lotus
-	140784,	--	Fel Piston Stabilizer
-	127759,	--	Felblight
-	14256,	--	Felcloth
-	124116,	--	Felhide
-	123919,	--	Felslate
-	22785,	--	Felweed
-	124106,	--	Felwort
-	151566,	--	Fiendish Leather
-	17010,	--	Fiery Core
-	27435,	--	Figluster's Mudfish
-	111666,	--	Fire Ammonite
-	109141,	--	Fire Ammonite Tentacle
-	39970,	--	Fire Leaf
-	4625,	--	Firebloom
-	6359,	--	Firefin Snapper
-	109125,	--	Fireweed
-	124104,	--	Fjarnskaggl
-	21929,	--	Flame Spessarite
-	814,	--	Flask of Oil
-	151722,	--	Florid Malachite
-	79011,	--	Fool's Cap
-	36933,	--	Forest Emerald
-	124103,	--	Foxflower
-	115504,	--	Fractured Temporal Crystal
-	102536,	--	Fresh Lushroom
-	102538,	--	Fresh Shao-Tien Rice
-	102537,	--	Fresh Silkfeather Hawk Eggs
-	36908,	--	Frost Lotus
-	39683,	--	Froststeel Tube
-	33470,	--	Frostweave Cloth
-	109124,	--	Frostweed
-	43102,	--	Frozen Orb
-	27439,	--	Furious Crawdad
-	130178,	--	Furystone
-	7191,	--	Fused Wiring
-	111366,	--	Gearspring Parts
-	129100,	--	Gem Chip
-	72092,	--	Ghost Iron Ore
-	8845,	--	Ghost Mushroom
-	4655,	--	Giant Clam Meat
-	12207,	--	Giant Egg
-	74857,	--	Giant Mantis Shrimp
-	62781,	--	Giant Turtle Tongue
-	41809,	--	Glacial Salmon
-	41814,	--	Glassfin Minnow
-	7079,	--	Globe of Water
-	9061,	--	Goblin Rocket Fuel
-	3577,	--	Gold Bar
-	2776,	--	Gold Ore
-	74866,	--	Golden Carp
-	27438,	--	Golden Darter
-	23112,	--	Golden Draenite
-	72238,	--	Golden Lotus
-	13926,	--	Golden Pearl
-	13464,	--	Golden Sansam
-	3821,	--	Goldthorn
-	2251,	--	Gooey Spider Leg
-	723,	--	Goretusk Liver
-	109126,	--	Gorgrond Flytrap
-	3369,	--	Grave Moss
-	136534,	--	Gravenscale
-	152547,	--	Great Sea Catfish
-	74840,	--	Green Cabbage
-	15412,	--	Green Dragonscale
-	72234,	--	Green Tea Leaf
-	8846,	--	Gromsblood
-	12809,	--	Guardian Stone
-	4389,	--	Gyrochronatom
-	39681,	--	Handful of Cobalt Bolts
-	4359,	--	Handful of Copper Bolts
-	23783,	--	Handful of Fel Iron Bolts
-	142266,	--	Handful of Gizmos
-	140785,	--	Hardened Circuitboard Plating
-	144329,	--	Hardened Felglass
-	138296,	--	Hatecoil Glyptic
-	94289,	--	Haunting Spirit
-	32428,	--	Heart of Darkness
-	7077,	--	Heart of Fire
-	10286,	--	Heart of the Wild
-	52986,	--	Heartblossom
-	4377,	--	Heavy Blasting Powder
-	4235,	--	Heavy Hide
-	23793,	--	Heavy Knothide Leather
-	12204,	--	Heavy Kodo Meat
-	4234,	--	Heavy Leather
-	56516,	--	Heavy Savage Leather
-	15408,	--	Heavy Scorpid Scale
-	2838,	--	Heavy Stone
-	151721,	--	Hesselian
-	111556,	--	Hexweave Cloth
-	77468,	--	High-Explosive Gunpowder
-	53064,	--	Highland Guppy
-	124109,	--	Highmountain Salmon
-	36929,	--	Huge Citrine
-	12364,	--	Huge Emerald
-	27515,	--	Huge Spotted Feltail
-	19441,	--	Huge Venom Sac
-	162460,	--	Hydrocore
-	13467,	--	Icecap
-	27437,	--	Icefin Bluefish
-	36906,	--	Icethorn
-	42253,	--	Iceweb Spider Silk
-	7972,	--	Ichor of Undeath
-	38557,	--	Icy Dragonscale
-	112158,	--	Icy Dragonscale Fragment
-	127004,	--	Imbued Silkweave
-	76141,	--	Imperial Amethyst
-	41802,	--	Imperial Manta Ray
-	82447,	--	Imperial Silk
-	124444,	--	Infernal Brimstone
-	9060,	--	Inlaid Mithril Cylinder
-	5500,	--	Iridescent Pearl
-	2772,	--	Iron Ore
-	4387,	--	Iron Strut
-	14227,	--	Ironweb Spider Silk
-	1529,	--	Jade
-	74856,	--	Jade Lungfish
-	74847,	--	Jade Squash
-	24477,	--	Jaggal Clam Meat
-	24478,	--	Jaggal Pearl
-	111669,	--	Jawless Skulker
-	109138,	--	Jawless Skulker Flesh
-	74863,	--	Jewel Danio
-	38561,	--	Jormungar Scale
-	74841,	--	Juicycrunch Carrot
-	3358,	--	Khadgar's Whisker
-	23426,	--	Khorium Ore
-	36922,	--	King's Amber
-	3356,	--	Kingsblood
-	25649,	--	Knothide Leather Scraps
-	5467,	--	Kodo Meat
-	74865,	--	Krasarang Paddlefish
-	153705,	--	Kyanite
-	72093,	--	Kyparite
-	151579,	--	Labradorite
-	76133,	--	Lapis Lazuli
-	5637,	--	Large Fang
-	22203,	--	Large Obsidian Shard
-	12799,	--	Large Opal
-	1288,	--	Large Venom Sac
-	17011,	--	Lava Core
-	53068,	--	Lavascale Catfish
-	124117,	--	Lean Shank
-	1015,	--	Lean Wolf Flank
-	1705,	--	Lesser Moonstone
-	124120,	--	Leyblood
-	124441,	--	Leylight Shard
-	123918,	--	Leystone Ore
-	36905,	--	Lichbloom
-	3357,	--	Liferoot
-	17056,	--	Light Feather
-	783,	--	Light Hide
-	2318,	--	Light Leather
-	13757,	--	Lightning Eel
-	151719,	--	Lightsphene
-	151567,	--	Lightweave Cloth
-	2589,	--	Linen Cloth
-	3731,	--	Lion Meat
-	32229,	--	Lionseye
-	69237,	--	Living Ember
-	12803,	--	Living Essence
-	23436,	--	Living Ruby
-	136633,	--	Loose Trigger
-	111245,	--	Luminous Shard
-	27668,	--	Lynx Meat
-	130182,	--	Maelstrom Sapphire
-	785,	--	Mageroyal
-	4338,	--	Mageweave Cloth
-	72163,	--	Magnificent Hide
-	36925,	--	Majestic Zircon
-	774,	--	Malachite
-	22793,	--	Mana Thistle
-	19943,	--	Massive Mojo
-	12223,	--	Meaty Bat Wing
-	154898,	--	Meaty Haunch
-	4232,	--	Medium Hide
-	2319,	--	Medium Leather
-	153051,	--	Mistscale
-	10561,	--	Mithril Casing
-	3858,	--	Mithril Ore
-	74842,	--	Mogu Pumpkin
-	36930,	--	Monarch Topaz
-	152512,	--	Monelite Ore
-	62779,	--	Monstrous Claw
-	41801,	--	Moonglow Cuttlefish
-	23676,	--	Moongraze Stag Tenderloin
-	1206,	--	Moss Agate
-	124108,	--	Mossgill Perch
-	22572,	--	Mote of Air
-	22573,	--	Mote of Earth
-	22574,	--	Mote of Fire
-	89112,	--	Mote of Harmony
-	22575,	--	Mote of Life
-	22576,	--	Mote of Mana
-	22577,	--	Mote of Shadow
-	22578,	--	Mote of Water
-	13465,	--	Mountain Silversage
-	53063,	--	Mountain Trout
-	53069,	--	Murglesnout
-	1468,	--	Murloc Fin
-	74834,	--	Mushan Ribs
-	41806,	--	Musselback Sculpin
-	74250,	--	Mysterious Essence
-	12037,	--	Mystery Meat
-	7072,	--	Naga Scale
-	109128,	--	Nagrand Arrowbloom
-	38558,	--	Nerubian Chitin
-	30183,	--	Nether Vortex
-	22791,	--	Netherbloom
-	21877,	--	Netherweave Cloth
-	21881,	--	Netherweb Spider Silk
-	41813,	--	Nettlefish
-	22792,	--	Nightmare Vine
-	23441,	--	Nightseye
-	23439,	--	Noble Topaz
-	133912,	--	Nomi's Silver Mackerel
-	43501,	--	Northern Egg
-	43007,	--	Northern Spices
-	36783,	--	Northsea Pearl
-	53038,	--	Obsidium Ore
-	18240,	--	Ogre Tannin
-	6358,	--	Oily Blackmouth
-	137597,	--	Oily Transmutagen
-	39682,	--	Overcharged Capacitor
-	136637,	--	Oversized Blasting Cap
-	76136,	--	Pandarian Garnet
-	130181,	--	Pandemonite
-	2447,	--	Peacebloom
-	6471,	--	Perfect Deviate Scale
-	74849,	--	Pink Turnip
-	12804,	--	Powerful Mojo
-	140783,	--	Predictive Combat Operations Databank
-	67319,	--	Preserved Ogre Eye
-	22451,	--	Primal Air
-	76132,	--	Primal Diamond
-	22452,	--	Primal Earth
-	21884,	--	Primal Fire
-	23572,	--	Primal Nether
-	151568,	--	Primal Sargerite
-	120945,	--	Primal Spirit
-	21885,	--	Primal Water
-	76131,	--	Primordial Ruby
-	49908,	--	Primordial Saronite
-	79101,	--	Prismatic Scale
-	18335,	--	Pristine Black Diamond
-	142335,	--	Pristine Falcosaur Feather
-	8831,	--	Purple Lotus
-	40195,	--	Pygmy Oil
-	40199,	--	Pygmy Suckerfish
-	32231,	--	Pyrestone
-	52183,	--	Pyrite Ore
-	130177,	--	Queen's Opal
-	22787,	--	Ragveil
-	72237,	--	Rain Poppy
-	3685,	--	Raptor Egg
-	12184,	--	Raptor Flesh
-	4461,	--	Raptor Hide
-	31670,	--	Raptor Ribs
-	27674,	--	Ravager Flesh
-	110609,	--	Raw Beast Hide
-	110610,	--	Raw Beast Hide Scraps
-	109136,	--	Raw Boar Meat
-	6291,	--	Raw Brilliant Smallfish
-	6308,	--	Raw Bristle Whisker Catfish
-	109131,	--	Raw Clefthoof Meat
-	74838,	--	Raw Crab Meat
-	75014,	--	Raw Crocolisk Belly
-	109134,	--	Raw Elekk Meat
-	21153,	--	Raw Greater Sagefish
-	6317,	--	Raw Loch Frenzy
-	6289,	--	Raw Longjaw Mud Snapper
-	6361,	--	Raw Rainbow Fin Albacore
-	109135,	--	Raw Riverbeast Meat
-	6362,	--	Raw Rockscale Cod
-	21071,	--	Raw Sagefish
-	6303,	--	Raw Slitherskin Mackerel
-	4603,	--	Raw Spotted Yellowtail
-	109132,	--	Raw Talbuk Meat
-	74833,	--	Raw Tiger Steak
-	74837,	--	Raw Turtle Meat
-	74844,	--	Red Blossom Leek
-	15414,	--	Red Dragonscale
-	12203,	--	Red Wolf Meat
-	74860,	--	Redbelly Mandarin
-	152549,	--	Redtail Loach
-	74864,	--	Reef Octopus
-	43012,	--	Rhino Meat
-	12811,	--	Righteous Orb
-	76138,	--	River's Heart
-	76135,	--	Roguestone
-	2835,	--	Rough Stone
-	153701,	--	Rubellite
-	8170,	--	Rugged Leather
-	14047,	--	Runecloth
-	45087,	--	Runed Orb
-	124111,	--	Runescale Koi
-	127037,	--	Runic Catgut
-	109133,	--	Rylak Egg
-	130245,	--	Saber's Eye
-	20424,	--	Sandworm Meat
-	130172,	--	Sangrite
-	118472,	--	Savage Blood
-	74843,	--	Scallions
-	36918,	--	Scarlet Ruby
-	8154,	--	Scorpid Scale
-	5466,	--	Scorpid Stinger
-	79731,	--	Scroll of Wisdom
-	111665,	--	Sea Scorpion
-	109142,	--	Sea Scorpion Segment
-	32249,	--	Seaspray Emerald
-	31671,	--	Serpent Flesh
-	74248,	--	Sha Crystal
-	36926,	--	Shadow Crystal
-	23107,	--	Shadow Draenite
-	24479,	--	Shadow Pearl
-	10285,	--	Shadow Silk
-	1210,	--	Shadowgem
-	130183,	--	Shadowruby
-	32230,	--	Shadowsong Amethyst
-	124437,	--	Shal'dorei Silk
-	5635,	--	Sharp Claw
-	72162,	--	Sha-Touched Leather
-	153050,	--	Shimmerscale
-	43009,	--	Shoveltusk Flank
-	4306,	--	Silk Cloth
-	72235,	--	Silkweed
-	2842,	--	Silver Bar
-	67335,	--	Silver Charm Bracelet
-	2775,	--	Silver Ore
-	765,	--	Silverleaf
-	152509,	--	Siren's Pollen
-	36784,	--	Siren's Tear
-	36924,	--	Sky Sapphire
-	130176,	--	Skystone
-	133680,	--	Slice of Bacon
-	5784,	--	Slimy Murloc Scale
-	111659,	--	Small Abyssal Gulper Eel
-	111662,	--	Small Blackwater Whiptail
-	111652,	--	Small Blind Lake Sturgeon
-	6889,	--	Small Egg
-	111651,	--	Small Fat Sleeper
-	111656,	--	Small Fire Ammonite
-	4402,	--	Small Flame Sac
-	111650,	--	Small Jawless Skulker
-	5498,	--	Small Lustrous Pearl
-	22202,	--	Small Obsidian Shard
-	118564,	--	Small Savage Piranha
-	111658,	--	Small Sea Scorpion
-	5465,	--	Small Spider Leg
-	1475,	--	Small Venom Sac
-	62780,	--	Snake Eye
-	136636,	--	Sniping Scope
-	79010,	--	Snow Lily
-	5468,	--	Soft Frenzy Flesh
-	10505,	--	Solid Blasting Powder
-	7912,	--	Solid Stone
-	113264,	--	Sorcerous Air
-	113263,	--	Sorcerous Earth
-	113261,	--	Sorcerous Fire
-	113262,	--	Sorcerous Water
-	13466,	--	Sorrowmoss
-	21882,	--	Soul Essence
-	3182,	--	Spider's Silk
-	83064,	--	Spinefish
-	74249,	--	Spirit Dust
-	76061,	--	Spirit of Harmony
-	27425,	--	Spotted Feltail
-	67229,	--	Stag Flank
-	5471,	--	Stag Meat
-	152506,	--	Star Moss
-	23438,	--	Star of Elune
-	7910,	--	Star Ruby
-	109127,	--	Starflower
-	124105,	--	Starlight Rose
-	129288,	--	Starlight Rose Seed
-	124113,	--	Stonehide Leather
-	13422,	--	Stonescale Eel
-	152579,	--	Storm Silver Ore
-	124110,	--	Stormray
-	124115,	--	Stormscale
-	52984,	--	Stormvine
-	3820,	--	Stranglekelp
-	5469,	--	Strider Meat
-	154897,	--	Stringy Loins
-	2672,	--	Stringy Wolf Meat
-	74848,	--	Striped Melon
-	36782,	--	Succulent Clam Meat
-	17203,	--	Sulfuron Ingot
-	111557,	--	Sumptuous Fur
-	36920,	--	Sun Crystal
-	8838,	--	Sungrass
-	34664,	--	Sunmote
-	76142,	--	Sun's Radiance
-	76134,	--	Sunstone
-	2452,	--	Swiftthistle
-	115524,	--	Taladite Crystal
-	109129,	--	Talador Orchid
-	36907,	--	Talandra's Rose
-	23437,	--	Talasite
-	27682,	--	Talbuk Venison
-	5504,	--	Tangy Clam Meat
-	154722,	--	Tempest Hide
-	113588,	--	Temporal Crystal
-	12206,	--	Tender Crab Meat
-	3667,	--	Tender Crocolisk Meat
-	12208,	--	Tender Wolf Meat
-	22789,	--	Terocone
-	8169,	--	Thick Hide
-	4304,	--	Thick Leather
-	5785,	--	Thick Murloc Scale
-	154899,	--	Thick Paleo Steak
-	4337,	--	Thick Spider's Silk
-	5082,	--	Thin Kodo Leather
-	5470,	--	Thunder Lizard Tail
-	165948,	--	Tidalcore
-	152576,	--	Tidespray Linen
-	74861,	--	Tiger Gourami
-	36904,	--	Tiger Lily
-	12202,	--	Tiger Meat
-	76130,	--	Tiger Opal
-	818,	--	Tigerseye
-	2771,	--	Tin Ore
-	152548,	--	Tiragarde Perch
-	1080,	--	Tough Condor Meat
-	62778,	--	Toughened Flesh
-	136638,	--	True Iron Barrel
-	109991,	--	True Iron Nugget
-	109119,	--	True Iron Ore
-	6037,	--	Truesilver Bar
-	7911,	--	Truesilver Ore
-	108257,	--	Truesteel Ingot
-	3712,	--	Turtle Meat
-	52987,	--	Twilight Jasmine
-	36927,	--	Twilight Opal
-	124438,	--	Unbroken Claw
-	124439,	--	Unbroken Tooth
-	76140,	--	Vermilion Onyx
-	153704,	--	Viridium
-	137595,	--	Viscous Transmutagen
-	85506,	--	Viseclaw Meat
-	52328,	--	Volatile Air
-	39690,	--	Volatile Blasting Trigger
-	52327,	--	Volatile Earth
-	52325,	--	Volatile Fire
-	52329,	--	Volatile Life
-	52326,	--	Volatile Water
-	112377,	--	War Paints
-	27681,	--	Warped Flesh
-	52988,	--	Whiptail
-	12205,	--	White Spider Meat
-	72103,	--	White Trillium Ore
-	74850,	--	White Turnip
-	76139,	--	Wild Jade
-	3355,	--	Wild Steelbloom
-	44834,	--	Wild Turkey
-	74839,	--	Wildfowl Breast
-	124121,	--	Wildfowl Egg
-	8153,	--	Wildvine
-	72988,	--	Windwool Cloth
-	74846,	--	Witchberries
-	2592,	--	Wool Cloth
-	43011,	--	Worg Haunch
-	43010,	--	Worm Meat
-	8165,	--	Worn Dragonscale
-	140781,	--	X-87 Battle Circuit
-	128304,	--	Yseralline Seed
-	27429,	--	Zangarian Sporefish
-	7974,	--	Zesty Clam Meat
+
+	--8.2.0
+		168193,	--	Azsharine
+		168327,	--	Chain Ignitercoil
+		168650,	--	Cragscale
+		168189,	--	Dark Opal
+		168649,	--	Dredged Leather
+		166971,	--	Empty Energy Cell
+		166970,	--	Energy Cell
+		168832,	--	Galvanic Oscillator
+		167738,	--	Gilded Seaweave
+		168190,	--	Lava Lazuli
+		168635,	--	Leviathan's Eye
+		168663,	--	Maroon Ink
+		168646,	--	Mauve Stinger
+		168645,	--	Moist Fillet
+		168185,	--	Osmenite Ore
+		168303,	--	Rubbery Flank
+		168188,	--	Sage Agate
+		168192,	--	Sand Spinel
+		168191,	--	Sea Currant
+		168262,	--	Sentry Fish
+		166846,	--	Spare Parts
+		168487,	--	Zin'anthid
+
+	--All Previous
+		111664,	--	Abyssal Gulper Eel
+		109143,	--	Abyssal Gulper Eel Flesh
+		23425,	--	Adamantite Ore
+		36903,	--	Adder's Tongue
+		124101,	--	Aethril
+		102541,	--	Aged Balsamic Vinegar
+		102543,	--	Aged Mogu'shan Cheese
+		53065,	--	Albino Cavefish
+		108996,	--	Alchemical Catalyst
+		76137,	--	Alexandrite
+		53071,	--	Algaefin Rockfish
+		36931,	--	Ametrine
+		152510,	--	Anchor Weed
+		102542,	--	Ancient Pandaren Spices
+		7909,	--	Aquamarine
+		12363,	--	Arcane Crystal
+		151718,	--	Argulite
+		124440,	--	Arkhana
+		8836,	--	Arthas' Tears
+		151565,	--	Astral Glory
+		36921,	--	Autumn's Glow
+		12800,	--	Azerothian Diamond
+		52985,	--	Azshara's Veil
+		130174,	--	Azsunite
+		23117,	--	Azure Moonstone
+		41812,	--	Barrelhead Goby
+		62783,	--	Basilisk "Liver"
+		27669,	--	Bat Flesh
+		35562,	--	Bear Flank
+		3173,	--	Bear Meat
+		3730,	--	Big Bear Meat
+		124119,	--	Big Gamy Ribs
+		124112,	--	Black Barracuda
+		11754,	--	Black Diamond
+		15416,	--	Black Dragonscale
+		7971,	--	Black Pearl
+		137596,	--	Black Transmutagen
+		72094,	--	Black Trillium Ore
+		9262,	--	Black Vitriol
+		53066,	--	Blackbelly Mudfish
+		112156,	--	Blackened Dragonscale Fragment
+		109992,	--	Blackrock Fragment
+		109118,	--	Blackrock Ore
+		111663,	--	Blackwater Whiptail
+		109144,	--	Blackwater Whiptail Flesh
+		111667,	--	Blind Lake Sturgeon
+		109140,	--	Blind Lake Sturgeon Flesh
+		8839,	--	Blindweed
+		23077,	--	Blood Garnet
+		124124,	--	Blood of Sargeras
+		11382,	--	Blood of the Mountain
+		62791,	--	Blood Shrimp
+		80433,	--	Blood Spirit
+		154164,	--	Blood-Stained Bone
+		36917,	--	Bloodstone
+		4611,	--	Blue Pearl
+		12361,	--	Blue Sapphire
+		2677,	--	Boar Ribs
+		2996,	--	Bolt of Linen Cloth
+		4339,	--	Bolt of Mageweave
+		21840,	--	Bolt of Netherweave
+		14048,	--	Bolt of Runecloth
+		4305,	--	Bolt of Silk Cloth
+		82441,	--	Bolt of Windwool Cloth
+		2997,	--	Bolt of Woolen Cloth
+		33568,	--	Borean Leather
+		33567,	--	Borean Leather Scraps
+		41805,	--	Borean Man O' War
+		165703,	--	Breath of Bwonsamdi
+		7081,	--	Breath of Wind
+		2450,	--	Briarthorn
+		152631,	--	Briny Flesh
+		109624,	--	Broken Frostweed Stem
+		4382,	--	Bronze Framework
+		4371,	--	Bronze Tube
+		2453,	--	Bruiseweed
+		110611,	--	Burnished Leather
+		27671,	--	Buzzard Meat
+		3404,	--	Buzzard Wing
+		154165,	--	Calcified Bone
+		36919,	--	Cardinal Ruby
+		36923,	--	Chalcedony
+		124442,	--	Chaos Crystal
+		52078,	--	Chaos Orb
+		130175,	--	Chaotic Spinel
+		151720,	--	Chemirine
+		43013,	--	Chilled Meat
+		21024,	--	Chimaerok Tenderloin
+		52196,	--	Chimera's Eye
+		27677,	--	Chunk o' Basilisk
+		34736,	--	Chunk o' Mammoth
+		769,	--	Chunk of Boar Meat
+		52983,	--	Cinderbloom
+		3864,	--	Citrine
+		5503,	--	Clam Meat
+		27678,	--	Clefthoof Meat
+		3857,	--	Coal
+		4364,	--	Coarse Blasting Powder
+		152541,	--	Coarse Leather
+		2836,	--	Coarse Stone
+		36909,	--	Cobalt Ore
+		62786,	--	Cocoa Beans
+		2770,	--	Copper Ore
+		7075,	--	Core of Earth
+		2673,	--	Coyote Meat
+		2886,	--	Crag Boar Rib
+		2675,	--	Crawler Claw
+		2674,	--	Crawler Meat
+		32227,	--	Crimson Spinel
+		2924,	--	Crocolisk Meat
+		62784,	--	Crocolisk Tail
+		22644,	--	Crunchy Spider Leg
+		47556,	--	Crusader Orb
+		3371,	--	Crystal Vial
+		37700,	--	Crystallized Air
+		37701,	--	Crystallized Earth
+		37702,	--	Crystallized Fire
+		37704,	--	Crystallized Life
+		37703,	--	Crystallized Shadow
+		37705,	--	Crystallized Water
+		163782,	--	Cursed Haunch
+		124107,	--	Cursed Queenfish
+		36932,	--	Dark Jade
+		20520,	--	Dark Rune
+		124669,	--	Darkmoon Daggermaw
+		130180,	--	Dawnlight
+		23440,	--	Dawnstone
+		37921,	--	Deadnettle
+		62323,	--	Deathwing Scale Fragment
+		130173,	--	Deep Amber
+		23079,	--	Deep Peridot
+		41800,	--	Deep Sea Monsterbelly
+		152577,	--	Deep Sea Satin
+		8150,	--	Deeprock Salt
+		53072,	--	Deepsea Sagefish
+		62785,	--	Delicate Wing
+		12662,	--	Demonic Rune
+		12365,	--	Dense Stone
+		6470,	--	Deviate Scale
+		5051,	--	Dig Rat
+		3164,	--	Discolored Worg Heart
+		109693,	--	Draenic Dust
+		62782,	--	Dragon Flank
+		41807,	--	Dragonfin Angelfish
+		42225,	--	Dragon's Eye
+		3819,	--	Dragon's Teeth
+		136533,	--	Dreadhide Leather
+		36928,	--	Dreadstone
+		13463,	--	Dreamfoil
+		22786,	--	Dreaming Glory
+		124102,	--	Dreamleaf
+		129285,	--	Dreamleaf Seed
+		2449,	--	Earthroot
+		7069,	--	Elemental Air
+		23781,	--	Elemental Blasting Powder
+		7067,	--	Elemental Earth
+		7068,	--	Elemental Fire
+		7070,	--	Elemental Water
+		18562,	--	Elementium Ingot
+		52185,	--	Elementium Ore
+		53010,	--	Embersilk Cloth
+		74859,	--	Emperor Salmon
+		32228,	--	Empyrean Sapphire
+		151564,	--	Empyrium
+		111671,	--	Enormous Abyssal Gulper Eel
+		27516,	--	Enormous Barbed Gill Trout
+		111670,	--	Enormous Blackwater Whiptail
+		111674,	--	Enormous Blind Lake Sturgeon
+		111675,	--	Enormous Fat Sleeper
+		111673,	--	Enormous Fire Ammonite
+		111676,	--	Enormous Jawless Skulker
+		118566,	--	Enormous Savage Piranha
+		111672,	--	Enormous Sea Scorpion
+		7082,	--	Essence of Air
+		71998,	--	Essence of Destruction
+		7076,	--	Essence of Earth
+		7078,	--	Essence of Fire
+		12808,	--	Essence of Undeath
+		7080,	--	Essence of Water
+		35623,	--	Eternal Air
+		36860,	--	Eternal Fire
+		35625,	--	Eternal Life
+		23427,	--	Eternium Ore
+		38426,	--	Eternium Thread
+		74247,	--	Ethereal Shard
+		72120,	--	Exotic Leather
+		130179,	--	Eye of Prophecy
+		36934,	--	Eye of Zul
+		3818,	--	Fadeleaf
+		142336,	--	Falcosaur Egg
+		41810,	--	Fangtooth Herring
+		111668,	--	Fat Sleeper
+		109139,	--	Fat Sleeper Flesh
+		53070,	--	Fathom Eel
+		124118,	--	Fatty Bearsteak
+		128499,	--	Fel Egg
+		128500,	--	Fel Ham
+		23445,	--	Fel Iron Bar
+		23424,	--	Fel Iron Ore
+		22794,	--	Fel Lotus
+		140784,	--	Fel Piston Stabilizer
+		127759,	--	Felblight
+		14256,	--	Felcloth
+		124116,	--	Felhide
+		123919,	--	Felslate
+		22785,	--	Felweed
+		124106,	--	Felwort
+		151566,	--	Fiendish Leather
+		17010,	--	Fiery Core
+		27435,	--	Figluster's Mudfish
+		111666,	--	Fire Ammonite
+		109141,	--	Fire Ammonite Tentacle
+		39970,	--	Fire Leaf
+		4625,	--	Firebloom
+		6359,	--	Firefin Snapper
+		109125,	--	Fireweed
+		124104,	--	Fjarnskaggl
+		21929,	--	Flame Spessarite
+		814,	--	Flask of Oil
+		151722,	--	Florid Malachite
+		79011,	--	Fool's Cap
+		36933,	--	Forest Emerald
+		124103,	--	Foxflower
+		115504,	--	Fractured Temporal Crystal
+		102536,	--	Fresh Lushroom
+		102538,	--	Fresh Shao-Tien Rice
+		102537,	--	Fresh Silkfeather Hawk Eggs
+		36908,	--	Frost Lotus
+		39683,	--	Froststeel Tube
+		33470,	--	Frostweave Cloth
+		109124,	--	Frostweed
+		43102,	--	Frozen Orb
+		27439,	--	Furious Crawdad
+		130178,	--	Furystone
+		7191,	--	Fused Wiring
+		111366,	--	Gearspring Parts
+		129100,	--	Gem Chip
+		72092,	--	Ghost Iron Ore
+		8845,	--	Ghost Mushroom
+		4655,	--	Giant Clam Meat
+		12207,	--	Giant Egg
+		74857,	--	Giant Mantis Shrimp
+		62781,	--	Giant Turtle Tongue
+		41809,	--	Glacial Salmon
+		41814,	--	Glassfin Minnow
+		7079,	--	Globe of Water
+		9061,	--	Goblin Rocket Fuel
+		3577,	--	Gold Bar
+		2776,	--	Gold Ore
+		74866,	--	Golden Carp
+		27438,	--	Golden Darter
+		23112,	--	Golden Draenite
+		72238,	--	Golden Lotus
+		13926,	--	Golden Pearl
+		13464,	--	Golden Sansam
+		3821,	--	Goldthorn
+		2251,	--	Gooey Spider Leg
+		723,	--	Goretusk Liver
+		109126,	--	Gorgrond Flytrap
+		3369,	--	Grave Moss
+		136534,	--	Gravenscale
+		152547,	--	Great Sea Catfish
+		74840,	--	Green Cabbage
+		15412,	--	Green Dragonscale
+		72234,	--	Green Tea Leaf
+		8846,	--	Gromsblood
+		12809,	--	Guardian Stone
+		4389,	--	Gyrochronatom
+		39681,	--	Handful of Cobalt Bolts
+		4359,	--	Handful of Copper Bolts
+		23783,	--	Handful of Fel Iron Bolts
+		142266,	--	Handful of Gizmos
+		140785,	--	Hardened Circuitboard Plating
+		144329,	--	Hardened Felglass
+		138296,	--	Hatecoil Glyptic
+		94289,	--	Haunting Spirit
+		32428,	--	Heart of Darkness
+		7077,	--	Heart of Fire
+		10286,	--	Heart of the Wild
+		52986,	--	Heartblossom
+		4377,	--	Heavy Blasting Powder
+		4235,	--	Heavy Hide
+		23793,	--	Heavy Knothide Leather
+		12204,	--	Heavy Kodo Meat
+		4234,	--	Heavy Leather
+		56516,	--	Heavy Savage Leather
+		15408,	--	Heavy Scorpid Scale
+		2838,	--	Heavy Stone
+		151721,	--	Hesselian
+		111556,	--	Hexweave Cloth
+		77468,	--	High-Explosive Gunpowder
+		53064,	--	Highland Guppy
+		124109,	--	Highmountain Salmon
+		36929,	--	Huge Citrine
+		12364,	--	Huge Emerald
+		27515,	--	Huge Spotted Feltail
+		19441,	--	Huge Venom Sac
+		162460,	--	Hydrocore
+		13467,	--	Icecap
+		27437,	--	Icefin Bluefish
+		36906,	--	Icethorn
+		42253,	--	Iceweb Spider Silk
+		7972,	--	Ichor of Undeath
+		38557,	--	Icy Dragonscale
+		112158,	--	Icy Dragonscale Fragment
+		127004,	--	Imbued Silkweave
+		76141,	--	Imperial Amethyst
+		41802,	--	Imperial Manta Ray
+		82447,	--	Imperial Silk
+		124444,	--	Infernal Brimstone
+		9060,	--	Inlaid Mithril Cylinder
+		5500,	--	Iridescent Pearl
+		2772,	--	Iron Ore
+		4387,	--	Iron Strut
+		14227,	--	Ironweb Spider Silk
+		1529,	--	Jade
+		74856,	--	Jade Lungfish
+		74847,	--	Jade Squash
+		24477,	--	Jaggal Clam Meat
+		24478,	--	Jaggal Pearl
+		111669,	--	Jawless Skulker
+		109138,	--	Jawless Skulker Flesh
+		74863,	--	Jewel Danio
+		38561,	--	Jormungar Scale
+		74841,	--	Juicycrunch Carrot
+		3358,	--	Khadgar's Whisker
+		23426,	--	Khorium Ore
+		36922,	--	King's Amber
+		3356,	--	Kingsblood
+		25649,	--	Knothide Leather Scraps
+		5467,	--	Kodo Meat
+		74865,	--	Krasarang Paddlefish
+		153705,	--	Kyanite
+		72093,	--	Kyparite
+		151579,	--	Labradorite
+		76133,	--	Lapis Lazuli
+		5637,	--	Large Fang
+		22203,	--	Large Obsidian Shard
+		12799,	--	Large Opal
+		1288,	--	Large Venom Sac
+		17011,	--	Lava Core
+		53068,	--	Lavascale Catfish
+		124117,	--	Lean Shank
+		1015,	--	Lean Wolf Flank
+		1705,	--	Lesser Moonstone
+		124120,	--	Leyblood
+		124441,	--	Leylight Shard
+		123918,	--	Leystone Ore
+		36905,	--	Lichbloom
+		3357,	--	Liferoot
+		17056,	--	Light Feather
+		783,	--	Light Hide
+		2318,	--	Light Leather
+		13757,	--	Lightning Eel
+		151719,	--	Lightsphene
+		151567,	--	Lightweave Cloth
+		2589,	--	Linen Cloth
+		3731,	--	Lion Meat
+		32229,	--	Lionseye
+		69237,	--	Living Ember
+		12803,	--	Living Essence
+		23436,	--	Living Ruby
+		136633,	--	Loose Trigger
+		111245,	--	Luminous Shard
+		27668,	--	Lynx Meat
+		130182,	--	Maelstrom Sapphire
+		785,	--	Mageroyal
+		4338,	--	Mageweave Cloth
+		72163,	--	Magnificent Hide
+		36925,	--	Majestic Zircon
+		774,	--	Malachite
+		22793,	--	Mana Thistle
+		19943,	--	Massive Mojo
+		12223,	--	Meaty Bat Wing
+		154898,	--	Meaty Haunch
+		4232,	--	Medium Hide
+		2319,	--	Medium Leather
+		153051,	--	Mistscale
+		10561,	--	Mithril Casing
+		3858,	--	Mithril Ore
+		74842,	--	Mogu Pumpkin
+		36930,	--	Monarch Topaz
+		152512,	--	Monelite Ore
+		62779,	--	Monstrous Claw
+		41801,	--	Moonglow Cuttlefish
+		23676,	--	Moongraze Stag Tenderloin
+		1206,	--	Moss Agate
+		124108,	--	Mossgill Perch
+		22572,	--	Mote of Air
+		22573,	--	Mote of Earth
+		22574,	--	Mote of Fire
+		89112,	--	Mote of Harmony
+		22575,	--	Mote of Life
+		22576,	--	Mote of Mana
+		22577,	--	Mote of Shadow
+		22578,	--	Mote of Water
+		13465,	--	Mountain Silversage
+		53063,	--	Mountain Trout
+		53069,	--	Murglesnout
+		1468,	--	Murloc Fin
+		74834,	--	Mushan Ribs
+		41806,	--	Musselback Sculpin
+		74250,	--	Mysterious Essence
+		12037,	--	Mystery Meat
+		7072,	--	Naga Scale
+		109128,	--	Nagrand Arrowbloom
+		38558,	--	Nerubian Chitin
+		30183,	--	Nether Vortex
+		22791,	--	Netherbloom
+		21877,	--	Netherweave Cloth
+		21881,	--	Netherweb Spider Silk
+		41813,	--	Nettlefish
+		22792,	--	Nightmare Vine
+		23441,	--	Nightseye
+		23439,	--	Noble Topaz
+		133912,	--	Nomi's Silver Mackerel
+		43501,	--	Northern Egg
+		43007,	--	Northern Spices
+		36783,	--	Northsea Pearl
+		53038,	--	Obsidium Ore
+		18240,	--	Ogre Tannin
+		6358,	--	Oily Blackmouth
+		137597,	--	Oily Transmutagen
+		39682,	--	Overcharged Capacitor
+		136637,	--	Oversized Blasting Cap
+		76136,	--	Pandarian Garnet
+		130181,	--	Pandemonite
+		2447,	--	Peacebloom
+		6471,	--	Perfect Deviate Scale
+		74849,	--	Pink Turnip
+		12804,	--	Powerful Mojo
+		140783,	--	Predictive Combat Operations Databank
+		67319,	--	Preserved Ogre Eye
+		22451,	--	Primal Air
+		76132,	--	Primal Diamond
+		22452,	--	Primal Earth
+		21884,	--	Primal Fire
+		23572,	--	Primal Nether
+		151568,	--	Primal Sargerite
+		120945,	--	Primal Spirit
+		21885,	--	Primal Water
+		76131,	--	Primordial Ruby
+		49908,	--	Primordial Saronite
+		79101,	--	Prismatic Scale
+		18335,	--	Pristine Black Diamond
+		142335,	--	Pristine Falcosaur Feather
+		8831,	--	Purple Lotus
+		40195,	--	Pygmy Oil
+		40199,	--	Pygmy Suckerfish
+		32231,	--	Pyrestone
+		52183,	--	Pyrite Ore
+		130177,	--	Queen's Opal
+		22787,	--	Ragveil
+		72237,	--	Rain Poppy
+		3685,	--	Raptor Egg
+		12184,	--	Raptor Flesh
+		4461,	--	Raptor Hide
+		31670,	--	Raptor Ribs
+		27674,	--	Ravager Flesh
+		110609,	--	Raw Beast Hide
+		110610,	--	Raw Beast Hide Scraps
+		109136,	--	Raw Boar Meat
+		6291,	--	Raw Brilliant Smallfish
+		6308,	--	Raw Bristle Whisker Catfish
+		109131,	--	Raw Clefthoof Meat
+		74838,	--	Raw Crab Meat
+		75014,	--	Raw Crocolisk Belly
+		109134,	--	Raw Elekk Meat
+		21153,	--	Raw Greater Sagefish
+		6317,	--	Raw Loch Frenzy
+		6289,	--	Raw Longjaw Mud Snapper
+		6361,	--	Raw Rainbow Fin Albacore
+		109135,	--	Raw Riverbeast Meat
+		6362,	--	Raw Rockscale Cod
+		21071,	--	Raw Sagefish
+		6303,	--	Raw Slitherskin Mackerel
+		4603,	--	Raw Spotted Yellowtail
+		109132,	--	Raw Talbuk Meat
+		74833,	--	Raw Tiger Steak
+		74837,	--	Raw Turtle Meat
+		74844,	--	Red Blossom Leek
+		15414,	--	Red Dragonscale
+		12203,	--	Red Wolf Meat
+		74860,	--	Redbelly Mandarin
+		152549,	--	Redtail Loach
+		74864,	--	Reef Octopus
+		43012,	--	Rhino Meat
+		12811,	--	Righteous Orb
+		76138,	--	River's Heart
+		76135,	--	Roguestone
+		2835,	--	Rough Stone
+		153701,	--	Rubellite
+		8170,	--	Rugged Leather
+		14047,	--	Runecloth
+		45087,	--	Runed Orb
+		124111,	--	Runescale Koi
+		127037,	--	Runic Catgut
+		109133,	--	Rylak Egg
+		130245,	--	Saber's Eye
+		20424,	--	Sandworm Meat
+		130172,	--	Sangrite
+		118472,	--	Savage Blood
+		74843,	--	Scallions
+		36918,	--	Scarlet Ruby
+		8154,	--	Scorpid Scale
+		5466,	--	Scorpid Stinger
+		79731,	--	Scroll of Wisdom
+		111665,	--	Sea Scorpion
+		109142,	--	Sea Scorpion Segment
+		32249,	--	Seaspray Emerald
+		31671,	--	Serpent Flesh
+		74248,	--	Sha Crystal
+		36926,	--	Shadow Crystal
+		23107,	--	Shadow Draenite
+		24479,	--	Shadow Pearl
+		10285,	--	Shadow Silk
+		1210,	--	Shadowgem
+		130183,	--	Shadowruby
+		32230,	--	Shadowsong Amethyst
+		124437,	--	Shal'dorei Silk
+		5635,	--	Sharp Claw
+		72162,	--	Sha-Touched Leather
+		153050,	--	Shimmerscale
+		43009,	--	Shoveltusk Flank
+		4306,	--	Silk Cloth
+		72235,	--	Silkweed
+		2842,	--	Silver Bar
+		67335,	--	Silver Charm Bracelet
+		2775,	--	Silver Ore
+		765,	--	Silverleaf
+		152509,	--	Siren's Pollen
+		36784,	--	Siren's Tear
+		36924,	--	Sky Sapphire
+		130176,	--	Skystone
+		133680,	--	Slice of Bacon
+		5784,	--	Slimy Murloc Scale
+		111659,	--	Small Abyssal Gulper Eel
+		111662,	--	Small Blackwater Whiptail
+		111652,	--	Small Blind Lake Sturgeon
+		6889,	--	Small Egg
+		111651,	--	Small Fat Sleeper
+		111656,	--	Small Fire Ammonite
+		4402,	--	Small Flame Sac
+		111650,	--	Small Jawless Skulker
+		5498,	--	Small Lustrous Pearl
+		22202,	--	Small Obsidian Shard
+		118564,	--	Small Savage Piranha
+		111658,	--	Small Sea Scorpion
+		5465,	--	Small Spider Leg
+		1475,	--	Small Venom Sac
+		62780,	--	Snake Eye
+		136636,	--	Sniping Scope
+		79010,	--	Snow Lily
+		5468,	--	Soft Frenzy Flesh
+		10505,	--	Solid Blasting Powder
+		7912,	--	Solid Stone
+		113264,	--	Sorcerous Air
+		113263,	--	Sorcerous Earth
+		113261,	--	Sorcerous Fire
+		113262,	--	Sorcerous Water
+		13466,	--	Sorrowmoss
+		21882,	--	Soul Essence
+		3182,	--	Spider's Silk
+		83064,	--	Spinefish
+		74249,	--	Spirit Dust
+		76061,	--	Spirit of Harmony
+		27425,	--	Spotted Feltail
+		67229,	--	Stag Flank
+		5471,	--	Stag Meat
+		152506,	--	Star Moss
+		23438,	--	Star of Elune
+		7910,	--	Star Ruby
+		109127,	--	Starflower
+		124105,	--	Starlight Rose
+		129288,	--	Starlight Rose Seed
+		124113,	--	Stonehide Leather
+		13422,	--	Stonescale Eel
+		152579,	--	Storm Silver Ore
+		124110,	--	Stormray
+		124115,	--	Stormscale
+		52984,	--	Stormvine
+		3820,	--	Stranglekelp
+		5469,	--	Strider Meat
+		154897,	--	Stringy Loins
+		2672,	--	Stringy Wolf Meat
+		74848,	--	Striped Melon
+		36782,	--	Succulent Clam Meat
+		17203,	--	Sulfuron Ingot
+		111557,	--	Sumptuous Fur
+		36920,	--	Sun Crystal
+		8838,	--	Sungrass
+		34664,	--	Sunmote
+		76142,	--	Sun's Radiance
+		76134,	--	Sunstone
+		2452,	--	Swiftthistle
+		115524,	--	Taladite Crystal
+		109129,	--	Talador Orchid
+		36907,	--	Talandra's Rose
+		23437,	--	Talasite
+		27682,	--	Talbuk Venison
+		5504,	--	Tangy Clam Meat
+		154722,	--	Tempest Hide
+		113588,	--	Temporal Crystal
+		12206,	--	Tender Crab Meat
+		3667,	--	Tender Crocolisk Meat
+		12208,	--	Tender Wolf Meat
+		22789,	--	Terocone
+		8169,	--	Thick Hide
+		4304,	--	Thick Leather
+		5785,	--	Thick Murloc Scale
+		154899,	--	Thick Paleo Steak
+		4337,	--	Thick Spider's Silk
+		5082,	--	Thin Kodo Leather
+		5470,	--	Thunder Lizard Tail
+		165948,	--	Tidalcore
+		152576,	--	Tidespray Linen
+		74861,	--	Tiger Gourami
+		36904,	--	Tiger Lily
+		12202,	--	Tiger Meat
+		76130,	--	Tiger Opal
+		818,	--	Tigerseye
+		2771,	--	Tin Ore
+		152548,	--	Tiragarde Perch
+		1080,	--	Tough Condor Meat
+		62778,	--	Toughened Flesh
+		136638,	--	True Iron Barrel
+		109991,	--	True Iron Nugget
+		109119,	--	True Iron Ore
+		6037,	--	Truesilver Bar
+		7911,	--	Truesilver Ore
+		108257,	--	Truesteel Ingot
+		3712,	--	Turtle Meat
+		52987,	--	Twilight Jasmine
+		36927,	--	Twilight Opal
+		124438,	--	Unbroken Claw
+		124439,	--	Unbroken Tooth
+		76140,	--	Vermilion Onyx
+		153704,	--	Viridium
+		137595,	--	Viscous Transmutagen
+		85506,	--	Viseclaw Meat
+		52328,	--	Volatile Air
+		39690,	--	Volatile Blasting Trigger
+		52327,	--	Volatile Earth
+		52325,	--	Volatile Fire
+		52329,	--	Volatile Life
+		52326,	--	Volatile Water
+		112377,	--	War Paints
+		27681,	--	Warped Flesh
+		52988,	--	Whiptail
+		12205,	--	White Spider Meat
+		72103,	--	White Trillium Ore
+		74850,	--	White Turnip
+		76139,	--	Wild Jade
+		3355,	--	Wild Steelbloom
+		44834,	--	Wild Turkey
+		74839,	--	Wildfowl Breast
+		124121,	--	Wildfowl Egg
+		8153,	--	Wildvine
+		72988,	--	Windwool Cloth
+		74846,	--	Witchberries
+		2592,	--	Wool Cloth
+		43011,	--	Worg Haunch
+		43010,	--	Worm Meat
+		8165,	--	Worn Dragonscale
+		140781,	--	X-87 Battle Circuit
+		128304,	--	Yseralline Seed
+		27429,	--	Zangarian Sporefish
+		7974,	--	Zesty Clam Meat
 };
 
 --These item reagents can be purchased from Vendors
 SmexyMats.Vendor = {
-	74853,	--	100 Year Soy Sauce
-	109143,	--	Abyssal Gulper Eel Flesh
-	158205,	--	Acacia Powder
-	23784,	--	Adamantite Frame
-	124101,	--	Aethril
-	108996,	--	Alchemical Catalyst
-	160059,	--	Amber Tanning Oil
-	44128,	--	Arctic Fur
-	151718,	--	Argulite
-	124440,	--	Arkhana
-	160711,	--	Aromatic Fish Oil
-	151565,	--	Astral Glory
-	44835,	--	Autumnal Herbs
-	74832,	--	Barley
-	124119,	--	Big Gamy Ribs
-	124112,	--	Black Barracuda
-	2325,	--	Black Dye
-	74661,	--	Black Pepper
-	72094,	--	Black Trillium Ore
-	61978,	--	Blackfallow Ink
-	109118,	--	Blackrock Ore
-	109144,	--	Blackwater Whiptail Flesh
-	2324,	--	Bleach
-	109140,	--	Blind Lake Sturgeon Flesh
-	124124,	--	Blood of Sargeras
-	80433,	--	Blood Spirit
-	6260,	--	Blue Dye
-	2996,	--	Bolt of Linen Cloth
-	4305,	--	Bolt of Silk Cloth
-	2997,	--	Bolt of Woolen Cloth
-	4382,	--	Bronze Framework
-	4371,	--	Bronze Tube
-	2453,	--	Bruiseweed
-	110611,	--	Burnished Leather
-	43120,	--	Celestial Ink
-	160502,	--	Chemical Blasting Cap
-	151720,	--	Chemirine
-	52196,	--	Chimera's Eye
-	160398,	--	Choral Honey
-	3857,	--	Coal
-	4364,	--	Coarse Blasting Powder
-	2320,	--	Coarse Thread
-	2770,	--	Copper Ore
-	109137,	--	Crescent Saberfish Flesh
-	47556,	--	Crusader Orb
-	3371,	--	Crystal Vial
-	124107,	--	Cursed Queenfish
-	133589,	--	Dalapeño Pepper
-	62323,	--	Deathwing Scale Fragment
-	5051,	--	Dig Rat
-	158186,	--	Distilled Water
-	109693,	--	Draenic Dust
-	42225,	--	Dragon's Eye
-	22786,	--	Dreaming Glory
-	124102,	--	Dreamleaf
-	160298,	--	Durable Flux
-	2449,	--	Earthroot
-	23781,	--	Elemental Blasting Powder
-	18567,	--	Elemental Flux
-	44500,	--	Elementium-Plated Exhaust Pipe
-	151564,	--	Empyrium
-	10647,	--	Engineer's Ink
-	35623,	--	Eternal Air
-	35624,	--	Eternal Earth
-	36860,	--	Eternal Fire
-	35625,	--	Eternal Life
-	35627,	--	Eternal Shadow
-	35622,	--	Eternal Water
-	38426,	--	Eternium Thread
-	43124,	--	Ethereal Ink
-	74247,	--	Ethereal Shard
-	72120,	--	Exotic Leather
-	74659,	--	Farm Chicken
-	109139,	--	Fat Sleeper Flesh
-	124118,	--	Fatty Bearsteak
-	23782,	--	Fel Iron Casing
-	127759,	--	Felblight
-	14256,	--	Felcloth
-	123919,	--	Felslate
-	23787,	--	Felsteel Stabilizer
-	22785,	--	Felweed
-	151566,	--	Fiendish Leather
-	2321,	--	Fine Thread
-	109141,	--	Fire Ammonite Tentacle
-	109125,	--	Fireweed
-	124104,	--	Fjarnskaggl
-	133588,	--	Flaked Sea Salt
-	151722,	--	Florid Malachite
-	160400,	--	Foosaka
-	124103,	--	Foxflower
-	124436,	--	Foxflower Flux
-	102540,	--	Fresh Mangos
-	160709,	--	Fresh Potato
-	102539,	--	Fresh Strawberries
-	36908,	--	Frost Lotus
-	109124,	--	Frostweed
-	43102,	--	Frozen Orb
-	111366,	--	Gearspring Parts
-	72092,	--	Ghost Iron Ore
-	74845,	--	Ginseng
-	44501,	--	Goblin-Machined Piston
-	72238,	--	Golden Lotus
-	109126,	--	Gorgrond Flytrap
-	4340,	--	Gray Dye
-	2605,	--	Green Dye
-	8846,	--	Gromsblood
-	4389,	--	Gyrochronatom
-	39684,	--	Hair Trigger
-	23783,	--	Handful of Fel Iron Bolts
-	23785,	--	Hardened Adamantite Tube
-	4234,	--	Heavy Leather
-	8343,	--	Heavy Silken Thread
-	4400,	--	Heavy Stock
-	151721,	--	Hesselian
-	111556,	--	Hexweave Cloth
-	124109,	--	Highmountain Salmon
-	17194,	--	Holiday Spices
-	44853,	--	Honey
-	163203,	--	Hypersensitive Azeritometer Sensor
-	13467,	--	Icecap
-	61981,	--	Inferno Ink
-	79254,	--	Ink of Dreams
-	43126,	--	Ink of the Sea
-	74854,	--	Instant Noodles
-	163569,	--	Insulated Wiring
-	43118,	--	Jadefire Ink
-	109138,	--	Jawless Skulker Flesh
-	52188,	--	Jeweler's Setting
-	23786,	--	Khorium Power Core
-	3356,	--	Kingsblood
-	72093,	--	Kyparite
-	151579,	--	Labradorite
-	124117,	--	Lean Shank
-	10938,	--	Lesser Magic Essence
-	124120,	--	Leyblood
-	124441,	--	Leylight Shard
-	123918,	--	Leystone Ore
-	3357,	--	Liferoot
-	39354,	--	Light Parchment
-	151719,	--	Lightsphene
-	151567,	--	Lightweave Cloth
-	2589,	--	Linen Cloth
-	43116,	--	Lion's Ink
-	136633,	--	Loose Trigger
-	785,	--	Mageroyal
-	4338,	--	Mageweave Cloth
-	160705,	--	Major's Frothy Coffee
-	22793,	--	Mana Thistle
-	4232,	--	Medium Hide
-	2319,	--	Medium Leather
-	39774,	--	Midnight Ink
-	2678,	--	Mild Spices
-	39469,	--	Moonglow Ink
-	124108,	--	Mossgill Perch
-	22572,	--	Mote of Air
-	22573,	--	Mote of Earth
-	22574,	--	Mote of Fire
-	22575,	--	Mote of Life
-	22576,	--	Mote of Mana
-	22577,	--	Mote of Shadow
-	22578,	--	Mote of Water
-	133590,	--	Muskenbutter
-	74250,	--	Mysterious Essence
-	12037,	--	Mystery Meat
-	109128,	--	Nagrand Arrowbloom
-	85583,	--	Needle Mushrooms
-	30183,	--	Nether Vortex
-	22791,	--	Netherbloom
-	43007,	--	Northern Spices
-	36783,	--	Northsea Pearl
-	159959,	--	Nylon Thread
-	6261,	--	Orange Dye
-	83092,	--	Orb of Mystery
-	136637,	--	Oversized Blasting Cap
-	74660,	--	Pandaren Peach
-	2447,	--	Peacebloom
-	10290,	--	Pink Dye
-	160712,	--	Powdered Sugar
-	67319,	--	Preserved Ogre Eye
-	23572,	--	Primal Nether
-	120945,	--	Primal Spirit
-	49908,	--	Primordial Saronite
-	79101,	--	Prismatic Scale
-	52980,	--	Pristine Hide
-	4342,	--	Purple Dye
-	65892,	--	Pyrium-Laced Crystalline Vial
-	110609,	--	Raw Beast Hide
-	109136,	--	Raw Boar Meat
-	109131,	--	Raw Clefthoof Meat
-	109134,	--	Raw Elekk Meat
-	109135,	--	Raw Riverbeast Meat
-	109132,	--	Raw Talbuk Meat
-	85585,	--	Red Beans
-	2604,	--	Red Dye
-	74851,	--	Rice
-	74662,	--	Rice Flour
-	133591,	--	River Onion
-	4357,	--	Rough Blasting Powder
-	133593,	--	Royal Olive
-	14341,	--	Rune Thread
-	45087,	--	Runed Orb
-	124111,	--	Runescale Koi
-	127037,	--	Runic Catgut
-	109133,	--	Rylak Egg
-	4289,	--	Salt
-	44499,	--	Salvaged Iron Golem Parts
-	65893,	--	Sands of Time
-	118472,	--	Savage Blood
-	109142,	--	Sea Scorpion Segment
-	76734,	--	Serpent's Eye
-	124437,	--	Shal'dorei Silk
-	127681,	--	Sharp Spritethorn
-	43122,	--	Shimmering Ink
-	4306,	--	Silk Cloth
-	4291,	--	Silken Thread
-	85584,	--	Silkworm Pupa
-	67335,	--	Silver Charm Bracelet
-	4404,	--	Silver Contact
-	2775,	--	Silver Ore
-	765,	--	Silverleaf
-	30817,	--	Simple Flour
-	4470,	--	Simple Wood
-	36784,	--	Siren's Tear
-	136636,	--	Sniping Scope
-	43127,	--	Snowfall Ink
-	113264,	--	Sorcerous Air
-	113263,	--	Sorcerous Earth
-	113261,	--	Sorcerous Fire
-	113262,	--	Sorcerous Water
-	74249,	--	Spirit Dust
-	11291,	--	Star Wood
-	109127,	--	Starflower
-	79255,	--	Starlight Ink
-	124105,	--	Starlight Rose
-	133592,	--	Stonedark Snail
-	124113,	--	Stonehide Leather
-	124110,	--	Stormray
-	124115,	--	Stormscale
-	10940,	--	Strange Dust
-	3466,	--	Strong Flux
-	111557,	--	Sumptuous Fur
-	115524,	--	Taladite Crystal
-	109129,	--	Talador Orchid	
-	2771,	--	Tin Ore
-	90146,	--	Tinker's Kit
-	136638,	--	True Iron Barrel
-	109119,	--	True Iron Ore
-	108257,	--	Truesteel Ingot
-	124438,	--	Unbroken Claw
-	124439,	--	Unbroken Tooth
-	40533,	--	Walnut Stock
-	112377,	--	War Paints
-	113111,	--	Warbinder's Ink
-	2880,	--	Weak Flux
-	72103,	--	White Trillium Ore
-	160710,	--	Wild Berries
-	160399,	--	Wild Flour
-	3355,	--	Wild Steelbloom
-	124121,	--	Wildfowl Egg
-	72988,	--	Windwool Cloth
-	4399,	--	Wooden Stock
-	2592,	--	Wool Cloth
-	74852,	--	Yak Milk
-	4341,	--	Yellow Dye
+
+	--8.2.0
+		168327, --	Chain Ignitercoil
+		166846, --	Spare Parts
+
+	--All previous
+		74853,	--	100 Year Soy Sauce
+		109143,	--	Abyssal Gulper Eel Flesh
+		158205,	--	Acacia Powder
+		23784,	--	Adamantite Frame
+		124101,	--	Aethril
+		108996,	--	Alchemical Catalyst
+		160059,	--	Amber Tanning Oil
+		44128,	--	Arctic Fur
+		151718,	--	Argulite
+		124440,	--	Arkhana
+		160711,	--	Aromatic Fish Oil
+		151565,	--	Astral Glory
+		44835,	--	Autumnal Herbs
+		74832,	--	Barley
+		124119,	--	Big Gamy Ribs
+		124112,	--	Black Barracuda
+		2325,	--	Black Dye
+		74661,	--	Black Pepper
+		72094,	--	Black Trillium Ore
+		61978,	--	Blackfallow Ink
+		109118,	--	Blackrock Ore
+		109144,	--	Blackwater Whiptail Flesh
+		2324,	--	Bleach
+		109140,	--	Blind Lake Sturgeon Flesh
+		124124,	--	Blood of Sargeras
+		80433,	--	Blood Spirit
+		6260,	--	Blue Dye
+		2996,	--	Bolt of Linen Cloth
+		4305,	--	Bolt of Silk Cloth
+		2997,	--	Bolt of Woolen Cloth
+		4382,	--	Bronze Framework
+		4371,	--	Bronze Tube
+		2453,	--	Bruiseweed
+		110611,	--	Burnished Leather
+		43120,	--	Celestial Ink
+		160502,	--	Chemical Blasting Cap
+		151720,	--	Chemirine
+		52196,	--	Chimera's Eye
+		160398,	--	Choral Honey
+		3857,	--	Coal
+		4364,	--	Coarse Blasting Powder
+		2320,	--	Coarse Thread
+		2770,	--	Copper Ore
+		109137,	--	Crescent Saberfish Flesh
+		47556,	--	Crusader Orb
+		3371,	--	Crystal Vial
+		124107,	--	Cursed Queenfish
+		133589,	--	Dalapeño Pepper
+		62323,	--	Deathwing Scale Fragment
+		5051,	--	Dig Rat
+		158186,	--	Distilled Water
+		109693,	--	Draenic Dust
+		42225,	--	Dragon's Eye
+		22786,	--	Dreaming Glory
+		124102,	--	Dreamleaf
+		160298,	--	Durable Flux
+		2449,	--	Earthroot
+		23781,	--	Elemental Blasting Powder
+		18567,	--	Elemental Flux
+		44500,	--	Elementium-Plated Exhaust Pipe
+		151564,	--	Empyrium
+		10647,	--	Engineer's Ink
+		35623,	--	Eternal Air
+		35624,	--	Eternal Earth
+		36860,	--	Eternal Fire
+		35625,	--	Eternal Life
+		35627,	--	Eternal Shadow
+		35622,	--	Eternal Water
+		38426,	--	Eternium Thread
+		43124,	--	Ethereal Ink
+		74247,	--	Ethereal Shard
+		72120,	--	Exotic Leather
+		74659,	--	Farm Chicken
+		109139,	--	Fat Sleeper Flesh
+		124118,	--	Fatty Bearsteak
+		23782,	--	Fel Iron Casing
+		127759,	--	Felblight
+		14256,	--	Felcloth
+		123919,	--	Felslate
+		23787,	--	Felsteel Stabilizer
+		22785,	--	Felweed
+		151566,	--	Fiendish Leather
+		2321,	--	Fine Thread
+		109141,	--	Fire Ammonite Tentacle
+		109125,	--	Fireweed
+		124104,	--	Fjarnskaggl
+		133588,	--	Flaked Sea Salt
+		151722,	--	Florid Malachite
+		160400,	--	Foosaka
+		124103,	--	Foxflower
+		124436,	--	Foxflower Flux
+		102540,	--	Fresh Mangos
+		160709,	--	Fresh Potato
+		102539,	--	Fresh Strawberries
+		36908,	--	Frost Lotus
+		109124,	--	Frostweed
+		43102,	--	Frozen Orb
+		111366,	--	Gearspring Parts
+		72092,	--	Ghost Iron Ore
+		74845,	--	Ginseng
+		44501,	--	Goblin-Machined Piston
+		72238,	--	Golden Lotus
+		109126,	--	Gorgrond Flytrap
+		4340,	--	Gray Dye
+		2605,	--	Green Dye
+		8846,	--	Gromsblood
+		4389,	--	Gyrochronatom
+		39684,	--	Hair Trigger
+		23783,	--	Handful of Fel Iron Bolts
+		23785,	--	Hardened Adamantite Tube
+		4234,	--	Heavy Leather
+		8343,	--	Heavy Silken Thread
+		4400,	--	Heavy Stock
+		151721,	--	Hesselian
+		111556,	--	Hexweave Cloth
+		124109,	--	Highmountain Salmon
+		17194,	--	Holiday Spices
+		44853,	--	Honey
+		163203,	--	Hypersensitive Azeritometer Sensor
+		13467,	--	Icecap
+		61981,	--	Inferno Ink
+		79254,	--	Ink of Dreams
+		43126,	--	Ink of the Sea
+		74854,	--	Instant Noodles
+		163569,	--	Insulated Wiring
+		43118,	--	Jadefire Ink
+		109138,	--	Jawless Skulker Flesh
+		52188,	--	Jeweler's Setting
+		23786,	--	Khorium Power Core
+		3356,	--	Kingsblood
+		72093,	--	Kyparite
+		151579,	--	Labradorite
+		124117,	--	Lean Shank
+		10938,	--	Lesser Magic Essence
+		124120,	--	Leyblood
+		124441,	--	Leylight Shard
+		123918,	--	Leystone Ore
+		3357,	--	Liferoot
+		39354,	--	Light Parchment
+		151719,	--	Lightsphene
+		151567,	--	Lightweave Cloth
+		2589,	--	Linen Cloth
+		43116,	--	Lion's Ink
+		136633,	--	Loose Trigger
+		785,	--	Mageroyal
+		4338,	--	Mageweave Cloth
+		160705,	--	Major's Frothy Coffee
+		22793,	--	Mana Thistle
+		4232,	--	Medium Hide
+		2319,	--	Medium Leather
+		39774,	--	Midnight Ink
+		2678,	--	Mild Spices
+		39469,	--	Moonglow Ink
+		124108,	--	Mossgill Perch
+		22572,	--	Mote of Air
+		22573,	--	Mote of Earth
+		22574,	--	Mote of Fire
+		22575,	--	Mote of Life
+		22576,	--	Mote of Mana
+		22577,	--	Mote of Shadow
+		22578,	--	Mote of Water
+		133590,	--	Muskenbutter
+		74250,	--	Mysterious Essence
+		12037,	--	Mystery Meat
+		109128,	--	Nagrand Arrowbloom
+		85583,	--	Needle Mushrooms
+		30183,	--	Nether Vortex
+		22791,	--	Netherbloom
+		43007,	--	Northern Spices
+		36783,	--	Northsea Pearl
+		159959,	--	Nylon Thread
+		6261,	--	Orange Dye
+		83092,	--	Orb of Mystery
+		136637,	--	Oversized Blasting Cap
+		74660,	--	Pandaren Peach
+		2447,	--	Peacebloom
+		10290,	--	Pink Dye
+		160712,	--	Powdered Sugar
+		67319,	--	Preserved Ogre Eye
+		23572,	--	Primal Nether
+		120945,	--	Primal Spirit
+		49908,	--	Primordial Saronite
+		79101,	--	Prismatic Scale
+		52980,	--	Pristine Hide
+		4342,	--	Purple Dye
+		65892,	--	Pyrium-Laced Crystalline Vial
+		110609,	--	Raw Beast Hide
+		109136,	--	Raw Boar Meat
+		109131,	--	Raw Clefthoof Meat
+		109134,	--	Raw Elekk Meat
+		109135,	--	Raw Riverbeast Meat
+		109132,	--	Raw Talbuk Meat
+		85585,	--	Red Beans
+		2604,	--	Red Dye
+		74851,	--	Rice
+		74662,	--	Rice Flour
+		133591,	--	River Onion
+		4357,	--	Rough Blasting Powder
+		133593,	--	Royal Olive
+		14341,	--	Rune Thread
+		45087,	--	Runed Orb
+		124111,	--	Runescale Koi
+		127037,	--	Runic Catgut
+		109133,	--	Rylak Egg
+		4289,	--	Salt
+		44499,	--	Salvaged Iron Golem Parts
+		65893,	--	Sands of Time
+		118472,	--	Savage Blood
+		109142,	--	Sea Scorpion Segment
+		76734,	--	Serpent's Eye
+		124437,	--	Shal'dorei Silk
+		127681,	--	Sharp Spritethorn
+		43122,	--	Shimmering Ink
+		4306,	--	Silk Cloth
+		4291,	--	Silken Thread
+		85584,	--	Silkworm Pupa
+		67335,	--	Silver Charm Bracelet
+		4404,	--	Silver Contact
+		2775,	--	Silver Ore
+		765,	--	Silverleaf
+		30817,	--	Simple Flour
+		4470,	--	Simple Wood
+		36784,	--	Siren's Tear
+		136636,	--	Sniping Scope
+		43127,	--	Snowfall Ink
+		113264,	--	Sorcerous Air
+		113263,	--	Sorcerous Earth
+		113261,	--	Sorcerous Fire
+		113262,	--	Sorcerous Water
+		74249,	--	Spirit Dust
+		11291,	--	Star Wood
+		109127,	--	Starflower
+		79255,	--	Starlight Ink
+		124105,	--	Starlight Rose
+		133592,	--	Stonedark Snail
+		124113,	--	Stonehide Leather
+		124110,	--	Stormray
+		124115,	--	Stormscale
+		10940,	--	Strange Dust
+		3466,	--	Strong Flux
+		111557,	--	Sumptuous Fur
+		115524,	--	Taladite Crystal
+		109129,	--	Talador Orchid	
+		2771,	--	Tin Ore
+		90146,	--	Tinker's Kit
+		136638,	--	True Iron Barrel
+		109119,	--	True Iron Ore
+		108257,	--	Truesteel Ingot
+		124438,	--	Unbroken Claw
+		124439,	--	Unbroken Tooth
+		40533,	--	Walnut Stock
+		112377,	--	War Paints
+		113111,	--	Warbinder's Ink
+		2880,	--	Weak Flux
+		72103,	--	White Trillium Ore
+		160710,	--	Wild Berries
+		160399,	--	Wild Flour
+		3355,	--	Wild Steelbloom
+		124121,	--	Wildfowl Egg
+		72988,	--	Windwool Cloth
+		4399,	--	Wooden Stock
+		2592,	--	Wool Cloth
+		74852,	--	Yak Milk
+		4341,	--	Yellow Dye
 };
 
 --These item reagents are from the Scrapper
@@ -13366,6 +13478,7 @@ SmexyMats.Scrap = {
 	154164,	--	Blood-Stained Bone
 	154165,	--	Calcified Bone
 	152541,	--	Coarse Leather
+	168650,	--	Cragscale
 	158188,	--	Crimson Ink
 	152577,	--	Deep Sea Satin
 	160298,	--	Durable Flux
@@ -13373,14 +13486,17 @@ SmexyMats.Scrap = {
 	152668,	--	Expulsom
 	152875,	--	Gloom Dust
 	153700,	--	Golden Beryl
+	167738, --	Gilded Seaweave
 	152542,	--	Hardened Tempest Hide
 	162460,	--	Hydrocore
 	153702,	--	Kubiline
 	153705,	--	Kyanite
 	154124,	--	Laribole
+	168663,	--	Maroon Ink
 	153051,	--	Mistscale
 	152512,	--	Monelite Ore
 	159959,	--	Nylon Thread
+	168185, -- 	Osmenite Ore
 	154120,	--	Owlseye
 	152513,	--	Platinum Ore
 	152505,	--	Riverbud
