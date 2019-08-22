@@ -22,18 +22,11 @@ Tooltip.Tooltips = {
 	ItemRefTooltip,
 	ItemRefShoppingTooltip1,
 	ItemRefShoppingTooltip2,
-	ItemRefShoppingTooltip3,
 	AutoCompleteBox,
 	FriendsTooltip,
 	ShoppingTooltip1,
 	ShoppingTooltip2,
-	ShoppingTooltip3,
 	WorldMapTooltip,
-	WorldMapCompareTooltip1,
-	WorldMapCompareTooltip2,
-	WorldMapCompareTooltip3,
-	ReputationParagonTooltip,
-	StoryTooltip,
 	EmbeddedItemTooltip,
 	GarrisonFollowerTooltip,
 }
@@ -375,14 +368,12 @@ function Tooltip:Enable()
 	hooksecurefunc("GameTooltip_SetDefaultAnchor", self.SetTooltipDefaultAnchor)
 
 	for _, Tooltip in pairs(Tooltip.Tooltips) do
-		if Tooltip == GameTooltip then
-			Tooltip:HookScript("OnUpdate", self.OnUpdate)
-			Tooltip:SetScript("OnTooltipSetUnit", self.OnTooltipSetUnit)
-			Tooltip:HookScript("OnTooltipSetItem", self.OnTooltipSetItem)
-		end
-
 		Tooltip:HookScript("OnShow", self.Skin)
 	end
+	
+	GameTooltip:HookScript("OnUpdate", self.OnUpdate)
+	GameTooltip:HookScript("OnTooltipSetUnit", self.OnTooltipSetUnit)
+	GameTooltip:HookScript("OnTooltipSetItem", self.OnTooltipSetItem)
 
 	ItemRefCloseButton:SkinCloseButton()
 
@@ -403,6 +394,10 @@ function Tooltip:Enable()
 	if C["Tooltips"].ShowSpec then
 		T.Tooltips.Talent:RegisterEvent("MODIFIER_STATE_CHANGED")
 	end
+	
+	-- WoW 8.2 bug? Tooltip ClampedToScreen switching to false randomly for no reason
+	GameTooltip:SetClampedToScreen(true)
+	GameTooltip.SetClampedToScreen = function() end
 end
 
 T["Tooltips"] = Tooltip
