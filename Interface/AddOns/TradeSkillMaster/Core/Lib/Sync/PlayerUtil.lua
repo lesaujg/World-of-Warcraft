@@ -49,9 +49,9 @@ end
 function PlayerUtil.IsOnline(target, noAdd)
 	C_FriendList.ShowFriends()
 	for i = 1, C_FriendList.GetNumFriends() do
-		local name, _, _, _, connected = C_FriendList.GetFriendInfo(i)
-		if name and strlower(name) == strlower(target) then
-			return connected
+		local info = C_FriendList.GetFriendInfoByIndex(i)
+		if info.name and strlower(info.name) == strlower(target) then
+			return info.connected
 		end
 	end
 
@@ -60,9 +60,9 @@ function PlayerUtil.IsOnline(target, noAdd)
 		C_FriendList.AddFriend(target)
 		tinsert(private.addedFriends, target)
 		for i = 1, C_FriendList.GetNumFriends() do
-			local name, _, _, _, connected = C_FriendList.GetFriendInfo(i)
-			if name and strlower(name) == strlower(target) then
-				return connected
+			local info = C_FriendList.GetFriendInfoByIndex(i)
+			if info.name and strlower(info.name) == strlower(target) then
+				return info.connected
 			end
 		end
 	end

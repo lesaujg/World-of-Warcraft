@@ -195,7 +195,7 @@ function private.PrepareFriendsInfo()
 		isValid = true
 	end
 	for i = 1, num or 0 do
-		if not C_FriendList.GetFriendInfo(i) then
+		if not C_FriendList.GetFriendInfoByIndex(i) then
 			isValid = false
 			break
 		end
